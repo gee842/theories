@@ -1,0 +1,17 @@
+'Becoming.Frame' does not depend on any axioms
+'Becoming.Run' does not depend on any axioms
+'Becoming.Run.window' does not depend on any axioms
+'Becoming.Run.window_trace' does not depend on any axioms
+'Becoming.Reach' does not depend on any axioms
+'Becoming.Reach.refl' does not depend on any axioms
+'Becoming.Reach.of_step' does not depend on any axioms
+'Becoming.Reach.trans' does not depend on any axioms
+'Becoming.Reach.map' does not depend on any axioms
+'Becoming.Reach.lift' does not depend on any axioms
+'Becoming.Run.reach' does not depend on any axioms
+'Becoming.Invariant' does not depend on any axioms
+'Becoming.Invariant.trace' does not depend on any axioms
+'Becoming.Invariant.reach' does not depend on any axioms
+'Becoming.Invariant.run' does not depend on any axioms
+'Becoming.Novel' does not depend on any axioms
+'Becoming.Novel.mono' does not depend on any axioms

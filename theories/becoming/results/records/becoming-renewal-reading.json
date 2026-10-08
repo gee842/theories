@@ -159,8 +159,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "detail": {
-        "zh": "依存是静态的，读法是整段运行上的而非逐步的；两者都继承自既有模块，尚未放宽。",
-        "en": "Dependence is static and the reading is whole-run rather than stepwise; both are inherited from existing modules and not yet relaxed."
+        "zh": "依存是静态的，读法是整段运行上的而非逐步的；两者都继承自既有模块。本结果在此范围内成立；放宽两者的是 becoming-dependence-dynamics 与 becoming-stepwise-reading（整合文档 §6）。",
+        "en": "Dependence is static and the reading is whole-run rather than stepwise; both are inherited from existing modules. This result holds at that scope; becoming-dependence-dynamics and becoming-stepwise-reading relax both (integration note §6)."
       }
     }
   ],
@@ -169,8 +169,8 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The unification of bounds is organizational, not new mathematics; ContinuationRenewal's well-founded form is not derived from the principle. The relational reading and the common-participation relation are disclosed reading choices; whether they are the right reading of 生生, and the empirical correspondence of common conditions, lie outside this result."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T214944.061715Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖；同一回执覆盖包内 6 个模块（含只作导入的根模块），共 81 项定理／147 项声明审计，15 个继承模块的当前字节与已通过回执一致。控制例“有共同条件的运行在关系读法下连通”不计为新定理。作者反审见整合文档，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 8 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261008T214944.061715Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports; the same receipt covers the package's 6 modules (including the import-only root) with 81 theorems/147 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The control that a run with a common condition is connected under the relational reading is not counted. The author's counterreview is in the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 8 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T233313.422223Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖；同一回执覆盖包内 7 个模块（含只作导入的根模块），共 116 项定理／225 项声明审计，15 个继承模块的当前字节与已通过回执一致。控制例“有共同条件的运行在关系读法下连通”不计为新定理。作者反审见整合文档，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 9 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T233313.422223Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports; the same receipt covers the package's 7 modules (including the import-only root) with 116 theorems/225 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The control that a run with a common condition is connected under the relational reading is not counted. The author's counterreview is in the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 9 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -191,7 +191,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "3fcd792e7167d26cbdec3cd1e3c0f1c1d2f66297a076d710ba6a2838f10a0d7a",
+      "sha256": "86af84d5e767ca82f64dcdb14c6b64a25f7cd4f58c7190e004ff1d09239acb94",
       "declarations": [
         "Becoming.Conditions.valuation",
         "Becoming.Conditions.connected_of_common",
@@ -244,19 +244,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4d647a2cf52ed88914ceb4edfa4af6bd05707b596bf9e1b9595713d4519e3a6c",
+      "sha256": "c96e0614fa080cc7422551287aa0aafe11fd60ac0043397406e3f2e5fd1baafa",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "57821bf14715552f5adb2930e351147614f14990827f5c2cc1a561c9cb9e7c10",
+      "sha256": "984c9aae9c024aedc2fe8895975ae66094e939c499705d5bb19214c0f8262d3f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "7dea8f48e9b45a65001f49f35d8f4ea972280a8f9c7820f95e777a29deb012a5",
+      "sha256": "94039ec18b1b24e838af3c37b52e9c6e88a4dcea2131f699ac6d9cb56d8f452d",
       "declarations": []
     },
     {
@@ -317,8 +317,8 @@
     }
   ],
   "next_delta": {
-    "zh": "让依存与汲取读取配置（动态依存），重做 Renewed／Consumed；确定逐步读法；独立反审关系读法作为生生读法的哲学论证。",
-    "en": "Let dependence and drawing read the configuration (dynamic dependence) and redo Renewed/Consumed; settle a stepwise reading; independent review of the philosophical argument for the relational reading as the reading of 生生."
+    "zh": "动态依存与逐步读法已由 becoming-dependence-dynamics 与 becoming-stepwise-reading 承接。余下：独立反审关系读法作为生生读法的哲学论证；共同条件的经验对应。",
+    "en": "Dynamic dependence and the stepwise reading are taken up by becoming-dependence-dynamics and becoming-stepwise-reading. Remaining: independent review of the philosophical argument for the relational reading as the reading of 生生; empirical correspondence of common conditions."
   },
   "history": [
     {
@@ -336,6 +336,10 @@
     {
       "zh": "2026-10-09（P5c）：核心 Becoming.Inquiry 新增“判断即一步探究”（judgeProcess、sees 由桥接层移入，commonResponse_judge_iff，属 becoming-spine-instances）。已读差异：本结果的定理陈述与证明不变；核心回执改为当前运行，计数改为 81 项定理／147 项声明审计。",
       "en": "2026-10-09 (P5c): the core layer Becoming.Inquiry gains “a judgment is a one-step inquiry” (judgeProcess and sees moved from the bridge, commonResponse_judge_iff, recorded in becoming-spine-instances). Diff read: this result's theorem statements and proofs are unchanged; the core receipt now cites the current run, with 81 theorems/147 declaration audits."
+    },
+    {
+      "zh": "2026-10-09（P6）：按 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”，L3 新增 Becoming.Dependence（becoming-dependence-dynamics），L4 新增逐步读法（becoming-stepwise-reading）。已读差异：Becoming.Metaethics 的导入由 Becoming.Renewal 改为 Becoming.Dependence（后者导入前者），模块说明增加一段，Separate 之后新增“The stepwise reading”一节（Web.valuation 及 6 项定理）；其余字节不变，本结果的定理陈述与证明不变。整合文档增 §6，第 4 节“未解决”的第 2、3 项标为已由 P6 完成；next_delta 与静态限制的说明随之更新。核心回执改为当前运行，计数改为 116 项定理／225 项声明审计，核心闭包 9 个模块。",
+      "en": "2026-10-09 (P6): following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, L3 gains Becoming.Dependence (becoming-dependence-dynamics) and L4 the stepwise reading (becoming-stepwise-reading). Diff read: Becoming.Metaethics now imports Becoming.Dependence instead of Becoming.Renewal (the former imports the latter), its module documentation gains a paragraph, and a section “The stepwise reading” (Web.valuation and 6 theorems) follows Separate; all other bytes are unchanged, as are this result's theorem statements and proofs. The integration note gains §6, and items 2 and 3 of its §4 open list are marked as completed by P6; next_delta and the note on the static limit are updated accordingly. The core receipt now cites the current run, with 116 theorems/225 declaration audits and a core closure of 9 modules."
     }
   ]
 }

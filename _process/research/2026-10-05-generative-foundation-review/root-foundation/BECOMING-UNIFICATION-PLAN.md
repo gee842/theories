@@ -85,7 +85,7 @@ L4  Metaethics  Universal Metaethical Core（具名前提与推论）
 Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在实际用到时补适配
 ```
 
-Lean 中 L1–L4 是包 `Becoming` 的四个模块 `Becoming.Frame`、`Becoming.Inquiry`、`Becoming.Renewal`、`Becoming.Metaethics`；`import Becoming` 导入全部。既有模块经 `Becoming.Bridge` 连到核心，它在包内但不属核心（[包说明](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)）。
+Lean 中 L1–L4 是包 `Becoming` 的模块 `Becoming.Frame`、`Becoming.Inquiry`、`Becoming.Renewal` 与 `Becoming.Dependence`（L3）、`Becoming.Metaethics`；`import Becoming` 导入全部。既有模块经 `Becoming.Bridge` 连到核心，它在包内但不属核心（[包说明](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)）。
 
 **为什么这样最简洁：**
 - **一个世界模型。** 伦理是同一语言中的前提，不另立模型。这正是非二元方法的要求。
@@ -137,6 +137,7 @@ Lean 中 L1–L4 是包 `Becoming` 的四个模块 `Becoming.Frame`、`Becoming.
 | P5a 核心纯净 ✓ | 按 [Ren 的要求](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)：核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的模块，公理报告全空，只用 Lean 内置前导即可编译。G0、C、D 与确保的正面根据在核心陈述；桥接层以 `Iff.rfl` 证明既有模块的定义即核心定义；J1/J2 的 `BetterAt` 与 `living_iff_relational` 移到桥接层 | 已完成：检查器每次核对闭包、空公理报告与仅用前导编译；80 项定理／146 项声明审计 |
 | P5b 包结构 ✓ | 核心改为 Lean 包 `Becoming`，按所述之事命名：`BecomingFrame` → `Becoming.Frame`，`BecomingModal` → `Becoming.Inquiry`（它讲探究的所见范围，不是模态逻辑），`BecomingRenewal` → `Becoming.Renewal`，`MetaethicalCore` → `Becoming.Metaethics`，`BecomingInstances` → `Becoming.Bridge`；根模块 `Becoming` 导入四层。声明名不变，记录别名照旧有效；上面各行保留当时的模块名 | 已完成：检查器按包路径命名模块并核对闭包；记录、章节与链接改到新路径；包说明给出读者入口与新旧名对照 |
 | P5c Mathlib 叶子 ✓ | 不建 Lake 工作区：Mathlib 已安装（既有检查器经 `SYSTEMS_MATHLIB_PROJECT` 使用 `~/repos/生生不息`），沿用 Python 检查器。外围桥接模块导入核心与 Mathlib 叶子，证明其接口是核心的实例，用 4.30.0-rc2 编译；核心不导入它 | 已完成：核心增“判断即一步探究”（`judgeProcess` 由桥接层移入 `Becoming.Inquiry`，`commonResponse_judge_iff`），核心 81 项定理／147 项声明审计。外围桥接 `CorrectionInquiry`（7 项定理，公理报告全空）证明 `CorrectionBoundary` 的实施与共同行动、`ObservationChange` 的安全选择都是每个观察格上的共同回应，两模块的细化定理由 `commonResponse_antitone` 导出；核心在 4.30.0-rc2 下同样编译通过。其余三个叶子是具体模型或关系代数，核心没有对应接口，分类表写明理由 |
+| P6 动态依存与逐步读法 ✓ | 按 Ren 的[指示](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory)“move on to pursue the theory of becoming, and prove the necessary proofs”，扩展脊柱而不另建模型：L3 新模块 `Becoming.Dependence` 让依存、所需水平与汲取读取配置，重做 `Renewed`／`Consumed`，并给出逐步读法；L4 增加逐步的关系读法 `Web.valuation` | 已完成：[研究 §6](BECOMING-RENEWAL-READING.md#6-动态依存与逐步读法p6)，记录 [becoming-dependence-dynamics](../../../../theories/becoming/results/records/becoming-dependence-dynamics.md) 与 [becoming-stepwise-reading](../../../../theories/becoming/results/records/becoming-stepwise-reading.md)。依存不变时精确复原静态读法；变化发生在步上；损失的终止、转化与恢复由定理相互约束，同一过程中三者都实际发生；逐步与整段读法两个方向都有分歧。核心 84 项定理，连桥接共 116 项定理／225 项声明审计，公理报告全空；外围桥接重跑通过。整体演绎仍开放 |
 
 ## 6. 决定（2026-10-09 定下）
 

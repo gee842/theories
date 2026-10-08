@@ -24,11 +24,12 @@ Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-con
 | L1 | [`Becoming.Frame`](Becoming/Frame.lean) | 框架：过程加上每个配置实现的主张；运行、可达、不变量、新实现 / a frame is a process with realized claims; runs, reach, invariants, novel realization |
 | L2 | [`Becoming.Inquiry`](Becoming/Inquiry.lean) | 探究的所见范围由实际执行给出，可靠策略在其上确保目标；判断即一步探究 / an inquiry's visible scope is what its actual executions reach, where a sound policy secures its goal; a judgment is a one-step inquiry |
 | L3 | [`Becoming.Renewal`](Becoming/Renewal.lean) | 经条件读出的运行是一个关系展开；更新与消耗属于运行 / a run read through conditions is one relational unfolding; renewal and consumption belong to the run |
-| L4 | [`Becoming.Metaethics`](Becoming/Metaethics.lean) | 普遍元伦理核心：前提卡、G0 刻画、极小性、普遍理由、C 与 L / the Universal Metaethical Core: premise card, G0's characterization, minimality, the universal reason, C and L |
+| L3 | [`Becoming.Dependence`](Becoming/Dependence.lean) | 依存随步形成、维持、断裂与消解；损失有终止、转化、恢复三条去路，损失本身不决定去路；逐步读法 / dependence forms, holds, breaks and dissolves across steps; a loss is ended, transformed or restored, and the loss does not decide which; a stepwise reading |
+| L4 | [`Becoming.Metaethics`](Becoming/Metaethics.lean) | 普遍元伦理核心：前提卡、G0 刻画、极小性、普遍理由、C 与 L；整段与逐步的关系读法 / the Universal Metaethical Core: premise card, G0's characterization, minimality, the universal reason, C and L; the relational reading over a whole run and stepwise |
 
-每层只导入它下面的层。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
+每层只导入它下面的层（L3 的 `Becoming.Dependence` 导入 `Becoming.Renewal`）。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
 
-Each layer imports only those below it. L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
+Each layer imports only those below it (within L3, `Becoming.Dependence` imports `Becoming.Renewal`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
 
 ## 检查 / Verification
 

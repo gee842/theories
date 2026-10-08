@@ -1,5 +1,5 @@
 import Becoming.Inquiry
-import Becoming.Renewal
+import Becoming.Dependence
 
 /-!
 # The Universal Metaethical Core on the Becoming spine
@@ -52,6 +52,13 @@ Results:
   relation, so under N_rel a standpoint valuing a consuming formation's activity
   holds significant the living events of the formation it consumes
   (`valuing_consumption_reaches`).
+* Read stepwise, with dependences that may change (`Web.valuation`), an event is
+  living when its step keeps every dependence on the conditions it participates in.
+  The same results hold: a common condition discharges connection, and an event
+  drawing at a step that breaks a dependence is related to the broken formation, so
+  under N_rel valuing it reaches that formation's living events
+  (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
+  `related` and credit different events, in both directions (`Commons.readings_differ`).
 
 Nothing here proves S0, N, A, C, L or J, binds a position that rejects them, or
 treats bringing new lives into existence. A contributory reason is not a duty, a
@@ -356,6 +363,86 @@ theorem not_connected (own sig : Unit → Bool × Nat → Prop) :
       ⟨trivial, fun ⟨_, drawn, _⟩ => drawn⟩) rfl)
 
 end Separate
+
+/-! ### The stepwise reading -/
+
+/-- Formation events of a web read stepwise. An event is living when its step keeps
+every dependence on the conditions its formation participates in; two events are
+related when their formations participate in a common condition at their steps.
+Standpoints, their regions and significance remain supplied. -/
+def Web.valuation {F Cond : Type} (W : Web F Cond) (own sig : Pos → F × Nat → Prop) :
+    Valuation Pos (F × Nat) where
+  living e := W.RenewingAt e.2 e.1
+  related e e' := ∃ c, W.Participates e.2 e.1 c ∧ W.Participates e'.2 e'.1 c
+  own := own
+  sig := sig
+
+namespace Web
+
+variable {F Cond : Type} (W : Web F Cond) (own sig : Pos → F × Nat → Prop)
+
+/-- A condition in which every living event participates connects the whole. -/
+theorem connected_of_common (c₀ : Cond)
+    (common : ∀ e, (W.valuation own sig).living e → W.Participates e.2 e.1 c₀) :
+    (W.valuation own sig).Connected :=
+  fun c d alive alive' =>
+    Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
+
+/-- With a common condition, G0 for every standpoint is exactly a seed with N_rel and
+N_std, on the stepwise reading as on the whole-run one. -/
+theorem significant_iff_of_common (c₀ : Cond)
+    (common : ∀ e, (W.valuation own sig).living e → W.Participates e.2 e.1 c₀)
+    (p₀ : Pos) {e₀ : F × Nat} (alive₀ : (W.valuation own sig).living e₀) :
+    (W.valuation own sig).Significant ↔ (W.valuation own sig).Grounds :=
+  Valuation.significant_iff (connected_of_common W own sig c₀ common) p₀ alive₀
+
+/-- Breaking is itself a formed relation: an event drawing on a condition at a step
+that breaks a dependence on it is not living, and is related to every event of the
+broken formation that participates in the condition. -/
+theorem breaking_relates {f g : F} {t : Nat} {c : Cond} (drawn : W.draws t f c)
+    (broken : W.Broken t g c) :
+    ¬ (W.valuation own sig).living (f, t) ∧
+      ∀ t', W.Participates t' g c → (W.valuation own sig).related (f, t) (g, t') :=
+  ⟨W.not_renewing_at_of_broken (Or.inr drawn) broken, fun _ joins => ⟨c, Or.inr drawn, joins⟩⟩
+
+/-- Under N_rel, a standpoint that values a breaking event holds significant every
+living event of the broken formation that participates in the condition. The breaking
+event is not living, so S0 alone supplies no such valuation. -/
+theorem valuing_breaking_reaches (transmit : Neutral (W.valuation own sig).transmits)
+    {f g : F} {t : Nat} {c : Cond} (drawn : W.draws t f c) (broken : W.Broken t g c)
+    {p : Pos} (held : (W.valuation own sig).sig p (f, t)) {t' : Nat}
+    (joins : W.Participates t' g c) (alive : (W.valuation own sig).living (g, t')) :
+    (W.valuation own sig).sig p (g, t') :=
+  transmit (p, (f, t), (g, t')) held ((breaking_relates W own sig drawn broken).2 t' joins) alive
+
+end Web
+
+/-- On fixed dependences the stepwise reading relates exactly the events the whole-run
+reading relates; the readings differ only in which events are living. -/
+theorem Conditions.stepwise_related {F Cond : Type} {P : Process S A} (K : Conditions S F Cond)
+    (r : Run P) (own sig : Pos → F × Nat → Prop) :
+    ((K.dependence.along r).valuation own sig).related = (K.valuation r own sig).related :=
+  rfl
+
+/-- In one process the two readings credit different events, in both directions. In
+the escalating run the focal formation consumes, so the whole-run reading counts none
+of its events as living, while the stepwise reading credits its first. In the dipping
+run it does not consume, since the condition returns, so the whole-run reading counts
+its first event as living, while the stepwise reading does not: that step breaks the
+sustaining formation's dependence. -/
+theorem Commons.readings_differ (own sig : Pos → Commons.Formation × Nat → Prop) :
+    ((Commons.conditions.dependence.along Commons.escalating).valuation own sig).living
+      (.focal, 0) ∧
+    ¬ (Commons.conditions.valuation Commons.escalating own sig).living (.focal, 0) ∧
+    (Commons.conditions.valuation Commons.dipping own sig).living (.focal, 0) ∧
+    ¬ ((Commons.conditions.dependence.along Commons.dipping).valuation own sig).living
+      (.focal, 0) :=
+  ⟨Commons.stepwise_credits_before_escalation.2.1,
+   fun ⟨_, notConsuming⟩ => notConsuming
+     ((Web.static_consumingIn _ _).mp Commons.stepwise_credits_before_escalation.1),
+   ⟨trivial, fun consuming => Commons.dip_breaks_without_consuming.1
+     ((Web.static_consumingIn _ _).mpr consuming)⟩,
+   Commons.dip_breaks_without_consuming.2⟩
 
 end Reading
 

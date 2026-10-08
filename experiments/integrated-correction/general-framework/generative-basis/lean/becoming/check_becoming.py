@@ -31,7 +31,8 @@ import check as audit_support  # noqa: E402
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
-CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Metaethics", "Becoming"]
+CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
+        "Becoming.Metaethics", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -46,6 +47,13 @@ SCOPE = (
     "that never rises from some step on falls only finitely often, with depletion, recurrent renewal "
     "under a natural-number rank and unrenewed drawdown as its cases; in one process from one "
     "configuration one run renews and another consumes. "
+    "Dependence: which conditions a formation depends on, at what level, and which it draws on may "
+    "change from step to step; constant dependence recovers the static reading exactly; every met "
+    "dependence is kept or broken across each step; a formation continuing after a loss without return "
+    "has transformed its dependence, and with fixed dependence it ends; in one process from one "
+    "configuration the same broken dependence leads to an ending, a transformation and a restoration; "
+    "a stepwise reading credits an event whose step keeps every dependence on the conditions it "
+    "participates in, and it and the whole-run reading credit different events in both directions. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
@@ -57,7 +65,9 @@ SCOPE = (
     "bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, "
     "a condition in which every living formation participates discharges connection, and without one "
     "connection can fail; consumption is a formed relation, so under N_rel valuing a consuming "
-    "formation's activity reaches the living events of the formation it consumes. "
+    "formation's activity reaches the living events of the formation it consumes. Read stepwise, the "
+    "same discharge holds, and an event drawing at a step that breaks a dependence is related to the "
+    "broken formation, so under N_rel valuing it reaches that formation's living events. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, and J1/J2 on configurations is PracticalJudgment.Better; "
     "seed-edge closures and evaluator chains are reachability on the edge process; a "
@@ -188,6 +198,17 @@ example : (Commons.conditions.valuation Commons.sharing (fun (_ : Unit) _ => Tru
     (fun e _ => match e with
       | (.focal, _) => Or.inr trivial
       | (.sustaining, _) => Or.inl trivial)
+
+-- The stepwise discharge is nonvacuous: its first event is living in the escalating run.
+example : ((Commons.conditions.dependence.along Commons.escalating).valuation
+    (fun (_ : Unit) _ => True) (fun _ _ => True)).Connected ∧
+    ((Commons.conditions.dependence.along Commons.escalating).valuation
+      (fun (_ : Unit) _ => True) (fun _ _ => True)).living (.focal, 0) :=
+  ⟨Web.connected_of_common _ _ _ ()
+    (fun e _ => match e with
+      | (.focal, _) => Or.inr trivial
+      | (.sustaining, _) => Or.inl trivial),
+   Commons.stepwise_credits_before_escalation.2.1⟩
 """
 
 
@@ -302,6 +323,7 @@ def main():
                 {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "a frame's continuation space has a reached configuration realizing a living claim", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "a run with a common condition is connected under the relational reading", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "the stepwise reading is connected by a common condition and credits a living event", "kernel_checked": True, "counted_as_new_theorem": False},
             ]
         receipt["source_unchanged_during_check"] = all(
             paths[name].read_bytes() == data for name, data in sources.items())

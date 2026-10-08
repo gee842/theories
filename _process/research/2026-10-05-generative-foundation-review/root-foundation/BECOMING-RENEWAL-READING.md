@@ -76,8 +76,8 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 
 **未解决。**
 1. 关系读法是生生的正确读法，这是哲学论证，不是 Lean 结果。
-2. 依存的动态化。
-3. 逐步读法。
+2. 依存的动态化。（P6 完成，见 §6。）
+3. 逐步读法。（P6 完成，见 §6。）
 4. 共同条件的经验对应。
 5. 独立反审尚未进行。
 
@@ -85,6 +85,108 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 
 - 不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场，不推出义务、排序、认识或遵循。
 - 可观测量与实际历史的对应，是每次应用的义务。
+
+## 6. 动态依存与逐步读法（P6）
+
+2026-10-09。Ren 在改名完成后指示：“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory)）。本节完成第 4 节“未解决”的第 2、3 项，也就是[正典章节](../../../../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#8-开放纲领--open-programme) §8 的“动态依存”与“逐步读法”两行。成果记录：[becoming-dependence-dynamics](../../../../theories/becoming/results/records/becoming-dependence-dynamics.md)、[becoming-stepwise-reading](../../../../theories/becoming/results/records/becoming-stepwise-reading.md)。
+
+```text
+Result(s): 复用 becoming-renewal-reading、relational-renewal-classification、metaethical-core-characterization；
+           新增 becoming-dependence-dynamics（L3）、becoming-stepwise-reading（L3 与 L4）
+Delta: 依存、所需水平与汲取成为配置的可观测量；跨步读出维持、断裂、形成、消解与丧失；
+       损失之后的终止、转化与恢复由定理互相约束，并在同一过程中都实际发生；逐步读法及其评价
+Supplied premises / correspondence: 可观测量与实际历史的对应；living 取哪一种读法仍是公开的对应选择；
+       G0 的前提（种子、N_rel、N_std）不由此证明
+Evidence: Becoming.Dependence 29 项定理；Becoming.Metaethics 新增 6 项定理；合并检查器回执
+       20261008T233313.422223Z，核心公理报告全空，仅用前导编译；外围桥接 20261008T233335.261411Z 通过
+Boundary: 不建立整体演绎；不涉及差别制造归属、周期更新；独立反审未做
+Integration: becoming-renewal-reading 的 next_delta 的前两项由新记录承接；
+       relational-renewal-classification 的 Unfolding 由 static 精确复原
+```
+
+### 6.1 依存属于展开
+
+[Becoming.Dependence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)（L3）：只讲动力学，不含伦理谓词。
+
+| 声明 | 内容 |
+|---|---|
+| `Dependence`、`Web`、`Dependence.along` | 条件水平、活跃、依存（及所需水平）与汲取都随配置变化。运行经这些可观测量读出为一个 `Web` |
+| `Kept`、`Broken`、`Forms`、`Dissolves`、`Lost` | 跨一步读出。依存在该步起点和终点都被满足，为维持；起点满足而终点不满足，为断裂；依存出现，为形成；依存消失，为消解；断裂后再也不被满足，为丧失 |
+| `static_supported` 等六条、`conditions_along` | 依存不变时，恰好复原 `RelationalRenewal` 的静态读法：支持、更新、消耗与形成的分类都一致 |
+| `ceases_at_a_step`、`arises_at_a_step`、`dissolves_between`、`forms_between` | 变化发生在步上：某步成立、后来不成立的依存，在其间某一步消解；反过来，在其间某一步形成。陈述不用排中律：没有一段运行能避开这样的一步 |
+| `kept_or_broken`、`kept_not_broken` | 每个被满足的依存，跨每一步恰为维持或断裂之一 |
+| `renewed_not_consumed`、`renewing_not_consuming`、`renewing_keeps_support`、`lost_consumed` | 更新与消耗仍然互斥；更新使更新型形成每一步都有支持；丧失是消耗的一种 |
+
+**一步之内的先后。** 一步之内依存改变与条件下降谁先谁后，单看一步无法区分。读法把下降算在该步起点的依存上，模块说明写明了这一点；更细的时间粒度要求细化运行，属于应用义务。
+
+### 6.2 损失的三条去路
+
+| 声明 | 内容 |
+|---|---|
+| `continuing_restores` | 以不弱于先前的依存继续活跃，就意味着条件已经恢复 |
+| `consumed_continues_transformed` | 无回程的损失之后仍然活跃的形成，必已转化其依存：不再依存于该条件，或所需更少 |
+| `consumed_ends_when_fixed` | 依存不变时，无回程的损失终止该形成 |
+| `Crossing.loss_does_not_decide` | 同一过程、同一配置、同一个断裂，三次运行。第一次：形成终止，损失无回程。第二次：旧依存消解，对另一条件的依存形成，形成始终活跃，损失无回程。第三次：形成蛰伏，条件得到更新，同一依存此后一直被维持。损失本身不决定去路 |
+
+**解读。** 终止、转化与恢复不是外加的三个阶段。它们是同一依存关系跨步变化的三种结果，由同一结构定义，由定理相互约束，并在一个过程中都实际发生。[正典章节 §1](../../../../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md#1-生成同一展开--becoming-one-unfolding) 说“形成、维持、转化、退化与消解都是沿运行的关系变化，不是五个阶段”，这里是它在表示范围内的形式实例。
+
+它也回应了[根基 §9](../../../../theories/becoming/chapters/BECOMING-FOUNDATION.md#9-the-content-of-the-whole-deduction) 区分的“关系整体与分化”：在这个表示中，各种变化方式由同一依存结构区分，而不是各自命名的谓词。但它不完成整体演绎。表示中的规定由同一结构构成，不等于全部现实的规定都如此构成，后者仍需哲学论证；[整体演绎的审查](GROUNDING-INFERENCE-AND-PRESENTATION.md#19-the-whole-deduction-and-the-passage-from-inclusion-to-relation)已说明，多数几种方式不能代替这一步。
+
+### 6.3 逐步读法
+
+L3，同一模块：
+
+| 声明 | 内容 |
+|---|---|
+| `RenewingAt`、`renewing_at_active`、`not_renewing_at_of_broken` | 一个事件（形成，步）在更新之内，当它活跃，且该步维持它所参与的每个条件上的每个依存。整段运行的更新使每个活跃步都在更新之内；某步若断裂了它所参与条件上的依存，该事件就不在更新之内 |
+| `Commons.stepwise_credits_before_escalation` | 先在更新之内汲取，后来超出：整段读法记为消耗；逐步读法记入第一步，不记第二步 |
+| `Commons.dip_breaks_without_consuming` | 先超出一次，再停下等条件更新：整段读法不记为消耗；逐步读法不记入断裂的那一步 |
+| `Dip.renewing_at_each_step_not_in_run` | 维持者在它自己的每个活跃步都在更新之内，整段却不更新：它不活跃时，另一个形成断裂了共同条件。整段更新不是自身各步的合取 |
+
+L4，[Becoming.Metaethics](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) 的“The stepwise reading”一节：
+
+| 声明 | 内容 |
+|---|---|
+| `Web.valuation` | 逐步读法：事件在更新之内即为 living；两个事件的形成在各自的步上共同参与某一条件，即为 related |
+| `Web.connected_of_common`、`Web.significant_iff_of_common` | 每个活的事件都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std，与整段读法相同 |
+| `Web.breaking_relates`、`Web.valuing_breaking_reaches` | 断裂本身是一种关系：在断裂之步汲取的事件不是活的，并且与被断裂形成参与该条件的每个事件相关。在 N_rel 下，珍视这一事件的立场，必珍视那些活的事件 |
+| `Conditions.stepwise_related`、`Commons.readings_differ` | 依存不变时，两种读法的 `related` 相同，只在 `living` 上不同；两个方向都有分歧 |
+
+### 6.4 作者反审
+
+**反驳 1：三条去路只是定义上的分情况。**
+
+*回应。* 部分同意。`kept_or_broken` 与 `continuing_restores` 证明很短。内容在别处：
+- 这些关系在依存可变的模型中成立，而静态模型表达不了转化；
+- `loss_does_not_decide` 是存在性结果：三条去路在同一过程、同一配置下都实际发生，所以去路由后续关系决定（形成是否改变依存、条件是否得到更新），不由损失本身决定。
+
+**反驳 2：逐步读法偷偷带进了因果归属。** 维持者的事件被记入更新，即使维持条件的是别人。
+
+*回应。* 逐步读法读的是事件所处的关系，不是它的因果贡献。`Dip` 正显示这一点：维持者每步都在更新之内，条件却正被别的形成断裂。差别制造的归属仍是 [relational-renewal-classification](../../../../theories/becoming/results/records/relational-renewal-classification.md) 的下一步，这里没有做。
+
+**反驳 3：两种读法冲突，哪一个是生生？**
+
+*回应。* 两者回答不同的问题。整段读法问：形成在整段运行中是否消耗。逐步读法问：一个事件所在的那一步是否维持其条件。`Commons.readings_differ` 证明两个方向都有分歧，所以不能把一个当作另一个的细化。以哪一种或哪种组合作为 `living` 的读法，仍是前提卡上公开的对应选择。
+
+**反驳 4：转化把所需水平降低也算进去，太宽。**
+
+*回应。* 是的，依存减弱也算转化。应用若要区分减弱与替代，可以用 `Dissolves`／`Forms` 细分；`Crossing` 的转化运行是替代。
+
+**反驳 5：逐步读法太严。** 条件因季节等原因自然下降时，下降那一步上的任何事件都不被记入。
+
+*回应。* 属实，这是读法的严格性。周期层面的更新是 relational-renewal-classification 的下一步，可以作为第三种读法，这里没有做。
+
+**反驳 6：`Crossing` 是为结论构造的玩具。**
+
+*回应。* 它的作用是可能性见证：在可以表达依存变化的最小过程里，同一个断裂的三种去路都可实现。它不说明实际系统中哪条去路常见；那是经验问题。
+
+### 6.5 边界
+
+- 不证明任何读法是生生的正确读法，也不证明 S0、N、A、C、L 或 J。
+- 依存可观测量与实际历史的对应，是每次应用的义务。
+- 不处理差别制造归属、周期层面的更新，以及条件替代下分类是否保持（`Crossing` 的替代例除外）。
+- 整体演绎仍开放（见 6.2 的解读）。
+- 独立反审尚未进行。
 
 ## English summary
 
@@ -109,3 +211,12 @@ It also records two inherited limits:
 - the reading is whole-run, not stepwise.
 
 Whether the relational reading is the right reading of 生生 remains a philosophical correspondence, not a Lean result.
+
+**P6: dynamic dependence and the stepwise reading (§6).** At Ren's request to “pursue the theory of becoming, and prove the necessary proofs”, the two inherited limits are relaxed on the core.
+
+- **Dependence belongs to the unfolding.** In `Becoming.Dependence`, which conditions a formation depends on, at what level, and which it draws on are observables of the configuration. Across each step a dependence is kept, broken, formed or dissolved. Constant dependence recovers the static reading exactly. Change is made at a step: a dependence that holds and later does not dissolved across some step between, stated without excluded middle.
+- **Three ways through a loss.** Continuing with an unweakened dependence means the condition was restored. A formation still active after a loss without return has transformed its dependence; with fixed dependence it ends. In one process from one configuration, the same broken dependence leads to an ending, a transformation and a restoration: the loss does not decide its issue.
+- **The stepwise reading.** An event is within renewal when its step keeps every dependence on the conditions it participates in. Whole-run renewal credits every active step. Otherwise the two readings differ in both directions. A consumer's events before escalation are credited stepwise. A breaking event in a run whose condition returns is not credited stepwise, although its formation does not consume. A formation can be within renewal at each of its own steps without renewing in the run.
+- **Evaluation.** `Web.valuation` reads `living` stepwise. A common condition still discharges connection. A breaking event is related to the broken formation, so under N_rel valuing it reaches that formation's living events.
+
+The author's counterreview concedes that the dichotomies are short. The substantive content is that transformation becomes expressible and that the loss does not decide its issue. The stepwise reading records relational situation, not causal contribution. Which reading of `living` to adopt remains a disclosed correspondence. The whole deduction remains open: modes distinguished by one structure in a representation do not establish the relational constitution of everything actual.

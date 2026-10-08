@@ -160,8 +160,8 @@
     "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading. The Mathlib bridge connects only the selection and safety interfaces of CorrectionBoundary and ObservationChange; their randomized bounds and real-valued models are not stated on the core, and the passage by choice to a single policy is not restated."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T214944.061715Z）：Becoming.Bridge 32 项定理，连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 6 个模块（含只作导入的根模块），共 81 项定理／147 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 8 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261008T215022.915513Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 11 个模块（含核心）的当前字节与已通过回执一致。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261008T214944.061715Z): Becoming.Bridge's 32 theorems, with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 6 modules (including the import-only root) with 81 theorems/147 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 8 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261008T215022.915513Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 11 modules in its closure, the core included, match passed receipts."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T233313.422223Z）：Becoming.Bridge 32 项定理，连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 7 个模块（含只作导入的根模块），共 116 项定理／225 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 9 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261008T233335.261411Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 11 个模块（含核心）的当前字节与已通过回执一致。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T233313.422223Z): Becoming.Bridge's 32 theorems, with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 7 modules (including the import-only root) with 116 theorems/225 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 9 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261008T233335.261411Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 11 modules in its closure, the core included, match passed receipts."
   },
   "references": [
     {
@@ -218,7 +218,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "3fcd792e7167d26cbdec3cd1e3c0f1c1d2f66297a076d710ba6a2838f10a0d7a",
+      "sha256": "86af84d5e767ca82f64dcdb14c6b64a25f7cd4f58c7190e004ff1d09239acb94",
       "declarations": [
         "Becoming.G0",
         "Becoming.Extension",
@@ -371,13 +371,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4d647a2cf52ed88914ceb4edfa4af6bd05707b596bf9e1b9595713d4519e3a6c",
+      "sha256": "c96e0614fa080cc7422551287aa0aafe11fd60ac0043397406e3f2e5fd1baafa",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "role": "receipt",
-      "sha256": "a130a4afc10165d54a810f84377e22bdc6cf9d3932cd3219044cbc0fe486a14c",
+      "sha256": "af05ccdacc3dc614e9e53a77cb1ece16ae927de53bd036960c9af47fb5cd4094",
       "declarations": []
     },
     {
@@ -389,13 +389,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json",
       "role": "integration",
-      "sha256": "74f9e75aa032610156c68eec6c11af0fe69a52d15e41dc630483fb1be08d5159",
+      "sha256": "5807321b3d46de3b3b257fd39ab7a668350518fd8f6ffd5190e7b7aa257c1c93",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "7dea8f48e9b45a65001f49f35d8f4ea972280a8f9c7820f95e777a29deb012a5",
+      "sha256": "94039ec18b1b24e838af3c37b52e9c6e88a4dcea2131f699ac6d9cb56d8f452d",
       "declarations": []
     },
     {
@@ -563,6 +563,10 @@
     {
       "zh": "2026-10-09（P5c）：判断过程 judgeProcess 与 sees 由桥接层移入核心 Becoming.Inquiry，新增 commonResponse_judge_iff（判断即一步探究），robust_iff_commonResponse 改由它导出，陈述不变。新增外围桥接 CorrectionInquiry（Lean 4.30.0-rc2 与 Mathlib）：CorrectionBoundary 的实施与共同行动、ObservationChange 的安全选择都是每个观察格上的共同回应，两模块的细化定理由 commonResponse_antitone 导出。核心计数改为 81／147，分类表 46 个模块。已读差异：既有定理陈述不变。",
       "en": "2026-10-09 (P5c): judgeProcess and sees moved from the bridge into the core layer Becoming.Inquiry, with the new commonResponse_judge_iff (a judgment is a one-step inquiry); robust_iff_commonResponse now follows from it, statement unchanged. A new peripheral bridge, CorrectionInquiry (Lean 4.30.0-rc2 with Mathlib), shows that CorrectionBoundary's implementation and common action and ObservationChange's safe choice are common responses on each observation cell, and derives both modules' refinement theorems from commonResponse_antitone. Core counts are now 81/147, and the classification covers 46 modules. Diff read: existing theorem statements unchanged."
+    },
+    {
+      "zh": "2026-10-09（P6）：按 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”，L3 新增 Becoming.Dependence（becoming-dependence-dynamics），L4 新增逐步读法（becoming-stepwise-reading）。已读差异：Becoming.Metaethics 的导入由 Becoming.Renewal 改为 Becoming.Dependence（后者导入前者），模块说明增加一段，Separate 之后新增“The stepwise reading”一节（Web.valuation 及 6 项定理）；其余字节不变，本结果的定理陈述与证明不变。外围桥接 CorrectionInquiry 随核心重跑通过，其检查器字节未变；分类检查重跑，46 个模块的分类不变，只更新两张回执的指针。核心回执改为当前运行，计数改为 116 项定理／225 项声明审计，核心闭包 9 个模块。",
+      "en": "2026-10-09 (P6): following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, L3 gains Becoming.Dependence (becoming-dependence-dynamics) and L4 the stepwise reading (becoming-stepwise-reading). Diff read: Becoming.Metaethics now imports Becoming.Dependence instead of Becoming.Renewal (the former imports the latter), its module documentation gains a paragraph, and a section “The stepwise reading” (Web.valuation and 6 theorems) follows Separate; all other bytes are unchanged, as are this result's theorem statements and proofs. The peripheral bridge CorrectionInquiry was rerun with the new core and passed; its checker bytes are unchanged. The classification check was rerun: the 46 modules are classified as before, and only its pointers to the two receipts changed. The core receipt now cites the current run, with 116 theorems/225 declaration audits and a core closure of 9 modules."
     }
   ]
 }

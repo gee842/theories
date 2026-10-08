@@ -727,10 +727,15 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-        "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md"
+        "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md",
+        "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+        "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
       ]
     },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-REVERSIBILITY-INTEGRATION.md": {
@@ -7925,6 +7930,7 @@
       "local_links": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
@@ -11316,6 +11322,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",

@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "id": "becoming-dependence-dynamics",
+  "title": {
+    "zh": "依存的形成、维持、断裂与转化：损失的三条去路",
+    "en": "Dependence that forms, holds, breaks and transforms: three ways through a loss"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T23:33:13+00:00",
+  "claim": {
+    "zh": "让一个形成依存于哪些条件、所需多少、汲取哪些条件都成为配置的可观测量，任一运行就读出为一个依存网。跨每一步，一个依存被维持、断裂、形成或消解；依存不变时，这一读法恰好复原静态的更新／消耗分类。变化发生在步上：某步成立、后来不成立的依存在其间某步消解，反之在某步形成（不用排中律陈述）。每个被满足的依存跨每一步恰为维持或断裂之一；更新与消耗仍互斥。在形成只在有支持处活跃的依存网中，以不弱于先前的依存继续活跃即意味着条件已恢复；无回程的损失之后仍活跃的形成必已转化其依存，依存不变时则终止。终止、转化与恢复都实际可能：同一过程、同一配置、同一断裂，分别通向三者，损失本身不决定去路。不用伦理前提，也不用 Lean 公理。",
+    "en": "Let which conditions a formation depends on, at what level, and which it draws on be observables of the configuration; every run then reads as a web of dependence. Across each step a dependence is kept, broken, formed or dissolved; with constant dependence this reading recovers the static renewing/consuming classification exactly. Change is made at a step: a dependence that holds and later does not dissolved across some step between, and one that comes to hold formed across one (stated without excluded middle). Every met dependence is exactly one of kept or broken across each step, and renewal and consumption remain exclusive. In a web where formations are active only where supported, continuing with an unweakened dependence means the condition was restored; a formation still active after a loss without return has transformed its dependence, and with fixed dependence it ends. Ending, transformation and restoration are all possible: in one process from one configuration the same broken dependence leads to each, so the loss does not decide its issue. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "条件水平与所需水平是自然数；活跃、依存与汲取是配置上的命题，均可随配置变化。",
+      "en": "Levels and needs are natural numbers; activity, dependence and drawing are propositions on configurations, and all may vary with the configuration."
+    },
+    {
+      "zh": "三条去路的定理假定依存网是有依存的（Dependent）：形成只在其当时所依存的条件支持它处活跃。",
+      "en": "The three-ways theorems assume the web is Dependent: a formation is active only where the conditions it then depends on support it."
+    },
+    {
+      "zh": "一步之内依存改变与条件下降的先后不可区分；读法把下降算在该步起点的依存上。",
+      "en": "Within one step, whether a dependence changed before the condition fell is not distinguished; the reading counts the fall against the dependence at the step's start."
+    }
+  ],
+  "correspondence": {
+    "zh": "形成与条件是同一展开中的分析角色，不是独立实体。可观测量与实际历史的对应、依存的改变是否先于下降，以及哪条去路在实际系统中出现，都是应用或经验上的义务。",
+    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities. The correspondence of observables to an actual history, whether a change of dependence preceded a fall, and which issue occurs in an actual system are application or empirical duties."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+  "aliases": [
+    "Becoming.ceases_at_a_step",
+    "Becoming.arises_at_a_step",
+    "Becoming.Web.dissolves_between",
+    "Becoming.Web.forms_between",
+    "Becoming.Web.static_supported",
+    "Becoming.Web.static_dependent",
+    "Becoming.Web.static_renewed",
+    "Becoming.Web.static_consumed",
+    "Becoming.Web.static_renewingIn",
+    "Becoming.Web.static_consumingIn",
+    "Becoming.Web.conditions_along",
+    "Becoming.Web.kept_or_broken",
+    "Becoming.Web.kept_not_broken",
+    "Becoming.Web.renewed_not_consumed",
+    "Becoming.Web.renewing_not_consuming",
+    "Becoming.Web.renewing_keeps_support",
+    "Becoming.Web.lost_consumed",
+    "Becoming.Web.continuing_restores",
+    "Becoming.Web.consumed_continues_transformed",
+    "Becoming.Web.consumed_ends_when_fixed",
+    "Becoming.Crossing.loss_does_not_decide",
+    "Becoming.Crossing.ending_dependent",
+    "Becoming.Crossing.transforming_dependent",
+    "Becoming.Crossing.restoring_dependent"
+  ],
+  "dependencies": [
+    {
+      "id": "relational-renewal-classification",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "static 把静态 Unfolding 读为依存网；static_supported、static_dependent、static_renewed、static_consumed、static_renewingIn、static_consumingIn 证明依存网上的谓词在其上恰为该结果的 Supported、Dependent、Renewed、Consumed、RenewingIn、ConsumingIn。",
+        "en": "static reads a static Unfolding as a web; static_supported, static_dependent, static_renewed, static_consumed, static_renewingIn and static_consumingIn prove that the web's predicates there are exactly that result's Supported, Dependent, Renewed, Consumed, RenewingIn and ConsumingIn."
+      },
+      "interface": {
+        "output": {
+          "zh": "静态展开及其更新／消耗谓词。",
+          "en": "Static unfoldings and their renewing/consuming predicates."
+        },
+        "input": {
+          "zh": "依存不变的依存网（Web.static）。",
+          "en": "The web with constant dependence (Web.static)."
+        },
+        "conditions": {
+          "zh": "依存与汲取不随步变化。",
+          "en": "Dependence and drawing do not vary with the step."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    },
+    {
+      "id": "becoming-renewal-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "conditions_along 证明经固定依存读出运行（Conditions.dependence.along）就是该结果的 Conditions.along 的静态读法；Becoming.Renewal 的 Conditions 是依存不变的情形。",
+        "en": "conditions_along proves that reading a run through fixed dependences (Conditions.dependence.along) is the static reading of that result's Conditions.along; Becoming.Renewal's Conditions are the case of constant dependence."
+      },
+      "interface": {
+        "output": {
+          "zh": "运行上的条件可观测量 Conditions 与 Conditions.along。",
+          "en": "Conditions as observables on runs, and Conditions.along."
+        },
+        "input": {
+          "zh": "Conditions.dependence 给出的依存可观测量。",
+          "en": "The dependence observables given by Conditions.dependence."
+        },
+        "conditions": {
+          "zh": "等式按定义成立（rfl）。",
+          "en": "The equation holds by definition (rfl)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "zh": "该结果以端点可能的保留刻画回程；本结果在依存层面区分恢复、转化与终止。Crossing 的恢复运行是指定依存的恢复，保留了先前的断裂；它是最小见证，不是该结果下一步所要求的既有形成机制中的恢复。",
+        "en": "That result characterizes return through preserved endpoint possibilities; this one distinguishes restoration, transformation and ending at the level of dependence. Crossing's restoring run restores a named dependence and keeps the earlier break; it is a minimal witness, not restoration within an existing formation mechanism as that result's next step asks."
+      }
+    },
+    {
+      "id": "supported-renewal-recovery",
+      "detail": {
+        "zh": "该结果在支持门控定律内给出修复路线；本结果不依赖具体定律，只给出恢复与转化、终止之间的一般关系。",
+        "en": "That result gives a repair route within the support-gated law; this one states, without a particular law, how restoration relates to transformation and ending."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "在一个表示范围内，形成、维持、断裂、消解、转化、终止与恢复由同一依存结构区分并由定理相互约束。这是关系整体与分化的一个形式实例，不完成整体演绎：表示中的构成不等于全部现实的关系构成。",
+        "en": "Within one representation, forming, keeping, breaking, dissolving, transforming, ending and restoring are distinguished by one structure of dependence and constrained by theorems. This is a formal instance of relational unity and differentiation; it does not complete the whole deduction, since constitution in a representation is not the relational constitution of everything actual."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "detail": {
+        "zh": "损失不决定去路（Crossing.loss_does_not_decide）：从“发生了无回程之外的断裂”不能推出终止、转化或恢复中的任何一个。",
+        "en": "The loss does not decide its issue (Crossing.loss_does_not_decide): from a break alone, none of ending, transformation or restoration follows."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "detail": {
+        "zh": "“转化”包括所需水平降低；应用若要区分减弱与替代，须用 Dissolves／Forms 细分。",
+        "en": "“Transformation” includes a lowered need; an application distinguishing weakening from substitution must refine it by Dissolves/Forms."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词；不涉及差别制造归属、周期层面的更新，也不证明条件替代下分类保持（Crossing 的替代例除外）。三条去路的一般定理只给出约束，哪条去路发生由后续关系决定。不完成整体演绎。",
+    "en": "Contains no ethical predicate; does not treat difference-making attribution or cycle-level renewal, nor prove that the classification is preserved under substitution of conditions beyond Crossing. The general three-ways theorems constrain the issue; which issue occurs is decided by later relations. Does not complete the whole deduction."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T233313.422223Z）：Becoming.Dependence 29 项定理全部空依赖；同一回执覆盖包内 7 个模块（含只作导入的根模块），共 116 项定理／225 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 9 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T233313.422223Z): all 29 theorems of Becoming.Dependence have empty axiom reports; the same receipt covers the package's 7 modules (including the import-only root) with 116 theorems/225 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 9 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "9e2bd75187e380f0108702babeb471af29f9b19a4381deccee798adba5695cdd",
+      "declarations": [
+        "Becoming.Dependence",
+        "Becoming.Web",
+        "Becoming.Dependence.along",
+        "Becoming.Conditions.dependence",
+        "Becoming.Web.Kept",
+        "Becoming.Web.Broken",
+        "Becoming.Web.Forms",
+        "Becoming.Web.Dissolves",
+        "Becoming.Web.Lost",
+        "Becoming.Web.static",
+        "Becoming.ceases_at_a_step",
+        "Becoming.arises_at_a_step",
+        "Becoming.Web.dissolves_between",
+        "Becoming.Web.forms_between",
+        "Becoming.Web.static_supported",
+        "Becoming.Web.static_dependent",
+        "Becoming.Web.static_renewed",
+        "Becoming.Web.static_consumed",
+        "Becoming.Web.static_renewingIn",
+        "Becoming.Web.static_consumingIn",
+        "Becoming.Web.conditions_along",
+        "Becoming.Web.kept_or_broken",
+        "Becoming.Web.kept_not_broken",
+        "Becoming.Web.renewed_not_consumed",
+        "Becoming.Web.renewing_not_consuming",
+        "Becoming.Web.renewing_keeps_support",
+        "Becoming.Web.lost_consumed",
+        "Becoming.Web.continuing_restores",
+        "Becoming.Web.consumed_continues_transformed",
+        "Becoming.Web.consumed_ends_when_fixed",
+        "Becoming.Crossing.loss_does_not_decide",
+        "Becoming.Crossing.ending_dependent",
+        "Becoming.Crossing.transforming_dependent",
+        "Becoming.Crossing.restoring_dependent"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "role": "proof",
+      "sha256": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
+      "declarations": [
+        "Becoming.Conditions",
+        "Becoming.Conditions.along"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "role": "proof",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "declarations": [
+        "RelationalRenewal.Unfolding",
+        "RelationalRenewal.Supported",
+        "RelationalRenewal.Dependent",
+        "RelationalRenewal.Renewed",
+        "RelationalRenewal.Consumed",
+        "RelationalRenewal.RenewingIn",
+        "RelationalRenewal.ConsumingIn"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "c96e0614fa080cc7422551287aa0aafe11fd60ac0043397406e3f2e5fd1baafa",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "984c9aae9c024aedc2fe8895975ae66094e939c499705d5bb19214c0f8262d3f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "94039ec18b1b24e838af3c37b52e9c6e88a4dcea2131f699ac6d9cb56d8f452d",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Renewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/RelationalRenewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "在既有形成机制（如支持门控定律）中实现依存的转化与替代，检验分类与去路在其中的保持；差别制造归属与周期层面的更新。",
+    "en": "Realize transformation and substitution of dependence in an existing formation mechanism (such as the support-gated law) and test whether the classification and the three ways are preserved there; difference-making attribution and cycle-level renewal."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P6，承接 becoming-renewal-reading 的下一步。",
+      "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P6 of the unification plan, taking up the next step of becoming-renewal-reading."
+    }
+  ]
+}

@@ -66,6 +66,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean)
 
+## becoming-dependence-dynamics ← relational-renewal-classification
+
+`formal-reuse` — static 把静态 Unfolding 读为依存网；static_supported、static_dependent、static_renewed、static_consumed、static_renewingIn、static_consumingIn 证明依存网上的谓词在其上恰为该结果的 Supported、Dependent、Renewed、Consumed、RenewingIn、ConsumingIn。 / static reads a static Unfolding as a web; static_supported, static_dependent, static_renewed, static_consumed, static_renewingIn and static_consumingIn prove that the web's predicates there are exactly that result's Supported, Dependent, Renewed, Consumed, RenewingIn and ConsumingIn.
+
+**Producer output / 上游输出:** 静态展开及其更新／消耗谓词。 / Static unfoldings and their renewing/consuming predicates.
+
+**Consumer input / 下游输入:** 依存不变的依存网（Web.static）。 / The web with constant dependence (Web.static).
+
+**Retained conditions / 保留条件:** 依存与汲取不随步变化。 / Dependence and drawing do not vary with the step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## becoming-dependence-dynamics ← becoming-renewal-reading
+
+`formal-reuse` — conditions_along 证明经固定依存读出运行（Conditions.dependence.along）就是该结果的 Conditions.along 的静态读法；Becoming.Renewal 的 Conditions 是依存不变的情形。 / conditions_along proves that reading a run through fixed dependences (Conditions.dependence.along) is the static reading of that result's Conditions.along; Becoming.Renewal's Conditions are the case of constant dependence.
+
+**Producer output / 上游输出:** 运行上的条件可观测量 Conditions 与 Conditions.along。 / Conditions as observables on runs, and Conditions.along.
+
+**Consumer input / 下游输入:** Conditions.dependence 给出的依存可观测量。 / The dependence observables given by Conditions.dependence.
+
+**Retained conditions / 保留条件:** 等式按定义成立（rfl）。 / The equation holds by definition (rfl).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
 ## becoming-renewal-reading ← relational-renewal-classification
 
 `formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
@@ -113,6 +137,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。 / Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
+
+## becoming-stepwise-reading ← becoming-dependence-dynamics
+
+`formal-reuse` — RenewingAt 用 Kept 定义；not_renewing_at_of_broken 由 kept_not_broken 得出；Commons.readings_differ 经 static_consumingIn 与整段读法比较。 / RenewingAt is defined by Kept; not_renewing_at_of_broken follows from kept_not_broken; Commons.readings_differ compares with the whole-run reading through static_consumingIn.
+
+**Producer output / 上游输出:** 依存网、跨步的维持与断裂及其互斥，静态复原。 / Webs, keeping and breaking across a step and their exclusivity, static recovery.
+
+**Consumer input / 下游输入:** 逐步读法的定义与比较。 / The definition and comparison of the stepwise reading.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## becoming-stepwise-reading ← metaethical-core-characterization
+
+`formal-reuse` — Web.significant_iff_of_common 以 Web.connected_of_common 满足 significant_iff 的连通前提；Web.valuing_breaking_reaches 使用 N_rel 的规则 transmits。 / Web.significant_iff_of_common discharges significant_iff's connection premise by Web.connected_of_common; Web.valuing_breaking_reaches uses N_rel's rule transmits.
+
+**Producer output / 上游输出:** 连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；N_rel 的传递规则。 / On a connected whole, G0 ⇔ seed ∧ N_rel ∧ N_std; N_rel's transmission rule.
+
+**Consumer input / 下游输入:** 逐步读法给出的 Valuation 及其连通。 / The Valuation given by the stepwise reading, with its connection.
+
+**Retained conditions / 保留条件:** 立场、区域与意义仍外给；需要一个活的事件。 / Standpoints, regions and significance remain supplied; some living event is needed.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## becoming-stepwise-reading ← becoming-renewal-reading
+
+`formal-reuse` — Conditions.stepwise_related 证明依存不变时逐步读法的 related 就是该结果 Conditions.valuation 的 related；Commons.readings_differ 与其 living 比较。 / Conditions.stepwise_related proves that with constant dependence the stepwise reading's `related` is that result's Conditions.valuation `related`; Commons.readings_differ compares with its `living`.
+
+**Producer output / 上游输出:** 整段运行上的关系读法 Conditions.valuation。 / The whole-run relational reading Conditions.valuation.
+
+**Consumer input / 下游输入:** 固定依存下的逐步读法。 / The stepwise reading under fixed dependence.
+
+**Retained conditions / 保留条件:** related 的等式按定义成立（rfl）。 / The equation for `related` holds by definition (rfl).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
