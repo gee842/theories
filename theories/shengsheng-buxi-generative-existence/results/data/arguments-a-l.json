@@ -1253,11 +1253,11 @@
     "next_zh": "普遍实践根据仍开放：D 分解为外在论表述 A 与立场中立 N_std，二者都尚未从行动者自身立场得到论证；规律类须加入恢复、休息与外部化消耗。",
     "next_en": "The universal practical warrant remains open: D splits into the externalist articulation A and standpoint neutrality N_std, neither yet argued from an agent’s own standpoint; the law class needs recovery, rest and externalized consumption.",
     "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
-    "source_sha256": "5e7c2e0395208e10e22a26f2a5552376b5ad977c1196156d52844288fd8f8915",
+    "source_sha256": "49bf5e0350e241cfa522f6981517e8da783d88787925f153a638253ae155748d",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean"

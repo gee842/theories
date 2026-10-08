@@ -108,7 +108,7 @@ Every premise is named and visible. In Lean they are definitions or hypotheses, 
 - 不变量 `Invariant` 是每步都保持的性质。
 - 新实现 `Novel` 是某种读法下此前未实现的主张。
 
-这些都由核心的轨迹 `Trace` 定义，因此与核心的组合、乘积和传递定理直接相接（[BecomingFrame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean)）。
+这些都由核心的轨迹 `Trace` 定义，因此与核心的组合、乘积和传递定理直接相接（[Becoming.Frame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean)）。
 
 **Mechanism.** The starting point is the process: a configuration becomes another through an admissible change.
 
@@ -142,7 +142,7 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 ## 2. 组织、更新与演化 / Organization, renewal and evolution
 
-**更新与消耗是同一个分类，属于运行。** 经条件的可观测量读出，任一过程的任一运行都是一个关系展开（[BecomingRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean)）。
+**更新与消耗是同一个分类，属于运行。** 经条件的可观测量读出，任一过程的任一运行都是一个关系展开（[Becoming.Renewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)）。
 
 - **更新。** 一个形成是更新的，当它依存或汲取的每个条件，都继续支持每个依存于该条件的形成。
 - **消耗。** 一个形成是消耗的，当它汲取的某个条件，使某个依存者从某步起永久失去支持。
@@ -182,7 +182,7 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 ## 3. 认识与探究 / Knowing and inquiry
 
-**所见范围由动力学给出。** 一个探究策略的所见范围，是它实际执行可达的配置。可靠（sound）的策略在其所见范围上确保它的目标（`Scope.secures`，[BecomingModal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean)）。这收窄了一个原本由应用自行给出的参数。
+**所见范围由动力学给出。** 一个探究策略的所见范围，是它实际执行可达的配置。可靠（sound）的策略在其所见范围上确保它的目标（`Scope.secures`，[Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean)）。这收窄了一个原本由应用自行给出的参数。
 
 **The scope of an inquiry is given by the dynamics**: the configurations its actual executions reach. A sound policy secures its goal there.
 
@@ -262,7 +262,7 @@ Ren 对伦理质量的回答：
 
 G0 是 Ren 授权采用的公理措辞。它的对象从一开始就是生生；“生”的几种范围都可以成立，并可能得到不同的范围。
 
-**刻画定理。** 在有某个活的主张的连通整体上，下面两者等价（`significant_iff`，[MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)）：
+**刻画定理。** 在有某个活的主张的连通整体上，下面两者等价（`significant_iff`，[Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）：
 
 - 每个立场都持有的 G0（主张层面）；
 - 种子 S0，加两条边界中立 N_rel 与 N_std。
@@ -376,18 +376,18 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 
 All new formal results are stated on one spine; when it cannot express a result, the spine is extended rather than another model built. Existing generic modules are instantiated, not copied.
 
-**核心纯净 / A pure core.** 按 [Ren 的要求](../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)，核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的任何模块，其中每条声明的公理报告为空，并且只用 Lean 的内置前导即可编译；检查器每次都检查这三点。G0、C、D 与确保的正面根据在核心中陈述一次；桥接层证明既有模块的定义就是这些，依存方向从外围指向核心。外围可用任何合适的工具（Mathlib、Python）。
+**核心纯净 / A pure core.** 按 [Ren 的要求](../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)，核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的任何模块，其中每条声明的公理报告为空，并且只用 Lean 的内置前导即可编译；检查器每次都检查这三点。G0、C、D 与确保的正面根据在核心中陈述一次；桥接层证明既有模块的定义就是这些，依存方向从外围指向核心。外围可用任何合适的工具（Mathlib、Python）。核心是 Lean 包 `Becoming`：`import Becoming` 导入全部四层，桥接 `Becoming.Bridge` 在包内但不属核心（[包说明](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)）。
 
-The core (L0 with its two foundation modules, and L1–L4) imports nothing outside itself; every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone. The checker verifies all three on every run. The bridge proves that existing modules' definitions are the core's; dependence runs from the periphery to the core, which may use any suitable tool.
+The core (L0 with its two foundation modules, and L1–L4) imports nothing outside itself; every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone. The checker verifies all three on every run. The bridge proves that existing modules' definitions are the core's; dependence runs from the periphery, which may use any suitable tool, to the core. The core is the Lean package `Becoming`: `import Becoming` brings in all four layers, and `Becoming.Bridge` sits in the package but outside the core.
 
 | 层 / Layer | 模块 | 内容 | 定理 |
 |---|---|---|---:|
 | L0 | `GenerativeCore` | 过程、轨迹及其组合、传递 | 继承 |
-| L1 | [BecomingFrame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean) | 框架、运行、可达、不变量、新实现 | 11 |
-| L2 | [BecomingModal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean) | 所见范围；可靠策略确保其目标 | 5 |
-| L3 | [BecomingRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean) | 运行上的更新／消耗；一条下降原则 | 6 |
-| L4 | [MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) | 前提卡、G0 刻画、极小性、普遍理由、关系读法 | 26 |
-| 桥接 / Bridges | [BecomingInstances](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广 | 32 |
+| L1 | [Becoming.Frame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) | 框架、运行、可达、不变量、新实现 | 11 |
+| L2 | [Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean) | 所见范围；可靠策略确保其目标 | 5 |
+| L3 | [Becoming.Renewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) | 运行上的更新／消耗；一条下降原则 | 6 |
+| L4 | [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 前提卡、G0 刻画、极小性、普遍理由、关系读法 | 26 |
+| 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广 | 32 |
 
 [合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 80 项定理、146 项声明审计，公理报告全部为空；15 个继承模块的当前字节须与已通过的回执一致。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 

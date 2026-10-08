@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "utc": "20261008T200325.071625Z",
+  "utc": "20261008T213425.487528Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "evaluator-grounding-checks/20261008T200325.071625Z",
+  "retained_run": "evaluator-grounding-checks/20261008T213425.487528Z",
   "source_sha256": {
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
-    "EvaluatorGrounding": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c"
+    "EvaluatorGrounding": "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b"
   },
   "checker_sha256": {
     "check_evaluator_grounding.py": "136af50de0cc82df0ce7a0d7b896ea14e4e893fdb6ea257935f02c9780bd0afb",
@@ -364,7 +364,7 @@
   "artifact_sha256": {
     "Controls.lean": "a12a7993ee77e3aad6d524790553dc3c2d31e3231a2c9586f2bfd7b13bd48f62",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EvaluatorGrounding.lean": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+    "EvaluatorGrounding.lean": "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b",
     "EvaluatorGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "EvaluatorGroundingAxiomAudit.lean": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
     "EvaluatorGroundingAxiomAudit.log": "8a908e52df9fa7bfd1d73d8ccc5c5321960fec17944b82d37311530c401987e7",

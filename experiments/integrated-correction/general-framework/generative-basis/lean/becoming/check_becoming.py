@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""One checker for the Becoming spine.
+"""One checker for the Becoming package: the formal core and its bridge.
 
-Resolves the import closure of the spine modules, requires every inherited module's
-current bytes to match a passed receipt, compiles the closure in dependency order with
-Lean 4.29.1, audits the axioms of every declaration, and requires an empty axiom report
-for every declaration of the spine modules. Inherited reports are recorded, not changed.
+The package names modules by path (`Becoming/Frame.lean` is `Becoming.Frame`); other
+modules are found by file name under the Lean root. The checker resolves the import
+closure, requires every inherited module's current bytes to match a passed receipt,
+compiles the closure in dependency order with Lean 4.29.1 and audits the axioms of
+every declaration. Inherited reports are recorded, not changed.
 
 The core is pure: its import closure is exactly the foundation and the core modules,
 every declaration in that closure has an empty axiom report, and the closure compiles
 from Lean's prelude alone (the foundation's `import Std` line is removed for that run).
-The bridge imports existing modules to show their interfaces are the spine's; nothing
-in the core imports it.
+The bridge imports existing modules to show that their interfaces are the core's;
+nothing in the core imports it, and its declarations also have empty axiom reports.
 """
 from datetime import datetime, timezone
 import json
@@ -29,9 +30,9 @@ import check as audit_support  # noqa: E402
 
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
-# Spine modules in this directory, in layer order: the core, then the bridge.
-CORE = ["BecomingFrame", "BecomingModal", "BecomingRenewal", "MetaethicalCore"]
-BRIDGE = ["BecomingInstances"]
+# The package, in layer order: the four core layers and their root, then the bridge.
+CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Metaethics", "Becoming"]
+BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
@@ -80,8 +81,14 @@ def module_index():
     for path in LEAN_ROOT.rglob("*.lean"):
         if any(ARCHIVE.search(part) for part in path.relative_to(LEAN_ROOT).parts[:-1]):
             continue
-        index.setdefault(path.stem, []).append(path)
+        name = ".".join(path.relative_to(HERE).with_suffix("").parts) if HERE in path.parents else path.stem
+        index.setdefault(name, []).append(path)
     return index
+
+
+def source_file(name):
+    """Where a module sits in the compile directory: `Becoming.Frame` → `Becoming/Frame.lean`."""
+    return name.replace(".", "/") + ".lean"
 
 
 def imports_of(data):
@@ -121,12 +128,15 @@ def passed_receipts():
 
 
 def declarations(data):
+    # A root module only imports and documents; it declares nothing.
+    if not re.sub(r"^import .+$", "", audit_support.code_only(data.decode()), flags=re.M).strip():
+        return []
     # The inherited scanner accepts only Std/GenerativeCore imports; it reads a copy
     # with imports replaced. Compilation uses the unchanged bytes.
     return audit_support.declarations(re.sub(r"^import .+$", "import Std", data.decode(), flags=re.M))
 
 
-CONTROLS = """import BecomingInstances
+CONTROLS = """import Becoming.Bridge
 open Becoming Generative Generative.InquirySufficiency
 
 -- The full premise set is consistent: the model satisfies seed, both neutralities and connection.
@@ -238,14 +248,17 @@ def main():
             receipt["lean_version"] = run(["--version"], "version.log").strip()
             assert "version 4.29.1" in receipt["lean_version"]
             for name, data in sources.items():
-                (work / (name + ".lean")).write_bytes(data)
+                target = work / source_file(name)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
             for name in order:
-                run(["-o", name + ".olean", name + ".lean"], name + ".log")
+                flat = name.replace(".", "")
+                run(["-o", source_file(name)[:-5] + ".olean", source_file(name)], name + ".log")
                 audit = "import " + name + "\n" + "\n".join(
                     "#print axioms " + item["name"] for item in registry[name]) + "\n"
-                (work / (name + "AxiomAudit.lean")).write_text(audit)
-                (retained / (name + "AxiomAudit.lean")).write_text(audit)
-                output = run([name + "AxiomAudit.lean"], name + "AxiomAudit.log")
+                (work / (flat + "AxiomAudit.lean")).write_text(audit)
+                (retained / (flat + "AxiomAudit.lean")).write_text(audit)
+                output = run([flat + "AxiomAudit.lean"], flat + "AxiomAudit.log")
                 dependencies = {}
                 for item in registry[name]:
                     full = item["name"]
@@ -261,9 +274,9 @@ def main():
                 if name in SPINE:
                     signatures = "import " + name + "\n" + "\n".join(
                         "#check @" + item["name"] for item in registry[name] if item["kind"] == "theorem") + "\n"
-                    (work / (name + "Signatures.lean")).write_text(signatures)
-                    (retained / (name + "Signatures.lean")).write_text(signatures)
-                    run([name + "Signatures.lean"], name + "Signatures.log")
+                    (work / (flat + "Signatures.lean")).write_text(signatures)
+                    (retained / (flat + "Signatures.lean")).write_text(signatures)
+                    run([flat + "Signatures.lean"], flat + "Signatures.log")
                 records.append({
                     "module": name, "spine": name in SPINE,
                     "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
@@ -279,8 +292,10 @@ def main():
             bare = work / "prelude-only"
             bare.mkdir()
             for name in core_closure:
-                (bare / (name + ".lean")).write_text(re.sub(r"^import Std\n", "", sources[name].decode(), flags=re.M))
-                run(["-o", name + ".olean", name + ".lean"], name + "PreludeOnly.log", bare)
+                target = bare / source_file(name)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_text(re.sub(r"^import Std\n", "", sources[name].decode(), flags=re.M))
+                run(["-o", source_file(name)[:-5] + ".olean", source_file(name)], name + ".PreludeOnly.log", bare)
             receipt["core_compiles_from_prelude"] = True
             receipt["checked_application_examples"] = [
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},

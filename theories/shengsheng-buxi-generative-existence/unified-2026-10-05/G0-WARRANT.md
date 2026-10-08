@@ -82,7 +82,7 @@ Partially completed on 9 October and narrowed after independent review:
 - Tolerance with graded connection yields a standpoint-indexed, single-history instance of G0 on the reachable inventory; tolerance carries everything beyond S0.
 - The adopted unindexed G0 still needs a bridge from standpoint-relative to normative significance, and the binding force depends on accepting S0, tolerance and BI.
 
-**2026-10-09 内容刻画**（[记录](../results/records/metaethical-core-characterization.md)，[Lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)）。在已形成关系把生生连在一起的整体上，G0 等价于三项合取：
+**2026-10-09 内容刻画**（[记录](../results/records/metaethical-core-characterization.md)，[Lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）。在已形成关系把生生连在一起的整体上，G0 等价于三项合取：
 - 某处有一个生生被某立场珍视（种子；持 S0 的位置都提供一个）；
 - 正面意义沿非零的已形成关系传递（N_rel）；
 - 对生生的正面意义不随立场而取消（N_std）。
@@ -106,7 +106,7 @@ Under the same commitments, human instructions, institutional aims and AI goals 
 | 检查 | 承担的内容 | 不承担的内容 |
 |---|---|---|
 | [PositiveGroundUncertainty](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) | 前提足迹：正面结论只需 G0 与实际对应，不需整体改善、完整排序或未来积分；量词结构（每段接续都有某种生成，而没有一种固定形态遍及所有接续）；证书可撤回 | G0 为真 |
-| [MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) | 内容刻画：连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；D 由 A 推出；每项前提的极小性，以及对手即有界规则；所见范围由探究的实际执行给出 | 种子、N、A 为真；`living` 即生生的认定；连通的实际对应 |
+| [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 内容刻画：连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；D 由 A 推出；每项前提的极小性，以及对手即有界规则；所见范围由探究的实际执行给出 | 种子、N、A 为真；`living` 即生生的认定；连通的实际对应 |
 | [PositionedPositiveReason](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean) | 前提足迹：每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自 D，不来自 G0 与 E | D 本身的根据 |
 | [RenewingFormation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) | 所给不可恢复磨损规律下的描述性区分：两种形式读法（`Ceaseless`、`KeepsCapacity`）、共享与联合超出时共享形成的终止、一步计数与整体比较的反转；逐事件 G0 与 C 都不分开两者 | 形式读法即生生的认定（读法与对应）；“消耗更坏”的比较（由 C 承担，关系读法下见 relational-reading-comparison）；外部化的消耗；“更多”与复杂度上升；真实过程对规律的对应；停止的伦理评价 |
 | [ProtectionPriorityRival](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) | 在一个构造情境中：J2 相对 C 的独立性（G0 不约束排序）；自然数评分都交换；有界评分恰好表示 J2 | 把 J2 与有界敏感性对手分开；其他情境；基本分类 |

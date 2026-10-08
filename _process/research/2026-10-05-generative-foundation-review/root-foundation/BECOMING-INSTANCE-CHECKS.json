@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "utc": "2026-10-08T21:22:35Z",
+  "utc": "2026-10-08T21:39:26Z",
   "criterion": "A module in universal-ethics, generative-capacity or evolution-connectionism with a theorem whose signature has an explicit type binder, or with a type variable (plan §1).",
   "census": {
     "modules": 45,
@@ -41,10 +41,10 @@
   },
   "spine_receipt": {
     "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-    "sha256": "b697c249bde83147b1e2152aef65bee30c5448480605056e10102a316c409829",
-    "utc": "20261008T212046.845736Z"
+    "sha256": "fab829fecd5e28107794c438397b7754256015bd165156e9cafc1dd8a2c9abde",
+    "utc": "20261008T213437.870960Z"
   },
-  "checker_sha256": "8f4585633f9647afc35c8ccde6420adc2eeddef61529af21ceb902d525d6ce27",
+  "checker_sha256": "2f6dcae7ba43e921732822d365121fcf0c2b02762527cf9804f5cf956f47e472",
   "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt; the inherited modules are not recompiled.",
   "modules": {
     "ContinuationRenewal": {
@@ -57,13 +57,13 @@
         {
           "declaration": "Becoming.falls_finitely",
           "spine_modules": [
-            "BecomingRenewal"
+            "Becoming.Renewal"
           ]
         },
         {
           "declaration": "Becoming.Run.renewal_recurs",
           "spine_modules": [
-            "BecomingRenewal"
+            "Becoming.Renewal"
           ]
         }
       ],
@@ -81,7 +81,7 @@
         {
           "declaration": "Becoming.cutReach_iff_closure",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -99,19 +99,19 @@
         {
           "declaration": "Becoming.Frame.continuations",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.Frame.map_preserves_bundles",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.Frame.lift_reflects_bundles",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -217,7 +217,7 @@
         {
           "declaration": "Becoming.reached_iff_closure",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -323,7 +323,7 @@
         {
           "declaration": "Becoming.liveStep_iff_enabled",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -374,11 +374,11 @@
         {
           "declaration": "Becoming.chain_iff_reach",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
-      "note": "`Chain` 即边过程上的可达；路线本身见 MetaethicalCore §9",
+      "note": "`Chain` 即边过程上的可达；路线在核心中的位置见 EVALUATOR-GROUNDING-ARGUMENT §9",
       "imports_core": false,
       "imports_mathlib": false
     },
@@ -425,55 +425,55 @@
         {
           "declaration": "Becoming.Frame.inventory",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.g0_iff",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.extension_iff",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.comparison_iff",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.comparison_lifts",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.articulation_iff_lifted",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.lifted_comparison_supplies_reason",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.lift_coherent_selection_survives",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.lift_continual_improvement_has_no_survivor",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -535,7 +535,7 @@
         {
           "declaration": "Becoming.falls_finitely",
           "spine_modules": [
-            "BecomingRenewal"
+            "Becoming.Renewal"
           ]
         }
       ],
@@ -553,25 +553,25 @@
         {
           "declaration": "Becoming.securesPositiveGround_iff",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.positionedArticulation_iff",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.positioned_articulation_of_articulates",
           "spine_modules": [
-            "MetaethicalCore"
+            "Becoming.Metaethics"
           ]
         },
         {
           "declaration": "Becoming.universal_reason",
           "spine_modules": [
-            "MetaethicalCore"
+            "Becoming.Metaethics"
           ]
         }
       ],
@@ -589,7 +589,7 @@
         {
           "declaration": "Becoming.universal_reason",
           "spine_modules": [
-            "MetaethicalCore"
+            "Becoming.Metaethics"
           ]
         }
       ],
@@ -607,19 +607,19 @@
         {
           "declaration": "Becoming.commonResponse_is_robust",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.robust_iff_commonResponse",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         },
         {
           "declaration": "Becoming.BetterAt",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -637,7 +637,7 @@
         {
           "declaration": "Becoming.guarantees_iff_completes",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],
@@ -699,7 +699,7 @@
         {
           "declaration": "Becoming.revise_is_after",
           "spine_modules": [
-            "BecomingInstances"
+            "Becoming.Bridge"
           ]
         }
       ],

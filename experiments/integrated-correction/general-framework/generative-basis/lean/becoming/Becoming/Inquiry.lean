@@ -1,4 +1,4 @@
-import BecomingFrame
+import Becoming.Frame
 import InquirySufficiency
 
 /-!

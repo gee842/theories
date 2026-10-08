@@ -154,7 +154,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean"
     ],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
@@ -1538,14 +1538,14 @@
     "next_zh": "首要开放问题是整体的演绎必然性：从确定的整体描述推到其分化是同一展开中内在相关的环节；另有普遍实践根据、依存的动态化与逐步读法。",
     "next_en": "The first open question is the deductive necessity of the whole: passing from a determinate whole account to the claim that its differentiations are internally related moments of one unfolding; also open are the universal practical warrant, dynamic dependence and a stepwise reading.",
     "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-BECOMING.md",
-    "source_sha256": "db9c00aac0625836e47b6b7ecfbddf851f47ad3edc2fbb7d9639994bc1f73f4d",
+    "source_sha256": "7da6bf3ecba2eef91dd214e288e74f1d1d7bab55567497c5e9421474cb1ec97f",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
     ],
     "evidence": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",

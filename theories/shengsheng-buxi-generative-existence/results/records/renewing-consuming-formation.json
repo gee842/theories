@@ -190,7 +190,7 @@
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "5e7c2e0395208e10e22a26f2a5552376b5ad977c1196156d52844288fd8f8915",
+      "sha256": "49bf5e0350e241cfa522f6981517e8da783d88787925f153a638253ae155748d",
       "declarations": []
     },
     {
@@ -250,6 +250,10 @@
     {
       "zh": "2026年10月9日：G0-WARRANT 由整合会话改动 §2.3 评价者段（依独立审查收窄）并新增“内容刻画”段、§3 表新增 MetaethicalCore 一行、§4 第 4 项与 §5 措辞；本记录所依的 §2.2、§2.3 保护优先段及本模块的表行未变。读过改动后更新哈希；主张、证明与回执不变。",
       "en": "9 October 2026: the unification session changed G0-WARRANT's §2.3 evaluator paragraph (narrowed after independent review), added a characterization paragraph, a MetaethicalCore row in §3, and rewording in §4 item 4 and §5; the §2.2 text, the §2.3 protection paragraph and this module's table row that this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
+    },
+    {
+      "zh": "2026-10-09（P5b）：G0-WARRANT 两处指向 MetaethicalCore.lean 的链接改到包路径 Becoming/Metaethics.lean，§3 表行名随之改为 Becoming.Metaethics；正文与本记录所依的段落不变。读过改动后更新哈希；主张、证明与回执不变。",
+      "en": "2026-10-09 (P5b): two G0-WARRANT links to MetaethicalCore.lean now point to the package path Becoming/Metaethics.lean, and the §3 row label reads Becoming.Metaethics; the text and the paragraphs this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
     }
   ]
 }

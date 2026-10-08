@@ -76,7 +76,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 依存与汲取为静态；水平为自然数。 / Static dependence and drawing; natural-number levels.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 
 ## becoming-renewal-reading ← relational-reading-comparison
 
@@ -88,7 +88,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 延续族取单一运行。 / The family of continuations is one run.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
 ## becoming-renewal-reading ← metaethical-core-characterization
 
@@ -100,7 +100,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 立场、区域与意义仍外给；需要一个活的事件。 / Standpoints, regions and significance remain supplied; some living event is needed.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
 ## becoming-spine-instances ← metaethical-core-characterization
 
@@ -112,7 +112,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。 / Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
 
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 

@@ -12,7 +12,7 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 
 全部声明都在脊柱上，公理报告为空（[回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)）。
 
-**L3，[BecomingRenewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean)：只讲动力学，不含伦理谓词。**
+**L3，[Becoming.Renewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)：只讲动力学，不含伦理谓词。**
 
 | 声明 | 内容 |
 |---|---|
@@ -23,7 +23,7 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 | `Conditions.drawdown_finite` | 沿运行的无更新汲取：活跃次数有限 |
 | `Commons.class_belongs_to_the_run` | 同一过程、同一初始配置，两次运行中焦点形成每一步都活跃；一次在更新之内，另一次消耗维持者的条件，维持者随之终止 |
 
-**L4 读法，[MetaethicalCore](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) 的“The relational reading”一节。**
+**L4 读法，[Becoming.Metaethics](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) 的“The relational reading”一节。**
 
 | 声明 | 内容 |
 |---|---|
@@ -90,10 +90,10 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
 
-- **Runs carry the classification.** `BecomingRenewal` reads any run through observables of conditions as a `RelationalRenewal` unfolding, so the renewing/consuming classification applies to every run of every process.
+- **Runs carry the classification.** `Becoming.Renewal` reads any run through observables of conditions as a `RelationalRenewal` unfolding, so the renewing/consuming classification applies to every run of every process.
 - **One principle.** The depletion, natural-rank recurrent-renewal and unrenewed-drawdown bounds are cases of one principle: an observable that never rises from some step on falls only finitely often.
 - **The class belongs to the run.** In one process from one configuration, one run renews and another consumes.
-- **The reading.** In `MetaethicalCore`, `Conditions.valuation` makes `living` the recorded relational reading and `related` participation in a common condition.
+- **The reading.** In `Becoming.Metaethics`, `Conditions.valuation` makes `living` the recorded relational reading and `related` participation in a common condition.
 - **Connection.** A common condition discharges connection, so G0 there is exactly a seed with N_rel and N_std. Disjoint conditions can leave a whole unconnected.
 - **Consumption.** Consumption is itself a formed relation. Under N_rel, a standpoint that values a consumer's activity therefore holds significant the living events of what it consumes.
 

@@ -31,7 +31,7 @@
     "zh": "按核心约定，配置保留问题所需的历史，因此把模块的历史类型取为框架的配置是对应选择，不是 Lean 结果。分类页逐模块记录其定理经桥接、因已在核心上、或经类型代入作用于脊柱，以及哪些模块有意不桥接（Mathlib 叶子、具体模型）；两个更新模块由 P3b 归入运行上的更新界。",
     "en": "By the core convention a configuration retains whatever history the question needs, so taking a module's history type as a frame's configurations is a correspondence choice, not a Lean result. The classification page records, module by module, whether its theorems reach the spine by a bridge, by already being on the core, or by type substitution, and which modules are deliberately not bridged (Mathlib leaves, concrete models); P3b places the two renewal modules as renewal bounds on runs."
   },
-  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
   "aliases": [
     "Becoming.reached_iff_closure",
     "Becoming.cutReach_iff_closure",
@@ -78,7 +78,7 @@
           "zh": "同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。",
           "en": "Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
       }
     }
   ],
@@ -128,14 +128,14 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "detail": {
         "zh": "L 是实质承诺：从配置 0 出发，mixed 到 0 或 4，high 到 3；mixed 有结果胜过 high，但保守规则在两个方向都不比较（LiftModel.some_outcome_does_not_lift）。",
         "en": "L is substantive: from configuration 0, mixed reaches 0 or 4 and high reaches 3; some outcome of mixed beats high, yet the conservative rule compares them in neither direction (LiftModel.some_outcome_does_not_lift)."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "detail": {
         "zh": "经没有结果的中间回应，两段提升比较空洞成立而合成失败（LiftModel.lift_needs_live_middle）。",
         "en": "Through a middle response with no outcome both lifted comparisons hold vacuously while the composite fails (LiftModel.lift_needs_live_middle)."
@@ -154,14 +154,14 @@
     "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T203107.301650Z）：BecomingInstances 32 项定理，连同 BecomingFrame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执共 5 个脊柱模块 80 项定理／146 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 45 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal 与 L1–L4）的导入闭包恰为这 7 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261008T203107.301650Z): BecomingInstances' 32 theorems, with BecomingFrame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers 5 spine modules with 80 theorems/146 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 45 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal and L1–L4) is exactly these 7 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T213437.870960Z）：Becoming.Bridge 32 项定理，连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 6 个模块（含只作导入的根模块），共 80 项定理／146 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 45 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 8 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T213437.870960Z): Becoming.Bridge's 32 theorems, with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 6 modules (including the import-only root) with 80 theorems/146 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 45 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 8 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4",
+      "sha256": "c36dbffd73b75a4992acbc2767474c040d6ac716b4150393fa67456cff262375",
       "declarations": [
         "Becoming.edgeProcess",
         "Becoming.Closure",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
       "role": "proof",
       "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
       "declarations": [
@@ -210,9 +210,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898",
+      "sha256": "3fcd792e7167d26cbdec3cd1e3c0f1c1d2f66297a076d710ba6a2838f10a0d7a",
       "declarations": [
         "Becoming.G0",
         "Becoming.Extension",
@@ -242,7 +242,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
       "role": "proof",
-      "sha256": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+      "sha256": "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b",
       "declarations": [
         "EvaluatorGrounding.Chain"
       ]
@@ -323,25 +323,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d3278a00c62378bbb5dc026b882091d6f63b75375351570b9f62f7fa0ceb6aa1",
+      "sha256": "fab829fecd5e28107794c438397b7754256015bd165156e9cafc1dd8a2c9abde",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
       "role": "integration",
-      "sha256": "0cf6974ab4d86465dd69c565b36c1a847fed672bdbdb5c615724ba617e9e256e",
+      "sha256": "86fec900273ca8da3192a4f5e5512ba6d5762fa9401a3320838a979e297c8da9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json",
       "role": "integration",
-      "sha256": "5290cf72415b6c5e208935febd71c72e67e26087b8cadc9832c9ce78ffccc563",
+      "sha256": "7b2631cef88674472f0eeb02a7831788de2ec363700d8334d4e3d9aa6749e4f4",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0a30805045b474a848bcc58c7ff7ae80647be906907b2d3957bbfa5a8c3e0911",
+      "sha256": "53470b10380390219f701e1c0f30cfb53edfd5b5afb166a26c05ed1b30b79168",
       "declarations": []
     },
     {
@@ -353,29 +353,29 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
       "role": "provenance",
-      "sha256": "176dab59cfaf8e877810861694177b48767e83a53f3624043c0d64021a853fab",
+      "sha256": "b210194d2e33959dd64d45c5e51d7605911275c4e372733b91db2286f736b277",
       "declarations": []
     }
   ],
   "proof_bindings": [
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/BecomingInstances",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/BecomingFrame",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/MetaethicalCore",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -473,6 +473,10 @@
     {
       "zh": "2026-10-09（P5a）：按 Ren“你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”，核心不再导入伦理模块：G0、C、D 与确保的正面根据在 MetaethicalCore 中陈述，桥接层以 Iff.rfl 证明它们就是既有定义；Frame.inventory、BetterAt 与 living_iff_relational 移入 BecomingInstances。已读差异：本结果的定理陈述与证明内容不变，哈希、位置与计数更新。",
       "en": "2026-10-09 (P5a): following Ren's “你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”, the core no longer imports ethics modules: G0, C, D and the secured positive ground are stated in MetaethicalCore, and the bridge proves by Iff.rfl that they are the existing definitions; Frame.inventory, BetterAt and living_iff_relational moved to BecomingInstances. Diff read: this result's statements and proof content are unchanged; hashes, locations and counts updated."
+    },
+    {
+      "zh": "2026-10-09（P5b）：按 Ren“please make sure the whole codebase is elegant, structurally and conceptually, ... if name is not the best to represent our truth, update them as well”，核心改为 Lean 包 Becoming，模块按所述之事改名：BecomingFrame → Becoming.Frame，BecomingModal → Becoming.Inquiry，BecomingRenewal → Becoming.Renewal，MetaethicalCore → Becoming.Metaethics，BecomingInstances → Becoming.Bridge；根模块 Becoming 导入四层，Becoming.Bridge 在包内但不属核心。已读差异：除导入行、模块说明与文件位置外，定理陈述与证明不变，声明名不变，记录别名照旧有效；路径、回执指针、哈希与验证范围更新到当前运行。",
+      "en": "2026-10-09 (P5b): following Ren's “please make sure the whole codebase is elegant, structurally and conceptually, ... if name is not the best to represent our truth, update them as well”, the core became the Lean package Becoming and its modules were named for what they state: BecomingFrame → Becoming.Frame, BecomingModal → Becoming.Inquiry, BecomingRenewal → Becoming.Renewal, MetaethicalCore → Becoming.Metaethics, BecomingInstances → Becoming.Bridge; the root module Becoming imports the four layers, and Becoming.Bridge belongs to the package but not to the core. Diff read: apart from import lines, module documentation and file locations, theorem statements and proofs are unchanged and declaration names, hence aliases, are unchanged; paths, receipt pointers, hashes and the validation scope now cite the current run."
     }
   ]
 }

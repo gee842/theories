@@ -50,7 +50,7 @@ CATEGORIES = {
 TABLE = {
     "WholeGroundCoverage": ("bridge", ["Becoming.reached_iff_closure"], "`Reached` 即沿边的可达闭包"),
     "CutCoverageAudit": ("bridge", ["Becoming.cutReach_iff_closure"], "`Reach` 与 WholeGroundCoverage 的 `Reached` 逐字同构"),
-    "EvaluatorGrounding": ("bridge", ["Becoming.chain_iff_reach"], "`Chain` 即边过程上的可达；路线本身见 MetaethicalCore §9"),
+    "EvaluatorGrounding": ("bridge", ["Becoming.chain_iff_reach"], "`Chain` 即边过程上的可达；路线在核心中的位置见 EVALUATOR-GROUNDING-ARGUMENT §9"),
     "JointContinuationClassification": ("bridge", ["Becoming.Frame.continuations", "Becoming.Frame.map_preserves_bundles",
                                                    "Becoming.Frame.lift_reflects_bundles"],
                                         "可达配置即延续空间；忠实变换来自核心 `trace_map`／`trace_lift`"),
@@ -157,7 +157,7 @@ def main():
 
     receipt_path = SPINE_DIR / "becoming-verification.json"
     receipt = json.loads(receipt_path.read_text())
-    spine_sources = {name: (SPINE_DIR / f"{name}.lean").read_text() for name in receipt["spine_modules"]}
+    spine_sources = {name: (SPINE_DIR / becoming.source_file(name)).read_text() for name in receipt["spine_modules"]}
     if receipt["status"] != "passed":
         errors.append({"spine_receipt": "not passed"})
     for name, text in spine_sources.items():
@@ -229,8 +229,8 @@ def page(result):
         f"按计划第 1 节的判据，伦理族中含类型多态定理的模块共 {result['census']['modules']} 个"
         f"（{result['census']['lines']:,} 行、{result['census']['theorems']} 条定理）。"
         "通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，"
-        f"它们的定理便直接作用于同一展开。具名声明在 [BecomingInstances.lean]({spine}/BecomingInstances.lean)、"
-        f"[BecomingRenewal.lean]({spine}/BecomingRenewal.lean) 或 [MetaethicalCore.lean]({spine}/MetaethicalCore.lean) 中，"
+        f"它们的定理便直接作用于同一展开。具名声明在 [Becoming.Bridge]({spine}/Becoming/Bridge.lean)、"
+        f"[Becoming.Renewal]({spine}/Becoming/Renewal.lean) 或 [Becoming.Metaethics]({spine}/Becoming/Metaethics.lean) 中，"
         "由脊柱回执逐条检查，公理报告为空。",
         "",
         "Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their "

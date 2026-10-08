@@ -1,5 +1,5 @@
-import BecomingModal
-import BecomingRenewal
+import Becoming.Inquiry
+import Becoming.Renewal
 
 /-!
 # The Universal Metaethical Core on the Becoming spine
@@ -27,7 +27,7 @@ The premise card, every item named and visible:
 * L, `LiftBetter`: outcome comparisons lift to responses with several outcomes;
   conservative default, every outcome better than every outcome.
 * J1–J4: `PracticalJudgment` (protection priority, frontier selection, assigned
-  responsibility), additional commitments outside the core; `BecomingInstances`
+  responsibility), additional commitments outside the core; `Becoming.Bridge`
   states them on configurations by `BetterAt`.
 * Correspondence: E (formation), `Connected`, and the reading of `living`. The
   Becoming layer can supply the last two: `Conditions.valuation` reads a run's
@@ -58,8 +58,8 @@ treats bringing new lives into existence. A contributory reason is not a duty, a
 ranking or a prediction of recognition or compliance. Every declaration has an
 empty axiom report.
 
-The core imports only the spine and its foundation. G0, C, D and the secured positive
-ground are stated here once; `BecomingInstances` shows that the definitions of
+The core imports only its own layers and the foundation. G0, C, D and the secured positive
+ground are stated here once; `Becoming.Bridge` shows that the definitions of
 `GenerativeComparison` and `PositionedPositiveReason` are these, so their theorems
 apply without the core depending on them.
 -/

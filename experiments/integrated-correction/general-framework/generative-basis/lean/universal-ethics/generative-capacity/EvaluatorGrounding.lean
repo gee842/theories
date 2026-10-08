@@ -43,7 +43,7 @@ No theorem here proves S0, `Tolerant`, BI or the correspondence premises. A
 present-aim evaluator without S0 remains a consistent formation. The derived G0
 is a standpoint-indexed, single-history instance of the G0 predicate; the
 unindexed G0 over continuations needs a further bridge, stated as standpoint
-neutrality in `becoming/MetaethicalCore.lean`.
+neutrality in `Becoming.Metaethics`.
 -/
 
 namespace EvaluatorGrounding

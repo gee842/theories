@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 140 | 1,982 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 141 | 1,982 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -68,14 +68,12 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [Audit.lean](lean-declarations/valuation.md#module-6b4c32dcec82) | 评价的形成与良知 / Valuation development and liangzhi |
 | [AxiomFree.lean](lean-declarations/valuation.md#module-697097c023d4) | 评价的形成与良知 / Valuation development and liangzhi |
 | [BasicRiskSharing.lean](lean-declarations/ethics.md#module-e98555289c3e) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [Becoming.lean](lean-declarations/core.md#module-cbce862e630a) | 生成核心与关系结构 / Generative core and relational structure |
 | [BecomingCompatibility.lean](lean-declarations/core.md#module-55e216de65da) | 生成核心与关系结构 / Generative core and relational structure |
-| [BecomingFrame.lean](lean-declarations/core.md#module-190290edc6b3) | 生成核心与关系结构 / Generative core and relational structure |
-| [BecomingInstances.lean](lean-declarations/core.md#module-e9a82da9ccf5) | 生成核心与关系结构 / Generative core and relational structure |
-| [BecomingModal.lean](lean-declarations/core.md#module-a94e796a5c9f) | 生成核心与关系结构 / Generative core and relational structure |
-| [BecomingRenewal.lean](lean-declarations/core.md#module-4b5afa4c0882) | 生成核心与关系结构 / Generative core and relational structure |
 | [BecomingReversibility.lean](lean-declarations/core.md#module-3104a5fd24d5) | 生成核心与关系结构 / Generative core and relational structure |
 | [BoundaryModels.lean](lean-declarations/core.md#module-5ffb89fcbb01) | 生成核心与关系结构 / Generative core and relational structure |
 | [BoundedRiskRevision.lean](lean-declarations/ethics.md#module-3588f48eb92f) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [Bridge.lean](lean-declarations/core.md#module-014c999286cd) | 生成核心与关系结构 / Generative core and relational structure |
 | [BridgesAudit.lean](lean-declarations/valuation.md#module-e1bed40c8da7) | 评价的形成与良知 / Valuation development and liangzhi |
 | [CalibratedMacro.lean](lean-declarations/inquiry.md#module-c90fa4594397) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [CalibratedUpdater.lean](lean-declarations/ethics.md#module-b96605b46320) | 规范根据与生成方向 / Normative grounding and generative direction |
@@ -269,6 +267,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [FormedRouteMonitor.lean](lean-declarations/shared.md#module-e00c807b1ad5) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FormedSelection.lean](lean-declarations/shared.md#module-c9712e044702) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FormedUnfoldingPreservation.lean](lean-declarations/core.md#module-a72842bcdb02) | 生成核心与关系结构 / Generative core and relational structure |
+| [Frame.lean](lean-declarations/core.md#module-4aeb3fe7fb22) | 生成核心与关系结构 / Generative core and relational structure |
 | [FreshRevision.lean](lean-declarations/shared.md#module-b592dcce60e2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FulfillmentStatus.lean](lean-declarations/shared.md#module-641fa8f3ad8b) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [FunctionGraphs.lean](lean-declarations/abstraction.md#module-967f5a53d7df) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
@@ -314,6 +313,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [InferentialGrounds.lean](lean-declarations/core.md#module-f095b77a83ef) | 生成核心与关系结构 / Generative core and relational structure |
 | [InferentialSubstitution.lean](lean-declarations/core.md#module-a2c391c148f3) | 生成核心与关系结构 / Generative core and relational structure |
 | [Initiality.lean](lean-declarations/abstraction.md#module-831623a203ba) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Inquiry.lean](lean-declarations/core.md#module-3d9eabbfea95) | 生成核心与关系结构 / Generative core and relational structure |
 | [InquiryAdequacy.lean](lean-declarations/inquiry.md#module-3e204b02af5f) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [InquiryChoice.lean](lean-declarations/learning.md#module-93cab8a6e1fc) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [InquiryFamilies.lean](lean-declarations/inquiry.md#module-bfb389247e8c) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
@@ -350,7 +350,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [MeasuredFeedback.lean](lean-declarations/learning.md#module-99c139232337) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [MediatedControl.lean](lean-declarations/ethics.md#module-4c7d0d4a2005) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [MediatedControlCases.lean](lean-declarations/ethics.md#module-16a5176f00b8) | 规范根据与生成方向 / Normative grounding and generative direction |
-| [MetaethicalCore.lean](lean-declarations/core.md#module-d63ec38524a5) | 生成核心与关系结构 / Generative core and relational structure |
+| [Metaethics.lean](lean-declarations/core.md#module-f7356ff23b30) | 生成核心与关系结构 / Generative core and relational structure |
 | [ModelRevision.lean](lean-declarations/inquiry.md#module-a4bb88f1170d) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [ModelRevisionCases.lean](lean-declarations/inquiry.md#module-f1251e5ef2f2) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [MutualGrounding.lean](lean-declarations/core.md#module-a9df0fda7b92) | 生成核心与关系结构 / Generative core and relational structure |
@@ -495,6 +495,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [RelationalRenewal.lean](lean-declarations/core.md#module-bc794121a016) | 生成核心与关系结构 / Generative core and relational structure |
 | [RelationsAcrossScales.lean](lean-declarations/learning.md#module-ba4d9be09079) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [RemainingDependency.lean](lean-declarations/abstraction.md#module-c1c11c83ec55) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Renewal.lean](lean-declarations/core.md#module-122ecfb273f5) | 生成核心与关系结构 / Generative core and relational structure |
 | [RenewalAccounting.lean](lean-declarations/renewal.md#module-b8df4e3120cc) | 支持与更新 / Support and renewal |
 | [RenewalBasics.lean](lean-declarations/renewal.md#module-77ecd2c775da) | 支持与更新 / Support and renewal |
 | [RenewalCharacterization.lean](lean-declarations/renewal.md#module-5fca0507b290) | 支持与更新 / Support and renewal |

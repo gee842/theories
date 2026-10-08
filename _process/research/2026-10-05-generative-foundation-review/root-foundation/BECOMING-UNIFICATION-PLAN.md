@@ -64,11 +64,11 @@
 ```text
 L0  Core        Process / Trace / Feasible / projection（不改）
 L1  Frame       Frame = Process + realized : S → C → Prop；Run、Reach、不变量、历史 (s, t)、Novel
-L2  Modal       CommonResponse、After、Sound（导入 InquirySufficiency，不重定义）；
+L2  Inquiry     CommonResponse、After、Sound（导入 InquirySufficiency，不重定义）；
                 Scope = 一个 sound 策略从所信状态实际执行所到达的端点
-L3  Becoming    Run 上可观测量给出 RelationalRenewal 的展开；更新／消耗分类；
+L3  Renewal     Run 上可观测量给出 RelationalRenewal 的展开；更新／消耗分类；
                 generative = 更新型形成，是整体展开的一部分（Ren：generative is a part of its manifold）
-L4  Universal Metaethical Core（具名前提与推论）
+L4  Metaethics  Universal Metaethical Core（具名前提与推论）
       S0  某一立场下，自身的生及继续生成有正面意义（种子；第一人称）
       N   边界中立：下面三条规则不受已形成边界的限制
           N_rel  正面意义沿非零的已形成关系传递到生生（承受者一侧：自他、亲疏、物种、时间距离）
@@ -84,6 +84,8 @@ L4  Universal Metaethical Core（具名前提与推论）
       极小性：去掉任一项都有一致的反模型；每个对手都恰是同一规则加上一条已形成的边界
 Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在实际用到时补适配
 ```
+
+Lean 中 L1–L4 是包 `Becoming` 的四个模块 `Becoming.Frame`、`Becoming.Inquiry`、`Becoming.Renewal`、`Becoming.Metaethics`；`import Becoming` 导入全部。既有模块经 `Becoming.Bridge` 连到核心，它在包内但不属核心（[包说明](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)）。
 
 **为什么这样最简洁：**
 - **一个世界模型。** 伦理是同一语言中的前提，不另立模型。这正是非二元方法的要求。
@@ -111,7 +113,7 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 ## 4. 迁移不变量
 
 - **只增不改。** 不编辑、不移动既有被绑定的源码、回执和章节，也不重跑旧检查器。例外：本会话接手的评价者路线，审查明确要求修改其 Lean 说明，改后重跑该模块自己的检查器，旧运行保留在其 `checks/` 目录中。
-- **新目录与约束。** 放在 `experiments/.../generative-basis/lean/becoming/`，全仓唯一的文件名，命名空间 `Becoming`；只依赖 Std，工具链 4.29.1。新声明的公理报告必须为空，检查器强制。
+- **新目录与约束。** 放在 `experiments/.../generative-basis/lean/becoming/`，命名空间 `Becoming`，工具链 4.29.1。新声明的公理报告必须为空，检查器强制。P5a 起核心只用 Lean 内置前导；P5b 起它是 Lean 包 `Becoming`，模块名全仓唯一。
 - **一个合并检查器。**
   - 自动解析导入闭包，按依赖顺序编译；
   - 对继承模块断言当前哈希等于其历史回执中的 `source_sha256`；
@@ -133,7 +135,8 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 | P4 叙述 ✓ | 新正典入口 `THE-THEORY-OF-BECOMING`：Becoming、组织与演化、认识与探究、集体动力学、评价的形成、Universal Metaethical Core、AI 对齐、开放纲领。附术语表与前提卡；旧章作为证据链接，并在新章中标为历史证据；README 首段指向它；补齐阅读目录 | 已完成：正典章节（2bcf314b）。阅读目录补齐 32 个缺项；17 个过期条目先读原文差异再更新字段与版本标记；生成视图（CLAIMS、理论首页）以生成清单为准，记为 `generated-view`，其各行随成果记录检查；Lean 文本目录重新同步。两项目录检查、渲染、`research-check` 与 36 项测试通过 |
 | P4b 工作规则 ✓ | AGENTS.md 增一条：新的形式结果陈述在脊柱上；脊柱表达不了时扩展脊柱，而不是另建模型 | 已完成：规则在 AGENTS.md「Evidence and preservation」首条，链接正典章节 §9 与脊柱目录 |
 | P5a 核心纯净 ✓ | 按 [Ren 的要求](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)：核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的模块，公理报告全空，只用 Lean 内置前导即可编译。G0、C、D 与确保的正面根据在核心陈述；桥接层以 `Iff.rfl` 证明既有模块的定义即核心定义；J1/J2 的 `BetterAt` 与 `living_iff_relational` 移到桥接层 | 已完成：检查器每次核对闭包、空公理报告与仅用前导编译；80 项定理／146 项声明审计 |
-| P5b Mathlib 叶子 | 不建 Lake 工作区：Mathlib 已安装（既有检查器经 `SYSTEMS_MATHLIB_PROJECT` 使用 `~/repos/生生不息`），沿用 Python 检查器。外围桥接模块导入脊柱与 5 个 Mathlib 叶子，证明其接口是脊柱的实例，用 4.30.0-rc2 编译；核心不导入它 | 待做 |
+| P5b 包结构 ✓ | 核心改为 Lean 包 `Becoming`，按所述之事命名：`BecomingFrame` → `Becoming.Frame`，`BecomingModal` → `Becoming.Inquiry`（它讲探究的所见范围，不是模态逻辑），`BecomingRenewal` → `Becoming.Renewal`，`MetaethicalCore` → `Becoming.Metaethics`，`BecomingInstances` → `Becoming.Bridge`；根模块 `Becoming` 导入四层。声明名不变，记录别名照旧有效；上面各行保留当时的模块名 | 已完成：检查器按包路径命名模块并核对闭包；记录、章节与链接改到新路径；包说明给出读者入口与新旧名对照 |
+| P5c Mathlib 叶子 | 不建 Lake 工作区：Mathlib 已安装（既有检查器经 `SYSTEMS_MATHLIB_PROJECT` 使用 `~/repos/生生不息`），沿用 Python 检查器。外围桥接模块导入脊柱与 5 个 Mathlib 叶子，证明其接口是脊柱的实例，用 4.30.0-rc2 编译；核心不导入它 | 待做 |
 
 ## 6. 决定（2026-10-09 定下）
 
@@ -155,5 +158,5 @@ Ren 把以下决定交给 AI 执行（“你自己全改了吧”）：
   - 规范桥都是假言推理，不能说成已经证明了伦理。
 - **悄悄削弱前提。** 每条转换定理写明方向和前提。
 - **范围。** S0 加 N 不及于不接受边界中立的立场，也不处理使新生命存在的价值。
-- **工具链分裂。** Std 部分在 4.29.1，Mathlib 叶子在 4.30.0-rc2。
+- **工具链分裂。** 核心只用前导，在 4.29.1 检查；Mathlib 叶子在 4.30.0-rc2。核心不依赖任何一方的库，因此两个工具链都能编译它。
 - **闭包变动。** 开工前按哈希冻结所用模块闭包；当前只有本会话在写，风险较低。

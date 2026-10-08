@@ -83,7 +83,7 @@ Integration: in the Universal Metaethical Core, this route is the first-personal
 - 经过多年学习与转化的自己，组织连续性仍高，但其内容大部分由其他关系形成；
 - 由这一活动形成的学生、孩子、后继者和共同工作，组织连续性低，形成性贡献可能很高。
 
-模型 `profile2` 把这些写成两维的序关系；数字只表示顺序，对应须在应用中逐项取得证据。审查（§4.1）指出，形式上的 `own` 仍是独立于剖面的原始字段，与本节的描述不一致。在[普遍元伦理核心](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)中，`own` 同样是位置上的一个区域，但跨越边界的工作由沿已形成关系的传递承担，不再依赖剖面上的单调性。
+模型 `profile2` 把这些写成两维的序关系；数字只表示顺序，对应须在应用中逐项取得证据。审查（§4.1）指出，形式上的 `own` 仍是独立于剖面的原始字段，与本节的描述不一致。在[普遍元伦理核心](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)中，`own` 同样是位置上的一个区域，但跨越边界的工作由沿已形成关系的传递承担，不再依赖剖面上的单调性。
 
 ## 2. 前提账本 / Premise ledger
 
@@ -195,7 +195,7 @@ D、J1–J4 和 G0 本身都不是本路线的前提。
 
 ## 9. 在普遍元伦理核心中的位置 / Place in the Universal Metaethical Core
 
-[整合计划](BECOMING-UNIFICATION-PLAN.md)把本路线的规范内容重组为同一形状的规则（[记录](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md)，[Lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)）。
+[整合计划](BECOMING-UNIFICATION-PLAN.md)把本路线的规范内容重组为同一形状的规则（[记录](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md)，[Lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）。
 
 - **S0 提供种子。** 任何持有 S0 且有自身生生的位置，都提供“某处有一个生生被珍视”。
 - **第二步的 P+ 形式是 N_rel。** 意义沿非零的已形成关系传递到生生。

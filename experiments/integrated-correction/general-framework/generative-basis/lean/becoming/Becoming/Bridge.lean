@@ -1,4 +1,4 @@
-import MetaethicalCore
+import Becoming
 import GenerativeComparison
 import PositionedPositiveReason
 import PracticalJudgment
@@ -17,7 +17,7 @@ import CorrectionInfrastructure
 Generic ethics modules are polymorphic over small interfaces. This module gives
 each interface from the spine, or proves that a module's own combinator is the
 spine's, so their theorems apply to one unfolding without copying them. The core
-imports none of these modules; the dependency runs from them to the spine.
+imports none of these modules; the dependency runs from them to the core.
 
 * The core's G0, C, secured positive ground and positioned articulation D are, by
   definition, those of `GenerativeComparison` and `PositionedPositiveReason` on the
