@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "protection-priority-excludes-uniform-aggregation",
+  "title": {
+    "zh": "基本条件优先排除均匀聚合",
+    "en": "Basic-condition priority excludes uniform aggregation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T18:56:05.941008+00:00",
+  "claim": {
+    "zh": "在一个保护对增益的情境中，J2 的排序满足无损生成比较 C，并且从不以任何数量的次级增益交换受保护的基本条件；另有满足 C 的标量排序会交换，因此 J2 不能由 G0 与 C 推出；每一个满足 C 的自然数评分都会在有限增益处交换，因而没有这样的评分能表示 J2 在此情境中的判断。",
+    "en": "In one protection-versus-gains situation, J2's ordering satisfies the no-loss generative comparison C and never trades the protected basic condition for any number of secondary gains. A scalar ordering also satisfying C does trade, so J2 does not follow from G0 and C. Every natural-number score satisfying C trades at some finite number of gains, so no such score represents J2's verdict here."
+  },
+  "hypotheses": [
+    {
+      "zh": "单一情境：选项 0 保住基本条件、无增益；选项 k>0 失去它并实现 k 项生成增益。基本条件不算作新的生成内容。",
+      "en": "A single situation: option 0 retains the basic condition with no gain; option k>0 loses it and realizes k generative gains. The basic condition is not counted as new generative content."
+    },
+    {
+      "zh": "C 取自 GenerativeComparison.ComparisonPrinciple；J2 取自 PracticalJudgment.Better；G0 只用于承认增益的正面意义。",
+      "en": "C is GenerativeComparison.ComparisonPrinciple; J2 is PracticalJudgment.Better; G0 is used only to recognize gains as positively relevant."
+    }
+  ],
+  "correspondence": {
+    "zh": "受保护条件确属基本、各项增益确为同一历史中实现的生成内容，须由对应条件 E 及分类论证支持；选项是同一历史的不同接续，不是独立所有者的持有。",
+    "en": "That the protected condition is basic and each gain is generative content realized in the same history requires correspondence E and a classification argument; options are continuations of one history, not holdings of independent owners."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+  "aliases": [
+    "ProtectionPriorityRival.priority_satisfies_comparison",
+    "ProtectionPriorityRival.priority_never_trades",
+    "ProtectionPriorityRival.comparison_does_not_yield_priority",
+    "ProtectionPriorityRival.every_scalar_comparison_trades",
+    "ProtectionPriorityRival.no_scalar_represents_priority",
+    "ProtectionPriorityRival.g0_recognizes_traded_gains"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "zh": "复用其 Better 与 no_protection_trade_by_count；补上 J2 相对 G0/C 的独立性及被排除的对手类。未修改其证明。",
+        "en": "Reuses its Better and no_protection_trade_by_count, adding J2's independence from G0/C and the excluded rival class. Its proof is unchanged."
+      }
+    },
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "把对齐方向 §3 中“J2 不由 G0 推出、代价是拒绝某些聚合补偿”变为检查过的命题。",
+        "en": "Turns the alignment direction's §3 statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim."
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "detail": {
+        "zh": "使用同一 ComparisonPrinciple（C）；该结果的 C 依赖严格比较原范围保留。",
+        "en": "Uses the same ComparisonPrinciple (C); that result's C-dependent strict comparison keeps its scope."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+      "detail": {
+        "zh": "weighted 0 满足 C，却以一项增益交换基本条件：G0 与 C 不推出 J2。",
+        "en": "weighted 0 satisfies C yet trades the basic condition for one gain: G0 and C do not yield J2."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "detail": {
+        "zh": "实数值、边际递减且有上界的评分可与 J2 在此例一致，未被排除，仍是实质对手。",
+        "en": "Real-valued scores with bounded, diminishing sensitivity can agree with J2 here; they are not excluded and remain substantive rivals."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只检查一个情境构造与自然数评分类；不证明 J2 在其他情境中正确、受保护条件确属基本，或有界敏感性对手不成立。",
+    "en": "Checks one situation and the natural-number score class only; it does not show that J2 is right elsewhere, that the protected condition is basic, or that bounded-sensitivity rivals fail."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 检查通过：ProtectionPriorityRival 10项定理／17项声明审计（8项无依赖；1项 propext；4项 propext 与 Quot.sound；4项另含 Classical.choice）；无自定义公理、sorry 或 native_decide；与 RenewingFormation 同一回执及控制例。尚无独立审查。",
+    "en": "Successful Lean 4.29.1 check: ProtectionPriorityRival 10 theorems/17 declaration audits (8 with no dependency, 1 propext, 4 propext and Quot.sound, 4 also Classical.choice); no custom axiom, sorry or native_decide; same receipt and controls as RenewingFormation. Not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+      "role": "proof",
+      "sha256": "cedaf9775aa43342817148668ba5b2163ec01c0e1c5bdfbcc8d44fcafa673bcd",
+      "declarations": [
+        "ProtectionPriorityRival.priority_satisfies_comparison",
+        "ProtectionPriorityRival.priority_never_trades",
+        "ProtectionPriorityRival.comparison_does_not_yield_priority",
+        "ProtectionPriorityRival.every_scalar_comparison_trades",
+        "ProtectionPriorityRival.no_scalar_represents_priority",
+        "ProtectionPriorityRival.g0_recognizes_traded_gains"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "role": "proof",
+      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+      "declarations": [
+        "GenerativeComparison.G0",
+        "GenerativeComparison.ComparisonPrinciple",
+        "GenerativeComparison.GenerativeExtension"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "role": "proof",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        "PracticalJudgment.Better",
+        "PracticalJudgment.no_protection_trade_by_count"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+      "role": "receipt",
+      "sha256": "c3bd3a499f0ecf957d98dd921c7a72e3b570eb9b338dbd7058e963b5d04ca5d0",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "role": "statement",
+      "sha256": "e9ca792e8df93308e92c6b901bfca61d8cf3e8d0a39908ffef55c36c84af8576",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
+      "role": "integration",
+      "sha256": "78bae7f18fffae2ebafb733e6b2ba4a04bb9c3c2e2e984b23d59db3ded59f2c0",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md",
+      "role": "provenance",
+      "sha256": "e65a81f79b812627ad4f7cb0f26da96f79487a7d72c727a0fd969053f7920c8e",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+      "sha256_pointer": "/source_sha256/ProtectionPriorityRival",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "把有界敏感性对手纳入同一情境的比较，找出它与 J2 判断不同的情形；把对手判别推广到多项基本条件与多情境。",
+    "en": "Bring bounded-sensitivity rivals into the comparison and find where they diverge from J2; extend rival discrimination to several basic conditions and situations."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：依 Ren“请把修改做完，Lean 承担有实质内容”新建，说明 J2 相对 G0/C 承担的实质内容。",
+      "en": "2026-10-09: created following Ren's direction that Lean carry substantive content, stating what J2 adds beyond G0 and C."
+    },
+    {
+      "zh": "2026-10-09：G0-WARRANT §2.3 与 §4 第4项新增指向 self-good-reachable-g0 的链接；本结果不变。",
+      "en": "2026-10-09: G0-WARRANT gained a link to self-good-reachable-g0 in §2.3 and §4 item 4; no change to this result."
+    },
+    {
+      "zh": "2026-10-09：G0-WARRANT 与整合说明收窄 §2.2 的范围（外部化消耗）；本结果不变。",
+      "en": "2026-10-09: G0-WARRANT and the integration note narrowed §2.2 for externalizing consumption; no change to this result."
+    }
+  ]
+}

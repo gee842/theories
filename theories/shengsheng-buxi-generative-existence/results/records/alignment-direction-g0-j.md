@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 核心、公开的 J1–J4 实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。 / The core, explicit practical commitments J1–J4, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.
 
-**Evidence / 证据:** 已完成并经独立审查的方向论证；9项新增 Lean 定理及16项声明审计，经独立重编译。跨智能规范适用不预测必然遵循，也不认证部署可靠性。 / Completed direction argument with independent review; 9 additional Lean theorems and 16 declaration audits, independently recompiled. Normative applicability across intelligences does not predict universal compliance or certify deployment reliability.
+**Evidence / 证据:** 已完成并经独立审查的哲学论证，含一个说明哪些变化会改变判断的 AI 案例。Lean 检查案例中的判断确由所述 G0 与 J1–J4 推出，交叉基本损失不排序（经独立重编译）。另行检查表明：J2 不由 G0 推出；按局部生成计数优化，可能偏好起初形成更多、随后终止共享形成的接续。前提是否正确、部署系统是否认可或遵循，是另外的问题。 / A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from G0 and J1–J4 as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that J2 does not follow from G0, and that optimizing local generative counts can prefer continuations that form more at first and later end shared formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions.
 
 ## 主张 Claim
 
@@ -46,6 +46,8 @@ Boundary source / 边界来源: [ALIGNMENT-DIRECTION.md](../../unified-2026-10-0
 
 **Preserved conditions / 保留条件:** AI 对应 E、权限、承担及真实损失仍独立说明；应用而非普遍遵循定理。 / AI correspondence E, authority, undertakings and real losses remain explicit; an application, not a universal compliance theorem. [ALIGNMENT-DIRECTION.md](../../unified-2026-10-05/ALIGNMENT-DIRECTION.md)
 
+- Related, not a proved adapter / 关联而非已证转换: [protection-priority-excludes-uniform-aggregation](protection-priority-excludes-uniform-aggregation.md). 把 §3 中“J2 不由 G0 推出、代价是拒绝某些聚合补偿”变为检查过的命题；本论证不变。 / Turns §3's statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim; this argument is unchanged.
+- Related, not a proved adapter / 关联而非已证转换: [renewing-consuming-formation](renewing-consuming-formation.md). 对齐上的警示：按局部生成计数优化可能偏好消耗型接续；整体方向的读法不会。 / Alignment caution: optimizing local generative counts may prefer consuming continuations; the whole-direction reading does not.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -72,3 +74,4 @@ Aliases / 别名: —
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
 - 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.
+- 2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用两项新的区分性结果；本论证与范围不变。 / 2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites two new discriminating results; this argument and its scope are unchanged.

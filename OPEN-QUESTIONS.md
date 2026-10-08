@@ -6,10 +6,12 @@
 
 ## 已登记成果 / Registered results
 
-42 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+84 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
+| [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md) |
+| [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](theories/shengsheng-buxi-generative-existence/results/records/theory-of-becoming-foundation.md) | open | [BECOMING-FOUNDATION.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md) |
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [核心作为智慧之根的目标 / Core as the root of wisdom target](theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |
 

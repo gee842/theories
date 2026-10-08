@@ -14,7 +14,7 @@ Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry che
 
 G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。 / G0 with explicit J1–J4 commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. J1–J4 are disclosed additional commitments, not consequences of G0 alone.
 
-**Evidence / 证据:** 30项 Lean 定理及46项声明审计，一般原则范围获独立验收。形式包检查给定规范与对应前提的后果。 / 30 Lean theorems and 46 declaration audits, with independent acceptance of the general-principles scope. The formal package checks implications of the supplied normative and correspondence premises.
+**Evidence / 证据:** 一般原则范围获独立验收。Lean 检查所述判断确由 G0、J1–J4 与对应条件推出，包括交叉基本损失不排序之处。另一项检查说明 J2 增加了什么：它满足无损比较，却从不以增益交换基本条件；而每一个满足该比较的自然数评分都会交换。有界敏感性对手仍然存在。J1–J4 是经论证的承诺，不是 Lean 的结果。 / Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. A separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results.
 
 ## 主张 Claim
 
@@ -42,6 +42,7 @@ Boundary source / 边界来源: [PRACTICAL-JUDGMENT.md](../../unified-2026-10-05
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
 - Related, not a proved adapter / 关联而非已证转换: [universal-practical-warrant](universal-practical-warrant.md). 无公理目标独立保留，不是本成果的未完成条件。 / The independent axiom-free target remains open and is not an unmet completion gate for this result.
+- Related, not a proved adapter / 关联而非已证转换: [protection-priority-excludes-uniform-aggregation](protection-priority-excludes-uniform-aggregation.md). 复用本结果的 Better 与 no_protection_trade_by_count，补上 J2 相对 G0/C 的独立性及被排除的对手类；本论证不变。 / Reuses this result's Better and no_protection_trade_by_count, adding J2's independence from G0/C and the excluded rival class; this argument is unchanged.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -67,3 +68,4 @@ Aliases / 别名: `Practical judgment G0/J1–J4`
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.
+- 2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用 J2 排除均匀聚合的新结果；本论证与范围不变。 / 2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites the new result that J2 excludes uniform aggregation; this argument and its scope are unchanged.

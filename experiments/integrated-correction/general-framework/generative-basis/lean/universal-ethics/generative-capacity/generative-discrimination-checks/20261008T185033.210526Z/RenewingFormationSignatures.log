@@ -1,0 +1,73 @@
+RenewingFormation.tri_mono {a b : Nat} (h : a ≤ b) : RenewingFormation.tri a ≤ RenewingFormation.tri b
+RenewingFormation.tri_zero_iff (r : Nat) : RenewingFormation.tri r = 0 ↔ r = 0
+RenewingFormation.tri_wear {a b : Nat} (h : a < b) : RenewingFormation.tri a + b ≤ RenewingFormation.tri b
+RenewingFormation.renewal_never_grows (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (n : Nat) : (RenewingFormation.path law c0 demand n).renew ≤ c0.renew
+RenewingFormation.within_renewal_invariant (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (within : RenewingFormation.WithinRenewal c0 demand) (n : Nat) :
+  (RenewingFormation.path law c0 demand n).renew = c0.renew ∧
+    c0.stock ≤ (RenewingFormation.path law c0 demand n).stock ∧ RenewingFormation.formed law c0 demand n = demand n
+RenewingFormation.within_renewal_ceaseless (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (within : RenewingFormation.WithinRenewal c0 demand) : RenewingFormation.Ceaseless law c0 demand
+RenewingFormation.within_renewal_grows (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (within : RenewingFormation.WithinRenewal c0 demand) (n : Nat) :
+  n ≤ RenewingFormation.cumulative law c0 demand n
+RenewingFormation.beyond_step (law : RenewingFormation.WearLaw) (c : RenewingFormation.Conditions) (d : Nat)
+  (beyond : c.renew < d) :
+  RenewingFormation.formedAt c d + RenewingFormation.budget (RenewingFormation.next law c d) ≤
+      RenewingFormation.budget c ∧
+    (0 < RenewingFormation.budget c → 0 < RenewingFormation.formedAt c d)
+RenewingFormation.beyond_renewal_invariant (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) (n : Nat) :
+  RenewingFormation.cumulative law c0 demand n + RenewingFormation.budget (RenewingFormation.path law c0 demand n) ≤
+    RenewingFormation.budget c0
+RenewingFormation.beyond_renewal_bounded (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) (n : Nat) :
+  RenewingFormation.cumulative law c0 demand n ≤ RenewingFormation.budget c0
+RenewingFormation.beyond_renewal_budget_falls (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) (n : Nat) :
+  RenewingFormation.budget (RenewingFormation.path law c0 demand n) ≤ RenewingFormation.budget c0 - n
+RenewingFormation.beyond_renewal_ceases (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) (n : Nat) :
+  RenewingFormation.budget c0 ≤ n → RenewingFormation.formed law c0 demand n = 0
+RenewingFormation.beyond_renewal_not_ceaseless (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) : ¬RenewingFormation.Ceaseless law c0 demand
+RenewingFormation.shared_formation_ceases (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (own other share : Nat → Nat) (consuming : ∀ (n : Nat), c0.renew < other n)
+  (allocated : ∀ (n : Nat), share n ≤ RenewingFormation.formed law c0 (fun k => own k + other k) n) :
+  (∀ (n : Nat), RenewingFormation.budget c0 ≤ n → share n = 0) ∧
+    ∀ (n : Nat), List.foldr (fun k acc => share k + acc) 0 (List.range n) ≤ RenewingFormation.budget c0
+RenewingFormation.without_consuming_part_ceaseless (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (own : Nat → Nat) (within : RenewingFormation.WithinRenewal c0 own) :
+  RenewingFormation.Ceaseless law c0 own ∧ ∀ (n : Nat), RenewingFormation.formed law c0 own n = own n
+RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation (law : RenewingFormation.WearLaw)
+  (c0 : RenewingFormation.Conditions) (own other share : Nat → Nat) (within : RenewingFormation.WithinRenewal c0 own)
+  (consuming : ∀ (n : Nat), c0.renew < other n)
+  (allocated : ∀ (n : Nat), share n ≤ RenewingFormation.formed law c0 (fun k => own k + other k) n) :
+  RenewingFormation.Ceaseless law c0 own ∧ ∀ (n : Nat), RenewingFormation.budget c0 ≤ n → share n = 0
+RenewingFormation.sustained_cumulative (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (positive : 1 ≤ c0.renew) (n : Nat) : RenewingFormation.cumulative law c0 (fun x => c0.renew) n = n * c0.renew
+RenewingFormation.sustained_eventually_exceeds_every_consuming (law : RenewingFormation.WearLaw)
+  (c0 : RenewingFormation.Conditions) (positive : 1 ≤ c0.renew) (demand : Nat → Nat)
+  (beyond : RenewingFormation.BeyondRenewal c0 demand) (n : Nat) :
+  RenewingFormation.budget c0 < n →
+    RenewingFormation.cumulative law c0 demand n < RenewingFormation.cumulative law c0 (fun x => c0.renew) n
+RenewingFormation.consuming_forms_more_first (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (held : 1 ≤ c0.stock) (positive : 1 ≤ c0.renew) :
+  have surge := fun x => c0.stock + c0.renew;
+  RenewingFormation.BeyondRenewal c0 surge ∧
+    RenewingFormation.cumulative law c0 (fun x => c0.renew) 1 < RenewingFormation.cumulative law c0 surge 1 ∧
+      ∀ (n : Nat),
+        RenewingFormation.budget c0 < n →
+          RenewingFormation.cumulative law c0 surge n < RenewingFormation.cumulative law c0 (fun x => c0.renew) n
+RenewingFormation.event_reading_favors_both (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (held : 1 ≤ c0.stock) (positive : 1 ≤ c0.renew) (PositiveRelevant : (Nat → Nat) → Nat × Nat → Prop)
+  (g0 : GenerativeComparison.G0 (RenewingFormation.eventInventory law c0) PositiveRelevant) :
+  have surge := fun x => c0.stock + c0.renew;
+  have sustained := fun x => c0.renew;
+  PositiveRelevant surge (0, c0.renew) ∧
+    ¬(RenewingFormation.eventInventory law c0).realized sustained (0, c0.renew) ∧
+      ∀ (n i : Nat), i < RenewingFormation.formed law c0 sustained n → PositiveRelevant sustained (n, i)
+RenewingFormation.whole_direction_separates (law : RenewingFormation.WearLaw) (c0 : RenewingFormation.Conditions)
+  (positive : 1 ≤ c0.renew) (demand : Nat → Nat) (beyond : RenewingFormation.BeyondRenewal c0 demand) :
+  (RenewingFormation.Ceaseless law c0 fun x => c0.renew) ∧ ¬RenewingFormation.Ceaseless law c0 demand

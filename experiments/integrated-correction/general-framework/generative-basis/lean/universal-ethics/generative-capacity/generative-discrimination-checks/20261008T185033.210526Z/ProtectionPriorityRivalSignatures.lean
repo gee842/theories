@@ -1,0 +1,11 @@
+import ProtectionPriorityRival
+#check ProtectionPriorityRival.extension_shape
+#check ProtectionPriorityRival.successor_extends
+#check ProtectionPriorityRival.g0_recognizes_traded_gains
+#check ProtectionPriorityRival.priority_satisfies_comparison
+#check ProtectionPriorityRival.priority_never_trades
+#check ProtectionPriorityRival.weighted_satisfies_comparison
+#check ProtectionPriorityRival.weighted_trades
+#check ProtectionPriorityRival.comparison_does_not_yield_priority
+#check ProtectionPriorityRival.every_scalar_comparison_trades
+#check ProtectionPriorityRival.no_scalar_represents_priority

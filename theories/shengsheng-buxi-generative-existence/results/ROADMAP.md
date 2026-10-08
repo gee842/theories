@@ -76,6 +76,21 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [conditional-foundation-assessment](records/conditional-foundation-assessment.md): `reviewed-scoped`
 
+<a id="generative-relation-change-session"></a>
+## 生成关系怎样变化：本会话目标 / How generative relations change: session objective
+
+**Scope / 范围:** Ren 在本会话明确要求完成生成关系怎样变化；沿当前生成／变化首要方向，保留此前智慧与 G0/J 任务的独立范围。 / Ren explicitly requests completing how generative relations change in this session, within the current Theory of Becoming priority and while retaining the distinct wisdom and G0/J scopes.
+
+说明同一展开中的关系如何形成、维持、转化、退化和消失，以及这些发生怎样改变进一步活动的实际条件。 / Explain how relationships within one unfolding form, persist, transform, degenerate and dissolve, and how these occurrences change the actual conditions of further activity.
+
+**Premises / 前提:** 从一元关系方法开始；不预设变化为善，保留实际损失与终止。复用已完成机制，分别公开形式假设、实际规律、对应与规范承诺。 / Begin with the monist relational method; do not assume change is good, and retain real losses and cessation. Reuse completed mechanisms and distinguish formal premises, operative laws, correspondence and normative commitments.
+
+**Completion criterion / 完成条件:** 须连接实际形成、继续作用及丧失的解释，并公开尚未说明的普遍推论；步骤界或有限例子本身不完成全范围。强的零附加实质公理假说不得缩成无伦理公理。 / Connect explanations of actual formation, continuing effects and loss while disclosing unestablished universal inferences. An event bound or finite example alone does not complete the full scope. Do not reduce the strong zero-substantive-axiom hypothesis to absence of ethical axioms.
+
+[2026-10-09-generative-relation-change-goal](../../../sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) · [THEORY-OF-BECOMING](../unified-2026-10-05/THEORY-OF-BECOMING.md)
+
+[effective-capacity-and-eventual-reachability](records/effective-capacity-and-eventual-reachability.md): `recorded-checked`
+
 <a id="liangzhi-evolution"></a>
 ## 良知的生成演化 / Generative evolution of Liangzhi
 
@@ -102,10 +117,56 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [2026-10-07-normative-grounding-first-priority](../../../sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md) · [2026-10-07-shengsheng-ethical-direction](../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)
 
+<a id="scientific-inquiry-session"></a>
+## 科学探究基础会话 / Scientific inquiry foundation session
+
+**Scope / 范围:** Ren 明确指令继续并完成必要科学基础的本会话；不自动接管其他会话工作。 / This session explicitly directed by Ren to pursue and finish a necessary scientific foundation; other sessions are not automatically assigned here.
+
+从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。 / Establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core.
+
+**Premises / 前提:** 用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。 / The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality.
+
+**Completion criterion / 完成条件:** 须完成所提核心与科学成就的独立必要性对应；局部统计或生成定理不能独自宣布整体完成。 / Complete the independent necessity correspondence between the proposed core and scientific achievements; local statistical or generative theorems alone do not complete the whole target.
+
+[2026-10-08-knowledge-content-continuation](../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) · [SCIENTIFIC-PHILOSOPHY](../unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md)
+
+[finite-fallible-inquiry-necessity](records/finite-fallible-inquiry-necessity.md): `recorded-checked`
+
+[scientific-inquiry-foundation](records/scientific-inquiry-foundation.md): `open`
+
+<a id="theory-of-becoming"></a>
+## 生成／变化之论——当前首要研究方向 / Theory of Becoming — current first priority
+
+**Scope / 范围:** Ren 为持续基础研究确立的当前首要方向：解释包含生成与退化的整个变化范围。保留已完成伦理、演化成果及其他独立授权任务的范围。 Ren进一步明确：演绎必然性的对象是Theory of Becoming整体；生成性是其manifold的部分。 / Ren's current first priority for the continuing foundation programme: explain the whole scope of becoming, including generation and degeneration. Preserve completed ethical and evolutionary results and the scopes of independently authorized tasks. Ren clarifies that deductive necessity concerns the whole Theory of Becoming; generativity is within its manifold.
+
+无需附加实质公理，建立Theory of Becoming整体的演绎必然性，并说明其manifold中的生成形态。阐明关系怎样形成、维持、转化与消失，包含生命与演化，不要求每种变化均有生成性或有利方向。 / Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generative forms within its manifold. Articulate how relations form, persist, transform and dissolve, including life and evolution, without requiring every becoming to be generative or favorably directed.
+
+**Premises / 前提:** 从一元关系方法开始并公开其作用，保留混合后果、真实损失与接续终止。区分逻辑工具、定义、局部规律、实际对应及规范承诺；局部给定规律不因此外在于现实。G0/J 仍是整体内公开的伦理承诺，不成为每项动态解释的前提。 / Begin with the monist relational method and disclose its role. Retain mixed effects, real losses and terminal continuations. Distinguish logical machinery, definitions, local laws, correspondence and normative commitments; a supplied local law is not thereby external to reality. G0/J remain explicit ethical commitments within the whole, without becoming premises of every dynamical explanation.
+
+**Completion criterion / 完成条件:** 复用已完成条件机制，指出尚缺的确切基础推论。分别检验无规范公理与无附加实质公理；包容全部结果、空 Lean 公理报告或隐藏假设都不等于更强目标成立。说明实际可能与限制，公开剩余依赖并保留实质反例。本优先授权不认证新成果或普遍完成。 按所声明范围建立整体主张；不以普遍生成性替换整体，不把某种形态缺失直接视为整体反例。 / Reuse completed conditional mechanisms and identify the exact remaining foundational inference. Assess zero normative axioms and zero added substantive axioms separately; neither outcome inclusion, an empty Lean axiom report nor hidden hypotheses establishes the stronger target. Explain actual possibilities and constraints, expose remaining dependencies, and preserve substantive counterexamples. This priority authorization does not certify a new result or universal completion. Establish the whole claim at its stated scope; do not substitute universal generativity for the whole or treat a mode’s absence as its refutation.
+
+[2026-10-08-theory-of-becoming-priority](../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) · [NONDUAL-METHOD](../unified-2026-10-05/NONDUAL-METHOD.md) · [GENERATIVE-GROUNDING](../unified-2026-10-05/GENERATIVE-GROUNDING.md) · [THE-THEORY-OF-EVOLUTION](../unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md) · [2026-10-09-theory-of-becoming-continuation](../../../sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md) · [BECOMING-FOUNDATION](../unified-2026-10-05/BECOMING-FOUNDATION.md) · [2026-10-09-becoming-whole-generative-manifold](../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) · [2026-10-09-renewing-consuming-without-axioms](../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)
+
+**README overview / 首页摘要:** 首要研究方向：生成／变化之论 / First priority: Theory of Becoming
+
+Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其manifold中的部分。无需附加实质公理推进这一演绎，保留维持、退化、消解及混合变化；生命、演化与G0/J评价在同一现实中分化。 / Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and G0/J evaluation remain differentiated within the same reality.
+
+**Next / 下一步:** 明确并推导整体的必要内容，再说明其中生成形态的具体条件。复用已完成机制，不把这些机制普遍成立作为整体成立条件。 / Articulate and derive the whole’s necessary content, then explain the particular conditions of generative forms within it. Reuse completed mechanisms without making their universality a condition of the whole.
+
+[becoming-context-coherence](records/becoming-context-coherence.md): `recorded-checked`
+
+[conditional-foundation-assessment](records/conditional-foundation-assessment.md): `reviewed-scoped`
+
+[endpoint-loss-and-return](records/endpoint-loss-and-return.md): `recorded-checked`
+
+[relational-renewal-classification](records/relational-renewal-classification.md): `recorded-checked`
+
+[theory-of-becoming-foundation](records/theory-of-becoming-foundation.md): `open`
+
 <a id="theory-of-evolution"></a>
 ## 演化理论 / The Theory of Evolution
 
-**Scope / 范围:** 独立获授权的演化理论研究；Ren 要求将其展示于共同 README。其理论重点不替代其他会话范围。 / The separately authorized evolutionary-theory programme, made visible in the shared README by Ren; its theoretical focus does not displace other sessions.
+**Scope / 范围:** 独立获授权的演化理论研究；Ren 要求将其展示于共同 README。其理论重点不替代其他会话范围。 Ren 于2026年10月8日要求本次组织变异接续改用社会／组织，停止新增生物系统案例。 10月9日明确以同一系统与其子系统的分化和反馈解释，避免预设独立实体再接合。 / The separately authorized evolutionary-theory programme, made visible in the shared README by Ren; its theoretical focus does not displace other sessions. Ren directs the current organizing-variation continuation to social/organizational systems on 8 October 2026, with no new biological-system examples. On 9 October Ren requires systems thinking: differentiation and feedback within one system and its subsystems, without independently constituted entities connected afterward.
 
 建立生成性的演化理论，接通组织、传递、重构、发育与变化中的选择，并说明其解释及比较优势。 / Establish a generative theory of evolution with a connected account of organization, transmission, reconstruction, development and changing selection, and demonstrate its explanatory and comparative strength.
 
@@ -113,34 +174,36 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 完整演化及比较主张仍在推进。按原范围复用已完成局部推导，继续组织变异及选择的剩余连接；更广经验计划与本轮理论比较分别保留。 / The full evolutionary and comparative claim remains active. Credit completed local derivations at their stated scope and complete the remaining organizing-variation and selection connections. Keep the broader empirical programme separate from the current theoretical comparison.
 
-[2026-10-08-the-theory-of-evolution-goal](../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md) · [2026-10-08-evolution-theoretical-focus](../../../sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md) · [THE-THEORY-OF-EVOLUTION](../unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+[2026-10-08-the-theory-of-evolution-goal](../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md) · [2026-10-08-evolution-theoretical-focus](../../../sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md) · [THE-THEORY-OF-EVOLUTION](../unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-08-social-organizational-evolution](../../../sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md) · [2026-10-09-systems-subsystems-evolution](../../../sources/15-codex-theory-conversations/2026-10-09-systems-subsystems-evolution.md)
 
 **README overview / 首页摘要:** 论证 The Theory of Evolution / Investigating The Theory of Evolution
 
-我们正在论证同一生成论述能否建立 The Theory of Evolution。有条件成果已接通形成、传递、重构、发育记忆及更新规则修订。最近的经检查构造在任意有限供给轮数中重新建立链状组织，保留实际材料消耗与失败。完整解释及比较主张仍是正在推进的目标。 / We are investigating whether the same generative account can establish The Theory of Evolution. Conditional results connect formation, transmission, reconstruction, developmental memory and revision of updating rules. A recent checked construction rebuilds a chain through any finitely supplied number of cycles, retaining actual material costs and failure. The full explanatory and comparative claim remains an active research objective.
+从社会组织中共同活动的分化与反馈解释组织变异及其接续。既有条件程序证明保留；最新修正明确它尚未接通工作、能力、参与和组织边界的相互变化。完整解释及比较主张仍在推进。 / Explain organizing variation and continuation through differentiation and feedback in social activity. The existing conditional protocol proof remains valid; the systems correction identifies its unclosed dynamics of work, capability, participation and organizational boundaries. The full explanatory and comparative claim remains active.
 
-**Next / 下一步:** 说明组织关系的可遗传变异及其选择后果；比较在同等信息下，接通的论述比既有理论多解释了什么。直接复用已完成的理论恢复与构造。 / Explain heritable variation in organizing relations and its selection consequences; establish what the connected account explains beyond equally informed existing theories. Reuse the completed theoretical recoveries and constructions.
+**Next / 下一步:** 接通被组织方式支持的实际活动，怎样反过来形成、改变或损伤其持续与再组织的条件；同等证据下比较系统动力学及组织惯例的强解释。 / Connect enabled activity to the formation, transformation or loss of the conditions for its continuation and reorganization; compare strong system-dynamics and routine accounts on the same evidence.
 
 [growth-constrained-fragmentation](records/growth-constrained-fragmentation.md): `recorded-checked`
 
 [material-preparation-output](records/material-preparation-output.md): `recorded-checked`
 
+[organizational-rule-inheritance](records/organizational-rule-inheritance.md): `recorded-checked`
+
 [recurrent-chain-assembly](records/recurrent-chain-assembly.md): `recorded-checked`
 
 <a id="universal-intelligence-session"></a>
-## 能动性的普遍元伦理 / Universal Meta-Ethics of Agency
+## 所有智能的普遍元伦理 / Universal metaethics of all intelligence
 
 **Scope / 范围:** 原普遍智能会话及其明确授权接续，不自动成为每个仓库任务目标。 / The original universal-intelligence session and explicitly authorized continuations; not automatically every repository task’s objective.
 
-证明所有智能的普遍元伦理，说明整体相依与其中差异化行动能力的形成。 8日最新接续明确采用G0，从关系中形成的个体位置及当前有根据的可见未来，建立正面生成意义与可修订的实践方向。 Ren 将理论命名为 Universal Meta-Ethics of Agency，将规范核心命名为 Universal Metaethical Core；公开 README 优先展示已成立的结论及其有范围证据。 / Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures. Ren names the theory Universal Meta-Ethics of Agency and its normative core Universal Metaethical Core; the public README leads with established conclusions and their scoped evidence.
+证明所有智能的普遍元伦理，说明整体相依与其中差异化行动能力的形成。 8日最新接续明确采用G0，从关系中形成的个体位置及当前有根据的可见未来，建立正面生成意义与可修订的实践方向。 Ren 于8日将理论命名为 Universal Meta-Ethics of Agency、规范核心命名为 Universal Metaethical Core；9日将理论改称 The Theory of Becoming，核心名称保留；公开 README 优先展示已成立的结论及其有范围证据。 / Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures. On 8 October Ren named the theory Universal Meta-Ethics of Agency and its normative core Universal Metaethical Core; on 9 October Ren renamed the theory The Theory of Becoming, keeping the core's name; the public README leads with established conclusions and their scoped evidence.
 
 **Premises / 前提:** 规范普遍性、实际遵循和当前表述的唯一必要性必须分别论证。 保留真实生成可能与新证据纠正判断两层开放；完整积分、全知和整体严格改善不是正面根据的前提。 / Normative universality, actual compliance and exclusive necessity of this formulation need separate arguments. Preserve both real generative possibilities and evidence-responsive revision; complete integration, omniscience and strict whole improvement are not premises of positive warrant.
 
 **Completion criterion / 完成条件:** 不能以局部生成定理、给定价值保存或有限比较宣告普遍目标完成。 本次有限正面原则按其明确前提验收；不得把全面总排序、所有后果无损或必然服从另设为该原则的完成条件。 / A local generative theorem, preservation of supplied value or bounded comparison does not complete the universal target. Assess the current finite positive principle under its explicit premises; do not add a complete ranking, losslessness of every consequence or inevitable compliance as its completion gate.
 
-[2026-10-07-universal-intelligence-session-goal](../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+[2026-10-07-universal-intelligence-session-goal](../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-09-theory-of-becoming-name](../../../sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-name.md) · [2026-10-09-monist-evaluator-grounding](../../../sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md)
 
-**README overview / 首页摘要:** 继续发展能动性的伦理 / Developing the ethics of agency
+**README overview / 首页摘要:** 继续发展普遍元伦理核心 / Developing the Universal Metaethical Core
 
 我们继续将普遍元伦理核心展开为更具体的伦理。G0 与公开实践承诺已经支持比较、基本保护、有界责任、交接及适当结束；当前接续处理冲突要求、不确定分类和可修订判断。 / We are developing the Universal Metaethical Core into increasingly specific ethics. G0 and explicit practical commitments already support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
 
@@ -148,9 +211,13 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [classification-robust-generative-comparison](records/classification-robust-generative-comparison.md): `recorded-checked`
 
+[positioned-positive-reason](records/positioned-positive-reason.md): `recorded-checked`
+
 [positive-ground-open-futures](records/positive-ground-open-futures.md): `recorded-checked`
 
 [practical-judgment-g0-j](records/practical-judgment-g0-j.md): `reviewed-scoped`
+
+[self-good-reachable-g0](records/self-good-reachable-g0.md): `recorded-checked`
 
 [universal-practical-warrant](records/universal-practical-warrant.md): `open`
 

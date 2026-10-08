@@ -18,6 +18,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean)
 
+## acquired-revision-of-pending-task ← versioned-request-completion
+
+`formal-reuse` — revised_head_completes 直接调用既有 valid_head_completes，传入经 retarget_head_invariant 建立的新不变量。 / revised_head_completes directly calls valid_head_completes with the new invariant established by retarget_head_invariant.
+
+**Producer output / 上游输出:** 有效队列中的头请求沿保留路线完成并保留其余任务。 / A valid head completes along its retained route while preserving other work.
+
+**Consumer input / 下游输入:** 改写后的实际载荷需要被完成定理消费；retargeted_act_uses_delivered_revision 将输出再送入实际行动。 / The rewritten payload must satisfy the completion theorem; retargeted_act_uses_delivered_revision then supplies its output to enactment.
+
+**Retained conditions / 保留条件:** 相同银行、剩余路径和调度；只改变头项编码与请求值。 / Same banks, remaining path and schedule; only the head encoding and request change.
+
+[Connection evidence / 连接证据](experiments/market-generativity/meta-attractor/CommonTaskRevision.lean)
+
+## acquired-revision-of-pending-task ← formed-goal-revision-continuation
+
+`formal-reuse` — warranted_revision_and_pending_delivery 直接消费旧比较；continuation 消费 completed 的实际状态及储备。 / warranted_revision_and_pending_delivery consumes the inherited comparison; continuation consumes the actual completed state and account.
+
+**Producer output / 上游输出:** 已取得、校准、修订且改革后的状态及其有根据比较。 / Acquired, calibrated, revised and reformed state with its warranted comparison.
+
+**Consumer input / 下游输入:** paidRetarget 从该状态读目的并消耗一工作单位；实际送达值决定端点实践。 / paidRetarget reads that state’s goal and consumes one work unit; the delivered value determines endpoint practice.
+
+**Retained conditions / 保留条件:** 保留同一 harmful 条件、实践解释、G0/J、先前损失和有限资源，不推断任意共享动机。 / Retains the same harmful conditions, practice interpretation, G0/J, earlier losses and finite resources, without inferring arbitrary shared motivation.
+
+[Connection evidence / 连接证据](experiments/market-generativity/meta-attractor/CommonTaskRevision.lean)
+
 ## alignment-direction-g0-j ← practical-judgment-g0-j
 
 `application` — 把既有原则应用到明示 AI 服务关系；形式例直接导入 PracticalJudgment。 / Applies the existing principles to declared AI-service relations; the formal example imports PracticalJudgment.
@@ -29,6 +53,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** AI 对应 E、权限、承担及真实损失仍独立说明；应用而非普遍遵循定理。 / AI correspondence E, authority, undertakings and real losses remain explicit; an application, not a universal compliance theorem.
 
 [Connection evidence / 连接证据](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)
+
+## becoming-context-coherence ← finite-trace-transport
+
+`formal-reuse` — 既有 trace_map 将成员历史送入合并或保留表示；继承的组合及提升定理分别记功。 / The original trace_map carries member histories into pooled and retained representations; inherited composition and lifting are credited separately.
+
+**Producer output / 上游输出:** 保留映射端点的有限目标历史。 / A finite target trace preserving mapped endpoints.
+
+**Consumer input / 下游输入:** 成员步骤见证提供合并步骤；固定标签提供保留步骤。 / The member-step witness supplies the pooled step; a fixed tag supplies the retained step.
+
+**Retained conditions / 保留条件:** 相同事件标签及明示映射；不推定物理等价。 / Same event labels and stated maps; no physical equivalence is inferred.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean)
 
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
@@ -90,6 +126,34 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean)
 
+## constitutive-binding-assessment ← binding-preserving-substitution
+
+`interpretive` — 复用已有代入机制及误接界限；解释性连接不把形式定理升级为构成性奠基证明。 / Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof.
+
+**Producer output / 上游输出:** 给定解释下，保留原位置根据的代入保持所有消费者求值；误接及偶然同值控制。 / Under the supplied interpretation, position-preserving substitution retains every consumer evaluation, with capture and coincident-value controls.
+
+**Consumer input / 下游输入:** 局部构成性解释中，生产出的根据怎样继续消费者原指定的依存。 / How a produced ground continues the consumer’s designated dependence in the local constitutive account.
+
+**Retained conditions / 保留条件:** 语法、绑定解释及认可条件不变；实际角色和推理根据的哲学说明保持独立义务。 / Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+
+## context-sensitive-updating-correspondence ← situated-recovery-empirical-correspondence
+
+`interpretive` — 复用反应保留与测量对应的完成结果，加入操控线索／扰动下的更新比较；不声称正式定理组合或独立重复实验。 / Reuse completed retention and measurement correspondence, adding updating contrasts under cue/perturbation manipulations; no formal theorem composition or independent experimental replication.
+
+## derived-history-law-exactness ← finite-trace-transport
+
+`formal-reuse` — admitted_extension_projects直接调用trace_map保持同一事件词；反向接续另由derived_trace_sound证明。 / admitted_extension_projects directly uses trace_map to preserve the event word; derived_trace_sound separately proves continuation soundness.
+
+**Producer output / 上游输出:** 保持单步的映射把原历史送至目标历史。 / A step-preserving map transports the original trace.
+
+**Consumer input / 下游输入:** history_trace_iff给出已接纳延伸的历史，q的保步由构造证明。 / history_trace_iff provides the admitted-extension trace; q preserves steps by construction.
+
+**Retained conditions / 保留条件:** 给定L及前缀封闭；实际对应与反向端点提升不由保步取得。 / Supplied L and prefix closure; actual correspondence and converse endpoint lifting do not follow from preservation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean)
+
 ## enacted-scene-binding ← acquired-binding-compositional-use
 
 `formal-reuse` — 空间接触史产生旧绑定构造的解释输入，直接调用其任意序列定理。 / The spatial history produces the prior construction’s interpretation inputs and directly invokes its all-sequence theorem.
@@ -101,6 +165,14 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 解释输入相同，不要求整个状态或支出历史相同；额外移动成本保留。 / Interpretation inputs match; whole-state or expenditure-history identity is not assumed, and movement costs remain.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean)
+
+## encounter-control-and-retention ← encounter-selection-and-revision
+
+`interpretive` — 复用已完成的选择与解释接口；后续测量约束其心理对应，不声称把数据形式转换为Lean历史。 / Reuse the completed selection/interpretation interface; later measurement constrains psychological correspondence without a formal conversion of data to Lean histories.
+
+## encounter-control-and-retention ← naming-attention-coverage
+
+`interpretive` — 从已有自动注视覆盖边界转向后续学习测量；不同人群与任务不拼接为同一观察史。 / Moves from the existing automatic gaze-coverage boundary to a later-learning measure; different populations/tasks are not joined into one observed history.
 
 ## encounter-selection-and-revision ← enacted-scene-binding
 
@@ -126,6 +198,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean)
 
+## finite-granularity-question-recovery ← branching-tests-bisimulation
+
+`formal-reuse` — 复用后继匹配，单向历史只需接收侧有限性。 / Reuse successor matching; one-way history lifting only needs receiving-side finiteness.
+
+**Producer output / 上游输出:** 有限问题一致迫出后继匹配。 / Equal finite-test answers force successor matching.
+
+**Consumer input / 下游输入:** 有限展开端点得到 ImageFinite，逐步接到 cross_granularity_history_matches。 / Finite expansion endpoints give ImageFinite, consumed stepwise by cross_granularity_history_matches.
+
+**Retained conditions / 保留条件:** 完整宏问答一致；展开是固定有限词。 / Complete block-question agreement; expansions are fixed finite words.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean)
+
+## finite-granularity-question-recovery ← retained-reference-joining-recovery
+
+`formal-reuse` — 复用配置保持及内部步数定理。 / Reuse retained configurations and internal step counting.
+
+**Producer output / 上游输出:** trace_retains_configuration 与 trace_length。 / trace_retains_configuration and trace_length.
+
+**Consumer input / 下游输入:** retained_block_provenance 将宏历史展开为同一配置历史后接用。 / retained_block_provenance flattens blocks into the same configuration trace.
+
+**Retained conditions / 保留条件:** 只用于原追加式接合语义，不许可物理复制。 / Applies to the existing append-only joining semantics, without physical copying permission.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean)
+
 ## finite-joining-tree-lifting ← multivalued-joining-common-structure
 
 `formal-reuse` — 代表片段一致的输出提升接入复合结构。 / Representative-wise output lifting feeds the compound structure.
@@ -137,6 +233,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一 J、编码、有限纤维、Exact、Reduced 完整保留。 / The same J, encoding, finite fibers, Exact and Reduced are retained.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
+
+## formed-software-continuation ← market-finite-support-obstruction
+
+`interpretive` — 以既有失败定理的固定扩展／供给范围为边界，检查真实组织改组中被省略的关系；不构造Lean适配。 / Uses the inherited obstruction theorem’s fixed expansion/provision scope to examine relationships omitted by that market account; no Lean adapter is constructed.
+
+**Producer output / 上游输出:** 固定增长与支持规律内的普遍失败区间及其控制范围。 / Universal failure interval and control scope under fixed growth and support laws.
+
+**Consumer input / 下游输入:** 核对实际发布、分发和过渡支持是否仍属于该固定范围。 / Assess whether actual release, distribution and interim support remain inside that fixed scope.
+
+**Retained conditions / 保留条件:** 原定理不变；新形成关系需要独立证据，个案不提供数量化参数。 / Original theorem unchanged; newly formed relations require independent evidence and the case supplies no quantitative parameters.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)
+
+## guarded-program-question-recovery ← branching-tests-bisimulation
+
+`formal-reuse` — 用后继匹配恢复条件程序的边界历史。 / Use successor matching to recover guarded-program boundary histories.
+
+**Producer output / 上游输出:** same_forces_successor_match 的有限后继恢复。 / Finite successor recovery from same_forces_successor_match.
+
+**Consumer input / 下游输入:** program_image_finite 供给有限端点；guarded_history_matches 逐步使用同测恢复。 / program_image_finite supplies finite endpoints; guarded_history_matches uses answer recovery stepwise.
+
+**Retained conditions / 保留条件:** 完整翻译问答一致与接收侧有限性，不推出全部中间位置对应。 / Complete translated-answer agreement and receiving-side finiteness; no general internal-position matching.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean)
+
+## historical-source-binding ← retrospective-source-binding
+
+`formal-reuse` — 直接复用covered_packet_preserves_atomic_content及alternatives，把历史中相应日期的路径候选转为旧内容候选。 / Directly reuses covered_packet_preserves_atomic_content and alternatives to turn dated history projections into old-content candidates.
+
+**Producer output / 上游输出:** 实际历史被保留，故其旧日期路径在投影候选中。 / The actual history is retained, so its route at the old date belongs to the projection.
+
+**Consumer input / 下游输入:** 旧报告到原子候选的覆盖定理需要实际路径与扰动被包含。 / The report-to-atomic-candidate coverage theorem requires actual route and disturbance inclusion.
+
+**Retained conditions / 保留条件:** 历史族覆盖、忠实日期化控制和旧扰动覆盖。 / History-family coverage, faithful dated controls and old-disturbance coverage.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean)
+
+## historical-source-binding ← acquired-binding-compositional-use
+
+`formal-reuse` — acquired_history_supplies_binding_coverage调用既有unique_resolution_is_correct_under_coverage。 / acquired_history_supplies_binding_coverage invokes existing unique_resolution_is_correct_under_coverage.
+
+**Producer output / 上游输出:** 每个相关旧记录的候选包含实际原子目标。 / Each relevant old packet’s alternatives contain the actual atomic target.
+
+**Consumer input / 下游输入:** 既有唯一绑定正确性所需的逐记录目标覆盖。 / Per-record target coverage required by existing unique-binding correctness.
+
+**Retained conditions / 保留条件:** 目标可用、记录实现条件及唯一解成立。 / Available target, packet-realization hypotheses and unique resolution.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean)
+
+## incidence-common-refinement ← branching-tests-bisimulation
+
+`formal-reuse` — 由同一接合构造关联模型后复用有限分支恢复。 / Reuse finite branch recovery after constructing each joining incidence model.
+
+**Producer output / 上游输出:** 同测为双模拟并匹配后继。 / Test agreement forms a bisimulation and matches successors.
+
+**Consumer input / 下游输入:** locally_finite_image_finite 和 match_incident 接到三位置匹配；related_covers_connected 接到覆盖。 / locally_finite_image_finite and match_incident connect recovery to three-position matching; related_covers_connected supplies coverage.
+
+**Retained conditions / 保留条件:** 两侧局部有限、相同角色语言和同测根完整保留；无分离／双射假设。 / Local finiteness, common role language and equal root answers remain; no separation or bijection premise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean)
+
+## inherited-structural-copying ← recurrent-chain-assembly
+
+`formal-reuse` — previous_fragment_is_template 核对既有片段与模板输入；新复制关系另为前提，不复用旧倍增成本。 / previous_fragment_is_template checks the existing fragment against the template input; the new copying relation is an added premise and does not reuse old doubling costs.
+
+**Producer output / 上游输出:** 实际八组分链的四组分 ABAB 片段及保留边。 / The four-component ABAB fragment and retained edges of the actual eight-component chain.
+
+**Consumer input / 下游输入:** 结构复制的非空路径模板。 / A nonempty path template for structural copying.
+
+**Retained conditions / 保留条件:** 端点同一之外，按序访问、精确复制、接合及释放仍须提供；旧分裂与新模板操作不等同。 / Beyond endpoint identity, ordered access, exact copying, attachment and release must be provided; old cleavage and new template operations are not identified.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean)
 
 ## joining-questions-survive-encoding ← multivalued-joining-common-structure
 
@@ -162,6 +330,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean)
 
+## joint-practice-forms-continuation ← organizational-rule-inheritance
+
+`formal-reuse` — retry_produces_existing_review 接入原 review 操作；enrollment_consumes_review 实际使用 admitted_requires_review，交接及规则修订直接使用原 step。 / retry_produces_existing_review supplies the exact prior review operation; enrollment_consumes_review uses admitted_requires_review, and handoff/rule revision directly use the original step.
+
+**Producer output / 上游输出:** 实际成功重试产生的既有审查事件及原授权程序形成的资格。 / Existing review event produced by an actual successful retry, and the mandate formed by the original authorization process.
+
+**Consumer input / 下游输入:** 既有接纳程序所读的审查关系，以及后续回应所需资格与实际参与。 / Review relation read by the existing admission process, then mandate and actual participation needed by later response.
+
+**Retained conditions / 保留条件:** 回应匹配当前检验关系、实际修订与重试、继续参与、原治理门槛；未把操作正确当作自动授权。 / Response matches the current test relation; actual revision and retry, continuing participation and the original governance threshold; correct execution does not automatically confer authority.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean)
+
+## market-finite-support-obstruction ← market-supported-finite-transition
+
+`formal-reuse` — 复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。 / Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction.
+
+**Producer output / 上游输出:** share_growth_upper与positive_seed_finite_landing输出速率界及运行到达。 / share_growth_upper and positive_seed_finite_landing supply a growth bound and projected arrival.
+
+**Consumer input / 下游输入:** next_share_upper与projected_recovery_and_actual_failure消费这些输出；zero_schedule_is_original_pulse接回原完整守卫。 / next_share_upper and projected_recovery_and_actual_failure consume them; zero_schedule_is_original_pulse reconnects the original full guard.
+
+**Retained conditions / 保留条件:** 同一增长与支持关系，投影到达不视为完整历史执行。 / Same growth and support relations; projected arrival is not taken as full execution.
+
+[Connection evidence / 连接证据](experiments/market-generativity/formal/FiniteSupportObstruction.lean)
+
+## market-finite-support-obstruction ← market-protected-continuation
+
+`formal-reuse` — 以相同有限支持、高维护初态保留可继续的实质对照。 / Retains a continuing high-renewal comparison with the same finite stock.
+
+**Producer output / 上游输出:** example_certificate及safe_history_never_fails提供原全时保护。 / example_certificate and safe_history_never_fails supply inherited all-time protection.
+
+**Consumer input / 下游输入:** same_stock_can_support_high_seed构造Safe初态并调用原保护。 / same_stock_can_support_high_seed constructs Safe and invokes that protection.
+
+**Retained conditions / 保留条件:** x=q=1、w=0、预算1、C₀≥5，无冲击，原β=1/2。 / x=q=1, w=0, budget one, C0>=5, no shocks, original beta=1/2.
+
+[Connection evidence / 连接证据](experiments/market-generativity/formal/FiniteSupportObstruction.lean)
+
+## market-partial-correction-boundary ← market-supported-finite-transition
+
+`formal-reuse` — 复用其已检查的支持界组件与到达—安全适配，不将β=0的到达证明直接用于β>0。 / Reuses its checked stock-cover components and landing-to-safety adapter; the beta=0 arrival proof is not applied to beta>0.
+
+**Producer output / 上游输出:** cover_step、cover_floor、landing_supplies_safety 提供逐步支持界及保护证书输入。 / cover_step, cover_floor and landing_supplies_safety provide per-step stock bounds and the safety-certificate input.
+
+**Consumer input / 下游输入:** partial_remaining_cover 与 supported_partial_transition 在新β历史中使用这些组件。 / partial_remaining_cover and supported_partial_transition use these components on the new beta history.
+
+**Retained conditions / 保留条件:** 支持律、额外耗用、底线与Landing定义保持相同，新的有限到达另行证明。 / The support law, extra burden, floor and Landing definition are unchanged; finite arrival is proved anew.
+
+[Connection evidence / 连接证据](experiments/market-generativity/formal/PartialRegimeTransition.lean)
+
+## market-partial-correction-boundary ← market-protected-continuation
+
+`formal-reuse` — 以实际到达的完整状态调用原全时守卫保护，无支持重置。 / Applies original all-time guarded protection to the actual arrived full state without a stock reset.
+
+**Producer output / 上游输出:** Safe与容许扰动下的原全时守卫不失败。 / Inherited all-time guarded nonfailure from Safe and admissible disturbances.
+
+**Consumer input / 下游输入:** supported_partial_transition 提供到达Safe状态并调用 safe_history_never_fails。 / supported_partial_transition supplies the arrived Safe state and calls safe_history_never_fails.
+
+**Retained conditions / 保留条件:** 同一完整State、剩余支持和预算；后继为原β=1/2与noShock。 / Same full State, remaining stock and budget; successor uses original beta=1/2 and noShock.
+
+[Connection evidence / 连接证据](experiments/market-generativity/formal/PartialRegimeTransition.lean)
+
 ## market-supported-finite-transition ← market-protected-continuation
 
 `formal-reuse` — 实际到达状态接通原保护证书，无交接重置。 / The actual arrived state supplies the original protection certificate without a handoff reset.
@@ -186,6 +414,10 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
 
+## naming-attention-coverage ← encounter-selection-and-revision
+
+`interpretive` — 检验其合作命名覆盖的经验对应，保留条件证明及覆盖失败反例；没有声称把注视数据形式转换为Lean候选集。 / Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed.
+
 ## open-form-realization-under-revision ← positive-ground-open-futures
 
 `formal-reuse` — positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.
@@ -205,6 +437,58 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## organizational-formation-from-generative-comparison ← alignment-direction-g0-j
 
 `interpretive` — 复用已完成的跨智能方向，推进组织形成的具体条件。 / Reuses the completed cross-intelligence direction to advance the conditions of organizational formation.
+
+## organizational-rule-inheritance ← recurrent-chain-assembly
+
+`interpretive` — 接续固定规律之后的组织变异问题；不导入其模型或宣称形式跨域适配。 / Continues the organizing-variation question left by fixed-law reconstruction; does not import that model or claim a formal cross-domain adapter.
+
+## pending-task-context-applicability ← acquired-revision-of-pending-task
+
+`formal-reuse` — revised_delivery_enters_review 直接消费 revised_head_completes 的实际送达值与尾队列；continueReviewed 消费 paidRetarget 的实际状态和开支。 / revised_delivery_enters_review directly consumes revised_head_completes’s delivered value and queue tail; continueReviewed consumes paidRetarget’s actual state and expenditure.
+
+**Producer output / 上游输出:** 任意有效头请求经实际编码改写后送达新值，并保留尾队列、银行和路线。 / Any valid rewritten head delivers the revised value and preserves the tail, banks and active route.
+
+**Consumer input / 下游输入:** deliverReview 把送达值存为端点任务，reviewAndAct 复查后将该值送入 enact；未执行时继续保留。 / deliverReview stores that value as an endpoint task; reviewAndAct supplies it to enact after review, retaining it when unperformed.
+
+**Retained conditions / 保留条件:** 保留旧不变量、连续传递、实践解释、权限与改写费用；另加有成本的报告覆盖及可用工作条件。 / Retains the old invariant, consecutive delivery, practice interpretation, authority and rewrite cost; adds paid report coverage and current-work conditions.
+
+[Connection evidence / 连接证据](experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean)
+
+## positioned-positive-reason ← positive-ground-open-futures
+
+`formal-reuse` — every_situated_position_has_reason 直接调用 contingent_generation_has_positive_ground；respond_formation 由 PositiveGroundUncertainty 的定义直接计算所见范围与新形成，不调用其依赖 propext 的引理。 / every_situated_position_has_reason directly calls contingent_generation_has_positive_ground; respond_formation computes the visible scope and new formation directly from the PositiveGroundUncertainty definitions, without calling its propext-dependent lemmas.
+
+**Producer output / 上游输出:** 同一回应在每段有根据的接续中具有某项新的正面根据。 / One response has some new positive ground in every grounded continuation.
+
+**Consumer input / 下游输入:** D 的前件 SecuresPositiveGround：回应在每段所见接续中确保正面新内容。 / D's antecedent SecuresPositiveGround: the response secures positive new content in every visible continuation.
+
+**Retained conditions / 保留条件:** 同一 G0、同一库存与先前内容；所见范围按回应索引；不加入 C、整体无损或 Better。 / Same G0, inventory and prior content; visible scope indexed by response; no C, global no-loss or Better.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
+
+## prefix-observation-loss ← finite-granularity-question-recovery
+
+`formal-reuse` — 修复接用精确宏问题编译；反例不借用有限恢复前提。 / Repair uses exact block-question compilation; the counterexample does not use finite-recovery hypotheses.
+
+**Producer output / 上游输出:** compile_correct 的同一过程问题等价。 / Same-process question equivalence from compile_correct.
+
+**Consumer input / 下游输入:** resumption_recovers_loss 以同一中间位置上的后缀恢复原生区别。 / resumption_recovers_loss restores the native difference using a suffix at the same reached position.
+
+**Retained conditions / 保留条件:** 明示 resumable 的两种单步展开；无独立观察谓词。 / Explicit two-singleton resumable expansion; no independent observation predicate.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean)
+
+## recoverable-mediated-change ← mediated-evidence-transport
+
+`formal-reuse` — prepare_preserves_safety 直接复用 commit_preserves_actual_coverage 及 commit_records_the_executed_effect，给出恢复不变量的初值。 / prepare_preserves_safety directly reuses commit_preserves_actual_coverage and commit_records_the_executed_effect to initialize the recovery invariant.
+
+**Producer output / 上游输出:** 提交目标具有实际候选覆盖并与执行程序的确切结果相等。 / The commit target has actual candidate coverage and equals the exact executed program result.
+
+**Consumer input / 下游输入:** 逐步执行开始时的 Coherent 需要该目标覆盖及全程序结果对应；后续相容性再接入当前认证。 / Initial Coherent requires that target coverage and full-program result correspondence; subsequent coherence then feeds current certification.
+
+**Retained conditions / 保留条件:** 原初始覆盖、权限／代次检查及程序语义保留；新研究另加持久状态、微步骤和当前读取对应。 / Original initial coverage, permission/generation checks and program semantics remain; the new study additionally requires durable state, microsteps and current read correspondence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean)
 
 ## recurrent-chain-assembly ← material-preparation-output
 
@@ -230,6 +514,94 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
+## reserved-shutdown-during-recovery ← recoverable-mediated-change
+
+`formal-reuse` — admission_establishes_stop_access 与 recovery_attempt_keeps_stop_margin 直接复用准备、tick 及 crash 的证据相容性；再接入实际停止和有限周期完成。 / admission_establishes_stop_access and recovery_attempt_keeps_stop_margin directly reuse evidence coherence from preparation, tick and crash; this then connects to executed stopping and finite-cycle completion.
+
+**Producer output / 上游输出:** 准备及每个恢复／中断步骤产生 Safe，相容的未完成状态保留实际效果及待恢复描述。 / Preparation and each recovery/interruption step produce Safe, retaining actual effects and pending information in coherent incomplete states.
+
+**Consumer input / 下游输入:** Armed 需要 Safe，加上当前额外停止授权与余量；这些给 cycle_keeps_access_or_stops 和 every_supported_schedule_finishes 的归纳输入。 / Armed consumes Safe with an additional current stop grant and margin, supplying the inductive inputs to cycle_keeps_access_or_stops and every_supported_schedule_finishes.
+
+**Retained conditions / 保留条件:** 旧覆盖写入与持久对应保留；另需停止通道、三步余量、中断上限、一次尝试工作成本及监督执行。 / Prior overwrite and persistence correspondence remain; add the stop channel, three-step margin, interruption bound, attempt work cost and supervisor execution.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean)
+
+## residual-continuation-correspondence ← guarded-program-question-recovery
+
+`formal-reuse` — 接用guard语义、执行路径及diamond问题等价。 / Consume guarded execution semantics, native paths and diamond question equivalence.
+
+**Producer output / 上游输出:** execution_has_native_trace 和 diamond_correct。 / execution_has_native_trace and diamond_correct.
+
+**Consumer input / 下游输入:** resumption_after_inserted_history 保存实际后段；same_preserves_resumption 保持有限余项问题。 / resumption_after_inserted_history retains the actual suffix; same_preserves_resumption preserves finite residual questions.
+
+**Retained conditions / 保留条件:** 实际到达条件及给定残余程序；后者另需完整原生Same。 / Actual reached conditions and supplied remaining recipe; the latter additionally needs complete native Same.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean)
+
+## residual-continuation-correspondence ← branching-tests-bisimulation
+
+`formal-reuse` — 复用有限后继恢复到每次部分展开。 / Reuse finite successor recovery at each partial advance.
+
+**Producer output / 上游输出:** 同测位置有相应后继。 / Equally answering positions have matching successors.
+
+**Consumer input / 下游输入:** advance_matches 与 partial_history_matches 保持相同余项语法。 / advance_matches and partial_history_matches retain common residual syntax.
+
+**Retained conditions / 保留条件:** 原生完整问答及接收侧有限后继。 / Complete native answers and receiving-side finite successors.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean)
+
+## residual-continuation-correspondence ← finite-trace-transport
+
+`formal-reuse` — 复用trace_map提升顺序上下文。 / Reuse trace_map to lift sequential context.
+
+**Producer output / 上游输出:** 保持每步关系的映射保持有限路径。 / Step-preserving maps preserve finite traces.
+
+**Consumer input / 下游输入:** cut_sequence 将同一后续程序接到每个余项。 / cut_sequence appends the same continuation to every residual.
+
+**Retained conditions / 保留条件:** Advance.seq 给出点态保持；行政路径与物理事件分开说明。 / Advance.seq supplies pointwise preservation; administrative paths and physical events are distinguished.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean)
+
+## retained-reference-joining-recovery ← branching-tests-bisimulation
+
+`formal-reuse` — 位置对接合的有限结果给出有限分支，再复用恢复及历史提升。 / Finite outcomes of slot-pair joining give finite branching, then reuse recovery and history lifting.
+
+**Producer output / 上游输出:** 同测配置的后继匹配及有限路径提升。 / Successor matching and finite trace lifting for equally answering configurations.
+
+**Consumer input / 下游输入:** retained_pair_result_matches 固定两个位置；retained_history_matches 保留命令序列并由 trace_length 保持对齐。 / retained_pair_result_matches fixes both slots; retained_history_matches preserves commands and uses trace_length for alignment.
+
+**Retained conditions / 保留条件:** 每对输入有限结果、问答一致和初始位置数相同分别明示。 / Finite outcomes per pair, question agreement and equal initial slot counts remain explicit.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean)
+
+## retained-reference-joining-recovery ← unanchored-incidence-collapse
+
+`formal-reuse` — 仅具体修复见证使用退化反例；一般匹配定理不依赖该反例。 / Only the concrete repair witness uses the collapse counterexample; general matching does not depend on it.
+
+**Producer output / 上游输出:** retained_anchor_separates 的真实自接合差异。 / The actual self-joining difference in retained_anchor_separates.
+
+**Consumer input / 下游输入:** singleton_self_question 将该差异接到保留位置命令；retained_question_corrects_coarse_failure 检查修复。 / singleton_self_question connects the difference to a retained-slot command; retained_question_corrects_coarse_failure checks the repair.
+
+**Retained conditions / 保留条件:** 同一 budgetProcess 及实际 spent 历史；没有改换现象或自由谓词。 / The same budgetProcess and actual spent history, without changing the phenomenon or a free predicate.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean)
+
+## retrospective-source-binding ← acquired-binding-compositional-use
+
+`formal-reuse` — acquired_routes_supply_binding_coverage直接调用既有唯一绑定覆盖定理；取得的绑定再进入既有readForms、interpret和execute。 / acquired_routes_supply_binding_coverage directly invokes the existing unique-binding coverage theorem; acquired bindings enter the existing readForms, interpret and execute.
+
+**Producer output / 上游输出:** 来源候选与旧报告相容的原子内容包含实际目标。 / Atomic contents compatible with acquired route candidates and old reports contain the actual target.
+
+**Consumer input / 下游输入:** 既有绑定正确性定理要求每个相关记录覆盖目标。 / The existing binding-correctness theorem requires target coverage for each relevant record.
+
+**Retained conditions / 保留条件:** 实际路径在校准取得范围，扰动受覆盖，路径向过去的适用性明示，目标在原子操作范围。 / Actual route retained by calibration, disturbance covered, backward route applicability explicit, target in the atomic repertoire.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean)
+
+## retrospective-source-binding ← encounter-control-and-retention
+
+`interpretive` — 复用选择不自动产生保留优势的经验约束；无数据到Lean状态的已验证转换。 / Reuses the empirical limit on automatic control-to-retention advantage; no verified conversion from data to Lean states.
+
 ## risk-certificate-outcome-distinction ← assured-route-criterion
 
 `formal-reuse` — 原证明用 assured_route_iff 将计数失败接到实际不到达。 / The existing proof uses assured_route_iff to connect counted failure with failed arrival.
@@ -242,6 +614,34 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean)
 
+## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
+
+`interpretive` — 已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。 / The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished.
+
+## self-good-reachable-g0 ← positive-ground-open-futures
+
+`formal-reuse` — reach_is_g0 与 self_good_derives_reachable_g0 的结论使用同一 GenerativeComparison.G0 谓词；本结果为该谓词在可及库存上的成立提供由 S0 出发的推导，不改变原结果的证明与范围。 / reach_is_g0 and self_good_derives_reachable_g0 conclude the same GenerativeComparison.G0 predicate; this result supplies a derivation from S0 of that predicate on the reachable inventory, without changing the earlier proof or scope.
+
+**Producer output / 上游输出:** 对持 S0 的位置，可及库存上 G0 成立，以其意义为正面相关性。 / For an S0-holding position, G0 holds on the reachable inventory with its significance as positive relevance.
+
+**Consumer input / 下游输入:** contingent_generation_has_positive_ground 的 G0 前提。 / The G0 hypothesis of contingent_generation_has_positive_ground.
+
+**Retained conditions / 保留条件:** 库存限于此位置可及的生命内容；正面相关性取此位置的意义；容差与分级连通成立。 / Inventory restricted to living content reachable by the position; positive relevance is the position's significance; tolerance and graded connection hold.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
+
+## theory-of-becoming-foundation ← becoming-context-coherence
+
+`interpretive` — 提供包容历史的经检查相容限制，不提供普遍构成根据。 / Supplies a checked coherence constraint on inclusive histories, not the universal constitutive warrant.
+
+## theory-of-becoming-foundation ← conditional-foundation-assessment
+
+`interpretive` — 信用已完成条件机制及原五条件验收，不用它们替代更强目标。 / Credits completed conditional mechanisms and the original five-condition assessment without substituting them for the stronger target.
+
+## theory-of-becoming-foundation ← control-coherence-loss
+
+`interpretive` — 提供已检查的作用状态接口：局部损失经更广可逆交互产生；支持约化可用与保留共同关系的区别，不提供普遍根基。 / Provides a checked operative state interface in which local loss arises through a reversible wider interaction; supports the distinction between reduced access and retained joint relations, not universal grounding.
+
 ## trace-law-equivalence ← finite-trace-transport
 
 `formal-reuse` — 两个方向使用恒等映射的 trace_map；单步恢复另用已有引理。 / Both directions use trace_map with the identity map; step recovery separately uses the existing singleton lemma.
@@ -253,6 +653,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一状态、动作类型和原端点；没有物理规律识别。 / Same state/action types and endpoints; no physical law identification.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean)
+
+## unanchored-incidence-collapse ← joining-open-map-factor
+
+`formal-reuse` — 单位置提升映射的问答保真接入退化说明。 / Question fidelity of one-position lifting maps feeds the collapse account.
+
+**Producer output / 上游输出:** open_map_preserves_questions。 / open_map_preserves_questions.
+
+**Consumer input / 下游输入:** units_collapse_open 从单位给出到单片段结构的 OpenMap，再得到所有片段同测。 / units_collapse_open constructs an OpenMap to the singleton structure from local units, then yields agreement of all fragments.
+
+**Retained conditions / 保留条件:** 保留局部左右单位及同一关联语言；不需要经典有限分支恢复。 / Retain local left/right units and the same incidence language; classical finite-branch recovery is not required.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean)
 
 ## wisdom-root ← practical-judgment-g0-j
 

@@ -1,0 +1,37 @@
+'RenewingFormation.Conditions' does not depend on any axioms
+'RenewingFormation.WearLaw' does not depend on any axioms
+'RenewingFormation.formedAt' does not depend on any axioms
+'RenewingFormation.next' does not depend on any axioms
+'RenewingFormation.path' does not depend on any axioms
+'RenewingFormation.formed' does not depend on any axioms
+'RenewingFormation.cumulative' does not depend on any axioms
+'RenewingFormation.Ceaseless' does not depend on any axioms
+'RenewingFormation.WithinRenewal' does not depend on any axioms
+'RenewingFormation.BeyondRenewal' does not depend on any axioms
+'RenewingFormation.tri' does not depend on any axioms
+'RenewingFormation.tri_mono' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.tri_zero_iff' depends on axioms: [propext]
+'RenewingFormation.tri_wear' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.budget' does not depend on any axioms
+'RenewingFormation.renewal_never_grows' does not depend on any axioms
+'RenewingFormation.within_renewal_invariant' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.within_renewal_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.within_renewal_grows' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_step' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_renewal_invariant' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_renewal_bounded' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.beyond_renewal_budget_falls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_renewal_ceases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.beyond_renewal_not_ceaseless' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.shared_formation_ceases' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RenewingFormation.without_consuming_part_ceaseless' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.consuming_part_ends_otherwise_ceaseless_formation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'RenewingFormation.sustained_cumulative' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.sustained_eventually_exceeds_every_consuming' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.consuming_forms_more_first' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.unitWear' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.eventInventory' does not depend on any axioms
+'RenewingFormation.event_reading_favors_both' depends on axioms: [propext, Quot.sound]
+'RenewingFormation.whole_direction_separates' depends on axioms: [propext, Classical.choice, Quot.sound]

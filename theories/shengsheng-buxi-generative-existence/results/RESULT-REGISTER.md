@@ -8,53 +8,95 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-42 migrated records: 40 scoped results/arguments/assessments and 2 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+84 migrated records: 80 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
 | ID | Claim / 主张 | Kind | Recorded status |
 |---|---|---|---|
 | `acquired-binding-compositional-use` | [取得的绑定接通组合使用 / Acquired bindings enter compositional use](records/acquired-binding-compositional-use.md) | theorem | recorded-checked |
+| `acquired-revision-of-pending-task` | [取得的目的修订进入在途任务 / Acquired goal revision enters a pending task](records/acquired-revision-of-pending-task.md) | theorem | recorded-checked |
 | `aggregate-exit-funding` | [可加退出承担的共同资金界 / Joint funding of additive exit obligations](records/aggregate-exit-funding.md) | theorem | recorded-checked |
 | `alignment-direction-g0-j` | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](records/alignment-direction-g0-j.md) | argument | reviewed-scoped |
 | `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
+| `becoming-context-coherence` | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](records/becoming-context-coherence.md) | theorem | recorded-checked |
+| `binding-preserving-substitution` | [保留绑定的代入及精确位置判据 / Binding-preserving substitution and its exact position criterion](records/binding-preserving-substitution.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
 | `classification-robust-generative-comparison` | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](records/classification-robust-generative-comparison.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |
+| `constitutive-binding-assessment` | [绑定的构成性说明及无前提推广的限度 / Constitutive binding and the limits of presuppositionless promotion](records/constitutive-binding-assessment.md) | assessment | reviewed-scoped |
+| `context-sensitive-updating-correspondence` | [情境选择性更新的公开数据对应 / Public-data correspondence for context-sensitive updating](records/context-sensitive-updating-correspondence.md) | assessment | reviewed-scoped |
+| `control-coherence-loss` | [控制响应丧失与保留共同关系的恢复 / Control-response loss and recovery through retained joint relations](records/control-coherence-loss.md) | theorem | recorded-checked |
 | `derivation-soundness` | [带前提的推导健全性 / Premise-tracked derivation soundness](records/derivation-soundness.md) | theorem | recorded-checked |
+| `derived-history-law-exactness` | [由历史摘要构造局部规律的精确条件 / Exactness of a local law derived from history summaries](records/derived-history-law-exactness.md) | theorem | recorded-checked |
+| `effective-capacity-and-eventual-reachability` | [共同实现的准备步骤界与实际变化 / Preparation bounds and actual changes in joint realization](records/effective-capacity-and-eventual-reachability.md) | theorem | recorded-checked |
 | `enacted-scene-binding` | [行动形成可供绑定的场景 / Action forms scenes available for binding](records/enacted-scene-binding.md) | theorem | recorded-checked |
+| `encounter-control-and-retention` | [经历控制与保留使用的经验范围 / Empirical scope of encounter control and retained use](records/encounter-control-and-retention.md) | assessment | reviewed-scoped |
 | `encounter-selection-and-revision` | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](records/encounter-selection-and-revision.md) | theorem | recorded-checked |
+| `endpoint-loss-and-return` | [端点可能性丧失与返回 / Endpoint opportunity loss and return](records/endpoint-loss-and-return.md) | theorem | recorded-checked |
 | `exclusive-footprint-support` | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](records/exclusive-footprint-support.md) | theorem | recorded-checked |
 | `fallible-witness-diagnosability` | [可失实见证的完整辨别条件 / Complete diagnosability with fallible witnesses](records/fallible-witness-diagnosability.md) | theorem | recorded-checked |
 | `finite-basis-common-interpretation` | [有限根基的共同解释 / Common interpretation of a finite basis](records/finite-basis-common-interpretation.md) | theorem | recorded-checked |
 | `finite-continuation-plans` | [有限接续充分性与分支方案 / Finite continuation adequacy and branching plans](records/finite-continuation-plans.md) | theorem | recorded-checked |
+| `finite-fallible-inquiry-necessity` | [可错科学辨别的必要信息条件 / Necessary information conditions for fallible scientific discrimination](records/finite-fallible-inquiry-necessity.md) | theorem | recorded-checked |
+| `finite-granularity-question-recovery` | [有限操作粒度的问答翻译与历史恢复 / Question translation and history recovery across finite operation scales](records/finite-granularity-question-recovery.md) | theorem | recorded-checked |
 | `finite-joining-tree-lifting` | [有限接合树从指定片段提升 / Finite joining trees lift from specified fragments](records/finite-joining-tree-lifting.md) | theorem | recorded-checked |
 | `finite-trace-transport` | [保步映射传递有限历史 / Step-preserving maps transport finite traces](records/finite-trace-transport.md) | theorem | recorded-checked |
+| `formed-goal-revision-continuation` | [取得根据的目的修订与实际接续 / Acquired grounds, goal revision and actual continuation](records/formed-goal-revision-continuation.md) | theorem | recorded-checked |
+| `formed-software-continuation` | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](records/formed-software-continuation.md) | assessment | reviewed-scoped |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
 | `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
+| `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
+| `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
+| `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |
+| `inherited-structural-copying` | [继承排列改变进一步复制 / Inherited arrangement changes further copying](records/inherited-structural-copying.md) | theorem | recorded-checked |
+| `joining-open-map-factor` | [开放接合映射的保真与唯一共同因子 / Question fidelity and unique factors of open joining maps](records/joining-open-map-factor.md) | theorem | recorded-checked |
 | `joining-questions-survive-encoding` | [接合检验随同一编码保真 / Joining questions remain exact under the same encoding](records/joining-questions-survive-encoding.md) | theorem | recorded-checked |
 | `joint-code-plan-lifting` | [提升有限嵌套共同方案 / Lifting finite nested joint plans](records/joint-code-plan-lifting.md) | theorem | recorded-checked |
+| `joint-correlation-reduced-dynamics` | [局部状态不变的关系转化与充分约化 / Relational transformation with unchanged local states and a sufficient reduction](records/joint-correlation-reduced-dynamics.md) | theorem | recorded-checked |
 | `joint-decomposition-lifting` | [从整体代码提升共同分解 / Lifting a joint decomposition from a whole code](records/joint-decomposition-lifting.md) | theorem | recorded-checked |
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
+| `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
+| `market-finite-support-obstruction` | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](records/market-finite-support-obstruction.md) | theorem | recorded-checked |
+| `market-partial-correction-boundary` | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](records/market-partial-correction-boundary.md) | theorem | recorded-checked |
 | `market-protected-continuation` | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](records/market-protected-continuation.md) | theorem | recorded-checked |
 | `market-supported-finite-transition` | [有支持的有限纠正与保护交接 / Supported finite correction and protective handoff](records/market-supported-finite-transition.md) | theorem | recorded-checked |
 | `material-preparation-output` | [材料准备的实际输出 / Actual material preparation output](records/material-preparation-output.md) | theorem | recorded-checked |
+| `mediated-evidence-transport` | [实际指令接续候选证据 / Executed instructions transport candidate evidence](records/mediated-evidence-transport.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
+| `naming-attention-coverage` | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](records/naming-attention-coverage.md) | assessment | reviewed-scoped |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
 | `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
+| `organizational-rule-inheritance` | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](records/organizational-rule-inheritance.md) | theorem | recorded-checked |
+| `pending-task-context-applicability` | [在途任务的适用条件与有支持接续 / Pending-task applicability and supported continuation](records/pending-task-context-applicability.md) | theorem | recorded-checked |
+| `positioned-positive-reason` | [面向每个相应位置的正面理由 / Positive reasons addressed to every situated position](records/positioned-positive-reason.md) | theorem | recorded-checked |
 | `positive-ground-open-futures` | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](records/positive-ground-open-futures.md) | theorem | recorded-checked |
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
+| `prefix-observation-loss` | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](records/prefix-observation-loss.md) | theorem | recorded-checked |
+| `protection-priority-excludes-uniform-aggregation` | [基本条件优先排除均匀聚合 / Basic-condition priority excludes uniform aggregation](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
+| `recoverable-mediated-change` | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](records/recoverable-mediated-change.md) | theorem | recorded-checked |
 | `recurrent-chain-assembly` | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](records/recurrent-chain-assembly.md) | theorem | recorded-checked |
 | `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |
+| `relational-renewal-classification` | [参与关系中的更新与消耗：关系性分类 / Renewing and consuming as a relation to participated conditions](records/relational-renewal-classification.md) | theorem | recorded-checked |
+| `renewing-consuming-formation` | [更新与消耗的形成：生生不息的动力学区分 / Renewing and consuming formation: the dynamics that separate ceaseless generation](records/renewing-consuming-formation.md) | theorem | recorded-checked |
+| `reserved-shutdown-during-recovery` | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](records/reserved-shutdown-during-recovery.md) | theorem | recorded-checked |
+| `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
+| `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |
+| `retrospective-source-binding` | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](records/retrospective-source-binding.md) | theorem | recorded-checked |
 | `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
+| `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
+| `self-good-reachable-g0` | [自我之善经一元关系推出可及范围的 G0 / Self-good grounds G0 over reachable generation in the monist ontology](records/self-good-reachable-g0.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
+| `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
+| `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
+| `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |
 
 ## 先查哪一项 Where to look first

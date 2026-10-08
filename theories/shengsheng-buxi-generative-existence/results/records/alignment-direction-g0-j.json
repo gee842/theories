@@ -50,7 +50,22 @@
       }
     }
   ],
-  "related": [],
+  "related": [
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "zh": "把 §3 中“J2 不由 G0 推出、代价是拒绝某些聚合补偿”变为检查过的命题；本论证不变。",
+        "en": "Turns §3's statement that J2 is not implied by G0 and rejects some aggregate compensation into a checked claim; this argument is unchanged."
+      }
+    },
+    {
+      "id": "renewing-consuming-formation",
+      "detail": {
+        "zh": "对齐上的警示：按局部生成计数优化可能偏好消耗型接续；整体方向的读法不会。",
+        "en": "Alignment caution: optimizing local generative counts may prefer consuming continuations; the whole-direction reading does not."
+      }
+    }
+  ],
   "counterexamples": [
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
@@ -139,6 +154,10 @@
     {
       "en": "2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.",
       "zh": "2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。"
+    },
+    {
+      "zh": "2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用两项新的区分性结果；本论证与范围不变。",
+      "en": "2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites two new discriminating results; this argument and its scope are unchanged."
     }
   ],
   "overview": {
@@ -151,8 +170,8 @@
       "zh": "核心、公开的 J1–J4 实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。"
     },
     "evidence": {
-      "en": "Completed direction argument with independent review; 9 additional Lean theorems and 16 declaration audits, independently recompiled. Normative applicability across intelligences does not predict universal compliance or certify deployment reliability.",
-      "zh": "已完成并经独立审查的方向论证；9项新增 Lean 定理及16项声明审计，经独立重编译。跨智能规范适用不预测必然遵循，也不认证部署可靠性。"
+      "zh": "已完成并经独立审查的哲学论证，含一个说明哪些变化会改变判断的 AI 案例。Lean 检查案例中的判断确由所述 G0 与 J1–J4 推出，交叉基本损失不排序（经独立重编译）。另行检查表明：J2 不由 G0 推出；按局部生成计数优化，可能偏好起初形成更多、随后终止共享形成的接续。前提是否正确、部署系统是否认可或遵循，是另外的问题。",
+      "en": "A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from G0 and J1–J4 as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that J2 does not follow from G0, and that optimizing local generative counts can prefer continuations that form more at first and later end shared formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions."
     }
   }
 }

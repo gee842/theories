@@ -1,0 +1,18 @@
+import ProtectionPriorityRival
+#print axioms ProtectionPriorityRival.Claim
+#print axioms ProtectionPriorityRival.realized
+#print axioms ProtectionPriorityRival.generative
+#print axioms ProtectionPriorityRival.inventory
+#print axioms ProtectionPriorityRival.protect
+#print axioms ProtectionPriorityRival.gain
+#print axioms ProtectionPriorityRival.extension_shape
+#print axioms ProtectionPriorityRival.successor_extends
+#print axioms ProtectionPriorityRival.g0_recognizes_traded_gains
+#print axioms ProtectionPriorityRival.priority_satisfies_comparison
+#print axioms ProtectionPriorityRival.priority_never_trades
+#print axioms ProtectionPriorityRival.weighted
+#print axioms ProtectionPriorityRival.weighted_satisfies_comparison
+#print axioms ProtectionPriorityRival.weighted_trades
+#print axioms ProtectionPriorityRival.comparison_does_not_yield_priority
+#print axioms ProtectionPriorityRival.every_scalar_comparison_trades
+#print axioms ProtectionPriorityRival.no_scalar_represents_priority
