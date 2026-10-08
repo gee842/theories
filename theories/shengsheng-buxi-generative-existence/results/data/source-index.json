@@ -695,6 +695,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluativeExtension.lean",
@@ -7916,6 +7917,8 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_correction_inquiry.py",
         "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
         "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-BECOMING.md"
       ]
@@ -11352,6 +11355,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py",
         "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean",
         "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
         "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
         "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",

@@ -4,9 +4,11 @@ Recomputes the census criterion of BECOMING-UNIFICATION-PLAN.md §1, requires th
 table below to classify exactly the modules it selects, and checks each row's
 claim mechanically: a bridged interface names declarations of a checked spine
 module and is imported by the spine; a core module imports GenerativeCore; a
-Mathlib leaf imports Mathlib; every other module stays on the Std toolchain.
+Mathlib leaf imports Mathlib, and its named declarations lie in the peripheral
+bridge, which imports it; every other module stays on the Std toolchain.
 Writes BECOMING-INSTANCE-CHECKS.json and BECOMING-INSTANCE-CLASSIFICATION.md.
-No Lean is compiled here; the spine receipt supplies the kernel check.
+No Lean is compiled here; the spine receipt and the peripheral bridge's receipt
+supply the kernel check.
 """
 from datetime import datetime, timezone
 import hashlib
@@ -22,6 +24,8 @@ ROOT = HERE.parents[3]
 LEAN = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean"
 ETHICS = LEAN / "universal-ethics"
 SPINE_DIR = LEAN / "becoming"
+# The peripheral bridge for Mathlib leaves: Lean 4.30.0-rc2, outside the core.
+PERIPHERY = ("CorrectionInquiry", ETHICS / "generative-capacity/correction-inquiry-verification.json")
 spec = importlib.util.spec_from_file_location("check_becoming", SPINE_DIR / "check_becoming.py")
 becoming = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(becoming)
@@ -39,8 +43,10 @@ CATEGORIES = {
     "renewal": ("运行上的更新界（P3b）", "Renewal bounds on runs (P3b)",
                 "定理对状态序列 `Nat → S` 多态，运行的 `state` 直接代入；其自然数秩的更新或完成界是 "
                 "`falls_finitely` 的情形。`ContinuationRenewal` 的良基形式比自然数秩更一般，不由该原则导出。"),
-    "mathlib": ("Mathlib 叶子（P5）", "Mathlib leaves (P5)",
-                "依赖 Mathlib，与 Std 工具链分开；不进入脊柱回执。"),
+    "mathlib": ("Mathlib 叶子（P5c）", "Mathlib leaves (P5c)",
+                "依赖 Mathlib，用 4.30.0-rc2 检查，不进入核心。外围桥接 `CorrectionInquiry` 导入核心与两个叶子："
+                "在每个观察值的格上，纠正与安全选择就是核心判断过程的共同回应，细化观察就是收窄信念"
+                "（`commonResponse_antitone`）。其余是具体模型或关系代数，核心没有对应的接口。"),
     "model": ("具体模型", "Concrete models",
               "具体反例、可执行规划器或证据模型。多态引理服务于这些模型（列表、过滤、可执行计算），不是需要在脊柱上实例化的接口；"
               "两个探究模块是探究层的确定、可计算特例。"),
@@ -100,11 +106,16 @@ TABLE = {
     "FallibleInspection": ("model", [], ""),
     "ReformEvidence": ("model", [], ""),
     "WisdomGoalGrounds": ("model", [], ""),
-    "CorrectionBoundary": ("mathlib", [], ""),
-    "CorrectionParent": ("mathlib", [], ""),
-    "CorrectionRelations": ("mathlib", [], ""),
-    "ObservationRepair": ("mathlib", [], ""),
-    "ObservationChange": ("mathlib", [], ""),
+    "CorrectionBoundary": ("mathlib", ["Becoming.implements_iff_commonResponse",
+                                       "Becoming.commonAction_iff_commonResponse",
+                                       "Becoming.implements_refine"],
+                           "实施即每个格上的共同回应；`refine_observation` 由核心导出"),
+    "ObservationChange": ("mathlib", ["Becoming.safeOn_iff_commonResponse", "Becoming.safeOn_refine"],
+                          "`SafeOn` 即显示该值的世界上的共同回应；细化保持安全选择由核心导出"),
+    "CorrectionInquiry": ("mathlib", [], "外围桥接本身"),
+    "CorrectionParent": ("mathlib", [], "具体的父子纠正模型；多态引理只组合已给的可行命令"),
+    "CorrectionRelations": ("mathlib", [], "关系边界的代数（`Boundary`、`Couple`）；核心不陈述异类关系的合成"),
+    "ObservationRepair": ("mathlib", [], "具体的实数评分模型"),
 }
 
 THEOREM = re.compile(r"^(?:theorem|lemma)\s+\S+(.*?):=", re.M | re.S)
@@ -169,6 +180,15 @@ def main():
     for name in receipt["spine_modules"]:
         spine_closure |= import_closure(index, name)[0]
 
+    bridge, periphery_path = PERIPHERY
+    periphery = json.loads(periphery_path.read_text())
+    periphery_source = index[bridge][0].read_text()
+    if periphery["status"] != "passed":
+        errors.append({"periphery_receipt": "not passed"})
+    if hashlib.sha256(periphery_source.encode()).hexdigest() != periphery["source_sha256"][bridge]:
+        errors.append({"periphery_receipt_stale": bridge})
+    periphery_closure = import_closure(index, bridge)[0]
+
     for module, (category, connections, note) in TABLE.items():
         if module not in rows:
             continue
@@ -177,13 +197,16 @@ def main():
         row = rows[module]
         row.update(category=category, connections=[], note=note,
                    imports_core="GenerativeCore" in local, imports_mathlib=bool(mathlib))
+        sources = {bridge: periphery_source} if category == "mathlib" else spine_sources
         for name in connections:
-            found = declared(name, spine_sources)
+            found = declared(name, sources)
             row["connections"].append({"declaration": name, "spine_modules": found})
             if not found:
                 errors.append({"undeclared_connection": [module, name]})
         if category == "bridge" and module not in spine_closure:
             errors.append({"bridge_not_imported_by_spine": module})
+        if category == "mathlib" and connections and module not in periphery_closure:
+            errors.append({"leaf_not_imported_by_periphery": module})
         if category == "core" and not row["imports_core"]:
             errors.append({"core_without_GenerativeCore": module})
         if (category == "mathlib") != row["imports_mathlib"]:
@@ -204,9 +227,11 @@ def main():
                    "theorems": sum(r["theorems"] for r in rows.values())},
         "totals": totals,
         "spine_receipt": {"path": rel(receipt_path), "sha256": sha(receipt_path), "utc": receipt["utc"]},
+        "periphery_receipt": {"path": rel(periphery_path), "sha256": sha(periphery_path), "utc": periphery["utc"]},
         "checker_sha256": sha(Path(__file__)),
         "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named "
-                 "declaration is supplied by the spine receipt; the inherited modules are not recompiled.",
+                 "declaration is supplied by the spine receipt or, for Mathlib leaves, by the peripheral "
+                 "bridge's receipt; the inherited modules are not recompiled.",
         "modules": rows,
         "errors": errors,
     }
@@ -231,11 +256,14 @@ def page(result):
         "通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，"
         f"它们的定理便直接作用于同一展开。具名声明在 [Becoming.Bridge]({spine}/Becoming/Bridge.lean)、"
         f"[Becoming.Renewal]({spine}/Becoming/Renewal.lean) 或 [Becoming.Metaethics]({spine}/Becoming/Metaethics.lean) 中，"
-        "由脊柱回执逐条检查，公理报告为空。",
+        "由脊柱回执逐条检查，公理报告为空。Mathlib 叶子的具名声明在外围桥接 "
+        "[CorrectionInquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) "
+        "中，由它自己的回执（Lean 4.30.0-rc2）检查，公理报告同样为空。",
         "",
         "Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their "
         "interfaces or proves their combinators equal to its own, so their theorems apply to one unfolding. "
-        "Each named declaration is kernel-checked with an empty axiom report by the spine receipt.",
+        "Each named declaration is kernel-checked with an empty axiom report by the spine receipt, or, for "
+        "Mathlib leaves, by the receipt of the peripheral bridge CorrectionInquiry.",
         "",
         "**方向约定。** `GenerativeComparison` 中 `Better first second` 表示后者更好；`PracticalJudgment` 与 "
         "`LiftBetter` 中 `better x y` 表示前者更好。桥接定理保留各自的约定。",
@@ -258,9 +286,9 @@ def page(result):
             lines.append(f"| [{module}](../../../../{row['path']}) | {row['theorems']}（{row['polymorphic_theorems']}） "
                          f"| {declarations or '—'} | {row['note'] or '—'} |")
     lines += ["", "## 范围 / Scope", "",
-              "分类与逐行机械检查。被继承模块不在此重新编译；具名声明的内核检查由脊柱回执提供。"
+              "分类与逐行机械检查。被继承模块不在此重新编译；具名声明的内核检查由脊柱回执或外围桥接的回执提供。"
               "第三类定理的前提（历史类型的含义、外给关系的规范根据）仍由使用者提供，取配置为历史并不证明这些前提。"
-              "第五、六类未桥接是有意的：Mathlib 叶子留待 P5；具体模型没有需要实例化的接口。", ""]
+              "未桥接的 Mathlib 叶子与具体模型是有意的：它们没有核心上的接口需要实例化。", ""]
     return "\n".join(lines)
 
 

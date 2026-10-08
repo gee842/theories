@@ -2,9 +2,9 @@
 
 由 [BECOMING-INSTANCE-CHECK.py](BECOMING-INSTANCE-CHECK.py) 生成，勿手改；检查结果见 [BECOMING-INSTANCE-CHECKS.json](BECOMING-INSTANCE-CHECKS.json)。这是[统一计划](BECOMING-UNIFICATION-PLAN.md) P3 的分类表。
 
-按计划第 1 节的判据，伦理族中含类型多态定理的模块共 45 个（10,790 行、758 条定理）。通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，它们的定理便直接作用于同一展开。具名声明在 [Becoming.Bridge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)、[Becoming.Renewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) 或 [Becoming.Metaethics](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) 中，由脊柱回执逐条检查，公理报告为空。
+按计划第 1 节的判据，伦理族中含类型多态定理的模块共 46 个（10,895 行、765 条定理）。通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，它们的定理便直接作用于同一展开。具名声明在 [Becoming.Bridge](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)、[Becoming.Renewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) 或 [Becoming.Metaethics](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) 中，由脊柱回执逐条检查，公理报告为空。Mathlib 叶子的具名声明在外围桥接 [CorrectionInquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 中，由它自己的回执（Lean 4.30.0-rc2）检查，公理报告同样为空。
 
-Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their interfaces or proves their combinators equal to its own, so their theorems apply to one unfolding. Each named declaration is kernel-checked with an empty axiom report by the spine receipt.
+Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their interfaces or proves their combinators equal to its own, so their theorems apply to one unfolding. Each named declaration is kernel-checked with an empty axiom report by the spine receipt, or, for Mathlib leaves, by the receipt of the peripheral bridge CorrectionInquiry.
 
 **方向约定。** `GenerativeComparison` 中 `Better first second` 表示后者更好；`PracticalJudgment` 与 `LiftBetter` 中 `better x y` 表示前者更好。桥接定理保留各自的约定。
 
@@ -16,7 +16,7 @@ Generated; do not edit. The polymorphic ethics modules are not copied: the spine
 | 已在核心上 / Already on the core | 8 | 2,456 | 130 |
 | 对历史类型多态 / Polymorphic over histories | 10 | 2,109 | 138 |
 | 运行上的更新界（P3b） / Renewal bounds on runs (P3b) | 2 | 382 | 27 |
-| Mathlib 叶子（P5） / Mathlib leaves (P5) | 5 | 1,235 | 133 |
+| Mathlib 叶子（P5c） / Mathlib leaves (P5c) | 6 | 1,340 | 140 |
 | 具体模型 / Concrete models | 9 | 1,634 | 131 |
 
 ## 接口实例或等价定理 / Interface instantiated or proved equal
@@ -78,17 +78,18 @@ Generated; do not edit. The polymorphic ethics modules are not copied: the spine
 | [ContinuationRenewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean) | 17（5） | `falls_finitely`，`Run.renewal_recurs` | 无更新尾部与任意晚的更新 |
 | [OpenFutureRevision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) | 10（3） | `falls_finitely` | 交接的剩余步数证书；完成界来自 ContinuationRenewal |
 
-## Mathlib 叶子（P5） / Mathlib leaves (P5)
+## Mathlib 叶子（P5c） / Mathlib leaves (P5c)
 
-依赖 Mathlib，与 Std 工具链分开；不进入脊柱回执。
+依赖 Mathlib，用 4.30.0-rc2 检查，不进入核心。外围桥接 `CorrectionInquiry` 导入核心与两个叶子：在每个观察值的格上，纠正与安全选择就是核心判断过程的共同回应，细化观察就是收窄信念（`commonResponse_antitone`）。其余是具体模型或关系代数，核心没有对应的接口。
 
 | 模块 | 定理（多态） | 脊柱声明 | 说明 |
 |---|---:|---|---|
-| [CorrectionBoundary](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean) | 19（4） | — | — |
-| [CorrectionParent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean) | 16（1） | — | — |
-| [CorrectionRelations](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean) | 39（9） | — | — |
-| [ObservationChange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean) | 28（3） | — | — |
-| [ObservationRepair](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean) | 31（4） | — | — |
+| [CorrectionBoundary](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean) | 19（4） | `implements_iff_commonResponse`，`commonAction_iff_commonResponse`，`implements_refine` | 实施即每个格上的共同回应；`refine_observation` 由核心导出 |
+| [CorrectionInquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) | 7（4） | — | 外围桥接本身 |
+| [CorrectionParent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean) | 16（1） | — | 具体的父子纠正模型；多态引理只组合已给的可行命令 |
+| [CorrectionRelations](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean) | 39（9） | — | 关系边界的代数（`Boundary`、`Couple`）；核心不陈述异类关系的合成 |
+| [ObservationChange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean) | 28（3） | `safeOn_iff_commonResponse`，`safeOn_refine` | `SafeOn` 即显示该值的世界上的共同回应；细化保持安全选择由核心导出 |
+| [ObservationRepair](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean) | 31（4） | — | 具体的实数评分模型 |
 
 ## 具体模型 / Concrete models
 
@@ -108,4 +109,4 @@ Generated; do not edit. The polymorphic ethics modules are not copied: the spine
 
 ## 范围 / Scope
 
-分类与逐行机械检查。被继承模块不在此重新编译；具名声明的内核检查由脊柱回执提供。第三类定理的前提（历史类型的含义、外给关系的规范根据）仍由使用者提供，取配置为历史并不证明这些前提。第五、六类未桥接是有意的：Mathlib 叶子留待 P5；具体模型没有需要实例化的接口。
+分类与逐行机械检查。被继承模块不在此重新编译；具名声明的内核检查由脊柱回执或外围桥接的回执提供。第三类定理的前提（历史类型的含义、外给关系的规范根据）仍由使用者提供，取配置为历史并不证明这些前提。未桥接的 Mathlib 叶子与具体模型是有意的：它们没有核心上的接口需要实例化。

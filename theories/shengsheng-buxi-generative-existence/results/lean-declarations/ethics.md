@@ -3124,6 +3124,33 @@ Imports: `Std`
 
 </details>
 
+<a id="module-3f189efe678b"></a>
+
+<details>
+<summary>CorrectionInquiry.lean — 8 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) · [理论 / Theory](../../unified-2026-10-05/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean`
+
+Imports: `Becoming`, `CorrectionBoundary`, `ObservationChange`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.cell_refines](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L35) | 35 |
+| [Becoming.sees_antitone](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L42) | 42 |
+| [Becoming.implements_iff_commonResponse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L52) | 52 |
+| [Becoming.commonAction_iff_commonResponse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L61) | 61 |
+| [Becoming.implements_refine](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L71) | 71 |
+| [Becoming.safeOn_iff_commonResponse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L87) | 87 |
+| [Becoming.safeOn_refine](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L95) | 95 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.cell](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean#L30) (L30)
+
+</details>
+
 <a id="module-5b8cfb23b422"></a>
 
 <details>

@@ -8,7 +8,7 @@
 
 | 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |
 |---|---:|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 132 | 2,231 |
+| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 133 | 2,238 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,837 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 141 | 1,982 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 141 | 1,983 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -135,6 +135,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [CorrectionDependence.lean](lean-declarations/other.md#module-a012353738fe) | 其他形式研究 / Other formal studies |
 | [CorrectionHandoff.lean](lean-declarations/ethics.md#module-f4b3ebe0c538) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [CorrectionInfrastructure.lean](lean-declarations/ethics.md#module-15398df58657) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [CorrectionInquiry.lean](lean-declarations/ethics.md#module-3f189efe678b) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [CorrectionParent.lean](lean-declarations/ethics.md#module-5b8cfb23b422) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [CorrectionPopulation.lean](lean-declarations/ethics.md#module-f166c416f0d3) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [CorrectionRace.lean](lean-declarations/ethics.md#module-c849cace5619) | 规范根据与生成方向 / Normative grounding and generative direction |

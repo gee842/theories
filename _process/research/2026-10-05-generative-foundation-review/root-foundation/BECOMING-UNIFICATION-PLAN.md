@@ -136,7 +136,7 @@ Lean 中 L1–L4 是包 `Becoming` 的四个模块 `Becoming.Frame`、`Becoming.
 | P4b 工作规则 ✓ | AGENTS.md 增一条：新的形式结果陈述在脊柱上；脊柱表达不了时扩展脊柱，而不是另建模型 | 已完成：规则在 AGENTS.md「Evidence and preservation」首条，链接正典章节 §9 与脊柱目录 |
 | P5a 核心纯净 ✓ | 按 [Ren 的要求](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)：核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的模块，公理报告全空，只用 Lean 内置前导即可编译。G0、C、D 与确保的正面根据在核心陈述；桥接层以 `Iff.rfl` 证明既有模块的定义即核心定义；J1/J2 的 `BetterAt` 与 `living_iff_relational` 移到桥接层 | 已完成：检查器每次核对闭包、空公理报告与仅用前导编译；80 项定理／146 项声明审计 |
 | P5b 包结构 ✓ | 核心改为 Lean 包 `Becoming`，按所述之事命名：`BecomingFrame` → `Becoming.Frame`，`BecomingModal` → `Becoming.Inquiry`（它讲探究的所见范围，不是模态逻辑），`BecomingRenewal` → `Becoming.Renewal`，`MetaethicalCore` → `Becoming.Metaethics`，`BecomingInstances` → `Becoming.Bridge`；根模块 `Becoming` 导入四层。声明名不变，记录别名照旧有效；上面各行保留当时的模块名 | 已完成：检查器按包路径命名模块并核对闭包；记录、章节与链接改到新路径；包说明给出读者入口与新旧名对照 |
-| P5c Mathlib 叶子 | 不建 Lake 工作区：Mathlib 已安装（既有检查器经 `SYSTEMS_MATHLIB_PROJECT` 使用 `~/repos/生生不息`），沿用 Python 检查器。外围桥接模块导入脊柱与 5 个 Mathlib 叶子，证明其接口是脊柱的实例，用 4.30.0-rc2 编译；核心不导入它 | 待做 |
+| P5c Mathlib 叶子 ✓ | 不建 Lake 工作区：Mathlib 已安装（既有检查器经 `SYSTEMS_MATHLIB_PROJECT` 使用 `~/repos/生生不息`），沿用 Python 检查器。外围桥接模块导入核心与 Mathlib 叶子，证明其接口是核心的实例，用 4.30.0-rc2 编译；核心不导入它 | 已完成：核心增“判断即一步探究”（`judgeProcess` 由桥接层移入 `Becoming.Inquiry`，`commonResponse_judge_iff`），核心 81 项定理／147 项声明审计。外围桥接 `CorrectionInquiry`（7 项定理，公理报告全空）证明 `CorrectionBoundary` 的实施与共同行动、`ObservationChange` 的安全选择都是每个观察格上的共同回应，两模块的细化定理由 `commonResponse_antitone` 导出；核心在 4.30.0-rc2 下同样编译通过。其余三个叶子是具体模型或关系代数，核心没有对应接口，分类表写明理由 |
 
 ## 6. 决定（2026-10-09 定下）
 

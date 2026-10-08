@@ -10,7 +10,7 @@ One relational unfolding, stated once. This directory is the Lean package `Becom
 |---|---|---|
 | 核心 / Core | 基础 `GenerativeCore`、`InquirySufficiency`、`RelationalRenewal`，加包内四层 | 只导入自身；每条声明公理报告为空；只用 Lean 内置前导即可编译 |
 | 桥接 / Bridge | [`Becoming.Bridge`](Becoming/Bridge.lean) | 导入既有模块，证明它们的接口就是核心的概念；公理报告为空；核心不导入它 |
-| 外围 / Periphery | 既有伦理与动力学模块、Mathlib 叶子、Python 实验 | 可用任何合适的工具；依存方向指向核心 |
+| 外围 / Periphery | 既有伦理与动力学模块、Mathlib 叶子及其桥接 [`CorrectionInquiry`](../universal-ethics/generative-capacity/CorrectionInquiry.lean)、Python 实验 | 可用任何合适的工具；依存方向指向核心 |
 
 Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md). The checker enforces all three conditions on every run.
 
@@ -22,7 +22,7 @@ Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-con
 |---|---|---|
 | L0 | `GenerativeCore`（基础 / foundation） | 过程、轨迹及其组合与传递 / processes, traces, composition and transport |
 | L1 | [`Becoming.Frame`](Becoming/Frame.lean) | 框架：过程加上每个配置实现的主张；运行、可达、不变量、新实现 / a frame is a process with realized claims; runs, reach, invariants, novel realization |
-| L2 | [`Becoming.Inquiry`](Becoming/Inquiry.lean) | 探究的所见范围由实际执行给出；可靠策略在其上确保目标 / an inquiry's visible scope is what its actual executions reach; a sound policy secures its goal there |
+| L2 | [`Becoming.Inquiry`](Becoming/Inquiry.lean) | 探究的所见范围由实际执行给出，可靠策略在其上确保目标；判断即一步探究 / an inquiry's visible scope is what its actual executions reach, where a sound policy secures its goal; a judgment is a one-step inquiry |
 | L3 | [`Becoming.Renewal`](Becoming/Renewal.lean) | 经条件读出的运行是一个关系展开；更新与消耗属于运行 / a run read through conditions is one relational unfolding; renewal and consumption belong to the run |
 | L4 | [`Becoming.Metaethics`](Becoming/Metaethics.lean) | 普遍元伦理核心：前提卡、G0 刻画、极小性、普遍理由、C 与 L / the Universal Metaethical Core: premise card, G0's characterization, minimality, the universal reason, C and L |
 
@@ -44,7 +44,7 @@ The checker resolves the import closure, requires inherited modules to match pas
 
 - 新的形式结果陈述在这里。核心表达不了时扩展核心，不另建模型。 / State new formal results here; extend the core rather than build another model.
 - 既有模块保持原范围，经 `Becoming.Bridge` 中的实例或等价定理连到核心。 / Existing modules keep their scope and connect through instance or equivalence theorems in `Becoming.Bridge`.
-- 需要 Mathlib 或其他库的结果放在外围，导入核心；核心永不导入它们。 / Results needing Mathlib or other libraries live in the periphery and import the core, never the reverse.
+- 需要 Mathlib 或其他库的结果放在外围，导入核心；核心永不导入它们。`CorrectionInquiry` 是这样的例子：它用 Lean 4.30.0-rc2 与 Mathlib 检查（[`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py)），核心在那里同样编译通过。 / Results needing Mathlib or other libraries live in the periphery and import the core, never the reverse. `CorrectionInquiry` is one, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too.
 
 ## 名称 / Names
 

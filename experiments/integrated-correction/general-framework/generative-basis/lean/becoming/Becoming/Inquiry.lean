@@ -7,13 +7,18 @@ import InquirySufficiency
 `InquirySufficiency` already supplies common responses, evidence narrowing (`After`),
 sound bounded policies and their actual executions over the core process. This
 module does not redefine them. It adds one notion that the ethics layer otherwise
-supplies as a free parameter: the scope a response is judged over.
+supplies as a free parameter, the scope a response is judged over, and shows that
+a static judgment needs no notion of its own.
 
 The scope of a policy from a belief is the set of configurations its actual
 executions reach from believed configurations. It is fixed by the process, the
 observations and the policy, not chosen after the conclusion. A sound policy secures
 its goal on every configuration of its scope, the scope is reached by actual paths,
 it is nonempty whenever the belief is inhabited, and it shrinks as belief narrows.
+A judgment under uncertainty, a response admissible at every configuration
+believed possible, is a one-step inquiry: judging takes an admissible response at
+the configuration under judgment and closes, and a common response of that process
+is exactly a response admissible at every believed configuration.
 Every declaration has an empty axiom report.
 -/
 
@@ -64,5 +69,27 @@ theorem commonResponse_antitone {safe : S → A → S → Prop} {goal : S → Pr
     (common : CommonResponse P safe goal response B r) :
     CommonResponse P safe goal response B' r :=
   fun s believed => common s (narrower s believed)
+
+/-! ## A judgment is a one-step inquiry -/
+
+/-- Judging: at a configuration under judgment, an admissible response closes the judgment. -/
+def judgeProcess {W : Type u} {H : Type v} (admissible : W → H → Prop) : Process (Option W) H where
+  step s a t := ∃ w, s = some w ∧ admissible w a ∧ t = none
+
+/-- Belief over the configurations under judgment. -/
+def sees {W : Type u} (B : W → Prop) : Option W → Prop :=
+  fun s => ∃ w, B w ∧ s = some w
+
+/-- A response is common to a judgment exactly when it is admissible at every
+believed configuration. -/
+theorem commonResponse_judge_iff {W : Type u} {H : Type v} {admissible : W → H → Prop}
+    {B : W → Prop} {a : H} :
+    CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
+        (fun a => [a]) (sees B) a ↔ ∀ w, B w → admissible w a :=
+  ⟨fun common w believed =>
+    match common (some w) ⟨w, believed, rfl⟩ with
+    | ⟨⟨_, _, same, held, _⟩, _⟩ => Option.some.inj same ▸ held,
+   fun all => fun
+    | _, ⟨w, believed, rfl⟩ => ⟨⟨none, w, rfl, all w believed, rfl⟩, fun _ _ => ⟨trivial, trivial⟩⟩⟩
 
 end Becoming

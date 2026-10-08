@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261008T213437.870960Z",
+  "utc": "20261008T214944.061715Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261008T213437.870960Z",
+  "retained_run": "becoming-checks/20261008T214944.061715Z",
   "spine_modules": [
     "Becoming.Frame",
     "Becoming.Inquiry",
@@ -86,7 +86,7 @@
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
     "Becoming.Frame": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "InquirySufficiency": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
-    "Becoming.Inquiry": "78d1b9501cb8ce2ff8dc457018993b05728ddaa60fde103307c688efa9d468c6",
+    "Becoming.Inquiry": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
     "RelationalRenewal": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
     "Becoming.Renewal": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
     "Becoming.Metaethics": "3fcd792e7167d26cbdec3cd1e3c0f1c1d2f66297a076d710ba6a2838f10a0d7a",
@@ -103,7 +103,7 @@
     "EvaluatorGrounding": "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b",
     "PracticalReach": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
     "CorrectionInfrastructure": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
-    "Becoming.Bridge": "c36dbffd73b75a4992acbc2767474c040d6ac716b4150393fa67456cff262375"
+    "Becoming.Bridge": "60e407d11d413e47f49a50f519b388ad2868646e00c0cdadf16135091b4ff977"
   },
   "checker_sha256": {
     "check_becoming.py": "27d99f666b69773781b3d6fdf60d13c9ddb301796ca00951a0d0b6b9bde76efb",
@@ -1116,7 +1116,7 @@
       "module": "Becoming.Inquiry",
       "spine": true,
       "layer": "core",
-      "theorems": 5,
+      "theorems": 6,
       "declarations": [
         {
           "kind": "def",
@@ -1141,6 +1141,18 @@
         {
           "kind": "theorem",
           "name": "Becoming.commonResponse_antitone"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.judgeProcess"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.sees"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.commonResponse_judge_iff"
         }
       ],
       "axiom_dependencies": {
@@ -1149,7 +1161,10 @@
         "Becoming.Scope.reached": [],
         "Becoming.Scope.nonempty": [],
         "Becoming.Scope.antitone": [],
-        "Becoming.commonResponse_antitone": []
+        "Becoming.commonResponse_antitone": [],
+        "Becoming.judgeProcess": [],
+        "Becoming.sees": [],
+        "Becoming.commonResponse_judge_iff": []
       },
       "kernel_checked": true
     },
@@ -4202,14 +4217,6 @@
           "name": "Becoming.commonResponse_is_robust"
         },
         {
-          "kind": "def",
-          "name": "Becoming.judgeProcess"
-        },
-        {
-          "kind": "def",
-          "name": "Becoming.sees"
-        },
-        {
           "kind": "theorem",
           "name": "Becoming.robust_iff_commonResponse"
         },
@@ -4367,8 +4374,6 @@
         "Becoming.Frame.map_preserves_bundles": [],
         "Becoming.Frame.lift_reflects_bundles": [],
         "Becoming.commonResponse_is_robust": [],
-        "Becoming.judgeProcess": [],
-        "Becoming.sees": [],
         "Becoming.robust_iff_commonResponse": [],
         "Becoming.guarantees_iff_completes": [],
         "Becoming.liveStep_iff_enabled": [],
@@ -4410,13 +4415,13 @@
     }
   ],
   "artifact_sha256": {
-    "Becoming.Bridge.lean": "c36dbffd73b75a4992acbc2767474c040d6ac716b4150393fa67456cff262375",
+    "Becoming.Bridge.lean": "60e407d11d413e47f49a50f519b388ad2868646e00c0cdadf16135091b4ff977",
     "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Frame.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Frame.lean": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "Becoming.Frame.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Inquiry.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Inquiry.lean": "78d1b9501cb8ce2ff8dc457018993b05728ddaa60fde103307c688efa9d468c6",
+    "Becoming.Inquiry.lean": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
     "Becoming.Inquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Metaethics.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Metaethics.lean": "3fcd792e7167d26cbdec3cd1e3c0f1c1d2f66297a076d710ba6a2838f10a0d7a",
@@ -4429,18 +4434,18 @@
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "BecomingBridgeAxiomAudit.lean": "3e2a4e5f0a68ae5f79786722ff63b9dbd53004f2e272700962883dd739ceb82e",
-    "BecomingBridgeAxiomAudit.log": "bb0ddc0031b934dc8f5f65781ceb506e5eebc1d9394100269b30f2fab9be67d5",
+    "BecomingBridgeAxiomAudit.lean": "8347adb84e427a97cebf6324badcd6024dd48069f4112d5e74e76c65d3924bbd",
+    "BecomingBridgeAxiomAudit.log": "8219422d236dae5cde55be0750e5abbbcba63eeeebfff4c995b5d6451f084ee1",
     "BecomingBridgeSignatures.lean": "eefc9adcd574cf2e933fa09552d59036c59c0bb8fe872256be21b895e111d367",
     "BecomingBridgeSignatures.log": "bcad0cc3ad160116d5b7d8de78a37b1415c56e5ea2e665d936fa16d2921f0ffd",
     "BecomingFrameAxiomAudit.lean": "91570657c287803a8d3c0c69fbabf1e3301c5239e1b910295cb25f40094b3c62",
     "BecomingFrameAxiomAudit.log": "51a187a2eec317dbf68771b0f3a146d3a9ab289cd96509f225b8c799d54bde10",
     "BecomingFrameSignatures.lean": "58ddc7dd3d492b5a125c7de8674a5bb47c2813c5a518cdf4547b7dbb961bba45",
     "BecomingFrameSignatures.log": "ca0df6ccab583f57493f2aafd3136b7b46573ae4fbe1a6e01ec5b705b4a9dcca",
-    "BecomingInquiryAxiomAudit.lean": "2b9ec7b86e19de160609c7fc7c9014f30e15b05873791fbbb9dfab5c112bec35",
-    "BecomingInquiryAxiomAudit.log": "06883e25fb8f2568d05e646b6511d995947c52214e6f3b4618c4e1bb9d7b0308",
-    "BecomingInquirySignatures.lean": "ec056f9157d57403f9d83948c72faf2637a3938225399ba297f9fad3188ffac0",
-    "BecomingInquirySignatures.log": "62a6f0308489e5f69eba44697cedaaaede38967c0c13f477526d369c13ec338f",
+    "BecomingInquiryAxiomAudit.lean": "6096fa0a615c8db18b6ace21bb51af6f425f220c0dd572af34cbf883071a8a8f",
+    "BecomingInquiryAxiomAudit.log": "d97a1bd9caaae66357239c4bbf71ece0a5da28aaf0fd91e41d9ca565da460191",
+    "BecomingInquirySignatures.lean": "59fa2f71d5a49b68933387d6d9e925e1b26d35867f260205603c23856aa94820",
+    "BecomingInquirySignatures.log": "449af080a872618d4f571d05e21a6c6f1e8b40bb6541b7433a8bf368818f394b",
     "BecomingMetaethicsAxiomAudit.lean": "37f20b700949681e4a19c4c295f8644f2f5266ed02d108a810040b6c3ea36310",
     "BecomingMetaethicsAxiomAudit.log": "170476538cf84b209a87b424bd21cc4462a9dedf9005ffb140e551f3a37f51ef",
     "BecomingMetaethicsSignatures.lean": "c9e323d1485371dd0db9a114eb61aa2a6c9767dd061a8f1a8a53b264ed7f6e34",

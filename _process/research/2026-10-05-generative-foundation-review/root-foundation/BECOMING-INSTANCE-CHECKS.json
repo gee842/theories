@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "utc": "2026-10-08T21:39:26Z",
+  "utc": "2026-10-08T21:56:17Z",
   "criterion": "A module in universal-ethics, generative-capacity or evolution-connectionism with a theorem whose signature has an explicit type binder, or with a type variable (plan §1).",
   "census": {
-    "modules": 45,
-    "lines": 10790,
-    "theorems": 758
+    "modules": 46,
+    "lines": 10895,
+    "theorems": 765
   },
   "totals": {
     "bridge": {
@@ -29,9 +29,9 @@
       "theorems": 27
     },
     "mathlib": {
-      "modules": 5,
-      "lines": 1235,
-      "theorems": 133
+      "modules": 6,
+      "lines": 1340,
+      "theorems": 140
     },
     "model": {
       "modules": 9,
@@ -41,11 +41,16 @@
   },
   "spine_receipt": {
     "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-    "sha256": "fab829fecd5e28107794c438397b7754256015bd165156e9cafc1dd8a2c9abde",
-    "utc": "20261008T213437.870960Z"
+    "sha256": "4d647a2cf52ed88914ceb4edfa4af6bd05707b596bf9e1b9595713d4519e3a6c",
+    "utc": "20261008T214944.061715Z"
   },
-  "checker_sha256": "2f6dcae7ba43e921732822d365121fcf0c2b02762527cf9804f5cf956f47e472",
-  "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt; the inherited modules are not recompiled.",
+  "periphery_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
+    "sha256": "a130a4afc10165d54a810f84377e22bdc6cf9d3932cd3219044cbc0fe486a14c",
+    "utc": "20261008T215022.915513Z"
+  },
+  "checker_sha256": "fb038b366860c126ba400993818c70a1b27e5b382fff8f52e096a064a863df1f",
+  "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt or, for Mathlib leaves, by the peripheral bridge's receipt; the inherited modules are not recompiled.",
   "modules": {
     "ContinuationRenewal": {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
@@ -308,8 +313,27 @@
       "theorems": 19,
       "polymorphic_theorems": 4,
       "category": "mathlib",
-      "connections": [],
-      "note": "",
+      "connections": [
+        {
+          "declaration": "Becoming.implements_iff_commonResponse",
+          "spine_modules": [
+            "CorrectionInquiry"
+          ]
+        },
+        {
+          "declaration": "Becoming.commonAction_iff_commonResponse",
+          "spine_modules": [
+            "CorrectionInquiry"
+          ]
+        },
+        {
+          "declaration": "Becoming.implements_refine",
+          "spine_modules": [
+            "CorrectionInquiry"
+          ]
+        }
+      ],
+      "note": "实施即每个格上的共同回应；`refine_observation` 由核心导出",
       "imports_core": false,
       "imports_mathlib": true
     },
@@ -331,6 +355,17 @@
       "imports_core": false,
       "imports_mathlib": false
     },
+    "CorrectionInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean",
+      "lines": 105,
+      "theorems": 7,
+      "polymorphic_theorems": 4,
+      "category": "mathlib",
+      "connections": [],
+      "note": "外围桥接本身",
+      "imports_core": true,
+      "imports_mathlib": true
+    },
     "CorrectionParent": {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean",
       "lines": 106,
@@ -338,7 +373,7 @@
       "polymorphic_theorems": 1,
       "category": "mathlib",
       "connections": [],
-      "note": "",
+      "note": "具体的父子纠正模型；多态引理只组合已给的可行命令",
       "imports_core": false,
       "imports_mathlib": true
     },
@@ -349,7 +384,7 @@
       "polymorphic_theorems": 9,
       "category": "mathlib",
       "connections": [],
-      "note": "",
+      "note": "关系边界的代数（`Boundary`、`Couple`）；核心不陈述异类关系的合成",
       "imports_core": false,
       "imports_mathlib": true
     },
@@ -509,8 +544,21 @@
       "theorems": 28,
       "polymorphic_theorems": 3,
       "category": "mathlib",
-      "connections": [],
-      "note": "",
+      "connections": [
+        {
+          "declaration": "Becoming.safeOn_iff_commonResponse",
+          "spine_modules": [
+            "CorrectionInquiry"
+          ]
+        },
+        {
+          "declaration": "Becoming.safeOn_refine",
+          "spine_modules": [
+            "CorrectionInquiry"
+          ]
+        }
+      ],
+      "note": "`SafeOn` 即显示该值的世界上的共同回应；细化保持安全选择由核心导出",
       "imports_core": false,
       "imports_mathlib": true
     },
@@ -521,7 +569,7 @@
       "polymorphic_theorems": 4,
       "category": "mathlib",
       "connections": [],
-      "note": "",
+      "note": "具体的实数评分模型",
       "imports_core": false,
       "imports_mathlib": true
     },

@@ -186,6 +186,10 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 **The scope of an inquiry is given by the dynamics**: the configurations its actual executions reach. A sound policy secures its goal there.
 
+**判断即一步探究。** 不确定下的判断不需要另立概念：在每个所信配置上都可容许的回应，恰是“判断过程”的共同回应——这个过程在被判断的配置上取一个可容许的回应，然后结束（`commonResponse_judge_iff`）。稳健判断、观察下的纠正与安全选择因此都是同一个共同回应；细化观察就是收窄信念，所以它们保持（`commonResponse_antitone`；外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean)）。
+
+**A judgment is a one-step inquiry.** A response admissible at every configuration believed possible is exactly a common response of the process that takes one admissible response and closes. Robust judgment, correction under observation and safe choice are therefore one common response, and refining observation narrows belief, so it preserves them.
+
 **知识。** [知识一章](KNOWLEDGE.md)辩护如下候选：命题知识是这样的真实判断——它的形成或维持，通过认知能力与使其正确的实际关系相连，且其正确不是偶然。知道、理解与会做是不同的成就，[哲学说明](PHILOSOPHICAL-ACCOUNT.md)把它们与共同探究和实践智慧合在一起。
 
 **Knowledge.** The defended candidate is a true commitment competently connected to what makes it correct, and non-accidentally so. Knowing that, understanding and knowing how are distinct achievements.
@@ -384,14 +388,14 @@ The core (L0 with its two foundation modules, and L1–L4) imports nothing outsi
 |---|---|---|---:|
 | L0 | `GenerativeCore` | 过程、轨迹及其组合、传递 | 继承 |
 | L1 | [Becoming.Frame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) | 框架、运行、可达、不变量、新实现 | 11 |
-| L2 | [Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean) | 所见范围；可靠策略确保其目标 | 5 |
+| L2 | [Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean) | 所见范围；可靠策略确保其目标；判断即一步探究 | 6 |
 | L3 | [Becoming.Renewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) | 运行上的更新／消耗；一条下降原则 | 6 |
 | L4 | [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 前提卡、G0 刻画、极小性、普遍理由、关系读法 | 26 |
 | 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广 | 32 |
 
-[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 80 项定理、146 项声明审计，公理报告全部为空；15 个继承模块的当前字节须与已通过的回执一致。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
+[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 81 项定理、147 项声明审计，公理报告全部为空；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 
-The consolidated checker and receipt cover 80 theorems and 146 declaration audits, all with empty axiom reports. The current bytes of 15 inherited modules must match passed receipts.
+The consolidated checker and receipt cover 81 theorems and 147 declaration audits, all with empty axiom reports. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
 
 ## 10. 术语表 / Glossary
 
@@ -406,6 +410,7 @@ The consolidated checker and receipt cover 80 theorems and 146 declaration audit
 | 不变量 | invariant | 每步保持的性质 | `Invariant` |
 | 新实现 | novel realization | 某种读法下此前未实现的主张 | `Novel` |
 | 所见范围 | scope | 策略实际执行可达的配置 | `Scope` |
+| 判断过程 | judgment process | 在被判断的配置上取一个可容许的回应然后结束；其共同回应即稳健判断 | `judgeProcess` |
 | 条件 | conditions | 条件水平、活跃、依存与汲取的可观测量 | `Conditions` |
 | 更新／消耗 | renewing / consuming | 对所参与条件的关系分类 | `RenewingIn`、`ConsumingIn` |
 | 形成事件 | formation event | （形成，步）；关系读法的主张 | `F × Nat` |

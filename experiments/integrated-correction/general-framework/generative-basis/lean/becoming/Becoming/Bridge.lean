@@ -148,26 +148,13 @@ theorem commonResponse_is_robust {S R : Type} {A : Type v} (P : Process S A)
       PracticalJudgment.Robust B (fun s r => Completes P safe goal s (response r)) r :=
   Iff.rfl
 
-/-- An admissibility table as one step into a closed endpoint. -/
-def judgeProcess {W H : Type} (admissible : W → H → Prop) : Process (Option W) H where
-  step s a t := ∃ w, s = some w ∧ admissible w a ∧ t = none
-
-def sees {W : Type} (live : W → Prop) : Option W → Prop :=
-  fun s => ∃ w, live w ∧ s = some w
-
-/-- Every robust response is a common response of some process. -/
+/-- Every robust response is a common response of the judgment process. -/
 theorem robust_iff_commonResponse {W H : Type} (live : W → Prop) (admissible : W → H → Prop)
     (a : H) :
     PracticalJudgment.Robust live admissible a ↔
       CommonResponse (judgeProcess admissible) (fun _ _ _ => True) (fun _ => True)
-        (fun a => [a]) (sees live) a := by
-  constructor
-  · rintro robust s ⟨w, alive, rfl⟩
-    exact ⟨⟨none, w, rfl, robust w alive, rfl⟩, fun _ _ => ⟨trivial, trivial⟩⟩
-  · intro common w alive
-    obtain ⟨⟨_, w', same, held, _⟩, _⟩ := common (some w) ⟨w, alive, rfl⟩
-    cases same
-    exact held
+        (fun a => [a]) (sees live) a :=
+  commonResponse_judge_iff.symm
 
 /-- A guarantee is one-step completion. -/
 theorem guarantees_iff_completes {S A : Type} (P : Process S A) (s : S) (a : A)
