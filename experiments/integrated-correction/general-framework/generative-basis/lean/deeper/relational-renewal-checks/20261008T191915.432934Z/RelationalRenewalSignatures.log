@@ -1,0 +1,114 @@
+RelationalRenewal.add_sub_self (n m : Nat) : n + m - m = n
+RelationalRenewal.sub_le_from_add {a c d : Nat} (h : a ≤ c + d) : a - d ≤ c
+RelationalRenewal.le_sub_from_add {a b c : Nat} (h : a + b ≤ c) : a ≤ c - b
+RelationalRenewal.keeps_level (l r c d : Nat) (within : d ≤ r + c) : l ≤ l + r + c - d
+RelationalRenewal.no_gain (l c d : Nat) (h : c ≤ d) : l + c - d ≤ l
+RelationalRenewal.strict_loss (l r c d : Nat) (over : r + c + 1 ≤ d) (positive : 1 ≤ l) : l + r + c - d + 1 ≤ l
+RelationalRenewal.add_le_cancel {a b : Nat} : a + b ≤ b → a ≤ 0
+RelationalRenewal.accumulate {a b k B : Nat} (step : a + 1 ≤ b) (bound : b + k ≤ B) : a + (k + 1) ≤ B
+RelationalRenewal.renewed_not_consumed {F C : Type} {U : RelationalRenewal.Unfolding F C} {c : C}
+  (renewed : RelationalRenewal.Renewed U c) : ¬RelationalRenewal.Consumed U c
+RelationalRenewal.renewing_not_consuming {F C : Type} {U : RelationalRenewal.Unfolding F C} {f : F}
+  (renewing : RelationalRenewal.RenewingIn U f) : ¬RelationalRenewal.ConsumingIn U f
+RelationalRenewal.renewing_keeps_support {F C : Type} {U : RelationalRenewal.Unfolding F C} {f : F}
+  (renewing : RelationalRenewal.RenewingIn U f) (t : Nat) : RelationalRenewal.Supported U t f
+RelationalRenewal.lost_support_ends {F C : Type} {U : RelationalRenewal.Unfolding F C}
+  (dependent : RelationalRenewal.Dependent U) {g : F} {c : C} {T : Nat} (depends : U.requires g c)
+  (lost : ∀ (t : Nat), T ≤ t → U.level t c < U.need g c) (t : Nat) : T ≤ t → ¬U.active t g
+RelationalRenewal.unrenewed_monotone {F C : Type} {U : RelationalRenewal.Unfolding F C} {c : C} {T0 : Nat}
+  (unrenewed : ∀ (t : Nat), T0 ≤ t → U.level (t + 1) c ≤ U.level t c) {t : Nat} (after : T0 ≤ t) (d : Nat) :
+  U.level (t + d) c ≤ U.level t c
+RelationalRenewal.unrenewed_drawdown_finite {F C : Type} (U : RelationalRenewal.Unfolding F C) (f : F) (c : C)
+  (T0 : Nat) (unrenewed : ∀ (t : Nat), T0 ≤ t → U.level (t + 1) c ≤ U.level t c)
+  (lowers : ∀ (t : Nat), T0 ≤ t → U.active t f → U.level (t + 1) c < U.level t c) :
+  ¬∀ (N : Nat), ∃ t, N ≤ t ∧ U.active t f
+RelationalRenewal.alternating_even (n : Nat) : RelationalRenewal.alternating (n + n) = 1
+RelationalRenewal.fluctuating_dependent : RelationalRenewal.Dependent RelationalRenewal.fluctuating
+RelationalRenewal.fluctuating_neither :
+  ¬RelationalRenewal.RenewingIn RelationalRenewal.fluctuating () ∧
+    ¬RelationalRenewal.ConsumingIn RelationalRenewal.fluctuating ()
+RelationalRenewal.Law.level_succ (L : RelationalRenewal.Law) (t : Nat) :
+  L.level (t + 1) =
+    if L.needG ≤ L.level t then
+      if L.needF ≤ L.level t then L.level t + L.renew + L.contrib t - L.draw t else L.level t + L.renew
+    else if L.needF ≤ L.level t then L.level t + L.contrib t - L.draw t else L.level t
+RelationalRenewal.Law.formed_at_active (L : RelationalRenewal.Law) {t : Nat} (active : L.needF ≤ L.level t) :
+  L.formed (t + 1) = L.formed t + 1
+RelationalRenewal.Law.formed_at_inactive (L : RelationalRenewal.Law) {t : Nat} (inactive : ¬L.needF ≤ L.level t) :
+  L.formed (t + 1) = L.formed t
+RelationalRenewal.Law.formed_le (L : RelationalRenewal.Law) (t : Nat) : L.formed t ≤ t
+RelationalRenewal.Law.formed_of_always (L : RelationalRenewal.Law) (always : ∀ (t : Nat), L.needF ≤ L.level t)
+  (t : Nat) : L.formed t = t
+RelationalRenewal.Law.unfolding_dependent (L : RelationalRenewal.Law) : RelationalRenewal.Dependent L.unfolding
+RelationalRenewal.Law.within_renewal_sustains (L : RelationalRenewal.Law)
+  (within : ∀ (t : Nat), L.draw t ≤ L.renew + L.contrib t) (gStart : L.needG ≤ L.start) (fStart : L.needF ≤ L.start)
+  (t : Nat) : L.start ≤ L.level t
+RelationalRenewal.Law.within_renewal_renewing (L : RelationalRenewal.Law)
+  (within : ∀ (t : Nat), L.draw t ≤ L.renew + L.contrib t) (gStart : L.needG ≤ L.start) (fStart : L.needF ≤ L.start) :
+  RelationalRenewal.RenewingIn L.unfolding RelationalRenewal.Law.Part.focal ∧
+    (∀ (t : Nat), L.unfolding.active t RelationalRenewal.Law.Part.focal) ∧ ∀ (t : Nat), L.formed t = t
+RelationalRenewal.Law.no_return_below_support (L : RelationalRenewal.Law) {T : Nat}
+  (noRestore : ∀ (t : Nat), T ≤ t → L.contrib t ≤ L.draw t) (below : L.level T < L.needG) (d : Nat) :
+  L.level (T + d) ≤ L.level T
+RelationalRenewal.Law.permanently_below (L : RelationalRenewal.Law) {T : Nat}
+  (noRestore : ∀ (t : Nat), T ≤ t → L.contrib t ≤ L.draw t) {bound : Nat} (below : L.level T < bound)
+  (within : bound ≤ L.needG) (t : Nat) : T ≤ t → L.level t < bound
+RelationalRenewal.Law.overdraw_crosses_support (L : RelationalRenewal.Law) (positive : 0 < L.needG)
+  (fWithin : L.needF ≤ L.needG) {T0 : Nat} (over : ∀ (t : Nat), T0 ≤ t → L.renew + L.contrib t < L.draw t) :
+  ∃ T, T0 ≤ T ∧ T ≤ T0 + L.level T0 ∧ L.level T < L.needG
+RelationalRenewal.Law.overdraw_consuming (L : RelationalRenewal.Law) (positive : 0 < L.needG)
+  (fWithin : L.needF ≤ L.needG) {T0 : Nat} (over : ∀ (t : Nat), T0 ≤ t → L.renew + L.contrib t < L.draw t) :
+  RelationalRenewal.ConsumingIn L.unfolding RelationalRenewal.Law.Part.focal ∧
+    ∃ T, ∀ (t : Nat), T ≤ t → ¬L.unfolding.active t RelationalRenewal.Law.Part.sustaining
+RelationalRenewal.Law.dependent_overdraw_ends_itself (L : RelationalRenewal.Law) (fPositive : 0 < L.needF)
+  (fWithin : L.needF ≤ L.needG) {T0 : Nat} (over : ∀ (t : Nat), T0 ≤ t → L.renew + L.contrib t < L.draw t) :
+  ∃ T, (∀ (t : Nat), T ≤ t → ¬L.unfolding.active t RelationalRenewal.Law.Part.focal) ∧ ∀ (t : Nat), L.formed t ≤ T
+RelationalRenewal.Law.independent_overdraw_persists (L : RelationalRenewal.Law) (independent : L.needF = 0)
+  (positive : 0 < L.needG) {T0 : Nat} (over : ∀ (t : Nat), T0 ≤ t → L.renew + L.contrib t < L.draw t) :
+  (∀ (t : Nat), L.unfolding.active t RelationalRenewal.Law.Part.focal) ∧
+    (∀ (t : Nat), L.formed t = t) ∧ RelationalRenewal.ConsumingIn L.unfolding RelationalRenewal.Law.Part.focal
+RelationalRenewal.Law.formation_does_not_decide :
+  (∀ (L : RelationalRenewal.Law) (t : Nat), L.needF ≤ L.level t → L.formed (t + 1) = L.formed t + 1) ∧
+    (RelationalRenewal.RenewingIn RelationalRenewal.Law.cultivation.unfolding RelationalRenewal.Law.Part.focal ∧
+        ∀ (t : Nat), RelationalRenewal.Law.cultivation.formed t = t) ∧
+      RelationalRenewal.Law.malignant.formed 1 = 1 ∧
+        RelationalRenewal.ConsumingIn RelationalRenewal.Law.malignant.unfolding RelationalRenewal.Law.Part.focal ∧
+          ∃ T,
+            (∀ (t : Nat),
+                T ≤ t → ¬RelationalRenewal.Law.malignant.unfolding.active t RelationalRenewal.Law.Part.focal) ∧
+              ∀ (t : Nat), RelationalRenewal.Law.malignant.formed t ≤ T
+RelationalRenewal.Law.own_trajectory_does_not_decide :
+  (∀ (t : Nat),
+      RelationalRenewal.Law.sharing.unfolding.active t RelationalRenewal.Law.Part.focal ↔
+        RelationalRenewal.Law.winning.unfolding.active t RelationalRenewal.Law.Part.focal) ∧
+    (∀ (t : Nat), RelationalRenewal.Law.sharing.formed t = RelationalRenewal.Law.winning.formed t) ∧
+      RelationalRenewal.RenewingIn RelationalRenewal.Law.sharing.unfolding RelationalRenewal.Law.Part.focal ∧
+        RelationalRenewal.ConsumingIn RelationalRenewal.Law.winning.unfolding RelationalRenewal.Law.Part.focal
+RelationalRenewal.Law.jointly_consuming (start renew need : Nat) (d1 d2 : Nat → Nat)
+  (within1 : ∀ (t : Nat), d1 t ≤ renew) (within2 : ∀ (t : Nat), d2 t ≤ renew) (joint : ∀ (t : Nat), renew < d1 t + d2 t)
+  (positive : 0 < need) (supported : need ≤ start) :
+  RelationalRenewal.RenewingIn (RelationalRenewal.Law.alone start renew need d1).unfolding
+      RelationalRenewal.Law.Part.focal ∧
+    RelationalRenewal.RenewingIn (RelationalRenewal.Law.alone start renew need d2).unfolding
+        RelationalRenewal.Law.Part.focal ∧
+      RelationalRenewal.ConsumingIn (RelationalRenewal.Law.together start renew need d1 d2).unfolding
+          RelationalRenewal.Law.Part.focal ∧
+        ∃ T,
+          ∀ (t : Nat),
+            T ≤ t →
+              ¬(RelationalRenewal.Law.together start renew need d1 d2).unfolding.active t
+                    RelationalRenewal.Law.Part.focal ∧
+                ¬(RelationalRenewal.Law.together start renew need d1 d2).unfolding.active t
+                    RelationalRenewal.Law.Part.sustaining
+RelationalRenewal.Law.escalation_consumes :
+  (∀ (t : Nat),
+      t ≤ 2 →
+        RelationalRenewal.Law.escalation.draw t ≤
+          RelationalRenewal.Law.escalation.renew + RelationalRenewal.Law.escalation.contrib t) ∧
+    RelationalRenewal.Law.escalation.level 3 = 6 ∧
+      RelationalRenewal.Law.escalation.formed 3 = 3 ∧
+        RelationalRenewal.ConsumingIn RelationalRenewal.Law.escalation.unfolding RelationalRenewal.Law.Part.focal ∧
+          ∃ T,
+            (∀ (t : Nat),
+                T ≤ t → ¬RelationalRenewal.Law.escalation.unfolding.active t RelationalRenewal.Law.Part.focal) ∧
+              ∀ (t : Nat), RelationalRenewal.Law.escalation.formed t ≤ T

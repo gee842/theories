@@ -1,0 +1,16 @@
+import RenewalComparison
+#check RenewalComparison.consumer_events_not_grounds
+#check RenewalComparison.g0_relational
+#check RenewalComparison.undisturbed_sustains
+#check RenewalComparison.absent_dependent
+#check RenewalComparison.absent_not_consuming
+#check RenewalComparison.absent_grounds
+#check RenewalComparison.overdraw_relational_extension
+#check RenewalComparison.overdraw_broad_incomparable
+#check RenewalComparison.overdraw_comparison_ranks
+#check RenewalComparison.preferOccurs_only
+#check RenewalComparison.broad_comparison_admits_overdraw
+#check RenewalComparison.malignant_comparison
+#check RenewalComparison.sharing_grounds
+#check RenewalComparison.winning_persists
+#check RenewalComparison.contest_comparison

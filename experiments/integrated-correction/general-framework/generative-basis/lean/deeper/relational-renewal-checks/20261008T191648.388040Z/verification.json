@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T191648.388040Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "relational-renewal-checks/20261008T191648.388040Z",
+  "source_sha256": {
+    "RelationalRenewal": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+    "RenewalComparison": "2e3a4924c60e091de5934f00cbbe1c7d04956caee8b6ad7991c6222d847ae789"
+  },
+  "dependency_sha256": {
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03"
+  },
+  "checker_sha256": {
+    "check_relational_renewal.py": "e1c73ca396efec86205f6044cb501af7f4588aac192a32e0df75193234ef6b95",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "A formation is classified by its relation to the conditions of the relations it participates in (dependence or drawing): renewing when each such condition keeps supporting every formation depending on it, consuming when it draws on a condition some dependent formation permanently loses. Exclusive, not exhaustive. Unrenewed drawdown admits finitely many active steps. In a law where the renewing formation depends on the condition it renews: within renewal, continuation and unbounded formation; beyond renewal, permanent loss of the renewer's support, self-ending with bounded formation for a dependent focal formation, and unbounded persistence for an independent one. Neither formation at each active step nor the focal formation's own trajectory decides the class; joint drawing can consume when each alone is within renewal; escalation beginning within renewal consumes. No ethical predicate; every declaration is required to have an empty axiom set. Levels, needs and rates are local representations whose real correspondence is not established. RenewalComparison connects this to GenerativeComparison's G0 and C as hypotheses only: under the relational reading (active events of non-consuming formations as grounds), G0 credits exactly non-consuming formation events, and C ranks a malignant formation's unfolding below the same unfolding without it, which the broad event reading leaves incomparable and lets a strict C-respecting comparison invert; sharing extends winning by consumption under both readings. The comparisons use C, not G0; the relational reading of G0's generation and C's defense are philosophical, outside this audit; mixed cases are not decided.",
+  "error": "['GenerativeComparison', 'RelationalRenewal']"
+}

@@ -1,0 +1,25 @@
+import RenewalComparison
+#print axioms RenewalComparison.broadInventory
+#print axioms RenewalComparison.relationalInventory
+#print axioms RenewalComparison.consumer_events_not_grounds
+#print axioms RenewalComparison.g0_relational
+#print axioms RenewalComparison.undisturbed
+#print axioms RenewalComparison.undisturbed_sustains
+#print axioms RenewalComparison.absent
+#print axioms RenewalComparison.absent_dependent
+#print axioms RenewalComparison.absent_not_consuming
+#print axioms RenewalComparison.Growth
+#print axioms RenewalComparison.tumor
+#print axioms RenewalComparison.malignant_consumes
+#print axioms RenewalComparison.absent_malignant_sustains
+#print axioms RenewalComparison.tumor_relational_extension
+#print axioms RenewalComparison.tumor_broad_incomparable
+#print axioms RenewalComparison.relational_comparison_ranks
+#print axioms RenewalComparison.preferMalignant
+#print axioms RenewalComparison.preferMalignant_only
+#print axioms RenewalComparison.broad_comparison_admits_malignant
+#print axioms RenewalComparison.Contest
+#print axioms RenewalComparison.contest
+#print axioms RenewalComparison.sharing_grounds
+#print axioms RenewalComparison.winning_persists
+#print axioms RenewalComparison.contest_comparison

@@ -1,0 +1,62 @@
+RenewalComparison.consumer_events_not_grounds {W F C : Type} (U : W → RelationalRenewal.Unfolding F C) {w : W} {f : F}
+  (consuming : RelationalRenewal.ConsumingIn (U w) f) (t : Nat) :
+  ¬(RenewalComparison.relationalInventory U).realized w (f, t)
+RenewalComparison.g0_relational {W F C : Type} (U : W → RelationalRenewal.Unfolding F C)
+  (PositiveRelevant : W → F × Nat → Prop) :
+  GenerativeComparison.G0 (RenewalComparison.relationalInventory U) PositiveRelevant ↔
+    ∀ (w : W) (f : F) (t : Nat), (U w).active t f → ¬RelationalRenewal.ConsumingIn (U w) f → PositiveRelevant w (f, t)
+RenewalComparison.undisturbed_sustains (L : RelationalRenewal.Law) (gStart : L.needG ≤ L.start) (t : Nat) :
+  L.start ≤ RenewalComparison.undisturbed L t
+RenewalComparison.absent_dependent (L : RelationalRenewal.Law) :
+  RelationalRenewal.Dependent (RenewalComparison.absent L)
+RenewalComparison.absent_not_consuming (L : RelationalRenewal.Law) (p : RelationalRenewal.Law.Part) :
+  ¬RelationalRenewal.ConsumingIn (RenewalComparison.absent L) p
+RenewalComparison.malignant_consumes :
+  RelationalRenewal.ConsumingIn RelationalRenewal.Law.malignant.unfolding RelationalRenewal.Law.Part.focal ∧
+    ∃ T, ∀ (t : Nat), T ≤ t → ¬RelationalRenewal.Law.malignant.unfolding.active t RelationalRenewal.Law.Part.sustaining
+RenewalComparison.absent_malignant_sustains (t : Nat) :
+  (RenewalComparison.relationalInventory RenewalComparison.tumor).realized RenewalComparison.Growth.absent
+    (RelationalRenewal.Law.Part.sustaining, t)
+RenewalComparison.tumor_relational_extension :
+  GenerativeComparison.GenerativeExtension (RenewalComparison.relationalInventory RenewalComparison.tumor)
+    RenewalComparison.Growth.occurs RenewalComparison.Growth.absent
+RenewalComparison.tumor_broad_incomparable :
+  ¬GenerativeComparison.Extends (RenewalComparison.broadInventory RenewalComparison.tumor)
+        RenewalComparison.Growth.occurs RenewalComparison.Growth.absent ∧
+    ¬GenerativeComparison.Extends (RenewalComparison.broadInventory RenewalComparison.tumor)
+        RenewalComparison.Growth.absent RenewalComparison.Growth.occurs
+RenewalComparison.relational_comparison_ranks (Better : RenewalComparison.Growth → RenewalComparison.Growth → Prop)
+  (comparison :
+    GenerativeComparison.ComparisonPrinciple (RenewalComparison.relationalInventory RenewalComparison.tumor) Better) :
+  Better RenewalComparison.Growth.occurs RenewalComparison.Growth.absent ∧
+    ((∀ (a b : RenewalComparison.Growth), Better a b → ¬Better b a) →
+      ¬Better RenewalComparison.Growth.absent RenewalComparison.Growth.occurs)
+RenewalComparison.preferMalignant_only {a b : RenewalComparison.Growth}
+  (better : RenewalComparison.preferMalignant a b) :
+  a = RenewalComparison.Growth.absent ∧ b = RenewalComparison.Growth.occurs
+RenewalComparison.broad_comparison_admits_malignant :
+  GenerativeComparison.ComparisonPrinciple (RenewalComparison.broadInventory RenewalComparison.tumor)
+      RenewalComparison.preferMalignant ∧
+    RenewalComparison.preferMalignant RenewalComparison.Growth.absent RenewalComparison.Growth.occurs ∧
+      ¬RenewalComparison.preferMalignant RenewalComparison.Growth.occurs RenewalComparison.Growth.absent ∧
+        (∀ (a : RenewalComparison.Growth), ¬RenewalComparison.preferMalignant a a) ∧
+          ∀ (a b c : RenewalComparison.Growth),
+            RenewalComparison.preferMalignant a b →
+              RenewalComparison.preferMalignant b c → RenewalComparison.preferMalignant a c
+RenewalComparison.sharing_grounds (e : RelationalRenewal.Law.Part × Nat) :
+  (RenewalComparison.relationalInventory RenewalComparison.contest).realized RenewalComparison.Contest.shares e
+RenewalComparison.winning_persists :
+  (∀ (t : Nat), RelationalRenewal.Law.winning.unfolding.active t RelationalRenewal.Law.Part.focal) ∧
+    (∀ (t : Nat), RelationalRenewal.Law.winning.formed t = t) ∧
+      RelationalRenewal.ConsumingIn RelationalRenewal.Law.winning.unfolding RelationalRenewal.Law.Part.focal
+RenewalComparison.contest_comparison :
+  GenerativeComparison.GenerativeExtension (RenewalComparison.relationalInventory RenewalComparison.contest)
+      RenewalComparison.Contest.wins RenewalComparison.Contest.shares ∧
+    GenerativeComparison.GenerativeExtension (RenewalComparison.broadInventory RenewalComparison.contest)
+        RenewalComparison.Contest.wins RenewalComparison.Contest.shares ∧
+      (∀ (t : Nat),
+          (RenewalComparison.broadInventory RenewalComparison.contest).realized RenewalComparison.Contest.wins
+            (RelationalRenewal.Law.Part.focal, t)) ∧
+        ∀ (t : Nat),
+          ¬(RenewalComparison.relationalInventory RenewalComparison.contest).realized RenewalComparison.Contest.wins
+              (RelationalRenewal.Law.Part.focal, t)

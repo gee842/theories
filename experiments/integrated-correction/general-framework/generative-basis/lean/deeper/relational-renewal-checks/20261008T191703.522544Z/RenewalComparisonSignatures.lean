@@ -1,0 +1,16 @@
+import RenewalComparison
+#check RenewalComparison.consumer_events_not_grounds
+#check RenewalComparison.g0_relational
+#check RenewalComparison.undisturbed_sustains
+#check RenewalComparison.absent_dependent
+#check RenewalComparison.absent_not_consuming
+#check RenewalComparison.malignant_consumes
+#check RenewalComparison.absent_malignant_sustains
+#check RenewalComparison.tumor_relational_extension
+#check RenewalComparison.tumor_broad_incomparable
+#check RenewalComparison.relational_comparison_ranks
+#check RenewalComparison.preferMalignant_only
+#check RenewalComparison.broad_comparison_admits_malignant
+#check RenewalComparison.sharing_grounds
+#check RenewalComparison.winning_persists
+#check RenewalComparison.contest_comparison

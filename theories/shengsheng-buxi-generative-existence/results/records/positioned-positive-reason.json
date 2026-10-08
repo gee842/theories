@@ -152,7 +152,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
       "role": "review",
-      "sha256": "9708f58e675b3cd0a02e7f108ac1b84f0ec9e4762a95877a1c79666b9666c86e",
+      "sha256": "3876f0794e92e712fdd7df39fb2af2b207c79408594848df7a5d3cf5318250ef",
       "declarations": []
     },
     {
@@ -201,6 +201,14 @@
     {
       "en": "9 October 2026: the review gained one paragraph at the end of §3.3 recording completion of route (B) by relational-renewal-classification. The rest is byte-identical; this record's claim, proof and receipt are unchanged. Hash updated after reading the change.",
       "zh": "2026年10月9日：审查 §3.3 末尾新增一段，记录出路 (B) 由 relational-renewal-classification 完成。其余逐字节不变；本记录的主张、证明与回执不变。读过改动后更新哈希。"
+    },
+    {
+      "en": "9 October 2026: the review gained a §3.3 correction after Ren's follow-up on G0's object (generation and degeneration do not overlap); verified that this added paragraph and one rephrased sentence are the only change, and rehashed. This record's claim and proof are unchanged.",
+      "zh": "2026年10月9日：审查 §3.3 依 Ren 关于 G0 对象的追问（生成与退化不重叠）增补修正段；核实变动仅为该段及一句改写后更新哈希。本记录的主张与证明不变。"
+    },
+    {
+      "zh": "2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。",
+      "en": "9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged."
     }
   ]
 }
