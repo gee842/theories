@@ -185,3 +185,104 @@ The positive inference is now stronger: a sufficient account of how this joining
 The source-level chain is `same_is_bisimulation` → `bisimulation_iff_compatible` → `join_result_matches` → `operation_lifts` → `questions_survive_encoding` / `tree_lifts`. Ordinary exact-presentation uniqueness and the existing `Lift` are reused. Xu and Norrish's [Mechanised Modal Model Theory](https://trustworthy.systems/publications/full_text/Norrish_Xu_20.pdf) remains the credited primary-source predecessor for the standard modal route, as assessed in the [earlier branching study](EXPLANATORY-BRANCHING-INTEGRATION.md#8-primary-source-assessment). This turn retrieved the author/institution-hosted text; a follow-up request for the theorem passage timed out, so no new claim of a fresh full-text review is made. The source supplies genealogy, not a substitute for the checked joining adapters. No general novelty or physical confirmation is claimed.
 
 The previous §8 receipt and exact-row integration checks remain historical evidence for the 38-theorem stage. [Current scoped integration checks](EXPLANATORY-JOINING-BRANCHES-CHECKS.json) bind this continuation, preserve the prior study and chapter bytes, and check the owned bilingual chain additions. They do not certify other concurrent studies or constitute an independent-agent review.
+
+## 15. Different articulations: common refinement and the reference that must survive
+
+**继续，2026-10-08。** 本轮得到共同细化及其准确范围，也发现并修复了一种真实的信息丢失：去掉片段名称后，如果问题每次只问“有某个伙伴”，已有局部单位的全部接合结构都可能被压成同一种回答。不能据此宣称找到了有内容的唯一基础。修复不需要重新预设独立对象，而要保留同一形成片段在后续接合中的共同指向；新的有限配置证明检查了这一连接。
+
+```text
+Result(s): reuse branching-tests-bisimulation; retain the four preceding
+  joining records at their checked scopes. New: incidence-common-refinement,
+  joining-open-map-factor, unanchored-incidence-collapse,
+  retained-reference-joining-recovery.
+Delta: compare different fragment types through role questions; construct a
+  common relation and its projection-preserving factor; prove this unanchored
+  language loses real joining distinctions; repair shared reference using
+  retained configurations and lift their finite formation histories.
+Supplied premises / correspondence: ternary joining interpretation; common
+  role or slot-command grammar and exact complete question agreement. Incidence
+  refinement uses locally finite incident joins and connected declared scope.
+  Retained-reference recovery uses only finite outcomes per fixed input pair.
+Evidence: 42 new Lean declarations, 213 inherited audits, 255 total;
+  frozen receipt 20261008T134016.091055Z. No independent-agent review claimed.
+Boundary: common refinement is mathematical, not proof of identical actual
+  provenance. One-position lifting is not fixed-pair lifting. Configuration
+  retention is not physical copying or an acquired memory mechanism.
+Integration: same_is_bisimulation supplies the incidence adapter and the
+  retained-pair adapter; existing trace local units and the non-reusable spent
+  history supply a same-process failure, then a checked discriminating repair.
+```
+
+The old §13 next connection has therefore advanced in two precise senses: a common refinement exists for the declared name-independent incidence target, and a stronger reference-retaining target matches formation across different fragment carriers. Neither claims that every equally adequate segmentation of actual reality already satisfies those target correspondences. The results live in the same study, with no new dated study copy.
+
+## 16. A common refinement without a shared fragment carrier
+
+For each J, an `Occurrence J` consists of three fragments and an actual `J first second result` witness. `Position J` displays either a fragment or one of these witnessed joins. Entering a join through a role and leaving it through a role are relations derived from J. The common question vocabulary uses only these six role movements, Boolean conjunction/negation and continuation; it has no native fragment constants or atomic valuation.
+
+This analytical distinction between a fragment and a witnessed joining does not posit two fundamental kinds. Each displayed join is constructed from the same fragments and J. Conversely, using one representation does not derive J's real interpretation. A path in this incidence graph is a relational inspection path, potentially traversing a result back to its formation, not automatically a physically executable temporal history.
+
+`match_incident` reuses the existing modal recovery theorem. Given equal role-question answers at x and y, and finitely many joins incident to y at each role, an actual join incident to x is matched by **one** join incident to y whose three positions all have matching answers. This condition is `LocallyFinite`: finite joins around a fragment/role, not the preceding weaker finite-results condition for a fixed input pair.
+
+Define `Span J K` as all pairs of fragments with equal answers. Its joining relation holds exactly when the two coordinate joins both hold. `span_left_open` and `span_right_open` prove the projections preserve joins and lift every incident join while fixing one chosen participant. With equal answers at roots, local finiteness on both sides and incidence-connected declared scopes, `connected_common_refinement` proves both projections cover those scopes. A fragment map or bijection was not assumed.
+
+The constructed span is a common **relational** refinement for this question family. It can contain several matches for a fragment; that is compatible with common content. Its existence is not evidence that two otherwise unrelated events share actual provenance or that every physical segmentation is adequately represented. The content and limits of its question family must still be tested.
+
+## 17. The unique factor and its exact strength
+
+`OpenMap J K p` explicitly means preservation of joining plus lifting an incident join while keeping one participant fixed. This is a substantial condition when supplied for a particular physical interpretation; it is derived for the span projections above rather than hidden in the definition of explanatory adequacy.
+
+`open_map_bisimulation` and `open_map_preserves_questions` check that such a map preserves all role questions, without a finiteness requirement. If an independently supplied common refinement L has open maps p and q into J and K, each x in L consequently determines the span position `(p x, q x)`. `universal_common_factor` proves there is one and only one function into the span commuting with those two projections, and it preserves joins.
+
+**The factor is not claimed to be open or onto.** The uniqueness concerns commuting with the supplied projections; it is not uniqueness of all carriers, all automorphisms, or all underlying realities. In particular, a local lift along each projection does not by itself synchronize arbitrary separately chosen participants. This exact qualification matters for the next test.
+
+## 18. A substantive loss: unanchored questions erase all unital distinctions
+
+The attempt to remove fragment names exposes a limitation stronger than a single artificial graph. `units_role_total` proves that, when J has local left/right units, each fragment participates in a join in each role. `units_collapse_open` then constructs an open map to the one-fragment joining relation. Hence `units_same_incidence_questions` proves that **any two fragments of any two such unital joining structures agree on every question of this unanchored incidence language**. No finite-fiber hypothesis is used in this collapse theorem.
+
+This common answer pattern is too weak for the intended full joining explanation. The counterreview uses the already admitted histories of one process. By `trace_has_units`, every admitted history maps to the coarse account. Yet the actual spent history in `budgetProcess` cannot join with itself: its ending condition no longer matches its required beginning. The coarse account allows its one code to self-join. `open_map_does_not_force_pair_lifting` checks this exact failure. The same law's two boundary idles also agree on incidence questions while the inherited anchored boundary probes distinguish them.
+
+No independent ethical predicate was toggled, and no difference of whole-world cardinality is used. The lost information is an actual continuation failure already witnessed in the same process. The coarse account is exact, even reduced, **for the incidence language**; it is not a sufficient account of the richer fixed-input joining task. The theorem diagnoses an omitted relationship in this representation. It does not refute the generative account or justify declaring the universal programme impossible.
+
+The missing relationship is joint reference. “For this fragment, some compatible second fragment exists” may choose a new second fragment every time. “These two retained fragments can join” keeps both inputs fixed. “The very same fragment fills both inputs” needs no externally supplied name, yet distinguishes the spent history from its coarse code. Thus dropping native names must not also drop relationships that keep track of the same formed contribution.
+
+## 19. Repair: retain references within formation and match the fixed inputs
+
+`ExplanatoryJoiningRegisters` represents a finite retained configuration as a list of fragments. A command `(i,j)` selects the two positions **in that same configuration**. A valid response witnesses `J a b z` and appends z; it does not replace the previous entries. Natural-number positions refer to the configuration's own ordering, including positions formed by earlier responses. They are not common native fragment names shared between J and K.
+
+The action and question types are now the same even when F and G differ. Under `FiniteOutcomes K`, `retained_pair_result_matches` proves that equal answers for two configurations force a matched result from the two actual corresponding retained slots. The resulting extended configurations again answer alike. This fixes both inputs before choosing the result; it does not settle them independently after the join. In contrast to the incidence route, only finite outcomes for each fixed input pair are needed.
+
+With finite outcome fibers on both sides, `retained_history_matches` carries any finite sequence of these formation commands across the comparison. Earlier results can be referenced in later commands, including in more than one subsequent position. `trace_retains_configuration` proves that the final configuration extends the original list rather than rewriting its old references. The same command sequence and an answer-equivalent final configuration are preserved. This generalizes the comparison scope beyond an unshared tree syntax, while keeping it a finite relational formation arrangement.
+
+This is **not** a theorem that a resource can be physically copied, that every recorded fragment remains available after consumption, or that a queried arrangement has actually been executed. Whether references denote reusable patterns, retained records, or material conditions with continuing availability must be accounted for in J and the full realization model. The existing joint-support and acquired-record mechanisms remain completed at their own scopes; the current list construction does not redo or supersede them. It also does not establish cycles, infinitely completed formation, probability or a change in the granularity of the basic joining operation.
+
+`singleton_self_question` connects the command `(0,0)` on `[x]` to `∃ z, J x x z`. The repaired language rejects the erroneous coarse self-join. More directly, `every_exact_account_retains_real_difference` proves that **within the same budget process**, every exact account of these retained questions distinguishes its initial empty history from its spent history. This last unavoidable-distinction theorem needs neither reducedness nor any finite-fiber assumption. The question is formed from joining and retained reference, with no separate success predicate.
+
+## 20. Affirmative inference, counterreview and remaining universal connection
+
+**正面推进。** 对“什么由什么形成，并怎样成为后续条件”的充分说明，保留有无某条关系还不够；如果后续作用取决于几个位置是否指向同一形成片段，这个共同指向也属于说明必须保留的内容。实际接续成败迫出这种区别。它不是先给出独立对象再外加关系的要求，也不是从逻辑语法直接证明现实的一元本体。
+
+The substantive inference is conditional on the explanatory undertaking: when the continuation being explained depends on whether two positions reuse the same formed fragment, an account that forgets that relationship changes the explanandum. The checked within-process witness shows exactly how. Common structure can be reconstructed across different carriers while retaining these references; a one-element common profile alone is not evidence that the intended explanatory content has survived.
+
+| Counterreview | Finding |
+|---|---|
+| Was a common fragment carrier still assumed? | No in the new incidence and retained-configuration comparisons. The common query grammar and initial answer agreement remain explicit. |
+| Does name independence alone establish an adequate invariant? | No. The all-unital collapse is a checked failure of that inference. |
+| Was the failure an arbitrary model toggle? | No. Admitted histories, inherited local units and the same spent history's impossible self-join supply the real correspondence. |
+| Is native identity demanded regardless of consequence? | No. The repair retains shared references because they change joining outcomes; it does not recover every irrelevant token distinction. |
+| Is the unique factor a uniquely adequate ontology? | No. It is the unique join-preserving function commuting with two given open maps; stronger lifting is not claimed for that factor. |
+| Is the repaired grammar physically implemented? | Not proved here. Its semantic configuration and question completeness are supplied; actual acquisition and resource realization remain scoped obligations. |
+| Do all equally adequate segmentations agree on these questions? | Not proved. Real cross-description correspondence, including changes of granularity, remains to be warranted. |
+
+**Next connection / 下一连接。** Use the completed refinement and retained-reference recovery instead of repeating them. The universal inference now requires a warranted translation between actual explanatory articulations and these reference-sharing formation questions, particularly when one articulation packages several joins into one. A disagreement must be assessed against the same formation and continuation being explained. Neither raw same-name matching nor featureless existential connectivity supplies that warrant. This is still an open connection, not a new no-go result for the full theory.
+
+## 21. Checked evidence and integration for this continuation
+
+The new sources are [JoiningIncidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) (9 declarations), [JoiningRefinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean) (11), [JoiningAnchors](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) (12) and [JoiningRegisters](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) (10). Four scoped result identities distinguish the new correspondence, factor, loss theorem and repair; helpers, adapters and inherited counterexamples are not counted as independent discoveries.
+
+[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_refinement.py) · [frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134016.091055Z/receipt.json) · [scoped integration checks](EXPLANATORY-JOINING-REFINEMENT-CHECKS.json).
+
+Lean 4.29.1 checks 17 modules and 255 declarations. Inherited: 213 audits, 166 empty / 47 standard. New: 42, 9 empty / 33 standard: 22 only `propext`, 4 `propext` plus `Quot.sound`, 7 also `Classical.choice`. Whole closure: 175 empty / 80 standard. Sources and logs are frozen and hashes are bound to the successful receipt. No custom postulates or proof holes; the general finite-test recovery inherits classical dependencies.
+
+The formal genealogy reuses `branching-tests-bisimulation` through `same_is_bisimulation` / `same_forces_successor_match`, `trace_has_units` and `spend_cannot_self_join`. The earlier joining and question proofs remain unchanged. This is new checked correspondence and scope testing, not a claim to have discovered modal bisimulation, relational incidence representations or a previously unknown general uniqueness principle. The previous primary-source assessment in §§7 and 14 is credited at its recorded reading scope; no new empirical or literature review is claimed this round.
+
+The previous study/chapter content and C30/F22 contributions are retained. The four previous result records retain their claims and proof receipts while their next-connection summaries credit this continuation. Incoming repository navigation and unrelated ethical/inquiry studies retain their own authority and validation scope; rendering their existing metadata does not constitute scientific acceptance of their work.

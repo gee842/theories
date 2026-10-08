@@ -42,6 +42,7 @@ theorem share_deficit_step (b d : Rat) (s : OperatingState)
   have h1 := Rat.mul_le_mul_of_nonneg_left (show -(3/8)*d ≤ s.2.1-3/8 by grind)
     (show 0 ≤ 1-s.1 by grind)
   have h2 := Rat.mul_nonneg hx0 hd
+  have h4 := Rat.mul_nonneg hx0 h2
   have h3 := Rat.mul_le_mul_of_nonneg_left h1 hx0
   change (1-(3/10)*d)*s.1 ≤ s.1+(1/5)*s.1*(1-s.1)*(4*(s.2.1-3/8))
   grind
@@ -112,7 +113,7 @@ theorem eventual_floor (f : Nat → Rat) (target gain : Rat) (start : Nat)
     grind
 
 theorem influence_from_share_floor (b a : Rat) (s : OperatingState) (start : Nat)
-    (hs : physical s) (ha : 0 ≤ a) (hshare : ∀ n, start ≤ n → a ≤ (path b s n).1) :
+    (hs : physical s) (_ha : 0 ≤ a) (hshare : ∀ n, start ≤ n → a ≤ (path b s n).1) :
     ∀ k, (path b s (start+k)).2.2 ≤ 1-a+radius (3/4) 1 k := by
   intro k
   induction k with
@@ -145,7 +146,7 @@ theorem eventual_influence (b a epsilon : Rat) (s : OperatingState) (start : Nat
 
 theorem quality_progress (b W T g : Rat) (s : OperatingState)
     (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (hs : physical s)
-    (hw : s.2.2 ≤ W) (hW : 0 ≤ W) (hT : 0 ≤ T) (hq : s.2.1 ≤ T)
+    (hw : s.2.2 ≤ W) (hW : 0 ≤ W) (_hT : 0 ≤ T) (hq : s.2.1 ≤ T)
     (hm : g ≤ (1/4)*(1-T)-b*W*T) : s.2.1+g ≤ (family b s).2.1 := by
   rcases hs with ⟨hx0,hx1,hq0,hq1,hw0,hw1⟩
   have he := quality_unclipped b s.2.1 s.2.2 hb0 (by grind) hq0 hq1 hw0 hw1
@@ -159,14 +160,14 @@ theorem quality_progress (b W T g : Rat) (s : OperatingState)
 
 theorem quality_keeps (b W T : Rat) (s : OperatingState)
     (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (hs : physical s)
-    (hW : W ≤ 1) (hw : s.2.2 ≤ W) (hT0 : 0 ≤ T) (hT1 : T ≤ 1)
+    (_hW : W ≤ 1) (hw : s.2.2 ≤ W) (hT0 : 0 ≤ T) (hT1 : T ≤ 1)
     (hq : T ≤ s.2.1) (hm : b*W*T ≤ (1/4)*(1-T)) :
     T ≤ (family b s).2.1 := by
   exact (quality_preserves_floor s.2.1 (1/4) b s.2.2 T W 0 0 hq hT0 hT1
     (by decide +kernel) hb0 (by grind) hs.2.2.2.2.1 hw hs.2.2.2.2.2
     (by decide +kernel) (by grind)).1
 
-theorem partial_positive_margin (b a : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12)
+theorem partial_positive_margin (b a : Rat) (_hb0 : 0 ≤ b) (hb1 : b ≤ 5/12)
     (ha0 : 0 ≤ a) (ha1 : a ≤ 1/2) :
     a/32 ≤ (1/4)*(1-(3/8+a/16))-b*(1-a/2)*(3/8+a/16) := by
   have hprod := Rat.mul_nonneg (show 0 ≤ 1-a/2 by grind) (show 0 ≤ 3/8+a/16 by grind)
@@ -198,5 +199,93 @@ theorem eventual_positive_gap (b : Rat) (s : OperatingState)
   have h := hKall n hn
   dsimp [a] at h
   grind
+
+theorem share_progress (b a delta : Rat) (s : OperatingState)
+    (hs : physical s) (ha : 0 ≤ a) (hd : 0 ≤ delta)
+    (hx : a ≤ s.1) (hxu : s.1 ≤ 7/8) (hq : 3/8+delta ≤ s.2.1) :
+    s.1+a*delta/10 ≤ (family b s).1 := by
+  have h1 := Rat.mul_le_mul_of_nonneg_right hx (show (0 : Rat) ≤ 1/8 by decide +kernel)
+  have h2 := Rat.mul_le_mul_of_nonneg_left (show (1/8 : Rat) ≤ 1-s.1 by grind) hs.1
+  have h3 := Rat.mul_le_mul_of_nonneg_right (show a/8 ≤ s.1*(1-s.1) by grind) hd
+  have hxprod := Rat.mul_nonneg hs.1 (show 0 ≤ 1-s.1 by grind)
+  have h4 := Rat.mul_le_mul_of_nonneg_left (show delta ≤ s.2.1-3/8 by grind) hxprod
+  change s.1+a*delta/10 ≤ s.1+(1/5)*s.1*(1-s.1)*(4*(s.2.1-3/8))
+  grind
+
+theorem eventual_high_share (b : Rat) (s : OperatingState)
+    (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (hs : physical s) (hx : 0 < s.1) :
+    ∃ N, ∀ n, N ≤ n → 7/8 ≤ (path b s n).1 := by
+  obtain ⟨N,hq⟩ := eventual_positive_gap b s hb0 hb1 hs hx
+  have hpos := Rat.mul_pos hx hx
+  obtain ⟨K,_hK,hall⟩ := eventual_floor (fun n => (path b s n).1) (7/8) (s.1*s.1/640) N
+    (by grind) (fun n => (path_physical b s hs n).2.1)
+    (by intro n hn hlt
+        have h := share_progress b (s.1/2) (s.1/32) _ (path_physical b s hs n)
+          (by grind) (by grind) (uniform_seed_floor b s hb0 hb1 hs n) (by grind) (hq n hn)
+        change (path b s n).1+s.1*s.1/640 ≤ (family b (path b s n)).1
+        grind)
+    (by intro n hn hge
+        have hp := path_physical b s hs n
+        have hq' := hq n hn
+        have hg := share_step_bounds (path b s n).1 (1/5) (4*((path b s n).2.1-3/8))
+          hp.1 hp.2.1 (by decide +kernel) (by grind) (by have := hp.2.2.2.1; grind)
+        change (7/8 : Rat) ≤ (family b (path b s n)).1
+        change (path b s n).1 ≤ (family b (path b s n)).1 at hg
+          -- hg is a pair; the explicit first projection is used below.
+        grind)
+  exact ⟨K,hall⟩
+
+theorem partial_finite_landing (b : Rat) (s : OperatingState)
+    (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (hs : physical s) (hx : 0 < s.1) :
+    ∃ N, Landing (path b s N) := by
+  obtain ⟨Nx,hxall⟩ := eventual_high_share b s hb0 hb1 hs hx
+  obtain ⟨Nw,hxw,hwall⟩ := eventual_influence b (7/8) (1/8) s Nx hs
+    (by decide +kernel) (by decide +kernel) hxall
+  have hm : (1/16 : Rat) ≤ (1/4)*(1-1/2)-b*(1/4)*(1/2) := by grind
+  obtain ⟨Nq,hwq,hqall⟩ := eventual_floor (fun n => (path b s n).2.1) (1/2) (1/16) Nw
+    (by decide +kernel) (fun n => (path_physical b s hs n).2.2.2.1)
+    (by intro n hn hq
+        apply quality_progress b (1/4) (1/2) (1/16) _ hb0 hb1 (path_physical b s hs n)
+          (by have := hwall n hn; grind) (by decide +kernel) (by decide +kernel) (by grind) hm)
+    (by intro n hn hq
+        apply quality_keeps b (1/4) (1/2) _ hb0 hb1 (path_physical b s hs n)
+          (by decide +kernel) (by have := hwall n hn; grind) (by decide +kernel)
+          (by decide +kernel) hq
+        grind)
+  have hxl := hxall Nq (by omega)
+  have hwl := hwall Nq (by omega)
+  exact ⟨Nq,path_physical b s hs Nq,by grind,hqall Nq (by omega),by grind⟩
+
+theorem supercritical_positive_fixed_obstruction (b : Rat)
+    (hb : 5/12 < b) (hu : b ≤ 3/4) :
+    ∃ s, physical s ∧ 0 < s.1 ∧ ∀ n, ¬ Landing (path b s n) := by
+  have hb0 : 0 < b := by grind
+  have hp := (middle_physical_iff b hb0).mpr (by grind)
+  have hf := middle_fixed b (by grind) hu
+  have hd : 0 < 12*b := Rat.mul_pos (by decide +kernel) hb0
+  have hdiv : 5/(12*b) < 1 := (Rat.div_lt_iff hd).mpr (by grind)
+  have hh : ∀ n, path b (middle b) n = middle b := by
+    intro n
+    induction n with
+    | zero => rfl
+    | succ n ih => simp only [path, RegimeBoundary.history] at *; rw [ih]; exact hf
+  refine ⟨middle b,hp,?_,?_⟩
+  · change 0 < 1-5/(12*b); grind
+  · intro n
+    rw [hh]
+    unfold Landing middle
+    grind
+
+theorem exact_universal_landing_boundary (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 3/4) :
+    (∀ s, physical s → 0 < s.1 → ∃ n, Landing (path b s n)) ↔ b ≤ 5/12 := by
+  constructor
+  · intro hall
+    by_cases hb : b ≤ 5/12
+    · exact hb
+    · obtain ⟨s,hs,hx,hnever⟩ := supercritical_positive_fixed_obstruction b (by grind) hb1
+      obtain ⟨n,hn⟩ := hall s hs hx
+      exact False.elim (hnever n hn)
+  · intro hb s hs hx
+    exact partial_finite_landing b s hb0 hb hs hx
 
 end PartialRegimeTransition

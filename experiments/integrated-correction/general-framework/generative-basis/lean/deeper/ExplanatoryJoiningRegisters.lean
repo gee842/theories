@@ -52,13 +52,14 @@ theorem finite_outcomes_image_finite {J : Join F} (hf : FiniteOutcomes J) :
 configuration keeps those slots when appending its matched result. -/
 theorem retained_pair_result_matches {J : Join F} {K : Join G} (fk : FiniteOutcomes K)
     {xs : List F} {ys : List G} (h : Related J K xs ys)
+    (slots : xs.length = ys.length)
     {i j : Nat} {a b z : F} (ha : xs[i]? = some a) (hb : xs[j]? = some b) (hj : J a b z) :
     ∃ a' b' z', ys[i]? = some a' ∧ ys[j]? = some b' ∧ K a' b' z' ∧
-      Related J K (xs ++ [z]) (ys ++ [z']) := by
+      (xs ++ [z]).length = (ys ++ [z']).length ∧ Related J K (xs ++ [z]) (ys ++ [z']) := by
   have st : (model J).process.step xs (i, j) (xs ++ [z]) := ⟨a, b, z, ha, hb, hj, rfl⟩
   obtain ⟨next, hn, hs⟩ := same_forces_successor_match (finite_outcomes_image_finite fk) h st
   obtain ⟨a', b', z', ha', hb', hj', rfl⟩ := hn
-  exact ⟨a', b', z', ha', hb', hj', hs⟩
+  exact ⟨a', b', z', ha', hb', hj', by simp [slots], hs⟩
 
 theorem step_retains_configuration {J : Join F} {xs ys : List F} {ij : Command}
     (h : Step J xs ij ys) : ∃ z, ys = xs ++ [z] := by
@@ -74,17 +75,28 @@ theorem trace_retains_configuration {J : Join F} {xs ys : List F} {commands : Li
     obtain ⟨added, he⟩ := ih
     exact ⟨[z] ++ added, he.trans (List.append_assoc xs [z] added)⟩
 
+theorem trace_length {J : Join F} {xs ys : List F} {commands : List Command}
+    (h : Trace (model J).process xs commands ys) : ys.length = xs.length + commands.length := by
+  induction h with
+  | nil xs => simp
+  | @cons xs middle ys ij rest hs ht ih =>
+    obtain ⟨z, rfl⟩ := step_retains_configuration hs
+    simpa [List.length_append, Nat.add_assoc, Nat.add_comm, Nat.add_left_comm] using ih
+
 /-- A whole finite reference-sharing formation plan has a matched plan using
 the same slot commands, including reuse of earlier results in later joins. -/
 theorem retained_history_matches {J : Join F} {K : Join G}
     (fj : FiniteOutcomes J) (fk : FiniteOutcomes K)
     {xs : List F} {ys : List G} (h : Related J K xs ys)
+    (slots : xs.length = ys.length)
     {commands : List Command} {finish : List F} (trace : Trace (model J).process xs commands finish) :
     ∃ finish', Trace (model K).process ys commands finish' ∧
-      Related J K finish finish' ∧ ∃ added, finish' = ys ++ added := by
+      Related J K finish finish' ∧ finish.length = finish'.length ∧
+      ∃ added, finish' = ys ++ added := by
   obtain ⟨finish', ht, hs⟩ := bisimulation_lifts_trace
     (same_is_bisimulation (finite_outcomes_image_finite fj) (finite_outcomes_image_finite fk)) h trace
-  exact ⟨finish', ht, hs, trace_retains_configuration ht⟩
+  refine ⟨finish', ht, hs, ?_, trace_retains_configuration ht⟩
+  rw [trace_length trace, trace_length ht, slots]
 
 theorem singleton_self_question (J : Join F) (x : F) :
     Holds (model J) [x] (.after (0, 0) .top) ↔ ExplanatoryJoiningAnchors.SelfJoinable J x := by
@@ -138,6 +150,7 @@ end Generative.ExplanatoryJoiningRegisters
 #print axioms Generative.ExplanatoryJoiningRegisters.retained_pair_result_matches
 #print axioms Generative.ExplanatoryJoiningRegisters.step_retains_configuration
 #print axioms Generative.ExplanatoryJoiningRegisters.trace_retains_configuration
+#print axioms Generative.ExplanatoryJoiningRegisters.trace_length
 #print axioms Generative.ExplanatoryJoiningRegisters.retained_history_matches
 #print axioms Generative.ExplanatoryJoiningRegisters.singleton_self_question
 #print axioms Generative.ExplanatoryJoiningRegisters.retained_question_corrects_coarse_failure

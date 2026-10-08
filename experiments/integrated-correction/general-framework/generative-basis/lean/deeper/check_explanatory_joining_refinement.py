@@ -35,7 +35,7 @@ MODULES = [
     (HERE / "ExplanatoryJoiningIncidence.lean", 9),
     (HERE / "ExplanatoryJoiningRefinement.lean", 11),
     (HERE / "ExplanatoryJoiningAnchors.lean", 12),
-    (HERE / "ExplanatoryJoiningRegisters.lean", 10),
+    (HERE / "ExplanatoryJoiningRegisters.lean", 11),
 ]
 
 
@@ -55,7 +55,7 @@ def main():
     version = subprocess.check_output([lean, "--version"], env=env, text=True).strip()
     receipt = {"checked_at_utc": stamp, "toolchain": toolchain,
                "compiler": version, "checker_sha256": sha(Path(__file__).read_bytes()),
-               "scope": "42 new incidence-refinement, universal-factor, anchor-loss and retained-reference audits; 213 inherited audits. Local incidence finiteness and finite outcome fibers have distinct scopes. No universal ontology or physical resource-copying conclusion",
+               "scope": "43 new incidence-refinement, universal-factor, anchor-loss and retained-reference audits; 213 inherited audits. Local incidence finiteness and finite outcome fibers have distinct scopes. No universal ontology or physical resource-copying conclusion",
                "modules": [], "passed": False}
     with tempfile.TemporaryDirectory(prefix="ren-explanatory-joining-refinement-") as scratch:
         build = Path(scratch)
