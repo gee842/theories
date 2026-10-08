@@ -32,6 +32,7 @@ Ren’s [bilingual generativity chain](theories/shengsheng-buxi-generative-exist
 
 ## Evidence and preservation
 
+- State new formal results on [the Becoming spine](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-BECOMING.md#9-形式脊柱--the-formal-spine) (`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/`). Where it cannot express a result, extend the spine instead of building another model; earlier modules keep their scope and connect through instance or equivalence theorems.
 - All new mathematical proof claims require Lean formalization and an actual check, with exact hypotheses, correspondence and dependency audits. Metadata checks, hand arguments and finite numerical tests do not replace proof checking. Preserve historical results at their original scope; no retrospective repository-wide proof audit is required by default.
 - Keep current arguments in `theories/`, existing studies and reviews in `_process/research/`, executable research in `experiments/`, imported originals in `sources/`, and shared infrastructure in `tools/research/`. Reuse the relevant study; do not create another dated chat workspace for the same substantive work.
 - Preserve original bytes and provenance. A portable reading edition must be labelled and its link adaptations recorded. Frozen copies and repeated reviews are evidence artifacts, not independent results. Do not import dependency installations, interpreter caches or redundant export archives by default.
