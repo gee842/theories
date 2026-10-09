@@ -1006,6 +1006,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean)
 
+## unceasing-generation-needs-renewal ← becoming-renewal-reading
+
+`formal-reuse` — 总水平原则是该结果的下降原则 falls_finitely 用于有限家族的总和；renewal_without_generation 复用其公地过程与 sharing 运行。 / The total-level principle is that result's descent principle falls_finitely applied to a finite family's total; renewal_without_generation reuses its commons process and sharing run.
+
+**Producer output / 上游输出:** 下降原则与公地过程。 / The descent principle and the commons process.
+
+**Consumer input / 下游输入:** 有限家族只能支付有限次事件；更新而无生起的见证。 / A finite family pays for only finitely many events; the witness of renewal without arising.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
+## unceasing-generation-needs-renewal ← becoming-dependence-dynamics
+
+`formal-reuse` — 生起、支付与更新都陈述在依存网上；Relay 用 Dissolves、Forms 与 ConsumingIn。 / Arising, payment and renewal are stated on webs of dependence; Relay uses Dissolves, Forms and ConsumingIn.
+
+**Producer output / 上游输出:** 依存网、Dependent、Dissolves、Forms、ConsumingIn。 / Webs, Dependent, Dissolves, Forms, ConsumingIn.
+
+**Consumer input / 下游输入:** 生成的定义、定理与见证。 / The definitions, theorems and witnesses of generation.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## unceasing-generation-needs-renewal ← becoming-stepwise-reading
+
+`formal-reuse` — Bloom.readings 用逐步的侵蚀与 MetSince.now。 / Bloom.readings uses stepwise undermining and MetSince.now.
+
+**Producer output / 上游输出:** UnderminingAt 与 MetSince。 / UnderminingAt and MetSince.
+
+**Consumer input / 下游输入:** 逐步读法扣下每一次开花。 / The stepwise reading withholds each bloom.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## unceasing-generation-needs-renewal ← becoming-return-grades
+
+`formal-reuse` — Bloom.readings 用两步周期的读法 RenewingInWithin。 / Bloom.readings uses the reading over cycles of two, RenewingInWithin.
+
+**Producer output / 上游输出:** RenewingInWithin。 / RenewingInWithin.
+
+**Consumer input / 下游输入:** 两步周期的读法记入开花。 / The reading over cycles of two credits the bloom.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
 ## wisdom-root ← practical-judgment-g0-j
 
 `interpretive` — 既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 / Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter.

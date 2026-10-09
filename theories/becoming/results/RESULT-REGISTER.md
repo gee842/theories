@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-100 migrated records: 96 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+101 migrated records: 97 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -111,6 +111,7 @@
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
 | `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
+| `unceasing-generation-needs-renewal` | [不息需要更新：由有限条件支付的不息生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: unceasing generation paid by finitely many conditions needs renewal to recur, while renewal does not imply generation](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |

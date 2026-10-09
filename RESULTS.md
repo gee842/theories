@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-100 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+101 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -107,6 +107,7 @@
 | [逐步规律与端点历史等价 / Step laws and endpoint traces](theories/becoming/results/records/trace-law-equivalence.md) | recorded-checked | [DynamicConsequences.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean) |
 | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](theories/becoming/results/records/transition-grouping-word-partition.md) | recorded-checked | [AcquiredSegmentation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) |
 | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](theories/becoming/results/records/unanchored-incidence-collapse.md) | recorded-checked | [ExplanatoryJoiningAnchors.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) |
+| [不息需要更新：由有限条件支付的不息生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: unceasing generation paid by finitely many conditions needs renewal to recur, while renewal does not imply generation](theories/becoming/results/records/unceasing-generation-needs-renewal.md) | recorded-checked | [Generation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) |
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](theories/becoming/results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](theories/becoming/results/records/versioned-request-completion.md) | recorded-checked | [CorrectionVersioned.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean) |
 | [核心作为智慧之根的目标 / Core as the root of wisdom target](theories/becoming/results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |

@@ -1063,7 +1063,7 @@ Imports: `GenerativeCore`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean`
 
-Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Substitution`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`
+Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`
 
 没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
 
@@ -1370,6 +1370,64 @@ Imports: `GenerativeCore`
 - `def` [Becoming.Reach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean#L56) (L56)
 - `def` [Becoming.Invariant](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean#L89) (L89)
 - `def` [Becoming.Novel](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean#L112) (L112)
+
+</details>
+
+<a id="module-b20d97b0f1ca"></a>
+
+<details>
+<summary>Generation.lean — 39 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean`
+
+Imports: `Becoming.Return`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.Web.stock_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L103) | 103 |
+| [Becoming.Web.stock_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L110) | 110 |
+| [Becoming.Web.paid_finitely](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L120) | 120 |
+| [Becoming.Web.Unceasing.rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L132) | 132 |
+| [Becoming.Web.Unceasing.regeneration_recurs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L140) | 140 |
+| [Becoming.Web.substitution_defers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L151) | 151 |
+| [Becoming.Web.conserved_ceases](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L158) | 158 |
+| [Becoming.Commons.renewal_without_generation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L171) | 171 |
+| [Becoming.Growth.left_succ_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L202) | 202 |
+| [Becoming.Growth.left_late](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L208) | 208 |
+| [Becoming.Growth.ceases](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L213) | 213 |
+| [Becoming.Relay.reserve_succ_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L269) | 269 |
+| [Becoming.Relay.defers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L277) | 277 |
+| [Becoming.Bloom.glow_even](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L316) | 316 |
+| [Becoming.Bloom.glow_odd](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L320) | 320 |
+| [Becoming.Bloom.back](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L340) | 340 |
+| [Becoming.Bloom.unceasing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L353) | 353 |
+| [Becoming.Bloom.readings](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L374) | 374 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L56) (L56)
+- `def` [Becoming.Web.Arises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L67) (L67)
+- `def` [Becoming.Web.Unceasing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L71) (L71)
+- `def` [Becoming.Web.Rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L75) (L75)
+- `def` [Becoming.Web.Falls](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L79) (L79)
+- `def` [Becoming.Web.Still](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L83) (L83)
+- `def` [Becoming.Web.Paid](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L87) (L87)
+- `def` [Becoming.Web.RenewedBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L91) (L91)
+- `def` [Becoming.Web.Regenerating](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L95) (L95)
+- `def` [Becoming.Web.stock](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L99) (L99)
+- `def` [Becoming.Growth.left](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L187) (L187)
+- `def` [Becoming.Growth.web](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L195) (L195)
+- `inductive` [Becoming.Relay.Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L238) (L238)
+- `def` [Becoming.Relay.reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L243) (L243)
+- `def` [Becoming.Relay.dependsOn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L250) (L250)
+- `def` [Becoming.Relay.source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L257) (L257)
+- `def` [Becoming.Relay.web](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L262) (L262)
+- `inductive` [Becoming.Bloom.Formation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L305) (L305)
+- `def` [Becoming.Bloom.glow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L311) (L311)
+- `def` [Becoming.Bloom.web](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L326) (L326)
+- `def` [Becoming.Bloom.renews](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean#L346) (L346)
 
 </details>
 

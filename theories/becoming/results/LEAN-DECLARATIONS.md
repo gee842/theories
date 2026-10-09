@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 148 | 2,167 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 149 | 2,185 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -279,6 +279,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [GeneratedSelectionRecurrence.lean](lean-declarations/ethics.md#module-c93091b64bb3) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [GeneratedSelectionRecurrenceAudit.lean](lean-declarations/ethics.md#module-5cbb4bf4d015) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [GeneratedSelf.lean](lean-declarations/core.md#module-134b1f2adf22) | 生成核心与关系结构 / Generative core and relational structure |
+| [Generation.lean](lean-declarations/core.md#module-b20d97b0f1ca) | 生成核心与关系结构 / Generative core and relational structure |
 | [GenerativeAcquisitionModel.lean](lean-declarations/core.md#module-397cba8558f3) | 生成核心与关系结构 / Generative core and relational structure |
 | [GenerativeApplicabilityModel.lean](lean-declarations/core.md#module-dacf46897484) | 生成核心与关系结构 / Generative core and relational structure |
 | [GenerativeAttainableQuestionsModel.lean](lean-declarations/core.md#module-30e0c1945168) | 生成核心与关系结构 / Generative core and relational structure |

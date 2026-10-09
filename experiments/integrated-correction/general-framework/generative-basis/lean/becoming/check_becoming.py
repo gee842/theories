@@ -33,7 +33,8 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
+        "Becoming.Generation", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence",
+        "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -97,6 +98,17 @@ SCOPE = (
     "reading credits the focal formation at every step but the one at which the sustaining "
     "formation loses support; in another law of the family it is withheld at two steps, until it "
     "switches. "
+    "Generation: a formation arises when it is inactive before a step and active after it, and "
+    "generation is unceasing when some formation arises at arbitrarily late steps; a finite family "
+    "of conditions none of which rises from some step on pays for only finitely many events that "
+    "each lower one of them; so unceasing generation paid by such a family makes some condition of "
+    "it rise at arbitrarily late steps, and, every rise being made by a formation renewing it, "
+    "renewing activity recurs; a formation lowering such a family at each active step is active "
+    "only finitely often however it substitutes; a family whose total never rises cannot sustain "
+    "unceasing generation that lowers it; drawing what is renewed keeps every dependence while "
+    "nothing arises; generation by consumption ceases; and a formation arising again and again on "
+    "a renewed condition meets every premise, while the stepwise reading withholds each of its "
+    "blooms and the reading over cycles of two credits it. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "

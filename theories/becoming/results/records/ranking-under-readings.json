@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T03:20:00+00:00",
+  "reviewed_at_utc": "2026-10-09T03:10:36+00:00",
   "claim": {
     "zh": "把两次继续作为一个框架的配置、把读法所记入的事件作为实现的主张，比较原则 C 就是这一框架上的 Comparison。对任何只记入活跃事件的读法，没有某个形成的继续扩展有它的继续，仅当读法扣下该形成的每个事件。整段读法（活跃且在该继续中不消耗）下，对支持门控定律族中每个超出更新地汲取的焦点形成，没有它的继续扩展有它的继续，所以每个满足 C 的比较都把前者排得更高。逐步读法（活跃且不侵蚀）下，焦点形成在某步活跃、而该步之后每个所需仍被满足时，这一事件被记入；于是两次继续互不扩展，有一个满足 C、非自反、传递的比较偏好有它的继续。恶性增殖与以消耗取胜都是实例。逐步读法下，以消耗取胜者在损失之前的事件被记入、之后的不被记入，而共享的继续记入每个事件，所以共享仍扩展以消耗取胜。在二元定律族中，两种读法下，每个所需始终被满足的继续（节制）都扩展同一族中过度汲取使维持者失去支持的继续，所以每个满足 C 的比较都把节制排得更高，即使逐步读法记入过度汲取者在损失之前的事件；恶性增殖与同一形成在第一步之后、越过阈值之前停止相比也是如此。所以在二元定律族中，逐步读法下 C 失去与不在场的比较，保留与每步都满足所需的继续的比较。焦点形成没有被记入的事件时（例如第一步就越过支持），逐步读法同样把不在场排得更高（Immediate）；有第三个形成共用条件时，节制者此后的汲取可以侵蚀第三者曾被满足的依存，逐步读法下两次继续互不扩展（ThirdParty）。不用 Lean 公理；C 只作为假设或定义出现。",
     "en": "Taking two continuations as the configurations of a frame and the events a reading credits as its realized claims, comparison principle C is Comparison on that frame. For any reading that credits only active events, the continuation without a formation extends the continuation with it only if the reading withholds every event of that formation. Under the whole-run reading (active and not consuming in that continuation), for every law of the support-gated family in which the focal formation draws beyond renewal, the continuation without it extends the continuation with it, so every comparison satisfying C ranks the former higher. Under the stepwise reading (active and not undermining), an event of the focal formation is credited when it is active and every need is still met after its step; the two continuations then do not extend each other, and an irreflexive, transitive comparison satisfying C prefers the continuation with the formation. Malignant growth and winning by consumption are instances. Under the stepwise reading the winner's events before the loss are credited and those after are not, while sharing credits every event, so sharing still extends winning by consumption. In the two-part family, under both readings a continuation in which every need stays met (restraint) extends a continuation of the family in which overdraw ends the sustaining formation's support, so every comparison satisfying C ranks restraint higher, even though the stepwise reading credits the overdrawing formation's events before the loss; so it is for malignant growth against the same formation stopping after its first step, before the threshold. So in the two-part family the stepwise reading loses the comparison with absence and keeps the comparison with a course that meets every need at every step. When no focal event is credited, as when the first step already crosses support, the stepwise reading too ranks the absence higher (Immediate); when a third formation shares the condition, a restrained formation's later draw can undermine the third formation's once-met dependence, and under the stepwise reading neither course extends the other (ThirdParty). No Lean axiom is used; C occurs only as a hypothesis or a definition."
@@ -175,8 +175,8 @@
     "en": "Proved only in the support-gated family (two parts: the focal and the sustaining formation) and for three pairs of compared continuations (occurs/absent, sharing/winning, stops/overdraws); the third-party witness (ThirdParty) shows the restraint conclusion does not extend to several co-drawers; the relation-level reading also credits the focal formation's first relation but is not formalized separately; yields no responsibility, duty or feasibility; chooses no reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T025042.064543Z）：Becoming.Ranking 27 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 265 项定理／502 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T025042.064543Z): the 27 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 265 theorems/502 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T031125.452529Z）：Becoming.Ranking 27 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 14 个模块（含只作导入的根模块与桥接），共 283 项定理／541 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 16 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T031125.452529Z): the 27 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 14 modules (including the import-only root and the bridge) with 283 theorems/541 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 16 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -258,19 +258,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "a74fb9ad4ecf1ac0377b031d9d1d4245d2fc30b9e8b87eb4cf9e1758409e5946",
+      "sha256": "d6559d11290b1f1fc318e83b21e7cfc441ee952681118fe7fec26431203b777d",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0ca9304e5fbd1ed8d580a2c3d59248d081c86997a4a9b675a0c05634e3e1e7d7",
+      "sha256": "c678c6122a5af4a43e576f411a7d4b6a1c5ca4dfd8a0eb95ba0b2311f38ddb02",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "594bd91cfc57aa7bf203ae84d6dbfc90a7ec6d48680c0fa9642aaed430757a17",
+      "sha256": "4053128ae9e95e03ab61732778ed4afb10f476053dfa2c984a72dcbb4961865f",
       "declarations": []
     },
     {
@@ -328,6 +328,10 @@
     {
       "zh": "2026-10-09：P9b 按第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）更正：标题、主张、对应与限制中“失去的只是与不在场的比较”改为在二元定律族中成立，并补上被记入事件的假设；新增反例 Immediate 与 ThirdParty；限制改为三对比较继续。合并检查器重跑（20261009T025042.064543Z），检验范围改指新回执。",
       "en": "2026-10-09: P9b corrected this record following the third independent review (BECOMING-P8-P9-P7B-REVIEW.md): “only the comparison with absence is lost” in the title, claim, correspondence and limitations is scoped to the two-part family, with the credited-event hypothesis; the counterexamples Immediate and ThirdParty are added; the limitations name three pairs of compared continuations. The consolidated checker was rerun (20261009T025042.064543Z) and the validation scope points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P10 新增 Becoming.Generation 后，合并检查器重跑（20261009T031125.452529Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P10 added Becoming.Generation, the consolidated checker was rerun (20261009T031125.452529Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

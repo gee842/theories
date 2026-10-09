@@ -681,6 +681,59 @@ Integration: G1–G12 全部处理；审查列出的会改变判断的结果中�
 
 **边界。** 不改变读法选择的地位；不推出责任或义务；探针与新见证都是最小见证。本节的更正尚未再经独立审查。
 
+## 13. 继续生成：生起、不息与更新（P10）
+
+2026-10-09。按同一指示继续（“prove the necessary proofs”）。第一次独立审查的判据 (d) 问读法是否含有继续生成的成分；§8.5 的表在每一栏都答“否”，§7.3 第 4 项把它列为开放。本节在核心上陈述生生的第二个“生”，并证明它与更新的关系。成果记录：[unceasing-generation-needs-renewal](../../../../theories/becoming/results/records/unceasing-generation-needs-renewal.md)。
+
+Ren 的原话是：“我的答案是生生不息 - 一种整体的，不断创造更多生的方向，而这个方向产生的可能性，多样性越高，复杂性/复杂结构的复杂度可以不断的上升，就是一个好的方向”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)）。本节只形式化其中“不断…生”这一部分：生成在整体的继续中不止息。“更多”、可能性、多样性与复杂性不在这里。Ren 说的是整体的方向，所以这一成分陈述在整体的继续上，不陈述在单个事件上（这是作者的读法）。
+
+```text
+Result(s): 复用 becoming-renewal-reading（下降原则 falls_finitely、公地过程）、becoming-dependence-dynamics（依存网、形成与消解）、
+           becoming-stepwise-reading（侵蚀）、becoming-return-grades（周期读法）；新增 unceasing-generation-needs-renewal（L3）
+Delta: 生起与不息的生成；有限条件家族的总水平原则；在支付前提与“上升由形成造成”之下，不息的生成需要更新复现；
+       更新不蕴含生成；以消耗进行的生成停止；替代推迟终结而不逃脱；总水平不升的有限家族不能维持不息的生成
+Supplied premises / correspondence: 在没有条件上升之步，生起由家族中某个条件的下降支付；每次上升由某个活跃形成的更新造成；
+       条件家族有限；renews 是应用给出的可观测量
+Evidence: Becoming.Generation 18 项定理；合并检查器回执（见记录）
+Boundary: 不含伦理谓词；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法
+Integration: §7.3 第 4 项与判据 (d) 部分承接；substitution-preserves-consumption 的下一步（替代条件有代价时替代链的去向）由 Relay 部分承接
+```
+
+[Becoming.Generation](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)（L3）：
+
+| 声明 | 内容 |
+|---|---|
+| `Arises`、`Unceasing` | 形成跨某步生起：此前不活跃，此后活跃。生成不息：某个形成在任意晚的步生起。同一形成可以再生起：不息的是生起，不是某一形式 |
+| `Rises`、`Falls`、`Still`、`Paid`、`stock` | 条件跨某步上升或下降；一个有限条件家族在某步都不上升；事件在家族都不上升之步使其中某个条件下降，即由家族支付；家族的总水平 |
+| `RenewedBy`、`Regenerating` | 每次上升都由某个活跃形成更新该条件造成：展开之外没有更新的来源，太阳或河流也是其中的形成。一个活跃形成更新家族中的某个条件 |
+| `stock_le`、`stock_lt`、`paid_finitely` | 家族都不上升时总水平不升，再有一个下降则总水平下降；从某步起都不上升的有限家族，只能支付有限次事件。这是 `Becoming.Renewal` 的下降原则用于总水平 |
+| `Unceasing.rises`、`Unceasing.regeneration_recurs` | 生起由有限家族支付时，不息的生成使家族中某个条件在任意晚的步上升；每次上升都由更新造成时，更新的活动在任意晚的步复现 |
+| `substitution_defers` | 一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后只活跃有限次，无论它怎样在家族中转移依存 |
+| `conserved_ceases` | 总水平从不上升的有限家族，不能维持每次生起都降低总水平的不息生成 |
+| `Commons.renewal_without_generation` | 只取所更新之量：条件被更新，任何形成都不生起。更新不蕴含生成 |
+| `Growth.ceases` | 形成在汲取一个不被更新的条件时接连生起，条件被消耗，生成停止 |
+| `Relay.defers` | 消耗者从第一个来源转向第二个，依存转化，然后终结：两个来源都不被更新 |
+| `Bloom.unceasing`、`Bloom.readings` | 一个形成在另一个形成（太阳）更新的条件上反复生起：全部前提成立，生成不息，更新复现。逐步读法扣下它的每一次开花，两步周期的读法记入它 |
+
+**解读。**
+
+- **生成与更新的关系。** 在所述前提下，不息的生成严格强于复现的更新：不息的生成需要更新复现（`Unceasing.regeneration_recurs`），更新复现却可以没有任何生起（`renewal_without_generation`）。这给判据 (d) 一个在整体继续上的位置：“不损”的读法读出更新这一侧，继续生成是另加的、更强的成分。
+- **以消耗进行的生成不能不息。** 在不被更新的条件上，形成可以接连生起（`Growth`），这正是增长，但生成停止。在有限个不被更新的条件之间替代，只推迟终结（`Relay`）。这把 §8.4 的“替代不证明更新”推进一步：替代条件有代价时，替代链本身终结。它与 Ren 所说的生成与退化不重叠相合：在这些前提下，只有退化的一侧不能不息。但这是关于有限条件与支付的定理，不是由定义得出的不重叠。
+- **不息属于更大的展开。** 一个总水平从不上升的有限家族，即每次更新都由它自身的下降支付，不能维持不息的生成（`conserved_ceases`）。`Bloom` 中太阳更新而不被扣减，是因为这一表示省略了太阳自身的条件。按非二元方法，这是表示所省略的关系，不是外在的实体；若把太阳的条件放进家族并照实支付，生成会停止。所以在这些前提下，任何有限部分都不能独自不息，不息属于更大的展开及其更新关系。这是作者对定理的诠释（AI 论证），也是 §8.5 热力学读法的另一面。
+- **逐步读法与生成。** `Bloom` 的每次开花都把自己的条件取到所需之下，由太阳在下一次之前恢复。工作候选的逐步读法扣下每一次开花，两步周期的读法记入它。这是 §8.5 中自创生／代谢读法所指代价在生成一侧的见证：一个不息地再生起的形成，在逐步读法下没有一个活的开花事件。
+
+**作者反审。**
+
+*反驳 1：这些定理只是 `falls_finitely` 的推论。* 形式上是：总水平原则就是下降原则用于有限家族的总和，记录也这样写，不另算一条原则。新的是陈述的对象：生起与不息、更新由形成造成、替代链与总水平不升的家族，以及三个见证给出的严格分离。
+
+*反驳 2：“生起由下降支付”是把结论写进模型。* 它是对应前提：生成不是无代价的，形成须从条件中取得。没有它，不息的生成可以不需要任何更新，例如一个形成无代价地反复出现。`Bloom` 与 `Growth` 显示前提可以满足，既可与不息的生成同时成立，也可与生成的停止同时成立。它的经验地位须由应用检验，例如开放系统中的能量流。
+
+*反驳 3：“不息”只是无穷多次生起，太弱：一个形成忽隐忽现也算。* 对。所以“不息”须与支付前提同读：每次在没有更新之步的生起都付出条件，忽隐忽现也需要更新。Ren 原话中“更多生”的“更多”，以及可能性、多样性与复杂性的上升，这里没有陈述。
+
+*反驳 4：把太阳当作展开中的一个形成，是在用形式变量偷渡“外部”。* 正相反：`RenewedBy` 要求每次上升都由展开中的某个活跃形成造成，排除了展开之外的来源；太阳在其中是一个形成。`conserved_ceases` 说明，把太阳自身的条件也照实计入时，有限的部分不能独自不息。
+
+**边界。** 不含伦理谓词；不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；见证都是最小见证；`renews` 与支付前提是应用义务。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -757,3 +810,5 @@ Open: Ren's words on events before the threshold, and a web with amounts and ren
 - **Provenance.** "Better without it" is the AI's comparative form of the problem Ren adopted (C's formal route), not Ren's verdict.
 
 The core now has 265 theorems and 502 declaration audits, all with empty axiom reports. Open: a tenure through bounded absence, restraint beyond the two-part family, an ordered and effect-sensitive interaction, and Ren's choice of reading. These corrections have not been independently reviewed again.
+
+**P10: continued generation (§13).** No reading of `living` includes further generation (criterion (d)). Ren's words name "a whole direction of unceasingly creating more 生"; `Becoming.Generation` states only its "unceasing" part, and states it on the whole's continuation. A formation arises across a step when it is inactive before and active after it; generation is unceasing when some formation arises at arbitrarily late steps. Suppose arising at a step where no condition of a finite family rises is paid by a fall in one of them. Then unceasing generation makes some condition of the family rise at arbitrarily late steps; and when every rise is made by some active formation renewing the condition, renewing activity recurs. Drawing exactly what is renewed keeps every dependence while nothing arises, so under these premises unceasing generation is strictly stronger than recurring renewal. Generation by consumption ceases (`Growth`); substitution among unrenewed conditions defers the end and does not escape it (`Relay`); and a finite family whose total never rises cannot sustain unceasing generation that lowers it, from which the author argues that no finite part is unceasing on its own. A bloom arising again and again on a condition the sun renews meets every premise; the stepwise working candidate withholds each of its blooms, and the reading over cycles of two credits it. "More", diversity and complexity are not stated, and the generation component has not been added to any reading of `living`. Section 13 has not been independently reviewed.

@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "id": "unceasing-generation-needs-renewal",
+  "title": {
+    "zh": "不息需要更新：由有限条件支付的不息生成需要更新复现，更新却不蕴含生成",
+    "en": "Unceasing generation needs renewal: unceasing generation paid by finitely many conditions needs renewal to recur, while renewal does not imply generation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T03:14:37+00:00",
+  "claim": {
+    "zh": "在依存网上，一个形成跨某步生起，当它在该步不活跃、在其后活跃；生成不息，当某个形成在任意晚的步生起（同一形成可以再生起）。对一个有限的条件家族：从某步起其中没有条件上升，而每个事件在家族都不上升之步使其中某个条件下降，则这样的事件只发生有限次。因此，若生起在家族都不上升之步由其中某个条件的下降支付，不息的生成使家族中某个条件在任意晚的步上升；若每次上升都由某个活跃形成更新该条件造成，更新的活动在任意晚的步复现。一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后只活跃有限次，无论它怎样在其中转移依存：替代推迟终结而不逃脱终结。总水平从不上升的有限家族，不能维持每次生起都降低总水平的不息生成。只取所更新之量时，条件被更新而任何形成都不生起，所以在这些前提下不息的生成严格强于复现的更新。形成在汲取一个不被更新的条件时可以接连生起，条件被消耗，生成停止；消耗者可以从一个来源转向另一个而终结。一个形成在太阳所更新的条件上反复生起，满足全部前提，生成不息；工作候选的逐步读法扣下它的每一次开花，两步周期的读法记入它。不用伦理前提，也不用 Lean 公理。",
+    "en": "On a web of dependence, a formation arises across a step when it is inactive at the step and active after it; generation is unceasing when some formation arises at arbitrarily late steps (the same formation may arise again). For a finite family of conditions: if from some step none of them rises, and each event at a step where none rises lowers one of them, such events occur only finitely often. Hence, if arising at a step where no condition of the family rises is paid by a fall in one of them, unceasing generation makes some condition of the family rise at arbitrarily late steps; and if every rise is made by some active formation renewing the condition, renewing activity recurs. A formation lowering some condition of the family at each active step is active only finitely often once none of them rises any more, however it moves its dependence among them: substitution defers the end and does not escape it. A finite family whose total level never rises cannot sustain unceasing generation each arising of which lowers the total. Drawing exactly what is renewed keeps the condition renewed while no formation ever arises, so under these premises unceasing generation is strictly stronger than recurring renewal. Formations can arise one after another while drawing an unrenewed condition down; the condition is consumed and generation stops; a consumer can move from one source to another and end. A formation arising again and again on a condition the sun renews meets every premise and generation is unceasing; the stepwise working candidate withholds each of its blooms, and the reading over cycles of two credits it. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "条件家族是有限列表；水平是自然数。",
+      "en": "The family of conditions is a finite list; levels are natural numbers."
+    },
+    {
+      "zh": "支付前提：在家族都不上升之步，每次生起使家族中某个条件下降。生成不是无代价的；这是对应前提，不是结论。",
+      "en": "The payment premise: at a step where no condition of the family rises, each arising lowers one of them. Generation is not free; this is a correspondence premise, not a conclusion."
+    },
+    {
+      "zh": "更新由形成造成（RenewedBy）：每次上升都由某个活跃形成更新该条件造成，展开之外没有更新的来源，太阳或河流也是其中的形成。renews 是应用给出的可观测量。",
+      "en": "Renewal is made by formations (RenewedBy): every rise is made by some active formation renewing the condition, with no source of renewal outside the unfolding; a sun or a river is one of its formations. renews is an observable supplied by the application."
+    },
+    {
+      "zh": "“不息”只读生起在任意晚的步复现，不读“更多”、多样性或复杂性。",
+      "en": "“Unceasing” reads only that arising recurs at arbitrarily late steps, not “more”, diversity or complexity."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。本结果只形式化“不断…生”，并把它陈述在整体的继续上，这是作者的读法。在所述前提下，它与更新的关系是：不息的生成需要更新复现，更新复现不需要生成；只有退化的一侧不能不息，与 Ren 所说的生成与退化不重叠相合，但这是关于有限条件与支付的定理。作者进一步诠释：总水平不升的有限家族不能不息，所以任何有限部分都不能独自不息，不息属于更大的展开（AI 论证）。实际展开是否满足支付前提与 RenewedBy，是经验问题。",
+    "en": "Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). This result formalizes only “unceasingly … 生” and states it on the whole's continuation, which is the author's reading. Under the stated premises its relation to renewal is: unceasing generation needs recurring renewal, and recurring renewal does not need generation; the degenerative side alone cannot be unceasing, which accords with Ren's statement that generation and degeneration do not overlap, but as a theorem about finite conditions and payment. The author further interprets: a finite family whose total never rises cannot be unceasing, so no finite part is unceasing on its own and unceasing generation belongs to a larger unfolding (an AI argument). Whether actual unfoldings meet the payment premise and RenewedBy is an empirical question."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+  "aliases": [
+    "Becoming.Web.paid_finitely",
+    "Becoming.Web.Unceasing.rises",
+    "Becoming.Web.Unceasing.regeneration_recurs",
+    "Becoming.Web.substitution_defers",
+    "Becoming.Web.conserved_ceases",
+    "Becoming.Commons.renewal_without_generation",
+    "Becoming.Growth.ceases",
+    "Becoming.Relay.defers",
+    "Becoming.Bloom.unceasing",
+    "Becoming.Bloom.readings"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-renewal-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "总水平原则是该结果的下降原则 falls_finitely 用于有限家族的总和；renewal_without_generation 复用其公地过程与 sharing 运行。",
+        "en": "The total-level principle is that result's descent principle falls_finitely applied to a finite family's total; renewal_without_generation reuses its commons process and sharing run."
+      },
+      "interface": {
+        "output": {
+          "zh": "下降原则与公地过程。",
+          "en": "The descent principle and the commons process."
+        },
+        "input": {
+          "zh": "有限家族只能支付有限次事件；更新而无生起的见证。",
+          "en": "A finite family pays for only finitely many events; the witness of renewal without arising."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean"
+      }
+    },
+    {
+      "id": "becoming-dependence-dynamics",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "生起、支付与更新都陈述在依存网上；Relay 用 Dissolves、Forms 与 ConsumingIn。",
+        "en": "Arising, payment and renewal are stated on webs of dependence; Relay uses Dissolves, Forms and ConsumingIn."
+      },
+      "interface": {
+        "output": {
+          "zh": "依存网、Dependent、Dissolves、Forms、ConsumingIn。",
+          "en": "Webs, Dependent, Dissolves, Forms, ConsumingIn."
+        },
+        "input": {
+          "zh": "生成的定义、定理与见证。",
+          "en": "The definitions, theorems and witnesses of generation."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Bloom.readings 用逐步的侵蚀与 MetSince.now。",
+        "en": "Bloom.readings uses stepwise undermining and MetSince.now."
+      },
+      "interface": {
+        "output": {
+          "zh": "UnderminingAt 与 MetSince。",
+          "en": "UnderminingAt and MetSince."
+        },
+        "input": {
+          "zh": "逐步读法扣下每一次开花。",
+          "en": "The stepwise reading withholds each bloom."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    },
+    {
+      "id": "becoming-return-grades",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Bloom.readings 用两步周期的读法 RenewingInWithin。",
+        "en": "Bloom.readings uses the reading over cycles of two, RenewingInWithin."
+      },
+      "interface": {
+        "output": {
+          "zh": "RenewingInWithin。",
+          "en": "RenewingInWithin."
+        },
+        "input": {
+          "zh": "两步周期的读法记入开花。",
+          "en": "The reading over cycles of two credits the bloom."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "substitution-preserves-consumption",
+      "detail": {
+        "zh": "该结果中替代条件无代价，焦点形成持续；本结果中替代条件有代价且不被更新，替代链终结（substitution_defers、Relay.defers）。",
+        "en": "There the alternative is free and the focal formation persists; here the alternatives cost and are not renewed, and the chain of substitutions ends (substitution_defers, Relay.defers)."
+      }
+    },
+    {
+      "id": "relational-reading-comparison",
+      "detail": {
+        "zh": "该结果的整段读法与本结果都读不出“更多”；本结果只给出继续生成在整体继续上的“不息”成分。",
+        "en": "Neither that result's whole-run reading nor this result reads “more”; this result gives only the “unceasing” component of further generation, on the whole's continuation."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "生成、维持、转化、退化与消失中，本结果陈述生起与其不息，以及它与更新、消耗和替代的关系；整体的演绎仍开放。",
+        "en": "Among generation, maintenance, transformation, degeneration and dissolution, this result states arising and its unceasing, and their relation to renewal, consumption and substitution; the whole deduction remains open."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "更新不蕴含生成（Commons.renewal_without_generation）：只取所更新之量，条件被更新，任何形成都不生起。",
+        "en": "Renewal does not imply generation (Commons.renewal_without_generation): drawing what is renewed keeps the condition renewed while nothing arises."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "接连生起不证明不息（Growth.ceases）：形成在汲取不被更新的条件时接连生起，生成停止。",
+        "en": "Arising one after another does not certify unceasing generation (Growth.ceases): formations arise while drawing an unrenewed condition, and generation stops."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "逐步读法与生成分离（Bloom.readings）：一个不息地再生起的形成，在工作候选的逐步读法下没有一个活的开花事件；两步周期的读法记入它。",
+        "en": "The stepwise reading and generation come apart (Bloom.readings): a formation arising again and again has no living bloom under the stepwise working candidate; the reading over cycles of two credits it."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词，不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；条件家族有限；见证都是最小见证；支付前提与 RenewedBy 是应用义务。",
+    "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; families of conditions are finite; the witnesses are minimal; the payment premise and RenewedBy are application duties."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T031125.452529Z）：Becoming.Generation 18 项定理全部空依赖；同一回执覆盖包内 14 个模块（含只作导入的根模块与桥接），共 283 项定理／541 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 16 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T031125.452529Z): all 18 theorems of Becoming.Generation have empty axiom reports; the same receipt covers the package's 14 modules (including the import-only root and the bridge) with 283 theorems/541 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 16 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "0c32526f6f00dff55145ef1d8b2419d2f9b588c22c3d1f5b4294acf4a14302e5",
+      "declarations": [
+        "Becoming.Web.Arises",
+        "Becoming.Web.Unceasing",
+        "Becoming.Web.Rises",
+        "Becoming.Web.Falls",
+        "Becoming.Web.Still",
+        "Becoming.Web.Paid",
+        "Becoming.Web.RenewedBy",
+        "Becoming.Web.Regenerating",
+        "Becoming.Web.stock",
+        "Becoming.Web.stock_le",
+        "Becoming.Web.stock_lt",
+        "Becoming.Web.paid_finitely",
+        "Becoming.Web.Unceasing.rises",
+        "Becoming.Web.Unceasing.regeneration_recurs",
+        "Becoming.Web.substitution_defers",
+        "Becoming.Web.conserved_ceases",
+        "Becoming.Commons.renewal_without_generation",
+        "Becoming.Growth.web",
+        "Becoming.Growth.ceases",
+        "Becoming.Relay.web",
+        "Becoming.Relay.defers",
+        "Becoming.Bloom.web",
+        "Becoming.Bloom.renews",
+        "Becoming.Bloom.unceasing",
+        "Becoming.Bloom.readings"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "role": "proof",
+      "sha256": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
+      "declarations": [
+        "Becoming.falls_finitely",
+        "Becoming.Commons.sharing",
+        "Becoming.Commons.conditions"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "1eed73008c4a77abffad89b6b650189dee9cb5a613132d2eb2b77db40b0913ed",
+      "declarations": [
+        "Becoming.Web",
+        "Becoming.Web.Dependent",
+        "Becoming.Web.Renewed",
+        "Becoming.Web.ConsumingIn",
+        "Becoming.Web.Dissolves",
+        "Becoming.Web.Forms",
+        "Becoming.Web.UnderminingAt",
+        "Becoming.Web.MetSince.now"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "role": "proof",
+      "sha256": "5b94e4adc0f762139946a80aae8c297ff1eabefb332f7634222028ab2072a06e",
+      "declarations": [
+        "Becoming.Web.RenewingInWithin"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "d6559d11290b1f1fc318e83b21e7cfc441ee952681118fe7fec26431203b777d",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "c678c6122a5af4a43e576f411a7d4b6a1c5ca4dfd8a0eb95ba0b2311f38ddb02",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "4053128ae9e95e03ab61732778ed4afb10f476053dfa2c984a72dcbb4961865f",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+      "role": "provenance",
+      "sha256": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "陈述 Ren 原话中的“更多”：可能性、多样性与复杂性的上升，及其与有限条件的关系；把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通；检验生成成分能否进入 living 的读法而不重复“不损”的代价；带数量与更新率的依存网。",
+    "en": "State the “more” of Ren's words: rising possibility, diversity and complexity, and their relation to finite conditions; connect the generation component to Frame.Novel and to the “new living content” of universal_reason; test whether a generation component can enter a reading of living without repeating the costs of “no harm”; webs with amounts and renewal rates."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P10，承接判据 (d) 与整合文档 §7.3 第 4 项。",
+      "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P10 of the unification plan, taking up criterion (d) and item 4 of §7.3 of the integration note."
+    }
+  ]
+}

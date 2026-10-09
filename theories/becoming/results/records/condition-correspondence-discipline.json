@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T03:20:00+00:00",
+  "reviewed_at_utc": "2026-10-09T03:10:36+00:00",
   "claim": {
     "zh": "在依存网的逐步读法上，保留 living（活跃且不侵蚀），把 related 从共同参与收窄为交互：两个事件经由某条件相关，仅当一方汲取它、另一方以正水平依存于它，在任何步上（不排定时间，也不问汲取是否改变水平）。没有活动汲取、或没有依存能落空的条件是惰性的：它不构成任何关系，也不使任何事件侵蚀；加入它不改变 living、关系与连通。于是独立审查 Q4 的免费连通被排除：加入人人在水平 0 依存、无人汲取的条件，在共同参与下使每个网连通，在交互下连通不变。每个侵蚀关系都是交互；在 N_rel 下，珍视一个侵蚀事件的立场，必珍视被侵蚀形成在以正水平依存于该条件的每一步上的活的事件。传递由汲取承担，不由侵蚀承担：珍视任何汲取事件的立场，必珍视以正水平依存于该条件的每个活的事件（drawing_reaches），所以审查 Q5 只有共同依存的一半被排除。一个条件，每个活的事件都汲取它或以正水平依存于它，且有活的汲取者与活的依存者，使整体连通，任意两个活的事件至多经两次交互相连；于是 G0 在那里恰等于种子加 N_rel 加 N_std。在一个例子中，两个依存于同一条件的形成，经由维持其支持的使用连通；唯一的使用侵蚀它们时不连通；共同参与在两次运行中都连通它们。加入一个被更新、人人以正水平依存的条件，只要一个活的事件汲取它一次，仍使每个网在交互下连通而不改变 living（one_use_connects）；不需要人人汲取。不用 Lean 公理，不加伦理谓词。",
     "en": "On the stepwise reading of a web, keep living (active and not undermining) and narrow related from co-participation to interaction: two events are related through a condition only when one draws on it and the other depends on it at a positive level, at any steps (neither order in time nor change of level enters). A condition that no activity draws on, or no dependence on which can fail, is idle: it relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged. So the free connection of the independent review's Q4 is excluded: adjoining a condition every formation requires at level zero and nothing draws on connects every web under co-participation and leaves connection unchanged under interaction. Every undermining relation is an interaction; under N_rel, a standpoint valuing an undermining event holds significant the living events of the formation it undermines at every step where that formation depends on the condition at a positive level. The transmission is carried by drawing, not undermining: a standpoint valuing any drawing event holds significant every living event depending on the condition at a positive level (drawing_reaches), so only the co-dependence half of review Q5 is excluded. A condition that every living event draws on or depends on at a positive level, with a living drawer and a living dependent, connects the whole, any two living events being linked in at most two interactions; G0 there is exactly a seed with N_rel and N_std. In one example two formations depending on one condition are connected through a use that keeps their support, and not when the only use undermines it, while co-participation connects them in both runs. Adjoining a renewed condition on which every formation depends at a positive level, used once by one living event, still connects every web under interaction without changing living (one_use_connects); every formation drawing on it is not needed. No Lean axiom is used and no ethical predicate is added."
@@ -172,8 +172,8 @@
     "en": "Stated for the stepwise reading only; with fixed dependences it applies through K.dependence.along r, and the whole-run reading could take the same relation, which is not done here. Does not order events in time or ask about the effect of drawing; does not change living; chooses no reading; yields no responsibility or duty."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T025042.064543Z）：Becoming.Correspondence 25 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 265 项定理／502 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T025042.064543Z): the 25 theorems of Becoming.Correspondence all have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 265 theorems/502 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T031125.452529Z）：Becoming.Correspondence 25 项定理全部空依赖；同一回执覆盖包内 14 个模块（含只作导入的根模块与桥接），共 283 项定理／541 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 16 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T031125.452529Z): the 25 theorems of Becoming.Correspondence all have empty axiom reports; the same receipt covers the package's 14 modules (including the import-only root and the bridge) with 283 theorems/541 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 16 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -244,19 +244,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "a74fb9ad4ecf1ac0377b031d9d1d4245d2fc30b9e8b87eb4cf9e1758409e5946",
+      "sha256": "d6559d11290b1f1fc318e83b21e7cfc441ee952681118fe7fec26431203b777d",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0ca9304e5fbd1ed8d580a2c3d59248d081c86997a4a9b675a0c05634e3e1e7d7",
+      "sha256": "c678c6122a5af4a43e576f411a7d4b6a1c5ca4dfd8a0eb95ba0b2311f38ddb02",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "594bd91cfc57aa7bf203ae84d6dbfc90a7ec6d48680c0fa9642aaed430757a17",
+      "sha256": "4053128ae9e95e03ab61732778ed4afb10f476053dfa2c984a72dcbb4961865f",
       "declarations": []
     },
     {
@@ -303,6 +303,10 @@
     {
       "zh": "2026-10-09：P9b 按第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）更正：交互的解释改为“一方汲取、另一方以正水平依存，在任何步上”，排定时间、对效果敏感的版本列为开放；共同依存改称纪律所省略的关系；剩余的免费连通改为“人人以正水平依存、被使用一次”；Q5 只排除共同依存的一半；新增 drawing_reaches、one_use_connects、Later 与 Pinned.drawing_interacts。合并检查器重跑（20261009T025042.064543Z），检验范围改指新回执。",
       "en": "2026-10-09: P9b corrected this record following the third independent review (BECOMING-P8-P9-P7B-REVIEW.md): interaction is glossed as “one draws on a condition on which the other depends at a positive level, at any steps”, with the ordered, effect-sensitive version listed as open; co-dependence is named a relation the discipline omits; the residual free connection is restated as a condition everyone depends on at a positive level, used once; only the co-dependence half of Q5 is excluded; drawing_reaches, one_use_connects, Later and Pinned.drawing_interacts are added. The consolidated checker was rerun (20261009T025042.064543Z) and the validation scope points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P10 新增 Becoming.Generation 后，合并检查器重跑（20261009T031125.452529Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P10 added Becoming.Generation, the consolidated checker was rerun (20261009T031125.452529Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }
