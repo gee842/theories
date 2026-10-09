@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-107 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+108 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -98,6 +98,7 @@
 | [以关系读生成：比较原则把消耗型形成排在其不发生之下 / Read relationally, comparison ranks consuming formation below its absence](theories/becoming/results/records/relational-reading-comparison.md) | recorded-checked | [RenewalComparison.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) |
 | [参与关系中的更新与消耗：关系性分类 / Renewing and consuming as a relation to participated conditions](theories/becoming/results/records/relational-renewal-classification.md) | recorded-checked | [RelationalRenewal.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean) |
 | [更新与消耗的形成：一个磨损规律类中的动力学区分 / Renewing and consuming formation: a dynamical distinction in one wear-law class](theories/becoming/results/records/renewing-consuming-formation.md) | recorded-checked | [RenewingFormation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) |
+| [储备推迟终结而不逃脱终结：Dependent 是零储备，储备是所持的条件 / A reserve defers the end and does not escape it: Dependent is the zero reserve, and a reserve is a held condition](theories/becoming/results/records/reserve-defers-ending.md) | recorded-checked | [Reserve.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean) |
 | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](theories/becoming/results/records/reserved-shutdown-during-recovery.md) | recorded-checked | [ReservedShutdown.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean) |
 | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](theories/becoming/results/records/residual-continuation-correspondence.md) | recorded-checked | [ExplanatoryResiduals.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean) |
 | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](theories/becoming/results/records/retained-reference-joining-recovery.md) | recorded-checked | [ExplanatoryJoiningRegisters.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) |

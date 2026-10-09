@@ -200,18 +200,17 @@
     "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family (SprayHanding), drawing in is stated only for a family enclosed around (taking_draws_in), which needs each step's exchange to lie within finitely many conditions; gives_less needs the family without repetition (Lone.repeated_family), and giving to a family not dissipated on need not take (Frontier.gives_without_taking); the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T083555.066952Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 728 项定理／1182 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T083555.066952Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 728 theorems/1182 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T090231.312129Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 21 个模块（含只作导入的根模块与桥接），共 774 项定理／1257 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 23 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T090231.312129Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 21 modules (including the import-only root and the bridge) with 774 theorems/1257 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 23 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "2eebc6d5ffe4080da20690b965e9dd77dfa39dc517045b0e80eaa3408e403802",
+      "sha256": "2a25b6c4f65c2fdf675c4b1f80b0a3f68969803e39c295184f15507eb58daff5",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
-        "Becoming.eq_zero_of_not_pos",
         "Becoming.le_total_of_mem",
         "Becoming.total_eq_zero",
         "Becoming.total_le_at",
@@ -308,7 +307,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "ef5a8bcfea44ff1aadd4930587b579e96d42aebeb65acbbb50ea6695434cc92e",
+      "sha256": "edb5948be82fef1344b46fe5c55247dfc9b160d499a2c9bdeade143113d35610",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -329,7 +328,8 @@
         "Becoming.Flow.More",
         "Becoming.Flow.ArisesTaking",
         "Becoming.Flow.Balances.over",
-        "Becoming.Cycle.closed_more"
+        "Becoming.Cycle.closed_more",
+        "Becoming.eq_zero_of_not_pos"
       ]
     },
     {
@@ -370,25 +370,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "counterexample",
-      "sha256": "0b15ea7ce5dc8d7d966a66b54f955655ec06b221b8fa95b178fed12f0110b81c",
+      "sha256": "0083004bf5773638d54aadcabb74bfe7e52822b2bb9455cbb47b830871428d08",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "9f88686a43221f44bbc57933ca08911059042ac9b92e5dd8683c7c08bdbe2138",
+      "sha256": "d162e8760cf6d90197b8fa7f0c3fc067ead362704e093d8b390ffca29e160f43",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6fb989e96f834472e06e88b060359f3241cfbb24d0879f4694b6e335dcdc8ed5",
+      "sha256": "de5056997bbb34df9e4d14ced005ca6d3e41c22d12d913d32d80e79aa118f92c",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "b737ef243f02a2a4ce19cb53217a75f8b40bed7e797def7eff9270f6784c799f",
+      "sha256": "fe36efe13287c5f8801da21f65b3b9683101a246117884ac0e9c132518587468",
       "declarations": []
     },
     {
@@ -479,6 +479,14 @@
     {
       "zh": "2026-10-09：P16c 整合第七次独立审查、扩展 Becoming.Dissipation、Roles、Wholes 与 Identity 后，合并检查器重跑（20261009T083555.066952Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P16c integrated the seventh independent review and extended Becoming.Dissipation, Roles, Wholes and Identity, the consolidated checker was rerun (20261009T083555.066952Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P17 新增 Becoming.Reserve、并在 Flow、Dissipation 与 Roles 中陈述开始作为条件而在之后，合并检查器重跑（20261009T090231.312129Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P17 added Becoming.Reserve and stated coming to stand in Flow, Dissipation and Roles, the consolidated checker was rerun (20261009T090231.312129Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P17 把引理 eq_zero_of_not_pos 自 Dissipation 移入 Flow，本记录的引用随之改指；主张与证明不变。",
+      "en": "2026-10-09: P17 moves the lemma eq_zero_of_not_pos from Dissipation to Flow, and this record's reference follows; its claim and proofs are unchanged."
     }
   ]
 }

@@ -25,6 +25,13 @@ unfolding as amounts that the formations taking part in each step take and give
   constant population of takers, with nothing arising, is another (`Steady`). The
   theorem uses arising only for the uptake it brings. Unlike the net rise of
   `Becoming.Generation`, this sees replenishment concurrent with drawing.
+* Coming to stand needs replenishment, whatever is taken. A condition *comes to stand*
+  across a step when its standing rises from nothing (`Web.ComesToStand`). In a balanced
+  flow it is given at least its new standing (`Balances.standing_given`), so where
+  members of a family come to stand at arbitrarily late steps the family's
+  replenishment recurs (`standing_needs_replenishment`). Where a formation is itself a
+  condition standing exactly while it is active, its arising is such a coming to stand
+  (`Becoming.Roles`).
 * Generation is *more without end* when, for every number, from some step on at least
   that many formations take from the family (`More`). Amounts are natural numbers, so
   a formation taking takes at least one unit: uptake has a positive minimum. Over any
@@ -84,6 +91,10 @@ variable {α β : Type}
 theorem sign_le : ∀ n, sign n ≤ n
   | 0 => Nat.le_refl 0
   | n + 1 => Nat.succ_le_succ (Nat.zero_le n)
+
+theorem eq_zero_of_not_pos : ∀ {n : Nat}, ¬ 0 < n → n = 0
+  | 0, _ => rfl
+  | n + 1, not => absurd (Nat.succ_pos n) not
 
 theorem sign_le_one : ∀ n, sign n ≤ 1
   | 0 => Nat.zero_le 1
@@ -185,6 +196,11 @@ structure Flow (F C : Type) where
   present : Nat → List F
   take : Nat → F → C → Nat
   give : Nat → F → C → Nat
+
+/-- A condition *comes to stand* across the step from `t`: no standing at `t`, a positive
+standing after it. -/
+def Web.ComesToStand (W : Web F C) (t : Nat) (c : C) : Prop :=
+  ¬ 0 < W.level t c ∧ 0 < W.level (t + 1) c
 
 namespace Flow
 
@@ -346,6 +362,27 @@ theorem renewing_recurs {cs : List C} (balances : L.Balances W)
     ¬ ∀ t, T ≤ t → L.renewers cs t = 0 :=
   fun none => replenishment_recurs balances arising T fun t later =>
     replenishment_zero (none t later)
+
+/-- In a balanced flow, a condition coming to stand is given at least its new standing:
+the rise is from nothing, so all of it is given. -/
+theorem Balances.standing_given (balances : L.Balances W) {t : Nat} {c : C}
+    (comes : W.ComesToStand t c) : W.level (t + 1) c ≤ L.given t c :=
+  Nat.le_trans (Nat.le_add_right _ (L.taken t c)) (Nat.le_of_eq ((balances t c).trans
+    ((congrArg (· + L.given t c) (eq_zero_of_not_pos comes.1)).trans (Nat.zero_add _))))
+
+/-- So a member of a family coming to stand replenishes the family. -/
+theorem Balances.standing_replenishes (balances : L.Balances W) {cs : List C} {c : C}
+    (mem : c ∈ cs) {t : Nat} (comes : W.ComesToStand t c) : 0 < L.replenishment cs t :=
+  total_pos_of_mem mem (Nat.lt_of_lt_of_le comes.2 (balances.standing_given comes))
+
+/-- Coming to stand carries the requirement itself: where members of a family come to
+stand at arbitrarily late steps, the family's replenishment recurs, whatever is taken. -/
+theorem standing_needs_replenishment {cs : List C} (balances : L.Balances W)
+    (coming : ∀ N, ∃ t c, N ≤ t ∧ c ∈ cs ∧ W.ComesToStand t c) (T : Nat) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  fun none => match coming T with
+  | ⟨t, _, later, mem, comes⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+      (balances.standing_replenishes mem comes) (Nat.le_of_eq (none t later)))
 
 /-- Over any stretch of steps from which at least `K` formations take, the family is
 replenished by at least `K` per step, less its stock at the start. -/

@@ -34,8 +34,8 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
-        "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles", "Becoming.Metaethics",
-        "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
+        "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles", "Becoming.Reserve",
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -134,7 +134,10 @@ SCOPE = (
     "meet these premises with a level that never rises, so that arising there does not deplete "
     "the family in the net sense; the unceasing bloom is not more without end; and in a closed "
     "cycle each formation gives back what it takes, the total never changes, and generation is "
-    "more without end with as many renewers as takers. "
+    "more without end with as many renewers as takers; a condition coming to stand, its level "
+    "zero before a step and positive after, is given at least its new standing, so it "
+    "replenishes every family containing it, and where members of a family come to stand at "
+    "arbitrarily late steps its replenishment recurs, whatever is taken. "
     "Population: a census lists the formations active at each step, each once; if more are active "
     "after a step than before, one arises across it, and a census growing without bound makes "
     "generation unceasing; under a census, with each formation taking part in a flow listed once "
@@ -205,7 +208,12 @@ SCOPE = (
     "burns, while ever more growers take from the pool, meets these premises, with the growers "
     "depending on the pool under a census as well, every step being enclosed and the pool drawing "
     "in the fuel; the flows of the earlier witnesses in which "
-    "taking recurs on one condition are not dissipative. "
+    "taking recurs on one condition are not dissipative; a member of a family dissipated on "
+    "coming to stand lowers its stock, so members of a family dissipated on from some step on do "
+    "not come to stand at arbitrarily late steps; under dissipation a finite family without "
+    "repetition whose members come to stand at arbitrarily late steps is open at arbitrarily "
+    "late steps and, enclosed around from some step on, draws in, and with finitely many "
+    "conditions in all none comes to stand at arbitrarily late steps. "
     "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
     "support, dependence, renewal, consumption, the classes of formations, undermining, living "
     "events, arising, unceasing generation and a census, and what is taken and given, balance, "
@@ -224,8 +232,9 @@ SCOPE = (
     "formation gives to it, a formation that need not be embodied, and that is embodied where "
     "only embodied relata give, as a sun depending on nothing can be; a "
     "bee and a flower renew each other, a fox ends with the hare it draws on, and generations arise "
-    "without end each given by the one before; an embodied relatum is given at least the standing "
-    "it arises with, so its arising replenishes every family containing it and embodied "
+    "without end each given by the one before; an embodied relatum comes to stand as it arises, "
+    "so it is given at least the standing it arises with, its arising replenishes every family "
+    "containing it and embodied "
     "generation recurring in a family needs its replenishment to recur whatever is taken; "
     "whatever gives to a family dissipated on takes from it, so the arising of an embodied member "
     "of a family dissipated on lowers its stock and embodied members of a family dissipated on "
@@ -239,6 +248,24 @@ SCOPE = (
     "new relata instead dissipation holds vacuously and the sink opens the family of the sides "
     "while nothing flows into it, and a relatum whose activity is not its standing arises again "
     "and again with nothing given to it. "
+    "Reserve: a reserve does not rise across a step at which its formation is unsupported and "
+    "falls across each such step at which the formation is active; the zero reserve is exactly "
+    "the premise that activity needs support, a condition in a balanced flow given nothing while "
+    "its holder is unsupported and taken from while the holder is active there is a reserve, and "
+    "an active formation whose dependences fail has a positive one; a formation unsupported from "
+    "some step on is active only finitely often, over any stretch at most as often as its "
+    "reserve at the start, and arises only finitely often, so after a loss without return, and "
+    "after the end of an embodied relatum it depends on at a positive need, it is active beyond "
+    "its support at most as often as its reserve; a reserve that also falls across every "
+    "unsupported step at which it is positive bounds the time as well, the formation being "
+    "inactive once as many steps have passed as its reserve; a relatum standing as a condition "
+    "while active, absent at some step and active later, came to stand across some step in "
+    "between; a seed waking twice in the dark on "
+    "its reserve, a seed waking once before its viability is spent and a fox outliving the hare "
+    "by its fat attain these bounds, and the fox read with its dependence "
+    "moved onto its fat meets the premise that activity needs support; a seed given its "
+    "standing while dormant arises later with nothing given to it, and a relatum standing "
+    "throughout wakes without end with nothing given to it, nothing taking part in its flow. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "

@@ -13,6 +13,7 @@ import Becoming.Identity
 import Becoming.Wholes
 import Becoming.Dissipation
 import Becoming.Roles
+import Becoming.Reserve
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -52,7 +53,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arbitrarily late steps, as of formations that take arising without end, needs
   replenishment at arbitrarily late steps;
   more generation without end needs replenishment without bound and, with bounded
-  capacity, renewers without bound; unceasing generation is not yet more.
+  capacity, renewers without bound; unceasing generation is not yet more. A condition
+  coming to stand is given its new standing, so where members of a family come to stand
+  at arbitrarily late steps, its replenishment recurs.
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing.
@@ -77,16 +80,25 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   exchange around it lies within finitely many conditions, it draws in: at arbitrarily
   late steps some formation gives to it and takes from beyond it. With finitely many
   conditions in all, taking does not recur. Where the exchange of a step lies within
-  finitely many conditions, giving needs uptake.
+  finitely many conditions, giving needs uptake. Coming to stand falls under this with
+  no taking of its own: where it recurs in a finite family, the family is open at
+  arbitrarily late steps and, enclosed around, draws in.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
   as a condition exactly while it is active, a formation depending on it lives only
   while it does, its ending ends every formation whose chain of dependence reaches it,
-  and it arises only as another active formation gives to it. Its arising is
-  replenishment, so under dissipation generation that recurs in a finite family leaves it
-  open, draws in where each step's exchange around it lies within finitely many relata,
-  and in a finite world ceases.
+  and it arises only as another active formation gives to it. It comes to stand as it
+  arises, so its arising is replenishment: under dissipation generation that recurs in a
+  finite family leaves it open, draws in where each step's exchange around it lies within
+  finitely many relata, and in a finite world ceases.
+* `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
+  exactly the zero reserve, and a reserve is a held condition. A formation unsupported
+  from some step on is active at most as often as its reserve at the start, so a reserve
+  defers the end after a loss and after coextinction and does not escape it, and a
+  reserve decaying while dormant bounds the time as well. A relatum standing while active,
+  absent earlier, came to stand before it was active: generation bears replenishment where
+  standing rises, not where activity does.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

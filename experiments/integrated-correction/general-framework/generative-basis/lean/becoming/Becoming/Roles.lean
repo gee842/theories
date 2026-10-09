@@ -55,12 +55,15 @@ Results:
   the representation supplies, it is embodied too (`Embodied.arises_from_embodied`). A
   sun standing at one exactly while active meets that premise and depends on nothing
   (`EmbodiedSun`): being embodied is a reading of standing, not of being a life.
-* Generation is replenishment. In a balanced flow an embodied relatum is given at least
-  the standing it arises with (`Embodied.given_of_arises`), so its arising replenishes
-  every family containing it (`Embodied.replenishes`). Where embodied members of a family
-  arise at arbitrarily late steps, its replenishment recurs whatever is taken
-  (`generation_needs_replenishment`): generation carries the requirement itself, not
-  through the uptake it brings as in `Flow.uptake_needs_replenishment`.
+* Generation is replenishment. An embodied relatum comes to stand as it arises: its
+  standing rises from nothing (`Embodied.comesToStand`). So the laws of coming to stand
+  in `Becoming.Flow` and `Becoming.Dissipation` apply to its arising. In a balanced flow
+  it is given at least the standing it arises with (`Embodied.given_of_arises`), so its
+  arising replenishes every family containing it (`Embodied.replenishes`). Where
+  embodied members of a family arise at arbitrarily late steps, its replenishment recurs
+  whatever is taken (`generation_needs_replenishment`): generation carries the
+  requirement itself, not through the uptake it brings as in
+  `Flow.uptake_needs_replenishment`.
 * Generation under dissipation. Whatever gives to a family dissipated on takes from it
   (`Flow.DissipatesOn.takes_of_gives`), so the arising of an embodied member of a family
   dissipated on lowers the family's stock (`Embodied.arising_lowers_on`), as under
@@ -74,7 +77,9 @@ Results:
   (`SprayHanding`); enclosed around from some step on, it draws in: at arbitrarily late
   steps some relatum gives to it and takes from beyond it (`generation_draws_in`). If
   finitely many relata are all there is, embodied relata do not arise at arbitrarily
-  late steps (`generation_ceases`).
+  late steps (`generation_ceases`). What these use of embodiment is that arising is a
+  coming to stand; where activity and standing are out of step, as in dormancy,
+  `Becoming.Reserve` states what generation then bears.
 * Witnesses. A bee and a flower, each depending on itself and on the other and drawing
   on the other, renew each other with no third condition, and every event is living
   (`Mutualism`); in `Mutualism.apart` each depends only on the other, and neither bears
@@ -560,41 +565,44 @@ namespace Web
 
 variable {W : Web X X} {L : Flow X X}
 
+/-- An embodied relatum comes to stand as it arises. -/
+theorem Embodied.comesToStand {x : X} (embodied : W.Embodied x) {t : Nat}
+    (arises : W.Arises t x) : W.ComesToStand t x :=
+  ⟨fun stands => arises.1 ((embodied t).mpr stands), (embodied (t + 1)).mp arises.2⟩
+
+/-- Embodied arising at arbitrarily late steps is coming to stand at arbitrarily late
+steps. -/
+theorem Embodied.coming {cs : List X}
+    (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) :
+    ∀ N, ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.ComesToStand t x :=
+  fun N => match arising N with
+  | ⟨t, x, later, mem, embodied, arises⟩ => ⟨t, x, later, mem, embodied.comesToStand arises⟩
+
 /-- In a balanced flow, an embodied relatum is given at least the standing it arises
 with: its arising is a rise of its standing. -/
 theorem Embodied.given_of_arises (balances : L.Balances W) {x : X} (embodied : W.Embodied x)
     {t : Nat} (arises : W.Arises t x) : W.level (t + 1) x ≤ L.given t x :=
-  Nat.le_trans (Nat.le_add_right _ (L.taken t x)) (Nat.le_of_eq ((balances t x).trans
-    ((congrArg (· + L.given t x) (eq_zero_of_not_pos fun stands =>
-      arises.1 ((embodied t).mpr stands))).trans (Nat.zero_add _))))
+  balances.standing_given (embodied.comesToStand arises)
 
 /-- So the arising of an embodied member of a family replenishes the family. -/
 theorem Embodied.replenishes (balances : L.Balances W) {x : X} (embodied : W.Embodied x)
     {cs : List X} (mem : x ∈ cs) {t : Nat} (arises : W.Arises t x) :
     0 < L.replenishment cs t :=
-  total_pos_of_mem mem (Nat.lt_of_lt_of_le ((embodied (t + 1)).mp arises.2)
-    (embodied.given_of_arises balances arises))
+  balances.standing_replenishes mem (embodied.comesToStand arises)
 
 /-- Generation carries the requirement itself: where embodied members of a family arise at
 arbitrarily late steps, replenishment of the family recurs, whatever is taken. -/
 theorem generation_needs_replenishment (balances : L.Balances W) {cs : List X}
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
-  fun none => match arising T with
-  | ⟨t, _, later, mem, embodied, arises⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-      (embodied.replenishes balances mem arises) (Nat.le_of_eq (none t later)))
+  Flow.standing_needs_replenishment balances (Embodied.coming arising) T
 
 /-- The arising of an embodied member of a family dissipated on across the step lowers
 the family's stock: whatever gives to it takes more from the family. -/
 theorem Embodied.arising_lowers_on (balances : L.Balances W) {ds : List X} {t : Nat}
     (dissipates : L.DissipatesOn ds t) {x : X} (embodied : W.Embodied x) (mem : x ∈ ds)
     (arises : W.Arises t x) : W.stock ds (t + 1) < W.stock ds t :=
-  match total_pos (L.present t) (Nat.lt_of_lt_of_le ((embodied (t + 1)).mp arises.2)
-      (embodied.given_of_arises balances arises)) with
-  | ⟨_, present, gives⟩ => Nat.lt_of_lt_of_le
-      (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total ds (L.take t f)))
-        present (sign_pos (dissipates.takes_of_gives present (total_pos_of_mem mem gives)))))
-      (balances.runs_down dissipates)
+  Flow.standing_lowers_on balances dissipates mem (embodied.comesToStand arises)
 
 /-- Under dissipation, the arising of an embodied member of a family without repetition
 closed across the step lowers the family's stock. -/
@@ -609,12 +617,7 @@ arbitrarily late steps. -/
 theorem generation_ceases_on (balances : L.Balances W) {ds : List X} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
-  fun arising => falls_finitely (W.stock ds) T
-    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (balances.runs_down (dissipates t later)))
-    fun N => match arising (N + T) with
-    | ⟨t, _, later, mem, embodied, arises⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        embodied.arising_lowers_on balances
-          (dissipates t (Nat.le_trans (Nat.le_add_left T N) later)) mem arises⟩
+  fun arising => Flow.standing_ceases_on balances dissipates (Embodied.coming arising)
 
 /-- Under dissipation, a finite family without repetition in which embodied members arise
 at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some
@@ -624,8 +627,7 @@ theorem generation_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (distinct : Distinct ds)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
-  fun closed => generation_ceases_on balances
-    (fun t later => dissipative ds t distinct (closed t later)) arising
+  Flow.standing_opens balances dissipative distinct (Embodied.coming arising) T
 
 /-- Generation draws in: under dissipation, where embodied members of a finite family
 without repetition arise at arbitrarily late steps and the family is enclosed around from
@@ -635,20 +637,16 @@ theorem generation_draws_in (balances : L.Balances W) (dissipative : L.Dissipati
     {ds : List X} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
-  fun inward => generation_ceases_on (T := N + T₀) balances
-    (fun t later => dissipative.dissipatesOn_of_inward distinct
-      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
-      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) arising
+  Flow.standing_draws_in balances dissipative distinct around (Embodied.coming arising) N
 
 /-- If finitely many relata are all there is, embodied relata do not arise at arbitrarily
 late steps under dissipation. -/
 theorem generation_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List X} (distinct : Distinct all) (every : ∀ x, x ∈ all) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x :=
-  fun arising => generation_opens balances dissipative distinct
-    (fun N => match arising N with
-      | ⟨t, x, later, embodied, arises⟩ => ⟨t, x, later, every x, embodied, arises⟩) 0
-    fun _ _ _ _ c outside => absurd (every c) outside
+  fun arising => Flow.standing_ceases balances dissipative distinct every fun N =>
+    match arising N with
+    | ⟨t, x, later, embodied, arises⟩ => ⟨t, x, later, embodied.comesToStand arises⟩
 
 end Web
 

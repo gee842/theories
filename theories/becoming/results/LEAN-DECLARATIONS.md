@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 155 | 2,630 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 156 | 2,676 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -523,6 +523,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RenewalSufficiency.lean](lean-declarations/renewal.md#module-c1beae045284) | 支持与更新 / Support and renewal |
 | [RenewingFormation.lean](lean-declarations/ethics.md#module-0acdeff0007e) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [ReproductionNetwork.lean](lean-declarations/other.md#module-6a029e611328) | 其他形式研究 / Other formal studies |
+| [Reserve.lean](lean-declarations/core.md#module-4f6ff4eb4abf) | 生成核心与关系结构 / Generative core and relational structure |
 | [ReserveTurnover.lean](lean-declarations/shared.md#module-6fd1230f8bb2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [ReservedShutdown.lean](lean-declarations/ethics.md#module-3f4ac99220c0) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [ReservedShutdownCases.lean](lean-declarations/ethics.md#module-9ec915dfe498) | 规范根据与生成方向 / Normative grounding and generative direction |

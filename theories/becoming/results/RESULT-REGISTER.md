@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-107 migrated records: 103 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+108 migrated records: 104 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -102,6 +102,7 @@
 | `relational-reading-comparison` | [以关系读生成：比较原则把消耗型形成排在其不发生之下 / Read relationally, comparison ranks consuming formation below its absence](records/relational-reading-comparison.md) | theorem | recorded-checked |
 | `relational-renewal-classification` | [参与关系中的更新与消耗：关系性分类 / Renewing and consuming as a relation to participated conditions](records/relational-renewal-classification.md) | theorem | recorded-checked |
 | `renewing-consuming-formation` | [更新与消耗的形成：一个磨损规律类中的动力学区分 / Renewing and consuming formation: a dynamical distinction in one wear-law class](records/renewing-consuming-formation.md) | theorem | recorded-checked |
+| `reserve-defers-ending` | [储备推迟终结而不逃脱终结：Dependent 是零储备，储备是所持的条件 / A reserve defers the end and does not escape it: Dependent is the zero reserve, and a reserve is a held condition](records/reserve-defers-ending.md) | theorem | recorded-checked |
 | `reserved-shutdown-during-recovery` | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](records/reserved-shutdown-during-recovery.md) | theorem | recorded-checked |
 | `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |

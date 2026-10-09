@@ -998,6 +998,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean)
 
+## reserve-defers-ending ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用 Supported、Dependent 与损失的结局；零储备恰是 Dependent，consumed_lasts 推广 consumed_ends_when_fixed。 / Reuses Supported, Dependent and the outcomes of a loss; the zero reserve is exactly Dependent, and consumed_lasts generalizes consumed_ends_when_fixed.
+
+**Producer output / 上游输出:** 活动只在有支持处；损失之后的三种结局。 / Activity only where supported; three outcomes of a loss.
+
+**Consumer input / 下游输入:** 活动可以越过支持，次数至多是所持的储备。 / Activity can go beyond support, at most as often as what is held allows.
+
+**Retained conditions / 保留条件:** Carries；没有回程的损失与不变的依存。 / Carries; a loss without return with the dependence unchanged.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## reserve-defers-ending ← becoming-renewal-reading
+
+`formal-reuse` — 复用 falls_finitely：从某步起不上升的储备只下降有限多次。 / Reuses falls_finitely: a reserve that never rises from some step on falls only finitely often.
+
+**Producer output / 上游输出:** 从某步起不上升的观测量只下降有限多次。 / An observable that never rises from some step on falls only finitely often.
+
+**Consumer input / 下游输入:** 不被支持的形成只在有限多步活跃。 / An unsupported formation is active only finitely often.
+
+**Retained conditions / 保留条件:** Carries；从某步起不被支持。 / Carries; unsupported from some step on.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
+## reserve-defers-ending ← life-as-condition-of-life
+
+`formal-reuse` — 复用 Embodied；coextinct_lasts 推广 coextinct 到有储备的情形。 / Reuses Embodied; coextinct_lasts generalizes coextinct to formations with a reserve.
+
+**Producer output / 上游输出:** 体现的关系项终结每个依存链到达它的形成（Dependent 之下）。 / An embodied relatum's ending ends every formation whose chain reaches it (under Dependent).
+
+**Consumer input / 下游输入:** 有储备时，依存于它的形成在它终结后至多再活跃其储备那么多次。 / With a reserve, a formation depending on it is active after its end at most as often as its reserve.
+
+**Retained conditions / 保留条件:** Embodied；以正需要的依存；Carries。 / Embodied; dependence at a positive need; Carries.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## reserve-defers-ending ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、给予与取用；储备是流中所持条件的水平。 / Reuses flows, balance, giving and taking; a reserve is the standing of a held condition in a flow.
+
+**Producer output / 上游输出:** 平衡的流：水平的变化恰是取用与给予之差。 / Balanced flows: a level changes by exactly what is taken and given.
+
+**Consumer input / 下游输入:** 所持的条件承载其持有者。 / A held condition carries its holder.
+
+**Retained conditions / 保留条件:** 平衡；不被支持时没有给予；活跃时取用。 / Balance; no giving while unsupported; taking while active.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## reserved-shutdown-during-recovery ← recoverable-mediated-change
 
 `formal-reuse` — admission_establishes_stop_access 与 recovery_attempt_keeps_stop_margin 直接复用准备、tick 及 crash 的证据相容性；再接入实际停止和有限周期完成。 / admission_establishes_stop_access and recovery_attempt_keeps_stop_margin directly reuse evidence coherence from preparation, tick and crash; this then connects to executed stopping and finite-cycle completion.

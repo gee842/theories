@@ -50,9 +50,18 @@ on dissipation. This module states that premise on flows and proves what it carr
   dissipation, a family without repetition enclosed around and inward across a step is
   dissipated on (`Dissipative.dissipatesOn_of_inward`), so where taking from it recurs
   and it is enclosed around from some step on, at arbitrarily late steps some formation
-  gives to it and takes from beyond it (`taking_draws_in`). Where a formation is itself
-  a condition, its arising falls under this with no taking of its own
-  (`Becoming.Roles`, `Web.generation_draws_in`).
+  gives to it and takes from beyond it (`taking_draws_in`).
+* Coming to stand falls under this with no taking of its own. A member of a family
+  dissipated on that comes to stand lowers the family's stock, since whatever gives to it
+  takes more from the family (`standing_lowers_on`, and `standing_lowers` for a closed
+  family under dissipation), so members of a family dissipated on from some step on do
+  not come to stand at arbitrarily late steps (`standing_ceases_on`). Under dissipation,
+  a finite family without repetition whose members come to stand at arbitrarily late
+  steps is therefore not closed from any step on (`standing_opens`) and, enclosed around
+  from some step on, draws in (`standing_draws_in`); if finitely many conditions are all
+  there is, none comes to stand at arbitrarily late steps (`standing_ceases`). Where a
+  formation is itself a condition standing exactly while it is active, its arising is
+  such a coming to stand (`Becoming.Roles`, `Web.generation_draws_in`).
 * The premises are consistent with more without end: a sun burns a fresh fuel at every
   step and gives a pool less than it burns, while ever more growers take from the pool
   (`Frontier`). The conditions it draws on are not contained in any finite family, while
@@ -95,10 +104,6 @@ theorem pos_of_sign : ∀ {n : Nat}, 0 < sign n → 0 < n
 theorem sign_pos : ∀ {n : Nat}, 0 < n → 0 < sign n
   | 0, positive => positive
   | _ + 1, _ => Nat.succ_pos 0
-
-theorem eq_zero_of_not_pos : ∀ {n : Nat}, ¬ 0 < n → n = 0
-  | 0, _ => rfl
-  | n + 1, not => absurd (Nat.succ_pos n) not
 
 /-- A member's value is at most the total. -/
 theorem le_total_of_mem {q : α → Nat} {a : α} : ∀ {as : List α}, a ∈ as → q a ≤ total as q
@@ -429,6 +434,71 @@ theorem taking_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
     (fun t later => dissipative.dissipatesOn_of_inward distinct
       (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
       (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) recurs
+
+/-! ## Coming to stand -/
+
+/-- A member of a family dissipated on across the step coming to stand lowers the family's
+stock: whatever gives to it takes more from the family. -/
+theorem standing_lowers_on (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (comes : W.ComesToStand t c) :
+    W.stock ds (t + 1) < W.stock ds t :=
+  match total_pos (L.present t) (Nat.lt_of_lt_of_le comes.2
+      (balances.standing_given comes)) with
+  | ⟨_, present, gives⟩ => Nat.lt_of_lt_of_le
+      (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total ds (L.take t f)))
+        present (sign_pos (dissipates.takes_of_gives present (total_pos_of_mem mem gives)))))
+      (balances.runs_down dissipates)
+
+/-- Under dissipation, a member of a family without repetition closed across the step
+coming to stand lowers the family's stock. -/
+theorem standing_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List C} (distinct : Distinct ds) {t : Nat} (closed : L.ClosedAt ds t) {c : C}
+    (mem : c ∈ ds) (comes : W.ComesToStand t c) : W.stock ds (t + 1) < W.stock ds t :=
+  standing_lowers_on balances (dissipative ds t distinct closed) mem comes
+
+/-- Members of a family dissipated on from some step on do not come to stand at
+arbitrarily late steps. -/
+theorem standing_ceases_on (balances : L.Balances W) {ds : List C} {T : Nat}
+    (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c :=
+  fun coming => falls_finitely (W.stock ds) T
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (balances.runs_down (dissipates t later)))
+    fun N => match coming (N + T) with
+    | ⟨t, _, later, mem, comes⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+        standing_lowers_on balances (dissipates t (Nat.le_trans (Nat.le_add_left T N) later))
+          mem comes⟩
+
+/-- Under dissipation, a finite family without repetition whose members come to stand at
+arbitrarily late steps is not closed from any step on. -/
+theorem standing_opens (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List C} (distinct : Distinct ds)
+    (coming : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c) (T : Nat) :
+    ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
+  fun closed => standing_ceases_on balances
+    (fun t later => dissipative ds t distinct (closed t later)) coming
+
+/-- Coming to stand draws in: under dissipation, where members of a finite family without
+repetition come to stand at arbitrarily late steps and the family is enclosed around from
+some step on, at arbitrarily late steps some formation gives to the family and takes from
+a condition beyond it. -/
+theorem standing_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+    (coming : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c) (N : Nat) :
+    ¬ ∀ t, N ≤ t → L.Inward ds t :=
+  fun inward => standing_ceases_on (T := N + T₀) balances
+    (fun t later => dissipative.dissipatesOn_of_inward distinct
+      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) coming
+
+/-- If finitely many conditions are all there is, no condition comes to stand at
+arbitrarily late steps under dissipation. -/
+theorem standing_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
+    {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) :
+    ¬ ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
+  fun coming => standing_opens balances dissipative distinct
+    (fun N => match coming N with
+      | ⟨t, c, later, comes⟩ => ⟨t, c, later, every c, comes⟩) 0
+    fun _ _ _ _ c outside => absurd (every c) outside
 
 end Flow
 
