@@ -7,7 +7,10 @@ import Becoming.Premises
 rest, and in a finite world arising recurs exactly when ceasing does. This module states
 what does the work. The world need not be finite: what brings it to rest is finitely many
 standing at each step and enclosure around them from some step on, with a census of what
-is active; for arising and ceasing to recur together, a bound on that census.
+is active; for arising and ceasing to recur together, a bound on that census. In a world
+that comes to rest so, only finitely many relata ever stand or are active
+(`World.rest_few`): beyond finite worlds, the rest theorem adds relata that never stand
+or act.
 Under balance and dissipation, across a step whose exchange, together with whatever
 stands before or after it, lies within finitely many conditions, the total standing does
 not rise, and it falls whenever any condition's standing changes: a rise is given to, and
@@ -28,8 +31,9 @@ giving needs uptake there; a fall is taken from.
 * **A bounded count keeps them together.** Where at most `B` relata are active at each
   step (`World.CountedWithin`), arising recurs exactly when ceasing does
   (`World.CountedWithin.arising_iff_ceasing`, from `Web.unceasing_iff_bounded`). Every
-  census of a finite world is bounded (`World.Finite.countedWithin`), so the law of
-  finite worlds is a case (`World.Finite.arising_iff_ceasing`); `procession`, with one
+  census of a finite world is bounded, with no decidability
+  (`World.Finite.census_bounded`), so where activity is decided the law of finite worlds
+  is a case (`World.Finite.countedWithin`, `World.Finite.arising_iff_ceasing`); `procession`, with one
   relatum active at a time among infinitely many, keeps arising and ceasing
   (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). The bound may
   grow between: where at most `B t` relata are active at each step `t`
@@ -68,6 +72,13 @@ giving needs uptake there; a fall is taken from.
   other way, arising without end in such a world is incompatible with every step from
   some step on being enclosed: it exchanges beyond every finite family
   (`World.arising_opens`).
+* **What comes to rest is few.** Where what holds is listed at each step and coming to be
+  does not recur, not unboundedly many members ever hold (`Listed.few_of_quiet`). So in
+  every world that comes to rest under the rest theorem, only finitely many relata are
+  ever active and only finitely many ever stand (`World.rest_few`); conversely, where
+  finitely many are ever active and activity is decided, a census exists
+  (`World.counted_of_ever`). Beyond finite worlds the rest theorem reaches only relata
+  that never stand or act, as the idle ground of `hatch` (`World.hatch_idle`).
 * **The premises decide neither enclosure nor openness.** The sides of `Handing`, also
   taking a unit from each of infinitely many ground relata and giving it back at every
   step, meet all eight premises of `Becoming.Premises` and arise without end. No step is
@@ -75,10 +86,13 @@ giving needs uptake there; a fall is taken from.
   (`World.exposed_world`); nothing depends on anything, so activity needing support and
   bounded transmission hold vacuously too. Their openness is exchange at zero net: the
   total standing stays at one, and the ground relata stand at nothing
-  (`World.exposed_standing`). Mutualists meet the eight with every step enclosed and come
-  to rest (`World.openness_contingent`). So does `brood`, in which every premise binds:
+  (`World.exposed_standing`). Nor does openness with the eight give arising without
+  end: a holder taking a unit from each ground relatum and giving it back at every step
+  meets the eight with no step enclosed, and nothing arises or ceases
+  (`World.holding_world`). Mutualists meet the eight with every step enclosed and come
+  to rest (`World.openness_contingent`). So does `hatch`, in which every premise binds:
   after the child arises and the parent ceases, every step is enclosed and nothing
-  changes, though the world is not finite (`World.brood_rests`).
+  changes, though the world is not finite (`World.hatch_rests`).
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
@@ -282,12 +296,20 @@ theorem CountedBy.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] {B
       | ⟨t, later, low⟩ => ⟨t, later, Nat.le_trans (bounded t) low⟩,
      arising_of_ceasing ⟨alive, census⟩⟩
 
-/-- Every census of a finite world counts within the number of its relata. -/
+/-- Every census of a finite world counts within the number of its relata; no
+decidability is needed (the eleventh review's probe). -/
+theorem Finite.census_bounded (finite : w.Finite) :
+    ∃ B, ∀ alive, w.web.Census alive → ∀ t, (alive t).length ≤ B :=
+  match finite with
+  | ⟨all, _, every⟩ =>
+    ⟨all.length, fun _ census t => length_le_of_sub (census t).1 fun x _ => every x⟩
+
+/-- A finite world whose activity is decided has a census (`Finite.counted`), and it counts
+within the number of its relata. -/
 theorem Finite.countedWithin [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
     ∃ B, w.CountedWithin B :=
-  match finite, finite.counted with
-  | ⟨all, _, every⟩, ⟨alive, census⟩ =>
-    ⟨all.length, alive, census, fun t => length_le_of_sub (census t).1 fun x _ => every x⟩
+  match finite.census_bounded, finite.counted with
+  | ⟨B, bounded⟩, ⟨alive, census⟩ => ⟨B, alive, census, bounded alive census⟩
 
 /-- So the law of finite worlds, `World.arising_iff_ceasing`, is a case of the bounded
 law. -/
@@ -557,6 +579,79 @@ theorem arising_opens (counted : w.Counted)
 
 end World
 
+/-! ## What comes to rest is few -/
+
+/-- The lists of the steps up to `n`, joined. -/
+def gather (l : Nat → List α) : Nat → List α
+  | 0 => l 0
+  | n + 1 => l (n + 1) ++ gather l n
+
+theorem gather_self {l : Nat → List α} {a : α} : ∀ {s : Nat}, a ∈ l s → a ∈ gather l s
+  | 0, mem => mem
+  | _ + 1, mem => mem_append_left _ mem
+
+theorem mem_gather {l : Nat → List α} {a : α} {s : Nat} (mem : a ∈ l s) :
+    ∀ {n}, s ≤ n → a ∈ gather l n
+  | _, .refl => gather_self mem
+  | m + 1, .step within => mem_append_right (l (m + 1)) (mem_gather mem within)
+
+/-- A determination failing at `N` and holding at a later `T` came to be across a step
+from `N` on. -/
+theorem comes_after {p : Nat → Prop} [∀ t, Decidable (p t)] {N : Nat} (fails : ¬ p N) :
+    ∀ {T}, N ≤ T → p T → ∃ t, N ≤ t ∧ ComesToBe p t
+  | _, .refl, holds => absurd holds fails
+  | m + 1, .step within, holds =>
+    if h : p m then comes_after fails within h else ⟨m, within, h, holds⟩
+
+/-- Where what holds is listed at each step and coming to be does not recur, not
+unboundedly many members ever hold: not every finite list misses a member holding at some
+step (the eleventh review's probe). -/
+theorem Listed.few_of_quiet {p : α → Nat → Prop} [∀ a t, Decidable (p a t)]
+    {l : Nat → List α} (listed : Listed p l)
+    (quiet : ¬ ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ¬ ∀ L : List α, ∃ t a, p a t ∧ ¬ a ∈ L :=
+  fun many => quiet fun N => match many (gather l N) with
+    | ⟨t, a, holds, out⟩ =>
+      have fails : ¬ p a N := fun h => out (mem_gather (((listed N).2 a).mp h) (Nat.le_refl N))
+      match Nat.decLe N t with
+      | isTrue later => match comes_after fails later holds with
+        | ⟨s, after, comes⟩ => ⟨s, a, after, comes⟩
+      | isFalse early => absurd (mem_gather (((listed t).2 a).mp holds)
+          (Nat.le_of_lt (Nat.gt_of_not_le early))) out
+
+namespace World
+
+variable {w : World}
+
+/-- Read of activity: under a census, where arising does not recur, not unboundedly many
+relata are ever active. -/
+theorem few_active [∀ t x, Decidable (w.web.active t x)] {alive : Nat → List w.Relatum}
+    (census : w.web.Census alive) (quiet : ¬ w.ArisingRecurs) :
+    ¬ ∀ L : List w.Relatum, ∃ t x, w.web.active t x ∧ ¬ x ∈ L :=
+  Listed.few_of_quiet (p := fun x t => w.web.active t x) census quiet
+
+/-- In every world to which the rest theorem applies, with enclosure from some step on not
+refuted, not unboundedly many relata are ever active and not unboundedly many ever stand
+(the eleventh review's probe). So the worlds it covers beyond finite ones add only relata
+that never stand or act. -/
+theorem rest_few [∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
+    {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
+    (embodied : w.ArisingEmbodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
+    {T : Nat} (around : ∀ t, T ≤ t → ¬¬ w.flow.AroundStanding stand t) :
+    (¬ ∀ L : List w.Relatum, ∃ t x, w.web.active t x ∧ ¬ x ∈ L) ∧
+    (¬ ∀ L : List w.Relatum, ∃ t x, 0 < w.web.level t x ∧ ¬ x ∈ L) :=
+  have still := Flow.stills balanced dissipative standing around
+  match counted with
+  | ⟨_, census⟩ =>
+    ⟨few_active census fun arising => still fun N => match arising N with
+      | ⟨t, x, later, arises⟩ =>
+        ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩,
+     Listed.few_of_quiet (p := fun x t => 0 < w.web.level t x) standing fun coming =>
+       still fun N => match coming N with
+       | ⟨t, x, later, comes⟩ => ⟨t, x, later, .inl (Web.ComesToStand.rises (W := w.web) comes)⟩⟩
+
+end World
+
 /-! ## Openness cannot be dropped -/
 
 namespace Exposed
@@ -649,13 +744,60 @@ theorem holder_after : ∀ t, Handing.stands (Handing.holder t) (t + 1) = 0
 
 end Exposed
 
+namespace Holding
+
+/-- One side stands at one throughout; the other side and the ground stand at nothing. -/
+def level (_ : Nat) : Exposed.Relatum → Nat
+  | .side true => 1
+  | .side false => 0
+  | .ground _ => 0
+
+/-- At every step the standing side takes a unit from each ground relatum and gives it
+back. -/
+def flow : Flow Exposed.Relatum Exposed.Relatum where
+  present _ := [.side true]
+  take _ x y := match x, y with
+    | .side true, .ground _ => 1
+    | .side true, .side _ => 0
+    | .side false, _ => 0
+    | .ground _, _ => 0
+  give _ x y := match x, y with
+    | .side true, .ground _ => 1
+    | .side true, .side _ => 0
+    | .side false, _ => 0
+    | .ground _, _ => 0
+
+/-- Every relatum is active while it stands, depends on nothing, and draws on everything. -/
+def web : Web Exposed.Relatum Exposed.Relatum where
+  level := level
+  active t x := 0 < level t x
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := True
+
+theorem open_at (t : Nat) : ¬ flow.Enclosed t :=
+  fun ⟨cs, _, closed⟩ => Nat.zero_ne_one
+    (closed (.side true) (.head _) _ (Exposed.outside cs)).1.symm
+
+theorem census : web.Census fun _ => [.side true] :=
+  fun _ => ⟨⟨fun no => (nomatch no), trivial⟩, fun x => match x with
+    | .side true => ⟨fun _ => .head _, fun _ => Nat.zero_lt_one⟩
+    | .side false => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+        fun (mem : Exposed.Relatum.side false ∈ [Exposed.Relatum.side true]) => match mem with
+          | .tail _ no => (nomatch no)⟩
+    | .ground n => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+        fun (mem : Exposed.Relatum.ground n ∈ [Exposed.Relatum.side true]) => match mem with
+          | .tail _ no => (nomatch no)⟩⟩
+
+end Holding
+
 namespace World
 
 /-- The sides of `Handing` exchanging with an unbounded ground. -/
 def exposed : World :=
   ⟨Exposed.Relatum, Exposed.flow, Exposed.web⟩
 
-/-- In a world meeting all eight premises arising recurs: no step is enclosed, so
+/-- `exposed` meets all eight premises and arising recurs in it: no step is enclosed, so
 dissipation binds at none. -/
 theorem exposed_world :
     exposed.Premised ∧ exposed.ArisingRecurs ∧ ∀ t, ¬ exposed.flow.Enclosed t :=
@@ -700,15 +842,52 @@ theorem openness_contingent :
   ⟨⟨exposed_world.1, exposed_world.2.2, exposed_world.2.1⟩,
    ⟨mutualism_premised, mutualism_finite.enclosed, mutualism_world.2.1⟩⟩
 
-/-- A world meeting all eight premises with each binding comes to rest (`brood_binds`).
+/-- One side holding its standing while exchanging at zero net with an unbounded ground. -/
+def holding : World :=
+  ⟨Exposed.Relatum, Holding.flow, Holding.web⟩
+
+/-- Openness with the eight premises does not give arising without end: `holding` meets all
+eight with no step enclosed, and nothing ever arises or ceases (the eleventh review's
+probe). Under a census, with whatever arises embodied, balance and dissipation, openness is
+necessary for arising without end (`arising_opens`), not sufficient. -/
+theorem holding_world :
+    holding.Premised ∧ (∀ t, ¬ holding.flow.Enclosed t) ∧ ¬ holding.ArisingRecurs ∧
+    ¬ holding.CeasingRecurs ∧ ¬ holding.Finite :=
+  ⟨.of (fun _ _ _ _ no => no.elim)
+     (fun _ c => match c with
+      | .side true => rfl
+      | .side false => rfl
+      | .ground _ => rfl)
+     (fun _ f _ present _ => match f, present with
+      | _, .head _ => Nat.zero_lt_one
+      | _, .tail _ no => (nomatch no))
+     (fun _ f _ present _ => match f, present with
+      | _, .head _ => ⟨Nat.zero_lt_one, trivial⟩
+      | _, .tail _ no => (nomatch no))
+     (fun cs t distinct closed => absurd ⟨cs, distinct, closed⟩ (Holding.open_at t))
+     (fun _ _ => Iff.rfl) ⟨_, Holding.census⟩ ⟨0, fun _ _ _ _ _ no => no.elim⟩,
+   Holding.open_at,
+   fun arising => match arising 0 with
+    | ⟨_, x, _, arises⟩ => match x, arises with
+      | .side true, arises => arises.1 Nat.zero_lt_one
+      | .side false, arises => absurd arises.2 (Nat.lt_irrefl 0)
+      | .ground _, arises => absurd arises.2 (Nat.lt_irrefl 0),
+   fun ceasing => match ceasing 0 with
+    | ⟨_, x, _, ceases⟩ => match x, ceases with
+      | .side true, ceases => ceases.2 Nat.zero_lt_one
+      | .side false, ceases => absurd ceases.1 (Nat.lt_irrefl 0)
+      | .ground _, ceases => absurd ceases.1 (Nat.lt_irrefl 0),
+   fun ⟨all, _, every⟩ => Exposed.outside all (every _)⟩
+
+/-- A world meeting all eight premises with each binding comes to rest (`hatch_binds`).
 Across the first step the child arises and the parent ceases; every step is enclosed
 within the food, the parent and the child, and finitely many stand at each step, though
 the world is not finite. -/
-theorem brood_rests : brood.web.Arises 0 .child ∧ brood.web.Ceases 0 .parent ∧
-    ¬ brood.ArisingRecurs ∧ ¬ brood.CeasingRecurs :=
+theorem hatch_rests : hatch.web.Arises 0 .child ∧ hatch.web.Ceases 0 .parent ∧
+    ¬ hatch.ArisingRecurs ∧ ¬ hatch.CeasingRecurs :=
   ⟨⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩, ⟨Nat.zero_lt_one, Nat.lt_irrefl 0⟩,
-   rests_enclosed brood_counted (fun _ _ => Iff.rfl) brood_balanced brood_dissipative
-     (T := 0) fun t _ => ⟨Brood.kin, Brood.kin_distinct, Brood.closed t⟩⟩
+   rests_enclosed hatch_counted (fun _ _ => Iff.rfl) hatch_balanced hatch_dissipative
+     (T := 0) fun t _ => ⟨Hatch.kin, Hatch.kin_distinct, Hatch.closed t⟩⟩
 
 end World
 

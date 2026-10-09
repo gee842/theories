@@ -16,10 +16,13 @@ to be decidable at each step.
   it holds before and fails after (`ComesToBe`, `CeasesToBe`). A formation arising and
   ceasing, a dependence forming and dissolving, and a condition coming to stand and
   ceasing to stand are this one change (`Web.change_readings`). What holds and ceases at
-  no later step holds on (`persists`). With excluded middle as a hypothesis, what does not
-  recur has a step after which it does not occur (`exists_not_of_em`). A formation's
-  support changes only through its relations: it stays supported where no dependence
-  forms or tightens and no condition it depends on falls (`Web.supported_of`).
+  no later step holds on (`persists`), and with excluded middle as a hypothesis in place
+  of decidability too (`persists_of_em`); what fails and comes to be at no later step
+  keeps failing, with no decidability (`stays_failing`). With excluded middle as a
+  hypothesis, what does not recur has a step after which it does not occur
+  (`exists_not_of_em`). A formation's support changes only through its relations: it
+  stays supported where no dependence forms or tightens and no condition it depends on
+  falls (`Web.supported_of`).
 * **Rises and falls over a stretch.** Over any stretch of steps, an amount at the end with
   everything it fell is the amount at the start with everything it rose (`over_stretch`),
   and so for the total of a finite family with the rises and falls of its members
@@ -343,6 +346,23 @@ theorem exists_not_of_em (em : ∀ P : Prop, P ∨ ¬ P) {Q : Nat → Prop} (not
   | .inr nothing => absurd (fun N => match em (Q N) with
       | .inl q => q
       | .inr nq => absurd ⟨N, nq⟩ nothing) notAll
+
+/-- What fails and comes to be at no later step keeps failing; no decidability is needed. -/
+theorem stays_failing {p : Nat → Prop} {S : Nat} (fails : ¬ p S)
+    (still : ∀ t, S ≤ t → ¬ ComesToBe p t) : ∀ n, ¬ p (S + n)
+  | 0 => fails
+  | n + 1 => fun holds =>
+    still (S + n) (Nat.le_add_right S n) ⟨stays_failing fails still n, holds⟩
+
+/-- With excluded middle as a hypothesis in place of decidability, what holds and ceases to
+be at no later step holds on, as in `persists`. -/
+theorem persists_of_em (em : ∀ P : Prop, P ∨ ¬ P) {p : Nat → Prop} {S : Nat} (holds : p S)
+    (still : ∀ t, S ≤ t → ¬ CeasesToBe p t) : ∀ n, p (S + n)
+  | 0 => holds
+  | n + 1 => match em (p (S + n + 1)) with
+    | .inl next => next
+    | .inr next =>
+      absurd ⟨persists_of_em em holds still n, next⟩ (still (S + n) (Nat.le_add_right S n))
 
 /-- How many members of a finite family come to be across the step from `t`. -/
 def comings (as : List α) (p : α → Nat → Prop) [∀ a t, Decidable (p a t)] (t : Nat) : Nat :=

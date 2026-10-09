@@ -119,7 +119,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   generation that recurs in a finite family leaves it open, draws in where each step's
   exchange around it lies within finitely many relata, and in a finite world ceases.
   Across a step at which the family is dissipated on, its arising comes with another
-  member of the family falling; without dissipation it need not.
+  member of the family falling; without dissipation it need not. Where activity needs
+  support, undermining an unchanged dependence leaves the relatum depending inactive after
+  the step: its ending where it was active, no ending where it was dormant.
 * `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
   exactly the zero reserve; a reserve can be a held condition, and where none is
   represented it is supplied. Where a held condition carries the formations, moving
@@ -146,10 +148,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world
-  whose activity is decided arising recurs exactly when ceasing does, asked without
-  decidability this law implies excluded middle, and with infinitely many relata either
-  recurs without the other. Ren confirmed arising and ceasing as the names of this
-  reading; which parts Ren's generative and degenerative name is Ren's to choose. Each
+  whose activity is decided arising recurs exactly when ceasing does; asked of every
+  finite world without decidability this law is equivalent to excluded middle, and with
+  excluded middle as a hypothesis it holds of every finite world; with infinitely many
+  relata either recurs without the other. Ren confirmed arising and ceasing as the
+  English names of this reading; which parts Ren's generative and degenerative name is Ren's to choose. Each
   premise is met by some worlds and not by others. Arising recurring or not,
   and ceasing recurring or not, occur both with every event living and with some event
   not living. Dissipation brings a finite,
@@ -161,7 +164,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   active relata give across an enclosed step, and every step of a finite world is
   enclosed. The remaining eight premises are independent relative to one another: for
   each, a world meets the other seven and not it. One world meets all eight, and in
-  another, not finite, each of the eight binds. A finite world whose activity is decided
+  another each of the eight binds, the world not finite only through idle relata, with
+  finitely many ever active. A finite world whose activity is decided
   and which meets them comes to rest, by three of them.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
@@ -174,11 +178,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   standing under a census of what stands. The rest theorem: a world
   with a census of what is active and of what stands, whose arising is embodied, balanced
   and dissipative, comes to rest once enclosed around what stands; the world need not be
-  finite, but finitely many must stand at each step. The finite rest of `Becoming.Space`
+  finite, but finitely many must stand and finitely many be active at each step, and in
+  a world that so comes to rest not unboundedly many relata ever stand or act. The finite rest of `Becoming.Space`
   and the rest of worlds whose relata are all embodied are its cases, and each census is
-  needed. The eight premises decide neither enclosure nor openness: a world meeting them
-  with no step enclosed keeps arising, at zero net exchange, and one meeting them with
-  every step enclosed comes to rest, as does the world in which each of them binds.
+  needed. The eight premises decide neither enclosure nor openness: one world meeting
+  them with no step enclosed keeps arising, at zero net exchange, and another never
+  arises, so openness is necessary for arising without end and not sufficient; one
+  meeting them with every step enclosed comes to rest, as does the world in which each
+  of them binds.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

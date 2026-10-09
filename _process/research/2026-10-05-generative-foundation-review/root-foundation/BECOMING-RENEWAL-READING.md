@@ -1629,7 +1629,7 @@ Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则�
 | `mark`、`mark_cases`、`mark_le_one`、`mark_pos`、`mark_iff`、`excess_mark`、`rise_mark`、`fall_mark` | 一个可判定的规定计 1 或 0；它的上升恰是开始成立，下降恰是不再成立。`mark` 与 `mark_cases` 从 `Reserve` 移来 |
 | `comings`、`ceasings`、`held_over_stretch`、`marks_within`、`keep_pace` | 有限家族中：终点成立的成员连同其间不再成立的，恰是起点成立的成员连同其间开始成立的；开始成立与不再成立的次数之差不超过成员数 |
 | `Recurs`、`Recurs.mono`、`Recurs.accumulates`、`pos_of_exceeds`、`coming_recurs_iff` | 有限家族中，开始成立复现恰当不再成立复现 |
-| `Web.activity_over_stretch`、`Web.arising_recurs_iff`、`Web.unceasing_iff` | 读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的；它们在任意晚的步生起恰当在任意晚的步止息；形成有限多时，生成不息恰当某个形成在任意晚的步止息 |
+| `Web.activity_over_stretch`、`Web.arising_recurs_iff`、`Web.unceasing_iff` | 读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的；它们在任意晚的步生起恰当在任意晚的步止息；形成有限多时，生起复现恰当某个形成在任意晚的步止息（P29b 更正，原文“生成不息恰当……”；见 §42 R5） |
 | `Web.standing_recurs_iff` | 读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在 |
 | `Dawn.unceasing`、`never_ceases`、`rises`、`never_falls` | 无限家族：形成 f 跨第 f 步生起、从不止息，水平每步上升、从不下降。只生而不止需要无尽的新，上升复现而不下降需要无界 |
 | `Dusk.ceasing`、`nothing_arises` | 无限家族：全部形成一开始活跃，形成 f 跨第 f 步止息，没有任何生起。只止而不生需要无尽的初始 |
@@ -2101,7 +2101,7 @@ Integration: §26、§28–§33 的更正；审查 §4 的第 1–6 项完成，
 
 *反驳 2：`law_decides` 削弱了“不加前提的规律”。* 它不削弱定理，而是写明定理的逻辑承诺：在纯核心中规律以可判定为前提，这正是它能构造性地证明的形式；不加这一前提，规律就是排中律，不能进入纯核心。经典地每个世界的活动都可判定，所以它不是关于任何展开的前提，但它是逻辑的承诺，按 Ren 的优先指令与方法、模型、对应与规范的前提分开公开。
 
-*反驳 3：grazing 也依赖读法。* 它依赖逐步读法中“侵蚀”的定义：活跃者的汲取使另一个关系项已满足的依存在该步之后落空。这是 `Living` 的定义本身，不是附加的选择。它不依赖终结之步自我汲取的判定：不活的事件汲取的是池，池不是汲取者，也从不活跃（P25b 更正：它在 §8 所写的选择之外，但被侵蚀的食草者在该步之后不活跃（`grazing_browser_ends`）；活动需要支持时，对持续不变的依存的每次侵蚀都与依存者的终结同时（`Web.Dependent.inactive_below`），所以“不依赖终结之步的判定”预设了 Ren 的选择只涉及被汲取者自身的终结；见 §38 O10）。它仍然依赖两类读法的同一对应，这是表示的前提，已公开。
+*反驳 3：grazing 也依赖读法。* 它依赖逐步读法中“侵蚀”的定义：活跃者的汲取使另一个关系项已满足的依存在该步之后落空。这是 `Living` 的定义本身，不是附加的选择。它不依赖终结之步自我汲取的判定：不活的事件汲取的是池，池不是汲取者，也从不活跃（P25b 更正：它在 §8 所写的选择之外，但被侵蚀的食草者在该步之后不活跃（`grazing_browser_ends`）；活动需要支持时，对持续不变的依存的每次侵蚀都使依存者在该步之后不活跃（`Web.Dependent.inactive_below`；P29b 更正，原文“都与依存者的终结同时”：依存者原本休眠时没有终结，见 §42 R1），所以“不依赖终结之步的判定”预设了 Ren 的选择只涉及被汲取者自身的终结；见 §38 O10）。它仍然依赖两类读法的同一对应，这是表示的前提，已公开。
 
 *反驳 4：既然 `selected` 不是选择项，`price` 还有什么用。* `price` 是会计恒等式，审查与本研究都这样说；它的用处在于加权总量受条件的水平所限（`selected_le`、`selection_within`），这把支持对给予的约束写进后代的总量。真正的选择项需要整数或有理数的量与均值，列为进一步的证明。
 
@@ -2190,7 +2190,7 @@ Integration: 计划 P27；回答 §35 留下的一半与 ceasing-needs-arising �
 | `Listed.ceases_or_kept`、`ceases_or_more` | 从 N 到 T 之间，或者有成员不再成立，或者 N 时成立的在 T 时都成立；一次开始成立若此前没有不再成立，使列表比 N 时长 |
 | `Listed.ceases_within`、`ceasing_of_coming` | 列表都不长于 B 时，开始成立复现需要不再成立复现：列表不能长过 B |
 | `Listed.coming_iff_ceasing` | 列表有界时两者同步 |
-| `Web.Census`、`Web.ceasing_of_arising`、`Web.unceasing_iff_bounded` | 普查是活动的列出；有界普查之下，生成不息恰当止息复现 |
+| `Web.Census`、`Web.ceasing_of_arising`、`Web.unceasing_iff_bounded` | 普查是活动的列出；有界普查之下，生起复现恰当止息复现（P29b 更正，原文“生成不息恰当止息复现”；见 §42 R5） |
 | `Web.StandingCensus`、`StandingCensus.coming_of_ceasing`、`coming_iff_ceasing` | 所立者的普查是水平的列出；不再作为条件而在复现需要开始作为条件而在复现，有界时两者同步 |
 | `World.CountedWithin`、`CountedWithin.arising_iff_ceasing` | 每步至多 B 个关系项活跃且被列出的世界中，生起复现恰当止息复现 |
 | `World.Finite.countedWithin`、`Finite.arising_iff_ceasing` | 有限世界的每个普查都不长于关系项的数目；所以 §30 的 `arising_iff_ceasing` 是有界规律的情形 |
@@ -2301,15 +2301,15 @@ Integration: §26、§30、§32–§37 的更正；审查 §4 的第 1–6 项�
 | O7 | 网层面“形成有限多时生成不息恰当止息不息”仍在 `Change`、根模块、README、章节 §2 与 §9、记录、§26 与根基第 5 行 | 改为“形成有限多且活动可判定时，生起复现恰当止息复现”；根基第 5 行写“生起不息”。`Web.Unceasing` 的名称与 `Becoming.Generation` 中的定义说明保持原范围 |
 | O8 | 活动读法在正典中有三种地位：被排除、作为 Ren 的候选、被记为 Ren 定下的关系读法 | 正典中只留一种地位：由 Ren 选择的候选。章节第 4 条、§2、§8 现状行、词汇表与记录照录 Ren 的原话（“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”），并标明 AI 的推论：若取不重叠，在有限世界中重合的活动读法就不是其所指。计划 §6 分开 Ren 的原话与 AI 的“作为关系”及 `renewing_not_consuming`。§26、§35–§37 与英文 P19、P22 就地更正 |
 | O9 | (a) “有限世界有普查”漏掉可判定（Q9）；(b) `acting_of_enclosed` 写作逐步，定理要求每步被围住；(c) 见证的空成立没有写出；(d) `premised_rests` 只用到三个前提；(e) 地图不含有限、被围住与可判定性 | (a) 研究 §32、记录与章节 §9 加入可判定；不给可判定性而对每个有限世界要求普查就蕴含排中律，与 `law_decides` 同一结构，所以 Q9 不另移入核心。(b) 新增 `World.acting_across`（逐步的形式），`acting_of_enclosed` 由它证明。(c) Q10 移入核心：`World.draining`、`draining_but`：平衡的第二个见证，每步从两侧的封闭家族取用，取用与耗散在其中起约束；记录与 §32 写明各见证中空成立的前提。(d) 写为“证明用到其中三个：平衡、耗散与体现”。(e) 独立性写明相对于这八个 |
-| O10 | grazing 的“不论终结之步怎样判定”预设了 Ren 的选择只涉及被汲取者自身的终结；活动需要支持时，对不变依存的侵蚀都与依存者的终结同时（Q8）；“活跨越止息”在核心中没有可判定性实例（Q7） | Q8 移入核心：`Web.Dependent.inactive_below`（Roles，一般形式）与 `World.grazing_browser_ends`。`grazing_world` 的说明改为“在对终结之步汲取承担自身者的选择之外”。章节 §8 新增 Ren 的选择：与依存者的终结同时的侵蚀是否计入不活、对哪些汲取者。Q7 移入核心：`grazing_decided` 与 `World.living_crosses_ceasing` |
-| O11 | (a) `law_decides` 只证明一个方向；(b) `arising_opens` 的说明比定理强；(c) 五处缺可判定；(d) `selected_le` 的说明；(e) §2 的消耗句缺“被取用”；(f) 七、八、十个前提的关系；(g) “最后一个 giver 已去掉”不准确；(h) 记录历史的空格；(i) 时间戳 | (a) 写为“蕴含排中律”；逆命题需要从排中律得到可判定的数据，在纯净核心中不能陈述，经典地每个活动都可判定。(b) 写为“并非从某步起每步都被围住”。(c) 补上。(d) 改为加权总量，不是真正的选择项。(e) 补“对各步家族被耗散且被取用的事件”。(f) 章节第 3 条与 §2 写明：八个是七个去掉储备承载（由活动需要支持推出），加上普查与有界传递；连同两个较弱的形式共十个。(g) `Scatter.Relatum.giver` 改为 `source`。(h) 改正。(i) 无法从仓库核实，不改 |
+| O10 | grazing 的“不论终结之步怎样判定”预设了 Ren 的选择只涉及被汲取者自身的终结；活动需要支持时，对不变依存的侵蚀都与依存者的终结同时（Q8；P29b 注：这句本身过强，依存者原本活跃时才是终结，见 §42 R1）；“活跨越止息”在核心中没有可判定性实例（Q7） | Q8 移入核心：`Web.Dependent.inactive_below`（Roles，一般形式）与 `World.grazing_browser_ends`。`grazing_world` 的说明改为“在对终结之步汲取承担自身者的选择之外”。章节 §8 新增 Ren 的选择：与依存者的终结同时的侵蚀是否计入不活、对哪些汲取者（P29b 改为：依存者在该步之后不活跃的侵蚀，包括休眠的依存，见 §42 R1）。Q7 移入核心：`grazing_decided` 与 `World.living_crosses_ceasing` |
+| O11 | (a) `law_decides` 只证明一个方向；(b) `arising_opens` 的说明比定理强；(c) 五处缺可判定；(d) `selected_le` 的说明；(e) §2 的消耗句缺“被取用”；(f) 七、八、十个前提的关系；(g) “最后一个 giver 已去掉”不准确；(h) 记录历史的空格；(i) 时间戳 | (a) 写为“蕴含排中律”；逆命题需要从排中律得到可判定的数据，在纯净核心中不能陈述（P29b 更正：此说不对，逆命题可以陈述，以排中律为假设不用可判定性也能证明，`World.law_of_em`、`World.law_iff_em`；见 §42 R2），经典地每个活动都可判定。(b) 写为“并非从某步起每步都被围住”。(c) 补上。(d) 改为加权总量，不是真正的选择项。(e) 补“对各步家族被耗散且被取用的事件”。(f) 章节第 3 条与 §2 写明：八个是七个去掉储备承载（由活动需要支持推出），加上普查与有界传递；连同两个较弱的形式共十个。(g) `Scatter.Relatum.giver` 改为 `source`。(h) 改正。(i) 无法从仓库核实，不改 |
 
 ### 38.2 新的已检查声明
 
 | 模块 | 声明 | 内容 |
 |---|---|---|
 | Dissipation | `Flow.Enclosed.around_not_not` | 不判定相等时，被封闭的步不是不围住每个有限家族：每个成员是否在封闭家族中只需不被否定 |
-| Roles | `Web.Dependent.inactive_below` | 活动需要支持时，跨一步落到所需之下、且在步后以不低的所需持续的依存，属于在步后不活跃的形成：对持续不变的依存的侵蚀与依存者的终结同时 |
+| Roles | `Web.Dependent.inactive_below` | 活动需要支持时，跨一步落到所需之下、且在步后以不低的所需持续的依存，属于在步后不活跃的形成：对持续不变的依存的侵蚀使依存者在步后不活跃（P29b 更正，原文“与依存者的终结同时”；依存者原本活跃时才是终结，见 §42 R1） |
 | Space | `grazing_decided`、`grazing_browser_ends`、`living_crosses_ceasing` | grazing 的活动可判定；食草者在第 1 步不活跃；在有限世界中，止息复现与否，都既可以每个事件都活，也可以有事件不活 |
 | Premises | `acting_across`、`draining`、`draining_decided`、`draining_but` | 只有活跃者取用且耗散时，在被围住的步上只有活跃者给予；平衡的第二个见证：leaking 的流放在 spending 的网上，满足平衡之外的每个前提，两侧的家族每步封闭且被取用 |
 | Openness | `Enclosed.aroundStanding_not_not`、`stills`（更正）、`arising_stops`、`rests_enclosed`、`arising_opens`（更正） | 被封闭的步不是不围住所立者；围住只需不被否定；所立者的普查、生起者体现、平衡、耗散与从某步起每步围住所立者使生起停止；两个世界定理不再要求可判定的相等 |
@@ -2335,7 +2335,7 @@ Integration: §26、§30、§32–§37 的更正；审查 §4 的第 1–6 项�
 
 *反驳 3：活动读法只作为候选，是不是回避了 Ren 的话？* 不是。Ren 的原话照录，AI 的推论标明：若取不重叠，这一读法就不是其所指。推论合理，但它是 AI 的，并决定 §8 的第一项选择；按方法，选择留给 Ren。审查也说明：若 Ren 声明活动读法不是其所指，O8 就只剩照录那句话。
 
-*反驳 4：`law_decides` 为什么不证明逆命题？* 逆命题从排中律推出每个有限世界中的规律，需要把 `Q ∨ ¬Q` 变为可判定的数据，即 `Decidable`；从命题的析取消去到数据，在纯净核心中需要选择公理。所以说明写为“蕴含排中律”，经典地每个活动都可判定，这时规律由 `arising_iff_ceasing` 给出。
+*反驳 4：`law_decides` 为什么不证明逆命题？* 逆命题从排中律推出每个有限世界中的规律，需要把 `Q ∨ ¬Q` 变为可判定的数据，即 `Decidable`；从命题的析取消去到数据，在纯净核心中需要选择公理。所以说明写为“蕴含排中律”，经典地每个活动都可判定，这时规律由 `arising_iff_ceasing` 给出。（P29b 更正：这一回答不对。逆命题是命题，证明可以留在 `Prop` 中：按有限的关系项列表归纳，对排中律分情形，不需要 `Decidable` 数据，也不需要选择公理；见 §42 R2 与 `World.law_iff_em`。）
 
 **边界。** 不含伦理谓词；不改变任何读法选择的地位，新增两项 Ren 的选择；新名称（ember、draining、source）是建议；新见证都是最小见证。本节的更正与 §35–§37 尚未经独立审查（计划 P28b）。
 
@@ -2360,7 +2360,7 @@ Integration: 计划 P29；回答 map-of-premises 与 continued-change-needs-open
 
 | 声明 | 内容 |
 |---|---|
-| `World.Binds` | 前提起约束：活动需要支持在活跃者以正需要依存于某条件时，平衡在水平变化时，只有活跃者给予与只有活跃者取用在参与者给予与取用时，耗散在参与者从封闭的家族取用时，体现在关系项生起时，普查在世界不有限、因而普查不来自有限时，有界传递在后代于其开始而立之步依存于某条件时 |
+| `World.Binds` | 前提起约束：活动需要支持在活跃者以正需要依存于某条件时，平衡在水平变化时，只有活跃者给予与只有活跃者取用在参与者给予与取用时，耗散在参与者从封闭的家族取用时，体现在关系项生起时，普查在世界不有限、因而普查不来自有限时（P29b 更正：这只说整个世界不有限；`hatch` 中世界只因闲置的地关系项而不有限，普查来自只有三个关系项曾经活跃，见 §42 R3），有界传递在后代于其开始而立之步依存于某条件时 |
 | `World.brood` | 食物在第一步立于三，此后立于一；亲代在第一步立于一，此后为零；子代在第一步为零，此后立于一；无限多个地关系项立于零。跨过第一步，亲代取用两个单位的食物与自身的一个单位，给子代一个单位；亲代与子代以需要一依存于食物 |
 | `World.brood_binds` | 八个前提都成立，每个都起约束：亲代依存于食物，食物下降，亲代给予与取用，从食物、亲代与子代这一封闭家族取用，子代生起，世界不有限，子代在开始而立之步像亲代一样依存于食物 |
 | `World.brood_rests` | 跨过第一步子代生起、亲代止息；每步都被围住在食物、亲代与子代之内；由 `rests_enclosed`，生起与止息都不再复现 |
@@ -2368,15 +2368,15 @@ Integration: 计划 P29；回答 map-of-premises 与 continued-change-needs-open
 **解读。**
 
 - **前提不只是相容的。** 互利者表明八个前提可以同时成立，但其中关于流的四个空成立。`brood` 表明它们可以同时起约束：有交换、有依存、有世系与传递、有生起与止息，平衡与耗散都在约束实际的交换。它是一个最小的生命循环的形状：一个形成从所依存的条件取用、把自身的一部分交给后代、终结，后代像它一样依存于同一条件。这是 AI 的读法；名称（brood、亲代、子代、食物）是 AI 的表述，由 Ren 定。
-- **普查起作用。** `brood` 有无限多个关系项，只有有限多个立着，所以普查与所立者的普查都不来自有限；静止定理在其中起作用，而 `premised_rests` 不适用。这正是 §38 O1 的要点：使世界归于静止的是每步立着的有限多与被围住，不是世界有限。
+- **普查起作用。** `brood` 有无限多个关系项，只有有限多个立着，所以普查与所立者的普查都不来自有限；静止定理在其中起作用，而 `premised_rests` 不适用。这正是 §38 O1 的要点：使世界归于静止的是每步立着的有限多与被围住，不是世界有限。（P29b 更正：“普查不来自有限”只对整个世界是否有限成立。地关系项闲置，只有食物、亲代与子代曾经活跃（`hatch_ever`、`hatch_idle`），由曾经活跃者的列表即得普查（`counted_of_ever`）；在静止定理适用的每个世界中，曾经活跃或立着的关系项都不是无界多（`rest_few`），所以静止定理比 `rests` 多涵盖的只是从不立着、从不活跃的关系项。见 §42 R3；`brood` 已改名 `hatch`，R10。）
 - **起约束与独立不同。** 在 `brood` 中每步都被围住，所以只有活跃者给予由只有活跃者取用与耗散推出（`acting_across`）；它仍然起约束，因为确有参与者给予。起约束只说前提的条件被满足，不说它在该世界中不由其余推出。
-- **名称。** Ren 引用 AI 关于 M1 的进度说明，并说“arising/ceasing is indeed better name”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）。所以 P23c 的改名保留，活动的读法以生起与止息命名，这是 Ren 确认的名称，不再列为 AI 拟定的用语。Ren 提议中的“生成的”“退化的”指什么，仍由 Ren 说明；这句话没有说它，AI 也没有把关系的读法定为其所指。
+- **名称。** Ren 引用 AI 关于 M1 的进度说明，并说“arising/ceasing is indeed better name”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)）。所以 P23c 的改名保留，活动的读法以生起与止息命名，这是 Ren 确认的名称，不再列为 AI 拟定的用语（P29b 更正：Ren 确认的是英文的 arising/ceasing；中文 生起／止息 是 AI 的译名，仍是 AI 的用语；见 §42 R9）。Ren 提议中的“生成的”“退化的”指什么，仍由 Ren 说明；这句话没有说它，AI 也没有把关系的读法定为其所指。
 
 **作者反审。**
 
 *反驳 1：`brood` 是特意构造的。* 是；它是存在性的见证，与地图中的反例世界地位相同。它说明八个前提一起不只空成立，不说实际的生命满足它们。
 
-*反驳 2：普查起约束定义为世界不有限，太强。* 在有限且活动可判定的世界中普查由有限推出（`Finite.counted`），所以普查的内容只有在世界不有限时才不由别的给出。去掉地关系项得到有限的世界，其余七个仍起约束，普查来自有限；这一变体没有另行检查。
+*反驳 2：普查起约束定义为世界不有限，太强。* 在有限且活动可判定的世界中普查由有限推出（`Finite.counted`），所以普查的内容只有在世界不有限时才不由别的给出。去掉地关系项得到有限的世界，其余七个仍起约束，普查来自有限；这一变体没有另行检查。（P29b 更正：在静止定理的前提之下，普查的内容由只有有限多个关系项曾经活跃给出（`counted_of_ever`、`rest_few`），不由世界不有限给出；见 §42 R3。）
 
 *反驳 3：亲代取用自身的一个单位不自然。* 它让亲代终结，使同一世界中有生起也有止息；没有它，`brood` 仍满足并约束八个前提，只是没有止息。耗散的约束来自亲代从食物取用的两个单位多于给予的一个单位。
 
@@ -2490,6 +2490,72 @@ Integration: 计划 P31；回答 reserve-defers-ending 与 life-as-condition-of-
 *反驳 5：以排中律为假设是否把经典逻辑带进了核心？* 没有。`chain_ends_of_em` 是一个条件陈述：排中律是它的一个前提，核心的公理报告仍为空，从 prelude 编译。它表明，构造地不能逐环接下去的只是把“不复现”化为终结之步这一步；接受排中律的读者由此得到无界的形式，不接受的读者仍有衰减时的有界形式。
 
 **边界。** 无伦理谓词，不评价共灭；界只对离散步与衰减的储备陈述，不衰减的形式以排中律为假设、没有界；链上的依存与体现是表示前提；名称（chainEnd、Cascade）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
+
+## 42. 第十一次独立审查与更正（P29b）
+
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P26（§35）、P27（§36）、P28（§37）、P25b（§38）与 P29（§39）（[审查](BECOMING-P25B-P29-REVIEW.md)，对象 `0cf14b8b`）。它在仓库之外从前导重新编译核心闭包的 29 个模块，1830 条源声明（1126 项定理）的公理报告全空；闭包的 5153 个常量中依赖公理的只有 35 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、外围回执、引用哈希与证明绑定都对；各阶段的定理数与研究、计划和章节一致。数学全部接受，没有错误的 Lean 陈述。它写了 47 条探针声明（32 项定理，生成的 159 个常量都不依赖公理），提出十一项（R1–R11）：两项散文中的错误（R1、R2），六项过强（R3–R8，其中 R6 缺少反例），三项表述与出处（R9–R11）。第十次审查的 O2–O6、O9 关闭；O1、O7、O8、O10、O11 的残留就是 R4、R5、R9、R1、R2。P30（§40）与 P31（§41）在审查期间或之后提交，审查没有读；R6 与 R11(a) 已由 P30 回答。本节记录逐项处理。探针 S1、S2、S4–S6 的内容移入核心（S3 的内容已由 P30 给出），名称按核心改写；公理报告为空。§26、§34、§36、§38、§39 与英文段落中受影响的句子已就地更正并标明。
+
+```text
+Result(s): 更正 space-and-its-parts（R1、R2、R9）、map-of-premises（R3、R10）、continued-change-needs-openness（R3、R4、R8、R10）、
+           bounded-census-keeps-pace（R5、R7、R9）、ceasing-needs-arising、census-balance、coming-and-ceasing-keep-pace（R9）；
+           没有新的成果记录
+Delta: Change：stays_failing、persists_of_em（exists_not_of_em 已在 P31 加入）。Roles：Web.Dependent.ceases_below；inactive_below 的说明。
+       Space：quiet_of_once；World.Seedbank（Relatum、soil、level、flow、web、distinct）、World.seedbank、seedbank_world；World.law_of_em、
+       World.law_iff_em；Ren 原话、名称与 grazing_browser_ends 的说明。Premises：listed_of_ever、World.counted_of_ever；World.Brood 改名
+       World.Hatch，brood_* 改名 hatch_*；World.hatch_ever、hatch_idle；Binds 的说明。Openness：World.Finite.census_bounded（countedWithin
+       由它证明）；gather、gather_self、mem_gather、comes_after、Listed.few_of_quiet、World.few_active、World.rest_few；Holding（level、
+       flow、web、open_at、census）、World.holding、holding_world；brood_rests 改名 hatch_rests。Population：unceasing_iff_bounded 与模块
+       说明的用语（R5）
+Supplied premises / correspondence: 不变；law_of_em 以排中律为定理的假设，不是公理
+Evidence: 合并检查器回执 20261009T185557.684339Z（1131 项定理／1826 项声明审计，核心闭包 29 个模块，包 27 个模块，源声明的公理报告全空）；
+          外围桥接重跑 20261009T185801.898161Z；实例检查
+Boundary: 不含伦理结论；不替 Ren 选择任何读法；§8 的一项选择按 R1 放宽，第一项选择按 R9 写出 Ren 回复时的语境；新名称（hatch、
+          seedbank、holding）是建议；新见证都是最小见证
+Integration: §26、§34、§36、§38、§39 与英文 P19、P25b、P29 的就地更正；审查 §4 的各项完成，Ren 的选择保持开放
+```
+
+### 42.1 逐项处理
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| R1 | “活动需要支持时，对持续不变的依存的每次侵蚀都与依存者的终结同时”不成立：`inactive_below` 只给出依存者在该步之后不活跃；依存者此前就不活跃时没有终结。探针 sleeper：有限、平衡、每个关系项体现、活动需要支持，一次侵蚀使事件不活，而世界中从无止息。这句来自第十次审查的 O10 与 Q8 | 新增 `Web.Dependent.ceases_below`（Roles）：依存者原本活跃时，这样的侵蚀与它的终结同时。sleeper 移入核心为 `World.seedbank`（汲取者、种子、土壤）与 `seedbank_world`：活动需要支持、体现、平衡、有限，`UnderminingOn 0 drawer soil`，世界不 living，`inactive_below` 的前提成立，而种子从不活跃，世界中没有任何止息。Roles 与 Space 的模块说明、`inactive_below` 与 `grazing_browser_ends` 的说明、README、检查器、章节第 10 条与 §9、记录 space-and-its-parts 改写；§8 的 Ren 选择放宽为“依存者在该步之后不活跃的侵蚀”，包括休眠的依存。§34 反驳 3、§38.1 O10 与 §38.2 Roles 行就地标明。这句话的过强来自第十次审查本身 |
+| R2 | §38 与英文 P25b 说 `law_decides` 的逆命题需要选择公理、在纯净核心中不能陈述；逆命题可以陈述，以排中律为假设、不用可判定性与选择即可证明（探针 `law_iff_em`） | 移入核心：`World.law_of_em`（以排中律为假设，有限世界中生起复现恰当止息复现，两个方向都证明，审查只给出一个方向）与 `World.law_iff_em`（对每个有限世界要求这一规律而不给可判定性，等价于排中律），连同 `quiet_of_once`（Space）与 `persists_of_em`、`stays_failing`（Change；否定的全称取反例的 `exists_not_of_em` 已在 P31 为沿链的共灭加入）。说明改为“等价于排中律”。§38.1 O11(a)、§38.4 反驳 4 与英文 P25b 就地更正；章节的逻辑承诺与开放项不再说这一规律只能在外围以经典逻辑陈述 |
+| R3 | P29 中普查起约束的条件是世界不有限；`brood` 的地关系项闲置，普查来自只有三个关系项曾经活跃；在静止定理适用的每个世界中，曾经活跃或立着的都不是无界多 | 移入核心：`Listed.few_of_quiet`（列出之下开始成立不复现时，曾经成立的成员不是无界多），`World.few_active`，`World.rest_few`（静止定理的前提之下，曾经活跃的与曾经立着的关系项都不是无界多；围住只需不被否定），连同 `gather`、`mem_gather`、`comes_after`；`listed_of_ever` 与 `World.counted_of_ever`（曾经活跃者可列出时有普查）；`World.hatch_ever`（只有食物、亲代与子代曾经活跃）与 `hatch_idle`（地关系项从不立着、从不活跃、从不参与流、从不被依存或汲取）。`Binds` 的说明、Premises 与 Openness 的模块说明、章节第 3、4 条与 §2、根基第 5 行、记录与计划写明：世界不有限只因闲置的关系项；静止定理比 `rests` 多涵盖的只是从不立着、从不活跃的关系项。`hatch` 中活动需要支持起约束而不紧（食物从不低于所需），关于流的四个前提只在第 0 步起约束。§39 的“普查起作用”与反驳 2、英文 P29 就地更正。审查的手证（在静止定理的前提下，流只在有限多步参与）没有形式化，列为开放 |
+| R4 | 记录 continued-change-needs-openness 的标题漏掉活动的普查，`dusk` 反驳它；“每步立着的有限多”混同两种普查 | 标题与对应写出每步立着的与活跃的有限多（两种普查），“立着的变化只有有限多次”；章节第 4 条、§2、§8 现状行与根基第 5 行同改。CLAIMS 由记录生成 |
+| R5 | P27 重新引入“生成不息恰当止息复现”（O7 的残留） | `Population` 的模块说明与 `unceasing_iff_bounded` 的说明、记录 bounded-census-keeps-pace、§26 表、§36 表与英文 P19 改为“生起复现恰当止息复现”，就地标明 |
+| R6 | 有界定律只需界在无限多步成立；任何不减且趋于无穷的计数都允许只生不灭 | 已由 P30 回答：`Listed.ceasing_of_returning` 与 `World.CountedBy.arising_iff_ceasing`（界在任意晚的步回到某数以内）对应探针 `ceasing_of_coming_often`、`arising_iff_ceasing_often`；`World.slow_world`（对每个不减而无界的界）对应 `paced_world`。章节 §2 写“须同时活跃者的计数趋于无穷”与“在任意晚的步至多 B 个” |
+| R7 | `Finite.countedWithin` 的说明“每个普查”比陈述强 | 新增 `World.Finite.census_bounded`：有限世界的每个普查都以关系项的数目为界，不需要可判定性；`countedWithin` 由它证明，说明改为“活动可判定的有限世界有一个普查，它以关系项的数目为界”。记录的假设去掉“需要可判定的活动”这一普遍读法 |
+| R8 | “满足八个前提而没有一步被围住的世界生起不息”读作一般时为假（探针 s6_holding） | 移入核心：`Holding` 与 `World.holding_world`：一侧以零净量与无界的地交换、保持其水平，满足八个前提，没有一步被围住，生起与止息都不复现，世界不有限。章节第 4 条、§2、§8 现状行、词汇表、根基第 5 行、记录与计划写为“一个这样的世界（exposed）……另一个（holding）……”：开放是生起不息的必要条件而不充分 |
+| R9 | Ren 的“不overlap吧”有三种写法；Ren 确认的是英文的 arising/ceasing；Ren 回复时的语境没有写出 | Space 的模块说明与四份记录照录原话，或写为“以‘吧’预设二者不重叠”；中文各处写“Ren 确认英文名称 arising/ceasing（中文 生起／止息 是 AI 的译名）”；来源文件的标题改为 Ren 的原词，原标题在更正说明中保留；章节 §8 第一项写出 Ren 回复的 AI 说明中“despite Ren saying they shouldn’t overlap”一句，并请 Ren 说明活动的读法是否仍是候选。§39 与计划就地标明 |
+| R10 | 核心中有两个不同的 brood | P29 的 `World.Brood`、`World.brood` 与 `brood_*` 改名 `World.Hatch`、`World.hatch`、`hatch_*`；`Roles` 中世代不息的 `Brood` 保持原名（它被章节、两份记录与 `Descent` 引用）。名称是建议，由 Ren 定 |
+| R11 | (a) 依存的平衡没有实例；(b) 英文 P25b 没有计数行，计划 P25b、P29 行没有回执；(c) §2 的界；(d) census-balance 的下一步 | (a) 已由 P30 的 `Web.DependenceCensus.over_stretch` 回答。(b) 补上，标明 P29b 补记。(c) 见 R6。(d) 审查认为不需要处理 |
+
+### 42.2 新的已检查声明
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Change | `stays_failing`、`persists_of_em` | 不成立且在之后各步不开始成立者保持不成立，不需要可判定性；以排中律为假设，成立且在之后各步不再成立者保持成立 |
+| Roles | `Web.Dependent.ceases_below` | 活动需要支持时，依存者原本活跃、其持续不变的依存跨一步落到所需之下，它就在该步止息 |
+| Space | `quiet_of_once`、`World.Seedbank`、`World.seedbank`、`seedbank_world` | 以排中律为假设，列表中每个成员从某步起至多发生一次时，它们从某步起都不再发生；种子库：侵蚀而无终结 |
+| Space | `World.law_of_em`、`World.law_iff_em` | 以排中律为假设，每个有限世界中生起复现恰当止息复现；对每个有限世界要求这一规律而不给可判定性，等价于排中律 |
+| Premises | `listed_of_ever`、`World.counted_of_ever`、`World.Hatch`、`World.hatch_*`、`hatch_ever`、`hatch_idle` | 曾经成立者被一个有限表包含时，每步的成立者可列出；世界的普查由此得出；`hatch` 中只有三个关系项曾经活跃，地关系项闲置 |
+| Openness | `World.Finite.census_bounded` | 有限世界的每个普查都以关系项的数目为界 |
+| Openness | `gather`、`gather_self`、`mem_gather`、`comes_after`、`Listed.few_of_quiet`、`World.few_active`、`World.rest_few` | 列出之下开始成立不复现时曾经成立者不是无界多；静止定理适用的世界中曾经活跃与立着的关系项都不是无界多 |
+| Openness | `Holding`、`World.holding`、`holding_world`、`hatch_rests` | 满足八个前提、没有一步被围住而什么也不生起的世界；`hatch` 在一次生起与一次止息之后归于静止 |
+
+### 42.3 作者反审
+
+*反驳 1：`seedbank` 是不是在制造一个不自然的反例？* 它是满足已公开定义的最小世界，与审查的 sleeper 相同：休眠的种子以不变的所需依存于土壤，汲取者取走土壤。它说明 R1 的那句话超出了定理，不说明种子库在现实中怎样。按方法，它只表明定义允许什么。被侵蚀的依存者休眠时，是否计入不活，现在明确列为 Ren 的选择的一部分。
+
+*反驳 2：`law_iff_em` 把排中律放进纯净核心了吗？* 没有。排中律在 `law_of_em` 中是定理的一个假设，在 `law_iff_em` 中是等价的一边；核心的公理报告仍为空，从前导编译。它纠正的是一个关于核心能表达什么的错误说法：逆命题不需要 `Decidable` 数据，证明可以留在 `Prop` 中。审查只给出从生起到止息的方向；本节两个方向都证明，从止息到生起的方向用 `stays_failing` 与 `quiet_of_once`。
+
+*反驳 3：`rest_few` 是否削弱了 P25 与 P26 的推广？* 它限定推广，不取消它。“世界不必有限，起作用的是每步立着的与活跃的有限多”在形式上仍成立，而且每步的前提比世界有限更容易核对。`rest_few` 说明这些世界在归于静止时与有限世界的差别只在从不立着、从不活跃的关系项。这一点属于推广本身，应当写在它旁边。
+
+*反驳 4：为什么不删去 `Binds` 的普查一项，换成更强的条件？* 在归于静止的世界中，普查不能在更强的意义上起约束（`rest_few`）。保留 `Binds.counted` 并在说明中写清它只说世界不有限，比另造一个条件更诚实；`hatch_ever` 与 `counted_of_ever` 把普查的实际来源写成定理。
+
+*反驳 5：改名 `hatch` 是否必要？* 两个 brood 用途相反：`Roles` 中的世代不息、不耗散，P29 的在一次生起后归于静止。章节在相隔几段处都称 `brood`。改动较少的一个被改名；名称由 Ren 定。
+
+**边界。** 不含伦理谓词；不改变任何读法选择的地位，§8 的一项选择按 R1 放宽，第一项写出 Ren 回复的语境并请 Ren 说明；新名称是建议；新见证都是最小见证。本节的更正与 §40、§41 尚未经独立审查。
 
 ## English summary
 
@@ -2663,7 +2729,7 @@ The package now has 799 theorems and 1286 declaration audits, over a core closur
 - **Rises and falls.** Over any stretch, an amount at the end with its falls is the amount at the start with its rises, and so for a finite family (`over_stretch`, `family_over_stretch`).
 - **A floor and a ceiling.** No amount falls below zero, so in a finite family recurring falls need recurring rises (`rising_recurs`). In every unfolding, levels of finitely many conditions that keep falling keep rising (`Web.falls_need_rises`). `falls_finitely` of `Becoming.Renewal` is this floor for one amount. With amounts bounded, recurring rises need recurring falls (`falling_recurs`).
 - **Coming to be and ceasing to be keep pace.** A determination counts zero or one, so both bounds hold. Over any stretch, in a finite family, the members holding at the end with those that ceased to be are those holding at the start with those that came to be (`held_over_stretch`). Comings and ceasings differ by at most the number of members (`keep_pace`), and each recurs exactly when the other does (`coming_recurs_iff`).
-  - Read of activity: formations of a finite family arise at arbitrarily late steps exactly when they cease at arbitrarily late steps. With finitely many formations, generation is unceasing exactly when ceasing is (`Web.unceasing_iff`).
+  - Read of activity: formations of a finite family arise at arbitrarily late steps exactly when they cease at arbitrarily late steps. With finitely many formations, arising recurs exactly when ceasing does (`Web.unceasing_iff`; P29b correction: this read “generation is unceasing exactly when ceasing is”, section 42 R5).
   - Read of standing, with no premise at all: coming to stand recurs in a finite family exactly when ceasing to stand does (`Web.standing_recurs_iff`).
 - **Infinity is the escape.** Ever new formations can arise with none ceasing (`Dawn`), and endlessly many formations active at the start can cease with nothing arising (`Dusk`).
 - **Author's reading.** In any finite family, arising and ceasing recur together. The author reads this as one formal content of Ren's scope, formation through dissolution within one unfolding (an AI argument). This is a reading of activity; whether it is the proposal's generative and degenerative is Ren's to choose: Ren asked whether the two do not overlap (‘不overlap吧’), and if non-overlap is taken this reading is not what is meant (the AI's inference); read as relations, renewing and consuming formations do not overlap (`Web.renewing_not_consuming`) (P25b correction; originally “not Ren's generative and degenerative: Ren said the two do not overlap”; see section 38, O8) (P23c correction; originally "generation and degeneration recur together"; see section 34, M1). It does not make ceasing good or a cost of generation. The level at which 生生不息 is read, and the names, remain Ren's.
@@ -2776,10 +2842,12 @@ The package now has 1061 theorems and 1716 declaration audits, over a core closu
 - **The premises decide neither enclosure nor openness (O4–O6).** `exposed` meets the eight with no step enclosed and keeps arising, its total standing one at every step and its openness an exchange at zero net (`World.exposed_standing`); mutualists meet the eight with every step enclosed and come to rest (`World.openness_contingent`). Activity needing support and bounded transmission hold vacuously in `exposed`, as dissipation does.
 - **Residues of M1 (O7, O8).** The web-level wording now says that arising recurs exactly when ceasing does. The activity reading has one status in the canonical texts: a candidate for Ren's choice. Ren's words are quoted ("generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧"), and the AI's inference is labelled: if non-overlap is taken, the activity reading is not what is meant. Plan section 6 separates Ren's words from the AI's "as relations".
 - **The map of premises (O9).** Decided activity is restored where a finite world is said to have a census. Giving needs uptake at each enclosed step (`World.acting_across`). A second balance witness takes from a closed family at every step (`World.draining_but`). `premised_rests` uses three of the eight, and independence is relative to the eight.
-- **Grazing (O10).** Where activity needs support, a dependence left below its need and persisting at no lower need belongs to a relatum not active after the step (`Web.Dependent.inactive_below`), so the browser grazing undermines ends at that step (`World.grazing_browser_ends`). Whether undermining that co-occurs with the ending of the relatum depending counts against living is a new choice for Ren, beside whether "openness" names exchange beyond every finite family or inflow. Living crosses ceasing as well as arising (`World.living_crosses_ceasing`).
-- **Presentation (O11).** `law_decides` is glossed as implying excluded middle; its converse needs choice to turn a disjunction into decidable data, so it cannot be stated in the pure core. Other items: the `selected_le` docstring; the qualifier of the depletion sentence; how the counts of seven, eight and ten premises relate; and `Scatter`'s `giver`, renamed `source`.
+- **Grazing (O10).** Where activity needs support, a dependence left below its need and persisting at no lower need belongs to a relatum not active after the step (`Web.Dependent.inactive_below`), so the browser grazing undermines ends at that step (`World.grazing_browser_ends`). Whether undermining that co-occurs with the ending of the relatum depending counts against living is a new choice for Ren (P29b correction: the relatum depending is not active after the step, which is its ending only where it was active, and the choice covers dormant dependence too; section 42 R1), beside whether "openness" names exchange beyond every finite family or inflow. Living crosses ceasing as well as arising (`World.living_crosses_ceasing`).
+- **Presentation (O11).** `law_decides` is glossed as implying excluded middle; its converse needs choice to turn a disjunction into decidable data, so it cannot be stated in the pure core (P29b correction: this is wrong; the converse can be stated and, with excluded middle as a hypothesis, is proved in the pure core with neither decidability nor choice, `World.law_of_em`, `World.law_iff_em`; section 42 R2). Other items: the `selected_le` docstring; the qualifier of the depletion sentence; how the counts of seven, eight and ten premises relate; and `Scatter`'s `giver`, renamed `source`.
 
-**P29: the world in which each premise binds, and the names confirmed.** The tenth review noted that several witnesses in the map of premises have no flow, so the four premises about the flow hold there vacuously, as they do for the mutualists meeting all eight (O9). `World.Binds` says what it is for each premise to bind: something meets its condition. In `brood`, all eight hold and each binds (`World.brood_binds`): a parent takes two units of food and its own unit and gives its young one unit; the young comes to stand depending on the food as the parent did; the parent ceases; and infinitely many ground relata stand at nothing, so neither census comes from finiteness. Every step is enclosed, and the world comes to rest after one arising and one ceasing (`World.brood_rests`, by `rests_enclosed`). Binding is not independence: with every step enclosed, only active relata giving follows from taking and dissipation, yet it binds, since something gives. Ren, quoting the AI's progress note on M1, said "arising/ceasing is indeed better name" ([words](../../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)). The P23c rename stands: the activity reading is named arising and ceasing, names Ren confirmed. What the proposal's "generative" and "degenerative" name remains Ren's to say.
+The package then had 1077 theorems and 1739 declaration audits (receipt 20261009T145010.627958Z), over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports (count line added in P29b, R11).
+
+**P29: the world in which each premise binds, and the names confirmed.** The tenth review noted that several witnesses in the map of premises have no flow, so the four premises about the flow hold there vacuously, as they do for the mutualists meeting all eight (O9). `World.Binds` says what it is for each premise to bind: something meets its condition. In `brood`, all eight hold and each binds (`World.brood_binds`): a parent takes two units of food and its own unit and gives its young one unit; the young comes to stand depending on the food as the parent did; the parent ceases; and infinitely many ground relata stand at nothing, so neither census comes from finiteness (P29b correction: only in that the whole world is not finite; the ground relata are idle, only three relata are ever active, and a census follows from the list of them; section 42 R3). Every step is enclosed, and the world comes to rest after one arising and one ceasing (`World.brood_rests`, by `rests_enclosed`). Binding is not independence: with every step enclosed, only active relata giving follows from taking and dissipation, yet it binds, since something gives. Ren, quoting the AI's progress note on M1, said "arising/ceasing is indeed better name" ([words](../../../../sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md)). The P23c rename stands: the activity reading is named arising and ceasing, English names Ren confirmed (the Chinese 生起／止息 being the AI's rendering; section 42 R9). What the proposal's "generative" and "degenerative" name remains Ren's to say.
 
 The package now has 1086 theorems and 1760 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 35 to 39 have not yet been independently reviewed.
 
@@ -2790,3 +2858,13 @@ The package now has 1091 theorems and 1771 declaration audits, over a core closu
 **P31: lagged coextinction along chains of dependence.** reserve-defers-ending and life-as-condition-of-life both listed lagged coextinction along chains of dependence under a reserve as their next step. P17 stated it across one link (`Carries.coextinct_lasts`), but its conclusion, that the formation is active only finitely often, gives no step from which the next link is unsupported. Under a reserve that decays (`Web.Decays`) the end step is explicit (`Carries.ends_within`), and the end runs down the chain: where the relata of a chain are embodied, each depends at a positive need on the one before it from step `T` on, and the first is inactive from `T`, each relatum is inactive from `chainEnd`, the first link ending at `T` and each later one once its reserve, read where the link before it ended, has passed (`Carries.chain_ends`). Since each reserve is read at the end of the link before, replenishment while supported is counted in the bound and needs no further premise. With the zero reserve every link ends at `T` (`chainEnd_zero`): coextinction at once along the chain, as under `Dependent` (`coextinct`). The bound is attained (`Cascade.cascade`): each relatum outlives the one it depends on by exactly one step, relatum `k` still active at step `k` with `chainEnd k` equal to `k + 1`. Without decay a dormant link can wake arbitrarily late, and turning "only finitely often" into an end step needs Markov's principle; with excluded middle as a hypothesis, not an axiom, as for `law_of_em` in `Space`, what does not recur has a step after which it does not occur (`exists_not_of_em`), and each relatum of the chain still ends, with no bound (`Carries.chain_ends_of_em`). Along a graph rather than a chain, the bound holds along any chain reaching a relatum, since any unmet requirement leaves it unsupported.
 
 The package now has 1109 theorems and 1793 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 35 to 41 have not yet been independently reviewed; the eleventh review covers P25b to P29.
+
+**P29b: the eleventh independent review.** A separate agent (Claude Opus 5.5) reviewed P26, P27, P28, P25b and P29 at `0cf14b8b` ([review](BECOMING-P25B-P29-REVIEW.md)). It recompiled the 29 modules of the core closure from the prelude: all 1830 source declarations (1126 theorems) have empty axiom reports, and of the 5153 constants only the 35 generated `injEq` lemmas the receipt lists depend on an axiom, `propext`. Receipts, hashes, retained artifacts, reference hashes, proof bindings and the counts across phases all match. The mathematics is accepted and no Lean statement is wrong. It raised eleven findings: two errors in prose (R1, R2), six overclaims (R3–R8) and three items of presentation and provenance (R9–R11). P30 and P31 were not reviewed; P30 had already answered R6 and R11(a).
+
+- **Undermining and ending (R1).** Where activity needs support, undermining an unchanged dependence leaves the relatum depending inactive after the step; it is that relatum's ending only where it was active (`Web.Dependent.ceases_below`). In `seedbank`, finite, balanced, embodied and with activity needing support, a drawer undermines a dormant seed's dependence and nothing in the world ever ceases (`World.seedbank_world`). The sentence "every undermining co-occurs with an ending" came from the tenth review; Ren's choice about such undermining now covers dormant dependence.
+- **Excluded middle (R2).** The converse of `law_decides` can be stated: with excluded middle as a hypothesis, arising recurs exactly when ceasing does in every finite world, both directions, with neither decidability nor choice (`World.law_of_em`, with `quiet_of_once`, `persists_of_em`, `stays_failing`), so asked of every finite world without decidability the law is equivalent to excluded middle (`World.law_iff_em`). The core's axiom reports stay empty.
+- **What the rest theorem adds (R3, R4).** Under the rest theorem's premises not unboundedly many relata ever stand or act (`Listed.few_of_quiet`, `World.few_active`, `World.rest_few`), and a census follows where what is ever active is listed (`World.counted_of_ever`). So the worlds it covers beyond finite ones add only relata that never stand or act; in `hatch` (renamed from `brood`, R10) the ground relata are idle and only three relata are ever active (`World.hatch_ever`, `World.hatch_idle`). Activity needing support binds there without being tight, and the flow premises bind at step 0 only. The record title and the chapter now say finitely many standing and finitely many active at each step.
+- **Other overclaims (R5–R8).** "Arising recurs exactly when ceasing recurs" replaces "generation is unceasing exactly when ceasing recurs" in `Population` and the record (R5). R6 was answered by P30. Every census of a finite world is bounded by the number of its relata, with no decidability (`World.Finite.census_bounded`, R7). Openness with the eight premises does not give arising without end: `holding` meets all eight with no step enclosed and never arises or ceases (`World.holding_world`, R8).
+- **Provenance (R9–R11).** Ren's sentence is quoted verbatim or glossed as a tag question presuming no overlap. What Ren confirmed is the English arising/ceasing, the Chinese 生起／止息 being the AI's rendering. The source file is retitled with a correction note, and chapter §8 quotes the AI note Ren replied to and asks Ren whether the activity reading remains a candidate. The English P25b paragraph and the plan's P25b and P29 rows gain their count lines and receipts.
+
+The package now has 1131 theorems and 1826 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 42 have not yet been independently reviewed.

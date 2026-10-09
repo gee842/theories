@@ -9,14 +9,16 @@ becoming. This module states one structure for that proposal (an AI reading). Th
 every world. The laws stated with no premise hold of each world. The premises of the other
 theorems are met by some worlds and not by others, so they carve out parts.
 
-Which parts Ren's "generative" and "degenerative" name is Ren's to choose. Ren said that,
-though both are in one becoming model, they do not overlap. The spine offers two readings.
+Which parts Ren's "generative" and "degenerative" name is Ren's to choose. Ren wrote,
+"generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧", a tag question
+presuming that the two do not overlap. The spine offers two readings.
 Read as relations, a formation renewing what it takes part in and one consuming what it
 draws on (`Web.RenewingIn`, `Web.ConsumingIn`) never coincide
 (`Web.renewing_not_consuming`), though one occurrence can take part in both. Read as
 activity, arising recurring and ceasing recurring (`World.ArisingRecurs`,
 `World.CeasingRecurs`) coincide in finite worlds. This module states the second. Ren
-confirmed arising and ceasing as the better names for it; they do not claim Ren's words.
+confirmed arising and ceasing as the better names for it ("arising/ceasing is indeed better
+name"); they do not claim Ren's words.
 
 * **The space.** A world is its relata, read with one kind of relatum (`Becoming.Roles`),
   with the flow among them and their web (`World`). The two-kind reading of any flow and
@@ -27,8 +29,9 @@ confirmed arising and ceasing as the better names for it; they do not claim Ren'
   the unfolding, so they hold throughout the space. Read of worlds: in a finite world
   whose activity is decided, arising recurs exactly when ceasing does
   (`World.arising_iff_ceasing`). Decidability is part of the representation: asked of
-  every world without it, this law implies excluded middle (`World.law_decides`);
-  classically every activity is decided.
+  every finite world without it, this law is equivalent to excluded middle
+  (`World.law_iff_em`, from `World.law_decides` and `World.law_of_em`); classically every
+  activity is decided.
 * **Finiteness separates them.** Where the relata are infinitely many, either can recur
   without the other (`World.separate`, from `Dawn` and `Dusk`); that these worlds are
   infinite follows from the law.
@@ -45,10 +48,14 @@ confirmed arising and ceasing as the better names for it; they do not claim Ren'
   drawing each on its own standing (`spending`) also has an event that is not living, but
   only on the stepwise verdict about drawing on a self-bearing relatum at its ending,
   which is Ren's to choose. The grazer's event lies outside that choice as worded, yet
-  the browser whose dependence it undermines ends at that step, as it must where
-  activity needs support (`World.grazing_browser_ends`); whether undermining that
-  co-occurs with the ending of the relatum depending counts against living is a question
-  of the same kind.
+  the browser whose dependence it undermines, active at that step, ends there
+  (`World.grazing_browser_ends`). Where activity needs support, a relatum whose unchanged
+  dependence is undermined is not active after the step, which is its ending where it was
+  active (`Web.Dependent.ceases_below`); where it was dormant, nothing ends: in `seedbank`
+  an event is not living while nothing in the world ever ceases (`World.seedbank_world`).
+  Whether undermining that co-occurs with the relatum depending not being active after
+  the step counts against living, and for which drawers, is a question of the same
+  kind.
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
   whose activity is decided and in which whatever arises is embodied, neither arising nor
   ceasing recurs (`World.rests`). Each premise is needed (`World.rests_needs`): a world
@@ -74,6 +81,24 @@ def Flow.still {F C : Type} : Flow F C :=
 /-- Where nothing takes part, dissipation holds vacuously. -/
 theorem Flow.still_dissipative {F C : Type} : (Flow.still : Flow F C).Dissipative :=
   fun _ _ _ _ _ present => nomatch present
+
+/-! ## Excluded middle as a hypothesis -/
+
+/-- With excluded middle, where each member of a list has an event at most once from `N`
+on, its events stop from some step on. -/
+theorem quiet_of_once (em : ∀ P : Prop, P ∨ ¬ P) {α : Type} {E : α → Nat → Prop} {N : Nat}
+    (once : ∀ a T, N ≤ T → E a T → ∀ T', T < T' → ¬ E a T') :
+    ∀ L : List α, ∃ M, N ≤ M ∧ ∀ a, a ∈ L → ∀ T, M ≤ T → ¬ E a T
+  | [] => ⟨N, Nat.le_refl N, fun _ no => (nomatch no)⟩
+  | a :: L => match quiet_of_once em once L with
+    | ⟨M, after, quiet⟩ => match em (∃ T, M ≤ T ∧ E a T) with
+      | .inl ⟨T, later, event⟩ =>
+        ⟨T + 1, Nat.le_trans after (Nat.le_succ_of_le later), fun b mem T' late => match mem with
+          | .head _ => once _ T (Nat.le_trans after later) event T' late
+          | .tail _ mem => quiet b mem T' (Nat.le_trans (Nat.le_succ_of_le later) late)⟩
+      | .inr never => ⟨M, after, fun b mem T' late => match mem with
+          | .head _ => fun event => never ⟨T', late, event⟩
+          | .tail _ mem => quiet b mem T' late⟩
 
 /-! ## The space and its parts -/
 
@@ -685,12 +710,101 @@ theorem grazing_world :
 
 /-- The browser, whose dependence the grazer's event undermines, is not active after that
 step: activity needs support, and its dependence persists at the same need
-(`Web.Dependent.inactive_below`). So the undermining co-occurs with the browser's ending,
-as every undermining of a dependence persisting unchanged must where activity needs
-support. -/
+(`Web.Dependent.inactive_below`). The browser was active, so the undermining co-occurs
+with its ending (`Web.Dependent.ceases_below`). Not every undermining does
+(`seedbank_world`). -/
 theorem grazing_browser_ends : ¬ grazing.web.active 1 .browser :=
   Web.Dependent.inactive_below grazing_dependent (t := 0) (c := .pool) (Nat.lt_succ_self 1)
     trivial (Nat.le_refl 2)
+
+namespace Seedbank
+
+inductive Relatum where
+  | drawer
+  | seed
+  | soil
+
+/-- The soil stands at three at the first step and one after it. -/
+def soil : Nat → Nat
+  | 0 => 3
+  | _ + 1 => 1
+
+/-- The drawer stands at one throughout, the seed at nothing. -/
+def level (t : Nat) : Relatum → Nat
+  | .drawer => 1
+  | .seed => 0
+  | .soil => soil t
+
+/-- Across the first step the drawer takes two units of soil; nothing is given. -/
+def flow : Flow Relatum Relatum where
+  present
+    | 0 => [.drawer]
+    | _ + 1 => []
+  take _ x y := match x, y with
+    | .drawer, .soil => 2
+    | .drawer, .drawer => 0
+    | .drawer, .seed => 0
+    | .seed, _ => 0
+    | .soil, _ => 0
+  give _ _ _ := 0
+
+/-- Every relatum is active while it stands. The seed depends on the soil at need two
+throughout; the drawer draws on the soil. -/
+def web : Web Relatum Relatum where
+  level := level
+  active t x := 0 < level t x
+  requires _ x y := x = .seed ∧ y = .soil
+  need _ _ _ := 2
+  draws _ x y := x = .drawer ∧ y = .soil
+
+theorem distinct : Distinct [Relatum.drawer, .seed, .soil] :=
+  ⟨fun mem => match mem with | .tail _ (.tail _ no) => (nomatch no),
+   fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
+
+end Seedbank
+
+/-- A seed dormant in soil that a drawer draws down (the eleventh review's probe). -/
+def seedbank : World :=
+  ⟨Seedbank.Relatum, Seedbank.flow, Seedbank.web⟩
+
+/-- A finite, balanced world in which activity needs support and every relatum is
+embodied. The drawer's event at the first step undermines the seed's dependence on the
+soil, which persists unchanged, so the event is not living, and the premises of
+`Web.Dependent.inactive_below` hold. Yet the seed is never active and nothing ever ceases:
+the undermining co-occurs with no ending. -/
+theorem seedbank_world :
+    seedbank.Dependent ∧ seedbank.Embodied ∧ seedbank.Balanced ∧ seedbank.Finite ∧
+    seedbank.web.UnderminingOn 0 .drawer .soil ∧ ¬ seedbank.Living ∧
+    (seedbank.web.level 1 .soil < seedbank.web.need 0 .seed .soil ∧
+      seedbank.web.requires 1 .seed .soil ∧
+      seedbank.web.need 0 .seed .soil ≤ seedbank.web.need 1 .seed .soil) ∧
+    (∀ t, ¬ seedbank.web.active t .seed) ∧ ∀ t x, ¬ seedbank.web.Ceases t x :=
+  have undermining : seedbank.web.UnderminingOn 0 .drawer .soil :=
+    ⟨⟨rfl, rfl⟩, .seed, ⟨rfl, rfl⟩,
+     ⟨0, Nat.le_refl 0, fun _ _ _ => ⟨rfl, rfl⟩, Nat.le_succ 2, Nat.lt_succ_self 1⟩,
+     Nat.lt_succ_self 1⟩
+  ⟨fun _ f active c requires => match f, c, requires, active with
+     | _, _, ⟨rfl, rfl⟩, active => absurd active (Nat.lt_irrefl 0),
+   fun _ _ => Iff.rfl,
+   fun t c => match t, c with
+     | 0, .drawer => rfl
+     | 0, .seed => rfl
+     | 0, .soil => rfl
+     | _ + 1, .drawer => rfl
+     | _ + 1, .seed => rfl
+     | _ + 1, .soil => rfl,
+   ⟨[.drawer, .seed, .soil], Seedbank.distinct, fun x => match x with
+     | .drawer => .head _
+     | .seed => .tail _ (.head _)
+     | .soil => .tail _ (.tail _ (.head _))⟩,
+   undermining,
+   fun living => living 0 .drawer Nat.zero_lt_one ⟨.soil, undermining⟩,
+   ⟨Nat.lt_succ_self 1, ⟨rfl, rfl⟩, Nat.le_refl 2⟩,
+   fun _ => Nat.lt_irrefl 0,
+   fun _ x ceases => match x, ceases with
+     | .drawer, ⟨_, no⟩ => no Nat.zero_lt_one
+     | .seed, ⟨active, _⟩ => absurd active (Nat.lt_irrefl 0)
+     | .soil, ⟨_, no⟩ => no Nat.zero_lt_one⟩
 
 namespace Leaking
 
@@ -785,6 +899,50 @@ theorem law_decides (law : ∀ w : World, w.Finite → w.ArisingRecurs → w.Cea
     (Q : Prop) : Q ∨ ¬ Q :=
   match law (undecided Q) (undecided_world Q).1 (undecided_world Q).2 0 with
   | ⟨t, (), _, active, inactive⟩ => Undecided.decides Q t active inactive
+
+/-- Conversely, with excluded middle as a hypothesis and no decidability, in a finite world
+arising recurs exactly when ceasing does. Where nothing ceases from some step on, what is
+active stays active, so each relatum arises at most once more; where nothing arises from
+some step on, what is inactive stays inactive, so each ceases at most once more. Either
+way the finitely many relata fall quiet (the eleventh review's probe, with the converse
+direction added). -/
+theorem law_of_em (em : ∀ P : Prop, P ∨ ¬ P) (finite : w.Finite) :
+    w.ArisingRecurs ↔ w.CeasingRecurs :=
+  match finite with
+  | ⟨all, _, every⟩ =>
+    ⟨fun arising => match em w.CeasingRecurs with
+      | .inl ceasing => ceasing
+      | .inr stops => match exists_not_of_em em stops with
+        | ⟨N, still⟩ =>
+          match quiet_of_once em (E := fun x t => w.web.Arises t x) (N := N)
+            (fun x _ from_ arises _ later again => match le_dest later with
+              | ⟨m, same⟩ => again.1 (Eq.subst (motive := fun s => w.web.active s x) same.symm
+                  (persists_of_em em (p := fun s => w.web.active s x) arises.2
+                    (fun t after ceases => still ⟨t, x,
+                      Nat.le_trans (Nat.le_succ_of_le from_) after, ceases⟩) m)))
+            all with
+          | ⟨M, _, quiet⟩ => match arising M with
+            | ⟨t, x, later, arises⟩ => absurd arises (quiet x (every x) t later),
+     fun ceasing => match em w.ArisingRecurs with
+      | .inl arising => arising
+      | .inr stops => match exists_not_of_em em stops with
+        | ⟨N, still⟩ =>
+          match quiet_of_once em (E := fun x t => w.web.Ceases t x) (N := N)
+            (fun x _ from_ ceases _ later again => match le_dest later with
+              | ⟨m, same⟩ => stays_failing (p := fun s => w.web.active s x) ceases.2
+                  (fun t after arises => still ⟨t, x,
+                    Nat.le_trans (Nat.le_succ_of_le from_) after, arises⟩) m
+                  (Eq.subst (motive := fun s => w.web.active s x) same again.1))
+            all with
+          | ⟨M, _, quiet⟩ => match ceasing M with
+            | ⟨t, x, later, ceases⟩ => absurd ceases (quiet x (every x) t later)⟩
+
+/-- Asked of every finite world without decidability, the law that arising recurs exactly
+when ceasing does is equivalent to excluded middle. It is stated in the pure core and needs
+no choice. -/
+theorem law_iff_em :
+    (∀ w : World, w.Finite → (w.ArisingRecurs ↔ w.CeasingRecurs)) ↔ ∀ Q : Prop, Q ∨ ¬ Q :=
+  ⟨fun law => law_decides fun w finite => (law w finite).mp, fun em _ => law_of_em em⟩
 
 /-! ## The parts -/
 

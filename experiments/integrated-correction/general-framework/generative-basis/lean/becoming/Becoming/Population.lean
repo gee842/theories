@@ -34,7 +34,7 @@ many formations are active at each step, and ties the flow's count to the web's.
   the listing of activity: the formations active at the end with those that ceased are
   those active at the start with those that arose (`Web.Census.over_stretch`), ceasing
   recurring needs arising recurring (`Web.arising_of_ceasing`), and under a census
-  bounded from some step on generation is unceasing exactly when ceasing recurs
+  bounded from some step on arising recurs exactly when ceasing recurs
   (`Web.unceasing_iff_bounded`). Read of dependence, forming and dissolving obey the
   same balance and laws (`Web.DependenceCensus.over_stretch`,
   `Web.DependenceCensus.forming_of_dissolving`,
@@ -552,10 +552,10 @@ theorem ceasing_of_arising {alive : Nat → List F} (census : W.Census alive) {T
     ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
   Listed.ceasing_of_coming census bounded arising
 
-/-- So with at most `B` formations active at each step from some step on, generation is
-unceasing exactly when some formation ceases at arbitrarily late steps: the law for
-finitely many formations (`unceasing_iff`) needs only a count bounded from some step on.
--/
+/-- So with at most `B` formations active at each step from some step on, some formation
+arises at arbitrarily late steps exactly when some formation ceases at arbitrarily late
+steps: the law for finitely many formations (`unceasing_iff`) needs only a count bounded
+from some step on. -/
 theorem unceasing_iff_bounded {alive : Nat → List F} (census : W.Census alive) {T B : Nat}
     (bounded : ∀ t, T ≤ t → (alive t).length ≤ B) :
     W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
