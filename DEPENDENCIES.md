@@ -718,6 +718,126 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
+## continuing-self-fed-from-beyond ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用 taking_draws_in、Inward、Around、Distinct 与 Lone；fed_from_beyond 由 taking_draws_in 经 fed_of_not_inward 推出。 / Reuses taking_draws_in, Inward, Around, Distinct and Lone; fed_from_beyond follows from taking_draws_in through fed_of_not_inward.
+
+**Producer output / 上游输出:** 在耗散之下，取用复现、从某步起被围住的有限家族汲入：不是从某步起每步都内向。 / Under dissipation a finite family from which taking recurs, enclosed around from some step on, draws in: it is not inward at every step from some step on.
+
+**Consumer input / 下游输入:** 在可判定相等之下，不内向恰是从其外得到供给。 / With equality decided, not being inward is exactly being fed from beyond.
+
+**Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；取用复现；可判定相等。 / Balance; dissipation; no repetition; enclosure around; recurring taking; decided equality.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## continuing-self-fed-from-beyond ← generation-is-replenishment
+
+`formal-reuse` — 复用 rising_draws_in 与 Web.generation_draws_in，得到上升与体现生起的输送形式。 / Reuses rising_draws_in and Web.generation_draws_in for the conveyance forms of rising and embodied arising.
+
+**Producer output / 上游输出:** 上升或体现生起复现的有限家族，被围住时汲入。 / A finite family in which rising or embodied arising recurs, enclosed around, draws in.
+
+**Consumer input / 下游输入:** 它不能从某步起都没有东西从其外传入。 / It cannot from any step on be fed from nothing beyond it.
+
+**Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；可判定相等；生起的形式还需一类读法与体现。 / Balance; dissipation; no repetition; enclosure around; decided equality; the arising form also needs the one-kind reading and embodiment.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## conveyance-crosses-the-boundary ← continuing-self-fed-from-beyond
+
+`formal-reuse` — 复用 Conveys 与 fed_from_beyond；穿越定理由它推出。 / Reuses Conveys and fed_from_beyond; the crossing theorems follow from it.
+
+**Producer output / 上游输出:** 延续的家族不能从某步起都没有东西从其外传入。 / A continuing family cannot from any step on be fed from nothing beyond it.
+
+**Consumer input / 下游输入:** 以输送为 related，其边界不会从某步起再无穿越。 / With conveyance as related, its boundary is from no step on left uncrossed.
+
+**Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；取用复现；可判定相等。 / Balance; dissipation; no repetition; enclosure around; recurring taking; decided equality.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## conveyance-crosses-the-boundary ← life-as-condition-of-life
+
+`formal-reuse` — 复用一类读法 Flow.roles、Web.roles 与 inr_not_mem。 / Reuses the one-kind reading Flow.roles, Web.roles and inr_not_mem.
+
+**Producer output / 上游输出:** 两类读法嵌入一类读法；条件不是参与者。 / The two-kind reading embeds in the one-kind reading; conditions do not take part.
+
+**Consumer input / 下游输入:** 先前的读法不使两个条件相关，输送使之相关。 / The earlier readings relate no two conditions; conveyance does.
+
+**Retained conditions / 保留条件:** 一类读法。 / The one-kind reading.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## conveyance-crosses-the-boundary ← living-on-and-descent
+
+`formal-reuse` — 复用以之为生（Web.sustenance）与世系（Flow.descent）的估值，用于比较。 / Reuses the valuations of living on (Web.sustenance) and descent (Flow.descent) for the comparison.
+
+**Producer output / 上游输出:** 以之为生与世系两种直接关系。 / Living on and descent as two direct relations.
+
+**Consumer input / 下游输入:** 它们都不使两个条件相关。 / Neither relates two conditions.
+
+**Retained conditions / 保留条件:** 一类读法。 / The one-kind reading.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean)
+
+## conveyance-crosses-the-boundary ← condition-correspondence-discipline
+
+`formal-reuse` — 复用交互（Web.Interacts、Web.interaction）用于比较。 / Reuses interaction (Web.Interacts, Web.interaction) for the comparison.
+
+**Producer output / 上游输出:** 交互：一方汲取、另一方以正水平依存。 / Interaction: one draws, the other depends at a positive level.
+
+**Consumer input / 下游输入:** 交互不使两个条件相关。 / Interaction relates no two conditions.
+
+**Retained conditions / 保留条件:** 一类读法。 / The one-kind reading.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
+
+## derived-extent-limits ← continuing-self-fed-from-beyond
+
+`formal-reuse` — 复用 FedFromBeyond 与 Lone.supply_not_source；照管者的供给每步都从其外得到供给（Totalizer.fed）。 / Reuses FedFromBeyond and Lone.supply_not_source; the keeper's supply is fed from beyond at every step (Totalizer.fed).
+
+**Producer output / 上游输出:** 从其外得到供给的定义与以供给形式到达其外的见证。 / Being fed from beyond, and the witness that the extent reaches beyond as supply.
+
+**Consumer input / 下游输入:** 照管者满足这一要求。 / The keeper meets this requirement.
+
+**Retained conditions / 保留条件:** 平衡；耗散。 / Balance; dissipation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## derived-extent-limits ← own-count-misses-joint-excess
+
+`formal-reuse` — 复用 WithinJoint；照管者对其供给联合地在所给之内。 / Reuses WithinJoint; the keeper takes from its supply jointly within what is given.
+
+**Producer output / 上游输出:** 联合地在所给之内的定义。 / Taking jointly within what is given.
+
+**Consumer input / 下游输入:** 照管者满足这一要求。 / The keeper meets this requirement.
+
+**Retained conditions / 保留条件:** 平衡。 / Balance.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## derived-extent-limits ← held-lives-g0-is-centering
+
+`formal-reuse` — 中心的一半：照管者网中每个生命都被持有、S0 处处成立，而 N_std 与 G0 不成立（Totalizer.center_not_derived）。 / The center half: in the keeper's web every life is held and S0 holds everywhere while N_std and G0 fail (Totalizer.center_not_derived).
+
+**Producer output / 上游输出:** 被持有的生命上 G0 恰等于处处 S0 加 N_std。 / On held lives G0 is exactly S0 everywhere with N_std.
+
+**Consumer input / 下游输入:** 推出的要求不迫使 N_std。 / The derived requirements do not force N_std.
+
+**Retained conditions / 保留条件:** 每个形成以自身事件为自身区域。 / Each formation's own events its own region.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
+
+## derived-extent-limits ← becoming-stepwise-reading
+
+`formal-reuse` — 复用侵蚀（Web.UnderminingAt、Web.MetAbove.now）与被支持（Web.Supported）。 / Reuses undermining (Web.UnderminingAt, Web.MetAbove.now) and support (Web.Supported).
+
+**Producer output / 上游输出:** 逐步读法的侵蚀。 / Undermining on the stepwise reading.
+
+**Consumer input / 下游输入:** 照管者在第一步的事件侵蚀另一个形成。 / The keeper's event at step one undermines the other formation.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
 ## derived-history-law-exactness ← finite-trace-transport
 
 `formal-reuse` — admitted_extension_projects直接调用trace_map保持同一事件词；反向接续另由derived_trace_sound证明。 / admitted_extension_projects directly uses trace_map to preserve the event word; derived_trace_sound separately proves continuation soundness.
@@ -953,6 +1073,46 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 完整翻译问答一致与接收侧有限性，不推出全部中间位置对应。 / Complete translated-answer agreement and receiving-side finiteness; no general internal-position matching.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean)
+
+## held-lives-g0-is-centering ← metaethical-core-characterization
+
+`formal-reuse` — 复用 Valuation、SelfGood、transmits、shares、Neutral、Within、Significant、Reach 与 Invariant.reach；原刻画 significant_iff 保持其范围。 / Reuses Valuation, SelfGood, transmits, shares, Neutral, Within, Significant, Reach and Invariant.reach; the earlier characterization significant_iff keeps its scope.
+
+**Producer output / 上游输出:** 估值、S0、两条中立与 G0 的定义；沿关系的不变量。 / The valuation, S0, the two neutralities and G0; invariants along relations.
+
+**Consumer input / 下游输入:** 被持有的生命上 G0 恰等于处处 S0 加 N_std。 / On held lives G0 is exactly S0 everywhere with N_std.
+
+**Retained conditions / 保留条件:** 持有；significant_iff_reached 另需持有可判定与到达。 / Holding; significant_iff_reached also needs decided holding and reach.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## held-lives-g0-is-centering ← becoming-stepwise-reading
+
+`formal-reuse` — 复用逐步读法的估值 Web.valuation（living：活跃且不侵蚀；related：共同参与）。 / Reuses the stepwise valuation Web.valuation (living: active and not undermining; related: co-participation).
+
+**Producer output / 上游输出:** 网的逐步估值。 / The stepwise valuation of a web.
+
+**Consumer input / 下游输入:** 每个形成以自身事件为自身区域时，每个活的事件都被持有。 / With each formation's own events its own region, every living event is held.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## held-lives-g0-is-centering ← own-count-misses-joint-excess
+
+`formal-reuse` — 中心不由动力学推出的见证使用谨慎照管者，它满足联合地在所给之内（WithinJoint）。 / The witness that the center is not derived uses the careful keeper, which takes jointly within what is given (WithinJoint).
+
+**Producer output / 上游输出:** 联合地在所给之内的定义。 / Taking jointly within what is given.
+
+**Consumer input / 下游输入:** 满足它的照管者仍不使 N_std 成立。 / A keeper meeting it still does not make N_std hold.
+
+**Retained conditions / 保留条件:** 见 derived-extent-limits。 / See derived-extent-limits.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## held-lives-g0-is-centering ← self-good-reachable-g0
+
+`interpretive` — 那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的恰是 N_std。 / It left a bridge from standpoint-relative to normative significance; here, on held lives, what G0 adds beyond S0 is exactly N_std.
 
 ## historical-source-binding ← retrospective-source-binding
 
@@ -1417,6 +1577,22 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## organizational-rule-inheritance ← recurrent-chain-assembly
 
 `interpretive` — 接续固定规律之后的组织变异问题；不导入其模型或宣称形式跨域适配。 / Continues the organizing-variation question left by fixed-law reconstruction; does not import that model or claim a formal cross-domain adapter.
+
+## own-count-misses-joint-excess ← more-needs-renewers
+
+`formal-reuse` — 复用平衡（Flow.Balances）、只有活跃者给予（Flow.Acting）与 taken、given 的总量。 / Reuses balance (Flow.Balances), only active formations giving (Flow.Acting) and the totals taken and given.
+
+**Producer output / 上游输出:** 平衡的流：水平加取用等于原水平加给予。 / A balanced flow: the level with what is taken is the level before with what is given.
+
+**Consumer input / 下游输入:** 联合超出的每一步使水平至少下降一。 / Each step of joint excess lowers the level by at least one.
+
+**Retained conditions / 保留条件:** 平衡；门控的结论另需 Acting 与 Dependent。 / Balance; the gated conclusions also need Acting and Dependent.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## own-count-misses-joint-excess ← renewing-consuming-formation
+
+`interpretive` — 外围在一类磨损定律中已有联合超出终止共享形成；本结果在脊柱的支持门控网中陈述同一现象，没有实例定理。 / The periphery has joint excess ending a shared formation in one wear-law class; this result states the same phenomenon in the spine's support-gated web, with no instance theorem.
 
 ## pending-task-context-applicability ← acquired-revision-of-pending-task
 

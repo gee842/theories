@@ -2789,6 +2789,85 @@ Integration: 计划 P34；回答开放纲领“对整个空间成立的规律的
 
 **边界。** 无伦理谓词，不评价生起或止息；只对离散步与每步有限的成立者陈述；只说计数，读于世界只说活动；有限世界中与被围住时（静止定理之外）计数的规律没有陈述；名称（Tally、Queue、Pointwise、CountsObey、counting_laws、counting_free、counting_binds_jointly、queue、embodiedQueue、tendedQueue、Tended、lone、mark_turn）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
 
+## 47. 延续的奠基：从想要延续者重述（W1–W5）
+
+2026-10-10。Ren 提议从“想要自身延续者”重述普遍元伦理核心（[原话](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）：想要延续者使其延续有意义；它须计入的整体范围依视角而定，不需要任何公理；加一条公理即闭合整体。AI 把它分为两半：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。Ren 答“exactly”，并说“commit them, then start implementation all the way to full completion”。本节实现[延续奠基计划](CONTINUATION-GROUNDING-PLAN.md)的 W1–W5；阶段以 W 编号，与并行会话的 P 编号分开。成果记录：新增 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[own-count-misses-joint-excess](../../../../theories/becoming/results/records/own-count-misses-joint-excess.md)、[held-lives-g0-is-centering](../../../../theories/becoming/results/records/held-lives-g0-is-centering.md)、[conveyance-crosses-the-boundary](../../../../theories/becoming/results/records/conveyance-crosses-the-boundary.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)。
+
+```text
+Result(s): 复用 no-finite-part-bears-taking（taking_draws_in、Inward、Around、Lone）、generation-is-replenishment
+           （rising_draws_in、Web.generation_draws_in）、more-needs-renewers（Balances、Acting）、
+           metaethical-core-characterization（Valuation、SelfGood、transmits、shares、Neutral、Within、Reach）、
+           becoming-stepwise-reading（Web.valuation、UnderminingAt、MetAbove.now）、life-as-condition-of-life（Flow.roles、
+           Web.roles、inr_not_mem）、living-on-and-descent（sustenance、descent）、condition-correspondence-discipline
+           （interaction）；新增上面五项
+Delta: Continuation（L3，导入 Roles）：Conveys、FedFromBeyond、not_inward_of_fed、inward_of_not_fed、inward_iff_not_fed、
+       fed_of_not_inward、fed_from_beyond、rising_fed_from_beyond、Web.generation_fed_from_beyond、Lone.fed、
+       Lone.each_fuel_once、Lone.supply_not_source；WithinOwn、WithinJoint、joint_keeps、excess_lowers、excess_bounded、
+       Pair、stays_below、ends_below、joint_excess_ends、Exceeding、Alone；Downstream、Mortal、Totalizer.careful；
+       Standpoints（L4，导入 Descent 与 Continuation）：Valuation.Held、Valuation.Unheld、significant_iff_held、
+       significant_iff_reached、Apart、Unclaimed、Relayed、Web.held_by_formations、Web.significant_iff_self；
+       Flow.conveyance、conveyance_idle、boundary_crossed、Cut、region_not_a_cut、valuing_reaches_source、
+       roles_conveyance、roles_conditions_unrelated；Totalizer.crossed、supply_not_cut、conveyance_only、own、
+       valuation、center_not_derived
+Supplied premises / correspondence: 平衡、耗散、被围住、不重复、可判定相等（W1、W2）；更新依存于所更新者的门控、Acting、
+           Dependent（W3）；持有与可判定的持有，S0、N_std、N_rel 都是假设（W5）；输送作为 related（W2，Ren 的选择）；
+           从想要一个目的到有理由求其所需的一步（W4）
+Evidence: 合并检查器回执 20261009T222752.438253Z（1280 项定理、2062 项声明审计、核心闭包 31 个模块、包 29 个模块，全部源声明公理报告为空；
+          Continuation 中 Lean 生成的 Totalizer.Place.fuel.injEq 依赖 propext，没有源声明使用它）；外围回执 20261009T223112.652163Z；实例检查
+Boundary: 没有伦理公理；G0 仍是所采用的公理，重述待 Ren 接受；持有、输送与“想要即 S0”是对应前提或读法；见证是最小的；
+          与外围磨损定律的联系是诠释性的；名称由 Ren 定
+Integration: 延续奠基计划 W1–W5；Ren 提议的两半；chapter §6.7；G0 刻画（§6.1）保持其范围
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.Conveys`、`Flow.FedFromBeyond` | 参与的形成从 c 取用、向 d 给予，即有东西从 c 传到 d；有东西从家族之外传入某个成员，即家族从其外得到供给 |
+| `Flow.inward_iff_not_fed` | 相等可判定时，从其外得到供给恰是该步不内向（`not_inward_of_fed` 不需要可判定） |
+| `Flow.fed_from_beyond`、`Flow.rising_fed_from_beyond`、`Web.generation_fed_from_beyond` | 平衡与耗散之下，取用复现、成员上升复现或体现成员生起复现的有限家族，从某步起被围住时，不能从某步起都没有东西从其外传入 |
+| `Lone.supply_not_source` | 池每步都从其外得到供给，每份燃料只在它自己的那一步被传出：必要的是得到供给，不是哪个特定来源 |
+| `Flow.WithinOwn`、`Flow.WithinJoint`、`Pair.own_not_joint` | 各自在所给之内，合起来可以超出 |
+| `Flow.joint_keeps`、`Flow.excess_lowers`、`Flow.excess_bounded`、`Pair.no_web` | 联合地在所给之内时水平不降；联合超出每步至少降一，连续 n 步需要起点至少 n；Pair 没有平衡的网 |
+| `Flow.stays_below`、`Flow.ends_below`、`Flow.joint_excess_ends` | 更新者以至少 m 的需要依存于所更新者、只有活跃者给予、活动需要支持时，水平一旦低于 m 就一直低于 m，以至少 m 的需要依存者从此不活跃；联合超出使水平低于 m 时，终结更新者与依存者，取用者在内 |
+| `Exceeding.all_end`、`Alone.all_continue` | 一个更新者与两个各在所给之内的取用者，两步后都终结；只有一个取用者时都延续 |
+| `Downstream.one_way` | 推出的范围单向：自身只依存于它的地，每步活跃且被支持；以它所给为生的下游形成在它停止给予后终结 |
+| `Mortal.after_its_end`、`Mortal.without_continues` | 想要的视界：生命两步、活着时每项依存都被满足的形成，终结了共享条件的更新，继承者在它终结之后才终结；没有它时其余延续 |
+| `Totalizer.careful` | 谨慎的照管者：平衡、耗散、`Dependent`；照管者每步活跃且被支持，只依存于它的供给，供给被更新、每步从其外得到供给、被联合地在所给之内取用；它在第一步的事件侵蚀另一个形成，后者从第二步起不活跃 |
+| `Valuation.Held`、`Valuation.significant_iff_held` | 每个活的主张都在某个立场的自身区域中时，G0 恰等于每个立场的 S0 加 N_std，不用连通与 N_rel |
+| `Valuation.significant_iff_reached` | 持有可判定、每个活的主张都经已形成的关系从被持有的活的主张到达时，G0 恰等于处处 S0、N_std 与只指向无人持有者的 N_rel |
+| `Apart`、`Unclaimed`、`Relayed` | 三个反模型：每个生命只被自己的立场珍视；无人持有的生命；被到达而无人持有的生命 |
+| `Web.held_by_formations`、`Web.significant_iff_self` | 逐步读、每个形成以自身事件为自身区域时，每个活的事件都被持有，G0 恰等于每个形成的 S0 加 N_std |
+| `Flow.conveyance`、`Flow.conveyance_idle` | 以一类关系项读，输送使同一步的两个事件相关；闲置的关系项与任何事件都不相关 |
+| `Flow.boundary_crossed`、`Flow.Cut`、`Flow.region_not_a_cut`、`Flow.valuing_reaches_source` | 延续家族的边界不会从某步起再无穿越，所以它的区域不是关系的切口；在 N_rel 下珍视一个关系项的事件，到达传入它者的活的事件 |
+| `Flow.roles_conveyance`、`Flow.roles_conditions_unrelated`、`Totalizer.conveyance_only` | 两个条件之间的输送使它们相关，交互、以之为生与世系在任何步上都不使两个条件相关；照管者的燃料与供给只由输送相关 |
+| `Totalizer.center_not_derived` | 从各形成自身的立场评价时，照管者的网中每个生命都被持有，S0 处处成立，意义传入各自区域也成立，而另一个形成活的事件从照管者的立场没有意义：N_std 与 G0 不成立 |
+
+**解读。**
+
+- **两半由证明分开。** 范围的一半（`Becoming.Continuation`）不含伦理谓词：它说想要延续者必须计入什么才能延续——其外的供给、对其所依存者的联合取用——而不说它应当计入。中心的一半（`Becoming.Standpoints`）说：对被持有的生命，G0 超出 S0 的恰是 N_std；而推出的范围不迫使 N_std（`Totalizer.center_not_derived`）。所以“这不需要任何公理”对范围成立，对中心不成立；Ren 提议中的一条公理正落在证明所指的地方。计划 §3.4 说，若第四个见证造不出来，中心就会由动力学推出，论述会改变；见证造出来了。
+- **与原刻画。** `significant_iff`（§6.1）从一个种子出发，需要连通与 N_rel 把意义带到各处，§6.3 的大部分工作在保证连通。新的刻画在每个想要的点都有种子，只需 N_std 使它们共同；连通与 N_rel 只对无人持有的生命仍有作用。在连通且每个生命都被持有的整体上，二者都等价于 G0；一般地互不蕴涵，原刻画保持其范围。对手的形状（§6.2）不变：主要的对手接受处处 S0，把意义限在各自的立场之内（`Apart`）。
+- **范围以供给的形式到达其外。** 从其外得到供给是必要的，特定的来源不是（`Lone`）；照管者的燃料每步不同。所以想要只把他者计入为条件；在 N_rel 下，以输送为关系时，珍视自身的事件到达来源的活的事件（`valuing_reaches_source`），但那是公理的关系一半，不是想要所要求的。
+- **联合超出。** 元吸引子所选出的形成各自只计自身的取用；它们可以各在所给之内而合起来超出，联合超出持续不过原有的。更新依存于所更新者时（更新者的给予要求它自己被支持），联合超出终结更新与依存者，取用者在内。外部来源（太阳）的更新不受门控，这一结论不适用于它。与外围磨损定律（`jointly_exceeding_parts_end_shared_formation`）的联系是诠释性的，没有实例定理。
+- **草图的改名。** 计划中的草图（`development/continuation-grounding-sketch/`）的三个反模型改名为 `Apart`（原 `OwnStandpoints`）、`Unclaimed`（原 `Unheld`，避免与 `Valuation.Unheld` 重名）与 `Relayed`（原 `Reached`）；其余声明保持草图中的名称。草图是计划的证据，保留原样。
+- **弱式与强式。** 逐步读法的 `living`（活跃且不侵蚀）是弱式“不损”的一种读法；`Web.significant_iff_self` 在这一读法上给出“每个形成是自己的中心”。强式（整体的延续要创造更多意义）读作方向，联系 `Flow.More` 与 `World.ArisingRecurs`，本节没有新的形式内容。
+
+**作者反审。**
+
+*反驳 1：处处 S0 加 N_std 只是 G0 换个说法。* “G0 ⇒ 前提”的方向是平凡的；内容在反方向与极小性：对被持有的生命，连通与 N_rel 都不需要。这使论证的重心移动：§6.3 中保证连通的读法与纪律，对被持有的生命不再是 G0 的前提。
+
+*反驳 2：持有把结论放进了前提。* 持有是对应前提，不是伦理前提：它说哪些生命在某个立场的自身区域中。在持有之下，结论还需要 N_std；`Apart` 说明没有 N_std 时，每个生命都被持有、处处 S0，而 G0 不成立。所以持有定位了 N_std 的作用，没有替代它。
+
+*反驳 3：谨慎的照管者是人为的。* 定理是存在性的：推出的要求不迫使 N_std。更自然的见证不会改变这一点；若要推翻它，需要证明某个推出的要求蕴含 N_std，那将是更强、会改变论述的结果。
+
+*反驳 4：输送使一切供给链连通，太廉价。* 输送需要实际的取用与给予；闲置的关系项不相关（`conveyance_idle`）。它确实比交互、以之为生与世系连通更多（`roles_conditions_unrelated`），所以是否采用它是实质的选择，属于 Ren。
+
+*反驳 5：联合超出终结取用者自己，所以自利足以保护共享条件。* 只保护到自身所依存的程度：`Downstream` 中依存于自身的下游不在范围内，`Totalizer` 中照管者不依存的栖息地不在范围内，`Mortal` 中即使所依存的也只到想要的视界为止。
+
+*反驳 6：“不需要任何公理”不成立，因为用了平衡、耗散与被围住。* 读作不需要伦理公理（[来源记录](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)的解释）：物理、对应与表示的前提仍是公开的前提，各有满足与不满足它们的世界。
+
+*反驳 7：门控的联合超出与外围的磨损定律没有实例定理。* 对。记录把这一联系列为诠释性的，下一步是实例定理。
+
+**边界。** 范围的一半没有伦理谓词；中心的一半不证明 S0、N_std 或 N_rel，不约束拒绝它们的立场，不推出义务、排序、认识或遵循。G0 仍是所采用的公理；重述、“想要即 S0”、公理的范围（想要者还是一切；无人持有的生命）、伤害的层级、“更多”的读法、输送是否算已形成的关系与名称（Conveys、FedFromBeyond、WithinOwn、WithinJoint、Held、Unheld、Apart、Unclaimed、Relayed、Cut、Exceeding、Alone、Downstream、Mortal、Totalizer、keeper 等）都由 Ren 定。见证是最小的。本节尚未经独立审查（计划 W8）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3114,4 +3193,6 @@ The package now has 1131 theorems and 1826 declaration audits, over a core closu
 
 **P34: the whole law of counting.** The open programme listed ‘a complete list of the laws holding of the whole space’, and the completeness criterion said the laws of the whole exclude nothing beyond what the representation excludes; until now nothing showed that the census balance and the recurrence laws drawn from it are all the laws of counting. They are. Across each step some members are kept, with what ceased making the list before and with what came the list after (`Listed.keeps`, from which `Listed.across` now follows); counts of this form are a tally (`Tally`), and every tally is counted by a queue whose members join at the back and leave from the front (`Queue.counts`). So a property of the counts holds of every listing, on every type, exactly when it holds of every tally (`counting_laws`); the property need only respect the counts' values at each step (`Pointwise`), in place of function extensionality, which the pure core does not assume. Read of worlds, relata queuing with nothing flowing meet every premise but embodiment and relata queuing that stand while active every premise but balance, so a property of the counts of a census holds in every world meeting either seven exactly when it holds of every tally (`World.counting_free`): premises lacking balance or embodiment leave counting free. Together, with only active relata giving, they bind it: what arises is given by a relatum active at the step, so nothing arises across a step at which nothing is active, which is no law of tallies (`World.counting_binds_jointly`). That is all the eight premises add: a queue tended by its front, which gives to each relatum joining, takes from each leaving and, while active, exchanges a unit each way with every ground relatum, meets all eight wherever nothing joins an empty queue (`World.tendedQueue_premised`), so under all eight the laws of counting are the balance and that nothing arises across a step at which nothing is active (`World.premised_counting`). No finite family is closed at a step at which the front is active, so dissipation holds there vacuously, as in `exposed`; with enclosure the rest theorem constrains counting further, and the laws of counting under enclosure, and in finite worlds, are not stated. The kept form also spares the proof cancellation, whose prelude lemma carries `propext`. New record: whole-law-of-counting.
 
-The package now has 1223 theorems and 1958 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43 to 46 have not yet been independently reviewed.
+**W1–W5: continuation grounding.** Ren proposed restating the Universal Metaethical Core from what wants its continuation: wanting gives one's continuation significance, the extent of what one must count needs no axiom, and one axiom closes the whole. The AI analysis, which Ren answered “exactly”, split it in two halves, and the proofs now draw the line where it said. The extent, with no ethical premise (`Becoming.Continuation`, L3): conveying and being fed from beyond are, with equality decided, exactly a step that is not inward (`Flow.inward_iff_not_fed`), so under balance and dissipation a finite family from which taking recurs, enclosed around from some step on, cannot from any step on be fed from nothing beyond it (`Flow.fed_from_beyond`, with rising and embodied-arising forms), while no particular source need recur (`Lone.supply_not_source`); draws each within what a step gives can jointly exceed it (`Pair.own_not_joint`), joint excess cannot outlast what was held (`Flow.excess_bounded`), and where renewal is given only by formations depending on what they renew it ends the renewers and every dependent at such a need, the takers included (`Flow.joint_excess_ends`, `Exceeding.all_end`; with one taker all continue, `Alone.all_continue`). The extent so derived runs one way (`Downstream.one_way`), ends with the want (`Mortal.after_its_end`), and a careful keeper meets every derived requirement while ending another formation (`Totalizer.careful`). The center (`Becoming.Standpoints`, L4): where every living claim is held, lying in some standpoint's own region, G0 is exactly S0 at every standpoint with N_std, using neither connection nor N_rel (`Valuation.significant_iff_held`); unheld lives need N_rel from a held one (`significant_iff_reached`); each premise is needed (`Apart`, `Unclaimed`, `Relayed`); read stepwise each formation is its own center (`Web.significant_iff_self`); and valued from each formation's own standpoint the keeper's web has S0 everywhere while another life has no significance from the keeper, so the center is not derived (`Totalizer.center_not_derived`). Read with one kind of relatum, conveyance is a candidate reading of related under which a continuing family's region is no cut (`Flow.region_not_a_cut`), relating conditions that interaction, living on and descent never relate (`Flow.roles_conditions_unrelated`); adopting it is Ren's choice. G0 remains the adopted axiom until Ren accepts the restatement. New records: continuing-self-fed-from-beyond, own-count-misses-joint-excess, held-lives-g0-is-centering, conveyance-crosses-the-boundary, derived-extent-limits.
+
+The package now has 1280 theorems and 2062 declaration audits, over a core closure of 31 modules and a package of 29, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43 to 47 have not yet been independently reviewed.

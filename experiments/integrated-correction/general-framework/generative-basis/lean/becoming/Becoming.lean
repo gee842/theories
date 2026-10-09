@@ -19,10 +19,12 @@ import Becoming.Evolution
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
+import Becoming.Continuation
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
 import Becoming.Descent
+import Becoming.Standpoints
 
 /-!
 # The Theory of Becoming: the formal core
@@ -206,6 +208,23 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arises, so openness is necessary for arising without end and not sufficient; one
   meeting them with every step enclosed comes to rest, as does the world in which each
   of them binds.
+* `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
+  premise. Across a step something is conveyed from one condition to another when a
+  formation taking part takes from the first and gives to the second, and a family is fed
+  from beyond when something outside it is conveyed into a member: exactly a step that is
+  not inward, with equality decided. So every draw-in law reads as being fed: under balance
+  and dissipation, a finite family from which taking recurs, whose members rise or in which
+  embodied members arise at arbitrarily late steps, enclosed around from some step on,
+  cannot from any step on be fed from nothing beyond it, while no particular source need
+  recur.
+  Formations can each take within what a step gives while together they take more; each
+  step of joint excess lowers the level, so it cannot outlast what was held, and where
+  renewal is given only by formations depending on what they renew, joint excess that
+  brings the level below their need ends the renewers and everything depending on the
+  condition at such a need, the takers included. The extent so derived runs one way, to
+  what one's continuation depends on; it ends with the want, and a keeper that meets every
+  derived requirement can still end a life it does not need. Ren's proposal of 10 October
+  2026 (an AI reading).
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
@@ -228,6 +247,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reaches the arisen relatum's living events, and generations each given by the one before
   are connected by descent alone. Whether these readings count as formed relations is
   Ren's choice.
+* `Becoming.Standpoints` (L4): a center at every point. Where every living claim is held,
+  lying in the own region of some position, G0 is S0 at every position with standpoint
+  neutrality, with neither connection nor relational neutrality; lives no position holds
+  need relational neutrality from a held life, and each premise is needed. Read stepwise
+  with each formation its own center, every living event is held. Read with one kind of
+  relatum, conveyance leaves no step after which the boundary of a continuing family goes
+  uncrossed, so its region is no cut in the relations, and it relates conditions that
+  interaction, living on and descent do not. Valued from each formation's own
+  standpoint, the careful keeper of `Becoming.Continuation` meets S0 everywhere while
+  another formation's life has no significance from it: the dynamics fixes the extent,
+  not the center, and standpoint neutrality is the one premise that does. Ren's proposal
+  of 10 October 2026 reads S0 as wanting one's continuation and standpoint neutrality as
+  its one axiom; G0 remains the adopted axiom until Ren accepts the restatement.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

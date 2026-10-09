@@ -1,17 +1,32 @@
 {
-  "checked_at_utc": "2026-10-08T12:12:36.561456+00:00",
-  "passed": true,
-  "errors": [],
+  "checked_at_utc": "2026-10-09T22:37:47.232552+00:00",
+  "passed": false,
+  "errors": [
+    "Result map rendering differs from recorded input",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/data/lean-index.json",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/data/source-index.json",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/LEAN-INDEX.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/LEAN-DECLARATIONS.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/ethics.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/inquiry.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/renewal.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/learning.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/shared.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/core.md",
+    "Catalogue snapshot rendering mismatch: theories/becoming/results/lean-declarations/other.md"
+  ],
   "mapped_chats": 44,
   "families": 14,
-  "local_map_links_checked": 182,
-  "inventory_paths_checked": 4115,
-  "live_active_sources_changed_after_capture": [],
+  "local_map_links_checked": 296,
+  "inventory_paths_checked": 12683,
+  "live_active_sources_changed_after_capture": [
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean"
+  ],
   "semantics": "Snapshot documentary checks, not theorem validity, whole-repository freshness or independent scientific review.",
   "input_sha256": {
-    "theories/shengsheng-buxi-generative-existence/results/data/session-results.json": "d4f1cbb3f3e601884422658f587ce6946d444299a2e57953d6e300775fc438fd",
+    "theories/becoming/results/data/session-results.json": "e167ae3eacfd9b0417ad2f419e98dcba71d0010de38853b3a6ab2677ed7a7301",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "3869d5f10d267c8e2a153d8ccc5fb85bdf48a5d5917ecd5cb176d07217be45e7",
-    "theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md": "4c2033fc4f0d05c8e69d3dfdc37ee3c3029b4a4348c5cca32e965f9bd2235a9e"
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "415b196ccd3e101881182c87bd6e3be72d606e308356cf6e6e0b397f61f0296e",
+    "theories/becoming/results/SESSION-RESULTS.md": "4db0d8ab2c60d4361cdf3841db4e479d1d4f572e94826592864e447aa84c7cbb"
   }
 }

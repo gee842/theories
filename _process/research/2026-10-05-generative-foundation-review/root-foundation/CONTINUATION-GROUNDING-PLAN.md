@@ -220,6 +220,16 @@ W labels avoid the P numbers of the [unification plan](BECOMING-UNIFICATION-PLAN
 
 Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follows because it needs `Conveys`. W4 needs W1–W3 and W5. W6–W7 follow, and W8 comes last. Commits are made only with Ren's go-ahead.
 
+**实施状况（2026-10-10）/ Implementation status (10 October 2026).** 按 Ren“commit them, then start implementation all the way to full completion”，W1–W7 已完成，见[研究 §47](BECOMING-RENEWAL-READING.md#47-延续的奠基从想要延续者重述w1w5)：`Becoming.Continuation`（L3，40 项定理）与 `Becoming.Standpoints`（L4，17 项定理）进入核心，回执 20261009T222752.438253Z。Following Ren's instruction, W1–W7 are done (study §47).
+
+- W2 gained the comparison the table asks for: conveyance relates conditions that interaction, living on and descent never relate (`Flow.roles_conditions_unrelated`, `Totalizer.conveyance_only`); a new record, `conveyance-crosses-the-boundary`, rather than a delta on `living-on-and-descent`.
+- W3's link to `RelationalRenewal` and `RenewingFormation` is stated as interpretive; no instance theorem was built.
+- W4's second limit uses `Lone` (each fuel conveyed from at its own step only) rather than a family fed alternately by two removable sources; the four witnesses are `Downstream`, `Lone`, `Mortal` and `Totalizer`, with `Totalizer.center_not_derived` in `Becoming.Standpoints`.
+- W5's weak form is the stepwise instance (`Web.significant_iff_self`); the strong form is linked to `Flow.More` and `World.ArisingRecurs` in text only.
+- `Standpoints` imports `Descent` (for the comparison) and `Continuation`, as planned. The sketch's countermodels are renamed `Apart`, `Unclaimed` and `Relayed`.
+- W5b was not undertaken; it remains under further proofs in the chapter (§8).
+- W8, the independent review, is pending.
+
 ## 6. 属于 Ren 的选择 / Choices for Ren
 
 1. **“想要者”还是“任何东西” / “Anything that wants” or “anything”.**
@@ -235,8 +245,8 @@ Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follo
    - 生起复现 / arising that recurs;
    - 可能性、多样性与复杂性 / possibility, diversity and complexity (open).
    AI 的默认是方向，不是最大化。/ The AI's default is a direction, not maximization.
-4. **传递是否算已形成的关系 / Whether conveyance counts as a formed relation**, beside interaction, living on and descent.
-5. **名称 / Names.** `Becoming.Continuation`, `Becoming.Standpoints`, `Held`, `Unheld`, `Conveys`, `FedFromBeyond`, `Cut`, `WithinOwn` and `WithinJoint` are working names. 不以 Ren 的用语命名形式部分。/ No formal part is named after Ren's words.
+4. **输送是否算已形成的关系 / Whether conveyance counts as a formed relation**, beside interaction, living on and descent.
+5. **名称 / Names.** `Becoming.Continuation`, `Becoming.Standpoints`, `Held`, `Unheld`, `Conveys`, `FedFromBeyond`, `Cut`, `WithinOwn`, `WithinJoint`, `Apart`, `Unclaimed`, `Relayed`, `Exceeding`, `Alone`, `Downstream`, `Mortal` and `Totalizer` are working names. 不以 Ren 的用语命名形式部分。/ No formal part is named after Ren's words.
 6. **确认 / Confirmation.**
    - S0 作为想要的读法，移出“规范前提”一栏。/ S0 moves from “normative premise” to the reading of wanting.
    - 重述实施并审查后，是否替代 G0 成为所采用的公理。/ After implementation and review, whether the restatement replaces G0 as the adopted axiom.
