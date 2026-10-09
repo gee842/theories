@@ -21,7 +21,9 @@ imports none of these modules; the dependency runs from them to the core.
 
 * The core's G0, C, secured positive ground and positioned articulation D are, by
   definition, those of `GenerativeComparison` and `PositionedPositiveReason` on the
-  frame's inventory; the relational reading of `living` is `RenewalComparison`'s.
+  frame's inventory; the relational reading of `living` is `RenewalComparison`'s, and
+  so is the whole-run reading of courses in `Becoming.Ranking`, with the same
+  undisturbed levels.
   J1/J2 on configurations, `BetterAt`, is `PracticalJudgment.Better`.
 * Seed–edge closures (`WholeGroundCoverage.Reached`, `CutCoverageAudit.Reach`)
   and finite chains (`EvaluatorGrounding.Chain`) are reachability on the process
@@ -276,6 +278,19 @@ theorem Conditions.living_iff_relational {F Cond : Type} {P : Process S A}
     (K.valuation r own sig).living e ↔
       (RenewalComparison.relationalInventory (fun _ : Unit => K.along r)).realized () e :=
   Iff.rfl
+
+/-- The core's whole-run reading of courses is `RenewalComparison`'s relational inventory. -/
+theorem Ranking.wholeRun_iff {W F Cond : Type} (U : W → RelationalRenewal.Unfolding F Cond)
+    (w : W) (e : F × Nat) :
+    Ranking.wholeRun U w e ↔ (RenewalComparison.relationalInventory U).realized w e :=
+  Iff.rfl
+
+/-- The core's course without the focal formation has `RenewalComparison`'s levels. -/
+theorem Ranking.undisturbed_eq (L : RelationalRenewal.Law) :
+    ∀ t, Ranking.undisturbed L t = RenewalComparison.undisturbed L t
+  | 0 => rfl
+  | t + 1 =>
+    congrArg (fun x => if L.needG ≤ x then x + L.renew else x) (Ranking.undisturbed_eq L t)
 
 end Definitions
 

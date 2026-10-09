@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T00:29:25+00:00",
+  "reviewed_at_utc": "2026-10-09T00:55:55+00:00",
   "claim": {
     "zh": "种子—边闭包（WholeGroundCoverage 的 Reached、CutCoverageAudit 的 Reach）与评价者链（EvaluatorGrounding 的 Chain）恰是边过程上的可达。框架的可达配置构成共同延续空间：保持步骤与主张的映射携带每个可共同实现的组合，步骤可提升、主张可反映的摘要不丢失任何组合。稳健回应恰是可容许性取完成的共同回应，每个稳健回应都是判断过程的共同回应；保证即一步完成；LiveStep 即 Enabled；按一次观察过滤规则表即纯观察上的 After。函数式情境的实践表述恰是提升规则 L 下表述在确定框架上的情形；在 L 下，生成比较提升到回应，并给出理由、协调选择的存活与持续改进无存活者，对每个框架成立。L 是实质承诺：有一好一坏两个结果的回应，在保守规则下两个方向都不可比。核心的 G0、生成扩展、C、确保的正面根据与 D 在定义上就是 GenerativeComparison 与 PositionedPositiveReason 的定义；J1/J2 在配置上即 PracticalJudgment.Better（BetterAt）。判断即一步探究：一个回应是判断过程的共同回应，当且仅当它在每个所信配置上可容许（核心的 commonResponse_judge_iff）。在外围（Mathlib）：观察上的策略实施纠正，当且仅当它在每个观察值的格上的行动是共同回应；共同行动存在，当且仅当每个格都有共同回应；安全选择即显示该值的世界上的共同回应；CorrectionBoundary 与 ObservationChange 的细化定理由核心的 commonResponse_antitone 导出。",
     "en": "Seed–edge closures (WholeGroundCoverage.Reached, CutCoverageAudit.Reach) and evaluator chains (EvaluatorGrounding.Chain) are exactly reachability on the edge process. A frame's reachable configurations form a joint-continuation space: a step- and claim-preserving map carries every jointly realizable bundle, and a summary whose steps lift and whose claims reflect loses none. A robust response is exactly a common response with completion as admissibility, and every robust response is a common response of the judgment process; a guarantee is one-step completion; LiveStep is Enabled; filtering a rule list by one observation is After on a pure observation. The functional articulation of a situation is exactly the articulation under the lifting rule L on the deterministic frame; under L, generative comparison lifts to responses and supplies reasons, survival of coherent selection and the absence of survivors under continual improvement on every frame. L is substantive: a response with one better and one worse outcome is comparable in neither direction under the conservative rule. The core's G0, generative extension, C, secured positive ground and D are by definition those of GenerativeComparison and PositionedPositiveReason; J1/J2 on configurations is PracticalJudgment.Better (BetterAt). A judgment is a one-step inquiry: a response is a common response of the judgment process exactly when it is admissible at every believed configuration (the core's commonResponse_judge_iff). In the periphery, with Mathlib, a policy on observations implements correction exactly when its action on each observation value's cell is a common response; a common action exists exactly when every cell has one; a safe choice is a common response on the worlds showing the value; and the refinement theorems of CorrectionBoundary and ObservationChange follow from the core's commonResponse_antitone."
@@ -160,14 +160,14 @@
     "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading. The Mathlib bridge connects only the selection and safety interfaces of CorrectionBoundary and ObservationChange; their randomized bounds and real-valued models are not stated on the core, and the passage by choice to a single policy is not restated."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：Becoming.Bridge 32 项定理，连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261009T003015.364226Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 16 个模块（含核心）的当前字节与已通过回执一致。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): Becoming.Bridge's 32 theorems, with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261009T003015.364226Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 16 modules in its closure, the core included, match passed receipts."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：Becoming.Bridge 34 项定理（其中 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 属 ranking-under-readings），连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261009T005652.480340Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 17 个模块（含核心）的当前字节与已通过回执一致。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): Becoming.Bridge's 34 theorems (Ranking.wholeRun_iff and Ranking.undisturbed_eq belonging to ranking-under-readings), with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261009T005652.480340Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 17 modules in its closure, the core included, match passed receipts."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "60e407d11d413e47f49a50f519b388ad2868646e00c0cdadf16135091b4ff977",
+      "sha256": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3",
       "declarations": [
         "Becoming.edgeProcess",
         "Becoming.Closure",
@@ -371,13 +371,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "91d752e46064bf0af791d8530613ff504b667553275fabe01b55e7efe852ec84",
+      "sha256": "3f9d093aefb63002aa098990042cd7a9579f6c6e1644c5282fa49dc3bc04ea4f",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "role": "receipt",
-      "sha256": "61eed2c828b7cc6277c519b6b05a2720fcd632f22b9cfad89e6c89d376ef96b6",
+      "sha256": "82e024b236cbc5d46215dd4b56ed10dad2bb4c91600136940f7136ec2ae22a41",
       "declarations": []
     },
     {
@@ -389,13 +389,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json",
       "role": "integration",
-      "sha256": "526fc9f9177c6b22b152f80c583a83c149ff0b3826200c9a1fd6fe662b28cf7e",
+      "sha256": "bafe0697399727caee79205313908f5ad86dbee207df78d6388ce7924c9d8406",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0e029ebc0dc61cb0d54eceef43c072f0867679493bc58c214f3296fb8ea32b20",
+      "sha256": "d1c4ccf95738978a20d9461bb866a428324e4f88e57d5cd4e0b6e621b7fcb49d",
       "declarations": []
     },
     {
@@ -571,6 +571,10 @@
     {
       "zh": "2026-10-09：核心新增 Becoming.Return、Horizon、Joint、Substitution（P7）并更正读法（P6 审查）后，桥接与分类不变；更新到合并回执 20261009T002925.265132Z 与外围回执 20261009T003015.364226Z，分类检查的回执指针随之更新。本记录的主张与证明不变。",
       "en": "2026-10-09: after the core added Becoming.Return, Horizon, Joint and Substitution (P7) and corrected the readings (P6 review), the bridge and classification are unchanged; moved to consolidated receipt 20261009T002925.265132Z and peripheral receipt 20261009T003015.364226Z, with the classification check's receipt pointers updated accordingly. This record's claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：核心新增 Becoming.Ranking（P8）、桥接新增两条对应定理后重跑合并检查器（20261009T005555.457210Z）。本记录的主张与证明不变，只更新回执、计数与哈希；改动的源已读。",
+      "en": "2026-10-09: reran the consolidated checker (20261009T005555.457210Z) after the core added Becoming.Ranking (P8) and the bridge two correspondence theorems. This record's claim and proofs are unchanged; only the receipt, counts and hashes are updated, after reading the changed sources."
     }
   ]
 }

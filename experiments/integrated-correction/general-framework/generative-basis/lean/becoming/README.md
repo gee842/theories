@@ -30,10 +30,11 @@ Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-con
 | L3 | [`Becoming.Joint`](Becoming/Joint.lean) | 差别制造属于共同活动：在形成之间，也在一个形成的各事件之间 / difference-making belongs to the joint activity, among formations and among a formation's events |
 | L3 | [`Becoming.Substitution`](Becoming/Substitution.lean) | 支持门控定律中，能替代条件的消耗者持续而仍是消耗的 / in the support-gated law, a consumer that substitutes a condition persists and still consumes |
 | L4 | [`Becoming.Metaethics`](Becoming/Metaethics.lean) | 普遍元伦理核心：前提卡、G0 刻画、极小性、普遍理由、C 与 L；整段、逐步与关系层面的关系读法 / the Universal Metaethical Core: premise card, G0's characterization, minimality, the universal reason, C and L; the relational readings over a whole run, stepwise and through relations |
+| L4 | [`Becoming.Ranking`](Becoming/Ranking.lean) | C 在各读法下的排序：整段与逐步读法都把共享排在以消耗取胜之上；只有整段读法把过度汲取者的不在场排在其在场之上 / what C ranks under each reading: both the whole-run and the stepwise reading rank sharing above winning by consumption; only the whole-run reading ranks the absence of an overdrawing formation above its occurrence |
 
-每层只导入它下面的层（L3 内：`Becoming.Dependence` 导入 `Becoming.Renewal`；`Return`、`Horizon`、`Substitution` 导入 `Dependence`；`Joint` 导入 `Return`）。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
+每层只导入它下面的层（L3 内：`Becoming.Dependence` 导入 `Becoming.Renewal`；`Return`、`Horizon`、`Substitution` 导入 `Dependence`；`Joint` 导入 `Return`。L4 内：`Becoming.Ranking` 导入 `Becoming.Metaethics`）。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
 
-Each layer imports only those below it (within L3, `Becoming.Dependence` imports `Becoming.Renewal`; `Return`, `Horizon` and `Substitution` import `Dependence`; `Joint` imports `Return`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
+Each layer imports only those below it (within L3, `Becoming.Dependence` imports `Becoming.Renewal`; `Return`, `Horizon` and `Substitution` import `Dependence`; `Joint` imports `Return`; within L4, `Becoming.Ranking` imports `Becoming.Metaethics`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
 
 ## 检查 / Verification
 

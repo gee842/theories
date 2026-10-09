@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [becoming-return-grades.json](becoming-return-grades.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-09T00:29:25+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-09T00:55:55+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -23,7 +23,7 @@ Canonical source: [Return.lean](../../../../experiments/integrated-correction/ge
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：Becoming.Return 26 项定理全部空依赖；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。 / Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): all 26 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run).
+Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：Becoming.Return 26 项定理全部空依赖；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。 / Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): all 26 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run).
 
 不含伦理谓词，不选择周期长度，不推出哪种读法是生生的读法。Slowing 与 Dip 是最小见证；回程等级不涉及数量或代价。 / Contains no ethical predicate, chooses no cycle length and does not decide which reading is the reading of 生生. Slowing and Dip are minimal witnesses; the grades involve no amounts or costs.
 
@@ -82,3 +82,4 @@ Aliases / 别名: `Becoming.Web.renewed_within_one`, `Becoming.Web.RenewedWithin
 ## 沿革 History
 
 - 2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。 / 2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P7 of the unification plan, taking up the next steps of relational-renewal-classification and becoming-dependence-dynamics.
+- 2026-10-09：核心新增 Becoming.Ranking（P8）、桥接新增两条对应定理后重跑合并检查器（20261009T005555.457210Z）。本记录的主张与证明不变，只更新回执、计数与哈希；改动的源已读。 / 2026-10-09: reran the consolidated checker (20261009T005555.457210Z) after the core added Becoming.Ranking (P8) and the bridge two correspondence theorems. This record's claim and proofs are unchanged; only the receipt, counts and hashes are updated, after reading the changed sources.

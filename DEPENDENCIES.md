@@ -698,6 +698,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean)
 
+## ranking-under-readings ← relational-reading-comparison
+
+`formal-reuse` — whole_run_extends 在核心上重述该结果的 overdraw_relational_extension；桥接的 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 表明读法与不在场继续的水平就是该结果的。 / whole_run_extends restates that result's overdraw_relational_extension on the core; the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq show that the reading and the levels of the continuation without the formation are that result's.
+
+**Producer output / 上游输出:** 整段读法下的不在场继续与 C 的排序。 / The continuation without the formation and C's ranking under the whole-run reading.
+
+**Consumer input / 下游输入:** 两种读法下排序的比较。 / The comparison of rankings under the two readings.
+
+**Retained conditions / 保留条件:** 支持门控定律族的前提。 / The premises of the support-gated family.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
+
+## ranking-under-readings ← becoming-stepwise-reading
+
+`formal-reuse` — stepwise 恰是 Web.valuation 的 living（stepwise_iff），经 Web.static 读取定律的展开。 / stepwise is exactly the living of Web.valuation (stepwise_iff), reading the law's unfolding through Web.static.
+
+**Producer output / 上游输出:** 逐步读法与侵蚀。 / The stepwise reading and undermining.
+
+**Consumer input / 下游输入:** 逐步读法下的排序。 / Rankings under the stepwise reading.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## ranking-under-readings ← relational-renewal-classification
+
+`formal-reuse` — 直接复用支持门控定律、overdraw_consuming、within_renewal_sustains 与 malignant、winning、sharing 三个定律。 / Directly reuses the support-gated law, overdraw_consuming, within_renewal_sustains and the laws malignant, winning and sharing.
+
+**Producer output / 上游输出:** 定律、过度汲取的消耗与维持者的永久失去支持。 / The law, consumption by overdraw and the sustaining formation's permanent loss of support.
+
+**Consumer input / 下游输入:** 两种读法下的两对继续。 / Two pairs of continuations under the two readings.
+
+**Retained conditions / 保留条件:** 定律的前提。 / The law's premises.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)
+
 ## recoverable-mediated-change ← mediated-evidence-transport
 
 `formal-reuse` — prepare_preserves_safety 直接复用 commit_preserves_actual_coverage 及 commit_records_the_executed_effect，给出恢复不变量的初值。 / prepare_preserves_safety directly reuses commit_preserves_actual_coverage and commit_records_the_executed_effect to initialize the recovery invariant.

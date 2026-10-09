@@ -358,6 +358,16 @@ L 是实质承诺：
 - 有一好一坏两个结果的回应，在两个方向上都不可比；
 - 传递性需要一个可行的中间回应。
 
+**C 的排序取决于它所比较的读法。** 以两次继续为配置、以读法所记入的事件为实现的主张，C 就是这一框架上的比较（[Becoming.Ranking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean)，[ranking-under-readings](../results/records/ranking-under-readings.md)）：
+
+- 没有某个形成的继续扩展有它的继续，仅当读法扣下该形成的每个事件；
+- 整段读法下，C 把没有过度汲取者的继续排得更高，也把共享排在以消耗取胜之上；
+- 逐步读法下，过度汲取者在损失之前的事件被记入，C 不再决定它的在场与不在场（恶性增殖与以消耗取胜都是实例），但仍把共享排在以消耗取胜之上。
+
+所以若要由 C 得出“没有恶性增殖更好”，C 所比较的读法须扣下损失之前的事件，或者在 C 之外加更强的比较。G0 与 C 是否共用一种读法，属于 Ren 对生生读法的选择（§6.3）。
+
+**What C ranks depends on the reading it compares.** Under the whole-run reading C ranks the continuation without an overdrawing formation higher, and sharing above winning by consumption. Under the stepwise reading it still ranks sharing above winning, but no longer decides between an overdrawing formation and its absence, because the formation's events before the loss are credited.
+
 **L was a hidden premise exposed by integration.** Under the conservative L, the comparison, reason, survival and continual-improvement results hold on every frame. The functional situation is exactly the deterministic case. L is substantive.
 
 ### 6.6 不做什么 / What it does not do
@@ -397,7 +407,7 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 | 核心作为智慧之根（[wisdom-root](../results/records/wisdom-root.md)） | 开放 | 说明智慧的实际形成 |
 | 科学探究的必要关系根基（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)） | 开放 | 由独立陈述的成就建立核心的不可或缺性 |
 | 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)） | 放宽 `Dependent`（缓冲、储备、滞后）；形成的个体化 |
-| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合；条件的对应纪律；不依赖运行的读法；继续生成的成分 |
+| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）；条件的对应纪律；不依赖运行的读法；继续生成的成分 |
 | 共同活动中的归属 | but-for 差别制造在多重决定下与关系参与分离（[joint-difference-making](../results/records/joint-difference-making.md)） | 更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任 |
 | 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理；回程、视界、共同活动与替代，以及 A 的外在论辩护、N 的哲学根据，未经独立审查 | 进行这些审查 |
 | 经验对应 | 共同条件、各机制的实际实现 | 识别与可区分的检验 |
@@ -425,11 +435,12 @@ The core (L0 with its two foundation modules, and L1–L4) imports nothing outsi
 | L3 | [Becoming.Joint](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean) | but-for 差别制造；多重决定；渐进耗竭是共同活动 | 12 |
 | L3 | [Becoming.Substitution](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) | 支持门控定律中的替代保持消耗 | 4 |
 | L4 | [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 前提卡、G0 刻画、极小性、普遍理由；整段、逐步与关系层的读法 | 35 |
-| 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广 | 32 |
+| L4 | [Becoming.Ranking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) | C 在整段与逐步读法下的排序 | 15 |
+| 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广；整段读法即既有的关系清单 | 34 |
 
-[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 169 项定理、332 项声明审计，公理报告全部为空；核心闭包共 13 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
+[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 186 项定理、361 项声明审计，公理报告全部为空；核心闭包共 14 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 
-The consolidated checker and receipt cover 169 theorems and 332 declaration audits, all with empty axiom reports; the core closure has 13 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
+The consolidated checker and receipt cover 186 theorems and 361 declaration audits, all with empty axiom reports; the core closure has 14 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
 
 ## 10. 术语表 / Glossary
 

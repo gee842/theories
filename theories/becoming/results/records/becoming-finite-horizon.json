@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T00:29:25+00:00",
+  "reviewed_at_utc": "2026-10-09T00:55:55+00:00",
   "claim": {
     "zh": "在 Becoming.Renewal 的公地过程中，对每个视界 h，有两次运行在 h 之前的配置与动作都相同：焦点形成每一步都汲取两个单位（每步更新一个），而它的每个事件都在更新之内。此后一次在更新之内汲取，焦点形成在运行中是更新的；另一次继续超出，焦点形成是消耗的。因此，任何由前 h 步的配置与动作决定、并记入每次更新运行的读法，必记入某次消耗运行。分类不仅不是初始配置的函数，也不是任何有限前缀的函数。不用伦理前提，也不用 Lean 公理。",
     "en": "In the commons process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that credits every renewing run credits some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. No ethical premise and no Lean axiom is used."
@@ -110,8 +110,8 @@
     "en": "Contains no ethical predicate; proved in one process without feedback; does not say how to inquire into a run's continuation."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：Becoming.Horizon 2 项定理全部空依赖；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): both theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：Becoming.Horizon 2 项定理全部空依赖；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): both theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -147,19 +147,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "91d752e46064bf0af791d8530613ff504b667553275fabe01b55e7efe852ec84",
+      "sha256": "3f9d093aefb63002aa098990042cd7a9579f6c6e1644c5282fa49dc3bc04ea4f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "1d688e486e43dc443dd7962e00adcaf853f4bb09546942d19fedc1a54e04234f",
+      "sha256": "c216517f8f3f4069b6888776a289ba0d7e3e6109df2d1151d1a9ab23c77ef963",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0e029ebc0dc61cb0d54eceef43c072f0867679493bc58c214f3296fb8ea32b20",
+      "sha256": "d1c4ccf95738978a20d9461bb866a428324e4f88e57d5cd4e0b6e621b7fcb49d",
       "declarations": []
     },
     {
@@ -186,6 +186,10 @@
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。",
       "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P7 of the unification plan, taking up the next steps of relational-renewal-classification and becoming-dependence-dynamics."
+    },
+    {
+      "zh": "2026-10-09：核心新增 Becoming.Ranking（P8）、桥接新增两条对应定理后重跑合并检查器（20261009T005555.457210Z）。本记录的主张与证明不变，只更新回执、计数与哈希；改动的源已读。",
+      "en": "2026-10-09: reran the consolidated checker (20261009T005555.457210Z) after the core added Becoming.Ranking (P8) and the bridge two correspondence theorems. This record's claim and proofs are unchanged; only the receipt, counts and hashes are updated, after reading the changed sources."
     }
   ]
 }

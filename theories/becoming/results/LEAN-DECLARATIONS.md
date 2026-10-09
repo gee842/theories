@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 146 | 2,071 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 147 | 2,088 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -447,6 +447,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PublicationSafety.lean](lean-declarations/shared.md#module-946dd1d4cfb2) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PurposeCorrection.lean](lean-declarations/concern.md#module-51689dfd2a2c) | 关切与共同活动 / Concern and shared activity |
 | [PurposeCorrectionHistory.lean](lean-declarations/concern.md#module-41ff61a5ae5b) | 关切与共同活动 / Concern and shared activity |
+| [Ranking.lean](lean-declarations/core.md#module-fbc6f2c56a91) | 生成核心与关系结构 / Generative core and relational structure |
 | [ReachedInquiryComposition.lean](lean-declarations/inquiry.md#module-c8393ae20838) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [RealFeedback.lean](lean-declarations/learning.md#module-0a13f9949122) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [ReasonPreparation.lean](lean-declarations/shared.md#module-817e5110d349) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |

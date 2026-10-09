@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T00:29:25+00:00",
+  "reviewed_at_utc": "2026-10-09T00:55:55+00:00",
   "claim": {
     "zh": "在同一框架（核心过程加主张赋值）上陈述评价，不另立世界模型。在已形成关系把生生连在一起、且有某一生生的整体上，“每一生生从每一立场都有正面意义”（G0 在主张层的形式）等价于三项合取：某处有一个生生被某立场珍视（种子；任何持 S0 且有自身生生的位置都提供一个）；正面意义沿非零的已形成关系传递（N_rel）；对生生的正面意义不随立场而取消（N_std）。位置化表述 D 由外在论表述 A 推出。一个以新生生为目标的 sound 探究，使每个对它有通达的位置都具有支持它的一项理由。种子、N_rel、N_std、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界（自身区域、自身立场、认同者）。提升规则 L 只有经由一个可行的中间回应才传递。",
     "en": "Evaluation is stated over one frame (the core process with realized claims), with no world model of its own. On a whole where formed relations connect living and further generation and some such claim exists, “every living claim is significant from every standpoint” (G0 at claim level) is equivalent to three conjuncts: some living claim is valued from some standpoint (a seed; any S0-holding position with own living supplies one); significance passes along nonzero formed relations (N_rel); and significance of living content holds from every standpoint (N_std). The positioned articulation D follows from the externalist articulation A. A sound inquiry whose goal is new living content gives every position with access a contributory reason for it. Seed, N_rel, N_std, connection and A each have a consistent countermodel, and each normative rival is the same rule restricted by a formed boundary (own region, own standpoint, endorsers). The lifting rule L is transitive only through a live middle response."
@@ -138,8 +138,8 @@
     "en": "Proves none of S0, N, A, C, L or J, binds no position rejecting them, and does not treat the value of bringing new lives into existence. A contributory reason is not a duty or ranking and predicts no recognition or compliance. Sidgwick's dualism of practical reason is not dissolved; it is located at the boundary-neutrality premise."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：本结果所在的 Becoming.Metaethics（不含其后加的读法一节与逐步读法一节，见 becoming-renewal-reading、becoming-stepwise-reading）、Becoming.Inquiry、Becoming.Frame 共有 20、5、11 项定理（Becoming.Inquiry 另有一项判断定理，属 becoming-spine-instances），全部空依赖。检查器要求脊柱模块无任何公理依赖；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。控制例不计为新定理；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): this result's Becoming.Metaethics (excluding the later reading and stepwise-reading sections, see becoming-renewal-reading and becoming-stepwise-reading), Becoming.Inquiry and Becoming.Frame have 20, 5 and 11 theorems (Becoming.Inquiry has one further judgment theorem, recorded in becoming-spine-instances), all with empty axiom reports. The checker requires the spine to have no axiom dependency; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. Controls are not counted as new theorems; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：本结果所在的 Becoming.Metaethics（不含其后加的读法一节与逐步读法一节，见 becoming-renewal-reading、becoming-stepwise-reading）、Becoming.Inquiry、Becoming.Frame 共有 20、5、11 项定理（Becoming.Inquiry 另有一项判断定理，属 becoming-spine-instances），全部空依赖。检查器要求脊柱模块无任何公理依赖；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。控制例不计为新定理；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): this result's Becoming.Metaethics (excluding the later reading and stepwise-reading sections, see becoming-renewal-reading and becoming-stepwise-reading), Becoming.Inquiry and Becoming.Frame have 20, 5 and 11 theorems (Becoming.Inquiry has one further judgment theorem, recorded in becoming-spine-instances), all with empty axiom reports. The checker requires the spine to have no axiom dependency; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. Controls are not counted as new theorems; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -222,13 +222,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "91d752e46064bf0af791d8530613ff504b667553275fabe01b55e7efe852ec84",
+      "sha256": "3f9d093aefb63002aa098990042cd7a9579f6c6e1644c5282fa49dc3bc04ea4f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0e029ebc0dc61cb0d54eceef43c072f0867679493bc58c214f3296fb8ea32b20",
+      "sha256": "d1c4ccf95738978a20d9461bb866a428324e4f88e57d5cd4e0b6e621b7fcb49d",
       "declarations": []
     },
     {
@@ -323,6 +323,10 @@
     {
       "zh": "2026-10-09：按独立审查（BECOMING-RENEWAL-READING-REVIEW.md）第 6 项，写明 Becoming 层的读法相对于一次运行；更新到合并回执 20261009T002925.265132Z。本记录所依的定义与定理未变（Becoming.Metaethics 的改动在读法各节与模块说明，已读）。",
       "en": "2026-10-09: following item 6 of the independent review (BECOMING-RENEWAL-READING-REVIEW.md), stated that the Becoming layer's readings are relative to a run; moved to consolidated receipt 20261009T002925.265132Z. The definitions and theorems this record relies on are unchanged (Becoming.Metaethics changed in its reading sections and module documentation, which were read)."
+    },
+    {
+      "zh": "2026-10-09：核心新增 Becoming.Ranking（P8）、桥接新增两条对应定理后重跑合并检查器（20261009T005555.457210Z）。本记录的主张与证明不变，只更新回执、计数与哈希；改动的源已读。",
+      "en": "2026-10-09: reran the consolidated checker (20261009T005555.457210Z) after the core added Becoming.Ranking (P8) and the bridge two correspondence theorems. This record's claim and proofs are unchanged; only the receipt, counts and hashes are updated, after reading the changed sources."
     }
   ]
 }

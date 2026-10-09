@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-98 migrated records: 94 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+99 migrated records: 95 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -89,6 +89,7 @@
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
 | `prefix-observation-loss` | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](records/prefix-observation-loss.md) | theorem | recorded-checked |
 | `protection-priority-excludes-uniform-aggregation` | [基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示 / Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
+| `ranking-under-readings` | [C 在各读法下的排序：逐步读法保持“共享优于以消耗取胜”，失去“没有过度汲取者更好” / What C ranks under each reading: the stepwise reading keeps “sharing is better than winning by consumption” and loses “better without the overdrawing formation”](records/ranking-under-readings.md) | theorem | recorded-checked |
 | `recoverable-mediated-change` | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](records/recoverable-mediated-change.md) | theorem | recorded-checked |
 | `recurrent-chain-assembly` | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](records/recurrent-chain-assembly.md) | theorem | recorded-checked |
 | `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |

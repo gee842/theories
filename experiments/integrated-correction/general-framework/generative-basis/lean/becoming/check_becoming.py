@@ -33,7 +33,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Metaethics", "Becoming"]
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -97,8 +97,19 @@ SCOPE = (
     "readings credit the broken formation's own event. Read through relations, the stepwise reading "
     "of an event is the conjunction of the reading of its relations, and one event can have a living "
     "relation and an undermining one. "
+    "Ranking: C over courses is stated through a frame whose realized claims are the events a "
+    "reading credits; the course without a formation extends the course with it only if the reading "
+    "withholds every event of that formation; under the whole-run reading, for every law of the "
+    "support-gated family in which the focal formation draws beyond renewal, the course without it "
+    "extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise "
+    "reading an event of the formation whose step leaves every need met is credited, neither course "
+    "extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with "
+    "the formation, malignant growth and winning by consumption being instances; under the stepwise "
+    "reading sharing still extends winning by consumption. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
-    "the existing modules, and J1/J2 on configurations is PracticalJudgment.Better; "
+    "the existing modules, the core's whole-run reading of courses is the relational inventory of "
+    "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "
+    "PracticalJudgment.Better; "
     "seed-edge closures and evaluator chains are reachability on the edge process; a "
     "frame's reachable configurations form a joint-continuation space whose bundles step-preserving "
     "maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence "

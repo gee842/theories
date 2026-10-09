@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-98 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+99 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -85,6 +85,7 @@
 | [G0/J 下的一般实践判断 / Practical judgment under G0/J](../results/records/practical-judgment-g0-j.md) | reviewed-scoped | [PRACTICAL-JUDGMENT.md](PRACTICAL-JUDGMENT.md) |
 | [全部前缀问答仍可遗漏中途失续 / All prefix questions can still omit an intermediate loss](../results/records/prefix-observation-loss.md) | recorded-checked | [ExplanatoryGranularityBoundary.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean) |
 | [基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示 / Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score](../results/records/protection-priority-excludes-uniform-aggregation.md) | recorded-checked | [ProtectionPriorityRival.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) |
+| [C 在各读法下的排序：逐步读法保持“共享优于以消耗取胜”，失去“没有过度汲取者更好” / What C ranks under each reading: the stepwise reading keeps “sharing is better than winning by consumption” and loses “better without the overdrawing formation”](../results/records/ranking-under-readings.md) | recorded-checked | [Ranking.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) |
 | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](../results/records/recoverable-mediated-change.md) | recorded-checked | [RecoverableControl.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean) |
 | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](../results/records/recurrent-chain-assembly.md) | recorded-checked | [RecurrentAssembly.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean) |
 | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](../results/records/relational-generative-comparison.md) | recorded-checked | [RelationalGrounding.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean) |
