@@ -94,6 +94,13 @@
         "en": "Interpretive: uses the same G0 predicate; here its inventory is read relationally.",
         "zh": "解释关联：使用同一 G0 谓词；此处其库存按关系读取。"
       }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "detail": {
+        "zh": "该结果给出逐步与关系层读法；本记录的排序在其下是否保持尚未证明。",
+        "en": "That result gives the stepwise and relation-level readings; whether this record's ranking survives under them is not yet proved."
+      }
     }
   ],
   "counterexamples": [
@@ -199,8 +206,8 @@
     }
   ],
   "next_delta": {
-    "en": "Define a stepwise relational reading and test whether the ranking survives; extend to several conditions with substitution; decide which mixed cases a stronger comparison or J commitment ranks, and with what premise.",
-    "zh": "定义逐步的关系读法并检验排序是否保持；推广到多条件及条件间替代；确定哪些混合情形可由更强比较或 J 层承诺排序，以及需要什么前提。"
+    "zh": "逐步、周期与关系层读法已在 Becoming 脊柱上定义（becoming-stepwise-reading、becoming-return-grades）。排序在这些读法下是否保持，整合文档 BECOMING-RENEWAL-READING §8.5 只给出未形式化的论证（看来不再由 C 单独得出），有待证明或否证。余下：多条件及条件间替代（替代保持消耗见 substitution-preserves-consumption）；确定哪些混合情形可由更强比较或 J 层承诺排序，以及需要什么前提。",
+    "en": "Stepwise, cycle and relation-level readings are now defined on the Becoming spine (becoming-stepwise-reading, becoming-return-grades). Whether the ranking survives under them is argued only informally in §8.5 of the BECOMING-RENEWAL-READING integration note (it appears no longer to follow from C alone) and remains to be proved or refuted. Remaining: several conditions with substitution (substitution preserves consumption, see substitution-preserves-consumption); which mixed cases a stronger comparison or J commitment ranks, and with what premise."
   },
   "history": [
     {
@@ -210,6 +217,10 @@
     {
       "zh": "2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。",
       "en": "9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged."
+    },
+    {
+      "zh": "2026-10-09：更新下一步与关联：逐步、周期与关系层读法已在 Becoming 脊柱上定义（P6、P7）。本记录的主张、证明与来源不变。",
+      "en": "2026-10-09: updated the next step and links: stepwise, cycle and relation-level readings are now defined on the Becoming spine (P6, P7). This record's claim, proofs and sources are unchanged."
     }
   ]
 }

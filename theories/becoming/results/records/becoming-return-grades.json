@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "id": "becoming-return-grades",
+  "title": {
+    "zh": "回程等级：消耗恰是不再回程，恢复可以无界地变慢",
+    "en": "Return grades: consumption is exactly a dependence that never returns, and recovery can slow without bound"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T00:29:25+00:00",
+  "claim": {
+    "zh": "在依存网上，某步成立的依存在其后 p 步之内再被满足，为在 p 步内回程；条件上每个依存都如此，为在 p 步周期内更新；每个依存都在以后某步再被满足，为回程。等级有序：更新蕴含一步周期内更新；p 步内更新蕴含任何更长周期内更新，也蕴含回程；回程的条件不被消耗。消耗恰是某个依存不再回程。RelationalRenewal 中既不更新也不消耗的季节性条件，在两步周期内更新，不在一步内更新。恢复可以无界地变慢：一个间隔越来越长地再被满足的条件总会回程、从不被消耗，但没有任何周期长度能界定它的回程。周期层面的读法扩展逐步读法：形成在 p 步周期内更新，当它参与的每个条件都在 p 步内更新；事件侵蚀 p 步，当它在某步汲取某条件，而一个当时或此前被满足的依存此后 p 步都不被满足。侵蚀一步恰是逐步的侵蚀；周期越长记入越多；在某个周期内更新的形成不消耗，它的事件也不侵蚀该周期。两步周期下，短暂下降与在不活跃时被断裂的维持者都被记入；加码之后条件不再回来，加码事件对每个周期都侵蚀。不用伦理前提，也不用 Lean 公理。",
+    "en": "On a web of dependence, a dependence holding at a step returns within p steps when the condition meets it at one of the next p steps; a condition is renewed within p when every dependence on it does so, and it returns when every dependence on it is met at some later step. The grades are ordered: renewal implies renewal within one step; renewal within p implies renewal within any longer cycle and implies return; a condition that returns is not consumed. Consumption is exactly a dependence that never returns. The seasonal condition of RelationalRenewal, neither renewed nor consumed, is renewed within two steps and not within one. Recovery can slow without bound: a condition met again after ever longer gaps always returns and is never consumed, yet no cycle length bounds its return. Readings over cycles extend the stepwise readings: a formation renews over cycles of p when every condition it participates in is renewed within p, and its event undermines for p steps when it draws on a condition at a step after which a dependence met then or before stays unmet for the next p steps. Undermining for one step is exactly undermining at the step; a longer cycle credits more; a formation renewing over some cycle is not consuming, and none of its events undermines for that cycle. Over cycles of two, a dip and a keeper broken while inactive are credited; after an escalation the condition never returns, and the escalating event undermines for every cycle. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "依存网的可观测量如 becoming-dependence-dynamics 所设；回程按自然数步计。",
+      "en": "The observables of the web are those of becoming-dependence-dynamics; return is counted in natural-number steps."
+    },
+    {
+      "zh": "周期读法与逐步读法一样，只读事件所汲取的条件，并且 draws 不带数量。",
+      "en": "Like the stepwise readings, the cycle readings read only the conditions an event draws on, and draws carries no amount."
+    }
+  ],
+  "correspondence": {
+    "zh": "回程等级区分的是一次运行中依存被再满足的时间。实际条件属于哪一等级、哪种周期适合一种读法，以及恢复变慢是否预示损失（生态学所谓临界变慢），都是应用与经验问题。",
+    "en": "The grades distinguish when dependence is met again in one run. Which grade an actual condition has, which cycle suits a reading, and whether slowing recovery signals a coming loss (what ecology calls critical slowing down) are application and empirical questions."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+  "aliases": [
+    "Becoming.Web.renewed_within_one",
+    "Becoming.Web.RenewedWithin.mono",
+    "Becoming.Web.RenewedWithin.returns",
+    "Becoming.Web.Returns.not_consumed",
+    "Becoming.Web.consumed_iff",
+    "Becoming.Web.RenewingIn.within_one",
+    "Becoming.Web.undermining_for_one",
+    "Becoming.Web.RenewingInWithin.mono",
+    "Becoming.Web.UnderminingFor.anti",
+    "Becoming.Web.RenewingInWithin.not_undermining_for",
+    "Becoming.Web.RenewingInWithin.not_consuming",
+    "Becoming.seasonal_renewed_within_two",
+    "Becoming.Slowing.slowing_recovery",
+    "Becoming.Commons.dip_within_two",
+    "Becoming.Commons.escalation_undermines_for_every_cycle",
+    "Becoming.Dip.renewing_within_two"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-dependence-dynamics",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "回程以 Web 的水平、依存与所需定义；Returns.not_consumed 与 consumed_iff 刻画 Web.Consumed；周期读法以 UnderminingAt 为一步情形。",
+        "en": "Return is defined from a web's levels, dependences and needs; Returns.not_consumed and consumed_iff characterize Web.Consumed; the cycle readings have UnderminingAt as their one-step case."
+      },
+      "interface": {
+        "output": {
+          "zh": "依存网、Renewed、Consumed、RenewingIn、ConsumingIn 与逐步的侵蚀。",
+          "en": "Webs, Renewed, Consumed, RenewingIn, ConsumingIn and stepwise undermining."
+        },
+        "input": {
+          "zh": "回程等级与周期读法的定义和定理。",
+          "en": "The definitions and theorems of return grades and cycle readings."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    },
+    {
+      "id": "relational-renewal-classification",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "seasonal_renewed_within_two 经 Web.static 读取该结果的 fluctuating 展开，给出其在更新与消耗之间的精确等级。",
+        "en": "seasonal_renewed_within_two reads that result's fluctuating unfolding through Web.static and gives its exact grade between renewal and consumption."
+      },
+      "interface": {
+        "output": {
+          "zh": "既不更新也不消耗的季节性展开 fluctuating。",
+          "en": "The seasonal unfolding fluctuating, neither renewing nor consuming."
+        },
+        "input": {
+          "zh": "两步周期内更新、不在一步内更新的见证。",
+          "en": "The witness renewed within two steps and not within one."
+        },
+        "conditions": {
+          "zh": "依存不变（Web.static）。",
+          "en": "Constant dependence (Web.static)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean"
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Commons.dip_within_two 与 escalation_undermines_for_every_cycle 复用该结果的 dipping、escalating 运行；Dip.renewing_within_two 复用其 Dip 依存网。",
+        "en": "Commons.dip_within_two and escalation_undermines_for_every_cycle reuse that result's dipping and escalating runs; Dip.renewing_within_two reuses its Dip web."
+      },
+      "interface": {
+        "output": {
+          "zh": "逐步读法的见证运行与依存网。",
+          "en": "The stepwise reading's witness runs and webs."
+        },
+        "input": {
+          "zh": "周期读法下的记入与扣下。",
+          "en": "What the cycle readings credit and withhold."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "zh": "该结果以端点可能的保留刻画沿轨迹的回程；本结果在依存层面按回程时间分级，两者的对应未建立。",
+        "en": "That result characterizes return along a trajectory by preserved endpoint possibilities; this one grades return at the level of dependence by time. No correspondence between them is established."
+      }
+    },
+    {
+      "id": "becoming-finite-horizon",
+      "detail": {
+        "zh": "回程等级由整段运行决定；该结果表明任何有限前缀都不决定一段汲取是更新还是消耗。",
+        "en": "Return grades are fixed by the whole run; that result shows no finite prefix decides whether drawing renews or consumes."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "detail": {
+        "zh": "不被消耗不意味着恢复的时间有界（Slowing.slowing_recovery）。",
+        "en": "Not being consumed does not bound the time to recover (Slowing.slowing_recovery)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "detail": {
+        "zh": "RenewingIn.within_one 只有一个方向：一步周期内更新不蕴含整段更新的逆命题未证明，也不在本结果内。",
+        "en": "RenewingIn.within_one runs one way only: the converse, from renewal within one step to whole-run renewal, is neither proved nor claimed."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词，不选择周期长度，不推出哪种读法是生生的读法。Slowing 与 Dip 是最小见证；回程等级不涉及数量或代价。",
+    "en": "Contains no ethical predicate, chooses no cycle length and does not decide which reading is the reading of 生生. Slowing and Dip are minimal witnesses; the grades involve no amounts or costs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：Becoming.Return 26 项定理全部空依赖；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): all 26 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "role": "proof",
+      "sha256": "b036d18aa49dfeebcc0bd51a4808b2835239c2c00805327ce7122f4c9c2dae43",
+      "declarations": [
+        "Becoming.Web.ReturnsWithin",
+        "Becoming.Web.RenewedWithin",
+        "Becoming.Web.Returns",
+        "Becoming.Web.RenewingInWithin",
+        "Becoming.Web.UnderminingFor",
+        "Becoming.Web.renewed_within_one",
+        "Becoming.Web.RenewedWithin.mono",
+        "Becoming.Web.RenewedWithin.returns",
+        "Becoming.Web.Returns.not_consumed",
+        "Becoming.Web.consumed_iff",
+        "Becoming.Web.RenewingIn.within_one",
+        "Becoming.Web.undermining_for_one",
+        "Becoming.Web.RenewingInWithin.mono",
+        "Becoming.Web.UnderminingFor.anti",
+        "Becoming.Web.RenewingInWithin.not_undermining_for",
+        "Becoming.Web.RenewingInWithin.not_consuming",
+        "Becoming.alternating_turns",
+        "Becoming.seasonal_renewed_within_two",
+        "Becoming.Slowing.web",
+        "Becoming.Slowing.returns",
+        "Becoming.Slowing.unbounded",
+        "Becoming.Slowing.slowing_recovery",
+        "Becoming.Commons.dip_within_two",
+        "Becoming.Commons.escalation_undermines_for_every_cycle",
+        "Becoming.Dip.renewing_within_two"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "b9a5e970aad285742efca5fb8759b9c9a9b797c67d2fec940de71ebacf56076c",
+      "declarations": [
+        "Becoming.Web",
+        "Becoming.Web.Renewed",
+        "Becoming.Web.Consumed",
+        "Becoming.Web.UnderminingAt",
+        "Becoming.Web.static",
+        "Becoming.Commons.dipping",
+        "Becoming.Commons.escalating",
+        "Becoming.Dip.web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "role": "proof",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "declarations": [
+        "RelationalRenewal.alternating",
+        "RelationalRenewal.fluctuating",
+        "RelationalRenewal.fluctuating_neither"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "91d752e46064bf0af791d8530613ff504b667553275fabe01b55e7efe852ec84",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "1d688e486e43dc443dd7962e00adcaf853f4bb09546942d19fedc1a54e04234f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "0e029ebc0dc61cb0d54eceef43c072f0867679493bc58c214f3296fb8ea32b20",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Return",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "说明哪种周期适合哪种读法，以及周期读法与整段读法、视界结果的关系；回程等级与实际条件的对应。",
+    "en": "Which cycle suits which reading, and how the cycle readings relate to the whole-run reading and the horizon result; the correspondence of grades to actual conditions."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。",
+      "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P7 of the unification plan, taking up the next steps of relational-renewal-classification and becoming-dependence-dynamics."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "id": "joint-difference-making",
+  "title": {
+    "zh": "共同活动中的差别制造：多重决定下 but-for 与关系参与分离",
+    "en": "Difference-making in joint activity: but-for and relational participation come apart under overdetermination"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T00:29:25+00:00",
+  "claim": {
+    "zh": "在一个依存可观测量的过程中，配置之间的维持与断裂沿运行恰是 Becoming.Dependence 的维持与断裂，两者互斥。but-for 检验留在过程之内：某步断裂依存，而扣除某一方的部分后由该配置出发的每一步都维持它，则这一方的部分造成了差别；扣除任何单独一方的部分仍有断裂之步，为多重决定，此时没有哪一方单独造成差别。在 Pool 中，同一过程、同一水平，第一个汲取者取同样的量：另有一方汲取时，它的部分造成差别；另有两方汲取时损失被多重决定，它的部分不造成差别，而扣除两方的部分则维持依存，差别由共同活动造成。两次运行中，关系读法都把它计为消耗，一个什么也不取的形成不计为消耗。一个形成的各事件之间也是如此：在公地过程中每步汲取两个单位，条件被消耗；第一个事件那一步维持依存，对任何周期都不侵蚀；扣除任何一个事件的汲取，条件仍被消耗。不用伦理前提，也不用 Lean 公理。",
+    "en": "In a process with observables of dependence, keeping and breaking between configurations are, along a run, exactly those of Becoming.Dependence, and they are exclusive. The but-for test stays within the process: when a step breaks a dependence and, with one party's part withheld, every step from that configuration keeps it, that party's part makes the difference; when withholding any single party's part still leaves a breaking step, the loss is overdetermined and no party alone makes the difference. In Pool, in one process at one level with the first drawer taking the same amount: with one other drawer its part makes the difference; with two others the loss is overdetermined and its part makes none, while withholding two parts keeps the dependence, so the difference belongs to the joint activity. In both runs the relational reading counts it as consuming, and a formation that takes nothing is not. The same holds across a formation's own events: drawing two units at every step in the commons process consumes the condition; the first event's step keeps the dependence and undermines for no cycle; with any single event's draw withheld the condition is still consumed. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "扣除（withhold）是外给的配置变换：只改动一方或一步的部分，过程本身给出由此到达的配置。扣除是否让其余不变，是每次应用的建模义务。",
+      "en": "Withholding is a supplied map on configurations: it changes only one party's or one step's part, and the process gives the configurations reached from there. Whether withholding leaves the rest unchanged is a modelling duty of each application."
+    },
+    {
+      "zh": "关系读法是 relational-reading-comparison 的整段读法，经 Web.ConsumingIn 读出。",
+      "en": "The relational reading is the whole-run reading of relational-reading-comparison, read through Web.ConsumingIn."
+    }
+  ],
+  "correspondence": {
+    "zh": "but-for 检验与关系读法回答不同的问题：前者问扣除一方的部分是否改变结果，后者问一方实际参与了什么及该条件的去向。多重决定的情形正是“我的一份无关紧要”这一推理的形式。两者都不是因果理论，也不推出责任或义务。关于集体伤害与过度决定的哲学讨论（如 Parfit、Kagan，作者据先前知识，本次未新读）是对照。",
+    "en": "The but-for test and the relational reading answer different questions: whether withholding a party's part changes the outcome, and what a party actually took part in and where the condition went. The overdetermined case is the form of “my share makes no difference”. Neither is a causal theory, and neither yields responsibility or duty. Philosophical work on collective harm and overdetermination (for example Parfit and Kagan, from the author's prior knowledge, not newly read) is the comparison."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+  "aliases": [
+    "Becoming.Dependence.keeps_not_breaks",
+    "Becoming.Dependence.along_kept",
+    "Becoming.Dependence.along_broken",
+    "Becoming.Dependence.Overdetermined.no_difference",
+    "Becoming.Pool.difference_belongs_to_the_joint",
+    "Becoming.Commons.overdraw_consumes",
+    "Becoming.Commons.depletion_is_joint"
+  ],
+  "dependencies": [
+    {
+      "id": "becoming-dependence-dynamics",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Keeps、Breaks 沿运行恰是 Web.Kept、Web.Broken（along_kept、along_broken）；Pool 的分类经 Dependence.along 读出。",
+        "en": "Keeps and Breaks along a run are exactly Web.Kept and Web.Broken (along_kept, along_broken); Pool's classification is read through Dependence.along."
+      },
+      "interface": {
+        "output": {
+          "zh": "依存可观测量、依存网及其维持、断裂与消耗。",
+          "en": "Dependence observables, webs and their keeping, breaking and consumption."
+        },
+        "input": {
+          "zh": "配置之间的维持与断裂及 but-for 检验。",
+          "en": "Keeping and breaking between configurations, and the but-for test."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean"
+      }
+    },
+    {
+      "id": "becoming-return-grades",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "depletion_is_joint 用 UnderminingFor 陈述第一个事件对任何周期都不侵蚀。",
+        "en": "depletion_is_joint uses UnderminingFor to state that the first event undermines for no cycle."
+      },
+      "interface": {
+        "output": {
+          "zh": "周期层面的侵蚀。",
+          "en": "Undermining over cycles."
+        },
+        "input": {
+          "zh": "渐进耗竭中事件的读法。",
+          "en": "The reading of events in gradual depletion."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "relational-renewal-classification",
+      "detail": {
+        "zh": "该结果的 jointly_consuming 表明联合消耗没有单一的消耗者；本结果表明多重决定下 but-for 不归属差别，而关系读法仍把每个汲取者计为消耗，承接其“差别制造归属”的下一步。",
+        "en": "That result's jointly_consuming shows joint consumption has no single consumer; this one shows that under overdetermination but-for attributes no difference while the relational reading still counts each drawer as consuming, taking up its next step on difference-making attribution."
+      }
+    },
+    {
+      "id": "relational-reading-comparison",
+      "detail": {
+        "zh": "用 but-for 差别制造代替参与，不能满足该结果所记录的 Ren 的判决（整合文档 §8.5）。",
+        "en": "Replacing participation by but-for difference-making cannot meet the verdicts of Ren recorded in that result (integration note §8.5)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "detail": {
+        "zh": "多重决定（Pool.difference_belongs_to_the_joint 的三方运行；Commons.depletion_is_joint）：每一方或每一事件单独都不造成差别，共同活动造成了损失。",
+        "en": "Overdetermination (the three-drawer run of Pool.difference_belongs_to_the_joint; Commons.depletion_is_joint): no party or event alone makes the difference, while the joint activity makes the loss."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不提出因果理论；更精细的归属（NESS 检验、结构方程中的实际因果）未加入。不推出责任、义务或排序。Pool 与 depleting 是最小见证。",
+    "en": "Proposes no causal theory; finer attribution (the NESS test, actual causation in structural equations) is not added. Yields no responsibility, duty or ranking. Pool and depleting are minimal witnesses."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T002925.265132Z）：Becoming.Joint 12 项定理全部空依赖；同一回执覆盖包内 11 个模块（含只作导入的根模块与桥接），共 169 项定理／332 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 13 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T002925.265132Z): all 12 theorems of Becoming.Joint have empty axiom reports; the same receipt covers the package's 11 modules (including the import-only root and the bridge) with 169 theorems/332 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 13 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "8513d13f862834dcfb521779c50a5b05d68631f4ba969e9f52ea95fb2124f902",
+      "declarations": [
+        "Becoming.Dependence.Keeps",
+        "Becoming.Dependence.Breaks",
+        "Becoming.Dependence.BreaksFrom",
+        "Becoming.Dependence.MakesDifference",
+        "Becoming.Dependence.Overdetermined",
+        "Becoming.Dependence.keeps_not_breaks",
+        "Becoming.Dependence.along_kept",
+        "Becoming.Dependence.along_broken",
+        "Becoming.Dependence.Overdetermined.no_difference",
+        "Becoming.Pool.process",
+        "Becoming.Pool.withhold",
+        "Becoming.Pool.dependence",
+        "Becoming.Pool.difference_belongs_to_the_joint",
+        "Becoming.sub_self_add",
+        "Becoming.Commons.drawing",
+        "Becoming.Commons.overdraw_consumes",
+        "Becoming.Commons.depleting",
+        "Becoming.Commons.withheld",
+        "Becoming.Commons.depletion_is_joint"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "b9a5e970aad285742efca5fb8759b9c9a9b797c67d2fec940de71ebacf56076c",
+      "declarations": [
+        "Becoming.Dependence",
+        "Becoming.Dependence.along",
+        "Becoming.Web.Kept",
+        "Becoming.Web.Broken",
+        "Becoming.Web.ConsumingIn"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
+      "role": "proof",
+      "sha256": "b036d18aa49dfeebcc0bd51a4808b2835239c2c00805327ce7122f4c9c2dae43",
+      "declarations": [
+        "Becoming.Web.UnderminingFor"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "91d752e46064bf0af791d8530613ff504b667553275fabe01b55e7efe852ec84",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "1d688e486e43dc443dd7962e00adcaf853f4bb09546942d19fedc1a54e04234f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "0e029ebc0dc61cb0d54eceef43c072f0867679493bc58c214f3296fb8ea32b20",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "加入更精细的归属作为另一种读法，并与关系读法比较；说明在多重决定下，“这一共同活动是消耗”的判断怎样到达各参与者。",
+    "en": "Add finer attribution as another reading and compare it with the relational reading; explain how, under overdetermination, the judgment that a joint activity consumes reaches each participant."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P7，承接 relational-renewal-classification 与 becoming-dependence-dynamics 的下一步。",
+      "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P7 of the unification plan, taking up the next steps of relational-renewal-classification and becoming-dependence-dynamics."
+    }
+  ]
+}

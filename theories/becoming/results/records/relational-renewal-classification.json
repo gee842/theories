@@ -82,6 +82,13 @@
         "en": "Consumer of this classification: imports RelationalRenewal and feeds overdraw_consuming into GenerativeComparison's C under the relational reading of G0's generation. This record's own claims and proofs are unchanged.",
         "zh": "本分类的使用者：导入 RelationalRenewal，在对 G0 之生成的关系读法下把 overdraw_consuming 送入 GenerativeComparison 的 C。本记录自身的主张与证明不变。"
       }
+    },
+    {
+      "id": "becoming-return-grades",
+      "detail": {
+        "zh": "该结果给出 fluctuating 的精确等级（两步周期内更新），并证明消耗恰是某个依存不再回程。",
+        "en": "That result gives fluctuating's exact grade (renewed within two steps) and proves that consumption is exactly a dependence that never returns."
+      }
     }
   ],
   "counterexamples": [
@@ -95,8 +102,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
       "detail": {
-        "en": "fluctuating_neither: support that recurs without lasting is neither renewing nor consuming; the classification is not a forced dichotomy, and cycle-level renewal is not yet defined.",
-        "zh": "fluctuating_neither：反复出现而不持续的支持既非更新型也非消耗型；分类不是强加的二分，周期层面的更新尚未定义。"
+        "en": "fluctuating_neither: support that recurs without lasting is neither renewing nor consuming; the classification is not a forced dichotomy. Cycle-level renewal is later defined in becoming-return-grades, where this condition is renewed within two steps.",
+        "zh": "fluctuating_neither：反复出现而不持续的支持既非更新型也非消耗型；分类不是强加的二分。周期层面的更新后来在 becoming-return-grades 中定义：这一条件在两步周期内更新。"
       }
     },
     {
@@ -108,8 +115,8 @@
     }
   ],
   "limitations": {
-    "en": "Completes a descriptive classification and its dynamics within the stated representations. It does not show that real processes satisfy the law family, how losses within a renewed cycle are weighed, or that the zero-substantive-axiom foundation of Becoming is complete. Its ethical significance is not an addition owed beyond G0: G0's object is 生生, which this classification describes; the comparison of consumption with its absence under C is the separate record relational-reading-comparison.",
-    "zh": "完成的是所述表示中的描述性分类及其动力学。未证明真实过程满足规律族，未说明更新循环中的损失如何权衡，也未完成 Becoming 的零附加实质公理根基。其伦理意义不是 G0 之外另欠的工作：G0 的对象是生生，本分类描述的正是生生；消耗与其不发生在 C 下的比较，见另一记录 relational-reading-comparison。"
+    "en": "Completes a descriptive classification and its dynamics within the stated representations. It does not show that real processes satisfy the law family, how losses within a renewed cycle are weighed, or that the zero-substantive-axiom foundation of Becoming is complete. Its ethical significance is not an addition owed beyond G0: G0's object is 生生, which this classification describes; the comparison of consumption with its absence under C is the separate record relational-reading-comparison. Consumed does not require the dependence ever to have been met: a requirement never met makes the condition consumed and the drawer consuming without any break or loss (independent review Q2; see Unmet.consumed_without_loss in becoming-dependence-dynamics). This module's bytes and claims are unchanged.",
+    "zh": "完成的是所述表示中的描述性分类及其动力学。未证明真实过程满足规律族，未说明更新循环中的损失如何权衡，也未完成 Becoming 的零附加实质公理根基。其伦理意义不是 G0 之外另欠的工作：G0 的对象是生生，本分类描述的正是生生；消耗与其不发生在 C 下的比较，见另一记录 relational-reading-comparison。Consumed 不要求依存曾被满足：一个从未被满足的依存使条件被消耗、汲取者成为消耗型，而没有任何断裂或丧失（独立审查 Q2；见 becoming-dependence-dynamics 的 Unmet.consumed_without_loss）。本模块的字节与主张不变。"
   },
   "validation_scope": {
     "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty (no propext, Quot.sound or Classical.choice); 4 compiled application examples. Eight theorems are arithmetic helpers proved locally to avoid axiom-dependent library lemmas. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). Author counterreview; no independent-agent review.",
@@ -176,8 +183,8 @@
     }
   ],
   "next_delta": {
-    "en": "Define cycle-level renewal and substitution between conditions, and test whether the classification is preserved; formalize difference-making attribution within joint consumption; establish empirical correspondence for particular cases.",
-    "zh": "定义周期层面的更新与条件间替代，检验分类是否保持；形式化共同消耗中的差异归因；为具体案例建立经验对应。"
+    "zh": "周期层面的更新、条件间替代与共同消耗中的差别制造已在 Becoming 脊柱上由 becoming-return-grades、substitution-preserves-consumption 与 joint-difference-making 承接。余下：多条件下的替代链与代价；更精细的归属；为具体案例建立经验对应。",
+    "en": "Cycle-level renewal, substitution between conditions and difference-making within joint consumption are taken up on the Becoming spine by becoming-return-grades, substitution-preserves-consumption and joint-difference-making. Remaining: chains of substitution and their costs across several conditions; finer attribution; empirical correspondence for particular cases."
   },
   "history": [
     {
@@ -191,6 +198,10 @@
     {
       "en": "9 October 2026: after Ren's follow-up ('为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧'), corrected the limitation and boundary wording that treated renewal's positive significance as owed beyond G0 and left consumption unranked; the ranking under C is the new relational-reading-comparison. The receipt now also covers that module; RelationalRenewal's source, claims and proofs are unchanged. Rehashed statement, integration, provenance and receipt after confirming the only changes were these edits.",
       "zh": "2026年10月9日：依 Ren 追问（“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”），修正把更新的正面意义当作 G0 之外另欠、并把消耗留为未排序的限制与边界措辞；C 下的排序见新记录 relational-reading-comparison。回执现亦覆盖该模块；RelationalRenewal 的源码、主张与证明不变。确认变动仅为上述编辑后，更新陈述、整合、来源与回执哈希。"
+    },
+    {
+      "zh": "2026-10-09：Becoming 脊柱的 P7 承接本记录的下一步（becoming-return-grades、substitution-preserves-consumption、joint-difference-making）；按独立审查 Q2 在限制中披露 Consumed 不要求依存曾被满足。只改下一步、限制、一条反例的措辞与关联；RelationalRenewal 的源码、主张、证明与回执不变。",
+      "en": "2026-10-09: P7 of the Becoming spine takes up this record's next step (becoming-return-grades, substitution-preserves-consumption, joint-difference-making); following independent review Q2, the limitations disclose that Consumed does not require the dependence to have been met. Only the next step, limitations, one counterexample's wording and links change; RelationalRenewal's source, claims, proofs and receipt are unchanged."
     }
   ]
 }

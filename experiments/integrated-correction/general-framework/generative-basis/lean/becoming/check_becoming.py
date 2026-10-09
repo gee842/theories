@@ -32,6 +32,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Metaethics", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
@@ -49,11 +50,35 @@ SCOPE = (
     "configuration one run renews and another consumes. "
     "Dependence: which conditions a formation depends on, at what level, and which it draws on may "
     "change from step to step; constant dependence recovers the static reading exactly; every met "
-    "dependence is kept or broken across each step; a formation continuing after a loss without return "
-    "has transformed its dependence, and with fixed dependence it ends; in one process from one "
-    "configuration the same broken dependence leads to an ending, a transformation and a restoration; "
-    "a stepwise reading credits an event whose step keeps every dependence on the conditions it "
-    "participates in, and it and the whole-run reading credit different events in both directions. "
+    "dependence is kept or broken across each step; consumption as inherited admits a requirement "
+    "never met, which consumes its condition with no break; where activity needs current support, a "
+    "formation still active after a loss without return has weakened or dissolved its dependence, and "
+    "with fixed dependence it is no longer active, both contrapositives of that premise; these "
+    "outcomes are neither exhaustive nor exclusive, and in one process from one configuration a break "
+    "of the same dependence, read at the start of its step, is followed by an ending, a transformation "
+    "and a restoration; an event is within renewal when its step keeps every dependence on the "
+    "conditions it participates in, breaking when it draws on a condition at a step that breaks a "
+    "dependence on it, and undermining when it draws on a condition at a step after which a "
+    "dependence on it, met then or before, is unmet; breaking is undermining, and drawing after a "
+    "loss can undermine without breaking while it keeps the condition from returning; the stepwise "
+    "and whole-run readings credit different events in both directions. "
+    "Return: a dependence returns within p steps when it is met at one of the next p; renewal, "
+    "renewal within one step, within p, return and non-consumption are ordered, and consumption is "
+    "exactly a dependence that never returns; a seasonal condition is renewed within two steps and "
+    "not one; a recovery can slow without bound, returning always while no cycle bounds it; over "
+    "cycles of two a dip is credited, and an escalation undermines for every cycle. "
+    "Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with "
+    "every event within renewal, and afterwards one renews and the other consumes; a reading decided "
+    "by a finite prefix that credits every renewing run credits a consuming one. "
+    "Joint activity: withholding a formation's part, the rest as it was, the loss is kept or broken; "
+    "when withholding any single part still breaks, no part alone makes the difference; in one "
+    "process a drawer's part makes the difference with one other drawer and not with two, while the "
+    "relational reading counts it consuming in both; drawing beyond renewal at every step consumes "
+    "the condition, the first event undermines for no cycle, and with any single event's draw withheld "
+    "the condition is still consumed. "
+    "Substitution: in the support-gated law, a focal formation that can substitute an alternative "
+    "condition stays active, transforms its dependence at a step that can be found, and consumes, "
+    "while the sustaining formation ends; a concrete law meets the premises. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
@@ -64,10 +89,14 @@ SCOPE = (
     "is transitive only through a live middle response. No premise is proved, no rejecting position is "
     "bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, "
     "a condition in which every living formation participates discharges connection, and without one "
-    "connection can fail; consumption is a formed relation, so under N_rel valuing a consuming "
-    "formation's activity reaches the living events of the formation it consumes. Read stepwise, the "
-    "same discharge holds, and an event drawing at a step that breaks a dependence is related to the "
-    "broken formation, so under N_rel valuing it reaches that formation's living events. "
+    "connection can fail; a consuming formation and one losing its support co-participate in the "
+    "drawn condition, so under N_rel valuing the consumer's activity reaches the living events of the "
+    "formation losing support. Read stepwise, an event is living when active and not undermining; the "
+    "same discharge holds, an event drawing at a step that breaks a dependence is related to the "
+    "broken formation, so under N_rel valuing it reaches that formation's living events, and both "
+    "readings credit the broken formation's own event. Read through relations, the stepwise reading "
+    "of an event is the conjunction of the reading of its relations, and one event can have a living "
+    "relation and an undermining one. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, and J1/J2 on configurations is PracticalJudgment.Better; "
     "seed-edge closures and evaluator chains are reachability on the edge process; a "
@@ -208,7 +237,7 @@ example : ((Commons.conditions.dependence.along Commons.escalating).valuation
     (fun e _ => match e with
       | (.focal, _) => Or.inr trivial
       | (.sustaining, _) => Or.inl trivial),
-   Commons.stepwise_credits_before_escalation.2.1⟩
+   ⟨trivial, Commons.stepwise_credits_before_escalation.2.1.not_undermining⟩⟩
 """
 
 

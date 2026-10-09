@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-94 migrated records: 90 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+98 migrated records: 94 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -20,10 +20,12 @@
 | `alignment-direction-g0-j` | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](records/alignment-direction-g0-j.md) | argument | reviewed-scoped |
 | `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
 | `becoming-context-coherence` | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](records/becoming-context-coherence.md) | theorem | recorded-checked |
-| `becoming-dependence-dynamics` | [依存的形成、维持、断裂与转化：损失的三条去路 / Dependence that forms, holds, breaks and transforms: three ways through a loss](records/becoming-dependence-dynamics.md) | theorem | recorded-checked |
-| `becoming-renewal-reading` | [运行上的更新／消耗与生生的关系读法：连通由共同条件给出，消耗本身是关系 / Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation](records/becoming-renewal-reading.md) | theorem | recorded-checked |
+| `becoming-dependence-dynamics` | [依存的形成、维持、断裂与转化：损失之后的三种结局 / Dependence that forms, holds, breaks and transforms: three outcomes of a loss](records/becoming-dependence-dynamics.md) | theorem | recorded-checked |
+| `becoming-finite-horizon` | [有限视界：任何有限的历史都不决定一段汲取是更新还是消耗 / Finite horizon: no finite history decides whether drawing renews or consumes](records/becoming-finite-horizon.md) | theorem | recorded-checked |
+| `becoming-renewal-reading` | [运行上的更新／消耗与生生的关系读法：在对应纪律下由共同条件给出连通，意义沿共同参与传递 / Renewal on runs and the relational reading: under a correspondence discipline a common condition gives connection, and significance passes along co-participation](records/becoming-renewal-reading.md) | theorem | recorded-checked |
+| `becoming-return-grades` | [回程等级：消耗恰是不再回程，恢复可以无界地变慢 / Return grades: consumption is exactly a dependence that never returns, and recovery can slow without bound](records/becoming-return-grades.md) | theorem | recorded-checked |
 | `becoming-spine-instances` | [既有接口是 Becoming 脊柱的实例；比较经提升规则推广到每个框架 / Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](records/becoming-spine-instances.md) | theorem | recorded-checked |
-| `becoming-stepwise-reading` | [逐步的关系读法：事件所在之步维持其条件，与整段读法两个方向都有分歧 / The stepwise relational reading: an event's step keeps its conditions, and it differs from the whole-run reading in both directions](records/becoming-stepwise-reading.md) | theorem | recorded-checked |
+| `becoming-stepwise-reading` | [逐步读法：在更新之内的分类与“活跃且不侵蚀”的 living，与整段读法两个方向都有分歧 / The stepwise reading: classification within renewal and living as active and not undermining, differing from the whole-run reading in both directions](records/becoming-stepwise-reading.md) | theorem | recorded-checked |
 | `binding-preserving-substitution` | [保留绑定的代入及精确位置判据 / Binding-preserving substitution and its exact position criterion](records/binding-preserving-substitution.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
@@ -64,6 +66,7 @@
 | `joint-code-plan-lifting` | [提升有限嵌套共同方案 / Lifting finite nested joint plans](records/joint-code-plan-lifting.md) | theorem | recorded-checked |
 | `joint-correlation-reduced-dynamics` | [局部状态不变的关系转化与充分约化 / Relational transformation with unchanged local states and a sufficient reduction](records/joint-correlation-reduced-dynamics.md) | theorem | recorded-checked |
 | `joint-decomposition-lifting` | [从整体代码提升共同分解 / Lifting a joint decomposition from a whole code](records/joint-decomposition-lifting.md) | theorem | recorded-checked |
+| `joint-difference-making` | [共同活动中的差别制造：多重决定下 but-for 与关系参与分离 / Difference-making in joint activity: but-for and relational participation come apart under overdetermination](records/joint-difference-making.md) | theorem | recorded-checked |
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
@@ -100,6 +103,7 @@
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
 | `self-good-reachable-g0` | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](records/self-good-reachable-g0.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
+| `substitution-preserves-consumption` | [替代保持消耗：能替代条件的消耗者以转化依存的方式持续，仍是消耗的 / Substitution preserves consumption: a consumer that can substitute a condition persists by transforming its dependence and still consumes](records/substitution-preserves-consumption.md) | theorem | recorded-checked |
 | `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |

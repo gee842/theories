@@ -15,6 +15,10 @@ condition falls below it. One step does not say whether a dependence that change
 during the step ended before the fall or because of it; the reading counts the fall
 against the dependence as it stood when the step began.
 
+Formations and conditions are fixed index types, so the identity of a formation across
+steps is stipulated by `F`. Drawing records that a formation draws on a condition, not
+how much: the levels move by the process alone.
+
 Results:
 * Constant dependence is the static reading of `RelationalRenewal`, recovered exactly:
   support, renewal, consumption and the classes of formations agree.
@@ -24,21 +28,41 @@ Results:
 * Renewal and consumption remain exclusive, and renewal keeps every renewing
   formation supported.
 * Every met dependence is kept or broken across each step, and not both.
-* A formation that continues after a loss with a dependence at least as strong as
-  before finds the condition restored. After a loss without return, a formation that
-  continues has therefore transformed its dependence; with constant dependence it
-  ends. Ending, transformation and restoration are the three ways through a loss.
-* The three ways are distinct possibilities: in one process, from one configuration,
-  the same broken dependence leads to an ending, to a transformation (one dependence
-  dissolves as another forms) and to a restoration. The loss does not decide its issue.
-* A stepwise reading credits a formation's event when its step keeps every dependence
-  on the conditions the formation participates in. Whole-run renewal credits every
-  active step. Otherwise the two readings differ in both directions: a formation can
-  draw within renewal at first and consume later, and an event can break a condition
-  that is later restored, so that its formation does not consume in the run. A
-  formation can also keep its conditions at each of its own steps while another
-  formation breaks them, so whole-run renewal is not the conjunction of a formation's
-  steps.
+* Consumption, as inherited, does not require that the dependence it concerns was
+  ever met. A requirement that is never met makes its condition consumed with no
+  break; `Lost` adds that a met dependence was broken.
+* Where formations are active only while the conditions they then depend on support
+  them (`Dependent`, which leaves out buffers, reserves and lags), three outcomes are
+  related. A formation active with a dependence at least as strong as an earlier one
+  finds the condition meeting the earlier need. After a loss without return, a
+  formation still active has weakened or dissolved its dependence; with constant
+  dependence it is no longer active. Both are contrapositives of `Dependent`.
+* The outcomes are neither exhaustive nor exclusive. Restoration concerns the
+  condition, ending and transformation the formation, and whether one formation
+  transforms or one ends as another forms depends on the identity stipulated by `F`.
+  They are distinct possibilities: in one process, from one configuration, a break of
+  the same dependence, read at the start of its step, is followed by an ending, by a
+  transformation (one dependence dissolves as another forms) and by a restoration. The
+  break does not determine the next configuration; in this witness the move that makes
+  the break selects the outcome.
+* Stepwise readings of a formation's event, each read through its relations to
+  conditions. It is *within renewal* when its step keeps every dependence on every
+  condition it participates in, the stepwise counterpart of renewal; whole-run renewal
+  credits every active step. It is *breaking* when it draws on a condition at a step
+  that breaks a dependence on it, and *undermining* when it draws on a condition at a
+  step after which a dependence on it, met then or before, is unmet: the stepwise
+  counterpart of consumption. Breaking is undermining, and an event within renewal is
+  neither. A formation whose own dependence is broken is not within renewal at that
+  step, though it need not be undermining. A requirement never met makes no drawer
+  undermining.
+* After a loss, further drawing breaks nothing, yet it can keep the condition from
+  returning: it is undermining without breaking.
+* The stepwise and whole-run readings differ in both directions: a formation can draw
+  within renewal at first and consume later, and an event can break a condition that
+  is later restored, so that its formation does not consume in the run.
+* Read through a formation's events, renewal is not the conjunction of its steps: a
+  formation can keep its conditions at each of its own active steps while another
+  formation breaks them.
 
 No ethical predicate, ranking or axiom occurs. Which observables represent an actual
 history, and whether a change of dependence preceded a fall, are application duties.
@@ -127,7 +151,8 @@ def Broken (t : Nat) (g : F) (c : C) : Prop :=
 def Renewed (c : C) : Prop :=
   ∀ t g, W.requires t g c → W.Kept t g c
 
-/-- A dependence holding at some step is never met again afterwards. -/
+/-- A dependence holding at some step is not met at any later step. It need not have
+been met at that step; `Lost` requires that. -/
 def Consumed (c : C) : Prop :=
   ∃ g T, W.requires T g c ∧ ∀ t, T < t → W.level t c < W.need T g c
 
@@ -233,36 +258,73 @@ theorem kept_or_broken {t : Nat} {g : F} {c : C} (depends : W.requires t g c)
 theorem kept_not_broken {t : Nat} {g : F} {c : C} (kept : W.Kept t g c) : ¬ W.Broken t g c
   | ⟨_, _, fell⟩ => Nat.not_le_of_gt fell kept.2
 
-/-! ## Three ways through a loss -/
+/-! ## Outcomes of a loss where activity needs support -/
 
-/-- A formation active with a dependence at least as strong as an earlier one finds
-the condition meeting the earlier need: continuing unchanged is restoration. -/
+/-- Under `Dependent`, a formation active with a dependence at least as strong as an
+earlier one finds the condition meeting the earlier need. -/
 theorem continuing_restores (dependent : W.Dependent) {T t : Nat} {g : F} {c : C}
     (active : W.active t g) (depends : W.requires t g c)
     (unchanged : W.need T g c ≤ W.need t g c) : W.need T g c ≤ W.level t c :=
   Nat.le_trans unchanged (dependent t g active c depends)
 
-/-- After a loss without return, a formation that is still active has transformed its
-dependence: it no longer depends on the condition as strongly as before. -/
+/-- Under `Dependent`, after a loss without return, a formation that is still active has
+weakened or dissolved its dependence on the condition. -/
 theorem consumed_continues_transformed (dependent : W.Dependent) {T : Nat} {g : F} {c : C}
     (below : ∀ t, T < t → W.level t c < W.need T g c) {t : Nat} (later : T < t)
     (active : W.active t g) : ¬ (W.requires t g c ∧ W.need T g c ≤ W.need t g c)
   | ⟨depends, unchanged⟩ =>
     Nat.not_le_of_gt (below t later) (continuing_restores dependent active depends unchanged)
 
-/-- With dependence that does not change, a loss without return ends the formation. -/
+/-- Under `Dependent`, with dependence that does not change, a formation is not active
+after a loss without return. -/
 theorem consumed_ends_when_fixed (dependent : W.Dependent) {T : Nat} {g : F} {c : C}
     (fixed : ∀ t, T < t → W.requires t g c ∧ W.need T g c ≤ W.need t g c)
     (below : ∀ t, T < t → W.level t c < W.need T g c) :
     ∀ t, T < t → ¬ W.active t g :=
   fun t later active => consumed_continues_transformed dependent below later active (fixed t later)
 
-/-! ## A stepwise reading -/
+/-! ## Stepwise readings -/
 
 /-- A formation's event at `t` is within renewal: it is active, and the step keeps
 every dependence on every condition it participates in. -/
 def RenewingAt (t : Nat) (f : F) : Prop :=
   W.active t f ∧ ∀ c, W.Participates t f c → ∀ g, W.requires t g c → W.Kept t g c
+
+/-- A formation's relation to a condition at `t` is breaking: it draws on the condition
+at a step that breaks a dependence on it. Other formations may take part in the
+breaking. -/
+def BreakingOn (t : Nat) (f : F) (c : C) : Prop :=
+  W.draws t f c ∧ ∃ g, W.Broken t g c
+
+/-- A formation's event at `t` is breaking when one of its relations is. -/
+def BreakingAt (t : Nat) (f : F) : Prop :=
+  ∃ c, W.BreakingOn t f c
+
+/-- A formation's relation to a condition at `t` is undermining: it draws on the
+condition at a step after which a dependence on it, met at that step or before, is
+unmet. Other formations may take part. -/
+def UnderminingOn (t : Nat) (f : F) (c : C) : Prop :=
+  W.draws t f c ∧ ∃ g, W.requires t g c ∧ (∃ s, s ≤ t ∧ W.need t g c ≤ W.level s c) ∧
+    W.level (t + 1) c < W.need t g c
+
+/-- A formation's event at `t` is undermining when one of its relations is. -/
+def UnderminingAt (t : Nat) (f : F) : Prop :=
+  ∃ c, W.UnderminingOn t f c
+
+/-- A breaking relation is undermining. -/
+theorem BreakingOn.undermining {t : Nat} {f : F} {c : C} :
+    W.BreakingOn t f c → W.UnderminingOn t f c
+  | ⟨drawn, g, depends, met, fell⟩ => ⟨drawn, g, depends, ⟨t, Nat.le_refl t, met⟩, fell⟩
+
+/-- An event within renewal is not undermining, so not breaking. -/
+theorem RenewingAt.not_undermining {t : Nat} {f : F} (renewing : W.RenewingAt t f) :
+    ¬ W.UnderminingAt t f
+  | ⟨c, drawn, g, depends, _, fell⟩ =>
+    Nat.not_le_of_gt fell (renewing.2 c (Or.inr drawn) g depends).2
+
+theorem RenewingAt.not_breaking {t : Nat} {f : F} (renewing : W.RenewingAt t f) :
+    ¬ W.BreakingAt t f
+  | ⟨c, breaking⟩ => renewing.not_undermining ⟨c, breaking.undermining⟩
 
 /-- Whole-run renewal credits every active step. -/
 theorem renewing_at_active {f : F} (renewing : W.RenewingIn f) {t : Nat}
@@ -277,7 +339,52 @@ theorem not_renewing_at_of_broken {t : Nat} {f g : F} {c : C} (joins : W.Partici
 
 end Web
 
-/-! ## The three ways are distinct possibilities -/
+/-! ## Consumption need not follow a loss -/
+
+namespace Unmet
+
+inductive Formation where
+  | dormant
+  | drawer
+
+/-- A dormant formation requires a condition at a level it never has; another draws on
+it throughout. Nothing changes. -/
+def web : Web Formation Unit where
+  level _ _ := 0
+  active _
+    | .dormant => False
+    | .drawer => True
+  requires _
+    | .dormant => fun _ => True
+    | .drawer => fun _ => False
+  need _ _ _ := 1
+  draws _
+    | .dormant => fun _ => False
+    | .drawer => fun _ => True
+
+/-- A requirement never met makes its condition consumed, and the drawer consuming,
+though no dependence is ever broken and nothing is lost. The drawer is not
+undermining at any step. -/
+theorem consumed_without_loss :
+    web.Dependent ∧ (∀ t g, ¬ web.Broken t g ()) ∧ web.Consumed () ∧ ¬ web.Lost () ∧
+    web.ConsumingIn .drawer ∧ ∀ t, ¬ web.UnderminingAt t .drawer := by
+  have unbroken : ∀ t g, ¬ web.Broken t g ()
+    | _, .dormant, ⟨_, met, _⟩ => Nat.not_succ_le_zero 0 met
+    | _, .drawer, ⟨depends, _⟩ => depends
+  have consumed : web.Consumed () := ⟨.dormant, 0, trivial, fun _ _ => Nat.zero_lt_one⟩
+  refine ⟨?_, unbroken, consumed, fun ⟨g, T, broken, _⟩ => unbroken T g broken,
+    ⟨0, (), trivial, consumed⟩, fun _ ⟨_, _, g, depends, ⟨_, _, met⟩, _⟩ => ?_⟩
+  · intro _ f active _ depends
+    cases f with
+    | dormant => exact False.elim active
+    | drawer => exact False.elim depends
+  · cases g with
+    | dormant => exact Nat.not_succ_le_zero 0 met
+    | drawer => exact depends
+
+end Unmet
+
+/-! ## The outcomes are distinct possibilities -/
 
 namespace Crossing
 
@@ -387,12 +494,15 @@ theorem restoring_dependent : (dependence.along restoring).Dependent
   | _ + 2, _, _, .first, _ => Nat.le_refl 1
   | _ + 2, _, _, .second, depends => False.elim depends
 
-/-- One process, one configuration, one broken dependence, three issues. Each run
-breaks the formation's dependence on the first condition at its first step. In the
-first the formation ends and the loss has no return. In the second the dependence
-dissolves as one on the second condition forms, the formation stays active, and the
-loss has no return. In the third the formation waits, the condition is renewed, and
-the same dependence is kept again from then on. -/
+/-- One process, one configuration, three outcomes after a break of the same
+dependence. Each run breaks the formation's dependence on the first condition at its
+first step, read at the start of the step. In the first the formation ends and the
+loss has no return. In the second the dependence dissolves as one on the second
+condition forms, the formation stays active, and the loss has no return. In the third
+the formation waits, the condition is renewed, and the same dependence is kept again
+from then on. The move that makes the break selects the formation's mode, so the break
+does not determine the next configuration. Read at the end of the step, only the
+restoring run breaks anything, and in the ending run the dependence dissolves. -/
 theorem loss_does_not_decide :
     ending.state 0 = transforming.state 0 ∧ transforming.state 0 = restoring.state 0 ∧
     (dependence.along ending).Broken 0 () .first ∧
@@ -469,6 +579,45 @@ theorem dip_breaks_without_consuming :
   | sustaining =>
     exact Nat.lt_irrefl 1 (below (T + 2) (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _)))
 
+/-- The formation whose dependence breaks is not within renewal at that step, and it is
+not undermining: it draws on nothing. -/
+theorem broken_formation :
+    (conditions.dependence.along escalating).active 1 .sustaining ∧
+    (conditions.dependence.along escalating).Broken 1 .sustaining () ∧
+    ¬ (conditions.dependence.along escalating).RenewingAt 1 .sustaining ∧
+    ¬ (conditions.dependence.along escalating).UnderminingAt 1 .sustaining :=
+  have broken : (conditions.dependence.along escalating).Broken 1 .sustaining () :=
+    ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩
+  ⟨Nat.le_refl 1, broken, Web.not_renewing_at_of_broken (Or.inl trivial) broken,
+   fun ⟨_, drawn, _⟩ => drawn⟩
+
+def pausingState : Nat → Nat
+  | 0 => 1
+  | 1 => 0
+  | t + 2 => t + 1
+
+/-- Drawing beyond renewal once, then nothing. -/
+def pausing : Run process :=
+  ⟨pausingState, fun | 0 => 2 | _ + 1 => 0, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
+
+/-- After the loss, further drawing breaks nothing, yet it keeps the condition from
+returning. In the winning run every later event of the focal formation draws on a
+condition that fails a need it once met, without breaking anything; in the run that
+takes the same first step and then draws nothing, the condition returns. -/
+theorem drawing_after_loss :
+    (∀ t, 0 < t → ¬ (conditions.dependence.along winning).BreakingAt t .focal ∧
+      (conditions.dependence.along winning).UnderminingAt t .focal) ∧
+    pausing.state 0 = winning.state 0 ∧ pausing.act 0 = winning.act 0 ∧
+    ¬ (conditions.dependence.along pausing).Consumed () :=
+  ⟨fun
+    | _ + 1, _ => ⟨fun ⟨_, _, g, depends, met, _⟩ => match g, depends with
+        | .sustaining, _ => Nat.not_succ_le_zero 0 met,
+      ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.zero_le _, Nat.le_refl 1⟩, Nat.zero_lt_one⟩⟩,
+   rfl, rfl, fun ⟨g, T, depends, below⟩ => match g, depends with
+    | .sustaining, _ =>
+      Nat.not_succ_le_zero T (Nat.le_of_succ_le_succ (below (T + 2)
+        (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _))))⟩
+
 end Commons
 
 namespace Dip
@@ -514,7 +663,8 @@ def web : Web Formation Unit where
 /-- The keeper is within renewal at each of its own steps, yet does not renew in the
 run: the drawer breaks the shared condition while the keeper is inactive. Whole-run
 renewal reads the shared condition, so it is not the conjunction of a formation's
-steps. -/
+steps. The keeper draws on nothing, so this separates readings of renewal, not readings
+of whether its activity undermines others. -/
 theorem renewing_at_each_step_not_in_run :
     web.Dependent ∧ (∀ t, web.active t .keeper → web.RenewingAt t .keeper) ∧
     ¬ web.RenewingIn .keeper := by

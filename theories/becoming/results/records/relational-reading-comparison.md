@@ -45,6 +45,7 @@ Lean 4.29.1 检查在共享的 relational-renewal 回执中通过：RenewalCompa
 - Related, not a proved adapter / 关联而非已证转换: [renewing-consuming-formation](renewing-consuming-formation.md). 其 event_reading_recognizes_both 与 comparison_does_not_apply 给出磨损规律下 G0 与 C 的逐事件广义读法：G0 肯定两条接续，C 在二者之间不适用，与此处 overdraw_broad_incomparable 一致。本记录补充的是：关系读法使 C 能把超额取用排在其不发生之下。互不导入。 / Its event_reading_recognizes_both and comparison_does_not_apply give the broad event reading under G0 and C for a wear law: G0 credits both continuations and C does not apply between them, agreeing with overdraw_broad_incomparable here. This record adds that the relational reading lets C rank the overdraw below its absence. No import either way.
 - Related, not a proved adapter / 关联而非已证转换: [relational-generative-comparison](relational-generative-comparison.md). 同一模式：把结构描述送入 C，裁决较粗描述无法裁决的情形。结构不同（彼为联合束，此为消耗）；无形式组合。 / Same pattern: a structural description fed into C decides a case that a coarser description cannot. Different structure (joint bundles there, consumption here); no formal composition.
 - Related, not a proved adapter / 关联而非已证转换: [positive-ground-open-futures](positive-ground-open-futures.md). 解释关联：使用同一 G0 谓词；此处其库存按关系读取。 / Interpretive: uses the same G0 predicate; here its inventory is read relationally.
+- Related, not a proved adapter / 关联而非已证转换: [becoming-stepwise-reading](becoming-stepwise-reading.md). 该结果给出逐步与关系层读法；本记录的排序在其下是否保持尚未证明。 / That result gives the stepwise and relation-level readings; whether this record's ranking survives under them is not yet proved.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -63,7 +64,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-定义逐步的关系读法并检验排序是否保持；推广到多条件及条件间替代；确定哪些混合情形可由更强比较或 J 层承诺排序，以及需要什么前提。 / Define a stepwise relational reading and test whether the ranking survives; extend to several conditions with substitution; decide which mixed cases a stronger comparison or J commitment ranks, and with what premise.
+逐步、周期与关系层读法已在 Becoming 脊柱上定义（becoming-stepwise-reading、becoming-return-grades）。排序在这些读法下是否保持，整合文档 BECOMING-RENEWAL-READING §8.5 只给出未形式化的论证（看来不再由 C 单独得出），有待证明或否证。余下：多条件及条件间替代（替代保持消耗见 substitution-preserves-consumption）；确定哪些混合情形可由更强比较或 J 层承诺排序，以及需要什么前提。 / Stepwise, cycle and relation-level readings are now defined on the Becoming spine (becoming-stepwise-reading, becoming-return-grades). Whether the ranking survives under them is argued only informally in §8.5 of the BECOMING-RENEWAL-READING integration note (it appears no longer to follow from C alone) and remains to be proved or refuted. Remaining: several conditions with substitution (substitution preserves consumption, see substitution-preserves-consumption); which mixed cases a stronger comparison or J commitment ranks, and with what premise.
 
 Aliases / 别名: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw_relational_extension`, `RenewalComparison.overdraw_broad_incomparable`, `RenewalComparison.overdraw_comparison_ranks`, `RenewalComparison.broad_comparison_admits_overdraw`, `RenewalComparison.malignant_comparison`, `RenewalComparison.contest_comparison`
 
@@ -71,3 +72,4 @@ Aliases / 别名: `RenewalComparison.g0_relational`, `RenewalComparison.overdraw
 
 - 2026年10月9日：依 Ren 追问（“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”）新建；该追问纠正了 AI 关于“更新的正面意义仍是 G0 另欠的工作”及“未证明消耗更坏”的说法。 / 9 October 2026: created after Ren's follow-up ('为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧'), which corrected the AI statements that the positive significance of renewal was still owed by G0 and that consumption was not shown worse.
 - 2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。 / 9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged.
+- 2026-10-09：更新下一步与关联：逐步、周期与关系层读法已在 Becoming 脊柱上定义（P6、P7）。本记录的主张、证明与来源不变。 / 2026-10-09: updated the next step and links: stepwise, cycle and relation-level readings are now defined on the Becoming spine (P6, P7). This record's claim, proofs and sources are unchanged.

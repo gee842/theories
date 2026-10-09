@@ -1,0 +1,12 @@
+import Becoming.Frame
+#check @Becoming.Run.window_trace
+#check @Becoming.Reach.refl
+#check @Becoming.Reach.of_step
+#check @Becoming.Reach.trans
+#check @Becoming.Reach.map
+#check @Becoming.Reach.lift
+#check @Becoming.Run.reach
+#check @Becoming.Invariant.trace
+#check @Becoming.Invariant.reach
+#check @Becoming.Invariant.run
+#check @Becoming.Novel.mono

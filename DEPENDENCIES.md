@@ -90,6 +90,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## becoming-finite-horizon ← becoming-renewal-reading
+
+`formal-reuse` — 两次运行属于该结果的公地过程；分类经 Conditions.dependence.along 读取，与 class_belongs_to_the_run 同一对象。 / Both runs belong to that result's commons process; the classification is read through Conditions.dependence.along, the object of class_belongs_to_the_run.
+
+**Producer output / 上游输出:** 公地过程、其条件可观测量与“分类属于运行”。 / The commons process, its condition observables, and the class belonging to the run.
+
+**Consumer input / 下游输入:** 对每个视界，前缀相同而分类相反的两次运行。 / For every horizon, two runs with the same prefix and opposite classes.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
+## becoming-finite-horizon ← becoming-stepwise-reading
+
+`formal-reuse` — 前缀中的每个事件在更新之内（RenewingAt）；由此逐步读法记入消耗运行的前缀。 / Each event of the prefix is within renewal (RenewingAt), so the stepwise reading credits the prefix of the consuming run.
+
+**Producer output / 上游输出:** RenewingAt 与依存网上的 RenewingIn、ConsumingIn。 / RenewingAt, with RenewingIn and ConsumingIn on webs.
+
+**Consumer input / 下游输入:** 视界定理的陈述。 / The statement of the horizon theorem.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
 ## becoming-renewal-reading ← relational-renewal-classification
 
 `formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
@@ -125,6 +149,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 立场、区域与意义仍外给；需要一个活的事件。 / Standpoints, regions and significance remain supplied; some living event is needed.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## becoming-return-grades ← becoming-dependence-dynamics
+
+`formal-reuse` — 回程以 Web 的水平、依存与所需定义；Returns.not_consumed 与 consumed_iff 刻画 Web.Consumed；周期读法以 UnderminingAt 为一步情形。 / Return is defined from a web's levels, dependences and needs; Returns.not_consumed and consumed_iff characterize Web.Consumed; the cycle readings have UnderminingAt as their one-step case.
+
+**Producer output / 上游输出:** 依存网、Renewed、Consumed、RenewingIn、ConsumingIn 与逐步的侵蚀。 / Webs, Renewed, Consumed, RenewingIn, ConsumingIn and stepwise undermining.
+
+**Consumer input / 下游输入:** 回程等级与周期读法的定义和定理。 / The definitions and theorems of return grades and cycle readings.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## becoming-return-grades ← relational-renewal-classification
+
+`formal-reuse` — seasonal_renewed_within_two 经 Web.static 读取该结果的 fluctuating 展开，给出其在更新与消耗之间的精确等级。 / seasonal_renewed_within_two reads that result's fluctuating unfolding through Web.static and gives its exact grade between renewal and consumption.
+
+**Producer output / 上游输出:** 既不更新也不消耗的季节性展开 fluctuating。 / The seasonal unfolding fluctuating, neither renewing nor consuming.
+
+**Consumer input / 下游输入:** 两步周期内更新、不在一步内更新的见证。 / The witness renewed within two steps and not within one.
+
+**Retained conditions / 保留条件:** 依存不变（Web.static）。 / Constant dependence (Web.static).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)
+
+## becoming-return-grades ← becoming-stepwise-reading
+
+`formal-reuse` — Commons.dip_within_two 与 escalation_undermines_for_every_cycle 复用该结果的 dipping、escalating 运行；Dip.renewing_within_two 复用其 Dip 依存网。 / Commons.dip_within_two and escalation_undermines_for_every_cycle reuse that result's dipping and escalating runs; Dip.renewing_within_two reuses its Dip web.
+
+**Producer output / 上游输出:** 逐步读法的见证运行与依存网。 / The stepwise reading's witness runs and webs.
+
+**Consumer input / 下游输入:** 周期读法下的记入与扣下。 / What the cycle readings credit and withhold.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
 ## becoming-spine-instances ← metaethical-core-characterization
 
@@ -462,6 +522,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean)
 
+## joint-difference-making ← becoming-dependence-dynamics
+
+`formal-reuse` — Keeps、Breaks 沿运行恰是 Web.Kept、Web.Broken（along_kept、along_broken）；Pool 的分类经 Dependence.along 读出。 / Keeps and Breaks along a run are exactly Web.Kept and Web.Broken (along_kept, along_broken); Pool's classification is read through Dependence.along.
+
+**Producer output / 上游输出:** 依存可观测量、依存网及其维持、断裂与消耗。 / Dependence observables, webs and their keeping, breaking and consumption.
+
+**Consumer input / 下游输入:** 配置之间的维持与断裂及 but-for 检验。 / Keeping and breaking between configurations, and the but-for test.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## joint-difference-making ← becoming-return-grades
+
+`formal-reuse` — depletion_is_joint 用 UnderminingFor 陈述第一个事件对任何周期都不侵蚀。 / depletion_is_joint uses UnderminingFor to state that the first event undermines for no cycle.
+
+**Producer output / 上游输出:** 周期层面的侵蚀。 / Undermining over cycles.
+
+**Consumer input / 下游输入:** 渐进耗竭中事件的读法。 / The reading of events in gradual depletion.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
 ## joint-practice-forms-continuation ← organizational-rule-inheritance
 
 `formal-reuse` — retry_produces_existing_review 接入原 review 操作；enrollment_consumes_review 实际使用 admitted_requires_review，交接及规则修订直接使用原 step。 / retry_produces_existing_review supplies the exact prior review operation; enrollment_consumes_review uses admitted_requires_review, and handoff/rule revision directly use the original step.
@@ -777,6 +861,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 库存限于此位置可及的生命内容，且只有单一历史（Unit），开放未来的多分支结构未被表示；正面相关性取此位置的意义；容差与分级连通成立。 / Inventory restricted to living content reachable by the position, with a single history (Unit), so the branching structure of open futures is not represented; positive relevance is the position's significance; tolerance and graded connection hold.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
+
+## substitution-preserves-consumption ← relational-renewal-classification
+
+`formal-reuse` — 直接复用支持门控定律的 overdraw_crosses_support、permanently_below 与 dependent_overdraw_ends_itself；共同条件的水平就是 Law.level。 / Directly reuses the support-gated law's overdraw_crosses_support, permanently_below and dependent_overdraw_ends_itself; the shared condition's level is Law.level.
+
+**Producer output / 上游输出:** 支持门控定律、越过支持阈值、永久低于支持与依存的过度汲取终止自身。 / The support-gated law, crossing the support threshold, staying below it for ever, and dependent overdraw ending itself.
+
+**Consumer input / 下游输入:** 替代的依存网及其分类。 / The substitution web and its classification.
+
+**Retained conditions / 保留条件:** 定律的前提如上。 / The law's premises as above.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)
+
+## substitution-preserves-consumption ← becoming-dependence-dynamics
+
+`formal-reuse` — 替代读作依存网；Dissolves、Forms 与 ConsumingIn 来自该结果；ceasing_step 是 ceases_at_a_step 的可判定形式。 / Substitution is read as a web; Dissolves, Forms and ConsumingIn come from that result; ceasing_step is the decidable form of ceases_at_a_step.
+
+**Producer output / 上游输出:** 依存网、依存的消解与形成、消耗。 / Webs, dissolving and forming dependence, consumption.
+
+**Consumer input / 下游输入:** 替代运行中依存转化与分类的陈述。 / The statement of transformed dependence and classification in the substitution run.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
 ## supported-renewal-recovery ← relational-renewal-classification
 
