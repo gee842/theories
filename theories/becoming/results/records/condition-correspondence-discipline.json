@@ -114,6 +114,13 @@
         "zh": "在本纪律下，承担自身的形成直接相关：汲取它与它的每个活跃事件相互作用；不承担自身的互利者不相关。陈述在同一模块新增的一节。",
         "en": "Under this discipline, formations bearing on themselves relate directly: drawing on one interacts with each of its active events; mutualists not bearing on themselves are not related. Stated in a new section of the same module."
       }
+    },
+    {
+      "id": "living-on-and-descent",
+      "detail": {
+        "zh": "交互之外的两种 related：以之为生沿用“依存须能落空”的纪律，世系要求正的给予与开始作为条件而在；两者都依赖一类读法的同一对应。",
+        "en": "Two readings of related beyond interaction: living on keeps the discipline that the dependence can fail, and descent needs a positive gift and coming to stand; both depend on the one-kind identification."
+      }
     }
   ],
   "counterexamples": [
@@ -179,8 +186,8 @@
     "en": "Stated for the stepwise reading only; with fixed dependences it applies through K.dependence.along r, and the whole-run reading could take the same relation, which is not done here. Does not order events in time or ask about the effect of drawing; does not change living; chooses no reading; yields no responsibility or duty."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T090231.312129Z）：Becoming.Correspondence 中本记录的 25 项定理全部空依赖（模块另有 12 项定理属于 life-as-condition-of-life）；同一回执覆盖包内 21 个模块（含只作导入的根模块与桥接），共 774 项定理／1257 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 23 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T090231.312129Z): the 25 theorems of Becoming.Correspondence belonging to this record all have empty axiom reports (the module's other 12 belong to life-as-condition-of-life); the same receipt covers the package's 21 modules (including the import-only root and the bridge) with 774 theorems/1257 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 23 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T091503.719598Z）：Becoming.Correspondence 中本记录的 25 项定理全部空依赖（模块另有 12 项定理属于 life-as-condition-of-life）；同一回执覆盖包内 22 个模块（含只作导入的根模块与桥接），共 799 项定理／1286 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 24 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T091503.719598Z): the 25 theorems of Becoming.Correspondence belonging to this record all have empty axiom reports (the module's other 12 belong to life-as-condition-of-life); the same receipt covers the package's 22 modules (including the import-only root and the bridge) with 799 theorems/1286 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 24 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -253,19 +260,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d162e8760cf6d90197b8fa7f0c3fc067ead362704e093d8b390ffca29e160f43",
+      "sha256": "eddb85693d93cfdb21aa5955cee996887dc68c5a186f0e98187005cb92b8adeb",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "de5056997bbb34df9e4d14ced005ca6d3e41c22d12d913d32d80e79aa118f92c",
+      "sha256": "6a0ff630e23bf46804dce8dfd123e2d9e0fd0e12c82c832af3c99cd515d316b4",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "fe36efe13287c5f8801da21f65b3b9683101a246117884ac0e9c132518587468",
+      "sha256": "75efedb7c1fab9c2a8ca345e4361ce90e73ce90a60c61ebf4a342489f7554819",
       "declarations": []
     },
     {
@@ -368,6 +375,14 @@
     {
       "zh": "2026-10-09：P17 新增 Becoming.Reserve、并在 Flow、Dissipation 与 Roles 中陈述开始作为条件而在之后，合并检查器重跑（20261009T090231.312129Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P17 added Becoming.Reserve and stated coming to stand in Flow, Dissipation and Roles, the consolidated checker was rerun (20261009T090231.312129Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P18 新增 Becoming.Descent 之后，合并检查器重跑（20261009T091503.719598Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P18 added Becoming.Descent, the consolidated checker was rerun (20261009T091503.719598Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P18 在交互之外加入以之为生与世系两种候选的 related（living-on-and-descent，整合文档 §25）；本记录的主张与证明不变。",
+      "en": "2026-10-09: P18 adds two candidate readings of related beyond interaction, living on and descent (living-on-and-descent, §25 of the integration note); this record's claim and proofs are unchanged."
     }
   ]
 }

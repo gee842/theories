@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "id": "living-on-and-descent",
+  "title": {
+    "zh": "以之为生与世系使关系项直接相关：一类读法提供的两种 related",
+    "en": "Living on and descent relate relata directly: two readings of related that the one-kind reading supplies"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-09T09:19:57+00:00",
+  "claim": {
+    "zh": "在依存网的逐步读法上，保留 living（活跃且不侵蚀），在交互之外加入两种只有一类关系项的读法才有的关系。以之为生：一个形成在某步汲取一个关系项、并以正需要依存于它（LivesOn）；这样的事件与该关系项的事件相关（sustenance）。它与交互一样不是免费的：在 Dependent 之下，活跃的形成只以在该步活跃的体现关系项为生（LivesOn.active）。它使只依存于对方的蜂与花连通（Mutualism.apart_sustenance_connected），而共同参与与交互都不连通它们。在 N_rel 之下，珍视一个以某关系项为生的事件，就珍视该关系项的每个活的事件，反之亦然（living_on_reaches、lived_on_reaches）：珍视狐的进食，就到达兔的活。世系：一个关系项从一个形成而来，当后者在某步给予它、它跨该步开始作为条件而在（Descends）；世系使两个关系项的每个事件相关（descent）。在平衡且只有活跃形成给予的流中，生起的体现关系项从在该步活跃的另一个形成而来（Embodied.descends），这个形成不必体现；于是在 N_rel 之下，珍视这个形成的任一事件，就到达由它而来的关系项的每个活的事件，反之亦然（descent_reaches、ancestry_reaches、arisen_reached）。世代各由前一代给予时，世系使它们连通，共同参与与交互都不连通它们，G0 在那里恰等于种子加 N_rel 加 N_std（Brood.descended）。世系跟着开始作为条件而在走，不跟着生起走：种子从在它休眠时供给它的父代而来（Provisioned.descends），从休眠中醒来不从任何形成而来（Sleeper.no_descent）。两种读法都用到哪个条件就是哪个关系项：把只依存于对方的蜂与花的条件互换，共同参与与交互的连通不变（都不连通），以之为生的连通由有变无（Mutualism.relabel_sustenance）。不用伦理前提，也不用 Lean 公理。",
+    "en": "On the stepwise reading of a web, keep living (active and not undermining) and add to interaction two relations that only a reading with one kind of relatum has. Living on: a formation draws at a step on a relatum and depends on it at a positive need there (LivesOn), and such an event is related to that relatum's events (sustenance). Like interaction it is not free: under Dependent an active formation lives only on an embodied relatum active at that step (LivesOn.active). It connects a bee and a flower that depend only on each other (Mutualism.apart_sustenance_connected), which neither co-participation nor interaction connects. Under N_rel, valuing an event that lives on a relatum reaches every living event of that relatum, and conversely (living_on_reaches, lived_on_reaches): valuing the fox's eating reaches the hare's living. Descent: a relatum descends from a formation that gives to it at a step across which it comes to stand (Descends), and descent relates every event of the one relatum to every event of the other (descent). In a balanced flow in which only active formations give, an embodied relatum that arises descends from another formation active at that step (Embodied.descends), which need not be embodied; so under N_rel, valuing any event of that formation reaches every living event of the relatum descending from it, and conversely (descent_reaches, ancestry_reaches, arisen_reached). Generations each given by the one before are connected by descent and by neither co-participation nor interaction, and G0 there is exactly a seed with N_rel and N_std (Brood.descended). Descent follows coming to stand, not arising: a seed descends from the parent that provisioned it while dormant (Provisioned.descends), and waking from dormancy descends from nothing (Sleeper.no_descent). Both readings use which condition is which relatum: relabelling the conditions of the bee and the flower that depend only on each other, each onto the other, leaves the connection of co-participation and interaction as it was (none) and removes the connection by living on (Mutualism.relabel_sustenance). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "一类关系项的读法：条件与形成共用索引，哪个条件就是哪个关系项由共同的索引给出（relabel，见 life-as-condition-of-life）。",
+      "en": "The one-kind reading: conditions and formations share an index, and which condition is which relatum is supplied by the shared index (relabel, see life-as-condition-of-life)."
+    },
+    {
+      "zh": "sustenance 与 descent 是 related 的两种读法，是对应前提：它们是否算作 N_rel 所传递的形成关系，由 Ren 选择。N_rel 本身仍是前提（metaethical-core-characterization）。",
+      "en": "sustenance and descent are two readings of related, correspondence premises: whether they count as formed relations along which N_rel transmits is Ren's choice. N_rel itself remains a premise (metaethical-core-characterization)."
+    },
+    {
+      "zh": "Embodied.descends 与 arisen_reached 需要流平衡依存网、只有活跃形成给予（Acting），以及生起的关系项体现。",
+      "en": "Embodied.descends and arisen_reached need the flow to balance the web, only active formations to give (Acting), and the arising relatum to be embodied."
+    }
+  ],
+  "correspondence": {
+    "zh": "Becoming.Metaethics 把 related 读作形成的关系，列出条件、依存、世系与合作；此前的读法只经由共同的条件相关，life-as-condition-of-life 记下“直接读出体现的估值”为下一步，Mutualism.apart 是其反例：蜂与花都体现、互相依存，却不相关。本结果在一类读法中给出两种直接的关系：以之为生对应条件化与依存，世系对应世系。以之为生要求正需要的依存，所以沿用交互的纪律（连通由活的使用造成）；世系要求正的给予与开始作为条件而在，所以不由空的给予造成。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在把体现的关系项读作“生”这一属于 Ren 的读法下（整合文档 §23 K6），作者把世系读作原话中两个“生”之间关系的一种形式内容：生起者由给予它的展开而来，并经由世系与整体相关（AI 论证）；这不替代原话，不推出生起是好的，也不决定 Ren 是否采用这些关系。",
+    "en": "Becoming.Metaethics reads related as formed relation and lists conditioning, dependence, descent and cooperation; the earlier readings relate only through a shared condition, life-as-condition-of-life records ‘a valuation reading embodiment directly’ as a next step, and Mutualism.apart is its counterexample: a bee and a flower, both embodied and depending on each other, are unrelated. This result gives two direct relations in the one-kind reading: living on corresponds to conditioning and dependence, descent to descent. Living on requires dependence at a positive need, keeping the discipline of interaction (connection is made by living use); descent requires a positive gift and coming to stand, so no empty giving makes it. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). Taking embodied relata as 生, a reading that is Ren's (§23, K6, of the integration note), the author reads descent as one formal content of the relation between the two 生 in those words: what arises comes from the unfolding that gives it, and is related to the whole through descent (an AI argument); it does not replace Ren's words, does not show that arising is good, and does not decide whether Ren adopts these relations."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+  "aliases": [
+    "Becoming.Web.LivesOn",
+    "Becoming.Web.sustenance",
+    "Becoming.Web.LivesOn.active",
+    "Becoming.Web.living_on_reaches",
+    "Becoming.Web.lived_on_reaches",
+    "Becoming.Flow.Descends",
+    "Becoming.Flow.descent",
+    "Becoming.Flow.descent_reaches",
+    "Becoming.Flow.ancestry_reaches",
+    "Becoming.Web.Embodied.descends",
+    "Becoming.Web.arisen_reached",
+    "Becoming.Brood.descended",
+    "Becoming.Mutualism.apart_sustenance_connected",
+    "Becoming.Mutualism.relabel_sustenance"
+  ],
+  "dependencies": [
+    {
+      "id": "condition-correspondence-discipline",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用交互（Interacts、Bearing、interaction）与连通的转移；以之为生沿用“依存须能落空”的纪律。",
+        "en": "Reuses interaction (Interacts, Bearing, interaction) and the transfer of connection; living on keeps the discipline that the dependence must be able to fail."
+      },
+      "interface": {
+        "output": {
+          "zh": "只有交互经由条件相关；连通由活的使用造成。",
+          "en": "Only interaction relates through a condition; connection is made by living use."
+        },
+        "input": {
+          "zh": "交互之外，以之为生与世系直接关联关系项。",
+          "en": "Beyond interaction, living on and descent relate relata directly."
+        },
+        "conditions": {
+          "zh": "一类读法；正需要的依存；正的给予与开始作为条件而在。",
+          "en": "The one-kind reading; dependence at a positive need; a positive gift and coming to stand."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean"
+      }
+    },
+    {
+      "id": "life-as-condition-of-life",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood 与 Mutualism.apart；回答其下一步“直接读出体现的估值”。",
+        "en": "Reuses the one-kind reading, Embodied, arises_given, active_of_bearing, relabel, Brood and Mutualism.apart; answers its next step ‘a valuation reading embodiment directly’."
+      },
+      "interface": {
+        "output": {
+          "zh": "体现的关系项只经由另一个活跃形成的给予而生起；只依存于对方的蜂与花在两种估值下不相关。",
+          "en": "An embodied relatum arises only as another active formation gives to it; a bee and a flower depending only on each other are unrelated under both valuations."
+        },
+        "input": {
+          "zh": "生起的体现关系项从给予它的形成而来并与之相关；以之为生使蜂与花相关。",
+          "en": "An arising embodied relatum descends from and is related to the formation that gives to it; living on relates the bee and the flower."
+        },
+        "conditions": {
+          "zh": "平衡；Acting；Embodied。",
+          "en": "Balance; Acting; Embodied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
+      }
+    },
+    {
+      "id": "generation-is-replenishment",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用开始作为条件而在（ComesToStand、Embodied.comesToStand）以及 Provisioned 与 Sleeper；世系跟着开始作为条件而在走。",
+        "en": "Reuses coming to stand (ComesToStand, Embodied.comesToStand) and Provisioned and Sleeper; descent follows coming to stand."
+      },
+      "interface": {
+        "output": {
+          "zh": "开始作为条件而在需要给予；体现的关系项在生起时开始作为条件而在。",
+          "en": "Coming to stand needs giving; an embodied relatum comes to stand as it arises."
+        },
+        "input": {
+          "zh": "世系：给予而使之开始作为条件而在。",
+          "en": "Descent: giving as the relatum comes to stand."
+        },
+        "conditions": {
+          "zh": "平衡的流。",
+          "en": "A balanced flow."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    },
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Valuation、N_rel（transmits）与 significant_iff：连通的整体上 G0 恰等于种子加两种中立。",
+        "en": "Reuses Valuation, N_rel (transmits) and significant_iff: on a connected whole G0 is exactly a seed with both neutralities."
+      },
+      "interface": {
+        "output": {
+          "zh": "连通的整体上 G0 的刻画。",
+          "en": "G0's characterization on a connected whole."
+        },
+        "input": {
+          "zh": "世系使世代连通，于是刻画适用。",
+          "en": "Descent connects the generations, so the characterization applies."
+        },
+        "conditions": {
+          "zh": "Connected；某个活的主张。",
+          "en": "Connected; some living claim."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "reserve-defers-ending",
+      "detail": {
+        "zh": "同一批见证（Provisioned、Sleeper）区分水平与活动；世系跟着水平走。",
+        "en": "The same witnesses (Provisioned, Sleeper) separate standing and activity; descent follows standing."
+      }
+    },
+    {
+      "id": "ranking-under-readings",
+      "detail": {
+        "zh": "C 的排序随读法而变；这里只改变 related，不改变 living，所以 C 的比较不变，变的是 N_rel 传递到哪里。",
+        "en": "C's ranking varies with the reading; here only related changes, not living, so C's comparisons are unchanged and what changes is where N_rel transmits."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+      "detail": {
+        "zh": "世代各由前一代给予：共同参与与交互都不连通它们，世系连通它们（Brood.descended）。",
+        "en": "Generations each given by the one before: neither co-participation nor interaction connects them, descent does (Brood.descended)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+      "detail": {
+        "zh": "哪个条件就是哪个关系项进入以之为生：把只依存于对方的蜂与花的条件互换，共同参与与交互不变，以之为生的连通消失（Mutualism.relabel_sustenance）。",
+        "en": "Which condition is which relatum enters living on: relabelling the conditions of the bee and the flower that depend only on each other, each onto the other, leaves co-participation and interaction unchanged and removes the connection by living on (Mutualism.relabel_sustenance)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+      "detail": {
+        "zh": "从休眠中醒来不从任何形成而来，而生成不息（Sleeper.no_descent）；种子从休眠时供给它的父代而来，生起时没有给予（Provisioned.descends）。",
+        "en": "Waking from dormancy descends from nothing while generation is unceasing (Sleeper.no_descent); a seed descends from the parent that provisioned it while dormant and is given nothing when it arises (Provisioned.descends)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词；不改变 living，不改变 C，不推出生起是好的或应当带来新的生起；sustenance 与 descent 是 related 的候选读法，是否采用属于 Ren；世系使两个关系项的所有事件相关，不排定时间；给予的形成不必体现（太阳给予种子也是世系）；以之为生不问汲取的效果；两种读法都依赖一类读法的同一对应，两类读法检查不到它；只对逐步读法陈述；见证都是最小见证；新名称最终由 Ren 定。",
+    "en": "Contains no ethical predicate; changes neither living nor C, and does not show that arising is good or that new arising ought to be brought about; sustenance and descent are candidate readings of related, and adopting them is Ren's choice; descent relates every event of two relata and does not order them in time; the formation that gives need not be embodied (a sun giving to a seed is descent too); living on does not ask about the effect of drawing; both readings depend on the one-kind identification, which the two-kind readings cannot check; stated for the stepwise reading only; the witnesses are minimal; the final choice of names is Ren's."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T091503.719598Z）：Becoming.Descent 的 25 项定理全部空依赖；同一回执覆盖包内 22 个模块（含只作导入的根模块与桥接），共 799 项定理／1286 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §25，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 24 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T091503.719598Z): the 25 theorems of Becoming.Descent all have empty axiom reports; the same receipt covers the package's 22 modules (including the import-only root and the bridge) with 799 theorems/1286 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §25 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 24 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+      "role": "proof",
+      "sha256": "83ac38caf8e2199d778357fedfbe441ed93e0a8ebeb584b0dd99cc8ae26bba18",
+      "declarations": [
+        "Becoming.Web.LivesOn",
+        "Becoming.Web.sustenance",
+        "Becoming.Web.interaction_sustenance",
+        "Becoming.Web.LivesOn.active",
+        "Becoming.Web.living_on_reaches",
+        "Becoming.Web.lived_on_reaches",
+        "Becoming.Flow.Descends",
+        "Becoming.Flow.descent",
+        "Becoming.Flow.interaction_descent",
+        "Becoming.Flow.descent_reaches",
+        "Becoming.Flow.ancestry_reaches",
+        "Becoming.Web.Embodied.descends",
+        "Becoming.Web.arisen_reached",
+        "Becoming.Brood.birth_next",
+        "Becoming.Brood.descends",
+        "Becoming.Brood.alive_of_stands",
+        "Becoming.Brood.self_alive",
+        "Becoming.Brood.down",
+        "Becoming.Brood.up",
+        "Becoming.Brood.descent_connected",
+        "Becoming.Brood.participates",
+        "Becoming.Brood.not_coparticipating",
+        "Becoming.Brood.not_interacting",
+        "Becoming.Brood.descended",
+        "Becoming.Mutualism.apart_sustenance_connected",
+        "Becoming.Mutualism.other_other",
+        "Becoming.Mutualism.relabel_sustenance",
+        "Becoming.Provisioned.descends",
+        "Becoming.Sleeper.no_descent"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
+      "role": "proof",
+      "sha256": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
+      "declarations": [
+        "Becoming.Web.Interacts",
+        "Becoming.Web.Bearing",
+        "Becoming.Web.interaction",
+        "Becoming.Valuation.Connected.transfer",
+        "Becoming.Web.relabel_valuation_connected",
+        "Becoming.Web.relabel_interaction_connected",
+        "Becoming.Mutualism.apart_not_connected"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "0083004bf5773638d54aadcabb74bfe7e52822b2bb9455cbb47b830871428d08",
+      "declarations": [
+        "Becoming.Web.Embodied",
+        "Becoming.Web.Embodied.arises_given",
+        "Becoming.Web.Embodied.active_of_bearing",
+        "Becoming.Web.Embodied.comesToStand",
+        "Becoming.Web.relabel",
+        "Becoming.Web.relabel_alive",
+        "Becoming.Brood.standing",
+        "Becoming.Brood.birth",
+        "Becoming.Brood.standing_self",
+        "Becoming.Brood.arises",
+        "Becoming.Brood.web",
+        "Becoming.Brood.flow",
+        "Becoming.Mutualism.other",
+        "Becoming.Mutualism.other_cancel",
+        "Becoming.Mutualism.apart",
+        "Becoming.Mutualism.apart_alive"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "edb5948be82fef1344b46fe5c55247dfc9b160d499a2c9bdeade143113d35610",
+      "declarations": [
+        "Becoming.Web.ComesToStand",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.Acting"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "role": "proof",
+      "sha256": "6d2838c3758f583059e889ddc096faf1fbeaf7797a7efd6b66e178c6519bf5fd",
+      "declarations": [
+        "Becoming.Provisioned.web",
+        "Becoming.Provisioned.flow",
+        "Becoming.Sleeper.web",
+        "Becoming.Sleeper.flow",
+        "Becoming.Sleeper.sleeper"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
+      "declarations": [
+        "Becoming.Valuation",
+        "Becoming.Valuation.significant_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "eddb85693d93cfdb21aa5955cee996887dc68c5a186f0e98187005cb92b8adeb"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "6a0ff630e23bf46804dce8dfd123e2d9e0fd0e12c82c832af3c99cd515d316b4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "75efedb7c1fab9c2a8ca345e4361ce90e73ce90a60c61ebf4a342489f7554819"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+      "role": "provenance",
+      "sha256": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
+      "role": "provenance",
+      "sha256": "54a19521ba6c1345c86060b8379965c42da0429ad3015adc75f326510e98e5c1"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Descent",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 是否采用以之为生与世系作为 N_rel 所传递的关系；排定时间、对效果敏感的以之为生；世系的传递闭包（祖先）与有限步内的世系；整段读法上的同一关系；把世系与 C 联系，即带来新的生起是否使结果更好（Ren）；与 universal_reason 的“新的活的内容”接通。",
+    "en": "Whether Ren adopts living on and descent as relations along which N_rel transmits; an ordered, effect-sensitive living on; the transitive closure of descent (ancestry) and descent within finitely many steps; the same relations for the whole-run reading; relating descent to C, whether bringing about new arising makes an outcome better (Ren); connecting to universal_reason's ‘new living content’."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：作为整合计划 P18 新增，回答 life-as-condition-of-life 的下一步“直接读出体现的估值”与 Mutualism.apart；见整合文档 §25；按 Ren“move on to pursue the theory of becoming, and prove the necessary proofs”。",
+      "en": "2026-10-09: added as P18 of the unification plan, answering life-as-condition-of-life's next step ‘a valuation reading embodiment directly’ and Mutualism.apart; see §25 of the integration note; following Ren's ‘move on to pursue the theory of becoming, and prove the necessary proofs’."
+    }
+  ]
+}

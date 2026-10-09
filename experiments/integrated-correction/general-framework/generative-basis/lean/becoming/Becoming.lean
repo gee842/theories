@@ -17,6 +17,7 @@ import Becoming.Reserve
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
+import Becoming.Descent
 
 /-!
 # The Theory of Becoming: the formal core
@@ -113,6 +114,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   condition is made by its living use. Read with one kind of relatum, the valuations keep
   their connection, and formations bearing on themselves relate directly, with no third
   condition.
+* `Becoming.Descent` (L4): relata related directly. Read with one kind of relatum, an
+  event is related to the relatum it lives on, drawing on it at a positive need, and a
+  relatum given to as it comes to stand descends from the formation that gives to it.
+  An embodied relatum that arises descends from another active formation, so under N_rel
+  valuing that formation reaches the arisen relatum's living events, and generations each
+  given by the one before are connected by descent alone. Whether these readings count
+  as formed relations is Ren's choice.
 
 The core imports nothing else, every declaration has an empty axiom report, and it
 compiles from Lean's prelude alone. `Becoming.Bridge` lies outside the core: it shows

@@ -730,6 +730,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## living-on-and-descent ← condition-correspondence-discipline
+
+`formal-reuse` — 复用交互（Interacts、Bearing、interaction）与连通的转移；以之为生沿用“依存须能落空”的纪律。 / Reuses interaction (Interacts, Bearing, interaction) and the transfer of connection; living on keeps the discipline that the dependence must be able to fail.
+
+**Producer output / 上游输出:** 只有交互经由条件相关；连通由活的使用造成。 / Only interaction relates through a condition; connection is made by living use.
+
+**Consumer input / 下游输入:** 交互之外，以之为生与世系直接关联关系项。 / Beyond interaction, living on and descent relate relata directly.
+
+**Retained conditions / 保留条件:** 一类读法；正需要的依存；正的给予与开始作为条件而在。 / The one-kind reading; dependence at a positive need; a positive gift and coming to stand.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
+
+## living-on-and-descent ← life-as-condition-of-life
+
+`formal-reuse` — 复用一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood 与 Mutualism.apart；回答其下一步“直接读出体现的估值”。 / Reuses the one-kind reading, Embodied, arises_given, active_of_bearing, relabel, Brood and Mutualism.apart; answers its next step ‘a valuation reading embodiment directly’.
+
+**Producer output / 上游输出:** 体现的关系项只经由另一个活跃形成的给予而生起；只依存于对方的蜂与花在两种估值下不相关。 / An embodied relatum arises only as another active formation gives to it; a bee and a flower depending only on each other are unrelated under both valuations.
+
+**Consumer input / 下游输入:** 生起的体现关系项从给予它的形成而来并与之相关；以之为生使蜂与花相关。 / An arising embodied relatum descends from and is related to the formation that gives to it; living on relates the bee and the flower.
+
+**Retained conditions / 保留条件:** 平衡；Acting；Embodied。 / Balance; Acting; Embodied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## living-on-and-descent ← generation-is-replenishment
+
+`formal-reuse` — 复用开始作为条件而在（ComesToStand、Embodied.comesToStand）以及 Provisioned 与 Sleeper；世系跟着开始作为条件而在走。 / Reuses coming to stand (ComesToStand, Embodied.comesToStand) and Provisioned and Sleeper; descent follows coming to stand.
+
+**Producer output / 上游输出:** 开始作为条件而在需要给予；体现的关系项在生起时开始作为条件而在。 / Coming to stand needs giving; an embodied relatum comes to stand as it arises.
+
+**Consumer input / 下游输入:** 世系：给予而使之开始作为条件而在。 / Descent: giving as the relatum comes to stand.
+
+**Retained conditions / 保留条件:** 平衡的流。 / A balanced flow.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## living-on-and-descent ← metaethical-core-characterization
+
+`formal-reuse` — 复用 Valuation、N_rel（transmits）与 significant_iff：连通的整体上 G0 恰等于种子加两种中立。 / Reuses Valuation, N_rel (transmits) and significant_iff: on a connected whole G0 is exactly a seed with both neutralities.
+
+**Producer output / 上游输出:** 连通的整体上 G0 的刻画。 / G0's characterization on a connected whole.
+
+**Consumer input / 下游输入:** 世系使世代连通，于是刻画适用。 / Descent connects the generations, so the characterization applies.
+
+**Retained conditions / 保留条件:** Connected；某个活的主张。 / Connected; some living claim.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
 ## market-finite-support-obstruction ← market-supported-finite-transition
 
 `formal-reuse` — 复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。 / Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction.

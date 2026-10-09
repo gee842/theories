@@ -35,7 +35,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
         "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles", "Becoming.Reserve",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent",
+        "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -318,6 +319,22 @@ SCOPE = (
     "other neither co-participation nor interaction relates the bee to the flower, though both "
     "are embodied; relabelling the conditions of a one-kind web onto themselves keeps the "
     "connection of both valuations. "
+    "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
+    "depending on it at a positive need, is related to that relatum's events, and a relatum "
+    "given to at a step across which it comes to stand descends from the formation that gives "
+    "to it, descent relating every event of the two; living on, like interaction, needs a "
+    "dependence that can fail, so under the premise that activity needs support an active "
+    "formation lives only on an embodied relatum active at that step; under N_rel valuing an "
+    "event that lives on a relatum reaches that relatum's living events and conversely, and "
+    "valuing any event of a formation reaches the living events of the relata descending from "
+    "it and conversely; in a balanced flow in which only active formations give, an embodied "
+    "relatum that arises descends from another formation active at that step; generations "
+    "each given by the one before are connected by descent and by neither co-participation "
+    "nor interaction, and G0 there is exactly a seed with N_rel and N_std; a bee and a flower "
+    "depending only on each other are connected by living on, and relabelling their "
+    "conditions each onto the other keeps co-participation and interaction and removes that "
+    "connection; a seed descends from the parent that provisioned it while dormant, and "
+    "waking from dormancy descends from nothing. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "

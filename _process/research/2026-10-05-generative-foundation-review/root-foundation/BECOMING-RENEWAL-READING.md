@@ -1047,7 +1047,7 @@ Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条
 - **两类嵌入一类（P16b 更正）。** 以两类陈述的列出的读法，以一类关系项读时都不变，两种估值的连通也不变（`roles_*`）；`Acting`、`Taking`、普查、present 不重复与耗散也不变（`roles_acting`、`roles_taking`、`roles_census`、`roles_distinct`、`roles_dissipative`）。两类读法中曾活跃的形成既不体现也不承担自身（`roles_not_embodied`、`roles_not_selfBearing`）。一类读法另需一个对应：哪个条件就是哪个形成。它由共同的索引给出，是表示的前提，两类读法检查不到它：把条件一侧到上地重新标号，`Dependent`、侵蚀、living 与两种估值的连通都不变，而体现与承担自身改变（`relabel_dependent`、`relabel_undermining`、`relabel_alive`、`relabel_valuation_connected`、`relabel_interaction_connected`、`Mutualism.apart_relabelled`、`Wilting.relabelled_not_embodied`）。体现与承担自身是在这一对应下的读法；两类的表示省略的是形成与条件的同一对应。原文写“所以两类的表示没有引入独立的本体”“它省略的正是体现”，把所给的对应当作了结果，与 §19 的 I7 是同一模式。
 - **生作为生的条件。** 在活动需要支持（`Dependent`）之下，依存于体现关系项的形成只在它活跃时活跃，活动沿依存链传递，一个关系项的终结终结每个依存链到达它的形成（`coextinct`）。在生态中，这是专食者与宿主、寄生者与寄主的共灭；种子库、储备与休眠被 `Dependent` 排除，在它们之下共灭不必成立（P17 补充：`Dependent` 是零储备，有储备时共灭推迟而不消失，见 §24）。
 - **经由另一个活跃者的给予而生起（P16b 更正，原题“生由生给予”）。** 在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`arises_given`）。定理不要求给予它的形成体现、承担自身或依存于任何东西：一个不体现、不依存的太阳可以是唯一给予种子的关系项（`SunSeed`）（P16c 用语，原文“给予者”）。所以它说的是一个生命的生起由另一个活跃者的给予给出，不是由另一个生命给出。在只有体现的关系项给予这一表示前提下，给予者也体现，并在给予时作为条件而在（`arises_from_embodied`）；这是对应，不是定理从平衡推出的。作者曾把“生由生给予”读作 Ren 原话“不断创造更多生”中两个“生”之间关系的一种形式内容（AI 论证）；这一读法需要上述前提，不替代原话，也不推出它是好的。`Brood` 表明前提与不息相容：一代代形成生起，每一代由前一代给予。
-- **直接的关系。** 共同参与与相互作用都经由一个条件关联两个事件。各自只依存于对方的互利者，没有共同的条件，于是两种估值都不关联它们（`apart_not_connected`、`apart_not_interacting`）。承担自身时，一个形成对另一个的汲取就与那个形成的活动相互作用（`SelfBearing.interacts`），互利者直接相关，无需第三个条件（`Mutualism.connected`）。所以形成之间是否直接相关，取决于是否表示一个形成承担自身。体现本身不进入两种估值（P16b 补充）：估值只经由共同的条件关联事件；`apart` 中两者都体现、各自依存并汲取对方，仍不相关（`Mutualism.apart_embodied`）。只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。一个把汲取者与它所汲取的体现关系项的事件直接关联的估值，是新的结果。
+- **直接的关系。** 共同参与与相互作用都经由一个条件关联两个事件。各自只依存于对方的互利者，没有共同的条件，于是两种估值都不关联它们（`apart_not_connected`、`apart_not_interacting`）。承担自身时，一个形成对另一个的汲取就与那个形成的活动相互作用（`SelfBearing.interacts`），互利者直接相关，无需第三个条件（`Mutualism.connected`）。所以形成之间是否直接相关，取决于是否表示一个形成承担自身。体现本身不进入两种估值（P16b 补充）：估值只经由共同的条件关联事件；`apart` 中两者都体现、各自依存并汲取对方，仍不相关（`Mutualism.apart_embodied`）。只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。一个把汲取者与它所汲取的体现关系项的事件直接关联的估值，是新的结果（P18 补充：以之为生与世系两种候选读法，见 §25）。
 - **在一个生命终结之步汲取它（P16b 更正，原题“终结另一个生命”）。** 在一个承担自身的生命终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`ending_breaks`）；没有谁依存于它时也如此（`Predation` 中兔自身的依存）。这包括旁观的汲取者、自然的终结与生命自身的最后事件：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取，与花自己的最后一个事件，都是断裂（`Wilting`）。在 `Dependent` 与体现之下，自身依存恰在活跃时被满足（`SelfBearing.met_iff`）：它不记录活动之外的任何东西，作用是把终结读作断裂。定理不说汲取终结了生命；因果的读法需要反事实的关系（例如 §8 `Joint` 的 but-for 检验），这里没有陈述。若被汲取者不承担自身、也没有谁依存于它，这样的汲取不侵蚀任何东西。是否把在终结之步的汲取计入不 living，以及对哪些汲取者（捕食者、旁观者、生命自身），属于 Ren 对生生的读法；本节只陈述两种表示各自的后果。
 
 **作者反审。**
@@ -1536,6 +1536,63 @@ Integration: 回答开放纲领“放宽 Dependent（缓冲、储备、滞后）
 
 **边界。** 不含伦理谓词；`Carries` 与所持的条件是表示前提，物理内容是所持之物有限；结论约束从某步起不被支持的形成，不约束支持是否回来；`Carries` 之下休眠不耗用储备，休眠的时间只在另设 `Decays` 时有界；开放与汲入沿用 §23 的形式：开放可以由无关的交换满足，汲入须家族被围住；沿依存链的滞后共灭、一般的转化读法没有陈述；见证都是最小见证。本节尚未经独立审查。
 
+## 25. 世系：关系项经由所依与所给直接相关（P18）
+
+2026-10-09。按同一指示继续。§18 记下：两种估值只经由共同的条件关联事件，所以体现不进入估值；只依存于对方的蜂与花都体现、互相依存，却不相关（`Mutualism.apart_embodied`）。life-as-condition-of-life 把“直接读出体现的估值（把汲取者与它所汲取的体现关系项的事件关联）”列为下一步。另一方面，`Becoming.Metaethics` 把 `related` 读作形成的关系，明列条件、依存、世系与合作；此前没有任何读法给出世系，而世代各由前一代给予的 `Brood` 在两种估值下完全不相关。本节在一类关系项的读法中给出两种直接的关系，并陈述它们对 G0 的传递意味着什么。成果记录：[living-on-and-descent](../../../../theories/becoming/results/records/living-on-and-descent.md)。
+
+```text
+Result(s): 复用 condition-correspondence-discipline（Interacts、Bearing、interaction、Connected.transfer、relabel_*_connected）、
+           life-as-condition-of-life（一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood、Mutualism.apart）、
+           generation-is-replenishment（ComesToStand、Embodied.comesToStand、Provisioned、Sleeper）、
+           metaethical-core-characterization（Valuation、transmits、significant_iff）；新增 living-on-and-descent（L4 Becoming.Descent）
+Delta: 以之为生（LivesOn：在某步汲取一个关系项并以正需要依存于它）与世系（Descends：在某步给予一个关系项、它跨该步开始作为条件而在），
+       作为交互之外的两种 related（sustenance、descent）；以之为生不是免费的（LivesOn.active）；在 N_rel 之下沿两者的传递
+       （living_on_reaches、lived_on_reaches、descent_reaches、ancestry_reaches）；平衡且 Acting 的流中生起的体现关系项从给予它的形成而来，
+       珍视那个形成到达生起者的活的事件（Embodied.descends、arisen_reached）；世代由世系连通，G0 在那里有刻画（Brood.descended）；
+       同一对应进入以之为生（Mutualism.relabel_sustenance）；世系跟着水平走（Provisioned.descends、Sleeper.no_descent）
+Supplied premises / correspondence: 两种关系是 related 的候选读法，是否算作 N_rel 所传递的形成关系由 Ren 选择；N_rel 仍是前提；
+       一类读法的同一对应由共同的索引给出；arisen_reached 需要平衡、Acting 与体现
+Evidence: Becoming.Descent 的 25 项定理；合并检查器回执 20261009T091503.719598Z（799 项定理／1286 项声明审计，核心闭包 24 个模块，
+          包 22 个模块，公理报告全空）；外围桥接重跑 20261009T091616.753919Z
+Boundary: 不改变 living 与 C，不推出生起是好的或应当带来新的生起；世系使两个关系项的所有事件相关，不排定时间；给予的形成不必体现；
+       只对逐步读法陈述；不含伦理结论
+Integration: 回答 life-as-condition-of-life 的下一步与 §18 的 Mutualism.apart；给出 Metaethics 所列“世系”的第一种读法
+```
+
+[Becoming.Descent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean)（L4，导入 `Becoming.Correspondence` 与 `Becoming.Reserve`）：
+
+| 声明 | 内容 |
+|---|---|
+| `Web.LivesOn`、`Web.sustenance`、`interaction_sustenance` | 以之为生：一个形成在某步汲取一个关系项，并以正需要依存于它。这样的事件与该关系项的每个事件相关；与交互合起来是 `sustenance`，它扩展交互的连通 |
+| `LivesOn.active` | 以之为生不是免费的：在 `Dependent` 之下，活跃的形成只以在该步活跃的体现关系项为生 |
+| `living_on_reaches`、`lived_on_reaches` | 在 N_rel 之下，珍视一个以某关系项为生的事件，就珍视该关系项的每个活的事件；珍视该关系项的任一事件，就珍视以它为生的每个活的事件 |
+| `Flow.Descends`、`Flow.descent`、`interaction_descent` | 世系：一个关系项从一个形成而来，当后者在某步给予它、它跨该步开始作为条件而在。世系使两个关系项的每个事件相关；与交互合起来是 `descent` |
+| `descent_reaches`、`ancestry_reaches` | 在 N_rel 之下，珍视一个形成的任一事件，就珍视由它而来的关系项的每个活的事件，反之亦然 |
+| `Embodied.descends`、`arisen_reached` | 在平衡且只有活跃形成给予的流中，生起的体现关系项从在该步活跃的另一个形成而来；于是在 N_rel 之下，珍视那个形成的任一事件，就到达生起者的每个活的事件 |
+| `Brood.descended`（及 `birth_next`、`descends`、`alive_of_stands`、`self_alive`、`down`、`up`、`descent_connected`、`participates`、`not_coparticipating`、`not_interacting`） | 世代各由前一代给予：世系使它们连通，共同参与与交互都不连通它们；G0 在那里恰等于种子加 N_rel 加 N_std |
+| `Mutualism.apart_sustenance_connected`、`other_other`、`relabel_sustenance` | 只依存于对方的蜂与花由以之为生连通；把它们的条件互换，共同参与与交互的连通不变（都不连通），以之为生的连通消失 |
+| `Provisioned.descends`、`Sleeper.no_descent` | 种子从在它休眠时供给它的父代而来，此后生起时没有给予；从休眠中醒来不从任何形成而来，而生成不息 |
+
+**解读。**
+
+- **一类读法提供的关系。** 两类的表示中，形成与条件分开，所以事件只能经由一个共同的条件相关。一类读法中，一个形成所依的条件可以就是另一个关系项。以之为生与世系是这一读法才有的关系：前者是一个形成所依、所取的关系项，后者是一个关系项开始作为条件而在时所由来的给予。它们不是加在展开之外的东西，而是同一展开中已经有的汲取、依存与给予，在“哪个条件就是哪个关系项”的对应之下的读法。所以它们依赖这一对应（`relabel_sustenance`）：§22 J4 写明同一对应是表示的前提，J5 写明体现不进入两种估值；这里体现第一次进入估值，正是经由这一对应。
+- **不是免费的连通。** 交互要求依存能落空，以之为生同样要求正需要的依存：在 `Dependent` 之下，只能以在该步活跃的体现关系项为生（`LivesOn.active`）。世系要求正的给予与开始作为条件而在，空的给予不造成它。所以 §10（P9）排除的免费连通没有回来。
+- **珍视的传递。** 在 N_rel 之下，珍视狐的进食就到达兔的活；珍视兔的任一事件也到达以兔为生的狐的活的事件（`living_on_reaches`、`lived_on_reaches`）。这与 §12（P9b）的 `drawing_reaches` 同构：传递由使用承担，不由侵蚀承担。世系的传递沿着给予：生起的体现关系项总有一个给予它的活跃形成（§18 的 `arises_given`），所以珍视那个形成到达生起者的活的事件（`arisen_reached`）。
+- **世系使世代成为一个整体。** `Brood` 的每一代只依存于自身、什么也不汲取，所以在共同参与与交互下各自孤立；世系使它们连通，于是 G0 在那里的刻画适用（`Brood.descended`）。在把体现的关系项读作“生”这一属于 Ren 的读法下（§23 K6），作者把它读作原话中两个“生”之间关系的一种形式内容：生起者由给予它的展开而来，并经由世系与整体相关（AI 论证）。这不替代 Ren 的原话，也不推出生起是好的：`living` 与 C 都没有改变。
+- **世系跟着水平走。** 世系的定义用开始作为条件而在，不用生起：种子从在它休眠时供给它的父代而来（`Provisioned.descends`），从休眠中醒来不从任何形成而来（`Sleeper.no_descent`）。这与 §24 的结论一致：生成承担补充，在水平上升处。
+
+**作者反审。**
+
+*反驳 1：这只是把想要的连通写进 related。* 一个读法确实可以让任何东西连通；§10 正因此加了纪律。这里的两种关系都受同一纪律约束：以之为生要求能落空的依存，世系要求实际的给予与开始作为条件而在；`Brood` 与蜂、花的结论是在这些约束下得到的。是否采用它们，是 Ren 的对应选择；本节陈述采用之后会怎样。
+
+*反驳 2：世系使两个关系项的所有事件相关，太粗了。* 是一个选择。只把给予的那一步与生起者相关，会使父代的其他事件与后代无关（`Brood` 中第 0 代在第 5 步的事件就孤立了）。世系作为关系项之间的关系，与 Metaethics 所列的世系（descent）一致；按时间排定的版本列为下一步。
+
+*反驳 3：太阳给予种子也算世系，这不是“世系”。* 对，`Descends` 不要求给予的形成体现（§22 J7 的 `SunSeed`；§23 K6 的 `EmbodiedSun` 表明体现也不使它成为生命）。名称取 Metaethics 的用语，由 Ren 定；更窄的读法（只在给予的关系项体现时）可以由 `arises_from_embodied` 得到，没有单独陈述。
+
+*反驳 4：这让 G0 珍视带来新的生起吗？* 不。G0 珍视活的主张；这里只是说，若世系算作形成的关系，珍视给予的形成的立场就到达生起者的活的事件。带来新的生起是否使结果更好是 C 的问题，`living` 与 C 都没有改变。
+
+**边界。** 不含伦理谓词；不改变 `living` 与 C；两种关系是 `related` 的候选读法，是否采用属于 Ren；世系不排定时间，给予的形成不必体现，以之为生不问汲取的效果；依赖一类读法的同一对应；只对逐步读法陈述；见证都是最小见证。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -1690,3 +1747,14 @@ The package now has 728 theorems and 1182 declaration audits, over a core closur
 - **Author's reading.** Without support, what is held only defers the end; unceasing arising, where what arises comes to stand, needs unceasing replenishment. Whether these formations and relata are 生 is Ren's reading (§23, K6). The author reads this as one formal content of 不息 that what is held cannot carry alone (an AI argument). It does not replace Ren's words.
 
 The package now has 774 theorems and 1257 declaration audits, over a core closure of 23 modules and a package of 21, all with empty axiom reports. Section 24 has not yet been independently reviewed.
+
+**P18: living on and descent.** [Becoming.Descent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean) (L4) adds two readings of `related` that only the one-kind reading has, each added to interaction, with the living events of the stepwise reading unchanged ([living-on-and-descent](../../../../theories/becoming/results/records/living-on-and-descent.md)).
+
+- **Living on.** A formation lives on a relatum at a step when it draws on it and depends on it at a positive need there (`Web.LivesOn`). Like interaction it is not free: under `Dependent` an active formation lives only on an embodied relatum active at that step (`LivesOn.active`). It connects the bee and the flower that depend only on each other, which neither co-participation nor interaction connects (`Mutualism.apart_sustenance_connected`). Under N_rel, valuing the fox's eating reaches the hare's living, and conversely (`living_on_reaches`, `lived_on_reaches`).
+- **Descent.** A relatum descends from a formation that gives to it at a step across which it comes to stand (`Flow.Descends`), and descent relates every event of the two. An embodied relatum that arises descends from another active formation, which need not be embodied (`Embodied.descends`). So under N_rel, valuing that formation reaches the arisen relatum's living events (`arisen_reached`).
+  - Generations each given by the one before are connected by descent alone, and G0 there is exactly a seed with N_rel and N_std (`Brood.descended`).
+  - Descent follows coming to stand: a provisioned seed descends from its parent, and waking from dormancy descends from nothing (`Provisioned.descends`, `Sleeper.no_descent`).
+- **Where the identification enters.** Relabelling the conditions of the bee and the flower each onto the other keeps co-participation and interaction and removes the connection by living on (`Mutualism.relabel_sustenance`).
+- **What is not claimed.** Whether these readings count as formed relations for N_rel is Ren's choice, as is taking embodied relata as 生. Neither living nor C changes, so nothing here makes bringing about new arising better.
+
+The package now has 799 theorems and 1286 declaration audits, over a core closure of 24 modules and a package of 22, all with empty axiom reports. Section 25 has not yet been independently reviewed.
