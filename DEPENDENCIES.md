@@ -246,6 +246,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## bounded-census-keeps-pace ← ceasing-needs-arising
+
+`formal-reuse` — 复用列出（Listed）、普查定律（Listed.coming_of_ceasing、Web.arising_of_ceasing）、所立者的普查与 dawn 的普查（Dawn.census、World.census_one_way）。 / Reuses listing (Listed), the census law (Listed.coming_of_ceasing, Web.arising_of_ceasing), the census of what stands and the census of dawn (Dawn.census, World.census_one_way).
+
+**Producer output / 上游输出:** 列出时，不再成立复现需要开始成立复现；dawn 有普查，生起复现而止息不复现。 / Under a listing, ceasing to be recurring needs coming to be recurring; dawn has a census, with arising recurring and ceasing not.
+
+**Consumer input / 下游输入:** 列表有界时，逆命题也成立，两者同步；dawn 没有界。 / With the list bounded, the converse holds too and the two recur together; dawn has no bound.
+
+**Retained conditions / 保留条件:** 列表有界；可判定。 / A bounded list; decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## bounded-census-keeps-pace ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用开始成立与不再成立（ComesToBe、CeasesToBe）与有限家族定律（coming_recurs_iff、Web.unceasing_iff）作为对照。 / Reuses coming to be and ceasing to be (ComesToBe, CeasesToBe) and the law of a finite family (coming_recurs_iff, Web.unceasing_iff) for comparison.
+
+**Producer output / 上游输出:** 有限家族中开始成立复现恰当不再成立复现。 / In a finite family coming to be recurs exactly when ceasing to be does.
+
+**Consumer input / 下游输入:** 同一规律只需要每步的列表有界。 / The same law needs only a bounded list at each step.
+
+**Retained conditions / 保留条件:** 列表有界；可判定。 / A bounded list; decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## bounded-census-keeps-pace ← space-and-its-parts
+
+`formal-reuse` — 复用世界、生起复现与止息复现、有限世界、有限世界的规律（World.arising_iff_ceasing）、dawn 与静止的流（Flow.still）。 / Reuses worlds, arising and ceasing recurring, finite worlds, the law of finite worlds (World.arising_iff_ceasing), dawn and the still flow (Flow.still).
+
+**Producer output / 上游输出:** 活动可判定的有限世界中，生起复现恰当止息复现。 / In a finite world whose activity is decided, arising recurs exactly when ceasing does.
+
+**Consumer input / 下游输入:** 这一规律是有界普查定律的有限情形；procession 是无限的情形。 / The law is the finite case of the bounded census law; procession is an infinite case.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
+## bounded-census-keeps-pace ← map-of-premises
+
+`formal-reuse` — 复用世界上的普查（World.Counted）、有限世界有普查（World.Finite.counted）与超出列表的数（beyond、beyond_not_mem）。 / Reuses the census of a world (World.Counted), the census of a finite world (World.Finite.counted) and the number beyond a list (beyond, beyond_not_mem).
+
+**Producer output / 上游输出:** 普查是世界的前提；有限世界有普查。 / A census is a premise of worlds; a finite world has one.
+
+**Consumer input / 下游输入:** 有界普查是更强的前提，有限世界的每个普查都有界；procession 不是有限的。 / A bounded census is a stronger premise, and every census of a finite world is bounded; procession is not finite.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## bounded-census-keeps-pace ← more-needs-renewers
+
+`formal-reuse` — 复用普查（Web.Census）、不重复列表的长度比较（length_le_of_sub）与列表上的判定（search）。 / Reuses the census (Web.Census), the length comparison of lists without repetition (length_le_of_sub) and search over a list (search).
+
+**Producer output / 上游输出:** 普查与列表工具。 / The census and list tools.
+
+**Consumer input / 下游输入:** 列表有界时，开始成立而无先前的不再成立使列表变长，不能无限地变长。 / With a bounded list, a coming to be with no ceasing before it lengthens the list, which cannot lengthen without end.
+
+**Retained conditions / 保留条件:** 列表有界；可判定。 / A bounded list; decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
 ## ceasing-needs-arising ← coming-and-ceasing-keep-pace
 
 `formal-reuse` — 复用止息（Web.Ceases）以及 Dawn 与 Dusk 两个见证。 / Reuses ceasing (Web.Ceases) and the witnesses Dawn and Dusk.

@@ -175,8 +175,8 @@
     "en": "Contains no ethical predicate, chooses no cycle length and does not decide which reading is the reading of 生生. Slowing and Dip are minimal witnesses; the grades involve no amounts or costs."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T135303.461724Z）：Becoming.Return 29 项定理全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1029 项定理／1676 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把侵蚀改为最小形式，周期读法随之改变，见 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T135303.461724Z): all 29 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1029 theorems/1676 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a fourth independent review (BECOMING-P9B-P10-P11-REVIEW.md) changed undermining to the minimum form, which the cycle readings follow, see §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T141652.167311Z）：Becoming.Return 29 项定理全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1045 项定理／1697 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把侵蚀改为最小形式，周期读法随之改变，见 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T141652.167311Z): all 29 theorems of Becoming.Return have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1045 theorems/1697 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a fourth independent review (BECOMING-P9B-P10-P11-REVIEW.md) changed undermining to the minimum form, which the cycle readings follow, see §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -244,19 +244,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "c30a4e3bc75762e197d3921cdd95ce34d8994a3924b61b7b19e176ec6f9856c9",
+      "sha256": "9c00aa59ae90770792cc125a4dee7918f7c279e70269cc9e42a27608b424c95d",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "389534d99ba7f210872c2df78eb018e06bf488a047b972054f8d06c23d0dc9b9",
+      "sha256": "4b398ecbf44dd9779db3881e980468954f17d764b29505c0e6da81a714bbd2c5",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f30e16bfe4cb20d3089d03493695c210836d2c72eb2325626702000309fe573b",
+      "sha256": "ae83164b63948ff3c97764bcf340cca4dc8840e4b27b0706aa73e7f801f71039",
       "declarations": []
     },
     {
@@ -413,6 +413,10 @@
     {
       "zh": "2026-10-09 P26：验证范围重新指向合并检查器回执 20261009T135303.461724Z 与外围回执 20261009T135417.468399Z（Population 加入普查定律，Openness 加入静止定理）。断言不变。",
       "en": "2026-10-09 P26: validation scope re-pointed to consolidated receipt 20261009T135303.461724Z and periphery receipt 20261009T135417.468399Z (Population adds the census law, Openness the rest theorem). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P27：验证范围重新指向合并检查器回执 20261009T141652.167311Z 与外围回执 20261009T141825.143331Z（Population 推广普查定律并加入有界规律，Openness 加入其世界与水平读法）。断言不变。",
+      "en": "2026-10-09 P27: validation scope re-pointed to consolidated receipt 20261009T141652.167311Z and periphery receipt 20261009T141825.143331Z (Population generalizes the census law and adds the bounded law, Openness its readings of worlds and standing). The claim is unchanged."
     }
   ]
 }

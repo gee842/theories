@@ -4,11 +4,13 @@ import Becoming.Premises
 # Openness: continued change needs exchange beyond what stands
 
 `Becoming.Space` brings a finite, balanced, dissipative world whose arising is embodied to
-rest. This module states what does the work: not finiteness but enclosure around what
-stands, with a census of what is active. Under balance and dissipation, across a step
-whose exchange, together with whatever stands before or after it, lies within finitely
-many conditions, the total standing does not rise, and it falls whenever any condition's
-standing changes: a rise is given to, and giving needs uptake there; a fall is taken from.
+rest, and in a finite world arising recurs exactly when ceasing does. This module states
+what does the work: not finiteness but enclosure around what stands, with a census of
+what is active, and for arising and ceasing to recur together, a bound on that census.
+Under balance and dissipation, across a step whose exchange, together with whatever
+stands before or after it, lies within finitely many conditions, the total standing does
+not rise, and it falls whenever any condition's standing changes: a rise is given to, and
+giving needs uptake there; a fall is taken from.
 
 * **Total standing runs down.** Where what stands at each step is listed, each once
   (`Web.StandingCensus`), the total standing across a step enclosed around what stands
@@ -22,6 +24,16 @@ standing changes: a rise is given to, and giving needs uptake there; a fall is t
   `Web.arising_of_ceasing`). Not conversely: `dawn` has a census and arises without end
   while nothing ceases; `dusk` keeps ceasing while nothing arises, so it has no census
   (`World.census_one_way`).
+* **A bounded count keeps them together.** Where at most `B` relata are active at each
+  step (`World.CountedWithin`), arising recurs exactly when ceasing does
+  (`World.CountedWithin.arising_iff_ceasing`, from `Web.unceasing_iff_bounded`). Every
+  census of a finite world is bounded (`World.Finite.countedWithin`), so the law of
+  finite worlds is a case (`World.Finite.arising_iff_ceasing`); `procession`, with one
+  relatum active at a time among infinitely many, keeps arising and ceasing
+  (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). Read of
+  standing, the same law holds under a census of what stands: ceasing to stand recurring
+  needs coming to stand recurring, and with a bound the two recur together
+  (`Web.StandingCensus.coming_of_ceasing`, `Web.StandingCensus.coming_iff_ceasing`).
 * **The rest theorem.** A world with a census of what is active and of what stands, whose
   arising is embodied, with a balanced, dissipative flow, in which every step from some
   step on is enclosed around what stands, comes to rest: neither arising nor ceasing
@@ -66,7 +78,22 @@ theorem mem_append_right {a : α} : ∀ (l : List α) {m : List α}, a ∈ m →
 /-- What stands at each step is listed, each once: finitely many conditions stand at each
 step. -/
 def Web.StandingCensus (W : Web F C) (stand : Nat → List C) : Prop :=
-  ∀ t, Distinct (stand t) ∧ ∀ c, 0 < W.level t c ↔ c ∈ stand t
+  Listed (fun c t => 0 < W.level t c) stand
+
+/-- The census law read of standing: under a census of what stands, conditions ceasing to
+stand at arbitrarily late steps need conditions coming to stand at arbitrarily late
+steps (`Listed.coming_of_ceasing`). -/
+theorem Web.StandingCensus.coming_of_ceasing {W : Web F C} {stand : Nat → List C}
+    (census : W.StandingCensus stand) (ceasing : ∀ N, ∃ t c, N ≤ t ∧ W.CeasesToStand t c) :
+    ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
+  Listed.coming_of_ceasing census ceasing
+
+/-- With at most `B` conditions standing at each step, coming to stand recurs exactly when
+ceasing to stand does (`Listed.coming_iff_ceasing`). -/
+theorem Web.StandingCensus.coming_iff_ceasing {W : Web F C} {stand : Nat → List C}
+    (census : W.StandingCensus stand) {B : Nat} (bounded : ∀ t, (stand t).length ≤ B) :
+    (∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c) ↔ ∀ N, ∃ t c, N ≤ t ∧ W.CeasesToStand t c :=
+  Listed.coming_iff_ceasing census bounded
 
 /-- The step from `t` is enclosed around what stands across it: some family without
 repetition, closed across the step, holds whatever stands before or after it. -/
@@ -155,9 +182,13 @@ theorem stills (balances : L.Balances W) (dissipative : L.Dissipative)
 
 end Flow
 
-/-! ## Ceasing needs arising -/
+/-! ## Arising and ceasing under a census -/
 
 namespace World
+
+/-- At most `B` relata are active at each step, listed each once (`Web.Census`). -/
+def CountedWithin (w : World) (B : Nat) : Prop :=
+  ∃ alive, w.web.Census alive ∧ ∀ t, (alive t).length ≤ B
 
 variable {w : World}
 
@@ -167,6 +198,27 @@ theorem arising_of_ceasing [∀ t x, Decidable (w.web.active t x)] (counted : w.
     (ceasing : w.CeasingRecurs) : w.ArisingRecurs :=
   match counted with
   | ⟨_, census⟩ => w.web.arising_of_ceasing census ceasing
+
+/-- With at most `B` relata active at each step, arising recurs exactly when ceasing does
+(`Web.unceasing_iff_bounded`). -/
+theorem CountedWithin.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] {B : Nat}
+    (counted : w.CountedWithin B) : w.ArisingRecurs ↔ w.CeasingRecurs :=
+  match counted with
+  | ⟨_, census, bounded⟩ => w.web.unceasing_iff_bounded census bounded
+
+/-- Every census of a finite world counts within the number of its relata. -/
+theorem Finite.countedWithin [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
+    ∃ B, w.CountedWithin B :=
+  match finite, finite.counted with
+  | ⟨all, _, every⟩, ⟨alive, census⟩ =>
+    ⟨all.length, alive, census, fun t => length_le_of_sub (census t).1 fun x _ => every x⟩
+
+/-- So the law of finite worlds, `World.arising_iff_ceasing`, is a case of the bounded
+law. -/
+theorem Finite.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
+    w.ArisingRecurs ↔ w.CeasingRecurs :=
+  match finite.countedWithin with
+  | ⟨_, counted⟩ => counted.arising_iff_ceasing
 
 end World
 
@@ -210,6 +262,51 @@ theorem census_one_way :
   | ⟨⟨arising, quiet, _⟩, ⟨ceasing, still, _⟩⟩ =>
     ⟨⟨⟨Dawn.alive, Dawn.census⟩, arising, quiet⟩,
      ⟨ceasing, still, fun counted => still (arising_of_ceasing counted ceasing)⟩⟩
+
+/-- `dawn` has a census but no bound on it: arising recurs there while ceasing does not. -/
+theorem dawn_unbounded (B : Nat) : ¬ dawn.CountedWithin B :=
+  fun counted => census_one_way.1.2.2 (counted.arising_iff_ceasing.mp census_one_way.1.2.1)
+
+end World
+
+namespace Procession
+
+/-- Relatum `x` is active at step `x` alone. -/
+def web : Web Nat Nat where
+  level _ _ := 0
+  active t x := x = t
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+/-- One relatum is active at each step, listed once. -/
+theorem census : web.Census fun t => [t] :=
+  fun _ => ⟨⟨fun no => (nomatch no), trivial⟩, fun _ =>
+    ⟨fun same => match same with | rfl => .head _, fun mem => match mem with
+      | .head _ => rfl
+      | .tail _ no => (nomatch no)⟩⟩
+
+end Procession
+
+namespace World
+
+/-- Relatum `x` is active at step `x` alone: infinitely many relata, one active at a time.
+-/
+def procession : World :=
+  ⟨Nat, Flow.still, Procession.web⟩
+
+instance procession_decided : ∀ t x, Decidable (procession.web.active t x) :=
+  fun t x => Nat.decEq x t
+
+/-- The bounded law reaches beyond finite worlds: in `procession` one relatum is active at
+each step, arising and ceasing both recur, and the relata are not finitely many. -/
+theorem procession_world :
+    procession.CountedWithin 1 ∧ procession.ArisingRecurs ∧ procession.CeasingRecurs ∧
+    ¬ procession.Finite :=
+  ⟨⟨fun t => [t], Procession.census, fun _ => Nat.le_refl 1⟩,
+   fun N => ⟨N, N + 1, Nat.le_refl N, Nat.ne_of_gt (Nat.lt_succ_self N), rfl⟩,
+   fun N => ⟨N, N, Nat.le_refl N, rfl, Nat.ne_of_lt (Nat.lt_succ_self N)⟩,
+   fun ⟨all, _, every⟩ => beyond_not_mem all (every (beyond all))⟩
 
 /-! ## Worlds come to rest -/
 

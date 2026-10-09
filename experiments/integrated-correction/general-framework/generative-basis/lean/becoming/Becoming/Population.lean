@@ -11,10 +11,19 @@ many formations are active at each step, and ties the flow's count to the web's.
 * If more formations are active after a step than before, some formation active after
   the step was not active before: it arises across the step (`arises_of_more`). A
   census that grows without bound makes generation unceasing (`unceasing_of_growth`).
-* Under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late
-  steps (`arising_of_ceasing`). A ceasing not preceded by an arising leaves fewer
-  formations active than before (`arises_or_fewer`), and the count cannot fall forever.
-  Not conversely: ever new formations can arise while none ceases (`Dawn`).
+* The census law: where the members of which a determination holds are listed at each
+  step, each once (`Listed`), ceasing to be at arbitrarily late steps needs coming
+  to be at arbitrarily late steps (`Listed.coming_of_ceasing`): a ceasing not preceded
+  by a coming to be shortens the list (`Listed.comes_or_fewer`), and the list cannot
+  shorten forever. Not conversely: ever new formations can arise while none ceases
+  (`Dawn`). With at most `B` listed at each step, the converse holds too: a coming to be
+  not preceded by a ceasing lengthens the list (`Listed.ceases_or_more`), which cannot
+  pass `B` (`Listed.ceasing_of_coming`), so the two recur together
+  (`Listed.coming_iff_ceasing`). This needs only a bounded list, not the finite family of
+  `Becoming.Change` (`coming_recurs_iff`). A census is the listing of activity: under a
+  census ceasing recurring needs arising recurring (`Web.arising_of_ceasing`), and under
+  a bounded census generation is unceasing exactly when ceasing recurs
+  (`Web.unceasing_iff_bounded`). `Becoming.Openness` reads the same law of standing.
 * Under a census, with each formation taking part in the flow listed once and only
   active formations taking (`Flow.Taking`, of which only the activity half is used),
   the active formations grow without bound (`Flow.More.grows`), and more without end
@@ -172,6 +181,128 @@ theorem rises_between {q : Nat → Nat} {N : Nat} :
         (Nat.lt_of_lt_of_le higher (Nat.ge_of_not_lt flat)) with
       | ⟨t, from_, below, up⟩ => ⟨t, from_, Nat.lt_succ_of_lt below, up⟩
 
+/-! ## Listing what holds -/
+
+/-- The members of which a determination holds at each step are listed, each once:
+finitely many hold at each step, of possibly infinitely many in all. -/
+def Listed (p : α → Nat → Prop) (l : Nat → List α) : Prop :=
+  ∀ t, Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t
+
+namespace Listed
+
+variable {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l : Nat → List α}
+
+/-- Either some member comes to be from `N` on, or every member holding at a later step
+already held at `N`. -/
+theorem comes_or_held (listed : Listed p l) {N : Nat} :
+    ∀ {T}, N ≤ T → (∃ t a, N ≤ t ∧ ComesToBe (p a) t) ∨ ∀ a, p a T → p a N
+  | _, .refl => .inr fun _ holds => holds
+  | m + 1, .step within => match comes_or_held listed within with
+    | .inl found => .inl found
+    | .inr held => match search (p := fun a => p a m) (l (m + 1)) with
+      | .inl ⟨a, mem, lacks⟩ => .inl ⟨m, a, within, lacks, ((listed (m + 1)).2 a).mpr mem⟩
+      | .inr all => .inr fun a holds => held a (all a (((listed (m + 1)).2 a).mp holds))
+
+/-- A member ceasing to be from `N` on comes after a coming to be from `N` on, or leaves
+fewer listed after its step than at `N`. -/
+theorem comes_or_fewer (listed : Listed p l) {N T : Nat} (later : N ≤ T) {a : α}
+    (ceases : CeasesToBe (p a) T) :
+    (∃ t b, N ≤ t ∧ ComesToBe (p b) t) ∨ (l (T + 1)).length < (l N).length :=
+  match listed.comes_or_held later with
+  | .inl found => .inl found
+  | .inr before => match listed.comes_or_held (Nat.le_succ_of_le later) with
+    | .inl found => .inl found
+    | .inr after => .inr (length_le_of_sub (l := a :: l (T + 1))
+        ⟨fun mem => ceases.2 (((listed (T + 1)).2 a).mpr mem), (listed (T + 1)).1⟩
+        fun b mem => match mem with
+        | .head _ => ((listed N).2 _).mp (before _ ceases.1)
+        | .tail _ mem => ((listed N).2 b).mp (after b (((listed (T + 1)).2 b).mpr mem)))
+
+/-- So where ceasing to be recurs, each ceasing not preceded by a coming to be shortens
+the list, and the list cannot shorten forever. -/
+theorem comes_within (listed : Listed p l)
+    (ceasing : ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) :
+    ∀ k N, (l N).length ≤ k → ∃ t a, N ≤ t ∧ ComesToBe (p a) t
+  | 0, N, bound => match ceasing N with
+    | ⟨_, _, later, ceases⟩ => match listed.comes_or_fewer later ceases with
+      | .inl found => found
+      | .inr fewer => absurd (Nat.le_trans fewer bound) (Nat.not_succ_le_zero _)
+  | k + 1, N, bound => match ceasing N with
+    | ⟨T, _, later, ceases⟩ => match listed.comes_or_fewer later ceases with
+      | .inl found => found
+      | .inr fewer =>
+        match comes_within listed ceasing k (T + 1)
+          (Nat.le_of_succ_le_succ (Nat.le_trans fewer bound)) with
+        | ⟨t, b, after, comes⟩ => ⟨t, b, Nat.le_trans (Nat.le_succ_of_le later) after, comes⟩
+
+/-- The census law: where what holds is listed at each step, ceasing to be at arbitrarily
+late steps needs coming to be at arbitrarily late steps. -/
+theorem coming_of_ceasing (listed : Listed p l)
+    (ceasing : ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) :
+    ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t :=
+  fun N => listed.comes_within ceasing _ N (Nat.le_refl _)
+
+/-- Either some member ceases to be from `N` on, or every member holding at `N` still
+holds at a later step. -/
+theorem ceases_or_kept (listed : Listed p l) {N : Nat} :
+    ∀ {T}, N ≤ T → (∃ t a, N ≤ t ∧ CeasesToBe (p a) t) ∨ ∀ a, p a N → p a T
+  | _, .refl => .inr fun _ holds => holds
+  | m + 1, .step within => match ceases_or_kept listed within with
+    | .inl found => .inl found
+    | .inr kept => match search (p := fun a => p a (m + 1)) (l m) with
+      | .inl ⟨a, mem, lacks⟩ => .inl ⟨m, a, within, ((listed m).2 a).mpr mem, lacks⟩
+      | .inr all => .inr fun a holds => all a (((listed m).2 a).mp (kept a holds))
+
+/-- A member coming to be from `N` on comes after a ceasing to be from `N` on, or leaves
+more listed after its step than at `N`. -/
+theorem ceases_or_more (listed : Listed p l) {N T : Nat} (later : N ≤ T) {a : α}
+    (comes : ComesToBe (p a) T) :
+    (∃ t b, N ≤ t ∧ CeasesToBe (p b) t) ∨ (l N).length < (l (T + 1)).length :=
+  match listed.ceases_or_kept later with
+  | .inl found => .inl found
+  | .inr before => match listed.ceases_or_kept (Nat.le_succ_of_le later) with
+    | .inl found => .inl found
+    | .inr after => .inr (length_le_of_sub (l := a :: l N)
+        ⟨fun mem => comes.1 (before a (((listed N).2 a).mpr mem)), (listed N).1⟩
+        fun b mem => match mem with
+        | .head _ => ((listed (T + 1)).2 _).mp comes.2
+        | .tail _ mem => ((listed (T + 1)).2 b).mp (after b (((listed N).2 b).mpr mem)))
+
+/-- So where coming to be recurs and at most `B` are listed at each step, each coming to
+be not preceded by a ceasing lengthens the list, and the list cannot pass `B`. -/
+theorem ceases_within (listed : Listed p l) {B : Nat} (bounded : ∀ t, (l t).length ≤ B)
+    (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ∀ k N, B ≤ (l N).length + k → ∃ t a, N ≤ t ∧ CeasesToBe (p a) t
+  | 0, N, full => match coming N with
+    | ⟨_, _, later, comes⟩ => match listed.ceases_or_more later comes with
+      | .inl found => found
+      | .inr more => absurd (Nat.lt_of_lt_of_le more (Nat.le_trans (bounded _) full))
+          (Nat.lt_irrefl _)
+  | k + 1, N, room => match coming N with
+    | ⟨T, _, later, comes⟩ => match listed.ceases_or_more later comes with
+      | .inl found => found
+      | .inr more =>
+        match ceases_within listed bounded coming k (T + 1)
+          (Nat.le_trans room (Nat.le_trans (Nat.le_of_eq (Nat.succ_add (l N).length k).symm)
+            (Nat.add_le_add_right more k))) with
+        | ⟨t, b, after, ceases⟩ => ⟨t, b, Nat.le_trans (Nat.le_succ_of_le later) after, ceases⟩
+
+/-- The bounded law: with at most `B` listed at each step, coming to be at arbitrarily
+late steps needs ceasing to be at arbitrarily late steps. -/
+theorem ceasing_of_coming (listed : Listed p l) {B : Nat} (bounded : ∀ t, (l t).length ≤ B)
+    (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  fun N => listed.ceases_within bounded coming B N (Nat.le_add_left B _)
+
+/-- So with at most `B` listed at each step, coming to be recurs exactly when ceasing to
+be does: the law of a finite family (`coming_recurs_iff`) needs only a bounded list. -/
+theorem coming_iff_ceasing (listed : Listed p l) {B : Nat}
+    (bounded : ∀ t, (l t).length ≤ B) :
+    (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔ ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  ⟨listed.ceasing_of_coming bounded, listed.coming_of_ceasing⟩
+
+end Listed
+
 /-! ## Censuses -/
 
 variable {F C : Type}
@@ -180,7 +311,7 @@ namespace Web
 
 /-- The formations active at each step are listed, each once. -/
 def Census (W : Web F C) (alive : Nat → List F) : Prop :=
-  ∀ t, Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t
+  Listed (fun f t => W.active t f) alive
 
 variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
 
@@ -205,55 +336,27 @@ theorem unceasing_of_growth {alive : Nat → List F} (census : W.Census alive)
         (fun f mem => ((census (t + 1)).2 f).mpr mem) up with
       | ⟨f, _, arises⟩ => ⟨t, f, from_, arises⟩
 
-/-- Under a census, either some formation arises from `N` on, or every formation active
-at a later step was already active at `N`. -/
-theorem arises_or_kept {alive : Nat → List F} (census : W.Census alive) {N : Nat} :
-    ∀ {T}, N ≤ T → (∃ t f, N ≤ t ∧ W.Arises t f) ∨ ∀ f, W.active T f → W.active N f
-  | _, .refl => .inr fun _ active => active
-  | m + 1, .step within => match arises_or_kept census within with
-    | .inl found => .inl found
-    | .inr kept => match search (p := W.active m) (alive (m + 1)) with
-      | .inl ⟨f, mem, inactive⟩ => .inl ⟨m, f, within, inactive, ((census (m + 1)).2 f).mpr mem⟩
-      | .inr all => .inr fun f active => kept f (all f (((census (m + 1)).2 f).mp active))
-
-/-- Under a census, a formation ceasing from `N` on comes after an arising from `N` on, or
-leaves fewer formations active after its step than at `N`. -/
-theorem arises_or_fewer {alive : Nat → List F} (census : W.Census alive) {N T : Nat}
-    (later : N ≤ T) {f : F} (ceases : W.Ceases T f) :
-    (∃ t g, N ≤ t ∧ W.Arises t g) ∨ (alive (T + 1)).length < (alive N).length :=
-  match W.arises_or_kept census later with
-  | .inl found => .inl found
-  | .inr before => match W.arises_or_kept census (Nat.le_succ_of_le later) with
-    | .inl found => .inl found
-    | .inr after => .inr (length_le_of_sub (l := f :: alive (T + 1))
-        ⟨fun mem => ceases.2 (((census (T + 1)).2 f).mpr mem), (census (T + 1)).1⟩
-        fun g mem => match mem with
-        | .head _ => ((census N).2 _).mp (before _ ceases.1)
-        | .tail _ mem => ((census N).2 g).mp (after g (((census (T + 1)).2 g).mpr mem)))
-
-/-- So where ceasing recurs, each ceasing not preceded by an arising lowers the count, and
-the count cannot fall forever. -/
-theorem arises_within {alive : Nat → List F} (census : W.Census alive)
-    (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) :
-    ∀ k N, (alive N).length ≤ k → ∃ t f, N ≤ t ∧ W.Arises t f
-  | 0, N, bound => match ceasing N with
-    | ⟨_, _, later, ceases⟩ => match W.arises_or_fewer census later ceases with
-      | .inl found => found
-      | .inr fewer => absurd (Nat.le_trans fewer bound) (Nat.not_succ_le_zero _)
-  | k + 1, N, bound => match ceasing N with
-    | ⟨T, _, later, ceases⟩ => match W.arises_or_fewer census later ceases with
-      | .inl found => found
-      | .inr fewer =>
-        match arises_within census ceasing k (T + 1)
-          (Nat.le_of_succ_le_succ (Nat.le_trans fewer bound)) with
-        | ⟨t, g, after, arises⟩ => ⟨t, g, Nat.le_trans (Nat.le_succ_of_le later) after, arises⟩
-
 /-- Under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late
-steps: with finitely many formations active at each step, nothing keeps ceasing unless
-something keeps arising. -/
+steps (`Listed.coming_of_ceasing`): with finitely many formations active at each step,
+nothing keeps ceasing unless something keeps arising. -/
 theorem arising_of_ceasing {alive : Nat → List F} (census : W.Census alive)
     (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) : W.Unceasing :=
-  fun N => W.arises_within census ceasing _ N (Nat.le_refl _)
+  Listed.coming_of_ceasing census ceasing
+
+/-- With at most `B` formations active at each step, arising at arbitrarily late steps
+needs ceasing at arbitrarily late steps (`Listed.ceasing_of_coming`). -/
+theorem ceasing_of_arising {alive : Nat → List F} (census : W.Census alive) {B : Nat}
+    (bounded : ∀ t, (alive t).length ≤ B) (arising : W.Unceasing) :
+    ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
+  Listed.ceasing_of_coming census bounded arising
+
+/-- So with at most `B` formations active at each step, generation is unceasing exactly
+when some formation ceases at arbitrarily late steps: the law for finitely many
+formations (`unceasing_iff`) needs only a bounded count. -/
+theorem unceasing_iff_bounded {alive : Nat → List F} (census : W.Census alive) {B : Nat}
+    (bounded : ∀ t, (alive t).length ≤ B) :
+    W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
+  Listed.coming_iff_ceasing census bounded
 
 end Web
 

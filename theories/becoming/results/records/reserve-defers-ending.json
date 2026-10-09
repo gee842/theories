@@ -204,8 +204,8 @@
     "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T135303.461724Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1029 项定理／1676 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T135417.468399Z）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T135303.461724Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1029 theorems/1676 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T135417.468399Z)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T141652.167311Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1045 项定理／1697 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T141825.143331Z）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T141652.167311Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1045 theorems/1697 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T141825.143331Z)."
   },
   "references": [
     {
@@ -333,17 +333,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "c30a4e3bc75762e197d3921cdd95ce34d8994a3924b61b7b19e176ec6f9856c9"
+      "sha256": "9c00aa59ae90770792cc125a4dee7918f7c279e70269cc9e42a27608b424c95d"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "389534d99ba7f210872c2df78eb018e06bf488a047b972054f8d06c23d0dc9b9"
+      "sha256": "4b398ecbf44dd9779db3881e980468954f17d764b29505c0e6da81a714bbd2c5"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f30e16bfe4cb20d3089d03493695c210836d2c72eb2325626702000309fe573b"
+      "sha256": "ae83164b63948ff3c97764bcf340cca4dc8840e4b27b0706aa73e7f801f71039"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
@@ -422,6 +422,10 @@
     {
       "zh": "2026-10-09 P26：验证范围重新指向合并检查器回执 20261009T135303.461724Z 与外围回执 20261009T135417.468399Z（Population 加入普查定律，Openness 加入静止定理）。断言不变。",
       "en": "2026-10-09 P26: validation scope re-pointed to consolidated receipt 20261009T135303.461724Z and periphery receipt 20261009T135417.468399Z (Population adds the census law, Openness the rest theorem). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P27：验证范围重新指向合并检查器回执 20261009T141652.167311Z 与外围回执 20261009T141825.143331Z（Population 推广普查定律并加入有界规律，Openness 加入其世界与水平读法）。断言不变。",
+      "en": "2026-10-09 P27: validation scope re-pointed to consolidated receipt 20261009T141652.167311Z and periphery receipt 20261009T141825.143331Z (Population generalizes the census law and adds the bounded law, Openness its readings of worlds and standing). The claim is unchanged."
     }
   ]
 }
