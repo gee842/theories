@@ -48,34 +48,38 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   of conditions, unceasing generation needs their renewal to recur; renewal does not
   imply generation; substitution among unrenewed conditions defers the end; and
   dissipation ends generation, while a closed cycle need not.
-* `Becoming.Flow` (L3): conditions as amounts that formations take and give. Unceasing
-  generation of formations that take needs replenishment at arbitrarily late steps;
+* `Becoming.Flow` (L3): conditions as amounts that formations take and give. Uptake at
+  arbitrarily late steps, as of formations that take arising without end, needs
+  replenishment at arbitrarily late steps;
   more generation without end needs replenishment without bound and, with bounded
   capacity, renewers without bound; unceasing generation is not yet more.
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
-  active formations, with only active formations taking, more generation without end
-  makes generation unceasing.
+  active formations, with each formation taking part listed once and only active
+  formations taking, more generation without end makes generation unceasing.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
   depend on it, while a formation's class, the tenure of a dependence, undermining and
   arising do. Continuity read one way leaves succession open, read both ways it still
-  leaves succession across dormancy. Under a census, more without end makes generation
-  unceasing under every one-to-one re-identification and every continuation without
-  splits.
+  leaves succession across dormancy. Under the premises of `Becoming.Population`, more
+  without end makes generation unceasing under every one-to-one re-identification and
+  makes formations arise under every continuation without splits.
 * `Becoming.Wholes` (L3): a whole is active exactly while some part is. A whole that
   persists through parts that do not last persists only through their generation: parts
   never active at two steps `d` apart arise within every `d` steps, and parts whose
   activity ends arise at arbitrarily late steps when the active ones are listed.
-* `Becoming.Dissipation` (L3): when giving always costs the conditions the renewer takes
-  from more than it gives, a family closed from some step runs down and taking from it
-  stops. Taking that recurs, and so more without end, needs exchange beyond every finite
+* `Becoming.Dissipation` (L3): when every formation gives a closed family less than it
+  takes from it, the family runs down and taking from it stops. Taking that recurs,
+  whether of more, of generation or of maintenance, needs exchange beyond every finite
   family of conditions; with finitely many conditions in all, taking does not recur.
+  Where the exchange of a step lies within finitely many conditions, giving needs
+  uptake.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
-  two-kind reading is the one in which no formation is a condition. Where a relatum
-  stands as a condition exactly while it is active, a formation depending on it lives
-  only while it does, its ending ends every formation whose chain of dependence reaches
-  it, and it arises only as another active formation gives to it. Its arising is
+  two-kind reading embeds as the one in which no formation is a condition, and which
+  condition is which formation is supplied by the shared index. Where a relatum stands
+  as a condition exactly while it is active, a formation depending on it lives only
+  while it does, its ending ends every formation whose chain of dependence reaches it,
+  and it arises only as another active formation gives to it. Its arising is
   replenishment, so under dissipation generation that recurs in a finite family needs
   exchange beyond it, and in a finite world it ceases.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,

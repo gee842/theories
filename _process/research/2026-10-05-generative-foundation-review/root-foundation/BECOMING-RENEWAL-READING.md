@@ -981,23 +981,23 @@ Integration: 陈述第四次审查 H6、H12 所要求的前提；§13 的 dissip
 - **定量的界。** 被耗散的家族上，此后全部的取用事件不超过当时的存量（`takers_within`）：存量是取用能持续多久的上界。
 - **物质可以循环，驱动循环的不能（AI 论证）。** 用自由能读耗散：物质在一个有限家族中可以封闭地循环（`Cycle`），驱动循环的自由能若被耗散，就需要越出每个有限家族的来源。`Frontier` 中太阳每步烧一份新燃料，表示一个没有尽头的来源；实际的来源是否如此，是经验问题。若有限个条件就是全部，取用终将停止（`finite_ceases`）。
 - **与 §13 的关系。** `dissipation_ceases` 陈述在依存网上：一个量从不上升而每次生起都使它下降，生成就不是不息的。本节陈述在流上：耗散在每个封闭家族上成立，于是取用不再复现，除非与家族之外交换。两者都需要耗散前提；没有它，封闭循环可以不息并且更多。
-- **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在耗散之下，不断的更多不能由任何有限的部分承担，只能由越出每个有限部分的展开承担。作者把这读作原话中“整体”的一种形式内容。这是作者的诠释，不替代 Ren 的原话，也不推出它是好的。
+- **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在耗散之下，复现的取用，无论来自不止的更多、生成还是维持，都不能由任何有限的条件家族独自承担，只能由越出每个有限部分的展开承担：维持一个恒定的取用者已经如此（`Lone`）。作者把这读作原话中“整体”的一种形式内容；不断的更多是其中的一种情形，不是它的全部内容（P16b 更正，原文只说不断的更多）。这是作者的诠释，不替代 Ren 的原话，也不推出它是好的。
 
 **作者反审。**
 
-*反驳 1：`Dissipative` 太强，排除了任何“免费”的补充者。* 对，这正是前提的内容：补充者的代价须表示为它所取的条件。太阳的燃料、植物所取的光都要作为条件出现。§14 的 `Garden` 与 `Bloom` 省略了来源，不满足 `Dissipative`；那是表示所省略的关系，不是没有关系。
+*反驳 1：`Dissipative` 太强，排除了任何“免费”的补充者。* 只在有封闭的有限家族的步上如此（P16b 更正；原文“对，这正是前提的内容：补充者的代价须表示为它所取的条件”）。`Dissipative` 只约束在某步封闭的不重复家族；某个形成在一步中与无穷多个条件交换时，没有家族封闭，耗散对那一步什么也不说，补充者可以什么都不取而给予（`Spray`）。在有封闭的有限家族的步上（`Enclosed`；条件总共有限时每步都是），给予的形成在封闭家族上取得多于所给（`gives_less`），给予须以取用为条件（`giving_needs_uptake`）：太阳的燃料、植物所取的光都要作为条件出现。§14 的 `Garden` 与 `Bloom` 省略了来源，不满足 `Dissipative`（`witnesses_not_dissipative`，连同 `Cycle`、`Pulse`、`Steady` 与 `Repeated`）；那是表示所省略的关系，不是没有关系。另一方面，结论“在任意晚的步不封闭”可以由与家族无关的交换满足（`Spray` 的汇）。
 
 *反驳 2：耗散只对某些量成立，例如自由能，对信息或组织不一定成立。* 对。本节只说：对满足耗散的量，持续的取用需要越出每个有限家族。信息的复制、组织的维持是否耗散，是对应问题；`Cycle` 表明不耗散的量可以封闭地循环。
 
-*反驳 3：结论只约束取用，不约束生起。* 对。不取用的生起（`Tide` 的闪现者）不受约束；`opens_of_arising` 只说在第一个活跃步取用的形成的不息生起。（P15 补充：生起的关系项体现时，它的生起本身就是补充，在耗散之下同样须与有限家族之外交换，见 §20。）
+*反驳 3：结论只约束取用，不约束生起。* 对。不取用的生起（`Tide` 的闪现者）不受约束；`opens_of_arising` 只说在第一个活跃步取用的形成的不息生起。（P15 补充：生起的关系项体现时，它的生起本身就是补充，在耗散之下同样须与有限家族之外交换，见 §20。）（P16b 补充：`Frontier` 的生长者不依存于任何东西；`Rooted` 让它们以需要一依存于池，普查、`Dependent` 与不息同时成立，是 `opens_of_arising` 的见证。）
 
 *反驳 4：“没有有限部分”是否等于需要无穷多条件？* 在形式上是：`Frontier` 用无穷多燃料，`finite_ceases` 说条件总共有限时取用不再复现。若实际的展开在这一意义上是有限的，定理说取用终将停止。把它与物理的热寂相比，是作者的类比，不是物理定律的证明。
 
 *反驳 5：为什么要求家族不重复？* 列表重复同一条件时，量被重复计数，耗散可以被虚假地违反；`Dissipative` 只对不重复的家族陈述，`Frontier` 对每个这样的家族都证明了它。
 
-**边界。** 不含伦理谓词；耗散是物理前提，单位可公度；结论只约束流中的取用；“有限部分”指有限条件家族；表示中形成与条件仍是两类（§15，H14；一类关系项的读法见 §18，耗散之下见 §20）；`Frontier` 是最小见证。本节尚未经独立审查。
+**边界。** 不含伦理谓词；耗散是物理前提，单位可公度，只约束有封闭的有限家族的步（`Enclosed`，P16b 补充）；结论只约束流中的取用；“有限部分”指有限条件家族；表示中形成与条件仍是两类（§15，H14；一类关系项的读法见 §18，耗散之下见 §20）；`Frontier` 是最小见证。本节经第六次独立审查，更正见 §22。
 
-## 18. 角色：生作为生的条件与生由生给予（P14）
+## 18. 角色：生作为生的条件与经由给予的生起（P14）
 
 2026-10-09。按同一指示继续。§1 写明“形成”和“条件”是同一展开中的分析角色，不是彼此独立的实体，但 `Web` 与 `Flow` 把它们表示为两个类型。第四次独立审查（H14）指出，这省略了“生作为生的条件”：父母之于后代、森林之于林下、群落之于学习者，只能经由代理条件表示；§15 把它写为表示所省略的关系。按非二元方法（先说明同一展开中的关系怎样形成、持续和改变，再说明行动者与承受者怎样在其中分化），本节把形成与条件读作一个关系项的两种角色，并证明这一读法承担什么。成果记录：[life-as-condition-of-life](../../../../theories/becoming/results/records/life-as-condition-of-life.md)。
 
@@ -1016,7 +1016,8 @@ Delta: 一类关系项的读法（Web.roles、Flow.roles）保持列出的全部
 Supplied premises / correspondence: Embodied、SelfBearing 与 Dependent 是对具体关系项的表示前提；arises_given 需要平衡与 Acting；
        估值的结果用逐步读法的 living 与公开的相互作用纪律
 Evidence: Becoming.Roles 的 54 项定理与 Becoming.Correspondence 新增的 9 项定理；合并检查器回执（见记录）
-Boundary: 遗骸与不活跃的条件不体现；一类读法不保持 Acting、Taking 与 Dissipative 的陈述；给予在此不付出代价；不含伦理谓词
+Boundary: 遗骸与不活跃的条件不体现；一类读法不保持 Acting、Taking 与 Dissipative 的陈述（P16b 更正：不成立，它们也保持，见 §22）；
+          Brood 只给予不取用；不含伦理谓词
 Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条件是两类”的边界改为指向本节
 ```
 
@@ -1030,36 +1031,36 @@ Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条
 | `roles_event_injective`、`roles_event_onto`、`Valuation.connected_iff_of_map`、`roles_valuation_connected`、`roles_interaction_connected` | 形成的事件与一类读法中活的事件一一对应；共同参与与相互作用两种估值的连通都不变（后三项在 L4） |
 | `Embodied`、`SelfBearing`、`SelfBearing.stands`、`roles_not_embodied`、`roles_not_selfBearing` | 体现：恰在活跃时以正的水平作为条件而在。承担自身：活跃时以正的需要依存于自身的水平；在 `Dependent` 之下，于是活跃时作为条件而在。两类读法中，曾活跃的形成既不体现也不承担自身 |
 | `Embodied.active_of_bearing`、`bearing`、`active_along`、`coextinct` | 生作为生的条件：在 `Dependent` 之下，以正需要依存于体现关系项的形成只在它活跃时活跃；活动沿这样的依存链传递；一个在某步不活跃的关系项在该步终结每个依存链到达它的形成 |
-| `Embodied.ends_when_consumed`、`Embodied.ending_breaks` | 在需要为一时消耗体现的关系项即终结它；在承担自身的体现关系项终结之步汲取它，断裂它自身的依存，不论是否另有形成依存于它 |
-| `Embodied.arises_given` | 生由生给予：在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起 |
+| `Embodied.ends_when_consumed`、`Embodied.ending_breaks` | 在需要为一时消耗体现的关系项即终结它；在承担自身的体现关系项终结之步汲取它，断裂它自身的依存，不论是否另有形成依存于它，也不论是什么终结了它（P16b 补充，`Wilting`） |
+| `Embodied.arises_given` | 经由另一个活跃者的给予而生起：在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起；给予者不必体现（P16b 更正，原文“生由生给予”；`SunSeed`） |
 | `SelfBearing.interacts` | 汲取承担自身的关系项，与它的每个活跃事件相互作用（L4） |
 | `Mutualism.web`、`dependent`、`embodied`、`selfBearing`、`renewing`、`alive`、`connected`、`significant_iff` | 蜜蜂与花各自依存于自身与对方，并汲取对方：彼此更新，每个事件都是 living；没有第三个条件，相互作用读法连通，G0 在那里恰为种子加两项中立 |
 | `Mutualism.apart`、`apart_renewing`、`apart_alive`、`apart_not_selfBearing`、`apart_participates`、`apart_not_connected`、`apart_not_interacting` | 各自只依存于对方时，都不承担自身；共同参与与相互作用都不把蜜蜂与花关联起来 |
-| `Predation.web`、`breaking`、`hare_ends`、`fox_ends` | 狐依存于自身与兔并汲取兔，兔与自身相依；兔跨第二步被吃：狐的汲取断裂兔自身的依存，所以不是 living；狐随兔一同终结（共灭） |
+| `Predation.web`、`breaking`、`hare_ends`、`fox_ends` | 狐依存于自身与兔并汲取兔，兔与自身相依；兔跨第二步终结：狐在兔终结之步的汲取断裂兔自身的依存，所以不是 living（P16b 更正，原文“兔跨第二步被吃”；兔的终结是给定的时程，见证中没有流）；狐随兔一同终结（共灭） |
 | `Brood.flow`、`Brood.web`、`Brood.arises`、`Brood.brood` | 一代代形成不止地生起，每一代由前一代给予：流平衡，只有活跃的世代给予，每代体现并承担自身，`Dependent`，生成不息 |
 | `total_map`、`total_congr`、`Mutualism.other_cancel`、`Mutualism.other_ne`、`Predation.uneaten_late`、`Brood.grows`、`Brood.standing_self`、`Brood.standing_before` | 有限和与见证的辅助引理 |
 
 **解读。**
 
-- **两类是一类的特例。** 以两类陈述的每个读法，以一类关系项读时都不变，两种估值的连通也不变（`roles_*`）。所以两类的表示没有引入独立的本体：它是一类读法的一个特例，其中没有形成作为条件。它省略的正是体现：两类读法中曾活跃的形成既不体现也不承担自身（`roles_not_embodied`、`roles_not_selfBearing`）。
+- **两类嵌入一类（P16b 更正）。** 以两类陈述的列出的读法，以一类关系项读时都不变，两种估值的连通也不变（`roles_*`）；`Acting`、`Taking`、普查、present 不重复与耗散也不变（`roles_acting`、`roles_taking`、`roles_census`、`roles_distinct`、`roles_dissipative`）。两类读法中曾活跃的形成既不体现也不承担自身（`roles_not_embodied`、`roles_not_selfBearing`）。一类读法另需一个对应：哪个条件就是哪个形成。它由共同的索引给出，是表示的前提，两类读法检查不到它：把条件一侧到上地重新标号，`Dependent`、侵蚀、living 与两种估值的连通都不变，而体现与承担自身改变（`relabel_dependent`、`relabel_undermining`、`relabel_alive`、`relabel_valuation_connected`、`relabel_interaction_connected`、`Mutualism.apart_relabelled`、`Wilting.relabelled_not_embodied`）。体现与承担自身是在这一对应下的读法；两类的表示省略的是形成与条件的同一对应。原文写“所以两类的表示没有引入独立的本体”“它省略的正是体现”，把所给的对应当作了结果，与 §19 的 I7 是同一模式。
 - **生作为生的条件。** 在活动需要支持（`Dependent`）之下，依存于体现关系项的形成只在它活跃时活跃，活动沿依存链传递，一个关系项的终结终结每个依存链到达它的形成（`coextinct`）。在生态中，这是专食者与宿主、寄生者与寄主的共灭；种子库、储备与休眠被 `Dependent` 排除，在它们之下共灭不必成立。
-- **生由生给予（作者的读法）。** 在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`arises_given`）：一个生命的生起由另一个生命的活动给出。作者把它读作 Ren 原话“不断创造更多生”中两个“生”之间关系的一种形式内容（AI 论证），不替代原话，也不推出它是好的。`Brood` 表明前提与不息相容：一代代形成生起，每一代由前一代给予。
-- **直接的关系。** 共同参与与相互作用都经由一个条件关联两个事件。各自只依存于对方的互利者，没有共同的条件，于是两种估值都不关联它们（`apart_not_connected`、`apart_not_interacting`）。承担自身时，一个形成对另一个的汲取就与那个形成的活动相互作用（`SelfBearing.interacts`），互利者直接相关，无需第三个条件（`Mutualism.connected`）。所以形成之间是否直接相关，取决于是否表示一个形成承担自身。
-- **终结另一个生命。** 在一个承担自身的生命终结之步汲取它，是断裂，所以不是 living（`ending_breaks`）；没有谁依存于被吃者时也如此（`Predation` 中兔自身的依存）。若被吃者不承担自身、也没有谁依存于它，这样的汲取不侵蚀任何东西。是否把终结一个生命计入不 living，属于 Ren 对生生的读法；本节只陈述两种表示各自的后果。
+- **经由另一个活跃者的给予而生起（P16b 更正，原题“生由生给予”）。** 在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`arises_given`）。定理不要求给予者体现、承担自身或依存于任何东西：一个不体现、不依存的太阳可以是种子唯一的给予者（`SunSeed`）。所以它说的是一个生命的生起由另一个活跃者的给予给出，不是由另一个生命给出。在只有体现的关系项给予这一表示前提下，给予者也体现，并在给予时作为条件而在（`arises_from_embodied`）；这是对应，不是定理从平衡推出的。作者曾把“生由生给予”读作 Ren 原话“不断创造更多生”中两个“生”之间关系的一种形式内容（AI 论证）；这一读法需要上述前提，不替代原话，也不推出它是好的。`Brood` 表明前提与不息相容：一代代形成生起，每一代由前一代给予。
+- **直接的关系。** 共同参与与相互作用都经由一个条件关联两个事件。各自只依存于对方的互利者，没有共同的条件，于是两种估值都不关联它们（`apart_not_connected`、`apart_not_interacting`）。承担自身时，一个形成对另一个的汲取就与那个形成的活动相互作用（`SelfBearing.interacts`），互利者直接相关，无需第三个条件（`Mutualism.connected`）。所以形成之间是否直接相关，取决于是否表示一个形成承担自身。体现本身不进入两种估值（P16b 补充）：估值只经由共同的条件关联事件；`apart` 中两者都体现、各自依存并汲取对方，仍不相关（`Mutualism.apart_embodied`）。只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。一个把汲取者与它所汲取的体现关系项的事件直接关联的估值，是新的结果。
+- **在一个生命终结之步汲取它（P16b 更正，原题“终结另一个生命”）。** 在一个承担自身的生命终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`ending_breaks`）；没有谁依存于它时也如此（`Predation` 中兔自身的依存）。这包括旁观的汲取者、自然的终结与生命自身的最后事件：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取，与花自己的最后一个事件，都是断裂（`Wilting`）。在 `Dependent` 与体现之下，自身依存恰在活跃时被满足（`SelfBearing.met_iff`）：它不记录活动之外的任何东西，作用是把终结读作断裂。定理不说汲取终结了生命；因果的读法需要反事实的关系（例如 §8 `Joint` 的 but-for 检验），这里没有陈述。若被汲取者不承担自身、也没有谁依存于它，这样的汲取不侵蚀任何东西。是否把在终结之步的汲取计入不 living，以及对哪些汲取者（捕食者、旁观者、生命自身），属于 Ren 对生生的读法；本节只陈述两种表示各自的后果。
 
 **作者反审。**
 
 *反驳 1：`Embodied` 太强：遗骸、种子库与休眠的形成在活动之外仍作为条件。* 对。`Embodied` 是对具体关系项的前提，不是对所有关系项；遗骸可以表示为另一个关系项，它与原形成的关系是跨步同一的问题（§16）。
 
-*反驳 2：`SelfBearing` 是否把想要的结论编进表示？* 它只说一个形成活跃时依存于自身的水平；与 `Dependent` 一起，这就是 `Embodied` 的一半（`SelfBearing.stands`）。它使终结一个生命的汲取成为断裂，这是读法的后果，不是伦理前提；`Mutualism.apart` 与 `Predation` 并列陈述有与没有它的后果，是否采用属于 Ren。
+*反驳 2：`SelfBearing` 是否把想要的结论编进表示？* 它只说一个形成活跃时依存于自身的水平；与 `Dependent` 一起，这就是 `Embodied` 的一半（`SelfBearing.stands`）。它使在一个生命终结之步的汲取成为断裂（P16b 补充：不论是什么终结了它），这是读法的后果，不是伦理前提；`Mutualism.apart` 与 `Predation` 并列陈述有与没有它的后果，是否采用属于 Ren。
 
-*反驳 3：一类读法的嵌入是平凡的。* 嵌入本身是定义；它的内容是两类读法的每个结果在一类读法中成立，而两类读法恰是没有体现的一类读法。实质的新结果是 `coextinct`、`ending_breaks`、`arises_given` 与 `Mutualism` 的对照。
+*反驳 3：一类读法的嵌入是平凡的。* 嵌入本身是定义；它的内容是两类读法的每个列出的结果在一类读法中成立。一类读法另加的是形成与条件的同一对应，它由共同的索引给出，两类读法检查不到它（`relabel`），不是嵌入推出的（P16b 更正；原文“而两类读法恰是没有体现的一类读法”）。实质的新结果是 `coextinct`、`ending_breaks`、`arises_given` 与 `Mutualism` 的对照。
 
 *反驳 4：`arises_given` 依赖平衡与 `Acting`。* 对。流不平衡（表示省略了输入）或不活跃者也给予时，结论不成立；省略的来源是表示所省略的关系，不是没有关系。
 
-*反驳 5：`Brood` 的给予不付出代价。* 对。耗散之下（§17）给予须付出所取的条件；耗散之下的一类读法未陈述。（P15 补充：§20 陈述它，`Brood` 不耗散，`Kindling` 是耗散的对应。）
+*反驳 5：`Brood` 只给予不取用。* 对。耗散之下（§17），在有封闭的有限家族的步上，给予须以取用为条件（P16b 用语与范围更正；原文“`Brood` 的给予不付出代价”“给予须付出所取的条件”）；耗散之下的一类读法未陈述。（P15 补充：§20 陈述它，`Brood` 不耗散，`Kindling` 是耗散的对应。）
 
-**边界。** 不含伦理谓词；`Embodied`、`SelfBearing` 与 `Dependent` 是表示前提；遗骸与不活跃的条件不体现；一类读法不保持 `Acting`、`Taking` 与 `Dissipative` 的陈述；给予在此不付出代价；见证都是最小见证。本节尚未经独立审查。
+**边界。** 不含伦理谓词；`Embodied`、`SelfBearing` 与 `Dependent` 是表示前提，哪个条件就是哪个形成由共同的索引给出，也是表示前提（P16b 补充）；遗骸与不活跃的条件不体现；体现不进入两种估值；`arises_given` 的给予者不必体现；见证都是最小见证。原文“一类读法不保持 `Acting`、`Taking` 与 `Dissipative` 的陈述”不成立，已删去（P16b，J8）。本节经第六次独立审查，更正见 §22。
 
 ## 19. 第五次独立审查与更正（P12b）
 
@@ -1097,7 +1098,7 @@ Integration: I1–I12 全部处理；审查列出的会改变判断的结果中�
 | I6 | 双向保持连续，跨过休眠之步接起来仍改变形成的类（`Dormancy`） | `Dormancy` 移入 `Identity`，成为定理（`keeps_both`、`classes`）。接续改述为：把终结的形成与在该步或其后开始的形成接起来，中间可以有不活跃、不依存的步。加一句：连续不约束形成在整段上的类 |
 | I7 | “名字不承载任何东西”与“跨步的同一由命名规定”字面矛盾；改名不变检查不到方法所防的偷渡 | 改为“标签不承载任何东西：改名保持由关系定义的读法（检查了五种）”。加一句：名字跨步的模式承载同一，这是表示给出的对应前提，`Turnover` 表明它是实质的；方法要求在这里的检查是这一披露，不是改名不变。记录标题随之改写 |
 | I8 | 单由命名造成的生起可以满足 `Unceasing.regeneration_recurs` 的全部前提（`TideFlip`） | `TideFlip` 移入 `Identity`，成为定理。§16“对 P10 的影响”的第二个理由改为：`Depletes` 不系于生起的形成，不筛掉命名的产物；定理不受影响，是因为结论只关乎条件；它的前提 `Unceasing` 依赖同一，要把它读作关于生成的定理，需要命名保持持续的活动（`arises_of_keepsActive`）。记录中依赖的说明限于 `Turnover`，`TideFlip` 列为反例 |
-| I9 | “在每种同一的读法下”不成立；分裂不改变形成的数目 | 两处都做。其一，改为“在每种一对一的同一读法下”，并把分裂与合并改述为：一个形成延续为几个或几个延续为一个，改变的是延续关系，不是任何一步形成的数目。其二，以延续关系表示它们（`Web.Continues`）：`ArisesFrom` 是延续关系之下的生起，`arisesFrom_self` 表明以自身为延续时它就是 `Arises`。`Flow.More.unceasingFrom` 成为定理：在每种没有形成延续为两个的延续关系之下（`NoSplit`，允许合并），普查之下不止地更多使形成在任意晚的步生起；证明经由关系形式的鸽巢原理 `length_le_of_matched`。`continuation_reidentify`：每个改认都是这样的延续，其下的生起恰是新名字下的生起。`Budding.growth_without_arising`：把新形成读作从形成 0 萌出，第一步之后没有任何生起，而这一延续有分裂。所以分裂恰是界限 |
+| I9 | “在每种同一的读法下”不成立；分裂不改变形成的数目 | 两处都做。其一，改为“在每种一对一的同一读法下”，并把分裂与合并改述为：一个形成延续为几个或几个延续为一个，改变的是延续关系，不是任何一步形成的数目。其二，以延续关系表示它们（`Web.Continues`）：`ArisesFrom` 是延续关系之下的生起，`arisesFrom_self` 表明以自身为延续时它就是 `Arises`。`Flow.More.unceasingFrom` 成为定理：在每种没有形成延续为两个的延续关系之下（`NoSplit`，允许合并），普查之下不止地更多使形成在任意晚的步生起；证明经由关系形式的鸽巢原理 `length_le_of_matched`。`continuation_reidentify`：每个改认都是这样的延续，其下的生起恰是新名字下的生起。`Budding.growth_without_arising`：把新形成读作从形成 0 萌出，第一步之后没有任何生起，而这一延续有分裂。所以没有分裂是充分条件；萌出表明有的分裂使结论失效，一次分裂不必（P16b 更正，原文“所以分裂恰是界限”；`Fork.split_unceasing`） |
 | I10 | 谱系的 AI 论证把单层表示的省略呈现为二选一；“落在维持与更新上”没有见证 | `Layered.both` 成为定理：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；依存网没有部分与整体的关系。AI 论证改为：谱系与成员是同一展开的两个层次，作为整体的谱系持续正由成员不息地生起而成；单一命名层次只能表示其一，部分与整体的关系是这一表示所省略的关系。“落在维持与更新上”删去。写明只读作谱系的持续与 Ren 原话中“不断创造”之间的张力 |
 | I11 | `Succession` 的继承者从不活跃 | `Succession` 改用活跃的继承者：继承者在第二步活跃并以一单位被满足，自第三步起需要两单位；活动需要支持。分开命名时第一步之后的汲取都不侵蚀；继承者接续长者时自第三步起每一步都侵蚀。结论不变，见证更强 |
 | I12 | 依赖同一的读法没有在其记录中注明 | unceasing-generation-needs-renewal、becoming-stepwise-reading、becoming-renewal-reading 与 more-needs-renewers 的界限各加一句，指向 identity-across-steps |
@@ -1135,7 +1136,7 @@ Integration: I1–I12 全部处理；审查列出的会改变判断的结果中�
 3. 双向的连续：四个双向定理移入 `Identity`，单向读法写明为一种选择。完成（I5）。
 4. 休眠：`Dormancy` 作为见证，接续放宽到跨过不活跃之步，并写明连续不约束形成的类。完成（I6）。跨过休眠也成立的连续读法（例如不活跃时持续的依存），开放。
 5. 标签与同一：按 I7 改写。完成。
-6. 分裂：一对一的限定与对分裂的更正描述，完成；在每种没有形成延续为两个的延续关系之下（允许合并），不止地更多迫使生起的定理，以及 `Budding` 表明分裂使它失效，完成（I9）。限定由精确的界限代替。
+6. 分裂：一对一的限定与对分裂的更正描述，完成；在每种没有形成延续为两个的延续关系之下（允许合并），不止地更多迫使生起的定理，以及 `Budding` 表明分裂使它失效，完成（I9）。限定由一个充分条件代替：没有分裂是充分的，不是必要的（P16b 更正，原文“限定由精确的界限代替”；`Fork`）。延续关系上的充要条件，开放。
 7. 谱系：改为同一展开的两个层次，部分与整体的关系被省略；“落在维持与更新上”删去。完成（I10）。形成之间带部分与整体关系的表示，开放。
 8. 见证与记录：`Succession` 的活跃继承者（I11）、界限句（I12）与 I4 的残余，完成。
 9. 接续的读法、“生生不息”读到谱系、成员或两者的层次、任期能否经由接续延续：属于 Ren。本节没有替 Ren 作任何一个选择。
@@ -1144,19 +1145,19 @@ Integration: I1–I12 全部处理；审查列出的会改变判断的结果中�
 
 *反驳 1：双向的连续是更自然的读法，单向读法只是为接续留出空间。* 两种都是读法。单向读法以一个命名为参照，问另一个命名是否与它相容；双向读法要求两个命名对谁延续谁一致。双向时，同一步的接续被排除，但跨过休眠的接续仍在（`Dormancy`），所以双向读法也不消除对接续的选择。
 
-*反驳 2：`More.unceasingFrom` 只是把鸽巢原理搬到关系上。* 对，这是它的内容。新的是界限的精确：没有分裂时（允许合并），更多迫使生起；有分裂时不然（`Budding`）。“更多迫使生起”不依赖一一对应的命名，只依赖没有形成延续为两个。
+*反驳 2：`More.unceasingFrom` 只是把鸽巢原理搬到关系上。* 对，这是它的内容。新的是一个充分条件：在普查、present 不重复与 Taking 之下，没有分裂时（允许合并，`Merge`），更多迫使生起；萌出时不然（`Budding`），一次分裂则不必使它失效（`Fork`）。“更多迫使生起”不依赖一一对应的命名。（P16b 更正；原文“新的是界限的精确……有分裂时不然”“只依赖没有形成延续为两个”。）
 
-*反驳 3：可判定性的假设太强。* 它是定理的假设，不是公理。在普查之下，若延续关系本身可判定，“是否延续某个活跃形成”就可判定，因为只需在有限表中检查。没有任何可判定性时，构造性地只能得到“不是从某步起再没有生起”。
+*反驳 3：可判定性的假设太强。* 它是定理的假设，不是公理。在普查之下，若延续关系本身可判定，“是否延续某个活跃形成”就可判定，因为只需在有限表中检查。没有任何可判定性时，构造性地只能得到“不是从某步起再没有生起”。（P16b 补充：`Web.Census.decideContinues` 把这一点写为定义，`Merge` 用它。）
 
 *反驳 4：`Steady` 削弱了 P10 的流的形式。* 它澄清了内容：补充复现的需要来自复现的取用，无论取用来自生成还是维持。生成与维持之分在严格性上（`Tide.renewal_without_arising`、`Bloom.not_more`）。这与“不断创造更多生”并不冲突：更多的取用需要没有最终界的补充（§14）。
 
 *反驳 5：`Layered` 回避了谱系的读法。* 它表明二选一出自表示：一个命名层次只能表示谱系或成员。把部分与整体的关系纳入表示（例如形成之间的构成关系），是开放的结果；在此之前，把“生生不息”读到哪个层次属于 Ren。（P16 补充：§21 把部分与整体的关系纳入表示；读到哪个层次仍属于 Ren。）
 
-**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议，`Depletes` 的名称留给 Ren；探针与新见证都是最小见证；延续关系之下只陈述了更多迫使的生起，形成的类、任期与侵蚀没有陈述。本节的更正尚未再经独立审查。
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议，`Depletes` 的名称留给 Ren；探针与新见证都是最小见证；延续关系之下只陈述了更多迫使的生起，形成的类、任期与侵蚀没有陈述。本节的更正经第六次独立审查，再更正见 §22。
 
 ## 20. 生成即补充：生起本身承担要求（P15）
 
-2026-10-09。按同一指示继续。第五次独立审查（I3）指出，在流的形式中生起只经由它带来的取用起作用，`uptake_needs_replenishment` 所用的只是取用；审查 §4 第 2 项写道，一个耗散的流的定理会让生成本身而不是取用承担要求。§17 的边界写明结论不约束不取用的生起，§18 写明 `Brood` 中给予不付出代价、耗散之下的一类读法未陈述。本节在一类关系项的读法中回答这三处。体现的关系项的生起，就是它作为条件的水平的上升，所以生成本身就是补充；在耗散之下，补充须付出所取，在有限家族中复现的生成于是需要与家族之外交换。成果记录：[generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md)。
+2026-10-09。按同一指示继续。第五次独立审查（I3）指出，在流的形式中生起只经由它带来的取用起作用，`uptake_needs_replenishment` 所用的只是取用；审查 §4 第 2 项写道，一个耗散的流的定理会让生成本身而不是取用承担要求。§17 的边界写明结论不约束不取用的生起，§18 写明 `Brood` 只给予不取用、耗散之下的一类读法未陈述（P16b 用语更正）。本节在一类关系项的读法中回答这三处。体现的关系项的生起，就是它作为条件的水平的上升，所以生成本身就是补充；在耗散之下，补充须付出所取，在有限家族中复现的生成于是需要与家族之外交换。成果记录：[generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md)。
 
 ```text
 Result(s): 复用 life-as-condition-of-life（一类读法、Embodied、SelfBearing、arises_given、Brood）、
@@ -1169,7 +1170,7 @@ Delta: 平衡的流中，体现的关系项至少被给予它生起时的水平�
        （DissipatesOn.takes_of_gives），所以封闭家族中体现成员的生起降低家族的存量（Embodied.arising_lowers）；
        在耗散之下，体现成员在任意晚的步生起的不重复有限家族从任何一步起都不封闭（generation_opens）；
        有限个关系项就是全部时，体现的关系项不在任意晚的步生起（generation_ceases）；
-       Handing、Kindling、Flicker 表明三个前提各自必要；Brood 不耗散（Brood.costless）
+       Handing、Kindling、Flicker 表明三个前提各自必要；Brood 不耗散（Brood.not_dissipative，P16b 改名，原名 Brood.costless）
 Supplied premises / correspondence: 流平衡依存网；Embodied 是对生起的关系项的表示前提；
        耗散是物理前提（§17），只用于耗散之下的结论；量是自然数，单位可公度
 Evidence: Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理；合并检查器回执（见记录）
@@ -1188,7 +1189,7 @@ Integration: 回答第五次审查 I3 与 §4 第 2 项；回答 §17 的边界�
 | `Embodied.arising_lowers` | 在耗散之下，一个跨某步封闭的不重复家族中，体现成员的生起降低家族的存量：给予它者从家族取得更多 |
 | `generation_opens` | 在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在其中复现的生成需要在任意晚的步与家族之外交换 |
 | `generation_ceases` | 有限个关系项就是全部时，在耗散之下，体现的关系项不在任意晚的步生起 |
-| `Brood.costless` | `Brood` 只给予不取用，所以不耗散 |
+| `Brood.not_dissipative`（P16b 改名，原名 `Brood.costless`） | `Brood` 只给予不取用，所以不耗散 |
 | `Handing.flow`、`web`、`balances`、`acting`、`dependent`、`embodied`、`arises`、`recurs`、`handing` | 两方来回传递一份水平：持有者取用自己的一单位并给予另一方。两个关系项就是全部，流平衡，只有活跃者给予，每方体现并承担自身，`Dependent`，两方的家族每步封闭，生成不息；只有耗散不成立 |
 | `Kindling.Relatum`、`flow`、`web`、`balances`、`acting`、`dependent`、`side_dissipates`、`dissipative`、`kindling`、`frontier` | 同样的传递，持有者每步另燃一份新燃料的两单位：流平衡并耗散，每方体现并承担自身，各自在任意晚的步生起；所以包含一方的每个不重复有限家族在任意晚的步都不封闭，所燃的燃料不在任何有限家族之内 |
 | `Flicker.web`、`flow`、`flicker` | 一个关系项在奇数步活跃，从不作为条件而在，没有任何参与：一个关系项就是全部，流平衡并耗散，生成不息；只有体现不成立 |
@@ -1196,10 +1197,10 @@ Integration: 回答第五次审查 I3 与 §4 第 2 项；回答 §17 的边界�
 
 **解读。**
 
-- **生成本身就是补充。** 两类读法中，形成的生起不是任何条件的变化，生起只经由它带来的取用起作用（I3，`Steady`）。一类读法中，体现的关系项的生起就是它作为条件的水平从零上升，平衡于是要求有给予：生成本身就是补充，不需要任何取用。这是 §18“生由生给予”的数量形式：生起时的水平全由给予承担。
+- **生成本身就是补充。** 两类读法中，形成的生起不是任何条件的变化，生起只经由它带来的取用起作用（I3，`Steady`）。一类读法中，体现的关系项的生起就是它作为条件的水平从零上升，平衡于是要求有给予：生成本身就是补充，不需要任何取用。这是 §18 `arises_given`（经由另一个活跃者的给予而生起）的数量形式：生起时的水平全由给予承担（P16b 用语更正，原文“生由生给予”）。
 - **耗散之下，生成不由有限部分独自承担。** 给予家族者从家族取用，所以在封闭家族中，体现成员的每次生起都降低家族的存量，而存量从不上升。生成在一个有限家族中复现，家族就须在任意晚的步与其外交换（`generation_opens`）；关系项总共有限时，体现的生起终将停止（`generation_ceases`）。这把 §17 关于取用的定理推到不取用的生起，条件是生起的关系项体现。对每个有限家族，体现的生成要么在其中不再复现，要么它在任意晚的步打开；不断生起新的关系项（`Brood` 的一代代）不在任何有限家族中复现，定理对它不作约束。
 - **§13 的物理前提被推出。** `dissipation_ceases` 假设一个量从不上升，而每次生起都使它下降，那是作为物理前提提供的。在一类读法中，对封闭家族中体现成员的生起，这个量就是家族的存量：它从不上升（`runs_down`），每次这样的生起都使它下降（`arising_lowers`），两者都由平衡、耗散与体现推出。
-- **三个前提各自必要。** 没有耗散，两方来回传递一份水平，就在两个关系项的封闭世界中不息地生成（`Handing`），这是 §13 的 `Recycle` 与 §14 的 `Cycle` 在一类读法中的对应。燃烧新的燃料，传递在耗散之下继续，包含一方的每个有限家族都打开（`Kindling`），如 §17 的 `Frontier`。不体现时，一个关系项在一个关系项的耗散世界中不息地生起，没有任何代价（`Flicker`）。所以生成承担自己的要求，恰在生起的关系项体现之处；哪些关系项体现是表示的选择，这一选择在这里有后果。
+- **三个前提各自必要。** 没有耗散，两方来回传递一份水平，就在两个关系项的封闭世界中不息地生成（`Handing`），这是 §13 的 `Recycle` 与 §14 的 `Cycle` 在一类读法中的对应。燃烧新的燃料，传递在耗散之下继续，包含一方的每个有限家族都打开（`Kindling`），如 §17 的 `Frontier`。不体现时，一个关系项在一个关系项的耗散世界中不息地生起，没有任何给予（`Flicker`）。所以生起的关系项体现之处，生成承担自己的要求；不体现之处不必（P16b 更正，原文“没有任何代价”“恰在生起的关系项体现之处”）。哪些关系项体现是表示的选择，这一选择在这里有后果。
 - **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。若生起的生命自身就是其他生命的条件，每次生起都是一次补充；在耗散之下，不息的生起不能由任何有限的部分独自承担，须由越出每个有限部分的展开承担。作者把这读作原话中“生”与“整体”之间关系的一种形式内容（AI 论证），不替代原话，也不推出它是好的。
 
 **作者反审。**
@@ -1274,6 +1275,102 @@ Integration: 回答第五次审查 I10 与 §4 第 7 项；§16、§19 中“谱
 *反驳 5：结论不说数目增长，不是“更多”。* 对。本节只说持续需要生起；“更多”的数目读法见 §14。
 
 **边界。** 不含伦理谓词；整体只由活动关联部分；部分关系是静态的；生起依赖跨步的同一；“生生不息”读到哪个层次属于 Ren；见证都是最小见证。本节尚未经独立审查。
+
+## 22. 第六次独立审查与更正（P16b）
+
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P13（§17）、P14（§18）与 P12b（§19）（[审查](BECOMING-P13-P14-P12B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 21 个模块，公理报告为空；回执、哈希、别名与证明绑定都对，数学接受，I1–I12 全部关闭。问题在前提的陈述、散文与对应之间，共十一项（J1–J11），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生生、living、接续或终结的读法；它指出两个反复出现的模式：省略前提（I1 → J10），以及把所给的对应呈现为结果（I7 → J4）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查提议而未形式化的两个结果，有限支撑下给予者取得多于所给（J1）与 `roles_dissipative` 的逆（J8），也已证明。§17–§20 中受影响的句子已就地更正并标明；原文见提交 `25a66424`。
+
+```text
+Result(s): 修正 no-finite-part-bears-taking（主张、假设、对应、反例、界限）、
+           life-as-condition-of-life（标题、主张、假设、对应、反例、界限、下一步）、
+           identity-across-steps（标题、主张、假设、反例、界限、下一步）、generation-is-replenishment（改名与用语）；
+           more-needs-renewers、unceasing-generation-needs-renewal、becoming-stepwise-reading、becoming-renewal-reading 记入审查；
+           condition-correspondence-discipline 只改检验范围；不新增结果记录
+Delta: 封闭的步（Enclosed）：耗散之下，给予的形成在封闭家族上取得多于所给（gives_less），在封闭的步上给予须以取用为条件
+       （giving_needs_uptake）；没有封闭的步时耗散是空的，补充者可以什么都不取而给予（Spray）；维持一个取用者已越出每个有限家族（Lone）；
+       生长者依存于池的前沿满足全部前提（Rooted）；此前取用复现的见证都不耗散（witnesses_not_dissipative）；
+       一类读法也保持 Acting、Taking、普查、present 不重复与耗散；哪个条件就是哪个关系项由共同的索引给出（relabel）；
+       体现不进入估值（Mutualism.apart_embodied）；终结之步的汲取不论是什么终结了生命都是断裂（Wilting、SelfBearing.met_iff）；
+       arises_given 的给予者不必体现（SunSeed），只有体现者给予时给予者体现（arises_from_embodied）；
+       没有分裂是充分的，不是必要的（Fork）；含合并的见证（Merge）、普查给出可判定性（decideContinues）、
+       没有普查时不成立（Dormant.no_split_without_arising）、双向的连续排除单步的接续（no_join）
+Supplied premises / correspondence: 新增：封闭的步是有限支撑的前提；哪个条件就是哪个形成的同一对应（一类读法的表示前提，与 Embodied 并列）；
+       只有体现的关系项给予（arises_from_embodied 的对应前提）
+Evidence: Becoming.Dissipation 55、Roles 110、Identity 79、Population 36、Correspondence 37 项定理；
+          合并检查器回执 20261009T071936.578078Z（676 项定理／1115 项声明审计，核心闭包 22 个模块，包 20 个模块，公理报告全空）；
+          外围桥接 20261009T072041.754860Z
+Boundary: 在终结之步的汲取是否计入不 living、对哪些汲取者，接续的读法，“生生不息”读到哪个层次，Depletes 与“代价”一族的名称，属于 Ren
+Integration: J1–J11 全部处理；审查 §4 第 1–7 项完成，各留下的开放结果见 22.3；第 8 项属于 Ren
+```
+
+### 22.1 逐项处理
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| J1 | `Dissipative` 只约束在某步封闭的有限家族；某个形成与无穷多个条件交换时没有家族封闭，耗散是空的，补充者可以什么都不取而给予（`Spray`）。“给予总使补充者所取的条件付出多于所给”与“补充者的代价须表示为它所取的条件”在定义上不成立 | `Flow.Enclosed`：跨某步有一个不重复的家族封闭，即参与的形成的交换在有限个条件之内；条件总共有限时每步都是（`enclosed_of_finite`）。`Dissipative.gives_less`：耗散之下，在跨某步封闭的不重复家族上，参与而给予的形成取得多于所给。`Dissipative.giving_needs_uptake`：在封闭的步上，给予的形成从某个条件取用。`Spray` 移入 `Dissipation`：汇与每个辅助条件交换，没有封闭的步（`unenclosed`），耗散空洞地成立（`dissipative`），补充者每步给予而什么都不取（`spray`）。§17 反驳 1、Flow 与 Dissipation 的模块说明、章节 §2 与记录的假设改为：在有封闭的有限家族的步上，给予须以取用为条件；并写明结论“在任意晚的步不封闭”可以由与家族无关的交换满足。`Spray` 列入记录的反例 |
+| J2 | 定理只用复现的取用；维持一个恒定的取用者同样越出每个有限家族（`Lone`）；把“整体”读作“不断的更多”的内容，比定理窄。这是 I3 的同一模式 | `Lone` 移入 `Dissipation`：太阳每步燃一份新燃料（两单位）、给池一单位，一个吃者每步从池取一单位；流平衡并耗散，没有生起，不是不止地更多（`lone`），包含池的每个不重复有限家族在任意晚的步都不封闭（`frontier`）。§17“对生生”、章节 §2 与记录改为：复现的取用，无论来自不止的更多、生成还是维持，都不能由任何有限的条件家族独自承担 |
+| J3 | `Frontier` 的生长者不依存于任何东西；`opens_of_arising` 没有见证；此前的流不耗散只是陈述 | `Rooted` 移入 `Dissipation`：`Frontier.flow` 配上池始终一单位、生长者活跃时以需要一依存于池的依存网；平衡、Acting、Taking、Dependent、普查、耗散、不止地更多与不息同时成立，包含池的家族由 `opens_of_arising` 与 `More.opens` 打开（`rooted`）。`witnesses_not_dissipative`：`Garden`、`Cycle`、`Pulse`、`Steady`、`Repeated` 与 `Bloom` 都不耗散，由一个条件上的 `Flow.Dissipative.one_ceases`。记录以 `Rooted` 为共同见证 |
+| J4 | 一类读法的内容在于“条件 x 就是形成 x”，由共同的索引给出；`Web X X` 本身就是 F = C 的两类网；把条件一侧重新标号，检查过的两类读法都不变而体现改变；“恰是”“没有引入独立的本体”“省略的正是体现”说得过强。这是 I7 的同一模式 | `Web.relabel`：以 π 重新标号条件一侧。到上的重新标号保持 `Dependent`、侵蚀与 living（`relabel_dependent`、`relabel_undermining`、`relabel_alive`），以及两种估值的连通（`relabel_valuation_connected`、`relabel_interaction_connected`，在 L4）；以 `other` 重新标号，`Mutualism.apart` 中两者都承担自身（`apart_relabelled`）；以 `swap` 重新标号，体现的花不体现（`Wilting.relabelled_not_embodied`）。§18、章节 §1 与 §9、术语表与记录改为：两类读法嵌入一类读法，保持列出的读法；一类读法另需同一对应，它由共同的索引给出，是表示的前提；体现与承担自身是在这一对应下的读法；两类的表示省略的是形成与条件的同一对应。记录的假设加上这一对应，与 `Embodied` 并列为应用责任 |
+| J5 | 体现不进入两种估值：`apart` 中两者都体现而不相关 | `Mutualism.apart_embodied`（L4）：两者都体现，各自依存并汲取对方，活动需要支持，共同参与与相互作用都不关联它们。§18“直接的关系”与记录补上：估值只经由共同的条件关联事件，只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。直接读出体现的估值列为开放结果 |
+| J6 | `ending_breaks` 读的是终结之步的汲取，不问是什么终结了它；旁观的汲取者与生命自身的最后事件也是断裂（`Wilting`）；交给 Ren 的选择的范围没有说明 | `Wilting` 移入 `Roles`：花体现、承担自身、因自身的取用而凋；蜜蜂从不取用；流平衡，Acting、Taking 与 Dependent 成立；蜜蜂在第二步的汲取与花自己的最后事件都是断裂与侵蚀（`wilting`）。`SelfBearing.met_iff`：在 Dependent 与体现之下，自身依存恰在活跃时被满足。Roles 的说明、`Predation.breaking`、§18、章节 §2 与英文段落改为：在一个承担自身的生命终结之步汲取它，不论是什么终结了它，是断裂；这包括旁观者、自然的终结与生命自身的最后事件；交给 Ren 的选择写明这一范围 |
+| J7 | `arises_given` 的给予者只是一个活跃的关系项，可以是不体现、不依存的太阳（`SunSeed`）；“一个生命的生起由另一个生命的活动给出”强于定理 | `SunSeed` 移入 `Roles`（`sun_gives`）。`Embodied.arises_from_embodied`：在只有体现的关系项给予这一表示前提下，给予者也体现，并在给予时作为条件而在。`arises_given` 的说明、记录标题（“体现的关系项经由另一个活跃者的给予而生起”）、§18 的标题与解读、章节 §2 与英文段落改写；“生由生”只在所述前提下成立，写为对应 |
+| J8 | “已陈述的读法”应为“列出的”；“一类读法不保持 Acting、Taking 与 Dissipative”照字面不成立 | `Flow.roles_acting`、`Flow.roles_taking`（双向）、`Web.roles_census`、`Flow.roles_distinct` 与 `Flow.roles_dissipative`（双向；审查未形式化的逆也已证明）移入 `Roles`。章节、§18 与记录改为“列出的读法”，界限句删去，记录下一步中“保持 Acting 与 Taking”一项关闭 |
+| J9 | `NoSplit` 是充分条件，不是必要条件（`split_unceasing`）；“分裂恰是界限”沿用了第五次审查 §4 第 6 项过强的措辞 | `Fork` 移入 `Identity`：循环中形成 0 在第一步延续为两个，`NoSplit` 不成立，形成在这一延续下照样在任意晚的步生起（`split_unceasing`）。§19 的 I9 一行、19.3 第 6 项、19.4 反驳 2 与记录改为：没有分裂是充分条件；萌出表明有的分裂使结论失效，一次分裂不必。延续关系上的充要条件列为开放结果 |
+| J10 | 章节对 `unceasingFrom` 与 `arises_given` 的概述省去前提（`dormant_no_census`）。这是 I1 的同一模式 | `Dormant.no_split_without_arising` 移入 `Identity`：在每个形成只延续自身的延续下没有分裂，Taking、present 不重复与不止地更多都成立，而没有任何生起。章节 §1 与 §8、Identity 的模块说明与记录标题补上普查、present 不重复与 Taking；`arises_given` 的概述补上平衡与 Acting。审查确认为正确的三点也移入核心：`Web.no_join`（新命名保持旧命名的持续活动时，单步不能接起来）、`Merge`（含合并的延续，`merging`）与 `Web.Census.decideContinues`（普查之下，可判定的延续给出 `unceasingFrom` 所需的可判定性） |
+| J11 | 记账与用语：(a) 章节 §8 的审查一行过期；(b) 模块数口径不一；(c) “证明它”；(d) “耗尽”；(e) “代价／付出／cost”；(f) 两份记录的审查时间 | (a) 章节 §8 的审查一行更新。(b) P12、P13、P14 的英文段落数的是核心闭包（19、20、21 个模块），P12b、P15、P16 数的是包（19、19、20 个模块）；现在核心闭包 22 个模块、包 20 个模块，此后写明口径。(c) Flow 的说明改为“证明它承担什么”。(d) 章节 §9 改为“取用终止”：`takers_within` 与 `taking_ceases` 约束取用者并使取用停止，存量不必降到零。(e) Dissipation、Roles、Flow 与根模块的说明、记录、§17 与 §18 中的“代价／付出／cost”改为“给予须以取用为条件／giving needs uptake”等，`Brood.costless` 改名为 `Brood.not_dissipative`；这些是建议，Ren 可以改回。(f) 两份记录的审查时间刷新 |
+
+### 22.2 新的已检查声明
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Dissipation | `Flow.Enclosed`、`enclosed_of_finite` | 封闭的步：有一个不重复的家族跨该步封闭；条件总共有限时每步都是 |
+| Dissipation | `Dissipative.gives_less`、`Dissipative.giving_needs_uptake` | 耗散之下，在封闭家族上，给予的形成取得多于所给；在封闭的步上，给予须以取用为条件 |
+| Dissipation | `Spray.Formation`、`flow`、`web`、`fresh`、`unenclosed`、`dissipative`、`spray` | 汇与每个辅助条件交换：没有封闭的步，耗散空洞地成立，补充者每步给予而不取用 |
+| Dissipation | `Lone.Formation`、`flow`、`web`、`balances`、`dissipative`、`lone`、`frontier` | 维持一个吃者：平衡、耗散、没有生起、不是不止地更多，包含池的每个不重复有限家族在任意晚的步都不封闭 |
+| Dissipation | `Rooted.web`、`balances`、`census`、`taking`、`acting`、`dependent`、`decActive`、`arises_taking`、`rooted` 与辅助引理 | 生长者依存于池的前沿：全部前提同时成立，`opens_of_arising` 有见证 |
+| Dissipation | `Flow.Dissipative.one_ceases`、`witnesses_not_dissipative` | 只有一个条件时，平衡而耗散的流中取用不复现；花园、循环、脉冲、恒定的消耗者、重复的形成与花开都不耗散 |
+| Population | `mem_map_of`、`mem_of_map`、`distinct_map`（自 Identity 移入）、`decideSome` | 列表的映射与不重复；在有限表中判定存在 |
+| Identity | `Web.no_join` | 新命名保持旧命名的持续活动时，一步前后活跃、跨该步同名的两个形成是一个 |
+| Identity | `Web.Census.decideContinues` | 普查之下，可判定的延续给出“是否延续某个活跃形成”的可判定性 |
+| Identity | `Fork.forks`、`Fork.split_unceasing` | 一次分裂不使生起失效：`NoSplit` 是充分的，不是必要的 |
+| Identity | `Merge.merges`、`decideMerges`、`noSplit`、`merging` | 花园中第 i 个补充者与第 i 个生长者都延续为第 i 个补充者：含合并、没有分裂，形成在任意晚的步生起 |
+| Identity | `Dormant.no_split_without_arising` | 没有普查时，没有分裂也不够 |
+| Roles | `inl_injective`、`inr_injective`、`inr_not_mem`、`conditionsOf`、`mem_of_conditionsOf`、`conditionsOf_of_mem`、`distinct_conditionsOf`、`total_conditionsOf` | 一类读法的列表辅助 |
+| Roles | `Web.roles_census`、`Flow.roles_acting`、`Flow.roles_taking`、`Flow.roles_distinct`、`Flow.roles_dissipative` | 一类读法保持普查、Acting、Taking、present 不重复与耗散（Acting、Taking 与耗散双向） |
+| Roles | `SelfBearing.met_iff` | 在 Dependent 与体现之下，自身依存恰在活跃时被满足 |
+| Roles | `Embodied.arises_from_embodied` | 只有体现的关系项给予时，体现关系项的给予者也体现，并在给予时作为条件而在 |
+| Roles | `Web.relabel`、`exists_of_onto`、`relabel_dependent`、`relabel_undermining`、`relabel_alive` | 把条件一侧到上地重新标号，保持 Dependent、侵蚀与 living |
+| Roles | `Mutualism.other_twice`、`Mutualism.apart_relabelled` | 以 `other` 重新标号，`apart` 中两者都承担自身，Dependent 不变 |
+| Roles | `Wilting.Relatum`、`fade`、`web`、`flow`、`fade_active`、`embodied`、`selfBearing`、`dependent`、`ends`、`wilting`、`swap`、`relabelled_not_embodied` | 花因自身的取用而凋：旁观的蜜蜂与花自己的最后事件都是断裂；以 `swap` 重新标号，花不体现 |
+| Roles | `SunSeed.Relatum`、`sprout`、`web`、`flow`、`sun_gives` | 不体现、不依存的太阳是种子唯一的给予者 |
+| Roles | `Brood.not_dissipative`（原名 `Brood.costless`） | `Brood` 只给予不取用，所以不耗散 |
+| Correspondence | `Web.relabel_valuation_connected`、`Web.relabel_interaction_connected` | 到上的重新标号保持两种估值的连通 |
+| Correspondence | `Mutualism.apart_embodied` | 体现不进入估值 |
+
+### 22.3 审查列出的会改变判断的结果
+
+1. 有限支撑（J1）：`Enclosed` 与审查提议的定理（`gives_less`），`Spray` 列入记录。完成。
+2. 任何持续的取用（J2、J3）：整体的读法按复现的取用重述，`Lone`、`Rooted` 与 `witnesses_not_dissipative` 移入核心。完成。
+3. 同一对应（J4、J5）：一类读法的同一对应写为表示前提，`relabel` 移入核心，估值省略体现写明。完成。直接读出体现的估值，开放。
+4. 终结与给予（J6、J7）：`ending_breaks` 写为与任何原因的终结同时，`Wilting` 移入核心，Ren 的选择的范围写明；`arises_given` 改题，“生由生”在只有体现者给予的前提下证明（`arises_from_embodied`）。完成。汲取是否终结了生命的因果读法需要反事实的关系，开放。
+5. 保持（J8）：五个 `roles_*` 移入核心，界限句删去，`roles_dissipative` 的逆也已证明。完成。
+6. 分裂（J9、J10）：以“充分”代替“精确”，`split_unceasing` 列入记录，章节补上前提。完成。延续关系上的充要条件，开放。
+7. 记账（J11）：六项完成；用语的最终选择属于 Ren。
+8. Ren 的选择：在终结之步的汲取是否计入不 living、对哪些汲取者；接续的读法；“生生不息”读到哪个层次；名称（`Depletes` 与“代价”一族）。本节没有替 Ren 作任何一个选择。
+
+### 22.4 作者反审
+
+*反驳 1：`Enclosed` 是不是只为排除 `Spray` 的特设前提？* 它是有限支撑的陈述：一步中参与的形成只与有限个条件交换。条件总共有限时它自动成立（`enclosed_of_finite`），`Frontier`、`Rooted` 与 `Lone` 每步都满足它。没有它，耗散的定义对那一步什么也不说，这正是 `Spray` 表明的；把它写为前提，是公开 §17 反驳 1 原来默认的东西。
+
+*反驳 2：既然估值看不见体现，一类读法还有什么用？* 体现进入依存的动力学：`coextinct`、`ends_when_consumed`、`arises_given` 与 §20 的 `generation_opens` 都用它。估值看不见的是体现本身；它经由承担自身进入估值（`SelfBearing.interacts`）。两者是不同的后果，不冲突。
+
+*反驳 3：`Wilting` 表明 `ending_breaks` 是一个坏的读法，应当改定义。* 本节不改：是否把在终结之步的汲取计入不 living、对哪些汲取者，属于 Ren。可供选择的读法至少有三种：照现在的读法计入全部汲取者，包括生命自身的最后事件；只计入其汲取使生命终结者，这需要反事实的关系；不让自身依存进入断裂，即不采用 `SelfBearing`，如 `Mutualism.apart`。本节只陈述各自的后果。
+
+*反驳 4：把“代价”改为“给予须以取用为条件”，是不是只是换词？* 对，内容相同；理由是 Ren 在 2026-10-06 对支付一族用语的质疑。名称是建议，Ren 可以改回，`Brood.costless` 的改名同理。
+
+*反驳 5：`relabel` 是不是表明一类读法与两类读法没有区别？* 不是。两类读法检查不到同一对应，这正说明同一对应是一类读法另加的内容。它由表示给出，与跨步的同一由命名给出（§16，I7）是同一类前提：标签不承载任何东西，标签的模式承载对应。
+
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证；同一对应、只有体现者给予与封闭的步是公开的前提；直接读出体现的估值、汲取是否终结生命的因果读法、延续关系上的充要条件，开放。本节的更正尚未再经独立审查。
 
 ## English summary
 
@@ -1383,12 +1480,24 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 
 **P12: identity across steps.** `Becoming.Identity` relates two namings of formations one to one at each step (`Reidentify`), leaving every step's levels, activity, dependences and drawing unchanged. A renaming preserves the readings defined from relations (checked for five), so labels carry nothing (P12b correction; originally "every reading, so names carry nothing"). Any re-identification preserves each step's relations, each condition's class, what a flow takes and gives, the counts of takers and renewers, more without end, a census of the active formations and `Taking`; so under a census more without end makes generation unceasing under every re-identification (`Flow.More.unceasing_reidentified`). What follows a formation depends on identity: its class over the run, the tenure of a dependence, undermining, transformation and arising. Exchanging names at odd steps changes all of them (`Turnover`). Keeping the names of continuing activity makes no arising, and keeping those of continuing dependence removes no undermining. Succession remains open. A lineage's members arise without end when named apart, and nothing arises when they are named as one (`Lineage`). An heir succeeding an elder makes later drawing undermine (`Succession`). How to read succession is Ren's choice. The core now has 422 theorems and 760 declaration audits over 19 modules, all with empty axiom reports. This section was reviewed by the fifth independent review; see P12b.
 
-**P13: dissipation.** `Becoming.Dissipation` states dissipation on flows. Across a step, a family is closed when no formation taking part exchanges with a condition outside it, and a formation dissipates on it when it gives the family no more than it takes from it, and less when it takes. In a balanced flow a dissipated family falls by at least its number of takers at each step. Dissipated from some step on, its takers over all later steps number at most its stock there, and taking from it does not recur. So under dissipation on every closed family, a finite family from which formations take at arbitrarily late steps is open at arbitrarily late steps, and so is every finite family containing it. More without end and the unceasing arising of takers are such taking. With finitely many conditions in all, taking does not recur. A sun burning a fresh fuel at every step, giving a pool less than it burns while ever more growers take from the pool, meets every premise (`Frontier`). Without dissipation a closed cycle sustains more without end (`Cycle`). This turns the author's argument that no finite part bears continued taking alone into a theorem under a stated premise. The core now has 450 theorems and 798 declaration audits over 20 modules, all with empty axiom reports. This section has not been independently reviewed.
+**P13: dissipation.** `Becoming.Dissipation` states dissipation on flows. Across a step, a family is closed when no formation taking part exchanges with a condition outside it, and a formation dissipates on it when it gives the family no more than it takes from it, and less when it takes. In a balanced flow a dissipated family falls by at least its number of takers at each step. Dissipated from some step on, its takers over all later steps number at most its stock there, and taking from it does not recur. So under dissipation on every closed family, a finite family from which formations take at arbitrarily late steps is open at arbitrarily late steps, and so is every finite family containing it. More without end and the unceasing arising of takers are such taking. With finitely many conditions in all, taking does not recur. A sun burning a fresh fuel at every step, giving a pool less than it burns while ever more growers take from the pool, meets every premise (`Frontier`). Without dissipation a closed cycle sustains more without end (`Cycle`). This turns the author's argument that no finite part bears continued taking alone into a theorem under a stated premise. The core now has 450 theorems and 798 declaration audits over 20 modules, all with empty axiom reports. This section was reviewed by the sixth independent review; dissipation binds only where some finite family is closed, and the requirement comes from any recurring uptake, not only from more (see P16b).
 
-**P14: roles.** `Becoming.Roles` reads formations and conditions as two roles of one relatum. The two-kind reading of `Web` and `Flow` is the one-kind reading in which no formation is a condition. Read so, every listed reading and the connection of both valuations is kept, and no formation active at some step is embodied or bears on itself. A relatum is embodied when it stands as a condition exactly while it is active, and bears on itself when, while active, it depends on its own standing. Under `Dependent`, a formation depending on an embodied relatum lives only while that relatum does, activity passes along chains of such dependence, and a relatum that is not active ends every formation whose chain reaches it (coextinction). Drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence, so the drawing event is not living; whether ending another life should so count belongs to Ren's reading of 生生. In a balanced flow where only active formations give, an embodied relatum arises only as another active formation gives to it: life from life. Drawing on a relatum that bears on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition; where each depends only on the other, neither valuation relates them. A fox ends with the hare it eats, and generations arise without end, each given by the one before. This answers H14 of the fourth review. The core now has 513 theorems and 878 declaration audits over 21 modules, all with empty axiom reports. This section has not been independently reviewed.
+**P14: roles.** `Becoming.Roles` reads formations and conditions as two roles of one relatum. The two-kind reading of `Web` and `Flow` embeds in the one-kind reading in which no formation is a condition (P16b correction; originally "is"). Read so, every listed reading and the connection of both valuations is kept, and no formation active at some step is embodied or bears on itself. Which condition is which relatum is supplied by the shared index (P16b). A relatum is embodied when it stands as a condition exactly while it is active, and bears on itself when, while active, it depends on its own standing. Under `Dependent`, a formation depending on an embodied relatum lives only while that relatum does, activity passes along chains of such dependence, and a relatum that is not active ends every formation whose chain reaches it (coextinction). Drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence whatever ends it, so the drawing event is not living; whether drawing at an ending should so count, and for which drawers, belongs to Ren's reading of 生生 (P16b correction; originally "whether ending another life should so count"). In a balanced flow where only active formations give, an embodied relatum arises only as another active formation gives to it, a giver that need not be a life (P16b correction; originally "life from life"). Drawing on a relatum that bears on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition; where each depends only on the other, neither valuation relates them. A fox ends with the hare it eats, and generations arise without end, each given by the one before. This answers H14 of the fourth review. The core now has 513 theorems and 878 declaration audits over 21 modules, all with empty axiom reports. This section was reviewed by the sixth independent review; see P16b.
 
-**P12b: the fifth independent review.** A separate agent (Claude Opus 5.5) reviewed P11b and P12 ([review](BECOMING-P11B-P12-REVIEW.md)). It accepted all the mathematics with empty axiom reports, closed H1–H14, and found twelve issues (I1–I12) in premises, prose and correspondence. In the flow form, recurring uptake needs recurring replenishment (`uptake_needs_replenishment`): arising works only through the uptake it brings, and a constant consumer with nothing arising needs replenishment too (`Steady`). That the flow lists each formation once is a necessary premise of `More.unceasing` (`Repeated`), and the garden and the cycle meet every premise (`Garden.counted`, `Cycle.counted`). Labels carry nothing, while the pattern of names across steps carries identity. Continuity read one way lets the new naming make a continuity; read both ways it preserves arising and undermining exactly (`Reidentify.back`), and joining across a dormant step still changes a formation's class (`Dormancy`). Arisings made by naming alone can meet every premise of `Unceasing.regeneration_recurs` (`TideFlip`). Splits and merges change the continuation relation, not the number of formations. Under every continuation in which no formation continues as two, more without end under a census makes formations arise at arbitrarily late steps (`Flow.More.unceasingFrom`), while budding defeats it (`Budding`). A lineage and its members are two levels of one unfolding, with the part–whole relation omitted (`Layered`). The heir of `Succession` now lives. The core now has 559 theorems and 948 declaration audits over 19 modules, all with empty axiom reports. These corrections have not been independently reviewed again.
+**P12b: the fifth independent review.** A separate agent (Claude Opus 5.5) reviewed P11b and P12 ([review](BECOMING-P11B-P12-REVIEW.md)). It accepted all the mathematics with empty axiom reports, closed H1–H14, and found twelve issues (I1–I12) in premises, prose and correspondence. In the flow form, recurring uptake needs recurring replenishment (`uptake_needs_replenishment`): arising works only through the uptake it brings, and a constant consumer with nothing arising needs replenishment too (`Steady`). That the flow lists each formation once is a necessary premise of `More.unceasing` (`Repeated`), and the garden and the cycle meet every premise (`Garden.counted`, `Cycle.counted`). Labels carry nothing, while the pattern of names across steps carries identity. Continuity read one way lets the new naming make a continuity; read both ways it preserves arising and undermining exactly (`Reidentify.back`), and joining across a dormant step still changes a formation's class (`Dormancy`). Arisings made by naming alone can meet every premise of `Unceasing.regeneration_recurs` (`TideFlip`). Splits and merges change the continuation relation, not the number of formations. Under a census, with each formation taking part listed once and only active formations taking, under every continuation in which no formation continues as two more without end makes formations arise at arbitrarily late steps (`Flow.More.unceasingFrom`), while budding defeats it (`Budding`); no split is sufficient, not necessary (`Fork`; P16b correction, premises restored). A lineage and its members are two levels of one unfolding, with the part–whole relation omitted (`Layered`). The heir of `Succession` now lives. The core now has 559 theorems and 948 declaration audits over 19 modules, all with empty axiom reports. These corrections were reviewed by the sixth independent review; see P16b.
 
-**P15: generation is replenishment.** Following the fifth review's I3 and its §4 item 2, P15 lets generation itself, rather than uptake, carry the requirement. Read with one kind of relatum, an embodied relatum is given at least the standing it arises with (`Embodied.given_of_arises`), so its arising replenishes every family containing it, and embodied arising at arbitrarily late steps needs replenishment at arbitrarily late steps, whatever is taken (`generation_needs_replenishment`). Under dissipation a formation giving to a family takes from it (`DissipatesOn.takes_of_gives`), so an embodied arising in a closed family lowers the family's stock (`Embodied.arising_lowers`); this derives the physical premise of `dissipation_ceases` for such arisings. A finite family in which embodied members arise at arbitrarily late steps is therefore not closed from any step on (`generation_opens`), and with finitely many relata in all, embodied arising does not recur (`generation_ceases`). Each premise is needed. Two sides handing one standing back and forth generate without end in a closed world without dissipation (`Handing`). Burning a fresh fuel, they do so under dissipation while every finite family containing a side opens (`Kindling`). A relatum whose activity is not its standing arises at no cost (`Flicker`). The brood is not dissipative (`Brood.costless`). The core now has 588 theorems and 987 declaration audits over 19 modules, all with empty axiom reports. This section has not been independently reviewed.
+**P15: generation is replenishment.** Following the fifth review's I3 and its §4 item 2, P15 lets generation itself, rather than uptake, carry the requirement. Read with one kind of relatum, an embodied relatum is given at least the standing it arises with (`Embodied.given_of_arises`), so its arising replenishes every family containing it, and embodied arising at arbitrarily late steps needs replenishment at arbitrarily late steps, whatever is taken (`generation_needs_replenishment`). Under dissipation a formation giving to a family takes from it (`DissipatesOn.takes_of_gives`), so an embodied arising in a closed family lowers the family's stock (`Embodied.arising_lowers`); this derives the physical premise of `dissipation_ceases` for such arisings. A finite family in which embodied members arise at arbitrarily late steps is therefore not closed from any step on (`generation_opens`), and with finitely many relata in all, embodied arising does not recur (`generation_ceases`). Each premise is needed. Two sides handing one standing back and forth generate without end in a closed world without dissipation (`Handing`). Burning a fresh fuel, they do so under dissipation while every finite family containing a side opens (`Kindling`). A relatum whose activity is not its standing arises with nothing given to it (`Flicker`). The brood is not dissipative (`Brood.not_dissipative`, renamed in P16b from `Brood.costless`). The core now has 588 theorems and 987 declaration audits over 19 modules, all with empty axiom reports. This section has not been independently reviewed.
 
 **P16: wholes and parts.** Following the fifth review's I10 and its §4 item 7, the new module `Becoming.Wholes` states the part–whole relation that a single level of naming omits. A formation is the whole of some parts when it is active exactly while some part is (`Web.Whole`), and `Layered`'s lineage is the whole of its members (`Layered.composed`). A whole arises only as a part arises (`Whole.arises_part`). A whole active at every step from some step on persists only through its parts' generation. If no part is active at two steps `d` apart, a part arises within every `d` consecutive steps (`Whole.arises_within`); the bound is attained (`Shifts`). If each part's activity ends and the active parts are listed finitely, parts arise at arbitrarily late steps (`Whole.needs_arising`). Without these premises a whole can persist while nothing arises (`Immortal`, `Countless`), and the converse fails (`Gaps`). The premises are consistent: a lineage of two-step generations is active at every step and never arises while a member arises at every step (`Generations`). Where parts do not last, reading 生生不息 as the lineage's persistence entails unceasing generation of its members; at which level it is read remains Ren's. The core now has 614 theorems and 1028 declaration audits over 20 modules, all with empty axiom reports. This section has not been independently reviewed.
+
+**P16b: the sixth independent review.** A separate agent (Claude Opus 5.5) reviewed P13, P14 and P12b ([review](BECOMING-P13-P14-P12B-REVIEW.md)). It recompiled the 21 modules of the core closure from the prelude with empty axiom reports, accepted all the mathematics and closed I1–I12. It found eleven issues (J1–J11) in premises, prose and correspondence, with two recurring patterns: an omitted premise, and a supplied correspondence presented as a result.
+
+- **Dissipation binds where a step is enclosed.** A step is enclosed when some finite family without repetition is closed across it (`Flow.Enclosed`). There, under dissipation, a formation that gives takes more than it gives (`Dissipative.gives_less`), so giving needs uptake (`giving_needs_uptake`). Where no step is enclosed, dissipation is vacuous and a renewer can give while taking nothing (`Spray`).
+- **Any recurring uptake.** Keeping one eater fed already reaches beyond every finite family (`Lone`). The 整体 reading therefore concerns any recurring uptake, not only more. The frontier with growers depending on the pool meets every premise together (`Rooted`), and the earlier witnesses are not dissipative (`witnesses_not_dissipative`).
+- **What the one-kind reading keeps and adds.** It keeps `Acting`, `Taking`, a census, a distinct present and dissipation as well (`roles_acting`, `roles_taking`, `roles_census`, `roles_distinct`, `roles_dissipative`). Which condition is which relatum is supplied by the shared index. Relabelling the conditions onto themselves keeps dependence, undermining, living and both connections, while changing which relata are embodied (`relabel`). So the two-kind representation embeds in the one-kind reading and omits that identification. Embodiment itself enters neither valuation (`Mutualism.apart_embodied`).
+- **Endings.** Drawing on a self-bearing life at the step at which it ends breaks a dependence, whatever ends the life. This includes a bystander that takes nothing and the life's own last event (`Wilting`). Whether that should count, and for which drawers, is Ren's choice.
+- **Giving.** An embodied relatum arises through the giving of another active relatum, which need not be a life (`SunSeed`). Where only embodied relata give, the giver is embodied (`arises_from_embodied`).
+- **Splits.** No split is sufficient for `Flow.More.unceasingFrom`, not necessary (`Fork`), and without a census it fails (`Dormant.no_split_without_arising`).
+- **Vocabulary and counts.** The cost vocabulary becomes "giving needs uptake", and `Brood.costless` becomes `Brood.not_dissipative`; Ren may revert either. The P12, P13 and P14 paragraphs count the core closure (19, 20 and 21 modules). The P12b, P15 and P16 paragraphs count the package (19, 19 and 20).
+
+The core now has 676 theorems and 1115 declaration audits over a closure of 22 modules (a package of 20), all with empty axiom reports. These corrections have not been independently reviewed again.

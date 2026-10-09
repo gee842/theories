@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T06:45:00+00:00",
+  "reviewed_at_utc": "2026-10-09T07:27:13+00:00",
   "claim": {
-    "zh": "以一类关系项读依存网与流。在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么。生成在这里本身承担要求，不经由它带来的取用。在耗散之下，给予一个被耗散家族的形成从家族取用，所以在一个跨某步封闭的不重复家族中，体现成员的生起降低家族的存量。体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外交换。有限个关系项就是全部时，体现的关系项不在任意晚的步生起。于是 dissipation_ceases 的前提（一个量从不上升，每次生起都使它下降），对封闭家族中体现成员的生起，由平衡、耗散与体现推出。每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Handing）；持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭（Kindling）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood.costless）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Read webs and flows with one kind of relatum. In a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive. Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken. Here generation carries the requirement itself, not through the uptake it brings. Under dissipation a formation giving to a family dissipated on takes from it, so in a family without repetition closed across a step the arising of an embodied member lowers the family's stock. A finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it. If finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps. The premise of dissipation_ceases (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a closed family, from balance, dissipation and embodiment. Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Handing); when the holder also burns a fresh fuel at every step, the handing goes on under dissipation, and every finite family without repetition containing a side is open at arbitrarily late steps (Kindling); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); generations giving without taking are not dissipative (Brood.costless). No ethical premise and no Lean axiom is used."
+    "zh": "以一类关系项读依存网与流。在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么。生成在这里本身承担要求，不经由它带来的取用。在耗散之下，给予一个被耗散家族的形成从家族取用，所以在一个跨某步封闭的不重复家族中，体现成员的生起降低家族的存量。体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外交换。有限个关系项就是全部时，体现的关系项不在任意晚的步生起。于是 dissipation_ceases 的前提（一个量从不上升，每次生起都使它下降），对封闭家族中体现成员的生起，由平衡、耗散与体现推出。每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Handing）；持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭（Kindling）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood.not_dissipative）。不用伦理前提，也不用 Lean 公理。",
+    "en": "Read webs and flows with one kind of relatum. In a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive. Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken. Here generation carries the requirement itself, not through the uptake it brings. Under dissipation a formation giving to a family dissipated on takes from it, so in a family without repetition closed across a step the arising of an embodied member lowers the family's stock. A finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it. If finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps. The premise of dissipation_ceases (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a closed family, from balance, dissipation and embodiment. Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Handing); when the holder also burns a fresh fuel at every step, the handing goes on under dissipation, and every finite family without repetition containing a side is open at arbitrarily late steps (Kindling); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); generations giving without taking are not dissipative (Brood.not_dissipative). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -19,17 +19,17 @@
       "en": "The flow balances the web; families and the relata taking part at each step are finite lists; amounts are natural numbers with commensurable units."
     },
     {
-      "zh": "Embodied 是对生起的关系项的表示前提：它恰在活跃时以正的水平作为条件而在。遗骸与不活跃的条件不体现；哪些关系项体现是应用义务。不体现的生起不受这些结论约束（Flicker）。",
-      "en": "Embodied is a representational premise about the arising relata: each stands as a condition at a positive level exactly while it is active. Remains and inactive conditions are not embodied; which relata are embodied is an application duty. Arising that is not embodied is not constrained by these conclusions (Flicker)."
+      "zh": "Embodied 是对生起的关系项的表示前提：它恰在活跃时以正的水平作为条件而在。遗骸与不活跃的条件不体现；哪些关系项体现是应用义务。不体现的生起不受这些结论约束（Flicker）。它在一类读法的同一对应下读：哪个条件就是哪个形成由共同的索引给出（relabel，见 life-as-condition-of-life）。",
+      "en": "Embodied is a representational premise about the arising relata: each stands as a condition at a positive level exactly while it is active. Remains and inactive conditions are not embodied; which relata are embodied is an application duty. Arising that is not embodied is not constrained by these conclusions (Flicker). It is read under the one-kind identification: which condition is which formation is supplied by the shared index (relabel, see life-as-condition-of-life)."
     },
     {
-      "zh": "耗散（Dissipative，见 no-finite-part-bears-taking）是物理前提，只用于耗散之下的结论；补充者的代价须表示为它所取的关系项。",
-      "en": "Dissipation (Dissipative, see no-finite-part-bears-taking) is a physical premise, used only for the conclusions under dissipation; the renewer's cost must be represented as relata it takes from."
+      "zh": "耗散（Dissipative，见 no-finite-part-bears-taking）是物理前提，只用于耗散之下的结论；它只约束有封闭有限家族的步（见 no-finite-part-bears-taking 的 Spray），本结果在耗散之下的结论都关于封闭的有限家族。",
+      "en": "Dissipation (Dissipative, see no-finite-part-bears-taking) is a physical premise, used only for the conclusions under dissipation; it constrains only steps at which some finite family is closed (see Spray in no-finite-part-bears-taking), and this result's conclusions under dissipation all concern closed finite families."
     }
   ],
   "correspondence": {
-    "zh": "第五次独立审查（I3）指出，在流的形式中生起只经由它带来的取用起作用，并在其 §4 列出：一个耗散的流的定理会让生成本身而不是取用承担要求。no-finite-part-bears-taking 的界限写明结论不约束不取用的生起；life-as-condition-of-life 写明给予不付出代价、耗散之下的一类读法未陈述。本结果在一类关系项的读法中回答这三处。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“生”与“整体”之间关系的一种形式内容：若生起的生命自身就是其他生命的条件，每次生起都是一次补充；在耗散之下，不息的生起不能由任何有限的部分独自承担（作者的诠释，AI 论证）；它不替代 Ren 的原话，也不推出它是好的。实际的生命是否体现、实际的量是否耗散，是对应与经验问题。",
-    "en": "The fifth independent review (I3) found that in the flow form arising contributes only the uptake it brings, and listed in its §4 that a dissipative flow theorem would make generation itself, rather than uptake, carry the requirement. The boundary of no-finite-part-bears-taking says its conclusion does not constrain arising without taking; life-as-condition-of-life says giving costs nothing there and the one-kind reading under dissipation is not stated. This result answers all three in the one-kind reading. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of the relation between 生 and the whole in those words: where an arising life is itself a condition of other lives, every arising is a replenishment, and under dissipation unceasing arising cannot be borne by any finite part alone (the author's interpretation, an AI argument); it does not replace Ren's words and does not show that it is good. Whether actual lives are embodied, and whether actual quantities dissipate, are questions of correspondence and evidence."
+    "zh": "第五次独立审查（I3）指出，在流的形式中生起只经由它带来的取用起作用，并在其 §4 列出：一个耗散的流的定理会让生成本身而不是取用承担要求。no-finite-part-bears-taking 的界限写明结论不约束不取用的生起；life-as-condition-of-life 写明 Brood 不耗散、耗散之下的一类读法未陈述。本结果在一类关系项的读法中回答这三处。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“生”与“整体”之间关系的一种形式内容：若生起的生命自身就是其他生命的条件，每次生起都是一次补充；在耗散之下，不息的生起不能由任何有限的部分独自承担（作者的诠释，AI 论证）；它不替代 Ren 的原话，也不推出它是好的。实际的生命是否体现、实际的量是否耗散，是对应与经验问题。",
+    "en": "The fifth independent review (I3) found that in the flow form arising contributes only the uptake it brings, and listed in its §4 that a dissipative flow theorem would make generation itself, rather than uptake, carry the requirement. The boundary of no-finite-part-bears-taking says its conclusion does not constrain arising without taking; life-as-condition-of-life says Brood is not dissipative and the one-kind reading under dissipation is not stated. This result answers all three in the one-kind reading. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of the relation between 生 and the whole in those words: where an arising life is itself a condition of other lives, every arising is a replenishment, and under dissipation unceasing arising cannot be borne by any finite part alone (the author's interpretation, an AI argument); it does not replace Ren's words and does not show that it is good. Whether actual lives are embodied, and whether actual quantities dissipate, are questions of correspondence and evidence."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
   "aliases": [
@@ -44,15 +44,15 @@
     "Becoming.Kindling.kindling",
     "Becoming.Kindling.frontier",
     "Becoming.Flicker.flicker",
-    "Becoming.Brood.costless"
+    "Becoming.Brood.not_dissipative"
   ],
   "dependencies": [
     {
       "id": "life-as-condition-of-life",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把“生由生给予”推进为“生成即补充”。",
-        "en": "Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries life from life on to generation as replenishment."
+        "zh": "复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把体现的关系项经由给予而生起推进为“生成即补充”。",
+        "en": "Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries embodied arising through giving on to generation as replenishment."
       },
       "interface": {
         "output": {
@@ -167,15 +167,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "不体现的生起没有代价：Flicker 在一个关系项的耗散世界中不息地生起（Flicker.flicker）；两类读法中没有形成体现（roles_not_embodied）。",
-        "en": "Arising that is not embodied costs nothing: Flicker arises without end in a dissipative world of one relatum (Flicker.flicker); in the two-kind reading no formation is embodied (roles_not_embodied)."
+        "zh": "不体现的生起不需要补充：Flicker 在一个关系项的耗散世界中不息地生起（Flicker.flicker）；两类读法中没有形成体现（roles_not_embodied）。",
+        "en": "Arising that is not embodied needs no replenishment: Flicker arises without end in a dissipative world of one relatum (Flicker.flicker); in the two-kind reading no formation is embodied (roles_not_embodied)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "前提相容并且结论可达：Kindling 平衡、耗散，两方体现并承担自身，各自在任意晚的步生起；包含一方的每个有限家族在任意晚的步打开（Kindling.frontier）。Brood 不耗散（Brood.costless）。",
-        "en": "The premises are consistent and the conclusion attained: Kindling balances and is dissipative, both sides are embodied and bear on themselves, and each arises at arbitrarily late steps; every finite family containing a side opens at arbitrarily late steps (Kindling.frontier). Brood is not dissipative (Brood.costless)."
+        "zh": "前提相容并且结论可达：Kindling 平衡、耗散，两方体现并承担自身，各自在任意晚的步生起；包含一方的每个有限家族在任意晚的步打开（Kindling.frontier）。Brood 不耗散（Brood.not_dissipative）。",
+        "en": "The premises are consistent and the conclusion attained: Kindling balances and is dissipative, both sides are embodied and bear on themselves, and each arises at arbitrarily late steps; every finite family containing a side opens at arbitrarily late steps (Kindling.frontier). Brood is not dissipative (Brood.not_dissipative)."
       }
     }
   ],
@@ -184,14 +184,14 @@
     "en": "Contains no ethical predicate; constrains only the arising of embodied relata, and arising that is not embodied is unconstrained; Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Handing the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T065513.229180Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 614 项定理／1028 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T065513.229180Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation all have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 614 theorems/1028 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T071936.578078Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 676 项定理／1115 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T071936.578078Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation all have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 676 theorems/1115 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "78e3123d20f6deecb6d92638fd5634f11b624b439090b262af3b0d89b143cba9",
+      "sha256": "4a4904e30fd94cf460e8a941f115d31843a81fbb036a2cace8279416226899f5",
       "declarations": [
         "Becoming.Web.Embodied.given_of_arises",
         "Becoming.Web.Embodied.replenishes",
@@ -199,7 +199,6 @@
         "Becoming.Web.Embodied.arising_lowers",
         "Becoming.Web.generation_opens",
         "Becoming.Web.generation_ceases",
-        "Becoming.Brood.costless",
         "Becoming.Handing.even",
         "Becoming.Handing.holder",
         "Becoming.Handing.stands",
@@ -237,13 +236,14 @@
         "Becoming.Web.roles_not_embodied",
         "Becoming.Brood.flow",
         "Becoming.Brood.web",
-        "Becoming.Brood.brood"
+        "Becoming.Brood.brood",
+        "Becoming.Brood.not_dissipative"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "c07d88d10c2af5462f623bf77b6e14e1bac2496bf7b072963c6cf425bc93f90d",
+      "sha256": "ba2eecfbcb551304f12ce22a2869655c53e38721c04a2eebba819441494028b0",
       "declarations": [
         "Becoming.Flow.DissipatesOn.takes_of_gives",
         "Becoming.Flow.ClosedAt",
@@ -263,7 +263,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "3f2bfedaa2198ed975fa8be1aae8a1bc5a0d249e07bcf21a492e7f2b5bfa9274",
+      "sha256": "ef5a8bcfea44ff1aadd4930587b579e96d42aebeb65acbbb50ea6695434cc92e",
       "declarations": [
         "Becoming.Flow",
         "Becoming.Flow.taken",
@@ -294,7 +294,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "27a40fbc515a2311910aaf1533582e463e4e7e80ac8ef25e7b26237556440f6e",
+      "sha256": "602b84162f07c4940ddb50b569ed0b1a3f8595c6d27c9e1d7050de4c8e8761f4",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -310,19 +310,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "1b5dd047cec86a9cb9a879064b1e4e3f8589b80dd91eca6df15f3e25f3b4a828",
+      "sha256": "54c294a996bace9e0db91c25ce243e702234ee44d4b88545e3d538336a99bd86",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "1912c67940e95ac1ad281a2512d42e0cd78e711fdec4494e1f6532539c2ef6f3",
+      "sha256": "47e077148ea211a1956eabedc1cba2ebae2a2c1d19b092ec599435c64308f215",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "db23ad733ccd8b5c39a12245061dd19a7b3f48fcb36644ba506a3e3dbe70259f",
+      "sha256": "be28bfe28698ac5ea4bc73bc69f7b518bd50dbec36c6d6fd6822b9480dce942b",
       "declarations": []
     },
     {
@@ -378,6 +378,14 @@
     {
       "zh": "2026-10-09：P16 新增 Becoming.Wholes 后，合并检查器重跑（20261009T065513.229180Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P16 added Becoming.Wholes, the consolidated checker was rerun (20261009T065513.229180Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16b 整合第六次独立审查、扩展 Becoming.Dissipation、Roles、Identity、Population 与 Correspondence 后，合并检查器重跑（20261009T071936.578078Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P16b integrated the sixth independent review and extended Becoming.Dissipation, Roles, Identity, Population and Correspondence, the consolidated checker was rerun (20261009T071936.578078Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16b 整合第六次独立审查时，Brood.costless 改名为 Brood.not_dissipative，“代价”的措辞改为直述；体现在一类读法的同一对应下读（relabel）；耗散只约束有封闭有限家族的步；主张与证明不变。",
+      "en": "2026-10-09: integrating the sixth independent review, P16b renames Brood.costless to Brood.not_dissipative and replaces the “cost” wording with literal statements; embodiment is read under the one-kind identification (relabel); dissipation constrains only steps at which some finite family is closed; the claim and proofs are unchanged."
     }
   ]
 }

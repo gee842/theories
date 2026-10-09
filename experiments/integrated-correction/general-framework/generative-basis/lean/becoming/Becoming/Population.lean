@@ -53,6 +53,23 @@ theorem mem_cons_cases {a b : α} {q : List α} : b ∈ a :: q → b = a ∨ b �
   | .head _ => .inl rfl
   | .tail _ mem => .inr mem
 
+theorem mem_map_of {g : α → β} {a : α} : ∀ {l : List α}, a ∈ l → g a ∈ l.map g
+  | _ :: _, .head _ => .head _
+  | _ :: _, .tail _ mem => .tail _ (mem_map_of mem)
+
+theorem mem_of_map {g : α → β} (inj : ∀ a b, g a = g b → a = b) {a : α} :
+    ∀ {l : List α}, g a ∈ l.map g → a ∈ l
+  | [], mem => nomatch mem
+  | b :: _, mem => match mem_cons_cases mem with
+    | .inl same => Eq.subst (motive := fun x => x ∈ b :: _) (inj a b same).symm (.head _)
+    | .inr mem => .tail b (mem_of_map inj mem)
+
+/-- Mapping a list one to one keeps it without repetition. -/
+theorem distinct_map {g : α → β} (inj : ∀ a b, g a = g b → a = b) :
+    ∀ {l : List α}, Distinct l → Distinct (l.map g)
+  | [], _ => trivial
+  | _ :: _, ⟨fresh, distinct⟩ => ⟨fun mem => fresh (mem_of_map inj mem), distinct_map inj distinct⟩
+
 /-- Removing one occurrence of `a` keeps every other member. -/
 theorem mem_remove {a b : α} (other : ¬ b = a) : ∀ {p q : List α}, b ∈ p ++ a :: q → b ∈ p ++ q
   | [], _, mem => match mem_cons_cases mem with
@@ -128,6 +145,18 @@ theorem search {p : α → Prop} [decide : ∀ a, Decidable (p a)] :
       | .inr all => .inr fun b mem => match mem with
         | .head _ => has
         | .tail _ mem => all b mem
+
+/-- Whether some member of a list has a decidable property is decidable. -/
+def decideSome {p : α → Prop} [decide : ∀ a, Decidable (p a)] :
+    ∀ l : List α, Decidable (∃ a, a ∈ l ∧ p a)
+  | [] => isFalse fun ⟨_, mem, _⟩ => nomatch mem
+  | a :: l => match decide a with
+    | isTrue holds => isTrue ⟨a, .head l, holds⟩
+    | isFalse lacks => match decideSome l with
+      | isTrue found => isTrue (match found with | ⟨b, mem, holds⟩ => ⟨b, .tail a mem, holds⟩)
+      | isFalse absent => isFalse fun ⟨b, mem, holds⟩ => match mem_cons_cases mem with
+        | .inl same => lacks (Eq.subst (motive := p) same holds)
+        | .inr mem => absent ⟨b, mem, holds⟩
 
 /-- A quantity that ends higher than it starts rises across some step between. -/
 theorem rises_between {q : Nat → Nat} {N : Nat} :

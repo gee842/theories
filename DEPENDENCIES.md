@@ -476,7 +476,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## generation-is-replenishment ← life-as-condition-of-life
 
-`formal-reuse` — 复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把“生由生给予”推进为“生成即补充”。 / Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries life from life on to generation as replenishment.
+`formal-reuse` — 复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把体现的关系项经由给予而生起推进为“生成即补充”。 / Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries embodied arising through giving on to generation as replenishment.
 
 **Producer output / 上游输出:** 体现的关系项只经由给予而生起。 / An embodied relatum arises only as it is given to.
 

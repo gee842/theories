@@ -47,7 +47,14 @@ Results:
   third condition, and G0 there is exactly a seed with N_rel and N_std
   (`Mutualism.significant_iff`). Where each depends only on the other, neither
   co-participation nor interaction relates the bee to the flower
-  (`Mutualism.apart_not_connected`, `Mutualism.apart_not_interacting`).
+  (`Mutualism.apart_not_connected`, `Mutualism.apart_not_interacting`), though both are
+  embodied (`Mutualism.apart_embodied`): the valuations relate events only through a
+  shared condition, so embodiment does not enter them, and only a self-dependence ties
+  a drawer to the drawn-on relatum's own events. A valuation reading embodiment directly
+  is not stated. Relabelling the condition side of a one-kind web onto itself keeps the
+  connection of both valuations (`relabel_valuation_connected`,
+  `relabel_interaction_connected`): which condition is which relatum is not seen by
+  them.
 
 Not settled:
 * Adjoining a renewed condition on which every formation depends at a positive level
@@ -554,6 +561,23 @@ theorem SelfBearing.interacts {X : Type} {W : Web X X} {x : X} (self : W.SelfBea
     W.Interacts x e (x, s) :=
   .inl ⟨drawn, self s active⟩
 
+/-- Relabelling the conditions onto them keeps the connection of co-participation: the
+valuation does not see which condition is which relatum. -/
+theorem relabel_valuation_connected {X : Type} {W : Web X X} {π : X → X}
+    (onto : ∀ c, ∃ y, π y = c) (own sig : Pos → X × Nat → Prop) :
+    ((W.relabel π).valuation own sig).Connected ↔ (W.valuation own sig).Connected :=
+  Valuation.connected_iff_of_map (q := fun e => e) (fun _ _ same => same)
+    (fun e _ => ⟨e, rfl⟩) (fun e => relabel_alive onto e.2 e.1)
+    fun _ _ => ⟨fun ⟨y, joins⟩ => ⟨π y, joins⟩, exists_of_onto onto⟩
+
+/-- Nor does interaction. -/
+theorem relabel_interaction_connected {X : Type} {W : Web X X} {π : X → X}
+    (onto : ∀ c, ∃ y, π y = c) (own sig : Pos → X × Nat → Prop) :
+    ((W.relabel π).interaction own sig).Connected ↔ (W.interaction own sig).Connected :=
+  Valuation.connected_iff_of_map (q := fun e => e) (fun _ _ same => same)
+    (fun e _ => ⟨e, rfl⟩) (fun e => relabel_alive onto e.2 e.1)
+    fun _ _ => ⟨fun ⟨y, interacts⟩ => ⟨π y, interacts⟩, exists_of_onto onto⟩
+
 end Web
 
 namespace Mutualism
@@ -591,6 +615,15 @@ theorem apart_not_interacting : ¬ (apart.interaction own sig).Connected := fun 
       | .inl ⟨drawn, depends, _⟩ => (other_cancel (drawn.symm.trans depends)).symm.trans held
       | .inr ⟨⟨depends, _⟩, drawn⟩ => (other_cancel (depends.symm.trans drawn)).symm.trans held)
     (connected (.bee, 0) (.flower, 0) (apart_alive _) (apart_alive _)) rfl)
+
+/-- Embodiment does not enter either valuation: in `apart` both relata are embodied, each
+depends on and draws on the other, and activity needs support, yet neither
+co-participation nor interaction relates the bee to the flower. -/
+theorem apart_embodied :
+    (∀ x, apart.Embodied x) ∧ apart.Dependent ∧
+    ¬ (apart.valuation own sig).Connected ∧ ¬ (apart.interaction own sig).Connected :=
+  ⟨fun _ _ => ⟨fun _ => Nat.zero_lt_one, fun _ => trivial⟩, fun _ _ _ _ _ => Nat.le_refl 1,
+   apart_not_connected own sig, apart_not_interacting own sig⟩
 
 end Mutualism
 

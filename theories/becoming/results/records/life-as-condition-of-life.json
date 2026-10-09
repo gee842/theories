@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "life-as-condition-of-life",
   "title": {
-    "zh": "形成与条件是一个关系项的两种角色：生作为生的条件，生由生给予",
-    "en": "Formations and conditions are two roles of one relatum: life as a condition of life, and life given by life"
+    "zh": "形成与条件是一个关系项的两种角色：生作为生的条件，体现的关系项经由另一个活跃者的给予而生起",
+    "en": "Formations and conditions are two roles of one relatum: life as a condition of life, and embodied arising through another's giving"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T06:45:00+00:00",
+  "reviewed_at_utc": "2026-10-09T07:27:13+00:00",
   "claim": {
-    "zh": "把依存网与流读作一类关系项（Web.roles、Flow.roles）：一个形成在零水平上作为条件，没有谁依存、汲取、从它取用或向它给予；一个条件从不活跃，不依存、不汲取、不取用也不给予。这样读，依存网保持支持、Dependent、条件的更新与消耗、形成的类、侵蚀、逐步读法中活的事件、生起与不息生成；流保持取用与给予、平衡、家族的取用者与补充者，以及不止地更多；共同参与与相互作用两种估值的连通不变。其中曾活跃的形成既不体现也不承担自身。一个关系项体现（Embodied），当它恰在活跃时以正的水平作为条件而在；它承担自身（SelfBearing），当它活跃时以正的需要依存于自身的水平。在 Dependent 之下：承担自身的关系项活跃时作为条件而在；依存于体现关系项（正需要）的形成只在该关系项活跃时活跃；活动沿每条这样的依存链传递，所以一个在某步不活跃的关系项在该步终结每个依存链到达它的形成；在需要为一时消耗体现的关系项就是终结它；在承担自身的体现关系项终结之步汲取它，断裂它自身的依存，不论是否另有形成依存于它，所以该汲取事件不是 living。在只有活跃形成给予的平衡流中，体现的关系项只经由另一个活跃形成的给予而生起。汲取承担自身的关系项，与它的每个活跃事件相互作用：蜜蜂与花各自依存于自身与对方并汲取对方，彼此更新，每个事件都是 living，没有第三个条件，相互作用读法就连通，G0 在那里恰为种子加两项中立；各自只依存于对方时，共同参与与相互作用都不把蜜蜂与花关联起来。狐依存于它吃的兔，随兔一同终结，它的汲取断裂兔自身的依存；一代代形成不止地生起，每一代由前一代给予。不用伦理前提，也不用 Lean 公理。",
-    "en": "Read webs and flows with one kind of relatum (Web.roles, Flow.roles): a formation stands at level zero as a condition, and nothing depends on it, draws on it, takes from it or gives to it; a condition is never active, and depends on, draws on, takes from and gives to nothing. So read, a web keeps support, Dependent, the renewal and consumption of conditions, the classes of formations, undermining, the living events of the stepwise reading, arising and unceasing generation; a flow keeps what is taken and given, balance, the takers and renewers of a family, and more without end; and the co-participation and interaction valuations keep their connection. In this reading no formation active at some step is embodied or bears on itself. A relatum is embodied (Embodied) when it stands as a condition at a positive level exactly while it is active; it bears on itself (SelfBearing) when, while active, it depends on its own level at a positive need. Under Dependent: a relatum bearing on itself stands as a condition while active; a formation depending on an embodied relatum at a positive need is active only while that relatum is; activity passes along every chain of such dependence, so a relatum not active at a step ends there every formation whose chain reaches it; consuming an embodied relatum at a need of one ends it; drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence whether or not any other formation depends on it, so the drawing event is not living. In a balanced flow in which only active formations give, an embodied relatum arises only as another active formation gives to it. Drawing on a relatum that bears on itself interacts with each of its active events: a bee and a flower, each depending on itself and on the other and drawing on the other, renew each other, every event is living, and with no third condition the interaction reading is connected, so that G0 there is exactly a seed with both neutralities; where each depends only on the other, neither co-participation nor interaction relates the bee to the flower. A fox depending on the hare it eats ends with it, and its eating breaks the hare's own dependence; generation after generation arises without end, each given by the one before. No ethical premise and no Lean axiom is used."
+    "zh": "把依存网与流读作一类关系项（Web.roles、Flow.roles）：一个形成在零水平上作为条件，没有谁依存、汲取、从它取用或向它给予；一个条件从不活跃，不依存、不汲取、不取用也不给予。这样读，依存网保持支持、Dependent、条件的更新与消耗、形成的类、侵蚀、逐步读法中活的事件、生起、不息生成与活跃形成的普查；流保持取用与给予、平衡、Acting、Taking、present 不重复、家族的取用者与补充者、不止地更多与耗散（列出的读法）；共同参与与相互作用两种估值的连通不变。其中曾活跃的形成既不体现也不承担自身。一类的依存网 Web X X 本身就是两个索引类型相同的两类网；一类读法另加的是条件 x 与形成 x 是同一个关系项，这由共同的索引给出：把条件一侧满射地重新标号，Dependent、侵蚀、活的事件与两种估值的连通都不变，而体现与承担自身改变（relabel）。一个关系项体现（Embodied），当它恰在活跃时以正的水平作为条件而在；它承担自身（SelfBearing），当它活跃时以正的需要依存于自身的水平。在 Dependent 之下：承担自身的关系项活跃时作为条件而在，体现时它对自身的依存恰在它活跃时被满足；依存于体现关系项（正需要）的形成只在该关系项活跃时活跃；活动沿每条这样的依存链传递，所以一个在某步不活跃的关系项在该步终结每个依存链到达它的形成；在需要为一时消耗体现的关系项就是终结它；在承担自身的体现关系项终结之步汲取它，断裂它自身的依存，不论是什么终结了它，也不论是否另有形成依存于它，所以该汲取事件不是 living：不取用的旁观者在花因自身的取用而凋之步汲取它，以及花自己的最后事件，都是如此（Wilting）。在只有活跃形成给予的平衡流中，体现的关系项只经由另一个活跃形成的给予而生起；给予者不必体现、承担自身或依存于任何东西（SunSeed），只有体现的关系项给予时（表示所给的前提），给予者也体现。汲取承担自身的关系项，与它的每个活跃事件相互作用：蜜蜂与花各自依存于自身与对方并汲取对方，彼此更新，每个事件都是 living，没有第三个条件，相互作用读法就连通，G0 在那里恰为种子加两项中立；各自只依存于对方时，两者都体现，共同参与与相互作用仍不把蜜蜂与花关联起来：体现本身不进入估值。狐依存于它汲取的兔，随兔一同终结，它在兔终结之步的汲取断裂兔自身的依存；一代代形成不止地生起，每一代由前一代给予。不用伦理前提，也不用 Lean 公理。",
+    "en": "Read webs and flows with one kind of relatum (Web.roles, Flow.roles): a formation stands at level zero as a condition, and nothing depends on it, draws on it, takes from it or gives to it; a condition is never active, and depends on, draws on, takes from and gives to nothing. So read, a web keeps support, Dependent, the renewal and consumption of conditions, the classes of formations, undermining, the living events of the stepwise reading, arising, unceasing generation and a census of the active formations; a flow keeps what is taken and given, balance, Acting, Taking, present without repetition, the takers and renewers of a family, more without end and dissipation (the listed readings); and the co-participation and interaction valuations keep their connection. In this reading no formation active at some step is embodied or bears on itself. A one-kind web Web X X is itself a two-kind web whose index types coincide; what the one-kind reading adds is that condition x and formation x are one relatum, which the shared index supplies: relabelling the condition side onto itself keeps Dependent, undermining, the living events and the connection of both valuations, and changes which relata are embodied and bear on themselves (relabel). A relatum is embodied (Embodied) when it stands as a condition at a positive level exactly while it is active; it bears on itself (SelfBearing) when, while active, it depends on its own level at a positive need. Under Dependent: a relatum bearing on itself stands as a condition while active, and if it is embodied its self-dependence is met exactly while it is active; a formation depending on an embodied relatum at a positive need is active only while that relatum is; activity passes along every chain of such dependence, so a relatum not active at a step ends there every formation whose chain reaches it; consuming an embodied relatum at a need of one ends it; drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence whatever ends it and whether or not any other formation depends on it, so the drawing event is not living: a bystander that takes nothing, drawing on a flower as it wilts by its own taking, and the flower's own last event are such events (Wilting). In a balanced flow in which only active formations give, an embodied relatum arises only as another active formation gives to it; the giver need not be embodied, bear on itself or depend on anything (SunSeed), and where only embodied relata give, a supplied premise, it is embodied too. Drawing on a relatum that bears on itself interacts with each of its active events: a bee and a flower, each depending on itself and on the other and drawing on the other, renew each other, every event is living, and with no third condition the interaction reading is connected, so that G0 there is exactly a seed with both neutralities; where each depends only on the other, both are embodied and still neither co-participation nor interaction relates the bee to the flower: embodiment itself does not enter the valuations. A fox depending on the hare it draws on ends with it, and its drawing across the step at which the hare ends breaks the hare's own dependence; generation after generation arises without end, each given by the one before. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -19,12 +19,16 @@
       "en": "Embodied and SelfBearing are representational premises about particular relata: remains stand as conditions after activity ends, and a condition such as water stands without being active, so neither is embodied; which relata are embodied, and whether a formation bears on itself, are application duties."
     },
     {
+      "zh": "一类读法的同一对应：条件 x 就是形成 x，由共同的索引类型给出。两类读法检查不到它（relabel）；对应用，哪个条件就是哪个形成是对应义务，与 Embodied 一样。",
+      "en": "The one-kind identification: condition x is formation x, given by the shared index type. The two-kind readings do not check it (relabel); for an application, which condition is which formation is a correspondence duty, as Embodied is."
+    },
+    {
       "zh": "Dependent：形成只在当下依存的条件支持时活跃（不含缓冲、储备与滞后）。",
       "en": "Dependent: a formation is active only where the conditions it then depends on support it (buffers, reserves and lags are left out)."
     },
     {
-      "zh": "生由生给予需要流平衡依存网，并且只有活跃的形成给予（Acting）。",
-      "en": "Life from life needs the flow to balance the web, and only active formations to give (Acting)."
+      "zh": "体现的关系项经由另一个活跃者的给予而生起，需要流平衡依存网，并且只有活跃的形成给予（Acting）；给予者体现，另需只有体现的关系项给予。",
+      "en": "Arising through another's giving needs the flow to balance the web, and only active formations to give (Acting); that the giver is embodied needs, in addition, that only embodied relata give."
     },
     {
       "zh": "估值的结果用逐步读法的 living；相互作用是公开的对应纪律，不是展开的推论。",
@@ -32,8 +36,8 @@
     }
   ],
   "correspondence": {
-    "zh": "第四次独立审查（H14）指出，Web 与 Flow 把形成与条件分为两类，省略了“生作为生的条件”：父母与后代、森林与林下、群落与学习者，只能经由代理条件表示。按非二元方法（先说明同一生成展开中的关系怎样形成、持续和改变，再说明行动者与承受者怎样在其中分化），本结果把形成与条件读作一个关系项的两种角色，两类读法是没有形成作为条件的特例。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把“生由生给予”（Embodied.arises_given）与“生作为生的条件”（active_of_bearing、coextinct）读作原话中两个“生”之间关系的一种形式内容：第二个“生”（生起）由另一个生命的活动给出，生命以其他生命为条件（作者的诠释，AI 论证）；它不替代 Ren 的原话，也不推出它是好的。Embodied.ending_breaks 使在一个承担自身的生命终结之步汲取它的事件不是 living；是否应如此属于 Ren 对生生的读法。",
-    "en": "The fourth independent review (H14) found that Web and Flow split formations and conditions into two kinds, omitting life as a condition of life (parents and young, a forest and its understory, a community and its learners), which could be represented only through a proxy condition. Following the nondual method (first say how relations in one becoming unfold, form, persist and change, then how actors and patients differentiate within them), this result reads formations and conditions as two roles of one relatum, the two-kind reading being the special case in which no formation is a condition. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads “life given by life” (Embodied.arises_given) and “life as a condition of life” (active_of_bearing, coextinct) as one formal content of the relation between the two 生 of those words: the second 生, arising, is given by another life's activity, and lives are conditions of lives (the author's interpretation, an AI argument); it does not replace Ren's words and does not show that it is good. Embodied.ending_breaks makes an event drawing on a life that bears on itself, across the step at which that life ends, not living; whether it should be belongs to Ren's reading of 生生."
+    "zh": "第四次独立审查（H14）指出，Web 与 Flow 把形成与条件分为两类，省略了“生作为生的条件”：父母与后代、森林与林下、群落与学习者，只能经由代理条件表示。按非二元方法（先说明同一生成展开中的关系怎样形成、持续和改变，再说明行动者与承受者怎样在其中分化），本结果把形成与条件读作一个关系项的两种角色，两类读法可以嵌入为没有形成作为条件的一类读法；一类读法另需哪个条件就是哪个形成的对应，它由共同的索引给出，是表示的前提（第六次独立审查 J4）。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把“生作为生的条件”（active_of_bearing、coextinct）与“体现的关系项经由另一个活跃者的给予而生起”（Embodied.arises_given）读作原话中两个“生”之间关系的一种形式内容：生命以其他生命为条件，第二个“生”（生起）由另一个活跃者的给予给出，只在只有生命给予的前提下给予者才是生命（arises_from_embodied）（作者的诠释，AI 论证；第六次独立审查 J7 更正了此前“由另一个生命的活动给出”的说法）；它不替代 Ren 的原话，也不推出它是好的。Embodied.ending_breaks 使在一个承担自身的生命终结之步汲取它的事件不是 living，不论是什么终结了它：旁观的汲取者、自然的终结与生命自身的最后事件都在内（Wilting）；是否应如此、对哪些汲取者，属于 Ren 对生生的读法。",
+    "en": "The fourth independent review (H14) found that Web and Flow split formations and conditions into two kinds, omitting life as a condition of life (parents and young, a forest and its understory, a community and its learners), which could be represented only through a proxy condition. Following the nondual method (first say how relations in one becoming unfold, form, persist and change, then how actors and patients differentiate within them), this result reads formations and conditions as two roles of one relatum; the two-kind reading embeds as the one-kind reading in which no formation is a condition, and the one-kind reading needs in addition the correspondence of which condition is which formation, supplied by the shared index as a premise of the representation (sixth independent review, J4). Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads “life as a condition of life” (active_of_bearing, coextinct) and “an embodied relatum arises through another's giving” (Embodied.arises_given) as one formal content of the relation between the two 生 of those words: lives are conditions of lives, and the second 生, arising, is given by another active relatum's giving, which is a life only where only lives give (arises_from_embodied) (the author's interpretation, an AI argument; J7 of the sixth independent review corrected the earlier “given by another life's activity”); it does not replace Ren's words and does not show that it is good. Embodied.ending_breaks makes an event drawing on a life that bears on itself, across the step at which that life ends, not living, whatever ends it: bystanders, natural endings and the life's own last event are included (Wilting); whether it should be, and for which drawers, belongs to Ren's reading of 生生."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
   "aliases": [
@@ -53,7 +57,22 @@
     "Becoming.Mutualism.significant_iff",
     "Becoming.Mutualism.apart_not_interacting",
     "Becoming.Predation.fox_ends",
-    "Becoming.Brood.brood"
+    "Becoming.Brood.brood",
+    "Becoming.Flow.roles_acting",
+    "Becoming.Flow.roles_taking",
+    "Becoming.Web.roles_census",
+    "Becoming.Flow.roles_dissipative",
+    "Becoming.Web.relabel",
+    "Becoming.Web.relabel_dependent",
+    "Becoming.Web.relabel_undermining",
+    "Becoming.Web.relabel_interaction_connected",
+    "Becoming.Web.SelfBearing.met_iff",
+    "Becoming.Web.Embodied.arises_from_embodied",
+    "Becoming.Mutualism.apart_relabelled",
+    "Becoming.Mutualism.apart_embodied",
+    "Becoming.Wilting.wilting",
+    "Becoming.Wilting.relabelled_not_embodied",
+    "Becoming.SunSeed.sun_gives"
   ],
   "dependencies": [
     {
@@ -160,8 +179,8 @@
     {
       "id": "no-finite-part-bears-taking",
       "detail": {
-        "zh": "Brood 中给予不付出代价，不耗散（Brood.costless）；耗散之下的一类读法见 generation-is-replenishment。",
-        "en": "Giving costs nothing in Brood, which is not dissipative (Brood.costless); the one-kind reading under dissipation is in generation-is-replenishment."
+        "zh": "Brood 只给予不取用，不耗散（Brood.not_dissipative）；耗散之下的一类读法见 generation-is-replenishment。",
+        "en": "Brood gives without taking and is not dissipative (Brood.not_dissipative); the one-kind reading under dissipation is in generation-is-replenishment."
       }
     },
     {
@@ -174,15 +193,15 @@
     {
       "id": "theory-of-becoming-foundation",
       "detail": {
-        "zh": "非二元方法：形成与条件是同一展开中的角色，两类表示是一类读法的特例。整体的演绎仍开放。",
-        "en": "Nondual method: formations and conditions are roles in one unfolding, and the two-kind representation is a special case of the one-kind reading. The whole deduction remains open."
+        "zh": "非二元方法：形成与条件是同一展开中的角色，两类表示可以嵌入一类读法，同一对应由共同的索引给出。整体的演绎仍开放。",
+        "en": "Nondual method: formations and conditions are roles in one unfolding, and the two-kind representation embeds in the one-kind reading, with the identification supplied by the shared index. The whole deduction remains open."
       }
     },
     {
       "id": "generation-is-replenishment",
       "detail": {
-        "zh": "体现的关系项的生起就是补充；在耗散之下，体现的生成复现的有限家族须与其外交换。该结果把本结果的“生由生给予”推进为数量与耗散的形式。",
-        "en": "The arising of an embodied relatum is replenishment; under dissipation a finite family in which embodied generation recurs must exchange beyond itself. That result carries this one's life from life on to amounts and dissipation."
+        "zh": "体现的关系项的生起就是补充；在耗散之下，体现的生成复现的有限家族须与其外交换。该结果把本结果的生起经由给予推进为数量与耗散的形式。",
+        "en": "The arising of an embodied relatum is replenishment; under dissipation a finite family in which embodied generation recurs must exchange beyond itself. That result carries this one's arising through giving on to amounts and dissipation."
       }
     }
   ],
@@ -190,38 +209,52 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "detail": {
-        "zh": "不承担自身时，直接的关系看不见：Mutualism.apart 中蜜蜂与花各自只依存于对方，共同参与与相互作用都不连通（apart_not_connected、apart_not_interacting）。",
-        "en": "Without self-bearing the direct relation is invisible: in Mutualism.apart, where each of the bee and the flower depends only on the other, neither co-participation nor interaction connects them (apart_not_connected, apart_not_interacting)."
+        "zh": "不承担自身时，直接的关系看不见：Mutualism.apart 中蜜蜂与花各自只依存于对方，共同参与与相互作用都不连通（apart_not_connected、apart_not_interacting），尽管两者都体现（apart_embodied）：估值只经由共同的条件关联事件，体现本身不进入估值，只有承担自身把体现的关系项的活动接到汲取它的事件上（第六次独立审查 J5）。",
+        "en": "Without self-bearing the direct relation is invisible: in Mutualism.apart, where each of the bee and the flower depends only on the other, neither co-participation nor interaction connects them (apart_not_connected, apart_not_interacting), though both are embodied (apart_embodied): the valuations relate events only through a shared condition, so embodiment itself does not enter them, and only a self-dependence ties the embodied relatum's activity to the events drawing on it (sixth independent review, J5)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "两类读法中曾活跃的形成既不体现也不承担自身（roles_not_embodied、roles_not_selfBearing）：两类表示省略的正是体现。",
-        "en": "In the two-kind reading no formation active at some step is embodied or bears on itself (roles_not_embodied, roles_not_selfBearing): what the two-kind representation omits is exactly embodiment."
+        "zh": "两类读法中曾活跃的形成既不体现也不承担自身（roles_not_embodied、roles_not_selfBearing）；两类表示省略的是形成与条件的同一对应，体现与承担自身是在这一对应下的读法：把条件一侧满射地重新标号，两类读法不变，体现与承担自身改变（relabel_dependent、relabel_undermining、Mutualism.apart_relabelled、Wilting.relabelled_not_embodied；第六次独立审查 J4）。",
+        "en": "In the two-kind reading no formation active at some step is embodied or bears on itself (roles_not_embodied, roles_not_selfBearing); what the two-kind representation omits is the identification of formations with conditions, under which embodiment and bearing on oneself are read: relabelling the condition side onto itself keeps the two-kind readings and changes embodiment and self-bearing (relabel_dependent, relabel_undermining, Mutualism.apart_relabelled, Wilting.relabelled_not_embodied; sixth independent review, J4)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "detail": {
-        "zh": "前提相容并且结论可达：Brood 平衡、Acting、Dependent，每代体现并承担自身，生成不息；Predation 中狐的汲取是断裂，狐随兔终结。",
-        "en": "The premises are consistent and the conclusions attained: Brood balances, is Acting and Dependent, each generation is embodied and bears on itself, and generation is unceasing; in Predation the fox's drawing is breaking and the fox ends with the hare."
+        "zh": "前提相容并且结论可达：Brood 平衡、Acting、Dependent，每代体现并承担自身，生成不息；Predation 中狐在兔终结之步的汲取是断裂，狐随兔终结。",
+        "en": "The premises are consistent and the conclusions attained: Brood balances, is Acting and Dependent, each generation is embodied and bears on itself, and generation is unceasing; in Predation the fox's drawing across the step at which the hare ends is breaking and the fox ends with the hare."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "ending_breaks 读的是与终结的同时：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取仍是断裂并侵蚀，花自己的最后事件也是（Wilting.wilting；第六次独立审查 J6）。在 Dependent 与体现之下，对自身的依存恰在活跃时被满足（SelfBearing.met_iff）。",
+        "en": "ending_breaks reads co-occurrence with the ending: the flower wilts by its own taking, and the bee, which never takes, still breaks and undermines when it draws at that step, as does the flower's own last event (Wilting.wilting; sixth independent review, J6). Under Dependent and embodiment, a self-dependence is met exactly while the relatum is active (SelfBearing.met_iff)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "arises_given 的给予者只是一个活跃的关系项：不体现、不承担自身、不依存于任何东西的太阳可以是唯一的给予者（SunSeed.sun_gives；第六次独立审查 J7）。",
+        "en": "The giver in arises_given is an active relatum, not a life: a sun that is not embodied, does not bear on itself and depends on nothing can be the only giver (SunSeed.sun_gives; sixth independent review, J7)."
       }
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词；Embodied 与 SelfBearing 是表示前提，遗骸与不活跃的条件不体现；Dependent 排除缓冲、储备、休眠与滞后，共灭在它们之下不必成立；一类读法不保持 Acting、Taking 与 Dissipative 的陈述；给予在此不付出代价（Brood 不耗散），耗散之下的一类读法见 generation-is-replenishment；终结承担自身的生命是否计入不 living 属于 Ren；见证都是最小见证；新名称最终由 Ren 定。",
-    "en": "Contains no ethical predicate; Embodied and SelfBearing are representational premises, and remains and inactive conditions are not embodied; Dependent leaves out buffers, reserves, dormancy and lags, under which coextinction need not hold; the one-kind reading is not shown to keep Acting, Taking or Dissipative; giving costs nothing here (Brood is not dissipative), and the one-kind reading under dissipation is in generation-is-replenishment; whether ending a life that bears on itself counts against living is Ren's choice; the witnesses are minimal; the final choice of names is Ren's."
+    "zh": "不含伦理谓词；Embodied 与 SelfBearing 是表示前提，遗骸与不活跃的条件不体现；Dependent 排除缓冲、储备、休眠与滞后，共灭在它们之下不必成立；一类读法保持的是列出的读法（Acting、Taking、普查、present 不重复与耗散在内），不是每个陈述的读法；一类读法的同一对应由共同的索引给出，两类读法检查不到它；体现不进入估值；Brood 只给予不取用，不耗散，耗散之下的一类读法见 generation-is-replenishment；ending_breaks 读的是与终结的同时，不读因果，在承担自身的生命终结之步汲取它是否计入不 living、对哪些汲取者，属于 Ren；arises_given 的给予者不必是生命；见证都是最小见证；新名称最终由 Ren 定。",
+    "en": "Contains no ethical predicate; Embodied and SelfBearing are representational premises, and remains and inactive conditions are not embodied; Dependent leaves out buffers, reserves, dormancy and lags, under which coextinction need not hold; the one-kind reading keeps the listed readings (Acting, Taking, a census, present without repetition and dissipation among them), not every stated reading; its identification of formations with conditions is supplied by the shared index and not checked by the two-kind readings; embodiment does not enter the valuations; Brood gives without taking and is not dissipative, and the one-kind reading under dissipation is in generation-is-replenishment; ending_breaks reads co-occurrence with an ending, not causation, and whether drawing on a self-bearing life at its last step counts against living, and for which drawers, is Ren's choice; the giver of arises_given need not be a life; the witnesses are minimal; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T065513.229180Z）：Becoming.Roles 的 82 项定理（本记录 54 项，另 28 项属于 generation-is-replenishment）与 Becoming.Correspondence 新增的 9 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 614 项定理／1028 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §18，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T065513.229180Z): the 82 theorems of Becoming.Roles (54 for this record, 28 for generation-is-replenishment) and the 9 theorems added to Becoming.Correspondence all have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 614 theorems/1028 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §18 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T071936.578078Z）：Becoming.Roles 的 110 项定理（本记录 82 项，另 28 项属于 generation-is-replenishment）与 Becoming.Correspondence 中本记录的 12 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 676 项定理／1115 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §18；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T071936.578078Z): the 110 theorems of Becoming.Roles (82 for this record, 28 for generation-is-replenishment) and the 12 theorems of Becoming.Correspondence belonging to this record all have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 676 theorems/1115 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §18 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "78e3123d20f6deecb6d92638fd5634f11b624b439090b262af3b0d89b143cba9",
+      "sha256": "4a4904e30fd94cf460e8a941f115d31843a81fbb036a2cace8279416226899f5",
       "declarations": [
         "Becoming.total_map",
         "Becoming.total_congr",
@@ -293,13 +326,52 @@
         "Becoming.Brood.flow",
         "Becoming.Brood.web",
         "Becoming.Brood.arises",
-        "Becoming.Brood.brood"
+        "Becoming.Brood.brood",
+        "Becoming.Flow.roles_acting",
+        "Becoming.Flow.roles_dissipative",
+        "Becoming.Flow.roles_distinct",
+        "Becoming.Flow.roles_taking",
+        "Becoming.Mutualism.apart_relabelled",
+        "Becoming.Mutualism.other_twice",
+        "Becoming.SunSeed.Relatum",
+        "Becoming.SunSeed.flow",
+        "Becoming.SunSeed.sprout",
+        "Becoming.SunSeed.sun_gives",
+        "Becoming.SunSeed.web",
+        "Becoming.Web.Embodied.arises_from_embodied",
+        "Becoming.Web.SelfBearing.met_iff",
+        "Becoming.Web.exists_of_onto",
+        "Becoming.Web.relabel",
+        "Becoming.Web.relabel_alive",
+        "Becoming.Web.relabel_dependent",
+        "Becoming.Web.relabel_undermining",
+        "Becoming.Web.roles_census",
+        "Becoming.Wilting.Relatum",
+        "Becoming.Wilting.dependent",
+        "Becoming.Wilting.embodied",
+        "Becoming.Wilting.ends",
+        "Becoming.Wilting.fade",
+        "Becoming.Wilting.fade_active",
+        "Becoming.Wilting.flow",
+        "Becoming.Wilting.relabelled_not_embodied",
+        "Becoming.Wilting.selfBearing",
+        "Becoming.Wilting.swap",
+        "Becoming.Wilting.web",
+        "Becoming.Wilting.wilting",
+        "Becoming.conditionsOf",
+        "Becoming.conditionsOf_of_mem",
+        "Becoming.distinct_conditionsOf",
+        "Becoming.inl_injective",
+        "Becoming.inr_injective",
+        "Becoming.inr_not_mem",
+        "Becoming.mem_of_conditionsOf",
+        "Becoming.total_conditionsOf"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "role": "proof",
-      "sha256": "7c0f50d676eea472fa5a2244f89bee5efcb4ad9ae804e6a72057d3c3b10eda5a",
+      "sha256": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
       "declarations": [
         "Becoming.Valuation.connected_iff_of_map",
         "Becoming.Web.roles_valuation_connected",
@@ -312,7 +384,10 @@
         "Becoming.Mutualism.apart_not_interacting",
         "Becoming.Web.Interacts",
         "Becoming.Web.interaction",
-        "Becoming.Web.Bearing"
+        "Becoming.Web.Bearing",
+        "Becoming.Mutualism.apart_embodied",
+        "Becoming.Web.relabel_interaction_connected",
+        "Becoming.Web.relabel_valuation_connected"
       ]
     },
     {
@@ -346,7 +421,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "3f2bfedaa2198ed975fa8be1aae8a1bc5a0d249e07bcf21a492e7f2b5bfa9274",
+      "sha256": "ef5a8bcfea44ff1aadd4930587b579e96d42aebeb65acbbb50ea6695434cc92e",
       "declarations": [
         "Becoming.Flow",
         "Becoming.Flow.Balances",
@@ -383,19 +458,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "1b5dd047cec86a9cb9a879064b1e4e3f8589b80dd91eca6df15f3e25f3b4a828",
+      "sha256": "54c294a996bace9e0db91c25ce243e702234ee44d4b88545e3d538336a99bd86",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "1912c67940e95ac1ad281a2512d42e0cd78e711fdec4494e1f6532539c2ef6f3",
+      "sha256": "47e077148ea211a1956eabedc1cba2ebae2a2c1d19b092ec599435c64308f215",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "db23ad733ccd8b5c39a12245061dd19a7b3f48fcb36644ba506a3e3dbe70259f",
+      "sha256": "be28bfe28698ac5ea4bc73bc69f7b518bd50dbec36c6d6fd6822b9480dce942b",
       "declarations": []
     },
     {
@@ -421,6 +496,12 @@
       "role": "provenance",
       "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
+      "role": "review",
+      "sha256": "d0f676a0375d520738f2e017fc6c2d165b73733c9c8b50057e155bcb00ce66ba",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -440,8 +521,8 @@
     }
   ],
   "next_delta": {
-    "zh": "缓冲、储备与休眠之下的共灭；遗骸与形成的跨步关系；一类读法保持 Acting 与 Taking；终结承担自身的生命是否计入不 living（Ren）；生作为生的条件与“更多”的关系。耗散之下的一类读法已由 generation-is-replenishment 陈述。",
-    "en": "Coextinction under buffers, reserves and dormancy; the relation across steps between remains and the formation; keeping Acting and Taking under the one-kind reading; whether ending a life that bears on itself counts against living (Ren); the relation of life as a condition of life to “more”. The one-kind reading under dissipation is stated in generation-is-replenishment."
+    "zh": "缓冲、储备与休眠之下的共灭；遗骸与形成的跨步关系；直接读出体现的估值（把汲取者与它所汲取的体现关系项的事件关联）；以反事实关系读“汲取终结了它”；终结承担自身的生命是否计入不 living、对哪些汲取者（Ren）；生作为生的条件与“更多”的关系。耗散之下的一类读法已由 generation-is-replenishment 陈述。",
+    "en": "Coextinction under buffers, reserves and dormancy; the relation across steps between remains and the formation; a valuation reading embodiment directly (relating a drawer to the events of the embodied relatum it draws on); reading “the drawing ends it” through a counterfactual relation; whether ending a life that bears on itself counts against living, and for which drawers (Ren); the relation of life as a condition of life to “more”. The one-kind reading under dissipation is stated in generation-is-replenishment."
   },
   "history": [
     {
@@ -463,6 +544,14 @@
     {
       "zh": "2026-10-09：P16 新增 Becoming.Wholes 后，合并检查器重跑（20261009T065513.229180Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P16 added Becoming.Wholes, the consolidated checker was rerun (20261009T065513.229180Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16b 整合第六次独立审查、扩展 Becoming.Dissipation、Roles、Identity、Population 与 Correspondence 后，合并检查器重跑（20261009T071936.578078Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P16b integrated the sixth independent review and extended Becoming.Dissipation, Roles, Identity, Population and Correspondence, the consolidated checker was rerun (20261009T071936.578078Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16b 整合第六次独立审查（J4–J8、J11）：标题“生由生给予”改为“体现的关系项经由另一个活跃者的给予而生起”；一类读法的同一对应作为表示前提（relabel）；体现不进入估值（apart_embodied）；ending_breaks 是与终结的同时（Wilting、SelfBearing.met_iff）；给予者不必是生命（SunSeed，另有 arises_from_embodied）；一类读法也保持 Acting、Taking、普查、present 不重复与耗散；Brood.costless 改名为 Brood.not_dissipative；原有定理与证明不变。",
+      "en": "2026-10-09: P16b integrates the sixth independent review (J4–J8, J11): the title's “life given by life” becomes “embodied arising through another's giving”; the one-kind identification is a premise of the representation (relabel); embodiment does not enter the valuations (apart_embodied); ending_breaks is co-occurrence with an ending (Wilting, SelfBearing.met_iff); the giver need not be a life (SunSeed, with arises_from_embodied); the one-kind reading also keeps Acting, Taking, a census, present without repetition and dissipation; Brood.costless is renamed Brood.not_dissipative; the existing theorems and proofs are unchanged."
     }
   ]
 }

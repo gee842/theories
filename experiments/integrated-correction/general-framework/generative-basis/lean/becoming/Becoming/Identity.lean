@@ -70,17 +70,23 @@ Results:
 * Continuity, read both ways. When the old naming, read back from the new
   (`Reidentify.back`), also keeps the new naming's continuing activity, arising and
   unceasing generation are preserved exactly; for continuing dependences, undermining
-  is preserved exactly. Succession at a single step is then excluded. Continuity still
+  is preserved exactly. Succession at a single step is then excluded (`no_join`).
+  Continuity still
   does not constrain the class of a formation over the run: joining across steps at
   which neither formation is active or depends on anything, as in dormancy, keeps
   continuity both ways and changes which formation renews and which consumes
   (`Dormancy`).
-* Splits. Under every continuation in which no formation continues as two
-  (`Web.NoSplit`; merges allowed), of which every re-identification is one, more without
-  end under a census makes formations arise at arbitrarily late steps
-  (`Flow.More.unceasingFrom`). Under a continuation in which new formations bud from one
-  already there, the same growth forces no arising after the first step (`Budding`):
-  what survives every reading is the count, ever more formations active.
+* Splits. Under a census, with each formation taking part listed once and only active
+  formations taking, more without end makes formations arise at arbitrarily late steps
+  under every continuation in which no formation continues as two
+  (`Flow.More.unceasingFrom`, `Web.NoSplit`). Every re-identification is such a
+  continuation, and so is one with merges (`Merge`); the decidability the theorem asks
+  follows from the census and a decidable continuation (`Census.decideContinues`).
+  Without a census, no split is not enough (`Dormant.no_split_without_arising`). No
+  split is sufficient, not necessary: a single split leaves formations arising without
+  end (`Fork`), while under a continuation in which new formations bud from one already
+  there the same growth forces no arising after the first step (`Budding`). What
+  survives every reading is the count, ever more formations active.
 * Part and whole. A lineage and its members are two levels of one unfolding. Named as a
   formation beside its members, the lineage is active at every step while its members
   arise without end (`Layered`). A web has no relation saying that the lineage is
@@ -95,8 +101,9 @@ removing undermining and leaves succession open; read both ways it fixes both, a
 still leaves the class of a formation open across dormancy. Whether a lineage is one
 formation continuing, many generated, or both at two levels, and whether an heir
 inherits a loss, are further readings. Where generation is more without end under a
-census, it is unceasing under every one-to-one reading of identity, and formations arise
-without end under every continuation without splits. The representation supplies
+census, with each formation taking part listed once and only active formations taking,
+it is unceasing under every one-to-one reading of identity, and formations arise without
+end under every continuation without splits. The representation supplies
 identity through the index type; for an application it is a correspondence claim. No
 ethical predicate, ranking or axiom occurs.
 -/
@@ -242,29 +249,6 @@ end Renaming
 end Web
 
 /-! ## Flows and censuses -/
-
-section Lists
-
-variable {α β : Type} {g : α → β}
-
-theorem mem_map_of {a : α} : ∀ {l : List α}, a ∈ l → g a ∈ l.map g
-  | _ :: _, .head _ => .head _
-  | _ :: _, .tail _ mem => .tail _ (mem_map_of mem)
-
-theorem mem_of_map (inj : ∀ a b, g a = g b → a = b) {a : α} :
-    ∀ {l : List α}, g a ∈ l.map g → a ∈ l
-  | [], mem => nomatch mem
-  | b :: _, mem => match mem_cons_cases mem with
-    | .inl same => Eq.subst (motive := fun x => x ∈ b :: _) (inj a b same).symm (.head _)
-    | .inr mem => .tail b (mem_of_map inj mem)
-
-/-- Mapping a list one to one keeps it without repetition. -/
-theorem distinct_map (inj : ∀ a b, g a = g b → a = b) :
-    ∀ {l : List α}, Distinct l → Distinct (l.map g)
-  | [], _ => trivial
-  | _ :: _, ⟨fresh, distinct⟩ => ⟨fun mem => fresh (mem_of_map inj mem), distinct_map inj distinct⟩
-
-end Lists
 
 /-- What is listed under the new names at a step is what is listed under the old. -/
 theorem Reidentify.mem_map (σ : Reidentify F F') (t : Nat) {l : List F} {x : F'} :
@@ -470,6 +454,20 @@ theorem undermining_of_back_keepsTenure (kept : σ.back.KeepsTenure (W.reidentif
   | ⟨c, drawn, y, depends, met, fell⟩ =>
     ⟨c, drawn, σ.old t y, depends, metAbove_of_back_keepsTenure kept met, fell⟩
 
+/-- If the old names keep the continuing activity of the new naming, two formations, one
+active before a step and one after it, named alike across it are one formation: no join
+at a single step. -/
+theorem no_join (kept : σ.back.KeepsActive (W.reidentify σ)) {t : Nat} {g h : F}
+    (before : W.active t g) (after : W.active (t + 1) h) (named : σ.new t g = σ.new (t + 1) h) :
+    g = h :=
+  have before' : (W.reidentify σ).active t (σ.new t g) :=
+    Eq.subst (motive := fun x => W.active t x) (σ.old_new t g).symm before
+  have after' : (W.reidentify σ).active (t + 1) (σ.new t g) :=
+    Eq.subst (motive := fun x => (W.reidentify σ).active (t + 1) x) named.symm
+      (Eq.subst (motive := fun x => W.active (t + 1) x) (σ.old_new (t + 1) h).symm after)
+  (σ.old_new t g).symm.trans ((kept t _ before' after').symm.trans
+    ((congrArg (σ.old (t + 1)) named).trans (σ.old_new (t + 1) h)))
+
 /-- Keeping continuing dependences in both namings, a re-identification preserves
 undermining exactly. -/
 theorem undermining_iff_of_keepsTenure_both (keeps : σ.KeepsTenure W)
@@ -561,6 +559,16 @@ theorem Flow.More.unceasingFrom {W : Web F C} {R : Nat → F → F → Prop}
     {alive : Nat → List F} (census : W.Census alive) (distinct : ∀ t, Distinct (L.present t))
     (taking : L.Taking W) (more : L.More cs) (noSplit : W.NoSplit R) : W.UnceasingFrom R :=
   W.unceasingFrom_of_growth noSplit census (more.grows census distinct taking)
+
+/-- Under a census, whether a formation continues one active before a step is decidable
+where the continuation is: the decidability `Flow.More.unceasingFrom` asks for follows. -/
+def Web.Census.decideContinues {W : Web F C} {R : Nat → F → F → Prop}
+    [∀ t g f, Decidable (R t g f)] {alive : Nat → List F} (census : W.Census alive)
+    (t : Nat) (f : F) : Decidable (W.Continues R t f) :=
+  have : Decidable (∃ g, g ∈ alive t ∧ R t g f) := decideSome (p := fun g => R t g f) (alive t)
+  decidable_of_decidable_of_iff (p := ∃ g, g ∈ alive t ∧ R t g f)
+    ⟨fun ⟨g, mem, r⟩ => ⟨g, ((census t).2 g).mpr mem, r⟩,
+     fun ⟨g, active, r⟩ => ⟨g, ((census t).2 g).mp active, r⟩⟩
 
 /-- A re-identification read as a continuation: a formation after a step continues the one
 before it that bears its name. -/
@@ -869,6 +877,78 @@ theorem growth_without_arising :
     | ⟨t, f, late, arises⟩ => budded t late f arises⟩
 
 end Budding
+
+namespace Fork
+
+/-- Each formation continues itself; at step one formation `0` also continues as
+formation `1`. -/
+def forks (t g f : Nat) : Prop :=
+  g = f ∨ (t = 1 ∧ g = 0 ∧ f = 1)
+
+/-- In the cycle, formation `0` continues as two at step one, so `NoSplit` fails, and
+formations still arise under the continuation at arbitrarily late steps: `NoSplit` is
+sufficient for `Flow.More.unceasingFrom`, not necessary for its conclusion. -/
+theorem split_unceasing : ¬ Cycle.web.NoSplit forks ∧ Cycle.web.UnceasingFrom forks :=
+  ⟨fun noSplit =>
+      have split : (0 : Nat) = 1 := noSplit 1 0 0 1 Nat.zero_lt_one (.inl rfl)
+        (.inr ⟨rfl, rfl, rfl⟩) (Nat.zero_lt_succ 1) (Nat.lt_succ_self 1)
+      Nat.lt_irrefl 0 (Eq.subst (motive := fun k => 0 < k) split.symm Nat.zero_lt_one),
+   fun N => ⟨N + 2, N + 2, Nat.le_add_right N 2, Nat.lt_succ_self (N + 2),
+     fun ⟨_, active, continues⟩ => match continues with
+      | .inl same => Nat.lt_irrefl (N + 2)
+          (Eq.subst (motive := fun h => h < N + 2) same active)
+      | .inr ⟨one, _, _⟩ => Nat.lt_irrefl 1
+          (Eq.subst (motive := fun k => 1 < k) one (Nat.succ_lt_succ (Nat.zero_lt_succ N)))⟩⟩
+
+end Fork
+
+namespace Merge
+
+open Garden (Kind)
+
+/-- The `i`th renewer and the `i`th grower of the garden both continue as the `i`th
+renewer. -/
+def merges (_ : Nat) (g f : Kind × Nat) : Prop :=
+  f = (.renewer, g.2)
+
+instance decideMerges (t : Nat) : ∀ g f, Decidable (merges t g f)
+  | _, (.grower, _) => isFalse fun same => Kind.noConfusion (congrArg Prod.fst same)
+  | (_, j), (.renewer, i) => match Nat.decEq i j with
+    | isTrue same =>
+      isTrue (congrArg (Prod.mk Kind.renewer) same : (Kind.renewer, i) = (.renewer, j))
+    | isFalse other => isFalse fun same => other (congrArg Prod.snd same)
+
+theorem noSplit : Garden.web.NoSplit merges :=
+  fun _ _ _ _ _ same same' _ _ => same.trans same'.symm
+
+/-- Two formations active at step one continue as one after it, so the continuation
+merges; with no split and the garden's census, more without end makes formations arise
+under it at arbitrarily late steps. -/
+theorem merging :
+    Garden.web.active 1 (.renewer, 0) ∧ Garden.web.active 1 (.grower, 0) ∧
+    merges 1 (.renewer, 0) (.renewer, 0) ∧ merges 1 (.grower, 0) (.renewer, 0) ∧
+    Garden.web.active 2 (.renewer, 0) ∧ (Kind.renewer, 0) ≠ (Kind.grower, 0) ∧
+    Garden.web.UnceasingFrom merges :=
+  have := Garden.census.decideContinues (R := merges)
+  ⟨Nat.zero_lt_one, Nat.zero_lt_one, rfl, rfl, Nat.zero_lt_succ 1,
+   fun same => Kind.noConfusion (congrArg Prod.fst same),
+   Flow.More.unceasingFrom Garden.census Garden.distinct Garden.growers_take.1
+     Garden.counted.2.2.2 noSplit⟩
+
+end Merge
+
+/-- Without a census, no split is not enough: in `Dormant`, under each formation continuing
+only itself there is no split, only active formations take, each formation taking part is
+listed once, and generation is more without end, yet nothing arises under it. -/
+theorem Dormant.no_split_without_arising :
+    Dormant.web.NoSplit (fun _ g f => g = f) ∧ Garden.flow.More [()] ∧
+    Garden.flow.Taking Dormant.web ∧ (∀ t, Distinct (Garden.flow.present t)) ∧
+    ¬ Dormant.web.UnceasingFrom (fun _ g f => g = f) :=
+  ⟨fun _ _ _ _ _ same same' _ _ => same.symm.trans same',
+   Dormant.more_without_arising.2.2.2.2.2.1, Dormant.more_without_arising.2.2.1,
+   Garden.distinct,
+   fun unceasing => match (Dormant.web.unceasingFrom_self.mp unceasing) 0 with
+    | ⟨t, f, _, arises⟩ => Dormant.more_without_arising.2.2.2.2.2.2 t f arises⟩
 
 namespace Lineage
 
