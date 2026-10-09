@@ -2728,6 +2728,67 @@ Integration: §40、§41 与英文 P30、P31 的就地更正；来源文件的 A
 
 **边界。** 无伦理谓词；Ren 的选择保持开放；本节的新名称是 AI 的表述，由 Ren 定。本节尚未经独立审查。
 
+## 46. 计数的全部规律（P34）
+
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P34。开放纲领把“对整个空间成立的规律的完整清单”列为进一步的证明；P23 的完成标准第 2 项说整体的规律“除了表示本身所排除的，不排除任何展开”。到 P33 为止，普查的平衡与由它推出的复现定律都已检查，但没有证明它们就是计数的全部规律：可能还有别的、尚未发现的计数规律。本节对计数回答这个问题，并说明哪些前提约束计数、全部八个约束到什么程度。成果记录：新增 [whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md)。
+
+```text
+Result(s): 复用 census-balance（Listed、Listed.across 的证明、marks_le_of_sub、Web.Census）、
+           coming-and-ceasing-keep-pace（comings、ceasings、mark、steps_last、steps_mem）、map-of-premises（八个前提、
+           World.still_vacuous）、life-as-condition-of-life（Web.Embodied.arises_given）、space-and-its-parts（World、
+           Flow.still）；新增 whole-law-of-counting
+Delta: Population：Listed.keeps（Listed.across 改由它推出）、Tally、Listed.tally、steps 的长度与成员、Queue（gone、holds、
+       line、listed、ceasings_eq、comings_eq、counts）、Pointwise、counting_laws；
+       Premises：World.CountsObey、Queue.web、Queue.embodied、World.queue、World.embodiedQueue、queue_premised、
+       embodiedQueue_premised、counting_free、Queue.lone_tally、counting_binds_jointly、Tended（队首照管的队列）、
+       World.tendedQueue、tendedQueue_premised、premised_counting；Population：mark_turn
+Supplied premises / correspondence: 列出与可判定（同普查的平衡）；性质尊重计数每步的值（Pointwise，代替函数外延性）
+Evidence: 合并检查器回执 20261009T205957.521123Z（1223 项定理、1958 项声明审计、核心闭包 29 个模块、包 27 个模块，全部源声明公理报告为空）；
+          外围桥接重跑 20261009T210516.903787Z；实例检查
+Boundary: 只对离散步与每步有限的成立者陈述；只说计数；有限世界中与被围住时（静止定理之外）计数的规律没有陈述；
+          不评价生起或止息；名称由 Ren 定
+Integration: 计划 P34；回答开放纲领“对整个空间成立的规律的完整清单”的计数部分；补足前提的地图：哪些前提约束计数，
+             全部八个约束到什么程度
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Listed.keeps` | 跨每一步保持一些成员：连同不再成立的是步前的列表，连同开始成立的是步后的列表；普查的平衡 `Listed.across` 现由它推出 |
+| `Tally`、`Listed.tally` | 计数表：每步某数 k 使 n t = k + c t 且 n (t+1) = k + a t；每个列出的计数都是计数表 |
+| `Queue.holds`、`Queue.line`、`Queue.listed` | 队列：第 t 步在队中的，是从此前离开的总数起的 n t 个自然数，从队尾加入、从队首离开；每步被不重复地列出 |
+| `Queue.counts` | 计数表之下，队列每步列出 n t 个，跨步离开 c t 个（队首的），加入 a t 个（队尾的） |
+| `counting_laws` | 对计数的一个逐点的性质，在每个类型上每个列出的计数都满足它，恰当每个计数表都满足它 |
+| `World.queue_premised`、`World.embodiedQueue_premised` | 排队而什么都不流动的世界满足除体现外的全部前提；排队且恰在活跃时立着的世界满足除平衡外的全部前提 |
+| `World.counting_free` | 对计数的一个逐点的性质：对每个计数表成立，恰当它在每个世界的每个普查中成立，恰当它在满足除体现外全部前提的每个世界中成立，恰当它在满足除平衡外全部前提的每个世界中成立 |
+| `World.counting_binds_jointly` | 平衡、只有活跃者给予且生起者体现时，普查之下没有关系项活跃的一步上没有生起；一个关系项从无到有地生起（`Queue.lone_tally`）在两个队列世界中都实现，所以这不是计数的规律 |
+| `World.tendedQueue`、`World.tendedQueue_premised` | 由队首照管的队列：队首给予每个加入者一个单位、从每个离开者取用一个单位，活跃时与每个地关系项各交换一个单位；没有成员加入空队时满足全部八个前提 |
+| `World.premised_counting` | 对计数的一个逐点的性质在满足全部八个前提的每个世界的普查中成立，恰当它对每个没有关系项活跃的一步上没有生起的计数表成立 |
+
+**解读。**
+
+- **为什么平衡是全部。** 平衡说的是：跨每一步，在场者分为留下的与离开的，之后的在场者是留下的加上来到的。任何满足这一点的数目序列，都可以由一个队列实现：成员依次从队尾加入，依次从队首离开，每步离开的恰是队首的 c t 个，加入的恰是队尾的 a t 个。所以从计数本身推不出关于展开的任何更多的东西；P26 到 P30 的复现定律、比率与界，都是平衡的推论，而不是另外的规律。
+- **保持的形式。** 平衡原先写为 n (t+1) + c t = n t + a t。保持的形式更多地说出关系：跨一步有一些成员留下，离开的与来到的都相对于它们计数。它也使实现的证明不需要自然数的消去律（Lean 前导中的消去律带 `propext`）。保持的形式推出原来的形式（`Listed.across` 由它推出）。
+- **逐点。** “对计数的一个性质”是数目序列上的任意命题。实现给出的计数与给定的计数逐点相等，而不是作为函数相等；在构造性的纯净核心中，由逐点相等推出函数相等需要函数外延性（Lean 中由 `Quot.sound` 证明）。所以定理要求性质尊重逐点相等。每个由各步的值说出的性质都如此，经典地每个性质都如此。
+- **前提怎样约束计数。** 八个前提彼此独立（P24），但它们对计数的作用不同：缺平衡或缺体现的任何一组都不约束计数，因为两个队列世界分别满足除体现外与除平衡外的全部前提（关于流的前提在什么都不流动时空成立，体现在恰在活跃时立着时成立而平衡不成立）。平衡与体现连同只有活跃者给予一起约束：体现的生起是开始作为条件而在，平衡要求它被给予，只有活跃者给予要求给予者活跃，所以生起需要一个在场者。这不是计数的规律，因为从无到有的生起是一个计数表。
+- **全部八个前提所加的。** 由队首照管的队列满足全部八个前提：队首给予加入者、从离开者取用，所以平衡成立，加入者由活跃的队首给予，离开者被活跃的队首取用；成员恰在队中时立着，所以体现成立；队首活跃时与每个地关系项各交换一个单位，净量为零，地关系项的水平不变而仍为零，所以没有有限家族在这样的步封闭，耗散在那里空成立；队空时（这时没有成员加入，也没有成员离开）什么都不交换。所以八个前提一起只在计数上加了一条：没有关系项活跃的一步上没有生起（`premised_counting`）。
+- **与静止定理。** 静止定理（P26）是平衡、耗散、体现与被围住一起对计数的约束：生起与止息都不再复现。上面的世界中队首活跃的步没有一步被围住，所以它不受静止定理约束；计数在八个前提之下的这种自由，可以读作开放（P25）在计数上的形式（AI 的读法）。这些约束都来自前提的合作与被围住，不来自计数本身。
+
+**作者反审。**
+
+*反驳 1：队列太特殊，不是世界的“自然”实现。* 定理断言的是存在：每个计数表都至少由一个列出实现。任何更多的计数规律都必须在所有列出中成立，包括队列；队列不满足它，它就不是规律。实现是否“自然”与此无关。
+
+*反驳 2：队列世界的关系项无限多，所以这不说明有限世界。* 对。有限世界中计数还受关系项的数目所限（在场的与来到的都不多于关系项），那里计数的规律本节没有陈述。记录的局限与下一步写明了这一点。
+
+*反驳 3：`Pointwise` 是一个藏起来的公理。* 不是：它是定理的假设，不是核心的公理，任何具体的性质都可以直接检查它，例如 `counting_binds_jointly` 中的性质。它代替的是函数外延性，后者在 Lean 中依赖 `Quot.sound`；纯净核心不使用它。
+
+*反驳 4：缺平衡或缺体现时不约束计数，这说明前提无用。* 不是：它说明每个前提单独地都不在计数上留下痕迹，约束计数的是前提之间的关系。平衡与体现一起说出了生起的一个条件（一个在场的给予者），再加上耗散与被围住，就有静止定理。这是一元方法的一个具体形式：约束来自关系，而不是来自分别命名的前提。
+
+*反驳 5：队首照管的队列中耗散空成立，这使“满足全部八个前提”变得廉价。* 耗散只约束有封闭的有限家族的步（P16b）；队首活跃时它与无限多个地关系项交换，这正是 `exposed` 中那样的开放。见证没有违反任何前提，它说明：在不被围住的展开中，八个前提一起不再约束计数，除了生起需要一个在场者。若要求被围住，静止定理给出更强的约束；本节不陈述被围住时计数的全部规律。
+
+*反驳 6：这对生生有什么意义？* 本节不作评价。它说的是：在场者的数目本身只记录进入与离开相抵；展开的方向（生起是否不息、是否归于静止）不能从计数读出，只能从给予与取用的关系读出。读法与名称属于 Ren。
+
+**边界。** 无伦理谓词，不评价生起或止息；只对离散步与每步有限的成立者陈述；只说计数，读于世界只说活动；有限世界中与被围住时（静止定理之外）计数的规律没有陈述；名称（Tally、Queue、Pointwise、CountsObey、counting_laws、counting_free、counting_binds_jointly、queue、embodiedQueue、tendedQueue、Tended、lone、mark_turn）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3051,4 +3112,6 @@ The package now has 1131 theorems and 1826 declaration audits, over a core closu
 - **Omniscience (T3, T5).** Turning ‘active only finitely often’ into an end step implies the limited principle of omniscience, even for decided activity happening at most once (`Web.lpo_of_ending`, with `Once`); the study's ‘needs Markov's principle’ was wrong. A list holding every member that ever holds, the strong form of `few_of_quiet`, implies it too (`Listed.lpo_of_few`, with `Few`). So the core states the weak forms, and the module docs now say ‘not unboundedly many’.
 - **The rest (T4, T6–T8).** `holding_world`'s docstring now says `arising_opens` needs every relatum embodied; the bounded census's next step says the shortfall is the exact criterion and the rate form only sufficient; the source note dates the Chinese renderings 生起/止息 from P10 and P19; the plan row for P30 cites its receipts; the lean index lists another session's untracked drafts by design, and those files are left untouched.
 
-The package now has 1190 theorems and 1905 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43 to 45 have not yet been independently reviewed.
+**P34: the whole law of counting.** The open programme listed ‘a complete list of the laws holding of the whole space’, and the completeness criterion said the laws of the whole exclude nothing beyond what the representation excludes; until now nothing showed that the census balance and the recurrence laws drawn from it are all the laws of counting. They are. Across each step some members are kept, with what ceased making the list before and with what came the list after (`Listed.keeps`, from which `Listed.across` now follows); counts of this form are a tally (`Tally`), and every tally is counted by a queue whose members join at the back and leave from the front (`Queue.counts`). So a property of the counts holds of every listing, on every type, exactly when it holds of every tally (`counting_laws`); the property need only respect the counts' values at each step (`Pointwise`), in place of function extensionality, which the pure core does not assume. Read of worlds, relata queuing with nothing flowing meet every premise but embodiment and relata queuing that stand while active every premise but balance, so a property of the counts of a census holds in every world meeting either seven exactly when it holds of every tally (`World.counting_free`): premises lacking balance or embodiment leave counting free. Together, with only active relata giving, they bind it: what arises is given by a relatum active at the step, so nothing arises across a step at which nothing is active, which is no law of tallies (`World.counting_binds_jointly`). That is all the eight premises add: a queue tended by its front, which gives to each relatum joining, takes from each leaving and, while active, exchanges a unit each way with every ground relatum, meets all eight wherever nothing joins an empty queue (`World.tendedQueue_premised`), so under all eight the laws of counting are the balance and that nothing arises across a step at which nothing is active (`World.premised_counting`). No finite family is closed at a step at which the front is active, so dissipation holds there vacuously, as in `exposed`; with enclosure the rest theorem constrains counting further, and the laws of counting under enclosure, and in finite worlds, are not stated. The kept form also spares the proof cancellation, whose prelude lemma carries `propext`. New record: whole-law-of-counting.
+
+The package now has 1223 theorems and 1958 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43 to 46 have not yet been independently reviewed.

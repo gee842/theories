@@ -48,6 +48,22 @@ that the rest are independent, none following from all the others together.
   (`World.counted_of_ever`). In every world that comes to rest under the rest theorem,
   not unboundedly many relata are ever active or stand (`World.rest_few` in
   `Becoming.Openness`), so there a census binds only so.
+* **Counting under the premises.** Relata queuing with nothing flowing meet every premise
+  but embodiment, and relata queuing that stand exactly while active meet every premise
+  but balance (`World.queue_premised`, `World.embodiedQueue_premised`). So a property of
+  the counts of a census holds in every world meeting either seven exactly when it holds
+  of every tally (`World.counting_free`): premises lacking balance or embodiment leave
+  counting free. Together, with only active relata giving, they bind it: what arises is
+  given by a relatum active at the step, so under a census nothing arises across a step at
+  which nothing is active, which is no law of tallies (`World.counting_binds_jointly`).
+  That is all the eight premises add. A queue tended by its front, which gives to each
+  relatum joining, takes from each leaving and, while active, exchanges a unit each way
+  with every ground relatum, meets all eight wherever nothing joins an empty queue
+  (`World.tendedQueue_premised`). So a property of the counts holds in every world meeting
+  the eight exactly when it holds of every tally in which nothing arises across a step at
+  which nothing is active (`World.premised_counting`). No step at which the front is
+  active is enclosed: with every step from some step on enclosed around what stands, the
+  rest theorem stops arising and ceasing (`Becoming.Openness`).
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -1019,6 +1035,303 @@ theorem hatch_idle (t n : Nat) :
    fun _ draws => match draws.2 with
      | .inl no => (nomatch no)
      | .inr no => (nomatch no)⟩
+
+
+/-! ## Counting under the premises -/
+
+/-- `Q` holds of the counts of every census of the world: how many are active at each step,
+how many cease and how many arise across it. -/
+def CountsObey (w : World) [∀ t x, Decidable (w.web.active t x)]
+    (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ alive, w.web.Census alive → Q (fun t => (alive t).length)
+    (fun t => ceasings (alive t) (fun x s => w.web.active s x) t)
+    (fun t => comings (alive (t + 1)) (fun x s => w.web.active s x) t)
+
+end World
+
+namespace Queue
+
+/-- Relata in a queue, each active from the step it joins to the step it leaves; nothing
+stands, depends or draws. -/
+def web (n c : Nat → Nat) : Web Nat Nat where
+  level _ _ := 0
+  active t k := holds n c k t
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+/-- The same queue, each relatum standing exactly while it is active. -/
+def embodied (n c : Nat → Nat) : Web Nat Nat :=
+  { web n c with level := fun t k => mark (holds n c k t) }
+
+/-- None at the first step, one from then on. -/
+def lone : Nat → Nat
+  | 0 => 0
+  | _ + 1 => 1
+
+/-- One joins across the first step and none after. -/
+def joins : Nat → Nat
+  | 0 => 1
+  | _ + 1 => 0
+
+/-- One relatum comes to be across the first step, from none, and stays. -/
+theorem lone_tally : Tally lone (fun _ => 0) joins
+  | 0 => ⟨0, rfl, rfl⟩
+  | _ + 1 => ⟨1, rfl, rfl⟩
+
+end Queue
+
+namespace World
+
+/-- Relata queue, with nothing flowing. -/
+def queue (n c : Nat → Nat) : World :=
+  ⟨Nat, Flow.still, Queue.web n c⟩
+
+/-- Relata queue, each standing exactly while it is active, with nothing flowing. -/
+def embodiedQueue (n c : Nat → Nat) : World :=
+  ⟨Nat, Flow.still, Queue.embodied n c⟩
+
+instance queue_decided (n c : Nat → Nat) : ∀ t x, Decidable ((queue n c).web.active t x) :=
+  fun t x => inferInstanceAs (Decidable (Queue.holds n c x t))
+
+instance embodiedQueue_decided (n c : Nat → Nat) :
+    ∀ t x, Decidable ((embodiedQueue n c).web.active t x) :=
+  fun t x => inferInstanceAs (Decidable (Queue.holds n c x t))
+
+/-- A queue meets every premise but embodiment: nothing depends, stands or flows. -/
+theorem queue_premised (n c : Nat → Nat) :
+    (queue n c).Dependent ∧ (queue n c).Balanced ∧ (queue n c).Acting ∧
+      (queue n c).Taking ∧ (queue n c).Dissipative ∧ (queue n c).Counted ∧
+      (queue n c).Transmitting :=
+  ⟨fun _ _ _ _ no => (nomatch no), fun _ _ => rfl, (still_vacuous _).1, (still_vacuous _).2.1,
+   (still_vacuous _).2.2.1, ⟨_, Queue.listed⟩, (still_vacuous _).2.2.2⟩
+
+/-- A queue standing while active meets every premise but balance: its standing changes
+with nothing flowing. -/
+theorem embodiedQueue_premised (n c : Nat → Nat) :
+    (embodiedQueue n c).Dependent ∧ (embodiedQueue n c).Acting ∧
+      (embodiedQueue n c).Taking ∧ (embodiedQueue n c).Dissipative ∧
+      (embodiedQueue n c).Embodied ∧ (embodiedQueue n c).Counted ∧
+      (embodiedQueue n c).Transmitting :=
+  ⟨fun _ _ _ _ no => (nomatch no), (still_vacuous _).1, (still_vacuous _).2.1,
+   (still_vacuous _).2.2.1, fun _ _ => mark_pos.symm, ⟨_, Queue.listed⟩,
+   (still_vacuous _).2.2.2⟩
+
+/-- The premises leave counting free. A property of the counts holds of every tally exactly
+when it holds of the census of every world; and already when it holds of the census of
+every world meeting every premise but embodiment, or of every world meeting every premise
+but balance. -/
+theorem counting_free {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (pointwise : Pointwise Q) :
+    ((∀ n c a, Tally n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.CountsObey Q) ∧
+    ((∀ n c a, Tally n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Dependent → w.Balanced →
+        w.Acting → w.Taking → w.Dissipative → w.Transmitting → w.CountsObey Q) ∧
+    ((∀ n c a, Tally n c a → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Dependent → w.Acting →
+        w.Taking → w.Dissipative → w.Embodied → w.Transmitting → w.CountsObey Q) :=
+  have every : (∀ n c a, Tally n c a → Q n c a) →
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.CountsObey Q :=
+    fun law _ _ _ census => law _ _ _ census.tally
+  ⟨⟨every, fun law n c _ tally => pointwise (fun t => Queue.counts tally t)
+      (law (queue n c) _ Queue.listed)⟩,
+   ⟨fun law w _ _ _ _ _ _ _ => every law w, fun law n c _ tally =>
+      match queue_premised n c with
+      | ⟨dependent, balanced, acting, taking, dissipative, _, transmitting⟩ =>
+        pointwise (fun t => Queue.counts tally t) (law (queue n c) dependent balanced acting
+          taking dissipative transmitting _ Queue.listed)⟩,
+   ⟨fun law w _ _ _ _ _ _ _ => every law w, fun law n c _ tally =>
+      match embodiedQueue_premised n c with
+      | ⟨dependent, acting, taking, dissipative, embodied, _, transmitting⟩ =>
+        pointwise (fun t => Queue.counts tally t) (law (embodiedQueue n c) dependent acting
+          taking dissipative embodied transmitting _ Queue.listed)⟩⟩
+
+/-- Together, balance and embodiment bind the counts. Where the flow balances, only active
+relata give and whatever arises is embodied, what arises is given by a relatum active at
+the step (`Web.Embodied.arises_given`), so under a census nothing arises across a step at
+which nothing is active. This is no law of tallies: one relatum arising from none is
+counted by a queue meeting every premise but embodiment, and by one meeting every premise
+but balance. -/
+theorem counting_binds_jointly :
+    (∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Balanced → w.Acting →
+      w.ArisingEmbodied → w.CountsObey fun n _ a => ∀ t, 0 < a t → 0 < n t) ∧
+    ¬ (queue Queue.lone fun _ => 0).CountsObey (fun n _ a => ∀ t, 0 < a t → 0 < n t) ∧
+    ¬ (embodiedQueue Queue.lone fun _ => 0).CountsObey
+      (fun n _ a => ∀ t, 0 < a t → 0 < n t) :=
+  ⟨fun _ _ balanced acting embodied alive census t arising =>
+    match total_pos _ arising with
+    | ⟨x, _, comes⟩ => match Web.Embodied.arises_given balanced acting
+        (embodied t x (mark_pos.mp comes)) (mark_pos.mp comes) with
+      | ⟨f, active, _⟩ => Nat.lt_of_lt_of_le (total_pos_of_mem (((census t).2 f).mp active)
+          Nat.zero_lt_one) (Nat.le_of_eq (total_ones (alive t))),
+   fun obeys => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (obeys _ Queue.listed 0
+      (Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq
+        (Queue.comings_eq Queue.lone_tally 0).symm)))
+      (Nat.le_of_eq (Queue.counts Queue.lone_tally 0).1)),
+   fun obeys => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (obeys _ Queue.listed 0
+      (Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq
+        (Queue.comings_eq Queue.lone_tally 0).symm)))
+      (Nat.le_of_eq (Queue.counts Queue.lone_tally 0).1))⟩
+
+
+end World
+
+/-! ## Counting under all the premises -/
+
+namespace Tended
+
+/-- The members of a queue, and ground relata. -/
+inductive Relatum
+  | member (k : Nat)
+  | ground (k : Nat)
+
+variable (n c : Nat → Nat)
+
+/-- Members stand and are active exactly while in the queue; ground relata stand at nothing
+and are never active. -/
+def web : Web Relatum Relatum where
+  level t x := match x with
+    | .member k => mark (Queue.holds n c k t)
+    | .ground _ => 0
+  active t x := match x with
+    | .member k => Queue.holds n c k t
+    | .ground _ => False
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := True
+
+/-- The front of the queue takes part at every step. It gives one unit to each member
+joining and takes one from each member leaving; while active it also gives one unit to every
+ground relatum and takes one from each. -/
+def flow : Flow Relatum Relatum where
+  present t := [.member (Queue.gone c t)]
+  take t _ x := match x with
+    | .member k => mark (CeasesToBe (Queue.holds n c k) t)
+    | .ground _ => mark (Queue.holds n c (Queue.gone c t) t)
+  give t _ x := match x with
+    | .member k => mark (ComesToBe (Queue.holds n c k) t)
+    | .ground _ => mark (Queue.holds n c (Queue.gone c t) t)
+
+def index : Relatum → Nat
+  | .member k => k
+  | .ground k => k
+
+/-- No finite family holds every ground relatum. -/
+theorem outside (cs : List Relatum) : ¬ Relatum.ground (beyond (cs.map index)) ∈ cs :=
+  fun mem => beyond_not_mem _ (mem_map_of (g := index) mem)
+
+theorem member_inj : ∀ a b : Nat, Relatum.member a = Relatum.member b → a = b :=
+  fun _ _ same => Relatum.noConfusion same id
+
+theorem ground_not_member {g : Nat} : ∀ {l : List Nat}, ¬ Relatum.ground g ∈ l.map .member
+  | [], no => nomatch no
+  | _ :: _, .tail _ mem => ground_not_member mem
+
+variable {n c}
+
+/-- The front of the queue is in it exactly while the queue is not empty. -/
+theorem front {t : Nat} : Queue.holds n c (Queue.gone c t) t ↔ 0 < n t :=
+  ⟨fun holds => Nat.lt_of_add_lt_add_left (n := Queue.gone c t) (k := 0) holds.2,
+   fun pos => ⟨Nat.le_refl _, Nat.lt_add_of_pos_right pos⟩⟩
+
+/-- A member in the queue means the queue is not empty. -/
+theorem occupied {k t : Nat} (holds : Queue.holds n c k t) : 0 < n t :=
+  Nat.lt_of_add_lt_add_left (n := Queue.gone c t) (k := 0) (Nat.lt_of_le_of_lt holds.1 holds.2)
+
+/-- Where something joins only across a step at which the queue is not empty, a member
+joining means the queue was not empty. -/
+theorem joined {a : Nat → Nat} (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
+    {k t : Nat} (comes : ComesToBe (Queue.holds n c k) t) : 0 < n t :=
+  company t (Nat.lt_of_lt_of_le (total_pos_of_mem (q := fun j => mark (ComesToBe
+    (Queue.holds n c j) t)) (steps_of_within comes.2.1 comes.2.2) (mark_pos.mpr comes))
+    (Nat.le_of_eq (Queue.comings_eq tally t)))
+
+end Tended
+
+namespace World
+
+/-- A queue tended by its front: the front gives to each relatum joining, takes from each
+leaving, and while active exchanges one unit each way with every ground relatum. -/
+def tendedQueue (n c : Nat → Nat) : World :=
+  ⟨Tended.Relatum, Tended.flow n c, Tended.web n c⟩
+
+instance tendedQueue_decided (n c : Nat → Nat) :
+    ∀ t x, Decidable ((tendedQueue n c).web.active t x)
+  | t, .member k => inferInstanceAs (Decidable (Queue.holds n c k t))
+  | _, .ground _ => isFalse id
+
+/-- The census of a tended queue is its members, listed as the queue lists them. -/
+theorem tendedQueue_census (n c : Nat → Nat) :
+    (tendedQueue n c).web.Census fun t => (Queue.line n c t).map .member :=
+  fun _ => ⟨distinct_map Tended.member_inj (steps_distinct _ _), fun x => match x with
+    | .member _ => ⟨fun holds => mem_map_of (steps_of_within holds.1 holds.2),
+        fun mem => match mem_of_map Tended.member_inj mem with
+          | listed => ⟨steps_mem listed, steps_within listed⟩⟩
+    | .ground _ => ⟨False.elim, fun mem => Tended.ground_not_member mem⟩⟩
+
+/-- Its census counts what the queue counts. -/
+theorem tendedQueue_counts {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat) :
+    ((Queue.line n c t).map Tended.Relatum.member).length = n t ∧
+      ceasings ((Queue.line n c t).map .member)
+        (fun x s => (tendedQueue n c).web.active s x) t = c t ∧
+      comings ((Queue.line n c (t + 1)).map .member)
+        (fun x s => (tendedQueue n c).web.active s x) t = a t :=
+  ⟨(total_ones _).symm.trans ((total_map _ _ _).trans ((total_ones _).trans (steps_length _ _))),
+   (total_map Tended.Relatum.member _ (Queue.line n c t)).trans (Queue.ceasings_eq tally t),
+   (total_map Tended.Relatum.member _ (Queue.line n c (t + 1))).trans
+     (Queue.comings_eq tally t)⟩
+
+/-- Where something arises only across a step at which something is active, a tended queue
+meets all eight premises. No step at which the front is active is enclosed, so dissipation
+binds only where nothing takes part in an exchange. -/
+theorem tendedQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
+    (company : ∀ t, 0 < a t → 0 < n t) : (tendedQueue n c).Premised :=
+  .of (fun _ _ _ _ no => (nomatch no))
+    (fun t x => match x with
+      | .member k => mark_turn (Queue.holds n c k t) (Queue.holds n c k (t + 1))
+      | .ground _ => rfl)
+    (fun _ f x present gives => match f, present, x, gives with
+      | _, .head _, .member _, gives => Tended.front.mpr (Tended.joined tally company
+          (mark_pos.mp gives))
+      | _, .head _, .ground _, gives => mark_pos.mp gives
+      | _, .tail _ no, _, _ => (nomatch no))
+    (fun _ f x present takes => match f, present, x, takes with
+      | _, .head _, .member _, takes => ⟨Tended.front.mpr (Tended.occupied
+          (mark_pos.mp takes).1), trivial⟩
+      | _, .head _, .ground _, takes => ⟨mark_pos.mp takes, trivial⟩
+      | _, .tail _ no, _, _ => (nomatch no))
+    (fun cs t _ closed _ _ => match Nat.eq_zero_or_pos (n t) with
+      | .inr pos => absurd ((mark_one (Tended.front.mpr pos)).symm.trans
+          (closed _ (.head _) _ (Tended.outside cs)).2) (fun no => Nat.noConfusion no)
+      | .inl empty => gives_nothing ((total_congr_on (g := fun _ => 0) fun x _ => match x with
+          | .member _ => mark_zero fun comes => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+              (Tended.joined tally company comes) (Nat.le_of_eq empty))
+          | .ground _ => mark_zero fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+              (Tended.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
+    (fun x => match x with
+      | .member _ => fun _ => mark_pos.symm
+      | .ground _ => fun _ => ⟨False.elim, fun no => absurd no (Nat.lt_irrefl 0)⟩)
+    ⟨_, tendedQueue_census n c⟩
+    ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩
+
+/-- Under all eight premises the laws of counting are the balance and that nothing arises
+across a step at which nothing is active: a property of the counts holds of every census of
+every world meeting the eight exactly when it holds of every tally in which something arises
+only across a step at which something is active. -/
+theorem premised_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (pointwise : Pointwise Q) :
+    (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised → w.CountsObey Q :=
+  ⟨fun law w _ premised alive census =>
+    law _ _ _ census.tally (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
+      (premised _ (.tail _ (.tail _ (.head _))))
+      (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
+        (.head _))))))))
+      alive census),
+   fun law n c _ tally company => pointwise (tendedQueue_counts tally)
+      (law (tendedQueue n c) (tendedQueue_premised tally company) _
+        (tendedQueue_census n c))⟩
 
 end World
 

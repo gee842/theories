@@ -1954,6 +1954,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
 
+## whole-law-of-counting ← census-balance
+
+`formal-reuse` — 复用列出（Listed）、普查（Web.Census）与平衡的证明：跨步保持的成员在两张列表上计数相同（marks_le_of_sub），平衡 Listed.across 现由 Listed.keeps 推出。 / Reuses listing (Listed), the census (Web.Census) and the proof of the balance: the members kept are counted alike on both lists (marks_le_of_sub); the balance Listed.across now follows from Listed.keeps.
+
+**Producer output / 上游输出:** 每个列出的计数满足平衡。 / The counts of every listing balance.
+
+**Consumer input / 下游输入:** 满足平衡（保持的形式）的每组计数都被某个列出实现。 / Every set of counts in balance, in the kept form, is realized by some listing.
+
+**Retained conditions / 保留条件:** 列出；可判定；逐点。 / Listing; decidability; pointwise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## whole-law-of-counting ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用计数（comings、ceasings、mark、mark_iff、mark_pos、mark_le_one）、开始与不再成立（ComesToBe、CeasesToBe）与步段（steps_last、steps_mem）。 / Reuses the counts (comings, ceasings, mark, mark_iff, mark_pos, mark_le_one), coming and ceasing to be (ComesToBe, CeasesToBe) and stretches (steps_last, steps_mem).
+
+**Producer output / 上游输出:** 开始成立与不再成立的计数。 / Counts of coming and ceasing to be.
+
+**Consumer input / 下游输入:** 队列上的计数。 / The counts of a queue.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## whole-law-of-counting ← map-of-premises
+
+`formal-reuse` — 复用八个前提、普查与有界传递（World.Counted、World.Transmitting）以及什么都不流动时前提空成立（World.still_vacuous）。 / Reuses the eight premises, a census and bounded transmission (World.Counted, World.Transmitting), and the premises holding vacuously where nothing flows (World.still_vacuous).
+
+**Producer output / 上游输出:** 八个前提彼此独立。 / The eight premises are independent.
+
+**Consumer input / 下游输入:** 哪些前提约束计数。 / Which premises constrain counting.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## whole-law-of-counting ← life-as-condition-of-life
+
+`formal-reuse` — 复用体现（Web.Embodied）与经由另一个活跃者的给予而生起（Web.Embodied.arises_given）。 / Reuses embodiment (Web.Embodied) and arising through another active relatum's giving (Web.Embodied.arises_given).
+
+**Producer output / 上游输出:** 平衡且只有活跃者给予时，体现的生起者由一个活跃的关系项给予。 / With balance and only active relata giving, an embodied relatum arising is given by an active relatum.
+
+**Consumer input / 下游输入:** 没有关系项活跃的一步上没有生起。 / Nothing arises across a step at which nothing is active.
+
+**Retained conditions / 保留条件:** 平衡；只有活跃者给予；生起者体现；普查。 / Balance; only active relata giving; whatever arises embodied; a census.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## whole-law-of-counting ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用封闭与耗散（Flow.ClosedAt、Flow.DissipatesOn、Flow.Dissipative）。 / Reuses closure and dissipation (Flow.ClosedAt, Flow.DissipatesOn, Flow.Dissipative).
+
+**Producer output / 上游输出:** 耗散只约束有封闭的有限家族的步。 / Dissipation binds only at steps with a closed finite family.
+
+**Consumer input / 下游输入:** 队首活跃时与每个地关系项交换，没有有限家族封闭，耗散空成立；队空时什么都不交换。 / With the front active exchanging with every ground relatum no finite family is closed and dissipation holds vacuously; with the queue empty nothing is exchanged.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## whole-law-of-counting ← space-and-its-parts
+
+`formal-reuse` — 复用世界（World）、什么都不流动的流（Flow.still）与世界的前提。 / Reuses worlds (World), the still flow (Flow.still) and the premises of worlds.
+
+**Producer output / 上游输出:** 世界与其前提。 / Worlds and their premises.
+
+**Consumer input / 下游输入:** 队列世界。 / Queue worlds.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
 ## whole-persists-through-generation ← unceasing-generation-needs-renewal
 
 `formal-reuse` — 复用 Arises 与依存网；部分的生起就是该结果意义上的生起。 / Reuses Arises and webs; the parts' arising is arising in that result's sense.

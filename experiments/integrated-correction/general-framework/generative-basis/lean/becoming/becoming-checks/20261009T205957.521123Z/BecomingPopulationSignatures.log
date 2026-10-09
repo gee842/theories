@@ -1,0 +1,286 @@
+@Becoming.length_append : ∀ {α : Type} (p q : List α), (p ++ q).length = p.length + q.length
+@Becoming.mem_cons_cases : ∀ {α : Type} {a b : α} {q : List α}, b ∈ a :: q → b = a ∨ b ∈ q
+@Becoming.mem_map_of : ∀ {α β : Type} {g : α → β} {a : α} {l : List α}, a ∈ l → g a ∈ List.map g l
+@Becoming.mem_of_map : ∀ {α β : Type} {g : α → β},
+  (∀ (a b : α), g a = g b → a = b) → ∀ {a : α} {l : List α}, g a ∈ List.map g l → a ∈ l
+@Becoming.distinct_map : ∀ {α β : Type} {g : α → β},
+  (∀ (a b : α), g a = g b → a = b) → ∀ {l : List α}, Becoming.Distinct l → Becoming.Distinct (List.map g l)
+@Becoming.mem_remove : ∀ {α : Type} {a b : α}, ¬b = a → ∀ {p q : List α}, b ∈ p ++ a :: q → b ∈ p ++ q
+@Becoming.length_le_of_matched : ∀ {α β : Type} {S : α → β → Prop} {l : List α} {m : List β},
+  Becoming.Distinct l →
+    (∀ (a : α), a ∈ l → ∃ b, b ∈ m ∧ S a b) →
+      (∀ (a a' : α) (b : β), a ∈ l → a' ∈ l → S a b → S a' b → a = a') → l.length ≤ m.length
+@Becoming.length_le_of_sub : ∀ {α : Type} {l m : List α},
+  Becoming.Distinct l → (∀ (a : α), a ∈ l → a ∈ m) → l.length ≤ m.length
+@Becoming.count_le_of_sub : ∀ {α : Type} {q : α → Nat} {l m : List α},
+  Becoming.Distinct l → (∀ (a : α), a ∈ l → 0 < q a → a ∈ m) → Becoming.count l q ≤ m.length
+@Becoming.search : ∀ {α : Type} {p : α → Prop} [decide : (a : α) → Decidable (p a)] (l : List α),
+  (∃ a, a ∈ l ∧ ¬p a) ∨ ∀ (a : α), a ∈ l → p a
+@Becoming.rises_between : ∀ {q : Nat → Nat} {N T : Nat}, N ≤ T → q N < q T → ∃ t, N ≤ t ∧ t < T ∧ q t < q (t + 1)
+@Becoming.mark_one : ∀ {p : Prop} [inst : Decidable p], p → Becoming.mark p = 1
+@Becoming.mark_zero : ∀ {p : Prop} [inst : Decidable p], ¬p → Becoming.mark p = 0
+@Becoming.mark_add_not : ∀ {q r : Prop} [inst : Decidable q] [inst_1 : Decidable r],
+  q ∨ r → ¬(q ∧ r) → Becoming.mark q + Becoming.mark r = 1
+Becoming.mark_turn : ∀ (p q : Prop) [inst : Decidable p] [inst_1 : Decidable q],
+  Becoming.mark q + Becoming.mark (p ∧ ¬q) = Becoming.mark p + Becoming.mark (¬p ∧ q)
+@Becoming.total_congr_on : ∀ {α : Type} {f g : α → Nat} {as : List α},
+  (∀ (a : α), a ∈ as → f a = g a) → Becoming.total as f = Becoming.total as g
+@Becoming.mem_insert : ∀ {α : Type} {a b : α} {p q : List α}, b ∈ p ++ q → b ∈ p ++ a :: q
+@Becoming.distinct_remove : ∀ {α : Type} {a : α} {p q : List α},
+  Becoming.Distinct (p ++ a :: q) → Becoming.Distinct (p ++ q)
+@Becoming.marks_le_of_sub : ∀ {α : Type} {q r : α → Prop} [inst : (a : α) → Decidable (q a)]
+  [inst_1 : (a : α) → Decidable (r a)] {l m : List α},
+  Becoming.Distinct l →
+    Becoming.Distinct m →
+      (∀ (a : α), a ∈ l → q a → a ∈ m ∧ r a) →
+        (Becoming.total l fun a => Becoming.mark (q a)) ≤ Becoming.total m fun a => Becoming.mark (r a)
+@Becoming.mark_le_total : ∀ {α : Type} {P : Prop} [inst : Decidable P] {q : α → Prop}
+  [inst_1 : (a : α) → Decidable (q a)] {l : List α},
+  (P → ∃ a, a ∈ l ∧ q a) → Becoming.mark P ≤ Becoming.total l fun a => Becoming.mark (q a)
+@Becoming.total_le_mark : ∀ {α : Type} {P : Prop} [inst : Decidable P] {q : α → Prop}
+  [inst_1 : (a : α) → Decidable (q a)] {l : List α},
+  Becoming.Distinct l →
+    (∀ (a b : α), a ∈ l → b ∈ l → q a → q b → a = b) →
+      (∀ (a : α), a ∈ l → q a → P) → (Becoming.total l fun a => Becoming.mark (q a)) ≤ Becoming.mark P
+@Becoming.balance_over_stretch : ∀ {q x y : Nat → Nat},
+  (∀ (t : Nat), q (t + 1) + x t = q t + y t) →
+    ∀ (S n : Nat), q (S + n) + Becoming.total (Becoming.steps S n) x = q S + Becoming.total (Becoming.steps S n) y
+@Becoming.le_over_stretch : ∀ {q x y : Nat → Nat},
+  (∀ (t : Nat), q (t + 1) + x t ≤ q t + y t) →
+    ∀ (S n : Nat), q (S + n) + Becoming.total (Becoming.steps S n) x ≤ q S + Becoming.total (Becoming.steps S n) y
+@Becoming.ge_over_stretch : ∀ {q x y : Nat → Nat},
+  (∀ (t : Nat), q t + y t ≤ q (t + 1) + x t) →
+    ∀ (S n : Nat), q S + Becoming.total (Becoming.steps S n) y ≤ q (S + n) + Becoming.total (Becoming.steps S n) x
+@Becoming.gaining_of_losing : ∀ {q x y : Nat → Nat},
+  (∀ (t : Nat), q (t + 1) + x t ≤ q t + y t) → (∀ (N : Nat), ∃ t, N ≤ t ∧ 0 < x t) → ∀ (N : Nat), ∃ t, N ≤ t ∧ 0 < y t
+@Becoming.losing_of_gaining : ∀ {q x y : Nat → Nat},
+  (∀ (t : Nat), q t + y t ≤ q (t + 1) + x t) →
+    ∀ {T B : Nat},
+      (∀ (t : Nat), T ≤ t → q t ≤ B) → (∀ (N : Nat), ∃ t, N ≤ t ∧ 0 < y t) → ∀ (N : Nat), ∃ t, N ≤ t ∧ 0 < x t
+@Becoming.Listed.keeps : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ (t : Nat),
+      ∃ k, (l t).length = k + Becoming.ceasings (l t) p t ∧ (l (t + 1)).length = k + Becoming.comings (l (t + 1)) p t
+@Becoming.Listed.across : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ (t : Nat), (l (t + 1)).length + Becoming.ceasings (l t) p t = (l t).length + Becoming.comings (l (t + 1)) p t
+@Becoming.Listed.over_stretch : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ (S n : Nat),
+      ((l (S + n)).length + Becoming.total (Becoming.steps S n) fun t => Becoming.ceasings (l t) p t) =
+        (l S).length + Becoming.total (Becoming.steps S n) fun t => Becoming.comings (l (t + 1)) p t
+@Becoming.Listed.ceasings_within : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ (S n : Nat),
+      (Becoming.total (Becoming.steps S n) fun t => Becoming.ceasings (l t) p t) ≤
+        (l S).length + Becoming.total (Becoming.steps S n) fun t => Becoming.comings (l (t + 1)) p t
+@Becoming.Listed.comings_within : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ (S n : Nat),
+      (Becoming.total (Becoming.steps S n) fun t => Becoming.comings (l (t + 1)) p t) ≤
+        (l (S + n)).length + Becoming.total (Becoming.steps S n) fun t => Becoming.ceasings (l t) p t
+@Becoming.Listed.ceasing_iff_shortfall : ∀ {α : Type} {p : α → Nat → Prop}
+  [inst : (a : α) → (t : Nat) → Decidable (p a t)] {l : Nat → List α},
+  Becoming.Listed p l →
+    ((∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t) ↔
+      ∀ (N : Nat),
+        ∃ n,
+          (l (N + n)).length <
+            (l N).length + Becoming.total (Becoming.steps N n) fun t => Becoming.comings (l (t + 1)) p t)
+@Becoming.Listed.coming_iff_excess : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ((∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.ComesToBe (p a) t) ↔
+      ∀ (N : Nat),
+        ∃ n,
+          (l N).length < (l (N + n)).length + Becoming.total (Becoming.steps N n) fun t => Becoming.ceasings (l t) p t)
+@Becoming.Listed.coming_of_ceasing : ∀ {α : Type} {p : α → Nat → Prop} [(a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    (∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t) → ∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.ComesToBe (p a) t
+@Becoming.Listed.ceasing_of_returning : ∀ {α : Type} {p : α → Nat → Prop} [(a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ {K : Nat},
+      (∀ (N : Nat), ∃ t, N ≤ t ∧ (l t).length ≤ K) →
+        (∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.ComesToBe (p a) t) →
+          ∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t
+@Becoming.Listed.ceasing_of_coming : ∀ {α : Type} {p : α → Nat → Prop} [(a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ {T B : Nat},
+      (∀ (t : Nat), T ≤ t → (l t).length ≤ B) →
+        (∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.ComesToBe (p a) t) →
+          ∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t
+@Becoming.Listed.coming_iff_ceasing : ∀ {α : Type} {p : α → Nat → Prop} [(a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ {T B : Nat},
+      (∀ (t : Nat), T ≤ t → (l t).length ≤ B) →
+        ((∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.ComesToBe (p a) t) ↔
+          ∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t)
+@Becoming.Listed.ceasing_of_outpacing : ∀ {α : Type} {p : α → Nat → Prop}
+  [inst : (a : α) → (t : Nat) → Decidable (p a t)] {l : Nat → List α},
+  Becoming.Listed p l →
+    ∀ {B : Nat → Nat},
+      (∀ (t : Nat), (l t).length ≤ B t) →
+        (∀ (N : Nat), ∃ n, B (N + n) < Becoming.total (Becoming.steps N n) fun t => Becoming.comings (l (t + 1)) p t) →
+          ∀ (N : Nat), ∃ t a, N ≤ t ∧ Becoming.CeasesToBe (p a) t
+@Becoming.Listed.tally : ∀ {α : Type} {p : α → Nat → Prop} [inst : (a : α) → (t : Nat) → Decidable (p a t)]
+  {l : Nat → List α},
+  Becoming.Listed p l →
+    Becoming.Tally (fun t => (l t).length) (fun t => Becoming.ceasings (l t) p t) fun t =>
+      Becoming.comings (l (t + 1)) p t
+Becoming.steps_length : ∀ (T n : Nat), (Becoming.steps T n).length = n
+@Becoming.steps_within : ∀ {T n k : Nat}, k ∈ Becoming.steps T n → k < T + n
+@Becoming.steps_of_within : ∀ {T n k : Nat}, T ≤ k → k < T + n → k ∈ Becoming.steps T n
+Becoming.steps_distinct : ∀ (T n : Nat), Becoming.Distinct (Becoming.steps T n)
+@Becoming.steps_below_all : ∀ {T m n : Nat},
+  n ≤ m → (Becoming.total (Becoming.steps T n) fun k => Becoming.mark (k < T + m)) = n
+@Becoming.steps_below : ∀ {T m : Nat} (r : Nat),
+  (Becoming.total (Becoming.steps T (m + r)) fun k => Becoming.mark (k < T + m)) = m
+@Becoming.steps_above_none : ∀ {T m n : Nat},
+  n ≤ m → (Becoming.total (Becoming.steps T n) fun k => Becoming.mark (T + m ≤ k)) = 0
+@Becoming.steps_above : ∀ {T m : Nat} (r : Nat),
+  (Becoming.total (Becoming.steps T (m + r)) fun k => Becoming.mark (T + m ≤ k)) = r
+@Becoming.Queue.gone_succ : ∀ {c : Nat → Nat} (t : Nat), Becoming.Queue.gone c (t + 1) = Becoming.Queue.gone c t + c t
+@Becoming.Queue.listed : ∀ {n c : Nat → Nat}, Becoming.Listed (Becoming.Queue.holds n c) (Becoming.Queue.line n c)
+@Becoming.Queue.kept_end : ∀ {n c : Nat → Nat} {t k : Nat},
+  n t = k + c t → Becoming.Queue.gone c t + n t = Becoming.Queue.gone c (t + 1) + k
+@Becoming.Queue.ceasings_eq : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a → ∀ (t : Nat), Becoming.ceasings (Becoming.Queue.line n c t) (Becoming.Queue.holds n c) t = c t
+@Becoming.Queue.comings_eq : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a →
+    ∀ (t : Nat), Becoming.comings (Becoming.Queue.line n c (t + 1)) (Becoming.Queue.holds n c) t = a t
+@Becoming.Queue.counts : ∀ {n c a : Nat → Nat},
+  Becoming.Tally n c a →
+    ∀ (t : Nat),
+      (Becoming.Queue.line n c t).length = n t ∧
+        Becoming.ceasings (Becoming.Queue.line n c t) (Becoming.Queue.holds n c) t = c t ∧
+          Becoming.comings (Becoming.Queue.line n c (t + 1)) (Becoming.Queue.holds n c) t = a t
+@Becoming.counting_laws : ∀ {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop},
+  Becoming.Pointwise Q →
+    ((∀ (α : Type) (p : α → Nat → Prop) [inst : (a : α) → (t : Nat) → Decidable (p a t)] (l : Nat → List α),
+        Becoming.Listed p l →
+          Q (fun t => (l t).length) (fun t => Becoming.ceasings (l t) p t) fun t => Becoming.comings (l (t + 1)) p t) ↔
+      ∀ (n c a : Nat → Nat), Becoming.Tally n c a → Q n c a)
+@Becoming.Web.DependenceCensus.forming_of_dissolving : ∀ {F C : Type} {W : Becoming.Web F C}
+  [(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)] {deps : Nat → List (F × C)},
+  W.DependenceCensus deps →
+    (∀ (N : Nat), ∃ t g c, N ≤ t ∧ W.Dissolves t g c) → ∀ (N : Nat), ∃ t g c, N ≤ t ∧ W.Forms t g c
+@Becoming.Web.DependenceCensus.forming_iff_dissolving : ∀ {F C : Type} {W : Becoming.Web F C}
+  [(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)] {deps : Nat → List (F × C)},
+  W.DependenceCensus deps →
+    ∀ {T B : Nat},
+      (∀ (t : Nat), T ≤ t → (deps t).length ≤ B) →
+        ((∀ (N : Nat), ∃ t g c, N ≤ t ∧ W.Forms t g c) ↔ ∀ (N : Nat), ∃ t g c, N ≤ t ∧ W.Dissolves t g c)
+@Becoming.Web.DependenceCensus.over_stretch : ∀ {F C : Type} {W : Becoming.Web F C}
+  [inst : (t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)] {deps : Nat → List (F × C)},
+  W.DependenceCensus deps →
+    ∀ (S n : Nat),
+      ((deps (S + n)).length +
+          Becoming.total (Becoming.steps S n) fun t =>
+            Becoming.total (deps t) fun d => Becoming.mark (W.Dissolves t d.fst d.snd)) =
+        (deps S).length +
+          Becoming.total (Becoming.steps S n) fun t =>
+            Becoming.total (deps (t + 1)) fun d => Becoming.mark (W.Forms t d.fst d.snd)
+@Becoming.Web.arises_of_more : ∀ {F C : Type} (W : Becoming.Web F C) [(t : Nat) → (f : F) → Decidable (W.active t f)]
+  {t : Nat} {before after : List F},
+  (∀ (f : F), W.active t f → f ∈ before) →
+    Becoming.Distinct after →
+      (∀ (f : F), f ∈ after → W.active (t + 1) f) → before.length < after.length → ∃ f, f ∈ after ∧ W.Arises t f
+@Becoming.Web.unceasing_of_growth : ∀ {F C : Type} (W : Becoming.Web F C)
+  [(t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive → (∀ (N K : Nat), ∃ t, N ≤ t ∧ K < (alive t).length) → W.Unceasing
+@Becoming.Web.arising_of_ceasing : ∀ {F C : Type} (W : Becoming.Web F C)
+  [(t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive → (∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f) → W.Unceasing
+@Becoming.Web.ceasing_of_arising : ∀ {F C : Type} (W : Becoming.Web F C)
+  [(t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ {T B : Nat}, (∀ (t : Nat), T ≤ t → (alive t).length ≤ B) → W.Unceasing → ∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f
+@Becoming.Web.unceasing_iff_bounded : ∀ {F C : Type} (W : Becoming.Web F C)
+  [(t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ {T B : Nat},
+      (∀ (t : Nat), T ≤ t → (alive t).length ≤ B) → (W.Unceasing ↔ ∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f)
+@Becoming.Web.Census.over_stretch : ∀ {F C : Type} (W : Becoming.Web F C)
+  [inst : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive →
+    ∀ (S n : Nat),
+      ((alive (S + n)).length +
+          Becoming.total (Becoming.steps S n) fun t => Becoming.total (alive t) fun f => Becoming.mark (W.Ceases t f)) =
+        (alive S).length +
+          Becoming.total (Becoming.steps S n) fun t =>
+            Becoming.total (alive (t + 1)) fun f => Becoming.mark (W.Arises t f)
+@Becoming.Flow.More.grows : ∀ {F C : Type} {W : Becoming.Web F C} {L : Becoming.Flow F C} {cs : List C}
+  {alive : Nat → List F},
+  W.Census alive →
+    (∀ (t : Nat), Becoming.Distinct (L.present t)) →
+      L.Taking W → L.More cs → ∀ (N K : Nat), ∃ t, N ≤ t ∧ K < (alive t).length
+@Becoming.Flow.More.unceasing : ∀ {F C : Type} {W : Becoming.Web F C} [(t : Nat) → (f : F) → Decidable (W.active t f)]
+  {L : Becoming.Flow F C} {cs : List C} {alive : Nat → List F},
+  W.Census alive → (∀ (t : Nat), Becoming.Distinct (L.present t)) → L.Taking W → L.More cs → W.Unceasing
+Becoming.Garden.distinct : ∀ (t : Nat), Becoming.Distinct (Becoming.Garden.present t)
+Becoming.Garden.listed : ∀ (t : Nat) (f : Becoming.Garden.Kind × Nat), f.snd < t → f ∈ Becoming.Garden.present t
+Becoming.Garden.census : Becoming.Garden.web.Census Becoming.Garden.present
+Becoming.Garden.counted : Becoming.Garden.web.Census Becoming.Garden.present ∧
+  (∀ (t : Nat), Becoming.Distinct (Becoming.Garden.flow.present t)) ∧
+    Becoming.Garden.flow.Taking Becoming.Garden.web ∧ Becoming.Garden.flow.More [()]
+Becoming.Cycle.distinct : ∀ (t : Nat), Becoming.Distinct (Becoming.Cycle.present t)
+Becoming.Cycle.listed : ∀ (t n : Nat), n < t → n ∈ Becoming.Cycle.present t
+Becoming.Cycle.census : Becoming.Cycle.web.Census Becoming.Cycle.present
+Becoming.Cycle.counted : Becoming.Cycle.web.Census Becoming.Cycle.present ∧
+  (∀ (t : Nat), Becoming.Distinct (Becoming.Cycle.flow.present t)) ∧
+    Becoming.Cycle.flow.Taking Becoming.Cycle.web ∧ Becoming.Cycle.flow.More [()]
+Becoming.Bloom.pair : Becoming.Distinct [Becoming.Bloom.Formation.sun, Becoming.Bloom.Formation.bloom]
+Becoming.Bloom.census : Becoming.Bloom.web.Census Becoming.Bloom.alive
+Becoming.Bloom.counted : Becoming.Bloom.web.Census Becoming.Bloom.alive ∧
+  (∀ (t : Nat), Becoming.Distinct (Becoming.Bloom.flow.present t)) ∧
+    Becoming.Bloom.flow.Taking Becoming.Bloom.web ∧ Becoming.Bloom.web.Unceasing ∧ ¬Becoming.Bloom.flow.More [()]
+Becoming.Dormant.more_without_arising : Becoming.Garden.flow.Balances Becoming.Dormant.web ∧
+  Becoming.Garden.flow.Acting Becoming.Dormant.web ∧
+    Becoming.Garden.flow.Taking Becoming.Dormant.web ∧
+      Becoming.Garden.flow.Capacity [()] 1 ∧
+        Becoming.Dormant.web.Dependent ∧
+          Becoming.Garden.flow.More [()] ∧
+            ∀ (t : Nat) (f : Becoming.Garden.Kind × Nat), ¬Becoming.Dormant.web.Arises t f
+Becoming.Repeated.ones : ∀ (n : Nat), (Becoming.total (Becoming.Repeated.rep n) fun x => 1) = n
+Becoming.Repeated.census : Becoming.Repeated.web.Census fun x => [()]
+Becoming.Repeated.more_without_arising : (Becoming.Repeated.web.Census fun x => [()]) ∧
+  Becoming.Repeated.flow.Balances Becoming.Repeated.web ∧
+    Becoming.Repeated.flow.Acting Becoming.Repeated.web ∧
+      Becoming.Repeated.flow.Taking Becoming.Repeated.web ∧
+        Becoming.Repeated.flow.More [()] ∧
+          (¬∀ (t : Nat), Becoming.Distinct (Becoming.Repeated.flow.present t)) ∧
+            ∀ (t : Nat) (f : Unit), ¬Becoming.Repeated.web.Arises t f
+@Becoming.Inactive.ones : ∀ {q : Nat → Nat},
+  q 0 = 0 → (∀ (m : Nat), q (m + 1) = 1) → ∀ (n : Nat), Becoming.total (Becoming.Inactive.present n) q = n
+Becoming.Inactive.gives : ∀ (t n : Nat),
+  (Becoming.total (Becoming.Inactive.present n) fun m => Becoming.Inactive.flow.give t m ()) = t
+Becoming.Inactive.present_le : ∀ (n m : Nat), m ∈ Becoming.Inactive.present n → m ≤ n
+Becoming.Inactive.distinct : ∀ (n : Nat), Becoming.Distinct (Becoming.Inactive.present n)
+Becoming.Inactive.more_without_arising : Becoming.Inactive.flow.Balances Becoming.Inactive.web ∧
+  Becoming.Inactive.flow.Acting Becoming.Inactive.web ∧
+    Becoming.Inactive.web.Census Becoming.Inactive.alive ∧
+      (∀ (t : Nat), Becoming.Distinct (Becoming.Inactive.flow.present t)) ∧
+        Becoming.Inactive.flow.More [()] ∧
+          ¬Becoming.Inactive.flow.Taking Becoming.Inactive.web ∧ ∀ (t f : Nat), ¬Becoming.Inactive.web.Arises t f
+Becoming.Crowd.drawing_without_taking : Becoming.Crowd.flow.Balances Becoming.Cycle.web ∧
+  Becoming.Crowd.flow.Acting Becoming.Cycle.web ∧
+    Becoming.Crowd.flow.Taking Becoming.Cycle.web ∧
+      Becoming.Cycle.web.Dependent ∧
+        (∀ (K : Nat),
+            ∃ T,
+              ∀ (t : Nat),
+                T ≤ t →
+                  ∀ (n : Nat),
+                    n < K →
+                      Becoming.Cycle.web.active t n ∧
+                        Becoming.Cycle.web.requires t n () ∧ Becoming.Cycle.web.draws t n ()) ∧
+          ¬Becoming.Crowd.flow.More [()]

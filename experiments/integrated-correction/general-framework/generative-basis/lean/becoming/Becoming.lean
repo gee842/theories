@@ -81,7 +81,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dependence and standing, and follows from the census balance: the list at the end with
   what ceased is the list at the start with what came. Read of recurrence the balance is
   exact: ceasing recurs exactly where, from each step, the list later falls short of the
-  list at the start with what came between.
+  list at the start with what came between. The balance is the whole law of counting:
+  every tally, some members kept across each step, those ceasing with them making the
+  list before and those coming the list after, is counted by a queue, so a property of
+  the counts holds of every listing exactly when it holds of every tally.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
@@ -174,7 +177,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   each, a world meets the other seven and not it. One world meets all eight, and in
   another each of the eight binds, the world not finite only through idle relata, with
   finitely many ever active. A finite world whose activity is decided
-  and which meets them comes to rest, by three of them.
+  and which meets them comes to rest, by three of them. Premises lacking balance or
+  embodiment leave counting free: every tally is the census of a world meeting every
+  premise but embodiment, and of one meeting every premise but balance; together, with
+  only active relata giving, they bind it, nothing arising across a step at which nothing
+  is active. That is all the eight add: under all eight the laws of counting are the
+  balance and that nothing arises across a step at which nothing is active.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and

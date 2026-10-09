@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-119 migrated records: 115 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+120 migrated records: 116 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -131,6 +131,7 @@
 | `unceasing-generation-needs-renewal` | [不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
+| `whole-law-of-counting` | [平衡是计数的全部规律：每组跨步保持、不再成立与开始成立的计数都由一个队列实现；缺平衡或缺体现的前提不约束计数；全部八个前提之下，计数的规律恰是平衡与没有关系项活跃的一步上没有生起 / The balance is the whole law of counting: every tally of members kept, ceasing and coming is counted by a queue; premises lacking balance or embodiment leave counting free; under all eight premises the laws of counting are the balance and that nothing arises across a step at which nothing is active](records/whole-law-of-counting.md) | theorem | recorded-checked |
 | `whole-persists-through-generation` | [整体经由部分的生成而持续：部分短暂，或部分终结且同时活跃的部分有限时，持续的整体需要部分不断生起 / A whole persists through the generation of its parts: where parts are brief, or end with finitely many active at once, a persisting whole needs its parts to keep arising](records/whole-persists-through-generation.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |
 

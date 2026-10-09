@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-119 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+120 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -127,6 +127,7 @@
 | [不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation](../results/records/unceasing-generation-needs-renewal.md) | recorded-checked | [Generation.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) |
 | [普遍实践权威的更强目标 / Stronger universal practical warrant target](../results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](../results/records/versioned-request-completion.md) | recorded-checked | [CorrectionVersioned.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean) |
+| [平衡是计数的全部规律：每组跨步保持、不再成立与开始成立的计数都由一个队列实现；缺平衡或缺体现的前提不约束计数；全部八个前提之下，计数的规律恰是平衡与没有关系项活跃的一步上没有生起 / The balance is the whole law of counting: every tally of members kept, ceasing and coming is counted by a queue; premises lacking balance or embodiment leave counting free; under all eight premises the laws of counting are the balance and that nothing arises across a step at which nothing is active](../results/records/whole-law-of-counting.md) | recorded-checked | [Population.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean) |
 | [整体经由部分的生成而持续：部分短暂，或部分终结且同时活跃的部分有限时，持续的整体需要部分不断生起 / A whole persists through the generation of its parts: where parts are brief, or end with finitely many active at once, a persisting whole needs its parts to keep arising](../results/records/whole-persists-through-generation.md) | recorded-checked | [Wholes.lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean) |
 | [核心作为智慧之根的目标 / Core as the root of wisdom target](../results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |
 

@@ -1,0 +1,56 @@
+'CorrectionInfrastructure.Best' does not depend on any axioms
+'CorrectionInfrastructure.AcceptScore' does not depend on any axioms
+'CorrectionInfrastructure.acceptance_factorization' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.every_optimum_has_access_iff' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.no_base_optimal_access' does not depend on any axioms
+'CorrectionInfrastructure.MaintenanceValue' does not depend on any axioms
+'CorrectionInfrastructure.Maintains' does not depend on any axioms
+'CorrectionInfrastructure.costly_maintenance_separation' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.accepting_optimum_can_destroy_access' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary' depends on axioms: [propext]
+'CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.maintenance_bonus_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionInfrastructure.LiveStep' does not depend on any axioms
+'CorrectionInfrastructure.Viable' does not depend on any axioms
+'CorrectionInfrastructure.Admissible' does not depend on any axioms
+'CorrectionInfrastructure.viable_iff_access_and_admissible' does not depend on any axioms
+'CorrectionInfrastructure.viable_has_current_access' does not depend on any axioms
+'CorrectionInfrastructure.dead_action_not_admissible' does not depend on any axioms
+'CorrectionInfrastructure.shielded_acceptance_composition' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.unavoidable_score_loss' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.TwoStepReward' does not depend on any axioms
+'CorrectionInfrastructure.LastAllowed' does not depend on any axioms
+'CorrectionInfrastructure.UnrestrictedValue' does not depend on any axioms
+'CorrectionInfrastructure.RestrictedValue' does not depend on any axioms
+'CorrectionInfrastructure.restricted_value_is_achievable' depends on axioms: [propext]
+'CorrectionInfrastructure.restricted_value_bounds_all_continuations' depends on axioms: [propext]
+'CorrectionInfrastructure.unrestricted_value_is_optimal' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.recomputed_value_restores_optimal_branch' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.approximate_constrained_score_bound' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.constrained_score_bound_is_tight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionInfrastructure.DViable' does not depend on any axioms
+'CorrectionInfrastructure.DAllowed' does not depend on any axioms
+'CorrectionInfrastructure.Return' does not depend on any axioms
+'CorrectionInfrastructure.PathSafe' does not depend on any axioms
+'CorrectionInfrastructure.Bellman' does not depend on any axioms
+'CorrectionInfrastructure.safe_path_is_viable' does not depend on any axioms
+'CorrectionInfrastructure.bellman_bounds_every_safe_policy' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.dynamically_recomputed_composition' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision' depends on axioms: [propext, Quot.sound]
+'CorrectionInfrastructure.Closed' does not depend on any axioms
+'CorrectionInfrastructure.closed_implies_every_finite_horizon' does not depend on any axioms
+'CorrectionInfrastructure.UniformPolicy' does not depend on any axioms
+'CorrectionInfrastructure.FiberFeasible' does not depend on any axioms
+'CorrectionInfrastructure.uniform_policy_iff_fiber_feasible' depends on axioms: [Classical.choice]
+'CorrectionInfrastructure.statewise_repair_need_not_be_usable' does not depend on any axioms
+'CorrectionInfrastructure.discriminating_evidence_restores_policy' does not depend on any axioms
+'CorrectionInfrastructure.uniform_safety_survives_finer_evidence' does not depend on any axioms
+'CorrectionInfrastructure.Covers' does not depend on any axioms
+'CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss' does not depend on any axioms
+'CorrectionInfrastructure.approved_scope_change_transports_coverage' does not depend on any axioms
+'CorrectionInfrastructure.RouteAccess' does not depend on any axioms
+'CorrectionInfrastructure.PrefixAccess' does not depend on any axioms
+'CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap' depends on axioms: [propext]
+'CorrectionInfrastructure.overlapping_handoff_retains_prefix_access' depends on axioms: [propext]
+'CorrectionInfrastructure.correction_preservation_allows_route_retirement' does not depend on any axioms

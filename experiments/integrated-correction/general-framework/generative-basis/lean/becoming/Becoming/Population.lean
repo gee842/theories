@@ -46,6 +46,16 @@ many formations are active at each step, and ties the flow's count to the web's.
   `Web.DependenceCensus.forming_of_dissolving`,
   `Web.DependenceCensus.forming_iff_dissolving`); `Becoming.Openness` reads them of
   standing.
+* The balance is the whole law of counting. Across each step some members are kept: with
+  those ceasing to be they are the list before the step, with those coming to be the list
+  after it (`Listed.keeps`, from which `Listed.across` follows). Counts of this form are a
+  *tally* (`Tally`, `Listed.tally`), and every tally is counted by a queue, its members
+  joining at the back and leaving from the front, each in turn (`Queue.counts`). So a
+  property of the counts holds wherever what holds is listed exactly when it holds of
+  every tally (`counting_laws`): no law of counting holds beyond what the balance gives.
+  The property is asked only to respect the counts' values at each step (`Pointwise`), as
+  function extensionality would give and the pure core does not assume.
+  `Becoming.Premises` reads this of worlds and their premises.
 * Under a census, with each formation taking part in the flow listed once and only
   active formations taking (`Flow.Taking`, of which only the activity half is used),
   the active formations grow without bound (`Flow.More.grows`), and more without end
@@ -220,6 +230,19 @@ theorem mark_add_not {q r : Prop} [Decidable q] [Decidable r] (one : q ∨ r)
   | .inr hr => (congrArg (mark q + ·) (mark_one hr)).trans
       (congrArg (· + 1) (mark_zero fun hq => not_both ⟨hq, hr⟩))
 
+/-- One member across a step, counted one where it holds: what holds after the step with
+its ceasing is what held before with its coming. -/
+theorem mark_turn (p q : Prop) [Decidable p] [Decidable q] :
+    mark q + mark (p ∧ ¬ q) = mark p + mark (¬ p ∧ q) :=
+  if hp : p then
+    (mark_add_not (if hq : q then .inl hq else .inr ⟨hp, hq⟩) fun both => both.2.2 both.1).trans
+      ((congrArg (· + mark (¬ p ∧ q)) (mark_one hp)).trans
+        (congrArg (1 + ·) (mark_zero fun both => both.1 hp))).symm
+  else
+    (congrArg (mark q + ·) (mark_zero fun both => hp both.1)).trans
+      ((mark_iff ⟨fun hq => ⟨hp, hq⟩, fun both => both.2⟩).trans
+        ((Nat.zero_add _).symm.trans (congrArg (· + mark (¬ p ∧ q)) (mark_zero hp).symm)))
+
 /-- Quantities that agree on the members of a list have the same total over it. -/
 theorem total_congr_on {f g : α → Nat} :
     ∀ {as : List α}, (∀ a, a ∈ as → f a = g a) → total as f = total as g
@@ -387,11 +410,11 @@ namespace Listed
 
 variable {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l : Nat → List α}
 
-/-- The census balance across a step: the list after it with the members that ceased to be
-is the list before it with the members that came to be. The members kept across the step
-are counted alike on both lists. -/
-theorem across (listed : Listed p l) (t : Nat) :
-    (l (t + 1)).length + ceasings (l t) p t = (l t).length + comings (l (t + 1)) p t :=
+/-- Across a step, some members are kept: with the members that ceased to be they are the
+list before the step, with the members that came to be the list after it. -/
+theorem keeps (listed : Listed p l) (t : Nat) :
+    ∃ k, (l t).length = k + ceasings (l t) p t ∧
+      (l (t + 1)).length = k + comings (l (t + 1)) p t :=
   have before : (l t).length = total (l t) (fun a => mark (p a (t + 1))) + ceasings (l t) p t :=
     (total_ones (l t)).symm.trans ((total_congr_on fun a mem =>
       have held : p a t := ((listed t).2 a).mpr mem
@@ -412,14 +435,16 @@ theorem across (listed : Listed p l) (t : Nat) :
         (listed (t + 1)).1 fun a mem h => ⟨((listed (t + 1)).2 a).mp h, ((listed t).2 a).mpr mem⟩)
       (marks_le_of_sub (q := fun a => p a t) (r := fun a => p a (t + 1)) (listed (t + 1)).1
         (listed t).1 fun a mem h => ⟨((listed t).2 a).mp h, ((listed (t + 1)).2 a).mpr mem⟩)
-  calc (l (t + 1)).length + ceasings (l t) p t
-      = (total (l (t + 1)) (fun a => mark (p a t)) + comings (l (t + 1)) p t) +
-          ceasings (l t) p t := congrArg (· + _) after
-    _ = (total (l t) (fun a => mark (p a (t + 1))) + ceasings (l t) p t) +
-          comings (l (t + 1)) p t :=
-        (congrArg (fun k => k + comings (l (t + 1)) p t + ceasings (l t) p t) kept.symm).trans
-          (Nat.add_right_comm _ _ _)
-    _ = (l t).length + comings (l (t + 1)) p t := congrArg (· + _) before.symm
+  ⟨_, before, after.trans (congrArg (· + _) kept.symm)⟩
+
+/-- The census balance across a step: the list after it with the members that ceased to be
+is the list before it with the members that came to be. The members kept across the step
+are counted alike on both lists. -/
+theorem across (listed : Listed p l) (t : Nat) :
+    (l (t + 1)).length + ceasings (l t) p t = (l t).length + comings (l (t + 1)) p t :=
+  match listed.keeps t with
+  | ⟨_, before, after⟩ => (congrArg (· + _) after).trans
+      ((Nat.add_right_comm _ _ _).trans (congrArg (· + _) before.symm))
 
 /-- Over any stretch, the list at the end with the members that ceased to be is the list at
 the start with the members that came to be. -/
@@ -551,6 +576,168 @@ theorem ceasing_of_outpacing (listed : Listed p l) {B : Nat → Nat}
         (Nat.lt_of_lt_of_le more (Nat.le_add_left _ _))⟩
 
 end Listed
+
+/-! ## The balance is the whole law of counting -/
+
+/-- Counts a listing can have: `n t` listed at each step, `c t` ceasing to be and `a t`
+coming to be across the step from `t`. Some number are kept across each step: with those
+that cease they are the list before it, with those that come the list after it. -/
+def Tally (n c a : Nat → Nat) : Prop :=
+  ∀ t, ∃ k, n t = k + c t ∧ n (t + 1) = k + a t
+
+/-- Whatever is listed is counted by a tally. -/
+theorem Listed.tally {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l : Nat → List α}
+    (listed : Listed p l) :
+    Tally (fun t => (l t).length) (fun t => ceasings (l t) p t)
+      (fun t => comings (l (t + 1)) p t) :=
+  listed.keeps
+
+theorem steps_length : ∀ T n, (steps T n).length = n
+  | _, 0 => rfl
+  | T, n + 1 => congrArg Nat.succ (steps_length (T + 1) n)
+
+theorem steps_within : ∀ {T n k : Nat}, k ∈ steps T n → k < T + n
+  | _, 0, _, mem => nomatch mem
+  | T, n + 1, _, .head _ =>
+    Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.succ_le_succ (Nat.le_add_right T n))
+  | T, n + 1, _, .tail _ mem =>
+    Nat.lt_of_lt_of_le (steps_within mem) (Nat.le_of_eq (Nat.add_right_comm T 1 n))
+
+theorem steps_of_within : ∀ {T n k : Nat}, T ≤ k → k < T + n → k ∈ steps T n
+  | _, 0, _, above, within => absurd (Nat.lt_of_le_of_lt above within) (Nat.lt_irrefl _)
+  | _, _ + 1, _, .refl, _ => .head _
+  | T, n + 1, _ + 1, .step above, within => .tail _ (steps_of_within (Nat.succ_le_succ above)
+      (Nat.lt_of_lt_of_le within (Nat.le_of_eq (Nat.add_right_comm T n 1))))
+
+theorem steps_distinct : ∀ T n, Distinct (steps T n)
+  | _, 0 => trivial
+  | T, n + 1 => ⟨fun mem => Nat.not_succ_le_self T (steps_mem mem), steps_distinct (T + 1) n⟩
+
+theorem steps_below_all {T m : Nat} :
+    ∀ {n}, n ≤ m → total (steps T n) (fun k => mark (k < T + m)) = n
+  | 0, _ => rfl
+  | n + 1, le => (steps_last _ T n).trans ((congrArg (· + _) (steps_below_all
+      (Nat.le_of_succ_le le))).trans (congrArg (n + ·) (mark_one (Nat.add_lt_add_left le T))))
+
+/-- Of the `m + r` steps from `T`, `m` lie below `T + m`. -/
+theorem steps_below {T m : Nat} : ∀ r, total (steps T (m + r)) (fun k => mark (k < T + m)) = m
+  | 0 => steps_below_all (Nat.le_refl m)
+  | r + 1 => (steps_last _ T (m + r)).trans ((congrArg (· + _) (steps_below r)).trans
+      (congrArg (m + ·) (mark_zero (Nat.not_lt_of_ge
+        (Nat.add_le_add_left (Nat.le_add_right m r) T)))))
+
+theorem steps_above_none {T m : Nat} :
+    ∀ {n}, n ≤ m → total (steps T n) (fun k => mark (T + m ≤ k)) = 0
+  | 0, _ => rfl
+  | n + 1, le => (steps_last _ T n).trans ((congrArg (· + _) (steps_above_none
+      (Nat.le_of_succ_le le))).trans (congrArg (0 + ·)
+        (mark_zero (Nat.not_le_of_gt (Nat.add_lt_add_left le T)))))
+
+/-- And `r` lie from `T + m` on. -/
+theorem steps_above {T m : Nat} : ∀ r, total (steps T (m + r)) (fun k => mark (T + m ≤ k)) = r
+  | 0 => steps_above_none (Nat.le_refl m)
+  | r + 1 => (steps_last _ T (m + r)).trans ((congrArg (· + _) (steps_above r)).trans
+      (congrArg (r + ·) (mark_one (Nat.add_le_add_left (Nat.le_add_right m r) T))))
+
+namespace Queue
+
+variable (n c : Nat → Nat)
+
+/-- How many have left the queue before step `t`. -/
+def gone (t : Nat) : Nat :=
+  total (steps 0 t) c
+
+/-- Member `k` is in the queue at step `t`: it has joined and not yet left. Members join at
+the back and leave from the front, each in turn: at step `t` the queue runs from member
+`gone c t` for `n t` members. -/
+def holds (k t : Nat) : Prop :=
+  gone c t ≤ k ∧ k < gone c t + n t
+
+instance (k t : Nat) : Decidable (holds n c k t) := instDecidableAnd
+
+/-- The queue at step `t`, front first. -/
+def line (t : Nat) : List Nat :=
+  steps (gone c t) (n t)
+
+variable {n c} {a : Nat → Nat}
+
+theorem gone_succ (t : Nat) : gone c (t + 1) = gone c t + c t :=
+  (steps_last c 0 t).trans (congrArg (_ + ·) (congrArg c (Nat.zero_add t)))
+
+/-- The queue is listed at each step, each member once. -/
+theorem listed : Listed (holds n c) (line n c) :=
+  fun _ => ⟨steps_distinct _ _, fun _ =>
+    ⟨fun holds => steps_of_within holds.1 holds.2,
+     fun mem => ⟨steps_mem mem, steps_within mem⟩⟩⟩
+
+/-- The queue at `t` ends where the members it keeps across the step end, counted from the
+front after the step. -/
+theorem kept_end {t k : Nat} (before : n t = k + c t) :
+    gone c t + n t = gone c (t + 1) + k :=
+  (congrArg (gone c t + ·) (before.trans (Nat.add_comm k (c t)))).trans
+    ((Nat.add_assoc _ _ _).symm.trans (congrArg (· + k) (gone_succ t).symm))
+
+/-- Under a tally, `c t` leave across the step from `t`: those at the front. -/
+theorem ceasings_eq (tally : Tally n c a) (t : Nat) :
+    ceasings (line n c t) (holds n c) t = c t :=
+  match tally t with
+  | ⟨k, before, after⟩ =>
+    have room : gone c t + n t ≤ gone c (t + 1) + n (t + 1) :=
+      Nat.le_trans (Nat.le_of_eq (kept_end before)) (Nat.le_trans
+        (Nat.add_le_add_left (Nat.le_add_right k (a t)) _)
+        (Nat.le_of_eq (congrArg (gone c (t + 1) + ·) after.symm)))
+    (total_congr_on fun j mem => mark_iff (p := CeasesToBe (holds n c j) t)
+      ⟨fun ceases => match Nat.lt_or_ge j (gone c t + c t) with
+        | .inl front => front
+        | .inr behind => absurd ⟨Nat.le_trans (Nat.le_of_eq (gone_succ t)) behind,
+            Nat.lt_of_lt_of_le ceases.1.2 room⟩ ceases.2,
+       fun front => ⟨⟨steps_mem mem, steps_within mem⟩, fun stays =>
+         Nat.lt_irrefl _ (Nat.lt_of_lt_of_le front
+           (Nat.le_trans (Nat.le_of_eq (gone_succ t).symm) stays.1))⟩⟩).trans
+      ((congrArg (fun m => total (steps (gone c t) m) fun j => mark (j < gone c t + c t))
+        (before.trans (Nat.add_comm k (c t)))).trans (steps_below k))
+
+/-- And `a t` join: those at the back. -/
+theorem comings_eq (tally : Tally n c a) (t : Nat) :
+    comings (line n c (t + 1)) (holds n c) t = a t :=
+  match tally t with
+  | ⟨k, before, after⟩ =>
+    (total_congr_on fun j mem => mark_iff (p := ComesToBe (holds n c j) t)
+      ⟨fun comes => match Nat.lt_or_ge j (gone c t + n t) with
+        | .inl within => absurd ⟨Nat.le_trans (Nat.le_trans (Nat.le_add_right _ (c t))
+            (Nat.le_of_eq (gone_succ t).symm)) (steps_mem mem), within⟩ comes.1
+        | .inr behind => Nat.le_trans (Nat.le_of_eq (kept_end before).symm) behind,
+       fun behind => ⟨fun holds => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le holds.2
+           (Nat.le_trans (Nat.le_of_eq (kept_end before)) behind)),
+         ⟨steps_mem mem, steps_within mem⟩⟩⟩).trans
+      ((congrArg (fun m => total (steps (gone c (t + 1)) m)
+        fun j => mark (gone c (t + 1) + k ≤ j)) after).trans (steps_above (a t)))
+
+/-- Every tally is the count of a queue. -/
+theorem counts (tally : Tally n c a) (t : Nat) :
+    (line n c t).length = n t ∧ ceasings (line n c t) (holds n c) t = c t ∧
+      comings (line n c (t + 1)) (holds n c) t = a t :=
+  ⟨steps_length _ _, ceasings_eq tally t, comings_eq tally t⟩
+
+end Queue
+
+/-- A property of counts that respects their values at each step. Given function
+extensionality every property does; the pure core does not assume it. -/
+def Pointwise (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) : Prop :=
+  ∀ {n c a n' c' a' : Nat → Nat}, (∀ t, n t = n' t ∧ c t = c' t ∧ a t = a' t) →
+    Q n c a → Q n' c' a'
+
+/-- The balance is the whole law of counting: a property of the counts that holds wherever
+what holds is listed holds of every tally, and conversely. -/
+theorem counting_laws {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (pointwise : Pointwise Q) :
+    (∀ (α : Type) (p : α → Nat → Prop) [∀ a t, Decidable (p a t)] (l : Nat → List α),
+      Listed p l → Q (fun t => (l t).length) (fun t => ceasings (l t) p t)
+        (fun t => comings (l (t + 1)) p t)) ↔
+      ∀ n c a, Tally n c a → Q n c a :=
+  ⟨fun law n c _ tally => pointwise (fun t => Queue.counts tally t)
+      (law Nat (Queue.holds n c) (Queue.line n c) Queue.listed),
+   fun law _ _ _ _ listed => law _ _ _ listed.tally⟩
 
 /-! ## Censuses -/
 
