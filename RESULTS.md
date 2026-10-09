@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-114 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+115 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -32,6 +32,7 @@
 | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](theories/becoming/results/records/conditional-foundation-assessment.md) | reviewed-scoped | [FIXED-FINISH-LINE-AUDIT.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) |
 | [绑定的构成性说明及无前提推广的限度 / Constitutive binding and the limits of presuppositionless promotion](theories/becoming/results/records/constitutive-binding-assessment.md) | reviewed-scoped | [GENERATED-LOGIC.md](theories/becoming/chapters/GENERATED-LOGIC.md) |
 | [情境选择性更新的公开数据对应 / Public-data correspondence for context-sensitive updating](theories/becoming/results/records/context-sensitive-updating-correspondence.md) | reviewed-scoped | [MEMORY-UPDATING.md](experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md) |
+| [开放：跨过围住所立者的步，所立者的总水平不上升，任何水平变化都使它下降；被围住的世界归于静止而不需要有限；生成不息需要不被围住的步 / Openness: across steps enclosed around what stands, the total standing never rises and every change of standing lowers it; an enclosed world comes to rest without being finite, and generation without end needs steps not enclosed](theories/becoming/results/records/continued-change-needs-openness.md) | recorded-checked | [Openness.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean) |
 | [控制响应丧失与保留共同关系的恢复 / Control-response loss and recovery through retained joint relations](theories/becoming/results/records/control-coherence-loss.md) | recorded-checked | [OperativeCoherence.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean) |
 | [带前提的推导健全性 / Premise-tracked derivation soundness](theories/becoming/results/records/derivation-soundness.md) | recorded-checked | [GenerativeClosure.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) |
 | [由历史摘要构造局部规律的精确条件 / Exactness of a local law derived from history summaries](theories/becoming/results/records/derived-history-law-exactness.md) | recorded-checked | [DerivedHistoryLaw.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean) |

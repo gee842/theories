@@ -1979,6 +1979,56 @@ Integration: 计划 P24；完整性的第三条读法；为第十次审查（P24
 
 **边界。** 无伦理谓词，不评价任何部分；只对离散步的读法陈述；有限世界的蕴含要求活动可判定；只映射世界层面的八个前提；前提与世界的名称是 AI 的表述，由 Ren 定。本节尚未经独立审查（计划 P24b）。
 
+## 33. 开放（P25）
+
+2026-10-09。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P25。§30 的 `rests` 用有限使世界归于静止；§31（P23）陈述的理论在其第 8 节把这一点列为开放：在普查与被围住之下（而不只是有限时），全部前提是否使世界归于静止。本节回答：起作用的是被围住，不是有限。新 L3 模块 `Becoming.Openness`（导入 `Premises`）。成果记录：[continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)。
+
+```text
+Result(s): 复用 no-finite-part-bears-taking（Balances.runs_down、rise_lowers_on、Enclosed.around、Dissipative）、
+           rising-and-falling-in-one-exchange（Balances.fall_taken）、generation-is-replenishment（ComesToStand.rises、
+           Handing）、map-of-premises（Premised、Counted、beyond）、space-and-its-parts（World、Generative、
+           Degenerative、Embodied）、coming-and-ceasing-keep-pace（Ceases）、Renewal 的 falls_finitely；
+           新增 continued-change-needs-openness
+Delta: Openness：所立者的普查（Web.StandingCensus）与围住所立者的步（Flow.AroundStanding）；stock_eq、
+       Enclosed.aroundStanding、fall_lowers_on、standing_runs_down、standing_never_rises、change_lowers、stills；
+       世界上的 standingCensus、rises_of_arises、falls_of_ceases、rests_around、rests_enclosed、generation_opens；
+       见证 exposed 与 exposed_world；列表工具 mem_append_left、mem_append_right
+Supplied premises / correspondence: 平衡；耗散；所立者的普查；从某步起每步围住所立者。世界层面另要求活动的普查与每个
+       关系项体现；rests_enclosed 与 generation_opens 要求关系项的相等可判定
+Evidence: 合并检查器回执（见记录）；外围桥接重跑；实例检查
+Boundary: 要求每个关系项体现，不只是生起者；耗散只约束被围住的交换，exposed 中它空成立；不评价开放或静止
+Integration: 计划 P25；回答理论第 8 节列出的开放项；为第十次审查（P24b）提供对象
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Web.StandingCensus`、`Flow.AroundStanding` | 每步立着的条件被不重复地列出；一步围住所立者：某个不重复、跨过该步封闭的家族包含该步前后立着的每个条件 |
+| `StandingCensus.stock_eq`、`Enclosed.aroundStanding` | 所立者的总水平就是包含它的任何不重复家族的存量；关系项的相等可判定时，被围住的步围住所立者 |
+| `standing_runs_down`、`standing_never_rises` | 跨过围住所立者的步，总水平下降至少为取用围住它的家族的形成数，所以不上升 |
+| `fall_lowers_on`、`change_lowers` | 被耗散的家族中成员下降使存量下降（它被取用）；所以任何条件的水平上升或下降都使总水平下降 |
+| `stills` | 从某步起每步都围住所立者时，没有条件的水平在任意晚的步变化 |
+| `standingCensus`、`rises_of_arises`、`falls_of_ceases` | 活动的普查与每个关系项体现给出所立者的普查；体现的关系项生起即上升，止息即下降 |
+| `rests_around`、`rests_enclosed` | 有普查、每个关系项体现、平衡且耗散的世界，从某步起每步围住所立者（相等可判定时：每步被围住）时，生成与退化都不再复现 |
+| `generation_opens` | 所以这样的世界生成不息时，在任意晚的步有不被围住的步 |
+| `exposed`、`exposed_world` | Handing 的两侧另外在每步从无限多个地关系项各取一个单位再还回：满足全部八个前提，生成不息，没有一步被围住 |
+
+**解读。**
+
+- **总水平是只降不升的量。** 平衡与耗散一起，使跨过被围住的步的总水平不上升；更强地，任何水平的变化都使它严格下降。上升被给予，而在被围住的步上给予需要取用；下降被取用。所以变化本身消耗总水平。自然数的量只能严格下降有限多次（`falls_finitely`），所以被围住的展开中，变化只能有限多次。
+- **有限不是关键。** §30 的 `rests` 要求关系项总共有限；这里关系项可以无限多，只要每步立着的有限多个被列出，且每步的交换被某个有限家族围住。两者都不是对方的特例：`rests` 要求有限而只要求生起者体现；这里不要求有限而要求每个关系项体现。
+- **开放是生成不息的必要条件。** 读作对立面：满足普查、体现、平衡与耗散的世界若生成不息，那么在任意晚的步，有一步的交换伸到每个有限家族之外。这是 §17、§20（P13、P15）中家族层面的开放在世界层面的陈述，而且用变化的所立者，不是固定的家族。
+- **exposed：开放不能去掉。** Handing 的两侧来回传递一个单位的水平，生成不息；另外在每步与无限多个地关系项交换一个单位，取用再还回，使地的水平保持为零。由于每步取用无限多个关系项，没有有限家族跨过任何一步封闭，所以耗散空成立。它满足全部八个前提（普查只列出立着的那一侧），生成不息。所以在八个前提之下，被围住这一条件不能从 `rests_enclosed` 中去掉。
+
+**作者反审。**
+
+*反驳 1：exposed 只是利用耗散的表示漏洞。* 是利用了一个已披露的特点：耗散只约束被围住的交换（P16b、`Spray`）。这正是要显示的：被围住不是由八个前提推出的，它是一个独立的、关于开放的条件。地的交换（取一再还一）是零净流，它不给两侧任何东西；它只使每一步不被围住。一个要求“每步只与有限多个关系项交换”的更强耗散会排除它，但那是另一个前提，应当公开地加入，而不是藏在耗散里。
+
+*反驳 2：要求每个关系项体现太强。* 是比 `rests` 的“生起者体现”强。止息读作下降，需要止息者体现；生起读作上升，需要生起者体现。只要求生起者体现时，`stills` 仍使生成停止吗？不立着却活跃的关系项可以不断止息而不改变水平；所以退化部分需要更多。是否可以只用生起者体现得到生成部分，列为下一步（记录的 next_delta）。
+
+*反驳 3：可判定的相等是额外前提。* 是构造性证明的要求：把立着的两个列表合并为一个不重复的家族要判定相等。经典地它总是成立；`rests_around` 不要求它，直接以围住所立者为前提。
+
+**边界。** 无伦理谓词，不评价开放或静止；只对离散步与自然数的量陈述；“开放”“被围住”“所立者”的读法与名称是 AI 的表述，由 Ren 定。本节尚未经独立审查（计划 P24b）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2223,3 +2273,13 @@ Section 31 has not yet been independently reviewed.
 - **Boundaries.** Only the eight premises stated of worlds are mapped; premises relative to a continuation relation, a renewal relation, a decaying reserve or a family of conditions are not. Independence is relative to these eight. No part is evaluated, and the names are Ren's to choose.
 
 The package now has 974 theorems and 1583 declaration audits, over a core closure of 28 modules and a package of 26, all source declarations with empty axiom reports. Section 32 has not yet been independently reviewed.
+
+**P25: openness.** Section 30's `rests` brings a world to rest through finiteness; section 31 listed as open whether all premises bring a world to rest under a census and enclosure instead. Section 33 answers: enclosure, not finiteness, does the work. It is a new L3 module `Becoming.Openness` (importing `Premises`) ([continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)).
+
+- **Total standing runs down.** Where what stands at each step is listed, each once (`Web.StandingCensus`), the total standing across a step enclosed around what stands (`Flow.AroundStanding`) falls by at least the number of formations taking from the enclosing family (`standing_runs_down`), so it never rises, and any condition's standing rising or falling lowers it (`change_lowers`): a rise is given to, and giving needs uptake there; a fall is taken from (`fall_lowers_on`).
+- **Rest from enclosure.** So where every step from some step on is enclosed around what stands, no standing changes at arbitrarily late steps (`stills`). A world with a census whose relata are all embodied, with a balanced, dissipative flow, enclosed from some step on, comes to rest (`rests_around`, `rests_enclosed`); finiteness is not needed.
+- **Generation without end opens.** Read the other way, generation without end in such a world needs a step not enclosed at arbitrarily late steps (`World.generation_opens`): exchange beyond every finite family.
+- **Openness cannot be dropped.** In `exposed` the sides of `Handing` also take a unit from each of infinitely many ground relata and give it back at every step. It meets all eight premises and generates without end; no step is enclosed, so dissipation binds at none (`exposed_world`).
+- **Boundaries.** The world-level theorems need every relatum embodied, not only whatever arises; decidable equality is required by the constructive proof; dissipation binding only enclosed exchange is a disclosed feature of its representation. Neither openness nor rest is evaluated, and the names are Ren's to choose.
+
+The package now has 994 theorems and 1612 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Section 33 has not yet been independently reviewed.

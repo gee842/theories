@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-114 migrated records: 110 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+115 migrated records: 111 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -36,6 +36,7 @@
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |
 | `constitutive-binding-assessment` | [绑定的构成性说明及无前提推广的限度 / Constitutive binding and the limits of presuppositionless promotion](records/constitutive-binding-assessment.md) | assessment | reviewed-scoped |
 | `context-sensitive-updating-correspondence` | [情境选择性更新的公开数据对应 / Public-data correspondence for context-sensitive updating](records/context-sensitive-updating-correspondence.md) | assessment | reviewed-scoped |
+| `continued-change-needs-openness` | [开放：跨过围住所立者的步，所立者的总水平不上升，任何水平变化都使它下降；被围住的世界归于静止而不需要有限；生成不息需要不被围住的步 / Openness: across steps enclosed around what stands, the total standing never rises and every change of standing lowers it; an enclosed world comes to rest without being finite, and generation without end needs steps not enclosed](records/continued-change-needs-openness.md) | theorem | recorded-checked |
 | `control-coherence-loss` | [控制响应丧失与保留共同关系的恢复 / Control-response loss and recovery through retained joint relations](records/control-coherence-loss.md) | theorem | recorded-checked |
 | `derivation-soundness` | [带前提的推导健全性 / Premise-tracked derivation soundness](records/derivation-soundness.md) | theorem | recorded-checked |
 | `derived-history-law-exactness` | [由历史摘要构造局部规律的精确条件 / Exactness of a local law derived from history summaries](records/derived-history-law-exactness.md) | theorem | recorded-checked |

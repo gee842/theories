@@ -339,7 +339,7 @@
     "next_zh": "从确定的整体描述推到其分化是同一展开中内在相关的环节；须区分无限制包容、实际关系构成与解释具体形态的作用主张。每个生成能否以脊柱的方式表示，也是所需根据的一部分。",
     "next_en": "Pass from a determinate whole account to the warranted claim that its differentiations are internally related moments of one unfolding, distinguishing unrestricted inclusion, actual relational constitution and operative claims about particular forms. Whether every becoming can be represented as the spine represents it is part of the warrant still needed.",
     "source": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
-    "source_sha256": "78f2a82ddb304f5b8a9238d0ca2029e3b34cf2a61108c7c4fe33fd0796b5c2a4",
+    "source_sha256": "1ae0f10d9233fd6dbd407cdc1bdf2765f18597e21a818b7206eb820caebcec08",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean"

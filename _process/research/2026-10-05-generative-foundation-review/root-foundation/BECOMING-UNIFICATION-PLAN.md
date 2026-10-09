@@ -239,7 +239,8 @@ Three rings, with dependence pointing only toward the core; one checker and one 
 | P23b 第九次独立审查 | 另一 agent 审查 P19–P23 | 逐项处理 |
 | P23c 第九次审查的处理 | 逐项处理第九次审查（M1…） | 每项关闭或说明保留理由；更正进入核心、记录与正文 |
 | P24 前提的地图 ✓ | 新 L3 模块 `Becoming.Premises`（导入 `Space`）：前提在世界上的形式补全（普查 `Censused`、有界传递 `Transmits`）；前提之间的蕴含（`Dependent` 推出有储备承载，`Embodied` 推出生起者体现，有限推出普查，有限世界中 `Taking` 与 `Dissipative` 推出 `Acting`，一般地在被围住的步上）；其余彼此独立：八个前提各有一个世界满足其余七个而不满足它；一个有活动的世界满足全部；有限世界中全部前提一起使世界归于静止 | 已完成：[研究 §32](BECOMING-RENEWAL-READING.md#32-前提的地图p24)，在第九次审查进行时完成。L3 新模块 `Becoming.Premises`（导入 `Space`）：世界上的普查（`Counted`）与有界传递（`Transmitting`）；蕴含 `Dependent.carried`、`Finite.counted`、`acting_of_enclosed`、`Finite.acting`；八个前提彼此独立（`independent`、`none_follows`；世界 strained、unbalanced、scatter、morsel、keeping、latent、multitude、novel），不满足普查与只有活跃者给予的两个世界都是无限的；互利者满足全部（`mutualism_premised`）；有限世界中全部前提一起归于静止（`premised_rests`）。记录 [map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)。回执 20261009T122536.558190Z（974 项定理／1583 项声明审计），外围回执 20261009T124123.560754Z |
-| P24b 第十次独立审查 | 另一 agent 审查 P23c 与 P24 | 逐项处理 |
+| P25 开放 ✓ | 新 L3 模块 `Becoming.Openness`（导入 `Premises`）：在平衡与耗散之下，跨过围住所立者的步，所立者的总水平不上升，任何关系项的水平变化都使它下降；所以每步立着的有限多个被列出、且从某步起每步都围住所立者时，水平的变化不复现；读于世界：有普查、体现、平衡、耗散且从某步起每步都被围住的世界中，生成与退化都不复现，不需要有限；反例：满足全部八个前提而没有一步被围住的世界生成不息 | 生成不息需要开放，有形式陈述；被围住这一条件不能去掉，有见证 |
+| P24b 第十次独立审查 | 另一 agent 审查 P23c、P24 与 P25 | 逐项处理 |
 
 各阶段沿用既有流程：先在暂存区编译并核对公理，再登记包、写记录与研究章节，跑全部检查，最后提交。读法、名称、“生”的范围与接续仍由 Ren 定，见上文第 6 节与研究各节的“边界”。
 
@@ -260,6 +261,7 @@ The phases are:
 - P23b: the ninth review.
 - P23c: integrating the ninth review.
 - P24: the map of premises (world forms of the census and of bounded transmission; which premises follow from which, including that in a finite world only active relata give where only active relata take and the flow dissipates; the independence of the rest, each failed by a world meeting all the others; one active world meeting them all; and all of them together bringing a finite world to rest).
-- P24b: the tenth review, of P23c and P24.
+- P25: openness (under balance and dissipation, across steps enclosed around what stands, the total standing never rises and every change of standing lowers it; so where what stands is listed and every step from some point is enclosed, standing stops changing, and a world with a census, embodiment, balance and dissipation comes to rest without being finite; a world meeting all eight premises with no step enclosed generates without end).
+- P24b: the tenth review, of P23c, P24 and P25.
 
 Formal completeness of a representation does not establish the deductive necessity of the whole for reality, and the readings and names remain Ren's.

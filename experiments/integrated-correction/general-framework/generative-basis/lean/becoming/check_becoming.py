@@ -39,7 +39,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent",
+        "Becoming.Openness", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent",
         "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
@@ -407,6 +407,13 @@ SCOPE = (
     "independent, each failed by a world meeting the other seven, the worlds failing a census or "
     "only active relata giving being infinite; mutualists active throughout meet all eight, and "
     "in a finite world the eight together bring generation and degeneration to an end. "
+    "Openness: under balance and dissipation, across a step enclosed around what stands, the "
+    "total standing does not rise and any condition's standing rising or falling lowers it, so "
+    "where what stands is listed and every step from some step on is enclosed around it, "
+    "standing stops changing; a world with a census whose relata are embodied, balanced and "
+    "dissipative, enclosed from some step on, comes to rest without being finite, so its "
+    "generation without end needs steps not enclosed; the sides of Handing exchanging with an "
+    "unbounded ground meet all eight premises, no step enclosed, and generate without end. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "

@@ -18,6 +18,7 @@ import Becoming.Reserve
 import Becoming.Evolution
 import Becoming.Space
 import Becoming.Premises
+import Becoming.Openness
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -142,8 +143,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   decided has a census, and where only active relata take and the flow dissipates, only
   active relata give across every enclosed step, as every step of a finite world is. The
   remaining eight premises are independent: for each, a world meets the other seven and
-  not it. One world meets all
-  eight, and in a finite world the eight together bring it to rest.
+  not it. One world meets all eight, and in a finite world the eight together bring it to
+  rest.
+* `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
+  balance and dissipation, across a step enclosed around what stands, the total standing
+  does not rise and any change of standing lowers it, so where what stands is listed and
+  every step from some step on is enclosed around it, standing stops changing. A world
+  with a census, embodied, balanced and dissipative, comes to rest once enclosed, without
+  being finite; a world meeting all eight premises with no step enclosed generates without
+  end.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

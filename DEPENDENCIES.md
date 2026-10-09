@@ -406,6 +406,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 复用反应保留与测量对应的完成结果，加入操控线索／扰动下的更新比较；不声称正式定理组合或独立重复实验。 / Reuse completed retention and measurement correspondence, adding updating contrasts under cue/perturbation manipulations; no formal theorem composition or independent experimental replication.
 
+## continued-change-needs-openness ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用耗散、被围住的步、跨过被耗散的步家族的存量下降（Balances.runs_down），以及可判定相等时被围住的步围住任何家族（Enclosed.around）。 / Reuses dissipation, enclosed steps, a family's stock running down across a step dissipated on (Balances.runs_down), and that with equality decided an enclosed step is enclosed around any family (Enclosed.around).
+
+**Producer output / 上游输出:** 被耗散的家族的存量下降至少为取用它的形成数；被围住的步围住任何家族。 / A family dissipated on runs down by at least the number of formations taking from it; an enclosed step is enclosed around any family.
+
+**Consumer input / 下游输入:** 所立者的总水平不上升，任何水平变化都使它下降。 / The total standing never rises, and every change of standing lowers it.
+
+**Retained conditions / 保留条件:** 平衡；耗散；所立者被列出；步围住所立者。 / Balance; dissipation; what stands listed; the step enclosed around it.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## continued-change-needs-openness ← generation-is-replenishment
+
+`formal-reuse` — 复用上升降低存量（rise_lowers_on）、开始作为条件而在即上升（ComesToStand.rises）与 Handing 的见证。 / Reuses that a rise lowers the stock (rise_lowers_on), that coming to stand is a rise (ComesToStand.rises), and the Handing witness.
+
+**Producer output / 上游输出:** 被耗散的家族中成员上升时存量下降；Handing 的两侧来回传递水平，生成不息。 / A member rising lowers a family's stock under dissipation; the sides of Handing hand a standing back and forth and generate without end.
+
+**Consumer input / 下游输入:** 上升使总水平下降；exposed 中的两侧。 / A rise lowers the total standing; the sides in exposed.
+
+**Retained conditions / 保留条件:** 平衡；耗散。 / Balance; dissipation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## continued-change-needs-openness ← rising-and-falling-in-one-exchange
+
+`formal-reuse` — 复用平衡的流中每次下降都被取用（Balances.fall_taken）。 / Reuses that in a balanced flow every fall is taken from (Balances.fall_taken).
+
+**Producer output / 上游输出:** 下降的条件被取用。 / A falling condition is taken from.
+
+**Consumer input / 下游输入:** 下降使总水平下降。 / A fall lowers the total standing.
+
+**Retained conditions / 保留条件:** 平衡。 / Balance.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## continued-change-needs-openness ← map-of-premises
+
+`formal-reuse` — 复用八个前提（Premised）、普查（Counted）与列表工具（beyond）。 / Reuses the eight premises (Premised), the census (Counted) and the list tool beyond.
+
+**Producer output / 上游输出:** 八个前提；普查。 / The eight premises; the census.
+
+**Consumer input / 下游输入:** 满足全部八个前提而生成不息的世界；世界层面的静止定理的前提。 / A world meeting all eight premises that generates without end; the premises of the world-level rest theorems.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## continued-change-needs-openness ← space-and-its-parts
+
+`formal-reuse` — 复用世界、生成与退化的部分（Generative、Degenerative）与体现（Embodied）。 / Reuses worlds, the generative and degenerative parts (Generative, Degenerative) and embodiment (Embodied).
+
+**Producer output / 上游输出:** 世界及其部分。 / Worlds and their parts.
+
+**Consumer input / 下游输入:** 被围住的世界归于静止。 / An enclosed world comes to rest.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
+## continued-change-needs-openness ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用止息（Ceases）。 / Reuses ceasing (Ceases).
+
+**Producer output / 上游输出:** 关系项的止息。 / A relatum ceasing.
+
+**Consumer input / 下游输入:** 体现的关系项止息时其水平下降。 / An embodied relatum ceasing falls.
+
+**Retained conditions / 保留条件:** 体现。 / Embodiment.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
 ## derived-history-law-exactness ← finite-trace-transport
 
 `formal-reuse` — admitted_extension_projects直接调用trace_map保持同一事件词；反向接续另由derived_trace_sound证明。 / admitted_extension_projects directly uses trace_map to preserve the event word; derived_trace_sound separately proves continuation soundness.
