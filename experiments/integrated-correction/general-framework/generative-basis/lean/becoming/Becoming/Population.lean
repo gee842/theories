@@ -11,6 +11,10 @@ many formations are active at each step, and ties the flow's count to the web's.
 * If more formations are active after a step than before, some formation active after
   the step was not active before: it arises across the step (`arises_of_more`). A
   census that grows without bound makes generation unceasing (`unceasing_of_growth`).
+* Under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late
+  steps (`arising_of_ceasing`). A ceasing not preceded by an arising leaves fewer
+  formations active than before (`arises_or_fewer`), and the count cannot fall forever.
+  Not conversely: ever new formations can arise while none ceases (`Dawn`).
 * Under a census, with each formation taking part in the flow listed once and only
   active formations taking (`Flow.Taking`, of which only the activity half is used),
   the active formations grow without bound (`Flow.More.grows`), and more without end
@@ -200,6 +204,56 @@ theorem unceasing_of_growth {alive : Nat → List F} (census : W.Census alive)
       match W.arises_of_more (fun f a => ((census t).2 f).mp a) ((census (t + 1)).1)
         (fun f mem => ((census (t + 1)).2 f).mpr mem) up with
       | ⟨f, _, arises⟩ => ⟨t, f, from_, arises⟩
+
+/-- Under a census, either some formation arises from `N` on, or every formation active
+at a later step was already active at `N`. -/
+theorem arises_or_kept {alive : Nat → List F} (census : W.Census alive) {N : Nat} :
+    ∀ {T}, N ≤ T → (∃ t f, N ≤ t ∧ W.Arises t f) ∨ ∀ f, W.active T f → W.active N f
+  | _, .refl => .inr fun _ active => active
+  | m + 1, .step within => match arises_or_kept census within with
+    | .inl found => .inl found
+    | .inr kept => match search (p := W.active m) (alive (m + 1)) with
+      | .inl ⟨f, mem, inactive⟩ => .inl ⟨m, f, within, inactive, ((census (m + 1)).2 f).mpr mem⟩
+      | .inr all => .inr fun f active => kept f (all f (((census (m + 1)).2 f).mp active))
+
+/-- Under a census, a formation ceasing from `N` on comes after an arising from `N` on, or
+leaves fewer formations active after its step than at `N`. -/
+theorem arises_or_fewer {alive : Nat → List F} (census : W.Census alive) {N T : Nat}
+    (later : N ≤ T) {f : F} (ceases : W.Ceases T f) :
+    (∃ t g, N ≤ t ∧ W.Arises t g) ∨ (alive (T + 1)).length < (alive N).length :=
+  match W.arises_or_kept census later with
+  | .inl found => .inl found
+  | .inr before => match W.arises_or_kept census (Nat.le_succ_of_le later) with
+    | .inl found => .inl found
+    | .inr after => .inr (length_le_of_sub (l := f :: alive (T + 1))
+        ⟨fun mem => ceases.2 (((census (T + 1)).2 f).mpr mem), (census (T + 1)).1⟩
+        fun g mem => match mem with
+        | .head _ => ((census N).2 _).mp (before _ ceases.1)
+        | .tail _ mem => ((census N).2 g).mp (after g (((census (T + 1)).2 g).mpr mem)))
+
+/-- So where ceasing recurs, each ceasing not preceded by an arising lowers the count, and
+the count cannot fall forever. -/
+theorem arises_within {alive : Nat → List F} (census : W.Census alive)
+    (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) :
+    ∀ k N, (alive N).length ≤ k → ∃ t f, N ≤ t ∧ W.Arises t f
+  | 0, N, bound => match ceasing N with
+    | ⟨_, _, later, ceases⟩ => match W.arises_or_fewer census later ceases with
+      | .inl found => found
+      | .inr fewer => absurd (Nat.le_trans fewer bound) (Nat.not_succ_le_zero _)
+  | k + 1, N, bound => match ceasing N with
+    | ⟨T, _, later, ceases⟩ => match W.arises_or_fewer census later ceases with
+      | .inl found => found
+      | .inr fewer =>
+        match arises_within census ceasing k (T + 1)
+          (Nat.le_of_succ_le_succ (Nat.le_trans fewer bound)) with
+        | ⟨t, g, after, arises⟩ => ⟨t, g, Nat.le_trans (Nat.le_succ_of_le later) after, arises⟩
+
+/-- Under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late
+steps: with finitely many formations active at each step, nothing keeps ceasing unless
+something keeps arising. -/
+theorem arising_of_ceasing {alive : Nat → List F} (census : W.Census alive)
+    (ceasing : ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f) : W.Unceasing :=
+  fun N => W.arises_within census ceasing _ N (Nat.le_refl _)
 
 end Web
 

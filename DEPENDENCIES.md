@@ -246,6 +246,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## ceasing-needs-arising ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用止息（Web.Ceases）以及 Dawn 与 Dusk 两个见证。 / Reuses ceasing (Web.Ceases) and the witnesses Dawn and Dusk.
+
+**Producer output / 上游输出:** 有限家族中生起复现恰当止息复现；关系项无限多时两者分离。 / In a finite family arising recurs exactly when ceasing does; with infinitely many relata they separate.
+
+**Consumer input / 下游输入:** 每步有限时，止息复现仍需要生起复现。 / Finite at each step, recurring ceasing still needs recurring arising.
+
+**Retained conditions / 保留条件:** 普查；活动可判定。 / A census; decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## ceasing-needs-arising ← more-needs-renewers
+
+`formal-reuse` — 复用普查（Web.Census）、不重复列表的长度比较（length_le_of_sub）与列表上的判定（search）。 / Reuses the census (Web.Census), the length comparison of lists without repetition (length_le_of_sub) and search over a list (search).
+
+**Producer output / 上游输出:** 普查与列表工具；普查无界地增长使生成不息。 / The census and list tools; a census growing without bound makes generation unceasing.
+
+**Consumer input / 下游输入:** 普查之下，止息而无先前生起使活跃者的数目减少。 / Under a census, a ceasing with no arising before it lowers the count of the active.
+
+**Retained conditions / 保留条件:** 普查；活动可判定。 / A census; decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## ceasing-needs-arising ← map-of-premises
+
+`formal-reuse` — 复用世界上的普查（World.Counted）。 / Reuses the census of a world (World.Counted).
+
+**Producer output / 上游输出:** 普查是世界的前提，有限世界有普查。 / A census is a premise of worlds, and a finite world has one.
+
+**Consumer input / 下游输入:** 有普查的世界中，止息复现就有生起复现。 / In a world with a census, recurring ceasing comes with recurring arising.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## ceasing-needs-arising ← space-and-its-parts
+
+`formal-reuse` — 复用世界、生起复现与止息复现、dawn 与 dusk 及其分离（separate）。 / Reuses worlds, arising and ceasing recurring, dawn and dusk and their separation (separate).
+
+**Producer output / 上游输出:** 关系项无限多时，生起复现与止息复现可以各自出现。 / With infinitely many relata, arising and ceasing can each recur without the other.
+
+**Consumer input / 下游输入:** dusk 没有普查由本规律推出。 / That dusk has no census follows from this law.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
 `formal-reuse` — 复用比较、非自反性与传递性；不重证规范前提。 / Reuses comparison, irreflexivity and transitivity without re-proving normative premises.
@@ -477,6 +525,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 体现。 / Embodiment.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## continued-change-needs-openness ← ceasing-needs-arising
+
+`formal-reuse` — 复用普查之下止息复现需要生起复现（World.arising_of_ceasing）。 / Reuses that under a census recurring ceasing needs recurring arising (World.arising_of_ceasing).
+
+**Producer output / 上游输出:** 有普查、活动可判定的世界中，止息复现就有生起复现。 / In a world with a census whose activity is decided, recurring ceasing comes with recurring arising.
+
+**Consumer input / 下游输入:** 生起停止时止息也停止，所以静止定理只要求生起者体现。 / Where arising stops, ceasing stops, so the rest theorem needs only whatever arises embodied.
+
+**Retained conditions / 保留条件:** 活动的普查；活动可判定。 / A census of what is active; decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
 ## derived-history-law-exactness ← finite-trace-transport
 

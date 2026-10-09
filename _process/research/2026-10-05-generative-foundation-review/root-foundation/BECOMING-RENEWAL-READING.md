@@ -2107,6 +2107,58 @@ Integration: §26、§28–§33 的更正；审查 §4 的第 1–6 项完成，
 
 **边界。** 不含伦理谓词；不改变任何读法选择的地位，新增的一项（提议中“生成的”“退化的”的读法）列为 Ren 的选择；新名称是建议；探针与新见证都是最小见证；可判定性是公开的逻辑承诺。本节的更正尚未再经独立审查（计划 P24b）。
 
+## 35. 止息需要生起与静止定理（P26）
+
+2026-10-09。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P26。§30 的 `rests` 要求世界有限，§33 的 `rests_around` 不要求有限而要求每个关系项体现；记录 continued-change-needs-openness 的 next_delta 列出：只要求生起者体现时，被围住的世界是否也归于静止。本节的回答是肯定的，靠的是一条计数的定律：在活动的普查之下，止息复现需要生起复现（普查定律）。于是归于静止只需生起停止，而生起者体现时，`stills` 使生起停止。由此得到一个静止定理，§30 的有限情形与 §33 的每个关系项都体现的情形都是它的推论。没有新模块：普查定律放在活跃形成的普查所在的 `Becoming.Population`，静止定理及其情形放在 `Becoming.Openness`。成果记录：新增 [ceasing-needs-arising](../../../../theories/becoming/results/records/ceasing-needs-arising.md)；修订 [continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)。
+
+```text
+Result(s): 复用 coming-and-ceasing-keep-pace（Arises、Ceases、Unceasing）、more-needs-renewers（Web.Census、search、
+           length_le_of_sub）、map-of-premises（Counted、Finite.counted、keep）、space-and-its-parts（World、
+           ArisingRecurs、CeasingRecurs、ArisingEmbodied、rests、dawn、dusk、separate）、continued-change-needs-openness
+           （StandingCensus、AroundStanding、stills、rests_around）；新增 ceasing-needs-arising；修订 continued-change-needs-openness
+Delta: Population：Web.arises_or_kept、arises_or_fewer、arises_within、arising_of_ceasing；Openness：World.arising_of_ceasing、
+       Dawn.alive、mem_alive、alive_distinct、Dawn.census、World.census_one_way、World.comes_to_rest、Finite.standing、
+       Finite.comes_to_rest、rest_needs_census；rests_around 改由静止定理证明
+Supplied premises / correspondence: 普查定律：活动的普查（Census，每步活跃的形成列为不重复的有限表），世界层面另要求活动可判定；
+       静止定理：活动的普查与可判定、所立者的普查、生起者体现、平衡、耗散、从某步起每步围住所立者
+Evidence: 合并检查器回执 20261009T135303.461724Z（1029 项定理、1676 项声明审计、核心闭包 29 个模块、包 27 个模块，全部源声明公理报告为空）；
+       外围桥接重跑 20261009T135417.468399Z；实例检查
+Boundary: 普查定律是单向的（dawn）；普查不可少（dusk）；只对离散步与自然数的量陈述；不评价静止或开放；
+       “生起复现”“止息复现”是活动的读法，不是 Ren 的“生成的”“退化的”（§34，M1）
+Integration: 计划 P26；回答 continued-change-needs-openness 的 next_delta；把 §30 与 §33 的两个静止定理合为一个
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Web.arises_or_kept` | 从 N 到 T 之间，或者有形成生起，或者 T 时活跃的每个形成在 N 时已活跃 |
+| `Web.arises_or_fewer` | N 之后某形成在 T 止息时，或者 N 之后有形成生起，或者 T + 1 时活跃的形成比 N 时少 |
+| `Web.arises_within`、`Web.arising_of_ceasing` | 在普查之下，止息在任意晚的步发生时，活跃形成的数目不能一直下降，所以生起在任意晚的步发生 |
+| `World.arising_of_ceasing` | 世界层面：活动可判定且有普查（`Counted`）时，止息复现推出生起复现 |
+| `Dawn.alive`、`Dawn.census`、`World.census_one_way` | dawn 有普查（第 t 步活跃的恰是此前生起的 t 个），生起复现而止息不复现；dusk 止息复现而没有生起，所以按普查定律它没有普查 |
+| `World.comes_to_rest` | 静止定理：有活动与所立者的普查、活动可判定、生起者体现、平衡、耗散，且从某步起每步围住所立者的世界，生起与止息都不再复现 |
+| `World.Finite.standing`、`World.Finite.comes_to_rest` | 有限世界列出所立者（水平为正的关系项），每步围住它；所以 §30 的 `rests` 是静止定理的有限情形 |
+| `World.rest_needs_census` | dusk 中没有立着的条件、没有取用与给予：所立者的普查为空表，每步围住所立者，生起者体现、平衡、耗散都成立，止息复现，没有活动的普查 |
+| `World.rests_around` | 每个关系项都体现时，活动的普查列出所立者，活动由水平判定，于是由静止定理得到（P26 改证，陈述不变） |
+
+**解读。**
+
+- **普查定律是计数，不是有限。** 普查只要求每步活跃的形成有限且被不重复地列出，关系项总共可以无限多。一次之前没有生起的止息，使活跃的形成比先前少；数目是自然数，不能无穷地下降；所以止息在任意晚的步发生，迫使生起也在任意晚的步发生。反之不然：dawn 每步生起一个新的、从不止息，它有普查，止息不复现。dusk 中无穷多个初始形成依次止息而没有生起：它在第 0 步有无穷多个活跃者，没有普查。§30 的“活动可判定的有限世界中，生起复现恰当止息复现”于是分成两半：止息推出生起只需普查；生起推出止息需要有限，或别的约束同时活跃者的界。
+- **静止定理。** 归于静止只需生起停止，止息由普查定律跟着停止。生起者体现时，生起就是水平上升；从某步起每步围住所立者时，平衡与耗散使水平不再变化（`stills`），所以生起停止。这把 §30 的 `rests`（要求有限，只要求生起者体现）与 §33 的 `rests_around`（不要求有限，要求每个关系项都体现）合为一个定理：两者的区别不在静止的机制，只在怎样得到所立者的普查与围住。有限给出两者；每个关系项都体现给出所立者的普查，围住仍是前提。
+- **活动的普查不可少。** dusk 满足其余每个前提：没有立着的条件，所以所立者的普查是空表，每步都平凡地围住所立者；没有生起，所以生起者体现空成立；没有取用与给予，所以平衡与耗散成立。止息仍复现。失效的不是围住，而是普查：无穷多个不立着的活动可以依次终结，而不改变任何水平。止息在这里不读作下降，因为止息者不体现；普查定律越过了这一点，不要求止息者体现。
+- **它仍是活动的读法。** 生起复现与止息复现不是 Ren 的“生成的”“退化的”（§34，M1）；静止不是评价，开放也不是。
+
+**作者反审。**
+
+*反驳 1：普查定律只是平凡的计数。* 证明确实只用不重复列表的长度比较（`length_le_of_sub`）与自然数不能无穷下降。它的内容在于划分：§30 的同一部分在普查之下只剩一个方向，另一个方向需要更多，两半分别由 dawn 与 dusk 见证。它也解释了静止的世界中止息为什么停止，而不要求止息者体现：这正是 §33 反驳 2 留下的问题。
+
+*反驳 2：静止定理是否只是把前提重排？* 它使两个已有定理成为同一定理的推论，并把 `rests_around` 的“每个关系项都体现”换成“生起者体现”加上所立者的普查。它覆盖的新情形是：关系项无限多、有活跃而不体现的关系项、只有生起者体现的世界。一个只被静止定理覆盖而不被 `rests` 与 `rests_around` 覆盖的见证容易构造（无限多个空闲的关系项旁有一个活跃而不立着的关系项），但本节没有在 Lean 中给出它，所以“严格更一般”只是陈述层面的比较，不是已检查的定理。
+
+*反驳 3：可判定性是额外前提。* 普查定律在世界层面要求活动可判定，因为构造性的证明在下一步活跃者的表中查找此前不活跃者（`search`）。这是表示的逻辑承诺（§34，M2）。每个关系项都体现时，活动由水平判定，所以 `rests_around` 不另加它。
+
+*反驳 4：耗散在这里只约束被围住的交换。* 是（P16b、`Spray`、§33 的 exposed）。静止定理以围住为前提，没有把开放藏进耗散；exposed 仍表明，八个前提之下去掉围住，生起可以不息。
+
+**边界。** 无伦理谓词，不评价静止、开放或止息；只对离散步与自然数的量陈述；“普查”“静止定理”“归于静止”的名称与读法是 AI 的表述，由 Ren 定。没有所立者的普查时被围住的步（kindling 一类的世界）仍列为下一步。本节尚未经独立审查：第十次独立审查的对象截至 P23c。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2372,3 +2424,7 @@ The package now has 994 theorems and 1612 declaration audits, over a core closur
 - **Presentation (M9, M10).** The laws are tagged as identity by definition, arithmetic identity, or consequence of two-valuedness and finiteness. Wisdom moves to empirical correspondence. Section 31 and the plan state which completeness criteria are met: criteria 1 and 4; criterion 2 after this correction; criterion 3 for the ten premises stated of worlds, while premises relative to other relations and the "mixed" part are not mapped. Review stamps are at or before their commits, the foundation record uses the chapter's terms, and the last "giver" is gone.
 
 The package now has 1016 theorems and 1662 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Section 34 has not yet been independently reviewed.
+
+**P26: ceasing needs arising, and the rest theorem.** Section 30's `rests` needs a finite world and section 33's `rests_around` needs every relatum embodied; the record continued-change-needs-openness left open whether an enclosed world comes to rest when only what arises is embodied. It does, by a counting law. Under a census of what is active, recurring ceasing needs recurring arising (`Web.arising_of_ceasing` in `Becoming.Population`; `World.arising_of_ceasing` in `Becoming.Openness`): a ceasing not preceded by an arising leaves fewer formations active, and the count cannot fall forever. Not conversely: `dawn` has a census and keeps arising while nothing ceases, and `dusk` keeps ceasing while nothing arises, so it has no census (`World.census_one_way`). The finite-world law of section 30 thus splits in two: ceasing to arising needs only a census, arising to ceasing needs more. The rest theorem follows (`World.comes_to_rest`): a balanced, dissipative world with censuses of what is active and of what stands, whose activity is decided and whose arising is embodied, comes to rest once every step from some step on is enclosed around what stands, since standing stops changing, so embodied arising stops, and ceasing stops with it by the census law. Finite worlds (`World.Finite.comes_to_rest`, the statement of `World.rests`) and worlds whose relata are all embodied (`World.rests_around`, now proved from the theorem) are its two cases. The census of what is active is needed: `dusk` meets every other premise, with nothing standing and every step enclosed, and keeps ceasing (`World.rest_needs_census`). That the theorem is strictly more general than its two cases is a comparison of statements; no witness covered by it alone is formalized. Enclosed steps without a census of what stands remain open.
+
+The package now has 1029 theorems and 1676 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Section 35 has not yet been independently reviewed.

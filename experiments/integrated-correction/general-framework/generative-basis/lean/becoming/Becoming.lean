@@ -72,7 +72,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arbitrarily late steps.
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
   active formations, with each formation taking part listed once and only active
-  formations taking, more generation without end makes generation unceasing.
+  formations taking, more generation without end makes generation unceasing. Under a
+  census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
@@ -153,10 +154,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
-  every step from some step on is enclosed around it, standing stops changing. A world
-  with a census, embodied, balanced and dissipative, comes to rest once enclosed, without
-  being finite; a world meeting all eight premises with no step enclosed keeps arising
-  without end.
+  every step from some step on is enclosed around it, standing stops changing. The rest
+  theorem: a world with a census of what is active and of what stands, whose arising is
+  embodied, balanced and dissipative, comes to rest once enclosed around what stands; the
+  finite rest of `Becoming.Space` and the rest of worlds whose relata are all embodied are
+  its cases, and the census of what is active is needed. A world meeting all eight
+  premises with no step enclosed keeps arising without end.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
