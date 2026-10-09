@@ -204,8 +204,8 @@
     "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T112625.591552Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 24 个模块（含只作导入的根模块与桥接），共 910 项定理／1435 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 26 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T112736.537510Z）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T112625.591552Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 24 modules (including the import-only root and the bridge) with 910 theorems/1435 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 26 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T112736.537510Z)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T114557.489291Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 25 个模块（含只作导入的根模块与桥接），共 939 项定理／1501 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 27 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T114727.244636Z）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T114557.489291Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 25 modules (including the import-only root and the bridge) with 939 theorems/1501 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 27 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T114727.244636Z)."
   },
   "references": [
     {
@@ -333,17 +333,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "df90e7b227b2b639aff6518d3be184210a791ecbd9be489a69a7cac3bcfa6b61"
+      "sha256": "984afa36f9c803f3fd0107cbb83ecfcddf310a3b39a963d8b94ed6a394b942c7"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3484cb2b61d5cbbba6103f37fa3e8ce195ef43d1621cb05595c3421d702d0800"
+      "sha256": "974c6f23d5eae3dad7e4ee7b0266561b8f1fe9fb3a8bd27d08c07a9ad04d3653"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ae2a0e519c6f2be31d6acad7823015f7918489a1cf27a4fca60f066c6e587e90"
+      "sha256": "9e02077fe3eb57f31d2bf1c4083fcecad2320d98fe7a18744fb92e5ea13ca579"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
@@ -402,6 +402,10 @@
     {
       "zh": "2026-10-09 P21：验证范围重新指向合并检查器回执 20261009T112625.591552Z 与外围回执 20261009T112736.537510Z；包与核心闭包各多一个模块（Becoming.Evolution）。断言不变。",
       "en": "2026-10-09 P21: validation scope re-pointed to consolidated receipt 20261009T112625.591552Z and periphery receipt 20261009T112736.537510Z; the package and the core closure each gain one module (Becoming.Evolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P22：验证范围重新指向合并检查器回执 20261009T114557.489291Z 与外围回执 20261009T114727.244636Z；包与核心闭包各多一个模块（Becoming.Space）。断言不变。",
+      "en": "2026-10-09 P22: validation scope re-pointed to consolidated receipt 20261009T114557.489291Z and periphery receipt 20261009T114727.244636Z; the package and the core closure each gain one module (Becoming.Space). The claim is unchanged."
     }
   ]
 }

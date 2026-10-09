@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "id": "space-and-its-parts",
+  "title": {
+    "zh": "整体与其部分：不加前提的规律对每个世界成立，前提划出部分；有限世界中生成复现恰当退化复现，活跨越生成，耗散使有限世界归于静止",
+    "en": "The whole and its parts: the laws with no premise hold of every world and premises carve parts; in a finite world generation recurs exactly when degeneration does, living crosses generation, and dissipation brings a finite world to rest"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T12:00:00+00:00",
+  "claim": {
+    "zh": "一个世界是以一类读法的关系项、其间的流与依存网（World）；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同（World.ofRoles、generative_ofRoles、degenerative_ofRoles）。Becoming.Change 的规律与 Becoming.Evolution 的 Price 方程不加前提，对每个网与每个量陈述，所以对整个空间成立。读于部分：生成复现（某个关系项在任意晚的步生起，Generative）与退化复现（某个关系项在任意晚的步止息，Degenerative）在有限且活动可判定的世界中恰好同时成立（World.generative_iff）；关系项无限多时，两者各可以没有另一个而复现（World.separate，由 Dawn 与 Dusk 给出），这些世界无限由该规律推出。活动需要支持、平衡、只有活跃者给予、只有活跃者取用且只取用所汲取的、耗散、体现与承载活动的储备，每一个都有满足与不满足它的世界（World.contingent）：它们是前提，不是规律。有限世界中，生成复现与否，都既可以每个事件都活（逐步读法中不侵蚀），也可以有事件不活（World.living_crosses）：两侧来回传递一个水平（handing），同样的活动而每侧汲取自身的水平（spending），始终活跃的互利者（mutualism），以及把池汲低的亲代（drawdown）。所以生成与退化都不决定事件是否活。在有限、平衡、耗散且生起者体现的世界中，生成与退化都不复现（World.rests）；每个前提都不可少（World.rests_needs）：燃烧新燃料的世界以无限多关系项继续生成（kindling），两侧来回传递在没有耗散时继续生成（handing），同样的两侧没有流时在没有平衡时继续生成（unbalanced），活动不是其水平的关系项在没有体现时继续生起（flicker）。不用伦理前提，也不用 Lean 公理。",
+    "en": "A world is its relata, read with one kind, with the flow among them and their web (World); the space is every world. The two-kind reading of any flow and web is a world, and arising and ceasing read the same there (World.ofRoles, generative_ofRoles, degenerative_ofRoles). The laws of Becoming.Change and Price's equation in Becoming.Evolution are stated of every web and every amount with no premise, so they hold throughout the space. Read of parts: generation recurring (some relatum arising at arbitrarily late steps, Generative) and degeneration recurring (some relatum ceasing at arbitrarily late steps, Degenerative) hold together exactly in every finite world whose activity is decided (World.generative_iff); with infinitely many relata either can recur without the other (World.separate, from Dawn and Dusk), and that these worlds are infinite follows from the law. Activity needing support, balance, only active relata giving, only active relata taking and only what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others (World.contingent): they are premises, not laws. Among finite worlds, generation recurring or not occurs both with every event living, not undermining in the stepwise reading, and with some event not living (World.living_crosses): two sides handing one standing back and forth (handing), the same activity while each draws on its own standing (spending), mutualists active throughout (mutualism), and a parent drawing a pool down (drawdown). So neither generation nor degeneration decides whether events are living. In a finite, balanced, dissipative world in which whatever arises is embodied, neither generation nor degeneration recurs (World.rests), and each premise is needed (World.rests_needs): a world burning fresh fuel keeps generating with infinitely many relata (kindling), two sides handing a standing keep generating without dissipation (handing), the same sides with no flow keep generating without balance (unbalanced), and a relatum whose activity is not its standing keeps arising without embodiment (flicker). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "规律（generative_iff）：世界有限，即有一个不重复地列出全部关系项的列表；每步每个关系项是否活跃是可判定的（核心是构造性的；经典地总是如此）。",
+      "en": "The law (generative_iff): the world is finite, a list naming every relatum once; whether each relatum is active at each step is decidable (the core is constructive; classically it always is)."
+    },
+    {
+      "zh": "静止（rests）：另加平衡（Balanced）、耗散（Dissipative）与生起者体现（ArisingEmbodied）。",
+      "en": "Rest (rests): also balance (Balanced), dissipation (Dissipative) and whatever arises being embodied (ArisingEmbodied)."
+    },
+    {
+      "zh": "其余都是关于具体世界的陈述，不加前提。",
+      "en": "The rest are statements about particular worlds, with no premise."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的原话（2026-10-08-theory-of-becoming-priority）：“when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0”。计划 P22 把这读作：规律对整个空间成立，前提划出部分。作者的读法（AI 论证）：本结果给出这一读法的形式结构。整体是每个世界；不加前提的规律（变化的规律、Price 方程，以及有限世界中生成与退化的同时复现）对整体成立；各定理的前提每一个都划出真部分，不是隐藏的规律；生成的、退化的与活的部分都非空并彼此交叠。Ren 说加上公理可以定义好，“好”是整个空间的一部分；这里的 Living 是逐步读法中“每个事件都活”的结构条件，是 G0 所计的 living 的一个部分，它跨越生成与退化，不与其中任何一个重合：生成不是活的同义词，止息也不是不活。这不证明整个生成之论不需要任何公理：它显示哪些陈述不需要前提、哪些前提划出哪些部分；“不加实质公理的整体演绎必然性”仍是开放的首要目标。“世界”“生成的”“退化的”在这里的读法是 AI 的表述，名称由 Ren 定。",
+    "en": "Ren's words (2026-10-08-theory-of-becoming-priority): ‘when we add axiom, we can define what is good, which is a part of the whole space generative model projects / but, if we count all space, generative, degenerative, we get The theory of evolution, or the theory of becoming/life, which doesn't even require axiom, i think can be done with 0’. Plan P22 reads this as: the laws hold of the whole space, and premises carve parts. The author's reading (an AI argument): this result gives that reading its formal structure. The whole is every world; the laws with no premise (the laws of change, Price's equation, and generation and degeneration recurring together in finite worlds) hold of the whole; each premise of the theorems carves a proper part and is not a hidden law; and the generative, degenerative and living parts are non-empty and overlap. Ren says that with an axiom we can define the good as a part of the whole space; Living here is the structural condition that every event is living in the stepwise reading, one part of what G0 counts as living, and it crosses generation and degeneration without coinciding with either: generation is not a synonym for living, and ceasing is not not-living. This does not prove that the theory of becoming needs no axiom at all: it shows which statements need no premise and which premises carve which parts; the deductive necessity of the whole without added substantive axioms remains the open first priority. The readings of ‘world’, ‘generative’ and ‘degenerative’ here are the AI's formulations, and names are Ren's."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+  "aliases": [
+    "Becoming.World",
+    "Becoming.World.ofRoles",
+    "Becoming.World.Generative",
+    "Becoming.World.Degenerative",
+    "Becoming.World.Living",
+    "Becoming.World.generative_iff",
+    "Becoming.World.rests",
+    "Becoming.World.contingent",
+    "Becoming.World.separate",
+    "Becoming.World.living_crosses",
+    "Becoming.World.rests_needs",
+    "Becoming.Flow.still"
+  ],
+  "dependencies": [
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用止息（Ceases）、有限家族中生成不息恰当止息不息（unceasing_iff）与 Dawn、Dusk。",
+        "en": "Reuses ceasing (Ceases), that in a finite family generation is unceasing exactly when ceasing is (unceasing_iff), and Dawn and Dusk."
+      },
+      "interface": {
+        "output": {
+          "zh": "形成有限多时，生成不息恰当止息不息；Dawn 与 Dusk 各只有一方。",
+          "en": "With finitely many formations, generation is unceasing exactly when ceasing is; Dawn and Dusk each have only one."
+        },
+        "input": {
+          "zh": "有限世界中生成复现恰当退化复现；无限世界中两者分离，且其无限由此推出。",
+          "en": "In a finite world generation recurs exactly when degeneration does; in infinite worlds they separate, and their infinity follows."
+        },
+        "conditions": {
+          "zh": "有限；活动可判定。",
+          "en": "Finite; activity decidable."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    },
+    {
+      "id": "generation-is-replenishment",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 generation_ceases 与 Handing、Kindling、Flicker 三个见证。",
+        "en": "Reuses generation_ceases and the witnesses Handing, Kindling and Flicker."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限的关系项、平衡与耗散之下，体现的关系项不在任意晚的步生起。",
+          "en": "With finitely many relata, under balance and dissipation, embodied relata do not arise at arbitrarily late steps."
+        },
+        "input": {
+          "zh": "有限、平衡、耗散且生起者体现的世界归于静止；每个前提都不可少。",
+          "en": "A finite, balanced, dissipative world whose arising is embodied comes to rest; each premise is needed."
+        },
+        "conditions": {
+          "zh": "平衡；耗散；有限；生起者体现。",
+          "en": "Balance; dissipation; finite; arising embodied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
+      }
+    },
+    {
+      "id": "life-as-condition-of-life",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用一类读法（roles 与其迁移引理）、体现与 Mutualism。",
+        "en": "Reuses the one-kind reading (roles and its transfer lemmas), embodiment and Mutualism."
+      },
+      "interface": {
+        "output": {
+          "zh": "两类读法嵌入一类读法，生成不息在其中不变；互利者的每个事件都活。",
+          "en": "The two-kind reading embeds in the one-kind reading, keeping unceasing generation; every event of the mutualists is living."
+        },
+        "input": {
+          "zh": "每个两类的流与网都是一个世界；有限世界中，不生成而每个事件都活。",
+          "en": "Every two-kind flow and web is a world; a finite world without generation in which every event is living."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
+      }
+    },
+    {
+      "id": "reserve-defers-ending",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用储备（Carries）、零储备恰是 Dependent（carries_zero）与 Carries.active_finitely。",
+        "en": "Reuses the reserve (Carries), that Dependent is exactly the zero reserve (carries_zero), and Carries.active_finitely."
+      },
+      "interface": {
+        "output": {
+          "zh": "从某步起不被支持的形成只活跃有限多次。",
+          "en": "A formation unsupported from some step on is active only finitely often."
+        },
+        "input": {
+          "zh": "每步都超出支持而活跃的关系项没有任何储备承载它。",
+          "en": "No reserve carries a relatum active beyond its support at every step."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean"
+      }
+    },
+    {
+      "id": "evolution-on-descent",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Drawdown 与 Unchecked。",
+        "en": "Reuses Drawdown and Unchecked."
+      },
+      "interface": {
+        "output": {
+          "zh": "亲代的取用把池汲低；超出支持的亲代。",
+          "en": "A parent's taking draws a pool down; a parent beyond its support."
+        },
+        "input": {
+          "zh": "有限世界中，不生成且有事件不活；活动需要支持的反例。",
+          "en": "A finite world without generation in which some event is not living; a countermodel to activity needing support."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "完成计划第 9 节下的 P22：规律对整体成立，前提划出部分；这不是无公理的整体演绎。",
+        "en": "Completes P22 under the plan's section 9: the laws hold of the whole and premises carve parts; this is not the deduction of the whole without axioms."
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "detail": {
+        "zh": "Living 是逐步读法中每个事件都活（活跃且不侵蚀）的结构条件。",
+        "en": "Living is the structural condition that every event is living in the stepwise reading, active and not undermining."
+      }
+    },
+    {
+      "id": "rising-and-falling-in-one-exchange",
+      "detail": {
+        "zh": "那里一步之内的伴随，这里是整个空间中生成与退化的同时复现。",
+        "en": "There, accompaniment within one step; here, generation and degeneration recurring together across the space."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "detail": {
+        "zh": "无限多关系项时生成与退化分离（Dawn、Dusk）；rests 的每个前提缺少时生成可以复现（kindling、handing、unbalanced、flicker）。",
+        "en": "With infinitely many relata generation and degeneration separate (Dawn, Dusk); without any one premise of rests generation can recur (kindling, handing, unbalanced, flicker)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词，不评价任何部分；不证明整个生成之论不需要公理；Living 只是逐步读法的结构条件，不是 G0 的估值本身；有限世界的规律要求活动可判定；只对离散步的读法陈述；部分的列举不完全：前提的组合与更多的部分（例如更多、可能性的上升）没有逐一给出；“世界”“生成的”“退化的”的名称由 Ren 定。",
+    "en": "Contains no ethical predicate and evaluates no part; does not prove that the theory of becoming needs no axiom; Living is only the structural condition of the stepwise reading, not G0's valuation itself; the law for finite worlds needs decidable activity; stated for the reading across discrete steps; the parts listed are not exhaustive: combinations of premises and further parts, such as more or the rise of possibility, are not each given; the names ‘world’, ‘generative’ and ‘degenerative’ are Ren's to choose."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T114557.489291Z）：新模块 Becoming.Space 的 29 项定理全部空依赖；同一回执覆盖包内 25 个模块（含只作导入的根模块与桥接），共 939 项定理／1501 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T114727.244636Z 通过。作者反审见整合文档 §30，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 27 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T114557.489291Z): the 29 theorems of the new module Becoming.Space all have empty axiom reports; the same receipt covers the package's 25 modules (including the import-only root and the bridge) with 939 theorems/1501 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T114727.244636Z passed. The author's counterreview is in §30 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 27 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "51c8cdea1f8e4f13eaaab413084bb0b1710823e993b994e4dee0a386918d9ed6",
+      "declarations": [
+        "Becoming.Flow.still",
+        "Becoming.Flow.still_dissipative",
+        "Becoming.World",
+        "Becoming.World.Finite",
+        "Becoming.World.Generative",
+        "Becoming.World.Degenerative",
+        "Becoming.World.Living",
+        "Becoming.World.Dependent",
+        "Becoming.World.Balanced",
+        "Becoming.World.Acting",
+        "Becoming.World.Taking",
+        "Becoming.World.Dissipative",
+        "Becoming.World.Embodied",
+        "Becoming.World.ArisingEmbodied",
+        "Becoming.World.Carried",
+        "Becoming.World.ofRoles",
+        "Becoming.World.generative_ofRoles",
+        "Becoming.World.degenerative_ofRoles",
+        "Becoming.World.generative_iff",
+        "Becoming.World.rests",
+        "Becoming.World.handing_world",
+        "Becoming.World.Spending.web",
+        "Becoming.World.Spending.taking",
+        "Becoming.World.Spending.spends",
+        "Becoming.World.spending_world",
+        "Becoming.World.mutualism_world",
+        "Becoming.World.drawdown_world",
+        "Becoming.World.unbalanced_world",
+        "Becoming.World.idle_world",
+        "Becoming.World.restless_world",
+        "Becoming.World.kindling_world",
+        "Becoming.World.flicker_world",
+        "Becoming.World.dawn",
+        "Becoming.World.dusk",
+        "Becoming.World.contingent",
+        "Becoming.World.separate",
+        "Becoming.World.living_crosses",
+        "Becoming.World.rests_needs"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+      "declarations": [
+        "Becoming.Web.Ceases",
+        "Becoming.Web.unceasing_iff",
+        "Becoming.Dawn.web",
+        "Becoming.Dusk.web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
+      "declarations": [
+        "Becoming.Web.roles",
+        "Becoming.Web.roles_unceasing",
+        "Becoming.Web.Embodied",
+        "Becoming.Web.generation_ceases",
+        "Becoming.Handing.handing",
+        "Becoming.Kindling.kindling",
+        "Becoming.Flicker.flicker",
+        "Becoming.Mutualism.alive"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "role": "proof",
+      "sha256": "2379b8c4576c6359d782752287456fb9c11b8854503c68a1c2e003351c41b9c2",
+      "declarations": [
+        "Becoming.Web.Carries",
+        "Becoming.Web.carries_zero",
+        "Becoming.Web.Carries.active_finitely"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "role": "proof",
+      "sha256": "2768313497b5256ab5ddd2d251970eab6a43d5f84b6a43287a74873c9bcb958b",
+      "declarations": [
+        "Becoming.Drawdown.drawdown",
+        "Becoming.Unchecked.unchecked"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "984afa36f9c803f3fd0107cbb83ecfcddf310a3b39a963d8b94ed6a394b942c7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "974c6f23d5eae3dad7e4ee7b0266561b8f1fe9fb3a8bd27d08c07a9ad04d3653"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "9e02077fe3eb57f31d2bf1c4083fcecad2320d98fe7a18744fb92e5ea13ca579"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+      "role": "provenance",
+      "sha256": "a08597b97e1763ffd369b5d3eec8588b1d174adf793e3e44d2f88b5bd6a28729"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
+      "role": "provenance",
+      "sha256": "3ad2bca66a1e4feaac0e3efd8fc71dc336632ac8fb60ff8c9159495784c5ba5b"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Reserve",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Evolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "生成之论的完整陈述（P23）：整体的规律、前提划出的部分、生与灭的统一、演化与评价的位置；更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律（经典读法）；名称（Ren）。",
+    "en": "The complete statement of the theory of becoming (P23): the laws of the whole, the parts carved by premises, the unity of coming to be and ceasing, and the places of evolution and evaluation; a map of further parts (more, the rise of possibility and diversity) and of combinations of premises; the law for finite worlds without decidable activity (the classical reading); names (Ren)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：作为整合计划 P22 新增，按 Ren“aim a complete theory of becoming, and finish related work”；见整合文档 §30。",
+      "en": "2026-10-09: added as P22 of the unification plan, following Ren's ‘aim a complete theory of becoming, and finish related work’; see §30 of the integration note."
+    }
+  ]
+}

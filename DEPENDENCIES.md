@@ -1378,6 +1378,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
 
+## space-and-its-parts ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用止息（Ceases）、有限家族中生成不息恰当止息不息（unceasing_iff）与 Dawn、Dusk。 / Reuses ceasing (Ceases), that in a finite family generation is unceasing exactly when ceasing is (unceasing_iff), and Dawn and Dusk.
+
+**Producer output / 上游输出:** 形成有限多时，生成不息恰当止息不息；Dawn 与 Dusk 各只有一方。 / With finitely many formations, generation is unceasing exactly when ceasing is; Dawn and Dusk each have only one.
+
+**Consumer input / 下游输入:** 有限世界中生成复现恰当退化复现；无限世界中两者分离，且其无限由此推出。 / In a finite world generation recurs exactly when degeneration does; in infinite worlds they separate, and their infinity follows.
+
+**Retained conditions / 保留条件:** 有限；活动可判定。 / Finite; activity decidable.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## space-and-its-parts ← generation-is-replenishment
+
+`formal-reuse` — 复用 generation_ceases 与 Handing、Kindling、Flicker 三个见证。 / Reuses generation_ceases and the witnesses Handing, Kindling and Flicker.
+
+**Producer output / 上游输出:** 有限的关系项、平衡与耗散之下，体现的关系项不在任意晚的步生起。 / With finitely many relata, under balance and dissipation, embodied relata do not arise at arbitrarily late steps.
+
+**Consumer input / 下游输入:** 有限、平衡、耗散且生起者体现的世界归于静止；每个前提都不可少。 / A finite, balanced, dissipative world whose arising is embodied comes to rest; each premise is needed.
+
+**Retained conditions / 保留条件:** 平衡；耗散；有限；生起者体现。 / Balance; dissipation; finite; arising embodied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## space-and-its-parts ← life-as-condition-of-life
+
+`formal-reuse` — 复用一类读法（roles 与其迁移引理）、体现与 Mutualism。 / Reuses the one-kind reading (roles and its transfer lemmas), embodiment and Mutualism.
+
+**Producer output / 上游输出:** 两类读法嵌入一类读法，生成不息在其中不变；互利者的每个事件都活。 / The two-kind reading embeds in the one-kind reading, keeping unceasing generation; every event of the mutualists is living.
+
+**Consumer input / 下游输入:** 每个两类的流与网都是一个世界；有限世界中，不生成而每个事件都活。 / Every two-kind flow and web is a world; a finite world without generation in which every event is living.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## space-and-its-parts ← reserve-defers-ending
+
+`formal-reuse` — 复用储备（Carries）、零储备恰是 Dependent（carries_zero）与 Carries.active_finitely。 / Reuses the reserve (Carries), that Dependent is exactly the zero reserve (carries_zero), and Carries.active_finitely.
+
+**Producer output / 上游输出:** 从某步起不被支持的形成只活跃有限多次。 / A formation unsupported from some step on is active only finitely often.
+
+**Consumer input / 下游输入:** 每步都超出支持而活跃的关系项没有任何储备承载它。 / No reserve carries a relatum active beyond its support at every step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean)
+
+## space-and-its-parts ← evolution-on-descent
+
+`formal-reuse` — 复用 Drawdown 与 Unchecked。 / Reuses Drawdown and Unchecked.
+
+**Producer output / 上游输出:** 亲代的取用把池汲低；超出支持的亲代。 / A parent's taking draws a pool down; a parent beyond its support.
+
+**Consumer input / 下游输入:** 有限世界中，不生成且有事件不活；活动需要支持的反例。 / A finite world without generation in which some event is not living; a countermodel to activity needing support.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
 ## substitution-preserves-consumption ← relational-renewal-classification
 
 `formal-reuse` — 直接复用支持门控定律的 overdraw_crosses_support、permanently_below 与 dependent_overdraw_ends_itself；共同条件的水平就是 Law.level。 / Directly reuses the support-gated law's overdraw_crosses_support, permanently_below and dependent_overdraw_ends_itself; the shared condition's level is Law.level.

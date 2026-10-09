@@ -1845,6 +1845,58 @@ Integration: 计划 P21；世系从 L4 移到 L3，Descent 保留估值的读法
 
 **边界。** 不含伦理谓词；适应度没有定义，不说哪种所需更好；传递是前提；`price` 只以加法计数形式与自然数的量陈述，不含协方差形式；选择只读作支持对给予的约束；只对离散步的读法陈述；与演化之论既有机制的对应未证明；“世系”“传递”“选择”“变异”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
 
+## 30. 整体与其部分（P22）
+
+2026-10-09。按同一指示继续计划 P22。Ren 的提议（[原话](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)）：加上公理可以定义好，好是整个空间的一部分；计入整个空间，生成的与退化的，就得到演化之论，或生成／生命之论，它甚至不需要公理。计划把这读作：规律对整个空间成立，前提划出部分。本节新模块 `Becoming.Space`（L3，导入 `Evolution` 与 `Reserve`）给出这一读法的形式结构。成果记录：[space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)。
+
+```text
+Result(s): 复用 coming-and-ceasing-keep-pace（Ceases、unceasing_iff、Dawn、Dusk）、generation-is-replenishment
+           （generation_ceases、Handing、Kindling、Flicker）、life-as-condition-of-life（roles 与迁移引理、Embodied、
+           Mutualism）、reserve-defers-ending（Carries、carries_zero、active_finitely）、evolution-on-descent（Drawdown、
+           Unchecked）；新增 space-and-its-parts
+Delta: Space：Flow.still、World 及其部分（Finite、Generative、Degenerative、Living、Dependent、Balanced、Acting、Taking、
+       Dissipative、Embodied、ArisingEmbodied、Carried）、ofRoles 与迁移、generative_iff、rests；世界 handing、spending、
+       mutualism、drawdown、unchecked、unbalanced、idle、restless、kindling、flicker、dawn、dusk；contingent、separate、
+       living_crosses、rests_needs
+Supplied premises / correspondence: generative_iff 要求有限与活动可判定；rests 另要求平衡、耗散与生起者体现；
+       其余是关于具体世界的陈述
+Evidence: 合并检查器回执（见记录）；外围桥接重跑；实例检查
+Boundary: 不评价任何部分；不证明整个理论不需要公理；部分的列举不完全；Living 只是逐步读法的结构条件
+Integration: 计划 P22；Ren 的“计入整个空间”在核心上的结构；为 P23 的完整陈述提供整体与部分的框架
+```
+
+| 声明 | 内容 |
+|---|---|
+| `World`、`ofRoles`、`generative_ofRoles`、`degenerative_ofRoles` | 一个世界是以一类读法的关系项、其间的流与依存网；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同 |
+| `Generative`、`Degenerative`、`Living` | 部分：生成复现（某个关系项在任意晚的步生起）；退化复现（某个关系项在任意晚的步止息）；每个事件都活（逐步读法中活跃者不侵蚀） |
+| `generative_iff` | 规律：有限且活动可判定的世界中，生成复现恰当退化复现 |
+| `separate` | 关系项无限多时两者分离：`Dawn` 中生成复现而无止息，`Dusk` 中止息复现而无生起；两者无限由 `generative_iff` 推出 |
+| `contingent` | 七个前提（`Dependent`、`Balanced`、`Acting`、`Taking`、`Dissipative`、`Embodied`、`Carried`）各有满足与不满足它的世界 |
+| `living_crosses` | 有限世界中四种组合都出现：生成且都活（handing）、生成而有不活（spending）、不生成而都活（mutualism）、不生成而有不活（drawdown） |
+| `rests` | 有限、平衡、耗散且生起者体现的世界中，生成与退化都不复现 |
+| `rests_needs` | 每个前提都不可少：kindling（无限）、handing（不耗散）、unbalanced（不平衡）、flicker（不体现）都继续生成 |
+| `Spending.web`、`Spending.spends` | 与 `Handing` 同样的活动，只是每侧在站立时汲取自身的水平；持有者传出它的水平时侵蚀自身的依存 |
+| `idle`、`restless` | 不活跃的关系项给予自身（满足平衡而不满足 `Acting`）；每步都超出支持而活跃的关系项，没有任何储备承载它 |
+
+**解读。**
+
+- **整体与部分的结构。** 空间是每个世界。不加前提的定理（§26 的变化规律、§29 的 Price 方程）对每个网、每个量陈述，所以它们就是对整体成立的规律，不需要另一个包装。各定理的前提每一个都有满足与不满足它的世界（`contingent`），所以它们划出真部分，不是隐藏的规律。这是 Ren“计入整个空间”的一种形式内容（AI 论证）：规律属于整体，前提属于部分。
+- **生成与退化在有限世界中是同一部分。** §26 证明，形成有限多时生成不息恰当止息不息。读于世界：有限世界中生成的部分与退化的部分重合。它们只在无限世界中分离，并且分离的两个世界无限这一点由规律本身推出，不需另证。“生成的”与“退化的”不是整体的两半，在有限的展开中它们是同一个部分。
+- **活跨越生成与退化。** “每个事件都活”的部分既与生成的部分交叠，也与其补交叠，四种组合都在有限世界中出现。`handing` 与 `spending` 的活动完全相同，只差各侧是否汲取自身的水平：活与否不由生成与止息的样式决定，而由汲取与依存的关系决定。Ren 说加上公理可以定义好，好是整个空间的一部分；这里的 `Living` 是 G0 所计的 living 的一个结构部分，它不是生成的同义词，止息也不是不活。
+- **耗散使有限世界归于静止。** `rests` 把 §20（`generation_ceases`）与 `generative_iff` 合起来：有限、平衡、耗散且生起者体现时，生起不再复现，所以止息也不再复现，活动最终不再改变。四个反例表明每个前提都不可少，其中 kindling 表明：在耗散之下继续生成，需要展开越出每个有限部分，与 §17、§20 的“开放”相合。
+
+**作者反审。**
+
+*反驳 1：大部分是把已有见证收集起来。* 部分是。新的内容是：世界与部分的定义及两类读法的嵌入；把前提的偶然性作为一个陈述（`contingent`），其中三个世界（`idle`、`restless`、`unbalanced`）与 `spending` 是新的；`living_crosses`；`rests` 及其每个前提的必要性；以及分离世界的无限由规律推出。`generative_iff` 是 §26 的 `unceasing_iff` 读于世界，不算独立结果。
+
+*反驳 2：有限世界的规律要求活动可判定，这削弱了“不加前提”。* 核心是构造性的，不用经典逻辑；计数需要可判定。经典地每个世界的活动都可判定，所以这不是关于展开的实质前提，而是构造性证明的要求。记录与模块都写明这一点。
+
+*反驳 3：“每个前提都划出真部分”只对七个前提给出。* 是。`Census`、`TransmitsWithin`、`Around` 等其他前提没有逐一给出；前提的组合也没有逐一给出。完整的地图列入下一步。
+
+*反驳 4：这被读成“理论不需要公理”。* 不是。本节显示哪些陈述不需要前提、哪些前提划出哪些部分。规范方向仍经 G0；“不加实质公理的整体演绎必然性”仍是开放的首要目标（[根基章节](../../../../theories/becoming/chapters/BECOMING-FOUNDATION.md)）。
+
+**边界。** 不含伦理谓词，不评价任何部分；`Living` 只是逐步读法的结构条件；有限世界的规律要求活动可判定；部分的列举不完全；只对离散步的读法陈述；“世界”“生成的”“退化的”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2058,3 +2110,14 @@ The package now has 889 theorems and 1399 declaration audits, over a core closur
 - **Bookkeeping.** The record living-on-and-descent now cites `Flow.Descends` in `Evolution.lean`; its claim is unchanged.
 
 The package now has 910 theorems and 1435 declaration audits, over a core closure of 26 modules and a package of 24, all source declarations with empty axiom reports. Section 29 has not yet been independently reviewed.
+
+**P22: the whole and its parts.** Ren proposed that with an axiom the good can be defined as a part of the whole space, while counting all the space, generative and degenerative, gives the theory of becoming without an axiom. Section 30 gives the structure of that proposal in a new module `Becoming.Space` (L3, importing `Evolution` and `Reserve`) ([space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)).
+
+- **The space.** A world is its relata, read with one kind, with the flow among them and their web (`World`); the two-kind reading of any flow and web is a world (`World.ofRoles`). The laws stated with no premise, those of change and Price's equation, are stated of every web and amount, so they hold throughout the space.
+- **Generation and degeneration are one part in finite worlds.** In a finite world whose activity is decided, generation recurs exactly when degeneration does (`generative_iff`, section 26's `unceasing_iff` read of worlds). With infinitely many relata either recurs without the other (`separate`, from `Dawn` and `Dusk`), and that those worlds are infinite follows from the law.
+- **Premises carve parts.** Seven premises are each met by some worlds and not by others (`contingent`); `idle`, `restless`, `unbalanced` and `spending` are new worlds for this.
+- **Living crosses generation.** Among finite worlds all four combinations of generating or not with every event living or not occur (`living_crosses`). `handing` and `spending` have the same activity and differ only in whether each side draws on its own standing: whether events are living is decided by drawing and dependence, not by the pattern of arising and ceasing.
+- **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world whose arising is embodied, neither generation nor degeneration recurs (`rests`), and each premise is needed (`rests_needs`).
+- **Boundaries.** No part is evaluated. This does not show that the theory needs no axiom; it shows which statements need no premise and which premises carve which parts. The law for finite worlds needs decidable activity because the core is constructive. The parts listed are not exhaustive.
+
+The package now has 939 theorems and 1501 declaration audits, over a core closure of 27 modules and a package of 25, all source declarations with empty axiom reports. Section 30 has not yet been independently reviewed.

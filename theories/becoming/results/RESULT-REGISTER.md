@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-112 migrated records: 108 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+113 migrated records: 109 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -115,6 +115,7 @@
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
 | `self-good-reachable-g0` | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](records/self-good-reachable-g0.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
+| `space-and-its-parts` | [整体与其部分：不加前提的规律对每个世界成立，前提划出部分；有限世界中生成复现恰当退化复现，活跨越生成，耗散使有限世界归于静止 / The whole and its parts: the laws with no premise hold of every world and premises carve parts; in a finite world generation recurs exactly when degeneration does, living crosses generation, and dissipation brings a finite world to rest](records/space-and-its-parts.md) | theorem | recorded-checked |
 | `substitution-preserves-consumption` | [替代在整段读法下保持消耗：能替代条件的消耗者以转化依存的方式持续，整段仍是消耗的 / Substitution preserves consumption on the whole-run reading: a consumer that can substitute a condition persists by transforming its dependence and still consumes over the run](records/substitution-preserves-consumption.md) | theorem | recorded-checked |
 | `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |

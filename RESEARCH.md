@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-112 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+113 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -111,6 +111,7 @@
 | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](theories/becoming/results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md) |
 | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](theories/becoming/results/records/self-good-reachable-g0.md) | recorded-checked | [EvaluatorGrounding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean) |
 | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](theories/becoming/results/records/situated-recovery-empirical-correspondence.md) | reviewed-scoped | [README.md](experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md) |
+| [整体与其部分：不加前提的规律对每个世界成立，前提划出部分；有限世界中生成复现恰当退化复现，活跨越生成，耗散使有限世界归于静止 / The whole and its parts: the laws with no premise hold of every world and premises carve parts; in a finite world generation recurs exactly when degeneration does, living crosses generation, and dissipation brings a finite world to rest](theories/becoming/results/records/space-and-its-parts.md) | recorded-checked | [Space.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean) |
 | [替代在整段读法下保持消耗：能替代条件的消耗者以转化依存的方式持续，整段仍是消耗的 / Substitution preserves consumption on the whole-run reading: a consumer that can substitute a condition persists by transforming its dependence and still consumes over the run](theories/becoming/results/records/substitution-preserves-consumption.md) | recorded-checked | [Substitution.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) |
 | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](theories/becoming/results/records/supported-renewal-recovery.md) | recorded-checked | [RenewalRecovery.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean) |
 | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](theories/becoming/results/records/theory-of-becoming-foundation.md) | open | [BECOMING-FOUNDATION.md](theories/becoming/chapters/BECOMING-FOUNDATION.md) |

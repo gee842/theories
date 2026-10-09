@@ -1,0 +1,87 @@
+@Becoming.Flow.still_dissipative : ∀ {F C : Type}, Becoming.Flow.still.Dissipative
+@Becoming.World.Embodied.arising : ∀ {w : Becoming.World}, w.Embodied → w.ArisingEmbodied
+@Becoming.World.generative_ofRoles : ∀ {F C : Type} (L : Becoming.Flow F C) (W : Becoming.Web F C),
+  (Becoming.World.ofRoles L W).Generative ↔ W.Unceasing
+@Becoming.World.degenerative_ofRoles : ∀ {F C : Type} (L : Becoming.Flow F C) (W : Becoming.Web F C),
+  (Becoming.World.ofRoles L W).Degenerative ↔ ∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f
+@Becoming.World.generative_iff : ∀ {w : Becoming.World} [(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)],
+  w.Finite → (w.Generative ↔ w.Degenerative)
+@Becoming.World.rests : ∀ {w : Becoming.World} [(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)],
+  w.Finite → w.Balanced → w.Dissipative → w.ArisingEmbodied → ¬w.Generative ∧ ¬w.Degenerative
+Becoming.World.handing_finite : Becoming.World.handing.Finite
+Becoming.World.handing_generative : Becoming.World.handing.Generative
+Becoming.World.handing_world : Becoming.World.handing.Finite ∧
+  Becoming.World.handing.Generative ∧
+    Becoming.World.handing.Degenerative ∧
+      Becoming.World.handing.Living ∧
+        Becoming.World.handing.Dependent ∧
+          Becoming.World.handing.Balanced ∧
+            Becoming.World.handing.Acting ∧
+              ¬Becoming.World.handing.Taking ∧
+                ¬Becoming.World.handing.Dissipative ∧ Becoming.World.handing.Embodied ∧ Becoming.World.handing.Carried
+@Becoming.World.Spending.self_taken : ∀ {t : Nat} {x y : Bool}, 0 < Becoming.Handing.flow.take t x y → y = x
+Becoming.World.Spending.taking : Becoming.Handing.flow.Taking Becoming.World.Spending.web
+Becoming.World.Spending.spends : Becoming.World.Spending.web.active 0 true ∧ Becoming.Web.UnderminingAt 0 true
+Becoming.World.spending_finite : Becoming.World.spending.Finite
+Becoming.World.spending_world : Becoming.World.spending.Finite ∧
+  Becoming.World.spending.Generative ∧
+    Becoming.World.spending.Degenerative ∧
+      ¬Becoming.World.spending.Living ∧
+        Becoming.World.spending.Dependent ∧
+          Becoming.World.spending.Balanced ∧
+            Becoming.World.spending.Acting ∧ Becoming.World.spending.Taking ∧ Becoming.World.spending.Embodied
+Becoming.World.mutualism_finite : Becoming.World.mutualism.Finite
+Becoming.World.mutualism_world : Becoming.World.mutualism.Finite ∧
+  ¬Becoming.World.mutualism.Generative ∧
+    ¬Becoming.World.mutualism.Degenerative ∧
+      Becoming.World.mutualism.Living ∧ Becoming.World.mutualism.Dependent ∧ Becoming.World.mutualism.Embodied
+Becoming.World.drawdown_finite : Becoming.World.drawdown.Finite
+Becoming.World.drawdown_quiet : ∀ (t : Nat) (x : Becoming.Drawdown.Relatum),
+  1 ≤ t → ¬Becoming.Drawdown.web.active (t + 1) x
+Becoming.World.drawdown_world : Becoming.World.drawdown.Finite ∧
+  ¬Becoming.World.drawdown.Generative ∧
+    ¬Becoming.World.drawdown.Degenerative ∧
+      ¬Becoming.World.drawdown.Living ∧
+        Becoming.World.drawdown.Dependent ∧ Becoming.World.drawdown.Taking ∧ ¬Becoming.World.drawdown.Embodied
+Becoming.World.unbalanced_world : Becoming.World.unbalanced.Finite ∧
+  Becoming.World.unbalanced.Generative ∧
+    Becoming.World.unbalanced.Dissipative ∧ Becoming.World.unbalanced.Embodied ∧ ¬Becoming.World.unbalanced.Balanced
+Becoming.World.idle_world : Becoming.World.idle.Balanced ∧ ¬Becoming.World.idle.Acting
+Becoming.World.restless_world : ¬Becoming.World.restless.Carried
+Becoming.World.kindling_arising : Becoming.World.kindling.ArisingEmbodied
+Becoming.World.kindling_world : Becoming.World.kindling.Balanced ∧
+  Becoming.World.kindling.Dissipative ∧
+    Becoming.World.kindling.ArisingEmbodied ∧ Becoming.World.kindling.Generative ∧ ¬Becoming.World.kindling.Finite
+Becoming.World.flicker_world : Becoming.World.flicker.Finite ∧
+  Becoming.World.flicker.Balanced ∧
+    Becoming.World.flicker.Dissipative ∧ Becoming.World.flicker.Generative ∧ ¬Becoming.World.flicker.ArisingEmbodied
+Becoming.World.contingent : (Becoming.World.handing.Dependent ∧ ¬Becoming.World.unchecked.Dependent) ∧
+  (Becoming.World.handing.Balanced ∧ ¬Becoming.World.unbalanced.Balanced) ∧
+    (Becoming.World.handing.Acting ∧ ¬Becoming.World.idle.Acting) ∧
+      (Becoming.World.spending.Taking ∧ ¬Becoming.World.handing.Taking) ∧
+        (Becoming.World.kindling.Dissipative ∧ ¬Becoming.World.handing.Dissipative) ∧
+          (Becoming.World.handing.Embodied ∧ ¬Becoming.World.drawdown.Embodied) ∧
+            Becoming.World.handing.Carried ∧ ¬Becoming.World.restless.Carried
+Becoming.World.separate : (Becoming.World.dawn.Generative ∧
+    ¬Becoming.World.dawn.Degenerative ∧ ¬Becoming.World.dawn.Finite) ∧
+  Becoming.World.dusk.Degenerative ∧ ¬Becoming.World.dusk.Generative ∧ ¬Becoming.World.dusk.Finite
+Becoming.World.living_crosses : (Becoming.World.handing.Finite ∧
+    Becoming.World.handing.Generative ∧ Becoming.World.handing.Living) ∧
+  (Becoming.World.spending.Finite ∧ Becoming.World.spending.Generative ∧ ¬Becoming.World.spending.Living) ∧
+    (Becoming.World.mutualism.Finite ∧ ¬Becoming.World.mutualism.Generative ∧ Becoming.World.mutualism.Living) ∧
+      Becoming.World.drawdown.Finite ∧ ¬Becoming.World.drawdown.Generative ∧ ¬Becoming.World.drawdown.Living
+Becoming.World.rests_needs : (Becoming.World.kindling.Balanced ∧
+    Becoming.World.kindling.Dissipative ∧
+      Becoming.World.kindling.ArisingEmbodied ∧ Becoming.World.kindling.Generative ∧ ¬Becoming.World.kindling.Finite) ∧
+  (Becoming.World.handing.Finite ∧
+      Becoming.World.handing.Balanced ∧
+        Becoming.World.handing.ArisingEmbodied ∧
+          Becoming.World.handing.Generative ∧ ¬Becoming.World.handing.Dissipative) ∧
+    (Becoming.World.unbalanced.Finite ∧
+        Becoming.World.unbalanced.Dissipative ∧
+          Becoming.World.unbalanced.ArisingEmbodied ∧
+            Becoming.World.unbalanced.Generative ∧ ¬Becoming.World.unbalanced.Balanced) ∧
+      Becoming.World.flicker.Finite ∧
+        Becoming.World.flicker.Balanced ∧
+          Becoming.World.flicker.Dissipative ∧
+            Becoming.World.flicker.Generative ∧ ¬Becoming.World.flicker.ArisingEmbodied

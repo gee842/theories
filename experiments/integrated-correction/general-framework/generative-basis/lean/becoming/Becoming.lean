@@ -16,6 +16,7 @@ import Becoming.Dissipation
 import Becoming.Roles
 import Becoming.Reserve
 import Becoming.Evolution
+import Becoming.Space
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -128,6 +129,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   descendants, so what is transmitted within a bound was selected: a descendant's need is
   at most its condition's level at the giving step, plus the bound, and in a balanced
   flow what is taken from and given to the condition in between sets that level.
+* `Becoming.Space` (L3): the whole and its parts. The space is every world, a world being
+  relata read with one kind, their flow and their web. The laws stated with no premise
+  hold of every world; in a finite world generation recurs exactly when degeneration
+  does, and with infinitely many relata either recurs without the other. Each premise is
+  met by some worlds and not by others. Generation recurring or not occurs both with every
+  event living and with some event not living. Dissipation brings a finite, balanced world
+  whose arising is embodied to rest, and each of these premises is needed.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

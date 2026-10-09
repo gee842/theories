@@ -38,8 +38,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Metaethics", "Becoming.Ranking",
-        "Becoming.Correspondence", "Becoming.Descent", "Becoming"]
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Metaethics",
+        "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -387,6 +387,16 @@ SCOPE = (
     "unsupported from its first standing step on, while the one needing less is supported, active "
     "and takes in turn, and without the premise that activity needs support a formation active "
     "beyond its support transmits a need above the level at its giving step. "
+    "Space: a world is relata read with one kind, the flow among them and their web, and the "
+    "space is every world; the laws stated with no premise hold of each; in a finite world whose "
+    "activity is decided, generation recurs exactly when degeneration does, while with infinitely "
+    "many relata either recurs without the other; activity needing support, balance, only active "
+    "formations giving, only active formations taking what they draw on, dissipation, embodiment "
+    "and a reserve carrying activity are each met by some worlds and not by others; among finite "
+    "worlds generation recurring or not occurs both with every event living and with some event "
+    "not living; in a finite, balanced, dissipative world in which whatever arises is embodied, "
+    "neither generation nor degeneration recurs, and without finiteness, dissipation, balance or "
+    "embodiment generation can recur. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "
