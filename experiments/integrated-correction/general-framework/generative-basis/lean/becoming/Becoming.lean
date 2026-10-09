@@ -143,8 +143,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and their web. The laws stated with no premise hold of every world; in a finite world
   whose activity is decided arising recurs exactly when ceasing does, asked without
   decidability this law implies excluded middle, and with infinitely many relata either
-  recurs without the other. Which parts Ren's generative and degenerative name is Ren's to
-  choose. Each premise is met by some worlds and not by others. Arising recurring or not,
+  recurs without the other. Ren confirmed arising and ceasing as the names of this
+  reading; which parts Ren's generative and degenerative name is Ren's to choose. Each
+  premise is met by some worlds and not by others. Arising recurring or not,
   and ceasing recurring or not, occur both with every event living and with some event
   not living. Dissipation brings a finite,
   balanced world whose activity is decided and whose arising is embodied to rest, and each
@@ -154,8 +155,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   decided has a census, and where only active relata take and the flow dissipates, only
   active relata give across an enclosed step, and every step of a finite world is
   enclosed. The remaining eight premises are independent relative to one another: for
-  each, a world meets the other seven and not it. One world meets all eight, and a finite
-  world whose activity is decided and which meets them comes to rest, by three of them.
+  each, a world meets the other seven and not it. One world meets all eight, and in
+  another, not finite, each of the eight binds. A finite world whose activity is decided
+  and which meets them comes to rest, by three of them.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
@@ -169,7 +171,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and the rest of worlds whose relata are all embodied are its cases, and each census is
   needed. The eight premises decide neither enclosure nor openness: a world meeting them
   with no step enclosed keeps arising, at zero net exchange, and one meeting them with
-  every step enclosed comes to rest.
+  every step enclosed comes to rest, as does the world in which each of them binds.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

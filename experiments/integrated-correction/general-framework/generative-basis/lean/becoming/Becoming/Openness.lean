@@ -66,7 +66,9 @@ giving needs uptake there; a fall is taken from.
   bounded transmission hold vacuously too. Their openness is exchange at zero net: the
   total standing stays at one, and the ground relata stand at nothing
   (`World.exposed_standing`). Mutualists meet the eight with every step enclosed and come
-  to rest (`World.openness_contingent`).
+  to rest (`World.openness_contingent`). So does `brood`, in which every premise binds:
+  after the child arises and the parent ceases, every step is enclosed and nothing
+  changes, though the world is not finite (`World.brood_rests`).
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
@@ -621,6 +623,16 @@ theorem openness_contingent :
     (mutualism.Premised ∧ (∀ t, mutualism.flow.Enclosed t) ∧ ¬ mutualism.ArisingRecurs) :=
   ⟨⟨exposed_world.1, exposed_world.2.2, exposed_world.2.1⟩,
    ⟨mutualism_premised, mutualism_finite.enclosed, mutualism_world.2.1⟩⟩
+
+/-- A world meeting all eight premises with each binding comes to rest (`brood_binds`).
+Across the first step the child arises and the parent ceases; every step is enclosed
+within the food, the parent and the child, and finitely many stand at each step, though
+the world is not finite. -/
+theorem brood_rests : brood.web.Arises 0 .child ∧ brood.web.Ceases 0 .parent ∧
+    ¬ brood.ArisingRecurs ∧ ¬ brood.CeasingRecurs :=
+  ⟨⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩, ⟨Nat.zero_lt_one, Nat.lt_irrefl 0⟩,
+   rests_enclosed brood_counted (fun _ _ => Iff.rfl) brood_balanced brood_dissipative
+     (T := 0) fun t _ => ⟨Brood.kin, Brood.kin_distinct, Brood.closed t⟩⟩
 
 end World
 

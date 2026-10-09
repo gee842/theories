@@ -36,6 +36,11 @@ that the rest are independent, none following from all the others together.
   A finite world whose activity is decided and which meets the eight comes to rest:
   neither arising nor ceasing recurs (`World.premised_rests`). The proof uses three of
   them: balance, dissipation and embodiment.
+* **Each binding.** A premise binds where something meets its condition (`World.Binds`).
+  In `brood` all eight hold and each binds (`World.brood_binds`): a parent takes two
+  units of food and its own unit and gives its young one unit; the young comes to stand
+  depending on the food as the parent did, and the parent ceases. Infinitely many ground
+  relata stand at nothing, so the census does not come from finiteness.
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -761,6 +766,207 @@ theorem premised_rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finit
   rests finite (premised _ (.tail _ (.head _)))
     (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
     (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
+
+/-- Each premise binds: something meets its condition, so the premise constrains the
+world rather than holding vacuously. Activity needing support binds where an active
+relatum depends on a condition at a positive need; balance where a level changes; only
+active relata giving, and only active relata taking, where something taking part gives,
+and takes; dissipation where something taking part takes from a closed family; embodiment
+where a relatum arises; a census where the world is not finite, so that the census does not
+come from finiteness; and bounded transmission where a descendant depends on a condition
+at its first standing step. -/
+structure Binds (w : World) : Prop where
+  dependent : ∃ t f c, w.web.active t f ∧ w.web.requires t f c ∧ 0 < w.web.need t f c
+  balanced : ∃ t c, w.web.level (t + 1) c ≠ w.web.level t c
+  acting : ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.give t f c
+  taking : ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.take t f c
+  dissipative : ∃ cs t f, Distinct cs ∧ w.flow.ClosedAt cs t ∧ f ∈ w.flow.present t ∧
+    0 < total cs (w.flow.take t f)
+  embodied : ∃ t x, w.web.Arises t x
+  counted : ¬ w.Finite
+  transmitting : ∃ t x g c, w.flow.DescendsAt w.web t x g ∧ w.web.requires (t + 1) x c
+
+namespace Brood
+
+inductive Relatum where
+  | food
+  | parent
+  | child
+  | ground (n : Nat)
+
+/-- The food stands at three at the first step and one after it, the parent at one at the
+first step and nothing after, the child at nothing at the first step and one after; the
+ground relata stand at nothing. -/
+def level (t : Nat) : Relatum → Nat
+  | .food => Novel.firstly 2 t + 1
+  | .parent => Novel.firstly 1 t
+  | .child => Novel.after t
+  | .ground _ => 0
+
+/-- What the parent takes: two units of food and its own unit. -/
+def fed : Relatum → Nat
+  | .food => 2
+  | .parent => 1
+  | .child => 0
+  | .ground _ => 0
+
+/-- What the parent gives: one unit to the child. -/
+def toChild : Relatum → Nat
+  | .food => 0
+  | .parent => 0
+  | .child => 1
+  | .ground _ => 0
+
+/-- Across the first step the parent takes two units of food and its own unit, and gives
+the child one unit. -/
+def flow : Flow Relatum Relatum where
+  present
+    | 0 => [.parent]
+    | _ + 1 => []
+  take _ x y := match x with
+    | .food => 0
+    | .parent => fed y
+    | .child => 0
+    | .ground _ => 0
+  give _ x y := match x with
+    | .food => 0
+    | .parent => toChild y
+    | .child => 0
+    | .ground _ => 0
+
+/-- The parent and the child live on the food. -/
+def eats : Relatum → Prop
+  | .food => False
+  | .parent => True
+  | .child => True
+  | .ground _ => False
+
+/-- A relatum is active while it stands. The parent and the child depend on the food at
+need one; the parent draws on the food and on itself. -/
+def web : Web Relatum Relatum where
+  level := level
+  active t x := 0 < level t x
+  requires _ x y := eats x ∧ y = .food
+  need _ _ _ := 1
+  draws _ x y := x = .parent ∧ (y = .food ∨ y = .parent)
+
+/-- Only the parent takes part, and only across the first step. -/
+theorem taking_part : ∀ {t : Nat} {g : Relatum}, g ∈ flow.present t → t = 0 ∧ g = .parent
+  | 0, _, .head _ => ⟨rfl, rfl⟩
+  | 0, _, .tail _ no => nomatch no
+  | _ + 1, _, no => nomatch no
+
+/-- The food, the parent and the child. -/
+abbrev kin : List Relatum :=
+  [.food, .parent, .child]
+
+theorem kin_distinct : Distinct kin :=
+  ⟨fun mem => match mem with | .tail _ (.tail _ no) => (nomatch no),
+   fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
+
+/-- Every step's exchange lies within the food, the parent and the child. -/
+theorem closed (t : Nat) : flow.ClosedAt kin t :=
+  fun f present c out => match f, taking_part present, c, out with
+  | _, ⟨_, rfl⟩, .food, out => absurd (.head _) out
+  | _, ⟨_, rfl⟩, .parent, out => absurd (.tail _ (.head _)) out
+  | _, ⟨_, rfl⟩, .child, out => absurd (.tail _ (.tail _ (.head _))) out
+  | _, ⟨_, rfl⟩, .ground _, _ => ⟨rfl, rfl⟩
+
+/-- The food and the parent are active at the first step, the food and the child after it. -/
+def alive : Nat → List Relatum
+  | 0 => [.food, .parent]
+  | _ + 1 => [.food, .child]
+
+def index : Relatum → Nat
+  | .food => 0
+  | .parent => 0
+  | .child => 0
+  | .ground n => n
+
+/-- No finite family holds every ground relatum. -/
+theorem outside (cs : List Relatum) : ¬ Relatum.ground (beyond (cs.map index)) ∈ cs :=
+  fun mem => beyond_not_mem _ (mem_map_of (g := index) mem)
+
+end Brood
+
+/-- A parent takes food and its own unit to give its young one unit; the young comes to
+stand depending on the food as the parent did, and the parent ceases. Infinitely many
+ground relata stand at nothing. -/
+def brood : World :=
+  ⟨Brood.Relatum, Brood.flow, Brood.web⟩
+
+theorem brood_balanced : brood.Balanced
+  | 0, .food => rfl
+  | 0, .parent => rfl
+  | 0, .child => rfl
+  | 0, .ground _ => rfl
+  | _ + 1, .food => rfl
+  | _ + 1, .parent => rfl
+  | _ + 1, .child => rfl
+  | _ + 1, .ground _ => rfl
+
+/-- Across the first step the parent gives the closed family one unit and takes at least
+the food's two. -/
+theorem brood_dissipative : brood.Dissipative :=
+  fun cs t distinct closed f present => match t, f, Brood.taking_part present with
+  | _, _, ⟨rfl, rfl⟩ =>
+    have given : total cs (brood.flow.give 0 .parent) ≤ 1 :=
+      total_le_at (a := .child) (fun b positive => match b, positive with
+        | .child, _ => rfl
+        | .food, positive => absurd positive (Nat.lt_irrefl 0)
+        | .parent, positive => absurd positive (Nat.lt_irrefl 0)
+        | .ground _, positive => absurd positive (Nat.lt_irrefl 0)) distinct
+    Decidable.of_not_not fun wrong => absurd (Nat.le_of_eq (closed .parent present .food
+      fun mem => wrong (Nat.le_trans (Nat.add_le_add given (sign_le_one _))
+        (le_total_of_mem (q := brood.flow.take 0 .parent) mem))).1) (Nat.not_succ_le_zero 1)
+
+theorem brood_counted : brood.Counted :=
+  ⟨Brood.alive, fun
+    | 0 => ⟨⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no),
+        trivial⟩, fun
+      | .food => ⟨fun _ => .head _, fun _ => Nat.zero_lt_succ _⟩
+      | .parent => ⟨fun _ => .tail _ (.head _), fun _ => Nat.zero_lt_one⟩
+      | .child => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+          fun mem => match mem with | .tail _ (.tail _ no) => nomatch no⟩
+      | .ground _ => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+          fun mem => match mem with | .tail _ (.tail _ no) => nomatch no⟩⟩
+    | _ + 1 => ⟨⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no),
+        trivial⟩, fun
+      | .food => ⟨fun _ => .head _, fun _ => Nat.zero_lt_one⟩
+      | .parent => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+          fun mem => match mem with | .tail _ (.tail _ no) => nomatch no⟩
+      | .child => ⟨fun _ => .tail _ (.head _), fun _ => Nat.zero_lt_one⟩
+      | .ground _ => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+          fun mem => match mem with | .tail _ (.tail _ no) => nomatch no⟩⟩⟩
+
+/-- All eight premises hold in `brood`, and each binds: the parent depends on the food,
+the food falls, the parent gives and takes, taking from the closed family of food, parent
+and child, the child arises, the world is not finite, and the child depends on the food at
+its first standing step as the parent did. -/
+theorem brood_binds : brood.Premised ∧ brood.Binds :=
+  ⟨.of (fun _ _ _ c requires => match c, requires with | _, ⟨_, rfl⟩ => Nat.le_add_left 1 _)
+      brood_balanced
+      (fun t f _ present _ => match t, f, Brood.taking_part present with
+        | _, _, ⟨rfl, rfl⟩ => Nat.zero_lt_one)
+      (fun t f c present takes => match t, f, Brood.taking_part present, c, takes with
+        | _, _, ⟨rfl, rfl⟩, .food, _ => ⟨Nat.zero_lt_one, rfl, .inl rfl⟩
+        | _, _, ⟨rfl, rfl⟩, .parent, _ => ⟨Nat.zero_lt_one, rfl, .inr rfl⟩
+        | _, _, ⟨rfl, rfl⟩, .child, takes => absurd takes (Nat.lt_irrefl 0)
+        | _, _, ⟨rfl, rfl⟩, .ground _, takes => absurd takes (Nat.lt_irrefl 0))
+      brood_dissipative (fun _ _ => Iff.rfl) brood_counted
+      ⟨0, fun _ _ _ g descends requires => match g, Brood.taking_part descends.1 with
+        | _, ⟨_, rfl⟩ => ⟨⟨trivial, requires.2⟩, Nat.le_refl 1⟩⟩,
+   ⟨⟨0, .parent, .food, Nat.zero_lt_one, ⟨trivial, rfl⟩, Nat.zero_lt_one⟩,
+    ⟨0, .food, Nat.ne_of_lt (Nat.succ_lt_succ (Nat.zero_lt_succ 1))⟩,
+    ⟨0, .parent, .child, .head _, Nat.zero_lt_one⟩,
+    ⟨0, .parent, .food, .head _, Nat.zero_lt_two⟩,
+    ⟨Brood.kin, 0, .parent, Brood.kin_distinct, Brood.closed 0, .head _,
+      Nat.lt_of_lt_of_le Nat.zero_lt_two (le_total_of_mem (a := Brood.Relatum.food)
+        (q := brood.flow.take 0 Brood.Relatum.parent) (.head _))⟩,
+    ⟨0, .child, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
+    fun ⟨all, _, every⟩ => Brood.outside all (every _),
+    ⟨0, .child, .parent, .food, ⟨.head _, Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
+      ⟨trivial, rfl⟩⟩⟩⟩
 
 end World
 

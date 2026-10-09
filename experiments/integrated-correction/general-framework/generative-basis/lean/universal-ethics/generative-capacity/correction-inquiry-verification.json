@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "utc": "20261009T161851.010138Z",
+  "utc": "20261009T163805.366023Z",
   "toolchain": "leanprover/lean4:v4.30.0-rc2",
   "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
-  "retained_run": "correction-inquiry-checks/20261009T161851.010138Z",
+  "retained_run": "correction-inquiry-checks/20261009T163805.366023Z",
   "bridge_module": "CorrectionInquiry",
   "compile_order": [
     "GenerativeCore",
@@ -97,14 +97,14 @@
     "Becoming.Roles": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
     "Becoming.Reserve": "2379b8c4576c6359d782752287456fb9c11b8854503c68a1c2e003351c41b9c2",
     "Becoming.Evolution": "f09187b7a101ff81b5836b9e910b871215ace8f9a830fc4cd95cce2f2bdad621",
-    "Becoming.Space": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
-    "Becoming.Premises": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
-    "Becoming.Openness": "ad0dfa236d84482ef262dd7da95d3b82a2505519f32ec3ba86605af825ac0a9c",
+    "Becoming.Space": "6f2da9247609c54fa6dc5369a1a4ccb35bea06d7bb51c981ca45d0807187a3d5",
+    "Becoming.Premises": "27ed9136b28e604ac3cd82e711c671c3b758603a49694e57580a0bd3a280c5fd",
+    "Becoming.Openness": "8b5190eec61870d524e62ffcae18002bf16c14aea731d8b995d8b5eb900b1ac8",
     "Becoming.Metaethics": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
     "Becoming.Ranking": "8e0697f42e80c2a23ccf959644e69ec602ace69afb06f3970da10616f3590e38",
     "Becoming.Correspondence": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
     "Becoming.Descent": "11db87b79c808d1098f3cf2650c1350dee19f2c2fb6efd287634cb86304c4d05",
-    "Becoming": "48bff94ce9be2770f00b4b15713c9508a3ec9e93326ab2a0fcbd60f03265d6c2",
+    "Becoming": "11aac35e80f9b05f2c36ff71a8f5aecf118975a5ab57108d0f15cdaa18dcfd6a",
     "CorrectionBoundary": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
     "ObservationRepair": "1aa81a713d2333ae73b1d0643a09c3306b7e4c189f0570a8545bd4a2c5bed4f4",
     "ObservationChange": "47edeb32ffa0975c65d9264856b83cdbfd934c3acb39bf694da2f66ddcce22cd",
@@ -112,7 +112,7 @@
   },
   "checker_sha256": {
     "check_correction_inquiry.py": "ce5a01e2150f84965030fbab0926e1d3b1f7afcb9b1bb56501c19da304a08f87",
-    "check_becoming.py": "271ff8c8fc091069577a4a7925dfc7a6523f51ce5a14d66ea4c5d32d905bc57a",
+    "check_becoming.py": "b3bff61f4ed1b03eb90edbce2277a1c34c626318823b47d3899e2a648d0fd8a0",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
   "scope": "On the Becoming core, a policy on observations implements correction over admitted histories exactly when its action on each observation value is a common response of the judgment process on that value's cell; a common action exists exactly when every cell has a common response; and a choice is safe at an observation value exactly when it is a common response on the worlds that show it. CorrectionBoundary.refine_observation and ObservationChange.refinement_preserves_safe_choice are rederived from the core's commonResponse_antitone. Correspondence of histories, observations and success to an actual system, and the warrant of any success relation, are not checked.",
@@ -168,6 +168,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json",
       "conditional/native-port/verification.json",
       "conditional/renewal/verification.json",
@@ -526,6 +527,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "InquirySufficiency": [
@@ -578,6 +580,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json",
       "inquiry-root/sufficiency/contact-formation-verification.json",
       "inquiry-root/sufficiency/derived-inquiry-runs/1791286286937536000/baseline-verification.json",
@@ -668,6 +671,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "RelationalRenewal": [
@@ -718,6 +722,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json",
       "deeper/relational-renewal-checks/20261008T185948.447355Z/verification.json",
       "deeper/relational-renewal-checks/20261008T191703.522544Z/verification.json",
@@ -772,6 +777,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Dependence": [
@@ -800,6 +806,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Return": [
@@ -832,6 +839,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Horizon": [
@@ -871,6 +879,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Joint": [
@@ -903,6 +912,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Substitution": [
@@ -935,6 +945,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Generation": [
@@ -951,6 +962,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Flow": [
@@ -967,15 +979,18 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Change": [
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Population": [
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Identity": [
@@ -1000,6 +1015,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Wholes": [
@@ -1024,14 +1040,17 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Dissipation": [
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Roles": [
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Reserve": [
@@ -1049,22 +1068,24 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Evolution": [
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Space": [
-      "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Premises": [
-      "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Openness": [
-      "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Metaethics": [
@@ -1097,6 +1118,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Ranking": [
@@ -1129,6 +1151,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Correspondence": [
@@ -1154,6 +1177,7 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Descent": [
@@ -1167,10 +1191,11 @@
       "becoming/becoming-checks/20261009T141652.167311Z/verification.json",
       "becoming/becoming-checks/20261009T143148.368990Z/verification.json",
       "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming": [
-      "becoming/becoming-checks/20261009T145010.627958Z/verification.json",
+      "becoming/becoming-checks/20261009T163512.365801Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "CorrectionBoundary": [
@@ -1280,11 +1305,11 @@
     "Becoming.Joint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Metaethics.lean": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
     "Becoming.Metaethics.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Openness.lean": "ad0dfa236d84482ef262dd7da95d3b82a2505519f32ec3ba86605af825ac0a9c",
+    "Becoming.Openness.lean": "8b5190eec61870d524e62ffcae18002bf16c14aea731d8b995d8b5eb900b1ac8",
     "Becoming.Openness.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Population.lean": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
     "Becoming.Population.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Premises.lean": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
+    "Becoming.Premises.lean": "27ed9136b28e604ac3cd82e711c671c3b758603a49694e57580a0bd3a280c5fd",
     "Becoming.Premises.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Ranking.lean": "8e0697f42e80c2a23ccf959644e69ec602ace69afb06f3970da10616f3590e38",
     "Becoming.Ranking.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1296,13 +1321,13 @@
     "Becoming.Return.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Roles.lean": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
     "Becoming.Roles.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Space.lean": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
+    "Becoming.Space.lean": "6f2da9247609c54fa6dc5369a1a4ccb35bea06d7bb51c981ca45d0807187a3d5",
     "Becoming.Space.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Substitution.lean": "515275299486c90e3a053f02b2f3125a445a2ae5f9146b6195ed4a34e4f68d7a",
     "Becoming.Substitution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Wholes.lean": "06e31bb7bbb6f7b4766bb634614e6ab8b562e75ee26055b55bbfae27e41567e3",
     "Becoming.Wholes.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "48bff94ce9be2770f00b4b15713c9508a3ec9e93326ab2a0fcbd60f03265d6c2",
+    "Becoming.lean": "11aac35e80f9b05f2c36ff71a8f5aecf118975a5ab57108d0f15cdaa18dcfd6a",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CorrectionBoundary.lean": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
     "CorrectionBoundary.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1323,7 +1348,7 @@
     "RelationalRenewal.lean": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
     "RelationalRenewal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
-    "check_becoming.py": "271ff8c8fc091069577a4a7925dfc7a6523f51ce5a14d66ea4c5d32d905bc57a",
+    "check_becoming.py": "b3bff61f4ed1b03eb90edbce2277a1c34c626318823b47d3899e2a648d0fd8a0",
     "check_correction_inquiry.py": "ce5a01e2150f84965030fbab0926e1d3b1f7afcb9b1bb56501c19da304a08f87",
     "version.log": "6b38d6160c0223bc189f88caad3d56588b06ca7af2b81d19cb4dbcef5024f387"
   }

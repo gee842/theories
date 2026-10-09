@@ -15,8 +15,8 @@ Read as relations, a formation renewing what it takes part in and one consuming 
 draws on (`Web.RenewingIn`, `Web.ConsumingIn`) never coincide
 (`Web.renewing_not_consuming`), though one occurrence can take part in both. Read as
 activity, arising recurring and ceasing recurring (`World.ArisingRecurs`,
-`World.CeasingRecurs`) coincide in finite worlds. This module states the second, under
-names that describe activity and do not claim Ren's words.
+`World.CeasingRecurs`) coincide in finite worlds. This module states the second. Ren
+confirmed arising and ceasing as the better names for it; they do not claim Ren's words.
 
 * **The space.** A world is its relata, read with one kind of relatum (`Becoming.Roles`),
   with the flow among them and their web (`World`). The two-kind reading of any flow and
