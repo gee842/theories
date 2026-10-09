@@ -31,8 +31,10 @@ giving needs uptake there; a fall is taken from.
   finite worlds is a case (`World.Finite.arising_iff_ceasing`); `procession`, with one
   relatum active at a time among infinitely many, keeps arising and ceasing
   (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). Read of
-  standing, the same law holds under a census of what stands: ceasing to stand recurring
-  needs coming to stand recurring, and with a bound the two recur together
+  standing, the same law holds under a census of what stands: what stands at the end
+  with what ceased to stand is what stood at the start with what came to stand
+  (`Web.StandingCensus.over_stretch`), ceasing to stand recurring needs coming to stand
+  recurring, and with a bound from some step on the two recur together
   (`Web.StandingCensus.coming_of_ceasing`, `Web.StandingCensus.coming_iff_ceasing`).
 * **The rest theorem.** A world with a census of what is active and of what stands, whose
   arising is embodied, with a balanced, dissipative flow, in which every step from some
@@ -88,12 +90,32 @@ theorem Web.StandingCensus.coming_of_ceasing {W : Web F C} {stand : Nat → List
     ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
   Listed.coming_of_ceasing census ceasing
 
-/-- With at most `B` conditions standing at each step, coming to stand recurs exactly when
-ceasing to stand does (`Listed.coming_iff_ceasing`). -/
+/-- With at most `B` conditions standing at each step from some step on, coming to stand
+recurs exactly when ceasing to stand does (`Listed.coming_iff_ceasing`). -/
 theorem Web.StandingCensus.coming_iff_ceasing {W : Web F C} {stand : Nat → List C}
-    (census : W.StandingCensus stand) {B : Nat} (bounded : ∀ t, (stand t).length ≤ B) :
+    (census : W.StandingCensus stand) {T B : Nat}
+    (bounded : ∀ t, T ≤ t → (stand t).length ≤ B) :
     (∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c) ↔ ∀ N, ∃ t c, N ≤ t ∧ W.CeasesToStand t c :=
   Listed.coming_iff_ceasing census bounded
+
+instance Web.decideComesToStand (W : Web F C) (t : Nat) (c : C) :
+    Decidable (W.ComesToStand t c) :=
+  instDecidableAnd
+
+instance Web.decideCeasesToStand (W : Web F C) (t : Nat) (c : C) :
+    Decidable (W.CeasesToStand t c) :=
+  instDecidableAnd
+
+/-- The census balance read of standing: over any stretch, the conditions standing at the
+end with those that ceased to stand are those standing at the start with those that came
+to stand (`Listed.over_stretch`). -/
+theorem Web.StandingCensus.over_stretch {W : Web F C} {stand : Nat → List C}
+    (census : W.StandingCensus stand) (S n : Nat) :
+    (stand (S + n)).length + total (steps S n) (fun t => total (stand t) fun c =>
+      mark (W.CeasesToStand t c)) =
+      (stand S).length + total (steps S n) (fun t => total (stand (t + 1)) fun c =>
+        mark (W.ComesToStand t c)) :=
+  Listed.over_stretch census S n
 
 /-- The step from `t` is enclosed around what stands across it: some family without
 repetition, closed across the step, holds whatever stands before or after it. -/
@@ -204,7 +226,7 @@ theorem arising_of_ceasing [∀ t x, Decidable (w.web.active t x)] (counted : w.
 theorem CountedWithin.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] {B : Nat}
     (counted : w.CountedWithin B) : w.ArisingRecurs ↔ w.CeasingRecurs :=
   match counted with
-  | ⟨_, census, bounded⟩ => w.web.unceasing_iff_bounded census bounded
+  | ⟨_, census, bounded⟩ => w.web.unceasing_iff_bounded census (T := 0) fun t _ => bounded t
 
 /-- Every census of a finite world counts within the number of its relata. -/
 theorem Finite.countedWithin [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :

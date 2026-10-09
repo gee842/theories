@@ -2,21 +2,21 @@
   "schema_version": 1,
   "id": "bounded-census-keeps-pace",
   "title": {
-    "zh": "列表有界时，开始成立与不再成立同步：有界普查的世界中生起复现恰当止息复现",
-    "en": "With a bounded list, coming to be and ceasing to be keep pace: in a world with a bounded census, arising recurs exactly when ceasing does"
+    "zh": "列表从某步起有界时，开始成立与不再成立同步：有界普查的世界中生起复现恰当止息复现",
+    "en": "With a list bounded from some step on, coming to be and ceasing to be keep pace: in a world with a bounded census, arising recurs exactly when ceasing does"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T14:20:00+00:00",
+  "reviewed_at_utc": "2026-10-09T14:34:00+00:00",
   "claim": {
-    "zh": "一个规定每步的成立者被不重复地列出、每步至多 B 个（Listed，列表长度不超过 B），且每步可判定时，在任意晚的步有成员开始成立，就在任意晚的步有成员不再成立（Listed.ceasing_of_coming）。证明：从某步 N 起，一次开始成立若此前没有不再成立，那么 N 时成立的其后都仍成立，开始成立者不在 N 时的列表中，列表比 N 时长（Listed.ceases_or_kept、Listed.ceases_or_more）；列表不能长过 B，所以 N 之后必有不再成立（Listed.ceases_within）。与普查定律（ceasing-needs-arising）合起来，两者同步（Listed.coming_iff_ceasing）。读于活动：在每步至多 B 个形成活跃的普查之下，生成不息恰当止息复现（Web.ceasing_of_arising、Web.unceasing_iff_bounded）。读于世界：每步至多 B 个关系项活跃且被列出的世界（World.CountedWithin）中，生起复现恰当止息复现（World.CountedWithin.arising_iff_ceasing）；有限世界的每个普查都有界（World.Finite.countedWithin），所以有限世界的规律 World.arising_iff_ceasing 是其情形（World.Finite.arising_iff_ceasing）；procession（关系项 x 只在第 x 步活跃）每步一个活跃，生起与止息都复现，关系项却不是有限多个（World.procession_world），所以这一规律越出有限世界；dawn 有普查而无界，生起复现而止息不复现（World.dawn_unbounded）。读于水平：所立者的普查每步至多 B 个时，开始作为条件而在复现恰当不再作为条件而在复现（Web.StandingCensus.coming_iff_ceasing）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Where the members of which a determination holds are listed at each step, each once, at most B at each step (Listed, with lists no longer than B), and the determination is decided at each step, members coming to hold at arbitrarily late steps need members ceasing to hold at arbitrarily late steps (Listed.ceasing_of_coming). The proof: from some step N on, a coming to be not preceded by a ceasing to be leaves every member holding at N still holding, and the one that came to be was not listed at N, so the list is longer than at N (Listed.ceases_or_kept, Listed.ceases_or_more); the list cannot grow past B, so something ceases to be after N (Listed.ceases_within). With the census law (ceasing-needs-arising), the two recur together (Listed.coming_iff_ceasing). Read of activity: under a census with at most B formations active at each step, generation is unceasing exactly when ceasing recurs (Web.ceasing_of_arising, Web.unceasing_iff_bounded). Read of worlds: in a world whose relata active at each step are listed, at most B of them (World.CountedWithin), arising recurs exactly when ceasing does (World.CountedWithin.arising_iff_ceasing); every census of a finite world is bounded (World.Finite.countedWithin), so the law of finite worlds, World.arising_iff_ceasing, is a case (World.Finite.arising_iff_ceasing); in procession, where relatum x is active at step x alone, one relatum is active at each step and arising and ceasing both recur, while the relata are not finitely many (World.procession_world), so the law reaches beyond finite worlds; dawn has a census without a bound, and arising recurs there while ceasing does not (World.dawn_unbounded). Read of standing: where at most B conditions stand at each step, listed, coming to stand recurs exactly when ceasing to stand does (Web.StandingCensus.coming_iff_ceasing). No ethical premise and no Lean axiom is used."
+    "zh": "一个规定每步的成立者被不重复地列出、从某步 T 起每步至多 B 个（Listed，此后列表长度不超过 B），且每步可判定时，在任意晚的步有成员开始成立，就在任意晚的步有成员不再成立（Listed.ceasing_of_coming）。证明：从 T 之后的某步 N 起，一次开始成立若此前没有不再成立，那么 N 时成立的其后都仍成立，开始成立者不在 N 时的列表中，列表比 N 时长（Listed.ceases_or_kept、Listed.ceases_or_more）；列表不能长过 B，所以 N 之后必有不再成立（Listed.ceases_within）。与普查定律（ceasing-needs-arising）合起来，两者同步（Listed.coming_iff_ceasing）。读于活动：在从某步起每步至多 B 个形成活跃的普查之下，生成不息恰当止息复现（Web.ceasing_of_arising、Web.unceasing_iff_bounded）。读于世界：每步至多 B 个关系项活跃且被列出的世界（World.CountedWithin）中，生起复现恰当止息复现（World.CountedWithin.arising_iff_ceasing）；有限世界的每个普查都有界（World.Finite.countedWithin），所以有限世界的规律 World.arising_iff_ceasing 是其情形（World.Finite.arising_iff_ceasing）；procession（关系项 x 只在第 x 步活跃）每步一个活跃，生起与止息都复现，关系项却不是有限多个（World.procession_world），所以这一规律越出有限世界；dawn 有普查而无界，生起复现而止息不复现（World.dawn_unbounded）。读于水平：所立者的普查从某步起每步至多 B 个时，开始作为条件而在复现恰当不再作为条件而在复现（Web.StandingCensus.coming_iff_ceasing）。读于依存：每步的依存被列出（Web.DependenceCensus）且从某步起至多 B 个时，形成复现恰当消解复现（Web.DependenceCensus.forming_iff_dissolving）。比率形式见 census-balance。不用伦理前提，也不用 Lean 公理。",
+    "en": "Where the members of which a determination holds are listed at each step, each once, from some step T on at most B at each step (Listed, with lists from then on no longer than B), and the determination is decided at each step, members coming to hold at arbitrarily late steps need members ceasing to hold at arbitrarily late steps (Listed.ceasing_of_coming). The proof: from some step N after T on, a coming to be not preceded by a ceasing to be leaves every member holding at N still holding, and the one that came to be was not listed at N, so the list is longer than at N (Listed.ceases_or_kept, Listed.ceases_or_more); the list cannot grow past B, so something ceases to be after N (Listed.ceases_within). With the census law (ceasing-needs-arising), the two recur together (Listed.coming_iff_ceasing). Read of activity: under a census with at most B formations active at each step from some step on, generation is unceasing exactly when ceasing recurs (Web.ceasing_of_arising, Web.unceasing_iff_bounded). Read of worlds: in a world whose relata active at each step are listed, at most B of them (World.CountedWithin), arising recurs exactly when ceasing does (World.CountedWithin.arising_iff_ceasing); every census of a finite world is bounded (World.Finite.countedWithin), so the law of finite worlds, World.arising_iff_ceasing, is a case (World.Finite.arising_iff_ceasing); in procession, where relatum x is active at step x alone, one relatum is active at each step and arising and ceasing both recur, while the relata are not finitely many (World.procession_world), so the law reaches beyond finite worlds; dawn has a census without a bound, and arising recurs there while ceasing does not (World.dawn_unbounded). Read of standing: where from some step on at most B conditions stand at each step, listed, coming to stand recurs exactly when ceasing to stand does (Web.StandingCensus.coming_iff_ceasing). Read of dependence: where the dependences of each step are listed (Web.DependenceCensus), at most B from some step on, forming recurs exactly when dissolving does (Web.DependenceCensus.forming_iff_dissolving). For the form with rates, see census-balance. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
-      "zh": "有界的列出：每步成立者被不重复地列出，列表的长度都不超过同一个 B；成员总共可以无限多。",
-      "en": "A bounded listing: the members holding at each step are listed, each once, with every list no longer than one bound B; there may be infinitely many members in all."
+      "zh": "从某步起有界的列出：每步成立者被不重复地列出，从某步 T 起列表的长度都不超过同一个 B；成员总共可以无限多。世界上的前提 CountedWithin 要求每步都有界，是 T = 0 的情形。",
+      "en": "A listing bounded from some step on: the members holding at each step are listed, each once, with every list from some step T on no longer than one bound B; there may be infinitely many members in all. The world premise CountedWithin asks the bound at every step, the case T = 0."
     },
     {
       "zh": "可判定：读于活动是活动可判定，读于水平自动成立；这是表示的逻辑承诺，经典地总是成立。",
@@ -46,7 +46,8 @@
     "Becoming.World.Finite.arising_iff_ceasing",
     "Becoming.World.procession_world",
     "Becoming.World.dawn_unbounded",
-    "Becoming.Web.StandingCensus.coming_iff_ceasing"
+    "Becoming.Web.StandingCensus.coming_iff_ceasing",
+    "Becoming.Web.DependenceCensus.forming_iff_dissolving"
   ],
   "dependencies": [
     {
@@ -167,6 +168,13 @@
   ],
   "related": [
     {
+      "id": "census-balance",
+      "detail": {
+        "zh": "比率形式：任一段步上，开始成立比不再成立多出的不超过终点的列表。",
+        "en": "The form with rates: over any stretch, comings exceed ceasings by at most the list at the end."
+      }
+    },
+    {
       "id": "continued-change-needs-openness",
       "detail": {
         "zh": "读于水平的有界规律用到所立者的普查（Web.StandingCensus）。",
@@ -191,18 +199,18 @@
     }
   ],
   "limitations": {
-    "zh": "要求一个对所有步统一的界；只从某步起有界的情形可由平移得到，但未陈述；只对离散步陈述；要求可判定（逻辑承诺）；不说哪个成员开始或不再成立，也不说两者有因果关联：本规律是计数，不是机制；复现不给出频率或比率；不评价生起或止息；名称（有界普查、procession）由 Ren 定。",
-    "en": "Needs one bound for all steps; the case bounded only from some step on follows by shifting but is not stated; stated for discrete steps; needs decidability (a logical commitment); says neither which member comes to be or ceases nor that the two are causally linked: the law is a count, not a mechanism; recurrence gives no frequency or rate; evaluates neither arising nor ceasing; the names (bounded census, procession) are Ren's to choose."
+    "zh": "界须从某步起对其后所有步统一；界随步增长时不成立（dawn 的计数随步增长）；只对离散步陈述；要求可判定（逻辑承诺）；不说哪个成员开始或不再成立，也不说两者有因果关联：本规律是计数，不是机制；不评价生起或止息；名称（有界普查、procession）由 Ren 定。",
+    "en": "The bound must hold uniformly at every step from some step on; it fails where the bound grows with the steps (dawn's count grows); stated for discrete steps; needs decidability (a logical commitment); says neither which member comes to be or ceases nor that the two are causally linked: the law is a count, not a mechanism; evaluates neither arising nor ceasing; the names (bounded census, procession) are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T141652.167311Z）：Becoming.Population 的 48 项定理（新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded）与 Becoming.Openness 的 37 项定理（新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.dawn_unbounded、Procession.census、World.procession_world）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1045 项定理／1697 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T141825.143331Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T141652.167311Z): the 48 theorems of Becoming.Population (new: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded) and the 37 theorems of Becoming.Openness (new: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.dawn_unbounded, Procession.census, World.procession_world) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1045 theorems/1697 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T141825.143331Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：Becoming.Population 的 63 项定理（P27 新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded）与 Becoming.Openness 的 38 项定理（P27 新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.dawn_unbounded、Procession.census、World.procession_world）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T143305.859329Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36 与 §37，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): the 63 theorems of Becoming.Population (added in P27: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded) and the 38 theorems of Becoming.Openness (added in P27: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.dawn_unbounded, Procession.census, World.procession_world) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T143305.859329Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36 and §37 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "b4cd12f86c4c62276b294cf887f42f75dd2e551bde36a0f4630183ac378d7723",
+      "sha256": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
       "declarations": [
         "Becoming.Listed",
         "Becoming.Listed.ceases_or_kept",
@@ -214,13 +222,15 @@
         "Becoming.Web.ceasing_of_arising",
         "Becoming.Web.unceasing_iff_bounded",
         "Becoming.search",
-        "Becoming.length_le_of_sub"
+        "Becoming.length_le_of_sub",
+        "Becoming.Web.DependenceCensus",
+        "Becoming.Web.DependenceCensus.forming_iff_dissolving"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "406497c7dfc0bf495e8166556192bddbb7b3592d2a7cd7f7274aa1bfedf385ed",
+      "sha256": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
       "declarations": [
         "Becoming.Web.StandingCensus",
         "Becoming.Web.StandingCensus.coming_iff_ceasing",
@@ -246,6 +256,15 @@
         "Becoming.Web.Ceases",
         "Becoming.Web.CeasesToStand",
         "Becoming.Web.unceasing_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "d93f543b97124f2320aaaf65a932f553169ca690cc068f43b602ae9562f71870",
+      "declarations": [
+        "Becoming.Web.Forms",
+        "Becoming.Web.Dissolves"
       ]
     },
     {
@@ -292,22 +311,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "9c00aa59ae90770792cc125a4dee7918f7c279e70269cc9e42a27608b424c95d"
+      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4b398ecbf44dd9779db3881e980468954f17d764b29505c0e6da81a714bbd2c5"
+      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "ae83164b63948ff3c97764bcf340cca4dc8840e4b27b0706aa73e7f801f71039"
+      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "154c2d537cf5d95082f36a307b34693c97b56597a04e866156b76002c1ab1d80"
+      "sha256": "a2e5bfdb65efcf8438706bc8d7a990a2c6af585d96b088691086080f6c15e511"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -327,6 +346,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -367,13 +393,17 @@
     }
   ],
   "next_delta": {
-    "zh": "只从某步起有界的情形；带比率的版本（在有界普查之下，一段步上开始成立与不再成立之差不超过 B，可由 held_over_stretch 的推广得到）；同一规律读于依存；名称（Ren）。",
-    "en": "The case bounded only from some step on; a version with rates (under a bounded census, over any stretch comings and ceasings differ by at most B, by a generalization of held_over_stretch); the same law read of dependence; names (Ren)."
+    "zh": "界随步缓慢增长时还剩什么（例如对数增长时，是否仍可能只生不灭）；名称（Ren）。",
+    "en": "What remains where the bound grows slowly with the steps (for instance, whether arising without ceasing is still possible under logarithmic growth); names (Ren)."
   },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P27 新增，按 Ren“aim a complete theory of becoming, and finish related work”；普查定律的逆命题在有界时成立，把有限世界的规律推广到有界普查的世界；见整合文档 §36。",
       "en": "2026-10-09: added as P27 of the unification plan, following Ren's ‘aim a complete theory of becoming, and finish related work’; the converse of the census law holds under a bound, extending the law of finite worlds to worlds with a bounded census; see §36 of the integration note."
+    },
+    {
+      "zh": "2026-10-09 P28：界只需从某步起成立（Listed.ceasing_of_coming、coming_iff_ceasing、Web.unceasing_iff_bounded、Web.StandingCensus.coming_iff_ceasing 加入起始步 T；世界上的 CountedWithin 是 T = 0 的情形，陈述不变）；加入读于依存的实例 Web.DependenceCensus.forming_iff_dissolving；比率形式见 census-balance；见整合文档 §37。验证范围重新指向合并检查器回执 20261009T143148.368990Z 与外围回执 20261009T143305.859329Z。",
+      "en": "2026-10-09 P28: the bound need hold only from some step on (Listed.ceasing_of_coming, coming_iff_ceasing, Web.unceasing_iff_bounded and Web.StandingCensus.coming_iff_ceasing take a starting step T; the world premise CountedWithin is the case T = 0, its statement unchanged); adds the reading of dependence, Web.DependenceCensus.forming_iff_dissolving; for the form with rates see census-balance; see §37 of the integration note. Validation scope re-pointed to consolidated receipt 20261009T143148.368990Z and periphery receipt 20261009T143305.859329Z."
     }
   ]
 }

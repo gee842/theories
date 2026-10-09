@@ -249,14 +249,14 @@
     "en": "The rest theorem needs only whatever arises to be embodied, but needs a census of what is active, a census of what stands and decided activity (a logical commitment); rests_around, rests_enclosed and arising_opens need every relatum embodied; decidable equality is a requirement of the constructive proof; in exposed dissipation holds vacuously, a feature of representing dissipation as binding only enclosed exchange, not a description of actual open systems; stated for discrete steps and natural-number amounts; evaluates neither openness nor rest; names are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T141652.167311Z）：Becoming.Openness 的 37 项定理全部空依赖（P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1045 项定理／1697 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T141825.143331Z 通过。作者反审见整合文档 §33 与 §35，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T141652.167311Z): the 37 theorems of Becoming.Openness (with the rest theorem and its cases added in P26, and the world and standing readings of the bounded census law in P27) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1045 theorems/1697 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T141825.143331Z passed. The author's counterreview is in §33 and §35 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：Becoming.Openness 的 38 项定理全部空依赖（P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法，P28 新增水平的平衡）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T143305.859329Z 通过。作者反审见整合文档 §33 与 §35，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): the 38 theorems of Becoming.Openness (with the rest theorem and its cases added in P26, the world and standing readings of the bounded census law in P27, and the balance of standing in P28) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T143305.859329Z passed. The author's counterreview is in §33 and §35 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "406497c7dfc0bf495e8166556192bddbb7b3592d2a7cd7f7274aa1bfedf385ed",
+      "sha256": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
       "declarations": [
         "Becoming.mem_append_left",
         "Becoming.mem_append_right",
@@ -354,7 +354,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "b4cd12f86c4c62276b294cf887f42f75dd2e551bde36a0f4630183ac378d7723",
+      "sha256": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
       "declarations": [
         "Becoming.Distinct",
         "Becoming.Web.Census",
@@ -398,17 +398,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "9c00aa59ae90770792cc125a4dee7918f7c279e70269cc9e42a27608b424c95d"
+      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4b398ecbf44dd9779db3881e980468954f17d764b29505c0e6da81a714bbd2c5"
+      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ae83164b63948ff3c97764bcf340cca4dc8840e4b27b0706aa73e7f801f71039"
+      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -511,6 +511,10 @@
     {
       "zh": "2026-10-09 P27：验证范围重新指向合并检查器回执 20261009T141652.167311Z 与外围回执 20261009T141825.143331Z（Population 推广普查定律并加入有界规律，Openness 加入其世界与水平读法）。断言不变。",
       "en": "2026-10-09 P27: validation scope re-pointed to consolidated receipt 20261009T141652.167311Z and periphery receipt 20261009T141825.143331Z (Population generalizes the census law and adds the bounded law, Openness its readings of worlds and standing). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P28：验证范围重新指向合并检查器回执 20261009T143148.368990Z 与外围回执 20261009T143305.859329Z（Population 加入普查的平衡与依存的读法，Openness 加入水平的平衡）。断言不变。",
+      "en": "2026-10-09 P28: validation scope re-pointed to consolidated receipt 20261009T143148.368990Z and periphery receipt 20261009T143305.859329Z (Population adds the census balance and the reading of dependence, Openness the balance of standing). The claim is unchanged."
     }
   ]
 }

@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "id": "census-balance",
+  "title": {
+    "zh": "普查的平衡：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的",
+    "en": "The census balance: the list at the end with what ceased is the list at the start with what came"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T14:34:00+00:00",
+  "claim": {
+    "zh": "一个规定每步的成立者被不重复地列出（Listed）且可判定时，跨过每一步，步后的列表长度加上跨步不再成立的成员数，等于步前的列表长度加上跨步开始成立的成员数（Listed.across）：跨步保持成立的成员在两张列表上计数相同（marks_le_of_sub）。所以任一段步上，终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的（Listed.over_stretch，由 balance_over_stretch 逐步累加）；不再成立的至多是开始成立的加上起点的列表，开始成立的至多是不再成立的加上终点的列表（Listed.ceasings_within、Listed.comings_within）。读于活动：普查之下，终点活跃的形成连同其间止息的，恰是起点活跃的连同其间生起的（Web.Census.over_stretch）；读于水平：所立者的普查之下，终点所立者连同其间不再作为条件而在的，恰是起点所立者连同其间开始作为条件而在的（Web.StandingCensus.over_stretch）。这是 §26 有限家族定律（held_over_stretch、keep_pace）的普查形式：不要求固定的有限家族，只要求每步的列表。不用伦理前提，也不用 Lean 公理。",
+    "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided, across each step the length of the list after it with the number of members that ceased to be across it equals the length of the list before it with the number that came to be (Listed.across): the members kept across the step are counted alike on both lists (marks_le_of_sub). So over any stretch the list at the end with what ceased between is the list at the start with what came between (Listed.over_stretch, summed step by step by balance_over_stretch); what ceases is at most what comes and the list at the start, and what comes at most what ceases and the list at the end (Listed.ceasings_within, Listed.comings_within). Read of activity: under a census, the formations active at the end with those that ceased between are those active at the start with those that arose between (Web.Census.over_stretch); read of standing: under a census of what stands, what stands at the end with what ceased to stand between is what stood at the start with what came to stand between (Web.StandingCensus.over_stretch). This is the census form of section 26's law of a finite family (held_over_stretch, keep_pace): no fixed finite family is needed, only the list at each step. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "列出：每步成立者被不重复地列出；成员总共可以无限多。",
+      "en": "Listing: the members holding at each step are listed, each once; there may be infinitely many members in all."
+    },
+    {
+      "zh": "可判定：计数要判定每个成员在相邻两步是否成立；读于水平自动成立，读于活动是活动可判定。这是表示的逻辑承诺。",
+      "en": "Decidability: counting needs it decided whether each member holds at adjacent steps; read of standing this holds automatically, read of activity it is decided activity. It is a logical commitment of the representation."
+    }
+  ],
+  "correspondence": {
+    "zh": "§26 的 held_over_stretch 对一个固定的有限家族成立；关系项无限多时没有这样的家族。本结果说明只要每步的成立者有限且被列出，同样的平衡成立，而且给出比率：在任一段步上，止息比生起多出的不超过起点的计数，生起比止息多出的不超过终点的计数。P26 与 P27 的复现定律是它的极限情形：止息不断而生起停止会使计数无穷地下降；计数有界时生起不断而止息停止会使计数越过界。证明没有经过这一平衡，而是直接用列表的长短；两条路线一致。作者的读法（AI 论证）：在每步有限的展开中，进入与离开在每一步上精确相抵，差额只是在场者的数目。这是活动、水平与任何规定的读法，不是 Ren 的“生成的”“退化的”，也不评价生起或止息。",
+    "en": "Section 26's held_over_stretch holds of one fixed finite family; with infinitely many relata there is no such family. This result shows that wherever the holders at each step are finitely many and listed, the same balance holds, and it gives rates: over any stretch, ceasings exceed comings by at most the count at the start, and comings exceed ceasings by at most the count at the end. The recurrence laws of P26 and P27 are its limiting cases: endless ceasing with arising stopped would lower the count without end, and with the count bounded endless arising with ceasing stopped would carry it past the bound. Their proofs do not go through this balance but use the lengths of the lists directly; the two routes agree. The author's reading (an AI argument): in an unfolding finite at each step, entering and leaving cancel exactly at each step, the difference being only the number present. This is a reading of activity, standing and any determination, not Ren's generative and degenerative, and it evaluates neither arising nor ceasing."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+  "aliases": [
+    "Becoming.Listed.across",
+    "Becoming.Listed.over_stretch",
+    "Becoming.Listed.ceasings_within",
+    "Becoming.Listed.comings_within",
+    "Becoming.Web.Census.over_stretch",
+    "Becoming.Web.StandingCensus.over_stretch",
+    "Becoming.balance_over_stretch",
+    "Becoming.marks_le_of_sub"
+  ],
+  "dependencies": [
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用开始成立与不再成立的计数（comings、ceasings）、标记（mark）与步段（steps），并以有限家族定律（held_over_stretch、keep_pace）为对照。",
+        "en": "Reuses the counts of coming to be and ceasing to be (comings, ceasings), marks (mark) and stretches (steps), with the law of a finite family (held_over_stretch, keep_pace) for comparison."
+      },
+      "interface": {
+        "output": {
+          "zh": "有限家族上，终点成立的连同其间不再成立的，恰是起点成立的连同其间开始成立的。",
+          "en": "In a finite family, the members holding at the end with those that ceased are those holding at the start with those that came."
+        },
+        "input": {
+          "zh": "同一平衡只需要每步的列表。",
+          "en": "The same balance needs only the list at each step."
+        },
+        "conditions": {
+          "zh": "列出；可判定。",
+          "en": "Listing; decidability."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
+      }
+    },
+    {
+      "id": "ceasing-needs-arising",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用列出（Listed）与普查、所立者的普查。",
+        "en": "Reuses listing (Listed), the census and the census of what stands."
+      },
+      "interface": {
+        "output": {
+          "zh": "列出时，不再成立复现需要开始成立复现。",
+          "en": "Under a listing, ceasing to be recurring needs coming to be recurring."
+        },
+        "input": {
+          "zh": "同一列出下的计数平衡与比率。",
+          "en": "The counting balance and rates under the same listing."
+        },
+        "conditions": {
+          "zh": "列出；可判定。",
+          "en": "Listing; decidability."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
+      }
+    },
+    {
+      "id": "more-needs-renewers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用不重复列表的工具（Distinct、mem_remove、List.append_of_mem）与总量（total、total_add、total_ones、total_append）。",
+        "en": "Reuses the tools of lists without repetition (Distinct, mem_remove, List.append_of_mem) and totals (total, total_add, total_ones, total_append)."
+      },
+      "interface": {
+        "output": {
+          "zh": "列表与总量的工具。",
+          "en": "Tools for lists and totals."
+        },
+        "input": {
+          "zh": "保持成立的成员在两张列表上计数相同。",
+          "en": "The members kept are counted alike on both lists."
+        },
+        "conditions": {
+          "zh": "列表不重复。",
+          "en": "Lists without repetition."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "bounded-census-keeps-pace",
+      "detail": {
+        "zh": "有界时开始成立与不再成立同步；本结果给出它的比率形式。",
+        "en": "With a bound, coming to be and ceasing to be recur together; this result gives its form with rates."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "计划 P28：普查的平衡；这不是无公理的整体演绎。",
+        "en": "Plan P28: the census balance; this is not the deduction of the whole without axioms."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "detail": {
+        "zh": "Dusk：无穷多个形成从一开始就活跃，依次止息而没有生起；没有列出，止息比生起多出的没有界，所以比率要求列出。Dawn：有列出而无界，生起比止息多出的随终点的数目无界增长，所以生起一侧的界是终点的数目，不是常数。",
+        "en": "Dusk: infinitely many formations active from the start cease one after another while nothing arises; with no listing, ceasings exceed comings without bound, so the rates need the listing. Dawn: listed but unbounded, comings exceed ceasings by the count at the end, which grows without bound, so the bound on comings is the count at the end, not a constant."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只对离散步与每步有限的成立者陈述；要求可判定（逻辑承诺）；平衡是计数，不说哪个成员进入或离开，也不说进入与离开有因果关联；不评价生起或止息；名称由 Ren 定。",
+    "en": "Stated for discrete steps and holders finitely many at each step; needs decidability (a logical commitment); the balance is a count, saying neither which member enters or leaves nor that entering and leaving are causally linked; evaluates neither arising nor ceasing; names are Ren's to choose."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：Becoming.Population 的 63 项定理（新增 mark_one、mark_zero、mark_add_not、total_congr_on、mem_insert、distinct_remove、marks_le_of_sub、balance_over_stretch、Listed.across、Listed.over_stretch、Listed.ceasings_within、Listed.comings_within、Web.Census.over_stretch 与依存的读法）与 Becoming.Openness 的 38 项定理（新增 Web.StandingCensus.over_stretch）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T143305.859329Z 通过。作者反审见整合文档 §37，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): the 63 theorems of Becoming.Population (new: mark_one, mark_zero, mark_add_not, total_congr_on, mem_insert, distinct_remove, marks_le_of_sub, balance_over_stretch, Listed.across, Listed.over_stretch, Listed.ceasings_within, Listed.comings_within, Web.Census.over_stretch and the reading of dependence) and the 38 theorems of Becoming.Openness (new: Web.StandingCensus.over_stretch) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T143305.859329Z passed. The author's counterreview is in §37 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
+      "declarations": [
+        "Becoming.Listed",
+        "Becoming.Listed.across",
+        "Becoming.Listed.over_stretch",
+        "Becoming.Listed.ceasings_within",
+        "Becoming.Listed.comings_within",
+        "Becoming.Web.Census",
+        "Becoming.Web.Census.over_stretch",
+        "Becoming.balance_over_stretch",
+        "Becoming.marks_le_of_sub",
+        "Becoming.mark_one",
+        "Becoming.mark_zero",
+        "Becoming.mark_add_not",
+        "Becoming.total_congr_on",
+        "Becoming.mem_insert",
+        "Becoming.distinct_remove"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
+      "declarations": [
+        "Becoming.Web.StandingCensus",
+        "Becoming.Web.StandingCensus.over_stretch"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+      "declarations": [
+        "Becoming.mark",
+        "Becoming.comings",
+        "Becoming.ceasings",
+        "Becoming.held_over_stretch",
+        "Becoming.keep_pace",
+        "Becoming.ComesToBe",
+        "Becoming.CeasesToBe",
+        "Becoming.Web.Ceases",
+        "Becoming.Web.CeasesToStand",
+        "Becoming.Dawn.web",
+        "Becoming.Dawn.unceasing",
+        "Becoming.Dawn.never_ceases",
+        "Becoming.Dusk.web",
+        "Becoming.Dusk.ceasing",
+        "Becoming.Dusk.nothing_arises"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "d2ae85e475265c415fd08c20e7eb1849946141955fdfef6211e3975de3de3b20",
+      "declarations": [
+        "Becoming.total",
+        "Becoming.Web.Arises"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "22fd0168ed9a80279c105bc6d37ba34c3b9e1a8e2775b93117486ea857b68350",
+      "declarations": [
+        "Becoming.steps",
+        "Becoming.total_add",
+        "Becoming.total_ones",
+        "Becoming.total_append",
+        "Becoming.Web.ComesToStand"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "integration",
+      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "a2e5bfdb65efcf8438706bc8d7a990a2c6af585d96b088691086080f6c15e511"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
+      "role": "provenance",
+      "sha256": "3ad2bca66a1e4feaac0e3efd8fc71dc336632ac8fb60ff8c9159495784c5ba5b"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "把复现定律从平衡推出，使两条路线合一；平衡读于依存（依存的普查之下）；名称（Ren）。",
+    "en": "Deriving the recurrence laws from the balance so that the two routes are one; the balance read of dependence (under a census of dependences); names (Ren)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：作为整合计划 P28 新增，按 Ren“aim a complete theory of becoming, and finish related work”；回答 bounded-census-keeps-pace 与 ceasing-needs-arising 的下一步“带比率的版本”；见整合文档 §37。",
+      "en": "2026-10-09: added as P28 of the unification plan, following Ren's ‘aim a complete theory of becoming, and finish related work’; answers the next step of bounded-census-keeps-pace and ceasing-needs-arising, a version with rates; see §37 of the integration note."
+    }
+  ]
+}

@@ -2216,6 +2216,57 @@ Integration: 计划 P27；回答 §35 留下的一半与 ceasing-needs-arising �
 
 **边界。** 无伦理谓词，不评价生起、止息或接替；只对离散步与有限列表陈述；“列出”“有界普查”“procession”的名称与读法是 AI 的表述，由 Ren 定。本节尚未经独立审查：第十次独立审查的对象截至 P23c。
 
+## 37. 普查的平衡（P28）
+
+2026-10-09。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P28。§35 与 §36 的普查定律都是复现的定律：止息复现需要生起复现，列表有界时两者同步。它们留下三个下一步：带比率的版本（多少生起伴随多少止息）、只从某步起有界的情形、读于依存。本节给出三者。比率来自一个平衡：§26 对固定的有限家族证明了“终点成立的连同其间不再成立的，恰是起点成立的连同其间开始成立的”（`held_over_stretch`）；这里对每步的列表证明同一平衡，不要求固定的有限家族。没有新模块：平衡与依存的读法放在 `Becoming.Population`，水平的读法放在 `Becoming.Openness`。成果记录：新增 [census-balance](../../../../theories/becoming/results/records/census-balance.md)；修订 [bounded-census-keeps-pace](../../../../theories/becoming/results/records/bounded-census-keeps-pace.md) 与 [ceasing-needs-arising](../../../../theories/becoming/results/records/ceasing-needs-arising.md)。
+
+```text
+Result(s): 复用 ceasing-needs-arising（Listed、普查定律）、bounded-census-keeps-pace（有界定律）、coming-and-ceasing-keep-pace
+           （mark、comings、ceasings、held_over_stretch、keep_pace）、more-needs-renewers（Distinct、mem_remove、total 的
+           工具）、becoming-dependence-dynamics（Forms、Dissolves）；新增 census-balance；修订 bounded-census-keeps-pace、
+           ceasing-needs-arising
+Delta: Population：计数工具 mark_one、mark_zero、mark_add_not、total_congr_on、mem_insert、distinct_remove、
+       marks_le_of_sub、balance_over_stretch；Listed.across、over_stretch、ceasings_within、comings_within；
+       Web.Census.over_stretch；Web.DependenceCensus 与 forming_of_dissolving、forming_iff_dissolving；
+       Listed.ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、unceasing_iff_bounded
+       改为界只需从某步 T 起成立；Openness：Web.decideComesToStand、decideCeasesToStand（实例）、
+       Web.StandingCensus.over_stretch；StandingCensus.coming_iff_ceasing 改为界从某步起
+Supplied premises / correspondence: 每步成立者的不重复列出，可判定；有界定律另要求从某步 T 起列表不长于 B
+Evidence: 合并检查器回执 20261009T143148.368990Z（1061 项定理、1716 项声明审计、核心闭包 29 个模块、包 27 个模块，全部源声明公理报告
+       为空）；外围桥接重跑 20261009T143305.859329Z；实例检查
+Boundary: 平衡是计数，不是机制；不评价生起或止息；“生起”“止息”是活动的读法，不是 Ren 的“生成的”“退化的”
+Integration: 计划 P28；回答 ceasing-needs-arising 与 bounded-census-keeps-pace 的下一步（比率、从某步起有界、读于依存）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `marks_le_of_sub` | 不重复列表上某性质成立的成员，不多于另一张不重复列表上另一性质成立的成员，只要前者每个都在后者中且有后一性质 |
+| `Listed.across` | 跨过每一步：步后列表的长度加上跨步不再成立的成员数，等于步前列表的长度加上跨步开始成立的成员数；跨步保持成立的成员在两张列表上计数相同 |
+| `balance_over_stretch` | 每步平衡的计数在任一段步上平衡（逐步累加） |
+| `Listed.over_stretch` | 任一段步上，终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的 |
+| `Listed.ceasings_within`、`comings_within` | 其间不再成立的至多是开始成立的加上起点的列表；开始成立的至多是不再成立的加上终点的列表 |
+| `Web.Census.over_stretch`、`Web.StandingCensus.over_stretch` | 读于活动与水平：终点活跃（立着）的连同其间止息（不再作为条件而在）的，恰是起点的连同其间生起（开始作为条件而在）的 |
+| `Web.DependenceCensus`、`forming_of_dissolving`、`forming_iff_dissolving` | 读于依存：每步的依存被列出时，消解复现需要形成复现；从某步起有界时两者同步 |
+| `Listed.ceasing_of_coming`、`coming_iff_ceasing`、`Web.unceasing_iff_bounded` | 有界定律的界只需从某步 T 起成立；世界上的 `CountedWithin` 是 T = 0 的情形 |
+
+**解读。**
+
+- **进入与离开每步相抵。** 在每步有限的展开中，跨过一步，离开的与留下的合为步前的全部，进入的与留下的合为步后的全部；留下的在两边相同。所以步后的数目加上离开的，恰是步前的数目加上进入的。累加起来，任一段步上的离开与进入之差，恰是起点与终点的数目之差。§26 对固定的有限家族说过同样的话；这里不需要固定的家族，关系项总共可以无限多。
+- **比率。** 由平衡，止息比生起多出的不超过起点的数目，生起比止息多出的不超过终点的数目。数目有界时，任一段步上生起与止息之差不超过界：两者不只同步复现，而且在任何长度的时段上数量相近。数目无界时（dawn），生起可以无限地超出止息。
+- **一种变化，三种读法。** 普查定律与平衡读于活动（生起与止息）、水平（开始与不再作为条件而在）与依存（形成与消解），与 §26 中同一种变化的三种读法相应。依存的读法以依存对（形成、条件）为成员。
+- **界从某步起。** 有界定律只用到某步之后的界：此前的数目可以任意大。所以“同时在场的有界”是一个最终的性质，与开头无关。
+- **两条路线。** P26 与 P27 的复现定律直接用列表的长短证明；它们也是平衡的极限情形。两条路线一致，但没有合为一个证明，列为下一步。
+
+**作者反审。**
+
+*反驳 1：平衡只是记账。* 是记账，而且是精确的：它在每一步上成立，不是近似或长程平均。它的内容在于不需要固定的有限家族：关系项无限多时，§26 的定律无法陈述，这里仍可以陈述。比率由它直接得出。
+
+*反驳 2：计数工具太多。* `mark_one`、`mark_zero`、`mark_add_not`、`total_congr_on`、`mem_insert`、`distinct_remove` 是一般的列表与标记工具，放在列表一节，供 `marks_le_of_sub` 与 `across` 使用；`balance_over_stretch` 是任何每步平衡的计数的累加，`Change.over_stretch` 的量的版本是它的一种情形，但没有改写成它的实例，以免改动已审查的模块。
+
+*反驳 3：读于依存要求依存可判定。* 是，与读于活动要求活动可判定相同，属于表示的逻辑承诺。读于水平自动可判定。
+
+**边界。** 无伦理谓词，不评价进入、离开、形成或消解；只对离散步与每步有限的列表陈述；名称（平衡、列出、有界普查）是 AI 的表述，由 Ren 定。本节尚未经独立审查：第十次独立审查的对象截至 P23c。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2489,3 +2540,7 @@ The package now has 1029 theorems and 1676 declaration audits, over a core closu
 **P27: the census law in general, and the bounded census.** Section 35's census law goes one way: under a census, ceasing recurring needs arising recurring, and dawn shows the converse fails. Section 30's law of finite worlds, that arising recurs exactly when ceasing does, thus splits in two, and section 35 left open what the other half needs. It needs exactly a bound on the count. Where the members of which a determination holds are listed at each step, each once (`Listed`, in `Becoming.Population`), a ceasing to be not preceded by a coming to be shortens the list and a coming to be not preceded by a ceasing to be lengthens it; the list cannot shorten forever, so ceasing recurring needs coming recurring (`Listed.coming_of_ceasing`, generalizing P26's helpers), and where no list is longer than B it cannot lengthen forever either, so the two recur together (`Listed.ceasing_of_coming`, `Listed.coming_iff_ceasing`). A census is this listing read of activity (`Web.Census`; `Web.unceasing_iff_bounded`), and the census of what stands is the listing of standing (`Web.StandingCensus`; `Web.StandingCensus.coming_of_ceasing`, `coming_iff_ceasing`), answering the next step of ceasing-needs-arising. Read of worlds (`Becoming.Openness`): where at most B relata are active at each step, listed (`World.CountedWithin`), arising recurs exactly when ceasing does; every census of a finite world is bounded (`World.Finite.countedWithin`), so the finite law is a case (`World.Finite.arising_iff_ceasing`); `procession`, with relatum x active at step x alone, is bounded and not finite and keeps arising and ceasing (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). By counting, arising and ceasing fall into three tiers: finite and bounded at each step, they recur together; finite but unbounded, ceasing needs arising and not conversely; no longer finite, ceasing can recur alone. The bound must hold at every step; the case bounded only from some step on, rates and the reading of dependence remain open. New record bounded-census-keeps-pace; ceasing-needs-arising revised.
 
 The package now has 1045 theorems and 1697 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 35 and 36 have not yet been independently reviewed.
+
+**P28: the census balance.** The census laws of sections 35 and 36 are laws of recurrence, and they left three next steps: a version with rates, a bound holding only from some step on, and the reading of dependence. All three are given here. The rates come from a balance. Where the members of which a determination holds are listed at each step (`Listed`), the list after a step with the members that ceased to be across it is the list before it with the members that came to be (`Listed.across`): the members kept across the step are counted alike on both lists (`marks_le_of_sub`). Summed over any stretch (`balance_over_stretch`), the list at the end with what ceased is the list at the start with what came (`Listed.over_stretch`), so ceasings exceed comings by at most the count at the start and comings exceed ceasings by at most the count at the end (`Listed.ceasings_within`, `Listed.comings_within`). This is section 26's `held_over_stretch` without a fixed finite family. Read of activity and standing: `Web.Census.over_stretch`, `Web.StandingCensus.over_stretch`. Read of dependence, with dependence pairs as members (`Web.DependenceCensus`): dissolving recurring needs forming recurring, and with a bound the two recur together (`forming_of_dissolving`, `forming_iff_dissolving`). The bounded law now needs its bound only from some step on (`Listed.ceasing_of_coming`, `coming_iff_ceasing`, `Web.unceasing_iff_bounded`); the world premise `CountedWithin` is the case of a bound at every step. The recurrence laws of P26 and P27 are limiting cases of the balance, though proved directly; joining the two routes remains open. New record census-balance; bounded-census-keeps-pace and ceasing-needs-arising revised.
+
+The package now has 1061 theorems and 1716 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 35 to 37 have not yet been independently reviewed.

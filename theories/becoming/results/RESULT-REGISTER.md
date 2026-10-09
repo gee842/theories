@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-117 migrated records: 113 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+118 migrated records: 114 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -27,10 +27,11 @@
 | `becoming-spine-instances` | [既有接口是 Becoming 脊柱的实例；比较经提升规则推广到每个框架 / Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](records/becoming-spine-instances.md) | theorem | recorded-checked |
 | `becoming-stepwise-reading` | [逐步读法：在更新之内的分类与“活跃且不侵蚀”的 living，与整段读法两个方向都有分歧 / The stepwise reading: classification within renewal and living as active and not undermining, differing from the whole-run reading in both directions](records/becoming-stepwise-reading.md) | theorem | recorded-checked |
 | `binding-preserving-substitution` | [保留绑定的代入及精确位置判据 / Binding-preserving substitution and its exact position criterion](records/binding-preserving-substitution.md) | theorem | recorded-checked |
-| `bounded-census-keeps-pace` | [列表有界时，开始成立与不再成立同步：有界普查的世界中生起复现恰当止息复现 / With a bounded list, coming to be and ceasing to be keep pace: in a world with a bounded census, arising recurs exactly when ceasing does](records/bounded-census-keeps-pace.md) | theorem | recorded-checked |
+| `bounded-census-keeps-pace` | [列表从某步起有界时，开始成立与不再成立同步：有界普查的世界中生起复现恰当止息复现 / With a list bounded from some step on, coming to be and ceasing to be keep pace: in a world with a bounded census, arising recurs exactly when ceasing does](records/bounded-census-keeps-pace.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
 | `ceasing-needs-arising` | [普查定律：成立者每步被列出时，不再成立的复现需要开始成立的复现，反之不然 / The census law: where what holds is listed at each step, ceasing to be recurring needs coming to be recurring, and not conversely](records/ceasing-needs-arising.md) | theorem | recorded-checked |
+| `census-balance` | [普查的平衡：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的 / The census balance: the list at the end with what ceased is the list at the start with what came](records/census-balance.md) | theorem | recorded-checked |
 | `classification-robust-generative-comparison` | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](records/classification-robust-generative-comparison.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `coming-and-ceasing-keep-pace` | [不加前提的变化规律：有限之中，开始成立与不再成立同步 / Laws of change with no premise: in a finite family, coming to be and ceasing to be keep pace](records/coming-and-ceasing-keep-pace.md) | theorem | recorded-checked |

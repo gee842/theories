@@ -354,6 +354,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
+## census-balance ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用开始成立与不再成立的计数（comings、ceasings）、标记（mark）与步段（steps），并以有限家族定律（held_over_stretch、keep_pace）为对照。 / Reuses the counts of coming to be and ceasing to be (comings, ceasings), marks (mark) and stretches (steps), with the law of a finite family (held_over_stretch, keep_pace) for comparison.
+
+**Producer output / 上游输出:** 有限家族上，终点成立的连同其间不再成立的，恰是起点成立的连同其间开始成立的。 / In a finite family, the members holding at the end with those that ceased are those holding at the start with those that came.
+
+**Consumer input / 下游输入:** 同一平衡只需要每步的列表。 / The same balance needs only the list at each step.
+
+**Retained conditions / 保留条件:** 列出；可判定。 / Listing; decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## census-balance ← ceasing-needs-arising
+
+`formal-reuse` — 复用列出（Listed）与普查、所立者的普查。 / Reuses listing (Listed), the census and the census of what stands.
+
+**Producer output / 上游输出:** 列出时，不再成立复现需要开始成立复现。 / Under a listing, ceasing to be recurring needs coming to be recurring.
+
+**Consumer input / 下游输入:** 同一列出下的计数平衡与比率。 / The counting balance and rates under the same listing.
+
+**Retained conditions / 保留条件:** 列出；可判定。 / Listing; decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## census-balance ← more-needs-renewers
+
+`formal-reuse` — 复用不重复列表的工具（Distinct、mem_remove、List.append_of_mem）与总量（total、total_add、total_ones、total_append）。 / Reuses the tools of lists without repetition (Distinct, mem_remove, List.append_of_mem) and totals (total, total_add, total_ones, total_append).
+
+**Producer output / 上游输出:** 列表与总量的工具。 / Tools for lists and totals.
+
+**Consumer input / 下游输入:** 保持成立的成员在两张列表上计数相同。 / The members kept are counted alike on both lists.
+
+**Retained conditions / 保留条件:** 列表不重复。 / Lists without repetition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
 `formal-reuse` — 复用比较、非自反性与传递性；不重证规范前提。 / Reuses comparison, irreflexivity and transitivity without re-proving normative premises.

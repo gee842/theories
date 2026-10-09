@@ -74,8 +74,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing. Under a
   census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps;
-  with at most `B` formations active at each step, the converse holds too. This census
-  law holds of any determination whose holders are listed at each step (`Listed`).
+  with at most `B` formations active at each step from some step on, the converse holds
+  too. This census law holds of any determination whose holders are listed at each step
+  (`Listed`), read of activity, dependence and standing: the list at the end with what
+  ceased is the list at the start with what came.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
