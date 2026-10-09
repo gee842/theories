@@ -25,7 +25,8 @@ that the rest are independent, none following from all the others together.
   active relata giving are infinite, as the implications require.
 * **All together.** Mutualists active throughout meet all eight
   (`World.mutualism_premised`). In a finite world the eight together bring the world to
-  rest: neither generation nor degeneration recurs (`World.premised_rests`).
+  rest when its activity is decided: neither arising nor ceasing recurs
+  (`World.premised_rests`).
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -716,10 +717,10 @@ theorem mutualism_premised : mutualism.Premised :=
     (still_vacuous _).2.2.1 mutualism_world.2.2.2.2.2 mutualism_finite.counted
     (still_vacuous _).2.2.2
 
-/-- In a finite world the premises together bring the world to rest: neither generation
-nor degeneration recurs. -/
+/-- In a finite world whose activity is decided the premises together bring the world to
+rest: neither arising nor ceasing recurs. -/
 theorem premised_rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
-    (premised : w.Premised) : ¬ w.Generative ∧ ¬ w.Degenerative :=
+    (premised : w.Premised) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   rests finite (premised _ (.tail _ (.head _)))
     (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
     (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))

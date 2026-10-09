@@ -8,7 +8,7 @@
   "kind": "target",
   "status": "open",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T12:30:00+00:00",
+  "reviewed_at_utc": "2026-10-09T13:30:00+00:00",
   "claim": {
     "en": "Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
     "zh": "无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
@@ -76,8 +76,8 @@
     {
       "id": "coming-and-ceasing-keep-pace",
       "detail": {
-        "en": "Arising and ceasing, forming and dissolving, coming to stand and ceasing to stand are one change read three ways; in a finite family coming to be and ceasing to be recur together, with no premise.",
-        "zh": "生起与终止、形成与消解、立起与不再立是同一变化的三种读法；有限族中生成与消失一同复现，无需前提。"
+        "zh": "生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化（开始成立与不再成立）的三种读法；在活动可判定的有限家族中，开始成立与不再成立一同复现，不加关于展开的前提。",
+        "en": "Arising and ceasing, forming and dissolving, and coming to stand and ceasing to stand are one change, coming to be and ceasing to be, read three ways; in a finite family whose determinations are decided, coming to be and ceasing to be recur together, with no premise about the unfolding."
       }
     }
   ],
@@ -109,7 +109,7 @@
     {
       "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
       "role": "statement",
-      "sha256": "1ae0f10d9233fd6dbd407cdc1bdf2765f18597e21a818b7206eb820caebcec08",
+      "sha256": "712683243bda053ce0d34d00c39532887e8628f885bc2fe1182c6a5486d53a9f",
       "declarations": []
     },
     {
@@ -166,6 +166,10 @@
     {
       "en": "9 October 2026: P23 enters the Becoming spine's laws of the whole and its parts carved by premises as evidence in each row of the completion audit, and links the theory stated in full. The passage to relational constitution and the representability of every becoming remain open; this record claims no new theorem or result identity.",
       "zh": "2026年10月9日：P23把Becoming脊柱的整体规律及前提划出的部分记入完成审计各行的证据，并链接理论的完整陈述。通向关系构成的连接以及每个生成能否被如此表示仍开放；本记录不声称新定理或新成果身份。"
+    },
+    {
+      "zh": "2026-10-09 P23c：按第九次独立审查（BECOMING-P18B-P23-REVIEW.md）更正，见整合文档 §34。related 中的用语改为章节用语，写明可判定性（M10、M2）。",
+      "en": "2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note. Terms in related follow the chapter, with decidability stated (M10, M2)."
     }
   ]
 }

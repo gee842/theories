@@ -15,30 +15,36 @@ wherever descent, dependence and support are read on one unfolding.
   part in the step and gives to it, and it comes to stand across the step
   (`Flow.DescendsAt`, `Flow.Descends`). `Becoming.Descent` reads the relation in
   valuation.
-* **A law of transmission with no premise.** Over any finite family of parents, each with
-  a finite list of offspring, and any amounts read of parents and offspring, the
-  offspring's total with what transmission lowered is the parents' amounts, each counted
-  once for every offspring, with what transmission raised (`price`). This is Price's
-  equation in additive form (Price 1970): the change from parents to offspring divides
-  into selection, the weighting of parents by their offspring, and transmission, the
-  change from each parent to its offspring. Nothing is supposed about how the offspring
-  come about.
+* **An accounting identity with no premise.** Over any finite family of parents, each
+  with a finite list of offspring, and any amounts read of parents and offspring, the
+  offspring's total with what transmission lowered is the parents' amounts weighted by
+  their offspring, each counted once for every offspring, with what transmission raised
+  (`price`). This is the counting form of Price's equation (Price 1970): it divides the
+  offspring's total into the weighted parents' amounts and the change from each parent to
+  its offspring. The weighted total is not selection proper: where every parent has the
+  same number of offspring it is that number times the parents' total
+  (`selected_uniform`), and with one parent and one unchanged offspring it is the parent's
+  amount (`unselected`). The selection term proper, the covariance of offspring number
+  and amount, is not stated. Nothing is supposed about how the offspring come about.
 * **Selection through support.** Where only active formations give and activity needs
   support (`Flow.Acting`, `Web.Dependent`), a formation that a relatum descends from
   across a step is supported at that step (`Flow.DescendsAt.supported`). A formation
   unsupported at a step leaves no descendant across it (`Flow.unsupported_childless`),
   and one never supported leaves none (`Flow.never_supported_childless`). Read of needs
-  on a condition every parent depends on, the selection term of `price` is at most the
-  condition's level counted once for every offspring (`Flow.selected_le`), so the
+  on a condition every parent depends on, the parents' needs weighted by their offspring
+  are at most the condition's level counted once for every offspring (`Flow.selected_le`),
+  so the
   offspring's total of any amount, with what transmission lowered from the parents' needs,
   is at most the level so counted, with what transmission raised
   (`Flow.selection_within`).
 * **Transmission with variation.** A flow *transmits* a dependence within `δ` when a
   relatum depending on the condition at its first standing step descends only from
   formations depending on it at the giving step, and needs it at most `δ` more
-  (`Flow.TransmitsWithin`). Then what is transmitted was selected: a descendant's need is
-  at most the condition's level at the step it was given, plus `δ`
-  (`Flow.transmitted_supported`).
+  (`Flow.TransmitsWithin`). Then what is transmitted was selected within `δ`: a
+  descendant's need is at most the condition's level at the step it was given, plus `δ`
+  (`Flow.transmitted_supported`). With `δ` zero the need was met there; with `δ` one a
+  descendant's need can exceed its condition's level at the giving step and at every step
+  (`Slack`).
 * **Activity sets later selection.** In a balanced flow, a descendant's need with
   everything taken from its condition since an earlier step is at most the condition's
   level then, with everything given to it since, plus `δ` (`Flow.transmitted_within`).
@@ -82,7 +88,9 @@ theorem length_mul_le {ks : List α} {a b : Nat} (le : ∀ k, k ∈ ks → a ≤
 def offspring (ps : List α) (kids : α → List α) (b : α → Nat) : Nat :=
   total ps fun p => total (kids p) b
 
-/-- The selection term: each parent's amount, counted once for every offspring. -/
+/-- The parents' amounts weighted by their offspring: each parent's amount, counted once
+for every offspring. It is the first term of the counting form, not selection proper
+(`selected_uniform`). -/
 def selected (ps : List α) (kids : α → List α) (a : α → Nat) : Nat :=
   total ps fun p => (kids p).length * a p
 
@@ -94,8 +102,9 @@ def raised (ps : List α) (kids : α → List α) (a b : α → Nat) : Nat :=
 def lowered (ps : List α) (kids : α → List α) (a b : α → Nat) : Nat :=
   total ps fun p => total (kids p) fun k => excess (a p) (b k)
 
-/-- Price's equation, additive form: the offspring's total with what transmission lowered
-is the selection term with what transmission raised. -/
+/-- The counting form of Price's equation, an accounting identity: the offspring's total
+with what transmission lowered is the parents' amounts weighted by their offspring with
+what transmission raised. -/
 theorem price (ps : List α) (kids : α → List α) (a b : α → Nat) :
     offspring ps kids b + lowered ps kids a b = selected ps kids a + raised ps kids a b :=
   (total_add (fun p => total (kids p) b) (fun p => total (kids p) fun k => excess (a p) (b k))
@@ -107,6 +116,21 @@ theorem price (ps : List α) (kids : α → List α) (a b : α → Nat) :
             (congrArg (· + _) (total_const (a p) (kids p)))))) ps).trans
       (total_add (fun p => (kids p).length * a p)
         (fun p => total (kids p) fun k => excess (b k) (a p)) ps))
+
+/-- The weighted total is not selection: where every parent has `k` offspring, it is `k`
+times the parents' total, whatever the amounts (the ninth review's probe). -/
+theorem selected_uniform (ps : List α) (kids : α → List α) (a : α → Nat) (k : Nat)
+    (same : ∀ p, (kids p).length = k) : selected ps kids a = k * total ps a :=
+  (total_congr (fun p => congrArg (· * a p) (same p)) ps).trans (total_mul k a ps)
+
+/-- One parent with one offspring, both at five: nothing is selected and transmission
+changes nothing, and the weighted total is five. -/
+theorem unselected :
+    selected [()] (fun _ => [()]) (fun _ => 5) = 5 ∧
+    raised [()] (fun _ => [()]) (fun _ => 5) (fun _ => 5) = 0 ∧
+    lowered [()] (fun _ => [()]) (fun _ => 5) (fun _ => 5) = 0 ∧
+    offspring [()] (fun _ => [()]) (fun _ => 5) = 5 :=
+  ⟨rfl, rfl, rfl, rfl⟩
 
 /-! ## Descent -/
 
@@ -384,6 +408,87 @@ theorem drawdown :
    Nat.zero_lt_one⟩
 
 end Drawdown
+
+namespace Slack
+
+/-- A pool, a parent and a child. -/
+inductive Relatum where
+  | pool
+  | parent
+  | child
+
+/-- The pool and the parent stand at one throughout; the child comes to stand at one. -/
+def web : Web Relatum Relatum where
+  level t x := match x, t with
+    | .pool, _ => 1
+    | .parent, _ => 1
+    | .child, 0 => 0
+    | .child, _ + 1 => 1
+  active t x := match x with
+    | .pool => False
+    | .parent => t = 0
+    | .child => False
+  requires _ x c := match x, c with
+    | .pool, _ => False
+    | .parent, .pool | .child, .pool => True
+    | .parent, .parent | .parent, .child | .child, .parent | .child, .child => False
+  need _ x _ := match x with
+    | .pool => 0
+    | .parent => 1
+    | .child => 2
+  draws _ _ _ := False
+
+/-- Across the first step the parent gives the child a unit. -/
+def flow : Flow Relatum Relatum where
+  present t := match t with
+    | 0 => [.parent]
+    | _ + 1 => []
+  take _ _ _ := 0
+  give t f c := match t, f, c with
+    | 0, .parent, .child => 1
+    | 0, .parent, .pool | 0, .parent, .parent => 0
+    | 0, .pool, _ | 0, .child, _ => 0
+    | _ + 1, _, _ => 0
+
+theorem dependent : web.Dependent
+  | _, .pool, active => False.elim active
+  | _, .child, active => False.elim active
+  | _, .parent, rfl => fun c depends => match c with
+    | .pool => Nat.le_refl 1
+    | .parent => False.elim depends
+    | .child => False.elim depends
+
+/-- The flow balances, only active formations give, activity needs support, the dependence
+on the pool is transmitted within one, the child descends from the parent, and the
+child's need exceeds the pool's level at the giving step and at every step: a transmitted
+need need not have been met (the ninth review's probe). -/
+theorem slack :
+    flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧ flow.TransmitsWithin web .pool 1 ∧
+    flow.DescendsAt web 0 .child .parent ∧ web.level 0 .pool < web.need 1 .child .pool ∧
+    ∀ t, ¬ web.need t .child .pool ≤ web.level t .pool :=
+  ⟨fun
+    | 0, .pool => rfl
+    | 0, .parent => rfl
+    | 0, .child => rfl
+    | _ + 1, .pool => rfl
+    | _ + 1, .parent => rfl
+    | _ + 1, .child => rfl,
+   fun
+    | 0, _, _, .head _, _ => rfl
+    | 0, _, _, .tail _ rest, _ => nomatch rest
+    | _ + 1, _, _, present, _ => (nomatch present),
+   dependent,
+   fun
+    | 0, .child, _, ⟨.head _, _, _⟩, _ => ⟨trivial, Nat.le_refl 2⟩
+    | 0, .pool, _, ⟨.head _, gives, _⟩, _ => absurd gives (Nat.lt_irrefl 0)
+    | 0, .parent, _, ⟨.head _, gives, _⟩, _ => absurd gives (Nat.lt_irrefl 0)
+    | 0, _, _, ⟨.tail _ rest, _, _⟩, _ => nomatch rest
+    | _ + 1, _, _, ⟨present, _, _⟩, _ => (nomatch present),
+   ⟨.head [], Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
+   Nat.lt_succ_self 1,
+   fun _ le => Nat.not_succ_le_self 1 le⟩
+
+end Slack
 
 namespace Unchecked
 

@@ -422,7 +422,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用上升降低存量（rise_lowers_on）、开始作为条件而在即上升（ComesToStand.rises）与 Handing 的见证。 / Reuses that a rise lowers the stock (rise_lowers_on), that coming to stand is a rise (ComesToStand.rises), and the Handing witness.
 
-**Producer output / 上游输出:** 被耗散的家族中成员上升时存量下降；Handing 的两侧来回传递水平，生成不息。 / A member rising lowers a family's stock under dissipation; the sides of Handing hand a standing back and forth and generate without end.
+**Producer output / 上游输出:** 被耗散的家族中成员上升时存量下降；Handing 的两侧来回传递水平，生起不息。 / A member rising lowers a family's stock under dissipation; the sides of Handing hand a standing back and forth and keep arising without end.
 
 **Consumer input / 下游输入:** 上升使总水平下降；exposed 中的两侧。 / A rise lowers the total standing; the sides in exposed.
 
@@ -448,7 +448,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 八个前提；普查。 / The eight premises; the census.
 
-**Consumer input / 下游输入:** 满足全部八个前提而生成不息的世界；世界层面的静止定理的前提。 / A world meeting all eight premises that generates without end; the premises of the world-level rest theorems.
+**Consumer input / 下游输入:** 满足全部八个前提而生起不息的世界；世界层面的静止定理的前提。 / A world meeting all eight premises in which arising does not cease; the premises of the world-level rest theorems.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -456,7 +456,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## continued-change-needs-openness ← space-and-its-parts
 
-`formal-reuse` — 复用世界、生成与退化的部分（Generative、Degenerative）与体现（Embodied）。 / Reuses worlds, the generative and degenerative parts (Generative, Degenerative) and embodiment (Embodied).
+`formal-reuse` — 复用世界、生起复现与止息复现（ArisingRecurs、CeasingRecurs）与体现（Embodied）。 / Reuses worlds, arising recurring and ceasing recurring (ArisingRecurs, CeasingRecurs) and embodiment (Embodied).
 
 **Producer output / 上游输出:** 世界及其部分。 / Worlds and their parts.
 
@@ -1524,11 +1524,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## space-and-its-parts ← coming-and-ceasing-keep-pace
 
-`formal-reuse` — 复用止息（Ceases）、有限家族中生成不息恰当止息不息（unceasing_iff）与 Dawn、Dusk。 / Reuses ceasing (Ceases), that in a finite family generation is unceasing exactly when ceasing is (unceasing_iff), and Dawn and Dusk.
+`formal-reuse` — 复用止息（Ceases）、形成有限多时生起不息恰当止息不息（unceasing_iff）与 Dawn、Dusk。 / Reuses ceasing (Ceases), that with finitely many formations arising is unceasing exactly when ceasing is (unceasing_iff), and Dawn and Dusk.
 
-**Producer output / 上游输出:** 形成有限多时，生成不息恰当止息不息；Dawn 与 Dusk 各只有一方。 / With finitely many formations, generation is unceasing exactly when ceasing is; Dawn and Dusk each have only one.
+**Producer output / 上游输出:** 形成有限多且活动可判定时，生起不息恰当止息不息；Dawn 与 Dusk 各只有一方。 / With finitely many formations and activity decided, arising is unceasing exactly when ceasing is; Dawn and Dusk each have only one.
 
-**Consumer input / 下游输入:** 有限世界中生成复现恰当退化复现；无限世界中两者分离，且其无限由此推出。 / In a finite world generation recurs exactly when degeneration does; in infinite worlds they separate, and their infinity follows.
+**Consumer input / 下游输入:** 活动可判定的有限世界中生起复现恰当止息复现；无限世界中两者分离，且其无限由此推出。 / In a finite world whose activity is decided arising recurs exactly when ceasing does; in infinite worlds they separate, and their infinity follows.
 
 **Retained conditions / 保留条件:** 有限；活动可判定。 / Finite; activity decidable.
 
@@ -1550,9 +1550,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用一类读法（roles 与其迁移引理）、体现与 Mutualism。 / Reuses the one-kind reading (roles and its transfer lemmas), embodiment and Mutualism.
 
-**Producer output / 上游输出:** 两类读法嵌入一类读法，生成不息在其中不变；互利者的每个事件都活。 / The two-kind reading embeds in the one-kind reading, keeping unceasing generation; every event of the mutualists is living.
+**Producer output / 上游输出:** 两类读法嵌入一类读法，生起不息在其中不变；互利者的每个事件都活；Handing 的两侧来回传递一个水平。 / The two-kind reading embeds in the one-kind reading, keeping unceasing arising; every event of the mutualists is living; the sides of Handing hand one standing back and forth.
 
-**Consumer input / 下游输入:** 每个两类的流与网都是一个世界；有限世界中，不生成而每个事件都活。 / Every two-kind flow and web is a world; a finite world without generation in which every event is living.
+**Consumer input / 下游输入:** 每个两类的流与网都是一个世界；有限世界中，生起不复现而每个事件都活；grazing 与 leaking 以 Handing 为基础。 / Every two-kind flow and web is a world; a finite world without arising recurring in which every event is living; grazing and leaking build on Handing.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -1576,11 +1576,23 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 亲代的取用把池汲低；超出支持的亲代。 / A parent's taking draws a pool down; a parent beyond its support.
 
-**Consumer input / 下游输入:** 有限世界中，不生成且有事件不活；活动需要支持的反例。 / A finite world without generation in which some event is not living; a countermodel to activity needing support.
+**Consumer input / 下游输入:** 有限世界中，生起不复现且有事件不活；活动需要支持的反例。 / A finite world without arising recurring in which some event is not living; a countermodel to activity needing support.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
+## space-and-its-parts ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用更新与消耗的形成（RenewingIn、ConsumingIn）及二者不重叠（renewing_not_consuming）。 / Reuses renewing and consuming formations (RenewingIn, ConsumingIn) and that they do not overlap (renewing_not_consuming).
+
+**Producer output / 上游输出:** 更新的形成不是消耗的形成。 / A renewing formation is not a consuming one.
+
+**Consumer input / 下游输入:** Ren 的“生成的、退化的”的关系读法，作为与活动读法并列的候选。 / The relational reading of Ren's ‘generative, degenerative’, a candidate beside the reading of activity.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
 ## substitution-preserves-consumption ← relational-renewal-classification
 

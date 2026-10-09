@@ -19,15 +19,15 @@ uptake there; a fall is taken from.
   (`Flow.stills`).
 * **Read of worlds.** A world with a census whose relata are embodied, with a balanced,
   dissipative flow, in which every step from some step on is enclosed around what stands,
-  comes to rest: neither generation nor degeneration recurs (`World.rests_around`). Where
+  comes to rest: neither arising nor ceasing recurs (`World.rests_around`). Where
   equality of relata is decided, an enclosed step is enclosed around what stands, so
   enclosure from some step on suffices (`World.rests_enclosed`). Finiteness is not
-  needed. Read the other way, generation without end in such a world needs, at
-  arbitrarily late steps, a step not enclosed: exchange beyond every finite family
-  (`World.generation_opens`).
+  needed. Read the other way, arising without end in such a world needs, at arbitrarily
+  late steps, a step not enclosed: exchange beyond every finite family
+  (`World.arising_opens`).
 * **Openness cannot be dropped.** The sides of `Handing`, also taking a unit from each of
   infinitely many ground relata and giving it back at every step, meet all eight premises
-  of `Becoming.Premises` and generate without end. No step is enclosed, so dissipation,
+  of `Becoming.Premises` and arise without end. No step is enclosed, so dissipation,
   which binds only at enclosed steps, binds at none (`World.exposed_world`).
 
 What stands and what is active coincide only for embodied relata; the standing laws need
@@ -169,32 +169,32 @@ theorem falls_of_ceases (embodied : w.Embodied) {t : Nat} {x : w.Relatum}
 
 /-- A world with a census whose relata are embodied, with a balanced, dissipative flow, in
 which every step from some step on is enclosed around what stands, comes to rest: neither
-generation nor degeneration recurs. -/
+arising nor ceasing recurs. -/
 theorem rests_around {alive : Nat → List w.Relatum} (census : w.web.Census alive)
     (embodied : w.Embodied) (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
     (around : ∀ t, T ≤ t → w.flow.AroundStanding alive t) :
-    ¬ w.Generative ∧ ¬ w.Degenerative :=
+    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   have still := Flow.stills balanced dissipative (standingCensus census embodied) around
-  ⟨fun generative => still fun N => match generative N with
+  ⟨fun arising => still fun N => match arising N with
     | ⟨t, x, later, arises⟩ => ⟨t, x, later, .inl (rises_of_arises embodied arises)⟩,
-   fun degenerative => still fun N => match degenerative N with
+   fun ceasing => still fun N => match ceasing N with
     | ⟨t, x, later, ceases⟩ => ⟨t, x, later, .inr (falls_of_ceases embodied ceases)⟩⟩
 
 /-- Where equality of relata is decided, enclosure from some step on suffices. -/
 theorem rests_enclosed [DecidableEq w.Relatum] (counted : w.Counted) (embodied : w.Embodied)
     (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
-    (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) : ¬ w.Generative ∧ ¬ w.Degenerative :=
+    (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   match counted with
   | ⟨_, census⟩ => rests_around census embodied balanced dissipative
       fun t later => (enclosed t later).aroundStanding _
 
-/-- So generation without end, in a world with a census whose relata are embodied and
+/-- So arising without end, in a world with a census whose relata are embodied and
 whose flow balances and dissipates, needs at arbitrarily late steps a step not enclosed:
 exchange beyond every finite family. -/
-theorem generation_opens [DecidableEq w.Relatum] (counted : w.Counted)
+theorem arising_opens [DecidableEq w.Relatum] (counted : w.Counted)
     (embodied : w.Embodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
-    (generative : w.Generative) (T : Nat) : ¬ ∀ t, T ≤ t → w.flow.Enclosed t :=
-  fun enclosed => (rests_enclosed counted embodied balanced dissipative enclosed).1 generative
+    (arising : w.ArisingRecurs) (T : Nat) : ¬ ∀ t, T ≤ t → w.flow.Enclosed t :=
+  fun enclosed => (rests_enclosed counted embodied balanced dissipative enclosed).1 arising
 
 end World
 
@@ -284,9 +284,10 @@ namespace World
 def exposed : World :=
   ⟨Exposed.Relatum, Exposed.flow, Exposed.web⟩
 
-/-- A world meeting all eight premises generates without end: no step is enclosed, so
+/-- In a world meeting all eight premises arising recurs: no step is enclosed, so
 dissipation binds at none. -/
-theorem exposed_world : exposed.Premised ∧ exposed.Generative ∧ ∀ t, ¬ exposed.flow.Enclosed t :=
+theorem exposed_world :
+    exposed.Premised ∧ exposed.ArisingRecurs ∧ ∀ t, ¬ exposed.flow.Enclosed t :=
   ⟨.of (fun _ _ _ _ no => no.elim)
      (fun t c => match c with
       | .side c => Handing.balances t c

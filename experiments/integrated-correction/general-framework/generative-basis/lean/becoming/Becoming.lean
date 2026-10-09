@@ -100,18 +100,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dissipated on, a family's members fall by at least as much as they rise, and by one
   more for each formation taking from it: a member rising comes with another falling in
   the same exchange, and the depletion that `Becoming.Generation` supplies as a premise
-  follows.
+  follows for an event at whose steps the family is dissipated on and taken from.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
   as a condition exactly while it is active, a formation depending on it lives only
   while it does, its ending ends every formation whose chain of dependence reaches it,
   and it arises only as another active formation gives to it. It comes to stand as it
-  arises, so its arising is replenishment: under dissipation generation that recurs in a
-  finite family leaves it open, draws in where each step's exchange around it lies within
-  finitely many relata, and in a finite world ceases. Under dissipation its arising comes
-  with another member of the family falling across the same step; without dissipation it
-  need not.
+  arises, so its arising is replenishment: in a balanced flow under dissipation, embodied
+  generation that recurs in a finite family leaves it open, draws in where each step's
+  exchange around it lies within finitely many relata, and in a finite world ceases.
+  Across a step at which the family is dissipated on, its arising comes with another
+  member of the family falling; without dissipation it need not.
 * `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
   exactly the zero reserve; a reserve can be a held condition, and where none is
   represented it is supplied. Where a held condition carries the formations, moving
@@ -126,32 +126,37 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   descends from a formation that takes part in a step, gives to it, and across which it
   comes to stand. Over any finite family of parents and offspring, the offspring's total
   with what transmission lowered is the parents' amounts weighted by their offspring with
-  what transmission raised: Price's equation, with no premise. Where only active
+  what transmission raised: the counting form of Price's equation, an accounting identity
+  with no premise, whose weighted total is not selection proper. Where only active
   formations give and activity needs support, only supported formations leave
-  descendants, so what is transmitted within a bound was selected: a descendant's need is
-  at most its condition's level at the giving step, plus the bound, and in a balanced
-  flow what is taken from and given to the condition in between sets that level.
-* `Becoming.Space` (L3): the whole and its parts. The space is every world, a world being
-  relata read with one kind, their flow and their web. The laws stated with no premise
-  hold of every world; in a finite world generation recurs exactly when degeneration
-  does, and with infinitely many relata either recurs without the other. Each premise is
-  met by some worlds and not by others. Generation recurring or not occurs both with every
-  event living and with some event not living. Dissipation brings a finite, balanced world
-  whose arising is embodied to rest, and each of these premises is needed.
+  descendants, so what is transmitted within a bound was selected within it: a
+  descendant's need is at most its condition's level at the giving step, plus the bound,
+  met there only when the bound is zero, and in a balanced flow what is taken from and
+  given to the condition in between sets that level.
+* `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
+  reading). The space is every world, a world being relata read with one kind, their flow
+  and their web. The laws stated with no premise hold of every world; in a finite world
+  whose activity is decided arising recurs exactly when ceasing does, without decidability
+  this law is excluded middle, and with infinitely many relata either recurs without the
+  other. Which parts Ren's generative and degenerative name is Ren's to choose. Each
+  premise is met by some worlds and not by others. Arising recurring or not occurs both
+  with every event living and with some event not living. Dissipation brings a finite,
+  balanced world whose activity is decided and whose arising is embodied to rest, and each
+  of these premises is needed.
 * `Becoming.Premises` (L3): the map of premises. Activity needing support makes activity
   carried, embodiment makes whatever arises embodied, a finite world whose activity is
   decided has a census, and where only active relata take and the flow dissipates, only
   active relata give across every enclosed step, as every step of a finite world is. The
   remaining eight premises are independent: for each, a world meets the other seven and
-  not it. One world meets all eight, and in a finite world the eight together bring it to
-  rest.
+  not it. One world meets all eight, and in a finite world whose activity is decided the
+  eight together bring it to rest.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
   every step from some step on is enclosed around it, standing stops changing. A world
   with a census, embodied, balanced and dissipative, comes to rest once enclosed, without
-  being finite; a world meeting all eight premises with no step enclosed generates without
-  end.
+  being finite; a world meeting all eight premises with no step enclosed keeps arising
+  without end.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

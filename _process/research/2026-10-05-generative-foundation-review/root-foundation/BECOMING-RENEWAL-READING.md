@@ -1640,14 +1640,14 @@ Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则�
 **解读。**
 
 - **不加前提的部分有实质内容。** 前四行是定义与恒等式：变化的读法、升降相抵。它们本身不多说什么，但把以前分散的定义（`Arises`、`Forms`、`Dissolves`、`ComesToStand`）收到同一种变化之下，并补上缺少的另一半（`Ceases`、`CeasesToStand`）。实质内容来自两个界：量不低于零，规定只计 0 或 1。由前者，下降复现需要上升复现；由后者，有限家族中开始成立与不再成立同步。这些对每个展开成立。
-- **生起与止息在有限之中同步。** 有限家族中，生起复现恰当止息复现；任一段步上两者之差不超过成员数。所以在形成有限多的展开中，生成不息恰当止息不息：没有只生不灭的有限世界，也没有只灭不生的有限世界。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”的一种形式内容（AI 论证）：生成与退化不是两个可以分开的过程，在有限之中它们一同复现。这不推出止息是好的或坏的，也不决定生生不息在哪个层次读：在谱系或整体的层次上不息，与成员的止息不息并不冲突（§21 的 `Generations`），这里的结论正是说成员层次上两者同步。
+- **生起与止息在有限之中同步。** 有限家族中，生起复现恰当止息复现；任一段步上两者之差不超过成员数。所以在形成有限多的展开中，生成不息恰当止息不息：没有只生不灭的有限世界，也没有只灭不生的有限世界。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”的一种形式内容（AI 论证）：生起与止息在有限之中一同复现。这是活动的读法，不是 Ren 的“生成的”“退化的”：Ren 说二者不重叠，读作关系，更新的形成与消耗的形成不重叠（`Web.renewing_not_consuming`）（P23c 更正，原文“生成与退化不是两个可以分开的过程，在有限之中它们一同复现”；见 §34 M1）。这不推出止息是好的或坏的，也不决定生生不息在哪个层次读：在谱系或整体的层次上不息，与成员的止息不息并不冲突（§21 的 `Generations`），这里的结论正是说成员层次上两者同步。
 - **无限是逃脱的方式。** 只生不止需要无尽的新（`Dawn`）；只止不生需要无尽的初始（`Dusk`）。这与 §21 的 `needs_new`（部分终结、同时活跃的有限时，整体需要不断新的部分）和 §20、§23 的耗散结论（条件总共有限时生成终止）同一方向：有限性使生成须伴随别的东西，前提不同，所伴随的不同（止息、补充、开放）。
 - **更新规律的分解。** `Generation` 的“生起消耗有限家族时，不息的生成需要更新复现”与 `Flow` 的“复现的取用需要补充复现”，现在可以读作一个前提（消耗、平衡）加这里的下限：前提把生起或取用变成下降，下限使下降的复现需要上升的复现。`Renewal` 的 `falls_finitely` 正是一个量的下限（`falls_finitely_from_floor`）。下限本身对每个展开成立：每个展开中，有限多个条件持续下降就持续上升（`Web.falls_need_rises`）。
 - **开始作为条件而在不需要任何前提。** 水平是否为正总可判定，所以 `Web.standing_recurs_iff` 连可判定性的假设也不需要：有限家族的条件开始作为条件而在复现，恰当它们不再作为条件而在复现。§24 证明，平衡的流中开始作为条件而在复现需要补充复现；这里加上：它也需要不再作为条件而在复现。
 
 **作者反审。**
 
-*反驳 1：这些是平凡的计数，不是生成之论的内容。* 证明是计数，内容不是：它说在任何有限的展开中，生成与退化同步。这正是 Ren 提议中“计入整个空间，包括生成与退化”的一个形式陈述：对整个空间成立的东西不多，而这一条把生成与退化绑在一起。平凡的是证明，不是结论；以前各模块需要前提才得到的“生成须伴随更新”，其下限部分在这里对每个展开成立。
+*反驳 1：这些是平凡的计数，不是生成之论的内容。* 证明是计数，内容是：一个二值的规定在有限家族中无限多次改变，就在两个方向上都无限多次改变；读于活动，在任何有限的展开中生起与止息同步。它是二值与有限的推论，不排除二值与有限所排除之外的任何动力学；对整个空间成立的东西不多，这一条是其中之一（P23c 更正，原文“它说在任何有限的展开中，生成与退化同步。这正是 Ren 提议中‘计入整个空间，包括生成与退化’的一个形式陈述……这一条把生成与退化绑在一起”；见 §34 M1、M9）。平凡的是证明，不是结论；以前各模块需要前提才得到的“生成须伴随更新”，其下限部分在这里对每个展开成立。
 
 *反驳 2：可判定性就是一个前提。* 它是表示的方法承诺，已在来源说明与计划第 9 节中单独公开：计数需要知道每一步是否成立。它不是关于展开的前提：不限制什么生起、什么止息。读于水平时连它也不需要。无论如何，相关定理把它作为显式假设写出。
 
@@ -1655,7 +1655,7 @@ Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则�
 
 *反驳 4：把生成不息与止息不息等同，会被读成“生生不息需要死亡”。* 定理只说成员层次上的数目同步，不说止息是生成的条件或代价，也不说它好。§21 的 `Layered` 表明同样的成员可以反复生起与止息（短暂的部分）；那里的止息不是消失。是否把这读作生生不息的一部分，由 Ren 定。
 
-**边界。** 不含伦理谓词；只对离散步的读法陈述；有限家族以列表给出；“复现”不给出频率或比例；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；不把形式规律当作对现实的演绎必然性；中文用语“止息”“开始成立”“不再成立”“同步”是 AI 的提议，名称由 Ren 定。本节尚未经独立审查。
+**边界。** 不含伦理谓词；只对离散步的读法陈述；有限家族以列表给出；“复现”不给出频率或比例；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；不把形式规律当作对现实的演绎必然性；中文用语“止息”“开始成立”“不再成立”“同步”是 AI 的提议，名称由 Ren 定。本节经第九次独立审查，更正见 §34。
 
 ## 27. 第八次独立审查与更正（P18b）
 
@@ -1734,7 +1734,7 @@ Integration: §23–§25 的更正；§24 列为开放的“一般地构造转�
 
 *反驳 4：审计生成的常量是否越出“核心纯净”的要求？* 核心纯净的三条（只导入自身、源声明的公理报告为空、只用前导编译）不变。生成的 `injEq` 引理依赖 `propext`，它们属于环境，不属于证明；审计使这一事实被检查而不只是被说明。若以后出现别的依赖公理的生成常量，检查器会失败，需要先查明再接受。
 
-**边界。** 不含伦理谓词；不改变读法选择的地位；新名称是建议；探针与新见证都是最小见证；转化读法的选择、世系按给予项计，是公开的读法选择；沿依存链的滞后共灭与净给予的世系，开放。本节的更正尚未再经独立审查。
+**边界。** 不含伦理谓词；不改变读法选择的地位；新名称是建议；探针与新见证都是最小见证；转化读法的选择、世系按给予项计，是公开的读法选择；沿依存链的滞后共灭与净给予的世系，开放。本节的更正经第九次独立审查，L1–L10 全部关闭，见 §34（P23c 补记，原文“本节的更正尚未再经独立审查”）。
 
 ## 28. 上升与下降在同一交换中（P20）
 
@@ -1774,7 +1774,7 @@ Integration: 计划 P20；把 §26 的长程同步在耗散之下变为一步之
 
 **解读。**
 
-- **长程的同步在耗散之下变成一步之内的伴随。** §26 说，有限家族中生起复现恰当止息复现，但两者可以相隔任意多步。耗散加上平衡，使上升在同一步上就伴随另一个成员的下降：不必等到以后，也不必在别处。数量上，下降至少等于上升加取用者的数目，所以耗散的家族在每个有交换的步上整体下降（`runs_down`），上升只是使别的成员下降得更多。
+- **长程的同步在耗散之下变成一步之内的伴随。** §26 说，有限家族中生起复现恰当止息复现，但两者可以相隔任意多步。在家族被耗散的一步上，平衡使上升在同一步上就伴随家族另一个成员的下降：不必等到以后，也不必在别处（P23c 更正，原文“耗散加上平衡，使上升在同一步上就伴随另一个成员的下降”；在 `Spray` 中流平衡且耗散，一个条件上升而没有条件下降，见 §34 M5）。数量上，下降至少等于上升加取用者的数目，所以耗散的家族在每个有交换的步上整体下降（`runs_down`），上升只是使别的成员下降得更多。
 - **生成的两个对应前提化归为流的前提。** §13 中 `Becoming.Generation` 的结论用两个由应用给出的前提：每次上升都由某个形成造成（`RenewedBy`），事件在没有上升的步上消耗家族（`Depletes`）。§14 已证明前者在平衡且只有活跃者给予的流中成立（`renewedBy`）。这里证明后者的更强形式：在平衡的流中，被耗散且有取用的步上，家族的某个成员下降，即使另一个成员上升（`falls_of_taking`）；一个事件的每一步都是这样的步，它就消耗家族（`depletes`）。所以在流的读法中，`Generation` 的两个对应前提化归为平衡、只有活跃者给予、耗散，以及事件之步上有形成从家族取用；这些仍是对应前提，只是更基本，并且可以分别检验。
 - **同一交换的两面。** `rise_exchange` 读于形成：给予上升成员的活跃形成自己从家族取用（耗散），另一个成员下降，由汲取它的活跃形成取用（平衡与 `Taking`）。读于一类关系项（`Embodied.arising_with_fall`）：一个关系项的生起，在同一步上就是家族中另一个关系项的下降。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是一个可以单独发生的事件，它与别处的下降是同一次交换。
 - **开放的单步判据。** §20 与 §27 证明，耗散之下，成员在任意晚的步开始作为条件而在（一般地，上升）的不重复有限家族，在任意晚的步不封闭。`rise_alone_opens` 给出单步的形式：耗散之下，有成员上升而没有成员下降的不重复家族，在该步就不封闭。`Brood` 正是这样：第 t+1 代生起，没有一代下降，家族封闭，所以它不被耗散。
@@ -1789,7 +1789,7 @@ Integration: 计划 P20；把 §26 的长程同步在耗散之下变为一步之
 
 *反驳 4：为什么只对被耗散的家族陈述，而不对一切封闭家族？* 耗散之下，每个不重复的封闭家族都被耗散（`Dissipative` 的定义），所以 `rise_with_fall` 加上 `dissipative ds t distinct closed` 就是封闭家族的形式；`rise_alone_opens` 是它的逆否。陈述为被耗散的家族，使前提只在用到的那一步上：一个流可以只在某些步、某些家族上被耗散。
 
-**边界。** 不含伦理谓词；“同一交换”是同一步上同一流中的给予与取用，不把下降单独归给某个上升；不说哪个成员下降；下降不是止息；只对离散步的读法与自然数的量陈述；耗散、平衡与只有活跃者取用是对应前提，实际展开是否满足是经验问题；“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。本节尚未经独立审查。
+**边界。** 不含伦理谓词；“同一交换”是同一步上同一流中的给予与取用，不把下降单独归给某个上升；不说哪个成员下降；下降不是止息；只对离散步的读法与自然数的量陈述；耗散、平衡与只有活跃者取用是对应前提，实际展开是否满足是经验问题；“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。本节经第九次独立审查，更正见 §34。
 
 ## 29. 演化在脊柱上（P21）
 
@@ -1816,7 +1816,7 @@ Integration: 计划 P21；世系从 L4 移到 L3，Descent 保留估值的读法
 | `price` | 不加前提：任意有限的亲代家族与各自的有限后代列表，任意的量，后代的总量加传递所降低的，等于亲代的量按后代数计数，加传递所升高的。Price 方程的加法计数形式 |
 | `DescendsAt.active`、`DescendsAt.supported` | 只有活跃者给予时，后代从之而来的形成在给予之步活跃；活动另需支持时，它在该步被支持 |
 | `unsupported_childless`、`never_supported_childless` | 选择：在一步不被支持的形成不在该步留下后代；从不被支持的形成没有后代 |
-| `selected_le`、`selection_within` | 读于每个亲代都依存的条件上的所需：选择项至多是条件的水平按后代数计数；所以后代任意量的总量加上从亲代所需降低的，至多是这样计数的水平加上升高的 |
+| `selected_le`、`selection_within` | 读于每个亲代都依存的条件上的所需：亲代所需按后代数加权的总量至多是条件的水平按后代数计数（P23c 用语，原文“选择项”）；所以后代任意量的总量加上从亲代所需降低的，至多是这样计数的水平加上升高的 |
 | `TransmitsWithin` | 前提：在开始作为条件而在之步依存于 c 的后代，只从在给予之步依存于 c 的形成而来，且所需至多多 δ |
 | `transmitted_supported` | 传递的曾被选择：后代的所需至多是该条件在给予之步的水平加 δ |
 | `transmitted_within` | 活动设定后来的选择：平衡的流中，后代的所需加上自较早一步以来从条件取用的，至多是条件那时的水平加其后给予它的，再加 δ |
@@ -1826,28 +1826,30 @@ Integration: 计划 P21；世系从 L4 移到 L3，Descent 保留估值的读法
 **解读。**
 
 - **世系属于变化，不属于评价。** 世系由参与、给予与开始作为条件而在定义，不含估值。P18 把它放在 L4 的 `Descent`，因为它首先用于估值的连通。现在它在 L3 的 `Evolution` 中定义，`Descent` 导入它并保留 N_rel 下的读法（`descent_reaches`、`Brood.descended` 等）。这样，演化的定理不经过元伦理层。
-- **Price 方程是恒等式，内容在别处。** `price` 与 §26 的升降相抵同类：不加前提，对任意量成立。它把从亲代到后代的变化分为选择项与传递项，但不说哪一项由什么决定。两份既有笔记已手推其协方差形式并说明它是会计恒等式（[math-note](../../2026-10-05-direction-frontier/math-note.md)、[GENERATED-SELECTION-RECURRENCE-INTEGRATION](GENERATED-SELECTION-RECURRENCE-INTEGRATION.md)，引 Frank 2012）。这里的贡献是：它在纯核心中、以自然数与截断差检查过，并且两项各自有了脊柱上的内容。
-- **选择即支持对给予的约束。** 适应度没有定义。在只有活跃者给予且活动需要支持的展开中，能留下后代的只是被支持的形成：选择不是另加的规律，而是 `Acting` 与 `Dependent` 合起来的推论。`selected_le` 把它写进 `price` 的选择项：后代数加权的亲代所需，受条件的水平所限。
-- **传递的曾被选择。** 后代承接亲代的依存（`TransmitsWithin`）时，后代的所需至多是给予之步条件的水平加 δ：传下来的所需在给予时被满足过。δ 是变异向上的界；向下没有界。
+- **Price 方程是恒等式，内容在别处。** `price` 与 §26 的升降相抵同类：不加前提，对任意量成立。它把后代的总量分为亲代的量按其后代加权的总量与传递的变化，但不说哪一项由什么决定。加权总量不是真正的选择项：每个亲代都有 k 个后代时它是亲代总量的 k 倍（`selected_uniform`），没有任何选择时也不为零（`unselected`）；真正的选择项即后代数与量的协方差没有陈述（P23c 更正，原文“它把从亲代到后代的变化分为选择项与传递项”；见 §34 M3）。两份既有笔记已手推其协方差形式并说明它是会计恒等式（[math-note](../../2026-10-05-direction-frontier/math-note.md)、[GENERATED-SELECTION-RECURRENCE-INTEGRATION](GENERATED-SELECTION-RECURRENCE-INTEGRATION.md)，引 Frank 2012）。这里的贡献是：它在纯核心中、以自然数与截断差检查过，并且两项各自有了脊柱上的内容。
+- **选择即支持对给予的约束。** 适应度没有定义。在只有活跃者给予且活动需要支持的展开中，能留下后代的只是被支持的形成：选择不是另加的规律，而是 `Acting` 与 `Dependent` 合起来的推论。`selected_le` 把它写进 `price` 的加权总量：后代数加权的亲代所需，受条件的水平所限（P23c 用语，原文“选择项”）。
+- **传递的曾被选择。** 后代承接亲代的依存（`TransmitsWithin`）时，后代的所需至多是给予之步条件的水平加 δ：界为零时，传下来的所需在给予时被满足过；界为正时可以从未被满足（`Slack`）（P23c 更正，原文“传下来的所需在给予时被满足过”；见 §34 M6）。δ 是变异向上的界；向下没有界。
 - **活动设定后来的选择。** `transmitted_within` 把给予之步的水平展开为较早的水平与其间的取用和给予。所以其间形成做了什么（取用多少、给予多少）进入后来能传递的所需。`Drawdown` 中，这一反馈来自亲代自己：它的取用降低了池，使承继其所需的后代从一开始就不被支持；所需较少的后代被支持、活跃并转而取用。传递、变异、选择与反馈在同一展开中，这是演化之论核心候选在脊柱上的一个最小实例（AI 论证）。
 
 **作者反审。**
 
-*反驳 1：Price 方程是恒等式，算不上结果。* 是。记录的实质内容是选择与传递的定理：`unsupported_childless`、`selected_le`、`transmitted_supported`、`transmitted_within` 与两个见证。`price` 写入是因为它给出选择与传递的划分，而且与 §26 一样，是不加前提对整个空间成立的规律；记录与本节都不说它改进了 Price 方程。
+*反驳 1：Price 方程是恒等式，算不上结果。* 是。记录的实质内容是选择与传递的定理：`unsupported_childless`、`selected_le`、`transmitted_supported`、`transmitted_within` 与两个见证。`price` 写入是因为它给出加权总量与传递的划分（P23c 用语，原文“选择与传递的划分”），而且与 §26 一样，是不加前提对整个空间成立的规律；记录与本节都不说它改进了 Price 方程。
 
 *反驳 2：这里的“选择”太弱，它不是繁殖率的差别。* 是。这里的选择只是谁能在一步上给予；一个被支持的形成能有多少后代不受约束，后代数只是 `price` 中的权重。要得到繁殖率的差别，需要把后代数与给予的量联系起来（例如每个后代至少要给予多少），这列入下一步，不在本节。
 
-*反驳 3：传递是前提，所以传递没有被解释。* 是，正如演化之论中重构是前提。一类读法中的世系只说给予者给予；后代是否依存于亲代所依存的，要看依存怎样形成（§6 的形成与持续）。能否由此推出 `TransmitsWithin`，是开放的证明。
+*反驳 3：传递是前提，所以传递没有被解释。* 是，正如演化之论中重构是前提。一类读法中的世系只说给予它的形成给予（P23c 用语，原文“给予者”）；后代是否依存于亲代所依存的，要看依存怎样形成（§6 的形成与持续）。能否由此推出 `TransmitsWithin`，是开放的证明。
 
 *反驳 4：`Drawdown` 会被读成“变异者胜出”。* 定理不评价。所需较少的后代被支持，只是因为亲代取用之后池的水平满足它而不满足另一个；承继所需的后代不被支持，在 `Dependent` 之下从不活跃，但仍作为条件而在（水平为一），不是消失。哪一个更好，要另经 G0 与 C。
 
 *反驳 5：计划要求在外围接通既有的演化机制。* 计划说的是能证明对应时接通。结构复制（`StructuralCopying`）读的是记号序列的复制与材料预算，与流和依存网之间的对应需要另外建立，本轮没有尝试；它保持原范围，列入下一步。
 
-**边界。** 不含伦理谓词；适应度没有定义，不说哪种所需更好；传递是前提；`price` 只以加法计数形式与自然数的量陈述，不含协方差形式；选择只读作支持对给予的约束；只对离散步的读法陈述；与演化之论既有机制的对应未证明；“世系”“传递”“选择”“变异”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
+**边界。** 不含伦理谓词；适应度没有定义，不说哪种所需更好；传递是前提；`price` 只以加法计数形式与自然数的量陈述，不含协方差形式；选择只读作支持对给予的约束；只对离散步的读法陈述；与演化之论既有机制的对应未证明；“世系”“传递”“选择”“变异”的这些读法是 AI 的表述，名称由 Ren 定。本节经第九次独立审查，更正见 §34。
 
 ## 30. 整体与其部分（P22）
 
 2026-10-09。按同一指示继续计划 P22。Ren 的提议（[原话](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)）：加上公理可以定义好，好是整个空间的一部分；计入整个空间，生成的与退化的，就得到演化之论，或生成／生命之论，它甚至不需要公理。计划把这读作：规律对整个空间成立，前提划出部分。本节新模块 `Becoming.Space`（L3，导入 `Evolution` 与 `Reserve`）给出这一读法的形式结构。成果记录：[space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)。
+
+（P23c 更正与改名：这是这一提议的一种结构（AI 的读法）。提议中的“生成的”“退化的”指哪个部分由 Ren 选择；Ren 2026-10-09 说二者不重叠（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)）。本节的部分按活动读，改名为生起复现与止息复现：`Generative`、`Degenerative`、`generative_ofRoles`、`degenerative_ofRoles`、`generative_iff`、`handing_generative` 现为 `ArisingRecurs`、`CeasingRecurs`、`arisingRecurs_ofRoles`、`ceasingRecurs_ofRoles`、`arising_iff_ceasing`、`handing_arising`。下面的 Delta 块保留 P22 时的名称；表格与解读用现名，受影响的句子已就地更正并标明。见 §34 M1。）
 
 ```text
 Result(s): 复用 coming-and-ceasing-keep-pace（Ceases、unceasing_iff、Dawn、Dusk）、generation-is-replenishment
@@ -1867,35 +1869,35 @@ Integration: 计划 P22；Ren 的“计入整个空间”在核心上的结构�
 
 | 声明 | 内容 |
 |---|---|
-| `World`、`ofRoles`、`generative_ofRoles`、`degenerative_ofRoles` | 一个世界是以一类读法的关系项、其间的流与依存网；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同 |
-| `Generative`、`Degenerative`、`Living` | 部分：生成复现（某个关系项在任意晚的步生起）；退化复现（某个关系项在任意晚的步止息）；每个事件都活（逐步读法中活跃者不侵蚀） |
-| `generative_iff` | 规律：有限且活动可判定的世界中，生成复现恰当退化复现 |
-| `separate` | 关系项无限多时两者分离：`Dawn` 中生成复现而无止息，`Dusk` 中止息复现而无生起；两者无限由 `generative_iff` 推出 |
+| `World`、`ofRoles`、`arisingRecurs_ofRoles`、`ceasingRecurs_ofRoles` | 一个世界是以一类读法的关系项、其间的流与依存网；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同 |
+| `ArisingRecurs`、`CeasingRecurs`、`Living` | 部分：生起复现（某个关系项在任意晚的步生起）；止息复现（某个关系项在任意晚的步止息）；每个事件都活（逐步读法中活跃者不侵蚀） |
+| `arising_iff_ceasing` | 规律：有限且活动可判定的世界中，生起复现恰当止息复现 |
+| `separate` | 关系项无限多时两者分离：`Dawn` 中生起复现而无止息，`Dusk` 中止息复现而无生起；两者无限由 `arising_iff_ceasing` 推出 |
 | `contingent` | 七个前提（`Dependent`、`Balanced`、`Acting`、`Taking`、`Dissipative`、`Embodied`、`Carried`）各有满足与不满足它的世界 |
-| `living_crosses` | 有限世界中四种组合都出现：生成且都活（handing）、生成而有不活（spending）、不生成而都活（mutualism）、不生成而有不活（drawdown） |
-| `rests` | 有限、平衡、耗散且生起者体现的世界中，生成与退化都不复现 |
-| `rests_needs` | 每个前提都不可少：kindling（无限）、handing（不耗散）、unbalanced（不平衡）、flicker（不体现）都继续生成 |
+| `living_crosses` | 有限世界中四种组合都出现：生起复现且都活（handing）、生起复现而有不活（spending；P23c 起为 grazing）、不生起复现而都活（mutualism）、不生起复现而有不活（drawdown） |
+| `rests` | 有限、活动可判定、平衡、耗散且生起者体现的世界中，生起与止息都不复现 |
+| `rests_needs` | 每个前提都不可少：kindling（无限）、handing（不耗散）、unbalanced（不平衡；P23c 起为耗散不空的 leaking）、flicker（不体现）都继续生起 |
 | `Spending.web`、`Spending.spends` | 与 `Handing` 同样的活动，只是每侧在站立时汲取自身的水平；持有者传出它的水平时侵蚀自身的依存 |
 | `idle`、`restless` | 不活跃的关系项给予自身（满足平衡而不满足 `Acting`）；每步都超出支持而活跃的关系项，没有任何储备承载它 |
 
 **解读。**
 
 - **整体与部分的结构。** 空间是每个世界。不加前提的定理（§26 的变化规律、§29 的 Price 方程）对每个网、每个量陈述，所以它们就是对整体成立的规律，不需要另一个包装。各定理的前提每一个都有满足与不满足它的世界（`contingent`），所以它们划出真部分，不是隐藏的规律。这是 Ren“计入整个空间”的一种形式内容（AI 论证）：规律属于整体，前提属于部分。
-- **生成与退化在有限世界中是同一部分。** §26 证明，形成有限多时生成不息恰当止息不息。读于世界：有限世界中生成的部分与退化的部分重合。它们只在无限世界中分离，并且分离的两个世界无限这一点由规律本身推出，不需另证。“生成的”与“退化的”不是整体的两半，在有限的展开中它们是同一个部分。
-- **活跨越生成与退化。** “每个事件都活”的部分既与生成的部分交叠，也与其补交叠，四种组合都在有限世界中出现。`handing` 与 `spending` 的活动完全相同，只差各侧是否汲取自身的水平：活与否不由生成与止息的样式决定，而由汲取与依存的关系决定。Ren 说加上公理可以定义好，好是整个空间的一部分；这里的 `Living` 是 G0 所计的 living 的一个结构部分，它不是生成的同义词，止息也不是不活。
-- **耗散使有限世界归于静止。** `rests` 把 §20（`generation_ceases`）与 `generative_iff` 合起来：有限、平衡、耗散且生起者体现时，生起不再复现，所以止息也不再复现，活动最终不再改变。四个反例表明每个前提都不可少，其中 kindling 表明：在耗散之下继续生成，需要展开越出每个有限部分，与 §17、§20 的“开放”相合。
+- **生起复现与止息复现在有限世界中是同一部分。** §26 证明，形成有限多时生成不息恰当止息不息。读于世界：活动可判定的有限世界中，生起复现的部分与止息复现的部分重合；对每个世界陈述而不给可判定性，这一规律就是排中律（`law_decides`）。它们只在无限世界中分离，并且分离的两个世界无限这一点由规律本身推出，不需另证。这是活动的读法；读作关系，更新的形成与消耗的形成不重叠（`Web.renewing_not_consuming`），与 Ren 所说二者不重叠相合；提议中的“生成的”“退化的”指哪个部分，由 Ren 选择（P23c 更正，原标题“生成与退化在有限世界中是同一部分”，原文“有限世界中生成的部分与退化的部分重合”“‘生成的’与‘退化的’不是整体的两半，在有限的展开中它们是同一个部分”；见 §34 M1、M2）。
+- **活跨越生起复现。** “每个事件都活”的部分既与生起复现的部分交叠，也与其补交叠，四种组合都在有限世界中出现。`handing` 与 `spending` 的活动完全相同，只差各侧是否汲取自身的水平；spending 中不活的事件是承担自身的体现关系项在其终结之步汲取自身，是否计入不活属于 Ren 的选择，所以这一对只在逐步读法的这一判定下显示活与否由汲取与依存的关系决定。`grazing` 不依赖这一判定：放牧者取用一个池，使另一个以池为依存的关系项落空，池不是汲取者，也从不活跃（P23c 更正，原标题“活跨越生成与退化”，原文“活与否不由生成与止息的样式决定，而由汲取与依存的关系决定”；见 §34 M7）。Ren 说加上公理可以定义好，好是整个空间的一部分；这里的 `Living` 是 G0 所计的 living 的一个结构部分，它不是生起的同义词，止息也不是不活（P23c 用语，原文“生成的同义词”）。
+- **耗散使有限世界归于静止。** `rests` 把 §20（`generation_ceases`）与 `arising_iff_ceasing` 合起来：有限、活动可判定、平衡、耗散且生起者体现时，生起不再复现，所以止息也不再复现，活动最终不再改变。四个反例表明每个前提都不可少，其中 kindling 表明：在平衡与耗散之下，体现者的生起复现需要关系项无限，与 §17、§20 的“开放”相合（P23c 更正，原文“在耗散之下继续生成，需要展开越出每个有限部分”；flicker 与 unbalanced 是有限的反例，见 §34 M4）。平衡一行原用 `unbalanced`，它没有流，耗散空成立；P23c 改用 `leaking`，其中两侧的家族每步封闭且被取用（见 §34 M8）。
 
 **作者反审。**
 
-*反驳 1：大部分是把已有见证收集起来。* 部分是。新的内容是：世界与部分的定义及两类读法的嵌入；把前提的偶然性作为一个陈述（`contingent`），其中三个世界（`idle`、`restless`、`unbalanced`）与 `spending` 是新的；`living_crosses`；`rests` 及其每个前提的必要性；以及分离世界的无限由规律推出。`generative_iff` 是 §26 的 `unceasing_iff` 读于世界，不算独立结果。
+*反驳 1：大部分是把已有见证收集起来。* 部分是。新的内容是：世界与部分的定义及两类读法的嵌入；把前提的偶然性作为一个陈述（`contingent`），其中三个世界（`idle`、`restless`、`unbalanced`）与 `spending` 是新的；`living_crosses`；`rests` 及其每个前提的必要性；以及分离世界的无限由规律推出。`arising_iff_ceasing` 是 §26 的 `unceasing_iff` 读于世界，不算独立结果。
 
-*反驳 2：有限世界的规律要求活动可判定，这削弱了“不加前提”。* 核心是构造性的，不用经典逻辑；计数需要可判定。经典地每个世界的活动都可判定，所以这不是关于展开的实质前提，而是构造性证明的要求。记录与模块都写明这一点。
+*反驳 2：有限世界的规律要求活动可判定，这削弱了“不加前提”。* 核心是构造性的，不用经典逻辑；计数需要可判定。经典地每个世界的活动都可判定，所以这不是关于展开的实质前提，而是构造性证明的要求。记录与模块都写明这一点。（P23c 补充：前一半对；后一半须写明，对每个世界陈述这一规律而不给可判定性，就要用排中律（`World.law_decides`）。可判定性因此作为逻辑承诺，与表示的其他承诺一起公开，见 §34 M2。）
 
 *反驳 3：“每个前提都划出真部分”只对七个前提给出。* 是。`Census`、`TransmitsWithin`、`Around` 等其他前提没有逐一给出；前提的组合也没有逐一给出。完整的地图列入下一步。
 
 *反驳 4：这被读成“理论不需要公理”。* 不是。本节显示哪些陈述不需要前提、哪些前提划出哪些部分。规范方向仍经 G0；“不加实质公理的整体演绎必然性”仍是开放的首要目标（[根基章节](../../../../theories/becoming/chapters/BECOMING-FOUNDATION.md)）。
 
-**边界。** 不含伦理谓词，不评价任何部分；`Living` 只是逐步读法的结构条件；有限世界的规律要求活动可判定；部分的列举不完全；只对离散步的读法陈述；“世界”“生成的”“退化的”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
+**边界。** 不含伦理谓词，不评价任何部分；`Living` 只是逐步读法的结构条件；有限世界的规律要求活动可判定；部分的列举不完全；只对离散步的读法陈述；“世界”“生起复现”“止息复现”是 AI 的表述，提议中的“生成的”“退化的”指哪个部分由 Ren 选择（P23c 更正，原文“‘世界’‘生成的’‘退化的’的这些读法是 AI 的表述，名称由 Ren 定”）。本节经第九次独立审查，更正见 §34。
 
 ## 31. 完整的陈述与完成审计（P23）
 
@@ -1907,7 +1909,7 @@ Delta: 正典章节新增“理论的完整陈述”一节（整体、生与灭�
        公理／读法／开放）；第 8 节重排为现状表与四类开放项（属于 Ren 的选择、哲学根据、经验对应、进一步的证明）；
        根基章节完成审计各行加入脊柱的证据，并加“脊柱的现状”一段；根基记录 theory-of-becoming-foundation 的下一步、
        验证范围、相关与历史；generation-is-replenishment 的“生起的生命”改为“生起的体现关系项”，只在 Ren 的读法下读作生
-Supplied premises / correspondence: 无新前提；规律对脊柱所表示的世界成立（离散的步、自然数的量、共同索引）
+Supplied premises / correspondence: 无新前提；规律对脊柱所表示的世界成立（离散的步、自然数的量、共同索引；P23c 补：规律需要时活动可判定）
 Evidence: 现有回执与记录；无新证明
 Boundary: 形式陈述的完整不是必然性已证；每个生成能否这样表示是开放的哲学根据；读法与名称由 Ren 定
 Integration: 计划 P23；根基章节第 5 节；为 P23b 的第九次审查提供完整陈述
@@ -1916,8 +1918,9 @@ Integration: 计划 P23；根基章节第 5 节；为 P23b 的第九次审查提
 **解读。**
 
 - **“完整”指什么。** 完整的陈述在这个意义上完整：章节的每条主张都标明地位（表示、规律、定理、公理、读法或开放），每个开放项都归入四类之一。它不在这个意义上完整：整体的必然性已证。两种意义在章节、根基章节与根基记录中都分开写。
-- **规律与表示。** 不加前提的规律（§26、§29）对每个世界成立，但“世界”是脊柱所表示的世界：离散的步、自然数的量、把条件与关系项对应起来的共同索引（§17）。每个生成是否都能这样表示，是一项哲学根据；不能这样表示的部分，需要扩展脊柱，例如连续时间或实数量的表示及其对应。两项分别列入第 8 节的哲学根据与进一步的证明。
+- **规律与表示。** 不加前提的规律（§26、§29）对每个世界成立，但“世界”是脊柱所表示的世界：离散的步、自然数的量、把条件与关系项对应起来的共同索引（§17），以及规律需要时每一步的活动可判定（P23c 补充，见 §34 M2）。每个生成是否都能这样表示，是一项哲学根据；不能这样表示的部分，需要扩展脊柱，例如连续时间或实数量的表示及其对应。两项分别列入第 8 节的哲学根据与进一步的证明。
 - **四类。** 原第 8 节的每个“下一步”都有归类（AI 逐项对照了重排前后的文本）：读法与名称归 Ren 的选择，整体演绎、普遍实践根据、科学探究的根基与 G0／A／N 的根据归哲学根据，机制的实际实现、前提是否被实际展开满足与方向假说归经验对应，其余归进一步的证明，并按依存与同一、读法、继续生成、整体与部分、演化、共同活动、智慧分组。审查不是一类开放内容，单独列出。
+- **完整标准的达成（P23c 补充，见 §34 M9）。** 计划 §9 的四项标准中：第 1 项（每种形态都在脊柱上）与第 4 项（开放项分类）满足；第 2 项在 P23c 后满足，可判定性在每处表示清单中公开；第 3 项在 P24 后对世界层面的十个前提满足（八个彼此独立，两个由其余推出），相对于延续关系、更新关系、衰减的储备或条件家族的前提（`NoSplit`、`RenewedBy`、`Decays`、`Depletes`、`Around`）没有映射，标准中的“混合的”部分没有在 `Space` 中定义，“生成的”“退化的”部分指什么由 Ren 选择。
 - **完成审计。** 根基章节第 5 节表中每行的“现有证据”加入脊柱的结果，“剩余推论”不变：脊柱定位了整体主张的实质剩余（规律属于整体，前提划出部分），但不完成通向关系构成的连接。根基记录的下一步相应改写，保留原来的中心推论。
 - **措辞更正。** generation-is-replenishment 原写“每次生命的生起都是一次补充”。“生命”是 Ren 的读法，不是定理的内容；现在写作生起的体现关系项自身是其他关系项的条件，只在 Ren 把它读作“生”时才读作生命。
 
@@ -1929,7 +1932,7 @@ Integration: 计划 P23；根基章节第 5 节；为 P23b 的第九次审查提
 
 *反驳 3：没有新的证明。* 对。依结果工作流，重述、汇集与复查不是新的独立结果，本轮不登记新成果身份；它的贡献是地位的标注、开放项的归类与完成审计的证据。
 
-**边界。** 无新定理；规律只对脊柱所表示的世界成立；归类是 AI 的判断；“生”“生生”的读法与名称由 Ren 定。本节尚未经独立审查（计划 P23b）。
+**边界。** 无新定理；规律只对脊柱所表示的世界成立；归类是 AI 的判断；“生”“生生”的读法与名称由 Ren 定。本节经第九次独立审查，更正见 §34。
 
 ## 32. 前提的地图（P24）
 
@@ -1960,14 +1963,14 @@ Integration: 计划 P24；完整性的第三条读法；为第十次审查（P24
 | `premises`、`Premised`、`MeetsAllBut` | 八个前提的列表；满足全部；满足除 `P` 以外的全部而不满足 `P` |
 | `independent` | strained（不满足活动需要支持）、unbalanced（平衡）、scatter（只有活跃者给予）、morsel（只有活跃者取用其所汲取的）、keeping（耗散）、latent（体现）、multitude（普查）、novel（有界传递），各满足其余七个 |
 | `none_follows` | 所以没有一个前提由其余七个推出 |
-| `mutualism_premised`、`premised_rests` | 始终活跃的互利者满足全部八个；有限且活动可判定的世界中，八个一起使生成与退化都不再复现 |
+| `mutualism_premised`、`premised_rests` | 始终活跃的互利者满足全部八个；有限且活动可判定的世界中，八个一起使生起与止息都不再复现（P23c 用语，原文“生成与退化”） |
 
 **解读。**
 
 - **前提之间的结构。** 十个世界层面的前提里，有两个是另一个的较弱形式：有储备承载弱于活动需要支持（零储备），生起者体现弱于每个关系项体现。一个在有限世界中自动成立：普查。一个由另两个在被围住的步上推出：只有活跃者取用与耗散推出只有活跃者给予，因为耗散之下给予需要取用。这一条是新的：P13 的“给予需要取用”在世界层面读作，只有活跃者取用时，不活跃的关系项在有限世界中不能给予。
 - **其余八个彼此独立。** 对每个前提，都有一个世界满足其余七个而不满足它。所以没有一个前提藏在其余之中：每个都是对世界的独立限定。不满足普查的世界（multitude）与不满足只有活跃者给予的世界（scatter）都是无限的；这不是选择见证的巧合，而是蕴含要求的：有限世界有普查，并且在其中只有活跃者取用与耗散推出只有活跃者给予。scatter 中没有一步被围住：每步的交换都伸到无限多个关系项，耗散空成立，P16b 已经披露这种情形（`Spray`）。
 - **novel：依存在世系中新形成。** 亲代烧掉燃料的两个单位，给子代一个单位，使子代开始作为条件而在；子代开始依存于亲代，而亲代自己从未有这一依存。所以有界传递不成立：世系中出现了新的依存，而不是传下来的。这是 §29 中“传递是前提”的见证：novel 满足其余七个前提，有界传递却不成立，所以传递不由它们推出。
-- **全部一起。** 互利者满足全部八个，所以前提一起是相容的，并且不空：有活动，有依存，有体现。在有限世界中，八个一起使世界归于静止（§30 的 `rests`，生起者体现由体现推出）。所以一个有限的世界若满足全部前提并继续生成，是不可能的；继续生成需要越出某个前提，或者越出有限。
+- **全部一起。** 互利者满足全部八个，所以前提一起是相容的，并且不空：有活动，有依存，有体现。在有限世界中，八个一起使世界归于静止（§30 的 `rests`，生起者体现由体现推出）。所以一个有限的世界若满足全部前提并使生起复现，是不可能的；生起复现需要越出某个前提，或者越出有限（P23c 用语，原文“继续生成”）。
 
 **作者反审。**
 
@@ -1975,7 +1978,7 @@ Integration: 计划 P24；完整性的第三条读法；为第十次审查（P24
 
 *反驳 2：“八个前提”的选择是任意的。* 部分是。这八个是脊柱定理在世界层面用到的动力学前提；相对于另一读法的前提（延续关系、更新关系、衰减的储备、条件家族）不是世界本身的限定，需要另一种地图；流中每个参与者只列一次是表示的条件。加入新前提时，独立性要重新检查，可能出现新的蕴含。
 
-*反驳 3：premised_rests 只是 rests 的重述。* 是推论，不是独立结果；它显示的是：满足全部前提的有限世界没有继续生成的余地。新的内容是蕴含、两个新前提与独立性。
+*反驳 3：premised_rests 只是 rests 的重述。* 是推论，不是独立结果；它显示的是：满足全部前提的有限世界没有生起复现的余地（P23c 用语，原文“继续生成”）。新的内容是蕴含、两个新前提与独立性。
 
 **边界。** 无伦理谓词，不评价任何部分；只对离散步的读法陈述；有限世界的蕴含要求活动可判定；只映射世界层面的八个前提；前提与世界的名称是 AI 的表述，由 Ren 定。本节尚未经独立审查（计划 P24b）。
 
@@ -1986,15 +1989,15 @@ Integration: 计划 P24；完整性的第三条读法；为第十次审查（P24
 ```text
 Result(s): 复用 no-finite-part-bears-taking（Balances.runs_down、rise_lowers_on、Enclosed.around、Dissipative）、
            rising-and-falling-in-one-exchange（Balances.fall_taken）、generation-is-replenishment（ComesToStand.rises、
-           Handing）、map-of-premises（Premised、Counted、beyond）、space-and-its-parts（World、Generative、
-           Degenerative、Embodied）、coming-and-ceasing-keep-pace（Ceases）、Renewal 的 falls_finitely；
+           Handing）、map-of-premises（Premised、Counted、beyond）、space-and-its-parts（World、ArisingRecurs、
+           CeasingRecurs、Embodied；P23c 前为 Generative、Degenerative）、coming-and-ceasing-keep-pace（Ceases）、Renewal 的 falls_finitely；
            新增 continued-change-needs-openness
 Delta: Openness：所立者的普查（Web.StandingCensus）与围住所立者的步（Flow.AroundStanding）；stock_eq、
        Enclosed.aroundStanding、fall_lowers_on、standing_runs_down、standing_never_rises、change_lowers、stills；
-       世界上的 standingCensus、rises_of_arises、falls_of_ceases、rests_around、rests_enclosed、generation_opens；
+       世界上的 standingCensus、rises_of_arises、falls_of_ceases、rests_around、rests_enclosed、arising_opens（P23c 前为 generation_opens）；
        见证 exposed 与 exposed_world；列表工具 mem_append_left、mem_append_right
 Supplied premises / correspondence: 平衡；耗散；所立者的普查；从某步起每步围住所立者。世界层面另要求活动的普查与每个
-       关系项体现；rests_enclosed 与 generation_opens 要求关系项的相等可判定
+       关系项体现；rests_enclosed 与 arising_opens 要求关系项的相等可判定
 Evidence: 合并检查器回执（见记录）；外围桥接重跑；实例检查
 Boundary: 要求每个关系项体现，不只是生起者；耗散只约束被围住的交换，exposed 中它空成立；不评价开放或静止
 Integration: 计划 P25；回答理论第 8 节列出的开放项；为第十次审查（P24b）提供对象
@@ -2008,26 +2011,101 @@ Integration: 计划 P25；回答理论第 8 节列出的开放项；为第十次
 | `fall_lowers_on`、`change_lowers` | 被耗散的家族中成员下降使存量下降（它被取用）；所以任何条件的水平上升或下降都使总水平下降 |
 | `stills` | 从某步起每步都围住所立者时，没有条件的水平在任意晚的步变化 |
 | `standingCensus`、`rises_of_arises`、`falls_of_ceases` | 活动的普查与每个关系项体现给出所立者的普查；体现的关系项生起即上升，止息即下降 |
-| `rests_around`、`rests_enclosed` | 有普查、每个关系项体现、平衡且耗散的世界，从某步起每步围住所立者（相等可判定时：每步被围住）时，生成与退化都不再复现 |
-| `generation_opens` | 所以这样的世界生成不息时，在任意晚的步有不被围住的步 |
-| `exposed`、`exposed_world` | Handing 的两侧另外在每步从无限多个地关系项各取一个单位再还回：满足全部八个前提，生成不息，没有一步被围住 |
+| `rests_around`、`rests_enclosed` | 有普查、每个关系项体现、平衡且耗散的世界，从某步起每步围住所立者（相等可判定时：每步被围住）时，生起与止息都不再复现（P23c 用语，原文“生成与退化”） |
+| `arising_opens` | 所以这样的世界生起复现时，在任意晚的步有不被围住的步（P23c 改名，原名 `generation_opens`，原文“生成不息”） |
+| `exposed`、`exposed_world` | Handing 的两侧另外在每步从无限多个地关系项各取一个单位再还回：满足全部八个前提，生起复现，没有一步被围住 |
 
 **解读。**
 
 - **总水平是只降不升的量。** 平衡与耗散一起，使跨过被围住的步的总水平不上升；更强地，任何水平的变化都使它严格下降。上升被给予，而在被围住的步上给予需要取用；下降被取用。所以变化本身消耗总水平。自然数的量只能严格下降有限多次（`falls_finitely`），所以被围住的展开中，变化只能有限多次。
 - **有限不是关键。** §30 的 `rests` 要求关系项总共有限；这里关系项可以无限多，只要每步立着的有限多个被列出，且每步的交换被某个有限家族围住。两者都不是对方的特例：`rests` 要求有限而只要求生起者体现；这里不要求有限而要求每个关系项体现。
-- **开放是生成不息的必要条件。** 读作对立面：满足普查、体现、平衡与耗散的世界若生成不息，那么在任意晚的步，有一步的交换伸到每个有限家族之外。这是 §17、§20（P13、P15）中家族层面的开放在世界层面的陈述，而且用变化的所立者，不是固定的家族。
-- **exposed：开放不能去掉。** Handing 的两侧来回传递一个单位的水平，生成不息；另外在每步与无限多个地关系项交换一个单位，取用再还回，使地的水平保持为零。由于每步取用无限多个关系项，没有有限家族跨过任何一步封闭，所以耗散空成立。它满足全部八个前提（普查只列出立着的那一侧），生成不息。所以在八个前提之下，被围住这一条件不能从 `rests_enclosed` 中去掉。
+- **开放是生起复现的必要条件。** 读作对立面：满足普查、体现、平衡与耗散的世界若生起复现（P23c 用语，原标题与原文“生成不息”），那么在任意晚的步，有一步的交换伸到每个有限家族之外。这是 §17、§20（P13、P15）中家族层面的开放在世界层面的陈述，而且用变化的所立者，不是固定的家族。
+- **exposed：开放不能去掉。** Handing 的两侧来回传递一个单位的水平，生起复现；另外在每步与无限多个地关系项交换一个单位，取用再还回，使地的水平保持为零。由于每步取用无限多个关系项，没有有限家族跨过任何一步封闭，所以耗散空成立。它满足全部八个前提（普查只列出立着的那一侧），生起复现。所以在八个前提之下，被围住这一条件不能从 `rests_enclosed` 中去掉。
 
 **作者反审。**
 
 *反驳 1：exposed 只是利用耗散的表示漏洞。* 是利用了一个已披露的特点：耗散只约束被围住的交换（P16b、`Spray`）。这正是要显示的：被围住不是由八个前提推出的，它是一个独立的、关于开放的条件。地的交换（取一再还一）是零净流，它不给两侧任何东西；它只使每一步不被围住。一个要求“每步只与有限多个关系项交换”的更强耗散会排除它，但那是另一个前提，应当公开地加入，而不是藏在耗散里。
 
-*反驳 2：要求每个关系项体现太强。* 是比 `rests` 的“生起者体现”强。止息读作下降，需要止息者体现；生起读作上升，需要生起者体现。只要求生起者体现时，`stills` 仍使生成停止吗？不立着却活跃的关系项可以不断止息而不改变水平；所以退化部分需要更多。是否可以只用生起者体现得到生成部分，列为下一步（记录的 next_delta）。
+*反驳 2：要求每个关系项体现太强。* 是比 `rests` 的“生起者体现”强。止息读作下降，需要止息者体现；生起读作上升，需要生起者体现。只要求生起者体现时，`stills` 仍使生起停止吗？不立着却活跃的关系项可以不断止息而不改变水平；所以止息复现的部分需要更多。是否可以只用生起者体现得到生起复现的部分，列为下一步（记录的 next_delta）（P23c 用语，原文“生成停止”“退化部分”“生成部分”）。
 
 *反驳 3：可判定的相等是额外前提。* 是构造性证明的要求：把立着的两个列表合并为一个不重复的家族要判定相等。经典地它总是成立；`rests_around` 不要求它，直接以围住所立者为前提。
 
 **边界。** 无伦理谓词，不评价开放或静止；只对离散步与自然数的量陈述；“开放”“被围住”“所立者”的读法与名称是 AI 的表述，由 Ren 定。本节尚未经独立审查（计划 P24b）。
+
+## 34. 第九次独立审查与更正（P23c）
+
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P18b（§27）、P19（§26）、P20（§28）、P21（§29）、P22（§30）与 P23（§31）（[审查](BECOMING-P18B-P23-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 27 个模块，1571 条源声明的公理报告全空；闭包的 4423 个常量中依赖公理的只有 30 条编译器生成的 `injEq` 引理，都只依赖 `propext`，与回执所列相同；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。第八次审查的 L1–L10 全部关闭。它提出十项（M1–M10）：一项替 Ren 选择了读法（M1，最严重），四项省略前提（M2、M4、M5、M6），一项散文中的错误（M3），两项缺少反例（M7、M8），两项表述与记账（M9、M10）。P24（§32）与 P25（§33）在审查期间提交，审查没有读；其中受 M1 影响的用语一并更正。本节记录逐项处理。探针 N1、N4–N7 移入核心，公理报告为空。§26、§28–§33 与英文段落中受影响的句子已就地更正并标明；原文见提交 `a69455e3`。
+
+```text
+Result(s): 更正 space-and-its-parts（M1、M2、M7、M8）、evolution-on-descent（M3、M6）、
+           rising-and-falling-in-one-exchange（M5）、coming-and-ceasing-keep-pace（M1 的对应说明）、
+           theory-of-becoming-foundation（M2、M10(b)）、generation-is-replenishment（M10(a)）；随 M1 改名更正
+           map-of-premises 与 continued-change-needs-openness；没有新的成果记录
+Delta: Space：Generative、Degenerative、generative_ofRoles、degenerative_ofRoles、generative_iff、handing_generative 改名为
+       ArisingRecurs、CeasingRecurs、arisingRecurs_ofRoles、ceasingRecurs_ofRoles、arising_iff_ceasing、handing_arising（M1）；
+       Undecided、undecided_world 与 law_decides（M2，探针 N1）；Grazing、grazing_world 与 grazing_not_self，
+       living_crosses 的不活一角改用 grazing（M7，探针 N6）；Leaking 与 leaking_world，rests_needs 的平衡一行改用它
+       （M8，探针 N7）。Evolution：selected_uniform、unselected（M3，探针 N5）；Slack（M6，探针 N4）。Openness：
+       generation_opens 改名为 arising_opens。模块说明、章节、根基章节、记录与计划的用语、标注与前提（M1–M10）
+Supplied premises / correspondence: 不变；可判定性作为逻辑承诺与表示的其他承诺一起公开；提议中“生成的”“退化的”
+       指哪个部分列为 Ren 的选择
+Evidence: 合并检查器回执 20261009T132323.308231Z（1016 项定理／1662 项声明审计，核心闭包 29 个模块，包 27 个模块，
+          源声明的公理报告全空）；外围桥接重跑 20261009T132432.792943Z；实例检查通过
+Boundary: 不含伦理结论；不替 Ren 选择任何读法；新名称是建议；探针与新见证都是最小见证
+Integration: §26、§28–§33 的更正；审查 §4 的第 1–6 项完成，第 7 项（Ren 的选择）保持开放
+```
+
+### 34.1 逐项处理
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| M1 | P22 把 Ren 提议中的“generative, degenerative”读作某个关系项在任意晚的步生起／止息，据此在正典中陈述有限世界中两者是同一部分、彼此交叠；Ren 2026-10-09 说二者不重叠，正典没有提到这句原话，也没有把这一读法列为 Ren 的选择。读法始于 P19 的作者读法 | 世界的部分按活动命名：`World.ArisingRecurs`、`CeasingRecurs`、`arising_iff_ceasing`（生起复现／止息复现），连同 `arisingRecurs_ofRoles`、`ceasingRecurs_ofRoles`、`handing_arising`；`Openness` 的 `generation_opens` 改为 `arising_opens`。模块说明写为“states one structure for that proposal (an AI reading)”，写出 Ren 的原话与脊柱上的两种读法：活动的读法（生起复现与止息复现，有限世界中重合）与关系的读法（更新的形成与消耗的形成，作为关系不重叠，`Web.renewing_not_consuming`）。章节第 2、4 条，§2，§8 现状行，词汇表，记录的标题与对应，§26、§30 与根基第 1 行改写；词汇表保留 Ren 的用语“生成的／退化的”一行，指向关系的读法，另列“生起复现／止息复现”。章节 §8 Ren 的选择新增第一项：提议中的“生成的”“退化的”指哪个部分。计划 P22 行注明：退化的部分实现为止息复现，消耗不在其中 |
+| M2 | 有限世界的规律需要活动可判定，对每个世界而不给可判定性就是排中律（探针 N1）；表示承诺的三处清单漏掉了它，根基第 1 行写“不加前提” | 三处清单（章节说明处、§8 哲学根据、根基“脊柱的现状”）加入“规律需要时每一步的活动可判定”；§8 哲学根据另加“逻辑承诺”一项。N1 移入核心：`Undecided`（一个关系项，没有流，活动以四为周期：不活跃、活跃、`Q`、不活跃）与 `World.law_decides`：若每个有限世界中生起复现都推出止息复现，则任何命题都有 Q ∨ ¬Q。根基第 1 行与根基记录的关联说明写为“活动可判定的有限世界”；第 4 条 `rests` 一句加入可判定；“活动不可判定时的规律”在进一步的证明中写明只在经典逻辑下成立，不能进入纯核心。§30 反驳 2 就地补充 |
+| M3 | `price` 被说成把从亲代到后代的变化分为选择项与传递项；等式分解的是后代的总量，所谓选择项在没有任何选择时也不为零（探针 N5） | `Evolution` 的模块说明、`selected` 与 `price` 的说明、章节第 2 条与 §2、记录的主张、§29 与词汇表改为：后代的总量分为亲代的量按其后代加权的总量与传递的变化；加权总量不是真正的选择项，真正的选择项（后代数与量的协方差）没有陈述。N5 移入核心：`selected_uniform`（每个亲代都有 k 个后代时，加权总量是亲代总量的 k 倍）与 `unselected`（一个亲代、一个后代，量都是五：加权总量为五，传递项为零）。`selected_le` 与 `selection_within` 作为关于加权总量的陈述不变 |
+| M4 | 第 4 条末句“在耗散之下继续生成，展开须越出每个有限部分”省略平衡与生起者体现；`flicker` 与 `unbalanced` 是有限的反例 | 改为：在平衡与耗散之下，不重复的有限家族中体现的成员在任意晚的步生起，家族就在任意晚的步不封闭，被围住时汲入（`Web.generation_opens`、`generation_draws_in`）。词汇表“汲入”一行与 §30 解读中 kindling 一句随之更正 |
+| M5 | (a) “在耗散之下”上升伴随下降，缺“该步被耗散的家族”（探针 N2 `Spray`）；(b) “消耗前提由平衡与耗散推出”缺“且被取用”（探针 N3 `Still`） | (a) 章节第 4 条首句、记录 rising-and-falling-in-one-exchange 的标题、§9 Dissipation 与 Roles 两行、根模块与包说明改为“在家族被耗散的一步上”；§28 解读与英文 P20 就地更正。(b) §8“继续生成”行、§9 Dissipation 行、根模块与计划 P20 行改为“对各步家族被耗散且被取用的事件”。N2 与 N3 留在审查的探针中：更正后的陈述已写出被缺的前提 |
+| M6 | “传下来的所需曾在给予之步被满足”只在界 δ 为零时成立（探针 N4） | 章节第 8 条、§2、§8 演化行与 §9 Evolution 行改为：传下来的所需至多比给予之步条件的水平多传递的界，界为零时曾在那里被满足。N4 移入核心：`Slack`（池、亲代与子代；流平衡、只有活跃者给予、活动需要支持、对池的依存在界一之内传递；子代跨第 0 步从亲代而来，所需为二，池在给予之步与每一步都只有一）。§29 就地更正 |
+| M7 | `living_crosses` 中“生成复现而有不活”的唯一见证 `spending`，依赖 Ren 尚未作出的选择：终结之步对承担自身的体现关系项的自我汲取是否计入不活 | N6 移入核心：`Grazing` 与 `World.grazing`、`grazing_world`：在 `Handing` 上加一个池、一个放牧者与一个食草者，两者以需要一与二依存于池，都在第 0 步活跃，放牧者在这一步从池取用一个单位。世界有限、生起复现、`Dependent`、平衡、`Acting`、`Taking`，而不 `Living`：放牧者的事件侵蚀食草者对池的依存；池不是汲取者，也从不活跃，放牧者自己的依存在该步之后仍满足（`grazing_not_self`）。`living_crosses` 的这一角改用 grazing；`spending` 保留在 `contingent` 中，模块说明写明它只在那一判定下不活。§30 解读就地更正 |
+| M8 | `rests_needs` 的平衡见证 `unbalanced` 没有流，耗散空成立（探针 N7） | N7 移入核心：`Leaking` 与 `World.leaking`、`leaking_world`：保留 `Handing.web`，持有者每步取用自己的一个单位而不给予。世界有限、生起复现、耗散、每个关系项体现，两侧的家族在每步封闭且被取用，只有平衡不成立。`rests_needs` 的平衡一行改用它；`unbalanced` 保留在 `contingent` 与 `Premises` 中。模块说明写明：`flicker` 的耗散在尾部空成立是被迫的，有限、平衡、耗散的世界中取用不复现（`Flow.Dissipative.finite_ceases`） |
+| M9 | (a) “规律”的标注把定义上的同一、算术恒等式与二值和有限的推论归为一类；(b) 智慧一项归入进一步的证明；(c) 计划的四项完整标准中第 2、3 项部分未满足，现状没有写出 | (a) 章节第 2 条分为三种并各自标注：〔定义上的同一〕`change_readings`；〔算术恒等式〕`over_stretch`、`price`；〔二值与有限的推论〕`keep_pace`、`coming_recurs_iff`、`arising_iff_ceasing`。(b) 智慧一项移到经验对应（两种语言）。(c) 计划 P23 行与 §31 写明各标准的达成，见 §31 的补充 |
+| M10 | (a) 四份记录的审查时间晚于包含它的提交；(b) 根基记录的中文用语与章节不一致；(c) §29 反驳 3 残留“给予者” | (a) generation-is-replenishment 改为 12:05:00，早于 P23 提交；evolution-on-descent、space-and-its-parts 与 theory-of-becoming-foundation 在本次内容修订中刷新为本次修订的时间。审查没有读的 map-of-premises 与 continued-change-needs-openness 的审查时间同样晚于各自的提交，本次内容修订时一并刷新。(b) 根基记录的关联说明改用章节的用语：止息、开始与不再作为条件而在、开始成立与不再成立，并写出可判定。(c) 改为“只说给予它的形成给予” |
+
+### 34.2 新的已检查声明
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Space | `World.ArisingRecurs`、`CeasingRecurs`、`arisingRecurs_ofRoles`、`ceasingRecurs_ofRoles`、`arising_iff_ceasing`、`handing_arising` | 改名，陈述不变：某个关系项在任意晚的步生起／止息；两类读法中读法相同；有限且活动可判定的世界中两者等价 |
+| Space | `Undecided.act`、`four`、`le_four`、`arises_at`、`web`、`decides`、`World.undecided`、`undecided_world`、`law_decides` | 一个关系项，活动以四为周期：不活跃、活跃、`Q`、不活跃。世界有限，不论 `Q` 如何，每个周期开始时生起；任何止息都判定 `Q`。所以有限世界的规律对每个世界成立就推出排中律 |
+| Space | `Grazing.Relatum`、`web`、`flow`、`side_taking` 等，`World.grazing`、`grazing_finite`、`grazing_arising`、`grazing_balanced`、`grazing_acting`、`grazing_taking`、`grazing_dependent`、`grazing_not_self`、`grazing_world` | `Handing` 的两侧加上池、放牧者与食草者；第 0 步放牧者从池取用一个单位，侵蚀食草者的依存。有限、生起复现、`Dependent`、平衡、`Acting`、`Taking`，而不 `Living`；放牧者只汲取池，池从不活跃，放牧者自己的依存在该步之后仍满足 |
+| Space | `Leaking.flow`、`takes`、`World.leaking`、`leaking_world` | `Handing.web` 上，持有者每步取用自己的一个单位而不给予。有限、生起复现、耗散、每个关系项体现，不平衡；两侧的家族每步封闭且被取用 |
+| Space | `living_crosses`、`rests_needs`（更正） | 生起复现而有不活的一角用 grazing；平衡一行用 leaking |
+| Evolution | `selected_uniform`、`unselected` | 每个亲代都有 k 个后代时，加权总量是亲代总量的 k 倍；一个亲代、一个后代、量都是五时，加权总量为五，传递所升高与降低的都为零 |
+| Evolution | `Slack.Relatum`、`web`、`flow`、`dependent`、`slack` | 流平衡、只有活跃者给予、活动需要支持、对池的依存在界一之内传递；子代从亲代而来，所需为二，池在给予之步与每一步的水平都是一：传下来的所需可以从未被满足 |
+| Openness | `World.arising_opens` | 改名，陈述不变 |
+| Premises | `premised_rests` | 陈述用新名：不生起复现，也不止息复现 |
+
+### 34.3 审查列出的会改变判断的结果
+
+1. 生成的与退化的（M1）：有限世界的规律以生起复现与止息复现陈述，正典中不再说“生成的”与“退化的”是同一部分、彼此交叠；Ren 的原话与关系的读法写在旁边；读法列为 Ren 的选择。完成。
+2. 可判定性（M2）：加入每处表示清单，在根基第 1 行、根基记录与第 4 条恢复，并作为逻辑承诺列出；不可判定时的规律就是排中律，由 `law_decides` 证明。完成。
+3. `price`（M3）：写明它分解什么，“选择项”只留给协方差。完成；协方差形式仍列为进一步的证明。
+4. 完整陈述中的前提（M4–M6）：完成。
+5. 见证（M7、M8）：grazing 与 leaking 移入核心。完成。
+6. 表述（M9、M10）：完成。
+7. Ren 的选择保持开放：提议中“生成的”“退化的”的读法（新增）；“生”“生生”与第二个“生”的读法，包括依赖消耗的生起是否算作生成；终结之步对承担自身的体现关系项的汲取是否计入不活、对哪些汲取者；接续的读法与生生不息读到哪个层次；以之为生与世系是否作为直接的估值；名称。
+8. 审查没有构造而仍开放的：`rests` 中体现必要性的非空见证（尾部空成立是被迫的，见 M8）；`price` 的协方差形式；外围中经典逻辑下的有限世界规律。
+
+### 34.4 作者反审
+
+*反驳 1：改名只是换词。* 不是。旧名把 Ren 的用语给了一种读法，正典据此把“生成的与退化的是同一部分”陈述为定理，而 Ren 说二者不重叠。新名说出定理实际说的：活动的复现。Ren 的用语留给 Ren 选择，脊柱上的两种候选都写出。关系的读法（`RenewingIn`、`ConsumingIn`）相对于一个形成；把它提为世界的部分，需要选择怎样对形成量化，这也属于 Ren 的选择之后的工作，不在本次。
+
+*反驳 2：`law_decides` 削弱了“不加前提的规律”。* 它不削弱定理，而是写明定理的逻辑承诺：在纯核心中规律以可判定为前提，这正是它能构造性地证明的形式；不加这一前提，规律就是排中律，不能进入纯核心。经典地每个世界的活动都可判定，所以它不是关于任何展开的前提，但它是逻辑的承诺，按 Ren 的优先指令与方法、模型、对应与规范的前提分开公开。
+
+*反驳 3：grazing 也依赖读法。* 它依赖逐步读法中“侵蚀”的定义：活跃者的汲取使另一个关系项已满足的依存在该步之后落空。这是 `Living` 的定义本身，不是附加的选择。它不依赖终结之步自我汲取的判定：不活的事件汲取的是池，池不是汲取者，也从不活跃。它仍然依赖两类读法的同一对应，这是表示的前提，已公开。
+
+*反驳 4：既然 `selected` 不是选择项，`price` 还有什么用。* `price` 是会计恒等式，审查与本研究都这样说；它的用处在于加权总量受条件的水平所限（`selected_le`、`selection_within`），这把支持对给予的约束写进后代的总量。真正的选择项需要整数或有理数的量与均值，列为进一步的证明。
+
+**边界。** 不含伦理谓词；不改变任何读法选择的地位，新增的一项（提议中“生成的”“退化的”的读法）列为 Ren 的选择；新名称是建议；探针与新见证都是最小见证；可判定性是公开的逻辑承诺。本节的更正尚未再经独立审查（计划 P24b）。
 
 ## English summary
 
@@ -2204,10 +2282,10 @@ The package now has 799 theorems and 1286 declaration audits, over a core closur
   - Read of activity: formations of a finite family arise at arbitrarily late steps exactly when they cease at arbitrarily late steps. With finitely many formations, generation is unceasing exactly when ceasing is (`Web.unceasing_iff`).
   - Read of standing, with no premise at all: coming to stand recurs in a finite family exactly when ceasing to stand does (`Web.standing_recurs_iff`).
 - **Infinity is the escape.** Ever new formations can arise with none ceasing (`Dawn`), and endlessly many formations active at the start can cease with nothing arising (`Dusk`).
-- **Author's reading.** In any finite family, generation and degeneration recur together. The author reads this as one formal content of Ren's scope, formation through dissolution within one unfolding (an AI argument). It does not make ceasing good or a cost of generation. The level at which 生生不息 is read, and the names, remain Ren's.
+- **Author's reading.** In any finite family, arising and ceasing recur together. The author reads this as one formal content of Ren's scope, formation through dissolution within one unfolding (an AI argument). This is a reading of activity, not Ren's generative and degenerative: Ren said the two do not overlap, and read as relations, renewing and consuming formations do not (`Web.renewing_not_consuming`) (P23c correction; originally "generation and degeneration recur together"; see section 34, M1). It does not make ceasing good or a cost of generation. The level at which 生生不息 is read, and the names, remain Ren's.
 - **Housekeeping.** `mark` moves here from `Reserve`. `total_map` and `total_congr` move from `Roles` to the totals section of `Flow`, which gains `total_ones`.
 
-The package now has 841 theorems and 1342 declaration audits, over a core closure of 25 modules and a package of 23, all with empty axiom reports. Section 26 has not yet been independently reviewed.
+The package now has 841 theorems and 1342 declaration audits, over a core closure of 25 modules and a package of 23, all with empty axiom reports. Section 26 was reviewed by the ninth independent review; see P23c.
 
 **P18b: the eighth independent review.** A separate agent (Claude Opus 5.5) reviewed P16c, P17 and P18 ([review](BECOMING-P16C-P17-P18-REVIEW.md)). It recompiled the 24 modules of the core closure from the prelude, with empty axiom reports for all 1356 source declarations, and accepted all the mathematics. K2, K5 and K7 are closed, K1, K3, K4 and K6 closed with residues, and five of K8's eight items closed. It raised ten findings (L1–L10). No reading was chosen for Ren. The corrections are made in place and marked; section 27 records the handling.
 
@@ -2217,9 +2295,9 @@ The package now has 841 theorems and 1342 declaration audits, over a core closur
 - **The requirement follows the rise (L7).** In a balanced flow every rise is given to (`Balances.rise_given`). The replenishment and dissipation theorems now hold for any rise (`rising_needs_replenishment`, `rise_lowers_on`, `rising_ceases_on`, `rising_opens`, `rising_draws_in`, `rising_ceases`), and coming to stand is the rise from nothing (`ComesToStand.rises`), so the earlier theorems follow with their statements unchanged. A condition can rise at every step without ever coming to stand (`Growing`).
 - **Residues and bookkeeping (L1–L3).** Embodied relata are no longer called lives: "an embodied relatum as a condition" in `Roles`, and "need not be embodied" in the prose, while H14's phrase names only the question the record answers. The `Dissipation` title states the enclosure. Two related notes state their premises. "Giver" is gone from current text, the §24 rebuttals run in order, dormancy "uses no reserve", and the P16b paragraph counts the package. The text now says that every *source* declaration has an empty axiom report. The checker also audits every constant Lean generates in the core closure: only the injectivity lemmas of constructors with fields (`injEq`) depend on an axiom, `propext`; there are 29, and no source declaration uses them. The convention for review stamps is in the result workflow.
 
-The package now has 877 theorems and 1387 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 27 has not yet been independently reviewed.
+The package now has 877 theorems and 1387 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 27 was reviewed by the ninth independent review; see P23c.
 
-**P20: rising and falling in one exchange.** Section 26 shows, with no premise, that coming to be and ceasing to be keep pace in a finite family, as counts and recurrences over stretches. It does not say what accompanies a single rise at its own step, and without a premise nothing need: in `Growing` and `Brood` a member rises while nothing falls. Under balance and dissipation a rise is accompanied at its own step ([rising-and-falling-in-one-exchange](../../../../theories/becoming/results/records/rising-and-falling-in-one-exchange.md)).
+**P20: rising and falling in one exchange.** Section 26 shows, with no premise, that coming to be and ceasing to be keep pace in a finite family, as counts and recurrences over stretches. It does not say what accompanies a single rise at its own step, and without a premise nothing need: in `Growing` and `Brood` a member rises while nothing falls. Under balance, across a step at which a family is dissipated on, a rise is accompanied at its own step (P23c correction; originally "under balance and dissipation") ([rising-and-falling-in-one-exchange](../../../../theories/becoming/results/records/rising-and-falling-in-one-exchange.md)).
 
 - **Every fall is taken from.** In a balanced flow every fall is taken from (`Balances.fall_taken`). Where only active formations take, some active formation drawing on the condition takes from it (`Balances.takenBy`). These are the duals of `rise_given` and `renewedBy`.
 - **Falls cover rises.** Across a step dissipated on, a family's members fall by at least as much as they rise, and by one more for each formation taking from it (`Balances.falls_cover`). This follows from the one-step balance of rises and falls in section 26 and `runs_down` in section 17.
@@ -2229,47 +2307,47 @@ The package now has 877 theorems and 1387 declaration audits, over a core closur
 - **Boundaries.** A fall is a lowering, not a ceasing: the member that falls may still stand. Nor is a fall a harm; undermining is defined by needs, and the falling member may be fuel that nothing depends on. "One exchange" means giving and taking in one flow across one step. It does not attribute a particular fall to a particular rise. The plan's original title, "coming to be and ceasing to be in one exchange", was too strong and is corrected.
 - **Bookkeeping.** Five records cite module theorem counts. They now follow the new receipt; four of them (Flow, Dissipation, Identity, Wholes) were stale before.
 
-The package now has 889 theorems and 1399 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 28 has not yet been independently reviewed.
+The package now has 889 theorems and 1399 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 28 was reviewed by the ninth independent review; see P23c.
 
 **P21: evolution on the spine.** The theory of evolution's central candidate says that differences in organizations enter subsequent activity through actual transmission and alter the conditions of later selection. Section 29 gives that candidate its minimal formal content on the spine, in a new module `Becoming.Evolution` (L3, importing only `Change`) ([evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md)).
 
 - **Descent belongs to change, not to valuation.** Descent is defined by taking part, giving and coming to stand, with no valuation. It moves from `Becoming.Descent` (L4) to `Becoming.Evolution` (`Flow.DescendsAt`, `Flow.Descends`), and `Descent` imports it and keeps its readings under N_rel.
 - **A law of transmission with no premise.** Over any finite family of parents with finite lists of offspring and any amounts, the offspring's total with what transmission lowered is the parents' amounts counted once for every offspring, with what transmission raised (`price`). This is Price's equation in additive counting form. It is an accounting identity, as two existing notes say; what is new is that it is checked in the pure core and that both of its terms receive content on the spine.
-- **Selection as support constraining giving.** Fitness is not defined. Where only active formations give and activity needs support, only supported formations leave descendants (`DescendsAt.supported`, `unsupported_childless`, `never_supported_childless`), and the selection term is bounded by the condition's level counted once for every offspring (`selected_le`, `selection_within`).
-- **What is transmitted was selected.** Where descendants take up their parents' dependences within δ (`TransmitsWithin`, a premise), a descendant's need is at most the condition's level at the giving step, plus δ (`transmitted_supported`).
+- **Selection as support constraining giving.** Fitness is not defined. Where only active formations give and activity needs support, only supported formations leave descendants (`DescendsAt.supported`, `unsupported_childless`, `never_supported_childless`), and the parents' needs weighted by their offspring are bounded by the condition's level counted once for every offspring (`selected_le`, `selection_within`). This weighted total is not the selection term proper: it is k times the parents' total where every parent has k offspring (`selected_uniform`, P23c; originally "the selection term").
+- **What is transmitted was selected.** Where descendants take up their parents' dependences within δ (`TransmitsWithin`, a premise), a descendant's need is at most the condition's level at the giving step, plus δ (`transmitted_supported`); with δ positive it may never have been met (`Slack`, P23c).
 - **Activity sets later selection.** In a balanced flow, that level is the earlier level with what was taken from and given to the condition in between (`transmitted_within`). In `Drawdown` the parent's own taking lowers the pool, so the descendant inheriting its need is unsupported from its first standing step on, while the one needing less is supported, active and takes in turn. Without `Dependent`, a formation active beyond its support transmits a need above the level (`Unchecked`).
 - **Boundaries.** Selection here constrains who can give at a step, not how many offspring a formation has; reproductive rates, mutation, drift, movement and population dynamics are not covered. Transmission is a premise, as reconstruction is in the theory of evolution. No correspondence to the existing mechanisms (`StructuralCopying` and others) is attempted this round; they keep their scope. Nothing is evaluated.
 - **Bookkeeping.** The record living-on-and-descent now cites `Flow.Descends` in `Evolution.lean`; its claim is unchanged.
 
-The package now has 910 theorems and 1435 declaration audits, over a core closure of 26 modules and a package of 24, all source declarations with empty axiom reports. Section 29 has not yet been independently reviewed.
+The package now has 910 theorems and 1435 declaration audits, over a core closure of 26 modules and a package of 24, all source declarations with empty axiom reports. Section 29 was reviewed by the ninth independent review; see P23c.
 
-**P22: the whole and its parts.** Ren proposed that with an axiom the good can be defined as a part of the whole space, while counting all the space, generative and degenerative, gives the theory of becoming without an axiom. Section 30 gives the structure of that proposal in a new module `Becoming.Space` (L3, importing `Evolution` and `Reserve`) ([space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)).
+**P22: the whole and its parts.** Ren proposed that with an axiom the good can be defined as a part of the whole space, while counting all the space, generative and degenerative, gives the theory of becoming without an axiom. Section 30 gives one structure for that proposal, an AI reading, in a new module `Becoming.Space` (L3, importing `Evolution` and `Reserve`) ([space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)).
 
 - **The space.** A world is its relata, read with one kind, with the flow among them and their web (`World`); the two-kind reading of any flow and web is a world (`World.ofRoles`). The laws stated with no premise, those of change and Price's equation, are stated of every web and amount, so they hold throughout the space.
-- **Generation and degeneration are one part in finite worlds.** In a finite world whose activity is decided, generation recurs exactly when degeneration does (`generative_iff`, section 26's `unceasing_iff` read of worlds). With infinitely many relata either recurs without the other (`separate`, from `Dawn` and `Dusk`), and that those worlds are infinite follows from the law.
+- **Arising recurring and ceasing recurring are one part in finite worlds.** In a finite world whose activity is decided, arising recurs exactly when ceasing does (`arising_iff_ceasing`, section 26's `unceasing_iff` read of worlds). This is a reading of activity; which parts Ren's "generative, degenerative" name is Ren's to choose, and Ren said the two do not overlap (P23c correction; originally "Generation and degeneration are one part", with `generative_iff`; see section 34, M1). With infinitely many relata either recurs without the other (`separate`, from `Dawn` and `Dusk`), and that those worlds are infinite follows from the law.
 - **Premises carve parts.** Seven premises are each met by some worlds and not by others (`contingent`); `idle`, `restless`, `unbalanced` and `spending` are new worlds for this.
-- **Living crosses generation.** Among finite worlds all four combinations of generating or not with every event living or not occur (`living_crosses`). `handing` and `spending` have the same activity and differ only in whether each side draws on its own standing: whether events are living is decided by drawing and dependence, not by the pattern of arising and ceasing.
-- **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world whose arising is embodied, neither generation nor degeneration recurs (`rests`), and each premise is needed (`rests_needs`).
+- **Living crosses arising.** Among finite worlds all four combinations of arising recurring or not with every event living or not occur (`living_crosses`). `handing` and `spending` have the same activity and differ only in whether each side draws on its own standing; the pair shows that drawing and dependence decide living only under the stepwise verdict on drawing on a self-bearing relatum at its ending, which is Ren's to choose. `grazing` does not rest on that verdict (P23c correction; see section 34, M7).
+- **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world whose activity is decided and whose arising is embodied, neither arising nor ceasing recurs (`rests`), and each premise is needed (`rests_needs`; since P23c the balance witness is `leaking`, whose dissipation is not vacuous).
 - **Boundaries.** No part is evaluated. This does not show that the theory needs no axiom; it shows which statements need no premise and which premises carve which parts. The law for finite worlds needs decidable activity because the core is constructive. The parts listed are not exhaustive.
 
-The package now has 939 theorems and 1501 declaration audits, over a core closure of 27 modules and a package of 25, all source declarations with empty axiom reports. Section 30 has not yet been independently reviewed.
+The package now has 939 theorems and 1501 declaration audits, over a core closure of 27 modules and a package of 25, all source declarations with empty axiom reports. Section 30 was reviewed by the ninth independent review; see P23c.
 
 **P23: the theory stated in full, and the completion audit.** Following Ren's instruction to aim at a complete theory of becoming, section 31 states the checked results once as a whole and updates the completion audit and the open programme accordingly. No Lean declaration and no result identity is added.
 
 - **The full statement.** The canonical chapter gains “The theory stated in full”, in five parts: the whole, coming to be and ceasing in one unfolding, the conditions of further activity, differentiation, and standing. Each item is marked as representation, law, theorem, axiom (G0), reading or open.
-- **Laws and representation.** The laws with no premise hold of every world as the spine represents worlds: discrete steps, natural-number amounts and a shared index identifying conditions with relata. Whether every becoming can be so represented is listed as philosophical warrant; extending the spine, for instance to continuous time or real amounts, is listed as a further proof.
+- **Laws and representation.** The laws with no premise hold of every world as the spine represents worlds: discrete steps, natural-number amounts, a shared index identifying conditions with relata, and, where a law needs it, activity decided at each step (P23c addition). Whether every becoming can be so represented is listed as philosophical warrant; extending the spine, for instance to continuous time or real amounts, is listed as a further proof.
 - **Four classes.** Section 8 of the chapter now gives a status table and places every open item in one of four classes: Ren's choices, philosophical warrant, empirical correspondence and further proofs. Review is listed separately, since it checks existing results.
 - **The completion audit.** Each row of the foundation chapter's audit cites the spine's results as evidence, and its remaining inference is unchanged: the spine locates the whole claim's substantive remainder without discharging it. The foundation record's next step is rewritten to match, keeping its central inference.
 - **A wording correction.** The record generation-is-replenishment no longer says that every arising of life is a replenishment; it says that an arising embodied relatum which is itself a condition of others is read as 生 only under Ren's reading.
 
-Section 31 has not yet been independently reviewed.
+Section 31 was reviewed by the ninth independent review; see P23c.
 
 **P24: the map of premises.** The plan's third part of completeness asks that each dynamical premise carve a proper part of the whole space; section 30 gave this for seven premises. Section 32 adds the remaining premises stated of worlds and maps the premises against one another, in a new L3 module `Becoming.Premises` (importing `Space`) ([map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)). It was completed while the ninth review ran.
 
 - **Two more premises.** A census (`Counted`) and bounded transmission (`Transmitting`) are premises of worlds too.
 - **What follows from what.** Activity needing support makes activity carried, by the zero reserve (`Dependent.carried`). Every relatum embodied makes whatever arises embodied. A finite world whose activity is decided has a census (`Finite.counted`). Where only active relata take and the flow dissipates, only active relata give across every enclosed step, since giving needs uptake there; every step of a finite world is enclosed (`acting_of_enclosed`, `Finite.acting`).
 - **The remaining eight are independent.** For each of activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, embodiment, a census and bounded transmission, a world meets the other seven and not it (`independent`), so none follows from the others (`none_follows`). The worlds failing a census (`multitude`) and failing only active relata giving (`scatter`) are infinite, as the implications require. In `novel` a child comes to depend on the parent that gave it its standing, a dependence the parent never had, so transmission fails.
-- **All together.** Mutualists active throughout meet all eight (`mutualism_premised`), and in a finite world the eight together bring the world to rest (`premised_rests`, a corollary of `rests`).
+- **All together.** Mutualists active throughout meet all eight (`mutualism_premised`), and in a finite world whose activity is decided the eight together bring the world to rest (`premised_rests`, a corollary of `rests`).
 - **Boundaries.** Only the eight premises stated of worlds are mapped; premises relative to a continuation relation, a renewal relation, a decaying reserve or a family of conditions are not. Independence is relative to these eight. No part is evaluated, and the names are Ren's to choose.
 
 The package now has 974 theorems and 1583 declaration audits, over a core closure of 28 modules and a package of 26, all source declarations with empty axiom reports. Section 32 has not yet been independently reviewed.
@@ -2278,8 +2356,19 @@ The package now has 974 theorems and 1583 declaration audits, over a core closur
 
 - **Total standing runs down.** Where what stands at each step is listed, each once (`Web.StandingCensus`), the total standing across a step enclosed around what stands (`Flow.AroundStanding`) falls by at least the number of formations taking from the enclosing family (`standing_runs_down`), so it never rises, and any condition's standing rising or falling lowers it (`change_lowers`): a rise is given to, and giving needs uptake there; a fall is taken from (`fall_lowers_on`).
 - **Rest from enclosure.** So where every step from some step on is enclosed around what stands, no standing changes at arbitrarily late steps (`stills`). A world with a census whose relata are all embodied, with a balanced, dissipative flow, enclosed from some step on, comes to rest (`rests_around`, `rests_enclosed`); finiteness is not needed.
-- **Generation without end opens.** Read the other way, generation without end in such a world needs a step not enclosed at arbitrarily late steps (`World.generation_opens`): exchange beyond every finite family.
-- **Openness cannot be dropped.** In `exposed` the sides of `Handing` also take a unit from each of infinitely many ground relata and give it back at every step. It meets all eight premises and generates without end; no step is enclosed, so dissipation binds at none (`exposed_world`).
+- **Recurring arising opens.** Read the other way, arising that recurs in such a world needs a step not enclosed at arbitrarily late steps (`World.arising_opens`, named `generation_opens` before P23c): exchange beyond every finite family.
+- **Openness cannot be dropped.** In `exposed` the sides of `Handing` also take a unit from each of infinitely many ground relata and give it back at every step. It meets all eight premises and arising recurs in it; no step is enclosed, so dissipation binds at none (`exposed_world`).
 - **Boundaries.** The world-level theorems need every relatum embodied, not only whatever arises; decidable equality is required by the constructive proof; dissipation binding only enclosed exchange is a disclosed feature of its representation. Neither openness nor rest is evaluated, and the names are Ren's to choose.
 
 The package now has 994 theorems and 1612 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Section 33 has not yet been independently reviewed.
+
+**P23c: the ninth independent review.** A separate agent (Claude Opus 5.5) reviewed P18b, P19, P20, P21, P22 and P23 ([review](BECOMING-P18B-P23-REVIEW.md)). It recompiled the 27 modules of the core closure from the prelude, with empty axiom reports for all 1571 source declarations; of the closure's 4423 constants only 30 compiler-generated `injEq` lemmas depend on an axiom, `propext`, as the receipt lists. It accepted all the mathematics and closed L1–L10 of the eighth review. It raised ten findings (M1–M10): one reading chosen for Ren, four omitted premises, one error in prose, two missing counterexamples, and two of presentation and bookkeeping. P24 and P25, committed during the review, were not read by it; their wording affected by M1 is corrected too. The corrections are made in place and marked; section 34 records the handling.
+
+- **Generative and degenerative (M1, the most serious).** P22 read the "generative, degenerative" of Ren's proposal as some relatum arising or ceasing at arbitrarily late steps, and the canonical texts then stated that in a finite world the two are one part and overlap. On 9 October Ren said that they do not overlap. The parts of the space are now named for what they are: arising recurring and ceasing recurring (`World.ArisingRecurs`, `World.CeasingRecurs`, `World.arising_iff_ceasing`; `World.arising_opens` in `Openness`). Ren's words stand beside the two readings the spine offers: as activity, arising and ceasing recurring coincide in finite worlds; as relations, renewing and consuming formations do not overlap (`Web.renewing_not_consuming`). Which parts the proposal's words name is listed first among Ren's choices.
+- **Decidability (M2).** The finite-world law needs activity decided; over every world without it, the law is excluded middle (`World.law_decides`, from the review's probe). Decidability now appears in every list of the representation's commitments, and as a logical commitment beside the method, model, correspondence and normative premises.
+- **What `price` divides (M3).** The identity divides the offspring's total into the parents' amounts weighted by their offspring and the change in transmission. The weighted total is not the selection term proper: it is k times the parents' total where every parent has k offspring (`selected_uniform`), and five where nothing is selected (`unselected`). The covariance form remains a further proof.
+- **Premises restored (M4–M6).** Embodied arising in a finite family under balance and dissipation leaves the family open and, enclosed around, it draws in; a rise comes with another member's fall across a step at which the family is dissipated on; depletion follows for an event at whose steps the family is dissipated on and taken from; a transmitted need exceeds the giving step's level by at most the bound of transmission, and may never have been met where the bound is positive (`Slack`).
+- **Witnesses (M7, M8).** `grazing` gives a finite world in which arising recurs and some event is not living without resting on the verdict about self-drawing at an ending: a grazer takes from a pool another relatum depends on (`grazing_world`, `grazing_not_self`). `leaking` replaces the balance witness of `rests_needs` with a world whose dissipation binds: the holder takes its own unit at every step and gives nothing (`leaking_world`).
+- **Presentation (M9, M10).** The laws are tagged as identity by definition, arithmetic identity, or consequence of two-valuedness and finiteness. Wisdom moves to empirical correspondence. Section 31 and the plan state which completeness criteria are met: criteria 1 and 4; criterion 2 after this correction; criterion 3 for the ten premises stated of worlds, while premises relative to other relations and the "mixed" part are not mapped. Review stamps are at or before their commits, the foundation record uses the chapter's terms, and the last "giver" is gone.
+
+The package now has 1016 theorems and 1662 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Section 34 has not yet been independently reviewed.
