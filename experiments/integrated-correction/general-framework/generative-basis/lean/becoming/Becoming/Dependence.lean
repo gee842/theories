@@ -52,11 +52,17 @@ Results:
   that breaks a dependence on it, and *undermining* when it draws on a condition at a
   step after which a dependence on it, met while it held, is unmet: the stepwise
   counterpart of consumption. A dependence is met while it held when, at some step
-  since which it has held, the condition met its present need (`MetSince`); a level
-  from before the dependence held does not count (`NewNeed`). Breaking is undermining,
-  and an event within renewal is neither. A formation whose own dependence is broken is
-  not within renewal at that step, though it need not be undermining. A dependence never
-  met while it held makes no drawer undermining.
+  since which it has held, the condition met the need of that step and the present need
+  is no greater (`MetSince`). A level from before the dependence held does not count
+  (`NewNeed`); nor does an earlier level that would cover a need that has since fallen
+  (`FallingNeed`); and a need grown beyond what was ever met is not met
+  (`RisingNeed`). Breaking is undermining, and an event within renewal is neither. A
+  formation whose own dependence is broken is not within renewal at that step, though it
+  need not be undermining. A dependence never met while it held makes no drawer
+  undermining.
+* A dependence that lapses for one step and forms again starts a new tenure: one step
+  of representation decides whether later drawing undermines (`Gap`). Whether dormancy,
+  migration or seasonal absence continues a dependence is an application duty.
 * After a loss, further drawing breaks nothing, yet it is undermining. Undermining reads
   co-participation in a shortfall that is not restored, not what a draw does: drawing
   that changes no level undermines too (`Pinned`), and in the commons, where renewal
@@ -306,9 +312,11 @@ def BreakingAt (t : Nat) (f : F) : Prop :=
   ∃ c, W.BreakingOn t f c
 
 /-- `g`'s dependence on `c`, as it stands at `t`, was met while it held: at some step
-since which the dependence has held, the condition met its present need. -/
+since which the dependence has held, the condition met the need of that step, and the
+present need is no greater. -/
 def MetSince (t : Nat) (g : F) (c : C) : Prop :=
-  ∃ s, s ≤ t ∧ (∀ u, s ≤ u → u ≤ t → W.requires u g c) ∧ W.need t g c ≤ W.level s c
+  ∃ s, s ≤ t ∧ (∀ u, s ≤ u → u ≤ t → W.requires u g c) ∧ W.need s g c ≤ W.level s c ∧
+    W.need t g c ≤ W.need s g c
 
 /-- A formation's relation to a condition at `t` is undermining: it draws on the
 condition at a step after which a dependence on it, met while it held, is unmet. Other
@@ -323,7 +331,8 @@ def UnderminingAt (t : Nat) (f : F) : Prop :=
 /-- A dependence holding at `t` and met there was met while it held. -/
 theorem MetSince.now {t : Nat} {g : F} {c : C} (depends : W.requires t g c)
     (met : W.need t g c ≤ W.level t c) : W.MetSince t g c :=
-  ⟨t, Nat.le_refl t, fun _ after before => Nat.le_antisymm before after ▸ depends, met⟩
+  ⟨t, Nat.le_refl t, fun _ after before => Nat.le_antisymm before after ▸ depends, met,
+    Nat.le_refl _⟩
 
 /-- A breaking relation is undermining. -/
 theorem BreakingOn.undermining {t : Nat} {f : F} {c : C} :
@@ -387,7 +396,7 @@ theorem consumed_without_loss :
     | _, .drawer, ⟨depends, _⟩ => depends
   have consumed : web.Consumed () := ⟨.dormant, 0, trivial, fun _ _ => Nat.zero_lt_one⟩
   refine ⟨?_, unbroken, consumed, fun ⟨g, T, broken, _⟩ => unbroken T g broken,
-    ⟨0, (), trivial, consumed⟩, fun _ ⟨_, _, g, depends, ⟨_, _, _, met⟩, _⟩ => ?_⟩
+    ⟨0, (), trivial, consumed⟩, fun _ ⟨_, _, g, depends, ⟨_, _, _, met, _⟩, _⟩ => ?_⟩
   · intro _ f active _ depends
     cases f with
     | dormant => exact False.elim active
@@ -438,7 +447,7 @@ theorem never_met_not_undermining :
     (∀ t, ¬ web.UnderminingAt t .drawer) ∧ web.ConsumingIn .drawer := by
   have unmet : ∀ t, web.requires t .late () → web.level t () < web.need t .late () :=
     fun _ late => (level_late late).symm ▸ Nat.zero_lt_one
-  have never : ∀ t, ¬ web.MetSince t .late () := fun _ ⟨s, _, held, met⟩ =>
+  have never : ∀ t, ¬ web.MetSince t .late () := fun _ ⟨s, _, held, met, _⟩ =>
     Nat.not_le_of_gt (unmet s (held s (Nat.le_refl s) ‹_›)) met
   refine ⟨?_, unmet, fun t late => ⟨⟨0, Nat.zero_le t, Nat.le_succ 1⟩, never t⟩,
     fun t ⟨_, _, g, depends, met, _⟩ => ?_,
@@ -453,6 +462,189 @@ theorem never_met_not_undermining :
     | drawer => exact depends
 
 end NewNeed
+
+/-! ## A need that falls or grows is compared with the need then -/
+
+namespace FallingNeed
+
+inductive Formation where
+  | late
+  | drawer
+
+/-- The level is 2 at step 0 and 0 afterwards. `late` depends on the condition at every
+step, needing 3 before step 5 and 1 from step 5, and is never active; `drawer` draws on
+it from step 5. -/
+def web : Web Formation Unit where
+  level t _ := match t with
+    | 0 => 2
+    | _ + 1 => 0
+  active t f := match f with
+    | .late => False
+    | .drawer => 5 ≤ t
+  requires _ f _ := match f with
+    | .late => True
+    | .drawer => False
+  need t f _ := match f with
+    | .late => if t < 5 then 3 else 1
+    | .drawer => 0
+  draws t f _ := match f with
+    | .late => False
+    | .drawer => 5 ≤ t
+
+theorem need_late {t : Nat} (late : 5 ≤ t) : web.need t .late () = 1 :=
+  if_neg (Nat.not_lt_of_le late)
+
+theorem need_pos (t : Nat) : 1 ≤ web.need t .late () :=
+  if early : t < 5 then
+    Nat.le_trans (Nat.le_succ_of_le (Nat.le_succ 1))
+      (Nat.le_of_eq (if_pos early : (if t < 5 then 3 else 1) = 3).symm)
+  else Nat.le_of_eq (if_neg early : (if t < 5 then 3 else 1) = 1).symm
+
+theorem unmet : ∀ t, web.level t () < web.need t .late ()
+  | 0 => Nat.lt_succ_self 2
+  | t + 1 => Nat.lt_of_lt_of_le Nat.zero_lt_one (need_pos (t + 1))
+
+/-- `late`'s dependence is unmet at every step. From step 5 its present need is at most
+the level at step 0, when it needed more; that earlier level does not count, and the
+drawer is undermining at no step, though the whole-run reading counts it consuming. -/
+theorem never_met_not_undermining :
+    web.Dependent ∧ (∀ t, web.level t () < web.need t .late ()) ∧
+    (∀ t, 5 ≤ t → web.need t .late () ≤ web.level 0 ()) ∧
+    (∀ t, ¬ web.UnderminingAt t .drawer) ∧ web.ConsumingIn .drawer :=
+  ⟨fun _ f active _ depends => match f, active, depends with
+    | .late, active, _ => False.elim active,
+   unmet, fun _ late => Nat.le_trans (Nat.le_of_eq (need_late late)) (Nat.le_succ 1),
+   fun _ ⟨_, _, g, depends, ⟨s, _, _, met, _⟩, _⟩ => match g, depends with
+    | .late, _ => Nat.not_le_of_gt (unmet s) met,
+   ⟨5, (), Nat.le_refl 5, .late, 5, trivial, fun t later => match t, later with
+    | _ + 1, _ => Nat.zero_lt_one⟩⟩
+
+end FallingNeed
+
+namespace RisingNeed
+
+inductive Formation where
+  | grower
+  | drawer
+
+/-- The level is 3 at step 0 and 1 afterwards. `grower` depends on the condition
+throughout, needing 1 before step 5 and 2 from step 5, and is active before step 5;
+`drawer` draws on it from step 5. -/
+def web : Web Formation Unit where
+  level t _ := match t with
+    | 0 => 3
+    | _ + 1 => 1
+  active t f := match f with
+    | .grower => t < 5
+    | .drawer => 5 ≤ t
+  requires _ f _ := match f with
+    | .grower => True
+    | .drawer => False
+  need t f _ := match f with
+    | .grower => if t < 5 then 1 else 2
+    | .drawer => 0
+  draws t f _ := match f with
+    | .grower => False
+    | .drawer => 5 ≤ t
+
+theorem need_early {t : Nat} (early : t < 5) : web.need t .grower () = 1 := if_pos early
+
+theorem need_grown {t : Nat} (late : 5 ≤ t) : web.need t .grower () = 2 :=
+  if_neg (Nat.not_lt_of_le late)
+
+theorem level_pos : ∀ t, 1 ≤ web.level t ()
+  | 0 => Nat.le_succ_of_le (Nat.le_succ 1)
+  | _ + 1 => Nat.le_refl 1
+
+theorem level_late {t : Nat} (late : 5 ≤ t) : web.level t () = 1 :=
+  match t, late with
+  | _ + 1, _ => rfl
+
+/-- The need 1 is met before step 5; the need 2 from step 5 never is, though the level at
+step 0 would cover it. The grown need is not met while it held, and the drawer is
+undermining at no step. -/
+theorem grown_need_not_met :
+    web.Dependent ∧ (∀ t, t < 5 → web.need t .grower () ≤ web.level t ()) ∧
+    (∀ t, 5 ≤ t → web.level t () < web.need t .grower ()) ∧
+    (∀ t, 5 ≤ t → web.need t .grower () ≤ web.level 0 ()) ∧
+    ∀ t, ¬ web.UnderminingAt t .drawer :=
+  have early : ∀ t, t < 5 → web.need t .grower () ≤ web.level t () := fun t before =>
+    Nat.le_trans (Nat.le_of_eq (need_early before)) (level_pos t)
+  ⟨fun t f active _ depends => match f, active, depends with
+    | .grower, active, _ => early t active,
+   early,
+   fun _ late => Nat.lt_of_le_of_lt (Nat.le_of_eq (level_late late))
+     (Nat.lt_of_lt_of_le (Nat.lt_succ_self 1) (Nat.le_of_eq (need_grown late).symm)),
+   fun _ late => Nat.le_trans (Nat.le_of_eq (need_grown late)) (Nat.le_succ 2),
+   fun _ ⟨_, drawn, g, depends, ⟨s, _, _, met, noMore⟩, _⟩ => match g, depends with
+    | .grower, _ =>
+      have grown := Nat.le_trans (Nat.le_of_eq (need_grown drawn).symm) noMore
+      if before : s < 5 then
+        Nat.not_succ_le_self 1 (Nat.le_trans grown (Nat.le_of_eq (need_early before)))
+      else
+        Nat.not_succ_le_self 1 (Nat.le_trans grown (Nat.le_trans met
+          (Nat.le_of_eq (level_late (Nat.ge_of_not_lt before)))))⟩
+
+end RisingNeed
+
+/-! ## A one-step lapse starts a new tenure -/
+
+namespace Gap
+
+inductive Formation where
+  | migrant
+  | drawer
+
+/-- Two at steps 0 to 3 and nothing from step 4. -/
+def levels (t : Nat) : Nat := if t < 4 then 2 else 0
+
+/-- The migrant depends on the condition at need 1, met at steps 0 to 2, and is away at
+step 3; it depends on the condition again from step 4. The drawer draws from step 3. -/
+def away : Web Formation Unit where
+  level t _ := levels t
+  active t f := match f with
+    | .migrant => t < 3
+    | .drawer => 3 ≤ t
+  requires t f _ := match f with
+    | .migrant => t ≠ 3
+    | .drawer => False
+  need _ f _ := match f with
+    | .migrant => 1
+    | .drawer => 0
+  draws t f _ := match f with
+    | .migrant => False
+    | .drawer => 3 ≤ t
+
+/-- The same, with the migrant's dependence held through step 3. -/
+def held : Web Formation Unit :=
+  { away with requires := fun _ f _ => match f with
+    | .migrant => True
+    | .drawer => False }
+
+theorem levels_high {t : Nat} (early : t < 4) : levels t = 2 := if_pos early
+
+theorem levels_low {t : Nat} (late : 4 ≤ t) : levels t = 0 := if_neg (Nat.not_lt_of_le late)
+
+/-- With the lapse at step 3 the drawer is undermining at no step, though the whole-run
+reading counts it consuming; with the dependence held through step 3 it is undermining at
+every step from 3. -/
+theorem lapse_starts_afresh :
+    (∀ t, ¬ away.UnderminingAt t .drawer) ∧ away.ConsumingIn .drawer ∧
+    (∀ t, 3 ≤ t → held.UnderminingAt t .drawer) :=
+  ⟨fun t ⟨_, drawn, g, depends, ⟨s, _, tenure, met, _⟩, _⟩ => match g, depends with
+    | .migrant, _ =>
+      if early : s < 4 then tenure 3 (Nat.le_of_lt_succ early) drawn rfl
+      else Nat.not_succ_le_zero 0
+        (Nat.le_trans met (Nat.le_of_eq (levels_low (Nat.ge_of_not_lt early)))),
+   ⟨3, (), Nat.le_refl 3, .migrant, 4, (show (4 : Nat) ≠ 3 by decide), fun t later =>
+     Nat.lt_of_le_of_lt (Nat.le_of_eq (levels_low (Nat.le_of_lt later))) Nat.zero_lt_one⟩,
+   fun t late => ⟨(), late, .migrant, trivial,
+     ⟨0, Nat.zero_le t, fun _ _ _ => trivial,
+       Nat.le_trans (Nat.le_succ 1) (Nat.le_of_eq (levels_high (Nat.zero_lt_succ 3)).symm),
+       Nat.le_refl _⟩,
+     Nat.lt_of_le_of_lt (Nat.le_of_eq (levels_low (Nat.succ_le_succ late))) Nat.zero_lt_one⟩⟩
+
+end Gap
 
 /-! ## The outcomes are distinct possibilities -/
 
@@ -685,8 +877,8 @@ theorem drawing_after_loss :
   ⟨fun
     | _ + 1, _ => ⟨fun ⟨_, _, g, depends, met, _⟩ => match g, depends with
         | .sustaining, _ => Nat.not_succ_le_zero 0 met,
-      ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_refl 1⟩,
-        Nat.zero_lt_one⟩⟩,
+      ⟨(), trivial, .sustaining, trivial,
+        ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩⟩,
    rfl, rfl, fun ⟨g, T, depends, below⟩ => match g, depends with
     | .sustaining, _ =>
       Nat.not_succ_le_zero T (Nat.le_of_succ_le_succ (below (T + 2)
@@ -754,7 +946,7 @@ theorem undermining_without_effect :
     ∀ t, ¬ (dependence.along resting).draws t .drawer () :=
   ⟨fun | 0 => rfl | _ + 1 => rfl,
    fun | _ + 1, _ => ⟨(), Nat.zero_lt_one, .old, trivial,
-          ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_succ 1⟩, Nat.zero_lt_one⟩,
+          ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_succ 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩,
    ⟨1, (), Nat.zero_lt_one, .old, 0, trivial, fun | _ + 1, _ => Nat.zero_lt_one⟩,
    fun | 0 => Nat.lt_irrefl 0 | _ + 1 => Nat.lt_irrefl 0⟩
 

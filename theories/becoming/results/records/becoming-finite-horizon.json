@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T01:57:37+00:00",
+  "reviewed_at_utc": "2026-10-09T03:20:00+00:00",
   "claim": {
     "zh": "在 Becoming.Renewal 的公地过程中，对每个视界 h，有两次运行在 h 之前的配置与动作都相同：焦点形成每一步都汲取两个单位（每步更新一个），而它的每个事件都在更新之内。此后一次在更新之内汲取，焦点形成在运行中是更新的；另一次继续超出，焦点形成是消耗的。因此，任何由前 h 步的配置与动作决定、并记入每次更新运行的读法，必记入某次消耗运行。分类不仅不是初始配置的函数，也不是任何有限前缀的函数。有反馈时也如此：在支持门控定律中，同一起点、h 之前每步汲取两个单位，在 h 停止则更新，继续则消耗；停止的一次从不到达支持阈值。这一结论的力量来自“记入每次更新运行”：那次更新运行在 h 之前每步都超出更新地汲取，整段读法记入这些事件；按数量的读法（该步所取不超过更新）由有限前缀决定，扣下两次运行在 h 之前的每个事件，只是不记入每次整段更新的运行。形成层面的周期读法不由任何有限前缀决定。不用伦理前提，也不用 Lean 公理。",
     "en": "In the commons process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that credits every renewing run credits some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. The same holds with feedback: in the support-gated law, from one start and drawing two units at every step before h, stopping at h renews and continuing consumes; the stopping schedule never reaches the support threshold. The force of the conclusion lies in “credits every renewing run”: that renewing run draws beyond renewal at every step before h, and the whole-run reading credits those events; an amount reading (taking no more than is renewed at the step) is fixed by finite prefixes and withholds every event before h in both runs, failing only to credit every whole-run-renewing run. The formation-level cycle reading is fixed by no finite prefix. No ethical premise and no Lean axiom is used."
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "这是一个存在性结果：一个过程就足以说明有限前缀一般地不决定分类。在有反馈的支持门控定律中，越过阈值之后损失不会回来，但阈值之前的前缀仍可与及时停止的运行相同（Feedback.prefix_does_not_decide）。给定动作，这些见证的动力学是确定的；有限前缀不决定的是此后的动作，所以对继续的探究部分地是对将要做什么的审议（论证，未形式化）。结论是否构成与 Ren 所采纳的判决的冲突，取决于判决是否覆盖越过阈值之前的事件（诠释，Ren 的原话未定），以及可观测量是否带数量。实际历史的视界与此的对应，是经验问题。",
-    "en": "This is an existence result: one process suffices to show that a finite prefix does not in general decide the classification. In the support-gated law, which has feedback, a loss past the threshold does not return, yet a prefix before the threshold can still match a run that stops in time (Feedback.prefix_does_not_decide). Given the moves, the dynamics of these witnesses are deterministic; what no finite prefix decides is the moves to come, so inquiry into continuation is partly deliberation about what will be done (an argument, not formalized). Whether the conclusion conflicts with the verdict Ren adopted depends on whether that verdict covers events before the threshold (interpretive; Ren's words leave it open) and on whether observables carry amounts. The correspondence to the horizons of actual histories is an empirical question."
+    "zh": "这是一个存在性结果：一个过程就足以说明有限前缀一般地不决定分类。在有反馈的支持门控定律中，越过阈值之后损失不会回来，但阈值之前的前缀仍可与及时停止的运行相同（Feedback.prefix_does_not_decide）。给定动作，这些见证的动力学是确定的；有限前缀不决定的是此后的动作，所以对继续的探究部分地是对将要做什么的审议（论证，未形式化）。结论是否与 Ren 所采纳的问题冲突，取决于对这一问题的判决是否覆盖越过阈值之前的事件（诠释，Ren 的原话未定），以及可观测量是否带数量。实际历史的视界与此的对应，是经验问题。",
+    "en": "This is an existence result: one process suffices to show that a finite prefix does not in general decide the classification. In the support-gated law, which has feedback, a loss past the threshold does not return, yet a prefix before the threshold can still match a run that stops in time (Feedback.prefix_does_not_decide). Given the moves, the dynamics of these witnesses are deterministic; what no finite prefix decides is the moves to come, so inquiry into continuation is partly deliberation about what will be done (an argument, not formalized). Whether the conclusion conflicts with the problem Ren adopted depends on whether a verdict on that problem covers events before the threshold (interpretive; Ren's words leave it open) and on whether observables carry amounts. The correspondence to the horizons of actual histories is an empirical question."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
   "aliases": [
@@ -115,8 +115,8 @@
     {
       "id": "relational-reading-comparison",
       "detail": {
-        "zh": "该结果的整段读法扣下消耗者的全部事件，也记入一次更新运行中超出更新的汲取（Commons.whole_run_credits_overdraw）。本结果表明，任何由有限前缀决定、并记入每次整段更新运行的读法，必记入某次消耗运行；若 Ren 所采纳的判决覆盖越过阈值之前的事件，它就需要关于整段继续的判断。按数量的读法可由有限历史判定，并扣下每一次超出（Commons.amount_reading；整合文档 §8.5、§11）。",
-        "en": "That result's whole-run reading withholds every event of a consumer, and also credits drawing beyond renewal in a renewing run (Commons.whole_run_credits_overdraw). This one shows that any reading fixed by a finite prefix that credits every whole-run-renewing run credits some consuming run; if the verdict Ren adopted covers events before the threshold, it needs a judgment about whole continuations. An amount reading is decidable from a finite history and withholds every overdraw (Commons.amount_reading; integration note §§8.5, 11)."
+        "zh": "该结果的整段读法扣下消耗者的全部事件，也记入一次更新运行中超出更新的汲取（Commons.whole_run_credits_overdraw）。本结果表明，任何由有限前缀决定、并记入每次整段更新运行的读法，必记入某次消耗运行；若对 Ren 所采纳的问题的判决覆盖越过阈值之前的事件，它就需要关于整段继续的判断。按数量的读法可由有限历史判定，并扣下每一次超出（Commons.amount_reading；整合文档 §8.5、§11）。",
+        "en": "That result's whole-run reading withholds every event of a consumer, and also credits drawing beyond renewal in a renewing run (Commons.whole_run_credits_overdraw). This one shows that any reading fixed by a finite prefix that credits every whole-run-renewing run credits some consuming run; if a verdict on the problem Ren adopted covers events before the threshold, it needs a judgment about whole continuations. An amount reading is decidable from a finite history and withholds every overdraw (Commons.amount_reading; integration note §§8.5, 11)."
       }
     },
     {
@@ -155,8 +155,8 @@
     "en": "Contains no ethical predicate; proved once in the commons process without feedback and once in the support-gated law with feedback; does not say how to inquire into a run's continuation; does not treat webs of dependence with amounts and renewal rates."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T013859.515931Z）：Becoming.Horizon 14 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 236 项定理／451 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T013859.515931Z): all 14 theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 236 theorems/451 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T025042.064543Z）：Becoming.Horizon 14 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 265 项定理／502 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T025042.064543Z): all 14 theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 265 theorems/502 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -187,7 +187,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
+      "sha256": "1eed73008c4a77abffad89b6b650189dee9cb5a613132d2eb2b77db40b0913ed",
       "declarations": [
         "Becoming.Web.RenewingAt",
         "Becoming.Web.ConsumingIn",
@@ -197,19 +197,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "22b132a24bb4503f6bc0226383bcd0cc1985cb6ea8dba07d36e7a51899da7b25",
+      "sha256": "a74fb9ad4ecf1ac0377b031d9d1d4245d2fc30b9e8b87eb4cf9e1758409e5946",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4e0e051aff65f14eb1d1ce4a1bec6474fe7018ab3874262399efc2084ea02a70",
+      "sha256": "0ca9304e5fbd1ed8d580a2c3d59248d081c86997a4a9b675a0c05634e3e1e7d7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ccb6f85e81567beeb6c66bfb4eb72bf47e6e6fb0af2d2dc572969fdef222b695",
+      "sha256": "594bd91cfc57aa7bf203ae84d6dbfc90a7ec6d48680c0fa9642aaed430757a17",
       "declarations": []
     },
     {
@@ -227,7 +227,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "role": "proof",
-      "sha256": "50a6b41474faa01059160da9ed7169b30bc682e790e3b593449e7e526aef8062",
+      "sha256": "5b94e4adc0f762139946a80aae8c297ff1eabefb332f7634222028ab2072a06e",
       "declarations": [
         "Becoming.Web.RenewingInWithin",
         "Becoming.Web.UnderminingFor"
@@ -254,8 +254,8 @@
     }
   ],
   "next_delta": {
-    "zh": "给依存网加数量与更新率，检验可由有限历史判定的读法能否满足 Ren 所述的判决，或证明每个这样的读法在某个有来源的情形中不满足；说明对继续的探究与审议怎样给出“这段汲取是消耗”的判断，并与 L2 的所见范围接通。",
-    "en": "Give webs of dependence amounts and renewal rates, and test whether a reading decidable from a finite history can meet the verdict Ren states, or prove that every such reading fails it in a sourced case; explain how inquiry into continuation, and deliberation, yield the judgment that a stretch of drawing consumes, connecting it to L2's visible scope."
+    "zh": "给依存网加数量与更新率，检验可由有限历史判定的读法能否满足 Ren 所采纳的问题与 Ren 所述的不重叠，或证明每个这样的读法在某个有来源的情形中不满足；说明对继续的探究与审议怎样给出“这段汲取是消耗”的判断，并与 L2 的所见范围接通。",
+    "en": "Give webs of dependence amounts and renewal rates, and test whether a reading decidable from a finite history can meet the problem Ren adopted and the non-overlap Ren states, or prove that every such reading fails it in a sourced case; explain how inquiry into continuation, and deliberation, yield the judgment that a stretch of drawing consumes, connecting it to L2's visible scope."
   },
   "history": [
     {
@@ -273,6 +273,10 @@
     {
       "zh": "2026-10-09：P7b 按第二次独立审查（BECOMING-P7-REVIEW.md）更正：加入假设“更新运行在 h 之前超出更新地汲取”；related 中“任何可由有限历史判定的事件读法”一句改正；周期读法分事件与形成层面；有反馈的情形由 Feedback.prefix_does_not_decide 证明，取代“没有证明”；加入按数量的读法作为反例。合并检查器重跑（20261009T013859.515931Z），检验范围改指新回执。",
       "en": "2026-10-09: P7b corrected this record following the second independent review (BECOMING-P7-REVIEW.md): added the hypothesis that the renewing run overdraws before h; corrected the related sentence on “any event reading decidable from a finite history”; separated event-level and formation-level cycle readings; replaced “not proved” for feedback with Feedback.prefix_does_not_decide; added the amount reading as a counterexample. The consolidated checker was rerun (20261009T013859.515931Z) and the validation scope points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P9b 按第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）更正：“Ren 所采纳的判决”改为“Ren 所采纳的问题”（对应、关联与下一步）：“没有它更好”的比较形式是 AI 的形式路线，不是 Ren 的原话。合并检查器重跑（20261009T025042.064543Z），检验范围改指新回执。",
+      "en": "2026-10-09: P9b corrected this record following the third independent review (BECOMING-P8-P9-P7B-REVIEW.md): “the verdict Ren adopted” becomes “the problem Ren adopted” in the correspondence, related entry and next step: the comparative form “better without it” is the AI's formal route, not Ren's words. The consolidated checker was rerun (20261009T025042.064543Z) and the validation scope points to the new receipt."
     }
   ]
 }

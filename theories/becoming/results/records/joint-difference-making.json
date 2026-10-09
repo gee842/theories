@@ -8,15 +8,15 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T01:57:37+00:00",
+  "reviewed_at_utc": "2026-10-09T03:20:00+00:00",
   "claim": {
-    "zh": "在一个依存可观测量的过程中，配置之间的维持与断裂沿运行恰是 Becoming.Dependence 的维持与断裂，两者互斥。but-for 检验留在过程之内，并固定实际所取的动作：由某配置以某动作的一步断裂依存，而扣除某一方的部分后以同一动作的每一步都维持它，则这一方的部分造成了差别；扣除任何单独一方的部分、以同一动作仍有断裂之步，为多重决定，此时没有哪一方单独造成差别。不固定动作时，动作决定结果：由同一配置，唯一汲取者的部分在平静的动作下造成差别，在外来冲击下损失被多重决定。在 Pool 中，同一过程、同一水平，第一个汲取者取同样的量：另有一方汲取时，它的部分造成差别；另有两方汲取时损失被多重决定，它的部分不造成差别，而扣除两方的部分则维持依存，差别由共同活动造成。两次运行中，关系读法都把它计为消耗，一个什么也不取的形成不计为消耗。一个形成的各事件之间须分开整段与步层面的检验：在公地过程中每步汲取两个单位，条件被消耗；第一个事件那一步维持依存，对任何正长度的周期都不侵蚀；扣除任何一个事件的汲取，甚至扣除任何一步之前的全部汲取，条件仍被消耗，整段的结局由尾部决定；而在断裂之步，由同一配置不汲取则依存被维持，断裂事件造成那一次断裂的差别。逐步读法不追踪差别制造：在 Pool 中恰取更新量、其部分不造成差别的汲取者，在另一方造成的断裂之步侵蚀。不用伦理前提，也不用 Lean 公理。",
-    "en": "In a process with observables of dependence, keeping and breaking between configurations are, along a run, exactly those of Becoming.Dependence, and they are exclusive. The but-for test stays within the process and holds the move actually taken fixed: when the step from a configuration by a move breaks a dependence and, with one party's part withheld, every step by the same move keeps it, that party's part makes the difference; when withholding any single party's part still leaves a breaking step by the same move, the loss is overdetermined and no party alone makes the difference. Without the move held fixed, the move decides: from one configuration a lone drawer's part makes the difference under a calm move, while under an exogenous shock the loss is overdetermined. In Pool, in one process at one level with the first drawer taking the same amount: with one other drawer its part makes the difference; with two others the loss is overdetermined and its part makes none, while withholding two parts keeps the dependence, so the difference belongs to the joint activity. In both runs the relational reading counts it as consuming, and a formation that takes nothing is not. Across a formation's own events the run-level and step-level tests come apart: drawing two units at every step in the commons process consumes the condition; the first event's step keeps the dependence and undermines for no positive cycle; with any single event's draw withheld, indeed with every draw before any step withheld, the condition is still consumed, the run-level outcome being fixed by the tail; at the breaking step, drawing nothing from the same configuration keeps the dependence, so the breaking event makes the step-level difference. The stepwise reading does not track difference-making: in Pool a drawer taking exactly the renewal, whose part makes no difference, undermines at the break another causes. No ethical premise and no Lean axiom is used."
+    "zh": "在一个依存可观测量的过程中，配置之间的维持与断裂沿运行恰是 Becoming.Dependence 的维持与断裂，两者互斥。but-for 检验留在过程之内，并固定实际所取的动作：由某配置以某动作的一步断裂依存，而扣除某一方的部分后同一动作仍可取、且以它的每一步都维持依存，则这一方的部分造成了差别；扣除任何单独一方的部分、以同一动作仍有断裂之步，为多重决定，此时没有哪一方单独造成差别。不固定动作时，动作决定结果：由同一配置，唯一汲取者的部分在平静的动作下造成差别，在外来冲击下损失被多重决定。在 Pool 中，同一过程、同一水平，第一个汲取者取同样的量：另有一方汲取时，它的部分造成差别；另有两方汲取时损失被多重决定，它的部分不造成差别，而扣除两方的部分则维持依存，差别由共同活动造成。两次运行中，关系读法都把它计为消耗，一个什么也不取的形成不计为消耗。一个形成的各事件之间须分开整段与步层面的检验：在公地过程中每步汲取两个单位，条件被消耗；第一个事件那一步维持依存，对任何正长度的周期都不侵蚀；扣除任何一个事件的汲取，甚至扣除任何一步之前的全部汲取，条件仍被消耗，整段的结局由尾部决定；而在断裂之步，由同一配置不汲取则依存被维持，断裂事件造成那一次断裂的差别。逐步读法不追踪差别制造：在 Pool 中恰取更新量、其部分不造成差别的汲取者，在另一方造成的断裂之步侵蚀。检验在动作决定步骤（Determined）、且动作在扣除后的配置上可取时才合乎其意：把冲击写进同一动作的步骤关系，损失又被多重决定，虽然同一动作的平静结局会维持依存（Hidden）；动作在扣除后不可取，检验不判定任何一方（Tagged）。Pool 与 Shock 的过程都由动作决定步骤。不用伦理前提，也不用 Lean 公理。",
+    "en": "In a process with observables of dependence, keeping and breaking between configurations are, along a run, exactly those of Becoming.Dependence, and they are exclusive. The but-for test stays within the process and holds the move actually taken fixed: when the step from a configuration by a move breaks a dependence and, with one party's part withheld, the same move can still be taken and every step by it keeps the dependence, that party's part makes the difference; when withholding any single party's part still leaves a breaking step by the same move, the loss is overdetermined and no party alone makes the difference. Without the move held fixed, the move decides: from one configuration a lone drawer's part makes the difference under a calm move, while under an exogenous shock the loss is overdetermined. In Pool, in one process at one level with the first drawer taking the same amount: with one other drawer its part makes the difference; with two others the loss is overdetermined and its part makes none, while withholding two parts keeps the dependence, so the difference belongs to the joint activity. In both runs the relational reading counts it as consuming, and a formation that takes nothing is not. Across a formation's own events the run-level and step-level tests come apart: drawing two units at every step in the commons process consumes the condition; the first event's step keeps the dependence and undermines for no positive cycle; with any single event's draw withheld, indeed with every draw before any step withheld, the condition is still consumed, the run-level outcome being fixed by the tail; at the breaking step, drawing nothing from the same configuration keeps the dependence, so the breaking event makes the step-level difference. The stepwise reading does not track difference-making: in Pool a drawer taking exactly the renewal, whose part makes no difference, undermines at the break another causes. The test reads as intended when the move determines the step (Determined) and can be taken from the withheld configuration: with a shock written into the step relation of a single move, the loss is overdetermined again though the calm outcome of the same move would keep the dependence (Hidden); a move unavailable after withholding decides nothing (Tagged). The processes of Pool and Shock are determined by the move. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
-      "zh": "扣除（withhold）是外给的配置变换：只改动一方或一步的部分，过程本身给出由此到达的配置。扣除是否让其余不变，是每次应用的建模义务。检验固定实际所取的动作：动作属于其余的活动。在 Pool 中下一步的水平不依赖动作，结论不受影响。",
-      "en": "Withholding is a supplied map on configurations: it changes only one party's or one step's part, and the process gives the configurations reached from there. Whether withholding leaves the rest unchanged is a modelling duty of each application. The test holds the move actually taken fixed: the move belongs to the rest of the activity. In Pool the next level does not depend on the move, so the conclusions are unaffected."
+      "zh": "扣除（withhold）是外给的配置变换：只改动一方或一步的部分，过程本身给出由此到达的配置。扣除是否让其余不变，是每次应用的建模义务。检验固定实际所取的动作：动作属于其余的活动。它要求动作在扣除后的配置上可取，并在动作决定步骤（Determined）时才合乎其意，所以外来冲击须写进动作，不写进步骤关系。在 Pool 中下一步的水平不依赖动作，结论不受影响。",
+      "en": "Withholding is a supplied map on configurations: it changes only one party's or one step's part, and the process gives the configurations reached from there. Whether withholding leaves the rest unchanged is a modelling duty of each application. The test holds the move actually taken fixed: the move belongs to the rest of the activity. It requires the move to be available from the withheld configuration and reads as intended when the move determines the step (Determined), so exogenous shocks belong in the move, not in the step relation. In Pool the next level does not depend on the move, so the conclusions are unaffected."
     },
     {
       "zh": "关系读法是 relational-reading-comparison 的整段读法，经 Web.ConsumingIn 读出。",
@@ -43,7 +43,12 @@
     "Becoming.Shock.move_decides",
     "Becoming.Pool.within_share_undermines",
     "Becoming.Commons.no_finite_segment_makes_difference",
-    "Becoming.Commons.breaking_event_makes_step_difference"
+    "Becoming.Commons.breaking_event_makes_step_difference",
+    "Becoming.Determined",
+    "Becoming.Shock.determined",
+    "Becoming.Pool.determined",
+    "Becoming.Hidden.shock_in_the_step",
+    "Becoming.Tagged.move_unavailable"
   ],
   "dependencies": [
     {
@@ -104,8 +109,8 @@
     {
       "id": "relational-reading-comparison",
       "detail": {
-        "zh": "用单一部分的、整段层面的 but-for 差别制造代替参与，不能满足该结果所记录的、Ren 所采纳的判决（整合文档 §8.5、§11）。",
-        "en": "Replacing participation by single-part, run-level but-for difference-making cannot meet the verdicts Ren adopted, recorded in that result (integration note §§8.5, 11)."
+        "zh": "用单一部分的、整段层面的 but-for 差别制造代替参与，不能满足该结果所记录的 C 的排序；那些排序把 Ren 所采纳的问题形式化（整合文档 §8.5、§11、§12）。",
+        "en": "Replacing participation by single-part, run-level but-for difference-making cannot meet the C rankings recorded in that result, which formalize the problem Ren adopted (integration note §§8.5, 11, 12)."
       }
     },
     {
@@ -144,21 +149,42 @@
         "zh": "第二次独立审查：P7 的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，§8.5 的表在 (a)(b) 与 but-for 一栏上不公允（已更正，整合文档 §11）。",
         "en": "Second independent review: the mathematics of P7 is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the §8.5 table was unfair in rows (a), (b) and the but-for column (corrected, integration note §11)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "detail": {
+        "zh": "把冲击写进步骤关系，检验又失去意义（Hidden.shock_in_the_step）：同一动作的一步可以更新并汲取，也可以清空条件；动作不决定步骤，唯一汲取者的损失被多重决定，它的部分不造成差别，虽然由扣除后的配置，同一动作的平静结局维持依存（第三次独立审查 G6）。",
+        "en": "With the shock written into the step relation the test loses its meaning again (Hidden.shock_in_the_step): one move's step can renew and take or empty the condition; the move does not determine the step, the lone drawer's loss is overdetermined and its part makes no difference, though from the withheld configuration the calm outcome of the same move keeps the dependence (third independent review G6)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "detail": {
+        "zh": "动作在扣除后不可取时（Tagged.move_unavailable）：每个动作指名它所取自的配置，动作决定步骤并断裂依存，但扣除任何汲取者的部分后都不能取；没有“动作可取”一项时，每个汲取者的部分都会空洞地造成差别；有了它，没有哪一方造成差别，损失也不是多重决定的，而在 Pool.process 中由同一配置它是（第三次独立审查 G6）。",
+        "en": "When the move is unavailable after withholding (Tagged.move_unavailable): each move names the configuration it is taken from; the move determines the step and breaks the dependence, but no withheld configuration can take it; without the clause that the move can be taken, every drawer's part would make the difference vacuously; with it none does, and the loss is not overdetermined either, while under Pool.process from the same configuration it is (third independent review G6)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "detail": {
+        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
+        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
+      }
     }
   ],
   "limitations": {
-    "zh": "不提出因果理论；更精细的归属（NESS 检验、结构方程中的实际因果）未加入。不推出责任、义务或排序。Pool、Shock 与 depleting 是最小见证；检验固定动作，应用若有外来冲击，须把它写进过程。",
-    "en": "Proposes no causal theory; finer attribution (the NESS test, actual causation in structural equations) is not added. Yields no responsibility, duty or ranking. Pool, Shock and depleting are minimal witnesses; the test holds the move fixed, and an application with exogenous shocks must write them into the process."
+    "zh": "不提出因果理论；更精细的归属（NESS 检验、结构方程中的实际因果）未加入。不推出责任、义务或排序。Pool、Shock 与 depleting 是最小见证；检验固定动作，应用若有外来冲击，须把它写进动作，不写进步骤关系（Hidden）。",
+    "en": "Proposes no causal theory; finer attribution (the NESS test, actual causation in structural equations) is not added. Yields no responsibility, duty or ranking. Pool, Shock and depleting are minimal witnesses; the test holds the move fixed, and an application with exogenous shocks must write them into the move, not into the step relation (Hidden)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T013859.515931Z）：Becoming.Joint 16 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 236 项定理／451 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T013859.515931Z): all 16 theorems of Becoming.Joint have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 236 theorems/451 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T025042.064543Z）：Becoming.Joint 20 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 265 项定理／502 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）指出 but-for 须动作可取并由动作决定步骤，更正在 §12。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T025042.064543Z): all 20 theorems of Becoming.Joint have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 265 theorems/502 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) found that but-for needs the move to be available and to determine the step, corrected in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "c943547f421dbc2cd058167110fd4eedfdfdce26ee2429c9fc452e076716a2e7",
+      "sha256": "6dde12eea575c7aab6cca4fef6876a462ded6e8b0863de676872d5acc1d3960a",
       "declarations": [
         "Becoming.Dependence.Keeps",
         "Becoming.Dependence.Breaks",
@@ -185,13 +211,18 @@
         "Becoming.Pool.mixedRun",
         "Becoming.Pool.within_share_undermines",
         "Becoming.Commons.no_finite_segment_makes_difference",
-        "Becoming.Commons.breaking_event_makes_step_difference"
+        "Becoming.Commons.breaking_event_makes_step_difference",
+        "Becoming.Determined",
+        "Becoming.Shock.determined",
+        "Becoming.Pool.determined",
+        "Becoming.Hidden.shock_in_the_step",
+        "Becoming.Tagged.move_unavailable"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
+      "sha256": "1eed73008c4a77abffad89b6b650189dee9cb5a613132d2eb2b77db40b0913ed",
       "declarations": [
         "Becoming.Dependence",
         "Becoming.Dependence.along",
@@ -204,7 +235,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
       "role": "proof",
-      "sha256": "50a6b41474faa01059160da9ed7169b30bc682e790e3b593449e7e526aef8062",
+      "sha256": "5b94e4adc0f762139946a80aae8c297ff1eabefb332f7634222028ab2072a06e",
       "declarations": [
         "Becoming.Web.UnderminingFor"
       ]
@@ -212,19 +243,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "22b132a24bb4503f6bc0226383bcd0cc1985cb6ea8dba07d36e7a51899da7b25",
+      "sha256": "a74fb9ad4ecf1ac0377b031d9d1d4245d2fc30b9e8b87eb4cf9e1758409e5946",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4e0e051aff65f14eb1d1ce4a1bec6474fe7018ab3874262399efc2084ea02a70",
+      "sha256": "0ca9304e5fbd1ed8d580a2c3d59248d081c86997a4a9b675a0c05634e3e1e7d7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ccb6f85e81567beeb6c66bfb4eb72bf47e6e6fb0af2d2dc572969fdef222b695",
+      "sha256": "594bd91cfc57aa7bf203ae84d6dbfc90a7ec6d48680c0fa9642aaed430757a17",
       "declarations": []
     },
     {
@@ -237,6 +268,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
       "role": "review",
       "sha256": "7bc5fa9ec5f0d0cc001988d8e77efd6517ce4673ee1dcf7e9bcda1c4d3bfcd51",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "role": "review",
+      "sha256": "7f0334aff71d61c2932ca9b2317ca5f47eaf1595e871b286ac95210104491a14",
       "declarations": []
     }
   ],
@@ -269,6 +306,10 @@
     {
       "zh": "2026-10-09：P7b 按第二次独立审查（BECOMING-P7-REVIEW.md）更正：but-for 检验改为固定实际所取的动作（BreaksBy），重证 Pool，加 Shock 见证；分开整段与步层面的检验；加入逐步读法不追踪差别制造的见证。合并检查器重跑（20261009T013859.515931Z），检验范围改指新回执。",
       "en": "2026-10-09: P7b corrected this record following the second independent review (BECOMING-P7-REVIEW.md): the but-for test now holds the move actually taken fixed (BreaksBy), Pool is re-proved and the Shock witness added; run-level and step-level tests are separated; a witness that the stepwise reading does not track difference-making is added. The consolidated checker was rerun (20261009T013859.515931Z) and the validation scope points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P9b 按第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）更正：MakesDifference 加入“同一动作在扣除后的配置上可取”；新增 Determined 与 Pool、Shock 的确定性，反例 Hidden 与 Tagged；建模指示改为“把外来冲击写进动作，不写进步骤关系”；与 relational-reading-comparison 的关联改指 C 的排序与 Ren 所采纳的问题。合并检查器重跑（20261009T025042.064543Z），检验范围改指新回执。",
+      "en": "2026-10-09: P9b corrected this record following the third independent review (BECOMING-P8-P9-P7B-REVIEW.md): MakesDifference now requires the same move to be available from the withheld configuration; Determined and the determinacy of Pool and Shock are added, with the counterexamples Hidden and Tagged; the modelling instruction now says to write exogenous shocks into the move, not into the step relation; the link to relational-reading-comparison now names C's rankings and the problem Ren adopted. The consolidated checker was rerun (20261009T025042.064543Z) and the validation scope points to the new receipt."
     }
   ]
 }

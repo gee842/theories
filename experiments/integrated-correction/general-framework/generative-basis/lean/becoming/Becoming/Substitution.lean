@@ -23,10 +23,13 @@ On the whole-run reading, substitution preserves the classification: a formation
 survives the loss it took part in, by transforming its dependence, still consumes, and
 its own continuation does not certify renewal. This is nearly definitional, since
 consuming asks only that the formation once drew on a consumed condition. On the
-stepwise reading the substituting consumer is credited at every step except the one at
-which the shared condition falls below support: before it, its draws leave every need
-met, and after it, it draws on nothing. With the existing results the law family now
-realizes ending and transformation after a loss without return.
+stepwise reading the substituting consumer is credited before the step at which the
+shared condition falls below the sustaining formation's support, and withheld from that
+step until it switches to the alternative: one step in `extracting`
+(`stepwise_credits_substitution`), two in `slow`, where the shared condition still
+supports the consumer for a step after it fails the sustaining formation
+(`slow_withheld_two_steps`). With the existing results the law family now realizes
+ending and transformation after a loss without return.
 
 No ethical predicate, ranking or axiom occurs. Whether an actual formation can
 substitute, and at what cost to the alternative, are application duties.
@@ -153,8 +156,25 @@ theorem stepwise_credits_substitution :
       Nat.not_succ_le_zero 0 (Nat.le_trans drawn.1 (Nat.le_of_eq (extracting_low n)))
     | _, _, .alternative, drawn, _, _ => drawn⟩,
    ⟨.shared, ⟨Nat.le_refl 1, Nat.zero_lt_two⟩, .sustaining, trivial,
-     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1)⟩,
+     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1), Nat.le_refl _⟩,
      Nat.zero_lt_one⟩⟩
+
+/-- Start 5, renewal 1, sustaining need 3, focal need 1, two units drawn a step. -/
+def slow : Law := ⟨5, 1, 3, 1, fun _ => 2, fun _ => 0⟩
+
+/-- In `slow` the shared condition falls below the sustaining need at step 2 (3 to 2) but
+still supports the consumer, which keeps drawing on it at step 3 (2 to 0): it is
+withheld at steps 2 and 3. -/
+theorem slow_withheld_two_steps :
+    (web slow).ConsumingIn .focal ∧ (web slow).UnderminingAt 2 .focal ∧
+    (web slow).UnderminingAt 3 .focal :=
+  ⟨(persists_consuming slow (Nat.zero_lt_succ 2) Nat.zero_lt_one
+      (Nat.le_succ_of_le (Nat.le_succ 1)) (Nat.le_succ_of_le (Nat.le_succ_of_le
+        (Nat.le_succ_of_le (Nat.le_succ 1)))) (fun _ => Nat.lt_succ_self 1)).2.2.2.1,
+   ⟨.shared, ⟨by decide, Nat.zero_lt_two⟩, .sustaining, trivial,
+     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, by decide, Nat.le_refl _⟩, by decide⟩,
+   ⟨.shared, ⟨by decide, Nat.zero_lt_two⟩, .sustaining, trivial,
+     ⟨0, Nat.zero_le 3, fun _ _ _ => trivial, by decide, Nat.le_refl _⟩, by decide⟩⟩
 
 end Substitution
 

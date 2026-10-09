@@ -521,8 +521,8 @@ theorem one_event_two_relations (own sig : Pos → Formation × Nat → Prop)
     (web.relations own' sig').living (.drawer, .kept, 0) ∧
     ¬ (web.relations own' sig').living (.drawer, .lost, 0) :=
   have undermining : web.UnderminingOn 0 .drawer .lost :=
-    ⟨trivial, .dependent, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
-      Nat.zero_lt_one⟩
+    ⟨trivial, .dependent, trivial,
+      ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩
   ⟨fun ⟨_, notUndermining⟩ => notUndermining ⟨.lost, undermining⟩,
    ⟨trivial, Or.inr trivial, fun ⟨_, _, _, _, unmet⟩ => Nat.lt_irrefl 1 unmet⟩,
    fun ⟨_, _, notUndermining⟩ => notUndermining undermining⟩
@@ -561,8 +561,8 @@ theorem Commons.readings_differ (own sig : Pos → Commons.Formation × Nat → 
      ⟨trivial, fun consuming => Commons.dip_breaks_without_consuming.1
        ((Web.static_consumingIn _ _).mpr consuming)⟩,
      fun ⟨_, notUndermining⟩ => notUndermining
-       ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
-         Nat.zero_lt_one⟩,
+       ⟨(), trivial, .sustaining, trivial,
+         ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩,
      ⟨active, fun ⟨_, drawn, _⟩ => drawn⟩, ⟨active, victim⟩⟩
 
 end Reading

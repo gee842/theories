@@ -29,22 +29,25 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step.
-* `Becoming.Joint` (L3): difference-making, relative to the move taken, belongs to the
-  joint activity among formations; over a formation's events the run-level outcome is
+* `Becoming.Joint` (L3): difference-making, relative to a move that determines the
+  step and can still be taken once a part is withheld, belongs to the joint activity
+  among formations; over a formation's events the run-level outcome is
   fixed by the tail, while the step-level test singles out the breaking event.
 * `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
-  reading credits it at every step but one.
+  reading credits it until the sustaining formation loses support and withholds it from
+  then until it switches.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
 * `Becoming.Ranking` (L4): what C ranks under each reading. Both the whole-run and the
-  stepwise reading rank sharing above winning by consumption, and restraint above
-  overdraw; only the whole-run reading ranks the absence of an overdrawing formation
-  above its occurrence.
+  stepwise reading rank sharing above winning by consumption and, in the two-part
+  family, restraint above overdraw; for an overdrawing formation with an event that
+  leaves every need met, only the whole-run reading ranks its absence above its
+  occurrence.
 * `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
   condition relates two events only when one draws on it and the other depends on it
-  at a positive level, idle conditions connect nothing, and connection through a
+  at a positive level, at any steps, idle conditions connect nothing, and connection through a
   condition is made by its living use.
 
 The core imports nothing else, every declaration has an empty axiom report, and it

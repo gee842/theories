@@ -25,20 +25,29 @@ Results:
   credited, and the course without the formation lacks it. Each course then has
   credited events the other lacks, and an irreflexive, transitive comparison satisfying
   C prefers the course with the formation. Malignant growth and winning by consumption
-  are instances.
+  are instances. When no event of the formation is credited, as when its first step
+  already crosses support, the stepwise reading too ranks the absence higher
+  (`Immediate`).
 * Stepwise reading, contest: sharing still extends winning by consumption, because
   sharing credits every event, the winner's included.
-* Either reading, restraint: a course in which every need stays met extends any course
-  of the family in which overdraw ends the sustaining formation's support. Malignant
-  growth is ranked below the same formation stopping after its first step, before the
-  threshold, though under the stepwise reading that first step is credited in both.
+* Either reading, restraint, in the two-part family: a course in which every need stays
+  met extends any course of the family in which overdraw ends the sustaining
+  formation's support. Malignant growth is ranked below the same formation stopping
+  after its first step, before the threshold, though under the stepwise reading that
+  first step is credited in both.
+* Beyond the two-part family the restraint comparison can be lost under the stepwise
+  reading: when a third formation shares the condition, a restrained formation's later
+  draw can undermine the third formation's once-met dependence, and neither course
+  extends the other (`ThirdParty`). Under the whole-run reading restraint still extends
+  overdraw there.
 
 So under the stepwise reading C alone still ranks sharing above winning by consumption,
-and restraint above overdraw, but no longer ranks the absence of an overdrawing
-formation above its occurrence: what it loses is the comparison with non-existence. A
-reading of `living` that keeps that ranking must withhold the formation's events before
-the loss, as the whole-run reading does. Which reading C should use belongs to the
-choice of the reading of 生生.
+and, in the two-part family, restraint above overdraw. For a formation with an event
+whose step leaves every need met, it no longer ranks the formation's absence above its
+occurrence: in that family what it loses is the comparison with non-existence. A reading
+of `living` that keeps that ranking must withhold the formation's events before the
+loss, as the whole-run reading does. Which reading C should use belongs to the choice of
+the reading of 生生.
 
 C occurs only as a hypothesis or as the definition `Comparison`. No axiom occurs.
 -/
@@ -257,6 +266,49 @@ theorem winning_ranking :
     (Nat.le_succ_of_le (Nat.le_succ 1)) (T0 := 0) (fun _ _ => Nat.lt_succ_self 1)
     (t := 0) (Nat.zero_le 3) (Nat.le_succ 1) (Nat.zero_le 2)
 
+/-! ## With no credited event, the stepwise reading ranks the absence higher too -/
+
+namespace Immediate
+
+/-- Start at the sustaining need; the focal formation, needing nothing, draws three where
+one is renewed. Its first step already crosses support. -/
+def law : Law := ⟨1, 1, 1, 0, fun _ => 3, fun _ => 0⟩
+
+theorem law_low : ∀ n, law.level (n + 1) = 0
+  | 0 => rfl
+  | n + 1 => by
+    rw [level_succ, law_low n]
+    rfl
+
+theorem focal_withheld (t : Nat) : ¬ stepwise (course law) .occurs (.focal, t) :=
+  fun ⟨_, notUndermining⟩ => notUndermining
+    ⟨(), ⟨0, Nat.zero_lt_succ 2⟩, .sustaining, trivial,
+      ⟨0, Nat.zero_le t, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩,
+      Nat.lt_of_le_of_lt (Nat.le_of_eq (law_low t)) Nat.zero_lt_one⟩
+
+/-- The law meets every premise of `whole_run_extends` and `stepwise_unranked` except an
+event of the focal formation leaving every need met. No focal event is credited, the
+course without the formation extends the course with it under the stepwise reading, and
+every comparison satisfying C ranks the absence higher. -/
+theorem stepwise_ranks_absence :
+    0 < law.needG ∧ law.needF ≤ law.needG ∧ law.needG ≤ law.start ∧
+    (∀ t, law.renew + law.contrib t < law.draw t) ∧
+    (∀ t, ¬ stepwise (course law) .occurs (.focal, t)) ∧
+    ExtendsUnder (stepwise (course law)) .occurs .absent ∧
+    ∀ Better, ComparisonUnder (stepwise (course law)) Better → Better .occurs .absent :=
+  have sustains : ∀ t, stepwise (course law) .absent (.sustaining, t) :=
+    fun t => ⟨absent_sustains law (Nat.le_refl 1) t, fun ⟨_, drawn, _⟩ => drawn⟩
+  have ext : ExtendsUnder (stepwise (course law)) .occurs .absent :=
+    ⟨fun e credited => match e, credited with
+      | (.focal, t), credited => absurd credited (focal_withheld t)
+      | (.sustaining, t), _ => sustains t,
+     (.sustaining, 1), trivial, sustains 1, fun ⟨active, _⟩ =>
+       Nat.not_succ_le_zero 0 (Nat.le_trans active (Nat.le_of_eq (law_low 0)))⟩
+  ⟨Nat.zero_lt_one, Nat.zero_le 1, Nat.le_refl 1, fun _ => Nat.lt_succ_of_le (Nat.le_succ 1),
+   focal_withheld, ext, fun _ ranks => ranks _ _ ext⟩
+
+end Immediate
+
 /-! ## The stepwise reading still ranks sharing above winning -/
 
 inductive Contest where
@@ -294,12 +346,12 @@ theorem stepwise_contest :
     ⟨credited_before_loss winning (t := 0) (Nat.zero_le 3) (Nat.le_succ 1) (Nat.zero_le 2),
      credited_before_loss winning (t := 1) (Nat.zero_le 2) (Nat.le_refl 1) (Nat.zero_le 1),
      fun alive => alive.2 ⟨(), ⟨1, Nat.zero_lt_two⟩, .sustaining, trivial,
-       ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1)⟩,
+       ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1), Nat.le_refl _⟩,
        Nat.zero_lt_one⟩,
      ⟨fun e _ => sharing_credited e, (.sustaining, T), trivial, sharing_credited _,
       fun alive => lost T (Nat.le_refl T) alive.1⟩⟩
 
-/-! ## Restraint ranks above overdraw under either reading -/
+/-! ## Restraint ranks above overdraw under either reading, in the two-part family -/
 
 /-- Two courses of a formation: it stops drawing beyond renewal while every need is
 still met, or it keeps overdrawing. -/
@@ -370,8 +422,10 @@ theorem stoppingMalignant_level : ∀ t, stoppingMalignant.level (t + 1) = 2
 /-- Malignant growth compared with the same formation stopping after its first step,
 before the threshold. The first event is the same in both courses and credited by the
 stepwise reading in both, and under either reading every comparison satisfying C ranks
-stopping above malignant growth. Under the stepwise reading, then, what C loses is the
-comparison with the formation's absence, not with its restraint. -/
+stopping above malignant growth. Under the stepwise reading, then, what C loses here is
+the comparison with the formation's absence, not with its restraint; with a third
+formation sharing the condition the restraint comparison can be lost too
+(`ThirdParty`). -/
 theorem malignant_restraint :
     stoppingMalignant.draw 0 = malignant.draw 0 ∧
     stepwise (restraint stoppingMalignant malignant) .stops (.focal, 0) ∧
@@ -392,6 +446,122 @@ theorem malignant_restraint :
    credited_before_loss malignant (t := 0)
      (Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1))) (Nat.le_refl 2) (Nat.le_succ 1),
    ranks.2.2.1, ranks.2.2.2⟩
+
+/-! ## With a third formation, restraint need not extend overdraw stepwise -/
+
+namespace ThirdParty
+
+inductive Part where
+  | focal
+  | sustaining
+  | third
+
+/-- Restraint: the first step is the same overdraw (6 to 5); then the focal formation
+takes nothing for two steps (5, 6, 7); at step 3 a third formation, supported only at 7,
+takes two (7 to 6); afterwards the focal formation takes the renewal (6). -/
+def stopsLevel : Nat → Nat
+  | 0 => 6
+  | 1 => 5
+  | 2 => 6
+  | 3 => 7
+  | _ + 4 => 6
+
+/-- Overdraw: the focal formation takes two where one is renewed, down to 0. -/
+def overLevel : Nat → Nat
+  | 0 => 6
+  | 1 => 5
+  | 2 => 4
+  | 3 => 3
+  | 4 => 2
+  | 5 => 1
+  | _ + 6 => 0
+
+/-- The focal formation needs nothing and always draws; the sustaining formation needs
+one; the third formation needs seven and draws while active. As in the static web,
+`draws` carries no amount. -/
+def unfolding (level : Nat → Nat) : Unfolding Part Unit where
+  level t _ := level t
+  active t p := match p with
+    | .focal => True
+    | .sustaining => 1 ≤ level t
+    | .third => 7 ≤ level t
+  requires p _ := match p with
+    | .focal => False
+    | .sustaining => True
+    | .third => True
+  need p _ := match p with
+    | .focal => 0
+    | .sustaining => 1
+    | .third => 7
+  draws p _ := match p with
+    | .focal => True
+    | .sustaining => False
+    | .third => True
+
+def courses : Restraint → Unfolding Part Unit
+  | .stops => unfolding stopsLevel
+  | .overdraws => unfolding overLevel
+
+theorem dependent (level : Nat → Nat) : Dependent (unfolding level) :=
+  fun _ p active _ depends => match p, active, depends with
+  | .sustaining, active, _ => active
+  | .third, active, _ => active
+
+theorem over_below_seven : ∀ t, overLevel t < 7
+  | 0 => by decide
+  | 1 => by decide
+  | 2 => by decide
+  | 3 => by decide
+  | 4 => by decide
+  | 5 => by decide
+  | _ + 6 => Nat.zero_lt_succ 6
+
+theorem stops_supports : ∀ t, 1 ≤ stopsLevel t
+  | 0 => by decide
+  | 1 => by decide
+  | 2 => by decide
+  | 3 => by decide
+  | _ + 4 => (by decide : 1 ≤ 6)
+
+/-- The focal formation's event at step 3 is credited stepwise when it overdraws (the
+sustaining need stays met and the third formation was never met), and withheld when it
+has stopped (the third formation, met at step 3, is unmet after it). -/
+theorem focal_three :
+    stepwise courses .overdraws (.focal, 3) ∧ ¬ stepwise courses .stops (.focal, 3) :=
+  ⟨⟨trivial, fun ⟨_, _, g, depends, ⟨s, _, _, met, _⟩, fell⟩ => match g, depends with
+    | .sustaining, _ => Nat.not_le_of_gt fell (Nat.le_succ 1)
+    | .third, _ => Nat.not_le_of_gt (over_below_seven s) met⟩,
+   fun ⟨_, notUndermining⟩ => notUndermining
+    ⟨(), trivial, .third, trivial,
+      ⟨3, Nat.le_refl 3, fun _ _ _ => trivial, Nat.le_refl 7, Nat.le_refl _⟩,
+      Nat.lt_succ_self 6⟩⟩
+
+/-- Both courses are dependent. Under the stepwise reading neither course extends the
+other, so extension itself is a comparison satisfying C that does not rank restraint
+above overdraw. Under the whole-run reading restraint extends overdraw. -/
+theorem restraint_unranked_stepwise :
+    Dependent (courses .stops) ∧ Dependent (courses .overdraws) ∧
+    ¬ ExtendsUnder (stepwise courses) .overdraws .stops ∧
+    ¬ ExtendsUnder (stepwise courses) .stops .overdraws ∧
+    ComparisonUnder (stepwise courses) (ExtendsUnder (stepwise courses)) ∧
+    ExtendsUnder (wholeRun courses) .overdraws .stops :=
+  have overConsumed : Consumed (courses .overdraws) () :=
+    ⟨.sustaining, 6, trivial, fun t later => match t, later with
+      | _ + 6, _ => Nat.zero_lt_one⟩
+  have sustains : ∀ t, wholeRun courses .stops (.sustaining, t) :=
+    fun t => ⟨stops_supports t, fun ⟨_, drawn, _⟩ => drawn⟩
+  ⟨dependent stopsLevel, dependent overLevel,
+   fun ⟨sub, _⟩ => focal_three.2 (sub _ focal_three.1),
+   fun ⟨sub, _⟩ => Nat.not_succ_le_zero 0
+     (sub (.sustaining, 6) ⟨stops_supports 6, fun ⟨_, drawn, _⟩ => drawn⟩).1,
+   fun _ _ ext => ext,
+   ⟨fun e credited => match e, credited with
+     | (.focal, _), ⟨_, notConsuming⟩ => absurd ⟨(), trivial, overConsumed⟩ notConsuming
+     | (.sustaining, t), _ => sustains t
+     | (.third, _), ⟨active, _⟩ => absurd active (Nat.not_le_of_gt (over_below_seven _)),
+    (.sustaining, 6), trivial, sustains 6, fun ⟨active, _⟩ => Nat.not_succ_le_zero 0 active⟩⟩
+
+end ThirdParty
 
 end Ranking
 

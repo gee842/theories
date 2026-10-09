@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T01:57:37+00:00",
+  "reviewed_at_utc": "2026-10-09T03:20:00+00:00",
   "claim": {
-    "zh": "在 RelationalRenewal 的支持门控定律中，共同条件由依存于它的维持者更新。让焦点形成在共同条件支持它时依存于它，否则依存于一个支持它的替代条件，读作依存可变的依存网；共同条件的水平仍由原定律给出。若焦点形成从一开始就超出更新地汲取，则：它每一步都活跃；它对共同条件的依存在一个可以找到的步上消解，对替代条件的依存同时形成；它在运行中是消耗的（整段读法；这几乎由定义给出：ConsumingIn 只要求曾汲取一个被消耗的条件）；维持者从某步起永久失去支持并终止。逐步读法则除第 2 步（共同条件跌破维持者的支持）外都记入它：越过之前它的汲取使每个所需仍被满足，越过之后它在模型中不汲取任何条件。一个具体定律满足全部前提。对可判定的规定，停止成立的那一步可以找到。不用伦理前提，也不用 Lean 公理。",
-    "en": "In RelationalRenewal's support-gated law, a shared condition is renewed by a sustaining formation that depends on it. Let the focal formation depend on the shared condition while it supports the focal formation and otherwise on an alternative that does, read as a web whose dependence changes; the shared condition's levels are still given by the law. If the focal formation draws beyond renewal from the start, then it is active at every step; its dependence on the shared condition dissolves, and one on the alternative forms, at a step that can be found; it is consuming in the run (on the whole-run reading, nearly by definition: ConsumingIn asks only for one draw on a consumed condition); and the sustaining formation loses support for ever from some step and ends. The stepwise reading credits it at every step except step 2, where the shared condition falls below the sustaining formation's support: before the crossing its draws leave every need met, and after it it draws on nothing in the model. A concrete law meets every premise. With a decidable determination, the step at which it ceases can be found. No ethical premise and no Lean axiom is used."
+    "zh": "在 RelationalRenewal 的支持门控定律中，共同条件由依存于它的维持者更新。让焦点形成在共同条件支持它时依存于它，否则依存于一个支持它的替代条件，读作依存可变的依存网；共同条件的水平仍由原定律给出。若焦点形成从一开始就超出更新地汲取，则：它每一步都活跃；它对共同条件的依存在一个可以找到的步上消解，对替代条件的依存同时形成；它在运行中是消耗的（整段读法；这几乎由定义给出：ConsumingIn 只要求曾汲取一个被消耗的条件）；维持者从某步起永久失去支持并终止。一个具体定律（extracting）满足全部前提；在其中，逐步读法除第 2 步（共同条件跌破维持者的支持）外都记入它：越过之前它的汲取使每个所需仍被满足，越过之后它在模型中不汲取任何条件。在另一定律（slow）中，共同条件跌破维持者的支持之后仍支持焦点形成一步，它在第 2、3 步都被扣下：被扣下的是维持者失去支持之后、它转向替代条件之前的各步（一般情形为论证，未形式化）。对可判定的规定，停止成立的那一步可以找到。不用伦理前提，也不用 Lean 公理。",
+    "en": "In RelationalRenewal's support-gated law, a shared condition is renewed by a sustaining formation that depends on it. Let the focal formation depend on the shared condition while it supports the focal formation and otherwise on an alternative that does, read as a web whose dependence changes; the shared condition's levels are still given by the law. If the focal formation draws beyond renewal from the start, then it is active at every step; its dependence on the shared condition dissolves, and one on the alternative forms, at a step that can be found; it is consuming in the run (on the whole-run reading, nearly by definition: ConsumingIn asks only for one draw on a consumed condition); and the sustaining formation loses support for ever from some step and ends. A concrete law (extracting) meets every premise; in it the stepwise reading credits the focal formation at every step except step 2, where the shared condition falls below the sustaining formation's support: before the crossing its draws leave every need met, and after it it draws on nothing in the model. In another law (slow) the shared condition still supports the focal formation for a step after it fails the sustaining formation, and the focal formation is withheld at steps 2 and 3: what is withheld are the steps after the sustaining formation loses support and before the focal formation switches (in general an argument, not formalized). With a decidable determination, the step at which it ceases can be found. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "在整段读法下替代保持分类，这几乎由 ConsumingIn 的存在式定义给出：一个以转化依存的方式熬过它参与造成的损失的形成，仍然是消耗的；它自身的持续不证明更新。这也是“赢的元吸引子”的一个结构：靠消耗取胜的一方可以转向别处而持续，失去者不随之恢复。在逐步读法下分类不保持：这样的胜者只在一步上不被记入。“替代不证明更新”仍成立，因为逐步的 living 不是更新。一个实际形成能否替代、以什么代价，是应用义务。",
-    "en": "On the whole-run reading substitution preserves the classification, nearly by the existential definition of ConsumingIn: a formation that survives a loss it took part in by transforming its dependence still consumes, and its own continuation does not certify renewal. This is one structure of the meta-attractor of winning: one who wins by consumption can turn elsewhere and persist while the loser does not recover. On the stepwise reading the classification is not preserved: such a winner is withheld at one step only. “Substitution does not certify renewal” still holds, because stepwise living is not renewal. Whether an actual formation can substitute, and at what cost, is an application duty."
+    "zh": "在整段读法下替代保持分类，这几乎由 ConsumingIn 的存在式定义给出：一个以转化依存的方式熬过它参与造成的损失的形成，仍然是消耗的；它自身的持续不证明更新。这也是“赢的元吸引子”的一个结构：靠消耗取胜的一方可以转向别处而持续，失去者不随之恢复。在逐步读法下分类不保持：这样的胜者在维持者失去支持之前被记入，此后到它转向别处为止被扣下（extracting 中一步，slow 中两步）。“替代不证明更新”仍成立，因为逐步的 living 不是更新。一个实际形成能否替代、以什么代价，是应用义务。",
+    "en": "On the whole-run reading substitution preserves the classification, nearly by the existential definition of ConsumingIn: a formation that survives a loss it took part in by transforming its dependence still consumes, and its own continuation does not certify renewal. This is one structure of the meta-attractor of winning: one who wins by consumption can turn elsewhere and persist while the loser does not recover. On the stepwise reading the classification is not preserved: such a winner is credited before the sustaining formation loses support and withheld from then until it switches (one step in extracting, two in slow). “Substitution does not certify renewal” still holds, because stepwise living is not renewal. Whether an actual formation can substitute, and at what cost, is an application duty."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
   "aliases": [
@@ -33,7 +33,8 @@
     "Becoming.Substitution.web_dependent",
     "Becoming.Substitution.persists_consuming",
     "Becoming.Substitution.extracting_persists_consuming",
-    "Becoming.Substitution.stepwise_credits_substitution"
+    "Becoming.Substitution.stepwise_credits_substitution",
+    "Becoming.Substitution.slow_withheld_two_steps"
   ],
   "dependencies": [
     {
@@ -103,8 +104,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
       "detail": {
-        "zh": "逐步读法下分类不保持（Substitution.stepwise_credits_substitution）：焦点形成除第 2 步外每个事件都被记入（第二次独立审查 F3）。",
-        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_credits_substitution): every event of the focal formation except at step 2 is credited (second independent review F3)."
+        "zh": "逐步读法下分类不保持（Substitution.stepwise_credits_substitution）：在 extracting 中焦点形成除第 2 步外每个事件都被记入（第二次独立审查 F3）。",
+        "en": "On the stepwise reading the classification is not preserved (Substitution.stepwise_credits_substitution): in extracting every event of the focal formation except at step 2 is credited (second independent review F3)."
       }
     },
     {
@@ -113,6 +114,20 @@
         "zh": "第二次独立审查：P7 的数学接受；侵蚀与 but-for 的定义须修正（已修正）；散文七处强于 Lean，§8.5 的表在 (a)(b) 与 but-for 一栏上不公允（已更正，整合文档 §11）。",
         "en": "Second independent review: the mathematics of P7 is accepted; the definitions of undermining and but-for needed repair (repaired); the prose overclaimed in seven places and the §8.5 table was unfair in rows (a), (b) and the but-for column (corrected, integration note §11)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
+      "detail": {
+        "zh": "“只在一步上不被记入”只对 extracting 成立（Substitution.slow_withheld_two_steps）：在 slow 中共同条件跌破维持者的支持后仍支持焦点形成，它在第 2、3 步都侵蚀（第三次独立审查 G5）。",
+        "en": "“Withheld at one step only” holds only for extracting (Substitution.slow_withheld_two_steps): in slow the shared condition still supports the focal formation after it fails the sustaining formation, and the focal formation undermines at steps 2 and 3 (third independent review G5)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "detail": {
+        "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
+        "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
+      }
     }
   ],
   "limitations": {
@@ -120,14 +135,14 @@
     "en": "Contains no ethical predicate; preservation holds on the whole-run reading only; proved only in the support-gated law; the alternative's level is constant and its cost unmodelled; the individuation of formations is not treated."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T013859.515931Z）：Becoming.Substitution 6 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 236 项定理／451 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T013859.515931Z): all 6 theorems of Becoming.Substitution have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 236 theorems/451 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T025042.064543Z）：Becoming.Substitution 7 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 265 项定理／502 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）把“只在一步上不被记入”限于 extracting，更正在 §12。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T025042.064543Z): all 7 theorems of Becoming.Substitution have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 265 theorems/502 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) scoped “withheld at one step only” to extracting, corrected in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
       "role": "proof",
-      "sha256": "9e97983f799cf21649e6741f2fc6cb6a0d0eebcfe85f3b8503f7e6a933b13e0e",
+      "sha256": "0681ead7c079bfe702123d0e747e2222b17dee04590570f8ba4dee24c69358f4",
       "declarations": [
         "Becoming.ceasing_step",
         "Becoming.Substitution.requires",
@@ -138,7 +153,8 @@
         "Becoming.Substitution.extracting",
         "Becoming.Substitution.extracting_persists_consuming",
         "Becoming.Substitution.extracting_low",
-        "Becoming.Substitution.stepwise_credits_substitution"
+        "Becoming.Substitution.stepwise_credits_substitution",
+        "Becoming.Substitution.slow_withheld_two_steps"
       ]
     },
     {
@@ -157,7 +173,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
+      "sha256": "1eed73008c4a77abffad89b6b650189dee9cb5a613132d2eb2b77db40b0913ed",
       "declarations": [
         "Becoming.Web",
         "Becoming.Web.Dissolves",
@@ -170,19 +186,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "22b132a24bb4503f6bc0226383bcd0cc1985cb6ea8dba07d36e7a51899da7b25",
+      "sha256": "a74fb9ad4ecf1ac0377b031d9d1d4245d2fc30b9e8b87eb4cf9e1758409e5946",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4e0e051aff65f14eb1d1ce4a1bec6474fe7018ab3874262399efc2084ea02a70",
+      "sha256": "0ca9304e5fbd1ed8d580a2c3d59248d081c86997a4a9b675a0c05634e3e1e7d7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ccb6f85e81567beeb6c66bfb4eb72bf47e6e6fb0af2d2dc572969fdef222b695",
+      "sha256": "594bd91cfc57aa7bf203ae84d6dbfc90a7ec6d48680c0fa9642aaed430757a17",
       "declarations": []
     },
     {
@@ -195,6 +211,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
       "role": "review",
       "sha256": "7bc5fa9ec5f0d0cc001988d8e77efd6517ce4673ee1dcf7e9bcda1c4d3bfcd51",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "role": "review",
+      "sha256": "7f0334aff71d61c2932ca9b2317ca5f47eaf1595e871b286ac95210104491a14",
       "declarations": []
     }
   ],
@@ -227,6 +249,10 @@
     {
       "zh": "2026-10-09：P7b 按第二次独立审查（BECOMING-P7-REVIEW.md）更正：“保持”限于整段读法，并写明它几乎由定义给出；加入逐步读法的反例 stepwise_credits_substitution；标题相应收窄，id 不变。合并检查器重跑（20261009T013859.515931Z），检验范围改指新回执。",
       "en": "2026-10-09: P7b corrected this record following the second independent review (BECOMING-P7-REVIEW.md): “preserves” is restricted to the whole-run reading and stated to be nearly definitional; the stepwise counterexample stepwise_credits_substitution is added; the title is narrowed accordingly, the id unchanged. The consolidated checker was rerun (20261009T013859.515931Z) and the validation scope points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P9b 按第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）更正：“只在一步上不被记入”只对 extracting 成立；主张与对应改为“维持者失去支持之前被记入，此后到转向替代条件为止被扣下”，新增 slow 的见证。合并检查器重跑（20261009T025042.064543Z），检验范围改指新回执。",
+      "en": "2026-10-09: P9b corrected this record following the third independent review (BECOMING-P8-P9-P7B-REVIEW.md): “withheld at one step only” holds only for extracting; the claim and correspondence now say the consumer is credited before the sustaining formation loses support and withheld from then until it switches, with the slow witness added. The consolidated checker was rerun (20261009T025042.064543Z) and the validation scope points to the new receipt."
     }
   ]
 }

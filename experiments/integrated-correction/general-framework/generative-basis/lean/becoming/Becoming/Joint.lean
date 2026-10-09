@@ -7,10 +7,14 @@ A loss across a step can be read in two ways. The relational reading of
 `Becoming.Dependence` asks which formations participate in the condition that is lost:
 every formation drawing on a consumed condition is consuming in the run. The but-for
 reading asks whose part of the activity the loss depends on: a formation's part makes
-the difference when, with that part withheld and the same move taken, the change keeps
-the dependence. The test is relative to the move: the move belongs to the rest of the
-activity, and another move, an exogenous shock for instance, can break the dependence
-whatever the formation does.
+the difference when, with that part withheld, the same move can still be taken and every
+step by it keeps the dependence. The test is relative to the move: the move belongs to
+the rest of the activity, and another move, an exogenous shock for instance, can break
+the dependence whatever the formation does. It reads as intended when the move
+determines the step (`Determined`) and can be taken from every withheld configuration:
+a shock written into the step relation rather than the move makes the loss
+overdetermined again (`Hidden`), and a move that cannot be taken after withholding
+decides nothing (`Tagged`).
 
 Withholding stays within the unfolding: the alternative is another configuration of
 the same process, the one in which that part is absent. Nothing outside the process
@@ -22,7 +26,10 @@ Results:
 * When a loss is overdetermined, so that with any single part withheld the same move
   still breaks the dependence, no single formation's part makes the difference.
 * The move decides (`Shock`): from one configuration a lone drawer's part makes the
-  difference under the calm move, while under a shock the loss is overdetermined.
+  difference under the calm move, while under a shock the loss is overdetermined. With
+  the shock written into the step relation of a single move instead, the step is not
+  determined by the move, and the loss is overdetermined though the calm outcome of the
+  same move would keep the dependence (`Hidden`).
 * Difference-making belongs to the joint activity, not to a formation's own part. In one
   process, from configurations at the same level where a drawer takes the same amount,
   its part makes the difference when one other formation draws, and does not when two
@@ -44,7 +51,8 @@ Results:
   the first event.
 
 No ethical predicate, ranking or axiom occurs. Whether withholding a part leaves the rest
-of the activity as it was, the move included, is a modelling duty of each application.
+of the activity as it was, the move included, and whether the move determines the step,
+are modelling duties of each application: exogenous shocks belong in the move.
 Responsibility is not inferred from either reading.
 -/
 
@@ -55,6 +63,11 @@ open Generative
 universe u v
 
 variable {S : Type u} {A : Type v} {F C : Type}
+
+/-- The move determines the step: from a configuration, a move has at most one
+successor. -/
+def Determined (P : Process S A) : Prop :=
+  ∀ s a t t', P.step s a t → P.step s a t' → t = t'
 
 namespace Dependence
 
@@ -73,10 +86,12 @@ def BreaksBy (P : Process S A) (s : S) (a : A) (g : F) (c : C) : Prop :=
   ∃ t, P.step s a t ∧ K.Breaks s t g c
 
 /-- The but-for test, the move held fixed: the step from `s` by `a` breaks the
-dependence, and with `f`'s part withheld every step by the same move keeps it. -/
+dependence, and with `f`'s part withheld the same move can be taken and every step by it
+keeps the dependence. -/
 def MakesDifference (P : Process S A) (withhold : F → S → S) (f : F) (s : S) (a : A)
     (g : F) (c : C) : Prop :=
-  K.BreaksBy P s a g c ∧ ∀ t, P.step (withhold f s) a t → K.Keeps (withhold f s) t g c
+  K.BreaksBy P s a g c ∧ (∃ t, P.step (withhold f s) a t) ∧
+    ∀ t, P.step (withhold f s) a t → K.Keeps (withhold f s) t g c
 
 /-- With any single part withheld, the same move still breaks the dependence. -/
 def Overdetermined (P : Process S A) (withhold : F → S → S) (s : S) (a : A) (g : F)
@@ -101,7 +116,7 @@ theorem along_broken {P : Process S A} (r : Run P) (n : Nat) (g : F) (c : C) :
 theorem Overdetermined.no_difference {P : Process S A} {withhold : F → S → S} {s : S}
     {a : A} {g : F} {c : C} (over : K.Overdetermined P withhold s a g c) (f : F) :
     ¬ K.MakesDifference P withhold f s a g c
-  | ⟨_, keeps⟩ =>
+  | ⟨_, _, keeps⟩ =>
     match over.2 f with
     | ⟨t, step, breaks⟩ => keeps_not_breaks (keeps t step) breaks
 
@@ -152,6 +167,10 @@ def dependence : Dependence State Formation Unit where
 /-- At level one the drawer takes two. -/
 def start : State := ⟨1, 2⟩
 
+theorem determined : Determined process
+  | _, .calm _, _, _, step, step' => step.trans step'.symm
+  | _, .shock, _, _, step, step' => step.trans step'.symm
+
 /-- From one configuration, the lone drawer's part makes the difference under the calm
 move, and under the shock the loss is overdetermined, so no part makes it. -/
 theorem move_decides :
@@ -162,11 +181,42 @@ theorem move_decides :
     ⟨⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun
       | .drawer => ⟨⟨0, 0⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩
       | .sustaining => ⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩⟩
-  ⟨⟨⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun _ step =>
+  ⟨⟨⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, ⟨_, rfl⟩, fun _ step =>
       step ▸ ⟨Nat.le_refl 1, Nat.le_succ 1⟩⟩,
    over, over.no_difference .drawer⟩
 
 end Shock
+
+/-! ## A shock inside the step relation -/
+
+namespace Hidden
+
+open Shock
+
+/-- One move, whose step can renew and take the current amount, or empty the
+condition. -/
+def process : Process State Unit :=
+  ⟨fun s _ t => t = ⟨s.level + 1 - s.taking, s.taking⟩ ∨ t = ⟨0, s.taking⟩⟩
+
+/-- With the shock written into the step relation rather than the move, the move does
+not determine the step. The lone drawer's loss is then overdetermined and its part makes
+no difference, though from the withheld configuration the calm outcome of the same move
+keeps the dependence. -/
+theorem shock_in_the_step :
+    ¬ Determined process ∧
+    dependence.Overdetermined process withhold start () .sustaining () ∧
+    ¬ dependence.MakesDifference process withhold .drawer start () .sustaining () ∧
+    process.step (withhold .drawer start) () ⟨2, 0⟩ ∧
+    dependence.Keeps (withhold .drawer start) ⟨2, 0⟩ .sustaining () :=
+  have over : dependence.Overdetermined process withhold start () .sustaining () :=
+    ⟨⟨⟨0, 2⟩, .inl rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun
+      | .drawer => ⟨⟨0, 0⟩, .inr rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩
+      | .sustaining => ⟨⟨0, 2⟩, .inr rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩⟩
+  ⟨fun determined => Nat.noConfusion (congrArg State.level
+      (determined ⟨1, 0⟩ () ⟨2, 0⟩ ⟨0, 0⟩ (.inl rfl) (.inr rfl))),
+   over, over.no_difference .drawer, .inl rfl, ⟨Nat.le_refl 1, Nat.le_succ 1⟩⟩
+
+end Hidden
 
 /-! ## Difference-making belongs to the joint activity -/
 
@@ -208,6 +258,9 @@ structure State where
 sets the next draws. -/
 def process : Process State Draw :=
   ⟨fun s next t => t = ⟨s.level + 1 - s.drawing.total, next⟩⟩
+
+theorem determined : Determined process :=
+  fun _ _ _ _ step step' => step.trans step'.symm
 
 /-- The same configuration with one formation's part withheld. -/
 def withhold (f : Formation) (s : State) : State :=
@@ -290,7 +343,7 @@ theorem difference_belongs_to_the_joint :
       | .second => breaks_from_one _ _ rfl
       | .third => breaks_from_one _ _ rfl
       | .sustaining => breaks_from_one _ _ rfl⟩
-  refine ⟨rfl, rfl, ⟨breaks_from_one pair _ rfl, fun _ step => ?_⟩, over,
+  refine ⟨rfl, rfl, ⟨breaks_from_one pair _ rfl, ⟨_, rfl⟩, fun _ step => ?_⟩, over,
     over.no_difference .first, fun _ _ step => ?_,
     ⟨0, (), Nat.zero_lt_one, steady_consumed pair pairRun.step⟩,
     fun ⟨t, _, drawn, _⟩ => ?_, ⟨0, (), Nat.zero_lt_one, steady_consumed all allRun.step⟩⟩
@@ -318,12 +371,59 @@ theorem within_share_undermines :
     ¬ dependence.MakesDifference process withhold .first (mixedRun.state 0) (mixedRun.act 0)
       .sustaining () ∧
     (dependence.along mixedRun).UnderminingAt 0 .first :=
-  ⟨⟨breaks_from_one mixed _ rfl, fun _ step => step ▸ ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩,
-   fun ⟨_, keeps⟩ => Nat.not_succ_le_zero 0 (keeps ⟨0, mixed⟩ rfl).2,
+  ⟨⟨breaks_from_one mixed _ rfl, ⟨_, rfl⟩, fun _ step => step ▸ ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩,
+   fun ⟨_, _, keeps⟩ => Nat.not_succ_le_zero 0 (keeps ⟨0, mixed⟩ rfl).2,
    ⟨(), Nat.zero_lt_one, .sustaining, trivial,
-     ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩, Nat.zero_lt_one⟩⟩
+     ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩⟩
 
 end Pool
+
+/-! ## A move the withheld configuration cannot take -/
+
+namespace Tagged
+
+open Pool
+
+/-- The dynamics of `Pool.process`, but each move names the configuration it is taken
+from. -/
+def process : Process State State :=
+  ⟨fun s a t => a = s ∧ t = ⟨s.level + 1 - s.drawing.total, s.drawing⟩⟩
+
+def start : State := ⟨1, all⟩
+
+/-- The move determines the step, and it breaks the dependence; but no withheld
+configuration can take it. Without the clause that the move can be taken, every drawer's
+part would make the difference vacuously; with it, none does, and the loss is not
+overdetermined either. Under `Pool.process`, from the same configuration, it is. -/
+theorem move_unavailable :
+    Determined process ∧ dependence.BreaksBy process start start .sustaining () ∧
+    (∀ f t, f ≠ .sustaining → ¬ process.step (withhold f start) start t) ∧
+    (∀ f, ¬ dependence.MakesDifference process withhold f start start .sustaining ()) ∧
+    ¬ dependence.Overdetermined process withhold start start .sustaining () ∧
+    dependence.Overdetermined Pool.process withhold start all .sustaining () :=
+  have unavailable : ∀ f t, f ≠ .sustaining → ¬ process.step (withhold f start) start t
+    | .first, _, _, ⟨same, _⟩ => Nat.noConfusion (congrArg (fun s => s.drawing.first) same)
+    | .second, _, _, ⟨same, _⟩ => Nat.noConfusion (congrArg (fun s => s.drawing.second) same)
+    | .third, _, _, ⟨same, _⟩ => Nat.noConfusion (congrArg (fun s => s.drawing.third) same)
+    | .sustaining, _, other, _ => other rfl
+  ⟨fun _ _ _ _ ⟨_, step⟩ ⟨_, step'⟩ => step.trans step'.symm,
+   ⟨⟨0, all⟩, ⟨rfl, rfl⟩, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩,
+   unavailable,
+   fun f ⟨_, ⟨t, step⟩, keeps⟩ => match f, step, keeps with
+    | .first, step, _ => unavailable .first t Formation.noConfusion step
+    | .second, step, _ => unavailable .second t Formation.noConfusion step
+    | .third, step, _ => unavailable .third t Formation.noConfusion step
+    | .sustaining, ⟨_, same⟩, keeps => Nat.not_succ_le_zero 0
+      (Nat.le_trans (keeps _ ⟨rfl, same⟩).2 (Nat.le_of_eq (congrArg State.level same))),
+   fun ⟨_, all⟩ => match all .first with
+    | ⟨t, step, _⟩ => unavailable .first t Formation.noConfusion step,
+   ⟨breaks_from_one all _ rfl, fun
+     | .first => breaks_from_one _ _ rfl
+     | .second => breaks_from_one _ _ rfl
+     | .third => breaks_from_one _ _ rfl
+     | .sustaining => breaks_from_one _ _ rfl⟩⟩
+
+end Tagged
 
 /-! ## A formation's events over time are a joint activity -/
 

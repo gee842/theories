@@ -6,15 +6,20 @@ import Becoming.Metaethics
 The readings of `Becoming.Metaethics` count co-participation in a condition as a
 formed relation. Connection is then cheap: adjoining a condition that every formation
 requires at level zero leaves `living` unchanged and connects any web (`inert_connects`;
-Q4 of the independent review). A dependence at level zero is met at every level, and a
-condition nothing draws on is changed by no formation's activity. Neither relates one
-formation to another.
+Q4 of the independent review). A dependence at level zero is met at every level, and
+where levels move only through the activity drawing on them, a correspondence intention
+rather than a property of `Web`, a condition nothing draws on is changed by no
+formation's activity.
 
 The discipline stated here relates two events through a condition only when one draws
-on it and the other depends on it at a positive level, so that the first's drawing bears
-on the second's support (`Interacts`). A condition that no activity draws on, or no
-dependence on which can fail, is `Idle`. The living events are those of the stepwise
-reading; only the relation changes (`Web.interaction`).
+on it and the other depends on it at a positive level, at any steps (`Interacts`). This
+is a structural coincidence of a drawer and a dependent that the condition can fail. It
+is not yet the first's drawing bearing on the second's support: that reading needs an
+ordered, effect-sensitive version, which is open. A condition that no activity draws on,
+or no dependence on which can fail, is `Idle`. The living events are those of the
+stepwise reading; only the relation changes (`Web.interaction`). Co-dependence, two
+formations depending on one condition, is a relation the discipline omits:
+co-constitution through a common condition. `Shared` exhibits the cost of omitting it.
 
 Results:
 * An idle condition relates nothing and undermines nothing. Adjoining one leaves
@@ -23,7 +28,9 @@ Results:
 * Every undermining relation is an interaction (`UnderminingOn.interacts`): the stepwise
   reading of `living` withholds an event through this relation. Under N_rel, valuing an
   undermining event reaches the living events of the formation whose support it
-  undermines (`valuing_undermining_reaches`).
+  undermines (`valuing_undermining_reaches`). The transmission is carried by the
+  drawing, not the undermining: valuing any drawing event reaches every living event
+  depending on the condition at a positive level (`drawing_reaches`).
 * A condition on which every living event bears, with a living drawer and a living
   dependent, connects the whole in at most two interactions (`connected_of_commons`). G0
   there is exactly a seed with N_rel and N_std (`significant_iff_of_commons`).
@@ -33,14 +40,18 @@ Results:
   both runs.
 
 Not settled:
-* Adjoining a renewed condition that every formation draws on and depends on at a
-  positive level still connects any web without changing `living`
-  (`universal_connects`). Its content is the claim that every formation actually draws on
-  and depends on it, which the web does not check. The discipline turns free connection
-  into this claim; the correspondence remains an application duty.
+* Adjoining a renewed condition on which every formation depends at a positive level
+  still connects any web without changing `living`, when one living event draws on it
+  (`one_use_connects`); every formation drawing on it is not needed
+  (`universal_connects`). Its content is the claim that every formation actually depends
+  on it at a positive level, which the web does not check. The discipline turns free
+  connection into this claim; the correspondence remains an application duty.
 * A coarse common condition whose dependence fails still withholds the events drawing on
   it at that step (Q10). The discipline changes relations, not `living`.
-* Like co-participation, interaction does not order the two events in time.
+* Like co-participation, interaction does not order the two events in time, and it does
+  not ask whether the drawing changes the level: a drawing at step 5 interacts with a
+  dependence held only at step 0 (`Later`), and a drawing that changes no level
+  interacts with the dependent it is said to bear on (`Pinned.drawing_interacts`).
 * The discipline is stated with the stepwise reading of `living`. On fixed dependences
   it applies to `K.dependence.along r`; the whole-run reading could take the same
   relation, which is not done here.
@@ -71,7 +82,8 @@ def Bearing (t : Nat) (g : F) (c : C) : Prop :=
   W.requires t g c ∧ 0 < W.need t g c
 
 /-- Two events interact through a condition when one draws on it and the other depends
-on it at a positive level: the first's drawing bears on the second's support. -/
+on it at a positive level, at any steps. Neither the order of the steps nor any change of
+level enters. -/
 def Interacts (c : C) (e e' : F × Nat) : Prop :=
   (W.draws e.2 e.1 c ∧ W.Bearing e'.2 e'.1 c) ∨ (W.Bearing e.2 e.1 c ∧ W.draws e'.2 e'.1 c)
 
@@ -181,6 +193,16 @@ theorem valuing_undermining_reaches (transmit : Neutral (W.interaction own sig).
     ⟨g, ⟨depends, Nat.lt_of_le_of_lt (Nat.zero_le _) fell⟩, fun p held t' bearing alive =>
       transmit (p, (f, t), (g, t')) held ⟨c, .inl ⟨drawn, bearing⟩⟩ alive⟩
 
+/-- Under N_rel the transmission is carried by drawing, not by undermining: a standpoint
+that values any drawing event holds significant every living event depending on the
+condition at a positive level, at any step, whether or not the drawing undermines
+anything. -/
+theorem drawing_reaches (transmit : Neutral (W.interaction own sig).transmits)
+    {f g : F} {t t' : Nat} {c : C} (drawn : W.draws t f c) (bearing : W.Bearing t' g c)
+    (alive : (W.interaction own sig).living (g, t')) (p : Pos)
+    (held : (W.interaction own sig).sig p (f, t)) : (W.interaction own sig).sig p (g, t') :=
+  transmit (p, (f, t), (g, t')) held ⟨c, .inl ⟨drawn, bearing⟩⟩ alive
+
 /-! ## Adjoining a condition -/
 
 /-- One condition read along the steps: its levels, and the formations depending on it
@@ -239,6 +261,11 @@ level one. -/
 def Condition.universal : Condition F :=
   ⟨fun _ => 1, fun _ _ => True, fun _ _ => 1, fun _ _ => True⟩
 
+/-- A condition held at level one, on which every formation depends at level one, drawn
+on only by the formation of `d` at the step of `d`. -/
+def Condition.single (d : F × Nat) : Condition F :=
+  ⟨fun _ => 1, fun _ _ => True, fun _ _ => 1, fun t f => f = d.1 ∧ t = d.2⟩
+
 variable (W own sig)
 
 /-- Q4 under the discipline. Adjoining the inert condition leaves the living events
@@ -268,7 +295,87 @@ theorem universal_connects :
      interacts_reach (W.adjoin .universal) own sig (c := none)
        (.inl ⟨trivial, trivial, Nat.zero_lt_one⟩) alive'⟩
 
+/-- One living drawing event suffices. Adjoining a renewed condition on which every
+formation depends at level one, drawn on only by the formation of one living event at
+its step, leaves the living events unchanged and connects every web through
+interaction. -/
+theorem one_use_connects {d : F × Nat} (alive : (W.interaction own sig).living d) :
+    (W.adjoin (.single d)).Renewed none ∧
+    (∀ e, ((W.adjoin (.single d)).interaction own sig).living e ↔
+      (W.interaction own sig).living e) ∧
+    ((W.adjoin (.single d)).interaction own sig).Connected :=
+  have living : ∀ e, ((W.adjoin (.single d)).interaction own sig).living e ↔
+      (W.interaction own sig).living e :=
+    adjoin_living fun _ _ ⟨_, _, _, _, fell⟩ => Nat.lt_irrefl 1 fell
+  have aliveD := (living d).mpr alive
+  ⟨fun _ _ _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩, living,
+   connected_of_commons _ own sig none (fun _ _ => .inr ⟨trivial, Nat.zero_lt_one⟩)
+     aliveD ⟨rfl, rfl⟩ aliveD ⟨trivial, Nat.zero_lt_one⟩⟩
+
 end Web
+
+/-! ## Interaction ignores time and effect -/
+
+namespace Later
+
+inductive Formation where
+  | early
+  | late
+
+/-- The level is 1 at step 0 and 0 afterwards. `early` depends on the condition at need
+1 at step 0 only, and is active then; `late` draws on it at step 5 only, and is active
+then. -/
+def web : Web Formation Unit where
+  level t _ := match t with
+    | 0 => 1
+    | _ + 1 => 0
+  active t f := match f with
+    | .early => t = 0
+    | .late => t = 5
+  requires t f _ := match f with
+    | .early => t = 0
+    | .late => False
+  need _ f _ := match f with
+    | .early => 1
+    | .late => 0
+  draws t f _ := match f with
+    | .early => False
+    | .late => t = 5
+
+/-- The drawing at step 5 interacts with the dependence held only at step 0, which it
+cannot bear on, and connects the two events. -/
+theorem drawing_connects_earlier (own sig : Unit → Formation × Nat → Prop) :
+    web.Dependent ∧ (web.interaction own sig).living (.early, 0) ∧
+    (web.interaction own sig).living (.late, 5) ∧
+    web.Interacts () (.late, 5) (.early, 0) ∧ (web.interaction own sig).Connected :=
+  have aliveEarly : (web.interaction own sig).living (.early, 0) :=
+    ⟨rfl, fun ⟨_, drawn, _⟩ => drawn⟩
+  have aliveLate : (web.interaction own sig).living (.late, 5) :=
+    ⟨rfl, fun ⟨_, _, g, depends, _⟩ => match g, depends with
+      | .early, depends => Nat.noConfusion depends⟩
+  have bearing : web.Bearing 0 .early () := ⟨rfl, Nat.zero_lt_one⟩
+  ⟨fun t f active _ depends => match f, active, depends with
+    | .early, active, _ =>
+      Nat.le_of_eq (congrArg (web.level · ()) (show t = 0 from active)).symm,
+   aliveEarly, aliveLate, .inl ⟨rfl, bearing⟩,
+   Web.connected_of_commons web own sig () (fun e alive => match e, alive with
+      | (.early, _), ⟨active, _⟩ => .inr ⟨active, Nat.zero_lt_one⟩
+      | (.late, _), ⟨active, _⟩ => .inl active)
+     aliveLate rfl aliveEarly bearing⟩
+
+end Later
+
+namespace Pinned
+
+/-- Interaction does not ask whether the drawing changes anything: the drawer's event
+interacts with the old dependent, though the levels are the same whether it takes or
+rests. -/
+theorem drawing_interacts :
+    (dependence.along taking).Interacts () (.drawer, 1) (.old, 1) ∧
+    ∀ t, (dependence.along taking).level t () = (dependence.along resting).level t () :=
+  ⟨.inl ⟨Nat.zero_lt_one, trivial, Nat.zero_lt_one⟩, undermining_without_effect.1⟩
+
+end Pinned
 
 /-! ## Connection is made by living use -/
 
@@ -324,8 +431,8 @@ theorem participates (level : Nat → Nat) :
 
 /-- The user's drawing breaks the dependents' support in the falling run. -/
 theorem user_undermines : (web falling).UnderminingAt 0 .user :=
-  ⟨(), trivial, .first, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
-    Nat.zero_lt_one⟩
+  ⟨(), trivial, .first, trivial,
+    ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, Nat.zero_lt_one⟩
 
 /-- In the falling run no living event draws on the condition: the only drawing event
 undermines. -/

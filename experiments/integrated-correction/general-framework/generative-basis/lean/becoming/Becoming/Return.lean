@@ -337,7 +337,7 @@ theorem escalation_undermines_for_every_cycle :
   ⟨fun undermining => stepwise_credits_before_escalation.2.1.not_undermining
     (Web.undermining_for_one.mp undermining),
    fun _ => ⟨(), trivial, .sustaining, trivial,
-     ⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1⟩, fun
+     ⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, fun
      | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)
      | k + 1, _, _ => Nat.lt_of_le_of_lt
         (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one⟩⟩
