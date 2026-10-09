@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
+  "reviewed_at_utc": "2026-10-09T06:45:00+00:00",
   "claim": {
     "zh": "在依存网上，一个形成跨某步生起，当它在该步不活跃、在其后活跃；生成不息，当某个形成在任意晚的步生起（同一形成可以再生起）。生起（变为活跃）是生生第二个“生”的一种读法的形式载体（作者的读法）。一个事件消耗一个有限的条件家族，当在它的每一步，若家族中没有条件上升，则其中某个条件下降；这恰是说事件的每一步家族中有条件变化，与事件的关系不论。从某步起家族中没有条件上升时，消耗它的事件只发生有限次。因此，若生起消耗家族，不息的生成使家族中某个条件在任意晚的步上升（净上升）；若每次上升都由某个活跃形成更新该条件造成，更新的活动在任意晚的步复现。在平衡的流中有不需要净上升的形式：任意晚的步上有正的取用，家族就在任意晚的步得到补充；在其第一个活跃步从家族取用的形成在任意晚的步生起是其一种情形，补充者于是在任意晚的步出现，恒定的取用者而没有任何生起是另一种；生起在这一形式中只经由它带来的取用起作用。这一形式看得见与汲取同步的补充。一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后只活跃有限次，无论它怎样在其中转移依存：替代推迟终结而不逃脱终结。若一个量从不上升而每次生起都使它下降（耗散），生成不是不息的；一个总水平不变的封闭循环可以维持不息的生成。更新可以复现而没有任何生起（月亮更新的潮水），所以在这些前提下不息的生成严格强于复现的更新。形成在汲取一个不被更新的条件时可以接连生起，条件被消耗，生起停止；消耗者可以从一个来源转向另一个而终结。一个形成在太阳所更新的条件上反复生起，满足全部前提，生成不息；工作候选的逐步读法扣下它的每一次开花，两步周期的读法记入它。不用伦理前提，也不用 Lean 公理。",
     "en": "On a web of dependence, a formation arises across a step when it is inactive at the step and active after it; generation is unceasing when some formation arises at arbitrarily late steps (the same formation may arise again). Arising, becoming active, is the formal carrier of one reading of the second 生 of 生生 (the author's reading). An event depletes a finite family of conditions when, at each of its steps at which no condition of the family rises, one of them falls; this says exactly that some condition of the family changes at each step of the event, whatever its relation to the event. If from some step none of them rises, events depleting the family occur only finitely often. Hence, if arising depletes the family, unceasing generation makes some condition of the family rise (a net rise) at arbitrarily late steps; and if every rise is made by some active formation renewing the condition, renewing activity recurs. Balanced flows give a form that needs no net rise: positive uptake at arbitrarily late steps needs the family replenished at arbitrarily late steps; formations taking from the family at their first active step and arising at arbitrarily late steps are one case, in which renewers recur, and a constant consumer with nothing arising is another; in this form arising works only through the uptake it brings. This form sees replenishment concurrent with drawing. A formation lowering some condition of the family at each active step is active only finitely often once none of them rises any more, however it moves its dependence among them: substitution defers the end and does not escape it. If a quantity never rises and every arising lowers it (dissipation), generation is not unceasing; a closed cycle whose total stays constant sustains unceasing generation. Renewal can recur with nothing arising (a tide the moon renews), so under these premises unceasing generation is strictly stronger than recurring renewal. Formations can arise one after another while drawing an unrenewed condition, consume it, and arising stops; a consumer can move from one source to another and end. A formation arising again and again on a condition the sun renews meets every premise and generation is unceasing; the stepwise working candidate withholds each of its blooms, and the reading over cycles of two credits it. No ethical premise and no Lean axiom is used."
@@ -190,6 +190,13 @@
         "zh": "在平衡的流中，本结果的对应前提 RenewedBy 成为定理，不息需要补充复现的流的形式也在那里；读作取用者数目的“更多”需要补充与补充者没有最终的界；在活跃形成的普查与 Taking 之下，更多蕴含不息；本结果的开花不息却不更多。",
         "en": "In balanced flows this result's correspondence premise RenewedBy becomes a theorem, and the flow form of unceasing generation needing replenishment lives there; “more”, read as the number of takers, needs replenishment and renewers with no eventual bound; under a census of active formations and Taking, more implies unceasing generation; this result's bloom is unceasing and not more."
       }
+    },
+    {
+      "id": "generation-is-replenishment",
+      "detail": {
+        "zh": "回答第五次审查 I3：体现的关系项的生起本身需要补充，不经由取用；本结果 dissipation_ceases 的前提，对封闭家族中体现成员的生起，由平衡、耗散与体现推出。",
+        "en": "Answers I3 of the fifth review: the arising of an embodied relatum needs replenishment itself, not through uptake; the premise of this result's dissipation_ceases follows, for the arisings of embodied members of a closed family, from balance, dissipation and embodiment."
+      }
     }
   ],
   "counterexamples": [
@@ -272,12 +279,12 @@
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词，不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；消耗前提只要求家族中有条件变化（depletes_iff），不筛掉命名造成的生起（TideFlip）；流的形式中生起只经由取用起作用（Steady）；Unceasing 依赖跨步的同一（identity-across-steps）：保持持续活动的命名不制造生起，要把定理读作关于生成的定理，需要这样的命名；Rises 是净上升，同步的补充只在流的形式中看得见；RenewedBy 的结论只与应用给出的 renews 一样强；耗散是物理前提，总水平预设单位可公度；条件家族有限；见证都是最小见证；消耗前提、ArisesTaking、RenewedBy 与耗散是应用义务；新名称是审查的建议，最终由 Ren 定。",
-    "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; the depletion premise asks only that some condition of the family change (depletes_iff) and does not screen out arisings made by naming (TideFlip); in the flow form arising works only through uptake (Steady); Unceasing depends on identity across steps (identity-across-steps): a naming that keeps continuing activity makes no arising, and reading the theorems as about generation needs such a naming; Rises is a net rise, and concurrent replenishment is visible only in the flow form; the conclusion of RenewedBy is only as strong as the renews the application supplies; dissipation is a physical premise, and the total presupposes commensurable units; families of conditions are finite; the witnesses are minimal; the depletion premise, ArisesTaking, RenewedBy and dissipation are application duties; the new names are the reviewer's suggestions, and the final choice is Ren's."
+    "zh": "不含伦理谓词，不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；消耗前提只要求家族中有条件变化（depletes_iff），不筛掉命名造成的生起（TideFlip）；两类读法的流的形式中生起只经由取用起作用（Steady），生起的关系项体现时生起本身就是补充（generation-is-replenishment）；Unceasing 依赖跨步的同一（identity-across-steps）：保持持续活动的命名不制造生起，要把定理读作关于生成的定理，需要这样的命名；Rises 是净上升，同步的补充只在流的形式中看得见；RenewedBy 的结论只与应用给出的 renews 一样强；耗散是物理前提（对封闭家族中体现成员的生起，它由平衡、流上的耗散与体现推出，见 generation-is-replenishment），总水平预设单位可公度；条件家族有限；见证都是最小见证；消耗前提、ArisesTaking、RenewedBy 与耗散是应用义务；新名称是审查的建议，最终由 Ren 定。",
+    "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; the depletion premise asks only that some condition of the family change (depletes_iff) and does not screen out arisings made by naming (TideFlip); in the flow form of the two-kind reading arising works only through uptake (Steady), while the arising of an embodied relatum is itself replenishment (generation-is-replenishment); Unceasing depends on identity across steps (identity-across-steps): a naming that keeps continuing activity makes no arising, and reading the theorems as about generation needs such a naming; Rises is a net rise, and concurrent replenishment is visible only in the flow form; the conclusion of RenewedBy is only as strong as the renews the application supplies; dissipation is a physical premise (for the arisings of embodied members of a closed family it follows from balance, dissipation on flows and embodiment; see generation-is-replenishment), and the total presupposes commensurable units; families of conditions are finite; the witnesses are minimal; the depletion premise, ArisesTaking, RenewedBy and dissipation are application duties; the new names are the reviewer's suggestions, and the final choice is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Generation 30 项定理与 Becoming.Flow 中流的形式的定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出流的形式只用到取用与命名造成的生起，见 §19，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): all 30 theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, see §19; these corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T063303.920941Z）：Becoming.Generation 30 项定理与 Becoming.Flow 中流的形式的定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 588 项定理／987 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出流的形式只用到取用与命名造成的生起，见 §19，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T063303.920941Z): all 30 theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 588 theorems/987 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, see §19; these corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -359,19 +366,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
+      "sha256": "1384b8f5bf00c9f53c79fa525acc54a8aed215f7a1d636780f06239b7d060ff0",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
+      "sha256": "b607541a6f43d7fffa7ef813b1c8a9b2ea3cf8fc4597b82f5b9eb70d6b1c7df2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
+      "sha256": "6f06722d5127237e42df256543231a011daac0868a8e7a043b909f147835dffb",
       "declarations": []
     },
     {
@@ -492,6 +499,14 @@
     {
       "zh": "2026-10-09：P12b 按第五次独立审查（BECOMING-P11B-P12-REVIEW.md）更正：新增 uptake_needs_replenishment，replenishment_recurs 由它推出，新增 Steady；新增反例 TideFlip；界限注明 Depletes 不筛掉命名的产物、Unceasing 依赖同一。合并检查器重跑（20261009T060305.410034Z）。",
       "en": "2026-10-09: P12b corrected this record following the fifth independent review (BECOMING-P11B-P12-REVIEW.md): uptake_needs_replenishment was added and replenishment_recurs derived from it, with Steady; TideFlip was added as a counterexample; the limitations note that Depletes does not screen out what naming makes and that Unceasing depends on identity. The consolidated checker was rerun (20261009T060305.410034Z)."
+    },
+    {
+      "zh": "2026-10-09：P15 扩展 Becoming.Roles 与 Becoming.Dissipation 后，合并检查器重跑（20261009T063303.920941Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P15 extended Becoming.Roles and Becoming.Dissipation, the consolidated checker was rerun (20261009T063303.920941Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P15 新增 generation-is-replenishment 后，界限与相关结果注明体现的生起本身就是补充，dissipation_ceases 的前提在那里被推出；主张与证明不变。",
+      "en": "2026-10-09: after P15 added generation-is-replenishment, the limitations and related results note that embodied arising is itself replenishment and that the premise of dissipation_ceases is derived there; the claim and proofs are unchanged."
     }
   ]
 }

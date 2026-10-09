@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-105 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+106 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -53,6 +53,7 @@
 | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](theories/becoming/results/records/formed-software-continuation.md) | reviewed-scoped | [MARKETS-AND-GENERATIVE-REGIMES.md](theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md) |
 | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](theories/becoming/results/records/fulfillment-chance-floor.md) | recorded-checked | [ChanceAdequacy.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean) |
 | [单值接合的共同操作结构 / Common operational structure for functional joining](theories/becoming/results/records/functional-joining-common-structure.md) | recorded-checked | [ExplanatoryContextualStructure.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean) |
+| [生成即补充：体现的关系项的生起本身需要补充，在耗散之下没有有限部分独自承担它 / Generation is replenishment: the arising of an embodied relatum itself needs replenishment, and under dissipation no finite part bears it alone](theories/becoming/results/records/generation-is-replenishment.md) | recorded-checked | [Roles.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean) |
 | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](theories/becoming/results/records/growth-constrained-fragmentation.md) | recorded-checked | [GrownFragmentation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) |
 | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](theories/becoming/results/records/guarded-program-question-recovery.md) | recorded-checked | [ExplanatoryGuardedPrograms.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) |
 | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](theories/becoming/results/records/historical-source-binding.md) | recorded-checked | [HistoricalBinding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) |

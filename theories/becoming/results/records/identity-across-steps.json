@@ -206,8 +206,8 @@
     "en": "Contains no ethical predicate; re-identification covers only one-to-one correspondence of formations at each step; splits and merges are represented by continuation relations, under which only the arising forced by more is stated, not formation classes, tenure or undermining; continuity is one reading of identity, not its definition, one-way and two-way continuity are two readings, and even two-way continuity does not constrain succession across dormancy; More.unceasing_reidentified and More.unceasingFrom hold only under a census, present without repetition and Taking, do not say which formation arises, and under budding what is forced is only that the active formations have no bound; how to read succession, whether the working reading lets a tenure continue through succession, and at which level 生生不息 is read are Ren's reading choices; a web has no part–whole relation; a full account deriving identity from relations (continuity of material, information or organization) is not given; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Identity 77 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §16；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P11B-P12-REVIEW.md），其更正在整合文档 §19 处理，更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): all 77 theorems of Becoming.Identity have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §16 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P11B-P12-REVIEW.md), and its corrections, handled in §19, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T063303.920941Z）：Becoming.Identity 77 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 588 项定理／987 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §16；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P11B-P12-REVIEW.md），其更正在整合文档 §19 处理，更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T063303.920941Z): all 77 theorems of Becoming.Identity have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 588 theorems/987 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §16 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P11B-P12-REVIEW.md), and its corrections, handled in §19, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -420,19 +420,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
+      "sha256": "1384b8f5bf00c9f53c79fa525acc54a8aed215f7a1d636780f06239b7d060ff0",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
+      "sha256": "b607541a6f43d7fffa7ef813b1c8a9b2ea3cf8fc4597b82f5b9eb70d6b1c7df2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
+      "sha256": "6f06722d5127237e42df256543231a011daac0868a8e7a043b909f147835dffb",
       "declarations": []
     },
     {
@@ -483,6 +483,10 @@
     {
       "zh": "2026-10-09：P12b 按第五次独立审查（BECOMING-P11B-P12-REVIEW.md）更正：“名字不承载任何东西”改为标签不承载任何东西，名字跨步的模式承载同一；连续分为单向与双向两种读法，新增双向定理、Lineage.one_way、Succession.one_way、Dormancy、TideFlip、Garden.unceasing_reidentified 与 Layered；Succession 的继承者改为活跃并被满足；分裂与合并改述为延续关系的改变，新增延续关系、NoSplit、More.unceasingFrom、continuation_reidentify 与 Budding；谱系的 AI 论证改为两个层次与省略的部分整体关系。交换名字的见证共用 Reidentify.exchanging。合并检查器重跑（20261009T060305.410034Z）。标题、主张、假设、对应、反例、界限与下一步随之改写。",
       "en": "2026-10-09: P12b corrected this record following the fifth independent review (BECOMING-P11B-P12-REVIEW.md): “names carry nothing” became “labels carry nothing”, with the pattern of names across steps carrying identity; continuity was split into one-way and two-way readings, with the two-way theorems, Lineage.one_way, Succession.one_way, Dormancy, TideFlip, Garden.unceasing_reidentified and Layered added; Succession's heir now lives and is supported; splits and merges are described as changes of the continuation relation, with continuation relations, NoSplit, More.unceasingFrom, continuation_reidentify and Budding added; the lineage AI argument became two levels with the part–whole relation omitted. The name-exchanging witnesses share Reidentify.exchanging. The consolidated checker was rerun (20261009T060305.410034Z). Title, claim, hypotheses, correspondence, counterexamples, limitations and next step were rewritten accordingly."
+    },
+    {
+      "zh": "2026-10-09：P15 扩展 Becoming.Roles 与 Becoming.Dissipation 后，合并检查器重跑（20261009T063303.920941Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P15 extended Becoming.Roles and Becoming.Dissipation, the consolidated checker was rerun (20261009T063303.920941Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

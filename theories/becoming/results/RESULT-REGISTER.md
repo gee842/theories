@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-105 migrated records: 101 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+106 migrated records: 102 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -57,6 +57,7 @@
 | `formed-software-continuation` | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](records/formed-software-continuation.md) | assessment | reviewed-scoped |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
 | `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
+| `generation-is-replenishment` | [生成即补充：体现的关系项的生起本身需要补充，在耗散之下没有有限部分独自承担它 / Generation is replenishment: the arising of an embodied relatum itself needs replenishment, and under dissipation no finite part bears it alone](records/generation-is-replenishment.md) | theorem | recorded-checked |
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |

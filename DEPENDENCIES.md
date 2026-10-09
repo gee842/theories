@@ -474,6 +474,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)
 
+## generation-is-replenishment ← life-as-condition-of-life
+
+`formal-reuse` — 复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把“生由生给予”推进为“生成即补充”。 / Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries life from life on to generation as replenishment.
+
+**Producer output / 上游输出:** 体现的关系项只经由给予而生起。 / An embodied relatum arises only as it is given to.
+
+**Consumer input / 下游输入:** 体现的生起补充家族，在耗散之下降低封闭家族的存量。 / An embodied arising replenishes the family and, under dissipation, lowers a closed family's stock.
+
+**Retained conditions / 保留条件:** 平衡；Embodied。 / Balance; Embodied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## generation-is-replenishment ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用 ClosedAt、DissipatesOn、Dissipative、runs_down 与 Frontier 的燃料；新增 DissipatesOn.takes_of_gives；把该记录关于取用的结论推到体现的生起。 / Reuses ClosedAt, DissipatesOn, Dissipative, runs_down and Frontier's fuels; adds DissipatesOn.takes_of_gives; carries that record's conclusion about taking on to embodied arising.
+
+**Producer output / 上游输出:** 被耗散的家族至少下降其取用者的数目。 / A family dissipated on falls by at least its number of takers.
+
+**Consumer input / 下游输入:** 体现成员的生起使封闭家族下降。 / An embodied member's arising makes a closed family fall.
+
+**Retained conditions / 保留条件:** 平衡；耗散；家族不重复。 / Balance; dissipation; families without repetition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## generation-is-replenishment ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、取用、给予、补充、Acting 与有限和的引理。 / Reuses flows, balance, taking, giving, replenishment, Acting and the lemmas on finite totals.
+
+**Producer output / 上游输出:** 平衡：水平的变化恰是给予与取用之差。 / Balance: a change of level is exactly what is given less what is taken.
+
+**Consumer input / 下游输入:** 生起时的水平全由给予承担。 / The standing an embodied relatum arises with is all given.
+
+**Retained conditions / 保留条件:** 平衡。 / Balance.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## generation-is-replenishment ← becoming-renewal-reading
+
+`formal-reuse` — generation_opens 用 falls_finitely。 / generation_opens uses falls_finitely.
+
+**Producer output / 上游输出:** 从不上升的量只下降有限次。 / A quantity that never rises falls only finitely often.
+
+**Consumer input / 下游输入:** 封闭家族的存量从不上升，每次体现的生起都使它下降。 / A closed family's stock never rises and every embodied arising in it lowers it.
+
+**Retained conditions / 保留条件:** 从某步起封闭。 / Closure from some step on.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
 ## guarded-program-question-recovery ← branching-tests-bisimulation
 
 `formal-reuse` — 用后继匹配恢复条件程序的边界历史。 / Use successor matching to recover guarded-program boundary histories.

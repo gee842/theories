@@ -61,7 +61,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and dependence rules out making arising and removing undermining; succession stays
   open. Under a census, more without end makes generation unceasing under every
   re-identification.
-* `Becoming.Dissipation` (L3): when giving always costs the conditions the giver takes
+* `Becoming.Dissipation` (L3): when giving always costs the conditions the renewer takes
   from more than it gives, a family closed from some step runs down and taking from it
   stops. Taking that recurs, and so more without end, needs exchange beyond every finite
   family of conditions; with finitely many conditions in all, taking does not recur.
@@ -69,7 +69,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   two-kind reading is the one in which no formation is a condition. Where a relatum
   stands as a condition exactly while it is active, a formation depending on it lives
   only while it does, its ending ends every formation whose chain of dependence reaches
-  it, and it arises only as another active formation gives to it.
+  it, and it arises only as another active formation gives to it. Its arising is
+  replenishment, so under dissipation generation that recurs in a finite family needs
+  exchange beyond it, and in a finite world it ceases.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

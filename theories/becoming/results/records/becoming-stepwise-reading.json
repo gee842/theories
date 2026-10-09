@@ -304,8 +304,8 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; tenure, undermining and the stepwise living depend on identity across steps (identity-across-steps): a naming that keeps continuing dependences removes no undermining, and succession can add undermining; no causal or difference-making attribution is made, and undermining involves neither the amount nor the effect of a draw; the correspondence discipline for conditions is in condition-correspondence-discipline."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明这一读法对跨步同一的依赖，见 §19。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the reading's dependence on identity across steps be noted, see §19. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T063303.920941Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 588 项定理／987 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明这一读法对跨步同一的依赖，见 §19。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T063303.920941Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 588 theorems/987 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the reading's dependence on identity across steps be noted, see §19. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -370,19 +370,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
+      "sha256": "1384b8f5bf00c9f53c79fa525acc54a8aed215f7a1d636780f06239b7d060ff0",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
+      "sha256": "b607541a6f43d7fffa7ef813b1c8a9b2ea3cf8fc4597b82f5b9eb70d6b1c7df2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
+      "sha256": "6f06722d5127237e42df256543231a011daac0868a8e7a043b909f147835dffb",
       "declarations": []
     },
     {
@@ -512,6 +512,10 @@
     {
       "zh": "2026-10-09：P12b 按第五次独立审查（BECOMING-P11B-P12-REVIEW.md）在界限中注明任期、侵蚀与逐步的 living 依赖跨步的同一；合并检查器重跑（20261009T060305.410034Z），主张与证明不变。",
       "en": "2026-10-09: P12b noted in the limitations, following the fifth independent review (BECOMING-P11B-P12-REVIEW.md), that tenure, undermining and the stepwise living depend on identity across steps; the consolidated checker was rerun (20261009T060305.410034Z); claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P15 扩展 Becoming.Roles 与 Becoming.Dissipation 后，合并检查器重跑（20261009T063303.920941Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P15 extended Becoming.Roles and Becoming.Dissipation, the consolidated checker was rerun (20261009T063303.920941Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

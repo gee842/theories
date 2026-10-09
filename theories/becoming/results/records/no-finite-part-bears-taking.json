@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T05:12:53+00:00",
+  "reviewed_at_utc": "2026-10-09T06:45:00+00:00",
   "claim": {
     "zh": "在流上，一个条件家族跨某步封闭，当没有参与的形成从家族之外的条件取用或向其给予；一个形成在该步耗散于家族，当它给予家族的不多于从家族所取，取用时更少；流是耗散的，当每一步，每个在该步封闭的不重复家族都被耗散。在平衡的流中，被耗散的家族跨一步至少下降其取用者的数目；从某步起被耗散，此后任一段步上取用者的总数不超过当时的存量，取用不再复现。所以在耗散之下，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，在任意晚的步都不封闭：有参与的形成与其外的条件交换。不止地更多，以及在第一个活跃步取用的形成的不息生起，都是这样的取用。若有限个条件就是全部，取用不再复现。一个太阳每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内。没有耗散，封闭循环可以不止地更多（Cycle）。不用伦理前提，也不用 Lean 公理。",
     "en": "On flows, a family of conditions is closed across a step when no formation taking part takes from or gives to a condition outside it; a formation dissipates on the family across the step when it gives the family no more than it takes from it, and less when it takes; a flow is dissipative when, across every step, every family without repetition closed across it is dissipated on. In a balanced flow a dissipated family falls across a step by at least its number of takers; dissipated from some step on, its takers over any later stretch number at most its stock there, and taking from it does not recur. So under dissipation a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is not closed at arbitrarily late steps: some formation taking part exchanges with a condition outside it. More without end, and the unceasing arising of formations taking at their first active step, are such taking. If finitely many conditions are all there is, taking does not recur. A flow in which a sun burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family. Without dissipation a closed cycle is more without end (Cycle). No ethical premise and no Lean axiom is used."
@@ -105,6 +105,13 @@
         "zh": "整体与部分：在耗散之下，持续的取用由越出每个有限条件家族的展开承担。整体的演绎仍开放。",
         "en": "Whole and parts: under dissipation, continued taking is borne by an unfolding reaching beyond every finite family of conditions. The whole deduction remains open."
       }
+    },
+    {
+      "id": "generation-is-replenishment",
+      "detail": {
+        "zh": "把本结果关于取用的结论推到体现的生起：在耗散之下，体现成员的生起降低封闭家族的存量，体现的生成复现的有限家族须与其外交换，不需要生起者自己取用。",
+        "en": "Carries this result's conclusion about taking on to embodied arising: under dissipation an embodied member's arising lowers a closed family's stock, and a finite family in which embodied generation recurs must exchange beyond itself, with no taking by the arising relatum."
+      }
     }
   ],
   "counterexamples": [
@@ -131,18 +138,18 @@
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词；耗散是物理前提，单位可公度，补充者的代价须表示为条件，省略来源的表示（如 Garden、Bloom 中的太阳）不满足它；结论只约束流中的取用，不约束不取用的生起；“有限部分”指有限条件家族，不是有限的形成集合；形成与条件在此仍是两类（一类关系项的读法见 life-as-condition-of-life，耗散之下未陈述）；Frontier 是最小见证，其来源没有尽头只是表示；与热寂的比较是作者的类比；新名称最终由 Ren 定。",
-    "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units, the renewer's cost must be represented as conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it; the conclusion constrains only taking in the flow, not arising without taking; “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, not stated under dissipation); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
+    "zh": "不含伦理谓词；耗散是物理前提，单位可公度，补充者的代价须表示为条件，省略来源的表示（如 Garden、Bloom 中的太阳）不满足它；结论只约束流中的取用，不约束不取用的生起（生起的关系项体现时，见 generation-is-replenishment）；“有限部分”指有限条件家族，不是有限的形成集合；形成与条件在此仍是两类（一类关系项的读法见 life-as-condition-of-life，耗散之下见 generation-is-replenishment）；Frontier 是最小见证，其来源没有尽头只是表示；与热寂的比较是作者的类比；新名称最终由 Ren 定。",
+    "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units, the renewer's cost must be represented as conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it; the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Dissipation 28 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): all 28 theorems of Becoming.Dissipation have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T063303.920941Z）：Becoming.Dissipation 29 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 588 项定理／987 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T063303.920941Z): all 29 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 588 theorems/987 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "7e34f997ca4f97be69a38d855eab88e0d5db51db93ef9727397d44089a203774",
+      "sha256": "c07d88d10c2af5462f623bf77b6e14e1bac2496bf7b072963c6cf425bc93f90d",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
@@ -249,19 +256,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
+      "sha256": "1384b8f5bf00c9f53c79fa525acc54a8aed215f7a1d636780f06239b7d060ff0",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
+      "sha256": "b607541a6f43d7fffa7ef813b1c8a9b2ea3cf8fc4597b82f5b9eb70d6b1c7df2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
+      "sha256": "6f06722d5127237e42df256543231a011daac0868a8e7a043b909f147835dffb",
       "declarations": []
     },
     {
@@ -293,8 +300,8 @@
     }
   ],
   "next_delta": {
-    "zh": "耗散与可能性、多样性、复杂性的关系；有理数量的版本；不取用的生起是否另有耗散的形式；形成本身作为条件时的耗散；实际展开中耗散与开放的经验对应。",
-    "en": "The relation of dissipation to possibility, diversity and complexity; a version with rational amounts; whether arising without taking has its own form of dissipation; dissipation when a formation is itself a condition; the empirical correspondence of dissipation and openness in actual unfoldings."
+    "zh": "耗散与可能性、多样性、复杂性的关系；有理数量的版本；不体现的生起是否另有耗散的形式（体现的生起见 generation-is-replenishment）；实际展开中耗散与开放的经验对应。",
+    "en": "The relation of dissipation to possibility, diversity and complexity; a version with rational amounts; whether arising that is not embodied has its own form of dissipation (embodied arising is in generation-is-replenishment); the empirical correspondence of dissipation and openness in actual unfoldings."
   },
   "history": [
     {
@@ -312,6 +319,14 @@
     {
       "zh": "2026-10-09：P12b 按第五次独立审查（I4d）把残留的“给予者”改为“补充者”；合并检查器重跑（20261009T060305.410034Z），主张与证明不变。",
       "en": "2026-10-09: P12b changed the remaining “giver” to “renewer” following the fifth independent review (I4d); the consolidated checker was rerun (20261009T060305.410034Z); claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P15 扩展 Becoming.Roles 与 Becoming.Dissipation 后，合并检查器重跑（20261009T063303.920941Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P15 extended Becoming.Roles and Becoming.Dissipation, the consolidated checker was rerun (20261009T063303.920941Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P15 新增 generation-is-replenishment 后，界限与下一步中“不取用的生起”与“形成本身作为条件时的耗散”改指它，检验范围更新为 Becoming.Dissipation 的 29 项定理；主张与证明不变。",
+      "en": "2026-10-09: after P15 added generation-is-replenishment, “arising without taking” and “dissipation when a formation is itself a condition” in the limitations and next step point to it, and the validation scope now counts the 29 theorems of Becoming.Dissipation; the claim and proofs are unchanged."
     }
   ]
 }

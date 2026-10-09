@@ -15,7 +15,8 @@ on dissipation. This module states that premise on flows and proves what it carr
   than it takes from it, and less when it takes (`DissipatesOn`). A flow is
   *dissipative* when, across every step, every family without repetition closed across
   it is dissipated on (`Dissipative`). Giving then always costs the conditions the
-  renewer takes from more than it gives.
+  renewer takes from more than it gives; a formation giving to a family dissipated on
+  takes from it (`DissipatesOn.takes_of_gives`).
 * In a balanced flow, a family dissipated on across a step falls across it by at least
   the number of formations taking from it (`Balances.runs_down`). Dissipated on from
   some step, the formations taking from it over all later steps number at most its stock
@@ -27,7 +28,9 @@ on dissipation. This module states that premise on flows and proves what it carr
   exchanges with a condition outside it (`Dissipative.opens`). More without end
   (`More.opens`) and the unceasing arising of formations that take
   (`opens_of_arising`) are such taking. If finitely many conditions are all there is,
-  taking does not recur at all (`Dissipative.finite_ceases`).
+  taking does not recur at all (`Dissipative.finite_ceases`). Where a formation is itself
+  a condition, its arising falls under this with no taking of its own
+  (`Becoming.Roles`, `Web.generation_opens`).
 * The premises are consistent with more without end: a sun burns a fresh fuel at every
   step and gives a pool less than it burns, while ever more growers take from the pool
   (`Frontier`). The conditions it draws on are not contained in any finite family.
@@ -125,6 +128,12 @@ theorem DissipatesOn.replenishment_takers {cs : List C} {t : Nat}
       (total_le (p := fun f => total cs (L.give t f) + sign (total cs (L.take t f)))
         (q := fun f => total cs (L.take t f)) (L.present t) dissipates)
       (Nat.le_of_eq (total_swap (fun f c => L.take t f c) cs (L.present t))))
+
+/-- Dissipated on, a formation that gives to the family takes from it. -/
+theorem DissipatesOn.takes_of_gives {cs : List C} {t : Nat} (dissipates : L.DissipatesOn cs t)
+    {f : F} (present : f ∈ L.present t) (gives : 0 < total cs (L.give t f)) :
+    0 < total cs (L.take t f) :=
+  Nat.lt_of_lt_of_le gives (Nat.le_trans (Nat.le_add_right _ _) (dissipates f present))
 
 /-- Dissipated on, the family falls across a step by at least the number of formations
 taking from it. -/
