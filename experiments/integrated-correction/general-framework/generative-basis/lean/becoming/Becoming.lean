@@ -64,24 +64,29 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   leaves succession across dormancy. Under the premises of `Becoming.Population`, more
   without end makes generation unceasing under every one-to-one re-identification and
   makes formations arise under every continuation without splits.
-* `Becoming.Wholes` (L3): a whole is active exactly while some part is. A whole that
-  persists through parts that do not last persists only through their generation: parts
-  never active at two steps `d` apart arise within every `d` steps, and parts whose
-  activity ends arise at arbitrarily late steps when the active ones are listed.
+* `Becoming.Wholes` (L3): a whole is active exactly while some part is, a coincidence of
+  activity rather than constitution. A persisting whole of brief parts, or of parts that
+  end with finitely many active at once, persists only through their generation: parts
+  never active at two steps `d` apart arise within every `d` steps, possibly the same
+  parts again, and parts whose activity ends arise at arbitrarily late steps when the
+  active ones are listed, ever new ones.
 * `Becoming.Dissipation` (L3): when every formation gives a closed family less than it
-  takes from it, the family runs down and taking from it stops. Taking that recurs,
-  whether of more, of generation or of maintenance, needs exchange beyond every finite
-  family of conditions; with finitely many conditions in all, taking does not recur.
-  Where the exchange of a step lies within finitely many conditions, giving needs
-  uptake.
+  takes from it, the family runs down and taking from it stops. A finite family from
+  which taking recurs, whether of more, of generation or of maintenance, is open at
+  arbitrarily late steps, though what opens it need not touch it; where each step's
+  exchange around it lies within finitely many conditions, it draws in: at arbitrarily
+  late steps some formation gives to it and takes from beyond it. With finitely many
+  conditions in all, taking does not recur. Where the exchange of a step lies within
+  finitely many conditions, giving needs uptake.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
   as a condition exactly while it is active, a formation depending on it lives only
   while it does, its ending ends every formation whose chain of dependence reaches it,
   and it arises only as another active formation gives to it. Its arising is
-  replenishment, so under dissipation generation that recurs in a finite family needs
-  exchange beyond it, and in a finite world it ceases.
+  replenishment, so under dissipation generation that recurs in a finite family leaves it
+  open, draws in where each step's exchange around it lies within finitely many relata,
+  and in a finite world ceases.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

@@ -57,7 +57,7 @@
 | `formed-software-continuation` | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](records/formed-software-continuation.md) | assessment | reviewed-scoped |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
 | `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
-| `generation-is-replenishment` | [生成即补充：体现的关系项的生起本身需要补充，在耗散之下没有有限部分独自承担它 / Generation is replenishment: the arising of an embodied relatum itself needs replenishment, and under dissipation no finite part bears it alone](records/generation-is-replenishment.md) | theorem | recorded-checked |
+| `generation-is-replenishment` | [生成即补充：体现的关系项的生起本身需要补充；在耗散之下，它在有限家族中复现时家族不封闭，家族被围住时从其外汲入 / Generation is replenishment: the arising of an embodied relatum itself needs replenishment, and under dissipation a finite family in which it recurs is not closed and, enclosed around, draws in from beyond it](records/generation-is-replenishment.md) | theorem | recorded-checked |
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
@@ -85,7 +85,7 @@
 | `more-needs-renewers` | [更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成 / More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation](records/more-needs-renewers.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
 | `naming-attention-coverage` | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](records/naming-attention-coverage.md) | assessment | reviewed-scoped |
-| `no-finite-part-bears-taking` | [耗散之下没有有限部分独自承担持续的取用：取用复现的有限家族，连同包含它的每个有限家族，都须与其外交换 / Under dissipation no finite part bears continued taking alone: a finite family on which taking recurs, with every finite family containing it, must exchange beyond itself](records/no-finite-part-bears-taking.md) | theorem | recorded-checked |
+| `no-finite-part-bears-taking` | [耗散之下复现的取用打开有限家族：取用复现的有限家族，连同包含它的每个有限家族，在任意晚的步不封闭，被围住时从家族之外汲入 / Under dissipation recurring taking opens finite families: a finite family on which taking recurs, with every finite family containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it](records/no-finite-part-bears-taking.md) | theorem | recorded-checked |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
 | `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
 | `organizational-rule-inheritance` | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](records/organizational-rule-inheritance.md) | theorem | recorded-checked |
@@ -119,7 +119,7 @@
 | `unceasing-generation-needs-renewal` | [不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
-| `whole-persists-through-generation` | [整体的持续就是部分的生成：部分不长久时，持续的整体需要部分不断生起 / A whole persists through the generation of its parts: where parts do not last, a persisting whole needs its parts to keep arising](records/whole-persists-through-generation.md) | theorem | recorded-checked |
+| `whole-persists-through-generation` | [整体经由部分的生成而持续：部分短暂，或部分终结且同时活跃的部分有限时，持续的整体需要部分不断生起 / A whole persists through the generation of its parts: where parts are brief, or end with finitely many active at once, a persisting whole needs its parts to keep arising](records/whole-persists-through-generation.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |
 
 ## 先查哪一项 Where to look first

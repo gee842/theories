@@ -2,7 +2,7 @@ import Becoming.Horizon
 import Becoming.Population
 
 /-!
-# Dissipation: no finite part bears continued taking alone
+# Dissipation: recurring taking draws in from beyond the family
 
 `Becoming.Flow` shows that the renewers can be the takers themselves: in a closed cycle
 each formation gives back what it takes, and generation is more without end (`Cycle`).
@@ -20,10 +20,12 @@ on dissipation. This module states that premise on flows and proves what it carr
   the exchange of the formations taking part lies within a finite family without
   repetition (`Enclosed`), as at every step where finitely many conditions are all there
   is (`enclosed_of_finite`). Under dissipation, a formation that gives takes more than it
-  gives over every family closed across the step (`Dissipative.gives_less`), so across
-  an enclosed step giving needs uptake (`Dissipative.giving_needs_uptake`). Where a
-  formation exchanges with infinitely many conditions, no step is enclosed, dissipation
-  holds vacuously, and a renewer can give while taking nothing (`Spray`).
+  gives over every family without repetition closed across the step
+  (`Dissipative.gives_less`; with repetition it need not, `Lone.repeated_family`), so
+  across an enclosed step giving needs uptake (`Dissipative.giving_needs_uptake`). A step
+  at which some formation taking part exchanges with infinitely many conditions is not
+  enclosed; where no step is enclosed, dissipation holds vacuously and a renewer can give
+  while taking nothing (`Spray`).
 * In a balanced flow, a family dissipated on across a step falls across it by at least
   the number of formations taking from it (`Balances.runs_down`). Dissipated on from
   some step, the formations taking from it over all later steps number at most its stock
@@ -37,15 +39,31 @@ on dissipation. This module states that premise on flows and proves what it carr
   (`More.opens`), the unceasing arising of formations that take (`opens_of_arising`),
   and one eater kept up with nothing arising and no growth (`Lone`). The exchange
   beyond the family need not touch the family: where no step is enclosed, it can be an
-  exchange elsewhere (`Spray`). If finitely many conditions are all there is, taking
-  does not recur at all (`Dissipative.finite_ceases`). Where a formation is itself
+  exchange elsewhere (`Spray`, and `SprayHanding` in `Becoming.Roles`). If finitely many
+  conditions are all there is, taking does not recur at all
+  (`Dissipative.finite_ceases`).
+* Where the step is enclosed around the family, the exchange beyond is inflow. A step is
+  enclosed around a family when some family without repetition containing it is closed
+  across the step (`Around`); with equality of conditions decidable, every enclosed step
+  is enclosed around every family (`Enclosed.around`). A family is *inward* across a step
+  when every formation taking part that gives to it takes only from it (`Inward`). Under
+  dissipation, a family without repetition enclosed around and inward across a step is
+  dissipated on (`Dissipative.dissipatesOn_of_inward`), so where taking from it recurs
+  and it is enclosed around from some step on, at arbitrarily late steps some formation
+  gives to it and takes from beyond it (`taking_draws_in`). Where a formation is itself
   a condition, its arising falls under this with no taking of its own
-  (`Becoming.Roles`, `Web.generation_opens`).
+  (`Becoming.Roles`, `Web.generation_draws_in`).
 * The premises are consistent with more without end: a sun burns a fresh fuel at every
   step and gives a pool less than it burns, while ever more growers take from the pool
-  (`Frontier`). The conditions it draws on are not contained in any finite family. With
-  the growers depending on the pool, every premise of `More.unceasing` holds as well,
-  and the pool's families are open by `opens_of_arising` too (`Rooted`).
+  (`Frontier`). The conditions it draws on are not contained in any finite family, while
+  each step is enclosed around the pool by the pool and the fuel of the step
+  (`Frontier.enclosed`, `Frontier.around`), so the sun's burning is the inflow
+  (`Frontier.draws_in`); keeping one eater fed draws in the same way (`Lone.draws_in`).
+  The pool's family is not closed, and the sun gives it while taking nothing from it
+  (`Frontier.gives_without_taking`): a formation giving to a family takes from it only
+  where the family is dissipated on. With the growers depending on the pool, every
+  premise of `More.unceasing` holds as well, and the pool's families are open by
+  `opens_of_arising` too (`Rooted`).
 * Without dissipation a finite family can stay closed: the cycle of `Becoming.Flow`
   gives back what it takes (`Cycle.closed_more`). None of the flows of `Becoming.Flow`
   and `Becoming.Population` in which taking recurs is dissipative
@@ -57,9 +75,9 @@ Dissipation is read on amounts with commensurable units, as of free energy; matt
 cycle within a finite family while what drives the cycling is dissipated. That a given
 quantity dissipates, and that the exchange at a step lies within finitely many
 conditions, are physical premises, not theorems. The unfolding that bears recurring
-taking under dissipation reaches beyond every finite family of conditions; whether
-actual unfoldings meet these premises is an empirical question. No ethical predicate,
-ranking or axiom occurs.
+taking under dissipation and enclosure draws in from beyond every finite family of
+conditions; whether actual unfoldings meet these premises is an empirical question. No
+ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -106,6 +124,71 @@ theorem total_le_at {q : α → Nat} {a : α} (only : ∀ b, 0 < q b → b = a) 
         fresh (Eq.subst (motive := fun x => x ∈ as) ((only e pos).trans same.symm) mem)
       Nat.le_of_eq ((congrArg (q b + ·) rest).trans ((Nat.add_zero _).trans (congrArg q same)))
 
+/-- A total over a list without repetition is at most the total over any list holding
+each member at which the quantity is positive. -/
+theorem total_le_of_support {q : α → Nat} :
+    ∀ {l m : List α}, Distinct l → (∀ a, a ∈ l → 0 < q a → a ∈ m) → total l q ≤ total m q
+  | [], _, _, _ => Nat.zero_le _
+  | a :: l, m, ⟨fresh, distinct⟩, sub => match h : q a with
+    | 0 =>
+      have rest : total l q ≤ total m q :=
+        total_le_of_support distinct fun b mem => sub b (.tail a mem)
+      Nat.le_trans (Nat.le_of_eq ((congrArg (· + total l q) h).trans (Nat.zero_add _))) rest
+    | n + 1 =>
+      match List.append_of_mem (sub a (.head l)
+          (Eq.subst (motive := fun k => 0 < k) h.symm (Nat.succ_pos n))) with
+      | ⟨p, r, split⟩ =>
+        have inner : total l q ≤ total (p ++ r) q :=
+          total_le_of_support distinct fun b mem positive =>
+            mem_remove (fun same => fresh (Eq.subst (motive := fun x => x ∈ l) same mem))
+              (Eq.subst (motive := fun x => b ∈ x) split (sub b (.tail a mem) positive))
+        have whole : total m q = q a + total (p ++ r) q :=
+          (congrArg (total · q) split).trans ((total_append q (a :: r) p).trans
+            ((Nat.add_left_comm (total p q) (q a) (total r q)).trans
+              (congrArg (q a + ·) (total_append q r p).symm)))
+        Nat.le_trans (Nat.add_le_add_left inner (q a)) (Nat.le_of_eq whole.symm)
+
+/-- With equality decidable, membership in a list is decidable. -/
+def decideMem [DecidableEq α] (a : α) : (l : List α) → Decidable (a ∈ l)
+  | [] => .isFalse fun no => nomatch no
+  | b :: l => match decEq a b with
+    | .isTrue same => .isTrue (Eq.subst (motive := fun x => a ∈ x :: l) same (.head l))
+    | .isFalse other => match decideMem a l with
+      | .isTrue mem => .isTrue (.tail b mem)
+      | .isFalse no => .isFalse fun mem => match mem_cons_cases mem with
+        | .inl same => other same
+        | .inr mem => no mem
+
+/-- `a` put in front of `l` unless it is there. -/
+def insertNew (a : α) (l : List α) : Decidable (a ∈ l) → List α
+  | .isTrue _ => l
+  | .isFalse _ => a :: l
+
+theorem insertNew_spec {a : α} {l : List α} (distinct : Distinct l) :
+    ∀ decide : Decidable (a ∈ l), Distinct (insertNew a l decide) ∧
+      a ∈ insertNew a l decide ∧ ∀ b, b ∈ l → b ∈ insertNew a l decide
+  | .isTrue mem => ⟨distinct, mem, fun _ held => held⟩
+  | .isFalse fresh => ⟨⟨fresh, distinct⟩, .head l, fun _ held => .tail a held⟩
+
+/-- `l` with the members of `ds` it lacks put in front, each once. -/
+def adjoin [DecidableEq α] : List α → List α → List α
+  | [], l => l
+  | a :: ds, l => insertNew a (adjoin ds l) (decideMem a (adjoin ds l))
+
+/-- Adjoining keeps a list without repetition, and holds the members of both lists. -/
+theorem adjoin_spec [DecidableEq α] {l : List α} (distinct : Distinct l) :
+    ∀ ds : List α, Distinct (adjoin ds l) ∧ (∀ a, a ∈ ds → a ∈ adjoin ds l) ∧
+      ∀ b, b ∈ l → b ∈ adjoin ds l
+  | [] => ⟨distinct, fun _ no => (nomatch no), fun _ held => held⟩
+  | a :: ds => match adjoin_spec distinct ds with
+    | ⟨distinct', left, right⟩ =>
+      match insertNew_spec (a := a) distinct' (decideMem a (adjoin ds l)) with
+      | ⟨distinct'', inserted, kept⟩ =>
+        ⟨distinct'', fun b mem => match mem_cons_cases mem with
+          | .inl same => Eq.subst (motive := fun x => x ∈ adjoin (a :: ds) l) same.symm inserted
+          | .inr mem => kept b (left b mem),
+         fun b held => kept b (right b held)⟩
+
 end Totals
 
 variable {F C : Type}
@@ -134,6 +217,17 @@ def Dissipative : Prop :=
 the formations taking part lies within finitely many conditions. -/
 def Enclosed (t : Nat) : Prop :=
   ∃ cs, Distinct cs ∧ L.ClosedAt cs t
+
+/-- Across the step from `t`, some family without repetition containing `ds` is closed:
+the exchange of the step, together with the family, lies within finitely many
+conditions. -/
+def Around (ds : List C) (t : Nat) : Prop :=
+  ∃ es, Distinct es ∧ (∀ c, c ∈ ds → c ∈ es) ∧ L.ClosedAt es t
+
+/-- Across the step from `t`, every formation taking part that gives to the family takes
+only from the family: nothing beyond it flows in. -/
+def Inward (ds : List C) (t : Nat) : Prop :=
+  ∀ f, f ∈ L.present t → 0 < total ds (L.give t f) → ∀ c, 0 < L.take t f c → c ∈ ds
 
 variable {L} {W : Web F C}
 
@@ -281,6 +375,60 @@ theorem opens_of_arising (balances : L.Balances W) (dissipative : L.Dissipative)
     (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
   dissipative.opens balances distinct within (takers_recur_of_arising arising) T
+
+/-! ## Inflow -/
+
+/-- If finitely many conditions are all there is, every step is enclosed around every
+family. -/
+theorem around_of_finite {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all)
+    (ds : List C) (t : Nat) : L.Around ds t :=
+  ⟨all, distinct, fun c _ => every c, fun _ _ c outside => absurd (every c) outside⟩
+
+/-- With equality of conditions decidable, a step enclosed by some family is enclosed
+around every family: adjoin the family to it. -/
+theorem Enclosed.around [DecidableEq C] {t : Nat} (enclosed : L.Enclosed t) (ds : List C) :
+    L.Around ds t :=
+  match enclosed with
+  | ⟨es, distinct, closed⟩ => match adjoin_spec distinct ds with
+    | ⟨distinct', left, right⟩ => ⟨adjoin ds es, distinct', left,
+        fun f present c outside => closed f present c fun inside => outside (right c inside)⟩
+
+/-- Under dissipation, a family without repetition enclosed around across a step, into
+which nothing beyond it flows, is dissipated on across that step. -/
+theorem Dissipative.dissipatesOn_of_inward (dissipative : L.Dissipative) {ds : List C}
+    (distinct : Distinct ds) {t : Nat} (around : L.Around ds t) (inward : L.Inward ds t) :
+    L.DissipatesOn ds t :=
+  match around with
+  | ⟨es, distinctE, sub, closed⟩ => fun f present =>
+    match Nat.decLt 0 (total ds (L.give t f)) with
+    | isFalse nothing =>
+      Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (eq_zero_of_not_pos nothing)).trans
+        (Nat.zero_add _))) (sign_le _)
+    | isTrue gives =>
+      have giveE : total ds (L.give t f) ≤ total es (L.give t f) :=
+        total_le_of_support distinct fun c mem _ => sub c mem
+      have takeE : total es (L.take t f) ≤ total ds (L.take t f) :=
+        total_le_of_support distinctE fun c _ positive => inward f present gives c positive
+      have dissipates := dissipative es t distinctE closed
+      have one : sign (total es (L.take t f)) = 1 := Nat.le_antisymm (sign_le_one _)
+        (sign_pos (dissipates.takes_of_gives present (Nat.lt_of_lt_of_le gives giveE)))
+      Nat.le_trans (Nat.add_le_add_left (sign_le_one _) _)
+        (Nat.le_trans (Nat.add_le_add_right giveE 1)
+          (Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) one.symm))
+            (Nat.le_trans (dissipates f present) takeE)))
+
+/-- Taking draws in: under dissipation, where formations take from a finite family without
+repetition at arbitrarily late steps and the family is enclosed around from some step on,
+at arbitrarily late steps some formation gives to the family and takes from a condition
+beyond it. -/
+theorem taking_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+    (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
+    ¬ ∀ t, N ≤ t → L.Inward ds t :=
+  fun inward => balances.taking_ceases (T := N + T₀)
+    (fun t later => dissipative.dissipatesOn_of_inward distinct
+      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) recurs
 
 end Flow
 
@@ -435,6 +583,46 @@ theorem frontier {ds : List Condition} (distinct : Distinct ds) (pool : Conditio
     (T : Nat) : ¬ ∀ t, T ≤ t → flow.ClosedAt ds t :=
   Flow.More.opens balances dissipative distinct
     (fun c inside => match c, inside with | .pool, _ => pool) more T
+
+/-- Across the step from `t`, the frontier's exchange lies within the pool and the `t`th
+fuel. -/
+theorem closed (t : Nat) : flow.ClosedAt [.pool, .fuel t] t :=
+  fun f _ c outside => match f, c with
+    | .sun, .pool => absurd (.head _) outside
+    | .grower _, .pool => absurd (.head _) outside
+    | .sun, .fuel n => ⟨show (n + 1) * burning n t = 0 from
+        match h : burning n t with
+        | 0 => Nat.mul_zero (n + 1)
+        | k + 1 => absurd (Eq.subst (motive := fun m => Condition.fuel m ∈ [.pool, .fuel t])
+            (burning_at n t (Eq.subst (motive := fun b => 0 < b) h.symm
+              (Nat.succ_pos k))).symm (.tail _ (.head _))) outside, rfl⟩
+    | .grower _, .fuel _ => ⟨rfl, rfl⟩
+
+theorem pool_fuel_distinct (t : Nat) : Distinct [Condition.pool, .fuel t] :=
+  ⟨fun mem => match mem with | .tail _ no => (nomatch no), ⟨fun no => (nomatch no), trivial⟩⟩
+
+/-- Every step is enclosed, by the pool and the fuel of the step. -/
+theorem enclosed (t : Nat) : flow.Enclosed t :=
+  ⟨[.pool, .fuel t], pool_fuel_distinct t, closed t⟩
+
+/-- Every step is enclosed around the pool. -/
+theorem around (t : Nat) : flow.Around [.pool] t :=
+  ⟨[.pool, .fuel t], pool_fuel_distinct t,
+   fun c mem => match c, mem with | _, .head _ => .head _, closed t⟩
+
+/-- So taking from the pool draws in: at arbitrarily late steps a formation gives to the
+pool and takes from beyond it, the sun burning fuel. -/
+theorem draws_in (N : Nat) : ¬ ∀ t, N ≤ t → flow.Inward [.pool] t :=
+  Flow.taking_draws_in (ds := [Condition.pool]) balances dissipative
+    ⟨fun no => (nomatch no), trivial⟩ (T₀ := 0) (fun t _ => around t) more.takers_recur N
+
+/-- The flow is dissipative, and at every step after the first the sun gives the pool
+something while taking nothing from it: a formation giving to a family takes from it
+only where the family is dissipated on, and the pool's family is not closed. -/
+theorem gives_without_taking :
+    flow.Dissipative ∧ ∀ t, 0 < total [Condition.pool] (flow.give (t + 1) .sun) ∧
+      total [Condition.pool] (flow.take (t + 1) .sun) = 0 :=
+  ⟨dissipative, fun t => ⟨Nat.succ_pos t, rfl⟩⟩
 
 end Frontier
 
@@ -628,6 +816,54 @@ theorem frontier {ds : List Condition} (distinct : Distinct ds) (pool : Conditio
   Flow.Dissipative.opens (cs := [Condition.pool]) balances dissipative distinct
     (fun c inside => match c, inside with | .pool, _ => pool)
     (fun N => ⟨N, Nat.le_refl N, Nat.zero_lt_one⟩) T
+
+/-- Across the step from `t`, the exchange lies within the pool and the `t`th fuel. -/
+theorem closed (t : Nat) : flow.ClosedAt [.pool, .fuel t] t :=
+  fun f _ c outside => match f, c with
+    | .sun, .pool => absurd (.head _) outside
+    | .eater, .pool => absurd (.head _) outside
+    | .sun, .fuel n => ⟨show 2 * burning n t = 0 from
+        match h : burning n t with
+        | 0 => rfl
+        | k + 1 => absurd (Eq.subst (motive := fun m => Condition.fuel m ∈ [.pool, .fuel t])
+            (Frontier.burning_at n t (Eq.subst (motive := fun b => 0 < b) h.symm
+              (Nat.succ_pos k))).symm (.tail _ (.head _))) outside, rfl⟩
+    | .eater, .fuel _ => ⟨rfl, rfl⟩
+
+/-- Every step is enclosed, by the pool and the fuel of the step. -/
+theorem enclosed (t : Nat) : flow.Enclosed t :=
+  ⟨[.pool, .fuel t], Frontier.pool_fuel_distinct t, closed t⟩
+
+/-- So keeping the eater fed draws in: at arbitrarily late steps a formation gives to the
+pool and takes from beyond it. -/
+theorem draws_in (N : Nat) : ¬ ∀ t, N ≤ t → flow.Inward [.pool] t :=
+  Flow.taking_draws_in (ds := [Condition.pool]) balances dissipative
+    ⟨fun no => (nomatch no), trivial⟩ (T₀ := 0)
+    (fun t _ => ⟨[.pool, .fuel t], Frontier.pool_fuel_distinct t,
+      fun c mem => match c, mem with | _, .head _ => .head _, closed t⟩)
+    (fun N => ⟨N, Nat.le_refl N, Nat.zero_lt_one⟩) N
+
+/-- `gives_less` needs the family without repetition: the family listing the pool twice
+and the fuel of the step is closed across the step, and the sun gives it two units while
+taking two. -/
+theorem repeated_family (t : Nat) :
+    flow.ClosedAt [.pool, .pool, .fuel t] t ∧ Formation.sun ∈ flow.present t ∧
+    total [Condition.pool, .pool, .fuel t] (flow.give t .sun) = 2 ∧
+    total [Condition.pool, .pool, .fuel t] (flow.take t .sun) = 2 :=
+  ⟨fun f _ c outside => match f, c with
+    | .sun, .pool => absurd (.head _) outside
+    | .eater, .pool => absurd (.head _) outside
+    | .sun, .fuel n => ⟨show 2 * burning n t = 0 from
+        match h : burning n t with
+        | 0 => rfl
+        | k + 1 => absurd (Eq.subst (motive := fun m =>
+              Condition.fuel m ∈ [.pool, .pool, .fuel t])
+            (Frontier.burning_at n t (Eq.subst (motive := fun b => 0 < b) h.symm
+              (Nat.succ_pos k))).symm (.tail _ (.tail _ (.head _)))) outside, rfl⟩
+    | .eater, .fuel _ => ⟨rfl, rfl⟩,
+   .head _, rfl,
+   show 0 + (0 + (2 * burning t t + 0)) = 2 from
+     Eq.subst (motive := fun b => 0 + (0 + (2 * b + 0)) = 2) (Frontier.burning_self t).symm rfl⟩
 
 end Lone
 

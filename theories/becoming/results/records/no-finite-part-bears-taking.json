@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "no-finite-part-bears-taking",
   "title": {
-    "zh": "耗散之下没有有限部分独自承担持续的取用：取用复现的有限家族，连同包含它的每个有限家族，都须与其外交换",
-    "en": "Under dissipation no finite part bears continued taking alone: a finite family on which taking recurs, with every finite family containing it, must exchange beyond itself"
+    "zh": "耗散之下复现的取用打开有限家族：取用复现的有限家族，连同包含它的每个有限家族，在任意晚的步不封闭，被围住时从家族之外汲入",
+    "en": "Under dissipation recurring taking opens finite families: a finite family on which taking recurs, with every finite family containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T07:27:13+00:00",
+  "reviewed_at_utc": "2026-10-09T08:40:51+00:00",
   "claim": {
-    "zh": "在流上，一个条件家族跨某步封闭，当没有参与的形成从家族之外的条件取用或向其给予；一个形成在该步耗散于家族，当它给予家族的不多于从家族所取，取用时更少；流是耗散的，当每一步，每个在该步封闭的不重复家族都被耗散。在平衡的流中，被耗散的家族跨一步至少下降其取用者的数目；从某步起被耗散，此后任一段步上取用者的总数不超过当时的存量，取用不再复现。所以在耗散之下，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，在任意晚的步都不封闭：有参与的形成与其外的条件交换。任何复现的取用都是这样的取用：不止地更多、在第一个活跃步取用的形成的不息生起，以及维持；一个恒定的取用者，没有生起也不更多，同样如此（Lone）。越出的交换可以与家族无关。耗散只约束有封闭有限家族的步：一步的交换落在有限个不重复的条件之内（Enclosed）时，在耗散之下给予的形成在每个封闭家族上取用多于所给，给予须以取用为条件；某个形成与无穷多个条件交换时没有一步如此，耗散是空的，补充者可以不取用而给予（Spray）。若有限个条件就是全部，取用不再复现。一个太阳每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内；生长者依存于池时，同一流还满足普查与 Taking，生成不息，池的家族也由不息的生起而打开（Rooted）。没有耗散，封闭循环可以不止地更多（Cycle）；此前流的见证中，在一个条件上取用复现的都不耗散。不用伦理前提，也不用 Lean 公理。",
-    "en": "On flows, a family of conditions is closed across a step when no formation taking part takes from or gives to a condition outside it; a formation dissipates on the family across the step when it gives the family no more than it takes from it, and less when it takes; a flow is dissipative when, across every step, every family without repetition closed across it is dissipated on. In a balanced flow a dissipated family falls across a step by at least its number of takers; dissipated from some step on, its takers over any later stretch number at most its stock there, and taking from it does not recur. So under dissipation a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is not closed at arbitrarily late steps: some formation taking part exchanges with a condition outside it. Any recurring uptake is such taking: more without end, the unceasing arising of formations taking at their first active step, and maintenance, since a steady consumer with nothing arising and no growth needs it too (Lone). The exchange beyond may be unrelated to the family. Dissipation constrains only steps at which some finite family is closed: where the exchange of a step lies within finitely many conditions without repetition (Enclosed), under dissipation a formation that gives takes more than it gives over every closed family, so giving needs uptake; where a formation exchanges with infinitely many conditions, no step is so, dissipation is vacuous, and a renewer can give while taking nothing (Spray). If finitely many conditions are all there is, taking does not recur. A flow in which a sun burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family; with the growers depending on the pool, the same flow also meets a census and Taking, generation is unceasing, and the pool's families open through unceasing arising as well (Rooted). Without dissipation a closed cycle is more without end (Cycle), and none of the earlier flow witnesses in which taking recurs on one condition is dissipative. No ethical premise and no Lean axiom is used."
+    "zh": "在流上，一个条件家族跨某步封闭，当没有参与的形成从家族之外的条件取用或向其给予；一个形成在该步耗散于家族，当它给予家族的不多于从家族所取，取用时更少；流是耗散的，当每一步，每个在该步封闭的不重复家族都被耗散。在平衡的流中，被耗散的家族跨一步至少下降其取用者的数目；从某步起被耗散，此后任一段步上取用者的总数不超过当时的存量，取用不再复现。所以在耗散之下，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，在任意晚的步都不封闭：有参与的形成与其外的条件交换。任何复现的取用都是这样的取用：不止地更多、在第一个活跃步取用的形成的不息生起，以及维持；一个恒定的取用者，没有生起也不更多，同样如此（Lone）。越出的交换可以与家族无关：一个汇与不断新的关系项交换时，耗散空成立，取用在两方的家族中每步复现而没有任何东西流入，汇使家族不封闭（SprayHanding）。一步围住一个家族（Around），当某个包含它的不重复有限家族跨该步封闭；相等可判定时，每个被封闭的步围住每个有限家族（Enclosed.around）。家族从某步起被围住、取用在任意晚的步复现时，它汲入：在任意晚的步，有形成给予家族而从家族之外取用（taking_draws_in）。耗散只约束有封闭有限家族的步：一步的交换落在有限个不重复的条件之内（Enclosed）时，在耗散之下给予的形成在每个封闭的不重复家族上取用多于所给，给予须以取用为条件；某个形成与无穷多个条件交换时没有一步如此，耗散是空的，补充者可以不取用而给予（Spray）。若有限个条件就是全部，取用不再复现。一个太阳每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内，而每步被池与当步的燃料封闭，池的家族汲入燃料（Frontier.draws_in）；生长者依存于池时，同一流还满足普查与 Taking，生成不息，池的家族也由不息的生起而打开（Rooted）。没有耗散，封闭循环可以不止地更多（Cycle）；此前流的见证中，在一个条件上取用复现的都不耗散。不用伦理前提，也不用 Lean 公理。",
+    "en": "On flows, a family of conditions is closed across a step when no formation taking part takes from or gives to a condition outside it; a formation dissipates on the family across the step when it gives the family no more than it takes from it, and less when it takes; a flow is dissipative when, across every step, every family without repetition closed across it is dissipated on. In a balanced flow a dissipated family falls across a step by at least its number of takers; dissipated from some step on, its takers over any later stretch number at most its stock there, and taking from it does not recur. So under dissipation a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is not closed at arbitrarily late steps: some formation taking part exchanges with a condition outside it. Any recurring uptake is such taking: more without end, the unceasing arising of formations taking at their first active step, and maintenance, since a steady consumer with nothing arising and no growth needs it too (Lone). The exchange beyond may be unrelated to the family: with a sink exchanging with ever new relata, dissipation holds vacuously, taking recurs at every step in the family of two sides with nothing flowing in, and the sink opens the family (SprayHanding). A step encloses a family around (Around) when some finite family without repetition containing it is closed across the step; with decidable equality, every enclosed step encloses every finite family around (Enclosed.around). Where a family is enclosed around from some step on and taking from it recurs, it draws in: at arbitrarily late steps some formation gives to the family and takes from beyond it (taking_draws_in). Dissipation constrains only steps at which some finite family is closed: where the exchange of a step lies within finitely many conditions without repetition (Enclosed), under dissipation a formation that gives takes more than it gives over every closed family without repetition, so giving needs uptake; where a formation exchanges with infinitely many conditions, no step is so, dissipation is vacuous, and a renewer can give while taking nothing (Spray). If finitely many conditions are all there is, taking does not recur. A flow in which a sun burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family, while each step is enclosed by the pool and that step's fuel and the pool's family draws in the fuel (Frontier.draws_in); with the growers depending on the pool, the same flow also meets a census and Taking, generation is unceasing, and the pool's families open through unceasing arising as well (Rooted). Without dissipation a closed cycle is more without end (Cycle), and none of the earlier flow witnesses in which taking recurs on one condition is dissipative. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "第四次独立审查（H6、H12）指出，“任何有限部分都不能独自不息”与“没有一个有限的部分独自承担”需要耗散前提。本结果陈述这一前提，并在流中的取用上证明它。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“整体”的一种形式内容：在耗散之下，复现的取用，无论来自不止的更多、生成还是维持，都不能由任何有限的条件家族独自承担（Lone），只能由越出每个有限部分的展开承担（作者的诠释；第六次独立审查 J2 指出，此前所说的“不断的更多”只是其一种情形）；它不替代 Ren 的原话，也不推出它是好的。用自由能读耗散：物质可以在有限家族中循环（Cycle），驱动循环的来源须越出每个有限家族（AI 论证）。实际的量是否耗散、实际的展开是否在这一意义上有限，是经验问题。",
-    "en": "The fourth independent review (H6, H12) found that “no finite part is unceasing on its own” and “no finite part bears it alone” need a dissipation premise. This result states that premise and proves the claim for taking in flows. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of “whole” in those words: under dissipation, recurring taking, whether of more, of generation or of maintenance, cannot be borne by any finite family of conditions alone (Lone), only by an unfolding reaching beyond every finite part (the author's interpretation; J2 of the sixth independent review found that the earlier “unceasing more” names one case); it does not replace Ren's words and does not show that it is good. Reading dissipation on free energy, matter can cycle within a finite family (Cycle) while the source driving the cycling must reach beyond every finite family (an AI argument). Whether actual quantities dissipate, and whether actual unfoldings are finite in this sense, are empirical questions."
+    "zh": "第四次独立审查（H6、H12）指出，“任何有限部分都不能独自不息”与“没有一个有限的部分独自承担”需要耗散前提。本结果陈述这一前提，并在流中的取用上证明它。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“整体”的一种形式内容：在耗散之下，复现的取用，无论来自不止的更多、生成还是维持（Lone），使它复现的有限条件家族在任意晚的步不封闭，家族被围住时须从其外汲入（taking_draws_in）（作者的诠释；第六次独立审查 J2 指出，此前所说的“不断的更多”只是其一种情形；第七次独立审查 K1 更正了此前“不能由任何有限的条件家族独自承担”的说法：耗散空成立时，家族可以独自承担取用，而结论由与它无关的交换满足，见 SprayHanding）；它不替代 Ren 的原话，也不推出它是好的。用自由能读耗散：物质可以在有限家族中循环（Cycle），驱动循环的来源须越出每个有限家族（AI 论证）。实际的量是否耗散、实际的展开是否在这一意义上有限，是经验问题。",
+    "en": "The fourth independent review (H6, H12) found that “no finite part is unceasing on its own” and “no finite part bears it alone” need a dissipation premise. This result states that premise and proves the claim for taking in flows. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of “whole” in those words: under dissipation, recurring taking, whether of more, of generation or of maintenance (Lone), leaves the finite family of conditions on which it recurs open at arbitrarily late steps, and a family enclosed around draws in from beyond it (taking_draws_in) (the author's interpretation; J2 of the sixth independent review found that the earlier “unceasing more” names one case; K1 of the seventh independent review corrected the earlier “cannot be borne by any finite family of conditions alone”: where dissipation holds vacuously, a family can bear taking alone while exchange unrelated to it meets the conclusion, see SprayHanding); it does not replace Ren's words and does not show that it is good. Reading dissipation on free energy, matter can cycle within a finite family (Cycle) while the source driving the cycling must reach beyond every finite family (an AI argument). Whether actual quantities dissipate, and whether actual unfoldings are finite in this sense, are empirical questions."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
   "aliases": [
@@ -49,7 +49,15 @@
     "Becoming.Lone.lone",
     "Becoming.Lone.frontier",
     "Becoming.Rooted.rooted",
-    "Becoming.witnesses_not_dissipative"
+    "Becoming.witnesses_not_dissipative",
+    "Becoming.Flow.Around",
+    "Becoming.Flow.Inward",
+    "Becoming.Flow.Enclosed.around",
+    "Becoming.Flow.taking_draws_in",
+    "Becoming.Frontier.draws_in",
+    "Becoming.Lone.draws_in",
+    "Becoming.Frontier.gives_without_taking",
+    "Becoming.Lone.repeated_family"
   ],
   "dependencies": [
     {
@@ -164,21 +172,42 @@
         "zh": "全部前提的正面见证（Rooted.rooted）：生长者依存于池时，平衡、Acting、Taking、Dependent、普查、耗散、更多与不息同时成立，池的家族由 opens_of_arising 打开；花园、循环、脉动、恒定取用者、重复形成与开花都不耗散（witnesses_not_dissipative）（第六次独立审查 J3）。",
         "en": "A positive witness of every premise (Rooted.rooted): with the growers depending on the pool, balance, Acting, Taking, Dependent, a census, dissipation, more and unceasing generation hold together, and the pool's families open by opens_of_arising; the garden, cycle, pulse, steady consumer, repeated formation and bloom are not dissipative (witnesses_not_dissipative) (sixth independent review, J3)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "复现的取用不使家族汲入，除非家族被围住（SprayHanding.taking_opens_anyway、opens_anyway）：两方每步从两方的家族取用，Dissipative.opens 的结论由汇与辅助关系项的交换满足，给予家族的关系项只从家族取用，没有一步围住家族（第七次独立审查 K1）。",
+        "en": "Recurring taking need not make a family draw in unless the family is enclosed around (SprayHanding.taking_opens_anyway, opens_anyway): the sides take from their family at every step, the conclusion of Dissipative.opens is met by the sink's exchange with auxiliary relata, every relatum giving to the family takes only from it, and no step encloses the family around (seventh independent review, K1)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "detail": {
+        "zh": "围住与汲入的正面见证（Frontier.enclosed、Frontier.around、Frontier.draws_in、Lone.enclosed、Lone.draws_in）：Frontier、Rooted（共用 Frontier 的流）与 Lone 每步都被封闭，池的家族被围住并在任意晚的步汲入燃料（第七次独立审查 K1、K8(f)）。",
+        "en": "Positive witnesses of enclosure around and drawing in (Frontier.enclosed, Frontier.around, Frontier.draws_in, Lone.enclosed, Lone.draws_in): Frontier, Rooted (which shares Frontier's flow) and Lone are enclosed at every step, and the pool's family is enclosed around and draws in the fuel at arbitrarily late steps (seventh independent review, K1, K8(f))."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "detail": {
+        "zh": "“给予被耗散家族的形成从家族取用”需要家族被耗散：Frontier 中补充者给池而不从池取用，池的家族不封闭（Frontier.gives_without_taking）；gives_less 需要家族不重复：Lone 中列出池两次与当步燃料的家族跨该步封闭，太阳给它两份也取两份（Lone.repeated_family）（第七次独立审查 K2、K8(e)）。",
+        "en": "“A formation giving to a family dissipated on takes from it” needs the family dissipated on: in Frontier the renewer gives to the pool without taking from it, the pool's family not being closed (Frontier.gives_without_taking); gives_less needs the family without repetition: in Lone the family listing the pool twice and that step's fuel is closed across the step, and the sun gives it two units while taking two (Lone.repeated_family) (seventh independent review, K2, K8(e))."
+      }
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词；耗散是物理前提，单位可公度；它只约束有封闭有限家族的步，交换越出每个有限家族的步上它是空的（Spray），给予须以取用为条件只在交换落在有限个条件之内的步上成立；省略来源的表示（如 Garden、Bloom 中的太阳）不满足它（witnesses_not_dissipative）；越出的交换可以与家族无关；结论只约束流中的取用，不约束不取用的生起（生起的关系项体现时，见 generation-is-replenishment）；“有限部分”指有限条件家族，不是有限的形成集合；形成与条件在此仍是两类（一类关系项的读法见 life-as-condition-of-life，耗散之下见 generation-is-replenishment）；Frontier 是最小见证，其来源没有尽头只是表示；与热寂的比较是作者的类比；新名称最终由 Ren 定。",
-    "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family; the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
+    "zh": "不含伦理谓词；耗散是物理前提，单位可公度；它只约束有封闭有限家族的步，交换越出每个有限家族的步上它是空的（Spray），给予须以取用为条件只在交换落在有限个条件之内的步上成立；省略来源的表示（如 Garden、Bloom 中的太阳）不满足它（witnesses_not_dissipative）；越出的交换可以与家族无关（SprayHanding），汲入只对被围住的家族陈述（taking_draws_in），围住要求每步的交换落在有限个条件之内；gives_less 需要家族不重复（Lone.repeated_family），给予一个未被耗散的家族不必取用（Frontier.gives_without_taking）；结论只约束流中的取用，不约束不取用的生起（生起的关系项体现时，见 generation-is-replenishment）；“有限部分”指有限条件家族，不是有限的形成集合；形成与条件在此仍是两类（一类关系项的读法见 life-as-condition-of-life，耗散之下见 generation-is-replenishment）；Frontier 是最小见证，其来源没有尽头只是表示；与热寂的比较是作者的类比；新名称最终由 Ren 定。",
+    "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family (SprayHanding), drawing in is stated only for a family enclosed around (taking_draws_in), which needs each step's exchange to lie within finitely many conditions; gives_less needs the family without repetition (Lone.repeated_family), and giving to a family not dissipated on need not take (Frontier.gives_without_taking); the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T071936.578078Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 676 项定理／1115 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T071936.578078Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 676 theorems/1115 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T083555.066952Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 728 项定理／1182 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T083555.066952Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 728 theorems/1182 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "ba2eecfbcb551304f12ce22a2869655c53e38721c04a2eebba819441494028b0",
+      "sha256": "2eebc6d5ffe4080da20690b965e9dd77dfa39dc517045b0e80eaa3408e403802",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
@@ -251,7 +280,29 @@
         "Becoming.Spray.spray",
         "Becoming.Spray.unenclosed",
         "Becoming.Spray.web",
-        "Becoming.witnesses_not_dissipative"
+        "Becoming.witnesses_not_dissipative",
+        "Becoming.total_le_of_support",
+        "Becoming.decideMem",
+        "Becoming.insertNew",
+        "Becoming.insertNew_spec",
+        "Becoming.adjoin",
+        "Becoming.adjoin_spec",
+        "Becoming.Flow.Around",
+        "Becoming.Flow.Inward",
+        "Becoming.Flow.around_of_finite",
+        "Becoming.Flow.Enclosed.around",
+        "Becoming.Flow.Dissipative.dissipatesOn_of_inward",
+        "Becoming.Flow.taking_draws_in",
+        "Becoming.Frontier.closed",
+        "Becoming.Frontier.pool_fuel_distinct",
+        "Becoming.Frontier.enclosed",
+        "Becoming.Frontier.around",
+        "Becoming.Frontier.draws_in",
+        "Becoming.Frontier.gives_without_taking",
+        "Becoming.Lone.closed",
+        "Becoming.Lone.enclosed",
+        "Becoming.Lone.draws_in",
+        "Becoming.Lone.repeated_family"
       ]
     },
     {
@@ -317,21 +368,27 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "counterexample",
+      "sha256": "0b15ea7ce5dc8d7d966a66b54f955655ec06b221b8fa95b178fed12f0110b81c",
+      "declarations": []
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "54c294a996bace9e0db91c25ce243e702234ee44d4b88545e3d538336a99bd86",
+      "sha256": "9f88686a43221f44bbc57933ca08911059042ac9b92e5dd8683c7c08bdbe2138",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "47e077148ea211a1956eabedc1cba2ebae2a2c1d19b092ec599435c64308f215",
+      "sha256": "6fb989e96f834472e06e88b060359f3241cfbb24d0879f4694b6e335dcdc8ed5",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "be28bfe28698ac5ea4bc73bc69f7b518bd50dbec36c6d6fd6822b9480dce942b",
+      "sha256": "b737ef243f02a2a4ce19cb53217a75f8b40bed7e797def7eff9270f6784c799f",
       "declarations": []
     },
     {
@@ -356,6 +413,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
       "role": "review",
       "sha256": "d0f676a0375d520738f2e017fc6c2d165b73733c9c8b50057e155bcb00ce66ba",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md",
+      "role": "review",
+      "sha256": "10f7315ace2daa1fab3e9eb04106c0fb7c44d11d52eb6664771faf4f9bc3cf63",
       "declarations": []
     }
   ],
@@ -408,6 +471,14 @@
     {
       "zh": "2026-10-09：P16b 整合第六次独立审查（J1–J3、J11）：耗散只约束有封闭有限家族的步，新增 Enclosed、Dissipative.gives_less 与 giving_needs_uptake，以 Spray 为反例；复现的取用包括维持（Lone）；Rooted 与 witnesses_not_dissipative 补出见证；“代价”的措辞改为给予须以取用为条件；原有定理与证明不变。",
       "en": "2026-10-09: P16b integrates the sixth independent review (J1–J3, J11): dissipation constrains only steps at which some finite family is closed, with Enclosed, Dissipative.gives_less and giving_needs_uptake added and Spray as counterexample; recurring taking includes maintenance (Lone); Rooted and witnesses_not_dissipative supply witnesses; the “cost” wording becomes giving needs uptake; the existing theorems and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16c 整合第七次独立审查（K1、K2、K8）：Dissipative.opens 的结论可以由与家族无关的交换满足（SprayHanding）；新增 Around、Inward、Enclosed.around、Dissipative.dissipatesOn_of_inward 与 taking_draws_in（被围住的家族从其外汲入），Frontier 与 Lone 每步封闭并汲入，gives_less 需要不重复（Lone.repeated_family）；标题与对应改为字面结论；原有定理与证明不变。",
+      "en": "2026-10-09: P16c integrates the seventh independent review (K1, K2, K8): the conclusion of Dissipative.opens can be met by exchange unrelated to the family (SprayHanding); Around, Inward, Enclosed.around, Dissipative.dissipatesOn_of_inward and taking_draws_in (a family enclosed around draws in from beyond it) are added, Frontier and Lone are enclosed at every step and draw in, and gives_less needs a family without repetition (Lone.repeated_family); the title and correspondence now state the literal conclusion; the existing theorems and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16c 整合第七次独立审查、扩展 Becoming.Dissipation、Roles、Wholes 与 Identity 后，合并检查器重跑（20261009T083555.066952Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P16c integrated the seventh independent review and extended Becoming.Dissipation, Roles, Wholes and Identity, the consolidated checker was rerun (20261009T083555.066952Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

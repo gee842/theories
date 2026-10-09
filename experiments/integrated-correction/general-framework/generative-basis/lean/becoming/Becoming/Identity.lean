@@ -81,7 +81,11 @@ Results:
   under every continuation in which no formation continues as two
   (`Flow.More.unceasingFrom`, `Web.NoSplit`). Every re-identification is such a
   continuation, and so is one with merges (`Merge`); the decidability the theorem asks
-  follows from the census and a decidable continuation (`Census.decideContinues`).
+  follows from the census and a decidable continuation (`Census.decideContinues`). On the
+  garden, whose formations never end, that merge comes with a persisting formation
+  re-read as arising at every step, so the conclusion holds there without `More`
+  (`Merge.idle`); where the merged formation ends, what arises under a merge is exactly
+  what is new (`Confluence`).
   Without a census, no split is not enough (`Dormant.no_split_without_arising`). No
   split is sufficient, not necessary: a single split leaves formations arising without
   end (`Fork`), while under a continuation in which new formations bud from one already
@@ -922,8 +926,8 @@ theorem noSplit : Garden.web.NoSplit merges :=
   fun _ _ _ _ _ same same' _ _ => same.trans same'.symm
 
 /-- Two formations active at step one continue as one after it, so the continuation
-merges; with no split and the garden's census, more without end makes formations arise
-under it at arbitrarily late steps. -/
+merges, and with no split and the garden's census every premise of
+`Flow.More.unceasingFrom` holds under it. The conclusion is met idly (`idle`). -/
 theorem merging :
     Garden.web.active 1 (.renewer, 0) ∧ Garden.web.active 1 (.grower, 0) ∧
     merges 1 (.renewer, 0) (.renewer, 0) ∧ merges 1 (.grower, 0) (.renewer, 0) ∧
@@ -935,7 +939,76 @@ theorem merging :
    Flow.More.unceasingFrom Garden.census Garden.distinct Garden.growers_take.1
      Garden.counted.2.2.2 noSplit⟩
 
+/-- No formation continues as a grower, so the first grower, active from step one on,
+arises under the merge across every step, and formations arise under it at arbitrarily
+late steps without `More`. Under each formation continuing only itself, the same grower
+arises only across step zero. -/
+theorem idle :
+    (∀ N, Garden.web.ArisesFrom merges N (.grower, 0)) ∧ Garden.web.UnceasingFrom merges ∧
+    ∀ N, ¬ Garden.web.Arises (N + 1) (.grower, 0) :=
+  have idle : ∀ N, Garden.web.ArisesFrom merges N (.grower, 0) := fun N =>
+    ⟨Nat.succ_pos N, fun ⟨_, _, same⟩ => Kind.noConfusion (congrArg Prod.fst same)⟩
+  ⟨idle, fun N => ⟨N, (.grower, 0), Nat.le_refl N, idle N⟩,
+   fun N arises => arises.1 (Nat.succ_pos N)⟩
+
 end Merge
+
+namespace Confluence
+
+/-- Two formations that merge, and one new formation for each step. -/
+inductive Formation where
+  | a
+  | b
+  | new (n : Nat)
+
+/-- `a` is active at step zero only, `b` at every step, the `n`th new formation from step
+`n + 1` on. -/
+def web : Web Formation Unit where
+  level _ _ := 0
+  active t f := match f with
+    | .a => t = 0
+    | .b => True
+    | .new n => n < t
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+/-- Each formation continues itself, and across step zero `a` also continues as `b`. -/
+def continues (t : Nat) (g f : Formation) : Prop :=
+  g = f ∨ (t = 0 ∧ g = .a ∧ f = .b)
+
+/-- `a` is not active after step zero. -/
+theorem ended (t : Nat) : ¬ web.active (t + 1) .a := fun same => Nat.noConfusion same
+
+theorem noSplit : web.NoSplit continues :=
+  fun t _ _ _ _ r r' after after' => match r, r' with
+  | .inl same, .inl same' => same.symm.trans same'
+  | .inr ⟨_, _, isB⟩, .inr ⟨_, _, isB'⟩ => isB.trans isB'.symm
+  | .inl same, .inr ⟨_, isA, _⟩ => absurd (Eq.subst (motive := fun h => web.active (t + 1) h)
+      (same.symm.trans isA) after) (ended t)
+  | .inr ⟨_, isA, _⟩, .inl same' => absurd (Eq.subst (motive := fun h => web.active (t + 1) h)
+      (same'.symm.trans isA) after') (ended t)
+
+/-- Two formations active at step zero continue as one, without a split, and the merged
+formation `a` is not active after it; every formation arising under the continuation is
+the new formation of its step, and one arises at every step. -/
+theorem confluence :
+    web.active 0 .a ∧ web.active 0 .b ∧ Formation.a ≠ .b ∧ continues 0 .a .b ∧
+    continues 0 .b .b ∧ web.active 1 .b ∧ ¬ web.active 1 .a ∧ web.NoSplit continues ∧
+    (∀ t f, web.ArisesFrom continues t f → f = .new t) ∧ web.UnceasingFrom continues :=
+  ⟨rfl, trivial, fun same => Formation.noConfusion same, .inr ⟨rfl, rfl, rfl⟩, .inl rfl,
+   trivial, ended 0, noSplit,
+   fun t f ⟨after, alone⟩ => match f, after with
+    | .a, after => absurd after (ended t)
+    | .b, _ => absurd ⟨.b, trivial, .inl rfl⟩ alone
+    | .new n, after => congrArg Formation.new (Nat.le_antisymm (Nat.le_of_lt_succ after)
+        (Nat.ge_of_not_lt fun before => alone ⟨.new n, before, .inl rfl⟩)),
+   fun N => ⟨N, .new N, Nat.le_refl N, Nat.lt_succ_self N, fun ⟨_, active, r⟩ => match r with
+    | .inl same => Nat.lt_irrefl N
+        (Eq.subst (motive := fun h => web.active N h) same active)
+    | .inr ⟨_, _, isB⟩ => Formation.noConfusion isB⟩⟩
+
+end Confluence
 
 /-- Without a census, no split is not enough: in `Dormant`, under each formation continuing
 only itself there is no split, only active formations take, each formation taking part is

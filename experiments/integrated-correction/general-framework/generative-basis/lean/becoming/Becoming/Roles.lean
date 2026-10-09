@@ -50,23 +50,31 @@ Results:
   counterfactual relation, which is not stated here.
 * Arising through another's giving. In a balanced flow in which only active formations
   give, an embodied relatum arises only as another active formation gives to it
-  (`Embodied.arises_given`). The giver need not be embodied, bear on itself or depend on
-  anything (`SunSeed`); where only embodied relata give, a premise the representation
-  supplies, the giver is embodied too (`Embodied.arises_from_embodied`).
+  (`Embodied.arises_given`). The formation that gives need not be embodied, bear on
+  itself or depend on anything (`SunSeed`); where only embodied relata give, a premise
+  the representation supplies, it is embodied too (`Embodied.arises_from_embodied`). A
+  sun standing at one exactly while active meets that premise and depends on nothing
+  (`EmbodiedSun`): being embodied is a reading of standing, not of being a life.
 * Generation is replenishment. In a balanced flow an embodied relatum is given at least
   the standing it arises with (`Embodied.given_of_arises`), so its arising replenishes
   every family containing it (`Embodied.replenishes`). Where embodied members of a family
   arise at arbitrarily late steps, its replenishment recurs whatever is taken
   (`generation_needs_replenishment`): generation carries the requirement itself, not
   through the uptake it brings as in `Flow.uptake_needs_replenishment`.
-* Generation under dissipation. Dissipated on, whatever gives to a family takes from it
-  (`Flow.DissipatesOn.takes_of_gives`), so the arising of an embodied member of a closed
-  family lowers the family's stock (`Embodied.arising_lowers`): the premise of
-  `Web.dissipation_ceases`, supplied there as physical, here follows from balance,
-  dissipation and embodiment. A finite family without repetition in which embodied
+* Generation under dissipation. Whatever gives to a family dissipated on takes from it
+  (`Flow.DissipatesOn.takes_of_gives`), so the arising of an embodied member of a family
+  dissipated on lowers the family's stock (`Embodied.arising_lowers_on`), as under
+  dissipation for a family without repetition closed across the step
+  (`Embodied.arising_lowers`): the premise of `Web.dissipation_ceases`, supplied there as
+  physical, here follows from balance, dissipation and embodiment. Embodied members of a
+  family dissipated on from some step on do not arise at arbitrarily late steps
+  (`generation_ceases_on`). So a finite family without repetition in which embodied
   members arise at arbitrarily late steps is not closed from any step on
-  (`generation_opens`). If finitely many relata are all there is, embodied relata do not
-  arise at arbitrarily late steps (`generation_ceases`).
+  (`generation_opens`), though the exchange that opens it need not touch it
+  (`SprayHanding`); enclosed around from some step on, it draws in: at arbitrarily late
+  steps some relatum gives to it and takes from beyond it (`generation_draws_in`). If
+  finitely many relata are all there is, embodied relata do not arise at arbitrarily
+  late steps (`generation_ceases`).
 * Witnesses. A bee and a flower, each depending on itself and on the other and drawing
   on the other, renew each other with no third condition, and every event is living
   (`Mutualism`); in `Mutualism.apart` each depends only on the other, and neither bears
@@ -78,9 +86,13 @@ Results:
 * Each premise of `generation_ceases` is needed. Two sides handing one standing back and
   forth, each embodied, bear unceasing generation in a closed world of two relata
   without dissipation (`Handing`). Burning a fresh fuel at every step, they bear it under
-  dissipation, and every finite family containing a side is open at arbitrarily late
-  steps (`Kindling`). A relatum whose activity is not its standing arises again and
-  again in a world of one relatum under dissipation (`Flicker`).
+  dissipation, every finite family containing a side is open at arbitrarily late steps,
+  and the family of the sides, enclosed around at every step, draws in the fuel
+  (`Kindling`). With an unrelated sink exchanging with ever new relata instead, no step
+  is enclosed, dissipation holds vacuously, and generation recurs in the family of the
+  sides with nothing flowing in, while the sink opens it (`SprayHanding`). A relatum
+  whose activity is not its standing arises again and again in a world of one relatum
+  under dissipation (`Flicker`).
 
 `Becoming.Correspondence` reads the relations: the one-kind reading keeps the connection
 of the valuations, and formations bearing on themselves relate directly. Embodiment
@@ -473,16 +485,17 @@ theorem Embodied.arises_given {L : Flow X X} (balances : L.Balances W) (acting :
       ((embodied (t + 1)).mp arises.2)) with
   | ⟨f, active, present, gives⟩ => ⟨f, active, present, gives, fun same => arises.1 (same ▸ active)⟩
 
-/-- Where only embodied relata give, a premise supplied by the representation, the giver
-of an arising embodied relatum is embodied too, and stands as a condition while it
-gives. -/
+/-- Where only embodied relata give, a premise supplied by the representation, a
+formation giving to an arising embodied relatum is embodied too, and stands as a
+condition while it gives. -/
 theorem Embodied.arises_from_embodied {L : Flow X X} (balances : L.Balances W)
-    (acting : L.Acting W) (givers : ∀ t f c, f ∈ L.present t → 0 < L.give t f c → W.Embodied f)
+    (acting : L.Acting W)
+    (gives_embodied : ∀ t f c, f ∈ L.present t → 0 < L.give t f c → W.Embodied f)
     {x : X} (embodied : W.Embodied x) {t : Nat} (arises : W.Arises t x) :
     ∃ f, W.Embodied f ∧ 0 < W.level t f ∧ f ∈ L.present t ∧ 0 < L.give t f x ∧ f ≠ x :=
   match embodied.arises_given balances acting arises with
   | ⟨f, active, present, gives, other⟩ =>
-    have bodied := givers t f x present gives
+    have bodied := gives_embodied t f x present gives
     ⟨f, bodied, (bodied t).mp active, present, gives, other⟩
 
 variable (W : Web F C)
@@ -571,13 +584,11 @@ theorem generation_needs_replenishment (balances : L.Balances W) {cs : List X}
   | ⟨t, _, later, mem, embodied, arises⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
       (embodied.replenishes balances mem arises) (Nat.le_of_eq (none t later)))
 
-/-- Under dissipation, the arising of an embodied member of a family closed across the
-step lowers the family's stock: whatever gives to it takes more from the family. -/
-theorem Embodied.arising_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
-    {ds : List X} (distinct : Distinct ds) {t : Nat} (closed : L.ClosedAt ds t) {x : X}
-    (embodied : W.Embodied x) (mem : x ∈ ds) (arises : W.Arises t x) :
-    W.stock ds (t + 1) < W.stock ds t :=
-  have dissipates := dissipative ds t distinct closed
+/-- The arising of an embodied member of a family dissipated on across the step lowers
+the family's stock: whatever gives to it takes more from the family. -/
+theorem Embodied.arising_lowers_on (balances : L.Balances W) {ds : List X} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {x : X} (embodied : W.Embodied x) (mem : x ∈ ds)
+    (arises : W.Arises t x) : W.stock ds (t + 1) < W.stock ds t :=
   match total_pos (L.present t) (Nat.lt_of_lt_of_le ((embodied (t + 1)).mp arises.2)
       (embodied.given_of_arises balances arises)) with
   | ⟨_, present, gives⟩ => Nat.lt_of_lt_of_le
@@ -585,20 +596,49 @@ theorem Embodied.arising_lowers (balances : L.Balances W) (dissipative : L.Dissi
         present (sign_pos (dissipates.takes_of_gives present (total_pos_of_mem mem gives)))))
       (balances.runs_down dissipates)
 
+/-- Under dissipation, the arising of an embodied member of a family without repetition
+closed across the step lowers the family's stock. -/
+theorem Embodied.arising_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List X} (distinct : Distinct ds) {t : Nat} (closed : L.ClosedAt ds t) {x : X}
+    (embodied : W.Embodied x) (mem : x ∈ ds) (arises : W.Arises t x) :
+    W.stock ds (t + 1) < W.stock ds t :=
+  embodied.arising_lowers_on balances (dissipative ds t distinct closed) mem arises
+
+/-- Embodied members of a family dissipated on from some step on do not arise at
+arbitrarily late steps. -/
+theorem generation_ceases_on (balances : L.Balances W) {ds : List X} {T : Nat}
+    (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
+  fun arising => falls_finitely (W.stock ds) T
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (balances.runs_down (dissipates t later)))
+    fun N => match arising (N + T) with
+    | ⟨t, _, later, mem, embodied, arises⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+        embodied.arising_lowers_on balances
+          (dissipates t (Nat.le_trans (Nat.le_add_left T N) later)) mem arises⟩
+
 /-- Under dissipation, a finite family without repetition in which embodied members arise
-at arbitrarily late steps is not closed from any step on: generation in it needs exchange
-beyond it. -/
+at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some
+formation taking part exchanges with a relatum outside it. That exchange need not touch
+the family (`SprayHanding`). -/
 theorem generation_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (distinct : Distinct ds)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
-  fun closed => falls_finitely (W.stock ds) T
-    (fun t later => Nat.le_trans (Nat.le_add_right _ _)
-      (balances.runs_down (dissipative ds t distinct (closed t later))))
-    fun N => match arising (N + T) with
-    | ⟨t, _, later, mem, embodied, arises⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        embodied.arising_lowers balances dissipative distinct
-          (closed t (Nat.le_trans (Nat.le_add_left T N) later)) mem arises⟩
+  fun closed => generation_ceases_on balances
+    (fun t later => dissipative ds t distinct (closed t later)) arising
+
+/-- Generation draws in: under dissipation, where embodied members of a finite family
+without repetition arise at arbitrarily late steps and the family is enclosed around from
+some step on, at arbitrarily late steps some relatum gives to the family and takes from a
+relatum beyond it. -/
+theorem generation_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List X} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+    (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (N : Nat) :
+    ¬ ∀ t, N ≤ t → L.Inward ds t :=
+  fun inward => generation_ceases_on (T := N + T₀) balances
+    (fun t later => dissipative.dissipatesOn_of_inward distinct
+      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) arising
 
 /-- If finitely many relata are all there is, embodied relata do not arise at arbitrarily
 late steps under dissipation. -/
@@ -965,7 +1005,7 @@ def flow : Flow Relatum Relatum where
 
 /-- The flow balances and only active relata give; the seed is embodied and arises across
 step zero, given by the sun alone. The sun is not embodied, does not bear on itself and
-depends on nothing: the giver `arises_given` names need not be a life. -/
+depends on nothing: the formation `arises_given` names need not be embodied. -/
 theorem sun_gives :
     flow.Balances web ∧ flow.Acting web ∧ web.Embodied .seed ∧ web.Arises 0 .seed ∧
     (∀ f, web.active 0 f ∧ f ∈ flow.present 0 ∧ 0 < flow.give 0 f .seed ∧ f ≠ .seed →
@@ -988,6 +1028,55 @@ theorem sun_gives :
    fun _ _ h => h⟩
 
 end SunSeed
+
+namespace EmbodiedSun
+
+/-- `SunSeed.web`, with the sun standing at one instead of zero. -/
+def web : Web SunSeed.Relatum SunSeed.Relatum where
+  level t x := match x with
+    | .sun => 1
+    | .seed => SunSeed.sprout t
+  active t x := match x with
+    | .sun => True
+    | .seed => 0 < SunSeed.sprout t
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+theorem balances : SunSeed.flow.Balances web
+  | _, .sun => rfl
+  | 0, .seed => rfl
+  | _ + 1, .seed => rfl
+
+theorem acting : SunSeed.flow.Acting web := fun _ f _ mem _ => match f, mem with
+  | .sun, _ => trivial
+  | .seed, .tail _ no => (nomatch no)
+
+theorem gives_embodied : ∀ t f c, f ∈ SunSeed.flow.present t →
+    0 < SunSeed.flow.give t f c → web.Embodied f := fun _ f _ mem _ => match f, mem with
+  | .sun, _ => fun _ => ⟨fun _ => Nat.zero_lt_one, fun _ => trivial⟩
+  | .seed, .tail _ no => (nomatch no)
+
+/-- Every premise of `Embodied.arises_from_embodied` holds, and it names the sun: embodied,
+standing as a condition while it gives. The sun requires nothing, draws on nothing, takes
+nothing and does not bear on itself; it is embodied because the representation lets it
+stand at one exactly while it is active. -/
+theorem embodied_sun :
+    SunSeed.flow.Balances web ∧ SunSeed.flow.Acting web ∧
+    (∀ t f c, f ∈ SunSeed.flow.present t → 0 < SunSeed.flow.give t f c → web.Embodied f) ∧
+    web.Embodied .seed ∧ web.Arises 0 .seed ∧
+    (∃ f, web.Embodied f ∧ 0 < web.level 0 f ∧ f ∈ SunSeed.flow.present 0 ∧
+      0 < SunSeed.flow.give 0 f .seed ∧ f ≠ .seed) ∧
+    (∀ t c, ¬ web.requires t .sun c ∧ ¬ web.draws t .sun c ∧ SunSeed.flow.take t .sun c = 0) ∧
+    ¬ web.SelfBearing .sun :=
+  have seed : web.Embodied .seed := fun _ => Iff.rfl
+  have arises : web.Arises 0 .seed := ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩
+  ⟨balances, acting, gives_embodied, seed, arises,
+   Web.Embodied.arises_from_embodied balances acting gives_embodied seed arises,
+   fun _ _ => ⟨fun no => no, fun no => no, rfl⟩,
+   fun self => (self 0 trivial).1⟩
+
+end EmbodiedSun
 
 namespace Handing
 
@@ -1202,7 +1291,186 @@ theorem frontier {ds : List Relatum} (distinct : Distinct ds) {x : Bool}
   Web.generation_opens balances dissipative distinct (fun N => match Handing.recurs x N with
     | ⟨t, later, arises⟩ => ⟨t, .side x, later, side, fun _ => Iff.rfl, arises⟩) T
 
+/-- Every step is enclosed around the two sides, by the sides and the fuel burnt. -/
+theorem around (t : Nat) : flow.Around [.side true, .side false] t :=
+  ⟨[.side true, .side false, .fuel t],
+   ⟨fun mem => match mem with | .tail _ (.tail _ no) => (nomatch no),
+    ⟨fun mem => match mem with | .tail _ no => (nomatch no),
+     ⟨fun no => (nomatch no), trivial⟩⟩⟩,
+   fun c mem => match c, mem with
+    | _, .head _ => .head _
+    | _, .tail _ (.head _) => .tail _ (.head _),
+   fun f present c outside => match f, present, c with
+    | _, .head _, .side true => absurd (.head _) outside
+    | _, .head _, .side false => absurd (.tail _ (.head _)) outside
+    | _, .head _, .fuel n => ⟨show 2 * Frontier.burning n t = 0 from
+        match h : Frontier.burning n t with
+        | 0 => rfl
+        | k + 1 => absurd (Eq.subst (motive := fun m =>
+              Relatum.fuel m ∈ [.side true, .side false, .fuel t])
+            (Frontier.burning_at n t (Eq.subst (motive := fun b => 0 < b) h.symm
+              (Nat.succ_pos k))).symm (.tail _ (.tail _ (.head _)))) outside, rfl⟩⟩
+
+/-- So generation in the family of the sides draws in: at arbitrarily late steps the side
+that gives to the family takes from beyond it, the fuel. -/
+theorem draws_in (N : Nat) : ¬ ∀ t, N ≤ t → flow.Inward [.side true, .side false] t :=
+  Web.generation_draws_in (ds := [.side true, .side false]) balances dissipative
+    ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
+    (T₀ := 0) (fun t _ => around t)
+    (fun M => match Handing.recurs true M with
+      | ⟨t, later, arises⟩ => ⟨t, .side true, later, .head _, fun _ => Iff.rfl, arises⟩) N
+
 end Kindling
+
+namespace SprayHanding
+
+/-- The two sides of `Handing`, a sink, and auxiliary relata. -/
+inductive Relatum where
+  | side (x : Bool)
+  | sink
+  | aux (n : Nat)
+
+/-- The holder hands its standing to the other side, as in `Handing`; the sink takes one
+unit from every auxiliary relatum and gives it back. -/
+def flow : Flow Relatum Relatum where
+  present t := [.side (Handing.holder t), .sink]
+  take t f c := match f, c with
+    | .side x, .side y => Handing.flow.take t x y
+    | .side _, .sink => 0
+    | .side _, .aux _ => 0
+    | .sink, .side _ => 0
+    | .sink, .sink => 0
+    | .sink, .aux _ => 1
+    | .aux _, _ => 0
+  give t f c := match f, c with
+    | .side x, .side y => Handing.flow.give t x y
+    | .side _, .sink => 0
+    | .side _, .aux _ => 0
+    | .sink, .side _ => 0
+    | .sink, .sink => 0
+    | .sink, .aux _ => 1
+    | .aux _, _ => 0
+
+/-- The sides stand and are active as in `Handing` and depend on themselves at need one;
+the sink is always active and stands at one; auxiliary relata stand at one and are never
+active. -/
+def web : Web Relatum Relatum where
+  level t c := match c with
+    | .side x => Handing.stands x t
+    | .sink => 1
+    | .aux _ => 1
+  active t c := match c with
+    | .side x => 0 < Handing.stands x t
+    | .sink => True
+    | .aux _ => False
+  requires _ c d := match c with
+    | .side _ => d = c
+    | .sink => False
+    | .aux _ => False
+  need _ _ _ := 1
+  draws _ f c := match f, c with
+    | .side _, _ => False
+    | .sink, .side _ => False
+    | .sink, .sink => False
+    | .sink, .aux _ => True
+    | .aux _, _ => False
+
+/-- The family of the two sides. -/
+def sides : List Relatum := [.side true, .side false]
+
+theorem sides_distinct : Distinct sides :=
+  ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
+
+/-- One more than the largest auxiliary index in a list. -/
+def bound : List Relatum → Nat
+  | [] => 0
+  | .aux n :: l => n + 1 + bound l
+  | .side _ :: l => bound l
+  | .sink :: l => bound l
+
+theorem le_bound {m : Nat} : ∀ {l : List Relatum}, Relatum.aux m ∈ l → m + 1 ≤ bound l
+  | _ :: l, .head _ => Nat.le_add_right (m + 1) (bound l)
+  | .aux n :: l, .tail _ mem => Nat.le_trans (le_bound mem) (Nat.le_add_left (bound l) (n + 1))
+  | .side _ :: l, .tail _ mem => le_bound (l := l) mem
+  | .sink :: l, .tail _ mem => le_bound (l := l) mem
+
+/-- Every finite list of relata misses an auxiliary relatum. -/
+theorem fresh (l : List Relatum) : ¬ Relatum.aux (bound l) ∈ l :=
+  fun mem => Nat.not_succ_le_self _ (le_bound mem)
+
+theorem balances : flow.Balances web
+  | t, .side y => Handing.balances t y
+  | _, .sink => rfl
+  | _, .aux _ => rfl
+
+theorem acting : flow.Acting web := fun t f _ present _ => match f, present with
+  | _, .head _ => Handing.holder_stands t
+  | _, .tail _ (.head _) => trivial
+  | _, .tail _ (.tail _ no) => (nomatch no)
+
+theorem dependent : web.Dependent := fun _ c active d depends => match c, d, depends with
+  | .side _, _, rfl => active
+
+/-- No step is enclosed: the sink exchanges with an auxiliary relatum outside every finite
+list. -/
+theorem unenclosed (t : Nat) : ¬ flow.Enclosed t :=
+  fun ⟨es, _, closed⟩ => Nat.noConfusion
+    ((closed .sink (.tail _ (.head _)) (.aux (bound es)) (fresh es)).1 : (1 : Nat) = 0)
+
+theorem dissipative : flow.Dissipative :=
+  fun es t distinct closed => absurd ⟨es, distinct, closed⟩ (unenclosed t)
+
+theorem even_sum : ∀ t, Handing.even t + Handing.even (t + 1) = 1
+  | 0 => rfl
+  | 1 => rfl
+  | t + 2 => even_sum t
+
+/-- The flow balances, only active relata give, activity needs support, the sides are
+embodied and bear on themselves, and the flow is dissipative, vacuously, since no step is
+enclosed. Each side arises at arbitrarily late steps in the finite family of the two
+sides. Yet every relatum that gives to the family takes only from it, the sink, the only
+relatum exchanging beyond it, never takes from or gives to it, and the family's stock is
+one at every step: generation recurs in a finite family into which nothing flows. -/
+theorem spray_handing :
+    flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
+    (∀ x, web.Embodied (.side x) ∧ web.SelfBearing (.side x)) ∧ flow.Dissipative ∧
+    (∀ t, ¬ flow.Enclosed t) ∧ (∀ x N, ∃ t, N ≤ t ∧ web.Arises t (.side x)) ∧
+    (∀ t, flow.Inward sides t) ∧
+    (∀ t x, flow.take t .sink (.side x) = 0 ∧ flow.give t .sink (.side x) = 0) ∧
+    ∀ t, web.stock sides t = 1 :=
+  ⟨balances, acting, dependent, fun _ => ⟨fun _ => Iff.rfl, fun _ _ => ⟨rfl, Nat.zero_lt_one⟩⟩,
+   dissipative, unenclosed, fun x N => Handing.recurs x N,
+   fun _ f present gives c takes => match f, present with
+    | _, .head _ => match c, takes with
+      | .side true, _ => .head _
+      | .side false, _ => .tail _ (.head _)
+      | .sink, takes => absurd takes (Nat.lt_irrefl 0)
+      | .aux _, takes => absurd takes (Nat.lt_irrefl 0)
+    | _, .tail _ (.head _) => absurd gives (Nat.lt_irrefl 0)
+    | _, .tail _ (.tail _ no) => (nomatch no),
+   fun _ _ => ⟨rfl, rfl⟩, even_sum⟩
+
+/-- The conclusion of `Web.generation_opens` holds, met by the sink's exchange, which never
+touches the family; and no step is enclosed around the family, as `generation_draws_in`
+needs. -/
+theorem opens_anyway (T : Nat) :
+    (¬ ∀ t, T ≤ t → flow.ClosedAt sides t) ∧ ∀ t, ¬ flow.Around sides t :=
+  ⟨Web.generation_opens balances dissipative sides_distinct
+    (fun N => match Handing.recurs true N with
+      | ⟨t, later, arises⟩ => ⟨t, .side true, later, .head _, fun _ => Iff.rfl, arises⟩) T,
+   fun t ⟨es, distinct, _, closed⟩ => unenclosed t ⟨es, distinct, closed⟩⟩
+
+/-- Taking from the sides recurs at every step, and the conclusion of
+`Flow.Dissipative.opens` holds by the same exchange of the sink. -/
+theorem taking_opens_anyway (T : Nat) : ¬ ∀ t, T ≤ t → flow.ClosedAt sides t :=
+  Flow.Dissipative.opens balances dissipative sides_distinct (fun _ mem => mem)
+    (fun N => ⟨N, Nat.le_refl N, show 0 < sign (total sides (flow.take N
+        (.side (Handing.holder N)))) + (sign (total sides (flow.take N .sink)) + 0) from
+      match Handing.holder N with
+      | true => Nat.zero_lt_one
+      | false => Nat.zero_lt_one⟩) T
+
+end SprayHanding
 
 namespace Flicker
 

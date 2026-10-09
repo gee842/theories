@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "whole-persists-through-generation",
   "title": {
-    "zh": "整体的持续就是部分的生成：部分不长久时，持续的整体需要部分不断生起",
-    "en": "A whole persists through the generation of its parts: where parts do not last, a persisting whole needs its parts to keep arising"
+    "zh": "整体经由部分的生成而持续：部分短暂，或部分终结且同时活跃的部分有限时，持续的整体需要部分不断生起",
+    "en": "A whole persists through the generation of its parts: where parts are brief, or end with finitely many active at once, a persisting whole needs its parts to keep arising"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T07:05:00+00:00",
+  "reviewed_at_utc": "2026-10-09T08:40:51+00:00",
   "claim": {
-    "zh": "在依存网上，一个形成是某些部分的整体，当它恰在某个部分活跃时活跃。整体只经由某个部分的生起而生起，所以整体在任意晚的步生起时，部分也在任意晚的步生起。一个从某步起每步都活跃的整体：若没有部分在相隔 d 步的两步都活跃，则从那一步起每 d 个连续步内都有部分生起；若每个部分的活动终结，且每步活跃的部分可由一个有限列表恰好列出，则部分在任意晚的步生起。整体的持续因此就是部分的不息生成。每个前提都必要：有一个永不终结的部分时，整体持续而没有任何生起（Immortal）；无穷多个部分同时活跃、各在不同的步终结时，整体持续而没有任何生起，于是活跃的部分不能被有限地列出（Countless）。前提相容：一代代成员各活跃两步，谱系每步活跃而从不生起，每步都有新成员生起（Generations）。界 d 可以达到：轮班两步的成员只在奇数步生起（Shifts）。逆命题不成立：部分在任意晚的步生起、各只活跃一次时，整体在其间不活跃（Gaps）。Identity 的 Layered 中，谱系是其成员的整体（Layered.composed）。不用伦理前提，也不用 Lean 公理。",
-    "en": "On webs, a formation is the whole of some parts when it is active exactly while some part is. A whole arises only as some part arises, so where a whole arises at arbitrarily late steps its parts do too. A whole active at every step from some step on: if no part is active at two steps d apart, a part arises within every d consecutive steps from that step on; if every part's activity ends and at each step a finite list names exactly the active parts, parts arise at arbitrarily late steps. The whole's persistence is thus the unceasing generation of its parts. Each premise is needed: with a part whose activity never ends, the whole persists while nothing arises (Immortal); with infinitely many parts active at once, each ending at a different step, the whole persists while nothing arises, so the active parts cannot be listed finitely (Countless). The premises are consistent: generation after generation of members, each active for two steps, makes a lineage active at every step that never arises, while a new member arises at every step (Generations). The bound d is attained: members working in shifts of two steps arise only across odd steps (Shifts). The converse fails: parts arising at arbitrarily late steps, each active once, leave the whole inactive between them (Gaps). In Identity's Layered, the lineage is the whole of its members (Layered.composed). No ethical premise and no Lean axiom is used."
+    "zh": "在依存网上，一个形成是某些部分的整体，当它恰在某个部分活跃时活跃。这是活动的重合，不是构成：每个形成都是它自身的整体，两个每步都活跃的形成互为整体（whole_self、Immortal.each_other）。整体只经由某个部分的生起而生起，所以整体在任意晚的步生起时，部分也在任意晚的步生起。部分覆盖从某步起的每一步（每步有部分活跃）时：若没有部分在相隔 d 步的两步都活跃，则从那一步起每 d 个连续步内都有部分生起；若每个部分的活动终结，且每步活跃的部分可由一个有限列表恰好列出，则部分在任意晚的步生起，并且在任何有限的部分列表之外生起：不断有新的部分（Covered.arises_within、Covered.needs_arising、Covered.needs_new）。从某步起每步都活跃的整体被它的部分覆盖（Whole.covered），所以整体只经由部分的不息生成而持续。在 Brief 之下，这可以是同样的部分反复生起（Layered：两个成员都 Brief 1，每步都有成员生起，每次生起都是两者之一，它们的活动不终结）；在 Ends 与 Listed 之下，是不断新的部分，但不是更多的部分（Generations 每步有两个活跃）。每个前提都必要：有一个永不终结的部分时，整体持续而没有任何生起（Immortal）；无穷多个部分同时活跃、各在不同的步终结时，整体持续而没有任何生起，于是活跃的部分不能被有限地列出（Countless）。前提相容：一代代成员各活跃两步，谱系每步活跃而从不生起，每步都有新成员生起（Generations）。界 d 可以达到：轮班两步的成员只在奇数步生起（Shifts）。逆命题不成立：部分在任意晚的步生起、各只活跃一次时，整体在其间不活跃（Gaps）。Identity 的 Layered 中，谱系是其成员的整体（Layered.composed）。不用伦理前提，也不用 Lean 公理。",
+    "en": "On webs, a formation is the whole of some parts when it is active exactly while some part is. A whole arises only as some part arises, so where a whole arises at arbitrarily late steps its parts do too. This is coincidence of activity, not constitution: every formation is the whole of itself, and two formations active at every step are each the whole of the other (whole_self, Immortal.each_other). Where parts cover every step from some step on, some part being active at each: if no part is active at two steps d apart, a part arises within every d consecutive steps from that step on; if every part's activity ends and at each step a finite list names exactly the active parts, parts arise at arbitrarily late steps, and outside every finite list of parts: ever new parts (Covered.arises_within, Covered.needs_arising, Covered.needs_new). A whole active at every step from some step on is covered by its parts (Whole.covered), so it persists only through the unceasing generation of its parts. Under Brief this may be the same parts arising again (Layered: both members are Brief 1, a member arises at every step, every arising is of one of the two, and neither's activity ends); under Ends and Listed it is ever new parts, though not more of them (Generations has two active at every step). Each premise is needed: with a part whose activity never ends, the whole persists while nothing arises (Immortal); with infinitely many parts active at once, each ending at a different step, the whole persists while nothing arises, so the active parts cannot be listed finitely (Countless). The premises are consistent: generation after generation of members, each active for two steps, makes a lineage active at every step that never arises, while a new member arises at every step (Generations). The bound d is attained: members working in shifts of two steps arise only across odd steps (Shifts). The converse fails: parts arising at arbitrarily late steps, each active once, leave the whole inactive between them (Gaps). In Identity's Layered, the lineage is the whole of its members (Layered.composed). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "Whole is a representational premise: which formations are parts of which whole, and whether a lineage is read as the whole of its members, are supplied by the application; the whole relates to its parts only through activity, not through dependence or drawing."
     },
     {
-      "zh": "Brief d（部分从不在相隔 d 步的两步都活跃），或 Ends 与 Listed（每个部分的活动终结，活跃的部分可有限列出）：两种对部分不长久的陈述，各用于一个定理。",
-      "en": "Brief d (no part active at two steps d apart), or Ends and Listed (every part's activity ends, and the active parts can be listed finitely): two statements that parts do not last, each used by one theorem."
+      "zh": "Brief d（部分短暂：从不在相隔 d 步的两步都活跃），或 Ends 与 Listed（每个部分的活动终结，且每步活跃的部分可有限列出，即同时活跃的部分有限）：两种前提，各用于一个定理。Listed 是有限性前提，不是对长久的陈述：Countless 的部分各自终结，整体持续而没有生起；Brief 不说部分终结，允许同样的部分反复生起（Layered）。",
+      "en": "Brief d (parts are brief: none active at two steps d apart), or Ends and Listed (every part's activity ends, and at each step the active parts can be listed finitely, so finitely many are active at once): two premises, each used by one theorem. Listed is a finiteness premise, not a statement about lasting: in Countless every part ends while the whole persists and nothing arises; Brief does not say that parts end, and admits the same parts arising again (Layered)."
     },
     {
       "zh": "跨步的同一由命名给出（identity-across-steps）：部分的生起依赖它。",
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "第五次独立审查（I10）指出，谱系与成员是同一展开的两个层次，部分与整体的关系是单一命名层次所省略的关系，并在其 §4 第 7 项写道：一个含形成之间部分与整体关系的表示，会使它成为定理。本结果给出这一表示与定理。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在部分不长久的前提下，读到整体（谱系）层次的持续，蕴含成员层次的不息生成：两个层次不是二选一，整体的“不息”正由部分的“生生”构成（作者的诠释，AI 论证）；它不替代 Ren 的原话，不推出它是好的，也不决定“生生不息”读到哪个层次，那仍属于 Ren。",
-    "en": "The fifth independent review (I10) found that a lineage and its members are two levels of one unfolding, with the part–whole relation the one a single level of naming omits, and wrote in its §4 item 7 that a representation with a part–whole relation among formations would make it a theorem. This result gives that representation and theorem. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). Where parts do not last, persistence read at the level of the whole (the lineage) entails unceasing generation at the level of its members: the two levels are not alternatives, and the whole's 不息 is made of its parts' 生生 (the author's interpretation, an AI argument); it does not replace Ren's words, does not show that it is good, and does not decide at which level 生生不息 is read, which remains Ren's."
+    "zh": "第五次独立审查（I10）指出，谱系与成员是同一展开的两个层次，部分与整体的关系是单一命名层次所省略的关系，并在其 §4 第 7 项写道：一个含形成之间部分与整体关系的表示，会使它成为定理。本结果给出这一表示与定理。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。在部分短暂，或部分终结且同时活跃的部分有限的前提下，读到整体（谱系）层次的持续，需要成员层次的不息生成：两个层次不是二选一，整体的“不息”经由部分的“生生”（作者的诠释，AI 论证；第七次独立审查 K3 更正了此前“就是”与“构成”的说法：Whole 只是活动的重合）。在 Brief 之下，这只要求同样的成员反复生起（Layered）；在 Ends 与 Listed 之下，要求不断新的成员（needs_new）；两者都不要求数目增长，原话中的“不断创造更多”没有由此推出；它不替代 Ren 的原话，不推出它是好的，也不决定“生生不息”读到哪个层次，那仍属于 Ren。",
+    "en": "The fifth independent review (I10) found that a lineage and its members are two levels of one unfolding, with the part–whole relation the one a single level of naming omits, and wrote in its §4 item 7 that a representation with a part–whole relation among formations would make it a theorem. This result gives that representation and theorem. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). Where parts are brief, or end with finitely many active at once, persistence read at the level of the whole (the lineage) needs unceasing generation at the level of its members: the two levels are not alternatives, and the whole's 不息 goes through its parts' 生生 (the author's interpretation, an AI argument; K3 of the seventh independent review corrected the earlier “is” and “made of”: Whole is only coincidence of activity). Under Brief this needs only the same members arising again (Layered); under Ends and Listed it needs ever new members (needs_new); neither needs their number to grow, so “unceasingly creating more” in Ren's words does not follow from it; it does not replace Ren's words, does not show that it is good, and does not decide at which level 生生不息 is read, which remains Ren's."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
   "aliases": [
@@ -46,7 +46,12 @@
     "Becoming.Immortal.immortal",
     "Becoming.Countless.countless",
     "Becoming.Gaps.gaps",
-    "Becoming.Layered.composed"
+    "Becoming.Layered.composed",
+    "Becoming.Web.Covered",
+    "Becoming.Web.whole_self",
+    "Becoming.Web.Covered.needs_new",
+    "Becoming.Web.Whole.needs_new",
+    "Becoming.Layered.arise_again"
   ],
   "dependencies": [
     {
@@ -140,21 +145,35 @@
         "zh": "逆命题不成立：部分在任意晚的步生起，整体在其间不活跃（Gaps.gaps）。界 d 可以达到（Shifts.shifts）。",
         "en": "The converse fails: parts arise at arbitrarily late steps while the whole is inactive between them (Gaps.gaps). The bound d is attained (Shifts.shifts)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
+      "detail": {
+        "zh": "Whole 是活动的重合：每个形成都是它自身的整体（whole_self），两个每步都活跃的形成互为整体（Immortal.each_other）（第七次独立审查 K3）。",
+        "en": "Whole is coincidence of activity: every formation is the whole of itself (whole_self), and two formations active at every step are each the whole of the other (Immortal.each_other) (seventh independent review, K3)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
+      "detail": {
+        "zh": "在 Brief 之下，生成可以是同样的部分反复生起（Layered.brief、Layered.within、Layered.arise_again）：Layered 的两个成员都 Brief 1，arises_within 适用，每步都有成员生起，每次生起都是两者之一，它们的活动不终结（第七次独立审查 K3、K5）。",
+        "en": "Under Brief, generation may be the same parts arising again (Layered.brief, Layered.within, Layered.arise_again): both members of Layered are Brief 1, arises_within applies, a member arises at every step, every arising is of one of the two, and neither's activity ends (seventh independent review, K3, K5)."
+      }
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词；整体只由活动关联部分，整体的依存、汲取与侵蚀没有从部分推出；部分关系是静态的，成员资格不随步变化；Brief 与 Ends、Listed 是对部分的前提，部分可以再生起而不终结（Layered 的成员）；生起依赖跨步的同一；结论不说哪个部分生起，也不说数目增长；“生生不息”读到哪个层次属于 Ren；见证都是最小见证。",
-    "en": "Contains no ethical predicate; the whole relates to its parts only through activity, and its dependence, drawing and undermining are not derived from its parts'; the part relation is static, membership not changing from step to step; Brief, and Ends with Listed, are premises about the parts, which may also arise again rather than end (Layered's members); arising depends on identity across steps; the conclusion does not say which part arises, nor that their number grows; at which level 生生不息 is read is Ren's; the witnesses are minimal."
+    "zh": "不含伦理谓词；整体是活动的重合，不是构成（whole_self、Immortal.each_other），arises_within 与 needs_arising 只用到部分的覆盖（Covered）；整体只由活动关联部分，整体的依存、汲取与侵蚀没有从部分推出；部分关系是静态的，成员资格不随步变化；Brief 与 Ends、Listed 是对部分的前提，部分可以再生起而不终结（Layered 的成员）；生起依赖跨步的同一；结论不说哪个部分生起，也不说数目增长；“生生不息”读到哪个层次属于 Ren；见证都是最小见证。",
+    "en": "Contains no ethical predicate; Whole is coincidence of activity, not constitution (whole_self, Immortal.each_other), and arises_within and needs_arising use only the parts' cover (Covered); the whole relates to its parts only through activity, and its dependence, drawing and undermining are not derived from its parts'; the part relation is static, membership not changing from step to step; Brief, and Ends with Listed, are premises about the parts, which may also arise again rather than end (Layered's members); arising depends on identity across steps; the conclusion does not say which part arises, nor that their number grows; at which level 生生不息 is read is Ren's; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T071936.578078Z）：Becoming.Wholes 的 26 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 676 项定理／1115 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §21，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T071936.578078Z): all 26 theorems of Becoming.Wholes have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 676 theorems/1115 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §21 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T083555.066952Z）：Becoming.Wholes 的 26 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 728 项定理／1182 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §21，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T083555.066952Z): all 26 theorems of Becoming.Wholes have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 728 theorems/1182 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §21 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean",
       "role": "proof",
-      "sha256": "723a9ab162603e71795c50042943d73dc4926950e9319cf984b7b0a85a1f6b66",
+      "sha256": "06e31bb7bbb6f7b4766bb634614e6ab8b562e75ee26055b55bbfae27e41567e3",
       "declarations": [
         "Becoming.Web.Whole",
         "Becoming.Web.Listed",
@@ -196,13 +215,24 @@
         "Becoming.Gaps.listed",
         "Becoming.Gaps.ends",
         "Becoming.Gaps.gaps",
-        "Becoming.Layered.composed"
+        "Becoming.Layered.composed",
+        "Becoming.Web.Covered",
+        "Becoming.Web.whole_self",
+        "Becoming.Web.Covered.arises_within",
+        "Becoming.Web.Covered.needs_arising",
+        "Becoming.Web.Covered.needs_new",
+        "Becoming.Web.Whole.covered",
+        "Becoming.Web.Whole.needs_new",
+        "Becoming.Immortal.each_other",
+        "Becoming.Layered.brief",
+        "Becoming.Layered.within",
+        "Becoming.Layered.arise_again"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "role": "proof",
-      "sha256": "9b61a3e1f816a7df984660091de393d6c2ebde44b4561ff722d80762648a4b02",
+      "sha256": "adb20996ed2d228e18a322030d8c89a305790c8cf357e56130b5aa426281707d",
       "declarations": [
         "Becoming.odd",
         "Becoming.Layered.Level",
@@ -230,19 +260,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "54c294a996bace9e0db91c25ce243e702234ee44d4b88545e3d538336a99bd86",
+      "sha256": "9f88686a43221f44bbc57933ca08911059042ac9b92e5dd8683c7c08bdbe2138",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "47e077148ea211a1956eabedc1cba2ebae2a2c1d19b092ec599435c64308f215",
+      "sha256": "6fb989e96f834472e06e88b060359f3241cfbb24d0879f4694b6e335dcdc8ed5",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "be28bfe28698ac5ea4bc73bc69f7b518bd50dbec36c6d6fd6822b9480dce942b",
+      "sha256": "b737ef243f02a2a4ce19cb53217a75f8b40bed7e797def7eff9270f6784c799f",
       "declarations": []
     },
     {
@@ -268,6 +298,12 @@
       "role": "provenance",
       "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md",
+      "role": "review",
+      "sha256": "10f7315ace2daa1fab3e9eb04106c0fb7c44d11d52eb6664771faf4f9bc3cf63",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -291,6 +327,14 @@
     {
       "zh": "2026-10-09：P16b 整合第六次独立审查、扩展 Becoming.Dissipation、Roles、Identity、Population 与 Correspondence 后，合并检查器重跑（20261009T071936.578078Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P16b integrated the sixth independent review and extended Becoming.Dissipation, Roles, Identity, Population and Correspondence, the consolidated checker was rerun (20261009T071936.578078Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P16c 整合第七次独立审查（K3–K5、K8(g)）：Whole 是活动的重合（whole_self、Immortal.each_other）；两个定理改由覆盖陈述（Covered、Whole.covered），新增 needs_new（不断新的部分）；Layered 的成员 Brief 1，同样的部分反复生起（Layered.brief、within、arise_again）；标题加入 Listed，“就是／构成”改为“经由／需要”；原有定理与证明保持，Whole.arises_within 与 needs_arising 由覆盖形式推出。",
+      "en": "2026-10-09: P16c integrates the seventh independent review (K3–K5, K8(g)): Whole is coincidence of activity (whole_self, Immortal.each_other); the two theorems are stated for a cover (Covered, Whole.covered), with needs_new (ever new parts) added; Layered's members are Brief 1 and the same parts arise again (Layered.brief, within, arise_again); the title adds Listed, and “is/made of” becomes “through/needs”; the existing theorems keep their statements, Whole.arises_within and needs_arising now following from the cover forms."
+    },
+    {
+      "zh": "2026-10-09：P16c 整合第七次独立审查、扩展 Becoming.Dissipation、Roles、Wholes 与 Identity 后，合并检查器重跑（20261009T083555.066952Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P16c integrated the seventh independent review and extended Becoming.Dissipation, Roles, Wholes and Identity, the consolidated checker was rerun (20261009T083555.066952Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

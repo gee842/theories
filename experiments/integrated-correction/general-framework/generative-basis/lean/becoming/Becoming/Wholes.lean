@@ -1,24 +1,34 @@
 import Becoming.Identity
 
 /-!
-# Wholes: a whole of parts that end persists only through their generation
+# Wholes: a persisting whole of brief parts, or of ending listed parts, needs their generation
 
 `Becoming.Identity` names a lineage either as one formation or as its members (`Lineage`).
 `Layered` names both, with no relation saying that the lineage is constituted by its
-members. This module states that part–whole relation and proves what it carries.
+members. This module states one part–whole relation, coincidence of activity, and proves
+what it carries.
 
 * A formation is the *whole* of some parts when it is active exactly while some part is
-  (`Web.Whole`). The active parts are *listed* when at each step a finite list names
-  exactly them (`Web.Listed`). A formation's activity *ends* when from some step on it is
-  never active (`Web.Ends`); it is *brief* for `d` when it is never active at two steps
-  `d` apart (`Web.Brief`).
+  (`Web.Whole`). This is coincidence of activity, not constitution: every formation is the
+  whole of itself (`Web.whole_self`), and two formations active at every step are each the
+  whole of the other (`Immortal.each_other`). Parts *cover* the steps from `T` on when
+  some part is active at each of them (`Web.Covered`). The active parts are *listed* when
+  at each step a finite list names exactly them (`Web.Listed`). A formation's activity
+  *ends* when from some step on it is never active (`Web.Ends`); it is *brief* for `d`
+  when it is never active at two steps `d` apart (`Web.Brief`).
 * A whole arises only as some part arises (`Whole.arises_part`), so a whole arising at
   arbitrarily late steps has parts arising at arbitrarily late steps
   (`Whole.parts_unceasing`).
-* A whole active at every step from some step on persists only through the generation of
-  its parts. If no part is active at two steps `d` apart, a part arises within every `d`
-  consecutive steps (`Whole.arises_within`). If each part's activity ends and the active
-  parts are listed, parts arise at arbitrarily late steps (`Whole.needs_arising`).
+* A cover needs the generation of parts. If no part is active at two steps `d` apart, a
+  part arises within every `d` consecutive steps (`Covered.arises_within`). If each part's
+  activity ends and the active parts are listed, parts arise at arbitrarily late steps
+  (`Covered.needs_arising`), and outside every finite list of parts: ever new parts
+  (`Covered.needs_new`). A whole active at every step from some step on is covered by its
+  parts (`Whole.covered`), so it persists only through the generation of its parts
+  (`Whole.arises_within`, `Whole.needs_arising`, `Whole.needs_new`). Under brevity that
+  generation may be the same parts arising again (`Layered`); where parts end and are
+  listed, it is ever new parts, though not more of them (`Generations` has two active at
+  every step).
 * Each premise is needed. With a part whose activity never ends, a whole persists while
   nothing arises (`Immortal`). With infinitely many parts active at once, each ending at
   a different step, it persists while nothing arises, so no finite list names its active
@@ -28,8 +38,9 @@ members. This module states that part–whole relation and proves what it carrie
   working in shifts of two steps arise only across odd steps (`Shifts`). The converse
   fails: parts arising at arbitrarily late steps, each active once, leave the whole
   inactive between them (`Gaps`).
-* `Layered`'s lineage is the whole of its members (`Layered.composed`); its members arise
-  again and again rather than ending.
+* `Layered`'s lineage is the whole of its members (`Layered.composed`). Its members are
+  brief for one step, so one arises at every step (`Layered.brief`, `Layered.within`);
+  every arising is of one of the two, whose activity does not end (`Layered.arise_again`).
 
 Which formations are parts of which, and whether a lineage is read as the whole of its
 members, are representational choices. At which level 生生不息 is read is Ren's. No
@@ -61,6 +72,17 @@ def Ends (f : F) : Prop :=
 steps, it is active for at most `d` of them. -/
 def Brief (d : Nat) (f : F) : Prop :=
   ∀ t, W.active t f → ¬ W.active (t + d) f
+
+/-- The formations satisfying `parts` cover the steps from `T` on: at each of them some
+part is active. -/
+def Covered (parts : F → Prop) (T : Nat) : Prop :=
+  ∀ t, T ≤ t → ∃ p, parts p ∧ W.active t p
+
+/-- Every formation is the whole of itself: `Whole` is coincidence of activity, not
+constitution. -/
+theorem whole_self (f : F) : W.Whole (· = f) f :=
+  fun _ => ⟨fun active => ⟨f, rfl, active⟩,
+    fun ⟨_, same, active⟩ => Eq.subst (motive := fun g => W.active _ g) same active⟩
 
 variable {W} {parts : F → Prop} {w : F}
 
@@ -99,32 +121,71 @@ theorem active_back {S : Nat} : ∀ {k : Nat},
       ⟨fun before => active_back (fun j below => quiet j (Nat.lt_succ_of_lt below)) part before
         inactive, active⟩
 
+/-- Parts covering the steps from `T` on, none of them active at two steps `d` apart,
+have a part arising within every `d` consecutive steps from `T` on. -/
+theorem Covered.arises_within {d T : Nat} (covered : W.Covered parts T)
+    (brief : ∀ p, parts p → W.Brief d p) {S : Nat} (after : T ≤ S) :
+    ¬ ∀ j, j < d → ∀ p, parts p → ¬ W.Arises (S + j) p :=
+  fun quiet => match covered (S + d) (Nat.le_trans after (Nat.le_add_right S d)) with
+  | ⟨_, part, active⟩ =>
+    active_back quiet part active fun before => brief _ part S before active
+
+/-- Parts covering the steps from some step on, each of whose activity ends, with the
+active ones listed, arise at arbitrarily late steps. -/
+theorem Covered.needs_arising {T : Nat} {alive : Nat → List F} (covered : W.Covered parts T)
+    (listed : W.Listed parts alive) (ends : ∀ p, parts p → W.Ends p) (N : Nat) :
+    ¬ ∀ t, N ≤ t → ∀ p, parts p → ¬ W.Arises t p :=
+  fun quiet => match Ends.all (l := alive (N + T)) fun p mem => ends p ((listed _ p).mp mem).1 with
+  | ⟨M, gone⟩ =>
+    match covered (N + T + M) (Nat.le_trans (Nat.le_add_left T N)
+        (Nat.le_add_right (N + T) M)) with
+    | ⟨p, part, active⟩ =>
+      active_back (fun j _ p part => quiet (N + T + j)
+          (Nat.le_trans (Nat.le_add_right N T) (Nat.le_add_right (N + T) j)) p part) part
+        active fun before => gone p ((listed _ p).mpr ⟨part, before⟩) (N + T + M)
+          (Nat.le_add_left M (N + T)) active
+
+/-- So no finite list of parts carries the cover: parts outside it arise at arbitrarily
+late steps. -/
+theorem Covered.needs_new {T : Nat} {alive : Nat → List F} (covered : W.Covered parts T)
+    (listed : W.Listed parts alive) (ends : ∀ p, parts p → W.Ends p) {l : List F}
+    (within : ∀ p, p ∈ l → parts p) (N : Nat) :
+    ¬ ∀ t, N ≤ t → ∀ p, parts p → ¬ p ∈ l → ¬ W.Arises t p :=
+  fun quiet => match Ends.all (l := l) fun p mem => ends p (within p mem) with
+  | ⟨M, gone⟩ => covered.needs_arising listed ends (N + M)
+      fun t later p part arises => quiet t (Nat.le_trans (Nat.le_add_right N M) later) p part
+        (fun mem => gone p mem (t + 1)
+          (Nat.le_trans (Nat.le_add_left M N) (Nat.le_trans later (Nat.le_succ t))) arises.2)
+        arises
+
+/-- A whole active at every step from `T` on is covered by its parts from `T` on. -/
+theorem Whole.covered (whole : W.Whole parts w) {T : Nat}
+    (persists : ∀ t, T ≤ t → W.active t w) : W.Covered parts T :=
+  fun t later => (whole t).mp (persists t later)
+
 /-- A whole active at every step from `T` on, made of parts none of which is active at two
 steps `d` apart, has a part arising within every `d` consecutive steps from `T` on. -/
 theorem Whole.arises_within {d : Nat} (whole : W.Whole parts w)
     (brief : ∀ p, parts p → W.Brief d p) {T : Nat} (persists : ∀ t, T ≤ t → W.active t w)
     {S : Nat} (after : T ≤ S) : ¬ ∀ j, j < d → ∀ p, parts p → ¬ W.Arises (S + j) p :=
-  fun none => match (whole (S + d)).mp (persists (S + d) (Nat.le_trans after
-      (Nat.le_add_right S d))) with
-  | ⟨_, part, active⟩ =>
-    active_back none part active fun before => brief _ part S before active
+  (whole.covered persists).arises_within brief after
 
 /-- A whole active at every step from some step on, made of parts each of whose activity
-ends, with its active parts listed, has parts arising at arbitrarily late steps: its
-persistence is the unceasing generation of its parts. -/
+ends, with its active parts listed, has parts arising at arbitrarily late steps: it
+persists only through the unceasing generation of its parts. -/
 theorem Whole.needs_arising {alive : Nat → List F} (whole : W.Whole parts w)
     (listed : W.Listed parts alive) (ends : ∀ p, parts p → W.Ends p) {T : Nat}
     (persists : ∀ t, T ≤ t → W.active t w) (N : Nat) :
     ¬ ∀ t, N ≤ t → ∀ p, parts p → ¬ W.Arises t p :=
-  fun none => match Ends.all (l := alive (N + T)) fun p mem => ends p ((listed _ p).mp mem).1 with
-  | ⟨M, gone⟩ =>
-    match (whole (N + T + M)).mp (persists (N + T + M)
-        (Nat.le_trans (Nat.le_add_left T N) (Nat.le_add_right (N + T) M))) with
-    | ⟨p, part, active⟩ =>
-      active_back (fun j _ p part => none (N + T + j)
-          (Nat.le_trans (Nat.le_add_right N T) (Nat.le_add_right (N + T) j)) p part) part
-        active fun before => gone p ((listed _ p).mpr ⟨part, before⟩) (N + T + M)
-          (Nat.le_add_left M (N + T)) active
+  (whole.covered persists).needs_arising listed ends N
+
+/-- Such a whole persists only through ever new parts: parts outside any finite list of
+parts arise at arbitrarily late steps. -/
+theorem Whole.needs_new {alive : Nat → List F} (whole : W.Whole parts w)
+    (listed : W.Listed parts alive) (ends : ∀ p, parts p → W.Ends p) {T : Nat}
+    (persists : ∀ t, T ≤ t → W.active t w) {l : List F} (within : ∀ p, p ∈ l → parts p)
+    (N : Nat) : ¬ ∀ t, N ≤ t → ∀ p, parts p → ¬ p ∈ l → ¬ W.Arises t p :=
+  (whole.covered persists).needs_new listed ends within N
 
 end Web
 
@@ -282,6 +343,11 @@ theorem immortal : web.Whole (· = true) false ∧ web.Listed (· = true) (fun _
    fun _ => trivial, fun _ _ arises => arises.1 trivial,
    fun ⟨T, gone⟩ => gone T (Nat.le_refl T) trivial⟩
 
+/-- The two formations, active at every step, are each the whole of the other. -/
+theorem each_other : web.Whole (· = true) false ∧ web.Whole (· = false) true :=
+  ⟨fun _ => ⟨fun _ => ⟨true, rfl, trivial⟩, fun _ => trivial⟩,
+   fun _ => ⟨fun _ => ⟨false, rfl, trivial⟩, fun _ => trivial⟩⟩
+
 end Immortal
 
 namespace Countless
@@ -389,11 +455,44 @@ theorem gaps : web.Whole Generations.parts .lineage ∧ web.Listed Generations.p
 
 end Gaps
 
-/-- `Layered`'s lineage is the whole of its members. -/
-theorem Layered.composed : Layered.web.Whole (· ≠ .lineage) .lineage :=
+namespace Layered
+
+/-- The lineage is the whole of its members. -/
+theorem composed : web.Whole (· ≠ .lineage) .lineage :=
   fun t => ⟨fun _ => match h : odd t with
-      | true => ⟨.second, Layered.Level.noConfusion, h⟩
-      | false => ⟨.first, Layered.Level.noConfusion, h⟩,
+      | true => ⟨.second, Level.noConfusion, h⟩
+      | false => ⟨.first, Level.noConfusion, h⟩,
     fun _ => trivial⟩
+
+/-- Neither member is active at two consecutive steps. -/
+theorem brief : ∀ p, p ≠ Level.lineage → web.Brief 1 p
+  | .first, _ => fun t now later =>
+      Bool.noConfusion ((congrArg (!·) now).symm.trans (later : (!odd t) = false))
+  | .second, _ => fun t now later =>
+      Bool.noConfusion ((congrArg (!·) now).symm.trans (later : (!odd t) = true))
+  | .lineage, other => absurd rfl other
+
+/-- So `Whole.arises_within` applies with `d = 1`: a member arises across every step. -/
+theorem within (S : Nat) : ¬ ∀ j, j < 1 → ∀ p, p ≠ Level.lineage → ¬ web.Arises (S + j) p :=
+  composed.arises_within brief (T := 0) (fun _ _ => trivial) (Nat.zero_le S)
+
+/-- Every arising is the arising of one of the two members, and neither member's activity
+ends: under brevity the generation that carries the lineage is the same two members
+arising again, nothing new. -/
+theorem arise_again :
+    (∀ t p, web.Arises t p → p ∈ [Level.first, .second]) ∧ ¬ web.Ends .first ∧
+    ¬ web.Ends .second :=
+  ⟨fun _ p arises => match p, arises with
+    | .first, _ => .head _
+    | .second, _ => .tail _ (.head _)
+    | .lineage, arises => absurd trivial arises.1,
+   fun ⟨T, gone⟩ => match h : odd T with
+    | false => gone T (Nat.le_refl T) h
+    | true => gone (T + 1) (Nat.le_succ T) (congrArg (!·) h),
+   fun ⟨T, gone⟩ => match h : odd T with
+    | true => gone T (Nat.le_refl T) h
+    | false => gone (T + 1) (Nat.le_succ T) (congrArg (!·) h)⟩
+
+end Layered
 
 end Becoming
