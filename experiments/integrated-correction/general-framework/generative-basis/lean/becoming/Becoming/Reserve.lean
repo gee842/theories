@@ -41,16 +41,21 @@ step.
   the end the same way: unsupported, a formation arises only finitely often
   (`Carries.arising_finitely`), and a reserve that decays while dormant, as a seed's
   viability, bounds the time as well (`Web.Decays`, `Carries.ends_within`). With such a
-  reserve, coextinction runs down a chain of dependence: each relatum of the chain has
-  ended once the reserves of the links before it have passed, each read where the link
-  before it ended (`Carries.chain_ends`, `Web.chainEnd`); with the zero reserve this is
-  coextinction at once (`chainEnd_zero`). Without decay, with excluded middle as a
+  reserve, coextinction runs down a chain of dependence of any length: each relatum of the
+  chain has ended once the reserves of the links before it have passed, each read where
+  the link before it ended (`Carries.chain_ends`, `Web.chainEnd`); with the zero reserve
+  this is coextinction at once (`chainEnd_zero`). A food chain is finite, and so is every
+  chain in a web whose dependences climb a bounded rank (`Web.no_unending_chain`); an
+  unending chain is the case of every length. Without decay, with excluded middle as a
   hypothesis, each relatum of the chain still ends, at a step for which no bound is given
-  (`Carries.chain_ends_of_em`). The bounds are attained, with their premises,
-  by a seed waking twice in the dark on its reserve (`Seed`), by a seed waking once
-  before its viability is spent (`Viable`), by a fox outliving the hare by its fat
-  (`Famine`) and by a chain in which each relatum outlives the one it depends on by one
-  step (`Cascade`).
+  (`Carries.chain_ends_of_em`). That step does not follow in general without omniscience:
+  if every formation never supported, with a carried reserve and decided activity, had a
+  step after which it is never active, even where it is active at most once, `LPO` would
+  hold (`Web.lpo_of_ending`, `Once`). The bounds are attained, with their
+  premises, by a seed waking twice in the dark on its reserve (`Seed`), by a seed waking
+  once before its viability is spent (`Viable`), by a fox outliving the hare by its fat
+  (`Famine`), by a chain in which each relatum outlives the one it depends on by one step
+  (`Cascade`) and by that chain cut to three relata (`ShortCascade`).
 * **Standing beyond activity.** Generation bears replenishment where a relatum comes to
   stand (`Becoming.Flow`, `Becoming.Dissipation`); an embodied relatum comes to stand as
   it arises (`Becoming.Roles`). A relatum that stands while it is active, and did not
@@ -313,44 +318,66 @@ theorem chainEnd_zero (chain : Nat → X) (T : Nat) :
   | 0 => rfl
   | k + 1 => chainEnd_zero chain T k
 
-/-- Coextinction along a chain: where each relatum of a chain depends at a positive need on
-the one before it from step `T` on, the relata are embodied, the reserve decays, and the
-first has ended from `T`, each later relatum has ended once the reserves of the links
-before it have passed (`chainEnd`). Each link outlasts the one before it by at most its
-reserve at that one's end. -/
+/-- Coextinction along a chain: where, in a chain of `n` links, each relatum depends at a
+positive need on the one before it from step `T` on, the relata depended on are embodied,
+the reserve decays, and the first has ended from `T`, each relatum up to the `n`th has
+ended once the reserves of the links before it have passed (`chainEnd`). Each link
+outlasts the one before it by at most its reserve at that one's end. A food chain is such
+a chain; an unending chain is the case of every `n`. -/
 theorem Carries.chain_ends {r : Nat → X → Nat} (carries : W.Carries r) (decays : W.Decays r)
-    {chain : Nat → X} (embodied : ∀ k, W.Embodied (chain k)) {T : Nat}
-    (bears : ∀ k t, T ≤ t →
+    {chain : Nat → X} {n : Nat} (embodied : ∀ k, k < n → W.Embodied (chain k)) {T : Nat}
+    (bears : ∀ k t, k < n → T ≤ t →
       W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
     (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
-    ∀ k t, chainEnd r chain T k ≤ t → ¬ W.active t (chain k)
-  | 0 => ended
-  | k + 1 => fun _ later active =>
-    have unsupported := unsupported_after_end (embodied k)
-      (fun s from_ => bears k s (Nat.le_trans (chainEnd_ge r chain T k) from_))
-      (carries.chain_ends decays embodied bears ended k)
+    ∀ k, k ≤ n → ∀ t, chainEnd r chain T k ≤ t → ¬ W.active t (chain k)
+  | 0, _ => ended
+  | k + 1, within => fun _ later active =>
+    have unsupported := unsupported_after_end (embodied k within)
+      (fun s from_ => bears k s within (Nat.le_trans (chainEnd_ge r chain T k) from_))
+      (carries.chain_ends decays embodied bears ended k (Nat.le_of_succ_le within))
     match le_dest later with
     | ⟨m, same⟩ => carries.ends_within decays unsupported (Nat.le_add_right _ m)
         (Eq.subst (motive := fun s => W.active s (chain (k + 1)))
           (same.trans (Nat.add_assoc _ _ m)) active)
 
-/-- Coextinction along a chain without decay: with excluded middle as a hypothesis, where
-each relatum of a chain depends at a positive need on the one before it from step `T` on,
-the relata are embodied and the first has ended from `T`, each relatum has ended from some
-step. No bound is given: a dormant link can wake arbitrarily late (`Seed`). -/
+/-- Coextinction along a chain without decay: with excluded middle as a hypothesis, where,
+in a chain of `n` links, each relatum depends at a positive need on the one before it from
+step `T` on, the relata depended on are embodied and the first has ended from `T`, each
+relatum up to the `n`th has ended from some step. No bound is given: a dormant link can
+wake arbitrarily late (`Seed`). -/
 theorem Carries.chain_ends_of_em (em : ∀ P : Prop, P ∨ ¬ P) {r : Nat → X → Nat}
-    (carries : W.Carries r) {chain : Nat → X} (embodied : ∀ k, W.Embodied (chain k)) {T : Nat}
-    (bears : ∀ k t, T ≤ t →
+    (carries : W.Carries r) {chain : Nat → X} {n : Nat}
+    (embodied : ∀ k, k < n → W.Embodied (chain k)) {T : Nat}
+    (bears : ∀ k t, k < n → T ≤ t →
       W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
     (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
-    ∀ k, ∃ E, T ≤ E ∧ ∀ t, E ≤ t → ¬ W.active t (chain k)
-  | 0 => ⟨T, Nat.le_refl T, ended⟩
-  | k + 1 => match carries.chain_ends_of_em em embodied bears ended k with
+    ∀ k, k ≤ n → ∃ E, T ≤ E ∧ ∀ t, E ≤ t → ¬ W.active t (chain k)
+  | 0, _ => ⟨T, Nat.le_refl T, ended⟩
+  | k + 1, within => match carries.chain_ends_of_em em embodied bears ended k
+      (Nat.le_of_succ_le within) with
     | ⟨E, from_T, gone⟩ =>
-      match exists_not_of_em em (carries.active_finitely (unsupported_after_end (embodied k)
-          (fun s from_ => bears k s (Nat.le_trans from_T from_)) gone)) with
+      match exists_not_of_em em (carries.active_finitely
+          (unsupported_after_end (embodied k within)
+            (fun s from_ => bears k s within (Nat.le_trans from_T from_)) gone)) with
       | ⟨N, quiet⟩ => ⟨E + N, Nat.le_trans from_T (Nat.le_add_right E N),
           fun t later active => quiet ⟨t, Nat.le_trans (Nat.le_add_left N E) later, active⟩⟩
+
+theorem climbs {ρ : X → Nat} {chain : Nat → X}
+    (up : ∀ k, ρ (chain k) < ρ (chain (k + 1))) : ∀ k, k ≤ ρ (chain k)
+  | 0 => Nat.zero_le _
+  | k + 1 => Nat.lt_of_le_of_lt (climbs up k) (up k)
+
+/-- Where every dependence climbs a rank bounded by `K`, as in every finite web without a
+cycle of dependence, no chain of dependence goes on without end: chains there are finite,
+as a food chain is. -/
+theorem no_unending_chain {ρ : X → Nat} {K : Nat}
+    (ranked : ∀ t g c, W.requires t g c → ρ c < ρ g ∧ ρ g ≤ K) {chain : Nat → X} {T : Nat}
+    (bears : ∀ k t, T ≤ t →
+      W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k)) :
+    False :=
+  Nat.not_succ_le_self K (Nat.le_trans
+    (climbs (fun k => (ranked T _ _ (bears k T (Nat.le_refl T)).1).1) (K + 1))
+    (ranked T _ _ (bears K T (Nat.le_refl T)).1).2)
 
 /-- A relatum standing while it is active, without standing at `T` and active at a later
 `t`, came to stand across some step between them. -/
@@ -742,6 +769,118 @@ theorem cascade : web.Carries reserve ∧ web.Decays reserve ∧ (∀ x, web.Emb
    fun k => ⟨ends k, Nat.le_refl k⟩⟩
 
 end Cascade
+
+namespace ShortCascade
+
+/-- `Cascade` cut to three relata: relatum `x + 1` depends on relatum `x` only for
+`x + 1 ≤ 2`. -/
+def web : Web Nat Nat where
+  level t x := Cascade.upto t x
+  active t x := t ≤ x
+  requires _ x c := x = c + 1 ∧ x ≤ 2
+  need _ _ _ := 1
+  draws _ _ _ := False
+
+theorem unsupported {t x : Nat} (no : ¬ web.Supported t x) : ¬ Cascade.web.Supported t x :=
+  fun supported => no fun c requires => supported c requires.1
+
+theorem carries : web.Carries Cascade.reserve :=
+  fun t x no => Cascade.carries t x (unsupported no)
+
+theorem decays : web.Decays Cascade.reserve :=
+  fun t x no => Cascade.decays t x (unsupported no)
+
+theorem ranked : ∀ t g c, web.requires t g c → c < g ∧ g ≤ 2 :=
+  fun _ _ c requires =>
+    ⟨Eq.subst (motive := fun g => c < g) requires.1.symm (Nat.lt_succ_self c), requires.2⟩
+
+end ShortCascade
+
+/-- The finite form covers finite chains. In `Cascade` cut to three relata, relatum `2` is
+not active from step `chainEnd 2 = 3` on, and the bound is attained: it is active at step
+`2`. No unending chain of dependence runs through this web (`Web.no_unending_chain`). -/
+theorem short_cascade :
+    ShortCascade.web.Carries Cascade.reserve ∧ ShortCascade.web.Decays Cascade.reserve ∧
+    (∀ t, Web.chainEnd Cascade.reserve (fun k => k) 1 2 ≤ t → ¬ ShortCascade.web.active t 2) ∧
+    Web.chainEnd Cascade.reserve (fun k => k) 1 2 = 2 + 1 ∧ ShortCascade.web.active 2 2 ∧
+    ∀ (chain : Nat → Nat) (T : Nat), ¬ ∀ k t, T ≤ t →
+      ShortCascade.web.requires t (chain (k + 1)) (chain k) ∧
+        0 < ShortCascade.web.need t (chain (k + 1)) (chain k) :=
+  ⟨ShortCascade.carries, ShortCascade.decays,
+   ShortCascade.carries.chain_ends ShortCascade.decays (chain := fun k => k) (n := 2)
+     (fun k _ => Cascade.embodied k) (fun _ _ lt _ => ⟨⟨rfl, lt⟩, Nat.zero_lt_one⟩)
+     (fun _ later active => Nat.not_succ_le_zero 0 (Nat.le_trans later active))
+     2 (Nat.le_refl 2),
+   Cascade.ends 2, Nat.le_refl 2,
+   fun _ _ bears => Web.no_unending_chain (ρ := fun x => x) (K := 2) ShortCascade.ranked bears⟩
+
+namespace Once
+
+/-- One for `true`, zero for `false`. -/
+def ind : Bool → Nat
+  | true => 1
+  | false => 0
+
+theorem ind_and_le : ∀ b c : Bool, ind (b && c) ≤ ind b
+  | true, true => Nat.le_refl 1
+  | true, false => Nat.zero_le 1
+  | false, _ => Nat.le_refl 0
+
+theorem ind_fall : ∀ b c : Bool, b = true → c = true → ind (b && !c) < ind b
+  | true, true, _, _ => Nat.zero_lt_one
+  | false, _, no, _ => nomatch no
+  | true, false, _, no => nomatch no
+
+variable (s : Nat → Bool)
+
+/-- One formation, never supported, active exactly at the first `true` of `s`. -/
+def web : Web Unit Unit where
+  level _ _ := 0
+  active t _ := clear s t = true ∧ s t = true
+  requires _ _ _ := True
+  need _ _ _ := 1
+  draws _ _ _ := False
+
+/-- One until the first `true` has passed. -/
+def reserve (t : Nat) (_ : Unit) : Nat :=
+  ind (clear s t)
+
+theorem unsupported (t : Nat) : ¬ (web s).Supported t () :=
+  fun supported => Nat.not_succ_le_zero 0 (supported () trivial)
+
+theorem carries : (web s).Carries (reserve s) :=
+  fun t _ _ => ⟨ind_and_le (clear s t) (!s t),
+    fun active => ind_fall (clear s t) (s t) active.1 active.2⟩
+
+/-- Its activity is decided. -/
+def decided (t : Nat) : Decidable ((web s).active t ()) :=
+  (instDecidableAnd : Decidable (clear s t = true ∧ s t = true))
+
+/-- It is active at most once. -/
+theorem once {t u : Nat} (at_t : (web s).active t ()) (at_u : (web s).active u ()) : t = u :=
+  Clear.first_unique s at_t.1 at_t.2 at_u.1 at_u.2
+
+end Once
+
+/-- A step after which a formation is never active needs omniscience. `active_finitely`
+gives only that a formation unsupported from some step on is not active at arbitrarily late
+steps. If every formation never supported, with a carried reserve and decided activity,
+had a step after which it is never active, `LPO` would hold, even where activity holds at
+most once (`Once`). So without decay, `chain_ends_of_em` takes excluded middle (the twelfth
+review's probe). -/
+theorem Web.lpo_of_ending
+    (ending : ∀ (W : Web Unit Unit) (r : Nat → Unit → Nat), (∀ t, Decidable (W.active t ())) →
+      W.Carries r → (∀ t, ¬ W.Supported t ()) → ∃ E, ∀ t, E ≤ t → ¬ W.active t ()) :
+    LPO := fun s =>
+  match ending (Once.web s) (Once.reserve s) (Once.decided s) (Once.carries s)
+      (Once.unsupported s) with
+  | ⟨E, quiet⟩ => match Clear.or_first s E with
+    | .inr ⟨m, _, _, yes⟩ => .inl ⟨m, yes⟩
+    | .inl c => .inr fun n => Clear.false_of_not (s n) fun yes =>
+      match Clear.first_of_true s yes with
+      | ⟨m, cm, ym⟩ => match Nat.lt_or_ge m E with
+        | .inl lt => Clear.not_both (Clear.false_before s c lt) ym
+        | .inr ge => quiet m ge ⟨cm, ym⟩
 
 namespace Sleeper
 

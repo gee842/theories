@@ -40,6 +40,19 @@ class RegistryTests(unittest.TestCase):
         self.proved['proof_bindings'][0]['sha256_pointer'] = '/no-such-source'
         self.assertIn('invalid proof receipt binding', self.errors())
 
+    def test_unelaborated_declaration_name_is_rejected(self):
+        for r in self.records:
+            refs = {x['path']: x for x in r.get('references', [])}
+            for binding in r.get('proof_bindings', []):
+                data = json.loads((registry.ROOT / binding['receipt']).read_text())
+                module = binding['sha256_pointer'].rsplit('/', 1)[-1]
+                names = refs[binding['source']].get('declarations', [])
+                if names and any(m.get('module') == module for m in data.get('modules', [])):
+                    names.append('Nowhere.' + names[0].split('.')[-1])
+                    self.assertIn('declarations not elaborated', self.errors())
+                    return
+        self.skipTest('no receipt lists elaborated declarations')
+
     def test_open_target_cannot_be_claimed_complete(self):
         next(r for r in self.records if r['kind'] == 'target')['status'] = 'reviewed-scoped'
         self.assertIn('a target cannot be marked completed', self.errors())

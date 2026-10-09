@@ -20,9 +20,13 @@ to be decidable at each step.
   of decidability too (`persists_of_em`); what fails and comes to be at no later step
   keeps failing, with no decidability (`stays_failing`). With excluded middle as a
   hypothesis, what does not recur has a step after which it does not occur
-  (`exists_not_of_em`). A formation's support changes only through its relations: it
-  stays supported where no dependence forms or tightens and no condition it depends on
-  falls (`Web.supported_of`).
+  (`exists_not_of_em`). Two stronger forms of what the core states, a step after which a
+  formation is never active and a list holding every member that ever holds, would each
+  give the limited principle of omniscience (`LPO`): every Boolean sequence has a `true`
+  or is `false` throughout, which excluded middle gives and no constructive proof does
+  (`Web.lpo_of_ending`, `Listed.lpo_of_few`). A formation's support changes only through
+  its relations: it stays supported where no dependence forms or tightens and no
+  condition it depends on falls (`Web.supported_of`).
 * **Rises and falls over a stretch.** Over any stretch of steps, an amount at the end with
   everything it fell is the amount at the start with everything it rose (`over_stretch`),
   and so for the total of a finite family with the rises and falls of its members
@@ -363,6 +367,85 @@ theorem persists_of_em (em : ∀ P : Prop, P ∨ ¬ P) {p : Nat → Prop} {S : N
     | .inl next => next
     | .inr next =>
       absurd ⟨persists_of_em em holds still n, next⟩ (still (S + n) (Nat.le_add_right S n))
+
+/-! ## Omniscience -/
+
+/-- The limited principle of omniscience: every Boolean sequence has a `true` or is `false`
+throughout. Excluded middle gives it; it has no constructive proof. -/
+def LPO : Prop :=
+  ∀ s : Nat → Bool, (∃ n, s n = true) ∨ ∀ n, s n = false
+
+/-- No `true` of `s` before `t`. -/
+def clear (s : Nat → Bool) : Nat → Bool
+  | 0 => true
+  | t + 1 => clear s t && !s t
+
+namespace Clear
+
+theorem cases : ∀ b : Bool, b = false ∨ b = true
+  | false => .inl rfl
+  | true => .inr rfl
+
+theorem false_of_not : ∀ b : Bool, (b = true → False) → b = false
+  | false, _ => rfl
+  | true, no => (no rfl).elim
+
+theorem not_both {b : Bool} (no : b = false) (yes : b = true) : False :=
+  nomatch no.symm.trans yes
+
+theorem and_left : ∀ {b c : Bool}, (b && c) = true → b = true
+  | true, _, _ => rfl
+  | false, _, both => both
+
+theorem and_right : ∀ {b c : Bool}, (b && c) = true → c = true
+  | true, _, both => both
+  | false, _, both => nomatch both
+
+theorem and_both : ∀ (b c : Bool), b = true → c = true → (b && c) = true
+  | true, true, _, _ => rfl
+  | false, _, no, _ => nomatch no
+  | true, false, _, no => nomatch no
+
+theorem of_not : ∀ {b : Bool}, (!b) = true → b = false
+  | false, _ => rfl
+  | true, no => nomatch no
+
+/-- With no `true` before `t`, none before an earlier step. -/
+theorem mono (s : Nat → Bool) {i : Nat} : ∀ {t}, i ≤ t → clear s t = true → clear s i = true
+  | _, .refl, c => c
+  | _ + 1, .step le, c => mono s le (and_left c)
+
+theorem false_before (s : Nat → Bool) {t : Nat} (c : clear s t = true) {i : Nat}
+    (lt : i < t) : s i = false :=
+  of_not (and_right (mono s lt c))
+
+/-- Up to any step, nothing is `true` or some earlier step is the first `true`. -/
+theorem or_first (s : Nat → Bool) :
+    ∀ n, clear s n = true ∨ ∃ m, m < n ∧ clear s m = true ∧ s m = true
+  | 0 => .inl rfl
+  | n + 1 => match or_first s n with
+    | .inr ⟨m, lt, c, yes⟩ => .inr ⟨m, Nat.lt_succ_of_lt lt, c, yes⟩
+    | .inl c => match cases (s n) with
+      | .inl no => .inl (and_both _ _ c (Eq.subst (motive := fun b => (!b) = true) no.symm rfl))
+      | .inr yes => .inr ⟨n, Nat.lt_succ_self n, c, yes⟩
+
+/-- A `true` has a first one. -/
+theorem first_of_true (s : Nat → Bool) {n : Nat} (yes : s n = true) :
+    ∃ m, clear s m = true ∧ s m = true :=
+  match or_first s n with
+  | .inl c => ⟨n, c, yes⟩
+  | .inr ⟨m, _, c, first⟩ => ⟨m, c, first⟩
+
+/-- The first `true` is one. -/
+theorem first_unique (s : Nat → Bool) {a b : Nat} (ca : clear s a = true) (ya : s a = true)
+    (cb : clear s b = true) (yb : s b = true) : a = b :=
+  match Nat.lt_or_ge a b with
+  | .inl lt => (not_both (false_before s cb lt) ya).elim
+  | .inr ge => match Nat.lt_or_ge b a with
+    | .inl lt => (not_both (false_before s ca lt) yb).elim
+    | .inr ge' => Nat.le_antisymm ge' ge
+
+end Clear
 
 /-- How many members of a finite family come to be across the step from `t`. -/
 def comings (as : List α) (p : α → Nat → Prop) [∀ a t, Decidable (p a t)] (t : Nat) : Nat :=

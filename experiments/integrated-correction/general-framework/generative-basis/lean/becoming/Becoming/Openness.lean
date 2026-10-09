@@ -87,9 +87,12 @@ giving needs uptake there; a fall is taken from.
   does not recur, not unboundedly many members ever hold (`Listed.few_of_quiet`). So in
   every world that comes to rest under the rest theorem, not unboundedly many relata are
   ever active and not unboundedly many ever stand (`World.rest_few`); conversely, where
-  finitely many are ever active and activity is decided, a census exists
-  (`World.counted_of_ever`). Beyond finite worlds the rest theorem reaches only relata
-  that never stand or act, as the idle ground of `hatch` (`World.hatch_idle`).
+  some list holds every relatum ever active and activity is decided, a census exists
+  (`World.counted_of_ever`). That stronger form, a list holding every member that ever
+  holds, does not follow without omniscience: for a determination listed by at most one
+  member and coming to hold at most once, it gives `LPO` (`Listed.lpo_of_few`, `Few`).
+  Beyond finite worlds the rest theorem reaches only relata that never stand or act, as
+  the idle ground of `hatch` (`World.hatch_idle`).
 * **The premises decide neither enclosure nor openness.** The sides of `Handing`, also
   taking a unit from each of infinitely many ground relata and giving it back at every
   step, meet all eight premises of `Becoming.Premises` and arise without end. No step is
@@ -463,6 +466,8 @@ theorem procession_world :
    fun N => ⟨N, N, Nat.le_refl N, rfl, Nat.ne_of_lt (Nat.lt_succ_self N)⟩,
    fun ⟨all, _, every⟩ => beyond_not_mem all (every (beyond all))⟩
 
+end World
+
 namespace Slow
 
 /-- Relatum `x` is active at step `t` while below `B t`. -/
@@ -511,8 +516,6 @@ theorem slow_world {B : Nat → Nat} (grows : ∀ t, B t ≤ B (t + 1))
       | .inr later => match rises_between (q := B) later higher with
         | ⟨t, from_, _, up⟩ => ⟨t, B t, from_, Nat.lt_irrefl (B t), up⟩,
    fun t _ ceases => ceases.2 (Nat.lt_of_lt_of_le ceases.1 (grows t))⟩
-
-end World
 
 /-! ## Worlds come to rest -/
 
@@ -675,6 +678,97 @@ theorem Listed.few_of_quiet {p : α → Nat → Prop} [∀ a t, Decidable (p a t
         | ⟨s, after, comes⟩ => ⟨s, a, after, comes⟩
       | isFalse early => absurd (mem_gather (((listed t).2 a).mp holds)
           (Nat.le_of_lt (Nat.gt_of_not_le early))) out
+
+namespace Few
+
+/-- `[t]` where `b`, and `l` otherwise. -/
+def pick : Bool → Nat → List Nat → List Nat
+  | true, t, _ => [t]
+  | false, _, l => l
+
+variable (s : Nat → Bool)
+
+/-- The first `true` of `s`, once it has passed. -/
+def found : Nat → List Nat
+  | 0 => []
+  | t + 1 => pick (clear s t && s t) t (found t)
+
+/-- Holding at `t`: being the first `true` of `s`, before `t`. -/
+abbrev passed (a t : Nat) : Prop :=
+  a < t ∧ clear s a = true ∧ s a = true
+
+theorem distinct_pick : ∀ (b : Bool) (t : Nat) {l : List Nat}, Distinct l →
+    Distinct (pick b t l)
+  | true, _, _, _ => ⟨fun no => (nomatch no), trivial⟩
+  | false, _, _, distinct => distinct
+
+theorem distinct_found : ∀ t, Distinct (found s t)
+  | 0 => trivial
+  | t + 1 => distinct_pick (clear s t && s t) t (distinct_found t)
+
+theorem mem_pick (t a : Nat) : ∀ b : Bool, (clear s t && s t) = b →
+    (passed s a t ↔ a ∈ found s t) → (passed s a (t + 1) ↔ a ∈ pick b t (found s t))
+  | true, first, _ =>
+    ⟨fun ⟨_, c, yes⟩ => Eq.subst (motive := fun x => x ∈ [t])
+        (Clear.first_unique s (Clear.and_left first) (Clear.and_right first) c yes) (.head []),
+     fun mem => match mem_cons_cases mem with
+      | .inl same => Eq.subst (motive := fun x => passed s x (t + 1)) same.symm
+          ⟨Nat.lt_succ_self t, Clear.and_left first, Clear.and_right first⟩
+      | .inr no => nomatch no⟩
+  | false, notFirst, before =>
+    ⟨fun ⟨lt, c, yes⟩ => before.mp ⟨match Nat.lt_or_ge a t with
+        | .inl earlier => earlier
+        | .inr ge => (Clear.not_both notFirst
+            (Eq.subst (motive := fun x => (clear s x && s x) = true)
+              (Nat.le_antisymm (Nat.le_of_lt_succ lt) ge) (Clear.and_both _ _ c yes))).elim,
+        c, yes⟩,
+     fun mem => match before.mpr mem with
+      | ⟨lt, c, yes⟩ => ⟨Nat.lt_succ_of_lt lt, c, yes⟩⟩
+
+theorem mem_found : ∀ t a, passed s a t ↔ a ∈ found s t
+  | 0, a => ⟨fun holds => absurd holds.1 (Nat.not_lt_zero a), fun no => nomatch no⟩
+  | t + 1, a => mem_pick s t a (clear s t && s t) rfl (mem_found t a)
+
+/-- Being the first `true`, once passed, is listed at each step by at most one member. -/
+theorem listed : Listed (passed s) (found s) :=
+  fun t => ⟨distinct_found s t, fun a => mem_found s t a⟩
+
+/-- What comes to hold comes to hold at its own index. -/
+theorem comes_at {a t : Nat} (comes : ComesToBe (passed s a) t) : a = t :=
+  match comes with
+  | ⟨fails, ⟨lt, c, yes⟩⟩ => match Nat.lt_or_ge a t with
+    | .inl earlier => (fails ⟨earlier, c, yes⟩).elim
+    | .inr ge => Nat.le_antisymm (Nat.le_of_lt_succ lt) ge
+
+/-- Coming to hold happens at most once. -/
+theorem quiet : ¬ ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (passed s a) t :=
+  fun all => match all 0 with
+  | ⟨t₀, _, _, c₀⟩ => match all (t₀ + 1) with
+    | ⟨_, _, later, c₁⟩ =>
+      Nat.not_succ_le_self t₀ (Nat.le_trans later (Nat.le_of_eq
+        (((comes_at s c₁).symm.trans
+          (Clear.first_unique s c₁.2.2.1 c₁.2.2.2 c₀.2.2.1 c₀.2.2.2)).trans (comes_at s c₀))))
+
+end Few
+
+/-- `few_of_quiet` cannot be strengthened to a list holding every member that ever holds
+without omniscience: if every determination decided and listed at each step, whose coming
+to hold does not recur, had such a list, `LPO` would hold, even where at most one member is
+listed at each step and coming to hold happens at most once (`Few`; the twelfth review's
+probe). -/
+theorem Listed.lpo_of_few
+    (few : ∀ (p : Nat → Nat → Prop) (l : Nat → List Nat), (∀ a t, Decidable (p a t)) →
+      Listed p l → (¬ ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) →
+      ∃ L : List Nat, ∀ t a, p a t → a ∈ L) :
+    LPO := fun s =>
+  match few (Few.passed s) (Few.found s) (fun _ _ => inferInstance) (Few.listed s)
+      (Few.quiet s) with
+  | ⟨L, covers⟩ => match Clear.or_first s (beyond L) with
+    | .inr ⟨m, _, _, yes⟩ => .inl ⟨m, yes⟩
+    | .inl c => .inr fun n => Clear.false_of_not (s n) fun yes =>
+      match Clear.first_of_true s yes with
+      | ⟨m, cm, ym⟩ => Clear.not_both
+          (Clear.false_before s c (lt_beyond (covers (m + 1) m ⟨Nat.lt_succ_self m, cm, ym⟩))) ym
 
 namespace World
 
@@ -913,8 +1007,10 @@ def holding : World :=
 
 /-- Openness with the eight premises does not give arising without end: `holding` meets all
 eight with no step enclosed, and nothing ever arises or ceases (the eleventh review's
-probe). Under a census, with whatever arises embodied, balance and dissipation, openness is
-necessary for arising without end (`arising_opens`), not sufficient. -/
+probe). Under a census, with every relatum embodied, balance and dissipation, openness is
+necessary for arising without end (`arising_opens`), not sufficient. With only whatever
+arises embodied it is not necessary: `kindling` is enclosed at every step and arises
+without end (`rest_needs_standing`). -/
 theorem holding_world :
     holding.Premised ∧ (∀ t, ¬ holding.flow.Enclosed t) ∧ ¬ holding.ArisingRecurs ∧
     ¬ holding.CeasingRecurs ∧ ¬ holding.Finite :=

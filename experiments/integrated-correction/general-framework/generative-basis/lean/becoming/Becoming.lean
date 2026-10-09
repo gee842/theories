@@ -69,7 +69,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   family coming to be and ceasing to be keep pace, differing over any stretch by at most
   the number of members, and each recurs exactly when the other does; so with finitely
   many formations whose activity is decided, arising recurs exactly when ceasing
-  recurs.
+  recurs. Where the core states only a weaker form, the stronger form can imply the
+  limited principle of omniscience (`LPO`), which has no constructive proof.
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing. Under a
@@ -134,8 +135,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   from some step on is active at most as often as its reserve at the start, so a reserve
   defers the end after a loss and after coextinction and does not escape it, and a
   reserve decaying while dormant bounds the time as well, link by link down a chain of
-  dependence, each relatum ending once the reserves before it have passed; without decay,
-  with excluded middle as a hypothesis, each still ends, with no bound. A relatum
+  dependence of any length, each relatum ending once the reserves before it have passed,
+  a food chain being finite as every chain is where dependences climb a bounded rank;
+  without decay, with excluded middle as a hypothesis, each still ends, with no bound, and
+  a step after which a formation is never active does not follow in general without
+  omniscience. A relatum
   standing while active, absent earlier, came to stand before it was active: generation
   bears replenishment where standing rises, not where activity does.
 * `Becoming.Evolution` (L3): descent, transmission, variation and selection. A relatum
@@ -186,7 +190,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   with a census of what is active and of what stands, whose arising is embodied, balanced
   and dissipative, comes to rest once enclosed around what stands; the world need not be
   finite, but finitely many must stand and finitely many be active at each step, and in
-  a world that so comes to rest not unboundedly many relata ever stand or act. The finite rest of `Becoming.Space`
+  a world that so comes to rest not unboundedly many relata ever stand or act, though that
+  some list holds all of them does not follow in general without omniscience. The finite rest of `Becoming.Space`
   and the rest of worlds whose relata are all embodied are its cases, and each census is
   needed. The eight premises decide neither enclosure nor openness: one world meeting
   them with no step enclosed keeps arising, at zero net exchange, and another never

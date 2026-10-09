@@ -141,6 +141,14 @@ def validate(records):
                     raise ValueError('receipt does not bind the reviewed proof source')
                 if at_pointer(data, binding['success_pointer']) != binding['success_value'] or binding['success_value'] not in (True, 'passed'):
                     raise ValueError('receipt has no recorded success at the specified field')
+                # Where the receipt lists the declarations Lean elaborated for the bound
+                # module, each declaration the record names must be among them by full name.
+                module = binding['sha256_pointer'].rsplit('/', 1)[-1]
+                elaborated = {d.get('name') for m in data.get('modules', []) if isinstance(m, dict) and m.get('module') == module
+                              for d in m.get('declarations', []) if isinstance(d, dict)}
+                unknown = [n for n in source.get('declarations', []) if elaborated and n not in elaborated]
+                if unknown:
+                    raise ValueError(f'declarations not elaborated in {module}: {", ".join(unknown)}')
             except (KeyError, IndexError, ValueError, TypeError, OSError) as exc:
                 fail(f'invalid proof receipt binding: {exc}')
         if r.get('status') == 'reviewed-scoped' and not {'statement', 'review'} <= roles:

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T19:00:38+00:00",
+  "reviewed_at_utc": "2026-10-09T20:01:55+00:00",
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出、从某步 T 起每步至多 B 个（Listed，此后列表长度不超过 B），且每步可判定时，在任意晚的步有成员开始成立，就在任意晚的步有成员不再成立（Listed.ceasing_of_coming）。证明经过普查的平衡（census-balance）：开始成立复现时，从任一步起其间开始成立的累加而超过 B（recurring_accumulates）；列表回到 B 以内时，终点的列表短于起点的列表连同其间开始成立的，由平衡，其间有不再成立（Listed.ceasing_iff_shortfall）。所以界不必从某步起一直成立：列表只需在任意晚的步回到某数 K 以内（Listed.ceasing_of_returning）。P27 曾直接由列表的长短证明（一次开始成立若此前没有不再成立，列表就变长，而列表不能长过 B）；P30 改由平衡证明，那一路线的三个引理不再被用到，从核心中去掉。与普查定律（ceasing-needs-arising）合起来，两者同步（Listed.coming_iff_ceasing）。读于活动：在从某步起每步至多 B 个形成活跃的普查之下，生起复现恰当止息复现（Web.ceasing_of_arising、Web.unceasing_iff_bounded）。读于世界：每步至多 B 个关系项活跃且被列出的世界（World.CountedWithin）中，生起复现恰当止息复现（World.CountedWithin.arising_iff_ceasing）；有限世界的每个普查都有界，不需要可判定性（World.Finite.census_bounded），活动可判定时普查存在（World.Finite.countedWithin），所以有限世界的规律 World.arising_iff_ceasing 是其情形（World.Finite.arising_iff_ceasing）；procession（关系项 x 只在第 x 步活跃）每步一个活跃，生起与止息都复现，关系项却不是有限多个（World.procession_world），所以这一规律越出有限世界；dawn 有普查而无界，生起复现而止息不复现（World.dawn_unbounded）。界可以随步变化：每步 t 至多 B t 个关系项活跃且被列出（World.CountedBy，CountedWithin 是常数界的情形），B 在任意晚的步回到某数以内时，生起复现恰当止息复现（World.CountedBy.arising_iff_ceasing）。界无界地增长时，不论多慢，都不使两者同步：对任何不减而无界的 B，slow B 中第 t 步活跃的是 B t 以下的关系项，有普查且被 B 计数，B 增长的每一步上关系项 B t 生起，没有关系项止息（World.slow_world）；所以例如对数增长时，仍可能只生不灭。列表无界地增长时，若从每一步起某段步上开始成立的多于该段终点的界，不再成立就复现（Listed.ceasing_of_outpacing）；这是充分条件，不是必要条件，slow 中开始成立的从不多于界。读于水平：所立者的普查从某步起每步至多 B 个时，开始作为条件而在复现恰当不再作为条件而在复现（Web.StandingCensus.coming_iff_ceasing）。读于依存：每步的依存被列出（Web.DependenceCensus）且从某步起至多 B 个时，形成复现恰当消解复现（Web.DependenceCensus.forming_iff_dissolving）。比率形式见 census-balance。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once, from some step T on at most B at each step (Listed, with lists from then on no longer than B), and the determination is decided at each step, members coming to hold at arbitrarily late steps need members ceasing to hold at arbitrarily late steps (Listed.ceasing_of_coming). The proof goes through the census balance (census-balance): with coming to be recurring, the comings from any step on accumulate past B (recurring_accumulates); where the list returns within B, the list at the end is shorter than the list at the start with what came between, so by the balance something ceases between (Listed.ceasing_iff_shortfall). So the bound need not hold at every step from some step on: the list need only return within some number K at arbitrarily late steps (Listed.ceasing_of_returning). P27 proved it from the lengths of the lists directly (a coming to be not preceded by a ceasing lengthens the list, which cannot grow past B); P30 proves it through the balance, and the three lemmas of that route, no longer used, are removed from the core. With the census law (ceasing-needs-arising), the two recur together (Listed.coming_iff_ceasing). Read of activity: under a census with at most B formations active at each step from some step on, arising recurs exactly when ceasing recurs (Web.ceasing_of_arising, Web.unceasing_iff_bounded). Read of worlds: in a world whose relata active at each step are listed, at most B of them (World.CountedWithin), arising recurs exactly when ceasing does (World.CountedWithin.arising_iff_ceasing); every census of a finite world is bounded, with no decidability (World.Finite.census_bounded), and where activity is decided one exists (World.Finite.countedWithin), so the law of finite worlds, World.arising_iff_ceasing, is a case (World.Finite.arising_iff_ceasing); in procession, where relatum x is active at step x alone, one relatum is active at each step and arising and ceasing both recur, while the relata are not finitely many (World.procession_world), so the law reaches beyond finite worlds; dawn has a census without a bound, and arising recurs there while ceasing does not (World.dawn_unbounded). The bound may vary with the steps: where at most B t relata are active at each step t, listed (World.CountedBy, of which CountedWithin is the case of a constant bound), and B returns within some number at arbitrarily late steps, arising recurs exactly when ceasing does (World.CountedBy.arising_iff_ceasing). A bound growing without end, however slowly, does not keep the two together: for any non-decreasing, unbounded B, in slow B the relata below B t are active at step t, with a census counted by B; relatum B t arises across each step at which B grows, and nothing ceases (World.slow_world); so under logarithmic growth, for instance, arising can still go on without ceasing. Where the list grows without end, ceasing to be recurs where, from each step, the comings over some stretch outnumber the bound at its end (Listed.ceasing_of_outpacing); this is sufficient, not necessary, and in slow the comings never outnumber the bound. Read of standing: where from some step on at most B conditions stand at each step, listed, coming to stand recurs exactly when ceasing to stand does (Web.StandingCensus.coming_iff_ceasing). Read of dependence: where the dependences of each step are listed (Web.DependenceCensus), at most B from some step on, forming recurs exactly when dissolving does (Web.DependenceCensus.forming_iff_dissolving). For the form with rates, see census-balance. No ethical premise and no Lean axiom is used."
@@ -241,8 +241,8 @@
     "en": "The bound must return within one number at arbitrarily late steps; it fails where the bound grows without end, however slowly (dawn, slow); that a non-decreasing bound either stays within some number or grows without end is classical; for a bound that is not monotone and eventually exceeds every number no corresponding world is given (its construction needs data from existence); stated for discrete steps; needs decidability (a logical commitment); says neither which member comes to be or ceases nor that the two are causally linked: the law is a count, not a mechanism; evaluates neither arising nor ceasing; the names (bounded census, procession, slow) are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T194202.548300Z）：Becoming.Population 的 68 项定理（P27 新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded；P30 新增 Listed.ceasing_of_returning、ceasing_of_outpacing，改由平衡证明 ceasing_of_coming，去掉 ceases_or_kept、ceases_or_more、ceases_within，它们由回执 20261009T163512.365801Z 检查过）与 Becoming.Openness 的 68 项定理（P27 新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.dawn_unbounded、Procession.census、World.procession_world；P30 新增 World.CountedBy.arising_iff_ceasing、Slow.length、Slow.census、Slow.grows_between、World.slow_world）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1157 项定理／1862 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T194414.300336Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36、§37 与 §40，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T194202.548300Z): the 68 theorems of Becoming.Population (added in P27: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded; P30 adds Listed.ceasing_of_returning and ceasing_of_outpacing, proves ceasing_of_coming through the balance and removes ceases_or_kept, ceases_or_more and ceases_within, which receipt 20261009T163512.365801Z checked) and the 68 theorems of Becoming.Openness (added in P27: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.dawn_unbounded, Procession.census, World.procession_world; added in P30: World.CountedBy.arising_iff_ceasing, Slow.length, Slow.census, Slow.grows_between, World.slow_world) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1157 theorems/1862 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T194414.300336Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36, §37 and §40 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T195744.874839Z）：Becoming.Population 的 68 项定理（P27 新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded；P30 新增 Listed.ceasing_of_returning、ceasing_of_outpacing，改由平衡证明 ceasing_of_coming，去掉 ceases_or_kept、ceases_or_more、ceases_within，它们由回执 20261009T163512.365801Z 检查过）与 Becoming.Openness 的 76 项定理（P27 新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.dawn_unbounded、Procession.census、World.procession_world；P30 新增 World.CountedBy.arising_iff_ceasing、Slow.length、Slow.census、Slow.grows_between、World.slow_world）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1190 项定理／1905 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T195906.931285Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36、§37 与 §40，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T195744.874839Z): the 68 theorems of Becoming.Population (added in P27: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded; P30 adds Listed.ceasing_of_returning and ceasing_of_outpacing, proves ceasing_of_coming through the balance and removes ceases_or_kept, ceases_or_more and ceases_within, which receipt 20261009T163512.365801Z checked) and the 76 theorems of Becoming.Openness (added in P27: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.dawn_unbounded, Procession.census, World.procession_world; added in P30: World.CountedBy.arising_iff_ceasing, Slow.length, Slow.census, Slow.grows_between, World.slow_world) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1190 theorems/1905 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T195906.931285Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36, §37 and §40 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
   },
   "references": [
     {
@@ -270,7 +270,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "483ec55cc3b41d42f952ea2e295f9ca001fae7a21ee54d1d6bcbb21faa54d704",
+      "sha256": "bd962a19c51f4e054e8b340c27294ba1d7cebf2e12196d91aca3ddb1c42adb43",
       "declarations": [
         "Becoming.Web.StandingCensus",
         "Becoming.Web.StandingCensus.coming_iff_ceasing",
@@ -297,7 +297,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "02cdbffe26cc1aa87f13dfdf8848924e003e66df72d55e42552f12aaffabf4b5",
+      "sha256": "34478e007ba6ce784549c8a5ce36d88dda1c3377db3aa593073a2b43dbdb7c00",
       "declarations": [
         "Becoming.ComesToBe",
         "Becoming.CeasesToBe",
@@ -352,7 +352,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "fb05cc2e431b85ae098b55ac76fc3452f704b643db9ee24a7ecf71dda7899f03",
+      "sha256": "f27f1c039919a64add19bb9248f408b45b22c08b159718b27eb8f086863b284c",
       "declarations": [
         "Becoming.World.Counted",
         "Becoming.World.Finite.counted",
@@ -363,22 +363,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6532ceb587b1f6ff96550094169d60c5dce552971c49c294176b636479339f66"
+      "sha256": "4c560d2dcb3d604aefa9a5843f117ea64f67bbf0c3eb80df53641be73ea11679"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "78bbec51baa0c453bad05d249b16613b74666d565590518b9c4689c2ac7cca8b"
+      "sha256": "66a1582fee9d4c4fbbb7b00313416f4f457056dcbf04820ff3f9bea4c38fbf5f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "485df184dbcf8cedfb8a6e6ac9d47a28908b0f153a8b3c1140d97ef0a1dd647e"
+      "sha256": "e1313f228391f14771350622bbf2fa4d8eb154016cfe7f8a806c6c6ee9149e9f"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0811fb3cff479cdf00c74344fbe4cbd0377ae854156649497beee0f0c4a6b8ff"
+      "sha256": "d5adf7ab6dc43d67a580f9a844212bad4ddd0217baea159d86c0277c7a3237a0"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -388,12 +388,18 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-arising-ceasing-names.md",
       "role": "provenance",
-      "sha256": "a2c4030202ca041e0593a0d0b8911743128d860f92d3b2da6572aebb59bb2a18"
+      "sha256": "143964d076571bd652d0af8faeff106f66c499101c4484dc95e91f131aca9f5a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md",
       "role": "review",
       "sha256": "7c1ff4cd6c090f71e00dd17ac98162c531f5bb47e98d8f7a1934e003e78b0cd3"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "role": "review",
+      "sha256": "d301d1a2d87665100c8ff50529647c53e6dc31f0539e96eaa7f321488b7597a8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -455,8 +461,8 @@
     }
   ],
   "next_delta": {
-    "zh": "名称（Ren）。界随步缓慢增长时还剩什么已在 P30 回答：不论多慢都可以只生不灭（World.slow_world），判据是比率（Listed.ceasing_of_outpacing），精确地是缺额（Listed.ceasing_iff_shortfall）。",
-    "en": "Names (Ren). What remains where the bound grows slowly is answered in P30: however slowly it grows, arising can go on without ceasing (World.slow_world); what decides is the rate (Listed.ceasing_of_outpacing), exactly the shortfall (Listed.ceasing_iff_shortfall)."
+    "zh": "名称（Ren）。界随步缓慢增长时还剩什么已在 P30 回答：不论多慢都可以只生不灭（World.slow_world），精确的判据是缺额（Listed.ceasing_iff_shortfall）；比率形式（Listed.ceasing_of_outpacing）是充分条件，slow 中从不满足。",
+    "en": "Names (Ren). What remains where the bound grows slowly is answered in P30: however slowly it grows, arising can go on without ceasing (World.slow_world); the exact criterion is the shortfall (Listed.ceasing_iff_shortfall); the rate form (Listed.ceasing_of_outpacing) is sufficient, and slow never meets it."
   },
   "history": [
     {
@@ -494,6 +500,10 @@
     {
       "zh": "2026-10-10 P33：验证范围重新指向合并检查器回执 20261009T194202.548300Z 与外围回执 20261009T194414.300336Z（Openness 加入交换归于静止 Flow.exchange_lowers、Flow.exchanges_finitely、World.exchange_stops 与其前提都不可少的见证 World.exchange_needs）；Openness 的定理数改为该回执的 68。断言不变。",
       "en": "2026-10-10 P33: validation scope re-pointed to consolidated receipt 20261009T194202.548300Z and periphery receipt 20261009T194414.300336Z (Openness adds the exchange coming to rest, Flow.exchange_lowers, Flow.exchanges_finitely and World.exchange_stops, with World.exchange_needs witnessing that each premise is needed); the count of Openness's theorems is now that receipt's 68. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P33b（第十二次独立审查 T1、T6）：Openness 中重复的 namespace World 使 P30 的世界实际名为 Becoming.World.World.slow；已改为 Becoming.World.slow、World.slow_world 与 Becoming.Slow.*，本记录的别名与引用因此能解析（登记检查现在按回执所列的完整名称核对声明）；next_delta 改为：精确的判据是缺额，比率形式只是充分条件。断言不变；Openness 的定理数改为 76；验证范围重新指向合并检查器回执 20261009T195744.874839Z 与外围回执 20261009T195906.931285Z。",
+      "en": "2026-10-10 P33b (twelfth independent review T1, T6): a doubled namespace World in Openness made P30's world Becoming.World.World.slow; it is now Becoming.World.slow, World.slow_world and Becoming.Slow.*, so this record's aliases and references resolve (the registry now checks declarations by the full names its receipt lists); next_delta now says the exact criterion is the shortfall and the rate form only sufficient. The claim is unchanged; Openness's count is now 76; validation scope re-pointed to consolidated receipt 20261009T195744.874839Z and periphery receipt 20261009T195906.931285Z."
     }
   ]
 }

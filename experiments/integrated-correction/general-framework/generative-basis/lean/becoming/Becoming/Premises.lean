@@ -43,10 +43,10 @@ that the rest are independent, none following from all the others together.
   support binds without being tight, the food never falling below the need, and the four
   premises about the flow bind at the first step only. A census binds in that the world
   is not finite, its infinitely many ground relata idle (`World.hatch_idle`): only the
-  food, the parent and the child are ever active (`World.hatch_ever`), and a census of
-  finitely many relata ever active exists wherever activity is decided
+  food, the parent and the child are ever active (`World.hatch_ever`), and a census exists
+  wherever some list holds every relatum ever active and activity is decided
   (`World.counted_of_ever`). In every world that comes to rest under the rest theorem,
-  only finitely many relata are ever active or stand (`World.rest_few` in
+  not unboundedly many relata are ever active or stand (`World.rest_few` in
   `Becoming.Openness`), so there a census binds only so.
 
 Premises stated relative to a further reading, such as a continuation relation
