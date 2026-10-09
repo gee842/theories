@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T04:41:28+00:00",
+  "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
   "claim": {
     "zh": "在依存网上，一个事件（形成，步）在更新之内，当它活跃，且该步维持它所参与的每个条件上的每个依存。整段运行的更新使每个活跃步都在更新之内；断裂所参与条件上依存的步不在更新之内；一个形成可以在自己的每个活跃步都在更新之内而整段不更新。一个形成对某条件的关系在某步侵蚀，当它在该步汲取该条件，而该步之后，条件既低于一个依存现在的所需，也低于该依存在不间断成立期间的某步曾被满足的所需；在断裂某个依存之步汲取（断裂）是侵蚀的一种，在更新之内的事件既不侵蚀也不断裂。以“活跃且不侵蚀”为 living、以各自步上共同参与某一条件为 related：被断裂者在断裂之步不在更新之内，但不侵蚀，所以被记入；损失之后继续的汲取不再断裂任何依存，却侵蚀，而同样的第一步之后若不再取（动作为 0），条件回到；在依存成立期间从未以其所需被满足的依存不使任何事件侵蚀，所需下降时也如此；只低于增长到从未被满足的所需，不算侵蚀；所需增长之后，把水平取到曾被满足的所需之下的汲取侵蚀而不断裂；依存中断一步即开始新的一段。侵蚀读的是共同参与一个未恢复的短缺，不是汲取的效果：在外来崩塌之后，一个不改变任何水平的汲取者也侵蚀。整段读法与这一读法两个方向都有分歧：先在更新之内汲取、后来超出的形成，整段记为消耗，第一个事件逐步被记入；先超出一次、条件随后恢复的形成，整段不记为消耗，断裂之步的事件逐步不被记入；两种读法都记入被断裂者在断裂之步的事件。每个活的事件都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；在断裂之步汲取的事件不是活的，并与被断裂形成参与该条件的每个事件相关，在 N_rel 下珍视它的立场必珍视那些活的事件。关系层读法以（形成，条件，步）为主张，活的关系是活跃、参与且不侵蚀；一个事件的逐步读法恰是它所参与关系的读法的合取，同一事件可以有一个活的关系和一个侵蚀的关系。依存不变时整段与逐步读法的 related 相同。",
     "en": "On a web of dependence, an event (formation, step) is within renewal when it is active and its step keeps every dependence on every condition it participates in. Whole-run renewal credits every active step; a step breaking a dependence on a condition the event participates in is not within renewal; a formation can be within renewal at each of its own active steps without renewing in the run. A formation's relation to a condition undermines at a step when it draws on the condition at that step and, after the step, the condition is below both the present need of a dependence on it and a need that dependence met at some step of its unbroken tenure; drawing at a step that breaks a dependence (breaking) is a case of undermining, and an event within renewal neither undermines nor breaks. Taking “active and not undermining” as `living` and participation in a common condition at the events' steps as `related`: the broken formation is not within renewal at the breaking step but does not undermine, so it is credited; drawing after a loss breaks nothing further yet undermines, while with the same first step and nothing further taken (action 0) the condition returns; a requirement never met at its own need while it held makes no event undermine, also when the need falls; falling short only of a need grown beyond anything met does not undermine, while after a need has grown a draw taking the level below a need that was met undermines without breaking; and a dependence that lapses for a step starts a new tenure. Undermining reads co-participation in an unrestored shortfall, not what a draw does: after an exogenous collapse, a drawer that changes no level undermines too. The whole-run reading and this one differ in both directions: a formation drawing within renewal at first and beyond it later is consuming on the whole-run reading while its first event is credited stepwise; a formation that draws beyond renewal once while the condition later returns is not consuming on the whole-run reading while its event at the breaking step is not credited stepwise; both credit the broken formation's event at the breaking step. A condition in which every living event participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; an event drawing at a breaking step is not living and is related to every event of the broken formation participating in that condition, so under N_rel a standpoint valuing it holds those living events significant. A relation-level reading takes (formation, condition, step) as claims, a living relation being active, participating and not undermining; an event's stepwise reading is exactly the conjunction over the relations it takes part in, and one event can have a living and an undermining relation. With constant dependence the whole-run and stepwise readings have the same `related`."
@@ -300,12 +300,12 @@
     }
   ],
   "limitations": {
-    "zh": "不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场。整段、逐步与关系层读法都是公开的读法选择，不证明其中任何一个是生生的正确读法；读法都相对于一次运行，不含继续生成的成分；不做因果或差别制造归属，侵蚀也不涉及汲取的数量或效果；条件的对应纪律另见 condition-correspondence-discipline。",
-    "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; no causal or difference-making attribution is made, and undermining involves neither the amount nor the effect of a draw; the correspondence discipline for conditions is in condition-correspondence-discipline."
+    "zh": "不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场。整段、逐步与关系层读法都是公开的读法选择，不证明其中任何一个是生生的正确读法；读法都相对于一次运行，不含继续生成的成分；任期、侵蚀与逐步的 living 依赖跨步的同一（identity-across-steps）：保持持续依存的命名不去掉侵蚀，接续可以增加侵蚀；不做因果或差别制造归属，侵蚀也不涉及汲取的数量或效果；条件的对应纪律另见 condition-correspondence-discipline。",
+    "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; tenure, undermining and the stepwise living depend on identity across steps (identity-across-steps): a naming that keeps continuing dependences removes no undermining, and succession can add undermining; no causal or difference-making attribution is made, and undermining involves neither the amount nor the effect of a draw; the correspondence discipline for conditions is in condition-correspondence-discipline."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T053653.440404Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 513 项定理／878 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T053653.440404Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 513 theorems/878 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明这一读法对跨步同一的依赖，见 §19。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the reading's dependence on identity across steps be noted, see §19. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -332,7 +332,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "327bfe27ba666e557b80b29f8986a1e621c8610312e2141e9206a24ae9d582f1",
+      "sha256": "d93f543b97124f2320aaaf65a932f553169ca690cc068f43b602ae9562f71870",
       "declarations": [
         "Becoming.Web.RenewingAt",
         "Becoming.Web.renewing_at_active",
@@ -370,19 +370,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "13dc8e7bfe1a323fd9e2f83972489414ed467b3a06adcb615a1edabb8e45bda4",
+      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "08a4ff74df2142301e5a2a8ce838b6998a1193fd547806d9fdebbb4cae06d4e3",
+      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "6ae00cc43e5aa21945a6da489d138b4ac7cd1a8fbfac4c5ce0d9266c94690833",
+      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
       "declarations": []
     },
     {
@@ -508,6 +508,10 @@
     {
       "zh": "2026-10-09：P14 新增 Becoming.Roles 并扩展 Becoming.Correspondence 后，合并检查器重跑（20261009T053653.440404Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P14 added Becoming.Roles and extended Becoming.Correspondence, the consolidated checker was rerun (20261009T053653.440404Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P12b 按第五次独立审查（BECOMING-P11B-P12-REVIEW.md）在界限中注明任期、侵蚀与逐步的 living 依赖跨步的同一；合并检查器重跑（20261009T060305.410034Z），主张与证明不变。",
+      "en": "2026-10-09: P12b noted in the limitations, following the fifth independent review (BECOMING-P11B-P12-REVIEW.md), that tenure, undermining and the stepwise living depend on identity across steps; the consolidated checker was rerun (20261009T060305.410034Z); claim and proofs are unchanged."
     }
   ]
 }

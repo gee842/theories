@@ -313,8 +313,8 @@ def BreakingAt (t : Nat) (f : F) : Prop :=
   ∃ c, W.BreakingOn t f c
 
 /-- `g`'s dependence on `c` was met above `m` while it held: at some step since which the
-dependence has held without a break up to `t`, the condition met the need of that step,
-and that need exceeds `m`. -/
+dependence has held at every step up to `t`, met or not, the condition met the need of
+that step, and that need exceeds `m`. -/
 def MetAbove (t : Nat) (g : F) (c : C) (m : Nat) : Prop :=
   ∃ s, s ≤ t ∧ (∀ u, s ≤ u → u ≤ t → W.requires u g c) ∧ W.need s g c ≤ W.level s c ∧
     m < W.need s g c

@@ -1,0 +1,29 @@
+'EvaluatorGrounding.Standpoint' does not depend on any axioms
+'EvaluatorGrounding.SelfGood' does not depend on any axioms
+'EvaluatorGrounding.Monotone' does not depend on any axioms
+'EvaluatorGrounding.Supervenes' does not depend on any axioms
+'EvaluatorGrounding.Tolerant' does not depend on any axioms
+'EvaluatorGrounding.Chain' does not depend on any axioms
+'EvaluatorGrounding.self_good_reaches_at_least_as_connected' does not depend on any axioms
+'EvaluatorGrounding.strict_indexed_rival_inconsistent' does not depend on any axioms
+'EvaluatorGrounding.chain_preserves' does not depend on any axioms
+'EvaluatorGrounding.tolerant_chain_reaches' does not depend on any axioms
+'EvaluatorGrounding.reachableInventory' does not depend on any axioms
+'EvaluatorGrounding.reach_is_g0' does not depend on any axioms
+'EvaluatorGrounding.self_good_derives_reachable_g0' does not depend on any axioms
+'EvaluatorGrounding.Occ' does not depend on any axioms
+'EvaluatorGrounding.degree' does not depend on any axioms
+'EvaluatorGrounding.ownOcc' depends on axioms: [propext]
+'EvaluatorGrounding.reachOcc' depends on axioms: [propext]
+'EvaluatorGrounding.adjacent' does not depend on any axioms
+'EvaluatorGrounding.standpoint' depends on axioms: [propext]
+'EvaluatorGrounding.formed_other_has_significance' depends on axioms: [propext]
+'EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance' depends on axioms: [propext, Quot.sound]
+'EvaluatorGrounding.tolerant_standpoint_reaches_stranger' depends on axioms: [propext]
+'EvaluatorGrounding.present_aim_evaluator_escapes' depends on axioms: [propext]
+'EvaluatorGrounding.closedStep' does not depend on any axioms
+'EvaluatorGrounding.closed_self_blocks_reach' depends on axioms: [propext, Quot.sound]
+'EvaluatorGrounding.profile2' does not depend on any axioms
+'EvaluatorGrounding.productLe' does not depend on any axioms
+'EvaluatorGrounding.persistence' depends on axioms: [propext]
+'EvaluatorGrounding.persistence_rival_escapes_self_transcendence' depends on axioms: [propext]

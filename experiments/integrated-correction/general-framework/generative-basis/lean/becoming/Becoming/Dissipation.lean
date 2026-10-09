@@ -14,8 +14,8 @@ on dissipation. This module states that premise on flows and proves what it carr
 * A formation *dissipates* on a family across a step when it gives the family no more
   than it takes from it, and less when it takes (`DissipatesOn`). A flow is
   *dissipative* when, across every step, every family without repetition closed across
-  it is dissipated on (`Dissipative`). Giving then always costs the conditions the giver
-  takes from more than it gives.
+  it is dissipated on (`Dissipative`). Giving then always costs the conditions the
+  renewer takes from more than it gives.
 * In a balanced flow, a family dissipated on across a step falls across it by at least
   the number of formations taking from it (`Balances.runs_down`). Dissipated on from
   some step, the formations taking from it over all later steps number at most its stock

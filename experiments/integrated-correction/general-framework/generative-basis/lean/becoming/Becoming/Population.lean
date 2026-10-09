@@ -12,16 +12,20 @@ many formations are active at each step, and ties the flow's count to the web's.
   the step was not active before: it arises across the step (`arises_of_more`). A
   census that grows without bound makes generation unceasing (`unceasing_of_growth`).
 * Under a census, with each formation taking part in the flow listed once and only
-  active formations taking (`Flow.Taking`), more without end makes generation unceasing
-  (`Flow.More.unceasing`). Not conversely: the bloom meets every one of these premises,
-  arises again and again, and is not more (`Bloom.counted`). Under this correspondence,
-  more without end is strictly stronger than unceasing generation.
+  active formations taking (`Flow.Taking`, of which only the activity half is used),
+  the active formations grow without bound (`Flow.More.grows`), and more without end
+  makes generation unceasing (`Flow.More.unceasing`). The premises hold together in the
+  garden and the cycle (`Garden.counted`, `Cycle.counted`). Not conversely: the bloom
+  meets every one of these premises, arises again and again, and is not more
+  (`Bloom.counted`). Under this correspondence, more without end is strictly stronger
+  than unceasing generation.
 * Each premise does work. Without a census, every formation of an infinite family can be
   active from the start, and more without end comes with nothing arising (`Dormant`).
   Without `Taking`, the flow's takers need not be active: one formation gives to ever
   more formations that take while never active, and nothing arises (`Inactive`). With a
-  formation listed many times in a flow's `present`, one formation counts as many
-  (argued, not formalized).
+  formation listed many times in a flow's `present`, one formation counts as many: more
+  without end comes with one formation, always active, and nothing arising
+  (`Repeated`).
 * The converse of `Taking`, that every formation drawing on the family takes from it in
   the flow, is an application duty: ever more formations can be active, depend on a
   condition and draw on it while the flow records no taking (`Crowd`).
@@ -58,20 +62,35 @@ theorem mem_remove {a b : α} (other : ¬ b = a) : ∀ {p q : List α}, b ∈ p 
     | .inl same => Eq.subst (motive := fun x => x ∈ c :: _) same.symm (.head _)
     | .inr mem => .tail _ (mem_remove other mem)
 
+/-- A list without repetition, each member of which is matched to a member of another
+list, no member of which is matched to two: the first list is no longer. -/
+theorem length_le_of_matched {S : α → β → Prop} : ∀ {l : List α} {m : List β}, Distinct l →
+    (∀ a, a ∈ l → ∃ b, b ∈ m ∧ S a b) →
+    (∀ a a' b, a ∈ l → a' ∈ l → S a b → S a' b → a = a') → l.length ≤ m.length
+  | [], _, _, _, _ => Nat.zero_le _
+  | a :: l, m, ⟨fresh, distinct⟩, matched, once => match matched a (.head l) with
+    | ⟨b, mem, paired⟩ => match List.append_of_mem mem with
+      | ⟨p, q, split⟩ =>
+        have inner : l.length ≤ (p ++ q).length :=
+          length_le_of_matched distinct
+            (fun a' mem' => match matched a' (.tail a mem') with
+              | ⟨b', mem_b', paired'⟩ =>
+                have other : ¬ b' = b := fun same =>
+                  fresh (Eq.subst (motive := fun x => x ∈ l)
+                    (once a' a b' (.tail a mem') (.head l) paired'
+                      (Eq.subst (motive := fun x => S a x) same.symm paired)) mem')
+                ⟨b', mem_remove other (split ▸ mem_b'), paired'⟩)
+            (fun x y b' mx my => once x y b' (.tail a mx) (.tail a my))
+        have whole : m.length = (p ++ q).length + 1 :=
+          (congrArg List.length split).trans ((length_append p (b :: q)).trans
+            ((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p q).symm)))
+        whole ▸ Nat.succ_le_succ inner
+
 /-- A list without repetition whose members all belong to another list is no longer. -/
-theorem length_le_of_sub : ∀ {l m : List α}, Distinct l → (∀ a, a ∈ l → a ∈ m) →
-    l.length ≤ m.length
-  | [], _, _, _ => Nat.zero_le _
-  | a :: l, m, ⟨fresh, distinct⟩, sub => match List.append_of_mem (sub a (.head l)) with
-    | ⟨p, q, split⟩ =>
-      have inner : l.length ≤ (p ++ q).length :=
-        length_le_of_sub distinct fun b mem =>
-          mem_remove (fun same => fresh (Eq.subst (motive := fun x => x ∈ l) same mem))
-            (split ▸ sub b (.tail a mem))
-      have whole : m.length = (p ++ q).length + 1 :=
-        (congrArg List.length split).trans ((length_append p (a :: q)).trans
-          ((Nat.add_succ _ _).trans (congrArg Nat.succ (length_append p q).symm)))
-      whole ▸ Nat.succ_le_succ inner
+theorem length_le_of_sub {l m : List α} (distinct : Distinct l) (sub : ∀ a, a ∈ l → a ∈ m) :
+    l.length ≤ m.length :=
+  length_le_of_matched (S := Eq) distinct (fun a mem => ⟨a, sub a mem, rfl⟩)
+    fun _ _ _ _ _ same same' => same.trans same'.symm
 
 /-- Counting the members a quantity is positive at, in a list without repetition: no more
 than a list holding every such member. -/
@@ -97,6 +116,19 @@ theorem count_le_of_sub {q : α → Nat} : ∀ {l m : List α}, Distinct l →
           (congrArg (· + count l q) (congrArg sign h)).symm ▸ whole ▸
             (Nat.add_comm (count l q) 1 ▸ Nat.succ_le_succ inner)
 
+/-- Constructively, either some member of a list lacks a decidable property, or every
+member has it. -/
+theorem search {p : α → Prop} [decide : ∀ a, Decidable (p a)] :
+    ∀ l : List α, (∃ a, a ∈ l ∧ ¬ p a) ∨ ∀ a, a ∈ l → p a
+  | [] => .inr fun _ mem => nomatch mem
+  | a :: l => match decide a with
+    | isFalse lacks => .inl ⟨a, .head l, lacks⟩
+    | isTrue has => match search l with
+      | .inl ⟨b, mem, lacks⟩ => .inl ⟨b, .tail a mem, lacks⟩
+      | .inr all => .inr fun b mem => match mem with
+        | .head _ => has
+        | .tail _ mem => all b mem
+
 /-- A quantity that ends higher than it starts rises across some step between. -/
 theorem rises_between {q : Nat → Nat} {N : Nat} :
     ∀ {T}, N ≤ T → q N < q T → ∃ t, N ≤ t ∧ t < T ∧ q t < q (t + 1)
@@ -117,20 +149,7 @@ namespace Web
 def Census (W : Web F C) (alive : Nat → List F) : Prop :=
   ∀ t, Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t
 
-variable (W : Web F C) [active : ∀ t f, Decidable (W.active t f)]
-
-/-- Constructively, either some listed formation is inactive at a step, or every listed
-formation is active there. -/
-theorem search (t : Nat) :
-    ∀ l : List F, (∃ f, f ∈ l ∧ ¬ W.active t f) ∨ ∀ f, f ∈ l → W.active t f
-  | [] => .inr fun _ mem => nomatch mem
-  | f :: l => match active t f with
-    | isFalse inactive => .inl ⟨f, .head l, inactive⟩
-    | isTrue yes => match search t l with
-      | .inl ⟨g, mem, inactive⟩ => .inl ⟨g, .tail f mem, inactive⟩
-      | .inr all => .inr fun g mem => match mem with
-        | .head _ => yes
-        | .tail _ mem => all g mem
+variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
 
 /-- If more formations are active after a step than before, one of them arises across
 it. -/
@@ -138,7 +157,7 @@ theorem arises_of_more {t : Nat} {before after : List F}
     (listed : ∀ f, W.active t f → f ∈ before) (distinct : Distinct after)
     (now : ∀ f, f ∈ after → W.active (t + 1) f) (more : before.length < after.length) :
     ∃ f, f ∈ after ∧ W.Arises t f :=
-  match W.search t after with
+  match search (p := W.active t) after with
   | .inl ⟨f, mem, inactive⟩ => ⟨f, mem, inactive, now f mem⟩
   | .inr all => absurd more (Nat.not_lt_of_ge
       (length_le_of_sub distinct fun f mem => listed f (all f mem)))
@@ -155,6 +174,19 @@ theorem unceasing_of_growth {alive : Nat → List F} (census : W.Census alive)
 
 end Web
 
+/-- Under a census, with each formation taking part in the flow listed once and only
+active formations taking, more without end makes the active formations grow without
+bound. -/
+theorem Flow.More.grows {W : Web F C} {L : Flow F C} {cs : List C} {alive : Nat → List F}
+    (census : W.Census alive) (distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W)
+    (more : L.More cs) : ∀ N K, ∃ t, N ≤ t ∧ K < (alive t).length :=
+  have counted : ∀ t, L.takers cs t ≤ (alive t).length := fun t =>
+    count_le_of_sub (distinct t) fun f mem takes => match total_pos cs takes with
+    | ⟨c, _, positive⟩ => ((census t).2 f).mp (taking t f c mem positive).1
+  fun N K => match more (K + 1) with
+  | ⟨T, many⟩ => ⟨N + T, Nat.le_add_right N T,
+      Nat.lt_of_lt_of_le (many (N + T) (Nat.le_add_left T N)) (counted (N + T))⟩
+
 /-- More without end makes generation unceasing when a census lists the active
 formations, each formation taking part in the flow is listed once, and only active
 formations take. -/
@@ -162,12 +194,67 @@ theorem Flow.More.unceasing {W : Web F C} [∀ t f, Decidable (W.active t f)] {L
     {cs : List C} {alive : Nat → List F} (census : W.Census alive)
     (distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W) (more : L.More cs) :
     W.Unceasing :=
-  have counted : ∀ t, L.takers cs t ≤ (alive t).length := fun t =>
-    count_le_of_sub (distinct t) fun f mem takes => match total_pos cs takes with
-    | ⟨c, _, positive⟩ => ((census t).2 f).mp (taking t f c mem positive).1
-  W.unceasing_of_growth census fun N K => match more (K + 1) with
-  | ⟨T, many⟩ => ⟨N + T, Nat.le_add_right N T,
-      Nat.lt_of_lt_of_le (many (N + T) (Nat.le_add_left T N)) (counted (N + T))⟩
+  W.unceasing_of_growth census (more.grows census distinct taking)
+
+/-! ## Every premise together -/
+
+namespace Garden
+
+theorem distinct : ∀ t, Distinct (present t)
+  | 0 => trivial
+  | n + 1 => ⟨fun mem => match mem_cons_cases mem with
+      | .inl same => Kind.noConfusion (congrArg Prod.fst same)
+      | .inr mem => Nat.lt_irrefl n (present_active n _ mem),
+     fun mem => Nat.lt_irrefl n (present_active n _ mem), distinct n⟩
+
+theorem listed : ∀ t (f : Kind × Nat), f.2 < t → f ∈ present t
+  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
+  | n + 1, (k, i), lt => match Nat.lt_or_ge i n with
+    | .inl below => .tail _ (.tail _ (listed n (k, i) below))
+    | .inr above =>
+      have same : n = i := Nat.le_antisymm above (Nat.le_of_lt_succ lt)
+      match k with
+      | .renewer => Eq.subst (motive := fun j => (Kind.renewer, j) ∈ present (n + 1))
+          same (.head _)
+      | .grower => Eq.subst (motive := fun j => (Kind.grower, j) ∈ present (n + 1))
+          same (.tail _ (.head _))
+
+/-- The garden's formations active at each step are those taking part, each listed once. -/
+theorem census : web.Census present :=
+  fun t => ⟨distinct t, fun f => ⟨listed t f, present_active t f⟩⟩
+
+/-- Every premise of `Flow.More.unceasing` holds together in the garden. -/
+theorem counted :
+    web.Census present ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
+    flow.More [()] :=
+  ⟨census, distinct, growers_take.1, more.2.2.2.2.2.2⟩
+
+end Garden
+
+namespace Cycle
+
+theorem distinct : ∀ t, Distinct (present t)
+  | 0 => trivial
+  | n + 1 => ⟨fun mem => Nat.lt_irrefl n (present_lt n n mem), distinct n⟩
+
+theorem listed : ∀ t n, n < t → n ∈ present t
+  | 0, _, lt => absurd lt (Nat.not_lt_zero _)
+  | m + 1, n, lt => match Nat.lt_or_ge n m with
+    | .inl below => .tail _ (listed m n below)
+    | .inr above => Eq.subst (motive := fun j => j ∈ present (m + 1))
+        (Nat.le_antisymm above (Nat.le_of_lt_succ lt)) (.head _)
+
+/-- The cycle's formations active at each step are those taking part, each listed once. -/
+theorem census : web.Census present :=
+  fun t => ⟨distinct t, fun n => ⟨listed t n, present_lt t n⟩⟩
+
+/-- Every premise of `Flow.More.unceasing` holds together in the cycle. -/
+theorem counted :
+    web.Census present ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
+    flow.More [()] :=
+  ⟨census, distinct, closed_more.2.2.1, closed_more.2.2.2.2.2.2.1⟩
+
+end Cycle
 
 /-! ## Under a census, unceasing generation is not yet more -/
 
@@ -225,6 +312,49 @@ theorem more_without_arising :
    fun _ _ ⟨inactive, _⟩ => inactive trivial⟩
 
 end Dormant
+
+/-! ## With a formation listed many times, more without end with nothing arising -/
+
+namespace Repeated
+
+/-- `n` entries, all the same formation. -/
+def rep : Nat → List Unit
+  | 0 => []
+  | n + 1 => () :: rep n
+
+/-- One formation, always active, drawing on the condition. -/
+def web : Web Unit Unit where
+  level _ _ := 1
+  active _ _ := True
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := True
+
+/-- The flow lists the one formation `t` times at step `t`, each entry taking one unit and
+giving one back. -/
+def flow : Flow Unit Unit := ⟨rep, fun _ _ _ => 1, fun _ _ _ => 1⟩
+
+theorem ones : ∀ n, total (rep n) (fun _ => 1) = n
+  | 0 => rfl
+  | n + 1 => (congrArg (1 + ·) (ones n)).trans (Nat.add_comm 1 n)
+
+theorem census : web.Census fun _ => [()] :=
+  fun _ => ⟨⟨fun mem => (nomatch mem), trivial⟩,
+    fun f => ⟨fun _ => match f with | () => .head [], fun _ => trivial⟩⟩
+
+/-- A census lists the one active formation, the flow balances, only active formations
+give and take, and only from what they draw on; generation is more without end, and
+nothing ever arises. The one premise of `Flow.More.unceasing` that fails is that the
+flow lists each formation once. -/
+theorem more_without_arising :
+    web.Census (fun _ => [()]) ∧ flow.Balances web ∧ flow.Acting web ∧ flow.Taking web ∧
+    flow.More [()] ∧ ¬ (∀ t, Distinct (flow.present t)) ∧ ∀ t f, ¬ web.Arises t f :=
+  ⟨census, fun _ _ => rfl, fun _ _ _ _ _ => trivial, fun _ _ _ _ _ => ⟨trivial, trivial⟩,
+   fun K => ⟨K, fun t later => Nat.le_trans later (Nat.le_of_eq (ones t).symm)⟩,
+   fun distinct => (distinct 2).1 (.head []),
+   fun _ _ arises => arises.1 trivial⟩
+
+end Repeated
 
 /-! ## Without `Taking`, more without end with nothing arising -/
 

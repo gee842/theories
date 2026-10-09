@@ -17,10 +17,13 @@ unfolding as amounts that the formations taking part in each step take and give
 * Balance makes every rise the work of a formation: a balanced flow in which only active
   formations give makes the premise `RenewedBy` of `Becoming.Generation` a theorem
   (`Balances.renewedBy`).
-* Unceasing generation of formations that take needs replenishment. When formations
-  taking from the family at their first active step arise at arbitrarily late steps,
-  the family is replenished at arbitrarily late steps (`replenishment_recurs`), by
-  formations giving to it (`renewing_recurs`). Unlike the net rise of
+* Recurring uptake needs recurring replenishment. In a balanced flow, positive uptake at
+  arbitrarily late steps needs replenishment at arbitrarily late steps
+  (`uptake_needs_replenishment`). Formations taking from the family at their first
+  active step and arising at arbitrarily late steps are one case
+  (`replenishment_recurs`, with formations giving to the family: `renewing_recurs`); a
+  constant population of takers, with nothing arising, is another (`Steady`). The
+  theorem uses arising only for the uptake it brings. Unlike the net rise of
   `Becoming.Generation`, this sees replenishment concurrent with drawing.
 * Generation is *more without end* when, for every number, from some step on at least
   that many formations take from the family (`More`). Amounts are natural numbers, so
@@ -43,7 +46,7 @@ unfolding as amounts that the formations taking part in each step take and give
 * The renewers can be the takers themselves: in a closed cycle each formation gives
   back what it takes, the family's total never changes, and generation is more without
   end with as many renewers as takers (`Cycle`). That more must be carried beyond every
-  finite part of the unfolding needs dissipation: every giving costing the giver's
+  finite part of the unfolding needs dissipation: every giving costing the renewer's
   conditions more than it gives. `Becoming.Dissipation` states that premise and proves
   it.
 
@@ -308,11 +311,10 @@ theorem replenishment_le {cs : List C} {g : Nat} (capacity : L.Capacity cs g) (t
   Nat.le_trans (Nat.le_of_eq (total_swap (fun c f => L.give t f c) (L.present t) cs))
     (total_le_count (L.present t) (capacity t))
 
-/-- Unceasing generation of formations that take needs replenishment: when formations
-taking from the family at their first active step arise at arbitrarily late steps, the
-family is replenished at arbitrarily late steps. -/
-theorem replenishment_recurs {cs : List C} (balances : L.Balances W)
-    (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) (T : Nat) :
+/-- Recurring uptake needs recurring replenishment: in a balanced flow, positive uptake at
+arbitrarily late steps needs replenishment at arbitrarily late steps. -/
+theorem uptake_needs_replenishment {cs : List C} (balances : L.Balances W)
+    (uptake : ∀ N, ∃ t, N ≤ t ∧ 0 < L.uptake cs t) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
   fun none =>
     have step : ∀ t, T ≤ t → W.stock cs (t + 1) + L.uptake cs t = W.stock cs t :=
@@ -320,12 +322,22 @@ theorem replenishment_recurs {cs : List C} (balances : L.Balances W)
         ((congrArg (W.stock cs t + ·) (none t later)).trans (Nat.add_zero _))
     falls_finitely (W.stock cs) T
       (fun t later => Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq (step t later)))
-      fun N => match arising (N + T) with
-      | ⟨t, _, later, _, present, takes⟩ =>
-        have after : T ≤ t + 1 := Nat.le_succ_of_le (Nat.le_trans (Nat.le_add_left T N) later)
-        ⟨t + 1, Nat.le_succ_of_le (Nat.le_trans (Nat.le_add_right N T) later),
-          Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right (uptake_pos present takes))
-            (Nat.le_of_eq (step (t + 1) after))⟩
+      fun N => match uptake (N + T) with
+      | ⟨t, later, positive⟩ =>
+        ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+          Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right positive)
+            (Nat.le_of_eq (step t (Nat.le_trans (Nat.le_add_left T N) later)))⟩
+
+/-- Unceasing generation of formations that take needs replenishment: when formations
+taking from the family at their first active step arise at arbitrarily late steps, the
+family is replenished at arbitrarily late steps. The arising enters only through the
+uptake it brings. -/
+theorem replenishment_recurs {cs : List C} (balances : L.Balances W)
+    (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) (T : Nat) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  uptake_needs_replenishment balances (fun N => match arising N with
+    | ⟨t, _, later, _, present, takes⟩ =>
+      ⟨t + 1, Nat.le_succ_of_le later, uptake_pos present takes⟩) T
 
 /-- Renewing activity recurs: under the same premises, formations give to the family at
 arbitrarily late steps. When only active formations give, they are active. -/
@@ -469,6 +481,48 @@ theorem undepleted :
     | ⟨_, _, falls⟩ => Nat.lt_irrefl 1 falls⟩
 
 end Garden
+
+/-! ## Recurring uptake with nothing arising -/
+
+namespace Steady
+
+/-- A consumer (`true`) and a renewer (`false`), both always active; the consumer depends
+on the condition and draws on it. -/
+def web : Web Bool Unit where
+  level _ _ := 1
+  active _ _ := True
+  requires _ f _ := f = true
+  need _ _ _ := 1
+  draws _ f _ := f = true
+
+/-- The consumer takes one unit at every step and the renewer gives one back. -/
+def flow : Flow Bool Unit where
+  present _ := [true, false]
+  take _ f _ := match f with
+    | true => 1
+    | false => 0
+  give _ f _ := match f with
+    | true => 0
+    | false => 1
+
+/-- The flow balances, only active formations give and take, from what they draw on, and
+activity needs support. Uptake is positive at every step and nothing ever arises, yet
+replenishment is needed at arbitrarily late steps, as for unceasing generation of
+takers: what needs it is the recurring uptake. -/
+theorem steady :
+    flow.Balances web ∧ flow.Acting web ∧ flow.Taking web ∧ web.Dependent ∧
+    (∀ t, 0 < flow.uptake [()] t) ∧ (∀ t f, ¬ web.Arises t f) ∧
+    ∀ T, ¬ ∀ t, T ≤ t → flow.replenishment [()] t = 0 :=
+  have positive : ∀ t, 0 < flow.uptake [()] t := fun _ => Nat.zero_lt_one
+  have balances : flow.Balances web := fun _ _ => rfl
+  ⟨balances, fun _ _ _ _ _ => trivial,
+   fun _ f _ _ takes => match f, takes with
+    | true, _ => ⟨trivial, rfl⟩
+    | false, takes => absurd takes (Nat.lt_irrefl 0),
+   fun _ _ _ _ _ => Nat.le_refl 1, positive, fun _ _ arises => arises.1 trivial,
+   Flow.uptake_needs_replenishment balances fun N => ⟨N, Nat.le_refl N, positive N⟩⟩
+
+end Steady
 
 /-! ## Unceasing generation is not yet more -/
 

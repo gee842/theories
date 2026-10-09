@@ -179,8 +179,8 @@
     "en": "Stated for the stepwise reading only; with fixed dependences it applies through K.dependence.along r, and the whole-run reading could take the same relation, which is not done here. Does not order events in time or ask about the effect of drawing; does not change living; chooses no reading; yields no responsibility or duty."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T053653.440404Z）：Becoming.Correspondence 中本记录的 25 项定理全部空依赖（模块另有 9 项定理属于 life-as-condition-of-life）；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 513 项定理／878 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T053653.440404Z): the 25 theorems of Becoming.Correspondence belonging to this record all have empty axiom reports (the module's other 9 belong to life-as-condition-of-life); the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 513 theorems/878 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Correspondence 中本记录的 25 项定理全部空依赖（模块另有 9 项定理属于 life-as-condition-of-life）；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P8-P9-P7B-REVIEW.md），其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): the 25 theorems of Becoming.Correspondence belonging to this record all have empty axiom reports (the module's other 9 belong to life-as-condition-of-life); the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P8-P9-P7B-REVIEW.md), and its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -242,7 +242,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "327bfe27ba666e557b80b29f8986a1e621c8610312e2141e9206a24ae9d582f1",
+      "sha256": "d93f543b97124f2320aaaf65a932f553169ca690cc068f43b602ae9562f71870",
       "declarations": [
         "Becoming.Web.UnderminingOn",
         "Becoming.Web.Participates"
@@ -251,19 +251,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "13dc8e7bfe1a323fd9e2f83972489414ed467b3a06adcb615a1edabb8e45bda4",
+      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "08a4ff74df2142301e5a2a8ce838b6998a1193fd547806d9fdebbb4cae06d4e3",
+      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "6ae00cc43e5aa21945a6da489d138b4ac7cd1a8fbfac4c5ce0d9266c94690833",
+      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
       "declarations": []
     },
     {
@@ -338,6 +338,10 @@
     {
       "zh": "2026-10-09：P14 在 Becoming.Correspondence 末尾新增一节（9 项定理，属于 life-as-condition-of-life），本记录的声明与证明不变；检验范围注明模块的定理数。",
       "en": "2026-10-09: P14 added a section at the end of Becoming.Correspondence (9 theorems, belonging to life-as-condition-of-life); this record's declarations and proofs are unchanged; the validation scope notes the module's theorem count."
+    },
+    {
+      "zh": "2026-10-09：P12b 按第五次独立审查更正并扩展 Becoming.Flow、Becoming.Population 与 Becoming.Identity 后，合并检查器重跑（20261009T060305.410034Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P12b corrected and extended Becoming.Flow, Becoming.Population and Becoming.Identity following the fifth independent review, the consolidated checker was rerun (20261009T060305.410034Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

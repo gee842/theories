@@ -524,7 +524,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## identity-across-steps ← unceasing-generation-needs-renewal
 
-`formal-reuse` — 复用 Arises、Unceasing、Depletes、Rises、Falls；说明不息依赖同一，而单由改认制造、不降低任何条件的生起不满足 Depletes。 / Reuses Arises, Unceasing, Depletes, Rises and Falls; shows that unceasing generation depends on identity, and that arisings made by re-identification alone, lowering no condition, do not meet Depletes.
+`formal-reuse` — 复用 Arises、Unceasing、Depletes、Rises、Falls 与 Unceasing.regeneration_recurs；说明不息依赖同一。在 Turnover 中单由改认制造的生起不降低任何条件，Depletes 不成立；在 TideFlip 中单由命名造成的生起满足 Depletes 与全部前提，所以 Depletes 不筛掉命名的产物。 / Reuses Arises, Unceasing, Depletes, Rises, Falls and Unceasing.regeneration_recurs; shows that unceasing generation depends on identity. In Turnover the arisings made by re-identification alone lower no condition and Depletes fails; in TideFlip the arisings made by naming alone meet Depletes and every premise, so Depletes does not screen out what naming makes.
 
 **Producer output / 上游输出:** 生起、不息与消耗。 / Arising, unceasing generation and depletion.
 
@@ -536,13 +536,13 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## identity-across-steps ← more-needs-renewers
 
-`formal-reuse` — 复用流、取用者、补充者、More、普查、Taking 与 More.unceasing；说明它们不依赖同一，并把“更多蕴含不息”推广到每个改认。 / Reuses flows, takers, renewers, More, censuses, Taking and More.unceasing; shows that they do not depend on identity, and extends “more implies unceasing” to every re-identification.
+`formal-reuse` — 复用流、取用者、补充者、More、普查、Taking、More.grows 与 More.unceasing；说明它们不依赖同一，并把“更多蕴含不息”推广到每个改认，以及每种没有分裂的延续。 / Reuses flows, takers, renewers, More, censuses, Taking, More.grows and More.unceasing; shows that they do not depend on identity, and extends “more implies unceasing” to every re-identification and to every continuation without splits.
 
 **Producer output / 上游输出:** 流、消耗与补充的平衡、计数、普查与更多蕴含不息。 / Flows, the balance of depletion and replenishment, counts, censuses, and more implying unceasing generation.
 
 **Consumer input / 下游输入:** 改认后的流与普查。 / Re-identified flows and censuses.
 
-**Retained conditions / 保留条件:** 普查、present 不重复与 Taking（只用于 More.unceasing_reidentified）。 / A census, present without repetition and Taking (only for More.unceasing_reidentified).
+**Retained conditions / 保留条件:** 普查、present 不重复与 Taking（只用于 More.unceasing_reidentified 与 More.unceasingFrom；后者另需 NoSplit）。 / A census, present without repetition and Taking (only for More.unceasing_reidentified and More.unceasingFrom; the latter also needs NoSplit).
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 

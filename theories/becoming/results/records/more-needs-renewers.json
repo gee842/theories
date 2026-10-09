@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T04:41:28+00:00",
+  "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
   "claim": {
-    "zh": "把条件读作数量：一个流给出每步参与的形成，以及每个形成从每个条件取用与给予的量；流平衡一个依存网，当条件水平的每次变化恰是取用与给予之差。对一个有限的条件家族，一步之后的总水平加上取用，等于之前的总水平加上补充；对任意一段步也如此（消耗与补充的平衡）。平衡且只有活跃形成给予时，每次上升都由某个活跃的补充者造成，所以 unceasing-generation-needs-renewal 的对应前提 RenewedBy 成为定理。生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位。于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。每个形成每步给予家族的量至多一个固定量时，补充者的数目在同一平均意义上增长，没有最终的界，但可以在无穷多步上为零。在活跃形成的普查之下（每步活跃的形成列成不重复的有限表），若流的 present 每步每个形成只列一次，只有活跃的形成取用且只从它汲取的条件取用，不止地更多蕴含不息的生成；不息地反复生起的开花满足这些前提而不更多，所以这一蕴含是严格的；没有普查，或取用者不活跃时，不止地更多可以没有任何生起。每一步都生起一个更新者和一个生长者的流满足全部前提，并且不止地更多；在封闭循环中，每个形成归还所取，总量不变，生成不止地更多，补充者恰是取用者。所以在平衡的流中，取用的形成不息地生起与不止地更多所需的补充构成严格的层级：前者需要补充在任意晚的步出现，后者需要补充没有最终的界。不用伦理前提，也不用 Lean 公理。",
-    "en": "Reading conditions as amounts: a flow gives the formations taking part in each step and how much each takes from and gives to each condition; it balances a web of dependence when every change of a condition's level is what is taken and given. For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment). When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem. Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step. Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps. Under a census of active formations (the active formations at each step listed once in a finite list), if the flow's present lists each formation once per step and only active formations take, from conditions they draw on, more without end implies unceasing generation; the bloom that arises again and again meets these premises and is not more, so the implication is strict; without a census, or with takers that are not active, more without end can come with nothing arising. A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle each formation gives back what it takes, the total never changes, generation is more without end, and the renewers are exactly the takers. So in balanced flows the replenishment needed by unceasing arising of takers and by more without end forms a strict hierarchy: the first needs replenishment at arbitrarily late steps, the second replenishment with no eventual bound. No ethical premise and no Lean axiom is used."
+    "zh": "把条件读作数量：一个流给出每步参与的形成，以及每个形成从每个条件取用与给予的量；流平衡一个依存网，当条件水平的每次变化恰是取用与给予之差。对一个有限的条件家族，一步之后的总水平加上取用，等于之前的总水平加上补充；对任意一段步也如此（消耗与补充的平衡）。平衡且只有活跃形成给予时，每次上升都由某个活跃的补充者造成，所以 unceasing-generation-needs-renewal 的对应前提 RenewedBy 成为定理。生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位。于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。每个形成每步给予家族的量至多一个固定量时，补充者的数目在同一平均意义上增长，没有最终的界，但可以在无穷多步上为零。在活跃形成的普查之下（每步活跃的形成列成不重复的有限表），若流的 present 每步每个形成只列一次，只有活跃的形成取用（Taking 中只用到这一半），活跃的形成没有界地增多，不止地更多蕴含不息的生成；花园与循环满足全部这些前提，所以蕴含不是空的；不息地反复生起的开花满足这些前提而不更多，所以这一蕴含是严格的；没有普查、present 有重复，或取用者不活跃时，不止地更多可以没有任何生起。每一步都生起一个更新者和一个生长者的流满足全部前提，并且不止地更多；在封闭循环中，每个形成归还所取，总量不变，生成不止地更多，补充者恰是取用者。所以在平衡的流中，复现的取用与不止地更多所需的补充构成严格的层级：前者（取用的形成不息地生起是其一种情形）需要补充在任意晚的步出现，后者需要补充没有最终的界。不用伦理前提，也不用 Lean 公理。",
+    "en": "Reading conditions as amounts: a flow gives the formations taking part in each step and how much each takes from and gives to each condition; it balances a web of dependence when every change of a condition's level is what is taken and given. For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment). When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem. Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step. Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps. Under a census of active formations (the active formations at each step listed once in a finite list), if the flow's present lists each formation once per step and only active formations take (only this half of Taking is used), the active formations grow without bound and more without end implies unceasing generation; the garden and the cycle meet all these premises, so the implication is not vacuous; the bloom that arises again and again meets these premises and is not more, so the implication is strict; without a census, with a formation listed many times in present, or with takers that are not active, more without end can come with nothing arising. A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle each formation gives back what it takes, the total never changes, generation is more without end, and the renewers are exactly the takers. So in balanced flows the replenishment needed by recurring uptake and by more without end forms a strict hierarchy: the first, of which unceasing arising of takers is one case, needs replenishment at arbitrarily late steps, the second replenishment with no eventual bound. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -31,8 +31,8 @@
       "en": "Capacity (used only for the conclusions about renewers): each formation gives the family at most a fixed amount per step."
     },
     {
-      "zh": "普查与 Taking（只用于“更多蕴含不息”）：每步活跃的形成可列为不重复的有限表，活跃可判定（判定性是定理的假设，不是公理）；只有活跃的形成取用，且只从它汲取的条件取用。Taking 的逆（每个汲取者都在流中取用）是应用义务。",
-      "en": "Census and Taking (used only for “more implies unceasing”): the active formations at each step can be listed once in a finite list, and activity is decidable (a hypothesis of the theorem, not an axiom); only active formations take, and only from conditions they draw on. The converse of Taking (every drawer takes in the flow) is an application duty."
+      "zh": "普查与 Taking（只用于“更多蕴含不息”）：每步活跃的形成可列为不重复的有限表，活跃可判定（判定性是定理的假设，不是公理）；只有活跃的形成取用，且只从它汲取的条件取用；More.unceasing 只用到前一半。present 每步不重复也是必要的前提（Repeated）。Taking 的逆（每个汲取者都在流中取用）是应用义务。",
+      "en": "Census and Taking (used only for “more implies unceasing”): the active formations at each step can be listed once in a finite list, and activity is decidable (a hypothesis of the theorem, not an axiom); only active formations take, and only from conditions they draw on; More.unceasing uses only the first half. That present has no repetition at each step is also a necessary premise (Repeated). The converse of Taking (every drawer takes in the flow) is an application duty."
     }
   ],
   "correspondence": {
@@ -58,7 +58,11 @@
     "Becoming.Pulse.pulsed",
     "Becoming.Dormant.more_without_arising",
     "Becoming.Inactive.more_without_arising",
-    "Becoming.Crowd.drawing_without_taking"
+    "Becoming.Crowd.drawing_without_taking",
+    "Becoming.Flow.More.grows",
+    "Becoming.Garden.counted",
+    "Becoming.Cycle.counted",
+    "Becoming.Repeated.more_without_arising"
   ],
   "dependencies": [
     {
@@ -156,6 +160,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "detail": {
+        "zh": "present 有重复时，不止地更多不蕴含不息（Repeated.more_without_arising）：一个始终活跃的形成在第 t 步被列 t 次，普查、平衡、Acting 与 Taking 成立，不止地更多，而没有任何生起；只缺 present 不重复（第五次独立审查 I1）。",
+        "en": "With repetition in present, more without end does not imply unceasing generation (Repeated.more_without_arising): one formation, always active, is listed t times at step t; the census, balance, Acting and Taking hold and generation is more without end, while nothing arises; only present without repetition fails (fifth independent review I1)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "detail": {
         "zh": "Taking 的逆可以不成立（Crowd.drawing_without_taking）：越来越多的形成活跃、依存并汲取，而流不记录任何取用，不止地更多不成立。",
         "en": "The converse of Taking can fail (Crowd.drawing_without_taking): ever more formations are active, depend and draw, while the flow records no taking and more without end fails."
       }
@@ -180,21 +191,28 @@
         "zh": "第四次独立审查：P11 的全部声明接受，公理报告为空；“严格的层级”作为蕴含不成立，More 数的是取用者，最小取用未点明，“给予者越来越多”与“没有一个有限的部分独自承担”强于定理，账目用语与 Ren 的纠正相冲突（已更正，整合文档 §15）。",
         "en": "Fourth independent review: every P11 declaration is accepted with empty axiom reports; “strict hierarchy” failed as an implication, More counts takers, the minimum uptake was unstated, “ever more givers” and “no finite part bears it alone” were stronger than the theorems, and the ledger vocabulary conflicted with Ren's corrections (corrected, integration note §15)."
       }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "detail": {
+        "zh": "第五次独立审查：P11b 的全部声明接受，公理报告为空；章节省去了 present 不重复这一必要前提，核心中没有满足全部前提的正面见证，Taking 只用到一半，补充者的改名未完成，不息的结论依赖一对一的同一（已更正，整合文档 §19）。",
+        "en": "Fifth independent review: every P11b declaration is accepted with empty axiom reports; the chapter omitted the necessary premise that present has no repetition, the core had no positive witness meeting every premise, only half of Taking is used, the rename to renewer was incomplete, and the unceasing conclusion depends on one-to-one identity (corrected, integration note §19)."
+      }
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词，不推出“更多更好”或任何排序；“更多”只读取用者的数目，不陈述多样性、复杂性与可能性；只约束持续的更多，不约束个别步上的数目；每个取用者至少取用一个单位是前提；“越来越多”只在平均意义上成立，补充者可以在无穷多步上为零；“更多蕴含不息”需要普查、present 不重复与 Taking，Taking 的逆是应用义务；补充者可以就是取用者，把要求传到展开中更远之处需要耗散前提（见 no-finite-part-bears-taking）；形成与条件在 Web 与 Flow 中是两类，生作为生的条件以一类关系项读出（life-as-condition-of-life）；生成成分没有加入 living 的读法；条件家族与每步参与的形成都有限；见证都是最小见证；流与 present 的对应是应用义务；新名称是审查的建议，最终由 Ren 定。",
-    "en": "Contains no ethical predicate and yields no “more is better” or any ranking; “more” reads only the number of takers and does not state diversity, complexity or possibility; it constrains only sustained more, not the number at isolated steps; a minimum uptake of one unit per taker is a premise; “ever more” holds only in the averaged sense, and renewers can be absent at infinitely many steps; “more implies unceasing” needs a census, present without repetition and Taking, whose converse is an application duty; the renewers can be the takers, and carrying the demand further along the unfolding needs a dissipation premise (see no-finite-part-bears-taking); formations and conditions are two kinds in Web and Flow, and life as a condition of life is read with one kind of relatum in life-as-condition-of-life; the generation component is not added to any reading of living; families of conditions and the formations taking part at each step are finite; the witnesses are minimal; the correspondence of flows and present is an application duty; the new names are the reviewer's suggestions, and the final choice is Ren's."
+    "zh": "不含伦理谓词，不推出“更多更好”或任何排序；“更多”只读取用者的数目，不陈述多样性、复杂性与可能性；只约束持续的更多，不约束个别步上的数目；每个取用者至少取用一个单位是前提；“越来越多”只在平均意义上成立，补充者可以在无穷多步上为零；“更多蕴含不息”需要普查、present 不重复与 Taking（只用到其活跃的一半），Taking 的逆是应用义务；不息依赖跨步的同一：在每种一对一的同一读法下更多迫使的不息成立，在每种没有分裂的延续下更多迫使生起，在把新形成读作萌出的读法下迫使的只是活跃形成的数目没有界（identity-across-steps）；补充者可以就是取用者，把要求传到展开中更远之处需要耗散前提（见 no-finite-part-bears-taking）；形成与条件在 Web 与 Flow 中是两类，生作为生的条件以一类关系项读出（life-as-condition-of-life）；生成成分没有加入 living 的读法；条件家族与每步参与的形成都有限；见证都是最小见证；流与 present 的对应是应用义务；新名称是审查的建议，最终由 Ren 定。",
+    "en": "Contains no ethical predicate and yields no “more is better” or any ranking; “more” reads only the number of takers and does not state diversity, complexity or possibility; it constrains only sustained more, not the number at isolated steps; a minimum uptake of one unit per taker is a premise; “ever more” holds only in the averaged sense, and renewers can be absent at infinitely many steps; “more implies unceasing” needs a census, present without repetition and Taking (only its activity half), whose converse is an application duty; unceasing generation depends on identity across steps: the unceasing generation forced by more holds under every one-to-one reading of identity, more forces arising under every continuation without splits, and under a reading of new formations as budding what is forced is only that the active formations have no bound (identity-across-steps); the renewers can be the takers, and carrying the demand further along the unfolding needs a dissipation premise (see no-finite-part-bears-taking); formations and conditions are two kinds in Web and Flow, and life as a condition of life is read with one kind of relatum in life-as-condition-of-life; the generation component is not added to any reading of living; families of conditions and the formations taking part at each step are finite; the witnesses are minimal; the correspondence of flows and present is an application duty; the new names are the reviewer's suggestions, and the final choice is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T053653.440404Z）：Becoming.Flow 58 项定理与 Becoming.Population 20 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 513 项定理／878 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §14；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理，更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T053653.440404Z): all 58 theorems of Becoming.Flow and 20 theorems of Becoming.Population have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 513 theorems/878 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §14 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections, handled in §15, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T060305.410034Z）：Becoming.Flow 60 项定理与 Becoming.Population 33 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 559 项定理／948 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §14；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出 present 不重复的必要性与全部前提的正面见证，见 §19，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T060305.410034Z): all 60 theorems of Becoming.Flow and 33 theorems of Becoming.Population have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 559 theorems/948 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §14 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added the necessity of present without repetition and positive witnesses meeting every premise, see §19; these corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "3aaf674219eac41d6b3713767d2fd95c211037f495a9adc3f6875a3e983ec8f0",
+      "sha256": "3f2bfedaa2198ed975fa8be1aae8a1bc5a0d249e07bcf21a492e7f2b5bfa9274",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -238,7 +256,8 @@
         "Becoming.Cycle.closed_more",
         "Becoming.Pulse.flow",
         "Becoming.Pulse.web",
-        "Becoming.Pulse.pulsed"
+        "Becoming.Pulse.pulsed",
+        "Becoming.Garden.growers_take"
       ]
     },
     {
@@ -258,7 +277,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "327bfe27ba666e557b80b29f8986a1e621c8610312e2141e9206a24ae9d582f1",
+      "sha256": "d93f543b97124f2320aaaf65a932f553169ca690cc068f43b602ae9562f71870",
       "declarations": [
         "Becoming.Web",
         "Becoming.Web.Dependent"
@@ -267,19 +286,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "13dc8e7bfe1a323fd9e2f83972489414ed467b3a06adcb615a1edabb8e45bda4",
+      "sha256": "4150009b948fc5389dc3203cda2ff50b274e7ee3be99a279bbb7996d3aa7099b",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "08a4ff74df2142301e5a2a8ce838b6998a1193fd547806d9fdebbb4cae06d4e3",
+      "sha256": "b10705896b57a97ea22218aa1af140d37dc5191f6ccaaa735bcd12cee3161606",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "6ae00cc43e5aa21945a6da489d138b4ac7cd1a8fbfac4c5ce0d9266c94690833",
+      "sha256": "30d7bd06d8435d33b940d530a4e0530aed0cc998b3ed56261fc1021e8e98bc8b",
       "declarations": []
     },
     {
@@ -297,14 +316,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "e8570df9baa4085deb9cb10d948098cdefa3b64149008f1e3beaad0fbaf3c56a",
+      "sha256": "27a40fbc515a2311910aaf1533582e463e4e7e80ac8ef25e7b26237556440f6e",
       "declarations": [
         "Becoming.Distinct",
         "Becoming.length_le_of_sub",
         "Becoming.count_le_of_sub",
         "Becoming.rises_between",
         "Becoming.Web.Census",
-        "Becoming.Web.search",
         "Becoming.Web.arises_of_more",
         "Becoming.Web.unceasing_of_growth",
         "Becoming.Flow.More.unceasing",
@@ -317,13 +335,31 @@
         "Becoming.Inactive.web",
         "Becoming.Inactive.more_without_arising",
         "Becoming.Crowd.flow",
-        "Becoming.Crowd.drawing_without_taking"
+        "Becoming.Crowd.drawing_without_taking",
+        "Becoming.search",
+        "Becoming.length_le_of_matched",
+        "Becoming.Flow.More.grows",
+        "Becoming.Garden.distinct",
+        "Becoming.Garden.census",
+        "Becoming.Garden.counted",
+        "Becoming.Cycle.distinct",
+        "Becoming.Cycle.census",
+        "Becoming.Cycle.counted",
+        "Becoming.Repeated.web",
+        "Becoming.Repeated.flow",
+        "Becoming.Repeated.more_without_arising"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
       "role": "review",
       "sha256": "aa26b8372d8c1b899d6e4dd1caadbddbd92f3f5ba74e49976b4b75e0b19b4ac7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "role": "review",
+      "sha256": "84766b7a6f16b5822c58f75a1a947c458e6578ceb4975afd4fd8975820d22b65",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -382,6 +418,10 @@
     {
       "zh": "2026-10-09：P14 以一类关系项读出生作为生的条件（life-as-condition-of-life）；界限、对应与下一步中“形成与条件是两类”的说法改为指向它；主张与证明不变。",
       "en": "2026-10-09: P14 reads life as a condition of life with one kind of relatum (life-as-condition-of-life); the statements that formations and conditions are two kinds in the limitations, correspondence and next delta now point to it; the claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P12b 按第五次独立审查（BECOMING-P11B-P12-REVIEW.md）更正：present 不重复写为“更多蕴含不息”的必要前提并新增 Repeated；新增 Garden.counted、Cycle.counted 作为全部前提的正面见证，以及 More.grows；写明 Taking 只用到活跃的一半；复现的取用代替“取用的形成不息地生起”作为层级的第一层；界限注明不息依赖同一。合并检查器重跑（20261009T060305.410034Z）。",
+      "en": "2026-10-09: P12b corrected this record following the fifth independent review (BECOMING-P11B-P12-REVIEW.md): present without repetition is stated as a necessary premise of “more implies unceasing”, with Repeated added; Garden.counted and Cycle.counted were added as positive witnesses meeting every premise, with More.grows; only the activity half of Taking is used; recurring uptake replaces “unceasing arising of takers” as the first level of the hierarchy; the limitations note that unceasing generation depends on identity. The consolidated checker was rerun (20261009T060305.410034Z)."
     }
   ]
 }

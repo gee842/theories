@@ -773,9 +773,9 @@ Integration: unceasing-generation-needs-renewal 的下一步（陈述“更多�
 **解读。**
 
 - **补充的层级，以及蕴含。** （P11b 更正。原文写作“构成一个层级，每一层需要的更新都比前一层多”与“给予者越来越多”。）在平衡的流中，三者各自所需的补充构成严格的层级：取用的形成不息地生起（`ArisesTaking`）需要补充在任意晚的步出现（`replenishment_recurs`）；不止地更多需要补充没有最终的界；`Bloom` 分开二者。三者本身只在所述对应之下按蕴含排列：复现的更新不蕴含不息的生成（`Tide.renewal_without_arising`），不息的生成不蕴含不止地更多（`Bloom.not_more`）；在活跃形成的普查之下、只有活跃的形成取用时，不止地更多蕴含不息的生成（`Flow.More.unceasing`），没有普查时不然（`Dormant`）。每个形成给予有限时，补充者的数目没有最终的界，并在平均的意义上越来越多（`Balances.renewers_over`），但可以在无穷多步上为零（`Pulse`）。
-- **生生。** 由 `RenewedBy`，补充者是展开之内的形成。所以在 `Capacity` 之下，更多的取用需要补充更新的形成参与，其数目没有最终的界，在平均的意义上越来越多：生成的条件须由越来越多的形成补充。它们是否在展开中生起，定理没有陈述。这是作者对“生生”的一种结构读法（AI 论证），不替代 Ren 的原话，也不推出它是好的。若一个形成的给予可以无界地增长，更多可以由同一个给予者的增长承担；那也是一种“更多”，只是落在给予的量上。定理在 `Capacity` 下才把补充转为补充者的数目。读法的边界（P11b，§15）：补充者可以就是取用者自身（`Cycle.closed_more`），“补充的形成”不必是另一类；在 `Web` 与 `Flow` 中形成与条件是两类，一个形成本身作为另一个形成的条件（生作为生的条件）只能经由代理条件表示，这是表示所省略的关系（P14 更正：§18 以一类关系项读出这一关系）；每个取用者每步至少取用一个单位是前提，取用可以无限变小时，更多的取用者不需要更多的补充（论证，未形式化）。
+- **生生。** 由 `RenewedBy`，补充者是展开之内的形成。所以在 `Capacity` 之下，更多的取用需要补充更新的形成参与，其数目没有最终的界，在平均的意义上越来越多：生成的条件须由越来越多的形成补充。它们是否在展开中生起，定理没有陈述。这是作者对“生生”的一种结构读法（AI 论证），不替代 Ren 的原话，也不推出它是好的。若一个形成的给予可以无界地增长，更多可以由同一个补充者的增长承担；那也是一种“更多”，只是落在给予的量上。定理在 `Capacity` 下才把补充转为补充者的数目。读法的边界（P11b，§15）：补充者可以就是取用者自身（`Cycle.closed_more`），“补充的形成”不必是另一类；在 `Web` 与 `Flow` 中形成与条件是两类，一个形成本身作为另一个形成的条件（生作为生的条件）只能经由代理条件表示，这是表示所省略的关系（P14 更正：§18 以一类关系项读出这一关系）；每个取用者每步至少取用一个单位是前提，取用可以无限变小时，更多的取用者不需要更多的补充（论证，未形式化）。
 - **持续的更多。** `More` 取的是持续的更多：从某步起一直至少那么多。只在个别步上任意多的情形，不受这一定理约束。
-- **与 §13 的关系。** §13 中“每次上升都由形成的更新造成”是对应前提；在平衡的流中它是定理，前提移到了流本身：流须记录实际的取用与给予。`Garden` 的更新者凭空给予，与 `Bloom` 的太阳一样，是因为这一表示省略了它们自身的条件。若照实计入，它们也须被更新。原文接着写“更多的要求沿展开传递下去，没有一个有限的部分独自承担”；这需要耗散前提（每次给予都使给予者的条件付出多于所给），此处未陈述：在封闭循环中，补充者恰是取用者，家族的总量不变（`Cycle`，P11b 更正）。这与 §13 的 `dissipation_ceases` 是同一件事的两面。
+- **与 §13 的关系。** §13 中“每次上升都由形成的更新造成”是对应前提；在平衡的流中它是定理，前提移到了流本身：流须记录实际的取用与给予。`Garden` 的更新者凭空给予，与 `Bloom` 的太阳一样，是因为这一表示省略了它们自身的条件。若照实计入，它们也须被更新。原文接着写“更多的要求沿展开传递下去，没有一个有限的部分独自承担”；这需要耗散前提（每次给予都使补充者的条件付出多于所给），此处未陈述：在封闭循环中，补充者恰是取用者，家族的总量不变（`Cycle`，P11b 更正）。这与 §13 的 `dissipation_ceases` 是同一件事的两面。
 
 **作者反审。**
 
@@ -783,7 +783,7 @@ Integration: unceasing-generation-needs-renewal 的下一步（陈述“更多�
 
 *反驳 2：把“更多”读作取用者的数目太窄。* 是。更多种类、更复杂的结构、更多的可能性，都是“更多”的读法，这里都没有陈述。这里只读一种：更多的形成依赖同一组条件而活。
 
-*反驳 3：`present` 中重复列出同一个形成会使计数失真。* 对。定理对列表条目成立；把条目读作形成，需要每步每个形成只列一次，这是应用义务，模块说明已写明。
+*反驳 3：`present` 中重复列出同一个形成会使计数失真。* 对。定理对列表条目成立；把条目读作形成，需要每步每个形成只列一次，这是应用义务，模块说明已写明。`Repeated`（P12b）表明这一前提是必要的。
 
 *反驳 4：`Capacity` 是把结论写进前提。* 不是：没有 `Capacity`，`More.replenishment_unbounded` 仍然成立；`Capacity` 只把补充的无界转为补充者数目的无界。它是对应前提：一个形成的给予受它自身的大小与条件所限。
 
@@ -870,7 +870,7 @@ Integration: H1–H14 全部处理；审查列出的会改变判断的结果中�
 
 *反驳 1：最小形式又一次只是让定义合乎散文。* 它修正的是 P9b 未披露的代价。最小形式保留 P9b 的三个排除，并计入 `Stunted`。它仍是一个选择：只低于增长到从未被满足的所需，不算侵蚀（`RisingNeed`）。一个所需增长的幼体，在一次汲取后若仍不低于它曾被满足的所需，这次汲取不被扣下。这一选择是公开的。
 
-*反驳 2：流的形式只是“取用为正，所以补充复现”，生起只是标出步。* 部分对。若不把取用系于生起的形成，生起确实只标出步，`Tide` 就是这样。`ArisesTaking` 的内容正在于这一联系：生起的形成本身在其第一个活跃步从家族取用。它是对应前提，`Garden` 与 `Bloom` 满足它；一个不从家族取用的生起者，例如一个更新者，不受它约束。
+*反驳 2：流的形式只是“取用为正，所以补充复现”，生起只是标出步。* （P12b 更正。原文写作“部分对”，并说 `ArisesTaking` 的内容正在于生起与取用的联系。）对：生起只经由它带来的取用起作用；`ArisesTaking` 把生起与取用连起来，使定理可以读作关于生成的定理，但定理所用的只是取用（`uptake_needs_replenishment`；恒定的取用者、没有任何生起，同样需要补充复现，`Steady`）。若不把取用系于生起的形成，生起只标出步，`Tide` 就是这样。它是对应前提，`Garden` 与 `Bloom` 满足它；一个不从家族取用的生起者，例如一个更新者，不受它约束。
 
 *反驳 3：普查是强前提，实际展开中活跃的形成未必有限。* 对。`Dormant` 表明它的作用：没有普查时，一个从开始就活跃的无穷群体可以实现不止地更多而没有任何生起。普查读作：在所论的区域中，每步活跃的形成有限，并且能被列出。它是对应前提，不是定理的推论。
 
@@ -878,20 +878,20 @@ Integration: H1–H14 全部处理；审查列出的会改变判断的结果中�
 
 *反驳 5：既然更多在对应之下蕴含不息，为什么还说“三者各自所需的补充构成层级”，而不直接说“三者构成蕴含的层级”？* 因为两个蕴含的前提不同。更多蕴含不息，需要普查与 Taking。不息蕴含补充复现，需要 `ArisesTaking`。复现的更新不蕴含不息（`Tide`）。没有一组前提把三者同时排成一条链，所以只在所述对应之下说蕴含。
 
-**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证。本节的更正尚未再经独立审查。
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证。本节的更正经第五次独立审查，见 §19。
 
 
 ## 16. 跨步的同一：改名、改认与接续（P12）
 
 2026-10-09。开放纲领“动态依存”一行把形成的个体化列为下一步；`Becoming.Dependence` 的说明也写明，形成跨步的同一由索引类型 `F` 规定，一个形成转化还是一个终结而另一个形成，取决于这一规定。本节证明这一规定在哪些读法中起作用，在哪些读法中不起作用，以及活动与依存的连续能把它确定到什么程度。成果记录：[identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md)。
 
-依存网用固定的索引类型给形成命名，所以一步的哪个形成与下一步的哪个形成相同，是由名字规定的；每一步的关系并不确定它。**改认**（`Reidentify`）在每一步把两种命名一一对应。改认之后的网在每一步有相同的水平、活动、依存与汲取，不同的只是哪一步的哪个形成延续前一步的哪个。每一步都相同的改认是**改名**。分裂与合并改变形成的数目，不是改认。
+依存网用固定的索引类型给形成命名，所以一步的哪个形成与下一步的哪个形成相同，是由名字规定的；每一步的关系并不确定它。**改认**（`Reidentify`）在每一步把两种命名一一对应。改认之后的网在每一步有相同的水平、活动、依存与汲取，不同的只是哪一步的哪个形成延续前一步的哪个。每一步都相同的改认是**改名**。分裂与合并（一个形成延续为几个，或几个延续为一个）不是改认：它们改变延续关系，不改变任何一步形成的数目（P12b 更正；原文写作“分裂与合并改变形成的数目”）。§19 以延续关系表示它们。
 
 ```text
 Result(s): 复用 becoming-dependence-dynamics（依存网、支持、保持、断裂、任期、侵蚀、形成与消解）、
            unceasing-generation-needs-renewal（生起、不息、Depletes）、more-needs-renewers（流、取用者、更多、普查与 Taking）；
            新增 identity-across-steps（L3）
-Delta: 改名保持追随形成的全部读法；任何改认保持每一步的关系、每个条件的类、Dependent、每个事件是否在更新之内与是否断裂，
+Delta: 改名保持追随形成的读法（P12b 更正：检查了五种，原文作“全部读法”）；任何改认保持每一步的关系、每个条件的类、Dependent、每个事件是否在更新之内与是否断裂，
        以及流的取用与给予、取用者与补充者的数目、“更多”、活跃形成的普查与 Taking，所以在普查之下，更多在每个改认下蕴含不息；
        只改动谁延续谁，形成的类、侵蚀、转化与生起都改变；
        保持持续活动的改认不制造生起，保持持续依存的改认不去掉侵蚀；它们仍可把终结者与开始者接起来（接续），接续可以隐藏生起、增加侵蚀
@@ -911,36 +911,36 @@ Integration: 开放纲领“形成的个体化”部分承接；逐步读法与�
 | `reidentify_amounts`、`reidentify_balances`、`reidentify_counts`、`reidentify_more` | 改认一个流，保持每步的取用与给予、消耗与补充的平衡、取用者与补充者的数目，因而保持不止地更多 |
 | `Reidentify.new_injective`、`Reidentify.mem_map`、`mem_map_of`、`mem_of_map`、`distinct_map`、`Web.Census.reidentify`、`Flow.Taking.reidentify` | 改认保持活跃形成的普查（每步不重复地列出）与“只有活跃的形成取用，且只从它汲取的条件取用” |
 | `Flow.More.unceasing_reidentified` | 在普查、present 不重复与 Taking 之下，不止地更多在每个改认下蕴含不息 |
-| `rename_renewingIn`、`rename_consumingIn`、`rename_tenure`、`rename_undermining`、`rename_unceasing` | 名字不承载任何东西：改名保持形成的类、依存的任期（`MetAbove`）、侵蚀、形成与消解、生起与不息 |
+| `rename_renewingIn`、`rename_consumingIn`、`rename_tenure`、`rename_undermining`、`rename_unceasing` | 标签不承载任何东西（P12b 更正，原文作“名字”）：改名保持形成的类、依存的任期（`MetAbove`）、侵蚀、形成与消解、生起与不息 |
 | `Turnover.identified`、`Turnover.reidentified` | 每一奇数步交换名字，每一步的关系不变：一个形成更新、一个消耗，变成没有形成更新、两个消耗；汲取者在每一步侵蚀，变成第一步之后没有任何事件侵蚀；没有依存形成或消解、没有生起，变成一个形成跨第一步转化依存、每一奇数步都有形成生起，生成不息。这些生起不降低任何条件，`Depletes` 不成立。两个网中活动都只在有支持处 |
 | `KeepsActive`、`KeepsTenure`、`Reidentify.steady` | 改认保持跨一步持续活动的形成的名字；保持跨一步持续依存于某条件的形成的名字。后者使一个形成在一段任期上只有一个名字 |
 | `arises_of_keepsActive`、`unceasing_of_keepsActive` | 保持持续的活动，改认不制造生起：新名字下生起的，在旧名字下也生起；因而不制造不息 |
 | `metAbove_of_keepsTenure`、`undermining_of_keepsTenure` | 保持持续的依存，改认保持在任期中满足过的依存，不去掉任何侵蚀 |
 | `Lineage.readings` | 一个谱系的两个成员在交替的步活跃。分开命名，成员不息地生起；作为一个命名，谱系始终活跃，没有生起。合为一个命名保持持续的活动，因为没有成员在相继两步都活跃 |
-| `Succession.readings` | 长者在第一步需要池，继承者从第二步起需要池，其需要在任期中从未被满足。分开命名，汲取者只在第一步侵蚀（断裂长者的依存）；继承者接续长者时，长者的任期在继承者中延续，汲取者每一步都侵蚀。接续保持持续的活动与依存 |
+| `Succession.readings` | （P12b 更正：原见证的继承者从不活跃，从第二步起需要池而从未被满足。）长者在第一步需要池；继承者在第二步活跃并以一单位被满足，自第三步起需要两单位，活动需要支持。分开命名，汲取者只在第一步侵蚀（断裂长者的依存）；继承者接续长者时，长者的任期在继承者中延续，汲取者自第三步起每一步都侵蚀。接续保持持续的活动与依存 |
 
 **解读。**
 
-- **名字不承载本体。** 改名保持全部这些读法：形式变量只经由它们的关系起作用。这是方法要求“不能以分别命名偷渡独立本体”在这一表示中的一个检查。它检查的是这些定义，不是一元的证明。
-- **每一步与每个条件只由关系确定。** 支持、保持与断裂、条件的类、每个事件是否在更新之内，都只依赖每一步的关系，不依赖跨步的同一。消耗读的是一个依存在它成立时的样子，对照条件以后的水平；它不追随形成。“更多”读的是每步取用者的数目，也不依赖。在普查与 Taking 之下，它所迫使的不息也不依赖（`More.unceasing_reidentified`）：不息本身依赖同一（`Turnover`、`Lineage`），由“更多”迫使的不息却不依赖。原因在 `arises_of_more`：下一步活跃的形成多于这一步时，无论怎样命名，总有一个名字在这一步不活跃而在下一步活跃，数目的增长不能由改认吸收。
+- **标签不承载任何东西；名字跨步的模式承载同一。** （P12b 更正。原文写作“名字不承载本体。改名保持全部这些读法……这是方法要求‘不能以分别命名偷渡独立本体’在这一表示中的一个检查”。）改名保持由关系定义的这些读法（检查了五种）：标签的选择不起作用。名字跨步的模式承载同一：这是表示给出的对应前提，`Turnover` 表明它是实质的。方法要求“不能以分别命名偷渡独立本体”在这里的检查是这一披露，不是改名不变，因为改名按构造保持这一模式。
+- **每一步与每个条件只由关系确定。** 支持、保持与断裂、条件的类、每个事件是否在更新之内，都只依赖每一步的关系，不依赖跨步的同一。消耗读的是一个依存在它成立时的样子，对照条件以后的水平；它不追随形成。“更多”读的是每步取用者的数目，也不依赖。在普查与 Taking 之下，它所迫使的不息在每种一对一的同一读法下也不依赖（`More.unceasing_reidentified`）：不息本身依赖同一（`Turnover`、`Lineage`），由“更多”迫使的不息却不依赖一一对应的命名。原因在 `arises_of_more`：下一步活跃的形成多于这一步时，无论怎样一一对应地命名，总有一个名字在这一步不活跃而在下一步活跃，数目的增长不能由改认吸收。（P12b 补充：在把新形成读作从既有形成萌出的读法下，数目的增长由分裂吸收；没有分裂时它仍迫使生起，见 §19。）
 - **追随形成的读法依赖同一。** 形成在整段上的类、依存的任期（因而侵蚀与逐步读法的 `living`）、转化与“一个终结而另一个形成”的区别、生起（因而不息），都依赖跨步的同一。`Turnover` 只改动谁延续谁，这些就全部改变。所以 §5 中“分类属于运行，不属于形成自身的轨迹”还要补一句：形成的类还依赖哪些事件属于同一个形成。
-- **连续排除什么，留下什么。** 把同一读作活动与依存的连续：跨一步持续活动的形成保持名字，跨一步持续依存的形成保持名字。这样的改认不制造生起，也不去掉侵蚀。它仍可以把在某步终结的形成与在该步开始的形成接起来：开始者是否延续终结者，是接续的问题。接起来可以隐藏生起（`Lineage`），也可以增加侵蚀（`Succession`）。两个定理各有一个方向，反方向的反例恰是接续。
-- **对生生的意义（AI 论证）。** 一个谱系的成员交替生起：分开命名是不息的生成，作为一个命名是一个形成的持续。“生生不息”若读作谱系的持续，它落在维持与更新上；若读作成员不断生起，它落在 §13 的不息上。哪一种是接续的读法，不由每一步的关系决定。继承者是否继承长者的损失，决定此后的汲取是否侵蚀；这触及工作读法“不侵蚀”的一个选择：一个依存的任期能否经由接续延续。这两个选择属于 Ren。
-- **对 P10 的影响。** `Unceasing` 依赖同一；在 `Turnover` 中，改认单独制造了不息。§13 的 `Unceasing.rises` 不受影响：它的结论（家族中某个条件在任意晚的步上升）只关乎条件，不依赖同一；它的前提 `Depletes` 要求在家族都不上升的步上，每次生起时家族中某个条件下降，而 `Turnover` 中单由改认制造的生起不降低任何条件，`Depletes` 不成立，定理不适用。保持持续活动的改认也不制造不息。
+- **连续排除什么，留下什么。** 把同一读作活动与依存的连续：跨一步持续活动的形成保持名字，跨一步持续依存的形成保持名字。这样的改认不制造生起，也不去掉侵蚀。它仍可以把在某步终结的形成与在该步或其后开始的形成接起来：开始者是否延续终结者，是接续的问题。接起来可以隐藏生起（`Lineage`），也可以增加侵蚀（`Succession`）。（P12b 更正。原文写作“两个定理各有一个方向，反方向的反例恰是接续”。）两个条件以旧命名为参照，是单向的：新命名可以制造连续（接起来），不能去掉连续（`Lineage.one_way`、`Succession.one_way`）。两向保持连续时，生起与侵蚀恰被保持；接续开放，是因为连续取单向的读法。两向保持连续，跨过休眠之步的接续仍改变形成的类（`Dormancy`）：连续不约束形成在整段上的类。
+- **对生生的意义（AI 论证）。** （P12b 更正。原文把谱系的持续与成员的生起写成二选一，并说读作谱系的持续时“落在维持与更新上”；`Lineage` 没有任何条件，后一句没有见证。）谱系与成员是同一展开的两个层次：作为整体的谱系持续，正由成员不息地生起而成（`Layered`）；单一命名层次只能表示其一，部分与整体的关系是这一表示所省略的关系。把“生生不息”读到谱系、成员或两者的层次，不由每一步的关系决定；只读作谱系的持续，与 Ren 原话中的“不断创造”有张力。继承者是否继承长者的损失，决定此后的汲取是否侵蚀；这触及工作读法“不侵蚀”的一个选择：一个依存的任期能否经由接续延续。这两个选择属于 Ren。
+- **对 P10 的影响。** `Unceasing` 依赖同一；在 `Turnover` 中，改认单独制造了不息。§13 的 `Unceasing.rises` 不受影响：它的结论（家族中某个条件在任意晚的步上升）只关乎条件，不依赖同一；（P12b 更正。原文另给第二个理由：`Turnover` 中单由改认制造的生起不降低任何条件，`Depletes` 不成立，定理不适用。那只是 `Turnover` 的性质。）`Depletes` 不系于生起的形成，不筛掉命名的产物：单由命名造成的生起可以满足全部前提（`TideFlip`）。定理不受影响，是因为结论只关乎条件；它的前提 `Unceasing` 依赖同一，要把它读作关于生成的定理，需要命名保持持续的活动（`arises_of_keepsActive`）。
 
 **作者反审。**
 
 *反驳 1：改名不变是平凡的。* 对按关系定义的谓词，改名不变是一条元定理：可定义的性质在同构下不变。这里在 Lean 中逐项检查，并与改认对照；值得注意的是改认改变什么、不改变什么。
 
-*反驳 2：`Turnover` 的改认是荒谬的，没有人会这样认同。* 对：它破坏了活动与依存的连续。它只表明每一步的关系不决定同一。连续的定理说明，排除这类改认后剩下的只有接续；而 `Lineage` 与 `Succession` 中的接续不荒谬：谱系、继承者、同一生态位上的接替都是实际的情形。
+*反驳 2：`Turnover` 的改认是荒谬的，没有人会这样认同。* 对：它破坏了活动与依存的连续。它只表明每一步的关系不决定同一。连续的定理说明，排除这类改认后剩下的是接续，包括跨过休眠的接续（P12b 更正；原文作“剩下的只有接续”）；而 `Lineage` 与 `Succession` 中的接续不荒谬：谱系、继承者、同一生态位上的接替都是实际的情形。
 
-*反驳 3：改认要求每一步的形成一一对应，排除了分裂与合并。* 对。分裂与合并改变形成的数目，需要另外的表示；本节只处理数目不变时谁延续谁。
+*反驳 3：改认要求每一步的形成一一对应，排除了分裂与合并。* 对。（P12b 更正。原文写作“分裂与合并改变形成的数目”。）分裂与合并不改变任何一步形成的数目，改变的是延续关系；本节只处理一一对应的延续，§19 以延续关系表示分裂与合并。
 
 *反驳 4：把同一读作连续，是否预设了同一？* 连续在这里只用到每一步的关系与名字：一个形成在相继两步都活跃，或都依存于某条件。它不定义同一，只约束改认：在约束之下，改认不再能制造生起或去掉侵蚀，接续仍由读法决定。
 
 *反驳 5：普查下的结论是不是只把同一换成了计数？* 是，这正是它的内容：“更多”只读每步的数目，普查把数目的增长与生起连起来。它不说哪个形成生起，只说总有某个形成生起；在 `Lineage` 那样数目不增长的展开中，它什么也不说。
 
-**边界。** 不含伦理谓词；改认只处理每步形成一一对应的情形；连续是作者提出的一种同一的读法，不是同一的定义；接续怎样读、工作读法“不侵蚀”是否让任期经由接续延续，属于 Ren 的读法选择；从关系推出同一的完整说明（例如物质、信息或组织的连续）没有给出。本节尚未经独立审查。
+**边界。** 不含伦理谓词；改认只处理每步形成一一对应的情形；连续是作者提出的一种同一的读法，不是同一的定义；接续怎样读、工作读法“不侵蚀”是否让任期经由接续延续，属于 Ren 的读法选择；从关系推出同一的完整说明（例如物质、信息或组织的连续）没有给出。本节经第五次独立审查，更正见 §19。
 
 ## 17. 耗散：没有有限部分独自承担持续的取用（P13）
 
@@ -985,7 +985,7 @@ Integration: 陈述第四次审查 H6、H12 所要求的前提；§13 的 dissip
 
 **作者反审。**
 
-*反驳 1：`Dissipative` 太强，排除了任何“免费”的给予者。* 对，这正是前提的内容：给予者的代价须表示为它所取的条件。太阳的燃料、植物所取的光都要作为条件出现。§14 的 `Garden` 与 `Bloom` 省略了来源，不满足 `Dissipative`；那是表示所省略的关系，不是没有关系。
+*反驳 1：`Dissipative` 太强，排除了任何“免费”的补充者。* 对，这正是前提的内容：补充者的代价须表示为它所取的条件。太阳的燃料、植物所取的光都要作为条件出现。§14 的 `Garden` 与 `Bloom` 省略了来源，不满足 `Dissipative`；那是表示所省略的关系，不是没有关系。
 
 *反驳 2：耗散只对某些量成立，例如自由能，对信息或组织不一定成立。* 对。本节只说：对满足耗散的量，持续的取用需要越出每个有限家族。信息的复制、组织的维持是否耗散，是对应问题；`Cycle` 表明不耗散的量可以封闭地循环。
 
@@ -1060,6 +1060,99 @@ Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条
 *反驳 5：`Brood` 的给予不付出代价。* 对。耗散之下（§17）给予须付出所取的条件；耗散之下的一类读法未陈述。
 
 **边界。** 不含伦理谓词；`Embodied`、`SelfBearing` 与 `Dependent` 是表示前提；遗骸与不活跃的条件不体现；一类读法不保持 `Acting`、`Taking` 与 `Dissipative` 的陈述；给予在此不付出代价；见证都是最小见证。本节尚未经独立审查。
+
+## 19. 第五次独立审查与更正（P12b）
+
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P11b（§15）与 P12（§16）（[审查](BECOMING-P11B-P12-REVIEW.md)）。它在仓库之外从前导重新编译 19 个核心模块，公理报告为空；回执、哈希与别名都对，数学接受，H1–H14 全部关闭。问题在前提的陈述、散文与对应之间，共十二项（I1–I12），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择接续或 living 的读法；它指出对方法检查的说法过强（I7），以及把单层表示的省略呈现为交给 Ren 的二选一（I10）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查列出的会改变判断的结果中，没有分裂的延续之下的生起定理（第 6 项）也已证明。§14–§17 中受影响的句子已就地更正并标明；原文见提交 `a739e232`。
+
+```text
+Result(s): 修正 identity-across-steps（标题、主张、假设、对应、反例、界限、下一步）、more-needs-renewers、
+           unceasing-generation-needs-renewal；becoming-stepwise-reading 与 becoming-renewal-reading 的界限补上对同一的依赖；
+           no-finite-part-bears-taking 与 life-as-condition-of-life 只改用语；不新增结果记录
+Delta: 流的形式的一般定理：复现的取用需要复现的补充（uptake_needs_replenishment），生起只经由取用起作用（Steady）；
+       present 不重复是“更多蕴含不息”的必要前提（Repeated）；全部前提的正面见证（Garden.counted、Cycle.counted）；
+       连续分为单向与双向：双向时生起、不息与侵蚀恰被保持，单向时新命名可以制造连续；
+       双向保持连续，跨过休眠的接续仍改变形成的类（Dormancy）；命名造成的生起满足 P10 的前提（TideFlip）；
+       延续关系读出分裂与合并：没有分裂时更多迫使生起（More.unceasingFrom），萌出时不然（Budding）；
+       谱系与成员是两个层次（Layered）；继承者活跃并被满足（Succession）
+Supplied premises / correspondence: 新增：双向的连续（Reidentify.back）；延续关系、NoSplit，
+       以及“是否延续某个活跃形成”可判定（定理的假设，不是公理）
+Evidence: Becoming.Flow 60、Population 33、Identity 77 项定理；
+          合并检查器回执 20261009T060305.410034Z（559 项定理／948 项声明审计，核心闭包 21 个模块，公理报告全空）；
+          外围桥接 20261009T060407.444723Z
+Boundary: 接续的读法、“生生不息”读到哪个层次、任期能否经由接续延续，属于 Ren；Depletes 等名称最终由 Ren 定
+Integration: I1–I12 全部处理；审查列出的会改变判断的结果中，第 1、3、5、6、8 项完成，第 2、4、7 项的更正完成而各留一个开放结果，
+       第 9 项属于 Ren
+```
+
+### 19.1 逐项处理
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| I1 | `present` 不重复是 `More.unceasing` 的第三个必要前提，章节两处省去（`Repeated`） | `Repeated` 移入 `Population`，成为定理：一个始终活跃的形成在第 t 步被列 t 次，普查、平衡、Acting、Taking 与不止地更多都成立，没有任何生起，只缺 present 不重复。模块说明中“（论证，未形式化）”随之删去。章节 §1、§2 与 §8 补上这一前提；more-needs-renewers 把它写为必要前提，并列入反例 |
+| I2 | 核心中没有满足 `More.unceasing` 全部前提的正面见证 | `Garden.census`、`Garden.counted`、`Cycle.census`、`Cycle.counted` 成为定理：花园与循环都满足普查、present 不重复、Taking 与不止地更多，所以蕴含不是空的。`Garden.unceasing_reidentified`：花园的生成在每个改认下不息。为此把 `More.unceasing` 的增长部分提出为 `Flow.More.grows` |
+| I3 | `replenishment_recurs` 的证明丢弃了 `Arises`；恒定的取用者同样需要补充复现（`Steady`）；§15.4 反驳 2 强于定理 | `uptake_needs_replenishment` 成为 `Flow` 的一般定理：在平衡的流中，任意晚的步上有正的取用，就需要任意晚的步上有补充。`replenishment_recurs` 由它推出，说明写明生起只经由它带来的取用起作用。`Steady.steady` 成为定理。§15.4 反驳 2、章节 §2 与 §8、unceasing-generation-needs-renewal 随之更正：需要补充的是复现的取用，无论取用来自生成还是维持；把生成与维持分开的是严格性（`Tide.renewal_without_arising`），不是对补充的需要 |
+| I4 | 四处 P11b 残余与一处过期时间 | (a) `Depletes` 的字面名称（例如 `FallsWhenStill`）列入 Ren 的选择，暂不改名。(b) `MetAbove` 的说明改为“依存在每一步都成立，满足与否不论”。(c) 写明 `More.unceasing` 只用到 Taking 中“只有活跃的形成取用”这一半。(d) Flow 与 Dissipation 的说明、回执的范围文字、包的 README、章节、本文档的现行段落与两份记录中残留的“给予者／giver”改为“补充者／renewer”；对历史的描述保留原词。(e) becoming-renewal-reading 的审查时间刷新 |
+| I5 | 连续是单向的；双向读时生起与侵蚀恰被保持 | `Reidentify.back` 把同一对应从新命名读回旧命名。`arises_of_back_keepsActive`、`arises_iff_of_keepsActive_both`、`unceasing_iff_of_keepsActive_both`、`metAbove_of_back_keepsTenure`、`undermining_of_back_keepsTenure` 与 `undermining_iff_of_keepsTenure_both` 成为定理。`Lineage.one_way`、`Succession.one_way`：两个见证中合并的命名保持分开命名的连续，反之不然。模块说明、§16、记录与章节改为：单向时新命名可以制造连续（接起来），不能去掉连续；两向保持连续时，生起与侵蚀恰被保持；接续开放，是因为连续取单向的读法。记录下一步中“连续定理的反方向”一项关闭 |
+| I6 | 双向保持连续，跨过休眠之步接起来仍改变形成的类（`Dormancy`） | `Dormancy` 移入 `Identity`，成为定理（`keeps_both`、`classes`）。接续改述为：把终结的形成与在该步或其后开始的形成接起来，中间可以有不活跃、不依存的步。加一句：连续不约束形成在整段上的类 |
+| I7 | “名字不承载任何东西”与“跨步的同一由命名规定”字面矛盾；改名不变检查不到方法所防的偷渡 | 改为“标签不承载任何东西：改名保持由关系定义的读法（检查了五种）”。加一句：名字跨步的模式承载同一，这是表示给出的对应前提，`Turnover` 表明它是实质的；方法要求在这里的检查是这一披露，不是改名不变。记录标题随之改写 |
+| I8 | 单由命名造成的生起可以满足 `Unceasing.regeneration_recurs` 的全部前提（`TideFlip`） | `TideFlip` 移入 `Identity`，成为定理。§16“对 P10 的影响”的第二个理由改为：`Depletes` 不系于生起的形成，不筛掉命名的产物；定理不受影响，是因为结论只关乎条件；它的前提 `Unceasing` 依赖同一，要把它读作关于生成的定理，需要命名保持持续的活动（`arises_of_keepsActive`）。记录中依赖的说明限于 `Turnover`，`TideFlip` 列为反例 |
+| I9 | “在每种同一的读法下”不成立；分裂不改变形成的数目 | 两处都做。其一，改为“在每种一对一的同一读法下”，并把分裂与合并改述为：一个形成延续为几个或几个延续为一个，改变的是延续关系，不是任何一步形成的数目。其二，以延续关系表示它们（`Web.Continues`）：`ArisesFrom` 是延续关系之下的生起，`arisesFrom_self` 表明以自身为延续时它就是 `Arises`。`Flow.More.unceasingFrom` 成为定理：在每种没有形成延续为两个的延续关系之下（`NoSplit`，允许合并），普查之下不止地更多使形成在任意晚的步生起；证明经由关系形式的鸽巢原理 `length_le_of_matched`。`continuation_reidentify`：每个改认都是这样的延续，其下的生起恰是新名字下的生起。`Budding.growth_without_arising`：把新形成读作从形成 0 萌出，第一步之后没有任何生起，而这一延续有分裂。所以分裂恰是界限 |
+| I10 | 谱系的 AI 论证把单层表示的省略呈现为二选一；“落在维持与更新上”没有见证 | `Layered.both` 成为定理：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；依存网没有部分与整体的关系。AI 论证改为：谱系与成员是同一展开的两个层次，作为整体的谱系持续正由成员不息地生起而成；单一命名层次只能表示其一，部分与整体的关系是这一表示所省略的关系。“落在维持与更新上”删去。写明只读作谱系的持续与 Ren 原话中“不断创造”之间的张力 |
+| I11 | `Succession` 的继承者从不活跃 | `Succession` 改用活跃的继承者：继承者在第二步活跃并以一单位被满足，自第三步起需要两单位；活动需要支持。分开命名时第一步之后的汲取都不侵蚀；继承者接续长者时自第三步起每一步都侵蚀。结论不变，见证更强 |
+| I12 | 依赖同一的读法没有在其记录中注明 | unceasing-generation-needs-renewal、becoming-stepwise-reading、becoming-renewal-reading 与 more-needs-renewers 的界限各加一句，指向 identity-across-steps |
+
+### 19.2 新的已检查声明
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Flow | `uptake_needs_replenishment`；`replenishment_recurs`（改由它推出） | 平衡的流中，任意晚的步有正的取用，就需要任意晚的步有补充 |
+| Flow | `Steady.web`、`Steady.flow`、`Steady.steady` | 一个消耗者与一个补充者始终活跃：取用每步为正，没有任何生起，补充复现 |
+| Population | `length_le_of_matched`、`search`；`length_le_of_sub`（改由前者推出） | 关系形式的鸽巢原理：不重复的表中每个成员匹配另一表的某个成员、没有成员被匹配两次时，前者不更长；在有限表中检索可判定的性质 |
+| Population | `Flow.More.grows` | 在普查、present 不重复与 Taking 之下，不止地更多使活跃的形成没有界地增多 |
+| Population | `Garden.census`、`Garden.counted`、`Cycle.census`、`Cycle.counted` | 花园与循环满足 `More.unceasing` 的全部前提 |
+| Population | `Repeated.more_without_arising` | 只缺 present 不重复时，不止地更多而没有任何生起 |
+| Dependence | `MetAbove`（说明更正） | 依存在任期的每一步都成立，满足与否不论 |
+| Identity | `Reidentify.back`；`arises_of_back_keepsActive`、`arises_iff_of_keepsActive_both`、`unceasing_iff_of_keepsActive_both`、`metAbove_of_back_keepsTenure`、`undermining_of_back_keepsTenure`、`undermining_iff_of_keepsTenure_both` | 双向的连续恰保持生起、不息与侵蚀 |
+| Identity | `Web.Continues`、`ArisesFrom`、`UnceasingFrom`、`NoSplit`、`arisesFrom_self`、`unceasingFrom_self` | 延续关系之下的生起与不息；以自身为延续时就是 `Arises` 与 `Unceasing` |
+| Identity | `arisesFrom_of_more`、`unceasingFrom_of_growth`、`Flow.More.unceasingFrom` | 没有分裂的延续之下，活跃的形成变多时有形成生起；普查之下不止地更多使形成在任意晚的步生起 |
+| Identity | `Reidentify.continuation`、`Web.continuation_reidentify` | 每个改认都是没有分裂的延续，其下的生起恰是新名字下的生起 |
+| Identity | `odd`、`afterFirst`、`turn`、`turn_turn`、`turn_fixed`、`Reidentify.exchanging` | 在选定的步以对合交换名字；五个见证共用 |
+| Identity | `TideFlip.naming_meets_premises` | 命名造成的生起满足 `Unceasing.regeneration_recurs` 的全部前提 |
+| Identity | `Garden.unceasing_reidentified` | 花园的生成在每个改认下不息 |
+| Identity | `Budding.growth_without_arising` | 萌出的延续有分裂，第一步之后不迫使任何生起 |
+| Identity | `Lineage.one_way`、`Succession.one_way` | 合并的命名只单向保持连续 |
+| Identity | `Layered.both` | 谱系每步活跃，成员不息地生起 |
+| Identity | `Succession.readings`（继承者改为活跃） | 继承者活跃并被满足；接续时自第三步起汲取每一步侵蚀 |
+| Identity | `Dormancy.keeps_both`、`Dormancy.classes` | 跨过休眠接起来，双向保持连续，形成的类改变 |
+
+原有的 `Web.search`、各见证自己的 `turn`、`after` 与 `Succession.elder_named` 由上述一般声明代替。
+
+### 19.3 审查列出的会改变判断的结果
+
+1. `More.unceasing`：章节写明 present 不重复，`Repeated` 与花园、循环的普查移入核心。完成（I1、I2）。
+2. 流的形式：`uptake_needs_replenishment` 移入核心，反驳 2 更正。完成（I3）。使生成而不是取用承担这一要求的耗散流定理，开放。
+3. 双向的连续：四个双向定理移入 `Identity`，单向读法写明为一种选择。完成（I5）。
+4. 休眠：`Dormancy` 作为见证，接续放宽到跨过不活跃之步，并写明连续不约束形成的类。完成（I6）。跨过休眠也成立的连续读法（例如不活跃时持续的依存），开放。
+5. 标签与同一：按 I7 改写。完成。
+6. 分裂：一对一的限定与对分裂的更正描述，完成；在每种没有形成延续为两个的延续关系之下（允许合并），不止地更多迫使生起的定理，以及 `Budding` 表明分裂使它失效，完成（I9）。限定由精确的界限代替。
+7. 谱系：改为同一展开的两个层次，部分与整体的关系被省略；“落在维持与更新上”删去。完成（I10）。形成之间带部分与整体关系的表示，开放。
+8. 见证与记录：`Succession` 的活跃继承者（I11）、界限句（I12）与 I4 的残余，完成。
+9. 接续的读法、“生生不息”读到谱系、成员或两者的层次、任期能否经由接续延续：属于 Ren。本节没有替 Ren 作任何一个选择。
+
+### 19.4 作者反审
+
+*反驳 1：双向的连续是更自然的读法，单向读法只是为接续留出空间。* 两种都是读法。单向读法以一个命名为参照，问另一个命名是否与它相容；双向读法要求两个命名对谁延续谁一致。双向时，同一步的接续被排除，但跨过休眠的接续仍在（`Dormancy`），所以双向读法也不消除对接续的选择。
+
+*反驳 2：`More.unceasingFrom` 只是把鸽巢原理搬到关系上。* 对，这是它的内容。新的是界限的精确：没有分裂时（允许合并），更多迫使生起；有分裂时不然（`Budding`）。“更多迫使生起”不依赖一一对应的命名，只依赖没有形成延续为两个。
+
+*反驳 3：可判定性的假设太强。* 它是定理的假设，不是公理。在普查之下，若延续关系本身可判定，“是否延续某个活跃形成”就可判定，因为只需在有限表中检查。没有任何可判定性时，构造性地只能得到“不是从某步起再没有生起”。
+
+*反驳 4：`Steady` 削弱了 P10 的流的形式。* 它澄清了内容：补充复现的需要来自复现的取用，无论取用来自生成还是维持。生成与维持之分在严格性上（`Tide.renewal_without_arising`、`Bloom.not_more`）。这与“不断创造更多生”并不冲突：更多的取用需要没有最终界的补充（§14）。
+
+*反驳 5：`Layered` 回避了谱系的读法。* 它表明二选一出自表示：一个命名层次只能表示谱系或成员。把部分与整体的关系纳入表示（例如形成之间的构成关系），是开放的结果；在此之前，把“生生不息”读到哪个层次属于 Ren。
+
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议，`Depletes` 的名称留给 Ren；探针与新见证都是最小见证；延续关系之下只陈述了更多迫使的生起，形成的类、任期与侵蚀没有陈述。本节的更正尚未再经独立审查。
 
 ## English summary
 
@@ -1148,7 +1241,7 @@ Suppose arising depletes a finite family of conditions: at each step at which no
 
 A bloom arising again and again on a condition the sun renews meets every premise; the stepwise working candidate withholds each of its blooms, and the reading over cycles of two credits it. "More", diversity and complexity are not stated, and the generation component has not been added to any reading of `living`. Section 13 was reviewed in the fourth independent review; its corrections are in §15.
 
-**P11: more (§14).** Section 13 states only the "unceasing" of Ren's words. `Becoming.Flow` reads conditions as amounts that the formations taking part in each step take and give. A flow balances a web when every change of a condition's level is what is taken from it and given to it. Then the family's total plus its uptake equals its total before plus its replenishment, over one step and over any stretch. Balance also makes every rise the work of an active giver, so the correspondence premise `RenewedBy` of §13 becomes a theorem.
+**P11: more (§14).** Section 13 states only the "unceasing" of Ren's words. `Becoming.Flow` reads conditions as amounts that the formations taking part in each step take and give. A flow balances a web when every change of a condition's level is what is taken from it and given to it. Then the family's total plus its uptake equals its total before plus its replenishment, over one step and over any stretch. Balance also makes every rise the work of an active renewer, so the correspondence premise `RenewedBy` of §13 becomes a theorem.
 
 "More" is read as: for every number, from some step on at least that many formations take from a finite family of conditions. Amounts are natural numbers, so each taker takes at least one unit; this positive minimum uptake is a premise (P11b). More without end then needs replenishment that no eventual bound bounds. When each formation gives at most a fixed amount, it needs renewers that no eventual bound bounds; their number can still be zero at infinitely many steps (`Pulse`, P11b). Renewers and growers arising at every step meet every premise, while the unceasing bloom of §13 never has more than one formation taking.
 
@@ -1167,8 +1260,10 @@ As corrected in P11b, what this gives is a strict hierarchy of the replenishment
 
 The core now has 376 theorems and 688 declaration audits over 18 modules, all with empty axiom reports. Open: a dissipative flow theorem, quantities with a rational floor, and Ren's choices of the scope of the second 生 and of "more". These corrections have not been independently reviewed again.
 
-**P12: identity across steps.** `Becoming.Identity` relates two namings of formations one to one at each step (`Reidentify`), leaving every step's levels, activity, dependences and drawing unchanged. A renaming preserves every reading, so names carry nothing. Any re-identification preserves each step's relations, each condition's class, what a flow takes and gives, the counts of takers and renewers, more without end, a census of the active formations and `Taking`; so under a census more without end makes generation unceasing under every re-identification (`Flow.More.unceasing_reidentified`). What follows a formation depends on identity: its class over the run, the tenure of a dependence, undermining, transformation and arising. Exchanging names at odd steps changes all of them (`Turnover`). Keeping the names of continuing activity makes no arising, and keeping those of continuing dependence removes no undermining. Succession remains open. A lineage's members arise without end when named apart, and nothing arises when they are named as one (`Lineage`). An heir succeeding an elder makes later drawing undermine (`Succession`). How to read succession is Ren's choice. The core now has 422 theorems and 760 declaration audits over 19 modules, all with empty axiom reports. This section has not been independently reviewed.
+**P12: identity across steps.** `Becoming.Identity` relates two namings of formations one to one at each step (`Reidentify`), leaving every step's levels, activity, dependences and drawing unchanged. A renaming preserves the readings defined from relations (checked for five), so labels carry nothing (P12b correction; originally "every reading, so names carry nothing"). Any re-identification preserves each step's relations, each condition's class, what a flow takes and gives, the counts of takers and renewers, more without end, a census of the active formations and `Taking`; so under a census more without end makes generation unceasing under every re-identification (`Flow.More.unceasing_reidentified`). What follows a formation depends on identity: its class over the run, the tenure of a dependence, undermining, transformation and arising. Exchanging names at odd steps changes all of them (`Turnover`). Keeping the names of continuing activity makes no arising, and keeping those of continuing dependence removes no undermining. Succession remains open. A lineage's members arise without end when named apart, and nothing arises when they are named as one (`Lineage`). An heir succeeding an elder makes later drawing undermine (`Succession`). How to read succession is Ren's choice. The core now has 422 theorems and 760 declaration audits over 19 modules, all with empty axiom reports. This section was reviewed by the fifth independent review; see P12b.
 
 **P13: dissipation.** `Becoming.Dissipation` states dissipation on flows. Across a step, a family is closed when no formation taking part exchanges with a condition outside it, and a formation dissipates on it when it gives the family no more than it takes from it, and less when it takes. In a balanced flow a dissipated family falls by at least its number of takers at each step. Dissipated from some step on, its takers over all later steps number at most its stock there, and taking from it does not recur. So under dissipation on every closed family, a finite family from which formations take at arbitrarily late steps is open at arbitrarily late steps, and so is every finite family containing it. More without end and the unceasing arising of takers are such taking. With finitely many conditions in all, taking does not recur. A sun burning a fresh fuel at every step, giving a pool less than it burns while ever more growers take from the pool, meets every premise (`Frontier`). Without dissipation a closed cycle sustains more without end (`Cycle`). This turns the author's argument that no finite part bears continued taking alone into a theorem under a stated premise. The core now has 450 theorems and 798 declaration audits over 20 modules, all with empty axiom reports. This section has not been independently reviewed.
 
 **P14: roles.** `Becoming.Roles` reads formations and conditions as two roles of one relatum. The two-kind reading of `Web` and `Flow` is the one-kind reading in which no formation is a condition. Read so, every listed reading and the connection of both valuations is kept, and no formation active at some step is embodied or bears on itself. A relatum is embodied when it stands as a condition exactly while it is active, and bears on itself when, while active, it depends on its own standing. Under `Dependent`, a formation depending on an embodied relatum lives only while that relatum does, activity passes along chains of such dependence, and a relatum that is not active ends every formation whose chain reaches it (coextinction). Drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence, so the drawing event is not living; whether ending another life should so count belongs to Ren's reading of 生生. In a balanced flow where only active formations give, an embodied relatum arises only as another active formation gives to it: life from life. Drawing on a relatum that bears on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition; where each depends only on the other, neither valuation relates them. A fox ends with the hare it eats, and generations arise without end, each given by the one before. This answers H14 of the fourth review. The core now has 513 theorems and 878 declaration audits over 21 modules, all with empty axiom reports. This section has not been independently reviewed.
+
+**P12b: the fifth independent review.** A separate agent (Claude Opus 5.5) reviewed P11b and P12 ([review](BECOMING-P11B-P12-REVIEW.md)). It accepted all the mathematics with empty axiom reports, closed H1–H14, and found twelve issues (I1–I12) in premises, prose and correspondence. In the flow form, recurring uptake needs recurring replenishment (`uptake_needs_replenishment`): arising works only through the uptake it brings, and a constant consumer with nothing arising needs replenishment too (`Steady`). That the flow lists each formation once is a necessary premise of `More.unceasing` (`Repeated`), and the garden and the cycle meet every premise (`Garden.counted`, `Cycle.counted`). Labels carry nothing, while the pattern of names across steps carries identity. Continuity read one way lets the new naming make a continuity; read both ways it preserves arising and undermining exactly (`Reidentify.back`), and joining across a dormant step still changes a formation's class (`Dormancy`). Arisings made by naming alone can meet every premise of `Unceasing.regeneration_recurs` (`TideFlip`). Splits and merges change the continuation relation, not the number of formations. Under every continuation in which no formation continues as two, more without end under a census makes formations arise at arbitrarily late steps (`Flow.More.unceasingFrom`), while budding defeats it (`Budding`). A lineage and its members are two levels of one unfolding, with the part–whole relation omitted (`Layered`). The heir of `Succession` now lives. The core now has 559 theorems and 948 declaration audits over 19 modules, all with empty axiom reports. These corrections have not been independently reviewed again.
