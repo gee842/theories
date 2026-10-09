@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-99 migrated records: 95 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+100 migrated records: 96 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -31,6 +31,7 @@
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
 | `classification-robust-generative-comparison` | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](records/classification-robust-generative-comparison.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
+| `condition-correspondence-discipline` | [条件的对应纪律：只有交互才经由条件相关，惰性条件不再免费连通，连通由活的使用造成 / A correspondence discipline for conditions: only interaction relates through a condition, idle conditions no longer connect for free, and connection is made by living use](records/condition-correspondence-discipline.md) | theorem | recorded-checked |
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |
 | `constitutive-binding-assessment` | [绑定的构成性说明及无前提推广的限度 / Constitutive binding and the limits of presuppositionless promotion](records/constitutive-binding-assessment.md) | assessment | reviewed-scoped |
 | `context-sensitive-updating-correspondence` | [情境选择性更新的公开数据对应 / Public-data correspondence for context-sensitive updating](records/context-sensitive-updating-correspondence.md) | assessment | reviewed-scoped |

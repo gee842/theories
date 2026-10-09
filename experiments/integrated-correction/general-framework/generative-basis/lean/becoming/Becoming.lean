@@ -8,6 +8,7 @@ import Becoming.Joint
 import Becoming.Substitution
 import Becoming.Metaethics
 import Becoming.Ranking
+import Becoming.Correspondence
 
 /-!
 # The Theory of Becoming: the formal core
@@ -37,6 +38,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Ranking` (L4): what C ranks under each reading. Both the whole-run and the
   stepwise reading rank sharing above winning by consumption; only the whole-run
   reading ranks the absence of an overdrawing formation above its occurrence.
+* `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
+  condition relates two events only when one draws on it and the other depends on it
+  at a positive level, idle conditions connect nothing, and connection through a
+  condition is made by its living use.
 
 The core imports nothing else, every declaration has an empty axiom report, and it
 compiles from Lean's prelude alone. `Becoming.Bridge` lies outside the core: it shows

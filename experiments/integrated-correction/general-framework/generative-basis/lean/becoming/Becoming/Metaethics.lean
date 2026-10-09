@@ -38,8 +38,11 @@ The premise card, every item named and visible:
   not undermine others' dependence and `related` is participation in a common
   condition. Connection then rests on which conditions are counted: one that every
   formation requires at level zero connects any web without changing `living`, while
-  a coarse common condition whose dependence fails empties `living`. Both readings are
-  relative to a run, while `G0`, `Comparison` and `universal_reason` take a `living`
+  a coarse common condition that every formation draws on empties `living` once a
+  dependence on it fails. `Becoming.Correspondence` states one discipline: a condition
+  relates two events only when one draws on it and the other depends on it at a
+  positive level, so that idle conditions connect nothing and connection through a
+  condition is made by its living use. Both readings are relative to a run, while `G0`, `Comparison` and `universal_reason` take a `living`
   fixed across configurations; joining them needs a construction not given here.
 
 Results:

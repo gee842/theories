@@ -143,8 +143,8 @@
     "en": "Proved only in the support-gated family and for one pair of compared continuations; the relation-level reading also credits the focal formation's first relation but is not formalized separately; yields no responsibility, duty or feasibility; chooses no reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：Becoming.Ranking 15 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): the 15 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T011915.395840Z）：Becoming.Ranking 15 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 207 项定理／395 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T011915.395840Z): the 15 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 207 theorems/395 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -193,7 +193,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "df97cd990bb54b3ae8207ed471c819ff93d3103616421d481f1647a48cc84e0f",
+      "sha256": "003cf6908a575986c00180629179a6038d1a50e5653d3fccf8d0cf4ad03947ed",
       "declarations": [
         "Becoming.Extension",
         "Becoming.Comparison",
@@ -215,19 +215,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "3f9d093aefb63002aa098990042cd7a9579f6c6e1644c5282fa49dc3bc04ea4f",
+      "sha256": "978e4ac9c323d847782a1acba9d6b737d5e23dd1fe88742b1fc83a418e5d93ac",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c216517f8f3f4069b6888776a289ba0d7e3e6109df2d1151d1a9ab23c77ef963",
+      "sha256": "e8391f8e60adaed1905533cbcc234185b99e45d4d142c7ebbba9be2d847f3611",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "d1c4ccf95738978a20d9461bb866a428324e4f88e57d5cd4e0b6e621b7fcb49d",
+      "sha256": "47f8be91d2ef21af02b37d8e188d6b887f034d840cf249c119d0dd32ce8c8a08",
       "declarations": []
     },
     {
@@ -261,6 +261,10 @@
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P8，把整合文档 §8.5 中只作了论证的代价在核心上证明。",
       "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P8 of the unification plan, proving on the core the cost that §8.5 of the integration note had only argued."
+    },
+    {
+      "zh": "2026-10-09：P9 新增 Becoming.Correspondence 后，合并检查器重跑（20261009T011915.395840Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P9 added Becoming.Correspondence, the consolidated checker was rerun (20261009T011915.395840Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

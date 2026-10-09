@@ -33,7 +33,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming"]
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -106,6 +106,16 @@ SCOPE = (
     "extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with "
     "the formation, malignant growth and winning by consumption being instances; under the stepwise "
     "reading sharing still extends winning by consumption. "
+    "Correspondence: under the discipline that two events are related through a condition only "
+    "when one draws on it and the other depends on it at a positive level, a condition nothing draws "
+    "on or no dependence on which can fail relates nothing and undermines nothing, and adjoining one "
+    "leaves living, the relation and connection unchanged, while under co-participation adjoining a "
+    "condition every formation requires at level zero connects every web; every undermining relation "
+    "is an interaction; a condition on which every living event bears, with a living drawer and a "
+    "living dependent, connects the whole; in one example two dependents are connected through a "
+    "living use of their condition and not when its only use undermines them, while co-participation "
+    "connects them in both; adjoining a renewed condition every formation draws on and depends on "
+    "still connects every web without changing living. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "

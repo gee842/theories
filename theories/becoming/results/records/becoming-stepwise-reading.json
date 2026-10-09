@@ -151,6 +151,13 @@
         "zh": "该结果证明：以本读法作为 C 所比较的 living，C 仍把共享排在以消耗取胜之上，但不再把过度汲取者的不在场排在其在场之上。",
         "en": "That result proves that with this reading as the living C compares, C still ranks sharing above winning by consumption but no longer ranks the absence of an overdrawing formation above its occurrence."
       }
+    },
+    {
+      "id": "condition-correspondence-discipline",
+      "detail": {
+        "zh": "该结果给出一条条件的对应纪律：只有交互才经由条件相关；惰性条件不再免费连通，在声明的类中连通仍成立。",
+        "en": "That result states a correspondence discipline for conditions: only interaction relates through a condition; idle conditions no longer connect for free, and connection holds for a declared class."
+      }
     }
   ],
   "counterexamples": [
@@ -191,18 +198,18 @@
     }
   ],
   "limitations": {
-    "zh": "不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场。整段、逐步与关系层读法都是公开的读法选择，不证明其中任何一个是生生的正确读法；读法都相对于一次运行，不含继续生成的成分；不做因果或差别制造归属；条件的对应纪律尚未陈述。",
-    "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; no causal or difference-making attribution is made; the correspondence discipline for conditions is not yet stated."
+    "zh": "不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场。整段、逐步与关系层读法都是公开的读法选择，不证明其中任何一个是生生的正确读法；读法都相对于一次运行，不含继续生成的成分；不做因果或差别制造归属；条件的对应纪律另见 condition-correspondence-discipline。",
+    "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; no causal or difference-making attribution is made; the correspondence discipline for conditions is in condition-correspondence-discipline."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T005555.457210Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 12 个模块（含只作导入的根模块与桥接），共 186 项定理／361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 14 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T005555.457210Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 12 modules (including the import-only root and the bridge) with 186 theorems/361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 14 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T011915.395840Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 207 项定理／395 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T011915.395840Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 207 theorems/395 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "df97cd990bb54b3ae8207ed471c819ff93d3103616421d481f1647a48cc84e0f",
+      "sha256": "003cf6908a575986c00180629179a6038d1a50e5653d3fccf8d0cf4ad03947ed",
       "declarations": [
         "Becoming.Web.valuation",
         "Becoming.Web.connected_of_common",
@@ -249,19 +256,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "3f9d093aefb63002aa098990042cd7a9579f6c6e1644c5282fa49dc3bc04ea4f",
+      "sha256": "978e4ac9c323d847782a1acba9d6b737d5e23dd1fe88742b1fc83a418e5d93ac",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c216517f8f3f4069b6888776a289ba0d7e3e6109df2d1151d1a9ab23c77ef963",
+      "sha256": "e8391f8e60adaed1905533cbcc234185b99e45d4d142c7ebbba9be2d847f3611",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "d1c4ccf95738978a20d9461bb866a428324e4f88e57d5cd4e0b6e621b7fcb49d",
+      "sha256": "47f8be91d2ef21af02b37d8e188d6b887f034d840cf249c119d0dd32ce8c8a08",
       "declarations": []
     },
     {
@@ -294,8 +301,8 @@
     }
   ],
   "next_delta": {
-    "zh": "Ren 选择生生的读法或其组合（材料见整合文档 §8.5）；条件的对应纪律，并证明在声明的类中连通仍成立；不依赖运行的读法及其与 universal_reason 的接通；在 living 中加入继续生成的成分。",
-    "en": "Ren's choice of the reading of 生生, or a combination (material in integration note §8.5); a correspondence discipline for conditions, with connection proved for the declared class; a run-independent reading connected to universal_reason; a component of further generation in living."
+    "zh": "Ren 选择生生的读法或其组合（材料见整合文档 §8.5）；条件对应纪律的时间次序；不依赖运行的读法及其与 universal_reason 的接通；在 living 中加入继续生成的成分。",
+    "en": "Ren's choice of the reading of 生生, or a combination (material in integration note §8.5); a time-ordered correspondence discipline for conditions; a run-independent reading connected to universal_reason; a component of further generation in living."
   },
   "history": [
     {
@@ -309,6 +316,14 @@
     {
       "zh": "2026-10-09：核心新增 Becoming.Ranking（P8）、桥接新增两条对应定理后重跑合并检查器（20261009T005555.457210Z）。本记录的主张与证明不变，只更新回执、计数与哈希；改动的源已读。",
       "en": "2026-10-09: reran the consolidated checker (20261009T005555.457210Z) after the core added Becoming.Ranking (P8) and the bridge two correspondence theorems. This record's claim and proofs are unchanged; only the receipt, counts and hashes are updated, after reading the changed sources."
+    },
+    {
+      "zh": "2026-10-09：P9 新增 condition-correspondence-discipline，给出一条条件的对应纪律并证明在声明的类中连通仍成立，承接本记录的部分下一步；本记录的主张与证明不变，只更新对应、限制、下一步与关联。",
+      "en": "2026-10-09: P9 added condition-correspondence-discipline, which states one correspondence discipline for conditions and proves connection for a declared class, taking up part of this record's next step; this record's claim and proofs are unchanged, and only its correspondence, limitations, next step and links are updated."
+    },
+    {
+      "zh": "2026-10-09：P9 新增 Becoming.Correspondence 后，合并检查器重跑（20261009T011915.395840Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P9 added Becoming.Correspondence, the consolidated checker was rerun (20261009T011915.395840Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

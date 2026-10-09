@@ -294,6 +294,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean)
 
+## condition-correspondence-discipline ← becoming-stepwise-reading
+
+`formal-reuse` — Web.interaction 的 living 恰是 Web.valuation 的 living；交互蕴含其共同参与；inert_connects 用其 connected_of_common 重述 Q4。 / The living of Web.interaction is exactly that of Web.valuation; interaction implies its co-participation; inert_connects restates Q4 with its connected_of_common.
+
+**Producer output / 上游输出:** 逐步读法、共同参与与侵蚀。 / The stepwise reading, co-participation and undermining.
+
+**Consumer input / 下游输入:** 交互之下的关系与连通。 / Relations and connection under interaction.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## condition-correspondence-discipline ← metaethical-core-characterization
+
+`formal-reuse` — significant_iff_of_commons 直接调用 Valuation.significant_iff，所需的连通由 connected_of_commons 给出。 / significant_iff_of_commons applies Valuation.significant_iff directly, with connection supplied by connected_of_commons.
+
+**Producer output / 上游输出:** 连通整体上 G0 的刻画。 / G0's characterization on a connected whole.
+
+**Consumer input / 下游输入:** 交互之下的连通。 / Connection under interaction.
+
+**Retained conditions / 保留条件:** 至少一个活的事件。 / Some living event.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
 ## constitutive-binding-assessment ← binding-preserving-substitution
 
 `interpretive` — 复用已有代入机制及误接界限；解释性连接不把形式定理升级为构成性奠基证明。 / Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof.
