@@ -15,18 +15,27 @@ that the rest are independent, none following from all the others together.
   carried (`World.Dependent.carried`); where every relatum is embodied, whatever arises is
   (`World.Embodied.arising`). In a finite world whose activity is decided, a census exists
   (`World.Finite.counted`). Where only active relata take and the flow dissipates, only
-  active relata give across every enclosed step, since giving needs uptake there; every
-  step of a finite world is enclosed (`World.acting_of_enclosed`, `World.Finite.acting`).
+  active relata give across an enclosed step, since giving needs uptake there
+  (`World.acting_across`); so only active relata give where every step is enclosed,
+  as every step of a finite world is (`World.acting_of_enclosed`,
+  `World.Finite.acting`).
 * **The rest are independent.** Eight premises remain: activity needing support,
   balance, only active relata giving, only active relata taking and only from what they
   draw on, dissipation, embodiment, a census and bounded transmission (`World.premises`).
   For each, a world meets the other seven and not it (`World.independent`), so none
   follows from the others (`World.none_follows`). The worlds failing a census or only
-  active relata giving are infinite, as the implications require.
+  active relata giving are infinite, as the implications require. Independence is
+  relative to these eight: finiteness, enclosure and decidability, on which the rest
+  theorems turn, are not among them, and with them only active relata giving and a
+  census follow. Several witnesses have no flow, so the four premises about the flow
+  hold there vacuously; that suffices for independence. For balance a second witness
+  takes from a closed family at every step, so taking and dissipation bind there
+  (`World.draining_but`).
 * **All together.** Mutualists active throughout meet all eight
-  (`World.mutualism_premised`). In a finite world the eight together bring the world to
-  rest when its activity is decided: neither arising nor ceasing recurs
-  (`World.premised_rests`).
+  (`World.mutualism_premised`), the four about the flow vacuously, since nothing flows.
+  A finite world whose activity is decided and which meets the eight comes to rest:
+  neither arising nor ceasing recurs (`World.premised_rests`). The proof uses three of
+  them: balance, dissipation and embodiment.
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -132,12 +141,17 @@ theorem Finite.enclosed (finite : w.Finite) (t : Nat) : w.flow.Enclosed t :=
   | ⟨all, distinct, every⟩ => ⟨all, distinct, fun _ _ c outside => absurd (every c) outside⟩
 
 /-- Where only active relata take and the flow dissipates, only active relata give across
-every enclosed step: giving needs uptake there (`Flow.Dissipative.giving_needs_uptake`). -/
+an enclosed step: giving needs uptake there (`Flow.Dissipative.giving_needs_uptake`). -/
+theorem acting_across (taking : w.Taking) (dissipative : w.Dissipative) {t : Nat}
+    (enclosed : w.flow.Enclosed t) {f c : w.Relatum} (present : f ∈ w.flow.present t)
+    (gives : 0 < w.flow.give t f c) : w.web.active t f :=
+  match Flow.Dissipative.giving_needs_uptake dissipative enclosed present gives with
+  | ⟨_, takes⟩ => (taking t _ _ present takes).1
+
+/-- So where every step is enclosed, only active relata give. -/
 theorem acting_of_enclosed (taking : w.Taking) (dissipative : w.Dissipative)
     (enclosed : ∀ t, w.flow.Enclosed t) : w.Acting :=
-  fun t _ _ present gives =>
-    match Flow.Dissipative.giving_needs_uptake dissipative (enclosed t) present gives with
-    | ⟨_, takes⟩ => (taking t _ _ present takes).1
+  fun t _ _ present gives => acting_across taking dissipative (enclosed t) present gives
 
 /-- So in a finite world, where only active relata take and the flow dissipates, only
 active relata give. -/
@@ -266,36 +280,59 @@ theorem unbalanced_but : unbalanced.MeetsAllBut Balanced :=
     (fun _ => unbalanced_world.2.2.2.1) (fun _ => unbalanced_world.1.counted)
     (fun _ => (still_vacuous _).2.2.2) unbalanced_world.2.2.2.2
 
+/-- The flow of `leaking` on the web of `spending`: the holder takes its own unit at every
+step, drawing on it, and gives nothing (the tenth review's probe). -/
+def draining : World :=
+  ⟨Bool, Leaking.flow, Spending.web⟩
+
+instance draining_decided : ∀ t x, Decidable (draining.web.active t x) :=
+  fun t x => Nat.decLt 0 (Handing.stands x t)
+
+/-- Every premise but balance, with taking and dissipation binding: the family of both
+sides is closed and taken from at every step. -/
+theorem draining_but :
+    draining.MeetsAllBut Balanced ∧
+    ∀ t, Leaking.flow.ClosedAt [true, false] t ∧
+      0 < total [true, false] (Leaking.flow.take t (Handing.holder t)) :=
+  ⟨.of (fun _ => Handing.dependent) (fun ne => absurd rfl ne)
+     (fun _ _ _ _ _ gives => absurd gives (Nat.lt_irrefl 0))
+     (fun _ => Spending.taking) (fun _ => leaking_world.2.2.1)
+     (fun _ _ _ => Iff.rfl)
+     (fun _ => Finite.counted (w := draining) ⟨[true, false], Handing.distinct, Handing.every⟩)
+     (fun _ => ⟨0, fun _ _ _ _ descends _ => absurd descends.2.1 (Nat.lt_irrefl 0)⟩)
+     leaking_world.2.2.2.2.1,
+   leaking_world.2.2.2.2.2⟩
+
 namespace Scatter
 
 inductive Relatum where
   | taker
-  | giver
+  | source
   | ground (n : Nat)
 
 /-- One unit at each ground relatum and nothing elsewhere. -/
 def unit : Relatum → Nat
   | .taker => 0
-  | .giver => 0
+  | .source => 0
   | .ground _ => 1
 
-/-- The taker stands at one; the giver and the ground stand at nothing. -/
+/-- The taker stands at one; the source and the ground stand at nothing. -/
 def level : Relatum → Nat
   | .taker => 1
-  | .giver => 0
+  | .source => 0
   | .ground _ => 0
 
-/-- Across every step the giver gives a unit to every ground relatum and the taker takes
+/-- Across every step the source gives a unit to every ground relatum and the taker takes
 it back. -/
 def flow : Flow Relatum Relatum where
-  present _ := [.taker, .giver]
+  present _ := [.taker, .source]
   take _ x y := match x with
     | .taker => unit y
-    | .giver => 0
+    | .source => 0
     | .ground _ => 0
   give _ x y := match x with
     | .taker => 0
-    | .giver => unit y
+    | .source => unit y
     | .ground _ => 0
 
 /-- A relatum is active while it stands; the taker draws on everything. -/
@@ -309,7 +346,7 @@ def web : Web Relatum Relatum where
 /-- The index of a ground relatum. -/
 def index : Relatum → Nat
   | .taker => 0
-  | .giver => 0
+  | .source => 0
   | .ground n => n
 
 /-- No finite family holds every ground relatum. -/
@@ -329,12 +366,12 @@ theorem scatter_but : scatter.MeetsAllBut Acting :=
   .of (fun _ _ _ _ _ no => no.elim)
     (fun _ _ c => match c with
       | .taker => rfl
-      | .giver => rfl
+      | .source => rfl
       | .ground _ => rfl)
     (fun ne => absurd rfl ne)
     (fun _ _ f _ present takes => match f, present, takes with
       | .taker, _, _ => ⟨Nat.zero_lt_one, rfl⟩
-      | .giver, _, takes => absurd takes (Nat.lt_irrefl 0)
+      | .source, _, takes => absurd takes (Nat.lt_irrefl 0)
       | .ground _, .tail _ (.tail _ no), _ => nomatch no)
     (fun _ cs _ _ closed => absurd
       (closed .taker (.head _) (.ground (beyond (cs.map Scatter.index)))
@@ -343,12 +380,12 @@ theorem scatter_but : scatter.MeetsAllBut Acting :=
     (fun _ => ⟨fun _ => [.taker], fun _ => ⟨⟨fun no => (nomatch no), trivial⟩, fun x =>
       match x with
       | .taker => ⟨fun _ => .head _, fun _ => Nat.zero_lt_one⟩
-      | .giver => ⟨fun no => absurd no (Nat.lt_irrefl 0),
+      | .source => ⟨fun no => absurd no (Nat.lt_irrefl 0),
           fun mem => match mem with | .tail _ no => (nomatch no)⟩
       | .ground _ => ⟨fun no => absurd no (Nat.lt_irrefl 0),
           fun mem => match mem with | .tail _ no => (nomatch no)⟩⟩⟩)
     (fun _ => steady_transmitting fun _ _ => rfl)
-    fun acting => Nat.lt_irrefl 0 (acting 0 .giver (.ground 0) (.tail _ (.head _))
+    fun acting => Nat.lt_irrefl 0 (acting 0 .source (.ground 0) (.tail _ (.head _))
       Nat.zero_lt_one)
 
 namespace Morsel
@@ -717,8 +754,8 @@ theorem mutualism_premised : mutualism.Premised :=
     (still_vacuous _).2.2.1 mutualism_world.2.2.2.2.2 mutualism_finite.counted
     (still_vacuous _).2.2.2
 
-/-- In a finite world whose activity is decided the premises together bring the world to
-rest: neither arising nor ceasing recurs. -/
+/-- A finite world whose activity is decided and which meets the premises comes to rest:
+neither arising nor ceasing recurs. The proof uses balance, dissipation and embodiment. -/
 theorem premised_rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
     (premised : w.Premised) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   rests finite (premised _ (.tail _ (.head _)))

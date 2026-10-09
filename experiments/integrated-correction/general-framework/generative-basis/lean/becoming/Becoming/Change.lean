@@ -41,8 +41,8 @@ to be decidable at each step.
   active at the end with those that ceased are those active at the start with those that
   arose (`Web.activity_over_stretch`); they arise at arbitrarily late steps exactly when
   they cease at arbitrarily late steps (`Web.arising_recurs_iff`); and where the
-  formations are finitely many, generation is unceasing exactly when some formation
-  ceases at arbitrarily late steps (`Web.unceasing_iff`). Read of standing, with no
+  formations are finitely many and their activity is decided, arising recurs exactly
+  when ceasing recurs (`Web.unceasing_iff`). Read of standing, with no
   premise at all: conditions of a finite family come to stand at arbitrarily late steps
   exactly when they cease to stand at arbitrarily late steps (`Web.standing_recurs_iff`).
 * **Finiteness does the work.** Ever new formations can arise, none ever ceasing, while a
@@ -451,8 +451,9 @@ theorem arising_recurs_iff (fs : List F) :
     Recurs fs (fun f t => W.Arises t f) ↔ Recurs fs (fun f t => W.Ceases t f) :=
   coming_recurs_iff (p := fun f t => W.active t f)
 
-/-- Where the formations are finitely many, generation is unceasing exactly when some
-formation ceases at arbitrarily late steps. -/
+/-- Where the formations are finitely many and their activity is decided, some formation
+arises at arbitrarily late steps (`Unceasing`) exactly when some formation ceases at
+arbitrarily late steps: arising recurs exactly when ceasing recurs. -/
 theorem unceasing_iff {fs : List F} (all : ∀ f, f ∈ fs) :
     W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
   ⟨fun unceasing N => match (W.arising_recurs_iff fs).mp

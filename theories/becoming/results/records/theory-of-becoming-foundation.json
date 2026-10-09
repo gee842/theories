@@ -8,7 +8,7 @@
   "kind": "target",
   "status": "open",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T13:30:00+00:00",
+  "reviewed_at_utc": "2026-10-09T15:23:01+00:00",
   "claim": {
     "en": "Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
     "zh": "无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
@@ -69,8 +69,8 @@
     {
       "id": "space-and-its-parts",
       "detail": {
-        "en": "On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others. This locates the whole claim's substantive remainder without discharging it.",
-        "zh": "在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界。这定位了整体主张的实质剩余，但不完成它。"
+        "en": "On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others, and eight of which, replacing the reserve with a census and bounded transmission, are shown independent. This locates the whole claim's substantive remainder without discharging it.",
+        "zh": "在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界，把储备换为普查与有界传递的八个已示为彼此独立。这定位了整体主张的实质剩余，但不完成它。"
       }
     },
     {
@@ -109,7 +109,7 @@
     {
       "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
       "role": "statement",
-      "sha256": "712683243bda053ce0d34d00c39532887e8628f885bc2fe1182c6a5486d53a9f",
+      "sha256": "4ae53c59396c893604b4348324c28d949e0b0b60c7b1636ee8275a762fd4bf73",
       "declarations": []
     },
     {
@@ -135,12 +135,17 @@
       "role": "provenance",
       "sha256": "fed6e7ec428e52105e81ff7a8141392528d924bab2f7172e2e93271fe00bf2c5",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "role": "review",
+      "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6"
     }
   ],
   "proof_bindings": [],
   "next_delta": {
-    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. The Becoming spine now states laws that hold of every world in its representation and carves parts by premises, seven of which are shown met by some worlds and not by others; what remains is the warrant that every becoming is so representable and that the whole is relationally constituted, not only consistently stated. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.",
-    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据。Becoming脊柱已陈述在其表示中对每个世界成立的规律，并以前提划出部分，其中七个前提已示为有满足与不满足它的世界；剩下的是每个生成都能如此表示、且整体确由关系构成而不只是被一致陈述的根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。"
+    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. The Becoming spine now states laws that hold of every world in its representation and carves parts by premises, seven of which are shown met by some worlds and not by others and eight of which are shown independent; what remains is the warrant that every becoming is so representable and that the whole is relationally constituted, not only consistently stated. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.",
+    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据。Becoming脊柱已陈述在其表示中对每个世界成立的规律，并以前提划出部分，其中七个前提已示为有满足与不满足它的世界，八个已示为彼此独立；剩下的是每个生成都能如此表示、且整体确由关系构成而不只是被一致陈述的根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。"
   },
   "history": [
     {
@@ -170,6 +175,10 @@
     {
       "zh": "2026-10-09 P23c：按第九次独立审查（BECOMING-P18B-P23-REVIEW.md）更正，见整合文档 §34。related 中的用语改为章节用语，写明可判定性（M10、M2）。",
       "en": "2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note. Terms in related follow the chapter, with decidability stated (M10, M2)."
+    },
+    {
+      "zh": "2026-10-09 P25b：按第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）更正，见整合文档 §38。写明七个与八个前提的关系（O11(f)）。",
+      "en": "2026-10-09 P25b: corrected after the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md); see section 38 of the integration note. States how the seven and the eight premises relate (O11(f))."
     }
   ]
 }

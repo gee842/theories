@@ -204,8 +204,8 @@
     "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T143305.859329Z）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T143305.859329Z)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T145010.627958Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1077 项定理／1739 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T161851.010138Z）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T145010.627958Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1077 theorems/1739 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T161851.010138Z)."
   },
   "references": [
     {
@@ -274,7 +274,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+      "sha256": "f37088ca49d10cebf1a46861c8103903db5c7cc6d42e269831e219dead7eab53",
       "declarations": [
         "Becoming.mark",
         "Becoming.mark_cases"
@@ -324,7 +324,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
+      "sha256": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
       "declarations": [
         "Becoming.Web.Embodied",
         "Becoming.Web.coextinct"
@@ -333,17 +333,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
+      "sha256": "8846d44c961af60fa63212f465b107bd032cbd130355fe5738bb24f89a5a658b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
+      "sha256": "e273b18ce9571ed12ceaf8962f64e516015b88c19d88edda02de89fdc770d166"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
+      "sha256": "20e06ce9df5d026269ba02d8758589e43aac0594f5873a4615fc90fc220a0428"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
@@ -430,6 +430,10 @@
     {
       "zh": "2026-10-09 P28：验证范围重新指向合并检查器回执 20261009T143148.368990Z 与外围回执 20261009T143305.859329Z（Population 加入普查的平衡与依存的读法，Openness 加入水平的平衡）。断言不变。",
       "en": "2026-10-09 P28: validation scope re-pointed to consolidated receipt 20261009T143148.368990Z and periphery receipt 20261009T143305.859329Z (Population adds the census balance and the reading of dependence, Openness the balance of standing). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P25b：验证范围重新指向合并检查器回执 20261009T145010.627958Z 与外围回执 20261009T161851.010138Z（第十次独立审查的更正：Openness 加入每步立着的有限多与开放的偶然，Premises、Space、Roles 与 Dissipation 各加入其更正）。断言不变。",
+      "en": "2026-10-09 P25b: validation scope re-pointed to consolidated receipt 20261009T145010.627958Z and periphery receipt 20261009T161851.010138Z (corrections after the tenth independent review: Openness adds finitely many standing at each step and the contingency of openness, and Premises, Space, Roles and Dissipation their corrections). The claim is unchanged."
     }
   ]
 }

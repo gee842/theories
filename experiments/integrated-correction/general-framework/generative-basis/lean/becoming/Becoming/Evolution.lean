@@ -177,8 +177,9 @@ theorem never_supported_childless (acting : L.Acting W) (dependent : W.Dependent
     (never : ∀ t, ¬ W.Supported t g) (x : X) : ¬ L.Descends W x g :=
   fun ⟨t, descends⟩ => never t (descends.supported acting dependent)
 
-/-- Read of needs on a condition every parent depends on, the selection term is at most
-the condition's level counted once for every offspring. -/
+/-- Read of needs on a condition every parent depends on, the parents' needs weighted by
+their offspring are at most the condition's level counted once for every offspring. This
+bounds a weighted total, not the selection term proper (`unselected`). -/
 theorem selected_le (acting : L.Acting W) (dependent : W.Dependent) {t : Nat} {c : X}
     {ps : List X} {kids : X → List X}
     (descend : ∀ p k, p ∈ ps → k ∈ kids p → L.DescendsAt W t k p)

@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261009T143148.368990Z",
+  "utc": "20261009T145010.627958Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261009T143148.368990Z",
+  "retained_run": "becoming-checks/20261009T145010.627958Z",
   "spine_modules": [
     "Becoming.Frame",
     "Becoming.Inquiry",
@@ -201,22 +201,22 @@
     "Becoming.Substitution": "515275299486c90e3a053f02b2f3125a445a2ae5f9146b6195ed4a34e4f68d7a",
     "Becoming.Generation": "d2ae85e475265c415fd08c20e7eb1849946141955fdfef6211e3975de3de3b20",
     "Becoming.Flow": "22fd0168ed9a80279c105bc6d37ba34c3b9e1a8e2775b93117486ea857b68350",
-    "Becoming.Change": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+    "Becoming.Change": "f37088ca49d10cebf1a46861c8103903db5c7cc6d42e269831e219dead7eab53",
     "Becoming.Population": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
     "Becoming.Identity": "adb20996ed2d228e18a322030d8c89a305790c8cf357e56130b5aa426281707d",
     "Becoming.Wholes": "06e31bb7bbb6f7b4766bb634614e6ab8b562e75ee26055b55bbfae27e41567e3",
-    "Becoming.Dissipation": "941026b4548d30dac31b913d962cd46d82a044f0fd151cb655d71e1301b6ec11",
-    "Becoming.Roles": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
+    "Becoming.Dissipation": "f079e8b4e85babc6f43f99263d02216a1c3c4df78feb0ab73c346be8814ee84d",
+    "Becoming.Roles": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
     "Becoming.Reserve": "2379b8c4576c6359d782752287456fb9c11b8854503c68a1c2e003351c41b9c2",
-    "Becoming.Evolution": "3ba9b515ebae3cadba6b45fd15b9d201f19d9b3cd512b0ec05e0b7bb4785006e",
-    "Becoming.Space": "d0d5ef4ce1b7511e72cc8316954d11f4a484af511b6bd3479e52021caf3b5923",
-    "Becoming.Premises": "d927cabd34d8449a466398cb36f4521574e95598dad785e75d8d14c98f69df47",
-    "Becoming.Openness": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
+    "Becoming.Evolution": "f09187b7a101ff81b5836b9e910b871215ace8f9a830fc4cd95cce2f2bdad621",
+    "Becoming.Space": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
+    "Becoming.Premises": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
+    "Becoming.Openness": "ad0dfa236d84482ef262dd7da95d3b82a2505519f32ec3ba86605af825ac0a9c",
     "Becoming.Metaethics": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
     "Becoming.Ranking": "8e0697f42e80c2a23ccf959644e69ec602ace69afb06f3970da10616f3590e38",
     "Becoming.Correspondence": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
     "Becoming.Descent": "11db87b79c808d1098f3cf2650c1350dee19f2c2fb6efd287634cb86304c4d05",
-    "Becoming": "378bac0a8c9540c2165e8e824aa3c396d2de165b3acee50973ad5bff55846031",
+    "Becoming": "48bff94ce9be2770f00b4b15713c9508a3ec9e93326ab2a0fcbd60f03265d6c2",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
@@ -232,10 +232,10 @@
     "Becoming.Bridge": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3"
   },
   "checker_sha256": {
-    "check_becoming.py": "ed60a70d4220c4f0f9a352c762f02cdf10a372ee674d7210ffe0a18b7e1d378b",
+    "check_becoming.py": "271ff8c8fc091069577a4a7925dfc7a6523f51ce5a14d66ea4c5d32d905bc57a",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
-  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Renewal: a run read through observables of conditions is one relational unfolding; an observable that never rises from some step on falls only finitely often, with depletion, recurrent renewal under a natural-number rank and unrenewed drawdown as its cases; in one process from one configuration one run renews and another consumes. Dependence: which conditions a formation depends on, at what level, and which it draws on may change from step to step; constant dependence recovers the static reading exactly; every met dependence is kept or broken across each step; consumption as inherited admits a requirement never met, which consumes its condition with no break; where activity needs current support, a formation still active after a loss without return has weakened or dissolved its dependence, and with fixed dependence it is no longer active, both contrapositives of that premise; these outcomes are neither exhaustive nor exclusive, and in one process from one configuration a break of the same dependence, read at the start of its step, is followed by an ending, a transformation and a restoration; an event is within renewal when its step keeps every dependence on the conditions it participates in, breaking when it draws on a condition at a step that breaks a dependence on it, and undermining when it draws on a condition at a step after which the condition is below both the present need of a dependence on it and a need of that dependence met at some step of its tenure, so that a level from before the dependence held and a dependence never met at its own need do not count, falling short only of a need grown beyond what was met is not undermining, a draw below a need that was met undermines after the need has grown, and a dependence that lapses for one step starts a new tenure; breaking is undermining, drawing after a loss can undermine without breaking, and drawing that changes no level can undermine; the stepwise and whole-run readings credit different events in both directions. Return: a dependence returns within p steps when it is met at one of the next p; renewal, renewal within one step, within p, return and non-consumption are ordered, and consumption is exactly a dependence that never returns; renewal within one step does not imply renewal, and cycles of length zero are degenerate; a seasonal condition is renewed within two steps and not one; a recovery can slow without bound, returning always while no cycle bounds it; over cycles of two a dip is credited, and an escalation undermines for every cycle. Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with every event within renewal, and afterwards one renews and the other consumes; a reading decided by a finite prefix that credits every renewing run credits a consuming one; the renewing run itself draws beyond renewal before the horizon and the whole-run reading credits it; a reading of amounts per step is fixed by the history through the step and withholds every such draw; the formation-level cycle readings are not fixed by any finite prefix; and the same holds in the support-gated law, whose renewal stops below support. Joint activity: withholding a formation's part with the same move taken, which must still be available, the loss is kept or broken; when with any single part withheld the same move still breaks, no part alone makes the difference; from one configuration a lone drawer's part makes the difference under a calm move and the loss is overdetermined under a shock; with the shock written into the step relation of one move the move does not determine the step and the loss is overdetermined though the calm outcome would keep the dependence, and a move no withheld configuration can take makes no part decisive; when the move determines the step and can be taken with a part withheld, and the dependence still holds and is met there, either the part makes the difference or the same move still breaks the dependence; in one process a drawer's part makes the difference with one other drawer and not with two, while the relational reading counts it consuming in both; a drawer taking exactly the renewal makes no difference and still undermines; drawing beyond renewal at every step consumes the condition, the first event undermines for no positive cycle, with every draw before any step withheld the condition is still consumed, and at the breaking step drawing nothing keeps the dependence. Substitution: in the support-gated law, a focal formation that can substitute an alternative condition stays active, transforms its dependence at a step that can be found, and consumes, while the sustaining formation ends; a concrete law meets the premises, and there the stepwise reading credits the focal formation at every step but the one at which the sustaining formation loses support; in another law of the family it is withheld at two steps, until it switches. Generation: a formation arises when it is inactive before a step and active after it, and generation is unceasing when some formation arises at arbitrarily late steps; an event depletes a finite family when at each of its steps at which no condition of the family rises one of them falls, which says only that some condition of the family changes at each of its steps; a finite family none of whose conditions rises from some step on is depleted by only finitely many events; so where arising depletes such a family, unceasing generation makes some condition of it rise at arbitrarily late steps, and, every rise being made by a formation renewing it, renewing activity recurs; a formation lowering such a family at each active step is active only finitely often however it substitutes; if a quantity never rises and every arising lowers it, generation is not unceasing, while a closed cycle whose total stays constant sustains unceasing generation; a flicker depending and drawing on nothing arises unceasingly, each arising depleting an unrelated tide; a tide renewed by the moon rises at arbitrarily late steps while nothing arises, and drawing what is renewed keeps every dependence while nothing arises; arising on a consumed condition ceases; and a formation arising again and again on a renewed condition meets every premise, each arising coming at a rise, while the stepwise reading withholds each of its blooms and the reading over cycles of two credits it. Flow: when every change of a condition's level is what the formations taking part take and give, the family's total plus its uptake equals its total before plus its replenishment, over a step and over any stretch, every rise is made by an active renewer, and every fall is taken from, by an active formation drawing on it where only active formations take; positive uptake at arbitrarily late steps needs replenishment at arbitrarily late steps, so when formations taking from the family at their first active step arise at arbitrarily late steps, formations replenish the family at arbitrarily late steps, and so they do for a constant consumer with nothing arising; over any stretch from which at least K formations take, the family is replenished by at least K per step less its stock at the start, and with each formation giving at most a fixed amount the renewers grow in the same averaged sense; so generation that is more without end, with ever more formations taking from a finite family from some step on, needs replenishment that no eventual bound bounds and, each formation giving at most a fixed amount, renewers that no eventual bound bounds, who can still be absent at infinitely many steps; renewers and growers arising at every step meet these premises with a level that never rises, so that arising there does not deplete the family in the net sense; the unceasing bloom is not more without end; and in a closed cycle each formation gives back what it takes, the total never changes, and generation is more without end with as many renewers as takers; every rise of a condition is given to, so a rising condition replenishes every family containing it, and where members of a family rise at arbitrarily late steps its replenishment recurs, whatever is taken; a condition coming to stand, its level zero before a step and positive after, rises and is given at least its new standing, and a condition can rise at every step without coming to stand. Change: with no premise about an unfolding, a determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after; a formation arising and ceasing, a dependence forming and dissolving and a condition coming to stand and ceasing to stand are this one change; a decidable determination that ceases at no step from some step on holds on; a formation stays supported where each dependence it has it had before, at no greater need, on a condition standing no lower; over any stretch an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members; since no amount falls below zero, a finite family falls over any stretch by at most its total at the start more than it rises, so members falling at arbitrarily late steps rise at arbitrarily late steps, which for one amount is the law that an observable never rising from some step on falls only finitely often, and with the amounts bounded the family rises by at most its bound per member more than it falls, so rising at arbitrarily late steps needs falling at arbitrarily late steps; so in a finite family of decidable determinations the members holding at the end with those that ceased to be are those holding at the start with those that came to be, comings and ceasings over any stretch differ by at most the number of members, and coming to be recurs exactly when ceasing to be recurs: given decidable activity, the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose, they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps, and with finitely many formations generation is unceasing exactly when some formation ceases at arbitrarily late steps; with no premise at all, conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps; ever new formations can arise with none ceasing while a level rises at every step and never falls, and formations all active at the start can cease one after another with nothing arising. Population: a census lists the formations active at each step, each once; if more are active after a step than before, one arises across it, and a census growing without bound makes generation unceasing; under a census, with each formation taking part in a flow listed once and only active formations taking, more without end makes the active formations grow without bound and generation unceasing, and the garden and the cycle meet all these premises; the unceasing bloom meets these premises and is not more; without a census every formation of an infinite family can be active from the start and more without end comes with nothing arising, with takers that are never active the same holds under a census, and so it does with one formation listed many times in the flow; ever more formations can draw on a condition while the flow records no taking; under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps, not conversely, and with at most B formations active at each step from some step on arising recurs exactly when ceasing does; both hold of any determination whose holders are listed at each step, read of activity, dependence and standing, and over any stretch the list at the end with what ceased is the list at the start with what came. Identity: re-identifying formations one to one at each step leaves every step's levels, activity, dependences and drawing unchanged; a renaming preserves the readings that follow a formation, and every re-identification preserves support, keeping and breaking, the class of every condition, whether activity needs support, being within renewal and breaking at each event, what a flow takes and gives, the counts of takers and renewers, so more without end, a census of the active formations and that only active formations take, so that under a census more without end makes generation unceasing under every re-identification, as in the garden; exchanging names at odd steps turns a renewing and a consuming formation into two consuming, removes undermining after the first step and makes formations arise without end, and arisings made by naming alone can meet every premise of the recurrence of renewal; keeping the names of continuing activity makes no arising and keeping those of continuing dependences removes no undermining, while succession, joining a formation that ends with one that begins then or later, can hide arising in a lineage and make drawing after an elder's loss undermine a living heir, both namings keeping continuity only one way; kept both ways, continuity preserves arising and undermining exactly and excludes a join at a single step, and joining across a dormant step still changes which formation renews and which consumes; under a census, with each formation taking part listed once and only active formations taking, under every continuation in which no formation continues as two, every re-identification and a continuation with merges among them, more without end makes formations arise at arbitrarily late steps, a decidable continuation giving the decidability this asks; on the garden, whose formations never end, a merge comes with a persisting formation re-read as arising at every step, while where the merged formation ends what arises under a merge is exactly what is new; without a census it does not, with new formations budding from one already there it forces no arising, and a single split need not defeat arising, so no split is sufficient, not necessary; a lineage named beside its members is active at every step while they arise without end. Wholes: a formation is the whole of some parts when it is active exactly while some part is, a coincidence of activity by which every formation is the whole of itself and two formations always active are each the whole of the other; a whole arises only as some part arises; parts covering every step from some step on, none active at two steps d apart, have a part arising within every d consecutive steps, a bound attained by members working in shifts and met by two members arising again and again, and parts covering every step from some step on, each of whose activity ends, with the active ones listed, arise at arbitrarily late steps outside every finite list of parts; a whole active at every step from some step on is covered by its parts; with a part that never ends, or infinitely many parts active at once, it persists while nothing arises, and parts arising without end may leave the whole inactive between them. Dissipation: a family is closed across a step when no formation taking part exchanges with a condition outside it, and is dissipated on when every formation taking part gives it no more than it takes from it and less when it takes; in a balanced flow a family dissipated on falls across a step by at least its number of takers, its takers over all later steps number at most its stock, and taking from it does not recur; so under dissipation on every closed family without repetition, a finite family from which formations take at arbitrarily late steps, and every finite family without repetition containing it, is open at arbitrarily late steps, more without end, the unceasing arising of takers and one eater kept up with nothing arising being such taking, and with finitely many conditions in all taking does not recur; a step is enclosed when some finite family without repetition is closed across it, as when finitely many conditions are all there is, and under dissipation a formation that gives takes more than it gives over every closed family without repetition, so across an enclosed step giving needs uptake, while where no step is enclosed dissipation holds vacuously and a renewer can give taking nothing; a step is enclosed around a family when a finite family without repetition containing it is closed across it, as every enclosed step is when equality is decidable, and under dissipation a finite family from which taking recurs and which is enclosed around from some step on draws in: at arbitrarily late steps a formation gives to it and takes from beyond it; a sun burning a fresh fuel at every step and giving a pool less than it burns, while ever more growers take from the pool, meets these premises, with the growers depending on the pool under a census as well, every step being enclosed and the pool drawing in the fuel; the flows of the earlier witnesses in which taking recurs on one condition are not dissipative; a member of a family dissipated on rising, as in coming to stand, lowers its stock, so members of a family dissipated on from some step on neither rise nor come to stand at arbitrarily late steps; under dissipation a finite family without repetition whose members rise, as in coming to stand, at arbitrarily late steps is open at arbitrarily late steps and, enclosed around from some step on, draws in, and with finitely many conditions in all none rises at arbitrarily late steps; across a step dissipated on, a family's members fall by at least as much as they rise and by one more for each formation taking from it, so a formation taking from it makes a member fall whether or not another rises, an event at whose steps the family is dissipated on and taken from depletes it, and a member rising comes with another member falling across the same step, so that under dissipation a member of a family without repetition rising while none falls shows the family open across that step, an active formation giving to the one and taking from the family and an active formation drawing on the other taking from it where only active formations give and take. Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps support, dependence, renewal, consumption, the classes of formations, undermining, living events, arising, unceasing generation and a census, and what is taken and given, balance, that only active formations give and take, a present without repetition, takers, renewers, more without end and dissipation, and in it no active formation stands as a condition exactly while it is active or depends on itself; relabelling the conditions of a one-kind web onto themselves keeps dependence and undermining and changes which relata are embodied and which depend on themselves, so that identification is supplied by the shared index; where a relatum is so embodied and activity needs support, a formation depending on it at a positive need is active only while it is, activity passes along every chain of such dependence so that a relatum not active ends every formation whose chain reaches it, consuming it at a need of one ends it, a dependence on itself is met exactly while it is active, drawing on it across the step at which it ends breaks that dependence whatever ends it, even for a drawer that takes nothing and for its own last event, and in a balanced flow in which only active formations give it arises only as another active formation gives to it, a formation that need not be embodied, and that is embodied where only embodied relata give, as a sun depending on nothing can be; a bee and a flower renew each other, a fox ends with the hare it draws on, and generations arise without end each given by the one before; an embodied relatum comes to stand as it arises, so it is given at least the standing it arises with, its arising replenishes every family containing it and embodied generation recurring in a family needs its replenishment to recur whatever is taken; whatever gives to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers its stock and embodied members of a family dissipated on from some step on do not arise at arbitrarily late steps; under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is open at arbitrarily late steps, and enclosed around from some step on it draws in, and with finitely many relata in all embodied arising does not recur; the arising of an embodied member of a family dissipated on comes with another member falling across the same step, while each generation of the brood arises in a closed family of it and the one before with nothing falling, so that family is not dissipated on; two sides handing one standing back and forth bear unceasing generation in a closed world without dissipation, burning a fresh fuel they bear it under dissipation while every finite family containing a side opens and the family of the sides draws in the fuel, with a sink exchanging with ever new relata instead dissipation holds vacuously and the sink opens the family of the sides while nothing flows into it, and a relatum whose activity is not its standing arises again and again with nothing given to it. Reserve: a reserve does not rise across a step at which its formation is unsupported and falls across each such step at which the formation is active; the zero reserve is exactly the premise that activity needs support, a condition in a balanced flow given nothing while its holder is unsupported and taken from, by whatever takes part, while the holder is active there is a reserve, as it is where the holder itself takes part and takes from it, while the supplied reserves of the dormant seeds are held by no condition of their webs, and an active formation whose dependences fail has a positive reserve, so where a held condition carries the formations, moving each unsupported dependence onto it at need one keeps levels, activity and drawing and meets the premise that activity needs support by construction; a formation unsupported from some step on is active only finitely often, over any stretch at most as often as its reserve at the start, and arises only finitely often, so after a loss without return, and after the end of an embodied relatum it depends on at a positive need, it is active beyond its support at most as often as its reserve; a reserve that also falls across every unsupported step at which it is positive bounds the time as well, the formation being inactive once as many steps have passed as its reserve; a relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between; a seed waking twice in the dark on its reserve, a seed waking once before its viability is spent and a fox outliving the hare by its fat attain these bounds, and the fox read with its dependence moved onto its fat meets the premise that activity needs support, its event at step one then not undermining, as it is under the published reading; a seed given its standing while dormant arises later with nothing given to it, and a relatum standing throughout wakes without end with nothing given to it, nothing taking part in its flow. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason; G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, a condition in which every living formation participates discharges connection, and without one connection can fail; a consuming formation and one losing its support co-participate in the drawn condition, so under N_rel valuing the consumer's activity reaches the living events of the formation losing support. Read stepwise, an event is living when active and not undermining; the same discharge holds, an event drawing at a step that breaks a dependence is related to the broken formation, so under N_rel valuing it reaches that formation's living events, and both readings credit the broken formation's own event. Read through relations, the stepwise reading of an event is the conjunction of the reading of its relations, and one event can have a living relation and an undermining one. Ranking: C over courses is stated through a frame whose realized claims are the events a reading credits; the course without a formation extends the course with it only if the reading withholds every event of that formation; under the whole-run reading, for every law of the support-gated family in which the focal formation draws beyond renewal, the course without it extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise reading an event of the formation whose step leaves every need met is credited, neither course extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with the formation, malignant growth and winning by consumption being instances, while with no credited event of the formation the stepwise reading too ranks its absence higher; under the stepwise reading sharing still extends winning by consumption; under either reading a course in which every need stays met extends a course of the family in which overdraw ends the sustaining formation's support, malignant growth being ranked below the same formation stopping before the threshold, while with a third formation sharing the condition neither course extends the other under the stepwise reading. Correspondence: under the discipline that two events are related through a condition only when one draws on it and the other depends on it at a positive level, a condition nothing draws on or no dependence on which can fail relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged, while under co-participation adjoining a condition every formation requires at level zero connects every web; every undermining relation is an interaction, though interaction orders no steps and does not ask whether the drawing changes the level, and under N_rel valuing any drawing event reaches every living dependent at a positive level; a condition on which every living event bears, with a living drawer and a living dependent, connects the whole; in one example two dependents are connected through a living use of their condition and not when its only use undermines them, while co-participation connects them in both; adjoining a renewed condition every formation depends on at a positive level, drawn on by one living event, still connects every web without changing living; read with one kind of relatum a web keeps the connection of co-participation and of interaction, drawing on a relatum that depends on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition and G0 there is exactly a seed with both neutralities, while where each depends only on the other neither co-participation nor interaction relates the bee to the flower, though both are embodied; relabelling the conditions of a one-kind web onto themselves keeps the connection of both valuations. Evolution: a relatum descends from a formation across a step when the formation takes part in the step and gives to it and the relatum comes to stand across it; over any finite family of parents, each with finitely many offspring, and any amounts read of them, the offspring's total with what transmission lowered equals the parents' amounts, each counted once for every offspring, with what transmission raised, the counting form of Price's equation, an accounting identity with no premise whose weighted total is not selection proper: with every parent having k offspring it is k times the parents' total; where only active formations give and activity needs support, a formation a relatum descends from across a step is supported there, so one unsupported at a step leaves no descendant across it and one never supported leaves none, and read of needs on a condition every parent depends on, the parents' needs weighted by their offspring are at most the level counted once for every offspring; where a flow transmits a dependence within a bound, a descendant depending on the condition at its first standing step descending only from formations depending on it and needing it at most the bound more, a descendant's need is at most the condition's level at the giving step plus the bound, met there only when the bound is zero, as a child transmitted within one and never supported shows, and in a balanced flow its need with everything taken from the condition since an earlier step is at most the level then with everything given since, plus the bound; a parent taking from a pool and giving to two descendants leaves the one inheriting its need unsupported from its first standing step on, while the one needing less is supported, active and takes in turn, and without the premise that activity needs support a formation active beyond its support transmits a need above the level at its giving step. Space, one structure for Ren's proposal (an AI reading): a world is relata read with one kind, the flow among them and their web, and the space is every world; the laws stated with no premise hold of each; in a finite world whose activity is decided, arising recurs exactly when ceasing does, and over every world without decidability this law is excluded middle, while with infinitely many relata either recurs without the other; which parts Ren's generative and degenerative name is Ren's to choose; activity needing support, balance, only active formations giving, only active formations taking what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others; among finite worlds arising recurring or not occurs both with every event living and with some event not living, a grazer drawing down a pool another relatum depends on giving the latter without drawing on itself at an ending; in a finite, balanced, dissipative world whose activity is decided and in which whatever arises is embodied, neither arising nor ceasing recurs, and without finiteness, dissipation, balance or embodiment arising can recur, the world failing balance exchanging at every step. Premises: a census and bounded transmission are premises of worlds too; activity needing support makes activity carried, embodiment makes whatever arises embodied, a finite world whose activity is decided has a census, and where only active relata take and the flow dissipates only active relata give across every enclosed step, as every step of a finite world is; activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, embodiment, a census and bounded transmission are independent, each failed by a world meeting the other seven, the worlds failing a census or only active relata giving being infinite; mutualists active throughout meet all eight, and in a finite world whose activity is decided the eight together bring arising and ceasing to an end. Openness: under balance and dissipation, across a step enclosed around what stands, the total standing does not rise and any condition's standing rising or falling lowers it, so where what stands is listed and every step from some step on is enclosed around it, standing stops changing; in a world with a census whose activity is decided, ceasing recurs only where arising recurs, not conversely; where at most B relata are active at each step arising recurs exactly when ceasing does, every census of a finite world is bounded, a procession with one relatum active at a time among infinitely many keeps arising and ceasing, and dawn has no bound; under a census of what stands, ceasing to stand recurring needs coming to stand recurring, and with a bound they recur together; the rest theorem: a world with a census of what is active and of what stands, whose arising is embodied, balanced and dissipative, enclosed around what stands from some step on, comes to rest, finite worlds being a case and the census of what is active needed; a world with a census whose relata are embodied, balanced and dissipative, enclosed from some step on, comes to rest without being finite, so its arising without end needs steps not enclosed; the sides of Handing exchanging with an unbounded ground meet all eight premises, no step enclosed, and keep arising without end. Descent: read with one kind of relatum, an event living on a relatum, drawing on it and depending on it at a positive need, is related to that relatum's events, and an event is related to the events of the relata it descends from and that descend from it, descent relating every event of the two, while a gift entry of a formation taking no part makes no descent; living on, like interaction, needs a dependence that can fail, so under the premise that activity needs support the relatum an active formation lives on stands at that step and, if embodied, is active there, while a dormant relatum standing while asleep can be lived on; under N_rel valuing an event that lives on a relatum reaches that relatum's living events and conversely, and valuing any event of a formation reaches the living events of the relata descending from it and conversely; in a balanced flow in which only active formations give, an embodied relatum that arises descends from another formation active at that step; generations each given by the one before are connected by descent and by neither co-participation nor interaction, and G0 there is exactly a seed with N_rel and N_std; a bee and a flower depending only on each other are connected by living on, and relabelling their conditions each onto the other keeps co-participation and interaction and removes that connection; a seed descends from the parent that provisioned it while dormant, and waking from dormancy descends from nothing. Instances: the core's G0, C, D, secured ground and relational living are by definition those of the existing modules, the core's whole-run reading of courses is the relational inventory of RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is PracticalJudgment.Better; seed-edge closures and evaluator chains are reachability on the edge process; a frame's reachable configurations form a joint-continuation space whose bundles step-preserving maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence narrowing by a rule list are common responses, one-step completion, enabledness and After on a pure observation; the functional articulation of a situation is exactly the deterministic case of the articulation under L, and the lifted comparison, reason, survival and continual-improvement results hold on every frame. A countermodel shows that L is substantive: a response with one better and one worse outcome is comparable in neither direction.",
+  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Renewal: a run read through observables of conditions is one relational unfolding; an observable that never rises from some step on falls only finitely often, with depletion, recurrent renewal under a natural-number rank and unrenewed drawdown as its cases; in one process from one configuration one run renews and another consumes. Dependence: which conditions a formation depends on, at what level, and which it draws on may change from step to step; constant dependence recovers the static reading exactly; every met dependence is kept or broken across each step; consumption as inherited admits a requirement never met, which consumes its condition with no break; where activity needs current support, a formation still active after a loss without return has weakened or dissolved its dependence, and with fixed dependence it is no longer active, both contrapositives of that premise; these outcomes are neither exhaustive nor exclusive, and in one process from one configuration a break of the same dependence, read at the start of its step, is followed by an ending, a transformation and a restoration; an event is within renewal when its step keeps every dependence on the conditions it participates in, breaking when it draws on a condition at a step that breaks a dependence on it, and undermining when it draws on a condition at a step after which the condition is below both the present need of a dependence on it and a need of that dependence met at some step of its tenure, so that a level from before the dependence held and a dependence never met at its own need do not count, falling short only of a need grown beyond what was met is not undermining, a draw below a need that was met undermines after the need has grown, and a dependence that lapses for one step starts a new tenure; breaking is undermining, drawing after a loss can undermine without breaking, and drawing that changes no level can undermine; the stepwise and whole-run readings credit different events in both directions. Return: a dependence returns within p steps when it is met at one of the next p; renewal, renewal within one step, within p, return and non-consumption are ordered, and consumption is exactly a dependence that never returns; renewal within one step does not imply renewal, and cycles of length zero are degenerate; a seasonal condition is renewed within two steps and not one; a recovery can slow without bound, returning always while no cycle bounds it; over cycles of two a dip is credited, and an escalation undermines for every cycle. Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with every event within renewal, and afterwards one renews and the other consumes; a reading decided by a finite prefix that credits every renewing run credits a consuming one; the renewing run itself draws beyond renewal before the horizon and the whole-run reading credits it; a reading of amounts per step is fixed by the history through the step and withholds every such draw; the formation-level cycle readings are not fixed by any finite prefix; and the same holds in the support-gated law, whose renewal stops below support. Joint activity: withholding a formation's part with the same move taken, which must still be available, the loss is kept or broken; when with any single part withheld the same move still breaks, no part alone makes the difference; from one configuration a lone drawer's part makes the difference under a calm move and the loss is overdetermined under a shock; with the shock written into the step relation of one move the move does not determine the step and the loss is overdetermined though the calm outcome would keep the dependence, and a move no withheld configuration can take makes no part decisive; when the move determines the step and can be taken with a part withheld, and the dependence still holds and is met there, either the part makes the difference or the same move still breaks the dependence; in one process a drawer's part makes the difference with one other drawer and not with two, while the relational reading counts it consuming in both; a drawer taking exactly the renewal makes no difference and still undermines; drawing beyond renewal at every step consumes the condition, the first event undermines for no positive cycle, with every draw before any step withheld the condition is still consumed, and at the breaking step drawing nothing keeps the dependence. Substitution: in the support-gated law, a focal formation that can substitute an alternative condition stays active, transforms its dependence at a step that can be found, and consumes, while the sustaining formation ends; a concrete law meets the premises, and there the stepwise reading credits the focal formation at every step but the one at which the sustaining formation loses support; in another law of the family it is withheld at two steps, until it switches. Generation: a formation arises when it is inactive before a step and active after it, and generation is unceasing when some formation arises at arbitrarily late steps; an event depletes a finite family when at each of its steps at which no condition of the family rises one of them falls, which says only that some condition of the family changes at each of its steps; a finite family none of whose conditions rises from some step on is depleted by only finitely many events; so where arising depletes such a family, unceasing generation makes some condition of it rise at arbitrarily late steps, and, every rise being made by a formation renewing it, renewing activity recurs; a formation lowering such a family at each active step is active only finitely often however it substitutes; if a quantity never rises and every arising lowers it, generation is not unceasing, while a closed cycle whose total stays constant sustains unceasing generation; a flicker depending and drawing on nothing arises unceasingly, each arising depleting an unrelated tide; a tide renewed by the moon rises at arbitrarily late steps while nothing arises, and drawing what is renewed keeps every dependence while nothing arises; arising on a consumed condition ceases; and a formation arising again and again on a renewed condition meets every premise, each arising coming at a rise, while the stepwise reading withholds each of its blooms and the reading over cycles of two credits it. Flow: when every change of a condition's level is what the formations taking part take and give, the family's total plus its uptake equals its total before plus its replenishment, over a step and over any stretch, every rise is made by an active renewer, and every fall is taken from, by an active formation drawing on it where only active formations take; positive uptake at arbitrarily late steps needs replenishment at arbitrarily late steps, so when formations taking from the family at their first active step arise at arbitrarily late steps, formations replenish the family at arbitrarily late steps, and so they do for a constant consumer with nothing arising; over any stretch from which at least K formations take, the family is replenished by at least K per step less its stock at the start, and with each formation giving at most a fixed amount the renewers grow in the same averaged sense; so generation that is more without end, with ever more formations taking from a finite family from some step on, needs replenishment that no eventual bound bounds and, each formation giving at most a fixed amount, renewers that no eventual bound bounds, who can still be absent at infinitely many steps; renewers and growers arising at every step meet these premises with a level that never rises, so that arising there does not deplete the family in the net sense; the unceasing bloom is not more without end; and in a closed cycle each formation gives back what it takes, the total never changes, and generation is more without end with as many renewers as takers; every rise of a condition is given to, so a rising condition replenishes every family containing it, and where members of a family rise at arbitrarily late steps its replenishment recurs, whatever is taken; a condition coming to stand, its level zero before a step and positive after, rises and is given at least its new standing, and a condition can rise at every step without coming to stand. Change: with no premise about an unfolding, a determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after; a formation arising and ceasing, a dependence forming and dissolving and a condition coming to stand and ceasing to stand are this one change; a decidable determination that ceases at no step from some step on holds on; a formation stays supported where each dependence it has it had before, at no greater need, on a condition standing no lower; over any stretch an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members; since no amount falls below zero, a finite family falls over any stretch by at most its total at the start more than it rises, so members falling at arbitrarily late steps rise at arbitrarily late steps, which for one amount is the law that an observable never rising from some step on falls only finitely often, and with the amounts bounded the family rises by at most its bound per member more than it falls, so rising at arbitrarily late steps needs falling at arbitrarily late steps; so in a finite family of decidable determinations the members holding at the end with those that ceased to be are those holding at the start with those that came to be, comings and ceasings over any stretch differ by at most the number of members, and coming to be recurs exactly when ceasing to be recurs: given decidable activity, the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose, they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps, and with finitely many formations arising recurs exactly when ceasing recurs; with no premise at all, conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps; ever new formations can arise with none ceasing while a level rises at every step and never falls, and formations all active at the start can cease one after another with nothing arising. Population: a census lists the formations active at each step, each once; if more are active after a step than before, one arises across it, and a census growing without bound makes generation unceasing; under a census, with each formation taking part in a flow listed once and only active formations taking, more without end makes the active formations grow without bound and generation unceasing, and the garden and the cycle meet all these premises; the unceasing bloom meets these premises and is not more; without a census every formation of an infinite family can be active from the start and more without end comes with nothing arising, with takers that are never active the same holds under a census, and so it does with one formation listed many times in the flow; ever more formations can draw on a condition while the flow records no taking; under a census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps, not conversely, and with at most B formations active at each step from some step on arising recurs exactly when ceasing does; both hold of any determination whose holders are listed at each step, read of activity, dependence and standing, and over any stretch the list at the end with what ceased is the list at the start with what came. Identity: re-identifying formations one to one at each step leaves every step's levels, activity, dependences and drawing unchanged; a renaming preserves the readings that follow a formation, and every re-identification preserves support, keeping and breaking, the class of every condition, whether activity needs support, being within renewal and breaking at each event, what a flow takes and gives, the counts of takers and renewers, so more without end, a census of the active formations and that only active formations take, so that under a census more without end makes generation unceasing under every re-identification, as in the garden; exchanging names at odd steps turns a renewing and a consuming formation into two consuming, removes undermining after the first step and makes formations arise without end, and arisings made by naming alone can meet every premise of the recurrence of renewal; keeping the names of continuing activity makes no arising and keeping those of continuing dependences removes no undermining, while succession, joining a formation that ends with one that begins then or later, can hide arising in a lineage and make drawing after an elder's loss undermine a living heir, both namings keeping continuity only one way; kept both ways, continuity preserves arising and undermining exactly and excludes a join at a single step, and joining across a dormant step still changes which formation renews and which consumes; under a census, with each formation taking part listed once and only active formations taking, under every continuation in which no formation continues as two, every re-identification and a continuation with merges among them, more without end makes formations arise at arbitrarily late steps, a decidable continuation giving the decidability this asks; on the garden, whose formations never end, a merge comes with a persisting formation re-read as arising at every step, while where the merged formation ends what arises under a merge is exactly what is new; without a census it does not, with new formations budding from one already there it forces no arising, and a single split need not defeat arising, so no split is sufficient, not necessary; a lineage named beside its members is active at every step while they arise without end. Wholes: a formation is the whole of some parts when it is active exactly while some part is, a coincidence of activity by which every formation is the whole of itself and two formations always active are each the whole of the other; a whole arises only as some part arises; parts covering every step from some step on, none active at two steps d apart, have a part arising within every d consecutive steps, a bound attained by members working in shifts and met by two members arising again and again, and parts covering every step from some step on, each of whose activity ends, with the active ones listed, arise at arbitrarily late steps outside every finite list of parts; a whole active at every step from some step on is covered by its parts; with a part that never ends, or infinitely many parts active at once, it persists while nothing arises, and parts arising without end may leave the whole inactive between them. Dissipation: a family is closed across a step when no formation taking part exchanges with a condition outside it, and is dissipated on when every formation taking part gives it no more than it takes from it and less when it takes; in a balanced flow a family dissipated on falls across a step by at least its number of takers, its takers over all later steps number at most its stock, and taking from it does not recur; so under dissipation on every closed family without repetition, a finite family from which formations take at arbitrarily late steps, and every finite family without repetition containing it, is open at arbitrarily late steps, more without end, the unceasing arising of takers and one eater kept up with nothing arising being such taking, and with finitely many conditions in all taking does not recur; a step is enclosed when some finite family without repetition is closed across it, as when finitely many conditions are all there is, and under dissipation a formation that gives takes more than it gives over every closed family without repetition, so across an enclosed step giving needs uptake, while where no step is enclosed dissipation holds vacuously and a renewer can give taking nothing; a step is enclosed around a family when a finite family without repetition containing it is closed across it, as every enclosed step is when equality is decidable, and under dissipation a finite family from which taking recurs and which is enclosed around from some step on draws in: at arbitrarily late steps a formation gives to it and takes from beyond it; a sun burning a fresh fuel at every step and giving a pool less than it burns, while ever more growers take from the pool, meets these premises, with the growers depending on the pool under a census as well, every step being enclosed and the pool drawing in the fuel; the flows of the earlier witnesses in which taking recurs on one condition are not dissipative; a member of a family dissipated on rising, as in coming to stand, lowers its stock, so members of a family dissipated on from some step on neither rise nor come to stand at arbitrarily late steps; under dissipation a finite family without repetition whose members rise, as in coming to stand, at arbitrarily late steps is open at arbitrarily late steps and, enclosed around from some step on, draws in, and with finitely many conditions in all none rises at arbitrarily late steps; across a step dissipated on, a family's members fall by at least as much as they rise and by one more for each formation taking from it, so a formation taking from it makes a member fall whether or not another rises, an event at whose steps the family is dissipated on and taken from depletes it, and a member rising comes with another member falling across the same step, so that under dissipation a member of a family without repetition rising while none falls shows the family open across that step, an active formation giving to the one and taking from the family and an active formation drawing on the other taking from it where only active formations give and take. Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps support, dependence, renewal, consumption, the classes of formations, undermining, living events, arising, unceasing generation and a census, and what is taken and given, balance, that only active formations give and take, a present without repetition, takers, renewers, more without end and dissipation, and in it no active formation stands as a condition exactly while it is active or depends on itself; relabelling the conditions of a one-kind web onto themselves keeps dependence and undermining and changes which relata are embodied and which depend on themselves, so that identification is supplied by the shared index; where a relatum is so embodied and activity needs support, a formation depending on it at a positive need is active only while it is, activity passes along every chain of such dependence so that a relatum not active ends every formation whose chain reaches it, consuming it at a need of one ends it, a dependence on itself is met exactly while it is active, drawing on it across the step at which it ends breaks that dependence whatever ends it, even for a drawer that takes nothing and for its own last event, and in a balanced flow in which only active formations give it arises only as another active formation gives to it, a formation that need not be embodied, and that is embodied where only embodied relata give, as a sun depending on nothing can be; a bee and a flower renew each other, a fox ends with the hare it draws on, and generations arise without end each given by the one before; an embodied relatum comes to stand as it arises, so it is given at least the standing it arises with, its arising replenishes every family containing it and embodied generation recurring in a family needs its replenishment to recur whatever is taken; whatever gives to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers its stock and embodied members of a family dissipated on from some step on do not arise at arbitrarily late steps; under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is open at arbitrarily late steps, and enclosed around from some step on it draws in, and with finitely many relata in all embodied arising does not recur; the arising of an embodied member of a family dissipated on comes with another member falling across the same step, while each generation of the brood arises in a closed family of it and the one before with nothing falling, so that family is not dissipated on; two sides handing one standing back and forth bear unceasing generation in a closed world without dissipation, burning a fresh fuel they bear it under dissipation while every finite family containing a side opens and the family of the sides draws in the fuel, with a sink exchanging with ever new relata instead dissipation holds vacuously and the sink opens the family of the sides while nothing flows into it, and a relatum whose activity is not its standing arises again and again with nothing given to it. Reserve: a reserve does not rise across a step at which its formation is unsupported and falls across each such step at which the formation is active; the zero reserve is exactly the premise that activity needs support, a condition in a balanced flow given nothing while its holder is unsupported and taken from, by whatever takes part, while the holder is active there is a reserve, as it is where the holder itself takes part and takes from it, while the supplied reserves of the dormant seeds are held by no condition of their webs, and an active formation whose dependences fail has a positive reserve, so where a held condition carries the formations, moving each unsupported dependence onto it at need one keeps levels, activity and drawing and meets the premise that activity needs support by construction; a formation unsupported from some step on is active only finitely often, over any stretch at most as often as its reserve at the start, and arises only finitely often, so after a loss without return, and after the end of an embodied relatum it depends on at a positive need, it is active beyond its support at most as often as its reserve; a reserve that also falls across every unsupported step at which it is positive bounds the time as well, the formation being inactive once as many steps have passed as its reserve; a relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between; a seed waking twice in the dark on its reserve, a seed waking once before its viability is spent and a fox outliving the hare by its fat attain these bounds, and the fox read with its dependence moved onto its fat meets the premise that activity needs support, its event at step one then not undermining, as it is under the published reading; a seed given its standing while dormant arises later with nothing given to it, and a relatum standing throughout wakes without end with nothing given to it, nothing taking part in its flow. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason; G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, a condition in which every living formation participates discharges connection, and without one connection can fail; a consuming formation and one losing its support co-participate in the drawn condition, so under N_rel valuing the consumer's activity reaches the living events of the formation losing support. Read stepwise, an event is living when active and not undermining; the same discharge holds, an event drawing at a step that breaks a dependence is related to the broken formation, so under N_rel valuing it reaches that formation's living events, and both readings credit the broken formation's own event. Read through relations, the stepwise reading of an event is the conjunction of the reading of its relations, and one event can have a living relation and an undermining one. Ranking: C over courses is stated through a frame whose realized claims are the events a reading credits; the course without a formation extends the course with it only if the reading withholds every event of that formation; under the whole-run reading, for every law of the support-gated family in which the focal formation draws beyond renewal, the course without it extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise reading an event of the formation whose step leaves every need met is credited, neither course extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with the formation, malignant growth and winning by consumption being instances, while with no credited event of the formation the stepwise reading too ranks its absence higher; under the stepwise reading sharing still extends winning by consumption; under either reading a course in which every need stays met extends a course of the family in which overdraw ends the sustaining formation's support, malignant growth being ranked below the same formation stopping before the threshold, while with a third formation sharing the condition neither course extends the other under the stepwise reading. Correspondence: under the discipline that two events are related through a condition only when one draws on it and the other depends on it at a positive level, a condition nothing draws on or no dependence on which can fail relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged, while under co-participation adjoining a condition every formation requires at level zero connects every web; every undermining relation is an interaction, though interaction orders no steps and does not ask whether the drawing changes the level, and under N_rel valuing any drawing event reaches every living dependent at a positive level; a condition on which every living event bears, with a living drawer and a living dependent, connects the whole; in one example two dependents are connected through a living use of their condition and not when its only use undermines them, while co-participation connects them in both; adjoining a renewed condition every formation depends on at a positive level, drawn on by one living event, still connects every web without changing living; read with one kind of relatum a web keeps the connection of co-participation and of interaction, drawing on a relatum that depends on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition and G0 there is exactly a seed with both neutralities, while where each depends only on the other neither co-participation nor interaction relates the bee to the flower, though both are embodied; relabelling the conditions of a one-kind web onto themselves keeps the connection of both valuations. Evolution: a relatum descends from a formation across a step when the formation takes part in the step and gives to it and the relatum comes to stand across it; over any finite family of parents, each with finitely many offspring, and any amounts read of them, the offspring's total with what transmission lowered equals the parents' amounts, each counted once for every offspring, with what transmission raised, the counting form of Price's equation, an accounting identity with no premise whose weighted total is not selection proper: with every parent having k offspring it is k times the parents' total; where only active formations give and activity needs support, a formation a relatum descends from across a step is supported there, so one unsupported at a step leaves no descendant across it and one never supported leaves none, and read of needs on a condition every parent depends on, the parents' needs weighted by their offspring are at most the level counted once for every offspring; where a flow transmits a dependence within a bound, a descendant depending on the condition at its first standing step descending only from formations depending on it and needing it at most the bound more, a descendant's need is at most the condition's level at the giving step plus the bound, met there only when the bound is zero, as a child transmitted within one and never supported shows, and in a balanced flow its need with everything taken from the condition since an earlier step is at most the level then with everything given since, plus the bound; a parent taking from a pool and giving to two descendants leaves the one inheriting its need unsupported from its first standing step on, while the one needing less is supported, active and takes in turn, and without the premise that activity needs support a formation active beyond its support transmits a need above the level at its giving step. Space, one structure for Ren's proposal (an AI reading): a world is relata read with one kind, the flow among them and their web, and the space is every world; the laws stated with no premise hold of each; in a finite world whose activity is decided, arising recurs exactly when ceasing does, and asked of every world without decidability this law implies excluded middle, while with infinitely many relata either recurs without the other; which parts Ren's generative and degenerative name is Ren's to choose; activity needing support, balance, only active formations giving, only active formations taking what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others; among finite worlds arising recurring or not, and with decided activity ceasing recurring or not, occurs both with every event living and with some event not living, a grazer drawing down a pool another relatum depends on giving the latter without drawing on a self-bearing relatum at its own ending, while the relatum depending ends at that step, as under activity needing support every undermining of a dependence persisting unchanged co-occurs with the ending of the relatum depending; in a finite, balanced, dissipative world whose activity is decided and in which whatever arises is embodied, neither arising nor ceasing recurs, and without finiteness, dissipation, balance or embodiment arising can recur, the world failing balance exchanging at every step. Premises: a census and bounded transmission are premises of worlds too; activity needing support makes activity carried, embodiment makes whatever arises embodied, a finite world whose activity is decided has a census, and where only active relata take and the flow dissipates only active relata give across an enclosed step, and every step of a finite world is enclosed; activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, embodiment, a census and bounded transmission are independent, each failed by a world meeting the other seven, the worlds failing a census or only active relata giving being infinite, and for balance a draining world takes from a closed family at every step; mutualists active throughout meet all eight, and a finite world whose activity is decided and which meets them comes to rest, by balance, dissipation and embodiment. Openness: under balance and dissipation, across a step enclosed around what stands, the total standing does not rise and any condition's standing rising or falling lowers it, so where what stands is listed and every step from some step on is enclosed around it, standing stops changing; in a world with a census whose activity is decided, ceasing recurs only where arising recurs, not conversely; where at most B relata are active at each step arising recurs exactly when ceasing does, every census of a finite world is bounded, a procession with one relatum active at a time among infinitely many keeps arising and ceasing, and dawn has no bound; under a census of what stands, ceasing to stand recurring needs coming to stand recurring, and with a bound they recur together; where what stands is listed, whatever arises embodied, balanced and dissipative, enclosed around what stands from some step on, arising stops; the rest theorem: with a census of what is active as well, the world comes to rest, finite worlds being a case, the census of what is active needed (dusk) and the census of what stands needed (kindling, ember); a world with a census whose relata are embodied, balanced and dissipative, enclosed from some step on, comes to rest without being finite and without deciding equality, so its arising without end is incompatible with every late step being enclosed; the sides of Handing exchanging at zero net with an unbounded ground meet all eight premises, no step enclosed, total standing one, and keep arising without end, while mutualists meet the eight with every step enclosed and come to rest. Descent: read with one kind of relatum, an event living on a relatum, drawing on it and depending on it at a positive need, is related to that relatum's events, and an event is related to the events of the relata it descends from and that descend from it, descent relating every event of the two, while a gift entry of a formation taking no part makes no descent; living on, like interaction, needs a dependence that can fail, so under the premise that activity needs support the relatum an active formation lives on stands at that step and, if embodied, is active there, while a dormant relatum standing while asleep can be lived on; under N_rel valuing an event that lives on a relatum reaches that relatum's living events and conversely, and valuing any event of a formation reaches the living events of the relata descending from it and conversely; in a balanced flow in which only active formations give, an embodied relatum that arises descends from another formation active at that step; generations each given by the one before are connected by descent and by neither co-participation nor interaction, and G0 there is exactly a seed with N_rel and N_std; a bee and a flower depending only on each other are connected by living on, and relabelling their conditions each onto the other keeps co-participation and interaction and removes that connection; a seed descends from the parent that provisioned it while dormant, and waking from dormancy descends from nothing. Instances: the core's G0, C, D, secured ground and relational living are by definition those of the existing modules, the core's whole-run reading of courses is the relational inventory of RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is PracticalJudgment.Better; seed-edge closures and evaluator chains are reachability on the edge process; a frame's reachable configurations form a joint-continuation space whose bundles step-preserving maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence narrowing by a rule list are common responses, one-step completion, enabledness and After on a pure observation; the functional articulation of a situation is exactly the deterministic case of the articulation under L, and the lifted comparison, reason, survival and continual-improvement results hold on every frame. A countermodel shows that L is substantive: a response with one better and one worse outcome is comparable in neither direction.",
   "inherited_receipts": {
     "GenerativeCore": [
       "acquired-perspective/verification.json",
@@ -533,6 +533,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T135417.468399Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141402.494945Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141825.143331Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T143305.859329Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "universal-ethics/generative-capacity/correspondence-verification.json",
       "universal-ethics/generative-capacity/reconfiguration-checks/20261007T161603.450304Z/verification.json",
@@ -665,6 +666,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T135417.468399Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141402.494945Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141825.143331Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T143305.859329Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "verification-history/2026-10-06-before-axiom-removal/sufficiency/verification.json",
       "verification-history/2026-10-06-before-vocabulary-rename/receipt.json",
@@ -718,6 +720,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T135417.468399Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141402.494945Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T141825.143331Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T143305.859329Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json"
     ],
     "GenerativeComparison": [
@@ -935,13 +938,13 @@
     "Becoming.Population": 206,
     "Becoming.Identity": 487,
     "Becoming.Wholes": 147,
-    "Becoming.Dissipation": 318,
-    "Becoming.Roles": 463,
+    "Becoming.Dissipation": 324,
+    "Becoming.Roles": 464,
     "Becoming.Reserve": 144,
     "Becoming.Evolution": 152,
-    "Becoming.Space": 238,
-    "Becoming.Premises": 245,
-    "Becoming.Openness": 132,
+    "Becoming.Space": 243,
+    "Becoming.Premises": 249,
+    "Becoming.Openness": 163,
     "Becoming.Metaethics": 226,
     "Becoming.Ranking": 170,
     "Becoming.Correspondence": 159,
@@ -5833,7 +5836,7 @@
       "module": "Becoming.Dissipation",
       "spine": true,
       "layer": "core",
-      "theorems": 89,
+      "theorems": 90,
       "declarations": [
         {
           "kind": "theorem",
@@ -5970,6 +5973,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.Flow.Enclosed.around"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Flow.Enclosed.around_not_not"
         },
         {
           "kind": "theorem",
@@ -6323,6 +6330,7 @@
         "Becoming.Flow.opens_of_arising": [],
         "Becoming.Flow.around_of_finite": [],
         "Becoming.Flow.Enclosed.around": [],
+        "Becoming.Flow.Enclosed.around_not_not": [],
         "Becoming.Flow.Dissipative.dissipatesOn_of_inward": [],
         "Becoming.Flow.taking_draws_in": [],
         "Becoming.Flow.rise_lowers_on": [],
@@ -6409,7 +6417,7 @@
       "module": "Becoming.Roles",
       "spine": true,
       "layer": "core",
-      "theorems": 134,
+      "theorems": 135,
       "declarations": [
         {
           "kind": "theorem",
@@ -6594,6 +6602,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.Web.Embodied.ending_breaks"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Web.Dependent.inactive_below"
         },
         {
           "kind": "theorem",
@@ -7171,6 +7183,7 @@
         "Becoming.Web.coextinct": [],
         "Becoming.Web.Embodied.ends_when_consumed": [],
         "Becoming.Web.Embodied.ending_breaks": [],
+        "Becoming.Web.Dependent.inactive_below": [],
         "Becoming.Web.Embodied.arises_given": [],
         "Becoming.Web.Embodied.arises_from_embodied": [],
         "Becoming.Web.roles_not_embodied": [],
@@ -7902,7 +7915,7 @@
       "module": "Becoming.Space",
       "spine": true,
       "layer": "core",
-      "theorems": 47,
+      "theorems": 49,
       "declarations": [
         {
           "kind": "def",
@@ -8245,6 +8258,10 @@
           "name": "Becoming.World.grazing_finite"
         },
         {
+          "kind": "instance",
+          "name": "Becoming.World.grazing_decided"
+        },
+        {
           "kind": "theorem",
           "name": "Becoming.World.grazing_arising"
         },
@@ -8271,6 +8288,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.grazing_world"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.grazing_browser_ends"
         },
         {
           "kind": "def",
@@ -8335,6 +8356,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.living_crosses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.living_crosses_ceasing"
         },
         {
           "kind": "theorem",
@@ -8427,6 +8452,7 @@
         "Becoming.World.Grazing.side_taking": [],
         "Becoming.World.grazing": [],
         "Becoming.World.grazing_finite": [],
+        "Becoming.World.grazing_decided": [],
         "Becoming.World.grazing_arising": [],
         "Becoming.World.grazing_balanced": [],
         "Becoming.World.grazing_acting": [],
@@ -8434,6 +8460,7 @@
         "Becoming.World.grazing_dependent": [],
         "Becoming.World.grazing_not_self": [],
         "Becoming.World.grazing_world": [],
+        "Becoming.World.grazing_browser_ends": [],
         "Becoming.World.Leaking.flow": [],
         "Becoming.World.Leaking.takes": [],
         "Becoming.World.leaking": [],
@@ -8450,6 +8477,7 @@
         "Becoming.World.contingent": [],
         "Becoming.World.separate": [],
         "Becoming.World.living_crosses": [],
+        "Becoming.World.living_crosses_ceasing": [],
         "Becoming.World.rests_needs": []
       },
       "kernel_checked": true
@@ -8458,7 +8486,7 @@
       "module": "Becoming.Premises",
       "spine": true,
       "layer": "core",
-      "theorems": 35,
+      "theorems": 37,
       "declarations": [
         {
           "kind": "def",
@@ -8507,6 +8535,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.Finite.enclosed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.acting_across"
         },
         {
           "kind": "theorem",
@@ -8575,6 +8607,18 @@
         {
           "kind": "theorem",
           "name": "Becoming.World.unbalanced_but"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.draining"
+        },
+        {
+          "kind": "instance",
+          "name": "Becoming.World.draining_decided"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.draining_but"
         },
         {
           "kind": "inductive",
@@ -8802,6 +8846,7 @@
         "Becoming.World.Dependent.carried": [],
         "Becoming.World.Finite.counted": [],
         "Becoming.World.Finite.enclosed": [],
+        "Becoming.World.acting_across": [],
         "Becoming.World.acting_of_enclosed": [],
         "Becoming.World.Finite.acting": [],
         "Becoming.World.follows": [],
@@ -8819,6 +8864,9 @@
         "Becoming.World.strained_but": [],
         "Becoming.World.unbalanced_decided": [],
         "Becoming.World.unbalanced_but": [],
+        "Becoming.World.draining": [],
+        "Becoming.World.draining_decided": [],
+        "Becoming.World.draining_but": [],
         "Becoming.World.Scatter.Relatum": [],
         "Becoming.World.Scatter.unit": [],
         "Becoming.World.Scatter.level": [],
@@ -8879,7 +8927,7 @@
       "module": "Becoming.Openness",
       "spine": true,
       "layer": "core",
-      "theorems": 38,
+      "theorems": 48,
       "declarations": [
         {
           "kind": "theorem",
@@ -8924,6 +8972,10 @@
         {
           "kind": "theorem",
           "name": "Becoming.Flow.Enclosed.aroundStanding"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Flow.Enclosed.aroundStanding_not_not"
         },
         {
           "kind": "theorem",
@@ -9011,6 +9063,10 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.World.arising_stops"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.World.comes_to_rest"
         },
         {
@@ -9090,12 +9146,60 @@
           "name": "Becoming.Exposed.census"
         },
         {
+          "kind": "theorem",
+          "name": "Becoming.Exposed.holder_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Exposed.holder_after"
+        },
+        {
           "kind": "def",
           "name": "Becoming.World.exposed"
         },
         {
           "kind": "theorem",
           "name": "Becoming.World.exposed_world"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.exposed_standing"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.openness_contingent"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Kindling.sideOf"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Kindling.index"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Kindling.fuel_stands"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Kindling.census"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Kindling.unlisted"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Ember.web"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.World.ember"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.World.rest_needs_standing"
         }
       ],
       "axiom_dependencies": {
@@ -9110,6 +9214,7 @@
         "Becoming.Flow.AroundStanding": [],
         "Becoming.Web.StandingCensus.stock_eq": [],
         "Becoming.Flow.Enclosed.aroundStanding": [],
+        "Becoming.Flow.Enclosed.aroundStanding_not_not": [],
         "Becoming.Flow.fall_lowers_on": [],
         "Becoming.Flow.standing_runs_down": [],
         "Becoming.Flow.standing_never_rises": [],
@@ -9131,6 +9236,7 @@
         "Becoming.World.procession": [],
         "Becoming.World.procession_decided": [],
         "Becoming.World.procession_world": [],
+        "Becoming.World.arising_stops": [],
         "Becoming.World.comes_to_rest": [],
         "Becoming.World.Finite.standing": [],
         "Becoming.World.Finite.comes_to_rest": [],
@@ -9151,8 +9257,20 @@
         "Becoming.Exposed.open_at": [],
         "Becoming.Exposed.stands_iff": [],
         "Becoming.Exposed.census": [],
+        "Becoming.Exposed.holder_one": [],
+        "Becoming.Exposed.holder_after": [],
         "Becoming.World.exposed": [],
-        "Becoming.World.exposed_world": []
+        "Becoming.World.exposed_world": [],
+        "Becoming.World.exposed_standing": [],
+        "Becoming.World.openness_contingent": [],
+        "Becoming.Kindling.sideOf": [],
+        "Becoming.Kindling.index": [],
+        "Becoming.Kindling.fuel_stands": [],
+        "Becoming.Kindling.census": [],
+        "Becoming.Kindling.unlisted": [],
+        "Becoming.Ember.web": [],
+        "Becoming.World.ember": [],
+        "Becoming.World.rest_needs_standing": []
       },
       "kernel_checked": true
     },
@@ -12882,7 +13000,7 @@
     "Becoming.Bridge.lean": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3",
     "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Change.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Change.lean": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+    "Becoming.Change.lean": "f37088ca49d10cebf1a46861c8103903db5c7cc6d42e269831e219dead7eab53",
     "Becoming.Change.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Correspondence.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Correspondence.lean": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
@@ -12894,10 +13012,10 @@
     "Becoming.Descent.lean": "11db87b79c808d1098f3cf2650c1350dee19f2c2fb6efd287634cb86304c4d05",
     "Becoming.Descent.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Dissipation.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Dissipation.lean": "941026b4548d30dac31b913d962cd46d82a044f0fd151cb655d71e1301b6ec11",
+    "Becoming.Dissipation.lean": "f079e8b4e85babc6f43f99263d02216a1c3c4df78feb0ab73c346be8814ee84d",
     "Becoming.Dissipation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Evolution.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Evolution.lean": "3ba9b515ebae3cadba6b45fd15b9d201f19d9b3cd512b0ec05e0b7bb4785006e",
+    "Becoming.Evolution.lean": "f09187b7a101ff81b5836b9e910b871215ace8f9a830fc4cd95cce2f2bdad621",
     "Becoming.Evolution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Flow.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Flow.lean": "22fd0168ed9a80279c105bc6d37ba34c3b9e1a8e2775b93117486ea857b68350",
@@ -12924,14 +13042,14 @@
     "Becoming.Metaethics.lean": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
     "Becoming.Metaethics.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Openness.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Openness.lean": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
+    "Becoming.Openness.lean": "ad0dfa236d84482ef262dd7da95d3b82a2505519f32ec3ba86605af825ac0a9c",
     "Becoming.Openness.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Population.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Population.lean": "581fd437896566b649079fe35af0fd76ded169c6aa5b0310f9de673ab1b8b1cc",
     "Becoming.Population.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Premises.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Premises.lean": "d927cabd34d8449a466398cb36f4521574e95598dad785e75d8d14c98f69df47",
+    "Becoming.Premises.lean": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
     "Becoming.Premises.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Ranking.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Ranking.lean": "8e0697f42e80c2a23ccf959644e69ec602ace69afb06f3970da10616f3590e38",
@@ -12946,10 +13064,10 @@
     "Becoming.Return.lean": "371bfe39b12593d05975a8bd874208e69cfaebc30654f014687547d75368cf41",
     "Becoming.Return.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Roles.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Roles.lean": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
+    "Becoming.Roles.lean": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
     "Becoming.Roles.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Space.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Space.lean": "d0d5ef4ce1b7511e72cc8316954d11f4a484af511b6bd3479e52021caf3b5923",
+    "Becoming.Space.lean": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
     "Becoming.Space.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Substitution.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Substitution.lean": "515275299486c90e3a053f02b2f3125a445a2ae5f9146b6195ed4a34e4f68d7a",
@@ -12957,7 +13075,7 @@
     "Becoming.Wholes.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Wholes.lean": "06e31bb7bbb6f7b4766bb634614e6ab8b562e75ee26055b55bbfae27e41567e3",
     "Becoming.Wholes.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "378bac0a8c9540c2165e8e824aa3c396d2de165b3acee50973ad5bff55846031",
+    "Becoming.lean": "48bff94ce9be2770f00b4b15713c9508a3ec9e93326ab2a0fcbd60f03265d6c2",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -12981,10 +13099,10 @@
     "BecomingDescentAxiomAudit.log": "82a812be2d9cec86a619f8f3dc95df73f78d7308522c51634f675e3f5af6b054",
     "BecomingDescentSignatures.lean": "997bf01e337a0519c7e5726cb350b578eaba58208c618f6b00f9a03559693bfa",
     "BecomingDescentSignatures.log": "c3488a76de26312ff4e0f4ee49c5e3d140ba8f30188b212ba55c19a0f324a239",
-    "BecomingDissipationAxiomAudit.lean": "e8f7c6ba949ed3ae0fee69a60b14a852076d9ad6113b3ef42dfa81b5138c031b",
-    "BecomingDissipationAxiomAudit.log": "b45a6a4315a73d68428cf9d54cf90f65ba494f7f18a5412a14f7ce7d760e2d28",
-    "BecomingDissipationSignatures.lean": "4c2df438f9f01efbce53423acae8b223ba844d0fb588acc9ff93a63efaa43e33",
-    "BecomingDissipationSignatures.log": "8dce567b6a5ebbf4342f19124594b629bfbac7b08aa3dcba9530fe518f2d7b90",
+    "BecomingDissipationAxiomAudit.lean": "01a6cdd5464a8e47ad03174088ba64becfc49a6e32687fa58009c2ffe9130097",
+    "BecomingDissipationAxiomAudit.log": "c744d9719a141563d542d363da20e2545f38f64011773b2cf89ed27a30c39b00",
+    "BecomingDissipationSignatures.lean": "4cebc8f4bc38659a8bb32624054a4cc13d1ff4c8b7656a787b99481a1c0d75a3",
+    "BecomingDissipationSignatures.log": "6548ca5d9c99c46c03443a7b8fa048d614df0d1b07ed51988cd41370f2357500",
     "BecomingEvolutionAxiomAudit.lean": "71a7937f5394e39d5cbad0ec0aa409af80a8ef2f2dcbf6ac43631a0d610164e0",
     "BecomingEvolutionAxiomAudit.log": "752af4103aecf657d1a1d761ca0156071b0cd2ecde5ae15e953f5426239aebdc",
     "BecomingEvolutionSignatures.lean": "49cc912150b46bc97907dda06b10461e88dadde1db85e3addac981c05afa25f0",
@@ -13021,18 +13139,18 @@
     "BecomingMetaethicsAxiomAudit.log": "6832a552faf4fc6fcc3c80d410a34edb1ec3d6fda471ff5f540843af580d7eb8",
     "BecomingMetaethicsSignatures.lean": "a54f3a826a9bf9b80595c64404a00991385faf64bebc15669e1e5910c15d25d4",
     "BecomingMetaethicsSignatures.log": "c7ffc457702c496b4bb2ef60bcee47c6be58236127fc4053a59dd8d2ebeec5f2",
-    "BecomingOpennessAxiomAudit.lean": "5c0db67888cc738ee64ece8110b5ef24fc363ebf8a2f57101800570c659ba9b4",
-    "BecomingOpennessAxiomAudit.log": "0ed0d041a854b517111128f2ccf1527517002275e00b33b117857f00a1bec809",
-    "BecomingOpennessSignatures.lean": "3c7a2abfc761aa62cc45f8b7d7c7f497b88a1e3c876583d7b0a6c4f832801c2e",
-    "BecomingOpennessSignatures.log": "b248a3bc87de771a05a71a16fa71f89c1ec1140e79b31810e9b174d0aab51fd4",
+    "BecomingOpennessAxiomAudit.lean": "7b42d99c13284ec02e48b39de88abe8a6ad37c9d12c7d6ec14a843da180901a0",
+    "BecomingOpennessAxiomAudit.log": "b4546b57c679b832a25406fc7d6016296e51585235865052cc8cab6859818cf3",
+    "BecomingOpennessSignatures.lean": "c5ea02fddde7e60e784ae72635d4cb0c3c814304b3e738e03b42a56f27aae68c",
+    "BecomingOpennessSignatures.log": "ed413e12e29a2d211906f453d564557ee371a9bcd4756cd9d8cec06450ea7e0a",
     "BecomingPopulationAxiomAudit.lean": "dbb881cc8e699279c5660590fe0f593b0e021493f96946a8419c3144c0ba17ae",
     "BecomingPopulationAxiomAudit.log": "9005d8afb2a8d81997f2d4debe4ab5a44edd22992a64412d4fa719aec492b090",
     "BecomingPopulationSignatures.lean": "de9094475f935a237e33e6cfabdfb94e138e2f2219583b6f98273c7a92a41ac6",
     "BecomingPopulationSignatures.log": "4f3e47d8914abc330bcd1438e206b1baefaa7a7f521d5df603df5255d40458fd",
-    "BecomingPremisesAxiomAudit.lean": "86fd03c6f08a4e2213403e8f172577378e72e24ee807da52326694c55ecb4bbc",
-    "BecomingPremisesAxiomAudit.log": "cd54421b36bbf72724eb5d83cddff1ee6af79882169ef9630c448d30d023ec3a",
-    "BecomingPremisesSignatures.lean": "d077a3bf50969d9c8cb33c11e7fb3dab7d7a034b3798bc0a02cd49f1c4229515",
-    "BecomingPremisesSignatures.log": "60bfdc22472ec31f7d5d38fc1a290e64ae3f556b1171cdc2fbafa3e20e3bacc7",
+    "BecomingPremisesAxiomAudit.lean": "00aca10f98403f14551417f53ebfb3f8582d12db4e2e546b6f682d3821ac6ee6",
+    "BecomingPremisesAxiomAudit.log": "d2f580b437394222260fa66378a20cca27cb2fb52b858be26c3aa3dd1e7dd9f5",
+    "BecomingPremisesSignatures.lean": "35c35de55cd368cd377d5778eb8c52e4e0062cf4263cb49937328f5c7db5f8e4",
+    "BecomingPremisesSignatures.log": "ec6c22b9559ca31e89741c599c562fce34d85a81d02d10c9b11841f9aa4e03fd",
     "BecomingRankingAxiomAudit.lean": "d381167f20ba17ff58e8d07efa4b633b19f3c23190f5ce3ae4370e847c592c98",
     "BecomingRankingAxiomAudit.log": "f7aff3a5efd318046c9335c3e0f90699b7a01107e5cfe6161a04ae65da8524bc",
     "BecomingRankingSignatures.lean": "fe398198a8e4f32b12b729354d8ec62de13ff7dd9a06d29ee53a1b5dad77cb23",
@@ -13049,16 +13167,16 @@
     "BecomingReturnAxiomAudit.log": "1bdbff7546b47b099bf8ee3ffbfcdc16b7b616160287fa0785c19ea1488c3cb6",
     "BecomingReturnSignatures.lean": "f259c5bea9a407ba08c41809466be43ad069327f61f6f08d8fee936de558e1f8",
     "BecomingReturnSignatures.log": "ad251619d093a3403b0ff7e65ba2eec6040337eeafe384cb014b70edd184b606",
-    "BecomingRolesAxiomAudit.lean": "6ccad119f194f6a3fd481c6d58b34dab373dd5715cdd4f3b698708b8844cb955",
-    "BecomingRolesAxiomAudit.log": "d383d061260959dd9d71870bfd1a4660083962c680273992af33d4e1998da81d",
-    "BecomingRolesSignatures.lean": "560606883201d5e1250d43e1313692ee0284a8262e4e39898a53557a872a7bee",
-    "BecomingRolesSignatures.log": "99b4de2df1360deb31e26c53a5d9cb802e17b3cf685a25fee994f8e1202b4fda",
+    "BecomingRolesAxiomAudit.lean": "9dbf5a7e14514e45a544c3b24a7e71760cedccb0cb44f9d57a8dd54b51d743de",
+    "BecomingRolesAxiomAudit.log": "fab0ade98c4d24775e1cd2f7fc9720f42b0e5f4ad57c91006a9cbbafdf448137",
+    "BecomingRolesSignatures.lean": "8c4c92acd8db9810424edfa776f9a549bef06b4ebd939ca1a6f0bb0e5f759a66",
+    "BecomingRolesSignatures.log": "b28631250afe9f7910d1bb21fc9fc1a72e8cca8009c0f7571527b2bbf2a989c6",
     "BecomingSignatures.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingSignatures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "BecomingSpaceAxiomAudit.lean": "f6e90dacd0d392b656fe39090758a7933ea199e851ae4b19145619e7df6a0efd",
-    "BecomingSpaceAxiomAudit.log": "3cc224b90e344ba4e9a103fef7efd62f05568168670fac4d2dbeb5cc1a6754b0",
-    "BecomingSpaceSignatures.lean": "99837b1e10a7cdf988016a1b4a3cfbe085b060060cd8aba57773bc7155a97b49",
-    "BecomingSpaceSignatures.log": "683d596916f250223bea947bae69455e6dc0b87f3698d82ebc7fa91054dc2b48",
+    "BecomingSpaceAxiomAudit.lean": "de7a00bbcd34af7a1cea059619a70d21fa144077b96148cb8927b25fd854ca08",
+    "BecomingSpaceAxiomAudit.log": "49dd83b8332c9278a24dedd60fde0a0f2ef707f9d36f8b83d1cb67167f1adb99",
+    "BecomingSpaceSignatures.lean": "8aa64355f11339c644324d8df876a0e77fba4a60549109237ff0ba8bacfbf2c3",
+    "BecomingSpaceSignatures.log": "5f9f3b1ca5a5b2e6ecbf4acfc25f584745ba0a38d1d36bebe6ce7ced8e38fa6d",
     "BecomingSubstitutionAxiomAudit.lean": "e827543bf6e96a1546d1b678d5e7d17431cd626de4a568f1681bfddcde44fa59",
     "BecomingSubstitutionAxiomAudit.log": "62afa018090be3056b9e3ba09fcb326b6ac2e55bb3770da128e09b0689beb45e",
     "BecomingSubstitutionSignatures.lean": "32178f2b383de8bb10e20e1cd56b9b0be081542d3dee0dd5a7fc867300d601f0",
@@ -13078,7 +13196,7 @@
     "CutCoverageAuditAxiomAudit.lean": "da5e28aa8f3bc517685da82f175af0040e10a305086a24da5ef60889d6262cd5",
     "CutCoverageAuditAxiomAudit.log": "afa6c35b8a09d115b7d3ad813255fc7eaa5a6f75c93e29b1e7588dc437868e8e",
     "EnvironmentAudit.lean": "420f85b14528ce054087131a212c1c881294b396992b9f6a221a294a26bc77f0",
-    "EnvironmentAudit.log": "3f7579d21945a2c38d64687859b7fd0cee12bb0f97ea1a916dd479582d9056ac",
+    "EnvironmentAudit.log": "2a15e10b8582caccc7bcc1dd4aa18e08700a0f89a1f324a034542820b3893b45",
     "EvaluatorGrounding.lean": "a002d04a7c7334830a30f22d6c16f2ce6d7d918bc077b132281208b847b80b2b",
     "EvaluatorGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "EvaluatorGroundingAxiomAudit.lean": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
@@ -13135,7 +13253,7 @@
     "WholeGroundCoverageAxiomAudit.lean": "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80",
     "WholeGroundCoverageAxiomAudit.log": "a6bc2bb42c8090e42ba9558b7cf68d8d10a4d635df2042f8ff00d3b43b1e3ba1",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
-    "check_becoming.py": "ed60a70d4220c4f0f9a352c762f02cdf10a372ee674d7210ffe0a18b7e1d378b",
+    "check_becoming.py": "271ff8c8fc091069577a4a7925dfc7a6523f51ce5a14d66ea4c5d32d905bc57a",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

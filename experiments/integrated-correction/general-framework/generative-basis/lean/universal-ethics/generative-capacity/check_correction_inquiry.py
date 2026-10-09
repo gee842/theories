@@ -30,6 +30,8 @@ TOOLCHAIN = "leanprover/lean4:v4.30.0-rc2"
 LEAN = Path.home() / ".elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean"
 MATHLIB_REVISION = "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa"
 EXTERNAL = {"Init", "Std", "Lean", "Mathlib"}
+# Seconds allowed for each Lean run; a heavily loaded machine may need more.
+TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
 
 SCOPE = (
     "On the Becoming core, a policy on observations implements correction over admitted histories "
@@ -124,7 +126,7 @@ def main():
 
             def run(args, log):
                 p = subprocess.run([str(LEAN)] + args, cwd=work, env=env, text=True,
-                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=900)
+                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=TIMEOUT)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
                 assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout

@@ -5,8 +5,9 @@ import Becoming.Premises
 
 `Becoming.Space` brings a finite, balanced, dissipative world whose arising is embodied to
 rest, and in a finite world arising recurs exactly when ceasing does. This module states
-what does the work: not finiteness but enclosure around what stands, with a census of
-what is active, and for arising and ceasing to recur together, a bound on that census.
+what does the work. The world need not be finite: what brings it to rest is finitely many
+standing at each step and enclosure around them from some step on, with a census of what
+is active; for arising and ceasing to recur together, a bound on that census.
 Under balance and dissipation, across a step whose exchange, together with whatever
 stands before or after it, lies within finitely many conditions, the total standing does
 not rise, and it falls whenever any condition's standing changes: a rise is given to, and
@@ -36,23 +37,36 @@ giving needs uptake there; a fall is taken from.
   (`Web.StandingCensus.over_stretch`), ceasing to stand recurring needs coming to stand
   recurring, and with a bound from some step on the two recur together
   (`Web.StandingCensus.coming_of_ceasing`, `Web.StandingCensus.coming_iff_ceasing`).
-* **The rest theorem.** A world with a census of what is active and of what stands, whose
-  arising is embodied, with a balanced, dissipative flow, in which every step from some
-  step on is enclosed around what stands, comes to rest: neither arising nor ceasing
-  recurs (`World.comes_to_rest`). Nothing embodied keeps arising, since standing stops
-  changing; nothing keeps ceasing, by the census law. The census of what is active is
-  needed: `dusk` meets every other premise and keeps ceasing (`World.rest_needs_census`).
+* **The rest theorem.** Where what stands is listed, whatever arises is embodied, the
+  flow balances and dissipates, and every step from some step on is enclosed around what
+  stands, arising stops, since standing stops changing (`World.arising_stops`). With a
+  census of what is active as well, ceasing stops too, by the census law: the world comes
+  to rest (`World.comes_to_rest`).
+* **Each census does work.** Without the census of what is active, ceasing can go on:
+  `dusk` meets every other premise and keeps ceasing (`World.rest_needs_census`). Without
+  the census of what stands, arising can go on: in `kindling` what is active is listed,
+  whatever arises is embodied, the flow balances and dissipates and every step is
+  enclosed around every relatum ever active, yet every unburnt fuel stands; in `ember`,
+  the same flow with every relatum embodied, every step is enclosed and nothing is listed
+  (`World.rest_needs_standing`).
 * **Its cases.** A finite world lists what stands and is enclosed around it at every step
   (`World.Finite.standing`), so the finite rest of `Becoming.Space` is a case
   (`World.Finite.comes_to_rest`). Where every relatum is embodied, the census of what is
-  active lists what stands (`World.rests_around`), and where equality of relata is
-  decided, enclosure from some step on suffices (`World.rests_enclosed`). Read the other
-  way, arising without end in such a world needs, at arbitrarily late steps, a step not
-  enclosed: exchange beyond every finite family (`World.arising_opens`).
-* **Openness cannot be dropped.** The sides of `Handing`, also taking a unit from each of
-  infinitely many ground relata and giving it back at every step, meet all eight premises
-  of `Becoming.Premises` and arise without end. No step is enclosed, so dissipation,
-  which binds only at enclosed steps, binds at none (`World.exposed_world`).
+  active lists what stands (`World.rests_around`), and enclosure from some step on
+  suffices, with no decision of equality: an enclosed step is not not enclosed around
+  what stands, and the totals compared are numbers (`World.rests_enclosed`). Read the
+  other way, arising without end in such a world is incompatible with every step from
+  some step on being enclosed: it exchanges beyond every finite family
+  (`World.arising_opens`).
+* **The premises decide neither enclosure nor openness.** The sides of `Handing`, also
+  taking a unit from each of infinitely many ground relata and giving it back at every
+  step, meet all eight premises of `Becoming.Premises` and arise without end. No step is
+  enclosed, so dissipation, which binds only at enclosed steps, binds at none
+  (`World.exposed_world`); nothing depends on anything, so activity needing support and
+  bounded transmission hold vacuously too. Their openness is exchange at zero net: the
+  total standing stays at one, and the ground relata stand at nothing
+  (`World.exposed_standing`). Mutualists meet the eight with every step enclosed and come
+  to rest (`World.openness_contingent`).
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
@@ -144,6 +158,15 @@ theorem Enclosed.aroundStanding [DecidableEq C] {t : Nat} (enclosed : L.Enclosed
     ⟨es, distinct, fun c mem => within c (mem_append_left _ mem),
      fun c mem => within c (mem_append_right _ mem), closed⟩
 
+/-- Without decided equality, a step enclosed by some family is not not enclosed around
+what stands (`Enclosed.around_not_not`). -/
+theorem Enclosed.aroundStanding_not_not {t : Nat} (enclosed : L.Enclosed t)
+    (stand : Nat → List C) : ¬¬ L.AroundStanding stand t :=
+  fun no => enclosed.around_not_not (stand t ++ stand (t + 1))
+    fun ⟨es, distinct, within, closed⟩ => no ⟨es, distinct,
+      fun c mem => within c (mem_append_left _ mem),
+      fun c mem => within c (mem_append_right _ mem), closed⟩
+
 /-- A member of a family dissipated on across the step falling lowers the family's stock:
 it is taken from. -/
 theorem fall_lowers_on (balances : L.Balances W) {ds : List C} {t : Nat}
@@ -190,17 +213,21 @@ theorem change_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
       (Nat.lt_of_lt_of_le lowers (Nat.le_of_eq (census.stock_eq distinct before).symm))
 
 /-- Standing comes to rest: where every step from some step on is enclosed around what
-stands, no condition's standing changes at arbitrarily late steps. -/
+stands, no condition's standing changes at arbitrarily late steps. It is enough that each
+of those enclosures is not refuted, since what the proof compares are numbers, whose order
+is decided. -/
 theorem stills (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {T : Nat}
-    (around : ∀ t, T ≤ t → L.AroundStanding stand t) :
+    (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
   fun changing => falls_finitely (fun t => W.stock (stand t) t) T
-    (fun t later => standing_never_rises balances dissipative census (around t later))
+    (fun t later => Decidable.of_not_not fun rises => around t later fun enclosed =>
+      rises (standing_never_rises balances dissipative census enclosed))
     fun N => match changing (N + T) with
     | ⟨t, _, later, changes⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        change_lowers balances dissipative census
-          (around t (Nat.le_trans (Nat.le_add_left T N) later)) changes⟩
+        Decidable.of_not_not fun stays =>
+          around t (Nat.le_trans (Nat.le_add_left T N) later) fun enclosed =>
+            stays (change_lowers balances dissipative census enclosed changes)⟩
 
 end Flow
 
@@ -334,20 +361,28 @@ theorem procession_world :
 
 variable {w : World}
 
+/-- Arising stops where what stands is listed, whatever arises is embodied, the flow
+balances and dissipates, and every step from some step on is enclosed around what stands:
+no standing changes at arbitrarily late steps (`Flow.stills`), and an embodied relatum
+arising comes to stand. Ceasing need not stop (`rest_needs_census`). -/
+theorem arising_stops {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
+    (embodied : w.ArisingEmbodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
+    {T : Nat} (around : ∀ t, T ≤ t → w.flow.AroundStanding stand t) : ¬ w.ArisingRecurs :=
+  fun arising => Flow.stills balanced dissipative standing
+    (fun t later => not_not_intro (around t later)) fun N => match arising N with
+    | ⟨t, x, later, arises⟩ =>
+      ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
+
 /-- The rest theorem. A world with a census of activity and of what stands, whose arising
 is embodied, with a balanced, dissipative flow, in which every step from some step on is
-enclosed around what stands, comes to rest. No standing changes at arbitrarily late steps
-(`Flow.stills`), so nothing embodied arises at arbitrarily late steps, and by the census
-law nothing ceases at arbitrarily late steps either. -/
+enclosed around what stands, comes to rest. Arising stops (`arising_stops`), and by the
+census law ceasing stops too. -/
 theorem comes_to_rest [decided : ∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
     {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
     (embodied : w.ArisingEmbodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
     {T : Nat} (around : ∀ t, T ≤ t → w.flow.AroundStanding stand t) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  have quiet : ¬ w.ArisingRecurs := fun arising =>
-    Flow.stills balanced dissipative standing around fun N => match arising N with
-    | ⟨t, x, later, arises⟩ =>
-      ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
+  have quiet := arising_stops standing embodied balanced dissipative around
   ⟨quiet, fun ceasing => quiet (arising_of_ceasing counted ceasing)⟩
 
 /-- A finite world lists what stands at each step, and every step is enclosed around it,
@@ -419,18 +454,25 @@ theorem rests_around {alive : Nat → List w.Relatum} (census : w.web.Census ali
   comes_to_rest (decided := fun t x => decidable_of_iff _ (embodied x t).symm) ⟨alive, census⟩
     (standingCensus census embodied) embodied.arising balanced dissipative around
 
-/-- Where equality of relata is decided, enclosure from some step on suffices. -/
-theorem rests_enclosed [DecidableEq w.Relatum] (counted : w.Counted) (embodied : w.Embodied)
+/-- Enclosure from some step on suffices, with no decision of equality: each enclosed step
+is not not enclosed around what stands, which is enough for standing to come to rest; an
+embodied relatum arising rises, and one ceasing falls. -/
+theorem rests_enclosed (counted : w.Counted) (embodied : w.Embodied)
     (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
     (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   match counted with
-  | ⟨_, census⟩ => rests_around census embodied balanced dissipative
-      fun t later => (enclosed t later).aroundStanding _
+  | ⟨alive, census⟩ =>
+    have still := Flow.stills balanced dissipative (standingCensus census embodied)
+      fun t later => (enclosed t later).aroundStanding_not_not alive
+    ⟨fun arising => still fun N => match arising N with
+      | ⟨t, x, later, arises⟩ => ⟨t, x, later, .inl (rises_of_arises embodied arises)⟩,
+     fun ceasing => still fun N => match ceasing N with
+      | ⟨t, x, later, ceases⟩ => ⟨t, x, later, .inr (falls_of_ceases embodied ceases)⟩⟩
 
 /-- So arising without end, in a world with a census whose relata are embodied and
-whose flow balances and dissipates, needs at arbitrarily late steps a step not enclosed:
-exchange beyond every finite family. -/
-theorem arising_opens [DecidableEq w.Relatum] (counted : w.Counted)
+whose flow balances and dissipates, is incompatible with every step from any point on
+being enclosed: the world exchanges beyond every finite family. -/
+theorem arising_opens (counted : w.Counted)
     (embodied : w.Embodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
     (arising : w.ArisingRecurs) (T : Nat) : ¬ ∀ t, T ≤ t → w.flow.Enclosed t :=
   fun enclosed => (rests_enclosed counted embodied balanced dissipative enclosed).1 arising
@@ -515,6 +557,18 @@ theorem census : web.Census fun t => [.side (Handing.holder t)] :=
         fun (mem : Relatum.ground n ∈ [Relatum.side (Handing.holder t)]) => match mem with
           | .tail _ no => (nomatch no)⟩⟩
 
+/-- The holder stands at one. -/
+theorem holder_one : ∀ t, Handing.stands (Handing.holder t) t = 1
+  | 0 => rfl
+  | 1 => rfl
+  | t + 2 => (Handing.stands_two (Handing.holder t) t).trans (holder_one t)
+
+/-- And stands at nothing after the step. -/
+theorem holder_after : ∀ t, Handing.stands (Handing.holder t) (t + 1) = 0
+  | 0 => rfl
+  | 1 => rfl
+  | t + 2 => (Handing.stands_two (Handing.holder t) (t + 1)).trans (holder_after t)
+
 end Exposed
 
 namespace World
@@ -542,6 +596,114 @@ theorem exposed_world :
    fun N => match Handing.recurs true N with
     | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩,
    Exposed.open_at⟩
+
+/-- What stands in `exposed` is listed, the holder alone: the total standing is one at every
+step, and the holder falls across every step. The world is not finite; what is unbounded
+is the number of relata it exchanges with, each standing at nothing (the tenth review's
+probe). -/
+theorem exposed_standing :
+    exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Handing.holder t)]) ∧
+    (∀ t, exposed.web.stock [Exposed.Relatum.side (Handing.holder t)] t = 1) ∧
+    (∀ t, exposed.web.Falls t (Exposed.Relatum.side (Handing.holder t))) ∧
+    ¬ exposed.Finite :=
+  ⟨standingCensus Exposed.census fun _ _ => Iff.rfl,
+   fun t => show Handing.stands (Handing.holder t) t + 0 = 1 from Exposed.holder_one t,
+   fun t => show Handing.stands (Handing.holder t) (t + 1) < Handing.stands (Handing.holder t) t
+     from Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq (Exposed.holder_after t))
+       Nat.zero_lt_one) (Nat.le_of_eq (Exposed.holder_one t).symm),
+   fun ⟨all, _, every⟩ => Exposed.outside all (every _)⟩
+
+/-- The eight premises decide neither enclosure nor openness: `exposed` meets them with no
+step enclosed and keeps arising, and mutualists meet them with every step enclosed and do
+not keep arising (the tenth review's probe). -/
+theorem openness_contingent :
+    (exposed.Premised ∧ (∀ t, ¬ exposed.flow.Enclosed t) ∧ exposed.ArisingRecurs) ∧
+    (mutualism.Premised ∧ (∀ t, mutualism.flow.Enclosed t) ∧ ¬ mutualism.ArisingRecurs) :=
+  ⟨⟨exposed_world.1, exposed_world.2.2, exposed_world.2.1⟩,
+   ⟨mutualism_premised, mutualism_finite.enclosed, mutualism_world.2.1⟩⟩
+
+end World
+
+/-! ## Finitely many standing cannot be dropped -/
+
+namespace Kindling
+
+/-- Which side a side relatum is. -/
+def sideOf : Relatum → Bool
+  | .side x => x
+  | .fuel _ => false
+
+/-- The index of a fuel. -/
+def index : Relatum → Nat
+  | .side _ => 0
+  | .fuel n => n
+
+/-- Every fuel stands at the first step. -/
+theorem fuel_stands : ∀ n, 0 < web.level 0 (.fuel n)
+  | 0 => Nat.zero_lt_two
+  | _ + 1 => Nat.zero_lt_two
+
+/-- The holder is the one active relatum. -/
+theorem census : web.Census fun t => [Relatum.side (Handing.holder t)] :=
+  fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun x => match x with
+    | .side b => ⟨fun active => Eq.subst
+          (motive := fun c => Relatum.side c ∈ [Relatum.side (Handing.holder t)])
+          ((Exposed.stands_iff b t).mp active).symm (.head _),
+        fun mem => (Exposed.stands_iff b t).mpr (match mem_cons_cases mem with
+          | .inl same => congrArg sideOf same
+          | .inr no => nomatch no)⟩
+    | .fuel _ => ⟨fun no => False.elim no, fun mem => match mem with
+        | .tail _ no => (nomatch no)⟩⟩
+
+/-- No list holds every fuel: a determination holding of every fuel lists none. -/
+theorem unlisted {holds : Relatum → Prop} (l : List Relatum)
+    (listed : ∀ x, holds x ↔ x ∈ l) (fuels : ∀ n, holds (.fuel n)) : False :=
+  beyond_not_mem (l.map index)
+    (mem_map_of (g := index) ((listed (.fuel (beyond (l.map index)))).mp (fuels _)))
+
+end Kindling
+
+namespace Ember
+
+/-- `Kindling`'s levels, each relatum active exactly while it stands, and no dependence. -/
+def web : Web Kindling.Relatum Kindling.Relatum where
+  level := Kindling.web.level
+  active t c := 0 < Kindling.web.level t c
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+end Ember
+
+namespace World
+
+/-- `Kindling`'s flow with every relatum active while it stands (the tenth review's
+probe). -/
+def ember : World :=
+  ⟨Kindling.Relatum, Kindling.flow, Ember.web⟩
+
+/-- The rest theorem needs its census of what stands. In `kindling` what is active is
+listed, whatever arises is embodied, the flow balances and dissipates, and every step is
+enclosed around both sides, every relatum ever active; arising recurs, and what stands
+cannot be listed, since every unburnt fuel stands. In `ember`, the same flow with every
+relatum embodied, every step is enclosed and arising recurs; nothing active can be
+listed (the tenth review's probes). -/
+theorem rest_needs_standing :
+    (kindling.Counted ∧ kindling.ArisingEmbodied ∧ kindling.Balanced ∧
+      kindling.Dissipative ∧
+      (∀ t, kindling.flow.Around [Kindling.Relatum.side true, .side false] t) ∧
+      kindling.ArisingRecurs ∧ ∀ stand, ¬ kindling.web.StandingCensus stand) ∧
+    ((∀ t, ember.flow.Enclosed t) ∧ ember.Embodied ∧ ember.Balanced ∧ ember.Dissipative ∧
+      ember.ArisingRecurs ∧ ¬ ember.Counted) :=
+  ⟨⟨⟨_, Kindling.census⟩, kindling_arising, kindling_world.1, kindling_world.2.1,
+    Kindling.around, kindling_world.2.2.2.1,
+    fun stand census => Kindling.unlisted (stand 0) (census 0).2 Kindling.fuel_stands⟩,
+   ⟨fun t => match Kindling.around t with
+     | ⟨es, distinct, _, closed⟩ => ⟨es, distinct, closed⟩,
+    fun _ _ => Iff.rfl, Kindling.balances, Kindling.dissipative,
+    fun N => match Kindling.kindling.2.2.2.2.2 true N with
+     | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩,
+    fun ⟨alive, census⟩ => Kindling.unlisted (alive 0) (census 0).2 Kindling.fuel_stands⟩⟩
 
 end World
 

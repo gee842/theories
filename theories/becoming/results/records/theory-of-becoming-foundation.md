@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [theory-of-becoming-foundation.json](theory-of-becoming-foundation.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-09T13:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-09T15:23:01+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -36,7 +36,7 @@ Canonical source: [BECOMING-FOUNDATION.md](../../chapters/BECOMING-FOUNDATION.md
 - **interpretive**: [control-coherence-loss](control-coherence-loss.md). 提供已检查的作用状态接口：局部损失经更广可逆交互产生；支持约化可用与保留共同关系的区别，不提供普遍根基。 / Provides a checked operative state interface in which local loss arises through a reversible wider interaction; supports the distinction between reduced access and retained joint relations, not universal grounding.
 - Related, not a proved adapter / 关联而非已证转换: [endpoint-loss-and-return](endpoint-loss-and-return.md). 并发结构研究保留端点损失及配置身份范围；不声称新的物理组合。 / Concurrent structural research retains endpoint loss and configuration-identity scope; no new physical composition is claimed.
 - Related, not a proved adapter / 关联而非已证转换: [derived-history-law-exactness](derived-history-law-exactness.md). 信用给定历史范围内派生局部规律的成果；不从有限词可行性精确推出普遍操作覆盖。 / Credits the derived local law at its supplied-history scope; does not infer universal operational coverage from exact finite-word feasibility.
-- Related, not a proved adapter / 关联而非已证转换: [space-and-its-parts](space-and-its-parts.md). 在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界。这定位了整体主张的实质剩余，但不完成它。 / On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others. This locates the whole claim's substantive remainder without discharging it.
+- Related, not a proved adapter / 关联而非已证转换: [space-and-its-parts](space-and-its-parts.md). 在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界，把储备换为普查与有界传递的八个已示为彼此独立。这定位了整体主张的实质剩余，但不完成它。 / On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others, and eight of which, replacing the reserve with a census and bounded transmission, are shown independent. This locates the whole claim's substantive remainder without discharging it.
 - Related, not a proved adapter / 关联而非已证转换: [coming-and-ceasing-keep-pace](coming-and-ceasing-keep-pace.md). 生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化（开始成立与不再成立）的三种读法；在活动可判定的有限家族中，开始成立与不再成立一同复现，不加关于展开的前提。 / Arising and ceasing, forming and dissolving, and coming to stand and ceasing to stand are one change, coming to be and ceasing to be, read three ways; in a finite family whose determinations are decided, coming to be and ceasing to be recur together, with no premise about the unfolding.
 
 ## 来源与既有回执 Sources and existing receipts
@@ -48,12 +48,13 @@ Canonical source: [BECOMING-FOUNDATION.md](../../chapters/BECOMING-FOUNDATION.md
 | provenance | [2026-10-09-theory-of-becoming-continuation.md](../../../../sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md) | — |
 | provenance | [2026-10-08-theory-of-becoming-priority.md](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) | — |
 | provenance | [2026-10-09-becoming-whole-generative-manifold.md](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) | — |
+| review | [BECOMING-P23C-P24-P25-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-建立从确定表达通向整体之实际关系构成的连接及其推论根据。Becoming脊柱已陈述在其表示中对每个世界成立的规律，并以前提划出部分，其中七个前提已示为有满足与不满足它的世界；剩下的是每个生成都能如此表示、且整体确由关系构成而不只是被一致陈述的根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。 / Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. The Becoming spine now states laws that hold of every world in its representation and carves parts by premises, seven of which are shown met by some worlds and not by others; what remains is the warrant that every becoming is so representable and that the whole is relationally constituted, not only consistently stated. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.
+建立从确定表达通向整体之实际关系构成的连接及其推论根据。Becoming脊柱已陈述在其表示中对每个世界成立的规律，并以前提划出部分，其中七个前提已示为有满足与不满足它的世界，八个已示为彼此独立；剩下的是每个生成都能如此表示、且整体确由关系构成而不只是被一致陈述的根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。 / Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. The Becoming spine now states laws that hold of every world in its representation and carves parts by premises, seven of which are shown met by some worlds and not by others and eight of which are shown independent; what remains is the warrant that every becoming is so representable and that the whole is relationally constituted, not only consistently stated. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.
 
 Aliases / 别名: —
 
@@ -66,3 +67,4 @@ Aliases / 别名: —
 - 2026年10月9日：第19节将整体／manifold修正落实到完成表与中心推论，撤回残留的普遍生成性门槛。直接整体包容论证仍缺通向关系构成的连接；黑格尔比较区分范畴与因果机制。无新增定理或成果身份。 / 9 October 2026: §19 applies the whole/manifold correction to the actual completion table and central inference, removing the surviving universal-generativity gate. The direct whole-inclusion argument remains incomplete at the passage to relational constitution; the Hegel comparison distinguishes category from causal mechanism. No new theorem or result identity.
 - 2026年10月9日：P23把Becoming脊柱的整体规律及前提划出的部分记入完成审计各行的证据，并链接理论的完整陈述。通向关系构成的连接以及每个生成能否被如此表示仍开放；本记录不声称新定理或新成果身份。 / 9 October 2026: P23 enters the Becoming spine's laws of the whole and its parts carved by premises as evidence in each row of the completion audit, and links the theory stated in full. The passage to relational constitution and the representability of every becoming remain open; this record claims no new theorem or result identity.
 - 2026-10-09 P23c：按第九次独立审查（BECOMING-P18B-P23-REVIEW.md）更正，见整合文档 §34。related 中的用语改为章节用语，写明可判定性（M10、M2）。 / 2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note. Terms in related follow the chapter, with decidability stated (M10, M2).
+- 2026-10-09 P25b：按第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）更正，见整合文档 §38。写明七个与八个前提的关系（O11(f)）。 / 2026-10-09 P25b: corrected after the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md); see section 38 of the integration note. States how the seven and the eight premises relate (O11(f)).

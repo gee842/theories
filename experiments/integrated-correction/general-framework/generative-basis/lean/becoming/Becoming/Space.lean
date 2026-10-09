@@ -26,8 +26,9 @@ names that describe activity and do not claim Ren's words.
   `Becoming.Evolution`, are stated of every web and every amount with no premise about
   the unfolding, so they hold throughout the space. Read of worlds: in a finite world
   whose activity is decided, arising recurs exactly when ceasing does
-  (`World.arising_iff_ceasing`). Decidability is part of the representation: over every
-  world without it, this law is excluded middle (`World.law_decides`).
+  (`World.arising_iff_ceasing`). Decidability is part of the representation: asked of
+  every world without it, this law implies excluded middle (`World.law_decides`);
+  classically every activity is decided.
 * **Finiteness separates them.** Where the relata are infinitely many, either can recur
   without the other (`World.separate`, from `Dawn` and `Dusk`); that these worlds are
   infinite follows from the law.
@@ -39,10 +40,15 @@ names that describe activity and do not claim Ren's words.
   with every event living and with some event not living (`World.living_crosses`): two
   sides handing one standing back and forth, the same with a grazer drawing down a pool
   another relatum depends on, mutualists active throughout, and a parent drawing a pool
-  down. Whether events are living is not decided by arising and ceasing. The sides
+  down. Whether events are living is not decided by arising and ceasing; with activity
+  decided, the same holds of ceasing (`World.living_crosses_ceasing`). The sides
   drawing each on its own standing (`spending`) also has an event that is not living, but
   only on the stepwise verdict about drawing on a self-bearing relatum at its ending,
-  which is Ren's to choose.
+  which is Ren's to choose. The grazer's event lies outside that choice as worded, yet
+  the browser whose dependence it undermines ends at that step, as it must where
+  activity needs support (`World.grazing_browser_ends`); whether undermining that
+  co-occurs with the ending of the relatum depending counts against living is a question
+  of the same kind.
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
   whose activity is decided and in which whatever arises is embodied, neither arising nor
   ceasing recurs (`World.rests`). Each premise is needed (`World.rests_needs`): a world
@@ -154,7 +160,7 @@ theorem ceasingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
 /-! ## Laws of the whole -/
 
 /-- In a finite world whose activity is decided, arising recurs exactly when ceasing does.
-Decidability is part of the representation: without it the law is excluded middle
+Decidability is part of the representation: without it the law implies excluded middle
 (`law_decides`). -/
 theorem arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
     w.ArisingRecurs ↔ w.CeasingRecurs :=
@@ -594,6 +600,12 @@ theorem grazing_finite : grazing.Finite :=
     | .browser => .tail _ (.tail _ (.head _))
     | .side x => Grazing.side_mem x⟩
 
+instance grazing_decided : ∀ t x, Decidable (grazing.web.active t x)
+  | t, .side y => Nat.decLt 0 (Handing.stands y t)
+  | _, .pool => isFalse id
+  | t, .grazer => Nat.decEq t 0
+  | t, .browser => Nat.decEq t 0
+
 theorem grazing_arising : grazing.ArisingRecurs :=
   fun N => match Handing.recurs true N with
   | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩
@@ -656,11 +668,11 @@ theorem grazing_not_self :
     | .browser, no => False.elim no,
    fun _ active => active, Nat.le_refl 1⟩
 
-/-- A finite world in which arising recurs and not every event is living, whatever is
-chosen about drawing at an ending: the grazer's event at the first step undermines the
-browser's dependence on the pool, which is not the drawer and never active. Activity needs
-support, the flow balances, and only active relata give, and take only what they draw
-on. -/
+/-- A finite world in which arising recurs and not every event is living, outside the
+choice about drawing on a self-bearing relatum at its own ending: the grazer's event at
+the first step undermines the browser's dependence on the pool, which is not the drawer
+and never active. Activity needs support, the flow balances, and only active relata give,
+and take only what they draw on. -/
 theorem grazing_world :
     grazing.Finite ∧ grazing.ArisingRecurs ∧ ¬ grazing.Living ∧ grazing.Dependent ∧
     grazing.Balanced ∧ grazing.Acting ∧ grazing.Taking :=
@@ -670,6 +682,15 @@ theorem grazing_world :
      ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 2, Nat.lt_succ_self 1⟩,
      Nat.lt_succ_self 1⟩,
    grazing_dependent, grazing_balanced, grazing_acting, grazing_taking⟩
+
+/-- The browser, whose dependence the grazer's event undermines, is not active after that
+step: activity needs support, and its dependence persists at the same need
+(`Web.Dependent.inactive_below`). So the undermining co-occurs with the browser's ending,
+as every undermining of a dependence persisting unchanged must where activity needs
+support. -/
+theorem grazing_browser_ends : ¬ grazing.web.active 1 .browser :=
+  Web.Dependent.inactive_below grazing_dependent (t := 0) (c := .pool) (Nat.lt_succ_self 1)
+    trivial (Nat.le_refl 2)
 
 namespace Leaking
 
@@ -756,7 +777,7 @@ theorem undecided_world (Q : Prop) : (undecided Q).Finite ∧ (undecided Q).Aris
   ⟨⟨[()], ⟨fun no => (nomatch no), trivial⟩, fun () => .head _⟩,
    fun N => ⟨Undecided.four N, (), Undecided.le_four N, Undecided.arises_at Q N⟩⟩
 
-/-- Without decidability the finite-world law is excluded middle: if in every finite world
+/-- Without decidability the finite-world law implies excluded middle: if in every finite world
 in which arising recurs ceasing also recurs, every proposition is decided. So
 `arising_iff_ceasing` needs its decidability, which classically always holds and is a
 logical commitment of the representation, not a premise about any unfolding. -/
@@ -814,6 +835,21 @@ theorem living_crosses :
    ⟨grazing_finite, grazing_arising, grazing_world.2.2.1⟩,
    ⟨mutualism_finite, mutualism_world.2.1, mutualism_world.2.2.2.1⟩,
    ⟨drawdown_finite, drawdown_world.2.1, drawdown_world.2.2.2.1⟩⟩
+
+/-- Living crosses ceasing too: these finite worlds have their activity decided, so ceasing
+recurs exactly where arising does (the tenth review's probe). -/
+theorem living_crosses_ceasing :
+    (handing.Finite ∧ handing.CeasingRecurs ∧ handing.Living) ∧
+    (grazing.Finite ∧ grazing.CeasingRecurs ∧ ¬ grazing.Living) ∧
+    (mutualism.Finite ∧ ¬ mutualism.CeasingRecurs ∧ mutualism.Living) ∧
+    (drawdown.Finite ∧ ¬ drawdown.CeasingRecurs ∧ ¬ drawdown.Living) :=
+  ⟨⟨handing_finite, handing_world.2.2.1, handing_world.2.2.2.1⟩,
+   ⟨grazing_finite, (arising_iff_ceasing grazing_finite).mp grazing_arising,
+    grazing_world.2.2.1⟩,
+   ⟨mutualism_finite, mutualism_world.2.2.1, mutualism_world.2.2.2.1⟩,
+   ⟨drawdown_finite,
+    fun ceasing => drawdown_world.2.1 ((arising_iff_ceasing drawdown_finite).mpr ceasing),
+    drawdown_world.2.2.2.1⟩⟩
 
 /-- Each premise of `rests` is needed: without finiteness, dissipation, balance or
 embodiment, arising can recur. The world failing balance takes part in exchange at every

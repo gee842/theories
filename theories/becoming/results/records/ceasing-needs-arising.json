@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T14:34:00+00:00",
+  "reviewed_at_utc": "2026-10-09T15:23:01+00:00",
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出（Listed），且每步可判定时，在任意晚的步有成员不再成立，就在任意晚的步有成员开始成立（Listed.coming_of_ceasing）。证明：从某步 N 起，一次不再成立若此前没有开始成立，那么其后成立的都在 N 时成立，不再成立者不在其中，列表比 N 时短（Listed.comes_or_held、Listed.comes_or_fewer）；列表不能永远变短，所以 N 之后必有开始成立（Listed.comes_within）。普查就是活动的列出（Web.Census）：在普查之下，止息复现需要生起复现（Web.arising_of_ceasing）；读于世界：有普查、活动可判定的世界中，止息复现就有生起复现（World.arising_of_ceasing）。读于水平：所立者的普查（Web.StandingCensus）之下，不再作为条件而在的复现需要开始作为条件而在的复现（Web.StandingCensus.coming_of_ceasing）。读于依存：每步的依存被列出（Web.DependenceCensus）时，消解复现需要形成复现（Web.DependenceCensus.forming_of_dissolving）。反之不然：dawn 有普查，生起复现而从不止息；dusk 止息复现而没有任何生起，所以由这一规律，它没有普查（World.census_one_way）。逆命题在列表有界时成立，见 bounded-census-keeps-pace。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided at each step, members ceasing to hold at arbitrarily late steps need members coming to hold at arbitrarily late steps (Listed.coming_of_ceasing). The proof: from some step N on, a ceasing not preceded by a coming to be leaves only members that held at N, without the one that ceased, so the list is shorter than at N (Listed.comes_or_held, Listed.comes_or_fewer); the list cannot shorten forever, so something comes to be after N (Listed.comes_within). A census is the listing of activity (Web.Census): under a census, ceasing recurring needs arising recurring (Web.arising_of_ceasing); read of worlds, in a world with a census whose activity is decided, ceasing recurs only where arising recurs (World.arising_of_ceasing). Read of standing: under a census of what stands (Web.StandingCensus), ceasing to stand recurring needs coming to stand recurring (Web.StandingCensus.coming_of_ceasing). Read of dependence: where the dependences of each step are listed (Web.DependenceCensus), dissolving recurring needs forming recurring (Web.DependenceCensus.forming_of_dissolving). Not conversely: dawn has a census, and arising recurs in it while nothing ever ceases; dusk keeps ceasing while nothing arises, so by this law it has no census (World.census_one_way). The converse holds where the list is bounded; see bounded-census-keeps-pace. No ethical premise and no Lean axiom is used."
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "§26 的规律说，有限家族中开始成立复现恰当不再成立复现（coming_recurs_iff、Web.unceasing_iff）；关系项无限多时两者分离（Dawn、Dusk）。本结果说明分离只在一个方向上需要无限：每步只有有限多个成立时，不再成立复现仍需要开始成立复现，而开始成立复现不需要不再成立复现。这一规律对每步其成立者被列出的任何规定成立，活动与水平是它的两种读法，与 §26 中同一种变化读于活动、依存与水平相应。作者的读法（AI 论证）：在每步有限的展开中，没有只灭不生的不息；但可以有只生不灭的不息，只要成员总共无限多。这是活动与水平的读法，不是 Ren 的“生成的”“退化的”，也不说止息是好的或坏的。本结果的一个用处是静止定理（continued-change-needs-openness 的 World.comes_to_rest）：那里生起停止由水平的规律给出，止息停止由本规律给出，所以只要求生起者体现。",
-    "en": "Section 26's law says that in a finite family coming to be recurs exactly when ceasing to be does (coming_recurs_iff, Web.unceasing_iff); with infinitely many relata the two separate (Dawn, Dusk). This result shows that the separation needs infinity in one direction only: with finitely many holding at each step, recurring ceasing to be still needs recurring coming to be, while recurring coming to be does not need recurring ceasing to be. The law holds of any determination whose holders are listed at each step; activity and standing are two readings of it, matching section 26's one change read of activity, dependence and standing. The author's reading (an AI argument): in an unfolding finite at each step there is no endless ceasing without arising; there can be endless arising without ceasing, provided the members are infinitely many in all. This is a reading of activity and standing, not Ren's generative and degenerative, and it does not make ceasing good or bad. One use of the result is the rest theorem (World.comes_to_rest of continued-change-needs-openness): there arising stops by the law of standing and ceasing stops by this law, so only whatever arises needs to be embodied."
+    "zh": "§26 的规律说，有限家族中开始成立复现恰当不再成立复现（coming_recurs_iff、Web.unceasing_iff）；关系项无限多时两者分离（Dawn、Dusk）。本结果说明分离只在一个方向上需要无限：每步只有有限多个成立时，不再成立复现仍需要开始成立复现，而开始成立复现不需要不再成立复现。这一规律对每步其成立者被列出的任何规定成立，活动与水平是它的两种读法，与 §26 中同一种变化读于活动、依存与水平相应。作者的读法（AI 论证）：在每步有限的展开中，没有只灭不生的不息；但可以有只生不灭的不息，只要成员总共无限多。这是活动与水平的读法；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 问二者“不overlap吧”；若取不重叠，这一读法就不是其所指，这是 AI 的推论）；它也不说止息是好的或坏的。本结果的一个用处是静止定理（continued-change-needs-openness 的 World.comes_to_rest）：那里生起停止由水平的规律给出，止息停止由本规律给出，所以体现只要求生起者，另要求活动的普查与所立者的普查，二者都不可少（World.rest_needs_census、World.rest_needs_standing）。",
+    "en": "Section 26's law says that in a finite family coming to be recurs exactly when ceasing to be does (coming_recurs_iff, Web.unceasing_iff); with infinitely many relata the two separate (Dawn, Dusk). This result shows that the separation needs infinity in one direction only: with finitely many holding at each step, recurring ceasing to be still needs recurring coming to be, while recurring coming to be does not need recurring ceasing to be. The law holds of any determination whose holders are listed at each step; activity and standing are two readings of it, matching section 26's one change read of activity, dependence and standing. The author's reading (an AI argument): in an unfolding finite at each step there is no endless ceasing without arising; there can be endless arising without ceasing, provided the members are infinitely many in all. This is a reading of activity and standing; whether it is the proposal's generative and degenerative is Ren's to choose (Ren asked whether the two do not overlap, ‘不overlap吧’; if non-overlap is taken, this reading is not what is meant, the AI's inference). It does not make ceasing good or bad. One use of the result is the rest theorem (World.comes_to_rest of continued-change-needs-openness): there arising stops by the law of standing and ceasing stops by this law, so of embodiment only whatever arises is needed, alongside a census of what is active and a census of what stands, neither of which can be dropped (World.rest_needs_census, World.rest_needs_standing)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
   "aliases": [
@@ -182,8 +182,8 @@
     "en": "Stated for discrete steps and members finitely many at each step; needs the determination decided (a logical commitment); says neither which member comes to be nor that coming to be and ceasing to be are causally linked: the law is a count, not a mechanism; recurrence gives no frequency; evaluates neither arising nor ceasing; names are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：Becoming.Population 的 63 项定理（P27 把 P26 的 Web.arises_or_kept、arises_or_fewer、arises_within 推广为 Listed.comes_or_held、comes_or_fewer、comes_within、coming_of_ceasing，Web.arising_of_ceasing 为其活动读法）与 Becoming.Openness 的 38 项定理（含 World.arising_of_ceasing、Dawn.census、World.census_one_way 与 P27 新增的 Web.StandingCensus.coming_of_ceasing）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T143305.859329Z 通过。P26 版本的回执为 20261009T135303.461724Z。作者反审见整合文档 §35、§36 与 §37，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): the 63 theorems of Becoming.Population (P27 generalizes P26's Web.arises_or_kept, arises_or_fewer and arises_within to Listed.comes_or_held, comes_or_fewer, comes_within and coming_of_ceasing, with Web.arising_of_ceasing their reading of activity) and the 38 theorems of Becoming.Openness (including World.arising_of_ceasing, Dawn.census, World.census_one_way and, new in P27, Web.StandingCensus.coming_of_ceasing) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T143305.859329Z passed. The P26 version's receipt is 20261009T135303.461724Z. The author's counterreview is in §35, §36 and §37 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T145010.627958Z）：Becoming.Population 的 63 项定理（P27 把 P26 的 Web.arises_or_kept、arises_or_fewer、arises_within 推广为 Listed.comes_or_held、comes_or_fewer、comes_within、coming_of_ceasing，Web.arising_of_ceasing 为其活动读法）与 Becoming.Openness 的 48 项定理（含 World.arising_of_ceasing、Dawn.census、World.census_one_way 与 P27 新增的 Web.StandingCensus.coming_of_ceasing）全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1077 项定理／1739 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T161851.010138Z 通过。P26 版本的回执为 20261009T135303.461724Z。作者反审见整合文档 §35、§36 与 §37，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T145010.627958Z): the 63 theorems of Becoming.Population (P27 generalizes P26's Web.arises_or_kept, arises_or_fewer and arises_within to Listed.comes_or_held, comes_or_fewer, comes_within and coming_of_ceasing, with Web.arising_of_ceasing their reading of activity) and the 48 theorems of Becoming.Openness (including World.arising_of_ceasing, Dawn.census, World.census_one_way and, new in P27, Web.StandingCensus.coming_of_ceasing) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1077 theorems/1739 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T161851.010138Z passed. The P26 version's receipt is 20261009T135303.461724Z. The author's counterreview is in §35, §36 and §37 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -207,7 +207,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "4d07300bc9a4d02289a724d606d8e7bda1f09bae890db6b1515aebe127a2f800",
+      "sha256": "ad0dfa236d84482ef262dd7da95d3b82a2505519f32ec3ba86605af825ac0a9c",
       "declarations": [
         "Becoming.Web.StandingCensus",
         "Becoming.Web.StandingCensus.coming_of_ceasing",
@@ -222,7 +222,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "6ef06dafae509c60573526e7f786604d9a937c11b1c83828c7b1aca4970b9fda",
+      "sha256": "f37088ca49d10cebf1a46861c8103903db5c7cc6d42e269831e219dead7eab53",
       "declarations": [
         "Becoming.ComesToBe",
         "Becoming.CeasesToBe",
@@ -263,7 +263,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "d0d5ef4ce1b7511e72cc8316954d11f4a484af511b6bd3479e52021caf3b5923",
+      "sha256": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
       "declarations": [
         "Becoming.World.ArisingRecurs",
         "Becoming.World.CeasingRecurs",
@@ -275,7 +275,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "d927cabd34d8449a466398cb36f4521574e95598dad785e75d8d14c98f69df47",
+      "sha256": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
       "declarations": [
         "Becoming.World.Counted"
       ]
@@ -283,22 +283,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
+      "sha256": "8846d44c961af60fa63212f465b107bd032cbd130355fe5738bb24f89a5a658b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
+      "sha256": "e273b18ce9571ed12ceaf8962f64e516015b88c19d88edda02de89fdc770d166"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
+      "sha256": "20e06ce9df5d026269ba02d8758589e43aac0594f5873a4615fc90fc220a0428"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a2e5bfdb65efcf8438706bc8d7a990a2c6af585d96b088691086080f6c15e511"
+      "sha256": "539eece11eeedeb0ddef682223f4fce1c1722639e400a569d29b651fe09b9d1b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -380,6 +380,10 @@
     {
       "zh": "2026-10-09 P28：加入读于依存的实例 Web.DependenceCensus.forming_of_dissolving，回答原下一步“同一规律读于依存”；带比率的版本见 census-balance；见整合文档 §37。验证范围重新指向合并检查器回执 20261009T143148.368990Z 与外围回执 20261009T143305.859329Z。",
       "en": "2026-10-09 P28: adds the reading of dependence, Web.DependenceCensus.forming_of_dissolving, answering the earlier next step (the same law read of dependence); for the version with rates see census-balance; see §37 of the integration note. Validation scope re-pointed to consolidated receipt 20261009T143148.368990Z and periphery receipt 20261009T143305.859329Z."
+    },
+    {
+      "zh": "2026-10-09 P25b：按第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）更正，见整合文档 §38。静止定理所需的所立者的普查不可少（rest_needs_standing），P26 原文说只要求生起者体现时被围住的世界归于静止，须加这一普查（O2）；活动的读法写为由 Ren 选择的候选，照录 Ren 的原话，标明 AI 的推论（O8）。验证范围指向合并检查器回执 20261009T145010.627958Z 与外围回执 20261009T161851.010138Z。",
+      "en": "2026-10-09 P25b: corrected after the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md); see section 38 of the integration note. the census of what stands that the rest theorem needs cannot be dropped (rest_needs_standing), and P26's statement that an enclosed world with only its arising embodied comes to rest needs this census (O2); the activity reading is written as a candidate for Ren's choice, with Ren's words quoted and the AI's inference labelled (O8). Validation scope points to consolidated receipt 20261009T145010.627958Z and periphery receipt 20261009T161851.010138Z."
     }
   ]
 }

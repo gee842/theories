@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "map-of-premises",
   "title": {
-    "zh": "前提的地图：哪些前提推出哪些，其余八个彼此独立；一个世界满足全部，有限世界中全部前提一起使世界归于静止",
-    "en": "The map of premises: which premises follow from which, the remaining eight independent; one world meets them all, and in a finite world all of them together bring it to rest"
+    "zh": "前提的地图：哪些前提推出哪些，其余八个相对于彼此独立；一个世界满足全部，满足它们的有限世界归于静止",
+    "en": "The map of premises: which premises follow from which, the remaining eight independent relative to one another; one world meets them all, and a finite world meeting them comes to rest"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T13:30:00+00:00",
+  "reviewed_at_utc": "2026-10-09T15:23:01+00:00",
   "claim": {
-    "zh": "普查（Counted：每步活跃的关系项被不重复地列出，所以每步只有有限多个活跃）与有界传递（Transmitting：世系在一个界内传递每个依存）也是世界的前提。蕴含：活动需要支持推出有储备承载（零储备，Dependent.carried）；每个关系项体现推出生起者体现（Embodied.arising）；活动可判定的有限世界有普查（Finite.counted）；只有活跃者取用且只取用所汲取的、并且流耗散时，在每个被围住的步上只有活跃者给予，因为那里给予需要取用（acting_of_enclosed），有限世界的每一步都被围住（Finite.enclosed、Finite.acting）。其余八个前提——活动需要支持、平衡、只有活跃者给予、只有活跃者取用且只取用所汲取的、耗散、体现、普查、有界传递（premises）——彼此独立：对每一个，都有一个世界满足其余七个而不满足它（independent）：自身水平不足以支持其活动的关系项（strained）、Handing 的两侧没有流（unbalanced）、一个从不活跃的关系项给予无限多个关系项而一个活跃者取回同样多（scatter）、吃者取用它并不汲取的食物（morsel）、持有者取走储存的一个单位再还回（keeping）、立着而从不活跃的关系项（latent）、无限多个同时活跃的关系项（multitude）、亲代烧燃料给子代以水平而子代开始依存于亲代、亲代自身从未有这一依存（novel）。所以没有一个前提由其余推出（none_follows）。不满足普查与不满足只有活跃者给予的两个世界都是无限的，与上面的蕴含一致。始终活跃的互利者满足全部八个（mutualism_premised）；在有限且活动可判定的世界中，八个前提一起使生起与止息都不再复现（premised_rests）。不用伦理前提，也不用 Lean 公理。",
-    "en": "A census (Counted: the relata active at each step are listed, each once, so finitely many are active at each step) and bounded transmission (Transmitting: descent transmits every dependence within one bound) are premises of worlds too. What follows: activity needing support makes activity carried, by the zero reserve (Dependent.carried); every relatum embodied makes whatever arises embodied (Embodied.arising); a finite world whose activity is decided has a census (Finite.counted); and where only active relata take, and only from what they draw on, and the flow dissipates, only active relata give across every enclosed step, since giving needs uptake there (acting_of_enclosed), every step of a finite world being enclosed (Finite.enclosed, Finite.acting). The remaining eight premises, activity needing support, balance, only active relata giving, only active relata taking and only from what they draw on, dissipation, embodiment, a census and bounded transmission (premises), are independent: for each, a world meets the other seven and not it (independent). The worlds are a relatum whose standing does not support its activity (strained), the sides of Handing with no flow (unbalanced), a relatum never active giving to infinitely many while an active one takes as much back (scatter), an eater taking a morsel it does not draw on (morsel), a keeper taking its store's unit and giving it back (keeping), a relatum standing and never active (latent), infinitely many relata active at once (multitude), and a parent burning fuel to give a child its standing while the child comes to depend on the parent, a dependence the parent never had (novel). So no premise follows from the others (none_follows). The worlds failing a census and failing only active relata giving are infinite, as the implications require. Mutualists active throughout meet all eight (mutualism_premised), and in a finite world whose activity is decided the eight together end the recurrence of arising and ceasing (premised_rests). No ethical premise and no Lean axiom is used."
+    "zh": "普查（Counted：每步活跃的关系项被不重复地列出，所以每步只有有限多个活跃）与有界传递（Transmitting：世系在一个界内传递每个依存）也是世界的前提。蕴含：活动需要支持推出有储备承载（零储备，Dependent.carried）；每个关系项体现推出生起者体现（Embodied.arising）；活动可判定的有限世界有普查（Finite.counted）；只有活跃者取用且只取用所汲取的、并且流耗散时，在被围住的步上只有活跃者给予，因为那里给予需要取用（acting_across），所以每步都被围住时只有活跃者给予（acting_of_enclosed），有限世界的每一步都被围住（Finite.enclosed、Finite.acting）。其余八个前提——活动需要支持、平衡、只有活跃者给予、只有活跃者取用且只取用所汲取的、耗散、体现、普查、有界传递（premises）——彼此独立：对每一个，都有一个世界满足其余七个而不满足它（independent）：自身水平不足以支持其活动的关系项（strained）、Handing 的两侧没有流（unbalanced）、一个从不活跃的关系项给予无限多个关系项而一个活跃者取回同样多（scatter）、吃者取用它并不汲取的食物（morsel）、持有者取走储存的一个单位再还回（keeping）、立着而从不活跃的关系项（latent）、无限多个同时活跃的关系项（multitude）、亲代烧燃料给子代以水平而子代开始依存于亲代、亲代自身从未有这一依存（novel）。所以没有一个前提由其余推出（none_follows）。平衡另有一个见证，取用与耗散在其中每步起约束：持有者每步取用自身一个单位而不给予，两侧的家族每步封闭且被取用（draining_but）。不满足普查与不满足只有活跃者给予的两个世界都是无限的，与上面的蕴含一致。始终活跃的互利者满足全部八个（mutualism_premised）；有限、活动可判定且满足八个的世界中，生起与止息都不再复现，证明用到其中的平衡、耗散与体现（premised_rests）。不用伦理前提，也不用 Lean 公理。",
+    "en": "A census (Counted: the relata active at each step are listed, each once, so finitely many are active at each step) and bounded transmission (Transmitting: descent transmits every dependence within one bound) are premises of worlds too. What follows: activity needing support makes activity carried, by the zero reserve (Dependent.carried); every relatum embodied makes whatever arises embodied (Embodied.arising); a finite world whose activity is decided has a census (Finite.counted); and where only active relata take, and only from what they draw on, and the flow dissipates, only active relata give across an enclosed step, since giving needs uptake there (acting_across), so where every step is enclosed only active relata give (acting_of_enclosed), every step of a finite world being enclosed (Finite.enclosed, Finite.acting). The remaining eight premises, activity needing support, balance, only active relata giving, only active relata taking and only from what they draw on, dissipation, embodiment, a census and bounded transmission (premises), are independent: for each, a world meets the other seven and not it (independent). The worlds are a relatum whose standing does not support its activity (strained), the sides of Handing with no flow (unbalanced), a relatum never active giving to infinitely many while an active one takes as much back (scatter), an eater taking a morsel it does not draw on (morsel), a keeper taking its store's unit and giving it back (keeping), a relatum standing and never active (latent), infinitely many relata active at once (multitude), and a parent burning fuel to give a child its standing while the child comes to depend on the parent, a dependence the parent never had (novel). So no premise follows from the others (none_follows). For balance there is a second witness in which taking and dissipation bind at every step: the holder takes its own unit and gives nothing, and the family of both sides is closed and taken from at every step (draining_but). The worlds failing a census and failing only active relata giving are infinite, as the implications require. Mutualists active throughout meet all eight (mutualism_premised), and in a finite world whose activity is decided and which meets the eight, neither arising nor ceasing recurs, the proof using balance, dissipation and embodiment among them (premised_rests). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "计划对“完整”的第三条读法要求每个动力学前提划出整个空间的真部分。P22 对七个前提给出了这一点；本结果补上普查与有界传递，并更进一步：前提不仅各自偶然，而且其余八个彼此独立，没有一个藏在其余之中。作者的读法（AI 论证）：蕴含显示哪些前提只是另一前提的较弱形式（有储备承载、生起者体现）或在有限世界中自动成立（普查），以及耗散与只有活跃者取用怎样在被围住的步上带来只有活跃者给予；独立性显示剩下的每一个都是对世界的独立限定。相对于另一读法陈述的前提——延续关系（Identity）、更新关系（Generation）、衰减的储备（Reserve）、条件家族（Flow、Dissipation）——没有在这里映射；流中每个参与者只列一次是表示的条件，不是世界的条件。前提的名称与这些世界的名称是 AI 的表述，由 Ren 定。",
-    "en": "The plan's third part of completeness asks that each dynamical premise carve a proper part of the whole space. P22 gave this for seven premises; this result adds the census and bounded transmission and goes further: the premises are not only each contingent, the remaining eight are independent, none hidden in the others. The author's reading (an AI argument): the implications show which premises are only weaker forms of another (activity carried, whatever arises embodied) or hold automatically in finite worlds (a census), and how dissipation and only active relata taking bring only active relata giving across enclosed steps; independence shows that each of the rest is a separate restriction of worlds. Premises stated relative to a further reading, a continuation relation (Identity), a renewal relation (Generation), a decaying reserve (Reserve) or a family of conditions (Flow, Dissipation), are not mapped here; that each formation taking part is listed once in a flow is a condition of the representation, not of the world. The names of the premises and of these worlds are the AI's formulations, and Ren's to choose."
+    "zh": "计划对“完整”的第三条读法要求每个动力学前提划出整个空间的真部分。P22 对七个前提给出了这一点；本结果补上普查与有界传递，并更进一步：前提不仅各自偶然，而且其余八个相对于彼此独立，在这八个之中没有一个藏在其余之中。八个是 P22 的七个去掉储备承载（由活动需要支持推出），加上普查与有界传递；连同储备承载与生起者体现这两个较弱的形式，世界层面共陈述十个前提。作者的读法（AI 论证）：蕴含显示哪些前提只是另一前提的较弱形式（有储备承载、生起者体现）或在活动可判定的有限世界中自动成立（普查；不给可判定性而对每个有限世界要求它，就蕴含排中律），以及耗散与只有活跃者取用怎样在被围住的步上带来只有活跃者给予；独立性显示剩下的每一个都是对世界的独立限定。有限、被围住与可判定性不在这八个之中，而静止定理正是以它们为转折；加上它们，只有活跃者给予与普查就推出。多个见证没有流，关于流的四个前提（只有活跃者给予、只有活跃者取用、耗散、有界传递）在其中空成立：strained、unbalanced、latent、multitude 与互利者没有流，scatter 没有被围住的步，morsel 没有依存、给予与世系，keeping 的水平不变；只有 novel 中其余七个都起约束。这足以证明独立；平衡另有取用与耗散每步起约束的见证（draining_but）。相对于另一读法陈述的前提——延续关系（Identity）、更新关系（Generation）、衰减的储备（Reserve）、条件家族（Flow、Dissipation）——没有在这里映射；流中每个参与者只列一次是表示的条件，不是世界的条件。前提的名称与这些世界的名称是 AI 的表述，由 Ren 定。",
+    "en": "The plan's third part of completeness asks that each dynamical premise carve a proper part of the whole space. P22 gave this for seven premises; this result adds the census and bounded transmission and goes further: the premises are not only each contingent, the remaining eight are independent relative to one another, none hidden in the others among these eight. The eight are P22's seven without the reserve carrying activity, which follows from activity needing support, together with the census and bounded transmission; with the two weaker forms, a reserve carrying activity and embodied arising, ten premises are stated of worlds. The author's reading (an AI argument): the implications show which premises are only weaker forms of another (activity carried, whatever arises embodied) or hold automatically in finite worlds whose activity is decided (a census; asking it of every finite world without decidability implies excluded middle), and how dissipation and only active relata taking bring only active relata giving across enclosed steps; independence shows that each of the rest is a separate restriction of worlds. Finiteness, enclosure and decidability are not among the eight, though the rest theorems turn on them; with them added, only active relata giving and a census follow. Several witnesses have no flow, so the four premises about the flow (only active relata giving, only active relata taking, dissipation, bounded transmission) hold vacuously there: strained, unbalanced, latent, multitude and the mutualists have no flow, scatter has no enclosed step, morsel has no dependence, giving or descent, and keeping's levels are steady; only in novel do all the other seven bind. That suffices for independence; for balance a second witness has taking and dissipation binding at every step (draining_but). Premises stated relative to a further reading, a continuation relation (Identity), a renewal relation (Generation), a decaying reserve (Reserve) or a family of conditions (Flow, Dissipation), are not mapped here; that each formation taking part is listed once in a flow is a condition of the representation, not of the world. The names of the premises and of these worlds are the AI's formulations, and Ren's to choose."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
   "aliases": [
@@ -43,7 +43,9 @@
     "Becoming.World.independent",
     "Becoming.World.none_follows",
     "Becoming.World.mutualism_premised",
-    "Becoming.World.premised_rests"
+    "Becoming.World.premised_rests",
+    "Becoming.World.acting_across",
+    "Becoming.World.draining_but"
   ],
   "dependencies": [
     {
@@ -208,6 +210,13 @@
         "zh": "八个独立性见证：strained、unbalanced、scatter、morsel、keeping、latent、multitude、novel，各不满足一个前提而满足其余七个。",
         "en": "Eight independence witnesses, strained, unbalanced, scatter, morsel, keeping, latent, multitude and novel, each failing one premise and meeting the other seven."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "detail": {
+        "zh": "draining：平衡之外的每个前提都满足，两侧的家族每步封闭且被取用，所以取用与耗散不空成立。",
+        "en": "draining: every premise but balance is met, and the family of both sides is closed and taken from at every step, so taking and dissipation do not hold vacuously."
+      }
     }
   ],
   "limitations": {
@@ -215,14 +224,14 @@
     "en": "Maps only the eight premises stated of worlds; premises relative to a continuation relation, a renewal relation, a decaying reserve or a family of conditions are not mapped; independence is relative to these eight and does not exclude new implications once further premises are added; the implications for finite worlds need decidable activity; stated for the reading across discrete steps; evaluates no part; the names of premises and worlds are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T143148.368990Z）：新模块 Becoming.Premises 的 35 项定理全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1061 项定理／1716 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T143305.859329Z 通过。作者反审见整合文档 §32，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T143148.368990Z): the 35 theorems of the new module Becoming.Premises all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1061 theorems/1716 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T143305.859329Z passed. The author's counterreview is in §32 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T145010.627958Z）：Becoming.Premises 的 37 项定理全部空依赖（P25b 新增 World.acting_across 与 World.draining_but）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1077 项定理／1739 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T161851.010138Z 通过。作者反审见整合文档 §32；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）接受其数学，所提更正在整合文档 §38 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T145010.627958Z): the 37 theorems of Becoming.Premises (World.acting_across and World.draining_but added in P25b) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1077 theorems/1739 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T161851.010138Z passed. The author's counterreview is in §32 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) accepts its mathematics, and its corrections are handled in §38 of the integration note; those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "d927cabd34d8449a466398cb36f4521574e95598dad785e75d8d14c98f69df47",
+      "sha256": "e38f5fe36c75742f09b65db386f59733a17d629b9f366a92cbe59871921bac43",
       "declarations": [
         "Becoming.beyond",
         "Becoming.beyond_not_mem",
@@ -264,13 +273,16 @@
         "Becoming.World.independent",
         "Becoming.World.none_follows",
         "Becoming.World.mutualism_premised",
-        "Becoming.World.premised_rests"
+        "Becoming.World.premised_rests",
+        "Becoming.World.acting_across",
+        "Becoming.World.draining",
+        "Becoming.World.draining_but"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "d0d5ef4ce1b7511e72cc8316954d11f4a484af511b6bd3479e52021caf3b5923",
+      "sha256": "a669d42171fc1e7c6d1fc8961e905b923cc7903b93773b5ec6c8850dcdcd0e9f",
       "declarations": [
         "Becoming.World",
         "Becoming.World.rests",
@@ -282,7 +294,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "941026b4548d30dac31b913d962cd46d82a044f0fd151cb655d71e1301b6ec11",
+      "sha256": "f079e8b4e85babc6f43f99263d02216a1c3c4df78feb0ab73c346be8814ee84d",
       "declarations": [
         "Becoming.Flow.Dissipative",
         "Becoming.Flow.Enclosed",
@@ -302,7 +314,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
       "role": "proof",
-      "sha256": "3ba9b515ebae3cadba6b45fd15b9d201f19d9b3cd512b0ec05e0b7bb4785006e",
+      "sha256": "f09187b7a101ff81b5836b9e910b871215ace8f9a830fc4cd95cce2f2bdad621",
       "declarations": [
         "Becoming.Flow.DescendsAt",
         "Becoming.Flow.TransmitsWithin"
@@ -319,7 +331,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
+      "sha256": "d55d6e19e755b923fb8426259926dcd92de55095044462111029b1f6de65edd6",
       "declarations": [
         "Becoming.Web.Embodied",
         "Becoming.Mutualism.dependent"
@@ -328,17 +340,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4225679c21161ee9b9aff50c058e0ee4c124329c5dffc63254c4822369806c99"
+      "sha256": "8846d44c961af60fa63212f465b107bd032cbd130355fe5738bb24f89a5a658b"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "372286a48687c6f697cbcfb34ae434c31e668f9df4699aed9cffc626a2065351"
+      "sha256": "e273b18ce9571ed12ceaf8962f64e516015b88c19d88edda02de89fdc770d166"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "0cede1d749f2274059de22a1c583b808d59c1907156e6240bb803be91efddbb1"
+      "sha256": "20e06ce9df5d026269ba02d8758589e43aac0594f5873a4615fc90fc220a0428"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -354,6 +366,11 @@
       "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
       "role": "provenance",
       "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "role": "review",
+      "sha256": "71f1ff8e0ec97b4ebf3723f74beeb63408596bdf29909652ff12f630fe5866c6"
     }
   ],
   "proof_bindings": [
@@ -408,8 +425,8 @@
     }
   ],
   "next_delta": {
-    "zh": "相对于另一读法的前提（延续关系、更新关系、衰减的储备、条件家族）的地图；在普查与被围住之下（而不只是有限时）全部前提是否使世界归于静止；名称（Ren）。",
-    "en": "A map of the premises stated relative to a further reading (a continuation relation, a renewal relation, a decaying reserve, a family of conditions); whether all premises bring a world to rest under a census and enclosure rather than finiteness; names (Ren)."
+    "zh": "相对于另一读法的前提（延续关系、更新关系、衰减的储备、条件家族）的地图；满足全部八个且每个都起约束的世界；名称（Ren）。在普查与被围住之下的静止已由 P25 与 P26 回答（continued-change-needs-openness）。",
+    "en": "A map of the premises stated relative to a further reading (a continuation relation, a renewal relation, a decaying reserve, a family of conditions); a world meeting all eight with each binding; names (Ren). Rest under censuses and enclosure is answered by P25 and P26 (continued-change-needs-openness)."
   },
   "history": [
     {
@@ -422,7 +439,7 @@
     },
     {
       "zh": "2026-10-09 P23c：按第九次独立审查（BECOMING-P18B-P23-REVIEW.md）更正，见整合文档 §34。premised_rests 读作生起与止息不再复现，随 Space 的改名（M1）；审查时间改为不晚于提交（M10）。验证范围重新指向合并检查器回执 20261009T132323.308231Z 与外围回执 20261009T132432.792943Z。",
-      "en": "2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note.premised_rests read as arising and ceasing no longer recurring, following the renaming in Space (M1); review stamp no later than the commit (M10). Validation scope re-pointed to consolidated receipt 20261009T132323.308231Z and periphery receipt 20261009T132432.792943Z."
+      "en": "2026-10-09 P23c: corrected after the ninth independent review (BECOMING-P18B-P23-REVIEW.md); see section 34 of the integration note. premised_rests read as arising and ceasing no longer recurring, following the renaming in Space (M1); review stamp no later than the commit (M10). Validation scope re-pointed to consolidated receipt 20261009T132323.308231Z and periphery receipt 20261009T132432.792943Z."
     },
     {
       "zh": "2026-10-09 P26：验证范围重新指向合并检查器回执 20261009T135303.461724Z 与外围回执 20261009T135417.468399Z（Population 加入普查定律，Openness 加入静止定理）。断言不变。",
@@ -435,6 +452,10 @@
     {
       "zh": "2026-10-09 P28：验证范围重新指向合并检查器回执 20261009T143148.368990Z 与外围回执 20261009T143305.859329Z（Population 加入普查的平衡与依存的读法，Openness 加入水平的平衡）。断言不变。",
       "en": "2026-10-09 P28: validation scope re-pointed to consolidated receipt 20261009T143148.368990Z and periphery receipt 20261009T143305.859329Z (Population adds the census balance and the reading of dependence, Openness the balance of standing). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P25b：按第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）更正，见整合文档 §38。可判定写入普查的蕴含；逐步的 acting_across；平衡的第二个见证 draining_but 与各见证中空成立的前提；premised_rests 用到三个前提；独立性相对于这八个，有限、被围住与可判定性不在其中（O9）；七、八、十个前提的关系（O11(f)）；scatter 的构造子 giver 改为 source（O11(g)）；历史记录中的空格（O11(h)）。验证范围指向合并检查器回执 20261009T145010.627958Z 与外围回执 20261009T161851.010138Z。",
+      "en": "2026-10-09 P25b: corrected after the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md); see section 38 of the integration note. Decidability is written into the census implication; the stepwise acting_across; a second balance witness, draining_but, and the premises holding vacuously in each witness; premised_rests uses three premises; independence is relative to these eight, finiteness, enclosure and decidability not among them (O9); how the counts of seven, eight and ten premises relate (O11(f)); scatter's constructor giver renamed source (O11(g)); a missing space in the history (O11(h)). Validation scope points to consolidated receipt 20261009T145010.627958Z and periphery receipt 20261009T161851.010138Z."
     }
   ]
 }

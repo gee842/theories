@@ -47,7 +47,11 @@ Results:
   co-occurrence with the ending, whatever ends it: a bee that takes nothing, drawing on
   a flower that wilts by its own taking, is not living at that step, and neither is the
   flower's own last event (`Wilting`). That the drawing ends the relatum would need a
-  counterfactual relation, which is not stated here.
+  counterfactual relation, which is not stated here. The co-occurrence is general: under
+  `Dependent`, a dependence left below its need and persisting at no lower need belongs
+  to a formation not active after the step (`Web.Dependent.inactive_below`), so every
+  undermining of a dependence that persists unchanged co-occurs with the ending of the
+  formation depending.
 * Arising through another's giving. In a balanced flow in which only active formations
   give, an embodied relatum arises only as another active formation gives to it
   (`Embodied.arises_given`). The formation that gives need not be embodied, bear on
@@ -468,6 +472,16 @@ theorem Embodied.ending_breaks (dependent : W.Dependent) {x : X} (embodied : W.E
   ⟨drawn, x, (self t active).1, dependent t x active x (self t active).1,
     Nat.lt_of_le_of_lt (Nat.ge_of_not_lt fun stands => ends ((embodied (t + 1)).mpr stands))
       (self t active).2⟩
+
+/-- Under `Dependent`, a dependence left below its need across a step, persisting after the
+step at no lower need, belongs to a formation not active after the step. So wherever
+activity needs support, undermining a dependence that persists unchanged co-occurs with
+the ending of the formation depending, as drawing at an ending does in `ending_breaks`. -/
+theorem Dependent.inactive_below {W : Web F C} (dependent : W.Dependent) {t : Nat} {g : F}
+    {c : C} (below : W.level (t + 1) c < W.need t g c) (persists : W.requires (t + 1) g c)
+    (noLess : W.need t g c ≤ W.need (t + 1) g c) : ¬ W.active (t + 1) g :=
+  fun active => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le below
+    (Nat.le_trans noLess (dependent (t + 1) g active c persists)))
 
 /-- Arising through another's giving: in a balanced flow in which only active formations
 give, an embodied relatum arises only as an active formation taking part gives to it, and

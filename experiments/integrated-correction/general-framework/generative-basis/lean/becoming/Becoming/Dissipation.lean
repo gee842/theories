@@ -45,7 +45,8 @@ on dissipation. This module states that premise on flows and proves what it carr
 * Where the step is enclosed around the family, the exchange beyond is inflow. A step is
   enclosed around a family when some family without repetition containing it is closed
   across the step (`Around`); with equality of conditions decidable, every enclosed step
-  is enclosed around every family (`Enclosed.around`). A family is *inward* across a step
+  is enclosed around every family (`Enclosed.around`), and without it, not not
+  (`Enclosed.around_not_not`). A family is *inward* across a step
   when every formation taking part that gives to it takes only from it (`Inward`). Under
   dissipation, a family without repetition enclosed around and inward across a step is
   dissipated on (`Dissipative.dissipatesOn_of_inward`), so where taking from it recurs
@@ -413,6 +414,25 @@ theorem Enclosed.around [DecidableEq C] {t : Nat} (enclosed : L.Enclosed t) (ds 
   | ⟨es, distinct, closed⟩ => match adjoin_spec distinct ds with
     | ⟨distinct', left, right⟩ => ⟨adjoin ds es, distinct', left,
         fun f present c outside => closed f present c fun inside => outside (right c inside)⟩
+
+/-- Without decided equality, a step enclosed by some family is not not enclosed around
+every family: whether each member of the family lies in the enclosing one need only be
+not refuted. -/
+theorem Enclosed.around_not_not {t : Nat} (enclosed : L.Enclosed t) :
+    ∀ ds : List C, ¬¬ L.Around ds t
+  | [] => fun no => match enclosed with
+    | ⟨es, distinct, closed⟩ => no ⟨es, distinct, fun _ mem => (nomatch mem), closed⟩
+  | a :: ds => fun no => enclosed.around_not_not ds fun ⟨es, distinct, sub, closed⟩ =>
+    have widen : (a ∈ es ∨ ¬ a ∈ es) → False := fun
+      | .inl inside => no ⟨es, distinct, fun c mem => match mem_cons_cases mem with
+          | .inl same => Eq.subst (motive := fun d => d ∈ es) same.symm inside
+          | .inr mem => sub c mem, closed⟩
+      | .inr outside => no ⟨a :: es, ⟨outside, distinct⟩, fun c mem =>
+          match mem_cons_cases mem with
+          | .inl same => Eq.subst (motive := fun d => d ∈ a :: es) same.symm (.head es)
+          | .inr mem => .tail a (sub c mem),
+        fun f present c out => closed f present c fun inside => out (.tail a inside)⟩
+    widen (.inr fun inside => widen (.inl inside))
 
 /-- Under dissipation, a family without repetition enclosed around across a step, into
 which nothing beyond it flows, is dissipated on across that step. -/
