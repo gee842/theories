@@ -246,6 +246,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## bounded-census-keeps-pace ← census-balance
+
+`formal-reuse` — 复用普查的平衡读于复现（Listed.ceasing_iff_shortfall、Listed.over_stretch），有界定律由它推出。 / Reuses the census balance read of recurrence (Listed.ceasing_iff_shortfall, Listed.over_stretch); the bounded law follows from it.
+
+**Producer output / 上游输出:** 不再成立复现，恰当从每一步起某个后来的列表短于起点的列表连同其间开始成立的。 / Ceasing to be recurs exactly when, from each step, some later list is shorter than the list at the start with what came between.
+
+**Consumer input / 下游输入:** 开始成立复现、列表在任意晚的步回到某数以内时，缺额出现，所以不再成立复现；开始成立多于界时亦然。 / With coming to be recurring and the list returning within some number at arbitrarily late steps, the shortfall appears, so ceasing to be recurs; so too where comings outnumber a bound.
+
+**Retained conditions / 保留条件:** 列出；可判定；列表回到某数以内，或开始成立多于界。 / Listing; decidability; the list returning within some number, or comings outnumbering a bound.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
 ## bounded-census-keeps-pace ← ceasing-needs-arising
 
 `formal-reuse` — 复用列出（Listed）、普查定律（Listed.coming_of_ceasing、Web.arising_of_ceasing）、所立者的普查与 dawn 的普查（Dawn.census、World.census_one_way）。 / Reuses listing (Listed), the census law (Listed.coming_of_ceasing, Web.arising_of_ceasing), the census of what stands and the census of dawn (Dawn.census, World.census_one_way).
@@ -296,19 +308,31 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## bounded-census-keeps-pace ← more-needs-renewers
 
-`formal-reuse` — 复用普查（Web.Census）、不重复列表的长度比较（length_le_of_sub）与列表上的判定（search）。 / Reuses the census (Web.Census), the length comparison of lists without repetition (length_le_of_sub) and search over a list (search).
+`formal-reuse` — 复用普查（Web.Census）、不重复列表的长度比较（length_le_of_sub，有限世界的普查有界）与循环的列表（Cycle.present、Cycle.distinct、Cycle.listed，slow 的普查）。P30 之前另复用列表上的判定（search）。 / Reuses the census (Web.Census), the length comparison of lists without repetition (length_le_of_sub, for the bound on a finite world's census) and the cycle's lists (Cycle.present, Cycle.distinct, Cycle.listed, for the census of slow). Before P30 it also reused search over a list (search).
 
-**Producer output / 上游输出:** 普查与列表工具。 / The census and list tools.
+**Producer output / 上游输出:** 普查与列表工具；循环在第 t 步列出 t 以下的形成，每个一次。 / The census and list tools; the cycle lists the formations below t at step t, each once.
 
-**Consumer input / 下游输入:** 列表有界时，开始成立而无先前的不再成立使列表变长，不能无限地变长。 / With a bounded list, a coming to be with no ceasing before it lengthens the list, which cannot lengthen without end.
+**Consumer input / 下游输入:** 有限世界的普查有界；slow 以循环的列表为普查。 / A finite world's census is bounded; slow takes the cycle's lists as its census.
 
-**Retained conditions / 保留条件:** 列表有界；可判定。 / A bounded list; decidability.
+**Retained conditions / 保留条件:** 可判定。 / Decidability.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## ceasing-needs-arising ← census-balance
+
+`formal-reuse` — 复用普查的平衡读于复现（Listed.coming_iff_excess、Listed.over_stretch），普查定律由它推出。 / Reuses the census balance read of recurrence (Listed.coming_iff_excess, Listed.over_stretch); the census law follows from it.
+
+**Producer output / 上游输出:** 开始成立复现，恰当起点的列表长于某个后来的列表连同其间不再成立的。 / Coming to be recurs exactly when the list at the start is longer than some later list with what ceased between.
+
+**Consumer input / 下游输入:** 不再成立复现时，其间不再成立的累加而超过起点的列表，所以开始成立复现。 / With ceasing to be recurring, what ceases accumulates past the list at the start, so coming to be recurs.
+
+**Retained conditions / 保留条件:** 列出；可判定。 / Listing; decidability.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
 ## ceasing-needs-arising ← coming-and-ceasing-keep-pace
 
-`formal-reuse` — 复用止息（Web.Ceases）以及 Dawn 与 Dusk 两个见证。 / Reuses ceasing (Web.Ceases) and the witnesses Dawn and Dusk.
+`formal-reuse` — 复用止息（Web.Ceases）、Dawn 与 Dusk 两个见证，以及在任意晚的步为正的量的累加（recurring_accumulates）。 / Reuses ceasing (Web.Ceases), the witnesses Dawn and Dusk, and the accumulation of a quantity positive at arbitrarily late steps (recurring_accumulates).
 
 **Producer output / 上游输出:** 有限家族中生起复现恰当止息复现；关系项无限多时两者分离。 / In a finite family arising recurs exactly when ceasing does; with infinitely many relata they separate.
 
@@ -320,11 +344,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## ceasing-needs-arising ← more-needs-renewers
 
-`formal-reuse` — 复用普查（Web.Census）、不重复列表的长度比较（length_le_of_sub）与列表上的判定（search）。 / Reuses the census (Web.Census), the length comparison of lists without repetition (length_le_of_sub) and search over a list (search).
+`formal-reuse` — 复用普查（Web.Census）。P30 之前另复用不重复列表的长度比较（length_le_of_sub）与列表上的判定（search）。 / Reuses the census (Web.Census). Before P30 it also reused the length comparison of lists without repetition (length_le_of_sub) and search over a list (search).
 
 **Producer output / 上游输出:** 普查与列表工具；普查无界地增长使生成不息。 / The census and list tools; a census growing without bound makes generation unceasing.
 
-**Consumer input / 下游输入:** 普查之下，止息而无先前生起使活跃者的数目减少。 / Under a census, a ceasing with no arising before it lowers the count of the active.
+**Consumer input / 下游输入:** 普查之下，止息复现需要生起复现。 / Under a census, recurring ceasing needs recurring arising.
 
 **Retained conditions / 保留条件:** 普查；活动可判定。 / A census; decided activity.
 
@@ -366,21 +390,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
 
-## census-balance ← ceasing-needs-arising
-
-`formal-reuse` — 复用列出（Listed）与普查、所立者的普查。 / Reuses listing (Listed), the census and the census of what stands.
-
-**Producer output / 上游输出:** 列出时，不再成立复现需要开始成立复现。 / Under a listing, ceasing to be recurring needs coming to be recurring.
-
-**Consumer input / 下游输入:** 同一列出下的计数平衡与比率。 / The counting balance and rates under the same listing.
-
-**Retained conditions / 保留条件:** 列出；可判定。 / Listing; decidability.
-
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
-
 ## census-balance ← more-needs-renewers
 
-`formal-reuse` — 复用不重复列表的工具（Distinct、mem_remove、List.append_of_mem）与总量（total、total_add、total_ones、total_append）。 / Reuses the tools of lists without repetition (Distinct, mem_remove, List.append_of_mem) and totals (total, total_add, total_ones, total_append).
+`formal-reuse` — 复用不重复列表的工具（Distinct、mem_remove、List.append_of_mem）与总量（total、total_add、total_ones、total_append），以及普查（Web.Census）。 / Reuses the tools of lists without repetition (Distinct, mem_remove, List.append_of_mem) and totals (total, total_add, total_ones, total_append), and the census (Web.Census).
 
 **Producer output / 上游输出:** 列表与总量的工具。 / Tools for lists and totals.
 
@@ -389,6 +401,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 列表不重复。 / Lists without repetition.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## census-balance ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用依存的形成与消解（Web.Forms、Web.Dissolves）。 / Reuses the forming and dissolving of dependences (Web.Forms, Web.Dissolves).
+
+**Producer output / 上游输出:** 依存跨步形成与消解。 / Dependences form and dissolve across steps.
+
+**Consumer input / 下游输入:** 依存的普查之下，终点的依存连同其间消解的，恰是起点的依存连同其间形成的。 / Under a census of dependences, the dependences at the end with those that dissolved are those at the start with those that formed.
+
+**Retained conditions / 保留条件:** 依存的普查；依存可判定。 / A census of dependences; decided dependence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 

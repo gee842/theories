@@ -74,10 +74,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing. Under a
   census, ceasing at arbitrarily late steps needs arising at arbitrarily late steps;
-  with at most `B` formations active at each step from some step on, the converse holds
-  too. This census law holds of any determination whose holders are listed at each step
-  (`Listed`), read of activity, dependence and standing: the list at the end with what
-  ceased is the list at the start with what came.
+  with at most `B` formations active at each step from some step on, or only at
+  arbitrarily late steps, the converse holds too. This census law holds of any
+  determination whose holders are listed at each step (`Listed`), read of activity,
+  dependence and standing, and follows from the census balance: the list at the end with
+  what ceased is the list at the start with what came. Read of recurrence the balance is
+  exact: ceasing recurs exactly where, from each step, the list later falls short of the
+  list at the start with what came between.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
@@ -164,7 +167,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   every step from some step on is enclosed around it, standing stops changing. Where at
   most `B` relata are active at each step, arising recurs exactly when ceasing does;
   finite worlds are a case, and an infinite procession of single relata is another; the
-  same law holds of standing under a census of what stands. The rest theorem: a world
+  bound may grow between steps at which it returns within a number, but no bound growing
+  without end keeps the two together, however slowly it grows; the same law holds of
+  standing under a census of what stands. The rest theorem: a world
   with a census of what is active and of what stands, whose arising is embodied, balanced
   and dissipative, comes to rest once enclosed around what stands; the world need not be
   finite, but finitely many must stand at each step. The finite rest of `Becoming.Space`

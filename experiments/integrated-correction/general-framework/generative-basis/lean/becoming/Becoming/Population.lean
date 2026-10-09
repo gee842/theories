@@ -16,22 +16,29 @@ many formations are active at each step, and ties the flow's count to the web's.
   is the list before it with the members that came to be (`Listed.across`), and so over
   any stretch (`Listed.over_stretch`): ceasings are at most comings and the list at the
   start, comings at most ceasings and the list at the end (`Listed.ceasings_within`,
-  `Listed.comings_within`). Ceasing to be at arbitrarily late steps needs coming to be
-  at arbitrarily late steps (`Listed.coming_of_ceasing`): a ceasing not preceded by a
-  coming to be shortens the list (`Listed.comes_or_fewer`), which cannot shorten
-  forever. Not conversely: ever new formations can arise while none ceases (`Dawn`).
-  Where from some step on at most `B` are listed, the converse holds too: a coming to be
-  not preceded by a ceasing lengthens the list (`Listed.ceases_or_more`), which cannot
-  pass `B` (`Listed.ceasing_of_coming`), so the two recur together
-  (`Listed.coming_iff_ceasing`). This needs only a list bounded from some step on, not
-  the finite family of `Becoming.Change` (`coming_recurs_iff`). A census is the listing
-  of activity: the formations active at the end with those that ceased are those active
-  at the start with those that arose (`Web.Census.over_stretch`), ceasing recurring
-  needs arising recurring (`Web.arising_of_ceasing`), and under a census bounded from
-  some step on generation is unceasing exactly when ceasing recurs
+  `Listed.comings_within`). Read of recurrence, the balance is exact: ceasing to be
+  recurs exactly when, from each step, the list at some later step is shorter than the
+  list at the start with what came to be between, and coming to be recurs exactly when
+  the list at the start is longer than some later list with what ceased to be between
+  (`Listed.ceasing_iff_shortfall`, `Listed.coming_iff_excess`). Ceasings that recur
+  accumulate past any list at the start, so ceasing to be at arbitrarily late steps needs
+  coming to be at arbitrarily late steps (`Listed.coming_of_ceasing`). Not conversely:
+  ever new formations can arise while none ceases (`Dawn`). Where at most `K` are listed
+  at arbitrarily late steps, comings that recur accumulate past `K`, and the converse
+  holds too (`Listed.ceasing_of_returning`); so where from some step on at most `B` are
+  listed, the two recur together (`Listed.ceasing_of_coming`,
+  `Listed.coming_iff_ceasing`). This needs only a list returning within a bound, not the
+  finite family of `Becoming.Change` (`coming_recurs_iff`). Where the list grows without
+  end, ceasing to be still recurs where, from each step, the comings over some stretch
+  outnumber a bound on the list at its end (`Listed.ceasing_of_outpacing`). A census is
+  the listing of activity: the formations active at the end with those that ceased are
+  those active at the start with those that arose (`Web.Census.over_stretch`), ceasing
+  recurring needs arising recurring (`Web.arising_of_ceasing`), and under a census
+  bounded from some step on generation is unceasing exactly when ceasing recurs
   (`Web.unceasing_iff_bounded`). Read of dependence, forming and dissolving obey the
-  same law (`Web.DependenceCensus.forming_of_dissolving`,
-  `Web.DependenceCensus.forming_iff_dissolving`); `Becoming.Openness` reads it of
+  same balance and laws (`Web.DependenceCensus.over_stretch`,
+  `Web.DependenceCensus.forming_of_dissolving`,
+  `Web.DependenceCensus.forming_iff_dissolving`); `Becoming.Openness` reads them of
   standing.
 * Under a census, with each formation taking part in the flow listed once and only
   active formations taking (`Flow.Taking`, of which only the activity half is used),
@@ -287,119 +294,6 @@ namespace Listed
 
 variable {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l : Nat → List α}
 
-/-- Either some member comes to be from `N` on, or every member holding at a later step
-already held at `N`. -/
-theorem comes_or_held (listed : Listed p l) {N : Nat} :
-    ∀ {T}, N ≤ T → (∃ t a, N ≤ t ∧ ComesToBe (p a) t) ∨ ∀ a, p a T → p a N
-  | _, .refl => .inr fun _ holds => holds
-  | m + 1, .step within => match comes_or_held listed within with
-    | .inl found => .inl found
-    | .inr held => match search (p := fun a => p a m) (l (m + 1)) with
-      | .inl ⟨a, mem, lacks⟩ => .inl ⟨m, a, within, lacks, ((listed (m + 1)).2 a).mpr mem⟩
-      | .inr all => .inr fun a holds => held a (all a (((listed (m + 1)).2 a).mp holds))
-
-/-- A member ceasing to be from `N` on comes after a coming to be from `N` on, or leaves
-fewer listed after its step than at `N`. -/
-theorem comes_or_fewer (listed : Listed p l) {N T : Nat} (later : N ≤ T) {a : α}
-    (ceases : CeasesToBe (p a) T) :
-    (∃ t b, N ≤ t ∧ ComesToBe (p b) t) ∨ (l (T + 1)).length < (l N).length :=
-  match listed.comes_or_held later with
-  | .inl found => .inl found
-  | .inr before => match listed.comes_or_held (Nat.le_succ_of_le later) with
-    | .inl found => .inl found
-    | .inr after => .inr (length_le_of_sub (l := a :: l (T + 1))
-        ⟨fun mem => ceases.2 (((listed (T + 1)).2 a).mpr mem), (listed (T + 1)).1⟩
-        fun b mem => match mem with
-        | .head _ => ((listed N).2 _).mp (before _ ceases.1)
-        | .tail _ mem => ((listed N).2 b).mp (after b (((listed (T + 1)).2 b).mpr mem)))
-
-/-- So where ceasing to be recurs, each ceasing not preceded by a coming to be shortens
-the list, and the list cannot shorten forever. -/
-theorem comes_within (listed : Listed p l)
-    (ceasing : ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) :
-    ∀ k N, (l N).length ≤ k → ∃ t a, N ≤ t ∧ ComesToBe (p a) t
-  | 0, N, bound => match ceasing N with
-    | ⟨_, _, later, ceases⟩ => match listed.comes_or_fewer later ceases with
-      | .inl found => found
-      | .inr fewer => absurd (Nat.le_trans fewer bound) (Nat.not_succ_le_zero _)
-  | k + 1, N, bound => match ceasing N with
-    | ⟨T, _, later, ceases⟩ => match listed.comes_or_fewer later ceases with
-      | .inl found => found
-      | .inr fewer =>
-        match comes_within listed ceasing k (T + 1)
-          (Nat.le_of_succ_le_succ (Nat.le_trans fewer bound)) with
-        | ⟨t, b, after, comes⟩ => ⟨t, b, Nat.le_trans (Nat.le_succ_of_le later) after, comes⟩
-
-/-- The census law: where what holds is listed at each step, ceasing to be at arbitrarily
-late steps needs coming to be at arbitrarily late steps. -/
-theorem coming_of_ceasing (listed : Listed p l)
-    (ceasing : ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) :
-    ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t :=
-  fun N => listed.comes_within ceasing _ N (Nat.le_refl _)
-
-/-- Either some member ceases to be from `N` on, or every member holding at `N` still
-holds at a later step. -/
-theorem ceases_or_kept (listed : Listed p l) {N : Nat} :
-    ∀ {T}, N ≤ T → (∃ t a, N ≤ t ∧ CeasesToBe (p a) t) ∨ ∀ a, p a N → p a T
-  | _, .refl => .inr fun _ holds => holds
-  | m + 1, .step within => match ceases_or_kept listed within with
-    | .inl found => .inl found
-    | .inr kept => match search (p := fun a => p a (m + 1)) (l m) with
-      | .inl ⟨a, mem, lacks⟩ => .inl ⟨m, a, within, ((listed m).2 a).mpr mem, lacks⟩
-      | .inr all => .inr fun a holds => all a (((listed m).2 a).mp (kept a holds))
-
-/-- A member coming to be from `N` on comes after a ceasing to be from `N` on, or leaves
-more listed after its step than at `N`. -/
-theorem ceases_or_more (listed : Listed p l) {N T : Nat} (later : N ≤ T) {a : α}
-    (comes : ComesToBe (p a) T) :
-    (∃ t b, N ≤ t ∧ CeasesToBe (p b) t) ∨ (l N).length < (l (T + 1)).length :=
-  match listed.ceases_or_kept later with
-  | .inl found => .inl found
-  | .inr before => match listed.ceases_or_kept (Nat.le_succ_of_le later) with
-    | .inl found => .inl found
-    | .inr after => .inr (length_le_of_sub (l := a :: l N)
-        ⟨fun mem => comes.1 (before a (((listed N).2 a).mpr mem)), (listed N).1⟩
-        fun b mem => match mem with
-        | .head _ => ((listed (T + 1)).2 _).mp comes.2
-        | .tail _ mem => ((listed (T + 1)).2 b).mp (after b (((listed N).2 b).mpr mem)))
-
-/-- So where coming to be recurs and from step `T` on at most `B` are listed, each coming to
-be not preceded by a ceasing lengthens the list, and the list cannot pass `B`. -/
-theorem ceases_within (listed : Listed p l) {T B : Nat}
-    (bounded : ∀ t, T ≤ t → (l t).length ≤ B) (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
-    ∀ k N, T ≤ N → B ≤ (l N).length + k → ∃ t a, N ≤ t ∧ CeasesToBe (p a) t
-  | 0, N, from_, full => match coming N with
-    | ⟨_, _, later, comes⟩ => match listed.ceases_or_more later comes with
-      | .inl found => found
-      | .inr more => absurd (Nat.lt_of_lt_of_le more (Nat.le_trans
-          (bounded _ (Nat.le_trans from_ (Nat.le_succ_of_le later))) full)) (Nat.lt_irrefl _)
-  | k + 1, N, from_, room => match coming N with
-    | ⟨M, _, later, comes⟩ => match listed.ceases_or_more later comes with
-      | .inl found => found
-      | .inr more =>
-        match ceases_within listed bounded coming k (M + 1)
-          (Nat.le_trans from_ (Nat.le_succ_of_le later))
-          (Nat.le_trans room (Nat.le_trans (Nat.le_of_eq (Nat.succ_add (l N).length k).symm)
-            (Nat.add_le_add_right more k))) with
-        | ⟨t, b, after, ceases⟩ => ⟨t, b, Nat.le_trans (Nat.le_succ_of_le later) after, ceases⟩
-
-/-- The bounded law: where from some step on at most `B` are listed, coming to be at
-arbitrarily late steps needs ceasing to be at arbitrarily late steps. -/
-theorem ceasing_of_coming (listed : Listed p l) {T B : Nat}
-    (bounded : ∀ t, T ≤ t → (l t).length ≤ B) (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
-    ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
-  fun N => match listed.ceases_within bounded coming B (N + T) (Nat.le_add_left T N)
-      (Nat.le_add_left B _) with
-    | ⟨t, a, later, ceases⟩ => ⟨t, a, Nat.le_trans (Nat.le_add_right N T) later, ceases⟩
-
-/-- So where from some step on at most `B` are listed, coming to be recurs exactly when
-ceasing to be does: the law of a finite family (`coming_recurs_iff`) needs only a list
-bounded from some step on. -/
-theorem coming_iff_ceasing (listed : Listed p l) {T B : Nat}
-    (bounded : ∀ t, T ≤ t → (l t).length ≤ B) :
-    (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔ ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
-  ⟨listed.ceasing_of_coming bounded, listed.coming_of_ceasing⟩
-
 /-- The census balance across a step: the list after it with the members that ceased to be
 is the list before it with the members that came to be. The members kept across the step
 are counted alike on both lists. -/
@@ -456,6 +350,113 @@ theorem comings_within (listed : Listed p l) (S n : Nat) :
       (l (S + n)).length + total (steps S n) (fun t => ceasings (l t) p t) :=
   Nat.le_trans (Nat.le_add_left _ (l S).length) (Nat.le_of_eq (listed.over_stretch S n).symm)
 
+/-- Read of recurrence, the balance is exact: ceasing to be recurs exactly when, from each
+step, the list at some later step is shorter than the list at the start with the members
+that came to be between. -/
+theorem ceasing_iff_shortfall (listed : Listed p l) :
+    (∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) ↔
+      ∀ N, ∃ n, (l (N + n)).length <
+        (l N).length + total (steps N n) fun t => comings (l (t + 1)) p t :=
+  ⟨fun ceasing N => match ceasing N with
+    | ⟨t, a, later, ceases⟩ => match le_dest later with
+      | ⟨m, same⟩ =>
+        have ceased : 0 < total (steps N (m + 1)) fun t => ceasings (l t) p t :=
+          Nat.lt_of_lt_of_le
+            (same ▸ total_pos_of_mem (((listed t).2 a).mp ceases.1) (mark_pos.mpr ceases))
+            (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (steps_last _ N m).symm))
+        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right ceased)
+          (Nat.le_of_eq (listed.over_stretch N (m + 1)))⟩,
+   fun shortfall N => match shortfall N with
+    | ⟨n, short⟩ =>
+      match total_pos (steps N n)
+        (pos_of_exceeds short (Nat.le_of_eq (listed.over_stretch N n).symm)) with
+      | ⟨t, mem, ceased⟩ => match total_pos (l t) ceased with
+        | ⟨a, _, ceases⟩ => ⟨t, a, steps_mem mem, mark_pos.mp ceases⟩⟩
+
+/-- And coming to be recurs exactly when, from each step, the list at some later step with
+the members that ceased to be between is longer than the list at the start. -/
+theorem coming_iff_excess (listed : Listed p l) :
+    (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔
+      ∀ N, ∃ n, (l N).length <
+        (l (N + n)).length + total (steps N n) fun t => ceasings (l t) p t :=
+  ⟨fun coming N => match coming N with
+    | ⟨t, a, later, comes⟩ => match le_dest later with
+      | ⟨m, same⟩ =>
+        have came : 0 < total (steps N (m + 1)) fun t => comings (l (t + 1)) p t :=
+          Nat.lt_of_lt_of_le
+            (same ▸ total_pos_of_mem (((listed (t + 1)).2 a).mp comes.2) (mark_pos.mpr comes))
+            (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (steps_last _ N m).symm))
+        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right came)
+          (Nat.le_of_eq (listed.over_stretch N (m + 1)).symm)⟩,
+   fun excess N => match excess N with
+    | ⟨n, short⟩ =>
+      match total_pos (steps N n)
+        (pos_of_exceeds short (Nat.le_of_eq (listed.over_stretch N n))) with
+      | ⟨t, mem, came⟩ => match total_pos (l (t + 1)) came with
+        | ⟨a, _, comes⟩ => ⟨t, a, steps_mem mem, mark_pos.mp comes⟩⟩
+
+/-- The census law: where what holds is listed at each step, ceasing to be at arbitrarily
+late steps needs coming to be at arbitrarily late steps. Ceasings recurring accumulate past
+any list at the start, and only comings make up the difference. -/
+theorem coming_of_ceasing (listed : Listed p l)
+    (ceasing : ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) :
+    ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t :=
+  listed.coming_iff_excess.mpr fun N =>
+    match recurring_accumulates (q := fun t => ceasings (l t) p t) (fun M =>
+        match ceasing M with
+        | ⟨t, a, later, ceases⟩ =>
+          ⟨t, later, total_pos_of_mem (((listed t).2 a).mp ceases.1) (mark_pos.mpr ceases)⟩)
+        N ((l N).length + 1) with
+    | ⟨n, many⟩ => ⟨n, Nat.lt_of_lt_of_le many (Nat.le_add_left _ _)⟩
+
+/-- Where at most `K` are listed at arbitrarily late steps, coming to be at arbitrarily late
+steps needs ceasing to be at arbitrarily late steps: comings recurring accumulate past `K`,
+and the list returns to at most `K`. -/
+theorem ceasing_of_returning (listed : Listed p l) {K : Nat}
+    (returns : ∀ N, ∃ t, N ≤ t ∧ (l t).length ≤ K)
+    (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  listed.ceasing_iff_shortfall.mpr fun N =>
+    match recurring_accumulates (q := fun t => comings (l (t + 1)) p t) (fun M =>
+        match coming M with
+        | ⟨t, a, later, comes⟩ =>
+          ⟨t, later, total_pos_of_mem (((listed (t + 1)).2 a).mp comes.2) (mark_pos.mpr comes)⟩)
+        N (K + 1) with
+    | ⟨m, many⟩ => match returns (N + m) with
+      | ⟨_, later, few⟩ => match le_dest later with
+        | ⟨k, same⟩ => ⟨m + k, Nat.lt_of_le_of_lt
+            (Nat.le_trans (Nat.le_of_eq (congrArg (fun s => (l s).length)
+              (same.trans (Nat.add_assoc N m k)).symm)) few)
+            (Nat.lt_of_lt_of_le many (Nat.le_trans (steps_mono _ N m k) (Nat.le_add_left _ _)))⟩
+
+/-- The bounded law: where from some step on at most `B` are listed, coming to be at
+arbitrarily late steps needs ceasing to be at arbitrarily late steps. -/
+theorem ceasing_of_coming (listed : Listed p l) {T B : Nat}
+    (bounded : ∀ t, T ≤ t → (l t).length ≤ B) (coming : ∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  listed.ceasing_of_returning
+    (fun N => ⟨N + T, Nat.le_add_right N T, bounded _ (Nat.le_add_left T N)⟩) coming
+
+/-- So where from some step on at most `B` are listed, coming to be recurs exactly when
+ceasing to be does: the law of a finite family (`coming_recurs_iff`) needs only a list
+bounded from some step on. -/
+theorem coming_iff_ceasing (listed : Listed p l) {T B : Nat}
+    (bounded : ∀ t, T ≤ t → (l t).length ≤ B) :
+    (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔ ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  ⟨listed.ceasing_of_coming bounded, listed.coming_of_ceasing⟩
+
+/-- The rate law: where at most `B t` are listed at each step `t`, and from each step the
+members coming to be over some stretch outnumber the bound at its end, ceasing to be
+recurs. A bound however large is outnumbered by comings that outpace it; no bound growing
+without end, however slowly, makes ceasing recur by itself (`World.slow_world`). -/
+theorem ceasing_of_outpacing (listed : Listed p l) {B : Nat → Nat}
+    (bounded : ∀ t, (l t).length ≤ B t)
+    (outpacing : ∀ N, ∃ n, B (N + n) < total (steps N n) fun t => comings (l (t + 1)) p t) :
+    ∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t :=
+  listed.ceasing_iff_shortfall.mpr fun N => match outpacing N with
+    | ⟨n, more⟩ => ⟨n, Nat.lt_of_le_of_lt (bounded (N + n))
+        (Nat.lt_of_lt_of_le more (Nat.le_add_left _ _))⟩
+
 end Listed
 
 /-! ## Censuses -/
@@ -493,6 +494,25 @@ theorem DependenceCensus.forming_iff_dissolving {W : Web F C}
       | ⟨t, g, c, later, forms⟩ => ⟨t, (g, c), later, forms⟩) N with
     | ⟨t, d, later, dissolves⟩ => ⟨t, d.1, d.2, later, dissolves⟩,
    census.forming_of_dissolving⟩
+
+instance decideForms (W : Web F C) [∀ t g c, Decidable (W.requires t g c)] (t : Nat) (g : F)
+    (c : C) : Decidable (W.Forms t g c) :=
+  instDecidableAnd
+
+instance decideDissolves (W : Web F C) [∀ t g c, Decidable (W.requires t g c)] (t : Nat)
+    (g : F) (c : C) : Decidable (W.Dissolves t g c) :=
+  instDecidableAnd
+
+/-- The census balance read of dependence: over any stretch, the dependences holding at the
+end with those that dissolved are those holding at the start with those that formed
+(`Listed.over_stretch`). -/
+theorem DependenceCensus.over_stretch {W : Web F C} [∀ t g c, Decidable (W.requires t g c)]
+    {deps : Nat → List (F × C)} (census : W.DependenceCensus deps) (S n : Nat) :
+    (deps (S + n)).length + total (steps S n) (fun t => total (deps t) fun d =>
+      mark (W.Dissolves t d.1 d.2)) =
+      (deps S).length + total (steps S n) (fun t => total (deps (t + 1)) fun d =>
+        mark (W.Forms t d.1 d.2)) :=
+  Listed.over_stretch census S n
 
 variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
 

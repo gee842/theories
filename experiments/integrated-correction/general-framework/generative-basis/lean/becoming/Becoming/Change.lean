@@ -240,21 +240,27 @@ theorem Recurs.mono {as : List α} {e e' : α → Nat → Prop} (imp : ∀ a t, 
   fun N => match recurs N with
   | ⟨t, a, later, mem, holds⟩ => ⟨t, a, later, mem, imp a t holds⟩
 
-/-- Where a quantity is positive at some member at arbitrarily late steps, its totals over
-stretches from any step exceed every bound. -/
+/-- Where a quantity is positive at arbitrarily late steps, its totals over stretches from
+any step exceed every bound. -/
+theorem recurring_accumulates {q : Nat → Nat} (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < q t)
+    (N : Nat) : ∀ K, ∃ n, K ≤ total (steps N n) q
+  | 0 => ⟨0, Nat.zero_le _⟩
+  | K + 1 => match recurring_accumulates recurs N K with
+    | ⟨n, many⟩ => match recurs (N + n) with
+      | ⟨_, later, positive⟩ => match le_dest later with
+        | ⟨m, same⟩ => ⟨n + m + 1, Nat.le_trans
+            (Nat.add_le_add (Nat.le_trans many (steps_mono q N n m))
+              (Nat.lt_of_lt_of_le positive
+                (Nat.le_of_eq (congrArg q (same.trans (Nat.add_assoc N n m))))))
+            (Nat.le_of_eq (steps_last q N (n + m)).symm)⟩
+
+/-- So where a quantity is positive at some member of a finite family at arbitrarily late
+steps, the family's totals over stretches from any step exceed every bound. -/
 theorem Recurs.accumulates {as : List α} {r : α → Nat → Nat}
     (recurs : Recurs as fun a t => 0 < r a t) (N : Nat) :
-    ∀ K, ∃ n, K ≤ total (steps N n) fun t => total as fun a => r a t
-  | 0 => ⟨0, Nat.zero_le _⟩
-  | K + 1 => match Recurs.accumulates recurs N K with
-    | ⟨n, many⟩ => match recurs (N + n) with
-      | ⟨_, _, later, mem, positive⟩ => match le_dest later with
-        | ⟨m, same⟩ => ⟨n + m + 1, Nat.le_trans
-            (Nat.add_le_add (Nat.le_trans many (steps_mono _ N n m))
-              (Nat.lt_of_lt_of_le (total_pos_of_mem mem positive) (Nat.le_of_eq
-                (congrArg (fun s => total as fun a => r a s)
-                  (same.trans (Nat.add_assoc N n m))))))
-            (Nat.le_of_eq (steps_last _ N (n + m)).symm)⟩
+    ∀ K, ∃ n, K ≤ total (steps N n) fun t => total as fun a => r a t :=
+  recurring_accumulates (fun M => match recurs M with
+    | ⟨t, _, later, mem, positive⟩ => ⟨t, later, total_pos_of_mem mem positive⟩) N
 
 /-- What exceeds `K` and is at most `K` and `R` together leaves `R` positive. -/
 theorem pos_of_exceeds {K X R : Nat} (many : K + 1 ≤ X) (within : X ≤ K + R) : 0 < R :=

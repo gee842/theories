@@ -31,7 +31,17 @@ giving needs uptake there; a fall is taken from.
   census of a finite world is bounded (`World.Finite.countedWithin`), so the law of
   finite worlds is a case (`World.Finite.arising_iff_ceasing`); `procession`, with one
   relatum active at a time among infinitely many, keeps arising and ceasing
-  (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). Read of
+  (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). The bound may
+  grow between: where at most `B t` relata are active at each step `t`
+  (`World.CountedBy`) and `B` returns to at most `K` at arbitrarily late steps, the two
+  still recur together (`World.CountedBy.arising_iff_ceasing`). A bound growing without
+  end does not keep them together, however slowly it grows: in `slow B`, for any
+  non-decreasing, unbounded `B`, the relata below `B t` are active at step `t`, arising
+  recurs and nothing ceases (`World.slow_world`). So a non-decreasing bound keeps arising
+  and ceasing together in every world it counts where it stays within some number, and
+  not where it grows without end; there ceasing recurs exactly where the count falls
+  short of what was there with what arose since (`Listed.ceasing_iff_shortfall`), as
+  where arising outpaces the bound (`Listed.ceasing_of_outpacing`). Read of
   standing, the same law holds under a census of what stands: what stands at the end
   with what ceased to stand is what stood at the start with what came to stand
   (`Web.StandingCensus.over_stretch`), ceasing to stand recurring needs coming to stand
@@ -237,9 +247,13 @@ end Flow
 
 namespace World
 
-/-- At most `B` relata are active at each step, listed each once (`Web.Census`). -/
+/-- At most `B t` relata are active at each step `t`, listed each once (`Web.Census`). -/
+def CountedBy (w : World) (B : Nat → Nat) : Prop :=
+  ∃ alive, w.web.Census alive ∧ ∀ t, (alive t).length ≤ B t
+
+/-- At most `B` relata are active at each step: counted by a bound that does not grow. -/
 def CountedWithin (w : World) (B : Nat) : Prop :=
-  ∃ alive, w.web.Census alive ∧ ∀ t, (alive t).length ≤ B
+  w.CountedBy fun _ => B
 
 variable {w : World}
 
@@ -256,6 +270,17 @@ theorem CountedWithin.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)
     (counted : w.CountedWithin B) : w.ArisingRecurs ↔ w.CeasingRecurs :=
   match counted with
   | ⟨_, census, bounded⟩ => w.web.unceasing_iff_bounded census (T := 0) fun t _ => bounded t
+
+/-- Where the bound returns to at most `K` at arbitrarily late steps, however large it grows
+between, arising recurs exactly when ceasing does (`Listed.ceasing_of_returning`). -/
+theorem CountedBy.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] {B : Nat → Nat}
+    {K : Nat} (counted : w.CountedBy B) (returns : ∀ N, ∃ t, N ≤ t ∧ B t ≤ K) :
+    w.ArisingRecurs ↔ w.CeasingRecurs :=
+  match counted with
+  | ⟨alive, census, bounded⟩ =>
+    ⟨Listed.ceasing_of_returning census fun N => match returns N with
+      | ⟨t, later, low⟩ => ⟨t, later, Nat.le_trans (bounded t) low⟩,
+     arising_of_ceasing ⟨alive, census⟩⟩
 
 /-- Every census of a finite world counts within the number of its relata. -/
 theorem Finite.countedWithin [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
@@ -358,6 +383,57 @@ theorem procession_world :
    fun N => ⟨N, N + 1, Nat.le_refl N, Nat.ne_of_gt (Nat.lt_succ_self N), rfl⟩,
    fun N => ⟨N, N, Nat.le_refl N, rfl, Nat.ne_of_lt (Nat.lt_succ_self N)⟩,
    fun ⟨all, _, every⟩ => beyond_not_mem all (every (beyond all))⟩
+
+namespace Slow
+
+/-- Relatum `x` is active at step `t` while below `B t`. -/
+def web (B : Nat → Nat) : Web Nat Nat where
+  level _ _ := 0
+  active t x := x < B t
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+theorem length : ∀ n, (Cycle.present n).length = n
+  | 0 => rfl
+  | n + 1 => congrArg Nat.succ (length n)
+
+/-- The relata below `B t`, listed as the cycle lists its formations, each once. -/
+theorem census (B : Nat → Nat) : (web B).Census fun t => Cycle.present (B t) :=
+  fun t => ⟨Cycle.distinct (B t), fun x => ⟨Cycle.listed (B t) x, Cycle.present_lt (B t) x⟩⟩
+
+theorem grows_between {B : Nat → Nat} (grows : ∀ t, B t ≤ B (t + 1)) :
+    ∀ {s t}, s ≤ t → B s ≤ B t
+  | _, _, .refl => Nat.le_refl _
+  | _, _, .step within => Nat.le_trans (grows_between grows within) (grows _)
+
+end Slow
+
+namespace World
+
+/-- Relatum `x` is active at step `t` while below `B t`. -/
+def slow (B : Nat → Nat) : World :=
+  ⟨Nat, Flow.still, Slow.web B⟩
+
+instance slow_decided (B : Nat → Nat) : ∀ t x, Decidable ((slow B).web.active t x) :=
+  fun t x => Nat.decLt x (B t)
+
+/-- No bound growing without end keeps arising and ceasing together, however slowly it
+grows. In `slow B`, counted by a non-decreasing, unbounded `B`, relatum `B t` arises across
+each step at which the bound grows, and nothing ceases. -/
+theorem slow_world {B : Nat → Nat} (grows : ∀ t, B t ≤ B (t + 1))
+    (unbounded : ∀ n, ∃ t, n < B t) :
+    (slow B).CountedBy B ∧ (slow B).ArisingRecurs ∧ ∀ t x, ¬ (slow B).web.Ceases t x :=
+  ⟨⟨fun t => Cycle.present (B t), Slow.census B, fun t => Nat.le_of_eq (Slow.length (B t))⟩,
+   fun N => match unbounded (B N) with
+    | ⟨T, higher⟩ => match Nat.lt_or_ge T N with
+      | .inl earlier => absurd higher
+          (Nat.not_lt_of_ge (Slow.grows_between grows (Nat.le_of_lt earlier)))
+      | .inr later => match rises_between (q := B) later higher with
+        | ⟨t, from_, _, up⟩ => ⟨t, B t, from_, Nat.lt_irrefl (B t), up⟩,
+   fun t _ ceases => ceases.2 (Nat.lt_of_lt_of_le ceases.1 (grows t))⟩
+
+end World
 
 /-! ## Worlds come to rest -/
 
