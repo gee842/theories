@@ -192,6 +192,10 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 **Continued generation.** A formation arises across a step when it is inactive before and active after it; generation is unceasing when some formation arises at arbitrarily late steps. When arising at steps without renewal is paid by a finite family of conditions, unceasing generation makes renewal recur, while renewal can recur with nothing arising: under these premises unceasing generation is strictly stronger than recurring renewal. Generation by consumption ceases, and substitution among unrenewed conditions defers the end without escaping it. Only the “unceasing” of Ren's “unceasingly creating more 生” is stated, not “more”.
 
+**更多。** 把条件读作数量：每步参与的形成从条件取用多少、给予多少（[Becoming.Flow](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)，[more-needs-renewers](../results/records/more-needs-renewers.md)）。流平衡时，条件水平的每次变化恰是取用与给予之差；每次上升于是都由某个活跃的给予者造成，上面“每次上升都由形成的更新造成”从前提变为定理。“更多”读作：对每个数，从某步起至少有那么多形成从一个有限的条件家族取用。这样的生成需要家族所得的给予没有最终的界；每个形成的给予有限时，还需要给予者越来越多。所以复现的更新、不息的生成与不止地更多构成严格的层级，每一层需要的更新都比前一层多。作者把它读作“生生”的一种结构：更多的生需要越来越多给予更新的形成。可能性、多样性与复杂性的上升是“更多”的另外读法，这里不陈述。
+
+**More.** Read as amounts, conditions are taken and given by the formations taking part in each step. In a balanced flow every rise is made by an active giver, so the premise above becomes a theorem. Generation more without end, with ever more formations taking from a finite family from some step on, needs supply with no eventual bound and, when each formation gives at most a fixed amount, ever more givers. Recurring renewal, unceasing generation and more without end form a strict hierarchy. Diversity, complexity and possibility are not stated.
+
 **演化是具体的机制，不是一切变化的同义词。** 传递、重建、变异与选择各有其关系，须各自说明（[演化之论](THE-THEORY-OF-EVOLUTION.md)、[演化组织](EVOLUTIONARY-ORGANIZATION.md)）。已检查的连接如下：
 
 - 继承的结构排列改变后续复制（[inherited-structural-copying](../results/records/inherited-structural-copying.md)）；
@@ -414,7 +418,7 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 | 科学探究的必要关系根基（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)） | 开放 | 由独立陈述的成就建立核心的不可或缺性 |
 | 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持整段分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)） | 放宽 `Dependent`（缓冲、储备、滞后）；形成的个体化 |
 | 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）；条件的对应纪律已给出一条（[condition-correspondence-discipline](../results/records/condition-correspondence-discipline.md)），其时间次序、对效果的敏感与对整段读法的陈述开放；不依赖运行的读法；带数量与更新率的网；继续生成的成分 |
-| 继续生成 | 陈述在整体的继续上：在有限条件、生起须支付、更新由形成造成的前提下，不息的生成需要更新复现，更新不蕴含生成（[unceasing-generation-needs-renewal](../results/records/unceasing-generation-needs-renewal.md)） | “更多”、多样性与复杂性；生成成分进入 `living` 的读法；与 `universal_reason` 的新的活的内容接通 |
+| 继续生成 | 陈述在整体的继续上：在有限条件、生起须支付、更新由形成造成的前提下，不息的生成需要更新复现，更新不蕴含生成（[unceasing-generation-needs-renewal](../results/records/unceasing-generation-needs-renewal.md)）；读作取用者数目的“更多”需要供给与给予者没有最终的界（[more-needs-renewers](../results/records/more-needs-renewers.md)） | 可能性、多样性与复杂性的上升；生成成分进入 `living` 的读法；与 `universal_reason` 的新的活的内容接通 |
 | 共同活动中的归属 | 相对于动作的 but-for 差别制造在多重决定下与关系参与分离；整段与步层面的检验分开（[joint-difference-making](../results/records/joint-difference-making.md)） | 更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任 |
 | 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理。回程、视界、共同活动与替代（P7）经[第二次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md)：数学接受，侵蚀与 but-for 的定义已修正，十五项更正已处理。C 在各读法下的排序（P8）、条件的对应纪律（P9）与 P7b 的更正经[第三次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md)：数学接受，侵蚀改为比较那一步的所需，but-for 要求动作可取，排序、替代与交互的说法收窄，十二项更正已处理。A 的外在论辩护、N 的哲学根据未经独立审查 | 进行这些审查 |
 | 经验对应 | 共同条件、各机制的实际实现 | 识别与可区分的检验 |
@@ -442,14 +446,15 @@ The core (L0 with its two foundation modules, and L1–L4) imports nothing outsi
 | L3 | [Becoming.Joint](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean) | 相对于动作的 but-for 差别制造；多重决定；整段与步层面的检验 | 20 |
 | L3 | [Becoming.Substitution](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) | 支持门控定律中的替代：整段读法下保持消耗，逐步读法在失去支持之前记入 | 7 |
 | L3 | [Becoming.Generation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean) | 生起与不息；不息的生成需要更新复现，更新不蕴含生成；替代推迟终结 | 18 |
+| L3 | [Becoming.Flow](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean) | 流的账目；平衡的流中上升由给予者造成；不止地更多需要没有最终界的供给与给予者；不息的生成尚不是更多 | 28 |
 | L4 | [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 前提卡、G0 刻画、极小性、普遍理由；整段、逐步与关系层的读法 | 35 |
 | L4 | [Becoming.Ranking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) | C 在整段与逐步读法下的排序；二元定律族中节制排在过度汲取之上 | 27 |
 | L4 | [Becoming.Correspondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean) | 条件的对应纪律：交互；惰性条件不连通；连通由活的使用造成 | 25 |
 | 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广；整段读法即既有的关系清单 | 34 |
 
-[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 283 项定理、541 项声明审计，公理报告全部为空；核心闭包共 16 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
+[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 311 项定理、588 项声明审计，公理报告全部为空；核心闭包共 17 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 
-The consolidated checker and receipt cover 283 theorems and 541 declaration audits, all with empty axiom reports; the core closure has 16 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
+The consolidated checker and receipt cover 311 theorems and 588 declaration audits, all with empty axiom reports; the core closure has 17 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
 
 ## 10. 术语表 / Glossary
 
@@ -474,6 +479,8 @@ The consolidated checker and receipt cover 283 theorems and 541 declaration audi
 | 断裂（事件） | breaking | 在断裂某个依存之步汲取该条件 | `BreakingOn`、`BreakingAt` |
 | 生起 | arising | 形成跨某步由不活跃变为活跃 | `Arises` |
 | 不息 | unceasing generation | 某个形成在任意晚的步生起；同一形成可以再生起 | `Unceasing` |
+| 流 | flow | 每步参与的形成从条件取用与给予的量；平衡时水平的变化恰是二者之差 | `Flow`、`Balances` |
+| 不止地更多 | more without end | 对每个数，从某步起至少有那么多形成从有限的条件家族取用 | `More` |
 | 侵蚀 | undermining | 在某步汲取某条件，而该步之后一个依存不被满足，而它在不间断成立期间曾以不小于现在的所需被满足；逐步读法的 living 是活跃且不侵蚀 | `MetSince`、`UnderminingOn`、`UnderminingAt` |
 | 回程 | return | 某步成立的依存在以后某步（或 `p` 步之内）再被满足 | `Returns`、`ReturnsWithin`、`RenewedWithin` |
 | 视界 | horizon | 有限的前缀；两次运行在其前相同 | `Run.AgreeUpTo` |

@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-101 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+102 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -75,6 +75,7 @@
 | [材料准备的实际输出 / Actual material preparation output](theories/becoming/results/records/material-preparation-output.md) | recorded-checked | [MaterialMaturation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean) |
 | [实际指令接续候选证据 / Executed instructions transport candidate evidence](theories/becoming/results/records/mediated-evidence-transport.md) | recorded-checked | [MediatedControl.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean) |
 | [生成之论脊柱上的普遍元伦理核心：G0 由种子与边界中立刻画 / The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](theories/becoming/results/records/metaethical-core-characterization.md) | recorded-checked | [Metaethics.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) |
+| [更多需要更多更新者：不止地更多的生成需要没有最终界的供给，每个形成给予有限时需要没有最终界的给予者 / More needs more renewers: generation more without end needs supply with no eventual bound and, with bounded capacity, givers with no eventual bound](theories/becoming/results/records/more-needs-renewers.md) | recorded-checked | [Flow.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean) |
 | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](theories/becoming/results/records/multivalued-joining-common-structure.md) | recorded-checked | [ExplanatoryJoiningBranches.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) |
 | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](theories/becoming/results/records/naming-attention-coverage.md) | reviewed-scoped | [README.md](experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md) |
 | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](theories/becoming/results/records/open-form-realization-under-revision.md) | recorded-checked | [OpenFutureRevision.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) |

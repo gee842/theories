@@ -172,8 +172,8 @@
     "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T031125.452529Z）：Becoming.Dependence 51 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 MetSince.now、NewNeed 与 Pinned 的定理，及 P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 14 个模块（含只作导入的根模块与桥接），共 283 项定理／541 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 16 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T031125.452529Z): all 51 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's MetSince.now and the NewNeed and Pinned theorems, and P9b's FallingNeed, RisingNeed and Gap theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 14 modules (including the import-only root and the bridge) with 283 theorems/541 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 16 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T032004.394466Z）：Becoming.Dependence 51 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 MetSince.now、NewNeed 与 Pinned 的定理，及 P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 15 个模块（含只作导入的根模块与桥接），共 311 项定理／588 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 17 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T032004.394466Z): all 51 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's MetSince.now and the NewNeed and Pinned theorems, and P9b's FallingNeed, RisingNeed and Gap theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 15 modules (including the import-only root and the bridge) with 311 theorems/588 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 17 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -245,19 +245,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d6559d11290b1f1fc318e83b21e7cfc441ee952681118fe7fec26431203b777d",
+      "sha256": "ce2c455e5ecdbbfbfaa1f7d87544eb5fc32311d36efbcc2614813115ae9d32e9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c678c6122a5af4a43e576f411a7d4b6a1c5ca4dfd8a0eb95ba0b2311f38ddb02",
+      "sha256": "f21826582ae940fd73aa3985475c42d41a11f36a963c8c01a292461d176ce4a4",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "4053128ae9e95e03ab61732778ed4afb10f476053dfa2c984a72dcbb4961865f",
+      "sha256": "88eaff260f799fdc9b317c96c891749f12b820a863f8fae968f806eb68b4e652",
       "declarations": []
     },
     {
@@ -328,6 +328,10 @@
     {
       "zh": "2026-10-09：P10 新增 Becoming.Generation 后，合并检查器重跑（20261009T031125.452529Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P10 added Becoming.Generation, the consolidated checker was rerun (20261009T031125.452529Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P11 新增 Becoming.Flow 后，合并检查器重跑（20261009T032004.394466Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P11 added Becoming.Flow, the consolidated checker was rerun (20261009T032004.394466Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

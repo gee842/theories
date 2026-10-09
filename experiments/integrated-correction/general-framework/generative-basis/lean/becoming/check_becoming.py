@@ -33,7 +33,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Generation", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence",
+        "Becoming.Generation", "Becoming.Flow", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence",
         "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
@@ -109,6 +109,13 @@ SCOPE = (
     "nothing arises; generation by consumption ceases; and a formation arising again and again on "
     "a renewed condition meets every premise, while the stepwise reading withholds each of its "
     "blooms and the reading over cycles of two credits it. "
+    "Flow: when every change of a condition's level is what the formations taking part take "
+    "and give, the family's total plus everything taken equals its total before plus everything "
+    "given, every rise is made by an active giver, and generation that is more without end, "
+    "with ever more formations taking from a finite family from some step on, needs supply that "
+    "no eventual bound bounds and, each formation giving at most a fixed amount, renewers that "
+    "no eventual bound bounds; renewers and growers arising at every step meet these premises, "
+    "and the unceasing bloom is not more without end. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "

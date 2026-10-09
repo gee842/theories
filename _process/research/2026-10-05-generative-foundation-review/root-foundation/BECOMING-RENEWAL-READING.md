@@ -734,6 +734,58 @@ Integration: §7.3 第 4 项与判据 (d) 部分承接；substitution-preserves-
 
 **边界。** 不含伦理谓词；不推出“不息更好”或任何排序；不陈述“更多”、多样性与复杂性；生成成分没有加入 living 的读法；见证都是最小见证；`renews` 与支付前提是应用义务。本节尚未经独立审查。
 
+## 14. 更多：流、供给与更新者（P11）
+
+2026-10-09。§13 只形式化了 Ren 原话中的“不断…生”。本节陈述“更多”的一种读法，并证明它需要什么。成果记录：[more-needs-renewers](../../../../theories/becoming/results/records/more-needs-renewers.md)。
+
+依存网只记录条件的水平。为了说“更多”，本节把条件读作数量：每一步参与的形成从条件取用多少、给予多少（流）。“更多”读作：对每个数，从某步起至少有那么多形成从一个有限的条件家族取用。这是作者的读法：更多的形成依赖同一组条件而活。可能性、多样性与复杂性的上升是“更多”的另外读法，这里不陈述。
+
+```text
+Result(s): 复用 unceasing-generation-needs-renewal（total、stock、RenewedBy、Arises、Unceasing、Bloom）、
+           becoming-dependence-dynamics（依存网）；新增 more-needs-renewers（L3）
+Delta: 条件作为形成取用与给予的数量；平衡的流使每次上升都由活跃的给予者造成，P10 的前提 RenewedBy 成为定理；
+       账目在一步与任意一段上成立；不止地更多需要供给没有最终的界，每个形成给予有限时需要更新者的数目没有最终的界；
+       不息的生成尚不是更多
+Supplied premises / correspondence: 流记录实际的取用与给予，present 每步只列每个参与的形成一次；
+       “更多”读作从某步起取用者至少任意多；Capacity：每个形成每步给予家族的量有一个固定的上界
+Evidence: Becoming.Flow 28 项定理；合并检查器回执（见记录）
+Boundary: 不含伦理谓词；只读取用者的数目，不陈述多样性、复杂性与可能性；生成成分没有加入 living 的读法
+Integration: unceasing-generation-needs-renewal 的下一步（陈述“更多”）部分承接
+```
+
+[Becoming.Flow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)（L3）：
+
+| 声明 | 内容 |
+|---|---|
+| `Flow`、`taken`、`given`、`Balances`、`Acting` | 每步参与的形成，以及每个形成从每个条件取用与给予的量。流平衡一个依存网：条件水平的每次变化恰是取用与给予之差。只有活跃的形成给予 |
+| `count`、`steps`、`load`、`supply`、`takers`、`renewers` | 有限列表上的计数与连续的步（总和 `total` 来自 `Becoming.Generation`）；家族每步被取用与被给予的总量；从家族取用与给予家族的形成数目 |
+| `ledger`、`accumulates` | 一步之后家族的总水平加上全部取用，等于之前的总水平加上全部给予；对任意一段步也成立 |
+| `Balances.renewedBy` | 平衡且只有活跃形成给予时，每次上升都由某个活跃的给予者造成：§13 的对应前提 `RenewedBy` 在这里成为定理 |
+| `More`、`Capacity` | 不止地更多：对每个数，从某步起每一步至少有那么多形成从家族取用。每个形成每步给予家族的量至多一个固定量 |
+| `More.supply_unbounded` | 不止地更多需要供给没有最终的界：没有一个从某步起成立的界，能界住家族所得的给予 |
+| `More.renewers_unbounded` | 每个形成给予有限时，不止地更多需要给予者的数目没有最终的界 |
+| `Garden.more` | 每一步都生起一个更新者和一个生长者：流平衡，只有活跃者给予，每个给予至多一单位，生成不息，并且不止地更多 |
+| `Bloom.not_more` | §13 的开花反复生起，生成不息，流平衡，但至多一个形成取用：不息的生成尚不是更多 |
+
+**解读。**
+
+- **一个层级。** 在平衡的流中，复现的更新不蕴含不息的生成（`renewal_without_generation`），不息的生成不蕴含不止地更多（`Bloom.not_more`）。每一层需要的更新都比前一层多：不息的生成需要更新复现（§13），不止地更多需要供给没有最终的界；每个形成给予有限时，还需要给予者越来越多。
+- **生生。** 由 `RenewedBy`，给予者是展开之内的形成。所以在 `Capacity` 之下，更多的生需要越来越多给予更新的形成参与：生成的条件须由越来越多的形成给予。它们是否在展开中生起，定理没有陈述。这是作者对“生生”的一种结构读法（AI 论证），不替代 Ren 的原话，也不推出它是好的。若一个形成的给予可以无界地增长，更多可以由同一个给予者的增长承担；那也是一种“更多”，只是落在给予的量上。定理在 `Capacity` 下才把供给转为给予者的数目。
+- **持续的更多。** `More` 取的是持续的更多：从某步起一直至少那么多。只在个别步上任意多的情形，不受这一定理约束。
+- **与 §13 的关系。** §13 中“每次上升都由形成的更新造成”是对应前提；在平衡的流中它是定理，前提移到了流本身：流须记录实际的取用与给予。`Garden` 的更新者凭空给予，与 `Bloom` 的太阳一样，是因为这一表示省略了它们自身的条件。若照实计入，它们也须被更新：更多的要求沿展开传递下去，没有一个有限的部分独自承担。这与 §13 的 `conserved_ceases` 是同一件事的两面。
+
+**作者反审。**
+
+*反驳 1：这只是记账恒等式。* `ledger` 与 `accumulates` 确是恒等式，由 `Balances` 的定义得出。新的是由它得出的必要条件：持续更多所需的供给与给予者没有最终的界，以及两个见证给出的严格分离。
+
+*反驳 2：把“更多”读作取用者的数目太窄。* 是。更多种类、更复杂的结构、更多的可能性，都是“更多”的读法，这里都没有陈述。这里只读一种：更多的形成依赖同一组条件而活。
+
+*反驳 3：`present` 中重复列出同一个形成会使计数失真。* 对。定理对列表条目成立；把条目读作形成，需要每步每个形成只列一次，这是应用义务，模块说明已写明。
+
+*反驳 4：`Capacity` 是把结论写进前提。* 不是：没有 `Capacity`，`More.supply_unbounded` 仍然成立；`Capacity` 只把供给的无界转为给予者数目的无界。它是对应前提：一个形成的给予受它自身的大小与条件所限。
+
+**边界。** 不含伦理谓词；不推出“更多更好”或任何排序；只读取用者的数目，不陈述多样性、复杂性与可能性；生成成分没有加入 living 的读法；见证都是最小见证；流与 `present` 的对应是应用义务。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -812,3 +864,5 @@ Open: Ren's words on events before the threshold, and a web with amounts and ren
 The core now has 265 theorems and 502 declaration audits, all with empty axiom reports. Open: a tenure through bounded absence, restraint beyond the two-part family, an ordered and effect-sensitive interaction, and Ren's choice of reading. These corrections have not been independently reviewed again.
 
 **P10: continued generation (§13).** No reading of `living` includes further generation (criterion (d)). Ren's words name "a whole direction of unceasingly creating more 生"; `Becoming.Generation` states only its "unceasing" part, and states it on the whole's continuation. A formation arises across a step when it is inactive before and active after it; generation is unceasing when some formation arises at arbitrarily late steps. Suppose arising at a step where no condition of a finite family rises is paid by a fall in one of them. Then unceasing generation makes some condition of the family rise at arbitrarily late steps; and when every rise is made by some active formation renewing the condition, renewing activity recurs. Drawing exactly what is renewed keeps every dependence while nothing arises, so under these premises unceasing generation is strictly stronger than recurring renewal. Generation by consumption ceases (`Growth`); substitution among unrenewed conditions defers the end and does not escape it (`Relay`); and a finite family whose total never rises cannot sustain unceasing generation that lowers it, from which the author argues that no finite part is unceasing on its own. A bloom arising again and again on a condition the sun renews meets every premise; the stepwise working candidate withholds each of its blooms, and the reading over cycles of two credits it. "More", diversity and complexity are not stated, and the generation component has not been added to any reading of `living`. Section 13 has not been independently reviewed.
+
+**P11: more (§14).** Section 13 states only the "unceasing" of Ren's words. `Becoming.Flow` reads conditions as amounts that the formations taking part in each step take and give. A flow balances a web when every change of a condition's level is what is taken from it and given to it. Then the family's total plus everything taken equals its total before plus everything given, over one step and over any stretch. Balance also makes every rise the work of an active giver, so the correspondence premise `RenewedBy` of §13 becomes a theorem. "More" is read as: for every number, from some step on at least that many formations take from a finite family of conditions. That needs supply that no eventual bound bounds; and when each formation gives at most a fixed amount, it needs givers that no eventual bound bounds. Renewers and growers arising at every step meet every premise, while the unceasing bloom of §13 never has more than one formation taking. So recurring renewal, unceasing generation and more without end form a strict hierarchy, each needing more renewal than the one before. The author reads this as one structural sense of 生生: more 生 needs ever more renewing formations. Diversity, complexity and possibility are not stated. Section 14 has not been independently reviewed.

@@ -658,6 +658,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/market-generativity/formal/RegimeTransition.lean)
 
+## more-needs-renewers ← unceasing-generation-needs-renewal
+
+`formal-reuse` — 复用 total、stock、RenewedBy、Arises、Unceasing 与 Bloom 的依存网；Balances.renewedBy 推出该结果的对应前提 RenewedBy。 / Reuses total, stock, RenewedBy, Arises, Unceasing and Bloom's web; Balances.renewedBy derives that result's correspondence premise RenewedBy.
+
+**Producer output / 上游输出:** 有限家族的总水平、生起、不息与更新由形成造成；开花的依存网。 / Finite families' total level, arising, unceasing generation and renewal made by formations; the bloom's web.
+
+**Consumer input / 下游输入:** 账目、更多与层级。 / The ledger, more and the hierarchy.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)
+
+## more-needs-renewers ← becoming-dependence-dynamics
+
+`formal-reuse` — 流平衡的是依存网；Garden 用 Dependent。 / Flows balance webs of dependence; Garden uses Dependent.
+
+**Producer output / 上游输出:** 依存网与 Dependent。 / Webs and Dependent.
+
+**Consumer input / 下游输入:** 流与见证。 / Flows and witnesses.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
 ## multivalued-joining-common-structure ← branching-tests-bisimulation
 
 `formal-reuse` — 检查过的同一接合到模态模型适配。 / Checked adapter from the same joining to the modal model.

@@ -7,6 +7,7 @@ import Becoming.Horizon
 import Becoming.Joint
 import Becoming.Substitution
 import Becoming.Generation
+import Becoming.Flow
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -41,6 +42,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Generation` (L3): formations arise. Unceasing generation paid by a finite
   family of conditions needs their renewal to recur; renewal does not imply
   generation; substitution among unrenewed conditions defers the end.
+* `Becoming.Flow` (L3): conditions as amounts that formations take and give. More
+  generation without end needs supply without bound and, with bounded capacity,
+  renewers without bound; unceasing generation is not yet more.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

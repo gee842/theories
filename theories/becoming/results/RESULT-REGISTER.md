@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-101 migrated records: 97 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+102 migrated records: 98 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -79,6 +79,7 @@
 | `material-preparation-output` | [材料准备的实际输出 / Actual material preparation output](records/material-preparation-output.md) | theorem | recorded-checked |
 | `mediated-evidence-transport` | [实际指令接续候选证据 / Executed instructions transport candidate evidence](records/mediated-evidence-transport.md) | theorem | recorded-checked |
 | `metaethical-core-characterization` | [生成之论脊柱上的普遍元伦理核心：G0 由种子与边界中立刻画 / The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](records/metaethical-core-characterization.md) | theorem | recorded-checked |
+| `more-needs-renewers` | [更多需要更多更新者：不止地更多的生成需要没有最终界的供给，每个形成给予有限时需要没有最终界的给予者 / More needs more renewers: generation more without end needs supply with no eventual bound and, with bounded capacity, givers with no eventual bound](records/more-needs-renewers.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
 | `naming-attention-coverage` | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](records/naming-attention-coverage.md) | assessment | reviewed-scoped |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |

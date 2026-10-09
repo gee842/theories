@@ -163,6 +163,13 @@
         "zh": "生成、维持、转化、退化与消失中，本结果陈述生起与其不息，以及它与更新、消耗和替代的关系；整体的演绎仍开放。",
         "en": "Among generation, maintenance, transformation, degeneration and dissolution, this result states arising and its unceasing, and their relation to renewal, consumption and substitution; the whole deduction remains open."
       }
+    },
+    {
+      "id": "more-needs-renewers",
+      "detail": {
+        "zh": "在平衡的流中，本结果的对应前提 RenewedBy 成为定理；读作取用者数目的“更多”需要供给与给予者没有最终的界；本结果的开花不息却不更多。",
+        "en": "In balanced flows this result's correspondence premise RenewedBy becomes a theorem; “more”, read as the number of takers, needs supply and givers with no eventual bound; this result's bloom is unceasing and not more."
+      }
     }
   ],
   "counterexamples": [
@@ -193,8 +200,8 @@
     "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; families of conditions are finite; the witnesses are minimal; the payment premise and RenewedBy are application duties."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T031125.452529Z）：Becoming.Generation 18 项定理全部空依赖；同一回执覆盖包内 14 个模块（含只作导入的根模块与桥接），共 283 项定理／541 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 16 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T031125.452529Z): all 18 theorems of Becoming.Generation have empty axiom reports; the same receipt covers the package's 14 modules (including the import-only root and the bridge) with 283 theorems/541 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 16 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T032004.394466Z）：Becoming.Generation 18 项定理全部空依赖；同一回执覆盖包内 15 个模块（含只作导入的根模块与桥接），共 311 项定理／588 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 17 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T032004.394466Z): all 18 theorems of Becoming.Generation have empty axiom reports; the same receipt covers the package's 15 modules (including the import-only root and the bridge) with 311 theorems/588 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 17 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -265,19 +272,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d6559d11290b1f1fc318e83b21e7cfc441ee952681118fe7fec26431203b777d",
+      "sha256": "ce2c455e5ecdbbfbfaa1f7d87544eb5fc32311d36efbcc2614813115ae9d32e9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c678c6122a5af4a43e576f411a7d4b6a1c5ca4dfd8a0eb95ba0b2311f38ddb02",
+      "sha256": "f21826582ae940fd73aa3985475c42d41a11f36a963c8c01a292461d176ce4a4",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "4053128ae9e95e03ab61732778ed4afb10f476053dfa2c984a72dcbb4961865f",
+      "sha256": "88eaff260f799fdc9b317c96c891749f12b820a863f8fae968f806eb68b4e652",
       "declarations": []
     },
     {
@@ -303,13 +310,21 @@
     }
   ],
   "next_delta": {
-    "zh": "陈述 Ren 原话中的“更多”：可能性、多样性与复杂性的上升，及其与有限条件的关系；把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通；检验生成成分能否进入 living 的读法而不重复“不损”的代价；带数量与更新率的依存网。",
-    "en": "State the “more” of Ren's words: rising possibility, diversity and complexity, and their relation to finite conditions; connect the generation component to Frame.Novel and to the “new living content” of universal_reason; test whether a generation component can enter a reading of living without repeating the costs of “no harm”; webs with amounts and renewal rates."
+    "zh": "“更多”的一种读法（取用者的数目）已由 more-needs-renewers 陈述；可能性、多样性与复杂性的上升，把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通，以及生成成分能否进入 living 的读法而不重复“不损”的代价，仍开放。",
+    "en": "One reading of “more” (the number of takers) is stated in more-needs-renewers; rising possibility, diversity and complexity, connecting the generation component to Frame.Novel and to the “new living content” of universal_reason, and whether a generation component can enter a reading of living without repeating the costs of “no harm” remain open."
   },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P10，承接判据 (d) 与整合文档 §7.3 第 4 项。",
       "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P10 of the unification plan, taking up criterion (d) and item 4 of §7.3 of the integration note."
+    },
+    {
+      "zh": "2026-10-09：P11 新增 more-needs-renewers，在平衡的流中推出本记录的对应前提 RenewedBy，并陈述“更多”的一种读法；本记录的主张与证明不变，只更新关联与下一步。",
+      "en": "2026-10-09: P11 added more-needs-renewers, which derives this record's correspondence premise RenewedBy in balanced flows and states one reading of “more”; this record's claim and proofs are unchanged, and only its links and next step are updated."
+    },
+    {
+      "zh": "2026-10-09：P11 新增 Becoming.Flow 后，合并检查器重跑（20261009T032004.394466Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P11 added Becoming.Flow, the consolidated checker was rerun (20261009T032004.394466Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }
