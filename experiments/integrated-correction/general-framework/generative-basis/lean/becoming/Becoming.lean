@@ -8,6 +8,7 @@ import Becoming.Joint
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
+import Becoming.Population
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -31,20 +32,25 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
   amounts is decided step by step.
-* `Becoming.Joint` (L3): difference-making, relative to a move that determines the
-  step and can still be taken once a part is withheld, belongs to the joint activity
-  among formations; over a formation's events the run-level outcome is
+* `Becoming.Joint` (L3): difference-making, relative to a move that can still be taken
+  once a part is withheld and read as intended when the move determines the step,
+  belongs to the joint activity among formations; over a formation's events the run-level outcome is
   fixed by the tail, while the step-level test singles out the breaking event.
 * `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
   then until it switches.
-* `Becoming.Generation` (L3): formations arise. Unceasing generation paid by a finite
-  family of conditions needs their renewal to recur; renewal does not imply
-  generation; substitution among unrenewed conditions defers the end.
-* `Becoming.Flow` (L3): conditions as amounts that formations take and give. More
-  generation without end needs supply without bound and, with bounded capacity,
-  renewers without bound; unceasing generation is not yet more.
+* `Becoming.Generation` (L3): formations arise. Where arising depletes a finite family
+  of conditions, unceasing generation needs their renewal to recur; renewal does not
+  imply generation; substitution among unrenewed conditions defers the end; and
+  dissipation ends generation, while a closed cycle need not.
+* `Becoming.Flow` (L3): conditions as amounts that formations take and give. Unceasing
+  generation of formations that take needs replenishment at arbitrarily late steps;
+  more generation without end needs replenishment without bound and, with bounded
+  capacity, renewers without bound; unceasing generation is not yet more.
+* `Becoming.Population` (L3): how many formations are active. Under a census of the
+  active formations, with only active formations taking, more generation without end
+  makes generation unceasing.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

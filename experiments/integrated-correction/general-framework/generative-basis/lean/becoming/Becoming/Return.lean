@@ -14,11 +14,12 @@ at one of the next `p` steps. A condition is *renewed within* `p` when every dep
 on it returns within `p`, and it *returns* when every dependence on it is met at some
 later step. The readings of a formation then have forms over cycles of `p`. It renews
 over cycles of `p` when every condition it participates in is renewed within `p`. Its
-event *undermines for* `p` steps when it draws on a condition at a step after which a
-dependence on it, met while it held, stays unmet for the next `p` steps; undermining for
-one step is undermining at the step. Cycles have length at least one: within zero steps
-only a condition nothing depends on is renewed, and any draw on a condition with a
-dependence met while it held undermines.
+event *undermines for* `p` steps when it draws on a condition at a step after which, at
+each of the next `p` steps, the condition is below both the present need of a dependence
+on it and a need of that dependence met while it held; undermining for one step is
+undermining at the step. Cycles have length at least one: within zero steps only a
+condition nothing depends on is renewed, and any draw on a condition something depends
+on undermines.
 
 Results:
 * The grades are ordered: renewal implies renewal within one step, renewal within `p`
@@ -72,11 +73,12 @@ def RenewingInWithin (p : Nat) (f : F) : Prop :=
   ∀ t c, W.Participates t f c → W.RenewedWithin p c
 
 /-- A formation's event at `t` undermines for `p` steps: it draws on a condition at a
-step after which a dependence on it, met while it held, stays unmet for the next `p`
-steps. -/
+step after which, at each of the next `p` steps, the condition is below a dependence's
+present need and below a need of that dependence it met while the dependence held. -/
 def UnderminingFor (p t : Nat) (f : F) : Prop :=
-  ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧ W.MetSince t g c ∧
-    ∀ k, 0 < k → k ≤ p → W.level (t + k) c < W.need t g c
+  ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧
+    ∀ k, 0 < k → k ≤ p →
+      W.MetAbove t g c (W.level (t + k) c) ∧ W.level (t + k) c < W.need t g c
 
 variable {W}
 
@@ -132,20 +134,19 @@ theorem RenewingIn.within_one {f : F} (renewing : W.RenewingIn f) : W.RenewingIn
 /-- Undermining for one step is undermining at the step. -/
 theorem undermining_for_one {t : Nat} {f : F} :
     W.UnderminingFor 1 t f ↔ W.UnderminingAt t f :=
-  ⟨fun ⟨c, drawn, g, depends, formed, unmet⟩ =>
-    ⟨c, drawn, g, depends, formed, unmet 1 Nat.zero_lt_one (Nat.le_refl 1)⟩,
-   fun ⟨c, drawn, g, depends, formed, fell⟩ =>
-    ⟨c, drawn, g, depends, formed, fun
+  ⟨fun ⟨c, drawn, g, depends, unmet⟩ =>
+    ⟨c, drawn, g, depends, unmet 1 Nat.zero_lt_one (Nat.le_refl 1)⟩,
+   fun ⟨c, drawn, g, depends, met, fell⟩ =>
+    ⟨c, drawn, g, depends, fun
       | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)
-      | 1, _, _ => fell
+      | 1, _, _ => ⟨met, fell⟩
       | k + 2, _, within => absurd (Nat.le_of_succ_le_succ within) (Nat.not_succ_le_zero k)⟩⟩
 
-/-- Undermining for zero steps holds of any draw on a condition with a dependence met
-while it held. -/
+/-- Undermining for zero steps holds of any draw on a condition something depends on. -/
 theorem undermining_for_zero {t : Nat} {f : F} :
-    W.UnderminingFor 0 t f ↔ ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧ W.MetSince t g c :=
-  ⟨fun ⟨c, drawn, g, depends, met, _⟩ => ⟨c, drawn, g, depends, met⟩,
-   fun ⟨c, drawn, g, depends, met⟩ => ⟨c, drawn, g, depends, met, fun _ positive within =>
+    W.UnderminingFor 0 t f ↔ ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c :=
+  ⟨fun ⟨c, drawn, g, depends, _⟩ => ⟨c, drawn, g, depends⟩,
+   fun ⟨c, drawn, g, depends⟩ => ⟨c, drawn, g, depends, fun _ positive within =>
      absurd (Nat.lt_of_lt_of_le positive within) (Nat.lt_irrefl 0)⟩⟩
 
 theorem RenewingInWithin.mono {p q : Nat} {f : F} (le : p ≤ q)
@@ -155,16 +156,15 @@ theorem RenewingInWithin.mono {p q : Nat} {f : F} (le : p ≤ q)
 /-- Undermining for a longer cycle is undermining for a shorter one. -/
 theorem UnderminingFor.anti {p q t : Nat} {f : F} (le : p ≤ q) :
     W.UnderminingFor q t f → W.UnderminingFor p t f
-  | ⟨c, drawn, g, depends, formed, unmet⟩ =>
-    ⟨c, drawn, g, depends, formed,
-      fun k positive within => unmet k positive (Nat.le_trans within le)⟩
+  | ⟨c, drawn, g, depends, unmet⟩ =>
+    ⟨c, drawn, g, depends, fun k positive within => unmet k positive (Nat.le_trans within le)⟩
 
 /-- No event of a formation renewing over cycles of `p` undermines for `p` steps. -/
 theorem RenewingInWithin.not_undermining_for {p t : Nat} {f : F}
     (renewing : W.RenewingInWithin p f) : ¬ W.UnderminingFor p t f
-  | ⟨c, drawn, g, depends, _, unmet⟩ =>
+  | ⟨c, drawn, g, depends, unmet⟩ =>
     match renewing t c (Or.inr drawn) t g depends with
-    | ⟨k, positive, within, back⟩ => Nat.not_le_of_gt (unmet k positive within) back
+    | ⟨k, positive, within, back⟩ => Nat.not_le_of_gt (unmet k positive within).2 back
 
 /-- A formation renewing over any cycle is not consuming. -/
 theorem RenewingInWithin.not_consuming {p : Nat} {f : F} (renewing : W.RenewingInWithin p f) :
@@ -336,11 +336,12 @@ theorem escalation_undermines_for_every_cycle :
     ∀ p, (conditions.dependence.along escalating).UnderminingFor p 1 .focal :=
   ⟨fun undermining => stepwise_credits_before_escalation.2.1.not_undermining
     (Web.undermining_for_one.mp undermining),
-   fun _ => ⟨(), trivial, .sustaining, trivial,
-     ⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩, fun
+   fun _ => ⟨(), trivial, .sustaining, trivial, fun
      | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)
-     | k + 1, _, _ => Nat.lt_of_le_of_lt
-        (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one⟩⟩
+     | k + 1, _, _ =>
+       have gone := Nat.lt_of_le_of_lt
+         (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one
+       ⟨⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1, gone⟩, gone⟩⟩⟩
 
 end Commons
 

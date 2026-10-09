@@ -780,6 +780,24 @@
         "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
       ]
     },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md": {
+      "title": "P9b、P10 与 P11 的独立审查 / Independent review of P9b, P10 and P11",
+      "local_links": [
+        "AGENTS.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+        "sources/15-codex-theory-conversations/2026-10-06-foundational-vocabulary-correction.md",
+        "sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md",
+        "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+        "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+        "sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md",
+        "theories/becoming/chapters/NONDUAL-METHOD.md",
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+      ]
+    },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md": {
       "title": "关系读法与依存动态的独立审查 / Independent review of the relational reading and dependence dynamics",
       "local_links": [
@@ -810,6 +828,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
@@ -8037,6 +8056,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",
@@ -11446,6 +11466,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
@@ -11459,6 +11480,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean",

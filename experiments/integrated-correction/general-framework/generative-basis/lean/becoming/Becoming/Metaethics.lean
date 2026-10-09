@@ -68,7 +68,8 @@ Results:
   transmission runs along co-participation and does not use the consumption.
 * Read stepwise, with dependences that may change (`Web.valuation`), an event is
   living when it is active and not undermining: it does not draw on a condition at a
-  step after which a dependence on it, met while it held, is unmet. This is the working
+  step after which the condition is below both the present need of a dependence on it
+  and a need of that dependence met while it held. This is the working
   stepwise candidate, pending Ren's choice of the reading. Being within renewal at the
   step is not used as `living`, since it withholds the event of a formation whose own
   dependence breaks (`Commons.broken_formation`); not breaking is not used either, since
@@ -396,7 +397,8 @@ end Separate
 
 /-- Formation events of a web read stepwise. An event is living when its formation is
 active and it is not undermining: it does not draw on a condition at a step after which
-a dependence on it, met while it held, is unmet. Two events are related when their
+the condition is below both the present need of a dependence on it and a need of that
+dependence met while it held. Two events are related when their
 formations participate in a common condition at their steps. Standpoints, their regions
 and significance remain supplied. -/
 def Web.valuation {F Cond : Type} (W : Web F Cond) (own sig : Pos → F × Nat → Prop) :

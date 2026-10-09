@@ -172,9 +172,9 @@ theorem slow_withheld_two_steps :
       (Nat.le_succ_of_le (Nat.le_succ 1)) (Nat.le_succ_of_le (Nat.le_succ_of_le
         (Nat.le_succ_of_le (Nat.le_succ 1)))) (fun _ => Nat.lt_succ_self 1)).2.2.2.1,
    ⟨.shared, ⟨by decide, Nat.zero_lt_two⟩, .sustaining, trivial,
-     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, by decide, Nat.le_refl _⟩, by decide⟩,
+     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, by decide, by decide⟩, by decide⟩,
    ⟨.shared, ⟨by decide, Nat.zero_lt_two⟩, .sustaining, trivial,
-     ⟨0, Nat.zero_le 3, fun _ _ _ => trivial, by decide, Nat.le_refl _⟩, by decide⟩⟩
+     ⟨0, Nat.zero_le 3, fun _ _ _ => trivial, by decide, by decide⟩, by decide⟩⟩
 
 end Substitution
 

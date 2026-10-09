@@ -175,14 +175,14 @@
     "en": "Proved only in the support-gated family (two parts: the focal and the sustaining formation) and for three pairs of compared continuations (occurs/absent, sharing/winning, stops/overdraws); the third-party witness (ThirdParty) shows the restraint conclusion does not extend to several co-drawers; the relation-level reading also credits the focal formation's first relation but is not formalized separately; yields no responsibility, duty or feasibility; chooses no reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T032004.394466Z）：Becoming.Ranking 27 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 15 个模块（含只作导入的根模块与桥接），共 311 项定理／588 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 17 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T032004.394466Z): the 27 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 15 modules (including the import-only root and the bridge) with 311 theorems/588 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 17 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T042823.534750Z）：Becoming.Ranking 27 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 16 个模块（含只作导入的根模块与桥接），共 376 项定理／688 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 18 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T042823.534750Z): the 27 theorems of Becoming.Ranking and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 16 modules (including the import-only root and the bridge) with 376 theorems/688 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 18 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
       "role": "proof",
-      "sha256": "5cc891314f1c76eab080381fe30990c5b6f3062e9308be96580f24e5b69014b6",
+      "sha256": "8e0697f42e80c2a23ccf959644e69ec602ace69afb06f3970da10616f3590e38",
       "declarations": [
         "Becoming.Ranking.frame",
         "Becoming.Ranking.ExtendsUnder",
@@ -236,7 +236,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "c4bf2e64b7c81808c88b5166ad0677b2c75f71cd5b7c98d0848ac951e2f68312",
+      "sha256": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
       "declarations": [
         "Becoming.Extension",
         "Becoming.Comparison",
@@ -258,19 +258,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "ce2c455e5ecdbbfbfaa1f7d87544eb5fc32311d36efbcc2614813115ae9d32e9",
+      "sha256": "e23b8ae9f54432d543aa7c2ec1978f1f04182af976ca3c114938627ea73645ac",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "f21826582ae940fd73aa3985475c42d41a11f36a963c8c01a292461d176ce4a4",
+      "sha256": "ab86db8aedd7f2446c926ed97cfb00b8c4f796f690a460105fb82aad14a8bfaa",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "88eaff260f799fdc9b317c96c891749f12b820a863f8fae968f806eb68b4e652",
+      "sha256": "a80939ddbfa9aab7e2d8a2eee3d5986a8d3918daab20ff6bb62d9f5ac6b7f51c",
       "declarations": []
     },
     {
@@ -336,6 +336,10 @@
     {
       "zh": "2026-10-09：P11 新增 Becoming.Flow 后，合并检查器重跑（20261009T032004.394466Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P11 added Becoming.Flow, the consolidated checker was rerun (20261009T032004.394466Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P11b 按第四次独立审查修正侵蚀与流、并新增 Becoming.Population 后，合并检查器重跑（20261009T042823.534750Z），本记录的检验范围改指新回执。",
+      "en": "2026-10-09: after P11b repaired undermining and flows following the fourth independent review and added Becoming.Population, the consolidated checker was rerun (20261009T042823.534750Z) and this record's validation scope now points to the new receipt."
     }
   ]
 }

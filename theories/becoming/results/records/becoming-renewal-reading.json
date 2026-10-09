@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "形成与条件是同一展开中的分析角色，不是独立实体或价值所有者。连通依赖什么算条件、什么算参与：加入一个人人在水平 0 依存的条件即可免费连通，而过粗的共同条件又使 living 变空（独立审查 Q4、Q10）；一条排除惰性条件的纪律已在 condition-correspondence-discipline 中陈述，它排除不了人人汲取并依存的被更新条件，也不解决 Q10。读法相对于一次运行。可观测量与实际历史的对应、共同条件（如生物圈、气候）是否真被所有活的形成参与，以及关系读法是否为生生的正确读法，都是应用或哲学上的对应义务。",
-    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities or owners of value. Connection depends on what counts as a condition and as participation: adding a condition everyone depends on at level 0 connects everything for free, while a too coarse common condition empties living (independent review Q4, Q10); a discipline excluding idle conditions is stated in condition-correspondence-discipline, which does not exclude a renewed condition every formation draws on and depends on, and does not resolve Q10. The reading is relative to a run. The correspondence of observables to an actual history, whether a common condition (such as the biosphere or climate) is in fact participated in by every living formation, and whether the relational reading is the right reading of 生生 are application or philosophical duties."
+    "zh": "形成与条件是同一展开中的分析角色，不是独立实体或价值所有者。连通依赖什么算条件、什么算参与：加入一个人人在水平 0 依存的条件即可免费连通，而过粗的共同条件又使 living 变空（独立审查 Q4、Q10）；一条排除惰性条件的纪律已在 condition-correspondence-discipline 中陈述，它排除不了每个形成都以正水平依存、由一个活的事件使用一次的被更新条件，也不解决 Q10。读法相对于一次运行。可观测量与实际历史的对应、共同条件（如生物圈、气候）是否真被所有活的形成参与，以及关系读法是否为生生的正确读法，都是应用或哲学上的对应义务。",
+    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities or owners of value. Connection depends on what counts as a condition and as participation: adding a condition everyone depends on at level 0 connects everything for free, while a too coarse common condition empties living (independent review Q4, Q10); a discipline excluding idle conditions is stated in condition-correspondence-discipline, which does not exclude a renewed condition every formation depends on at a positive level, used once by one living event, and does not resolve Q10. The reading is relative to a run. The correspondence of observables to an actual history, whether a common condition (such as the biosphere or climate) is in fact participated in by every living formation, and whether the relational reading is the right reading of 生生 are application or philosophical duties."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
   "aliases": [
@@ -183,8 +183,8 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The unification of bounds is organizational, not new mathematics; ContinuationRenewal's well-founded form is not derived from the principle. The relational reading and the common-participation relation are disclosed reading choices; whether they are the right reading of 生生, and the empirical correspondence of common conditions, lie outside this result. The correspondence discipline for conditions is stated for the stepwise reading only (condition-correspondence-discipline); the reading is relative to a run and includes no component of further generation."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T032004.394466Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖。控制例“有共同条件的运行在关系读法下连通”不计为新定理；同一回执覆盖包内 15 个模块（含只作导入的根模块与桥接），共 311 项定理／588 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 17 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T032004.394466Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports. The control that a run with a common condition is connected under the relational reading is not counted; the same receipt covers the package's 15 modules (including the import-only root and the bridge) with 311 theorems/588 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 17 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T042823.534750Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖。控制例“有共同条件的运行在关系读法下连通”不计为新定理；同一回执覆盖包内 16 个模块（含只作导入的根模块与桥接），共 376 项定理／688 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 18 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T042823.534750Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports. The control that a run with a common condition is connected under the relational reading is not counted; the same receipt covers the package's 16 modules (including the import-only root and the bridge) with 376 theorems/688 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 18 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -205,7 +205,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "c4bf2e64b7c81808c88b5166ad0677b2c75f71cd5b7c98d0848ac951e2f68312",
+      "sha256": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
       "declarations": [
         "Becoming.Conditions.valuation",
         "Becoming.Conditions.connected_of_common",
@@ -258,19 +258,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "ce2c455e5ecdbbfbfaa1f7d87544eb5fc32311d36efbcc2614813115ae9d32e9",
+      "sha256": "e23b8ae9f54432d543aa7c2ec1978f1f04182af976ca3c114938627ea73645ac",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "f21826582ae940fd73aa3985475c42d41a11f36a963c8c01a292461d176ce4a4",
+      "sha256": "ab86db8aedd7f2446c926ed97cfb00b8c4f796f690a460105fb82aad14a8bfaa",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "88eaff260f799fdc9b317c96c891749f12b820a863f8fae968f806eb68b4e652",
+      "sha256": "a80939ddbfa9aab7e2d8a2eee3d5986a8d3918daab20ff6bb62d9f5ac6b7f51c",
       "declarations": []
     },
     {
@@ -392,6 +392,14 @@
     {
       "zh": "2026-10-09：P11 新增 Becoming.Flow 后，合并检查器重跑（20261009T032004.394466Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P11 added Becoming.Flow, the consolidated checker was rerun (20261009T032004.394466Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P11b 按第四次独立审查 H3 更正对应中的一句，使它与 one_use_connects 一致；主张与证明不变。",
+      "en": "2026-10-09: following H3 of the fourth independent review, P11b corrected one sentence of the correspondence to match one_use_connects; the claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P11b 按第四次独立审查修正侵蚀与流、并新增 Becoming.Population 后，合并检查器重跑（20261009T042823.534750Z），本记录的检验范围改指新回执。",
+      "en": "2026-10-09: after P11b repaired undermining and flows following the fourth independent review and added Becoming.Population, the consolidated checker was rerun (20261009T042823.534750Z) and this record's validation scope now points to the new receipt."
     }
   ]
 }

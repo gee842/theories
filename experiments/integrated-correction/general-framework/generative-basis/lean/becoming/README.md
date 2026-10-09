@@ -29,15 +29,16 @@ Core purity is [Ren's requirement](../../../../../../sources/15-codex-theory-con
 | L3 | [`Becoming.Horizon`](Becoming/Horizon.lean) | 任何有限的一段运行都不决定其汲取在整段意义上是更新还是消耗，有无反馈都如此；按数量的读法逐步可判定 / no finite stretch of a run decides whether its drawing renews or consumes in the whole-run sense, with or without feedback; a reading of amounts is decided step by step |
 | L3 | [`Becoming.Joint`](Becoming/Joint.lean) | 相对于所取动作的差别制造属于形成之间的共同活动；在一个形成的各事件之间，整段的结局由尾部决定，单步检验挑出断裂之步 / difference-making, relative to the move taken, belongs to the joint activity among formations; over a formation's events the run-level outcome is fixed by the tail, while the step-level test singles out the breaking event |
 | L3 | [`Becoming.Substitution`](Becoming/Substitution.lean) | 支持门控定律中，能替代条件的消耗者持续，在整段读法下仍是消耗的，逐步读法在维持者失去支持之前记入它，此后到它转向为止扣下它 / in the support-gated law, a consumer that substitutes a condition persists and still consumes on the whole-run reading, while the stepwise reading credits it before the sustaining formation loses support and withholds it until it switches |
-| L3 | [`Becoming.Generation`](Becoming/Generation.lean) | 形成生起；由有限条件家族支付的不息生成需要其更新复现；更新不蕴含生成；在不被更新的条件之间替代推迟终结 / formations arise; unceasing generation paid by a finite family of conditions needs their renewal to recur; renewal does not imply generation; substitution among unrenewed conditions defers the end |
-| L3 | [`Becoming.Flow`](Becoming/Flow.lean) | 条件作为形成取用与给予的数量；不止地更多的生成需要没有界的供给，每个形成给予有限时需要没有界的更新者；不息的生成尚不是更多 / conditions as amounts that formations take and give; generation more without end needs supply without bound and, with bounded capacity, renewers without bound; unceasing generation is not yet more |
+| L3 | [`Becoming.Generation`](Becoming/Generation.lean) | 形成生起；生起消耗一个有限条件家族时，不息的生成需要其更新复现；更新不蕴含生成；在不被更新的条件之间替代推迟终结；耗散使生成停止，封闭循环则不必 / formations arise; where arising depletes a finite family of conditions, unceasing generation needs their renewal to recur; renewal does not imply generation; substitution among unrenewed conditions defers the end; dissipation ends generation, while a closed cycle need not |
+| L3 | [`Becoming.Flow`](Becoming/Flow.lean) | 条件作为形成取用与给予的数量；取用的形成不息地生起需要补充在任意晚的步出现；不止地更多的生成需要没有界的补充，每个形成给予有限时需要没有界的更新者；不息的生成尚不是更多 / conditions as amounts that formations take and give; unceasing arising of formations that take needs replenishment at arbitrarily late steps; generation more without end needs replenishment without bound and, with bounded capacity, renewers without bound; unceasing generation is not yet more |
+| L3 | [`Becoming.Population`](Becoming/Population.lean) | 每步活跃的形成有多少；在活跃形成的普查之下、只有活跃的形成取用时，不止地更多蕴含不息的生成，反之不然 / how many formations are active; under a census of the active formations, with only active formations taking, more without end implies unceasing generation, and not conversely |
 | L4 | [`Becoming.Metaethics`](Becoming/Metaethics.lean) | 普遍元伦理核心：前提卡、G0 刻画、极小性、普遍理由、C 与 L；整段、逐步与关系层面的关系读法 / the Universal Metaethical Core: premise card, G0's characterization, minimality, the universal reason, C and L; the relational readings over a whole run, stepwise and through relations |
 | L4 | [`Becoming.Ranking`](Becoming/Ranking.lean) | C 在各读法下的排序：整段与逐步读法都把共享排在以消耗取胜之上，在二元定律族中把节制排在过度汲取之上；对在损失之前有被记入事件的过度汲取者，只有整段读法把它的不在场排在其在场之上 / what C ranks under each reading: both the whole-run and the stepwise reading rank sharing above winning by consumption and, in the two-part family, restraint above overdraw; for an overdrawing formation with a credited event before the loss, only the whole-run reading ranks its absence above its occurrence |
 | L4 | [`Becoming.Correspondence`](Becoming/Correspondence.lean) | 哪些条件构成关系：在“一方汲取、另一方以正水平依存”这一对应纪律下，惰性条件不连通任何东西，经由一个条件的连通由它的活的使用造成 / which conditions relate: under the discipline that a condition relates two events only when one draws on it and the other depends on it at a positive level, idle conditions connect nothing, and connection through a condition is made by its living use |
 
-每层只导入它下面的层（L3 内：`Becoming.Dependence` 导入 `Becoming.Renewal`；`Return`、`Substitution` 导入 `Dependence`；`Horizon`、`Joint`、`Generation` 导入 `Return`；`Flow` 导入 `Generation`。L4 内：`Becoming.Ranking` 与 `Becoming.Correspondence` 导入 `Becoming.Metaethics`）。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
+每层只导入它下面的层（L3 内：`Becoming.Dependence` 导入 `Becoming.Renewal`；`Return`、`Substitution` 导入 `Dependence`；`Horizon`、`Joint`、`Generation` 导入 `Return`；`Flow` 导入 `Generation`；`Population` 导入 `Flow`。L4 内：`Becoming.Ranking` 与 `Becoming.Correspondence` 导入 `Becoming.Metaethics`）。L1–L3 不含伦理谓词；L4 的每项规范前提都是具名定义或假设，不藏在类型或定义里。
 
-Each layer imports only those below it (within L3, `Becoming.Dependence` imports `Becoming.Renewal`; `Return` and `Substitution` import `Dependence`; `Horizon`, `Joint` and `Generation` import `Return`; `Flow` imports `Generation`; within L4, `Becoming.Ranking` and `Becoming.Correspondence` import `Becoming.Metaethics`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
+Each layer imports only those below it (within L3, `Becoming.Dependence` imports `Becoming.Renewal`; `Return` and `Substitution` import `Dependence`; `Horizon`, `Joint` and `Generation` import `Return`; `Flow` imports `Generation`; `Population` imports `Flow`; within L4, `Becoming.Ranking` and `Becoming.Correspondence` import `Becoming.Metaethics`). L1–L3 contain no ethical predicate; every normative premise in L4 is a named definition or hypothesis.
 
 ## 检查 / Verification
 
@@ -57,9 +58,9 @@ The checker resolves the import closure, requires inherited modules to match pas
 
 ## 名称 / Names
 
-模块按所述之事命名。声明名都在命名空间 `Becoming` 下，改名前后不变，因此记录中的别名仍然有效。
+模块按所述之事命名。声明名都在命名空间 `Becoming` 下，模块改名时不变，因此记录中的别名仍然有效。
 
-Modules are named for what they state. Declaration names, all in namespace `Becoming`, did not change, so record aliases remain valid.
+Modules are named for what they state. Declaration names, all in namespace `Becoming`, did not change when the modules were renamed, so record aliases remained valid.
 
 | 旧模块 / Former module | 现模块 / Module | 改名理由 / Why |
 |---|---|---|
@@ -72,3 +73,16 @@ Modules are named for what they state. Declaration names, all in namespace `Beco
 基础模块保留历史命名空间 `Generative`。它的过程是任何生成／变化，包括维持与退化，不只是生成性的变化。
 
 The foundation keeps its historical namespace `Generative`. Its processes are any becoming, including maintenance and degeneration, not only generative change.
+
+### 声明改名 / Declaration renames
+
+P11b 依第四次独立审查（H1、H6、H13）和 Ren 对基础用语的纠正（“付费记录”太市场；“recipient, money, pay” 不是最好的选词）改了下列声明名，相关记录的别名同时更新。 / P11b renamed these declarations after the fourth independent review (H1, H6, H13) and Ren's corrections of foundational vocabulary; the affected records' aliases were updated with them.
+
+| 旧名 / Former | 现名 / Now | 理由 / Why |
+|---|---|---|
+| `Web.MetSince` | `Web.MetAbove` | 改为最小形式：低于曾被满足的所需，也低于现在的所需 / the minimum form: below a need that was met and below the present need |
+| `Web.Paid`, `paid_finitely` | `Web.Depletes`, `depletes_finitely` | 讲条件的消耗，不讲支付 / depletion of conditions, not payment |
+| `conserved_ceases` | `dissipation_ceases` | 关键前提是耗散；对任意不上升的量陈述 / the premise that matters is dissipation; stated for any quantity that never rises |
+| `Flow.load`, `Flow.supply` | `Flow.uptake`, `Flow.replenishment` | 取用与补充 / uptake and replenishment |
+| `Flow.ledger`, `Flow.accumulates` | `Flow.Balances.over`, `Flow.Balances.accumulates` | 平衡，不是账目 / a balance, not a ledger |
+| `takers_le_load`, `supply_le`, `More.supply_unbounded` | `takers_le_uptake`, `replenishment_le`, `More.replenishment_unbounded` | 同上 / as above |

@@ -11,10 +11,13 @@ the difference when, with that part withheld, the same move can still be taken a
 step by it keeps the dependence. The test is relative to the move: the move belongs to
 the rest of the activity, and another move, an exogenous shock for instance, can break
 the dependence whatever the formation does. It reads as intended when the move
-determines the step (`Determined`) and can be taken from every withheld configuration:
-a shock written into the step relation rather than the move makes the loss
-overdetermined again (`Hidden`), and a move that cannot be taken after withholding
-decides nothing (`Tagged`).
+determines the step (`Determined`), can be taken from every withheld configuration, and
+the dependence still holds and is met with the part withheld: then either the part makes
+the difference or the same move still breaks the dependence (`determined_dichotomy`).
+A shock written into the step relation rather than the move makes the loss
+overdetermined again (`Hidden`), a move that cannot be taken after withholding decides
+nothing (`Tagged`), and when withholding the part itself leaves the dependence unmet,
+the part being a support, the test is silent.
 
 Withholding stays within the unfolding: the alternative is another configuration of
 the same process, the one in which that part is absent. Nothing outside the process
@@ -119,6 +122,20 @@ theorem Overdetermined.no_difference {P : Process S A} {withhold : F → S → S
   | ⟨_, _, keeps⟩ =>
     match over.2 f with
     | ⟨t, step, breaks⟩ => keeps_not_breaks (keeps t step) breaks
+
+/-- When the move determines the step and can be taken with `f`'s part withheld, and the
+dependence still holds and is met there, either `f`'s part makes the difference or the
+same move still breaks the dependence. -/
+theorem determined_dichotomy {P : Process S A} (determined : Determined P)
+    {withhold : F → S → S} {f : F} {s : S} {a : A} {g : F} {c : C}
+    (breaks : K.BreaksBy P s a g c) {t₀ : S} (available : P.step (withhold f s) a t₀)
+    (depends : K.requires (withhold f s) g c)
+    (met : K.need (withhold f s) g c ≤ K.level (withhold f s) c) :
+    K.MakesDifference P withhold f s a g c ∨ K.BreaksBy P (withhold f s) a g c :=
+  match Nat.lt_or_ge (K.level t₀ c) (K.need (withhold f s) g c) with
+  | .inl fell => .inr ⟨t₀, available, depends, met, fell⟩
+  | .inr held => .inl ⟨breaks, ⟨t₀, available⟩, fun _ step =>
+      determined _ _ _ _ available step ▸ (⟨met, held⟩ : K.Keeps (withhold f s) t₀ g c)⟩
 
 end Dependence
 
@@ -485,9 +502,9 @@ theorem depletion_is_joint :
     (∀ p, 0 < p → ¬ (conditions.dependence.along depleting).UnderminingFor p 0 .focal) ∧
     ∀ n, (conditions.dependence.along (withheld n)).Consumed () :=
   ⟨⟨0, (), trivial, overdraw_consumes (N := 0) fun _ _ => Nat.le_refl 2⟩,
-   fun _ positive ⟨_, _, g, depends, _, unmet⟩ =>
+   fun _ positive ⟨_, _, g, depends, unmet⟩ =>
      match g, depends with
-     | .sustaining, _ => Nat.lt_irrefl 1 (unmet 1 Nat.zero_lt_one positive),
+     | .sustaining, _ => Nat.lt_irrefl 1 (unmet 1 Nat.zero_lt_one positive).2,
    fun n => overdraw_consumes (N := n + 1) fun _ later =>
      Nat.le_of_eq (if_neg (Nat.ne_of_gt later)).symm⟩
 

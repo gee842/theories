@@ -79,7 +79,7 @@
 | `material-preparation-output` | [材料准备的实际输出 / Actual material preparation output](records/material-preparation-output.md) | theorem | recorded-checked |
 | `mediated-evidence-transport` | [实际指令接续候选证据 / Executed instructions transport candidate evidence](records/mediated-evidence-transport.md) | theorem | recorded-checked |
 | `metaethical-core-characterization` | [生成之论脊柱上的普遍元伦理核心：G0 由种子与边界中立刻画 / The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](records/metaethical-core-characterization.md) | theorem | recorded-checked |
-| `more-needs-renewers` | [更多需要更多更新者：不止地更多的生成需要没有最终界的供给，每个形成给予有限时需要没有最终界的给予者 / More needs more renewers: generation more without end needs supply with no eventual bound and, with bounded capacity, givers with no eventual bound](records/more-needs-renewers.md) | theorem | recorded-checked |
+| `more-needs-renewers` | [更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成 / More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation](records/more-needs-renewers.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
 | `naming-attention-coverage` | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](records/naming-attention-coverage.md) | assessment | reviewed-scoped |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
@@ -112,7 +112,7 @@
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
 | `unanchored-incidence-collapse` | [无共同引用的关联问题丢失真实接续 / Unanchored incidence questions lose real continuation distinctions](records/unanchored-incidence-collapse.md) | theorem | recorded-checked |
-| `unceasing-generation-needs-renewal` | [不息需要更新：由有限条件支付的不息生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: unceasing generation paid by finitely many conditions needs renewal to recur, while renewal does not imply generation](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
+| `unceasing-generation-needs-renewal` | [不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成 / Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation](records/unceasing-generation-needs-renewal.md) | theorem | recorded-checked |
 | `universal-practical-warrant` | [普遍实践权威的更强目标 / Stronger universal practical warrant target](records/universal-practical-warrant.md) | target | open |
 | `versioned-request-completion` | [保留路线的在途请求完成 / Completion of an in-flight request along its retained route](records/versioned-request-completion.md) | theorem | recorded-checked |
 | `wisdom-root` | [核心作为智慧之根的目标 / Core as the root of wisdom target](records/wisdom-root.md) | target | open |

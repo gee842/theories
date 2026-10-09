@@ -664,7 +664,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 有限家族的总水平、生起、不息与更新由形成造成；开花的依存网。 / Finite families' total level, arising, unceasing generation and renewal made by formations; the bloom's web.
 
-**Consumer input / 下游输入:** 账目、更多与层级。 / The ledger, more and the hierarchy.
+**Consumer input / 下游输入:** 消耗与补充的平衡、更多与层级。 / The balance of depletion and replenishment, more and the hierarchy.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
@@ -1036,7 +1036,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 下降原则与公地过程。 / The descent principle and the commons process.
 
-**Consumer input / 下游输入:** 有限家族只能支付有限次事件；更新而无生起的见证。 / A finite family pays for only finitely many events; the witness of renewal without arising.
+**Consumer input / 下游输入:** 有限家族只能被有限次事件消耗；更新而无生起的见证。 / A finite family is depleted by only finitely many events; the witness of renewal without arising.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
@@ -1044,7 +1044,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-dependence-dynamics
 
-`formal-reuse` — 生起、支付与更新都陈述在依存网上；Relay 用 Dissolves、Forms 与 ConsumingIn。 / Arising, payment and renewal are stated on webs of dependence; Relay uses Dissolves, Forms and ConsumingIn.
+`formal-reuse` — 生起、消耗与更新都陈述在依存网上；Relay 用 Dissolves、Forms 与 ConsumingIn。 / Arising, depletion and renewal are stated on webs of dependence; Relay uses Dissolves, Forms and ConsumingIn.
 
 **Producer output / 上游输出:** 依存网、Dependent、Dissolves、Forms、ConsumingIn。 / Webs, Dependent, Dissolves, Forms, ConsumingIn.
 
@@ -1056,9 +1056,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-stepwise-reading
 
-`formal-reuse` — Bloom.readings 用逐步的侵蚀与 MetSince.now。 / Bloom.readings uses stepwise undermining and MetSince.now.
+`formal-reuse` — Bloom.readings 用逐步的侵蚀与 MetAbove.now。 / Bloom.readings uses stepwise undermining and MetAbove.now.
 
-**Producer output / 上游输出:** UnderminingAt 与 MetSince。 / UnderminingAt and MetSince.
+**Producer output / 上游输出:** UnderminingAt 与 MetAbove。 / UnderminingAt and MetAbove.
 
 **Consumer input / 下游输入:** 逐步读法扣下每一次开花。 / The stepwise reading withholds each bloom.
 

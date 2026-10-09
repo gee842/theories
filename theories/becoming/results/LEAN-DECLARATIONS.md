@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 150 | 2,213 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 151 | 2,278 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -415,6 +415,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PlasticityPreparation.lean](lean-declarations/shared.md#module-c527ff17c751) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PlasticityWitness.lean](lean-declarations/shared.md#module-ac933f076498) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PluralRecords.lean](lean-declarations/abstraction.md#module-2a54e07465df) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Population.lean](lean-declarations/core.md#module-161ef92f702e) | 生成核心与关系结构 / Generative core and relational structure |
 | [PopulationCorrection.lean](lean-declarations/other.md#module-eb4d5a6069ec) | 其他形式研究 / Other formal studies |
 | [PopulationRealization.lean](lean-declarations/other.md#module-dc65abdfa4be) | 其他形式研究 / Other formal studies |
 | [PortAlignment.lean](lean-declarations/inquiry.md#module-7c982b0727b0) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |

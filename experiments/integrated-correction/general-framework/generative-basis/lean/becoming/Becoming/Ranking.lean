@@ -281,10 +281,10 @@ theorem law_low : ∀ n, law.level (n + 1) = 0
     rfl
 
 theorem focal_withheld (t : Nat) : ¬ stepwise (course law) .occurs (.focal, t) :=
+  have fell := Nat.lt_of_le_of_lt (Nat.le_of_eq (law_low t)) Nat.zero_lt_one
   fun ⟨_, notUndermining⟩ => notUndermining
     ⟨(), ⟨0, Nat.zero_lt_succ 2⟩, .sustaining, trivial,
-      ⟨0, Nat.zero_le t, fun _ _ _ => trivial, Nat.le_refl 1, Nat.le_refl _⟩,
-      Nat.lt_of_le_of_lt (Nat.le_of_eq (law_low t)) Nat.zero_lt_one⟩
+      ⟨0, Nat.zero_le t, fun _ _ _ => trivial, Nat.le_refl 1, fell⟩, fell⟩
 
 /-- The law meets every premise of `whole_run_extends` and `stepwise_unranked` except an
 event of the focal formation leaving every need met. No focal event is credited, the
