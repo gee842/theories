@@ -14,9 +14,12 @@ unfolding as amounts that the formations taking part in each step take and give
   before, plus its replenishment (`Balances.over`), and the same holds over any stretch
   of steps (`Balances.accumulates`). Adding amounts across conditions presupposes that
   their units are commensurable.
-* Balance makes every rise the work of a formation. In a balanced flow every rise is
+* Balance makes every change the work of a formation. In a balanced flow every rise is
   given to (`Balances.rise_given`), and where only active formations give, the premise
-  `RenewedBy` of `Becoming.Generation` is a theorem (`Balances.renewedBy`).
+  `RenewedBy` of `Becoming.Generation` is a theorem (`Balances.renewedBy`). Every fall is
+  taken from (`Balances.fall_taken`), and where only active formations take, some active
+  formation drawing on a condition takes from it whenever it falls
+  (`Balances.takenBy`).
 * Recurring uptake needs recurring replenishment. In a balanced flow, positive uptake at
   arbitrarily late steps needs replenishment at arbitrarily late steps
   (`uptake_needs_replenishment`). Formations taking from the family at their first
@@ -337,6 +340,22 @@ theorem Balances.renewedBy (balances : L.Balances W) (acting : L.Acting W) :
     W.RenewedBy fun t f c => f ∈ L.present t ∧ 0 < L.give t f c :=
   fun t c rises => match total_pos (L.present t) (balances.rise_given rises) with
     | ⟨f, mem, gives⟩ => ⟨f, acting t f c mem gives, mem, gives⟩
+
+/-- In a balanced flow every fall is taken from. -/
+theorem Balances.fall_taken (balances : L.Balances W) {t : Nat} {c : C} (falls : W.Falls t c) :
+    0 < L.taken t c :=
+  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt falls
+    (Nat.le_trans (Nat.le_add_right _ (L.given t c))
+      (Nat.le_of_eq ((balances t c).symm.trans (congrArg (W.level (t + 1) c + ·) nothing))))
+
+/-- Every fall is the work of a formation: in a balanced flow where only active
+formations take, some active formation taking part takes from every condition that falls,
+and draws on it. -/
+theorem Balances.takenBy (balances : L.Balances W) (taking : L.Taking W) {t : Nat} {c : C}
+    (falls : W.Falls t c) :
+    ∃ f, f ∈ L.present t ∧ 0 < L.take t f c ∧ W.active t f ∧ W.draws t f c :=
+  match total_pos (L.present t) (balances.fall_taken falls) with
+  | ⟨f, mem, takes⟩ => ⟨f, mem, takes, taking t f c mem takes⟩
 
 /-- Formations taking from the family take at least one unit each. -/
 theorem takers_le_uptake (cs : List C) (t : Nat) : L.takers cs t ≤ L.uptake cs t :=

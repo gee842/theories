@@ -69,9 +69,10 @@ Results:
   dissipated on lowers the family's stock (`Embodied.arising_lowers_on`), as under
   dissipation for a family without repetition closed across the step
   (`Embodied.arising_lowers`): the premise of `Web.dissipation_ceases`, supplied there as
-  physical, here follows from balance, dissipation and embodiment. Embodied members of a
-  family dissipated on from some step on do not arise at arbitrarily late steps
-  (`generation_ceases_on`). So a finite family without repetition in which embodied
+  physical, here follows from balance, dissipation and embodiment. The arising comes with
+  another member falling across the same step (`Embodied.arising_with_fall`). Embodied
+  members of a family dissipated on from some step on do not arise at arbitrarily late
+  steps (`generation_ceases_on`). So a finite family without repetition in which embodied
   members arise at arbitrarily late steps is not closed from any step on
   (`generation_opens`), though the exchange that opens it need not touch it
   (`SprayHanding`); enclosed around from some step on, it draws in: at arbitrarily late
@@ -87,7 +88,8 @@ Results:
   across the step at which the hare ends breaks the hare's own dependence
   (`Predation`). Generation after generation arises, each given by the one before, with
   nothing else (`Brood`); giving without taking, the brood is not dissipative
-  (`Brood.not_dissipative`).
+  (`Brood.not_dissipative`), and each generation arises in the family of it and the one
+  before, closed across the step, with nothing falling (`Brood.rise_without_fall`).
 * Each premise of `generation_ceases` is needed. Two sides handing one standing back and
   forth, each embodied, bear unceasing generation in a closed world of two relata
   without dissipation (`Handing`). Burning a fresh fuel at every step, they bear it under
@@ -600,6 +602,13 @@ theorem Embodied.arising_lowers (balances : L.Balances W) (dissipative : L.Dissi
     W.stock ds (t + 1) < W.stock ds t :=
   embodied.arising_lowers_on balances (dissipative ds t distinct closed) mem arises
 
+/-- The arising of an embodied member of a family dissipated on across the step comes with
+another member falling across the same step. -/
+theorem Embodied.arising_with_fall (balances : L.Balances W) {ds : List X} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {x : X} (embodied : W.Embodied x) (mem : x ∈ ds)
+    (arises : W.Arises t x) : ∃ y, y ∈ ds ∧ y ≠ x ∧ W.Falls t y :=
+  Flow.standing_with_fall balances dissipates mem (embodied.comesToStand arises)
+
 /-- Embodied members of a family dissipated on from some step on do not arise at
 arbitrarily late steps. -/
 theorem generation_ceases_on (balances : L.Balances W) {ds : List X} {T : Nat}
@@ -953,6 +962,28 @@ theorem not_dissipative : ¬ flow.Dissipative :=
       | _, _, 0 => ⟨rfl, rfl⟩
       | _, _, 1 => absurd (.head []) outside
       | _, _, _ + 2 => ⟨rfl, rfl⟩) 0 (.head []))
+
+/-- Only generation `t + 1` is given across step `t`. -/
+theorem birth_only : ∀ x t, 0 < birth x t → x = t + 1
+  | 0, _, given => absurd given (Nat.lt_irrefl 0)
+  | 1, 0, _ => rfl
+  | _ + 2, 0, given => absurd given (Nat.lt_irrefl 0)
+  | x + 1, t + 1, given => congrArg (· + 1) (birth_only x t given)
+
+/-- Without dissipation, coming to stand need not come with a fall: across every step,
+generation `t + 1` arises in the family of it and generation `t`, closed across the step,
+and no generation ever falls, so the family is not dissipated on. -/
+theorem rise_without_fall (t : Nat) :
+    flow.ClosedAt [t, t + 1] t ∧ web.Arises t (t + 1) ∧ (∀ s x, ¬ web.Falls s x) ∧
+      ¬ flow.DissipatesOn [t, t + 1] t :=
+  have never : ∀ s x, ¬ web.Falls s x := fun s x falls => Nat.not_le_of_gt falls
+    (Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq (grows x s).symm))
+  ⟨fun _ _ x outside => ⟨rfl, eq_zero_of_not_pos fun given => outside
+      (match x, birth_only x t given with | _, rfl => .tail _ (.head []))⟩,
+   arises t, never,
+   fun dissipates => match (brood.2.2.2.1 (t + 1)).1.arising_with_fall brood.1 dissipates
+      (.tail _ (.head [])) (arises t) with
+    | ⟨y, _, _, falls⟩ => never t y falls⟩
 
 end Brood
 

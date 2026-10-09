@@ -1736,6 +1736,61 @@ Integration: §23–§25 的更正；§24 列为开放的“一般地构造转�
 
 **边界。** 不含伦理谓词；不改变读法选择的地位；新名称是建议；探针与新见证都是最小见证；转化读法的选择、世系按给予项计，是公开的读法选择；沿依存链的滞后共灭与净给予的世系，开放。本节的更正尚未再经独立审查。
 
+## 28. 上升与下降在同一交换中（P20）
+
+2026-10-09。按同一指示继续计划 P20。§26 不加前提地证明：在有限家族中，开始成立与不再成立同步，但那是一段步上的数目与复现的同步，不说一次生起在哪一步伴随什么。本节问：一个成员上升（包括开始作为条件而在、体现的生起）的同一步上，是否另有成员下降？不加前提时不然：`Growing` 与 `Brood` 中有上升而什么都不下降。在平衡与耗散之下则然，而且有数量：被耗散的一步上，家族成员的下降至少等于其上升，每个取用的形成再多一。成果记录：[rising-and-falling-in-one-exchange](../../../../theories/becoming/results/records/rising-and-falling-in-one-exchange.md)。
+
+```text
+Result(s): 复用 no-finite-part-bears-taking（DissipatesOn、Dissipative、ClosedAt、runs_down、takes_of_gives）、
+           coming-and-ceasing-keep-pace（rise、fall、risen、fallen、family_over_stretch、excess_pos）、
+           generation-is-replenishment（rise_given、ComesToStand、Embodied.comesToStand、Brood）、
+           unceasing-generation-needs-renewal（Depletes、Rises、Falls）、more-needs-renewers（Balances、Acting、Taking、takers）；
+           新增 rising-and-falling-in-one-exchange
+Delta: Flow：Balances.fall_taken、Balances.takenBy；Dissipation：Balances.falls_cover、Balances.falls_of_taking、Balances.depletes、
+       rise_with_fall、standing_with_fall、rise_alone_opens、rise_exchange；Roles：Embodied.arising_with_fall、
+       Brood.birth_only、Brood.rise_without_fall
+Supplied premises / correspondence: 平衡（Balances）；该步上家族被耗散（DissipatesOn；耗散之下，每个不重复的封闭家族都是）；
+       读于形成时另加只有活跃者给予与取用（Acting、Taking）；读于体现的生起时另加体现（Embodied）
+Evidence: 合并检查器回执 20261009T110204.479251Z（889 项定理／1399 项声明审计，核心闭包 25 个模块，包 23 个模块，源声明的公理报告全空）；
+          外围桥接重跑 20261009T110332.423150Z；实例检查通过；五份记录所引的模块定理数按新回执更正，其中四份此前已过期（Flow、Dissipation、Identity、Wholes）
+Boundary: 下降不是止息，下降的成员可以仍作为条件而在；不说哪个成员下降，只说有；不说上升对下降者是好是坏；
+       不含伦理谓词；“同一交换”是同一步上同一流中的给予与取用，不是因果的单独归属
+Integration: 计划 P20；把 §26 的长程同步在耗散之下变为一步之内的伴随；Generation 的两个对应前提（RenewedBy、Depletes）
+       都化归为流的前提；§20 与 §27 的“上升降低存量”加上“另一个成员下降”
+```
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Flow | `Balances.fall_taken` | 平衡的流中每次下降都被取用。`rise_given` 的对偶 |
+| Flow | `Balances.takenBy` | 只有活跃者取用时，每次下降都是某个参与的活跃形成的取用，它汲取这一条件。`renewedBy` 的对偶 |
+| Dissipation | `Balances.falls_cover` | 被耗散的一步上，家族成员的下降至少等于其上升，每个取用的形成再多一：`risen + takers ≤ fallen`。由 §26 的一步上的升降相抵（`family_over_stretch`）与 §17 的 `runs_down` 推出 |
+| Dissipation | `Balances.falls_of_taking` | 被耗散的一步上，有形成从家族取用，就有成员下降，不论别的成员是否上升 |
+| Dissipation | `Balances.depletes` | 一个事件的每一步上家族都被耗散且有形成从中取用，这个事件就消耗家族（`Generation` 的 `Depletes`） |
+| Dissipation | `rise_with_fall`、`standing_with_fall` | 被耗散的家族中一个成员上升（开始作为条件而在），同一步上另有一个成员下降 |
+| Dissipation | `rise_alone_opens` | 耗散之下，不重复的家族中有成员上升而没有成员下降，家族在该步不封闭：有参与的形成与家族之外的条件交换 |
+| Dissipation | `rise_exchange` | 只有活跃者给予与取用时：一个成员上升，某个活跃形成给予它，并从家族取用；另一个成员下降，某个汲取它的活跃形成从中取用 |
+| Roles | `Embodied.arising_with_fall` | 被耗散的家族中一个体现成员的生起，伴随同一步上另一个成员的下降 |
+| Roles | `Brood.birth_only`、`Brood.rise_without_fall` | 没有耗散时不然：每一步上，第 t+1 代在它与第 t 代组成的家族中生起，家族在该步封闭，没有任何一代下降过；所以该家族在该步不被耗散（由 `arising_with_fall` 推出） |
+
+**解读。**
+
+- **长程的同步在耗散之下变成一步之内的伴随。** §26 说，有限家族中生起复现恰当止息复现，但两者可以相隔任意多步。耗散加上平衡，使上升在同一步上就伴随另一个成员的下降：不必等到以后，也不必在别处。数量上，下降至少等于上升加取用者的数目，所以耗散的家族在每个有交换的步上整体下降（`runs_down`），上升只是使别的成员下降得更多。
+- **生成的两个对应前提化归为流的前提。** §13 中 `Becoming.Generation` 的结论用两个由应用给出的前提：每次上升都由某个形成造成（`RenewedBy`），事件在没有上升的步上消耗家族（`Depletes`）。§14 已证明前者在平衡且只有活跃者给予的流中成立（`renewedBy`）。这里证明后者的更强形式：在平衡的流中，被耗散且有取用的步上，家族的某个成员下降，即使另一个成员上升（`falls_of_taking`）；一个事件的每一步都是这样的步，它就消耗家族（`depletes`）。所以在流的读法中，`Generation` 的两个对应前提化归为平衡、只有活跃者给予、耗散，以及事件之步上有形成从家族取用；这些仍是对应前提，只是更基本，并且可以分别检验。
+- **同一交换的两面。** `rise_exchange` 读于形成：给予上升成员的活跃形成自己从家族取用（耗散），另一个成员下降，由汲取它的活跃形成取用（平衡与 `Taking`）。读于一类关系项（`Embodied.arising_with_fall`）：一个关系项的生起，在同一步上就是家族中另一个关系项的下降。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是一个可以单独发生的事件，它与别处的下降是同一次交换。
+- **开放的单步判据。** §20 与 §27 证明，耗散之下，成员在任意晚的步开始作为条件而在（一般地，上升）的不重复有限家族，在任意晚的步不封闭。`rise_alone_opens` 给出单步的形式：耗散之下，有成员上升而没有成员下降的不重复家族，在该步就不封闭。`Brood` 正是这样：第 t+1 代生起，没有一代下降，家族封闭，所以它不被耗散。
+
+**作者反审。**
+
+*反驳 1：这只是耗散前提的改写。* 前提是每个形成的：它给予家族的少于从中取用的。结论是每个成员的：另一个成员的水平下降，下降的总量至少等于上升加取用者数。从形成到成员要经过平衡（每个成员的水平变化恰是给予与取用）与一步上的升降相抵（§26）。推导短，但内容不在前提中：前提不提及任何成员的水平。`Growing` 与 `Brood` 表明，没有耗散时结论不成立。
+
+*反驳 2：“生与灭在同一交换中”说得过强。* 是。计划原题为“生与灭”，证明的是上升与下降：下降的成员可以仍作为条件而在、仍然活跃，什么都不必止息。本节与记录用“上升与下降”，计划的行随之更正。下降何时是不再作为条件而在，要看水平是否降到零，这里不陈述；关于止息，见 §26 不加前提的长程同步与 §17、§20 在耗散之下的终止定理。
+
+*反驳 3：会被读成一个生起须以另一个的损失换来。* 定理不这样说。下降不是损伤：侵蚀在 `Becoming.Dependence` 中由依存与所需定义（`UnderminingOn`），一个条件下降后仍不低于每个依存于它的所需，汲取它就不是侵蚀；下降的成员可以是燃料、池水，而不是任何形成所依的东西。定理也不说上升是好的或坏的。它说的是在被耗散的家族中，交换在同一步上有两面；评价要另经 G0 与 C，不在这里。
+
+*反驳 4：为什么只对被耗散的家族陈述，而不对一切封闭家族？* 耗散之下，每个不重复的封闭家族都被耗散（`Dissipative` 的定义），所以 `rise_with_fall` 加上 `dissipative ds t distinct closed` 就是封闭家族的形式；`rise_alone_opens` 是它的逆否。陈述为被耗散的家族，使前提只在用到的那一步上：一个流可以只在某些步、某些家族上被耗散。
+
+**边界。** 不含伦理谓词；“同一交换”是同一步上同一流中的给予与取用，不把下降单独归给某个上升；不说哪个成员下降；下降不是止息；只对离散步的读法与自然数的量陈述；耗散、平衡与只有活跃者取用是对应前提，实际展开是否满足是经验问题；“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -1925,3 +1980,15 @@ The package now has 841 theorems and 1342 declaration audits, over a core closur
 - **Residues and bookkeeping (L1–L3).** Embodied relata are no longer called lives: "an embodied relatum as a condition" in `Roles`, and "need not be embodied" in the prose, while H14's phrase names only the question the record answers. The `Dissipation` title states the enclosure. Two related notes state their premises. "Giver" is gone from current text, the §24 rebuttals run in order, dormancy "uses no reserve", and the P16b paragraph counts the package. The text now says that every *source* declaration has an empty axiom report. The checker also audits every constant Lean generates in the core closure: only the injectivity lemmas of constructors with fields (`injEq`) depend on an axiom, `propext`; there are 29, and no source declaration uses them. The convention for review stamps is in the result workflow.
 
 The package now has 877 theorems and 1387 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 27 has not yet been independently reviewed.
+
+**P20: rising and falling in one exchange.** Section 26 shows, with no premise, that coming to be and ceasing to be keep pace in a finite family, as counts and recurrences over stretches. It does not say what accompanies a single rise at its own step, and without a premise nothing need: in `Growing` and `Brood` a member rises while nothing falls. Under balance and dissipation a rise is accompanied at its own step ([rising-and-falling-in-one-exchange](../../../../theories/becoming/results/records/rising-and-falling-in-one-exchange.md)).
+
+- **Every fall is taken from.** In a balanced flow every fall is taken from (`Balances.fall_taken`). Where only active formations take, some active formation drawing on the condition takes from it (`Balances.takenBy`). These are the duals of `rise_given` and `renewedBy`.
+- **Falls cover rises.** Across a step dissipated on, a family's members fall by at least as much as they rise, and by one more for each formation taking from it (`Balances.falls_cover`). This follows from the one-step balance of rises and falls in section 26 and `runs_down` in section 17.
+- **Rising and falling in one exchange.** Where a member of a family dissipated on rises, another member falls across the same step (`rise_with_fall`, `standing_with_fall`). Where only active formations give and take, an active formation gives to the one and takes from the family, and an active formation drawing on the other takes from it (`rise_exchange`). Read with one kind of relatum, the arising of an embodied member comes with another member falling (`Embodied.arising_with_fall`).
+- **A one-step test of openness.** Under dissipation, a family without repetition in which a member rises while none falls is open across that step (`rise_alone_opens`). The brood is such a case: each generation arises in a closed family of itself and the one before, and no generation ever falls, so that family is not dissipated on (`Brood.rise_without_fall`).
+- **Generation's premises reduce to the flow's.** A formation taking from a family dissipated on makes some member fall, whether or not another rises (`Balances.falls_of_taking`). An event at whose steps this happens depletes the family (`Balances.depletes`). Read through flows, both correspondence premises of `Becoming.Generation` therefore follow: `RenewedBy` from balance with only active formations giving, and `Depletes` from balance, dissipation and taking at the event's steps.
+- **Boundaries.** A fall is a lowering, not a ceasing: the member that falls may still stand. Nor is a fall a harm; undermining is defined by needs, and the falling member may be fuel that nothing depends on. "One exchange" means giving and taking in one flow across one step. It does not attribute a particular fall to a particular rise. The plan's original title, "coming to be and ceasing to be in one exchange", was too strong and is corrected.
+- **Bookkeeping.** Five records cite module theorem counts. They now follow the new receipt; four of them (Flow, Dissipation, Identity, Wholes) were stale before.
+
+The package now has 889 theorems and 1399 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 28 has not yet been independently reviewed.

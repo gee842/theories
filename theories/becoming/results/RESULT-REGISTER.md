@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-110 migrated records: 106 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+111 migrated records: 107 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -109,6 +109,7 @@
 | `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |
 | `retrospective-source-binding` | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](records/retrospective-source-binding.md) | theorem | recorded-checked |
+| `rising-and-falling-in-one-exchange` | [上升与下降在同一交换中：耗散之下，一个成员上升，同一步上另一个成员下降 / Rising and falling in one exchange: under dissipation, a member rising comes with another member falling across the same step](records/rising-and-falling-in-one-exchange.md) | theorem | recorded-checked |
 | `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
 | `self-good-reachable-g0` | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](records/self-good-reachable-g0.md) | theorem | recorded-checked |

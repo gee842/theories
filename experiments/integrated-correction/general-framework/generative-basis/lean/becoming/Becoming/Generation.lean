@@ -24,7 +24,9 @@ to say.
 * An event *depletes* a finite family of conditions when, at each of its steps at which
   no condition of the family rises, one of them falls (`Depletes`). This says only that
   some condition of the family changes at each step of the event, whatever its relation
-  to the event (`depletes_iff`).
+  to the event (`depletes_iff`). In a balanced flow, an event at whose steps the family
+  is dissipated on and some formation takes from it depletes it, and lowers a member even
+  where another rises (`Flow.Balances.depletes` in `Becoming.Dissipation`).
 
 Results:
 * A finite family of conditions none of which rises from some step on is depleted by

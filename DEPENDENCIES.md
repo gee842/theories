@@ -1242,6 +1242,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 复用选择不自动产生保留优势的经验约束；无数据到Lean状态的已验证转换。 / Reuses the empirical limit on automatic control-to-retention advantage; no verified conversion from data to Lean states.
 
+## rising-and-falling-in-one-exchange ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用封闭与耗散（ClosedAt、DissipatesOn、Dissipative）、runs_down 与 takes_of_gives。 / Reuses closure and dissipation (ClosedAt, DissipatesOn, Dissipative), runs_down and takes_of_gives.
+
+**Producer output / 上游输出:** 被耗散的家族跨一步至少下降其取用者的数目；给予被耗散家族的形成从中取用。 / A family dissipated on falls across a step by at least its number of takers; a formation giving to a family dissipated on takes from it.
+
+**Consumer input / 下游输入:** 家族成员的下降至少等于上升加取用者数；一个成员上升，另一个成员下降。 / A family's members fall by at least their rises plus the takers; a member rising comes with another falling.
+
+**Retained conditions / 保留条件:** 平衡；该步上家族被耗散。 / Balance; the family dissipated on across the step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## rising-and-falling-in-one-exchange ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用上升与下降（rise、fall、risen、fallen）、一步上的升降相抵（family_over_stretch）与 excess_pos。 / Reuses rising and falling (rise, fall, risen, fallen), the one-step balance of rises and falls (family_over_stretch) and excess_pos.
+
+**Producer output / 上游输出:** 不加前提：家族的总量在之后加其下降，等于之前加其上升。 / With no premise: a family's total after a step with its falls is its total before with its rises.
+
+**Consumer input / 下游输入:** 与 runs_down 合起来，下降至少等于上升加取用者数。 / With runs_down, falls at least the rises plus the takers.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## rising-and-falling-in-one-exchange ← generation-is-replenishment
+
+`formal-reuse` — 复用每次上升都被给予（rise_given）、开始作为条件而在是上升（ComesToStand.rises）、体现的生起是开始作为条件而在（Embodied.comesToStand）与 Brood。 / Reuses that every rise is given to (rise_given), that coming to stand is a rise (ComesToStand.rises), that embodied arising is coming to stand (Embodied.comesToStand), and Brood.
+
+**Producer output / 上游输出:** 体现的生起是补充；在耗散之下降低家族的存量。 / Embodied arising is replenishment, and under dissipation lowers the family's stock.
+
+**Consumer input / 下游输入:** 体现的生起伴随同一步上另一个成员的下降；Brood 中不然。 / Embodied arising comes with another member falling across the same step; not in Brood.
+
+**Retained conditions / 保留条件:** 平衡；被耗散；体现。 / Balance; dissipated on; embodiment.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## rising-and-falling-in-one-exchange ← unceasing-generation-needs-renewal
+
+`formal-reuse` — 复用 Depletes、Rises 与 Falls；Depletes 在这里由流的前提推出。 / Reuses Depletes, Rises and Falls; Depletes here follows from the flow's premises.
+
+**Producer output / 上游输出:** 生起消耗有限家族时，不息的生成需要更新复现；消耗是对应前提。 / Where arising depletes a finite family, unceasing generation needs renewal to recur; depletion is a correspondence premise.
+
+**Consumer input / 下游输入:** 平衡、耗散与事件之步上的取用推出消耗。 / Balance, dissipation and taking at the event's steps give depletion.
+
+**Retained conditions / 保留条件:** 平衡；事件之步上家族被耗散且有形成从中取用。 / Balance; at the event's steps the family is dissipated on and some formation takes from it.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)
+
+## rising-and-falling-in-one-exchange ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、Acting、Taking、取用者（takers）与 total 的引理；takenBy 是 renewedBy 的对偶。 / Reuses flows, balance, Acting, Taking, takers and the total lemmas; takenBy is the dual of renewedBy.
+
+**Producer output / 上游输出:** 平衡且只有活跃者给予时，每次上升都由活跃的补充者造成。 / With balance and only active formations giving, every rise is made by an active renewer.
+
+**Consumer input / 下游输入:** 平衡且只有活跃者取用时，每次下降都是汲取它的活跃形成的取用。 / With balance and only active formations taking, every fall is taken by an active formation drawing on it.
+
+**Retained conditions / 保留条件:** 平衡；Taking。 / Balance; Taking.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## risk-certificate-outcome-distinction ← assured-route-criterion
 
 `formal-reuse` — 原证明用 assured_route_iff 将计数失败接到实际不到达。 / The existing proof uses assured_route_iff to connect counted failure with failed arrival.

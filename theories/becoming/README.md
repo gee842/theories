@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-110 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+111 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -121,6 +121,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](results/records/residual-continuation-correspondence.md) | recorded-checked | [ExplanatoryResiduals.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean) |
 | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](results/records/retained-reference-joining-recovery.md) | recorded-checked | [ExplanatoryJoiningRegisters.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) |
 | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](results/records/retrospective-source-binding.md) | recorded-checked | [RetrospectiveBinding.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean) |
+| [上升与下降在同一交换中：耗散之下，一个成员上升，同一步上另一个成员下降 / Rising and falling in one exchange: under dissipation, a member rising comes with another member falling across the same step](results/records/rising-and-falling-in-one-exchange.md) | recorded-checked | [Dissipation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean) |
 | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](results/records/risk-certificate-outcome-distinction.md) | recorded-checked | [WisdomFallibleJudgment.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean) |
 | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](chapters/SCIENTIFIC-PHILOSOPHY.md) |
 | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](results/records/self-good-reachable-g0.md) | recorded-checked | [EvaluatorGrounding.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean) |

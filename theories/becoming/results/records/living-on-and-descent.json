@@ -204,14 +204,14 @@
     "en": "Contains no ethical predicate; changes neither living nor C, and does not show that arising is good or that new arising ought to be brought about; sustenance and descent are candidate readings of related, and adopting them is Ren's choice; descent relates every event of two relata and does not order them in time; the formation that gives need not be embodied (a sun giving to a seed is descent too); living on does not ask about the effect of drawing, and the relatum lived on need be neither embodied nor active (Drowsy); descent counts gift entries, not net flow: a formation taking part that gives and takes back as much is still an ancestor, a further choice of reading; both readings depend on the one-kind identification, which the two-kind readings cannot check; stated for the stepwise reading only; the witnesses are minimal; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T104417.218214Z）：Becoming.Descent 的 41 项定理全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 877 项定理／1387 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §25；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T104417.218214Z): the 41 theorems of Becoming.Descent all have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 877 theorems/1387 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §25 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T110204.479251Z）：Becoming.Descent 的 41 项定理全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 889 项定理／1399 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §25；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T110204.479251Z): the 41 theorems of Becoming.Descent all have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 889 theorems/1399 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §25 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
       "role": "proof",
-      "sha256": "47a510fe7927ce9385e6bbf2d68120338cd7188f54a0305e96356a796c14792e",
+      "sha256": "cfd1908f49fe19bafa920bc45b70d358ccaf89d674a8ca8e5e90b16872dbb9a6",
       "declarations": [
         "Becoming.Web.LivesOn",
         "Becoming.Web.sustenance",
@@ -278,7 +278,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "080472c57bc3d476665a40d4a9eba1d29b0022bee9d463736dbc30e6fc842d91",
+      "sha256": "07086627aee4f9af11f0265165df29c293a132a8bdcfe430039aacf1e8304a5f",
       "declarations": [
         "Becoming.Web.Embodied",
         "Becoming.Web.Embodied.arises_given",
@@ -303,7 +303,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "01ef491df2aa009b1739ceaf062c82d7be3cd3d04e9c2d55b97d71260c189d97",
+      "sha256": "22fd0168ed9a80279c105bc6d37ba34c3b9e1a8e2775b93117486ea857b68350",
       "declarations": [
         "Becoming.Web.ComesToStand",
         "Becoming.Flow.Balances",
@@ -335,17 +335,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f46f78fc3969d0b2b1956095b12461cd53c331be0400e572fb68458c2ad6d715"
+      "sha256": "b42ded8776644fadb9d445428c2ffb6bbc9b8ecdde6ea79c5d97a1e69354a0c0"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4923b25f719e7e3a4b9a4ab467041cbdb7383ca257dab2047fce901b85090ee7"
+      "sha256": "c8ca15cc711a6f1d4f0d116fb2e35a118dfb77ce667f8866a0eacd3b813874b9"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "a4bba4082243c093c0bf00f34c53da28781c4527213d5942c79e7f7c7261fbc1"
+      "sha256": "5201c7c6aaa22164787684972f8293873b31d2c53184cb0f886008fae0941067"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
@@ -397,6 +397,10 @@
     {
       "zh": "2026-10-09 P18b：按第八次独立审查更正（L8–L10）。Descends 要求给予的形成参与该步（此前只要求给予项为正）；以之为生在 Dependent 之下给出的是被依存的关系项作为条件而在（LivesOn.stands），LivesOn.active 另需体现；新增 Drowsy、Stranger 与 Brood.not_descends；对应写明两种关系的定义不含体现。",
       "en": "2026-10-09 P18b: corrected following the eighth independent review (L8–L10). Descends requires the formation that gives to take part in the step (it previously required only a positive gift entry); what living on gives under Dependent is that the relatum lived on stands (LivesOn.stands), LivesOn.active also needing embodiment; Drowsy, Stranger and Brood.not_descends added; the correspondence says neither relation's definition mentions embodiment."
+    },
+    {
+      "zh": "2026-10-09 P20：验证范围重新指向合并检查器回执 20261009T110204.479251Z 与外围回执 20261009T110332.423150Z；所引模块的定理数按新回执更新。断言不变。",
+      "en": "2026-10-09 P20: validation scope re-pointed to consolidated receipt 20261009T110204.479251Z and periphery receipt 20261009T110332.423150Z; the module theorem counts it cites follow the new receipt. The claim is unchanged."
     }
   ]
 }

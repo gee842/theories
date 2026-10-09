@@ -56,8 +56,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   replenishment at arbitrarily late steps;
   more generation without end needs replenishment without bound and, with bounded
   capacity, renewers without bound; unceasing generation is not yet more. Every rise is
-  given to, so where members of a family rise at arbitrarily late steps, as in coming to
-  stand, the rise from nothing, its replenishment recurs.
+  given to and every fall taken from, so where members of a family rise at arbitrarily
+  late steps, as in coming to stand, the rise from nothing, its replenishment recurs.
 * `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
   are one change, read of activity, dependence and standing. Over any stretch an amount
@@ -92,7 +92,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   conditions in all, taking does not recur. Where the exchange of a step lies within
   finitely many conditions, giving needs uptake. Rising, as in coming to stand, falls
   under this with no taking of its own: where it recurs in a finite family, the family
-  is open at arbitrarily late steps and, enclosed around, draws in.
+  is open at arbitrarily late steps and, enclosed around, draws in. Across a step
+  dissipated on, a family's members fall by at least as much as they rise, and by one
+  more for each formation taking from it: a member rising comes with another falling in
+  the same exchange, and the depletion that `Becoming.Generation` supplies as a premise
+  follows.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
@@ -101,7 +105,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and it arises only as another active formation gives to it. It comes to stand as it
   arises, so its arising is replenishment: under dissipation generation that recurs in a
   finite family leaves it open, draws in where each step's exchange around it lies within
-  finitely many relata, and in a finite world ceases.
+  finitely many relata, and in a finite world ceases. Under dissipation its arising comes
+  with another member of the family falling across the same step; without dissipation it
+  need not.
 * `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
   exactly the zero reserve; a reserve can be a held condition, and where none is
   represented it is supplied. Where a held condition carries the formations, moving

@@ -472,8 +472,9 @@ the flow balances and only active formations give, the stranger's entry is posit
 across the step at which the seed comes to stand, and the seed descends from the parent
 alone. -/
 theorem stranger : flow.Balances web ∧ flow.Acting web ∧
-    (∀ t, ¬ Relatum.stranger ∈ flow.present t) ∧ 0 < flow.give 0 .stranger .seed ∧ web.ComesToStand 0 .seed ∧
-    flow.Descends web .seed .parent ∧ ¬ flow.Descends web .seed .stranger :=
+    (∀ t, ¬ Relatum.stranger ∈ flow.present t) ∧ 0 < flow.give 0 .stranger .seed ∧
+    web.ComesToStand 0 .seed ∧ flow.Descends web .seed .parent ∧
+    ¬ flow.Descends web .seed .stranger :=
   ⟨balances, acting, absent, Nat.zero_lt_one, ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
    ⟨0, .head [], Nat.zero_lt_one, ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩⟩,
    fun ⟨t, present, _⟩ => absent t present⟩

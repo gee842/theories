@@ -64,6 +64,20 @@ on dissipation. This module states that premise on flows and proves what it carr
   `standing_ceases`). Where a formation is itself a condition standing exactly while it
   is active, its arising is such a coming to stand (`Becoming.Roles`,
   `Web.generation_draws_in`).
+* Rising and falling in one exchange. Across a step dissipated on, the members of a
+  family fall by at least as much as they rise, and by one more for each formation
+  taking from it (`Balances.falls_cover`). So a formation taking from the family makes
+  some member fall, whether or not another rises (`Balances.falls_of_taking`), and the
+  depletion supplied as a premise in `Becoming.Generation` is a theorem for an event at
+  whose steps the family is dissipated on and taken from (`Balances.depletes`). Where a
+  member rises, another member falls across the same step (`rise_with_fall`,
+  `standing_with_fall` for coming to stand), so under dissipation a member of a family
+  without repetition rising while none falls shows the family open across that step
+  (`rise_alone_opens`). Where only active formations give and take, an active formation
+  gives to the one and takes from the family, and an active formation drawing on the
+  other takes from it (`rise_exchange`). The fall is a lowering, not a ceasing: the
+  member that falls may still stand. Without dissipation a member can come to stand with
+  nothing falling (`Brood.rise_without_fall` in `Becoming.Roles`).
 * The premises are consistent with more without end: a sun burns a fresh fuel at every
   step and gives a pool less than it burns, while ever more growers take from the pool
   (`Frontier`). The conditions it draws on are not contained in any finite family, while
@@ -533,6 +547,82 @@ theorem standing_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
     ¬ ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
   fun coming => rising_ceases balances dissipative distinct every fun N => match coming N with
     | ⟨t, c, later, comes⟩ => ⟨t, c, later, comes.rises⟩
+
+/-! ## Rising and falling in one exchange -/
+
+/-- Across a step dissipated on, a family's members fall by at least as much as they rise,
+and by one more for each formation taking from the family. -/
+theorem Balances.falls_cover (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) :
+    risen ds (fun c s => W.level s c) t + L.takers ds t ≤ fallen ds (fun c s => W.level s c) t :=
+  le_of_add_le_add_right (W.stock ds (t + 1)) (Nat.le_trans
+    (Nat.le_of_eq ((Nat.add_comm _ _).trans
+      ((congrArg (W.stock ds (t + 1) + ·) (Nat.add_comm _ _)).trans (Nat.add_assoc _ _ _).symm)))
+    (Nat.le_trans (Nat.add_le_add_right (balances.runs_down dissipates) _)
+      (Nat.le_of_eq ((family_over_stretch (fun c s => W.level s c) t 1 ds).symm.trans
+        (Nat.add_comm _ _)))))
+
+/-- Across a step dissipated on, a formation taking from the family makes one of its
+members fall, whether or not another rises. -/
+theorem Balances.falls_of_taking (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) (takes : 0 < L.takers ds t) :
+    ∃ d, d ∈ ds ∧ W.Falls t d :=
+  match total_pos (q := fun d => fall (fun s => W.level s d) t) ds (Nat.lt_of_lt_of_le takes
+      (Nat.le_trans (Nat.le_add_left _ _) (balances.falls_cover dissipates))) with
+  | ⟨d, mem, falls⟩ => ⟨d, mem, excess_pos.mp falls⟩
+
+/-- The depletion of `Becoming.Generation` follows: an event at each of whose steps the
+family is dissipated on and some formation takes from it depletes the family. -/
+theorem Balances.depletes (balances : L.Balances W) {ds : List C} {event : Nat → Prop}
+    (taken : ∀ t, event t → L.DissipatesOn ds t ∧ 0 < L.takers ds t) : W.Depletes ds event :=
+  fun t happens _ => match taken t happens with
+  | ⟨dissipates, takes⟩ => balances.falls_of_taking dissipates takes
+
+/-- Rising and falling in one exchange: where a member of a family dissipated on across a
+step rises, another member falls across the same step. -/
+theorem rise_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (rises : W.Rises t c) :
+    ∃ d, d ∈ ds ∧ d ≠ c ∧ W.Falls t d :=
+  match total_pos (q := fun d => fall (fun s => W.level s d) t) ds (Nat.lt_of_lt_of_le
+      (Nat.lt_of_lt_of_le (excess_pos.mpr rises)
+        (le_total_of_mem (q := fun d => rise (fun s => W.level s d) t) mem))
+      (Nat.le_trans (Nat.le_add_right _ _) (balances.falls_cover dissipates))) with
+  | ⟨d, mem', fell⟩ =>
+    have falls : W.Falls t d := excess_pos.mp fell
+    ⟨d, mem', fun same => Nat.lt_asymm rises (same ▸ falls), falls⟩
+
+/-- So does a member coming to stand. -/
+theorem standing_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (comes : W.ComesToStand t c) :
+    ∃ d, d ∈ ds ∧ d ≠ c ∧ W.Falls t d :=
+  rise_with_fall balances dissipates mem comes.rises
+
+/-- Under dissipation, a member of a family without repetition rising across a step while
+no member falls shows the family open across the step: some formation taking part
+exchanges with a condition outside it. -/
+theorem rise_alone_opens (balances : L.Balances W) (dissipative : L.Dissipative)
+    {ds : List C} (distinct : Distinct ds) {t : Nat} {c : C} (mem : c ∈ ds)
+    (rises : W.Rises t c) (still : ∀ d, d ∈ ds → ¬ W.Falls t d) : ¬ L.ClosedAt ds t :=
+  fun closed => match rise_with_fall balances (dissipative ds t distinct closed) mem rises with
+  | ⟨d, mem', _, falls⟩ => still d mem' falls
+
+/-- Rising and falling in one exchange, read of formations: in a balanced flow where only
+active formations give and take, where a member of a family dissipated on across a step
+rises, an active formation gives to it and takes from the family, and another member
+falls, taken from by an active formation drawing on it. -/
+theorem rise_exchange (balances : L.Balances W) (acting : L.Acting W) (taking : L.Taking W)
+    {ds : List C} {t : Nat} (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds)
+    (rises : W.Rises t c) :
+    (∃ f, f ∈ L.present t ∧ W.active t f ∧ 0 < L.give t f c ∧ 0 < total ds (L.take t f)) ∧
+      ∃ d g, d ∈ ds ∧ d ≠ c ∧ W.Falls t d ∧
+        g ∈ L.present t ∧ W.active t g ∧ W.draws t g d ∧ 0 < L.take t g d :=
+  ⟨match total_pos (L.present t) (balances.rise_given rises) with
+    | ⟨f, present, gives⟩ => ⟨f, present, acting t f c present gives, gives,
+        dissipates.takes_of_gives present (total_pos_of_mem mem gives)⟩,
+   match rise_with_fall balances dissipates mem rises with
+    | ⟨d, mem', other, falls⟩ => match balances.takenBy taking falls with
+      | ⟨g, present, takes, active, draws⟩ =>
+        ⟨d, g, mem', other, falls, present, active, draws, takes⟩⟩
 
 end Flow
 
