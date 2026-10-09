@@ -49,18 +49,6 @@ is the physical content. No ethical predicate, ranking or axiom occurs.
 
 namespace Becoming
 
-/-- One where a decidable proposition holds, zero where it fails. -/
-def mark (p : Prop) [decide : Decidable p] : Nat :=
-  match decide with
-  | .isTrue _ => 1
-  | .isFalse _ => 0
-
-theorem mark_cases {p : Prop} [decide : Decidable p] {q : Nat → Prop} (yes : p → q 1)
-    (no : ¬ p → q 0) : q (mark p) :=
-  match decide with
-  | .isTrue holds => yes holds
-  | .isFalse fails => no fails
-
 variable {F C : Type}
 
 namespace Web

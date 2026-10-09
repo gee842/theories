@@ -8,6 +8,7 @@ import Becoming.Joint
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
+import Becoming.Change
 import Becoming.Population
 import Becoming.Identity
 import Becoming.Wholes
@@ -57,6 +58,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   capacity, renewers without bound; unceasing generation is not yet more. A condition
   coming to stand is given its new standing, so where members of a family come to stand
   at arbitrarily late steps, its replenishment recurs.
+* `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
+  Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
+  are one change, read of activity, dependence and standing. Over any stretch an amount
+  at the end with its falls is the amount at the start with its rises. In a finite
+  family coming to be and ceasing to be keep pace, differing over any stretch by at most
+  the number of members, and each recurs exactly when the other does; so with finitely
+  many formations generation is unceasing exactly when some formation ceases at
+  arbitrarily late steps.
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
   active formations, with each formation taking part listed once and only active
   formations taking, more generation without end makes generation unceasing.

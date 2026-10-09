@@ -1,4 +1,4 @@
-import Becoming.Flow
+import Becoming.Change
 
 /-!
 # Population: counting the formations that take part

@@ -209,3 +209,51 @@ Ren 把以下决定交给 AI 执行（“你自己全改了吧”）：
 L0 命名空间 `Generative` 保留。`GenerativeCore` 的字节被 593 张回执哈希，改名会使这些继承回执全部失效，而收益最小；根模块 `Becoming` 的说明已写明它的含义。
 
 Three rings, with dependence pointing only toward the core; one checker and one receipt per toolchain. Modules are named for what they state; declaration names are stable, so aliases survive module renames. At Ren's request the theory directory became `theories/becoming/` and the dated chapter folder became `chapters/`. Live references were rewritten and verified as pure path substitution, evidence keeps its bytes, and a rename receipt maps every rewritten file. The L0 namespace `Generative` stays, because renaming it would invalidate every inherited receipt.
+
+## 9. 走向完整的生成之论 / Toward a complete Theory of Becoming
+
+2026-10-09。Ren 的[指示](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md)：“aim a complete theory of becoming, and finish related work”。依 Ren 的[优先提议](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)：
+
+- 计入整个空间，包括生成与退化，生成之论或许不需要公理；
+- 加上公理，就划出整个空间中的一部分。
+
+范围是同一展开中关系的形成、维持、转化、退化与消失，以及它们怎样改变后续活动的条件；生命、演化与评价在其中分化。
+
+**“完整”读作四项可检查的内容（AI 的读法）。**
+
+1. **每种形态都在同一条脊柱上。** 形成、维持、转化、退化、消失，以及生命、演化、评价，各有陈述在核心上的定理。
+2. **整体的规律不加前提。** 对每个展开都成立的规律，不加任何关于展开的前提而证明；其余每条规律都写明它的前提。表示本身的方法承诺另行公开：离散的步、自然数的量、计数时的可判定性。
+3. **前提划出部分，不是整体的公理。** 动力学的每个前提，都证明有展开满足它、也有展开不满足它：它划出整个空间中真实而非空的一部分。生成的、退化的与混合的部分都非空。
+4. **开放的内容分类。** 每个开放项归入四类之一：Ren 的选择、哲学根据、经验对应、待证。
+
+完整的形式表示不等于整体对现实的演绎必然性。[根基记录](../../../../theories/becoming/results/records/theory-of-becoming-foundation.md)在“关系构成”一步得到论证之前保持开放。强的零公理假说不缩成“Lean 公理报告为空”。
+
+| 阶段 | 内容 | 验收 |
+|---|---|---|
+| P18b 第八次独立审查 | 另一 agent（Claude Opus 5.5）审查 P16c、P17 与 P18（`BECOMING-P16C-P17-P18-REVIEW.md`） | 逐项处理，写入研究的下一节；记录、章节与计划随之更正 |
+| P19 变化的规律 ✓ | L3 新模块 `Becoming.Change`：不加前提的规律。不变即持续；量的增减相抵（任何一段上，终点加下降等于起点加上升）；支持只经由关系的变化而改变（条件下降、依存改变或所需增长）；活动、水平、依存与支持的变化都是同一种“跨一步的变化”的实例 | 已完成：[研究 §26](BECOMING-RENEWAL-READING.md#26-变化的规律不加前提开始成立与不再成立同步p19)。`Becoming.Change`（导入 `Flow`，`Population` 改导入它）：开始成立与不再成立（`ComesToBe`、`CeasesToBe`），生起与止息、形成与消解、开始与不再作为条件而在是它的读法（`Web.change_readings`）；`persists`、`Web.supported_of`；一段步上的升降相抵（`over_stretch`、`family_over_stretch`）；下限与上限（`fallen_within`、`risen_within`、`rising_recurs`、`falling_recurs`、`Web.falls_need_rises`），`Renewal` 的 `falls_finitely` 是一个量的下限（`falls_finitely_from_floor`）；超出原计划：有限家族中开始成立与不再成立同步（`held_over_stretch`、`keep_pace`、`coming_recurs_iff`），读于活动（`Web.activity_over_stretch`、`Web.arising_recurs_iff`、`Web.unceasing_iff`）与水平（`Web.standing_recurs_iff`，不需要任何前提）；无限家族的见证 `Dawn`、`Dusk`。`mark` 从 `Reserve` 移来，`total_map`、`total_congr` 从 `Roles` 移到 `Flow` 的 total 一节。记录 [coming-and-ceasing-keep-pace](../../../../theories/becoming/results/records/coming-and-ceasing-keep-pace.md)。核心闭包 25 个模块（包 23 个）；连桥接共 841 项定理／1342 项声明审计，公理报告全空；外围桥接重跑通过 |
+| P20 生与灭在同一交换中 | `Flow` 与 `Dissipation` 新增：在平衡且只有活跃者取用的流中，每次下降都是某个活跃形成的取用；在耗散之下，封闭家族中一个成员开始作为条件而在，同一家族中另有成员下降；没有耗散时不然（`Brood`） | 定理与反例；不使用“代价”“支付”一类用语 |
+| P21 演化在脊柱上 | L4 或 L3 新模块 `Becoming.Evolution`：经世系的传递（后代承接给予它的形成的依存）、变异（所需不同）与选择（共同条件之下支持的差别）；差别经由传递进入后续活动，并改变后续选择的条件。既有的演化机制（`StructuralCopying` 等）保持原范围，能证明对应时在外围接通 | 演化的最小形式内容在核心上；不替代演化之论的独立目标 |
+| P22 整体与其部分 | 新模块 `Becoming.Space`：P19 的规律对整个空间成立；`Dependent`、`Balances`、`Dissipative`、`Embodied`、`Acting`、`Carries` 等每个前提都有满足与不满足它的展开；生成的（生成不息）、退化的（消耗、终结）、混合的与“每个事件都 living”的部分都非空，且彼此交叠 | Ren 提议的形式内容：规律对整体成立，前提划出部分 |
+| P23 完整的陈述 | 正典章节加“完整的生成之论”一节：整体的规律、前提划出的部分、生与灭的统一、后续活动的条件、演化与评价的位置；根基章节的完成审计；根基记录的下一步；开放纲领按四类重排 | 每个开放项归类；不把形式完整写成必然性已证 |
+| P23b 第九次独立审查 | 另一 agent 审查 P19–P23 | 逐项处理 |
+
+各阶段沿用既有流程：先在暂存区编译并核对公理，再登记包、写记录与研究章节，跑全部检查，最后提交。读法、名称、“生”的范围与接续仍由 Ren 定，见上文第 6 节与研究各节的“边界”。
+
+**English.** Following Ren's instruction to aim at a complete Theory of Becoming and finish the related work, completeness is read as four checkable parts:
+
+1. Every mode of the scope is stated on the one spine.
+2. The laws that hold of every unfolding are proved with no premise, and every other law names its premise. The representation's own commitments (discrete steps, natural-number amounts, decidability where counting needs it) are disclosed separately.
+3. Each dynamical premise is shown to pick out a proper, non-empty part of the whole space. Generative, degenerative and mixed parts are all non-empty.
+4. Everything open is classified as Ren's choice, philosophical warrant, empirical correspondence or a further proof.
+
+The phases are:
+- P18b: the eighth review.
+- P19: laws of change with no premise.
+- P20: coming to be and ceasing to be in one exchange.
+- P21: evolution on the spine.
+- P22: the whole and its parts.
+- P23: the complete statement.
+- P23b: the ninth review.
+
+Formal completeness of a representation does not establish the deductive necessity of the whole for reality, and the readings and names remain Ren's.

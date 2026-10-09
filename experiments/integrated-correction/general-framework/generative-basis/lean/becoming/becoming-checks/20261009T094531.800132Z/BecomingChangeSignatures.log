@@ -1,0 +1,67 @@
+@Becoming.mark_cases : ∀ {p : Prop} [decide : Decidable p] {q : Nat → Prop},
+  (p → q 1) → (¬p → q 0) → q (Becoming.mark p)
+Becoming.mark_le_one : ∀ (p : Prop) [inst : Decidable p], Becoming.mark p ≤ 1
+Becoming.excess_balance : ∀ (a b : Nat), a + Becoming.excess b a = b + Becoming.excess a b
+@Becoming.excess_pos : ∀ {a b : Nat}, 0 < Becoming.excess a b ↔ b < a
+Becoming.excess_mark : ∀ (a b : Prop) [da : Decidable a] [db : Decidable b],
+  0 < Becoming.excess (Becoming.mark a) (Becoming.mark b) ↔ a ∧ ¬b
+Becoming.across : ∀ (q : Nat → Nat) (t : Nat), q (t + 1) + Becoming.fall q t = q t + Becoming.rise q t
+Becoming.over_stretch : ∀ (q : Nat → Nat) (S n : Nat),
+  q (S + n) + Becoming.total (Becoming.steps S n) (Becoming.fall q) =
+    q S + Becoming.total (Becoming.steps S n) (Becoming.rise q)
+@Becoming.family_over_stretch : ∀ {α : Type} (q : α → Nat → Nat) (S n : Nat) (as : List α),
+  (Becoming.total as fun a => q a (S + n)) + Becoming.total (Becoming.steps S n) (Becoming.fallen as q) =
+    (Becoming.total as fun a => q a S) + Becoming.total (Becoming.steps S n) (Becoming.risen as q)
+@Becoming.le_dest : ∀ {a b : Nat}, a ≤ b → ∃ m, b = a + m
+@Becoming.steps_mem : ∀ {T n t : Nat}, t ∈ Becoming.steps T n → T ≤ t
+Becoming.steps_last : ∀ (q : Nat → Nat) (T n : Nat),
+  Becoming.total (Becoming.steps T (n + 1)) q = Becoming.total (Becoming.steps T n) q + q (T + n)
+Becoming.steps_mono : ∀ (q : Nat → Nat) (T n m : Nat),
+  Becoming.total (Becoming.steps T n) q ≤ Becoming.total (Becoming.steps T (n + m)) q
+@Becoming.Recurs.mono : ∀ {α : Type} {as : List α} {e e' : α → Nat → Prop},
+  (∀ (a : α) (t : Nat), e a t → e' a t) → Becoming.Recurs as e → Becoming.Recurs as e'
+@Becoming.Recurs.accumulates : ∀ {α : Type} {as : List α} {r : α → Nat → Nat},
+  (Becoming.Recurs as fun a t => 0 < r a t) →
+    ∀ (N K : Nat), ∃ n, K ≤ Becoming.total (Becoming.steps N n) fun t => Becoming.total as fun a => r a t
+@Becoming.pos_of_exceeds : ∀ {x y A B K : Nat}, x ≤ K → x + A = y + B → K + 1 ≤ B → 0 < A
+@Becoming.rising_recurs : ∀ {α : Type} {as : List α} {q : α → Nat → Nat},
+  (Becoming.Recurs as fun a t => 0 < Becoming.fall (q a) t) → Becoming.Recurs as fun a t => 0 < Becoming.rise (q a) t
+@Becoming.falling_recurs : ∀ {α : Type} {as : List α} {q : α → Nat → Nat} {B : Nat},
+  (∀ (a : α) (t : Nat), a ∈ as → q a t ≤ B) →
+    (Becoming.Recurs as fun a t => 0 < Becoming.rise (q a) t) → Becoming.Recurs as fun a t => 0 < Becoming.fall (q a) t
+Becoming.falls_finitely_from_floor : ∀ (q : Nat → Nat) (T : Nat),
+  (∀ (n : Nat), T ≤ n → q (n + 1) ≤ q n) → ¬∀ (N : Nat), ∃ n, N ≤ n ∧ q (n + 1) < q n
+@Becoming.rise_mark : ∀ {p : Nat → Prop} [inst : (t : Nat) → Decidable (p t)] {t : Nat},
+  0 < Becoming.rise (fun s => Becoming.mark (p s)) t ↔ Becoming.ComesToBe p t
+@Becoming.fall_mark : ∀ {p : Nat → Prop} [inst : (t : Nat) → Decidable (p t)] {t : Nat},
+  0 < Becoming.fall (fun s => Becoming.mark (p s)) t ↔ Becoming.CeasesToBe p t
+@Becoming.persists : ∀ {p : Nat → Prop} [(t : Nat) → Decidable (p t)] {S : Nat},
+  p S → (∀ (t : Nat), S ≤ t → ¬Becoming.CeasesToBe p t) → ∀ (n : Nat), p (S + n)
+@Becoming.coming_recurs_iff : ∀ {α : Type} {as : List α} {p : α → Nat → Prop} [(a : α) → (t : Nat) → Decidable (p a t)],
+  (Becoming.Recurs as fun a => Becoming.ComesToBe (p a)) ↔ Becoming.Recurs as fun a => Becoming.CeasesToBe (p a)
+@Becoming.Web.change_readings : ∀ {F C : Type} (W : Becoming.Web F C) (t : Nat) (f g : F) (c : C),
+  (W.Arises t f ↔ Becoming.ComesToBe (fun x => W.active x f) t) ∧
+    (W.Ceases t f ↔ Becoming.CeasesToBe (fun x => W.active x f) t) ∧
+      (W.Forms t g c ↔ Becoming.ComesToBe (fun x => W.requires x g c) t) ∧
+        (W.Dissolves t g c ↔ Becoming.CeasesToBe (fun x => W.requires x g c) t) ∧
+          (W.ComesToStand t c ↔ Becoming.ComesToBe (fun x => 0 < W.level x c) t) ∧
+            (W.CeasesToStand t c ↔ Becoming.CeasesToBe (fun x => 0 < W.level x c) t)
+@Becoming.Web.supported_of : ∀ {F C : Type} (W : Becoming.Web F C) {s t : Nat} {f : F},
+  W.Supported s f →
+    (∀ (c : C), W.requires t f c → W.requires s f c ∧ W.need t f c ≤ W.need s f c ∧ W.level s c ≤ W.level t c) →
+      W.Supported t f
+@Becoming.Web.falls_need_rises : ∀ {F C : Type} (W : Becoming.Web F C) {cs : List C},
+  (Becoming.Recurs cs fun c t => W.Falls t c) → Becoming.Recurs cs fun c t => W.Rises t c
+@Becoming.Web.arising_recurs_iff : ∀ {F C : Type} (W : Becoming.Web F C)
+  [(t : Nat) → (f : F) → Decidable (W.active t f)] (fs : List F),
+  (Becoming.Recurs fs fun f t => W.Arises t f) ↔ Becoming.Recurs fs fun f t => W.Ceases t f
+@Becoming.Web.standing_recurs_iff : ∀ {F C : Type} (W : Becoming.Web F C) (cs : List C),
+  (Becoming.Recurs cs fun c t => W.ComesToStand t c) ↔ Becoming.Recurs cs fun c t => W.CeasesToStand t c
+@Becoming.Web.unceasing_iff : ∀ {F C : Type} (W : Becoming.Web F C) [(t : Nat) → (f : F) → Decidable (W.active t f)]
+  {fs : List F}, (∀ (f : F), f ∈ fs) → (W.Unceasing ↔ ∀ (N : Nat), ∃ t f, N ≤ t ∧ W.Ceases t f)
+Becoming.Dawn.unceasing : Becoming.Dawn.web.Unceasing
+Becoming.Dawn.never_ceases : ∀ (t f : Nat), ¬Becoming.Dawn.web.Ceases t f
+Becoming.Dawn.rises : ∀ (t : Nat), Becoming.Dawn.web.Rises t ()
+Becoming.Dawn.never_falls : ∀ (t : Nat), ¬Becoming.Dawn.web.Falls t ()
+Becoming.Dusk.ceasing : ∀ (N : Nat), ∃ t f, N ≤ t ∧ Becoming.Dusk.web.Ceases t f
+Becoming.Dusk.nothing_arises : ∀ (t f : Nat), ¬Becoming.Dusk.web.Arises t f

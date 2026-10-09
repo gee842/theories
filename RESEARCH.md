@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-109 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+110 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -27,6 +27,7 @@
 | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](theories/becoming/results/records/branching-tests-bisimulation.md) | recorded-checked | [ExplanatoryBranching.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) |
 | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](theories/becoming/results/records/classification-robust-generative-comparison.md) | recorded-checked | [ClassificationRobustJudgment.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean) |
 | [代码共同方案的全局支持 / Global support of coded joint plans](theories/becoming/results/records/code-plan-global-support.md) | recorded-checked | [ExplanatoryFootprints.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) |
+| [不加前提的变化规律：有限之中，开始成立与不再成立同步 / Laws of change with no premise: in a finite family, coming to be and ceasing to be keep pace](theories/becoming/results/records/coming-and-ceasing-keep-pace.md) | recorded-checked | [Change.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean) |
 | [条件的对应纪律：只有交互才经由条件相关，惰性条件不再免费连通，连通由活的使用造成 / A correspondence discipline for conditions: only interaction relates through a condition, idle conditions no longer connect for free, and connection is made by living use](theories/becoming/results/records/condition-correspondence-discipline.md) | recorded-checked | [Correspondence.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean) |
 | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](theories/becoming/results/records/conditional-foundation-assessment.md) | reviewed-scoped | [FIXED-FINISH-LINE-AUDIT.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) |
 | [绑定的构成性说明及无前提推广的限度 / Constitutive binding and the limits of presuppositionless promotion](theories/becoming/results/records/constitutive-binding-assessment.md) | reviewed-scoped | [GENERATED-LOGIC.md](theories/becoming/chapters/GENERATED-LOGIC.md) |

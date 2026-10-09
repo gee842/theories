@@ -306,6 +306,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean)
 
+## coming-and-ceasing-keep-pace ← unceasing-generation-needs-renewal
+
+`formal-reuse` — 复用生起、不息、上升与下降（Arises、Unceasing、Rises、Falls）与 total。 / Reuses arising, unceasing generation, rising and falling (Arises, Unceasing, Rises, Falls) and total.
+
+**Producer output / 上游输出:** 生起消耗有限家族时，不息的生成需要更新复现。 / Where arising depletes a finite family, unceasing generation needs renewal to recur.
+
+**Consumer input / 下游输入:** 不加前提：有限家族中下降复现就需要上升复现；生起复现恰当止息复现。 / With no premise: in a finite family recurring falls need recurring rises, and arising recurs exactly when ceasing does.
+
+**Retained conditions / 保留条件:** 有限家族；计数时活动可判定。 / A finite family; decidable activity for counting.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)
+
+## coming-and-ceasing-keep-pace ← becoming-renewal-reading
+
+`formal-reuse` — falls_finitely 是一个量的下限规律（falls_finitely_from_floor）。 / falls_finitely is the floor law for one amount (falls_finitely_from_floor).
+
+**Producer output / 上游输出:** 从某步起不上升的观测量只下降有限次。 / An observable never rising from some step on falls only finitely often.
+
+**Consumer input / 下游输入:** 有限家族的下降至多比上升多出起点的总量。 / A finite family falls by at most its total at the start more than it rises.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
+## coming-and-ceasing-keep-pace ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用依存的形成与消解（Forms、Dissolves）与支持（Supported）；它们是同一种变化的读法，支持只经由关系改变。 / Reuses dependence forming and dissolving (Forms, Dissolves) and support (Supported); these are readings of one change, and support changes only through relations.
+
+**Producer output / 上游输出:** 依存跨步形成、维持、断裂与消解。 / Dependence forms, holds, breaks and dissolves across steps.
+
+**Consumer input / 下游输入:** 这些都是开始成立与不再成立的读法。 / These are readings of coming to be and ceasing to be.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## coming-and-ceasing-keep-pace ← more-needs-renewers
+
+`formal-reuse` — 复用一段步（steps）与 total 的引理；total_map、total_congr 移入同一节，并新增 total_ones。 / Reuses stretches of steps (steps) and the total lemmas; total_map and total_congr move into the same section, with total_ones added.
+
+**Producer output / 上游输出:** 一段步上的总和。 / Totals over stretches of steps.
+
+**Consumer input / 下游输入:** 一段步上的升降相抵。 / Rises and falls over a stretch.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## coming-and-ceasing-keep-pace ← generation-is-replenishment
+
+`formal-reuse` — 复用开始作为条件而在（ComesToStand）；不再作为条件而在是它的对偶。 / Reuses coming to stand (ComesToStand); ceasing to stand is its dual.
+
+**Producer output / 上游输出:** 开始作为条件而在需要给予。 / Coming to stand needs giving.
+
+**Consumer input / 下游输入:** 有限家族中，开始作为条件而在复现恰当不再作为条件而在复现，不加前提。 / In a finite family, coming to stand recurs exactly when ceasing to stand does, with no premise.
+
+**Retained conditions / 保留条件:** 有限家族。 / A finite family.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## condition-correspondence-discipline ← becoming-stepwise-reading
 
 `formal-reuse` — Web.interaction 的 living 恰是 Web.valuation 的 living；交互蕴含其共同参与；inert_connects 用其 connected_of_common 重述 Q4。 / The living of Web.interaction is exactly that of Web.valuation; interaction implies its co-participation; inert_connects restates Q4 with its connected_of_common.

@@ -132,6 +132,23 @@ theorem total_swap (q : α → β → Nat) (bs : List β) :
   | a :: as => (congrArg (total bs (q a) + ·) (total_swap q bs as)).trans
       (total_add (q a) (fun b => total as fun a' => q a' b) bs).symm
 
+/-- A total over a mapped list is the total of the composed quantity. -/
+theorem total_map (g : α → β) (q : β → Nat) :
+    ∀ as : List α, total (as.map g) q = total as fun a => q (g a)
+  | [] => rfl
+  | a :: as => congrArg (q (g a) + ·) (total_map g q as)
+
+/-- Quantities that agree everywhere have the same total. -/
+theorem total_congr {p q : α → Nat} (same : ∀ a, p a = q a) :
+    ∀ as : List α, total as p = total as q
+  | [] => rfl
+  | a :: as => (congrArg (· + total as p) (same a)).trans (congrArg (q a + ·) (total_congr same as))
+
+/-- Each member counted once totals the number of members. -/
+theorem total_ones : ∀ as : List α, total as (fun _ => 1) = as.length
+  | [] => rfl
+  | _ :: as => (Nat.add_comm 1 _).trans (congrArg (· + 1) (total_ones as))
+
 theorem total_append (q : α → Nat) (bs : List α) :
     ∀ as : List α, total (as ++ bs) q = total as q + total bs q
   | [] => (Nat.zero_add _).symm

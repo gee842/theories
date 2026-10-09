@@ -120,18 +120,6 @@ namespace Becoming
 
 variable {F C X : Type}
 
-/-- A total over a mapped list is the total of the composed quantity. -/
-theorem total_map {α β : Type} (g : α → β) (q : β → Nat) :
-    ∀ as : List α, total (as.map g) q = total as fun a => q (g a)
-  | [] => rfl
-  | a :: as => congrArg (q (g a) + ·) (total_map g q as)
-
-/-- Quantities that agree everywhere have the same total. -/
-theorem total_congr {α : Type} {p q : α → Nat} (same : ∀ a, p a = q a) :
-    ∀ as : List α, total as p = total as q
-  | [] => rfl
-  | a :: as => (congrArg (· + total as p) (same a)).trans (congrArg (q a + ·) (total_congr same as))
-
 theorem inl_injective : ∀ a b : F, (Sum.inl a : F ⊕ C) = Sum.inl b → a = b
   | _, _, rfl => rfl
 

@@ -33,10 +33,10 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
-        "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles", "Becoming.Reserve",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent",
-        "Becoming"]
+        "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
+        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
+        "Becoming.Reserve", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence",
+        "Becoming.Descent", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -139,6 +139,32 @@ SCOPE = (
     "zero before a step and positive after, is given at least its new standing, so it "
     "replenishes every family containing it, and where members of a family come to stand at "
     "arbitrarily late steps its replenishment recurs, whatever is taken. "
+    "Change: with no premise about an unfolding, a determination comes to be across a step where "
+    "it fails before and holds after, and ceases to be where it holds before and fails after; a "
+    "formation arising and ceasing, a dependence forming and dissolving and a condition coming to "
+    "stand and ceasing to stand are this one change; a decidable determination that ceases at no "
+    "step from some step on holds on; a formation stays supported where each dependence it has it "
+    "had before, at no greater need, on a condition standing no lower; over any stretch an amount "
+    "at the end with everything it fell is the amount at the start with everything it rose, and "
+    "so for the total of a finite family with the rises and falls of its members; since no amount "
+    "falls below zero, a finite family falls over any stretch by at most its total at the start "
+    "more than it rises, so members falling at arbitrarily late steps rise at arbitrarily late "
+    "steps, which for one amount is the law that an observable never rising from some step on "
+    "falls only finitely often, and with the amounts bounded the family rises by at most its "
+    "bound per member more than it falls, so rising at arbitrarily late steps needs falling at "
+    "arbitrarily late steps; so in a finite family of decidable determinations the members "
+    "holding at the end with those that ceased to be are those holding at the start with those "
+    "that came to be, comings and ceasings over any stretch differ by at most the number of "
+    "members, and coming to be recurs exactly when ceasing to be recurs: given decidable "
+    "activity, the members of a finite family of formations active at the end with those that "
+    "ceased are those active at the start with those that arose, they arise at arbitrarily late "
+    "steps exactly when they cease at arbitrarily late steps, and with finitely many formations "
+    "generation is unceasing exactly when some formation ceases at arbitrarily late steps; with "
+    "no premise at all, conditions of a finite family come to stand "
+    "at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps; ever "
+    "new formations can arise with none ceasing while a level rises at every step and never "
+    "falls, and formations all active at the start can cease one after another with nothing "
+    "arising. "
     "Population: a census lists the formations active at each step, each once; if more are active "
     "after a step than before, one arises across it, and a census growing without bound makes "
     "generation unceasing; under a census, with each formation taking part in a flow listed once "

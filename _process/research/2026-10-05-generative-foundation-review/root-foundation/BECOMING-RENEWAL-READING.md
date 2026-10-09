@@ -1593,6 +1593,70 @@ Integration: 回答 life-as-condition-of-life 的下一步与 §18 的 Mutualism
 
 **边界。** 不含伦理谓词；不改变 `living` 与 C；两种关系是 `related` 的候选读法，是否采用属于 Ren；世系不排定时间，给予的形成不必体现，以之为生不问汲取的效果；依赖一类读法的同一对应；只对逐步读法陈述；见证都是最小见证。本节尚未经独立审查。
 
+## 26. 变化的规律：不加前提，开始成立与不再成立同步（P19）
+
+2026-10-09。Ren 的新指示：“aim a complete theory of becoming, and finish related work”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md)）。计划第 9 节把“完整”读作四项可检查的内容（AI 的读法），第二项是：对每个展开成立的规律不加任何关于展开的前提而证明，其余每条规律写明它的前提。此前各模块的规律都在前提之下：`Dependent`、`Balances`、`Taking`、`Dissipative`、`Embodied`、`Carries`。本节陈述不需要这些前提的部分，并检查其中是否有实质内容，而不只是定义的重述。成果记录：[coming-and-ceasing-keep-pace](../../../../theories/becoming/results/records/coming-and-ceasing-keep-pace.md)。
+
+```text
+Result(s): 复用 unceasing-generation-needs-renewal（Arises、Unceasing、Rises、Falls、total）、becoming-renewal-reading（falls_finitely）、
+           becoming-dependence-dynamics（Forms、Dissolves、Supported）、more-needs-renewers（steps 与 total 的引理）、
+           generation-is-replenishment（ComesToStand）；新增 coming-and-ceasing-keep-pace（L3 Becoming.Change）
+Delta: 开始成立与不再成立（ComesToBe、CeasesToBe），四种读法（Web.change_readings）；persists；支持只经由关系改变（Web.supported_of）；
+       一段步上的升降相抵（over_stretch、family_over_stretch）；下限与上限（fallen_within、risen_within、rising_recurs、falling_recurs、
+       Web.falls_need_rises、falls_finitely_from_floor）；有限家族中开始成立与不再成立同步（held_over_stretch、keep_pace、coming_recurs_iff），
+       读于活动（Web.activity_over_stretch、Web.arising_recurs_iff、Web.unceasing_iff）与水平（Web.standing_recurs_iff）；无限家族的见证（Dawn、Dusk）
+Supplied premises / correspondence: 没有关于展开的前提；表示的方法承诺：离散的步、自然数的量、计数时的可判定性（活动的可判定性是相关定理的假设，
+       水平是否为正总可判定）；家族有限
+Evidence: Becoming.Change 的 42 项定理；合并检查器回执 20261009T095726.865589Z（841 项定理／1342 项声明审计，核心闭包 25 个模块，
+          包 23 个模块，公理报告全空）；外围桥接重跑 20261009T100002.522708Z
+Boundary: 不含伦理结论；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；“复现”不给出频率；不把形式规律当作现实的必然性；
+       生生不息在哪个层次读、中文用语与名称由 Ren 定
+Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则是一个量的下限；Generation、Flow、Dissipation 的更新规律是前提加这里的下限
+```
+
+[Becoming.Change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)（L3，导入 `Becoming.Flow`；`Becoming.Population` 改为导入它）：
+
+| 声明 | 内容 |
+|---|---|
+| `ComesToBe`、`CeasesToBe`、`Web.Ceases`、`Web.CeasesToStand`、`Web.change_readings` | 一个规定跨一步开始成立（之前不成立、之后成立）或不再成立。形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平（都是 `Iff.rfl`） |
+| `persists` | 可判定的规定在某步成立、此后没有一步不再成立，就一直成立。`Dependence` 的 `ceases_at_a_step` 是它不用可判定性的否定形式 |
+| `Web.supported_of` | 支持只经由关系改变：一个形成在某步被支持，在另一步仍被支持，只要它在后者的每个依存在前者都有、所需不更大、条件的水平不更低 |
+| `excess`、`rise`、`fall`、`across`、`over_stretch` | 任一步上，量在之后加其下降，等于在之前加其上升；任一段步上，终点加其间的全部下降等于起点加其间的全部上升。`excess` 用递归定义，不用自然数减法 |
+| `risen`、`fallen`、`family_over_stretch` | 有限家族的总量连同成员的升降也是如此 |
+| `fallen_within`、`rising_recurs`、`Web.falls_need_rises` | 量不低于零：有限家族在一段步上的下降至多比上升多出起点的总量，所以成员在任意晚的步下降就在任意晚的步上升；读于条件的水平，每个展开中有限多个条件持续下降就持续上升 |
+| `falls_finitely_from_floor` | `Renewal` 的 `falls_finitely`（从某步起不上升的观测量只下降有限次）是一个量的下限 |
+| `risen_within`、`falling_recurs` | 量有界时，有限家族的上升至多比下降多出每个成员的界，所以在任意晚的步上升就需要在任意晚的步下降 |
+| `mark`、`mark_cases`、`mark_le_one`、`mark_pos`、`mark_iff`、`excess_mark`、`rise_mark`、`fall_mark` | 一个可判定的规定计 1 或 0；它的上升恰是开始成立，下降恰是不再成立。`mark` 与 `mark_cases` 从 `Reserve` 移来 |
+| `comings`、`ceasings`、`held_over_stretch`、`marks_within`、`keep_pace` | 有限家族中：终点成立的成员连同其间不再成立的，恰是起点成立的成员连同其间开始成立的；开始成立与不再成立的次数之差不超过成员数 |
+| `Recurs`、`Recurs.mono`、`Recurs.accumulates`、`pos_of_exceeds`、`coming_recurs_iff` | 有限家族中，开始成立复现恰当不再成立复现 |
+| `Web.activity_over_stretch`、`Web.arising_recurs_iff`、`Web.unceasing_iff` | 读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的；它们在任意晚的步生起恰当在任意晚的步止息；形成有限多时，生成不息恰当某个形成在任意晚的步止息 |
+| `Web.standing_recurs_iff` | 读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在 |
+| `Dawn.unceasing`、`never_ceases`、`rises`、`never_falls` | 无限家族：形成 f 跨第 f 步生起、从不止息，水平每步上升、从不下降。只生而不止需要无尽的新，上升复现而不下降需要无界 |
+| `Dusk.ceasing`、`nothing_arises` | 无限家族：全部形成一开始活跃，形成 f 跨第 f 步止息，没有任何生起。只止而不生需要无尽的初始 |
+| `le_dest`、`steps_mem`、`steps_last`、`steps_mono` | 一段步的引理 |
+
+另外，`total_map` 与 `total_congr` 从 `Roles` 移到 `Flow` 的 total 一节，与其他 total 的引理放在一起，并新增 `total_ones`（每个成员计一次，总和是成员数）。`Roles` 与 `Reserve` 的定理数随之减少，内容不变。
+
+**解读。**
+
+- **不加前提的部分有实质内容。** 前四行是定义与恒等式：变化的读法、升降相抵。它们本身不多说什么，但把以前分散的定义（`Arises`、`Forms`、`Dissolves`、`ComesToStand`）收到同一种变化之下，并补上缺少的另一半（`Ceases`、`CeasesToStand`）。实质内容来自两个界：量不低于零，规定只计 0 或 1。由前者，下降复现需要上升复现；由后者，有限家族中开始成立与不再成立同步。这些对每个展开成立。
+- **生起与止息在有限之中同步。** 有限家族中，生起复现恰当止息复现；任一段步上两者之差不超过成员数。所以在形成有限多的展开中，生成不息恰当止息不息：没有只生不灭的有限世界，也没有只灭不生的有限世界。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”的一种形式内容（AI 论证）：生成与退化不是两个可以分开的过程，在有限之中它们一同复现。这不推出止息是好的或坏的，也不决定生生不息在哪个层次读：在谱系或整体的层次上不息，与成员的止息不息并不冲突（§21 的 `Generations`），这里的结论正是说成员层次上两者同步。
+- **无限是逃脱的方式。** 只生不止需要无尽的新（`Dawn`）；只止不生需要无尽的初始（`Dusk`）。这与 §21 的 `needs_new`（部分终结、同时活跃的有限时，整体需要不断新的部分）和 §20、§23 的耗散结论（条件总共有限时生成终止）同一方向：有限性使生成须伴随别的东西，前提不同，所伴随的不同（止息、补充、开放）。
+- **更新规律的分解。** `Generation` 的“生起消耗有限家族时，不息的生成需要更新复现”与 `Flow` 的“复现的取用需要补充复现”，现在可以读作一个前提（消耗、平衡）加这里的下限：前提把生起或取用变成下降，下限使下降的复现需要上升的复现。`Renewal` 的 `falls_finitely` 正是一个量的下限（`falls_finitely_from_floor`）。下限本身对每个展开成立：每个展开中，有限多个条件持续下降就持续上升（`Web.falls_need_rises`）。
+- **开始作为条件而在不需要任何前提。** 水平是否为正总可判定，所以 `Web.standing_recurs_iff` 连可判定性的假设也不需要：有限家族的条件开始作为条件而在复现，恰当它们不再作为条件而在复现。§24 证明，平衡的流中开始作为条件而在复现需要补充复现；这里加上：它也需要不再作为条件而在复现。
+
+**作者反审。**
+
+*反驳 1：这些是平凡的计数，不是生成之论的内容。* 证明是计数，内容不是：它说在任何有限的展开中，生成与退化同步。这正是 Ren 提议中“计入整个空间，包括生成与退化”的一个形式陈述：对整个空间成立的东西不多，而这一条把生成与退化绑在一起。平凡的是证明，不是结论；以前各模块需要前提才得到的“生成须伴随更新”，其下限部分在这里对每个展开成立。
+
+*反驳 2：可判定性就是一个前提。* 它是表示的方法承诺，已在来源说明与计划第 9 节中单独公开：计数需要知道每一步是否成立。它不是关于展开的前提：不限制什么生起、什么止息。读于水平时连它也不需要。无论如何，相关定理把它作为显式假设写出。
+
+*反驳 3：“有限家族”也是前提。* 是，它是定理的假设，`Dawn` 与 `Dusk` 表明它不可去掉。但它不是关于展开动力学的前提：任何展开中任何有限的形成家族都满足它。定理说的是“对每个展开、对其中每个有限家族”。
+
+*反驳 4：把生成不息与止息不息等同，会被读成“生生不息需要死亡”。* 定理只说成员层次上的数目同步，不说止息是生成的条件或代价，也不说它好。§21 的 `Layered` 表明同样的成员可以反复生起与止息（短暂的部分）；那里的止息不是消失。是否把这读作生生不息的一部分，由 Ren 定。
+
+**边界。** 不含伦理谓词；只对离散步的读法陈述；有限家族以列表给出；“复现”不给出频率或比例；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；不把形式规律当作对现实的演绎必然性；中文用语“止息”“开始成立”“不再成立”“同步”是 AI 的提议，名称由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -1758,3 +1822,17 @@ The package now has 774 theorems and 1257 declaration audits, over a core closur
 - **What is not claimed.** Whether these readings count as formed relations for N_rel is Ren's choice, as is taking embodied relata as 生. Neither living nor C changes, so nothing here makes bringing about new arising better.
 
 The package now has 799 theorems and 1286 declaration audits, over a core closure of 24 modules and a package of 22, all with empty axiom reports. Section 25 has not yet been independently reviewed.
+
+**P19: laws of change with no premise.** Following Ren's instruction to aim at a complete Theory of Becoming, [Becoming.Change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean) states what holds of every unfolding, with no premise about it ([coming-and-ceasing-keep-pace](../../../../theories/becoming/results/records/coming-and-ceasing-keep-pace.md)). The representation's commitments are disclosed separately: discrete steps, natural-number amounts, and decidability where counting needs it.
+
+- **One change.** A determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after. A formation arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are this one change, read of activity, dependence and standing (`Web.change_readings`). Support changes only through relations (`Web.supported_of`).
+- **Rises and falls.** Over any stretch, an amount at the end with its falls is the amount at the start with its rises, and so for a finite family (`over_stretch`, `family_over_stretch`).
+- **A floor and a ceiling.** No amount falls below zero, so in a finite family recurring falls need recurring rises (`rising_recurs`). In every unfolding, levels of finitely many conditions that keep falling keep rising (`Web.falls_need_rises`). `falls_finitely` of `Becoming.Renewal` is this floor for one amount. With amounts bounded, recurring rises need recurring falls (`falling_recurs`).
+- **Coming to be and ceasing to be keep pace.** A determination counts zero or one, so both bounds hold. Over any stretch, in a finite family, the members holding at the end with those that ceased to be are those holding at the start with those that came to be (`held_over_stretch`). Comings and ceasings differ by at most the number of members (`keep_pace`), and each recurs exactly when the other does (`coming_recurs_iff`).
+  - Read of activity: formations of a finite family arise at arbitrarily late steps exactly when they cease at arbitrarily late steps. With finitely many formations, generation is unceasing exactly when ceasing is (`Web.unceasing_iff`).
+  - Read of standing, with no premise at all: coming to stand recurs in a finite family exactly when ceasing to stand does (`Web.standing_recurs_iff`).
+- **Infinity is the escape.** Ever new formations can arise with none ceasing (`Dawn`), and endlessly many formations active at the start can cease with nothing arising (`Dusk`).
+- **Author's reading.** In any finite family, generation and degeneration recur together. The author reads this as one formal content of Ren's scope, formation through dissolution within one unfolding (an AI argument). It does not make ceasing good or a cost of generation. The level at which 生生不息 is read, and the names, remain Ren's.
+- **Housekeeping.** `mark` moves here from `Reserve`. `total_map` and `total_congr` move from `Roles` to the totals section of `Flow`, which gains `total_ones`.
+
+The package now has 841 theorems and 1342 declaration audits, over a core closure of 25 modules and a package of 23, all with empty axiom reports. Section 26 has not yet been independently reviewed.

@@ -1,0 +1,343 @@
+@Becoming.total_map : ∀ {α β : Type} (g : α → β) (q : β → Nat) (as : List α),
+  Becoming.total (List.map g as) q = Becoming.total as fun a => q (g a)
+@Becoming.total_congr : ∀ {α : Type} {p q : α → Nat},
+  (∀ (a : α), p a = q a) → ∀ (as : List α), Becoming.total as p = Becoming.total as q
+@Becoming.inl_injective : ∀ {F C : Type} (a b : F), Sum.inl a = Sum.inl b → a = b
+@Becoming.inr_injective : ∀ {F C : Type} (a b : C), Sum.inr a = Sum.inr b → a = b
+@Becoming.inr_not_mem : ∀ {F C : Type} {c : C} {l : List F}, ¬Sum.inr c ∈ List.map Sum.inl l
+@Becoming.mem_of_conditionsOf : ∀ {F C : Type} {c : C} {l : List (F ⊕ C)}, c ∈ Becoming.conditionsOf l → Sum.inr c ∈ l
+@Becoming.conditionsOf_of_mem : ∀ {F C : Type} {c : C} {l : List (F ⊕ C)}, Sum.inr c ∈ l → c ∈ Becoming.conditionsOf l
+@Becoming.distinct_conditionsOf : ∀ {F C : Type} {l : List (F ⊕ C)},
+  Becoming.Distinct l → Becoming.Distinct (Becoming.conditionsOf l)
+@Becoming.total_conditionsOf : ∀ {F C : Type} {p : F ⊕ C → Nat} {q : C → Nat},
+  (∀ (f : F), p (Sum.inl f) = 0) →
+    (∀ (c : C), p (Sum.inr c) = q c) →
+      ∀ (l : List (F ⊕ C)), Becoming.total l p = Becoming.total (Becoming.conditionsOf l) q
+@Becoming.Web.roles_supported : ∀ {F C : Type} (W : Becoming.Web F C) (t : Nat) (f : F),
+  W.roles.Supported t (Sum.inl f) ↔ W.Supported t f
+@Becoming.Web.roles_dependent : ∀ {F C : Type} (W : Becoming.Web F C), W.roles.Dependent ↔ W.Dependent
+@Becoming.Web.roles_renewed : ∀ {F C : Type} (W : Becoming.Web F C) (c : C), W.roles.Renewed (Sum.inr c) ↔ W.Renewed c
+@Becoming.Web.roles_renewed_formation : ∀ {F C : Type} (W : Becoming.Web F C) (f : F), W.roles.Renewed (Sum.inl f)
+@Becoming.Web.roles_consumed : ∀ {F C : Type} (W : Becoming.Web F C) (c : C),
+  W.roles.Consumed (Sum.inr c) ↔ W.Consumed c
+@Becoming.Web.roles_renewingIn : ∀ {F C : Type} (W : Becoming.Web F C) (f : F),
+  W.roles.RenewingIn (Sum.inl f) ↔ W.RenewingIn f
+@Becoming.Web.roles_consumingIn : ∀ {F C : Type} (W : Becoming.Web F C) (f : F),
+  W.roles.ConsumingIn (Sum.inl f) ↔ W.ConsumingIn f
+@Becoming.Web.roles_undermining : ∀ {F C : Type} (W : Becoming.Web F C) (t : Nat) (f : F),
+  Becoming.Web.UnderminingAt t (Sum.inl f) ↔ Becoming.Web.UnderminingAt t f
+@Becoming.Web.roles_arises : ∀ {F C : Type} (W : Becoming.Web F C) (t : Nat) (f : F),
+  W.roles.Arises t (Sum.inl f) ↔ W.Arises t f
+@Becoming.Web.roles_census : ∀ {F C : Type} (W : Becoming.Web F C) {alive : Nat → List F},
+  W.Census alive → W.roles.Census fun t => List.map Sum.inl (alive t)
+@Becoming.Web.roles_unceasing : ∀ {F C : Type} (W : Becoming.Web F C), W.roles.Unceasing ↔ W.Unceasing
+@Becoming.Web.roles_alive : ∀ {F C : Type} (W : Becoming.Web F C) (t : Nat) (f : F),
+  W.roles.active t (Sum.inl f) ∧ ¬Becoming.Web.UnderminingAt t (Sum.inl f) ↔
+    W.active t f ∧ ¬Becoming.Web.UnderminingAt t f
+@Becoming.Web.roles_event_injective : ∀ {F C : Type} (e e' : F × Nat),
+  (Sum.inl e.fst, e.snd) = (Sum.inl e'.fst, e'.snd) → e = e'
+@Becoming.Web.roles_event_onto : ∀ {F C : Type} (W : Becoming.Web F C) (e : (F ⊕ C) × Nat),
+  W.roles.active e.snd e.fst → ∃ e', (Sum.inl e'.fst, e'.snd) = e
+@Becoming.Flow.roles_taken : ∀ {F C : Type} (L : Becoming.Flow F C) (t : Nat) (c : C),
+  L.roles.taken t (Sum.inr c) = L.taken t c
+@Becoming.Flow.roles_given : ∀ {F C : Type} (L : Becoming.Flow F C) (t : Nat) (c : C),
+  L.roles.given t (Sum.inr c) = L.given t c
+@Becoming.Flow.roles_taken_formation : ∀ {F C : Type} (L : Becoming.Flow F C) (t : Nat) (f : F),
+  L.roles.taken t (Sum.inl f) = 0
+@Becoming.Flow.roles_given_formation : ∀ {F C : Type} (L : Becoming.Flow F C) (t : Nat) (f : F),
+  L.roles.given t (Sum.inl f) = 0
+@Becoming.Flow.roles_balances : ∀ {F C : Type} (L : Becoming.Flow F C) {W : Becoming.Web F C},
+  L.roles.Balances W.roles ↔ L.Balances W
+@Becoming.Flow.roles_takers : ∀ {F C : Type} (L : Becoming.Flow F C) (cs : List C) (t : Nat),
+  L.roles.takers (List.map Sum.inr cs) t = L.takers cs t
+@Becoming.Flow.roles_renewers : ∀ {F C : Type} (L : Becoming.Flow F C) (cs : List C) (t : Nat),
+  L.roles.renewers (List.map Sum.inr cs) t = L.renewers cs t
+@Becoming.Flow.roles_more : ∀ {F C : Type} (L : Becoming.Flow F C) (cs : List C),
+  L.roles.More (List.map Sum.inr cs) ↔ L.More cs
+@Becoming.Flow.roles_acting : ∀ {F C : Type} (L : Becoming.Flow F C) {W : Becoming.Web F C},
+  L.roles.Acting W.roles ↔ L.Acting W
+@Becoming.Flow.roles_taking : ∀ {F C : Type} (L : Becoming.Flow F C) {W : Becoming.Web F C},
+  L.roles.Taking W.roles ↔ L.Taking W
+@Becoming.Flow.roles_distinct : ∀ {F C : Type} (L : Becoming.Flow F C) {t : Nat},
+  Becoming.Distinct (L.present t) → Becoming.Distinct (L.roles.present t)
+@Becoming.Flow.roles_dissipative : ∀ {F C : Type} (L : Becoming.Flow F C), L.roles.Dissipative ↔ L.Dissipative
+@Becoming.Web.SelfBearing.stands : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent → ∀ {x : X}, W.SelfBearing x → ∀ {t : Nat}, W.active t x → 0 < W.level t x
+@Becoming.Web.SelfBearing.met_iff : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent →
+    ∀ {x : X},
+      W.Embodied x →
+        W.SelfBearing x → ∀ (t : Nat), W.requires t x x ∧ 0 < W.need t x x ∧ W.need t x x ≤ W.level t x ↔ W.active t x
+@Becoming.Web.Embodied.active_of_bearing : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent →
+    ∀ {y : X}, W.Embodied y → ∀ {t : Nat} {g : X}, W.active t g → W.requires t g y ∧ 0 < W.need t g y → W.active t y
+@Becoming.Web.active_along : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent → ∀ (t : Nat), Becoming.Invariant (W.bearing t) (W.active t)
+@Becoming.Web.coextinct : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent → ∀ {t : Nat} {g y : X}, Becoming.Reach (W.bearing t) g y → ¬W.active t y → ¬W.active t g
+@Becoming.Web.Embodied.ends_when_consumed : ∀ {X : Type} {W : Becoming.Web X X} {y : X},
+  W.Embodied y →
+    ∀ {T : Nat} {g : X},
+      W.need T g y ≤ 1 → (∀ (t : Nat), T < t → W.level t y < W.need T g y) → ∀ (t : Nat), T < t → ¬W.active t y
+@Becoming.Web.Embodied.ending_breaks : ∀ {X : Type} {W : Becoming.Web X X},
+  W.Dependent →
+    ∀ {x : X},
+      W.Embodied x →
+        W.SelfBearing x →
+          ∀ {t : Nat}, W.active t x → ¬W.active (t + 1) x → ∀ {f : X}, W.draws t f x → Becoming.Web.BreakingOn t f x
+@Becoming.Web.Embodied.arises_given : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Acting W →
+      ∀ {x : X},
+        W.Embodied x → ∀ {t : Nat}, W.Arises t x → ∃ f, W.active t f ∧ f ∈ L.present t ∧ 0 < L.give t f x ∧ f ≠ x
+@Becoming.Web.Embodied.arises_from_embodied : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Acting W →
+      (∀ (t : Nat) (f c : X), f ∈ L.present t → 0 < L.give t f c → W.Embodied f) →
+        ∀ {x : X},
+          W.Embodied x →
+            ∀ {t : Nat}, W.Arises t x → ∃ f, W.Embodied f ∧ 0 < W.level t f ∧ f ∈ L.present t ∧ 0 < L.give t f x ∧ f ≠ x
+@Becoming.Web.roles_not_embodied : ∀ {F C : Type} (W : Becoming.Web F C) {t : Nat} {f : F},
+  W.active t f → ¬W.roles.Embodied (Sum.inl f)
+@Becoming.Web.roles_not_selfBearing : ∀ {F C : Type} (W : Becoming.Web F C) {t : Nat} {f : F},
+  W.active t f → ¬W.roles.SelfBearing (Sum.inl f)
+@Becoming.Web.exists_of_onto : ∀ {X : Type} {π : X → X},
+  (∀ (c : X), ∃ y, π y = c) → ∀ {p : X → Prop}, (∃ c, p c) → ∃ y, p (π y)
+@Becoming.Web.relabel_dependent : ∀ {X : Type} {W : Becoming.Web X X} {π : X → X},
+  (∀ (c : X), ∃ y, π y = c) → ((W.relabel π).Dependent ↔ W.Dependent)
+@Becoming.Web.relabel_undermining : ∀ {X : Type} {W : Becoming.Web X X} {π : X → X},
+  (∀ (c : X), ∃ y, π y = c) → ∀ (t : Nat) (f : X), Becoming.Web.UnderminingAt t f ↔ Becoming.Web.UnderminingAt t f
+@Becoming.Web.relabel_alive : ∀ {X : Type} {W : Becoming.Web X X} {π : X → X},
+  (∀ (c : X), ∃ y, π y = c) →
+    ∀ (t : Nat) (f : X),
+      (W.relabel π).active t f ∧ ¬Becoming.Web.UnderminingAt t f ↔ W.active t f ∧ ¬Becoming.Web.UnderminingAt t f
+@Becoming.Web.Embodied.comesToStand : ∀ {X : Type} {W : Becoming.Web X X} {x : X},
+  W.Embodied x → ∀ {t : Nat}, W.Arises t x → W.ComesToStand t x
+@Becoming.Web.Embodied.coming : ∀ {X : Type} {W : Becoming.Web X X} {cs : List X},
+  (∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) →
+    ∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.ComesToStand t x
+@Becoming.Web.Embodied.given_of_arises : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W → ∀ {x : X}, W.Embodied x → ∀ {t : Nat}, W.Arises t x → W.level (t + 1) x ≤ L.given t x
+@Becoming.Web.Embodied.replenishes : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    ∀ {x : X}, W.Embodied x → ∀ {cs : List X}, x ∈ cs → ∀ {t : Nat}, W.Arises t x → 0 < L.replenishment cs t
+@Becoming.Web.generation_needs_replenishment : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    ∀ {cs : List X},
+      (∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ cs ∧ W.Embodied x ∧ W.Arises t x) →
+        ∀ (T : Nat), ¬∀ (t : Nat), T ≤ t → L.replenishment cs t = 0
+@Becoming.Web.Embodied.arising_lowers_on : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    ∀ {ds : List X} {t : Nat},
+      L.DissipatesOn ds t → ∀ {x : X}, W.Embodied x → x ∈ ds → W.Arises t x → W.stock ds (t + 1) < W.stock ds t
+@Becoming.Web.Embodied.arising_lowers : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Dissipative →
+      ∀ {ds : List X},
+        Becoming.Distinct ds →
+          ∀ {t : Nat},
+            L.ClosedAt ds t → ∀ {x : X}, W.Embodied x → x ∈ ds → W.Arises t x → W.stock ds (t + 1) < W.stock ds t
+@Becoming.Web.generation_ceases_on : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    ∀ {ds : List X} {T : Nat},
+      (∀ (t : Nat), T ≤ t → L.DissipatesOn ds t) → ¬∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x
+@Becoming.Web.generation_opens : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Dissipative →
+      ∀ {ds : List X},
+        Becoming.Distinct ds →
+          (∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) →
+            ∀ (T : Nat), ¬∀ (t : Nat), T ≤ t → L.ClosedAt ds t
+@Becoming.Web.generation_draws_in : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Dissipative →
+      ∀ {ds : List X},
+        Becoming.Distinct ds →
+          ∀ {T₀ : Nat},
+            (∀ (t : Nat), T₀ ≤ t → L.Around ds t) →
+              (∀ (N : Nat), ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) →
+                ∀ (N : Nat), ¬∀ (t : Nat), N ≤ t → L.Inward ds t
+@Becoming.Web.generation_ceases : ∀ {X : Type} {W : Becoming.Web X X} {L : Becoming.Flow X X},
+  L.Balances W →
+    L.Dissipative →
+      ∀ {all : List X},
+        Becoming.Distinct all → (∀ (x : X), x ∈ all) → ¬∀ (N : Nat), ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x
+@Becoming.Mutualism.other_cancel : ∀ {x y : Becoming.Mutualism.Relatum},
+  Becoming.Mutualism.other x = Becoming.Mutualism.other y → x = y
+Becoming.Mutualism.other_ne : ∀ (x : Becoming.Mutualism.Relatum), x ≠ Becoming.Mutualism.other x
+Becoming.Mutualism.dependent : Becoming.Mutualism.web.Dependent
+Becoming.Mutualism.embodied : ∀ (x : Becoming.Mutualism.Relatum), Becoming.Mutualism.web.Embodied x
+Becoming.Mutualism.selfBearing : ∀ (x : Becoming.Mutualism.Relatum), Becoming.Mutualism.web.SelfBearing x
+Becoming.Mutualism.renewing : ∀ (x : Becoming.Mutualism.Relatum), Becoming.Mutualism.web.RenewingIn x
+Becoming.Mutualism.apart_renewing : ∀ (x : Becoming.Mutualism.Relatum), Becoming.Mutualism.apart.RenewingIn x
+Becoming.Mutualism.alive : ∀ (e : Becoming.Mutualism.Relatum × Nat),
+  Becoming.Mutualism.web.active e.snd e.fst ∧ ¬Becoming.Web.UnderminingAt e.snd e.fst
+Becoming.Mutualism.apart_alive : ∀ (e : Becoming.Mutualism.Relatum × Nat),
+  Becoming.Mutualism.apart.active e.snd e.fst ∧ ¬Becoming.Web.UnderminingAt e.snd e.fst
+Becoming.Mutualism.apart_not_selfBearing : ∀ (x : Becoming.Mutualism.Relatum), ¬Becoming.Mutualism.apart.SelfBearing x
+Becoming.Mutualism.other_twice : ∀ (x : Becoming.Mutualism.Relatum),
+  Becoming.Mutualism.other (Becoming.Mutualism.other x) = x
+Becoming.Mutualism.apart_relabelled : (∀ (x : Becoming.Mutualism.Relatum), ¬Becoming.Mutualism.apart.SelfBearing x) ∧
+  (∀ (x : Becoming.Mutualism.Relatum), (Becoming.Mutualism.apart.relabel Becoming.Mutualism.other).SelfBearing x) ∧
+    ((Becoming.Mutualism.apart.relabel Becoming.Mutualism.other).Dependent ↔ Becoming.Mutualism.apart.Dependent)
+Becoming.Predation.uneaten_late : ∀ (t : Nat), 2 < t → Becoming.Predation.uneaten t = 0
+Becoming.Predation.embodied : ∀ (x : Becoming.Predation.Relatum), Becoming.Predation.web.Embodied x
+Becoming.Predation.selfBearing : ∀ (x : Becoming.Predation.Relatum), Becoming.Predation.web.SelfBearing x
+Becoming.Predation.dependent : Becoming.Predation.web.Dependent
+Becoming.Predation.hare_ends : ∀ (t : Nat), 2 < t → ¬Becoming.Predation.web.active t Becoming.Predation.Relatum.hare
+Becoming.Predation.breaking : Becoming.Web.BreakingOn 2 Becoming.Predation.Relatum.fox Becoming.Predation.Relatum.hare
+Becoming.Predation.fox_ends : ∀ (t : Nat), 2 < t → ¬Becoming.Predation.web.active t Becoming.Predation.Relatum.fox
+Becoming.Wilting.fade_active : ∀ (t : Nat), 0 < Becoming.Wilting.fade t → 0 < Becoming.Predation.uneaten t
+Becoming.Wilting.embodied : Becoming.Wilting.web.Embodied Becoming.Wilting.Relatum.flower
+Becoming.Wilting.selfBearing : Becoming.Wilting.web.SelfBearing Becoming.Wilting.Relatum.flower
+Becoming.Wilting.dependent : Becoming.Wilting.web.Dependent
+Becoming.Wilting.ends : ¬Becoming.Wilting.web.active 3 Becoming.Wilting.Relatum.flower
+Becoming.Wilting.wilting : Becoming.Wilting.flow.Balances Becoming.Wilting.web ∧
+  Becoming.Wilting.flow.Acting Becoming.Wilting.web ∧
+    Becoming.Wilting.flow.Taking Becoming.Wilting.web ∧
+      Becoming.Wilting.web.Dependent ∧
+        Becoming.Wilting.web.Embodied Becoming.Wilting.Relatum.flower ∧
+          Becoming.Wilting.web.SelfBearing Becoming.Wilting.Relatum.flower ∧
+            (∀ (t : Nat) (c : Becoming.Wilting.Relatum),
+                Becoming.Wilting.flow.take t Becoming.Wilting.Relatum.bee c = 0) ∧
+              (∀ (t : Nat) (f : Becoming.Wilting.Relatum),
+                  0 < Becoming.Wilting.flow.take t f Becoming.Wilting.Relatum.flower →
+                    f = Becoming.Wilting.Relatum.flower) ∧
+                Becoming.Web.BreakingOn 2 Becoming.Wilting.Relatum.bee Becoming.Wilting.Relatum.flower ∧
+                  Becoming.Web.UnderminingAt 2 Becoming.Wilting.Relatum.bee ∧
+                    Becoming.Web.UnderminingAt 2 Becoming.Wilting.Relatum.flower
+Becoming.Wilting.relabelled_not_embodied : Becoming.Wilting.web.Embodied Becoming.Wilting.Relatum.flower ∧
+  ¬(Becoming.Wilting.web.relabel Becoming.Wilting.swap).Embodied Becoming.Wilting.Relatum.flower
+Becoming.Brood.grows : ∀ (x t : Nat),
+  Becoming.Brood.standing x (t + 1) = Becoming.Brood.standing x t + Becoming.Brood.birth x t
+Becoming.Brood.standing_self : ∀ (t : Nat), Becoming.Brood.standing t t = 1
+Becoming.Brood.standing_before : ∀ (t : Nat), Becoming.Brood.standing (t + 1) t = 0
+Becoming.Brood.arises : ∀ (t : Nat), Becoming.Brood.web.Arises t (t + 1)
+Becoming.Brood.brood : Becoming.Brood.flow.Balances Becoming.Brood.web ∧
+  Becoming.Brood.flow.Acting Becoming.Brood.web ∧
+    Becoming.Brood.web.Dependent ∧
+      (∀ (x : Nat), Becoming.Brood.web.Embodied x ∧ Becoming.Brood.web.SelfBearing x) ∧ Becoming.Brood.web.Unceasing
+Becoming.Brood.not_dissipative : ¬Becoming.Brood.flow.Dissipative
+Becoming.SunSeed.sun_gives : Becoming.SunSeed.flow.Balances Becoming.SunSeed.web ∧
+  Becoming.SunSeed.flow.Acting Becoming.SunSeed.web ∧
+    Becoming.SunSeed.web.Embodied Becoming.SunSeed.Relatum.seed ∧
+      Becoming.SunSeed.web.Arises 0 Becoming.SunSeed.Relatum.seed ∧
+        (∀ (f : Becoming.SunSeed.Relatum),
+            Becoming.SunSeed.web.active 0 f ∧
+                f ∈ Becoming.SunSeed.flow.present 0 ∧
+                  0 < Becoming.SunSeed.flow.give 0 f Becoming.SunSeed.Relatum.seed ∧ f ≠ Becoming.SunSeed.Relatum.seed →
+              f = Becoming.SunSeed.Relatum.sun) ∧
+          ¬Becoming.SunSeed.web.Embodied Becoming.SunSeed.Relatum.sun ∧
+            ¬Becoming.SunSeed.web.SelfBearing Becoming.SunSeed.Relatum.sun ∧
+              ∀ (t : Nat) (c : Becoming.SunSeed.Relatum),
+                ¬Becoming.SunSeed.web.requires t Becoming.SunSeed.Relatum.sun c
+Becoming.EmbodiedSun.balances : Becoming.SunSeed.flow.Balances Becoming.EmbodiedSun.web
+Becoming.EmbodiedSun.acting : Becoming.SunSeed.flow.Acting Becoming.EmbodiedSun.web
+Becoming.EmbodiedSun.gives_embodied : ∀ (t : Nat) (f c : Becoming.SunSeed.Relatum),
+  f ∈ Becoming.SunSeed.flow.present t → 0 < Becoming.SunSeed.flow.give t f c → Becoming.EmbodiedSun.web.Embodied f
+Becoming.EmbodiedSun.embodied_sun : Becoming.SunSeed.flow.Balances Becoming.EmbodiedSun.web ∧
+  Becoming.SunSeed.flow.Acting Becoming.EmbodiedSun.web ∧
+    (∀ (t : Nat) (f c : Becoming.SunSeed.Relatum),
+        f ∈ Becoming.SunSeed.flow.present t →
+          0 < Becoming.SunSeed.flow.give t f c → Becoming.EmbodiedSun.web.Embodied f) ∧
+      Becoming.EmbodiedSun.web.Embodied Becoming.SunSeed.Relatum.seed ∧
+        Becoming.EmbodiedSun.web.Arises 0 Becoming.SunSeed.Relatum.seed ∧
+          (∃ f,
+              Becoming.EmbodiedSun.web.Embodied f ∧
+                0 < Becoming.EmbodiedSun.web.level 0 f ∧
+                  f ∈ Becoming.SunSeed.flow.present 0 ∧
+                    0 < Becoming.SunSeed.flow.give 0 f Becoming.SunSeed.Relatum.seed ∧
+                      f ≠ Becoming.SunSeed.Relatum.seed) ∧
+            (∀ (t : Nat) (c : Becoming.SunSeed.Relatum),
+                ¬Becoming.EmbodiedSun.web.requires t Becoming.SunSeed.Relatum.sun c ∧
+                  ¬Becoming.EmbodiedSun.web.draws t Becoming.SunSeed.Relatum.sun c ∧
+                    Becoming.SunSeed.flow.take t Becoming.SunSeed.Relatum.sun c = 0) ∧
+              ¬Becoming.EmbodiedSun.web.SelfBearing Becoming.SunSeed.Relatum.sun
+Becoming.Handing.every : ∀ (x : Bool), x ∈ [true, false]
+Becoming.Handing.distinct : Becoming.Distinct [true, false]
+Becoming.Handing.stands_two : ∀ (x : Bool) (t : Nat), Becoming.Handing.stands x (t + 2) = Becoming.Handing.stands x t
+Becoming.Handing.holder_stands : ∀ (t : Nat), 0 < Becoming.Handing.stands (Becoming.Handing.holder t) t
+Becoming.Handing.balances : Becoming.Handing.flow.Balances Becoming.Handing.web
+Becoming.Handing.acting : Becoming.Handing.flow.Acting Becoming.Handing.web
+Becoming.Handing.dependent : Becoming.Handing.web.Dependent
+Becoming.Handing.embodied : ∀ (x : Bool), Becoming.Handing.web.Embodied x ∧ Becoming.Handing.web.SelfBearing x
+Becoming.Handing.arises : ∀ (t : Nat) (x : Bool),
+  Becoming.Handing.web.Arises t x ∨ Becoming.Handing.web.Arises (t + 1) x
+Becoming.Handing.recurs : ∀ (x : Bool) (N : Nat), ∃ t, N ≤ t ∧ Becoming.Handing.web.Arises t x
+Becoming.Handing.handing : Becoming.Handing.flow.Balances Becoming.Handing.web ∧
+  Becoming.Handing.flow.Acting Becoming.Handing.web ∧
+    Becoming.Handing.web.Dependent ∧
+      (∀ (x : Bool), Becoming.Handing.web.Embodied x ∧ Becoming.Handing.web.SelfBearing x) ∧
+        (∀ (t : Nat), Becoming.Handing.flow.ClosedAt [true, false] t) ∧
+          Becoming.Handing.web.Unceasing ∧ ¬Becoming.Handing.flow.Dissipative
+Becoming.Kindling.balances : Becoming.Kindling.flow.Balances Becoming.Kindling.web
+Becoming.Kindling.acting : Becoming.Kindling.flow.Acting Becoming.Kindling.web
+Becoming.Kindling.dependent : Becoming.Kindling.web.Dependent
+Becoming.Kindling.gives_other : ∀ (t : Nat) (x : Bool) (c : Becoming.Kindling.Relatum),
+  0 < Becoming.Kindling.flow.give t (Becoming.Kindling.Relatum.side x) c → c = Becoming.Kindling.Relatum.side !x
+Becoming.Kindling.gives_one : ∀ (t : Nat) (x : Bool),
+  Becoming.Kindling.flow.give t (Becoming.Kindling.Relatum.side x) (Becoming.Kindling.Relatum.side !x) ≤ 1
+@Becoming.Kindling.side_dissipates : ∀ {ds : List Becoming.Kindling.Relatum} {t : Nat},
+  Becoming.Distinct ds →
+    Becoming.Kindling.flow.ClosedAt ds t →
+      ∀ {x : Bool},
+        Becoming.Kindling.Relatum.side x ∈ Becoming.Kindling.flow.present t →
+          Becoming.total ds (Becoming.Kindling.flow.give t (Becoming.Kindling.Relatum.side x)) +
+              Becoming.sign (Becoming.total ds (Becoming.Kindling.flow.take t (Becoming.Kindling.Relatum.side x))) ≤
+            Becoming.total ds (Becoming.Kindling.flow.take t (Becoming.Kindling.Relatum.side x))
+Becoming.Kindling.dissipative : Becoming.Kindling.flow.Dissipative
+Becoming.Kindling.kindling : Becoming.Kindling.flow.Balances Becoming.Kindling.web ∧
+  Becoming.Kindling.flow.Acting Becoming.Kindling.web ∧
+    Becoming.Kindling.web.Dependent ∧
+      (∀ (x : Bool),
+          Becoming.Kindling.web.Embodied (Becoming.Kindling.Relatum.side x) ∧
+            Becoming.Kindling.web.SelfBearing (Becoming.Kindling.Relatum.side x)) ∧
+        Becoming.Kindling.flow.Dissipative ∧
+          ∀ (x : Bool) (N : Nat), ∃ t, N ≤ t ∧ Becoming.Kindling.web.Arises t (Becoming.Kindling.Relatum.side x)
+@Becoming.Kindling.frontier : ∀ {ds : List Becoming.Kindling.Relatum},
+  Becoming.Distinct ds →
+    ∀ {x : Bool},
+      Becoming.Kindling.Relatum.side x ∈ ds → ∀ (T : Nat), ¬∀ (t : Nat), T ≤ t → Becoming.Kindling.flow.ClosedAt ds t
+Becoming.Kindling.around : ∀ (t : Nat),
+  Becoming.Kindling.flow.Around [Becoming.Kindling.Relatum.side true, Becoming.Kindling.Relatum.side false] t
+Becoming.Kindling.draws_in : ∀ (N : Nat),
+  ¬∀ (t : Nat),
+      N ≤ t →
+        Becoming.Kindling.flow.Inward [Becoming.Kindling.Relatum.side true, Becoming.Kindling.Relatum.side false] t
+Becoming.SprayHanding.sides_distinct : Becoming.Distinct Becoming.SprayHanding.sides
+@Becoming.SprayHanding.le_bound : ∀ {m : Nat} {l : List Becoming.SprayHanding.Relatum},
+  Becoming.SprayHanding.Relatum.aux m ∈ l → m + 1 ≤ Becoming.SprayHanding.bound l
+Becoming.SprayHanding.fresh : ∀ (l : List Becoming.SprayHanding.Relatum),
+  ¬Becoming.SprayHanding.Relatum.aux (Becoming.SprayHanding.bound l) ∈ l
+Becoming.SprayHanding.balances : Becoming.SprayHanding.flow.Balances Becoming.SprayHanding.web
+Becoming.SprayHanding.acting : Becoming.SprayHanding.flow.Acting Becoming.SprayHanding.web
+Becoming.SprayHanding.dependent : Becoming.SprayHanding.web.Dependent
+Becoming.SprayHanding.unenclosed : ∀ (t : Nat), ¬Becoming.SprayHanding.flow.Enclosed t
+Becoming.SprayHanding.dissipative : Becoming.SprayHanding.flow.Dissipative
+Becoming.SprayHanding.even_sum : ∀ (t : Nat), Becoming.Handing.even t + Becoming.Handing.even (t + 1) = 1
+Becoming.SprayHanding.spray_handing : Becoming.SprayHanding.flow.Balances Becoming.SprayHanding.web ∧
+  Becoming.SprayHanding.flow.Acting Becoming.SprayHanding.web ∧
+    Becoming.SprayHanding.web.Dependent ∧
+      (∀ (x : Bool),
+          Becoming.SprayHanding.web.Embodied (Becoming.SprayHanding.Relatum.side x) ∧
+            Becoming.SprayHanding.web.SelfBearing (Becoming.SprayHanding.Relatum.side x)) ∧
+        Becoming.SprayHanding.flow.Dissipative ∧
+          (∀ (t : Nat), ¬Becoming.SprayHanding.flow.Enclosed t) ∧
+            (∀ (x : Bool) (N : Nat),
+                ∃ t, N ≤ t ∧ Becoming.SprayHanding.web.Arises t (Becoming.SprayHanding.Relatum.side x)) ∧
+              (∀ (t : Nat), Becoming.SprayHanding.flow.Inward Becoming.SprayHanding.sides t) ∧
+                (∀ (t : Nat) (x : Bool),
+                    Becoming.SprayHanding.flow.take t Becoming.SprayHanding.Relatum.sink
+                          (Becoming.SprayHanding.Relatum.side x) =
+                        0 ∧
+                      Becoming.SprayHanding.flow.give t Becoming.SprayHanding.Relatum.sink
+                          (Becoming.SprayHanding.Relatum.side x) =
+                        0) ∧
+                  ∀ (t : Nat), Becoming.SprayHanding.web.stock Becoming.SprayHanding.sides t = 1
+Becoming.SprayHanding.opens_anyway : ∀ (T : Nat),
+  (¬∀ (t : Nat), T ≤ t → Becoming.SprayHanding.flow.ClosedAt Becoming.SprayHanding.sides t) ∧
+    ∀ (t : Nat), ¬Becoming.SprayHanding.flow.Around Becoming.SprayHanding.sides t
+Becoming.SprayHanding.taking_opens_anyway : ∀ (T : Nat),
+  ¬∀ (t : Nat), T ≤ t → Becoming.SprayHanding.flow.ClosedAt Becoming.SprayHanding.sides t
+Becoming.Flicker.flicker : Becoming.Flicker.flow.Balances Becoming.Flicker.web ∧
+  Becoming.Flicker.flow.Dissipative ∧ Becoming.Flicker.web.Unceasing ∧ ¬Becoming.Flicker.web.Embodied ()
