@@ -6,7 +6,7 @@
 
 Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、`living` 的读法。在 P2 中，`living` 和 `related` 是 `Valuation` 的外给参数，连通是假设。P3b 要回答的是：Becoming 层能否从展开本身给出这两项，从而让连通成为可以检查的动力学性质，而不是一条前提？
 
-这里的“形成”和“条件”是同一展开中的分析角色：一个形成依存于某些条件，或从某些条件中汲取，或两者兼有。它们不是彼此独立的实体，也不是价值的所有者。在 Lean 中，它们是贯穿运行的固定索引类型，形成跨步的同一性由 `F` 规定；`draws` 只记录一个形成汲取某个条件，不记录汲取多少，水平的变化由过程给出。这两项省略在 §7 的审查后写明。
+这里的“形成”和“条件”是同一展开中的分析角色：一个形成依存于某些条件，或从某些条件中汲取，或两者兼有。它们不是彼此独立的实体，也不是价值的所有者。在 Lean 中，它们是贯穿运行的固定索引类型，形成跨步的同一性由 `F` 规定（它在哪些读法中起作用，见 §16）；`draws` 只记录一个形成汲取某个条件，不记录汲取多少，水平的变化由过程给出。这两项省略在 §7 的审查后写明。
 
 ## 2. 结果
 
@@ -881,6 +881,67 @@ Integration: H1–H14 全部处理；审查列出的会改变判断的结果中�
 **边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证。本节的更正尚未再经独立审查。
 
 
+## 16. 跨步的同一：改名、改认与接续（P12）
+
+2026-10-09。开放纲领“动态依存”一行把形成的个体化列为下一步；`Becoming.Dependence` 的说明也写明，形成跨步的同一由索引类型 `F` 规定，一个形成转化还是一个终结而另一个形成，取决于这一规定。本节证明这一规定在哪些读法中起作用，在哪些读法中不起作用，以及活动与依存的连续能把它确定到什么程度。成果记录：[identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md)。
+
+依存网用固定的索引类型给形成命名，所以一步的哪个形成与下一步的哪个形成相同，是由名字规定的；每一步的关系并不确定它。**改认**（`Reidentify`）在每一步把两种命名一一对应。改认之后的网在每一步有相同的水平、活动、依存与汲取，不同的只是哪一步的哪个形成延续前一步的哪个。每一步都相同的改认是**改名**。分裂与合并改变形成的数目，不是改认。
+
+```text
+Result(s): 复用 becoming-dependence-dynamics（依存网、支持、保持、断裂、任期、侵蚀、形成与消解）、
+           unceasing-generation-needs-renewal（生起、不息、Depletes）、more-needs-renewers（流、取用者、更多、普查与 Taking）；
+           新增 identity-across-steps（L3）
+Delta: 改名保持追随形成的全部读法；任何改认保持每一步的关系、每个条件的类、Dependent、每个事件是否在更新之内与是否断裂，
+       以及流的取用与给予、取用者与补充者的数目、“更多”、活跃形成的普查与 Taking，所以在普查之下，更多在每个改认下蕴含不息；
+       只改动谁延续谁，形成的类、侵蚀、转化与生起都改变；
+       保持持续活动的改认不制造生起，保持持续依存的改认不去掉侵蚀；它们仍可把终结者与开始者接起来（接续），接续可以隐藏生起、增加侵蚀
+Supplied premises / correspondence: 改认在每一步一一对应；连续读作活动与依存跨步持续时名字不变；
+       接续怎样读不由本节给出
+Evidence: Becoming.Identity 的定理；合并检查器回执（见记录）
+Boundary: 不含伦理谓词；不处理分裂与合并；连续是一种同一的读法，不是同一的定义
+Integration: 开放纲领“形成的个体化”部分承接；逐步读法与不息的边界由此陈述
+```
+
+[Becoming.Identity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean)（L3）：
+
+| 声明 | 内容 |
+|---|---|
+| `Reidentify`、`Reidentify.rename`、`Web.reidentify`、`Flow.reidentify` | 两种命名在每一步一一对应；改名在每一步相同；改认后的依存网与流 |
+| `reidentify_step`、`reidentify_renewed`、`reidentify_consumed`、`reidentify_lost`、`reidentify_dependent`、`reidentify_renewingAt`、`reidentify_breakingOn` | 任何改认都保持：每一步的支持、保持与断裂；每个条件的类（被更新、被消耗、失去）；活动是否需要支持；每个事件是否在更新之内、是否断裂 |
+| `reidentify_amounts`、`reidentify_balances`、`reidentify_counts`、`reidentify_more` | 改认一个流，保持每步的取用与给予、消耗与补充的平衡、取用者与补充者的数目，因而保持不止地更多 |
+| `Reidentify.new_injective`、`Reidentify.mem_map`、`mem_map_of`、`mem_of_map`、`distinct_map`、`Web.Census.reidentify`、`Flow.Taking.reidentify` | 改认保持活跃形成的普查（每步不重复地列出）与“只有活跃的形成取用，且只从它汲取的条件取用” |
+| `Flow.More.unceasing_reidentified` | 在普查、present 不重复与 Taking 之下，不止地更多在每个改认下蕴含不息 |
+| `rename_renewingIn`、`rename_consumingIn`、`rename_tenure`、`rename_undermining`、`rename_unceasing` | 名字不承载任何东西：改名保持形成的类、依存的任期（`MetAbove`）、侵蚀、形成与消解、生起与不息 |
+| `Turnover.identified`、`Turnover.reidentified` | 每一奇数步交换名字，每一步的关系不变：一个形成更新、一个消耗，变成没有形成更新、两个消耗；汲取者在每一步侵蚀，变成第一步之后没有任何事件侵蚀；没有依存形成或消解、没有生起，变成一个形成跨第一步转化依存、每一奇数步都有形成生起，生成不息。这些生起不降低任何条件，`Depletes` 不成立。两个网中活动都只在有支持处 |
+| `KeepsActive`、`KeepsTenure`、`Reidentify.steady` | 改认保持跨一步持续活动的形成的名字；保持跨一步持续依存于某条件的形成的名字。后者使一个形成在一段任期上只有一个名字 |
+| `arises_of_keepsActive`、`unceasing_of_keepsActive` | 保持持续的活动，改认不制造生起：新名字下生起的，在旧名字下也生起；因而不制造不息 |
+| `metAbove_of_keepsTenure`、`undermining_of_keepsTenure` | 保持持续的依存，改认保持在任期中满足过的依存，不去掉任何侵蚀 |
+| `Lineage.readings` | 一个谱系的两个成员在交替的步活跃。分开命名，成员不息地生起；作为一个命名，谱系始终活跃，没有生起。合为一个命名保持持续的活动，因为没有成员在相继两步都活跃 |
+| `Succession.readings` | 长者在第一步需要池，继承者从第二步起需要池，其需要在任期中从未被满足。分开命名，汲取者只在第一步侵蚀（断裂长者的依存）；继承者接续长者时，长者的任期在继承者中延续，汲取者每一步都侵蚀。接续保持持续的活动与依存 |
+
+**解读。**
+
+- **名字不承载本体。** 改名保持全部这些读法：形式变量只经由它们的关系起作用。这是方法要求“不能以分别命名偷渡独立本体”在这一表示中的一个检查。它检查的是这些定义，不是一元的证明。
+- **每一步与每个条件只由关系确定。** 支持、保持与断裂、条件的类、每个事件是否在更新之内，都只依赖每一步的关系，不依赖跨步的同一。消耗读的是一个依存在它成立时的样子，对照条件以后的水平；它不追随形成。“更多”读的是每步取用者的数目，也不依赖。在普查与 Taking 之下，它所迫使的不息也不依赖（`More.unceasing_reidentified`）：不息本身依赖同一（`Turnover`、`Lineage`），由“更多”迫使的不息却不依赖。原因在 `arises_of_more`：下一步活跃的形成多于这一步时，无论怎样命名，总有一个名字在这一步不活跃而在下一步活跃，数目的增长不能由改认吸收。
+- **追随形成的读法依赖同一。** 形成在整段上的类、依存的任期（因而侵蚀与逐步读法的 `living`）、转化与“一个终结而另一个形成”的区别、生起（因而不息），都依赖跨步的同一。`Turnover` 只改动谁延续谁，这些就全部改变。所以 §5 中“分类属于运行，不属于形成自身的轨迹”还要补一句：形成的类还依赖哪些事件属于同一个形成。
+- **连续排除什么，留下什么。** 把同一读作活动与依存的连续：跨一步持续活动的形成保持名字，跨一步持续依存的形成保持名字。这样的改认不制造生起，也不去掉侵蚀。它仍可以把在某步终结的形成与在该步开始的形成接起来：开始者是否延续终结者，是接续的问题。接起来可以隐藏生起（`Lineage`），也可以增加侵蚀（`Succession`）。两个定理各有一个方向，反方向的反例恰是接续。
+- **对生生的意义（AI 论证）。** 一个谱系的成员交替生起：分开命名是不息的生成，作为一个命名是一个形成的持续。“生生不息”若读作谱系的持续，它落在维持与更新上；若读作成员不断生起，它落在 §13 的不息上。哪一种是接续的读法，不由每一步的关系决定。继承者是否继承长者的损失，决定此后的汲取是否侵蚀；这触及工作读法“不侵蚀”的一个选择：一个依存的任期能否经由接续延续。这两个选择属于 Ren。
+- **对 P10 的影响。** `Unceasing` 依赖同一；在 `Turnover` 中，改认单独制造了不息。§13 的 `Unceasing.rises` 不受影响：它的结论（家族中某个条件在任意晚的步上升）只关乎条件，不依赖同一；它的前提 `Depletes` 要求在家族都不上升的步上，每次生起时家族中某个条件下降，而 `Turnover` 中单由改认制造的生起不降低任何条件，`Depletes` 不成立，定理不适用。保持持续活动的改认也不制造不息。
+
+**作者反审。**
+
+*反驳 1：改名不变是平凡的。* 对按关系定义的谓词，改名不变是一条元定理：可定义的性质在同构下不变。这里在 Lean 中逐项检查，并与改认对照；值得注意的是改认改变什么、不改变什么。
+
+*反驳 2：`Turnover` 的改认是荒谬的，没有人会这样认同。* 对：它破坏了活动与依存的连续。它只表明每一步的关系不决定同一。连续的定理说明，排除这类改认后剩下的只有接续；而 `Lineage` 与 `Succession` 中的接续不荒谬：谱系、继承者、同一生态位上的接替都是实际的情形。
+
+*反驳 3：改认要求每一步的形成一一对应，排除了分裂与合并。* 对。分裂与合并改变形成的数目，需要另外的表示；本节只处理数目不变时谁延续谁。
+
+*反驳 4：把同一读作连续，是否预设了同一？* 连续在这里只用到每一步的关系与名字：一个形成在相继两步都活跃，或都依存于某条件。它不定义同一，只约束改认：在约束之下，改认不再能制造生起或去掉侵蚀，接续仍由读法决定。
+
+*反驳 5：普查下的结论是不是只把同一换成了计数？* 是，这正是它的内容：“更多”只读每步的数目，普查把数目的增长与生起连起来。它不说哪个形成生起，只说总有某个形成生起；在 `Lineage` 那样数目不增长的展开中，它什么也不说。
+
+**边界。** 不含伦理谓词；改认只处理每步形成一一对应的情形；连续是作者提出的一种同一的读法，不是同一的定义；接续怎样读、工作读法“不侵蚀”是否让任期经由接续延续，属于 Ren 的读法选择；从关系推出同一的完整说明（例如物质、信息或组织的连续）没有给出。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -986,3 +1047,5 @@ As corrected in P11b, what this gives is a strict hierarchy of the replenishment
 - **Names and boundaries.** Following Ren's vocabulary corrections, the core now uses depletion, uptake, replenishment and balance in place of payment, load, supply and ledger. The names are the reviewer's suggestions, and the final choice is Ren's. `Arises` is glossed as one formal carrier of the second 生, in the author's reading, and "generation by consumption" becomes "arising on a consumed condition". The structural reading's boundary now states that formations and conditions are two kinds here, so life as a condition of life is a relation the representation omits.
 
 The core now has 376 theorems and 688 declaration audits over 18 modules, all with empty axiom reports. Open: a dissipative flow theorem, quantities with a rational floor, and Ren's choices of the scope of the second 生 and of "more". These corrections have not been independently reviewed again.
+
+**P12: identity across steps.** `Becoming.Identity` relates two namings of formations one to one at each step (`Reidentify`), leaving every step's levels, activity, dependences and drawing unchanged. A renaming preserves every reading, so names carry nothing. Any re-identification preserves each step's relations, each condition's class, what a flow takes and gives, the counts of takers and renewers, more without end, a census of the active formations and `Taking`; so under a census more without end makes generation unceasing under every re-identification (`Flow.More.unceasing_reidentified`). What follows a formation depends on identity: its class over the run, the tenure of a dependence, undermining, transformation and arising. Exchanging names at odd steps changes all of them (`Turnover`). Keeping the names of continuing activity makes no arising, and keeping those of continuing dependence removes no undermining. Succession remains open. A lineage's members arise without end when named apart, and nothing arises when they are named as one (`Lineage`). An heir succeeding an elder makes later drawing undermine (`Succession`). How to read succession is Ren's choice. The core now has 422 theorems and 760 declaration audits over 19 modules, all with empty axiom reports. This section has not been independently reviewed.

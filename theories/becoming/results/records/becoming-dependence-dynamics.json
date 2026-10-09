@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "形成与条件是同一展开中的分析角色，不是独立实体。可观测量与实际历史的对应、依存的改变是否先于下降，以及哪种结局在实际系统中出现，都是应用或经验上的义务。终止与转化之分依赖所规定的形成同一性；形成本身的个体化没有被表示。",
-    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities. The correspondence of observables to an actual history, whether a change of dependence preceded a fall, and which outcome occurs in an actual system are application or empirical duties. The distinction between ending and transformation depends on the supplied identity of formations; the individuation of formations itself is not represented."
+    "zh": "形成与条件是同一展开中的分析角色，不是独立实体。可观测量与实际历史的对应、依存的改变是否先于下降，以及哪种结局在实际系统中出现，都是应用或经验上的义务。终止与转化之分依赖所规定的形成同一性；形成本身的个体化没有被表示；identity-across-steps 陈述这一同一在哪些读法中起作用。",
+    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities. The correspondence of observables to an actual history, whether a change of dependence preceded a fall, and which outcome occurs in an actual system are application or empirical duties. The distinction between ending and transformation depends on the supplied identity of formations; the individuation of formations itself is not represented; identity-across-steps states in which readings that identity matters."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
   "aliases": [
@@ -172,8 +172,8 @@
     "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T042823.534750Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 16 个模块（含只作导入的根模块与桥接），共 376 项定理／688 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 18 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T042823.534750Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 16 modules (including the import-only root and the bridge) with 376 theorems/688 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 18 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T045039.065929Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 17 个模块（含只作导入的根模块与桥接），共 422 项定理／760 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 19 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T045039.065929Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 17 modules (including the import-only root and the bridge) with 422 theorems/760 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 19 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -245,19 +245,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "e23b8ae9f54432d543aa7c2ec1978f1f04182af976ca3c114938627ea73645ac",
+      "sha256": "a81c134959be0c1070a28eb997b72c09c98b938eb7cc8c7c8a67deb0b1cd0aee",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ab86db8aedd7f2446c926ed97cfb00b8c4f796f690a460105fb82aad14a8bfaa",
+      "sha256": "a6ec86355481fd08443c110b31bcdca1f95f4b5680a35a4dda45bd420020efc9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "a80939ddbfa9aab7e2d8a2eee3d5986a8d3918daab20ff6bb62d9f5ac6b7f51c",
+      "sha256": "d2fccbdc4693340366dedcf1a50b265167caf4ee51874fe900439ccc28b4946c",
       "declarations": []
     },
     {
@@ -297,8 +297,8 @@
     }
   ],
   "next_delta": {
-    "zh": "放宽 Dependent，表示缓冲、储备与滞后；表示形成的个体化，使终止与转化之分不依赖外给的同一性。",
-    "en": "Relax Dependent to represent buffers, reserves and lags; represent the individuation of formations, so that ending and transformation are distinguished without a supplied identity."
+    "zh": "放宽 Dependent，表示缓冲、储备与滞后；形成的个体化：identity-across-steps 证明终止与转化之分、生起与侵蚀依赖跨步的同一，活动与依存的连续把它约束到接续为止；从关系推出同一，以及分裂与合并的表示，仍开放。",
+    "en": "Relax Dependent to represent buffers, reserves and lags; the individuation of formations: identity-across-steps proves that the distinction between ending and transformation, arising and undermining depend on identity across steps, and that continuity of activity and dependence constrains it up to succession; deriving identity from relations, and representing splits and merges, remain open."
   },
   "history": [
     {
@@ -340,6 +340,14 @@
     {
       "zh": "2026-10-09：P11b 按第四次独立审查修正侵蚀与流、并新增 Becoming.Population 后，合并检查器重跑（20261009T042823.534750Z），本记录的检验范围改指新回执。",
       "en": "2026-10-09: after P11b repaired undermining and flows following the fourth independent review and added Becoming.Population, the consolidated checker was rerun (20261009T042823.534750Z) and this record's validation scope now points to the new receipt."
+    },
+    {
+      "zh": "2026-10-09：P12 新增 Becoming.Identity 后，合并检查器重跑（20261009T045039.065929Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P12 added Becoming.Identity, the consolidated checker was rerun (20261009T045039.065929Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09：P12 承接本记录下一步中的“形成的个体化”（identity-across-steps）；对应与下一步随之更新，主张与证明不变。",
+      "en": "2026-10-09: P12 takes up “the individuation of formations” from this record's next step (identity-across-steps); the correspondence and next step are updated, and the claim and proofs are unchanged."
     }
   ]
 }

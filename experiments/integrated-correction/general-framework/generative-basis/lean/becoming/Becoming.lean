@@ -9,6 +9,7 @@ import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
 import Becoming.Population
+import Becoming.Identity
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -51,6 +52,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Population` (L3): how many formations are active. Under a census of the
   active formations, with only active formations taking, more generation without end
   makes generation unceasing.
+* `Becoming.Identity` (L3): which formation at one step continues which at the next.
+  Names carry nothing; each step's relations, each condition's class and how many
+  formations take and give do not depend on identity across steps, while a formation's
+  class, the tenure of a dependence, undermining and arising do. Continuity of activity
+  and dependence rules out making arising and removing undermining; succession stays
+  open. Under a census, more without end makes generation unceasing under every
+  re-identification.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

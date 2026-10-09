@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-102 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+103 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -56,6 +56,7 @@
 | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](theories/becoming/results/records/growth-constrained-fragmentation.md) | recorded-checked | [GrownFragmentation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) |
 | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](theories/becoming/results/records/guarded-program-question-recovery.md) | recorded-checked | [ExplanatoryGuardedPrograms.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) |
 | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](theories/becoming/results/records/historical-source-binding.md) | recorded-checked | [HistoricalBinding.lean](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean) |
+| [跨步的同一：名字不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁，连续之外剩下接续 / Identity across steps: names carry nothing, each step and each condition are fixed by relations, readings that follow a formation depend on who continues whom, and continuity leaves succession](theories/becoming/results/records/identity-across-steps.md) | recorded-checked | [Identity.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean) |
 | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](theories/becoming/results/records/incidence-common-refinement.md) | recorded-checked | [ExplanatoryJoiningIncidence.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) |
 | [继承排列改变进一步复制 / Inherited arrangement changes further copying](theories/becoming/results/records/inherited-structural-copying.md) | recorded-checked | [StructuralCopying.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean) |
 | [开放接合映射的保真与唯一共同因子 / Question fidelity and unique factors of open joining maps](theories/becoming/results/records/joining-open-map-factor.md) | recorded-checked | [ExplanatoryJoiningRefinement.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean) |

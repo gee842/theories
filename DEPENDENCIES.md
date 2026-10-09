@@ -510,6 +510,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean)
 
+## identity-across-steps ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用依存网、支持、保持、断裂、任期、侵蚀、形成与消解，以及该记录下一步中的个体化问题。 / Reuses webs, support, keeping, breaking, tenure, undermining, forming and dissolving, and the individuation question in that record's next step.
+
+**Producer output / 上游输出:** 依存网与其逐步读法。 / Webs and their stepwise readings.
+
+**Consumer input / 下游输入:** 改认、不变性与依赖同一的读法。 / Re-identification, invariance and identity-dependent readings.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## identity-across-steps ← unceasing-generation-needs-renewal
+
+`formal-reuse` — 复用 Arises、Unceasing、Depletes、Rises、Falls；说明不息依赖同一，而单由改认制造、不降低任何条件的生起不满足 Depletes。 / Reuses Arises, Unceasing, Depletes, Rises and Falls; shows that unceasing generation depends on identity, and that arisings made by re-identification alone, lowering no condition, do not meet Depletes.
+
+**Producer output / 上游输出:** 生起、不息与消耗。 / Arising, unceasing generation and depletion.
+
+**Consumer input / 下游输入:** 生起在改认与连续下的行为。 / How arising behaves under re-identification and continuity.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)
+
+## identity-across-steps ← more-needs-renewers
+
+`formal-reuse` — 复用流、取用者、补充者、More、普查、Taking 与 More.unceasing；说明它们不依赖同一，并把“更多蕴含不息”推广到每个改认。 / Reuses flows, takers, renewers, More, censuses, Taking and More.unceasing; shows that they do not depend on identity, and extends “more implies unceasing” to every re-identification.
+
+**Producer output / 上游输出:** 流、消耗与补充的平衡、计数、普查与更多蕴含不息。 / Flows, the balance of depletion and replenishment, counts, censuses, and more implying unceasing generation.
+
+**Consumer input / 下游输入:** 改认后的流与普查。 / Re-identified flows and censuses.
+
+**Retained conditions / 保留条件:** 普查、present 不重复与 Taking（只用于 More.unceasing_reidentified）。 / A census, present without repetition and Taking (only for More.unceasing_reidentified).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
 ## incidence-common-refinement ← branching-tests-bisimulation
 
 `formal-reuse` — 由同一接合构造关联模型后复用有限分支恢复。 / Reuse finite branch recovery after constructing each joining incidence model.

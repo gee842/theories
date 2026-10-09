@@ -1,0 +1,58 @@
+@Becoming.length_append : ∀ {α : Type} (p q : List α), (p ++ q).length = p.length + q.length
+@Becoming.mem_cons_cases : ∀ {α : Type} {a b : α} {q : List α}, b ∈ a :: q → b = a ∨ b ∈ q
+@Becoming.mem_remove : ∀ {α : Type} {a b : α}, ¬b = a → ∀ {p q : List α}, b ∈ p ++ a :: q → b ∈ p ++ q
+@Becoming.length_le_of_sub : ∀ {α : Type} {l m : List α},
+  Becoming.Distinct l → (∀ (a : α), a ∈ l → a ∈ m) → l.length ≤ m.length
+@Becoming.count_le_of_sub : ∀ {α : Type} {q : α → Nat} {l m : List α},
+  Becoming.Distinct l → (∀ (a : α), a ∈ l → 0 < q a → a ∈ m) → Becoming.count l q ≤ m.length
+@Becoming.rises_between : ∀ {q : Nat → Nat} {N T : Nat}, N ≤ T → q N < q T → ∃ t, N ≤ t ∧ t < T ∧ q t < q (t + 1)
+@Becoming.Web.search : ∀ {F C : Type} (W : Becoming.Web F C) [active : (t : Nat) → (f : F) → Decidable (W.active t f)]
+  (t : Nat) (l : List F), (∃ f, f ∈ l ∧ ¬W.active t f) ∨ ∀ (f : F), f ∈ l → W.active t f
+@Becoming.Web.arises_of_more : ∀ {F C : Type} (W : Becoming.Web F C)
+  [active : (t : Nat) → (f : F) → Decidable (W.active t f)] {t : Nat} {before after : List F},
+  (∀ (f : F), W.active t f → f ∈ before) →
+    Becoming.Distinct after →
+      (∀ (f : F), f ∈ after → W.active (t + 1) f) → before.length < after.length → ∃ f, f ∈ after ∧ W.Arises t f
+@Becoming.Web.unceasing_of_growth : ∀ {F C : Type} (W : Becoming.Web F C)
+  [active : (t : Nat) → (f : F) → Decidable (W.active t f)] {alive : Nat → List F},
+  W.Census alive → (∀ (N K : Nat), ∃ t, N ≤ t ∧ K < (alive t).length) → W.Unceasing
+@Becoming.Flow.More.unceasing : ∀ {F C : Type} {W : Becoming.Web F C} [(t : Nat) → (f : F) → Decidable (W.active t f)]
+  {L : Becoming.Flow F C} {cs : List C} {alive : Nat → List F},
+  W.Census alive → (∀ (t : Nat), Becoming.Distinct (L.present t)) → L.Taking W → L.More cs → W.Unceasing
+Becoming.Bloom.pair : Becoming.Distinct [Becoming.Bloom.Formation.sun, Becoming.Bloom.Formation.bloom]
+Becoming.Bloom.census : Becoming.Bloom.web.Census Becoming.Bloom.alive
+Becoming.Bloom.counted : Becoming.Bloom.web.Census Becoming.Bloom.alive ∧
+  (∀ (t : Nat), Becoming.Distinct (Becoming.Bloom.flow.present t)) ∧
+    Becoming.Bloom.flow.Taking Becoming.Bloom.web ∧ Becoming.Bloom.web.Unceasing ∧ ¬Becoming.Bloom.flow.More [()]
+Becoming.Dormant.more_without_arising : Becoming.Garden.flow.Balances Becoming.Dormant.web ∧
+  Becoming.Garden.flow.Acting Becoming.Dormant.web ∧
+    Becoming.Garden.flow.Taking Becoming.Dormant.web ∧
+      Becoming.Garden.flow.Capacity [()] 1 ∧
+        Becoming.Dormant.web.Dependent ∧
+          Becoming.Garden.flow.More [()] ∧
+            ∀ (t : Nat) (f : Becoming.Garden.Kind × Nat), ¬Becoming.Dormant.web.Arises t f
+@Becoming.Inactive.ones : ∀ {q : Nat → Nat},
+  q 0 = 0 → (∀ (m : Nat), q (m + 1) = 1) → ∀ (n : Nat), Becoming.total (Becoming.Inactive.present n) q = n
+Becoming.Inactive.gives : ∀ (t n : Nat),
+  (Becoming.total (Becoming.Inactive.present n) fun m => Becoming.Inactive.flow.give t m ()) = t
+Becoming.Inactive.present_le : ∀ (n m : Nat), m ∈ Becoming.Inactive.present n → m ≤ n
+Becoming.Inactive.distinct : ∀ (n : Nat), Becoming.Distinct (Becoming.Inactive.present n)
+Becoming.Inactive.more_without_arising : Becoming.Inactive.flow.Balances Becoming.Inactive.web ∧
+  Becoming.Inactive.flow.Acting Becoming.Inactive.web ∧
+    Becoming.Inactive.web.Census Becoming.Inactive.alive ∧
+      (∀ (t : Nat), Becoming.Distinct (Becoming.Inactive.flow.present t)) ∧
+        Becoming.Inactive.flow.More [()] ∧
+          ¬Becoming.Inactive.flow.Taking Becoming.Inactive.web ∧ ∀ (t f : Nat), ¬Becoming.Inactive.web.Arises t f
+Becoming.Crowd.drawing_without_taking : Becoming.Crowd.flow.Balances Becoming.Cycle.web ∧
+  Becoming.Crowd.flow.Acting Becoming.Cycle.web ∧
+    Becoming.Crowd.flow.Taking Becoming.Cycle.web ∧
+      Becoming.Cycle.web.Dependent ∧
+        (∀ (K : Nat),
+            ∃ T,
+              ∀ (t : Nat),
+                T ≤ t →
+                  ∀ (n : Nat),
+                    n < K →
+                      Becoming.Cycle.web.active t n ∧
+                        Becoming.Cycle.web.requires t n () ∧ Becoming.Cycle.web.draws t n ()) ∧
+          ¬Becoming.Crowd.flow.More [()]

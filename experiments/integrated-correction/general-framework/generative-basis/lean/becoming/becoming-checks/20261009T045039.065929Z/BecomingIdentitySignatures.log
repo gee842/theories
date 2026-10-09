@@ -1,0 +1,128 @@
+@Becoming.Reidentify.every : ∀ {F F' : Type} (σ : Becoming.Reidentify F F') (t : Nat) {p : F → Prop},
+  (∀ (x : F'), p (σ.old t x)) → ∀ (f : F), p f
+@Becoming.Reidentify.new_injective : ∀ {F F' : Type} (σ : Becoming.Reidentify F F') (t : Nat) (f g : F),
+  σ.new t f = σ.new t g → f = g
+@Becoming.Reidentify.some : ∀ {F F' : Type} (σ : Becoming.Reidentify F F') (t : Nat) {p : F → Prop},
+  (∃ f, p f) → ∃ x, p (σ.old t x)
+@Becoming.Web.reidentify_step : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (t : Nat)
+  (x : F') (c : C),
+  ((W.reidentify σ).Supported t x ↔ W.Supported t (σ.old t x)) ∧
+    ((W.reidentify σ).Kept t x c ↔ W.Kept t (σ.old t x) c) ∧ ((W.reidentify σ).Broken t x c ↔ W.Broken t (σ.old t x) c)
+@Becoming.Web.reidentify_renewed : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (c : C),
+  (W.reidentify σ).Renewed c ↔ W.Renewed c
+@Becoming.Web.reidentify_consumed : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (c : C),
+  (W.reidentify σ).Consumed c ↔ W.Consumed c
+@Becoming.Web.reidentify_lost : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (c : C),
+  (W.reidentify σ).Lost c ↔ W.Lost c
+@Becoming.Web.reidentify_dependent : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F'),
+  (W.reidentify σ).Dependent ↔ W.Dependent
+@Becoming.Web.reidentify_renewingAt : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (t : Nat)
+  (x : F'), Becoming.Web.RenewingAt t x ↔ Becoming.Web.RenewingAt t (σ.old t x)
+@Becoming.Web.reidentify_breakingOn : ∀ {F F' C : Type} (W : Becoming.Web F C) (σ : Becoming.Reidentify F F') (t : Nat)
+  (x : F') (c : C), Becoming.Web.BreakingOn t x c ↔ Becoming.Web.BreakingOn t (σ.old t x) c
+@Becoming.Web.rename_renewingIn : ∀ {F F' C : Type} (W : Becoming.Web F C) (old : F' → F) (new : F → F')
+  (old_new : ∀ (f : F), old (new f) = f) (new_old : ∀ (x : F'), new (old x) = x) (x : F'),
+  (W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).RenewingIn x ↔ W.RenewingIn (old x)
+@Becoming.Web.rename_consumingIn : ∀ {F F' C : Type} (W : Becoming.Web F C) (old : F' → F) (new : F → F')
+  (old_new : ∀ (f : F), old (new f) = f) (new_old : ∀ (x : F'), new (old x) = x) (x : F'),
+  (W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).ConsumingIn x ↔ W.ConsumingIn (old x)
+@Becoming.Web.rename_tenure : ∀ {F F' C : Type} (W : Becoming.Web F C) (old : F' → F) (new : F → F')
+  (old_new : ∀ (f : F), old (new f) = f) (new_old : ∀ (x : F'), new (old x) = x) (t : Nat) (x : F') (c : C) (m : Nat),
+  (Becoming.Web.MetAbove t x c m ↔ Becoming.Web.MetAbove t (old x) c m) ∧
+    ((W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).Forms t x c ↔ W.Forms t (old x) c) ∧
+      ((W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).Dissolves t x c ↔ W.Dissolves t (old x) c) ∧
+        ((W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).Arises t x ↔ W.Arises t (old x))
+@Becoming.Web.rename_undermining : ∀ {F F' C : Type} (W : Becoming.Web F C) (old : F' → F) (new : F → F')
+  (old_new : ∀ (f : F), old (new f) = f) (new_old : ∀ (x : F'), new (old x) = x) (t : Nat) (x : F'),
+  Becoming.Web.UnderminingAt t x ↔ Becoming.Web.UnderminingAt t (old x)
+@Becoming.Web.rename_unceasing : ∀ {F F' C : Type} (W : Becoming.Web F C) (old : F' → F) (new : F → F')
+  (old_new : ∀ (f : F), old (new f) = f) (new_old : ∀ (x : F'), new (old x) = x),
+  (W.reidentify (Becoming.Reidentify.rename old new old_new new_old)).Unceasing ↔ W.Unceasing
+@Becoming.mem_map_of : ∀ {α β : Type} {g : α → β} {a : α} {l : List α}, a ∈ l → g a ∈ List.map g l
+@Becoming.mem_of_map : ∀ {α β : Type} {g : α → β},
+  (∀ (a b : α), g a = g b → a = b) → ∀ {a : α} {l : List α}, g a ∈ List.map g l → a ∈ l
+@Becoming.distinct_map : ∀ {α β : Type} {g : α → β},
+  (∀ (a b : α), g a = g b → a = b) → ∀ {l : List α}, Becoming.Distinct l → Becoming.Distinct (List.map g l)
+@Becoming.Reidentify.mem_map : ∀ {F F' : Type} (σ : Becoming.Reidentify F F') (t : Nat) {l : List F} {x : F'},
+  x ∈ List.map (σ.new t) l ↔ σ.old t x ∈ l
+@Becoming.Web.Census.reidentify : ∀ {F F' C : Type} {W : Becoming.Web F C} {alive : Nat → List F},
+  W.Census alive → ∀ (σ : Becoming.Reidentify F F'), (W.reidentify σ).Census fun t => List.map (σ.new t) (alive t)
+@Becoming.total_reidentify : ∀ {F F' : Type} (σ : Becoming.Reidentify F F') (t : Nat) (q : F → Nat) (fs : List F),
+  (Becoming.total (List.map (σ.new t) fs) fun x => q (σ.old t x)) = Becoming.total fs q
+@Becoming.Flow.reidentify_amounts : ∀ {F F' C : Type} (L : Becoming.Flow F C) (σ : Becoming.Reidentify F F') (t : Nat)
+  (c : C), (L.reidentify σ).taken t c = L.taken t c ∧ (L.reidentify σ).given t c = L.given t c
+@Becoming.Flow.reidentify_balances : ∀ {F F' C : Type} (L : Becoming.Flow F C) (σ : Becoming.Reidentify F F')
+  (W : Becoming.Web F C), (L.reidentify σ).Balances (W.reidentify σ) ↔ L.Balances W
+@Becoming.Flow.reidentify_counts : ∀ {F F' C : Type} (L : Becoming.Flow F C) (σ : Becoming.Reidentify F F')
+  (cs : List C) (t : Nat),
+  (L.reidentify σ).takers cs t = L.takers cs t ∧ (L.reidentify σ).renewers cs t = L.renewers cs t
+@Becoming.Flow.Taking.reidentify : ∀ {F F' C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C},
+  L.Taking W → ∀ (σ : Becoming.Reidentify F F'), (L.reidentify σ).Taking (W.reidentify σ)
+@Becoming.Flow.reidentify_more : ∀ {F F' C : Type} (L : Becoming.Flow F C) (σ : Becoming.Reidentify F F') (cs : List C),
+  (L.reidentify σ).More cs ↔ L.More cs
+@Becoming.Flow.More.unceasing_reidentified : ∀ {F F' C : Type} {W : Becoming.Web F C}
+  [decide : (t : Nat) → (f : F) → Decidable (W.active t f)] {L : Becoming.Flow F C} {cs : List C}
+  {alive : Nat → List F},
+  W.Census alive →
+    (∀ (t : Nat), Becoming.Distinct (L.present t)) →
+      L.Taking W → L.More cs → ∀ (σ : Becoming.Reidentify F F'), (W.reidentify σ).Unceasing
+@Becoming.Reidentify.steady : ∀ {F F' C : Type} {σ : Becoming.Reidentify F F'} {W : Becoming.Web F C},
+  σ.KeepsTenure W →
+    ∀ {g : F} {c : C} {s t : Nat},
+      (∀ (u : Nat), s ≤ u → u ≤ t → W.requires u g c) → ∀ (u : Nat), s ≤ u → u ≤ t → σ.new u g = σ.new t g
+@Becoming.Web.arises_of_keepsActive : ∀ {F F' C : Type} {W : Becoming.Web F C} {σ : Becoming.Reidentify F F'},
+  σ.KeepsActive W → ∀ {t : Nat} {x : F'}, (W.reidentify σ).Arises t x → W.Arises t (σ.old (t + 1) x)
+@Becoming.Web.unceasing_of_keepsActive : ∀ {F F' C : Type} {W : Becoming.Web F C} {σ : Becoming.Reidentify F F'},
+  σ.KeepsActive W → (W.reidentify σ).Unceasing → W.Unceasing
+@Becoming.Web.metAbove_of_keepsTenure : ∀ {F F' C : Type} {W : Becoming.Web F C} {σ : Becoming.Reidentify F F'},
+  σ.KeepsTenure W →
+    ∀ {t : Nat} {g : F} {c : C} {m : Nat}, Becoming.Web.MetAbove t g c m → Becoming.Web.MetAbove t (σ.new t g) c m
+@Becoming.Web.undermining_of_keepsTenure : ∀ {F F' C : Type} {W : Becoming.Web F C} {σ : Becoming.Reidentify F F'},
+  σ.KeepsTenure W → ∀ {t : Nat} {f : F}, Becoming.Web.UnderminingAt t f → Becoming.Web.UnderminingAt t (σ.new t f)
+Becoming.Turnover.turn_turn : ∀ (b : Bool) (f : Becoming.Turnover.Formation),
+  Becoming.Turnover.turn b (Becoming.Turnover.turn b f) = f
+@Becoming.Turnover.pool_late : ∀ {t : Nat}, 1 ≤ t → Becoming.Turnover.pool t = 1
+Becoming.Turnover.pool_not_renewed : ¬Becoming.Turnover.web.Renewed Becoming.Turnover.Condition.pool
+@Becoming.Turnover.needs_spring : ∀ {t : Nat} (f : Becoming.Turnover.Formation),
+  Becoming.Turnover.web.requires t f Becoming.Turnover.Condition.spring →
+    Becoming.Turnover.web.need t f Becoming.Turnover.Condition.spring ≤ 1
+@Becoming.Turnover.needs_pool : ∀ {t : Nat} (f : Becoming.Turnover.Formation),
+  Becoming.Turnover.web.requires t f Becoming.Turnover.Condition.pool →
+    Becoming.Turnover.web.need t f Becoming.Turnover.Condition.pool = 2
+Becoming.Turnover.not_both : ∀ (b : Bool) (f : Becoming.Turnover.Formation),
+  Becoming.Turnover.web.requires 0 (Becoming.Turnover.turn b f) Becoming.Turnover.Condition.pool →
+    ¬Becoming.Turnover.web.requires 0 (Becoming.Turnover.turn (!b) f) Becoming.Turnover.Condition.pool
+Becoming.Turnover.identified : Becoming.Turnover.web.Dependent ∧
+  Becoming.Turnover.web.RenewingIn Becoming.Turnover.Formation.keeper ∧
+    Becoming.Turnover.web.ConsumingIn Becoming.Turnover.Formation.drawer ∧
+      (∀ (t : Nat), Becoming.Web.UnderminingAt t Becoming.Turnover.Formation.drawer) ∧
+        (∀ (t : Nat) (f : Becoming.Turnover.Formation) (c : Becoming.Turnover.Condition),
+            ¬Becoming.Turnover.web.Forms t f c) ∧
+          ¬Becoming.Turnover.web.Unceasing
+Becoming.Turnover.reidentified : Becoming.Turnover.turned.Dependent ∧
+  (∀ (x : Becoming.Turnover.Formation), ¬Becoming.Turnover.turned.RenewingIn x) ∧
+    Becoming.Turnover.turned.ConsumingIn Becoming.Turnover.Formation.drawer ∧
+      Becoming.Turnover.turned.ConsumingIn Becoming.Turnover.Formation.idle ∧
+        (∀ (t : Nat) (x : Becoming.Turnover.Formation), 1 ≤ t → ¬Becoming.Web.UnderminingAt t x) ∧
+          Becoming.Turnover.turned.Dissolves 0 Becoming.Turnover.Formation.keeper Becoming.Turnover.Condition.spring ∧
+            Becoming.Turnover.turned.Forms 0 Becoming.Turnover.Formation.keeper Becoming.Turnover.Condition.pool ∧
+              Becoming.Turnover.turned.Unceasing ∧
+                ¬Becoming.Turnover.turned.Depletes
+                    [Becoming.Turnover.Condition.pool, Becoming.Turnover.Condition.spring] fun t =>
+                    ∃ x, Becoming.Turnover.turned.Arises t x
+Becoming.Lineage.turn_turn : ∀ (b : Bool) (m : Becoming.Lineage.Member),
+  Becoming.Lineage.turn b (Becoming.Lineage.turn b m) = m
+Becoming.Lineage.readings : Becoming.Lineage.one.KeepsActive Becoming.Lineage.web ∧
+  Becoming.Lineage.web.Unceasing ∧ ¬(Becoming.Lineage.web.reidentify Becoming.Lineage.one).Unceasing
+Becoming.Succession.after_after : ∀ (t : Nat) (f : Becoming.Succession.Formation),
+  Becoming.Succession.after t (Becoming.Succession.after t f) = f
+Becoming.Succession.after_drawer : ∀ (t : Nat),
+  Becoming.Succession.after t Becoming.Succession.Formation.drawer = Becoming.Succession.Formation.drawer
+Becoming.Succession.elder_named : ∀ (t : Nat),
+  Becoming.Succession.inherited.requires t Becoming.Succession.Formation.elder () ∧
+    Becoming.Succession.inherited.need t Becoming.Succession.Formation.elder () = 2
+Becoming.Succession.readings : Becoming.Succession.succeeds.KeepsActive Becoming.Succession.web ∧
+  Becoming.Succession.succeeds.KeepsTenure Becoming.Succession.web ∧
+    Becoming.Web.UnderminingAt 0 Becoming.Succession.Formation.drawer ∧
+      (∀ (t : Nat), 1 ≤ t → ¬Becoming.Web.UnderminingAt t Becoming.Succession.Formation.drawer) ∧
+        ∀ (t : Nat), Becoming.Web.UnderminingAt t Becoming.Succession.Formation.drawer

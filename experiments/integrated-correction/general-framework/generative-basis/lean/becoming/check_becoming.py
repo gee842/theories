@@ -33,8 +33,8 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
-        "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Metaethics",
-        "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
+        "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -141,6 +141,19 @@ SCOPE = (
     "infinite family can be active from the start and more without end comes with nothing "
     "arising, and with takers that are never active the same holds under a census; ever more "
     "formations can draw on a condition while the flow records no taking. "
+    "Identity: re-identifying formations one to one at each step leaves every step's levels, "
+    "activity, dependences and drawing unchanged; a renaming preserves the readings that follow "
+    "a formation, and every re-identification preserves support, keeping and breaking, the class "
+    "of every condition, whether activity needs support, being within renewal and breaking at "
+    "each event, what a flow takes and gives, the counts of takers and renewers, so more without "
+    "end, a census of the active formations and that only active formations take, so that under "
+    "a census more without end makes generation unceasing under every re-identification; "
+    "exchanging names at odd steps turns a renewing and a consuming formation into two consuming, "
+    "removes undermining after the first step and makes formations arise without end, arisings "
+    "that deplete no condition; keeping the names of continuing activity makes no arising and "
+    "keeping those of continuing dependences removes no undermining, while succession, joining a "
+    "formation that ends with one that begins, can hide arising in a lineage and make drawing "
+    "after an elder's loss undermine its heir. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "

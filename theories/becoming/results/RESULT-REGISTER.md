@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-102 migrated records: 98 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+103 migrated records: 99 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -60,6 +60,7 @@
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
+| `identity-across-steps` | [跨步的同一：名字不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁，连续之外剩下接续 / Identity across steps: names carry nothing, each step and each condition are fixed by relations, readings that follow a formation depend on who continues whom, and continuity leaves succession](records/identity-across-steps.md) | theorem | recorded-checked |
 | `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |
 | `inherited-structural-copying` | [继承排列改变进一步复制 / Inherited arrangement changes further copying](records/inherited-structural-copying.md) | theorem | recorded-checked |
 | `joining-open-map-factor` | [开放接合映射的保真与唯一共同因子 / Question fidelity and unique factors of open joining maps](records/joining-open-map-factor.md) | theorem | recorded-checked |
