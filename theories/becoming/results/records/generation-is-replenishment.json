@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T09:08:19+00:00",
+  "reviewed_at_utc": "2026-10-09T10:40:04+00:00",
   "claim": {
-    "zh": "以一类关系项读依存网与流。在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么。生成在这里本身承担要求，不经由它带来的取用。给予一个被耗散家族的形成从家族取用，所以一个被耗散的家族中体现成员的生起降低家族的存量，在耗散之下跨某步封闭的不重复家族正是如此；从某步起被耗散的家族中，体现成员不在任意晚的步生起（generation_ceases_on）。所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外交换（generation_opens）。这一交换可以与家族无关：一个汇与不断新的关系项交换时，没有一步被封闭，耗散空成立，生成在两方的家族中复现而没有任何东西流入，汇使家族不封闭（SprayHanding）。家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它汲入：在任意晚的步，有关系项给予家族而从家族之外取用（generation_draws_in）。有限个关系项就是全部时，体现的关系项不在任意晚的步生起。于是 dissipation_ceases 的前提（一个量从不上升，每次生起都使它下降），对被耗散家族中体现成员的生起，由平衡、耗散与体现推出。每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Handing）；持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭，两方的家族每步被围住并汲入燃料（Kindling）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood.not_dissipative）。这些要求跟着水平走，不跟着活动走：任何关系项开始作为条件而在（此前水平为零，此后为正，Web.ComesToStand），在平衡的流中都至少被给予它的新水平，于是补充每个包含它的家族；一个家族的成员在任意晚的步开始作为条件而在时，家族的补充在任意晚的步出现（Flow.Balances.standing_given、Flow.standing_needs_replenishment）。被耗散家族的成员开始作为条件而在，降低家族的存量（Flow.standing_lowers_on），所以从某步起被耗散的家族中，成员不在任意晚的步开始作为条件而在（Flow.standing_ceases_on）；在耗散之下，成员在任意晚的步开始作为条件而在的不重复有限家族在任意晚的步不封闭（Flow.standing_opens），从某步起被围住时汲入（Flow.standing_draws_in），有限个条件就是全部时没有条件在任意晚的步开始作为条件而在（Flow.standing_ceases）。体现的关系项在生起时开始作为条件而在（Embodied.comesToStand），上面关于体现的结论都由此推出，陈述不变。活跃时作为条件而在的关系项，若在某步不作为条件而在而后来活跃，就在其间某步开始作为条件而在（came_to_stand），可以早于活跃很久：种子在休眠时被给予它的水平，此后生起时没有任何给予（Provisioned）；一个始终作为条件而在的关系项不息地醒来，不需要任何给予，它的流中没有任何形成参与（Sleeper）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Read webs and flows with one kind of relatum. In a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive. Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken. Here generation carries the requirement itself, not through the uptake it brings. A formation giving to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers the family's stock, as under dissipation for a family without repetition closed across the step; in a family dissipated on from some step on, embodied members do not arise at arbitrarily late steps (generation_ceases_on). So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it (generation_opens). That exchange need not touch the family: with a sink exchanging with ever new relata, no step is enclosed, dissipation holds vacuously, and generation recurs in the family of two sides with nothing flowing in while the sink opens it (SprayHanding). Where the family is enclosed around from some step on, some finite family without repetition containing it being closed across each step, it draws in: at arbitrarily late steps some relatum gives to the family and takes from beyond it (generation_draws_in). If finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps. The premise of dissipation_ceases (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a family dissipated on, from balance, dissipation and embodiment. Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Handing); when the holder also burns a fresh fuel at every step, the handing goes on under dissipation, and every finite family without repetition containing a side is open at arbitrarily late steps, while the family of the sides, enclosed around at every step, draws in the fuel (Kindling); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); generations giving without taking are not dissipative (Brood.not_dissipative). These requirements follow standing, not activity: any relatum coming to stand (its level zero before a step and positive after, Web.ComesToStand) is given at least its new standing in a balanced flow, so it replenishes every family containing it, and where members of a family come to stand at arbitrarily late steps the family's replenishment recurs at arbitrarily late steps (Flow.Balances.standing_given, Flow.standing_needs_replenishment). A member of a family dissipated on coming to stand lowers the family's stock (Flow.standing_lowers_on), so in a family dissipated on from some step on, members do not come to stand at arbitrarily late steps (Flow.standing_ceases_on); under dissipation, a finite family without repetition whose members come to stand at arbitrarily late steps is open at arbitrarily late steps (Flow.standing_opens) and, enclosed around from some step on, draws in (Flow.standing_draws_in), and if finitely many conditions are all there is, none comes to stand at arbitrarily late steps (Flow.standing_ceases). An embodied relatum comes to stand as it arises (Embodied.comesToStand), and the conclusions above about embodiment all follow from this, their statements unchanged. A relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between (came_to_stand), possibly long before it is active: a seed is given its standing while dormant and arises later with nothing given to it (Provisioned); a relatum standing as a condition throughout wakes without end with nothing given to it, no formation taking part in its flow (Sleeper). No ethical premise and no Lean axiom is used."
+    "zh": "以一类关系项读依存网与流。在平衡的流中，一个体现的关系项至少被给予它生起时的水平：生起前它不活跃，所以水平为零；生起后它活跃，所以水平为正。于是它的生起补充每个包含它的家族；一个家族的体现成员在任意晚的步生起时，家族的补充在任意晚的步出现，不论取用什么。生成在这里本身承担要求，不经由它带来的取用。给予一个被耗散家族的形成从家族取用，所以一个被耗散的家族中体现成员的生起降低家族的存量，在耗散之下跨某步封闭的不重复家族正是如此；从某步起被耗散的家族中，体现成员不在任意晚的步生起（generation_ceases_on）。所以在耗散之下，体现成员在任意晚的步生起的不重复有限家族，从任何一步起都不封闭：在任意晚的步有参与的形成与其外交换（generation_opens）。这一交换可以与家族无关：一个汇与不断新的关系项交换时，没有一步被封闭，耗散空成立，生成在两方的家族中复现而没有任何东西流入，汇使家族不封闭（SprayHanding）。家族从某步起被围住（某个包含它的不重复有限家族跨每步封闭）时，它汲入：在任意晚的步，有关系项给予家族而从家族之外取用（generation_draws_in）。有限个关系项就是全部时，体现的关系项不在任意晚的步生起。于是 dissipation_ceases 的前提（一个量从不上升，每次生起都使它下降），对被耗散家族中体现成员的生起，由平衡、耗散与体现推出。每个前提都必要：两方来回传递一份水平，在两个关系项的封闭世界中体现地、不息地生成，而不耗散（Handing）；持有者每步另燃一份新的燃料时，传递在耗散之下继续，包含一方的每个不重复有限家族在任意晚的步都不封闭，两方的家族每步被围住并汲入燃料（Kindling）；一个活动不是其水平的关系项，在一个关系项的耗散世界中不息地生起（Flicker）；只给予不取用的世代不耗散（Brood.not_dissipative）。这些要求跟着水平的上升走，不跟着活动走：在平衡的流中，任何条件的上升都被给予（Flow.Balances.rise_given），于是补充每个包含它的家族；一个家族的成员在任意晚的步上升时，家族的补充在任意晚的步出现（Flow.rising_needs_replenishment）。开始作为条件而在（此前水平为零，此后为正，Web.ComesToStand）是从零的上升（Web.ComesToStand.rises），至少被给予它的新水平（Flow.Balances.standing_given、Flow.standing_needs_replenishment）；一个条件可以每步上升而从不开始作为条件而在（Growing）。被耗散家族的成员上升，降低家族的存量（Flow.rise_lowers_on、Flow.standing_lowers_on），所以从某步起被耗散的家族中，成员不在任意晚的步上升，也不在任意晚的步开始作为条件而在（Flow.rising_ceases_on、Flow.standing_ceases_on）；在耗散之下，成员在任意晚的步上升的不重复有限家族在任意晚的步不封闭（Flow.rising_opens），从某步起被围住时汲入（Flow.rising_draws_in），有限个条件就是全部时没有条件在任意晚的步上升（Flow.rising_ceases）；开始作为条件而在是其情形（Web.rising_of_coming；Flow.standing_opens、Flow.standing_draws_in、Flow.standing_ceases）。体现的关系项在生起时开始作为条件而在（Embodied.comesToStand），上面关于体现的结论都由此推出，陈述不变。活跃时作为条件而在的关系项，若在某步不作为条件而在而后来活跃，就在其间某步开始作为条件而在（came_to_stand），可以早于活跃很久：种子在休眠时被给予它的水平，此后生起时没有任何给予（Provisioned）；一个始终作为条件而在的关系项不息地醒来，不需要任何给予，它的流中没有任何形成参与（Sleeper）。不用伦理前提，也不用 Lean 公理。",
+    "en": "Read webs and flows with one kind of relatum. In a balanced flow an embodied relatum is given at least the standing it arises with: before it arises it is not active, so its level is zero, and after it is active, so its level is positive. Its arising therefore replenishes every family containing it, and where embodied members of a family arise at arbitrarily late steps, the family's replenishment recurs at arbitrarily late steps, whatever is taken. Here generation carries the requirement itself, not through the uptake it brings. A formation giving to a family dissipated on takes from it, so the arising of an embodied member of a family dissipated on lowers the family's stock, as under dissipation for a family without repetition closed across the step; in a family dissipated on from some step on, embodied members do not arise at arbitrarily late steps (generation_ceases_on). So under dissipation a finite family without repetition in which embodied members arise at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some formation taking part exchanges with a relatum outside it (generation_opens). That exchange need not touch the family: with a sink exchanging with ever new relata, no step is enclosed, dissipation holds vacuously, and generation recurs in the family of two sides with nothing flowing in while the sink opens it (SprayHanding). Where the family is enclosed around from some step on, some finite family without repetition containing it being closed across each step, it draws in: at arbitrarily late steps some relatum gives to the family and takes from beyond it (generation_draws_in). If finitely many relata are all there is, embodied relata do not arise at arbitrarily late steps. The premise of dissipation_ceases (a quantity that never rises and is lowered by every arising) thus follows, for the arisings of embodied members of a family dissipated on, from balance, dissipation and embodiment. Each premise is needed: two sides handing one standing back and forth generate, embodied and without end, in a closed world of two relata that is not dissipative (Handing); when the holder also burns a fresh fuel at every step, the handing goes on under dissipation, and every finite family without repetition containing a side is open at arbitrarily late steps, while the family of the sides, enclosed around at every step, draws in the fuel (Kindling); a relatum whose activity is not its standing arises without end in a dissipative world of one relatum (Flicker); generations giving without taking are not dissipative (Brood.not_dissipative). These requirements follow the rise of standing, not activity: in a balanced flow every rise of a condition is given to (Flow.Balances.rise_given), so it replenishes every family containing it, and where members of a family rise at arbitrarily late steps the family's replenishment recurs at arbitrarily late steps (Flow.rising_needs_replenishment). Coming to stand (the level zero before a step and positive after, Web.ComesToStand) is the rise from nothing (Web.ComesToStand.rises), given at least the new standing (Flow.Balances.standing_given, Flow.standing_needs_replenishment); a condition can rise at every step without ever coming to stand (Growing). A member of a family dissipated on rising lowers the family's stock (Flow.rise_lowers_on, Flow.standing_lowers_on), so in a family dissipated on from some step on, members neither rise nor come to stand at arbitrarily late steps (Flow.rising_ceases_on, Flow.standing_ceases_on); under dissipation, a finite family without repetition whose members rise at arbitrarily late steps is open at arbitrarily late steps (Flow.rising_opens) and, enclosed around from some step on, draws in (Flow.rising_draws_in), and if finitely many conditions are all there is, none rises at arbitrarily late steps (Flow.rising_ceases); coming to stand is a case (Web.rising_of_coming; Flow.standing_opens, Flow.standing_draws_in, Flow.standing_ceases). An embodied relatum comes to stand as it arises (Embodied.comesToStand), and the conclusions above about embodiment all follow from this, their statements unchanged. A relatum standing as a condition while active, absent at some step and active later, came to stand across some step in between (came_to_stand), possibly long before it is active: a seed is given its standing while dormant and arises later with nothing given to it (Provisioned); a relatum standing as a condition throughout wakes without end with nothing given to it, no formation taking part in its flow (Sleeper). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -228,14 +228,14 @@
     "en": "Contains no ethical predicate; the conclusions about embodiment constrain only the arising of embodied relata, and arising that is not embodied is unconstrained; the general conclusions constrain coming to stand, not waking from dormancy (Sleeper); Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied, seed banks and dormancy being stated through came_to_stand, Provisioned and Sleeper; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, its conclusion can be met by exchange unrelated to the family (SprayHanding), and drawing in is stated only for a family enclosed around (generation_draws_in), and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Handing the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T095726.865589Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理，全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 841 项定理／1342 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T095726.865589Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve, all have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 841 theorems/1342 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T104417.218214Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 877 项定理／1387 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T104417.218214Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 877 theorems/1387 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "d1aebf82ae8b39810ae8b0faf168ac4c7e77eabe5fd6dcc9038c12bff74156b4",
+      "sha256": "080472c57bc3d476665a40d4a9eba1d29b0022bee9d463736dbc30e6fc842d91",
       "declarations": [
         "Becoming.Web.Embodied.comesToStand",
         "Becoming.Web.Embodied.coming",
@@ -311,7 +311,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
       "role": "proof",
-      "sha256": "464884d05bd49ada33d7884af1f01a82116d660c4ead8f489a1d59985efd6057",
+      "sha256": "2379b8c4576c6359d782752287456fb9c11b8854503c68a1c2e003351c41b9c2",
       "declarations": [
         "Becoming.Web.came_to_stand",
         "Becoming.Sleeper.web",
@@ -330,7 +330,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "2a25b6c4f65c2fdf675c4b1f80b0a3f68969803e39c295184f15507eb58daff5",
+      "sha256": "55deda2ec588a8920b9065d314f4ea1ec6e17dde440805ddf16301689ada1de5",
       "declarations": [
         "Becoming.Flow.standing_lowers_on",
         "Becoming.Flow.standing_lowers",
@@ -349,13 +349,18 @@
         "Becoming.Frontier.unburnt",
         "Becoming.Frontier.burning",
         "Becoming.Frontier.burns",
-        "Becoming.Frontier.burning_self"
+        "Becoming.Frontier.burning_self",
+        "Becoming.Flow.rise_lowers_on",
+        "Becoming.Flow.rising_ceases_on",
+        "Becoming.Flow.rising_opens",
+        "Becoming.Flow.rising_draws_in",
+        "Becoming.Flow.rising_ceases"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "ebfefc1835983219fbef35ac179e96f60de1f6b566289b7afcda6595b50b5aff",
+      "sha256": "01ef491df2aa009b1739ceaf062c82d7be3cd3d04e9c2d55b97d71260c189d97",
       "declarations": [
         "Becoming.Web.ComesToStand",
         "Becoming.Flow.Balances.standing_given",
@@ -373,7 +378,16 @@
         "Becoming.total_pos_of_mem",
         "Becoming.total_pos",
         "Becoming.Flow.uptake_needs_replenishment",
-        "Becoming.eq_zero_of_not_pos"
+        "Becoming.eq_zero_of_not_pos",
+        "Becoming.Web.ComesToStand.rises",
+        "Becoming.Flow.Balances.rise_given",
+        "Becoming.Flow.Balances.rise_replenishes",
+        "Becoming.Flow.rising_needs_replenishment",
+        "Becoming.Growing.web",
+        "Becoming.Growing.flow",
+        "Becoming.Growing.balances",
+        "Becoming.Growing.growing",
+        "Becoming.Web.rising_of_coming"
       ]
     },
     {
@@ -385,7 +399,8 @@
         "Becoming.Web.Arises",
         "Becoming.Web.Unceasing",
         "Becoming.Web.stock",
-        "Becoming.Web.dissipation_ceases"
+        "Becoming.Web.dissipation_ceases",
+        "Becoming.Web.Rises"
       ]
     },
     {
@@ -415,19 +430,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b124031b7fcf0cf86b5ed984ce66ebe11fe7b941ae41033eea7fc8b83f1e89f8",
+      "sha256": "f46f78fc3969d0b2b1956095b12461cd53c331be0400e572fb68458c2ad6d715",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2ac45b897d628154500f36afdae3cc71312fd888f3280e1c1b793b852bb4288f",
+      "sha256": "4923b25f719e7e3a4b9a4ab467041cbdb7383ca257dab2047fce901b85090ee7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "11075c1e5c525524092ecbdae22c7e600d0661fa9588a981ee9d74682ad2382e",
+      "sha256": "a4bba4082243c093c0bf00f34c53da28781c4527213d5942c79e7f7c7261fbc1",
       "declarations": []
     },
     {
@@ -459,6 +474,11 @@
       "role": "review",
       "sha256": "10f7315ace2daa1fab3e9eb04106c0fb7c44d11d52eb6664771faf4f9bc3cf63",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md",
+      "role": "review",
+      "sha256": "a9c11c3bbcfa9e9f004e07e39f0c7abbbac1d88ad687b86787fe87703a243761"
     }
   ],
   "proof_bindings": [
@@ -535,6 +555,14 @@
     {
       "zh": "2026-10-09：P19 新增 Becoming.Change 之后，合并检查器重跑（20261009T095726.865589Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P19 added Becoming.Change, the consolidated checker was rerun (20261009T095726.865589Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：验证范围重新指向合并检查器回执 20261009T104417.218214Z 与外围回执 20261009T104540.104898Z；按第八次独立审查 L3(b)，写明“每条源声明”的公理报告为空，并记下检查器对 Lean 生成常量的审计。断言不变。",
+      "en": "2026-10-09 P18b: validation scope re-pointed to consolidated receipt 20261009T104417.218214Z and periphery receipt 20261009T104540.104898Z; following the eighth independent review's L3(b), it says every source declaration has an empty axiom report and records the checker's audit of the constants Lean generates. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：按第八次独立审查 L7，要求跟着上升走：在平衡的流中任何上升都被给予（rise_given），补充与耗散的定理对上升陈述（rising_needs_replenishment、rise_lowers_on、rising_ceases_on、rising_opens、rising_draws_in、rising_ceases），开始作为条件而在是从零的上升（ComesToStand.rises），Growing 每步上升而从不开始作为条件而在。原有定理的陈述不变。",
+      "en": "2026-10-09 P18b: following the eighth independent review's L7, the requirement follows the rise: in a balanced flow every rise is given to (rise_given), the replenishment and dissipation theorems are stated for rises (rising_needs_replenishment, rise_lowers_on, rising_ceases_on, rising_opens, rising_draws_in, rising_ceases), coming to stand is the rise from nothing (ComesToStand.rises), and Growing rises at every step without coming to stand. The statements of the earlier theorems are unchanged."
     }
   ]
 }

@@ -14,13 +14,23 @@ step.
   it is active (`Web.Carries`). `Dependent` is exactly the zero reserve
   (`carries_zero`): relaxing it means a positive reserve, not activity outside
   dependence.
-* **A reserve is a held condition.** In a balanced flow, a condition that nothing gives
-  to while its holder is unsupported, and that its holder takes from while active there,
-  carries the holder, its standing being the reserve (`Flow.carries_of_held`). An active
-  formation whose dependences fail has a positive reserve (`Carries.pos`), so a
-  dependence on what it holds, at need one, is met. The same unfolding can then be read
-  with the dependence transformed onto the held condition, under `Dependent`
-  (`Famine.transformed_dependent`).
+* **A reserve can be a held condition.** In a balanced flow, a condition that nothing
+  gives to while its holder is unsupported, and that is taken from, by whatever takes
+  part, while the holder is active there, carries the holder, its standing being the
+  reserve (`Flow.carries_of_held`). Where the holder itself takes part and takes from
+  it, as a fox burns its fat, the reserve is the holder's own use
+  (`Flow.carries_of_own`). Where no held condition is represented, the reserve is
+  supplied: no condition of the seeds' webs carries them (`Seed.no_held`,
+  `Viable.no_held`).
+* **Lag as dependence moved.** An active formation whose dependences fail has a positive
+  reserve (`Carries.pos`). Where a held condition carries the formations, the unfolding
+  can be read with each unsupported dependence moved onto the held condition at need
+  one, keeping levels, activity and drawing, and so read it is `Dependent` by
+  construction (`Web.redirect`, `Web.redirect_dependent`, and
+  `Famine.transformed_dependent`). This re-describes the reserve and adds no fact about
+  the unfolding. The two readings differ in which events undermine: the fox's event at
+  step one undermines as published and not when its dependence is moved onto its fat
+  (`Famine.living_differs`), so the choice of reading bears on the stepwise valuation.
 * **A reserve defers the end and does not escape it.** A formation unsupported from some
   step on is active only finitely often (`Carries.active_finitely`), and over any stretch
   at most as often as its reserve at the start (`Carries.lasts`, `Carries.lasts_within`).
@@ -39,12 +49,15 @@ step.
   it arises (`Becoming.Roles`). A relatum that stands while it is active, and did not
   stand at some earlier step, came to stand across some step in between, perhaps long
   before it is active (`came_to_stand`): a seed is given its standing while dormant and
-  arises later with nothing given to it (`Provisioned`). Waking from dormancy is arising without coming to stand, and nothing
-  need be given to it, though the relatum stands as a condition throughout (`Sleeper`).
+  arises later with nothing given to it (`Provisioned`). Waking from dormancy is arising
+  without coming to stand, and nothing need be given to it, though the relatum stands as
+  a condition throughout (`Sleeper`).
 
 A reserve, like `Dependent`, is a premise supplied by the representation; which
-condition a formation holds is supplied by the application. That what is held is finite
-is the physical content. No ethical predicate, ranking or axiom occurs.
+condition a formation holds is supplied by the application, and where one is held,
+which reading of the dependence is used is a correspondence premise bearing on the
+valuation. That what is held is finite is the physical content. No ethical predicate,
+ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -178,15 +191,15 @@ theorem Carries.consumed_lasts (carries : W.Carries r) {T : Nat} {g : F} {c : C}
 
 end Web
 
-/-! ## A reserve is a held condition -/
+/-! ## A reserve can be a held condition -/
 
 namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
 
 /-- In a balanced flow, a condition that nothing gives to while its holder is unsupported,
-and that its holder takes from while active there, carries the holder: its standing is the
-holder's reserve. -/
+and that is taken from, by whatever takes part, while the holder is active there, carries
+the holder: its standing is the holder's reserve. -/
 theorem carries_of_held (balances : L.Balances W) (hold : F → C)
     (unreplenished : ∀ t f, ¬ W.Supported t f → L.given t (hold f) = 0)
     (drawn : ∀ t f, ¬ W.Supported t f → W.active t f → 0 < L.taken t (hold f)) :
@@ -199,7 +212,57 @@ theorem carries_of_held (balances : L.Balances W) (hold : F → C)
      fun active => Nat.lt_of_lt_of_le
        (Nat.lt_add_of_pos_right (drawn t f unsupported active)) (Nat.le_of_eq balance)⟩
 
+/-- Where the holder itself takes part and takes from what it holds at each step at which
+it is unsupported and active, the held condition carries it: the holder's own use. -/
+theorem carries_of_own (balances : L.Balances W) (hold : F → C)
+    (unreplenished : ∀ t f, ¬ W.Supported t f → L.given t (hold f) = 0)
+    (takes : ∀ t f, ¬ W.Supported t f → W.active t f →
+      f ∈ L.present t ∧ 0 < L.take t f (hold f)) :
+    W.Carries fun t f => W.level t (hold f) :=
+  carries_of_held balances hold unreplenished fun t f unsupported active =>
+    total_pos_of_mem (takes t f unsupported active).1 (takes t f unsupported active).2
+
 end Flow
+
+/-! ## Dependence moved onto the held condition -/
+
+namespace Web
+
+variable (W : Web F C) [∀ t f, Decidable (W.Supported t f)]
+
+/-- The unfolding read with each formation's dependence, at each step at which it is not
+supported, moved onto the condition it holds, at need one. -/
+def redirect (hold : F → C) : Web F C :=
+  { W with
+    requires := fun t f c => if W.Supported t f then W.requires t f c else c = hold f
+    need := fun t f c => if W.Supported t f then W.need t f c else 1 }
+
+variable {W}
+
+/-- Levels, activity and drawing are those of the unfolding. -/
+theorem redirect_same (hold : F → C) :
+    (W.redirect hold).level = W.level ∧ (W.redirect hold).active = W.active ∧
+      (W.redirect hold).draws = W.draws :=
+  ⟨rfl, rfl, rfl⟩
+
+/-- Wherever a held condition carries the formations, the redirected reading is
+`Dependent` by construction: lag is dependence moved onto the held condition. -/
+theorem redirect_dependent {hold : F → C} (carries : W.Carries fun t f => W.level t (hold f)) :
+    (W.redirect hold).Dependent :=
+  fun t f active c depends =>
+    if supported : W.Supported t f then
+      Nat.le_trans (Nat.le_of_eq (if_pos supported :
+          (W.redirect hold).need t f c = W.need t f c))
+        (supported c (Eq.mp (if_pos supported :
+          (W.redirect hold).requires t f c = W.requires t f c) depends))
+    else
+      Nat.le_trans (Nat.le_of_eq (if_neg supported : (W.redirect hold).need t f c = 1))
+        (Eq.subst (motive := fun y => 1 ≤ W.level t y)
+          (Eq.mp (if_neg supported : (W.redirect hold).requires t f c = (c = hold f))
+            depends).symm
+          (carries.pos active supported))
+
+end Web
 
 /-! ## One kind of relatum -/
 
@@ -289,6 +352,11 @@ step zero. -/
 theorem not_decays : ¬ web.Decays fun t _ => reserve t :=
   fun decays => Nat.lt_irrefl 2 (decays 0 () (dark 0) (Nat.succ_pos 1))
 
+/-- The reserve is supplied, not held: every level of the web is zero, and the seed is
+active and unsupported at step one, so no condition of the web carries it. -/
+theorem no_held (hold : Unit → Unit) : ¬ web.Carries fun t f => web.level t (hold f) :=
+  fun carries => Nat.lt_irrefl 0 (carries.pos (t := 1) (f := ()) Nat.zero_lt_one (dark 1))
+
 end Seed
 
 namespace Viable
@@ -336,6 +404,11 @@ theorem viable : ¬ web.Dependent ∧ web.Carries (fun t _ => viability t) ∧
    ⟨fun awake => Nat.succ_ne_self 1 awake.symm, rfl⟩,
    fun t awake => Nat.ne_of_gt (Nat.lt_of_lt_of_le (Nat.lt_succ_self 2) (Nat.le_add_left 3 t))
      awake⟩
+
+/-- Its viability is supplied, not held: no condition of the web, all at zero, carries the
+seed, active and unsupported at step two. -/
+theorem no_held (hold : Unit → Unit) : ¬ web.Carries fun t f => web.level t (hold f) :=
+  fun carries => Nat.lt_irrefl 0 (carries.pos (t := 2) (f := ()) rfl (dark 2))
 
 end Viable
 
@@ -427,17 +500,17 @@ theorem fed : web.Supported 0 .fox :=
     (Nat.le_refl 1)
 
 /-- The fat carries the fox: the flow balances, nothing gives to the fat, and the fox takes
-from it at each unsupported active step. -/
+part and burns it at each unsupported active step. -/
 theorem carries : web.Carries fun t x => web.level t (hold x) :=
-  Flow.carries_of_held balances hold (fun _ _ _ => total_zero _) fun t x unsupported active =>
+  Flow.carries_of_own balances hold (fun _ _ _ => total_zero _) fun t x unsupported active =>
     match x, t, unsupported, active with
     | .hare, _, unsupported, _ =>
       absurd (supported_of_ne_fox .hare fun same => nomatch same) unsupported
     | .fat, _, unsupported, _ =>
       absurd (supported_of_ne_fox .fat fun same => nomatch same) unsupported
     | .fox, 0, unsupported, _ => absurd fed unsupported
-    | .fox, 1, _, _ => Nat.zero_lt_one
-    | .fox, 2, _, _ => Nat.zero_lt_one
+    | .fox, 1, _, _ => ⟨.head [], Nat.zero_lt_one⟩
+    | .fox, 2, _, _ => ⟨.head [], Nat.zero_lt_one⟩
     | .fox, _ + 3, _, active => absurd active (Nat.not_lt_of_le (Nat.le_add_left 3 _))
 
 /-- The hare is embodied. -/
@@ -454,8 +527,8 @@ hare is gone. -/
 def transformed : Web Relatum Relatum :=
   { web with requires := fun t g y => g = .fox ∧ y = source t }
 
-/-- Read so, activity needs support: the fox's lag is its dependence transformed onto the
-condition it holds. -/
+/-- Read so, activity needs support, as `Web.redirect_dependent` gives wherever a held
+condition carries the formations. -/
 theorem transformed_dependent : transformed.Dependent
   | 0, .fox, _ => fun _ depends => Eq.subst (motive := fun y => 1 ≤ transformed.level 0 y)
       depends.2.symm (Nat.le_refl 1)
@@ -469,10 +542,32 @@ theorem transformed_dependent : transformed.Dependent
 
 instance decActive (t : Nat) : Decidable (web.active t .fox) := Nat.decLt t 3
 
+/-- As published, the fox's event at step one undermines: it draws on the hare, its
+dependence on which it met at step zero, and the hare is below need after the step. -/
+theorem undermines_one : web.UnderminingAt 1 .fox :=
+  ⟨.hare, ⟨rfl, .inl rfl⟩, .fox, ⟨rfl, rfl⟩,
+   ⟨0, Nat.zero_le 1, fun _ _ _ => ⟨rfl, rfl⟩, Nat.le_refl 1, Nat.zero_lt_one⟩,
+   Nat.zero_lt_one⟩
+
+/-- With its dependence moved onto its fat, the same event does not undermine: the fat
+stands at one after the step, which meets the need. -/
+theorem transformed_not_undermining : ¬ transformed.UnderminingAt 1 .fox :=
+  fun ⟨_, _, _, ⟨_, same⟩, _, below⟩ =>
+    Nat.lt_irrefl 1 (Eq.subst (motive := fun y => transformed.level 2 y < 1) same below)
+
+/-- The two readings differ in which events are living in the stepwise reading (active
+and not undermining): the fox is active at step one under both, and its event there
+undermines only as published. -/
+theorem living_differs :
+    (web.active 1 .fox ∧ web.UnderminingAt 1 .fox) ∧
+    (transformed.active 1 .fox ∧ ¬ transformed.UnderminingAt 1 .fox) :=
+  ⟨⟨Nat.lt_succ_of_lt (Nat.lt_succ_self 1), undermines_one⟩,
+   ⟨Nat.lt_succ_of_lt (Nat.lt_succ_self 1), transformed_not_undermining⟩⟩
+
 /-- Lagged coextinction: the fox depends on the embodied hare, which ends after step zero.
 The fox is not `Dependent`; its fat carries it, and it outlives the hare by exactly the
-two units of its fat. Read with its dependence moved onto the fat, the same unfolding is
-`Dependent`. -/
+two units of its fat. Read with its dependence moved onto the fat, with the same levels,
+activity, drawing and flow, it is `Dependent`. -/
 theorem famine : ¬ web.Dependent ∧ web.Carries (fun t x => web.level t (hold x)) ∧
     web.Embodied .hare ∧ (∀ t, 1 ≤ t → ¬ web.active t .hare) ∧
     (∀ t, 1 ≤ t → web.requires t .fox .hare ∧ 0 < web.need t .fox .hare) ∧

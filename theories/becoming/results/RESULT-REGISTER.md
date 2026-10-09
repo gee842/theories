@@ -75,7 +75,7 @@
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
 | `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
-| `life-as-condition-of-life` | [形成与条件是一个关系项的两种角色：生作为生的条件，体现的关系项经由另一个活跃者的给予而生起 / Formations and conditions are two roles of one relatum: life as a condition of life, and embodied arising through another's giving](records/life-as-condition-of-life.md) | theorem | recorded-checked |
+| `life-as-condition-of-life` | [回答“生作为生的条件”：形成与条件是一个关系项的两种角色，体现的关系项作为条件，并经由另一个活跃者的给予而生起 / Answering ‘life as a condition of life’: formations and conditions are two roles of one relatum, an embodied relatum is a condition, and it arises through another's giving](records/life-as-condition-of-life.md) | theorem | recorded-checked |
 | `living-on-and-descent` | [以之为生与世系使关系项直接相关：一类读法提供的两种 related / Living on and descent relate relata directly: two readings of related that the one-kind reading supplies](records/living-on-and-descent.md) | theorem | recorded-checked |
 | `market-finite-support-obstruction` | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](records/market-finite-support-obstruction.md) | theorem | recorded-checked |
 | `market-partial-correction-boundary` | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](records/market-partial-correction-boundary.md) | theorem | recorded-checked |
@@ -104,7 +104,7 @@
 | `relational-reading-comparison` | [以关系读生成：比较原则把消耗型形成排在其不发生之下 / Read relationally, comparison ranks consuming formation below its absence](records/relational-reading-comparison.md) | theorem | recorded-checked |
 | `relational-renewal-classification` | [参与关系中的更新与消耗：关系性分类 / Renewing and consuming as a relation to participated conditions](records/relational-renewal-classification.md) | theorem | recorded-checked |
 | `renewing-consuming-formation` | [更新与消耗的形成：一个磨损规律类中的动力学区分 / Renewing and consuming formation: a dynamical distinction in one wear-law class](records/renewing-consuming-formation.md) | theorem | recorded-checked |
-| `reserve-defers-ending` | [储备推迟终结而不逃脱终结：Dependent 是零储备，储备是所持的条件 / A reserve defers the end and does not escape it: Dependent is the zero reserve, and a reserve is a held condition](records/reserve-defers-ending.md) | theorem | recorded-checked |
+| `reserve-defers-ending` | [储备推迟终结而不逃脱终结：Dependent 是零储备，储备可以是所持的条件 / A reserve defers the end and does not escape it: Dependent is the zero reserve, and a reserve can be a held condition](records/reserve-defers-ending.md) | theorem | recorded-checked |
 | `reserved-shutdown-during-recovery` | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](records/reserved-shutdown-during-recovery.md) | theorem | recorded-checked |
 | `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |

@@ -200,14 +200,14 @@
     "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family (SprayHanding), drawing in is stated only for a family enclosed around (taking_draws_in), which needs each step's exchange to lie within finitely many conditions; gives_less needs the family without repetition (Lone.repeated_family), and giving to a family not dissipated on need not take (Frontier.gives_without_taking); the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T095726.865589Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 841 项定理／1342 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T095726.865589Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 841 theorems/1342 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T104417.218214Z）：Becoming.Dissipation 55 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 属于 generation-is-replenishment）；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 877 项定理／1387 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T104417.218214Z): all 55 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives belongs to generation-is-replenishment); the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 877 theorems/1387 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "2a25b6c4f65c2fdf675c4b1f80b0a3f68969803e39c295184f15507eb58daff5",
+      "sha256": "55deda2ec588a8920b9065d314f4ea1ec6e17dde440805ddf16301689ada1de5",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
@@ -307,7 +307,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "ebfefc1835983219fbef35ac179e96f60de1f6b566289b7afcda6595b50b5aff",
+      "sha256": "01ef491df2aa009b1739ceaf062c82d7be3cd3d04e9c2d55b97d71260c189d97",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -370,25 +370,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "counterexample",
-      "sha256": "d1aebf82ae8b39810ae8b0faf168ac4c7e77eabe5fd6dcc9038c12bff74156b4",
+      "sha256": "080472c57bc3d476665a40d4a9eba1d29b0022bee9d463736dbc30e6fc842d91",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b124031b7fcf0cf86b5ed984ce66ebe11fe7b941ae41033eea7fc8b83f1e89f8",
+      "sha256": "f46f78fc3969d0b2b1956095b12461cd53c331be0400e572fb68458c2ad6d715",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2ac45b897d628154500f36afdae3cc71312fd888f3280e1c1b793b852bb4288f",
+      "sha256": "4923b25f719e7e3a4b9a4ab467041cbdb7383ca257dab2047fce901b85090ee7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "11075c1e5c525524092ecbdae22c7e600d0661fa9588a981ee9d74682ad2382e",
+      "sha256": "a4bba4082243c093c0bf00f34c53da28781c4527213d5942c79e7f7c7261fbc1",
       "declarations": []
     },
     {
@@ -495,6 +495,10 @@
     {
       "zh": "2026-10-09：P19 新增 Becoming.Change 之后，合并检查器重跑（20261009T095726.865589Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P19 added Becoming.Change, the consolidated checker was rerun (20261009T095726.865589Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：验证范围重新指向合并检查器回执 20261009T104417.218214Z 与外围回执 20261009T104540.104898Z；按第八次独立审查 L3(b)，写明“每条源声明”的公理报告为空，并记下检查器对 Lean 生成常量的审计。断言不变。",
+      "en": "2026-10-09 P18b: validation scope re-pointed to consolidated receipt 20261009T104417.218214Z and periphery receipt 20261009T104540.104898Z; following the eighth independent review's L3(b), it says every source declaration has an empty axiom report and records the checker's audit of the constants Lean generates. The claim is unchanged."
     }
   ]
 }

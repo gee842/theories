@@ -798,13 +798,13 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Consumer input / 下游输入:** 交互之外，以之为生与世系直接关联关系项。 / Beyond interaction, living on and descent relate relata directly.
 
-**Retained conditions / 保留条件:** 一类读法；正需要的依存；正的给予与开始作为条件而在。 / The one-kind reading; dependence at a positive need; a positive gift and coming to stand.
+**Retained conditions / 保留条件:** 一类读法；正需要的依存；参与该步的形成正的给予与开始作为条件而在。 / The one-kind reading; dependence at a positive need; a positive gift from a formation taking part and coming to stand.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
 
 ## living-on-and-descent ← life-as-condition-of-life
 
-`formal-reuse` — 复用一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood 与 Mutualism.apart；回答其下一步“直接读出体现的估值”。 / Reuses the one-kind reading, Embodied, arises_given, active_of_bearing, relabel, Brood and Mutualism.apart; answers its next step ‘a valuation reading embodiment directly’.
+`formal-reuse` — 复用一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood 与 Mutualism.apart；以更宽的形式回答其下一步“直接读出体现的估值”：两种关系的定义不含体现。 / Reuses the one-kind reading, Embodied, arises_given, active_of_bearing, relabel, Brood and Mutualism.apart; answers its next step ‘a valuation reading embodiment directly’ in a broader form: neither relation's definition mentions embodiment.
 
 **Producer output / 上游输出:** 体现的关系项只经由另一个活跃形成的给予而生起；只依存于对方的蜂与花在两种估值下不相关。 / An embodied relatum arises only as another active formation gives to it; a bee and a flower depending only on each other are unrelated under both valuations.
 
@@ -820,7 +820,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 开始作为条件而在需要给予；体现的关系项在生起时开始作为条件而在。 / Coming to stand needs giving; an embodied relatum comes to stand as it arises.
 
-**Consumer input / 下游输入:** 世系：给予而使之开始作为条件而在。 / Descent: giving as the relatum comes to stand.
+**Consumer input / 下游输入:** 世系：参与该步的形成给予，关系项跨该步开始作为条件而在。 / Descent: a formation taking part gives as the relatum comes to stand.
 
 **Retained conditions / 保留条件:** 平衡的流。 / A balanced flow.
 

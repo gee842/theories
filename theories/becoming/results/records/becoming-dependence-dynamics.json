@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T00:55:55+00:00",
+  "reviewed_at_utc": "2026-10-09T10:40:04+00:00",
   "claim": {
     "zh": "让一个形成依存于哪些条件、所需多少、汲取哪些条件都成为配置的可观测量，任一运行就读出为一个依存网。跨每一步，一个依存被维持、断裂、形成或消解；依存不变时，这一读法恰好复原静态的更新／消耗分类。变化发生在步上：某步成立、后来不成立的依存在其间某步消解，反之在某步形成（不用排中律陈述）。每个被满足的依存跨每一步恰为维持或断裂之一；更新与消耗仍互斥。在形成只在其当时所依存的条件支持它处活跃的依存网（Dependent）中，定理把损失之后的三种结局联系起来，它们既不穷尽也不互斥：以不弱于先前的依存继续活跃，意味着条件已恢复；无回程的损失之后仍活跃的形成，必已转化其依存；依存不变时则终止。三者都实际可能：同一过程、同一配置下，三次运行都在第一步断裂同一依存（按步首约定读），此后分别终止、转化与恢复。断裂的读法不决定后继配置；在这一见证中，构成断裂的那一步动作选定结局。不用伦理前提，也不用 Lean 公理。",
     "en": "Let which conditions a formation depends on, at what level, and which it draws on be observables of the configuration; every run then reads as a web of dependence. Across each step a dependence is kept, broken, formed or dissolved; with constant dependence this reading recovers the static renewing/consuming classification exactly. Change is made at a step: a dependence that holds and later does not dissolved across some step between, and one that comes to hold formed across one (stated without excluded middle). Every met dependence is exactly one of kept or broken across each step, and renewal and consumption remain exclusive. In a web where a formation is active only where the conditions it then depends on support it (Dependent), theorems connect three outcomes of a loss, which are neither exhaustive nor exclusive: continuing with an unweakened dependence means the condition was restored; a formation still active after a loss without return has transformed its dependence; with fixed dependence it ends. All three occur: in one process from one configuration, three runs break the same dependence at the first step (read under the step-start convention) and then end, transform and restore. The reading of the break does not fix the next configuration; in this witness the move that makes the break selects the outcome. No ethical premise and no Lean axiom is used."
@@ -172,8 +172,8 @@
     "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags; it is the zero reserve, and with a reserve these outcomes are deferred, not removed, see reserve-defers-ending. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T095726.865589Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 841 项定理／1342 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T095726.865589Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 841 theorems/1342 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T104417.218214Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 877 项定理／1387 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T104417.218214Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 877 theorems/1387 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -245,19 +245,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b124031b7fcf0cf86b5ed984ce66ebe11fe7b941ae41033eea7fc8b83f1e89f8",
+      "sha256": "f46f78fc3969d0b2b1956095b12461cd53c331be0400e572fb68458c2ad6d715",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2ac45b897d628154500f36afdae3cc71312fd888f3280e1c1b793b852bb4288f",
+      "sha256": "4923b25f719e7e3a4b9a4ab467041cbdb7383ca257dab2047fce901b85090ee7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "11075c1e5c525524092ecbdae22c7e600d0661fa9588a981ee9d74682ad2382e",
+      "sha256": "a4bba4082243c093c0bf00f34c53da28781c4527213d5942c79e7f7c7261fbc1",
       "declarations": []
     },
     {
@@ -392,6 +392,14 @@
     {
       "zh": "2026-10-09：P19 新增 Becoming.Change 之后，合并检查器重跑（20261009T095726.865589Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P19 added Becoming.Change, the consolidated checker was rerun (20261009T095726.865589Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：验证范围重新指向合并检查器回执 20261009T104417.218214Z 与外围回执 20261009T104540.104898Z；按第八次独立审查 L3(b)，写明“每条源声明”的公理报告为空，并记下检查器对 Lean 生成常量的审计。断言不变。",
+      "en": "2026-10-09 P18b: validation scope re-pointed to consolidated receipt 20261009T104417.218214Z and periphery receipt 20261009T104540.104898Z; following the eighth independent review's L3(b), it says every source declaration has an empty axiom report and records the checker's audit of the constants Lean generates. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：按第八次独立审查 L3(f)，作者复核 P17 改动的局限与下一步，内容不变，审查时间随之刷新（约定见 _process/RESULT-WORKFLOW.md）。",
+      "en": "2026-10-09 P18b: following the eighth independent review's L3(f), the author re-reviewed the limitations and next step changed in P17; the content is unchanged and the review time is refreshed (convention in _process/RESULT-WORKFLOW.md)."
     }
   ]
 }

@@ -5,11 +5,14 @@ The package names modules by path (`Becoming/Frame.lean` is `Becoming.Frame`); o
 modules are found by file name under the Lean root. The checker resolves the import
 closure, requires every inherited module's current bytes to match a passed receipt,
 compiles the closure in dependency order with Lean 4.29.1 and audits the axioms of
-every declaration. Inherited reports are recorded, not changed.
+every source declaration. Inherited reports are recorded, not changed.
 
 The core is pure: its import closure is exactly the foundation and the core modules,
-every declaration in that closure has an empty axiom report, and the closure compiles
-from Lean's prelude alone (the foundation's `import Std` line is removed for that run).
+every source declaration in that closure has an empty axiom report, and the closure
+compiles from Lean's prelude alone (the foundation's `import Std` line is removed for
+that run). The constants Lean generates in the closure are audited as well: the only
+ones depending on an axiom are the injectivity lemmas of constructors with fields
+(`injEq`), on `propext`, which no source declaration uses; the receipt lists them.
 The bridge imports existing modules to show that their interfaces are the core's;
 nothing in the core imports it, and its declarations also have empty axiom reports.
 """
@@ -135,10 +138,12 @@ SCOPE = (
     "meet these premises with a level that never rises, so that arising there does not deplete "
     "the family in the net sense; the unceasing bloom is not more without end; and in a closed "
     "cycle each formation gives back what it takes, the total never changes, and generation is "
-    "more without end with as many renewers as takers; a condition coming to stand, its level "
-    "zero before a step and positive after, is given at least its new standing, so it "
-    "replenishes every family containing it, and where members of a family come to stand at "
-    "arbitrarily late steps its replenishment recurs, whatever is taken. "
+    "more without end with as many renewers as takers; every rise of a condition is given to, "
+    "so a rising condition replenishes every family containing it, and where members of a "
+    "family rise at arbitrarily late steps its replenishment recurs, whatever is taken; a "
+    "condition coming to stand, its level zero before a step and positive after, rises and is "
+    "given at least its new standing, and a condition can rise at every step without coming "
+    "to stand. "
     "Change: with no premise about an unfolding, a determination comes to be across a step where "
     "it fails before and holds after, and ceases to be where it holds before and fails after; a "
     "formation arising and ceasing, a dependence forming and dissolving and a condition coming to "
@@ -236,11 +241,11 @@ SCOPE = (
     "depending on the pool under a census as well, every step being enclosed and the pool drawing "
     "in the fuel; the flows of the earlier witnesses in which "
     "taking recurs on one condition are not dissipative; a member of a family dissipated on "
-    "coming to stand lowers its stock, so members of a family dissipated on from some step on do "
-    "not come to stand at arbitrarily late steps; under dissipation a finite family without "
-    "repetition whose members come to stand at arbitrarily late steps is open at arbitrarily "
-    "late steps and, enclosed around from some step on, draws in, and with finitely many "
-    "conditions in all none comes to stand at arbitrarily late steps. "
+    "rising, as in coming to stand, lowers its stock, so members of a family dissipated on from "
+    "some step on neither rise nor come to stand at arbitrarily late steps; under dissipation a finite family without "
+    "repetition whose members rise, as in coming to stand, at arbitrarily late steps is open at "
+    "arbitrarily late steps and, enclosed around from some step on, draws in, and with finitely "
+    "many conditions in all none rises at arbitrarily late steps. "
     "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
     "support, dependence, renewal, consumption, the classes of formations, undermining, living "
     "events, arising, unceasing generation and a census, and what is taken and given, balance, "
@@ -278,8 +283,13 @@ SCOPE = (
     "Reserve: a reserve does not rise across a step at which its formation is unsupported and "
     "falls across each such step at which the formation is active; the zero reserve is exactly "
     "the premise that activity needs support, a condition in a balanced flow given nothing while "
-    "its holder is unsupported and taken from while the holder is active there is a reserve, and "
-    "an active formation whose dependences fail has a positive one; a formation unsupported from "
+    "its holder is unsupported and taken from, by whatever takes part, while the holder is active "
+    "there is a reserve, as it is where the holder itself takes part and takes from it, while "
+    "the supplied reserves of the dormant seeds are held by no condition of their webs, and an "
+    "active formation whose dependences fail has a positive reserve, so where a held condition "
+    "carries the formations, moving each unsupported dependence onto it at need one keeps "
+    "levels, activity and drawing and meets the premise that activity needs support by "
+    "construction; a formation unsupported from "
     "some step on is active only finitely often, over any stretch at most as often as its "
     "reserve at the start, and arises only finitely often, so after a loss without return, and "
     "after the end of an embodied relatum it depends on at a positive need, it is active beyond "
@@ -290,7 +300,8 @@ SCOPE = (
     "between; a seed waking twice in the dark on "
     "its reserve, a seed waking once before its viability is spent and a fox outliving the hare "
     "by its fat attain these bounds, and the fox read with its dependence "
-    "moved onto its fat meets the premise that activity needs support; a seed given its "
+    "moved onto its fat meets the premise that activity needs support, its event at step one "
+    "then not undermining, as it is under the published reading; a seed given its "
     "standing while dormant arises later with nothing given to it, and a relatum standing "
     "throughout wakes without end with nothing given to it, nothing taking part in its flow. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
@@ -347,10 +358,12 @@ SCOPE = (
     "connection of both valuations. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and a relatum "
-    "given to at a step across which it comes to stand descends from the formation that gives "
-    "to it, descent relating every event of the two; living on, like interaction, needs a "
-    "dependence that can fail, so under the premise that activity needs support an active "
-    "formation lives only on an embodied relatum active at that step; under N_rel valuing an "
+    "given to at a step across which it comes to stand descends from the formation taking part "
+    "in that step that gives to it, descent relating every event of the two, while a gift entry "
+    "of a formation taking no part makes no descent; living on, like interaction, needs a "
+    "dependence that can fail, so under the premise that activity needs support the relatum an "
+    "active formation lives on stands at that step and, if embodied, is active there, while a "
+    "dormant relatum standing while asleep can be lived on; under N_rel valuing an "
     "event that lives on a relatum reaches that relatum's living events and conversely, and "
     "valuing any event of a formation reaches the living events of the relata descending from "
     "it and conversely; in a balanced flow in which only active formations give, an embodied "
@@ -374,6 +387,25 @@ SCOPE = (
     "results hold on every frame. A countermodel shows that L is substantive: a response with one "
     "better and one worse outcome is comparable in neither direction."
 )
+
+
+# Every constant of the core closure, generated ones included, with the axioms it uses.
+ENVIRONMENT_AUDIT = """import Lean
+{imports}
+open Lean Elab Command
+
+#eval show CommandElabM Unit from do
+  let env ← getEnv
+  for m in [{modules}] do
+    let some index := env.getModuleIdx? m | throwError m!"no module {{m}}"
+    let mut count := 0
+    for (n, _) in env.constants.map₁.toList do
+      if env.getModuleIdxFor? n == some index then
+        count := count + 1
+        let axioms ← liftCoreM <| Lean.collectAxioms n
+        if axioms.size > 0 then logInfo m!"AXIOMS {{n}} {{axioms.toList}}"
+    logInfo m!"CONSTANTS {{m}} {{count}}"
+"""
 
 
 # Directories holding retained runs, frozen copies and development attempts.
@@ -601,6 +633,23 @@ def main():
                     "declarations": registry[name], "axiom_dependencies": dependencies,
                     "kernel_checked": True,
                 })
+            # Constants Lean generates are not source declarations; audit them as well.
+            environment = ENVIRONMENT_AUDIT.format(
+                imports="\n".join("import " + name for name in core_closure),
+                modules=", ".join("`" + name for name in core_closure))
+            (work / "EnvironmentAudit.lean").write_text(environment)
+            (retained / "EnvironmentAudit.lean").write_text(environment)
+            output = run(["EnvironmentAudit.lean"], "EnvironmentAudit.log")
+            constants = {m: int(n) for m, n in re.findall(r"CONSTANTS (\S+) (\d+)", output)}
+            assert sorted(constants) == sorted(core_closure), (constants, core_closure)
+            generated = {n: [a.strip() for a in axs.split(",") if a.strip()]
+                         for n, axs in re.findall(r"AXIOMS (\S+) \[([^]]*)\]", output)}
+            sources_named = {item["name"] for name in core_closure for item in registry[name]}
+            for full, axioms in generated.items():
+                assert full.endswith(".injEq") and axioms == ["propext"], (full, axioms)
+                assert full not in sources_named, full
+            receipt["core_closure_constants"] = constants
+            receipt["generated_axiom_dependencies"] = generated
             (work / "Controls.lean").write_text(CONTROLS)
             (retained / "Controls.lean").write_text(CONTROLS)
             run(["Controls.lean"], "Controls.log")
@@ -645,6 +694,7 @@ def main():
                                for aa in r["axiom_dependencies"].values() for a in aa}),
         "spine_theorems": {r["module"]: r["theorems"] for r in spine},
         "spine_declaration_audits": sum(len(r["declarations"]) for r in spine),
+        "generated_with_axioms": len(receipt.get("generated_axiom_dependencies", {})),
         "inherited_modules": len(records) - len(spine),
         "inherited_axioms": sorted({a for r in records if not r["spine"]
                                     for aa in r["axiom_dependencies"].values() for a in aa}),

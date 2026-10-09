@@ -1046,15 +1046,15 @@ Integration: 回答第四次审查 H14；§14、§15 与 §17 中“形成与条
 
 - **两类嵌入一类（P16b 更正）。** 以两类陈述的列出的读法，以一类关系项读时都不变，两种估值的连通也不变（`roles_*`）；`Acting`、`Taking`、普查、present 不重复与耗散也不变（`roles_acting`、`roles_taking`、`roles_census`、`roles_distinct`、`roles_dissipative`）。两类读法中曾活跃的形成既不体现也不承担自身（`roles_not_embodied`、`roles_not_selfBearing`）。一类读法另需一个对应：哪个条件就是哪个形成。它由共同的索引给出，是表示的前提，两类读法检查不到它：把条件一侧到上地重新标号，`Dependent`、侵蚀、living 与两种估值的连通都不变，而体现与承担自身改变（`relabel_dependent`、`relabel_undermining`、`relabel_alive`、`relabel_valuation_connected`、`relabel_interaction_connected`、`Mutualism.apart_relabelled`、`Wilting.relabelled_not_embodied`）。体现与承担自身是在这一对应下的读法；两类的表示省略的是形成与条件的同一对应。原文写“所以两类的表示没有引入独立的本体”“它省略的正是体现”，把所给的对应当作了结果，与 §19 的 I7 是同一模式。
 - **生作为生的条件。** 在活动需要支持（`Dependent`）之下，依存于体现关系项的形成只在它活跃时活跃，活动沿依存链传递，一个关系项的终结终结每个依存链到达它的形成（`coextinct`）。在生态中，这是专食者与宿主、寄生者与寄主的共灭；种子库、储备与休眠被 `Dependent` 排除，在它们之下共灭不必成立（P17 补充：`Dependent` 是零储备，有储备时共灭推迟而不消失，见 §24）。
-- **经由另一个活跃者的给予而生起（P16b 更正，原题“生由生给予”）。** 在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`arises_given`）。定理不要求给予它的形成体现、承担自身或依存于任何东西：一个不体现、不依存的太阳可以是唯一给予种子的关系项（`SunSeed`）（P16c 用语，原文“给予者”）。所以它说的是一个生命的生起由另一个活跃者的给予给出，不是由另一个生命给出。在只有体现的关系项给予这一表示前提下，给予者也体现，并在给予时作为条件而在（`arises_from_embodied`）；这是对应，不是定理从平衡推出的。作者曾把“生由生给予”读作 Ren 原话“不断创造更多生”中两个“生”之间关系的一种形式内容（AI 论证）；这一读法需要上述前提，不替代原话，也不推出它是好的。`Brood` 表明前提与不息相容：一代代形成生起，每一代由前一代给予。
+- **经由另一个活跃者的给予而生起（P16b 更正，原题“生由生给予”）。** 在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃形成的给予而生起（`arises_given`）。定理不要求给予它的形成体现、承担自身或依存于任何东西：一个不体现、不依存的太阳可以是唯一给予种子的关系项（`SunSeed`）（P16c 用语，原文“给予者”）。所以它说的是一个体现关系项的生起由另一个活跃者的给予给出，不是由另一个体现关系项给出（P18b 用语，原文“一个生命的生起”“另一个生命”）。在只有体现的关系项给予这一表示前提下，给予它的关系项也体现，并在给予时作为条件而在（`arises_from_embodied`；P18b 用语，原文“给予者”）；这是对应，不是定理从平衡推出的。作者曾把“生由生给予”读作 Ren 原话“不断创造更多生”中两个“生”之间关系的一种形式内容（AI 论证）；这一读法需要上述前提，不替代原话，也不推出它是好的。`Brood` 表明前提与不息相容：一代代形成生起，每一代由前一代给予。
 - **直接的关系。** 共同参与与相互作用都经由一个条件关联两个事件。各自只依存于对方的互利者，没有共同的条件，于是两种估值都不关联它们（`apart_not_connected`、`apart_not_interacting`）。承担自身时，一个形成对另一个的汲取就与那个形成的活动相互作用（`SelfBearing.interacts`），互利者直接相关，无需第三个条件（`Mutualism.connected`）。所以形成之间是否直接相关，取决于是否表示一个形成承担自身。体现本身不进入两种估值（P16b 补充）：估值只经由共同的条件关联事件；`apart` 中两者都体现、各自依存并汲取对方，仍不相关（`Mutualism.apart_embodied`）。只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。一个把汲取者与它所汲取的体现关系项的事件直接关联的估值，是新的结果（P18 补充：以之为生与世系两种候选读法，见 §25）。
-- **在一个生命终结之步汲取它（P16b 更正，原题“终结另一个生命”）。** 在一个承担自身的生命终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`ending_breaks`）；没有谁依存于它时也如此（`Predation` 中兔自身的依存）。这包括旁观的汲取者、自然的终结与生命自身的最后事件：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取，与花自己的最后一个事件，都是断裂（`Wilting`）。在 `Dependent` 与体现之下，自身依存恰在活跃时被满足（`SelfBearing.met_iff`）：它不记录活动之外的任何东西，作用是把终结读作断裂。定理不说汲取终结了生命；因果的读法需要反事实的关系（例如 §8 `Joint` 的 but-for 检验），这里没有陈述。若被汲取者不承担自身、也没有谁依存于它，这样的汲取不侵蚀任何东西。是否把在终结之步的汲取计入不 living，以及对哪些汲取者（捕食者、旁观者、生命自身），属于 Ren 对生生的读法；本节只陈述两种表示各自的后果。
+- **在一个体现关系项终结之步汲取它（P16b 更正，原题“终结另一个生命”；P18b 用语，原题“在一个生命终结之步汲取它”，本段的“生命”下同）。** 在一个承担自身的体现关系项终结之步汲取它，不论是什么终结了它，是断裂，所以不是 living（`ending_breaks`）；没有谁依存于它时也如此（`Predation` 中兔自身的依存）。这包括旁观的汲取者、自然的终结与该关系项自身的最后事件：花因自身的取用而凋，从不取用的蜜蜂在那一步的汲取，与花自己的最后一个事件，都是断裂（`Wilting`）。在 `Dependent` 与体现之下，自身依存恰在活跃时被满足（`SelfBearing.met_iff`）：它不记录活动之外的任何东西，作用是把终结读作断裂。定理不说汲取终结了它；因果的读法需要反事实的关系（例如 §8 `Joint` 的 but-for 检验），这里没有陈述。若被汲取者不承担自身、也没有谁依存于它，这样的汲取不侵蚀任何东西。是否把在终结之步的汲取计入不 living，以及对哪些汲取者（捕食者、旁观者、该关系项自身），属于 Ren 对生生的读法；本节只陈述两种表示各自的后果。
 
 **作者反审。**
 
 *反驳 1：`Embodied` 太强：遗骸、种子库与休眠的形成在活动之外仍作为条件。* 对。`Embodied` 是对具体关系项的前提，不是对所有关系项；遗骸可以表示为另一个关系项，它与原形成的关系是跨步同一的问题（§16）。
 
-*反驳 2：`SelfBearing` 是否把想要的结论编进表示？* 它只说一个形成活跃时依存于自身的水平；与 `Dependent` 一起，这就是 `Embodied` 的一半（`SelfBearing.stands`）。它使在一个生命终结之步的汲取成为断裂（P16b 补充：不论是什么终结了它），这是读法的后果，不是伦理前提；`Mutualism.apart` 与 `Predation` 并列陈述有与没有它的后果，是否采用属于 Ren。
+*反驳 2：`SelfBearing` 是否把想要的结论编进表示？* 它只说一个形成活跃时依存于自身的水平；与 `Dependent` 一起，这就是 `Embodied` 的一半（`SelfBearing.stands`）。它使在一个承担自身的体现关系项终结之步的汲取成为断裂（P16b 补充：不论是什么终结了它；P18b 用语，原文“在一个生命终结之步”），这是读法的后果，不是伦理前提；`Mutualism.apart` 与 `Predation` 并列陈述有与没有它的后果，是否采用属于 Ren。
 
 *反驳 3：一类读法的嵌入是平凡的。* 嵌入本身是定义；它的内容是两类读法的每个列出的结果在一类读法中成立。一类读法另加的是形成与条件的同一对应，它由共同的索引给出，两类读法检查不到它（`relabel`），不是嵌入推出的（P16b 更正；原文“而两类读法恰是没有体现的一类读法”）。实质的新结果是 `coextinct`、`ending_breaks`、`arises_given` 与 `Mutualism` 的对照。
 
@@ -1203,7 +1203,7 @@ Integration: 回答第五次审查 I3 与 §4 第 2 项；回答 §17 的边界�
 - **耗散之下，复现的生成打开有限家族。** 给予被耗散家族的形成从家族取用，所以在被耗散的家族中，体现成员的每次生起都降低家族的存量，而存量从不上升。生成在一个有限家族中复现，家族就在任意晚的步不封闭（`generation_opens`）；这一交换可以与家族无关（`SprayHanding`），家族被围住时它汲入（`generation_draws_in`）（P16c 更正，原标题“耗散之下，生成不由有限部分独自承担”，原文“给予家族者从家族取用”“在封闭家族中”“家族就须在任意晚的步与其外交换”）；关系项总共有限时，体现的生起终将停止（`generation_ceases`）。这把 §17 关于取用的定理推到不取用的生起，条件是生起的关系项体现。对每个有限家族，体现的生成要么在其中不再复现，要么它在任意晚的步打开；不断生起新的关系项（`Brood` 的一代代）不在任何有限家族中复现，定理对它不作约束。
 - **§13 的物理前提被推出。** `dissipation_ceases` 假设一个量从不上升，而每次生起都使它下降，那是作为物理前提提供的。在一类读法中，对封闭家族中体现成员的生起，这个量就是家族的存量：它从不上升（`runs_down`），每次这样的生起都使它下降（`arising_lowers`），两者都由平衡、耗散与体现推出。
 - **三个前提各自必要。** 没有耗散，两方来回传递一份水平，就在两个关系项的封闭世界中不息地生成（`Handing`），这是 §13 的 `Recycle` 与 §14 的 `Cycle` 在一类读法中的对应。燃烧新的燃料，传递在耗散之下继续，包含一方的每个有限家族都打开（`Kindling`），如 §17 的 `Frontier`。不体现时，一个关系项在一个关系项的耗散世界中不息地生起，没有任何给予（`Flicker`）。所以生起的关系项体现之处，生成承担自己的要求；不体现之处不必（P16b 更正，原文“没有任何代价”“恰在生起的关系项体现之处”）。哪些关系项体现是表示的选择，这一选择在这里有后果。
-- **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。若生起的生命自身就是其他生命的条件，每次生起都是一次补充；在耗散之下，被围住的有限部分中不息的生起须从其外汲入（P16c 更正，原文“不息的生起不能由任何有限的部分独自承担，须由越出每个有限部分的展开承担”；耗散空成立时，有限部分可以独自承担生成，见 `SprayHanding`）。作者把这读作原话中“生”与“整体”之间关系的一种形式内容（AI 论证），不替代原话，也不推出它是好的。
+- **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。若生起的关系项自身就是其他关系项的条件，每次生起都是一次补充（P18b 用语，原文“生起的生命”“其他生命”）；在耗散之下，被围住的有限部分中不息的生起须从其外汲入（P16c 更正，原文“不息的生起不能由任何有限的部分独自承担，须由越出每个有限部分的展开承担”；耗散空成立时，有限部分可以独自承担生成，见 `SprayHanding`）。作者把这读作原话中“生”与“整体”之间关系的一种形式内容（AI 论证），不替代原话，也不推出它是好的。
 
 **作者反审。**
 
@@ -1282,7 +1282,7 @@ Integration: 回答第五次审查 I10 与 §4 第 7 项；§16、§19 中“谱
 
 ## 22. 第六次独立审查与更正（P16b）
 
-2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P13（§17）、P14（§18）与 P12b（§19）（[审查](BECOMING-P13-P14-P12B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 21 个模块，公理报告为空；回执、哈希、别名与证明绑定都对，数学接受，I1–I12 全部关闭。问题在前提的陈述、散文与对应之间，共十一项（J1–J11），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生生、living、接续或终结的读法；它指出两个反复出现的模式：省略前提（I1 → J10），以及把所给的对应呈现为结果（I7 → J4）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查提议而未形式化的两个结果，有限支撑下给予者取得多于所给（J1）与 `roles_dissipative` 的逆（J8），也已证明。§17–§20 中受影响的句子已就地更正并标明；原文见提交 `25a66424`。
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P13（§17）、P14（§18）与 P12b（§19）（[审查](BECOMING-P13-P14-P12B-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 21 个模块，公理报告为空；回执、哈希、别名与证明绑定都对，数学接受，I1–I12 全部关闭。问题在前提的陈述、散文与对应之间，共十一项（J1–J11），没有数学错误；附无公理的探针。审查没有发现替 Ren 选择生生、living、接续或终结的读法；它指出两个反复出现的模式：省略前提（I1 → J10），以及把所给的对应呈现为结果（I7 → J4）。本节记录逐项处理。探针的内容作为定理移入相应模块，公理报告为空；审查提议而未形式化的两个结果，有限支撑下给予的形成取得多于所给（J1；P18b 用语，原文“给予者”）与 `roles_dissipative` 的逆（J8），也已证明。§17–§20 中受影响的句子已就地更正并标明；原文见提交 `25a66424`。
 
 ```text
 Result(s): 修正 no-finite-part-bears-taking（主张、假设、对应、反例、界限）、
@@ -1294,7 +1294,7 @@ Delta: 封闭的步（Enclosed）：耗散之下，给予的形成在封闭的�
        （giving_needs_uptake）；没有封闭的步时耗散是空的，补充者可以什么都不取而给予（Spray）；维持一个取用者已越出每个有限家族（Lone）；
        生长者依存于池的前沿满足全部前提（Rooted）；此前取用复现的见证都不耗散（witnesses_not_dissipative）；
        一类读法也保持 Acting、Taking、普查、present 不重复与耗散；哪个条件就是哪个关系项由共同的索引给出（relabel）；
-       体现不进入估值（Mutualism.apart_embodied）；终结之步的汲取不论是什么终结了生命都是断裂（Wilting、SelfBearing.met_iff）；
+       体现不进入估值（Mutualism.apart_embodied）；终结之步的汲取不论是什么终结了它都是断裂（Wilting、SelfBearing.met_iff；P18b 用语，原文“终结了生命”）；
        arises_given 中给予的关系项不必体现（SunSeed），只有体现者给予时给予它的关系项体现（arises_from_embodied；P16c 用语，原文“给予者”）；
        没有分裂是充分的，不是必要的（Fork）；含合并的见证（Merge）、普查给出可判定性（decideContinues）、
        没有普查时不成立（Dormant.no_split_without_arising）、双向的连续排除单步的接续（no_join）
@@ -1317,7 +1317,7 @@ Integration: J1–J11 全部处理；审查 §4 第 1–7 项完成，各留下�
 | J4 | 一类读法的内容在于“条件 x 就是形成 x”，由共同的索引给出；`Web X X` 本身就是 F = C 的两类网；把条件一侧重新标号，检查过的两类读法都不变而体现改变；“恰是”“没有引入独立的本体”“省略的正是体现”说得过强。这是 I7 的同一模式 | `Web.relabel`：以 π 重新标号条件一侧。到上的重新标号保持 `Dependent`、侵蚀与 living（`relabel_dependent`、`relabel_undermining`、`relabel_alive`），以及两种估值的连通（`relabel_valuation_connected`、`relabel_interaction_connected`，在 L4）；以 `other` 重新标号，`Mutualism.apart` 中两者都承担自身（`apart_relabelled`）；以 `swap` 重新标号，体现的花不体现（`Wilting.relabelled_not_embodied`）。§18、章节 §1 与 §9、术语表与记录改为：两类读法嵌入一类读法，保持列出的读法；一类读法另需同一对应，它由共同的索引给出，是表示的前提；体现与承担自身是在这一对应下的读法；两类的表示省略的是形成与条件的同一对应。记录的假设加上这一对应，与 `Embodied` 并列为应用责任 |
 | J5 | 体现不进入两种估值：`apart` 中两者都体现而不相关 | `Mutualism.apart_embodied`（L4）：两者都体现，各自依存并汲取对方，活动需要支持，共同参与与相互作用都不关联它们。§18“直接的关系”与记录补上：估值只经由共同的条件关联事件，只有承担自身把体现的关系项的活动接到汲取它的事件上；这是估值所省略的关系。直接读出体现的估值列为开放结果 |
 | J6 | `ending_breaks` 读的是终结之步的汲取，不问是什么终结了它；旁观的汲取者与生命自身的最后事件也是断裂（`Wilting`）；交给 Ren 的选择的范围没有说明 | `Wilting` 移入 `Roles`：花体现、承担自身、因自身的取用而凋；蜜蜂从不取用；流平衡，Acting、Taking 与 Dependent 成立；蜜蜂在第二步的汲取与花自己的最后事件都是断裂与侵蚀（`wilting`）。`SelfBearing.met_iff`：在 Dependent 与体现之下，自身依存恰在活跃时被满足。Roles 的说明、`Predation.breaking`、§18、章节 §2 与英文段落改为：在一个承担自身的生命终结之步汲取它，不论是什么终结了它，是断裂；这包括旁观者、自然的终结与生命自身的最后事件；交给 Ren 的选择写明这一范围 |
-| J7 | `arises_given` 的给予者只是一个活跃的关系项，可以是不体现、不依存的太阳（`SunSeed`）；“一个生命的生起由另一个生命的活动给出”强于定理 | `SunSeed` 移入 `Roles`（`sun_gives`）。`Embodied.arises_from_embodied`：在只有体现的关系项给予这一表示前提下，给予者也体现，并在给予时作为条件而在。`arises_given` 的说明、记录标题（“体现的关系项经由另一个活跃者的给予而生起”）、§18 的标题与解读、章节 §2 与英文段落改写；（P16c 更正：“生由生”不是定理：`arises_from_embodied` 证明在只有体现的关系项给予的前提下给予它的关系项也体现，它可以是不依存的太阳（`EmbodiedSun`），把体现的关系项读作“生”属于 Ren，见 §23 K6；原文““生由生”只在所述前提下成立，写为对应”） |
+| J7 | `arises_given` 的给予者只是一个活跃的关系项，可以是不体现、不依存的太阳（`SunSeed`）；“一个生命的生起由另一个生命的活动给出”强于定理 | `SunSeed` 移入 `Roles`（`sun_gives`）。`Embodied.arises_from_embodied`：在只有体现的关系项给予这一表示前提下，给予它的关系项也体现，并在给予时作为条件而在（P18b 用语，原文“给予者”）。`arises_given` 的说明、记录标题（“体现的关系项经由另一个活跃者的给予而生起”）、§18 的标题与解读、章节 §2 与英文段落改写；（P16c 更正：“生由生”不是定理：`arises_from_embodied` 证明在只有体现的关系项给予的前提下给予它的关系项也体现，它可以是不依存的太阳（`EmbodiedSun`），把体现的关系项读作“生”属于 Ren，见 §23 K6；原文““生由生”只在所述前提下成立，写为对应”） |
 | J8 | “已陈述的读法”应为“列出的”；“一类读法不保持 Acting、Taking 与 Dissipative”照字面不成立 | `Flow.roles_acting`、`Flow.roles_taking`（双向）、`Web.roles_census`、`Flow.roles_distinct` 与 `Flow.roles_dissipative`（双向；审查未形式化的逆也已证明）移入 `Roles`。章节、§18 与记录改为“列出的读法”，界限句删去，记录下一步中“保持 Acting 与 Taking”一项关闭 |
 | J9 | `NoSplit` 是充分条件，不是必要条件（`split_unceasing`）；“分裂恰是界限”沿用了第五次审查 §4 第 6 项过强的措辞 | `Fork` 移入 `Identity`：循环中形成 0 在第一步延续为两个，`NoSplit` 不成立，形成在这一延续下照样在任意晚的步生起（`split_unceasing`）。§19 的 I9 一行、19.3 第 6 项、19.4 反驳 2 与记录改为：没有分裂是充分条件；萌出表明有的分裂使结论失效，一次分裂不必。延续关系上的充要条件列为开放结果 |
 | J10 | 章节对 `unceasingFrom` 与 `arises_given` 的概述省去前提（`dormant_no_census`）。这是 I1 的同一模式 | `Dormant.no_split_without_arising` 移入 `Identity`：在每个形成只延续自身的延续下没有分裂，Taking、present 不重复与不止地更多都成立，而没有任何生起。章节 §1 与 §8、Identity 的模块说明与记录标题补上普查、present 不重复与 Taking；`arises_given` 的概述补上平衡与 Acting。审查确认为正确的三点也移入核心：`Web.no_join`（新命名保持旧命名的持续活动时，单步不能接起来）、`Merge`（含合并的延续，`merging`；P16c：其生起是持续形成被重读，见 §23 K7）与 `Web.Census.decideContinues`（普查之下，可判定的延续给出 `unceasingFrom` 所需的可判定性） |
@@ -1356,7 +1356,7 @@ Integration: J1–J11 全部处理；审查 §4 第 1–7 项完成，各留下�
 1. 有限支撑（J1）：`Enclosed` 与审查提议的定理（`gives_less`），`Spray` 列入记录。完成。
 2. 任何持续的取用（J2、J3）：整体的读法按复现的取用重述，`Lone`、`Rooted` 与 `witnesses_not_dissipative` 移入核心。完成。
 3. 同一对应（J4、J5）：一类读法的同一对应写为表示前提，`relabel` 移入核心，估值省略体现写明。完成。直接读出体现的估值，开放。
-4. 终结与给予（J6、J7）：`ending_breaks` 写为与任何原因的终结同时，`Wilting` 移入核心，Ren 的选择的范围写明；`arises_given` 改题；在只有体现的关系项给予的前提下，给予它的关系项也体现（`arises_from_embodied`），把体现的关系项读作“生”属于 Ren（P16c 更正，原文““生由生”在只有体现者给予的前提下证明”；见 §23 K6）。完成。汲取是否终结了生命的因果读法需要反事实的关系，开放。
+4. 终结与给予（J6、J7）：`ending_breaks` 写为与任何原因的终结同时，`Wilting` 移入核心，Ren 的选择的范围写明；`arises_given` 改题；在只有体现的关系项给予的前提下，给予它的关系项也体现（`arises_from_embodied`），把体现的关系项读作“生”属于 Ren（P16c 更正，原文““生由生”在只有体现者给予的前提下证明”；见 §23 K6）。完成。汲取是否终结了它的因果读法需要反事实的关系，开放（P18b 用语，原文“终结了生命”）。
 5. 保持（J8）：五个 `roles_*` 移入核心，界限句删去，`roles_dissipative` 的逆也已证明。完成。
 6. 分裂（J9、J10）：以“充分”代替“精确”，`split_unceasing` 列入记录，章节补上前提。完成。延续关系上的充要条件，开放。
 7. 记账（J11）：六项完成；用语的最终选择属于 Ren。
@@ -1368,13 +1368,13 @@ Integration: J1–J11 全部处理；审查 §4 第 1–7 项完成，各留下�
 
 *反驳 2：既然估值看不见体现，一类读法还有什么用？* 体现进入依存的动力学：`coextinct`、`ends_when_consumed`、`arises_given` 与 §20 的 `generation_opens` 都用它。估值看不见的是体现本身；它经由承担自身进入估值（`SelfBearing.interacts`）。两者是不同的后果，不冲突。
 
-*反驳 3：`Wilting` 表明 `ending_breaks` 是一个坏的读法，应当改定义。* 本节不改：是否把在终结之步的汲取计入不 living、对哪些汲取者，属于 Ren。可供选择的读法至少有三种：照现在的读法计入全部汲取者，包括生命自身的最后事件；只计入其汲取使生命终结者，这需要反事实的关系；不让自身依存进入断裂，即不采用 `SelfBearing`，如 `Mutualism.apart`。本节只陈述各自的后果。
+*反驳 3：`Wilting` 表明 `ending_breaks` 是一个坏的读法，应当改定义。* 本节不改：是否把在终结之步的汲取计入不 living、对哪些汲取者，属于 Ren。可供选择的读法至少有三种：照现在的读法计入全部汲取者，包括该关系项自身的最后事件；只计入其汲取使它终结者，这需要反事实的关系（P18b 用语，原文“生命自身”“使生命终结者”）；不让自身依存进入断裂，即不采用 `SelfBearing`，如 `Mutualism.apart`。本节只陈述各自的后果。
 
 *反驳 4：把“代价”改为“给予须以取用为条件”，是不是只是换词？* 对，内容相同；理由是 Ren 在 2026-10-06 对支付一族用语的质疑。名称是建议，Ren 可以改回，`Brood.costless` 的改名同理。
 
 *反驳 5：`relabel` 是不是表明一类读法与两类读法没有区别？* 不是。两类读法检查不到同一对应，这正说明同一对应是一类读法另加的内容。它由表示给出，与跨步的同一由命名给出（§16，I7）是同一类前提：标签不承载任何东西，标签的模式承载对应。
 
-**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证；同一对应、只有体现者给予与封闭的步是公开的前提；直接读出体现的估值、汲取是否终结生命的因果读法、延续关系上的充要条件，开放。本节的更正尚未再经独立审查。
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证；同一对应、只有体现者给予与封闭的步是公开的前提；直接读出体现的估值、汲取是否终结它的因果读法、延续关系上的充要条件，开放。本节的更正经第七次独立审查，见 §23（P18b 补记，原文“本节的更正尚未再经独立审查”；用语原文“终结生命”）。
 
 ## 23. 第七次独立审查与更正（P16c）
 
@@ -1454,13 +1454,13 @@ Integration: K1–K8 全部处理；审查 §4 第 1–5 项完成，各留下�
 
 *反驳 3：“生生不息”在整体层次上读，是否就不再要求“不断创造”？* 看前提。部分终结且同时活跃的部分有限时，整体的持续要求不断有新的部分生起（`needs_new`），这是一种“不断创造”；部分只是短暂时，同样的部分反复生起就够了（`Layered`）。两者都不要求数目增长，所以“更多”没有由整体的持续推出。读到哪个层次，仍属于 Ren。
 
-*反驳 4：既然 `arises_from_embodied` 不证明“生由生”，一类读法对生命还说了什么？* 它说的是关系项作为条件而在的结构：生命以其他生命为条件（`active_of_bearing`、`coextinct`），体现的生起由另一个活跃者的给予承担（`arises_given`），在只有体现者给予的表示中给予它的也体现。哪些体现的关系项是生命，是对“生”的读法，属于 Ren；`EmbodiedSun` 表明这一读法不由定理给出。
+*反驳 4：既然 `arises_from_embodied` 不证明“生由生”，一类读法对生命还说了什么？* 它说的是关系项作为条件而在的结构：依存于体现关系项的形成只在它活跃时活跃（`active_of_bearing`、`coextinct`；P18b 更正，原文“生命以其他生命为条件”），体现的生起由另一个活跃者的给予承担（`arises_given`），在只有体现者给予的表示中给予它的也体现。哪些体现的关系项是生命，是对“生”的读法，属于 Ren；`EmbodiedSun` 表明这一读法不由定理给出。
 
-**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证；围住是汲入读法公开的前提；不以围住为前提的汲入、前提不必要的见证、由更多做功的含合并普查见证与构成的关系，开放。本节的更正尚未再经独立审查。
+**边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议；探针与新见证都是最小见证；围住是汲入读法公开的前提；不以围住为前提的汲入、前提不必要的见证、由更多做功的含合并普查见证与构成的关系，开放。本节的更正经第八次独立审查，见 §27。
 
 ## 24. 储备：活动越过支持，水平越过活动（P17）
 
-2026-10-09。按同一指示继续。开放纲领自 P6 起在“动态依存”一行列出“放宽 `Dependent`（缓冲、储备、滞后）”；§18 写明种子库、储备与休眠被 `Dependent` 排除，在它们之下共灭不必成立；§20 反驳 5 写明活动与水平不同步（种子、休眠）时生成承担什么是下一步。两处的共同点是所持之物：活动可以越过支持，靠所持的储备；水平可以越过活动，如休眠的种子。按非二元方法，储备不作为新的原语：它是形成所持的一个条件的水平。本节陈述储备承担什么，并把 §20 与 §23 的结论推到它们实际用到的东西上：生起的关系项开始作为条件而在。成果记录：[reserve-defers-ending](../../../../theories/becoming/results/records/reserve-defers-ending.md)；[generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md) 随之推广。
+2026-10-09。按同一指示继续。开放纲领自 P6 起在“动态依存”一行列出“放宽 `Dependent`（缓冲、储备、滞后）”；§18 写明种子库、储备与休眠被 `Dependent` 排除，在它们之下共灭不必成立；§20 反驳 5 写明活动与水平不同步（种子、休眠）时生成承担什么是下一步。两处的共同点是所持之物：活动可以越过支持，靠所持的储备；水平可以越过活动，如休眠的种子。按非二元方法，在流与所持条件被表示的地方，储备不作为新的原语：它是形成所持的一个条件的水平；没有表示所持条件时，储备是给定的量（P18b 更正，原文“储备不作为新的原语：它是形成所持的一个条件的水平”；见 §27 L4）。本节陈述储备承担什么，并把 §20 与 §23 的结论推到它们实际用到的东西上：生起的关系项开始作为条件而在。成果记录：[reserve-defers-ending](../../../../theories/becoming/results/records/reserve-defers-ending.md)；[generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md) 随之推广。
 
 ```text
 Result(s): 复用 becoming-dependence-dynamics（Supported、Dependent、consumed_ends_when_fixed、arises_at_a_step）、
@@ -1468,7 +1468,7 @@ Result(s): 复用 becoming-dependence-dynamics（Supported、Dependent、consume
            more-needs-renewers（流、平衡）；新增 reserve-defers-ending（L3 Becoming.Reserve）；
            推广 generation-is-replenishment（ComesToStand 移入 Flow 与 Dissipation，§20 与 §23 的体现定理改由它推出）
 Delta: 储备（Carries）：不被支持时不上升，活跃时下降；零储备恰是 Dependent（carries_zero）；
-       储备是所持条件的水平（Flow.carries_of_held）；依存失效而活跃时储备为正（Carries.pos）；
+       储备可以是所持条件的水平（Flow.carries_of_held；P18b 更正，原文“储备是”）；依存失效而活跃时储备为正（Carries.pos）；
        从某步起不被支持，只在有限多步活跃，次数不超过开始时的储备（active_finitely、lasts、lasts_within）；
        滞后的终结与滞后的共灭（consumed_lasts、coextinct_lasts）；不被支持时休眠只推迟生起（arising_finitely），储备在休眠中衰减时休眠在时间上有界（Decays、ends_within）；
        开始作为条件而在（Web.ComesToStand）：平衡的流中被给予新水平（Balances.standing_given），
@@ -1494,7 +1494,7 @@ Integration: 回答开放纲领“放宽 Dependent（缓冲、储备、滞后）
 | 声明 | 内容 |
 |---|---|
 | `Web.Carries`、`carries_zero` | 储备：在形成不被支持的一步上不上升，若它在该步活跃则下降。零储备恰是 `Dependent` |
-| `Flow.carries_of_held`、`Carries.pos` | 平衡的流中，持有者不被支持时没有给予、活跃时被它取用的条件，以其水平承载持有者。依存失效而仍活跃的形成储备为正 |
+| `Flow.carries_of_held`、`Carries.pos` | 平衡的流中，持有者不被支持时没有给予、持有者活跃时被（参与的任何形成）取用的条件，以其水平承载持有者（P18b 更正，原文“活跃时被它取用”）。依存失效而仍活跃的形成储备为正 |
 | `Carries.active_finitely`、`Carries.step`、`Carries.lasts`、`Carries.lasts_within`、`mark`、`mark_cases` | 从某步起不被支持的形成只在有限多步活跃；在任一段步上，活跃的次数加上结束时的储备不超过开始时的储备；容量为 k 时活跃至多 k 次 |
 | `unsupported_after_loss`、`Carries.consumed_lasts` | 没有回程而依存不变的损失之后，形成不再被支持，靠储备只在有限多步活跃（滞后的终结） |
 | `unsupported_after_end`、`Carries.coextinct_lasts` | 体现的关系项终结之后，以正需要依存于它的形成不再被支持，靠储备只在有限多步活跃（滞后的共灭） |
@@ -1514,9 +1514,9 @@ Integration: 回答开放纲领“放宽 Dependent（缓冲、储备、滞后）
 **解读。**
 
 - **`Dependent` 是零储备。** “活动只在有支持处”与“储备为零”是同一个陈述（`carries_zero`）。放宽它不是让活动离开依存，而是允许所持的储备。§6 以来依赖 `Dependent` 的结论（损失的三种结局、共灭、替代）都是零储备的情形；有储备时，它们推迟而不消失。
-- **储备是所持的条件。** 在平衡的流中，一个条件在持有者不被支持时没有给予、在持有者活跃时被取用，它的水平就是储备（`carries_of_held`）。依存失效而仍活跃的形成，储备为正：对所持之物、需要为一的依存被满足。所以同一展开有两种表示：依存于兔而有储备（不满足 `Dependent`），或依存在兔终结后转到脂肪上（满足 `Dependent`，`Famine.transformed_dependent`）。滞后就是依存转化到所持的条件上，这是 §6 `consumed_continues_transformed` 所说的转化的一种。缓冲不在依存之外。
+- **储备可以是所持的条件（P18b 更正，原题“储备是所持的条件”）。** 在平衡的流中，一个条件在持有者不被支持时没有给予、在持有者活跃时被取用，它的水平就是储备（`carries_of_held`）；没有表示所持条件时，储备是给定的量（§27 L4，`Seed.no_held`）。依存失效而仍活跃的形成，储备为正：对所持之物、需要为一的依存被满足。所以在所持条件承载它的地方有两种表示：依存于兔而有储备（不满足 `Dependent`），或依存在兔终结后转到脂肪上（满足 `Dependent`，`Famine.transformed_dependent`）。在那里，滞后就是依存转化到所持的条件上，这是 §6 `consumed_continues_transformed` 所说的转化的一种；它是对储备的重新描述，两种表示在 living 上不同（§27 L6）。缓冲不在依存之外。
 - **推迟而不逃脱。** 从某步起不被支持的形成只在有限多步活跃，次数不超过开始时的储备（`lasts`）。没有回程的损失之后（`consumed_lasts`）与所依存的体现关系项终结之后（`coextinct_lasts`），形成在支持之外至多再活跃其储备那么多次；`Famine` 中狐恰好多活两步，即脂肪的两单位。这与 §13 的“替代推迟终结而不逃脱”（`substitution_defers`、`Relay`）是同一模式：所推迟的靠一个不再被补充的条件。休眠同样：不被支持时，醒来只有有限多次（`arising_finitely`、`Seed`）。`Carries` 只在活跃时耗用储备，所以休眠本身可以任意长；储备在休眠中也衰减时（种子的存活力），经过与储备一样多的步之后形成不再活跃（`ends_within`、`Viable`）。
-- **生成承担补充，在开始作为条件而在之处。** §20 与 §23 用到的体现只有一点：生起时水平从零上升。所以一般的定理在条件上：任何条件开始作为条件而在，在平衡的流中都被给予它的新水平；在耗散之下，在不重复有限家族中复现，家族就在任意晚的步不封闭（`standing_opens`），这一交换可以与家族无关（§23 的 `SprayHanding`），家族被围住时它汲入（`standing_draws_in`）。体现的关系项在生起时开始作为条件而在（`Embodied.comesToStand`），§20 与 §23 关于体现的九个定理都由此推出。这把要求放在它实际所在之处：不在活动的上升，而在水平的上升。
+- **生成承担补充，在开始作为条件而在之处。** §20 与 §23 用到的体现只有一点：水平跨生起之步上升，体现时从零上升（P18b 更正，原文“生起时水平从零上升”；见 §27 L7，一般的定理对任何上升陈述）。所以一般的定理在条件上：任何条件开始作为条件而在，在平衡的流中都被给予它的新水平；在耗散之下，在不重复有限家族中复现，家族就在任意晚的步不封闭（`standing_opens`），这一交换可以与家族无关（§23 的 `SprayHanding`），家族被围住时它汲入（`standing_draws_in`）。体现的关系项在生起时开始作为条件而在（`Embodied.comesToStand`），§20 与 §23 关于体现的九个定理都由此推出。这把要求放在它实际所在之处：不在活动的上升，而在水平的上升。
 - **水平越过活动。** 活跃时作为条件而在的关系项，若先前某步不在，就在活跃之前开始作为条件而在（`came_to_stand`），可以早得多：种子在休眠时被父代给予它的水平，此后生起时没有任何给予（`Provisioned`）。从休眠中醒来是生起而不开始作为条件而在：一个始终作为条件而在的关系项可以不息地醒来，不需要任何给予（`Sleeper`；它的流中没有形成参与，耗散空成立，所以这里没有陈述耗散的世界中醒来会怎样）。所以对生起的约束在两头：开始作为条件而在需要补充；醒来若耗用所持的储备而没有支持，只有有限多次。两者都不约束靠回来的支持而醒来。
 - **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。所持之物使一个形成越过它的支持延续，也使一个关系项在它的活动之前就已作为条件而在。这里读出的是：没有支持，所持之物只推迟终结；不断的生起若是关系项开始作为条件而在，就需要不断的补充。把这些形成与关系项读作“生”属于 Ren（§23 K6）。作者把这读作“不息”不能由所持之物独自承担的一种形式内容（AI 论证），不替代原话，不推出它是好的，也不决定生生读到哪个层次。
 
@@ -1524,17 +1524,17 @@ Integration: 回答开放纲领“放宽 Dependent（缓冲、储备、滞后）
 
 *反驳 1：`Carries` 只是把 `Dependent` 换成一个更弱的前提，没有说明什么。* 它说明 `Dependent` 是零储备，并给出储备的数量后果：延续至多是开始时的储备，界可以达到（`Seed`、`Famine`）。它也说明储备不是新的原语：它可以是流中所持条件的水平（`carries_of_held`）。
 
-*反驳 2：依存转化的读法是否只是把结论编进表示？* 两种表示描述同一展开：水平、活动、汲取与流都相同，只是依存于什么不同。`Famine` 证明两种读法都成立；哪一种更合适，取决于应用把脂肪读作狐的一部分还是狐所依存的另一个条件。一般地构造转化的读法需要“是否被支持”可判定，这里只给出见证。
+*反驳 2：依存转化的读法是否只是把结论编进表示？* 两种表示的水平、活动、汲取与流都相同，只是依存于什么不同。`Famine` 证明两种读法都成立；哪一种更合适，取决于应用把脂肪读作狐的一部分还是狐所依存的另一个条件。（P18b 更正，原文“两种表示描述同一展开”与“一般地构造转化的读法需要“是否被支持”可判定，这里只给出见证”：两种读法的 living 不同，狐在第 1 步的事件按原读法侵蚀、按转化的读法不侵蚀（`Famine.living_differs`），所以选择不是对估值中立的，是对应前提；一般的构造已给出（`Web.redirect_dependent`），它满足 `Dependent` 由构造给出，是对储备的重新描述。见 §27 L6。）
 
 *反驳 3：休眠不耗用储备，这不太强了吗？* 是一个选择：`Carries` 只要求活跃时下降，所以只靠它，休眠可以任意长。衰减是另一个前提（`Decays`）：在它之下休眠的时间有界（`ends_within`），`Viable` 达到这个界；`Seed` 表明 `Carries` 不蕴含衰减（`Seed.not_decays`）。两者分开陈述，应用选择哪一个。
 
-*反驳 4：`ComesToStand` 的推广是否平凡？* `standing_given` 几乎由平衡直接给出，就像 §20 的 `given_of_arises`。内容在于定位：§20 与 §23 的结论用到的不是体现，而是水平从零上升；`Sleeper` 与 `Provisioned` 表明，活动与水平不同步时，要求跟着水平走，而不跟着活动走。§23 的更正（开放的交换可以无关，汲入须家族被围住）原样适用于开始作为条件而在。
-
-*反驳 6：`Sleeper` 的耗散是空的，它没有说明耗散的世界中的休眠。* 对。`Sleeper` 只表明 §20 的结论不约束不开始作为条件而在的生起；没有支持时，醒来所耗用的是 `Carries` 陈述的储备，不是补充；储备与耗散的关系这里没有陈述。
+*反驳 4：`ComesToStand` 的推广是否平凡？* `standing_given` 几乎由平衡直接给出，就像 §20 的 `given_of_arises`。内容在于定位：§20 与 §23 的结论用到的不是体现，而是水平上升，体现时从零上升（P18b 更正，原文“水平从零上升”）；`Sleeper` 与 `Provisioned` 表明，活动与水平不同步时，要求跟着水平走，而不跟着活动走。§23 的更正（开放的交换可以无关，汲入须家族被围住）原样适用于开始作为条件而在。
 
 *反驳 5：狐“多活两步”只是见证里写定的时程。* 对，见证写定了活动；定理说的是任何满足前提的展开都至多如此，`Famine` 表明界可以达到，`Seed` 表明在休眠与醒来交替时也如此。
 
-**边界。** 不含伦理谓词；`Carries` 与所持的条件是表示前提，物理内容是所持之物有限；结论约束从某步起不被支持的形成，不约束支持是否回来；`Carries` 之下休眠不耗用储备，休眠的时间只在另设 `Decays` 时有界；开放与汲入沿用 §23 的形式：开放可以由无关的交换满足，汲入须家族被围住；沿依存链的滞后共灭、一般的转化读法没有陈述；见证都是最小见证。本节尚未经独立审查。
+*反驳 6：`Sleeper` 的耗散是空的，它没有说明耗散的世界中的休眠。* 对。`Sleeper` 只表明 §20 的结论不约束不开始作为条件而在的生起；没有支持时，醒来所耗用的是 `Carries` 陈述的储备，不是补充；储备与耗散的关系这里没有陈述。（P18b：反驳 5 与 6 的次序按编号排列。）
+
+**边界。** 不含伦理谓词；`Carries` 与所持的条件是表示前提，物理内容是所持之物有限；结论约束从某步起不被支持的形成，不约束支持是否回来；`Carries` 之下休眠不耗用储备，休眠的时间只在另设 `Decays` 时有界；开放与汲入沿用 §23 的形式：开放可以由无关的交换满足，汲入须家族被围住；沿依存链的滞后共灭没有陈述（P18b 更正，原文“沿依存链的滞后共灭、一般的转化读法没有陈述”：一般的转化读法见 §27 L6）；见证都是最小见证。本节经第八次独立审查，见 §27。
 
 ## 25. 世系：关系项经由所依与所给直接相关（P18）
 
@@ -1545,8 +1545,8 @@ Result(s): 复用 condition-correspondence-discipline（Interacts、Bearing、in
            life-as-condition-of-life（一类读法、Embodied、arises_given、active_of_bearing、relabel、Brood、Mutualism.apart）、
            generation-is-replenishment（ComesToStand、Embodied.comesToStand、Provisioned、Sleeper）、
            metaethical-core-characterization（Valuation、transmits、significant_iff）；新增 living-on-and-descent（L4 Becoming.Descent）
-Delta: 以之为生（LivesOn：在某步汲取一个关系项并以正需要依存于它）与世系（Descends：在某步给予一个关系项、它跨该步开始作为条件而在），
-       作为交互之外的两种 related（sustenance、descent）；以之为生不是免费的（LivesOn.active）；在 N_rel 之下沿两者的传递
+Delta: 以之为生（LivesOn：在某步汲取一个关系项并以正需要依存于它）与世系（Descends：参与某步并在该步给予一个关系项、它跨该步开始作为条件而在；
+       P18b 更正，原文不要求参与），作为交互之外的两种 related（sustenance、descent）；以之为生不是免费的（LivesOn.stands；LivesOn.active 另需体现；P18b 更正）；在 N_rel 之下沿两者的传递
        （living_on_reaches、lived_on_reaches、descent_reaches、ancestry_reaches）；平衡且 Acting 的流中生起的体现关系项从给予它的形成而来，
        珍视那个形成到达生起者的活的事件（Embodied.descends、arisen_reached）；世代由世系连通，G0 在那里有刻画（Brood.descended）；
        同一对应进入以之为生（Mutualism.relabel_sustenance）；世系跟着水平走（Provisioned.descends、Sleeper.no_descent）
@@ -1564,9 +1564,9 @@ Integration: 回答 life-as-condition-of-life 的下一步与 §18 的 Mutualism
 | 声明 | 内容 |
 |---|---|
 | `Web.LivesOn`、`Web.sustenance`、`interaction_sustenance` | 以之为生：一个形成在某步汲取一个关系项，并以正需要依存于它。这样的事件与该关系项的每个事件相关；与交互合起来是 `sustenance`，它扩展交互的连通 |
-| `LivesOn.active` | 以之为生不是免费的：在 `Dependent` 之下，活跃的形成只以在该步活跃的体现关系项为生 |
+| `LivesOn.active` | 以之为生不是免费的：在 `Dependent` 之下，活跃的形成以之为生的关系项若体现，就在该步活跃（P18b 更正，原文“只以在该步活跃的体现关系项为生”；体现是定理的假设，`Dependent` 本身给出的是 `LivesOn.stands`，见 §27 L8） |
 | `living_on_reaches`、`lived_on_reaches` | 在 N_rel 之下，珍视一个以某关系项为生的事件，就珍视该关系项的每个活的事件；珍视该关系项的任一事件，就珍视以它为生的每个活的事件 |
-| `Flow.Descends`、`Flow.descent`、`interaction_descent` | 世系：一个关系项从一个形成而来，当后者在某步给予它、它跨该步开始作为条件而在。世系使两个关系项的每个事件相关；与交互合起来是 `descent` |
+| `Flow.Descends`、`Flow.descent`、`interaction_descent` | 世系：一个关系项从一个形成而来，当后者参与某步、在该步给予它，而它跨该步开始作为条件而在（P18b 更正，原文“当后者在某步给予它”，不要求参与；见 §27 L10）。世系使两个关系项的每个事件相关；与交互合起来是 `descent` |
 | `descent_reaches`、`ancestry_reaches` | 在 N_rel 之下，珍视一个形成的任一事件，就珍视由它而来的关系项的每个活的事件，反之亦然 |
 | `Embodied.descends`、`arisen_reached` | 在平衡且只有活跃形成给予的流中，生起的体现关系项从在该步活跃的另一个形成而来；于是在 N_rel 之下，珍视那个形成的任一事件，就到达生起者的每个活的事件 |
 | `Brood.descended`（及 `birth_next`、`descends`、`alive_of_stands`、`self_alive`、`down`、`up`、`descent_connected`、`participates`、`not_coparticipating`、`not_interacting`） | 世代各由前一代给予：世系使它们连通，共同参与与交互都不连通它们；G0 在那里恰等于种子加 N_rel 加 N_std |
@@ -1575,23 +1575,23 @@ Integration: 回答 life-as-condition-of-life 的下一步与 §18 的 Mutualism
 
 **解读。**
 
-- **一类读法提供的关系。** 两类的表示中，形成与条件分开，所以事件只能经由一个共同的条件相关。一类读法中，一个形成所依的条件可以就是另一个关系项。以之为生与世系是这一读法才有的关系：前者是一个形成所依、所取的关系项，后者是一个关系项开始作为条件而在时所由来的给予。它们不是加在展开之外的东西，而是同一展开中已经有的汲取、依存与给予，在“哪个条件就是哪个关系项”的对应之下的读法。所以它们依赖这一对应（`relabel_sustenance`）：§22 J4 写明同一对应是表示的前提，J5 写明体现不进入两种估值；这里体现第一次进入估值，正是经由这一对应。
-- **不是免费的连通。** 交互要求依存能落空，以之为生同样要求正需要的依存：在 `Dependent` 之下，只能以在该步活跃的体现关系项为生（`LivesOn.active`）。世系要求正的给予与开始作为条件而在，空的给予不造成它。所以 §10（P9）排除的免费连通没有回来。
+- **一类读法提供的关系。** 两类的表示中，形成与条件分开，所以事件只能经由一个共同的条件相关。一类读法中，一个形成所依的条件可以就是另一个关系项。以之为生与世系是这一读法才有的关系：前者是一个形成所依、所取的关系项，后者是一个关系项开始作为条件而在时所由来的给予。它们不是加在展开之外的东西，而是同一展开中已经有的汲取、依存与给予，在“哪个条件就是哪个关系项”的对应之下的读法。所以它们依赖这一对应（`relabel_sustenance`）：§22 J4 写明同一对应是表示的前提，J5 写明体现不进入两种估值；这里一类读法的同一对应第一次进入估值，`sustenance` 与 `descent` 的定义不含体现（P18b 更正，原文“这里体现第一次进入估值，正是经由这一对应”；见 §27 L9）。
+- **不是免费的连通。** 交互要求依存能落空，以之为生同样要求实际的汲取与正需要的依存：在 `Dependent` 之下，所依的关系项在该步作为条件而在（`LivesOn.stands`），它体现时在该步活跃（`LivesOn.active`）（P18b 更正，原文“只能以在该步活跃的体现关系项为生”）。世系要求参与该步的形成正的给予与开始作为条件而在，空的给予与不参与者的给予项都不造成它（P18b 更正，原文“世系要求正的给予与开始作为条件而在，空的给予不造成它”：原定义不看给予者是否参与，不参与者的给予项曾造成世系，见 §27 L10）。所以 §10（P9）排除的免费连通没有回来。
 - **珍视的传递。** 在 N_rel 之下，珍视狐的进食就到达兔的活；珍视兔的任一事件也到达以兔为生的狐的活的事件（`living_on_reaches`、`lived_on_reaches`）。这与 §12（P9b）的 `drawing_reaches` 同构：传递由使用承担，不由侵蚀承担。世系的传递沿着给予：生起的体现关系项总有一个给予它的活跃形成（§18 的 `arises_given`），所以珍视那个形成到达生起者的活的事件（`arisen_reached`）。
 - **世系使世代成为一个整体。** `Brood` 的每一代只依存于自身、什么也不汲取，所以在共同参与与交互下各自孤立；世系使它们连通，于是 G0 在那里的刻画适用（`Brood.descended`）。在把体现的关系项读作“生”这一属于 Ren 的读法下（§23 K6），作者把它读作原话中两个“生”之间关系的一种形式内容：生起者由给予它的展开而来，并经由世系与整体相关（AI 论证）。这不替代 Ren 的原话，也不推出生起是好的：`living` 与 C 都没有改变。
 - **世系跟着水平走。** 世系的定义用开始作为条件而在，不用生起：种子从在它休眠时供给它的父代而来（`Provisioned.descends`），从休眠中醒来不从任何形成而来（`Sleeper.no_descent`）。这与 §24 的结论一致：生成承担补充，在水平上升处。
 
 **作者反审。**
 
-*反驳 1：这只是把想要的连通写进 related。* 一个读法确实可以让任何东西连通；§10 正因此加了纪律。这里的两种关系都受同一纪律约束：以之为生要求能落空的依存，世系要求实际的给予与开始作为条件而在；`Brood` 与蜂、花的结论是在这些约束下得到的。是否采用它们，是 Ren 的对应选择；本节陈述采用之后会怎样。
+*反驳 1：这只是把想要的连通写进 related。* 一个读法确实可以让任何东西连通；§10 正因此加了纪律。这里的两种关系都受同一纪律约束：以之为生要求能落空的依存，世系要求参与者实际的给予与开始作为条件而在（P18b 更正，原文“实际的给予”）；`Brood` 与蜂、花的结论是在这些约束下得到的。是否采用它们，是 Ren 的对应选择；本节陈述采用之后会怎样。
 
-*反驳 2：世系使两个关系项的所有事件相关，太粗了。* 是一个选择。只把给予的那一步与生起者相关，会使父代的其他事件与后代无关（`Brood` 中第 0 代在第 5 步的事件就孤立了）。世系作为关系项之间的关系，与 Metaethics 所列的世系（descent）一致；按时间排定的版本列为下一步。
+*反驳 2：世系使两个关系项的所有事件相关，太粗了。* 是一个选择。只把给予的那一步与生起者相关，会使父代的其他事件与后代无关（`Brood` 中第 0 代在第 5 步的事件就孤立了；P18b 补记：这一例子在更正后的定义下成立，第 0 代只参与第 0 步；原定义下第 0 代在第 5 步对第 6 代的给予项也造成世系，见 §27 L10）。世系作为关系项之间的关系，与 Metaethics 所列的世系（descent）一致；按时间排定的版本列为下一步。
 
 *反驳 3：太阳给予种子也算世系，这不是“世系”。* 对，`Descends` 不要求给予的形成体现（§22 J7 的 `SunSeed`；§23 K6 的 `EmbodiedSun` 表明体现也不使它成为生命）。名称取 Metaethics 的用语，由 Ren 定；更窄的读法（只在给予的关系项体现时）可以由 `arises_from_embodied` 得到，没有单独陈述。
 
 *反驳 4：这让 G0 珍视带来新的生起吗？* 不。G0 珍视活的主张；这里只是说，若世系算作形成的关系，珍视给予的形成的立场就到达生起者的活的事件。带来新的生起是否使结果更好是 C 的问题，`living` 与 C 都没有改变。
 
-**边界。** 不含伦理谓词；不改变 `living` 与 C；两种关系是 `related` 的候选读法，是否采用属于 Ren；世系不排定时间，给予的形成不必体现，以之为生不问汲取的效果；依赖一类读法的同一对应；只对逐步读法陈述；见证都是最小见证。本节尚未经独立审查。
+**边界。** 不含伦理谓词；不改变 `living` 与 C；两种关系是 `related` 的候选读法，是否采用属于 Ren；世系不排定时间，给予的形成不必体现，以之为生不问汲取的效果；依赖一类读法的同一对应；只对逐步读法陈述；见证都是最小见证。本节经第八次独立审查，见 §27。
 
 ## 26. 变化的规律：不加前提，开始成立与不再成立同步（P19）
 
@@ -1656,6 +1656,85 @@ Integration: 计划第 9 节第二项的第一部分；Renewal 的下降原则�
 *反驳 4：把生成不息与止息不息等同，会被读成“生生不息需要死亡”。* 定理只说成员层次上的数目同步，不说止息是生成的条件或代价，也不说它好。§21 的 `Layered` 表明同样的成员可以反复生起与止息（短暂的部分）；那里的止息不是消失。是否把这读作生生不息的一部分，由 Ren 定。
 
 **边界。** 不含伦理谓词；只对离散步的读法陈述；有限家族以列表给出；“复现”不给出频率或比例；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；不把形式规律当作对现实的演绎必然性；中文用语“止息”“开始成立”“不再成立”“同步”是 AI 的提议，名称由 Ren 定。本节尚未经独立审查。
+
+## 27. 第八次独立审查与更正（P18b）
+
+2026-10-09。按同一指示继续。另一 agent（Claude Opus 5.5，未参与撰写）独立审查了 P16c（§23）、P17（§24）与 P18（§25）（[审查](BECOMING-P16C-P17-P18-REVIEW.md)）。它在仓库之外从前导重新编译核心闭包的 24 个模块，1356 条源声明的公理报告全空；回执、源哈希、保留产物、引用哈希与证明绑定都对，数学全部接受，Lean 中没有数学错误。K2、K5、K7 关闭；K1、K3、K4、K6 关闭而有残余；K8 的八项中五项关闭。它提出十项（L1–L10）：一项定义与其陈述的意义不符（L10，最严重），两项散文中的错误（L5、L9），四项说得过强（L1、L2、L4、L8），一项缺少反例（L6），两项记账与表述（L3、L7）。审查没有发现替 Ren 选择任何读法；L1 的残余把体现读作生命，是 K6 已指出、P16c 已承认属于 Ren 的读法。本节记录逐项处理。审查的探针按需要移入相应模块，公理报告为空。§18、§20、§22–§25 与英文段落中受影响的句子已就地更正并标明；原文见提交 `4295dd24`。
+
+```text
+Result(s): 更正 living-on-and-descent（L8–L10）、reserve-defers-ending（L3(d)、L4–L6）、generation-is-replenishment（L7）、
+           life-as-condition-of-life（L1、L9）；whole-persists-through-generation 与 identity-across-steps 的关联说明（L2）；
+           检查器审计 Lean 生成的常量（L3(b)）；没有新的成果记录
+Delta: Flow.Descends 要求给予的形成参与该步，新增 Stranger 与 Brood.not_descends（L10）；LivesOn.stands 与 Drowsy（L8）；
+       Seed.no_held、Viable.no_held（L4）；Flow.carries_of_own（L5）；Web.redirect、redirect_same、redirect_dependent 与
+       Famine.undermines_one、transformed_not_undermining、living_differs（L6）；Balances.rise_given、ComesToStand.rises、
+       Web.rising_of_coming、Balances.rise_replenishes、rising_needs_replenishment、Growing、rise_lowers_on、rising_ceases_on、
+       rising_opens、rising_draws_in、rising_ceases，原有的开始作为条件而在的定理改由它们推出（L7）；用语、标题与关联说明（L1–L3）
+Supplied premises / correspondence: 不变；在所持条件被表示的地方，估值用哪种读法列为对应前提（L6）；世系按给予项计而不按净流量，
+       列为又一个读法选择（L10）；审查时间的约定写入 _process/RESULT-WORKFLOW.md（L3(f)）
+Evidence: 合并检查器回执 20261009T104417.218214Z（877 项定理／1387 项声明审计，核心闭包 25 个模块，包 23 个模块，源声明的公理报告全空；
+          核心闭包中 Lean 生成的常量依赖公理的有 29 条，都是带字段构造子的 injEq 引理，只依赖 propext）；外围桥接重跑 20261009T104540.104898Z；
+          实例检查通过
+Boundary: 不含伦理结论；不改变任何读法选择的地位；新名称是建议；探针与新见证都是最小见证
+Integration: §23–§25 的更正；§24 列为开放的“一般地构造转化的读法”完成；L7 使补充与耗散的定理都对上升陈述
+```
+
+### 27.1 逐项处理
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| L1 | 体现的关系项仍被称作生命：`Roles` 的模块说明、节标题与 `active_of_bearing` 的说明，§18，§23.4 反驳 4，章节 §2 与 §8，英文 P14 与 P16b；章节 §2 的中文多一句英文中没有的 AI 读法；记录标题 | `Roles` 三处改为“An embodied relatum as a condition”。§18、§20、§22、§23.4、章节与英文改为“体现关系项 / embodied relatum”与“need not be embodied”，标明 P18b 用语与原文。章节 §2 那句中文删去。life-as-condition-of-life 的标题改为“回答‘生作为生的条件’：……”，H14 的用语只作为所回答的问题的名称 |
+| L2 | `Dissipation` 的模块标题仍是无条件的“汲入”；两条关联说明仍写“部分不长久”，一条写“构成” | 标题改为“recurring taking opens finite families and, enclosed around, draws in”。两条说明改为记录标题的形式：部分短暂，或部分终结且同时活跃的部分有限时，整体经由部分的生成而持续 |
+| L3 | (a) “给予者”残留在 §18、§22 与计划；(b) “每条声明的公理报告为空”没有排除编译器生成的 `injEq` 引理；(c) §24 反驳的次序是 1、2、3、4、6、5；(d) 英文用“draws”表示耗用储备；(e) P16b 的英文段落把包写成核心；(f) 记录的审查时间早于它引用的运行 | (a) 改为“给予它的关系项／形成”。(b) 两者都做：现行文字改为“每条源声明”；检查器另审计核心闭包的全部常量（含生成的），断言依赖公理的只有带字段构造子的 `injEq` 引理、只依赖 `propext`、不是源声明，并在回执中逐一列出（29 条，与审查的计数相同）。(c) 按编号排列。(d) 改为“uses no reserve”。(e) 改为“The package”。(f) 约定写入 [RESULT-WORKFLOW](../../../RESULT-WORKFLOW.md)：作者修订记录内容（主张、前提、对应、界限、反例、关联说明或下一步）时刷新审查时间，只把验证范围改指新回执、内容不变时不刷新。本次内容改动的六份记录随之刷新；becoming-dependence-dynamics 在 P17 改了界限与下一步，作者复核后刷新 |
+| L4 | “储备是所持的条件”只给出一个方向：本模块自己的 `Seed` 与 `Viable` 的储备不是任何条件的水平，它们的网中也没有所持条件能承载种子 | 改为“储备可以是所持的条件；没有表示所持条件时，储备是给定的”。`Seed.no_held`、`Viable.no_held` 移入核心。“滞后就是依存转化到所持的条件上”限于所持条件承载它的地方。模块说明、根模块、包说明、§24、记录与章节 §9 随之更正 |
+| L5 | `carries_of_held` 的前提只要求有形成从所持条件取用，不必是持有者：`Larder` 中狐不参与、不取用，乌鸦吃掉脂肪，前提全部成立 | 说明改为“被（参与的任何形成）取用”。新增 `Flow.carries_of_own`：持有者自己参与并从中取用时的形式；`Famine.carries` 改由它证明，狐燃烧自己的脂肪。`Larder` 留在审查的探针中 |
+| L6 | 两种读法对狐第 1 步的事件给出不同的 living；转化的读法可以一般地构造 | `Web.redirect`（用 `if` 而不另设选择函数）、`redirect_same`、`redirect_dependent` 移入核心：所持条件承载形成时，把每个不被支持的依存移到所持条件上、需要为一，水平、活动与汲取不变，这样读出的依存网满足 `Dependent`。`Famine.undermines_one`、`transformed_not_undermining`、`living_differs` 移入核心。§24 反驳 2 与记录写明：两种读法在 living 上不同，选择是影响估值的对应前提；转化的读法满足 `Dependent` 由构造给出，是对储备的重新描述，不是关于展开的另一事实 |
+| L7 | 证明只用到上升带来的正的给予，不用从零开始 | 一般定理对上升陈述：`Balances.rise_given`（`renewedBy` 改由它推出）、`Web.ComesToStand.rises`、`Web.rising_of_coming`、`Balances.rise_replenishes`、`rising_needs_replenishment`、`rise_lowers_on`、`rising_ceases_on`、`rising_opens`、`rising_draws_in`、`rising_ceases`；原有的 `standing_*` 定理改由它们推出，陈述不变。`Growing`：一个条件每步上升、每步被给予，从不开始作为条件而在。§24、记录与章节改为“要求跟着水平的上升走，开始作为条件而在是从零的上升” |
+| L8 | `LivesOn.active` 以所依的关系项体现为假设；散文写成在 `Dependent` 之下只能以活跃的体现关系项为生；`Drowsy` 中吃者以既不体现、该步也不活跃的关系项为生 | 新增 `LivesOn.stands`：在 `Dependent` 之下，所依的关系项在该步作为条件而在。`LivesOn.active` 保留，所有说明写出体现的前提。`Drowsy` 移入核心：以之为生连通，交互不连通。模块说明、§25、记录、章节与检查器范围更正 |
+| L9 | “这里体现第一次进入估值”：`sustenance` 与 `descent` 的定义都不含体现 | 改为“这里一类读法的同一对应第一次进入估值；两种关系的定义不含体现”。life-as-condition-of-life 的下一步写为以更宽的形式得到回答；living-on-and-descent 的对应与依赖说明随之更正 |
+| L10 | `Flow.Descends` 读 `give`，不要求给予的形成参与该步。不参与者的给予项不进入任何水平，平衡与 `Acting` 都不约束它，却造成世系；`Brood` 中给予不看是谁给予，每一代都“从”每个自然数而来 | 定义改为要求参与：`∃ t, g ∈ L.present t ∧ 0 < L.give t g x ∧ W.ComesToStand t x`。`Embodied.descends`（`arises_given` 已给出参与）、`Brood.descends`、`Provisioned.descends` 与 `Brood.descended` 照旧成立；`Sleeper.no_descent` 改由没有参与者推出。新增 `Stranger`：流平衡、只有活跃形成给予，陌生者对种子的给予项在种子开始作为条件而在之步为正，种子只从父代而来；`Brood.not_descends`：第一代不从第八代而来。§25 反驳 2 的例子在更正后的定义下成立。世系按给予项计而不按净流量，写为又一个读法选择 |
+
+### 27.2 新的已检查声明
+
+| 模块 | 声明 | 内容 |
+|---|---|---|
+| Descent | `Flow.Descends`（更正） | 世系要求给予的形成参与该步 |
+| Descent | `LivesOn.stands` | 在 `Dependent` 之下，活跃的形成以之为生的关系项在该步作为条件而在 |
+| Descent | `Drowsy.Relatum`、`web`、`dependent`、`not_undermining`、`lives`、`eater_alive`、`sleeper_alive`、`down`、`up`、`sustenance_connected`、`not_interacting`、`drowsy` | 一个关系项始终以水平一作为条件而在、在奇数步醒来；吃者始终活跃，汲取它并以需要一依存于它。`Dependent` 成立，没有侵蚀；吃者在第 0 步以它为生，它不体现、该步不活跃；以之为生连通，交互只关联吃者的事件 |
+| Descent | `Stranger.Relatum`、`web`、`toSeed`、`flow`、`balances`、`acting`、`absent`、`stranger` | 父代、种子与陌生者；只有父代参与，在第 0 步给予种子一单位；流另有陌生者对种子的给予项。流平衡，只有活跃形成给予；陌生者从不参与；种子跨第 0 步开始作为条件而在，只从父代而来 |
+| Descent | `Brood.not_descends` | 第一代不从第八代而来：第八代在第 0 步的给予项不属于任何参与者 |
+| Flow | `Web.ComesToStand.rises`、`Web.rising_of_coming` | 开始作为条件而在是从零的上升；成员在任意晚的步开始作为条件而在，就在任意晚的步上升 |
+| Flow | `Balances.rise_given`、`Balances.rise_replenishes`、`rising_needs_replenishment` | 平衡的流中每次上升都被给予，补充每个包含它的家族；成员在任意晚的步上升时，家族的补充复现，不论取用什么。`renewedBy`、`standing_replenishes` 与 `standing_needs_replenishment` 改由它们推出 |
+| Flow | `Growing.web`、`flow`、`balances`、`growing` | 一个条件每步上升一、每步被给予，从不开始作为条件而在 |
+| Dissipation | `rise_lowers_on`、`rising_ceases_on`、`rising_opens`、`rising_draws_in`、`rising_ceases` | 被耗散家族的成员上升，降低家族的存量；从某步起被耗散的家族中，成员不在任意晚的步上升；耗散之下，成员在任意晚的步上升的不重复有限家族从任何一步起都不封闭，被围住时汲入；条件总共有限时，没有条件在任意晚的步上升。六个 `standing_*` 定理改由它们推出 |
+| Reserve | `Flow.carries_of_own` | 持有者自己参与并从所持条件取用时，所持条件承载它 |
+| Reserve | `Web.redirect`、`redirect_same`、`redirect_dependent` | 把每个不被支持的依存移到所持的条件上、需要为一；水平、活动与汲取不变；所持条件承载形成时，满足 `Dependent` |
+| Reserve | `Seed.no_held`、`Viable.no_held` | 两颗种子的依存网中没有任何条件承载它们：储备是给定的 |
+| Reserve | `Famine.undermines_one`、`transformed_not_undermining`、`living_differs` | 狐在第 1 步的事件按原读法侵蚀（它汲取兔，它在第 0 步满足过对兔的依存，兔在该步之后低于所需），按转化的读法不侵蚀（脂肪在该步之后仍为一） |
+
+检查器另写出 `EnvironmentAudit.lean`：列出核心闭包每个模块的常量数（含 Lean 生成的）与每个依赖公理的常量，断言后者都是带字段构造子的 `injEq` 引理、只依赖 `propext`、不是源声明，回执记下 `core_closure_constants` 与 `generated_axiom_dependencies`。
+
+### 27.3 审查列出的会改变判断的结果
+
+1. 世系（L10）：要求给予的形成参与，重述三个世系定理与“空的给予不造成它”。完成；原定义下的反例（`Stranger`、`Brood` 中第一代从第八代而来）在更正后的定义下不成立，并成为定理（`Stranger.stranger`、`Brood.not_descends`）。
+2. 以之为生（L8、L9）：以 `LivesOn.stands` 作为 `Dependent` 给出的东西，`LivesOn.active` 的每处说明写出前提，“体现第一次进入估值”改为同一对应。完成。
+3. 储备（L4–L6）：“可以是所持的条件”，`Seed` 与 `Viable` 是给定的储备；更正 `drawn` 的说明并给出持有者自身取用的形式；写明转化的读法在第 1 步改变 living，并记下一般的构造。完成。
+4. 上升（L7）：完成，且审查没有构造的部分（P17 的耗散定理对每个上升重述）也已构造。
+5. 残余（L1–L3）：完成。
+6. Ren 的选择保持开放：以之为生与世系是否算作 N_rel 所传递的形成关系；“生”与 living 的读法，包括体现的关系项是否是“生”；接续的读法与生生不息读到哪个层次；终结之步的汲取是否计入、对哪些汲取者；名称，包括给予的用语；以及新增的一项：在所持条件被表示的地方，估值用哪种读法。
+7. 审查未构造而仍开放的：沿依存链、有储备的滞后共灭；净给予形式的世系。
+
+### 27.4 作者反审
+
+*反驳 1：要求参与是否太强，一个形成可以在不参与的步上给予？* 在这一表示中不能：`given` 只对参与者求和，平衡只约束 `given`，所以不参与者的给予项不进入任何水平，也不被 `Acting` 约束。要求参与正是要求给予实际发生。原定义并不更宽地反映给予，只是多读了表示中没有约束的分量。
+
+*反驳 2：`redirect_dependent` 使 `Dependent` 在所持条件承载形成处总可满足，这是否削弱了 `Dependent`？* 它表明 `Dependent` 的内容与依存于什么的读法一起才确定：在所持条件被表示的地方，零储备与正储备是同一展开的两种读法，区别在于哪些依存被读出。这不削弱它，而是写明它不是关于展开本身、与读法无关的事实；两种读法在 living 上不同（`living_differs`），所以对估值来说，选择不是中立的，属于对应前提。
+
+*反驳 3：把一般定理改对上升陈述，开始作为条件而在还说明什么？* 它说明体现的生起落在哪里：体现的关系项在生起时开始作为条件而在，所以 §20 与 §23 的结论适用。上升的形式更宽：`Growing` 表明要求也落在从不开始作为条件而在、只是增长的条件上。§26 的下限说明一般的另一半：没有前提时，下降的复现需要上升的复现；这里加上，平衡时上升需要给予。
+
+*反驳 4：审计生成的常量是否越出“核心纯净”的要求？* 核心纯净的三条（只导入自身、源声明的公理报告为空、只用前导编译）不变。生成的 `injEq` 引理依赖 `propext`，它们属于环境，不属于证明；审计使这一事实被检查而不只是被说明。若以后出现别的依赖公理的生成常量，检查器会失败，需要先查明再接受。
+
+**边界。** 不含伦理谓词；不改变读法选择的地位；新名称是建议；探针与新见证都是最小见证；转化读法的选择、世系按给予项计，是公开的读法选择；沿依存链的滞后共灭与净给予的世系，开放。本节的更正尚未再经独立审查。
 
 ## English summary
 
@@ -1767,7 +1846,7 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 
 **P13: dissipation.** `Becoming.Dissipation` states dissipation on flows. Across a step, a family is closed when no formation taking part exchanges with a condition outside it, and a formation dissipates on it when it gives the family no more than it takes from it, and less when it takes. In a balanced flow a dissipated family falls by at least its number of takers at each step. Dissipated from some step on, its takers over all later steps number at most its stock there, and taking from it does not recur. So under dissipation on every closed family, a finite family from which formations take at arbitrarily late steps is open at arbitrarily late steps, and so is every finite family containing it. More without end and the unceasing arising of takers are such taking. With finitely many conditions in all, taking does not recur. A sun burning a fresh fuel at every step, giving a pool less than it burns while ever more growers take from the pool, meets every premise (`Frontier`). Without dissipation a closed cycle sustains more without end (`Cycle`). This turns the author's argument that a finite part on which taking recurs must open into a theorem under a stated premise (P16c correction; originally "that no finite part bears continued taking alone": where dissipation holds vacuously the opening exchange may be unrelated, and a family enclosed around draws in, see P16c). The core now has 450 theorems and 798 declaration audits over 20 modules, all with empty axiom reports. This section was reviewed by the sixth independent review; dissipation binds only where some finite family is closed, and the requirement comes from any recurring uptake, not only from more (see P16b).
 
-**P14: roles.** `Becoming.Roles` reads formations and conditions as two roles of one relatum. The two-kind reading of `Web` and `Flow` embeds in the one-kind reading in which no formation is a condition (P16b correction; originally "is"). Read so, every listed reading and the connection of both valuations is kept, and no formation active at some step is embodied or bears on itself. Which condition is which relatum is supplied by the shared index (P16b). A relatum is embodied when it stands as a condition exactly while it is active, and bears on itself when, while active, it depends on its own standing. Under `Dependent`, a formation depending on an embodied relatum lives only while that relatum does, activity passes along chains of such dependence, and a relatum that is not active ends every formation whose chain reaches it (coextinction). Drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence whatever ends it, so the drawing event is not living; whether drawing at an ending should so count, and for which drawers, belongs to Ren's reading of 生生 (P16b correction; originally "whether ending another life should so count"). In a balanced flow where only active formations give, an embodied relatum arises only as another active formation gives to it, and that formation need not be a life (P16b correction; originally "life from life"; P16c wording, originally "a giver"). Drawing on a relatum that bears on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition; where each depends only on the other, neither valuation relates them. A fox ends with the hare it eats, and generations arise without end, each given by the one before. This answers H14 of the fourth review. The core now has 513 theorems and 878 declaration audits over 21 modules, all with empty axiom reports. This section was reviewed by the sixth independent review; see P16b.
+**P14: roles.** `Becoming.Roles` reads formations and conditions as two roles of one relatum. The two-kind reading of `Web` and `Flow` embeds in the one-kind reading in which no formation is a condition (P16b correction; originally "is"). Read so, every listed reading and the connection of both valuations is kept, and no formation active at some step is embodied or bears on itself. Which condition is which relatum is supplied by the shared index (P16b). A relatum is embodied when it stands as a condition exactly while it is active, and bears on itself when, while active, it depends on its own standing. Under `Dependent`, a formation depending on an embodied relatum is active only while that relatum is (P18b wording; originally "lives only while that relatum does"), activity passes along chains of such dependence, and a relatum that is not active ends every formation whose chain reaches it (coextinction). Drawing on an embodied relatum that bears on itself, across the step at which it ends, breaks its own dependence whatever ends it, so the drawing event is not living; whether drawing at an ending should so count, and for which drawers, belongs to Ren's reading of 生生 (P16b correction; originally "whether ending another life should so count"). In a balanced flow where only active formations give, an embodied relatum arises only as another active formation gives to it, and that formation need not be embodied (P16b correction; originally "life from life"; P16c wording, originally "a giver"; P18b wording, originally "need not be a life"). Drawing on a relatum that bears on itself interacts with each of its active events, so a bee and a flower each depending on itself and on the other are connected with no third condition; where each depends only on the other, neither valuation relates them. A fox ends with the hare it eats, and generations arise without end, each given by the one before. This answers H14 of the fourth review. The core now has 513 theorems and 878 declaration audits over 21 modules, all with empty axiom reports. This section was reviewed by the sixth independent review; see P16b.
 
 **P12b: the fifth independent review.** A separate agent (Claude Opus 5.5) reviewed P11b and P12 ([review](BECOMING-P11B-P12-REVIEW.md)). It accepted all the mathematics with empty axiom reports, closed H1–H14, and found twelve issues (I1–I12) in premises, prose and correspondence. In the flow form, recurring uptake needs recurring replenishment (`uptake_needs_replenishment`): arising works only through the uptake it brings, and a constant consumer with nothing arising needs replenishment too (`Steady`). That the flow lists each formation once is a necessary premise of `More.unceasing` (`Repeated`), and the garden and the cycle meet every premise (`Garden.counted`, `Cycle.counted`). Labels carry nothing, while the pattern of names across steps carries identity. Continuity read one way lets the new naming make a continuity; read both ways it preserves arising and undermining exactly (`Reidentify.back`), and joining across a dormant step still changes a formation's class (`Dormancy`). Arisings made by naming alone can meet every premise of `Unceasing.regeneration_recurs` (`TideFlip`). Splits and merges change the continuation relation, not the number of formations. Under a census, with each formation taking part listed once and only active formations taking, under every continuation in which no formation continues as two more without end makes formations arise at arbitrarily late steps (`Flow.More.unceasingFrom`), while budding defeats it (`Budding`); no split is sufficient, not necessary (`Fork`; P16b correction, premises restored). A lineage and its members are two levels of one unfolding, with the part–whole relation omitted (`Layered`). The heir of `Succession` now lives. The core now has 559 theorems and 948 declaration audits over 19 modules, all with empty axiom reports. These corrections were reviewed by the sixth independent review; see P16b.
 
@@ -1780,12 +1859,12 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 - **Dissipation binds where a step is enclosed.** A step is enclosed when some finite family without repetition is closed across it (`Flow.Enclosed`). There, under dissipation, a formation that gives takes more than it gives (`Dissipative.gives_less`), so giving needs uptake (`giving_needs_uptake`). Where no step is enclosed, dissipation is vacuous and a renewer can give while taking nothing (`Spray`).
 - **Any recurring uptake.** Keeping one eater fed already reaches beyond every finite family (`Lone`). The 整体 reading therefore concerns any recurring uptake, not only more. The frontier with growers depending on the pool meets every premise together (`Rooted`), and the earlier witnesses are not dissipative (`witnesses_not_dissipative`).
 - **What the one-kind reading keeps and adds.** It keeps `Acting`, `Taking`, a census, a distinct present and dissipation as well (`roles_acting`, `roles_taking`, `roles_census`, `roles_distinct`, `roles_dissipative`). Which condition is which relatum is supplied by the shared index. Relabelling the conditions onto themselves keeps dependence, undermining, living and both connections, while changing which relata are embodied (`relabel`). So the two-kind representation embeds in the one-kind reading and omits that identification. Embodiment itself enters neither valuation (`Mutualism.apart_embodied`).
-- **Endings.** Drawing on a self-bearing life at the step at which it ends breaks a dependence, whatever ends the life. This includes a bystander that takes nothing and the life's own last event (`Wilting`). Whether that should count, and for which drawers, is Ren's choice.
-- **Giving.** An embodied relatum arises through the giving of another active relatum, which need not be a life (`SunSeed`). Where only embodied relata give, the relatum that gives is embodied (`arises_from_embodied`), and being embodied is not being a life (`EmbodiedSun`, P16c; originally "the giver is embodied").
+- **Endings.** Drawing on a self-bearing embodied relatum at the step at which it ends breaks a dependence, whatever ends it. This includes a bystander that takes nothing and the relatum's own last event (`Wilting`; P18b wording, originally "a self-bearing life", "the life"). Whether that should count, and for which drawers, is Ren's choice.
+- **Giving.** An embodied relatum arises through the giving of another active relatum, which need not be embodied (`SunSeed`; P18b wording, originally "need not be a life"). Where only embodied relata give, the relatum that gives is embodied (`arises_from_embodied`), and being embodied is not being a life (`EmbodiedSun`, P16c; originally "the giver is embodied").
 - **Splits.** No split is sufficient for `Flow.More.unceasingFrom`, not necessary (`Fork`), and without a census it fails (`Dormant.no_split_without_arising`).
 - **Vocabulary and counts.** The cost vocabulary becomes "giving needs uptake", and `Brood.costless` becomes `Brood.not_dissipative`; Ren may revert either. The P12, P13 and P14 paragraphs count the core closure (19, 20 and 21 modules). The P12b, P15 and P16 paragraphs count the package (19, 19 and 20).
 
-The core now has 676 theorems and 1115 declaration audits over a closure of 22 modules (a package of 20), all with empty axiom reports. These corrections were reviewed by the seventh independent review; see P16c.
+The package now has 676 theorems and 1115 declaration audits over a closure of 22 modules (a package of 20), all with empty axiom reports (P18b correction; originally "The core"). These corrections were reviewed by the seventh independent review; see P16c.
 
 **P16c: the seventh independent review.** A separate agent (Claude Opus 5.5) reviewed P15, P16 and P16b ([review](BECOMING-P15-P16-P16B-REVIEW.md)). It recompiled the 22 modules of the core closure from the prelude, with empty axiom reports for all 1185 declarations, accepted all the mathematics, and found J1–J11 closed, J1 and J7 with an overclaim and J11 with residues. It raised eight findings (K1–K8) in premises, prose and correspondence, with two patterns: a conclusion met by unrelated exchange where dissipation holds vacuously, and embodiment read as life.
 
@@ -1796,32 +1875,32 @@ The core now has 676 theorems and 1115 declaration audits over a closure of 22 m
 - **Merges.** On the garden a merge comes with a persisting grower re-read as arising at every step, so the conclusion holds without more (`Merge.idle`). Where the merged formation ends, what arises is exactly what is new (`Confluence`).
 - **Vocabulary and counts.** "Giver" becomes "the relatum that gives" in current text, and the hypothesis `givers` becomes `gives_embodied`; Ren decides the vocabulary. The P15 and P16 paragraphs count the package, not the core.
 
-The package now has 728 theorems and 1182 declaration audits, over a core closure of 22 modules and a package of 20, all with empty axiom reports. These corrections have not been independently reviewed again.
+The package now has 728 theorems and 1182 declaration audits, over a core closure of 22 modules and a package of 20, all with empty axiom reports. These corrections were reviewed by the eighth independent review; see P18b.
 
 **P17: reserve, and coming to stand.** `Dependent` lets a formation be active only where it is supported, and `Embodied` lets a relatum stand as a condition only while it is active; both exclude what is held. [Becoming.Reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean) states what a reserve carries ([reserve-defers-ending](../../../../theories/becoming/results/records/reserve-defers-ending.md)). New theorems in Flow, Dissipation and Roles move the requirement of §20 and §23 onto what it actually uses ([generation-is-replenishment](../../../../theories/becoming/results/records/generation-is-replenishment.md)).
 
 - **`Dependent` is the zero reserve.** A reserve does not rise across a step at which its formation is unsupported, and falls if the formation is active there (`Web.Carries`). The zero reserve is exactly `Dependent` (`carries_zero`), so relaxing it means a positive reserve, not activity outside dependence.
-- **A reserve is a held condition.** In a balanced flow, consider a condition that nothing gives to while its holder is unsupported, and that the holder takes from while active there. That condition carries the holder (`Flow.carries_of_held`). The same unfolding can be read with the dependence transformed onto the held condition (`Famine.transformed_dependent`).
+- **A reserve can be a held condition** (P18b correction; originally "is"). In a balanced flow, consider a condition that nothing gives to while its holder is unsupported, and that is taken from, by whatever takes part, while the holder is active there (P18b correction; originally "that the holder takes from"). That condition carries the holder (`Flow.carries_of_held`). Where no held condition is represented, the reserve is supplied (`Seed.no_held`). The same levels, activity, drawing and flow can be read with the dependence transformed onto the held condition (`Famine.transformed_dependent`), a reading that differs in living (P18b correction; originally "The same unfolding"; see P18b).
 - **A reserve defers the end and does not escape it.** A formation unsupported from some step on is active only finitely often, and at most as often as its reserve at the start (`Carries.lasts`). This holds after a loss without return (`consumed_lasts`) and after the end of an embodied relatum it depends on (`coextinct_lasts`). It is the pattern of `substitution_defers`.
-  - **Dormancy.** Unsupported, a formation arises only finitely often (`arising_finitely`). Dormancy itself draws nothing under `Carries`. A reserve that also decays (`Decays`) bounds the time as well (`ends_within`).
+  - **Dormancy.** Unsupported, a formation arises only finitely often (`arising_finitely`). Dormancy itself uses no reserve under `Carries` (P18b wording; originally "draws nothing"). A reserve that also decays (`Decays`) bounds the time as well (`ends_within`).
   - **Witnesses.** The bounds are attained by `Seed`, `Viable` and `Famine`, in which a fox outlives the hare by exactly its fat.
-- **Generation bears replenishment where standing rises.** A condition comes to stand across a step when its level is zero before it and positive after it (`Web.ComesToStand`). In a balanced flow it is given at least its new standing. Recurring in a family, it needs the family's replenishment to recur (`standing_needs_replenishment`). It lowers the stock of a family dissipated on (`standing_lowers_on`). Under dissipation, a finite family without repetition in which it recurs is open at arbitrarily late steps (`standing_opens`); enclosed around, the family draws in (`standing_draws_in`). With finitely many conditions in all, it does not recur (`standing_ceases`). As §23 found, the opening exchange may be unrelated to the family.
+- **Generation bears replenishment where standing rises.** A condition comes to stand across a step when its level is zero before it and positive after it (`Web.ComesToStand`); what the theorems use is the rise, from zero in this case (P18b; see there). In a balanced flow it is given at least its new standing. Recurring in a family, it needs the family's replenishment to recur (`standing_needs_replenishment`). It lowers the stock of a family dissipated on (`standing_lowers_on`). Under dissipation, a finite family without repetition in which it recurs is open at arbitrarily late steps (`standing_opens`); enclosed around, the family draws in (`standing_draws_in`). With finitely many conditions in all, it does not recur (`standing_ceases`). As §23 found, the opening exchange may be unrelated to the family.
   - An embodied relatum comes to stand as it arises (`Embodied.comesToStand`), so the nine theorems on embodiment of §20 and §23 now follow from these, with their statements unchanged.
   - A relatum standing while active, and absent at some earlier step, came to stand in between (`came_to_stand`). A seed is given its standing while dormant and arises with nothing given (`Provisioned`). Waking from dormancy is arising without coming to stand, and needs nothing given (`Sleeper`, in whose flow nothing takes part).
 - **Author's reading.** Without support, what is held only defers the end; unceasing arising, where what arises comes to stand, needs unceasing replenishment. Whether these formations and relata are 生 is Ren's reading (§23, K6). The author reads this as one formal content of 不息 that what is held cannot carry alone (an AI argument). It does not replace Ren's words.
 
-The package now has 774 theorems and 1257 declaration audits, over a core closure of 23 modules and a package of 21, all with empty axiom reports. Section 24 has not yet been independently reviewed.
+The package now has 774 theorems and 1257 declaration audits, over a core closure of 23 modules and a package of 21, all with empty axiom reports. Section 24 was reviewed by the eighth independent review; see P18b.
 
 **P18: living on and descent.** [Becoming.Descent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean) (L4) adds two readings of `related` that only the one-kind reading has, each added to interaction, with the living events of the stepwise reading unchanged ([living-on-and-descent](../../../../theories/becoming/results/records/living-on-and-descent.md)).
 
-- **Living on.** A formation lives on a relatum at a step when it draws on it and depends on it at a positive need there (`Web.LivesOn`). Like interaction it is not free: under `Dependent` an active formation lives only on an embodied relatum active at that step (`LivesOn.active`). It connects the bee and the flower that depend only on each other, which neither co-participation nor interaction connects (`Mutualism.apart_sustenance_connected`). Under N_rel, valuing the fox's eating reaches the hare's living, and conversely (`living_on_reaches`, `lived_on_reaches`).
-- **Descent.** A relatum descends from a formation that gives to it at a step across which it comes to stand (`Flow.Descends`), and descent relates every event of the two. An embodied relatum that arises descends from another active formation, which need not be embodied (`Embodied.descends`). So under N_rel, valuing that formation reaches the arisen relatum's living events (`arisen_reached`).
+- **Living on.** A formation lives on a relatum at a step when it draws on it and depends on it at a positive need there (`Web.LivesOn`). Like interaction it is not free: under `Dependent` the relatum an active formation lives on stands at that step (`LivesOn.stands`), and where it is embodied it is active there (`LivesOn.active`) (P18b correction; originally "lives only on an embodied relatum active at that step"). It connects the bee and the flower that depend only on each other, which neither co-participation nor interaction connects (`Mutualism.apart_sustenance_connected`). Under N_rel, valuing the fox's eating reaches the hare's living, and conversely (`living_on_reaches`, `lived_on_reaches`).
+- **Descent.** A relatum descends from a formation that takes part in a step at which it gives to the relatum and across which the relatum comes to stand (`Flow.Descends`; P18b correction, originally without taking part), and descent relates every event of the two. An embodied relatum that arises descends from another active formation, which need not be embodied (`Embodied.descends`). So under N_rel, valuing that formation reaches the arisen relatum's living events (`arisen_reached`).
   - Generations each given by the one before are connected by descent alone, and G0 there is exactly a seed with N_rel and N_std (`Brood.descended`).
   - Descent follows coming to stand: a provisioned seed descends from its parent, and waking from dormancy descends from nothing (`Provisioned.descends`, `Sleeper.no_descent`).
 - **Where the identification enters.** Relabelling the conditions of the bee and the flower each onto the other keeps co-participation and interaction and removes the connection by living on (`Mutualism.relabel_sustenance`).
 - **What is not claimed.** Whether these readings count as formed relations for N_rel is Ren's choice, as is taking embodied relata as 生. Neither living nor C changes, so nothing here makes bringing about new arising better.
 
-The package now has 799 theorems and 1286 declaration audits, over a core closure of 24 modules and a package of 22, all with empty axiom reports. Section 25 has not yet been independently reviewed.
+The package now has 799 theorems and 1286 declaration audits, over a core closure of 24 modules and a package of 22, all with empty axiom reports. Section 25 was reviewed by the eighth independent review; see P18b.
 
 **P19: laws of change with no premise.** Following Ren's instruction to aim at a complete Theory of Becoming, [Becoming.Change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean) states what holds of every unfolding, with no premise about it ([coming-and-ceasing-keep-pace](../../../../theories/becoming/results/records/coming-and-ceasing-keep-pace.md)). The representation's commitments are disclosed separately: discrete steps, natural-number amounts, and decidability where counting needs it.
 
@@ -1836,3 +1915,13 @@ The package now has 799 theorems and 1286 declaration audits, over a core closur
 - **Housekeeping.** `mark` moves here from `Reserve`. `total_map` and `total_congr` move from `Roles` to the totals section of `Flow`, which gains `total_ones`.
 
 The package now has 841 theorems and 1342 declaration audits, over a core closure of 25 modules and a package of 23, all with empty axiom reports. Section 26 has not yet been independently reviewed.
+
+**P18b: the eighth independent review.** A separate agent (Claude Opus 5.5) reviewed P16c, P17 and P18 ([review](BECOMING-P16C-P17-P18-REVIEW.md)). It recompiled the 24 modules of the core closure from the prelude, with empty axiom reports for all 1356 source declarations, and accepted all the mathematics. K2, K5 and K7 are closed, K1, K3, K4 and K6 closed with residues, and five of K8's eight items closed. It raised ten findings (L1–L10). No reading was chosen for Ren. The corrections are made in place and marked; section 27 records the handling.
+
+- **Descent requires taking part (L10, the most serious).** `Flow.Descends` read `give` without requiring the formation that gives to take part in the step. A gift entry of a formation taking no part enters no level, and neither balance nor `Acting` constrains it, yet it made descent; in `Brood` every generation descended from every number. Descent now requires the formation to take part. Every published positive result holds, and the spurious descents fail as theorems (`Stranger.stranger`, `Brood.not_descends`). Descent counts gift entries, not net flow, a further choice of reading.
+- **What living on needs (L8, L9).** Under `Dependent` the relatum lived on stands at that step (`LivesOn.stands`); only where it is embodied is it active there (`LivesOn.active`). An eater can live on a dormant relatum that is neither embodied nor active, and living on connects them where interaction does not (`Drowsy`). Neither relation's definition mentions embodiment: what first enters the valuation is the one-kind identification.
+- **Reserve (L4–L6).** A reserve can be a held condition; where none is represented it is supplied, and no condition of the seeds' webs carries them (`Seed.no_held`, `Viable.no_held`). The held condition may be taken from by whatever takes part; where the holder itself takes from it, as the fox burns its fat, the reserve is its own use (`Flow.carries_of_own`). Moving each unsupported dependence onto the held condition gives a `Dependent` reading by construction (`Web.redirect`, `redirect_dependent`), and that reading differs in living: the fox's event at step one undermines as published and not when its dependence is moved onto its fat (`Famine.living_differs`). Which reading the valuation uses is a correspondence premise.
+- **The requirement follows the rise (L7).** In a balanced flow every rise is given to (`Balances.rise_given`). The replenishment and dissipation theorems now hold for any rise (`rising_needs_replenishment`, `rise_lowers_on`, `rising_ceases_on`, `rising_opens`, `rising_draws_in`, `rising_ceases`), and coming to stand is the rise from nothing (`ComesToStand.rises`), so the earlier theorems follow with their statements unchanged. A condition can rise at every step without ever coming to stand (`Growing`).
+- **Residues and bookkeeping (L1–L3).** Embodied relata are no longer called lives: "an embodied relatum as a condition" in `Roles`, and "need not be embodied" in the prose, while H14's phrase names only the question the record answers. The `Dissipation` title states the enclosure. Two related notes state their premises. "Giver" is gone from current text, the §24 rebuttals run in order, dormancy "uses no reserve", and the P16b paragraph counts the package. The text now says that every *source* declaration has an empty axiom report. The checker also audits every constant Lean generates in the core closure: only the injectivity lemmas of constructors with fields (`injEq`) depend on an axiom, `propext`; there are 29, and no source declaration uses them. The convention for review stamps is in the result workflow.
+
+The package now has 877 theorems and 1387 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 27 has not yet been independently reviewed.

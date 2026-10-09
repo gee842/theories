@@ -55,9 +55,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arbitrarily late steps, as of formations that take arising without end, needs
   replenishment at arbitrarily late steps;
   more generation without end needs replenishment without bound and, with bounded
-  capacity, renewers without bound; unceasing generation is not yet more. A condition
-  coming to stand is given its new standing, so where members of a family come to stand
-  at arbitrarily late steps, its replenishment recurs.
+  capacity, renewers without bound; unceasing generation is not yet more. Every rise is
+  given to, so where members of a family rise at arbitrarily late steps, as in coming to
+  stand, the rise from nothing, its replenishment recurs.
 * `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
   are one change, read of activity, dependence and standing. Over any stretch an amount
@@ -90,9 +90,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   exchange around it lies within finitely many conditions, it draws in: at arbitrarily
   late steps some formation gives to it and takes from beyond it. With finitely many
   conditions in all, taking does not recur. Where the exchange of a step lies within
-  finitely many conditions, giving needs uptake. Coming to stand falls under this with
-  no taking of its own: where it recurs in a finite family, the family is open at
-  arbitrarily late steps and, enclosed around, draws in.
+  finitely many conditions, giving needs uptake. Rising, as in coming to stand, falls
+  under this with no taking of its own: where it recurs in a finite family, the family
+  is open at arbitrarily late steps and, enclosed around, draws in.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands
@@ -103,7 +103,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   finite family leaves it open, draws in where each step's exchange around it lies within
   finitely many relata, and in a finite world ceases.
 * `Becoming.Reserve` (L3): a reserve carries activity beyond support. `Dependent` is
-  exactly the zero reserve, and a reserve is a held condition. A formation unsupported
+  exactly the zero reserve; a reserve can be a held condition, and where none is
+  represented it is supplied. Where a held condition carries the formations, moving
+  their unsupported dependences onto it gives a `Dependent` reading by construction,
+  which can differ in which events undermine. A formation unsupported
   from some step on is active at most as often as its reserve at the start, so a reserve
   defers the end after a loss and after coextinction and does not escape it, and a
   reserve decaying while dormant bounds the time as well. A relatum standing while active,
@@ -124,15 +127,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   their connection, and formations bearing on themselves relate directly, with no third
   condition.
 * `Becoming.Descent` (L4): relata related directly. Read with one kind of relatum, an
-  event is related to the relatum it lives on, drawing on it at a positive need, and a
-  relatum given to as it comes to stand descends from the formation that gives to it.
+  event is related to the relatum it lives on, drawing on it and depending on it at a
+  positive need, which under `Dependent` stands at that step; and a relatum given to as
+  it comes to stand descends from the formation taking part that gives to it.
   An embodied relatum that arises descends from another active formation, so under N_rel
   valuing that formation reaches the arisen relatum's living events, and generations each
   given by the one before are connected by descent alone. Whether these readings count
   as formed relations is Ren's choice.
 
-The core imports nothing else, every declaration has an empty axiom report, and it
-compiles from Lean's prelude alone. `Becoming.Bridge` lies outside the core: it shows
+The core imports nothing else, every source declaration has an empty axiom report, and
+it compiles from Lean's prelude alone. Of the constants Lean generates, only the
+injectivity lemmas of constructors with fields depend on an axiom, `propext`; no source
+declaration uses them. `Becoming.Bridge` lies outside the core: it shows
 that existing modules' interfaces are these, so dependence runs toward the core.
 
 The foundation keeps its historical namespace `Generative`. Its processes are any

@@ -35,8 +35,8 @@ Results:
   at a positive need (`SelfBearing`); under `Dependent` it then stands while active
   (`SelfBearing.stands`), and if it is embodied its self-dependence is met exactly while
   it is active (`SelfBearing.met_iff`).
-* Life as a condition of life. Under `Dependent`, a formation depending on an embodied
-  relatum at a positive need is active only while that relatum is
+* An embodied relatum as a condition. Under `Dependent`, a formation depending on an
+  embodied relatum at a positive need is active only while that relatum is
   (`Embodied.active_of_bearing`). Activity passes along every chain of such dependence
   (`active_along`), so a relatum that is not active ends every formation whose chain
   reaches it (`coextinct`). Consuming an embodied relatum at a need of one ends it
@@ -392,7 +392,7 @@ theorem roles_dissipative : L.roles.Dissipative ↔ L.Dissipative :=
 
 end Flow
 
-/-! ## Life as a condition of life -/
+/-! ## An embodied relatum as a condition -/
 
 namespace Web
 
@@ -430,8 +430,8 @@ theorem SelfBearing.met_iff (dependent : W.Dependent) {x : X} (embodied : W.Embo
    fun active => ⟨(self t active).1, (self t active).2,
      dependent t x active x (self t active).1⟩⟩
 
-/-- Life as a condition of life: under `Dependent`, a formation that depends on an
-embodied relatum at a positive need is active only while that relatum is. -/
+/-- An embodied relatum as a condition: under `Dependent`, a formation that depends on it
+at a positive need is active only while it is. -/
 theorem Embodied.active_of_bearing (dependent : W.Dependent) {y : X}
     (embodied : W.Embodied y) {t : Nat} {g : X} (active : W.active t g)
     (bearing : W.requires t g y ∧ 0 < W.need t g y) : W.active t y :=

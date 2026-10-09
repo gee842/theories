@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T08:40:51+00:00",
+  "reviewed_at_utc": "2026-10-09T10:40:04+00:00",
   "claim": {
     "zh": "在依存网上，一个形成是某些部分的整体，当它恰在某个部分活跃时活跃。这是活动的重合，不是构成：每个形成都是它自身的整体，两个每步都活跃的形成互为整体（whole_self、Immortal.each_other）。整体只经由某个部分的生起而生起，所以整体在任意晚的步生起时，部分也在任意晚的步生起。部分覆盖从某步起的每一步（每步有部分活跃）时：若没有部分在相隔 d 步的两步都活跃，则从那一步起每 d 个连续步内都有部分生起；若每个部分的活动终结，且每步活跃的部分可由一个有限列表恰好列出，则部分在任意晚的步生起，并且在任何有限的部分列表之外生起：不断有新的部分（Covered.arises_within、Covered.needs_arising、Covered.needs_new）。从某步起每步都活跃的整体被它的部分覆盖（Whole.covered），所以整体只经由部分的不息生成而持续。在 Brief 之下，这可以是同样的部分反复生起（Layered：两个成员都 Brief 1，每步都有成员生起，每次生起都是两者之一，它们的活动不终结）；在 Ends 与 Listed 之下，是不断新的部分，但不是更多的部分（Generations 每步有两个活跃）。每个前提都必要：有一个永不终结的部分时，整体持续而没有任何生起（Immortal）；无穷多个部分同时活跃、各在不同的步终结时，整体持续而没有任何生起，于是活跃的部分不能被有限地列出（Countless）。前提相容：一代代成员各活跃两步，谱系每步活跃而从不生起，每步都有新成员生起（Generations）。界 d 可以达到：轮班两步的成员只在奇数步生起（Shifts）。逆命题不成立：部分在任意晚的步生起、各只活跃一次时，整体在其间不活跃（Gaps）。Identity 的 Layered 中，谱系是其成员的整体（Layered.composed）。不用伦理前提，也不用 Lean 公理。",
     "en": "On webs, a formation is the whole of some parts when it is active exactly while some part is. A whole arises only as some part arises, so where a whole arises at arbitrarily late steps its parts do too. This is coincidence of activity, not constitution: every formation is the whole of itself, and two formations active at every step are each the whole of the other (whole_self, Immortal.each_other). Where parts cover every step from some step on, some part being active at each: if no part is active at two steps d apart, a part arises within every d consecutive steps from that step on; if every part's activity ends and at each step a finite list names exactly the active parts, parts arise at arbitrarily late steps, and outside every finite list of parts: ever new parts (Covered.arises_within, Covered.needs_arising, Covered.needs_new). A whole active at every step from some step on is covered by its parts (Whole.covered), so it persists only through the unceasing generation of its parts. Under Brief this may be the same parts arising again (Layered: both members are Brief 1, a member arises at every step, every arising is of one of the two, and neither's activity ends); under Ends and Listed it is ever new parts, though not more of them (Generations has two active at every step). Each premise is needed: with a part whose activity never ends, the whole persists while nothing arises (Immortal); with infinitely many parts active at once, each ending at a different step, the whole persists while nothing arises, so the active parts cannot be listed finitely (Countless). The premises are consistent: generation after generation of members, each active for two steps, makes a lineage active at every step that never arises, while a new member arises at every step (Generations). The bound d is attained: members working in shifts of two steps arise only across odd steps (Shifts). The converse fails: parts arising at arbitrarily late steps, each active once, leave the whole inactive between them (Gaps). In Identity's Layered, the lineage is the whole of its members (Layered.composed). No ethical premise and no Lean axiom is used."
@@ -119,8 +119,8 @@
     {
       "id": "theory-of-becoming-foundation",
       "detail": {
-        "zh": "整体与部分：持续的整体由不长久的部分的不息生成构成。整体的演绎仍开放。",
-        "en": "Whole and parts: a persisting whole is made of the unceasing generation of parts that do not last. The whole deduction remains open."
+        "zh": "整体与部分：部分短暂，或部分终结且同时活跃的部分有限时，整体经由部分的生成而持续。整体的演绎仍开放。",
+        "en": "Whole and parts: where parts are brief, or end with finitely many active at once, a whole persists through the generation of its parts. The whole deduction remains open."
       }
     }
   ],
@@ -166,8 +166,8 @@
     "en": "Contains no ethical predicate; Whole is coincidence of activity, not constitution (whole_self, Immortal.each_other), and arises_within and needs_arising use only the parts' cover (Covered); the whole relates to its parts only through activity, and its dependence, drawing and undermining are not derived from its parts'; the part relation is static, membership not changing from step to step; Brief, and Ends with Listed, are premises about the parts, which may also arise again rather than end (Layered's members); arising depends on identity across steps; the conclusion does not say which part arises, nor that their number grows; at which level 生生不息 is read is Ren's; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T095726.865589Z）：Becoming.Wholes 的 26 项定理全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 841 项定理／1342 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §21，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T095726.865589Z): all 26 theorems of Becoming.Wholes have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 841 theorems/1342 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §21 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T104417.218214Z）：Becoming.Wholes 的 26 项定理全部空依赖；同一回执覆盖包内 23 个模块（含只作导入的根模块与桥接），共 877 项定理／1387 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §21，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 25 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T104417.218214Z): all 26 theorems of Becoming.Wholes have empty axiom reports; the same receipt covers the package's 23 modules (including the import-only root and the bridge) with 877 theorems/1387 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §21 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 25 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -260,19 +260,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b124031b7fcf0cf86b5ed984ce66ebe11fe7b941ae41033eea7fc8b83f1e89f8",
+      "sha256": "f46f78fc3969d0b2b1956095b12461cd53c331be0400e572fb68458c2ad6d715",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2ac45b897d628154500f36afdae3cc71312fd888f3280e1c1b793b852bb4288f",
+      "sha256": "4923b25f719e7e3a4b9a4ab467041cbdb7383ca257dab2047fce901b85090ee7",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "11075c1e5c525524092ecbdae22c7e600d0661fa9588a981ee9d74682ad2382e",
+      "sha256": "a4bba4082243c093c0bf00f34c53da28781c4527213d5942c79e7f7c7261fbc1",
       "declarations": []
     },
     {
@@ -347,6 +347,14 @@
     {
       "zh": "2026-10-09：P19 新增 Becoming.Change 之后，合并检查器重跑（20261009T095726.865589Z），本记录的检验范围改指新回执；主张与证明不变。",
       "en": "2026-10-09: after P19 added Becoming.Change, the consolidated checker was rerun (20261009T095726.865589Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：验证范围重新指向合并检查器回执 20261009T104417.218214Z 与外围回执 20261009T104540.104898Z；按第八次独立审查 L3(b)，写明“每条源声明”的公理报告为空，并记下检查器对 Lean 生成常量的审计。断言不变。",
+      "en": "2026-10-09 P18b: validation scope re-pointed to consolidated receipt 20261009T104417.218214Z and periphery receipt 20261009T104540.104898Z; following the eighth independent review's L3(b), it says every source declaration has an empty axiom report and records the checker's audit of the constants Lean generates. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-09 P18b：按第八次独立审查 L2 更正与 theory-of-becoming-foundation 的关联说明（“由……构成”改为“经由部分的生成而持续”，并写出前提）。断言不变。",
+      "en": "2026-10-09 P18b: the related note to theory-of-becoming-foundation corrected following the eighth independent review's L2 (‘made of’ becomes ‘persists through the generation of its parts’, with the premises stated). The claim is unchanged."
     }
   ]
 }
