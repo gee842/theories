@@ -1,4 +1,5 @@
 import Becoming.Metaethics
+import Becoming.Roles
 
 /-!
 # Which conditions relate: a correspondence discipline
@@ -38,6 +39,15 @@ Results:
   depending on one condition are connected through its use while the use keeps their
   support, and not when the only use undermines it. Co-participation connects them in
   both runs.
+* Formations as each other's conditions. Read with one kind of relatum
+  (`Becoming.Roles`), a web keeps the connection of co-participation and of interaction
+  (`roles_valuation_connected`, `roles_interaction_connected`). Drawing on a relatum that
+  bears on itself interacts with each of its active events (`SelfBearing.interacts`): a
+  bee and a flower, each depending on itself and on the other, are connected with no
+  third condition, and G0 there is exactly a seed with N_rel and N_std
+  (`Mutualism.significant_iff`). Where each depends only on the other, neither
+  co-participation nor interaction relates the bee to the flower
+  (`Mutualism.apart_not_connected`, `Mutualism.apart_not_interacting`).
 
 Not settled:
 * Adjoining a renewed condition on which every formation depends at a positive level
@@ -71,6 +81,27 @@ theorem Valuation.Connected.transfer {Pos C : Type} {V V' : Valuation Pos C}
     Reach.map (P := V.relations) (Q := V'.relations) (f := id)
       (fun _ _ _ step => ⟨related _ _ step.1, (living _).mp step.2⟩)
       (connected c d ((living c).mpr alive) ((living d).mpr alive'))
+
+/-- Connection agrees on two valuations when a one-to-one map onto the living claims of
+the second keeps living and relations. -/
+theorem Valuation.connected_iff_of_map {Pos Pos' C C' : Type} {V : Valuation Pos C}
+    {V' : Valuation Pos' C'} (q : C → C') (injective : ∀ c d, q c = q d → c = d)
+    (onto : ∀ c', V'.living c' → ∃ c, q c = c')
+    (living : ∀ c, V'.living (q c) ↔ V.living c)
+    (related : ∀ c d, V'.related (q c) (q d) ↔ V.related c d) :
+    V'.Connected ↔ V.Connected :=
+  ⟨fun connected c d alive alive' =>
+    match Reach.lift (P := V.relations) (Q := V'.relations) (q := q)
+      (fun s _ r step => match r, onto r step.2, step with
+        | _, ⟨t, rfl⟩, step => ⟨t, ⟨(related s t).mp step.1, (living t).mp step.2⟩, rfl⟩)
+      (connected (q c) (q d) ((living c).mpr alive) ((living d).mpr alive')) with
+    | ⟨t, reach, image⟩ => injective t d image ▸ reach,
+   fun connected c' d' alive alive' =>
+    match c', d', onto c' alive, onto d' alive', alive, alive' with
+    | _, _, ⟨c, rfl⟩, ⟨d, rfl⟩, alive, alive' =>
+      Reach.map (P := V.relations) (Q := V'.relations) (f := q)
+        (fun s _ t step => ⟨(related s t).mpr step.1, (living t).mpr step.2⟩)
+        (connected c d ((living c).mp alive) ((living d).mp alive'))⟩
 
 namespace Web
 
@@ -487,5 +518,80 @@ theorem connection_by_living_use (own sig : Unit → Formation × Nat → Prop) 
    Web.connected_of_common _ own sig () fun e alive => participates falling e alive.1⟩
 
 end Shared
+
+/-! ## Formations as each other's conditions -/
+
+namespace Web
+
+variable {F C Pos : Type} (W : Web F C) (own sig : Pos → F × Nat → Prop)
+  (own' sig' : Pos → (F ⊕ C) × Nat → Prop)
+
+/-- Co-participation reads the same connection with one kind of relatum. -/
+theorem roles_valuation_connected :
+    (W.roles.valuation own' sig').Connected ↔ (W.valuation own sig).Connected :=
+  Valuation.connected_iff_of_map (fun e => (.inl e.1, e.2)) roles_event_injective
+    (fun e alive => W.roles_event_onto e alive.1) (fun e => W.roles_alive e.2 e.1)
+    fun _ _ =>
+      ⟨fun | ⟨.inr c, joins, joins'⟩ => ⟨c, joins, joins'⟩
+           | ⟨.inl _, joins, _⟩ => joins.elim False.elim False.elim,
+       fun ⟨c, joins, joins'⟩ => ⟨.inr c, joins, joins'⟩⟩
+
+/-- Interaction reads the same connection with one kind of relatum. -/
+theorem roles_interaction_connected :
+    (W.roles.interaction own' sig').Connected ↔ (W.interaction own sig).Connected :=
+  Valuation.connected_iff_of_map (fun e => (.inl e.1, e.2)) roles_event_injective
+    (fun e alive => W.roles_event_onto e alive.1) (fun e => W.roles_alive e.2 e.1)
+    fun _ _ =>
+      ⟨fun | ⟨.inr c, interacts⟩ => ⟨c, interacts⟩
+           | ⟨.inl _, .inl ⟨no, _⟩⟩ => False.elim no
+           | ⟨.inl _, .inr ⟨_, no⟩⟩ => False.elim no,
+       fun ⟨c, interacts⟩ => ⟨.inr c, interacts⟩⟩
+
+/-- Drawing on a relatum that bears on itself interacts with each of its active events:
+formations are each other's conditions without a third. -/
+theorem SelfBearing.interacts {X : Type} {W : Web X X} {x : X} (self : W.SelfBearing x)
+    {e : X × Nat} (drawn : W.draws e.2 e.1 x) {s : Nat} (active : W.active s x) :
+    W.Interacts x e (x, s) :=
+  .inl ⟨drawn, self s active⟩
+
+end Web
+
+namespace Mutualism
+
+variable {Pos : Type} (own sig : Pos → Relatum × Nat → Prop)
+
+/-- Each event interacts with every event through what it draws on. -/
+theorem connected : (web.interaction own sig).Connected :=
+  fun e _ _ alive' =>
+    Reach.of_step (a := ()) ⟨⟨other e.1, .inl ⟨rfl, trivial, Nat.zero_lt_one⟩⟩, alive'⟩
+
+/-- G0 on the bee and the flower is exactly a seed with N_rel and N_std. -/
+theorem significant_iff (p₀ : Pos) :
+    (web.interaction own sig).Significant ↔ (web.interaction own sig).Grounds :=
+  Valuation.significant_iff (connected own sig) p₀ (alive (.bee, 0))
+
+/-- Where each depends only on the other, an event takes part only in the other. -/
+theorem apart_participates {t : Nat} {x c : Relatum} : apart.Participates t x c → c = other x :=
+  fun joins => joins.elim id id
+
+/-- Without self-dependence, co-participation relates only events of one relatum. -/
+theorem apart_not_connected : ¬ (apart.valuation own sig).Connected := fun connected =>
+  Relatum.noConfusion (Invariant.reach (P := (apart.valuation own sig).relations)
+    (I := fun e => e.1 = .bee)
+    (fun _ _ _ ⟨⟨_, joins, joins'⟩, _⟩ held =>
+      (other_cancel ((apart_participates joins).symm.trans (apart_participates joins'))).symm.trans
+        held)
+    (connected (.bee, 0) (.flower, 0) (apart_alive _) (apart_alive _)) rfl)
+
+/-- Without self-dependence, interaction relates only events of one relatum. -/
+theorem apart_not_interacting : ¬ (apart.interaction own sig).Connected := fun connected =>
+  Relatum.noConfusion (Invariant.reach (P := (apart.interaction own sig).relations)
+    (I := fun e => e.1 = .bee)
+    (fun _ _ _ ⟨⟨_, interacts⟩, _⟩ held => match interacts with
+      | .inl ⟨drawn, depends, _⟩ => (other_cancel (drawn.symm.trans depends)).symm.trans held
+      | .inr ⟨⟨depends, _⟩, drawn⟩ => (other_cancel (depends.symm.trans drawn)).symm.trans held)
+    (connected (.bee, 0) (.flower, 0) (apart_alive _) (apart_alive _)) rfl)
+
+end Mutualism
 
 end Becoming

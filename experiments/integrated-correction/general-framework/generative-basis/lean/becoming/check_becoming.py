@@ -34,7 +34,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
-        "Becoming.Dissipation", "Becoming.Metaethics", "Becoming.Ranking",
+        "Becoming.Dissipation", "Becoming.Roles", "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
@@ -166,6 +166,18 @@ SCOPE = (
     "finitely many conditions in all taking does not recur; a sun burning a fresh fuel at every "
     "step and giving a pool less than it burns, while ever more growers take from the pool, meets "
     "these premises. "
+    "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
+    "support, dependence, renewal, consumption, the classes of formations, undermining, living "
+    "events, arising and unceasing generation, and what is taken and given, balance, takers, "
+    "renewers and more without end, and in it no active formation stands as a condition exactly "
+    "while it is active or depends on itself; where a relatum is so embodied and activity needs "
+    "support, a formation depending on it at a positive need is active only while it is, activity "
+    "passes along every chain of such dependence so that a relatum not active ends every formation "
+    "whose chain reaches it, consuming it at a need of one ends it, drawing on it across the step at "
+    "which it ends breaks its own dependence when it depends on itself, and in a balanced flow in "
+    "which only active formations give it arises only as another active formation gives to it; a "
+    "bee and a flower renew each other, a fox ends with the hare it eats, and generations arise "
+    "without end each given by the one before. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
@@ -210,7 +222,12 @@ SCOPE = (
     "living dependent, connects the whole; in one example two dependents are connected through a "
     "living use of their condition and not when its only use undermines them, while co-participation "
     "connects them in both; adjoining a renewed condition every formation depends on at a positive "
-    "level, drawn on by one living event, still connects every web without changing living. "
+    "level, drawn on by one living event, still connects every web without changing living; read "
+    "with one kind of relatum a web keeps the connection of co-participation and of interaction, "
+    "drawing on a relatum that depends on itself interacts with each of its active events, so a bee "
+    "and a flower each depending on itself and on the other are connected with no third condition "
+    "and G0 there is exactly a seed with both neutralities, while where each depends only on the "
+    "other neither co-participation nor interaction relates the bee to the flower. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "

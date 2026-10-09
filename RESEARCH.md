@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-104 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+105 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -69,6 +69,7 @@
 | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](theories/becoming/results/records/joint-practice-forms-continuation.md) | recorded-checked | [JointPracticeContinuation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean) |
 | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](theories/becoming/results/records/joint-target-uniqueness.md) | recorded-checked | [ExplanatoryJointness.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) |
 | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](theories/becoming/results/records/learned-procedure-transmission.md) | recorded-checked | [LearnedProcedureTransmission.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean) |
+| [形成与条件是一个关系项的两种角色：生作为生的条件，生由生给予 / Formations and conditions are two roles of one relatum: life as a condition of life, and life given by life](theories/becoming/results/records/life-as-condition-of-life.md) | recorded-checked | [Roles.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean) |
 | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](theories/becoming/results/records/market-finite-support-obstruction.md) | recorded-checked | [FiniteSupportObstruction.lean](experiments/market-generativity/formal/FiniteSupportObstruction.lean) |
 | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](theories/becoming/results/records/market-partial-correction-boundary.md) | recorded-checked | [PartialRegimeTransition.lean](experiments/market-generativity/formal/PartialRegimeTransition.lean) |
 | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](theories/becoming/results/records/market-protected-continuation.md) | recorded-checked | [MarketGenerativity.lean](experiments/market-generativity/formal/MarketGenerativity.lean) |

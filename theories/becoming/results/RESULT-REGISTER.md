@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-104 migrated records: 100 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+105 migrated records: 101 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -73,6 +73,7 @@
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
 | `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
+| `life-as-condition-of-life` | [形成与条件是一个关系项的两种角色：生作为生的条件，生由生给予 / Formations and conditions are two roles of one relatum: life as a condition of life, and life given by life](records/life-as-condition-of-life.md) | theorem | recorded-checked |
 | `market-finite-support-obstruction` | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](records/market-finite-support-obstruction.md) | theorem | recorded-checked |
 | `market-partial-correction-boundary` | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](records/market-partial-correction-boundary.md) | theorem | recorded-checked |
 | `market-protected-continuation` | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](records/market-protected-continuation.md) | theorem | recorded-checked |

@@ -634,6 +634,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。 / Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model.
 
+## life-as-condition-of-life ← becoming-dependence-dynamics
+
+`formal-reuse` — 复用依存网、支持、Dependent、更新、消耗、形成的类、断裂与侵蚀；一类读法保持它们。 / Reuses webs, support, Dependent, renewal, consumption, the classes of formations, breaking and undermining; the one-kind reading keeps them.
+
+**Producer output / 上游输出:** 依存网上的读法。 / Readings on webs.
+
+**Consumer input / 下游输入:** 一类关系项的读法与体现关系项上的结论。 / The one-kind reading and conclusions on embodied relata.
+
+**Retained conditions / 保留条件:** Dependent（只用于体现关系项上的结论）。 / Dependent (only for the conclusions on embodied relata).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## life-as-condition-of-life ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、Acting、取用者、补充者与 More；arises_given 用 Balances.renewedBy。 / Reuses flows, balance, Acting, takers, renewers and More; arises_given uses Balances.renewedBy.
+
+**Producer output / 上游输出:** 平衡的流中每次上升由活跃的补充者造成。 / In a balanced flow every rise is made by an active renewer.
+
+**Consumer input / 下游输入:** 体现关系项的生起由另一个活跃形成给予。 / An embodied relatum's arising is given by another active formation.
+
+**Retained conditions / 保留条件:** 平衡、Acting、Embodied。 / Balance, Acting, Embodied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## life-as-condition-of-life ← condition-correspondence-discipline
+
+`formal-reuse` — 复用相互作用的纪律与估值；连通的结果陈述在 Becoming.Correspondence 新增的一节。 / Reuses the interaction discipline and its valuation; the connection results are stated in a new section of Becoming.Correspondence.
+
+**Producer output / 上游输出:** 相互作用与其估值。 / Interaction and its valuation.
+
+**Consumer input / 下游输入:** 一类读法下连通不变；承担自身的形成直接相关。 / Connection kept under the one-kind reading; formations bearing on themselves relate directly.
+
+**Retained conditions / 保留条件:** 逐步读法的 living。 / The stepwise reading of living.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
+
+## life-as-condition-of-life ← metaethical-core-characterization
+
+`formal-reuse` — Mutualism.significant_iff 用 G0 的刻画 Valuation.significant_iff。 / Mutualism.significant_iff uses G0's characterization Valuation.significant_iff.
+
+**Producer output / 上游输出:** 连通整体上 G0 的刻画。 / G0's characterization on a connected whole.
+
+**Consumer input / 下游输入:** 互利见证上 G0 恰为种子加两项中立。 / On the mutualism witness G0 is exactly a seed with both neutralities.
+
+**Retained conditions / 保留条件:** 连通与一个活的事件。 / Connection and one living event.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
 ## market-finite-support-obstruction ← market-supported-finite-transition
 
 `formal-reuse` — 复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。 / Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction.

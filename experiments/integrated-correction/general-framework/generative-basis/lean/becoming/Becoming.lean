@@ -11,6 +11,7 @@ import Becoming.Flow
 import Becoming.Population
 import Becoming.Identity
 import Becoming.Dissipation
+import Becoming.Roles
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -64,6 +65,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   from more than it gives, a family closed from some step runs down and taking from it
   stops. Taking that recurs, and so more without end, needs exchange beyond every finite
   family of conditions; with finitely many conditions in all, taking does not recur.
+* `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
+  two-kind reading is the one in which no formation is a condition. Where a relatum
+  stands as a condition exactly while it is active, a formation depending on it lives
+  only while it does, its ending ends every formation whose chain of dependence reaches
+  it, and it arises only as another active formation gives to it.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
@@ -75,7 +81,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
   condition relates two events only when one draws on it and the other depends on it
   at a positive level, at any steps, idle conditions connect nothing, and connection through a
-  condition is made by its living use.
+  condition is made by its living use. Read with one kind of relatum, the valuations keep
+  their connection, and formations bearing on themselves relate directly, with no third
+  condition.
 
 The core imports nothing else, every declaration has an empty axiom report, and it
 compiles from Lean's prelude alone. `Becoming.Bridge` lies outside the core: it shows
