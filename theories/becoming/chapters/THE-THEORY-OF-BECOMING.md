@@ -57,6 +57,72 @@ Ren 提出这一范围时写道：
 
 Neither substitutes for the other. An absence of ethical axioms is not an absence of substantive premises, and an empty Lean axiom report is not an absence of premises.
 
+## 理论的完整陈述 / The theory stated in full
+
+本节把理论作为一个整体陈述一次：先是整体与其规律，再是前提划出的部分、生与灭的统一、后续活动的条件，然后是演化、认识与评价的位置。每条标明地位：**表示**（世界怎样被表示：离散的步、自然数的量、把条件与关系项对应起来的共同索引）、**规律**（不加前提，对每个这样表示的世界成立，已检查）、**定理**（在公开的前提下成立，已检查）、**公理**（G0，经 Ren 授权采用）、**读法**（属于 Ren 的选择）、**开放**。模块都在 Lean 包 Becoming 的纯净核心上（§9），整体与部分的结构见 [space-and-its-parts](../results/records/space-and-its-parts.md)。
+
+**一、整体**
+
+1. **空间。** 整体是每个世界：以一类读法的关系项、其间的流与依存网（`World`）。形成与条件是一个关系项的两种角色，两类的表示嵌入一类读法（`Becoming.Roles`、`World.ofRoles`）。哪个条件就是哪个关系项，由表示的共同索引给出。〔表示〕
+2. **整体的规律。** 以下不加任何关于展开的前提，对每个世界成立。〔规律〕
+   - 生起与止息、依存的形成与消解、开始与不再作为条件而在，是同一种变化（开始成立与不再成立）分别读于活动、依存与水平（`change_readings`）。
+   - 任一段步上，一个量在终点加其间的下降，等于在起点加其间的上升（`over_stretch`）。
+   - 有限家族中开始成立与不再成立同步，一方复现恰当另一方复现（`keep_pace`、`coming_recurs_iff`）；活动可判定的有限世界中，生成复现恰当退化复现（`World.generative_iff`）。
+   - 任何有限的亲代与后代家族上，从亲代到后代的变化分为选择项与传递项（`price`，Price 方程的计数形式）。
+3. **前提划出部分。** 活动需要支持、平衡、只有活跃者给予、只有活跃者取用其所汲取的、耗散、体现、储备承载活动，每一个都有满足与不满足它的世界（`World.contingent`）。它们是前提，不是规律；以下定理在它们划出的部分上成立。〔定理〕
+
+**二、生与灭在同一展开中**
+
+4. **一步之内、长程与整体。** 在平衡与耗散之下，一个成员上升，同一步上另一个成员下降（`rise_with_fall`）。不加前提，有限家族中开始成立与不再成立长程同步（第 2 条）。有限世界中，生成的部分与退化的部分是同一部分；关系项无限多时两者才分离（`World.separate`）。在有限、平衡、耗散且生起者体现的世界中，生成与退化都不再复现，世界归于静止（`World.rests`）；在耗散之下继续生成，展开须越出每个有限部分，被围住时从其外汲入（`generation_opens`、`generation_draws_in`）。〔定理〕
+
+**三、后续活动的条件**
+
+5. **依存与储备。** 依存跨步形成、维持、断裂与消解。在活动需要支持之下，损失之后的终止、转化与恢复由定理联系起来，构成断裂的那一步选定结局；储备推迟终结而不逃脱（`Becoming.Dependence`、`Becoming.Reserve`）。〔定理〕
+6. **更新、补充与给予。** 更新与消耗属于运行，按回程分级，有限的历史不决定分类（`Becoming.Renewal`、`Becoming.Return`、`Becoming.Horizon`）。不息的生成需要更新复现；更多需要没有最终界的补充与补充者（`Becoming.Generation`、`Becoming.Flow`）。平衡的流中每次上升都被给予，体现的生起就是开始作为条件而在，所以生成本身就是补充（`Becoming.Roles`）。〔定理〕
+7. **同一与整体。** 跨步的同一由命名的模式承载，标签不承载任何东西；整体恰在某个部分活跃时活跃，部分短暂的整体只经由部分的生成而持续（`Becoming.Identity`、`Becoming.Wholes`）。〔定理；同一的读法是表示〕
+
+**四、分化**
+
+8. **演化。** 世系由参与、给予与开始作为条件而在定义。只有活跃者给予且活动需要支持时，只有被支持的形成留下后代，传下来的所需曾在给予之步被满足，其间的活动设定后来的选择（`Becoming.Evolution`）。传递是前提；演化之论的独立纲领保持原范围（§2）。〔定理〕
+9. **认识。** 一个探究的所见范围由它实际执行可达的配置给出；不确定下的判断是一步探究（`Becoming.Inquiry`）。知识的完整说明见第 3 节。〔定理〕
+10. **评价。** 结构上，每个事件都活（逐步读法中不侵蚀）是空间的一个部分，它跨越生成与退化，不与生成重合（`World.living_crosses`）。规范上，G0 给整体中的生及其继续生成以基本的正面规范意义：在连通整体上，G0 等价于种子加两项中立（`significant_iff`）；比较 C 的排序随读法而变（`Becoming.Ranking`）；条件经活的使用而连通（`Becoming.Correspondence`）；以之为生与世系是两种候选的直接关系（`Becoming.Descent`）。〔G0 是公理，不由上面的规律推出；其余是定理；读法的选择属于 Ren〕
+
+**五、地位**
+
+11. **完成了什么，没有完成什么。** 每条都有检查过的陈述或公开的前提；核心不导入核心以外的任何东西，每条源声明的公理报告为空。这是形式陈述的完整，不是必然性的证明。规律只对这样表示的世界成立，每个生成是否都能这样表示，也是所需根据的一部分。不加实质公理、确立整体中的各规定是同一展开中内在相关的环节，这一演绎仍开放（[根基 §5](BECOMING-FOUNDATION.md#5-completion-audit-and-next-central-inference)）；“生”与“生生”的读法属于 Ren；实际展开是否满足各前提是经验问题。开放项按四类列在第 8 节。〔开放〕
+
+This section states the theory once as a whole: the whole and its laws, then the parts carved by premises, the unity of coming to be and ceasing, the conditions of further activity, and the places of evolution, knowing and evaluation. Each item is marked as **representation** (how a world is represented: discrete steps, natural-number amounts and a shared index identifying conditions with relata), a **law** (no premise, holds of every world so represented, checked), a **theorem** (holds under disclosed premises, checked), an **axiom** (G0, adopted with Ren's authorization), a **reading** (Ren's choice) or **open**.
+
+**I. The whole**
+
+1. **The space.** The whole is every world: relata read with one kind, the flow among them and their web (`World`). Formations and conditions are two roles of one relatum, and the two-kind representation embeds in the one-kind reading (`Becoming.Roles`, `World.ofRoles`). Which condition is which relatum is supplied by the representation's shared index. [representation]
+2. **Laws of the whole.** The following hold of every world, with no premise about the unfolding. [law]
+   - Arising and ceasing, a dependence forming and dissolving, and coming to stand and ceasing to stand are one change, coming to be and ceasing to be, read of activity, dependence and standing (`change_readings`).
+   - Over any stretch, an amount at the end with the falls between is the amount at the start with the rises between (`over_stretch`).
+   - In a finite family, coming to be and ceasing to be keep pace, each recurring exactly when the other does (`keep_pace`, `coming_recurs_iff`); in a finite world whose activity is decided, generation recurs exactly when degeneration does (`World.generative_iff`).
+   - Over any finite family of parents and offspring, the change from parents to offspring divides into a selection term and a transmission term (`price`, Price's equation in counting form).
+3. **Premises carve parts.** Activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others (`World.contingent`). They are premises, not laws; the theorems below hold on the parts they carve. [theorem]
+
+**II. Coming to be and ceasing in one unfolding**
+
+4. **Within a step, over the long run, and of the whole.** Under balance and dissipation, a member rising comes with another member falling across the same step (`rise_with_fall`). With no premise, coming to be and ceasing to be keep pace over the long run in a finite family (item 2). In a finite world the generative and degenerative parts are one part; only with infinitely many relata do they separate (`World.separate`). In a finite, balanced, dissipative world whose arising is embodied, neither recurs and the world comes to rest (`World.rests`); under dissipation, continued generation needs the unfolding to go beyond every finite part, and enclosed around, a part draws in (`generation_opens`, `generation_draws_in`). [theorem]
+
+**III. Conditions of further activity**
+
+5. **Dependence and reserve.** Dependence forms, holds, breaks and dissolves across steps. Where activity needs support, theorems connect ending, transformation and restoration after a loss, and the step that constitutes the break selects among them; a reserve defers the end without escaping it (`Becoming.Dependence`, `Becoming.Reserve`). [theorem]
+6. **Renewal, replenishment and giving.** Renewal and consumption belong to runs, are graded by return, and are not decided by any finite history (`Becoming.Renewal`, `Becoming.Return`, `Becoming.Horizon`). Unceasing generation needs renewal to recur; more needs replenishment and renewers without eventual bound (`Becoming.Generation`, `Becoming.Flow`). In a balanced flow every rise is given to, and embodied arising is coming to stand, so generation is itself replenishment (`Becoming.Roles`). [theorem]
+7. **Identity and wholes.** Identity across steps is carried by the pattern of names, and labels carry nothing; a whole is active exactly while some part is, and a whole of brief parts persists only through their generation (`Becoming.Identity`, `Becoming.Wholes`). [theorem; the reading of identity is representational]
+
+**IV. Differentiation**
+
+8. **Evolution.** Descent is defined by taking part, giving and coming to stand. Where only active formations give and activity needs support, only supported formations leave descendants, a transmitted need was met at the giving step, and activity in between sets later selection (`Becoming.Evolution`). Transmission is a premise, and the theory of evolution's own programme keeps its scope (section 2). [theorem]
+9. **Knowing.** The scope of an inquiry is the configurations its actual executions reach, and judgment under uncertainty is a one-step inquiry (`Becoming.Inquiry`); section 3 gives the account of knowledge. [theorem]
+10. **Evaluation.** Structurally, every event being living, not undermining in the stepwise reading, is one part of the space; it crosses generation and degeneration and coincides with neither (`World.living_crosses`). Normatively, G0 gives living and further generation within the whole basic positive normative significance: on a connected whole G0 is equivalent to a seed with two neutralities (`significant_iff`); what C ranks varies with the reading (`Becoming.Ranking`); conditions connect through their living use (`Becoming.Correspondence`); and living on and descent are two candidate direct relations (`Becoming.Descent`). [G0 is an axiom, not derived from the laws above; the rest are theorems; the choice of readings is Ren's]
+
+**V. Standing**
+
+11. **What is complete and what is not.** Every item has a checked statement or a disclosed premise; the core imports nothing outside itself and every source declaration has an empty axiom report. This is the completeness of a formal statement, not a proof of necessity. The laws hold of worlds so represented, and whether every becoming can be so represented is part of the warrant still needed. The deduction that the whole's determinations are internally related moments of one unfolding, without added substantive axioms, remains open ([foundation §5](BECOMING-FOUNDATION.md#5-completion-audit-and-next-central-inference)); the readings of 生 and 生生 are Ren's; whether actual unfoldings meet the premises is empirical. Section 8 sorts what is open into four classes. [open]
+
 ## 0. 前提卡 / Premise card
 
 每个前提都具名、可见。在 Lean 中，它们是定义或假设，不是公理；脊柱的每条源声明的公理报告都为空。
@@ -428,21 +494,91 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 
 ## 8. 开放纲领 / Open programme
 
-| 目标 / Target | 现状 / Status | 下一步推论 / Next inference |
-|---|---|---|
-| Becoming 整体的演绎必然性，不加实质公理（[theory-of-becoming-foundation](../results/records/theory-of-becoming-foundation.md)） | 开放；有限相容性、作用损失与依存变化方式的相互约束已在各自范围内建立 | 确立整体中的各规定是同一展开中内在相关的环节，而不只是收集实例（[根基 §9](BECOMING-FOUNDATION.md#9-the-content-of-the-whole-deduction)） |
-| 更强的普遍实践根据（[universal-practical-warrant](../results/records/universal-practical-warrant.md)） | 开放；在公开前提下已有普遍理由 | 不经外给目的而建立理由的根据 |
-| 核心作为智慧之根（[wisdom-root](../results/records/wisdom-root.md)） | 开放 | 说明智慧的实际形成 |
-| 科学探究的必要关系根基（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)） | 开放 | 由独立陈述的成就建立核心的不可或缺性 |
-| 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持整段分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)）；跨步的同一在哪些读法中起作用，单向的连续把它约束到接续为止，双向的连续把它约束到跨过休眠的接续为止；在普查、`present` 不重复与 Taking 之下，在每种没有分裂的延续下更多迫使生起，没有分裂是充分条件，不是必要条件（[identity-across-steps](../results/records/identity-across-steps.md)）；持续的整体，若部分短暂，或部分终结且同时活跃的部分有限，需要部分不断生起（[whole-persists-through-generation](../results/records/whole-persists-through-generation.md)）；`Dependent` 是零储备，有储备时终结推迟而不逃脱，储备在休眠中衰减时休眠的时间也有界；储备可以是所持的条件，没有表示时是给定的；所持条件承载形成时，依存转化到它上面的读法由构造满足 `Dependent`，而在 living 上不同（[reserve-defers-ending](../results/records/reserve-defers-ending.md)） | 沿依存链、有储备的滞后共灭；在所持条件被表示的地方，估值用哪种读法（Ren）；接续的读法与“生生不息”读到哪个层次（Ren）；跨过休眠的连续读法；整体的依存与侵蚀怎样由部分构成；延续关系下的类与侵蚀；延续关系上使更多迫使生起的充要条件；从关系推出跨步的同一 |
-| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）；条件的对应纪律已给出一条（[condition-correspondence-discipline](../results/records/condition-correspondence-discipline.md)），其时间次序、对效果的敏感与对整段读法的陈述开放；交互之外的以之为生与世系两种候选读法已给出（[living-on-and-descent](../results/records/living-on-and-descent.md)），是否采用属于 Ren；不依赖运行的读法；带数量与更新率的网；继续生成的成分 |
-| 继续生成 | 陈述在整体的继续上：在有限条件、生起消耗有限家族、更新由形成造成的前提下，不息的生成需要更新复现，更新不蕴含生成；在平衡的流中，复现的取用需要补充复现，取用者不息地生起是其一种情形（[unceasing-generation-needs-renewal](../results/records/unceasing-generation-needs-renewal.md)）；读作取用者数目的“更多”需要补充与补充者没有最终的界，在普查、`present` 不重复与 Taking 之下严格蕴含不息（[more-needs-renewers](../results/records/more-needs-renewers.md)）；在耗散之下，复现的取用，无论来自更多、生成还是维持，其有限家族在任意晚的步不封闭，被围住时须从其外汲入，耗散只约束有封闭的有限家族的步（[no-finite-part-bears-taking](../results/records/no-finite-part-bears-taking.md)）；以一类关系项读，形成与条件是一个关系项的两种角色，哪个条件就是哪个形成由共同的索引给出；在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃者的给予而生起，给予它的形成不必体现（[life-as-condition-of-life](../results/records/life-as-condition-of-life.md)）；体现的生起本身就是补充；要求跟着水平的上升走，平衡的流中每次上升都被给予，在耗散之下在有限家族中复现的上升使家族不封闭，被围住时汲入（[generation-is-replenishment](../results/records/generation-is-replenishment.md)）；被耗散的一步上，一个成员上升，同一步上另一个成员下降，消耗前提由平衡与耗散推出（[rising-and-falling-in-one-exchange](../results/records/rising-and-falling-in-one-exchange.md)） | 第二个“生”的范围与以消耗为条件的生起是否为生成（Ren）；在承担自身的体现关系项终结之步的汲取是否计入不 living、对哪些汲取者（Ren）；汲取是否终结了它的因果读法；以之为生与世系是否作为直接的估值采用（Ren）；生成在多大程度上读作体现、体现的关系项是否读作“生”（Ren）；活动与水平不同步（种子、休眠）时的生成；可能性、多样性与复杂性的上升；生成成分进入 `living` 的读法；与 `universal_reason` 的新的活的内容接通 |
-| 整体的规律 | 不加前提、对每个展开成立的一组规律已给出（[coming-and-ceasing-keep-pace](../results/records/coming-and-ceasing-keep-pace.md)）：同一种变化读于活动、依存与水平；一段步上的升降相抵；有限家族中下降复现需要上升复现，开始成立与不再成立同步，一方复现恰当另一方复现 | 对整个空间成立的规律的完整清单；其余前提（如 `Census`、`TransmitsWithin`）与前提组合的地图（七个前提各有满足与不满足它的世界，有限世界中生成与退化是同一部分，活跨越生成，耗散使有限世界归于静止，见 [space-and-its-parts](../results/records/space-and-its-parts.md)）；下降何时在同一步上就是不再作为条件而在（P20 给出了上升与下降的同一交换）；生生不息在哪个层次读（Ren） |
-| 演化 | 经世系的传递、变异与选择在脊柱上有最小的形式内容（[evolution-on-descent](../results/records/evolution-on-descent.md)）：不加前提的传递律；只有被支持的形成留下后代；传下来的所需曾被满足，其间的活动设定后来的选择。演化之论的独立纲领保持原范围（[演化之论](THE-THEORY-OF-EVOLUTION.md)） | 由依存的形成推出传递（`TransmitsWithin` 现为前提）；把后代数与给予的量联系起来（繁殖的读法）；有理数量与协方差形式；与结构复制、重构及组织规则继承的对应（外围） |
-| 共同活动中的归属 | 相对于动作的 but-for 差别制造在多重决定下与关系参与分离；整段与步层面的检验分开（[joint-difference-making](../results/records/joint-difference-making.md)） | 更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任 |
-| 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理。回程、视界、共同活动与替代（P7）经[第二次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md)：数学接受，侵蚀与 but-for 的定义已修正，十五项更正已处理。C 在各读法下的排序（P8）、条件的对应纪律（P9）与 P7b 的更正经[第三次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md)：数学接受，侵蚀改为比较那一步的所需，but-for 要求动作可取，排序、替代与交互的说法收窄，十二项更正已处理。P9b、不息（P10）与更多（P11）经[第四次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md)：数学接受，侵蚀改为最小形式，消耗前提、严格性见证、耗散、层级与补充者的说法收窄，十四项更正已处理。跨步的同一（P12）与 P11b 的更正经[第五次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md)：数学接受，十二项更正已处理（P12b）。耗散（P13）、角色（P14）与 P12b 的更正经[第六次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md)：数学接受，耗散只约束有封闭的有限家族的步，一类读法的同一对应是表示的前提，终结之步的汲取与给予的说法收窄，十一项更正已处理（P16b）。生成即补充（P15）、整体与部分（P16）与 P16b 的更正经[第七次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md)：数学接受，耗散空成立时的开放可以由无关的交换满足，汲入须家族被围住，整体是活动的重合，“生由生”不是定理，`Merge` 的生起是重读，八项更正已处理（P16c）。P16c 的更正、储备与开始作为条件而在（P17）、以之为生与世系（P18）经[第八次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md)：数学接受，世系要求给予的形成参与该步，以之为生在 `Dependent` 之下给出的是所依者作为条件而在，储备可以是而不必是所持的条件，转化的读法在 living 上不同，要求跟着上升走，十项更正已处理（P18b）。不加前提的变化规律（P19）、P18b 的更正、上升和下降的同一交换（P20）、经世系的演化（P21）与整体及其部分（P22）尚未经独立审查。A 的外在论辩护、N 的哲学根据未经独立审查 | 进行这些审查 |
-| 经验对应 | 共同条件、各机制的实际实现 | 识别与可区分的检验 |
-| 更强的方向假说 | 现实一般地发展出更共同、更有回应的更新：开放 | 不作为前提使用 |
+第一张表列各目标的现状。其后，每个开放项归入四类之一：属于 Ren 的选择、哲学根据、经验对应、进一步的证明。形式陈述的完整（见“理论的完整陈述”）不是必然性已证。
+
+The first table gives the status of each target. Every open item is then placed in one of four classes: Ren's choice, philosophical warrant, empirical correspondence, or a further proof. The completeness of the formal statement (see “The theory stated in full”) is not a proof of necessity.
+
+| 目标 / Target | 现状 / Status |
+|---|---|
+| Becoming 整体的演绎必然性，不加实质公理（[theory-of-becoming-foundation](../results/records/theory-of-becoming-foundation.md)） | 开放；有限相容性、作用损失与依存变化方式的相互约束已在各自范围内建立 |
+| 更强的普遍实践根据（[universal-practical-warrant](../results/records/universal-practical-warrant.md)） | 开放；在公开前提下已有普遍理由 |
+| 核心作为智慧之根（[wisdom-root](../results/records/wisdom-root.md)） | 开放 |
+| 科学探究的必要关系根基（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)） | 开放 |
+| 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持整段分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)）；跨步的同一在哪些读法中起作用，单向的连续把它约束到接续为止，双向的连续把它约束到跨过休眠的接续为止；在普查、`present` 不重复与 Taking 之下，在每种没有分裂的延续下更多迫使生起，没有分裂是充分条件，不是必要条件（[identity-across-steps](../results/records/identity-across-steps.md)）；持续的整体，若部分短暂，或部分终结且同时活跃的部分有限，需要部分不断生起（[whole-persists-through-generation](../results/records/whole-persists-through-generation.md)）；`Dependent` 是零储备，有储备时终结推迟而不逃脱，储备在休眠中衰减时休眠的时间也有界；储备可以是所持的条件，没有表示时是给定的；所持条件承载形成时，依存转化到它上面的读法由构造满足 `Dependent`，而在 living 上不同（[reserve-defers-ending](../results/records/reserve-defers-ending.md)） |
+| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） |
+| 继续生成 | 陈述在整体的继续上：在有限条件、生起消耗有限家族、更新由形成造成的前提下，不息的生成需要更新复现，更新不蕴含生成；在平衡的流中，复现的取用需要补充复现，取用者不息地生起是其一种情形（[unceasing-generation-needs-renewal](../results/records/unceasing-generation-needs-renewal.md)）；读作取用者数目的“更多”需要补充与补充者没有最终的界，在普查、`present` 不重复与 Taking 之下严格蕴含不息（[more-needs-renewers](../results/records/more-needs-renewers.md)）；在耗散之下，复现的取用，无论来自更多、生成还是维持，其有限家族在任意晚的步不封闭，被围住时须从其外汲入，耗散只约束有封闭的有限家族的步（[no-finite-part-bears-taking](../results/records/no-finite-part-bears-taking.md)）；以一类关系项读，形成与条件是一个关系项的两种角色，哪个条件就是哪个形成由共同的索引给出；在平衡且只有活跃形成给予的流中，体现的关系项只经由另一个活跃者的给予而生起，给予它的形成不必体现（[life-as-condition-of-life](../results/records/life-as-condition-of-life.md)）；体现的生起本身就是补充；要求跟着水平的上升走，平衡的流中每次上升都被给予，在耗散之下在有限家族中复现的上升使家族不封闭，被围住时汲入（[generation-is-replenishment](../results/records/generation-is-replenishment.md)）；被耗散的一步上，一个成员上升，同一步上另一个成员下降，消耗前提由平衡与耗散推出（[rising-and-falling-in-one-exchange](../results/records/rising-and-falling-in-one-exchange.md)） |
+| 整体的规律 | 不加前提、对每个展开成立的一组规律已给出（[coming-and-ceasing-keep-pace](../results/records/coming-and-ceasing-keep-pace.md)）：同一种变化读于活动、依存与水平；一段步上的升降相抵；有限家族中下降复现需要上升复现，开始成立与不再成立同步，一方复现恰当另一方复现；空间是每个世界，七个前提各有满足与不满足它的世界，有限世界中生成与退化是同一部分，活跨越生成，耗散使有限、平衡且生起者体现的世界归于静止（[space-and-its-parts](../results/records/space-and-its-parts.md)） |
+| 演化 | 经世系的传递、变异与选择在脊柱上有最小的形式内容（[evolution-on-descent](../results/records/evolution-on-descent.md)）：不加前提的传递律；只有被支持的形成留下后代；传下来的所需曾被满足，其间的活动设定后来的选择。演化之论的独立纲领保持原范围（[演化之论](THE-THEORY-OF-EVOLUTION.md)） |
+| 共同活动中的归属 | 相对于动作的 but-for 差别制造在多重决定下与关系参与分离；整段与步层面的检验分开（[joint-difference-making](../results/records/joint-difference-making.md)） |
+| 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理。回程、视界、共同活动与替代（P7）经[第二次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md)：数学接受，侵蚀与 but-for 的定义已修正，十五项更正已处理。C 在各读法下的排序（P8）、条件的对应纪律（P9）与 P7b 的更正经[第三次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md)：数学接受，侵蚀改为比较那一步的所需，but-for 要求动作可取，排序、替代与交互的说法收窄，十二项更正已处理。P9b、不息（P10）与更多（P11）经[第四次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md)：数学接受，侵蚀改为最小形式，消耗前提、严格性见证、耗散、层级与补充者的说法收窄，十四项更正已处理。跨步的同一（P12）与 P11b 的更正经[第五次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md)：数学接受，十二项更正已处理（P12b）。耗散（P13）、角色（P14）与 P12b 的更正经[第六次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md)：数学接受，耗散只约束有封闭的有限家族的步，一类读法的同一对应是表示的前提，终结之步的汲取与给予的说法收窄，十一项更正已处理（P16b）。生成即补充（P15）、整体与部分（P16）与 P16b 的更正经[第七次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md)：数学接受，耗散空成立时的开放可以由无关的交换满足，汲入须家族被围住，整体是活动的重合，“生由生”不是定理，`Merge` 的生起是重读，八项更正已处理（P16c）。P16c 的更正、储备与开始作为条件而在（P17）、以之为生与世系（P18）经[第八次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md)：数学接受，世系要求给予的形成参与该步，以之为生在 `Dependent` 之下给出的是所依者作为条件而在，储备可以是而不必是所持的条件，转化的读法在 living 上不同，要求跟着上升走，十项更正已处理（P18b）。不加前提的变化规律（P19）、P18b 的更正、上升和下降的同一交换（P20）、经世系的演化（P21）与整体及其部分（P22）尚未经独立审查。A 的外在论辩护、N 的哲学根据未经独立审查 |
+| 经验对应 | 共同条件、各机制的实际实现 |
+| 更强的方向假说 | 现实一般地发展出更共同、更有回应的更新：开放 |
+
+**属于 Ren 的选择 / Ren's choices**
+
+- 生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）。
+- 第二个“生”的范围，以及以消耗为条件的生起是否为生成。
+- 生成在多大程度上读作体现，体现的关系项是否读作“生”。
+- 接续的读法，以及“生生不息”读到哪个层次（个体、谱系、家族或整体）。
+- 在承担自身的体现关系项终结之步的汲取，是否计入不 living，对哪些汲取者。
+- 在所持条件被表示的地方，估值用哪种读法（[reserve-defers-ending](../results/records/reserve-defers-ending.md)）。
+- 交互之外的以之为生与世系两种候选读法（[living-on-and-descent](../results/records/living-on-and-descent.md)）是否作为直接的估值采用。
+- 名称：本理论中由 AI 拟定的用语（如世界、上升与下降、同一交换、世系、传递、选择、归于静止）。
+
+- How 生生 is read, or which combination of readings, and whether G0 and C share one reading (what C ranks varies with the reading).
+- The scope of the second 生, and whether arising that depends on depletion counts as generation.
+- How far generation is read as embodiment, and whether embodied relata are read as 生.
+- The reading of succession, and the level at which 生生不息 is read (individual, lineage, family or the whole).
+- Whether drawing on a self-bearing embodied relatum across the step at which it ends counts as not living, and for which drawers.
+- Which reading valuation uses where a held condition is represented.
+- Whether living on and descent, the two candidate readings beside interaction, are adopted as direct valuations.
+- Names: the terms the AI has proposed in this theory (such as world, rising and falling, one exchange, descent, transmission, selection, coming to rest).
+
+**哲学根据 / Philosophical warrant**
+
+- Becoming 整体的演绎必然性，不加实质公理：确立整体中的各规定是同一展开中内在相关的环节，而不只是收集实例（[根基 §9](BECOMING-FOUNDATION.md#9-the-content-of-the-whole-deduction)，[theory-of-becoming-foundation](../results/records/theory-of-becoming-foundation.md)）。
+- 更强的普遍实践根据：不经外给目的而建立理由的根据（[universal-practical-warrant](../results/records/universal-practical-warrant.md)）。
+- 科学探究的必要关系根基：由独立陈述的成就建立核心的不可或缺性（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)）。
+- G0 的哲学根据，A 的外在论辩护与 N 的哲学根据（尚未经独立审查）。
+- 表示的范围：每个生成是否都能像脊柱那样表示（离散的步、自然数的量、把条件与关系项对应起来的共同索引）；不能这样表示的部分，需要扩展脊柱（见进一步的证明）。
+
+- The deductive necessity of Becoming as a whole without added substantive axioms: establishing that the whole's determinations are internally related moments of one unfolding, not merely a collection of instances.
+- A stronger universal practical warrant: grounding reasons without an externally supplied end.
+- The necessary relational foundation of scientific inquiry: establishing the core's indispensability from independently stated achievements.
+- The philosophical ground of G0, the externalist defense of A and the philosophical ground of N (not yet independently reviewed).
+- The scope of representation: whether every becoming can be represented as the spine represents it (discrete steps, natural-number amounts, a shared index identifying conditions with relata); where it cannot, the spine is to be extended (see further proofs).
+
+**经验对应 / Empirical correspondence**
+
+- 共同条件与各机制的实际实现：识别与可区分的检验。
+- 实际展开是否满足各前提：活动需要支持、平衡、只有活跃者给予与取用、耗散、体现、储备与传递（`TransmitsWithin`）。
+- 更强的方向假说：现实一般地发展出更共同、更有回应的更新。开放，不作为前提使用。
+
+- The actual realization of common conditions and of each mechanism: identification and discriminating tests.
+- Whether actual unfoldings meet the premises: activity needing support, balance, only active formations giving and taking, dissipation, embodiment, reserve and transmission (`TransmitsWithin`).
+- The stronger direction hypothesis, that reality generally develops more shared and more responsive renewal: open, and not used as a premise.
+
+**进一步的证明 / Further proofs**
+
+- 依存与同一：沿依存链、有储备的滞后共灭；跨过休眠的连续读法；整体的依存与侵蚀怎样由部分构成；延续关系下的类与侵蚀；延续关系上使更多迫使生起的充要条件；从关系推出跨步的同一。
+- 读法：条件的对应纪律（[condition-correspondence-discipline](../results/records/condition-correspondence-discipline.md)）的时间次序、对效果的敏感与对整段读法的陈述；不依赖运行的读法；带数量与更新率的网；继续生成的成分，及其进入 `living` 的读法；与 `universal_reason` 的新的活的内容接通。
+- 继续生成：汲取是否终结了它的因果读法；活动与水平不同步（种子、休眠）时的生成；可能性、多样性与复杂性的上升；下降何时在同一步上就是不再作为条件而在（P20 给出了上升与下降的同一交换）；有理数量的版本。
+- 整体与部分：对整个空间成立的规律的完整清单；其余前提（如 `Census`、`TransmitsWithin`）与前提组合的地图；活动不可判定时有限世界的规律（经典读法，外围）；连续时间或实数量的表示及其与离散脊柱的对应。
+- 演化：由依存的形成推出传递（`TransmitsWithin` 现为前提）；把后代数与给予的量联系起来（繁殖的读法）；有理数量与协方差形式；与结构复制、重构及组织规则继承的对应（外围）。
+- 共同活动：更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任。
+- 智慧：说明智慧的实际形成（[wisdom-root](../results/records/wisdom-root.md)）。
+
+- Dependence and identity: delayed coextinction along chains of dependence under a reserve; a reading of continuity across dormancy; how a whole's dependence and undermining are made up of its parts'; class and undermining under continuation relations; necessary and sufficient conditions on continuation relations for more to force arising; deriving identity across steps from relations.
+- Readings: the temporal order, sensitivity to effects and whole-run statement of the correspondence discipline for conditions; readings that do not depend on runs; webs with amounts and rates of renewal; the components of continued generation and their reading into `living`; connecting new living content to `universal_reason`.
+- Continued generation: whether drawing ended it, on a causal reading; generation where activity and standing do not keep step (seeds, dormancy); the rise of possibility, diversity and complexity; when a fall is a ceasing to stand at its own step (P20 gives rising and falling in one exchange); versions with rational amounts.
+- The whole and its parts: a complete list of the laws holding of the whole space; a map of the remaining premises (such as `Census` and `TransmitsWithin`) and of combinations of premises; the law for finite worlds whose activity is not decided (the classical reading, in the periphery); representations with continuous time or real amounts, and their correspondence to the discrete spine.
+- Evolution: deriving transmission from how dependence forms (`TransmitsWithin` is now a premise); relating the number of offspring to the amounts given (a reading of reproduction); rational amounts and the covariance form; correspondence to structural copying, reconstruction and the inheritance of organizational rules (periphery).
+- Joint activity: finer attribution (such as NESS or actual causation) as another reading; responsibility does not follow.
+- Wisdom: explaining how wisdom actually forms.
+
+**审查 / Review.** 不加前提的变化规律（P19）、P18b 的更正、上升与下降的同一交换（P20）、经世系的演化（P21）与整体及其部分（P22）由第九次独立审查检查（计划 P23b）。审查检查已有结果，不是一类开放内容。
+
+Laws of change with no premise (P19), the P18b corrections, rising and falling in one exchange (P20), evolution on descent (P21) and the whole and its parts (P22) are checked by the ninth independent review (plan P23b). A review checks existing results; it is not a class of open content.
 
 ## 9. 形式脊柱 / The formal spine
 

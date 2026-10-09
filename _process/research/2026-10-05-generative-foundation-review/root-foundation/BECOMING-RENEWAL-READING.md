@@ -1897,6 +1897,40 @@ Integration: 计划 P22；Ren 的“计入整个空间”在核心上的结构�
 
 **边界。** 不含伦理谓词，不评价任何部分；`Living` 只是逐步读法的结构条件；有限世界的规律要求活动可判定；部分的列举不完全；只对离散步的读法陈述；“世界”“生成的”“退化的”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
 
+## 31. 完整的陈述与完成审计（P23）
+
+2026-10-09。Ren 的指示：“aim a complete theory of becoming, and finish related work”。计划 P23 把已检查的结果作为一个整体陈述一次，并按这个陈述更新完成审计与开放纲领。本轮不新增 Lean 声明，也不新增成果身份。
+
+```text
+Result(s): 复用脊柱的全部记录；无新增成果身份
+Delta: 正典章节新增“理论的完整陈述”一节（整体、生与灭、后续活动的条件、分化、地位五部分，每条标明表示／规律／定理／
+       公理／读法／开放）；第 8 节重排为现状表与四类开放项（属于 Ren 的选择、哲学根据、经验对应、进一步的证明）；
+       根基章节完成审计各行加入脊柱的证据，并加“脊柱的现状”一段；根基记录 theory-of-becoming-foundation 的下一步、
+       验证范围、相关与历史；generation-is-replenishment 的“生起的生命”改为“生起的体现关系项”，只在 Ren 的读法下读作生
+Supplied premises / correspondence: 无新前提；规律对脊柱所表示的世界成立（离散的步、自然数的量、共同索引）
+Evidence: 现有回执与记录；无新证明
+Boundary: 形式陈述的完整不是必然性已证；每个生成能否这样表示是开放的哲学根据；读法与名称由 Ren 定
+Integration: 计划 P23；根基章节第 5 节；为 P23b 的第九次审查提供完整陈述
+```
+
+**解读。**
+
+- **“完整”指什么。** 完整的陈述在这个意义上完整：章节的每条主张都标明地位（表示、规律、定理、公理、读法或开放），每个开放项都归入四类之一。它不在这个意义上完整：整体的必然性已证。两种意义在章节、根基章节与根基记录中都分开写。
+- **规律与表示。** 不加前提的规律（§26、§29）对每个世界成立，但“世界”是脊柱所表示的世界：离散的步、自然数的量、把条件与关系项对应起来的共同索引（§17）。每个生成是否都能这样表示，是一项哲学根据；不能这样表示的部分，需要扩展脊柱，例如连续时间或实数量的表示及其对应。两项分别列入第 8 节的哲学根据与进一步的证明。
+- **四类。** 原第 8 节的每个“下一步”都有归类（AI 逐项对照了重排前后的文本）：读法与名称归 Ren 的选择，整体演绎、普遍实践根据、科学探究的根基与 G0／A／N 的根据归哲学根据，机制的实际实现、前提是否被实际展开满足与方向假说归经验对应，其余归进一步的证明，并按依存与同一、读法、继续生成、整体与部分、演化、共同活动、智慧分组。审查不是一类开放内容，单独列出。
+- **完成审计。** 根基章节第 5 节表中每行的“现有证据”加入脊柱的结果，“剩余推论”不变：脊柱定位了整体主张的实质剩余（规律属于整体，前提划出部分），但不完成通向关系构成的连接。根基记录的下一步相应改写，保留原来的中心推论。
+- **措辞更正。** generation-is-replenishment 原写“每次生命的生起都是一次补充”。“生命”是 Ren 的读法，不是定理的内容；现在写作生起的体现关系项自身是其他关系项的条件，只在 Ren 把它读作“生”时才读作生命。
+
+**作者反审。**
+
+*反驳 1：“完整的陈述”会被读成理论已经完成。* 章节在说明处与第 11 条、第 8 节开头、根基章节“脊柱的现状”与根基记录中都写明：这是形式陈述的完整，不是必然性已证。现状表中整体演绎、普遍实践根据、智慧之根与科学探究的根基仍标为开放。
+
+*反驳 2：四类的划分本身是 AI 的判断。* 是。例如表示的范围既是哲学根据（每个生成能否这样表示），又引出进一步的证明（扩展脊柱），两面分别列出。Ren 可以重新归类；归类不改变任何结果。
+
+*反驳 3：没有新的证明。* 对。依结果工作流，重述、汇集与复查不是新的独立结果，本轮不登记新成果身份；它的贡献是地位的标注、开放项的归类与完成审计的证据。
+
+**边界。** 无新定理；规律只对脊柱所表示的世界成立；归类是 AI 的判断；“生”“生生”的读法与名称由 Ren 定。本节尚未经独立审查（计划 P23b）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2121,3 +2155,13 @@ The package now has 910 theorems and 1435 declaration audits, over a core closur
 - **Boundaries.** No part is evaluated. This does not show that the theory needs no axiom; it shows which statements need no premise and which premises carve which parts. The law for finite worlds needs decidable activity because the core is constructive. The parts listed are not exhaustive.
 
 The package now has 939 theorems and 1501 declaration audits, over a core closure of 27 modules and a package of 25, all source declarations with empty axiom reports. Section 30 has not yet been independently reviewed.
+
+**P23: the theory stated in full, and the completion audit.** Following Ren's instruction to aim at a complete theory of becoming, section 31 states the checked results once as a whole and updates the completion audit and the open programme accordingly. No Lean declaration and no result identity is added.
+
+- **The full statement.** The canonical chapter gains “The theory stated in full”, in five parts: the whole, coming to be and ceasing in one unfolding, the conditions of further activity, differentiation, and standing. Each item is marked as representation, law, theorem, axiom (G0), reading or open.
+- **Laws and representation.** The laws with no premise hold of every world as the spine represents worlds: discrete steps, natural-number amounts and a shared index identifying conditions with relata. Whether every becoming can be so represented is listed as philosophical warrant; extending the spine, for instance to continuous time or real amounts, is listed as a further proof.
+- **Four classes.** Section 8 of the chapter now gives a status table and places every open item in one of four classes: Ren's choices, philosophical warrant, empirical correspondence and further proofs. Review is listed separately, since it checks existing results.
+- **The completion audit.** Each row of the foundation chapter's audit cites the spine's results as evidence, and its remaining inference is unchanged: the spine locates the whole claim's substantive remainder without discharging it. The foundation record's next step is rewritten to match, keeping its central inference.
+- **A wording correction.** The record generation-is-replenishment no longer says that every arising of life is a replenishment; it says that an arising embodied relatum which is itself a condition of others is read as 生 only under Ren's reading.
+
+Section 31 has not yet been independently reviewed.

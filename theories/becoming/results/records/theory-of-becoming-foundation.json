@@ -8,7 +8,7 @@
   "kind": "target",
   "status": "open",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-08T19:01:13.667789+00:00",
+  "reviewed_at_utc": "2026-10-09T12:30:00+00:00",
   "claim": {
     "en": "Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generativity within its manifold, with persistence, transformation, degeneration, dissolution, life, evolution and evaluation within the same relational unfolding.",
     "zh": "无需附加实质公理，建立Theory of Becoming整体的演绎必然性；说明其manifold中的生成性，并在同一关系展开中说明维持、转化、退化、消解、生命、演化与评价。"
@@ -65,6 +65,20 @@
         "en": "Credits the derived local law at its supplied-history scope; does not infer universal operational coverage from exact finite-word feasibility.",
         "zh": "信用给定历史范围内派生局部规律的成果；不从有限词可行性精确推出普遍操作覆盖。"
       }
+    },
+    {
+      "id": "space-and-its-parts",
+      "detail": {
+        "en": "On the Becoming spine, laws with no premise hold of every world as the spine represents worlds, and premises carve parts, seven of which are shown met by some worlds and not by others. This locates the whole claim's substantive remainder without discharging it.",
+        "zh": "在Becoming脊柱上，无前提的规律对脊柱所表示的每个世界成立；前提划出部分，其中七个前提已示为有满足与不满足它的世界。这定位了整体主张的实质剩余，但不完成它。"
+      }
+    },
+    {
+      "id": "coming-and-ceasing-keep-pace",
+      "detail": {
+        "en": "Arising and ceasing, forming and dissolving, coming to stand and ceasing to stand are one change read three ways; in a finite family coming to be and ceasing to be recur together, with no premise.",
+        "zh": "生起与终止、形成与消解、立起与不再立是同一变化的三种读法；有限族中生成与消失一同复现，无需前提。"
+      }
     }
   ],
   "counterexamples": [
@@ -88,14 +102,14 @@
     "zh": "已有经检查成果尚未提供整体主张的演绎。特定生成形态不成立，本身不构成对Becoming的反例。保留Ren的必然性主张，不将其作为公理加入，也不作不可能性声明。"
   },
   "validation_scope": {
-    "en": "Retains finite-history coherence, the operational-order assessment and the 27-theorem restricted control calculation. Section 19 reconciles the completion audit with the whole/manifold scope and assesses the direct passage from inclusion to relational constitution, with primary Hegel passages and author counterreview. No new mathematical proof; the full zero-substantive-axiom target remains open.",
-    "zh": "保留有限历史相容性、操作次序评估及27定理受限控制计算。第19节将完成审计接通整体／manifold范围，结合黑格尔原典与作者反审检验从包容到关系构成的直接路径。无新增数学证明；完整零实质公理目标仍开放。"
+    "en": "Retains finite-history coherence, the operational-order assessment and the 27-theorem restricted control calculation. Section 19 reconciles the completion audit with the whole/manifold scope and assesses the direct passage from inclusion to relational constitution, with primary Hegel passages and author counterreview. No new mathematical proof; the full zero-substantive-axiom target remains open. The completion audit now cites the Becoming spine's checked laws, parts and countermodels (P19–P22) as evidence for each row, without discharging the whole deduction.",
+    "zh": "保留有限历史相容性、操作次序评估及27定理受限控制计算。第19节将完成审计接通整体／manifold范围，结合黑格尔原典与作者反审检验从包容到关系构成的直接路径。无新增数学证明；完整零实质公理目标仍开放。完成审计现引用Becoming脊柱经检查的规律、部分与反模型（P19–P22）作为各行证据，不因此完成整体演绎。"
   },
   "references": [
     {
       "path": "theories/becoming/chapters/BECOMING-FOUNDATION.md",
       "role": "statement",
-      "sha256": "5daa894cad1efdc502d305ce757ac6ed1478f9fb5b4376c21873edd5bdbeabb7",
+      "sha256": "78f2a82ddb304f5b8a9238d0ca2029e3b34cf2a61108c7c4fe33fd0796b5c2a4",
       "declarations": []
     },
     {
@@ -125,8 +139,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.",
-    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。"
+    "en": "Establish the passage from determinate articulation to the actual relational constitution of the whole, with its inferential warrant. The Becoming spine now states laws that hold of every world in its representation and carves parts by premises, seven of which are shown met by some worlds and not by others; what remains is the warrant that every becoming is so representable and that the whole is relationally constituted, not only consistently stated. Particular mechanisms explain modes within Becoming; neither inclusive naming nor universalizing one generative mode supplies the whole deduction.",
+    "zh": "建立从确定表达通向整体之实际关系构成的连接及其推论根据。Becoming脊柱已陈述在其表示中对每个世界成立的规律，并以前提划出部分，其中七个前提已示为有满足与不满足它的世界；剩下的是每个生成都能如此表示、且整体确由关系构成而不只是被一致陈述的根据。具体机制解释Becoming中的形态；包容命名与将某种生成形态普遍化都不提供整体演绎。"
   },
   "history": [
     {
@@ -148,6 +162,10 @@
     {
       "en": "9 October 2026: §19 applies the whole/manifold correction to the actual completion table and central inference, removing the surviving universal-generativity gate. The direct whole-inclusion argument remains incomplete at the passage to relational constitution; the Hegel comparison distinguishes category from causal mechanism. No new theorem or result identity.",
       "zh": "2026年10月9日：第19节将整体／manifold修正落实到完成表与中心推论，撤回残留的普遍生成性门槛。直接整体包容论证仍缺通向关系构成的连接；黑格尔比较区分范畴与因果机制。无新增定理或成果身份。"
+    },
+    {
+      "en": "9 October 2026: P23 enters the Becoming spine's laws of the whole and its parts carved by premises as evidence in each row of the completion audit, and links the theory stated in full. The passage to relational constitution and the representability of every becoming remain open; this record claims no new theorem or result identity.",
+      "zh": "2026年10月9日：P23把Becoming脊柱的整体规律及前提划出的部分记入完成审计各行的证据，并链接理论的完整陈述。通向关系构成的连接以及每个生成能否被如此表示仍开放；本记录不声称新定理或新成果身份。"
     }
   ]
 }
