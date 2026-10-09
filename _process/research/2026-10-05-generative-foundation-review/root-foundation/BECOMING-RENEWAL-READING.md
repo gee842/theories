@@ -2622,6 +2622,55 @@ Integration: 计划 P32；回答 identity-across-steps 的下一步与第 8 节�
 
 **边界。** 无伦理谓词，不评价生起或止息；只对离散步与每步有限的活动陈述；延续关系由读法给出，本节不说哪一个是同一；整段上没有分裂与没有合并只是充分条件；名称（CeasesFrom、NoMerge、Tandem、paired）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
 
+## 44. 交换归于静止（P33）
+
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P33。第十一次独立审查在 R3 中注意到 `hatch` 的流只在第 0 步参与，并给出一个论证：在静止定理的前提之下这是必然的，被围住的一步上有取用时总水平至少下降一，给予需要取用，每步立着的有限多时这只能发生有限多次；它注明这是手写论证，审查没有形式化它。§42 把 R3 的其余部分移入核心（`rest_few`），这一论证仍未检查。本节把它证明为定理，并给出它的每个前提都不可少的见证。没有新模块：定理放在 `Becoming.Openness`。成果记录：修订 [continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)。
+
+```text
+Result(s): 复用 continued-change-needs-openness（Flow.AroundStanding、standing_never_rises、falls_finitely、
+           Web.StandingCensus.stock_eq、World.exposed_world、exposed_standing、Kindling.unlisted、Exposed.stands_iff）、
+           Becoming.Dissipation（Flow.Balances.runs_down、DissipatesOn.takes_of_gives、witnesses_not_dissipative、
+           Frontier.burning_self）、Becoming.Flow（Cycle.closed_more）、space-and-its-parts（leaking_world、
+           kindling_world）；修订 continued-change-needs-openness
+Delta: Openness：Flow.ExchangeRecurs、Flow.exchange_lowers、Flow.exchanges_finitely、World.exchange_stops、
+       World.exchange_needs
+Supplied premises / correspondence: 所立者的普查、平衡、耗散，以及从某步起每步不被否定地围住所立者（定理的假设）；
+       不需要活动的普查、体现或相等的判定；交换指在场的形成取用或给予正的量
+Evidence: 合并检查器回执 20261009T194202.548300Z（1157 项定理、1862 项声明审计、核心闭包 29 个模块、包 27 个模块，全部源声明公理报告
+          为空）；外围桥接重跑 20261009T194414.300336Z；实例检查
+Boundary: 只对离散步与自然数量陈述；交换归于静止陈述为复现的否定；不评价静止或开放；名称由 Ren 定
+Integration: 计划 P33；把第十一次审查 R3 的手写论证变为定理；补足静止定理：被围住时停止的不只是水平的变化，
+             还有交换本身
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.ExchangeRecurs` | 流在任意晚的步交换：某个在场的形成取用或给予正的量 |
+| `Flow.exchange_lowers` | 平衡与耗散之下、所立者被列出时，跨过围住所立者的一步，在场的形成取用或给予任何东西，所立者的总水平都严格下降 |
+| `Flow.exchanges_finitely` | 从某步起每步不被否定地围住所立者时，交换不复现 |
+| `World.exchange_stops` | 世界层面的同一陈述：有所立者的普查、平衡、耗散且从某步起被围住所立者的世界中，交换不复现 |
+| `World.exchange_needs` | 四个前提各不可少，缺少一个时其余成立而交换复现：`exposed`（满足八个前提，没有一步被围住）、Flow 的循环（被围住、平衡，不耗散）、`leaking`（被围住、耗散，不平衡）、`kindling`（被围住、平衡、耗散，所立者不能被列出） |
+
+**解读。**
+
+- **交换为什么降低总水平。** 围住的家族持有一步上交换的一切：在场的形成不从它之外取用，也不给它之外（`ClosedAt`）。形成有所取用时，取用落在家族之内；只给予时，耗散使给予家族需要从家族取用（`takes_of_gives`）。所以它从家族取用正的量，平衡的流下家族的总水平至少下降取用者的数目（`runs_down`），而所立者的总水平就是家族的总水平（`stock_eq`，用到所立者的普查）。证明是构造的：“取用落在家族之内”先只得到双重否定，借自然数比较的可判定性消去。
+- **交换为什么停止。** 跨过这样的步总水平不上升（`standing_never_rises`），每次交换都使它下降；一个不上升的自然数序列只能下降有限多次（`falls_finitely`）。所以交换在任意晚的步发生，与从某步起每步被围住不相容。
+- **不由水平不再变化推出。** `stills` 说水平不再变化；交换不必改变任何水平：Flow 的循环中每步取用一个单位再还回，水平不变而交换不息。所以要用的是耗散使每次交换都严格降低总水平（`exchange_lowers`），而不只是水平变化时才降低。
+- **需要的比静止定理少，给出的也不同。** 静止定理说的是活动，所以还需要活动的普查与生起者体现；交换的静止只关于流与水平。`dusk` 满足 `exchange_stops` 的全部前提而止息不息（`rest_needs_census`）：交换归于静止不给活动归于静止。
+- **每个前提都不可少。** `exchange_needs` 的四个见证各缺一个前提。`exposed` 中耗散空成立，因为没有一步被围住；`kindling` 中围住只对空列表成立，因为没有列表列出所立者（每个未燃的燃料都立着），这正是没有普查时前提剩下的内容：“围住某个列表”不约束所立者。
+
+**作者反审。**
+
+*反驳 1：这只是 `stills` 的推论。* 见上：循环中水平从不变化而交换不息，所以交换的停止要用每次交换都使总水平严格下降，这是本节新证的引理。
+
+*反驳 2：`kindling` 的见证用了空列表，是取巧。* 定理的前提是：有一个列表是所立者的普查，且从某步起每步围住它。去掉普查，剩下的“每步围住这个列表”对空列表成立；`kindling` 表明这时交换可以不息，所以普查不能去掉，而不是说空列表是所立者。
+
+*反驳 3：陈述为复现的否定太弱。* 与静止定理同一形式（`¬ ArisingRecurs`）。得到“某步之后再没有交换”需要判定交换是否发生；可以判定时经典地两者等价。这是构造逻辑的界限，不是公理。
+
+*反驳 4：这对生生有什么意义？* 本节不作评价。它说的是：在所立者有界地被列出、平衡且耗散的展开中，不只是持续的生起，连持续的交换都需要越出所立者的步。“开放”在这里有了更具体的形式内容：交换的持续，而不只是变化的持续。读法与名称属于 Ren。
+
+**边界。** 无伦理谓词，不评价静止或开放；只对离散步与自然数量陈述；交换的静止是复现的否定；名称（ExchangeRecurs、exchange_lowers、exchanges_finitely、exchange_stops、exchange_needs）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2936,4 +2985,6 @@ The package now has 1131 theorems and 1826 declaration audits, over a core closu
 
 **P32: the census balance under a continuation, and the exact condition across one step.** identity-across-steps said that no split is sufficient for more to force arising, not necessary, with no exact boundary stated, and listed a necessary and sufficient condition as its next step. Across one step the condition is exact: for any lists before and after a step, more always leaves some formation after the step continuing none before it exactly when no formation continues as two (`forces_iff_noSplit`), since a formation continuing as two continues both members of a longer list; and arising is forced under every continuation without splits exactly when more stand after the step than before, since otherwise pairing the lists in order (`paired`) continues every formation after the step without a split (`forced_iff_more`). Over a run a single split acts only at its step (`Fork`), and the exact condition on continuations would only restate the conclusion. The census laws read arising and ceasing under the identity the names stipulate; under any continuation, with a formation ceasing when no formation active after the step continues it (`Web.CeasesFrom`) and a merge one formation continuing two (`Web.NoMerge` excludes it), the census balance holds in two halves: without splits the formations after a step with those ceasing are at most those before with those arising, without merges at least, with neither exactly (`Census.balanceFrom`, `balanceFrom_eq`), the proof going through the continuing pairs (`mark_le_total`, `total_le_mark`, `total_swap`). Each formation continuing only itself has neither (`self_one_to_one`), and there this is `Listed.across`. Added up over stretches (`le_over_stretch`, `ge_over_stretch`, `gaining_of_losing`, `losing_of_gaining`), ceasing recurring needs arising recurring under every continuation without splits (`Census.arisingFrom_of_ceasingFrom`), and under a bounded count arising recurring needs ceasing recurring under every continuation without merges (`Census.ceasingFrom_of_arisingFrom`). Each condition is needed: in `Tandem` two formations are active at each step; read with each continuing only itself one arises and one ceases across every step, read as budding one ceases and nothing ever arises, read as joining one arises and nothing ever ceases, at most two active.
 
-The package now has 1153 theorems and 1857 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 43 have not yet been independently reviewed; the twelfth review, of P30, P31 and P29b, is under way.
+**P33: the exchange comes to rest.** The eleventh review (R3) observed that in `hatch` the flow takes part only at step 0 and gave a hand argument that under the rest theorem's premises this is forced, noting that it had not formalized it. It is now a theorem. Under balance and dissipation, with what stands listed, a formation taking part across a step enclosed around what stands that takes or gives anything lowers the total standing (`Flow.exchange_lowers`): the enclosing family holds what is exchanged, and under dissipation giving to it needs taking from it. Since the total never rises across such steps, where every step from some step on is, not refutably, enclosed around what stands, no formation takes or gives at arbitrarily late steps (`Flow.exchanges_finitely`, `World.exchange_stops`; `Flow.ExchangeRecurs` names recurring exchange). This does not follow from standing ceasing to change: in the cycle of `Becoming.Flow` standing never changes while a unit is taken and given back at every step. It needs neither the census of what is active nor embodiment, so the exchange coming to rest does not give activity coming to rest: `dusk` meets its premises while ceasing recurs (`rest_needs_census`). Each of the four premises is needed (`World.exchange_needs`): the exchange recurs without enclosure (`exposed`, meeting all eight premises), without dissipation (the cycle), without balance (`leaking`) and without the census of what stands (`kindling`, where enclosure around the empty list says nothing about what stands).
+
+The package now has 1157 theorems and 1862 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 44 have not yet been independently reviewed; the twelfth review, of P30, P31 and P29b, is under way.

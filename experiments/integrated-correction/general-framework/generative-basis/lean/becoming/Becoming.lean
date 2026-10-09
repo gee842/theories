@@ -174,7 +174,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
-  every step from some step on is enclosed around it, standing stops changing. Where at
+  every step from some step on is enclosed around it, standing stops changing, and so
+  does the exchange: any taking or giving there lowers the total standing, and without
+  enclosure, dissipation, balance or the census of what stands the exchange can recur
+  (`exposed`, the cycle, `leaking`, `kindling`). Where at
   most `B` relata are active at each step, arising recurs exactly when ceasing does;
   finite worlds are a case, and an infinite procession of single relata is another; the
   bound may grow between steps at which it returns within a number, but no bound growing

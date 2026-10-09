@@ -8,9 +8,9 @@ rest, and in a finite world arising recurs exactly when ceasing does. This modul
 what does the work. The world need not be finite: what brings it to rest is finitely many
 standing at each step and enclosure around them from some step on, with a census of what
 is active; for arising and ceasing to recur together, a bound on that census. In a world
-that comes to rest so, only finitely many relata ever stand or are active
+that comes to rest so, not unboundedly many relata ever stand or are active
 (`World.rest_few`): beyond finite worlds, the rest theorem adds relata that never stand
-or act.
+or act, and the flow too comes to rest (`World.exchange_stops`).
 Under balance and dissipation, across a step whose exchange, together with whatever
 stands before or after it, lies within finitely many conditions, the total standing does
 not rise, and it falls whenever any condition's standing changes: a rise is given to, and
@@ -23,6 +23,17 @@ giving needs uptake there; a fall is taken from.
 * **Standing comes to rest.** So where every step from some step on is enclosed around
   what stands, no condition's standing changes at arbitrarily late steps
   (`Flow.stills`).
+* **The exchange comes to rest.** Across such a step, a formation taking part that takes
+  or gives anything lowers the total standing: the enclosing family holds what it
+  exchanges, and giving to it needs taking from it (`Flow.exchange_lowers`). So where
+  every step from some step on is enclosed around what stands, no formation takes or
+  gives at arbitrarily late steps (`Flow.exchanges_finitely`, `World.exchange_stops`),
+  with no census of activity and no embodiment. Each premise is needed, the exchange
+  recurring without it (`World.exchange_needs`): without enclosure in `exposed`, which
+  meets all eight premises; without dissipation in the cycle of `Becoming.Flow`, its one
+  condition standing throughout and every step enclosed around it; without balance in
+  `leaking`, finite and dissipative; and without the census of what stands in `kindling`,
+  balanced, dissipative and enclosed at every step.
 * **Ceasing needs arising.** In a world with a census whose activity is decided, ceasing
   recurs only where arising recurs (`World.arising_of_ceasing`, from
   `Web.arising_of_ceasing`). Not conversely: `dawn` has a census and arises without end
@@ -74,8 +85,8 @@ giving needs uptake there; a fall is taken from.
   (`World.arising_opens`).
 * **What comes to rest is few.** Where what holds is listed at each step and coming to be
   does not recur, not unboundedly many members ever hold (`Listed.few_of_quiet`). So in
-  every world that comes to rest under the rest theorem, only finitely many relata are
-  ever active and only finitely many ever stand (`World.rest_few`); conversely, where
+  every world that comes to rest under the rest theorem, not unboundedly many relata are
+  ever active and not unboundedly many ever stand (`World.rest_few`); conversely, where
   finitely many are ever active and activity is decided, a census exists
   (`World.counted_of_ever`). Beyond finite worlds the rest theorem reaches only relata
   that never stand or act, as the idle ground of `hatch` (`World.hatch_idle`).
@@ -162,6 +173,11 @@ repetition, closed across the step, holds whatever stands before or after it. -/
 def Flow.AroundStanding (L : Flow F C) (stand : Nat → List C) (t : Nat) : Prop :=
   ∃ es, Distinct es ∧ (∀ c, c ∈ stand t → c ∈ es) ∧ (∀ c, c ∈ stand (t + 1) → c ∈ es) ∧
     L.ClosedAt es t
+
+/-- The flow exchanges at arbitrarily late steps: some formation taking part takes or gives
+something. -/
+def Flow.ExchangeRecurs (L : Flow F C) : Prop :=
+  ∀ N, ∃ t f c, N ≤ t ∧ f ∈ L.present t ∧ (0 < L.take t f c ∨ 0 < L.give t f c)
 
 /-- The total standing over the list of what stands is the stock of any family without
 repetition holding it. -/
@@ -254,6 +270,47 @@ theorem stills (balances : L.Balances W) (dissipative : L.Dissipative)
         Decidable.of_not_not fun stays =>
           around t (Nat.le_trans (Nat.le_add_left T N) later) fun enclosed =>
             stays (change_lowers balances dissipative census enclosed changes)⟩
+
+/-- Across a step enclosed around what stands, a formation taking part that takes or gives
+anything lowers the total standing: the enclosing family holds what it exchanges, and
+under dissipation giving to it needs taking from it. -/
+theorem exchange_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
+    (census : W.StandingCensus stand) {t : Nat} (around : L.AroundStanding stand t) {f : F}
+    {c : C} (present : f ∈ L.present t) (exchanges : 0 < L.take t f c ∨ 0 < L.give t f c) :
+    W.stock (stand (t + 1)) (t + 1) < W.stock (stand t) t :=
+  match around with
+  | ⟨es, distinct, before, after, closed⟩ =>
+    have dissipates := dissipative es t distinct closed
+    have inside : ¬¬ c ∈ es := fun out => match closed f present c out with
+      | ⟨noTake, noGive⟩ => match exchanges with
+        | .inl takes => Nat.lt_irrefl 0 (Eq.subst (motive := fun k => 0 < k) noTake takes)
+        | .inr gives => Nat.lt_irrefl 0 (Eq.subst (motive := fun k => 0 < k) noGive gives)
+    have takes : 0 < total es (L.take t f) := Decidable.of_not_not fun idle => inside fun mem =>
+      idle (match exchanges with
+        | .inl takes => total_pos_of_mem mem takes
+        | .inr gives => dissipates.takes_of_gives present (total_pos_of_mem mem gives))
+    have lowers : W.stock es (t + 1) < W.stock es t :=
+      Nat.lt_of_lt_of_le
+        (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total es (L.take t f)))
+          present (sign_pos takes)))
+        (balances.runs_down dissipates)
+    Nat.lt_of_le_of_lt (Nat.le_of_eq (census.stock_eq distinct after))
+      (Nat.lt_of_lt_of_le lowers (Nat.le_of_eq (census.stock_eq distinct before).symm))
+
+/-- The exchange comes to rest: where every step from some step on is not refuted to be
+enclosed around what stands, no formation takes or gives at arbitrarily late steps. Each
+such exchange lowers the total standing, which never rises across those steps. -/
+theorem exchanges_finitely (balances : L.Balances W) (dissipative : L.Dissipative)
+    (census : W.StandingCensus stand) {T : Nat}
+    (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) : ¬ L.ExchangeRecurs :=
+  fun exchanging => falls_finitely (fun t => W.stock (stand t) t) T
+    (fun t later => Decidable.of_not_not fun rises => around t later fun enclosed =>
+      rises (standing_never_rises balances dissipative census enclosed))
+    fun N => match exchanging (N + T) with
+    | ⟨t, _, _, later, present, exchanges⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+        Decidable.of_not_not fun stays =>
+          around t (Nat.le_trans (Nat.le_add_left T N) later) fun enclosed =>
+            stays (exchange_lowers balances dissipative census enclosed present exchanges)⟩
 
 end Flow
 
@@ -650,6 +707,14 @@ theorem rest_few [∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
        still fun N => match coming N with
        | ⟨t, x, later, comes⟩ => ⟨t, x, later, .inl (Web.ComesToStand.rises (W := w.web) comes)⟩⟩
 
+/-- In such a world the exchange comes to rest as well: no relatum takes or gives at
+arbitrarily late steps (`Flow.exchanges_finitely`). This needs only the census of what
+stands, balance, dissipation and enclosure, not a census of activity or embodiment. -/
+theorem exchange_stops {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
+    (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
+    (around : ∀ t, T ≤ t → ¬¬ w.flow.AroundStanding stand t) : ¬ w.flow.ExchangeRecurs :=
+  Flow.exchanges_finitely balanced dissipative standing around
+
 end World
 
 /-! ## Openness cannot be dropped -/
@@ -971,6 +1036,72 @@ theorem rest_needs_standing :
     fun N => match Kindling.kindling.2.2.2.2.2 true N with
      | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩,
     fun ⟨alive, census⟩ => Kindling.unlisted (alive 0) (census 0).2 Kindling.fuel_stands⟩⟩
+
+end World
+
+/-! ## The exchange needs each premise -/
+
+namespace World
+
+/-- The exchange comes to rest only with each of its premises: in each world below every
+other premise holds and the flow exchanges at arbitrarily late steps. Without enclosure:
+`exposed` meets all eight premises with what stands listed, and no step is enclosed.
+Without dissipation: in the cycle of `Becoming.Flow` the one condition stands throughout,
+the flow balances and every step is enclosed around it. Without balance: `leaking` is
+dissipative, and every step is enclosed around the side holding the standing. Without the
+census of what stands: `kindling` is balanced and dissipative and every step is enclosed,
+but what stands cannot be listed, so enclosure around the empty list says nothing about
+it. -/
+theorem exchange_needs :
+    (exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Handing.holder t)]) ∧
+      exposed.Balanced ∧ exposed.Dissipative ∧
+      (∀ t, ¬ exposed.flow.AroundStanding
+        (fun t => [Exposed.Relatum.side (Handing.holder t)]) t) ∧
+      exposed.flow.ExchangeRecurs) ∧
+    (Cycle.web.StandingCensus (fun _ => [()]) ∧ Cycle.flow.Balances Cycle.web ∧
+      ¬ Cycle.flow.Dissipative ∧ (∀ t, Cycle.flow.AroundStanding (fun _ => [()]) t) ∧
+      Cycle.flow.ExchangeRecurs) ∧
+    (leaking.web.StandingCensus (fun t => [Handing.holder t]) ∧ ¬ leaking.Balanced ∧
+      leaking.Dissipative ∧ (∀ t, leaking.flow.AroundStanding (fun t => [Handing.holder t]) t) ∧
+      leaking.flow.ExchangeRecurs) ∧
+    ((∀ stand, ¬ kindling.web.StandingCensus stand) ∧ kindling.Balanced ∧
+      kindling.Dissipative ∧ (∀ t, kindling.flow.AroundStanding (fun _ => []) t) ∧
+      kindling.flow.ExchangeRecurs) :=
+  have takes : ∀ t (b : Bool), 0 < Handing.flow.take t b b := fun _ b => match b with
+    | true => Nat.zero_lt_one
+    | false => Nat.zero_lt_one
+  ⟨⟨exposed_standing.1, exposed_world.1 _ (.tail _ (.head _)),
+     exposed_world.1 _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))),
+     fun t ⟨es, distinct, _, _, closed⟩ => Exposed.open_at t ⟨es, distinct, closed⟩,
+     fun N => ⟨N, .side (Handing.holder N), .ground 0, Nat.le_refl N, .head _,
+       .inl Nat.zero_lt_one⟩⟩,
+   ⟨fun _ => ⟨⟨fun no => (nomatch no), trivial⟩, fun c => (match c with
+      | () => ⟨fun _ => .head _, fun _ => Nat.zero_lt_one⟩)⟩,
+    Cycle.closed_more.1, witnesses_not_dissipative.2.1,
+    fun _ => ⟨[()], ⟨fun no => (nomatch no), trivial⟩, fun c _ => (match c with | () => .head _),
+      fun c _ => (match c with | () => .head _),
+      fun _ _ c outside => (match c with | () => absurd (.head _) outside)⟩,
+    fun N => ⟨N + 1, N, (), Nat.le_succ N, .head _, .inl Nat.zero_lt_one⟩⟩,
+   ⟨fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun b =>
+      ⟨fun standing => show b ∈ [Handing.holder t] from
+        Eq.subst (motive := fun c => c ∈ [Handing.holder t])
+          ((Exposed.stands_iff b t).mp standing).symm (.head _),
+       fun (mem : b ∈ [Handing.holder t]) => (Exposed.stands_iff b t).mpr (match mem with
+        | .head _ => rfl
+        | .tail _ no => (nomatch no))⟩⟩,
+    leaking_world.2.2.2.2.1, leaking_world.2.2.1,
+    fun t => ⟨[true, false], Handing.distinct, fun c _ => Handing.every c,
+      fun c _ => Handing.every c, (leaking_world.2.2.2.2.2 t).1⟩,
+    fun N => ⟨N, Handing.holder N, Handing.holder N, Nat.le_refl N, .head _,
+      .inl (takes N (Handing.holder N))⟩⟩,
+   ⟨fun stand census => Kindling.unlisted (stand 0) (census 0).2 Kindling.fuel_stands,
+    kindling_world.1, kindling_world.2.1,
+    fun t => match Kindling.around t with
+      | ⟨es, distinct, _, closed⟩ => ⟨es, distinct, fun _ no => (nomatch no),
+          fun _ no => (nomatch no), closed⟩,
+    fun N => ⟨N, .side (Handing.holder N), .fuel N, Nat.le_refl N, .head _,
+      .inl (Nat.lt_of_lt_of_le Nat.zero_lt_two
+        (Nat.le_of_eq (congrArg (2 * ·) (Frontier.burning_self N)).symm))⟩⟩⟩
 
 end World
 
