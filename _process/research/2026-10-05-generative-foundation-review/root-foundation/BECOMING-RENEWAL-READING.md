@@ -1791,6 +1791,60 @@ Integration: 计划 P20；把 §26 的长程同步在耗散之下变为一步之
 
 **边界。** 不含伦理谓词；“同一交换”是同一步上同一流中的给予与取用，不把下降单独归给某个上升；不说哪个成员下降；下降不是止息；只对离散步的读法与自然数的量陈述；耗散、平衡与只有活跃者取用是对应前提，实际展开是否满足是经验问题；“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。本节尚未经独立审查。
 
+## 29. 演化在脊柱上（P21）
+
+2026-10-09。按同一指示继续计划 P21。演化之论的核心候选说：组织的差异通过实际传递参与后续活动，并改变变异、发育、共同生活与下一轮选择的条件。本节问：在脊柱上，这一候选有什么最小的形式内容？脊柱已有世系（§25，§27 更正为给予的形成须参与该步）、支持与 `Dependent`（§6）、平衡与 `Balances.accumulates`（§14）、截断差 `excess`（§26）。新模块 `Becoming.Evolution`（L3，只导入 `Change`）用它们陈述传递、变异与选择，以及活动对后来选择的反馈。成果记录：[evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md)。
+
+```text
+Result(s): 复用 living-on-and-descent（世系；定义移入本模块）、coming-and-ceasing-keep-pace（excess、excess_balance）、
+           more-needs-renewers（Balances、Acting、accumulates、total 的引理）、generation-is-replenishment（ComesToStand）；
+           新增 evolution-on-descent
+Delta: Evolution：total_const、length_mul_le、offspring、selected、raised、lowered、price；Flow.DescendsAt、Flow.Descends
+       （从 Descent 移来）；DescendsAt.active、DescendsAt.supported、unsupported_childless、never_supported_childless、
+       selected_le、selection_within；TransmitsWithin、transmitted_supported、transmitted_within；Drawdown、Unchecked
+Supplied premises / correspondence: price 不加前提；选择用 Acting 与 Dependent；传递是前提（TransmitsWithin）；
+       transmitted_within 另加平衡
+Evidence: 合并检查器回执（见记录）；外围桥接重跑；实例检查
+Boundary: 不含伦理谓词；适应度没有定义；传递不由脊柱推出；price 是会计恒等式；选择只读作支持对给予的约束；
+       不含繁殖率、突变、漂变、迁移与种群动力学；与演化之论既有机制的对应未证明
+Integration: 计划 P21；世系从 L4 移到 L3，Descent 保留估值的读法；演化之论的独立纲领保持原范围
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.DescendsAt`、`Flow.Descends` | 一个关系项跨一步从一个形成而来：该形成参与这一步、给予它，它跨这一步开始作为条件而在。定义与 §27 的相同，只是移到 L3 并给出每一步的形式 |
+| `price` | 不加前提：任意有限的亲代家族与各自的有限后代列表，任意的量，后代的总量加传递所降低的，等于亲代的量按后代数计数，加传递所升高的。Price 方程的加法计数形式 |
+| `DescendsAt.active`、`DescendsAt.supported` | 只有活跃者给予时，后代从之而来的形成在给予之步活跃；活动另需支持时，它在该步被支持 |
+| `unsupported_childless`、`never_supported_childless` | 选择：在一步不被支持的形成不在该步留下后代；从不被支持的形成没有后代 |
+| `selected_le`、`selection_within` | 读于每个亲代都依存的条件上的所需：选择项至多是条件的水平按后代数计数；所以后代任意量的总量加上从亲代所需降低的，至多是这样计数的水平加上升高的 |
+| `TransmitsWithin` | 前提：在开始作为条件而在之步依存于 c 的后代，只从在给予之步依存于 c 的形成而来，且所需至多多 δ |
+| `transmitted_supported` | 传递的曾被选择：后代的所需至多是该条件在给予之步的水平加 δ |
+| `transmitted_within` | 活动设定后来的选择：平衡的流中，后代的所需加上自较早一步以来从条件取用的，至多是条件那时的水平加其后给予它的，再加 δ |
+| `Drawdown.drawdown` | 见证：亲代以所需二依存于水平为二的池，从池取用一并给予两个后代；承继所需二的那个从开始作为条件而在之步起不被支持，所需一的那个被支持、活跃并转而取用 |
+| `Unchecked.unchecked` | 没有 `Dependent` 时不然：超出支持而活跃的亲代，传递高于给予之步水平的所需 |
+
+**解读。**
+
+- **世系属于变化，不属于评价。** 世系由参与、给予与开始作为条件而在定义，不含估值。P18 把它放在 L4 的 `Descent`，因为它首先用于估值的连通。现在它在 L3 的 `Evolution` 中定义，`Descent` 导入它并保留 N_rel 下的读法（`descent_reaches`、`Brood.descended` 等）。这样，演化的定理不经过元伦理层。
+- **Price 方程是恒等式，内容在别处。** `price` 与 §26 的升降相抵同类：不加前提，对任意量成立。它把从亲代到后代的变化分为选择项与传递项，但不说哪一项由什么决定。两份既有笔记已手推其协方差形式并说明它是会计恒等式（[math-note](../../2026-10-05-direction-frontier/math-note.md)、[GENERATED-SELECTION-RECURRENCE-INTEGRATION](GENERATED-SELECTION-RECURRENCE-INTEGRATION.md)，引 Frank 2012）。这里的贡献是：它在纯核心中、以自然数与截断差检查过，并且两项各自有了脊柱上的内容。
+- **选择即支持对给予的约束。** 适应度没有定义。在只有活跃者给予且活动需要支持的展开中，能留下后代的只是被支持的形成：选择不是另加的规律，而是 `Acting` 与 `Dependent` 合起来的推论。`selected_le` 把它写进 `price` 的选择项：后代数加权的亲代所需，受条件的水平所限。
+- **传递的曾被选择。** 后代承接亲代的依存（`TransmitsWithin`）时，后代的所需至多是给予之步条件的水平加 δ：传下来的所需在给予时被满足过。δ 是变异向上的界；向下没有界。
+- **活动设定后来的选择。** `transmitted_within` 把给予之步的水平展开为较早的水平与其间的取用和给予。所以其间形成做了什么（取用多少、给予多少）进入后来能传递的所需。`Drawdown` 中，这一反馈来自亲代自己：它的取用降低了池，使承继其所需的后代从一开始就不被支持；所需较少的后代被支持、活跃并转而取用。传递、变异、选择与反馈在同一展开中，这是演化之论核心候选在脊柱上的一个最小实例（AI 论证）。
+
+**作者反审。**
+
+*反驳 1：Price 方程是恒等式，算不上结果。* 是。记录的实质内容是选择与传递的定理：`unsupported_childless`、`selected_le`、`transmitted_supported`、`transmitted_within` 与两个见证。`price` 写入是因为它给出选择与传递的划分，而且与 §26 一样，是不加前提对整个空间成立的规律；记录与本节都不说它改进了 Price 方程。
+
+*反驳 2：这里的“选择”太弱，它不是繁殖率的差别。* 是。这里的选择只是谁能在一步上给予；一个被支持的形成能有多少后代不受约束，后代数只是 `price` 中的权重。要得到繁殖率的差别，需要把后代数与给予的量联系起来（例如每个后代至少要给予多少），这列入下一步，不在本节。
+
+*反驳 3：传递是前提，所以传递没有被解释。* 是，正如演化之论中重构是前提。一类读法中的世系只说给予者给予；后代是否依存于亲代所依存的，要看依存怎样形成（§6 的形成与持续）。能否由此推出 `TransmitsWithin`，是开放的证明。
+
+*反驳 4：`Drawdown` 会被读成“变异者胜出”。* 定理不评价。所需较少的后代被支持，只是因为亲代取用之后池的水平满足它而不满足另一个；承继所需的后代不被支持，在 `Dependent` 之下从不活跃，但仍作为条件而在（水平为一），不是消失。哪一个更好，要另经 G0 与 C。
+
+*反驳 5：计划要求在外围接通既有的演化机制。* 计划说的是能证明对应时接通。结构复制（`StructuralCopying`）读的是记号序列的复制与材料预算，与流和依存网之间的对应需要另外建立，本轮没有尝试；它保持原范围，列入下一步。
+
+**边界。** 不含伦理谓词；适应度没有定义，不说哪种所需更好；传递是前提；`price` 只以加法计数形式与自然数的量陈述，不含协方差形式；选择只读作支持对给予的约束；只对离散步的读法陈述；与演化之论既有机制的对应未证明；“世系”“传递”“选择”“变异”的这些读法是 AI 的表述，名称由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -1992,3 +2046,15 @@ The package now has 877 theorems and 1387 declaration audits, over a core closur
 - **Bookkeeping.** Five records cite module theorem counts. They now follow the new receipt; four of them (Flow, Dissipation, Identity, Wholes) were stale before.
 
 The package now has 889 theorems and 1399 declaration audits, over a core closure of 25 modules and a package of 23, all source declarations with empty axiom reports. Section 28 has not yet been independently reviewed.
+
+**P21: evolution on the spine.** The theory of evolution's central candidate says that differences in organizations enter subsequent activity through actual transmission and alter the conditions of later selection. Section 29 gives that candidate its minimal formal content on the spine, in a new module `Becoming.Evolution` (L3, importing only `Change`) ([evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md)).
+
+- **Descent belongs to change, not to valuation.** Descent is defined by taking part, giving and coming to stand, with no valuation. It moves from `Becoming.Descent` (L4) to `Becoming.Evolution` (`Flow.DescendsAt`, `Flow.Descends`), and `Descent` imports it and keeps its readings under N_rel.
+- **A law of transmission with no premise.** Over any finite family of parents with finite lists of offspring and any amounts, the offspring's total with what transmission lowered is the parents' amounts counted once for every offspring, with what transmission raised (`price`). This is Price's equation in additive counting form. It is an accounting identity, as two existing notes say; what is new is that it is checked in the pure core and that both of its terms receive content on the spine.
+- **Selection as support constraining giving.** Fitness is not defined. Where only active formations give and activity needs support, only supported formations leave descendants (`DescendsAt.supported`, `unsupported_childless`, `never_supported_childless`), and the selection term is bounded by the condition's level counted once for every offspring (`selected_le`, `selection_within`).
+- **What is transmitted was selected.** Where descendants take up their parents' dependences within δ (`TransmitsWithin`, a premise), a descendant's need is at most the condition's level at the giving step, plus δ (`transmitted_supported`).
+- **Activity sets later selection.** In a balanced flow, that level is the earlier level with what was taken from and given to the condition in between (`transmitted_within`). In `Drawdown` the parent's own taking lowers the pool, so the descendant inheriting its need is unsupported from its first standing step on, while the one needing less is supported, active and takes in turn. Without `Dependent`, a formation active beyond its support transmits a need above the level (`Unchecked`).
+- **Boundaries.** Selection here constrains who can give at a step, not how many offspring a formation has; reproductive rates, mutation, drift, movement and population dynamics are not covered. Transmission is a premise, as reconstruction is in the theory of evolution. No correspondence to the existing mechanisms (`StructuralCopying` and others) is attempted this round; they keep their scope. Nothing is evaluated.
+- **Bookkeeping.** The record living-on-and-descent now cites `Flow.Descends` in `Evolution.lean`; its claim is unchanged.
+
+The package now has 910 theorems and 1435 declaration audits, over a core closure of 26 modules and a package of 24, all source declarations with empty axiom reports. Section 29 has not yet been independently reviewed.

@@ -15,6 +15,7 @@ import Becoming.Wholes
 import Becoming.Dissipation
 import Becoming.Roles
 import Becoming.Reserve
+import Becoming.Evolution
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -118,6 +119,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reserve decaying while dormant bounds the time as well. A relatum standing while active,
   absent earlier, came to stand before it was active: generation bears replenishment where
   standing rises, not where activity does.
+* `Becoming.Evolution` (L3): descent, transmission, variation and selection. A relatum
+  descends from a formation that takes part in a step, gives to it, and across which it
+  comes to stand. Over any finite family of parents and offspring, the offspring's total
+  with what transmission lowered is the parents' amounts weighted by their offspring with
+  what transmission raised: Price's equation, with no premise. Where only active
+  formations give and activity needs support, only supported formations leave
+  descendants, so what is transmitted within a bound was selected: a descendant's need is
+  at most its condition's level at the giving step, plus the bound, and in a balanced
+  flow what is taken from and given to the condition in between sets that level.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.
@@ -134,12 +144,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   condition.
 * `Becoming.Descent` (L4): relata related directly. Read with one kind of relatum, an
   event is related to the relatum it lives on, drawing on it and depending on it at a
-  positive need, which under `Dependent` stands at that step; and a relatum given to as
-  it comes to stand descends from the formation taking part that gives to it.
-  An embodied relatum that arises descends from another active formation, so under N_rel
-  valuing that formation reaches the arisen relatum's living events, and generations each
-  given by the one before are connected by descent alone. Whether these readings count
-  as formed relations is Ren's choice.
+  positive need, which under `Dependent` stands at that step, and to the relata it
+  descends from or that descend from it (`Becoming.Evolution`). An embodied relatum that
+  arises descends from another active formation, so under N_rel valuing that formation
+  reaches the arisen relatum's living events, and generations each given by the one before
+  are connected by descent alone. Whether these readings count as formed relations is
+  Ren's choice.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

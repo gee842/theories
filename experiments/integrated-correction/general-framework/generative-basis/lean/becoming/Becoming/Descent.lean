@@ -1,4 +1,5 @@
 import Becoming.Correspondence
+import Becoming.Evolution
 import Becoming.Reserve
 
 /-!
@@ -27,19 +28,19 @@ reading.
   (`living_on_reaches`, `lived_on_reaches`): valuing the fox's eating reaches the hare's
   living.
 * **Descent.** A relatum descends from a formation that takes part in a step at which it
-  gives to the relatum and across which the relatum comes to stand (`Flow.Descends`). A
-  gift entry of a formation that takes no part enters no level, and makes no descent
-  (`Stranger`). Descent relates relata whole, every event of the one to every event of
-  the other (`Flow.descent`). In a balanced flow in which only
-  active formations give, an embodied relatum that arises descends from another
-  formation active at that step (`Embodied.descends`), which need not be embodied.
-  Under N_rel, valuing any event of a formation then reaches every living event of the
-  relata descending from it, and conversely (`descent_reaches`, `ancestry_reaches`,
-  `arisen_reached`). Generations each given by the one before are connected by descent,
-  and by neither co-participation nor interaction; G0 there is exactly a seed with N_rel
-  and N_std (`Brood.descended`). Descent follows coming to stand, not arising: a seed
-  descends from the parent that provisioned it while dormant (`Provisioned.descends`),
-  and waking from dormancy descends from nothing (`Sleeper.no_descent`).
+  gives to the relatum and across which the relatum comes to stand (`Flow.Descends`, in
+  `Becoming.Evolution`). A gift entry of a formation that takes no part enters no level,
+  and makes no descent (`Stranger`). Descent relates relata whole, every event of the one
+  to every event of the other (`Flow.descent`). In a balanced flow in which only active
+  formations give, an embodied relatum that arises descends from another formation active
+  at that step (`Embodied.descends`), which need not be embodied. Under N_rel, valuing any
+  event of a formation then reaches every living event of the relata descending from it,
+  and conversely (`descent_reaches`, `ancestry_reaches`, `arisen_reached`). Generations
+  each given by the one before are connected by descent, and by neither co-participation
+  nor interaction; G0 there is exactly a seed with N_rel and N_std (`Brood.descended`).
+  Descent follows coming to stand, not arising: a seed descends from the parent that
+  provisioned it while dormant (`Provisioned.descends`), and waking from dormancy descends
+  from nothing (`Sleeper.no_descent`).
 * **Where the identification enters.** Both readings use which condition is which
   relatum. Relabelling the conditions of the bee and the flower that depend only on each
   other, each onto the other, keeps co-participation and interaction, which do not
@@ -115,11 +116,6 @@ end Web
 namespace Flow
 
 variable (L : Flow X X) (W : Web X X) (own sig : Pos → X × Nat → Prop)
-
-/-- `x` descends from `g`: `g` takes part in a step at which it gives to `x` and across
-which `x` comes to stand. -/
-def Descends (x g : X) : Prop :=
-  ∃ t, g ∈ L.present t ∧ 0 < L.give t g x ∧ W.ComesToStand t x
 
 /-- Events read stepwise, related by interaction or by descent between their relata, in
 either direction. -/

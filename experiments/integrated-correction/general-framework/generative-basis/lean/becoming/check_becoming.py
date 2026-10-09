@@ -38,8 +38,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence",
-        "Becoming.Descent", "Becoming"]
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Metaethics", "Becoming.Ranking",
+        "Becoming.Correspondence", "Becoming.Descent", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -369,10 +369,28 @@ SCOPE = (
     "other neither co-participation nor interaction relates the bee to the flower, though both "
     "are embodied; relabelling the conditions of a one-kind web onto themselves keeps the "
     "connection of both valuations. "
+    "Evolution: a relatum descends from a formation across a step when the formation takes part "
+    "in the step and gives to it and the relatum comes to stand across it; over any finite family "
+    "of parents, each with finitely many offspring, and any amounts read of them, the offspring's "
+    "total with what transmission lowered equals the parents' amounts, each counted once for every "
+    "offspring, with what transmission raised, Price's equation in additive form with no premise; "
+    "where only active formations give and activity needs support, a formation a relatum descends "
+    "from across a step is supported there, so one unsupported at a step leaves no descendant "
+    "across it and one never supported leaves none, and read of needs on a condition every parent "
+    "depends on, the selection term is at most the level counted once for every offspring; where "
+    "a flow transmits a dependence within a bound, a descendant depending on the condition at its "
+    "first standing step descending only from formations depending on it and needing it at most "
+    "the bound more, a descendant's need is at most the condition's level at the giving step plus "
+    "the bound, and in a balanced flow its need with everything taken from the condition since an "
+    "earlier step is at most the level then with everything given since, plus the bound; a parent "
+    "taking from a pool and giving to two descendants leaves the one inheriting its need "
+    "unsupported from its first standing step on, while the one needing less is supported, active "
+    "and takes in turn, and without the premise that activity needs support a formation active "
+    "beyond its support transmits a need above the level at its giving step. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
-    "depending on it at a positive need, is related to that relatum's events, and a relatum "
-    "given to at a step across which it comes to stand descends from the formation taking part "
-    "in that step that gives to it, descent relating every event of the two, while a gift entry "
+    "depending on it at a positive need, is related to that relatum's events, and an event is "
+    "related to the events of the relata it descends from and that descend from it, descent "
+    "relating every event of the two, while a gift entry "
     "of a formation taking no part makes no descent; living on, like interaction, needs a "
     "dependence that can fail, so under the premise that activity needs support the relatum an "
     "active formation lives on stands at that step and, if embodied, is active there, while a "

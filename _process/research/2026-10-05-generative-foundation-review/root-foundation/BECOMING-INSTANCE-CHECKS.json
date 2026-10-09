@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "utc": "2026-10-09T11:05:25Z",
+  "utc": "2026-10-09T11:29:51Z",
   "criterion": "A module in universal-ethics, generative-capacity or evolution-connectionism with a theorem whose signature has an explicit type binder, or with a type variable (plan §1).",
   "census": {
     "modules": 46,
@@ -41,13 +41,13 @@
   },
   "spine_receipt": {
     "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-    "sha256": "b42ded8776644fadb9d445428c2ffb6bbc9b8ecdde6ea79c5d97a1e69354a0c0",
-    "utc": "20261009T110204.479251Z"
+    "sha256": "df90e7b227b2b639aff6518d3be184210a791ecbd9be489a69a7cac3bcfa6b61",
+    "utc": "20261009T112625.591552Z"
   },
   "periphery_receipt": {
     "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
-    "sha256": "3617807a450c6ecd83ff1a2c83fb303c26354d56e642c4e116459b791c704a0a",
-    "utc": "20261009T110332.423150Z"
+    "sha256": "007cdb98460e4db3da4abc98dfdbf7410fd293784864f42d9c8ac174e0680b39",
+    "utc": "20261009T112736.537510Z"
   },
   "checker_sha256": "fb038b366860c126ba400993818c70a1b27e5b382fff8f52e096a064a863df1f",
   "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt or, for Mathlib leaves, by the peripheral bridge's receipt; the inherited modules are not recompiled.",

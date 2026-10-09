@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-111 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+112 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -56,6 +56,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [经历控制与保留使用的经验范围 / Empirical scope of encounter control and retained use](results/records/encounter-control-and-retention.md) | reviewed-scoped | [README.md](../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md) |
 | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](results/records/encounter-selection-and-revision.md) | recorded-checked | [EncounterChoice.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) |
 | [端点可能性丧失与返回 / Endpoint opportunity loss and return](results/records/endpoint-loss-and-return.md) | recorded-checked | [BecomingReversibility.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) |
+| [经世系的演化：不加前提的传递律；只有被支持的形成留下后代，在界内传递的所需曾被选择，活动设定后来的选择 / Evolution on descent: a law of transmission with no premise; only supported formations leave descendants, what is transmitted within a bound was selected, and activity sets later selection](results/records/evolution-on-descent.md) | recorded-checked | [Evolution.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean) |
 | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](results/records/exclusive-footprint-support.md) | recorded-checked | [ExplanatoryFootprints.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) |
 | [可失实见证的完整辨别条件 / Complete diagnosability with fallible witnesses](results/records/fallible-witness-diagnosability.md) | recorded-checked | [FallibleInspection.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean) |
 | [有限根基的共同解释 / Common interpretation of a finite basis](results/records/finite-basis-common-interpretation.md) | recorded-checked | [JointInterpretation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean) |

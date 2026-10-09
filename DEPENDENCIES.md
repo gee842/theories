@@ -450,6 +450,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean)
 
+## evolution-on-descent ← living-on-and-descent
+
+`formal-reuse` — 复用 P18 引入、P18b 改正的世系关系（给予的形成须参与该步）；定义移入 Becoming.Evolution（DescendsAt、Descends），在估值中的读法留在 Becoming.Descent。 / Reuses the descent relation introduced in P18 and corrected in P18b (the formation giving must take part in the step); its definition moves to Becoming.Evolution (DescendsAt, Descends), and its readings in valuation stay in Becoming.Descent.
+
+**Producer output / 上游输出:** 一个关系项从参与某步、在该步给予它的形成而来，它跨该步开始作为条件而在。 / A relatum descends from a formation that takes part in a step and gives to it, as it comes to stand across the step.
+
+**Consumer input / 下游输入:** 世系的每一对上，亲代在给予之步活跃且被支持。 / On every pair related by descent, the parent is active and supported at the giving step.
+
+**Retained conditions / 保留条件:** Acting；Dependent。 / Acting; Dependent.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
+## evolution-on-descent ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用截断差 excess 与 excess_balance；price 的每一项由它们逐对给出。 / Reuses the truncated difference excess and excess_balance; each term of price is given pairwise by them.
+
+**Producer output / 上游输出:** a 加上 b 超出 a 的，等于 b 加上 a 超出 b 的。 / a with the excess of b over a is b with the excess of a over b.
+
+**Consumer input / 下游输入:** 每个后代的量加上降低的，等于亲代的量加上升高的；对亲代与后代求和即 price。 / Each offspring's amount with what was lowered is its parent's with what was raised; summed over parents and offspring this is price.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## evolution-on-descent ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、Acting、total 的引理与 Balances.accumulates。 / Reuses flows, balance, Acting, the total lemmas and Balances.accumulates.
+
+**Producer output / 上游输出:** 平衡的流中，一个条件之后的水平加上其间的取用，等于之前的水平加上其间的给予。 / In a balanced flow, a condition's later level with the uptake between is its earlier level with the replenishment between.
+
+**Consumer input / 下游输入:** 后代的所需加上其间的取用，至多是较早的水平加上其间的给予，再加 δ。 / A descendant's need with the uptake between is at most the earlier level with the replenishment between, plus δ.
+
+**Retained conditions / 保留条件:** 平衡；Acting；Dependent；TransmitsWithin。 / Balance; Acting; Dependent; TransmitsWithin.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## evolution-on-descent ← generation-is-replenishment
+
+`formal-reuse` — 复用开始作为条件而在（ComesToStand）：世系跟着水平的上升走。 / Reuses coming to stand (ComesToStand): descent follows the rise of a level.
+
+**Producer output / 上游输出:** 一个关系项跨一步开始作为条件而在。 / A relatum comes to stand across a step.
+
+**Consumer input / 下游输入:** 世系的第三个合取项；TransmitsWithin 读的是后代开始作为条件而在之步的依存。 / The third conjunct of descent; TransmitsWithin reads the descendant's dependence at its first standing step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## finite-basis-common-interpretation ← derivation-soundness
 
 `formal-reuse` — 反向从共同根基到共同闭包使用健全性；局部前提仍保留。 / The common-basis-to-common-closure direction uses soundness; local premises remain explicit.
