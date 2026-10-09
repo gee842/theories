@@ -88,7 +88,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arising do. Continuity read one way leaves succession open, read both ways it still
   leaves succession across dormancy. Under the premises of `Becoming.Population`, more
   without end makes generation unceasing under every one-to-one re-identification and
-  makes formations arise under every continuation without splits.
+  makes formations arise under every continuation without splits. Across one step this is
+  exact: more forces arising under a continuation exactly when no formation continues as
+  two. The census balance holds under a continuation in two halves: without splits,
+  ceasing recurring needs arising recurring; without merges, under a bounded census,
+  arising recurring needs ceasing recurring.
 * `Becoming.Wholes` (L3): a whole is active exactly while some part is, a coincidence of
   activity rather than constitution. A persisting whole of brief parts, or of parts that
   end with finitely many active at once, persists only through their generation: parts

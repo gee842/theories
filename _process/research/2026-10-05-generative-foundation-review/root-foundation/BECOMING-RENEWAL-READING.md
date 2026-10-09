@@ -2557,6 +2557,71 @@ Integration: §26、§34、§36、§38、§39 与英文 P19、P25b、P29 的就�
 
 **边界。** 不含伦理谓词；不改变任何读法选择的地位，§8 的一项选择按 R1 放宽，第一项写出 Ren 回复的语境并请 Ren 说明；新名称是建议；新见证都是最小见证。本节的更正与 §40、§41 尚未经独立审查。
 
+## 43. 延续下的普查平衡与跨一步的精确条件（P32）
+
+2026-10-10。按 Ren“aim a complete theory of becoming, and finish related work”继续，作为计划 P32。identity-across-steps 的局限写着，没有分裂是更多迫使生起的充分条件，不是必要条件，精确的界限没有陈述；它的下一步与正典第 8 节的进一步证明都列出“延续关系上使更多迫使生起的充要条件”。另一方面，普查定律（§35–§37、§40）都以名字规定的同一读生起与止息，即每个形成只延续自身。本节回答前者，并把后者推到每个延续关系：普查定律在延续下的哪一半成立，恰由没有分裂或没有合并决定。没有新模块：一般的计数引理放在 `Becoming.Population`，延续下的读法与见证放在 `Becoming.Identity`。成果记录：修订 [identity-across-steps](../../../../theories/becoming/results/records/identity-across-steps.md)；新增 [census-balance-under-continuation](../../../../theories/becoming/results/records/census-balance-under-continuation.md)。
+
+```text
+Result(s): 复用 identity-across-steps（Continues、ArisesFrom、UnceasingFrom、NoSplit、arisesFrom_self、
+           Census.decideContinues）、census-balance（mark_add_not、marks_le_of_sub、balance_over_stretch 的形式）、
+           ceasing-needs-arising（Web.arising_of_ceasing）、bounded-census-keeps-pace（Web.ceasing_of_arising）、
+           more-needs-renewers（Census、Distinct、length_le_of_matched、decideSome）；
+           修订 identity-across-steps；新增 census-balance-under-continuation
+Delta: Population：mark_le_total、total_le_mark、le_over_stretch、ge_over_stretch、gaining_of_losing、losing_of_gaining；
+       Identity：forces_iff_noSplit、paired、paired_mem、paired_noSplit、paired_covers、forced_iff_more、
+       Web.Continued、Web.CeasesFrom、Web.NoMerge、ceasesFrom_self、self_one_to_one、Census.balanceFrom、
+       Census.balanceFrom_eq、Census.arisingFrom_of_ceasingFrom、Census.ceasingFrom_of_arisingFrom、
+       Census.decideContinued；Tandem.web、alive、apart、census、kept、buds、budding、joins、joining
+Supplied premises / correspondence: 延续关系是读法（同 identity-across-steps），定理对每个读法成立；普查；活动、延续与
+       “是否延续某个活跃形成”可判定（定理的假设）；有界的一半另需从某步起至多 B 个活跃；跨一步的刻画对列表陈述，
+       不需要依存网，forces_iff_noSplit 的必要方向用相等可判定
+Evidence: 合并检查器回执 20261009T192237.890720Z（1153 项定理、1857 项声明审计、核心闭包 29 个模块、包 27 个模块，全部源声明公理报告
+          为空）；外围桥接重跑 20261009T192558.793391Z；实例检查
+Boundary: 只对离散步与每步有限的活动陈述；延续关系由读法给出，不说哪一个是同一；整段上没有分裂与没有合并只是充分
+          条件，单步的刻画是精确的；平衡是计数，不是机制；不评价生起或止息；名称由 Ren 定
+Integration: 计划 P32；回答 identity-across-steps 的下一步与第 8 节同名的进一步证明（延续关系上更多迫使生起的充要
+             条件，跨一步）；把普查定律推到每个延续关系
+```
+
+| 声明 | 内容 |
+|---|---|
+| `forces_iff_noSplit` | 对一步的延续 S：对任意步前与步后的列表（步后的不重复），步后多于步前时总有步后的形成不延续步前的任何形成，恰当没有形成延续为两个 |
+| `paired`、`paired_noSplit`、`paired_covers` | 两个列表按次序配对；步前的不重复时没有分裂；步后的不多于步前时，步后每个形成都延续某个步前的形成 |
+| `forced_iff_more` | 步前与步后的列表都不重复时：在每个没有分裂的延续下都迫使生起，恰当步后多于步前 |
+| `Web.Continued`、`Web.CeasesFrom`、`Web.NoMerge` | 在延续下被延续；在延续下止息：步前活跃，步后没有活跃的形成延续它；没有合并：步后活跃的形成不延续两个步前活跃的形成 |
+| `ceasesFrom_self`、`self_one_to_one` | 每个形成只延续自身时，止息即止息，既无分裂也无合并 |
+| `mark_le_total`、`total_le_mark` | 某成员有某性质的命题，其标记不超过有该性质的成员数；至多一个成员有它时，成员数不超过该命题的标记 |
+| `Census.balanceFrom` | 普查之下每一步：没有分裂时，步后活跃的连同止息的至多是步前活跃的连同生起的；没有合并时至少如此 |
+| `Census.balanceFrom_eq` | 两者都没有时恰好相等 |
+| `le_over_stretch`、`ge_over_stretch` | 每步的不等式跨任一段步累加 |
+| `gaining_of_losing`、`losing_of_gaining` | 每步终点连同失去的不超过起点连同得到的：失去复现需要得到复现；反向且计数从某步起有界时，得到复现需要失去复现 |
+| `Census.arisingFrom_of_ceasingFrom` | 普查、没有分裂：止息在任意晚的步出现需要生起在任意晚的步出现 |
+| `Census.ceasingFrom_of_arisingFrom` | 普查、没有合并、从某步起至多 B 个活跃：生起在任意晚的步出现需要止息在任意晚的步出现 |
+| `Census.decideContinued` | 普查之下，延续可判定时，“是否被某个活跃形成延续”可判定 |
+| `Tandem.kept` | 每步 t 与 t+1 两个形成活跃；每个形成只延续自身时，每步一个生起（t+2）、一个止息（t） |
+| `Tandem.budding` | 读作萌出（t+1 延续为自身与 t+2，t 不被延续）：普查成立、没有合并、有分裂，每步 t 止息，从不生起 |
+| `Tandem.joining` | 读作合并（t 与 t+1 都延续为 t+1）：至多两个活跃、没有分裂、有合并，每步 t+2 生起，从不止息 |
+
+**解读。**
+
+- **跨一步，精确的条件。** 一个形成 g 延续为两个不同的形成 f 与 f′ 时，步前只有 g、步后有 f 与 f′：步后更多，而每个都延续 g，没有生起；没有形成延续为两个时，步后每个形成都延续步前某个形成就使步后不多于步前（`length_le_of_matched`）。所以对任意步前与步后的形成，更多迫使生起恰当没有分裂（`forces_iff_noSplit`）。数目的一面也精确：在每个没有分裂的延续下都迫使生起，恰当步后多于步前，因为步后不多时，按次序配对（`paired`）就是一个没有分裂、使步后每个形成都延续某个形成的延续（`forced_iff_more`）。在一步上，没有分裂是延续上的充要条件，更多是数目上的充要条件；`arisesFrom_of_more` 是充分的一面读于依存网。
+- **整段上。** 一次分裂只在那一步起作用：`Fork` 在第一步分裂，此后形成仍在任意晚的步生起；每步都有分裂可以吸收增长（`Budding` 中一个形成延续为所有形成，`Tandem.budding` 中每步只一个形成延续为两个）。整段上只对延续关系给出与结论等价的条件，只是重述（存在由延续封闭、无界增长的列表序列），所以本节不把它当作定理；精确的是单步的刻画，整段上没有分裂只是充分条件。
+- **延续下的平衡。** 证明以跨步延续的配对数为中介。步后被延续的形成不多于配对数（每个被延续的至少有一对，`mark_le_total`），没有合并时恰是（每个至多一对，`total_le_mark`）；步前被延续的形成也不多于配对数，没有分裂时恰是；两种配对数相同（`total_swap`）。步后的数目是被延续的加生起的，步前的数目是被延续的加止息的，于是没有分裂时步后连同止息的至多是步前连同生起的，没有合并时至少如此，两者都没有时相等（`Census.balanceFrom`、`balanceFrom_eq`）。每个形成只延续自身时（`self_one_to_one`），这就是 `Listed.across` 读于活动。
+- **两半的定律。** 每步的不等式跨段累加（`le_over_stretch`、`ge_over_stretch`），抽象地：一个计数每步终点连同失去的不超过起点连同得到的，失去复现就需要得到复现，因为复现的失去累积超过起点的计数（`gaining_of_losing`）；反向且计数从某步起有界时，得到复现需要失去复现（`losing_of_gaining`）。读于延续：没有分裂时止息复现需要生起复现，这是 `arising_of_ceasing` 推到每个没有分裂的延续（`Census.arisingFrom_of_ceasingFrom`）；没有合并且从某步起至多 B 个活跃时生起复现需要止息复现，这是 `ceasing_of_arising` 推到每个没有合并的延续（`Census.ceasingFrom_of_arisingFrom`）。
+- **每个条件都不可少。** `Tandem` 是一个展开、三种读法：每个形成只延续自身时每步一个生起、一个止息（`kept`）；读作萌出，较晚的形成延续为自身与新形成、较早的不被延续，普查成立、没有合并，每步一个止息而从不生起（`budding`）；读作合并，两个都延续为较晚的那个，至多两个活跃、没有分裂，每步一个生起而从不止息（`joining`）。展开不变，读出的生起与止息随读法而变；平衡的每一半恰在一种读法下失效。
+
+**作者反审。**
+
+*反驳 1：单步的刻画是平凡的。* 两个方向都短。内容在于界限精确了：以前只知道没有分裂充分，现在知道在一步上它也必要，而在整段上不必要（`Fork`），所以整段的结论依靠的是许多步上的没有分裂，不是关于延续关系的某个整体条件。
+
+*反驳 2：`forces_iff_noSplit` 用了相等可判定。* 只在必要的方向用：从“不能有两个不同的”得到“相等”。不设可判定时，同样的论证给出相等的双重否定；这是构造逻辑的界限，不是公理。`forced_iff_more` 与平衡都不用它。
+
+*反驳 3：延续关系任意给定，平衡是否只是记账？* 是计数，不是机制：它不说哪个形成生起，也不说哪个读法对。它说明的是，普查定律不依赖名字规定的同一：只要读法没有分裂，止息需要生起就成立；只要没有合并，有界时生起需要止息就成立；能抹去生起或止息的恰是分裂或合并。identity-across-steps 中“延续关系下……”的计数部分由此回答；形成的类、任期与侵蚀在延续下仍未陈述。
+
+*反驳 4：`Tandem` 是特意构造的。* 是，最小见证。它的意义在于三种读法作用在同一个展开上，是 `Turnover`（同一由表示给出）的计数版本。萌出与合并在生物中有其例（分裂繁殖、融合），那是应用，不是定理的内容。
+
+**边界。** 无伦理谓词，不评价生起或止息；只对离散步与每步有限的活动陈述；延续关系由读法给出，本节不说哪一个是同一；整段上没有分裂与没有合并只是充分条件；名称（CeasesFrom、NoMerge、Tandem、paired）是 AI 的表述，由 Ren 定。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2868,3 +2933,7 @@ The package now has 1109 theorems and 1793 declaration audits, over a core closu
 - **Provenance (R9–R11).** Ren's sentence is quoted verbatim or glossed as a tag question presuming no overlap. What Ren confirmed is the English arising/ceasing, the Chinese 生起／止息 being the AI's rendering. The source file is retitled with a correction note, and chapter §8 quotes the AI note Ren replied to and asks Ren whether the activity reading remains a candidate. The English P25b paragraph and the plan's P25b and P29 rows gain their count lines and receipts.
 
 The package now has 1131 theorems and 1826 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 42 have not yet been independently reviewed.
+
+**P32: the census balance under a continuation, and the exact condition across one step.** identity-across-steps said that no split is sufficient for more to force arising, not necessary, with no exact boundary stated, and listed a necessary and sufficient condition as its next step. Across one step the condition is exact: for any lists before and after a step, more always leaves some formation after the step continuing none before it exactly when no formation continues as two (`forces_iff_noSplit`), since a formation continuing as two continues both members of a longer list; and arising is forced under every continuation without splits exactly when more stand after the step than before, since otherwise pairing the lists in order (`paired`) continues every formation after the step without a split (`forced_iff_more`). Over a run a single split acts only at its step (`Fork`), and the exact condition on continuations would only restate the conclusion. The census laws read arising and ceasing under the identity the names stipulate; under any continuation, with a formation ceasing when no formation active after the step continues it (`Web.CeasesFrom`) and a merge one formation continuing two (`Web.NoMerge` excludes it), the census balance holds in two halves: without splits the formations after a step with those ceasing are at most those before with those arising, without merges at least, with neither exactly (`Census.balanceFrom`, `balanceFrom_eq`), the proof going through the continuing pairs (`mark_le_total`, `total_le_mark`, `total_swap`). Each formation continuing only itself has neither (`self_one_to_one`), and there this is `Listed.across`. Added up over stretches (`le_over_stretch`, `ge_over_stretch`, `gaining_of_losing`, `losing_of_gaining`), ceasing recurring needs arising recurring under every continuation without splits (`Census.arisingFrom_of_ceasingFrom`), and under a bounded count arising recurring needs ceasing recurring under every continuation without merges (`Census.ceasingFrom_of_arisingFrom`). Each condition is needed: in `Tandem` two formations are active at each step; read with each continuing only itself one arises and one ceases across every step, read as budding one ceases and nothing ever arises, read as joining one arises and nothing ever ceases, at most two active.
+
+The package now has 1153 theorems and 1857 declaration audits, over a core closure of 29 modules and a package of 27, all source declarations with empty axiom reports. Sections 40 to 43 have not yet been independently reviewed; the twelfth review, of P30, P31 and P29b, is under way.

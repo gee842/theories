@@ -91,6 +91,29 @@ Results:
   end (`Fork`), while under a continuation in which new formations bud from one already
   there the same growth forces no arising after the first step (`Budding`). What
   survives every reading is the count, ever more formations active.
+* Across one step, exactly. Whatever formations stand before and after a step, more
+  forces arising under a continuation exactly when no formation continues as two
+  (`forces_iff_noSplit`); and under every continuation without splits, arising is forced
+  exactly when more formations stand after the step than before (`forced_iff_more`):
+  with no more, pairing the formations in order continues every one without a split
+  (`paired`). A split at one step leaves formations arising at the others (`Fork`).
+* The census balance under a continuation. Under a continuation, a formation ceases
+  across a step when it is active before it and continued by no formation active after
+  it (`CeasesFrom`); a merge is one formation after the step continuing two before it,
+  and `NoMerge` excludes it. Under a census, across each step: without splits, the
+  formations active after the step with those ceasing under the continuation are at most
+  those active before with those arising under it; without merges, at least; with
+  neither, the balance is exact (`Census.balanceFrom`, `Census.balanceFrom_eq`). Each
+  formation continuing only itself splits none and merges none (`self_one_to_one`), and
+  there the balance is `Listed.across`. So each half of the census law holds under every
+  continuation meeting its condition: without splits, ceasing at arbitrarily late steps
+  needs arising at arbitrarily late steps (`Census.arisingFrom_of_ceasingFrom`); without
+  merges, with at most `B` formations active from some step on, arising at arbitrarily
+  late steps needs ceasing at arbitrarily late steps
+  (`Census.ceasingFrom_of_arisingFrom`). Each condition is needed. In one web, two
+  formations are active at each step; read with each continuing only itself, one arises
+  and one ceases across every step; read as budding, ceasing recurs and nothing arises;
+  read as joining, arising recurs with at most two active and nothing ceases (`Tandem`).
 * Part and whole. A lineage and its members are two levels of one unfolding. Named as a
   formation beside its members, the lineage is active at every step while its members
   arise without end (`Layered`). A web has no relation saying that the lineage is
@@ -107,9 +130,12 @@ formation continuing, many generated, or both at two levels, and whether an heir
 inherits a loss, are further readings. Where generation is more without end under a
 census, with each formation taking part listed once and only active formations taking,
 it is unceasing under every one-to-one reading of identity, and formations arise without
-end under every continuation without splits. The representation supplies
-identity through the index type; for an application it is a correspondence claim. No
-ethical predicate, ranking or axiom occurs.
+end under every continuation without splits. Ceasing at arbitrarily late steps needs
+arising at arbitrarily late steps under every continuation without splits, and under a
+bounded census the converse holds under every continuation without merges; a reading
+that splits or merges can remove the arising or the ceasing these laws force. The
+representation supplies identity through the index type; for an application it is a
+correspondence claim. No ethical predicate, ranking or axiom occurs.
 -/
 
 namespace Becoming
@@ -594,6 +620,253 @@ theorem Web.continuation_reidentify (W : Web F C) (σ : Reidentify F F') :
        fun ⟨g, active, same⟩ => before (Eq.subst (motive := fun h => W.active t h)
          ((σ.old_new t g).symm.trans (congrArg (σ.old t) same)) active)⟩⟩⟩
 
+/-! ## Across one step: what forces arising -/
+
+/-- Across one step, more forces arising under a continuation `S` exactly when no formation
+continues as two. If every member of a list without repetition continues one of a shorter
+list, some formation continues as two (`length_le_of_matched`); and a formation continuing
+as two continues both members of a list longer than the list holding it alone. -/
+theorem forces_iff_noSplit [DecidableEq F] {S : F → F → Prop} :
+    (∀ before after : List F, Distinct after → before.length < after.length →
+      ¬ ∀ f, f ∈ after → ∃ g, g ∈ before ∧ S g f) ↔
+    ∀ g f f', S g f → S g f' → f = f' :=
+  ⟨fun forces g f f' continues continues' => match decEq f f' with
+    | isTrue same => same
+    | isFalse other => absurd (fun _ mem => match mem_cons_cases mem with
+        | .inl same => ⟨g, .head [], Eq.subst (motive := S g) same.symm continues⟩
+        | .inr mem => match mem_cons_cases mem with
+          | .inl same => ⟨g, .head [], Eq.subst (motive := S g) same.symm continues'⟩
+          | .inr nothing => nomatch nothing)
+      (forces [g] [f, f'] ⟨fun mem => (match mem_cons_cases mem with
+          | .inl same => other same
+          | .inr nothing => nomatch nothing), (fun nothing => nomatch nothing), trivial⟩
+        (Nat.lt_succ_self 1)),
+   fun noSplit _ _ distinct more covered => Nat.not_lt_of_ge
+     (length_le_of_matched (S := fun f g => S g f) distinct covered
+       fun f f' g _ _ continues continues' => noSplit g f f' continues continues') more⟩
+
+/-- The members of two lists paired in order: the first of the second list continues the
+first of the first, and so on. -/
+def paired : List F → List F → F → F → Prop
+  | [], _ => fun _ _ => False
+  | _ :: _, [] => fun _ _ => False
+  | g :: before, f :: after => fun x y => (x = g ∧ y = f) ∨ paired before after x y
+
+theorem paired_mem : ∀ {before after : List F} {x y : F}, paired before after x y → x ∈ before
+  | [], _, _, _, nothing => nomatch nothing
+  | _ :: _, [], _, _, nothing => nomatch nothing
+  | g :: _, _ :: _, _, _, .inl ⟨same, _⟩ =>
+    Eq.subst (motive := fun x => x ∈ g :: _) same.symm (.head _)
+  | g :: _, _ :: _, _, _, .inr rest => .tail g (paired_mem rest)
+
+/-- Paired in order from a list without repetition, no formation continues as two. -/
+theorem paired_noSplit : ∀ {before after : List F}, Distinct before →
+    ∀ g f f', paired before after g f → paired before after g f' → f = f'
+  | [], _, _, _, _, _, nothing, _ => nomatch nothing
+  | _ :: _, [], _, _, _, _, nothing, _ => nomatch nothing
+  | _ :: before, _ :: _, ⟨fresh, distinct⟩, g, f, f', continues, continues' =>
+    match continues, continues' with
+    | .inl ⟨_, same⟩, .inl ⟨_, same'⟩ => same.trans same'.symm
+    | .inl ⟨here, _⟩, .inr rest =>
+      absurd (Eq.subst (motive := fun x => x ∈ before) here (paired_mem rest)) fresh
+    | .inr rest, .inl ⟨here, _⟩ =>
+      absurd (Eq.subst (motive := fun x => x ∈ before) here (paired_mem rest)) fresh
+    | .inr rest, .inr rest' => paired_noSplit distinct g f f' rest rest'
+
+/-- Paired in order with a list no shorter, every member of the second list continues one
+of the first. -/
+theorem paired_covers : ∀ {before after : List F}, after.length ≤ before.length →
+    ∀ f, f ∈ after → ∃ g, g ∈ before ∧ paired before after g f
+  | _, [], _, _, mem => nomatch mem
+  | [], _ :: _, le, _, _ => absurd le (Nat.not_succ_le_zero _)
+  | g :: before, _ :: _, le, f, mem => match mem_cons_cases mem with
+    | .inl same => ⟨g, .head before, .inl ⟨rfl, same⟩⟩
+    | .inr mem => match paired_covers (Nat.le_of_succ_le_succ le) f mem with
+      | ⟨g', mem', continues⟩ => ⟨g', .tail g mem', .inr continues⟩
+
+/-- And across one step, under every continuation in which no formation continues as two,
+arising is forced exactly when more formations stand after the step than before: where no
+more do, pairing the lists in order continues every formation after the step, with no
+split. -/
+theorem forced_iff_more {before after : List F} (apart : Distinct before)
+    (distinct : Distinct after) :
+    (∀ S : F → F → Prop, (∀ g f f', S g f → S g f' → f = f') →
+      ¬ ∀ f, f ∈ after → ∃ g, g ∈ before ∧ S g f) ↔ before.length < after.length :=
+  ⟨fun forced => match Nat.decLt before.length after.length with
+    | isTrue more => more
+    | isFalse notMore => absurd (paired_covers (Nat.ge_of_not_lt notMore))
+        (forced (paired before after) (paired_noSplit apart)),
+   fun more S noSplit covered => Nat.not_lt_of_ge
+     (length_le_of_matched (S := fun f g => S g f) distinct covered
+       fun f f' g _ _ continues continues' => noSplit g f f' continues continues') more⟩
+
+/-! ## The census balance under a continuation -/
+
+namespace Web
+
+variable (W : Web F C) (R : Nat → F → F → Prop)
+
+/-- Under `R`, `g` is continued across the step from `t`: some formation active after the
+step continues it. -/
+def Continued (t : Nat) (g : F) : Prop :=
+  ∃ f, W.active (t + 1) f ∧ R t g f
+
+/-- Under `R`, `g` ceases across the step from `t`: active before it, and continued by no
+formation active after it. -/
+def CeasesFrom (t : Nat) (g : F) : Prop :=
+  W.active t g ∧ ¬ W.Continued R t g
+
+/-- Under `R`, no formation active after a step continues two active before it. One may
+continue as several. -/
+def NoMerge : Prop :=
+  ∀ t g g' f, W.active t g → W.active t g' → R t g f → R t g' f → W.active (t + 1) f →
+    g = g'
+
+/-- With each formation continuing only itself, ceasing under a continuation is ceasing. -/
+theorem ceasesFrom_self (t : Nat) (g : F) :
+    W.CeasesFrom (fun _ g f => g = f) t g ↔ W.Ceases t g :=
+  ⟨fun ⟨before, alone⟩ => ⟨before, fun after => alone ⟨g, after, rfl⟩⟩,
+   fun ⟨before, after⟩ => ⟨before, fun ⟨_, active, same⟩ =>
+     after (Eq.subst (motive := fun h => W.active (t + 1) h) same.symm active)⟩⟩
+
+/-- Each formation continuing only itself splits none and merges none. -/
+theorem self_one_to_one : W.NoSplit (fun _ g f => g = f) ∧ W.NoMerge (fun _ g f => g = f) :=
+  ⟨fun _ _ _ _ _ same same' _ _ => same.symm.trans same',
+   fun _ _ _ _ _ _ same same' _ => same.trans same'.symm⟩
+
+section Counting
+
+variable [∀ t f, Decidable (W.active t f)] [∀ t f, Decidable (W.Continues R t f)]
+  [∀ t g, Decidable (W.Continued R t g)]
+
+instance (t : Nat) (f : F) : Decidable (W.ArisesFrom R t f) := instDecidableAnd
+
+instance (t : Nat) (g : F) : Decidable (W.CeasesFrom R t g) := instDecidableAnd
+
+variable {W R} [∀ t g f, Decidable (R t g f)]
+
+/-- The census balance under a continuation. Under a census, across each step: without
+splits, the formations active after the step with those ceasing under the continuation are
+at most those active before with those arising under it; without merges, at least. Each
+side is read against the continuing pairs: no more formations after the step continue one
+before it than there are pairs, nor are more before it continued, and without merges the
+first count is the pairs, without splits the second. -/
+theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t : Nat) :
+    (W.NoSplit R → (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) ≤
+      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) ∧
+    (W.NoMerge R → (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) ≤
+      (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))) :=
+  have after : (alive (t + 1)).length = total (alive (t + 1)) (fun f => mark (W.Continues R t f)) +
+      total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
+    (total_ones _).symm.trans ((total_congr_on fun f mem =>
+      have active : W.active (t + 1) f := ((census (t + 1)).2 f).mpr mem
+      Eq.symm (mark_add_not (q := W.Continues R t f) (r := W.ArisesFrom R t f)
+        (if h : W.Continues R t f then .inl h else .inr ⟨active, h⟩)
+        fun both => both.2.2 both.1)).trans (total_add _ _ _))
+  have before : (alive t).length = total (alive t) (fun g => mark (W.Continued R t g)) +
+      total (alive t) (fun g => mark (W.CeasesFrom R t g)) :=
+    (total_ones _).symm.trans ((total_congr_on fun g mem =>
+      have active : W.active t g := ((census t).2 g).mpr mem
+      Eq.symm (mark_add_not (q := W.Continued R t g) (r := W.CeasesFrom R t g)
+        (if h : W.Continued R t g then .inl h else .inr ⟨active, h⟩)
+        fun both => both.2.2 both.1)).trans (total_add _ _ _))
+  have swap : total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) =
+      total (alive (t + 1)) (fun f => total (alive t) fun g => mark (R t g f)) :=
+    total_swap (fun g f => mark (R t g f)) (alive (t + 1)) (alive t)
+  have continued : total (alive (t + 1)) (fun f => mark (W.Continues R t f)) ≤
+      total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) :=
+    Nat.le_trans (total_le _ fun _ _ => mark_le_total fun ⟨g, active, continues⟩ =>
+      ⟨g, ((census t).2 g).mp active, continues⟩) (Nat.le_of_eq swap.symm)
+  have continuing : total (alive t) (fun g => mark (W.Continued R t g)) ≤
+      total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) :=
+    total_le _ fun _ _ => mark_le_total fun ⟨f, active, continues⟩ =>
+      ⟨f, ((census (t + 1)).2 f).mp active, continues⟩
+  ⟨fun noSplit =>
+    have pairs : total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) ≤
+        total (alive t) (fun g => mark (W.Continued R t g)) :=
+      total_le _ fun g mem => total_le_mark (census (t + 1)).1
+        (fun f f' mem_f mem_f' continues continues' =>
+          noSplit t g f f' (((census t).2 g).mpr mem) continues continues'
+            (((census (t + 1)).2 f).mpr mem_f) (((census (t + 1)).2 f').mpr mem_f'))
+        fun f mem_f continues => ⟨f, ((census (t + 1)).2 f).mpr mem_f, continues⟩
+    calc (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))
+        = (total (alive (t + 1)) (fun f => mark (W.Continues R t f)) +
+            total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) +
+            total (alive t) (fun g => mark (W.CeasesFrom R t g)) := congrArg (· + _) after
+      _ ≤ (total (alive t) (fun g => mark (W.Continued R t g)) +
+            total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) +
+            total (alive t) (fun g => mark (W.CeasesFrom R t g)) :=
+        Nat.add_le_add_right (Nat.add_le_add_right (Nat.le_trans continued pairs) _) _
+      _ = (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
+        (Nat.add_right_comm _ _ _).trans (congrArg (· + _) before.symm),
+   fun noMerge =>
+    have pairs : total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) ≤
+        total (alive (t + 1)) (fun f => mark (W.Continues R t f)) :=
+      Nat.le_trans (Nat.le_of_eq swap) (total_le _ fun f mem => total_le_mark (census t).1
+        (fun g g' mem_g mem_g' continues continues' =>
+          noMerge t g g' f (((census t).2 g).mpr mem_g) (((census t).2 g').mpr mem_g')
+            continues continues' (((census (t + 1)).2 f).mpr mem))
+        fun g mem_g continues => ⟨g, ((census t).2 g).mpr mem_g, continues⟩)
+    calc (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))
+        = (total (alive t) (fun g => mark (W.Continued R t g)) +
+            total (alive t) (fun g => mark (W.CeasesFrom R t g))) +
+            total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) := congrArg (· + _) before
+      _ ≤ (total (alive (t + 1)) (fun f => mark (W.Continues R t f)) +
+            total (alive t) (fun g => mark (W.CeasesFrom R t g))) +
+            total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
+        Nat.add_le_add_right (Nat.add_le_add_right (Nat.le_trans continuing pairs) _) _
+      _ = (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) :=
+        (Nat.add_right_comm _ _ _).trans (congrArg (· + _) after.symm)⟩
+
+/-- Under a census and a continuation with neither splits nor merges, the census balance is
+exact across each step. -/
+theorem Census.balanceFrom_eq {alive : Nat → List F} (census : W.Census alive) (t : Nat)
+    (noSplit : W.NoSplit R) (noMerge : W.NoMerge R) :
+    (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) =
+      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
+  Nat.le_antisymm ((census.balanceFrom t).1 noSplit) ((census.balanceFrom t).2 noMerge)
+
+/-- The census law under a continuation: under a census and a continuation in which no
+formation continues as two, ceasing at arbitrarily late steps needs arising at arbitrarily
+late steps (`arising_of_ceasing`). -/
+theorem Census.arisingFrom_of_ceasingFrom {alive : Nat → List F} (census : W.Census alive)
+    (noSplit : W.NoSplit R) (ceasing : ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g) :
+    W.UnceasingFrom R :=
+  fun N => match gaining_of_losing (q := fun t => (alive t).length)
+      (fun t => (census.balanceFrom t).1 noSplit) (fun M => match ceasing M with
+        | ⟨t, g, later, ceases⟩ =>
+          ⟨t, later, total_pos_of_mem (((census t).2 g).mp ceases.1) (mark_pos.mpr ceases)⟩) N with
+  | ⟨t, later, arose⟩ => match total_pos _ arose with
+    | ⟨f, _, arises⟩ => ⟨t, f, later, mark_pos.mp arises⟩
+
+/-- And under a census and a continuation in which no formation continues two, with at
+most `B` formations active at each step from some step on, arising at arbitrarily late
+steps needs ceasing at arbitrarily late steps (`ceasing_of_arising`). -/
+theorem Census.ceasingFrom_of_arisingFrom {alive : Nat → List F} (census : W.Census alive)
+    (noMerge : W.NoMerge R) {T B : Nat} (bounded : ∀ t, T ≤ t → (alive t).length ≤ B)
+    (arising : W.UnceasingFrom R) : ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g :=
+  fun N => match losing_of_gaining (q := fun t => (alive t).length)
+      (fun t => (census.balanceFrom t).2 noMerge) bounded (fun M => match arising M with
+        | ⟨t, f, later, arises⟩ => ⟨t, later,
+          total_pos_of_mem (((census (t + 1)).2 f).mp arises.1) (mark_pos.mpr arises)⟩) N with
+  | ⟨t, later, ceased⟩ => match total_pos _ ceased with
+    | ⟨g, _, ceases⟩ => ⟨t, g, later, mark_pos.mp ceases⟩
+
+end Counting
+
+end Web
+
+/-- Under a census, whether a formation active before a step is continued is decidable
+where the continuation is. -/
+def Web.Census.decideContinued {W : Web F C} {R : Nat → F → F → Prop}
+    [∀ t g f, Decidable (R t g f)] {alive : Nat → List F} (census : W.Census alive)
+    (t : Nat) (g : F) : Decidable (W.Continued R t g) :=
+  have : Decidable (∃ f, f ∈ alive (t + 1) ∧ R t g f) :=
+    decideSome (p := fun f => R t g f) (alive (t + 1))
+  decidable_of_decidable_of_iff (p := ∃ f, f ∈ alive (t + 1) ∧ R t g f)
+    ⟨fun ⟨f, mem, r⟩ => ⟨f, ((census (t + 1)).2 f).mpr mem, r⟩,
+     fun ⟨f, active, r⟩ => ⟨f, ((census (t + 1)).2 f).mp active, r⟩⟩
+
 /-! ## Witnesses -/
 
 /-- Whether a step is odd. -/
@@ -1022,6 +1295,85 @@ theorem Dormant.no_split_without_arising :
    Garden.distinct,
    fun unceasing => match (Dormant.web.unceasingFrom_self.mp unceasing) 0 with
     | ⟨t, f, _, arises⟩ => Dormant.more_without_arising.2.2.2.2.2.2 t f arises⟩
+
+namespace Tandem
+
+/-- Formations `t` and `t + 1` are active at step `t`. -/
+def web : Web Nat Unit where
+  level _ _ := 0
+  active t n := n = t ∨ n = t + 1
+  requires _ _ _ := False
+  need _ _ _ := 0
+  draws _ _ _ := False
+
+def alive (t : Nat) : List Nat := [t, t + 1]
+
+theorem apart {t k : Nat} (pos : 0 < k) (same : t + k = t) : False :=
+  Nat.lt_irrefl t (Eq.subst (motive := fun m => t < m) same (Nat.lt_add_of_pos_right pos))
+
+theorem census : web.Census alive := fun t =>
+  ⟨⟨fun mem => (match mem_cons_cases mem with
+      | .inl same => apart Nat.zero_lt_one same.symm
+      | .inr nothing => nomatch nothing), (fun nothing => nomatch nothing), trivial⟩,
+   fun _ => ⟨fun active => match active with
+      | .inl same => Eq.subst (motive := fun k => k ∈ alive t) same.symm (.head _)
+      | .inr same => Eq.subst (motive := fun k => k ∈ alive t) same.symm (.tail _ (.head _)),
+    fun mem => match mem_cons_cases mem with
+      | .inl same => .inl same
+      | .inr mem => match mem_cons_cases mem with
+        | .inl same => .inr same
+        | .inr nothing => nomatch nothing⟩⟩
+
+/-- Read with each formation continuing only itself, one formation arises and one ceases
+across every step. -/
+theorem kept (t : Nat) : web.Arises t (t + 2) ∧ web.Ceases t t :=
+  ⟨⟨fun active => match active with
+      | .inl same => apart (Nat.zero_lt_succ 1) same
+      | .inr same => apart (t := t + 1) Nat.zero_lt_one same, .inr rfl⟩,
+   .inl rfl, fun active => match active with
+      | .inl same => apart Nat.zero_lt_one same.symm
+      | .inr same => apart (Nat.zero_lt_succ 1) same.symm⟩
+
+/-- The later formation continues as itself and as the formation arising across the step;
+the earlier continues as none. -/
+def buds (t g f : Nat) : Prop := g = t + 1 ∧ (f = t + 1 ∨ f = t + 2)
+
+/-- Read as budding, the later formation continues as two across every step, the earlier
+ceases, and nothing arises: under a census, ceasing recurs without arising. Without
+`NoSplit`, the census law under a continuation fails
+(`Census.arisingFrom_of_ceasingFrom`). -/
+theorem budding :
+    web.Census alive ∧ ¬ web.NoSplit buds ∧ web.NoMerge buds ∧
+    (∀ t, web.CeasesFrom buds t t) ∧ ¬ web.UnceasingFrom buds :=
+  have still : ∀ t f, ¬ web.ArisesFrom buds t f := fun t _ ⟨active, alone⟩ =>
+    alone ⟨t + 1, .inr rfl, rfl, active⟩
+  ⟨census,
+   fun noSplit => apart (t := 1) Nat.zero_lt_one
+     (noSplit 0 1 1 2 (.inr rfl) ⟨rfl, .inl rfl⟩ ⟨rfl, .inr rfl⟩ (.inl rfl) (.inr rfl)).symm,
+   fun _ _ _ _ _ _ continues continues' _ => continues.1.trans continues'.1.symm,
+   fun _ => ⟨.inl rfl, fun ⟨_, _, same, _⟩ => apart Nat.zero_lt_one same.symm⟩,
+   fun unceasing => match unceasing 0 with
+    | ⟨t, f, _, arises⟩ => still t f arises⟩
+
+/-- Both formations continue as the later one; the formation arising across the step
+continues none. -/
+def joins (t g f : Nat) : Prop := f = t + 1 ∧ (g = t ∨ g = t + 1)
+
+/-- Read as joining, both formations continue as one across every step, a formation arises,
+and nothing ceases: with at most two active at each step, arising recurs without ceasing.
+Without `NoMerge`, the bounded law under a continuation fails
+(`Census.ceasingFrom_of_arisingFrom`). -/
+theorem joining :
+    (∀ t, (alive t).length ≤ 2) ∧ web.NoSplit joins ∧ ¬ web.NoMerge joins ∧
+    (∀ t, web.ArisesFrom joins t (t + 2)) ∧ ∀ t g, ¬ web.CeasesFrom joins t g :=
+  ⟨fun _ => Nat.le_refl 2,
+   fun _ _ _ _ _ continues continues' _ _ => continues.1.trans continues'.1.symm,
+   fun noMerge => apart (t := 0) Nat.zero_lt_one
+     (noMerge 0 0 1 1 (.inl rfl) (.inr rfl) ⟨rfl, .inl rfl⟩ ⟨rfl, .inr rfl⟩ (.inl rfl)).symm,
+   fun t => ⟨.inr rfl, fun ⟨_, _, same, _⟩ => apart (t := t + 1) Nat.zero_lt_one same⟩,
+   fun t _ ⟨active, alone⟩ => alone ⟨t + 1, .inl rfl, rfl, active⟩⟩
+
+end Tandem
 
 namespace Lineage
 

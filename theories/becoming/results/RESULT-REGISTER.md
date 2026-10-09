@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-118 migrated records: 114 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+119 migrated records: 115 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -32,6 +32,7 @@
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
 | `ceasing-needs-arising` | [普查定律：成立者每步被列出时，不再成立的复现需要开始成立的复现，反之不然 / The census law: where what holds is listed at each step, ceasing to be recurring needs coming to be recurring, and not conversely](records/ceasing-needs-arising.md) | theorem | recorded-checked |
 | `census-balance` | [普查的平衡：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的；读于复现，它是精确的 / The census balance: the list at the end with what ceased is the list at the start with what came; read of recurrence, it is exact](records/census-balance.md) | theorem | recorded-checked |
+| `census-balance-under-continuation` | [在延续之下，普查的平衡分两半成立：没有分裂时止息复现需要生起复现，没有合并且计数有界时反之；两者都没有时平衡精确 / Under a continuation the census balance holds in two halves: without splits ceasing recurring needs arising recurring, and without merges under a bounded count conversely; with neither the balance is exact](records/census-balance-under-continuation.md) | theorem | recorded-checked |
 | `classification-robust-generative-comparison` | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](records/classification-robust-generative-comparison.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `coming-and-ceasing-keep-pace` | [不加前提的变化规律：有限之中，开始成立与不再成立同步 / Laws of change with no premise: in a finite family, coming to be and ceasing to be keep pace](records/coming-and-ceasing-keep-pace.md) | theorem | recorded-checked |
@@ -67,7 +68,7 @@
 | `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
-| `identity-across-steps` | [跨步的同一：标签不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁；单向的连续留下接续，双向的连续仍留下跨过休眠的接续；在普查之下，更多在每种没有分裂的延续下迫使生起 / Identity across steps: labels carry nothing, each step and each condition are fixed by relations, and readings that follow a formation depend on who continues whom; continuity read one way leaves succession, and read both ways still leaves succession across dormancy; under a census, more forces arising under every continuation without splits](records/identity-across-steps.md) | theorem | recorded-checked |
+| `identity-across-steps` | [跨步的同一：标签不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁；单向的连续留下接续，双向的连续仍留下跨过休眠的接续；在普查之下，更多在每种没有分裂的延续下迫使生起，跨一步恰当没有分裂 / Identity across steps: labels carry nothing, each step and each condition are fixed by relations, and readings that follow a formation depend on who continues whom; continuity read one way leaves succession, and read both ways still leaves succession across dormancy; under a census, more forces arising under every continuation without splits, across one step exactly then](records/identity-across-steps.md) | theorem | recorded-checked |
 | `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |
 | `inherited-structural-copying` | [继承排列改变进一步复制 / Inherited arrangement changes further copying](records/inherited-structural-copying.md) | theorem | recorded-checked |
 | `joining-open-map-factor` | [开放接合映射的保真与唯一共同因子 / Question fidelity and unique factors of open joining maps](records/joining-open-map-factor.md) | theorem | recorded-checked |

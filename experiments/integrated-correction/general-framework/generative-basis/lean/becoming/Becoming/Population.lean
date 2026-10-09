@@ -30,7 +30,13 @@ many formations are active at each step, and ties the flow's count to the web's.
   `Listed.coming_iff_ceasing`). This needs only a list returning within a bound, not the
   finite family of `Becoming.Change` (`coming_recurs_iff`). Where the list grows without
   end, ceasing to be still recurs where, from each step, the comings over some stretch
-  outnumber a bound on the list at its end (`Listed.ceasing_of_outpacing`). A census is
+  outnumber a bound on the list at its end (`Listed.ceasing_of_outpacing`). The recurrence
+  laws need only an inequality across each step: a count that ends with what it loses at
+  most where it started with what it gains does so over any stretch, so losses recurring
+  need gains recurring (`le_over_stretch`, `gaining_of_losing`); with the inequality the
+  other way and the count bounded from some step on, gains recurring need losses
+  recurring (`ge_over_stretch`, `losing_of_gaining`). `Becoming.Identity` reads them
+  under a continuation. A census is
   the listing of activity: the formations active at the end with those that ceased are
   those active at the start with those that arose (`Web.Census.over_stretch`), ceasing
   recurring needs arising recurring (`Web.arising_of_ceasing`), and under a census
@@ -265,6 +271,35 @@ theorem marks_le_of_sub {q r : α → Prop} [∀ a, Decidable (q a)] [∀ a, Dec
       Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (mark_zero holds)).trans (Nat.zero_add _)))
         (marks_le_of_sub distinct apart fun b mem_b q_b => sub b (.tail a mem_b) q_b)
 
+/-- A decidable proposition that some member of a list has a decidable property: its mark
+is at most the number of members having the property. -/
+theorem mark_le_total {P : Prop} [Decidable P] {q : α → Prop} [∀ a, Decidable (q a)]
+    {l : List α} (found : P → ∃ a, a ∈ l ∧ q a) : mark P ≤ total l (fun a => mark (q a)) :=
+  mark_cases (q := (· ≤ total l fun a => mark (q a)))
+    (fun holds => match found holds with
+      | ⟨_, mem, has⟩ => total_pos_of_mem mem (mark_pos.mpr has))
+    fun _ => Nat.zero_le _
+
+/-- Over a list without repetition at most one member of which has a decidable property,
+the number of members having it is at most the mark of any proposition each such member
+makes hold. -/
+theorem total_le_mark {P : Prop} [Decidable P] {q : α → Prop} [∀ a, Decidable (q a)] :
+    ∀ {l : List α}, Distinct l → (∀ a b, a ∈ l → b ∈ l → q a → q b → a = b) →
+      (∀ a, a ∈ l → q a → P) → total l (fun a => mark (q a)) ≤ mark P
+  | [], _, _, _ => Nat.zero_le _
+  | a :: l, ⟨fresh, distinct⟩, once, makes =>
+    if has : q a then
+      have none : total l (fun b => mark (q b)) ≤ total [] (fun b => mark (q b)) :=
+        marks_le_of_sub distinct trivial fun b mem has' => absurd
+          (Eq.subst (motive := fun x => x ∈ l) (once b a (.tail a mem) (.head l) has' has) mem)
+          fresh
+      Nat.le_trans (Nat.add_le_add (Nat.le_of_eq (mark_one has)) none)
+        (Nat.le_of_eq (mark_one (makes a (.head l) has)).symm)
+    else
+      Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (mark_zero has)).trans (Nat.zero_add _)))
+        (total_le_mark distinct (fun b b' mem mem' => once b b' (.tail a mem) (.tail a mem'))
+          fun b mem => makes b (.tail a mem))
+
 /-- A count balanced across each step, what it gains against what it loses, is balanced
 over any stretch: at the end with everything lost, it is the count at the start with
 everything gained. -/
@@ -282,6 +317,64 @@ theorem balance_over_stretch {q x y : Nat → Nat} (across : ∀ t, q (t + 1) + 
         (Nat.add_left_comm _ _ _).trans (Nat.add_assoc _ _ _).symm
       _ = (q S + y S) + total (steps (S + 1) n) y := congrArg (· + _) (across S)
       _ = q S + (y S + total (steps (S + 1) n) y) := Nat.add_assoc _ _ _
+
+/-- A count that, at each step, ends with what it loses at most where it started with what
+it gains does so over any stretch. -/
+theorem le_over_stretch {q x y : Nat → Nat} (across : ∀ t, q (t + 1) + x t ≤ q t + y t)
+    (S : Nat) : ∀ n, q (S + n) + total (steps S n) x ≤ q S + total (steps S n) y
+  | 0 => Nat.le_refl _
+  | n + 1 => calc
+      q (S + (n + 1)) + (x S + total (steps (S + 1) n) x)
+          = x S + (q (S + 1 + n) + total (steps (S + 1) n) x) :=
+        (congrArg (· + _) (congrArg q (Nat.add_right_comm S 1 n).symm)).trans
+          (Nat.add_left_comm _ _ _)
+      _ ≤ x S + (q (S + 1) + total (steps (S + 1) n) y) :=
+        Nat.add_le_add_left (le_over_stretch across (S + 1) n) (x S)
+      _ = (q (S + 1) + x S) + total (steps (S + 1) n) y :=
+        (Nat.add_left_comm _ _ _).trans (Nat.add_assoc _ _ _).symm
+      _ ≤ (q S + y S) + total (steps (S + 1) n) y := Nat.add_le_add_right (across S) _
+      _ = q S + (y S + total (steps (S + 1) n) y) := Nat.add_assoc _ _ _
+
+/-- A count that, at each step, starts with what it gains at most where it ends with what
+it loses does so over any stretch. -/
+theorem ge_over_stretch {q x y : Nat → Nat} (across : ∀ t, q t + y t ≤ q (t + 1) + x t)
+    (S : Nat) : ∀ n, q S + total (steps S n) y ≤ q (S + n) + total (steps S n) x
+  | 0 => Nat.le_refl _
+  | n + 1 => calc
+      q S + (y S + total (steps (S + 1) n) y)
+          = (q S + y S) + total (steps (S + 1) n) y := (Nat.add_assoc _ _ _).symm
+      _ ≤ (q (S + 1) + x S) + total (steps (S + 1) n) y := Nat.add_le_add_right (across S) _
+      _ = x S + (q (S + 1) + total (steps (S + 1) n) y) :=
+        (Nat.add_assoc _ _ _).trans (Nat.add_left_comm _ _ _)
+      _ ≤ x S + (q (S + 1 + n) + total (steps (S + 1) n) x) :=
+        Nat.add_le_add_left (ge_over_stretch across (S + 1) n) (x S)
+      _ = q (S + (n + 1)) + (x S + total (steps (S + 1) n) x) :=
+        (Nat.add_left_comm _ _ _).trans
+          (congrArg (· + _) (congrArg q (Nat.add_right_comm S 1 n)))
+
+/-- Where a count, at each step, ends with what it loses at most where it started with what
+it gains, losses at arbitrarily late steps need gains at arbitrarily late steps: losses
+recurring accumulate past the count at the start, and only gains make up the
+difference. -/
+theorem gaining_of_losing {q x y : Nat → Nat} (across : ∀ t, q (t + 1) + x t ≤ q t + y t)
+    (losing : ∀ N, ∃ t, N ≤ t ∧ 0 < x t) : ∀ N, ∃ t, N ≤ t ∧ 0 < y t :=
+  fun N => match recurring_accumulates losing N (q N + 1) with
+  | ⟨n, many⟩ => match total_pos (steps N n) (pos_of_exceeds many
+      (Nat.le_trans (Nat.le_add_left _ _) (le_over_stretch across N n))) with
+    | ⟨t, mem, gained⟩ => ⟨t, steps_mem mem, gained⟩
+
+/-- Where a count, at each step, starts with what it gains at most where it ends with what
+it loses, and from some step on is at most `B`, gains at arbitrarily late steps need losses
+at arbitrarily late steps. -/
+theorem losing_of_gaining {q x y : Nat → Nat} (across : ∀ t, q t + y t ≤ q (t + 1) + x t)
+    {T B : Nat} (bounded : ∀ t, T ≤ t → q t ≤ B) (gaining : ∀ N, ∃ t, N ≤ t ∧ 0 < y t) :
+    ∀ N, ∃ t, N ≤ t ∧ 0 < x t :=
+  fun N => match recurring_accumulates gaining (N + T) (B + 1) with
+  | ⟨n, many⟩ => match total_pos (steps (N + T) n) (pos_of_exceeds many
+      (Nat.le_trans (Nat.le_trans (Nat.le_add_left _ _) (ge_over_stretch across (N + T) n))
+        (Nat.add_le_add_right (bounded _ (Nat.le_trans (Nat.le_add_left T N)
+          (Nat.le_add_right _ n))) _))) with
+    | ⟨t, mem, lost⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) (steps_mem mem), lost⟩
 
 /-! ## Listing what holds -/
 

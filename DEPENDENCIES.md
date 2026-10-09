@@ -414,6 +414,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## census-balance-under-continuation ← identity-across-steps
+
+`formal-reuse` — 复用延续关系、在延续下生起（Continues、ArisesFrom、UnceasingFrom）、没有分裂（NoSplit）、arisesFrom_self 与 Census.decideContinues。 / Reuses continuations, arising under a continuation (Continues, ArisesFrom, UnceasingFrom), no split (NoSplit), arisesFrom_self and Census.decideContinues.
+
+**Producer output / 上游输出:** 延续关系与其下的生起；没有分裂时更多迫使生起。 / Continuations and arising under them; without splits, more forces arising.
+
+**Consumer input / 下游输入:** 延续下的止息、合并与普查的平衡。 / Ceasing and merging under a continuation, and the census balance under it.
+
+**Retained conditions / 保留条件:** 普查；活动与延续可判定。 / A census; decided activity and continuation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean)
+
+## census-balance-under-continuation ← census-balance
+
+`formal-reuse` — 复用标记的计数（marks_le_of_sub、mark_add_not、total_congr_on）与平衡的累加形式（balance_over_stretch 的不等式版本）。 / Reuses counting by marks (marks_le_of_sub, mark_add_not, total_congr_on) and the stretch form of the balance (balance_over_stretch, here as inequalities).
+
+**Producer output / 上游输出:** 每个形成只延续自身时的普查平衡（Listed.across）。 / The census balance with each formation continuing only itself (Listed.across).
+
+**Consumer input / 下游输入:** 任一延续下的平衡，分两半。 / The balance under any continuation, in two halves.
+
+**Retained conditions / 保留条件:** 普查。 / A census.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## census-balance-under-continuation ← ceasing-needs-arising
+
+`formal-reuse` — 推广 Web.arising_of_ceasing 到每个没有分裂的延续。 / Generalizes Web.arising_of_ceasing to every continuation without splits.
+
+**Producer output / 上游输出:** 普查之下止息复现需要生起复现。 / Under a census, ceasing recurring needs arising recurring.
+
+**Consumer input / 下游输入:** 同一规律在每个没有分裂的延续下。 / The same law under every continuation without splits.
+
+**Retained conditions / 保留条件:** 没有分裂。 / No split.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## census-balance-under-continuation ← bounded-census-keeps-pace
+
+`formal-reuse` — 推广有界定律（Web.ceasing_of_arising）到每个没有合并的延续。 / Generalizes the bounded law (Web.ceasing_of_arising) to every continuation without merges.
+
+**Producer output / 上游输出:** 计数有界时生起复现需要止息复现。 / Under a bounded count, arising recurring needs ceasing recurring.
+
+**Consumer input / 下游输入:** 同一规律在每个没有合并的延续下。 / The same law under every continuation without merges.
+
+**Retained conditions / 保留条件:** 没有合并；从某步起至多 B 个活跃。 / No merge; at most B active from some step on.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## census-balance-under-continuation ← more-needs-renewers
+
+`formal-reuse` — 复用普查（Web.Census）、不重复列表（Distinct）与列表上的判定（decideSome）。 / Reuses the census (Web.Census), lists without repetition (Distinct) and decision over a list (decideSome).
+
+**Producer output / 上游输出:** 普查与列表工具。 / The census and list tools.
+
+**Consumer input / 下游输入:** 延续下的计数。 / Counting under a continuation.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
 `formal-reuse` — 复用比较、非自反性与传递性；不重证规范前提。 / Reuses comparison, irreflexivity and transitivity without re-proving normative premises.
