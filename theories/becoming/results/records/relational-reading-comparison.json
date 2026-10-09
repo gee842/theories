@@ -28,7 +28,7 @@
     }
   ],
   "correspondence": {
-    "en": "Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 ('整体中的生及其继续生成'), and his follow-up that generation and degeneration do not overlap; that reading and C's defense as an articulation of 'a whole direction of ever more 生' are philosophical, not established by the audit. The comparison course is the same unfolding without the focal formation, not a feasible alternative; feasibility and selection belong to P/N and the situation.",
+    "en": "Reading G0's 'generation' relationally follows Ren's G0, whose object is 生生 ('整体中的生及其继续生成'), and Ren's follow-up that generation and degeneration do not overlap; that reading and C's defense as an articulation of 'a whole direction of ever more 生' are philosophical, not established by the audit. The comparison course is the same unfolding without the focal formation, not a feasible alternative; feasibility and selection belong to P/N and the situation.",
     "zh": "以关系读 G0 的“生成”，依据的是 Ren 的 G0——对象为生生（“整体中的生及其继续生成”）——及其追问“generative 和 degenerate 不 overlap”；这一读法以及把 C 作为“整体的，不断创造更多生的方向”之比较表述的辩护，属于哲学论证，审计不确立。对照接续是同一展开中没有该形成的情形，不是可行选项；可行与选择属于 P/N 与情境。"
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
@@ -232,6 +232,10 @@
     {
       "zh": "2026-10-09：更新下一步与关联：ranking-under-readings 已证明本记录的排序在逐步读法下的命运。本记录的主张、证明与来源不变。",
       "en": "2026-10-09: updated the next step and links: ranking-under-readings proves what becomes of this record's rankings under the stepwise reading. This record's claim, proofs and sources are unchanged."
+    },
+    {
+      "zh": "2026-10-09：按第二次独立审查 F15 的范围外意见，英文对应说明中指 Ren 的代词改为“Ren's”；内容不变。",
+      "en": "2026-10-09: following the out-of-scope note in F15 of the second independent review, the English correspondence refers to Ren by name instead of a pronoun; content unchanged."
     }
   ]
 }

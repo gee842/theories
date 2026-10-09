@@ -7,8 +7,10 @@ A loss across a step can be read in two ways. The relational reading of
 `Becoming.Dependence` asks which formations participate in the condition that is lost:
 every formation drawing on a consumed condition is consuming in the run. The but-for
 reading asks whose part of the activity the loss depends on: a formation's part makes
-the difference when, with that part withheld and the rest as it was, the change keeps
-the dependence.
+the difference when, with that part withheld and the same move taken, the change keeps
+the dependence. The test is relative to the move: the move belongs to the rest of the
+activity, and another move, an exogenous shock for instance, can break the dependence
+whatever the formation does.
 
 Withholding stays within the unfolding: the alternative is another configuration of
 the same process, the one in which that part is absent. Nothing outside the process
@@ -17,23 +19,33 @@ supplies the comparison.
 Results:
 * Keeping and breaking across a change of configuration are exclusive. Along a run they
   are the keeping and breaking of `Becoming.Dependence`.
-* When a loss is overdetermined, so that withholding any single part still leaves a
-  breaking step, no single formation's part makes the difference.
+* When a loss is overdetermined, so that with any single part withheld the same move
+  still breaks the dependence, no single formation's part makes the difference.
+* The move decides (`Shock`): from one configuration a lone drawer's part makes the
+  difference under the calm move, while under a shock the loss is overdetermined.
 * Difference-making belongs to the joint activity, not to a formation's own part. In one
   process, from configurations at the same level where a drawer takes the same amount,
   its part makes the difference when one other formation draws, and does not when two
   others draw. Withholding two parts then keeps the dependence: the difference is made
   jointly. In both runs the relational reading counts the drawer as consuming, and it
   counts a formation that takes nothing as not consuming.
-* A formation's events over time are a joint activity too. Drawing beyond renewal at
-  every step drains the condition, so the run consumes it. The first event's step keeps
-  the dependence, so it does not undermine for any cycle. With any single event's draw
-  withheld, the condition is still consumed, so no event alone makes the difference.
-  Of the readings here, only the whole-run reading counts the depletion.
+* The stepwise reading does not track difference-making (`Pool.within_share_undermines`):
+  a drawer taking exactly the renewal makes no difference while another, taking two,
+  does, yet the first drawer's event is undermining.
+* Over a formation's events, the run-level and step-level tests come apart. Drawing
+  beyond renewal at every step drains the condition, so the run consumes it. The first
+  event's step keeps the dependence, so it does not undermine for any positive cycle.
+  With any single event's draw withheld, indeed with every draw before any step
+  withheld, the condition is still consumed: no finite set of events makes the
+  run-level difference, which is fixed by the tail of the run. At the step that breaks
+  the dependence, the same configuration drawing nothing would keep it: the breaking
+  event makes the step-level difference, and the stepwise reading withholds it and
+  every later event. Of the readings here, only the whole-run reading also withholds
+  the first event.
 
 No ethical predicate, ranking or axiom occurs. Whether withholding a part leaves the rest
-of the activity as it was is a modelling duty of each application. Responsibility is
-not inferred from either reading.
+of the activity as it was, the move included, is a modelling duty of each application.
+Responsibility is not inferred from either reading.
 -/
 
 namespace Becoming
@@ -56,20 +68,20 @@ def Keeps (s t : S) (g : F) (c : C) : Prop :=
 def Breaks (s t : S) (g : F) (c : C) : Prop :=
   K.requires s g c ∧ K.need s g c ≤ K.level s c ∧ K.level t c < K.need s g c
 
-/-- Some admissible step from `s` breaks `g`'s dependence on `c`. -/
-def BreaksFrom (P : Process S A) (s : S) (g : F) (c : C) : Prop :=
-  ∃ a t, P.step s a t ∧ K.Breaks s t g c
+/-- The step from `s` by the move `a` breaks `g`'s dependence on `c`. -/
+def BreaksBy (P : Process S A) (s : S) (a : A) (g : F) (c : C) : Prop :=
+  ∃ t, P.step s a t ∧ K.Breaks s t g c
 
-/-- The but-for test: some step from `s` breaks the dependence, and with `f`'s part
-withheld every step keeps it. -/
-def MakesDifference (P : Process S A) (withhold : F → S → S) (f : F) (s : S) (g : F)
+/-- The but-for test, the move held fixed: the step from `s` by `a` breaks the
+dependence, and with `f`'s part withheld every step by the same move keeps it. -/
+def MakesDifference (P : Process S A) (withhold : F → S → S) (f : F) (s : S) (a : A)
+    (g : F) (c : C) : Prop :=
+  K.BreaksBy P s a g c ∧ ∀ t, P.step (withhold f s) a t → K.Keeps (withhold f s) t g c
+
+/-- With any single part withheld, the same move still breaks the dependence. -/
+def Overdetermined (P : Process S A) (withhold : F → S → S) (s : S) (a : A) (g : F)
     (c : C) : Prop :=
-  K.BreaksFrom P s g c ∧ ∀ a t, P.step (withhold f s) a t → K.Keeps (withhold f s) t g c
-
-/-- Withholding any single part still leaves a breaking step. -/
-def Overdetermined (P : Process S A) (withhold : F → S → S) (s : S) (g : F) (c : C) :
-    Prop :=
-  K.BreaksFrom P s g c ∧ ∀ f, K.BreaksFrom P (withhold f s) g c
+  K.BreaksBy P s a g c ∧ ∀ f, K.BreaksBy P (withhold f s) a g c
 
 variable {K}
 
@@ -87,13 +99,74 @@ theorem along_broken {P : Process S A} (r : Run P) (n : Nat) (g : F) (c : C) :
 
 /-- When the loss is overdetermined, no single part makes the difference. -/
 theorem Overdetermined.no_difference {P : Process S A} {withhold : F → S → S} {s : S}
-    {g : F} {c : C} (over : K.Overdetermined P withhold s g c) (f : F) :
-    ¬ K.MakesDifference P withhold f s g c
+    {a : A} {g : F} {c : C} (over : K.Overdetermined P withhold s a g c) (f : F) :
+    ¬ K.MakesDifference P withhold f s a g c
   | ⟨_, keeps⟩ =>
     match over.2 f with
-    | ⟨a, t, step, breaks⟩ => keeps_not_breaks (keeps a t step) breaks
+    | ⟨t, step, breaks⟩ => keeps_not_breaks (keeps t step) breaks
 
 end Dependence
+
+/-! ## The move decides -/
+
+namespace Shock
+
+inductive Formation where
+  | drawer
+  | sustaining
+
+/-- The level of the condition and the amount the drawer takes at this step. -/
+structure State where
+  level : Nat
+  taking : Nat
+
+inductive Move where
+  /-- Renew one unit, take the current amount, and set the next amount. -/
+  | calm (next : Nat)
+  /-- Empty the condition. -/
+  | shock
+
+def process : Process State Move :=
+  ⟨fun s a t => match a with
+    | .calm next => t = ⟨s.level + 1 - s.taking, next⟩
+    | .shock => t = ⟨0, s.taking⟩⟩
+
+def withhold (f : Formation) (s : State) : State :=
+  match f with
+  | .drawer => ⟨s.level, 0⟩
+  | .sustaining => s
+
+def dependence : Dependence State Formation Unit where
+  level s _ := s.level
+  active s f := match f with
+    | .drawer => True
+    | .sustaining => 1 ≤ s.level
+  requires _ f _ := match f with
+    | .drawer => False
+    | .sustaining => True
+  need _ _ _ := 1
+  draws s f _ := match f with
+    | .drawer => 0 < s.taking
+    | .sustaining => False
+
+/-- At level one the drawer takes two. -/
+def start : State := ⟨1, 2⟩
+
+/-- From one configuration, the lone drawer's part makes the difference under the calm
+move, and under the shock the loss is overdetermined, so no part makes it. -/
+theorem move_decides :
+    dependence.MakesDifference process withhold .drawer start (.calm 2) .sustaining () ∧
+    dependence.Overdetermined process withhold start .shock .sustaining () ∧
+    ¬ dependence.MakesDifference process withhold .drawer start .shock .sustaining () :=
+  have over : dependence.Overdetermined process withhold start .shock .sustaining () :=
+    ⟨⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun
+      | .drawer => ⟨⟨0, 0⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩
+      | .sustaining => ⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩⟩
+  ⟨⟨⟨⟨0, 2⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, fun _ step =>
+      step ▸ ⟨Nat.le_refl 1, Nat.le_succ 1⟩⟩,
+   over, over.no_difference .drawer⟩
+
+end Shock
 
 /-! ## Difference-making belongs to the joint activity -/
 
@@ -178,10 +251,11 @@ def pairRun : Run process :=
 def allRun : Run process :=
   ⟨steady all, fun _ => all, fun | 0 => rfl | _ + 1 => rfl⟩
 
-/-- From level one, draws that take everything the step leaves break the dependence. -/
-theorem breaks_from_one (d : Draw) (exhausts : 1 + 1 - d.total = 0) :
-    dependence.BreaksFrom process ⟨1, d⟩ .sustaining () :=
-  ⟨d, ⟨0, d⟩, (congrArg (State.mk · d) exhausts).symm, trivial, Nat.le_refl 1,
+/-- From level one, draws that take everything the step leaves break the dependence,
+whatever the next draws. -/
+theorem breaks_from_one (d next : Draw) (exhausts : 1 + 1 - d.total = 0) :
+    dependence.BreaksBy process ⟨1, d⟩ next .sustaining () :=
+  ⟨⟨0, next⟩, (congrArg (State.mk · next) exhausts).symm, trivial, Nat.le_refl 1,
     Nat.zero_lt_one⟩
 
 /-- Drawn down to zero and left there, the condition is consumed. -/
@@ -192,27 +266,31 @@ theorem steady_consumed (d : Draw) (steps : ∀ n, process.step (steady d n) d (
 /-- One process, two configurations at the same level, the first drawer taking the same
 amount. With one other drawer the first drawer's part makes the difference to the loss;
 with two others the loss is overdetermined and it does not, while withholding two parts
-keeps the dependence. In both runs the relational reading counts the first drawer as
-consuming; in the first it counts the third, which takes nothing, as not consuming. -/
+keeps the dependence. Each test takes the run's own move. In both runs the relational
+reading counts the first drawer as consuming; in the first it counts the third, which
+takes nothing, as not consuming. -/
 theorem difference_belongs_to_the_joint :
     (pairRun.state 0).level = (allRun.state 0).level ∧
     (pairRun.state 0).drawing.first = (allRun.state 0).drawing.first ∧
-    dependence.MakesDifference process withhold .first (pairRun.state 0) .sustaining () ∧
-    dependence.Overdetermined process withhold (allRun.state 0) .sustaining () ∧
-    ¬ dependence.MakesDifference process withhold .first (allRun.state 0) .sustaining () ∧
+    dependence.MakesDifference process withhold .first (pairRun.state 0) (pairRun.act 0)
+      .sustaining () ∧
+    dependence.Overdetermined process withhold (allRun.state 0) (allRun.act 0) .sustaining () ∧
+    ¬ dependence.MakesDifference process withhold .first (allRun.state 0) (allRun.act 0)
+      .sustaining () ∧
     (∀ a t, process.step (withhold .second (withhold .first (allRun.state 0))) a t →
       dependence.Keeps (withhold .second (withhold .first (allRun.state 0))) t
         .sustaining ()) ∧
     (dependence.along pairRun).ConsumingIn .first ∧
     ¬ (dependence.along pairRun).ConsumingIn .third ∧
     (dependence.along allRun).ConsumingIn .first := by
-  have over : dependence.Overdetermined process withhold (allRun.state 0) .sustaining () :=
-    ⟨breaks_from_one all rfl, fun
-      | .first => breaks_from_one _ rfl
-      | .second => breaks_from_one _ rfl
-      | .third => breaks_from_one _ rfl
-      | .sustaining => breaks_from_one _ rfl⟩
-  refine ⟨rfl, rfl, ⟨breaks_from_one pair rfl, fun _ _ step => ?_⟩, over,
+  have over : dependence.Overdetermined process withhold (allRun.state 0) (allRun.act 0)
+      .sustaining () :=
+    ⟨breaks_from_one all _ rfl, fun
+      | .first => breaks_from_one _ _ rfl
+      | .second => breaks_from_one _ _ rfl
+      | .third => breaks_from_one _ _ rfl
+      | .sustaining => breaks_from_one _ _ rfl⟩
+  refine ⟨rfl, rfl, ⟨breaks_from_one pair _ rfl, fun _ step => ?_⟩, over,
     over.no_difference .first, fun _ _ step => ?_,
     ⟨0, (), Nat.zero_lt_one, steady_consumed pair pairRun.step⟩,
     fun ⟨t, _, drawn, _⟩ => ?_, ⟨0, (), Nat.zero_lt_one, steady_consumed all allRun.step⟩⟩
@@ -223,6 +301,27 @@ theorem difference_belongs_to_the_joint :
   · match t, drawn with
     | 0, drawn => exact Nat.lt_irrefl 0 drawn
     | _ + 1, drawn => exact Nat.lt_irrefl 0 drawn
+
+/-- The first drawer takes one unit, exactly the renewal; the second takes two. -/
+def mixed : Draw := ⟨1, 2, 0⟩
+
+def mixedRun : Run process :=
+  ⟨steady mixed, fun _ => mixed, fun | 0 => rfl | _ + 1 => rfl⟩
+
+/-- The stepwise reading does not track difference-making. The second drawer's part
+makes the difference and the first's does not, yet the first drawer's event at the
+breaking step is undermining: it draws on the condition whose dependence the step
+breaks. -/
+theorem within_share_undermines :
+    dependence.MakesDifference process withhold .second (mixedRun.state 0) (mixedRun.act 0)
+      .sustaining () ∧
+    ¬ dependence.MakesDifference process withhold .first (mixedRun.state 0) (mixedRun.act 0)
+      .sustaining () ∧
+    (dependence.along mixedRun).UnderminingAt 0 .first :=
+  ⟨⟨breaks_from_one mixed _ rfl, fun _ step => step ▸ ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩,
+   fun ⟨_, keeps⟩ => Nat.not_succ_le_zero 0 (keeps ⟨0, mixed⟩ rfl).2,
+   ⟨(), Nat.zero_lt_one, .sustaining, trivial,
+     ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩, Nat.zero_lt_one⟩⟩
 
 end Pool
 
@@ -277,10 +376,10 @@ def depleting : Run process := drawing 2 fun _ => 2
 /-- The same draws with the one at step `n` withheld. -/
 def withheld (n : Nat) : Run process := drawing 2 fun t => if t = n then 0 else 2
 
-/-- Depletion is the joint activity of a formation's events. The run consumes the
-condition. The first event's step keeps the dependence, so it does not undermine for
-any cycle. With any single event's draw withheld the condition is still consumed, so no
-event alone makes the difference. -/
+/-- Over a formation's events, no single event makes the run-level difference. The run
+consumes the condition. The first event's step keeps the dependence, so it does not
+undermine for any positive cycle. With any single event's draw withheld the condition is
+still consumed. -/
 theorem depletion_is_joint :
     (conditions.dependence.along depleting).ConsumingIn .focal ∧
     (∀ p, 0 < p → ¬ (conditions.dependence.along depleting).UnderminingFor p 0 .focal) ∧
@@ -291,6 +390,20 @@ theorem depletion_is_joint :
      | .sustaining, _ => Nat.lt_irrefl 1 (unmet 1 Nat.zero_lt_one positive),
    fun n => overdraw_consumes (N := n + 1) fun _ later =>
      Nat.le_of_eq (if_neg (Nat.ne_of_gt later)).symm⟩
+
+/-- The run-level outcome is fixed by the tail: with every draw before any step `N`
+withheld, the condition is still consumed. -/
+theorem no_finite_segment_makes_difference (N : Nat) :
+    (conditions.dependence.along (drawing 2 fun t => if t < N then 0 else 2)).Consumed () :=
+  overdraw_consumes fun _ later => Nat.le_of_eq (if_neg (Nat.not_lt_of_le later)).symm
+
+/-- The step-level test singles out the breaking event: from level one, drawing two
+breaks the dependence, and from the same configuration drawing nothing keeps it. -/
+theorem breaking_event_makes_step_difference :
+    depleting.state 1 = 1 ∧ depleting.act 1 = 2 ∧
+    conditions.dependence.Breaks (depleting.state 1) (depleting.state 2) .sustaining () ∧
+    process.step 1 0 2 ∧ conditions.dependence.Keeps 1 2 .sustaining () :=
+  ⟨rfl, rfl, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, rfl, ⟨Nat.le_refl 1, Nat.le_succ 1⟩⟩
 
 end Commons
 

@@ -19,10 +19,14 @@ through dependence that changes:
 * it is consuming in the run, and the sustaining formation loses its support for ever
   and ends.
 
-Substitution preserves the classification. A formation that survives the loss it took
-part in, by transforming its dependence, still consumes; its own continuation does not
-certify renewal. With the existing results the law family now realizes ending and
-transformation after a loss without return.
+On the whole-run reading, substitution preserves the classification: a formation that
+survives the loss it took part in, by transforming its dependence, still consumes, and
+its own continuation does not certify renewal. This is nearly definitional, since
+consuming asks only that the formation once drew on a consumed condition. On the
+stepwise reading the substituting consumer is credited at every step except the one at
+which the shared condition falls below support: before it, its draws leave every need
+met, and after it, it draws on nothing. With the existing results the law family now
+realizes ending and transformation after a loss without return.
 
 No ethical predicate, ranking or axiom occurs. Whether an actual formation can
 substitute, and at what cost to the alternative, are application duties.
@@ -121,6 +125,36 @@ theorem extracting_persists_consuming :
     ∃ T, ∀ t, T ≤ t → ¬ (web extracting).active t .sustaining :=
   persists_consuming extracting Nat.zero_lt_one Nat.zero_lt_one (Nat.le_refl 1)
     (Nat.le_succ_of_le (Nat.le_succ 1)) (fun _ => Nat.lt_succ_self 1)
+
+/-- Under extraction the shared condition is empty from step three on. -/
+theorem extracting_low : ∀ n, Law.level extracting (n + 3) = 0
+  | 0 => rfl
+  | n + 1 => by
+    show Law.level extracting (n + 3 + 1) = 0
+    rw [Law.level_succ, extracting_low n]
+    rfl
+
+/-- The stepwise reading credits the consumer that substitutes: its event undermines only
+at step 2, after which the shared condition falls below the sustaining formation's
+support. -/
+theorem stepwise_credits_substitution :
+    (web extracting).ConsumingIn .focal ∧
+    (∀ t, t ≠ 2 → (web extracting).active t .focal ∧
+      ¬ (web extracting).UnderminingAt t .focal) ∧
+    (web extracting).UnderminingAt 2 .focal :=
+  ⟨extracting_persists_consuming.2.2.2.1, fun t other => ⟨trivial, fun ⟨c, drawn, g, _, _, fell⟩ =>
+    match t, other, c, drawn, g, fell with
+    | 0, _, .shared, _, .focal, fell => absurd fell (by decide)
+    | 0, _, .shared, _, .sustaining, fell => absurd fell (by decide)
+    | 1, _, .shared, _, .focal, fell => absurd fell (by decide)
+    | 1, _, .shared, _, .sustaining, fell => absurd fell (by decide)
+    | 2, other, _, _, _, _ => absurd rfl other
+    | n + 3, _, .shared, drawn, _, _ =>
+      Nat.not_succ_le_zero 0 (Nat.le_trans drawn.1 (Nat.le_of_eq (extracting_low n)))
+    | _, _, .alternative, drawn, _, _ => drawn⟩,
+   ⟨.shared, ⟨Nat.le_refl 1, Nat.zero_lt_two⟩, .sustaining, trivial,
+     ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1)⟩,
+     Nat.zero_lt_one⟩⟩
 
 end Substitution
 

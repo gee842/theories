@@ -58,7 +58,8 @@ theorem Valuation.Connected.transfer {Pos C : Type} {V V' : Valuation Pos C}
     (connected : V.Connected) : V'.Connected :=
   fun c d alive alive' =>
     Reach.map (P := V.relations) (Q := V'.relations) (f := id)
-      (fun _ _ _ step => ⟨related _ _ step.1, (living _).mp step.2⟩) (connected c d ((living c).mpr alive) ((living d).mpr alive'))
+      (fun _ _ _ step => ⟨related _ _ step.1, (living _).mp step.2⟩)
+      (connected c d ((living c).mpr alive) ((living d).mpr alive'))
 
 namespace Web
 
@@ -323,7 +324,8 @@ theorem participates (level : Nat → Nat) :
 
 /-- The user's drawing breaks the dependents' support in the falling run. -/
 theorem user_undermines : (web falling).UnderminingAt 0 .user :=
-  ⟨(), trivial, .first, trivial, ⟨0, Nat.le_refl 0, Nat.le_refl 1⟩, Nat.zero_lt_one⟩
+  ⟨(), trivial, .first, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
+    Nat.zero_lt_one⟩
 
 /-- In the falling run no living event draws on the condition: the only drawing event
 undermines. -/

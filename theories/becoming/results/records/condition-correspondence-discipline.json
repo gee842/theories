@@ -132,14 +132,14 @@
     "en": "Stated for the stepwise reading only; with fixed dependences it applies through K.dependence.along r, and the whole-run reading could take the same relation, which is not done here. Does not order events in time; does not change living; chooses no reading; yields no responsibility or duty."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T011915.395840Z）：Becoming.Correspondence 21 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 207 项定理／395 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T011915.395840Z): the 21 theorems of Becoming.Correspondence all have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 207 theorems/395 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T013859.515931Z）：Becoming.Correspondence 21 项定理全部空依赖；同一回执覆盖包内 13 个模块（含只作导入的根模块与桥接），共 236 项定理／451 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §10，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 15 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T013859.515931Z): the 21 theorems of Becoming.Correspondence all have empty axiom reports; the same receipt covers the package's 13 modules (including the import-only root and the bridge) with 236 theorems/451 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §10 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 15 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "role": "proof",
-      "sha256": "ef8e15db499319ddb03203321cbadd00ebf22db9be33e2f8b16afb425aa92408",
+      "sha256": "5931ff6a3d65c72a7a3c3712b92763546015bff38432c955e4c5056ece5790d6",
       "declarations": [
         "Becoming.Valuation.Connected.transfer",
         "Becoming.Web.Bearing",
@@ -180,7 +180,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "003cf6908a575986c00180629179a6038d1a50e5653d3fccf8d0cf4ad03947ed",
+      "sha256": "8d5280463510b22ab466e20465b0c6a4d83308fd80c2c85eb001a4253873dca9",
       "declarations": [
         "Becoming.Web.valuation",
         "Becoming.Web.connected_of_common",
@@ -190,7 +190,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "b9a5e970aad285742efca5fb8759b9c9a9b797c67d2fec940de71ebacf56076c",
+      "sha256": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
       "declarations": [
         "Becoming.Web.UnderminingOn",
         "Becoming.Web.Participates"
@@ -199,19 +199,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "978e4ac9c323d847782a1acba9d6b737d5e23dd1fe88742b1fc83a418e5d93ac",
+      "sha256": "22b132a24bb4503f6bc0226383bcd0cc1985cb6ea8dba07d36e7a51899da7b25",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e8391f8e60adaed1905533cbcc234185b99e45d4d142c7ebbba9be2d847f3611",
+      "sha256": "4e0e051aff65f14eb1d1ce4a1bec6474fe7018ab3874262399efc2084ea02a70",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "47f8be91d2ef21af02b37d8e188d6b887f034d840cf249c119d0dd32ce8c8a08",
+      "sha256": "ccb6f85e81567beeb6c66bfb4eb72bf47e6e6fb0af2d2dc572969fdef222b695",
       "declarations": []
     },
     {
@@ -244,6 +244,10 @@
     {
       "zh": "2026-10-09：应 Ren“and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”新增，作为整合计划 P9，承接第一次独立审查列出的第一种会改变其判断的结果。",
       "en": "2026-10-09: added following Ren's “and after it is elegantly completed, move on to pursue the theory of becoming, and prove the necessary proofs”, as P9 of the unification plan, taking up the first result the first independent review said would change its verdict."
+    },
+    {
+      "zh": "2026-10-09：P7b 修正侵蚀与 but-for 的定义并新增见证后，合并检查器重跑（20261009T013859.515931Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P7b corrected the definitions of undermining and but-for and added witnesses, the consolidated checker was rerun (20261009T013859.515931Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

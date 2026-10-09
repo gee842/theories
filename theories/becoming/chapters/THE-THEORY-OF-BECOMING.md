@@ -166,25 +166,26 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 **逐步读法。** 分类也可以逐步读：一个事件（形成，步）在更新之内，当它所在之步维持它所参与条件上的每个依存（`RenewingAt`）。整段更新的形成，每个活跃步都在更新之内；一个形成也可以在自己的每个活跃步都在更新之内，整段却不更新。
 
-作为 `living` 的逐步读法，独立审查之后取“活跃且不侵蚀”。事件侵蚀，当它在某步汲取某条件，而该步之后，一个当时或此前被满足的依存不被满足。在断裂某个依存之步汲取（断裂）是侵蚀的一种。这一读法：
+作为 `living` 的逐步读法，两次独立审查之后的工作候选（待 Ren 选择）是“活跃且不侵蚀”。事件侵蚀，当它在某步汲取某条件，而该步之后，一个在其成立期间曾被满足的依存不被满足（`MetSince`）。在断裂某个依存之步汲取（断裂）是侵蚀的一种。这一读法：
 
 - 记入被断裂者自己的事件（它不汲取）；
-- 不受从未被满足的依存影响；
-- 扣下损失之后继续的汲取：那样的汲取不再断裂什么，却使条件回不来（`drawing_after_loss`）。
+- 在依存成立期间从未被满足的依存，不使汲取者侵蚀（`NewNeed.never_met_not_undermining`）；
+- 扣下损失之后继续的汲取：那样的汲取不再断裂什么；在公地见证中，它使条件回不来（`drawing_after_loss`）；
+- 代价：它读的是共同参与一个未恢复的短缺，不是汲取的效果。`draws` 不带数量，所以恰取更新量、甚至不改变任何水平的汲取也被扣下（`Pool.within_share_undermines`、`Pinned.undermining_without_effect`）。
 
 它与整段读法两个方向都有分歧：加码之前的汲取逐步被记入，整段却记为消耗；短暂下降中断裂之步的汲取逐步不被记入，而条件随后恢复，整段不记消耗（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)，[审查与更正](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md)）。
 
-**回程给更新分级。** 更新与消耗之间按回程时间分级：每步都维持、在有界周期内回到、终会回到而无界、不再回到。消耗恰是某个依存不再回程（`consumed_iff`）。季节性条件在两步周期内更新；恢复可以无界地变慢而条件从不被消耗。周期层面的读法在两步周期下记入短暂下降，对每个周期都扣下加码（[becoming-return-grades](../results/records/becoming-return-grades.md)）。
+**回程给更新分级。** 更新与消耗之间按回程时间分级：每步都维持、在有界周期内回到、终会回到而无界、不再回到。消耗恰是某个依存不再回程（`consumed_iff`）。季节性条件在两步周期内更新；恢复可以无界地变慢而条件从不被消耗。更新蕴含一步周期内更新，逆命题不成立（`LateMet`）。周期层面的读法在两步周期下记入短暂下降，对每个周期都扣下加码（[becoming-return-grades](../results/records/becoming-return-grades.md)）。
 
-**有限的历史不决定分类。** 对每个视界，同一过程有两次运行在视界之前完全相同：每步都超出更新地汲取，每个事件都在更新之内；此后一次更新，一次消耗。任何由有限前缀决定、并记入每次更新运行的读法，必记入某次消耗运行（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)）。判断一段汲取是否消耗，需要对运行之继续的探究，不只是对过去的观察。
+**有限的历史不决定分类。** 对每个视界，同一过程有两次运行在视界之前完全相同：每步都超出更新地汲取，每个事件都在更新之内；此后一次更新，一次消耗。任何由有限前缀决定、并记入每次更新运行的读法，必记入某次消耗运行（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)）；在有反馈的支持门控定律中也是如此。这一结论的力量来自“记入每次更新运行”：那次更新运行在视界之前同样超出更新地汲取，整段读法记入这些汲取（`whole_run_credits_overdraw`）；按数量的读法（所取不超过更新）可由有限历史判定，并扣下每一次超出（`amount_reading`）。若要判断的是一段汲取的整段结局，需要对运行之继续的探究与审议，不只是对过去的观察。
 
-**One principle bounds continuation without renewal: an observable that never rises from some step on falls only finitely often.** Its cases are depletion, natural-rank recurrent renewal and unrenewed drawdown. **The class belongs to the run**, not to a configuration or to the formation's own trajectory: persistence, success and growth do not certify renewal. **A stepwise classification** places an event within renewal when its step keeps every dependence on the conditions it participates in. As the stepwise reading of `living`, adopted after independent review, an event lives when it is active and not undermining: it does not draw on a condition at a step after which a dependence met then or before is unmet. It and the whole-run reading differ in both directions. **Return grades renewal**: consumption is exactly a dependence that never returns, and recovery can slow without bound while the condition is never consumed. **No finite history decides the classification**: any reading fixed by a finite prefix that credits every renewing run credits some consuming run.
+**One principle bounds continuation without renewal: an observable that never rises from some step on falls only finitely often.** Its cases are depletion, natural-rank recurrent renewal and unrenewed drawdown. **The class belongs to the run**, not to a configuration or to the formation's own trajectory: persistence, success and growth do not certify renewal. **A stepwise classification** places an event within renewal when its step keeps every dependence on the conditions it participates in. As the stepwise reading of `living`, the working candidate after two independent reviews, pending Ren's choice, an event lives when it is active and not undermining: it does not draw on a condition at a step after which a dependence, met at some step while it held, is unmet. It and the whole-run reading differ in both directions. **Return grades renewal**: consumption is exactly a dependence that never returns, and recovery can slow without bound while the condition is never consumed. **No finite history decides the classification**: any reading fixed by a finite prefix that credits every renewing run credits some consuming run, with feedback too. A per-step amount reading escapes this only by not crediting every renewing run.
 
 **联合消耗没有单一的消耗者。** 两个形成各自都在更新之内，合起来却消耗了共同条件，两者都随之终止。这一类属于它们的联合关系（`jointly_consuming`）。
 
 - **反馈。** 在更新依赖被更新条件的定律族中，越过支持阈值的损失在定律内不会回来（`no_return_below_support`）。
 - **修复。** 有支持的贡献路线可以修复维持关系（[supported-renewal-recovery](../results/records/supported-renewal-recovery.md)）。
-- **替代。** 同一定律族中，能替代条件的消耗者转化依存而持续，仍是消耗的，维持者终止；自身的持续不证明更新（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)）。
+- **替代。** 同一定律族中，能替代条件的消耗者转化依存而持续，在整段读法下仍是消耗的（几乎由定义给出），维持者终止；逐步读法除一步外都记入它（`stepwise_credits_substitution`）。自身的持续不证明更新（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)）。
 - **窄定律类。** 在一个磨损定律类中，更新与消耗是动力学上可区分的（[renewing-consuming-formation](../results/records/renewing-consuming-formation.md)）。
 
 **演化是具体的机制，不是一切变化的同义词。** 传递、重建、变异与选择各有其关系，须各自说明（[演化之论](THE-THEORY-OF-EVOLUTION.md)、[演化组织](EVOLUTIONARY-ORGANIZATION.md)）。已检查的连接如下：
@@ -242,12 +243,12 @@ All are defined through the core `Trace`, so they compose with the core's theore
 
 - **联合消耗没有单一的消耗者**（§2）；
 - **共同参与**：消耗者与失去支持者共同参与被汲取的条件（`consumption_relates`）；
-- **差别制造属于共同活动**：多重决定下，扣除任何单独一方的部分，损失照样发生，没有哪一方单独造成差别，而关系读法仍把每个汲取者计为消耗；一个形成的渐进耗竭中，各步的汲取之间也是如此（[joint-difference-making](../results/records/joint-difference-making.md)）；
-- **替代不证明更新**：靠消耗取胜的一方可以转向别的条件而持续，失去者不随之恢复（§2）。
+- **差别制造属于共同活动**：多重决定下，扣除任何单独一方的部分，损失照样发生，没有哪一方单独造成差别，而关系读法仍把每个汲取者计为消耗；一个形成的渐进耗竭中，整段的结局由尾部决定，没有哪个有限的事件集合造成整段的差别，而断裂事件造成那一次断裂的差别（[joint-difference-making](../results/records/joint-difference-making.md)）；
+- **替代不证明更新**：靠消耗取胜的一方可以转向别的条件而持续，失去者不随之恢复；在逐步读法下，它只在一步上不被记入（§2）。
 
 因此，在 N_rel 下，靠消耗赢得的一方不能以“无关”为由把失去者放在意义之外（§6.3）；在关系读法下，“我的一份不造成差别”也不把它移出消耗。这些都不推出责任或义务。
 
-**The meta-attractor of winning**: present advantage that weakens restraints on its own strategy changes future selection. Two spine facts bear on it:
+**The meta-attractor of winning**: present advantage that weakens restraints on its own strategy changes future selection. Four spine facts bear on it:
 
 - joint consumption has no single consumer;
 - the consumer and the formation that loses support participate in the drawn condition;
@@ -324,7 +325,7 @@ L3 可以给出 `living` 与 `related` 两项对应（[becoming-renewal-reading]
 
 **逐步读法与关系层读法。** 以“活跃且不侵蚀”为 `living`、以各自步上共同参与某一条件为 `related`，前两点照样成立：共同条件给出连通（`Web.significant_iff_of_common`）；在断裂之步汲取的事件与被断裂者共同参与该条件，在 N_rel 下，珍视这一事件的立场必珍视被断裂者活的事件（`Web.valuing_breaking_reaches`）。依存不变时整段与逐步读法的 `related` 相同，只在 `living` 上分歧，而且两个方向都有（`Commons.readings_differ`）。关系层读法以（形成，条件，步）为主张；一个事件的逐步读法恰是它所参与关系的读法的合取，同一事件可以有一个活的关系和一个侵蚀的关系（`Web.living_iff_relations`）。
 
-**读法由 Ren 选择。** 独立审查判定关系读法的哲学根据尚未确立（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）。[研究 §8.5](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) 按五条判据比较了各读法，并给出两条形式约束：符合 Ren 有来源的判决与可由有限探究判定，在渐进耗竭上冲突（`finite_reading_credits_consumption`）；but-for 差别制造不能代替参与（`depletion_is_joint`）。现有读法读出的都是“不损”，不含继续生成。哪一种读法或组合是生生的读法，是 Ren 方向内的规范与诠释选择，本章不替 Ren 作出。
+**读法由 Ren 选择。** 独立审查判定关系读法的哲学根据尚未确立（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）。[研究 §8.5](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) 按五条判据比较了各读法，并给出两条有范围的形式约束。其一，任何由有限前缀决定、并记入每次整段更新运行的读法，必记入某次消耗运行（`finite_reading_credits_consumption`）；它是否与 Ren 所采纳的判决冲突，取决于判决是否覆盖越过阈值之前的事件，以及可观测量是否带数量（`amount_reading`）。其二，单一部分的整段 but-for 检验不能代替参与（`Overdetermined.no_difference`、`no_finite_segment_makes_difference`）。[第二次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md)接受全部数学，修正了侵蚀与 but-for 的定义，更正见研究 §11。现有读法读出的都是“不损”，不含继续生成。哪一种读法或组合是生生的读法，是 Ren 方向内的规范与诠释选择，本章不替 Ren 作出。
 
 The Becoming layer can supply `living` (the relational reading) and `related` (participation in a common condition):
 
@@ -362,11 +363,12 @@ L 是实质承诺：
 
 - 没有某个形成的继续扩展有它的继续，仅当读法扣下该形成的每个事件；
 - 整段读法下，C 把没有过度汲取者的继续排得更高，也把共享排在以消耗取胜之上；
-- 逐步读法下，过度汲取者在损失之前的事件被记入，C 不再决定它的在场与不在场（恶性增殖与以消耗取胜都是实例），但仍把共享排在以消耗取胜之上。
+- 逐步读法下，过度汲取者在损失之前的事件被记入，C 不再决定它的在场与不在场（恶性增殖与以消耗取胜都是实例），但仍把共享排在以消耗取胜之上；
+- 两种读法下，C 都把在阈值之前停止的继续排在过度汲取之上（`restraint_ranks`、`malignant_restraint`）：逐步读法失去的只是与不在场的比较，不是与节制的比较。
 
 所以若要由 C 得出“没有恶性增殖更好”，C 所比较的读法须扣下损失之前的事件，或者在 C 之外加更强的比较。G0 与 C 是否共用一种读法，属于 Ren 对生生读法的选择（§6.3）。
 
-**What C ranks depends on the reading it compares.** Under the whole-run reading C ranks the continuation without an overdrawing formation higher, and sharing above winning by consumption. Under the stepwise reading it still ranks sharing above winning, but no longer decides between an overdrawing formation and its absence, because the formation's events before the loss are credited.
+**What C ranks depends on the reading it compares.** Under the whole-run reading C ranks the continuation without an overdrawing formation higher, and sharing above winning by consumption. Under the stepwise reading it still ranks sharing above winning, but no longer decides between an overdrawing formation and its absence, because the formation's events before the loss are credited. Under both readings it ranks restraint before the threshold above overdraw, so what the stepwise reading loses is only the comparison with absence.
 
 **L was a hidden premise exposed by integration.** Under the conservative L, the comparison, reason, survival and continual-improvement results hold on every frame. The functional situation is exactly the deterministic case. L is substantive.
 
@@ -406,10 +408,10 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 | 更强的普遍实践根据（[universal-practical-warrant](../results/records/universal-practical-warrant.md)） | 开放；在公开前提下已有普遍理由 | 不经外给目的而建立理由的根据 |
 | 核心作为智慧之根（[wisdom-root](../results/records/wisdom-root.md)） | 开放 | 说明智慧的实际形成 |
 | 科学探究的必要关系根基（[scientific-inquiry-foundation](../results/records/scientific-inquiry-foundation.md)） | 开放 | 由独立陈述的成就建立核心的不可或缺性 |
-| 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)） | 放宽 `Dependent`（缓冲、储备、滞后）；形成的个体化 |
-| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）；条件的对应纪律已给出一条（[condition-correspondence-discipline](../results/records/condition-correspondence-discipline.md)），其时间次序与对整段读法的陈述开放；不依赖运行的读法；继续生成的成分 |
-| 共同活动中的归属 | but-for 差别制造在多重决定下与关系参与分离（[joint-difference-making](../results/records/joint-difference-making.md)） | 更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任 |
-| 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理；回程、视界、共同活动与替代，以及 A 的外在论辩护、N 的哲学根据，未经独立审查 | 进行这些审查 |
+| 动态依存 | 已定义并检查（[becoming-dependence-dynamics](../results/records/becoming-dependence-dynamics.md)）：依存跨步形成、维持、断裂与消解；定理联系起来的损失的三种结局，表示内的约束；替代在支持门控定律中保持整段分类（[substitution-preserves-consumption](../results/records/substitution-preserves-consumption.md)） | 放宽 `Dependent`（缓冲、储备、滞后）；形成的个体化 |
+| 读法 | 已定义并比较，读法选择开放：整段、逐步（不侵蚀）、周期与关系层（[becoming-stepwise-reading](../results/records/becoming-stepwise-reading.md)、[becoming-return-grades](../results/records/becoming-return-grades.md)）；有限前缀不决定分类（[becoming-finite-horizon](../results/records/becoming-finite-horizon.md)） | Ren 选择生生的读法或其组合，以及 G0 与 C 是否共用一种读法（C 的排序随读法而变，[ranking-under-readings](../results/records/ranking-under-readings.md)）；条件的对应纪律已给出一条（[condition-correspondence-discipline](../results/records/condition-correspondence-discipline.md)），其时间次序与对整段读法的陈述开放；不依赖运行的读法；带数量与更新率的网；继续生成的成分 |
+| 共同活动中的归属 | 相对于动作的 but-for 差别制造在多重决定下与关系参与分离；整段与步层面的检验分开（[joint-difference-making](../results/records/joint-difference-making.md)） | 更精细的归属（如 NESS、实际因果）作为另一读法；不推出责任 |
+| 独立反审 | 关系读法与 P3b–P6 已经独立审查（[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md)）：数学接受，哲学根据未确立，二十项更正已处理。回程、视界、共同活动与替代（P7）经[第二次审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md)：数学接受，侵蚀与 but-for 的定义已修正，十五项更正已处理。C 在各读法下的排序（P8）、条件的对应纪律（P9），以及 A 的外在论辩护、N 的哲学根据，未经独立审查 | 进行这些审查 |
 | 经验对应 | 共同条件、各机制的实际实现 | 识别与可区分的检验 |
 | 更强的方向假说 | 现实一般地发展出更共同、更有回应的更新：开放 | 不作为前提使用 |
 
@@ -429,19 +431,19 @@ The core (L0 with its two foundation modules, and L1–L4) imports nothing outsi
 | L1 | [Becoming.Frame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean) | 框架、运行、可达、不变量、新实现 | 11 |
 | L2 | [Becoming.Inquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean) | 所见范围；可靠策略确保其目标；判断即一步探究 | 6 |
 | L3 | [Becoming.Renewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean) | 运行上的更新／消耗；一条下降原则 | 6 |
-| L3 | [Becoming.Dependence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean) | 依存的形成、维持、断裂与消解；损失的三种结局；逐步的更新、断裂与侵蚀 | 35 |
-| L3 | [Becoming.Return](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean) | 回程等级；消耗恰是不再回程；周期层面的读法 | 26 |
-| L3 | [Becoming.Horizon](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean) | 有限前缀不决定分类 | 2 |
-| L3 | [Becoming.Joint](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean) | but-for 差别制造；多重决定；渐进耗竭是共同活动 | 12 |
-| L3 | [Becoming.Substitution](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) | 支持门控定律中的替代保持消耗 | 4 |
+| L3 | [Becoming.Dependence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean) | 依存的形成、维持、断裂与消解；损失的三种结局；逐步的更新、断裂与侵蚀 | 39 |
+| L3 | [Becoming.Return](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean) | 回程等级；消耗恰是不再回程；周期层面的读法 | 29 |
+| L3 | [Becoming.Horizon](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean) | 有限前缀不决定分类，有反馈时也如此；按数量的读法 | 14 |
+| L3 | [Becoming.Joint](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean) | 相对于动作的 but-for 差别制造；多重决定；整段与步层面的检验 | 16 |
+| L3 | [Becoming.Substitution](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) | 支持门控定律中的替代：整段读法下保持消耗，逐步读法除一步外记入 | 6 |
 | L4 | [Becoming.Metaethics](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean) | 前提卡、G0 刻画、极小性、普遍理由；整段、逐步与关系层的读法 | 35 |
-| L4 | [Becoming.Ranking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) | C 在整段与逐步读法下的排序 | 15 |
+| L4 | [Becoming.Ranking](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean) | C 在整段与逐步读法下的排序；节制排在过度汲取之上 | 19 |
 | L4 | [Becoming.Correspondence](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean) | 条件的对应纪律：交互；惰性条件不连通；连通由活的使用造成 | 21 |
 | 桥接 / Bridge | [Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广；整段读法即既有的关系清单 | 34 |
 
-[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 207 项定理、395 项声明审计，公理报告全部为空；核心闭包共 15 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
+[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 236 项定理、451 项声明审计，公理报告全部为空；核心闭包共 15 个模块；15 个继承模块的当前字节须与已通过的回执一致。依赖 Mathlib 的叶子经外围桥接 [CorrectionInquiry](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInquiry.lean) 连到核心：它用 Lean 4.30.0-rc2 与 Mathlib 检查，核心模块在那里同样编译通过，桥接的 7 项定理公理报告为空。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 
-The consolidated checker and receipt cover 207 theorems and 395 declaration audits, all with empty axiom reports; the core closure has 15 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
+The consolidated checker and receipt cover 236 theorems and 451 declaration audits, all with empty axiom reports; the core closure has 15 modules. The current bytes of 15 inherited modules must match passed receipts. Mathlib leaves connect through the peripheral bridge CorrectionInquiry, checked with Lean 4.30.0-rc2 and Mathlib; the core compiles there too, and the bridge's 7 theorems have empty axiom reports.
 
 ## 10. 术语表 / Glossary
 
@@ -464,7 +466,7 @@ The consolidated checker and receipt cover 207 theorems and 395 declaration audi
 | 形成／消解（依存） | forms / dissolves | 依存跨一步出现／消失 | `Forms`、`Dissolves` |
 | 步内更新 | within renewal at a step | 事件所在之步维持其所参与条件上的每个依存；逐步的更新分类 | `RenewingAt` |
 | 断裂（事件） | breaking | 在断裂某个依存之步汲取该条件 | `BreakingOn`、`BreakingAt` |
-| 侵蚀 | undermining | 在某步汲取某条件，而该步之后一个当时或此前被满足的依存不被满足；逐步读法的 living 是活跃且不侵蚀 | `UnderminingOn`、`UnderminingAt` |
+| 侵蚀 | undermining | 在某步汲取某条件，而该步之后一个在其成立期间曾被满足的依存不被满足；逐步读法的 living 是活跃且不侵蚀 | `MetSince`、`UnderminingOn`、`UnderminingAt` |
 | 回程 | return | 某步成立的依存在以后某步（或 `p` 步之内）再被满足 | `Returns`、`ReturnsWithin`、`RenewedWithin` |
 | 视界 | horizon | 有限的前缀；两次运行在其前相同 | `Run.AgreeUpTo` |
 | 差别制造 | making a difference | 扣除一方的部分后，依存每一步都被维持 | `MakesDifference`、`Overdetermined` |

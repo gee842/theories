@@ -12,22 +12,26 @@ soon a dependence is met.
 A dependence holding at a step *returns within* `p` steps when the condition meets it
 at one of the next `p` steps. A condition is *renewed within* `p` when every dependence
 on it returns within `p`, and it *returns* when every dependence on it is met at some
-later step. The readings of a formation then have forms over cycles of
-`p`. It renews over cycles of `p` when every condition it participates in is renewed
-within `p`. Its event *undermines for* `p` steps when it draws on a condition at a step
-after which a dependence on it, met then or before, stays unmet for the next `p` steps;
-undermining for one step is undermining at the step.
+later step. The readings of a formation then have forms over cycles of `p`. It renews
+over cycles of `p` when every condition it participates in is renewed within `p`. Its
+event *undermines for* `p` steps when it draws on a condition at a step after which a
+dependence on it, met while it held, stays unmet for the next `p` steps; undermining for
+one step is undermining at the step. Cycles have length at least one: within zero steps
+only a condition nothing depends on is renewed, and any draw on a condition with a
+dependence met while it held undermines.
 
 Results:
 * The grades are ordered: renewal implies renewal within one step, renewal within `p`
   implies renewal within any longer cycle and implies return, and a condition that
   returns is not consumed. Consumption is exactly a dependence that never returns.
+  Renewal within one step does not imply renewal (`LateMet`): it asks whether each
+  dependence is met at the next step, not at its own.
 * The seasonal condition of `RelationalRenewal`, neither renewed nor consumed, is renewed
   within two steps and not within one.
 * A recovery can slow without bound. A condition that is met again after ever longer
   gaps always returns and is never consumed, yet no cycle length bounds its return.
-* The readings over cycles extend the readings over steps: renewal is renewal over
-  cycles of one, and undermining at a step is undermining for one step. A longer cycle
+* The readings over cycles extend the readings over steps: renewal implies renewal
+  over cycles of one, and undermining at a step is undermining for one step. A longer cycle
   credits more, a formation renewing over any cycle is not consuming, and none of its
   events undermines for that cycle. Over cycles of two, a dip that breaks a dependence
   for one step is credited, and a keeper whose condition a drawer broke while it was
@@ -68,16 +72,24 @@ def RenewingInWithin (p : Nat) (f : F) : Prop :=
   ∀ t c, W.Participates t f c → W.RenewedWithin p c
 
 /-- A formation's event at `t` undermines for `p` steps: it draws on a condition at a
-step after which a dependence on it, met then or before, stays unmet for the next `p`
+step after which a dependence on it, met while it held, stays unmet for the next `p`
 steps. -/
 def UnderminingFor (p t : Nat) (f : F) : Prop :=
-  ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧ (∃ s, s ≤ t ∧ W.need t g c ≤ W.level s c) ∧
+  ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧ W.MetSince t g c ∧
     ∀ k, 0 < k → k ≤ p → W.level (t + k) c < W.need t g c
 
 variable {W}
 
 theorem renewed_within_one {c : C} (renewed : W.Renewed c) : W.RenewedWithin 1 c :=
   fun t g depends => ⟨1, Nat.zero_lt_one, Nat.le_refl 1, (renewed t g depends).2⟩
+
+/-- Cycles of length zero are degenerate: within zero steps only a condition nothing
+depends on is renewed. -/
+theorem renewedWithin_zero {c : C} : W.RenewedWithin 0 c ↔ ∀ t g, ¬ W.requires t g c :=
+  ⟨fun renewed t g depends =>
+    match renewed t g depends with
+    | ⟨_, positive, within, _⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le positive within),
+   fun none t g depends => absurd depends (none t g)⟩
 
 theorem RenewedWithin.mono {p q : Nat} {c : C} (le : p ≤ q) (renewed : W.RenewedWithin p c) :
     W.RenewedWithin q c :=
@@ -128,6 +140,14 @@ theorem undermining_for_one {t : Nat} {f : F} :
       | 1, _, _ => fell
       | k + 2, _, within => absurd (Nat.le_of_succ_le_succ within) (Nat.not_succ_le_zero k)⟩⟩
 
+/-- Undermining for zero steps holds of any draw on a condition with a dependence met
+while it held. -/
+theorem undermining_for_zero {t : Nat} {f : F} :
+    W.UnderminingFor 0 t f ↔ ∃ c, W.draws t f c ∧ ∃ g, W.requires t g c ∧ W.MetSince t g c :=
+  ⟨fun ⟨c, drawn, g, depends, met, _⟩ => ⟨c, drawn, g, depends, met⟩,
+   fun ⟨c, drawn, g, depends, met⟩ => ⟨c, drawn, g, depends, met, fun _ positive within =>
+     absurd (Nat.lt_of_lt_of_le positive within) (Nat.lt_irrefl 0)⟩⟩
+
 theorem RenewingInWithin.mono {p q : Nat} {f : F} (le : p ≤ q)
     (renewing : W.RenewingInWithin p f) : W.RenewingInWithin q f :=
   fun t c joins => (renewing t c joins).mono le
@@ -152,6 +172,32 @@ theorem RenewingInWithin.not_consuming {p : Nat} {f : F} (renewing : W.RenewingI
   | ⟨t, c, drawn, consumed⟩ => (renewing t c (Or.inr drawn)).returns.not_consumed consumed
 
 end Web
+
+/-! ## Renewal within one step is weaker than renewal -/
+
+namespace LateMet
+
+/-- The level is 0 at step 0 and 1 afterwards. One formation depends on the condition at
+level one throughout and is active from step 1, where it is supported. -/
+def web : Web Unit Unit :=
+  ⟨fun t _ => match t with
+    | 0 => 0
+    | _ + 1 => 1,
+   fun t _ => match t with
+    | 0 => False
+    | _ + 1 => True,
+   fun _ _ _ => True, fun _ _ _ => 1, fun _ _ _ => False⟩
+
+/-- The dependence is not met at its own step 0, so it is not kept there, yet it is met
+at every next step: the formation renews within one step and does not renew. -/
+theorem within_one_not_renewing :
+    web.Dependent ∧ web.RenewingInWithin 1 () ∧ ¬ web.RenewingIn () :=
+  ⟨fun | 0, _, active, _, _ => False.elim active
+       | _ + 1, _, _, _, _ => Nat.le_refl 1,
+   fun _ _ _ _ _ _ => ⟨1, Nat.zero_lt_one, Nat.le_refl 1, Nat.le_refl 1⟩,
+   fun renewing => Nat.not_succ_le_zero 0 (renewing 0 () (Or.inl trivial) 0 () trivial).1⟩
+
+end LateMet
 
 /-! ## A seasonal condition is renewed over cycles of two -/
 
@@ -290,7 +336,8 @@ theorem escalation_undermines_for_every_cycle :
     ∀ p, (conditions.dependence.along escalating).UnderminingFor p 1 .focal :=
   ⟨fun undermining => stepwise_credits_before_escalation.2.1.not_undermining
     (Web.undermining_for_one.mp undermining),
-   fun _ => ⟨(), trivial, .sustaining, trivial, ⟨1, Nat.le_refl 1, Nat.le_refl 1⟩, fun
+   fun _ => ⟨(), trivial, .sustaining, trivial,
+     ⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1⟩, fun
      | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)
      | k + 1, _, _ => Nat.lt_of_le_of_lt
         (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one⟩⟩

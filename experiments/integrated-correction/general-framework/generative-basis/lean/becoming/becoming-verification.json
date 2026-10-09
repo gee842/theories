@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261009T011915.395840Z",
+  "utc": "20261009T013859.515931Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261009T011915.395840Z",
+  "retained_run": "becoming-checks/20261009T013859.515931Z",
   "spine_modules": [
     "Becoming.Frame",
     "Becoming.Inquiry",
@@ -124,15 +124,15 @@
     "Becoming.Inquiry": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
     "RelationalRenewal": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
     "Becoming.Renewal": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
-    "Becoming.Dependence": "b9a5e970aad285742efca5fb8759b9c9a9b797c67d2fec940de71ebacf56076c",
-    "Becoming.Return": "b036d18aa49dfeebcc0bd51a4808b2835239c2c00805327ce7122f4c9c2dae43",
-    "Becoming.Horizon": "3ee4f914cec188196de0d1c31ec45b6499371b899c0fa9d9c9e0155063a4b0e9",
-    "Becoming.Joint": "8513d13f862834dcfb521779c50a5b05d68631f4ba969e9f52ea95fb2124f902",
-    "Becoming.Substitution": "2355d189eb42309952df495b2bfeefda15b6f5a134e9a48caa828c5dcedf21fe",
-    "Becoming.Metaethics": "003cf6908a575986c00180629179a6038d1a50e5653d3fccf8d0cf4ad03947ed",
-    "Becoming.Ranking": "49bc1aaed3e4254baa7ffbefb3e9b154edb7ab4be5e0783729eb39689c3ed51e",
-    "Becoming.Correspondence": "ef8e15db499319ddb03203321cbadd00ebf22db9be33e2f8b16afb425aa92408",
-    "Becoming": "25830d5e12d653524de16dec99aa338d702e353e7a109ed672d69f8bf9d34aab",
+    "Becoming.Dependence": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
+    "Becoming.Return": "50a6b41474faa01059160da9ed7169b30bc682e790e3b593449e7e526aef8062",
+    "Becoming.Horizon": "a7d7ad84853c9a16196eb1053675c6d24f36f5bc50e9037d1f9c76118e161789",
+    "Becoming.Joint": "c943547f421dbc2cd058167110fd4eedfdfdce26ee2429c9fc452e076716a2e7",
+    "Becoming.Substitution": "9e97983f799cf21649e6741f2fc6cb6a0d0eebcfe85f3b8503f7e6a933b13e0e",
+    "Becoming.Metaethics": "8d5280463510b22ab466e20465b0c6a4d83308fd80c2c85eb001a4253873dca9",
+    "Becoming.Ranking": "3bbb2a4f4ed9dabec95fec608797894b87c7d9c2376a7a3ea7cc8e3b4ac69f1f",
+    "Becoming.Correspondence": "5931ff6a3d65c72a7a3c3712b92763546015bff38432c955e4c5056ece5790d6",
+    "Becoming": "38a3c037c86ee5222136a9231f8a5b64447dc9c0dd2da308f41f6d68fdc53904",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
@@ -148,10 +148,10 @@
     "Becoming.Bridge": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3"
   },
   "checker_sha256": {
-    "check_becoming.py": "e51023d7710df201ba6d58156f92f7700e8ffd80471f47826e9f7b82b2fc7a9f",
+    "check_becoming.py": "886989f0fb3c501ad3c6f059cdb8c05aebe4aa283a42412beeac7d4d8666dbbc",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
-  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Renewal: a run read through observables of conditions is one relational unfolding; an observable that never rises from some step on falls only finitely often, with depletion, recurrent renewal under a natural-number rank and unrenewed drawdown as its cases; in one process from one configuration one run renews and another consumes. Dependence: which conditions a formation depends on, at what level, and which it draws on may change from step to step; constant dependence recovers the static reading exactly; every met dependence is kept or broken across each step; consumption as inherited admits a requirement never met, which consumes its condition with no break; where activity needs current support, a formation still active after a loss without return has weakened or dissolved its dependence, and with fixed dependence it is no longer active, both contrapositives of that premise; these outcomes are neither exhaustive nor exclusive, and in one process from one configuration a break of the same dependence, read at the start of its step, is followed by an ending, a transformation and a restoration; an event is within renewal when its step keeps every dependence on the conditions it participates in, breaking when it draws on a condition at a step that breaks a dependence on it, and undermining when it draws on a condition at a step after which a dependence on it, met then or before, is unmet; breaking is undermining, and drawing after a loss can undermine without breaking while it keeps the condition from returning; the stepwise and whole-run readings credit different events in both directions. Return: a dependence returns within p steps when it is met at one of the next p; renewal, renewal within one step, within p, return and non-consumption are ordered, and consumption is exactly a dependence that never returns; a seasonal condition is renewed within two steps and not one; a recovery can slow without bound, returning always while no cycle bounds it; over cycles of two a dip is credited, and an escalation undermines for every cycle. Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with every event within renewal, and afterwards one renews and the other consumes; a reading decided by a finite prefix that credits every renewing run credits a consuming one. Joint activity: withholding a formation's part, the rest as it was, the loss is kept or broken; when withholding any single part still breaks, no part alone makes the difference; in one process a drawer's part makes the difference with one other drawer and not with two, while the relational reading counts it consuming in both; drawing beyond renewal at every step consumes the condition, the first event undermines for no cycle, and with any single event's draw withheld the condition is still consumed. Substitution: in the support-gated law, a focal formation that can substitute an alternative condition stays active, transforms its dependence at a step that can be found, and consumes, while the sustaining formation ends; a concrete law meets the premises. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason; G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, a condition in which every living formation participates discharges connection, and without one connection can fail; a consuming formation and one losing its support co-participate in the drawn condition, so under N_rel valuing the consumer's activity reaches the living events of the formation losing support. Read stepwise, an event is living when active and not undermining; the same discharge holds, an event drawing at a step that breaks a dependence is related to the broken formation, so under N_rel valuing it reaches that formation's living events, and both readings credit the broken formation's own event. Read through relations, the stepwise reading of an event is the conjunction of the reading of its relations, and one event can have a living relation and an undermining one. Ranking: C over courses is stated through a frame whose realized claims are the events a reading credits; the course without a formation extends the course with it only if the reading withholds every event of that formation; under the whole-run reading, for every law of the support-gated family in which the focal formation draws beyond renewal, the course without it extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise reading an event of the formation whose step leaves every need met is credited, neither course extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with the formation, malignant growth and winning by consumption being instances; under the stepwise reading sharing still extends winning by consumption. Correspondence: under the discipline that two events are related through a condition only when one draws on it and the other depends on it at a positive level, a condition nothing draws on or no dependence on which can fail relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged, while under co-participation adjoining a condition every formation requires at level zero connects every web; every undermining relation is an interaction; a condition on which every living event bears, with a living drawer and a living dependent, connects the whole; in one example two dependents are connected through a living use of their condition and not when its only use undermines them, while co-participation connects them in both; adjoining a renewed condition every formation draws on and depends on still connects every web without changing living. Instances: the core's G0, C, D, secured ground and relational living are by definition those of the existing modules, the core's whole-run reading of courses is the relational inventory of RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is PracticalJudgment.Better; seed-edge closures and evaluator chains are reachability on the edge process; a frame's reachable configurations form a joint-continuation space whose bundles step-preserving maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence narrowing by a rule list are common responses, one-step completion, enabledness and After on a pure observation; the functional articulation of a situation is exactly the deterministic case of the articulation under L, and the lifted comparison, reason, survival and continual-improvement results hold on every frame. A countermodel shows that L is substantive: a response with one better and one worse outcome is comparable in neither direction.",
+  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Renewal: a run read through observables of conditions is one relational unfolding; an observable that never rises from some step on falls only finitely often, with depletion, recurrent renewal under a natural-number rank and unrenewed drawdown as its cases; in one process from one configuration one run renews and another consumes. Dependence: which conditions a formation depends on, at what level, and which it draws on may change from step to step; constant dependence recovers the static reading exactly; every met dependence is kept or broken across each step; consumption as inherited admits a requirement never met, which consumes its condition with no break; where activity needs current support, a formation still active after a loss without return has weakened or dissolved its dependence, and with fixed dependence it is no longer active, both contrapositives of that premise; these outcomes are neither exhaustive nor exclusive, and in one process from one configuration a break of the same dependence, read at the start of its step, is followed by an ending, a transformation and a restoration; an event is within renewal when its step keeps every dependence on the conditions it participates in, breaking when it draws on a condition at a step that breaks a dependence on it, and undermining when it draws on a condition at a step after which a dependence on it, met while it held, is unmet, a level from before the dependence held not counting; breaking is undermining, drawing after a loss can undermine without breaking, and drawing that changes no level can undermine; the stepwise and whole-run readings credit different events in both directions. Return: a dependence returns within p steps when it is met at one of the next p; renewal, renewal within one step, within p, return and non-consumption are ordered, and consumption is exactly a dependence that never returns; renewal within one step does not imply renewal, and cycles of length zero are degenerate; a seasonal condition is renewed within two steps and not one; a recovery can slow without bound, returning always while no cycle bounds it; over cycles of two a dip is credited, and an escalation undermines for every cycle. Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with every event within renewal, and afterwards one renews and the other consumes; a reading decided by a finite prefix that credits every renewing run credits a consuming one; the renewing run itself draws beyond renewal before the horizon and the whole-run reading credits it; a reading of amounts per step is fixed by the history through the step and withholds every such draw; the formation-level cycle readings are not fixed by any finite prefix; and the same holds in the support-gated law, whose renewal stops below support. Joint activity: withholding a formation's part with the same move taken, the loss is kept or broken; when with any single part withheld the same move still breaks, no part alone makes the difference; from one configuration a lone drawer's part makes the difference under a calm move and the loss is overdetermined under a shock; in one process a drawer's part makes the difference with one other drawer and not with two, while the relational reading counts it consuming in both; a drawer taking exactly the renewal makes no difference and still undermines; drawing beyond renewal at every step consumes the condition, the first event undermines for no positive cycle, with every draw before any step withheld the condition is still consumed, and at the breaking step drawing nothing keeps the dependence. Substitution: in the support-gated law, a focal formation that can substitute an alternative condition stays active, transforms its dependence at a step that can be found, and consumes, while the sustaining formation ends; a concrete law meets the premises, and there the stepwise reading credits the focal formation at every step but one. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason; G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, a condition in which every living formation participates discharges connection, and without one connection can fail; a consuming formation and one losing its support co-participate in the drawn condition, so under N_rel valuing the consumer's activity reaches the living events of the formation losing support. Read stepwise, an event is living when active and not undermining; the same discharge holds, an event drawing at a step that breaks a dependence is related to the broken formation, so under N_rel valuing it reaches that formation's living events, and both readings credit the broken formation's own event. Read through relations, the stepwise reading of an event is the conjunction of the reading of its relations, and one event can have a living relation and an undermining one. Ranking: C over courses is stated through a frame whose realized claims are the events a reading credits; the course without a formation extends the course with it only if the reading withholds every event of that formation; under the whole-run reading, for every law of the support-gated family in which the focal formation draws beyond renewal, the course without it extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise reading an event of the formation whose step leaves every need met is credited, neither course extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with the formation, malignant growth and winning by consumption being instances; under the stepwise reading sharing still extends winning by consumption; under either reading a course in which every need stays met extends a course of the family in which overdraw ends the sustaining formation's support, malignant growth being ranked below the same formation stopping before the threshold. Correspondence: under the discipline that two events are related through a condition only when one draws on it and the other depends on it at a positive level, a condition nothing draws on or no dependence on which can fail relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged, while under co-participation adjoining a condition every formation requires at level zero connects every web; every undermining relation is an interaction; a condition on which every living event bears, with a living drawer and a living dependent, connects the whole; in one example two dependents are connected through a living use of their condition and not when its only use undermines them, while co-participation connects them in both; adjoining a renewed condition every formation draws on and depends on still connects every web without changing living. Instances: the core's G0, C, D, secured ground and relational living are by definition those of the existing modules, the core's whole-run reading of courses is the relational inventory of RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is PracticalJudgment.Better; seed-edge closures and evaluator chains are reachability on the edge process; a frame's reachable configurations form a joint-continuation space whose bundles step-preserving maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence narrowing by a rule list are common responses, one-step completion, enabledness and After on a pure observation; the functional articulation of a situation is exactly the deterministic case of the articulation under L, and the lifted comparison, reason, survival and continual-improvement results hold on every frame. A countermodel shows that L is substantive: a response with one better and one worse outcome is comparable in neither direction.",
   "inherited_receipts": {
     "GenerativeCore": [
       "acquired-perspective/verification.json",
@@ -417,6 +417,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T003015.364226Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T005652.480340Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T011219.477468Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T012003.153869Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "universal-ethics/generative-capacity/correspondence-verification.json",
       "universal-ethics/generative-capacity/reconfiguration-checks/20261007T161603.450304Z/verification.json",
@@ -517,6 +518,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T003015.364226Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T005652.480340Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T011219.477468Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T012003.153869Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "verification-history/2026-10-06-before-axiom-removal/sufficiency/verification.json",
       "verification-history/2026-10-06-before-vocabulary-rename/receipt.json",
@@ -538,6 +540,7 @@
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T003015.364226Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T005652.480340Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T011219.477468Z/verification.json",
+      "universal-ethics/generative-capacity/correction-inquiry-checks/20261009T012003.153869Z/verification.json",
       "universal-ethics/generative-capacity/correction-inquiry-verification.json"
     ],
     "GenerativeComparison": [
@@ -1637,7 +1640,7 @@
       "module": "Becoming.Dependence",
       "spine": true,
       "layer": "core",
-      "theorems": 35,
+      "theorems": 39,
       "declarations": [
         {
           "kind": "theorem",
@@ -1801,11 +1804,19 @@
         },
         {
           "kind": "def",
+          "name": "Becoming.Web.MetSince"
+        },
+        {
+          "kind": "def",
           "name": "Becoming.Web.UnderminingOn"
         },
         {
           "kind": "def",
           "name": "Becoming.Web.UnderminingAt"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Web.MetSince.now"
         },
         {
           "kind": "theorem",
@@ -1838,6 +1849,22 @@
         {
           "kind": "theorem",
           "name": "Becoming.Unmet.consumed_without_loss"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.NewNeed.Formation"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.NewNeed.web"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.NewNeed.level_late"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.NewNeed.never_met_not_undermining"
         },
         {
           "kind": "inductive",
@@ -1957,6 +1984,42 @@
         },
         {
           "kind": "inductive",
+          "name": "Becoming.Pinned.Formation"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.Pinned.State"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.process"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.dependence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.takingState"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.restingState"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.taking"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pinned.resting"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Pinned.undermining_without_effect"
+        },
+        {
+          "kind": "inductive",
           "name": "Becoming.Dip.Formation"
         },
         {
@@ -2021,8 +2084,10 @@
         "Becoming.Web.RenewingAt": [],
         "Becoming.Web.BreakingOn": [],
         "Becoming.Web.BreakingAt": [],
+        "Becoming.Web.MetSince": [],
         "Becoming.Web.UnderminingOn": [],
         "Becoming.Web.UnderminingAt": [],
+        "Becoming.Web.MetSince.now": [],
         "Becoming.Web.BreakingOn.undermining": [],
         "Becoming.Web.RenewingAt.not_undermining": [],
         "Becoming.Web.RenewingAt.not_breaking": [],
@@ -2031,6 +2096,10 @@
         "Becoming.Unmet.Formation": [],
         "Becoming.Unmet.web": [],
         "Becoming.Unmet.consumed_without_loss": [],
+        "Becoming.NewNeed.Formation": [],
+        "Becoming.NewNeed.web": [],
+        "Becoming.NewNeed.level_late": [],
+        "Becoming.NewNeed.never_met_not_undermining": [],
         "Becoming.Crossing.Mode": [],
         "Becoming.Crossing.Source": [],
         "Becoming.Crossing.State": [],
@@ -2060,6 +2129,15 @@
         "Becoming.Commons.pausingState": [],
         "Becoming.Commons.pausing": [],
         "Becoming.Commons.drawing_after_loss": [],
+        "Becoming.Pinned.Formation": [],
+        "Becoming.Pinned.State": [],
+        "Becoming.Pinned.process": [],
+        "Becoming.Pinned.dependence": [],
+        "Becoming.Pinned.takingState": [],
+        "Becoming.Pinned.restingState": [],
+        "Becoming.Pinned.taking": [],
+        "Becoming.Pinned.resting": [],
+        "Becoming.Pinned.undermining_without_effect": [],
         "Becoming.Dip.Formation": [],
         "Becoming.Dip.levels": [],
         "Becoming.Dip.keeperActive": [],
@@ -2073,7 +2151,7 @@
       "module": "Becoming.Return",
       "spine": true,
       "layer": "core",
-      "theorems": 26,
+      "theorems": 29,
       "declarations": [
         {
           "kind": "def",
@@ -2101,6 +2179,10 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.Web.renewedWithin_zero"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.Web.RenewedWithin.mono"
         },
         {
@@ -2125,6 +2207,10 @@
         },
         {
           "kind": "theorem",
+          "name": "Becoming.Web.undermining_for_zero"
+        },
+        {
+          "kind": "theorem",
           "name": "Becoming.Web.RenewingInWithin.mono"
         },
         {
@@ -2138,6 +2224,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.Web.RenewingInWithin.not_consuming"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LateMet.web"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LateMet.within_one_not_renewing"
         },
         {
           "kind": "theorem",
@@ -2219,16 +2313,20 @@
         "Becoming.Web.RenewingInWithin": [],
         "Becoming.Web.UnderminingFor": [],
         "Becoming.Web.renewed_within_one": [],
+        "Becoming.Web.renewedWithin_zero": [],
         "Becoming.Web.RenewedWithin.mono": [],
         "Becoming.Web.RenewedWithin.returns": [],
         "Becoming.Web.Returns.not_consumed": [],
         "Becoming.Web.consumed_iff": [],
         "Becoming.Web.RenewingIn.within_one": [],
         "Becoming.Web.undermining_for_one": [],
+        "Becoming.Web.undermining_for_zero": [],
         "Becoming.Web.RenewingInWithin.mono": [],
         "Becoming.Web.UnderminingFor.anti": [],
         "Becoming.Web.RenewingInWithin.not_undermining_for": [],
         "Becoming.Web.RenewingInWithin.not_consuming": [],
+        "Becoming.LateMet.web": [],
+        "Becoming.LateMet.within_one_not_renewing": [],
         "Becoming.alternating_turns": [],
         "Becoming.seasonal_renewed_within_two": [],
         "Becoming.Slowing.phase": [],
@@ -2254,7 +2352,7 @@
       "module": "Becoming.Horizon",
       "spine": true,
       "layer": "core",
-      "theorems": 2,
+      "theorems": 14,
       "declarations": [
         {
           "kind": "def",
@@ -2271,13 +2369,88 @@
         {
           "kind": "theorem",
           "name": "Becoming.Commons.finite_reading_credits_consumption"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Commons.whole_run_credits_overdraw"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Commons.amount_reading"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Commons.cycle_reading_not_finite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.le_of_add_le_add_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.add_right_cancel"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Feedback.law"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Feedback.stopping"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Feedback.continuing"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.step_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.step_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.descending"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.at_horizon"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.after_horizon"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.supported"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Feedback.prefix_does_not_decide"
         }
       ],
       "axiom_dependencies": {
         "Becoming.Run.cons": [],
         "Becoming.Run.AgreeUpTo": [],
         "Becoming.Commons.prefix_does_not_decide": [],
-        "Becoming.Commons.finite_reading_credits_consumption": []
+        "Becoming.Commons.finite_reading_credits_consumption": [],
+        "Becoming.Commons.whole_run_credits_overdraw": [],
+        "Becoming.Commons.amount_reading": [],
+        "Becoming.Commons.cycle_reading_not_finite": [],
+        "Becoming.le_of_add_le_add_right": [],
+        "Becoming.add_right_cancel": [],
+        "Becoming.Feedback.law": [],
+        "Becoming.Feedback.stopping": [],
+        "Becoming.Feedback.continuing": [],
+        "Becoming.Feedback.step_two": [],
+        "Becoming.Feedback.step_one": [],
+        "Becoming.Feedback.descending": [],
+        "Becoming.Feedback.at_horizon": [],
+        "Becoming.Feedback.after_horizon": [],
+        "Becoming.Feedback.supported": [],
+        "Becoming.Feedback.prefix_does_not_decide": []
       },
       "kernel_checked": true
     },
@@ -2285,7 +2458,7 @@
       "module": "Becoming.Joint",
       "spine": true,
       "layer": "core",
-      "theorems": 12,
+      "theorems": 16,
       "declarations": [
         {
           "kind": "def",
@@ -2297,7 +2470,7 @@
         },
         {
           "kind": "def",
-          "name": "Becoming.Dependence.BreaksFrom"
+          "name": "Becoming.Dependence.BreaksBy"
         },
         {
           "kind": "def",
@@ -2322,6 +2495,38 @@
         {
           "kind": "theorem",
           "name": "Becoming.Dependence.Overdetermined.no_difference"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Shock.Formation"
+        },
+        {
+          "kind": "structure",
+          "name": "Becoming.Shock.State"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Shock.Move"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Shock.process"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Shock.withhold"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Shock.dependence"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Shock.start"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Shock.move_decides"
         },
         {
           "kind": "inductive",
@@ -2400,6 +2605,18 @@
           "name": "Becoming.Pool.difference_belongs_to_the_joint"
         },
         {
+          "kind": "def",
+          "name": "Becoming.Pool.mixed"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Pool.mixedRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Pool.within_share_undermines"
+        },
+        {
           "kind": "theorem",
           "name": "Becoming.sub_self_add"
         },
@@ -2434,18 +2651,34 @@
         {
           "kind": "theorem",
           "name": "Becoming.Commons.depletion_is_joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Commons.no_finite_segment_makes_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Commons.breaking_event_makes_step_difference"
         }
       ],
       "axiom_dependencies": {
         "Becoming.Dependence.Keeps": [],
         "Becoming.Dependence.Breaks": [],
-        "Becoming.Dependence.BreaksFrom": [],
+        "Becoming.Dependence.BreaksBy": [],
         "Becoming.Dependence.MakesDifference": [],
         "Becoming.Dependence.Overdetermined": [],
         "Becoming.Dependence.keeps_not_breaks": [],
         "Becoming.Dependence.along_kept": [],
         "Becoming.Dependence.along_broken": [],
         "Becoming.Dependence.Overdetermined.no_difference": [],
+        "Becoming.Shock.Formation": [],
+        "Becoming.Shock.State": [],
+        "Becoming.Shock.Move": [],
+        "Becoming.Shock.process": [],
+        "Becoming.Shock.withhold": [],
+        "Becoming.Shock.dependence": [],
+        "Becoming.Shock.start": [],
+        "Becoming.Shock.move_decides": [],
         "Becoming.Pool.Formation": [],
         "Becoming.Pool.Draw": [],
         "Becoming.Pool.Draw.total": [],
@@ -2465,6 +2698,9 @@
         "Becoming.Pool.breaks_from_one": [],
         "Becoming.Pool.steady_consumed": [],
         "Becoming.Pool.difference_belongs_to_the_joint": [],
+        "Becoming.Pool.mixed": [],
+        "Becoming.Pool.mixedRun": [],
+        "Becoming.Pool.within_share_undermines": [],
         "Becoming.sub_self_add": [],
         "Becoming.Commons.levels": [],
         "Becoming.Commons.drawing": [],
@@ -2473,7 +2709,9 @@
         "Becoming.Commons.overdraw_consumes": [],
         "Becoming.Commons.depleting": [],
         "Becoming.Commons.withheld": [],
-        "Becoming.Commons.depletion_is_joint": []
+        "Becoming.Commons.depletion_is_joint": [],
+        "Becoming.Commons.no_finite_segment_makes_difference": [],
+        "Becoming.Commons.breaking_event_makes_step_difference": []
       },
       "kernel_checked": true
     },
@@ -2481,7 +2719,7 @@
       "module": "Becoming.Substitution",
       "spine": true,
       "layer": "core",
-      "theorems": 4,
+      "theorems": 6,
       "declarations": [
         {
           "kind": "theorem",
@@ -2526,6 +2764,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.Substitution.extracting_persists_consuming"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Substitution.extracting_low"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Substitution.stepwise_credits_substitution"
         }
       ],
       "axiom_dependencies": {
@@ -2539,7 +2785,9 @@
         "Becoming.Substitution.web_dependent": [],
         "Becoming.Substitution.persists_consuming": [],
         "Becoming.Substitution.extracting": [],
-        "Becoming.Substitution.extracting_persists_consuming": []
+        "Becoming.Substitution.extracting_persists_consuming": [],
+        "Becoming.Substitution.extracting_low": [],
+        "Becoming.Substitution.stepwise_credits_substitution": []
       },
       "kernel_checked": true
     },
@@ -2923,7 +3171,7 @@
       "module": "Becoming.Ranking",
       "spine": true,
       "layer": "core",
-      "theorems": 15,
+      "theorems": 19,
       "declarations": [
         {
           "kind": "def",
@@ -3032,6 +3280,34 @@
         {
           "kind": "theorem",
           "name": "Becoming.Ranking.stepwise_contest"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.Ranking.Restraint"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Ranking.restraint"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Ranking.stops_credited"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Ranking.restraint_ranks"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Ranking.stoppingMalignant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Ranking.stoppingMalignant_level"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Ranking.malignant_restraint"
         }
       ],
       "axiom_dependencies": {
@@ -3061,7 +3337,14 @@
         "Becoming.Ranking.Contest": [],
         "Becoming.Ranking.contest": [],
         "Becoming.Ranking.sharing_credited": [],
-        "Becoming.Ranking.stepwise_contest": []
+        "Becoming.Ranking.stepwise_contest": [],
+        "Becoming.Ranking.Restraint": [],
+        "Becoming.Ranking.restraint": [],
+        "Becoming.Ranking.stops_credited": [],
+        "Becoming.Ranking.restraint_ranks": [],
+        "Becoming.Ranking.stoppingMalignant": [],
+        "Becoming.Ranking.stoppingMalignant_level": [],
+        "Becoming.Ranking.malignant_restraint": []
       },
       "kernel_checked": true
     },
@@ -5808,40 +6091,40 @@
     "Becoming.Bridge.lean": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3",
     "Becoming.Bridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Correspondence.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Correspondence.lean": "ef8e15db499319ddb03203321cbadd00ebf22db9be33e2f8b16afb425aa92408",
+    "Becoming.Correspondence.lean": "5931ff6a3d65c72a7a3c3712b92763546015bff38432c955e4c5056ece5790d6",
     "Becoming.Correspondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Dependence.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Dependence.lean": "b9a5e970aad285742efca5fb8759b9c9a9b797c67d2fec940de71ebacf56076c",
+    "Becoming.Dependence.lean": "bbca7ef1c9d8eaef00f2916a7d6baa644d590851d492951d47d7db90972e11e7",
     "Becoming.Dependence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Frame.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Frame.lean": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "Becoming.Frame.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Horizon.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Horizon.lean": "3ee4f914cec188196de0d1c31ec45b6499371b899c0fa9d9c9e0155063a4b0e9",
+    "Becoming.Horizon.lean": "a7d7ad84853c9a16196eb1053675c6d24f36f5bc50e9037d1f9c76118e161789",
     "Becoming.Horizon.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Inquiry.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Inquiry.lean": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
     "Becoming.Inquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Joint.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Joint.lean": "8513d13f862834dcfb521779c50a5b05d68631f4ba969e9f52ea95fb2124f902",
+    "Becoming.Joint.lean": "c943547f421dbc2cd058167110fd4eedfdfdce26ee2429c9fc452e076716a2e7",
     "Becoming.Joint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Metaethics.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Metaethics.lean": "003cf6908a575986c00180629179a6038d1a50e5653d3fccf8d0cf4ad03947ed",
+    "Becoming.Metaethics.lean": "8d5280463510b22ab466e20465b0c6a4d83308fd80c2c85eb001a4253873dca9",
     "Becoming.Metaethics.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Ranking.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Ranking.lean": "49bc1aaed3e4254baa7ffbefb3e9b154edb7ab4be5e0783729eb39689c3ed51e",
+    "Becoming.Ranking.lean": "3bbb2a4f4ed9dabec95fec608797894b87c7d9c2376a7a3ea7cc8e3b4ac69f1f",
     "Becoming.Ranking.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Renewal.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Renewal.lean": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
     "Becoming.Renewal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Return.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Return.lean": "b036d18aa49dfeebcc0bd51a4808b2835239c2c00805327ce7122f4c9c2dae43",
+    "Becoming.Return.lean": "50a6b41474faa01059160da9ed7169b30bc682e790e3b593449e7e526aef8062",
     "Becoming.Return.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Becoming.Substitution.PreludeOnly.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.Substitution.lean": "2355d189eb42309952df495b2bfeefda15b6f5a134e9a48caa828c5dcedf21fe",
+    "Becoming.Substitution.lean": "9e97983f799cf21649e6741f2fc6cb6a0d0eebcfe85f3b8503f7e6a933b13e0e",
     "Becoming.Substitution.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "25830d5e12d653524de16dec99aa338d702e353e7a109ed672d69f8bf9d34aab",
+    "Becoming.lean": "38a3c037c86ee5222136a9231f8a5b64447dc9c0dd2da308f41f6d68fdc53904",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingAxiomAudit.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingAxiomAudit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -5853,48 +6136,48 @@
     "BecomingCorrespondenceAxiomAudit.log": "2cb20359d1672f9740ec2f743622987e33c81ec51b29f24f5543499a5f8675a5",
     "BecomingCorrespondenceSignatures.lean": "2668fd9500ed7102eee66e44a95f5a2d90f22ca81f924178edd64ad09415277b",
     "BecomingCorrespondenceSignatures.log": "e7d92544d6dd066ac780cf23f99afc398001cfd86712ca1f256af0adda57a023",
-    "BecomingDependenceAxiomAudit.lean": "00e61f2b61355930d55995f7134dbf851d0a9ad2d0de464047899431362255fa",
-    "BecomingDependenceAxiomAudit.log": "777f46290190f984e0e9849972f59cb7dd799b142e1896365c9262f1a469d7a7",
-    "BecomingDependenceSignatures.lean": "c04d7a26142c18271421ef74b4900b1bd51085db60382b7f67468e837cd7671c",
-    "BecomingDependenceSignatures.log": "cdb50819848528ee4605f101d11d11dd9a9edea007431b8b472dfb5d4021eb02",
+    "BecomingDependenceAxiomAudit.lean": "78f6c5c00f5f7a0c9eb95ae5359e4ca79160e6e273e328fb3359eca1b4cb248e",
+    "BecomingDependenceAxiomAudit.log": "214443d7eab04e5ce3a81902de6a4e188b9efd7114a0baaee9a3d44b135401de",
+    "BecomingDependenceSignatures.lean": "6916a826ae527fabe153ffc07fbca6628caa6daeba4b9ae1ce4dc76268c82237",
+    "BecomingDependenceSignatures.log": "3dd3b421c8ef63324d684c3e4093e5bfba9bd9f67acec93950581a5bd9d56bd0",
     "BecomingFrameAxiomAudit.lean": "91570657c287803a8d3c0c69fbabf1e3301c5239e1b910295cb25f40094b3c62",
     "BecomingFrameAxiomAudit.log": "51a187a2eec317dbf68771b0f3a146d3a9ab289cd96509f225b8c799d54bde10",
     "BecomingFrameSignatures.lean": "58ddc7dd3d492b5a125c7de8674a5bb47c2813c5a518cdf4547b7dbb961bba45",
     "BecomingFrameSignatures.log": "ca0df6ccab583f57493f2aafd3136b7b46573ae4fbe1a6e01ec5b705b4a9dcca",
-    "BecomingHorizonAxiomAudit.lean": "5069f0e559a864b0c9457a44e0decaee4c5523fc034d54e2ede852d5e1d182fc",
-    "BecomingHorizonAxiomAudit.log": "97911a1e167db7ca5e0c2bb5de95cf2cc5fb2f01a5bff3f5dfa5945b20e19915",
-    "BecomingHorizonSignatures.lean": "3b453b7ca8355b8bc2100295009220c2863f569cc5dbc7a462aaa6d852f0c9d9",
-    "BecomingHorizonSignatures.log": "c02fa37d3b2506b9b6a7640f5f11ccac8130062c8714114a21d327cf6cd47341",
+    "BecomingHorizonAxiomAudit.lean": "e8b64516479872f211b5c41e3a17200a63cf8aaf9601f6262f57eb0f48295ca2",
+    "BecomingHorizonAxiomAudit.log": "4828bd3dd5d76bfc90d225391b5750ce243dfcd542ac5b25950d0ba2e4577de3",
+    "BecomingHorizonSignatures.lean": "0e0c55ca6e5cf53324144f8f33710c5e562780a5c7cfc4e690be79c4fa8da92b",
+    "BecomingHorizonSignatures.log": "e21f8399302f3a8c0d4811c68f81cb6c794cf429330d398ec1a2c556939762fe",
     "BecomingInquiryAxiomAudit.lean": "6096fa0a615c8db18b6ace21bb51af6f425f220c0dd572af34cbf883071a8a8f",
     "BecomingInquiryAxiomAudit.log": "d97a1bd9caaae66357239c4bbf71ece0a5da28aaf0fd91e41d9ca565da460191",
     "BecomingInquirySignatures.lean": "59fa2f71d5a49b68933387d6d9e925e1b26d35867f260205603c23856aa94820",
     "BecomingInquirySignatures.log": "449af080a872618d4f571d05e21a6c6f1e8b40bb6541b7433a8bf368818f394b",
-    "BecomingJointAxiomAudit.lean": "2c341ef5f72d029b885232a8784c58af7b288495f4e85f48e23bddb7cd524150",
-    "BecomingJointAxiomAudit.log": "328ba81ab7ef114a10cac8117fa184be4171601e46ba5214a45d87564f47f186",
-    "BecomingJointSignatures.lean": "32d6babd1562049872523d36fe5902b2e8a6f2c40643beb7564ea322ee4d64d4",
-    "BecomingJointSignatures.log": "4d0e3c430015db4afb8c4a592c0c0ac1b5127302c8d05e3a8fce62c2152821e4",
+    "BecomingJointAxiomAudit.lean": "4f35a2e97aa84e4563493db856391f54b0222846cefbdcd6bf8a3b5e707d6ec6",
+    "BecomingJointAxiomAudit.log": "9987a56310cb137eb19c4a358a8099c2ce1584fdf8b9a6244d67a17d80f942e3",
+    "BecomingJointSignatures.lean": "020eb0b18f409ee121a72f62dd43b9eae91bb7868b52349c4f19d49feb50ca1b",
+    "BecomingJointSignatures.log": "5bb9045dfe732d8b7c79b903a06a6a680698e7448bfac6ecb28281dd3be7997e",
     "BecomingMetaethicsAxiomAudit.lean": "9e696dda96bce998508c06a11004ea87c412db5c1189107e6d19d5056e2377ef",
     "BecomingMetaethicsAxiomAudit.log": "6832a552faf4fc6fcc3c80d410a34edb1ec3d6fda471ff5f540843af580d7eb8",
     "BecomingMetaethicsSignatures.lean": "a54f3a826a9bf9b80595c64404a00991385faf64bebc15669e1e5910c15d25d4",
     "BecomingMetaethicsSignatures.log": "c7ffc457702c496b4bb2ef60bcee47c6be58236127fc4053a59dd8d2ebeec5f2",
-    "BecomingRankingAxiomAudit.lean": "6d6ca2432d2e632c80cd9df90671d62d549dd3902d44a2b2d5c89b42bcc8832c",
-    "BecomingRankingAxiomAudit.log": "45833b2ea2fb199b54b3f2a01a858e7b85a11d03c189711d2781d59f6425c3e4",
-    "BecomingRankingSignatures.lean": "0617cf797fe2e3197a975202789a829fc2de85f9f352ad46daa96f8f51f7ae87",
-    "BecomingRankingSignatures.log": "4f1fe528e0d844e0adb754d1bd9eaf58d8ccc59e0ac40265a7adbc38a8082aa0",
+    "BecomingRankingAxiomAudit.lean": "064eea10cb5538fe8391ba388ff75d11f18a7f133f0bbda5c75af1df3f61d003",
+    "BecomingRankingAxiomAudit.log": "55fcf3e84d8ff09f0da94b45ac89bb053a74d24ddf10e6dcd521b43774c623f1",
+    "BecomingRankingSignatures.lean": "1f800f78c9f6648b9cd22b4e7a2ab3300ef52fe16e811123f8da54866d7a1860",
+    "BecomingRankingSignatures.log": "61ffde538d82d2e912bc76a4a5cd59735d7cd13a0bdc8d9d66a479d49788e1a3",
     "BecomingRenewalAxiomAudit.lean": "52764db9217d790e70b55b3d5fd377335c5ce7703f7dc3717c42672de590d409",
     "BecomingRenewalAxiomAudit.log": "cbecdddb17e712cf9b302e728921a645b7fa8200b49201efde42aabe031bd552",
     "BecomingRenewalSignatures.lean": "0fd576a7083984beb1d919037e3dbfcaca93b4d90e9bf29e501a19e9eaffbdd9",
     "BecomingRenewalSignatures.log": "2bfdb66816484131ef8123e75b7277e4b40731afecafb8c93ea2d160e242bdcd",
-    "BecomingReturnAxiomAudit.lean": "b8acb766822a7d1bcccfabe3becb8936bcf31fe8177c30eb59a4eca9845bc172",
-    "BecomingReturnAxiomAudit.log": "66a64d7ddd1310bfff2d1db571a82c20af509dd79901bff19a423c64cd0a9f26",
-    "BecomingReturnSignatures.lean": "ea71656e43d3e7210ffdab9a682e9a60caf71850c841e968800f7a5ad1cd370f",
-    "BecomingReturnSignatures.log": "5b027d79e9e5727f85e43a91c549643ad1ee52d9bdcf8f19fd613ebabc531a5d",
+    "BecomingReturnAxiomAudit.lean": "0b5e5b7f28470e9d53aa8e1a8bfcd22753b03aadd1d1447fc9fa51177617f4d0",
+    "BecomingReturnAxiomAudit.log": "1bdbff7546b47b099bf8ee3ffbfcdc16b7b616160287fa0785c19ea1488c3cb6",
+    "BecomingReturnSignatures.lean": "f259c5bea9a407ba08c41809466be43ad069327f61f6f08d8fee936de558e1f8",
+    "BecomingReturnSignatures.log": "8592d5c9a86947208d849d05ca2c5a222148b1092e9f12399bda82bbc1185b03",
     "BecomingSignatures.lean": "2a7bf199bf7a79a47a4f3057083c0b43f6c30c82bbab52299d38d436c6077bcb",
     "BecomingSignatures.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "BecomingSubstitutionAxiomAudit.lean": "16299d7338633527034218c0a8d69fe175226ddf836e4326c16f98b73b9177f5",
-    "BecomingSubstitutionAxiomAudit.log": "e1ca8229ae029de278d2c2e4dbef82e81265e39dcd8f631210a6ce4848e8a647",
-    "BecomingSubstitutionSignatures.lean": "21582454519c208f6b1e00b1b6379d61d17665df06d30de60bb98d93282843fa",
-    "BecomingSubstitutionSignatures.log": "81ee6f105a590801acc53c8332f328df8a82c8564130526dbe3e0b908f9813a8",
+    "BecomingSubstitutionAxiomAudit.lean": "b2363c9e9bb2bc7e24a5950d06b4cc807a2f26e34065f7c637f7050b0a9df939",
+    "BecomingSubstitutionAxiomAudit.log": "ff80fe7878cfa892de7dab2a9294507e2277b56caaada94849b6785af932be2e",
+    "BecomingSubstitutionSignatures.lean": "79d8dd60b18e6a95f148a188d88bc019782cccf139f9629ed180330bbc19eb93",
+    "BecomingSubstitutionSignatures.log": "a5f40e773bf5b1a454616e9d2f5ed3419105b918899f70154a73633e9ce2164d",
     "Controls.lean": "f8d3c2d1bf744d368e3389c5365e94e939c86a6ef53240a7333da4f4ada15afa",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CorrectionInfrastructure.lean": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
@@ -5961,7 +6244,7 @@
     "WholeGroundCoverageAxiomAudit.lean": "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80",
     "WholeGroundCoverageAxiomAudit.log": "a6bc2bb42c8090e42ba9558b7cf68d8d10a4d635df2042f8ff00d3b43b1e3ba1",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
-    "check_becoming.py": "e51023d7710df201ba6d58156f92f7700e8ffd80471f47826e9f7b82b2fc7a9f",
+    "check_becoming.py": "886989f0fb3c501ad3c6f059cdb8c05aebe4aa283a42412beeac7d4d8666dbbc",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

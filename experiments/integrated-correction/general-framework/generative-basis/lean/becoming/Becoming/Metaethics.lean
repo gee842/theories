@@ -42,8 +42,9 @@ The premise card, every item named and visible:
   dependence on it fails. `Becoming.Correspondence` states one discipline: a condition
   relates two events only when one draws on it and the other depends on it at a
   positive level, so that idle conditions connect nothing and connection through a
-  condition is made by its living use. Both readings are relative to a run, while `G0`, `Comparison` and `universal_reason` take a `living`
-  fixed across configurations; joining them needs a construction not given here.
+  condition is made by its living use. Both readings are relative to a run, while
+  `G0`, `Comparison` and `universal_reason` take a `living` fixed across
+  configurations; joining them needs a construction not given here.
 
 Results:
 * `significant_iff`: on a connected whole with some living content, G0 for every
@@ -67,14 +68,15 @@ Results:
   transmission runs along co-participation and does not use the consumption.
 * Read stepwise, with dependences that may change (`Web.valuation`), an event is
   living when it is active and not undermining: it does not draw on a condition at a
-  step after which a dependence on it, met then or before, is unmet. Being within
-  renewal at the step is not used as `living`, since it withholds the event of a
-  formation whose own dependence breaks (`Commons.broken_formation`); not breaking is
-  not used either, since it credits drawing that keeps a lost condition from returning
-  (`Commons.drawing_after_loss`). The same results hold: a common condition discharges
-  connection, and an event drawing at a step that breaks a dependence is related to the
-  broken formation, so under N_rel valuing it reaches that formation's living events
-  (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
+  step after which a dependence on it, met while it held, is unmet. This is the working
+  stepwise candidate, pending Ren's choice of the reading. Being within renewal at the
+  step is not used as `living`, since it withholds the event of a formation whose own
+  dependence breaks (`Commons.broken_formation`); not breaking is not used either, since
+  it credits drawing after a loss, which in the commons keeps the condition from
+  returning (`Commons.drawing_after_loss`). The same results hold: a common condition
+  discharges connection, and an event drawing at a step that breaks a dependence is
+  related to the broken formation, so under N_rel valuing it reaches that formation's
+  living events (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
   `related`, both credit the broken formation's own event, and they credit different
   events in both directions (`Commons.readings_differ`).
 * Read through relations (`Web.relations`), a claim is a formation's relation to a
@@ -394,7 +396,7 @@ end Separate
 
 /-- Formation events of a web read stepwise. An event is living when its formation is
 active and it is not undermining: it does not draw on a condition at a step after which
-a dependence on it, met then or before, is unmet. Two events are related when their
+a dependence on it, met while it held, is unmet. Two events are related when their
 formations participate in a common condition at their steps. Standpoints, their regions
 and significance remain supplied. -/
 def Web.valuation {F Cond : Type} (W : Web F Cond) (own sig : Pos → F × Nat → Prop) :
@@ -519,7 +521,8 @@ theorem one_event_two_relations (own sig : Pos → Formation × Nat → Prop)
     (web.relations own' sig').living (.drawer, .kept, 0) ∧
     ¬ (web.relations own' sig').living (.drawer, .lost, 0) :=
   have undermining : web.UnderminingOn 0 .drawer .lost :=
-    ⟨trivial, .dependent, trivial, ⟨0, Nat.le_refl 0, Nat.le_refl 1⟩, Nat.zero_lt_one⟩
+    ⟨trivial, .dependent, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
+      Nat.zero_lt_one⟩
   ⟨fun ⟨_, notUndermining⟩ => notUndermining ⟨.lost, undermining⟩,
    ⟨trivial, Or.inr trivial, fun ⟨_, _, _, _, unmet⟩ => Nat.lt_irrefl 1 unmet⟩,
    fun ⟨_, _, notUndermining⟩ => notUndermining undermining⟩
@@ -558,7 +561,8 @@ theorem Commons.readings_differ (own sig : Pos → Commons.Formation × Nat → 
      ⟨trivial, fun consuming => Commons.dip_breaks_without_consuming.1
        ((Web.static_consumingIn _ _).mpr consuming)⟩,
      fun ⟨_, notUndermining⟩ => notUndermining
-       ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.le_refl 0, Nat.le_refl 1⟩, Nat.zero_lt_one⟩,
+       ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.le_refl 0, fun _ _ _ => trivial, Nat.le_refl 1⟩,
+         Nat.zero_lt_one⟩,
      ⟨active, fun ⟨_, drawn, _⟩ => drawn⟩, ⟨active, victim⟩⟩
 
 end Reading

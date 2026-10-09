@@ -50,13 +50,18 @@ Results:
   condition it participates in, the stepwise counterpart of renewal; whole-run renewal
   credits every active step. It is *breaking* when it draws on a condition at a step
   that breaks a dependence on it, and *undermining* when it draws on a condition at a
-  step after which a dependence on it, met then or before, is unmet: the stepwise
-  counterpart of consumption. Breaking is undermining, and an event within renewal is
-  neither. A formation whose own dependence is broken is not within renewal at that
-  step, though it need not be undermining. A requirement never met makes no drawer
-  undermining.
-* After a loss, further drawing breaks nothing, yet it can keep the condition from
-  returning: it is undermining without breaking.
+  step after which a dependence on it, met while it held, is unmet: the stepwise
+  counterpart of consumption. A dependence is met while it held when, at some step
+  since which it has held, the condition met its present need (`MetSince`); a level
+  from before the dependence held does not count (`NewNeed`). Breaking is undermining,
+  and an event within renewal is neither. A formation whose own dependence is broken is
+  not within renewal at that step, though it need not be undermining. A dependence never
+  met while it held makes no drawer undermining.
+* After a loss, further drawing breaks nothing, yet it is undermining. Undermining reads
+  co-participation in a shortfall that is not restored, not what a draw does: drawing
+  that changes no level undermines too (`Pinned`), and in the commons, where renewal
+  continues below support, drawing after the loss also keeps the condition from
+  returning.
 * The stepwise and whole-run readings differ in both directions: a formation can draw
   within renewal at first and consume later, and an event can break a condition that
   is later restored, so that its formation does not consume in the run.
@@ -300,21 +305,30 @@ def BreakingOn (t : Nat) (f : F) (c : C) : Prop :=
 def BreakingAt (t : Nat) (f : F) : Prop :=
   ∃ c, W.BreakingOn t f c
 
+/-- `g`'s dependence on `c`, as it stands at `t`, was met while it held: at some step
+since which the dependence has held, the condition met its present need. -/
+def MetSince (t : Nat) (g : F) (c : C) : Prop :=
+  ∃ s, s ≤ t ∧ (∀ u, s ≤ u → u ≤ t → W.requires u g c) ∧ W.need t g c ≤ W.level s c
+
 /-- A formation's relation to a condition at `t` is undermining: it draws on the
-condition at a step after which a dependence on it, met at that step or before, is
-unmet. Other formations may take part. -/
+condition at a step after which a dependence on it, met while it held, is unmet. Other
+formations may take part. -/
 def UnderminingOn (t : Nat) (f : F) (c : C) : Prop :=
-  W.draws t f c ∧ ∃ g, W.requires t g c ∧ (∃ s, s ≤ t ∧ W.need t g c ≤ W.level s c) ∧
-    W.level (t + 1) c < W.need t g c
+  W.draws t f c ∧ ∃ g, W.requires t g c ∧ W.MetSince t g c ∧ W.level (t + 1) c < W.need t g c
 
 /-- A formation's event at `t` is undermining when one of its relations is. -/
 def UnderminingAt (t : Nat) (f : F) : Prop :=
   ∃ c, W.UnderminingOn t f c
 
+/-- A dependence holding at `t` and met there was met while it held. -/
+theorem MetSince.now {t : Nat} {g : F} {c : C} (depends : W.requires t g c)
+    (met : W.need t g c ≤ W.level t c) : W.MetSince t g c :=
+  ⟨t, Nat.le_refl t, fun _ after before => Nat.le_antisymm before after ▸ depends, met⟩
+
 /-- A breaking relation is undermining. -/
 theorem BreakingOn.undermining {t : Nat} {f : F} {c : C} :
     W.BreakingOn t f c → W.UnderminingOn t f c
-  | ⟨drawn, g, depends, met, fell⟩ => ⟨drawn, g, depends, ⟨t, Nat.le_refl t, met⟩, fell⟩
+  | ⟨drawn, g, depends, met, fell⟩ => ⟨drawn, g, depends, .now depends met, fell⟩
 
 /-- An event within renewal is not undermining, so not breaking. -/
 theorem RenewingAt.not_undermining {t : Nat} {f : F} (renewing : W.RenewingAt t f) :
@@ -373,7 +387,7 @@ theorem consumed_without_loss :
     | _, .drawer, ⟨depends, _⟩ => depends
   have consumed : web.Consumed () := ⟨.dormant, 0, trivial, fun _ _ => Nat.zero_lt_one⟩
   refine ⟨?_, unbroken, consumed, fun ⟨g, T, broken, _⟩ => unbroken T g broken,
-    ⟨0, (), trivial, consumed⟩, fun _ ⟨_, _, g, depends, ⟨_, _, met⟩, _⟩ => ?_⟩
+    ⟨0, (), trivial, consumed⟩, fun _ ⟨_, _, g, depends, ⟨_, _, _, met⟩, _⟩ => ?_⟩
   · intro _ f active _ depends
     cases f with
     | dormant => exact False.elim active
@@ -383,6 +397,62 @@ theorem consumed_without_loss :
     | drawer => exact depends
 
 end Unmet
+
+/-! ## A dependence never met while it held makes no drawer undermining -/
+
+namespace NewNeed
+
+inductive Formation where
+  | late
+  | drawer
+
+/-- The level is 2 at step 0 and 0 afterwards. `late` depends on the condition at level
+one only from step 5, and is never active; `drawer` draws on it from step 5. -/
+def web : Web Formation Unit where
+  level t _ := match t with
+    | 0 => 2
+    | _ + 1 => 0
+  active t f := match f with
+    | .late => False
+    | .drawer => 5 ≤ t
+  requires t f _ := match f with
+    | .late => 5 ≤ t
+    | .drawer => False
+  need _ _ _ := 1
+  draws t f _ := match f with
+    | .late => False
+    | .drawer => 5 ≤ t
+
+theorem level_late {t : Nat} (late : 5 ≤ t) : web.level t () = 0 :=
+  match t, late with
+  | _ + 1, _ => rfl
+
+/-- `late`'s dependence is unmet at every step at which it holds. The condition met its
+present need at step 0, before the dependence held, and that does not count: the drawer
+is undermining at no step, though the whole-run reading counts it consuming through the
+inherited `Consumed`. -/
+theorem never_met_not_undermining :
+    web.Dependent ∧ (∀ t, web.requires t .late () → web.level t () < web.need t .late ()) ∧
+    (∀ t, 5 ≤ t → (∃ s, s ≤ t ∧ web.need t .late () ≤ web.level s ()) ∧
+      ¬ web.MetSince t .late ()) ∧
+    (∀ t, ¬ web.UnderminingAt t .drawer) ∧ web.ConsumingIn .drawer := by
+  have unmet : ∀ t, web.requires t .late () → web.level t () < web.need t .late () :=
+    fun _ late => (level_late late).symm ▸ Nat.zero_lt_one
+  have never : ∀ t, ¬ web.MetSince t .late () := fun _ ⟨s, _, held, met⟩ =>
+    Nat.not_le_of_gt (unmet s (held s (Nat.le_refl s) ‹_›)) met
+  refine ⟨?_, unmet, fun t late => ⟨⟨0, Nat.zero_le t, Nat.le_succ 1⟩, never t⟩,
+    fun t ⟨_, _, g, depends, met, _⟩ => ?_,
+    ⟨5, (), Nat.le_refl 5, .late, 5, Nat.le_refl 5, fun t later =>
+      (level_late (Nat.le_of_lt later)).symm ▸ Nat.zero_lt_one⟩⟩
+  · intro _ f active _ depends
+    cases f with
+    | late => exact False.elim active
+    | drawer => exact False.elim depends
+  · cases g with
+    | late => exact never t met
+    | drawer => exact depends
+
+end NewNeed
 
 /-! ## The outcomes are distinct possibilities -/
 
@@ -596,14 +666,17 @@ def pausingState : Nat → Nat
   | 1 => 0
   | t + 2 => t + 1
 
-/-- Drawing beyond renewal once, then nothing. -/
+/-- Drawing beyond renewal once, then taking nothing (action 0). The commons' `draws`
+is blind to amount, so the focal formation formally draws at every step. -/
 def pausing : Run process :=
   ⟨pausingState, fun | 0 => 2 | _ + 1 => 0, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
 
-/-- After the loss, further drawing breaks nothing, yet it keeps the condition from
-returning. In the winning run every later event of the focal formation draws on a
-condition that fails a need it once met, without breaking anything; in the run that
-takes the same first step and then draws nothing, the condition returns. -/
+/-- After the loss, further drawing breaks nothing, yet it undermines. In the winning
+run every later event of the focal formation draws on a condition that fails a need it
+once met, without breaking anything; in the run that takes the same first step and then
+takes nothing, the condition returns, since in the commons renewal continues below
+support. Undermining reads drawing on a condition whose once-met dependence is unmet; it
+does not test whether the drawing keeps the condition from returning (`Pinned`). -/
 theorem drawing_after_loss :
     (∀ t, 0 < t → ¬ (conditions.dependence.along winning).BreakingAt t .focal ∧
       (conditions.dependence.along winning).UnderminingAt t .focal) ∧
@@ -612,13 +685,80 @@ theorem drawing_after_loss :
   ⟨fun
     | _ + 1, _ => ⟨fun ⟨_, _, g, depends, met, _⟩ => match g, depends with
         | .sustaining, _ => Nat.not_succ_le_zero 0 met,
-      ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.zero_le _, Nat.le_refl 1⟩, Nat.zero_lt_one⟩⟩,
+      ⟨(), trivial, .sustaining, trivial, ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_refl 1⟩,
+        Nat.zero_lt_one⟩⟩,
    rfl, rfl, fun ⟨g, T, depends, below⟩ => match g, depends with
     | .sustaining, _ =>
       Nat.not_succ_le_zero T (Nat.le_of_succ_le_succ (below (T + 2)
         (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _))))⟩
 
 end Commons
+
+/-! ## Undermining without effect -/
+
+namespace Pinned
+
+inductive Formation where
+  | old
+  | drawer
+
+/-- The level of the condition and the amount the drawer takes at this step. -/
+structure State where
+  level : Nat
+  taking : Nat
+
+/-- An exogenous collapse: whatever is taken, the level is 0 after every step. The action
+sets the next amount taken. -/
+def process : Process State Nat :=
+  ⟨fun _ a t => t = ⟨0, a⟩⟩
+
+/-- `old` depends on the condition at level one and is active while supported; `drawer`
+draws on it when it takes a positive amount. -/
+def dependence : Dependence State Formation Unit where
+  level s _ := s.level
+  active s f := match f with
+    | .old => 1 ≤ s.level
+    | .drawer => True
+  requires _ f _ := match f with
+    | .old => True
+    | .drawer => False
+  need _ _ _ := 1
+  draws s f _ := match f with
+    | .old => False
+    | .drawer => 0 < s.taking
+
+def takingState : Nat → State
+  | 0 => ⟨2, 0⟩
+  | _ + 1 => ⟨0, 1⟩
+
+def restingState : Nat → State
+  | 0 => ⟨2, 0⟩
+  | _ + 1 => ⟨0, 0⟩
+
+/-- The drawer takes one unit at every step from step 1. -/
+def taking : Run process :=
+  ⟨takingState, fun _ => 1, fun | 0 => rfl | _ + 1 => rfl⟩
+
+/-- The drawer takes nothing. -/
+def resting : Run process :=
+  ⟨restingState, fun _ => 0, fun | 0 => rfl | _ + 1 => rfl⟩
+
+/-- Undermining reads co-participation in a shortfall that is not restored, not what a
+draw does. The two runs have the same level at every step, so the drawer's taking
+changes no level; yet in the run where it takes, each of its events from step 1 is
+undermining, and the whole-run reading counts it consuming. -/
+theorem undermining_without_effect :
+    (∀ t, (dependence.along taking).level t () = (dependence.along resting).level t ()) ∧
+    (∀ t, 1 ≤ t → (dependence.along taking).UnderminingAt t .drawer) ∧
+    (dependence.along taking).ConsumingIn .drawer ∧
+    ∀ t, ¬ (dependence.along resting).draws t .drawer () :=
+  ⟨fun | 0 => rfl | _ + 1 => rfl,
+   fun | _ + 1, _ => ⟨(), Nat.zero_lt_one, .old, trivial,
+          ⟨0, Nat.zero_le _, fun _ _ _ => trivial, Nat.le_succ 1⟩, Nat.zero_lt_one⟩,
+   ⟨1, (), Nat.zero_lt_one, .old, 0, trivial, fun | _ + 1, _ => Nat.zero_lt_one⟩,
+   fun | 0 => Nat.lt_irrefl 0 | _ + 1 => Nat.lt_irrefl 0⟩
+
+end Pinned
 
 namespace Dip
 

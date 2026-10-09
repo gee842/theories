@@ -1,0 +1,17 @@
+import Becoming.Joint
+#check @Becoming.Dependence.keeps_not_breaks
+#check @Becoming.Dependence.along_kept
+#check @Becoming.Dependence.along_broken
+#check @Becoming.Dependence.Overdetermined.no_difference
+#check @Becoming.Shock.move_decides
+#check @Becoming.Pool.breaks_from_one
+#check @Becoming.Pool.steady_consumed
+#check @Becoming.Pool.difference_belongs_to_the_joint
+#check @Becoming.Pool.within_share_undermines
+#check @Becoming.sub_self_add
+#check @Becoming.Commons.overdraw_lowers
+#check @Becoming.Commons.drains
+#check @Becoming.Commons.overdraw_consumes
+#check @Becoming.Commons.depletion_is_joint
+#check @Becoming.Commons.no_finite_segment_makes_difference
+#check @Becoming.Commons.breaking_event_makes_step_difference

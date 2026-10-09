@@ -114,6 +114,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## becoming-finite-horizon ← relational-renewal-classification
+
+`formal-reuse` — 有反馈的视界结果在该结果的支持门控定律中陈述，消耗一方由 overdraw_consuming 给出。 / The horizon result with feedback is stated in that result's support-gated law, the consuming side given by overdraw_consuming.
+
+**Producer output / 上游输出:** 支持门控定律及其 overdraw_consuming。 / The support-gated law and its overdraw_consuming.
+
+**Consumer input / 下游输入:** 对每个视界，同一起点、前缀汲取相同而分类相反的两个汲取安排。 / For every horizon, two draw schedules from one start with the same prefix and opposite classes.
+
+**Retained conditions / 保留条件:** 维持者所需为 1，焦点形成所需为 0，每步更新一个，没有贡献。 / Sustaining need 1, focal need 0, one unit renewed per step, no contribution.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)
+
 ## becoming-renewal-reading ← relational-renewal-classification
 
 `formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
