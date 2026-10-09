@@ -34,8 +34,8 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
-        "Becoming.Dissipation", "Becoming.Roles", "Becoming.Metaethics", "Becoming.Ranking",
-        "Becoming.Correspondence", "Becoming"]
+        "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles", "Becoming.Metaethics",
+        "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -165,6 +165,13 @@ SCOPE = (
     "census makes formations arise at arbitrarily late steps, while with new formations budding "
     "from one already there it forces no arising; a lineage named beside its members is active at "
     "every step while they arise without end. "
+    "Wholes: a formation is the whole of some parts when it is active exactly while some part is; "
+    "a whole arises only as some part arises; a whole active at every step from some step on, made "
+    "of parts none active at two steps d apart, has a part arising within every d consecutive "
+    "steps, a bound attained by members working in shifts, and made of parts each of whose "
+    "activity ends, with its active parts listed, has parts arising at arbitrarily late steps; "
+    "with a part that never ends, or infinitely many parts active at once, it persists while "
+    "nothing arises, and parts arising without end may leave the whole inactive between them. "
     "Dissipation: a family is closed across a step when no formation taking part exchanges with "
     "a condition outside it, and is dissipated on when every formation taking part gives it no "
     "more than it takes from it and less when it takes; in a balanced flow a family dissipated on "

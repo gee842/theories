@@ -1150,7 +1150,7 @@ Integration: I1–I12 全部处理；审查列出的会改变判断的结果中�
 
 *反驳 4：`Steady` 削弱了 P10 的流的形式。* 它澄清了内容：补充复现的需要来自复现的取用，无论取用来自生成还是维持。生成与维持之分在严格性上（`Tide.renewal_without_arising`、`Bloom.not_more`）。这与“不断创造更多生”并不冲突：更多的取用需要没有最终界的补充（§14）。
 
-*反驳 5：`Layered` 回避了谱系的读法。* 它表明二选一出自表示：一个命名层次只能表示谱系或成员。把部分与整体的关系纳入表示（例如形成之间的构成关系），是开放的结果；在此之前，把“生生不息”读到哪个层次属于 Ren。
+*反驳 5：`Layered` 回避了谱系的读法。* 它表明二选一出自表示：一个命名层次只能表示谱系或成员。把部分与整体的关系纳入表示（例如形成之间的构成关系），是开放的结果；在此之前，把“生生不息”读到哪个层次属于 Ren。（P16 补充：§21 把部分与整体的关系纳入表示；读到哪个层次仍属于 Ren。）
 
 **边界。** 不改变读法选择的地位；不推出责任、义务或任何排序；新名称是建议，`Depletes` 的名称留给 Ren；探针与新见证都是最小见证；延续关系之下只陈述了更多迫使的生起，形成的类、任期与侵蚀没有陈述。本节的更正尚未再经独立审查。
 
@@ -1215,6 +1215,65 @@ Integration: 回答第五次审查 I3 与 §4 第 2 项；回答 §17 的边界�
 *反驳 5：体现太强，种子、孢子与休眠的生命在活动之外仍作为条件而在。* 对。`Embodied` 要求活动与水平同步；休眠的种子水平为正而不活跃，它的“生起”（萌发）不是水平的上升，不受这里的约束。活动与水平不同步时生成承担什么，是下一步。
 
 **边界。** 不含伦理谓词；只约束体现的关系项的生起；`Embodied` 是表示前提，遗骸、种子库与不活跃的条件不体现；耗散是物理前提，单位可公度；“有限”指有限的关系项家族；见证都是最小见证。本节尚未经独立审查。
+
+## 21. 整体与部分：整体的持续就是部分的生成（P16）
+
+2026-10-09。按同一指示继续。第五次独立审查（I10）指出，谱系与成员是同一展开的两个层次，部分与整体的关系是单一命名层次所省略的关系；§19 把它记为 `Layered`，审查 §4 第 7 项写道，一个含形成之间部分与整体关系的表示，会使它成为定理。本节给出这一表示，并证明它承担什么。成果记录：[whole-persists-through-generation](../../../../theories/becoming/results/records/whole-persists-through-generation.md)。
+
+```text
+Result(s): 复用 unceasing-generation-needs-renewal（Arises、Unceasing）、identity-across-steps（odd、Layered）；
+           新增 whole-persists-through-generation（L3 Becoming.Wholes）
+Delta: 整体（Whole）：恰在某个部分活跃时活跃；列出（Listed）、终结（Ends）、短暂（Brief）；
+       整体只经由某个部分的生起而生起（Whole.arises_part、parts_unceasing）；
+       从某步起每步活跃的整体，部分从不在相隔 d 步的两步都活跃时，每 d 个连续步内有部分生起（Whole.arises_within）；
+       部分的活动都终结且活跃的部分可列出时，部分在任意晚的步生起（Whole.needs_arising）；
+       Immortal、Countless 表明前提必要，Generations 表明前提相容，Shifts 表明界 d 可达，Gaps 表明逆命题不成立；
+       Layered 的谱系是其成员的整体（Layered.composed）
+Supplied premises / correspondence: Whole 是表示前提，只由活动关联部分；Brief，或 Ends 与 Listed，是对部分不长久的陈述；
+       跨步的同一由命名给出
+Evidence: Becoming.Wholes 的 26 项定理；合并检查器回执（见记录）
+Boundary: 整体的依存、汲取与侵蚀不由部分推出；成员资格不随步变化；不说哪个部分生起，也不说数目增长；不含伦理谓词
+Integration: 回答第五次审查 I10 与 §4 第 7 项；§16、§19 中“谱系与成员是两个层次，部分与整体的关系被省略”由本节陈述
+```
+
+[Becoming.Wholes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Wholes.lean)（L3，导入 `Becoming.Identity`）：
+
+| 声明 | 内容 |
+|---|---|
+| `Web.Whole`、`Web.Listed`、`Web.Ends`、`Web.Brief` | 整体：恰在某个部分活跃时活跃。列出：每步有一个有限列表恰好列出活跃的部分。终结：从某步起再不活跃。短暂（对 d）：从不在相隔 d 步的两步都活跃，若活动是一段连续的步，它至多 d 步 |
+| `Whole.arises_part`、`Whole.parts_unceasing` | 整体只经由某个部分的生起而生起；整体在任意晚的步生起时，部分也在任意晚的步生起 |
+| `active_back`、`Ends.all` | 在 k 步之内没有部分生起时，k 步之后活跃的部分在开始时不是不活跃的；有限个终结的形成在某一步之后都终结 |
+| `Whole.arises_within` | 从 T 起每步活跃的整体，部分从不在相隔 d 步的两步都活跃时，从 T 起每 d 个连续步内都有部分生起 |
+| `Whole.needs_arising` | 从某步起每步活跃的整体，每个部分的活动终结，且活跃的部分可列出时，部分在任意晚的步生起 |
+| `Generations.web`、`whole`、`listed`、`ends`、`brief`、`generations` | 一代代成员各活跃两步：谱系是其整体，每步活跃而从不生起；成员可列出、终结、短暂（d = 2），每步都有新成员生起 |
+| `Shifts.web`、`shifts` | 成员轮班两步：谱系每步活跃，成员短暂（d = 2），偶数步上没有部分生起：每两步内有生起，每一步内则不必，界 d 可以达到 |
+| `Immortal.web`、`immortal` | 一个永不终结的部分：整体持续，部分可列出，没有任何生起 |
+| `Countless.web`、`whole`、`ends`、`never`、`countless` | 无穷多个部分同时活跃，第 n 个活跃到第 n 步：整体持续，每个部分终结，没有任何生起；于是活跃的部分不能有限地列出 |
+| `Gaps.web`、`whole`、`listed`、`ends`、`gaps` | 每个成员只在一个奇数步活跃：部分在任意晚的步生起、终结、可列出，整体在每个偶数步不活跃 |
+| `Layered.composed` | `Layered` 的谱系是其成员的整体 |
+| `Generations.Formation`、`parts`、`alive`、`Shifts.half`、`odd_two`、`half_even`、`Countless.parts`、`Gaps.alive`、`alive_odd`、`alive_even` | 见证的辅助定义与引理 |
+
+**解读。**
+
+- **两个层次由整体关系联系。** §16 与 §19 中，谱系与成员只能由两种命名分别表示，或并列命名而没有关系（`Layered`）。这里整体关系把两个层次放进同一个依存网：谱系恰在某个成员活跃时活跃（`Layered.composed`）。这是表示所省略的关系的一种陈述，不是从每一步的关系推出的；哪些形成是哪个整体的部分，由应用给出。
+- **整体的持续就是部分的生成。** 部分不长久时，整体要每步活跃，就须不断有部分接上：部分从不在相隔 d 步的两步都活跃，则每 d 步内有部分生起（`arises_within`）；部分的活动都终结且有限地列出，则部分在任意晚的步生起（`needs_arising`）。谱系每步活跃而从不生起（`Generations`）：在整体的层次上是持续，在部分的层次上是不息的生起。
+- **为什么需要不长久与有限。** 有一个永不终结的部分，整体的持续不需要任何生起（`Immortal`）。无穷多个部分一开始就同时活跃、各在不同的步终结，整体也可以持续而没有生起（`Countless`）：持续由一开始就在的无穷储备承担。有限地列出排除这种储备。
+- **逆命题不成立。** 部分不息地生起，不使整体持续：生起之间可以有空隙（`Gaps`）。读到整体层次的持续，比读到部分层次的不息生起更强。
+- **对生生（作者的读法）。** Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。§19 曾写，只读作谱系的持续，与原话中的“不断创造”有张力。在部分不长久的前提下，这一张力消失：谱系的持续蕴含成员不断生起，整体的“不息”正由部分的“生生”构成。作者把这读作原话中“整体”与“不断创造”的一种形式联系（AI 论证），不替代原话，也不决定“生生不息”读到哪个层次，那仍属于 Ren。
+
+**作者反审。**
+
+*反驳 1：`Whole` 是定义，定理几乎是鸽巢原理。* 对：定理是组合性的。内容在于把两个命名层次放进一个表示，并说明在什么前提下两个层次的读法相互蕴含，在什么前提下不蕴含（`Immortal`、`Countless`、`Gaps`）。
+
+*反驳 2：整体只由活动关联部分，谱系的依存与侵蚀呢？* 没有陈述。一个汲取可以侵蚀成员而不侵蚀谱系，或反之；整体的依存怎样由部分构成，是下一步。§19 的继承者问题（继承者是否继承长者的损失）在这里仍属于 Ren。
+
+*反驳 3：部分可以再生起而不终结，例如 `Layered` 的成员。* 对。`Layered` 的成员隔一步就再活跃，`Ends` 与 `Brief` 都不成立，两个定理都不适用；成员仍不息地生起（`Layered.both`）。所以这些前提是结论的充分条件，不是必要条件；两个定理各用一种“不长久”的陈述。
+
+*反驳 4：生起依赖跨步的同一，把成员改认为一个，生起就消失。* 对（§16，`Lineage`）。本节的定理在给定命名下成立；把成员合为一个，就是把整体当作部分，整体关系退化为一个部分的情形，`Immortal` 表明那时不需要生起。
+
+*反驳 5：结论不说数目增长，不是“更多”。* 对。本节只说持续需要生起；“更多”的数目读法见 §14。
+
+**边界。** 不含伦理谓词；整体只由活动关联部分；部分关系是静态的；生起依赖跨步的同一；“生生不息”读到哪个层次属于 Ren；见证都是最小见证。本节尚未经独立审查。
 
 ## English summary
 
@@ -1331,3 +1390,5 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 **P12b: the fifth independent review.** A separate agent (Claude Opus 5.5) reviewed P11b and P12 ([review](BECOMING-P11B-P12-REVIEW.md)). It accepted all the mathematics with empty axiom reports, closed H1–H14, and found twelve issues (I1–I12) in premises, prose and correspondence. In the flow form, recurring uptake needs recurring replenishment (`uptake_needs_replenishment`): arising works only through the uptake it brings, and a constant consumer with nothing arising needs replenishment too (`Steady`). That the flow lists each formation once is a necessary premise of `More.unceasing` (`Repeated`), and the garden and the cycle meet every premise (`Garden.counted`, `Cycle.counted`). Labels carry nothing, while the pattern of names across steps carries identity. Continuity read one way lets the new naming make a continuity; read both ways it preserves arising and undermining exactly (`Reidentify.back`), and joining across a dormant step still changes a formation's class (`Dormancy`). Arisings made by naming alone can meet every premise of `Unceasing.regeneration_recurs` (`TideFlip`). Splits and merges change the continuation relation, not the number of formations. Under every continuation in which no formation continues as two, more without end under a census makes formations arise at arbitrarily late steps (`Flow.More.unceasingFrom`), while budding defeats it (`Budding`). A lineage and its members are two levels of one unfolding, with the part–whole relation omitted (`Layered`). The heir of `Succession` now lives. The core now has 559 theorems and 948 declaration audits over 19 modules, all with empty axiom reports. These corrections have not been independently reviewed again.
 
 **P15: generation is replenishment.** Following the fifth review's I3 and its §4 item 2, P15 lets generation itself, rather than uptake, carry the requirement. Read with one kind of relatum, an embodied relatum is given at least the standing it arises with (`Embodied.given_of_arises`), so its arising replenishes every family containing it, and embodied arising at arbitrarily late steps needs replenishment at arbitrarily late steps, whatever is taken (`generation_needs_replenishment`). Under dissipation a formation giving to a family takes from it (`DissipatesOn.takes_of_gives`), so an embodied arising in a closed family lowers the family's stock (`Embodied.arising_lowers`); this derives the physical premise of `dissipation_ceases` for such arisings. A finite family in which embodied members arise at arbitrarily late steps is therefore not closed from any step on (`generation_opens`), and with finitely many relata in all, embodied arising does not recur (`generation_ceases`). Each premise is needed. Two sides handing one standing back and forth generate without end in a closed world without dissipation (`Handing`). Burning a fresh fuel, they do so under dissipation while every finite family containing a side opens (`Kindling`). A relatum whose activity is not its standing arises at no cost (`Flicker`). The brood is not dissipative (`Brood.costless`). The core now has 588 theorems and 987 declaration audits over 19 modules, all with empty axiom reports. This section has not been independently reviewed.
+
+**P16: wholes and parts.** Following the fifth review's I10 and its §4 item 7, the new module `Becoming.Wholes` states the part–whole relation that a single level of naming omits. A formation is the whole of some parts when it is active exactly while some part is (`Web.Whole`), and `Layered`'s lineage is the whole of its members (`Layered.composed`). A whole arises only as a part arises (`Whole.arises_part`). A whole active at every step from some step on persists only through its parts' generation. If no part is active at two steps `d` apart, a part arises within every `d` consecutive steps (`Whole.arises_within`); the bound is attained (`Shifts`). If each part's activity ends and the active parts are listed finitely, parts arise at arbitrarily late steps (`Whole.needs_arising`). Without these premises a whole can persist while nothing arises (`Immortal`, `Countless`), and the converse fails (`Gaps`). The premises are consistent: a lineage of two-step generations is active at every step and never arises while a member arises at every step (`Generations`). Where parts do not last, reading 生生不息 as the lineage's persistence entails unceasing generation of its members; at which level it is read remains Ren's. The core now has 614 theorems and 1028 declaration audits over 20 modules, all with empty axiom reports. This section has not been independently reviewed.

@@ -1234,6 +1234,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
 
+## whole-persists-through-generation ← unceasing-generation-needs-renewal
+
+`formal-reuse` — 复用 Arises 与依存网；部分的生起就是该结果意义上的生起。 / Reuses Arises and webs; the parts' arising is arising in that result's sense.
+
+**Producer output / 上游输出:** 生起：跨某步由不活跃变为活跃。 / Arising: from inactive to active across a step.
+
+**Consumer input / 下游输入:** 整体的持续需要部分的生起。 / A whole's persistence needs its parts' arising.
+
+**Retained conditions / 保留条件:** Whole；Brief 或 Ends 与 Listed。 / Whole; Brief, or Ends and Listed.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean)
+
+## whole-persists-through-generation ← identity-across-steps
+
+`formal-reuse` — 复用 odd 与 Layered；Layered.composed 表明 Layered 的谱系是其成员的整体，回答该记录省略的部分与整体关系。 / Reuses odd and Layered; Layered.composed shows that Layered's lineage is the whole of its members, answering the part–whole relation that record omits.
+
+**Producer output / 上游输出:** 谱系与成员两个命名层次。 / Two levels of naming, lineage and members.
+
+**Consumer input / 下游输入:** 两个层次由整体关系联系，整体的持续蕴含部分的生成。 / The levels related as whole and parts, the whole's persistence entailing its parts' generation.
+
+**Retained conditions / 保留条件:** Whole。 / Whole.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean)
+
 ## wisdom-root ← practical-judgment-g0-j
 
 `interpretive` — 既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 / Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter.

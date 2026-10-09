@@ -184,8 +184,8 @@
     "en": "Contains no ethical predicate; constrains only the arising of embodied relata, and arising that is not embodied is unconstrained; Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Handing the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T063303.920941Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理全部空依赖；同一回执覆盖包内 19 个模块（含只作导入的根模块与桥接），共 588 项定理／987 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 21 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T063303.920941Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation all have empty axiom reports; the same receipt covers the package's 19 modules (including the import-only root and the bridge) with 588 theorems/987 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 21 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T065513.229180Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理全部空依赖；同一回执覆盖包内 20 个模块（含只作导入的根模块与桥接），共 614 项定理／1028 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 22 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T065513.229180Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation all have empty axiom reports; the same receipt covers the package's 20 modules (including the import-only root and the bridge) with 614 theorems/1028 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 22 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -310,19 +310,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "1384b8f5bf00c9f53c79fa525acc54a8aed215f7a1d636780f06239b7d060ff0",
+      "sha256": "1b5dd047cec86a9cb9a879064b1e4e3f8589b80dd91eca6df15f3e25f3b4a828",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "b607541a6f43d7fffa7ef813b1c8a9b2ea3cf8fc4597b82f5b9eb70d6b1c7df2",
+      "sha256": "1912c67940e95ac1ad281a2512d42e0cd78e711fdec4494e1f6532539c2ef6f3",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "6f06722d5127237e42df256543231a011daac0868a8e7a043b909f147835dffb",
+      "sha256": "db23ad733ccd8b5c39a12245061dd19a7b3f48fcb36644ba506a3e3dbe70259f",
       "declarations": []
     },
     {
@@ -374,6 +374,10 @@
     {
       "zh": "2026-10-09：作为整合计划 P15 新增，回答第五次独立审查 I3 与其 §4 第 2 项、no-finite-part-bears-taking 的界限与 life-as-condition-of-life 的下一步；按 Ren“move on to pursue the theory of becoming, and prove the necessary proofs”。",
       "en": "2026-10-09: added as P15 of the unification plan, answering I3 and §4 item 2 of the fifth independent review, the boundary of no-finite-part-bears-taking and the next step of life-as-condition-of-life; following Ren's “move on to pursue the theory of becoming, and prove the necessary proofs”."
+    },
+    {
+      "zh": "2026-10-09：P16 新增 Becoming.Wholes 后，合并检查器重跑（20261009T065513.229180Z），本记录的检验范围改指新回执；主张与证明不变。",
+      "en": "2026-10-09: after P16 added Becoming.Wholes, the consolidated checker was rerun (20261009T065513.229180Z) and this record's validation scope now points to the new receipt; its claim and proofs are unchanged."
     }
   ]
 }

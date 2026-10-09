@@ -10,6 +10,7 @@ import Becoming.Generation
 import Becoming.Flow
 import Becoming.Population
 import Becoming.Identity
+import Becoming.Wholes
 import Becoming.Dissipation
 import Becoming.Roles
 import Becoming.Metaethics
@@ -55,12 +56,17 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   active formations, with only active formations taking, more generation without end
   makes generation unceasing.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
-  Names carry nothing; each step's relations, each condition's class and how many
-  formations take and give do not depend on identity across steps, while a formation's
-  class, the tenure of a dependence, undermining and arising do. Continuity of activity
-  and dependence rules out making arising and removing undermining; succession stays
-  open. Under a census, more without end makes generation unceasing under every
-  re-identification.
+  Labels carry nothing, while the pattern of names across steps carries identity; each
+  step's relations, each condition's class and how many formations take and give do not
+  depend on it, while a formation's class, the tenure of a dependence, undermining and
+  arising do. Continuity read one way leaves succession open, read both ways it still
+  leaves succession across dormancy. Under a census, more without end makes generation
+  unceasing under every one-to-one re-identification and every continuation without
+  splits.
+* `Becoming.Wholes` (L3): a whole is active exactly while some part is. A whole that
+  persists through parts that do not last persists only through their generation: parts
+  never active at two steps `d` apart arise within every `d` steps, and parts whose
+  activity ends arise at arbitrarily late steps when the active ones are listed.
 * `Becoming.Dissipation` (L3): when giving always costs the conditions the renewer takes
   from more than it gives, a family closed from some step runs down and taking from it
   stops. Taking that recurs, and so more without end, needs exchange beyond every finite
