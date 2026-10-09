@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "reserve-defers-ending",
   "title": {
-    "zh": "储备推迟终结而不逃脱终结：Dependent 是零储备，储备可以是所持的条件",
-    "en": "A reserve defers the end and does not escape it: Dependent is the zero reserve, and a reserve can be a held condition"
+    "zh": "储备推迟终结而不逃脱终结：Dependent 是零储备，储备可以是所持的条件，衰减的储备沿依存之链逐环界定共灭",
+    "en": "A reserve defers the end and does not escape it: Dependent is the zero reserve, a reserve can be a held condition, and a decaying reserve bounds coextinction link by link along a chain"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T10:40:04+00:00",
+  "reviewed_at_utc": "2026-10-09T18:51:55+00:00",
   "claim": {
-    "zh": "在依存网上，一个储备是每个形成的一个量：在该形成不被支持的一步上不上升，若它在该步活跃则下降（Carries）。零储备恰是 Dependent（carries_zero）：放宽“活动只在有支持处”就是允许正的储备，而不是让活动离开依存。储备可以是所持的条件：在平衡的流中，一个条件在持有者不被支持的步上没有给予、在持有者于该步活跃时被（参与该步的任何形成）取用，它的水平就是持有者的储备（Flow.carries_of_held）；持有者自己参与并从中取用时，储备是持有者自身的耗用（Flow.carries_of_own），如狐燃烧自己的脂肪。没有表示所持的条件时，储备是给定的量：两颗种子的依存网中没有任何条件承载它们（Seed.no_held、Viable.no_held）。依存失效而仍活跃的形成储备为正（Carries.pos），所以所持的条件承载形成时，可以把每个不被支持的依存移到所持的条件上、需要为一，水平、活动与汲取不变，这样读出的依存网由构造满足 Dependent（Web.redirect、Web.redirect_dependent；Famine.transformed_dependent）：在所持条件承载它的地方，滞后就是依存转化到所持的条件上。这是对储备的重新描述，不是关于展开的另一事实。两种读法在哪些事件侵蚀上不同：狐在第 1 步的事件按原读法侵蚀，按转化的读法不侵蚀（Famine.living_differs），所以读法的选择影响逐步读法的估值。储备推迟终结而不逃脱终结：从某步起不被支持的形成只在有限多步活跃（Carries.active_finitely），在任一段步上活跃的次数不超过开始时的储备（Carries.lasts；容量为 k 时不超过 k，Carries.lasts_within）。于是在没有回程而依存不变的损失之后（Carries.consumed_lasts），以及在它以正需要依存的体现关系项终结之后（Carries.coextinct_lasts），形成在支持之外至多再活跃其储备那么多次：滞后的终结与滞后的共灭；零储备之下，它们分别是 consumed_ends_when_fixed 与 coextinct。休眠同样推迟而不逃脱：不被支持时，形成只在有限多步生起（Carries.arising_finitely）；储备在休眠中也衰减时（种子的存活力，Decays），休眠在时间上也有界：从某步起不被支持的形成，经过与其储备一样多的步之后不再活跃（Carries.ends_within）。见证：黑暗中的种子靠储备醒来两次，此后不再活跃，醒着的次数恰等于开始时的储备（Seed），它的储备不衰减（Seed.not_decays）；存活力为三的种子在第 2 步醒来，此后不再活跃，时间的界可以达到（Viable）；狐依存于体现的兔，兔终结后狐靠脂肪恰好多活两步，脂肪是流中狐自己燃烧的条件；把狐的依存读作转到脂肪上（水平、活动、汲取与流相同）时满足 Dependent（Famine）。不用伦理前提，也不用 Lean 公理。",
-    "en": "On webs, a reserve is an amount for each formation that does not rise across a step at which the formation is unsupported, and falls if the formation is active there (Carries). The zero reserve is exactly Dependent (carries_zero): relaxing ‘activity only where supported’ means allowing a positive reserve, not activity outside dependence. A reserve can be a held condition: in a balanced flow, a condition nothing gives to at steps at which its holder is unsupported, and which is taken from, by whatever takes part, when the holder is active there, has its standing as the holder's reserve (Flow.carries_of_held); where the holder itself takes part and takes from it, the reserve is the holder's own use (Flow.carries_of_own), as a fox burns its fat. Where no held condition is represented, the reserve is supplied: no condition of the two seeds' webs carries them (Seed.no_held, Viable.no_held). An active formation whose dependences fail has a positive reserve (Carries.pos), so where a held condition carries the formations, each unsupported dependence can be moved onto the held condition at need one, keeping levels, activity and drawing, and the web so read meets Dependent by construction (Web.redirect, Web.redirect_dependent; Famine.transformed_dependent): where a held condition carries it, lag is dependence transformed onto the held condition. This re-describes the reserve and is no further fact about the unfolding. The two readings differ in which events undermine: the fox's event at step one undermines as published and not when its dependence is moved onto its fat (Famine.living_differs), so the choice of reading bears on the stepwise valuation. A reserve defers the end and does not escape it: a formation unsupported from some step on is active only finitely often (Carries.active_finitely), and over any stretch at most as often as its reserve at the start (Carries.lasts; at most k with capacity k, Carries.lasts_within). So after a loss without return with the dependence unchanged (Carries.consumed_lasts), and after the end of an embodied relatum it depends on at a positive need (Carries.coextinct_lasts), a formation is active beyond its support at most as often as its reserve: lagged ending and lagged coextinction; with the zero reserve they are consumed_ends_when_fixed and coextinct. Dormancy defers in the same way: unsupported, a formation arises only finitely often (Carries.arising_finitely); where the reserve also decays while dormant (a seed's viability, Decays), dormancy is bounded in time as well: a formation unsupported from some step on is not active once as many steps have passed as its reserve (Carries.ends_within). Witnesses: a seed in the dark wakes twice on its reserve and never again, awake exactly as often as its reserve at the start (Seed), its reserve not decaying (Seed.not_decays); a seed with a viability of three wakes at step 2 and never after, attaining the bound in time (Viable); a fox depending on the embodied hare outlives it by exactly two steps on its fat, a condition in the flow that the fox burns itself, and read with the fox's dependence moved onto the fat, with the same levels, activity, drawing and flow, it meets Dependent (Famine). No ethical premise and no Lean axiom is used."
+    "zh": "在依存网上，一个储备是每个形成的一个量：在该形成不被支持的一步上不上升，若它在该步活跃则下降（Carries）。零储备恰是 Dependent（carries_zero）：放宽“活动只在有支持处”就是允许正的储备，而不是让活动离开依存。储备可以是所持的条件：在平衡的流中，一个条件在持有者不被支持的步上没有给予、在持有者于该步活跃时被（参与该步的任何形成）取用，它的水平就是持有者的储备（Flow.carries_of_held）；持有者自己参与并从中取用时，储备是持有者自身的耗用（Flow.carries_of_own），如狐燃烧自己的脂肪。没有表示所持的条件时，储备是给定的量：两颗种子的依存网中没有任何条件承载它们（Seed.no_held、Viable.no_held）。依存失效而仍活跃的形成储备为正（Carries.pos），所以所持的条件承载形成时，可以把每个不被支持的依存移到所持的条件上、需要为一，水平、活动与汲取不变，这样读出的依存网由构造满足 Dependent（Web.redirect、Web.redirect_dependent；Famine.transformed_dependent）：在所持条件承载它的地方，滞后就是依存转化到所持的条件上。这是对储备的重新描述，不是关于展开的另一事实。两种读法在哪些事件侵蚀上不同：狐在第 1 步的事件按原读法侵蚀，按转化的读法不侵蚀（Famine.living_differs），所以读法的选择影响逐步读法的估值。储备推迟终结而不逃脱终结：从某步起不被支持的形成只在有限多步活跃（Carries.active_finitely），在任一段步上活跃的次数不超过开始时的储备（Carries.lasts；容量为 k 时不超过 k，Carries.lasts_within）。于是在没有回程而依存不变的损失之后（Carries.consumed_lasts），以及在它以正需要依存的体现关系项终结之后（Carries.coextinct_lasts），形成在支持之外至多再活跃其储备那么多次：滞后的终结与滞后的共灭；零储备之下，它们分别是 consumed_ends_when_fixed 与 coextinct。休眠同样推迟而不逃脱：不被支持时，形成只在有限多步生起（Carries.arising_finitely）；储备在休眠中也衰减时（种子的存活力，Decays），休眠在时间上也有界：从某步起不被支持的形成，经过与其储备一样多的步之后不再活跃（Carries.ends_within）。储备如此衰减时，共灭沿依存之链逐环有界：链上的关系项都体现、从第 T 步起每一个以正需要依存于前一个、第一个从 T 起不活跃时，每个关系项在它之前各环的储备过去之后不再活跃，每环的储备读于前一环终结之时（Carries.chain_ends，界为 Web.chainEnd）；零储备之下每一环都在 T 终结，即同时的共灭（chainEnd_zero）。储备不衰减时，以排中律为假设，链上每个关系项仍从某步起不活跃，但没有界（Carries.chain_ends_of_em）。见证：黑暗中的种子靠储备醒来两次，此后不再活跃，醒着的次数恰等于开始时的储备（Seed），它的储备不衰减（Seed.not_decays）；存活力为三的种子在第 2 步醒来，此后不再活跃，时间的界可以达到（Viable）；狐依存于体现的兔，兔终结后狐靠脂肪恰好多活两步，脂肪是流中狐自己燃烧的条件；把狐的依存读作转到脂肪上（水平、活动、汲取与流相同）时满足 Dependent（Famine）；每个关系项以需要一依存于前一个的链上，沿链的界可以达到：每个关系项靠储备恰好比前一个多活一步，没有储备时关系项 1 会在不被支持时活跃（Cascade）。不用伦理前提，也不用 Lean 公理。",
+    "en": "On webs, a reserve is an amount for each formation that does not rise across a step at which the formation is unsupported, and falls if the formation is active there (Carries). The zero reserve is exactly Dependent (carries_zero): relaxing ‘activity only where supported’ means allowing a positive reserve, not activity outside dependence. A reserve can be a held condition: in a balanced flow, a condition nothing gives to at steps at which its holder is unsupported, and which is taken from, by whatever takes part, when the holder is active there, has its standing as the holder's reserve (Flow.carries_of_held); where the holder itself takes part and takes from it, the reserve is the holder's own use (Flow.carries_of_own), as a fox burns its fat. Where no held condition is represented, the reserve is supplied: no condition of the two seeds' webs carries them (Seed.no_held, Viable.no_held). An active formation whose dependences fail has a positive reserve (Carries.pos), so where a held condition carries the formations, each unsupported dependence can be moved onto the held condition at need one, keeping levels, activity and drawing, and the web so read meets Dependent by construction (Web.redirect, Web.redirect_dependent; Famine.transformed_dependent): where a held condition carries it, lag is dependence transformed onto the held condition. This re-describes the reserve and is no further fact about the unfolding. The two readings differ in which events undermine: the fox's event at step one undermines as published and not when its dependence is moved onto its fat (Famine.living_differs), so the choice of reading bears on the stepwise valuation. A reserve defers the end and does not escape it: a formation unsupported from some step on is active only finitely often (Carries.active_finitely), and over any stretch at most as often as its reserve at the start (Carries.lasts; at most k with capacity k, Carries.lasts_within). So after a loss without return with the dependence unchanged (Carries.consumed_lasts), and after the end of an embodied relatum it depends on at a positive need (Carries.coextinct_lasts), a formation is active beyond its support at most as often as its reserve: lagged ending and lagged coextinction; with the zero reserve they are consumed_ends_when_fixed and coextinct. Dormancy defers in the same way: unsupported, a formation arises only finitely often (Carries.arising_finitely); where the reserve also decays while dormant (a seed's viability, Decays), dormancy is bounded in time as well: a formation unsupported from some step on is not active once as many steps have passed as its reserve (Carries.ends_within). Where the reserve so decays, coextinction runs down a chain of dependence link by link: where the relata of a chain are embodied, each depends at a positive need on the one before it from step T on, and the first is inactive from T, each relatum is inactive once the reserves of the links before it have passed, each read where the link before it ended (Carries.chain_ends, with the bound Web.chainEnd); with the zero reserve every link ends at T, coextinction at once (chainEnd_zero). Without decay, with excluded middle as a hypothesis, each relatum of the chain is still inactive from some step, with no bound (Carries.chain_ends_of_em). Witnesses: a seed in the dark wakes twice on its reserve and never again, awake exactly as often as its reserve at the start (Seed), its reserve not decaying (Seed.not_decays); a seed with a viability of three wakes at step 2 and never after, attaining the bound in time (Viable); a fox depending on the embodied hare outlives it by exactly two steps on its fat, a condition in the flow that the fox burns itself, and read with the fox's dependence moved onto the fat, with the same levels, activity, drawing and flow, it meets Dependent (Famine); in a chain in which each relatum depends at need one on the one before it, the bound along the chain is attained: each relatum outlives the one before it by exactly one step on its reserve, while without the reserve relatum 1 would be active unsupported (Cascade). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "Carries, like Dependent, is a representational premise: which amount carries a formation, and that it does not rise while the formation is unsupported, are supplied by the application. Carries.lasts also needs whether the formation is active at each step to be decidable (a hypothesis of the theorem, not an axiom)."
     },
     {
-      "zh": "Decays 是另一个表示前提，只用于 ends_within：储备在形成不被支持而为正的每一步都下降，不论形成是否活跃。",
-      "en": "Decays is a further representational premise, used only for ends_within: the reserve falls across every step at which the formation is unsupported and the reserve is positive, whether or not the formation is active."
+      "zh": "Decays 是另一个表示前提，只用于 ends_within 与 chain_ends：储备在形成不被支持而为正的每一步都下降，不论形成是否活跃。",
+      "en": "Decays is a further representational premise, used only for ends_within and chain_ends: the reserve falls across every step at which the formation is unsupported and the reserve is positive, whether or not the formation is active."
     },
     {
       "zh": "carries_of_held 需要流平衡依存网；持有者不被支持的步上没有给予所持的条件；持有者在不被支持而活跃的步上，所持的条件被参与该步的形成取用（不必是持有者自己；carries_of_own 要求持有者自己参与并取用）。哪个条件是一个形成所持的，由应用给出。",
@@ -33,11 +33,15 @@
     {
       "zh": "Web.redirect 与 redirect_dependent 需要每步“形成是否被支持”可判定（定理的假设，不是公理）。",
       "en": "Web.redirect and redirect_dependent need whether a formation is supported at each step to be decidable (a hypothesis of the theorem, not an axiom)."
+    },
+    {
+      "zh": "chain_ends 与 chain_ends_of_em 另用：链上的关系项都体现；从第 T 步起每一环以正需要依存于前一环（逐环是 coextinct_lasts 的前提）；第一环从 T 起不活跃。链是一条序列。chain_ends_of_em 不用 Decays，而以排中律为假设（不是公理）。",
+      "en": "chain_ends and chain_ends_of_em further use: every relatum of the chain embodied; each link depending at a positive need on the one before it from step T on (link by link, the premise of coextinct_lasts); and the first inactive from T. The chain is a sequence. chain_ends_of_em does not use Decays and takes excluded middle as a hypothesis, not an axiom."
     }
   ],
   "correspondence": {
-    "zh": "开放纲领自 P6 起列出“放宽 Dependent（缓冲、储备、滞后）”；共灭的范围排除种子库、储备与休眠（life-as-condition-of-life）；generation-is-replenishment 的下一步列出活动与水平不同步。按非二元方法，在流与所持条件被表示的地方，储备不是新的原语：它是形成所持的一个条件的水平，缓冲与滞后是对所持之物的依存，可以读作依存的转化（P6 的 consumed_continues_transformed）；没有表示所持条件时，储备是给定的量（Seed、Viable）。两种读法改变哪些事件是 living，所以在所持条件被表示的地方，用哪种读法是影响估值的对应前提。推迟而不逃脱与 unceasing-generation-needs-renewal 的“替代推迟终结而不逃脱”（substitution_defers、Relay）是同一模式，这里推迟的是所持的条件。物理内容是所持之物有限。脂肪、种子库与储蓄是应用的例子，不是定理的内容。",
-    "en": "Since P6 the open programme has listed ‘relax Dependent (buffers, reserves, lag)’; coextinction's scope excluded seed banks, reserves and dormancy (life-as-condition-of-life); generation-is-replenishment's next step listed activity and standing out of step. Following the nondual method, where a flow and a held condition are represented, a reserve is not a new primitive: it is the standing of a condition the formation holds, buffer and lag are dependence on what is held, and they can be read as a transformation of dependence (P6's consumed_continues_transformed); where no held condition is represented, the reserve is a supplied amount (Seed, Viable). The two readings change which events are living, so where a held condition is represented, which reading is used is a correspondence premise bearing on the valuation. Deferring without escaping is the pattern of unceasing-generation-needs-renewal's ‘substitution defers the end without escaping it’ (substitution_defers, Relay), here deferring on a held condition. The physical content is that what is held is finite. Fat, seed banks and savings are examples of application, not content of the theorems."
+    "zh": "开放纲领自 P6 起列出“放宽 Dependent（缓冲、储备、滞后）”；共灭的范围排除种子库、储备与休眠（life-as-condition-of-life）；generation-is-replenishment 的下一步列出活动与水平不同步。按非二元方法，在流与所持条件被表示的地方，储备不是新的原语：它是形成所持的一个条件的水平，缓冲与滞后是对所持之物的依存，可以读作依存的转化（P6 的 consumed_continues_transformed）；没有表示所持条件时，储备是给定的量（Seed、Viable）。两种读法改变哪些事件是 living，所以在所持条件被表示的地方，用哪种读法是影响估值的对应前提。推迟而不逃脱与 unceasing-generation-needs-renewal 的“替代推迟终结而不逃脱”（substitution_defers、Relay）是同一模式，这里推迟的是所持的条件。物理内容是所持之物有限。脂肪、种子库与储蓄是应用的例子，不是定理的内容。沿依存之链：每一环的储备读于前一环终结之时，支持期间的补充已计入界中，不需另设前提；零储备之下，这是 coextinct 在一条链上跨步的情形（P31）。",
+    "en": "Since P6 the open programme has listed ‘relax Dependent (buffers, reserves, lag)’; coextinction's scope excluded seed banks, reserves and dormancy (life-as-condition-of-life); generation-is-replenishment's next step listed activity and standing out of step. Following the nondual method, where a flow and a held condition are represented, a reserve is not a new primitive: it is the standing of a condition the formation holds, buffer and lag are dependence on what is held, and they can be read as a transformation of dependence (P6's consumed_continues_transformed); where no held condition is represented, the reserve is a supplied amount (Seed, Viable). The two readings change which events are living, so where a held condition is represented, which reading is used is a correspondence premise bearing on the valuation. Deferring without escaping is the pattern of unceasing-generation-needs-renewal's ‘substitution defers the end without escaping it’ (substitution_defers, Relay), here deferring on a held condition. The physical content is that what is held is finite. Fat, seed banks and savings are examples of application, not content of the theorems. Along a chain of dependence, each reserve is read where the link before it ended, so replenishment while supported is counted in the bound and needs no further premise; with the zero reserve this is coextinct along a chain, across steps (P31)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
   "aliases": [
@@ -57,7 +61,12 @@
     "Becoming.Seed.seed",
     "Becoming.Viable.viable",
     "Becoming.Famine.famine",
-    "Becoming.Famine.transformed_dependent"
+    "Becoming.Famine.transformed_dependent",
+    "Becoming.Web.chainEnd",
+    "Becoming.Web.Carries.chain_ends",
+    "Becoming.Web.chainEnd_zero",
+    "Becoming.Web.Carries.chain_ends_of_em",
+    "Becoming.Cascade.cascade"
   ],
   "dependencies": [
     {
@@ -197,21 +206,28 @@
         "zh": "储备不必是所持条件的水平：两颗种子的依存网中所有水平为零，没有条件承载它们，储备是给定的量（Seed.no_held、Viable.no_held）。",
         "en": "A reserve need not be a held condition's standing: every level of the two seeds' webs is zero, no condition carries them, and the reserve is a supplied amount (Seed.no_held, Viable.no_held)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
+      "detail": {
+        "zh": "沿依存链的界可以达到：关系项 x 活跃至第 x 步，x+1 以需要一依存于 x，储备至第 x 步为一；第 k 个关系项在第 k 步仍活跃，chainEnd k 为 k+1；没有储备时关系项 1 在第 1 步活跃而不被支持，Dependent 不成立（Cascade.cascade）。",
+        "en": "The bound along a chain is attained: relatum x is active through step x, relatum x + 1 depends on x at need one, and the reserve is one through step x; relatum k is still active at step k with chainEnd k equal to k + 1, and without the reserve relatum 1 is active unsupported at step one, failing Dependent (Cascade.cascade)."
+      }
     }
   ],
   "limitations": {
-    "zh": "不含伦理谓词；Carries 与所持的条件是表示前提；结论约束的是从某步起不被支持的形成，不约束支持是否回来：储备若接上回来的支持，可以承载活动不止；Carries 之下休眠不耗用储备，休眠的时间只在另设 Decays 时有界；数量的界需要活动可判定；储备之下沿依存链的滞后共灭没有陈述；一般地构造转化的读法需要“是否被支持”可判定；carries_of_held 计入参与者的任何取用，不只是持有者的（审查的 Larder 探针）；两种读法在 living 上不同，用哪一种属于对应前提；见证都是最小见证。",
-    "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
+    "zh": "不含伦理谓词；Carries 与所持的条件是表示前提；结论约束的是从某步起不被支持的形成，不约束支持是否回来：储备若接上回来的支持，可以承载活动不止；Carries 之下休眠不耗用储备，休眠的时间只在另设 Decays 时有界；数量的界需要活动可判定；沿依存链的滞后共灭的界只在储备衰减时陈述：储备不衰减时一环的终结之步没有界，以排中律为假设只得每环终结（chain_ends_of_em），不以排中律为假设、把“只在有限多步活跃”逐环化为终结之步的形式没有陈述；链是一条序列，图上取各链最小界的形式没有陈述；一般地构造转化的读法需要“是否被支持”可判定；carries_of_held 计入参与者的任何取用，不只是持有者的（审查的 Larder 探针）；两种读法在 living 上不同，用哪一种属于对应前提；见证都是最小见证。",
+    "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is bounded only where the reserve decays: without decay a link's end step has no bound, excluded middle as a hypothesis giving only that each link ends (chain_ends_of_em), and no form turning ‘active only finitely often’ into an end step link by link without it is stated; the chain is a sequence, and the form taking the least bound over the chains of a graph is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T170233.740799Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 42 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1091 项定理／1771 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T170422.519028Z）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T170233.740799Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 42 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1091 theorems/1771 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T170422.519028Z)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T184816.006618Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 59 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1109 项定理／1793 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261009T184936.948468Z）。P31 新增的沿依存链共灭与 Cascade 的作者反审见整合文档 §41，尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T184816.006618Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 59 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1109 theorems/1793 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261009T184936.948468Z). The chain coextinction and Cascade added in P31 have the author's counterreview in §41 of the integration note and are not yet independently reviewed."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
       "role": "proof",
-      "sha256": "2379b8c4576c6359d782752287456fb9c11b8854503c68a1c2e003351c41b9c2",
+      "sha256": "173d7bf397117fe03e01f5f71623ae5d972d27b84ef6de7184a992fadd8b4eef",
       "declarations": [
         "Becoming.Web.Carries",
         "Becoming.Web.carries_zero",
@@ -268,16 +284,38 @@
         "Becoming.Viable.no_held",
         "Becoming.Famine.undermines_one",
         "Becoming.Famine.transformed_not_undermining",
-        "Becoming.Famine.living_differs"
+        "Becoming.Famine.living_differs",
+        "Becoming.Web.chainEnd",
+        "Becoming.Web.chainEnd_ge",
+        "Becoming.Web.chainEnd_zero",
+        "Becoming.Web.Carries.chain_ends",
+        "Becoming.Web.Carries.chain_ends_of_em",
+        "Becoming.Cascade.upto",
+        "Becoming.Cascade.upto_pos",
+        "Becoming.Cascade.upto_le_one",
+        "Becoming.Cascade.upto_after",
+        "Becoming.Cascade.upto_self",
+        "Becoming.Cascade.web",
+        "Becoming.Cascade.embodied",
+        "Becoming.Cascade.supported_of_le",
+        "Becoming.Cascade.unsupported_late",
+        "Becoming.Cascade.reserve",
+        "Becoming.Cascade.falls",
+        "Becoming.Cascade.never_rises",
+        "Becoming.Cascade.carries",
+        "Becoming.Cascade.decays",
+        "Becoming.Cascade.ends",
+        "Becoming.Cascade.cascade"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "c95e7087d4779970f6d48307c2ac1a1b571144b2632285ab8795ff0b1120c56d",
+      "sha256": "d3b8558e5e5086500dbc03560b9399737ac5f16ed1b14f0b65f7e24ec24ad86d",
       "declarations": [
         "Becoming.mark",
-        "Becoming.mark_cases"
+        "Becoming.mark_cases",
+        "Becoming.exists_not_of_em"
       ]
     },
     {
@@ -333,17 +371,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "bde6225d8a17e47f64a045282184f8431c1d2984a9108bc1a164bb076965c841"
+      "sha256": "04b3f314e984416ca2920f055a160d60ed888b3cf98870b44da1f9fcbbaaa3d2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c23dcc06f9dd1d1c182aea6a3635ce9ae864a3586cad2902ec3259352ab64606"
+      "sha256": "4d5944812f061e0a34b452847be4721c642cc22089ce8f0d7999379d9b55f5b8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f0376f13f9fe3f5c22f711b49baabbb2e764b5cf1da91644bcfa1f11e0104965"
+      "sha256": "09db9595720fd2c96afbf248a3fc7c6287124ef357839f71444fc92e4581a0a1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
@@ -371,8 +409,8 @@
     }
   ],
   "next_delta": {
-    "zh": "沿依存链、有储备的滞后共灭（支持期间储备可以补充，链上的界须另设前提，一般的推出需要“是否被支持”可判定）；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。",
-    "en": "Lagged coextinction along chains of dependence with reserves (a reserve can be replenished while supported, so a bound along a chain needs a further premise, and the general derivation needs decidable support); who replenishes a held condition under dissipation; where a held condition is represented, which reading the valuation uses (Ren); the empirical correspondence for fat, seed banks and savings."
+    "zh": "图上各链的最小界；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。",
+    "en": "The least bound over the chains of a graph; who replenishes a held condition under dissipation; where a held condition is represented, which reading the valuation uses (Ren); the empirical correspondence for fat, seed banks and savings."
   },
   "history": [
     {
@@ -442,6 +480,10 @@
     {
       "zh": "2026-10-10 P30：验证范围重新指向合并检查器回执 20261009T170233.740799Z 与外围回执 20261009T170422.519028Z（普查定律与有界定律改由普查的平衡证明，Change 加入 recurring_accumulates，Population 加入复现的精确读法、回到界内的定律、比率形式与依存的平衡，Openness 加入 CountedBy 与 slow）。断言不变。",
       "en": "2026-10-10 P30: validation scope re-pointed to consolidated receipt 20261009T170233.740799Z and periphery receipt 20261009T170422.519028Z (the census law and the bounded law now proved through the census balance; Change adds recurring_accumulates, Population the exact reading of recurrence, the law of a returning list, the form with rates and the balance of dependence, Openness CountedBy and slow). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P31：按计划 P31 新增沿依存链的滞后共灭（Web.chainEnd、chainEnd_ge、chainEnd_zero、Carries.chain_ends，以及以排中律为假设、不衰减的 Carries.chain_ends_of_em 与 Change 中的 exists_not_of_em）与见证 Cascade，回答本记录与 life-as-condition-of-life 的下一步；标题、主张、假设、对应、反例、局限与下一步相应修订。验证范围指向合并检查器回执 20261009T184816.006618Z 与外围回执 20261009T184936.948468Z。",
+      "en": "2026-10-10 P31: Plan P31 adds lagged coextinction along chains of dependence (Web.chainEnd, chainEnd_ge, chainEnd_zero, Carries.chain_ends, and, without decay and with excluded middle as a hypothesis, Carries.chain_ends_of_em with exists_not_of_em in Change) and the witness Cascade, answering this record's and life-as-condition-of-life's next step; title, claim, hypotheses, correspondence, counterexamples, limitations and next step revised accordingly. Validation scope points to consolidated receipt 20261009T184816.006618Z and periphery receipt 20261009T184936.948468Z."
     }
   ]
 }

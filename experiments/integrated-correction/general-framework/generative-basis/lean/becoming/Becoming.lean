@@ -127,9 +127,11 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   which can differ in which events undermine. A formation unsupported
   from some step on is active at most as often as its reserve at the start, so a reserve
   defers the end after a loss and after coextinction and does not escape it, and a
-  reserve decaying while dormant bounds the time as well. A relatum standing while active,
-  absent earlier, came to stand before it was active: generation bears replenishment where
-  standing rises, not where activity does.
+  reserve decaying while dormant bounds the time as well, link by link down a chain of
+  dependence, each relatum ending once the reserves before it have passed; without decay,
+  with excluded middle as a hypothesis, each still ends, with no bound. A relatum
+  standing while active, absent earlier, came to stand before it was active: generation
+  bears replenishment where standing rises, not where activity does.
 * `Becoming.Evolution` (L3): descent, transmission, variation and selection. A relatum
   descends from a formation that takes part in a step, gives to it, and across which it
   comes to stand. Over any finite family of parents and offspring, the offspring's total

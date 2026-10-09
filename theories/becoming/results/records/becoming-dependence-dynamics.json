@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T10:40:04+00:00",
+  "reviewed_at_utc": "2026-10-09T18:51:55+00:00",
   "claim": {
     "zh": "让一个形成依存于哪些条件、所需多少、汲取哪些条件都成为配置的可观测量，任一运行就读出为一个依存网。跨每一步，一个依存被维持、断裂、形成或消解；依存不变时，这一读法恰好复原静态的更新／消耗分类。变化发生在步上：某步成立、后来不成立的依存在其间某步消解，反之在某步形成（不用排中律陈述）。每个被满足的依存跨每一步恰为维持或断裂之一；更新与消耗仍互斥。在形成只在其当时所依存的条件支持它处活跃的依存网（Dependent）中，定理把损失之后的三种结局联系起来，它们既不穷尽也不互斥：以不弱于先前的依存继续活跃，意味着条件已恢复；无回程的损失之后仍活跃的形成，必已转化其依存；依存不变时则终止。三者都实际可能：同一过程、同一配置下，三次运行都在第一步断裂同一依存（按步首约定读），此后分别终止、转化与恢复。断裂的读法不决定后继配置；在这一见证中，构成断裂的那一步动作选定结局。不用伦理前提，也不用 Lean 公理。",
     "en": "Let which conditions a formation depends on, at what level, and which it draws on be observables of the configuration; every run then reads as a web of dependence. Across each step a dependence is kept, broken, formed or dissolved; with constant dependence this reading recovers the static renewing/consuming classification exactly. Change is made at a step: a dependence that holds and later does not dissolved across some step between, and one that comes to hold formed across one (stated without excluded middle). Every met dependence is exactly one of kept or broken across each step, and renewal and consumption remain exclusive. In a web where a formation is active only where the conditions it then depends on support it (Dependent), theorems connect three outcomes of a loss, which are neither exhaustive nor exclusive: continuing with an unweakened dependence means the condition was restored; a formation still active after a loss without return has transformed its dependence; with fixed dependence it ends. All three occur: in one process from one configuration, three runs break the same dependence at the first step (read under the step-start convention) and then end, transform and restore. The reading of the break does not fix the next configuration; in this witness the move that makes the break selects the outcome. No ethical premise and no Lean axiom is used."
@@ -172,8 +172,8 @@
     "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags; it is the zero reserve, and with a reserve these outcomes are deferred, not removed, see reserve-defers-ending. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T170233.740799Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1091 项定理／1771 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T170233.740799Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1091 theorems/1771 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T184816.006618Z）：Becoming.Dependence 53 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1109 项定理／1793 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T184816.006618Z): all 53 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1109 theorems/1793 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -245,19 +245,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "bde6225d8a17e47f64a045282184f8431c1d2984a9108bc1a164bb076965c841",
+      "sha256": "04b3f314e984416ca2920f055a160d60ed888b3cf98870b44da1f9fcbbaaa3d2",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c23dcc06f9dd1d1c182aea6a3635ce9ae864a3586cad2902ec3259352ab64606",
+      "sha256": "4d5944812f061e0a34b452847be4721c642cc22089ce8f0d7999379d9b55f5b8",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f0376f13f9fe3f5c22f711b49baabbb2e764b5cf1da91644bcfa1f11e0104965",
+      "sha256": "09db9595720fd2c96afbf248a3fc7c6287124ef357839f71444fc92e4581a0a1",
       "declarations": []
     },
     {
@@ -297,8 +297,8 @@
     }
   ],
   "next_delta": {
-    "zh": "放宽 Dependent 已由 reserve-defers-ending 陈述（Dependent 是零储备，储备推迟终结而不逃脱）；沿依存链的滞后列在该记录的下一步；形成的个体化：identity-across-steps 证明终止与转化之分、生起与侵蚀依赖跨步的同一，活动与依存的连续把它约束到接续为止；从关系推出同一，以及分裂与合并的表示，仍开放。",
-    "en": "Relaxing Dependent is stated in reserve-defers-ending (Dependent is the zero reserve, and a reserve defers the end without escaping it), with lag along chains of dependence among that record's next steps; the individuation of formations: identity-across-steps proves that the distinction between ending and transformation, arising and undermining depend on identity across steps, and that continuity of activity and dependence constrains it up to succession; deriving identity from relations, and representing splits and merges, remain open."
+    "zh": "放宽 Dependent 已由 reserve-defers-ending 陈述（Dependent 是零储备，储备推迟终结而不逃脱）；沿依存链的滞后共灭在储备衰减时也已在该记录陈述（P31）；形成的个体化：identity-across-steps 证明终止与转化之分、生起与侵蚀依赖跨步的同一，活动与依存的连续把它约束到接续为止；从关系推出同一，以及分裂与合并的表示，仍开放。",
+    "en": "Relaxing Dependent is stated in reserve-defers-ending (Dependent is the zero reserve, and a reserve defers the end without escaping it), with lagged coextinction along chains of dependence stated there too where the reserve decays (P31); the individuation of formations: identity-across-steps proves that the distinction between ending and transformation, arising and undermining depend on identity across steps, and that continuity of activity and dependence constrains it up to succession; deriving identity from relations, and representing splits and merges, remain open."
   },
   "history": [
     {
@@ -448,6 +448,10 @@
     {
       "zh": "2026-10-10 P30：验证范围重新指向合并检查器回执 20261009T170233.740799Z 与外围回执 20261009T170422.519028Z（普查定律与有界定律改由普查的平衡证明，Change 加入 recurring_accumulates，Population 加入复现的精确读法、回到界内的定律、比率形式与依存的平衡，Openness 加入 CountedBy 与 slow）。断言不变。",
       "en": "2026-10-10 P30: validation scope re-pointed to consolidated receipt 20261009T170233.740799Z and periphery receipt 20261009T170422.519028Z (the census law and the bounded law now proved through the census balance; Change adds recurring_accumulates, Population the exact reading of recurrence, the law of a returning list, the form with rates and the balance of dependence, Openness CountedBy and slow). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P31：下一步中沿依存链的滞后已由 reserve-defers-ending 陈述（P31）。断言不变。验证范围指向合并检查器回执 20261009T184816.006618Z 与外围回执 20261009T184936.948468Z。",
+      "en": "2026-10-10 P31: The next step's lag along chains of dependence is now stated in reserve-defers-ending (P31). The claim is unchanged. Validation scope points to consolidated receipt 20261009T184816.006618Z and periphery receipt 20261009T184936.948468Z."
     }
   ]
 }

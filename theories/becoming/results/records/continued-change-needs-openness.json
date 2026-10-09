@@ -269,8 +269,8 @@
     "en": "The rest theorem needs only whatever arises to be embodied, but needs a census of what is active, a census of what stands and decided activity (a logical commitment); rests_around, rests_enclosed and arising_opens need every relatum embodied; in exposed three premises hold vacuously, a feature of representing dissipation as binding only enclosed exchange, not a description of actual open systems; stated for discrete steps and natural-number amounts; evaluates neither openness nor rest; names are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T170233.740799Z）：Becoming.Openness 的 54 项定理全部空依赖（P30 新增的 CountedBy 与 slow 五项属于 bounded-census-keeps-pace；P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法，P28 新增水平的平衡，P25b 新增 Flow.Enclosed.aroundStanding_not_not、World.arising_stops、World.exposed_standing、World.openness_contingent 与 World.rest_needs_standing 及其世界，P29 新增 World.brood_rests），Becoming.Dissipation 的 90 项定理（P25b 新增 Flow.Enclosed.around_not_not）亦然；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1091 项定理／1771 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T170422.519028Z 通过。作者反审见整合文档 §33 与 §35；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）审查 P25 部分并接受其数学，所提更正在整合文档 §38 处理；P26 部分与这些更正尚未经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T170233.740799Z): the 54 theorems of Becoming.Openness (the five of CountedBy and slow added in P30 belong to bounded-census-keeps-pace; with the rest theorem and its cases added in P26, the world and standing readings of the bounded census law in P27, the balance of standing in P28, and Flow.Enclosed.aroundStanding_not_not, World.arising_stops, World.exposed_standing, World.openness_contingent and World.rest_needs_standing with its worlds in P25b, and World.brood_rests in P29) and the 90 theorems of Becoming.Dissipation (Flow.Enclosed.around_not_not added in P25b) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1091 theorems/1771 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T170422.519028Z passed. The author's counterreview is in §33 and §35 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) reviewed the P25 part and accepts its mathematics, and its corrections are handled in §38 of the integration note; the P26 part and those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T184816.006618Z）：Becoming.Openness 的 54 项定理全部空依赖（P30 新增的 CountedBy 与 slow 五项属于 bounded-census-keeps-pace；P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法，P28 新增水平的平衡，P25b 新增 Flow.Enclosed.aroundStanding_not_not、World.arising_stops、World.exposed_standing、World.openness_contingent 与 World.rest_needs_standing 及其世界，P29 新增 World.brood_rests），Becoming.Dissipation 的 90 项定理（P25b 新增 Flow.Enclosed.around_not_not）亦然；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1109 项定理／1793 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T184936.948468Z 通过。作者反审见整合文档 §33 与 §35；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）审查 P25 部分并接受其数学，所提更正在整合文档 §38 处理；P26 部分与这些更正尚未经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T184816.006618Z): the 54 theorems of Becoming.Openness (the five of CountedBy and slow added in P30 belong to bounded-census-keeps-pace; with the rest theorem and its cases added in P26, the world and standing readings of the bounded census law in P27, the balance of standing in P28, and Flow.Enclosed.aroundStanding_not_not, World.arising_stops, World.exposed_standing, World.openness_contingent and World.rest_needs_standing with its worlds in P25b, and World.brood_rests in P29) and the 90 theorems of Becoming.Dissipation (Flow.Enclosed.around_not_not added in P25b) all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1109 theorems/1793 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T184936.948468Z passed. The author's counterreview is in §33 and §35 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) reviewed the P25 part and accepts its mathematics, and its corrections are handled in §38 of the integration note; the P26 part and those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -418,7 +418,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "c95e7087d4779970f6d48307c2ac1a1b571144b2632285ab8795ff0b1120c56d",
+      "sha256": "d3b8558e5e5086500dbc03560b9399737ac5f16ed1b14f0b65f7e24ec24ad86d",
       "declarations": [
         "Becoming.Web.Ceases"
       ]
@@ -434,17 +434,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "bde6225d8a17e47f64a045282184f8431c1d2984a9108bc1a164bb076965c841"
+      "sha256": "04b3f314e984416ca2920f055a160d60ed888b3cf98870b44da1f9fcbbaaa3d2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c23dcc06f9dd1d1c182aea6a3635ce9ae864a3586cad2902ec3259352ab64606"
+      "sha256": "4d5944812f061e0a34b452847be4721c642cc22089ce8f0d7999379d9b55f5b8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f0376f13f9fe3f5c22f711b49baabbb2e764b5cf1da91644bcfa1f11e0104965"
+      "sha256": "09db9595720fd2c96afbf248a3fc7c6287124ef357839f71444fc92e4581a0a1"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -568,6 +568,10 @@
     {
       "zh": "2026-10-10 P30：断言不变；Openness 加入 CountedBy 与 slow（bounded-census-keeps-pace）。验证范围指向合并检查器回执 20261009T170233.740799Z 与外围回执 20261009T170422.519028Z。",
       "en": "2026-10-10 P30: The claim is unchanged; Openness adds CountedBy and slow (bounded-census-keeps-pace). Validation scope points to consolidated receipt 20261009T170233.740799Z and periphery receipt 20261009T170422.519028Z."
+    },
+    {
+      "zh": "2026-10-10 P31：验证范围重新指向合并检查器回执 20261009T184816.006618Z 与外围回执 20261009T184936.948468Z（Reserve 加入沿依存之链的滞后共灭 Carries.chain_ends、以排中律为假设的 Carries.chain_ends_of_em 与见证 Cascade，Change 加入 exists_not_of_em）。断言不变。",
+      "en": "2026-10-10 P31: validation scope re-pointed to consolidated receipt 20261009T184816.006618Z and periphery receipt 20261009T184936.948468Z (Reserve adds lagged coextinction along chains of dependence, Carries.chain_ends, with Carries.chain_ends_of_em under excluded middle as a hypothesis and the witness Cascade; Change adds exists_not_of_em). The claim is unchanged."
     }
   ]
 }

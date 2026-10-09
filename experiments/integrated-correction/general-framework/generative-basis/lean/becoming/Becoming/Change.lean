@@ -16,9 +16,10 @@ to be decidable at each step.
   it holds before and fails after (`ComesToBe`, `CeasesToBe`). A formation arising and
   ceasing, a dependence forming and dissolving, and a condition coming to stand and
   ceasing to stand are this one change (`Web.change_readings`). What holds and ceases at
-  no later step holds on (`persists`). A formation's support changes only through its
-  relations: it stays supported where no dependence forms or tightens and no condition it
-  depends on falls (`Web.supported_of`).
+  no later step holds on (`persists`). With excluded middle as a hypothesis, what does not
+  recur has a step after which it does not occur (`exists_not_of_em`). A formation's
+  support changes only through its relations: it stays supported where no dependence
+  forms or tightens and no condition it depends on falls (`Web.supported_of`).
 * **Rises and falls over a stretch.** Over any stretch of steps, an amount at the end with
   everything it fell is the amount at the start with everything it rose (`over_stretch`),
   and so for the total of a finite family with the rises and falls of its members
@@ -333,6 +334,15 @@ theorem persists {S : Nat} (holds : p S) (unceasing : ∀ t, S ≤ t → ¬ Ceas
     else absurd ⟨persists holds unceasing n, next⟩ (unceasing (S + n) (Nat.le_add_right S n))
 
 end Determination
+
+/-- With excluded middle, a negated universal has a counterexample. -/
+theorem exists_not_of_em (em : ∀ P : Prop, P ∨ ¬ P) {Q : Nat → Prop} (notAll : ¬ ∀ N, Q N) :
+    ∃ N, ¬ Q N :=
+  match em (∃ N, ¬ Q N) with
+  | .inl found => found
+  | .inr nothing => absurd (fun N => match em (Q N) with
+      | .inl q => q
+      | .inr nq => absurd ⟨N, nq⟩ nothing) notAll
 
 /-- How many members of a finite family come to be across the step from `t`. -/
 def comings (as : List α) (p : α → Nat → Prop) [∀ a t, Decidable (p a t)] (t : Nat) : Nat :=

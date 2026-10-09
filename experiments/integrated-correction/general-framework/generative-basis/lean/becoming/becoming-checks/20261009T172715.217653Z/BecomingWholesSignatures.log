@@ -1,0 +1,107 @@
+@Becoming.Web.whole_self : ∀ {F C : Type} (W : Becoming.Web F C) (f : F), W.Whole (fun x => x = f) f
+@Becoming.Web.Whole.arises_part : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F},
+  W.Whole parts w → ∀ {t : Nat}, W.Arises t w → ∃ p, parts p ∧ W.Arises t p
+@Becoming.Web.Whole.parts_unceasing : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F},
+  W.Whole parts w → (∀ (N : Nat), ∃ t, N ≤ t ∧ W.Arises t w) → ∀ (N : Nat), ∃ t p, N ≤ t ∧ parts p ∧ W.Arises t p
+@Becoming.Web.Ends.all : ∀ {F C : Type} {W : Becoming.Web F C} {l : List F},
+  (∀ (f : F), f ∈ l → W.Ends f) → ∃ M, ∀ (f : F), f ∈ l → ∀ (t : Nat), M ≤ t → ¬W.active t f
+@Becoming.Web.active_back : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {S k : Nat},
+  (∀ (j : Nat), j < k → ∀ (p : F), parts p → ¬W.Arises (S + j) p) →
+    ∀ {p : F}, parts p → W.active (S + k) p → ¬¬W.active S p
+@Becoming.Web.Covered.arises_within : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {d T : Nat},
+  W.Covered parts T →
+    (∀ (p : F), parts p → W.Brief d p) →
+      ∀ {S : Nat}, T ≤ S → ¬∀ (j : Nat), j < d → ∀ (p : F), parts p → ¬W.Arises (S + j) p
+@Becoming.Web.Covered.needs_arising : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {T : Nat}
+  {alive : Nat → List F},
+  W.Covered parts T →
+    W.Listed parts alive →
+      (∀ (p : F), parts p → W.Ends p) → ∀ (N : Nat), ¬∀ (t : Nat), N ≤ t → ∀ (p : F), parts p → ¬W.Arises t p
+@Becoming.Web.Covered.needs_new : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {T : Nat}
+  {alive : Nat → List F},
+  W.Covered parts T →
+    W.Listed parts alive →
+      (∀ (p : F), parts p → W.Ends p) →
+        ∀ {l : List F},
+          (∀ (p : F), p ∈ l → parts p) → ∀ (N : Nat), ¬∀ (t : Nat), N ≤ t → ∀ (p : F), parts p → ¬p ∈ l → ¬W.Arises t p
+@Becoming.Web.Whole.covered : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F},
+  W.Whole parts w → ∀ {T : Nat}, (∀ (t : Nat), T ≤ t → W.active t w) → W.Covered parts T
+@Becoming.Web.Whole.arises_within : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F} {d : Nat},
+  W.Whole parts w →
+    (∀ (p : F), parts p → W.Brief d p) →
+      ∀ {T : Nat},
+        (∀ (t : Nat), T ≤ t → W.active t w) →
+          ∀ {S : Nat}, T ≤ S → ¬∀ (j : Nat), j < d → ∀ (p : F), parts p → ¬W.Arises (S + j) p
+@Becoming.Web.Whole.needs_arising : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F}
+  {alive : Nat → List F},
+  W.Whole parts w →
+    W.Listed parts alive →
+      (∀ (p : F), parts p → W.Ends p) →
+        ∀ {T : Nat},
+          (∀ (t : Nat), T ≤ t → W.active t w) → ∀ (N : Nat), ¬∀ (t : Nat), N ≤ t → ∀ (p : F), parts p → ¬W.Arises t p
+@Becoming.Web.Whole.needs_new : ∀ {F C : Type} {W : Becoming.Web F C} {parts : F → Prop} {w : F} {alive : Nat → List F},
+  W.Whole parts w →
+    W.Listed parts alive →
+      (∀ (p : F), parts p → W.Ends p) →
+        ∀ {T : Nat},
+          (∀ (t : Nat), T ≤ t → W.active t w) →
+            ∀ {l : List F},
+              (∀ (p : F), p ∈ l → parts p) →
+                ∀ (N : Nat), ¬∀ (t : Nat), N ≤ t → ∀ (p : F), parts p → ¬p ∈ l → ¬W.Arises t p
+Becoming.Generations.whole : Becoming.Generations.web.Whole Becoming.Generations.parts
+  Becoming.Generations.Formation.lineage
+Becoming.Generations.listed : Becoming.Generations.web.Listed Becoming.Generations.parts Becoming.Generations.alive
+Becoming.Generations.ends : ∀ (p : Becoming.Generations.Formation),
+  Becoming.Generations.parts p → Becoming.Generations.web.Ends p
+Becoming.Generations.brief : ∀ (p : Becoming.Generations.Formation),
+  Becoming.Generations.parts p → Becoming.Generations.web.Brief 2 p
+Becoming.Generations.generations : Becoming.Generations.web.Whole Becoming.Generations.parts
+    Becoming.Generations.Formation.lineage ∧
+  Becoming.Generations.web.Listed Becoming.Generations.parts Becoming.Generations.alive ∧
+    (∀ (p : Becoming.Generations.Formation), Becoming.Generations.parts p → Becoming.Generations.web.Ends p) ∧
+      (∀ (p : Becoming.Generations.Formation), Becoming.Generations.parts p → Becoming.Generations.web.Brief 2 p) ∧
+        (∀ (t : Nat), Becoming.Generations.web.active t Becoming.Generations.Formation.lineage) ∧
+          (∀ (t : Nat), Becoming.Generations.web.Arises t (Becoming.Generations.Formation.member (t + 1))) ∧
+            ∀ (t : Nat), ¬Becoming.Generations.web.Arises t Becoming.Generations.Formation.lineage
+Becoming.Shifts.odd_two : ∀ (t : Nat), Becoming.odd (t + 2) = Becoming.odd t
+Becoming.Shifts.half_even : ∀ (t : Nat), Becoming.odd t = false → Becoming.Shifts.half (t + 1) = Becoming.Shifts.half t
+Becoming.Shifts.shifts : Becoming.Shifts.web.Whole Becoming.Generations.parts Becoming.Generations.Formation.lineage ∧
+  (∀ (p : Becoming.Generations.Formation), Becoming.Generations.parts p → Becoming.Shifts.web.Brief 2 p) ∧
+    (∀ (t : Nat), Becoming.Shifts.web.active t Becoming.Generations.Formation.lineage) ∧
+      ∀ (t : Nat), Becoming.odd t = false → ∀ (p : Becoming.Generations.Formation), ¬Becoming.Shifts.web.Arises t p
+Becoming.Immortal.immortal : Becoming.Immortal.web.Whole (fun x => x = true) false ∧
+  (Becoming.Immortal.web.Listed (fun x => x = true) fun x => [true]) ∧
+    (∀ (t : Nat), Becoming.Immortal.web.active t false) ∧
+      (∀ (t : Nat) (p : Bool), ¬Becoming.Immortal.web.Arises t p) ∧ ¬Becoming.Immortal.web.Ends true
+Becoming.Immortal.each_other : Becoming.Immortal.web.Whole (fun x => x = true) false ∧
+  Becoming.Immortal.web.Whole (fun x => x = false) true
+Becoming.Countless.whole : Becoming.Countless.web.Whole Becoming.Countless.parts none
+Becoming.Countless.ends : ∀ (p : Option Nat), Becoming.Countless.parts p → Becoming.Countless.web.Ends p
+Becoming.Countless.never : ∀ (t : Nat) (p : Option Nat), ¬Becoming.Countless.web.Arises t p
+Becoming.Countless.countless : Becoming.Countless.web.Whole Becoming.Countless.parts none ∧
+  (∀ (p : Option Nat), Becoming.Countless.parts p → Becoming.Countless.web.Ends p) ∧
+    (∀ (t : Nat), Becoming.Countless.web.active t none) ∧
+      (∀ (t : Nat) (p : Option Nat), ¬Becoming.Countless.web.Arises t p) ∧
+        ¬∃ alive, Becoming.Countless.web.Listed Becoming.Countless.parts alive
+Becoming.Gaps.whole : Becoming.Gaps.web.Whole Becoming.Generations.parts Becoming.Generations.Formation.lineage
+@Becoming.Gaps.alive_odd : ∀ {t : Nat},
+  Becoming.odd t = true → Becoming.Gaps.alive t = [Becoming.Generations.Formation.member t]
+@Becoming.Gaps.alive_even : ∀ {t : Nat}, Becoming.odd t = false → Becoming.Gaps.alive t = []
+Becoming.Gaps.listed : Becoming.Gaps.web.Listed Becoming.Generations.parts Becoming.Gaps.alive
+Becoming.Gaps.ends : ∀ (p : Becoming.Generations.Formation), Becoming.Generations.parts p → Becoming.Gaps.web.Ends p
+Becoming.Gaps.gaps : Becoming.Gaps.web.Whole Becoming.Generations.parts Becoming.Generations.Formation.lineage ∧
+  Becoming.Gaps.web.Listed Becoming.Generations.parts Becoming.Gaps.alive ∧
+    (∀ (p : Becoming.Generations.Formation), Becoming.Generations.parts p → Becoming.Gaps.web.Ends p) ∧
+      (∀ (N : Nat), ∃ t p, N ≤ t ∧ Becoming.Generations.parts p ∧ Becoming.Gaps.web.Arises t p) ∧
+        ∀ (t : Nat), Becoming.odd t = false → ¬Becoming.Gaps.web.active t Becoming.Generations.Formation.lineage
+Becoming.Layered.composed : Becoming.Layered.web.Whole (fun x => x ≠ Becoming.Layered.Level.lineage)
+  Becoming.Layered.Level.lineage
+Becoming.Layered.brief : ∀ (p : Becoming.Layered.Level),
+  p ≠ Becoming.Layered.Level.lineage → Becoming.Layered.web.Brief 1 p
+Becoming.Layered.within : ∀ (S : Nat),
+  ¬∀ (j : Nat),
+      j < 1 →
+        ∀ (p : Becoming.Layered.Level), p ≠ Becoming.Layered.Level.lineage → ¬Becoming.Layered.web.Arises (S + j) p
+Becoming.Layered.arise_again : (∀ (t : Nat) (p : Becoming.Layered.Level),
+    Becoming.Layered.web.Arises t p → p ∈ [Becoming.Layered.Level.first, Becoming.Layered.Level.second]) ∧
+  ¬Becoming.Layered.web.Ends Becoming.Layered.Level.first ∧ ¬Becoming.Layered.web.Ends Becoming.Layered.Level.second

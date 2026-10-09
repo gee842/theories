@@ -160,8 +160,8 @@
     "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading. The Mathlib bridge connects only the selection and safety interfaces of CorrectionBoundary and ObservationChange; their randomized bounds and real-valued models are not stated on the core, and the passage by choice to a single policy is not restated."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T170233.740799Z）：Becoming.Bridge 34 项定理（其中 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 属 ranking-under-readings），连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1091 项定理／1771 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261009T170422.519028Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 32 个模块（含核心）的当前字节与已通过回执一致。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T170233.740799Z): Becoming.Bridge's 34 theorems (Ranking.wholeRun_iff and Ranking.undisturbed_eq belonging to ranking-under-readings), with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1091 theorems/1771 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261009T170422.519028Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 32 modules in its closure, the core included, match passed receipts."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T184816.006618Z）：Becoming.Bridge 34 项定理（其中 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 属 ranking-under-readings），连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 27 个模块（含只作导入的根模块与桥接），共 1109 项定理／1793 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 29 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261009T184936.948468Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 32 个模块（含核心）的当前字节与已通过回执一致。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T184816.006618Z): Becoming.Bridge's 34 theorems (Ranking.wholeRun_iff and Ranking.undisturbed_eq belonging to ranking-under-readings), with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 27 modules (including the import-only root and the bridge) with 1109 theorems/1793 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 29 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261009T184936.948468Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 32 modules in its closure, the core included, match passed receipts."
   },
   "references": [
     {
@@ -371,13 +371,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "bde6225d8a17e47f64a045282184f8431c1d2984a9108bc1a164bb076965c841",
+      "sha256": "04b3f314e984416ca2920f055a160d60ed888b3cf98870b44da1f9fcbbaaa3d2",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "role": "receipt",
-      "sha256": "306e19ea3e7179331994d4ec1a643dc231b0ff41b5c93f2d496e35482bd8c1b7",
+      "sha256": "67eefd0516d698a091024f9c8985ddfeb94365f7527e6516e4f16dd15312442f",
       "declarations": []
     },
     {
@@ -395,7 +395,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f0376f13f9fe3f5c22f711b49baabbb2e764b5cf1da91644bcfa1f11e0104965",
+      "sha256": "09db9595720fd2c96afbf248a3fc7c6287124ef357839f71444fc92e4581a0a1",
       "declarations": []
     },
     {
@@ -695,6 +695,10 @@
     {
       "zh": "2026-10-10 P30：验证范围重新指向合并检查器回执 20261009T170233.740799Z 与外围回执 20261009T170422.519028Z（普查定律与有界定律改由普查的平衡证明，Change 加入 recurring_accumulates，Population 加入复现的精确读法、回到界内的定律、比率形式与依存的平衡，Openness 加入 CountedBy 与 slow）。断言不变。",
       "en": "2026-10-10 P30: validation scope re-pointed to consolidated receipt 20261009T170233.740799Z and periphery receipt 20261009T170422.519028Z (the census law and the bounded law now proved through the census balance; Change adds recurring_accumulates, Population the exact reading of recurrence, the law of a returning list, the form with rates and the balance of dependence, Openness CountedBy and slow). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P31：验证范围重新指向合并检查器回执 20261009T184816.006618Z 与外围回执 20261009T184936.948468Z（Reserve 加入沿依存之链的滞后共灭 Carries.chain_ends、以排中律为假设的 Carries.chain_ends_of_em 与见证 Cascade，Change 加入 exists_not_of_em）。断言不变。",
+      "en": "2026-10-10 P31: validation scope re-pointed to consolidated receipt 20261009T184816.006618Z and periphery receipt 20261009T184936.948468Z (Reserve adds lagged coextinction along chains of dependence, Carries.chain_ends, with Carries.chain_ends_of_em under excluded middle as a hypothesis and the witness Cascade; Change adds exists_not_of_em). The claim is unchanged."
     }
   ]
 }
