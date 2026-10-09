@@ -734,6 +734,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 检验其合作命名覆盖的经验对应，保留条件证明及覆盖失败反例；没有声称把注视数据形式转换为Lean候选集。 / Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed.
 
+## no-finite-part-bears-taking ← more-needs-renewers
+
+`formal-reuse` — 复用流、平衡、消耗与补充的平衡、取用者、More、ArisesTaking 与 Distinct；回答该记录界限中“把要求传到展开中更远之处需要耗散前提”。 / Reuses flows, balance, the balance of depletion and replenishment, takers, More, ArisesTaking and Distinct; answers that record's boundary that carrying the demand further along the unfolding needs a dissipation premise.
+
+**Producer output / 上游输出:** 平衡的流、取用者与更多。 / Balanced flows, takers and more.
+
+**Consumer input / 下游输入:** 耗散与封闭之下取用者的界与开放。 / Bounds on takers and openness under dissipation and closure.
+
+**Retained conditions / 保留条件:** 耗散（只用于开放的结论）。 / Dissipation (only for the openness conclusions).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## no-finite-part-bears-taking ← becoming-renewal-reading
+
+`formal-reuse` — taking_ceases 用下降原则 falls_finitely。 / taking_ceases uses the descent principle falls_finitely.
+
+**Producer output / 上游输出:** 下降原则。 / The descent principle.
+
+**Consumer input / 下游输入:** 被耗散的封闭家族上取用不再复现。 / Taking on a dissipated closed family does not recur.
+
+**Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
 ## open-form-realization-under-revision ← positive-ground-open-futures
 
 `formal-reuse` — positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.

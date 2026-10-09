@@ -6,7 +6,7 @@
 
 ## 已登记成果 / Registered results
 
-103 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+104 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -79,6 +79,7 @@
 | [更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成 / More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation](theories/becoming/results/records/more-needs-renewers.md) | recorded-checked | [Flow.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean) |
 | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](theories/becoming/results/records/multivalued-joining-common-structure.md) | recorded-checked | [ExplanatoryJoiningBranches.lean](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) |
 | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](theories/becoming/results/records/naming-attention-coverage.md) | reviewed-scoped | [README.md](experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md) |
+| [耗散之下没有有限部分独自承担持续的取用：取用复现的有限家族，连同包含它的每个有限家族，都须与其外交换 / Under dissipation no finite part bears continued taking alone: a finite family on which taking recurs, with every finite family containing it, must exchange beyond itself](theories/becoming/results/records/no-finite-part-bears-taking.md) | recorded-checked | [Dissipation.lean](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean) |
 | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](theories/becoming/results/records/open-form-realization-under-revision.md) | recorded-checked | [OpenFutureRevision.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) |
 | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](theories/becoming/results/records/organizational-formation-from-generative-comparison.md) | reviewed-scoped | [ETHICAL-LEARNING.md](theories/becoming/chapters/ETHICAL-LEARNING.md) |
 | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](theories/becoming/results/records/organizational-rule-inheritance.md) | recorded-checked | [OrganizationalRuleInheritance.lean](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean) |

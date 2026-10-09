@@ -34,7 +34,8 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Population", "Becoming.Identity",
-        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming"]
+        "Becoming.Dissipation", "Becoming.Metaethics", "Becoming.Ranking",
+        "Becoming.Correspondence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -154,6 +155,17 @@ SCOPE = (
     "keeping those of continuing dependences removes no undermining, while succession, joining a "
     "formation that ends with one that begins, can hide arising in a lineage and make drawing "
     "after an elder's loss undermine its heir. "
+    "Dissipation: a family is closed across a step when no formation taking part exchanges with "
+    "a condition outside it, and is dissipated on when every formation taking part gives it no "
+    "more than it takes from it and less when it takes; in a balanced flow a family dissipated on "
+    "falls across a step by at least its number of takers, its takers over all later steps number "
+    "at most its stock, and taking from it does not recur; so under dissipation on every closed "
+    "family without repetition, a finite family from which formations take at arbitrarily late "
+    "steps, and every finite family without repetition containing it, is open at arbitrarily late "
+    "steps, more without end and the unceasing arising of takers being such taking, and with "
+    "finitely many conditions in all taking does not recur; a sun burning a fresh fuel at every "
+    "step and giving a pool less than it burns, while ever more growers take from the pool, meets "
+    "these premises. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "

@@ -10,6 +10,7 @@ import Becoming.Generation
 import Becoming.Flow
 import Becoming.Population
 import Becoming.Identity
+import Becoming.Dissipation
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -59,6 +60,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and dependence rules out making arising and removing undermining; succession stays
   open. Under a census, more without end makes generation unceasing under every
   re-identification.
+* `Becoming.Dissipation` (L3): when giving always costs the conditions the giver takes
+  from more than it gives, a family closed from some step runs down and taking from it
+  stops. Taking that recurs, and so more without end, needs exchange beyond every finite
+  family of conditions; with finitely many conditions in all, taking does not recur.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

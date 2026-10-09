@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-103 migrated records: 99 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+104 migrated records: 100 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -83,6 +83,7 @@
 | `more-needs-renewers` | [更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成 / More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation](records/more-needs-renewers.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
 | `naming-attention-coverage` | [命名与所指注视的公开数据边界 / Public-data boundary of naming and target gaze](records/naming-attention-coverage.md) | assessment | reviewed-scoped |
+| `no-finite-part-bears-taking` | [耗散之下没有有限部分独自承担持续的取用：取用复现的有限家族，连同包含它的每个有限家族，都须与其外交换 / Under dissipation no finite part bears continued taking alone: a finite family on which taking recurs, with every finite family containing it, must exchange beyond itself](records/no-finite-part-bears-taking.md) | theorem | recorded-checked |
 | `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
 | `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
 | `organizational-rule-inheritance` | [社会组织中规则差异的形成与继承 / Formation and inheritance of organizational rule differences](records/organizational-rule-inheritance.md) | theorem | recorded-checked |

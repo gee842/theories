@@ -43,8 +43,9 @@ unfolding as amounts that the formations taking part in each step take and give
 * The renewers can be the takers themselves: in a closed cycle each formation gives
   back what it takes, the family's total never changes, and generation is more without
   end with as many renewers as takers (`Cycle`). That more must be carried beyond every
-  finite part of the unfolding would need dissipation: every giving costing the giver's
-  conditions more than it gives. That premise is not stated here.
+  finite part of the unfolding needs dissipation: every giving costing the giver's
+  conditions more than it gives. `Becoming.Dissipation` states that premise and proves
+  it.
 
 So, read through balanced flows: renewal can recur with nothing arising
 (`Tide.renewal_without_arising`), unceasing generation does not imply more without end,

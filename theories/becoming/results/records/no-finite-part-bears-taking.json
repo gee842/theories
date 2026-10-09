@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "id": "no-finite-part-bears-taking",
+  "title": {
+    "zh": "耗散之下没有有限部分独自承担持续的取用：取用复现的有限家族，连同包含它的每个有限家族，都须与其外交换",
+    "en": "Under dissipation no finite part bears continued taking alone: a finite family on which taking recurs, with every finite family containing it, must exchange beyond itself"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-09T05:12:53+00:00",
+  "claim": {
+    "zh": "在流上，一个条件家族跨某步封闭，当没有参与的形成从家族之外的条件取用或向其给予；一个形成在该步耗散于家族，当它给予家族的不多于从家族所取，取用时更少；流是耗散的，当每一步，每个在该步封闭的不重复家族都被耗散。在平衡的流中，被耗散的家族跨一步至少下降其取用者的数目；从某步起被耗散，此后任一段步上取用者的总数不超过当时的存量，取用不再复现。所以在耗散之下，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，在任意晚的步都不封闭：有参与的形成与其外的条件交换。不止地更多，以及在第一个活跃步取用的形成的不息生起，都是这样的取用。若有限个条件就是全部，取用不再复现。一个太阳每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内。没有耗散，封闭循环可以不止地更多（Cycle）。不用伦理前提，也不用 Lean 公理。",
+    "en": "On flows, a family of conditions is closed across a step when no formation taking part takes from or gives to a condition outside it; a formation dissipates on the family across the step when it gives the family no more than it takes from it, and less when it takes; a flow is dissipative when, across every step, every family without repetition closed across it is dissipated on. In a balanced flow a dissipated family falls across a step by at least its number of takers; dissipated from some step on, its takers over any later stretch number at most its stock there, and taking from it does not recur. So under dissipation a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is not closed at arbitrarily late steps: some formation taking part exchanges with a condition outside it. More without end, and the unceasing arising of formations taking at their first active step, are such taking. If finitely many conditions are all there is, taking does not recur. A flow in which a sun burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family. Without dissipation a closed cycle is more without end (Cycle). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "流平衡依存网；条件家族与每步参与的形成都是有限列表；量是自然数，单位可公度。",
+      "en": "The flow balances the web; families of conditions and the formations taking part at each step are finite lists; amounts are natural numbers with commensurable units."
+    },
+    {
+      "zh": "耗散（Dissipative）：每一步，每个在该步封闭的不重复家族上，每个参与的形成给予家族的不多于从家族所取，取用时更少。它要求给予者的代价表示为它所取的条件；对自由能这类量，这是物理前提，不是定理。",
+      "en": "Dissipation (Dissipative): across every step, on every family without repetition closed across it, every formation taking part gives the family no more than it takes from it, and less when it takes. It requires the giver's cost to be represented as conditions it takes from; for a quantity like free energy this is a physical premise, not a theorem."
+    },
+    {
+      "zh": "“有限部分”指有限的条件家族；结论只约束流中的取用。",
+      "en": "“Finite part” means a finite family of conditions; the conclusion constrains only taking in the flow."
+    }
+  ],
+  "correspondence": {
+    "zh": "第四次独立审查（H6、H12）指出，“任何有限部分都不能独自不息”与“没有一个有限的部分独自承担”需要耗散前提。本结果陈述这一前提，并在流中的取用上证明它。Ren 的原话是“生生不息 - 一种整体的，不断创造更多生的方向”。作者把结果读作原话中“整体”的一种形式内容：在耗散之下，不断的更多不能由任何有限的部分承担，只能由越出每个有限部分的展开承担（作者的诠释）；它不替代 Ren 的原话，也不推出它是好的。用自由能读耗散：物质可以在有限家族中循环（Cycle），驱动循环的来源须越出每个有限家族（AI 论证）。实际的量是否耗散、实际的展开是否在这一意义上有限，是经验问题。",
+    "en": "The fourth independent review (H6, H12) found that “no finite part is unceasing on its own” and “no finite part bears it alone” need a dissipation premise. This result states that premise and proves the claim for taking in flows. Ren's words are “生生不息 - 一种整体的，不断创造更多生的方向” (a whole direction of unceasingly creating more 生). The author reads the result as one formal content of “whole” in those words: under dissipation, unceasing more cannot be borne by any finite part, only by an unfolding reaching beyond every finite part (the author's interpretation); it does not replace Ren's words and does not show that it is good. Reading dissipation on free energy, matter can cycle within a finite family (Cycle) while the source driving the cycling must reach beyond every finite family (an AI argument). Whether actual quantities dissipate, and whether actual unfoldings are finite in this sense, are empirical questions."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+  "aliases": [
+    "Becoming.Flow.Dissipative",
+    "Becoming.Flow.Balances.runs_down",
+    "Becoming.Flow.Balances.takers_within",
+    "Becoming.Flow.Balances.taking_ceases",
+    "Becoming.Flow.Dissipative.opens",
+    "Becoming.Flow.Dissipative.finite_ceases",
+    "Becoming.Flow.More.opens",
+    "Becoming.Flow.opens_of_arising",
+    "Becoming.Frontier.frontier"
+  ],
+  "dependencies": [
+    {
+      "id": "more-needs-renewers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用流、平衡、消耗与补充的平衡、取用者、More、ArisesTaking 与 Distinct；回答该记录界限中“把要求传到展开中更远之处需要耗散前提”。",
+        "en": "Reuses flows, balance, the balance of depletion and replenishment, takers, More, ArisesTaking and Distinct; answers that record's boundary that carrying the demand further along the unfolding needs a dissipation premise."
+      },
+      "interface": {
+        "output": {
+          "zh": "平衡的流、取用者与更多。",
+          "en": "Balanced flows, takers and more."
+        },
+        "input": {
+          "zh": "耗散与封闭之下取用者的界与开放。",
+          "en": "Bounds on takers and openness under dissipation and closure."
+        },
+        "conditions": {
+          "zh": "耗散（只用于开放的结论）。",
+          "en": "Dissipation (only for the openness conclusions)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    },
+    {
+      "id": "becoming-renewal-reading",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "taking_ceases 用下降原则 falls_finitely。",
+        "en": "taking_ceases uses the descent principle falls_finitely."
+      },
+      "interface": {
+        "output": {
+          "zh": "下降原则。",
+          "en": "The descent principle."
+        },
+        "input": {
+          "zh": "被耗散的封闭家族上取用不再复现。",
+          "en": "Taking on a dissipated closed family does not recur."
+        },
+        "conditions": {
+          "zh": "无附加条件。",
+          "en": "No added conditions."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "unceasing-generation-needs-renewal",
+      "detail": {
+        "zh": "该结果的 dissipation_ceases 在依存网上陈述耗散；本结果在流上陈述，并把作者论证“任何有限部分都不能独自不息”在取用上变为定理。",
+        "en": "That result's dissipation_ceases states dissipation on webs; this result states it on flows and turns the author's argument that no finite part is unceasing on its own into a theorem for taking."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "整体与部分：在耗散之下，持续的取用由越出每个有限条件家族的展开承担。整体的演绎仍开放。",
+        "en": "Whole and parts: under dissipation, continued taking is borne by an unfolding reaching beyond every finite family of conditions. The whole deduction remains open."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "detail": {
+        "zh": "没有耗散，封闭的有限家族可以不止地更多（Cycle.closed_more）：每个形成归还所取，总量不变。",
+        "en": "Without dissipation a closed finite family can be more without end (Cycle.closed_more): each formation gives back what it takes and the total never changes."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "detail": {
+        "zh": "不取用的生起不受约束：Tide 的闪现者不汲取任何条件而不息地生起（Tide.unrelated_depletion）。",
+        "en": "Arising without taking is not constrained: the flicker of Tide draws on nothing and arises unceasingly (Tide.unrelated_depletion)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "detail": {
+        "zh": "前提相容并且结论可达（Frontier）：太阳每步燃烧一份新燃料，流平衡、耗散、不止地更多，包含池的每个有限家族在任意晚的步都不封闭。",
+        "en": "The premises are consistent and the conclusion is attained (Frontier): a sun burns a fresh fuel at every step, the flow balances, dissipates and is more without end, and every finite family containing the pool is open at arbitrarily late steps."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不含伦理谓词；耗散是物理前提，单位可公度，给予者的代价须表示为条件，省略来源的表示（如 Garden、Bloom 中的太阳）不满足它；结论只约束流中的取用，不约束不取用的生起；“有限部分”指有限条件家族，不是有限的形成集合；形成与条件仍是两类；Frontier 是最小见证，其来源没有尽头只是表示；与热寂的比较是作者的类比；新名称最终由 Ren 定。",
+    "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units, the giver's cost must be represented as conditions, and representations omitting the source (the sun of Garden and Bloom) do not meet it; the conclusion constrains only taking in the flow, not arising without taking; “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds; Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T050806.426336Z）：Becoming.Dissipation 28 项定理全部空依赖；同一回执覆盖包内 18 个模块（含只作导入的根模块与桥接），共 450 项定理／798 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 20 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T050806.426336Z): all 28 theorems of Becoming.Dissipation have empty axiom reports; the same receipt covers the package's 18 modules (including the import-only root and the bridge) with 450 theorems/798 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 20 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "90de437570e32d5bf864f6f606228435d5908d53c791d129943e98f9fed974d4",
+      "declarations": [
+        "Becoming.pos_of_sign",
+        "Becoming.sign_pos",
+        "Becoming.eq_zero_of_not_pos",
+        "Becoming.le_total_of_mem",
+        "Becoming.total_eq_zero",
+        "Becoming.total_le_at",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.DissipatesOn.replenishment_takers",
+        "Becoming.Flow.Balances.runs_down",
+        "Becoming.Flow.Balances.takers_within",
+        "Becoming.Flow.Balances.taking_ceases",
+        "Becoming.Flow.takers_pos_of_sub",
+        "Becoming.Flow.Dissipative.opens",
+        "Becoming.Flow.Dissipative.finite_ceases",
+        "Becoming.Flow.More.takers_recur",
+        "Becoming.Flow.takers_recur_of_arising",
+        "Becoming.Flow.More.opens",
+        "Becoming.Flow.opens_of_arising",
+        "Becoming.Frontier.Condition",
+        "Becoming.Frontier.Formation",
+        "Becoming.Frontier.unburnt",
+        "Becoming.Frontier.burning",
+        "Becoming.Frontier.burns",
+        "Becoming.Frontier.burning_self",
+        "Becoming.Frontier.burning_at",
+        "Becoming.Frontier.growers",
+        "Becoming.Frontier.flow",
+        "Becoming.Frontier.web",
+        "Becoming.Frontier.growers_take",
+        "Becoming.Frontier.growers_give",
+        "Becoming.Frontier.growers_take_fuel",
+        "Becoming.Frontier.balances",
+        "Becoming.Frontier.dissipative",
+        "Becoming.Frontier.takers_pool",
+        "Becoming.Frontier.more",
+        "Becoming.Frontier.frontier"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "3aaf674219eac41d6b3713767d2fd95c211037f495a9adc3f6875a3e983ec8f0",
+      "declarations": [
+        "Becoming.sign",
+        "Becoming.count",
+        "Becoming.steps",
+        "Becoming.total_swap",
+        "Becoming.total_add",
+        "Becoming.total_le",
+        "Becoming.total_pos",
+        "Becoming.total_pos_of_mem",
+        "Becoming.total_zero",
+        "Becoming.sign_le",
+        "Becoming.sign_le_one",
+        "Becoming.Flow",
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.uptake",
+        "Becoming.Flow.replenishment",
+        "Becoming.Flow.takers",
+        "Becoming.Flow.More",
+        "Becoming.Flow.ArisesTaking",
+        "Becoming.Flow.Balances.over",
+        "Becoming.Cycle.closed_more"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "e8570df9baa4085deb9cb10d948098cdefa3b64149008f1e3beaad0fbaf3c56a",
+      "declarations": [
+        "Becoming.Distinct"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "a166e615429bee3773c58bf6fea5f3ee5fe6a428754af9e33141ae850aa487ab",
+      "declarations": [
+        "Becoming.total",
+        "Becoming.Web.stock",
+        "Becoming.Web.dissipation_ceases",
+        "Becoming.Tide.unrelated_depletion"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
+      "role": "proof",
+      "sha256": "a8c448c07d0b0c5c9d889552286579d515f2751ca01e08f239d8fcc1fdaca5e6",
+      "declarations": [
+        "Becoming.falls_finitely"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
+      "role": "proof",
+      "sha256": "a7d7ad84853c9a16196eb1053675c6d24f36f5bc50e9037d1f9c76118e161789",
+      "declarations": [
+        "Becoming.le_of_add_le_add_right"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "57abff14900c8ea95b70457d65fe693598c7686343149086b3915676df817424",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "805db9f2a447a4a71ce852fa823f87d4a265d1fa01ea255f32bfd73a2cdcad73",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "af4d76efe947fc5e368d911adfcbae9cdc2e51aae0e221d748062e2c18cb199a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "role": "review",
+      "sha256": "aa26b8372d8c1b899d6e4dd1caadbddbd92f3f5ba74e49976b4b75e0b19b4ac7",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md",
+      "role": "provenance",
+      "sha256": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "f7d31d6df74b8d8a5a44d6b9bafcf0d50cadbe56c43c25b1f6667f6b2f40f4ea",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "耗散与可能性、多样性、复杂性的关系；有理数量的版本；不取用的生起是否另有耗散的形式；形成本身作为条件时的耗散；实际展开中耗散与开放的经验对应。",
+    "en": "The relation of dissipation to possibility, diversity and complexity; a version with rational amounts; whether arising without taking has its own form of dissipation; dissipation when a formation is itself a condition; the empirical correspondence of dissipation and openness in actual unfoldings."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：作为整合计划 P13 新增，陈述第四次独立审查 H6、H12 所要求的耗散前提；按 Ren“move on to pursue the theory of becoming, and prove the necessary proofs”。",
+      "en": "2026-10-09: added as P13 of the unification plan, stating the dissipation premise asked for by H6 and H12 of the fourth independent review; following Ren's “move on to pursue the theory of becoming, and prove the necessary proofs”."
+    }
+  ]
+}

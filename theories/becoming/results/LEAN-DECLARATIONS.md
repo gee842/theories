@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 152 | 2,324 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 153 | 2,352 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -164,6 +164,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [DevelopmentalMemory.lean](lean-declarations/ethics.md#module-8d5a4d8f682e) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [DevelopmentalReconstruction.lean](lean-declarations/ethics.md#module-9d89d2b46f4e) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [DiagnosticTracking.lean](lean-declarations/learning.md#module-000cb4a6ef8b) | 学习、预测与动力学 / Learning, prediction and dynamics |
+| [Dissipation.lean](lean-declarations/core.md#module-adfdfa242506) | 生成核心与关系结构 / Generative core and relational structure |
 | [DriftMargins.lean](lean-declarations/ethics.md#module-3d946731f17f) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [Driver.lean](lean-declarations/other.md#module-db86581947bf) | 其他形式研究 / Other formal studies |
 | [DynamicClassification.lean](lean-declarations/core.md#module-b7c8638a14c9) | 生成核心与关系结构 / Generative core and relational structure |
