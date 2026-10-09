@@ -886,6 +886,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## map-of-premises ← space-and-its-parts
+
+`formal-reuse` — 复用世界、其部分与前提（World）、静止（rests）、unbalanced 与 mutualism 两个世界。 / Reuses worlds, their parts and premises (World), rest (rests), and the worlds unbalanced and mutualism.
+
+**Producer output / 上游输出:** 世界上的七个前提各有满足与不满足它的世界；有限、平衡、耗散且生起者体现的世界归于静止。 / Seven premises on worlds, each met and failed by some world; a finite, balanced, dissipative world whose arising is embodied comes to rest.
+
+**Consumer input / 下游输入:** 八个前提的地图：蕴含、独立与全部满足；有限世界中全部前提一起归于静止。 / The map of eight premises: implications, independence and one world meeting all; in a finite world all together come to rest.
+
+**Retained conditions / 保留条件:** 有限与活动可判定（只对 premised_rests）。 / Finite and decidable activity (premised_rests only).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
+## map-of-premises ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用耗散（Dissipative）、被围住的步（Enclosed）与给予需要取用（giving_needs_uptake）。 / Reuses dissipation (Dissipative), enclosed steps (Enclosed) and giving needing uptake (giving_needs_uptake).
+
+**Producer output / 上游输出:** 耗散之下，被围住的步上给予的形成从某个条件取用。 / Under dissipation, across an enclosed step a formation that gives takes from some condition.
+
+**Consumer input / 下游输入:** 只有活跃者取用且耗散时，每个被围住的步上只有活跃者给予。 / Where only active relata take and the flow dissipates, only active relata give across every enclosed step.
+
+**Retained conditions / 保留条件:** 每一步都被围住；有限世界中自动成立。 / Every step enclosed; automatic in a finite world.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## map-of-premises ← more-needs-renewers
+
+`formal-reuse` — 复用普查（Census）与不重复的列表（Distinct）。 / Reuses the census (Census) and lists without repetition (Distinct).
+
+**Producer output / 上游输出:** 普查不重复地列出每步活跃的形成。 / A census lists the formations active at each step, each once.
+
+**Consumer input / 下游输入:** 世界上的普查前提；活动可判定的有限世界有普查。 / The census as a premise of worlds; a finite world whose activity is decided has one.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decidable activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## map-of-premises ← evolution-on-descent
+
+`formal-reuse` — 复用世系（DescendsAt）与有界传递（TransmitsWithin）。 / Reuses descent (DescendsAt) and bounded transmission (TransmitsWithin).
+
+**Producer output / 上游输出:** 在一个界内传递对某个条件的依存。 / Transmission of a dependence on a condition within a bound.
+
+**Consumer input / 下游输入:** 世界上的有界传递前提；它的反例 novel。 / Bounded transmission as a premise of worlds; its countermodel novel.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
+## map-of-premises ← reserve-defers-ending
+
+`formal-reuse` — 复用零储备恰是 Dependent（carries_zero）。 / Reuses that Dependent is exactly the zero reserve (carries_zero).
+
+**Producer output / 上游输出:** 零储备承载活动当且仅当活动需要支持。 / The zero reserve carries activity exactly when activity needs support.
+
+**Consumer input / 下游输入:** 活动需要支持推出有储备承载。 / Activity needing support makes activity carried.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean)
+
+## map-of-premises ← life-as-condition-of-life
+
+`formal-reuse` — 复用体现（Embodied）与 Mutualism。 / Reuses embodiment (Embodied) and Mutualism.
+
+**Producer output / 上游输出:** 互利者都体现，活动需要支持。 / The mutualists are embodied, and their activity needs support.
+
+**Consumer input / 下游输入:** 满足全部八个前提的世界。 / A world meeting all eight premises.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
 ## market-finite-support-obstruction ← market-supported-finite-transition
 
 `formal-reuse` — 复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。 / Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction.

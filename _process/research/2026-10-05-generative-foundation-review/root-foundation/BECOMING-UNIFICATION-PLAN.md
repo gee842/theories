@@ -237,6 +237,9 @@ Three rings, with dependence pointing only toward the core; one checker and one 
 | P22 整体与其部分 ✓ | 新模块 `Becoming.Space`：P19 的规律对整个空间成立；`Dependent`、`Balances`、`Dissipative`、`Embodied`、`Acting`、`Carries` 等每个前提都有满足与不满足它的展开；生成的（生成不息）、退化的（消耗、终结）、混合的与“每个事件都 living”的部分都非空，且彼此交叠 | 已完成：[研究 §30](BECOMING-RENEWAL-READING.md#30-整体与其部分p22)。Ren 提议的形式内容：规律对整体成立，前提划出部分。L3 新模块 `Becoming.Space`（导入 `Evolution` 与 `Reserve`）：世界（`World`，以一类读法的关系项、流与依存网；两类读法经 `ofRoles` 嵌入）与其部分（`Generative`、`Degenerative`、`Living` 与七个前提）；有限且活动可判定的世界中生成复现恰当退化复现（`generative_iff`），无限时分离（`separate`）；七个前提各有满足与不满足它的世界（`contingent`；新世界 `idle`、`restless`、`unbalanced`、`spending`）；有限世界中生成与否都既可都活也可有不活（`living_crosses`）；耗散使有限、平衡且生起者体现的世界归于静止（`rests`），每个前提都不可少（`rests_needs`）。原计划写的 `Carries` 读作“有储备承载”（`Carried`）；`Census` 等其余前提与前提组合的地图列入下一步。记录 [space-and-its-parts](../../../../theories/becoming/results/records/space-and-its-parts.md)。回执 20261009T114557.489291Z（939 项定理／1501 项声明审计） |
 | P23 完整的陈述 ✓ | 正典章节加“完整的生成之论”一节：整体的规律、前提划出的部分、生与灭的统一、后续活动的条件、演化与评价的位置；根基章节的完成审计；根基记录的下一步；开放纲领按四类重排 | 已完成：[研究 §31](BECOMING-RENEWAL-READING.md#31-完整的陈述与完成审计p23)。正典章节新增“理论的完整陈述”（五部分，每条标明表示／规律／定理／公理／读法／开放）；第 8 节为现状表与四类开放项（Ren 的选择、哲学根据、经验对应、进一步的证明），每个原有的下一步都已归类；根基章节完成审计各行加入脊柱的证据，剩余推论不变；根基记录的下一步改写并保留中心推论；表示的范围列为哲学根据。无新增 Lean 声明或成果身份；形式陈述的完整不写成必然性已证 |
 | P23b 第九次独立审查 | 另一 agent 审查 P19–P23 | 逐项处理 |
+| P23c 第九次审查的处理 | 逐项处理第九次审查（M1…） | 每项关闭或说明保留理由；更正进入核心、记录与正文 |
+| P24 前提的地图 ✓ | 新 L3 模块 `Becoming.Premises`（导入 `Space`）：前提在世界上的形式补全（普查 `Censused`、有界传递 `Transmits`）；前提之间的蕴含（`Dependent` 推出有储备承载，`Embodied` 推出生起者体现，有限推出普查，有限世界中 `Taking` 与 `Dissipative` 推出 `Acting`，一般地在被围住的步上）；其余彼此独立：八个前提各有一个世界满足其余七个而不满足它；一个有活动的世界满足全部；有限世界中全部前提一起使世界归于静止 | 已完成：[研究 §32](BECOMING-RENEWAL-READING.md#32-前提的地图p24)，在第九次审查进行时完成。L3 新模块 `Becoming.Premises`（导入 `Space`）：世界上的普查（`Counted`）与有界传递（`Transmitting`）；蕴含 `Dependent.carried`、`Finite.counted`、`acting_of_enclosed`、`Finite.acting`；八个前提彼此独立（`independent`、`none_follows`；世界 strained、unbalanced、scatter、morsel、keeping、latent、multitude、novel），不满足普查与只有活跃者给予的两个世界都是无限的；互利者满足全部（`mutualism_premised`）；有限世界中全部前提一起归于静止（`premised_rests`）。记录 [map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)。回执 20261009T122536.558190Z（974 项定理／1583 项声明审计），外围回执 20261009T124123.560754Z |
+| P24b 第十次独立审查 | 另一 agent 审查 P23c 与 P24 | 逐项处理 |
 
 各阶段沿用既有流程：先在暂存区编译并核对公理，再登记包、写记录与研究章节，跑全部检查，最后提交。读法、名称、“生”的范围与接续仍由 Ren 定，见上文第 6 节与研究各节的“边界”。
 
@@ -255,5 +258,8 @@ The phases are:
 - P22: the whole and its parts (the space of worlds, laws of the whole, premises carving parts, living crossing generation, and dissipation bringing a finite world to rest).
 - P23: the complete statement (the theory stated in full, with a status for each item; the open programme in four classes; the completion audit with the spine's evidence).
 - P23b: the ninth review.
+- P23c: integrating the ninth review.
+- P24: the map of premises (world forms of the census and of bounded transmission; which premises follow from which, including that in a finite world only active relata give where only active relata take and the flow dissipates; the independence of the rest, each failed by a world meeting all the others; one active world meeting them all; and all of them together bringing a finite world to rest).
+- P24b: the tenth review, of P23c and P24.
 
 Formal completeness of a representation does not establish the deductive necessity of the whole for reality, and the readings and names remain Ren's.

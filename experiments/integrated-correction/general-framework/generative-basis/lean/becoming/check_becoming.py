@@ -38,8 +38,9 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Metaethics",
-        "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent", "Becoming"]
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.Correspondence", "Becoming.Descent",
+        "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -397,6 +398,15 @@ SCOPE = (
     "not living; in a finite, balanced, dissipative world in which whatever arises is embodied, "
     "neither generation nor degeneration recurs, and without finiteness, dissipation, balance or "
     "embodiment generation can recur. "
+    "Premises: a census and bounded transmission are premises of worlds too; activity needing "
+    "support makes activity carried, embodiment makes whatever arises embodied, a finite world "
+    "whose activity is decided has a census, and where only active relata take and the flow "
+    "dissipates only active relata give across every enclosed step, as every step of a finite "
+    "world is; activity needing support, balance, only active relata giving, only active relata "
+    "taking what they draw on, dissipation, embodiment, a census and bounded transmission are "
+    "independent, each failed by a world meeting the other seven, the worlds failing a census or "
+    "only active relata giving being infinite; mutualists active throughout meet all eight, and "
+    "in a finite world the eight together bring generation and degeneration to an end. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "

@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-113 migrated records: 109 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+114 migrated records: 110 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -78,6 +78,7 @@
 | `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
 | `life-as-condition-of-life` | [回答“生作为生的条件”：形成与条件是一个关系项的两种角色，体现的关系项作为条件，并经由另一个活跃者的给予而生起 / Answering ‘life as a condition of life’: formations and conditions are two roles of one relatum, an embodied relatum is a condition, and it arises through another's giving](records/life-as-condition-of-life.md) | theorem | recorded-checked |
 | `living-on-and-descent` | [以之为生与世系使关系项直接相关：一类读法提供的两种 related / Living on and descent relate relata directly: two readings of related that the one-kind reading supplies](records/living-on-and-descent.md) | theorem | recorded-checked |
+| `map-of-premises` | [前提的地图：哪些前提推出哪些，其余八个彼此独立；一个世界满足全部，有限世界中全部前提一起使世界归于静止 / The map of premises: which premises follow from which, the remaining eight independent; one world meets them all, and in a finite world all of them together bring it to rest](records/map-of-premises.md) | theorem | recorded-checked |
 | `market-finite-support-obstruction` | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](records/market-finite-support-obstruction.md) | theorem | recorded-checked |
 | `market-partial-correction-boundary` | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](records/market-partial-correction-boundary.md) | theorem | recorded-checked |
 | `market-protected-continuation` | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](records/market-protected-continuation.md) | theorem | recorded-checked |

@@ -1931,6 +1931,54 @@ Integration: 计划 P23；根基章节第 5 节；为 P23b 的第九次审查提
 
 **边界。** 无新定理；规律只对脊柱所表示的世界成立；归类是 AI 的判断；“生”“生生”的读法与名称由 Ren 定。本节尚未经独立审查（计划 P23b）。
 
+## 32. 前提的地图（P24）
+
+2026-10-09。按同一指示继续计划 P24，在第九次审查进行时完成。计划对“完整”的第三条读法要求每个动力学前提划出整个空间的真部分；§30 对七个前提给出了这一点。本节补上其余世界层面的前提，并把前提彼此对照：哪些推出哪些，其余是否独立。新 L3 模块 `Becoming.Premises`（导入 `Space`）。成果记录：[map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)。
+
+```text
+Result(s): 复用 space-and-its-parts（World、rests、unbalanced、mutualism）、no-finite-part-bears-taking（Enclosed、
+           giving_needs_uptake）、more-needs-renewers（Census、Distinct）、evolution-on-descent（DescendsAt、
+           TransmitsWithin）、reserve-defers-ending（carries_zero）、life-as-condition-of-life（Embodied、Mutualism）；
+           新增 map-of-premises
+Delta: Premises：世界上的普查（Counted）与有界传递（Transmitting）；蕴含 Dependent.carried、Finite.counted、
+       Finite.enclosed、acting_of_enclosed、Finite.acting、follows；premises、Premised、MeetsAllBut；八个独立性世界
+       strained、unbalanced、scatter、morsel、keeping、latent、multitude、novel；independent、none_follows；
+       mutualism_premised、premised_rests；列表工具 beyond、keep 及其引理
+Supplied premises / correspondence: Finite.counted 与 premised_rests 要求活动可判定；acting_of_enclosed 要求每一步都被围住；
+       其余是关于具体世界的陈述
+Evidence: 合并检查器回执（见记录）；外围桥接重跑；实例检查
+Boundary: 只映射世界层面的八个前提；独立性相对于这八个；相对于另一读法的前提未映射；不评价任何部分
+Integration: 计划 P24；完整性的第三条读法；为第十次审查（P24b）提供对象
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Counted`、`Transmitting` | 世界上的普查：每步活跃的关系项被不重复地列出，所以每步只有有限多个活跃；世界上的有界传递：世系在一个界内传递每个依存 |
+| `Dependent.carried` | 活动需要支持推出有储备承载（零储备，`carries_zero`） |
+| `Finite.counted` | 活动可判定的有限世界有普查：从全部关系项中留下每步活跃的 |
+| `acting_of_enclosed`、`Finite.enclosed`、`Finite.acting` | 只有活跃者取用且耗散时，在每个被围住的步上只有活跃者给予，因为那里给予需要取用；有限世界的每一步都被围住 |
+| `premises`、`Premised`、`MeetsAllBut` | 八个前提的列表；满足全部；满足除 `P` 以外的全部而不满足 `P` |
+| `independent` | strained（不满足活动需要支持）、unbalanced（平衡）、scatter（只有活跃者给予）、morsel（只有活跃者取用其所汲取的）、keeping（耗散）、latent（体现）、multitude（普查）、novel（有界传递），各满足其余七个 |
+| `none_follows` | 所以没有一个前提由其余七个推出 |
+| `mutualism_premised`、`premised_rests` | 始终活跃的互利者满足全部八个；有限且活动可判定的世界中，八个一起使生成与退化都不再复现 |
+
+**解读。**
+
+- **前提之间的结构。** 十个世界层面的前提里，有两个是另一个的较弱形式：有储备承载弱于活动需要支持（零储备），生起者体现弱于每个关系项体现。一个在有限世界中自动成立：普查。一个由另两个在被围住的步上推出：只有活跃者取用与耗散推出只有活跃者给予，因为耗散之下给予需要取用。这一条是新的：P13 的“给予需要取用”在世界层面读作，只有活跃者取用时，不活跃的关系项在有限世界中不能给予。
+- **其余八个彼此独立。** 对每个前提，都有一个世界满足其余七个而不满足它。所以没有一个前提藏在其余之中：每个都是对世界的独立限定。不满足普查的世界（multitude）与不满足只有活跃者给予的世界（scatter）都是无限的；这不是选择见证的巧合，而是蕴含要求的：有限世界有普查，并且在其中只有活跃者取用与耗散推出只有活跃者给予。scatter 中没有一步被围住：每步的交换都伸到无限多个关系项，耗散空成立，P16b 已经披露这种情形（`Spray`）。
+- **novel：依存在世系中新形成。** 亲代烧掉燃料的两个单位，给子代一个单位，使子代开始作为条件而在；子代开始依存于亲代，而亲代自己从未有这一依存。所以有界传递不成立：世系中出现了新的依存，而不是传下来的。这是 §29 中“传递是前提”的见证：novel 满足其余七个前提，有界传递却不成立，所以传递不由它们推出。
+- **全部一起。** 互利者满足全部八个，所以前提一起是相容的，并且不空：有活动，有依存，有体现。在有限世界中，八个一起使世界归于静止（§30 的 `rests`，生起者体现由体现推出）。所以一个有限的世界若满足全部前提并继续生成，是不可能的；继续生成需要越出某个前提，或者越出有限。
+
+**作者反审。**
+
+*反驳 1：独立性见证太小、太人工。* 是小的。独立性只需要每个前提各有一个反模型；见证越小，越清楚地显示是哪个前提失败。它们不是对实际展开的描述，名称也由 Ren 定。
+
+*反驳 2：“八个前提”的选择是任意的。* 部分是。这八个是脊柱定理在世界层面用到的动力学前提；相对于另一读法的前提（延续关系、更新关系、衰减的储备、条件家族）不是世界本身的限定，需要另一种地图；流中每个参与者只列一次是表示的条件。加入新前提时，独立性要重新检查，可能出现新的蕴含。
+
+*反驳 3：premised_rests 只是 rests 的重述。* 是推论，不是独立结果；它显示的是：满足全部前提的有限世界没有继续生成的余地。新的内容是蕴含、两个新前提与独立性。
+
+**边界。** 无伦理谓词，不评价任何部分；只对离散步的读法陈述；有限世界的蕴含要求活动可判定；只映射世界层面的八个前提；前提与世界的名称是 AI 的表述，由 Ren 定。本节尚未经独立审查（计划 P24b）。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -2165,3 +2213,13 @@ The package now has 939 theorems and 1501 declaration audits, over a core closur
 - **A wording correction.** The record generation-is-replenishment no longer says that every arising of life is a replenishment; it says that an arising embodied relatum which is itself a condition of others is read as 生 only under Ren's reading.
 
 Section 31 has not yet been independently reviewed.
+
+**P24: the map of premises.** The plan's third part of completeness asks that each dynamical premise carve a proper part of the whole space; section 30 gave this for seven premises. Section 32 adds the remaining premises stated of worlds and maps the premises against one another, in a new L3 module `Becoming.Premises` (importing `Space`) ([map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)). It was completed while the ninth review ran.
+
+- **Two more premises.** A census (`Counted`) and bounded transmission (`Transmitting`) are premises of worlds too.
+- **What follows from what.** Activity needing support makes activity carried, by the zero reserve (`Dependent.carried`). Every relatum embodied makes whatever arises embodied. A finite world whose activity is decided has a census (`Finite.counted`). Where only active relata take and the flow dissipates, only active relata give across every enclosed step, since giving needs uptake there; every step of a finite world is enclosed (`acting_of_enclosed`, `Finite.acting`).
+- **The remaining eight are independent.** For each of activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, embodiment, a census and bounded transmission, a world meets the other seven and not it (`independent`), so none follows from the others (`none_follows`). The worlds failing a census (`multitude`) and failing only active relata giving (`scatter`) are infinite, as the implications require. In `novel` a child comes to depend on the parent that gave it its standing, a dependence the parent never had, so transmission fails.
+- **All together.** Mutualists active throughout meet all eight (`mutualism_premised`), and in a finite world the eight together bring the world to rest (`premised_rests`, a corollary of `rests`).
+- **Boundaries.** Only the eight premises stated of worlds are mapped; premises relative to a continuation relation, a renewal relation, a decaying reserve or a family of conditions are not. Independence is relative to these eight. No part is evaluated, and the names are Ren's to choose.
+
+The package now has 974 theorems and 1583 declaration audits, over a core closure of 28 modules and a package of 26, all source declarations with empty axiom reports. Section 32 has not yet been independently reviewed.
