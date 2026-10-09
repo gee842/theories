@@ -1,0 +1,32 @@
+import Sketch.Continuation
+open Becoming
+#print axioms Becoming.Valuation.Held
+#print axioms Becoming.Valuation.significant_iff_held
+#print axioms Becoming.Valuation.Unheld
+#print axioms Becoming.Valuation.significant_iff_reached
+#print axioms Becoming.OwnStandpoints.standpoint_neutrality_is_needed
+#print axioms Becoming.Unheld.held_is_needed
+#print axioms Becoming.Reached.related
+#print axioms Becoming.Reached.valuation
+#print axioms Becoming.Reached.transmission_is_needed
+#print axioms Becoming.OwnStandpoints.own
+#print axioms Becoming.OwnStandpoints.valuation
+#print axioms Becoming.Unheld.own
+#print axioms Becoming.Unheld.valuation
+#print axioms Becoming.Flow.Conveys
+#print axioms Becoming.Flow.FedFromBeyond
+#print axioms Becoming.Flow.inward_of_not_fed
+#print axioms Becoming.Flow.fed_from_beyond
+#print axioms Becoming.Flow.conveyance
+#print axioms Becoming.Flow.boundary_crossed
+#print axioms Becoming.Flow.valuing_reaches_source
+#print axioms Becoming.Flow.WithinOwn
+#print axioms Becoming.Flow.WithinJoint
+#print axioms Becoming.Flow.joint_keeps
+#print axioms Becoming.Flow.excess_lowers
+#print axioms Becoming.Flow.excess_bounded
+#print axioms Becoming.Pair.flow
+#print axioms Becoming.Pair.own_not_joint
+#print axioms Becoming.Pair.no_web
+#print axioms Becoming.Flow.Cut
+#print axioms Becoming.Flow.region_not_a_cut
