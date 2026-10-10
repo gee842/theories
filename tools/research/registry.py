@@ -130,6 +130,7 @@ def validate(records):
         if r.get('status') == 'recorded-checked' and not r.get('proof_bindings'):
             fail('recorded-checked needs a source hash binding in its existing receipt')
         refs_by_path = {x['path']: x for x in refs}
+        listed = set()
         for binding in r.get('proof_bindings', []):
             try:
                 source = refs_by_path[binding['source']]
@@ -146,11 +147,20 @@ def validate(records):
                 module = binding['sha256_pointer'].rsplit('/', 1)[-1]
                 elaborated = {d.get('name') for m in data.get('modules', []) if isinstance(m, dict) and m.get('module') == module
                               for d in m.get('declarations', []) if isinstance(d, dict)}
+                listed |= {d.get('name') for m in data.get('modules', []) if isinstance(m, dict)
+                           for d in m.get('declarations', []) if isinstance(d, dict) and d.get('name')}
                 unknown = [n for n in source.get('declarations', []) if elaborated and n not in elaborated]
                 if unknown:
                     raise ValueError(f'declarations not elaborated in {module}: {", ".join(unknown)}')
             except (KeyError, IndexError, ValueError, TypeError, OSError) as exc:
                 fail(f'invalid proof receipt binding: {exc}')
+        # An alias written as a Lean name, in a namespace the bound receipts list, must be
+        # among the declarations they list.
+        roots = {n.split('.')[0] for n in listed}
+        for alias in r.get('aliases', []):
+            if isinstance(alias, str) and re.fullmatch(r"[A-Za-z_][\w']*(?:\.[\w'!?]+)+", alias) \
+                    and alias.split('.')[0] in roots and alias not in listed:
+                fail(f'alias not elaborated in the bound receipts: {alias}')
         if r.get('status') == 'reviewed-scoped' and not {'statement', 'review'} <= roles:
             fail('reviewed-scoped needs statement and review')
         if not isinstance(r.get('dependencies'), list) or not isinstance(r.get('related'), list):

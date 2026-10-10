@@ -53,6 +53,15 @@ class RegistryTests(unittest.TestCase):
                     return
         self.skipTest('no receipt lists elaborated declarations')
 
+    def test_unelaborated_alias_is_rejected(self):
+        for r in self.records:
+            for alias in r.get('aliases', []):
+                if alias.startswith('Becoming.') and r.get('proof_bindings'):
+                    r['aliases'].append(alias + '_nowhere')
+                    self.assertIn('alias not elaborated', self.errors())
+                    return
+        self.skipTest('no record has a Lean alias and a receipt binding')
+
     def test_open_target_cannot_be_claimed_complete(self):
         next(r for r in self.records if r['kind'] == 'target')['status'] = 'reviewed-scoped'
         self.assertIn('a target cannot be marked completed', self.errors())

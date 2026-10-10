@@ -122,11 +122,6 @@ theorem sign_pos : ∀ {n : Nat}, 0 < n → 0 < sign n
   | 0, positive => positive
   | _ + 1, _ => Nat.succ_pos 0
 
-/-- A member's value is at most the total. -/
-theorem le_total_of_mem {q : α → Nat} {a : α} : ∀ {as : List α}, a ∈ as → q a ≤ total as q
-  | _ :: _, .head _ => Nat.le_add_right _ _
-  | b :: _, .tail _ mem => Nat.le_trans (le_total_of_mem mem) (Nat.le_add_left _ (q b))
-
 theorem total_eq_zero {q : α → Nat} : ∀ {as : List α}, (∀ a, a ∈ as → q a = 0) → total as q = 0
   | [], _ => rfl
   | a :: _, zero => (congrArg (· + _) (zero a (.head _))).trans

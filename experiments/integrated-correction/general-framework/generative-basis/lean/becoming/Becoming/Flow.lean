@@ -166,6 +166,11 @@ theorem total_pos_of_mem {q : α → Nat} {a : α} :
   | b :: _, .tail _ mem, positive =>
     Nat.lt_of_lt_of_le (total_pos_of_mem mem positive) (Nat.le_add_left _ (q b))
 
+/-- A member's value is at most the total. -/
+theorem le_total_of_mem {q : α → Nat} {a : α} : ∀ {as : List α}, a ∈ as → q a ≤ total as q
+  | _ :: _, .head _ => Nat.le_add_right _ _
+  | b :: _, .tail _ mem => Nat.le_trans (le_total_of_mem mem) (Nat.le_add_left _ (q b))
+
 /-- A positive total has a positive member. -/
 theorem total_pos {q : α → Nat} : ∀ as : List α, 0 < total as q → ∃ a, a ∈ as ∧ 0 < q a
   | a :: as, pos => match h : q a with

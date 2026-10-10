@@ -1,0 +1,13 @@
+import Becoming.Horizon
+#check @Becoming.Commons.prefix_does_not_decide
+#check @Becoming.Commons.finite_reading_credits_consumption
+#check @Becoming.Commons.whole_run_credits_overdraw
+#check @Becoming.Commons.amount_reading
+#check @Becoming.Commons.cycle_reading_not_finite
+#check @Becoming.Feedback.step_two
+#check @Becoming.Feedback.step_one
+#check @Becoming.Feedback.descending
+#check @Becoming.Feedback.at_horizon
+#check @Becoming.Feedback.after_horizon
+#check @Becoming.Feedback.supported
+#check @Becoming.Feedback.prefix_does_not_decide

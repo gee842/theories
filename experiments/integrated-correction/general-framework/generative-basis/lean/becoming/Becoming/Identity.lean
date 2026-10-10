@@ -91,10 +91,10 @@ Results:
   end (`Fork`), while under a continuation in which new formations bud from one already
   there the same growth forces no arising after the first step (`Budding`). What
   survives every reading is the count, ever more formations active.
-* Across one step, exactly. Whatever formations stand before and after a step, more
+* Across one step, exactly. Whatever formations are listed before and after a step, more
   forces arising under a continuation exactly when no formation continues as two
   (`forces_iff_noSplit`); and under every continuation without splits, arising is forced
-  exactly when more formations stand after the step than before (`forced_iff_more`):
+  exactly when more formations are listed after the step than before (`forced_iff_more`):
   with no more, pairing the formations in order continues every one without a split
   (`paired`). A split at one step leaves formations arising at the others (`Fork`).
 * The census balance under a continuation. Under a continuation, a formation ceases
@@ -685,9 +685,9 @@ theorem paired_covers : ∀ {before after : List F}, after.length ≤ before.len
       | ⟨g', mem', continues⟩ => ⟨g', .tail g mem', .inr continues⟩
 
 /-- And across one step, under every continuation in which no formation continues as two,
-arising is forced exactly when more formations stand after the step than before: where no
-more do, pairing the lists in order continues every formation after the step, with no
-split. -/
+arising is forced exactly when more formations are listed after the step than before:
+where no more are, pairing the lists in order continues every formation after the step,
+with no split. -/
 theorem forced_iff_more {before after : List F} (apart : Distinct before)
     (distinct : Distinct after) :
     (∀ S : F → F → Prop, (∀ g f f', S g f → S g f' → f = f') →

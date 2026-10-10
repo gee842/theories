@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T19:28:00+00:00",
+  "reviewed_at_utc": "2026-10-10T07:58:04+00:00",
   "claim": {
     "zh": "普查定律（ceasing-needs-arising、bounded-census-keeps-pace、census-balance）以名字规定的同一读生起与止息：每个形成只延续自身。在任一延续关系 R 下（R t g f 把步后的 f 读作延续步前的 g），形成 f 跨步生起：步后活跃，且不延续任何步前活跃的形成（ArisesFrom）；形成 g 跨步止息：步前活跃，且没有步后活跃的形成延续它（Web.CeasesFrom）；分裂是一个形成延续为两个（NoSplit 排除它），合并是两个延续为一个（Web.NoMerge 排除它）。在普查之下、活动与延续可判定时，每一步上：没有分裂时，步后活跃的连同止息的至多是步前活跃的连同生起的；没有合并时至少如此；两者都没有时恰好相等（Web.Census.balanceFrom、balanceFrom_eq）。证明以跨步延续的配对数为中介：步后被延续的不多于配对数，没有合并时恰是；步前被延续的不多于配对数，没有分裂时恰是（mark_le_total、total_le_mark、total_swap）。每个形成只延续自身时既无分裂也无合并（Web.self_one_to_one），止息与生起即普通的止息与生起（Web.ceasesFrom_self、arisesFrom_self）。每步的不等式跨段累加（le_over_stretch、ge_over_stretch），一个计数每步终点连同失去的不超过起点连同得到的，失去复现就需要得到复现，反向且计数从某步起有界时反之（gaining_of_losing、losing_of_gaining）；所以没有分裂时，止息在任意晚的步出现需要生起在任意晚的步出现（Web.Census.arisingFrom_of_ceasingFrom）；没有合并且从某步起至多 B 个活跃时，生起在任意晚的步出现需要止息在任意晚的步出现（Web.Census.ceasingFrom_of_arisingFrom）。每个条件都不可少：Tandem 中每步 t 与 t+1 两个形成活跃；读作每个形成只延续自身，每步一个生起、一个止息（Tandem.kept）；读作萌出（较晚的延续为自身与新形成，较早的不被延续），普查成立、没有合并，每步一个止息而从不生起（Tandem.budding）；读作合并（两个都延续为较晚的那个），至多两个活跃、没有分裂，每步一个生起而从不止息（Tandem.joining）。不用伦理前提，也不用 Lean 公理。",
     "en": "The census laws (ceasing-needs-arising, bounded-census-keeps-pace, census-balance) read arising and ceasing under the identity the names stipulate: each formation continues only itself. Under any continuation R, where R t g f reads f after the step as continuing g before it, f arises across the step when it is active after it and continues no formation active before it (ArisesFrom), and g ceases across the step when it is active before it and no formation active after it continues it (Web.CeasesFrom); a split is one formation continuing as two (NoSplit excludes it), a merge two continuing as one (Web.NoMerge excludes it). Under a census, with activity and the continuation decided, across each step: without splits, the formations active after the step with those ceasing are at most those active before with those arising; without merges, at least; with neither, exactly (Web.Census.balanceFrom, balanceFrom_eq). The proof goes through the continuing pairs: the formations after the step that are continued are no more than the pairs, exactly as many without merges, and those before it that are continued are no more than the pairs, exactly as many without splits (mark_le_total, total_le_mark, total_swap). Each formation continuing only itself splits none and merges none (Web.self_one_to_one), and ceasing and arising under it are ceasing and arising (Web.ceasesFrom_self, arisesFrom_self). The inequalities across each step add up over any stretch (le_over_stretch, ge_over_stretch): a count ending each step with what it loses at most where it started with what it gains has losses recurring only with gains recurring, and with the inequality the other way and the count bounded from some step on, conversely (gaining_of_losing, losing_of_gaining). So without splits, ceasing at arbitrarily late steps needs arising at arbitrarily late steps (Web.Census.arisingFrom_of_ceasingFrom); without merges, with at most B formations active from some step on, arising at arbitrarily late steps needs ceasing at arbitrarily late steps (Web.Census.ceasingFrom_of_arisingFrom). Each condition is needed: in Tandem formations t and t + 1 are active at step t; read with each continuing only itself, one arises and one ceases across every step (Tandem.kept); read as budding, the later continuing as itself and as the new formation and the earlier continued by none, the census holds without merges, one ceases across every step and nothing ever arises (Tandem.budding); read as joining, both continuing as the later one, at most two are active without splits, one arises across every step and nothing ever ceases (Tandem.joining). No ethical premise and no Lean axiom is used."
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "identity-across-steps 表明，追随形成的读法（生起、不息）依赖谁延续谁，而计数（更多）不依赖。本结果说明普查定律在谁延续谁改变时怎样保持：止息需要生起这一半在每个没有分裂的读法下保持，生起需要止息（计数有界时）这一半在每个没有合并的读法下保持；能抹去生起的恰是分裂，能抹去止息的恰是合并（Tandem）。作者的读法（AI 论证）：同一个展开读出的生起与止息随读法而变，但不能任意变：在没有分裂、没有合并的读法之间，两者的差恰是活跃者数目的变化。这是活动的计数，不是 Ren 的“生成的”“退化的”，不评价生起或止息；萌出与合并在生物中有其例（分裂繁殖、融合），那是应用，不是定理的内容。",
-    "en": "identity-across-steps shows that readings following a formation (arising, unceasing generation) depend on who continues whom, while the count (more) does not. This result says how the census laws hold as who continues whom changes: the half in which ceasing needs arising holds under every reading without splits, and the half in which arising needs ceasing (under a bounded count) under every reading without merges; what can remove arising is exactly a split, and what can remove ceasing exactly a merge (Tandem). The author's reading (an AI argument): the arising and ceasing read of one unfolding change with the reading, but not arbitrarily: between readings without splits or merges, their difference is exactly the change in the number active. This is a count of activity, not Ren's generative and degenerative, and evaluates neither arising nor ceasing; budding and merging have biological cases (fission, fusion), which are applications, not the content of the theorems."
+    "zh": "identity-across-steps 表明，追随形成的读法（生起、不息）依赖谁延续谁，而计数（更多）不依赖。本结果说明普查定律在谁延续谁改变时怎样保持：止息需要生起这一半在每个没有分裂的读法下保持，生起需要止息（计数有界时）这一半在每个没有合并的读法下保持；能抹去生起的恰是分裂，能抹去止息的恰是合并（Tandem）。作者的读法（AI 论证）：同一个展开读出的生起与止息随读法而变，但不能任意变：在没有分裂、没有合并的读法之间，两者的差恰是活跃者数目的变化。这是活动的计数；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）；它也不评价生起或止息；萌出与合并在生物中有其例（分裂繁殖、融合），那是应用，不是定理的内容。",
+    "en": "identity-across-steps shows that readings following a formation (arising, unceasing generation) depend on who continues whom, while the count (more) does not. This result says how the census laws hold as who continues whom changes: the half in which ceasing needs arising holds under every reading without splits, and the half in which arising needs ceasing (under a bounded count) under every reading without merges; what can remove arising is exactly a split, and what can remove ceasing exactly a merge (Tandem). The author's reading (an AI argument): the arising and ceasing read of one unfolding change with the reading, but not arbitrarily: between readings without splits or merges, their difference is exactly the change in the number active. This is a count of activity; whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference); it evaluates neither arising nor ceasing; budding and merging have biological cases (fission, fusion), which are applications, not the content of the theorems."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
   "aliases": [
@@ -191,14 +191,14 @@
     "en": "Stated for discrete steps and activity finite at each step; needs decided activity and continuation (hypotheses of the theorems); the continuation is given by a reading, and which one is identity is not said; the balance is a count, not a mechanism, and says not which formation arises or ceases; over a run, no split and no merge are only sufficient; formation classes, tenure and undermining under a continuation are not stated; evaluates neither arising nor ceasing; the names (CeasesFrom, NoMerge, Tandem) are the AI's wording, for Ren to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T231934.987085Z）：Becoming.Population 的 86 项定理（含 mark_le_total、total_le_mark、le_over_stretch、ge_over_stretch、gaining_of_losing、losing_of_gaining）与 Becoming.Identity 的 99 项定理（含 Census.balanceFrom、Census.balanceFrom_eq、Census.arisingFrom_of_ceasingFrom、Census.ceasingFrom_of_arisingFrom 与 Tandem）全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1285 项定理／2069 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T073508.393062Z 通过。作者反审见整合文档 §43，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T231934.987085Z): the 86 theorems of Becoming.Population (including mark_le_total, total_le_mark, le_over_stretch, ge_over_stretch, gaining_of_losing and losing_of_gaining) and the 99 theorems of Becoming.Identity (including Census.balanceFrom, Census.balanceFrom_eq, Census.arisingFrom_of_ceasingFrom, Census.ceasingFrom_of_arisingFrom and Tandem) all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1285 theorems/2069 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T073508.393062Z passed. The author's counterreview is in §43 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T075031.720357Z）：Becoming.Population 的 112 项定理（含 mark_le_total、total_le_mark、le_over_stretch、ge_over_stretch、gaining_of_losing、losing_of_gaining）与 Becoming.Identity 的 99 项定理（含 Census.balanceFrom、Census.balanceFrom_eq、Census.arisingFrom_of_ceasingFrom、Census.ceasingFrom_of_arisingFrom 与 Tandem）全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T075308.552033Z 通过。作者反审见整合文档 §43，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T075031.720357Z): the 112 theorems of Becoming.Population (including mark_le_total, total_le_mark, le_over_stretch, ge_over_stretch, gaining_of_losing and losing_of_gaining) and the 99 theorems of Becoming.Identity (including Census.balanceFrom, Census.balanceFrom_eq, Census.arisingFrom_of_ceasingFrom, Census.ceasingFrom_of_arisingFrom and Tandem) all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T075308.552033Z passed. The author's counterreview is in §43 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "role": "proof",
-      "sha256": "238849c844c4f3ff20a3182b254c62789b6dc5b19f90e365fa00090c3e560484",
+      "sha256": "6342558f78bd9c0fdcaeb13e4064b760e119d58585435fdd7cccda5e75bb3e7c",
       "declarations": [
         "Becoming.Web.Continues",
         "Becoming.Web.ArisesFrom",
@@ -230,7 +230,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "83eae8df1c4c47916762cf8986bcc4adfab1a8f1b31cedc189940ccf68ec62a5",
+      "sha256": "67df263ad222f24d3476c185ecd7e6a1d63da4fabce5212c1429cf5852b64966",
       "declarations": [
         "Becoming.Web.Census",
         "Becoming.Distinct",
@@ -249,7 +249,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "22fd0168ed9a80279c105bc6d37ba34c3b9e1a8e2775b93117486ea857b68350",
+      "sha256": "b5d9814db765b10ebd40c4ec3c3c93b30d5b61bb2558c98f8681e27d0d7c8749",
       "declarations": [
         "Becoming.total_swap",
         "Becoming.total_le",
@@ -260,7 +260,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "34478e007ba6ce784549c8a5ce36d88dda1c3377db3aa593073a2b43dbdb7c00",
+      "sha256": "beffee33647696dd3690ff140bfe390bfdcab12ed6249250cda1333bd3b14079",
       "declarations": [
         "Becoming.mark",
         "Becoming.Web.Ceases",
@@ -271,22 +271,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "fab52057751ea4fb186d9150daa6799772618a212114ad2f418a26d45251ad30"
+      "sha256": "3ae408a8e7a8950fbd23823d663b0bf6106057eea1e935c29a809484502d69c1"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "a3c7444fd04a44bd1a89dfd8746aaeefebbac98b5da08ce8788310963e633d00"
+      "sha256": "142f7ea7b863e0284b31e08909d800c99c9c0b18afaa090675b708ecab4ed9be"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "1fce842ec0126413b4335f66c62a915e048e63b2ff43ead08bdcea1ab7584659"
+      "sha256": "98b0af5d0802f66bf6f47b2e09c56924ef06dd486b7424e05bad4ebcff961562"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7225b54a7d316453dc28bb2e489e56bdc968374de0e959beeb6b4bc1f7cd3b87"
+      "sha256": "f3a3790777005a9fa6103d2d152c1f7fcc2b8404b57c36349cbef1c6d96419af"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -352,6 +352,14 @@
     {
       "zh": "2026-10-10 W8：验证范围重新指向合并检查器回执 20261009T231934.987085Z 与外围回执 20261010T073508.393062Z（延续奠基的独立审查之后，Becoming.Standpoints 新增五项定理，Becoming.Continuation 只改说明）；所引模块未改，定理数不变。断言不变。",
       "en": "2026-10-10 W8: validation scope re-pointed to consolidated receipt 20261009T231934.987085Z and periphery receipt 20261010T073508.393062Z (after the continuation-grounding review, Becoming.Standpoints gains five theorems and Becoming.Continuation changes only in its documentation); the modules cited are unchanged, and so are their theorem counts. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P34b：按第十三次独立审查 U2，对应改用 census-balance 的标准句：活动的计数是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择，若取不重叠则不是其所指，这是 AI 的推论；原文断言不是，越出了 Ren 对名称的确认。",
+      "en": "2026-10-10 P34b: following the thirteenth independent review's U2, the correspondence carries census-balance's standard sentence: whether the counting of activity is the proposal's generative and degenerative is Ren's to choose, and if non-overlap is taken it is not, the AI's inference; the earlier text said it is not, going beyond Ren's confirmation of the names."
+    },
+    {
+      "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
+      "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
     }
   ]
 }

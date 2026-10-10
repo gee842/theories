@@ -1,0 +1,55 @@
+Becoming.Commons.prefix_does_not_decide : ∀ (h : Nat),
+  ∃ renewing consuming,
+    Becoming.Run.AgreeUpTo h renewing consuming ∧
+      (∀ (t : Nat), t < h → consuming.act t = 2) ∧
+        (∀ (t : Nat),
+            t < h →
+              Becoming.Web.RenewingAt t Becoming.Commons.Formation.focal ∧
+                Becoming.Web.RenewingAt t Becoming.Commons.Formation.focal) ∧
+          (Becoming.Commons.conditions.dependence.along renewing).RenewingIn Becoming.Commons.Formation.focal ∧
+            (Becoming.Commons.conditions.dependence.along consuming).ConsumingIn Becoming.Commons.Formation.focal
+Becoming.Commons.finite_reading_credits_consumption : ∀ (h : Nat)
+  (reading : Becoming.Run Becoming.Commons.process → Prop),
+  (∀ (r r' : Becoming.Run Becoming.Commons.process), Becoming.Run.AgreeUpTo h r r' → reading r → reading r') →
+    (∀ (r : Becoming.Run Becoming.Commons.process),
+        (Becoming.Commons.conditions.dependence.along r).RenewingIn Becoming.Commons.Formation.focal → reading r) →
+      ∃ r, (Becoming.Commons.conditions.dependence.along r).ConsumingIn Becoming.Commons.Formation.focal ∧ reading r
+Becoming.Commons.whole_run_credits_overdraw : ∀ (h : Nat),
+  ∃ r,
+    (∀ (t : Nat), t < h → r.act t = 2) ∧
+      (Becoming.Commons.conditions.dependence.along r).RenewingIn Becoming.Commons.Formation.focal ∧
+        ∀ (t : Nat),
+          (Becoming.Commons.conditions.along r).active t Becoming.Commons.Formation.focal ∧
+            ¬RelationalRenewal.ConsumingIn (Becoming.Commons.conditions.along r) Becoming.Commons.Formation.focal
+Becoming.Commons.amount_reading : ∀ (h : Nat),
+  (∀ (t : Nat) (r r' : Becoming.Run Becoming.Commons.process),
+      Becoming.Run.AgreeUpTo (t + 1) r r' → (r.act t ≤ 1 ↔ r'.act t ≤ 1)) ∧
+    (∀ (t : Nat), Becoming.Commons.sharing.act t ≤ 1) ∧
+      ∃ r c,
+        (Becoming.Commons.conditions.dependence.along r).RenewingIn Becoming.Commons.Formation.focal ∧
+          (Becoming.Commons.conditions.dependence.along c).ConsumingIn Becoming.Commons.Formation.focal ∧
+            ∀ (t : Nat), t < h → ¬r.act t ≤ 1 ∧ ¬c.act t ≤ 1
+Becoming.Commons.cycle_reading_not_finite : ∀ (h p : Nat),
+  0 < p →
+    ¬∀ (r r' : Becoming.Run Becoming.Commons.process),
+        Becoming.Run.AgreeUpTo h r r' →
+          (Becoming.Commons.conditions.dependence.along r).RenewingInWithin p Becoming.Commons.Formation.focal →
+            (Becoming.Commons.conditions.dependence.along r').RenewingInWithin p Becoming.Commons.Formation.focal
+@Becoming.Feedback.step_two : ∀ {h t m : Nat} {d : Nat → Nat},
+  (Becoming.Feedback.law h d).level t = m + 2 → d t = 2 → (Becoming.Feedback.law h d).level (t + 1) = m + 1
+@Becoming.Feedback.step_one : ∀ {h t : Nat} {d : Nat → Nat},
+  (Becoming.Feedback.law h d).level t = 1 → d t = 1 → (Becoming.Feedback.law h d).level (t + 1) = 1
+Becoming.Feedback.descending : ∀ (h : Nat) (d : Nat → Nat),
+  (∀ (t : Nat), t < h → d t = 2) → ∀ (k : Nat), k ≤ h → (Becoming.Feedback.law h d).level k + k = h + 1
+Becoming.Feedback.at_horizon : ∀ (h : Nat), (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).level h = 1
+Becoming.Feedback.after_horizon : ∀ (h j : Nat),
+  (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).level (h + j) = 1
+Becoming.Feedback.supported : ∀ (h t : Nat), 1 ≤ (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).level t
+Becoming.Feedback.prefix_does_not_decide : ∀ (h : Nat),
+  (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).start =
+      (Becoming.Feedback.law h Becoming.Feedback.continuing).start ∧
+    (∀ (t : Nat), t < h → Becoming.Feedback.stopping h t = Becoming.Feedback.continuing t) ∧
+      RelationalRenewal.RenewingIn (Becoming.Feedback.law h (Becoming.Feedback.stopping h)).unfolding
+          RelationalRenewal.Law.Part.focal ∧
+        RelationalRenewal.ConsumingIn (Becoming.Feedback.law h Becoming.Feedback.continuing).unfolding
+          RelationalRenewal.Law.Part.focal

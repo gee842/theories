@@ -212,12 +212,6 @@ theorem risen_within {q : α → Nat → Nat} {as : List α} {B : Nat}
 
 /-! ## Stretches of steps -/
 
-theorem le_dest {a b : Nat} (le : a ≤ b) : ∃ m, b = a + m := by
-  induction le with
-  | refl => exact ⟨0, rfl⟩
-  | step _ earlier => exact match earlier with
-    | ⟨m, same⟩ => ⟨m + 1, congrArg Nat.succ same⟩
-
 theorem steps_mem : ∀ {T n t : Nat}, t ∈ steps T n → T ≤ t
   | _, 0, _, mem => nomatch mem
   | _, _ + 1, _, .head _ => Nat.le_refl _

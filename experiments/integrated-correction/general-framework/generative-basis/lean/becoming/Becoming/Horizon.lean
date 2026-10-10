@@ -156,16 +156,6 @@ end Commons
 
 /-! ## The horizon in the support-gated law -/
 
-/-- As `Nat.le_of_add_le_add_right`, with an empty axiom report. -/
-theorem le_of_add_le_add_right : ∀ {a b : Nat} (k : Nat), a + k ≤ b + k → a ≤ b
-  | _, _, 0, h => h
-  | _, _, k + 1, h => le_of_add_le_add_right k (Nat.le_of_succ_le_succ h)
-
-/-- As `Nat.add_right_cancel`, with an empty axiom report. -/
-theorem add_right_cancel : ∀ {a b : Nat} (k : Nat), a + k = b + k → a = b
-  | _, _, 0, h => h
-  | _, _, k + 1, h => add_right_cancel k (Nat.succ.inj h)
-
 namespace Feedback
 
 open RelationalRenewal RelationalRenewal.Law

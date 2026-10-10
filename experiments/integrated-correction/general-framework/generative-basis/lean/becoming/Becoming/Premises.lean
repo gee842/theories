@@ -61,9 +61,12 @@ that the rest are independent, none following from all the others together.
   with every ground relatum, meets all eight wherever nothing joins an empty queue
   (`World.tendedQueue_premised`). So a property of the counts holds in every world meeting
   the eight exactly when it holds of every tally in which nothing arises across a step at
-  which nothing is active (`World.premised_counting`). No step at which the front is
-  active is enclosed: with every step from some step on enclosed around what stands, the
-  rest theorem stops arising and ceasing (`Becoming.Openness`).
+  which nothing is active (`World.premised_counting`). Three of the eight hold idly in the
+  tended queue: nothing taking part takes from a closed family, and nothing depends on
+  anything (`World.tended_not_binds`). Where every premise binds, every census counts
+  something arising (`World.binds_arising`), which is no law under the eight alone
+  (`World.binds_adds`). No step at which the front is active is enclosed; under enclosure
+  from some step on change is bounded as well (`Becoming.Openness`).
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -1283,8 +1286,8 @@ theorem tendedQueue_counts {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat)
      (Queue.comings_eq tally t)⟩
 
 /-- Where something arises only across a step at which something is active, a tended queue
-meets all eight premises. No step at which the front is active is enclosed, so dissipation
-binds only where nothing takes part in an exchange. -/
+meets all eight premises. Not all of them bind: no step at which the front is active is
+enclosed, and nothing depends on anything (`tended_not_binds`). -/
 theorem tendedQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
     (company : ∀ t, 0 < a t → 0 < n t) : (tendedQueue n c).Premised :=
   .of (fun _ _ _ _ no => (nomatch no))
@@ -1315,7 +1318,7 @@ theorem tendedQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
     ⟨_, tendedQueue_census n c⟩
     ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩
 
-/-- Under all eight premises the laws of counting are the balance and that nothing arises
+/-- Under all eight premises the laws of counting are the tally and that nothing arises
 across a step at which nothing is active: a property of the counts holds of every census of
 every world meeting the eight exactly when it holds of every tally in which something arises
 only across a step at which something is active. -/
@@ -1332,6 +1335,53 @@ theorem premised_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat)
    fun law n c _ tally company => pointwise (tendedQueue_counts tally)
       (law (tendedQueue n c) (tendedQueue_premised tally company) _
         (tendedQueue_census n c))⟩
+
+/-- In a tended queue dissipation, activity needing support and bounded transmission hold
+idly. Nothing taking part takes from a closed family: where something is taken the front is
+active, and then it gives to a ground relatum beyond every finite family. Nothing depends on
+anything. So not every premise binds there (the thirteenth review's probe). -/
+theorem tended_not_binds {n c : Nat → Nat} :
+    (¬ ∃ cs t f, Distinct cs ∧ (tendedQueue n c).flow.ClosedAt cs t ∧
+      f ∈ (tendedQueue n c).flow.present t ∧ 0 < total cs ((tendedQueue n c).flow.take t f)) ∧
+    (¬ ∃ t f x, (tendedQueue n c).web.active t f ∧ (tendedQueue n c).web.requires t f x ∧
+      0 < (tendedQueue n c).web.need t f x) ∧
+    (¬ ∃ t x g y, (tendedQueue n c).flow.DescendsAt (tendedQueue n c).web t x g ∧
+      (tendedQueue n c).web.requires (t + 1) x y) ∧
+    ¬ (tendedQueue n c).Binds :=
+  have idle : ¬ ∃ cs t f, Distinct cs ∧ (tendedQueue n c).flow.ClosedAt cs t ∧
+      f ∈ (tendedQueue n c).flow.present t ∧ 0 < total cs ((tendedQueue n c).flow.take t f) :=
+    fun ⟨cs, t, f, _, closed, present, takes⟩ => match total_pos cs takes with
+      | ⟨x, _, positive⟩ =>
+        have occupied : 0 < n t := match x, positive with
+          | .member _, positive => Tended.occupied (mark_pos.mp positive).1
+          | .ground _, positive => Tended.front.mp (mark_pos.mp positive)
+        Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq
+          ((mark_one (Tended.front.mpr occupied)).symm.trans
+            (closed f present _ (Tended.outside cs)).2)))
+  ⟨idle, fun ⟨_, _, _, _, no, _⟩ => no, fun ⟨_, _, _, _, _, no⟩ => no,
+   fun binds => idle binds.dissipative⟩
+
+/-- Where every premise binds, every census counts something arising: embodiment binds only
+where something arises (the thirteenth review's probe). -/
+theorem binds_arising (w : World) [∀ t x, Decidable (w.web.active t x)] (binds : w.Binds) :
+    w.CountsObey fun _ _ a => ∃ t, 0 < a t := fun _ census =>
+  match binds.embodied with
+  | ⟨t, x, arises⟩ =>
+    ⟨t, Nat.lt_of_lt_of_le (mark_pos.mpr arises)
+      (le_total_of_mem (q := fun y => mark (ComesToBe (fun s => w.web.active s y) t))
+        (((census (t + 1)).2 x).mp arises.2))⟩
+
+/-- Under the eight premises something arising is no law of counting, as the empty tally
+shows; where every premise binds it is one (`binds_arising`). The laws of
+`premised_counting` hold of worlds in which some premises hold idly (the thirteenth
+review's probe). -/
+theorem binds_adds :
+    ¬ ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised →
+      w.CountsObey fun _ _ a => ∃ t, 0 < a t :=
+  fun law => match (premised_counting (Q := fun _ _ a => ∃ t, 0 < a t)
+      (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2)⟩)).mpr
+      law (fun _ => 0) (fun _ => 0) (fun _ => 0) (fun _ => ⟨0, rfl, rfl⟩) (fun _ no => no) with
+    | ⟨_, no⟩ => Nat.lt_irrefl 0 no
 
 end World
 

@@ -46,15 +46,28 @@ many formations are active at each step, and ties the flow's count to the web's.
   `Web.DependenceCensus.forming_of_dissolving`,
   `Web.DependenceCensus.forming_iff_dissolving`); `Becoming.Openness` reads them of
   standing.
-* The balance is the whole law of counting. Across each step some members are kept: with
+* The tally is the whole law of counting. Across each step some members are kept: with
   those ceasing to be they are the list before the step, with those coming to be the list
   after it (`Listed.keeps`, from which `Listed.across` follows). Counts of this form are a
-  *tally* (`Tally`, `Listed.tally`), and every tally is counted by a queue, its members
-  joining at the back and leaving from the front, each in turn (`Queue.counts`). So a
-  property of the counts holds wherever what holds is listed exactly when it holds of
-  every tally (`counting_laws`): no law of counting holds beyond what the balance gives.
-  The property is asked only to respect the counts' values at each step (`Pointwise`), as
-  function extensionality would give and the pure core does not assume.
+  *tally* (`Tally`, `Listed.tally`): the balance of `Listed.across` with no more ceasing
+  across a step than were counted before it (`tally_iff`), which the balance alone does not
+  give (`balance_not_tally`). Every tally is counted by a queue, its members joining at the
+  back and leaving from the front, each in turn (`Queue.counts`), so the counts some
+  listing has are exactly the tallies (`tally_iff_counted`), and a property of the counts
+  holds wherever what holds is listed exactly when it holds of every tally
+  (`counting_laws`): no law of counting holds beyond the tally. There the property is
+  asked only to respect the counts' values at each step (`Pointwise`), as function
+  extensionality would give and the pure core does not assume.
+* Change bounds. A number `B` bounds change from a step where, from it on, the number
+  counted with the steps since at which something ceased or arose stays within `B`
+  (`ChangeBound`). Then change does not recur (`ChangeBound.not_recurring`). A bound from
+  some step is a bound from the first step (`ChangeBound.from_zero`,
+  `changeBound_iff_zero`), and a queue counting a tally whose change `B` bounds from the
+  first step never reaches past its `B + B * B`-th member (`ChangeBound.reach`). That change
+  does not recur cannot be strengthened to a step after which nothing changes without
+  omniscience: one member replaced at the first `true` of a Boolean sequence has its change
+  bounded by two (`ChangeBound.lpo_of_ends`, `Swap`). `Becoming.Openness` reads the bound
+  that enclosure sets.
   `Becoming.Premises` reads this of worlds and their premises.
 * Under a census, with each formation taking part in the flow listed once and only
   active formations taking (`Flow.Taking`, of which only the activity half is used),
@@ -577,7 +590,7 @@ theorem ceasing_of_outpacing (listed : Listed p l) {B : Nat → Nat}
 
 end Listed
 
-/-! ## The balance is the whole law of counting -/
+/-! ## The tally is the whole law of counting -/
 
 /-- Counts a listing can have: `n t` listed at each step, `c t` ceasing to be and `a t`
 coming to be across the step from `t`. Some number are kept across each step: with those
@@ -591,6 +604,46 @@ theorem Listed.tally {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l :
     Tally (fun t => (l t).length) (fun t => ceasings (l t) p t)
       (fun t => comings (l (t + 1)) p t) :=
   listed.keeps
+
+/-- The balance across each step that `Listed.across` states of a listing: what is counted
+after the step with what ceased is what was counted before it with what came. -/
+def Balance (n c a : Nat → Nat) : Prop :=
+  ∀ t, n (t + 1) + c t = n t + a t
+
+/-- A tally balances. -/
+theorem Tally.balance {n c a : Nat → Nat} (tally : Tally n c a) : Balance n c a := fun t =>
+  match tally t with
+  | ⟨k, before, after⟩ => (congrArg (· + c t) after).trans
+      ((Nat.add_right_comm k (a t) (c t)).trans (congrArg (· + a t) before.symm))
+
+/-- Under a tally no more cease across a step than were counted before it. -/
+theorem Tally.ceasing_le {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat) : c t ≤ n t :=
+  match tally t with
+  | ⟨k, before, _⟩ => Nat.le_trans (Nat.le_add_left (c t) k) (Nat.le_of_eq before.symm)
+
+/-- A tally is exactly the balance with no more ceasing across a step than were counted
+before it (the thirteenth review's probe). -/
+theorem tally_iff {n c a : Nat → Nat} : Tally n c a ↔ Balance n c a ∧ ∀ t, c t ≤ n t :=
+  ⟨fun tally => ⟨tally.balance, tally.ceasing_le⟩,
+   fun ⟨balance, bounded⟩ t => match le_dest (bounded t) with
+    | ⟨k, same⟩ => ⟨k, same.trans (Nat.add_comm (c t) k),
+        add_right_cancel (c t) ((balance t).trans ((congrArg (· + a t)
+          (same.trans (Nat.add_comm (c t) k))).trans (Nat.add_right_comm k (c t) (a t))))⟩⟩
+
+/-- The balance alone is no tally: with none counted and one ceasing and one coming across
+every step, it holds and the tally fails. -/
+theorem balance_not_tally :
+    Balance (fun _ => 0) (fun _ => 1) (fun _ => 1) ∧
+      ¬ Tally (fun _ => 0) (fun _ => 1) (fun _ => 1) :=
+  ⟨fun _ => rfl, fun tally => Nat.not_succ_le_zero 0 (tally.ceasing_le 0)⟩
+
+/-- Tallies respect the counts' values at each step. -/
+theorem Tally.congr {n c a n' c' a' : Nat → Nat} (tally : Tally n c a)
+    (same : ∀ t, n t = n' t ∧ c t = c' t ∧ a t = a' t) : Tally n' c' a' := fun t =>
+  match tally t with
+  | ⟨k, before, after⟩ =>
+    ⟨k, (same t).1.symm.trans (before.trans (congrArg (k + ·) (same t).2.1)),
+     (same (t + 1)).1.symm.trans (after.trans (congrArg (k + ·) (same t).2.2))⟩
 
 theorem steps_length : ∀ T n, (steps T n).length = n
   | _, 0 => rfl
@@ -727,7 +780,7 @@ def Pointwise (Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop) :
   ∀ {n c a n' c' a' : Nat → Nat}, (∀ t, n t = n' t ∧ c t = c' t ∧ a t = a' t) →
     Q n c a → Q n' c' a'
 
-/-- The balance is the whole law of counting: a property of the counts that holds wherever
+/-- The tally is the whole law of counting: a property of the counts that holds wherever
 what holds is listed holds of every tally, and conversely. -/
 theorem counting_laws {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
     (pointwise : Pointwise Q) :
@@ -738,6 +791,225 @@ theorem counting_laws {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) →
   ⟨fun law n c _ tally => pointwise (fun t => Queue.counts tally t)
       (law Nat (Queue.holds n c) (Queue.line n c) Queue.listed),
    fun law _ _ _ _ listed => law _ _ _ listed.tally⟩
+
+/-- The counts some listing has are exactly the tallies: the whole law of counting, with no
+condition on a property of the counts (the thirteenth review's probe). -/
+theorem tally_iff_counted (n c a : Nat → Nat) :
+    Tally n c a ↔ ∃ (α : Type) (p : α → Nat → Prop) (_ : ∀ x t, Decidable (p x t))
+      (l : Nat → List α), Listed p l ∧
+        ∀ t, (l t).length = n t ∧ ceasings (l t) p t = c t ∧ comings (l (t + 1)) p t = a t :=
+  ⟨fun tally => ⟨Nat, Queue.holds n c, fun _ _ => inferInstance, Queue.line n c, Queue.listed,
+     Queue.counts tally⟩,
+   fun ⟨_, _, _, _, listed, same⟩ => listed.tally.congr same⟩
+
+/-- How far a queue has reached: those gone and those in it are those at the first step and
+those joined since. -/
+theorem Queue.reached {n c a : Nat → Nat} (tally : Tally n c a) :
+    ∀ t, Queue.gone c t + n t = n 0 + total (steps 0 t) a
+  | 0 => Nat.zero_add (n 0)
+  | t + 1 => match tally t with
+    | ⟨_, before, after⟩ => (congrArg (_ + ·) after).trans ((Nat.add_assoc _ _ _).symm.trans
+        ((congrArg (· + a t) (Queue.kept_end before).symm).trans
+          ((congrArg (· + a t) (Queue.reached tally t)).trans ((Nat.add_assoc _ _ _).trans
+            (congrArg (n 0 + ·) ((steps_last a 0 t).trans
+              (congrArg (_ + ·) (congrArg a (Nat.zero_add t)))).symm)))))
+
+/-! ## Change bounds -/
+
+/-- At how many steps from `T` before `t` a quantity is positive. -/
+def occurrences (T : Nat) (q : Nat → Nat) : Nat → Nat
+  | 0 => 0
+  | t + 1 => occurrences T q t + mark (T ≤ t ∧ 0 < q t)
+
+theorem occurrences_before {T : Nat} {q : Nat → Nat} :
+    ∀ {t : Nat}, t ≤ T → occurrences T q t = 0
+  | 0, _ => rfl
+  | _ + 1, early => (congrArg (occurrences T q _ + ·) (mark_zero fun later =>
+      Nat.lt_irrefl _ (Nat.lt_of_lt_of_le early later.1))).trans (occurrences_before
+        (Nat.le_of_lt early))
+
+theorem occurrences_succ {T t : Nat} (q : Nat → Nat) (later : T ≤ t) :
+    occurrences T q (t + 1) = occurrences T q t + mark (0 < q t) :=
+  congrArg (occurrences T q t + ·)
+    (mark_iff ⟨And.right, fun positive => ⟨later, positive⟩⟩)
+
+theorem occurrences_mono {T : Nat} (q : Nat → Nat) {t : Nat} :
+    ∀ {s : Nat}, t ≤ s → occurrences T q t ≤ occurrences T q s
+  | _, .refl => Nat.le_refl _
+  | _ + 1, .step within => Nat.le_trans (occurrences_mono q within) (Nat.le_add_right _ _)
+
+theorem occurrences_le {T : Nat} (q : Nat → Nat) : ∀ t, occurrences T q t ≤ t
+  | 0 => Nat.le_refl 0
+  | t + 1 => Nat.add_le_add (occurrences_le q t) (mark_le_one _)
+
+/-- Counting from the first step counts at most `T` more than counting from `T`. -/
+theorem occurrences_zero_le {T : Nat} (q : Nat → Nat) :
+    ∀ t, occurrences 0 q t ≤ occurrences T q t + T
+  | 0 => Nat.zero_le _
+  | t + 1 => match Nat.lt_or_ge t T with
+    | .inl early => Nat.le_trans (occurrences_le q (t + 1))
+        (Nat.le_trans early (Nat.le_add_left T _))
+    | .inr later => Nat.le_trans (Nat.le_of_eq (occurrences_succ q (Nat.zero_le t)))
+        (Nat.le_trans (Nat.add_le_add_right (occurrences_zero_le q t) _)
+          (Nat.le_of_eq ((Nat.add_right_comm _ T _).trans
+            (congrArg (· + T) (occurrences_succ q later).symm))))
+
+/-- A quantity that never rises from step `T` on, and falls at each step at which `q` is
+positive, has fallen from its value at `T` by at least the number of those steps. -/
+theorem falls_by_occurrences (r q : Nat → Nat) {T : Nat}
+    (falls : ∀ t, T ≤ t → r (t + 1) + mark (0 < q t) ≤ r t) :
+    ∀ {t}, T ≤ t → r t + occurrences T q t ≤ r T
+  | _, .refl => Nat.le_of_eq ((congrArg (r T + ·) (occurrences_before (Nat.le_refl T))).trans
+      (Nat.add_zero _))
+  | m + 1, .step later => Nat.le_trans (Nat.le_of_eq ((congrArg (r (m + 1) + ·)
+      (occurrences_succ q later)).trans ((Nat.add_assoc _ _ _).symm.trans
+        (Nat.add_right_comm _ _ _))))
+      (Nat.le_trans (Nat.add_le_add_right (falls m later) _) (falls_by_occurrences r q falls later))
+
+/-- From step `T` on, the number counted with the steps since `T` at which something ceased
+or arose stays within `B`. -/
+def ChangeBound (T B : Nat) (n c a : Nat → Nat) : Prop :=
+  ∀ t, T ≤ t → n t + occurrences T (fun s => c s + a s) t ≤ B
+
+namespace ChangeBound
+
+variable {T B : Nat} {n c a : Nat → Nat}
+
+/-- Within a change bound, change does not recur. -/
+theorem not_recurring (bound : ChangeBound T B n c a) :
+    ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < c t + a t :=
+  fun recurs =>
+    have more : ∀ m, ∃ t, T ≤ t ∧ m ≤ occurrences T (fun s => c s + a s) t := fun m =>
+      Nat.rec ⟨T, Nat.le_refl T, Nat.zero_le _⟩ (fun _ ⟨t, later, many⟩ =>
+        match recurs t with
+        | ⟨s, after, changes⟩ => ⟨s + 1, Nat.le_trans later (Nat.le_trans after
+            (Nat.le_add_right s 1)), Nat.le_trans (Nat.add_le_add_right many 1)
+            (Nat.le_trans (Nat.add_le_add_right (occurrences_mono _ after) 1)
+              (Nat.le_of_eq ((congrArg (occurrences T _ s + ·) (mark_one changes)).symm.trans
+                (occurrences_succ _ (Nat.le_trans later after)).symm)))⟩) m
+    match more (B + 1) with
+    | ⟨t, later, many⟩ => Nat.lt_irrefl B (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
+        (Nat.lt_succ_self B) many) (Nat.le_trans (Nat.le_add_left _ _) (bound t later)))
+
+/-- A change bound from step `T` is one from the first step, larger by `T` and the counts
+before `T` (the thirteenth review's probe). -/
+theorem from_zero (bound : ChangeBound T B n c a) :
+    ChangeBound 0 (B + T + total (steps 0 T) n) n c a := fun t _ =>
+  match Nat.lt_or_ge t T with
+  | .inl early => Nat.le_trans
+      (Nat.add_le_add (le_total_of_mem (q := n) (steps_of_within (Nat.zero_le t)
+        (Nat.lt_of_lt_of_le early (Nat.le_of_eq (Nat.zero_add T).symm))))
+        (Nat.le_trans (occurrences_le _ t) (Nat.le_of_lt early)))
+      (Nat.le_trans (Nat.le_of_eq (Nat.add_comm _ _))
+        (Nat.add_le_add_right (Nat.le_add_left T B) _))
+  | .inr later => Nat.le_trans (Nat.add_le_add_left (occurrences_zero_le _ t) _)
+      (Nat.le_trans (Nat.le_of_eq (Nat.add_assoc _ _ _).symm)
+        (Nat.le_trans (Nat.add_le_add_right (bound t later) T) (Nat.le_add_right _ _)))
+
+/-- Under a change bound `B` from the first step, at most `B` join at each of at most `B`
+steps. -/
+theorem joins (tally : Tally n c a) (bound : ChangeBound 0 B n c a) :
+    ∀ t, total (steps 0 t) a ≤ B * occurrences 0 (fun s => c s + a s) t
+  | 0 => Nat.zero_le _
+  | t + 1 =>
+    have joined : a t ≤ B * mark (0 < c t + a t) := match Nat.eq_zero_or_pos (a t) with
+      | .inl zero => Nat.le_trans (Nat.le_of_eq zero) (Nat.zero_le _)
+      | .inr joining => match tally t with
+        | ⟨_, _, after⟩ => Nat.le_trans (Nat.le_trans (Nat.le_add_left _ _)
+            (Nat.le_of_eq after.symm)) (Nat.le_trans (Nat.le_trans (Nat.le_add_right _ _)
+              (bound (t + 1) (Nat.zero_le _))) (Nat.le_of_eq ((congrArg (B * ·)
+                (mark_one (Nat.lt_of_lt_of_le joining (Nat.le_add_left _ _)))).trans
+                  (Nat.mul_one B)).symm))
+    Nat.le_trans (Nat.le_of_eq ((steps_last a 0 t).trans
+        (congrArg (_ + ·) (congrArg a (Nat.zero_add t)))))
+      (Nat.le_trans (Nat.add_le_add (joins tally bound t) joined)
+        (Nat.le_of_eq ((Nat.left_distrib _ _ _).symm.trans
+          (congrArg (B * ·) (occurrences_succ _ (Nat.zero_le t)).symm))))
+
+/-- So a queue counting a tally whose change `B` bounds from the first step never reaches past
+its `B + B * B`-th member. -/
+theorem reach (tally : Tally n c a) (bound : ChangeBound 0 B n c a) (t : Nat) :
+    Queue.gone c t + n t ≤ B + B * B :=
+  Nat.le_trans (Nat.le_of_eq (Queue.reached tally t))
+    (Nat.add_le_add (bound 0 (Nat.le_refl 0)) (Nat.le_trans (joins tally bound t)
+      (Nat.mul_le_mul_left B (Nat.le_trans (Nat.le_add_left _ _)
+        (bound t (Nat.zero_le t))))))
+
+end ChangeBound
+
+theorem changeBound_iff_zero {n c a : Nat → Nat} :
+    (∃ T B, ChangeBound T B n c a) ↔ ∃ B, ChangeBound 0 B n c a :=
+  ⟨fun ⟨_, _, bound⟩ => ⟨_, bound.from_zero⟩, fun ⟨B, bound⟩ => ⟨0, B, bound⟩⟩
+
+namespace Swap
+
+variable (s : Nat → Bool)
+
+/-- One member leaves and one joins across the step at the first `true` of `s`, and nothing
+changes at any other step. -/
+def change (t : Nat) : Nat :=
+  mark ((clear s t && s t) = true)
+
+theorem mark_split : ∀ b d : Bool,
+    mark ((b && d) = true) + mark ((b && !d) = true) = mark (b = true)
+  | true, true => rfl
+  | true, false => rfl
+  | false, _ => rfl
+
+theorem mark_twice : ∀ b : Bool, mark (0 < mark (b = true) + mark (b = true)) = mark (b = true)
+  | true => rfl
+  | false => rfl
+
+/-- The steps before `t` with a change, with whether no `true` has come before `t`, are
+one. -/
+theorem counted : ∀ t,
+    occurrences 0 (fun u => change s u + change s u) t + mark (clear s t = true) = 1
+  | 0 => rfl
+  | t + 1 => (congrArg (· + mark (clear s (t + 1) = true))
+      ((occurrences_succ _ (Nat.zero_le t)).trans (congrArg (_ + ·) (mark_twice _)))).trans
+      ((Nat.add_assoc _ _ _).trans
+        ((congrArg (occurrences 0 (fun u => change s u + change s u) t + ·)
+          (mark_split (clear s t) (s t))).trans (counted t)))
+
+theorem tally : Tally (fun _ => 1) (change s) (change s) := fun t =>
+  match Clear.cases (clear s t && s t) with
+  | .inl no => ⟨1, (congrArg (fun b => 1 + mark (b = true)) no).symm,
+      (congrArg (fun b => 1 + mark (b = true)) no).symm⟩
+  | .inr yes => ⟨0, (congrArg (fun b => 0 + mark (b = true)) yes).symm,
+      (congrArg (fun b => 0 + mark (b = true)) yes).symm⟩
+
+theorem change_bound : ChangeBound 0 2 (fun _ => 1) (change s) (change s) := fun t _ =>
+  Nat.add_le_add_left (Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq (counted s t))) 1
+
+/-- At the first `true`, one leaves and one joins. -/
+theorem at_first {m : Nat} (c : clear s m = true) (yes : s m = true) : change s m = 1 :=
+  congrArg (fun b => mark (b = true)) (Clear.and_both _ _ c yes)
+
+/-- A step after which no first `true` comes decides `s`. -/
+theorem decide_of_end {E : Nat} (quiet : ∀ m, E ≤ m → clear s m = true → s m = true → False) :
+    (∃ n, s n = true) ∨ ∀ n, s n = false :=
+  match Clear.or_first s E with
+  | .inr ⟨m, _, _, yes⟩ => .inl ⟨m, yes⟩
+  | .inl c => .inr fun k => Clear.false_of_not (s k) fun yes =>
+    match Clear.first_of_true s yes with
+    | ⟨m, cm, ym⟩ => match Nat.lt_or_ge m E with
+      | .inl lt => Clear.not_both (Clear.false_before s c lt) ym
+      | .inr ge => quiet m ge cm ym
+
+end Swap
+
+/-- That change does not recur within a change bound cannot be strengthened to a step after which
+nothing changes without omniscience: if every tally with a change bound from the first step, with
+nothing joining when none is counted, had such a step, `LPO` would hold, even where one
+member is counted throughout and is replaced at most once (`Swap`; the thirteenth review's
+probe). -/
+theorem ChangeBound.lpo_of_ends
+    (ends : ∀ n c a : Nat → Nat, Tally n c a → (∀ t, 0 < a t → 0 < n t) →
+      (∃ B, ChangeBound 0 B n c a) → ∃ E, ∀ t, E ≤ t → c t + a t = 0) : LPO := fun s =>
+  match ends _ _ _ (Swap.tally s) (fun _ _ => Nat.zero_lt_one) ⟨2, Swap.change_bound s⟩ with
+  | ⟨E, quiet⟩ => Swap.decide_of_end s (E := E) fun m ge c yes =>
+    Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le Nat.zero_lt_two (Nat.le_of_eq
+      ((congrArg (fun k => k + k) (Swap.at_first s c yes)).symm.trans (quiet m ge))))
 
 /-! ## Censuses -/
 

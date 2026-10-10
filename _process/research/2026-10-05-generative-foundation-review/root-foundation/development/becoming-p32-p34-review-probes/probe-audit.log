@@ -1,0 +1,56 @@
+MODULE Review13 CONSTANTS 78 WITH_AXIOMS 0 []
+'Review13.Balance' does not depend on any axioms
+'Review13.tally_balance' does not depend on any axioms
+'Review13.tally_le' does not depend on any axioms
+'Review13.tally_of_balance' does not depend on any axioms
+'Review13.tally_iff' does not depend on any axioms
+'Review13.balance_not_tally' does not depend on any axioms
+'Review13.ceasing_bound_law' does not depend on any axioms
+'Review13.tally_congr' does not depend on any axioms
+'Review13.tally_iff_counted' does not depend on any axioms
+'Review13.since_le' does not depend on any axioms
+'Review13.since_zero_le' does not depend on any axioms
+'Review13.settles_zero' does not depend on any axioms
+'Review13.settles_iff_zero' does not depend on any axioms
+'Review13.same_laws' does not depend on any axioms
+'Review13.tended_dissipation_idle' does not depend on any axioms
+'Review13.tended_not_binds' does not depend on any axioms
+'Review13.ind' does not depend on any axioms
+'Review13.ind_split' does not depend on any axioms
+'Review13.mark_double' does not depend on any axioms
+'Review13.FirstChange.change' does not depend on any axioms
+'Review13.FirstChange.since_clear' does not depend on any axioms
+'Review13.FirstChange.tally' does not depend on any axioms
+'Review13.FirstChange.company' does not depend on any axioms
+'Review13.FirstChange.settles' does not depend on any axioms
+'Review13.FirstChange.at_first' does not depend on any axioms
+'Review13.FirstChange.decide_of_end' does not depend on any axioms
+'Review13.SettlesEnds' does not depend on any axioms
+'Review13.lpo_of_settlesEnds' does not depend on any axioms
+'Review13.FiniteEnds' does not depend on any axioms
+'Review13.lpo_of_finiteEnds' does not depend on any axioms
+'Review13.OneSwap.change' does not depend on any axioms
+'Review13.OneSwap.tally' does not depend on any axioms
+'Review13.OneSwap.since_one' does not depend on any axioms
+'Review13.OneSwap.settles' does not depend on any axioms
+'Review13.OneSwap.world' does not depend on any axioms
+'Review13.OneSwap.zero' does not depend on any axioms
+'Review13.OneSwap.takes' does not depend on any axioms
+'Review13.OneSwap.attained' does not depend on any axioms
+'Review13.closed_dissipation_binds' does not depend on any axioms
+'Review13.binds_arising' does not depend on any axioms
+'Review13.arising_pointwise' does not depend on any axioms
+'Review13.binds_adds' does not depend on any axioms
+'Nat.add_right_cancel' depends on axioms: [propext]
+'Nat.sub_eq_zero_of_le' depends on axioms: [propext]
+'Nat.add_sub_of_le' depends on axioms: [propext]
+'Nat.le_sub_of_add_le' depends on axioms: [propext]
+'Fin.eq_of_val_eq' does not depend on any axioms
+'Nat.sub_add_cancel' depends on axioms: [propext]
+'Nat.le.dest' does not depend on any axioms
+'Nat.exists_eq_add_of_le' depends on axioms: [propext]
+'Nat.succ_ne_zero' depends on axioms: [propext]
+'Becoming.add_right_cancel' does not depend on any axioms
+'Becoming.le_of_add_le_add_right' does not depend on any axioms
+'RelationalRenewal.le_sub_from_add' does not depend on any axioms
+'Becoming.le_dest' does not depend on any axioms

@@ -40,7 +40,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   unfolding; renewal and consumption belong to the run.
 * `Becoming.Dependence` (L3): dependence forms, holds, breaks and dissolves across
   steps; the outcomes of a loss where activity needs support; stepwise readings of
-  events and their relations.
+  events and their relations; the arithmetic the layers share.
 * `Becoming.Return` (L3): renewal graded by the time to return; readings over cycles.
 * `Becoming.Horizon` (L3): no finite stretch of a run decides whether its drawing
   renews or consumes in the whole-run sense, with or without feedback; a reading of
@@ -83,10 +83,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dependence and standing, and follows from the census balance: the list at the end with
   what ceased is the list at the start with what came. Read of recurrence the balance is
   exact: ceasing recurs exactly where, from each step, the list later falls short of the
-  list at the start with what came between. The balance is the whole law of counting:
+  list at the start with what came between. The tally is the whole law of counting:
   every tally, some members kept across each step, those ceasing with them making the
-  list before and those coming the list after, is counted by a queue, so a property of
-  the counts holds of every listing exactly when it holds of every tally.
+  list before and those coming the list after, is counted by a queue, so the counts some
+  listing has are exactly the tallies, and a property of the counts holds of every
+  listing exactly when it holds of every tally. The tally is the balance with no more
+  ceasing across a step than were listed before it. Within a change bound, the count together
+  with the steps of change staying within a number, change does not recur, while a step
+  after which nothing changes needs omniscience in general.
 * `Becoming.Identity` (L3): which formation at one step continues which at the next.
   Labels carry nothing, while the pattern of names across steps carries identity; each
   step's relations, each condition's class and how many formations take and give do not
@@ -184,7 +188,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   premise but embodiment, and of one meeting every premise but balance; together, with
   only active relata giving, they bind it, nothing arising across a step at which nothing
   is active. That is all the eight add: under all eight the laws of counting are the
-  balance and that nothing arises across a step at which nothing is active.
+  tally and that nothing arises across a step at which nothing is active, three of the
+  eight holding idly in the world that shows it; where every premise binds, every census
+  counts something arising, which is no law under the eight.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
@@ -207,7 +213,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   them with no step enclosed keeps arising, at zero net exchange, and another never
   arises, so openness is necessary for arising without end and not sufficient; one
   meeting them with every step enclosed comes to rest, as does the world in which each
-  of them binds.
+  of them binds. Enclosure bounds change: with every step from some step on enclosed,
+  the relata active together with the steps of change stay within the total standing at
+  that step, and under all eight premises the laws of counting under enclosure from some
+  step on and in finite worlds are the same: the tally, nothing arising across a step at
+  which nothing is active, and a change bound from the first step. The bound is attained,
+  and a step after which nothing arises needs omniscience in general.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed

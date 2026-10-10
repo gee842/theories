@@ -790,6 +790,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
 
+## counting-under-enclosure ← whole-law-of-counting
+
+`formal-reuse` — 复用计数表与队列（Tally、Queue.holds、Queue.line、Queue.listed、Queue.counts、Queue.ceasings_eq、Queue.comings_eq、Queue.kept_end）、逐点、World.CountsObey、counting_binds_jointly 与队首的引理（Tended.front、Tended.occupied）。 / Reuses tallies and queues (Tally, Queue.holds, Queue.line, Queue.listed, Queue.counts, Queue.ceasings_eq, Queue.comings_eq, Queue.kept_end), Pointwise, World.CountsObey, counting_binds_jointly and the front lemmas (Tended.front, Tended.occupied).
+
+**Producer output / 上游输出:** 全部八个前提之下计数的规律恰是计数表与没有关系项活跃的一步上没有生起。 / Under all eight premises the laws of counting are the tally and that nothing arises across a step at which nothing is active.
+
+**Consumer input / 下游输入:** 从某步起每步被围住或世界有限时，再加从第 0 步起的变化界。 / With every step from some step on enclosed, or a finite world, a change bound from the first step as well.
+
+**Retained conditions / 保留条件:** 列出；可判定；逐点；八个前提。 / Listing; decidability; pointwise; the eight premises.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## counting-under-enclosure ← continued-change-needs-openness
+
+`formal-reuse` — 复用所立者的总水平跨过被围住的步不升、任何水平变化都使它下降（Flow.standing_never_rises、Flow.change_lowers）、由活动的普查得到所立者的普查（World.standingCensus、Web.StandingCensus.stock_eq）、被围住的步不是不围住所立者（Flow.Enclosed.aroundStanding_not_not）与体现的生起与止息即上升与下降（World.rises_of_arises、World.falls_of_ceases）。 / Reuses that across an enclosed step the total standing never rises and every change of standing lowers it (Flow.standing_never_rises, Flow.change_lowers), the census of what stands from the census of activity (World.standingCensus, Web.StandingCensus.stock_eq), that an enclosed step is not refutably enclosed around what stands (Flow.Enclosed.aroundStanding_not_not), and that embodied arising and ceasing are rising and falling (World.rises_of_arises, World.falls_of_ceases).
+
+**Producer output / 上游输出:** 被围住时变化不再复现（静止定理）。 / Under enclosure change does not recur (the rest theorem).
+
+**Consumer input / 下游输入:** 活跃者连同有变化的步不多于被围住时所立者的总水平。 / The relata active together with the steps of change stay within the total standing at enclosure.
+
+**Retained conditions / 保留条件:** 活动的普查；关系项都体现；平衡；耗散；被围住。 / A census of activity; every relatum embodied; balance; dissipation; enclosure.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
+
+## counting-under-enclosure ← map-of-premises
+
+`formal-reuse` — 复用八个前提（World.Premised、World.Premised.of）与有限世界每步被围住（World.Finite.enclosed）。 / Reuses the eight premises (World.Premised, World.Premised.of) and that every step of a finite world is enclosed (World.Finite.enclosed).
+
+**Producer output / 上游输出:** 八个前提；有限世界每步被围住。 / The eight premises; every step of a finite world enclosed.
+
+**Consumer input / 下游输入:** 被围住的队列满足八个前提；有限世界的计数在变化界之内。 / The enclosed queue meets the eight; change in a finite world is bounded.
+
+**Retained conditions / 保留条件:** 活动可判定。 / Decided activity.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## counting-under-enclosure ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用封闭与耗散（Flow.ClosedAt、Flow.Dissipative、Flow.DissipatesOn）、总量的引理（total_le_of_support、total_eq_zero、le_total_of_mem）与成员的判定（decideMem）。 / Reuses closure and dissipation (Flow.ClosedAt, Flow.Dissipative, Flow.DissipatesOn), lemmas on totals (total_le_of_support, total_eq_zero, le_total_of_mem) and deciding membership (decideMem).
+
+**Producer output / 上游输出:** 耗散只约束有封闭的有限家族的步。 / Dissipation binds only at steps with a closed finite family.
+
+**Consumer input / 下游输入:** 被围住的队列在每个有变化的步上取用的多于给予的。 / At every step of change the enclosed queue takes more than it gives.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## counting-under-enclosure ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用计数（mark、mark_iff、mark_pos、mark_le_one、comings、ceasings）、步段（steps_last、steps_mem）与有限全知原则（LPO、clear、Clear）。 / Reuses the counts (mark, mark_iff, mark_pos, mark_le_one, comings, ceasings), stretches (steps_last, steps_mem) and the limited principle of omniscience (LPO, clear, Clear).
+
+**Producer output / 上游输出:** 开始与不再成立的计数；LPO。 / Counts of coming and ceasing to be; LPO.
+
+**Consumer input / 下游输入:** 变化界中有变化的步数；终结之步蕴含 LPO。 / The steps of change within a change bound; an end step implies LPO.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
 ## derived-extent-limits ← continuing-self-fed-from-beyond
 
 `formal-reuse` — 复用 FedFromBeyond 与 Lone.supply_not_source；照管者的供给每步都从其外得到供给（Totalizer.fed）。 / Reuses FedFromBeyond and Lone.supply_not_source; the keeper's supply is fed from beyond at every step (Totalizer.fed).

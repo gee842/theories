@@ -86,6 +86,45 @@ open Generative RelationalRenewal
 
 universe u v
 
+/-! ## Arithmetic
+
+Lemmas on natural numbers used throughout the layers, each with an empty axiom report; the
+prelude's versions of the cancellation lemmas carry `propext`. -/
+
+/-- What is at least `a` is `a` and some more. -/
+theorem le_dest {a b : Nat} (le : a ≤ b) : ∃ m, b = a + m := by
+  induction le with
+  | refl => exact ⟨0, rfl⟩
+  | step _ earlier => exact match earlier with
+    | ⟨m, same⟩ => ⟨m + 1, congrArg Nat.succ same⟩
+
+/-- As `Nat.le_of_add_le_add_right`, with an empty axiom report. -/
+theorem le_of_add_le_add_right : ∀ {a b : Nat} (k : Nat), a + k ≤ b + k → a ≤ b
+  | _, _, 0, h => h
+  | _, _, k + 1, h => le_of_add_le_add_right k (Nat.le_of_succ_le_succ h)
+
+/-- As `Nat.add_right_cancel`, with an empty axiom report. -/
+theorem add_right_cancel : ∀ {a b : Nat} (k : Nat), a + k = b + k → a = b
+  | _, _, 0, h => h
+  | _, _, k + 1, h => add_right_cancel k (Nat.succ.inj h)
+
+/-- What each of two numbers has beyond the other, added to the other, gives the same. -/
+theorem add_sub_turn : ∀ x y : Nat, y + (x - y) = x + (y - x)
+  | 0, y => (congrArg (y + ·) (Nat.zero_sub y)).trans (Nat.zero_add y).symm
+  | x + 1, 0 => (Nat.zero_add (x + 1)).trans (congrArg (x + 1 + ·) (Nat.zero_sub (x + 1))).symm
+  | x + 1, y + 1 => (congrArg (y + 1 + ·) (Nat.succ_sub_succ x y)).trans
+      ((Nat.add_right_comm y 1 (x - y)).trans ((congrArg (· + 1) (add_sub_turn x y)).trans
+        ((Nat.add_right_comm x (y - x) 1).trans
+          (congrArg (x + 1 + ·) (Nat.succ_sub_succ y x).symm))))
+
+/-- As `Nat.add_sub_of_le`, with an empty axiom report. -/
+theorem add_sub_of_le : ∀ {m k : Nat}, m ≤ k → m + (k - m) = k
+  | 0, k, _ => Nat.zero_add k
+  | _ + 1, 0, le => absurd le (Nat.not_succ_le_zero _)
+  | m + 1, k + 1, le => (congrArg (m + 1 + ·) (Nat.succ_sub_succ k m)).trans
+      ((Nat.add_right_comm m 1 (k - m)).trans
+        (congrArg (· + 1) (add_sub_of_le (Nat.le_of_succ_le_succ le))))
+
 /-! ## Change is made at a step -/
 
 /-- What holds at `T` and fails at a later `t` ceased across some step between them. -/
