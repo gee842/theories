@@ -31,12 +31,12 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 
 | 条目 / Item | 所有者 / Owner | 状态 / State | 工作区 / Workspace | 接口 / Needs → feeds |
 |---|---|---|---|---|
-| **整合者：第一部分零前提一线** / **Integrator: Part I zero-premise line** | Universal meta ethics of agency review (fork) [47a8ad] (the unification session; 待确认它接受 / to confirm it accepts) | — | [ZERO-PREMISE-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md), [BECOMING-UNIFICATION-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
+| **整合者：第一部分零前提一线** / **Integrator: Part I zero-premise line** | Universal meta ethics of agency review (fork) [47a8ad] (the unification session; 已接受 / accepted, 2026-10-11) | — | [ZERO-PREMISE-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md), [BECOMING-UNIFICATION-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md) | — |
 | P42 Feedback, P43 Boundaries | P42–P44 的同伴会话 / the P42–P44 peer (Universal Metaethical Core [794658], 待确认 / to confirm) | verified on branch `c9c219e3`, landing pending | branch | first in the landing queue |
 | P44 G0 audit (Part II) | same | next | — | after P43 |
 | P46 finite + enclosed binding laws, P47 `Becoming.Standing` | [47a8ad] | verified in scratch | its scratch | lands after P42–P44; the last selection-table work (redirect item 1) |
 | Zero-premise inventory | [47a8ad] | committed `4358d65d`; awaiting Ren on b(2) decidability, b(3) time, two re-foundings | ZERO-PREMISE-PLAN §1.4 | Ren's decisions → laws 1–4 |
-| Law 1 (one exchange; rest; change needs openness), law 4 (arising needs an active giver), `Flow.BalancesOn` | [47a8ad] | drafting | core module `Becoming.Locality`, its scratch | defines the local condition used by laws 2–3 |
+| Law 1 (one exchange; rest; change needs openness), law 4 (arising needs an active giver), `Flow.BalancesOn` | [47a8ad] | drafting; law 4's iffs, law 1's one-step law and the recurrence lemma checked in scratch | core module `Becoming.Locality` (imports `Becoming.Dissipation`; `Openness` will import it), its scratch | shared definitions: `Flow.BalancesOn`, `Flow.RunsDownOn` / `RunsDown` / `RunsDownClosed` (the local condition of rest), `Web.StandingCensus` (moved here from `Openness`); the rest results of `Openness` re-proved in place as corollaries |
 | Law 2 (ceasing needs arising), with its decidability test | 0 axiom completeness [9c2394] | drafting (assigned by the integrator 10-11) | standalone file importing only `Becoming.Population`, in `/private/tmp/claude-501/-Users-ren-theories/858b224e-921d-48fe-a3c6-986fa90b26d5/scratchpad/law2/` | `Listed`, `Web.Census`, `Listed.over_stretch`, `ceasing_iff_shortfall`, `coming_iff_excess`; may use `revisits_within` (R6) → integrator puts it in `Becoming.Locality` as a section and rewires `World.arising_of_ceasing` (Openness) |
 | Law 3 (closure bounds change) | [47a8ad] (integrator; falls out of law 1's count) | with law 1 | `Becoming.Locality` | re-proves `World.enclosure_bounds_change` and P47's `enclosure_bounds_standing` in place; [9c2394]'s `standing_enclosure_bounds_change` is a cross-check only |
 | R6 `Becoming.Recurrence` (configurations, a determined law `next`, pigeonhole revisiting without decidability, history lift) | Progress review and knowledge contribution [b36129] | drafting | its scratch; imports only `Becoming.Frame` | → law 2; integrator to place it relative to `Becoming.Locality` |
@@ -53,4 +53,6 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 
 1. P42, P43 (`c9c219e3`), then P44.
 2. P46, P47.
-3. Zero-premise modules in the integrator's order (`Becoming.Locality` first, since the others build on it).
+3. `Becoming.Locality`: laws 1, 3 and 4, with their corollaries re-proved in `Openness`, `Counting` and P47's `Standing`.
+4. R6 `Becoming.Recurrence`: it imports only `Becoming.Frame` and `Locality` does not use it, so it may go ahead of item 3 if it is ready first.
+5. Law 2, integrated into `Becoming.Locality`, with the census law re-proved as its corollary.
