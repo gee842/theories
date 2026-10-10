@@ -45,7 +45,7 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 | Weakening test: time (coarser steps) | [9c2394] holds `Sampling` | verified in scratch, unlanded; awaits Ren on b(3) | `/private/tmp/claude-501/-Users-ren-theories/858b224e-921d-48fe-a3c6-986fa90b26d5/scratchpad/enc/a4/Becoming/Sampling.lean` | → integrator, for laws 1–4 |
 | Standing fixed by the exchange and one cross-section | [9c2394] holds `Determination` | verified in scratch, unlanded | `…/scratchpad/enc/me/Becoming/Determination.lean` | → laws 2 and 4; integrator to decide |
 | `FiniteBinding`, `StandingCounting`, `DependenceCounting` | [9c2394] | **not to land** (duplicate P46/P47; selection tables stopped); evidence only | `…/scratchpad/enc/{a1,a2,a3}/Becoming/` | — |
-| Registration and testing (feedback blindness) | 待确认 / to confirm (Wisdoms on feedback and learning [0239ad]?) | plan, untracked | [REGISTRATION-AND-TESTING-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md) | — |
+| **P49 Registration and testing** (feedback blindness; core module `Becoming.Testing`; drafted as “P47” before this board, renumbered because P47 is `Becoming.Standing`; number at the integrator's call) | Wisdoms on feedback and learning [0239ad] (Ren: “start now”, [source](../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md) on branch `p47-testing`) | first version verified (receipt `20261010T210417.221419Z` in the worktree: 38 theorems, empty axiom reports); independent review done (its 192 probe constants axiom-free); now integrating the review's stronger forms (reach blindness where the formations respond, exact threshold laws, refutation relative to a model, the bridge to `Becoming.Inquiry`) | branch `p47-testing`, worktree `.claude/worktrees/p47-testing`, based on `c9c219e3`; [plan](research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md) | needs P42 `Becoming.Feedback` landed; uses `Flow.Balances` only on the conditions registered, so it can be restated on `Flow.BalancesOn` once `Becoming.Locality` lands (integrator's call); feeds the 无明 boundary plan's B3–B4 |
 | 无明 boundary | — | awaits Ren's go | [WUMING-BOUNDARY-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md) | — |
 | Part II: continuation grounding, one axiom | — | awaits Ren | [CONTINUATION-GROUNDING-PLAN](research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md) | — |
 
@@ -53,6 +53,7 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 
 1. P42, P43 (`c9c219e3`), then P44.
 2. P46, P47.
+   - P49 registration and testing (`Becoming.Testing`), after P42–P44, which it imports.
 3. `Becoming.Locality`: laws 1, 3 and 4, with their corollaries re-proved in `Openness`, `Counting` and P47's `Standing`.
 4. R6 `Becoming.Recurrence`: it imports only `Becoming.Frame` and `Locality` does not use it, so it may go ahead of item 3 if it is ready first.
 5. Law 2, integrated into `Becoming.Locality`, with the census law re-proved as its corollary.
