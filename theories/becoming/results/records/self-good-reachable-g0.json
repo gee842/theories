@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "self-good-reachable-g0",
   "title": {
-    "zh": "自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例",
-    "en": "Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation"
+    "zh": "立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例",
+    "en": "A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation"
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -255,6 +255,10 @@
     {
       "zh": "2026-10-09（P5b）：Becoming 核心改为包结构后，EvaluatorGrounding.lean 说明注释中的 becoming/MetaethicalCore.lean 改为 Becoming.Metaethics，EVALUATOR-GROUNDING-ARGUMENT 的两处链接改到新路径；该模块检查器重跑（20261008T213425.487528Z），定理与公理依赖不变。读过改动后更新哈希；主张与证明不变。",
       "en": "2026-10-09 (P5b): after the Becoming core became a package, the comment in EvaluatorGrounding.lean naming becoming/MetaethicalCore.lean now names Becoming.Metaethics, and two links in EVALUATOR-GROUNDING-ARGUMENT point to the new path; the module checker was rerun (20261008T213425.487528Z) with theorems and axiom dependencies unchanged. Hashes updated after reading the change; claim and proof unchanged."
+    },
+    {
+      "zh": "2026-10-10：按 Ren 的要求，标题中的“自我之善”改为“立场自身之善（S0）”，不以独立的自我作框架；主张与证明不变。",
+      "en": "2026-10-10: “Self-good” in the title becomes “a standpoint's own good (S0)”, which does not frame a self apart, at Ren's request; claim and proof unchanged."
     }
   ]
 }

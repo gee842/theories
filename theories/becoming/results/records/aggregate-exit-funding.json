@@ -2,26 +2,26 @@
   "schema_version": 1,
   "id": "aggregate-exit-funding",
   "title": {
-    "zh": "可加退出承担的共同资金界",
-    "en": "Joint funding of additive exit obligations"
+    "zh": "共享存量上的汲取：每种组合都在存量之内，当且仅当总和在内",
+    "en": "Draws on one shared stock: every combination fits exactly when the total does"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F02",
   "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
   "claim": {
-    "zh": "前 n 项自然数承担的每个所选子集都不超过 reserve，当且仅当全部承担之和不超过 reserve。",
-    "en": "Every selected subset of the first n natural-number obligations fits reserve iff their full sum fits reserve."
+    "zh": "前 n 项以自然数给出的汲取中，每一种选取都在存量之内，当且仅当它们的总和在存量之内。",
+    "en": "Of the first n draws, given as natural numbers, every selection fits within the stock exactly when their total does."
   },
   "hypotheses": [
     {
-      "zh": "承担为非负自然数且可加，reserve 为同一份可用支持。",
-      "en": "Obligations are nonnegative additive natural numbers; reserve is the same available support pool."
+      "zh": "汲取是可相加的自然数；存量是它们共同汲取的同一个量。",
+      "en": "The draws are natural numbers that add; the stock is the one quantity they all draw on."
     }
   ],
   "correspondence": {
-    "zh": "数值代表所声明的退出工作，不是通用伦理价值；真实义务与储备需独立核实。",
-    "en": "Numbers represent declared exit work, not universal ethical value; actual obligations and reserves require independent correspondence."
+    "zh": "在源模型中，每项汲取是一项活动无过渡损失地停止所需的工作，存量是为此留出的部分。这些数不是一般的价值度量；与实际活动和存量的对应需另行核实。",
+    "en": "In the source model, each draw is the work an activity needs to stop without its transition loss, and the stock is what is set aside for that work. The numbers are not a general measure of value; their correspondence to actual activities and stocks needs separate evidence."
   },
   "canonical_source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
   "aliases": [
@@ -48,14 +48,14 @@
     {
       "path": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
       "detail": {
-        "zh": "各项分别可负担不推出共同可负担；两个二单位承担可以竞争同一二单位储备。",
-        "en": "Individual affordability does not imply joint affordability: two two-unit obligations can compete for one two-unit reserve."
+        "zh": "每项单独在内不推出共同在内：两项各为二单位的汲取可以竞争同一个二单位的存量。",
+        "en": "Each draw fitting alone does not make them fit together: two draws of two units each can compete for one stock of two."
       }
     }
   ],
   "limitations": {
-    "zh": "各项分别可负担不推出共同可负担；两个二单位承担可以竞争同一二单位储备。",
-    "en": "Individual affordability does not imply joint affordability: two two-unit obligations can compete for one two-unit reserve."
+    "zh": "每项单独在内不推出共同在内：两项各为二单位的汲取可以竞争同一个二单位的存量。",
+    "en": "Each draw fitting alone does not make them fit together: two draws of two units each can compete for one stock of two."
   },
   "validation_scope": {
     "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
@@ -94,13 +94,17 @@
     }
   ],
   "next_delta": {
-    "zh": "可加退出预算直接复用；其他支持类型需明确转换或另证。",
-    "en": "Reuse for additive exit budgets; other support types require a stated translation or separate proof."
+    "zh": "汲取在同一共享存量上相加之处可直接复用；其他支持类型需明确转换或另证。",
+    "en": "Reuse wherever draws add on one shared stock; other kinds of support need a stated translation or a separate proof."
   },
   "history": [
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-10：按 Ren 的要求以描述结构的词重述（原题“可加退出承担的共同资金界”）；主张、证明与回执不变。",
+      "en": "2026-10-10: restated in words that describe the structure, at Ren's request (formerly “Joint funding of additive exit obligations”); claim, proof and receipt unchanged."
     }
   ]
 }
