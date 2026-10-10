@@ -217,8 +217,8 @@
     "en": "Discrete steps; amounts are rationals by refinement, the unit never coarsening, with neither real amounts nor continuous time; whether the bounds are attained is not proved; the exchange law is stated for a fixed family closed from T on, not read of worlds with changing enclosures; loss in proportion and the reserve's least cost are premises whose physical warrant is not reviewed; no premise weaker than the family's share is stated that still gives the growth law; the carriers of Trickle are not active; the other witnesses have one or two relata and show the premises independent, not describing actual systems; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; no ethical predicate; not yet independently reviewed; names and readings are Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T165248.121581Z）：Becoming.Resolution 的 200 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 35 个模块，核心闭包 37 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261010T165548.911356Z 通过。尚无独立审查；作者反审见整合文档 §59、§59.1 与 §59.2。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T165248.121581Z): the 200 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 35 modules over a core closure of 37, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261010T165548.911356Z passed. Not yet independently reviewed; the author's counterreview is in sections 59, 59.1 and 59.2 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T171040.121853Z）：Becoming.Resolution 的 200 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 35 个模块，核心闭包 37 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261010T171427.598973Z 通过。尚无独立审查；作者反审见整合文档 §59、§59.1 与 §59.2。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T171040.121853Z): the 200 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 35 modules over a core closure of 37, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261010T171427.598973Z passed. Not yet independently reviewed; the author's counterreview is in sections 59, 59.1 and 59.2 of the integration note."
   },
   "references": [
     {
@@ -509,7 +509,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "39d53e9f12e3bed206a915af217daaf9999d3454bc971376cc0924de14d4a3fc",
+      "sha256": "03b2dbe17a2e526c031d19e04183be61c64febbfab902f11a42a89b0801a32bc",
       "declarations": [
         "Becoming.World.Counted"
       ]
@@ -537,25 +537,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "515c0b736b042ba7d4f14c67d6b599d80b050a90ceb57166c5890504c49e2d43",
+      "sha256": "b94a273b4eafc963b1927fa227f2bec766d94b2e941928d29d20c69c0f56e96f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "4ce9e8ba4bbd88c30ddd0e2d48ae4bdd5857399d3b7159a92dd4f48011596d7b",
+      "sha256": "8018ff5e8ead0760964d46a2ba7d0e630cbbd6ff41e00b190ac9de4c2bdf9fa9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "04f53f5d20daf67a9201f5f7e3d1523d5d5ef33aaef9a7cf45dae8b911d0dc49",
+      "sha256": "c4df7e79e34c75ef112347cc3c85d3d24620c2c88157bebaa70f80e2991c0315",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "87e61b014521a5c4b2c950d197382cb3270ea944763184d0d78e62a6a4404bec",
+      "sha256": "e846a226e8ab5af80d22022b18f5c4422796ff7e3f4023973f54118a0b57cd0c",
       "declarations": []
     },
     {
@@ -646,6 +646,10 @@
     {
       "zh": "2026-10-10 R2：Flow.DissipatesBy 改为对家族陈述（家族得回的至多是从它取走的 q/(q+1)），逐个形成的形式经 Flow.DissipatesBy.of_each 给出它，每条规律的陈述不变而前提变弱；加入每一尺度的最小损失之下的交换律（Flow.LosesAtSize、Flow.exchange_bound_of_least_loss）与见证 Trickle（growth_needs_proportion）；见整合文档 §59.2。",
       "en": "2026-10-10 R2: Flow.DissipatesBy restated for the family (the family gets back at most q/(q+1) of what is taken from it), the per-formation form giving it through Flow.DissipatesBy.of_each, so every law keeps its statement under a weaker premise; adds the exchange law at a least loss for each size (Flow.LosesAtSize, Flow.exchange_bound_of_least_loss) and the witness Trickle (growth_needs_proportion); see section 59.2 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 P45：验证范围重新指向合并检查器回执 20261010T171040.121853Z 与外围回执 20261010T171427.598973Z（每个选择之下所选前提都起约束时计数的规律：Counting 与 Premises 新增声明）；所引模块的定理数改为该回执的数目（Premises 59、Counting 161）。断言不变。",
+      "en": "2026-10-10 P45: validation scope re-pointed to consolidated receipt 20261010T171040.121853Z and periphery receipt 20261010T171427.598973Z (the laws of counting where the premises of each selection bind: declarations added to Counting and Premises); the module counts cited are now that receipt's (Premises 59, Counting 161). The claim is unchanged."
     }
   ]
 }

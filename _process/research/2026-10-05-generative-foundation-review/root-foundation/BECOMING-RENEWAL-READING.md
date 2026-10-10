@@ -3723,6 +3723,67 @@ Integration: 记录 rest-at-every-resolution；计划 §10 R2；章节 §9 的�
 
 **边界。** 同 §59；比对家族的比例更弱而仍给出增长的规律的前提没有陈述；Trickle 的转移者不活跃；尚无独立审查。
 
+## 60. 每个选择之下所选前提都起约束时计数的规律（P45）
+
+2026-10-10。按 Ren“let's aim for the strongest claim without axiom, as the first part, and add one axiom, as the following part, the no axiom part is most important and elegant”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。P41b 把计数的两项规律列为开放（§58 V4、whole-law-of-counting 的下一步）：每个选择之下所选前提都起约束时的规律，以及有限世界中除普查外每个前提都起约束时的规律。本节给出这两项。
+
+```text
+Result(s): 扩展 whole-law-of-counting（每个选择之下所选前提都起约束时、有限世界中除普查外每个前提都起约束时计数的规律）；
+           修订 map-of-premises（每个前提各自起约束）与 counting-under-enclosure（开放项）；没有新的成果记录
+Delta: Premises：World.Premise.Binds，每个前提各自起约束；World.Binds 改为每个前提都起约束（∀ p, p.Binds w），
+       各前提的条件与原先的八项相同；前提的选择一节移到起约束之前；hatch_binds 与 finiteHatch_binds_but_census 按前提陈述。
+       Counting：Web.saturated、Web.saturated_dependent、Flow.transmits_saturated、World.saturated、
+       World.Premised.saturated；Tally.after_pos、World.counts_active、World.counts_arising；OpenQueue.level_le、
+       EnclosedQueue.level_le；LossyQueue 与 World.lossyQueue（_dissipative、_taking、_acting、_binds、_binding）；
+       RelayQueue 与 World.relayQueue（_balanced、_dissipative、_acts、_binds、_binding）；World.onceClosedQueue_binding、
+       World.openQueue_saturated_binding；World.binding_counting_under、World.binding_activity_iff、
+       World.binding_arising_iff、World.binding_joint_iff；World.finiteQueue_saturated_binds、
+       World.finite_binding_counting。修改：只闭合一次的队列在步前或步后不空时交换（原先只看步前），
+       World.onceClosedQueue_binds 不再要求没有成员加入空队，也不要求加入发生在第 T 步；World.binds_arising 只要体现起约束
+Supplied premises / correspondence: 不变；起约束仍是条件有实例（P41b）
+Evidence: 合并检查器回执 20261010T171040.121853Z（1734 项定理、2687 项声明审计，全部源声明公理报告为空；Premises 59、Counting 161），
+          外围回执 20261010T171427.598973Z；新声明先在暂存树中从前导编译，逐条 #print axioms 全部为空
+Boundary: 只是活动的计数；有限世界中每个选择之下所选前提都起约束时的规律没有陈述；更强的起约束读法仍开放（由 Ren 选择）；
+          尚无独立审查
+Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表与术语表；计划 P45；模块说明、根模块、包 README 与检查器的范围
+```
+
+**每个前提各自起约束。** P38c 只问每个前提都起约束的世界。按前提陈述起约束（`World.Premise.Binds`）之后，每个选择 S 都有同一个问题：在满足 S 且 S 所选的每个前提都起约束的世界中，普查的计数有哪些规律。每个前提的条件与 P38c 相同：活动需要支持在活跃者以正需要依存于某条件时起约束，平衡在水平变化时，只有活跃者给予与取用在参与者给予与取用时，耗散在参与者从封闭的家族取用时，体现在关系项生起时，普查在世界不有限时，有界传递在后代于其开始而立之步依存于某条件时。`World.Binds` 现在是每个前提都起约束，与原先八个字段的结构同义。
+
+**规律。** 回答是 `World.counting_under` 的规律，再加至多三条（`World.binding_counting_under`）：
+
+1. *有关系项活跃*，恰在选中活动需要支持、只有活跃者给予、只有活跃者取用或体现时（`World.binding_activity_iff`）。前三者的条件各以一个活跃的关系项为实例：需要支持的是活跃者；给予或取用的是参与者，只有活跃者给予或取用时它活跃，普查计到它（`World.counts_active`）。体现起约束时有生起，生起者步后活跃（`Tally.after_pos`）。
+2. *有某个生起*，恰在选中体现时（`World.binding_arising_iff`）。体现的条件以一个生起的关系项为实例，体现之下普查把它计为开始成立（`World.binds_arising`、`World.counts_arising`）。
+3. *在有关系项活跃的一步上有生起*，恰在选中体现，且选择约束计数（`World.BindsCounting`），或选中只有活跃者给予与有界传递时（`World.binding_joint_iff`）。约束计数时，没有关系项活跃的一步上没有生起，所以第 2 条的生起之步上有关系项活跃；有界传递起约束时有一个后代在某步从一个参与者传下，只有活跃者给予时这个给予者在该步活跃。
+
+每条都是某个前提的条件的实例在计数上留下的。三个 iff 说，在别的选择之下这一条不是规律：没有选中这四个前提时，什么都不发生的计数表由一个所选前提都起约束的世界实现；不选体现时，每步一个关系项、没有生起也没有止息的计数表如此；选中体现，而选择既不约束计数、也不同时选中只有活跃者给予与有界传递时，一个关系项在第一步从无到有地生起并留下（`Queue.lone`），生起之步上没有关系项活跃。
+
+**见证。** 反方向需要对每个满足这些规律的计数表构造一个世界，满足 S 且所选前提都起约束。
+
+- *饱和的依存网*（`Web.saturated`）：每个关系项以其所立的水平依存于每个关系项。这样活动需要支持对任何活动成立（`Web.saturated_dependent`），水平有界时有界传递对任何流成立（`Flow.transmits_saturated`），所以满足八个前提的世界饱和之后仍满足它们（`World.Premised.saturated`）。这是最弱的依存，与 P41b 中只闭合一次的队列的网相同，只用作见证。
+- *传递*（`World.relayQueue`）：在一个计数表的队列旁边，一个参与者在第 U 步从地关系项 1 取用两个单位，给地关系项 0 一个单位，失去另一个；水平随之改变，所以平衡、耗散、取用、给予与有界传递都起约束。地关系项 0 生起而不活跃，所以不满足体现，只用于不选体现的选择。选中活动需要支持、只有活跃者给予或取用时，参与者取为第 U 步的队首，在第 U 步活跃（`World.relayQueue_binding`）。
+- *有损的队列*（`World.lossyQueue`）：开放队列的网饱和；跨第 U 步，队首与自身及每个在该步加入的成员各交换一个单位，再失去一个单位；一个地关系项在每步向每个关系项给予 gift t。所立者不记录这些交换与损失，所以它不平衡；它对任何 gift 都耗散，第 U 步队列不空时取用起约束，gift 恒为零时只有活跃者给予（`World.lossyQueue_binding`）。它用于选中体现而不选平衡的选择：有界传递起约束，或因为加入者在第 U 步从队首传下（U 取为第 3 条规律给出的步），或因为加入者从给予的地关系项传下。
+- *只闭合一次的队列*（`World.onceClosedQueue_binding`）：选择约束计数时它满足全部八个前提且每个都起约束；选中平衡与体现而不选只有活跃者给予与取用时，有成员加入空队也不妨碍它满足其余的前提。为此它现在在步前或步后队列不空时交换（`OnceClosedQueue.exchange`），没有成员加入空队不再是耗散与起约束的条件（`World.onceClosedQueue_binds` 只要第 T 步队列不空、队首多立着的多于加入者，且某步有成员加入）。
+- *饱和的开放队列*（`World.openQueue_saturated_binding`）：选中平衡、体现与只有活跃者取用，而不选只有活跃者给予与耗散时。
+
+按体现、平衡、只有活跃者给予、取用、耗散与有界传递分情形，每个情形都由其中一个见证实现，所以 iff 的两个方向都在 Lean 中检查。
+
+**有限世界。** 没有有限世界使每个前提都起约束（`World.Finite.not_binds`）。有限世界中除普查外每个前提都起约束时，八个前提之下计数的规律是有限世界的规律（计数表、没有关系项活跃的一步上没有生起、从第 0 步起的变化界）再加有某个生起（`World.finite_binding_counting`）。见证是 P38b 的有限队列把依存网饱和：有成员在第 T 步加入时，加入者生起而改变所立，从队首传下，步后活跃并依存于自身的所立；队首从所有位置的家族取用，这个家族封闭，耗散只许它给予少于所取的（`World.finiteQueue_saturated_binds`）。
+
+**作者反审。**
+
+*反驳 1：三条规律不过是把起约束的定义搬进计数？* 一半是。起约束是条件有实例，这三条就是这些实例在活动的计数上留下的；本节的内容在于“至多”与“恰”：见证表明实例不在计数上留下别的东西，三个 iff 表明每一条只在所说的选择之下是规律。
+
+*反驳 2：见证用最弱的依存与不平衡的流，是否太容易？* 规律对所有满足选择且所选前提都起约束的世界成立，见证只需落在这个范围内。更强的依存只会使更少的世界满足前提；在某种更强的起约束读法之下规律可能更多，这一读法由 Ren 选择，仍开放（§58 V1）。有损的队列不平衡，只用于不选平衡的选择；传递不体现，只用于不选体现的选择。
+
+*反驳 3：改动只闭合一次的队列是否改变了 P38c 的结论？* 没有。`World.binding_counting` 的陈述与证明的结构不变，只是所用的引理条件更弱；队列在步前或步后不空时交换，只使不封闭的步多了“步前空、步后不空”的步，P38c 的计数表中没有成员加入空队，所以这些步不出现。
+
+*反驳 4：为什么有限世界中只陈述了除普查外全部起约束的情形？* 每个选择之下的有限的见证须是有限的世界；在有限世界中，只有活跃者取用且耗散时，被围住的步上只有活跃者给予（`World.Finite.acting`），所以第 3 条的条件在有限世界中会不同，需要另造有限的见证（例如 P38b 的环）。这留作开放，列入章节 §8。
+
+**读法（AI，待 Ren）。** 每个前提起约束，只在计数上留下它的实例：有活动、有生起，以及（当生起被约束为从活动而来时）活动之步上的生起。其余的计数，前提即使都起约束也不决定。
+
+**边界。** 离散步，活动的计数；水平与依存的计数在前提之下、有限世界中每个选择之下的起约束规律、更强的起约束读法仍开放；没有伦理谓词；名称（saturated、lossyQueue、relayQueue 等）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4138,4 +4199,13 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 **Loss in proportion per family, and a least loss at each size (R2).** Every law of R1 and R1b uses loss in proportion only summed over the closed family, so `Flow.DissipatesBy q` now says just that: each closed family gets back at most `q` parts in `q + 1` of what is taken from it. It holds where each formation does so (`Flow.DissipatesBy.of_each`), not conversely, so every law keeps its statement under a weaker premise, and the witnesses dissipative by no share now fail the weaker premise as well. A different weakening, a least loss at each size (a formation taking at least `1/p` of the unit loses at least `1/m` of it, `m` the same at every step, `Flow.LosesAtSize`), gives the exchange law with the spine's dissipation (`Flow.exchange_bound_of_least_loss`), but not the growth law. In `Trickle`, at a unit quartering at each step, a whole unit of step 0 passes between two sides in `2^t` parts at step `t`, each losing two units of the step after: every size has a least loss and transfers of each fixed size stop, yet a whole unit arises without end, with no share lost (`growth_needs_proportion`). Counting transfers needs a least loss at each size; counting what relata gain, lose, begin or end needs more, since one gain can be split across any number of transfers. Whether a premise weaker than the family's share still gives the growth law is not stated, and the carriers of `Trickle` are not active. Receipt 20261010T165248.121581Z, periphery receipt 20261010T165548.911356Z. Not yet independently reviewed; the author's counterreview is in section 59.2.
 
-The package now has 1705 theorems and 2645 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58 and 59 to 59.2. The periphery bridge passed against this core (receipt 20261010T165548.911356Z).
+**The laws of counting where the premises of each selection bind (P45).** Following Ren's "let's aim for the strongest claim without axiom, as the first part" and "aim a complete theory of becoming, and finish related work", this states the two laws of counting that P41b left open (section 58). A premise now binds on its own (`World.Premise.Binds`), each condition as before, and `World.Binds` is every premise binding. Under each selection, where each selected premise binds, the laws of counting are those of `World.counting_under` and at most three more (`World.binding_counting_under`); each is what an instance of a condition leaves in the counts, and each is a law exactly under the selections named.
+- **Something is active,** exactly where activity needing support, only active relata giving, only active relata taking or embodiment is selected (`World.binding_activity_iff`): the first three have an active relatum as their instance, and what arises is active after the step.
+- **Something arises,** exactly where embodiment is selected (`World.binding_arising_iff`).
+- **Something arises across a step at which something is active,** exactly where embodiment is selected and the selection either binds counting or selects only active relata giving and bounded transmission (`World.binding_joint_iff`): with transmission binding, a descendant arises from a participant, active where only active relata give.
+- **The witnesses.** A saturated web, every relatum depending on every relatum at what it stands at, keeps the premises a world meets where levels are bounded (`Web.saturated`, `World.Premised.saturated`). Without embodiment, a relay beside a queue hands one of two units on to a ground relatum and loses the other (`World.relayQueue_binding`). With embodiment but without balance, a lossy queue's front, across one step, exchanges a unit each way with itself and each member joining and loses one unit more, which no standing records (`World.lossyQueue_binding`). With embodiment and balance, the queue closed once, which now exchanges across every open step at which it is not empty before or after, so that binding no longer needs nothing joining an empty queue (`World.onceClosedQueue_binding`), and the open queue with its web saturated (`World.openQueue_saturated_binding`).
+- **Finite worlds.** Where every premise but the census binds, the laws of counting under the eight are those of finite worlds and that something arises (`World.finite_binding_counting`), witnessed by the finite queue with its web saturated (`World.finiteQueue_saturated_binds`). The laws in finite worlds where the premises of each selection bind are not stated: there taking with dissipation gives only active relata giving across enclosed steps (`World.Finite.acting`), and finite witnesses are needed.
+
+On the AI's reading, pending Ren: binding leaves in the counts only its instances, activity and arising, and arising at a step of activity where arising is bound to come from activity. Records extended or revised: whole-law-of-counting, map-of-premises, counting-under-enclosure. Receipt 20261010T171040.121853Z (Premises 59, Counting 161). Not yet independently reviewed; the author's counterreview is in section 60.
+
+The package now has 1734 theorems and 2687 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59 to 59.2 and 60. The periphery bridge passed against this core (receipt 20261010T171427.598973Z).

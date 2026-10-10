@@ -217,26 +217,32 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Counting` (L3): what the premises add to the laws of counting, the tally being
   the whole law of counting with no premise (`Becoming.Population`). Premises lacking
   balance or embodiment leave counting free: every tally is the census of a world meeting
-  every premise but embodiment, and of one meeting every premise but balance; together,
-  with only active relata giving, they bind it, nothing arising across a step at which
-  nothing is active. That is all the eight add, three of them holding vacuously in the
-  world that shows it. Under each of the 256 selections of the premises the laws are of
-  two kinds, the second, nothing arising across a step at which nothing is active, exactly
-  where the selection selects balance and embodiment with only active relata giving, or
-  with only active relata taking and dissipation. Enclosure bounds change: with every step
-  from some step on enclosed, the relata active together with the steps of change stay
-  within the total standing at that step. With enclosure from some step on, a selection
-  adds that from some step on change stays within a bound and nothing arises across a step
-  at which nothing is active, exactly where it selects balance, embodiment and
-  dissipation. In finite worlds the 256 selections give three kinds of law: a tally with
-  at most some number active at each step; that, with nothing arising across a step at
-  which nothing is active; and both, with a change bound from the first step. Finite
-  worlds and worlds enclosed from some step on have the same laws exactly where the
-  selection bounds change and binds counting, as all eight do. The bound is attained, and
-  a step after which nothing arises needs omniscience in general. Where every premise
-  binds, each condition having an instance, every census counts something arising, and
-  that is all binding adds; it decides neither rest nor change without end. No finite
-  world binds every premise, though in one every premise but the census can.
+  every premise but embodiment, and of one meeting every premise but balance; together, with
+  only active relata giving, they bind it, nothing arising across a step at which nothing is
+  active. That is all the eight add, three of them holding vacuously in the world that shows
+  it. Under each of the 256 selections of the premises the laws are of two kinds, the
+  second, nothing arising across a step at which nothing is active, exactly where the
+  selection selects balance and embodiment with only active relata giving, or with only
+  active relata taking and dissipation. Enclosure bounds change: with every step from some
+  step on enclosed, the relata active together with the steps of change stay within the
+  total standing at that step. With enclosure from some step on, a selection adds that from
+  some step on change stays within a bound and nothing arises across a step at which nothing
+  is active, exactly where it selects balance, embodiment and dissipation. In finite worlds
+  the 256 selections give three kinds of law: a tally with at most some number active at
+  each step; that, with nothing arising across a step at which nothing is active; and both,
+  with a change bound from the first step. Finite worlds and worlds enclosed from some step
+  on have the same laws exactly where the selection bounds change and binds counting, as all
+  eight do. The bound is attained, and a step after which nothing arises needs omniscience
+  in general. Where every premise binds, each condition having an instance, every census
+  counts something arising, and that is all binding adds; it decides neither rest nor change
+  without end. Under each selection, where its premises bind, binding adds at most that
+  something is active, where activity needing support, only active relata giving, only
+  active relata taking or embodiment is selected; that something arises, where embodiment
+  is; and that something arises across a step at which something is active, where embodiment
+  is selected with balance and only active relata giving or only active relata taking and
+  dissipation, or with only active relata giving and bounded transmission. No finite world
+  binds every premise, though in one every premise but the census can, adding only that
+  something arises.
 * `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
   openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
   at every exchange; letting the unit split into finer units across each step separates

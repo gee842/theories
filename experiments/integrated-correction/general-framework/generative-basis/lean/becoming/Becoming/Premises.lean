@@ -36,25 +36,26 @@ that the rest are independent, none following from all the others together.
   A finite world whose activity is decided and which meets the eight comes to rest:
   neither arising nor ceasing recurs (`World.premised_rests`). The proof uses three of
   them: balance, dissipation and embodiment.
-* **Each binding.** A premise binds where something meets its condition (`World.Binds`): the
-  condition has an instance, which need not exclude anything the representation allows. In
-  `hatch` all eight hold and each binds (`World.hatch_binds`): a parent takes two units of
-  food and its own unit and gives its young one unit; the young comes to stand depending on
-  the food as the parent did, and the parent ceases. Activity needing support binds without
-  being tight, the food never falling below the need, and the four premises about the flow
-  bind at the first step only. A census binds in that the world is not finite, its
-  infinitely many ground relata idle (`World.hatch_idle`): only the food, the parent and the
-  child are ever active (`World.hatch_ever`), and a census exists wherever some list holds
-  every relatum ever active and activity is decided (`World.counted_of_ever`). In every
-  world that comes to rest under the rest theorem, not unboundedly many relata are ever
-  active or stand (`World.rest_few` in `Becoming.Openness`), so there a census binds only
-  so. No finite world binds every premise (`World.Finite.not_binds`); without its idle
-  ground, `hatch` is a finite world meeting the eight in which every condition but the
-  census has an instance (`World.finiteHatch_binds_but_census`).
 * **Selections.** The premises are named (`World.Premise`), and a selection of them is a
   function to `Bool` (`World.Meets`); a world meeting all eight meets every selection
   (`World.Premised.meets`). What the premises add to the laws of counting, under all eight
   and under each selection, is stated in `Becoming.Counting`.
+* **Each binding.** A premise binds where something meets its condition
+  (`World.Premise.Binds`, `World.Binds`): the condition has an instance, which need not
+  exclude anything the representation allows. In `hatch` all eight hold and each binds
+  (`World.hatch_binds`): a parent takes two units of food and its own unit and gives its
+  young one unit; the young comes to stand depending on the food as the parent did, and the
+  parent ceases. Activity needing support binds without being tight, the food never falling
+  below the need, and the four premises about the flow bind at the first step only. A census
+  binds in that the world is not finite, its infinitely many ground relata idle
+  (`World.hatch_idle`): only the food, the parent and the child are ever active
+  (`World.hatch_ever`), and a census exists wherever some list holds every relatum ever
+  active and activity is decided (`World.counted_of_ever`). In every world that comes to
+  rest under the rest theorem, not unboundedly many relata are ever active or stand
+  (`World.rest_few` in `Becoming.Openness`), so there a census binds only so. No finite
+  world binds every premise (`World.Finite.not_binds`); without its idle ground, `hatch` is
+  a finite world meeting the eight in which every premise but the census binds
+  (`World.finiteHatch_binds_but_census`).
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -795,31 +796,71 @@ theorem premised_rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finit
     (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
     (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
 
-/-- Each premise binds: something meets its condition, so the premise does not hold
+/-! ## Selections of the premises -/
+
+/-- The eight premises by name, for selecting among them. -/
+inductive Premise
+  | dependent | balanced | acting | taking | dissipative | embodied | counted | transmitting
+
+/-- What a premise asks of a world. -/
+def Premise.Holds : Premise → World → Prop
+  | .dependent, w => w.Dependent
+  | .balanced, w => w.Balanced
+  | .acting, w => w.Acting
+  | .taking, w => w.Taking
+  | .dissipative, w => w.Dissipative
+  | .embodied, w => w.Embodied
+  | .counted, w => w.Counted
+  | .transmitting, w => w.Transmitting
+
+/-- The world meets every premise the selection `S` selects. -/
+def Meets (w : World) (S : Premise → Bool) : Prop :=
+  ∀ p, S p = true → p.Holds w
+
+/-- A world meeting every premise meets every selection. -/
+theorem Premised.meets {w : World} (premised : w.Premised) (S : Premise → Bool) : w.Meets S
+  | .dependent, _ => premised _ (.head _)
+  | .balanced, _ => premised _ (.tail _ (.head _))
+  | .acting, _ => premised _ (.tail _ (.tail _ (.head _)))
+  | .taking, _ => premised _ (.tail _ (.tail _ (.tail _ (.head _))))
+  | .dissipative, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))
+  | .embodied, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
+  | .counted, _ =>
+    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
+  | .transmitting, _ =>
+    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
+
+/-! ## Each binding -/
+
+/-- A premise binds where something meets its condition, so that it does not hold
 vacuously. An instance need not exclude anything the representation allows: in a queue
 closed once, activity needing support and bounded transmission hold whatever is active and
-whatever flows (`OnceClosedQueue.dependent_any_activity`, `transmits_any_flow`). Activity needing support binds where an active
-relatum depends on a condition at a positive need; balance where a level changes; only
-active relata giving, and only active relata taking, where something taking part gives,
-and takes; dissipation where something taking part takes from a closed family; embodiment
-where a relatum arises; a census where the world is not finite, which says only that the
-census does not follow from the world being finite, not that it does work beyond finitely
-many relata ever active (`rest_few`); and bounded transmission where a descendant depends
-on a condition at its first standing step. -/
-structure Binds (w : World) : Prop where
-  dependent : ∃ t f c, w.web.active t f ∧ w.web.requires t f c ∧ 0 < w.web.need t f c
-  balanced : ∃ t c, w.web.level (t + 1) c ≠ w.web.level t c
-  acting : ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.give t f c
-  taking : ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.take t f c
-  dissipative : ∃ cs t f, Distinct cs ∧ w.flow.ClosedAt cs t ∧ f ∈ w.flow.present t ∧
-    0 < total cs (w.flow.take t f)
-  embodied : ∃ t x, w.web.Arises t x
-  counted : ¬ w.Finite
-  transmitting : ∃ t x g c, w.flow.DescendsAt w.web t x g ∧ w.web.requires (t + 1) x c
+whatever flows (`OnceClosedQueue.dependent_any_activity`, `transmits_any_flow`). Activity
+needing support binds where an active relatum depends on a condition at a positive need;
+balance where a level changes; only active relata giving, and only active relata taking,
+where something taking part gives, and takes; dissipation where something taking part takes
+from a closed family; embodiment where a relatum arises; a census where the world is not
+finite, which says only that the census does not follow from the world being finite, not
+that it does work beyond finitely many relata ever active (`rest_few`); and bounded
+transmission where a descendant depends on a condition at its first standing step. -/
+def Premise.Binds : Premise → World → Prop
+  | .dependent, w => ∃ t f c, w.web.active t f ∧ w.web.requires t f c ∧ 0 < w.web.need t f c
+  | .balanced, w => ∃ t c, w.web.level (t + 1) c ≠ w.web.level t c
+  | .acting, w => ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.give t f c
+  | .taking, w => ∃ t f c, f ∈ w.flow.present t ∧ 0 < w.flow.take t f c
+  | .dissipative, w => ∃ cs t f, Distinct cs ∧ w.flow.ClosedAt cs t ∧ f ∈ w.flow.present t ∧
+      0 < total cs (w.flow.take t f)
+  | .embodied, w => ∃ t x, w.web.Arises t x
+  | .counted, w => ¬ w.Finite
+  | .transmitting, w => ∃ t x g c, w.flow.DescendsAt w.web t x g ∧ w.web.requires (t + 1) x c
+
+/-- Every premise binds. -/
+def Binds (w : World) : Prop :=
+  ∀ p : Premise, p.Binds w
 
 /-- So no finite world binds every premise. -/
 theorem Finite.not_binds {w : World} (finite : w.Finite) : ¬ w.Binds :=
-  fun binds => binds.counted finite
+  fun binds => binds .counted finite
 
 namespace Hatch
 
@@ -991,17 +1032,18 @@ theorem hatch_binds : hatch.Premised ∧ hatch.Binds :=
       hatch_dissipative (fun _ _ => Iff.rfl) hatch_counted
       ⟨0, fun _ _ _ g descends requires => match g, Hatch.taking_part descends.1 with
         | _, ⟨_, rfl⟩ => ⟨⟨trivial, requires.2⟩, Nat.le_refl 1⟩⟩,
-   ⟨⟨0, .parent, .food, Nat.zero_lt_one, ⟨trivial, rfl⟩, Nat.zero_lt_one⟩,
-    ⟨0, .food, Nat.ne_of_lt (Nat.succ_lt_succ (Nat.zero_lt_succ 1))⟩,
-    ⟨0, .parent, .child, .head _, Nat.zero_lt_one⟩,
-    ⟨0, .parent, .food, .head _, Nat.zero_lt_two⟩,
-    ⟨Hatch.kin, 0, .parent, Hatch.kin_distinct, Hatch.closed 0, .head _,
-      Nat.lt_of_lt_of_le Nat.zero_lt_two (le_total_of_mem (a := Hatch.Relatum.food)
-        (q := hatch.flow.take 0 Hatch.Relatum.parent) (.head _))⟩,
-    ⟨0, .child, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
-    fun ⟨all, _, every⟩ => Hatch.outside all (every _),
-    ⟨0, .child, .parent, .food, ⟨.head _, Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
-      ⟨trivial, rfl⟩⟩⟩⟩
+   fun
+    | .dependent => ⟨0, .parent, .food, Nat.zero_lt_one, ⟨trivial, rfl⟩, Nat.zero_lt_one⟩
+    | .balanced => ⟨0, .food, Nat.ne_of_lt (Nat.succ_lt_succ (Nat.zero_lt_succ 1))⟩
+    | .acting => ⟨0, .parent, .child, .head _, Nat.zero_lt_one⟩
+    | .taking => ⟨0, .parent, .food, .head _, Nat.zero_lt_two⟩
+    | .dissipative => ⟨Hatch.kin, 0, .parent, Hatch.kin_distinct, Hatch.closed 0, .head _,
+        Nat.lt_of_lt_of_le Nat.zero_lt_two (le_total_of_mem (a := Hatch.Relatum.food)
+          (q := hatch.flow.take 0 Hatch.Relatum.parent) (.head _))⟩
+    | .embodied => ⟨0, .child, Nat.lt_irrefl 0, Nat.zero_lt_one⟩
+    | .counted => fun ⟨all, _, every⟩ => Hatch.outside all (every _)
+    | .transmitting => ⟨0, .child, .parent, .food,
+        ⟨.head _, Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩, ⟨trivial, rfl⟩⟩⟩
 
 namespace FiniteHatch
 
@@ -1100,31 +1142,24 @@ theorem finiteHatch_premised : finiteHatch.Premised :=
       | _, ⟨_, rfl⟩ => ⟨⟨trivial, requires.2⟩, Nat.le_refl 1⟩⟩
 
 /-- So among finite worlds only the census keeps every premise from binding: the finite hatch
-meets the eight, and every condition of `Binds` but the census has an instance in it, while
-`hatch` binds the census only through its idle ground. -/
+meets the eight, and every premise but the census binds in it, while `hatch` binds the
+census only through its idle ground. -/
 theorem finiteHatch_binds_but_census :
     finiteHatch.Finite ∧ finiteHatch.Premised ∧ ¬ finiteHatch.Binds ∧
-    (∃ t f c, finiteHatch.web.active t f ∧ finiteHatch.web.requires t f c ∧
-      0 < finiteHatch.web.need t f c) ∧
-    (∃ t c, finiteHatch.web.level (t + 1) c ≠ finiteHatch.web.level t c) ∧
-    (∃ t f c, f ∈ finiteHatch.flow.present t ∧ 0 < finiteHatch.flow.give t f c) ∧
-    (∃ t f c, f ∈ finiteHatch.flow.present t ∧ 0 < finiteHatch.flow.take t f c) ∧
-    (∃ cs t f, Distinct cs ∧ finiteHatch.flow.ClosedAt cs t ∧ f ∈ finiteHatch.flow.present t ∧
-      0 < total cs (finiteHatch.flow.take t f)) ∧
-    (∃ t x, finiteHatch.web.Arises t x) ∧
-    (∃ t x g c, finiteHatch.flow.DescendsAt finiteHatch.web t x g ∧
-      finiteHatch.web.requires (t + 1) x c) :=
-  ⟨finiteHatch_finite, finiteHatch_premised, Finite.not_binds finiteHatch_finite,
-   ⟨0, .parent, .food, Nat.zero_lt_one, ⟨trivial, rfl⟩, Nat.zero_lt_one⟩,
-   ⟨0, .food, Nat.ne_of_lt (Nat.succ_lt_succ (Nat.zero_lt_succ 1))⟩,
-   ⟨0, .parent, .child, .head _, Nat.zero_lt_one⟩,
-   ⟨0, .parent, .food, .head _, Nat.zero_lt_two⟩,
-   ⟨FiniteHatch.kin, 0, .parent, FiniteHatch.kin_distinct, FiniteHatch.closed 0, .head _,
-     Nat.lt_of_lt_of_le Nat.zero_lt_two (le_total_of_mem (a := FiniteHatch.Relatum.food)
-       (q := finiteHatch.flow.take 0 FiniteHatch.Relatum.parent) (.head _))⟩,
-   ⟨0, .child, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
-   ⟨0, .child, .parent, .food, ⟨.head _, Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
-     ⟨trivial, rfl⟩⟩⟩
+      ∀ p : Premise, p ≠ .counted → p.Binds finiteHatch :=
+  ⟨finiteHatch_finite, finiteHatch_premised, Finite.not_binds finiteHatch_finite, fun
+    | .dependent, _ => ⟨0, .parent, .food, Nat.zero_lt_one, ⟨trivial, rfl⟩, Nat.zero_lt_one⟩
+    | .balanced, _ => ⟨0, .food, Nat.ne_of_lt (Nat.succ_lt_succ (Nat.zero_lt_succ 1))⟩
+    | .acting, _ => ⟨0, .parent, .child, .head _, Nat.zero_lt_one⟩
+    | .taking, _ => ⟨0, .parent, .food, .head _, Nat.zero_lt_two⟩
+    | .dissipative, _ => ⟨FiniteHatch.kin, 0, .parent, FiniteHatch.kin_distinct,
+        FiniteHatch.closed 0, .head _, Nat.lt_of_lt_of_le Nat.zero_lt_two
+          (le_total_of_mem (a := FiniteHatch.Relatum.food)
+            (q := finiteHatch.flow.take 0 FiniteHatch.Relatum.parent) (.head _))⟩
+    | .embodied, _ => ⟨0, .child, Nat.lt_irrefl 0, Nat.zero_lt_one⟩
+    | .counted, other => absurd rfl other
+    | .transmitting, _ => ⟨0, .child, .parent, .food,
+        ⟨.head _, Nat.zero_lt_one, Nat.lt_irrefl 0, Nat.zero_lt_one⟩, ⟨trivial, rfl⟩⟩⟩
 
 /-- Only the food, the parent and the child are ever active in `hatch`, so its census is a
 census of these three (`counted_of_ever`). -/
@@ -1155,40 +1190,6 @@ theorem hatch_idle (t n : Nat) :
    fun _ draws => match draws.2 with
      | .inl no => (nomatch no)
      | .inr no => (nomatch no)⟩
-
-/-! ## Selections of the premises -/
-
-/-- The eight premises by name, for selecting among them. -/
-inductive Premise
-  | dependent | balanced | acting | taking | dissipative | embodied | counted | transmitting
-
-/-- What a premise asks of a world. -/
-def Premise.Holds : Premise → World → Prop
-  | .dependent, w => w.Dependent
-  | .balanced, w => w.Balanced
-  | .acting, w => w.Acting
-  | .taking, w => w.Taking
-  | .dissipative, w => w.Dissipative
-  | .embodied, w => w.Embodied
-  | .counted, w => w.Counted
-  | .transmitting, w => w.Transmitting
-
-/-- The world meets every premise the selection `S` selects. -/
-def Meets (w : World) (S : Premise → Bool) : Prop :=
-  ∀ p, S p = true → p.Holds w
-
-/-- A world meeting every premise meets every selection. -/
-theorem Premised.meets {w : World} (premised : w.Premised) (S : Premise → Bool) : w.Meets S
-  | .dependent, _ => premised _ (.head _)
-  | .balanced, _ => premised _ (.tail _ (.head _))
-  | .acting, _ => premised _ (.tail _ (.tail _ (.head _)))
-  | .taking, _ => premised _ (.tail _ (.tail _ (.tail _ (.head _))))
-  | .dissipative, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))
-  | .embodied, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
-  | .counted, _ =>
-    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
-  | .transmitting, _ =>
-    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
 
 end World
 
