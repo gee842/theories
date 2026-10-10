@@ -62,4 +62,3 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 8. R5 `Becoming.Entropy` [7ccb42]: one new core module importing only `Becoming.Resolution`, changing no existing module. It takes the next free study section when it lands. Where an item ahead stalls, it may go first by the integrator's call.
 
 Section numbers held: §63 P46, §65 P47, §66 `Locality`; later items take the next free number when they land.
-8. R5 `Becoming.Entropy` (the integrator, 10-11): last, after Sampling; it touches no existing module, so it may go ahead if the queue stalls, on the integrator's word.
