@@ -100,6 +100,12 @@ class ArchitectureTests(unittest.TestCase):
         with patch.object(research, 'input_snapshot', return_value={'source': 'new'}):
             self.assertFalse(research.unchanged_inputs({'source': 'old'}))
 
+    def test_render_snapshot_includes_the_readme_opening(self):
+        config = {'goal_directory': 'no-such-goal-directory', 'record_directories': [], 'readme_opening': 'no-such-opening.md'}
+        with patch.object(navigation, 'read', return_value=config):
+            snapshot = research.input_snapshot()
+        self.assertIn(str(research.ROOT / 'no-such-opening.md'), snapshot)
+
     def test_reconciliation_preserves_all_prior_versions(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

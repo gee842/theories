@@ -11,6 +11,7 @@
     "chain": "theories/becoming/results/GENERATIVITY-CHAIN.md",
     "sessions": "theories/becoming/results/SESSION-RESULTS.md"
   },
+  "readme_opening": "theories/becoming/OPENING.md",
   "readme_featured_results": [
     "positive-ground-open-futures",
     "alignment-direction-g0-j",

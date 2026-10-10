@@ -1,5 +1,7 @@
 """Keep leading results ordered, scoped and derived from reviewable metadata."""
 import copy
+from pathlib import Path
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -173,6 +175,63 @@ class ResearchGoalsTests(unittest.TestCase):
         self.assertNotIn('ethics 研究', root)
         self.assertIn('ethics 研究', views['GOALS.md'])
         self.assertIn('ethics 下一步', views['GOALS.md'])
+
+
+class OpeningTests(unittest.TestCase):
+    def test_opening_is_optional(self):
+        self.assertEqual(navigation.readme_opening({}), '')
+
+    def test_rejects_malformed_missing_and_empty_openings(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'empty.md').write_text('<!-- A note for editors. -->\n\n')
+            for configured, message in [
+                (3, 'path of a Markdown file'),
+                ('opening.txt', 'path of a Markdown file'),
+                ('missing.md', 'missing file'),
+                ('empty.md', 'is empty'),
+            ]:
+                with self.subTest(configured=configured):
+                    with self.assertRaisesRegex(ValueError, message):
+                        navigation.readme_opening({'readme_opening': configured}, root)
+
+    def test_opening_drops_the_editor_comment_and_adapts_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'theories').mkdir()
+            (root / 'theories/OPENING.md').write_text('<!-- Edit here. -->\n## Truth exists\n\nSee [the source](../sources/original.md).\n')
+            opening = navigation.readme_opening({'readme_opening': 'theories/OPENING.md'}, root)
+        self.assertEqual(opening, '## Truth exists\n\nSee [the source](sources/original.md).')
+
+    def test_opening_keeps_footnotes_and_adapts_reference_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'theories').mkdir()
+            (root / 'theories/OPENING.md').write_text(
+                'Truth exists.[^law]\n\n[ref]: ../sources/original.md\n\n'
+                '[^law]: **Proved.** See [the record](records/law.md).\n')
+            opening = navigation.readme_opening({'readme_opening': 'theories/OPENING.md'}, root)
+        self.assertEqual(opening, 'Truth exists.[^law]\n\n[ref]: sources/original.md\n\n'
+                                  '[^law]: **Proved.** See [the record](theories/records/law.md).')
+
+    def test_navigation_validation_reports_missing_opening(self):
+        with patch.object(navigation, 'goals', return_value=[]), patch.object(navigation, 'read', return_value={'readme_opening': 'missing-opening.md'}):
+            errors = navigation.validate_goals([])
+        self.assertTrue(any('missing file: missing-opening.md' in error for error in errors))
+
+    def test_root_places_the_opening_before_the_summary(self):
+        config = {'readme_featured_results': ['first']}
+        def read(path):
+            return config if path == navigation.CONFIG else {'documents': {}}
+        with patch.object(navigation, 'read', side_effect=read), patch.object(navigation, 'goals', return_value=[]), \
+                patch.object(navigation, 'readme_opening', return_value='## Truth exists\n\nOpening body.'):
+            views = navigation.render_views([result('first')])
+        root = views['README.md']
+        self.assertTrue(root.startswith('# The Theory of Becoming\n'))
+        self.assertLess(root.index('[Home / 首页]'), root.index('## Truth exists'))
+        self.assertLess(root.index('Opening body.'), root.index('The Theory of Becoming explains'))
+        self.assertLess(root.index('The Theory of Becoming explains'), root.index('## Leading results'))
+        self.assertNotIn('Opening body.', views['_process/BRIEF.md'])
 
 
 if __name__ == '__main__':

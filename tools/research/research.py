@@ -38,6 +38,8 @@ def input_snapshot():
     """Bind a render to the exact metadata/source inventory it began reading."""
     config = navigation.read(navigation.CONFIG)
     paths = {navigation.CONFIG, navigation.HISTORY}
+    if isinstance(config.get('readme_opening'), str):
+        paths.add(ROOT / config['readme_opening'])
     paths.update((ROOT / config['goal_directory']).glob('*.json'))
     for directory in config['record_directories']:
         for path in (ROOT / directory).glob('*.json'):
