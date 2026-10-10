@@ -67,6 +67,21 @@ that the rest are independent, none following from all the others together.
   something arising (`World.binds_arising`), which is no law under the eight alone
   (`World.binds_adds`). No step at which the front is active is enclosed; under enclosure
   from some step on change is bounded as well (`Becoming.Openness`).
+* **Counting under each selection.** The premises are named (`World.Premise`), and a
+  selection of them is a function to `Bool` (`World.Meets`). Under each of the 256
+  selections the laws of counting are of two kinds: the tally alone, or the tally with
+  nothing arising across a step at which nothing is active, the second exactly where the
+  selection binds counting (`World.counting_under`, `World.counting_binds_iff`): balance
+  and embodiment, with only active relata giving, or with only active relata taking and
+  dissipation. The second route needs no premise on giving: at a step at which nothing is
+  active nothing is taken, whatever is given comes to stand and so is active after the
+  step, the relata active after it form a closed family, and dissipation lets nothing be
+  given to it (`World.taking_binds_counting`). At an enclosed step balance, dissipation
+  and embodiment suffice (`World.enclosed_binds_counting`). Every other selection leaves
+  every tally counted: a queue driven by an idle ground relatum, exchanging a unit each way
+  with every ground relatum, meets every premise but only active relata giving and taking
+  (`World.drivenQueue_holds`), and the open queue, whatever its counts, every premise but
+  only active relata giving and dissipation (`World.openQueue_holds`).
 
 Premises stated relative to a further reading, such as a continuation relation
 (`Becoming.Identity`), a renewal relation (`Becoming.Generation`), a reserve that decays
@@ -1285,38 +1300,51 @@ theorem openQueue_counts {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat) :
    (total_map OpenQueue.Relatum.member _ (Queue.line n c (t + 1))).trans
      (Queue.comings_eq tally t)⟩
 
+/-- Whatever its counts, an open queue balances, only active relata take there and only from
+what they draw on, every relatum is embodied, it has a census, and nothing depends on
+anything. Only active relata giving and dissipation can fail: where something joins an
+empty queue, its front gives while idle. -/
+theorem openQueue_holds (n c : Nat → Nat) :
+    (openQueue n c).Dependent ∧ (openQueue n c).Balanced ∧ (openQueue n c).Taking ∧
+      (openQueue n c).Embodied ∧ (openQueue n c).Counted ∧ (openQueue n c).Transmitting :=
+  ⟨fun _ _ _ _ no => (nomatch no),
+   fun t x => match x with
+    | .member k => mark_turn (Queue.holds n c k t) (Queue.holds n c k (t + 1))
+    | .ground _ => rfl,
+   fun _ f x present takes => match f, present, x, takes with
+    | _, .head _, .member _, takes => ⟨OpenQueue.front.mpr (OpenQueue.occupied
+        (mark_pos.mp takes).1), trivial⟩
+    | _, .head _, .ground _, takes => ⟨mark_pos.mp takes, trivial⟩
+    | _, .tail _ no, _, _ => (nomatch no),
+   fun x => match x with
+    | .member _ => fun _ => mark_pos.symm
+    | .ground _ => fun _ => ⟨False.elim, fun no => absurd no (Nat.lt_irrefl 0)⟩,
+   ⟨_, openQueue_census n c⟩,
+   ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩⟩
+
 /-- Where something arises only across a step at which something is active, an open queue
 meets all eight premises. Not all of them bind: no step at which the front is active is
 enclosed, and nothing depends on anything (`openQueue_not_binds`). -/
 theorem openQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
     (company : ∀ t, 0 < a t → 0 < n t) : (openQueue n c).Premised :=
-  .of (fun _ _ _ _ no => (nomatch no))
-    (fun t x => match x with
-      | .member k => mark_turn (Queue.holds n c k t) (Queue.holds n c k (t + 1))
-      | .ground _ => rfl)
-    (fun _ f x present gives => match f, present, x, gives with
-      | _, .head _, .member _, gives => OpenQueue.front.mpr (OpenQueue.joined tally company
-          (mark_pos.mp gives))
-      | _, .head _, .ground _, gives => mark_pos.mp gives
-      | _, .tail _ no, _, _ => (nomatch no))
-    (fun _ f x present takes => match f, present, x, takes with
-      | _, .head _, .member _, takes => ⟨OpenQueue.front.mpr (OpenQueue.occupied
-          (mark_pos.mp takes).1), trivial⟩
-      | _, .head _, .ground _, takes => ⟨mark_pos.mp takes, trivial⟩
-      | _, .tail _ no, _, _ => (nomatch no))
-    (fun cs t _ closed _ _ => match Nat.eq_zero_or_pos (n t) with
-      | .inr pos => absurd ((mark_one (OpenQueue.front.mpr pos)).symm.trans
-          (closed _ (.head _) _ (OpenQueue.outside cs)).2) (fun no => Nat.noConfusion no)
-      | .inl empty => gives_nothing ((total_congr_on (g := fun _ => 0) fun x _ => match x with
-          | .member _ => mark_zero fun comes => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-              (OpenQueue.joined tally company comes) (Nat.le_of_eq empty))
-          | .ground _ => mark_zero fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-              (OpenQueue.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
-    (fun x => match x with
-      | .member _ => fun _ => mark_pos.symm
-      | .ground _ => fun _ => ⟨False.elim, fun no => absurd no (Nat.lt_irrefl 0)⟩)
-    ⟨_, openQueue_census n c⟩
-    ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩
+  match openQueue_holds n c with
+  | ⟨dependent, balanced, taking, embodied, counted, transmitting⟩ =>
+    .of dependent balanced
+      (fun _ f x present gives => match f, present, x, gives with
+        | _, .head _, .member _, gives => OpenQueue.front.mpr (OpenQueue.joined tally company
+            (mark_pos.mp gives))
+        | _, .head _, .ground _, gives => mark_pos.mp gives
+        | _, .tail _ no, _, _ => (nomatch no))
+      taking
+      (fun cs t _ closed _ _ => match Nat.eq_zero_or_pos (n t) with
+        | .inr pos => absurd ((mark_one (OpenQueue.front.mpr pos)).symm.trans
+            (closed _ (.head _) _ (OpenQueue.outside cs)).2) (fun no => Nat.noConfusion no)
+        | .inl empty => gives_nothing ((total_congr_on (g := fun _ => 0) fun x _ => match x with
+            | .member _ => mark_zero fun comes => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+                (OpenQueue.joined tally company comes) (Nat.le_of_eq empty))
+            | .ground _ => mark_zero fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+                (OpenQueue.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
+      embodied counted transmitting
 
 /-- Under all eight premises the laws of counting are the tally and that nothing arises
 across a step at which nothing is active: a property of the counts holds of every census of
@@ -1382,6 +1410,285 @@ theorem binds_adds :
       (fun same ⟨t, pos⟩ => ⟨t, Nat.lt_of_lt_of_le pos (Nat.le_of_eq (same t).2.2)⟩)).mpr
       law (fun _ => 0) (fun _ => 0) (fun _ => 0) (fun _ => ⟨0, rfl, rfl⟩) (fun _ no => no) with
     | ⟨_, no⟩ => Nat.lt_irrefl 0 no
+
+end World
+
+/-! ## Counting under each set of premises -/
+
+namespace OpenQueue
+
+/-- An idle ground relatum drives the queue: at every step it gives one unit to each member
+joining, takes one from each member leaving, and exchanges one unit each way with every
+ground relatum, so no family is closed across any step. -/
+def driven (n c : Nat → Nat) : Flow Relatum Relatum where
+  present _ := [.ground 0]
+  take t _ x := match x with
+    | .member k => mark (CeasesToBe (Queue.holds n c k) t)
+    | .ground _ => 1
+  give t _ x := match x with
+    | .member k => mark (ComesToBe (Queue.holds n c k) t)
+    | .ground _ => 1
+
+end OpenQueue
+
+namespace World
+
+/-- A queue driven by an idle relatum: the members of an open queue, the exchange driven
+from a ground relatum never active. -/
+def drivenQueue (n c : Nat → Nat) : World :=
+  ⟨OpenQueue.Relatum, OpenQueue.driven n c, OpenQueue.web n c⟩
+
+instance drivenQueue_decided (n c : Nat → Nat) :
+    ∀ t x, Decidable ((drivenQueue n c).web.active t x) :=
+  openQueue_decided n c
+
+/-- Whatever its counts, a driven queue balances, dissipates, since no family is closed
+across any step, has every relatum embodied and a census, and nothing depends on anything.
+Only active relata giving and only active relata taking fail. -/
+theorem drivenQueue_holds (n c : Nat → Nat) :
+    (drivenQueue n c).Dependent ∧ (drivenQueue n c).Balanced ∧
+      (drivenQueue n c).Dissipative ∧ (drivenQueue n c).Embodied ∧
+      (drivenQueue n c).Counted ∧ (drivenQueue n c).Transmitting :=
+  match openQueue_holds n c with
+  | ⟨dependent, _, _, embodied, counted, _⟩ =>
+    ⟨dependent,
+     fun t x => match x with
+      | .member k => mark_turn (Queue.holds n c k t) (Queue.holds n c k (t + 1))
+      | .ground _ => rfl,
+     fun cs _ _ closed => absurd (closed _ (.head _) _ (OpenQueue.outside cs)).2
+       (fun no => Nat.noConfusion no),
+     embodied, counted, ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩⟩
+
+/-- Taking and dissipation can stand in for only active relata giving. Where the flow
+balances, only active relata take and only from what they draw on, the flow dissipates and
+every relatum is embodied, then under a census nothing arises across a step at which nothing
+is active, whoever gives. At such a step nothing is taken and nothing stands; whatever is
+given comes to stand, so it is active after the step, and the relata active after it form
+a closed family, to which dissipation lets nothing be given. -/
+theorem taking_binds_counting (w : World) [∀ t x, Decidable (w.web.active t x)]
+    (balanced : w.Balanced) (taking : w.Taking) (dissipative : w.Dissipative)
+    (embodied : w.Embodied) : w.CountsObey fun n _ a => ∀ t, 0 < a t → 0 < n t :=
+  fun alive census t arising => match Nat.eq_zero_or_pos (alive t).length with
+    | .inr pos => pos
+    | .inl empty =>
+      have idle : ∀ f, ¬ w.web.active t f := fun f active =>
+        Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
+          (total_pos_of_mem (((census t).2 f).mp active) Nat.zero_lt_one)
+          (Nat.le_of_eq (total_ones (alive t)))) (Nat.le_of_eq empty))
+      have untaken : ∀ f c, f ∈ w.flow.present t → w.flow.take t f c = 0 :=
+        fun f c present => eq_zero_of_not_pos fun takes => idle f (taking t f c present takes).1
+      have flows : ∀ c, w.web.level (t + 1) c = w.flow.given t c := fun c =>
+        (congrArg (w.web.level (t + 1) c + ·)
+            ((total_congr_on (g := fun _ => 0) fun f present => untaken f c present).trans
+              (total_zero _)).symm).trans
+          ((balanced t c).trans ((congrArg (· + w.flow.given t c)
+            (eq_zero_of_not_pos fun stands => idle c ((embodied c t).mpr stands))).trans
+            (Nat.zero_add _)))
+      have closed : w.flow.ClosedAt (alive (t + 1)) t := fun f present c outside =>
+        ⟨untaken f c present, eq_zero_of_not_pos fun gives => outside
+          (((census (t + 1)).2 c).mp ((embodied c (t + 1)).mpr (Nat.lt_of_lt_of_le
+            (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := fun g => w.flow.give t g c)
+              present)) (Nat.le_of_eq (flows c).symm))))⟩
+      match total_pos _ arising with
+      | ⟨x, listed, comes⟩ =>
+        match total_pos _ (Nat.lt_of_lt_of_le ((embodied x (t + 1)).mp (mark_pos.mp comes).2)
+            (Nat.le_of_eq (flows x))) with
+        | ⟨f, present, gives⟩ =>
+          have nothing : total (alive (t + 1)) (w.flow.take t f) = 0 :=
+            (total_congr_on (g := fun _ => 0) fun c _ => untaken f c present).trans (total_zero _)
+          absurd (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le gives
+              (le_total_of_mem (q := w.flow.give t f) listed))
+              (Nat.le_trans (Nat.le_add_right _ _)
+                (dissipative _ t (census (t + 1)).1 closed f present)))
+            fun pos => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le pos (Nat.le_of_eq nothing))
+
+/-- Enclosure lets dissipation stand in for only active relata giving, too. Where the flow
+balances and dissipates and every relatum is embodied, under a census nothing arises across
+an enclosed step at which nothing is active, whoever gives and whoever takes: nothing stands
+there, so a closed family's stock is nothing, and a member coming to stand would lower it
+(`Flow.standing_lowers`). -/
+theorem enclosed_binds_counting (w : World) [∀ t x, Decidable (w.web.active t x)]
+    (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.Embodied)
+    {alive : Nat → List w.Relatum} (census : w.web.Census alive) {t : Nat}
+    (enclosed : w.flow.Enclosed t)
+    (arising : 0 < comings (alive (t + 1)) (fun x s => w.web.active s x) t) :
+    0 < (alive t).length :=
+  match Nat.eq_zero_or_pos (alive t).length, enclosed, total_pos _ arising with
+  | .inr pos, _, _ => pos
+  | .inl empty, ⟨cs, distinct, closed⟩, ⟨x, _, comes⟩ =>
+    have idle : ∀ f, ¬ w.web.active t f := fun f active =>
+      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
+        (total_pos_of_mem (((census t).2 f).mp active) Nat.zero_lt_one)
+        (Nat.le_of_eq (total_ones (alive t)))) (Nat.le_of_eq empty))
+    have nothing : w.web.stock cs t = 0 :=
+      total_eq_zero fun c _ => eq_zero_of_not_pos fun stands => idle c ((embodied c t).mpr stands)
+    have comes : w.web.ComesToStand t x :=
+      ⟨fun stands => idle x ((embodied x t).mpr stands),
+       (embodied x (t + 1)).mp (mark_pos.mp comes).2⟩
+    match total_pos _ (Flow.Balances.rise_given balanced comes.rises) with
+    | ⟨f, present, gives⟩ =>
+      absurd (fun mem => Nat.not_lt_zero _ (Nat.lt_of_lt_of_le
+          (Flow.standing_lowers balanced dissipative distinct closed mem comes)
+          (Nat.le_of_eq nothing)))
+        fun out => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives
+          (Nat.le_of_eq (closed f present x out).2))
+
+/-- The eight premises by name, for selecting among them. -/
+inductive Premise
+  | dependent | balanced | acting | taking | dissipative | embodied | counted | transmitting
+
+/-- What a premise asks of a world. -/
+def Premise.Holds : Premise → World → Prop
+  | .dependent, w => w.Dependent
+  | .balanced, w => w.Balanced
+  | .acting, w => w.Acting
+  | .taking, w => w.Taking
+  | .dissipative, w => w.Dissipative
+  | .embodied, w => w.Embodied
+  | .counted, w => w.Counted
+  | .transmitting, w => w.Transmitting
+
+/-- The world meets every premise the selection `S` selects. -/
+def Meets (w : World) (S : Premise → Bool) : Prop :=
+  ∀ p, S p = true → p.Holds w
+
+/-- A selection binds counting when it selects balance and embodiment, and either only
+active relata giving or both only active relata taking and dissipation. -/
+def BindsCounting (S : Premise → Bool) : Prop :=
+  S .balanced = true ∧ S .embodied = true ∧
+    (S .acting = true ∨ S .taking = true ∧ S .dissipative = true)
+
+/-- A world meeting every premise meets every selection. -/
+theorem Premised.meets {w : World} (premised : w.Premised) (S : Premise → Bool) : w.Meets S
+  | .dependent, _ => premised _ (.head _)
+  | .balanced, _ => premised _ (.tail _ (.head _))
+  | .acting, _ => premised _ (.tail _ (.tail _ (.head _)))
+  | .taking, _ => premised _ (.tail _ (.tail _ (.tail _ (.head _))))
+  | .dissipative, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))
+  | .embodied, _ => premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
+  | .counted, _ =>
+    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))))
+  | .transmitting, _ =>
+    premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
+
+/-- A queue meets every selection without embodiment. -/
+theorem queue_meets (n c : Nat → Nat) {S : Premise → Bool} (free : S .embodied = false) :
+    (queue n c).Meets S :=
+  match queue_premised n c with
+  | ⟨dependent, balanced, acting, taking, dissipative, counted, transmitting⟩ => fun
+    | .dependent, _ => dependent
+    | .balanced, _ => balanced
+    | .acting, _ => acting
+    | .taking, _ => taking
+    | .dissipative, _ => dissipative
+    | .embodied, selected => nomatch free.symm.trans selected
+    | .counted, _ => counted
+    | .transmitting, _ => transmitting
+
+/-- A queue standing while active meets every selection without balance. -/
+theorem embodiedQueue_meets (n c : Nat → Nat) {S : Premise → Bool}
+    (free : S .balanced = false) : (embodiedQueue n c).Meets S :=
+  match embodiedQueue_premised n c with
+  | ⟨dependent, acting, taking, dissipative, embodied, counted, transmitting⟩ => fun
+    | .dependent, _ => dependent
+    | .balanced, selected => nomatch free.symm.trans selected
+    | .acting, _ => acting
+    | .taking, _ => taking
+    | .dissipative, _ => dissipative
+    | .embodied, _ => embodied
+    | .counted, _ => counted
+    | .transmitting, _ => transmitting
+
+/-- An open queue meets every selection without only active relata giving and without
+dissipation. -/
+theorem openQueue_meets (n c : Nat → Nat) {S : Premise → Bool} (giving : S .acting = false)
+    (dissipating : S .dissipative = false) : (openQueue n c).Meets S :=
+  match openQueue_holds n c with
+  | ⟨dependent, balanced, taking, embodied, counted, transmitting⟩ => fun
+    | .dependent, _ => dependent
+    | .balanced, _ => balanced
+    | .acting, selected => nomatch giving.symm.trans selected
+    | .taking, _ => taking
+    | .dissipative, selected => nomatch dissipating.symm.trans selected
+    | .embodied, _ => embodied
+    | .counted, _ => counted
+    | .transmitting, _ => transmitting
+
+/-- A driven queue meets every selection without only active relata giving and without
+only active relata taking. -/
+theorem drivenQueue_meets (n c : Nat → Nat) {S : Premise → Bool} (giving : S .acting = false)
+    (taking : S .taking = false) : (drivenQueue n c).Meets S :=
+  match drivenQueue_holds n c with
+  | ⟨dependent, balanced, dissipative, embodied, counted, transmitting⟩ => fun
+    | .dependent, _ => dependent
+    | .balanced, _ => balanced
+    | .acting, selected => nomatch giving.symm.trans selected
+    | .taking, selected => nomatch taking.symm.trans selected
+    | .dissipative, _ => dissipative
+    | .embodied, _ => embodied
+    | .counted, _ => counted
+    | .transmitting, _ => transmitting
+
+/-- The laws of counting under each selection of the premises. A property of the counts
+holds of every census of every world meeting the selection exactly when it holds of every
+tally, and, where the selection binds counting, of every tally in which nothing arises across
+a step at which nothing is active. So the laws of counting under the 256 selections are of
+two kinds: the tally alone, or the tally and nothing arising at a step at which nothing is
+active, the second exactly where balance, embodiment, and only active relata giving or
+taking with dissipation are selected. -/
+theorem counting_under (S : Premise → Bool)
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q) :
+    (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S → w.CountsObey Q :=
+  ⟨fun law w _ meets alive census => law _ _ _ census.tally fun ⟨balanced, embodied, giving⟩ =>
+    match giving with
+    | .inl acting => counting_binds_jointly.1 w (meets _ balanced) (meets _ acting)
+        (Embodied.arising (meets _ embodied)) alive census
+    | .inr ⟨taking, dissipative⟩ => taking_binds_counting w (meets _ balanced)
+        (meets _ taking) (meets _ dissipative) (meets _ embodied) alive census,
+   fun law n c _ tally quiet =>
+    match hb : S .balanced, he : S .embodied with
+    | false, _ => pointwise (fun t => Queue.counts tally t)
+        (law (embodiedQueue n c) (embodiedQueue_meets n c hb) _ Queue.listed)
+    | true, false => pointwise (fun t => Queue.counts tally t)
+        (law (queue n c) (queue_meets n c he) _ Queue.listed)
+    | true, true => match ha : S .acting, ht : S .taking, hd : S .dissipative with
+      | true, _, _ => pointwise (openQueue_counts tally) (law (openQueue n c)
+          ((openQueue_premised tally (quiet ⟨hb, he, .inl ha⟩)).meets S) _
+          (openQueue_census n c))
+      | false, true, true => pointwise (openQueue_counts tally) (law (openQueue n c)
+          ((openQueue_premised tally (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)).meets S) _
+          (openQueue_census n c))
+      | false, false, _ => pointwise (openQueue_counts tally) (law (drivenQueue n c)
+          (drivenQueue_meets n c ha ht) _ (openQueue_census n c))
+      | false, true, false => pointwise (openQueue_counts tally) (law (openQueue n c)
+          (openQueue_meets n c ha hd) _ (openQueue_census n c))⟩
+
+/-- Nothing arising across a step at which nothing is active is a law of counting under a
+selection exactly when the selection binds counting. -/
+theorem counting_binds_iff (S : Premise → Bool) :
+    (∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S →
+      w.CountsObey fun n _ a => ∀ t, 0 < a t → 0 < n t) ↔ BindsCounting S :=
+  have pointwise : Pointwise fun n (_ : Nat → Nat) a => ∀ t, 0 < a t → 0 < n t :=
+    fun same law t pos => Nat.lt_of_lt_of_le (law t (Nat.lt_of_lt_of_le pos
+      (Nat.le_of_eq (same t).2.2.symm))) (Nat.le_of_eq (same t).1)
+  have unbound : ¬ BindsCounting S → ¬ ∀ (w : World) [∀ t x, Decidable (w.web.active t x)],
+      w.Meets S → w.CountsObey fun n _ a => ∀ t, 0 < a t → 0 < n t := fun free law =>
+    Nat.lt_irrefl 0 ((counting_under S pointwise).mpr law _ _ _ Queue.lone_tally
+      (fun binds => absurd binds free) 0 Nat.zero_lt_one)
+  ⟨fun law => match hb : S .balanced, he : S .embodied, ha : S .acting, ht : S .taking,
+      hd : S .dissipative with
+    | true, true, true, _, _ => ⟨hb, he, .inl ha⟩
+    | true, true, false, true, true => ⟨hb, he, .inr ⟨ht, hd⟩⟩
+    | false, _, _, _, _ => absurd law (unbound fun binds => nomatch hb.symm.trans binds.1)
+    | true, false, _, _, _ => absurd law (unbound fun binds => nomatch he.symm.trans binds.2.1)
+    | true, true, false, false, _ => absurd law (unbound fun binds => match binds.2.2 with
+        | .inl acting => nomatch ha.symm.trans acting
+        | .inr ⟨taking, _⟩ => nomatch ht.symm.trans taking)
+    | true, true, false, true, false => absurd law (unbound fun binds => match binds.2.2 with
+        | .inl acting => nomatch ha.symm.trans acting
+        | .inr ⟨_, dissipative⟩ => nomatch hd.symm.trans dissipative),
+   fun binds => (counting_under S pointwise).mp fun _ _ _ _ quiet => quiet binds⟩
 
 end World
 

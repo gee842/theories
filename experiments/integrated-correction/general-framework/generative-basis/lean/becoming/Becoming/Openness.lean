@@ -129,6 +129,16 @@ giving needs uptake there; a fall is taken from.
   Change then does not recur (`ChangeBound.not_recurring`), but a step after which nothing
   arises in every finite world meeting the eight would give `LPO`
   (`World.lpo_of_finite_ends`).
+* **Counting under each selection, with enclosure.** In worlds enclosed from some step on,
+  the laws of counting under each selection of the premises add one condition to those of
+  `World.counting_under`, exactly where balance, embodiment and dissipation are selected:
+  from some step on change stays within a bound and nothing arises across a step at which
+  nothing is active (`World.enclosed_counting_under`). Where neither only active relata
+  giving nor only active relata taking is selected, the witness is an enclosed queue
+  closing at that step, every relatum exchanging a unit each way with the front before it
+  (`World.closingQueue_dissipative`). The enclosed queue takes only while active whatever
+  its counts (`World.enclosedQueue_taking`) and dissipates step by step
+  (`World.enclosedQueue_dissipatesOn`).
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
@@ -1354,21 +1364,21 @@ theorem still {t k f : Nat}
   | .inr gives => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives (Nat.le_of_eq flows.2))
 
 /-- An empty queue stays empty where nothing joins an empty queue. -/
-theorem empty_stays (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) {t : Nat}
+theorem empty_stays (tally : Tally n c a) {t : Nat} (company : 0 < a t → 0 < n t)
     (empty : n t = 0) : n (t + 1) = 0 :=
   match tally t with
   | ⟨k, before, after⟩ =>
     have kept : k = 0 := Nat.eq_zero_of_le_zero
       (Nat.le_trans (Nat.le_add_right k (c t)) (Nat.le_of_eq (before.symm.trans empty)))
     have joined : a t = 0 := eq_zero_of_not_pos fun joins =>
-      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (company t joins) (Nat.le_of_eq empty))
+      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (company joins) (Nat.le_of_eq empty))
     after.trans ((congrArg (· + a t) kept).trans ((Nat.zero_add _).trans joined))
 
 theorem outside_empty {k t : Nat} (empty : n t = 0) : ¬ Queue.holds n c k t :=
   fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (OpenQueue.occupied holds) (Nat.le_of_eq empty))
 
 /-- Across a step from an empty queue nothing is taken or given. -/
-theorem idle (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) {t : Nat}
+theorem idle (tally : Tally n c a) {t : Nat} (company : 0 < a t → 0 < n t)
     (empty : n t = 0) (k f : Nat) :
     (flow n c a B).take t f k = 0 ∧ (flow n c a B).give t f k = 0 :=
   still_flows ((place_zero (outside_empty (empty_stays tally company empty))).trans
@@ -1427,7 +1437,7 @@ theorem span_distinct (t : Nat) : Distinct (span n c a t) :=
 theorem busy (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) {t k f : Nat}
     (moves : 0 < (flow n c a B).take t f k ∨ 0 < (flow n c a B).give t f k) : 0 < n t :=
   match Nat.eq_zero_or_pos (n t) with
-  | .inl empty => absurd moves (still (idle tally company empty k f))
+  | .inl empty => absurd moves (still (idle tally (company t) empty k f))
   | .inr occupied => occupied
 
 end EnclosedQueue
@@ -1464,11 +1474,12 @@ theorem enclosedQueue_acting (tally : Tally n c a) (company : ∀ t, 0 < a t →
     | _, .head _, gives => OpenQueue.front.mpr (EnclosedQueue.busy tally company (.inr gives))
     | _, .tail _ no, _ => (nomatch no)
 
-theorem enclosedQueue_taking (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) :
-    (enclosedQueue n c a B).Taking :=
+/-- Only the front takes, and only from a member in the queue, so only while it is active,
+whatever the counts. -/
+theorem enclosedQueue_taking (n c a : Nat → Nat) (B : Nat) : (enclosedQueue n c a B).Taking :=
   fun _ f _ present takes => match f, present, takes with
-    | _, .head _, takes =>
-      ⟨OpenQueue.front.mpr (EnclosedQueue.busy tally company (.inl takes)), trivial⟩
+    | _, .head _, takes => ⟨OpenQueue.front.mpr (OpenQueue.occupied (EnclosedQueue.place_pos.mpr
+        (Nat.lt_of_lt_of_le takes (Nat.sub_le _ _)))), trivial⟩
     | _, .tail _ no, _ => (nomatch no)
 
 /-- Where the queue fits its store, what stands is at most the store, and is the store
@@ -1492,12 +1503,15 @@ theorem enclosedQueue_stock {t : Nat} (fits : n t ≤ EnclosedQueue.store c a B 
   | .inr occupied => ⟨Nat.le_of_eq (whole _ (Nat.succ_pred_eq_of_pos occupied).symm),
       fun _ => whole _ (Nat.succ_pred_eq_of_pos occupied).symm⟩
 
-/-- Under a change bound from the first step the enclosed queue dissipates: across a step at
-which something joins or leaves, what stands falls by one, so the front takes more than it
-gives. -/
-theorem enclosedQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
-    (bound : ChangeBound 0 B n c a) : (enclosedQueue n c a B).Dissipative :=
-  fun cs t distinct closed f present =>
+/-- Across a step at which nothing joins an empty queue, with the queue within its store
+before and after, the enclosed queue dissipates on every closed family: where something joins
+or leaves, what stands falls by one, so the front takes more than it gives. -/
+theorem enclosedQueue_dissipatesOn (tally : Tally n c a) {t : Nat}
+    (company : 0 < a t → 0 < n t) (fits : n t ≤ EnclosedQueue.store c a B t)
+    (fits' : n (t + 1) ≤ EnclosedQueue.store c a B (t + 1)) {cs : List Nat}
+    (distinct : Distinct cs) (closed : (EnclosedQueue.flow n c a B).ClosedAt cs t) :
+    (EnclosedQueue.flow n c a B).DissipatesOn cs t :=
+  fun f present =>
     have still : (∀ k, (EnclosedQueue.flow n c a B).take t f k = 0 ∧
         (EnclosedQueue.flow n c a B).give t f k = 0) →
         total cs ((EnclosedQueue.flow n c a B).give t f) +
@@ -1513,8 +1527,6 @@ theorem enclosedQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a 
     | .inr occupied, .inr changes =>
       have census := enclosedQueue_census n c a B
       have standing := standingCensus census (enclosedQueue_embodied n c a B)
-      have fits : ∀ s, n s ≤ EnclosedQueue.store c a B s := fun s =>
-        RelationalRenewal.le_sub_from_add (bound s (Nat.zero_le s))
       have before := standing.stock_eq (EnclosedQueue.span_distinct t) fun k mem =>
         EnclosedQueue.within_span tally (.inl (((census t).2 k).mpr mem))
       have after := standing.stock_eq (t := t + 1) (EnclosedQueue.span_distinct t) fun k mem =>
@@ -1522,10 +1534,10 @@ theorem enclosedQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a 
       have spent : EnclosedQueue.store c a B (t + 1) + 1 ≤ EnclosedQueue.store c a B t :=
         Nat.le_of_eq ((congrArg (fun u => B - u + 1) ((occurrences_succ _ (Nat.zero_le t)).trans
           (congrArg (_ + ·) (mark_one changes)))).trans (Nat.succ_pred_eq_of_pos
-            (Nat.lt_of_lt_of_le occupied (fits t))))
+            (Nat.lt_of_lt_of_le occupied fits)))
       have lowered := Nat.le_trans (Nat.add_le_add_right (Nat.le_trans (Nat.le_of_eq after.symm)
-          (enclosedQueue_stock (fits _)).1) 1)
-        (Nat.le_trans spent (Nat.le_of_eq (((enclosedQueue_stock (fits t)).2
+          (enclosedQueue_stock fits').1) 1)
+        (Nat.le_trans spent (Nat.le_of_eq (((enclosedQueue_stock fits).2
           occupied).symm.trans before)))
       have over := (enclosedQueue_balanced n c a B).over (EnclosedQueue.span n c a t) t
       have exceeds :
@@ -1542,12 +1554,19 @@ theorem enclosedQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a 
           | .isFalse out => absurd (Nat.lt_of_lt_of_le takes
               (Nat.le_of_eq (closed f present k out).1)) (Nat.lt_irrefl 0)))
 
+/-- Under a change bound from the first step the enclosed queue dissipates. -/
+theorem enclosedQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
+    (bound : ChangeBound 0 B n c a) : (enclosedQueue n c a B).Dissipative :=
+  fun _ t distinct closed => enclosedQueue_dissipatesOn tally (company t)
+    (RelationalRenewal.le_sub_from_add (bound t (Nat.zero_le t)))
+    (RelationalRenewal.le_sub_from_add (bound (t + 1) (Nat.zero_le _))) distinct closed
+
 /-- Under a change bound from the first step, with nothing joining an empty queue, an
 enclosed queue meets all eight premises. -/
 theorem enclosedQueue_premised (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
     (bound : ChangeBound 0 B n c a) : (enclosedQueue n c a B).Premised :=
   .of (fun _ _ _ _ no => (nomatch no)) (enclosedQueue_balanced n c a B)
-    (enclosedQueue_acting tally company) (enclosedQueue_taking tally company)
+    (enclosedQueue_acting tally company) (enclosedQueue_taking n c a B)
     (enclosedQueue_dissipative tally company bound) (enclosedQueue_embodied n c a B)
     ⟨_, enclosedQueue_census n c a B⟩ ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩
 
@@ -1824,6 +1843,162 @@ theorem lpo_of_finite_ends
         ((Swap.at_first s c yes).symm.trans
           (finiteQueue_counts (Swap.tally s) (Swap.change_bound s) m).2.2.symm))) with
     | ⟨x, _, arises⟩ => quiet m x ge (mark_pos.mp arises)
+
+end World
+
+/-! ## Counting under each set of premises, with enclosure -/
+
+/-- The enclosed queue's flow opened before step `T`: there every relatum also exchanges one
+unit each way with the front, so no family is closed across a step before `T`. -/
+def EnclosedQueue.closing (n c a : Nat → Nat) (B T : Nat) : Flow Nat Nat where
+  present t := [Queue.gone c t]
+  take t f k := (EnclosedQueue.flow n c a B).take t f k + mark (t < T)
+  give t f k := (EnclosedQueue.flow n c a B).give t f k + mark (t < T)
+
+namespace World
+
+/-- An enclosed queue closing at step `T`: before `T` every relatum also exchanges one unit
+each way with the front. -/
+def closingQueue (n c a : Nat → Nat) (B T : Nat) : World :=
+  ⟨Nat, EnclosedQueue.closing n c a B T, EnclosedQueue.web n c a B⟩
+
+instance closingQueue_decided (n c a : Nat → Nat) (B T : Nat) :
+    ∀ t x, Decidable ((closingQueue n c a B T).web.active t x) :=
+  enclosedQueue_decided n c a B
+
+variable {n c a : Nat → Nat} {B T : Nat}
+
+theorem closingQueue_balanced (n c a : Nat → Nat) (B T : Nat) :
+    (closingQueue n c a B T).Balanced :=
+  fun t k =>
+    show EnclosedQueue.level n c a B (t + 1) k + (EnclosedQueue.level n c a B t k -
+        EnclosedQueue.level n c a B (t + 1) k + mark (t < T)) =
+      EnclosedQueue.level n c a B t k + (EnclosedQueue.level n c a B (t + 1) k -
+        EnclosedQueue.level n c a B t k + mark (t < T)) from
+    (Nat.add_assoc _ _ _).symm.trans ((congrArg (· + mark (t < T))
+      (add_sub_turn (EnclosedQueue.level n c a B t k)
+        (EnclosedQueue.level n c a B (t + 1) k))).trans (Nat.add_assoc _ _ _))
+
+/-- From step `T` on, the closing queue's flow is the enclosed queue's. -/
+theorem closing_flows {t : Nat} (later : T ≤ t) (f k : Nat) :
+    (EnclosedQueue.closing n c a B T).take t f k = (EnclosedQueue.flow n c a B).take t f k ∧
+      (EnclosedQueue.closing n c a B T).give t f k = (EnclosedQueue.flow n c a B).give t f k :=
+  have opened : mark (t < T) = 0 := mark_zero (Nat.not_lt_of_le later)
+  ⟨congrArg (_ + ·) opened, congrArg (_ + ·) opened⟩
+
+/-- Every step from `T` on is enclosed by its span. -/
+theorem closingQueue_enclosed (tally : Tally n c a) {t : Nat} (later : T ≤ t) :
+    (closingQueue n c a B T).flow.Enclosed t :=
+  ⟨EnclosedQueue.span n c a t, EnclosedQueue.span_distinct t, fun f present k out =>
+    match EnclosedQueue.closed (B := B) tally t f present k out with
+    | ⟨takes, gives⟩ => ⟨(closing_flows later f k).1.trans takes,
+        (closing_flows later f k).2.trans gives⟩⟩
+
+/-- With a change bound from step `T`, nothing joining an empty queue from `T` on, the
+closing queue dissipates: before `T` no family is closed, and from `T` on it dissipates as
+the enclosed queue does, its store larger by `T`. -/
+theorem closingQueue_dissipative (tally : Tally n c a) {K : Nat} (bound : ChangeBound T K n c a)
+    (company : ∀ t, T ≤ t → 0 < a t → 0 < n t) : (closingQueue n c a (K + T) T).Dissipative :=
+  fun cs t distinct closed f present => match Nat.lt_or_ge t T with
+  | .inl early => absurd (closed f present (beyond cs) (beyond_not_mem cs)).2
+      fun nothing => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le
+        (mark_pos.mpr early) (Nat.le_add_left _ _)) (Nat.le_of_eq nothing))
+  | .inr later =>
+    have fits : ∀ s, T ≤ s → n s ≤ EnclosedQueue.store c a (K + T) s := fun s later =>
+      RelationalRenewal.le_sub_from_add (Nat.le_trans (Nat.add_le_add_left
+        (occurrences_zero_le _ s) _) (Nat.le_trans (Nat.le_of_eq (Nat.add_assoc _ _ _).symm)
+          (Nat.add_le_add_right (bound s later) T)))
+    have takes : total cs ((EnclosedQueue.closing n c a (K + T) T).take t f) =
+        total cs ((EnclosedQueue.flow n c a (K + T)).take t f) :=
+      total_congr (fun k => (closing_flows later f k).1) cs
+    have gives : total cs ((EnclosedQueue.closing n c a (K + T) T).give t f) =
+        total cs ((EnclosedQueue.flow n c a (K + T)).give t f) :=
+      total_congr (fun k => (closing_flows later f k).2) cs
+    Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) gives).trans
+        (congrArg (fun u => _ + sign u) takes)))
+      (Nat.le_trans (enclosedQueue_dissipatesOn tally (company t later) (fits t later)
+          (fits (t + 1) (Nat.le_succ_of_le later)) distinct
+          (fun g present k out => match closed g present k out with
+            | ⟨took, gave⟩ => ⟨(closing_flows later g k).1.symm.trans took,
+                (closing_flows later g k).2.symm.trans gave⟩) f present)
+        (Nat.le_of_eq takes.symm))
+
+/-- A selection bounds change under enclosure when it selects balance, embodiment and
+dissipation. -/
+def BoundsChange (S : Premise → Bool) : Prop :=
+  S .balanced = true ∧ S .embodied = true ∧ S .dissipative = true
+
+/-- Where nothing takes part, every step is enclosed. -/
+theorem still_enclosed (w : World) (still : ∀ t, w.flow.present t = []) (t : Nat) :
+    w.flow.Enclosed t :=
+  ⟨[], trivial, fun _ present => nomatch (still t) ▸ present⟩
+
+/-- The laws of counting under each selection of the premises, in worlds enclosed from some
+step on. A property of the counts holds of every census of every such world meeting the
+selection exactly when it holds of every tally that meets two conditions: where the selection
+binds counting, nothing arises across a step at which nothing is active; where it bounds
+change, from some step `T` on change stays within a bound and nothing arises across a step at
+which nothing is active. The second condition carries its step: that change does not recur
+within the bound (`ChangeBound.not_recurring`) gives no such step by itself. -/
+theorem enclosed_counting_under (S : Premise → Bool)
+    {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop} (pointwise : Pointwise Q) :
+    (∀ n c a, Tally n c a → (BindsCounting S → ∀ t, 0 < a t → 0 < n t) →
+      (BoundsChange S → ∃ T B, ChangeBound T B n c a ∧ ∀ t, T ≤ t → 0 < a t → 0 < n t) →
+        Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Meets S →
+        (∃ T, ∀ t, T ≤ t → w.flow.Enclosed t) → w.CountsObey Q :=
+  ⟨fun law w _ meets ⟨T, enclosed⟩ alive census => law _ _ _ census.tally
+    (fun ⟨balanced, embodied, giving⟩ => match giving with
+      | .inl acting => counting_binds_jointly.1 w (meets _ balanced) (meets _ acting)
+          (Embodied.arising (meets _ embodied)) alive census
+      | .inr ⟨taking, dissipative⟩ => taking_binds_counting w (meets _ balanced)
+          (meets _ taking) (meets _ dissipative) (meets _ embodied) alive census)
+    (fun ⟨balanced, embodied, dissipative⟩ => ⟨T, _, enclosure_bounds_change census
+      (meets _ embodied) (meets _ balanced) (meets _ dissipative) enclosed,
+      fun t later arising => enclosed_binds_counting w (meets _ balanced) (meets _ dissipative)
+        (meets _ embodied) census (enclosed t later) arising⟩),
+   fun law n c a tally quiet bounded =>
+    match hb : S .balanced, he : S .embodied with
+    | false, _ => pointwise (Queue.counts tally) (law (embodiedQueue n c)
+        (embodiedQueue_meets n c hb) ⟨0, fun t _ => still_enclosed _ (fun _ => rfl) t⟩ _
+        Queue.listed)
+    | true, false => pointwise (Queue.counts tally) (law (queue n c) (queue_meets n c he)
+        ⟨0, fun t _ => still_enclosed _ (fun _ => rfl) t⟩ _ Queue.listed)
+    | true, true => match hd : S .dissipative, ha : S .acting, ht : S .taking with
+      | false, _, _ => pointwise (Queue.counts tally) (law (enclosedQueue n c a 0)
+          (fun
+            | .dependent, _ => fun _ _ _ _ no => (nomatch no)
+            | .balanced, _ => enclosedQueue_balanced n c a 0
+            | .acting, selected => enclosedQueue_acting tally (quiet ⟨hb, he, .inl selected⟩)
+            | .taking, _ => enclosedQueue_taking n c a 0
+            | .dissipative, selected => nomatch hd.symm.trans selected
+            | .embodied, _ => enclosedQueue_embodied n c a 0
+            | .counted, _ => ⟨_, enclosedQueue_census n c a 0⟩
+            | .transmitting, _ => ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩)
+          ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ (enclosedQueue_census n c a 0))
+      | true, true, _ => match bounded ⟨hb, he, hd⟩ with
+        | ⟨_, _, bound, _⟩ => pointwise (Queue.counts tally) (law (enclosedQueue n c a _)
+            ((enclosedQueue_premised tally (quiet ⟨hb, he, .inl ha⟩) bound.from_zero).meets S)
+            ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ (enclosedQueue_census n c a _))
+      | true, false, true => match bounded ⟨hb, he, hd⟩ with
+        | ⟨_, _, bound, _⟩ => pointwise (Queue.counts tally) (law (enclosedQueue n c a _)
+            ((enclosedQueue_premised tally (quiet ⟨hb, he, .inr ⟨ht, hd⟩⟩)
+              bound.from_zero).meets S)
+            ⟨0, fun t _ => enclosedQueue_enclosed tally t⟩ _ (enclosedQueue_census n c a _))
+      | true, false, false => match bounded ⟨hb, he, hd⟩ with
+        | ⟨T, K, bound, company⟩ => pointwise (Queue.counts tally)
+            (law (closingQueue n c a (K + T) T)
+              (fun
+                | .dependent, _ => fun _ _ _ _ no => (nomatch no)
+                | .balanced, _ => closingQueue_balanced n c a (K + T) T
+                | .acting, selected => nomatch ha.symm.trans selected
+                | .taking, selected => nomatch ht.symm.trans selected
+                | .dissipative, _ => closingQueue_dissipative tally bound company
+                | .embodied, _ => enclosedQueue_embodied n c a (K + T)
+                | .counted, _ => ⟨_, enclosedQueue_census n c a (K + T)⟩
+                | .transmitting, _ => ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩)
+              ⟨T, fun _ later => closingQueue_enclosed tally later⟩ _
+              (enclosedQueue_census n c a (K + T)))⟩
 
 end World
 

@@ -114,8 +114,8 @@
     "en": "Compares only the formations admitted at each step, not reachability over several steps, renewal capacity or richness of relations (which Ren also named: “renewal capacity, or richness of relations”); the counterfactual does not let the rest adjust; where no level path balances the flow without the part there is nothing to compare; a part must be a decided family; discrete steps and natural-number amounts; contains no ethical predicate and does not say which part should be withheld; names such as admission, withholding and net draw are the AI's wording, for Ren to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T100351.523624Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 31 个模块（含只作导入的根模块与桥接），共 1412 项定理／2251 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T100610.366844Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 33 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T100351.523624Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 31 modules (including the import-only root and the bridge) with 1412 theorems/2251 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T100610.366844Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 33 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T101327.506085Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 31 个模块（含只作导入的根模块与桥接），共 1430 项定理／2280 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T102016.503705Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 33 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T101327.506085Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 31 modules (including the import-only root and the bridge) with 1430 theorems/2280 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T102016.503705Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 33 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
@@ -178,17 +178,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "64b27b34b98287bd0a673383619ed5d273e448912221675f060326ba15523978"
+      "sha256": "25d0c148326af8f9ddb1d4f8142d0f7d5f4e9de07bb3e07c6eafda0eb5423b10"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0d8653fc82864bab23fca5ef7e1a107b7d8e6167ca82c07a34505ce5c2269221"
+      "sha256": "25569655126814a467e15db5828f541eae38e203f2e42f5809de51876a912612"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e6d41d51e8ef3c65deba9e205c3d4845e633f2435b513041d0adcdb7572f6c49"
+      "sha256": "53bc0c10742f0621952812d0fcf4509c697e146e5d4a5a2274bb6e3fb7a23064"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -239,6 +239,10 @@
     {
       "zh": "2026-10-10 P37：新增，按 Ren“yes to both readings, go ahead with Part I.”与“let's aim for a first, then try to archive b”；统一计划 P37（第一部分：可能性、三种区域、相界、层级、搭便车者的见证与所表示的边界），分工经另一会话同意；见整合文档 §51。",
       "en": "2026-10-10 P37: added, following Ren's ‘yes to both readings, go ahead with Part I.’ and ‘let's aim for a first, then try to archive b’; unification plan P37 (Part I: possibilities, the three regimes, the phase boundary, levels, the free-rider witness and represented boundaries), the division of work agreed with the other session; see §51 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 P38：验证范围重新指向合并检查器回执 20261010T101327.506085Z 与外围回执 20261010T102016.503705Z（每个前提选择之下计数的规律：Premises 加入 World.counting_under、World.counting_binds_iff、World.taking_binds_counting 与驱动的队列，Openness 加入 World.enclosed_counting_under 与在第 T 步闭合的队列；章节分为第一部分与第二部分）；所引模块的定理数改为该回执的数目（Premises 78、Openness 123）。断言不变。",
+      "en": "2026-10-10 P38: validation scope re-pointed to consolidated receipt 20261010T101327.506085Z and periphery receipt 20261010T102016.503705Z (the laws of counting under each selection of the premises: Premises adds World.counting_under, World.counting_binds_iff, World.taking_binds_counting and the driven queue, Openness adds World.enclosed_counting_under and the queue closing at step T; the chapter is divided into Part I and Part II); the module counts cited are now that receipt's (Premises 78, Openness 123). The claim is unchanged."
     }
   ]
 }
