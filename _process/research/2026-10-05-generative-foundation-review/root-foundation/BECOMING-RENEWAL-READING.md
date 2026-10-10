@@ -3687,6 +3687,42 @@ Integration: 记录 rest-at-every-resolution；计划 §10 R1b；章节 §9 的�
 
 **边界。** 同 §59；储备的最小花费是前提；见证只有一个关系项；尚无独立审查。
 
+### 59.2 按比例的损失只需对家族成立；每一尺度的最小损失只给出交换（R2）
+
+2026-10-10。同一方向：把前提推到最弱。R1 的按比例损失原先对每个形成陈述，每条规律的证明却只用它对封闭家族的总和。本节把前提改为对家族陈述，并检验另一种减弱：只要求每一尺度的转移都有最小损失。
+
+```text
+Result(s): 修订 rest-at-every-resolution（同一记录：前提减弱；加入最小损失之下的交换律与见证 Trickle）
+Delta: Flow.DissipatesBy 改为对家族陈述（封闭家族得回的至多是从它取走的 q/(q+1)），逐个形成的形式是充分条件
+       Flow.DissipatesBy.of_each；R1、R1b 的每条规律以同样的陈述在这一较弱前提下成立；每一尺度的最小损失
+       Flow.LosesAtSize、Flow.LosesAtEverySize、Flow.LosesAtSize.over、Flow.DissipatesOn.give_le、
+       Flow.BalancesAt.takers_lose_least、Flow.exchange_bound_of_least_loss、Flow.exchange_not_recurring_of_least_loss、
+       Flow.losesAtSize_of_each；quarter、quarter_eq、halving_pos；见证 Trickle 与边界定理 growth_needs_proportion
+Supplied premises / correspondence: 最小损失的交换律另要脊柱的耗散（每个形成给回封闭家族的不多于所取）；m 不随步变化
+Evidence: 合并检查器回执 20261010T165248.121581Z（1705 项定理、2645 项声明审计，全部源声明公理报告为空；Resolution 153 项定理、200 项声明审计），
+          外围回执 20261010T165548.911356Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 同 §59；比对家族的比例更弱而仍给出增长的规律的前提没有陈述；Trickle 的转移者不活跃；尚无独立审查
+Integration: 记录 rest-at-every-resolution；计划 §10 R2；章节 §9 的脊柱表与第一部分；模块说明、根模块、包 README 与检查器的范围
+```
+
+**机制。**
+
+- **对家族的比例。** 交换、增长与下降的规律都经过同一步：在封闭家族上，q + 1 乘补给不多于 q 乘取用（此前由逐个形成的条件求和得到）。所以 `Flow.DissipatesBy q` 现在就是这一对家族的不等式：家族的交换合起来至少失去所取的 1/(q+1)。逐个形成都如此时它成立（`Flow.DissipatesBy.of_each`），反之不然：一个形成可以无损，只要家族合起来失去一定比例。R1、R1b 的每条规律以同样的陈述在这一较弱的前提下成立；按比例耗散的见证（Asymptote、Emission）经 `of_each` 满足它，不按任何比例耗散的见证（Circulation、Alternation）连这一较弱前提也不满足，否定更强。
+- **每一尺度的最小损失。** 另一种减弱：只要求取用至少 1/p 单位的转移失去至少 1/m 单位，m 不随步变化（`Flow.LosesAtSize`；对每个 p 有这样的 m 时是 `Flow.LosesAtEverySize`）。在脊柱的耗散之下（每个形成给回封闭家族的不多于所取，`Flow.DissipatesOn.give_le`），取用至少 1/p 单位的形成逐个逐步计数不多于 m 乘家族在 T 的存量（`Flow.exchange_bound_of_least_loss`），不复现（`Flow.exchange_not_recurring_of_least_loss`）。逐个形成按比例的损失给出这样的最小损失（`Flow.losesAtSize_of_each`）。
+- **边界。** `Trickle`：单位每步分为四个（`quarter`）；两侧轮流持有第 0 步的一整个单位，第 t 步由 2^t 个水平为零的转移者分成 2^t 份交给另一侧，每份失去下一步的两个单位。以第 0 步单位计，每份约 2^-t，每份的损失约 2·4^-(t+1)，与所取之比趋于零。它有普查、关系项都体现、平衡、耗散、每步被围住；每一尺度都有最小损失（`Trickle.losesAtEverySize`），所以每个固定尺度的转移停止（`Trickle.exchange_stops`）；而一整个单位在任意晚的步生起，不按任何比例耗散（`growth_needs_proportion`）。
+
+**作者反审。**
+
+*反驳 11：把 `DissipatesBy` 改为对家族陈述，是否改变了已记录的结果？* 名称与定理的陈述不变，前提变弱，所以每条定理变强；逐个形成的形式经 `of_each` 仍给出它们。记录、模块说明与章节中“每个形成给回的至多是所取的 q/(q+1)”改为“每个封闭家族得回的至多是从它取走的 q/(q+1)”。§59 与计划 R1 的文字记录当时的形式，按原文保留。
+
+*反驳 12：`Trickle` 的转移者不活跃，是否钻了空子？* R1 与本节的定理都不要求取用者活跃。转移者是水平为零的关系项；要求只有活跃者取用的变体没有构造。这里要说明的只是：每一尺度的最小损失不给出增长的规律。
+
+*反驳 13：这是否说明增长的规律需要对家族的比例？* 只说明每一尺度的最小损失不够。计数转移只需最小损失；计数关系项的增长需要更多，因为一份得到可以分给任意多的转移。比对家族的比例更弱而仍给出增长的规律的前提没有陈述。
+
+**读法（AI，待 Ren）。** 按比例的损失不是表示的偶然。增长的规律计数关系项得到多少，而一份得到可以分给任意多的转移；只有损失随所转移的量成比例，分割才不能把损失分没，每一尺度的最小损失做不到这一点。所以“被围住的生成停止”的物理前提可以读作：交换合起来失去所转移的一定比例。这也部分回答了向 Ren 提出的问题：前提现在是对家族的比例，逐个转移的效率上界只是它的充分条件。
+
+**边界。** 同 §59；比对家族的比例更弱而仍给出增长的规律的前提没有陈述；Trickle 的转移者不活跃；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4100,4 +4136,6 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 **Falling, ceasing and reserve at every resolution (R1b).** Under the same resolution and premises, the relata falling by at least `1/p` of the unit inside an enclosure, counted relatum by relatum and step by step, number at most `p(q+1)` times the total standing at `T` (`World.fall_bound`): what falls is taken (`Flow.BalancesAt.loss_taken`), and loss in proportion makes the enclosing family lose at least `1/(q+1)` of what is taken (`Flow.BalancesAt.losers_lose`), where it loses at least `1/q` of what is given, so the bound for falling is `p(q+1)` and for growth `p q`. An embodied relatum ceasing falls to zero, so ceasing at that size does not recur either (`World.ceasing_not_recurring`), and with R1 neither arising nor ceasing at that size recurs (`World.rests_at_resolution`): the rest theorem at every resolution. A reserve read in a refining unit that only falls (`Web.CarriesIn`, the spine's `Web.Carries` when the unit is fixed, `Web.carriesIn_one`) may fall forever. Where each active step beyond support costs at least `1/p` of the unit (`Web.CarriesAt`), a formation unsupported from `T` on is active at most `p` times its reserve at `T` (`Web.CarriesAt.lasts`, by the same loss law), the spine's reserve being the case of `p` one at a fixed unit (`Web.Carries.carriesAt`). In `Dwindle`, at a unit halving at each step, a formation never supported is active at every step, its reserve `1 + 2^-t` units of step 0 falling towards one unit and never reaching zero, with no least cost (`reserve_needs_quantum`). The least cost is a premise, the unit-free counterpart of the spine's one-unit fall. The same record is revised, with reserve-defers-ending as a new dependency. Receipt 20261010T163746.432774Z, periphery receipt 20261010T164738.513555Z. Not yet independently reviewed; the author's counterreview is in section 59.1.
 
-The package now has 1662 theorems and 2590 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59 and 59.1. The periphery bridge passed against this core (receipt 20261010T164738.513555Z).
+**Loss in proportion per family, and a least loss at each size (R2).** Every law of R1 and R1b uses loss in proportion only summed over the closed family, so `Flow.DissipatesBy q` now says just that: each closed family gets back at most `q` parts in `q + 1` of what is taken from it. It holds where each formation does so (`Flow.DissipatesBy.of_each`), not conversely, so every law keeps its statement under a weaker premise, and the witnesses dissipative by no share now fail the weaker premise as well. A different weakening, a least loss at each size (a formation taking at least `1/p` of the unit loses at least `1/m` of it, `m` the same at every step, `Flow.LosesAtSize`), gives the exchange law with the spine's dissipation (`Flow.exchange_bound_of_least_loss`), but not the growth law. In `Trickle`, at a unit quartering at each step, a whole unit of step 0 passes between two sides in `2^t` parts at step `t`, each losing two units of the step after: every size has a least loss and transfers of each fixed size stop, yet a whole unit arises without end, with no share lost (`growth_needs_proportion`). Counting transfers needs a least loss at each size; counting what relata gain, lose, begin or end needs more, since one gain can be split across any number of transfers. Whether a premise weaker than the family's share still gives the growth law is not stated, and the carriers of `Trickle` are not active. Receipt 20261010T165248.121581Z, periphery receipt 20261010T165548.911356Z. Not yet independently reviewed; the author's counterreview is in section 59.2.
+
+The package now has 1705 theorems and 2645 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58 and 59 to 59.2. The periphery bridge passed against this core (receipt 20261010T165548.911356Z).

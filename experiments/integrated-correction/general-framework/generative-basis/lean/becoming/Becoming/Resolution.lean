@@ -22,9 +22,10 @@ belongs to the dynamics from what belongs to the fixed unit.
 * **A fixed unit.** Where the unit is fixed from some step on, every taking step loses a
   whole unit, so taking from a closed family stops (`Flow.taking_stops`); with `r`
   constantly one this is the spine's `Flow.Balances.taking_ceases`.
-* **Loss in proportion.** Where every formation gives a closed family at most `q` parts in
-  `q + 1` of what it takes from it (`Flow.DissipativeBy q`), the share lost does not
-  depend on the unit. Then, at every resolution that only refines:
+* **Loss in proportion.** Where every closed family gets back at most `q` parts in `q + 1`
+  of what is taken from it (`Flow.DissipativeBy q`; it holds where each formation does so,
+  `Flow.DissipatesBy.of_each`), the share lost does not depend on the unit. Then, at every
+  resolution that only refines:
   - the times a formation takes at least `1/p` of the unit from a closed family number at
     most `p (q + 1)` times the family's stock (the exchange law, `Flow.exchange_bound`), so
     such taking does not recur (`Flow.exchange_not_recurring`);
@@ -38,6 +39,12 @@ belongs to the dynamics from what belongs to the fixed unit.
     `World.fall_bound`), so nothing standing at that size ceases at arbitrarily late steps
     (`World.ceasing_not_recurring`). Together, neither arising nor ceasing at that size
     recurs (`World.rests_at_resolution`): the rest theorem at every resolution.
+* **A least loss at each size.** Where the flow dissipates and each formation taking at
+  least `1/p` of the unit loses at least `1/m` of it (`Flow.LosesAtSize`), the times a
+  formation takes at least `1/p` of the unit from a closed family number at most `m` times
+  its stock (`Flow.exchange_bound_of_least_loss`); loss in proportion at each transfer gives
+  such a least loss (`Flow.losesAtSize_of_each`). Counting relata needs the share: a whole unit can
+  pass in ever more, ever smaller transfers.
 * **A reserve at every resolution.** The spine's reserve falls by a whole unit at each
   active step beyond support, so it defers the end without escaping it
   (`Web.Carries.lasts`). Read in a refining unit, a reserve that only falls
@@ -64,14 +71,21 @@ belongs to the dynamics from what belongs to the fixed unit.
     every step, its reserve falling in the finer unit at each and tending to one unit of
     step 0; for no `p` does each active step cost `1/p` of the unit
     (`reserve_needs_quantum`).
+  - In `Trickle`, at a unit quartering at each step, a whole unit of step 0 passes between
+    two sides inside an enclosure in ever more, ever smaller parts; each part taking at
+    least `1/p` of the unit loses at least `1/m` of it, and transfers of each fixed size
+    stop, yet a whole unit arises in turn without end, and for no share does the flow
+    dissipate in proportion (`growth_needs_proportion`).
 
 So the rest of enclosed change is carried either by a least loss per exchange in a fixed
 unit, as in the spine, or, at every resolution, by loss in proportion together with a
 least size of what is exchanged, arises or ceases; a reserve defers the end at every
-resolution only with a least cost per active step. Without the least size, change continues
-at sizes shrinking without bound. Without the proportion, change of a whole unit continues
-while its losses shrink without bound. What holds at every resolution without either is
-the quantum law: an enclosed family cannot keep losing at a non-vanishing rate.
+resolution only with a least cost per active step. Counting transfers needs only a least
+loss at each size; counting what relata gain, lose, begin or end needs the share. Without
+the least size, change continues at sizes shrinking without bound. Without the proportion,
+change of a whole unit continues while its losses shrink without bound. What holds at every
+resolution without either is the quantum law: an enclosed family cannot keep losing at a
+non-vanishing rate.
 
 No ethical predicate, ranking or axiom occurs.
 -/
@@ -312,28 +326,28 @@ namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
 
-/-- Across the step from `t`, every formation taking part gives the family at most `q`
-parts in `q + 1` of what it takes from it: it loses at least a `(q + 1)`th of what it
-takes, whatever the unit. -/
+/-- Across the step from `t`, the family gets back at most `q` parts in `q + 1` of what is
+taken from it: together its exchanges lose at least a `(q + 1)`th of what is taken, whatever
+the unit. -/
 def DissipatesBy (q : Nat) (cs : List C) (t : Nat) : Prop :=
-  ∀ f, f ∈ L.present t → (q + 1) * total cs (L.give t f) ≤ q * total cs (L.take t f)
+  (q + 1) * L.replenishment cs t ≤ q * L.uptake cs t
 
 /-- Dissipation in proportion: across every step, every family without repetition closed
 across it is dissipated on by the share `q`. -/
 def DissipativeBy (q : Nat) : Prop :=
   ∀ cs t, Distinct cs → L.ClosedAt cs t → L.DissipatesBy q cs t
 
-/-- Summed over the formations taking part: `q + 1` times the family's replenishment is
-within `q` times its uptake. -/
-theorem DissipatesBy.over {q : Nat} {cs : List C} {t : Nat}
-    (dissipates : L.DissipatesBy q cs t) :
-    (q + 1) * L.replenishment cs t ≤ q * L.uptake cs t :=
+/-- Where every formation taking part gives the family at most `q` parts in `q + 1` of what
+it takes from it, the family is dissipated on by the share `q`. -/
+theorem DissipatesBy.of_each {q : Nat} {cs : List C} {t : Nat}
+    (each : ∀ f, f ∈ L.present t → (q + 1) * total cs (L.give t f) ≤ q * total cs (L.take t f)) :
+    L.DissipatesBy q cs t :=
   calc (q + 1) * L.replenishment cs t
       = total (L.present t) (fun f => (q + 1) * total cs (L.give t f)) :=
         (congrArg ((q + 1) * ·) (total_swap (fun f c => L.give t f c) cs (L.present t)).symm).trans
           (total_mul (q + 1) (fun f => total cs (L.give t f)) (L.present t)).symm
     _ ≤ total (L.present t) (fun f => q * total cs (L.take t f)) :=
-        total_le (L.present t) dissipates
+        total_le (L.present t) each
     _ = q * L.uptake cs t :=
         (total_mul q (fun f => total cs (L.take t f)) (L.present t)).trans
           (congrArg (q * ·) (total_swap (fun f c => L.take t f c) cs (L.present t)))
@@ -342,7 +356,7 @@ theorem DissipatesBy.over {q : Nat} {cs : List C} {t : Nat}
 theorem DissipatesBy.replenishment_le {q : Nat} {cs : List C} {t : Nat}
     (dissipates : L.DissipatesBy q cs t) : L.replenishment cs t ≤ L.uptake cs t :=
   Nat.le_of_mul_le_mul_left
-    (Nat.le_trans dissipates.over (Nat.mul_le_mul_right _ (Nat.le_succ q))) (Nat.succ_pos q)
+    (Nat.le_trans dissipates (Nat.mul_le_mul_right _ (Nat.le_succ q))) (Nat.succ_pos q)
 
 /-- Dissipated on by the share `q`, the family's stock never rises, counted in the finer
 unit. -/
@@ -364,7 +378,7 @@ theorem BalancesAt.lowersBy {r : Nat → Nat} (balances : L.BalancesAt r W) {q :
           (Nat.add_assoc _ _ _).trans (congrArg (q * W.stock cs (t + 1) + ·)
             ((Nat.add_comm _ _).trans ((congrArg (q * L.replenishment cs t + ·)
               (Nat.one_mul _).symm).trans (add_mul_split q 1 _).symm)))
-    _ ≤ q * W.stock cs (t + 1) + q * L.uptake cs t := Nat.add_le_add_left dissipates.over _
+    _ ≤ q * W.stock cs (t + 1) + q * L.uptake cs t := Nat.add_le_add_left dissipates _
     _ = q * (r t * W.stock cs t) + q * L.replenishment cs t :=
           (Nat.left_distrib _ _ _).symm.trans ((congrArg (q * ·) (balances.over cs t)).trans
             (Nat.left_distrib _ _ _)))
@@ -455,7 +469,7 @@ theorem BalancesAt.lowersTaking {r : Nat → Nat} (balances : L.BalancesAt r W) 
     _ = (q + 1) * (r t * W.stock cs t) + (q + 1) * L.replenishment cs t :=
           (congrArg ((q + 1) * ·) (balances.over cs t)).trans (Nat.left_distrib _ _ _)
     _ ≤ (q + 1) * (r t * W.stock cs t) + q * L.uptake cs t :=
-          Nat.add_le_add_left dissipates.over _)
+          Nat.add_le_add_left dissipates _)
 
 /-- The formations taking part that take at least `1/p` of the unit counted by `R` from
 the family across the step from `t`. -/
@@ -510,6 +524,120 @@ theorem exchange_not_recurring {r : Nat → Nat} (balances : L.BalancesAt r W) {
     | ⟨t, _, after, present, takes⟩ =>
       ⟨t, after, total_pos_of_mem (q := fun f => mark (R (t + 1) ≤ p * total cs (L.take t f)))
         present (mark_pos.mpr takes)⟩
+
+/-- A least loss at a least size: across the step from `t`, each formation taking part that
+takes at least `1/p` of the unit counted by `R` from the family gives it back at least `1/m`
+of the unit less than it takes. -/
+def LosesAtSize (R : Nat → Nat) (p m : Nat) (cs : List C) (t : Nat) : Prop :=
+  ∀ f, f ∈ L.present t → R (t + 1) ≤ p * total cs (L.take t f) →
+    R (t + 1) + m * total cs (L.give t f) ≤ m * total cs (L.take t f)
+
+/-- A least loss at every least size: for each `p` one `m` serves at every step, on every
+family without repetition closed across it. -/
+def LosesAtEverySize (R : Nat → Nat) : Prop :=
+  ∀ p, ∃ m, ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t
+
+/-- Each formation taking part gives the family no more than it takes from it. -/
+theorem DissipatesOn.give_le {cs : List C} {t : Nat} (dissipates : L.DissipatesOn cs t)
+    {f : F} (present : f ∈ L.present t) :
+    total cs (L.give t f) ≤ total cs (L.take t f) :=
+  Nat.le_trans (Nat.le_add_right _ _) (dissipates f present)
+
+/-- Summed over the formations taking part: `m` times the family's replenishment, with the
+unit of step `t + 1` for each formation taking at least `1/p` of the unit, is within `m`
+times its uptake. -/
+theorem LosesAtSize.over {R : Nat → Nat} {p m : Nat} {cs : List C} {t : Nat}
+    (dissipates : L.DissipatesOn cs t) (loses : L.LosesAtSize R p m cs t) :
+    m * L.replenishment cs t + L.takersAbove R p cs t * R (t + 1) ≤ m * L.uptake cs t :=
+  calc m * L.replenishment cs t + L.takersAbove R p cs t * R (t + 1)
+      = total (L.present t) (fun f => m * total cs (L.give t f)) +
+          total (L.present t) (fun f => mark (R (t + 1) ≤ p * total cs (L.take t f)) *
+            R (t + 1)) :=
+        (congrArg (· + L.takersAbove R p cs t * R (t + 1))
+          ((congrArg (m * ·) (total_swap (fun f c => L.give t f c) cs (L.present t)).symm).trans
+            (total_mul m (fun f => total cs (L.give t f)) (L.present t)).symm)).trans
+          (congrArg (total (L.present t) (fun f => m * total cs (L.give t f)) + ·)
+            (total_mul_right _ _ _))
+    _ = total (L.present t) (fun f => m * total cs (L.give t f) +
+          mark (R (t + 1) ≤ p * total cs (L.take t f)) * R (t + 1)) :=
+        (total_add _ _ _).symm
+    _ ≤ total (L.present t) (fun f => m * total cs (L.take t f)) :=
+        total_le (L.present t) fun f present => mark_cases
+          (q := fun k => m * total cs (L.give t f) + k * R (t + 1) ≤ m * total cs (L.take t f))
+          (fun takes => Nat.le_trans (Nat.le_of_eq ((congrArg (m * total cs (L.give t f) + ·)
+              (Nat.one_mul _)).trans (Nat.add_comm _ _))) (loses f present takes))
+          (fun _ => Nat.le_trans (Nat.le_of_eq ((congrArg (m * total cs (L.give t f) + ·)
+              (Nat.zero_mul _)).trans (Nat.add_zero _)))
+            (Nat.mul_le_mul_left m (dissipates.give_le present)))
+    _ = m * L.uptake cs t :=
+        (total_mul m (fun f => total cs (L.take t f)) (L.present t)).trans
+          (congrArg (m * ·) (total_swap (fun f c => L.take t f c) cs (L.present t)))
+
+/-- With a least loss at a least size, each formation taking at least `1/p` of the unit
+from the family makes it lose at least `1/m` of the unit. -/
+theorem BalancesAt.takers_lose_least {r : Nat → Nat} (balances : L.BalancesAt r W)
+    {R : Nat → Nat} {p m : Nat} {cs : List C} {t : Nat} (dissipates : L.DissipatesOn cs t)
+    (loses : L.LosesAtSize R p m cs t) :
+    m * W.stock cs (t + 1) + L.takersAbove R p cs t * R (t + 1) ≤ m * (r t * W.stock cs t) :=
+  le_of_add_le_add_right (m * L.replenishment cs t) (calc
+    m * W.stock cs (t + 1) + L.takersAbove R p cs t * R (t + 1) + m * L.replenishment cs t
+        = m * W.stock cs (t + 1) +
+            (m * L.replenishment cs t + L.takersAbove R p cs t * R (t + 1)) :=
+          (Nat.add_assoc _ _ _).trans (congrArg (m * W.stock cs (t + 1) + ·) (Nat.add_comm _ _))
+    _ ≤ m * W.stock cs (t + 1) + m * L.uptake cs t :=
+          Nat.add_le_add_left (loses.over dissipates) _
+    _ = m * (r t * W.stock cs t) + m * L.replenishment cs t :=
+          (Nat.left_distrib _ _ _).symm.trans ((congrArg (m * ·) (balances.over cs t)).trans
+            (Nat.left_distrib _ _ _)))
+
+/-- The exchange law at a least loss for each size. Balanced at a resolution that only
+refines and dissipative, where each formation taking at least `1/p` of the unit loses at
+least `1/m` of it, over a family without repetition closed at every step from `T` on, the
+times since `T` that a formation takes at least `1/p` of the unit of step `T` from the
+family, counted formation by formation, number at most `m` times its stock at `T`. -/
+theorem exchange_bound_of_least_loss {r : Nat → Nat} (balances : L.BalancesAt r W)
+    (dissipative : L.Dissipative) {R : Nat → Nat} {p m : Nat}
+    (loses : ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t)
+    {cs : List C} (distinct : Distinct cs) {T : Nat} (closed : ∀ t, T ≤ t → L.ClosedAt cs t)
+    (base : R T = 1) (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t)
+    (refining : ∀ t, T ≤ t → 0 < r t) (n : Nat) :
+    total (steps T n) (L.takersAbove R p cs) ≤ m * W.stock cs T :=
+  losses_bound base unit refining
+    (fun t later => balances.takers_lose_least (dissipative cs t distinct (closed t later))
+      (loses cs t distinct (closed t later))) n
+
+/-- So no formation takes at least `1/p` of the unit from the family at arbitrarily late
+steps. -/
+theorem exchange_not_recurring_of_least_loss {r : Nat → Nat} (balances : L.BalancesAt r W)
+    (dissipative : L.Dissipative) {R : Nat → Nat} {p m : Nat}
+    (loses : ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t)
+    {cs : List C} (distinct : Distinct cs) {T : Nat} (closed : ∀ t, T ≤ t → L.ClosedAt cs t)
+    (base : R T = 1) (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t)
+    (refining : ∀ t, T ≤ t → 0 < r t) :
+    ¬ ∀ N, ∃ t f, N ≤ t ∧ f ∈ L.present t ∧ R (t + 1) ≤ p * total cs (L.take t f) :=
+  fun recurs => bounded_not_recurring
+    (exchange_bound_of_least_loss balances dissipative loses distinct closed base unit refining)
+    fun N => match recurs N with
+    | ⟨t, _, after, present, takes⟩ =>
+      ⟨t, after, total_pos_of_mem (q := fun f => mark (R (t + 1) ≤ p * total cs (L.take t f)))
+        present (mark_pos.mpr takes)⟩
+
+/-- Loss in proportion at each transfer is a least loss at every least size: where each
+formation gives back at most `q` parts in `q + 1` of what it takes, one taking at least `1/p`
+of the unit loses at least `1/(p (q + 1))` of it. -/
+theorem losesAtSize_of_each {q : Nat} {cs : List C} {t : Nat}
+    (each : ∀ f, f ∈ L.present t → (q + 1) * total cs (L.give t f) ≤ q * total cs (L.take t f))
+    (R : Nat → Nat) (p : Nat) : L.LosesAtSize R p (p * (q + 1)) cs t :=
+  fun f present takes => calc
+    R (t + 1) + p * (q + 1) * total cs (L.give t f)
+        = R (t + 1) + p * ((q + 1) * total cs (L.give t f)) :=
+          congrArg (R (t + 1) + ·) (mul_regroup p (q + 1) _)
+    _ ≤ p * total cs (L.take t f) + p * (q * total cs (L.take t f)) :=
+          Nat.add_le_add takes (Nat.mul_le_mul_left p (each f present))
+    _ = p * (q + 1) * total cs (L.take t f) :=
+          (Nat.left_distrib _ _ _).symm.trans ((congrArg (p * ·) ((Nat.add_comm _ _).trans
+            ((congrArg (q * total cs (L.take t f) + ·) (Nat.one_mul _).symm).trans
+              (add_mul_split q 1 _).symm))).trans (mul_regroup p (q + 1) _).symm)
 
 /-- Balanced at a resolution, what a condition loses across a step is taken from it. -/
 theorem BalancesAt.loss_taken {r : Nat → Nat} (balances : L.BalancesAt r W) {R : Nat → Nat}
@@ -748,6 +876,21 @@ def halving : Nat → Nat
   | 0 => 1
   | t + 1 => 2 * halving t
 
+/-- The unit quartering at each step: one unit of step 0 is `quarter t` units of step `t`. -/
+def quarter : Nat → Nat
+  | 0 => 1
+  | t + 1 => 4 * quarter t
+
+theorem quarter_eq : ∀ t, quarter t = halving t * halving t
+  | 0 => rfl
+  | t + 1 => (congrArg (4 * ·) (quarter_eq t)).trans ((mul_regroup 2 2 _).trans
+      ((congrArg (2 * ·) (mul_turn (halving t) 2 (halving t)).symm).trans
+        (mul_regroup 2 (halving t) (2 * halving t)).symm))
+
+theorem halving_pos : ∀ t, 0 < halving t
+  | 0 => Nat.one_pos
+  | t + 1 => (Nat.mul_le_mul (Nat.succ_pos 1) (halving_pos t) : 1 * 1 ≤ 2 * halving t)
+
 /-! ## A unit refining without end -/
 
 namespace Asymptote
@@ -797,8 +940,9 @@ theorem dissipative : (flow split).Dissipative :=
 /-- Giving nothing back, the drawer loses all it takes: the flow is dissipative by every
 share. -/
 theorem dissipativeBy (q : Nat) : (flow split).DissipativeBy q :=
-  fun cs _ _ _ _ _ => Nat.le_trans (Nat.le_of_eq ((congrArg ((q + 1) * ·) (total_zero cs)).trans
-    (Nat.mul_zero _))) (Nat.zero_le _)
+  fun cs _ _ _ => Flow.DissipatesBy.of_each fun _ _ =>
+    Nat.le_trans (Nat.le_of_eq ((congrArg ((q + 1) * ·) (total_zero cs)).trans
+      (Nat.mul_zero _))) (Nat.zero_le _)
 
 /-- The drawer is supported at every step. -/
 theorem dependent : (web split).Dependent :=
@@ -1097,9 +1241,10 @@ theorem taking : flow.Taking web :=
 /-- The flow dissipates in proportion: on a family closed across a step, the pool gives
 back at most half of what it takes. -/
 theorem dissipativeBy : flow.DissipativeBy 1 :=
-  fun _ _ distinct closed _ _ => Nat.le_trans (Nat.mul_le_mul_left 2 (emitted_le_one distinct))
-    (Nat.le_trans (le_total_of_mem (q := drawn) (pool_mem closed))
-      (Nat.le_of_eq (Nat.one_mul _).symm))
+  fun _ _ distinct closed => Flow.DissipatesBy.of_each fun _ _ =>
+    Nat.le_trans (Nat.mul_le_mul_left 2 (emitted_le_one distinct))
+      (Nat.le_trans (le_total_of_mem (q := drawn) (pool_mem closed))
+        (Nat.le_of_eq (Nat.one_mul _).symm))
 
 /-- What arises at step `t` stands at one unit of step `t + 1`. -/
 theorem arises_small (t : Nat) : web.level (t + 1) (some t) = 1 :=
@@ -1262,6 +1407,283 @@ theorem not_carriesAt (p : Nat) : ¬ web.CarriesAt (fun _ => 2) halving p reserv
 
 end Dwindle
 
+/-! ## A whole unit carried by ever more, ever smaller transfers -/
+
+namespace Trickle
+
+open Shuttle (holder stands)
+
+/-- The relata: two sides, and the carriers `.inr i`. -/
+abbrev Relatum := Bool ⊕ Nat
+
+/-- The carriers taking part across the step from a step with `n` of them. -/
+def carriers : Nat → List Relatum
+  | 0 => []
+  | n + 1 => .inr n :: carriers n
+
+theorem carriers_length : ∀ n, (carriers n).length = n
+  | 0 => rfl
+  | n + 1 => congrArg (· + 1) (carriers_length n)
+
+/-- How much of the standing a relatum holds at step `t`: one for the holder, none for the
+other side or a carrier. -/
+def side (t : Nat) : Relatum → Nat
+  | .inl b => stands b t
+  | .inr _ => 0
+
+/-- The side holding the standing at step `t` stands at `quarter t + halving t` units of step
+`t`, one unit of step 0 and `2^-t` of one; everything else stands at nothing. -/
+def level (t : Nat) (c : Relatum) : Nat :=
+  side t c * (quarter t + halving t)
+
+/-- Across the step from `t`, `halving t` carriers take part. Each takes `4 (halving t + 1)`
+units of step `t + 1` from the holder and gives the other side all of it but two: the whole
+of what the holder holds passes in `halving t` parts, each a quarter as large, in units of
+step 0, as the parts of the step after next, each losing two units of the step after. -/
+def flow : Flow Relatum Relatum :=
+  ⟨fun t => carriers (halving t), fun t _ c => side t c * (4 * (halving t + 1)),
+    fun t _ c => side (t + 1) c * (2 * (2 * halving t + 1))⟩
+
+/-- A relatum is active exactly while it stands. -/
+def web : Web Relatum Relatum :=
+  ⟨level, fun t c => 0 < level t c, fun _ _ _ => False, fun _ _ _ => 0, fun _ _ _ => False⟩
+
+def world : World :=
+  ⟨Relatum, flow, web⟩
+
+theorem taken (t : Nat) (c : Relatum) :
+    flow.taken t c = halving t * (side t c * (4 * (halving t + 1))) :=
+  (total_const _ _).trans (congrArg (· * _) (carriers_length (halving t)))
+
+theorem given (t : Nat) (c : Relatum) :
+    flow.given t c = halving t * (side (t + 1) c * (2 * (2 * halving t + 1))) :=
+  (total_const _ _).trans (congrArg (· * _) (carriers_length (halving t)))
+
+theorem add_eq {a b c d : Nat} (h₁ : a = b) (h₂ : c = d) : a + c = b + d :=
+  (congrArg (· + c) h₁).trans (congrArg (b + ·) h₂)
+
+/-- What the holder holds, taken in `halving t` parts. -/
+theorem parts_taken (t : Nat) :
+    halving t * (4 * (halving t + 1)) = 4 * (quarter t + halving t) :=
+  (mul_turn _ _ _).trans (congrArg (4 * ·) ((Nat.left_distrib _ _ _).trans
+    (add_eq (quarter_eq t).symm (Nat.mul_one _))))
+
+/-- What the other side is given, in `halving t` parts. -/
+theorem parts_given (t : Nat) :
+    halving t * (2 * (2 * halving t + 1)) = quarter (t + 1) + halving (t + 1) :=
+  (mul_turn _ _ _).trans ((congrArg (2 * ·) ((Nat.left_distrib _ _ _).trans
+    (add_eq ((mul_turn _ _ _).trans (congrArg (2 * ·) (quarter_eq t).symm))
+      (Nat.mul_one _)))).trans
+    ((Nat.left_distrib _ _ _).trans (congrArg (· + 2 * halving t) (mul_regroup 2 2 _).symm)))
+
+/-- The flow balances at a unit quartering at each step. -/
+theorem balances : flow.BalancesAt (fun _ => 4) web :=
+  fun t c => show level (t + 1) c + flow.taken t c = 4 * level t c + flow.given t c from
+    calc level (t + 1) c + flow.taken t c
+        = side (t + 1) c * (quarter (t + 1) + halving (t + 1)) +
+            side t c * (halving t * (4 * (halving t + 1))) :=
+          congrArg (level (t + 1) c + ·) ((taken t c).trans (mul_turn _ _ _))
+      _ = side (t + 1) c * (halving t * (2 * (2 * halving t + 1))) +
+            side t c * (4 * (quarter t + halving t)) :=
+          add_eq (congrArg (side (t + 1) c * ·) (parts_given t).symm)
+            (congrArg (side t c * ·) (parts_taken t))
+      _ = 4 * level t c + flow.given t c :=
+          (Nat.add_comm _ _).trans (add_eq (mul_turn _ _ _)
+            ((mul_turn _ _ _).trans (given t c).symm))
+
+theorem active_iff {t : Nat} {c : Relatum} : web.active t c ↔ 0 < side t c :=
+  ⟨fun active => match Nat.eq_zero_or_pos (side t c) with
+    | .inl zero => absurd (Nat.lt_of_lt_of_le active (Nat.le_of_eq
+        ((congrArg (· * (quarter t + halving t)) zero).trans (Nat.zero_mul _))))
+        (Nat.lt_irrefl 0)
+    | .inr standing => standing,
+   fun standing => (Nat.mul_le_mul standing (Nat.le_trans (halving_pos t)
+      (Nat.le_add_left _ _)) : 1 * 1 ≤ _)⟩
+
+theorem side_pos_iff : ∀ {t : Nat} {c : Relatum}, 0 < side t c ↔ c = .inl (holder t)
+  | t, .inl b => ⟨fun pos => congrArg Sum.inl ((Exposed.stands_iff b t).mp pos),
+      fun same => (Exposed.stands_iff b t).mpr (Sum.inl.inj same)⟩
+  | _, .inr _ => ⟨fun pos => absurd pos (Nat.lt_irrefl 0), fun same => nomatch same⟩
+
+/-- The holder is the one active relatum. -/
+theorem census : web.Census fun t => [.inl (holder t)] :=
+  fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun _ =>
+    ⟨fun active => Eq.subst (motive := fun d => d ∈ [Sum.inl (holder t)])
+        (side_pos_iff.mp (active_iff.mp active)).symm (.head _),
+     fun mem => active_iff.mpr (side_pos_iff.mpr (match mem_cons_cases mem with
+        | .inl same => same
+        | .inr no => nomatch no))⟩⟩
+
+theorem counted : world.Counted :=
+  ⟨_, census⟩
+
+theorem embodied : world.Embodied :=
+  fun _ _ => Iff.rfl
+
+/-- The two sides. -/
+def sides : List Relatum := [.inl true, .inl false]
+
+theorem sides_distinct : Distinct sides :=
+  ⟨(fun mem => match mem_cons_cases mem with
+    | .inl same => nomatch same
+    | .inr no => nomatch no), ⟨fun no => (nomatch no), trivial⟩⟩
+
+theorem side_mem : ∀ {t : Nat} {c : Relatum}, 0 < side t c → c ∈ sides
+  | _, .inl true, _ => .head _
+  | _, .inl false, _ => .tail _ (.head _)
+  | _, .inr _, pos => absurd pos (Nat.lt_irrefl 0)
+
+theorem off_sides {t : Nat} {c : Relatum} (outside : ¬ c ∈ sides) : side t c = 0 :=
+  eq_zero_of_not_pos fun pos => outside (side_mem pos)
+
+theorem sides_total (t k : Nat) : total sides (fun c => side t c * k) = k :=
+  (congrArg (stands true t * k + ·) (Nat.add_zero _)).trans
+    ((add_mul_split (stands true t) (stands false t) k).symm.trans
+      ((congrArg (· * k) (Alternation.stands_sum t)).trans (Nat.one_mul k)))
+
+/-- Each part taken from the holder. -/
+theorem holder_takes (t : Nat) (f : Relatum) :
+    flow.take t f (.inl (holder t)) = 4 * (halving t + 1) :=
+  (congrArg (· * (4 * (halving t + 1))) (Exposed.holder_one t)).trans (Nat.one_mul _)
+
+theorem carrier_mem : ∀ {n : Nat}, 0 < n → Sum.inr (n - 1) ∈ carriers n
+  | 0, zero => absurd zero (Nat.lt_irrefl 0)
+  | _ + 1, _ => .head _
+
+theorem first_carrier (t : Nat) : Sum.inr (halving t - 1) ∈ flow.present t :=
+  carrier_mem (halving_pos t)
+
+/-- Whether a relatum is the holder at step `t`. -/
+def isHolder (t : Nat) : (c : Relatum) → Decidable (c = .inl (holder t))
+  | .inl b => match instDecidableEqBool b (holder t) with
+    | isTrue same => isTrue (congrArg Sum.inl same)
+    | isFalse other => isFalse fun same => other (Sum.inl.inj same)
+  | .inr _ => isFalse fun same => nomatch same
+
+/-- A family closed across a step holds the holder. -/
+theorem holder_mem {es : List Relatum} {t : Nat} (closed : flow.ClosedAt es t) :
+    Sum.inl (holder t) ∈ es :=
+  match decideSome (decide := isHolder t) es with
+  | isTrue ⟨_, mem, same⟩ => Eq.subst (motive := (· ∈ es)) same mem
+  | isFalse absent => absurd (closed _ (first_carrier t) (.inl (holder t))
+      fun mem => absent ⟨_, mem, rfl⟩).1 fun zero => Nat.lt_irrefl 0
+        (Nat.lt_of_lt_of_le (Nat.succ_pos (4 * halving t + 3))
+          (Nat.le_trans (Nat.le_of_eq ((Nat.left_distrib 4 (halving t) 1).symm.trans
+            (holder_takes t _).symm)) (Nat.le_of_eq zero)))
+
+/-- What a part gives any family totals at most `2 (2 halving t + 1)` units of the step
+after. -/
+theorem given_total {es : List Relatum} (distinct : Distinct es) (t : Nat) (f : Relatum) :
+    total es (flow.give t f) ≤ 2 * (2 * halving t + 1) :=
+  Nat.le_trans (total_le_of_support distinct fun _ _ pos =>
+      side_mem (Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le pos
+        (Nat.le_of_eq ((congrArg (· * _) zero).trans (Nat.zero_mul _))))))
+    (Nat.le_of_eq (sides_total (t + 1) _))
+
+/-- What a part takes from any family totals at most `4 (halving t + 1)` units of the step
+after. -/
+theorem taken_le {es : List Relatum} (distinct : Distinct es) (t : Nat) (f : Relatum) :
+    total es (flow.take t f) ≤ 4 * (halving t + 1) :=
+  Nat.le_trans (total_le_of_support distinct fun _ _ pos =>
+      side_mem (Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le pos
+        (Nat.le_of_eq ((congrArg (· * _) zero).trans (Nat.zero_mul _))))))
+    (Nat.le_of_eq (sides_total t _))
+
+/-- What a part takes from a closed family totals at least `4 (halving t + 1)` units of the
+step after. -/
+theorem taken_total {es : List Relatum} {t : Nat} (closed : flow.ClosedAt es t)
+    (f : Relatum) : 4 * (halving t + 1) ≤ total es (flow.take t f) :=
+  Nat.le_trans (Nat.le_of_eq (holder_takes t f).symm)
+    (le_total_of_mem (q := flow.take t f) (holder_mem closed))
+
+/-- Two units of the step after are lost per part. -/
+theorem part_loss (h : Nat) : 2 * (2 * h + 1) + 2 = 4 * (h + 1) :=
+  (congrArg (· + 2) ((Nat.left_distrib 2 (2 * h) 1).trans
+    (congrArg (· + 2) (mul_regroup 2 2 h).symm))).trans
+    ((Nat.add_assoc _ _ _).trans (Nat.left_distrib 4 h 1).symm)
+
+/-- Over a family without repetition closed across a step, each part gives back at least
+two units of the step after less than it takes. -/
+theorem loses_two {es : List Relatum} (distinct : Distinct es) {t : Nat}
+    (closed : flow.ClosedAt es t) (f : Relatum) :
+    total es (flow.give t f) + 2 ≤ total es (flow.take t f) :=
+  Nat.le_trans (Nat.add_le_add_right (given_total distinct t f) 2)
+    (Nat.le_trans (Nat.le_of_eq (part_loss (halving t))) (taken_total closed f))
+
+/-- Each part loses two units of the step after, so the flow dissipates. -/
+theorem dissipative : flow.Dissipative :=
+  fun _ _ distinct closed f _ => Nat.le_trans
+    (Nat.add_le_add_left (Nat.le_trans (sign_le_one _) (Nat.le_succ 1)) _)
+    (loses_two distinct closed f)
+
+theorem double (h : Nat) : h + h = 2 * h :=
+  (add_eq (Nat.one_mul h).symm (Nat.one_mul h).symm).trans (add_mul_split 1 1 h).symm
+
+/-- A part taking at least `1/p` of the unit comes only while `halving t ≤ 2 p`. -/
+theorem large_early {t p : Nat} (large : quarter (t + 1) ≤ p * (4 * (halving t + 1))) :
+    halving t ≤ 2 * p :=
+  Nat.le_of_mul_le_mul_left (Nat.le_trans
+    (Nat.le_of_mul_le_mul_left (Nat.le_trans (Nat.le_of_eq
+        ((congrArg (4 * ·) (quarter_eq t)).symm))
+      (Nat.le_trans large (Nat.le_of_eq (mul_turn p 4 _)))) (Nat.succ_pos 3))
+    (Nat.le_trans (Nat.mul_le_mul_left p (Nat.add_le_add_left (halving_pos t) _))
+      (Nat.le_of_eq ((congrArg (p * ·) (double _)).trans
+        ((mul_turn p 2 _).trans ((mul_regroup 2 p _).symm.trans
+          (Nat.mul_comm _ _)))))))
+    (halving_pos t)
+
+/-- So a part taking at least `1/p` of the unit loses at least `1/m` of it, with
+`m = 2 (2 p · 2 p)`: a least loss at every least size. -/
+theorem losesAtEverySize : flow.LosesAtEverySize quarter :=
+  fun p => ⟨2 * (2 * p * (2 * p)), fun _ t distinct closed f _ large =>
+    have early := large_early (Nat.le_trans large
+      (Nat.mul_le_mul_left p (taken_le distinct t f)))
+    have small : quarter (t + 1) ≤ 2 * (2 * (2 * p * (2 * p))) :=
+      Nat.le_trans (Nat.le_of_eq (congrArg (4 * ·) (quarter_eq t)))
+        (Nat.le_trans (Nat.mul_le_mul_left 4 (Nat.mul_le_mul early early))
+          (Nat.le_of_eq (mul_regroup 2 2 _)))
+    Nat.le_trans (Nat.add_le_add_right (Nat.le_trans small (Nat.le_of_eq (Nat.mul_comm _ _))) _)
+      (Nat.le_trans (Nat.le_of_eq ((Nat.add_comm _ _).trans (Nat.left_distrib _ _ _).symm))
+        (Nat.mul_le_mul_left _ (loses_two distinct closed f)))⟩
+
+/-- The two sides are closed across every step. -/
+theorem sides_closed (t : Nat) : flow.ClosedAt sides t :=
+  fun _ _ _ outside =>
+    ⟨(congrArg (· * (4 * (halving t + 1))) (off_sides outside)).trans (Nat.zero_mul _),
+     (congrArg (· * (2 * (2 * halving t + 1))) (off_sides outside)).trans (Nat.zero_mul _)⟩
+
+/-- Every step is enclosed by the two sides. -/
+theorem enclosed (t : Nat) : flow.Enclosed t :=
+  ⟨sides, sides_distinct, sides_closed t⟩
+
+/-- So, by the exchange law at a least loss, transfers of each fixed size stop: for every
+`p`, no part takes at least `1/p` of the unit at arbitrarily late steps. -/
+theorem exchange_stops (p : Nat) :
+    ¬ ∀ N, ∃ t f, N ≤ t ∧ f ∈ flow.present t ∧ quarter (t + 1) ≤ p * total sides (flow.take t f) :=
+  match losesAtEverySize p with
+  | ⟨_, loses⟩ => Flow.exchange_not_recurring_of_least_loss balances dissipative loses
+      sides_distinct (T := 0) (fun t _ => sides_closed t) rfl (fun _ _ => rfl)
+      (fun _ _ => Nat.succ_pos 3)
+
+/-- A whole unit of step 0 arises at arbitrarily late steps. -/
+theorem arising_whole (N : Nat) :
+    ∃ t c, N ≤ t ∧ web.Arises t c ∧ quarter (t + 1) ≤ 1 * web.level (t + 1) c :=
+  match Shuttle.recurs true N with
+  | ⟨t, after, before, now⟩ => ⟨t, .inl true, after,
+      ⟨fun active => before (active_iff.mp active), active_iff.mpr now⟩,
+      Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq ((Nat.one_mul _).symm.trans
+        ((congrArg (· * (quarter (t + 1) + halving (t + 1)))
+          (Alternation.stands_one now).symm).trans (Nat.one_mul _).symm)))⟩
+
+/-- So no fixed share of what is taken is lost: by the growth law, for no `q` is the flow
+dissipative by the share `q`. -/
+theorem not_dissipativeBy (q : Nat) : ¬ flow.DissipativeBy q :=
+  fun dissipative => World.arising_not_recurring (w := world) counted embodied balances
+    dissipative (T := 0) (fun t _ => enclosed t) (R := quarter) rfl (fun _ _ => rfl)
+    (fun _ _ => Nat.succ_pos 3) 1 arising_whole
+
+end Trickle
+
 
 /-- Continued arising needs a quantum. With a fixed unit, a world with a census whose
 relata are embodied, balanced and dissipative cannot arise without end with every step
@@ -1335,5 +1757,27 @@ theorem reserve_needs_quantum :
       (∀ t, Dwindle.web.active t ()) ∧
       ∀ p, ¬ Dwindle.web.CarriesAt (fun _ => 2) halving p Dwindle.reserve :=
   ⟨Dwindle.unsupported, Dwindle.carriesIn, fun _ => trivial, Dwindle.not_carriesAt⟩
+
+/-- Growth of a size not vanishing needs loss in proportion, even where every transfer of a
+least size loses a least amount. With such a least loss, transfers of each fixed size stop
+inside an enclosure (`Flow.exchange_bound_of_least_loss`), but growth need not: in
+`Trickle`, at a unit quartering at each step, a whole unit of step 0 passes between two
+sides inside an enclosure in ever more, ever smaller parts, each losing two units of the
+step after. The world has a census, embodied relata, a balanced and dissipative flow and
+every step enclosed, and each part taking at least `1/p` of the unit loses at least `1/m`
+of it for some `m`; transfers of each fixed size stop, yet a whole unit arises at
+arbitrarily late steps, and for no share is the flow dissipative in proportion. -/
+theorem growth_needs_proportion :
+    Trickle.world.Counted ∧ Trickle.world.Embodied ∧
+      Trickle.flow.BalancesAt (fun _ => 4) Trickle.web ∧ Trickle.world.Dissipative ∧
+      (∀ t, Trickle.world.flow.Enclosed t) ∧ Trickle.flow.LosesAtEverySize quarter ∧
+      (∀ p, ¬ ∀ N, ∃ t f, N ≤ t ∧ f ∈ Trickle.flow.present t ∧
+        quarter (t + 1) ≤ p * total Trickle.sides (Trickle.flow.take t f)) ∧
+      (∀ N, ∃ t x, N ≤ t ∧ Trickle.web.Arises t x ∧
+        quarter (t + 1) ≤ 1 * Trickle.web.level (t + 1) x) ∧
+      ∀ q, ¬ Trickle.flow.DissipativeBy q :=
+  ⟨Trickle.counted, Trickle.embodied, Trickle.balances, Trickle.dissipative,
+    Trickle.enclosed, Trickle.losesAtEverySize, Trickle.exchange_stops, Trickle.arising_whole,
+    Trickle.not_dissipativeBy⟩
 
 end Becoming
