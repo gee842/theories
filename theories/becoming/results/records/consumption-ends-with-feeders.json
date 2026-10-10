@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "id": "consumption-ends-with-feeders",
+  "title": {
+    "zh": "消耗随其供给者终结：在平衡、只有活跃者给予、活动需要支持之下，没有被支持者向一个条件给予时，从它取用的形成至多连续活跃该条件水平那么多步；供给者都不被支持时就是这样；一个在所需条件上保住自身支持的形成，仍可经其供给者终结",
+    "en": "Consumption ends with its feeders: under balance, with only active formations giving and activity needing support, where nothing supported gives to a condition, a formation taking from it is active for at most as many consecutive steps as its level; so it is where every feeder is unsupported; a formation that keeps its own support over the condition it requires can still end through its feeder"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T13:58:00+00:00",
+  "claim": {
+    "zh": "设流平衡（Flow.Balances），只有活跃者给予（Flow.Acting），活动需要支持（Web.Dependent）。若形成 g 从第 T 步起在其活跃的每一步都在场并从条件 c 取用，而在这些步没有被支持者向 c 给予，则 g 从第 T 步起至多连续活跃 c 在第 T 步的水平那么多步（Flow.Balances.unfed_consumption_ends，由 Flow.excess_bounded 推出），所以并非从第 T 步起每步都活跃（Flow.Balances.unfed_consumption_stops）。若 g 活跃时需要 c，而从第 T 步起供给其延续的都不被支持，则没有被支持者向 c 给予（Flow.unfed_of_feeders_unsupported），所以同一界成立（Flow.Balances.consumption_ends_with_feeders）。见证 Overshoot：两个形成各自以所需一依存于以自身命名的条件，两个条件起初都立于一；第 0 步 true 从两个条件各取一个单位并向 false 的条件给予一个，false 从自己的条件取一个并向 true 的条件给予一个，所以任一个的供给闭包都是整体（Overshoot.closure_whole）。流平衡，只有活跃者给予，只有活跃者取用、且只从其所汲取者取用，活动需要支持；第 0 步 true 在其所需的唯一条件上更新（Web.RenewingOver），在第 1 步仍被支持，而它的汲取侵蚀 false 的依存（Web.UnderminingAt），false 在第 0 步供给 true 的条件；false 从第 1 步起不被支持，true 从第 1 步起至多连续活跃一步，从第 2 步起没有任何被支持者（Overshoot.ends_through_feeder）。依存相同而各自只从自己的条件取用时（Overshoot.steadyFlow、Overshoot.steadyWeb），流平衡，两者每步都活跃且被支持（Overshoot.steady_continues）。不用伦理前提，也不用 Lean 公理。",
+    "en": "Let the flow balance (Flow.Balances), with only active formations giving (Flow.Acting) and activity needing support (Web.Dependent). If a formation g is present and takes from a condition c at every step from T at which it is active, while nothing supported gives to c at those steps, then g is active for at most as many consecutive steps from T as the level of c at T (Flow.Balances.unfed_consumption_ends, derived from Flow.excess_bounded), so it is not active at every step from T (Flow.Balances.unfed_consumption_stops). If g requires c while active and everything feeding its continuation from T on is unsupported, nothing supported gives to c (Flow.unfed_of_feeders_unsupported), so the same bound holds (Flow.Balances.consumption_ends_with_feeders). The witness Overshoot: each of two formations depends at need one on the condition named by it, both conditions standing at one at the start; at step 0 true takes one unit from each condition and gives one to false's, and false takes one from its own and gives one to true's, so the feeding closure of either is the whole (Overshoot.closure_whole). The flow balances, only active formations give, only active formations take and only from what they draw on, and activity needs support; at step 0 true renews over the one condition it requires (Web.RenewingOver) and is still supported at step 1, while its draw undermines false's dependence (Web.UnderminingAt), and false feeds true's condition at step 0; false is unsupported from step 1 on, true is active for at most one consecutive step from step 1, and from step 2 on nothing is supported (Overshoot.ends_through_feeder). With the same dependences, each taking only from its own condition (Overshoot.steadyFlow, Overshoot.steadyWeb), the flow balances and both are active and supported at every step (Overshoot.steady_continues). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "平衡（Flow.Balances）、只有活跃者给予（Flow.Acting）、活动需要支持（Web.Dependent）；g 在其活跃的每一步在场并从 c 取用；没有被支持者向 c 给予，或 g 活跃时需要 c 而供给其延续的都不被支持。",
+      "en": "Balance (Flow.Balances), only active formations giving (Flow.Acting) and activity needing support (Web.Dependent); g present and taking from c at every step at which it is active; nothing supported giving to c, or g requiring c while active with everything feeding its continuation unsupported."
+    },
+    {
+      "zh": "见证另有只有活跃者取用、且只从其所汲取者取用（Flow.Taking）。",
+      "en": "The witnesses also have only active formations taking, and only from what they draw on (Flow.Taking)."
+    },
+    {
+      "zh": "Overshoot 与 steady 是两个流：以扣留水平作的比较固定交换的其余部分，所以经动力学返回的终结在实际的流上、对照另一个参照流来表明。",
+      "en": "Overshoot and steady are two flows: comparisons by withheld levels keep the rest of the exchange fixed, so an ending that returns through the dynamics is shown on the actual flow against a separate reference flow."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”，也读 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。AI 的第二种机制“constraint: a part that degrades its whole removes its own supply”在这里读作：损失经供给者返回。Ren 回答：“there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。",
+    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”, and Ren's “the system that one is in” as the system reached from a center along dependence. The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. The AI's second mechanism, “constraint: a part that degrades its whole removes its own supply”, is read here as a loss returning through a feeder. Ren answered: “there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+  "aliases": [
+    "Becoming.Flow.Balances.unfed_consumption_ends",
+    "Becoming.Flow.Balances.unfed_consumption_stops",
+    "Becoming.Flow.unfed_of_feeders_unsupported",
+    "Becoming.Flow.Balances.consumption_ends_with_feeders",
+    "Becoming.Overshoot.closure_whole",
+    "Becoming.Overshoot.ends_through_feeder",
+    "Becoming.Overshoot.steady_continues"
+  ],
+  "dependencies": [
+    {
+      "id": "own-count-misses-joint-excess",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.excess_bounded：连续 n 步联合取用多于给予时，条件的水平至少下降 n。",
+        "en": "Reuses Flow.excess_bounded: over n consecutive steps of joint excess, the level of the condition falls by at least n."
+      },
+      "interface": {
+        "output": {
+          "zh": "联合超出不能持续。",
+          "en": "Joint excess cannot last."
+        },
+        "input": {
+          "zh": "没有被支持者给予时，取用者的每个活跃步都是联合超出的一步。",
+          "en": "Where nothing supported gives, every active step of the taker is a step of joint excess."
+        },
+        "conditions": {
+          "zh": "平衡。",
+          "en": "Balance."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    },
+    {
+      "id": "feeding-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用供给闭包：Overshoot 中任一个的闭包都是整体，终结经闭包之内的供给者返回。",
+        "en": "Reuses the feeding closure: in Overshoot the closure of either is the whole, and the ending returns through a feeder within it."
+      },
+      "interface": {
+        "output": {
+          "zh": "供给闭包。",
+          "en": "The feeding closure."
+        },
+        "input": {
+          "zh": "相互依存的整体。",
+          "en": "An interdependent whole."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean"
+      }
+    },
+    {
+      "id": "represented-boundary-against-dependence",
+      "relation": "application",
+      "detail": {
+        "zh": "那里在区域上更新（Web.RenewingOver）、区域覆盖所需时保住自身支持，比较只在一步上；Overshoot 在多步上比较：在所需条件上更新、保住自身支持的形成，仍经其供给者终结。",
+        "en": "There renewing over a region (Web.RenewingOver) keeps one's own support where the region covers what is required, compared at one step; Overshoot compares over several steps: a formation renewing over the condition it requires and keeping its own support still ends through its feeder."
+      },
+      "interface": {
+        "output": {
+          "zh": "在区域上更新与保住自身支持。",
+          "en": "Renewing over a region and keeping one's own support."
+        },
+        "input": {
+          "zh": "只在所需条件上表示的边界不足以保住延续。",
+          "en": "A boundary represented over required conditions alone does not secure continuation."
+        },
+        "conditions": {
+          "zh": "平衡、只有活跃者给予与取用、活动需要支持。",
+          "en": "Balance, only active formations giving and taking, activity needing support."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "derived-extent-limits",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "那里 Mortal 中一个生命的取用终结共享条件的更新，后继者在它终结之后才终结；这里终结经供给者返回取用者自身。",
+        "en": "There, in Mortal, a life's taking ends the renewal of a shared condition and a successor ends after it has ended; here an ending returns through a feeder to the taker itself."
+      },
+      "interface": {
+        "output": {
+          "zh": "想要的视界。",
+          "en": "The horizon of the want."
+        },
+        "input": {
+          "zh": "终结返回取用者。",
+          "en": "An ending returning to the taker."
+        },
+        "conditions": {
+          "zh": "读法待 Ren。",
+          "en": "The reading pending Ren."
+        },
+        "evidence": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "support-from-the-supported",
+      "detail": {
+        "zh": "那里每次上升都由被支持者给予，一旦什么都不被支持此后不再被支持；这里没有被支持者向所耗条件给予时，消耗至多持续该条件的水平那么多步。",
+        "en": "There every rise is given by a supported formation, and once nothing is supported nothing is supported again; here, where nothing supported gives to the condition consumed, consumption lasts at most as many steps as its level."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "detail": {
+        "zh": "只在所需条件上表示的边界不足：Overshoot 中 true 在其所需条件上更新、保住自身支持，却经其供给者终结（Overshoot.ends_through_feeder）。",
+        "en": "A boundary represented over required conditions is not enough: in Overshoot true renews over the condition it requires and keeps its own support, yet ends through its feeder (Overshoot.ends_through_feeder)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "detail": {
+        "zh": "闭包之外的损失不必返回：Clearing 中清除者的闭包每步被支持，而栖居者终结（Clearing.closure_supported，见 feeding-closure）。",
+        "en": "A loss beyond the closure need not return: in Clearing the clearer's closure is supported at every step while the dweller ends (Clearing.closure_supported; see feeding-closure)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "一般定理不说闭包之内的损失总会返回：供给者可以冗余，存量与时机决定终结何时到来；Overshoot 中只有一个供给者，存量为一；见证的活动由规定给出，见证表明它与平衡、支持与依存相容，终结的推出在一般定理中；返回在实际的流上、对照另一个参照流来表明，不是同一个流扣留一个部分；不含伦理谓词，不说中心应当做什么；把它读作 AI 所说的“constraint”是 AI 的读法，待 Ren。",
+    "en": "The general theorems do not say that a loss within the closure always returns: feeders may be redundant, and stock and timing decide when an ending arrives; in Overshoot there is one feeder and a stock of one; the witnesses' activity is stipulated and shown consistent with balance, support and dependence, the endings being derived in the general theorems; the return is shown on the actual flow against a separate reference flow, not by withholding a part of one flow; contains no ethical predicate and says nothing of what a center should do; reading it as the “constraint” the AI named is the AI's reading, pending Ren."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T133601.876717Z）：Becoming.Interdependence 的 28 项定理全部空依赖；同一回执覆盖包内 33 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T133831.669969Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 35 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T133601.876717Z): the 28 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 33 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T133831.669969Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 35 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "role": "proof",
+      "sha256": "de4b1af47184d253e25eeefd9f41f52aed0f41c6ec92b15c488bfa2d0a989f0d",
+      "declarations": [
+        "Becoming.Flow.Balances.unfed_consumption_ends",
+        "Becoming.Flow.Balances.unfed_consumption_stops",
+        "Becoming.Flow.unfed_of_feeders_unsupported",
+        "Becoming.Flow.Balances.consumption_ends_with_feeders",
+        "Becoming.Overshoot.flow",
+        "Becoming.Overshoot.web",
+        "Becoming.Overshoot.balances",
+        "Becoming.Overshoot.acting",
+        "Becoming.Overshoot.taking",
+        "Becoming.Overshoot.dependent",
+        "Becoming.Overshoot.closure_whole",
+        "Becoming.Overshoot.ends_through_feeder",
+        "Becoming.Overshoot.steadyFlow",
+        "Becoming.Overshoot.steadyWeb",
+        "Becoming.Overshoot.steady_continues",
+        "Becoming.Clearing.closure_supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "59de94b5499bc3085ec121eea1b6b7e9e02c9b54b06c5ff68dbf8548d115dc74",
+      "declarations": [
+        "Becoming.Flow.excess_bounded"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "01438c718a4e4dcc55d60a35d3d1e4703d7e04a55c7b6a378a6f9052274aa695",
+      "declarations": [
+        "Becoming.Web.RenewingOver"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "4af6e1afa8f704075fdc4dd79bf9db797f173a1c78a914ad02b8af46555a15a1",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.Taking"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "declarations": [
+        "Becoming.Web.Supported",
+        "Becoming.Web.Dependent",
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "role": "proof",
+      "sha256": "1f322933aff6e2a855bd7e7209dabad5c6d3079152fd79a438593195eae8de4c",
+      "declarations": [
+        "Becoming.Flow.FedBy"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "53c27beeb7b648c0538cb73df7f4347c2f7a6d881fd381bbf911e2edc439aca9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "50e87e1775efda1d67d607f7aa2f7cc4d95dffdb21659890960d395bbd42f8c5"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "ee892fe02ef5142d6e7afbc7cd6e4096c3681e09b3f6ad5bd2931f02ad2101b1"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interdependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Standpoints",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "冗余供给者与储备之下的返回；经条件的延迟输送；整体之间选择的模型（群体、复制）；Ren 的判断：这是否读出“constraint”。",
+    "en": "Return under redundant feeders and reserves; delayed conveyance through conditions; a model of selection between wholes (populations, replication); Ren's judgment whether this reads the “constraint”."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P40：新增，按 Ren“let's aim for a first, then try to archive b”；统一计划 P40（路线 (b)：不用公理能走多远）；见整合文档 §56。",
+      "en": "2026-10-10 P40: added, following Ren's ‘let's aim for a first, then try to archive b’; unification plan P40 (route (b): how far the route without axiom reaches); see §56 of the integration note."
+    }
+  ]
+}

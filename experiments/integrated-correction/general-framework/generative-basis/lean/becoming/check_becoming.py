@@ -42,7 +42,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Openness", "Becoming.Continuation", "Becoming.Admission", "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
-        "Becoming.Significance", "Becoming"]
+        "Becoming.Significance", "Becoming.Interdependence", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -715,6 +715,27 @@ SCOPE = (
     "dweller from every standpoint, the levels without it admitting every formation at every "
     "step; where nothing has significance every level path retains every other, none adds, and "
     "G0 fails at any living event. The axiom is a hypothesis; no ethical premise is proved. "
+    "Interdependence: a formation's continuation is fed by another at a step when the other "
+    "gives to a condition it then requires; a region closed under feeding holds every feeder of "
+    "its members, and a formation's feeding closure, what lies in every closed region holding "
+    "it, holds it and its feeders, is transitive and is itself closed, and nothing beyond it "
+    "gives at any step to a condition a member then requires; under balance, with only active "
+    "formations giving and activity needing support, a formation taking from a condition at "
+    "every step at which it is active, while nothing supported gives to the condition, is "
+    "active for at most as many consecutive steps as the condition's level at the start, and so "
+    "does not continue, which holds where everything feeding it is unsupported; of two "
+    "formations feeding each other's condition, one taking from both renews over the condition "
+    "it requires and keeps its own support across the step while undermining the other, which "
+    "is unsupported from the next step on, after which the first is active for at most one "
+    "step more, while taking only their own both continue; in the clearer's web the region "
+    "along dependence is each formation's feeding closure, the dweller lies beyond the "
+    "clearer's, and everything within it is supported at every step while the dweller ends; "
+    "significance bounded by the whole is the axiom, and significance bounded by a region "
+    "retains as inclusion does, and so under the axiom as the axiom does, wherever every "
+    "formation the other path admits lies in the region or is admitted by the first, so on "
+    "every comparison where a formation's feeding closure is the whole, while in the clearer's "
+    "web the clearer's part retains within its closure and under the axiom loses the dweller. "
+    "No ethical premise is used; the axiom is a hypothesis of the comparisons only. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "

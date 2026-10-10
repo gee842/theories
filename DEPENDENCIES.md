@@ -522,6 +522,90 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## closure-verdict-meets-axiom ← one-axiom-yields-g0
+
+`formal-reuse` — 复用公理 Unrestricted 与以区域为界的意义 bounded。 / Reuses the axiom Unrestricted and significance bounded by regions, bounded.
+
+**Producer output / 上游输出:** 公理与以区域为界的意义。 / The axiom and significance bounded by regions.
+
+**Consumer input / 下游输入:** 以整体为界的意义就是公理；两个判断一致之处。 / Significance bounded by the whole is the axiom; where the two verdicts agree.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## closure-verdict-meets-axiom ← significance-retained-within-margin
+
+`formal-reuse` — 复用保留与增加（Web.Retains、Web.Adds）、Web.Includes.retains 与 Web.retains_iff_includes。 / Reuses retaining and adding (Web.Retains, Web.Adds), Web.Includes.retains and Web.retains_iff_includes.
+
+**Producer output / 上游输出:** 公理之下保留就是包含。 / Under the axiom retaining is inclusion.
+
+**Consumer input / 下游输入:** 以区域为界的判断在覆盖条件下也是包含。 / The verdict bounded by a region is inclusion too, under covering.
+
+**Retained conditions / 保留条件:** 公理。 / The axiom.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## closure-verdict-meets-axiom ← whole-first-and-bounded-centers
+
+`formal-reuse` — 复用 Web.retains_bounded_iff 与 Clearing.free_rider_loses；那里公理的判断总决定每个区域内的判断（Web.Retains.within），这里给出反过来也成立之处。 / Reuses Web.retains_bounded_iff and Clearing.free_rider_loses; there the axiom's verdict always decides the verdict within every region (Web.Retains.within), here where the converse holds is given.
+
+**Producer output / 上游输出:** 以区域为界的保留；搭便车者的部分在公理之下失去栖居者。 / Retaining bounded by regions; under the axiom the free rider's part loses the dweller.
+
+**Consumer input / 下游输入:** 闭包内的判断与公理的判断一致或分开之处。 / Where the verdict within the closure agrees with the axiom's or parts from it.
+
+**Retained conditions / 保留条件:** 公理；扣留后的水平。 / The axiom; the withheld levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## closure-verdict-meets-axiom ← feeding-closure
+
+`formal-reuse` — 复用供给闭包（Flow.WithinFeeding）与 Clearing.fedClosed。 / Reuses the feeding closure (Flow.WithinFeeding) and Clearing.fedClosed.
+
+**Producer output / 上游输出:** 供给闭包；清除者的闭包不含栖居者。 / The feeding closure; the clearer's closure omits the dweller.
+
+**Consumer input / 下游输入:** 以供给闭包为界的意义。 / Significance bounded by the feeding closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean)
+
+## closure-verdict-meets-axiom ← consumption-ends-with-feeders
+
+`formal-reuse` — 复用 Overshoot 的整体（Overshoot.closure_whole）。 / Reuses Overshoot's whole (Overshoot.closure_whole).
+
+**Producer output / 上游输出:** 任一个的供给闭包都是整体。 / The feeding closure of either is the whole.
+
+**Consumer input / 下游输入:** Overshoot 中闭包内的判断就是公理的判断。 / In Overshoot the verdict within the closure is the axiom's.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean)
+
+## closure-verdict-meets-axiom ← loss-beyond-a-region
+
+`formal-reuse` — 复用 Clearing.loses_beyond、Web.LosesBeyond.narrow 与 Clearing.alongDependence。 / Reuses Clearing.loses_beyond, Web.LosesBeyond.narrow and Clearing.alongDependence.
+
+**Producer output / 上游输出:** 清除者在其依存之内不关闭任何东西。 / The clearer closes nothing within its dependence.
+
+**Consumer input / 下游输入:** 从清除者的立场，闭包内的判断保留。 / From the clearer's standpoint the verdict within its closure retains.
+
+**Retained conditions / 保留条件:** 扣留后的水平。 / The withheld levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## closure-verdict-meets-axiom ← four-cases-of-a-part
+
+`formal-reuse` — 复用 Clearing.clearerPart、Clearing.admitted_without 与 Clearing.unsupported_with。 / Reuses Clearing.clearerPart, Clearing.admitted_without and Clearing.unsupported_with.
+
+**Producer output / 上游输出:** 无清除者的部分时栖居者被接纳，有它时从第 2 步起不被支持。 / Without the clearer's part the dweller is admitted, with it unsupported from step 2 on.
+
+**Consumer input / 下游输入:** 从栖居者的立场，无它的水平增加栖居者。 / From the dweller's standpoint the levels without it add the dweller.
+
+**Retained conditions / 保留条件:** 扣留后的水平。 / The withheld levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
 ## code-plan-global-support ← joint-code-plan-lifting
 
 `formal-reuse` — 代码实现先提升为同一原生共同方案。 / Code realization first lifts to the same native joint plan.
@@ -641,6 +725,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 语法、绑定解释及认可条件不变；实际角色和推理根据的哲学说明保持独立义务。 / Syntax, binding interpretation and assessment remain unchanged; the philosophical account of actual roles and warrant remains a separate obligation.
 
 [Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)
+
+## consumption-ends-with-feeders ← own-count-misses-joint-excess
+
+`formal-reuse` — 复用 Flow.excess_bounded：连续 n 步联合取用多于给予时，条件的水平至少下降 n。 / Reuses Flow.excess_bounded: over n consecutive steps of joint excess, the level of the condition falls by at least n.
+
+**Producer output / 上游输出:** 联合超出不能持续。 / Joint excess cannot last.
+
+**Consumer input / 下游输入:** 没有被支持者给予时，取用者的每个活跃步都是联合超出的一步。 / Where nothing supported gives, every active step of the taker is a step of joint excess.
+
+**Retained conditions / 保留条件:** 平衡。 / Balance.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## consumption-ends-with-feeders ← feeding-closure
+
+`formal-reuse` — 复用供给闭包：Overshoot 中任一个的闭包都是整体，终结经闭包之内的供给者返回。 / Reuses the feeding closure: in Overshoot the closure of either is the whole, and the ending returns through a feeder within it.
+
+**Producer output / 上游输出:** 供给闭包。 / The feeding closure.
+
+**Consumer input / 下游输入:** 相互依存的整体。 / An interdependent whole.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean)
+
+## consumption-ends-with-feeders ← represented-boundary-against-dependence
+
+`application` — 那里在区域上更新（Web.RenewingOver）、区域覆盖所需时保住自身支持，比较只在一步上；Overshoot 在多步上比较：在所需条件上更新、保住自身支持的形成，仍经其供给者终结。 / There renewing over a region (Web.RenewingOver) keeps one's own support where the region covers what is required, compared at one step; Overshoot compares over several steps: a formation renewing over the condition it requires and keeping its own support still ends through its feeder.
+
+**Producer output / 上游输出:** 在区域上更新与保住自身支持。 / Renewing over a region and keeping one's own support.
+
+**Consumer input / 下游输入:** 只在所需条件上表示的边界不足以保住延续。 / A boundary represented over required conditions alone does not secure continuation.
+
+**Retained conditions / 保留条件:** 平衡、只有活跃者给予与取用、活动需要支持。 / Balance, only active formations giving and taking, activity needing support.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## consumption-ends-with-feeders ← derived-extent-limits
+
+`interpretive` — 那里 Mortal 中一个生命的取用终结共享条件的更新，后继者在它终结之后才终结；这里终结经供给者返回取用者自身。 / There, in Mortal, a life's taking ends the renewal of a shared condition and a successor ends after it has ended; here an ending returns through a feeder to the taker itself.
+
+**Producer output / 上游输出:** 想要的视界。 / The horizon of the want.
+
+**Consumer input / 下游输入:** 终结返回取用者。 / An ending returning to the taker.
+
+**Retained conditions / 保留条件:** 读法待 Ren。 / The reading pending Ren.
+
+[Connection evidence / 连接证据](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md)
 
 ## context-sensitive-updating-correspondence ← situated-recovery-empirical-correspondence
 
@@ -1001,6 +1133,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## feeding-closure ← derived-extent-limits
+
+`formal-reuse` — 复用供给关系 Flow.FedBy 与 Clearing.fedBy_source（只有清除者的延续被供给，且只被源供给）；那里各立场的意义沿供给封闭，这里给出含一个形成、对供给封闭的最小区域。 / Reuses the feeding relation Flow.FedBy and Clearing.fedBy_source (only the clearer's continuation is fed, and only by the source); there each standpoint's significance is closed along feeding, here the least region closed under feeding that holds a formation is given.
+
+**Producer output / 上游输出:** 供给关系；Clearing 中唯一的供给。 / The feeding relation; the only feeding in Clearing.
+
+**Consumer input / 下游输入:** 供给闭包与 Clearing 中各形成的闭包。 / The feeding closure and each formation's closure in Clearing.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
+
+## feeding-closure ← loss-beyond-a-region
+
+`formal-reuse` — 复用 Clearing.alongDependence；那里它与沿供给推出的范围一致是逐项对照，这里由 Clearing.fedClosed 与 Clearing.dependenceRegion_iff 证明。 / Reuses Clearing.alongDependence; there its match with the extent derived along feeding was checked by inspection, here it is proved (Clearing.fedClosed, Clearing.dependenceRegion_iff).
+
+**Producer output / 上游输出:** 清除者与供给其资源的来源这一区域。 / The region of the clearer and the source feeding its resource.
+
+**Consumer input / 下游输入:** 它恰是清除者的供给闭包。 / It is exactly the clearer's feeding closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## feeding-closure ← four-cases-of-a-part
+
+`formal-reuse` — 复用 Clearing.unsupported_with：有清除者的部分时，栖居者从第 2 步起不被支持。 / Reuses Clearing.unsupported_with: with the clearer's part, the dweller is unsupported from step 2 on.
+
+**Producer output / 上游输出:** 栖居者不被支持。 / The dweller unsupported.
+
+**Consumer input / 下游输入:** 闭包之外的终结。 / The ending beyond the closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## feeding-closure ← whole-first-and-bounded-centers
+
+`formal-reuse` — 复用 Clearing.dependenceRegion；那里以它为意义的边界是一个选择，这里表明这个区域恰是各形成的供给闭包。 / Reuses Clearing.dependenceRegion; there bounding significance by it is a choice, here the region is shown to be exactly each formation's feeding closure.
+
+**Producer output / 上游输出:** 各形成沿依存的区域。 / Each formation's region along dependence.
+
+**Consumer input / 下游输入:** 它与供给闭包的等价。 / Its equivalence with the feeding closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
 
 ## finite-basis-common-interpretation ← derivation-soundness
 

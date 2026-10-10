@@ -1063,7 +1063,7 @@ Imports: `GenerativeCore`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean`
 
-Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Openness`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`
+Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Openness`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`
 
 没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
 
@@ -2380,6 +2380,59 @@ Imports: `Becoming.Frame`, `InquirySufficiency`
 - `def` [Becoming.Scope](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean#L34) (L34)
 - `def` [Becoming.judgeProcess](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean#L76) (L76)
 - `def` [Becoming.sees](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean#L80) (L80)
+
+</details>
+
+<a id="module-9b2e13db3d20"></a>
+
+<details>
+<summary>Interdependence.lean — 34 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean`
+
+Imports: `Becoming.Significance`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.Flow.WithinFeeding.refl](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L128) | 128 |
+| [Becoming.Flow.WithinFeeding.trans](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L132) | 132 |
+| [Becoming.Flow.WithinFeeding.of_fedBy](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L137) | 137 |
+| [Becoming.Flow.fedClosed_within](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L142) | 142 |
+| [Becoming.Flow.beyond_gives_nothing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L147) | 147 |
+| [Becoming.Flow.Balances.unfed_consumption_ends](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L160) | 160 |
+| [Becoming.Flow.Balances.unfed_consumption_stops](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L181) | 181 |
+| [Becoming.Flow.unfed_of_feeders_unsupported](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L193) | 193 |
+| [Becoming.Flow.Balances.consumption_ends_with_feeders](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L205) | 205 |
+| [Becoming.bounded_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L220) | 220 |
+| [Becoming.Web.retains_bounded_iff_includes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L230) | 230 |
+| [Becoming.Web.retains_bounded_iff_retains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L241) | 241 |
+| [Becoming.Flow.within_closure_iff_retains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L256) | 256 |
+| [Becoming.Overshoot.balances](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L326) | 326 |
+| [Becoming.Overshoot.acting](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L334) | 334 |
+| [Becoming.Overshoot.taking](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L339) | 339 |
+| [Becoming.Overshoot.dependent](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L350) | 350 |
+| [Becoming.Overshoot.closure_whole](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L362) | 362 |
+| [Becoming.Overshoot.ends_through_feeder](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L376) | 376 |
+| [Becoming.Overshoot.steady_continues](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L445) | 445 |
+| [Becoming.Overshoot.within_closure_iff_retains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L464) | 464 |
+| [Becoming.Clearing.fedClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L474) | 474 |
+| [Becoming.Clearing.dependenceRegion_closed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L481) | 481 |
+| [Becoming.Clearing.dependenceRegion_self](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L489) | 489 |
+| [Becoming.Clearing.dependenceRegion_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L497) | 497 |
+| [Becoming.Clearing.dweller_beyond](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L515) | 515 |
+| [Becoming.Clearing.closure_supported](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L521) | 521 |
+| [Becoming.Clearing.within_closure_yet_loses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L535) | 535 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.Flow.FedClosed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L117) (L117)
+- `def` [Becoming.Flow.WithinFeeding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L122) (L122)
+- `def` [Becoming.Overshoot.flow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L274) (L274)
+- `def` [Becoming.Overshoot.web](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L296) (L296)
+- `def` [Becoming.Overshoot.steadyFlow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L416) (L416)
+- `def` [Becoming.Overshoot.steadyWeb](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean#L431) (L431)
 
 </details>
 

@@ -28,6 +28,7 @@ import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
 import Becoming.Significance
+import Becoming.Interdependence
 
 /-!
 # The Theory of Becoming: the formal core
@@ -312,6 +313,17 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dependence license the free rider and disagree. Where nothing has significance nothing
   is ordered, so the axiom is needed. The reading is the AI's, pending Ren; G0 remains the
   adopted axiom until Ren accepts this axiom in its place.
+* `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
+  formation's continuation depends on is its feeding closure, the least region holding it
+  that is closed under feeding, and nothing beyond the closure gives to what it requires.
+  Under balance, with only active formations giving and activity needing support,
+  consumption whose feeders are all unsupported lasts at most as many steps as the level of
+  what it consumes. So a loss within the closure can return through a feeder, even to a
+  formation that kept its own support across the step, while a loss beyond it need not
+  return. Significance bounded by the whole is the axiom. The verdict of significance
+  bounded by a region is the axiom's wherever the losses lie within the region, and so on
+  every comparison where a formation's feeding closure is the whole, while in the clearer's
+  web the two part. The reading is the AI's, pending Ren.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

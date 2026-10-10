@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "id": "feeding-closure",
+  "title": {
+    "zh": "供给闭包：一个延续所依存的，是含它、对供给封闭的最小区域；它不用前提即推出，闭包之外的在任何一步都不向闭包所需的条件给予；清除者的网中沿依存的区域恰是各形成的供给闭包",
+    "en": "The feeding closure: what a continuation depends on is the least region holding it that is closed under feeding; it is reached with no premise, and nothing beyond it gives, at any step, to a condition its members require; in the clearer's web the region along dependence is exactly each formation's feeding closure"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T13:58:00+00:00",
+  "claim": {
+    "zh": "一个形成的延续在某步被另一个供给（Flow.FedBy），是指在同一步上后者在场并向前者当时所需的条件给予。形成的区域对供给封闭（Flow.FedClosed），是指供给一个成员之延续者都是成员。g 在 f 的供给闭包之内（Flow.WithinFeeding），是指含 f、对供给封闭的每个区域都含 g。闭包含 f（Flow.WithinFeeding.refl），可传递（Flow.WithinFeeding.trans），含 f 在任何一步的每个供给者（Flow.WithinFeeding.of_fedBy），本身对供给封闭（Flow.fedClosed_within），所以是含 f、对供给封闭的最小区域。闭包之外的形成，在任何一步都不向闭包成员当时所需的条件给予（Flow.beyond_gives_nothing）。在 Clearing 中，沿依存的区域（Clearing.dependenceRegion：清除者与供给其资源的来源；来源与栖居者没有被供给，各自只含自身）对供给封闭、含其形成（Clearing.fedClosed、Clearing.dependenceRegion_closed、Clearing.dependenceRegion_self），恰是各形成的供给闭包（Clearing.dependenceRegion_iff）。栖居者在清除者的闭包之外（Clearing.dweller_beyond）；闭包之内的每步都被支持，清除者每步活跃，而栖居者从第 2 步起不被支持（Clearing.closure_supported）。不用前提，也不用 Lean 公理。",
+    "en": "The continuation of a formation is fed by another at a step (Flow.FedBy) when, at that step, the other takes part and gives to a condition the first then requires. A region of formations is closed under feeding (Flow.FedClosed) when whatever feeds a member's continuation is a member. g lies within f's feeding closure (Flow.WithinFeeding) when every region closed under feeding that holds f holds g. The closure holds f (Flow.WithinFeeding.refl), is transitive (Flow.WithinFeeding.trans), holds every feeder of f at any step (Flow.WithinFeeding.of_fedBy) and is itself closed under feeding (Flow.fedClosed_within), so it is the least region closed under feeding that holds f. A formation beyond the closure gives nothing, at any step, to a condition a member then requires (Flow.beyond_gives_nothing). In Clearing the region along dependence (Clearing.dependenceRegion: the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding and holds its formation (Clearing.fedClosed, Clearing.dependenceRegion_closed, Clearing.dependenceRegion_self), and is exactly each formation's feeding closure (Clearing.dependenceRegion_iff). The dweller lies beyond the clearer's closure (Clearing.dweller_beyond); everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on (Clearing.closure_supported). No premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "供给读作同一步上向所需条件的给予（Flow.FedBy）；经条件的延迟输送不算供给。",
+      "en": "Feeding is read as giving, at a common step, to a condition required (Flow.FedBy); delayed conveyance through conditions does not count."
+    },
+    {
+      "zh": "闭包是形成层面的：在任何一步供给即在闭包之内，链上各环可以在不同的步，也不按时间先后。",
+      "en": "The closure is at the level of formations: feeding at any step puts a formation within it, and the links of a chain may lie at different steps, in any temporal order."
+    },
+    {
+      "zh": "Clearing 的结论：见证的流、网与依存（Clearing.flow、Clearing.web、Clearing.dependent）。",
+      "en": "For the Clearing results: the witness's flow, web and dependence (Clearing.flow, Clearing.web, Clearing.dependent)."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”，也读 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。",
+    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”, and Ren's “the system that one is in” as the system reached from a center along dependence. The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+  "aliases": [
+    "Becoming.Flow.FedClosed",
+    "Becoming.Flow.WithinFeeding",
+    "Becoming.Flow.WithinFeeding.refl",
+    "Becoming.Flow.WithinFeeding.trans",
+    "Becoming.Flow.WithinFeeding.of_fedBy",
+    "Becoming.Flow.fedClosed_within",
+    "Becoming.Flow.beyond_gives_nothing",
+    "Becoming.Clearing.fedClosed",
+    "Becoming.Clearing.dependenceRegion_closed",
+    "Becoming.Clearing.dependenceRegion_self",
+    "Becoming.Clearing.dependenceRegion_iff",
+    "Becoming.Clearing.dweller_beyond",
+    "Becoming.Clearing.closure_supported"
+  ],
+  "dependencies": [
+    {
+      "id": "derived-extent-limits",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用供给关系 Flow.FedBy 与 Clearing.fedBy_source（只有清除者的延续被供给，且只被源供给）；那里各立场的意义沿供给封闭，这里给出含一个形成、对供给封闭的最小区域。",
+        "en": "Reuses the feeding relation Flow.FedBy and Clearing.fedBy_source (only the clearer's continuation is fed, and only by the source); there each standpoint's significance is closed along feeding, here the least region closed under feeding that holds a formation is given."
+      },
+      "interface": {
+        "output": {
+          "zh": "供给关系；Clearing 中唯一的供给。",
+          "en": "The feeding relation; the only feeding in Clearing."
+        },
+        "input": {
+          "zh": "供给闭包与 Clearing 中各形成的闭包。",
+          "en": "The feeding closure and each formation's closure in Clearing."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean"
+      }
+    },
+    {
+      "id": "loss-beyond-a-region",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.alongDependence；那里它与沿供给推出的范围一致是逐项对照，这里由 Clearing.fedClosed 与 Clearing.dependenceRegion_iff 证明。",
+        "en": "Reuses Clearing.alongDependence; there its match with the extent derived along feeding was checked by inspection, here it is proved (Clearing.fedClosed, Clearing.dependenceRegion_iff)."
+      },
+      "interface": {
+        "output": {
+          "zh": "清除者与供给其资源的来源这一区域。",
+          "en": "The region of the clearer and the source feeding its resource."
+        },
+        "input": {
+          "zh": "它恰是清除者的供给闭包。",
+          "en": "It is exactly the clearer's feeding closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.unsupported_with：有清除者的部分时，栖居者从第 2 步起不被支持。",
+        "en": "Reuses Clearing.unsupported_with: with the clearer's part, the dweller is unsupported from step 2 on."
+      },
+      "interface": {
+        "output": {
+          "zh": "栖居者不被支持。",
+          "en": "The dweller unsupported."
+        },
+        "input": {
+          "zh": "闭包之外的终结。",
+          "en": "The ending beyond the closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "whole-first-and-bounded-centers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.dependenceRegion；那里以它为意义的边界是一个选择，这里表明这个区域恰是各形成的供给闭包。",
+        "en": "Reuses Clearing.dependenceRegion; there bounding significance by it is a choice, here the region is shown to be exactly each formation's feeding closure."
+      },
+      "interface": {
+        "output": {
+          "zh": "各形成沿依存的区域。",
+          "en": "Each formation's region along dependence."
+        },
+        "input": {
+          "zh": "它与供给闭包的等价。",
+          "en": "Its equivalence with the feeding closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "represented-boundary-against-dependence",
+      "detail": {
+        "zh": "那里所表示的边界在一步上与依存比较；供给闭包给出多步的依存范围，在 consumption-ends-with-feeders 的 Overshoot 中与所表示的边界比较。",
+        "en": "There represented boundaries are compared with dependence at one step; the feeding closure gives dependence over several steps, compared with a represented boundary in Overshoot (consumption-ends-with-feeders)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "detail": {
+        "zh": "供给闭包不是沿每个已形成关系的范围：Clearing 中栖居者与清除者经栖息地相关（Clearing.center_not_derived），却在清除者的供给闭包之外（Clearing.dweller_beyond）。",
+        "en": "The feeding closure is not the extent along every formed relation: in Clearing the dweller is related to the clearer through the habitat (Clearing.center_not_derived), yet lies beyond the clearer's feeding closure (Clearing.dweller_beyond)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "供给只计同一步的给予，经条件的延迟输送不计入，所以闭包可能漏掉这样的依存；闭包是形成层面的，计入任何一步的供给者，不按时间先后，所以含已停止供给者，不是当下的依存；不模型中心怎样形成或表示其闭包；不含伦理谓词，不说中心应当做什么；读法（“what it actually depends on”“the system that one is in”）与名称是 AI 的，待 Ren。",
+    "en": "Feeding counts giving at a common step only, and delayed conveyance through conditions is not counted, so the closure may miss such dependence; the closure is at the level of formations, counting feeders at any step and in any temporal order, so it holds formations that have stopped feeding and is not present dependence; nothing models how a center forms or represents its closure; contains no ethical predicate and says nothing of what a center should do; the readings (“what it actually depends on”, “the system that one is in”) and the names are the AI's, pending Ren."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T133601.876717Z）：Becoming.Interdependence 的 28 项定理全部空依赖；同一回执覆盖包内 33 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T133831.669969Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 35 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T133601.876717Z): the 28 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 33 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T133831.669969Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 35 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "role": "proof",
+      "sha256": "de4b1af47184d253e25eeefd9f41f52aed0f41c6ec92b15c488bfa2d0a989f0d",
+      "declarations": [
+        "Becoming.Flow.FedClosed",
+        "Becoming.Flow.WithinFeeding",
+        "Becoming.Flow.WithinFeeding.refl",
+        "Becoming.Flow.WithinFeeding.trans",
+        "Becoming.Flow.WithinFeeding.of_fedBy",
+        "Becoming.Flow.fedClosed_within",
+        "Becoming.Flow.beyond_gives_nothing",
+        "Becoming.Clearing.fedClosed",
+        "Becoming.Clearing.dependenceRegion_closed",
+        "Becoming.Clearing.dependenceRegion_self",
+        "Becoming.Clearing.dependenceRegion_iff",
+        "Becoming.Clearing.dweller_beyond",
+        "Becoming.Clearing.closure_supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "role": "proof",
+      "sha256": "1f322933aff6e2a855bd7e7209dabad5c6d3079152fd79a438593195eae8de4c",
+      "declarations": [
+        "Becoming.Flow.FedBy",
+        "Becoming.Clearing.fedBy_source",
+        "Becoming.Clearing.center_not_derived"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "01438c718a4e4dcc55d60a35d3d1e4703d7e04a55c7b6a378a6f9052274aa695",
+      "declarations": [
+        "Becoming.Clearing.alongDependence",
+        "Becoming.Clearing.unsupported_with"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "declarations": [
+        "Becoming.Clearing.dependenceRegion"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "59de94b5499bc3085ec121eea1b6b7e9e02c9b54b06c5ff68dbf8548d115dc74",
+      "declarations": [
+        "Becoming.Clearing.Formation",
+        "Becoming.Clearing.Place",
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web",
+        "Becoming.Clearing.dependent"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "declarations": [
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "53c27beeb7b648c0538cb73df7f4347c2f7a6d881fd381bbf911e2edc439aca9"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "50e87e1775efda1d67d607f7aa2f7cc4d95dffdb21659890960d395bbd42f8c5"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "ee892fe02ef5142d6e7afbc7cd6e4096c3681e09b3f6ad5bd2931f02ad2101b1"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interdependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Standpoints",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "经条件的延迟输送是否算供给；按步、按时间先后的依存范围；中心怎样形成并表示其闭包的模型；Ren 的判断：供给闭包是否读出“what it actually depends on”与“the system that one is in”。",
+    "en": "Whether delayed conveyance through conditions counts as feeding; dependence step by step and in temporal order; a model of how a center forms and represents its closure; Ren's judgment whether the feeding closure reads “what it actually depends on” and “the system that one is in”."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P40：新增，按 Ren“let's aim for a first, then try to archive b”；统一计划 P40（路线 (b)：不用公理能走多远）；见整合文档 §56。",
+      "en": "2026-10-10 P40: added, following Ren's ‘let's aim for a first, then try to archive b’; unification plan P40 (route (b): how far the route without axiom reaches); see §56 of the integration note."
+    }
+  ]
+}

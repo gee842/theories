@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 167 | 3,414 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 168 | 3,442 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -338,6 +338,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [InspectionPreparation.lean](lean-declarations/shared.md#module-42569f077f11) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [InspectionWitness.lean](lean-declarations/shared.md#module-3ca0f0fbccd6) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [IntegratedPortContinuation.lean](lean-declarations/inquiry.md#module-9e3c69c03ebf) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [Interdependence.lean](lean-declarations/core.md#module-9b2e13db3d20) | 生成核心与关系结构 / Generative core and relational structure |
 | [Joint.lean](lean-declarations/core.md#module-ccc97cebe0aa) | 生成核心与关系结构 / Generative core and relational structure |
 | [JointContinuation.lean](lean-declarations/learning.md#module-9bafeaa2c9e5) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [JointContinuationClassification.lean](lean-declarations/ethics.md#module-2c0028cc241e) | 规范根据与生成方向 / Normative grounding and generative direction |
