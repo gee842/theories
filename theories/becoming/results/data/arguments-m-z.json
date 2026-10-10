@@ -1538,7 +1538,7 @@
     "next_zh": "首要开放问题是整体的演绎必然性：从确定的整体描述推到其分化是同一展开中内在相关的环节；另有普遍实践根据。living 的整段、逐步（活跃且不侵蚀，工作候选）、周期与关系层读法都已在核心上定义并比较，经四次独立审查，选择哪一种或哪种组合作为生生的读法，以及 G0 与 C 是否共用一种读法，由 Ren 决定；条件的对应纪律已给出一条（交互），其时间次序、对效果的敏感与对整段读法的陈述、不依赖运行的读法、带数量与更新率的依存网与继续生成的成分仍开放。开放项按四类列出：属于 Ren 的选择、哲学根据、经验对应与进一步的证明；表示的范围列为哲学根据。第二部分（P39）留给 Ren 的选择：Unrestricted 是否读出那条公理、“不损”读作保留还是逐步读法的不侵蚀、形成个体化的层次、是否以那条公理替代 G0。路线 (b)（P40）留给 Ren 的选择：供给闭包是否读出“what it actually depends on”与“the system that one is in”；路线 (b) 到达自身与所在的系统，是否足够，还是采用第二部分的公理；整体对自身的实现怎样读。",
     "next_en": "The first open question is the deductive necessity of the whole: passing from a determinate whole account to the claim that its differentiations are internally related moments of one unfolding; also open is the universal practical warrant. The whole-run, stepwise (active and not undermining, the working candidate), cycle and relation-level readings of living are defined and compared on the core and reviewed independently four times; which reading, or combination, is the reading of 生生, and whether G0 and C share one reading, is Ren's to decide. One correspondence discipline for conditions (interaction) is stated; its time order, its sensitivity to effect and its statement for the whole-run reading, a run-independent reading, a web of dependence with amounts and renewal rates, and a component of further generation remain open. Open items are sorted into four classes: Ren's choices, philosophical warrant, empirical correspondence and further proofs; the scope of representation is listed as philosophical warrant. Part II (P39) leaves Ren's choices: whether Unrestricted reads the axiom, whether not harm reads as retaining or as the stepwise reading's not undermining, the level of individuation, and whether the axiom replaces G0. Route (b) (P40) leaves Ren's choices: whether the feeding closure reads “what it actually depends on” and “the system that one is in”; whether route (b), reaching the self and the system one is in, suffices or the axiom of Part II is adopted; how the whole realizing itself is read.",
     "source": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
-    "source_sha256": "ee892fe02ef5142d6e7afbc7cd6e4096c3681e09b3f6ad5bd2931f02ad2101b1",
+    "source_sha256": "e09b08db705716547e60b14c6b6e480a912aea8cc39897a8d3710738db444901",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
@@ -1562,6 +1562,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",

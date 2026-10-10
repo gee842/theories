@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T13:31:00+00:00",
+  "reviewed_at_utc": "2026-10-10T15:02:56+00:00",
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出（Listed）且可判定时，跨每一步保持一些成员：它们连同跨步不再成立的成员是步前的列表，连同跨步开始成立的成员是步后的列表（Listed.keeps；普查的平衡 Listed.across 由此推出）。称每步的数目 n、跨步不再成立的数目 c 与开始成立的数目 a 为计数表（Tally），若每步有某数 k 使 n t = k + c t 且 n (t+1) = k + a t；每个列出的计数都是计数表（Listed.tally）。计数表严格强于普查的平衡 n (t+1) + c t = n t + a t（Balance，Listed.across 的等式）：计数表恰是平衡加上跨一步不再成立的不多于步前所列的（Tally.balance、Tally.ceasing_le、tally_iff）；每步零个在列、一个不再成立、一个开始成立满足平衡而不是计数表（balance_not_tally）。反过来，每个计数表都由一个队列实现：自然数作为成员，第 t 步在队中的是从此前离开的总数起的 n t 个，从队尾加入、从队首离开，各依其次（Queue.holds、Queue.line）；它被不重复地列出（Queue.listed），每步列出 n t 个，跨步离开 c t 个、加入 a t 个（Queue.counts）。所以列出所能有的计数恰是计数表（Tally.congr、tally_iff_counted），对计数的一个性质（只要求尊重每步的值，Pointwise），在每个类型上每个列出的计数都满足它，恰当每个计数表都满足它（counting_laws）：计数没有计数表之外的规律。读于世界的活动：成员排队而什么都不流动的世界满足除体现外的全部前提（活动需要支持、平衡、只有活跃者给予、只有活跃者取用其所汲取的、耗散、普查、有界传递；World.queue_premised），成员排队且恰在活跃时立着的世界满足除平衡外的全部前提（World.embodiedQueue_premised）；所以对计数的一个性质在每个世界的每个普查中成立，恰当它对每个计数表成立，也恰当它在满足除体现外全部前提的每个世界中成立，也恰当它在满足除平衡外全部前提的每个世界中成立（World.counting_free）：缺平衡或缺体现的前提不约束计数。两者连同只有活跃者给予一起约束：在平衡、只有活跃者给予且生起者体现的世界中，生起者由一个在该步活跃的关系项给予（Web.Embodied.arises_given），所以普查之下，没有关系项活跃的一步上没有生起；而一个关系项从无到有地生起（Queue.lone_tally）是计数表，由两个队列世界实现，所以这不是计数的规律（World.counting_binds_jointly）。八个前提所加的只有这一条：开放的队列，队首给予每个加入者一个单位、从每个离开者取用一个单位，活跃时与每个地关系项各交换一个单位（World.openQueue），在没有成员加入空队的每个计数表之下满足全部八个前提（World.openQueue_premised；队首活跃的步上没有有限家族封闭，队空的步上什么都不交换，所以耗散从不起约束，活动需要支持与有界传递也不起约束，World.openQueue_not_binds）；所以对计数的一个性质在满足全部八个前提的每个世界的普查中成立，恰当它对每个没有关系项活跃的一步上没有生起的计数表成立（World.premised_counting）；这一刻画的范围包括前提空成立的世界：在每个前提都起约束的世界中，每个普查都计到某个生起（World.binds_arising），而这在八个前提之下不是计数的规律（World.binds_adds）。约束计数还有第二条路线，不要求给予者活跃：在平衡、只有活跃者取用其所汲取的、耗散且关系项都体现的世界中，普查之下没有关系项活跃的一步上没有生起，不论谁给予（World.taking_binds_counting）：那一步上什么都不被取用，被给予的立起而在步后活跃，所以步后活跃者是一个封闭的家族，耗散不许不取用而给予它。把八个前提命名（World.Premise、Premise.Holds），一个选择是到 Bool 的函数，世界满足它所选的每个前提（World.Meets）；称一个选择约束计数（World.BindsCounting），若它选中平衡与体现，并选中只有活跃者给予，或同时选中只有活跃者取用与耗散。由一个从不活跃的地关系项驱动的队列（OpenQueue.driven、World.drivenQueue）不论计数都满足除只有活跃者给予与只有活跃者取用外的全部前提（World.drivenQueue_holds），开放的队列不论计数都满足除只有活跃者给予与耗散外的全部前提（World.openQueue_holds）；连同两个队列世界，它们满足每个不约束计数的选择（World.queue_meets、World.embodiedQueue_meets、World.openQueue_meets、World.drivenQueue_meets），满足全部八个前提的世界满足每个选择（World.Premised.meets）。所以在八个前提的 256 个选择的每一个之下，对计数的一个逐点的性质在满足这个选择的每个世界的每个普查中成立，恰当它对每个计数表成立，且在选择约束计数时对每个没有关系项活跃的一步上没有生起的计数表成立（World.counting_under）；“没有关系项活跃的一步上没有生起”在一个选择之下是计数的规律，恰当这个选择约束计数（World.counting_binds_iff）。每个前提都起约束时（World.Binds），每个普查都计到某个生起（World.binds_arising），而起约束所加的只有这一条：起约束的队列（BindingQueue、World.bindingQueue）在除第 T 步外队列不空的每一步上，队首与每个关系项各交换一个单位，所以没有有限的家族封闭这些步；在第 T 步上队首多立着 E，只在队中交换并失去它，所以所立者下降，跨度封闭这一步而耗散起约束（World.bindingQueue_exceeds）；每个关系项以其所立的水平依存于每个关系项，所以活动需要支持与有界传递在有成员加入处起约束。没有成员加入空队、E 多于第 T 步加入的数目时，它满足全部八个前提（World.bindingQueue_premised），第 T 步有成员加入时每个前提都起约束（World.bindingQueue_binds）。所以在每个前提都起约束的世界中，八个前提之下对计数的一个逐点的性质在每个普查中成立，恰当它对每个有某个生起、且没有关系项活跃的一步上没有生起的计数表成立（World.binding_counting）。被围住时计数还受一个变化界约束；有限世界中每个选择之下计数还有界，耗散连同平衡与体现就约束计数（counting-under-enclosure）。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided, across each step some members are kept: with the members ceasing to be across it they are the list before the step, and with the members coming to be the list after it (Listed.keeps; the census balance Listed.across follows from it). Call counts n at each step, c ceasing and a coming across it a tally (Tally) when at each step some number k has n t = k + c t and n (t + 1) = k + a t; the counts of every listing are a tally (Listed.tally). The tally is strictly stronger than the census balance n (t + 1) + c t = n t + a t (Balance, the equation of Listed.across): it is exactly the balance with no more ceasing across a step than were listed before it (Tally.balance, Tally.ceasing_le, tally_iff), and none listed with one ceasing and one coming at every step balances and is no tally (balance_not_tally). Conversely every tally is counted by a queue: with natural numbers as members, at step t the queue holds n t members from the number that have left before, members joining at the back and leaving from the front, each in turn (Queue.holds, Queue.line); it is listed, each member once (Queue.listed), with n t listed at each step, c t leaving and a t joining across it (Queue.counts). So the counts some listing has are exactly the tallies (Tally.congr, tally_iff_counted), and a property of the counts, asked only to respect their values at each step (Pointwise), holds of the counts of every listing on every type exactly when it holds of every tally (counting_laws): counting has no law beyond the tally. Read of the activity of worlds: relata queuing with nothing flowing meet every premise but embodiment (activity needing support, balance, only active relata giving, only active relata taking what they draw on, dissipation, a census, bounded transmission; World.queue_premised), and relata queuing that stand exactly while active meet every premise but balance (World.embodiedQueue_premised); so a property of the counts holds of every census of every world exactly when it holds of every tally, and exactly when it holds in every world meeting every premise but embodiment, and exactly when it holds in every world meeting every premise but balance (World.counting_free): premises lacking balance or embodiment leave counting free. With only active relata giving, the two bind it together: in a world whose flow balances, in which only active relata give and whatever arises is embodied, what arises is given by a relatum active at the step (Web.Embodied.arises_given), so under a census nothing arises across a step at which nothing is active; one relatum arising from none (Queue.lone_tally) is a tally, counted by both queue worlds, so this is no law of counting (World.counting_binds_jointly). That is all the eight premises add: an open queue, whose front gives one unit to each relatum joining, takes one from each leaving and, while active, exchanges a unit each way with every ground relatum (World.openQueue), meets all eight premises under every tally in which nothing joins an empty queue (World.openQueue_premised; no finite family is closed at a step at which the front is active, and nothing is exchanged at a step at which the queue is empty, so dissipation never binds there, nor do activity needing support and bounded transmission, World.openQueue_not_binds); so a property of the counts holds of the census of every world meeting all eight exactly when it holds of every tally in which nothing arises across a step at which nothing is active (World.premised_counting); its range includes worlds in which premises hold idly: where every premise binds, every census counts something arising (World.binds_arising), which is no law of counting under the eight (World.binds_adds). A second route binds counting without asking the giver to be active: in a world whose flow balances and dissipates, in which only active relata take and only from what they draw on and every relatum is embodied, under a census nothing arises across a step at which nothing is active, whoever gives (World.taking_binds_counting): nothing is taken at that step, whatever is given comes to stand and is active after it, so the relata active after it form a closed family, to which dissipation lets nothing be given without taking. With the eight premises named (World.Premise, Premise.Holds), a selection is a function to Bool, and a world meets it when it meets every premise selected (World.Meets); a selection binds counting (World.BindsCounting) when it selects balance and embodiment, and either only active relata giving or both only active relata taking and dissipation. Whatever its counts, a queue driven by a ground relatum never active (OpenQueue.driven, World.drivenQueue) meets every premise but only active relata giving and taking (World.drivenQueue_holds), and the open queue every premise but only active relata giving and dissipation (World.openQueue_holds); with the two queue worlds they meet every selection that does not bind counting (World.queue_meets, World.embodiedQueue_meets, World.openQueue_meets, World.drivenQueue_meets), and a world meeting all eight meets every selection (World.Premised.meets). So under each of the 256 selections of the eight premises, a pointwise property of the counts holds of every census of every world meeting the selection exactly when it holds of every tally and, where the selection binds counting, of every tally in which nothing arises across a step at which nothing is active (World.counting_under); that nothing arises across a step at which nothing is active is a law of counting under a selection exactly when the selection binds counting (World.counting_binds_iff). Where every premise binds (World.Binds), every census counts something arising (World.binds_arising), and that is all binding adds. Across every step but T at which a binding queue (BindingQueue, World.bindingQueue) is not empty, its front exchanges one unit each way with every relatum, so no finite family closes those steps; at T the front stands E more, exchanges only within the queue and loses that excess, so what stands falls, the span closes the step and dissipation binds (World.bindingQueue_exceeds); every relatum depends on every relatum at what it stands at, so activity needing support and bounded transmission bind wherever a member joins. With nothing joining an empty queue and E more than join across T it meets all eight premises (World.bindingQueue_premised), and with something joining across T every premise binds (World.bindingQueue_binds). So in worlds in which every premise binds, a pointwise property of the counts holds under the eight of every census exactly when it holds of every tally with something arising and nothing arising across a step at which nothing is active (World.binding_counting). Under enclosure change is also bounded; in finite worlds under each selection the count is bounded too, and dissipation with balance and embodiment binds counting (counting-under-enclosure). No ethical premise and no Lean axiom is used."
@@ -223,7 +223,7 @@
   ],
   "counterexamples": [
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "Queue.lone_tally 与 World.queue、World.embodiedQueue：一个关系项从无到有地生起，满足除体现外或除平衡外的全部前提，所以“没有关系项活跃的一步上没有生起”不是计数的规律，只在平衡与体现一起之下成立。",
         "en": "Queue.lone_tally with World.queue and World.embodiedQueue: one relatum arising from none, meeting every premise but embodiment or every premise but balance, so ‘nothing arises across a step at which nothing is active’ is no law of counting and holds only under balance and embodiment together."
@@ -237,21 +237,21 @@
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.openQueue_not_binds 与 World.binds_adds：premised_counting 的见证中耗散、活动需要支持与有界传递空成立；只取每个前提都起约束的世界，每个普查都计到某个生起，这在八个前提之下不是规律。",
         "en": "World.openQueue_not_binds and World.binds_adds: in the witness of premised_counting dissipation, activity needing support and bounded transmission hold idly; restricted to worlds in which every premise binds, every census counts an arising, which is no law under the eight."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.drivenQueue 与 World.openQueue_holds：选中平衡、体现与耗散，而只有活跃者给予与只有活跃者取用都不选时，由闲置的地关系项驱动的队列实现每个计数表；选中平衡、体现与只有活跃者取用，而只有活跃者给予与耗散都不选时，开放的队列实现每个计数表。所以第二条路线的取用与耗散缺一不可。",
         "en": "World.drivenQueue and World.openQueue_holds: with balance, embodiment and dissipation selected but neither only active relata giving nor only active relata taking, the queue driven by an idle ground relatum counts every tally; with balance, embodiment and only active relata taking selected but neither only active relata giving nor dissipation, the open queue counts every tally. So the second route needs both taking and dissipation."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.binding_counting：起约束的队列满足全部八个前提且每个都起约束，实现每个有某个生起、且没有关系项活跃的一步上没有生起的计数表；所以三个前提在开放的队列中空成立（World.openQueue_not_binds）并没有藏起更多的计数规律。",
         "en": "World.binding_counting: binding queues meet all eight premises with each binding and count every tally with something arising and nothing arising across a step at which nothing is active; so the three premises holding idly in the open queue (World.openQueue_not_binds) hide no further law of counting."
@@ -263,8 +263,8 @@
     "en": "Stated for discrete steps and holders finitely many at each step; needs decidability (a logical commitment) and pointwise properties (in place of function extensionality); speaks only of counts, saying neither which member enters or leaves nor anything of relations; the queue worlds have infinitely many relata, each arising once; the laws of counting in finite worlds and under enclosure are in counting-under-enclosure; read of worlds only the counting of activity is stated, the counts of standing and dependence being covered by the general counting_laws and not stated under the premises; the laws of counting under all eight premises and under each selection of them are given; the witnesses under the selections all have infinitely many relata, the laws under each selection in finite worlds being in counting-under-enclosure; the range includes worlds in which premises hold idly: in the open queue dissipation, activity needing support and bounded transmission all hold idly (World.openQueue_not_binds), and the whole law of counting where every premise binds is given, adding only that something arises (World.binding_counting), stated under all eight premises only, the laws where the premises of each selection bind not being stated; the binding queue's web is the weakest (every relatum depending on every relatum at what it stands at) and serves only as a witness; evaluates neither arising nor ceasing; the names (Tally, Queue, Pointwise, CountsObey, openQueue, drivenQueue, bindingQueue, Premise, Meets, BindsCounting and others) are the AI's choice under Ren's naming criteria of 10 October (in the zero-axiom part, formal words describing the abstract dynamics, social and financial words not the first choice), and readings remain Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T133601.876717Z）：Becoming.Population 的 112 项定理（含 Listed.keeps、Listed.tally、Queue.counts 与 counting_laws）与 Becoming.Premises 的 78 项定理（含 World.queue_premised、World.embodiedQueue_premised、World.counting_free、World.counting_binds_jointly、World.openQueue_premised、World.premised_counting、World.taking_binds_counting、World.counting_under 与 World.counting_binds_iff）与 Becoming.Openness 的 178 项定理（含 World.bindingQueue_premised、World.bindingQueue_binds 与 World.binding_counting）全部空依赖；同一回执覆盖包内 33 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T133831.669969Z 通过。作者反审见整合文档 §46、§52 与 §55，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 35 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T133601.876717Z): the 112 theorems of Becoming.Population (including Listed.keeps, Listed.tally, Queue.counts and counting_laws) and the 78 theorems of Becoming.Premises (including World.queue_premised, World.embodiedQueue_premised, World.counting_free, World.counting_binds_jointly, World.openQueue_premised, World.premised_counting, World.taking_binds_counting, World.counting_under and World.counting_binds_iff) and the 178 theorems of Becoming.Openness (including World.bindingQueue_premised, World.bindingQueue_binds and World.binding_counting) all have empty axiom reports; the same receipt covers the package's 33 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T133831.669969Z passed. The author's counterreview is in §46, §52 and §55 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 35 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T145237.259199Z）：Becoming.Population 的 112 项定理（含 Listed.keeps、Listed.tally、Queue.counts 与 counting_laws）、Becoming.Premises 的 50 项定理、Becoming.Openness 的 76 项定理与 Becoming.Counting 的 130 项定理（含 World.queue_premised、World.embodiedQueue_premised、World.counting_free、World.counting_binds_jointly、World.openQueue_premised、World.premised_counting、World.taking_binds_counting、World.counting_under、World.counting_binds_iff、World.bindingQueue_premised、World.bindingQueue_binds 与 World.binding_counting）全部空依赖；同一回执覆盖包内 34 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T145910.464504Z 通过。作者反审见整合文档 §46、§52 与 §55，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 36 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T145237.259199Z): the 112 theorems of Becoming.Population (including Listed.keeps, Listed.tally, Queue.counts and counting_laws), the 50 theorems of Becoming.Premises, the 76 theorems of Becoming.Openness and the 130 theorems of Becoming.Counting (including World.queue_premised, World.embodiedQueue_premised, World.counting_free, World.counting_binds_jointly, World.openQueue_premised, World.premised_counting, World.taking_binds_counting, World.counting_under, World.counting_binds_iff, World.bindingQueue_premised, World.bindingQueue_binds and World.binding_counting) all have empty axiom reports; the same receipt covers the package's 34 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T145910.464504Z passed. The author's counterreview is in §46, §52 and §55 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 36 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -316,7 +316,35 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "282c1ed9d3dcb9ea170d1958a28fde03e21801a2274ba5f6a814a5dc05d884f0",
+      "sha256": "b0ad43a9d31badc8332edad1525df11e2a71663b243c86809131079567346733",
+      "declarations": [
+        "Becoming.World.Counted",
+        "Becoming.World.Transmitting",
+        "Becoming.World.still_vacuous",
+        "Becoming.World.Premised",
+        "Becoming.World.Premised.of",
+        "Becoming.beyond",
+        "Becoming.beyond_not_mem",
+        "Becoming.gives_nothing",
+        "Becoming.World.Binds",
+        "Becoming.World.Premise",
+        "Becoming.World.Premise.Holds",
+        "Becoming.World.Meets",
+        "Becoming.World.Premised.meets"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "role": "proof",
+      "sha256": "98bd13dd51347a863efdcb34c3c948fe32d93d2da13795d1ffcce65eacde251d",
+      "declarations": [
+        "Becoming.World.standingCensus"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "role": "proof",
+      "sha256": "28fe505874462eefe223719f76310c193d08c5b73097f4f28c7c18c4ccf9cc40",
       "declarations": [
         "Becoming.World.CountsObey",
         "Becoming.Queue.web",
@@ -330,14 +358,6 @@
         "Becoming.World.embodiedQueue_premised",
         "Becoming.World.counting_free",
         "Becoming.World.counting_binds_jointly",
-        "Becoming.World.Counted",
-        "Becoming.World.Transmitting",
-        "Becoming.World.still_vacuous",
-        "Becoming.World.Premised",
-        "Becoming.World.Premised.of",
-        "Becoming.beyond",
-        "Becoming.beyond_not_mem",
-        "Becoming.gives_nothing",
         "Becoming.OpenQueue.Relatum",
         "Becoming.OpenQueue.web",
         "Becoming.OpenQueue.flow",
@@ -353,7 +373,6 @@
         "Becoming.World.openQueue_counts",
         "Becoming.World.openQueue_premised",
         "Becoming.World.premised_counting",
-        "Becoming.World.Binds",
         "Becoming.World.openQueue_not_binds",
         "Becoming.World.binds_arising",
         "Becoming.World.binds_adds",
@@ -362,24 +381,13 @@
         "Becoming.World.drivenQueue",
         "Becoming.World.drivenQueue_holds",
         "Becoming.World.taking_binds_counting",
-        "Becoming.World.Premise",
-        "Becoming.World.Premise.Holds",
-        "Becoming.World.Meets",
         "Becoming.World.BindsCounting",
-        "Becoming.World.Premised.meets",
         "Becoming.World.queue_meets",
         "Becoming.World.embodiedQueue_meets",
         "Becoming.World.openQueue_meets",
         "Becoming.World.drivenQueue_meets",
         "Becoming.World.counting_under",
-        "Becoming.World.counting_binds_iff"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
-      "role": "proof",
-      "sha256": "736f42dabea4d9e3e7e5293ea936e61d5da11e72799a7333417de75680303a0d",
-      "declarations": [
+        "Becoming.World.counting_binds_iff",
         "Becoming.add_sub_turn_add",
         "Becoming.EnclosedQueue.place_le",
         "Becoming.EnclosedQueue.total_place_le",
@@ -412,8 +420,7 @@
         "Becoming.EnclosedQueue.place",
         "Becoming.EnclosedQueue.span",
         "Becoming.EnclosedQueue.within_span",
-        "Becoming.EnclosedQueue.empty_stays",
-        "Becoming.World.standingCensus"
+        "Becoming.EnclosedQueue.empty_stays"
       ]
     },
     {
@@ -502,22 +509,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "53c27beeb7b648c0538cb73df7f4347c2f7a6d881fd381bbf911e2edc439aca9"
+      "sha256": "8008cddeb4d0decd3acb9abdc0bb7c26b4b1df00f276742763023a7511440947"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "50e87e1775efda1d67d607f7aa2f7cc4d95dffdb21659890960d395bbd42f8c5"
+      "sha256": "f3b7ad9e6393f9a9c2cff8680c4312bbf65aa446cc90c2628c228c392241d23a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "627b818fa27212635fca7f140ab85b49e4564f56ac943412ccaa8ff016cb2fc2"
+      "sha256": "d22222ba835c44e9805d29418a42b16ba6da7df508633583b78f6a0b8168a409"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ee892fe02ef5142d6e7afbc7cd6e4096c3681e09b3f6ad5bd2931f02ad2101b1"
+      "sha256": "e09b08db705716547e60b14c6b6e480a912aea8cc39897a8d3710738db444901"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -547,6 +554,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Premises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Openness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -653,6 +674,10 @@
     {
       "zh": "2026-10-10 P40：验证范围重新指向合并检查器回执 20261010T133601.876717Z 与外围回执 20261010T133831.669969Z（核心新增 Becoming.Interdependence，包内模块由 32 个增至 33 个，核心闭包由 34 个增至 35 个，共 1540 项定理／2426 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第一部分 §2 的“供给与返回”与第二部分 §6.9）。断言不变。",
       "en": "2026-10-10 P40: validation scope re-pointed to consolidated receipt 20261010T133601.876717Z and periphery receipt 20261010T133831.669969Z (the core adds Becoming.Interdependence, the package growing from 32 to 33 modules and the core closure from 34 to 35, with 1540 theorems/2426 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part I's feeding and return in section 2 and Part II's section 6.9). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41：模块重组，名称、陈述与证明不变：前提给计数的规律加了什么的部分从 Becoming.Premises 与 Becoming.Openness 移入新模块 Becoming.Counting，这里引用的 75 项声明随之移入 Counting 的证明引用，相应反例的路径随之改正。作者说明见整合文档 §57。验证范围重新指向回执 20261010T145237.259199Z 与外围回执 20261010T145910.464504Z。",
+      "en": "2026-10-10 P41: module restructure, names, statements and proofs unchanged: what the premises add to the laws of counting moves from Becoming.Premises and Becoming.Openness into the new module Becoming.Counting; the 75 declarations cited here move with it to a Counting proof reference, and the counterexamples citing them are re-pathed. The author's note is in §57 of the integration note. Validation scope re-pointed to receipt 20261010T145237.259199Z and periphery receipt 20261010T145910.464504Z."
     }
   ]
 }

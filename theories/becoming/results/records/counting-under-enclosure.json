@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T11:30:08+00:00",
+  "reviewed_at_utc": "2026-10-10T15:02:56+00:00",
   "claim": {
     "zh": "称计数从第 T 步起在变化界 B 之内（ChangeBound T B n c a），若对 T 之后的每一步 t，n t 连同自 T 至 t 之前 c 或 a 为正的步数（occurrences）不多于 B。变化界之内变化不复现（ChangeBound.not_recurring）；从第 T 步起的变化界是从第 0 步起的变化界，大出 T 与 T 之前的计数（ChangeBound.from_zero、changeBound_iff_zero）。被围住为变化定下界：在有活动的普查、关系项都体现、流平衡且耗散的世界中，从第 T 步起每步被围住（Flow.Enclosed）时，普查的计数从 T 起在第 T 步所立者的总水平之内（World.enclosure_bounds_change）：被围住的步上所立者的总水平不升，有生起或止息的步上至少降一（Flow.standing_never_rises、Flow.change_lowers），活跃的体现关系项都立着（World.length_le_stock）。反过来，被围住的队列（EnclosedQueue、World.enclosedQueue）以自然数为成员，成员恰在队中时活跃并立着一，队首另立着变化界余下的超出成员数的部分；队首参与每一步，从每个成员取用其水平所降的，给予其水平所升的。它的每一步都被其跨度围住（World.enclosedQueue_enclosed），在从第 0 步起在变化界之内、没有成员加入空队的每个计数表之下满足全部八个前提（World.enclosedQueue_premised：平衡由构造，每个有变化的步上所立者降一，所以耗散成立）。所以对计数的一个逐点的性质，在满足全部八个前提、从某步起每步被围住的每个世界的普查中成立，恰当它对每个没有关系项活跃的一步上没有生起、从第 0 步起在某个变化界之内的计数表成立（World.enclosed_counting）。这样的队列从不超过第 B + B·B 个成员（Queue.reached、ChangeBound.joins、ChangeBound.reach），放在这些位置上（placesBelow、FiniteQueue、World.finiteQueue）是满足全部八个前提的有限世界（World.finiteQueue_finite、World.finiteQueue_premised），所以有限世界中计数的规律相同（World.finite_counting），从某步起被围住的世界与有限世界有相同的计数规律（World.enclosed_iff_finite_counting）。在有限的队列中耗散起约束，这个界可以达到：第 0 步替换一个成员时，队首从全部位置的封闭家族取用两个单位（World.replaced、World.finite_dissipation_binds），第 0 步所立者总共为二，此后一个成员连同一步变化恰为二（World.replaced_attains）。变化不复现不能加强为终结之步：若每个从第 0 步起在变化界之内、没有成员加入空队的计数表都有一步之后不再变化，或每个满足八个前提、活动可判定的有限世界都有一步之后不再生起，有限全知原则 LPO 成立，见证在布尔序列的第一个真处替换一个成员（Swap、ChangeBound.lpo_of_ends、World.lpo_of_finite_ends）。在每个前提选择之下：被围住的一步上只需平衡、耗散与体现，没有关系项活跃时那里所立者的总水平为零，任何成员开始立着都会使它下降，所以没有生起，不论谁给予、谁取用（World.enclosed_binds_counting）。被围住的队列不论计数都只在活跃时取用（World.enclosedQueue_taking），它的耗散逐步成立，只要求该步没有成员加入空队、前后两步都在所立者之内（World.enclosedQueue_dissipatesOn）。在第 T 步闭合的队列（EnclosedQueue.closing、World.closingQueue）在 T 之前让每个关系项与队首各交换一个单位，所以 T 之前没有家族封闭；它平衡（World.closingQueue_balanced），从 T 起它的流就是被围住的队列的流（World.closing_flows），每步被围住（World.closingQueue_enclosed），从 T 起有变化界、此后没有成员加入空队时它耗散（World.closingQueue_dissipative）。称一个选择约束变化（World.BoundsChange），若它选中平衡、体现与耗散。所以在从某步起每步被围住的世界中，在八个前提的每个选择之下，对计数的一个逐点的性质在满足这个选择的每个世界的每个普查中成立，恰当它对每个满足两个条件的计数表成立：选择约束计数时，没有关系项活跃的一步上没有生起；选择约束变化时，从某步 T 起变化在一个界之内，且从 T 起没有关系项活跃的一步上没有生起（World.enclosed_counting_under）。后一个条件须带着它的步：变化界之内变化不复现（ChangeBound.not_recurring），这本身不给出这样的一步。不选耗散时，被围住不约束计数：变化界为零的被围住的队列实现其余条件下的每个计数表；缺平衡或缺体现时，不流动的队列每步都被围住（World.still_enclosed）。有限世界中每步被围住（World.Finite.enclosed），所以在那里平衡、体现与耗散本身就约束计数（World.enclosed_binds_counting），并给出从第 0 步起的变化界（World.enclosure_bounds_change），每个普查至多计到关系项那么多（World.Finite.census_bounded）。反过来，把队列的成员依次排在一圈 N 个位置上（Ring.slot：第 k+1 个成员坐在第 k 个的下一个位置，满一圈回到第一个位置），相距不到一圈的成员位置不同（Ring.slot_add、Ring.slot_ne、Ring.slot_inj）；每步至多有 M 个在队中时，一圈 2M+1 个位置（Ring.size）容得下任一步前后在队中的成员，所以环列出每步被占的位置，各一次（Ring.census），计到队列所计的（Ring.counts）。不立任何东西的环满足除体现外的全部前提（World.ring、World.ring_meets），每个位置被占时立着一的环满足除平衡外的全部前提（World.embodiedRing、World.embodiedRing_meets），其队首的位置再从每个位置取用其水平所降的、给予其所升的，满足除耗散外的全部前提，没有成员加入空队时也满足只有活跃者给予（World.balancedRing、World.balancedRing_acting、World.balancedRing_meets）。所以在有限世界中，在八个前提的每个选择之下，对计数的一个逐点的性质在满足这个选择的每个有限世界的每个普查中成立，恰当它对每个满足三个条件的计数表成立：每步至多有某数个活跃；选择约束计数或约束变化时，没有关系项活跃的一步上没有生起；选择约束变化时，从第 0 步起变化在一个界之内（World.finite_counting_under）。“没有关系项活跃的一步上没有生起”在有限世界中是一个选择之下的规律，恰当这个选择选中平衡与体现，并选中只有活跃者给予或耗散（World.finite_counting_binds_iff）；从第 0 步起的变化界是规律，恰当这个选择约束变化：每步替换一个成员的计数由满足其余任一选择的有限的环实现（World.finite_change_bound_iff）。所以 256 个选择在有限世界中给出三种规律。有限世界与从某步起被围住的世界在一个选择之下有相同的计数规律，恰当这个选择约束变化且约束计数（World.enclosed_iff_finite_counting_under）：不约束变化时，每步多一个的计数由每步被围住的世界实现，不由任何有限世界实现；约束变化而不约束计数时，一个关系项在被围住之前从无到有地生起（Queue.lone_settles）由被围住的世界实现，不由任何有限世界实现。不用伦理前提，也不用 Lean 公理。",
     "en": "Say that B bounds change from step T (ChangeBound T B n c a) when at every step t from T on, n t together with the number of steps from T before t at which c or a is positive (occurrences) is at most B. Within a change bound change does not recur (ChangeBound.not_recurring); a change bound from step T is one from the first step, larger by T and the counts before T (ChangeBound.from_zero, changeBound_iff_zero). Enclosure bounds change: in a world with a census of activity whose relata are all embodied, with a balanced, dissipative flow and every step from T on enclosed (Flow.Enclosed), the total standing at T bounds the change of the census from T (World.enclosure_bounds_change): across an enclosed step the total standing never rises, and it falls by at least one at every step at which something arises or ceases (Flow.standing_never_rises, Flow.change_lowers), while the embodied relata active all stand (World.length_le_stock). Conversely an enclosed queue (EnclosedQueue, World.enclosedQueue) has natural numbers as members, active and standing at one exactly while in the queue, its front also standing at what the bound leaves beyond one for each member; the front takes part at every step, taking from each member what its standing loses and giving each what it gains. Every step is enclosed by its span (World.enclosedQueue_enclosed), and the queue meets all eight premises under every tally with a change bound from the first step in which nothing joins an empty queue (World.enclosedQueue_premised: balance holds by construction, and what stands falls by one at every step of change, so dissipation holds). So a pointwise property of the counts holds of the census of every world meeting all eight premises with every step from some step on enclosed exactly when it holds of every tally with a change bound from the first step in which nothing arises across a step at which nothing is active (World.enclosed_counting). Such a queue never reaches past its B + B * B-th member (Queue.reached, ChangeBound.joins, ChangeBound.reach), and on those places (placesBelow, FiniteQueue, World.finiteQueue) it is a finite world meeting all eight premises (World.finiteQueue_finite, World.finiteQueue_premised), so finite worlds have the same laws of counting (World.finite_counting), and worlds enclosed from some step on and finite worlds have the same laws of counting (World.enclosed_iff_finite_counting). In the finite queue dissipation binds and the bound is attained: with one member replaced across the first step the front takes two units from the closed family of all places (World.replaced, World.finite_dissipation_binds), and what stands at the first step totals two, one member with one step of change behind it making two at every later step (World.replaced_attains). That change does not recur cannot be strengthened to an end step: if every tally with a change bound from the first step in which nothing joins an empty queue had a step after which nothing changes, or every finite world meeting the eight premises with decided activity a step after which nothing arises, the limited principle of omniscience LPO would hold, the witness replacing one member at the first true of a Boolean sequence (Swap, ChangeBound.lpo_of_ends, World.lpo_of_finite_ends). Under each selection of the premises: at an enclosed step balance, dissipation and embodiment suffice, for with nothing active the total standing there is nothing and any member coming to stand would lower it, so nothing arises, whoever gives and whoever takes (World.enclosed_binds_counting). Whatever its counts, the enclosed queue takes only while active (World.enclosedQueue_taking), and it dissipates step by step, asking only that nothing join an empty queue at the step and that both steps stay within what stands (World.enclosedQueue_dissipatesOn). A queue closing at step T (EnclosedQueue.closing, World.closingQueue) has every relatum exchange a unit each way with the front before T, so no family is closed before T; it balances (World.closingQueue_balanced), from T on its flow is the enclosed queue's (World.closing_flows) and every step is enclosed (World.closingQueue_enclosed), and with a change bound from T and nothing joining an empty queue from then on it dissipates (World.closingQueue_dissipative). Say a selection bounds change (World.BoundsChange) when it selects balance, embodiment and dissipation. So in worlds with every step from some step on enclosed, under each selection of the eight premises a pointwise property of the counts holds of every census of every world meeting the selection exactly when it holds of every tally meeting two conditions: where the selection binds counting, nothing arises across a step at which nothing is active; where it bounds change, from some step T on change stays within a bound and nothing arises across a step at which nothing is active (World.enclosed_counting_under). The second condition carries its step: that change does not recur within the bound (ChangeBound.not_recurring) gives no such step by itself. Without dissipation enclosure leaves counting free: the enclosed queue with bound zero counts every tally meeting the other conditions; without balance or embodiment the still queues are enclosed at every step (World.still_enclosed). Every step of a finite world is enclosed (World.Finite.enclosed), so there balance, embodiment and dissipation by themselves bind counting (World.enclosed_binds_counting) and bound change from the first step (World.enclosure_bounds_change), and every census counts at most as many as there are relata (World.Finite.census_bounded). Conversely, seat the members of a queue in turn round a ring of N places (Ring.slot: member k + 1 sits at the place after member k's, back at the first place once the ring is full); members less than a full turn apart sit at different places (Ring.slot_add, Ring.slot_ne, Ring.slot_inj). Where at most M are in the queue at each step, a ring of 2M + 1 places (Ring.size) holds those in it before or after any step, so the ring lists the places held at each step, each once (Ring.census), and counts what the queue counts (Ring.counts). A ring with nothing standing meets every premise but embodiment (World.ring, World.ring_meets); a ring each of whose places stands at one while held, every premise but balance (World.embodiedRing, World.embodiedRing_meets); and with its front's place also taking from each place what that place's standing loses and giving what it gains, every premise but dissipation, only active relata giving where nothing joins an empty queue (World.balancedRing, World.balancedRing_acting, World.balancedRing_meets). So in finite worlds, under each selection of the eight premises, a pointwise property of the counts holds of every census of every finite world meeting the selection exactly when it holds of every tally meeting three conditions: at most some number active at each step; where the selection binds counting or bounds change, nothing arising across a step at which nothing is active; where it bounds change, change within a bound from the first step (World.finite_counting_under). That nothing arises across a step at which nothing is active is a law in finite worlds under a selection exactly when it selects balance and embodiment, and only active relata giving or dissipation (World.finite_counting_binds_iff); a change bound from the first step is a law exactly where the selection bounds change, one member replaced at every step being counted by a finite ring meeting any other selection (World.finite_change_bound_iff). So in finite worlds the 256 selections give three kinds of law. Finite worlds and worlds enclosed from some step on have the same laws of counting under a selection exactly when it bounds change and binds counting (World.enclosed_iff_finite_counting_under): where it does not bound change, a count growing by one at every step is counted by a world enclosed at every step and by no finite world; where it bounds change without binding counting, one relatum arising from none before enclosure (Queue.lone_settles) is counted by an enclosed world and by no finite world. No ethical premise and no Lean axiom is used."
@@ -201,21 +201,21 @@
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.replaced_attains：变化界的界可以用尽，enclosure_bounds_change 不能加强；World.lpo_of_finite_ends：满足八个前提的有限世界中，此后不再生起之步一般地需要全知。",
         "en": "World.replaced_attains: the bound is attained, so enclosure_bounds_change cannot be strengthened; World.lpo_of_finite_ends: in finite worlds meeting the eight premises a step after which nothing arises needs omniscience in general."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.closingQueue 与 World.enclosed_counting_under：选中平衡、体现与耗散而只有活跃者给予与只有活跃者取用都不选时，被围住之前的生起不受约束，在第 T 步闭合的队列中 T 之前可以有成员加入空队；不选耗散时，变化界为零的被围住的队列实现每个计数表，被围住不加任何规律。",
         "en": "World.closingQueue and World.enclosed_counting_under: with balance, embodiment and dissipation selected but neither only active relata giving nor taking, arising before enclosure is unconstrained, members joining an empty queue before step T in the queue closing at T; without dissipation, the enclosed queue with bound zero counts every tally, and enclosure adds no law."
       }
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "detail": {
         "zh": "World.finite_change_bound_iff 与 World.enclosed_iff_finite_counting_under：每步替换一个成员的计数由满足除体现、除平衡或除耗散外全部前提的有限的环实现，所以变化界只在选择约束变化时是有限世界的规律；每步多一个的计数由每步被围住的队列实现，Queue.lone_settles 的一个关系项在被围住之前从无到有地生起，所以在其余的选择之下有限世界与被围住的世界的计数规律不同。",
         "en": "World.finite_change_bound_iff and World.enclosed_iff_finite_counting_under: one member replaced at every step is counted by finite rings meeting every premise but embodiment, balance or dissipation, so a change bound is a law of finite worlds only where the selection bounds change; a count growing by one at every step is counted by queues enclosed at every step, and in Queue.lone_settles one relatum arises from none before enclosure, so under the other selections finite and enclosed worlds have different laws of counting."
@@ -227,8 +227,8 @@
     "en": "Stated for discrete steps and activity finite at each step; needs decidability (a logical commitment) and pointwise properties (in place of function extensionality); speaks only of the counting of activity, the counts of standing and dependence under the premises not being stated; the change bound is the total standing at enclosure, which can be attained but is not the value in every world; the bound counts steps of change, not events; in the enclosed queue activity needing support and bounded transmission hold idly (nothing depends on anything), and the whole law of counting where every premise binds is not stated, adding at least an arising (World.binds_arising); change does not recur, and an end step needs omniscience in general; the laws under each selection with enclosure are given, the condition where change is bounded stated with its step; the laws under each selection in finite worlds are given, the finite witnesses being rings whose number of places is set by a bound on how many are in the queue at each step; evaluates neither arising, ceasing nor rest; the names (occurrences, ChangeBound, EnclosedQueue, enclosedQueue, FiniteQueue, finiteQueue, placesBelow, Swap, replaced, closingQueue, BoundsChange, Ring, slot, ring, embodiedRing, balancedRing) are the AI's choice under Ren's naming criteria of 10 October (in the zero-axiom part, formal words describing the abstract dynamics, social and financial words not the first choice), and readings remain Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T133601.876717Z）：Becoming.Population 的 112 项定理（含 occurrences、ChangeBound.not_recurring、ChangeBound.from_zero、ChangeBound.reach 与 ChangeBound.lpo_of_ends）、Becoming.Openness 的 178 项定理（含 World.enclosure_bounds_change、World.enclosedQueue_premised、World.enclosed_counting、World.finiteQueue_premised、World.finite_counting、World.enclosed_iff_finite_counting、World.replaced_attains、World.lpo_of_finite_ends、World.closingQueue_dissipative、World.enclosed_counting_under、World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff 与 World.enclosed_iff_finite_counting_under）与 Becoming.Premises 的 78 项定理（含 World.enclosed_binds_counting）全部空依赖；同一回执覆盖包内 33 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T133831.669969Z 通过。草稿经第十三次独立审查（BECOMING-P32-P34-REVIEW.md），按其 U4–U6 重构；重构后的结果尚无独立反审，作者反审见整合文档 §49、§52 与 §54。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 35 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T133601.876717Z): the 112 theorems of Becoming.Population (including occurrences, ChangeBound.not_recurring, ChangeBound.from_zero, ChangeBound.reach and ChangeBound.lpo_of_ends), the 178 theorems of Becoming.Openness (including World.enclosure_bounds_change, World.enclosedQueue_premised, World.enclosed_counting, World.finiteQueue_premised, World.finite_counting, World.enclosed_iff_finite_counting, World.replaced_attains, World.lpo_of_finite_ends, World.closingQueue_dissipative, World.enclosed_counting_under, World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff and World.enclosed_iff_finite_counting_under) and the 78 theorems of Becoming.Premises (including World.enclosed_binds_counting) all have empty axiom reports; the same receipt covers the package's 33 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T133831.669969Z passed. The drafts were checked by the thirteenth independent review (BECOMING-P32-P34-REVIEW.md) and rebuilt following its U4–U6; the rebuilt result has no independent review yet, and the author's counterreview is in §49, §52 and §54 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 35 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T145237.259199Z）：Becoming.Population 的 112 项定理（含 occurrences、ChangeBound.not_recurring、ChangeBound.from_zero、ChangeBound.reach 与 ChangeBound.lpo_of_ends）、Becoming.Openness 的 76 项定理、Becoming.Premises 的 50 项定理与 Becoming.Counting 的 130 项定理（含 World.enclosure_bounds_change、World.enclosedQueue_premised、World.enclosed_counting、World.finiteQueue_premised、World.finite_counting、World.enclosed_iff_finite_counting、World.replaced_attains、World.lpo_of_finite_ends、World.closingQueue_dissipative、World.enclosed_counting_under、World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff、World.enclosed_iff_finite_counting_under 与 World.enclosed_binds_counting）全部空依赖；同一回执覆盖包内 34 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T145910.464504Z 通过。草稿经第十三次独立审查（BECOMING-P32-P34-REVIEW.md），按其 U4–U6 重构；重构后的结果尚无独立反审，作者反审见整合文档 §49、§52 与 §54。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 36 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T145237.259199Z): the 112 theorems of Becoming.Population (including occurrences, ChangeBound.not_recurring, ChangeBound.from_zero, ChangeBound.reach and ChangeBound.lpo_of_ends), the 76 theorems of Becoming.Openness, the 50 theorems of Becoming.Premises and the 130 theorems of Becoming.Counting (including World.enclosure_bounds_change, World.enclosedQueue_premised, World.enclosed_counting, World.finiteQueue_premised, World.finite_counting, World.enclosed_iff_finite_counting, World.replaced_attains, World.lpo_of_finite_ends, World.closingQueue_dissipative, World.enclosed_counting_under, World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff, World.enclosed_iff_finite_counting_under and World.enclosed_binds_counting) all have empty axiom reports; the same receipt covers the package's 34 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T145910.464504Z passed. The drafts were checked by the thirteenth independent review (BECOMING-P32-P34-REVIEW.md) and rebuilt following its U4–U6; the rebuilt result has no independent review yet, and the author's counterreview is in §49, §52 and §54 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 36 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -275,7 +275,35 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "736f42dabea4d9e3e7e5293ea936e61d5da11e72799a7333417de75680303a0d",
+      "sha256": "98bd13dd51347a863efdcb34c3c948fe32d93d2da13795d1ffcce65eacde251d",
+      "declarations": [
+        "Becoming.World.standingCensus",
+        "Becoming.World.rises_of_arises",
+        "Becoming.World.falls_of_ceases",
+        "Becoming.Flow.standing_never_rises",
+        "Becoming.Flow.change_lowers",
+        "Becoming.Web.StandingCensus.stock_eq",
+        "Becoming.World.Finite.census_bounded"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "sha256": "b0ad43a9d31badc8332edad1525df11e2a71663b243c86809131079567346733",
+      "declarations": [
+        "Becoming.World.Premised",
+        "Becoming.World.Premised.of",
+        "Becoming.World.Finite.enclosed",
+        "Becoming.World.Binds",
+        "Becoming.World.Premise",
+        "Becoming.World.Meets",
+        "Becoming.World.Premised.meets"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "role": "proof",
+      "sha256": "28fe505874462eefe223719f76310c193d08c5b73097f4f28c7c18c4ccf9cc40",
       "declarations": [
         "Becoming.World.length_le_stock",
         "Becoming.World.enclosure_bounds_change",
@@ -312,12 +340,6 @@
         "Becoming.World.finite_dissipation_binds",
         "Becoming.World.replaced_attains",
         "Becoming.World.lpo_of_finite_ends",
-        "Becoming.World.standingCensus",
-        "Becoming.World.rises_of_arises",
-        "Becoming.World.falls_of_ceases",
-        "Becoming.Flow.standing_never_rises",
-        "Becoming.Flow.change_lowers",
-        "Becoming.Web.StandingCensus.stock_eq",
         "Becoming.World.enclosedQueue_taking",
         "Becoming.World.enclosedQueue_dissipatesOn",
         "Becoming.EnclosedQueue.closing",
@@ -371,28 +393,13 @@
         "Becoming.World.finite_counting_binds_iff",
         "Becoming.World.finite_change_bound_iff",
         "Becoming.World.enclosed_iff_finite_counting_under",
-        "Becoming.World.Finite.census_bounded"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
-      "role": "proof",
-      "sha256": "282c1ed9d3dcb9ea170d1958a28fde03e21801a2274ba5f6a814a5dc05d884f0",
-      "declarations": [
         "Becoming.World.CountsObey",
-        "Becoming.World.Premised",
-        "Becoming.World.Premised.of",
         "Becoming.World.counting_binds_jointly",
-        "Becoming.World.Finite.enclosed",
         "Becoming.OpenQueue.front",
         "Becoming.OpenQueue.occupied",
-        "Becoming.World.Binds",
         "Becoming.World.enclosed_binds_counting",
         "Becoming.World.taking_binds_counting",
-        "Becoming.World.Premise",
-        "Becoming.World.Meets",
         "Becoming.World.BindsCounting",
-        "Becoming.World.Premised.meets",
         "Becoming.World.queue_meets",
         "Becoming.World.embodiedQueue_meets"
       ]
@@ -471,22 +478,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "53c27beeb7b648c0538cb73df7f4347c2f7a6d881fd381bbf911e2edc439aca9"
+      "sha256": "8008cddeb4d0decd3acb9abdc0bb7c26b4b1df00f276742763023a7511440947"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "50e87e1775efda1d67d607f7aa2f7cc4d95dffdb21659890960d395bbd42f8c5"
+      "sha256": "f3b7ad9e6393f9a9c2cff8680c4312bbf65aa446cc90c2628c228c392241d23a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "627b818fa27212635fca7f140ab85b49e4564f56ac943412ccaa8ff016cb2fc2"
+      "sha256": "d22222ba835c44e9805d29418a42b16ba6da7df508633583b78f6a0b8168a409"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "ee892fe02ef5142d6e7afbc7cd6e4096c3681e09b3f6ad5bd2931f02ad2101b1"
+      "sha256": "e09b08db705716547e60b14c6b6e480a912aea8cc39897a8d3710738db444901"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
@@ -528,6 +535,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Premises",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counting",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -611,6 +625,10 @@
     {
       "zh": "2026-10-10 P40：验证范围重新指向合并检查器回执 20261010T133601.876717Z 与外围回执 20261010T133831.669969Z（核心新增 Becoming.Interdependence，包内模块由 32 个增至 33 个，核心闭包由 34 个增至 35 个，共 1540 项定理／2426 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第一部分 §2 的“供给与返回”与第二部分 §6.9）。断言不变。",
       "en": "2026-10-10 P40: validation scope re-pointed to consolidated receipt 20261010T133601.876717Z and periphery receipt 20261010T133831.669969Z (the core adds Becoming.Interdependence, the package growing from 32 to 33 modules and the core closure from 34 to 35, with 1540 theorems/2426 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part I's feeding and return in section 2 and Part II's section 6.9). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41：模块重组，名称、陈述与证明不变：前提给计数的规律加了什么的部分从 Becoming.Premises 与 Becoming.Openness 移入新模块 Becoming.Counting，这里引用的 97 项声明随之移入 Counting 的证明引用，相应反例的路径随之改正。作者说明见整合文档 §57。验证范围重新指向回执 20261010T145237.259199Z 与外围回执 20261010T145910.464504Z。",
+      "en": "2026-10-10 P41: module restructure, names, statements and proofs unchanged: what the premises add to the laws of counting moves from Becoming.Premises and Becoming.Openness into the new module Becoming.Counting; the 97 declarations cited here move with it to a Counting proof reference, and the counterexamples citing them are re-pathed. The author's note is in §57 of the integration note. Validation scope re-pointed to receipt 20261010T145237.259199Z and periphery receipt 20261010T145910.464504Z."
     }
   ]
 }

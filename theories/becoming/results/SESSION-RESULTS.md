@@ -16,15 +16,15 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-10T14:41:14.541672+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-10T15:05:46.431500+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
 | Mapped chats / 已映射会话 | 44 |
 | Result families / 成果族 | 14 |
-| Working Lean sources / 工作源码 | 588 |
+| Working Lean sources / 工作源码 | 589 |
 | Audit drivers / 审计入口 | 14 |
-| Saved verification or build copies / 检查及构建副本 | 13702 |
+| Saved verification or build copies / 检查及构建副本 | 13878 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
 
 No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.

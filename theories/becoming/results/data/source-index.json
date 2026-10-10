@@ -101,10 +101,12 @@
         "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
         "sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md",
         "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+        "sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md",
         "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
         "theories/becoming/chapters/NONDUAL-METHOD.md",
         "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
-        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+        "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+        "theories/meta-attractor/README.md"
       ]
     },
     "RESEARCH.md": {
@@ -8208,6 +8210,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
@@ -11697,6 +11700,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",

@@ -19,6 +19,7 @@ import Becoming.Evolution
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
+import Becoming.Counting
 import Becoming.Continuation
 import Becoming.Admission
 import Becoming.Regions
@@ -187,14 +188,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   each, a world meets the other seven and not it. One world meets all eight, and in
   another each of the eight binds, the world not finite only through idle relata, with
   finitely many ever active. A finite world whose activity is decided
-  and which meets them comes to rest, by three of them. Premises lacking balance or
-  embodiment leave counting free: every tally is the census of a world meeting every
-  premise but embodiment, and of one meeting every premise but balance; together, with
-  only active relata giving, they bind it, nothing arising across a step at which nothing
-  is active. That is all the eight add: under all eight the laws of counting are the
-  tally and that nothing arises across a step at which nothing is active, three of the
-  eight holding idly in the world that shows it; where every premise binds, every census
-  counts something arising, which is no law under the eight.
+  and which meets them comes to rest, by three of them. The premises are named, and a
+  selection of them is a function to `Bool`.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
@@ -216,13 +211,30 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   needed. The eight premises decide neither enclosure nor openness: one world meeting
   them with no step enclosed keeps arising, at zero net exchange, and another never
   arises, so openness is necessary for arising without end and not sufficient; one
-  meeting them with every step enclosed comes to rest, as does the world in which each
-  of them binds. Enclosure bounds change: with every step from some step on enclosed,
-  the relata active together with the steps of change stay within the total standing at
-  that step, and under all eight premises the laws of counting under enclosure from some
-  step on and in finite worlds are the same: the tally, nothing arising across a step at
-  which nothing is active, and a change bound from the first step. The bound is attained,
-  and a step after which nothing arises needs omniscience in general.
+  meeting them with every step enclosed comes to rest, as does `hatch`, in which each of
+  them binds.
+* `Becoming.Counting` (L3): what the premises add to the laws of counting, the tally
+  being the whole law of counting with no premise (`Becoming.Population`). Premises
+  lacking balance or embodiment leave counting free: every tally is the census of a world
+  meeting every premise but embodiment, and of one meeting every premise but balance;
+  together, with only active relata giving, they bind it, nothing arising across a step at
+  which nothing is active. That is all the eight add, three of them holding idly in the
+  world that shows it. Under each of the 256 selections of the premises the laws are of
+  two kinds, the second, nothing arising across a step at which nothing is active, exactly
+  where the selection selects balance and embodiment with only active relata giving, or
+  with only active relata taking and dissipation. Enclosure bounds change: with every
+  step from some step on enclosed, the relata active together with the steps of change
+  stay within the total standing at that step. With enclosure from some step on, a
+  selection adds that from some step on change stays within a bound and nothing arises
+  across a step at which nothing is active, exactly where it selects balance, embodiment
+  and dissipation. In finite worlds the 256 selections give three kinds of law: a tally
+  with at most some number active at each step; that, with nothing arising across a step
+  at which nothing is active; and both, with a change bound from the first step. Finite
+  worlds and worlds enclosed from some step on have the same laws exactly where the
+  selection bounds change and binds counting, as all eight do. The bound is attained, and
+  a step after which nothing arises needs omniscience in general. Where every premise
+  binds, every census counts something arising, and that is all binding adds; it decides
+  neither rest nor change without end.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed
