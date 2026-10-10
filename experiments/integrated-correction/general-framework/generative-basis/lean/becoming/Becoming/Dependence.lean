@@ -117,6 +117,11 @@ theorem add_sub_turn : ∀ x y : Nat, y + (x - y) = x + (y - x)
         ((Nat.add_right_comm x (y - x) 1).trans
           (congrArg (x + 1 + ·) (Nat.succ_sub_succ y x).symm))))
 
+/-- The turn of `add_sub_turn`, with the same added on both sides. -/
+theorem add_sub_turn_add (x y u : Nat) : y + (x - y + u) = x + (y - x + u) :=
+  (Nat.add_assoc y (x - y) u).symm.trans ((congrArg (· + u) (add_sub_turn x y)).trans
+    (Nat.add_assoc x (y - x) u))
+
 /-- As `Nat.add_sub_of_le`, with an empty axiom report. -/
 theorem add_sub_of_le : ∀ {m k : Nat}, m ≤ k → m + (k - m) = k
   | 0, k, _ => Nat.zero_add k

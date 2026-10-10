@@ -262,7 +262,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "sha256": "90b83159aad5d6c62bb4f9f35e0a935c83b5ad62c3e7eb09105bf0a295b7559e",
       "declarations": [
         "Becoming.Web.Dependent",
         "Becoming.Web.Supported"
@@ -271,17 +271,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "8008cddeb4d0decd3acb9abdc0bb7c26b4b1df00f276742763023a7511440947"
+      "sha256": "d0c52de203ed33410c48ed7504dc0ac2d4a6e0e91341209ac8b6e2f8070a7271"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "f3b7ad9e6393f9a9c2cff8680c4312bbf65aa446cc90c2628c228c392241d23a"
+      "sha256": "52df9d5b83a4c81c83e4e5764fb74ce920f9558d08120d118340131bc678588e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "d22222ba835c44e9805d29418a42b16ba6da7df508633583b78f6a0b8168a409"
+      "sha256": "d842d0e4c1696d90e0d5f8d8c63d66c849982c95c0737a75bcd4ceea0b2297aa"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",

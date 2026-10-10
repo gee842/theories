@@ -241,8 +241,8 @@
     "en": "The bound must return within one number at arbitrarily late steps; it fails where the bound grows without end, however slowly (accretion, slow); that a non-decreasing bound either stays within some number or grows without end is classical; for a bound that is not monotone and eventually exceeds every number no corresponding world is given (its construction needs data from existence); stated for discrete steps; needs decidability (a logical commitment); says neither which member comes to be or ceases nor that the two are causally linked: the law is a count, not a mechanism; evaluates neither arising nor ceasing; the names (bounded census, procession, slow) are Ren's to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T145237.259199Z）：Becoming.Population 的 112 项定理（P27 新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded；P30 新增 Listed.ceasing_of_returning、ceasing_of_outpacing，改由平衡证明 ceasing_of_coming，去掉 ceases_or_kept、ceases_or_more、ceases_within，它们由回执 20261009T163512.365801Z 检查过）与 Becoming.Openness 的 76 项定理（P27 新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.accretion_unbounded、Procession.census、World.procession_world；P30 新增 World.CountedBy.arising_iff_ceasing、Slow.length、Slow.census、Slow.grows_between、World.slow_world）全部空依赖；同一回执覆盖包内 34 个模块（含只作导入的根模块与桥接），共 1540 项定理／2426 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T145910.464504Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36、§37 与 §40，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 36 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T145237.259199Z): the 112 theorems of Becoming.Population (added in P27: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded; P30 adds Listed.ceasing_of_returning and ceasing_of_outpacing, proves ceasing_of_coming through the balance and removes ceases_or_kept, ceases_or_more and ceases_within, which receipt 20261009T163512.365801Z checked) and the 76 theorems of Becoming.Openness (added in P27: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.accretion_unbounded, Procession.census, World.procession_world; added in P30: World.CountedBy.arising_iff_ceasing, Slow.length, Slow.census, Slow.grows_between, World.slow_world) all have empty axiom reports; the same receipt covers the package's 34 modules (including the import-only root and the bridge) with 1540 theorems/2426 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T145910.464504Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36, §37 and §40 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 36 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T150853.470895Z）：Becoming.Population 的 112 项定理（P27 新增 Listed.ceases_or_kept、ceases_or_more、ceases_within、ceasing_of_coming、coming_iff_ceasing、Web.ceasing_of_arising、Web.unceasing_iff_bounded；P30 新增 Listed.ceasing_of_returning、ceasing_of_outpacing，改由平衡证明 ceasing_of_coming，去掉 ceases_or_kept、ceases_or_more、ceases_within，它们由回执 20261009T163512.365801Z 检查过）与 Becoming.Openness 的 76 项定理（P27 新增 Web.StandingCensus.coming_iff_ceasing、World.CountedWithin.arising_iff_ceasing、World.Finite.countedWithin、World.Finite.arising_iff_ceasing、World.accretion_unbounded、Procession.census、World.procession_world；P30 新增 World.CountedBy.arising_iff_ceasing、Slow.length、Slow.census、Slow.grows_between、World.slow_world）全部空依赖；同一回执覆盖包内 34 个模块（含只作导入的根模块与桥接），共 1552 项定理／2445 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T151108.093153Z 通过。中间回执 20261009T141236.619967Z（外围 20261009T141402.494945Z）检查了推广之前的版本。作者反审见整合文档 §36、§37 与 §40，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 36 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T150853.470895Z): the 112 theorems of Becoming.Population (added in P27: Listed.ceases_or_kept, ceases_or_more, ceases_within, ceasing_of_coming, coming_iff_ceasing, Web.ceasing_of_arising, Web.unceasing_iff_bounded; P30 adds Listed.ceasing_of_returning and ceasing_of_outpacing, proves ceasing_of_coming through the balance and removes ceases_or_kept, ceases_or_more and ceases_within, which receipt 20261009T163512.365801Z checked) and the 76 theorems of Becoming.Openness (added in P27: Web.StandingCensus.coming_iff_ceasing, World.CountedWithin.arising_iff_ceasing, World.Finite.countedWithin, World.Finite.arising_iff_ceasing, World.accretion_unbounded, Procession.census, World.procession_world; added in P30: World.CountedBy.arising_iff_ceasing, Slow.length, Slow.census, Slow.grows_between, World.slow_world) all have empty axiom reports; the same receipt covers the package's 34 modules (including the import-only root and the bridge) with 1552 theorems/2445 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T151108.093153Z passed. The intermediate receipt 20261009T141236.619967Z (periphery 20261009T141402.494945Z) checked the version before the generalization. The author's counterreview is in §36, §37 and §40 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 36 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
   },
   "references": [
     {
@@ -311,7 +311,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "sha256": "90b83159aad5d6c62bb4f9f35e0a935c83b5ad62c3e7eb09105bf0a295b7559e",
       "declarations": [
         "Becoming.Web.Forms",
         "Becoming.Web.Dissolves"
@@ -352,7 +352,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "b0ad43a9d31badc8332edad1525df11e2a71663b243c86809131079567346733",
+      "sha256": "39d53e9f12e3bed206a915af217daaf9999d3454bc971376cc0924de14d4a3fc",
       "declarations": [
         "Becoming.World.Counted",
         "Becoming.World.Finite.counted",
@@ -363,22 +363,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "8008cddeb4d0decd3acb9abdc0bb7c26b4b1df00f276742763023a7511440947"
+      "sha256": "d0c52de203ed33410c48ed7504dc0ac2d4a6e0e91341209ac8b6e2f8070a7271"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "f3b7ad9e6393f9a9c2cff8680c4312bbf65aa446cc90c2628c228c392241d23a"
+      "sha256": "52df9d5b83a4c81c83e4e5764fb74ce920f9558d08120d118340131bc678588e"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "d22222ba835c44e9805d29418a42b16ba6da7df508633583b78f6a0b8168a409"
+      "sha256": "d842d0e4c1696d90e0d5f8d8c63d66c849982c95c0737a75bcd4ceea0b2297aa"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e09b08db705716547e60b14c6b6e480a912aea8cc39897a8d3710738db444901"
+      "sha256": "48ad96cd0d678148a15186a348ae6ac9a3a2d7324b9000a6642e537054a921a5"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -552,6 +552,10 @@
     {
       "zh": "2026-10-10 P41：验证范围重新指向合并检查器回执 20261010T145237.259199Z 与外围回执 20261010T145910.464504Z（结构：前提给计数的规律加了什么从 Premises 与 Openness 移入新模块 Becoming.Counting，包与核心闭包各多一个模块）；所引模块的定理数改为该回执的数目（Premises 50、Openness 76、Counting 130）。断言不变。",
       "en": "2026-10-10 P41: validation scope re-pointed to consolidated receipt 20261010T145237.259199Z and periphery receipt 20261010T145910.464504Z (structure: what the premises add to the laws of counting moves from Premises and Openness into the new module Becoming.Counting, the package and the core closure each gaining a module); the module counts cited are now that receipt's (Premises 50, Openness 76, Counting 130). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P41b：验证范围重新指向合并检查器回执 20261010T150853.470895Z 与外围回执 20261010T151108.093153Z（处理第十四次独立审查：Counting、Premises 与 Dependence 新增或移入声明）；所引模块的定理数改为该回执的数目（Dependence 59、Premises 59、Counting 132）。断言不变。",
+      "en": "2026-10-10 P41b: validation scope re-pointed to consolidated receipt 20261010T150853.470895Z and periphery receipt 20261010T151108.093153Z (integrating the fourteenth independent review: declarations added to or moved into Counting, Premises and Dependence); the module counts cited are now that receipt's (Dependence 59, Premises 59, Counting 132). The claim is unchanged."
     }
   ]
 }
