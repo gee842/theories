@@ -35,7 +35,7 @@ Covers every branch README, including the method and memory archive. These are a
 
 **论证：** 研究同一生成展开中的关系怎样形成、持续和改变，组织、生命、认识、学习、评价与智慧怎样在其中分化。条件性整体候选通过五项审查；Becoming 脊柱统一生成核心与元伦理接口；G0 明确公理路线下实践判断已完成。本页为生成的理论首页，正典入口为生成／变化之论专章。
 
-**Argument:** Investigates how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. The conditional candidate meets its five reviewed criteria; the Becoming spine unifies the generative core and the metaethical interfaces; practical judgment is complete on the explicit G0 route. This page is the generated theory home; the canonical entry is The Theory of Becoming chapter.
+**Argument:** Investigates how relations form, persist and change within one unfolding of becoming, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. The conditional candidate meets its five reviewed criteria; the Becoming spine unifies the generative core and the metaethical interfaces; practical judgment is complete on the explicit G0 route. This page is the generated theory home; the canonical entry is The Theory of Becoming chapter.
 
 **意义：** 使分散的动力学、认识与伦理研究进入同一可追溯推导，同时保留各处生命、损失和不同的未来。
 

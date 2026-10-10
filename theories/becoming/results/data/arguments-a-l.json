@@ -433,7 +433,7 @@
   {
     "id": "cognition-learning-and-evolution",
     "title_zh": "生成展开中的认知、学习与演化",
-    "title_en": "Cognition, learning and evolution within generative unfolding",
+    "title_en": "Cognition, learning and evolution within becoming",
     "category": "learning",
     "status": "多项有条件连接已检查；完整目标开放 / Several checked conditional connections; full objective open",
     "argument_zh": "认知形成于分化的组织使实际关系进入辨别、熟练回应、预期，有时成为表征与反思；学习是这些组织在经历中的改变；发育经承继组织与实际活动重建能力；演化改变发育与传递怎样复现。它们在同一过程中相互形成，可解释学习方式自身的形成、旧所得的新用途，以及认知改变自身的形成条件。已检查的连接包括：两次接触从零形成保留网络并重构其更新方式；固定文法下组合路线的取得、形成与修复；向他人的示范、重构与后续使用；从歧义接触中取得分组与绑定；取得的通达记录引导后续接触选择；以及带日期的控制在来源变化时约束旧报告的解释。",
@@ -445,7 +445,7 @@
     "next_zh": "意识、广义情感与动机组织、自然语言与社会理解，以及发育／演化的联合对应仍是完整目标的要求；已设计一项匹配的发育检验，区分当前依赖与旧内容认可。",
     "next_en": "Consciousness, broad affective and motivational organization, natural language and social understanding, and joint developmental/evolutionary correspondence remain required. A matched developmental test separating present reliance from endorsement of old content has been specified.",
     "source": "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
-    "source_sha256": "7a9572ac1afa35d4c91dab73e875021c8fb9e32c31e66f07816cc1e96edcbc3c",
+    "source_sha256": "9312dfdf6739298cc67886942f299c0f6a4351592f58c0932564bc7a4b6c7a9f",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean",
@@ -585,7 +585,7 @@
   {
     "id": "connected-generative-model",
     "title_zh": "一个连贯生成模型的实际连接",
-    "title_en": "Actual connections in one generative model",
+    "title_en": "Actual connections in one model of becoming",
     "category": "synthesis",
     "status": "多条连接完成；更强整体要求开放 / Several joins complete; stronger whole requirement open",
     "argument_zh": "把真实前驱状态、保留的记录与剩余支持接入共同结果语义，才能主张学习、评价与行动属于同一历史。已有构造继续把适用性、询问、依存、校准和结构修订变成实际操作；独立编译模块的并列本身没有这种力量。",
@@ -597,7 +597,7 @@
     "next_zh": "正在：整体生成的规范根据；应继续：仅为明确更强主张补足真实缺失接口，保留正确诊断却无法维持等失败。",
     "next_en": "Ongoing: normative grounding of whole generation. Proposed: only genuinely missing interfaces required by stronger claims, preserving unaffordable retention and other failures.",
     "source": "theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md",
-    "source_sha256": "5c67d09b924c71533e5112b5708746fecaa55b21b753851dde44b9aa0b89d9d8",
+    "source_sha256": "b7ffe6b531caff47cb58660be1db3920b78a549adf87f3e3d0ec0ebd89a43983",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/ConnectedGenerativeModel.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
@@ -753,7 +753,7 @@
   {
     "id": "ethical-foundation",
     "title_zh": "生成世界中受影响者何以重要",
-    "title_en": "Why affected beings matter within generation",
+    "title_en": "Why affected beings matter within becoming",
     "category": "ethics",
     "status": "明确前提的伦理论证 / Ethical argument with explicit premises",
     "argument_zh": "实际受损可以对承受者构成坏，而无须先对观察者有用。若这种主体相关损益提供实践理由、无关身份不能取消理由且共同强制须向受影响者交代，那么关切、非任意排除和可纠正治理获得条件根据；这些规范前提仍须辩护。",
@@ -765,7 +765,7 @@
     "next_zh": "正在：整体生成与善的规范奠基；应继续：实际冲突、差等责任及不以私人回报为根据的实践理由。",
     "next_en": "Ongoing: whole generation and normative goodness. Proposed: genuine conflicts, differentiated responsibility and reasons independent of private return.",
     "source": "theories/becoming/chapters/ETHICAL-FOUNDATION.md",
-    "source_sha256": "be97ac5361ea3fe9f3c021262836c8c66e26a61049911c8c3c5e7a3ef7acece7",
+    "source_sha256": "7e4c5fed4bf6215296492fb0911676d6111d706d83a7f4b705666f0899d652d4",
     "lean": [],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-NATURALISM.md"
@@ -1035,7 +1035,7 @@
   {
     "id": "explanatory-necessity",
     "title_zh": "生成关系是否是充分解释的必要基础？",
-    "title_en": "Are generative relations indispensable to explanation?",
+    "title_en": "Are relations of becoming indispensable to explanation?",
     "category": "mathematics",
     "status": "大量有条件结果已检查；普遍对应开放 / Extensive checked conditional results; universal correspondence open",
     "argument_zh": "强猜想：任何充分解释都必须保留某种生成关系，因为所解释的分化、条件与后果就在其中形成。逐步检验的结果：只知“可以继续”不能识别规律；固定所答问题时，准确且不作多余区分的编码之间有双向唯一对应（相对唯一性）；有限复合问题迫出逐步分支对应，后继紧致性可替代有限分支；共同问题迫出成对关系，实际占用规律说明为何须保留共享冲突；完整支持证书可组成跨分支共同占用，但任意固定阶数的检查都可能漏掉更高阶容量限制；证书在变化中的保持有精确条件，每时刻可完成不等于实际完成。另一方面，全部有限一阶真值一致、甚至有保持全部有限参数公式的映射，仍不保证原生结构同构（Cantor 对角线）；覆盖性是独立前提。Ren 指出把问题改成“两个完整模型逐点同构”带入了二元预设，该停止判断已撤回（§83）；纠正后，同一接合活动能迫出共同操作结构而不抹去不同历史，部分形成的接续说明须保留已到达条件与剩余形成组织之间改变答案的联系。",
@@ -1047,7 +1047,7 @@
     "next_zh": "说明为何任意不同语法的充分解释都能有据地恢复这些必须保留的联系；这是下一项普遍推论。",
     "next_en": "Explain why adequate explanations in arbitrary different syntaxes can warrantedly recover the links that must be kept; this is the next universal inference.",
     "source": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
-    "source_sha256": "e6b93ac15187e60c31c088b15670d680a437cc016e45e4b2641f551cdbb07041",
+    "source_sha256": "3fe5a1c8bb98fce8a99922a44663342166fdb7019ed5dec187f64d05fdf4369f",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean",
@@ -1274,7 +1274,7 @@
   {
     "id": "generated-logic",
     "title_zh": "生成条件与逻辑规则",
-    "title_en": "Generative conditions and logical rules",
+    "title_en": "Conditions of becoming and logical rules",
     "category": "mathematics",
     "status": "四轮有条件结果已检查；构成性评估完成，无前提元逻辑未证 / Four checked rounds; constitutive assessment complete, presuppositionless metalogic unproved",
     "argument_zh": "把逻辑规则放回同一展开中的资源、活动与判断来研究。在不含收缩构造子的资源推导演算中，收缩规则在所声明上下文中可容许，当且仅当实际复制可达；有限补给只支持付费替代，顺序复用不保证重叠占用。第二轮由共享历史推出固定上下文的精确适用条件：总量摘要会丢失就绪判断，限定工作负载的一位摘要能保留选定事件字却丢失完整初始相容性。第三轮说明允许未来改接的范围决定摘要须保留的占用区别；第四轮在明确读取、版本维护与原子使用条件下，把记录支持的执行投影到同一原生占用过程。最后检验元逻辑的内在根据：新引用可由引入活动设立，内容与认可要求保持时的承接与代入解释局部根据的传递，不需每步另加认可命题；全部消费者在代入前后求值相同，当且仅当每个替换项给出原位置的根据。",
@@ -1286,7 +1286,7 @@
     "next_zh": "从局部引用的设立与承接，尚不能推出用于概括与评估它的全部元推理资源已无前提正当化；这是内部解释尚未闭合，而非事实／价值或认识／世界的独立本体。",
     "next_en": "Local institution and retention of reference do not yet show that all metainferential resources used to summarize and assess it are justified without presupposition. This is an internal explanation not yet closed, not an independent fact/value or knower/world ontology.",
     "source": "theories/becoming/chapters/GENERATED-LOGIC.md",
-    "source_sha256": "25debbc76dde0e82f38c566c997e26a3b25156a8caae0c8970affa12e5d746b6",
+    "source_sha256": "05d146dc5ab2e2f3d7b5a74a92238aa9e2529a022c0f3e0452c9674027a83099",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean",
@@ -1527,7 +1527,7 @@
   {
     "id": "huigen",
     "title_zh": "慧根：整个生成理论的必要性问题",
-    "title_en": "Huigen: necessity of the entire generative theory",
+    "title_en": "Huigen: necessity of the entire theory",
     "category": "foundation",
     "status": "条件必要性传递已证；完整必要根基开放 / Conditional necessity transfer proved; full necessary grounding open",
     "argument_zh": "一个有根据的基础通过保真生成可以把其有效性传到不断扩展的理解；已导出分支还可回作基础而保留同一推导。困难转到基础的实质必要性，尤其善与普遍实践理由；既有自我、患者和共享活动分析给出测试，不以形式可推出性替代规范根据。",
@@ -1539,7 +1539,7 @@
     "next_zh": "正在：共享活动的首要伦理根据及普遍适用；应继续：保留目标内容的强对手、真实损失与实际责任。",
     "next_en": "Ongoing: first warrant of shared activity and universal address. Proposed: strong content-preserving rivals, real losses and differentiated responsibilities.",
     "source": "theories/becoming/chapters/HUIGEN.md",
-    "source_sha256": "63d43e03e361be0bb35d311060d5b265713ded3b64f90f4bf2ca634205fa9a98",
+    "source_sha256": "3cf98bac87a65c87a790c9d67063360af54624e8bfcac2f79cb8db07cd21df6c",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
@@ -1554,7 +1554,7 @@
   {
     "id": "immanent-mathematical-identity",
     "title_zh": "生成活动中的数学同一性",
-    "title_en": "Mathematical identity within generative activity",
+    "title_en": "Mathematical identity within becoming",
     "category": "mathematics",
     "status": "历史条件结构论证 / Historical conditional structural argument",
     "argument_zh": "相同的当前读数不保证所有延续相同；确切状态同一性须保留指定未来行为，可复用操作还须保留前后文。扩大参与范围可以细化商结构并保留回映射；每个有限范围相容不自动产生无限实现。",
@@ -1566,7 +1566,7 @@
     "next_zh": "已接续：真实询问的可辨识性及完备化；应继续：身份准则如何由实际后果修订，以及独立实现根据。",
     "next_en": "Continued: actual inquiry and completion. Proposed: consequence-dependent revision of identity criteria and independent realization warrant.",
     "source": "theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md",
-    "source_sha256": "eb94f6fbb8344aa9a87e176fab232f3dcc82a05207f077e35c8b89a9fa96ab16",
+    "source_sha256": "6141372621031280dc7be7a2f069358c1cd1d9776ce895e9c0db3c562ddfed8a",
     "lean": [],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-MATHEMATICAL-IDENTITY-REVIEW.md",
@@ -1711,7 +1711,7 @@
   {
     "id": "knowledge",
     "title_zh": "生成中的知识",
-    "title_en": "Knowledge within generative unfolding",
+    "title_en": "Knowledge within becoming",
     "category": "philosophical-epistemic",
     "status": "有辩护的候选完成；普遍验证开放 / Defended candidate complete; universal validation open",
     "argument_zh": "命题知识是真实判断：其形成或当下维持经认知能力与使其正确的实际关系相连，面对相关出错可能，其正确不是偶然；并须能进入知者实际的认知活动。知道、理解与会做是三种不同成就。认知位置在同一历史中分化为取用某些差异的组织能力：实际差异可以留下痕迹却不可通达，可通达的信息可以被误解，判断可以对窄关系正确而对其解释错误。章节说明内容怎样成为可用并保持可错，相关出错可能怎样确定，理由与标准怎样进入，概念与方法改变后知识怎样延续，以及客观性、外推、充分理解与及时回应。已完成的连接包括选择性修订与依赖根据、证据引导的模型修订循环，以及科学哲学兼容性的边界：承担解释证据与纠正的科学说明须保留相关实际依存，但兼容弱于接受、不足以为真。",
@@ -1723,7 +1723,7 @@
     "next_zh": "超出既有独立根据与保存目标的新生活：识别实际形成、延续与毁损而不把有利裁决写进目标定义；条件性关怀是否穷尽有关形成的理由仍有分歧。",
     "next_en": "New living beyond independently warranted claims and preservation targets: identify actual formation, continuity and destruction without encoding a favorable verdict in the target’s definition. Whether conditional care exhausts reasons about formation remains disputed.",
     "source": "theories/becoming/chapters/KNOWLEDGE.md",
-    "source_sha256": "fa503bfedcf0f5fc60849e55d45fe392f1b691e501956f91c514b34335be4f61",
+    "source_sha256": "117c4d91023fe4f8f4e2affbc41a7f5541082a6dce501265a94939e4cdc6fe28",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean",

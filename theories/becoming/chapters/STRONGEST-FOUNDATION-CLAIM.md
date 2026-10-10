@@ -1,4 +1,4 @@
-# The strongest generative foundation claim
+# The strongest foundation claim
 
 6 October 2026. AI-authored research following [Ren's direction to aim for the strongest possible claim](../../../sources/15-codex-theory-conversations/2026-10-06-strongest-foundation-claim.md). The target is the necessity of the full generative foundation, including concern and wisdom. The [accepted conditional candidate](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate) remains complete at its stated scope. This stronger investigation does not obtain its conclusion from that acceptance.
 

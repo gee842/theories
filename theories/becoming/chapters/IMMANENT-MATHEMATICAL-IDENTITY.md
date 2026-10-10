@@ -1,4 +1,4 @@
-# Mathematical identity within generative activity
+# Mathematical identity within becoming
 
 **Actual-inquiry continuation, 6 October 2026:** [inquiry changes what can still be identified](INQUIRY-AND-MATHEMATICAL-IDENTITY.md) develops the acquisition obligation left open here. Pairwise contextual distinctions can remain mathematically exact while a consumable interaction prevents one history from acquiring all of them. The new finite-policy criterion retains initial targets and changing configurations; current behavioral collapse does not recover an initial identity. Existing adaptive sampling is credited, and the shared next connection remains revision of sufficient-inquiry criteria through consequences.
 

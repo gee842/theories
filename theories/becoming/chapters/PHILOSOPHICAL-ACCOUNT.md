@@ -1,4 +1,4 @@
-# A generative account of knowing and living / 认识与生活的生成哲学
+# A philosophy of becoming for knowing and living / 认识与生活的生成哲学
 
 8 October 2026. A connected, AI-authored philosophical proposal responding to [Ren's request to pursue the account to its finish line](../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#finish-line-request). It draws together the [knowledge account](KNOWLEDGE.md), [practical judgment](PRACTICAL-JUDGMENT.md), [shared inquiry](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md) and the [generative foundation](GENERATIVE-GROUNDING.md). [Completion assessment and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md).
 

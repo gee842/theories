@@ -86,7 +86,7 @@ The framework makes the purposes of intelligence, and the rules by which those p
 
 ## Research and repository
 
-We investigate how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. Real losses, distinct scopes and counterexamples remain explicit.
+We investigate how relations form, persist and change within one unfolding of becoming, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. Real losses, distinct scopes and counterexamples remain explicit.
 
 Read [the shared method / 非二元方法](theories/becoming/chapters/NONDUAL-METHOD.md) before foundational work. [Working rules / 工作规则](AGENTS.md) apply throughout; the scope directory preserves independently authorized goals.
 

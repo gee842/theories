@@ -1,4 +1,4 @@
-# Nondual method for the generative core and tree
+# Nondual method for the core and tree of becoming
 
 6 October 2026. Project-wide working method implementing [Ren's explicit direction](../../../sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md). The source preserves Ren's words; the operational formulation below is AI-authored. This governs how the whole project investigates the core and branches. It is not an additional proof of the ontology or a newly completed research result.
 

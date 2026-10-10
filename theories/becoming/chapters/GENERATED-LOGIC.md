@@ -1,4 +1,4 @@
-# 生成条件与逻辑规则 / Generative conditions and logical rules
+# 生成条件与逻辑规则 / Conditions of becoming and logical rules
 
 **构成性论证已完成评估，严格无前提奠基未获证明。** [第16节](#constitutive-binding-assessment)区分新引用的设立、实际承接、辨认与推理根据；局部同一／代入无需每次另添认可前提，但这不自证全部元推理资源。旧的笼统“绑定还缺最终根据”标签退出下一步；保留具体的强目标不足。/ **Completed scoped assessment:** constituted reference and local warrant preservation, with explicit limits on the attempted passage to presuppositionless metalogic. All prior Lean results retain their scope; no new theorem is claimed.
 

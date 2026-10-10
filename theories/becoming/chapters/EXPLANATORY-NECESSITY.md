@@ -1,4 +1,4 @@
-# 生成关系是否是充分解释的必要基础？ / Are generative relations indispensable to explanation?
+# 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation?
 
 2026-10-08，Asia/Bangkok。研究方向：Yongxu Ren；论述与形式化：AI 撰写。[Ren 的原话](../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md)授权研究，而非宣布普遍唯一性成立。
 

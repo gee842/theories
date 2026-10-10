@@ -30,20 +30,20 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [choice-and-generative-context](#choice-and-generative-context) | 共同选择、有限合并与情境 / Joint choice, limited aggregation and context | 伦理论证 / ethical argument | 有条件的形式结果已检查；完整选择规则开放 / Checked conditional results; complete choice rule open |
 | [claims](#claims) | 已登记主张与历史账本 / Registered claims and historical ledger | 导航 / navigation | 生成的登记视图；不同主张有不同证据 / Generated register with differentiated evidence |
 | [claims-and-paid-action](#claims-and-paid-action) | 诉求、实际行动与持续保护 / Claims, actual action and continuing protection | 伦理接口 / ethics interface | 45项新声明已 Lean 实查 / 45 new declarations checked in Lean |
-| [cognition-learning-and-evolution](#cognition-learning-and-evolution) | 生成展开中的认知、学习与演化 / Cognition, learning and evolution within generative unfolding | 学习 / learning | 多项有条件连接已检查；完整目标开放 / Several checked conditional connections; full objective open |
+| [cognition-learning-and-evolution](#cognition-learning-and-evolution) | 生成展开中的认知、学习与演化 / Cognition, learning and evolution within becoming | 学习 / learning | 多项有条件连接已检查；完整目标开放 / Several checked conditional connections; full objective open |
 | [cognition-li-and-reciprocity](#cognition-li-and-reciprocity) | 认知、理与恕的条件推论 / Cognition, li and a conditional account of reciprocity | 经典思想 / classical | 概念与原典研究；历史手证 / Conceptual and textual study; historical hand proof |
 | [completion-plan](#completion-plan) | 物理形成与更新分支的完成计划 / Completion plan for physical formation and renewal | 路线 / roadmap | 分支契约；完整基础仍开放 / Branch contract; full foundation open |
 | [concern-and-correction](#concern-and-correction) | 关切与有效纠正的连接 / Concern and effective correction | 机制 / mechanism | 历史条件模型；后续联合形成已推进 / Historical conditional model; later joint formation advances it |
 | [concern-and-new-reasons](#concern-and-new-reasons) | 理由内容的扩展：既有判断何时继续成立 / Extending reasons: when earlier judgments survive | 伦理发展 / ethics development | 有条件的形式结果已检查 / Checked conditional formal result |
 | [conditional-universality](#conditional-universality) | 局部律所蕴含的条件普遍性 / Conditional universality from local laws | 数学 / mathematics | 已 Lean 实查的条件普遍定理 / Lean-checked conditional universal results |
-| [connected-generative-model](#connected-generative-model) | 一个连贯生成模型的实际连接 / Actual connections in one generative model | 综合 / synthesis | 多条连接完成；更强整体要求开放 / Several joins complete; stronger whole requirement open |
+| [connected-generative-model](#connected-generative-model) | 一个连贯生成模型的实际连接 / Actual connections in one model of becoming | 综合 / synthesis | 多条连接完成；更强整体要求开放 / Several joins complete; stronger whole requirement open |
 | [controlled-refinement](#controlled-refinement) | 在描述转换中保留学习者 / Controlled refinement without losing the learner | 数学 / mathematics | 已 Lean 实查 / Lean checked |
 | [cost-sensitive-learning](#cost-sensitive-learning) | 真实学习数据能识别什么 / What real learning data can identify | 经验研究 / empirical | 有范围的经验与识别结果 / Scoped empirical and identification result |
 | [cybernetics](#cybernetics) | 生成根基中的控制论 / Cybernetics within generative grounding | 比较 / comparison | 比较综合；明确子连接已形式化 / Comparative synthesis; specified sublinks formalized |
 | [dao-and-generativity](#dao-and-generativity) | 生成论与道：生成、德与善的贯通 / Generativity and dao: generation, de and goodness | 经典思想 / classical | 方向可行；研究未完成 / Promising direction; inquiry open |
 | [deeper-generative-root](#deeper-generative-root) | 更深的生成根基与内在解释 / A deeper generative root and immanent explanation | 基础 / foundation | 局部形式结果完成；根基问题开放 / Local formal results complete; grounding open |
 | [empirical-scope](#empirical-scope) | 候选基础的证据范围 / Evidence scope of the candidate foundation | 证据 / evidence | 证据综合完成 / Evidence synthesis complete |
-| [ethical-foundation](#ethical-foundation) | 生成世界中受影响者何以重要 / Why affected beings matter within generation | 伦理 / ethics | 明确前提的伦理论证 / Ethical argument with explicit premises |
+| [ethical-foundation](#ethical-foundation) | 生成世界中受影响者何以重要 / Why affected beings matter within becoming | 伦理 / ethics | 明确前提的伦理论证 / Ethical argument with explicit premises |
 | [ethical-learning](#ethical-learning) | 伦理学习：关切怎样形成、取得根据并继续改变 / Ethical learning: how concern forms, acquires warrant and keeps changing | 伦理发展 / ethics development | 有辩护的哲学候选；分类稳健比较已检查 / Defended philosophical candidate; classification-robust comparison checked |
 | [evaluation-and-faithful-reporting](#evaluation-and-faithful-reporting) | 有价值的未来与忠实报告 / Valued futures and faithful reporting | 对齐 / alignment | 来源与概念审读 / Source and conceptual review |
 | [evaluative-application](#evaluative-application) | 获得的理解何时支持具体行动 / When acquired understanding warrants action | 伦理接口 / ethics interface | 条件应用及角色修复论证已接受 / Conditional application and role-bound repair accepted |
@@ -54,7 +54,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [evidence-and-institutional-correction](#evidence-and-institutional-correction) | 证据怎样转为制度纠正 / From evidence to institutional correction | 治理 / governance | 历史应用与条件准则 / Historical application and conditional criterion |
 | [evolutionary-organization](#evolutionary-organization) | 演化怎样形成并改变演化组织 / How evolution forms and changes evolutionary organization | 机制 / mechanism | 选定范围内完成；完整演化理论开放 / Complete at selected scope; full evolutionary theory open |
 | [experimental-access](#experimental-access) | 学习模型检验自身实验接入 / A learned model tests its experimental access | 学习 / learning | 限定原生连接已形式验证 / Scoped native connection formally checked |
-| [explanatory-necessity](#explanatory-necessity) | 生成关系是否是充分解释的必要基础？ / Are generative relations indispensable to explanation? | 数学 / mathematics | 大量有条件结果已检查；普遍对应开放 / Extensive checked conditional results; universal correspondence open |
+| [explanatory-necessity](#explanatory-necessity) | 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation? | 数学 / mathematics | 大量有条件结果已检查；普遍对应开放 / Extensive checked conditional results; universal correspondence open |
 | [formal-core](#formal-core) | 关系生成性的形式核心 / Formal core of relational generativity | 形式汇编 / formal compendium | 历史手证汇编与后续限定 Lean 扩展 / Historical hand-proof compendium with scoped Lean extensions |
 | [formal-specification](#formal-specification) | 物理形成、更新与共享能力的规格 / Specification for formation, renewal and shared capability | 形式规格 / formal specification | 版本化条件规格与已检查接口 / Versioned conditional specification with checked interfaces |
 | [formation](#formation) | 有效纠正怎样形成与被阻止 / How effective correction forms and is prevented | 机制 / mechanism | 指定条件形成问题已解 / Specified conditional formation problem solved |
@@ -63,7 +63,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [formed-route-monitor](#formed-route-monitor) | 学习者取得自身学习路线的证据 / A learner acquires evidence about its learning route | 学习 / learning | 有限监测构造与 Lean 检查完成 / Finite monitor construction and Lean checks complete |
 | [foundation-premises](#foundation-premises) | 共同基础的前提与已导出内容 / Premises and derived content of the common foundation | 方法 / methodology | 动态依赖账与条件整合 / Evolving dependency ledger and conditional integration |
 | [g0-warrant](#g0-warrant) | G0 的根据：一项采用的公理怎样得到支持 / The warrant for G0: how an adopted axiom is supported | 规范基础 / normative foundation | 采用公理的比较支持；普遍实践根据开放 / Comparative support for an adopted axiom; universal practical warrant open |
-| [generated-logic](#generated-logic) | 生成条件与逻辑规则 / Generative conditions and logical rules | 数学 / mathematics | 四轮有条件结果已检查；构成性评估完成，无前提元逻辑未证 / Four checked rounds; constitutive assessment complete, presuppositionless metalogic unproved |
+| [generated-logic](#generated-logic) | 生成条件与逻辑规则 / Conditions of becoming and logical rules | 数学 / mathematics | 四轮有条件结果已检查；构成性评估完成，无前提元逻辑未证 / Four checked rounds; constitutive assessment complete, presuppositionless metalogic unproved |
 | [generated-self-and-ethics](#generated-self-and-ethics) | 生成的我与不以根本所有者为前提的伦理 / The generated self and ethics without a fundamental owner | 基础 / foundation | 局部形成／表征已形式化；体验伦理开放 / Local formation and representation formalized; experience and ethics open |
 | [generative-core-lean](#generative-core-lean) | 生成核心的 Lean 实现与入口 / Lean realization and public entries of the generative core | 形式索引 / formal index | 多个具名入口已实查 / Named public entries checked |
 | [generative-development](#generative-development) | 调节、学习与关切怎样发展 / Development of regulation, learning and concern | 综合 / synthesis | 条件基础的连接综合已接受 / Connected conditional foundation accepted |
@@ -72,15 +72,15 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [generative-selection](#generative-selection) | 选择、共享条件与纠正的更新 / Selection, shared conditions and renewal of correction | 选择 / selection | 机制综合与部分 Lean 接口 / Mechanism synthesis with partial Lean interfaces |
 | [goal-formation-and-revision](#goal-formation-and-revision) | 理解并改变自身形成条件 / Understanding and changing one's formative conditions | 学习 / learning | 有条件的形式结果与有范围的经验对应 / Checked conditional results and scoped empirical correspondence |
 | [hanzi-and-theory-tree](#hanzi-and-theory-tree) | 汉字、组合与理论树的局部对应 / Hanzi, composition and local mappings to the theory tree | 经典思想 / classical | 候选词表与检验约束 / Candidate lexicon and validation constraints |
-| [huigen](#huigen) | 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire generative theory | 基础 / foundation | 条件必要性传递已证；完整必要根基开放 / Conditional necessity transfer proved; full necessary grounding open |
-| [immanent-mathematical-identity](#immanent-mathematical-identity) | 生成活动中的数学同一性 / Mathematical identity within generative activity | 数学 / mathematics | 历史条件结构论证 / Historical conditional structural argument |
+| [huigen](#huigen) | 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire theory | 基础 / foundation | 条件必要性传递已证；完整必要根基开放 / Conditional necessity transfer proved; full necessary grounding open |
+| [immanent-mathematical-identity](#immanent-mathematical-identity) | 生成活动中的数学同一性 / Mathematical identity within becoming | 数学 / mathematics | 历史条件结构论证 / Historical conditional structural argument |
 | [inquiry-and-mathematical-identity](#inquiry-and-mathematical-identity) | 探究改变仍可辨认的内容 / Inquiry changes what remains identifiable | 数学 / mathematics | 历史条件结果；相关子集后续 Lean 化 / Historical conditional result; related subset later formalized |
 | [inquiry-revision](#inquiry-revision) | 保留后果改变后续询问的安排 / Retained consequences revise further inquiry | 学习 / learning | 指定技术连接已实现并检查 / Specified technical connection implemented and checked |
 | [joint-formation](#joint-formation) | 关切、证据与有效权力共同形成和更新 / Joint formation and renewal of concern, evidence and power | 机制 / mechanism | 一个联合条件过程已构造 / One joint conditional process constructed |
 | [joint-formation-math](#joint-formation-math) | 学习、证据、权力和关切的联合形成数学 / Mathematics of jointly formed learning, evidence, power and care | 数学 / mathematics | 历史条件手证及反审修订 / Historical conditional proofs with review repairs |
 | [joint-obstructions](#joint-obstructions) | 没有隐藏善意的联合形成阻碍 / Obstructions to joint formation without hidden benevolence | 审查 / review | 历史分析与验收条件 / Historical analysis and acceptance conditions |
 | [joint-prior-art](#joint-prior-art) | 关切、证据与权力联合形成的先行研究 / Prior art on joint formation of concern, evidence and power | 审查 / review | 定向文献与设计审查 / Targeted literature and design review |
-| [knowledge](#knowledge) | 生成中的知识 / Knowledge within generative unfolding | 认识论 / philosophical epistemic | 有辩护的候选完成；普遍验证开放 / Defended candidate complete; universal validation open |
+| [knowledge](#knowledge) | 生成中的知识 / Knowledge within becoming | 认识论 / philosophical epistemic | 有辩护的候选完成；普遍验证开放 / Defended candidate complete; universal validation open |
 | [learning-interface](#learning-interface) | 后果差异如何进入可用修订 / From consequential difference to accessible revision | 数学 / mathematics | 一般接口已 Lean 实查 / General interface checked in Lean |
 | [learning-route-revision](#learning-route-revision) | 学习者改变学习路线并传递改变 / A learner changes and transmits its learning route | 学习 / learning | 有限继承路线修订已接受 / Finite inherited-route revision accepted |
 | [liangzhi-evolution](#liangzhi-evolution) | 本然良知的生成演化 / Generative evolution of prereflective moral responsiveness | 伦理发展 / ethics development | 传递／发展／交接已限定检查；完整良知开放 / Transmission, development and handoff checked; full liangzhi open |
@@ -567,7 +567,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [CLAIM-EXECUTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-REVIEW.md) · [CLAIM-EXECUTION-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CLAIM-EXECUTION-INTEGRATION.json)
 
 <a id="cognition-learning-and-evolution"></a>
-## 生成展开中的认知、学习与演化 / Cognition, learning and evolution within generative unfolding
+## 生成展开中的认知、学习与演化 / Cognition, learning and evolution within becoming
 
 **编号 / ID:** `cognition-learning-and-evolution` · **类别 / Category:** 学习 / learning
 
@@ -747,7 +747,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [CONDITIONAL-UNIVERSALITY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-UNIVERSALITY-REVIEW.md) · [CONDITIONAL-SUPPORT-MATH.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-SUPPORT-MATH.md)
 
 <a id="connected-generative-model"></a>
-## 一个连贯生成模型的实际连接 / Actual connections in one generative model
+## 一个连贯生成模型的实际连接 / Actual connections in one model of becoming
 
 **编号 / ID:** `connected-generative-model` · **类别 / Category:** 综合 / synthesis
 
@@ -958,7 +958,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [EMPIRICAL-SCOPE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMPIRICAL-SCOPE-REVIEW.md) · [CONDITIONAL-CLAIM-SCOPE-NOTES.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONDITIONAL-CLAIM-SCOPE-NOTES.md)
 
 <a id="ethical-foundation"></a>
-## 生成世界中受影响者何以重要 / Why affected beings matter within generation
+## 生成世界中受影响者何以重要 / Why affected beings matter within becoming
 
 **编号 / ID:** `ethical-foundation` · **类别 / Category:** 伦理 / ethics
 
@@ -1293,7 +1293,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md](../../../_process/research/2026-10-05-generative-health/succession/ACQUIRED-APPLICABILITY-FORMAL-INTEGRATION.md) · [EXPERIMENTAL-ACCESS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPERIMENTAL-ACCESS-REVIEW.md)
 
 <a id="explanatory-necessity"></a>
-## 生成关系是否是充分解释的必要基础？ / Are generative relations indispensable to explanation?
+## 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation?
 
 **编号 / ID:** `explanatory-necessity` · **类别 / Category:** 数学 / mathematics
 
@@ -1564,7 +1564,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) · [GENERATIVE-DISCRIMINATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md) · [GENERATIVE-DISCRIMINATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md) · [EVALUATOR-GROUNDING-ARGUMENT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md) · [EVALUATOR-GROUNDING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)
 
 <a id="generated-logic"></a>
-## 生成条件与逻辑规则 / Generative conditions and logical rules
+## 生成条件与逻辑规则 / Conditions of becoming and logical rules
 
 **编号 / ID:** `generated-logic` · **类别 / Category:** 数学 / mathematics
 
@@ -1839,7 +1839,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [HANZI-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-INTEGRATION.md) · [HANZI-MAPPING-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HANZI-MAPPING-REVIEW.md)
 
 <a id="huigen"></a>
-## 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire generative theory
+## 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire theory
 
 **编号 / ID:** `huigen` · **类别 / Category:** 基础 / foundation
 
@@ -1870,7 +1870,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [HUIGEN-FULL-THEORY-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md) · [HUIGEN-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-REVIEW.md) · [HUIGEN-SELF-GROUND-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-SELF-GROUND-AUDIT.md)
 
 <a id="immanent-mathematical-identity"></a>
-## 生成活动中的数学同一性 / Mathematical identity within generative activity
+## 生成活动中的数学同一性 / Mathematical identity within becoming
 
 **编号 / ID:** `immanent-mathematical-identity` · **类别 / Category:** 数学 / mathematics
 
@@ -2077,7 +2077,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [JOINT-FORMATION-REVIEW.md](../../../_process/research/2026-10-05-repository-reconciliation/three-session-integration/JOINT-FORMATION-REVIEW.md)
 
 <a id="knowledge"></a>
-## 生成中的知识 / Knowledge within generative unfolding
+## 生成中的知识 / Knowledge within becoming
 
 **编号 / ID:** `knowledge` · **类别 / Category:** 认识论 / philosophical epistemic
 

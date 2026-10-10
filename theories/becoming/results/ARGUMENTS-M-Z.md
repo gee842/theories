@@ -32,7 +32,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [nondual-method](#nondual-method) | 全项目非二元研究方法 / The project-wide nondual method | 方法 / methodology | 研究方法 / Research method |
 | [noninstrumental-concern](#noninstrumental-concern) | 一体之仁与非工具性关切 / Co-formed benevolence and noninstrumental concern | 伦理机制 / ethical mechanism | 条件形式结果已检查；普遍目标开放 / Checked conditional results; universal target open |
 | [paid-preimport-evidence](#paid-preimport-evidence) | 命令导入前取得独立证据 / Acquiring independent evidence before command import | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
-| [philosophical-account](#philosophical-account) | 认识与生活的生成哲学 / A generative account of knowing and living | 综合 / synthesis | 相连的有辩护候选完成；普遍真理与排他必然性未确立 / Connected defended proposal complete; universal truth and exclusive necessity unestablished |
+| [philosophical-account](#philosophical-account) | 认识与生活的生成哲学 / A philosophy of becoming for knowing and living | 综合 / synthesis | 相连的有辩护候选完成；普遍真理与排他必然性未确立 / Connected defended proposal complete; universal truth and exclusive necessity unestablished |
 | [plural-systems-and-correction](#plural-systems-and-correction) | 因应转化：多系统、共同试验与父子关系 / Responsive transformation: plural systems, shared trials and parent/subsystem relationships | 对齐 / alignment | 有条件的形式结果已检查；无条件可纠正性不再是组织要求 / Checked conditional results; unconditional corrigibility no longer the organizing demand |
 | [practical-judgment](#practical-judgment) | 实践判断：保留、转化、交接、结束与责任 / Practical judgment: preservation, transformation, transfer, ending and responsibility | 伦理 / ethics | 明确公理下的一般候选完成 / General candidate complete under explicit axioms |
 | [pre-qin-and-wenyan](#pre-qin-and-wenyan) | 先秦与文言传统的竞争解释 / Competing explanations across pre-Qin and classical Chinese traditions | 经典比较 / classical comparison | 有限研究已有；更强主张开放 / Bounded study; stronger claims open |
@@ -62,7 +62,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [source-map](#source-map) | 来源、谱系与证据边界 / Sources, genealogy and evidence boundaries | 导航 / navigation | 参考与导航 / Reference and navigation |
 | [start-here](#start-here) | 统一理论简明入口 / The unified foundation in brief | 导航 / navigation | 参考与导航 / Reference and navigation |
 | [stochastic-prediction-composition](#stochastic-prediction-composition) | 保留失败学习的完整接续分布 / Complete continuation distributions including learning failures | 形式接口 / formal interface | 有条件的形式结果已检查 / Checked conditional formal result |
-| [strongest-foundation-claim](#strongest-foundation-claim) | 最强生成根基主张 / The strongest generative foundation claim | 研究纲领 / research programme | 开放研究目标 / Open research target |
+| [strongest-foundation-claim](#strongest-foundation-claim) | 最强生成根基主张 / The strongest foundation claim | 研究纲领 / research programme | 开放研究目标 / Open research target |
 | [successor-learning](#successor-learning) | 后继学习并传递其修正 / A successor learns and transmits its correction | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [sustained-living-judgment](#sustained-living-judgment) | 持续的生活组织与共同实践判断 / Sustained living organization and collective practical judgment | 伦理机制 / ethical mechanism | 有条件的形式结果已检查；独立复核通过 / Checked conditional result; independently reviewed |
 | [synthesis-record](#synthesis-record) | 综合与核查记录 / Synthesis and verification record | 导航 / navigation | 参考与导航 / Reference and navigation |
@@ -72,9 +72,9 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 | [the-theory-of-becoming](#the-theory-of-becoming) | 生成／变化之论 / The Theory of Becoming | 综合 / synthesis | 正典入口；条件结果已检查，整体演绎开放 / Canonical entry; conditional results checked, whole deduction open |
 | [the-theory-of-evolution](#the-theory-of-evolution) | 演化之论 / The Theory of Evolution | 研究纲领 / research programme | 多项聚焦连接已检查；六项更广要求开放 / Several focused connections checked; six broader requirements open |
 | [theory](#theory) | 关系生成与智慧的条件 / Relational generativity and the conditions of wisdom | 综合 / synthesis | 条件性基础 / Conditional foundation |
-| [theory-of-becoming](#theory-of-becoming) | 生成关系怎样变化 / How generative relations change | 机制 / mechanism | 有条件的形式结果已检查；整体根据开放 / Checked conditional results; whole grounding open |
+| [theory-of-becoming](#theory-of-becoming) | 生成关系怎样变化 / How relations of becoming change | 机制 / mechanism | 有条件的形式结果已检查；整体根据开放 / Checked conditional results; whole grounding open |
 | [tool-evidence-and-authority](#tool-evidence-and-authority) | 外部证据、权限与有效行动 / External evidence, authority and effective action | 经验识别 / empirical identification | 有限范围的证据 / Bounded evidence |
-| [unified-ethical-grounding](#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within generative activity | 规范基础 / normative foundation | G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open |
+| [unified-ethical-grounding](#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within becoming | 规范基础 / normative foundation | G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open |
 | [universal-ethical-minimum](#universal-ethical-minimum) | 容纳多元生活的普遍伦理最低主张 / A universal ethical minimum compatible with plural lives | 伦理论证 / ethical argument | 正面论证已有；结论仍受检验 / Defended argument; inquiry open |
 | [updater-formation](#updater-formation) | 形成并改变修订选择器的机制 / Forming and changing selector updaters | 机制 / mechanism | 有条件的形式结果已检查 / Checked conditional formal result |
 | [valuation-development](#valuation-development) | 评价倾向怎样发展 / How valuation develops | 机制数学 / mechanism mathematics | 有条件的形式结果已检查 / Checked conditional formal result |
@@ -632,7 +632,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/verification.json) · [README.md](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/README.md) · [PREIMPORT-EVIDENCE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-REVIEW.md) · [PREIMPORT-EVIDENCE-COMPARATORS.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-COMPARATORS.md) · [PREIMPORT-EVIDENCE-INTEGRATION.json](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PREIMPORT-EVIDENCE-INTEGRATION.json)
 
 <a id="philosophical-account"></a>
-## 认识与生活的生成哲学 / A generative account of knowing and living
+## 认识与生活的生成哲学 / A philosophy of becoming for knowing and living
 
 **编号 / ID:** `philosophical-account` · **类别 / Category:** 综合 / synthesis
 
@@ -1546,7 +1546,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [verification.json](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/verification.json) · [README.md](../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/stochastic-prediction/README.md) · [STOCHASTIC-PREDICTION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/STOCHASTIC-PREDICTION-REVIEW.md)
 
 <a id="strongest-foundation-claim"></a>
-## 最强生成根基主张 / The strongest generative foundation claim
+## 最强生成根基主张 / The strongest foundation claim
 
 **编号 / ID:** `strongest-foundation-claim` · **类别 / Category:** 研究纲领 / research programme
 
@@ -1852,7 +1852,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [FIXED-FINISH-LINE-AUDIT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [V73-INTEGRATION-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/V73-INTEGRATION-REVIEW.md) · [CONSEQUENCE-ORGANIZATION-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-INTEGRATION.md) · [INQUIRY-SUFFICIENCY-INTEGRATION.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-SUFFICIENCY-INTEGRATION.md)
 
 <a id="theory-of-becoming"></a>
-## 生成关系怎样变化 / How generative relations change
+## 生成关系怎样变化 / How relations of becoming change
 
 **编号 / ID:** `theory-of-becoming` · **类别 / Category:** 机制 / mechanism
 
@@ -1912,7 +1912,7 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 **既有检查、审读与来源 / Existing checks, reviews and sources:** [AGENTDOJO-EVIDENCE-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGENTDOJO-EVIDENCE-REVIEW.md) · [AGENTDOJO-REPLAY-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGENTDOJO-REPLAY-REVIEW.md) · [ACTION-CORRECTION-RESULTS-REVIEW.md](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) · [RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECIPIENT-EVIDENCE-DOWNSTREAM-CONTRACT.md)
 
 <a id="unified-ethical-grounding"></a>
-## 整体生成中的统一伦理根据 / Unified ethical grounding within generative activity
+## 整体生成中的统一伦理根据 / Unified ethical grounding within becoming
 
 **编号 / ID:** `unified-ethical-grounding` · **类别 / Category:** 规范基础 / normative foundation
 

@@ -437,7 +437,7 @@
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/NONDUAL-CORE-INTEGRATION.md"
     ],
-    "source_sha256": "8c48b03a167a8909148d542420a38d829b2494258fd1383617127e19e7f82c54",
+    "source_sha256": "a2c8fd7257364fed17bb68e1d350389ff79b48185bc0dfb8d0feae65e7e204b0",
     "status_code": "method"
   },
   {
@@ -508,7 +508,7 @@
   {
     "id": "philosophical-account",
     "title_zh": "认识与生活的生成哲学",
-    "title_en": "A generative account of knowing and living",
+    "title_en": "A philosophy of becoming for knowing and living",
     "category": "synthesis",
     "status": "相连的有辩护候选完成；普遍真理与排他必然性未确立 / Connected defended proposal complete; universal truth and exclusive necessity unestablished",
     "argument_zh": "从“活动形成并改变后续活动的条件”出发，相连地说明：知者与所探究者在实际通达中分化而非独立实体；差别怎样取得内容而仍可出错；认识理由何以不只是信念的原因；客观性来自分化的通达与纠正；探究领域本身可被纠正；G0 下知识的伦理位置；智慧结合充分理解、有根据的关切与可行且获授权的回应；无我在帮助中保留具体生活。后续各节回答生的意义范围：意识在生活关系中分化意义，但不是唯一入口；实现的善、比较改进与义务须在同一历史中分别判断；条件性关怀是否穷尽有关形成的理由仍有分歧。",
@@ -520,7 +520,7 @@
     "next_zh": "探究的权威本身尚未建立整个实践方案；剩余工作是实际否认的实质根据，而不是强制使用本理论的词汇或普遍同意。",
     "next_en": "Inquiry’s authority alone has not established the whole practical package; the remaining work concerns the substantive grounds of actual denials, not mandatory use of this vocabulary or universal agreement.",
     "source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
-    "source_sha256": "efd741e6ba6e5e62548427847c940af6a8cabcdb02271e9fe699aa148f1ec68c",
+    "source_sha256": "d441074f1829f6f1387c8d4552012f8798123c58a649f574889bb59e56bc86ce",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean",
@@ -1330,7 +1330,7 @@
     "id": "strongest-foundation-claim",
     "source": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
     "title_zh": "最强生成根基主张",
-    "title_en": "The strongest generative foundation claim",
+    "title_en": "The strongest foundation claim",
     "category": "research-programme",
     "status": "开放研究目标 / Open research target",
     "argument_zh": "由组织形成推进到真实好坏，再问其为何能向没有先行关切的合宜行动位置提供理由；从这些根据与知识、权限、资源条件推导智慧。有效性、承认、动机和实行须分别解释，替代理论须保留的关系也需证明。",
@@ -1346,7 +1346,7 @@
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/STRONGEST-CLAIM-COUNTERREVIEW.md"
     ],
-    "source_sha256": "b6e067cb5dfc00f6572098d21ad9f2777d56f3116e0edfe3a37093a85bf92000",
+    "source_sha256": "d2d222f73af4e6a4ce8595c2399785712c934a4dac6fdd52aaee6b83d090d86b",
     "status_code": "open"
   },
   {
@@ -1658,7 +1658,7 @@
   {
     "id": "theory-of-becoming",
     "title_zh": "生成关系怎样变化",
-    "title_en": "How generative relations change",
+    "title_en": "How relations of becoming change",
     "category": "mechanism",
     "status": "有条件的形式结果已检查；整体根据开放 / Checked conditional results; whole grounding open",
     "argument_zh": "从实际关系出发：追踪活动怎样建立、运用和改变参与其中的关系，以及这些改变怎样维持、转化或结束后续活动的条件。形成、维持、转化、退化与消解是可以同时适用于一次发生的解释问题，不是必经阶段；某种形态还在，不等于仍有原来的作用能力。已检查的连接：两量子位例中各自约化状态不变，共同作用仍可改变，保留一个共同交叉项即可精确跟随所指定操作的任意有限序列；当前可实现与最终可达的区分及准备步数界；固定规律下所有存在性端点可能都保留，当且仅当有路径返回原配置；更新型与消耗型形成按其参与关系的继续条件分开，二者互斥而不穷尽，不依存于所耗条件的形成可以自身持续无界却终止依存关系；关系读法下 C 把每种超出更新的取用严格排在不发生它的接续之下；中断后受支持的修复路径可以在有限窗口内恢复维持条件。",
@@ -1670,7 +1670,7 @@
     "next_zh": "这些已完成的连接支持哪一项共同的构成性论断，以及为何在所要求范围内不可缺少；保留真实损失。现由正典入口与 Becoming 脊柱统一。",
     "next_en": "Which common constitutive claim these completed connections support, and why it is indispensable at the required scope, with real losses retained. The canonical entry and Becoming spine now unify this chapter.",
     "source": "theories/becoming/chapters/THEORY-OF-BECOMING.md",
-    "source_sha256": "31e052b04830b1f89f8538d9501b52a8336078fa4e18c6304e2648f09606cc8a",
+    "source_sha256": "71c0d3c735dccf3a3489f2f45337ee5865e028d61d799cbf5304600f355e7cef",
     "lean": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
@@ -1716,7 +1716,7 @@
     "id": "unified-ethical-grounding",
     "source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
     "title_zh": "整体生成中的统一伦理根据",
-    "title_en": "Unified ethical grounding within generative activity",
+    "title_en": "Unified ethical grounding within becoming",
     "category": "normative-foundation",
     "status": "G0 明确公理路线：实践判断完成；零公理接续开放 / Explicit G0 route: practical judgment complete; renewed zero-axiom inquiry open",
     "argument_zh": "整体中的生及其继续生成具有正面规范意义，是当前明确承担的共同起点，涵盖生态、生命心智关系生活及广义组织。保留完整相关根据的实际生成扩展，可在明确的比较与实践前提下支持维护、重组或结束。K提出为恢复共同生活而承担中断的可反驳理由；损失仍属同一根据。已有充分混合判断可沿匹配减损运输，但K的一项支持不自动构成全盘优先，接续也不因同时形成未来条件而必然胜过有限完成。按 Ren 8日修正，本对齐任务以 G0 为明确公理；J1–J4 为公开附加承诺。在当前可见的接续中，一项回应可有正面生成意义而不预先锁定善的具体形态。",
@@ -1760,7 +1760,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json"
     ],
-    "source_sha256": "78ae766abf81c0982ac2533977e2c6a46d470d9e1d83178885c37a2d1f92751b",
+    "source_sha256": "18b975d10ade6e9a35e909fa1d0533fba30bf67fd8c122a448c0bec5aadbf698",
     "status_code": "explicit-premise-progress-universal-open"
   },
   {

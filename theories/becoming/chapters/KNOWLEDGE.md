@@ -1,10 +1,10 @@
-# Knowledge within generative unfolding / 生成中的知识
+# Knowledge within becoming / 生成中的知识
 
 8 October 2026. AI-authored account developed from [Ren's knowledge direction](../../../sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md), under the [nondual method](NONDUAL-METHOD.md). This develops the initial [cognition proposal](COGNITION-LI-AND-RECIPROCITY.md#g0-and-knowledge). Philosophical conclusions, inherited mechanisms and newly checked mathematical implications have different scopes. [Integration and review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md#development-of-the-knowledge-track) / [Primary comparisons](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md).
 
 ## The account
 
-**Current synthesis:** [A generative account of knowing and living](PHILOSOPHICAL-ACCOUNT.md) now assembles this chapter's arguments with shared inquiry, G0 and practical wisdom. The [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) marks the defended proposal complete at that scope; universal validation and whole-theory necessity remain unestablished. / **相连候选已完成：**后续研究解释可能性的纳入、参与地位与可纠正的结束；不宣告全部哲学或更强基础目标完成。
+**Current synthesis:** [A philosophy of becoming for knowing and living](PHILOSOPHICAL-ACCOUNT.md) now assembles this chapter's arguments with shared inquiry, G0 and practical wisdom. The [completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) marks the defended proposal complete at that scope; universal validation and whole-theory necessity remain unestablished. / **相连候选已完成：**后续研究解释可能性的纳入、参与地位与可纠正的结束；不宣告全部哲学或更强基础目标完成。
 
 **Propositional knowledge is a true commitment whose formation or present maintenance is competently connected to what makes it correct, and whose correctness is not accidental relative to the relevant possibilities of error.** The commitment must be available within the knower's cognitive activity; an inaccessible true inscription is not thereby that person's knowledge. This is a defended candidate account, not a universally settled analysis or a consequence of G0 alone.
 

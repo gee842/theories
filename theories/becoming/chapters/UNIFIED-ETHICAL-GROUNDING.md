@@ -1,4 +1,4 @@
-# Unified ethical grounding within generative activity
+# Unified ethical grounding within becoming
 
 ## Current alignment task: an explicit normative axiom
 

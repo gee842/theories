@@ -71,20 +71,20 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`choice-and-generative-context`](ARGUMENTS-A-L.md#choice-and-generative-context) | 共同选择、有限合并与情境 / Joint choice, limited aggregation and context | 伦理论证 / ethical argument |
 | [`claims`](ARGUMENTS-A-L.md#claims) | 已登记主张与历史账本 / Registered claims and historical ledger | 导航 / navigation |
 | [`claims-and-paid-action`](ARGUMENTS-A-L.md#claims-and-paid-action) | 诉求、实际行动与持续保护 / Claims, actual action and continuing protection | 伦理接口 / ethics interface |
-| [`cognition-learning-and-evolution`](ARGUMENTS-A-L.md#cognition-learning-and-evolution) | 生成展开中的认知、学习与演化 / Cognition, learning and evolution within generative unfolding | 学习 / learning |
+| [`cognition-learning-and-evolution`](ARGUMENTS-A-L.md#cognition-learning-and-evolution) | 生成展开中的认知、学习与演化 / Cognition, learning and evolution within becoming | 学习 / learning |
 | [`cognition-li-and-reciprocity`](ARGUMENTS-A-L.md#cognition-li-and-reciprocity) | 认知、理与恕的条件推论 / Cognition, li and a conditional account of reciprocity | 经典思想 / classical |
 | [`completion-plan`](ARGUMENTS-A-L.md#completion-plan) | 物理形成与更新分支的完成计划 / Completion plan for physical formation and renewal | 路线 / roadmap |
 | [`concern-and-correction`](ARGUMENTS-A-L.md#concern-and-correction) | 关切与有效纠正的连接 / Concern and effective correction | 机制 / mechanism |
 | [`concern-and-new-reasons`](ARGUMENTS-A-L.md#concern-and-new-reasons) | 理由内容的扩展：既有判断何时继续成立 / Extending reasons: when earlier judgments survive | 伦理发展 / ethics development |
 | [`conditional-universality`](ARGUMENTS-A-L.md#conditional-universality) | 局部律所蕴含的条件普遍性 / Conditional universality from local laws | 数学 / mathematics |
-| [`connected-generative-model`](ARGUMENTS-A-L.md#connected-generative-model) | 一个连贯生成模型的实际连接 / Actual connections in one generative model | 综合 / synthesis |
+| [`connected-generative-model`](ARGUMENTS-A-L.md#connected-generative-model) | 一个连贯生成模型的实际连接 / Actual connections in one model of becoming | 综合 / synthesis |
 | [`controlled-refinement`](ARGUMENTS-A-L.md#controlled-refinement) | 在描述转换中保留学习者 / Controlled refinement without losing the learner | 数学 / mathematics |
 | [`cost-sensitive-learning`](ARGUMENTS-A-L.md#cost-sensitive-learning) | 真实学习数据能识别什么 / What real learning data can identify | 经验研究 / empirical |
 | [`cybernetics`](ARGUMENTS-A-L.md#cybernetics) | 生成根基中的控制论 / Cybernetics within generative grounding | 比较 / comparison |
 | [`dao-and-generativity`](ARGUMENTS-A-L.md#dao-and-generativity) | 生成论与道：生成、德与善的贯通 / Generativity and dao: generation, de and goodness | 经典思想 / classical |
 | [`deeper-generative-root`](ARGUMENTS-A-L.md#deeper-generative-root) | 更深的生成根基与内在解释 / A deeper generative root and immanent explanation | 基础 / foundation |
 | [`empirical-scope`](ARGUMENTS-A-L.md#empirical-scope) | 候选基础的证据范围 / Evidence scope of the candidate foundation | 证据 / evidence |
-| [`ethical-foundation`](ARGUMENTS-A-L.md#ethical-foundation) | 生成世界中受影响者何以重要 / Why affected beings matter within generation | 伦理 / ethics |
+| [`ethical-foundation`](ARGUMENTS-A-L.md#ethical-foundation) | 生成世界中受影响者何以重要 / Why affected beings matter within becoming | 伦理 / ethics |
 | [`ethical-learning`](ARGUMENTS-A-L.md#ethical-learning) | 伦理学习：关切怎样形成、取得根据并继续改变 / Ethical learning: how concern forms, acquires warrant and keeps changing | 伦理发展 / ethics development |
 | [`evaluation-and-faithful-reporting`](ARGUMENTS-A-L.md#evaluation-and-faithful-reporting) | 有价值的未来与忠实报告 / Valued futures and faithful reporting | 对齐 / alignment |
 | [`evaluative-application`](ARGUMENTS-A-L.md#evaluative-application) | 获得的理解何时支持具体行动 / When acquired understanding warrants action | 伦理接口 / ethics interface |
@@ -95,7 +95,7 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`evidence-and-institutional-correction`](ARGUMENTS-A-L.md#evidence-and-institutional-correction) | 证据怎样转为制度纠正 / From evidence to institutional correction | 治理 / governance |
 | [`evolutionary-organization`](ARGUMENTS-A-L.md#evolutionary-organization) | 演化怎样形成并改变演化组织 / How evolution forms and changes evolutionary organization | 机制 / mechanism |
 | [`experimental-access`](ARGUMENTS-A-L.md#experimental-access) | 学习模型检验自身实验接入 / A learned model tests its experimental access | 学习 / learning |
-| [`explanatory-necessity`](ARGUMENTS-A-L.md#explanatory-necessity) | 生成关系是否是充分解释的必要基础？ / Are generative relations indispensable to explanation? | 数学 / mathematics |
+| [`explanatory-necessity`](ARGUMENTS-A-L.md#explanatory-necessity) | 生成关系是否是充分解释的必要基础？ / Are relations of becoming indispensable to explanation? | 数学 / mathematics |
 | [`formal-core`](ARGUMENTS-A-L.md#formal-core) | 关系生成性的形式核心 / Formal core of relational generativity | 形式汇编 / formal compendium |
 | [`formal-specification`](ARGUMENTS-A-L.md#formal-specification) | 物理形成、更新与共享能力的规格 / Specification for formation, renewal and shared capability | 形式规格 / formal specification |
 | [`formation`](ARGUMENTS-A-L.md#formation) | 有效纠正怎样形成与被阻止 / How effective correction forms and is prevented | 机制 / mechanism |
@@ -104,7 +104,7 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`formed-route-monitor`](ARGUMENTS-A-L.md#formed-route-monitor) | 学习者取得自身学习路线的证据 / A learner acquires evidence about its learning route | 学习 / learning |
 | [`foundation-premises`](ARGUMENTS-A-L.md#foundation-premises) | 共同基础的前提与已导出内容 / Premises and derived content of the common foundation | 方法 / methodology |
 | [`g0-warrant`](ARGUMENTS-A-L.md#g0-warrant) | G0 的根据：一项采用的公理怎样得到支持 / The warrant for G0: how an adopted axiom is supported | 规范基础 / normative foundation |
-| [`generated-logic`](ARGUMENTS-A-L.md#generated-logic) | 生成条件与逻辑规则 / Generative conditions and logical rules | 数学 / mathematics |
+| [`generated-logic`](ARGUMENTS-A-L.md#generated-logic) | 生成条件与逻辑规则 / Conditions of becoming and logical rules | 数学 / mathematics |
 | [`generated-self-and-ethics`](ARGUMENTS-A-L.md#generated-self-and-ethics) | 生成的我与不以根本所有者为前提的伦理 / The generated self and ethics without a fundamental owner | 基础 / foundation |
 | [`generative-core-lean`](ARGUMENTS-A-L.md#generative-core-lean) | 生成核心的 Lean 实现与入口 / Lean realization and public entries of the generative core | 形式索引 / formal index |
 | [`generative-development`](ARGUMENTS-A-L.md#generative-development) | 调节、学习与关切怎样发展 / Development of regulation, learning and concern | 综合 / synthesis |
@@ -113,15 +113,15 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`generative-selection`](ARGUMENTS-A-L.md#generative-selection) | 选择、共享条件与纠正的更新 / Selection, shared conditions and renewal of correction | 选择 / selection |
 | [`goal-formation-and-revision`](ARGUMENTS-A-L.md#goal-formation-and-revision) | 理解并改变自身形成条件 / Understanding and changing one's formative conditions | 学习 / learning |
 | [`hanzi-and-theory-tree`](ARGUMENTS-A-L.md#hanzi-and-theory-tree) | 汉字、组合与理论树的局部对应 / Hanzi, composition and local mappings to the theory tree | 经典思想 / classical |
-| [`huigen`](ARGUMENTS-A-L.md#huigen) | 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire generative theory | 基础 / foundation |
-| [`immanent-mathematical-identity`](ARGUMENTS-A-L.md#immanent-mathematical-identity) | 生成活动中的数学同一性 / Mathematical identity within generative activity | 数学 / mathematics |
+| [`huigen`](ARGUMENTS-A-L.md#huigen) | 慧根：整个生成理论的必要性问题 / Huigen: necessity of the entire theory | 基础 / foundation |
+| [`immanent-mathematical-identity`](ARGUMENTS-A-L.md#immanent-mathematical-identity) | 生成活动中的数学同一性 / Mathematical identity within becoming | 数学 / mathematics |
 | [`inquiry-and-mathematical-identity`](ARGUMENTS-A-L.md#inquiry-and-mathematical-identity) | 探究改变仍可辨认的内容 / Inquiry changes what remains identifiable | 数学 / mathematics |
 | [`inquiry-revision`](ARGUMENTS-A-L.md#inquiry-revision) | 保留后果改变后续询问的安排 / Retained consequences revise further inquiry | 学习 / learning |
 | [`joint-formation`](ARGUMENTS-A-L.md#joint-formation) | 关切、证据与有效权力共同形成和更新 / Joint formation and renewal of concern, evidence and power | 机制 / mechanism |
 | [`joint-formation-math`](ARGUMENTS-A-L.md#joint-formation-math) | 学习、证据、权力和关切的联合形成数学 / Mathematics of jointly formed learning, evidence, power and care | 数学 / mathematics |
 | [`joint-obstructions`](ARGUMENTS-A-L.md#joint-obstructions) | 没有隐藏善意的联合形成阻碍 / Obstructions to joint formation without hidden benevolence | 审查 / review |
 | [`joint-prior-art`](ARGUMENTS-A-L.md#joint-prior-art) | 关切、证据与权力联合形成的先行研究 / Prior art on joint formation of concern, evidence and power | 审查 / review |
-| [`knowledge`](ARGUMENTS-A-L.md#knowledge) | 生成中的知识 / Knowledge within generative unfolding | 认识论 / philosophical epistemic |
+| [`knowledge`](ARGUMENTS-A-L.md#knowledge) | 生成中的知识 / Knowledge within becoming | 认识论 / philosophical epistemic |
 | [`learning-interface`](ARGUMENTS-A-L.md#learning-interface) | 后果差异如何进入可用修订 / From consequential difference to accessible revision | 数学 / mathematics |
 | [`learning-route-revision`](ARGUMENTS-A-L.md#learning-route-revision) | 学习者改变学习路线并传递改变 / A learner changes and transmits its learning route | 学习 / learning |
 | [`liangzhi-evolution`](ARGUMENTS-A-L.md#liangzhi-evolution) | 本然良知的生成演化 / Generative evolution of prereflective moral responsiveness | 伦理发展 / ethics development |
@@ -144,7 +144,7 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`nondual-method`](ARGUMENTS-M-Z.md#nondual-method) | 全项目非二元研究方法 / The project-wide nondual method | 方法 / methodology |
 | [`noninstrumental-concern`](ARGUMENTS-M-Z.md#noninstrumental-concern) | 一体之仁与非工具性关切 / Co-formed benevolence and noninstrumental concern | 伦理机制 / ethical mechanism |
 | [`paid-preimport-evidence`](ARGUMENTS-M-Z.md#paid-preimport-evidence) | 命令导入前取得独立证据 / Acquiring independent evidence before command import | 机制 / mechanism |
-| [`philosophical-account`](ARGUMENTS-M-Z.md#philosophical-account) | 认识与生活的生成哲学 / A generative account of knowing and living | 综合 / synthesis |
+| [`philosophical-account`](ARGUMENTS-M-Z.md#philosophical-account) | 认识与生活的生成哲学 / A philosophy of becoming for knowing and living | 综合 / synthesis |
 | [`plural-systems-and-correction`](ARGUMENTS-M-Z.md#plural-systems-and-correction) | 因应转化：多系统、共同试验与父子关系 / Responsive transformation: plural systems, shared trials and parent/subsystem relationships | 对齐 / alignment |
 | [`practical-judgment`](ARGUMENTS-M-Z.md#practical-judgment) | 实践判断：保留、转化、交接、结束与责任 / Practical judgment: preservation, transformation, transfer, ending and responsibility | 伦理 / ethics |
 | [`pre-qin-and-wenyan`](ARGUMENTS-M-Z.md#pre-qin-and-wenyan) | 先秦与文言传统的竞争解释 / Competing explanations across pre-Qin and classical Chinese traditions | 经典比较 / classical comparison |
@@ -174,7 +174,7 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`source-map`](ARGUMENTS-M-Z.md#source-map) | 来源、谱系与证据边界 / Sources, genealogy and evidence boundaries | 导航 / navigation |
 | [`start-here`](ARGUMENTS-M-Z.md#start-here) | 统一理论简明入口 / The unified foundation in brief | 导航 / navigation |
 | [`stochastic-prediction-composition`](ARGUMENTS-M-Z.md#stochastic-prediction-composition) | 保留失败学习的完整接续分布 / Complete continuation distributions including learning failures | 形式接口 / formal interface |
-| [`strongest-foundation-claim`](ARGUMENTS-M-Z.md#strongest-foundation-claim) | 最强生成根基主张 / The strongest generative foundation claim | 研究纲领 / research programme |
+| [`strongest-foundation-claim`](ARGUMENTS-M-Z.md#strongest-foundation-claim) | 最强生成根基主张 / The strongest foundation claim | 研究纲领 / research programme |
 | [`successor-learning`](ARGUMENTS-M-Z.md#successor-learning) | 后继学习并传递其修正 / A successor learns and transmits its correction | 机制 / mechanism |
 | [`sustained-living-judgment`](ARGUMENTS-M-Z.md#sustained-living-judgment) | 持续的生活组织与共同实践判断 / Sustained living organization and collective practical judgment | 伦理机制 / ethical mechanism |
 | [`synthesis-record`](ARGUMENTS-M-Z.md#synthesis-record) | 综合与核查记录 / Synthesis and verification record | 导航 / navigation |
@@ -184,9 +184,9 @@ Identifiers follow source filenames. Search by Chinese, English or filename. A L
 | [`the-theory-of-becoming`](ARGUMENTS-M-Z.md#the-theory-of-becoming) | 生成／变化之论 / The Theory of Becoming | 综合 / synthesis |
 | [`the-theory-of-evolution`](ARGUMENTS-M-Z.md#the-theory-of-evolution) | 演化之论 / The Theory of Evolution | 研究纲领 / research programme |
 | [`theory`](ARGUMENTS-M-Z.md#theory) | 关系生成与智慧的条件 / Relational generativity and the conditions of wisdom | 综合 / synthesis |
-| [`theory-of-becoming`](ARGUMENTS-M-Z.md#theory-of-becoming) | 生成关系怎样变化 / How generative relations change | 机制 / mechanism |
+| [`theory-of-becoming`](ARGUMENTS-M-Z.md#theory-of-becoming) | 生成关系怎样变化 / How relations of becoming change | 机制 / mechanism |
 | [`tool-evidence-and-authority`](ARGUMENTS-M-Z.md#tool-evidence-and-authority) | 外部证据、权限与有效行动 / External evidence, authority and effective action | 经验识别 / empirical identification |
-| [`unified-ethical-grounding`](ARGUMENTS-M-Z.md#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within generative activity | 规范基础 / normative foundation |
+| [`unified-ethical-grounding`](ARGUMENTS-M-Z.md#unified-ethical-grounding) | 整体生成中的统一伦理根据 / Unified ethical grounding within becoming | 规范基础 / normative foundation |
 | [`universal-ethical-minimum`](ARGUMENTS-M-Z.md#universal-ethical-minimum) | 容纳多元生活的普遍伦理最低主张 / A universal ethical minimum compatible with plural lives | 伦理论证 / ethical argument |
 | [`updater-formation`](ARGUMENTS-M-Z.md#updater-formation) | 形成并改变修订选择器的机制 / Forming and changing selector updaters | 机制 / mechanism |
 | [`valuation-development`](ARGUMENTS-M-Z.md#valuation-development) | 评价倾向怎样发展 / How valuation develops | 机制数学 / mechanism mathematics |

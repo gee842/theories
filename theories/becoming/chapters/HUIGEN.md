@@ -1,4 +1,4 @@
-# 慧根: can the entire generative theory be necessary for scientific philosophy?
+# 慧根: can the entire theory be necessary for scientific philosophy?
 
 **Current formal proof update, 8 October 2026.** [The constructive repair](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws) supersedes the live-source scope of the older revalidation below. All fifteen original inquiry theorems now have empty dependency reports; one elementary helper reproof is separate. Together with the repaired core/tree chain and its custom dependencies, six modules have 63 empty audits. The [current affected-build receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json) reports broader remaining dependencies. No claim of necessary huigen, universal wisdom or ethical grounding is upgraded.
 

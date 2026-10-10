@@ -1,4 +1,4 @@
-# Toward one connected generative model
+# Toward one connected model of becoming
 
 **Current mechanism-status correction, 7 October 2026:** [the cross-study audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md) supersedes any reading of the local “remaining” passages below as a blanket absence of sensing, construction, calibration, inquiry or renewal. Existing results already derive and join these capacities at identified interfaces, including native-to-effective law derivation. The newest reader still supplies its particular jig/reference binding and cannot retain every correct diagnosis under its actual budget. Those limits do not revoke the completed mechanisms or create another mandatory generic controller. A further interface is required only by a stronger claim that genuinely needs it; the conditional candidate remains accepted and the stronger no-assumptions requirement remains unmet.
 

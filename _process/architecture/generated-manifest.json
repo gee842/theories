@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "files": {
-    "README.md": "1d581f5eac1ce4f203c1da82b1f7b50befe7573217067ee9182d46feb74b1632",
+    "README.md": "8c281f6f91545d855d1255c8f619eab6df6594c338d59cd85fec6c892ee7820f",
     "RESEARCH.md": "d712e1dcb4636e5a7d854aeb6559259a5296dc0c9c47a8b8cc5b6e632f5b51f5",
     "RESULTS.md": "decf4faf37bc7807a21b9d8f3a9d03ba694bc58bec0223c4c2fec2b310e8e697",
     "GOALS.md": "a8cfaef137a43c89a117d07f20599184789648cb35427daf2be79b35d167df95",
     "DEPENDENCIES.md": "d413df8b0a67c3a897076676c01c2e86bb7cec66f9c7fca052540574afeff096",
-    "_process/BRIEF.md": "6b84882cef354ff10585eb23a56051106ed64b51c1c0ce7d79151933a7d5d33d",
-    "theories/becoming/README.md": "7e2478cba31d55db37b002739c13a247952413f1ea33ac0c6b5b3a7ed0730b5f",
+    "_process/BRIEF.md": "91c3c623d62ac986abb80e32efead87a77e08f96de6152f1452dcabce7a0ad7d",
+    "theories/becoming/README.md": "540daf1a6b6518741345141669e9abbb3ece30ba61fa3dc1c0aa8fa9aeed62a1",
     "theories/becoming/results/ROADMAP.md": "699d7897751b8bbf1908b00bf7e1391cd1f891d91a02fbd4b9b2b25145eaf32b",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "436d7b1e886b5fd323dea06cc7ac924175815ad51118b1c0f89fbcb85adb09ee",
     "OPEN-QUESTIONS.md": "037cf62be5ba72f29a059b7dfebfb50595e9090226b9f5158da02424001dd3bc",

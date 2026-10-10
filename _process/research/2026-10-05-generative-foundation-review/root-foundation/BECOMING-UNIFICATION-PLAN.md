@@ -326,11 +326,20 @@ Formal completeness of a representation does not establish the deductive necessi
 | 阶段 | 内容 | 验收 |
 |---|---|---|
 | P36 见证改名 ✓ | 见下表；陈述、证明与计数不变；历史各节、旧回执、审查与探针保留原名 | 回执 20261010T083222.285294Z，外围回执 20261010T084107.973758Z；[研究 §50](BECOMING-RENEWAL-READING.md#50-见证改名p36) |
-| P36b 生成不译作 generative | 英文叙述中把整体（生成）叫作 generative 之处改为 becoming，generative 只指生成的区域；先改入口与标题（README 的来源、BRIEF、章节标题）；现行章节中约两千处用法须逐处判断，全库清扫的规模另行提出；引用 Ren 原话之处不改；GOALS 的文字等 Ren 同意，路径作为兼容入口保留 | 链接与生成页检查 |
+| P36b 生成不译作 generative（入口与标题 ✓） | 英文叙述中把整体（生成）叫作 generative 之处改为 becoming，generative 只指生成的区域；入口与标题已改（见下）；现行章节中约两千处用法须逐处判断，全库清扫的规模另行提出；引用 Ren 原话之处不改；GOALS 的文字等 Ren 同意，路径作为兼容入口保留 | 链接、阅读目录与生成页检查 |
 | P37 区域（另一会话） | 包括：可能性（接下来能形成什么，以包含比较，有无一个形成的反事实说明它贡献什么）；退化、中性与生成三个区域；相界定理（没有条件能被永远耗下去，门控条件的持续损失终结需要它者）；层级（自身 ⊂ 系统 ⊂ 整体）与延续和不退化在何处重合；搭便车者的见证；带有所表示边界的形成与其实际依存范围的比较 | Lean 检查、记录与研究节 |
 | P38 第一部分的总陈述与章节重组 | 章节分为第一部分与第二部分；第一部分以一条总陈述收束，说明三件事：不加公理时对每个展开成立什么，每个前提加了什么，动力学在何处不再决定 | 章节、记录与生成页检查 |
 | P39 第二部分（另一会话） | 一条公理，即延续到将来对任何东西都有意义；G0 作为目标定理 | Lean 检查与审查 |
 | P40 路线 (b) | 不加公理：“应当”是中心在其所表示的边界与其实际依存一致时所做的；只解释承认与动机，不主张更多的根据 | 待定 |
+
+**P36b 入口与标题。** Ren 说：“before we name the whole model as generative, which is not quite right, it should be the model of becoming/evolution”；生成的是一种性质：“being generative is its existence creates more possibilities of becoming”。依此判断：generative 指整体（展开、活动、世界、模型、关系、整个理论）时改为 becoming；指区域或性质（生成的区域、生生不息、生成的组织、生成的根能生出理解）、指以之命名的方向或程序（generative alignment、generative grounding）、指形式对象（`GenerativeCore`）或历史上的理论名（relational generativity）时保留。中文标题不变，“生成”本就是 becoming。
+
+- 入口：README、BRIEF 与理论 README 的研究句由 `tools/research/navigation.py` 生成，“within one generative unfolding”改为“within one unfolding of becoming”；理论图谱同句随之改。
+- 改了英文标题的十三章：COGNITION-LEARNING-AND-EVOLUTION、CONNECTED-GENERATIVE-MODEL（“Toward one connected model of becoming”，合 Ren 的“one connected model”）、ETHICAL-FOUNDATION、EXPLANATORY-NECESSITY、GENERATED-LOGIC、HUIGEN（“can the entire theory be necessary…”，合 Ren 的“entire theory is necessary for scientific philosophy”）、IMMANENT-MATHEMATICAL-IDENTITY、KNOWLEDGE、NONDUAL-METHOD、PHILOSOPHICAL-ACCOUNT、STRONGEST-FOUNDATION-CLAIM、THEORY-OF-BECOMING、UNIFIED-ETHICAL-GROUNDING；阅读目录中的英文标题随之改，文件名不变。
+- 保留的标题：ALIGNMENT-THROUGH-CHANGE、MARKETS-AND-GENERATIVE-REGIMES、LIVING-DEPENDENCIES、GENERATIVE-DEVELOPMENT、GENERATIVE-GROUNDING、CYBERNETICS、SYSTEMS-COMPLEXITY-CHAOS、MATHEMATICS-AND-GENERATIVITY、DEEPER-GENERATIVE-ROOT、MATHEMATICAL-ROOT-FRONTIER、MATHEMATICAL-TRUTH-AND-THE-ROOT、SCIENTIFIC-PHILOSOPHY、GENERATIVE-CORE-LEAN、THEORY、FORMAL-CORE。其中“generative grounding”与“generative root”是否也指整体，留到逐处清扫时连同正文一并判断。
+- 不改：GOALS 与目标记录中“How generative relations change”的英文（等 Ren 同意）；`_process/` 中的旧版副本、编辑记录与历史快照；生成链（Ren 的策展视图）的名称。
+
+**P36b, entry points and titles.** Ren: the whole model should be “the model of becoming/evolution”, and being generative is that a formation's existence “creates more possibilities of becoming”. So generative becomes becoming where it names the whole (an unfolding, activity, world, model, relations, the entire theory). It stays where it names the regime or the property, a direction or programme so named, a formal object (`GenerativeCore`) or the historical theory name. The research sentence that `navigation.py` writes into README, BRIEF and the theory README now says “within one unfolding of becoming”. Thirteen chapters' English titles changed, with their reading-register titles; file names stay. Fifteen titles are kept. Whether “generative grounding” and “generative root” also name the whole is left to the sweep, where the body text can be judged with them. The goal record's English and frozen copies under `_process/` are unchanged.
 
 **P36 对照表 / P36 rename table.** 只改名；声明的陈述与证明不变。旧名留在历史条目、保留的运行、旧回执与审查文件中，按此表读。
 
@@ -370,7 +379,7 @@ Ren confirmed two readings: possibilities as what can form next, and the whole a
 
 The stages:
 - **P36:** witness names, done; the table is above.
-- **P36b:** generative no longer stands for becoming in English prose. Entry points and titles come first; a sweep of the roughly two thousand uses in the current chapters, each needing a judgment, will be proposed with its scale; quotations of Ren stay.
+- **P36b:** generative no longer stands for becoming in English prose. Entry points and titles are done (above); a sweep of the roughly two thousand uses in the current chapters, each needing a judgment, will be proposed with its scale; quotations of Ren stay.
 - **P37:** the regimes, by the other session. It covers possibilities, the three regimes and their phase boundaries, the levels, a free-rider witness, and represented boundaries against actual dependence.
 - **P38:** the Part I capstone and the chapter restructure.
 - **P39:** Part II, by the other session.

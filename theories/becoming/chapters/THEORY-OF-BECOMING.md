@@ -1,4 +1,4 @@
-# 生成关系怎样变化 / How generative relations change
+# 生成关系怎样变化 / How relations of becoming change
 
 9 October 2026, Asia/Bangkok. Current argument under [Ren's active goal](../../../sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) and the [Theory of Becoming priority](../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md). This chapter develops the scope; it is not a declaration that the whole foundation is complete.
 
