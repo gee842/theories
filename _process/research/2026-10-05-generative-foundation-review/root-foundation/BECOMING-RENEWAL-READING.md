@@ -3904,6 +3904,104 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 
 **边界。** 离散步，活动的计数；水平与依存的计数在前提之下、有限世界中每个选择之下的起约束规律、更强的起约束读法仍开放；没有伦理谓词；名称（saturated、lossyQueue、relayQueue 等）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
 
+## 61. 熵：生成留下的历史与守住它的代价（R5）
+
+2026-10-11。Ren 在 §59.4 之后说（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）：
+
+> I know what "Every exchange loses at least one smallest amount" is now, it is entropy
+>
+> so that makes me to speculate if 0 is possible, if we can also derive entropy from this, if we can, spawn a new session to focus on this
+
+又确认“the case of 0”指零前提：
+
+> pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises. but for if "lossless exist", can we find a path, to figure out, and prove along the way? i think another session is working on this already
+
+本节是那个会话的结果。三个问题，先求不加前提的最强形式：零（无损的交换）是否可能，恰在何时；熵（脊柱的每次交换的最小损失，`Flow.DissipatesOn`）能否推出而不作前提；第二定律的形式，即一个永不减少的量，与计数的规律、量的规律怎样相关。§59.4 转来的候选陈述（历史的计数、离散的复现、合并的过去）在此陈述并证明。
+
+```text
+Result(s): 新增 entropy-history-and-record
+Delta: 新模块 Becoming.Entropy（导入 Becoming.Resolution）。
+       第一律与逆转：Flow.GainlessOn、LosslessOn、Gainless、Lossless、Reverses、exchanges；
+       DissipatesOn.gainlessOn、Dissipative.gainless、LosslessOn.gainlessOn、Lossless.gainless、DissipatesOn.idle_of_lossless、
+       Reverses.mem、mem_back、take_total、give_total、taken、given、closedAt、gainlessOn_iff、idle_of_dissipates、exchanges_eq；
+       Balances.reverse_restores、Dissipative.irreversible、Balances.exchanges_of_change、Balances.restores_levels_not_history。
+       记录：Flow.withRecord、Web.withRecord、recorded、unitRecord、RecordsOn、residue；balances_withRecord、closedAt_withRecord、
+       gainlessOn_withRecord_iff、losslessOn_withRecord_iff、dissipatesOn_iff_unitRecord、dissipatesOn_iff_recorded、
+       dissipatesOn_iff_conserved、Dissipative.of_recorded、dissipative_iff_unitRecord、GainlessOn.conserves_residue、
+       GainlessOn.residues_lost、Balances.lowered_by、nonrising、falls_by_record、RecordsOn.exchanges_le。
+       耗散的量：Flow.lost、dissipated；dissipated_succ、dissipated_mono、DissipatesOn.dissipated_rises、
+       Balances.stock_lost、stock_dissipated、dissipated_le、dissipated_zero、history_within、loss_ceases；
+       replenishment_lost_of_le、DissipatesBy.uptake_le_lost、uptake_within_dissipated。
+       复返与构型的计数：Web.config、Changes、Revisits；configurations、configurationsWithin、configurations_exact、
+       configurations_examples；Web.changes_within、rests_of_never_revisits；Flow.Balances.never_revisits、changes_within、
+       changes_within_lossless、rests_of_never_revisits、unending_change_revisits。
+       箭头：Web.Arrow、Web.never_revisits_of_arrow、Flow.Balances.rests_of_arrow、Flow.Balances.no_arrow、World.no_arrow。
+       合并：Web.Determined、Web.Merges、Web.merges_of_settles、Web.changes_persist、Flow.Balances.revisits_of_apart、
+       merges_of_never_revisits、merges_of_arrow、merges_of_dissipates。
+       守住历史：Flow.history、history_mono、CarriesHistory、CarriesHistory.changes、Balances.arrow_of_carries、
+       never_revisits_of_carries、exchanges_within_of_carries、exchange_stops_of_carries；World.rests_of_never_revisits、
+       arising_revisits、never_revisits、forgets。
+       见证：Passing（passes、history_grows、no_arrow、history_without_arrow、record_needs_both）、
+       Settling（settles、merges）、Gathering（gathers）。
+Supplied premises / correspondence: 历史的结论只用平衡；第一律（Gainless）、无损（Lossless）、确定的变化（Web.Determined）
+       是定理的假设，不是公理；把记录算作一个条件是读法（AI，按 Ren 的“entropy”）；与热力学的对应是读法，不是物理推导
+Evidence: 合并检查器回执 20261010T221843.461334Z（1960 项定理、2968 项声明审计，全部源声明公理报告为空；Entropy 172 项定理、
+          220 项声明审计），外围回执 20261010T222927.673958Z；新声明先在暂存树中从前导编译，逐条 #print axioms 全部为空
+Boundary: 离散步，固定单位的自然数量；确定的变化是对世界加的假设；“熵”指哪一个量由 Ren 决定；物理的对应是读法；尚无独立审查
+Integration: 记录 entropy-history-and-record；计划 §10 R5；章节第一部分与 §9 的脊柱表；模块说明、根模块与检查器的范围
+```
+
+**零是可能的，恰在无损之处。** 在平衡的流中，一个成员的水平每次变化都是与家族的一次交换（`Flow.Balances.exchanges_of_change`）。第一律在固定单位下是“无中不生有”：每个不重复的封闭家族得回的至多是从它取走的（`Flow.Gainless`）；无损是恰好得回（`Flow.Lossless`）；耗散是第一律加上最小损失（`Flow.Dissipative.gainless`）。逆转一次交换（`Flow.Reverses`：同样的形成参与，各取其所给、给其所取），在第一律之下恰当原交换无损时逆转仍在规律之内（`Flow.Reverses.gainlessOn_iff`）；耗散之下没有交换被逆转（`Flow.Dissipative.irreversible`）。`Passing` 中一个载体把一个单位在两边之间来回传递：世界有限、平衡、无损、每步被围住，每次交换在下一步被逆转，生起与止息都复现（`Passing.passes`）。所以零是可能的。
+
+**不加前提的是历史。** 家族自 T 起交换的历史（`Flow.history`）从不缩减（`Flow.history_mono`），有所交换的每一步都增长。交换连同其逆转恢复每个水平，历史却记下两次（`Flow.Balances.restores_levels_not_history`）。这是 Ren 的第二条消息的形式：“its reverse transformation will take another change”。`Passing` 中历史每步增长一，永不停止（`Passing.history_grows`），构型每两步回来。这一部分与 `endpoint-loss-and-return`（沿实际历史，返回恰当保留全部端点可能）及 `ReturnConditions.lean` 中加入的计数器（计数使原有的返回不再是返回，投影后的返回不变）相关，是脊柱上的同一区分：水平恢复而历史不恢复。
+
+**最小损失是放在守恒量之中的记录。** 把交换的记录算作又一个条件：每个参与的形成给它，没有形成从它取（`Flow.withRecord`、`Web.withRecord`），流在原处平衡恰当算入记录后平衡（`Flow.balances_withRecord`）。于是一个流在一步上耗散于一个家族，恰当有某个记录使每次交换精确守恒家族连同其记录，并给记录至少一个单位（`Flow.dissipatesOn_iff_conserved`）；也恰当每次交换以一个单位记录时，家族连同记录不得增益（`Flow.dissipatesOn_iff_unitRecord`、`Flow.dissipatesOn_iff_recorded`）。两部分都需要（`Passing.record_needs_both`）。第一律之下，记录收到的恰是耗散的（`Flow.GainlessOn.residues_lost`）。这正是 Ren 的类比的形状：每次交换精确守恒，记录仍增加。但这是分解，不是推出：给定第一律，“每次交换在守恒量之内留下至少一个单位的记录”恰是耗散的严格部分。
+
+**耗散的量与第二定律的形式。** 家族每步失去的（`Flow.lost`）自 T 起之和（`Flow.dissipated`）从不减少（`Flow.dissipated_mono`）；第一律之下它连同存量守恒（`Flow.Balances.stock_dissipated`），所以不多于 T 时的存量；被耗散时每步至少增加取用者的个数，历史在它之内（`Flow.Balances.history_within`）；无损时为零（`Flow.dissipated_zero`）；第一律之下损失不复现（`Flow.Balances.loss_ceases`）。按比例 q 耗散时（R1 至 R3 的 `Flow.DissipatesBy`），被取走的至多是失去的 q+1 倍（`Flow.DissipatesBy.uptake_le_lost`），所以任一段上被取走的总量至多是耗散的量的 q+1 倍（`Flow.uptake_within_dissipated`），与量的规律 `Flow.uptake_bound` 相合：后者以存量为界，这里以耗散的量为界。
+
+**构型的计数与复返。** 第一律之下家族的构型（`Web.config`，每个成员的水平）总在其 T 时存量之内的构型中（`configurationsWithin`），无损时在恰为该存量的构型中；`configurations n K` 恰好一次列出 K 个单位落入 n 个成员的每种方式（`configurations_exact`；`configurations_examples`：3 个单位落入 2 个成员有 4 种，2 个落入 3 个有 6 种）。从不复返的家族，变化的步数不多于这些构型（`Flow.Balances.changes_within`、`changes_within_lossless`），因此归于静止（`Flow.Balances.rests_of_never_revisits`）。所以第一律之下，不止的变化复返（`Flow.Balances.unending_change_revisits`）；有限世界中不息的生起从每一步起都复返（`World.arising_revisits`）。耗散之下家族从不复返（`Flow.Balances.never_revisits`）。`Settling` 中一个单位只传递一次，无损，然后静止：从不复返带来静止，不需要最小损失（`Settling.settles`）。
+
+**水平没有箭头。** 构型的一个量若从不下降、每次变化都上升（`Web.Arrow`），家族就不能复返（`Web.never_revisits_of_arrow`）。所以第一律之下，箭头带来静止（`Flow.Balances.rests_of_arrow`）；变化继续时，构型的任何量都不是箭头（`Flow.Balances.no_arrow`、`World.no_arrow`）。`Passing` 中没有（`Passing.no_arrow`），而历史在增长。不加前提而增加的是历史，不是有限围住之内水平的任何量。
+
+**合并。** 变化是构型的函数时（`Web.Determined`），变化之后静止就把两个取过的不同构型送到同一个（`Web.merges_of_settles`、`Web.Merges`），不用流的任何规律。不合并任何构型时，变化一旦开始就不停止（`Web.changes_persist`），所以第一律之下家族复返（`Flow.Balances.revisits_of_apart`）；从不复返时，无论因为箭头还是耗散，变化都合并构型（`Flow.Balances.merges_of_never_revisits`、`merges_of_arrow`、`merges_of_dissipates`；这三条是双重否定：不是不合并）。`Passing` 中两边互换，不合并任何构型（`Passing.history_without_arrow`）；`Settling` 中静止合并了构型，接受单位一边的水平是箭头，只上升一次（`Settling.merges`）。这就是 §59.4 所转的“合并的过去”：在有限的围住之内，或者不合并，变化复返而没有箭头；或者合并，某个区分失去。
+
+**守住历史。** 构型承载历史时（`Flow.CarriesHistory`：构型的某种读数给出历史），这一读数是箭头（`Flow.Balances.arrow_of_carries`），所以家族从不复返（`Flow.Balances.never_revisits_of_carries`）；第一律之下与它的交换在其构型的个数之内停止（`Flow.Balances.exchanges_within_of_carries`、`exchange_stops_of_carries`）。有限世界在第一律之下不停交换，就会遗忘：从没有一步起其构型承载其历史（`World.forgets`）。
+
+**从外部汲取的箭头。** `Gathering` 中一个记录每步从一个新的关系项取一个单位：每次交换精确守恒，每步被围住，交换复现，记录的水平是一个永不停止的箭头；记录从其外得到增益，世界不有限（`Gathering.gathers`）。所以“家族不得增益”与“世界有限”这两个前提都起作用：精确守恒之下永不停止的箭头要从所持之外汲取，与 continued-change-needs-openness 相合。
+
+**回答。**
+
+1. *零是否可能。* 可能，恰在无损之处：第一律之下一次交换的逆转在规律之内，恰当这次交换无损；`Passing` 是有限、平衡、无损、被围住而不息的世界。Ren 的业力读法在此是：逆转之后水平没有差异，历史有差异。
+2. *熵能否推出。* 不加前提地增加的是历史（`Flow.history_mono`、`Flow.Balances.restores_levels_not_history`、`Passing.history_grows`）。在有限的围住之内，水平的任何量都不能在变化继续时一直上升（`Flow.Balances.no_arrow`，见证 `Passing`）；变化是构型的函数时，任何箭头或静止都合并构型（`Web.merges_of_settles`、`Flow.Balances.merges_of_arrow`）；在构型中守住历史使交换在构型的个数之内停止（`World.forgets`）。每次交换的最小损失不由更少的推出：它恰是第一律加上放在守恒量之中的一个单位的记录（`Flow.dissipatesOn_iff_conserved`），是重新的读法，不是推导。
+3. *第二定律的形式。* 历史与耗散的量都从不减少；耗散的量连同存量守恒；按比例耗散时被取走的至多是耗散的量的 q+1 倍。
+
+**与热力学的对应（读法，AI，不是物理推导）。**
+
+- *Clausius*：孤立系统的熵不减。这里不减的是历史（无前提）与耗散的量（第一律之下）。
+- *Boltzmann*：S = k ln W。`configurations n K` 是 K 个量子落入 n 个振子的方式，即 Einstein 固体的多重度 C(n+K−1, K)；第一律之下从不复返的变化步数以它为界。粗粒化的熵从有序的开端上升需要关于开端的前提（过去假设），这里没有陈述。
+- *Zermelo、Poincaré*：有限的守恒动力学复返（`Flow.Balances.unending_change_revisits`）。*Loschmidt*：可逆的规律之下没有水平的箭头（`Flow.Balances.no_arrow`、`Passing.no_arrow`）。
+- *Landauer*：静止或箭头合并构型（`Web.merges_of_settles`、`Flow.Balances.merges_of_arrow`），合并就是擦除。*Bennett*：可逆计算保留历史，代价是保存它的空间；有限世界中守住历史使交换停止（`World.forgets`）。
+- *Gouy–Stodola*：能量守恒而可用功下降。这里，算入记录时每次交换精确守恒，家族的存量下降，下降的恰是记录收到的（`Flow.dissipatesOn_iff_conserved`、`Flow.GainlessOn.residues_lost`）；脊柱的水平读作仍可用的差异，与 §59.4 的读法一致。
+- *开放系统*：永不停止的箭头需要从外部汲取（`Gathering.gathers`），与“生起不息需要开放”同形。
+
+**作者反审。**
+
+*反驳 1：把历史叫作熵，是否只是换名？* 历史是交换的计数，不是物理的熵；本节不说它是。它是 Ren 所问的“在精确守恒之下仍增加的量”在表示中唯一不加前提就有的那个。哪个量叫“熵”由 Ren 决定：历史（零前提）、放在守恒量之中的记录（即最小损失），或一个粗粒化的计数（需要开端的前提）。
+
+*反驳 2：`Flow.dissipatesOn_iff_conserved` 是否推出了耗散？* 没有。它说耗散恰是“守恒连同记录”加上“记录每次至少一个单位”；后者恰是严格部分。它的内容在于把 Ren 的类比（每次交换守恒，熵仍增加）变为脊柱上的一个等价，而不是把前提消去。
+
+*反驳 3：合并的定理要求变化是构型的函数，这是否是新前提？* 是，对那些定理是假设。脊柱的流以步为索引，不要求下一步由当前的构型决定；所以合并的结论只对确定的变化成立，在别处只有复返与箭头的结论（它们不需要这个假设）。`Web.merges_of_settles` 本身不用流的任何规律。
+
+*反驳 4：`no_arrow` 是否只是复返定理换了说法？* 大体是：箭头排除复返，复返定理给出矛盾。增加的是陈述的方向：Ren 问的是“什么在增加”，答案是在有限的围住之内，变化继续时水平中没有，所以要么在历史中，要么在围住之外（`Gathering`），要么以合并为代价（`Settling`）。
+
+*反驳 5：`Gathering` 的世界无限，是否与现实无关？* 它只表明定理的两个前提起作用：家族不得增益与世界有限。物理上对应开放系统或膨胀的空间；这里不作此推断。
+
+*反驳 6：第一律（Gainless）本身是否是前提？* 是。它是定理的假设；零的可能性（`Passing`）表明它与无损相容，`Gathering` 表明在其中家族得益时箭头可以不停。Ren 的原话以能量守恒为物理的前提；本节不推出第一律。
+
+**读法（AI，待 Ren）。** 生成留下差异，这一点不需要前提：每次变化都是一次交换，逆转也是一次交换，历史只增不减。需要代价的是守住它：在有限的围住之内，守住历史的构型会耗尽构型，守住一个不断上升的量要合并区分，把记录放在守恒量之中就是每次交换的最小损失。所以 Ren 所说的熵可以有两种读法：作为历史，它不需要前提；作为守恒量中的记录，它就是脊柱的耗散。两者之间是精确的：耗散恰是第一律加上守恒量中的记录。
+
+**边界。** 离散步，固定单位的自然数量；确定的变化（`Web.Determined`）是合并定理的假设；`Merges` 的结论是双重否定；只陈述了合并与否的二分，没有陈述可达构型的个数不增；粗粒化的熵与有序的开端没有陈述；记录作为普查中的关系项、使算入记录的流本身是一个世界，仍开放；与热力学的对应是读法；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4332,4 +4430,18 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 On the AI's reading, pending Ren: binding leaves in the counts only its instances, activity and arising, and arising at a step of activity where arising is bound to come from activity. Records extended or revised: whole-law-of-counting, map-of-premises, counting-under-enclosure. Receipt 20261010T171040.121853Z (Premises 59, Counting 161). Not yet independently reviewed; the author's counterreview is in section 60.
 
-The package now has 1788 theorems and 2748 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60. The periphery bridge passed against this core (receipt 20261010T182121.048951Z).
+**Entropy: what becoming leaves, and what holding it costs (R5).** After section 59.4 Ren read the least loss per exchange as entropy (‘I know what "Every exchange loses at least one smallest amount" is now, it is entropy’), asked whether 0 is possible and whether entropy can be derived (‘so that makes me to speculate if 0 is possible, if we can also derive entropy from this, if we can, spawn a new session to focus on this’), and confirmed that the case of 0 means zero premises (‘pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises. but for if "lossless exist", can we find a path, to figure out, and prove along the way?’) ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). The new module `Becoming.Entropy` answers, strongest form first.
+
+- **With no premise, the history grows.** In a balanced flow every change of a level is an exchange (`Flow.Balances.exchanges_of_change`). The history of a family's exchanges (`Flow.history`) never shrinks (`Flow.history_mono`), and an exchange with its reverse (`Flow.Reverses`) restores every level while the history counts both (`Flow.Balances.restores_levels_not_history`): Ren's ‘its reverse transformation will take another change’. This is the spine's form of the distinction already drawn by `endpoint-loss-and-return` and the counter of `ReturnConditions.lean`.
+- **Zero loss is possible, exactly where lossless.** Under the first law at a fixed unit (`Flow.Gainless`, nothing from nothing), the reverse of an exchange is within the law exactly where the exchange loses nothing (`Flow.Reverses.gainlessOn_iff`); under dissipation none is reversed (`Flow.Dissipative.irreversible`). In `Passing` a carrier hands a unit back and forth in a finite, balanced, lossless, enclosed world, each exchange reversed at the next step, its history growing by one at every step without end (`Passing.passes`, `Passing.history_grows`).
+- **The least loss is a record held in the conserved amount.** With the record counted as one more condition, given to and never taken from (`Flow.withRecord`), a flow dissipates on a family exactly where every exchange conserves the family with its record exactly and leaves the record at least one unit (`Flow.dissipatesOn_iff_conserved`), and exactly where, recording each exchange at one unit, the family with its record gains nothing (`Flow.dissipatesOn_iff_unitRecord`); both parts are needed (`Passing.record_needs_both`), and under the first law the record receives exactly what is dissipated (`Flow.GainlessOn.residues_lost`). This is the shape of Ren's analogy, each exchange conserving while the record rises, but it decomposes the least loss rather than deriving it.
+- **The second-law form.** The amount dissipated (`Flow.dissipated`) never falls, with the stock it is conserved under the first law (`Flow.Balances.stock_dissipated`), the history is within it (`Flow.Balances.history_within`), and under loss in proportion `q` everything taken is at most `q + 1` times it (`Flow.uptake_within_dissipated`).
+- **Recurrence and the count of configurations.** Under the first law the configuration stays among the configurations of its stock, listed exactly (`configurations_exact`, the Einstein-solid count); a family never revisiting one changes at most that many times and rests (`Flow.Balances.changes_within_lossless`, `Flow.Balances.rests_of_never_revisits`), so change without end revisits (`Flow.Balances.unending_change_revisits`). `Settling` rests without the least loss.
+- **No arrow of the levels.** A quantity of the configuration that never falls and rises at every change (`Web.Arrow`) rules out revisiting, so under the first law no such quantity exists while change goes on (`Flow.Balances.no_arrow`, `World.no_arrow`); `Passing` has none while its history grows.
+- **Merging.** Where change is a function of the configuration (`Web.Determined`), rest after a change merges two configurations, with no law of the flow (`Web.merges_of_settles`); merging none, change once begun never stops, so under the first law the family revisits (`Flow.Balances.revisits_of_apart`); never revisiting, under an arrow or dissipation, it merges (`Flow.Balances.merges_of_arrow`, `Flow.Balances.merges_of_dissipates`). `Passing` swaps and merges nothing; `Settling` merges, with an arrow rising once (`Settling.merges`).
+- **Holding the history.** A configuration carrying the history makes its reading an arrow (`Flow.Balances.arrow_of_carries`), so exchange stops within the configurations (`Flow.Balances.exchange_stops_of_carries`), and a finite world under the first law that keeps exchanging forgets (`World.forgets`).
+- **An arrow drawn from beyond.** In `Gathering` a record takes a unit from a new relatum at every step: every exchange conserves exactly, every step is enclosed, and the record's level rises without end, in a world that is not finite (`Gathering.gathers`).
+
+On the AI's reading, pending Ren: becoming leaves a difference with no premise, as history; what costs is holding it. In a finite enclosure, a configuration that holds the history runs out of configurations, a rising quantity of the levels needs a merging of distinctions, and the record held in the conserved amount is exactly the least loss per exchange. So Ren's entropy has two readings, exactly related: as history it needs no premise; as the record in the conserved amount it is the spine's dissipation. Correspondences to Clausius, Boltzmann, Zermelo, Loschmidt, Landauer, Bennett and Gouy–Stodola are readings, not physical derivations; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated. Record entropy-history-and-record added. Receipt 20261010T221843.461334Z (Entropy 172 theorems, 220 declaration audits), periphery receipt 20261010T222927.673958Z. Not yet independently reviewed; the author's counterreview is in section 61.
+
+The package now has 1960 theorems and 2968 declaration audits, over a core closure of 38 modules and a package of 36, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4, 60 and 61. The periphery bridge passed against this core (receipt 20261010T222927.673958Z).
