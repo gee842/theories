@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "files": {
-    "README.md": "7afaad193897ac7d6d96973c65bd9f396d8e3a4ca880d3dbc68b8bc3ec655255",
+    "README.md": "d2cfdf6c426b10306f60016247062e004f8bb14155f2dd81ea1779ec875109d9",
     "RESEARCH.md": "3c5141b9d37dc4de79925a2334ffdf42b3641a0f898172360e439979be006a62",
     "RESULTS.md": "bab301746aac430b70591e81caaf9bf4ae3c6c74ebf11d8740208f6ffedf42cd",
-    "GOALS.md": "a8cfaef137a43c89a117d07f20599184789648cb35427daf2be79b35d167df95",
+    "GOALS.md": "6f58d131cf8fb41582b3e17ef52607b93bb955523da1065ea3ea18916095b7f9",
     "DEPENDENCIES.md": "e20b6842b0a979766b9c6b30b412c09366b289ddf4d7aa797e5d3f474cc958e5",
     "_process/BRIEF.md": "91c3c623d62ac986abb80e32efead87a77e08f96de6152f1452dcabce7a0ad7d",
     "theories/becoming/README.md": "dc9470f976ab31b4c02a6cf0e0d26eec14418cb12ee93fd8ab5724ea03c58a31",
-    "theories/becoming/results/ROADMAP.md": "699d7897751b8bbf1908b00bf7e1391cd1f891d91a02fbd4b9b2b25145eaf32b",
+    "theories/becoming/results/ROADMAP.md": "fa33bff693cdf69829100feb63494dd86384d0ae4f68d081c3a5c96db77bcb43",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "436d7b1e886b5fd323dea06cc7ac924175815ad51118b1c0f89fbcb85adb09ee",
     "OPEN-QUESTIONS.md": "14e3daa8ecddc6c863067bc688fceeb397c45542e5267b666ed85102011dde34",
     "theories/becoming/chapters/CLAIMS.md": "ba9a6b8cf50a8a1c0d4969c26c96263dbc4918cbe7a810c52fdae177ce6d47c3",

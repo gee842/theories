@@ -1,0 +1,203 @@
+# 零前提的规律 / Laws with zero premises
+
+2026-10-11，Asia/Bangkok。AI（Claude Opus 5.5）应 Ren 的转向指示撰写的计划与清点（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）：
+
+> stop extending the premise-selection tables. New goal: remove premises and derive the most general versions, zero premises first.
+
+本文是计划与清点。它不向核心加入定理，也不登记成果。下面的分类与“Y 当且仅当 Z”形式是 AI 的提议，待 Ren 审阅；其中 (b) 类需要 Ren 决定。
+
+2026-10-11, Asia/Bangkok. A plan and inventory written by the AI (Claude Opus 5.5) following Ren's redirect. Nothing enters the core and no result is registered. The classification and the proposed “Y iff Z” forms are the AI's, pending Ren; the items in class (b) need Ren's decision.
+
+## 0. 方向 / The direction
+
+**中文。** 到 P45 为止，前进的方式是选择表：对八个前提的 256 个选择，各给出恰在何处成立的规律。现在反过来：取每条规律，去掉前提，使它对每个世界成立，而把证明实际用到的条件写进规律本身，作为关于该世界在那些步、那些关系项上的条件 Z。规律取确切的形式“Y 当且仅当 Z”；选择定理应作为推论得出：一个前提对每一步都成立，就使 Z 在每一步成立。表示之内各前提已证明是偶然的、彼此独立的（`World.contingent`、`World.independent`），所以从不声称某个前提作为规律被推出；推出的只是带着局部条件的规律。每一步都写明所作的是哪一种：局部化；重新奠定表示（需 Ren 决定）；或推广表示。
+
+**English.** Up to P45 the work advanced by selection tables: for each of the 256 selections of the eight premises, the laws holding exactly where it is selected. The direction is now reversed. Each law is taken, its premises are removed, and it is stated for every world, with the condition its proof actually uses written into the law itself as a condition Z on that world at those steps and relata. The law takes the exact form “Y iff Z”. The selection theorems should follow as corollaries: a premise holding at every step makes Z hold at every step. Within the representation the premises are proved contingent and independent (`World.contingent`, `World.independent`). So no premise is ever claimed as derived as a law; what is derived is the law with its local condition. Each move is named as one of three: localize; re-found the representation (Ren's decision); or generalize the representation.
+
+## 1. 清点 / The inventory
+
+### 1.1 方法 / Method
+
+**中文。** 对象是第一部分的主要定理：其记录的 canonical source 是 Becoming 核心模块、不属第二部分（Significance、Metaethics、Standpoints、Ranking、Renewal、Bridge、Correspondence）的 39 条成果记录所列的定理。脚本从这些记录所列声明的签名中找出用到八个前提、有限、被围住或可判定的，共 355 处，其中 339 处在定理上（[脚本](ZERO-PREMISE-INVENTORY.py)）；见证世界（例如 `Shuttle.shuttle`、`Brood.brood`）不是规律，不计。然后逐一读证明，看前提在哪一步、对哪些关系项或家族被用到。分类：
+- (a) 可局部化：证明只在某些步、对某些关系项或家族用到它；
+- (b) 属于表示，需 Ren 决定；
+- (c) 确实需要全局成立。
+
+**English.** The scope is the main theorems of Part I: those listed by the 39 result records whose canonical source is a Becoming core module outside Part II (Significance, Metaethics, Standpoints, Ranking, Renewal, Bridge and Correspondence are excluded). A script found the declarations listed by those records whose signatures use any of the eight premises, finiteness, enclosure or decidability: 355 in all, 339 of them theorems ([script](ZERO-PREMISE-INVENTORY.py)); witness worlds such as `Shuttle.shuttle` and `Brood.brood` are not laws and are not counted. Each proof was then read to see at which step, and for which relata or family, it uses the premise. The classes are:
+- (a) localizable to those steps and relata;
+- (b) belonging to the representation, which needs Ren's decision;
+- (c) genuinely needed globally.
+
+记号 / Notation: `t` a step; `x` a relatum whose standing or activity changes across `t`; `f` a relatum present in the flow at `t`; `c` a condition; `es_t` the family closed at `t`; `[T, ∞)` the steps from `T` on. “Bal(t, c)” is balance at one step and condition: `level (t+1) c + taken t c = level t c + given t c`. “Diss(es, t)” is `Flow.DissipatesOn es t`. “Emb(x, t)” is `active t x ↔ 0 < level t x`. “Act(t, f, c)” and “Take(t, f, c)” are the instances of only active relata giving and taking. “Dep(t, g)” is `active t g → Supported t g`.
+
+### 1.2 结论 / Findings
+
+**中文。**
+- **八个前提的每一处使用都属 (a)。** 每个证明都只在特定的步、对特定的关系项或家族用到前提：平衡在 `(t, c)` 上，`c` 是水平改变者或被围住家族的成员；只有活跃者给予或取用，在给予或取用 `x` 的那个 `f` 上；耗散，在那一步被围住的那个家族 `es_t` 上；体现，在开始或不再活跃的那个 `x` 上，于 `t` 与 `t+1`；活动需要支持，在那一步活跃的那个 `g` 上；普查，在所计数的那些步上；有界传递，在世系所涉的条件 `c` 上。没有哪处证明用到前提对一切步、一切关系项的普遍形式。
+- **有限与被围住也属 (a)。** 有限只经由它的局部推论被使用：每步有一个封闭的家族（全部关系项），每步有普查，计数有界。被围住本身就是关于一步的条件。静止定理要求被围住的步从 `T` 起不断，这是对尾段 `[T, ∞)` 的每一步的条件，仍是局部的：只有那些步上被用到。
+- **(b) 类是表示的承诺，共五项。**
+  1. 以整单位计的量：静止依靠总水平是自然数、不能无穷次下降（`falls_finitely`）；耗散中的 `sign` 项（每次取用至少失去一个单位）就是最小差异。Ren 已为最小差异选 A（属于生成本身，[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)），R4 把单位的细分算作给予。最小损失能否推出由熵的会话研究，这里不重复。
+  2. 被计数处的可判定性（`mark`、计数表）。
+  3. 离散的步与共同的时间索引。
+  4. 流中每个参与者列出一次，家族不重复（`Distinct`）。
+  5. 逐点（`Pointwise`，代替函数外延性）。
+- **(c) 类：八个前提中没有。** 唯一被证明不能局部化的需要是逻辑的，不是关于世界的前提：要对每个有限世界给出此后不再生起的一步，就推出有限全知原则（`World.lpo_of_finite_ends`、`Listed.lpo_of_few`、`Web.lpo_of_ending`）；不加可判定性而要求有限世界中生起复现恰当止息复现，就等于排中律（`World.law_iff_em`）。这些是 (b) 中第 2 项的边界：去掉可判定性时，“明确的终止之步”的陈述形式不能保留，“不复现”的形式可以保留。
+
+**English.**
+- **Every use of the eight premises is in class (a).** Each proof uses a premise only at particular steps and for particular relata or families:
+  - balance at `(t, c)`, where `c` is a condition whose level changes or a member of the enclosing family;
+  - only active relata giving or taking, at the `f` that gives to or takes from `x`;
+  - dissipation, on the family `es_t` closed at that step;
+  - embodiment, at the `x` that arises or ceases, at `t` and `t+1`;
+  - activity needing support, at the `g` active at that step;
+  - a census, at the steps counted;
+  - bounded transmission, at the condition `c` the lineage concerns.
+
+  No proof uses a premise in its universal form, over every step and every relatum.
+- **Finiteness and enclosure are in class (a) too.** Finiteness is used only through its local consequences: a closed family at each step (all relata), a census at each step, and bounded counts. Enclosure is a condition on a step. The rest theorem asks for enclosure at every step from `T` on. That is a condition on each step of the tail `[T, ∞)`, still local: it is used only at those steps.
+- **Class (b), the commitments of the representation, has five items.**
+  1. Amounts in whole units. Rest relies on the total standing being a natural number, which cannot fall infinitely often (`falls_finitely`). The `sign` term of dissipation, at least a unit lost whenever something is taken, is the least difference. Ren chose A for the least difference: it belongs to becoming itself ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). R4 counts the refinement of the unit as a giving. Whether the least loss can be derived is the entropy session's question and is not duplicated here.
+  2. Decidability where counted (`mark`, tallies).
+  3. Discrete steps and a shared time index.
+  4. Each relatum taking part in the flow listed once, and families without repetition (`Distinct`).
+  5. Pointwise properties (`Pointwise`, in place of function extensionality).
+- **Class (c): none among the eight premises.** The only needs proved not to localize are logical, not premises about worlds:
+  - an explicit step after which nothing arises, asked of every finite world, gives the limited principle of omniscience (`World.lpo_of_finite_ends`, `Listed.lpo_of_few`, `Web.lpo_of_ending`);
+  - asking of finite worlds without decidability that arising recurs exactly when ceasing does is excluded middle (`World.law_iff_em`).
+
+  These mark the boundary of item 2 of class (b). Without decidability, statements naming an explicit end step cannot be kept; statements that something does not recur can.
+
+### 1.3 逐条 / Theorem by theorem
+
+列中“位置”写证明在哪一步、对哪些关系项或家族用到它。“类”写 a、b 或 c。/ “Where” gives the step and the relata or family at which the proof uses the premise; “Class” is a, b or c.
+
+| 定理 / Theorem (record) | 前提 / Premise | 位置 / Where | 类 / Class |
+|---|---|---|---|
+| **A. 计数 / Counting** | | | |
+| `Web.arising_of_ceasing`, `World.arising_of_ceasing` (ceasing-needs-arising) | census | listing at the steps of `[N, N+n]` for each `N`; only `\|alive N\|` and the census balance on the stretch are used | a — a finite list holding the active at one step `N` after which nothing arises suffices (with nothing arising, later activity is within it) |
+| 同上 / same | decidability | `mark (Ceases t a)`, `mark (Arises t a)` on the listed relata | b (2) |
+| `Web.unceasing_iff_bounded`, `CountedBy.arising_iff_ceasing` (bounded-census-keeps-pace) | census; bound `B`/`K` | listing on the stretch; `\|alive t\| ≤ K` at arbitrarily late `t` | a — already an exact iff without a bound: `Listed.ceasing_iff_shortfall`, `Listed.coming_iff_excess` |
+| `Listed.tally`, `counting_laws`, `tally_iff_counted` (whole-law-of-counting) | decidability | the marks counted | b (2); no premise on worlds |
+| `counting_binds_jointly`, `Web.Embodied.arises_given` (whole-law-of-counting, life-as-condition-of-life) | balance | `Bal(t, x)` for the `x` arising across `t` | a |
+| 同上 / same | acting | `Act(t, f, x)` for the `f` present giving to `x` | a |
+| 同上 / same | embodiment | `Emb(x, t)`, `Emb(x, t+1)` | a |
+| 同上 / same | census | only to turn “`f` active at `t`” into a positive count at `t` | a |
+| `World.taking_binds_counting` | taking | `Take(t, f, c)` for each `f` present at `t` (nothing active, so nothing taken) | a |
+| 同上 / same | balance | `Bal(t, c)` for `x` and for the members of the family active after `t` | a |
+| 同上 / same | dissipation | `Diss(alive (t+1), t)`: the family active after the step | a |
+| 同上 / same | embodiment, census | `Emb(c, t)`, `Emb(c, t+1)` on that family; listing at `t`, `t+1` | a |
+| `World.enclosed_binds_counting` | balance, dissipation | `Bal(t, x)`; `Diss(cs, t)` for the `cs` closed at `t` | a |
+| 同上 / same | embodiment | `Emb(c, t)` for `c ∈ cs`; `Emb(x, t)`, `Emb(x, t+1)` | a |
+| `counting_under`, `counting_binds_iff`, `enclosed_counting_under`, `finite_counting_under`, `binding_*` (selection tables) | all | through the laws above and B3 | a, b (2) — become corollaries |
+| **B. 静止与开放 / Rest and openness** | | | |
+| `Flow.standing_runs_down`, `standing_never_rises`, `change_lowers`, `exchange_lowers`, `fall_lowers_on`, `rise_lowers_on` (continued-change-needs-openness, rising-and-falling-in-one-exchange) | balance | `Bal(t, c)`, `c ∈ es_t` (`Balances.over` sums them) | a |
+| 同上 / same | dissipation | `Diss(es_t, t)` | a; its `sign` term is b (1) |
+| 同上 / same | standing census | `stand t`, `stand (t+1)` only to equate the total standing with `stock es_t` | a — removable: `es_t` already holds what stands |
+| `Flow.stills`, `exchanges_finitely`, `World.arising_stops`, `comes_to_rest`, `rests_around`, `rests_enclosed`, `arising_opens`, `Finite.comes_to_rest`, `World.rests` (continued-change-needs-openness, space-and-its-parts) | balance, dissipation, enclosure | the step law above at each `t ∈ [T, ∞)` | a |
+| 同上 / same | embodiment | `Emb(x, t)`, `Emb(x, t+1)` for the `x` arising or ceasing in the tail | a |
+| 同上 / same | census of activity | only for ceasing, through the census law | a |
+| 同上 / same | decidability | `comes_to_rest`'s ceasing half; `rests_enclosed` needs none (¬¬ enclosure) | b (2) |
+| 同上 / same | whole units | `falls_finitely` on the total standing | b (1) |
+| 同上 / same | finiteness | supplies a closed family at each step (all relata) and the census | a |
+| `World.enclosure_bounds_change`, `ChangeBound.not_recurring` (counting-under-enclosure) | balance, dissipation, enclosure, embodiment, census | as in the rest theorem, at each `t ≥ T` | a |
+| 同上 / same | decidability, whole units | marks; `falls_by_occurrences` | b (1), b (2) |
+| `Balances.runs_down`, `takers_within`, `taking_ceases`, `Dissipative.opens`, `finite_ceases`, `More.opens`, `opens_of_arising` (no-finite-part-bears-taking) | balance, dissipation | `Bal(t, c)`, `c ∈ cs`; `Diss(ds, t)` for the families containing `cs` at the late steps | a |
+| 同上 / same | finiteness | `finite_ceases`: the family of all conditions, closed at every step | a |
+| `Flow.rise_with_fall`, `standing_with_fall`, `rise_alone_opens` (rising-and-falling-in-one-exchange) | balance, dissipation | already stated on `ds` at `t` | a — already local |
+| `generation_needs_replenishment`, `Embodied.given_of_arises`, `generation_opens`, `generation_ceases`, `generation_draws_in` (generation-is-replenishment) | balance, embodiment, dissipation, finiteness | `Bal(t, c)` on the family from `T`; `Emb(x, ·)` for the arising `x`; `Diss` on the closed families; finiteness as above | a |
+| `Flow.fed_from_beyond`, `rising_fed_from_beyond`, `generation_fed_from_beyond` (continuing-self-fed-from-beyond) | balance, dissipation, embodiment | at the step and family | a |
+| 同上 / same | decidability | inward or fed decided | b (2) |
+| `Flow.replenishment_recurs`, `renewing_recurs`, `uptake_needs_replenishment` (unceasing-generation-needs-renewal) | balance, taking | `Bal(t, c)` on the depleted family over the stretch; `Take(t, f, c)` for the arising formations taking from it | a |
+| `Balances.replenished_over`, `renewers_over`, `More.replenishment_unbounded` (more-needs-renewers) | balance | `Bal(t, c)`, `c ∈ cs`, over the stretch | a |
+| `More.unceasing`, `More.grows`, `unceasing_of_growth` | taking, census, decidability | `Take` at the first step of the arising formations; listing on the stretch; marks | a, a, b (2) |
+| **C. 依存、储备与支持 / Dependence, reserve and support** | | | |
+| `continuing_restores`, `consumed_continues_transformed`, `static_dependent` (becoming-dependence-dynamics) | dependent | `Dep(t, g)` for the `g` active at the steps considered | a — `Kept` and `Broken` are already local |
+| `Web.Dependent.inactive_below`, `ceases_below`, `Downstream.one_way`, `Mortal.after_its_end` (space-and-its-parts, derived-extent-limits) | dependent, balance | `Dep(t, g)` for the one `g` whose condition falls below its need; `Bal` on that condition | a |
+| `Web.Census.over_stretch`, `Census.balanceFrom`, `arisingFrom_of_ceasingFrom` (census-balance, census-balance-under-continuation) | census; decidability | listing on the stretch compared; marks | a; b (2) |
+| `Web.carries_zero`, `Carries.lasts`, `lasts_within` (reserve-defers-ending) | dependent; decidability | `Dep` as the zero reserve; marks of `f`'s activity | a; b (2) |
+| `Carries.chain_ends_of_em`, `Web.lpo_of_ending` | excluded middle, LPO | the explicit end of a chain | b (2), with the proved boundary |
+| `rise_given_by_supported`, `gains_from_supported`, `unsupported_stays`, `nothing_supported_stays` (support-from-the-supported) | balance, acting, dependent | `Bal(t, c)` for the required `c` that rise; `Act(t, g, c)` and `Dep(t, g)` for the givers `g` | a |
+| `Balances.supported_iff_within_margin`, `supported_of_net_give`, `admits_of_net_draw`, `closes_nothing`, `opens_nothing` (closing-needs-net-draw, four-cases-of-a-part) | balance | `Bal(s, c)` for `s < t` and the `c` that `f` requires (through `Balances.withheld`) | a; the withheld levels are a disclosed choice of the representation |
+| `Balances.consumption_ends_with_feeders`, `unfed_consumption_ends`, `Overshoot.ends_through_feeder` (consumption-ends-with-feeders) | balance, acting, dependent | `Bal(T+k, c)`; `Act(T+k, f, c)`, `Dep(T+k, f)` for the givers `f` of `c`, `k < n` | a |
+| `joint_excess_ends`, `stays_below`, `excess_bounded` (own-count-misses-joint-excess) | balance, acting, dependent | as above, on `c` over the stretch | a |
+| `DescendsAt.supported`, `unsupported_childless`, `selected_le`, `selection_within` (evolution-on-descent) | acting, dependent | `Act(t, g, x)` for the parent giving at descent; `Dep(t, g)` | a |
+| `transmitted_supported`, `transmitted_within` | transmitting | `TransmitsWithin c δ` for the one `c` concerned; the uniform `δ` over all `c` is not used | a |
+| `Mortal.without_continues`, `Clearing.undermines_within_renewal` (derived-extent-limits) | balance, dissipation, dependent | at the steps and conditions of the formation considered | a |
+| **D. 整体、前提图与逻辑 / The whole, the map of premises, and logic** | | | |
+| `World.arising_iff_ceasing`, `World.rests` (space-and-its-parts) | finiteness | a closed family at each step; a listing of every relatum | a |
+| 同上 / same | decidability | the finite-world law | b (2); `World.law_iff_em` proves it cannot be dropped from this statement |
+| `World.lpo_of_finite_ends`, `Listed.lpo_of_few` (counting-under-enclosure, continued-change-needs-openness) | decidability | an explicit end step for every finite world | b (2), the proved boundary |
+| `World.acting_across`, `acting_of_enclosed`, `Finite.acting`, `Finite.counted` (map-of-premises) | taking, dissipation, enclosure, finiteness, decidability | `Take(t, f, c)` and `Diss(es_t, t)` at the enclosed step; the finite list | a; b (2) for `Finite.counted` |
+| `Flow.More.unceasing_reidentified` (identity-across-steps) | taking, census, decidability | as in `More.unceasing` | a, a, b (2) |
+| **E. 每一分辨率 / Every resolution** (R-line, another session) | | | |
+| `Flow.quantum_bound`, `uptake_bound`, `World.rests_at_resolution`, `World.rests_refinement_counted` (rest-at-every-resolution, rest-with-refinement-counted) | balance, dissipation (`DissipatesBy`), enclosure, embodiment, census | at each step of the tail and the enclosing family | a; the loss in proportion and the counted refinement are b (1), already put to Ren and decided as A |
+
+### 1.4 Ren 的决定 / For Ren to decide
+
+**中文。** 以下各项改动表示本身，所以属于 Ren：
+- **(b1) 最小差异。** 已决定：A（属于生成本身）。熵的会话研究它能否推出。
+- **(b2) 可判定性。** 保留，或者在不复现的形式中去掉。后一种做法中，明确终止之步的陈述按已证明的边界放弃。
+- **(b3) 时间。** 只检验更粗的步（采样）是否保持规律，还是也研究连续时间。另一个会话的工作区中有一个尚未提交的 `Sampling` 模块（见 §4）。
+- **两种可能的重新奠定（AI 的提议）。**
+  - 把不平衡算作关系项：任一步、任一条件上的不平衡，都可以算作一个只给或只取的关系项的交换，就像 R4 把细分算作给予。这样平衡就由表示成立，而它的局部失效成为可见的交换。
+  - 把体现读作定义：活跃就是立着。这会失去形成与条件两个角色的区分，所以 AI 不建议。
+
+  两者都属于重新奠定表示，都需要 Ren 决定。
+
+**English.** These change the representation itself and so are Ren's:
+- **(b1) The least difference.** Decided: A, it belongs to becoming. Whether it can be derived is the entropy session's question.
+- **(b2) Decidability.** Keep it, or drop it in the forms stating that something does not recur. In the second case, statements naming an explicit end step are given up, as the proved boundary requires.
+- **(b3) Time.** Test only coarser steps (sampling), or also continuous time. Another session's worktree holds an uncommitted `Sampling` module (section 4).
+- **Two possible re-foundings, proposed by the AI.**
+  - Count imbalance as a relatum. An imbalance at a step and condition can be counted as the exchange of a relatum that only gives or only takes, as R4 counts the refinement as a giving. Balance then holds by the representation, and its local failure becomes a visible exchange.
+  - Read embodiment as a definition: to be active is to stand. This loses the distinction between the two roles of formation and condition, so the AI does not recommend it.
+
+  Both re-found the representation and need Ren's decision.
+
+## 2. 零前提的重述（下一步，尚未写 Lean）/ Zero-premise restatements (next, no Lean yet)
+
+**中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
+
+**English.** In Ren's order, four laws come first. Each is stated for every world, with its local condition inside it. The move in each is “localize”. The forms below are proposals, not results until checked in Lean.
+
+1. **一次交换的规律与静止 / The law of one exchange, and rest.** Let `es` be a family without repetition, closed across `t`, holding whatever stands at `t` or `t+1`, balanced on its members across `t` and dissipated on across `t`. Then `stock es (t+1) + takers es t ≤ stock es t`, and the following are equivalent (“Y iff Z”):
+   - some condition's standing changes across `t`;
+   - the total standing falls across `t`;
+   - some relatum taking part takes or gives across `t`.
+
+   Rest is the corollary over a tail: if this holds at every step of `[T, T+N)`, the steps there at which some standing changes number at most `stock(T) − stock(T+N)`. Continued change needs openness: change recurs only where the local condition fails at arbitrarily late steps. With what stands finite at each step, so that the total standing is a number, the count is exact: from `T`, the changes at steps meeting the condition number at most the total standing at `T` plus the rises of the total standing at the steps not meeting it. The selection results follow, since the eight premises with enclosure give the condition at every step.
+2. **不再存在需要生起 / Ceasing needs arising.** If a finite list holds the relata active at step `N` and nothing arises from `N` on, then at each later step the relata active, with those that ceased since `N`, number exactly those active at `N`. So ceasing recurs with arising stopped at `N` only if no finite list holds what is active at any step from `N`. The census law is the corollary under a census. The exact iffs `Listed.ceasing_iff_shortfall` and `Listed.coming_iff_excess` remain, with a listing needed only at the steps they compare.
+3. **封闭约束变化 / Closure bounds change.** Over steps `[T, T+N)` each meeting the condition of item 1, the relata standing at `T+N`, with the steps at which some standing changed, number at most the total standing at `T`. This needs no embodiment. For activity, embodiment is needed only at the relata that arise or cease at those steps. `World.enclosure_bounds_change` and P47's `World.enclosure_bounds_standing` are corollaries.
+4. **生起需要活跃的给予者 / Arising needs an active giver.** This recasts the three lemmas of the withdrawn P48. With balance at `(t, x)`, each of the following is an exact iff:
+   - (i) `x` comes to stand across `t` iff `level t x = 0` and `taken t x < given t x`;
+   - (ii) `x` ceases to stand across `t` iff `0 < level t x` and `taken t x = level t x + given t x`;
+   - (iii) across a step at which nothing is taken from a family holding what stands after it, balanced on its members across the step, some member rises iff some relatum taking part gives to the family without taking from it; coming to stand is such a rise. Where the family is also closed across the step, dissipation on it at that step excludes exactly this, so nothing comes to stand.
+
+   Corollaries:
+   - with `Emb(x, t)` and `Emb(x, t+1)`, an `x` arising across `t` is given to by a relatum other than `x`; with `Act(t, f, x)` for its givers, something is active at `t`;
+   - `Web.Embodied.arises_given`, `counting_binds_jointly`, `taking_binds_counting` and the three P48 lemmas.
+
+**规律需要的表示承诺 / Commitments each law needs (step 4, to be tested).**
+- Law 4 (i)–(iii) needs no whole unit: it is ordered-sum arithmetic of one step. It needs no decidability. It concerns one step, so whether it survives coarser steps turns on balance composing, which the uncommitted `Sampling` module reports it does.
+- Laws 1 and 3 need the least difference, b (1). With finer units they fail unless the refinement is counted (R4) or the loss is proportional (R3). They need no decidability in their “does not recur” form, and they need discrete steps.
+- Law 2 needs decidability for the count; whether a ¬¬ or pigeonhole form avoids it is to be tested. It needs discrete steps.
+
+## 3. 不主张什么 / What is not claimed
+
+**中文。** 不主张任何前提作为规律被推出；不主张最小差异已被推出（那是熵的会话的问题）；不主张八个前提之外没有别的前提被用到。逻辑、`Std` 与核心的纯净规则不变。已落地的选择定理保持其范围内的成果。
+
+**English.** No premise is claimed derived as a law. The least difference is not claimed derived; that is the entropy session's question. It is not claimed that no premise beyond the eight is used. The logic, `Std` and the pure-core rules are unchanged. The selection theorems already landed remain results at their scope.
+
+## 4. 协调 / Coordination
+
+- **The entropy session** (“Derive entropy: is a lossless exchange possible?”). A message on 2026-10-11 asked which definitions and files it is changing, and whether it will produce a local law of the form “dissipation at step `t` on family `F` iff …”. The message expired undelivered because the two sessions run in different permission modes. Until it is answered:
+  - this work states dissipation only as `Flow.DissipatesOn es t` at the steps used;
+  - it does not touch `Becoming/Dissipation.lean`, `Becoming/Flow.lean` or `Becoming/Resolution.lean`;
+  - it does not take up the derivability of the least loss.
+- **Another session's uncommitted modules.** A worktree under session `858b224e` holds uncommitted modules:
+  - `StandingCounting`, `DependenceCounting` and `FiniteBinding`, which overlap P47 and P46;
+  - `Sampling`, coarser steps, which bears on the time test of step 4;
+  - `Determination`, standing fixed by the exchange and one cross-section.
+
+  P46 and P47 land first, as Ren directed. Where those modules land, step 4 reuses `Sampling` rather than rebuilding it.
+- **P42–P44** of the peer session land before P46 and P47, as agreed.

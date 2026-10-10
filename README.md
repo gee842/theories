@@ -143,7 +143,7 @@ The broader generative account meets its original five completion conditions as 
 
 Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and G0/J evaluation remain differentiated within the same reality.
 
-**Next:** Articulate and derive the whole’s necessary content, then explain the particular conditions of generative forms within it. Reuse completed mechanisms without making their universality a condition of the whole.
+**Next:** Ren's zero-premise redirect of 11 October: remove premises and derive the most general version of each Part I law, zero premises first. Inventory where each main theorem uses a premise, finiteness, enclosure or decidability; restate each localizable law for every world as “Y iff Z”, Z holding of that world at the steps and relata the proof uses, with the selection theorems as corollaries; put commitments of the representation to Ren; test each law against weakening the representation. The selection tables are not extended further, and no premise is claimed derived where the representation proves it contingent.
 
 [Scope and authorization](GOALS.md#theory-of-becoming) · [Primary source](sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)
 
