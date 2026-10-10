@@ -16,15 +16,15 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-08T12:10:53.651155+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-10T07:39:53.694857+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
 | Mapped chats / 已映射会话 | 44 |
 | Result families / 成果族 | 14 |
-| Working Lean sources / 工作源码 | 486 |
-| Audit drivers / 审计入口 | 13 |
-| Saved verification or build copies / 检查及构建副本 | 3150 |
+| Working Lean sources / 工作源码 | 584 |
+| Audit drivers / 审计入口 | 14 |
+| Saved verification or build copies / 检查及构建副本 | 11771 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
 
 No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.
@@ -39,7 +39,7 @@ No semantic duplicate percentage is asserted. Header matches are review candidat
 | P02 · same-current-statement-and-proof-text | [InquiryRoot.derivation_sound](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean) · [InquiryRoot.WholeDischarge.derivation_sound_constructively](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean) | 相同的既有 Derives/Holds 命题和当前归纳证明体；第二名称保留历史依赖削减步骤。成果只计一个健全性命题，保留两份源码与回执。 Source inspection finds the same statement over the inherited Derives/Holds and the same current induction body. The second name preserves a historical dependency-reduction step. Count one soundness result; retain both source histories and receipts. This audit does not replace either body or assert a fresh Lean check. |
 | P03 · different-local-semantics | [Generative.ExplanatoryBranching.same_functional](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) · [Generative.ExplanatoryJointness.same_target_unique](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) | 同样的声明外形使用不同命名空间的模型与测试；共同语言增加 together 及共同实现，保留为不同语义的关联命题。 Matching headers use different namespace-local Model/Test/Same types. The joint language adds a together constructor and joint realization. Retain as related statements with distinct semantics, not duplicate proofs. |
 
-The header scan retains 39 candidate groups. These match text after removing the theorem name; local definitions and implicit contexts are not resolved. The decisions above are source-inspected examples, not a claim that all candidates are duplicates.
+The header scan retains 55 candidate groups. These match text after removing the theorem name; local definitions and implicit contexts are not resolved. The decisions above are source-inspected examples, not a claim that all candidates are duplicates.
 
 声明外形相同只是比较线索。冻结证据副本已从工作源类别移出；不同局部定义的守恒、轨迹和支持证明继续分别保留。
 
@@ -114,7 +114,7 @@ Finite traces, faithful projections and necessary retained distinctions supply t
 
 **Scope still separate / 保留范围:** A shared representation does not prove every law, unique foundation or wisdom.
 
-**Migrated records / 已迁移条目:** [branching-target-uniqueness](records/branching-target-uniqueness.md) · [trace-law-equivalence](records/trace-law-equivalence.md)
+**Migrated records / 已迁移条目:** [becoming-context-coherence](records/becoming-context-coherence.md) · [becoming-dependence-dynamics](records/becoming-dependence-dynamics.md) · [becoming-finite-horizon](records/becoming-finite-horizon.md) · [becoming-return-grades](records/becoming-return-grades.md) · [bounded-census-keeps-pace](records/bounded-census-keeps-pace.md) · [branching-target-uniqueness](records/branching-target-uniqueness.md) · [branching-tests-bisimulation](records/branching-tests-bisimulation.md) · [ceasing-needs-arising](records/ceasing-needs-arising.md) · [census-balance-under-continuation](records/census-balance-under-continuation.md) · [census-balance](records/census-balance.md) · [coming-and-ceasing-keep-pace](records/coming-and-ceasing-keep-pace.md) · [continued-change-needs-openness](records/continued-change-needs-openness.md) · [continuing-self-fed-from-beyond](records/continuing-self-fed-from-beyond.md) · [control-coherence-loss](records/control-coherence-loss.md) · [derived-history-law-exactness](records/derived-history-law-exactness.md) · [effective-capacity-and-eventual-reachability](records/effective-capacity-and-eventual-reachability.md) · [endpoint-loss-and-return](records/endpoint-loss-and-return.md) · [evolution-on-descent](records/evolution-on-descent.md) · [finite-trace-transport](records/finite-trace-transport.md) · [generation-is-replenishment](records/generation-is-replenishment.md) · [identity-across-steps](records/identity-across-steps.md) · [joint-correlation-reduced-dynamics](records/joint-correlation-reduced-dynamics.md) · [joint-difference-making](records/joint-difference-making.md) · [life-as-condition-of-life](records/life-as-condition-of-life.md) · [map-of-premises](records/map-of-premises.md) · [more-needs-renewers](records/more-needs-renewers.md) · [no-finite-part-bears-taking](records/no-finite-part-bears-taking.md) · [own-count-misses-joint-excess](records/own-count-misses-joint-excess.md) · [relational-renewal-classification](records/relational-renewal-classification.md) · [reserve-defers-ending](records/reserve-defers-ending.md) · [rising-and-falling-in-one-exchange](records/rising-and-falling-in-one-exchange.md) · [space-and-its-parts](records/space-and-its-parts.md) · [substitution-preserves-consumption](records/substitution-preserves-consumption.md) · [supported-renewal-recovery](records/supported-renewal-recovery.md) · [theory-of-becoming-foundation](records/theory-of-becoming-foundation.md) · [trace-law-equivalence](records/trace-law-equivalence.md) · [unceasing-generation-needs-renewal](records/unceasing-generation-needs-renewal.md) · [whole-law-of-counting](records/whole-law-of-counting.md) · [whole-persists-through-generation](records/whole-persists-through-generation.md)
 
 <a id="f02"></a>
 
@@ -130,7 +130,7 @@ Separate feasibility does not establish joint realization; different modules giv
 
 **Scope still separate / 保留范围:** No adapter between all three representations has been verified by this map.
 
-**Migrated records / 已迁移条目:** [aggregate-exit-funding](records/aggregate-exit-funding.md) · [exclusive-footprint-support](records/exclusive-footprint-support.md) · [joint-plan-composition](records/joint-plan-composition.md) · [joint-target-uniqueness](records/joint-target-uniqueness.md)
+**Migrated records / 已迁移条目:** [aggregate-exit-funding](records/aggregate-exit-funding.md) · [code-plan-global-support](records/code-plan-global-support.md) · [exclusive-footprint-support](records/exclusive-footprint-support.md) · [finite-continuation-plans](records/finite-continuation-plans.md) · [joint-code-plan-lifting](records/joint-code-plan-lifting.md) · [joint-decomposition-lifting](records/joint-decomposition-lifting.md) · [joint-plan-composition](records/joint-plan-composition.md) · [joint-target-uniqueness](records/joint-target-uniqueness.md)
 
 <a id="f03"></a>
 
@@ -146,6 +146,8 @@ Formation, occupation and release change readiness; continuing availability does
 
 **Scope still separate / 保留范围:** Actual scheduling and bounded pending work are separate implementation obligations.
 
+**Migrated records / 已迁移条目:** [acquired-revision-of-pending-task](records/acquired-revision-of-pending-task.md) · [formed-goal-revision-continuation](records/formed-goal-revision-continuation.md) · [pending-task-context-applicability](records/pending-task-context-applicability.md) · [versioned-request-completion](records/versioned-request-completion.md)
+
 <a id="f04"></a>
 
 ### F04 描述与反馈的可靠范围 Description and feedback reliability
@@ -159,6 +161,8 @@ Faithful descriptions, measured timing, changing dependence and tracking connect
 **Consolidation / 整合:** Reuse general error bounds when the same correspondence holds. A measured application and a convergence extension are different contributions.
 
 **Scope still separate / 保留范围:** Reliable readings, relevance of newly formed relations and justified response limits are not supplied by convergence alone.
+
+**Migrated records / 已迁移条目:** [context-sensitive-updating-correspondence](records/context-sensitive-updating-correspondence.md) · [situated-recovery-empirical-correspondence](records/situated-recovery-empirical-correspondence.md)
 
 <a id="f05"></a>
 
@@ -174,7 +178,7 @@ Evidence acquisition and fault coverage can support actual correction through ch
 
 **Scope still separate / 保留范围:** Intervention-derived dependence and joint diagnostic envelopes are related but their formal transport is not established here.
 
-**Migrated records / 已迁移条目:** [fallible-witness-diagnosability](records/fallible-witness-diagnosability.md)
+**Migrated records / 已迁移条目:** [fallible-witness-diagnosability](records/fallible-witness-diagnosability.md) · [mediated-evidence-transport](records/mediated-evidence-transport.md) · [recoverable-mediated-change](records/recoverable-mediated-change.md) · [reserved-shutdown-during-recovery](records/reserved-shutdown-during-recovery.md)
 
 <a id="f06"></a>
 
@@ -190,6 +194,8 @@ Selection can reproduce constructive or destructive arrangements; funded correct
 
 **Scope still separate / 保留范围:** Formation and continued legitimacy of inspection, custody, authority and concern remain substantive questions.
 
+**Migrated records / 已迁移条目:** [formed-software-continuation](records/formed-software-continuation.md) · [market-finite-support-obstruction](records/market-finite-support-obstruction.md) · [market-partial-correction-boundary](records/market-partial-correction-boundary.md) · [market-protected-continuation](records/market-protected-continuation.md) · [market-supported-finite-transition](records/market-supported-finite-transition.md)
+
 <a id="f07"></a>
 
 ### F07 显式公理下的实践判断 Practical judgment under explicit axioms
@@ -204,7 +210,7 @@ G0 and disclosed comparative commitments support scoped preservation, revision, 
 
 **Scope still separate / 保留范围:** Do not count applications as repeated foundations or import risk priorities into G0 without their extra premise.
 
-**Migrated records / 已迁移条目:** [alignment-direction-g0-j](records/alignment-direction-g0-j.md) · [fulfillment-chance-floor](records/fulfillment-chance-floor.md) · [practical-judgment-g0-j](records/practical-judgment-g0-j.md)
+**Migrated records / 已迁移条目:** [alignment-direction-g0-j](records/alignment-direction-g0-j.md) · [becoming-renewal-reading](records/becoming-renewal-reading.md) · [becoming-spine-instances](records/becoming-spine-instances.md) · [becoming-stepwise-reading](records/becoming-stepwise-reading.md) · [classification-robust-generative-comparison](records/classification-robust-generative-comparison.md) · [condition-correspondence-discipline](records/condition-correspondence-discipline.md) · [conveyance-crosses-the-boundary](records/conveyance-crosses-the-boundary.md) · [derived-extent-limits](records/derived-extent-limits.md) · [fulfillment-chance-floor](records/fulfillment-chance-floor.md) · [held-lives-g0-is-centering](records/held-lives-g0-is-centering.md) · [living-on-and-descent](records/living-on-and-descent.md) · [metaethical-core-characterization](records/metaethical-core-characterization.md) · [open-form-realization-under-revision](records/open-form-realization-under-revision.md) · [organizational-formation-from-generative-comparison](records/organizational-formation-from-generative-comparison.md) · [positioned-positive-reason](records/positioned-positive-reason.md) · [positive-ground-open-futures](records/positive-ground-open-futures.md) · [practical-judgment-g0-j](records/practical-judgment-g0-j.md) · [protection-priority-excludes-uniform-aggregation](records/protection-priority-excludes-uniform-aggregation.md) · [ranking-under-readings](records/ranking-under-readings.md) · [relational-generative-comparison](records/relational-generative-comparison.md) · [relational-reading-comparison](records/relational-reading-comparison.md) · [renewing-consuming-formation](records/renewing-consuming-formation.md) · [self-good-reachable-g0](records/self-good-reachable-g0.md)
 
 <a id="f08"></a>
 
@@ -220,7 +226,7 @@ The completed explicit-axiom route and stronger zero-axiom or universal-warrant 
 
 **Scope still separate / 保留范围:** Universal practical authority, root-of-wisdom necessity and exclusive foundational necessity remain distinct unproved goals.
 
-**Migrated records / 已迁移条目:** [universal-practical-warrant](records/universal-practical-warrant.md) · [wisdom-root](records/wisdom-root.md)
+**Migrated records / 已迁移条目:** [assured-route-criterion](records/assured-route-criterion.md) · [risk-certificate-outcome-distinction](records/risk-certificate-outcome-distinction.md) · [universal-practical-warrant](records/universal-practical-warrant.md) · [wisdom-root](records/wisdom-root.md)
 
 <a id="f09"></a>
 
@@ -236,6 +242,8 @@ Acquired distinctions and concern can influence later activity; epistemic and et
 
 **Scope still separate / 保留范围:** Formation of compositional organization and reliable concern under changed control are separate bridges.
 
+**Migrated records / 已迁移条目:** [acquired-binding-compositional-use](records/acquired-binding-compositional-use.md) · [enacted-scene-binding](records/enacted-scene-binding.md) · [encounter-control-and-retention](records/encounter-control-and-retention.md) · [encounter-selection-and-revision](records/encounter-selection-and-revision.md) · [historical-source-binding](records/historical-source-binding.md) · [learned-procedure-transmission](records/learned-procedure-transmission.md) · [naming-attention-coverage](records/naming-attention-coverage.md) · [retrospective-source-binding](records/retrospective-source-binding.md) · [transition-grouping-word-partition](records/transition-grouping-word-partition.md)
+
 <a id="f10"></a>
 
 ### F10 演化组织与发展校准 Evolutionary organization and developmental calibration
@@ -249,6 +257,8 @@ Growth, transmission, reconstruction and calibration have connected conditional 
 **Consolidation / 整合:** Treat biological organization and developmental reference renewal as complementary branches. Reuse imported maturation/reconstruction results rather than adding their audit counts again.
 
 **Scope still separate / 保留范围:** A common vocabulary of renewal does not identify their state spaces or establish long-run reproduction and empirical superiority.
+
+**Migrated records / 已迁移条目:** [formed-copying-correction](records/formed-copying-correction.md) · [formed-copying-registration](records/formed-copying-registration.md) · [growth-constrained-fragmentation](records/growth-constrained-fragmentation.md) · [inherited-structural-copying](records/inherited-structural-copying.md) · [joint-practice-forms-continuation](records/joint-practice-forms-continuation.md) · [material-preparation-output](records/material-preparation-output.md) · [organizational-rule-inheritance](records/organizational-rule-inheritance.md) · [recurrent-chain-assembly](records/recurrent-chain-assembly.md)
 
 <a id="f11"></a>
 
@@ -264,7 +274,7 @@ Finite-basis joint interpretation, potentialist truth and resource-sensitive rul
 
 **Scope still separate / 保留范围:** These results do not derive the metalogic or actual universal admission from no premises.
 
-**Migrated records / 已迁移条目:** [derivation-soundness](records/derivation-soundness.md) · [finite-basis-common-interpretation](records/finite-basis-common-interpretation.md)
+**Migrated records / 已迁移条目:** [binding-preserving-substitution](records/binding-preserving-substitution.md) · [constitutive-binding-assessment](records/constitutive-binding-assessment.md) · [derivation-soundness](records/derivation-soundness.md) · [finite-basis-common-interpretation](records/finite-basis-common-interpretation.md) · [finite-fallible-inquiry-necessity](records/finite-fallible-inquiry-necessity.md) · [scientific-inquiry-foundation](records/scientific-inquiry-foundation.md)
 
 <a id="f12"></a>
 
@@ -312,40 +322,12 @@ Catalogues, handoffs, pushes and presentation exports preserve or communicate re
 
 ## 双语阅读版的覆盖 Reading edition coverage
 
-The earlier reading registers contain 107 chapters; the current directory contained 135 at this checkpoint. 13 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
+The earlier reading registers contain 139 chapters; the current directory contained 139 at this checkpoint. 2 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
 
 旧阅读版的逐章摘要保留其核读版本；新增章节在下方单列，现有摘要的待核读版本不以刷新哈希消除。
 
 | Additional chapter / 新增章节 |
 |---|
-| [ALIGNMENT-DIRECTION](../chapters/ALIGNMENT-DIRECTION.md) |
-| [ALIGNMENT-THROUGH-CHANGE](../chapters/ALIGNMENT-THROUGH-CHANGE.md) |
-| [ASSUMPTION-FREE-FOUNDATION](../chapters/ASSUMPTION-FREE-FOUNDATION.md) |
-| [BASIC-CONFLICT-JUDGMENT](../chapters/BASIC-CONFLICT-JUDGMENT.md) |
-| [CHOICE-AND-GENERATIVE-CONTEXT](../chapters/CHOICE-AND-GENERATIVE-CONTEXT.md) |
-| [COGNITION-LEARNING-AND-EVOLUTION](../chapters/COGNITION-LEARNING-AND-EVOLUTION.md) |
-| [CONCERN-AND-NEW-REASONS](../chapters/CONCERN-AND-NEW-REASONS.md) |
-| [ETHICAL-LEARNING](../chapters/ETHICAL-LEARNING.md) |
-| [EVOLUTIONARY-ORGANIZATION](../chapters/EVOLUTIONARY-ORGANIZATION.md) |
-| [EXPLANATORY-NECESSITY](../chapters/EXPLANATORY-NECESSITY.md) |
-| [GENERATED-LOGIC](../chapters/GENERATED-LOGIC.md) |
-| [GOAL-FORMATION-AND-REVISION](../chapters/GOAL-FORMATION-AND-REVISION.md) |
-| [KNOWLEDGE](../chapters/KNOWLEDGE.md) |
-| [MATHEMATICAL-CORE](../chapters/MATHEMATICAL-CORE.md) |
-| [MEASURED-FEEDBACK-CORRESPONDENCE](../chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md) |
-| [NEW-POSSIBILITIES](../chapters/NEW-POSSIBILITIES.md) |
-| [PHILOSOPHICAL-ACCOUNT](../chapters/PHILOSOPHICAL-ACCOUNT.md) |
-| [PLURAL-SYSTEMS-AND-CORRECTION](../chapters/PLURAL-SYSTEMS-AND-CORRECTION.md) |
-| [PRACTICAL-JUDGMENT](../chapters/PRACTICAL-JUDGMENT.md) |
-| [PROVED-CONNECTIONS](../chapters/PROVED-CONNECTIONS.md) |
-| [RELATIONS-ACROSS-SCALES](../chapters/RELATIONS-ACROSS-SCALES.md) |
-| [SHENGSHENG](../chapters/SHENGSHENG.md) |
-| [SUSTAINED-LIVING-JUDGMENT](../chapters/SUSTAINED-LIVING-JUDGMENT.md) |
-| [SYSTEM-INDIVIDUATION](../chapters/SYSTEM-INDIVIDUATION.md) |
-| [SYSTEM-WARRANT](../chapters/SYSTEM-WARRANT.md) |
-| [THE-THEORY-OF-EVOLUTION](../chapters/THE-THEORY-OF-EVOLUTION.md) |
-| [WISDOM-AND-CONTEXT](../chapters/WISDOM-AND-CONTEXT.md) |
-| [ZERO-AXIOM-PRACTICAL-JUDGMENT](../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
 
 ## 维护 Maintenance
 

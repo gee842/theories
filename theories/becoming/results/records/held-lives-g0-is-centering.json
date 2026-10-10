@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "held-lives-g0-is-centering",
   "title": {
-    "zh": "被持有的生命上 G0 就是立场中立：每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加 N_std，不需要连通与 N_rel；中心不由动力学推出",
-    "en": "On held lives G0 is standpoint neutrality: where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with N_std, needing neither connection nor N_rel; the center is not derived from the dynamics"
+    "zh": "被持有的生命上 G0 是 S0 加立场中立：每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加 N_std，不需要连通与 N_rel；在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全",
+    "en": "On held lives G0 is S0 with standpoint neutrality: where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with N_std, needing neither connection nor N_rel; on a connected whole where every standpoint holds a living claim, S0 with N_rel is another completion"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T22:34:14+00:00",
+  "reviewed_at_utc": "2026-10-10T07:45:00+00:00",
   "claim": {
-    "zh": "在估值上，一个活的主张在某个立场的自身区域中，称为被持有；每个活的主张都被持有，记为 Valuation.Held，无人持有的主张记为 Valuation.Unheld。每个活的主张都被持有时，G0（主张层面：每个活的主张从每个立场都有意义）恰等于每个立场的 S0 加立场中立 N_std，既不用连通，也不用 N_rel（Valuation.significant_iff_held）。持有可判定、每个活的主张都经已形成的关系从一个被持有的活的主张到达时，G0 恰等于每个立场的 S0、N_std 与只指向无人持有者的 N_rel（Valuation.significant_iff_reached）。三者都必要：每个生命都被持有、只被自己的立场珍视时 S0 处处成立而 N_std 与 G0 不成立（Apart.standpoint_neutrality_is_needed）；一个无人持有的生命在 S0 与 N_std 之下没有意义（Unclaimed.held_is_needed）；从被持有者到达而无人持有的生命，在 S0 与 N_std 之下没有意义，指向无人持有者的 N_rel 不成立（Relayed.transmission_is_needed）。逐步读、每个形成以自身的事件为自身区域时，每个活的事件都被持有（Web.held_by_formations），所以 G0 恰等于每个形成的 S0 加 N_std（Web.significant_iff_self）。中心不由动力学推出：derived-extent-limits 的谨慎照管者满足每项推出的要求，从各形成自身的立场、以各自的事件评价时，每个生命都被持有，S0 处处成立，意义传入各自区域也成立，而另一个形成在第零步的活的事件从照管者的立场没有意义，N_std 与 G0 不成立（Totalizer.center_not_derived）；加上 N_std，G0 由 Web.significant_iff_self 成立。不用伦理公理，也不用 Lean 公理：S0、N_std 与 N_rel 都是定理的假设。",
-    "en": "On a valuation, a living claim is held when it lies in the own region of some standpoint; every living claim being held is Valuation.Held, and a claim no standpoint holds is Valuation.Unheld. Where every living claim is held, G0 at the level of claims (every living claim significant from every standpoint) is exactly S0 at every standpoint with standpoint neutrality N_std, using neither connection nor N_rel (Valuation.significant_iff_held). With holding decided and every living claim reached through formed relations from a held living claim, G0 is exactly S0 at every standpoint, N_std, and N_rel into claims no standpoint holds (Valuation.significant_iff_reached). Each is needed: with every life held and valued by its own standpoint only, S0 holds everywhere while N_std and G0 fail (Apart.standpoint_neutrality_is_needed); a life no standpoint holds has no significance under S0 and N_std (Unclaimed.held_is_needed); a life reached from a held one that no standpoint holds has no significance under S0 and N_std, N_rel into unheld claims failing (Relayed.transmission_is_needed). Read stepwise with each formation a standpoint whose own region is its own events, every living event is held (Web.held_by_formations), so G0 is exactly S0 at every formation with N_std (Web.significant_iff_self). The center is not derived from the dynamics: the careful keeper of derived-extent-limits meets every derived requirement, and valued from each formation's own standpoint over its own events every life is held, S0 holds everywhere and transmission into each own region holds, while the other formation's living event at step zero has no significance from the keeper's standpoint, so N_std and G0 fail (Totalizer.center_not_derived); with N_std added, G0 holds by Web.significant_iff_self. No ethical axiom and no Lean axiom is used: S0, N_std and N_rel are hypotheses of the theorems."
+    "zh": "在估值上，一个活的主张在某个立场的自身区域中，称为被持有；每个活的主张都被持有，记为 Valuation.Held，无人持有的主张记为 Valuation.Unheld。每个活的主张都被持有时，G0（主张层面：每个活的主张从每个立场都有意义）恰等于每个立场的 S0 加立场中立 N_std，既不用连通，也不用 N_rel（Valuation.significant_iff_held）。持有可判定、每个活的主张都经已形成的关系从一个被持有的活的主张到达时，G0 恰等于每个立场的 S0、N_std 与只指向无人持有者的 N_rel（Valuation.significant_iff_reached）。三者都必要：每个生命都被持有、只被自己的立场珍视时 S0 处处成立，而 N_std、N_rel 与 G0 都不成立，所以持有与 S0 不够（Apart.not_enough）；一个无人持有的生命在 S0 与 N_std 之下没有意义（Unclaimed.held_is_needed）；从被持有者到达而无人持有的生命，在 S0 与 N_std 之下没有意义，指向无人持有者的 N_rel 不成立（Relayed.transmission_is_needed）。S0 本身已使每个立场的意义沿任何关系进入其自身区域（Valuation.own_transmission）。N_std 不是唯一的补全：在连通、每个立场都持有某个活主张的整体上，处处 S0 加 N_rel 不用 N_std 也给出 G0（Valuation.significant_of_transmits）。逐步读、每个形成以自身的事件为自身区域时，每个活的事件都被持有（Web.held_by_formations），所以 G0 恰等于每个形成的 S0 加 N_std（Web.significant_iff_self）。沿依存推出的范围不定出中心，见 derived-extent-limits。不用伦理公理，也不用 Lean 公理：S0、N_std 与 N_rel 都是定理的假设。",
+    "en": "On a valuation, a living claim is held when it lies in the own region of some standpoint; every living claim being held is Valuation.Held, and a claim no standpoint holds is Valuation.Unheld. Where every living claim is held, G0 at the level of claims (every living claim significant from every standpoint) is exactly S0 at every standpoint with standpoint neutrality N_std, using neither connection nor N_rel (Valuation.significant_iff_held). With holding decided and every living claim reached through formed relations from a held living claim, G0 is exactly S0 at every standpoint, N_std, and N_rel into claims no standpoint holds (Valuation.significant_iff_reached). Each is needed: with every life held and valued by its own standpoint only, S0 holds everywhere while N_std, N_rel and G0 fail, so holding and S0 do not suffice (Apart.not_enough); a life no standpoint holds has no significance under S0 and N_std (Unclaimed.held_is_needed); a life reached from a held one that no standpoint holds has no significance under S0 and N_std, N_rel into unheld claims failing (Relayed.transmission_is_needed). S0 already carries each standpoint's significance along any relation into its own region (Valuation.own_transmission). N_std is not the only completion: on a connected whole where every standpoint holds a living claim, S0 at every standpoint with N_rel gives G0 without N_std (Valuation.significant_of_transmits). Read stepwise with each formation a standpoint whose own region is its own events, every living event is held (Web.held_by_formations), so G0 is exactly S0 at every formation with N_std (Web.significant_iff_self). That the extent derived along dependence does not fix the center is shown in derived-extent-limits. No ethical axiom and no Lean axiom is used: S0, N_std and N_rel are hypotheses of the theorems."
   },
   "hypotheses": [
     {
@@ -23,13 +23,17 @@
       "en": "significant_iff_reached needs holding to be decided, a logical commitment of the representation, as decided equality is."
     },
     {
+      "zh": "significant_of_transmits 需要连通，并需要每个立场都持有某个活的主张。",
+      "en": "significant_of_transmits needs connection and every standpoint holding some living claim."
+    },
+    {
       "zh": "S0、N_std 与 N_rel 都是假设，不是证明了的前提；本结果说 G0 在被持有的生命上恰等于哪些前提，不证明它们。",
       "en": "S0, N_std and N_rel are hypotheses, not proved premises; the result says exactly which premises G0 amounts to on held lives and proves none of them."
     }
   ],
   "correspondence": {
-    "zh": "Ren 的提议说：“it can be anything that want's its continuation to have significance”，又说：“if we want to add one axiom, that is for anything, its continuation into the future has significance”。AI 把它分为两半，Ren 答“exactly”：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。本结果给出中心一半的形式内容：对被持有的生命，那条公理恰是 N_std，S0 是每个想要的点上的种子；连通与 N_rel 只对无人持有的生命还有作用。与 metaethical-core-characterization 的关系：那里从一个种子出发，需要连通与 N_rel；这里在每个想要的点都有种子，只需要 N_std。在连通且每个生命都被持有的整体上二者都等价于 G0；一般地互不蕴涵，原刻画保持其范围。self-good-reachable-g0 留下了从立场相对的意义到规范意义的桥；重述把这座桥命名为唯一公理。对手的形状不变：主要的对手接受处处 S0，把意义限在各自的立场之内（Apart），这正是那条公理所否认的边界。在 Ren 接受重述之前，G0 仍是采用的公理。",
-    "en": "Ren's proposal says “it can be anything that want's its continuation to have significance” and “if we want to add one axiom, that is for anything, its continuation into the future has significance”. The AI analysis, which Ren answered “exactly”, splits it in two halves: the dynamics fixes the extent of what a wanting formation must count, not its center; the axiom's one job is to put a center at every point. This result gives the formal content of the center: on held lives the axiom is exactly N_std, S0 being the seed at every wanting point; connection and N_rel keep a role only for lives no standpoint holds. Relation to metaethical-core-characterization: that route starts from one seed and needs connection and N_rel; this one seeds every wanting point and needs only N_std. Where the whole is connected and every life is held both are equivalent to G0; in general neither implies the other, and the earlier characterization keeps its scope. self-good-reachable-g0 left a bridge from standpoint-relative to normative significance; the restatement names that bridge as the one axiom. The shape of rivals persists: the principal rival accepts S0 everywhere and keeps significance within each standpoint (Apart), the boundary the axiom denies. Until Ren accepts the restatement G0 remains the adopted axiom."
+    "zh": "Ren 的提议说：“it can be anything that want's its continuation to have significance”，又说：“if we want to add one axiom, that is for anything, its continuation into the future has significance”。AI 把它分为两半，Ren 答“exactly”：动力学定出想要延续者必须计入的范围，定不出中心；那条公理的唯一作用是让每一点都是中心。本结果给出中心一半的形式内容。形式上，“每个想要之点都是中心”落在 S0 上，S0 是每个想要之点上的种子；在被持有的生命上，G0 超出 S0 的可以集中在 N_std 上：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊。把 S0 读作想要、把 N_std 读作那条公理，是 AI 对提议的读法，待 Ren。N_std 不是唯一的补全：在连通、每个立场都持有活主张的整体上，N_rel 也补全 S0；把关系读作依存时，N_rel 正是“计入自身延续所依存的”的评价形式，所以在依存使每两个生命都相连的整体中，推出的范围加 S0 就到达每个生命。选 N_std 是因为它不需要连通，不是因为它是唯一的补全。与 metaethical-core-characterization 的关系：那里从一个种子出发，需要连通与 N_rel；这里在每个想要的点都有种子，在被持有的生命上只需要 N_std。在连通、有活的主张且每个生命都被持有的整体上，二者都等价于 G0；一般地互不蕴涵，原刻画保持其范围。self-good-reachable-g0 留下了从立场相对的意义到规范意义的桥；AI 的读法把这座桥命名为唯一公理。对手的形状不变：主要的对手接受处处 S0，把意义限在各自的立场之内（Apart，两种中立都不成立），这正是那条公理所否认的边界。在 Ren 接受重述之前，G0 仍是采用的公理。",
+    "en": "Ren's proposal says “it can be anything that want's its continuation to have significance” and “if we want to add one axiom, that is for anything, its continuation into the future has significance”. The AI analysis, which Ren answered “exactly”, splits it in two halves: the dynamics fixes the extent of what a wanting formation must count, not its center; the axiom's one job is to put a center at every point. This result gives the formal content of the center. Formally, a center at every wanting point is S0, the seed at each; on held lives, what G0 adds beyond S0 can be concentrated in N_std: what has significance from any center has it from every standpoint, and no center is privileged. Reading S0 as wanting and N_std as the axiom is the AI's reading of the proposal, pending Ren. N_std is not the only completion: on a connected whole where every standpoint holds a living claim, N_rel also completes S0; with the relations read as dependence, N_rel is the valuation form of counting what one's continuation depends on, so in a whole where dependence links every two lives the derived extent with S0 reaches every life. N_std is chosen because it needs no connection, not because it is the only completion. Relation to metaethical-core-characterization: that route starts from one seed and needs connection and N_rel; this one seeds every wanting point and, on held lives, needs only N_std. Where the whole is connected, some claim is living and every life is held, both are equivalent to G0; in general neither implies the other, and the earlier characterization keeps its scope. self-good-reachable-g0 left a bridge from standpoint-relative to normative significance; the AI's reading names that bridge as the one axiom. The shape of rivals persists: the principal rival accepts S0 everywhere and keeps significance within each standpoint (Apart, where neither neutrality holds), the boundary the axiom denies. Until Ren accepts the restatement G0 remains the adopted axiom."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
   "aliases": [
@@ -37,33 +41,34 @@
     "Becoming.Valuation.Unheld",
     "Becoming.Valuation.significant_iff_held",
     "Becoming.Valuation.significant_iff_reached",
+    "Becoming.Valuation.own_transmission",
+    "Becoming.Valuation.significant_of_transmits",
     "Becoming.Web.held_by_formations",
     "Becoming.Web.significant_iff_self",
-    "Becoming.Apart.standpoint_neutrality_is_needed",
+    "Becoming.Apart.not_enough",
     "Becoming.Unclaimed.held_is_needed",
-    "Becoming.Relayed.transmission_is_needed",
-    "Becoming.Totalizer.center_not_derived"
+    "Becoming.Relayed.transmission_is_needed"
   ],
   "dependencies": [
     {
       "id": "metaethical-core-characterization",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Valuation、SelfGood、transmits、shares、Neutral、Within、Significant、Reach 与 Invariant.reach；原刻画 significant_iff 保持其范围。",
-        "en": "Reuses Valuation, SelfGood, transmits, shares, Neutral, Within, Significant, Reach and Invariant.reach; the earlier characterization significant_iff keeps its scope."
+        "zh": "复用 Valuation、SelfGood、transmits、shares、Neutral、Within、Significant、Connected、Reach、reaches 与 Invariant.reach；原刻画 significant_iff 保持其范围。",
+        "en": "Reuses Valuation, SelfGood, transmits, shares, Neutral, Within, Significant, Connected, Reach, reaches and Invariant.reach; the earlier characterization significant_iff keeps its scope."
       },
       "interface": {
         "output": {
-          "zh": "估值、S0、两条中立与 G0 的定义；沿关系的不变量。",
-          "en": "The valuation, S0, the two neutralities and G0; invariants along relations."
+          "zh": "估值、S0、两条中立、连通与 G0 的定义；沿关系的不变量。",
+          "en": "The valuation, S0, the two neutralities, connection and G0; invariants along relations."
         },
         "input": {
-          "zh": "被持有的生命上 G0 恰等于处处 S0 加 N_std。",
-          "en": "On held lives G0 is exactly S0 everywhere with N_std."
+          "zh": "被持有的生命上 G0 恰等于处处 S0 加 N_std；连通时 S0 加 N_rel 也给出 G0。",
+          "en": "On held lives G0 is exactly S0 everywhere with N_std; on a connected whole S0 with N_rel also gives G0."
         },
         "conditions": {
-          "zh": "持有；significant_iff_reached 另需持有可判定与到达。",
-          "en": "Holding; significant_iff_reached also needs decided holding and reach."
+          "zh": "持有；significant_iff_reached 另需持有可判定与到达；significant_of_transmits 需要连通与每个立场持有活的主张。",
+          "en": "Holding; significant_iff_reached also needs decided holding and reach; significant_of_transmits needs connection and every standpoint holding a living claim."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
       }
@@ -92,34 +97,11 @@
       }
     },
     {
-      "id": "own-count-misses-joint-excess",
-      "relation": "formal-reuse",
-      "detail": {
-        "zh": "中心不由动力学推出的见证使用谨慎照管者，它满足联合地在所给之内（WithinJoint）。",
-        "en": "The witness that the center is not derived uses the careful keeper, which takes jointly within what is given (WithinJoint)."
-      },
-      "interface": {
-        "output": {
-          "zh": "联合地在所给之内的定义。",
-          "en": "Taking jointly within what is given."
-        },
-        "input": {
-          "zh": "满足它的照管者仍不使 N_std 成立。",
-          "en": "A keeper meeting it still does not make N_std hold."
-        },
-        "conditions": {
-          "zh": "见 derived-extent-limits。",
-          "en": "See derived-extent-limits."
-        },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
-      }
-    },
-    {
       "id": "self-good-reachable-g0",
       "relation": "interpretive",
       "detail": {
-        "zh": "那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的恰是 N_std。",
-        "en": "It left a bridge from standpoint-relative to normative significance; here, on held lives, what G0 adds beyond S0 is exactly N_std."
+        "zh": "那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的可以集中在 N_std 上。",
+        "en": "It left a bridge from standpoint-relative to normative significance; here, on held lives, what G0 adds beyond S0 can be concentrated in N_std."
       }
     }
   ],
@@ -127,15 +109,15 @@
     {
       "id": "derived-extent-limits",
       "detail": {
-        "zh": "谨慎的照管者是中心不由动力学推出的见证。",
-        "en": "The careful keeper is the witness that the center is not derived."
+        "zh": "在逐步读法上陈述中心沿依存不由动力学推出（Totalizer.center_not_derived），复用本结果的 Web.held_by_formations。",
+        "en": "States on the stepwise reading that along dependence the center is not derived (Totalizer.center_not_derived), reusing this result's Web.held_by_formations."
       }
     },
     {
       "id": "living-on-and-descent",
       "detail": {
-        "zh": "连通与 N_rel 的读法只对无人持有的生命仍有作用。",
-        "en": "Readings of connection and N_rel keep a role only for lives no standpoint holds."
+        "zh": "连通与 N_rel 的读法给出另一种补全，并对无人持有的生命仍有作用。",
+        "en": "Readings of connection and N_rel give the other completion and keep a role for lives no standpoint holds."
       }
     }
   ],
@@ -143,50 +125,49 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "detail": {
-        "zh": "每个前提都必要：Apart（每个生命都被持有、只被自己的立场珍视）、Unclaimed（无人持有的生命）、Relayed（被到达而无人持有的生命）。",
-        "en": "Each premise is needed: Apart (every life held and valued by its own standpoint only), Unclaimed (a life no standpoint holds), Relayed (a reached life no standpoint holds)."
+        "zh": "每个前提都必要：Apart（每个生命都被持有、只被自己的立场珍视，两种中立都不成立：持有与 S0 不够）、Unclaimed（无人持有的生命）、Relayed（被到达而无人持有的生命）。",
+        "en": "Each premise is needed: Apart (every life held and valued by its own standpoint only, neither neutrality holding: holding and S0 do not suffice), Unclaimed (a life no standpoint holds), Relayed (a reached life no standpoint holds)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "detail": {
-        "zh": "中心不由动力学推出：Totalizer.center_not_derived。",
-        "en": "The center is not derived from the dynamics: Totalizer.center_not_derived."
+        "zh": "N_std 不是唯一的补全：在连通、每个立场都持有活主张的整体上，S0 加 N_rel 给出 G0（Valuation.significant_of_transmits）。",
+        "en": "N_std is not the only completion: on a connected whole where every standpoint holds a living claim, S0 with N_rel gives G0 (Valuation.significant_of_transmits)."
       }
     }
   ],
   "limitations": {
-    "zh": "不证明 S0、N_std 或 N_rel，不约束拒绝它们的立场，不推出义务、排序、认识或遵循；持有是对应前提，哪些形成想要、“想要”是否即 S0 由 Ren 判断；无人持有的生命（休眠的种子、昏迷、不再想继续的人）是否在公理的范围内由 Ren 选择；只陈述主张层面的 G0；重述是否替代 G0 由 Ren 定，在此之前 G0 仍是采用的公理；名称是 AI 的表述，由 Ren 定（Held、Unheld、Apart、Unclaimed、Relayed 等）。",
-    "en": "Proves none of S0, N_std or N_rel, binds no rejecting standpoint, and infers no duty, ranking, recognition or compliance; holding is a correspondence premise, and which formations want, and whether wanting is S0, are for Ren to judge; whether lives no standpoint holds (a dormant seed, a coma, someone who no longer wants to go on) are within the axiom's range is Ren's choice; states G0 at the level of claims only; whether the restatement replaces G0 is Ren's decision, and until then G0 remains the adopted axiom; the names are the AI's wording, for Ren to choose (Held, Unheld, Apart, Unclaimed, Relayed and others)."
+    "zh": "不证明 S0、N_std 或 N_rel，不约束拒绝它们的立场，不推出义务、排序、认识或遵循；持有是对应前提，哪些形成想要、“想要”是否即 S0 由 Ren 判断；S0 只涉及活的主张，逐步读时它已含“不损”的过滤（Totalizer.keeper_not_living），这是规范性的读法；主张层面的意义分不开把他者算作条件与算作想要者；无人持有的生命（休眠的种子、昏迷、不再想继续的人）是否在公理的范围内由 Ren 选择；只陈述主张层面的 G0；重述是否替代 G0 由 Ren 定，在此之前 G0 仍是采用的公理；名称是 AI 的表述，由 Ren 定（Held、Unheld、Apart、Unclaimed、Relayed 等）。",
+    "en": "Proves none of S0, N_std or N_rel, binds no rejecting standpoint, and infers no duty, ranking, recognition or compliance; holding is a correspondence premise, and which formations want, and whether wanting is S0, are for Ren to judge; S0 ranges over living claims, so on the stepwise reading it carries the not-harm filter (Totalizer.keeper_not_living), a normative reading; claim-level significance does not separate counting another as a condition from counting it as a being that wants; whether lives no standpoint holds (a dormant seed, a coma, someone who no longer wants to go on) are within the axiom's range is Ren's choice; states G0 at the level of claims only; whether the restatement replaces G0 is Ren's decision, and until then G0 remains the adopted axiom; the names are the AI's wording, for Ren to choose (Held, Unheld, Apart, Unclaimed, Relayed and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T222752.438253Z）：Becoming.Standpoints 的 17 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1280 项定理／2062 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261009T223112.652163Z 通过。作者反审见整合文档 §47，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261009T222752.438253Z): the 17 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1280 theorems/2062 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261009T223112.652163Z passed. The author's counterreview is in §47 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261009T231934.987085Z）：Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1285 项定理／2069 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T073508.393062Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261009T231934.987085Z): the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1285 theorems/2069 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T073508.393062Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "role": "proof",
-      "sha256": "39581aa7600e57b278fba7988a6d96e3c0a171e4b51bbc288ae2253a305ac292",
+      "sha256": "0c94b05a460cad607a50274e5105589321441fa2d666d79035d30e219b4a4e0b",
       "declarations": [
         "Becoming.Valuation.Held",
         "Becoming.Valuation.Unheld",
         "Becoming.Valuation.significant_iff_held",
         "Becoming.Valuation.significant_iff_reached",
+        "Becoming.Valuation.own_transmission",
+        "Becoming.Valuation.significant_of_transmits",
         "Becoming.Web.held_by_formations",
         "Becoming.Web.significant_iff_self",
         "Becoming.Apart.own",
         "Becoming.Apart.valuation",
-        "Becoming.Apart.standpoint_neutrality_is_needed",
+        "Becoming.Apart.not_enough",
         "Becoming.Unclaimed.own",
         "Becoming.Unclaimed.valuation",
         "Becoming.Unclaimed.held_is_needed",
         "Becoming.Relayed.related",
         "Becoming.Relayed.valuation",
-        "Becoming.Relayed.transmission_is_needed",
-        "Becoming.Totalizer.own",
-        "Becoming.Totalizer.valuation",
-        "Becoming.Totalizer.center_not_derived"
+        "Becoming.Relayed.transmission_is_needed"
       ]
     },
     {
@@ -199,34 +180,36 @@
         "Becoming.Valuation.transmits",
         "Becoming.Valuation.shares",
         "Becoming.Valuation.Significant",
+        "Becoming.Valuation.Connected",
+        "Becoming.Valuation.reaches",
         "Becoming.Neutral",
         "Becoming.Within"
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "role": "counterexample",
-      "sha256": "087651b1b6cef8ae3da0082a0d66b4ce086731950c61943f262e823e8ddbdade"
-    },
-    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "32de0249165ba320f2e78ddde379d2cead0cc937b1c9df4d34503c68317b9e7b"
+      "sha256": "fab52057751ea4fb186d9150daa6799772618a212114ad2f418a26d45251ad30"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e37acdf4675752f595601a193f9aed3942b1c952cf74a9c23ee90518d15e13c9"
+      "sha256": "a3c7444fd04a44bd1a89dfd8746aaeefebbac98b5da08ce8788310963e633d00"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
       "role": "statement",
-      "sha256": "723c3db1683a344ea8552cddbb55bd5285ff3b2ff5008637d82f460799c3e0ae"
+      "sha256": "4040c7538f82b08d2f97ca606da8de58ad8b0f97809f2b28b6f93643fcdc1846"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
       "role": "provenance",
       "sha256": "bf0ff40c2dcd72f581645b6a67d5aa4a1af92958b6ef6248f39881a640c95b37"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md",
+      "role": "review",
+      "sha256": "13da1ebc8b8e4e40008f73616b8c9a55c89e44783542cc148aa62907f7f38f3f"
     }
   ],
   "proof_bindings": [
@@ -246,13 +229,17 @@
     }
   ],
   "next_delta": {
-    "zh": "Ren 的判断：S0 是否即想要、公理的范围、伤害的层级、重述是否替代 G0；N_std 的哲学根据；整段读法与关系层上的同一形式；与 universal_reason 的接通。",
-    "en": "Ren's judgments: whether S0 is wanting, the axiom's range, the level of harm, whether the restatement replaces G0; the philosophical ground of N_std; the same form on the whole-run reading and at the level of relations; connecting to universal_reason."
+    "zh": "Ren 的判断：S0 是否即想要、两种补全之间的选择、公理的范围、伤害的层级、重述是否替代 G0；区分工具性与最终意义的表示；N_std 的哲学根据；整段读法与关系层上的同一形式；与 universal_reason 的接通。",
+    "en": "Ren's judgments: whether S0 is wanting, the choice between the two completions, the axiom's range, the level of harm, whether the restatement replaces G0; a representation separating instrumental from final significance; the philosophical ground of N_std; the same form on the whole-run reading and at the level of relations; connecting to universal_reason."
   },
   "history": [
     {
       "zh": "2026-10-10：作为延续奠基计划（CONTINUATION-GROUNDING-PLAN）W5新增，按 Ren“commit them, then start implementation all the way to full completion”；实现 Ren 2026-10-10 的提议（从想要延续者重述普遍元伦理核心）；见整合文档 §47。",
       "en": "2026-10-10: added as W5 of the continuation-grounding plan (CONTINUATION-GROUNDING-PLAN), following Ren's ‘commit them, then start implementation all the way to full completion’; implements Ren's proposal of 10 October 2026 (restating the Universal Metaethical Core from what wants its continuation); see §47 of the integration note."
+    },
+    {
+      "zh": "2026-10-10 W8：按独立审查（CONTINUATION-GROUNDING-REVIEW.md）更正，见整合文档 §47.1–47.4；验证范围指向合并检查器回执 20261009T231934.987085Z 与外围回执 20261010T073508.393062Z。C2、C4、C5、C10、C11：标题改为“G0 是 S0 加立场中立”；新增 Valuation.own_transmission 与 Valuation.significant_of_transmits（第二种补全）；Apart.standpoint_neutrality_is_needed 改名为 Apart.not_enough 并加上 N_rel 不成立；把 S0 读作想要、N_std 读作唯一公理写明为 AI 的读法；“每一点都是中心”归于 S0；“都等价于 G0”加上“有活的主张”；Totalizer.center_not_derived 移归 derived-extent-limits，对 own-count-misses-joint-excess 的依存去掉。",
+      "en": "2026-10-10 W8: corrected after the independent review (CONTINUATION-GROUNDING-REVIEW.md), see §47.1–47.4 of the integration note; validation scope points to consolidated receipt 20261009T231934.987085Z and periphery receipt 20261010T073508.393062Z. C2, C4, C5, C10, C11: the title becomes ‘G0 is S0 with standpoint neutrality’; Valuation.own_transmission and Valuation.significant_of_transmits (the second completion) are added; Apart.standpoint_neutrality_is_needed is renamed Apart.not_enough and also shows N_rel failing; reading S0 as wanting and N_std as the one axiom is marked as the AI's reading; ‘a center at every point’ is placed on S0; ‘both equivalent to G0’ gains ‘with some living claim’; Totalizer.center_not_derived moves to derived-extent-limits, and the dependency on own-count-misses-joint-excess is removed."
     }
   ]
 }

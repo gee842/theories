@@ -22,9 +22,10 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   nothing beyond it, whether taking from it recurs (`fed_from_beyond`), its members rise
   at arbitrarily late steps (`rising_fed_from_beyond`), or, read with one kind of
   relatum, embodied members arise at arbitrarily late steps
-  (`Web.generation_fed_from_beyond`). Being fed is needed; no particular source is: in
-  `Lone` the pool is fed at every step, and each fuel is conveyed from at one step only
-  (`Lone.fed`, `Lone.each_fuel_once`).
+  (`Web.generation_fed_from_beyond`). Being fed is needed; no source condition need
+  recur: in `Lone` the pool is fed at every step, and each fuel is conveyed from at one
+  step only (`Lone.fed`, `Lone.each_fuel_once`). The one formation conveying, the sun, is
+  the same at every step.
 * **Beyond one's own draw.** Each formation can take from a condition within what the
   step gives it (`WithinOwn`) while together they take more (`WithinJoint` fails;
   `Pair.own_not_joint`). Taking jointly within what is given keeps the level
@@ -36,10 +37,12 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   support, a level below `m` stays below `m` at every later step (`stays_below`), and
   every formation depending on the condition at a need of at least `m` is inactive from
   then on (`ends_below`). Joint excess that brings the level below `m` therefore ends the
-  renewal and everything depending on it at such a need, the takers included
-  (`joint_excess_ends`). In `Exceeding` a renewer and two takers, each taking within what
-  the step gives, all end after two steps (`Exceeding.all_end`); with one taker the same
-  renewer keeps the level and all continue (`Alone.all_continue`).
+  renewal and every formation depending on the condition at such a need, a taker among
+  them where it so depends (`joint_excess_ends`). The joint count binds a want that
+  outlasts what the condition holds: `n` steps of joint excess need only a level of `n`.
+  In `Exceeding` a renewer and two takers, each taking within what the step gives, all end
+  after two steps (`Exceeding.all_end`); with one taker the same renewer keeps the level
+  and all continue (`Alone.all_continue`).
 * **What the derived extent does not reach.** Following the want counts what one's
   continuation depends on, and no more. In `Downstream` the self's continuation requires
   only its ground; a formation living on what the self gives ends when it stops giving,
@@ -50,7 +53,10 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   (`Mortal.without_continues`). In `Totalizer`
   a keeper is active at every step, every condition it depends on is renewed and fed from
   beyond, and it takes jointly within what is given from each of them, while it draws
-  down the habitat of another formation, which ends (`Totalizer.careful`).
+  down the habitat of another formation, which ends (`Totalizer.careful`). The endings in
+  these witnesses are stipulated in their activity; each witness shows its ending
+  consistent with balance, support and dependence, and the general theorems are where an
+  ending is derived. The sun of `Totalizer`, like that of `Lone`, requires nothing.
 
 The draw-in laws this module rereads are those of `Becoming.Dissipation` and
 `Becoming.Roles`; the delta is the conveyance form, its exactness, the joint count, the
@@ -254,7 +260,7 @@ theorem generation_fed_from_beyond [DecidableEq X] (balances : L.Balances W)
 
 end Web
 
-/-! ## Being fed is needed, no particular source is -/
+/-! ## Being fed is needed; no source condition need recur -/
 
 namespace Lone
 
@@ -397,7 +403,8 @@ theorem own_not_joint : ∀ t, t < 2 → flow.WithinOwn t () ∧ ¬ flow.WithinJ
   | _ + 2, late => absurd late (Nat.not_lt_of_le (Nat.le_add_left 2 _))
 
 /-- So the renewal ends and every member ends with it, the renewer and both takers: from
-step two on nothing is active, by the law of gated renewal. -/
+step two on nothing is active. The stipulated activity says so; derived here through the
+law of gated renewal, the witness shows the law's hypotheses hold with that ending. -/
 theorem all_end : ∀ n f, ¬ web.active (2 + n) f :=
   fun n f => Flow.ends_below (W := web) (c := ()) (m := 1) (T := 2) dependent
     (Flow.stays_below balances acting dependent gated (T := 2) Nat.zero_lt_one) n f

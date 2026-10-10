@@ -9,9 +9,9 @@
 **中文。** Ren 的提议把核心分成两半。
 
 1. **范围，不加伦理公理。** 想要自身延续者，从它所在之处使其延续有意义。顺着这一想要，它必须计入其延续所依赖的：边界之外、视界之外、自身取用之外。这一范围由动力学推出：
-   - 在平衡与耗散之下，持续的有限家族不封闭；被围住时，有东西从其外传入；
+   - 在平衡与耗散之下，持续的有限家族不封闭；被围住时，有东西从其外输送入；
    - 没有有限的视界分得开更新与消耗；
-   - 各自在更新之内的取用，合起来可以超出更新，并终结依存于共享条件的一切。
+   - 各自在更新之内的取用，合起来可以超出更新，并终结以其所需依存于共享条件者；想要比条件所存更长远的延续，就必须计入联合的取用（W8 限定）。
 2. **中心，一条公理。** 动力学定出范围，定不出中心。推出的范围只朝所依赖者一个方向；它把他者作为条件、作为供给计入，而不是作为想要者计入；它以想要的视界为界；一个审慎的总体化者满足其全部。公理的唯一作用，是在每一点放一个中心。
 
 两半各去掉一种二元：前一半去掉封闭的自我，后一半去掉特权的中心。
@@ -21,7 +21,7 @@
 - 每个活的主张都在某个立场的自身区域中（被持有）时，G0 恰是每个立场的 S0 加立场中立 N_std，连通与 N_rel 都用不到（`significant_iff_held`）。
 - 一般地，每个活的主张都经已形成的关系从被持有者到达时，G0 恰是每个立场的 S0、N_std，加上只进入无人持有之主张的 N_rel（`significant_iff_reached`）。三项各有反模型，都不可少。
 
-所以对想要者而言，Ren 的一条公理就是立场中立：从一个立场有意义的，从每个立场都有意义。现有刻画从一颗种子出发，需要连通与 N_rel 把意义带到各处；新的刻画在每个想要之处放一颗种子，只需 N_std 使这些种子共有。N_rel 只留给没有立场持有的生命：休眠的种子、昏迷者、不再想活下去的人，在无人把它们计入自身区域时都是如此；不作为整体而想要的整体也是。
+所以对想要者而言，AI 把 Ren 的一条公理读作立场中立（待 Ren）：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊；每个想要之点都是中心，这是 S0。（W8 更正：原文写“Ren 的一条公理就是立场中立”，把 AI 的分解归于 Ren；N_std 也不是唯一的补全，在连通、每个立场都持有活主张的整体上，S0 加 N_rel 也给出 G0。）现有刻画从一颗种子出发，需要连通与 N_rel 把意义带到各处；新的刻画在每个想要之处放一颗种子，只需 N_std 使这些种子共有。N_rel 只留给没有立场持有的生命：休眠的种子、昏迷者、不再想活下去的人，在无人把它们计入自身区域时都是如此；不作为整体而想要的整体也是。
 
 **弱式与强式。** 弱式（“只要不损”）对应现有 `living` 的读法，它们读出的都是“不损”。强式（“创造更多意义”）对应整体的继续生成，即生生不息的方向，尚未进入 `living`。工作结构是 AI 的建议，Ren 以“exactly”肯定：每个形成取弱式，整体取强式。这正是 G0 自身的形状（生与继续生成），由下而上建起。
 
@@ -32,7 +32,7 @@
 1. **Extent, with no ethical axiom.** Anything that wants its continuation gives that continuation significance from where it stands. Following the want, it must count what its continuation depends on: beyond its boundary, beyond its horizon and beyond its own draw. The dynamics derives this extent:
    - under balance and dissipation a continuing finite family is not closed, and, enclosed around, something is conveyed into it from beyond;
    - no finite horizon separates renewal from consumption;
-   - draws each within renewal can together exceed it and end everything that depends on the shared condition.
+   - draws each within renewal can together exceed it and end what depends on the shared condition at its need; a want that outlasts what the condition holds must count the joint draw (qualified in W8).
 2. **Center, by one axiom.** The dynamics fixes the extent, not the center. The derived extent runs one way, to what the self depends on; it counts others as conditions and as supply, not as beings that want; it ends at the horizon of the want; and a careful totalizer satisfies all of it. The axiom's one job is to put a center at every point.
 
 Each half removes one duality: the first a closed self, the second a privileged center.
@@ -42,7 +42,7 @@ Each half removes one duality: the first a closed self, the second a privileged 
 - Where every living claim lies in some position's own region (it is held), G0 is exactly S0 at every position with standpoint neutrality N_std; neither connection nor N_rel is used (`significant_iff_held`).
 - In general, where every living claim is reached through formed relations from a held one, G0 is S0 at every position, N_std, and N_rel only into claims no position holds (`significant_iff_reached`). Each part has a countermodel; none can be dropped.
 
-So for what wants, Ren's one axiom is standpoint neutrality: what has significance from one standpoint has significance from every standpoint. The existing characterization starts from one seed and needs connection and N_rel to carry significance everywhere. The new one places a seed wherever something wants and needs only N_std to make the seeds common. N_rel is left for lives no standpoint holds: a dormant seed, an unconscious patient or someone who no longer wants to go on, when no one else counts them as their own, and wholes that do not want as wholes.
+So for what wants, the AI reads Ren's one axiom as standpoint neutrality (pending Ren): what has significance from any center has it from every standpoint, and no center is privileged; a center at every wanting point is S0. (W8 correction: the earlier text said “Ren's one axiom is standpoint neutrality”, attributing the AI's factorization to Ren; nor is N_std the only completion, since on a connected whole where every standpoint holds a living claim S0 with N_rel also gives G0.) The existing characterization starts from one seed and needs connection and N_rel to carry significance everywhere. The new one places a seed wherever something wants and needs only N_std to make the seeds common. N_rel is left for lives no standpoint holds: a dormant seed, an unconscious patient or someone who no longer wants to go on, when no one else counts them as their own, and wholes that do not want as wholes.
 
 **Weak and strong forms.** The weak form (“as long as not harm”) matches the current readings of `living`, all of which read “no damage” (不损). The strong form (“needs to create more significance”) is the whole's further generation, the direction of 生生不息, which `living` does not yet contain. The working structure is the AI's suggestion, affirmed by Ren's “exactly”: the weak form for each formation, the strong form for the whole. That is G0's own shape, living and further generation, built from below.
 
@@ -97,20 +97,20 @@ The extent half applies one premise of practical reason, that wanting an end giv
 
 **New (W3, sketched).** Each formation present can take from a condition within what the step gives it (`Flow.WithinOwn`) while together they take more (`Flow.WithinJoint` fails; `Pair.own_not_joint`). Taking jointly within what is given keeps the level (`Flow.joint_keeps`). Each step of joint excess lowers it by at least one (`Flow.excess_lowers`), so joint excess cannot outlast what was held, and in the two-formation case no web balances the flow at all (`Pair.no_web`).
 
-**Planned (W3).** Build a support-gated commons on the spine. The renewer depends on the condition and gives only while active (`Acting`). Joint excess drives the level below the renewer's support, the renewer stops giving, and every formation depending on the condition ends, the takers included. The periphery has this in one wear-law class (`RenewingFormation.joint_excess_ends_shared_formation`, `jointly_exceeding_parts_end_shared_formation`). The core's support-gated law (`RelationalRenewal`) and `Becoming.Substitution` show the sustainer losing its support for good once a single consumer exceeds renewal ([substitution-preserves-consumption](../../../../theories/becoming/results/records/substitution-preserves-consumption.md)). W3 states the joint case on the spine and connects to these through an instance theorem where one exists, and an interpretive link otherwise.
+**Planned (W3).** Build a support-gated commons on the spine. The renewer depends on the condition and gives only while active (`Acting`). Joint excess drives the level below the renewer's support, the renewer stops giving, and every formation depending on the condition at such a need ends, a taker among them where it so depends. The periphery has this in one wear-law class (`RenewingFormation.joint_excess_ends_shared_formation`, `jointly_exceeding_parts_end_shared_formation`). The core's support-gated law (`RelationalRenewal`) and `Becoming.Substitution` show the sustainer losing its support for good once a single consumer exceeds renewal ([substitution-preserves-consumption](../../../../theories/becoming/results/records/substitution-preserves-consumption.md)). W3 states the joint case on the spine and connects to these through an instance theorem where one exists, and an interpretive link otherwise.
 
-**Reading.** The meta-attractor selects formations that take more: they form more at first, and a count over a step prefers them. Each counts its own draw. Many of them together exceed renewal; the shared condition ends, and with it everything that depends on it, the winners included. A formation that wants its continuation must count the joint draw on what it depends on: “the dynamics that happens beyond what the "self" sees”. This is what the want requires, not a verdict passed on it.
+**Reading.** The meta-attractor selects formations that take more: they form more at first, and a count over a step prefers them. Each counts its own draw. Many of them together exceed renewal; the shared condition ends, and with it what depends on it at such a need, the winners among them where they so depend. A formation that wants its continuation beyond what the shared condition holds must count the joint draw on what it depends on (W8: `n` steps of joint excess need only a level of `n`, and `Mortal`'s want is fully met amid joint excess): “the dynamics that happens beyond what the "self" sees”. This is what the want requires, not a verdict passed on it.
 
 ### 3.4 推出的范围达不到的 / What the derived extent does not reach (W4)
 
 Following a want gives reason to secure what the wanted continuation needs. Four limits follow from that form. W4 builds a witness for each:
 
 1. **One way.** The derived extent runs to what the self depends on, not to what depends on it. *Witness:* a downstream formation lives on what a self gives; the self stops giving, the downstream formation ends, and the self continues unaffected.
-2. **As supply.** It reaches others as conditions. Where sources are replaceable, it reaches them as supply, not as particular beings: being fed from beyond is necessary, while no particular source is. *Witness:* a family fed alternately from two sources, either of which can be removed. Under N_rel, valuing reaches each source (`Flow.valuing_reaches_source`), but that is the axiom's relational half, not the want.
+2. **As supply.** It reaches others as conditions. Where sources are replaceable, it reaches them as supply, not as particular beings: being fed from beyond is necessary, while no particular source is. *Witness:* a family fed alternately from two sources, either of which can be removed. Under N_rel, valuing reaches each source (`Flow.valuing_reaches_source`), but that is the axiom's relational half, not the want. (W8: the implementation used `Lone`, which shows only that no source condition need recur, the one sun doing all the conveying; the two-source witness remains open, and the claim is reduced to: being fed is needed, no source condition need recur.)
 3. **The horizon of the want.** A want for one's own continuation over a finite life gives no reason concerning what comes after its end. *Witness:* a formation active for finitely many steps draws down a shared condition; another formation that depends on it ends after the first has ended.
-4. **The careful totalizer.** A formation can meet every derived requirement and still end every life it does not need. It is fed from beyond, counts its draw against renewal and keeps the joint draw within renewal. *Witness:* a valuation with S0 at every position and transmission along what each continuation requires, in which some living claim has no significance from some standpoint.
+4. **The careful totalizer.** A formation can meet every derived requirement and still end every life it does not need. It is fed from beyond, counts its draw against renewal and keeps the joint draw within renewal. *Witness:* a valuation with S0 at every position and transmission along what each continuation requires, in which some living claim has no significance from some standpoint. (W8: the first implementation used transmission into each own region, which follows from S0; the witness now has each standpoint's significance closed along feeding, `Flow.FedBy`.)
 
-So the dynamics fixes the extent of a system, not its center. If the fourth witness could not be built, because the derived requirements forced standpoint neutrality, the center would follow from the dynamics. That would be a stronger result, and it would change the account (§9).
+So the dynamics fixes the extent of a system, not its center. If the fourth witness could not be built, because the derived requirements forced standpoint neutrality, the center would follow from the dynamics. That would be a stronger result, and it would change the account (§9). (W8: as first implemented the test could not fail, since flow and web predicates never constrain significance. With closure along feeding it constrains significance; the line holds along dependence, and not along every formed relation.)
 
 ## 4. 中心：一条公理 / Center: the one axiom
 
@@ -161,7 +161,7 @@ The evaluator route ([self-good-reachable-g0](../../../../theories/becoming/resu
 - stepwise: active and not undermining;
 - relation level.
 
-So the weak form is the axiom over these readings: continuation that does not damage another's has significance. A compatible second reading: ending or undermining a held continuation enters judgment as a loss through C, which ranks lossless extensions.
+So the weak form is the axiom over these readings: continuation that does not damage another's has significance. A compatible second reading: ending or undermining a held continuation enters judgment as a loss through C, which ranks lossless extensions. A deontic reading (added in W8): each continuation's significance is a claim on others not to harm it, rather than a filter admitting only undamaging continuations; it is not yet formalized, and the choice is Ren's. Read as a filter, the stepwise `living` puts “not harm” inside S0 (`Totalizer.keeper_not_living`).
 
 **The level of harm.** Almost all life continues by ending other life.
 
@@ -183,11 +183,11 @@ Direction, continuing capacity, per-step monotonic growth and scalar maximizatio
 
 ### 4.4 重述的草案 / Draft of the restatement
 
-For Ren to judge; it does not enter the chapter as accepted.
+For Ren to judge; it does not enter the chapter as accepted. Revised in W8 (C5, C6), as in chapter §6.7.
 
-> 任何想要自身延续者，从它所在之处使其延续有意义。顺着这一想要，它必须计入其延续所依赖的：在耗散之下，持续者不封闭，被围住时有东西从其外传入；没有有限的视界分得开更新与消耗；各自在更新之内的取用合起来可以超出，并终结依存于共享条件的一切。动力学定出这一计入的范围，定不出谁的延续算数。一条公理定出中心：从一个立场有意义的，从每个立场都有意义，每一点都是中心。对被某个立场持有的生命，这就是 G0；无人持有的生命经已形成的关系到达。弱式：每个形成不损的延续有意义。强式：整体的延续要创造更多的意义。
+> 任何想要自身延续者，从它所在之处使其延续有意义。顺着这一想要，它必须计入其延续所依赖的：在耗散之下，持续者不封闭，被围住时有东西从其外输送入；没有有限的视界分得开更新与消耗；各自在更新之内的取用合起来可以超出，并终结以其所需依存于共享条件者；想要比条件所存更长远的延续，就必须计入联合的取用。动力学定出这一计入的范围，定不出谁的延续算数。每个想要之点都是中心；一条公理使它们共同：从任一中心有意义的，从每个立场都有意义，没有哪个中心特殊。对被某个立场持有的生命，这就是 G0；无人持有的生命经已形成的关系到达。弱式：每个形成不损的延续有意义。强式：整体的延续要创造更多的意义。
 
-> Anything that wants its continuation gives that continuation significance from where it stands. Following that want, it must count what its continuation depends on. Under dissipation nothing that continues is closed, and, enclosed around, something is conveyed into it from beyond. No finite horizon separates renewal from consumption. Draws each within renewal can together exceed it and end everything that depends on the shared condition. The dynamics fixes how far that count reaches, not whose continuation counts. One axiom fixes the center: what has significance from one standpoint has significance from every standpoint, and every point is a center. For lives some standpoint holds, this is G0; lives no standpoint holds are reached through formed relations. Weak form: each formation's undamaging continuation has significance. Strong form: the whole's continuation is to create more significance.
+> Anything that wants its continuation gives that continuation significance from where it stands. Following that want, it must count what its continuation depends on. Under dissipation nothing that continues is closed, and, enclosed around, something is conveyed into it from beyond. No finite horizon separates renewal from consumption. Draws each within renewal can together exceed it and end what depends on the shared condition at its need; a continuation wanted beyond what the condition holds must count the joint draw. The dynamics fixes how far that count reaches, not whose continuation counts. Every wanting point is a center; one axiom makes them common: what has significance from any center has it from every standpoint, and no center is privileged. For lives some standpoint holds, this is G0; lives no standpoint holds are reached through formed relations. Weak form: each formation's undamaging continuation has significance. Strong form: the whole's continuation is to create more significance.
 
 ### 4.5 公理之后仍在的 / What remains after the axiom
 
@@ -224,11 +224,11 @@ Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follo
 
 - W2 gained the comparison the table asks for: conveyance relates conditions that interaction, living on and descent never relate (`Flow.roles_conditions_unrelated`, `Totalizer.conveyance_only`); a new record, `conveyance-crosses-the-boundary`, rather than a delta on `living-on-and-descent`.
 - W3's link to `RelationalRenewal` and `RenewingFormation` is stated as interpretive; no instance theorem was built.
-- W4's second limit uses `Lone` (each fuel conveyed from at its own step only) rather than a family fed alternately by two removable sources; the four witnesses are `Downstream`, `Lone`, `Mortal` and `Totalizer`, with `Totalizer.center_not_derived` in `Becoming.Standpoints`.
+- W4's second limit uses `Lone` (each fuel conveyed from at its own step only) rather than a family fed alternately by two removable sources, so it shows only that no source condition need recur (W8 C3); the four witnesses are `Downstream`, `Lone`, `Mortal` and `Totalizer`, with `Totalizer.center_not_derived` in `Becoming.Standpoints`.
 - W5's weak form is the stepwise instance (`Web.significant_iff_self`); the strong form is linked to `Flow.More` and `World.ArisingRecurs` in text only.
 - `Standpoints` imports `Descent` (for the comparison) and `Continuation`, as planned. The sketch's countermodels are renamed `Apart`, `Unclaimed` and `Relayed`.
 - W5b was not undertaken; it remains under further proofs in the chapter (§8).
-- W8, the independent review, is pending.
+- W8 is done: an independent Opus 5.5 agent reviewed W1–W5 ([review](CONTINUATION-GROUNDING-REVIEW.md)); its thirteen findings are handled in study §47.1–47.4. The Lean gained `Valuation.own_transmission`, `Valuation.significant_of_transmits`, `Flow.FedBy`, `Totalizer.supply_not_cut_living_on`, `Totalizer.fedBy_sun` and `Totalizer.keeper_not_living`; `Apart.standpoint_neutrality_is_needed` became `Apart.not_enough`, and `Totalizer.center_not_derived` now has closure along feeding (`Becoming.Standpoints`, 22 theorems; receipt 20261009T231934.987085Z).
 
 ## 6. 属于 Ren 的选择 / Choices for Ren
 
@@ -246,7 +246,9 @@ Order: W1 and W3 complete the L3 module. W5 then states the center, and W2 follo
    - 可能性、多样性与复杂性 / possibility, diversity and complexity (open).
    AI 的默认是方向，不是最大化。/ The AI's default is a direction, not maximization.
 4. **输送是否算已形成的关系 / Whether conveyance counts as a formed relation**, beside interaction, living on and descent.
-5. **名称 / Names.** `Becoming.Continuation`, `Becoming.Standpoints`, `Held`, `Unheld`, `Conveys`, `FedFromBeyond`, `Cut`, `WithinOwn`, `WithinJoint`, `Apart`, `Unclaimed`, `Relayed`, `Exceeding`, `Alone`, `Downstream`, `Mortal` and `Totalizer` are working names. 不以 Ren 的用语命名形式部分。/ No formal part is named after Ren's words.
+4a. **推出的范围沿依存还是沿每个已形成的关系 / Whether the derived extent runs along dependence or along every formed relation** (added in W8). Along dependence the center is not derived; along every formed relation, or where dependence links every two lives, S0 with N_rel gives G0 (study §47.2 C1–C2).
+4b. **“不损”是过滤还是要求 / Whether “not harm” filters continuations or claims on others** (added in W8, §4.3).
+5. **名称 / Names.** `Becoming.Continuation`, `Becoming.Standpoints`, `Held`, `Unheld`, `Conveys`, `FedFromBeyond`, `Cut`, `WithinOwn`, `WithinJoint`, `Apart`, `Unclaimed`, `Relayed`, `Exceeding`, `Alone`, `Downstream`, `Mortal`, `Totalizer`, `FedBy` and `not_enough` are working names. 不以 Ren 的用语命名形式部分。/ No formal part is named after Ren's words.
 6. **确认 / Confirmation.**
    - S0 作为想要的读法，移出“规范前提”一栏。/ S0 moves from “normative premise” to the reading of wanting.
    - 重述实施并审查后，是否替代 G0 成为所采用的公理。/ After implementation and review, whether the restatement replaces G0 as the adopted axiom.
@@ -285,7 +287,7 @@ The checks surfaced two constructive points. `taking_draws_in` concludes a negat
 
 ## 9. 什么会改变这一论述 / What would change the account
 
-- **The careful totalizer cannot be built.** The derived requirements would force standpoint neutrality, the center would follow from the dynamics, and no ethical axiom would be needed for held lives.
+- **The careful totalizer cannot be built.** The derived requirements would force standpoint neutrality, the center would follow from the dynamics, and no ethical axiom would be needed for held lives. (W8: as first implemented this test could not fail; it is now posed with closure along feeding, which constrains significance, and it is passed along dependence. Along every formed relation, or in a whole where dependence links every two lives and every standpoint holds a living claim, S0 with N_rel gives G0. That is the case this bullet describes, reached under a reading of the relations; see study §47.2 C1–C2.)
 - **Conveyance is not adopted.** Crossing (W2) holds only for the readings where it is shown; W1 stands as dynamics.
 - **Dissipation fails in a domain.** A closed self may continue there (`Recycle`, `Handing`); the claim about the pure self keeps the scope of dissipation.
 - **S0 is not accepted as the reading of wanting.** S0 stays a normative premise, and the extent half carries one standpoint-relative normative premise, stated as such.

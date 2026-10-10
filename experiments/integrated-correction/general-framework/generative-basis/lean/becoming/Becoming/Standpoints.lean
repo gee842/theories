@@ -2,7 +2,7 @@ import Becoming.Descent
 import Becoming.Continuation
 
 /-!
-# Standpoints: a center at every point
+# Standpoints: whose continuation counts
 
 Ren's proposal of 10 October 2026 ends with one axiom: “for anything, its continuation into
 the future has significance”. `Becoming.Continuation` states what the dynamics derives with
@@ -18,17 +18,26 @@ center, whose continuation counts. This module states the center on the valuatio
   claim is reached through formed relations from a held one, G0 is S0 at every position,
   standpoint neutrality, and relational neutrality only into claims no position holds
   (`Valuation.significant_iff_reached`). None of these can be dropped: every life held
-  and valued by its own standpoint only (`Apart.standpoint_neutrality_is_needed`), a
-  life no standpoint holds (`Unclaimed.held_is_needed`), and a reached life no position
-  holds (`Relayed.transmission_is_needed`). Read as Ren's proposal reads it, S0 is what
-  wanting one's continuation is, and the one axiom puts a center at every point: what
-  has significance from one standpoint has it from every standpoint.
+  and valued by its own standpoint only, where neither neutrality holds
+  (`Apart.not_enough`), a life no standpoint holds (`Unclaimed.held_is_needed`), and a
+  reached life no position holds (`Relayed.transmission_is_needed`). S0 already carries a
+  position's significance along any relation into its own region
+  (`Valuation.own_transmission`).
+* **Two completions.** Standpoint neutrality completes S0 with no connection. On a
+  connected whole where every position holds a living claim, S0 at every position with
+  relational neutrality gives G0 without it (`Valuation.significant_of_transmits`).
+  Where the relations are read as dependence, relational neutrality is the valuation form
+  of counting what one's continuation depends on; in a whole where dependence links every
+  two lives, the derived extent with S0 then reaches every life (a reading of the general
+  theorem).
 * **Each formation its own center.** Read stepwise, with each formation a position whose
   own region is its own events, every living event is held (`Web.held_by_formations`), so
   G0 there is S0 at every formation with standpoint neutrality
   (`Web.significant_iff_self`). The stepwise `living` reading, active and not undermining,
   is one reading of the proposal's weak form, continuation that does not damage another's
-  (an AI reading).
+  (an AI reading). S0 ranges over living claims, so read this way the seed already carries
+  that filter: a formation's own event that undermines is not living, and S0 says nothing
+  of it (`Totalizer.keeper_not_living`).
 * **Conveyance crosses the boundary.** Read with one kind of relatum, conveyance relates
   two events at a common step when something is conveyed between their relata
   (`Flow.conveyance`; `living` is the stepwise reading). A relatum nothing is taken from
@@ -38,24 +47,37 @@ center, whose continuation counts. This module states the center on the valuatio
   `Flow.region_not_a_cut`); under relational neutrality, valuing a relatum's event reaches
   the living event of what is conveyed into it (`Flow.valuing_reaches_source`). In the
   careful totalizer read with one kind of relatum, the supply's region is crossed at every
-  step (`Totalizer.crossed`, `Totalizer.supply_not_cut`). Conveyance is a relation the
-  earlier readings do not supply: read with one kind of relatum, something conveyed between
-  two conditions relates their events (`Flow.roles_conveyance`), while interaction, living
-  on and descent relate no two conditions at any steps (`Flow.roles_conditions_unrelated`),
-  so the careful totalizer's fuel and supply are related by conveyance alone
-  (`Totalizer.conveyance_only`). Whether conveyance counts as a formed relation is Ren's
-  choice, as for interaction, living on and descent.
-* **The center is not derived.** In the careful totalizer, valued from each formation's own
-  standpoint over its own events, every life is held, S0 holds at every position and
-  transmission into each position's own region holds, while the other formation's living
-  event has no significance from the keeper's standpoint; standpoint neutrality fails and
-  G0 fails (`Totalizer.center_not_derived`). With standpoint neutrality added, G0 holds by
-  `Web.significant_iff_self`.
+  step (`Totalizer.crossed`, `Totalizer.supply_not_cut`). Under living on the supply's
+  region is no cut either, since the keeper lives on it
+  (`Totalizer.supply_not_cut_living_on`). What conveyance adds is a relation between two
+  conditions, in the direction of inflow: read with one kind of relatum, something
+  conveyed between two conditions relates their events (`Flow.roles_conveyance`), while
+  interaction, living on and descent relate no two conditions at any steps
+  (`Flow.roles_conditions_unrelated`), so the careful totalizer's fuel and supply are
+  related by conveyance alone (`Totalizer.conveyance_only`). Whether conveyance counts as
+  a formed relation is Ren's choice, as for interaction, living on and descent.
+* **The center is not derived along dependence.** The continuation of an event's
+  formation is *fed by* another event when, at their common step, the other's formation
+  gives to a condition the first requires (`Flow.FedBy`). In the careful totalizer each
+  formation holds and values its own events, and the keeper values also the sun's, which
+  feed its supply. Every life is held, S0 holds at every position, and each standpoint's
+  significance is closed along feeding, while the other formation's living event has no
+  significance from the keeper's standpoint: standpoint neutrality fails and G0 fails
+  (`Totalizer.center_not_derived`). The line holds for a derived extent that runs along
+  dependence. In the same valuation the formed relations of the stepwise reading relate
+  the keeper's event to the other's through the habitat both take part in, and
+  transmission out of the keeper's own region fails: an extent run along every formed
+  relation would reach the other. With standpoint neutrality added, G0 holds by
+  `Web.significant_iff_self`. Significance at the level of claims does not separate
+  counting another as a condition from counting it as a being that wants.
 
-S0 read as what wanting is, and standpoint neutrality as the one axiom, are Ren's proposal;
-G0 remains the adopted axiom until Ren accepts the restatement. Decided holding is a
-disclosed logical commitment of `significant_iff_reached`, as decided equality is of the
-conveyance results. Names are working names.
+Reading S0 as what wanting is, the seed at each wanting point, and standpoint neutrality as
+the one axiom, so that what has significance from any center has it from every standpoint
+and no center is privileged, is the AI's reading of Ren's proposal, pending Ren; G0 remains
+the adopted axiom until Ren accepts the restatement. The sun of `Totalizer` requires
+nothing by stipulation. Decided holding is a disclosed logical commitment of
+`significant_iff_reached`, as decided equality is of the conveyance results. Names are
+working names.
 -/
 
 namespace Becoming
@@ -101,6 +123,22 @@ theorem significant_iff_reached [∀ c, Decidable (∃ p, V.own p c)]
           | .isFalse unheld => transmit (q, c', d) unheld held step.1 step.2).reach path
           (share (p, q, c₀) alive₀ (self p c₀ own alive₀))⟩
 
+/-- S0 at every position already carries each position's significance along any relation
+into its own region: transmission into own regions adds nothing to S0. -/
+theorem own_transmission (self : ∀ p, V.SelfGood p) :
+    Within (fun i => V.own i.1 i.2.2) V.transmits :=
+  fun ⟨p, _, d⟩ own _ _ alive => self p d own alive
+
+/-- A second completion of S0: on a connected whole where every position holds a living
+claim, S0 at every position with relational neutrality gives G0, with no standpoint
+neutrality. -/
+theorem significant_of_transmits (connected : V.Connected)
+    (holds : ∀ p, ∃ c, V.own p c ∧ V.living c) (self : ∀ p, V.SelfGood p)
+    (transmit : Neutral V.transmits) : V.Significant :=
+  fun q c alive => match holds q with
+    | ⟨c₀, own, alive₀⟩ =>
+      Valuation.reaches transmit (connected c₀ c alive₀ alive) (self q c₀ own alive₀)
+
 end Valuation
 
 /-! ## Each formation its own center -/
@@ -135,16 +173,17 @@ def own : Bool → Bool → Prop
 
 def valuation : Valuation Bool Bool := ⟨fun _ => True, fun _ _ => True, own, own⟩
 
-/-- Standpoint neutrality is needed: every life is held and valued by its own standpoint,
-and significance is not shared. -/
-theorem standpoint_neutrality_is_needed :
+/-- Held lives and S0 do not suffice: every life is held and valued by its own standpoint
+only, and neither standpoint neutrality nor relational neutrality holds. -/
+theorem not_enough :
     valuation.Held ∧ (∀ p, valuation.SelfGood p) ∧ ¬ Neutral valuation.shares ∧
-      ¬ valuation.Significant :=
+      ¬ Neutral valuation.transmits ∧ ¬ valuation.Significant :=
   ⟨fun c _ => match c with
     | true => ⟨true, trivial⟩
     | false => ⟨false, trivial⟩,
    fun _ _ held _ => held,
    fun share => share (true, false, true) trivial trivial,
+   fun transmit => transmit (true, true, false) trivial trivial trivial,
    fun all => all false true trivial⟩
 
 end Apart
@@ -295,6 +334,19 @@ theorem roles_conditions_unrelated (c d : C) (t t' : Nat) :
 
 end Roles
 
+/-! ## Feeding a continuation -/
+
+section Feeding
+
+variable {F C : Type} (L : Flow F C) (W : Web F C)
+
+/-- The continuation of `e`'s formation is fed by `e'`: at their common step, `e'`'s
+formation takes part and gives to a condition `e`'s formation requires. -/
+def FedBy (e e' : F × Nat) : Prop :=
+  e.2 = e'.2 ∧ ∃ c, W.requires e.2 e.1 c ∧ e'.1 ∈ L.present e'.2 ∧ 0 < L.give e'.2 e'.1 c
+
+end Feeding
+
 end Flow
 
 /-! ## The careful totalizer from its standpoints -/
@@ -332,27 +384,79 @@ theorem conveyance_only {Pos : Type} (own sig : Pos → (Formation ⊕ Place) ×
       ¬ (flow.roles.descent web.roles own sig).related (.inr (.fuel t), t) (.inr .supply, t) :=
   ⟨crossed own sig t, Flow.roles_conditions_unrelated flow web own sig (.fuel t) .supply t t⟩
 
-/-- Each formation holds and values exactly its own events. -/
+/-- Under living on, read with one kind of relatum, the supply's region is no cut either:
+the keeper lives on the supply. -/
+theorem supply_not_cut_living_on {Pos : Type}
+    (own sig : Pos → (Formation ⊕ Place) × Nat → Prop) :
+    ¬ Flow.Cut (web.roles.sustenance own sig) (fun e => e.1 ∈ [Sum.inr Place.supply]) :=
+  fun cut => cut (.inr .supply, 0) (.inl .keeper, 0) (.head _)
+    (fun mem => match mem with | .tail _ no => nomatch no)
+    (.inr (.inr ⟨trivial, trivial, Nat.zero_lt_one⟩))
+
+/-- Each formation holds its own events. -/
 def own : Formation → Formation × Nat → Prop :=
   fun f e => e.1 = f
 
-def valuation : Valuation Formation (Formation × Nat) :=
-  web.valuation own own
+/-- Each formation values its own events, and the keeper values also the sun's. -/
+def sig : Formation → Formation × Nat → Prop
+  | .keeper, e => e.1 = .keeper ∨ e.1 = .sun
+  | .sun, e => e.1 = .sun
+  | .other, e => e.1 = .other
 
-/-- The center is not derived. Valued from each formation's own standpoint over its own
-events, every life is held, S0 holds at every position, and transmission into each
-position's own region holds; the other formation's event at step zero is living, and has
-no significance from the keeper's standpoint, so standpoint neutrality and G0 fail. -/
+def valuation : Valuation Formation (Formation × Nat) :=
+  web.valuation own sig
+
+/-- Only the keeper's continuation is fed, and only by the sun. -/
+theorem fedBy_sun {e e' : Formation × Nat} (fed : flow.FedBy web e e') :
+    e.1 = .keeper ∧ e'.1 = .sun :=
+  match e, e', fed with
+  | (.keeper, _), (.sun, _), _ => ⟨rfl, rfl⟩
+  | (.keeper, _), (.keeper, _), ⟨_, .supply, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.keeper, _), (.other, _), ⟨_, .supply, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.sun, _), _, ⟨_, _, no, _⟩ => nomatch no
+  | (.other, _), (.sun, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.other, _), (.keeper, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.other, _), (.other, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+
+/-- S0 ranges over living claims: the keeper's own event at step one is active and not
+living, for the keeper undermines there, so S0 says nothing of it. -/
+theorem keeper_not_living :
+    web.active 1 .keeper ∧ own .keeper (.keeper, 1) ∧ ¬ valuation.living (.keeper, 1) :=
+  ⟨trivial, rfl, fun ⟨_, steady⟩ => steady careful.2.2.2.2.2.2.2.2.1⟩
+
+/-- The center is not derived along dependence. Each formation holds and values its own
+events, and the keeper values also the sun's, which feed its supply: every life is held,
+S0 holds at every position, and each standpoint's significance is closed along feeding. The
+other formation's event at step zero is living and has no significance from the keeper's
+standpoint, so standpoint neutrality and G0 fail. The keeper's event at step zero is
+related to it through the habitat, so transmission out of the keeper's own region along the
+formed relations fails. -/
 theorem center_not_derived :
     valuation.Held ∧ (∀ f, valuation.SelfGood f) ∧
-      Within (fun i => own i.1 i.2.2) valuation.transmits ∧
+      (∀ p e e', valuation.sig p e → flow.FedBy web e e' → valuation.sig p e') ∧
       valuation.living (.other, 0) ∧ ¬ valuation.sig .keeper (.other, 0) ∧
-      ¬ Neutral valuation.shares ∧ ¬ valuation.Significant :=
+      ¬ Neutral valuation.shares ∧ ¬ valuation.Significant ∧
+      valuation.related (.keeper, 0) (.other, 0) ∧
+      ¬ Within (fun i => own i.1 i.2.1) valuation.transmits :=
   have alive : valuation.living (.other, 0) := ⟨trivial, fun ⟨_, draws, _⟩ => draws⟩
-  have apart : ¬ valuation.sig .keeper (.other, 0) := fun same => Formation.noConfusion same
-  ⟨web.held_by_formations own, fun _ _ owned _ => owned, fun _ bound _ _ _ => bound,
+  have apart : ¬ valuation.sig .keeper (.other, 0) := fun
+    | .inl same => Formation.noConfusion same
+    | .inr same => Formation.noConfusion same
+  have related : valuation.related (.keeper, 0) (.other, 0) :=
+    ⟨.habitat, .inr trivial, .inl trivial⟩
+  ⟨web.held_by_formations sig,
+   fun f e owned _ => match f, e, owned with
+    | .keeper, (.keeper, _), _ => .inl rfl
+    | .sun, (.sun, _), _ => rfl
+    | .other, (.other, _), _ => rfl,
+   fun p _ _ valued fed => match p, fedBy_sun fed, valued with
+    | .keeper, ⟨_, sun⟩, _ => .inr sun
+    | .sun, ⟨keeper, _⟩, valued => Formation.noConfusion (keeper.symm.trans valued)
+    | .other, ⟨keeper, _⟩, valued => Formation.noConfusion (keeper.symm.trans valued),
    alive, apart, fun share => apart (share (.other, .keeper, (.other, 0)) alive rfl),
-   fun all => apart (all .keeper (.other, 0) alive)⟩
+   fun all => apart (all .keeper (.other, 0) alive), related,
+   fun transmit => apart (transmit (.keeper, (.keeper, 0), (.other, 0)) rfl (.inl rfl)
+     related alive)⟩
 
 end Totalizer
 

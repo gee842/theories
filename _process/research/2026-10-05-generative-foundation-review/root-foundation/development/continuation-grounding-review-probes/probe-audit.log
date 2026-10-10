@@ -1,0 +1,18 @@
+== Review/Probe.lean
+rc=0
+== Review/Probe2.lean
+'Becoming.Review.keeper_active_not_living' does not depend on any axioms
+rc=0
+== Review/ProbeAudit.lean
+'Becoming.Review.own_transmission_of_selfGood' does not depend on any axioms
+'Becoming.Review.significant_of_selfGood_transmits' does not depend on any axioms
+'Becoming.Review.apart_fails_transmission' does not depend on any axioms
+'Becoming.Review.significant_iff_held_own' does not depend on any axioms
+'Becoming.Review.Tot.keeper_alive' does not depend on any axioms
+'Becoming.Review.Tot.out_of_own_fails' does not depend on any axioms
+'Becoming.Review.Tot.stronger' does not depend on any axioms
+'Becoming.Review.Tot.supply_not_cut_living_on' does not depend on any axioms
+'Becoming.Review.lone_only_sun' does not depend on any axioms
+'Becoming.Review.mortal_joint_excess' does not depend on any axioms
+'Becoming.Review.exceeding_by_definition' does not depend on any axioms
+rc=0

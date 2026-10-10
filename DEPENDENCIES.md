@@ -736,7 +736,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 上升或体现生起复现的有限家族，被围住时汲入。 / A finite family in which rising or embodied arising recurs, enclosed around, draws in.
 
-**Consumer input / 下游输入:** 它不能从某步起都没有东西从其外传入。 / It cannot from any step on be fed from nothing beyond it.
+**Consumer input / 下游输入:** 它不能从某步起都没有东西从其外输送入。 / It cannot from any step on be fed from nothing beyond it.
 
 **Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；可判定相等；生起的形式还需一类读法与体现。 / Balance; dissipation; no repetition; enclosure around; decided equality; the arising form also needs the one-kind reading and embodiment.
 
@@ -746,7 +746,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用 Conveys 与 fed_from_beyond；穿越定理由它推出。 / Reuses Conveys and fed_from_beyond; the crossing theorems follow from it.
 
-**Producer output / 上游输出:** 延续的家族不能从某步起都没有东西从其外传入。 / A continuing family cannot from any step on be fed from nothing beyond it.
+**Producer output / 上游输出:** 延续的家族不能从某步起都没有东西从其外输送入。 / A continuing family cannot from any step on be fed from nothing beyond it.
 
 **Consumer input / 下游输入:** 以输送为 related，其边界不会从某步起再无穿越。 / With conveyance as related, its boundary is from no step on left uncrossed.
 
@@ -794,7 +794,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用 FedFromBeyond 与 Lone.supply_not_source；照管者的供给每步都从其外得到供给（Totalizer.fed）。 / Reuses FedFromBeyond and Lone.supply_not_source; the keeper's supply is fed from beyond at every step (Totalizer.fed).
 
-**Producer output / 上游输出:** 从其外得到供给的定义与以供给形式到达其外的见证。 / Being fed from beyond, and the witness that the extent reaches beyond as supply.
+**Producer output / 上游输出:** 从其外得到供给的定义与不必有来源条件复现的见证。 / Being fed from beyond, and the witness that no source condition need recur.
 
 **Consumer input / 下游输入:** 照管者满足这一要求。 / The keeper meets this requirement.
 
@@ -816,13 +816,13 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## derived-extent-limits ← held-lives-g0-is-centering
 
-`formal-reuse` — 中心的一半：照管者网中每个生命都被持有、S0 处处成立，而 N_std 与 G0 不成立（Totalizer.center_not_derived）。 / The center half: in the keeper's web every life is held and S0 holds everywhere while N_std and G0 fail (Totalizer.center_not_derived).
+`formal-reuse` — 复用 Web.held_by_formations 与 Valuation.Held（并经它复用估值的定义）；中心的见证在其上陈述。 / Reuses Web.held_by_formations and Valuation.Held (and through it the definitions of valuations); the center witness is stated on them.
 
-**Producer output / 上游输出:** 被持有的生命上 G0 恰等于处处 S0 加 N_std。 / On held lives G0 is exactly S0 everywhere with N_std.
+**Producer output / 上游输出:** 逐步读、每个形成以自身事件为自身区域时每个活的事件都被持有；被持有的生命上 G0 恰等于处处 S0 加 N_std。 / Read stepwise with each formation's own events its own region, every living event is held; on held lives G0 is exactly S0 everywhere with N_std.
 
-**Consumer input / 下游输入:** 推出的要求不迫使 N_std。 / The derived requirements do not force N_std.
+**Consumer input / 下游输入:** 沿依存推出的范围不迫使 N_std。 / The extent derived along dependence does not force N_std.
 
-**Retained conditions / 保留条件:** 每个形成以自身事件为自身区域。 / Each formation's own events its own region.
+**Retained conditions / 保留条件:** 每个形成以自身事件为自身区域；推出的范围沿依存。 / Each formation's own events its own region; the derived extent runs along dependence.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean)
 
@@ -1076,13 +1076,13 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## held-lives-g0-is-centering ← metaethical-core-characterization
 
-`formal-reuse` — 复用 Valuation、SelfGood、transmits、shares、Neutral、Within、Significant、Reach 与 Invariant.reach；原刻画 significant_iff 保持其范围。 / Reuses Valuation, SelfGood, transmits, shares, Neutral, Within, Significant, Reach and Invariant.reach; the earlier characterization significant_iff keeps its scope.
+`formal-reuse` — 复用 Valuation、SelfGood、transmits、shares、Neutral、Within、Significant、Connected、Reach、reaches 与 Invariant.reach；原刻画 significant_iff 保持其范围。 / Reuses Valuation, SelfGood, transmits, shares, Neutral, Within, Significant, Connected, Reach, reaches and Invariant.reach; the earlier characterization significant_iff keeps its scope.
 
-**Producer output / 上游输出:** 估值、S0、两条中立与 G0 的定义；沿关系的不变量。 / The valuation, S0, the two neutralities and G0; invariants along relations.
+**Producer output / 上游输出:** 估值、S0、两条中立、连通与 G0 的定义；沿关系的不变量。 / The valuation, S0, the two neutralities, connection and G0; invariants along relations.
 
-**Consumer input / 下游输入:** 被持有的生命上 G0 恰等于处处 S0 加 N_std。 / On held lives G0 is exactly S0 everywhere with N_std.
+**Consumer input / 下游输入:** 被持有的生命上 G0 恰等于处处 S0 加 N_std；连通时 S0 加 N_rel 也给出 G0。 / On held lives G0 is exactly S0 everywhere with N_std; on a connected whole S0 with N_rel also gives G0.
 
-**Retained conditions / 保留条件:** 持有；significant_iff_reached 另需持有可判定与到达。 / Holding; significant_iff_reached also needs decided holding and reach.
+**Retained conditions / 保留条件:** 持有；significant_iff_reached 另需持有可判定与到达；significant_of_transmits 需要连通与每个立场持有活的主张。 / Holding; significant_iff_reached also needs decided holding and reach; significant_of_transmits needs connection and every standpoint holding a living claim.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
@@ -1098,21 +1098,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
-## held-lives-g0-is-centering ← own-count-misses-joint-excess
-
-`formal-reuse` — 中心不由动力学推出的见证使用谨慎照管者，它满足联合地在所给之内（WithinJoint）。 / The witness that the center is not derived uses the careful keeper, which takes jointly within what is given (WithinJoint).
-
-**Producer output / 上游输出:** 联合地在所给之内的定义。 / Taking jointly within what is given.
-
-**Consumer input / 下游输入:** 满足它的照管者仍不使 N_std 成立。 / A keeper meeting it still does not make N_std hold.
-
-**Retained conditions / 保留条件:** 见 derived-extent-limits。 / See derived-extent-limits.
-
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
-
 ## held-lives-g0-is-centering ← self-good-reachable-g0
 
-`interpretive` — 那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的恰是 N_std。 / It left a bridge from standpoint-relative to normative significance; here, on held lives, what G0 adds beyond S0 is exactly N_std.
+`interpretive` — 那里留下了从立场相对的意义到规范意义的桥；这里说明在被持有的生命上，G0 超出 S0 的可以集中在 N_std 上。 / It left a bridge from standpoint-relative to normative significance; here, on held lives, what G0 adds beyond S0 can be concentrated in N_std.
 
 ## historical-source-binding ← retrospective-source-binding
 
