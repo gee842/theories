@@ -19,6 +19,8 @@
 
 The text is still about 1,300 words, with 21 footnotes.
 
+Ren then asked to put it at the top of the README, merge all and push. Version 5 is the text of [the opening](../../theories/becoming/OPENING.md), which the README renders first.
+
 ## Version 4
 
 10 October 2026. [Version 4](OPENING-V4.md) follows Ren's words on version 3 ([source](../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md#the-无明-line-and-dominance)). Ren quoted two of its sentences and wrote:

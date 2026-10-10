@@ -76,6 +76,12 @@ On version 4, Ren wrote:
 
 > i think maybe say: we should stop the game of winning, which is a zero sum game based on relative position? which is a game all winners will lose? put it elegantly
 
+### Placement
+
+On version 5, Ren wrote:
+
+> put it at the top of the readme, merge all, and push
+
 ## Context (AI-authored)
 
 Ren proposed the text above as the opening of the work and asked for the assistant's view. The assessment was given in the conversation. The drafts are in [the opening drafts](../../drafts/2026-10-10-opening/):
@@ -86,4 +92,4 @@ Ren proposed the text above as the opening of the work and asked for the assista
 - [version 4](../../drafts/2026-10-10-opening/OPENING-V4.md), after Ren's words on the 无明 line and dominance;
 - [version 5](../../drafts/2026-10-10-opening/OPENING-V5.md), with Ren's sentence on the game of winning.
 
-[The notes](../../drafts/2026-10-10-opening/OPENING-NOTES.md) say what each version keeps and changes. The direction on 无明 is recorded as a research plan, [the boundary condition for 无明](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md). Ren asked for the opening at the top of the README. It is not yet placed there or in any other entry page.
+[The notes](../../drafts/2026-10-10-opening/OPENING-NOTES.md) say what each version keeps and changes. The direction on 无明 is recorded as a research plan, [the boundary condition for 无明](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md). Ren asked for the opening at the top of the README. Version 5 is placed there as [the opening](../../theories/becoming/OPENING.md), which `make research-render` puts first in the README, named by `readme_opening` in `_process/research-config.json`.
