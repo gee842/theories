@@ -53,7 +53,8 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 
 1. P42, P43 (`c9c219e3`), then P44.
 2. P46, P47.
-   - P49 registration and testing (`Becoming.Testing`), after P42–P44, which it imports.
 3. `Becoming.Locality`: laws 1, 3 and 4, with their corollaries re-proved in `Openness`, `Counting` and P47's `Standing`.
 4. R6 `Becoming.Recurrence`: it imports only `Becoming.Frame` and `Locality` does not use it, so it may go ahead of item 3 if it is ready first.
 5. Law 2, integrated into `Becoming.Locality`, with the census law re-proved as its corollary.
+6. P49 registration and testing (`Becoming.Testing`), stated on `Flow.BalancesOn` (the integrator's call, 10-11: under the zero-premise redirect the local form is the theorem, global balance the corollary), so after item 3.
+7. `Sampling` localized by [9c2394] to `Flow.BalancesOn`, `Flow.DissipatesOn` and `Flow.RunsDownOn` per coarse step (the time test, coarser steps first), after item 3.
