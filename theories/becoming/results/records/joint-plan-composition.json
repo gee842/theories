@@ -30,7 +30,7 @@
   "dependencies": [],
   "related": [
     {
-      "id": "aggregate-exit-funding",
+      "id": "draws-on-a-shared-stock",
       "detail": {
         "zh": "共同耗尽关联不等于已证明的类型转换。",
         "en": "The shared depletion issue does not establish a proved type translation."

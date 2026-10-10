@@ -16,7 +16,7 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-10T17:02:37.963519+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-10T17:12:12.573647+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
@@ -130,7 +130,7 @@ Separate feasibility does not establish joint realization; different modules giv
 
 **Scope still separate / 保留范围:** No adapter between all three representations has been verified by this map.
 
-**Migrated records / 已迁移条目:** [aggregate-exit-funding](records/aggregate-exit-funding.md) · [code-plan-global-support](records/code-plan-global-support.md) · [exclusive-footprint-support](records/exclusive-footprint-support.md) · [finite-continuation-plans](records/finite-continuation-plans.md) · [joint-code-plan-lifting](records/joint-code-plan-lifting.md) · [joint-decomposition-lifting](records/joint-decomposition-lifting.md) · [joint-plan-composition](records/joint-plan-composition.md) · [joint-target-uniqueness](records/joint-target-uniqueness.md)
+**Migrated records / 已迁移条目:** [code-plan-global-support](records/code-plan-global-support.md) · [draws-on-a-shared-stock](records/draws-on-a-shared-stock.md) · [exclusive-footprint-support](records/exclusive-footprint-support.md) · [finite-continuation-plans](records/finite-continuation-plans.md) · [joint-code-plan-lifting](records/joint-code-plan-lifting.md) · [joint-decomposition-lifting](records/joint-decomposition-lifting.md) · [joint-plan-composition](records/joint-plan-composition.md) · [joint-target-uniqueness](records/joint-target-uniqueness.md)
 
 <a id="f03"></a>
 

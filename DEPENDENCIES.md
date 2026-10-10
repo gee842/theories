@@ -516,7 +516,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 平衡的流：一步之后的水平加取用，等于之前的水平加给予。 / A balanced flow: the level after a step with what is taken equals the level before with what is given.
 
-**Consumer input / 下游输入:** 部分的记账：有部分的流与扣留后的流的平衡，相差部分到该步为止的取用与给予。 / The accounting of a part: the balances of the flow with the part and of the withheld flow differ by what the part has taken and given so far.
+**Consumer input / 下游输入:** 部分造成的差额：有部分的流与扣留后的流的平衡，相差部分到该步为止的取用与给予。 / The difference a part makes: the balances of the flow with the part and of the withheld flow differ by what the part has taken and given so far.
 
 **Retained conditions / 保留条件:** 有部分的流平衡；扣留后的水平从同一起点按扣留后的流平衡。 / The flow with the part balances; the levels without it balance the withheld flow from the same start.
 

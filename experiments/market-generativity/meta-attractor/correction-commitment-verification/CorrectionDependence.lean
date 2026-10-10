@@ -142,38 +142,40 @@ theorem settling_an_actual_claim_preserves_funding (s : State) (d : Nat)
   simp only [Funded, settle] at *
   omega
 
+-- Draws on one shared stock: every selection fits within the stock exactly when the
+-- total does, and draws that each fit alone need not fit together.
 def total : Nat → (Nat → Nat) → Nat
   | 0, _ => 0
-  | n+1, claims => total n claims + claims n
+  | n+1, draws => total n draws + draws n
 
 def selectedTotal : Nat → (Nat → Bool) → (Nat → Nat) → Nat
   | 0, _, _ => 0
-  | n+1, chosen, claims => selectedTotal n chosen claims +
-      (if chosen n then claims n else 0)
+  | n+1, chosen, draws => selectedTotal n chosen draws +
+      (if chosen n then draws n else 0)
 
-theorem selected_total_bounded (n : Nat) (chosen : Nat → Bool) (claims : Nat → Nat) :
-    selectedTotal n chosen claims ≤ total n claims := by
+theorem selected_total_bounded (n : Nat) (chosen : Nat → Bool) (draws : Nat → Nat) :
+    selectedTotal n chosen draws ≤ total n draws := by
   induction n with
   | zero => simp [selectedTotal, total]
   | succ n ih =>
     simp only [selectedTotal, total]
     split <;> omega
 
-theorem selecting_every_claim (n : Nat) (claims : Nat → Nat) :
-    selectedTotal n (fun _ => true) claims = total n claims := by
+theorem selecting_every_draw (n : Nat) (draws : Nat → Nat) :
+    selectedTotal n (fun _ => true) draws = total n draws := by
   induction n with
   | zero => rfl
   | succ n ih => simp [selectedTotal, total, ih]
 
-theorem all_coalitions_funded_iff_joint_total (n reserve : Nat) (claims : Nat → Nat) :
-    (∀ chosen, selectedTotal n chosen claims ≤ reserve) ↔ total n claims ≤ reserve := by
+theorem every_selection_within_iff_total_within (n stock : Nat) (draws : Nat → Nat) :
+    (∀ chosen, selectedTotal n chosen draws ≤ stock) ↔ total n draws ≤ stock := by
   constructor
   · intro h
-    simpa only [selecting_every_claim] using h (fun _ => true)
+    simpa only [selecting_every_draw] using h (fun _ => true)
   · intro h chosen
-    exact Nat.le_trans (selected_total_bounded n chosen claims) h
+    exact Nat.le_trans (selected_total_bounded n chosen draws) h
 
-theorem individually_affordable_exits_can_fail_jointly :
+theorem each_within_alone_not_together :
     (∀ i, i < 2 → (fun _ : Nat => 2) i ≤ 2) ∧
     ¬ (∀ chosen, selectedTotal 2 chosen (fun _ => 2) ≤ 2) := by
   constructor

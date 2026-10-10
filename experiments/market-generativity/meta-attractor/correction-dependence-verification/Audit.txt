@@ -38,9 +38,9 @@
 'CorrectionDependence.total' does not depend on any axioms
 'CorrectionDependence.selectedTotal' does not depend on any axioms
 'CorrectionDependence.selected_total_bounded' depends on axioms: [propext, Quot.sound]
-'CorrectionDependence.selecting_every_claim' depends on axioms: [propext]
-'CorrectionDependence.all_coalitions_funded_iff_joint_total' depends on axioms: [propext, Quot.sound]
-'CorrectionDependence.individually_affordable_exits_can_fail_jointly' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.selecting_every_draw' depends on axioms: [propext]
+'CorrectionDependence.every_selection_within_iff_total_within' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.each_within_alone_not_together' depends on axioms: [propext, Quot.sound]
 'CorrectionDependence.Plan' does not depend on any axioms
 'CorrectionDependence.planState' does not depend on any axioms
 'CorrectionDependence.taskScore' does not depend on any axioms

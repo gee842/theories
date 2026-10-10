@@ -105,7 +105,7 @@ b(y',\psi')-b(y,\psi)
 \tag{1}
 \]
 
-The first term measures the outcome change under the previous standard; the second measures the effect of revising the standard at the new outcome. This is an accounting identity, not an ethical ranking. Reversing the order allocates any interaction differently, so the report should declare its order and retain both measurements. Neither decomposition identifies the reasons for revision.
+The first term measures the outcome change under the previous standard; the second measures the effect of revising the standard at the new outcome. This is an arithmetic identity, not an ethical ranking. Reversing the order allocates any interaction differently, so the report should declare its order and retain both measurements. Neither decomposition identifies the reasons for revision.
 
 **Counterexample: approval is not recovery.** Let a measured condition decline as \(y_t=2^{-t}\), while the accepted floor follows \(a_t=2^{-t-1}\). Every new compliance margin \(y_t-a_t\) is positive; every fixed positive original floor is eventually crossed. Whether a lower floor is justified requires an explicit argument. Repeatedly relabeling the margin cannot establish material regeneration.
 

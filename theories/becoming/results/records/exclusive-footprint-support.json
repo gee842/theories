@@ -30,7 +30,7 @@
   "dependencies": [],
   "related": [
     {
-      "id": "aggregate-exit-funding",
+      "id": "draws-on-a-shared-stock",
       "detail": {
         "zh": "同一共同支持问题的不同表达，不计作已证明的相互推广。",
         "en": "Different representations of shared support; neither is registered as a proved generalization of the other."

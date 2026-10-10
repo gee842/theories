@@ -16,7 +16,6 @@
 |---|---|---|---|
 | `acquired-binding-compositional-use` | [取得的绑定接通组合使用 / Acquired bindings enter compositional use](records/acquired-binding-compositional-use.md) | theorem | recorded-checked |
 | `acquired-revision-of-pending-task` | [取得的目的修订进入在途任务 / Acquired goal revision enters a pending task](records/acquired-revision-of-pending-task.md) | theorem | recorded-checked |
-| `aggregate-exit-funding` | [共享存量上的汲取：每种组合都在存量之内，当且仅当总和在内 / Draws on one shared stock: every combination fits exactly when the total does](records/aggregate-exit-funding.md) | theorem | recorded-checked |
 | `alignment-direction-g0-j` | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](records/alignment-direction-g0-j.md) | argument | reviewed-scoped |
 | `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
 | `becoming-context-coherence` | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](records/becoming-context-coherence.md) | theorem | recorded-checked |
@@ -51,6 +50,7 @@
 | `derivation-soundness` | [带前提的推导健全性 / Premise-tracked derivation soundness](records/derivation-soundness.md) | theorem | recorded-checked |
 | `derived-extent-limits` | [推出的范围达不到的：它单向地到达自身延续所依存的，随想要的结束而结束；满足此处推出的每项要求的持续形成仍可以终结它不需要的生命；沿依存，中心不由动力学推出 / What the derived extent does not reach: it runs one way, to what one's continuation depends on, and ends with the want; a continuing formation meeting every requirement derived here can still end a life it does not need; along dependence the center is not derived from the dynamics](records/derived-extent-limits.md) | theorem | recorded-checked |
 | `derived-history-law-exactness` | [由历史摘要构造局部规律的精确条件 / Exactness of a local law derived from history summaries](records/derived-history-law-exactness.md) | theorem | recorded-checked |
+| `draws-on-a-shared-stock` | [共享存量上的汲取：每种组合都在存量之内，当且仅当总和在内 / Draws on one shared stock: every combination fits exactly when the total does](records/draws-on-a-shared-stock.md) | theorem | recorded-checked |
 | `effective-capacity-and-eventual-reachability` | [共同实现的准备步骤界与实际变化 / Preparation bounds and actual changes in joint realization](records/effective-capacity-and-eventual-reachability.md) | theorem | recorded-checked |
 | `enacted-scene-binding` | [行动形成可供绑定的场景 / Action forms scenes available for binding](records/enacted-scene-binding.md) | theorem | recorded-checked |
 | `encounter-control-and-retention` | [经历控制与保留使用的经验范围 / Empirical scope of encounter control and retained use](records/encounter-control-and-retention.md) | assessment | reviewed-scoped |
@@ -157,7 +157,7 @@
 
 - Same theorem under two names: `trace-law-equivalence`, `derivation-soundness`. Preserve historical names and receipts; count the underlying result once.
 - Similar statements with different semantics: `branching-target-uniqueness`, `joint-target-uniqueness`. Their local test languages differ.
-- Three shared-support results: `aggregate-exit-funding`, `exclusive-footprint-support`, `joint-plan-composition`. Their common obstruction does not establish a verified translation between them.
+- Three shared-support results: `draws-on-a-shared-stock`, `exclusive-footprint-support`, `joint-plan-composition`. Their common obstruction does not establish a verified translation between them.
 - Completed G0/J argument and its AI application: `practical-judgment-g0-j`, `alignment-direction-g0-j`. The independent targets `universal-practical-warrant` and `wisdom-root` remain open.
 
 ## 检查与检索 Check and search

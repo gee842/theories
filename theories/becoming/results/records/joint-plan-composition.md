@@ -32,7 +32,7 @@ Boundary source / 边界来源: [JointContinuation.lean](../../../../experiments
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
-- Related, not a proved adapter / 关联而非已证转换: [aggregate-exit-funding](aggregate-exit-funding.md). 共同耗尽关联不等于已证明的类型转换。 / The shared depletion issue does not establish a proved type translation.
+- Related, not a proved adapter / 关联而非已证转换: [draws-on-a-shared-stock](draws-on-a-shared-stock.md). 共同耗尽关联不等于已证明的类型转换。 / The shared depletion issue does not establish a proved type translation.
 - Related, not a proved adapter / 关联而非已证转换: [exclusive-footprint-support](exclusive-footprint-support.md). 共同方案有时间和观察条件，不能由静态叶项支持自动导出。 / Joint plans have timing and observation conditions not automatically supplied by static leaf support.
 
 ## 来源与既有回执 Sources and existing receipts

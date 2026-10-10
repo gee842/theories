@@ -59,7 +59,7 @@ def main():
         'theorems': theorems, 'theorem_count': len(theorems),
         'audit_count': len(audits), 'per_declaration_axioms': dict(audits), 'axioms': axioms,
         'logs': {n: sha(log.encode()) for n, log in logs.items()},
-        'scope': 'Endogenous exit burdens, loss-minimizing requests with truthful or altered reports, actual parent/child shutdown, exact funded-provision and coalition conditions, and a costly admissible-choice witness. Dependency laws, report correspondence, authority and admission enforcement remain supplied. No universal corrigibility, motive formation or arbitrary self-modification guarantee.'
+        'scope': 'Endogenous exit burdens, loss-minimizing requests with truthful or altered reports, actual parent/child shutdown, exact funded-provision conditions, draws on one shared stock, and a costly admissible-choice witness. Dependency laws, report correspondence, authority and admission enforcement remain supplied. No universal corrigibility, motive formation or arbitrary self-modification guarantee.'
     }
     (HERE / 'correction-dependence-verification.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps({k: receipt[k] for k in ['status', 'theorem_count', 'audit_count', 'axioms']}))

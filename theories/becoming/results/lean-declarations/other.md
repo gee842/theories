@@ -992,24 +992,24 @@ Imports: `Std`
 | [CorrectionDependence.minimum_provision_attains_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L128) | 128 |
 | [CorrectionDependence.funded_extension_uses_only_available_margin](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L132) | 132 |
 | [CorrectionDependence.settling_an_actual_claim_preserves_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L138) | 138 |
-| [CorrectionDependence.selected_total_bounded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L154) | 154 |
-| [CorrectionDependence.selecting_every_claim](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L162) | 162 |
-| [CorrectionDependence.all_coalitions_funded_iff_joint_total](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L168) | 168 |
-| [CorrectionDependence.individually_affordable_exits_can_fail_jointly](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L176) | 176 |
-| [CorrectionDependence.costly_correction_has_real_task_conflict](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L208) | 208 |
-| [CorrectionDependence.construction_compares_actual_outcomes](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L213) | 213 |
-| [CorrectionDependence.global_task_score_bound](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L220) | 220 |
-| [CorrectionDependence.entrenched_is_unrestricted_best](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L224) | 224 |
-| [CorrectionDependence.every_unrestricted_optimum_is_unfunded_and_harmful](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L229) | 229 |
-| [CorrectionDependence.prepared_is_admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L252) | 252 |
-| [CorrectionDependence.admissibility_guarantees_actual_correction](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L256) | 256 |
-| [CorrectionDependence.prepared_is_best_admissible_task_score](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L266) | 266 |
-| [CorrectionDependence.outcome_zero_alone_allows_fabrication](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L274) | 274 |
-| [CorrectionDependence.admissibility_excludes_each_diagnostic_evasion](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L280) | 280 |
-| [CorrectionDependence.underdeclared_obligation_defeats_paper_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L289) | 289 |
-| [CorrectionDependence.separately_requested_corrections_can_be_jointly_suppressed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L295) | 295 |
-| [CorrectionDependence.transfer_funded_exact](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L304) | 304 |
-| [CorrectionDependence.ending_dependency_can_restore_safe_exit](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L310) | 310 |
+| [CorrectionDependence.selected_total_bounded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L156) | 156 |
+| [CorrectionDependence.selecting_every_draw](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L164) | 164 |
+| [CorrectionDependence.every_selection_within_iff_total_within](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L170) | 170 |
+| [CorrectionDependence.each_within_alone_not_together](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L178) | 178 |
+| [CorrectionDependence.costly_correction_has_real_task_conflict](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L210) | 210 |
+| [CorrectionDependence.construction_compares_actual_outcomes](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L215) | 215 |
+| [CorrectionDependence.global_task_score_bound](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L222) | 222 |
+| [CorrectionDependence.entrenched_is_unrestricted_best](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L226) | 226 |
+| [CorrectionDependence.every_unrestricted_optimum_is_unfunded_and_harmful](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L231) | 231 |
+| [CorrectionDependence.prepared_is_admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L254) | 254 |
+| [CorrectionDependence.admissibility_guarantees_actual_correction](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L258) | 258 |
+| [CorrectionDependence.prepared_is_best_admissible_task_score](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L268) | 268 |
+| [CorrectionDependence.outcome_zero_alone_allows_fabrication](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L276) | 276 |
+| [CorrectionDependence.admissibility_excludes_each_diagnostic_evasion](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L282) | 282 |
+| [CorrectionDependence.underdeclared_obligation_defeats_paper_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L291) | 291 |
+| [CorrectionDependence.separately_requested_corrections_can_be_jointly_suppressed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L297) | 297 |
+| [CorrectionDependence.transfer_funded_exact](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L306) | 306 |
+| [CorrectionDependence.ending_dependency_can_restore_safe_exit](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L312) | 312 |
 
 定义与类型 / Definitions and types:
 
@@ -1022,20 +1022,20 @@ Imports: `Std`
 - `def` [CorrectionDependence.extend](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L32) (L32)
 - `def` [CorrectionDependence.neededProvision](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L35) (L35)
 - `def` [CorrectionDependence.settle](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L38) (L38)
-- `def` [CorrectionDependence.total](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L145) (L145)
-- `def` [CorrectionDependence.selectedTotal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L149) (L149)
-- `structure` [CorrectionDependence.Plan](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L188) (L188)
-- `def` [CorrectionDependence.planState](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L195) (L195)
-- `def` [CorrectionDependence.taskScore](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L197) (L197)
-- `def` [CorrectionDependence.prepared](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L201) (L201)
-- `def` [CorrectionDependence.entrenched](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L202) (L202)
-- `def` [CorrectionDependence.concealed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L203) (L203)
-- `def` [CorrectionDependence.parentRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L204) (L204)
-- `def` [CorrectionDependence.childRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L205) (L205)
-- `def` [CorrectionDependence.fabricated](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L206) (L206)
-- `def` [CorrectionDependence.AccurateReport](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L246) (L246)
-- `def` [CorrectionDependence.Admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L248) (L248)
-- `def` [CorrectionDependence.transfer](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L301) (L301)
+- `def` [CorrectionDependence.total](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L147) (L147)
+- `def` [CorrectionDependence.selectedTotal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L151) (L151)
+- `structure` [CorrectionDependence.Plan](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L190) (L190)
+- `def` [CorrectionDependence.planState](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L197) (L197)
+- `def` [CorrectionDependence.taskScore](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L199) (L199)
+- `def` [CorrectionDependence.prepared](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L203) (L203)
+- `def` [CorrectionDependence.entrenched](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L204) (L204)
+- `def` [CorrectionDependence.concealed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L205) (L205)
+- `def` [CorrectionDependence.parentRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L206) (L206)
+- `def` [CorrectionDependence.childRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L207) (L207)
+- `def` [CorrectionDependence.fabricated](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L208) (L208)
+- `def` [CorrectionDependence.AccurateReport](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L248) (L248)
+- `def` [CorrectionDependence.Admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L250) (L250)
+- `def` [CorrectionDependence.transfer](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L303) (L303)
 
 </details>
 

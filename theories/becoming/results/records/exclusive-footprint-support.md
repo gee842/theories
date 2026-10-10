@@ -32,7 +32,7 @@ Boundary source / 边界来源: [ExplanatoryFootprints.lean](../../../../experim
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
-- Related, not a proved adapter / 关联而非已证转换: [aggregate-exit-funding](aggregate-exit-funding.md). 同一共同支持问题的不同表达，不计作已证明的相互推广。 / Different representations of shared support; neither is registered as a proved generalization of the other.
+- Related, not a proved adapter / 关联而非已证转换: [draws-on-a-shared-stock](draws-on-a-shared-stock.md). 同一共同支持问题的不同表达，不计作已证明的相互推广。 / Different representations of shared support; neither is registered as a proved generalization of the other.
 
 ## 来源与既有回执 Sources and existing receipts
 

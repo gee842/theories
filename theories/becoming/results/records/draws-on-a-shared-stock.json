@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "aggregate-exit-funding",
+  "id": "draws-on-a-shared-stock",
   "title": {
     "zh": "共享存量上的汲取：每种组合都在存量之内，当且仅当总和在内",
     "en": "Draws on one shared stock: every combination fits exactly when the total does"
@@ -25,7 +25,8 @@
   },
   "canonical_source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
   "aliases": [
-    "CorrectionDependence.all_coalitions_funded_iff_joint_total"
+    "CorrectionDependence.every_selection_within_iff_total_within",
+    "aggregate-exit-funding"
   ],
   "dependencies": [],
   "related": [
@@ -65,16 +66,16 @@
     {
       "path": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
       "role": "proof",
-      "sha256": "18997cd01c7a7a41863c06ea351f34d69ce067cd0f518c68a3885ae142108067",
+      "sha256": "617c943602727dc63eb03cf2bf635319749a9420f6c814ac5a1884aff091605c",
       "declarations": [
-        "CorrectionDependence.all_coalitions_funded_iff_joint_total",
-        "CorrectionDependence.individually_affordable_exits_can_fail_jointly"
+        "CorrectionDependence.every_selection_within_iff_total_within",
+        "CorrectionDependence.each_within_alone_not_together"
       ]
     },
     {
       "path": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json",
       "role": "receipt",
-      "sha256": "ac339db3b76ff066b48c3ff4881dc85fd4158da7f3cb4d1cae9d48bf583c9b27",
+      "sha256": "5f014fc249209cbfa03c765a4b2a4655687eaa5be40f9bc9ef571e3919d73f60",
       "declarations": []
     },
     {
@@ -105,6 +106,10 @@
     {
       "zh": "2026-10-10：按 Ren 的要求以描述结构的词重述（原题“可加退出承担的共同资金界”）；主张、证明与回执不变。",
       "en": "2026-10-10: restated in words that describe the structure, at Ren's request (formerly “Joint funding of additive exit obligations”); claim, proof and receipt unchanged."
+    },
+    {
+      "zh": "2026-10-10：按 Ren 的要求改用描述结构的内部名称：记录 ID 由 aggregate-exit-funding 改为 draws-on-a-shared-stock（旧 ID 留作别名，以便历史检查仍能找到），Lean 定理 all_coalitions_funded_iff_joint_total 与 individually_affordable_exits_can_fail_jointly 改名为 every_selection_within_iff_total_within 与 each_within_alone_not_together，参数 claims、reserve 改为 draws、stock；两项 Lean 检查重新运行并通过，证明内容不变。",
+      "en": "2026-10-10: internal names restated in structural words at Ren's request. The record ID aggregate-exit-funding became draws-on-a-shared-stock, with the old ID kept as an alias so historical checks still resolve; the Lean theorems all_coalitions_funded_iff_joint_total and individually_affordable_exits_can_fail_jointly became every_selection_within_iff_total_within and each_within_alone_not_together, with parameters claims and reserve renamed draws and stock. Both Lean checks were rerun and passed; the proofs are unchanged."
     }
   ]
 }

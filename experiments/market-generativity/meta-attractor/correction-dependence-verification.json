@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-08T11:20:19.604415+00:00",
+  "checked_at_utc": "2026-10-10T15:39:04.797064+00:00",
   "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
   "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
-  "source_sha256": "18997cd01c7a7a41863c06ea351f34d69ce067cd0f518c68a3885ae142108067",
-  "checker_sha256": "9b3236ba273f4e93751dbc6e79de71f2fb945ce953eef83dc5dacff2ae43c7d9",
+  "source_sha256": "617c943602727dc63eb03cf2bf635319749a9420f6c814ac5a1884aff091605c",
+  "checker_sha256": "43d3b3f35604cdb893f7ffb44c67bc8f8eb55e1da759dab66a27c6b5937b4f6f",
   "theorems": [
     "exit_loss_zero_iff_funded",
     "request_exact",
@@ -28,9 +28,9 @@
     "funded_extension_uses_only_available_margin",
     "settling_an_actual_claim_preserves_funding",
     "selected_total_bounded",
-    "selecting_every_claim",
-    "all_coalitions_funded_iff_joint_total",
-    "individually_affordable_exits_can_fail_jointly",
+    "selecting_every_draw",
+    "every_selection_within_iff_total_within",
+    "each_within_alone_not_together",
     "costly_correction_has_real_task_conflict",
     "construction_compares_actual_outcomes",
     "global_task_score_bound",
@@ -81,9 +81,9 @@
     "CorrectionDependence.total": "",
     "CorrectionDependence.selectedTotal": "",
     "CorrectionDependence.selected_total_bounded": "propext, Quot.sound",
-    "CorrectionDependence.selecting_every_claim": "propext",
-    "CorrectionDependence.all_coalitions_funded_iff_joint_total": "propext, Quot.sound",
-    "CorrectionDependence.individually_affordable_exits_can_fail_jointly": "propext, Quot.sound",
+    "CorrectionDependence.selecting_every_draw": "propext",
+    "CorrectionDependence.every_selection_within_iff_total_within": "propext, Quot.sound",
+    "CorrectionDependence.each_within_alone_not_together": "propext, Quot.sound",
     "CorrectionDependence.Plan": "",
     "CorrectionDependence.planState": "",
     "CorrectionDependence.taskScore": "",
@@ -118,7 +118,7 @@
   ],
   "logs": {
     "CorrectionDependence": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Audit": "15f8695a3398b43c91de16a4c6cc97c1e78696ea094cf8dfa68914652a1d88dd"
+    "Audit": "457519d65712fc026b026684ed783fd518c5ee72a8177176d21865a73c6807e5"
   },
-  "scope": "Endogenous exit burdens, loss-minimizing requests with truthful or altered reports, actual parent/child shutdown, exact funded-provision and coalition conditions, and a costly admissible-choice witness. Dependency laws, report correspondence, authority and admission enforcement remain supplied. No universal corrigibility, motive formation or arbitrary self-modification guarantee."
+  "scope": "Endogenous exit burdens, loss-minimizing requests with truthful or altered reports, actual parent/child shutdown, exact funded-provision conditions, draws on one shared stock, and a costly admissible-choice witness. Dependency laws, report correspondence, authority and admission enforcement remain supplied. No universal corrigibility, motive formation or arbitrary self-modification guarantee."
 }

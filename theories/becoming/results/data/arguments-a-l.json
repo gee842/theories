@@ -14,7 +14,7 @@
     "next_zh": "已接续：实验接入与模型族修订；应继续：上界与校准的根据、跨域形成及经验识别。",
     "next_en": "Continued: access and model-family revision. Proposed: warranted bounds, calibration, broader formation and empirical identification.",
     "source": "theories/becoming/chapters/ABSTRACTION-ACQUISITION.md",
-    "source_sha256": "17d2ef0764471580b2e1aac1def34a1e32a110c3bb6ec82ffe1e57c3b249a15f",
+    "source_sha256": "252b9181ef40c1880ac0c5a47fdc7985af49b61633dbeaccafb1a2d3025f2dcd",
     "lean": [],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/ABSTRACTION-ACQUISITION-REVIEW.md",
@@ -694,7 +694,7 @@
     "next_zh": "正在：生成正面方向的规范根据；应继续：德、无为与不支配的边界，并检验各家实质差异。",
     "next_en": "Ongoing: warrant of positive generative direction. Proposed: limits of de, nonforcing and nondomination, preserving substantive differences among traditions.",
     "source": "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
-    "source_sha256": "72ddf04f0a9c2b2e2dbc940ce223e504824524996716fc1258c3a67f4e5515ae",
+    "source_sha256": "03c984b22eb09057415ab98361795d597ac6f1eab606496f864704e584a1ac57",
     "lean": [],
     "evidence": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md",

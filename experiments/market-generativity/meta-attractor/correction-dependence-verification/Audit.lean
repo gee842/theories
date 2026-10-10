@@ -31,9 +31,9 @@ import CorrectionDependence
 #print axioms CorrectionDependence.total
 #print axioms CorrectionDependence.selectedTotal
 #print axioms CorrectionDependence.selected_total_bounded
-#print axioms CorrectionDependence.selecting_every_claim
-#print axioms CorrectionDependence.all_coalitions_funded_iff_joint_total
-#print axioms CorrectionDependence.individually_affordable_exits_can_fail_jointly
+#print axioms CorrectionDependence.selecting_every_draw
+#print axioms CorrectionDependence.every_selection_within_iff_total_within
+#print axioms CorrectionDependence.each_within_alone_not_together
 #print axioms CorrectionDependence.Plan
 #print axioms CorrectionDependence.planState
 #print axioms CorrectionDependence.taskScore

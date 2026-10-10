@@ -51,7 +51,7 @@ C=\frac{1{,}984{,}289}{65{,}536}\approx30.278
 
 out of the inherited 36 before receiving any new return. Peak storage is 114 cells. Its five acquired endpoint words have lengths zero through four. After retaining the learned model, it predicts and executes five actions, a word absent from that evidence. The contact opens and transfers one existing ten-unit packet. The final fuel is \(1{,}030{,}367/65{,}536\approx15.722\), with the other ten-unit packet still in source.
 
-Whole-history accounting is exact:
+Whole-history counting is exact:
 
 \[
 145=4+1+74+10+C+\frac{1{,}030{,}367}{65{,}536}+10.

@@ -257,7 +257,7 @@ def render_index(records):
     lines += ['', '## 先查哪一项 Where to look first', '',
              '- Same theorem under two names: `trace-law-equivalence`, `derivation-soundness`. Preserve historical names and receipts; count the underlying result once.',
              '- Similar statements with different semantics: `branching-target-uniqueness`, `joint-target-uniqueness`. Their local test languages differ.',
-             '- Three shared-support results: `aggregate-exit-funding`, `exclusive-footprint-support`, `joint-plan-composition`. Their common obstruction does not establish a verified translation between them.',
+             '- Three shared-support results: `draws-on-a-shared-stock`, `exclusive-footprint-support`, `joint-plan-composition`. Their common obstruction does not establish a verified translation between them.',
              '- Completed G0/J argument and its AI application: `practical-judgment-g0-j`, `alignment-direction-g0-j`. The independent targets `universal-practical-warrant` and `wisdom-root` remain open.', '',
              '## 检查与检索 Check and search', '', 'From the repository root:', '', '```sh',
              'make research-check',

@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checked_at_utc": "2026-10-08T11:46:04.933604+00:00",
+  "checked_at_utc": "2026-10-10T15:39:37.138423+00:00",
   "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "compiler": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
   "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
@@ -8,7 +8,7 @@
   "sources": {
     "CorrectionDependence": {
       "path": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
-      "sha256": "18997cd01c7a7a41863c06ea351f34d69ce067cd0f518c68a3885ae142108067",
+      "sha256": "617c943602727dc63eb03cf2bf635319749a9420f6c814ac5a1884aff091605c",
       "role": "inherited dependency"
     },
     "CorrectionCommitment": {
