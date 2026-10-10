@@ -56,14 +56,14 @@ that the rest are independent, none following from all the others together.
   counting free. Together, with only active relata giving, they bind it: what arises is
   given by a relatum active at the step, so under a census nothing arises across a step at
   which nothing is active, which is no law of tallies (`World.counting_binds_jointly`).
-  That is all the eight premises add. A queue tended by its front, which gives to each
+  That is all the eight premises add. An open queue, whose front gives to each
   relatum joining, takes from each leaving and, while active, exchanges a unit each way
   with every ground relatum, meets all eight wherever nothing joins an empty queue
-  (`World.tendedQueue_premised`). So a property of the counts holds in every world meeting
+  (`World.openQueue_premised`). So a property of the counts holds in every world meeting
   the eight exactly when it holds of every tally in which nothing arises across a step at
   which nothing is active (`World.premised_counting`). Three of the eight hold idly in the
-  tended queue: nothing taking part takes from a closed family, and nothing depends on
-  anything (`World.tended_not_binds`). Where every premise binds, every census counts
+  open queue: nothing taking part takes from a closed family, and nothing depends on
+  anything (`World.openQueue_not_binds`). Where every premise binds, every census counts
   something arising (`World.binds_arising`), which is no law under the eight alone
   (`World.binds_adds`). No step at which the front is active is enclosed; under enclosure
   from some step on change is bounded as well (`Becoming.Openness`).
@@ -316,34 +316,34 @@ theorem strained_but : strained.MeetsAllBut Dependent :=
     fun dependent => Nat.not_succ_le_self 1 (dependent 0 () trivial () trivial)
 
 instance unbalanced_decided : ∀ t x, Decidable (unbalanced.web.active t x) :=
-  fun t x => Nat.decLt 0 (Handing.stands x t)
+  fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
-/-- Every premise but balance: the sides of `Handing` with no flow. -/
+/-- Every premise but balance: the sides of `Shuttle` with no flow. -/
 theorem unbalanced_but : unbalanced.MeetsAllBut Balanced :=
-  .of (fun _ => Handing.dependent) (fun ne => absurd rfl ne) (fun _ => (still_vacuous _).1)
+  .of (fun _ => Shuttle.dependent) (fun ne => absurd rfl ne) (fun _ => (still_vacuous _).1)
     (fun _ => (still_vacuous _).2.1) (fun _ => (still_vacuous _).2.2.1)
     (fun _ => unbalanced_world.2.2.2.1) (fun _ => unbalanced_world.1.counted)
     (fun _ => (still_vacuous _).2.2.2) unbalanced_world.2.2.2.2
 
-/-- The flow of `leaking` on the web of `spending`: the holder takes its own unit at every
+/-- The flow of `leaking` on the web of `selfDrawing`: the holder takes its own unit at every
 step, drawing on it, and gives nothing (the tenth review's probe). -/
 def draining : World :=
-  ⟨Bool, Leaking.flow, Spending.web⟩
+  ⟨Bool, Leaking.flow, SelfDrawing.web⟩
 
 instance draining_decided : ∀ t x, Decidable (draining.web.active t x) :=
-  fun t x => Nat.decLt 0 (Handing.stands x t)
+  fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
 /-- Every premise but balance, with taking and dissipation binding: the family of both
 sides is closed and taken from at every step. -/
 theorem draining_but :
     draining.MeetsAllBut Balanced ∧
     ∀ t, Leaking.flow.ClosedAt [true, false] t ∧
-      0 < total [true, false] (Leaking.flow.take t (Handing.holder t)) :=
-  ⟨.of (fun _ => Handing.dependent) (fun ne => absurd rfl ne)
+      0 < total [true, false] (Leaking.flow.take t (Shuttle.holder t)) :=
+  ⟨.of (fun _ => Shuttle.dependent) (fun ne => absurd rfl ne)
      (fun _ _ _ _ _ gives => absurd gives (Nat.lt_irrefl 0))
-     (fun _ => Spending.taking) (fun _ => leaking_world.2.2.1)
+     (fun _ => SelfDrawing.taking) (fun _ => leaking_world.2.2.1)
      (fun _ _ _ => Iff.rfl)
-     (fun _ => Finite.counted (w := draining) ⟨[true, false], Handing.distinct, Handing.every⟩)
+     (fun _ => Finite.counted (w := draining) ⟨[true, false], Shuttle.distinct, Shuttle.every⟩)
      (fun _ => ⟨0, fun _ _ _ _ descends _ => absurd descends.2.1 (Nat.lt_irrefl 0)⟩)
      leaking_world.2.2.2.2.1,
    leaking_world.2.2.2.2.2⟩
@@ -499,70 +499,70 @@ theorem morsel_but : morsel.MeetsAllBut Taking :=
       | .morsel, comes => absurd comes.2 (Nat.lt_irrefl 0)⟩)
     fun taking => (taking 0 .eater .morsel (.head _) Nat.zero_lt_one).2
 
-namespace Keeping
+namespace Lossless
 
 inductive Relatum where
-  | keeper
+  | drawer
   | store
 
 /-- One unit, at the store. -/
 def atStore : Relatum → Nat
-  | .keeper => 0
+  | .drawer => 0
   | .store => 1
 
-/-- Across every step the keeper takes the store's unit and gives it back. -/
+/-- Across every step the drawer takes the store's unit and gives it back. -/
 def flow : Flow Relatum Relatum where
-  present _ := [.keeper]
+  present _ := [.drawer]
   take _ x y := match x with
-    | .keeper => atStore y
+    | .drawer => atStore y
     | .store => 0
   give _ x y := match x with
-    | .keeper => atStore y
+    | .drawer => atStore y
     | .store => 0
 
-/-- Both stand at one and are active throughout; the keeper depends on the store at need
+/-- Both stand at one and are active throughout; the drawer depends on the store at need
 one and draws on it. -/
 def web : Web Relatum Relatum where
   level _ _ := 1
   active _ _ := True
-  requires _ x y := x = .keeper ∧ y = .store
+  requires _ x y := x = .drawer ∧ y = .store
   need _ _ _ := 1
-  draws _ x y := x = .keeper ∧ y = .store
+  draws _ x y := x = .drawer ∧ y = .store
 
-end Keeping
+end Lossless
 
-/-- A keeper takes its store's unit and gives it back: nothing is lost. -/
-def keeping : World :=
-  ⟨Keeping.Relatum, Keeping.flow, Keeping.web⟩
+/-- A drawer takes its store's unit and gives it back: nothing is lost. -/
+def lossless : World :=
+  ⟨Lossless.Relatum, Lossless.flow, Lossless.web⟩
 
-instance keeping_decided : ∀ t x, Decidable (keeping.web.active t x) :=
+instance lossless_decided : ∀ t x, Decidable (lossless.web.active t x) :=
   fun _ _ => isTrue trivial
 
-theorem keeping_finite : keeping.Finite :=
-  ⟨[.keeper, .store],
+theorem lossless_finite : lossless.Finite :=
+  ⟨[.drawer, .store],
    ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩,
    fun
-    | .keeper => .head _
+    | .drawer => .head _
     | .store => .tail _ (.head _)⟩
 
 /-- Every premise but dissipation: the store, closed around, is given as much as is taken
 from it. -/
-theorem keeping_but : keeping.MeetsAllBut Dissipative :=
+theorem lossless_but : lossless.MeetsAllBut Dissipative :=
   .of (fun _ _ _ _ _ _ => Nat.le_refl 1) (fun _ _ _ => rfl) (fun _ _ _ _ _ _ => trivial)
     (fun _ _ f c present takes => match f, present, c, takes with
-      | .keeper, _, .store, _ => ⟨trivial, rfl, rfl⟩
-      | .keeper, _, .keeper, takes => absurd takes (Nat.lt_irrefl 0)
+      | .drawer, _, .store, _ => ⟨trivial, rfl, rfl⟩
+      | .drawer, _, .drawer, takes => absurd takes (Nat.lt_irrefl 0)
       | .store, .tail _ no, _, _ => nomatch no)
     (fun ne => absurd rfl ne)
     (fun _ _ _ => ⟨fun _ => Nat.zero_lt_one, fun _ => trivial⟩)
-    (fun _ => keeping_finite.counted) (fun _ => steady_transmitting fun _ _ => rfl)
+    (fun _ => lossless_finite.counted) (fun _ => steady_transmitting fun _ _ => rfl)
     fun dissipative => Nat.not_succ_le_self 1
       (dissipative [.store] 0 ⟨fun no => (nomatch no), trivial⟩
         (fun f present c outside => match f, present, c, outside with
-          | .keeper, _, .keeper, _ => ⟨rfl, rfl⟩
-          | .keeper, _, .store, outside => absurd (.head _) outside
+          | .drawer, _, .drawer, _ => ⟨rfl, rfl⟩
+          | .drawer, _, .store, outside => absurd (.head _) outside
           | .store, .tail _ no, _, _ => nomatch no)
-        .keeper (.head _))
+        .drawer (.head _))
 
 namespace Latent
 
@@ -764,9 +764,9 @@ theorem novel_but : novel.MeetsAllBut Transmitting :=
 theorem independent :
     strained.MeetsAllBut Dependent ∧ unbalanced.MeetsAllBut Balanced ∧
     scatter.MeetsAllBut Acting ∧ morsel.MeetsAllBut Taking ∧
-    keeping.MeetsAllBut Dissipative ∧ latent.MeetsAllBut Embodied ∧
+    lossless.MeetsAllBut Dissipative ∧ latent.MeetsAllBut Embodied ∧
     multitude.MeetsAllBut Counted ∧ novel.MeetsAllBut Transmitting :=
-  ⟨strained_but, unbalanced_but, scatter_but, morsel_but, keeping_but, latent_but,
+  ⟨strained_but, unbalanced_but, scatter_but, morsel_but, lossless_but, latent_but,
    multitude_but, novel_but⟩
 
 /-- So no premise follows from the others. -/
@@ -778,7 +778,7 @@ theorem none_follows :
   | _, .tail _ (.tail _ (.tail _ (.head _))) => fun follows =>
     morsel_but.2 (follows _ morsel_but.1)
   | _, .tail _ (.tail _ (.tail _ (.tail _ (.head _)))) => fun follows =>
-    keeping_but.2 (follows _ keeping_but.1)
+    lossless_but.2 (follows _ lossless_but.1)
   | _, .tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))) => fun follows =>
     latent_but.2 (follows _ latent_but.1)
   | _, .tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))) => fun follows =>
@@ -1182,7 +1182,7 @@ end World
 
 /-! ## Counting under all the premises -/
 
-namespace Tended
+namespace OpenQueue
 
 /-- The members of a queue, and ground relata. -/
 inductive Relatum
@@ -1250,72 +1250,72 @@ theorem joined {a : Nat → Nat} (tally : Tally n c a) (company : ∀ t, 0 < a t
     (Queue.holds n c j) t)) (steps_of_within comes.2.1 comes.2.2) (mark_pos.mpr comes))
     (Nat.le_of_eq (Queue.comings_eq tally t)))
 
-end Tended
+end OpenQueue
 
 namespace World
 
-/-- A queue tended by its front: the front gives to each relatum joining, takes from each
+/-- An open queue: its front gives to each relatum joining, takes from each
 leaving, and while active exchanges one unit each way with every ground relatum. -/
-def tendedQueue (n c : Nat → Nat) : World :=
-  ⟨Tended.Relatum, Tended.flow n c, Tended.web n c⟩
+def openQueue (n c : Nat → Nat) : World :=
+  ⟨OpenQueue.Relatum, OpenQueue.flow n c, OpenQueue.web n c⟩
 
-instance tendedQueue_decided (n c : Nat → Nat) :
-    ∀ t x, Decidable ((tendedQueue n c).web.active t x)
+instance openQueue_decided (n c : Nat → Nat) :
+    ∀ t x, Decidable ((openQueue n c).web.active t x)
   | t, .member k => inferInstanceAs (Decidable (Queue.holds n c k t))
   | _, .ground _ => isFalse id
 
-/-- The census of a tended queue is its members, listed as the queue lists them. -/
-theorem tendedQueue_census (n c : Nat → Nat) :
-    (tendedQueue n c).web.Census fun t => (Queue.line n c t).map .member :=
-  fun _ => ⟨distinct_map Tended.member_inj (steps_distinct _ _), fun x => match x with
+/-- The census of an open queue is its members, listed as the queue lists them. -/
+theorem openQueue_census (n c : Nat → Nat) :
+    (openQueue n c).web.Census fun t => (Queue.line n c t).map .member :=
+  fun _ => ⟨distinct_map OpenQueue.member_inj (steps_distinct _ _), fun x => match x with
     | .member _ => ⟨fun holds => mem_map_of (steps_of_within holds.1 holds.2),
-        fun mem => match mem_of_map Tended.member_inj mem with
+        fun mem => match mem_of_map OpenQueue.member_inj mem with
           | listed => ⟨steps_mem listed, steps_within listed⟩⟩
-    | .ground _ => ⟨False.elim, fun mem => Tended.ground_not_member mem⟩⟩
+    | .ground _ => ⟨False.elim, fun mem => OpenQueue.ground_not_member mem⟩⟩
 
 /-- Its census counts what the queue counts. -/
-theorem tendedQueue_counts {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat) :
-    ((Queue.line n c t).map Tended.Relatum.member).length = n t ∧
+theorem openQueue_counts {n c a : Nat → Nat} (tally : Tally n c a) (t : Nat) :
+    ((Queue.line n c t).map OpenQueue.Relatum.member).length = n t ∧
       ceasings ((Queue.line n c t).map .member)
-        (fun x s => (tendedQueue n c).web.active s x) t = c t ∧
+        (fun x s => (openQueue n c).web.active s x) t = c t ∧
       comings ((Queue.line n c (t + 1)).map .member)
-        (fun x s => (tendedQueue n c).web.active s x) t = a t :=
+        (fun x s => (openQueue n c).web.active s x) t = a t :=
   ⟨(total_ones _).symm.trans ((total_map _ _ _).trans ((total_ones _).trans (steps_length _ _))),
-   (total_map Tended.Relatum.member _ (Queue.line n c t)).trans (Queue.ceasings_eq tally t),
-   (total_map Tended.Relatum.member _ (Queue.line n c (t + 1))).trans
+   (total_map OpenQueue.Relatum.member _ (Queue.line n c t)).trans (Queue.ceasings_eq tally t),
+   (total_map OpenQueue.Relatum.member _ (Queue.line n c (t + 1))).trans
      (Queue.comings_eq tally t)⟩
 
-/-- Where something arises only across a step at which something is active, a tended queue
+/-- Where something arises only across a step at which something is active, an open queue
 meets all eight premises. Not all of them bind: no step at which the front is active is
-enclosed, and nothing depends on anything (`tended_not_binds`). -/
-theorem tendedQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
-    (company : ∀ t, 0 < a t → 0 < n t) : (tendedQueue n c).Premised :=
+enclosed, and nothing depends on anything (`openQueue_not_binds`). -/
+theorem openQueue_premised {n c a : Nat → Nat} (tally : Tally n c a)
+    (company : ∀ t, 0 < a t → 0 < n t) : (openQueue n c).Premised :=
   .of (fun _ _ _ _ no => (nomatch no))
     (fun t x => match x with
       | .member k => mark_turn (Queue.holds n c k t) (Queue.holds n c k (t + 1))
       | .ground _ => rfl)
     (fun _ f x present gives => match f, present, x, gives with
-      | _, .head _, .member _, gives => Tended.front.mpr (Tended.joined tally company
+      | _, .head _, .member _, gives => OpenQueue.front.mpr (OpenQueue.joined tally company
           (mark_pos.mp gives))
       | _, .head _, .ground _, gives => mark_pos.mp gives
       | _, .tail _ no, _, _ => (nomatch no))
     (fun _ f x present takes => match f, present, x, takes with
-      | _, .head _, .member _, takes => ⟨Tended.front.mpr (Tended.occupied
+      | _, .head _, .member _, takes => ⟨OpenQueue.front.mpr (OpenQueue.occupied
           (mark_pos.mp takes).1), trivial⟩
       | _, .head _, .ground _, takes => ⟨mark_pos.mp takes, trivial⟩
       | _, .tail _ no, _, _ => (nomatch no))
     (fun cs t _ closed _ _ => match Nat.eq_zero_or_pos (n t) with
-      | .inr pos => absurd ((mark_one (Tended.front.mpr pos)).symm.trans
-          (closed _ (.head _) _ (Tended.outside cs)).2) (fun no => Nat.noConfusion no)
+      | .inr pos => absurd ((mark_one (OpenQueue.front.mpr pos)).symm.trans
+          (closed _ (.head _) _ (OpenQueue.outside cs)).2) (fun no => Nat.noConfusion no)
       | .inl empty => gives_nothing ((total_congr_on (g := fun _ => 0) fun x _ => match x with
           | .member _ => mark_zero fun comes => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-              (Tended.joined tally company comes) (Nat.le_of_eq empty))
+              (OpenQueue.joined tally company comes) (Nat.le_of_eq empty))
           | .ground _ => mark_zero fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-              (Tended.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
+              (OpenQueue.front.mp holds) (Nat.le_of_eq empty))).trans (total_zero cs)))
     (fun x => match x with
       | .member _ => fun _ => mark_pos.symm
       | .ground _ => fun _ => ⟨False.elim, fun no => absurd no (Nat.lt_irrefl 0)⟩)
-    ⟨_, tendedQueue_census n c⟩
+    ⟨_, openQueue_census n c⟩
     ⟨0, fun _ _ _ _ _ no => (nomatch no)⟩
 
 /-- Under all eight premises the laws of counting are the tally and that nothing arises
@@ -1332,32 +1332,32 @@ theorem premised_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat)
       (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
         (.head _))))))))
       alive census),
-   fun law n c _ tally company => pointwise (tendedQueue_counts tally)
-      (law (tendedQueue n c) (tendedQueue_premised tally company) _
-        (tendedQueue_census n c))⟩
+   fun law n c _ tally company => pointwise (openQueue_counts tally)
+      (law (openQueue n c) (openQueue_premised tally company) _
+        (openQueue_census n c))⟩
 
-/-- In a tended queue dissipation, activity needing support and bounded transmission hold
+/-- In an open queue dissipation, activity needing support and bounded transmission hold
 idly. Nothing taking part takes from a closed family: where something is taken the front is
 active, and then it gives to a ground relatum beyond every finite family. Nothing depends on
 anything. So not every premise binds there (the thirteenth review's probe). -/
-theorem tended_not_binds {n c : Nat → Nat} :
-    (¬ ∃ cs t f, Distinct cs ∧ (tendedQueue n c).flow.ClosedAt cs t ∧
-      f ∈ (tendedQueue n c).flow.present t ∧ 0 < total cs ((tendedQueue n c).flow.take t f)) ∧
-    (¬ ∃ t f x, (tendedQueue n c).web.active t f ∧ (tendedQueue n c).web.requires t f x ∧
-      0 < (tendedQueue n c).web.need t f x) ∧
-    (¬ ∃ t x g y, (tendedQueue n c).flow.DescendsAt (tendedQueue n c).web t x g ∧
-      (tendedQueue n c).web.requires (t + 1) x y) ∧
-    ¬ (tendedQueue n c).Binds :=
-  have idle : ¬ ∃ cs t f, Distinct cs ∧ (tendedQueue n c).flow.ClosedAt cs t ∧
-      f ∈ (tendedQueue n c).flow.present t ∧ 0 < total cs ((tendedQueue n c).flow.take t f) :=
+theorem openQueue_not_binds {n c : Nat → Nat} :
+    (¬ ∃ cs t f, Distinct cs ∧ (openQueue n c).flow.ClosedAt cs t ∧
+      f ∈ (openQueue n c).flow.present t ∧ 0 < total cs ((openQueue n c).flow.take t f)) ∧
+    (¬ ∃ t f x, (openQueue n c).web.active t f ∧ (openQueue n c).web.requires t f x ∧
+      0 < (openQueue n c).web.need t f x) ∧
+    (¬ ∃ t x g y, (openQueue n c).flow.DescendsAt (openQueue n c).web t x g ∧
+      (openQueue n c).web.requires (t + 1) x y) ∧
+    ¬ (openQueue n c).Binds :=
+  have idle : ¬ ∃ cs t f, Distinct cs ∧ (openQueue n c).flow.ClosedAt cs t ∧
+      f ∈ (openQueue n c).flow.present t ∧ 0 < total cs ((openQueue n c).flow.take t f) :=
     fun ⟨cs, t, f, _, closed, present, takes⟩ => match total_pos cs takes with
       | ⟨x, _, positive⟩ =>
         have occupied : 0 < n t := match x, positive with
-          | .member _, positive => Tended.occupied (mark_pos.mp positive).1
-          | .ground _, positive => Tended.front.mp (mark_pos.mp positive)
+          | .member _, positive => OpenQueue.occupied (mark_pos.mp positive).1
+          | .ground _, positive => OpenQueue.front.mp (mark_pos.mp positive)
         Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq
-          ((mark_one (Tended.front.mpr occupied)).symm.trans
-            (closed f present _ (Tended.outside cs)).2)))
+          ((mark_one (OpenQueue.front.mpr occupied)).symm.trans
+            (closed f present _ (OpenQueue.outside cs)).2)))
   ⟨idle, fun ⟨_, _, _, _, no, _⟩ => no, fun ⟨_, _, _, _, _, no⟩ => no,
    fun binds => idle binds.dissipative⟩
 

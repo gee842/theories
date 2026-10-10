@@ -33,7 +33,7 @@ name"); they do not claim Ren's words.
   (`World.law_iff_em`, from `World.law_decides` and `World.law_of_em`); classically every
   activity is decided.
 * **Finiteness separates them.** Where the relata are infinitely many, either can recur
-  without the other (`World.separate`, from `Dawn` and `Dusk`); that these worlds are
+  without the other (`World.separate`, from `Accretion` and `Attrition`); that these worlds are
   infinite follows from the law.
 * **Premises carve parts.** Activity needing support, balance, only active formations
   giving, only active formations taking and only what they draw on, dissipation,
@@ -45,7 +45,7 @@ name"); they do not claim Ren's words.
   another relatum depends on, mutualists active throughout, and a parent drawing a pool
   down. Whether events are living is not decided by arising and ceasing; with activity
   decided, the same holds of ceasing (`World.living_crosses_ceasing`). The sides
-  drawing each on its own standing (`spending`) also has an event that is not living, but
+  drawing each on its own standing (`selfDrawing`) also has an event that is not living, but
   only on the stepwise verdict about drawing on a self-bearing relatum at its ending,
   which is Ren's to choose. The grazer's event lies outside that choice as worded, yet
   the browser whose dependence it undermines, active at that step, ends there
@@ -207,90 +207,90 @@ theorem rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
 
 /-! ## Worlds -/
 
-/-- Two sides hand one standing back and forth (`Handing`). -/
-def handing : World :=
-  ⟨Bool, Handing.flow, Handing.web⟩
+/-- Two sides hand one standing back and forth (`Shuttle`). -/
+def shuttle : World :=
+  ⟨Bool, Shuttle.flow, Shuttle.web⟩
 
-instance handing_decided : ∀ t x, Decidable (handing.web.active t x) :=
-  fun t x => Nat.decLt 0 (Handing.stands x t)
+instance shuttle_decided : ∀ t x, Decidable (shuttle.web.active t x) :=
+  fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
-theorem handing_finite : handing.Finite :=
-  ⟨[true, false], Handing.distinct, Handing.every⟩
+theorem shuttle_finite : shuttle.Finite :=
+  ⟨[true, false], Shuttle.distinct, Shuttle.every⟩
 
-theorem handing_arising : handing.ArisingRecurs :=
-  fun N => match Handing.recurs true N with
+theorem shuttle_arising : shuttle.ArisingRecurs :=
+  fun N => match Shuttle.recurs true N with
   | ⟨t, later, arises⟩ => ⟨t, true, later, arises⟩
 
 /-- Two sides hand one standing back and forth: a finite world in which arising and ceasing
 recur and every event is living. Activity needs support, the flow balances,
 only active sides give, and every side is embodied, so the zero reserve carries it; the
 sides take without drawing, and the flow does not dissipate. -/
-theorem handing_world :
-    handing.Finite ∧ handing.ArisingRecurs ∧ handing.CeasingRecurs ∧ handing.Living ∧
-    handing.Dependent ∧ handing.Balanced ∧ handing.Acting ∧ ¬ handing.Taking ∧
-    ¬ handing.Dissipative ∧ handing.Embodied ∧ handing.Carried :=
-  ⟨handing_finite, handing_arising, (arising_iff_ceasing handing_finite).mp handing_arising,
-   fun _ _ _ ⟨_, draws, _⟩ => draws, Handing.dependent, Handing.balances, Handing.acting,
+theorem shuttle_world :
+    shuttle.Finite ∧ shuttle.ArisingRecurs ∧ shuttle.CeasingRecurs ∧ shuttle.Living ∧
+    shuttle.Dependent ∧ shuttle.Balanced ∧ shuttle.Acting ∧ ¬ shuttle.Taking ∧
+    ¬ shuttle.Dissipative ∧ shuttle.Embodied ∧ shuttle.Carried :=
+  ⟨shuttle_finite, shuttle_arising, (arising_iff_ceasing shuttle_finite).mp shuttle_arising,
+   fun _ _ _ ⟨_, draws, _⟩ => draws, Shuttle.dependent, Shuttle.balances, Shuttle.acting,
    fun taking => (taking 0 true true (.head _) Nat.zero_lt_one).2,
-   Handing.handing.2.2.2.2.2.2, fun x => (Handing.embodied x).1,
-   ⟨fun _ _ => 0, Web.carries_zero.mpr Handing.dependent⟩⟩
+   Shuttle.shuttle.2.2.2.2.2.2, fun x => (Shuttle.embodied x).1,
+   ⟨fun _ _ => 0, Web.carries_zero.mpr Shuttle.dependent⟩⟩
 
-namespace Spending
+namespace SelfDrawing
 
-/-- As in `Handing`, except that each side draws on its own standing while it stands. -/
+/-- As in `Shuttle`, except that each side draws on its own standing while it stands. -/
 def web : Web Bool Bool where
-  level t x := Handing.stands x t
-  active t x := 0 < Handing.stands x t
+  level t x := Shuttle.stands x t
+  active t x := 0 < Shuttle.stands x t
   requires _ x y := y = x
   need _ _ _ := 1
-  draws t x y := y = x ∧ 0 < Handing.stands x t
+  draws t x y := y = x ∧ 0 < Shuttle.stands x t
 
 /-- A side takes only from itself. -/
-theorem self_taken {t : Nat} : ∀ {x y : Bool}, 0 < Handing.flow.take t x y → y = x
+theorem self_taken {t : Nat} : ∀ {x y : Bool}, 0 < Shuttle.flow.take t x y → y = x
   | true, true, _ => rfl
   | false, false, _ => rfl
   | true, false, takes => absurd takes (Nat.lt_irrefl 0)
   | false, true, takes => absurd takes (Nat.lt_irrefl 0)
 
-theorem taking : Handing.flow.Taking web :=
-  fun t f c present takes => match f, (present : f ∈ [Handing.holder t]), takes with
+theorem taking : Shuttle.flow.Taking web :=
+  fun t f c present takes => match f, (present : f ∈ [Shuttle.holder t]), takes with
   | _, .head _, takes => match c, self_taken takes with
-    | _, rfl => ⟨Handing.holder_stands t, rfl, Handing.holder_stands t⟩
+    | _, rfl => ⟨Shuttle.holder_stands t, rfl, Shuttle.holder_stands t⟩
   | _, .tail _ no, _ => nomatch no
 
 /-- The side holding the standing at the first step draws on itself as it hands its
 standing on: the step leaves its own dependence unmet. -/
-theorem spends : web.active 0 true ∧ web.UnderminingAt 0 true :=
+theorem undermines : web.active 0 true ∧ web.UnderminingAt 0 true :=
   ⟨Nat.zero_lt_one, true, ⟨rfl, Nat.zero_lt_one⟩, true, rfl,
    ⟨0, Nat.le_refl 0, fun _ _ _ => rfl, Nat.le_refl 1, Nat.zero_lt_one⟩, Nat.zero_lt_one⟩
 
-end Spending
+end SelfDrawing
 
-/-- The sides of `Handing`, each drawing on its own standing while it stands. -/
-def spending : World :=
-  ⟨Bool, Handing.flow, Spending.web⟩
+/-- The sides of `Shuttle`, each drawing on its own standing while it stands. -/
+def selfDrawing : World :=
+  ⟨Bool, Shuttle.flow, SelfDrawing.web⟩
 
-instance spending_decided : ∀ t x, Decidable (spending.web.active t x) :=
-  fun t x => Nat.decLt 0 (Handing.stands x t)
+instance selfDrawing_decided : ∀ t x, Decidable (selfDrawing.web.active t x) :=
+  fun t x => Nat.decLt 0 (Shuttle.stands x t)
 
-theorem spending_finite : spending.Finite :=
-  ⟨[true, false], Handing.distinct, Handing.every⟩
+theorem selfDrawing_finite : selfDrawing.Finite :=
+  ⟨[true, false], Shuttle.distinct, Shuttle.every⟩
 
-/-- The same activity as `handing`, so arising and ceasing recur, while not every event is
+/-- The same activity as `shuttle`, so arising and ceasing recur, while not every event is
 living in the stepwise reading: the holder draws on its own standing as it hands it on,
 the undermining of `Embodied.ending_breaks`. Whether such drawing at an ending counts as
 not living is Ren's to choose. The flow balances, only active sides give and take, and
 they take only from what they draw on. -/
-theorem spending_world :
-    spending.Finite ∧ spending.ArisingRecurs ∧ spending.CeasingRecurs ∧ ¬ spending.Living ∧
-    spending.Dependent ∧ spending.Balanced ∧ spending.Acting ∧ spending.Taking ∧
-    spending.Embodied :=
-  have arising : spending.ArisingRecurs := fun N => match Handing.recurs true N with
+theorem selfDrawing_world :
+    selfDrawing.Finite ∧ selfDrawing.ArisingRecurs ∧ selfDrawing.CeasingRecurs ∧
+    ¬ selfDrawing.Living ∧ selfDrawing.Dependent ∧ selfDrawing.Balanced ∧ selfDrawing.Acting ∧
+    selfDrawing.Taking ∧ selfDrawing.Embodied :=
+  have arising : selfDrawing.ArisingRecurs := fun N => match Shuttle.recurs true N with
     | ⟨t, later, arises⟩ => ⟨t, true, later, arises⟩
-  ⟨spending_finite, arising, (arising_iff_ceasing spending_finite).mp arising,
-   fun living => living 0 true Spending.spends.1 Spending.spends.2,
-   Handing.dependent, Handing.balances, Handing.acting, Spending.taking,
-   fun x => (Handing.embodied x).1⟩
+  ⟨selfDrawing_finite, arising, (arising_iff_ceasing selfDrawing_finite).mp arising,
+   fun living => living 0 true SelfDrawing.undermines.1 SelfDrawing.undermines.2,
+   Shuttle.dependent, Shuttle.balances, Shuttle.acting, SelfDrawing.taking,
+   fun x => (Shuttle.embodied x).1⟩
 
 /-- Mutualists active throughout (`Mutualism`), with no flow. -/
 def mutualism : World :=
@@ -362,16 +362,16 @@ theorem drawdown_world :
 def unchecked : World :=
   ⟨Unchecked.Relatum, Unchecked.flow, Unchecked.web⟩
 
-/-- The sides of `Handing` with no flow: their standing comes and goes with nothing given
+/-- The sides of `Shuttle` with no flow: their standing comes and goes with nothing given
 or taken. -/
 def unbalanced : World :=
-  ⟨Bool, Flow.still, Handing.web⟩
+  ⟨Bool, Flow.still, Shuttle.web⟩
 
 theorem unbalanced_world :
     unbalanced.Finite ∧ unbalanced.ArisingRecurs ∧ unbalanced.Dissipative ∧
     unbalanced.Embodied ∧ ¬ unbalanced.Balanced :=
-  ⟨⟨[true, false], Handing.distinct, Handing.every⟩, handing_arising,
-   Flow.still_dissipative, fun x => (Handing.embodied x).1,
+  ⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
+   Flow.still_dissipative, fun x => (Shuttle.embodied x).1,
    fun balanced => Nat.zero_ne_one (balanced 0 true)⟩
 
 namespace Idle
@@ -390,7 +390,7 @@ def web : Web Unit Unit where
 
 end Idle
 
-/-- A relatum rising by its own gift though it is never active. -/
+/-- A relatum rising by what it gives itself though it is never active. -/
 def idle : World :=
   ⟨Unit, Idle.flow, Idle.web⟩
 
@@ -421,29 +421,29 @@ theorem restless_world : ¬ restless.Carried :=
     fun N => ⟨N, Nat.le_refl N, trivial⟩
 
 /-- Two sides handing a standing back and forth, burning fresh fuel each step
-(`Kindling`). -/
-def kindling : World :=
-  ⟨Kindling.Relatum, Kindling.flow, Kindling.web⟩
+(`Throughput`). -/
+def throughput : World :=
+  ⟨Throughput.Relatum, Throughput.flow, Throughput.web⟩
 
-instance kindling_decided : ∀ t x, Decidable (kindling.web.active t x)
-  | t, .side x => Nat.decLt 0 (Handing.stands x t)
+instance throughput_decided : ∀ t x, Decidable (throughput.web.active t x)
+  | t, .side x => Nat.decLt 0 (Shuttle.stands x t)
   | _, .fuel _ => isFalse id
 
-theorem kindling_arising : kindling.ArisingEmbodied
-  | _, .side x, _ => (Kindling.kindling.2.2.2.1 x).1
+theorem throughput_arising : throughput.ArisingEmbodied
+  | _, .side x, _ => (Throughput.throughput.2.2.2.1 x).1
   | _, .fuel _, arises => False.elim arises.2
 
 /-- Balanced and dissipative, whatever arises embodied, and arising recurs: so not
 finite. -/
-theorem kindling_world :
-    kindling.Balanced ∧ kindling.Dissipative ∧ kindling.ArisingEmbodied ∧
-    kindling.ArisingRecurs ∧ ¬ kindling.Finite :=
-  have arising : kindling.ArisingRecurs := fun N =>
-    match Kindling.kindling.2.2.2.2.2 true N with
+theorem throughput_world :
+    throughput.Balanced ∧ throughput.Dissipative ∧ throughput.ArisingEmbodied ∧
+    throughput.ArisingRecurs ∧ ¬ throughput.Finite :=
+  have arising : throughput.ArisingRecurs := fun N =>
+    match Throughput.throughput.2.2.2.2.2 true N with
     | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩
-  ⟨Kindling.kindling.1, Kindling.kindling.2.2.2.2.1, kindling_arising, arising,
-   fun finite => (rests finite Kindling.kindling.1 Kindling.kindling.2.2.2.2.1
-     kindling_arising).1 arising⟩
+  ⟨Throughput.throughput.1, Throughput.throughput.2.2.2.2.1, throughput_arising, arising,
+   fun finite => (rests finite Throughput.throughput.1 Throughput.throughput.2.2.2.2.1
+     throughput_arising).1 arising⟩
 
 /-- One relatum whose activity is not its standing (`Flicker`). -/
 def flicker : World :=
@@ -457,26 +457,26 @@ theorem flicker_world :
    fun embodied => match Flicker.flicker.2.2.1 0 with
     | ⟨t, (), _, arises⟩ => Flicker.flicker.2.2.2 (embodied t () arises)⟩
 
-/-- Formation `f` arises across step `f` and none ceases (`Dawn`). -/
-def dawn : World :=
-  ofRoles Flow.still Dawn.web
+/-- Formation `f` arises across step `f` and none ceases (`Accretion`). -/
+def accretion : World :=
+  ofRoles Flow.still Accretion.web
 
 /-- Every formation is active from the start and formation `f` ceases across step `f`
-(`Dusk`). -/
-def dusk : World :=
-  ofRoles Flow.still Dusk.web
+(`Attrition`). -/
+def attrition : World :=
+  ofRoles Flow.still Attrition.web
 
-instance dawn_decided : ∀ t x, Decidable (dawn.web.active t x)
+instance accretion_decided : ∀ t x, Decidable (accretion.web.active t x)
   | t, .inl f => Nat.decLt f t
   | _, .inr _ => isFalse id
 
-instance dusk_decided : ∀ t x, Decidable (dusk.web.active t x)
+instance attrition_decided : ∀ t x, Decidable (attrition.web.active t x)
   | t, .inl f => Nat.decLe t f
   | _, .inr _ => isFalse id
 
 namespace Grazing
 
-/-- The two sides of `Handing`, a pool, a grazer and a browser. -/
+/-- The two sides of `Shuttle`, a pool, a grazer and a browser. -/
 inductive Relatum where
   | side (x : Bool)
   | pool
@@ -484,14 +484,14 @@ inductive Relatum where
   | browser
 
 def level : Nat → Relatum → Nat
-  | t, .side y => Handing.stands y t
+  | t, .side y => Shuttle.stands y t
   | 0, .pool => 2
   | _ + 1, .pool => 1
   | _, .grazer => 1
   | _, .browser => 1
 
 def active : Nat → Relatum → Prop
-  | t, .side y => 0 < Handing.stands y t
+  | t, .side y => 0 < Shuttle.stands y t
   | _, .pool => False
   | t, .grazer => t = 0
   | t, .browser => t = 0
@@ -517,7 +517,7 @@ def need : Nat → Relatum → Relatum → Nat
 
 /-- A side draws on its own standing while it stands. -/
 def sideDraws (t : Nat) (y : Bool) : Relatum → Prop
-  | .side z => z = y ∧ 0 < Handing.stands y t
+  | .side z => z = y ∧ 0 < Shuttle.stands y t
   | .pool => False
   | .grazer => False
   | .browser => False
@@ -543,16 +543,16 @@ def web : Web Relatum Relatum :=
 
 def present : Nat → List Relatum
   | 0 => [.side true, .grazer]
-  | t + 1 => [.side (Handing.holder (t + 1))]
+  | t + 1 => [.side (Shuttle.holder (t + 1))]
 
 def sideTake (t : Nat) (x : Bool) : Relatum → Nat
-  | .side y => Handing.flow.take t x y
+  | .side y => Shuttle.flow.take t x y
   | .pool => 0
   | .grazer => 0
   | .browser => 0
 
 def sideGive (t : Nat) (x : Bool) : Relatum → Nat
-  | .side y => Handing.flow.give t x y
+  | .side y => Shuttle.flow.give t x y
   | .pool => 0
   | .grazer => 0
   | .browser => 0
@@ -576,7 +576,7 @@ def give : Nat → Relatum → Relatum → Nat
   | _, .grazer, _ => 0
   | _, .browser, _ => 0
 
-/-- As in `Handing`, and across the first step the grazer takes a unit of the pool. -/
+/-- As in `Shuttle`, and across the first step the grazer takes a unit of the pool. -/
 def flow : Flow Relatum Relatum :=
   ⟨present, take, give⟩
 
@@ -597,9 +597,9 @@ theorem side_mem : ∀ x : Bool,
   | true => .tail _ (.tail _ (.tail _ (.head _)))
   | false => .tail _ (.tail _ (.tail _ (.tail _ (.head _))))
 
-theorem side_taking (t : Nat) (x : Bool) (holds : 0 < Handing.stands x t) :
+theorem side_taking (t : Nat) (x : Bool) (holds : 0 < Shuttle.stands x t) :
     ∀ c, 0 < take t (.side x) c → active t (.side x) ∧ draws t (.side x) c
-  | .side _, takes => match Spending.self_taken takes with
+  | .side _, takes => match SelfDrawing.self_taken takes with
     | rfl => ⟨holds, rfl, holds⟩
   | .pool, takes => absurd takes (Nat.lt_irrefl 0)
   | .grazer, takes => absurd takes (Nat.lt_irrefl 0)
@@ -607,7 +607,7 @@ theorem side_taking (t : Nat) (x : Bool) (holds : 0 < Handing.stands x t) :
 
 end Grazing
 
-/-- The sides of `Handing`, with a grazer drawing down a pool that a browser also depends
+/-- The sides of `Shuttle`, with a grazer drawing down a pool that a browser also depends
 on (the ninth review's probe). -/
 def grazing : World :=
   ⟨Grazing.Relatum, Grazing.flow, Grazing.web⟩
@@ -626,13 +626,13 @@ theorem grazing_finite : grazing.Finite :=
     | .side x => Grazing.side_mem x⟩
 
 instance grazing_decided : ∀ t x, Decidable (grazing.web.active t x)
-  | t, .side y => Nat.decLt 0 (Handing.stands y t)
+  | t, .side y => Nat.decLt 0 (Shuttle.stands y t)
   | _, .pool => isFalse id
   | t, .grazer => Nat.decEq t 0
   | t, .browser => Nat.decEq t 0
 
 theorem grazing_arising : grazing.ArisingRecurs :=
-  fun N => match Handing.recurs true N with
+  fun N => match Shuttle.recurs true N with
   | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩
 
 theorem grazing_balanced : grazing.Balanced
@@ -642,7 +642,7 @@ theorem grazing_balanced : grazing.Balanced
   | 0, .pool => rfl
   | 0, .grazer => rfl
   | 0, .browser => rfl
-  | n + 1, .side y => Handing.balances (n + 1) y
+  | n + 1, .side y => Shuttle.balances (n + 1) y
   | _ + 1, .pool => rfl
   | _ + 1, .grazer => rfl
   | _ + 1, .browser => rfl
@@ -651,7 +651,7 @@ theorem grazing_acting : grazing.Acting
   | 0, _, _, .head _, _ => Nat.zero_lt_one
   | 0, _, _, .tail _ (.head _), gives => absurd gives (Nat.lt_irrefl 0)
   | 0, _, _, .tail _ (.tail _ rest), _ => nomatch rest
-  | n + 1, _, _, .head _, _ => Handing.holder_stands (n + 1)
+  | n + 1, _, _, .head _, _ => Shuttle.holder_stands (n + 1)
   | _ + 1, _, _, .tail _ rest, _ => nomatch rest
 
 theorem grazing_taking : grazing.Taking
@@ -663,7 +663,7 @@ theorem grazing_taking : grazing.Taking
     | .browser, takes => absurd takes (Nat.lt_irrefl 0)
   | 0, _, _, .tail _ (.tail _ rest), _ => nomatch rest
   | n + 1, _, c, .head _, takes =>
-    Grazing.side_taking (n + 1) (Handing.holder (n + 1)) (Handing.holder_stands (n + 1)) c takes
+    Grazing.side_taking (n + 1) (Shuttle.holder (n + 1)) (Shuttle.holder_stands (n + 1)) c takes
   | _ + 1, _, _, .tail _ rest, _ => nomatch rest
 
 theorem grazing_dependent : grazing.Dependent
@@ -810,19 +810,19 @@ namespace Leaking
 
 /-- Across each step the holder takes its own unit and gives nothing. -/
 def flow : Flow Bool Bool :=
-  ⟨fun t => [Handing.holder t], fun t x y => Handing.flow.take t x y, fun _ _ _ => 0⟩
+  ⟨fun t => [Shuttle.holder t], fun t x y => Shuttle.flow.take t x y, fun _ _ _ => 0⟩
 
-theorem takes : ∀ t, 0 < total [true, false] (flow.take t (Handing.holder t))
+theorem takes : ∀ t, 0 < total [true, false] (flow.take t (Shuttle.holder t))
   | 0 => Nat.zero_lt_one
   | 1 => Nat.zero_lt_one
   | t + 2 => takes t
 
 end Leaking
 
-/-- The sides of `Handing`, the holder taking its own unit and giving nothing (the ninth
+/-- The sides of `Shuttle`, the holder taking its own unit and giving nothing (the ninth
 review's probe). -/
 def leaking : World :=
-  ⟨Bool, Leaking.flow, Handing.web⟩
+  ⟨Bool, Leaking.flow, Shuttle.web⟩
 
 /-- A finite world whose flow takes part at every step, with the family of both sides
 closed and taken from at every step, and dissipative: its dissipation is not vacuous.
@@ -831,13 +831,13 @@ theorem leaking_world :
     leaking.Finite ∧ leaking.ArisingRecurs ∧ leaking.Dissipative ∧ leaking.Embodied ∧
     ¬ leaking.Balanced ∧
     ∀ t, Leaking.flow.ClosedAt [true, false] t ∧
-      0 < total [true, false] (Leaking.flow.take t (Handing.holder t)) :=
-  ⟨⟨[true, false], Handing.distinct, Handing.every⟩, handing_arising,
+      0 < total [true, false] (Leaking.flow.take t (Shuttle.holder t)) :=
+  ⟨⟨[true, false], Shuttle.distinct, Shuttle.every⟩, shuttle_arising,
    fun cs _ _ _ _ _ => Nat.le_trans
      (Nat.le_of_eq ((congrArg (· + _) (total_zero cs)).trans (Nat.zero_add _))) (sign_le _),
-   fun x => (Handing.embodied x).1,
+   fun x => (Shuttle.embodied x).1,
    fun balanced => Nat.not_succ_le_zero 0 (Nat.le_of_eq (balanced 0 false)),
-   fun t => ⟨fun _ _ c outside => absurd (Handing.every c) outside, Leaking.takes t⟩⟩
+   fun t => ⟨fun _ _ c outside => absurd (Shuttle.every c) outside, Leaking.takes t⟩⟩
 
 namespace Undecided
 
@@ -948,48 +948,50 @@ theorem law_iff_em :
 
 /-- Each premise is met by some worlds and not by others. -/
 theorem contingent :
-    (handing.Dependent ∧ ¬ unchecked.Dependent) ∧
-    (handing.Balanced ∧ ¬ unbalanced.Balanced) ∧
-    (handing.Acting ∧ ¬ idle.Acting) ∧
-    (spending.Taking ∧ ¬ handing.Taking) ∧
-    (kindling.Dissipative ∧ ¬ handing.Dissipative) ∧
-    (handing.Embodied ∧ ¬ drawdown.Embodied) ∧
-    (handing.Carried ∧ ¬ restless.Carried) :=
-  ⟨⟨Handing.dependent, Unchecked.unchecked.2.2.2.2.1⟩,
-   ⟨Handing.balances, unbalanced_world.2.2.2.2⟩,
-   ⟨Handing.acting, idle_world.2⟩,
-   ⟨Spending.taking, handing_world.2.2.2.2.2.2.2.1⟩,
-   ⟨kindling_world.2.1, handing_world.2.2.2.2.2.2.2.2.1⟩,
-   ⟨handing_world.2.2.2.2.2.2.2.2.2.1, drawdown_world.2.2.2.2.2.2⟩,
-   ⟨handing_world.2.2.2.2.2.2.2.2.2.2, restless_world⟩⟩
+    (shuttle.Dependent ∧ ¬ unchecked.Dependent) ∧
+    (shuttle.Balanced ∧ ¬ unbalanced.Balanced) ∧
+    (shuttle.Acting ∧ ¬ idle.Acting) ∧
+    (selfDrawing.Taking ∧ ¬ shuttle.Taking) ∧
+    (throughput.Dissipative ∧ ¬ shuttle.Dissipative) ∧
+    (shuttle.Embodied ∧ ¬ drawdown.Embodied) ∧
+    (shuttle.Carried ∧ ¬ restless.Carried) :=
+  ⟨⟨Shuttle.dependent, Unchecked.unchecked.2.2.2.2.1⟩,
+   ⟨Shuttle.balances, unbalanced_world.2.2.2.2⟩,
+   ⟨Shuttle.acting, idle_world.2⟩,
+   ⟨SelfDrawing.taking, shuttle_world.2.2.2.2.2.2.2.1⟩,
+   ⟨throughput_world.2.1, shuttle_world.2.2.2.2.2.2.2.2.1⟩,
+   ⟨shuttle_world.2.2.2.2.2.2.2.2.2.1, drawdown_world.2.2.2.2.2.2⟩,
+   ⟨shuttle_world.2.2.2.2.2.2.2.2.2.2, restless_world⟩⟩
 
 /-- Where the relata are infinitely many, arising and ceasing separate: either recurs
 without the other. -/
 theorem separate :
-    (dawn.ArisingRecurs ∧ ¬ dawn.CeasingRecurs ∧ ¬ dawn.Finite) ∧
-    (dusk.CeasingRecurs ∧ ¬ dusk.ArisingRecurs ∧ ¬ dusk.Finite) :=
-  have dawnArising : dawn.ArisingRecurs := (arisingRecurs_ofRoles _ _).mpr Dawn.unceasing
-  have dawnQuiet : ¬ dawn.CeasingRecurs := fun ceasing =>
+    (accretion.ArisingRecurs ∧ ¬ accretion.CeasingRecurs ∧ ¬ accretion.Finite) ∧
+    (attrition.CeasingRecurs ∧ ¬ attrition.ArisingRecurs ∧ ¬ attrition.Finite) :=
+  have accretionArising : accretion.ArisingRecurs :=
+    (arisingRecurs_ofRoles _ _).mpr Accretion.unceasing
+  have accretionQuiet : ¬ accretion.CeasingRecurs := fun ceasing =>
     match (ceasingRecurs_ofRoles _ _).mp ceasing 0 with
-    | ⟨t, f, _, ceases⟩ => Dawn.never_ceases t f ceases
-  have duskCeasing : dusk.CeasingRecurs := (ceasingRecurs_ofRoles _ _).mpr Dusk.ceasing
-  have duskQuiet : ¬ dusk.ArisingRecurs := fun arising =>
+    | ⟨t, f, _, ceases⟩ => Accretion.never_ceases t f ceases
+  have attritionCeasing : attrition.CeasingRecurs :=
+    (ceasingRecurs_ofRoles _ _).mpr Attrition.ceasing
+  have attritionQuiet : ¬ attrition.ArisingRecurs := fun arising =>
     match (arisingRecurs_ofRoles _ _).mp arising 0 with
-    | ⟨t, f, _, arises⟩ => Dusk.nothing_arises t f arises
-  ⟨⟨dawnArising, dawnQuiet,
-    fun finite => dawnQuiet ((arising_iff_ceasing finite).mp dawnArising)⟩,
-   ⟨duskCeasing, duskQuiet,
-    fun finite => duskQuiet ((arising_iff_ceasing finite).mpr duskCeasing)⟩⟩
+    | ⟨t, f, _, arises⟩ => Attrition.nothing_arises t f arises
+  ⟨⟨accretionArising, accretionQuiet,
+    fun finite => accretionQuiet ((arising_iff_ceasing finite).mp accretionArising)⟩,
+   ⟨attritionCeasing, attritionQuiet,
+    fun finite => attritionQuiet ((arising_iff_ceasing finite).mpr attritionCeasing)⟩⟩
 
 /-- Living crosses arising: among finite worlds, arising recurring or not occurs both with
 every event living and with some event not living. In a finite world whose activity is
 decided, ceasing recurs exactly when arising does, so the same holds of it. -/
 theorem living_crosses :
-    (handing.Finite ∧ handing.ArisingRecurs ∧ handing.Living) ∧
+    (shuttle.Finite ∧ shuttle.ArisingRecurs ∧ shuttle.Living) ∧
     (grazing.Finite ∧ grazing.ArisingRecurs ∧ ¬ grazing.Living) ∧
     (mutualism.Finite ∧ ¬ mutualism.ArisingRecurs ∧ mutualism.Living) ∧
     (drawdown.Finite ∧ ¬ drawdown.ArisingRecurs ∧ ¬ drawdown.Living) :=
-  ⟨⟨handing_finite, handing_arising, handing_world.2.2.2.1⟩,
+  ⟨⟨shuttle_finite, shuttle_arising, shuttle_world.2.2.2.1⟩,
    ⟨grazing_finite, grazing_arising, grazing_world.2.2.1⟩,
    ⟨mutualism_finite, mutualism_world.2.1, mutualism_world.2.2.2.1⟩,
    ⟨drawdown_finite, drawdown_world.2.1, drawdown_world.2.2.2.1⟩⟩
@@ -997,11 +999,11 @@ theorem living_crosses :
 /-- Living crosses ceasing too: these finite worlds have their activity decided, so ceasing
 recurs exactly where arising does (the tenth review's probe). -/
 theorem living_crosses_ceasing :
-    (handing.Finite ∧ handing.CeasingRecurs ∧ handing.Living) ∧
+    (shuttle.Finite ∧ shuttle.CeasingRecurs ∧ shuttle.Living) ∧
     (grazing.Finite ∧ grazing.CeasingRecurs ∧ ¬ grazing.Living) ∧
     (mutualism.Finite ∧ ¬ mutualism.CeasingRecurs ∧ mutualism.Living) ∧
     (drawdown.Finite ∧ ¬ drawdown.CeasingRecurs ∧ ¬ drawdown.Living) :=
-  ⟨⟨handing_finite, handing_world.2.2.1, handing_world.2.2.2.1⟩,
+  ⟨⟨shuttle_finite, shuttle_world.2.2.1, shuttle_world.2.2.2.1⟩,
    ⟨grazing_finite, (arising_iff_ceasing grazing_finite).mp grazing_arising,
     grazing_world.2.2.1⟩,
    ⟨mutualism_finite, mutualism_world.2.2.1, mutualism_world.2.2.2.1⟩,
@@ -1013,17 +1015,17 @@ theorem living_crosses_ceasing :
 embodiment, arising can recur. The world failing balance takes part in exchange at every
 step, so its dissipation is not vacuous. -/
 theorem rests_needs :
-    (kindling.Balanced ∧ kindling.Dissipative ∧ kindling.ArisingEmbodied ∧
-      kindling.ArisingRecurs ∧ ¬ kindling.Finite) ∧
-    (handing.Finite ∧ handing.Balanced ∧ handing.ArisingEmbodied ∧ handing.ArisingRecurs ∧
-      ¬ handing.Dissipative) ∧
+    (throughput.Balanced ∧ throughput.Dissipative ∧ throughput.ArisingEmbodied ∧
+      throughput.ArisingRecurs ∧ ¬ throughput.Finite) ∧
+    (shuttle.Finite ∧ shuttle.Balanced ∧ shuttle.ArisingEmbodied ∧ shuttle.ArisingRecurs ∧
+      ¬ shuttle.Dissipative) ∧
     (leaking.Finite ∧ leaking.Dissipative ∧ leaking.ArisingEmbodied ∧
       leaking.ArisingRecurs ∧ ¬ leaking.Balanced) ∧
     (flicker.Finite ∧ flicker.Balanced ∧ flicker.Dissipative ∧ flicker.ArisingRecurs ∧
       ¬ flicker.ArisingEmbodied) :=
-  ⟨kindling_world,
-   ⟨handing_finite, Handing.balances, Embodied.arising handing_world.2.2.2.2.2.2.2.2.2.1,
-    handing_arising, handing_world.2.2.2.2.2.2.2.2.1⟩,
+  ⟨throughput_world,
+   ⟨shuttle_finite, Shuttle.balances, Embodied.arising shuttle_world.2.2.2.2.2.2.2.2.2.1,
+    shuttle_arising, shuttle_world.2.2.2.2.2.2.2.2.1⟩,
    ⟨leaking_world.1, leaking_world.2.2.1, Embodied.arising leaking_world.2.2.2.1,
     leaking_world.2.1, leaking_world.2.2.2.2.1⟩,
    flicker_world⟩

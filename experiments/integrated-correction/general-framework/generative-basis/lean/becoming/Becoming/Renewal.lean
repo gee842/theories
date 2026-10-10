@@ -101,7 +101,7 @@ theorem Conditions.drawdown_finite {F C : Type} (K : Conditions S F C) {P : Proc
 
 /-! ## The class belongs to the run -/
 
-namespace Commons
+namespace Renewable
 
 /-- A shared condition renewed by one unit per step; the action is the amount drawn. -/
 def process : Process Nat Nat := ⟨fun s d t => t = s + 1 - d⟩
@@ -128,27 +128,27 @@ def conditions : Conditions Nat Formation Unit where
     | .sustaining, _ => False
 
 /-- Drawing what is renewed. -/
-def sharing : Run process := ⟨fun _ => 1, fun _ => 1, fun _ => rfl⟩
+def withinRenewal : Run process := ⟨fun _ => 1, fun _ => 1, fun _ => rfl⟩
 
-def winningState : Nat → Nat
+def beyondRenewalState : Nat → Nat
   | 0 => 1
   | _ + 1 => 0
 
 /-- Drawing one unit more than is renewed. -/
-def winning : Run process :=
-  ⟨winningState, fun _ => 2, fun | 0 => rfl | _ + 1 => rfl⟩
+def beyondRenewal : Run process :=
+  ⟨beyondRenewalState, fun _ => 2, fun | 0 => rfl | _ + 1 => rfl⟩
 
 /-- One process, one initial configuration, the focal formation active at every step
 of both runs: drawing within renewal is renewing, drawing beyond it consumes the
 condition of the sustaining formation, which ends. -/
 theorem class_belongs_to_the_run :
-    sharing.state 0 = winning.state 0 ∧
-    (∀ t, conditions.active (sharing.state t) .focal ∧
-      conditions.active (winning.state t) .focal) ∧
-    RenewingIn (conditions.along sharing) .focal ∧
-    ConsumingIn (conditions.along winning) .focal ∧
-    ∀ t, 1 ≤ t → ¬ conditions.active (winning.state t) .sustaining := by
-  have lost : ∀ t, 1 ≤ t → winningState t < 1
+    withinRenewal.state 0 = beyondRenewal.state 0 ∧
+    (∀ t, conditions.active (withinRenewal.state t) .focal ∧
+      conditions.active (beyondRenewal.state t) .focal) ∧
+    RenewingIn (conditions.along withinRenewal) .focal ∧
+    ConsumingIn (conditions.along beyondRenewal) .focal ∧
+    ∀ t, 1 ≤ t → ¬ conditions.active (beyondRenewal.state t) .sustaining := by
+  have lost : ∀ t, 1 ≤ t → beyondRenewalState t < 1
     | 0, early => absurd early (Nat.not_succ_le_zero 0)
     | _ + 1, _ => Nat.zero_lt_one
   refine ⟨rfl, fun _ => ⟨trivial, trivial⟩, ?_, ⟨(), trivial, .sustaining, 1, trivial, lost⟩,
@@ -158,6 +158,6 @@ theorem class_belongs_to_the_run :
   | focal => exact absurd depends id
   | sustaining => exact Nat.le_refl 1
 
-end Commons
+end Renewable
 
 end Becoming

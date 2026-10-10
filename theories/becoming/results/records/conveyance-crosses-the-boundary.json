@@ -10,8 +10,8 @@
   "family": "F07",
   "reviewed_at_utc": "2026-10-10T07:45:00+00:00",
   "claim": {
-    "zh": "以一类关系项读，把事件逐步读（living：活跃且不侵蚀），两个同一步的事件在有东西在它们的关系项之间输送时相关（Flow.conveyance）。在某步什么都不被取用、不被给予的关系项，在该步与任何事件都不相关（Flow.conveyance_idle）。没有已形成的关系离开一个区域，称该区域的边界为关系的切口（Flow.Cut）。在平衡与耗散之下，取用复现、从某步起被围住的不重复有限家族，它的边界不会从某步起再无穿越（Flow.boundary_crossed），所以它的区域不是切口（Flow.region_not_a_cut）；在 N_rel 下，珍视一个关系项的事件，就到达向它输送的那个关系项在该步的活的事件（Flow.valuing_reaches_source）。输送新增的是两个条件之间、沿流入方向的关系：以一类关系项读，两个条件之间的输送使它们的事件相关（Flow.roles_conveyance），而交互、以之为生与世系在任何步上都不使两个条件相关（Flow.roles_conditions_unrelated）；所以谨慎照管者的供给每步都被穿越（Totalizer.crossed、Totalizer.supply_not_cut），该步的燃料与供给只由输送相关（Totalizer.conveyance_only）。以之为生之下，照管者以之为生的供给的区域也不是切口（Totalizer.supply_not_cut_living_on），所以区域不是切口本身不新；新的是条件之间的关系，region_not_a_cut 的独特之处在方向。不用伦理公理，也不用 Lean 公理；N_rel 是假设。",
-    "en": "Read with one kind of relatum, with events read stepwise (living: active and not undermining), two events at a common step are related when something is conveyed between their relata (Flow.conveyance). A relatum nothing is taken from or given to at a step is related to nothing at that step (Flow.conveyance_idle). A region's boundary is a cut in the relations when no formed relation leaves it (Flow.Cut). Under balance and dissipation, the boundary of a finite family without repetition, enclosed around from some step on, from which taking recurs, is from no step on left uncrossed (Flow.boundary_crossed), so its region is not a cut (Flow.region_not_a_cut); under N_rel, valuing a relatum's event reaches the living event at that step of what is conveyed into it (Flow.valuing_reaches_source). What conveyance adds is a relation between two conditions, in the direction of inflow: read with one kind of relatum, something conveyed between two conditions relates their events (Flow.roles_conveyance), while interaction, living on and descent relate no two conditions at any steps (Flow.roles_conditions_unrelated); so the careful keeper's supply is crossed at every step (Totalizer.crossed, Totalizer.supply_not_cut) and the step's fuel and the supply are related by conveyance alone (Totalizer.conveyance_only). Under living on the supply's region, which the keeper lives on, is no cut either (Totalizer.supply_not_cut_living_on), so a region being no cut is not itself new; what is new is the relation between conditions, and region_not_a_cut is distinctive in direction. No ethical axiom and no Lean axiom is used; N_rel is a hypothesis."
+    "zh": "以一类关系项读，把事件逐步读（living：活跃且不侵蚀），两个同一步的事件在有东西在它们的关系项之间输送时相关（Flow.conveyance）。在某步什么都不被取用、不被给予的关系项，在该步与任何事件都不相关（Flow.conveyance_idle）。没有已形成的关系离开一个区域，称该区域的边界为关系的切口（Flow.Cut）。在平衡与耗散之下，取用复现、从某步起被围住的不重复有限家族，它的边界不会从某步起再无穿越（Flow.boundary_crossed），所以它的区域不是切口（Flow.region_not_a_cut）；在 N_rel 下，珍视一个关系项的事件，就到达向它输送的那个关系项在该步的活的事件（Flow.valuing_reaches_source）。输送新增的是两个条件之间、沿流入方向的关系：以一类关系项读，两个条件之间的输送使它们的事件相关（Flow.roles_conveyance），而交互、以之为生与世系在任何步上都不使两个条件相关（Flow.roles_conditions_unrelated）；所以清除者的资源每步都被穿越（Clearing.crossed、Clearing.resource_not_cut），该步的燃料与资源只由输送相关（Clearing.conveyance_only）。以之为生之下，清除者以之为生的资源的区域也不是切口（Clearing.resource_not_cut_living_on），所以区域不是切口本身不新；新的是条件之间的关系，region_not_a_cut 的独特之处在方向。不用伦理公理，也不用 Lean 公理；N_rel 是假设。",
+    "en": "Read with one kind of relatum, with events read stepwise (living: active and not undermining), two events at a common step are related when something is conveyed between their relata (Flow.conveyance). A relatum nothing is taken from or given to at a step is related to nothing at that step (Flow.conveyance_idle). A region's boundary is a cut in the relations when no formed relation leaves it (Flow.Cut). Under balance and dissipation, the boundary of a finite family without repetition, enclosed around from some step on, from which taking recurs, is from no step on left uncrossed (Flow.boundary_crossed), so its region is not a cut (Flow.region_not_a_cut); under N_rel, valuing a relatum's event reaches the living event at that step of what is conveyed into it (Flow.valuing_reaches_source). What conveyance adds is a relation between two conditions, in the direction of inflow: read with one kind of relatum, something conveyed between two conditions relates their events (Flow.roles_conveyance), while interaction, living on and descent relate no two conditions at any steps (Flow.roles_conditions_unrelated); so the clearer's resource is crossed at every step (Clearing.crossed, Clearing.resource_not_cut) and the step's fuel and the resource are related by conveyance alone (Clearing.conveyance_only). Under living on the resource's region, which the clearer lives on, is no cut either (Clearing.resource_not_cut_living_on), so a region being no cut is not itself new; what is new is the relation between conditions, and region_not_a_cut is distinctive in direction. No ethical axiom and no Lean axiom is used; N_rel is a hypothesis."
   },
   "hypotheses": [
     {
@@ -41,10 +41,10 @@
     "Becoming.Flow.valuing_reaches_source",
     "Becoming.Flow.roles_conveyance",
     "Becoming.Flow.roles_conditions_unrelated",
-    "Becoming.Totalizer.crossed",
-    "Becoming.Totalizer.supply_not_cut",
-    "Becoming.Totalizer.conveyance_only",
-    "Becoming.Totalizer.supply_not_cut_living_on"
+    "Becoming.Clearing.crossed",
+    "Becoming.Clearing.resource_not_cut",
+    "Becoming.Clearing.conveyance_only",
+    "Becoming.Clearing.resource_not_cut_living_on"
   ],
   "dependencies": [
     {
@@ -160,8 +160,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "detail": {
-        "zh": "先前的读法不使两个条件相关：谨慎照管者的燃料与供给只由输送相关（Totalizer.conveyance_only）；但以之为生之下，供给的区域也不是切口（Totalizer.supply_not_cut_living_on）。",
-        "en": "The earlier readings relate no two conditions: the careful keeper's fuel and supply are related by conveyance alone (Totalizer.conveyance_only); under living on, though, the supply's region is no cut either (Totalizer.supply_not_cut_living_on)."
+        "zh": "先前的读法不使两个条件相关：清除者的燃料与资源只由输送相关（Clearing.conveyance_only）；但以之为生之下，资源的区域也不是切口（Clearing.resource_not_cut_living_on）。",
+        "en": "The earlier readings relate no two conditions: the clearer's fuel and resource are related by conveyance alone (Clearing.conveyance_only); under living on, though, the resource's region is no cut either (Clearing.resource_not_cut_living_on)."
       }
     },
     {
@@ -177,14 +177,14 @@
     "en": "Conveyance relates events at a common step only, orders no steps, and does not ask whether what is conveyed sustains the receiver; it does not distinguish a living or held source from another; adopting it is Ren's choice; reaching under N_rel is the relational half of the axiom, not what the want requires; stated for the stepwise reading only; the names are the AI's wording, for Ren to choose (conveyance, Cut and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T075031.720357Z）：Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T075308.552033Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T075031.720357Z): the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T075308.552033Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T083222.285294Z）：Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T084107.973758Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T083222.285294Z): the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T084107.973758Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
       "role": "proof",
-      "sha256": "0c94b05a460cad607a50274e5105589321441fa2d666d79035d30e219b4a4e0b",
+      "sha256": "1f322933aff6e2a855bd7e7209dabad5c6d3079152fd79a438593195eae8de4c",
       "declarations": [
         "Becoming.Flow.conveyance",
         "Becoming.Flow.conveyance_idle",
@@ -194,16 +194,16 @@
         "Becoming.Flow.region_not_a_cut",
         "Becoming.Flow.roles_conveyance",
         "Becoming.Flow.roles_conditions_unrelated",
-        "Becoming.Totalizer.crossed",
-        "Becoming.Totalizer.supply_not_cut",
-        "Becoming.Totalizer.conveyance_only",
-        "Becoming.Totalizer.supply_not_cut_living_on"
+        "Becoming.Clearing.crossed",
+        "Becoming.Clearing.resource_not_cut",
+        "Becoming.Clearing.conveyance_only",
+        "Becoming.Clearing.resource_not_cut_living_on"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "6184fbd1f0a13d8ef8946d7207738256c7287b107eb19fe0f91ba1ebf15e06ab",
+      "sha256": "59de94b5499bc3085ec121eea1b6b7e9e02c9b54b06c5ff68dbf8548d115dc74",
       "declarations": [
         "Becoming.Flow.Conveys",
         "Becoming.Flow.fed_from_beyond"
@@ -212,7 +212,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "42c42c015abaf468fdf2ca97d11b48351bde4609f2542cc9c2e02725abf28b26",
+      "sha256": "d404d5f5d04d128c84c71e79e538c404e3d7077e31b69a0cd3138954f5002acb",
       "declarations": [
         "Becoming.Flow.roles",
         "Becoming.Web.roles",
@@ -222,7 +222,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Descent.lean",
       "role": "proof",
-      "sha256": "11db87b79c808d1098f3cf2650c1350dee19f2c2fb6efd287634cb86304c4d05",
+      "sha256": "a6b5771a0db28bd2b51908d9b472c991b13cf58db2993121eeb84363054928e2",
       "declarations": [
         "Becoming.Web.sustenance",
         "Becoming.Web.LivesOn",
@@ -232,7 +232,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean",
       "role": "proof",
-      "sha256": "e34e6fa72be7ba9dea660264e4c5192bd1c35f5773c2a706714e6cf3b742a3ee",
+      "sha256": "ab451f13a200e28198e9d9d4c13d08fa692c59a0997260feb74dab68d881b519",
       "declarations": [
         "Becoming.Web.Interacts",
         "Becoming.Web.interaction"
@@ -241,12 +241,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "3ae408a8e7a8950fbd23823d663b0bf6106057eea1e935c29a809484502d69c1"
+      "sha256": "2f5e70aaefddc616e79892f93e6762b995939c82b70352751ef7a31c79f35740"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "142f7ea7b863e0284b31e08909d800c99c9c0b18afaa090675b708ecab4ed9be"
+      "sha256": "b7fbea7aace444c3ef4e487fad7a43fb9ec277d59d1a1e01b7595e531e248b49"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -317,6 +317,10 @@
     {
       "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
       "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P36：验证范围重新指向合并检查器回执 20261010T083222.285294Z 与外围回执 20261010T084107.973758Z（见证与声明改用形式的、系统与科学的名称，新旧对照见统一计划 §10；陈述、证明与各模块的定理数不变）。断言不变。本记录中的见证与声明名称随之更新。",
+      "en": "2026-10-10 P36: validation scope re-pointed to consolidated receipt 20261010T083222.285294Z and periphery receipt 20261010T084107.973758Z (witnesses and declarations take formal, systems and scientific names, with the old-to-new table in the unification plan §10; statements, proofs and each module's theorem count are unchanged). The claim is unchanged. This record's witness and declaration names are updated accordingly."
     }
   ]
 }

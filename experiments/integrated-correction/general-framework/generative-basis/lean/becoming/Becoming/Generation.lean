@@ -38,7 +38,7 @@ Results:
   is made by a formation renewing it, renewing activity recurs
   (`Unceasing.regeneration_recurs`). Renewal is read here as a net rise, so renewal
   concurrent with drawing, which keeps the level constant, is invisible to it
-  (`Garden.undepleted`); the flow form of `Becoming.Flow` covers it.
+  (`Expansion.undepleted`); the flow form of `Becoming.Flow` covers it.
 * Substitution defers the end and does not escape it. A formation that at each of its
   active steps lowers some condition of a finite family, none of which rises any more,
   is active only finitely often, however it moves its dependence among them
@@ -56,15 +56,16 @@ Results:
 * Renewal does not imply generation. The tide, renewed by the moon, rises at arbitrarily
   late steps while nothing arises (`Tide.renewal_without_arising`); drawing exactly what
   is renewed keeps every dependence while nothing arises
-  (`Commons.renewal_without_generation`).
+  (`Renewable.renewal_without_generation`).
 * Arising on a consumed condition ceases: formations arise while drawing an unrenewed
   condition down, consume it, and arising stops (`Growth.ceases`).
 * Unceasing generation is consistent with these premises: a formation arises again and
-  again on a condition that another formation renews (`Bloom.unceasing`). Each arising
-  comes when the condition has been restored, at a rise, so the bloom depletes the
-  family only vacuously (`Bloom.arises_on_rise`). The working stepwise reading withholds
-  every bloom, which draws its condition below its own need until the next renewal,
-  while the reading over cycles of two credits it (`Bloom.readings`).
+  again on a condition that another formation renews (`Oscillation.unceasing`). Each arising
+  comes when the condition has been restored, at a rise, so the oscillator depletes the
+  family only vacuously (`Oscillation.arises_on_rise`). The working stepwise reading withholds
+  every arising of the oscillator, which draws its condition below its own need until the
+  next renewal,
+  while the reading over cycles of two credits it (`Oscillation.readings`).
 
 So, where arising depletes the family, unceasing generation is strictly stronger than
 recurring renewal: it needs renewal to recur, and renewal can recur with nothing
@@ -214,19 +215,19 @@ end Web
 
 /-! ## Renewal does not imply generation -/
 
-namespace Commons
+namespace Renewable
 
 /-- Drawing exactly what is renewed keeps every dependence, and nothing ever arises. -/
 theorem renewal_without_generation :
-    (conditions.dependence.along sharing).Renewed () ∧
-    ∀ t f, ¬ (conditions.dependence.along sharing).Arises t f :=
+    (conditions.dependence.along withinRenewal).Renewed () ∧
+    ∀ t f, ¬ (conditions.dependence.along withinRenewal).Arises t f :=
   ⟨fun _ g depends => match g, depends with
     | .sustaining, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩,
    fun _ f ⟨inactive, _⟩ => match f with
     | .focal => inactive trivial
     | .sustaining => inactive (Nat.le_refl 1)⟩
 
-end Commons
+end Renewable
 
 /-! ## Depletion need not involve the arising formation, and renewal recurs without
 arising -/
@@ -436,7 +437,7 @@ inductive Pool where
 
 inductive Formation where
   | carrier
-  | bloom
+  | consumer
 
 /-- One unit, at `a` at even steps and at `b` at odd steps. -/
 def atA : Nat → Nat
@@ -449,7 +450,7 @@ def atB : Nat → Nat
   | 1 => 1
   | n + 2 => atB n
 
-/-- The bloom depends on `a` at need one; it is active where `a` supports it, and then
+/-- The consumer depends on `a` at need one; it is active where `a` supports it, and then
 draws on it, passing the unit to `b`. The carrier, always active, carries it back. -/
 def web : Web Formation Pool where
   level t c := match c with
@@ -457,24 +458,24 @@ def web : Web Formation Pool where
     | .b => atB t
   active t f := match f with
     | .carrier => True
-    | .bloom => 1 ≤ atA t
+    | .consumer => 1 ≤ atA t
   requires _ f c := match f, c with
     | .carrier, _ => False
-    | .bloom, .a => True
-    | .bloom, .b => False
+    | .consumer, .a => True
+    | .consumer, .b => False
   need _ _ _ := 1
   draws t f c := match f, c with
     | .carrier, _ => False
-    | .bloom, .a => 1 ≤ atA t
-    | .bloom, .b => False
+    | .consumer, .a => 1 ≤ atA t
+    | .consumer, .b => False
 
-/-- The carrier renews `a`, and the bloom's drawing renews `b`. -/
+/-- The carrier renews `a`, and the consumer's drawing renews `b`. -/
 def renews (_ : Nat) (f : Formation) (c : Pool) : Prop :=
   match f, c with
   | .carrier, .a => True
   | .carrier, .b => False
-  | .bloom, .a => False
-  | .bloom, .b => True
+  | .consumer, .a => False
+  | .consumer, .b => True
 
 theorem total_one : ∀ t, web.stock [.a, .b] t = 1
   | 0 => rfl
@@ -489,14 +490,14 @@ theorem atA_odd : ∀ n, atA (2 * n + 1) = 0
   | 0 => rfl
   | n + 1 => atA_odd n
 
-/-- `b` rises only across a step from which the bloom is active. -/
+/-- `b` rises only across a step from which the consumer is active. -/
 theorem passed : ∀ t, atB t < atB (t + 1) → 1 ≤ atA t
   | 0, _ => Nat.le_refl 1
   | 1, rises => absurd rises (Nat.not_succ_le_zero 1)
   | t + 2, rises => passed t rises
 
 /-- The family's total stays one, every premise of `Unceasing.regeneration_recurs`
-holds, and the bloom arises at every odd step: no arising lowers the total, and a closed
+holds, and the consumer arises at every odd step: no arising lowers the total, and a closed
 cycle sustains unceasing generation. -/
 theorem closed_unceasing :
     web.Dependent ∧ web.RenewedBy renews ∧
@@ -506,17 +507,17 @@ theorem closed_unceasing :
   have depletes : web.Depletes [.a, .b] fun t => ∃ f, web.Arises t f :=
     fun _ ⟨f, inactive, active⟩ still => match f, inactive, active with
     | .carrier, inactive, _ => absurd trivial inactive
-    | .bloom, inactive, active =>
+    | .consumer, inactive, active =>
       absurd (Nat.lt_of_lt_of_le (Nat.gt_of_not_le inactive) active) (still .a (.head _))
   have made : web.RenewedBy renews := fun t c rises => match c, rises with
     | .a, _ => ⟨.carrier, trivial, trivial⟩
-    | .b, rises => ⟨.bloom, passed t rises, trivial⟩
+    | .b, rises => ⟨.consumer, passed t rises, trivial⟩
   have unceasing : web.Unceasing := fun N =>
-    ⟨2 * N + 1, .bloom, Nat.le_succ_of_le (Nat.le_mul_of_pos_left N Nat.zero_lt_two),
+    ⟨2 * N + 1, .consumer, Nat.le_succ_of_le (Nat.le_mul_of_pos_left N Nat.zero_lt_two),
       fun one => Nat.not_succ_le_zero 0 (Nat.le_trans one (Nat.le_of_eq (atA_odd N))),
       Nat.le_of_eq (atA_even (N + 1)).symm⟩
   ⟨fun _ f active c depends => match f, c, active, depends with
-    | .bloom, .a, active, _ => active,
+    | .consumer, .a, active, _ => active,
    made, depletes, unceasing, total_one,
    Web.Unceasing.regeneration_recurs web made depletes unceasing⟩
 
@@ -524,90 +525,90 @@ end Recycle
 
 /-! ## Unceasing generation on a renewed condition -/
 
-namespace Bloom
+namespace Oscillation
 
 inductive Formation where
-  | sun
-  | bloom
+  | source
+  | oscillator
 
-/-- Two at even steps and one at odd steps: the bloom takes two when it is active, and
-the sun gives one at every step. -/
-def glow : Nat → Nat
+/-- Two at even steps and one at odd steps: the oscillator takes two when it is active, and
+the source gives one at every step. -/
+def charge : Nat → Nat
   | 0 => 2
   | 1 => 1
-  | n + 2 => glow n
+  | n + 2 => charge n
 
-theorem glow_even : ∀ n, glow (2 * n) = 2
+theorem charge_even : ∀ n, charge (2 * n) = 2
   | 0 => rfl
-  | n + 1 => glow_even n
+  | n + 1 => charge_even n
 
-theorem glow_odd : ∀ n, glow (2 * n + 1) = 1
+theorem charge_odd : ∀ n, charge (2 * n + 1) = 1
   | 0 => rfl
-  | n + 1 => glow_odd n
+  | n + 1 => charge_odd n
 
-/-- The sun is always active and depends on nothing here. The bloom is active where the
+/-- The source is always active and depends on nothing here. The oscillator is active where the
 condition reaches its need of two, depends on it, and draws on it when active. -/
 def web : Web Formation Unit where
-  level t _ := glow t
+  level t _ := charge t
   active t f := match f with
-    | .sun => True
-    | .bloom => 2 ≤ glow t
+    | .source => True
+    | .oscillator => 2 ≤ charge t
   requires _ f _ := match f with
-    | .sun => False
-    | .bloom => True
+    | .source => False
+    | .oscillator => True
   need _ _ _ := 2
   draws t f _ := match f with
-    | .sun => False
-    | .bloom => 2 ≤ glow t
+    | .source => False
+    | .oscillator => 2 ≤ charge t
 
 /-- Within two steps the condition is back at two. -/
-theorem back : ∀ t, 2 ≤ glow (t + 1) ∨ 2 ≤ glow (t + 2)
+theorem back : ∀ t, 2 ≤ charge (t + 1) ∨ 2 ≤ charge (t + 2)
   | 0 => .inr (Nat.le_refl 2)
   | 1 => .inl (Nat.le_refl 2)
   | t + 2 => back t
 
-/-- The sun renews the condition. -/
+/-- The source renews the condition. -/
 def renews (_ : Nat) (f : Formation) (_ : Unit) : Prop :=
   match f with
-  | .sun => True
-  | .bloom => False
+  | .source => True
+  | .oscillator => False
 
-/-- The bloom arises only when the sun has restored its condition: at a rise. -/
+/-- The oscillator arises only when the source has restored its condition: at a rise. -/
 theorem arises_on_rise : ∀ t f, web.Arises t f → web.Rises t ()
-  | _, .sun, ⟨inactive, _⟩ => absurd trivial inactive
-  | _, .bloom, ⟨inactive, active⟩ => Nat.lt_of_lt_of_le (Nat.gt_of_not_le inactive) active
+  | _, .source, ⟨inactive, _⟩ => absurd trivial inactive
+  | _, .oscillator, ⟨inactive, active⟩ => Nat.lt_of_lt_of_le (Nat.gt_of_not_le inactive) active
 
-/-- Every premise of `Unceasing.regeneration_recurs` holds, and the bloom arises at every
-odd step: generation does not cease, and the sun's renewing recurs. -/
+/-- Every premise of `Unceasing.regeneration_recurs` holds, and the oscillator arises at every
+odd step: generation does not cease, and the source's renewing recurs. -/
 theorem unceasing :
     web.Dependent ∧ web.RenewedBy renews ∧
     web.Depletes [()] (fun t => ∃ f, web.Arises t f) ∧ web.Unceasing ∧
     ∀ T, ¬ ∀ t, T ≤ t → ∀ f, ¬ web.Regenerating renews [()] t f :=
   have depletes : web.Depletes [()] fun t => ∃ f, web.Arises t f :=
     fun t ⟨f, arises⟩ still => absurd (arises_on_rise t f arises) (still () (.head []))
-  have made : web.RenewedBy renews := fun _ _ _ => ⟨.sun, trivial, trivial⟩
+  have made : web.RenewedBy renews := fun _ _ _ => ⟨.source, trivial, trivial⟩
   have unceasing : web.Unceasing := fun N =>
-    ⟨2 * N + 1, .bloom, Nat.le_succ_of_le (Nat.le_mul_of_pos_left N Nat.zero_lt_two),
+    ⟨2 * N + 1, .oscillator, Nat.le_succ_of_le (Nat.le_mul_of_pos_left N Nat.zero_lt_two),
       fun two => Nat.not_succ_le_self 1
-        (Nat.le_trans (show 2 ≤ glow (2 * N + 1) from two) (Nat.le_of_eq (glow_odd N))),
-      show 2 ≤ glow (2 * (N + 1)) from (glow_even (N + 1)).symm ▸ Nat.le_refl 2⟩
+        (Nat.le_trans (show 2 ≤ charge (2 * N + 1) from two) (Nat.le_of_eq (charge_odd N))),
+      show 2 ≤ charge (2 * (N + 1)) from (charge_even (N + 1)).symm ▸ Nat.le_refl 2⟩
   ⟨fun _ f active _ depends => match f, active, depends with
-    | .bloom, active, _ => active,
+    | .oscillator, active, _ => active,
    made, depletes, unceasing, Web.Unceasing.regeneration_recurs web made depletes unceasing⟩
 
-/-- The working stepwise reading withholds every bloom: each draws its condition below
-its own need, which the sun restores by the next bloom. The reading over cycles of two
-credits the bloom. -/
+/-- The working stepwise reading withholds every arising of the oscillator: each draws its
+condition below its own need, which the source restores by the next. The reading over cycles of two
+credits the oscillator. -/
 theorem readings :
-    (∀ n, web.UnderminingAt (2 * n) .bloom) ∧ web.RenewingInWithin 2 .bloom :=
-  ⟨fun n => have two : 2 ≤ glow (2 * n) := (glow_even n).symm ▸ Nat.le_refl 2
-    have below : glow (2 * n + 1) < 2 :=
-      Nat.lt_of_le_of_lt (Nat.le_of_eq (glow_odd n)) (Nat.lt_succ_self 1)
-    ⟨(), two, .bloom, trivial, Web.MetAbove.now trivial two below, below⟩,
+    (∀ n, web.UnderminingAt (2 * n) .oscillator) ∧ web.RenewingInWithin 2 .oscillator :=
+  ⟨fun n => have two : 2 ≤ charge (2 * n) := (charge_even n).symm ▸ Nat.le_refl 2
+    have below : charge (2 * n + 1) < 2 :=
+      Nat.lt_of_le_of_lt (Nat.le_of_eq (charge_odd n)) (Nat.lt_succ_self 1)
+    ⟨(), two, .oscillator, trivial, Web.MetAbove.now trivial two below, below⟩,
    fun _ _ _ t g depends => match g, depends, back t with
-    | .bloom, _, .inl one => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, one⟩
-    | .bloom, _, .inr two => ⟨2, Nat.zero_lt_two, Nat.le_refl 2, two⟩⟩
+    | .oscillator, _, .inl one => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, one⟩
+    | .oscillator, _, .inr two => ⟨2, Nat.zero_lt_two, Nat.le_refl 2, two⟩⟩
 
-end Bloom
+end Oscillation
 
 end Becoming

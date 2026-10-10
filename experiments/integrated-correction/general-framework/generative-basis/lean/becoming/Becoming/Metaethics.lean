@@ -72,14 +72,14 @@ Results:
   and a need of that dependence met while it held. This is the working
   stepwise candidate, pending Ren's choice of the reading. Being within renewal at the
   step is not used as `living`, since it withholds the event of a formation whose own
-  dependence breaks (`Commons.broken_formation`); not breaking is not used either, since
-  it credits drawing after a loss, which in the commons keeps the condition from
-  returning (`Commons.drawing_after_loss`). The same results hold: a common condition
+  dependence breaks (`Renewable.broken_formation`); not breaking is not used either, since
+  it credits drawing after a loss, which in `Renewable` keeps the condition from
+  returning (`Renewable.drawing_after_loss`). The same results hold: a common condition
   discharges connection, and an event drawing at a step that breaks a dependence is
   related to the broken formation, so under N_rel valuing it reaches that formation's
   living events (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
   `related`, both credit the broken formation's own event, and they credit different
-  events in both directions (`Commons.readings_differ`).
+  events in both directions (`Renewable.readings_differ`).
 * Read through relations (`Web.relations`), a claim is a formation's relation to a
   condition at a step, living when the formation is active, participates in the
   condition and the relation is not undermining. The stepwise reading of events is the
@@ -545,22 +545,22 @@ run it does not consume, since the condition returns, so the whole-run reading c
 its first event as living, while the stepwise reading does not: it draws at a step
 that breaks the sustaining formation's dependence. Both readings credit the sustaining
 formation's event at the step that breaks its dependence. -/
-theorem Commons.readings_differ (own sig : Pos → Commons.Formation × Nat → Prop) :
-    ((Commons.conditions.dependence.along Commons.escalating).valuation own sig).living
+theorem Renewable.readings_differ (own sig : Pos → Renewable.Formation × Nat → Prop) :
+    ((Renewable.conditions.dependence.along Renewable.escalating).valuation own sig).living
       (.focal, 0) ∧
-    ¬ (Commons.conditions.valuation Commons.escalating own sig).living (.focal, 0) ∧
-    (Commons.conditions.valuation Commons.dipping own sig).living (.focal, 0) ∧
-    ¬ ((Commons.conditions.dependence.along Commons.dipping).valuation own sig).living
+    ¬ (Renewable.conditions.valuation Renewable.escalating own sig).living (.focal, 0) ∧
+    (Renewable.conditions.valuation Renewable.dipping own sig).living (.focal, 0) ∧
+    ¬ ((Renewable.conditions.dependence.along Renewable.dipping).valuation own sig).living
       (.focal, 0) ∧
-    (Commons.conditions.valuation Commons.escalating own sig).living (.sustaining, 1) ∧
-    ((Commons.conditions.dependence.along Commons.escalating).valuation own sig).living
+    (Renewable.conditions.valuation Renewable.escalating own sig).living (.sustaining, 1) ∧
+    ((Renewable.conditions.dependence.along Renewable.escalating).valuation own sig).living
       (.sustaining, 1) :=
-  match Commons.broken_formation with
+  match Renewable.broken_formation with
   | ⟨active, _, _, victim⟩ =>
-    ⟨⟨trivial, Commons.stepwise_credits_before_escalation.2.1.not_undermining⟩,
+    ⟨⟨trivial, Renewable.stepwise_credits_before_escalation.2.1.not_undermining⟩,
      fun ⟨_, notConsuming⟩ => notConsuming
-       ((Web.static_consumingIn _ _).mp Commons.stepwise_credits_before_escalation.1),
-     ⟨trivial, fun consuming => Commons.dip_breaks_without_consuming.1
+       ((Web.static_consumingIn _ _).mp Renewable.stepwise_credits_before_escalation.1),
+     ⟨trivial, fun consuming => Renewable.dip_breaks_without_consuming.1
        ((Web.static_consumingIn _ _).mpr consuming)⟩,
      fun ⟨_, notUndermining⟩ => notUndermining
        ⟨(), trivial, .sustaining, trivial,

@@ -124,7 +124,7 @@ SCOPE = (
     "rises at arbitrarily late steps while nothing arises, and drawing what is renewed keeps every "
     "dependence while nothing arises; arising on a consumed condition ceases; and a formation "
     "arising again and again on a renewed condition meets every premise, each arising coming at a "
-    "rise, while the stepwise reading withholds each of its blooms and the reading over cycles of "
+    "rise, while the stepwise reading withholds each of its arisings and the reading over cycles of "
     "two credits it. "
     "Flow: when every change of a condition's level is what the formations taking part take and "
     "give, the family's total plus its uptake equals its total before plus its replenishment, over "
@@ -141,7 +141,7 @@ SCOPE = (
     "and, each formation giving at most a fixed amount, renewers that no eventual bound bounds, "
     "who can still be absent at infinitely many steps; renewers and growers arising at every step "
     "meet these premises with a level that never rises, so that arising there does not deplete "
-    "the family in the net sense; the unceasing bloom is not more without end; and in a closed "
+    "the family in the net sense; the unceasing oscillator is not more without end; and in a closed "
     "cycle each formation gives back what it takes, the total never changes, and generation is "
     "more without end with as many renewers as takers; every rise of a condition is given to, "
     "so a rising condition replenishes every family containing it, and where members of a "
@@ -183,8 +183,8 @@ SCOPE = (
     "after a step than before, one arises across it, and a census growing without bound makes "
     "generation unceasing; under a census, with each formation taking part in a flow listed once "
     "and only active formations taking, more without end makes the active formations grow without "
-    "bound and generation unceasing, and the garden and the cycle meet all these premises; the "
-    "unceasing bloom meets these premises and is not more; without a census every formation of an "
+    "bound and generation unceasing, and the expansion and the cycle meet all these premises; the "
+    "unceasing oscillator meets these premises and is not more; without a census every formation of an "
     "infinite family can be active from the start and more without end comes with nothing "
     "arising, with takers that are never active the same holds under a census, and so it does "
     "with one formation listed many times in the flow; ever more formations can draw on a "
@@ -219,20 +219,20 @@ SCOPE = (
     "each event, what a flow takes and gives, the counts of takers and renewers, so more without "
     "end, a census of the active formations and that only active formations take, so that under "
     "a census more without end makes generation unceasing under every re-identification, as in "
-    "the garden; exchanging names at odd steps turns a renewing and a consuming formation into two "
+    "the expansion; exchanging names at odd steps turns a renewing and a consuming formation into two "
     "consuming, removes undermining after the first step and makes formations arise without end, "
     "and arisings made by naming alone can meet every premise of the recurrence of renewal; "
     "keeping the names of continuing activity makes no arising and keeping those of continuing "
     "dependences removes no undermining, while succession, joining a formation that ends with one "
-    "that begins then or later, can hide arising in a lineage and make drawing after an elder's "
-    "loss undermine a living heir, both namings keeping continuity only one way; kept both ways, "
+    "that begins then or later, can hide arising in a lineage and make drawing after a predecessor's "
+    "loss undermine a living successor, both namings keeping continuity only one way; kept both ways, "
     "continuity preserves arising and undermining exactly and excludes a join at a single step, "
     "and joining across a dormant step still changes which formation renews and which consumes; "
     "under a census, with each formation taking part listed once and only active formations "
     "taking, under every continuation in which no formation continues as two, every "
     "re-identification and a continuation with merges among them, more without end makes "
     "formations arise at arbitrarily late steps, a decidable continuation giving the "
-    "decidability this asks; on the garden, whose formations never end, a merge comes with a "
+    "decidability this asks; on the expansion, whose formations never end, a merge comes with a "
     "persisting formation re-read as arising at every step, while where the merged formation "
     "ends what arises under a merge is exactly what is new; without a census it does not, with "
     "new formations budding from one "
@@ -279,7 +279,7 @@ SCOPE = (
     "without repetition containing it is closed across it, as every enclosed step is when "
     "equality is decidable, and under dissipation a finite family from which taking recurs and "
     "which is enclosed around from some step on draws in: at arbitrarily late steps a formation "
-    "gives to it and takes from beyond it; a sun burning a fresh fuel at every step and giving a "
+    "gives to it and takes from beyond it; a source burning a fresh fuel at every step and giving a "
     "pool less than it "
     "burns, while ever more growers take from the pool, meets these premises, with the growers "
     "depending on the pool under a census as well, every step being enclosed and the pool drawing "
@@ -314,7 +314,7 @@ SCOPE = (
     "dependence whatever ends it, even for a drawer that takes nothing and for its own last event, "
     "and in a balanced flow in which only active formations give it arises only as another active "
     "formation gives to it, a formation that need not be embodied, and that is embodied where "
-    "only embodied relata give, as a sun depending on nothing can be; a "
+    "only embodied relata give, as a source depending on nothing can be; a "
     "bee and a flower renew each other, a fox ends with the hare it draws on, and generations arise "
     "without end each given by the one before; an embodied relatum comes to stand as it arises, "
     "so it is given at least the standing it arises with, its arising replenishes every family "
@@ -484,12 +484,12 @@ SCOPE = (
     "property of a census's counts holds in every world meeting either seven exactly when it "
     "holds of every tally, while balance and embodiment, with only active relata giving, "
     "leave nothing arising across a step at which nothing is active, which no tally law "
-    "requires, and that is all the eight add: a queue tended by its front, giving to each "
+    "requires, and that is all the eight add: an open queue, its front giving to each "
     "relatum joining, taking from each leaving and while active exchanging a unit each way "
     "with every ground relatum, meets all eight wherever nothing joins an empty queue, so a "
     "property of the counts holds in every world meeting the eight exactly when it holds of "
     "every tally in which nothing arises across a step at which nothing is active; in the "
-    "tended queue dissipation, activity needing support and bounded transmission hold idly, "
+    "open queue dissipation, activity needing support and bounded transmission hold idly, "
     "and where every premise binds every census counts something arising, which is no law "
     "under the eight. "
     "Openness: under balance and dissipation, across a step enclosed around what stands, the "
@@ -497,11 +497,11 @@ SCOPE = (
     "where what stands is listed and every step from some step on is enclosed around it, "
     "standing stops changing, and so does the exchange, any taking or giving at such a step "
     "lowering the total standing, while without enclosure, dissipation, balance or the census "
-    "of what stands the exchange recurs in exposed, the cycle, leaking and kindling; in a world with a census whose activity is decided, ceasing "
+    "of what stands the exchange recurs in exposed, the cycle, leaking and throughput; in a world with a census whose activity is decided, ceasing "
     "recurs only where arising recurs, not conversely; where at most B relata are active at "
     "each step arising recurs exactly when ceasing does, every census of a finite world is "
     "bounded by the number of its relata with no decidability, a procession with one relatum active at a time among infinitely many keeps "
-    "arising and ceasing, and dawn has no bound; a bound returning within some number at "
+    "arising and ceasing, and accretion has no bound; a bound returning within some number at "
     "arbitrarily late steps keeps the two together, while in slow, for any non-decreasing, "
     "unbounded bound however slow, the relata below it are active, arising recurs and nothing "
     "ceases; under a census of what stands, ceasing to "
@@ -509,14 +509,14 @@ SCOPE = (
     "where what stands is listed, whatever arises embodied, balanced and dissipative, enclosed "
     "around what stands from some step on, arising stops; the rest theorem: with a census "
     "of what is active as well, the world comes to rest, finite worlds being a case, the census "
-    "of what is active needed (dusk) and the census of what stands needed (kindling, ember), "
+    "of what is active needed (attrition) and the census of what stands needed (throughput, embodiedThroughput), "
     "and in every world to which it applies not unboundedly many relata ever stand or act, "
     "while a list holding every member that ever holds, for every listed determination whose "
     "coming to hold does not recur, would give the limited principle of omniscience; "
     "a world with a census whose relata are embodied, balanced and dissipative, enclosed from "
     "some step on, comes to rest without being finite and without deciding equality, so its "
     "arising without end is incompatible with every late step being enclosed; the sides of "
-    "Handing exchanging at zero net with an unbounded ground meet all eight premises, no step "
+    "Shuttle exchanging at zero net with an unbounded ground meet all eight premises, no step "
     "enclosed, total standing one, and keep arising without end, while a side holding its "
     "standing in exchange at zero net with an unbounded ground meets all eight with no step "
     "enclosed and never arises or ceases, and mutualists meet the "
@@ -537,7 +537,7 @@ SCOPE = (
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "
-    "relating every event of the two, while a gift entry "
+    "relating every event of the two, while a give entry "
     "of a formation taking no part makes no descent; living on, like interaction, needs a "
     "dependence that can fail, so under the premise that activity needs support the relatum an "
     "active formation lives on stands at that step and, if embodied, is active there, while a "
@@ -560,7 +560,7 @@ SCOPE = (
     "repetition, enclosed around from some step on, from which taking recurs, whose members rise "
     "at arbitrarily late steps or, read with one kind of relatum, in which embodied members arise "
     "at arbitrarily late steps, cannot from any step on be fed from nothing beyond it, while in "
-    "the sun's flow the pool is fed at every step and no fuel is conveyed from after its own step; "
+    "the source's flow the pool is fed at every step and no fuel is conveyed from after its own step; "
     "formations can each take from a condition within what a step gives it while together they "
     "take more, taking jointly within what is given keeps the level, each step of joint excess "
     "lowers it by at least one, n consecutive steps of joint excess need a level of at least n at "
@@ -576,9 +576,9 @@ SCOPE = (
     "self, requiring only its ground, continues; a formation active for two steps with every "
     "dependence met while it lives ends the renewal of a shared condition, and another formation "
     "depending on it ends after the first has ended, while without the first the others "
-    "continue; and a keeper active at every step, each condition it depends on renewed, fed from "
-    "beyond and taken from jointly within what is given, draws down the habitat of another "
-    "formation, which ends, the keeper's event undermining it. No ethical predicate occurs. "
+    "continue; and a clearer active at every step, each condition it depends on renewed, fed from "
+    "beyond and taken from jointly within what is given, draws down the habitat of a "
+    "dweller, which ends, the clearer's event undermining it. No ethical predicate occurs. "
     "Standpoints: a living claim is held when it lies in the own region of some position; where "
     "every living claim is held, significance of every living claim from every standpoint (G0 at "
     "claim level) is equivalent to S0 at every position with standpoint neutrality, using neither "
@@ -599,14 +599,14 @@ SCOPE = (
     "on, from which taking recurs, is from no step on left uncrossed and so is no cut in the "
     "relations, and under relational neutrality valuing a relatum's event reaches the living "
     "event of what is conveyed into it, while interaction, living on and descent relate no two "
-    "conditions at any steps, so the keeper's fuel and supply, crossed at every step, are "
-    "related by conveyance alone, while under living on the supply's region, which the keeper "
-    "lives on, is no cut either; the keeper's own event that undermines is not living, so S0 says "
-    "nothing of it; where each formation holds and values its own events and the keeper values "
+    "conditions at any steps, so the clearer's fuel and resource, crossed at every step, are "
+    "related by conveyance alone, while under living on the resource's region, which the clearer "
+    "lives on, is no cut either; the clearer's own event that undermines is not living, so S0 says "
+    "nothing of it; where each formation holds and values its own events and the clearer values "
     "also the events that feed the condition its continuation requires, every life in the "
-    "keeper's web is held, S0 holds at every position and each standpoint's significance is "
-    "closed along feeding, while the other formation's living event has no significance from the "
-    "keeper, so standpoint neutrality and G0 fail, and transmission out of the keeper's own "
+    "clearer's web is held, S0 holds at every position and each standpoint's significance is "
+    "closed along feeding, while the dweller's living event has no significance from the "
+    "clearer, so standpoint neutrality and G0 fail, and transmission out of the clearer's own "
     "region along the formed relations fails. No premise is proved and no ethical axiom is "
     "assumed. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
@@ -753,24 +753,24 @@ theorem grow_reason : ∀ p, access p (.respond ()) → routeReason p (.respond 
 example : JointContinuationClassification.Jointly (grow.continuations false) (fun _ => True) :=
   ⟨true, Reach.of_step (a := ()) ⟨rfl, rfl⟩, fun _ _ => rfl⟩
 
--- The common-condition discharge is nonvacuous: in the commons, every formation participates.
-example : (Commons.conditions.valuation Commons.sharing (fun (_ : Unit) _ => True)
+-- The common-condition discharge is nonvacuous: in `Renewable`, every formation participates.
+example : (Renewable.conditions.valuation Renewable.withinRenewal (fun (_ : Unit) _ => True)
     (fun _ _ => True)).Connected :=
-  Commons.conditions.connected_of_common Commons.sharing _ _ ()
+  Renewable.conditions.connected_of_common Renewable.withinRenewal _ _ ()
     (fun e _ => match e with
       | (.focal, _) => Or.inr trivial
       | (.sustaining, _) => Or.inl trivial)
 
 -- The stepwise discharge is nonvacuous: its first event is living in the escalating run.
-example : ((Commons.conditions.dependence.along Commons.escalating).valuation
+example : ((Renewable.conditions.dependence.along Renewable.escalating).valuation
     (fun (_ : Unit) _ => True) (fun _ _ => True)).Connected ∧
-    ((Commons.conditions.dependence.along Commons.escalating).valuation
+    ((Renewable.conditions.dependence.along Renewable.escalating).valuation
       (fun (_ : Unit) _ => True) (fun _ _ => True)).living (.focal, 0) :=
   ⟨Web.connected_of_common _ _ _ ()
     (fun e _ => match e with
       | (.focal, _) => Or.inr trivial
       | (.sustaining, _) => Or.inl trivial),
-   ⟨trivial, Commons.stepwise_credits_before_escalation.2.1.not_undermining⟩⟩
+   ⟨trivial, Renewable.stepwise_credits_before_escalation.2.1.not_undermining⟩⟩
 """
 
 

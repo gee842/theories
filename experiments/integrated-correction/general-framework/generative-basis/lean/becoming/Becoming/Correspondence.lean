@@ -33,8 +33,8 @@ Results:
   drawing, not the undermining: valuing any drawing event reaches every living event
   depending on the condition at a positive level (`drawing_reaches`).
 * A condition on which every living event bears, with a living drawer and a living
-  dependent, connects the whole in at most two interactions (`connected_of_commons`). G0
-  there is exactly a seed with N_rel and N_std (`significant_iff_of_commons`).
+  dependent, connects the whole in at most two interactions (`connected_of_renewable`). G0
+  there is exactly a seed with N_rel and N_std (`significant_iff_of_renewable`).
 * Connection through a condition is made by its living use (`Shared`): two formations
   depending on one condition are connected through its use while the use keeps their
   support, and not when the only use undermines it. Co-participation connects them in
@@ -190,7 +190,7 @@ theorem interacts_reach {c : C} {e e' : F × Nat} (interacts : W.Interacts c e e
 /-- A condition on which every living event bears, with a living event drawing on it
 and a living event depending on it at a positive level, connects the whole: every two
 living events are linked in at most two interactions. -/
-theorem connected_of_commons (c₀ : C)
+theorem connected_of_renewable (c₀ : C)
     (bears : ∀ e, (W.interaction own sig).living e →
       W.draws e.2 e.1 c₀ ∨ W.Bearing e.2 e.1 c₀)
     {d g : F × Nat} (aliveD : (W.interaction own sig).living d) (drawn : W.draws d.2 d.1 c₀)
@@ -208,13 +208,13 @@ theorem connected_of_commons (c₀ : C)
 
 /-- With such a condition, G0 for every standpoint is exactly a seed with N_rel and
 N_std under the discipline. -/
-theorem significant_iff_of_commons (c₀ : C)
+theorem significant_iff_of_renewable (c₀ : C)
     (bears : ∀ e, (W.interaction own sig).living e →
       W.draws e.2 e.1 c₀ ∨ W.Bearing e.2 e.1 c₀)
     {d g : F × Nat} (aliveD : (W.interaction own sig).living d) (drawn : W.draws d.2 d.1 c₀)
     (aliveG : (W.interaction own sig).living g) (bearing : W.Bearing g.2 g.1 c₀) (p₀ : Pos) :
     (W.interaction own sig).Significant ↔ (W.interaction own sig).Grounds :=
-  Valuation.significant_iff (connected_of_commons W own sig c₀ bears aliveD drawn aliveG bearing)
+  Valuation.significant_iff (connected_of_renewable W own sig c₀ bears aliveD drawn aliveG bearing)
     p₀ aliveD
 
 /-- Under N_rel, a standpoint that values an undermining event holds significant every
@@ -347,7 +347,7 @@ theorem one_use_connects {d : F × Nat} (alive : (W.interaction own sig).living 
     adjoin_living fun _ _ ⟨_, _, _, _, fell⟩ => Nat.lt_irrefl 1 fell
   have aliveD := (living d).mpr alive
   ⟨fun _ _ _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩, living,
-   connected_of_commons _ own sig none (fun _ _ => .inr ⟨trivial, Nat.zero_lt_one⟩)
+   connected_of_renewable _ own sig none (fun _ _ => .inr ⟨trivial, Nat.zero_lt_one⟩)
      aliveD ⟨rfl, rfl⟩ aliveD ⟨trivial, Nat.zero_lt_one⟩⟩
 
 end Web
@@ -396,7 +396,7 @@ theorem drawing_connects_earlier (own sig : Unit → Formation × Nat → Prop) 
     | .early, active, _ =>
       Nat.le_of_eq (congrArg (web.level · ()) (show t = 0 from active)).symm,
    aliveEarly, aliveLate, .inl ⟨rfl, bearing⟩,
-   Web.connected_of_commons web own sig () (fun e alive => match e, alive with
+   Web.connected_of_renewable web own sig () (fun e alive => match e, alive with
       | (.early, _), ⟨active, _⟩ => .inr ⟨active, Nat.zero_lt_one⟩
       | (.late, _), ⟨active, _⟩ => .inl active)
      aliveLate rfl aliveEarly bearing⟩
@@ -514,7 +514,7 @@ theorem connection_by_living_use (own sig : Unit → Formation × Nat → Prop) 
     | .user, notUser => absurd rfl notUser
     | .first, _ => ⟨Nat.le_refl 1, fun ⟨_, drawn, _⟩ => drawn⟩
     | .second, _ => ⟨Nat.le_refl 1, fun ⟨_, drawn, _⟩ => drawn⟩
-  ⟨Web.connected_of_commons _ own sig () bears aliveUser trivial aliveFirst
+  ⟨Web.connected_of_renewable _ own sig () bears aliveUser trivial aliveFirst
       ⟨trivial, Nat.zero_lt_one⟩,
    aliveFalling .first Formation.noConfusion,
    aliveFalling .second Formation.noConfusion,

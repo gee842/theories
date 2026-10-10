@@ -92,9 +92,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-finite-horizon ← becoming-renewal-reading
 
-`formal-reuse` — 两次运行属于该结果的公地过程；分类经 Conditions.dependence.along 读取，与 class_belongs_to_the_run 同一对象。 / Both runs belong to that result's commons process; the classification is read through Conditions.dependence.along, the object of class_belongs_to_the_run.
+`formal-reuse` — 两次运行属于该结果的可更新条件的过程；分类经 Conditions.dependence.along 读取，与 class_belongs_to_the_run 同一对象。 / Both runs belong to that result's renewable process; the classification is read through Conditions.dependence.along, the object of class_belongs_to_the_run.
 
-**Producer output / 上游输出:** 公地过程、其条件可观测量与“分类属于运行”。 / The commons process, its condition observables, and the class belonging to the run.
+**Producer output / 上游输出:** 可更新条件的过程、其条件可观测量与“分类属于运行”。 / The renewable process, its condition observables, and the class belonging to the run.
 
 **Consumer input / 下游输入:** 对每个视界，前缀相同而分类相反的两次运行。 / For every horizon, two runs with the same prefix and opposite classes.
 
@@ -188,7 +188,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-return-grades ← becoming-stepwise-reading
 
-`formal-reuse` — Commons.dip_within_two 与 escalation_undermines_for_every_cycle 复用该结果的 dipping、escalating 运行；Dip.renewing_within_two 复用其 Dip 依存网。 / Commons.dip_within_two and escalation_undermines_for_every_cycle reuse that result's dipping and escalating runs; Dip.renewing_within_two reuses its Dip web.
+`formal-reuse` — Renewable.dip_within_two 与 escalation_undermines_for_every_cycle 复用该结果的 dipping、escalating 运行；Dip.renewing_within_two 复用其 Dip 依存网。 / Renewable.dip_within_two and escalation_undermines_for_every_cycle reuse that result's dipping and escalating runs; Dip.renewing_within_two reuses its Dip web.
 
 **Producer output / 上游输出:** 逐步读法的见证运行与依存网。 / The stepwise reading's witness runs and webs.
 
@@ -212,7 +212,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-stepwise-reading ← becoming-dependence-dynamics
 
-`formal-reuse` — RenewingAt 用 Kept 定义；not_renewing_at_of_broken 由 kept_not_broken 得出；Commons.readings_differ 经 static_consumingIn 与整段读法比较。 / RenewingAt is defined by Kept; not_renewing_at_of_broken follows from kept_not_broken; Commons.readings_differ compares with the whole-run reading through static_consumingIn.
+`formal-reuse` — RenewingAt 用 Kept 定义；not_renewing_at_of_broken 由 kept_not_broken 得出；Renewable.readings_differ 经 static_consumingIn 与整段读法比较。 / RenewingAt is defined by Kept; not_renewing_at_of_broken follows from kept_not_broken; Renewable.readings_differ compares with the whole-run reading through static_consumingIn.
 
 **Producer output / 上游输出:** 依存网、跨步的维持与断裂及其互斥，静态复原。 / Webs, keeping and breaking across a step and their exclusivity, static recovery.
 
@@ -236,7 +236,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-stepwise-reading ← becoming-renewal-reading
 
-`formal-reuse` — Conditions.stepwise_related 证明依存不变时逐步读法的 related 就是该结果 Conditions.valuation 的 related；Commons.readings_differ 与其 living 比较。 / Conditions.stepwise_related proves that with constant dependence the stepwise reading's `related` is that result's Conditions.valuation `related`; Commons.readings_differ compares with its `living`.
+`formal-reuse` — Conditions.stepwise_related 证明依存不变时逐步读法的 related 就是该结果 Conditions.valuation 的 related；Renewable.readings_differ 与其 living 比较。 / Conditions.stepwise_related proves that with constant dependence the stepwise reading's `related` is that result's Conditions.valuation `related`; Renewable.readings_differ compares with its `living`.
 
 **Producer output / 上游输出:** 整段运行上的关系读法 Conditions.valuation。 / The whole-run relational reading Conditions.valuation.
 
@@ -260,11 +260,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## bounded-census-keeps-pace ← ceasing-needs-arising
 
-`formal-reuse` — 复用列出（Listed）、普查定律（Listed.coming_of_ceasing、Web.arising_of_ceasing）、所立者的普查与 dawn 的普查（Dawn.census、World.census_one_way）。 / Reuses listing (Listed), the census law (Listed.coming_of_ceasing, Web.arising_of_ceasing), the census of what stands and the census of dawn (Dawn.census, World.census_one_way).
+`formal-reuse` — 复用列出（Listed）、普查定律（Listed.coming_of_ceasing、Web.arising_of_ceasing）、所立者的普查与 accretion 的普查（Accretion.census、World.census_one_way）。 / Reuses listing (Listed), the census law (Listed.coming_of_ceasing, Web.arising_of_ceasing), the census of what stands and the census of accretion (Accretion.census, World.census_one_way).
 
-**Producer output / 上游输出:** 列出时，不再成立复现需要开始成立复现；dawn 有普查，生起复现而止息不复现。 / Under a listing, ceasing to be recurring needs coming to be recurring; dawn has a census, with arising recurring and ceasing not.
+**Producer output / 上游输出:** 列出时，不再成立复现需要开始成立复现；accretion 有普查，生起复现而止息不复现。 / Under a listing, ceasing to be recurring needs coming to be recurring; accretion has a census, with arising recurring and ceasing not.
 
-**Consumer input / 下游输入:** 列表有界时，逆命题也成立，两者同步；dawn 没有界。 / With the list bounded, the converse holds too and the two recur together; dawn has no bound.
+**Consumer input / 下游输入:** 列表有界时，逆命题也成立，两者同步；accretion 没有界。 / With the list bounded, the converse holds too and the two recur together; accretion has no bound.
 
 **Retained conditions / 保留条件:** 列表有界；可判定。 / A bounded list; decidability.
 
@@ -284,7 +284,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## bounded-census-keeps-pace ← space-and-its-parts
 
-`formal-reuse` — 复用世界、生起复现与止息复现、有限世界、有限世界的规律（World.arising_iff_ceasing）、dawn 与静止的流（Flow.still）。 / Reuses worlds, arising and ceasing recurring, finite worlds, the law of finite worlds (World.arising_iff_ceasing), dawn and the still flow (Flow.still).
+`formal-reuse` — 复用世界、生起复现与止息复现、有限世界、有限世界的规律（World.arising_iff_ceasing）、accretion 与静止的流（Flow.still）。 / Reuses worlds, arising and ceasing recurring, finite worlds, the law of finite worlds (World.arising_iff_ceasing), accretion and the still flow (Flow.still).
 
 **Producer output / 上游输出:** 活动可判定的有限世界中，生起复现恰当止息复现。 / In a finite world whose activity is decided, arising recurs exactly when ceasing does.
 
@@ -332,7 +332,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## ceasing-needs-arising ← coming-and-ceasing-keep-pace
 
-`formal-reuse` — 复用止息（Web.Ceases）、Dawn 与 Dusk 两个见证，以及在任意晚的步为正的量的累加（recurring_accumulates）。 / Reuses ceasing (Web.Ceases), the witnesses Dawn and Dusk, and the accumulation of a quantity positive at arbitrarily late steps (recurring_accumulates).
+`formal-reuse` — 复用止息（Web.Ceases）、Accretion 与 Attrition 两个见证，以及在任意晚的步为正的量的累加（recurring_accumulates）。 / Reuses ceasing (Web.Ceases), the witnesses Accretion and Attrition, and the accumulation of a quantity positive at arbitrarily late steps (recurring_accumulates).
 
 **Producer output / 上游输出:** 有限家族中生起复现恰当止息复现；关系项无限多时两者分离。 / In a finite family arising recurs exactly when ceasing does; with infinitely many relata they separate.
 
@@ -368,11 +368,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## ceasing-needs-arising ← space-and-its-parts
 
-`formal-reuse` — 复用世界、生起复现与止息复现、dawn 与 dusk 及其分离（separate）。 / Reuses worlds, arising and ceasing recurring, dawn and dusk and their separation (separate).
+`formal-reuse` — 复用世界、生起复现与止息复现、accretion 与 attrition 及其分离（separate）。 / Reuses worlds, arising and ceasing recurring, accretion and attrition and their separation (separate).
 
 **Producer output / 上游输出:** 关系项无限多时，生起复现与止息复现可以各自出现。 / With infinitely many relata, arising and ceasing can each recur without the other.
 
-**Consumer input / 下游输入:** dusk 没有普查由本规律推出。 / That dusk has no census follows from this law.
+**Consumer input / 下游输入:** attrition 没有普查由本规律推出。 / That attrition has no census follows from this law.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -608,7 +608,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## condition-correspondence-discipline ← metaethical-core-characterization
 
-`formal-reuse` — significant_iff_of_commons 直接调用 Valuation.significant_iff，所需的连通由 connected_of_commons 给出。 / significant_iff_of_commons applies Valuation.significant_iff directly, with connection supplied by connected_of_commons.
+`formal-reuse` — significant_iff_of_renewable 直接调用 Valuation.significant_iff，所需的连通由 connected_of_renewable 给出。 / significant_iff_of_renewable applies Valuation.significant_iff directly, with connection supplied by connected_of_renewable.
 
 **Producer output / 上游输出:** 连通整体上 G0 的刻画。 / G0's characterization on a connected whole.
 
@@ -648,9 +648,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## continued-change-needs-openness ← generation-is-replenishment
 
-`formal-reuse` — 复用上升降低存量（rise_lowers_on）、开始作为条件而在即上升（ComesToStand.rises）与 Handing 的见证。 / Reuses that a rise lowers the stock (rise_lowers_on), that coming to stand is a rise (ComesToStand.rises), and the Handing witness.
+`formal-reuse` — 复用上升降低存量（rise_lowers_on）、开始作为条件而在即上升（ComesToStand.rises）与 Shuttle 的见证。 / Reuses that a rise lowers the stock (rise_lowers_on), that coming to stand is a rise (ComesToStand.rises), and the Shuttle witness.
 
-**Producer output / 上游输出:** 被耗散的家族中成员上升时存量下降；Handing 的两侧来回传递水平，生起不息。 / A member rising lowers a family's stock under dissipation; the sides of Handing hand a standing back and forth and keep arising without end.
+**Producer output / 上游输出:** 被耗散的家族中成员上升时存量下降；Shuttle 的两侧来回传递水平，生起不息。 / A member rising lowers a family's stock under dissipation; the sides of Shuttle hand a standing back and forth and keep arising without end.
 
 **Consumer input / 下游输入:** 上升使总水平下降；exposed 中的两侧。 / A rise lowers the total standing; the sides in exposed.
 
@@ -792,7 +792,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## counting-under-enclosure ← whole-law-of-counting
 
-`formal-reuse` — 复用计数表与队列（Tally、Queue.holds、Queue.line、Queue.listed、Queue.counts、Queue.ceasings_eq、Queue.comings_eq、Queue.kept_end）、逐点、World.CountsObey、counting_binds_jointly 与队首的引理（Tended.front、Tended.occupied）。 / Reuses tallies and queues (Tally, Queue.holds, Queue.line, Queue.listed, Queue.counts, Queue.ceasings_eq, Queue.comings_eq, Queue.kept_end), Pointwise, World.CountsObey, counting_binds_jointly and the front lemmas (Tended.front, Tended.occupied).
+`formal-reuse` — 复用计数表与队列（Tally、Queue.holds、Queue.line、Queue.listed、Queue.counts、Queue.ceasings_eq、Queue.comings_eq、Queue.kept_end）、逐点、World.CountsObey、counting_binds_jointly 与队首的引理（OpenQueue.front、OpenQueue.occupied）。 / Reuses tallies and queues (Tally, Queue.holds, Queue.line, Queue.listed, Queue.counts, Queue.ceasings_eq, Queue.comings_eq, Queue.kept_end), Pointwise, World.CountsObey, counting_binds_jointly and the front lemmas (OpenQueue.front, OpenQueue.occupied).
 
 **Producer output / 上游输出:** 全部八个前提之下计数的规律恰是计数表与没有关系项活跃的一步上没有生起。 / Under all eight premises the laws of counting are the tally and that nothing arises across a step at which nothing is active.
 
@@ -852,11 +852,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## derived-extent-limits ← continuing-self-fed-from-beyond
 
-`formal-reuse` — 复用 FedFromBeyond 与 Lone.supply_not_source；照管者的供给每步都从其外得到供给（Totalizer.fed）。 / Reuses FedFromBeyond and Lone.supply_not_source; the keeper's supply is fed from beyond at every step (Totalizer.fed).
+`formal-reuse` — 复用 FedFromBeyond 与 Lone.fed_not_recurring；清除者的资源每步都从其外得到供给（Clearing.fed）。 / Reuses FedFromBeyond and Lone.fed_not_recurring; the clearer's resource is fed from beyond at every step (Clearing.fed).
 
 **Producer output / 上游输出:** 从其外得到供给的定义与不必有来源条件复现的见证。 / Being fed from beyond, and the witness that no source condition need recur.
 
-**Consumer input / 下游输入:** 照管者满足这一要求。 / The keeper meets this requirement.
+**Consumer input / 下游输入:** 清除者满足这一要求。 / The clearer meets this requirement.
 
 **Retained conditions / 保留条件:** 平衡；耗散。 / Balance; dissipation.
 
@@ -864,11 +864,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## derived-extent-limits ← own-count-misses-joint-excess
 
-`formal-reuse` — 复用 WithinJoint；照管者对其供给联合地在所给之内。 / Reuses WithinJoint; the keeper takes from its supply jointly within what is given.
+`formal-reuse` — 复用 WithinJoint；清除者对其资源联合地在所给之内。 / Reuses WithinJoint; the clearer takes from its resource jointly within what is given.
 
 **Producer output / 上游输出:** 联合地在所给之内的定义。 / Taking jointly within what is given.
 
-**Consumer input / 下游输入:** 照管者满足这一要求。 / The keeper meets this requirement.
+**Consumer input / 下游输入:** 清除者满足这一要求。 / The clearer meets this requirement.
 
 **Retained conditions / 保留条件:** 平衡。 / Balance.
 
@@ -892,7 +892,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 逐步读法的侵蚀。 / Undermining on the stepwise reading.
 
-**Consumer input / 下游输入:** 照管者在第一步的事件侵蚀另一个形成。 / The keeper's event at step one undermines the other formation.
+**Consumer input / 下游输入:** 清除者在第一步的事件侵蚀栖居者。 / The clearer's event at step one undermines the dweller.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -1540,9 +1540,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## more-needs-renewers ← unceasing-generation-needs-renewal
 
-`formal-reuse` — 复用 total、stock、RenewedBy、Arises、Unceasing 与 Bloom 的依存网；Balances.renewedBy 推出该结果的对应前提 RenewedBy。 / Reuses total, stock, RenewedBy, Arises, Unceasing and Bloom's web; Balances.renewedBy derives that result's correspondence premise RenewedBy.
+`formal-reuse` — 复用 total、stock、RenewedBy、Arises、Unceasing 与 Oscillation 的依存网；Balances.renewedBy 推出该结果的对应前提 RenewedBy。 / Reuses total, stock, RenewedBy, Arises, Unceasing and Oscillation's web; Balances.renewedBy derives that result's correspondence premise RenewedBy.
 
-**Producer output / 上游输出:** 有限家族的总水平、生起、不息与更新由形成造成；开花的依存网。 / Finite families' total level, arising, unceasing generation and renewal made by formations; the bloom's web.
+**Producer output / 上游输出:** 有限家族的总水平、生起、不息与更新由形成造成；Oscillation 的依存网。 / Finite families' total level, arising, unceasing generation and renewal made by formations; the web of Oscillation.
 
 **Consumer input / 下游输入:** 消耗与补充的平衡、更多与层级。 / The balance of depletion and replenishment, more and the hierarchy.
 
@@ -1552,7 +1552,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## more-needs-renewers ← becoming-dependence-dynamics
 
-`formal-reuse` — 流平衡的是依存网；Garden 用 Dependent。 / Flows balance webs of dependence; Garden uses Dependent.
+`formal-reuse` — 流平衡的是依存网；Expansion 用 Dependent。 / Flows balance webs of dependence; Expansion uses Dependent.
 
 **Producer output / 上游输出:** 依存网与 Dependent。 / Webs and Dependent.
 
@@ -1988,9 +1988,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## space-and-its-parts ← coming-and-ceasing-keep-pace
 
-`formal-reuse` — 复用止息（Ceases）、形成有限多时生起不息恰当止息不息（unceasing_iff）与 Dawn、Dusk。 / Reuses ceasing (Ceases), that with finitely many formations arising is unceasing exactly when ceasing is (unceasing_iff), and Dawn and Dusk.
+`formal-reuse` — 复用止息（Ceases）、形成有限多时生起不息恰当止息不息（unceasing_iff）与 Accretion、Attrition。 / Reuses ceasing (Ceases), that with finitely many formations arising is unceasing exactly when ceasing is (unceasing_iff), and Accretion and Attrition.
 
-**Producer output / 上游输出:** 形成有限多且活动可判定时，生起不息恰当止息不息；Dawn 与 Dusk 各只有一方。 / With finitely many formations and activity decided, arising is unceasing exactly when ceasing is; Dawn and Dusk each have only one.
+**Producer output / 上游输出:** 形成有限多且活动可判定时，生起不息恰当止息不息；Accretion 与 Attrition 各只有一方。 / With finitely many formations and activity decided, arising is unceasing exactly when ceasing is; Accretion and Attrition each have only one.
 
 **Consumer input / 下游输入:** 活动可判定的有限世界中生起复现恰当止息复现；无限世界中两者分离，且其无限由此推出。 / In a finite world whose activity is decided arising recurs exactly when ceasing does; in infinite worlds they separate, and their infinity follows.
 
@@ -2000,7 +2000,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## space-and-its-parts ← generation-is-replenishment
 
-`formal-reuse` — 复用 generation_ceases 与 Handing、Kindling、Flicker 三个见证。 / Reuses generation_ceases and the witnesses Handing, Kindling and Flicker.
+`formal-reuse` — 复用 generation_ceases 与 Shuttle、Throughput、Flicker 三个见证。 / Reuses generation_ceases and the witnesses Shuttle, Throughput and Flicker.
 
 **Producer output / 上游输出:** 有限的关系项、平衡与耗散之下，体现的关系项不在任意晚的步生起。 / With finitely many relata, under balance and dissipation, embodied relata do not arise at arbitrarily late steps.
 
@@ -2014,9 +2014,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用一类读法（roles 与其迁移引理）、体现与 Mutualism。 / Reuses the one-kind reading (roles and its transfer lemmas), embodiment and Mutualism.
 
-**Producer output / 上游输出:** 两类读法嵌入一类读法，生起不息在其中不变；互利者的每个事件都活；Handing 的两侧来回传递一个水平。 / The two-kind reading embeds in the one-kind reading, keeping unceasing arising; every event of the mutualists is living; the sides of Handing hand one standing back and forth.
+**Producer output / 上游输出:** 两类读法嵌入一类读法，生起不息在其中不变；互利者的每个事件都活；Shuttle 的两侧来回传递一个水平。 / The two-kind reading embeds in the one-kind reading, keeping unceasing arising; every event of the mutualists is living; the sides of Shuttle hand one standing back and forth.
 
-**Consumer input / 下游输入:** 每个两类的流与网都是一个世界；有限世界中，生起不复现而每个事件都活；grazing 与 leaking 以 Handing 为基础。 / Every two-kind flow and web is a world; a finite world without arising recurring in which every event is living; grazing and leaking build on Handing.
+**Consumer input / 下游输入:** 每个两类的流与网都是一个世界；有限世界中，生起不复现而每个事件都活；grazing 与 leaking 以 Shuttle 为基础。 / Every two-kind flow and web is a world; a finite world without arising recurring in which every event is living; grazing and leaking build on Shuttle.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -2132,9 +2132,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-renewal-reading
 
-`formal-reuse` — 总水平原则是该结果的下降原则 falls_finitely 用于有限家族的总和；renewal_without_generation 复用其公地过程与 sharing 运行。 / The total-level principle is that result's descent principle falls_finitely applied to a finite family's total; renewal_without_generation reuses its commons process and sharing run.
+`formal-reuse` — 总水平原则是该结果的下降原则 falls_finitely 用于有限家族的总和；renewal_without_generation 复用其可更新条件的过程与 withinRenewal 运行。 / The total-level principle is that result's descent principle falls_finitely applied to a finite family's total; renewal_without_generation reuses its renewable process and its run within renewal.
 
-**Producer output / 上游输出:** 下降原则与公地过程。 / The descent principle and the commons process.
+**Producer output / 上游输出:** 下降原则与可更新条件的过程。 / The descent principle and the renewable process.
 
 **Consumer input / 下游输入:** 有限家族只能被有限次事件消耗；更新而无生起的见证。 / A finite family is depleted by only finitely many events; the witness of renewal without arising.
 
@@ -2156,11 +2156,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-stepwise-reading
 
-`formal-reuse` — Bloom.readings 用逐步的侵蚀与 MetAbove.now。 / Bloom.readings uses stepwise undermining and MetAbove.now.
+`formal-reuse` — Oscillation.readings 用逐步的侵蚀与 MetAbove.now。 / Oscillation.readings uses stepwise undermining and MetAbove.now.
 
 **Producer output / 上游输出:** UnderminingAt 与 MetAbove。 / UnderminingAt and MetAbove.
 
-**Consumer input / 下游输入:** 逐步读法扣下每一次开花。 / The stepwise reading withholds each bloom.
+**Consumer input / 下游输入:** 逐步读法扣下振荡者的每一次生起。 / The stepwise reading withholds each arising of the oscillator.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
@@ -2168,11 +2168,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-return-grades
 
-`formal-reuse` — Bloom.readings 用两步周期的读法 RenewingInWithin。 / Bloom.readings uses the reading over cycles of two, RenewingInWithin.
+`formal-reuse` — Oscillation.readings 用两步周期的读法 RenewingInWithin。 / Oscillation.readings uses the reading over cycles of two, RenewingInWithin.
 
 **Producer output / 上游输出:** RenewingInWithin。 / RenewingInWithin.
 
-**Consumer input / 下游输入:** 两步周期的读法记入开花。 / The reading over cycles of two credits the bloom.
+**Consumer input / 下游输入:** 两步周期的读法记入振荡者。 / The reading over cycles of two credits the oscillator.
 
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 

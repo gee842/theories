@@ -14,7 +14,7 @@
 
 ## 覆盖范围 / Coverage
 
-本次目录包含 **13,122 个 `.lean` 路径、1,980 份不同字节内容**；其中 1,075 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **13,122 `.lean` paths and 1,980 distinct byte contents**, including 1,075 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+本次目录包含 **13,278 个 `.lean` 路径、2,044 份不同字节内容**；其中 1,097 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **13,278 `.lean` paths and 2,044 distinct byte contents**, including 1,097 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | 文件角色 / File role | 路径数 / Paths |
 |---|---:|
@@ -22,7 +22,7 @@
 | 开发尝试 / Development attempt | 452 |
 | 历史草稿 / Historical draft | 3 |
 | 导入原件 / Imported archive | 23 |
-| 构建、验证与冻结副本 / Build, verification and frozen copy | 12,046 |
+| 构建、验证与冻结副本 / Build, verification and frozen copy | 12,202 |
 | 当前工作源 / Working source | 584 |
 
 下方当前源与审计入口中，共扫描到 **12,149 个显式 theorem/lemma 声明位置**、19,965 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **12,149 explicit theorem/lemma occurrences** and 19,965 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.

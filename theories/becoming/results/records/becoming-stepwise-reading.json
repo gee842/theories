@@ -39,20 +39,20 @@
   "aliases": [
     "Becoming.Web.renewing_at_active",
     "Becoming.Web.not_renewing_at_of_broken",
-    "Becoming.Commons.stepwise_credits_before_escalation",
-    "Becoming.Commons.dip_breaks_without_consuming",
+    "Becoming.Renewable.stepwise_credits_before_escalation",
+    "Becoming.Renewable.dip_breaks_without_consuming",
     "Becoming.Dip.renewing_at_each_step_not_in_run",
     "Becoming.Web.connected_of_common",
     "Becoming.Web.significant_iff_of_common",
     "Becoming.Web.breaking_relates",
     "Becoming.Web.valuing_breaking_reaches",
     "Becoming.Conditions.stepwise_related",
-    "Becoming.Commons.readings_differ",
+    "Becoming.Renewable.readings_differ",
     "Becoming.Web.BreakingOn.undermining",
     "Becoming.Web.RenewingAt.not_undermining",
     "Becoming.Web.RenewingAt.not_breaking",
-    "Becoming.Commons.broken_formation",
-    "Becoming.Commons.drawing_after_loss",
+    "Becoming.Renewable.broken_formation",
+    "Becoming.Renewable.drawing_after_loss",
     "Becoming.Web.living_iff_relations",
     "Becoming.Mixed.one_event_two_relations",
     "Becoming.Web.MetAbove.now",
@@ -68,8 +68,8 @@
       "id": "becoming-dependence-dynamics",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "RenewingAt 用 Kept 定义；not_renewing_at_of_broken 由 kept_not_broken 得出；Commons.readings_differ 经 static_consumingIn 与整段读法比较。",
-        "en": "RenewingAt is defined by Kept; not_renewing_at_of_broken follows from kept_not_broken; Commons.readings_differ compares with the whole-run reading through static_consumingIn."
+        "zh": "RenewingAt 用 Kept 定义；not_renewing_at_of_broken 由 kept_not_broken 得出；Renewable.readings_differ 经 static_consumingIn 与整段读法比较。",
+        "en": "RenewingAt is defined by Kept; not_renewing_at_of_broken follows from kept_not_broken; Renewable.readings_differ compares with the whole-run reading through static_consumingIn."
       },
       "interface": {
         "output": {
@@ -114,8 +114,8 @@
       "id": "becoming-renewal-reading",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "Conditions.stepwise_related 证明依存不变时逐步读法的 related 就是该结果 Conditions.valuation 的 related；Commons.readings_differ 与其 living 比较。",
-        "en": "Conditions.stepwise_related proves that with constant dependence the stepwise reading's `related` is that result's Conditions.valuation `related`; Commons.readings_differ compares with its `living`."
+        "zh": "Conditions.stepwise_related 证明依存不变时逐步读法的 related 就是该结果 Conditions.valuation 的 related；Renewable.readings_differ 与其 living 比较。",
+        "en": "Conditions.stepwise_related proves that with constant dependence the stepwise reading's `related` is that result's Conditions.valuation `related`; Renewable.readings_differ compares with its `living`."
       },
       "interface": {
         "output": {
@@ -187,8 +187,8 @@
     {
       "id": "unceasing-generation-needs-renewal",
       "detail": {
-        "zh": "逐步读法扣下一个不息地再生起的形成的每一次开花（Bloom.readings），两步周期的读法记入它：“不损”的读法与继续生成分离。",
-        "en": "The stepwise reading withholds each bloom of a formation that arises again and again (Bloom.readings), while the reading over cycles of two credits it: the “no harm” readings and further generation come apart."
+        "zh": "逐步读法扣下振荡者（一个不息地再生起的形成）的每一次生起（Oscillation.readings），两步周期的读法记入它：“不损”的读法与继续生成分离。",
+        "en": "The stepwise reading withholds each arising of the oscillator, a formation that arises again and again (Oscillation.readings), while the reading over cycles of two credits it: the “no harm” readings and further generation come apart."
       }
     }
   ],
@@ -196,22 +196,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "detail": {
-        "zh": "两个方向的分歧（Commons.stepwise_credits_before_escalation、Commons.dip_breaks_without_consuming）与 Dip.renewing_at_each_step_not_in_run：逐步读法不是整段读法的细化，整段更新也不是自身各步的合取。",
-        "en": "Divergence in both directions (Commons.stepwise_credits_before_escalation, Commons.dip_breaks_without_consuming) and Dip.renewing_at_each_step_not_in_run: the stepwise reading does not refine the whole-run reading, and whole-run renewal is not the conjunction of a formation's steps."
+        "zh": "两个方向的分歧（Renewable.stepwise_credits_before_escalation、Renewable.dip_breaks_without_consuming）与 Dip.renewing_at_each_step_not_in_run：逐步读法不是整段读法的细化，整段更新也不是自身各步的合取。",
+        "en": "Divergence in both directions (Renewable.stepwise_credits_before_escalation, Renewable.dip_breaks_without_consuming) and Dip.renewing_at_each_step_not_in_run: the stepwise reading does not refine the whole-run reading, and whole-run renewal is not the conjunction of a formation's steps."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "detail": {
-        "zh": "“在更新之内”不作为 living：被断裂者在断裂之步不在更新之内（Commons.broken_formation；审查 Q1），从未被满足的依存使所有参与者都不在更新之内（审查 Q2）。",
-        "en": "“Within renewal” is not taken as living: the broken formation is not within renewal at the breaking step (Commons.broken_formation; review Q1), and a requirement never met puts no participant within renewal (review Q2)."
+        "zh": "“在更新之内”不作为 living：被断裂者在断裂之步不在更新之内（Renewable.broken_formation；审查 Q1），从未被满足的依存使所有参与者都不在更新之内（审查 Q2）。",
+        "en": "“Within renewal” is not taken as living: the broken formation is not within renewal at the breaking step (Renewable.broken_formation; review Q1), and a requirement never met puts no participant within renewal (review Q2)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "detail": {
-        "zh": "“不断裂”（审查 Q12）不作为 living：损失之后继续的汲取不再断裂任何依存，于是被它记入，虽然在公地见证中它使条件回不来（Commons.drawing_after_loss）。",
-        "en": "“Not breaking” (review Q12) is not taken as living: drawing after a loss breaks no further dependence and so is credited by it, though in the commons witness it keeps the condition from returning (Commons.drawing_after_loss)."
+        "zh": "“不断裂”（审查 Q12）不作为 living：损失之后继续的汲取不再断裂任何依存，于是被它记入，虽然在 Renewable 见证中它使条件回不来（Renewable.drawing_after_loss）。",
+        "en": "“Not breaking” (review Q12) is not taken as living: drawing after a loss breaks no further dependence and so is credited by it, though in the `Renewable` witness it keeps the condition from returning (Renewable.drawing_after_loss)."
       }
     },
     {
@@ -304,14 +304,14 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The whole-run, stepwise and relation-level readings are disclosed reading choices; none is proved to be the right reading of 生生. The readings are relative to a run and include no component of further generation; tenure, undermining and the stepwise living depend on identity across steps (identity-across-steps): a naming that keeps continuing dependences removes no undermining, and succession can add undermining; no causal or difference-making attribution is made, and undermining involves neither the amount nor the effect of a draw; the correspondence discipline for conditions is in condition-correspondence-discipline."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T075031.720357Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明这一读法对跨步同一的依赖，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这一注明，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T075031.720357Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the reading's dependence on identity across steps be noted, see §19; a sixth (BECOMING-P13-P14-P12B-REVIEW.md) accepted that note, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T083222.285294Z）：Becoming.Dependence 中逐步读法的定理与 Becoming.Metaethics“The stepwise reading”一节的 9 项定理全部空依赖。控制例“逐步读法由共同条件连通且有活的事件”不计为新定理；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第二次独立审查（BECOMING-P7-REVIEW.md）修正了侵蚀的定义，见 §11；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）再次修正它，改为比较那一步的所需，见 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）把它改为最小形式，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明这一读法对跨步同一的依赖，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这一注明，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T083222.285294Z): the stepwise theorems of Becoming.Dependence and the 9 theorems of the “The stepwise reading” section of Becoming.Metaethics all have empty axiom reports. The control that the stepwise reading is connected by a common condition and has a living event is not counted; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a second independent review (BECOMING-P7-REVIEW.md) corrected the definition of undermining, see §11; a third (BECOMING-P8-P9-P7B-REVIEW.md) corrected it again to compare the need at that step, see §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) changed it to the minimum form, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the reading's dependence on identity across steps be noted, see §19; a sixth (BECOMING-P13-P14-P12B-REVIEW.md) accepted that note, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "4ab1143c29ddcfe10c46635f87c690d527dae576bf8cf32d6ab90b6a14ffd7e8",
+      "sha256": "caa6b40a98353117936b19fe65fbbe64b95fdc3a0f3dfc56740adbc6bbbc3980",
       "declarations": [
         "Becoming.Web.valuation",
         "Becoming.Web.connected_of_common",
@@ -319,7 +319,7 @@
         "Becoming.Web.breaking_relates",
         "Becoming.Web.valuing_breaking_reaches",
         "Becoming.Conditions.stepwise_related",
-        "Becoming.Commons.readings_differ",
+        "Becoming.Renewable.readings_differ",
         "Becoming.Conditions.valuation",
         "Becoming.Valuation.significant_iff",
         "Becoming.Web.relations",
@@ -332,15 +332,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "fcfedfc0f5268d6150e37f0218fd02a903a084063d2d3f2e182514a33d52b279",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
       "declarations": [
         "Becoming.Web.RenewingAt",
         "Becoming.Web.renewing_at_active",
         "Becoming.Web.not_renewing_at_of_broken",
-        "Becoming.Commons.escalating",
-        "Becoming.Commons.stepwise_credits_before_escalation",
-        "Becoming.Commons.dipping",
-        "Becoming.Commons.dip_breaks_without_consuming",
+        "Becoming.Renewable.escalating",
+        "Becoming.Renewable.stepwise_credits_before_escalation",
+        "Becoming.Renewable.dipping",
+        "Becoming.Renewable.dip_breaks_without_consuming",
         "Becoming.Dip.web",
         "Becoming.Dip.renewing_at_each_step_not_in_run",
         "Becoming.Web.BreakingOn",
@@ -350,9 +350,9 @@
         "Becoming.Web.BreakingOn.undermining",
         "Becoming.Web.RenewingAt.not_undermining",
         "Becoming.Web.RenewingAt.not_breaking",
-        "Becoming.Commons.broken_formation",
-        "Becoming.Commons.pausing",
-        "Becoming.Commons.drawing_after_loss",
+        "Becoming.Renewable.broken_formation",
+        "Becoming.Renewable.pausing",
+        "Becoming.Renewable.drawing_after_loss",
         "Becoming.Web.MetAbove",
         "Becoming.Web.MetAbove.now",
         "Becoming.NewNeed.web",
@@ -370,19 +370,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "3ae408a8e7a8950fbd23823d663b0bf6106057eea1e935c29a809484502d69c1",
+      "sha256": "2f5e70aaefddc616e79892f93e6762b995939c82b70352751ef7a31c79f35740",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "142f7ea7b863e0284b31e08909d800c99c9c0b18afaa090675b708ecab4ed9be",
+      "sha256": "b7fbea7aace444c3ef4e487fad7a43fb9ec277d59d1a1e01b7595e531e248b49",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "98b0af5d0802f66bf6f47b2e09c56924ef06dd486b7424e05bad4ebcff961562",
+      "sha256": "4ff5a215dccdee5c66336f0f0954d887f9b7e473a8a1ccd533d39e4897fec88a",
       "declarations": []
     },
     {
@@ -400,7 +400,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "fd6264879ce9bbb1c6257e77db60272cdc7a4ab39f7b20296096cb10c5247b0c",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
       "declarations": [
         "Becoming.Pool.mixedRun",
         "Becoming.Pool.within_share_undermines"
@@ -638,6 +638,10 @@
     {
       "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
       "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P36：验证范围重新指向合并检查器回执 20261010T083222.285294Z 与外围回执 20261010T084107.973758Z（见证与声明改用形式的、系统与科学的名称，新旧对照见统一计划 §10；陈述、证明与各模块的定理数不变）。断言不变。本记录中的见证与声明名称随之更新。",
+      "en": "2026-10-10 P36: validation scope re-pointed to consolidated receipt 20261010T083222.285294Z and periphery receipt 20261010T084107.973758Z (witnesses and declarations take formal, systems and scientific names, with the old-to-new table in the unification plan §10; statements, proofs and each module's theorem count are unchanged). The claim is unchanged. This record's witness and declaration names are updated accordingly."
     }
   ]
 }

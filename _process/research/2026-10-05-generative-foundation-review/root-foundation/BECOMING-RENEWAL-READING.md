@@ -3044,6 +3044,43 @@ Integration: 计划 P35；关闭 whole-law-of-counting 的下一步“有限世�
 
 **边界。** 无伦理谓词，不评价生起、止息或静止；只对离散步与每步有限的活动陈述；变化界以被围住时所立者的总水平为界；水平与依存的计数在前提之下、每个前提都起约束时的全部计数规律没有陈述；名称（occurrences、ChangeBound、EnclosedQueue、enclosedQueue、FiniteQueue、finiteQueue、placesBelow、Swap、replaced）是 AI 按 Ren 的命名准则（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）所选：零公理部分取描述抽象动力学的形式词，草稿中的“预算”（budget）是金融的词，提交前改为“变化界”（`ChangeBound`）与“被围住的队列”（`EnclosedQueue`）。本节尚未经独立审查。
 
+## 50. 见证改名（P36）
+
+2026-10-10。Ren 指示：先求不用公理的最强陈述，作为第一部分；再加一条公理，作为第二部分。Ren 同时把名称交给 AI，标准有四条：
+- 最精确的词；
+- 零公理部分用描述抽象动力学的形式词；
+- 偏好科学与系统的词；
+- 社会与金融的词不作首选。
+
+见[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)。P35 已按这些标准命名它新增的声明。本节把核心中其余见证的名称改为描述其动力学的名称，作为计划 P36（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)，对照表在那里）。
+
+```text
+Result(s): 不新增结果；改名所及的记录在其历史中注明
+Delta: 只改名：见证、关系项、世界与以其命名的声明；陈述、证明与计数不变
+Supplied premises / correspondence: 无新增
+Evidence: 合并检查器回执 20261010T083222.285294Z（1356 项定理、2161 项声明审计，全部源声明公理报告为空）；外围回执 20261010T084107.973758Z
+Boundary: 名称是 AI 按 Ren 的命名标准所选，读法仍由 Ren 选择；第二部分的词汇等第二部分的公理定下后再看；
+          外围定律族与命名空间 Generative 保留原名
+Integration: 计划 P36；其后 P36b（生成不译作 generative）、P37（区域）、P38（第一部分的总陈述与章节重组）
+```
+
+**原则。**
+
+- **名称说所述的动力学。** 举例：
+  - `Shuttle`：两侧来回传递一个单位；
+  - `Throughput`：同一传递每步烧掉新燃料；
+  - `Lossless`：取走又还回，什么都不损失；
+  - `OpenQueue`：队首与无界的地交换的队列，与 P35 的 `EnclosedQueue` 相对；
+  - `Renewable`：每步更新一个单位的条件，它的两次运行是在更新之内取用（`withinRenewal`）与超出更新取用（`beyondRenewal`）。
+- **换掉社会、金融与诗化的词，保留科学的名称。**
+  - 换掉的社会与金融的词：递交、花费、照管、公地、共享与取胜、陌生者、人群、总体化者、照管者、礼物、继承者。
+  - 换掉的诗化的词：太阳、黎明、黄昏、引火、余烬、花园、开花。
+  - 科学与生态学的名称保留：孵化、互利、捕食、世代、种子库、啃食、饥荒、级联、潮汐、更替、世系、接续、休眠等。
+- **`Totalizer` 改为 `Clearing`。** `Totalizer` 来自 Ren 关于 totalizing 的说法，换成 `Clearing` 也合于旧规：形式部分不以 Ren 的用语命名。它的定理 `careful` 改为 `undermines_within_renewal`，名字说的就是它所陈述的：在更新之内取用自身资源的形成，仍侵蚀栖居者。
+- **历史与证据保留原名。** §1–§49、旧回执、审查文件与探针都保留原名，因为它们记载的是那些回执检查时的状态。读它们时，按对照表从旧名读到新名。
+
+**检查。** 改名后的核心先在暂存区编译，再由合并检查器重查（回执 20261010T083222.285294Z），外围桥接对这个核心重查（20261010T084107.973758Z）。定理与声明审计的数目与 P35 相同。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3383,4 +3420,30 @@ The package now has 1131 theorems and 1826 declaration audits, over a core closu
 
 **P35: counting under enclosure and in finite worlds.** P34 left the laws of counting under enclosure and in finite worlds open. Enclosure bounds change: in a world with a census whose relata are embodied, balanced and dissipative, with every step from `T` on enclosed, the relata active at any later step, together with the steps since `T` at which something arose or ceased, number at most the total standing at `T` (`World.enclosure_bounds_change`), since that total never rises across an enclosed step and falls at every step of change. A change bound from some step is one from the first (`changeBound_iff_zero`), and within it change does not recur (`ChangeBound.not_recurring`). Conversely an enclosed queue, whose front holds what the bound leaves beyond one unit for each member and exchanges only within the queue, has every step enclosed and meets all eight premises wherever a change bound from the first step holds of its counts and nothing joins an empty queue (`World.enclosedQueue_premised`). So under the eight, with every step from some step on enclosed, the laws of counting are the tally, that nothing arises across a step at which nothing is active, and a change bound from the first step (`World.enclosed_counting`). The queue never reaches past its `B + B * B`-th member (`ChangeBound.reach`), so on those places it is a finite world meeting the eight (`World.finiteQueue_premised`), in which dissipation binds and the bound is attained (`World.finite_dissipation_binds`, `World.replaced_attains`): finite worlds have the same laws of counting (`World.finite_counting`, `World.enclosed_iff_finite_counting`). That change does not recur cannot be strengthened to a step after which nothing arises in every such world without the limited principle of omniscience (`World.lpo_of_finite_ends`). Activity needing support and bounded transmission hold idly in the queue, as in P34's witness; the laws of counting where every premise binds are not stated. The names follow Ren's naming criteria of 10 October ([source](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)): the drafts' ‘budget’, a financial word, became the change bound (`ChangeBound`) and the enclosed queue (`EnclosedQueue`) before commit. New record: counting-under-enclosure.
 
-The package now has 1356 theorems and 2161 declaration audits, over a core closure of 31 modules and a package of 29, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in §47.1–47.4 and in section 48, and section 49, have not yet been independently reviewed. The periphery bridge passed against this core (receipt 20261010T075308.552033Z).
+**P36: witness names.** Ren asked for the strongest claim without axiom as Part I and one axiom as Part II. Ren delegated names under four criteria:
+- the most precise word;
+- in the zero-axiom part, formal words describing the abstract dynamics;
+- scientific and systems words;
+- social and financial words not the first choice.
+
+P36 renames the core's remaining witnesses accordingly, together with the declarations named after them:
+- `Handing` → `Shuttle`
+- `Kindling`/`Ember` → `Throughput`/`EmbodiedThroughput`
+- `Spending` → `SelfDrawing`
+- `Keeping` → `Lossless`
+- `Tended` → `OpenQueue`, the counterpart of `EnclosedQueue`
+- `Commons` → `Renewable`, with the runs `withinRenewal` and `beyondRenewal`
+- `Totalizer` → `Clearing`, with clearer, dweller and resource, and `careful` → `undermines_within_renewal`
+- `sun` → `source`
+- `Dawn`/`Dusk` → `Accretion`/`Attrition`
+- `Garden` → `Expansion`
+- `Bloom` → `Oscillation`
+- `Stranger` → `Unrelated`
+- `Crowd` → `Unrecorded`
+- heir/elder → successor/predecessor
+
+The full table is in plan section 10.
+
+Statements, proofs and counts are unchanged: receipt 20261010T083222.285294Z has 1356 theorems and 2161 declaration audits, and the periphery receipt is 20261010T084107.973758Z. Historical sections, receipts and reviews keep the old names and are read through the table. Part II vocabulary waits for the axiom Ren chooses.
+
+The package now has 1356 theorems and 2161 declaration audits, over a core closure of 31 modules and a package of 29, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in §47.1–47.4 and in section 48, and sections 49 and 50, have not yet been independently reviewed. The periphery bridge passed against this core (receipt 20261010T084107.973758Z).

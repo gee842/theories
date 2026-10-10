@@ -56,10 +56,10 @@ Results:
 * Arising through another's giving. In a balanced flow in which only active formations
   give, an embodied relatum arises only as another active formation gives to it
   (`Embodied.arises_given`). The formation that gives need not be embodied, bear on
-  itself or depend on anything (`SunSeed`); where only embodied relata give, a premise
+  itself or depend on anything (`SourceSeed`); where only embodied relata give, a premise
   the representation supplies, it is embodied too (`Embodied.arises_from_embodied`). A
-  sun standing at one exactly while active meets that premise and depends on nothing
-  (`EmbodiedSun`): being embodied is a reading of standing, not of being a life.
+  source standing at one exactly while active meets that premise and depends on nothing
+  (`EmbodiedSource`): being embodied is a reading of standing, not of being a life.
 * Generation is replenishment. An embodied relatum comes to stand as it arises: its
   standing rises from nothing (`Embodied.comesToStand`). So the laws of coming to stand
   in `Becoming.Flow` and `Becoming.Dissipation` apply to its arising. In a balanced flow
@@ -80,7 +80,7 @@ Results:
   steps (`generation_ceases_on`). So a finite family without repetition in which embodied
   members arise at arbitrarily late steps is not closed from any step on
   (`generation_opens`), though the exchange that opens it need not touch it
-  (`SprayHanding`); enclosed around from some step on, it draws in: at arbitrarily late
+  (`SprayShuttle`); enclosed around from some step on, it draws in: at arbitrarily late
   steps some relatum gives to it and takes from beyond it (`generation_draws_in`). If
   finitely many relata are all there is, embodied relata do not arise at arbitrarily
   late steps (`generation_ceases`). What these use of embodiment is that arising is a
@@ -97,12 +97,12 @@ Results:
   before, closed across the step, with nothing falling (`Brood.rise_without_fall`).
 * Each premise of `generation_ceases` is needed. Two sides handing one standing back and
   forth, each embodied, bear unceasing generation in a closed world of two relata
-  without dissipation (`Handing`). Burning a fresh fuel at every step, they bear it under
+  without dissipation (`Shuttle`). Burning a fresh fuel at every step, they bear it under
   dissipation, every finite family containing a side is open at arbitrarily late steps,
   and the family of the sides, enclosed around at every step, draws in the fuel
-  (`Kindling`). With an unrelated sink exchanging with ever new relata instead, no step
+  (`Throughput`). With an unrelated sink exchanging with ever new relata instead, no step
   is enclosed, dissipation holds vacuously, and generation recurs in the family of the
-  sides with nothing flowing in, while the sink opens it (`SprayHanding`). A relatum
+  sides with nothing flowing in, while the sink opens it (`SprayShuttle`). A relatum
   whose activity is not its standing arises again and again in a world of one relatum
   under dissipation (`Flicker`).
 
@@ -642,7 +642,7 @@ theorem generation_ceases_on (balances : L.Balances W) {ds : List X} {T : Nat}
 /-- Under dissipation, a finite family without repetition in which embodied members arise
 at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some
 formation taking part exchanges with a relatum outside it. That exchange need not touch
-the family (`SprayHanding`). -/
+the family (`SprayShuttle`). -/
 theorem generation_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List X} (distinct : Distinct ds)
     (arising : ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x) (T : Nat) :
@@ -1010,10 +1010,10 @@ theorem rise_without_fall (t : Nat) :
 
 end Brood
 
-namespace SunSeed
+namespace SourceSeed
 
 inductive Relatum where
-  | sun
+  | source
   | seed
 
 /-- Zero at step zero, one after. -/
@@ -1021,94 +1021,95 @@ def sprout : Nat → Nat
   | 0 => 0
   | _ + 1 => 1
 
-/-- The sun is always active and stands at zero as a condition; the seed stands, and is
+/-- The source is always active and stands at zero as a condition; the seed stands, and is
 active, from step one. Nothing depends on or draws on anything. -/
 def web : Web Relatum Relatum where
   level t x := match x with
-    | .sun => 0
+    | .source => 0
     | .seed => sprout t
   active t x := match x with
-    | .sun => True
+    | .source => True
     | .seed => 0 < sprout t
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
 
-/-- The sun gives the seed one unit across step zero. -/
+/-- The source gives the seed one unit across step zero. -/
 def flow : Flow Relatum Relatum where
-  present _ := [.sun]
+  present _ := [.source]
   take _ _ _ := 0
   give t x y := match x, y with
-    | .sun, .seed => Brood.first t
-    | .sun, .sun => 0
+    | .source, .seed => Brood.first t
+    | .source, .source => 0
     | .seed, _ => 0
 
 /-- The flow balances and only active relata give; the seed is embodied and arises across
-step zero, given by the sun alone. The sun is not embodied, does not bear on itself and
+step zero, given by the source alone. The source is not embodied, does not bear on itself and
 depends on nothing: the formation `arises_given` names need not be embodied. -/
-theorem sun_gives :
+theorem source_gives :
     flow.Balances web ∧ flow.Acting web ∧ web.Embodied .seed ∧ web.Arises 0 .seed ∧
     (∀ f, web.active 0 f ∧ f ∈ flow.present 0 ∧ 0 < flow.give 0 f .seed ∧ f ≠ .seed →
-      f = .sun) ∧
-    ¬ web.Embodied .sun ∧ ¬ web.SelfBearing .sun ∧ ∀ t c, ¬ web.requires t .sun c :=
+      f = .source) ∧
+    ¬ web.Embodied .source ∧ ¬ web.SelfBearing .source ∧ ∀ t c, ¬ web.requires t .source c :=
   ⟨fun t c => match c, t with
-    | .sun, _ => rfl
+    | .source, _ => rfl
     | .seed, 0 => rfl
     | .seed, _ + 1 => rfl,
    fun _ f _ mem _ => match f, mem with
-    | .sun, _ => trivial
+    | .source, _ => trivial
     | .seed, .tail _ mem => (nomatch mem),
    fun _ => Iff.rfl,
    ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
    fun f ⟨_, mem, _, _⟩ => match f, mem with
-    | .sun, _ => rfl
+    | .source, _ => rfl
     | .seed, .tail _ mem => (nomatch mem),
    fun embodied => Nat.lt_irrefl 0 ((embodied 0).mp trivial),
    fun self => (self 0 trivial).1,
    fun _ _ h => h⟩
 
-end SunSeed
+end SourceSeed
 
-namespace EmbodiedSun
+namespace EmbodiedSource
 
-/-- `SunSeed.web`, with the sun standing at one instead of zero. -/
-def web : Web SunSeed.Relatum SunSeed.Relatum where
+/-- `SourceSeed.web`, with the source standing at one instead of zero. -/
+def web : Web SourceSeed.Relatum SourceSeed.Relatum where
   level t x := match x with
-    | .sun => 1
-    | .seed => SunSeed.sprout t
+    | .source => 1
+    | .seed => SourceSeed.sprout t
   active t x := match x with
-    | .sun => True
-    | .seed => 0 < SunSeed.sprout t
+    | .source => True
+    | .seed => 0 < SourceSeed.sprout t
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
 
-theorem balances : SunSeed.flow.Balances web
-  | _, .sun => rfl
+theorem balances : SourceSeed.flow.Balances web
+  | _, .source => rfl
   | 0, .seed => rfl
   | _ + 1, .seed => rfl
 
-theorem acting : SunSeed.flow.Acting web := fun _ f _ mem _ => match f, mem with
-  | .sun, _ => trivial
+theorem acting : SourceSeed.flow.Acting web := fun _ f _ mem _ => match f, mem with
+  | .source, _ => trivial
   | .seed, .tail _ no => (nomatch no)
 
-theorem gives_embodied : ∀ t f c, f ∈ SunSeed.flow.present t →
-    0 < SunSeed.flow.give t f c → web.Embodied f := fun _ f _ mem _ => match f, mem with
-  | .sun, _ => fun _ => ⟨fun _ => Nat.zero_lt_one, fun _ => trivial⟩
+theorem gives_embodied : ∀ t f c, f ∈ SourceSeed.flow.present t →
+    0 < SourceSeed.flow.give t f c → web.Embodied f := fun _ f _ mem _ => match f, mem with
+  | .source, _ => fun _ => ⟨fun _ => Nat.zero_lt_one, fun _ => trivial⟩
   | .seed, .tail _ no => (nomatch no)
 
-/-- Every premise of `Embodied.arises_from_embodied` holds, and it names the sun: embodied,
-standing as a condition while it gives. The sun requires nothing, draws on nothing, takes
+/-- Every premise of `Embodied.arises_from_embodied` holds, and it names the source: embodied,
+standing as a condition while it gives. The source requires nothing, draws on nothing, takes
 nothing and does not bear on itself; it is embodied because the representation lets it
 stand at one exactly while it is active. -/
-theorem embodied_sun :
-    SunSeed.flow.Balances web ∧ SunSeed.flow.Acting web ∧
-    (∀ t f c, f ∈ SunSeed.flow.present t → 0 < SunSeed.flow.give t f c → web.Embodied f) ∧
+theorem embodied_source :
+    SourceSeed.flow.Balances web ∧ SourceSeed.flow.Acting web ∧
+    (∀ t f c, f ∈ SourceSeed.flow.present t → 0 < SourceSeed.flow.give t f c → web.Embodied f) ∧
     web.Embodied .seed ∧ web.Arises 0 .seed ∧
-    (∃ f, web.Embodied f ∧ 0 < web.level 0 f ∧ f ∈ SunSeed.flow.present 0 ∧
-      0 < SunSeed.flow.give 0 f .seed ∧ f ≠ .seed) ∧
-    (∀ t c, ¬ web.requires t .sun c ∧ ¬ web.draws t .sun c ∧ SunSeed.flow.take t .sun c = 0) ∧
-    ¬ web.SelfBearing .sun :=
+    (∃ f, web.Embodied f ∧ 0 < web.level 0 f ∧ f ∈ SourceSeed.flow.present 0 ∧
+      0 < SourceSeed.flow.give 0 f .seed ∧ f ≠ .seed) ∧
+    (∀ t c, ¬ web.requires t .source c ∧ ¬ web.draws t .source c ∧
+      SourceSeed.flow.take t .source c = 0) ∧
+    ¬ web.SelfBearing .source :=
   have seed : web.Embodied .seed := fun _ => Iff.rfl
   have arises : web.Arises 0 .seed := ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩
   ⟨balances, acting, gives_embodied, seed, arises,
@@ -1116,9 +1117,9 @@ theorem embodied_sun :
    fun _ _ => ⟨fun no => no, fun no => no, rfl⟩,
    fun self => (self 0 trivial).1⟩
 
-end EmbodiedSun
+end EmbodiedSource
 
-namespace Handing
+namespace Shuttle
 
 /-- One at even steps, zero at odd steps. -/
 def even : Nat → Nat
@@ -1214,7 +1215,7 @@ theorem recurs (x : Bool) (N : Nat) : ∃ t, N ≤ t ∧ web.Arises t x :=
 the flow balances, only active sides give, each side is embodied and bears on itself,
 activity needs support, the family of both is closed at every step, and generation is
 unceasing. Only dissipation fails: the holder gives back all it takes. -/
-theorem handing : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
+theorem shuttle : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
     (∀ x, web.Embodied x ∧ web.SelfBearing x) ∧ (∀ t, flow.ClosedAt [true, false] t) ∧
     web.Unceasing ∧ ¬ flow.Dissipative :=
   ⟨balances, acting, dependent, embodied,
@@ -1224,36 +1225,36 @@ theorem handing : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
    fun dissipative => Nat.not_succ_le_self 1 (dissipative [true, false] 0 distinct
      (fun _ _ c outside => absurd (every c) outside) true (.head _))⟩
 
-end Handing
+end Shuttle
 
-namespace Kindling
+namespace Throughput
 
-/-- The two sides of `Handing`, and fuels, one for each step. -/
+/-- The two sides of `Shuttle`, and fuels, one for each step. -/
 inductive Relatum where
   | side (x : Bool)
   | fuel (n : Nat)
 
-/-- As in `Handing`, and across the step from `t` the holder also burns two units of the
+/-- As in `Shuttle`, and across the step from `t` the holder also burns two units of the
 `t`th fuel. -/
 def flow : Flow Relatum Relatum where
-  present t := [.side (Handing.holder t)]
+  present t := [.side (Shuttle.holder t)]
   take t f c := match f, c with
-    | .side x, .side y => Handing.flow.take t x y
+    | .side x, .side y => Shuttle.flow.take t x y
     | .side _, .fuel n => 2 * Frontier.burning n t
     | .fuel _, _ => 0
   give t f c := match f, c with
-    | .side x, .side y => Handing.flow.give t x y
+    | .side x, .side y => Shuttle.flow.give t x y
     | .side _, .fuel _ => 0
     | .fuel _, _ => 0
 
-/-- The sides as in `Handing`; the `n`th fuel holds two units until it burns and is never
+/-- The sides as in `Shuttle`; the `n`th fuel holds two units until it burns and is never
 active. -/
 def web : Web Relatum Relatum where
   level t c := match c with
-    | .side x => Handing.stands x t
+    | .side x => Shuttle.stands x t
     | .fuel n => 2 * Frontier.unburnt n t
   active t c := match c with
-    | .side x => 0 < Handing.stands x t
+    | .side x => 0 < Shuttle.stands x t
     | .fuel _ => False
   requires _ c d := match c with
     | .side _ => d = c
@@ -1262,21 +1263,21 @@ def web : Web Relatum Relatum where
   draws _ _ _ := False
 
 theorem balances : flow.Balances web
-  | t, .side y => Handing.balances t y
+  | t, .side y => Shuttle.balances t y
   | t, .fuel n => show 2 * Frontier.unburnt n (t + 1) + (2 * Frontier.burning n t + 0) =
         2 * Frontier.unburnt n t + (0 + 0) from
       (Nat.left_distrib 2 _ _).symm.trans (congrArg (2 * ·) (Frontier.burns n t))
 
 theorem acting : flow.Acting web :=
-  fun t f _ present _ => match f, (present : f ∈ [.side (Handing.holder t)]) with
-  | _, .head _ => Handing.holder_stands t
+  fun t f _ present _ => match f, (present : f ∈ [.side (Shuttle.holder t)]) with
+  | _, .head _ => Shuttle.holder_stands t
   | _, .tail _ no => (nomatch no)
 
 theorem dependent : web.Dependent :=
   fun _ c active d depends => match c, d, depends with
   | .side _, _, rfl => active
 
-/-- The holder gives a family at most one unit: a positive gift goes to the other side. -/
+/-- The holder gives a family at most one unit, and gives only to the other side. -/
 theorem gives_other : ∀ (t : Nat) (x : Bool) (c : Relatum),
     0 < flow.give t (.side x) c → c = .side (!x)
   | _, true, .side false, _ => rfl
@@ -1310,25 +1311,25 @@ theorem side_dissipates {ds : List Relatum} {t : Nat} (distinct : Distinct ds)
 /-- Every family without repetition closed across a step is dissipated on. -/
 theorem dissipative : flow.Dissipative
   | _, t, distinct, closed, f, present =>
-    match f, (present : f ∈ [.side (Handing.holder t)]) with
+    match f, (present : f ∈ [.side (Shuttle.holder t)]) with
     | _, .tail _ no => (nomatch no)
     | _, .head _ => side_dissipates distinct closed (.head _)
 
-/-- The handing of `Handing`, burning a fresh fuel at every step: the flow balances, only
+/-- The exchange of `Shuttle`, burning a fresh fuel at every step: the flow balances, only
 active sides give, the sides are embodied and bear on themselves, activity needs support,
 the flow is dissipative, and each side arises at arbitrarily late steps. -/
-theorem kindling : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
+theorem throughput : flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
     (∀ x, web.Embodied (.side x) ∧ web.SelfBearing (.side x)) ∧ flow.Dissipative ∧
     ∀ x N, ∃ t, N ≤ t ∧ web.Arises t (.side x) :=
   ⟨balances, acting, dependent,
    fun _ => ⟨fun _ => Iff.rfl, fun _ _ => ⟨rfl, Nat.zero_lt_one⟩⟩, dissipative,
-   Handing.recurs⟩
+   Shuttle.recurs⟩
 
 /-- So every finite family without repetition containing a side is open at arbitrarily
 late steps: the fuels burnt are not contained in any finite family. -/
 theorem frontier {ds : List Relatum} (distinct : Distinct ds) {x : Bool}
     (side : Relatum.side x ∈ ds) (T : Nat) : ¬ ∀ t, T ≤ t → flow.ClosedAt ds t :=
-  Web.generation_opens balances dissipative distinct (fun N => match Handing.recurs x N with
+  Web.generation_opens balances dissipative distinct (fun N => match Shuttle.recurs x N with
     | ⟨t, later, arises⟩ => ⟨t, .side x, later, side, fun _ => Iff.rfl, arises⟩) T
 
 /-- Every step is enclosed around the two sides, by the sides and the fuel burnt. -/
@@ -1357,25 +1358,25 @@ theorem draws_in (N : Nat) : ¬ ∀ t, N ≤ t → flow.Inward [.side true, .sid
   Web.generation_draws_in (ds := [.side true, .side false]) balances dissipative
     ⟨fun mem => match mem with | .tail _ no => (nomatch no), fun no => (nomatch no), trivial⟩
     (T₀ := 0) (fun t _ => around t)
-    (fun M => match Handing.recurs true M with
+    (fun M => match Shuttle.recurs true M with
       | ⟨t, later, arises⟩ => ⟨t, .side true, later, .head _, fun _ => Iff.rfl, arises⟩) N
 
-end Kindling
+end Throughput
 
-namespace SprayHanding
+namespace SprayShuttle
 
-/-- The two sides of `Handing`, a sink, and auxiliary relata. -/
+/-- The two sides of `Shuttle`, a sink, and auxiliary relata. -/
 inductive Relatum where
   | side (x : Bool)
   | sink
   | aux (n : Nat)
 
-/-- The holder hands its standing to the other side, as in `Handing`; the sink takes one
+/-- The holder hands its standing to the other side, as in `Shuttle`; the sink takes one
 unit from every auxiliary relatum and gives it back. -/
 def flow : Flow Relatum Relatum where
-  present t := [.side (Handing.holder t), .sink]
+  present t := [.side (Shuttle.holder t), .sink]
   take t f c := match f, c with
-    | .side x, .side y => Handing.flow.take t x y
+    | .side x, .side y => Shuttle.flow.take t x y
     | .side _, .sink => 0
     | .side _, .aux _ => 0
     | .sink, .side _ => 0
@@ -1383,7 +1384,7 @@ def flow : Flow Relatum Relatum where
     | .sink, .aux _ => 1
     | .aux _, _ => 0
   give t f c := match f, c with
-    | .side x, .side y => Handing.flow.give t x y
+    | .side x, .side y => Shuttle.flow.give t x y
     | .side _, .sink => 0
     | .side _, .aux _ => 0
     | .sink, .side _ => 0
@@ -1391,16 +1392,16 @@ def flow : Flow Relatum Relatum where
     | .sink, .aux _ => 1
     | .aux _, _ => 0
 
-/-- The sides stand and are active as in `Handing` and depend on themselves at need one;
+/-- The sides stand and are active as in `Shuttle` and depend on themselves at need one;
 the sink is always active and stands at one; auxiliary relata stand at one and are never
 active. -/
 def web : Web Relatum Relatum where
   level t c := match c with
-    | .side x => Handing.stands x t
+    | .side x => Shuttle.stands x t
     | .sink => 1
     | .aux _ => 1
   active t c := match c with
-    | .side x => 0 < Handing.stands x t
+    | .side x => 0 < Shuttle.stands x t
     | .sink => True
     | .aux _ => False
   requires _ c d := match c with
@@ -1439,12 +1440,12 @@ theorem fresh (l : List Relatum) : ¬ Relatum.aux (bound l) ∈ l :=
   fun mem => Nat.not_succ_le_self _ (le_bound mem)
 
 theorem balances : flow.Balances web
-  | t, .side y => Handing.balances t y
+  | t, .side y => Shuttle.balances t y
   | _, .sink => rfl
   | _, .aux _ => rfl
 
 theorem acting : flow.Acting web := fun t f _ present _ => match f, present with
-  | _, .head _ => Handing.holder_stands t
+  | _, .head _ => Shuttle.holder_stands t
   | _, .tail _ (.head _) => trivial
   | _, .tail _ (.tail _ no) => (nomatch no)
 
@@ -1460,7 +1461,7 @@ theorem unenclosed (t : Nat) : ¬ flow.Enclosed t :=
 theorem dissipative : flow.Dissipative :=
   fun es t distinct closed => absurd ⟨es, distinct, closed⟩ (unenclosed t)
 
-theorem even_sum : ∀ t, Handing.even t + Handing.even (t + 1) = 1
+theorem even_sum : ∀ t, Shuttle.even t + Shuttle.even (t + 1) = 1
   | 0 => rfl
   | 1 => rfl
   | t + 2 => even_sum t
@@ -1471,7 +1472,7 @@ enclosed. Each side arises at arbitrarily late steps in the finite family of the
 sides. Yet every relatum that gives to the family takes only from it, the sink, the only
 relatum exchanging beyond it, never takes from or gives to it, and the family's stock is
 one at every step: generation recurs in a finite family into which nothing flows. -/
-theorem spray_handing :
+theorem spray_shuttle :
     flow.Balances web ∧ flow.Acting web ∧ web.Dependent ∧
     (∀ x, web.Embodied (.side x) ∧ web.SelfBearing (.side x)) ∧ flow.Dissipative ∧
     (∀ t, ¬ flow.Enclosed t) ∧ (∀ x N, ∃ t, N ≤ t ∧ web.Arises t (.side x)) ∧
@@ -1479,7 +1480,7 @@ theorem spray_handing :
     (∀ t x, flow.take t .sink (.side x) = 0 ∧ flow.give t .sink (.side x) = 0) ∧
     ∀ t, web.stock sides t = 1 :=
   ⟨balances, acting, dependent, fun _ => ⟨fun _ => Iff.rfl, fun _ _ => ⟨rfl, Nat.zero_lt_one⟩⟩,
-   dissipative, unenclosed, fun x N => Handing.recurs x N,
+   dissipative, unenclosed, fun x N => Shuttle.recurs x N,
    fun _ f present gives c takes => match f, present with
     | _, .head _ => match c, takes with
       | .side true, _ => .head _
@@ -1496,7 +1497,7 @@ needs. -/
 theorem opens_anyway (T : Nat) :
     (¬ ∀ t, T ≤ t → flow.ClosedAt sides t) ∧ ∀ t, ¬ flow.Around sides t :=
   ⟨Web.generation_opens balances dissipative sides_distinct
-    (fun N => match Handing.recurs true N with
+    (fun N => match Shuttle.recurs true N with
       | ⟨t, later, arises⟩ => ⟨t, .side true, later, .head _, fun _ => Iff.rfl, arises⟩) T,
    fun t ⟨es, distinct, _, closed⟩ => unenclosed t ⟨es, distinct, closed⟩⟩
 
@@ -1505,19 +1506,19 @@ theorem opens_anyway (T : Nat) :
 theorem taking_opens_anyway (T : Nat) : ¬ ∀ t, T ≤ t → flow.ClosedAt sides t :=
   Flow.Dissipative.opens balances dissipative sides_distinct (fun _ mem => mem)
     (fun N => ⟨N, Nat.le_refl N, show 0 < sign (total sides (flow.take N
-        (.side (Handing.holder N)))) + (sign (total sides (flow.take N .sink)) + 0) from
-      match Handing.holder N with
+        (.side (Shuttle.holder N)))) + (sign (total sides (flow.take N .sink)) + 0) from
+      match Shuttle.holder N with
       | true => Nat.zero_lt_one
       | false => Nat.zero_lt_one⟩) T
 
-end SprayHanding
+end SprayShuttle
 
 namespace Flicker
 
 /-- One relatum, active at odd steps and never standing as a condition. -/
 def web : Web Unit Unit where
   level _ _ := 0
-  active t _ := 0 < Handing.stands false t
+  active t _ := 0 < Shuttle.stands false t
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
@@ -1531,7 +1532,7 @@ unceasing. Only embodiment fails. -/
 theorem flicker : flow.Balances web ∧ flow.Dissipative ∧ web.Unceasing ∧
     ¬ web.Embodied () :=
   ⟨fun _ _ => rfl, fun _ _ _ _ _ present => (nomatch present),
-   fun N => match Handing.recurs false N with
+   fun N => match Shuttle.recurs false N with
     | ⟨t, later, arises⟩ => ⟨t, (), later, arises⟩,
    fun embodied => Nat.lt_irrefl 0 ((embodied 1).mp Nat.zero_lt_one)⟩
 

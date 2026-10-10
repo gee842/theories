@@ -35,7 +35,7 @@ Results:
   over cycles of one, and undermining at a step is undermining for one step. A longer cycle
   credits more, a formation renewing over any cycle is not consuming, and none of its
   events undermines for that cycle. Over cycles of two, a dip that breaks a dependence
-  for one step is credited, and a keeper whose condition a drawer broke while it was
+  for one step is credited, and a dependent whose condition a drawer broke while it was
   inactive renews. An escalation after which the condition never returns undermines for
   every cycle.
 
@@ -310,7 +310,7 @@ end Slowing
 
 /-! ## Readings over cycles credit a dip and withhold an escalation -/
 
-namespace Commons
+namespace Renewable
 
 /-- Over cycles of two the dip is credited, by the run and by the event: the condition
 returns within two steps, though the first step breaks the sustaining formation's
@@ -343,20 +343,20 @@ theorem escalation_undermines_for_every_cycle :
          (Nat.le_of_eq (congrArg escalatingState (Nat.add_comm 1 (k + 1)))) Nat.zero_lt_one
        ⟨⟨1, Nat.le_refl 1, fun _ _ _ => trivial, Nat.le_refl 1, gone⟩, gone⟩⟩⟩
 
-end Commons
+end Renewable
 
 namespace Dip
 
-/-- Over cycles of two the keeper renews in the run, though it does not renew step by
+/-- Over cycles of two the dependent renews in the run, though it does not renew step by
 step: the condition it depends on returns within two steps. -/
 theorem renewing_within_two :
-    web.RenewingInWithin 2 .keeper ∧ ¬ web.RenewingIn .keeper :=
+    web.RenewingInWithin 2 .dependent ∧ ¬ web.RenewingIn .dependent :=
   ⟨fun _ _ _ t g depends =>
     match t, g, depends with
-    | 0, .keeper, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
-    | 1, .keeper, _ => ⟨2, Nat.zero_lt_two, Nat.le_refl 2, Nat.le_refl 1⟩
-    | 2, .keeper, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
-    | _ + 3, .keeper, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩,
+    | 0, .dependent, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
+    | 1, .dependent, _ => ⟨2, Nat.zero_lt_two, Nat.le_refl 2, Nat.le_refl 1⟩
+    | 2, .dependent, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩
+    | _ + 3, .dependent, _ => ⟨1, Nat.zero_lt_one, Nat.le_succ 1, Nat.le_refl 1⟩,
    renewing_at_each_step_not_in_run.2.2⟩
 
 end Dip

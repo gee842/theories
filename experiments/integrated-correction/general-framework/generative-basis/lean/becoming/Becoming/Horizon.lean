@@ -5,8 +5,8 @@ import Becoming.Return
 
 `Becoming.Renewal` shows that the class of a formation belongs to the run, not to a
 configuration: from one configuration, one run renews and another consumes. Here the
-same holds for every finite stretch of a run. For every horizon `h`, two runs of the
-commons agree on their configurations and actions up to `h`, the focal formation
+same holds for every finite stretch of a run. For every horizon `h`, two runs of
+`Renewable` agree on their configurations and actions up to `h`, the focal formation
 drawing beyond renewal at each of those steps, while the condition still meets the
 dependence on it. Afterwards one run draws within renewal and the focal formation
 renews; the other keeps drawing beyond it, and the focal formation consumes. Every
@@ -28,13 +28,13 @@ What a finite history decides depends on the reading:
 * The formation-level readings over cycles are not fixed by any finite prefix
   (`cycle_reading_not_finite`), nor is the whole-run classification.
 * A reading of amounts, "draws no more than is renewed at this step", is fixed by the
-  history through the step, credits every event of sharing and withholds every draw
+  history through the step, credits every event of `withinRenewal` and withholds every draw
   beyond renewal before `h` in both runs (`amount_reading`). It escapes the theorem only
   by not crediting every run the whole-run reading classifies as renewing. It cannot be
   stated on `Web`, whose `draws` carries no amount and which has no renewal rate.
 
 Classifying a stretch of drawing as the whole-run reading does requires knowing where
-the run goes, an account of its continuation, not only its past. In the commons the
+the run goes, an account of its continuation, not only its past. In `Renewable` the
 dynamics are fixed by the actions, so what no prefix decides is the action still to be
 taken.
 
@@ -61,7 +61,7 @@ before it. -/
 def Run.AgreeUpTo {P : Process S A} (h : Nat) (r r' : Run P) : Prop :=
   (∀ t, t ≤ h → r.state t = r'.state t) ∧ ∀ t, t < h → r.act t = r'.act t
 
-namespace Commons
+namespace Renewable
 
 /-- For every horizon `h`, two runs agree up to `h`, drawing beyond renewal at every
 step before it, with every event of the focal formation there within renewal. Then one
@@ -72,7 +72,8 @@ theorem prefix_does_not_decide : ∀ h : Nat, ∃ renewing consuming : Run proce
       (conditions.dependence.along consuming).RenewingAt t .focal) ∧
     (conditions.dependence.along renewing).RenewingIn .focal ∧
     (conditions.dependence.along consuming).ConsumingIn .focal
-  | 0 => ⟨sharing, winning, ⟨fun | 0, _ => rfl, fun _ before => absurd before (Nat.not_lt_zero _)⟩,
+  | 0 => ⟨withinRenewal, beyondRenewal,
+      ⟨fun | 0, _ => rfl, fun _ before => absurd before (Nat.not_lt_zero _)⟩,
       fun _ before => absurd before (Nat.not_lt_zero _),
       fun _ before => absurd before (Nat.not_lt_zero _),
       fun _ _ _ _ g depends => match g, depends with
@@ -125,11 +126,11 @@ theorem whole_run_credits_overdraw (h : Nat) : ∃ r : Run process,
       RelationalRenewal.renewing_not_consuming ((Web.static_renewingIn _ _).mp renews)⟩⟩
 
 /-- A reading of amounts escapes the horizon. "Draws no more than is renewed", at a step,
-is fixed by the history through that step, credits every event of `sharing`, and
+is fixed by the history through that step, credits every event of `withinRenewal`, and
 withholds every draw before the horizon in both runs above. -/
 theorem amount_reading (h : Nat) :
     (∀ t (r r' : Run process), r.AgreeUpTo (t + 1) r' → (r.act t ≤ 1 ↔ r'.act t ≤ 1)) ∧
-    (∀ t, sharing.act t ≤ 1) ∧
+    (∀ t, withinRenewal.act t ≤ 1) ∧
     ∃ r c : Run process, (conditions.dependence.along r).RenewingIn .focal ∧
       (conditions.dependence.along c).ConsumingIn .focal ∧
       ∀ t, t < h → ¬ r.act t ≤ 1 ∧ ¬ c.act t ≤ 1 :=
@@ -152,7 +153,7 @@ theorem cycle_reading_not_finite (h p : Nat) (positive : 0 < p) :
       (fun _ renews => (Web.RenewingIn.within_one renews).mono positive) with
     | ⟨_, consumes, renews⟩ => renews.not_consuming consumes
 
-end Commons
+end Renewable
 
 /-! ## The horizon in the support-gated law -/
 

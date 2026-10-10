@@ -37,7 +37,7 @@ center, whose continuation counts. This module states the center on the valuatio
   is one reading of the proposal's weak form, continuation that does not damage another's
   (an AI reading). S0 ranges over living claims, so read this way the seed already carries
   that filter: a formation's own event that undermines is not living, and S0 says nothing
-  of it (`Totalizer.keeper_not_living`).
+  of it (`Clearing.clearer_not_living`).
 * **Conveyance crosses the boundary.** Read with one kind of relatum, conveyance relates
   two events at a common step when something is conveyed between their relata
   (`Flow.conveyance`; `living` is the stepwise reading). A relatum nothing is taken from
@@ -45,36 +45,36 @@ center, whose continuation counts. This module states the center on the valuatio
   continuing as in `Flow.fed_from_beyond` is, from no step on, left uncrossed
   (`Flow.boundary_crossed`), so it is not a cut in the relations (`Flow.Cut`,
   `Flow.region_not_a_cut`); under relational neutrality, valuing a relatum's event reaches
-  the living event of what is conveyed into it (`Flow.valuing_reaches_source`). In the
-  careful totalizer read with one kind of relatum, the supply's region is crossed at every
-  step (`Totalizer.crossed`, `Totalizer.supply_not_cut`). Under living on the supply's
-  region is no cut either, since the keeper lives on it
-  (`Totalizer.supply_not_cut_living_on`). What conveyance adds is a relation between two
+  the living event of what is conveyed into it (`Flow.valuing_reaches_source`). In
+  `Clearing` read with one kind of relatum, the resource's region is crossed at every
+  step (`Clearing.crossed`, `Clearing.resource_not_cut`). Under living on the resource's
+  region is no cut either, since the clearer lives on it
+  (`Clearing.resource_not_cut_living_on`). What conveyance adds is a relation between two
   conditions, in the direction of inflow: read with one kind of relatum, something
   conveyed between two conditions relates their events (`Flow.roles_conveyance`), while
   interaction, living on and descent relate no two conditions at any steps
-  (`Flow.roles_conditions_unrelated`), so the careful totalizer's fuel and supply are
-  related by conveyance alone (`Totalizer.conveyance_only`). Whether conveyance counts as
+  (`Flow.roles_conditions_unrelated`), so the fuel and the resource of `Clearing` are
+  related by conveyance alone (`Clearing.conveyance_only`). Whether conveyance counts as
   a formed relation is Ren's choice, as for interaction, living on and descent.
 * **The center is not derived along dependence.** The continuation of an event's
   formation is *fed by* another event when, at their common step, the other's formation
-  gives to a condition the first requires (`Flow.FedBy`). In the careful totalizer each
-  formation holds and values its own events, and the keeper values also the sun's, which
-  feed its supply. Every life is held, S0 holds at every position, and each standpoint's
-  significance is closed along feeding, while the other formation's living event has no
-  significance from the keeper's standpoint: standpoint neutrality fails and G0 fails
-  (`Totalizer.center_not_derived`). The line holds for a derived extent that runs along
+  gives to a condition the first requires (`Flow.FedBy`). In `Clearing` each
+  formation holds and values its own events, and the clearer values also the source's, which
+  feed its resource. Every life is held, S0 holds at every position, and each standpoint's
+  significance is closed along feeding, while the dweller's living event has no
+  significance from the clearer's standpoint: standpoint neutrality fails and G0 fails
+  (`Clearing.center_not_derived`). The line holds for a derived extent that runs along
   dependence. In the same valuation the formed relations of the stepwise reading relate
-  the keeper's event to the other's through the habitat both take part in, and
-  transmission out of the keeper's own region fails: an extent run along every formed
-  relation would reach the other. With standpoint neutrality added, G0 holds by
+  the clearer's event to the dweller's through the habitat both take part in, and
+  transmission out of the clearer's own region fails: an extent run along every formed
+  relation would reach the dweller. With standpoint neutrality added, G0 holds by
   `Web.significant_iff_self`. Significance at the level of claims does not separate
   counting another as a condition from counting it as a being that wants.
 
 Reading S0 as what wanting is, the seed at each wanting point, and standpoint neutrality as
 the one axiom, so that what has significance from any center has it from every standpoint
 and no center is privileged, is the AI's reading of Ren's proposal, pending Ren; G0 remains
-the adopted axiom until Ren accepts the restatement. The sun of `Totalizer` requires
+the adopted axiom until Ren accepts the restatement. The source of `Clearing` requires
 nothing by stipulation. Decided holding is a disclosed logical commitment of
 `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
@@ -349,47 +349,47 @@ end Feeding
 
 end Flow
 
-/-! ## The careful totalizer from its standpoints -/
+/-! ## The clearing from its standpoints -/
 
-namespace Totalizer
+namespace Clearing
 
 open Frontier (burning)
 
-/-- Read with one kind of relatum, conveyance relates the step's fuel to the supply at
+/-- Read with one kind of relatum, conveyance relates the step's fuel to the resource at
 every step. -/
 theorem crossed {Pos : Type} (own sig : Pos → (Formation ⊕ Place) × Nat → Prop) (t : Nat) :
     (Flow.conveyance flow.roles web.roles own sig).related (.inr (.fuel t), t)
-      (.inr .supply, t) :=
-  ⟨rfl, .inl ⟨.inl .sun, .head _,
+      (.inr .resource, t) :=
+  ⟨rfl, .inl ⟨.inl .source, .head _,
     show 0 < 2 * burning t t from
       Eq.subst (motive := fun b => 0 < 2 * b) (Frontier.burning_self t).symm (Nat.succ_pos 1),
     Nat.zero_lt_one⟩⟩
 
-/-- So the supply's region is not a cut in the relations. -/
-theorem supply_not_cut {Pos : Type} (own sig : Pos → (Formation ⊕ Place) × Nat → Prop) :
+/-- So the resource's region is not a cut in the relations. -/
+theorem resource_not_cut {Pos : Type} (own sig : Pos → (Formation ⊕ Place) × Nat → Prop) :
     ¬ Flow.Cut (Flow.conveyance flow.roles web.roles own sig)
-      (fun e => e.1 ∈ [Sum.inr Place.supply]) :=
-  fun cut => cut (.inr .supply, 0) (.inr (.fuel 0), 0) (.head _)
+      (fun e => e.1 ∈ [Sum.inr Place.resource]) :=
+  fun cut => cut (.inr .resource, 0) (.inr (.fuel 0), 0) (.head _)
     (fun mem => match mem with | .tail _ no => nomatch no)
     ⟨rfl, (crossed own sig 0).2.symm⟩
 
-/-- Conveyance relates the step's fuel and the supply, which neither interaction, living on
+/-- Conveyance relates the step's fuel and the resource, which neither interaction, living on
 nor descent relates. -/
 theorem conveyance_only {Pos : Type} (own sig : Pos → (Formation ⊕ Place) × Nat → Prop)
     (t : Nat) :
     (Flow.conveyance flow.roles web.roles own sig).related (.inr (.fuel t), t)
-        (.inr .supply, t) ∧
-      ¬ (web.roles.interaction own sig).related (.inr (.fuel t), t) (.inr .supply, t) ∧
-      ¬ (web.roles.sustenance own sig).related (.inr (.fuel t), t) (.inr .supply, t) ∧
-      ¬ (flow.roles.descent web.roles own sig).related (.inr (.fuel t), t) (.inr .supply, t) :=
-  ⟨crossed own sig t, Flow.roles_conditions_unrelated flow web own sig (.fuel t) .supply t t⟩
+        (.inr .resource, t) ∧
+      ¬ (web.roles.interaction own sig).related (.inr (.fuel t), t) (.inr .resource, t) ∧
+      ¬ (web.roles.sustenance own sig).related (.inr (.fuel t), t) (.inr .resource, t) ∧
+      ¬ (flow.roles.descent web.roles own sig).related (.inr (.fuel t), t) (.inr .resource, t) :=
+  ⟨crossed own sig t, Flow.roles_conditions_unrelated flow web own sig (.fuel t) .resource t t⟩
 
-/-- Under living on, read with one kind of relatum, the supply's region is no cut either:
-the keeper lives on the supply. -/
-theorem supply_not_cut_living_on {Pos : Type}
+/-- Under living on, read with one kind of relatum, the resource's region is no cut either:
+the clearer lives on the resource. -/
+theorem resource_not_cut_living_on {Pos : Type}
     (own sig : Pos → (Formation ⊕ Place) × Nat → Prop) :
-    ¬ Flow.Cut (web.roles.sustenance own sig) (fun e => e.1 ∈ [Sum.inr Place.supply]) :=
-  fun cut => cut (.inr .supply, 0) (.inl .keeper, 0) (.head _)
+    ¬ Flow.Cut (web.roles.sustenance own sig) (fun e => e.1 ∈ [Sum.inr Place.resource]) :=
+  fun cut => cut (.inr .resource, 0) (.inl .clearer, 0) (.head _)
     (fun mem => match mem with | .tail _ no => nomatch no)
     (.inr (.inr ⟨trivial, trivial, Nat.zero_lt_one⟩))
 
@@ -397,67 +397,67 @@ theorem supply_not_cut_living_on {Pos : Type}
 def own : Formation → Formation × Nat → Prop :=
   fun f e => e.1 = f
 
-/-- Each formation values its own events, and the keeper values also the sun's. -/
+/-- Each formation values its own events, and the clearer values also the source's. -/
 def sig : Formation → Formation × Nat → Prop
-  | .keeper, e => e.1 = .keeper ∨ e.1 = .sun
-  | .sun, e => e.1 = .sun
-  | .other, e => e.1 = .other
+  | .clearer, e => e.1 = .clearer ∨ e.1 = .source
+  | .source, e => e.1 = .source
+  | .dweller, e => e.1 = .dweller
 
 def valuation : Valuation Formation (Formation × Nat) :=
   web.valuation own sig
 
-/-- Only the keeper's continuation is fed, and only by the sun. -/
-theorem fedBy_sun {e e' : Formation × Nat} (fed : flow.FedBy web e e') :
-    e.1 = .keeper ∧ e'.1 = .sun :=
+/-- Only the clearer's continuation is fed, and only by the source. -/
+theorem fedBy_source {e e' : Formation × Nat} (fed : flow.FedBy web e e') :
+    e.1 = .clearer ∧ e'.1 = .source :=
   match e, e', fed with
-  | (.keeper, _), (.sun, _), _ => ⟨rfl, rfl⟩
-  | (.keeper, _), (.keeper, _), ⟨_, .supply, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.keeper, _), (.other, _), ⟨_, .supply, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.sun, _), _, ⟨_, _, no, _⟩ => nomatch no
-  | (.other, _), (.sun, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.other, _), (.keeper, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
-  | (.other, _), (.other, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.clearer, _), (.source, _), _ => ⟨rfl, rfl⟩
+  | (.clearer, _), (.clearer, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.clearer, _), (.dweller, _), ⟨_, .resource, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.source, _), _, ⟨_, _, no, _⟩ => nomatch no
+  | (.dweller, _), (.source, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.dweller, _), (.clearer, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
+  | (.dweller, _), (.dweller, _), ⟨_, .habitat, _, _, gives⟩ => absurd gives (Nat.lt_irrefl 0)
 
-/-- S0 ranges over living claims: the keeper's own event at step one is active and not
-living, for the keeper undermines there, so S0 says nothing of it. -/
-theorem keeper_not_living :
-    web.active 1 .keeper ∧ own .keeper (.keeper, 1) ∧ ¬ valuation.living (.keeper, 1) :=
-  ⟨trivial, rfl, fun ⟨_, steady⟩ => steady careful.2.2.2.2.2.2.2.2.1⟩
+/-- S0 ranges over living claims: the clearer's own event at step one is active and not
+living, for the clearer undermines there, so S0 says nothing of it. -/
+theorem clearer_not_living :
+    web.active 1 .clearer ∧ own .clearer (.clearer, 1) ∧ ¬ valuation.living (.clearer, 1) :=
+  ⟨trivial, rfl, fun ⟨_, steady⟩ => steady undermines_within_renewal.2.2.2.2.2.2.2.2.1⟩
 
 /-- The center is not derived along dependence. Each formation holds and values its own
-events, and the keeper values also the sun's, which feed its supply: every life is held,
+events, and the clearer values also the source's, which feed its resource: every life is held,
 S0 holds at every position, and each standpoint's significance is closed along feeding. The
-other formation's event at step zero is living and has no significance from the keeper's
-standpoint, so standpoint neutrality and G0 fail. The keeper's event at step zero is
-related to it through the habitat, so transmission out of the keeper's own region along the
+dweller's event at step zero is living and has no significance from the clearer's
+standpoint, so standpoint neutrality and G0 fail. The clearer's event at step zero is
+related to it through the habitat, so transmission out of the clearer's own region along the
 formed relations fails. -/
 theorem center_not_derived :
     valuation.Held ∧ (∀ f, valuation.SelfGood f) ∧
       (∀ p e e', valuation.sig p e → flow.FedBy web e e' → valuation.sig p e') ∧
-      valuation.living (.other, 0) ∧ ¬ valuation.sig .keeper (.other, 0) ∧
+      valuation.living (.dweller, 0) ∧ ¬ valuation.sig .clearer (.dweller, 0) ∧
       ¬ Neutral valuation.shares ∧ ¬ valuation.Significant ∧
-      valuation.related (.keeper, 0) (.other, 0) ∧
+      valuation.related (.clearer, 0) (.dweller, 0) ∧
       ¬ Within (fun i => own i.1 i.2.1) valuation.transmits :=
-  have alive : valuation.living (.other, 0) := ⟨trivial, fun ⟨_, draws, _⟩ => draws⟩
-  have apart : ¬ valuation.sig .keeper (.other, 0) := fun
+  have alive : valuation.living (.dweller, 0) := ⟨trivial, fun ⟨_, draws, _⟩ => draws⟩
+  have apart : ¬ valuation.sig .clearer (.dweller, 0) := fun
     | .inl same => Formation.noConfusion same
     | .inr same => Formation.noConfusion same
-  have related : valuation.related (.keeper, 0) (.other, 0) :=
+  have related : valuation.related (.clearer, 0) (.dweller, 0) :=
     ⟨.habitat, .inr trivial, .inl trivial⟩
   ⟨web.held_by_formations sig,
    fun f e owned _ => match f, e, owned with
-    | .keeper, (.keeper, _), _ => .inl rfl
-    | .sun, (.sun, _), _ => rfl
-    | .other, (.other, _), _ => rfl,
-   fun p _ _ valued fed => match p, fedBy_sun fed, valued with
-    | .keeper, ⟨_, sun⟩, _ => .inr sun
-    | .sun, ⟨keeper, _⟩, valued => Formation.noConfusion (keeper.symm.trans valued)
-    | .other, ⟨keeper, _⟩, valued => Formation.noConfusion (keeper.symm.trans valued),
-   alive, apart, fun share => apart (share (.other, .keeper, (.other, 0)) alive rfl),
-   fun all => apart (all .keeper (.other, 0) alive), related,
-   fun transmit => apart (transmit (.keeper, (.keeper, 0), (.other, 0)) rfl (.inl rfl)
+    | .clearer, (.clearer, _), _ => .inl rfl
+    | .source, (.source, _), _ => rfl
+    | .dweller, (.dweller, _), _ => rfl,
+   fun p _ _ valued fed => match p, fedBy_source fed, valued with
+    | .clearer, ⟨_, source⟩, _ => .inr source
+    | .source, ⟨clearer, _⟩, valued => Formation.noConfusion (clearer.symm.trans valued)
+    | .dweller, ⟨clearer, _⟩, valued => Formation.noConfusion (clearer.symm.trans valued),
+   alive, apart, fun share => apart (share (.dweller, .clearer, (.dweller, 0)) alive rfl),
+   fun all => apart (all .clearer (.dweller, 0) alive), related,
+   fun transmit => apart (transmit (.clearer, (.clearer, 0), (.dweller, 0)) rfl (.inl rfl)
      related alive)⟩
 
-end Totalizer
+end Clearing
 
 end Becoming

@@ -22,9 +22,9 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   nothing beyond it, whether taking from it recurs (`fed_from_beyond`), its members rise
   at arbitrarily late steps (`rising_fed_from_beyond`), or, read with one kind of
   relatum, embodied members arise at arbitrarily late steps
-  (`Web.generation_fed_from_beyond`). Being fed is needed; no source condition need
-  recur: in `Lone` the pool is fed at every step, and each fuel is conveyed from at one
-  step only (`Lone.fed`, `Lone.each_fuel_once`). The one formation conveying, the sun, is
+  (`Web.generation_fed_from_beyond`). Being fed is needed; no condition it is fed
+  from need recur: in `Lone` the pool is fed at every step, and each fuel is conveyed from at one
+  step only (`Lone.fed`, `Lone.each_fuel_once`). The one formation conveying, the source, is
   the same at every step.
 * **Beyond one's own draw.** Each formation can take from a condition within what the
   step gives it (`WithinOwn`) while together they take more (`WithinJoint` fails;
@@ -49,14 +49,14 @@ center, whose continuation counts, is not settled here: `Becoming.Standpoints` s
   and the self continues (`Downstream.one_way`). In `Mortal` a formation active for two
   steps has every dependence met while it lives; its taking ends the renewal of a shared
   condition, and another formation depending on it ends after the first has ended
-  (`Mortal.after_its_end`); without it, the renewer and the heir continue
-  (`Mortal.without_continues`). In `Totalizer`
-  a keeper is active at every step, every condition it depends on is renewed and fed from
+  (`Mortal.after_its_end`); without it, the renewer and the successor continue
+  (`Mortal.without_continues`). In `Clearing`
+  a clearer is active at every step, every condition it depends on is renewed and fed from
   beyond, and it takes jointly within what is given from each of them, while it draws
-  down the habitat of another formation, which ends (`Totalizer.careful`). The endings in
+  down the habitat of a dweller, which ends (`Clearing.undermines_within_renewal`). The endings in
   these witnesses are stipulated in their activity; each witness shows its ending
   consistent with balance, support and dependence, and the general theorems are where an
-  ending is derived. The sun of `Totalizer`, like that of `Lone`, requires nothing.
+  ending is derived. The source of `Clearing`, like that of `Lone`, requires nothing.
 
 The draw-in laws this module rereads are those of `Becoming.Dissipation` and
 `Becoming.Roles`; the delta is the conveyance form, its exactness, the joint count, the
@@ -260,16 +260,16 @@ theorem generation_fed_from_beyond [DecidableEq X] (balances : L.Balances W)
 
 end Web
 
-/-! ## Being fed is needed; no source condition need recur -/
+/-! ## Being fed is needed; no condition it is fed from need recur -/
 
 namespace Lone
 
 open Frontier (Condition burning)
 
-/-- The pool is fed from beyond at every step: the sun conveys from the step's fuel. -/
+/-- The pool is fed from beyond at every step: the source conveys from the step's fuel. -/
 theorem fed (t : Nat) : flow.FedFromBeyond [.pool] t :=
   ⟨.fuel t, .pool, (fun mem => match mem with | .tail _ no => nomatch no),
-   .head _, .sun, .head _,
+   .head _, .source, .head _,
    show 0 < 2 * burning t t from
      Eq.subst (motive := fun b => 0 < 2 * b) (Frontier.burning_self t).symm (Nat.succ_pos 1),
    Nat.zero_lt_one⟩
@@ -279,14 +279,14 @@ theorem each_fuel_once {n t : Nat} {d : Condition} (conveys : flow.Conveys t (.f
     n = t :=
   match conveys with
   | ⟨f, _, takes, _⟩ => match f, takes with
-    | .sun, takes => Frontier.burning_at n t (match h : burning n t with
+    | .source, takes => Frontier.burning_at n t (match h : burning n t with
       | 0 => absurd (Eq.subst (motive := fun b => 0 < 2 * b) h takes) (Nat.lt_irrefl 0)
       | k + 1 => Nat.succ_pos k)
     | .eater, takes => absurd takes (Nat.lt_irrefl 0)
 
 /-- So in a balanced, dissipative flow whose takers recur, the pool is fed at every step,
 while no fuel is conveyed from after its step. -/
-theorem supply_not_source :
+theorem fed_not_recurring :
     flow.Balances web ∧ flow.Dissipative ∧ (∀ t, flow.FedFromBeyond [.pool] t) ∧
       ∀ n t, n < t → ∀ d, ¬ flow.Conveys t (.fuel n) d :=
   ⟨balances, dissipative, fed, fun _ _ before _ conveys =>
@@ -461,9 +461,9 @@ inductive Formation where
 
 inductive Condition where
   | ground
-  | gift
+  | output
 
-def giftLevel : Nat → Nat
+def outputLevel : Nat → Nat
   | 0 => 1
   | 1 => 1
   | 2 => 1
@@ -477,7 +477,7 @@ def downLive : Nat → Prop
   | 3 => True
   | _ + 4 => False
 
-/-- The self gives the gift one unit for three steps; the downstream formation takes one
+/-- The self gives the output one unit for three steps; the downstream formation takes one
 unit of it while it is active. -/
 def present : Nat → List Formation
   | 0 => [.self, .down]
@@ -491,52 +491,52 @@ def flow : Flow Formation Condition where
   take _ f c := match f, c with
     | .self, _ => 0
     | .down, .ground => 0
-    | .down, .gift => 1
+    | .down, .output => 1
   give _ f c := match f, c with
     | .self, .ground => 0
-    | .self, .gift => 1
+    | .self, .output => 1
     | .down, _ => 0
 
-/-- The self depends on its ground, the downstream formation on the gift. -/
+/-- The self depends on its ground, the downstream formation on the output. -/
 def web : Web Formation Condition where
   level t c := match c with
     | .ground => 1
-    | .gift => giftLevel t
+    | .output => outputLevel t
   active t f := match f with
     | .self => True
     | .down => downLive t
   requires _ f c := match f, c with
     | .self, .ground => True
-    | .self, .gift => False
+    | .self, .output => False
     | .down, .ground => False
-    | .down, .gift => True
+    | .down, .output => True
   need _ _ _ := 1
   draws _ f c := match f, c with
     | .self, _ => False
     | .down, .ground => False
-    | .down, .gift => True
+    | .down, .output => True
 
 theorem balances : flow.Balances web
   | 0, .ground => rfl
-  | 0, .gift => rfl
+  | 0, .output => rfl
   | 1, .ground => rfl
-  | 1, .gift => rfl
+  | 1, .output => rfl
   | 2, .ground => rfl
-  | 2, .gift => rfl
+  | 2, .output => rfl
   | 3, .ground => rfl
-  | 3, .gift => rfl
+  | 3, .output => rfl
   | _ + 4, .ground => rfl
-  | _ + 4, .gift => rfl
+  | _ + 4, .output => rfl
 
 theorem dependent : web.Dependent
   | _, .self, _, .ground, _ => Nat.le_refl 1
-  | _, .self, _, .gift, no => nomatch no
+  | _, .self, _, .output, no => nomatch no
   | _, .down, _, .ground, no => nomatch no
-  | 0, .down, _, .gift, _ => Nat.le_refl 1
-  | 1, .down, _, .gift, _ => Nat.le_refl 1
-  | 2, .down, _, .gift, _ => Nat.le_refl 1
-  | 3, .down, _, .gift, _ => Nat.le_refl 1
-  | _ + 4, .down, dead, .gift, _ => nomatch dead
+  | 0, .down, _, .output, _ => Nat.le_refl 1
+  | 1, .down, _, .output, _ => Nat.le_refl 1
+  | 2, .down, _, .output, _ => Nat.le_refl 1
+  | 3, .down, _, .output, _ => Nat.le_refl 1
+  | _ + 4, .down, dead, .output, _ => nomatch dead
 
 /-- The derived extent runs one way. The self's continuation requires only its ground, and
 the self is active and supported at every step; the formation living on what the self
@@ -554,10 +554,10 @@ end Downstream
 
 namespace Mortal
 
-/-- A renewer, an heir and a formation whose life is two steps. -/
+/-- A renewer, a successor and a formation whose life is two steps. -/
 inductive Member where
   | renewer
-  | heir
+  | successor
   | mortal
 
 def level : Nat → Nat
@@ -567,32 +567,32 @@ def level : Nat → Nat
   | _ + 3 => 0
 
 def present : Nat → List Member
-  | 0 => [.renewer, .heir, .mortal]
-  | 1 => [.renewer, .heir, .mortal]
-  | 2 => [.heir]
+  | 0 => [.renewer, .successor, .mortal]
+  | 1 => [.renewer, .successor, .mortal]
+  | 2 => [.successor]
   | _ + 3 => []
 
-/-- The renewer gives one unit; the heir and the mortal formation each take one. -/
+/-- The renewer gives one unit; the successor and the mortal formation each take one. -/
 def flow : Flow Member Unit where
   present := present
   take _ f _ := match f with
     | .renewer => 0
-    | .heir => 1
+    | .successor => 1
     | .mortal => 1
   give _ f _ := match f with
     | .renewer => 1
-    | .heir => 0
+    | .successor => 0
     | .mortal => 0
 
 def live : Nat → Member → Prop
   | 0, _ => True
   | 1, _ => True
   | 2, .renewer => False
-  | 2, .heir => True
+  | 2, .successor => True
   | 2, .mortal => False
   | _ + 3, _ => False
 
-/-- The renewer depends on the condition at need two, the heir and the mortal formation at
+/-- The renewer depends on the condition at need two, the successor and the mortal formation at
 need one. -/
 def web : Web Member Unit where
   level t _ := level t
@@ -600,11 +600,11 @@ def web : Web Member Unit where
   requires _ _ _ := True
   need _ f _ := match f with
     | .renewer => 2
-    | .heir => 1
+    | .successor => 1
     | .mortal => 1
   draws _ f _ := match f with
     | .renewer => False
-    | .heir => True
+    | .successor => True
     | .mortal => True
 
 theorem balances : flow.Balances web
@@ -615,86 +615,87 @@ theorem balances : flow.Balances web
 
 theorem dependent : web.Dependent
   | 0, .renewer, _, _, _ => Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le 1))
-  | 0, .heir, _, _, _ => Nat.succ_le_succ (Nat.zero_le 2)
+  | 0, .successor, _, _, _ => Nat.succ_le_succ (Nat.zero_le 2)
   | 0, .mortal, _, _, _ => Nat.succ_le_succ (Nat.zero_le 2)
   | 1, .renewer, _, _, _ => Nat.le_refl 2
-  | 1, .heir, _, _, _ => Nat.succ_le_succ (Nat.zero_le 1)
+  | 1, .successor, _, _, _ => Nat.succ_le_succ (Nat.zero_le 1)
   | 1, .mortal, _, _, _ => Nat.succ_le_succ (Nat.zero_le 1)
   | 2, .renewer, dead, _, _ => nomatch dead
-  | 2, .heir, _, _, _ => Nat.le_refl 1
+  | 2, .successor, _, _, _ => Nat.le_refl 1
   | 2, .mortal, dead, _, _ => nomatch dead
   | _ + 3, _, dead, _, _ => nomatch dead
 
 /-- The horizon of a want: the mortal formation's dependence is met at every step of its
-life, and its taking ends the renewal of the condition; the heir, depending on the
+life, and its taking ends the renewal of the condition; the successor, depending on the
 condition, ends after the mortal formation has ended. -/
 theorem after_its_end :
     flow.Balances web ∧ web.Dependent ∧
       (∀ t, web.active t .mortal → web.Supported t .mortal) ∧
-      ¬ web.active 2 .mortal ∧ web.active 2 .heir ∧ ¬ web.active 2 .renewer ∧
+      ¬ web.active 2 .mortal ∧ web.active 2 .successor ∧ ¬ web.active 2 .renewer ∧
       ∀ n f, ¬ web.active (n + 3) f :=
   ⟨balances, dependent, fun t active => dependent t .mortal active,
    fun dead => dead, trivial, fun dead => dead,
    fun _ _ dead => dead⟩
 
-/-- Without the mortal formation the renewer and the heir continue at every step. -/
+/-- Without the mortal formation the renewer and the successor continue at every step. -/
 def without : Flow Member Unit where
-  present _ := [.renewer, .heir]
+  present _ := [.renewer, .successor]
   take _ f _ := match f with
     | .renewer => 0
-    | .heir => 1
+    | .successor => 1
     | .mortal => 0
   give _ f _ := match f with
     | .renewer => 1
-    | .heir => 0
+    | .successor => 0
     | .mortal => 0
 
 def kept : Web Member Unit where
   level _ _ := 3
   active _ f := match f with
     | .renewer => True
-    | .heir => True
+    | .successor => True
     | .mortal => False
   requires _ _ _ := True
   need _ f _ := match f with
     | .renewer => 2
-    | .heir => 1
+    | .successor => 1
     | .mortal => 1
   draws _ f _ := match f with
     | .renewer => False
-    | .heir => True
+    | .successor => True
     | .mortal => False
 
 theorem without_continues :
-    without.Balances kept ∧ kept.Dependent ∧ ∀ t, kept.active t .renewer ∧ kept.active t .heir :=
+    without.Balances kept ∧ kept.Dependent ∧
+      ∀ t, kept.active t .renewer ∧ kept.active t .successor :=
   ⟨fun _ _ => rfl,
    fun _ f _ _ _ => match f with
     | .renewer => Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le 1))
-    | .heir => Nat.succ_le_succ (Nat.zero_le 2)
+    | .successor => Nat.succ_le_succ (Nat.zero_le 2)
     | .mortal => Nat.succ_le_succ (Nat.zero_le 2),
    fun _ => ⟨trivial, trivial⟩⟩
 
 end Mortal
 
 
-namespace Totalizer
+namespace Clearing
 
 open Frontier (unburnt burning)
 
-/-- A sun, a keeper and another formation. -/
+/-- A source, a clearer and a dweller. -/
 inductive Formation where
-  | sun
-  | keeper
-  | other
+  | source
+  | clearer
+  | dweller
 
-/-- The keeper's supply, the other formation's habitat, and the fuels the sun burns. -/
+/-- The clearer's resource, the dweller's habitat, and the fuels the source burns. -/
 inductive Place where
-  | supply
+  | resource
   | habitat
   | fuel (n : Nat)
 
-/-- The keeper takes one unit of the habitat at each of the first two steps. -/
-def clearing : Nat → Nat
+/-- The clearer takes one unit of the habitat at each of the first two steps. -/
+def cleared : Nat → Nat
   | 0 => 1
   | 1 => 1
   | _ + 2 => 0
@@ -704,61 +705,61 @@ def habitatLevel : Nat → Nat
   | 1 => 1
   | _ + 2 => 0
 
-def otherLive : Nat → Prop
+def dwellerLive : Nat → Prop
   | 0 => True
   | 1 => True
   | _ + 2 => False
 
-/-- The sun burns the `t`th fuel, two units, and gives the supply one; the keeper takes one
-unit of the supply at every step and clears the habitat. -/
+/-- The source burns the `t`th fuel, two units, and gives the resource one; the clearer takes one
+unit of the resource at every step and clears the habitat. -/
 def flow : Flow Formation Place where
-  present _ := [.sun, .keeper, .other]
+  present _ := [.source, .clearer, .dweller]
   take t f c := match f, c with
-    | .sun, .fuel n => 2 * burning n t
-    | .sun, .supply => 0
-    | .sun, .habitat => 0
-    | .keeper, .supply => 1
-    | .keeper, .habitat => clearing t
-    | .keeper, .fuel _ => 0
-    | .other, _ => 0
+    | .source, .fuel n => 2 * burning n t
+    | .source, .resource => 0
+    | .source, .habitat => 0
+    | .clearer, .resource => 1
+    | .clearer, .habitat => cleared t
+    | .clearer, .fuel _ => 0
+    | .dweller, _ => 0
   give _ f c := match f, c with
-    | .sun, .supply => 1
-    | .sun, .habitat => 0
-    | .sun, .fuel _ => 0
-    | .keeper, _ => 0
-    | .other, _ => 0
+    | .source, .resource => 1
+    | .source, .habitat => 0
+    | .source, .fuel _ => 0
+    | .clearer, _ => 0
+    | .dweller, _ => 0
 
-/-- The keeper depends on its supply, the other formation on its habitat, each at need
+/-- The clearer depends on its resource, the dweller on its habitat, each at need
 one. -/
 def web : Web Formation Place where
   level t c := match c with
-    | .supply => 1
+    | .resource => 1
     | .habitat => habitatLevel t
     | .fuel n => 2 * unburnt n t
   active t f := match f with
-    | .sun => True
-    | .keeper => True
-    | .other => otherLive t
+    | .source => True
+    | .clearer => True
+    | .dweller => dwellerLive t
   requires _ f c := match f, c with
-    | .keeper, .supply => True
-    | .other, .habitat => True
-    | .sun, _ => False
-    | .keeper, .habitat => False
-    | .keeper, .fuel _ => False
-    | .other, .supply => False
-    | .other, .fuel _ => False
+    | .clearer, .resource => True
+    | .dweller, .habitat => True
+    | .source, _ => False
+    | .clearer, .habitat => False
+    | .clearer, .fuel _ => False
+    | .dweller, .resource => False
+    | .dweller, .fuel _ => False
   need _ _ _ := 1
   draws t f c := match f, c with
-    | .sun, .fuel n => n = t
-    | .sun, .supply => False
-    | .sun, .habitat => False
-    | .keeper, .supply => True
-    | .keeper, .habitat => True
-    | .keeper, .fuel _ => False
-    | .other, _ => False
+    | .source, .fuel n => n = t
+    | .source, .resource => False
+    | .source, .habitat => False
+    | .clearer, .resource => True
+    | .clearer, .habitat => True
+    | .clearer, .fuel _ => False
+    | .dweller, _ => False
 
 theorem balances : flow.Balances web
-  | _, .supply => rfl
+  | _, .resource => rfl
   | 0, .habitat => rfl
   | 1, .habitat => rfl
   | _ + 2, .habitat => rfl
@@ -766,72 +767,72 @@ theorem balances : flow.Balances web
       (Nat.left_distrib 2 _ _).symm.trans (congrArg (2 * ·) (Frontier.burns n t))
 
 theorem dependent : web.Dependent
-  | _, .keeper, _, .supply, _ => Nat.le_refl 1
-  | 0, .other, _, .habitat, _ => Nat.succ_le_succ (Nat.zero_le 1)
-  | 1, .other, _, .habitat, _ => Nat.le_refl 1
-  | _ + 2, .other, dead, .habitat, _ => nomatch dead
-  | _, .sun, _, _, no => nomatch no
-  | _, .keeper, _, .habitat, no => nomatch no
-  | _, .keeper, _, .fuel _, no => nomatch no
-  | _, .other, _, .supply, no => nomatch no
-  | _, .other, _, .fuel _, no => nomatch no
+  | _, .clearer, _, .resource, _ => Nat.le_refl 1
+  | 0, .dweller, _, .habitat, _ => Nat.succ_le_succ (Nat.zero_le 1)
+  | 1, .dweller, _, .habitat, _ => Nat.le_refl 1
+  | _ + 2, .dweller, dead, .habitat, _ => nomatch dead
+  | _, .source, _, _, no => nomatch no
+  | _, .clearer, _, .habitat, no => nomatch no
+  | _, .clearer, _, .fuel _, no => nomatch no
+  | _, .dweller, _, .resource, no => nomatch no
+  | _, .dweller, _, .fuel _, no => nomatch no
 
-/-- Every family without repetition closed across a step is dissipated on: the sun gives
-the supply one unit and burns two; the keeper and the other formation give nothing. -/
+/-- Every family without repetition closed across a step is dissipated on: the source gives
+the resource one unit and burns two; the clearer and the dweller give nothing. -/
 theorem dissipative : flow.Dissipative
   | ds, t, distinct, closed, f, mem => match f, mem with
-    | .keeper, _ => Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (total_zero ds)).trans
+    | .clearer, _ => Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (total_zero ds)).trans
         (Nat.zero_add _))) (sign_le _)
-    | .other, _ => show total ds (fun _ => 0) + sign (total ds (fun _ => 0)) ≤
+    | .dweller, _ => show total ds (fun _ => 0) + sign (total ds (fun _ => 0)) ≤
           total ds (fun _ => 0) from
         Eq.subst (motive := fun x => x + sign x ≤ x) (total_zero ds).symm (Nat.le_refl 0)
-    | .sun, mem =>
-      have gives : total ds (flow.give t .sun) ≤ 1 :=
-        total_le_at (q := flow.give t .sun) (a := .supply) (fun c given => match c, given with
-          | .supply, _ => rfl
+    | .source, mem =>
+      have gives : total ds (flow.give t .source) ≤ 1 :=
+        total_le_at (q := flow.give t .source) (a := .resource) (fun c given => match c, given with
+          | .resource, _ => rfl
           | .habitat, given => absurd given (Nat.lt_irrefl 0)
           | .fuel _, given => absurd given (Nat.lt_irrefl 0)) distinct
-      have burnt : flow.take t .sun (.fuel t) = 2 :=
+      have burnt : flow.take t .source (.fuel t) = 2 :=
         (congrArg (2 * ·) (Frontier.burning_self t)).trans (Nat.mul_one _)
-      match Nat.decLe (total ds (flow.give t .sun) + sign (total ds (flow.take t .sun)))
-          (total ds (flow.take t .sun)) with
+      match Nat.decLe (total ds (flow.give t .source) + sign (total ds (flow.take t .source)))
+          (total ds (flow.take t .source)) with
       | isTrue le => le
       | isFalse not => absurd (fun inside : Place.fuel t ∈ ds => not
           (Nat.le_trans (Nat.add_le_add gives (sign_le_one _))
             (Nat.le_trans (Nat.le_of_eq burnt.symm) (le_total_of_mem inside))))
-          fun outside => Nat.noConfusion (burnt.symm.trans (closed .sun mem (.fuel t) outside).1)
+          fun outside => Nat.noConfusion (burnt.symm.trans (closed .source mem (.fuel t) outside).1)
 
-/-- The supply is fed from beyond at every step: the sun conveys from the step's fuel. -/
-theorem fed (t : Nat) : flow.FedFromBeyond [.supply] t :=
-  ⟨.fuel t, .supply, (fun mem => match mem with | .tail _ no => nomatch no),
-   .head _, .sun, .head _,
+/-- The resource is fed from beyond at every step: the source conveys from the step's fuel. -/
+theorem fed (t : Nat) : flow.FedFromBeyond [.resource] t :=
+  ⟨.fuel t, .resource, (fun mem => match mem with | .tail _ no => nomatch no),
+   .head _, .source, .head _,
    show 0 < 2 * burning t t from
      Eq.subst (motive := fun b => 0 < 2 * b) (Frontier.burning_self t).symm (Nat.succ_pos 1),
    Nat.zero_lt_one⟩
 
-/-- The careful totalizer. The keeper is active and supported at every step; the only
-condition it depends on is its supply, which is renewed, fed from beyond and taken from
+/-- Undermining within renewal. The clearer is active and supported at every step; the only
+condition it depends on is its resource, which is renewed, fed from beyond and taken from
 jointly within what each step gives; in a balanced, dissipative flow. Its clearing of the
-habitat undermines at step one, and the other formation, depending on the habitat, is
+habitat undermines at step one, and the dweller, depending on the habitat, is
 inactive from step two on. -/
-theorem careful :
+theorem undermines_within_renewal :
     flow.Balances web ∧ flow.Dissipative ∧ web.Dependent ∧
-      (∀ t c, web.requires t .keeper c → c = .supply) ∧
-      (∀ t, web.active t .keeper ∧ web.Supported t .keeper) ∧
-      web.Renewed .supply ∧ (∀ t, flow.FedFromBeyond [.supply] t) ∧
-      (∀ t, flow.WithinJoint t .supply) ∧
-      web.UnderminingAt 1 .keeper ∧ ∀ n, ¬ web.active (n + 2) .other :=
+      (∀ t c, web.requires t .clearer c → c = .resource) ∧
+      (∀ t, web.active t .clearer ∧ web.Supported t .clearer) ∧
+      web.Renewed .resource ∧ (∀ t, flow.FedFromBeyond [.resource] t) ∧
+      (∀ t, flow.WithinJoint t .resource) ∧
+      web.UnderminingAt 1 .clearer ∧ ∀ n, ¬ web.active (n + 2) .dweller :=
   ⟨balances, dissipative, dependent,
-   fun _ c depends => match c, depends with | .supply, _ => rfl,
-   fun t => ⟨trivial, dependent t .keeper trivial⟩,
-   fun _ g depends => match g, depends with | .keeper, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩,
+   fun _ c depends => match c, depends with | .resource, _ => rfl,
+   fun t => ⟨trivial, dependent t .clearer trivial⟩,
+   fun _ g depends => match g, depends with | .clearer, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩,
    fed, fun _ => Nat.le_refl 1,
-   ⟨.habitat, trivial, .other, trivial,
-    Web.MetAbove.now (W := web) (t := 1) (g := Formation.other) (c := Place.habitat)
+   ⟨.habitat, trivial, .dweller, trivial,
+    Web.MetAbove.now (W := web) (t := 1) (g := Formation.dweller) (c := Place.habitat)
       trivial (Nat.le_refl 1) Nat.zero_lt_one,
     Nat.zero_lt_one⟩,
    fun _ dead => dead⟩
 
-end Totalizer
+end Clearing
 
 end Becoming

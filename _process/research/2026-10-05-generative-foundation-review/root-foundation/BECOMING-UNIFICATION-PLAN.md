@@ -257,6 +257,7 @@ Three rings, with dependence pointing only toward the core; one checker and one 
 | W1–W5、W8 延续的奠基 ✓ | Ren 2026-10-10 的提议，按[延续奠基计划](CONTINUATION-GROUNDING-PLAN.md)，阶段以 W 编号：`Continuation`（L3）：从其外得到供给恰是不内向（`Flow.inward_iff_not_fed`），延续的家族不能从某步起都没有东西从其外输送入（`Flow.fed_from_beyond` 及上升与生起的形式），必要的是得到供给、不必有来源条件复现（`Lone.supply_not_source`）；各自在所给之内、合起来超出（`Pair.own_not_joint`），联合超出持续不过原有的（`Flow.excess_bounded`），更新依存于所更新者时终结更新者与以其所需依存者（`Flow.joint_excess_ends`、`Exceeding.all_end`）；推出的范围单向（`Downstream.one_way`）、随想要结束（`Mortal.after_its_end`），谨慎的照管者满足此处推出的每项要求（`Totalizer.careful`）；`Standpoints`（L4）：每个活的主张都被持有时 G0 恰等于处处 S0 加 N_std（`Valuation.significant_iff_held`；无人持有者另需 N_rel，`significant_iff_reached`；反模型 `Apart.not_enough`、`Unclaimed`、`Relayed`；连通时 S0 加 N_rel 是另一种补全，`Valuation.significant_of_transmits`），每个形成是自己的中心（`Web.significant_iff_self`），沿依存中心不由动力学推出（`Flow.FedBy`、`Totalizer.center_not_derived`）；输送穿越延续家族的边界（`Flow.region_not_a_cut`），使两个条件相关，交互、以之为生与世系从不如此（`Flow.roles_conditions_unrelated`） | 核心与外围检查通过：回执 20261009T222752.438253Z（1280 项定理／2062 项声明审计），外围回执 20261009T223112.652163Z；见[研究 §47](BECOMING-RENEWAL-READING.md#47-延续的奠基从想要延续者重述w1w5) 与章节 §6.7；G0 仍是所采用的公理，重述待 Ren；W8：[独立审查](CONTINUATION-GROUNDING-REVIEW.md)的十三项更正已处理（研究 §47.1–47.4），回执 20261009T231934.987085Z（1285 项定理／2069 项声明审计），外围回执 20261010T073508.393062Z |
 | P34b 第十三次审查的处理 ✓ | 计数表是计数的全部规律，它强于平衡（`tally_iff`、`balance_not_tally`），列出所能有的计数恰是计数表（`tally_iff_counted`），各处的标题与说明随之改正（U1、U7）；两份记录改用把“生成的”“退化的”留给 Ren 的标准句（U2）；队首照管的队列中三个前提空成立（`World.tended_not_binds`），每个前提都起约束时普查计到某个生起（`World.binds_arising`、`World.binds_adds`）（U3）；核心的算术集中于 `Dependence` 开头，`le_total_of_mem` 移入 `Flow`（U6）；“步后列出的多于步前”（U8）；登记检查形如 Lean 名称的别名（U9） | 核心与外围检查通过：回执 20261010T075031.720357Z（1356 项定理／2161 项声明审计），外围回执 20261010T075308.552033Z；见[研究 §48](BECOMING-RENEWAL-READING.md#48-第十三次独立审查与更正p34b) |
 | P35 被围住时与有限世界中计数的规律 ✓ | `Population`：变化界（`occurrences`、`ChangeBound`），变化界之内变化不复现，从某步起的变化界就是从第 0 步起的变化界（`changeBound_iff_zero`），终结之步一般地需要全知（`ChangeBound.lpo_of_ends`）；`Openness`：被围住为变化定下界（`World.enclosure_bounds_change`），被围住的队列满足全部八个前提、每步都被围住（`World.enclosedQueue_premised`），所以八个前提之下从某步起被围住时计数的规律恰是计数表、没有关系项活跃的一步上没有生起与变化界（`World.enclosed_counting`）；放在有限多个位置上它是有限世界，所以有限世界的规律相同（`World.finite_counting`、`World.enclosed_iff_finite_counting`），耗散在其中起约束，这个界可以达到（`World.finite_dissipation_binds`、`World.replaced_attains`），终结之步一般地需要全知（`World.lpo_of_finite_ends`） | 核心与外围检查通过：回执 20261010T075031.720357Z，外围回执 20261010T075308.552033Z；见[研究 §49](BECOMING-RENEWAL-READING.md#49-被围住时与有限世界中计数的规律p35) |
+| P36 见证改名 ✓ | 核心中社会、金融与诗化的见证名改为描述其动力学的名称，以其命名的声明随之改名；陈述、证明与计数不变；对照表见第 10 节 | 核心与外围检查通过：回执 20261010T083222.285294Z（1356 项定理／2161 项声明审计），外围回执 20261010T084107.973758Z；见[研究 §50](BECOMING-RENEWAL-READING.md#50-见证改名p36) |
 
 各阶段沿用既有流程：先在暂存区编译并核对公理，再登记包、写记录与研究章节，跑全部检查，最后提交。读法、名称、“生”的范围与接续仍由 Ren 定，见上文第 6 节与研究各节的“边界”。
 
@@ -294,5 +295,83 @@ The phases are:
 - P34: the whole law of counting, done: across each step some members are kept, with what ceased making the list before and with what came the list after (`Listed.keeps`, from which `Listed.across` follows); every tally is counted by a queue (`Queue.counts`), so a pointwise property of the counts holds of every listing exactly when it holds of every tally (`counting_laws`); queue worlds meet every premise but embodiment, or every premise but balance, so premises lacking either leave counting free (`World.counting_free`), while together, with only active relata giving, they bind it: nothing arises across a step at which nothing is active (`World.counting_binds_jointly`), and that is all the eight add, a queue tended by its front meeting all eight wherever nothing joins an empty queue (`World.tendedQueue_premised`, `World.premised_counting`). Receipt 20261009T205957.521123Z (1223 theorems/1958 declaration audits), periphery receipt 20261009T210516.903787Z.
 - P34b: integrating the thirteenth review, done: the tally is the whole law of counting and is stronger than the balance (`tally_iff`, `balance_not_tally`), the counts some listing has being exactly the tallies (`tally_iff_counted`), with every headline and gloss corrected (U1, U7); two records carry the standard sentence leaving generative and degenerative to Ren (U2); three premises hold idly in the tended queue (`World.tended_not_binds`), and where every premise binds every census counts an arising (`World.binds_arising`, `World.binds_adds`) (U3); the core's arithmetic is gathered at the head of `Dependence`, with `le_total_of_mem` in `Flow` (U6); formations listed, not standing, after a step (U8); the registry checks aliases written as Lean names (U9). Receipt 20261010T075031.720357Z (1356 theorems/2161 declaration audits), periphery receipt 20261010T075308.552033Z.
 - P35: counting under enclosure and in finite worlds, done: enclosure bounds change (`World.enclosure_bounds_change`, `ChangeBound`), a change bound from some step being one from the first (`changeBound_iff_zero`); an enclosed queue meets all eight premises with every step enclosed (`World.enclosedQueue_premised`), so under the eight, with every step from some step on enclosed, the laws of counting are the tally, nothing arising across a step at which nothing is active, and a change bound from the first step (`World.enclosed_counting`); on finitely many places the queue is a finite world, so finite worlds have the same laws (`World.finite_counting`, `World.enclosed_iff_finite_counting`), dissipation binding and the bound attained there (`World.finite_dissipation_binds`, `World.replaced_attains`); an end step for change implies the limited principle of omniscience (`ChangeBound.lpo_of_ends`, `World.lpo_of_finite_ends`). Receipt 20261010T075031.720357Z, periphery receipt 20261010T075308.552033Z.
+- P36: witness names, done: the core's social, financial and poetic witness names become names of their dynamics, with the declarations named after them; statements, proofs and counts are unchanged; the table is in section 10. Receipt 20261010T083222.285294Z, periphery receipt 20261010T084107.973758Z.
 
 Formal completeness of a representation does not establish the deductive necessity of the whole for reality, and the readings and names remain Ren's.
+
+## 10. 第一部分与第二部分 / Part I and Part II
+
+2026-10-10。Ren 的[指示](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)：“let's aim for the strongest claim without axiom, as the first part, and add one axiom, as the following part, the no axiom part is most important and elegant”。Ren 在[另一次对话](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)中选定路线：“let's aim for a first, then try to archive b”，并确认了两项读法：可能性读作接下来能形成什么；整体从不是任何中心对它的模型。
+
+**结构（AI 的读法）。**
+
+- **第一部分：不用公理。** 它是不用公理所能得到的最强陈述，对每个所表示的展开成立；前提只作为条件定理的假设出现。内容包括：
+  - 不加前提的规律、前提的地图与计数的精确规律；
+  - 被围住、静止与开放；
+  - 延续中的形成必须计入的范围，以及动力学在何处不再决定（沿依存，中心不由推出）；
+  - P37 的区域：可能性、三个区域与其相界、层级。
+- **第二部分：加一条公理。** 这条公理是 Ren 原来的“for anything, its continuation into the future has significance”，第二部分陈述它推出什么。在路线 (a) 下，G0 是目标定理，尚待证明；在此之前，G0 仍是所采用的公理。
+- **之后尝试路线 (b)：不加公理。**
+
+“零公理”保持强义：第一部分既不用伦理公理，也不用实质公理。表示的承诺另行公开，即离散的步、自然数的量、共享的下标与计数处的可判定性。
+
+**名称。** Ren 把名称交给 AI，标准见上引原话：
+- 最精确的词；
+- 零公理部分用描述抽象动力学的形式词；
+- 科学与系统的词；
+- 社会与金融的词不作首选。
+
+旧规仍在：形式部分不以 Ren 自己的用语命名。Ren 又说，把整个模型叫作 generative 并不对，“it should be the model of becoming/evolution”。所以生成（becoming）不再译作 generative，generative 只指生成的区域（P36b）。
+
+| 阶段 | 内容 | 验收 |
+|---|---|---|
+| P36 见证改名 ✓ | 见下表；陈述、证明与计数不变；历史各节、旧回执、审查与探针保留原名 | 回执 20261010T083222.285294Z，外围回执 20261010T084107.973758Z；[研究 §50](BECOMING-RENEWAL-READING.md#50-见证改名p36) |
+| P36b 生成不译作 generative | 英文叙述中把整体（生成）叫作 generative 之处改为 becoming，generative 只指生成的区域；先改入口与标题（README 的来源、BRIEF、章节标题）；现行章节中约两千处用法须逐处判断，全库清扫的规模另行提出；引用 Ren 原话之处不改；GOALS 的文字等 Ren 同意，路径作为兼容入口保留 | 链接与生成页检查 |
+| P37 区域（另一会话） | 包括：可能性（接下来能形成什么，以包含比较，有无一个形成的反事实说明它贡献什么）；退化、中性与生成三个区域；相界定理（没有条件能被永远耗下去，门控条件的持续损失终结需要它者）；层级（自身 ⊂ 系统 ⊂ 整体）与延续和不退化在何处重合；搭便车者的见证；带有所表示边界的形成与其实际依存范围的比较 | Lean 检查、记录与研究节 |
+| P38 第一部分的总陈述与章节重组 | 章节分为第一部分与第二部分；第一部分以一条总陈述收束，说明三件事：不加公理时对每个展开成立什么，每个前提加了什么，动力学在何处不再决定 | 章节、记录与生成页检查 |
+| P39 第二部分（另一会话） | 一条公理，即延续到将来对任何东西都有意义；G0 作为目标定理 | Lean 检查与审查 |
+| P40 路线 (b) | 不加公理：“应当”是中心在其所表示的边界与其实际依存一致时所做的；只解释承认与动机，不主张更多的根据 | 待定 |
+
+**P36 对照表 / P36 rename table.** 只改名；声明的陈述与证明不变。旧名留在历史条目、保留的运行、旧回执与审查文件中，按此表读。
+
+| 旧名 / Old | 新名 / New | 所述的动力学 / Dynamics |
+|---|---|---|
+| `Handing`、`World.handing`、`SprayHanding` | `Shuttle`、`World.shuttle`、`SprayShuttle` | 两侧来回传递一个单位 / two sides pass one unit back and forth |
+| `Kindling`、`World.kindling`；`Ember`、`World.ember` | `Throughput`、`World.throughput`；`EmbodiedThroughput`、`World.embodiedThroughput` | 每步烧掉新燃料的同一传递；每个关系项立着时活跃 / the same passing, burning a fresh fuel each step; each relatum active while it stands |
+| `Spending`、`World.spending`、`spends` | `SelfDrawing`、`World.selfDrawing`、`undermines` | 每侧汲取自身所立 / each side draws on its own standing |
+| `Keeping`、`World.keeping`（`keeper`） | `Lossless`、`World.lossless`（`drawer`） | 取走存处的单位又还回，什么都不损失 / a drawer takes its store's unit and gives it back |
+| `Tended`、`World.tendedQueue`、`tended_not_binds` | `OpenQueue`、`World.openQueue`、`openQueue_not_binds` | 队首与无界的地交换的队列，与 `EnclosedQueue` 相对 / a queue whose front exchanges with an unbounded ground |
+| `Commons`（`sharing`、`winning`） | `Renewable`（`withinRenewal`、`beyondRenewal`） | 每步更新一个单位的条件，在更新之内或超出更新取用 / a condition renewed by one unit per step, drawn within or beyond renewal |
+| `Totalizer`（`sun`、`keeper`、`other`、`supply`；`careful`、`clearing`） | `Clearing`（`source`、`clearer`、`dweller`、`resource`；`undermines_within_renewal`、`cleared`） | 在更新之内取用自身资源的形成清除栖居者的栖息地 / a formation drawing its own resource within renewal clears a dweller's habitat |
+| `SunSeed`、`EmbodiedSun`，其余见证中的 `sun` | `SourceSeed`、`EmbodiedSource`、`source` | 不依存于任何东西、从外给予的关系项 / a relatum depending on nothing that gives from beyond |
+| `Dawn`、`Dusk`（`World.dawn`、`World.dusk`） | `Accretion`、`Attrition`（`World.accretion`、`World.attrition`） | 只生起；只止息 / only arising; only ceasing |
+| `Garden` | `Expansion` | 每步生起一个更新者与一个增长者 / a renewer and a grower arise at each step |
+| `Bloom`（`bloom`、`glow`） | `Oscillation`（`oscillator`、`charge`） | 恒定流入上的间歇取用 / intermittent taking on a constant inflow |
+| `Recycle` 的 `bloom` | `consumer` | 物质循环中的取用者 / the taker in a material cycle |
+| `Stranger`、`Crowd` | `Unrelated`、`Unrecorded` | 不参与的给予条目；流不记录的汲取 / a give entry of a relatum taking no part; drawing the flow does not record |
+| `Downstream` 的 `gift`、`giftLevel` | `output`、`outputLevel` | 自身给予的条件 / the condition the self gives to |
+| `heir`、`elder` | `successor`、`predecessor` | 接续 / succession |
+| `Dip` 与 `Dependence` 见证中的 `keeper`、`keeperActive` | `dependent`、`dependentActive` | 依存于条件的形成 / the formation depending on the condition |
+| `Lone.supply_not_source`；`Totalizer.keeper_not_living`、`fedBy_sun`、`supply_not_cut`、`supply_not_cut_living_on` | `Lone.fed_not_recurring`；`Clearing.clearer_not_living`、`fedBy_source`、`resource_not_cut`、`resource_not_cut_living_on` | 以上改名所及的定理 / theorems named after the above |
+
+保留的名称有三类：
+- 科学与生态学的见证名，如 `Hatch`、`Mutualism`、`Predation`、`Brood`、`Seedbank`、`Grazing`、`Drawdown`、`Famine`、`Cascade`、`Tide`、`Turnover`、`Lineage`、`Succession`、`Dormancy`；
+- `Identity` 中泉的 `keeper`，它更新所依存的泉；
+- 第二部分的词汇（S0、G0、`Held`、`Unclaimed`、`Apart`、`Relayed`、`Ranking` 的比较），它们等第二部分的公理定下后再看。
+
+外围定律族与命名空间 `Generative` 也保留原名。
+
+**English.** Following Ren's instruction, the theory is stated in two parts:
+- **Part I** is the strongest claim with no axiom, holding of every unfolding as represented, with premises appearing only as hypotheses of conditional theorems.
+- **Part II** adds one axiom, Ren's original “for anything, its continuation into the future has significance”, with G0 as the target theorem under route (a). G0 remains the adopted axiom until that is proved.
+- **Route (b)**, with no axiom, comes after.
+
+Ren confirmed two readings: possibilities as what can form next, and the whole as never any center's model of it. Ren delegated names under criteria: the most precise word; in the zero-axiom part, formal words describing the abstract dynamics; scientific and systems words; social and financial words not the first choice. Ren also said the whole model “should be the model of becoming/evolution”, so becoming is no longer rendered as generative, which names one regime only.
+
+The stages:
+- **P36:** witness names, done; the table is above.
+- **P36b:** generative no longer stands for becoming in English prose. Entry points and titles come first; a sweep of the roughly two thousand uses in the current chapters, each needing a judgment, will be proposed with its scale; quotations of Ren stay.
+- **P37:** the regimes, by the other session. It covers possibilities, the three regimes and their phase boundaries, the levels, a free-rider witness, and represented boundaries against actual dependence.
+- **P38:** the Part I capstone and the chapter restructure.
+- **P39:** Part II, by the other session.
+- **P40:** route (b).

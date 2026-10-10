@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
   "claim": {
-    "zh": "把条件读作数量：一个流给出每步参与的形成，以及每个形成从每个条件取用与给予的量；流平衡一个依存网，当条件水平的每次变化恰是取用与给予之差。对一个有限的条件家族，一步之后的总水平加上取用，等于之前的总水平加上补充；对任意一段步也如此（消耗与补充的平衡）。平衡且只有活跃形成给予时，每次上升都由某个活跃的补充者造成，所以 unceasing-generation-needs-renewal 的对应前提 RenewedBy 成为定理。生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位。于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。每个形成每步给予家族的量至多一个固定量时，补充者的数目在同一平均意义上增长，没有最终的界，但可以在无穷多步上为零。在活跃形成的普查之下（每步活跃的形成列成不重复的有限表），若流的 present 每步每个形成只列一次，只有活跃的形成取用（Taking 中只用到这一半），活跃的形成没有界地增多，不止地更多蕴含不息的生成；花园与循环满足全部这些前提，所以蕴含不是空的；不息地反复生起的开花满足这些前提而不更多，所以这一蕴含是严格的；没有普查、present 有重复，或取用者不活跃时，不止地更多可以没有任何生起。每一步都生起一个更新者和一个生长者的流满足全部前提，并且不止地更多；在封闭循环中，每个形成归还所取，总量不变，生成不止地更多，补充者恰是取用者。所以在平衡的流中，复现的取用与不止地更多所需的补充构成严格的层级：前者（取用的形成不息地生起是其一种情形）需要补充在任意晚的步出现，后者需要补充没有最终的界。不用伦理前提，也不用 Lean 公理。",
-    "en": "Reading conditions as amounts: a flow gives the formations taking part in each step and how much each takes from and gives to each condition; it balances a web of dependence when every change of a condition's level is what is taken and given. For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment). When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem. Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step. Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps. Under a census of active formations (the active formations at each step listed once in a finite list), if the flow's present lists each formation once per step and only active formations take (only this half of Taking is used), the active formations grow without bound and more without end implies unceasing generation; the garden and the cycle meet all these premises, so the implication is not vacuous; the bloom that arises again and again meets these premises and is not more, so the implication is strict; without a census, with a formation listed many times in present, or with takers that are not active, more without end can come with nothing arising. A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle each formation gives back what it takes, the total never changes, generation is more without end, and the renewers are exactly the takers. So in balanced flows the replenishment needed by recurring uptake and by more without end forms a strict hierarchy: the first, of which unceasing arising of takers is one case, needs replenishment at arbitrarily late steps, the second replenishment with no eventual bound. No ethical premise and no Lean axiom is used."
+    "zh": "把条件读作数量：一个流给出每步参与的形成，以及每个形成从每个条件取用与给予的量；流平衡一个依存网，当条件水平的每次变化恰是取用与给予之差。对一个有限的条件家族，一步之后的总水平加上取用，等于之前的总水平加上补充；对任意一段步也如此（消耗与补充的平衡）。平衡且只有活跃形成给予时，每次上升都由某个活跃的补充者造成，所以 unceasing-generation-needs-renewal 的对应前提 RenewedBy 成为定理。生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位。于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。每个形成每步给予家族的量至多一个固定量时，补充者的数目在同一平均意义上增长，没有最终的界，但可以在无穷多步上为零。在活跃形成的普查之下（每步活跃的形成列成不重复的有限表），若流的 present 每步每个形成只列一次，只有活跃的形成取用（Taking 中只用到这一半），活跃的形成没有界地增多，不止地更多蕴含不息的生成；扩张与循环满足全部这些前提，所以蕴含不是空的；不息地反复生起的振荡者满足这些前提而不更多，所以这一蕴含是严格的；没有普查、present 有重复，或取用者不活跃时，不止地更多可以没有任何生起。每一步都生起一个更新者和一个生长者的流满足全部前提，并且不止地更多；在封闭循环中，每个形成归还所取，总量不变，生成不止地更多，补充者恰是取用者。所以在平衡的流中，复现的取用与不止地更多所需的补充构成严格的层级：前者（取用的形成不息地生起是其一种情形）需要补充在任意晚的步出现，后者需要补充没有最终的界。不用伦理前提，也不用 Lean 公理。",
+    "en": "Reading conditions as amounts: a flow gives the formations taking part in each step and how much each takes from and gives to each condition; it balances a web of dependence when every change of a condition's level is what is taken and given. For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment). When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem. Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step. Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps. Under a census of active formations (the active formations at each step listed once in a finite list), if the flow's present lists each formation once per step and only active formations take (only this half of Taking is used), the active formations grow without bound and more without end implies unceasing generation; the expansion and the cycle meet all these premises, so the implication is not vacuous; the oscillator that arises again and again meets these premises and is not more, so the implication is strict; without a census, with a formation listed many times in present, or with takers that are not active, more without end can come with nothing arising. A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle each formation gives back what it takes, the total never changes, generation is more without end, and the renewers are exactly the takers. So in balanced flows the replenishment needed by recurring uptake and by more without end forms a strict hierarchy: the first, of which unceasing arising of takers is one case, needs replenishment at arbitrarily late steps, the second replenishment with no eventual bound. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -51,16 +51,16 @@
     "Becoming.Flow.More.unceasing",
     "Becoming.Web.arises_of_more",
     "Becoming.Web.unceasing_of_growth",
-    "Becoming.Garden.more",
-    "Becoming.Bloom.not_more",
-    "Becoming.Bloom.counted",
+    "Becoming.Expansion.more",
+    "Becoming.Oscillation.not_more",
+    "Becoming.Oscillation.counted",
     "Becoming.Cycle.closed_more",
     "Becoming.Pulse.pulsed",
     "Becoming.Dormant.more_without_arising",
     "Becoming.Inactive.more_without_arising",
-    "Becoming.Crowd.drawing_without_taking",
+    "Becoming.Unrecorded.drawing_without_taking",
     "Becoming.Flow.More.grows",
-    "Becoming.Garden.counted",
+    "Becoming.Expansion.counted",
     "Becoming.Cycle.counted",
     "Becoming.Repeated.more_without_arising"
   ],
@@ -69,13 +69,13 @@
       "id": "unceasing-generation-needs-renewal",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 total、stock、RenewedBy、Arises、Unceasing 与 Bloom 的依存网；Balances.renewedBy 推出该结果的对应前提 RenewedBy。",
-        "en": "Reuses total, stock, RenewedBy, Arises, Unceasing and Bloom's web; Balances.renewedBy derives that result's correspondence premise RenewedBy."
+        "zh": "复用 total、stock、RenewedBy、Arises、Unceasing 与 Oscillation 的依存网；Balances.renewedBy 推出该结果的对应前提 RenewedBy。",
+        "en": "Reuses total, stock, RenewedBy, Arises, Unceasing and Oscillation's web; Balances.renewedBy derives that result's correspondence premise RenewedBy."
       },
       "interface": {
         "output": {
-          "zh": "有限家族的总水平、生起、不息与更新由形成造成；开花的依存网。",
-          "en": "Finite families' total level, arising, unceasing generation and renewal made by formations; the bloom's web."
+          "zh": "有限家族的总水平、生起、不息与更新由形成造成；Oscillation 的依存网。",
+          "en": "Finite families' total level, arising, unceasing generation and renewal made by formations; the web of Oscillation."
         },
         "input": {
           "zh": "消耗与补充的平衡、更多与层级。",
@@ -92,8 +92,8 @@
       "id": "becoming-dependence-dynamics",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "流平衡的是依存网；Garden 用 Dependent。",
-        "en": "Flows balance webs of dependence; Garden uses Dependent."
+        "zh": "流平衡的是依存网；Expansion 用 Dependent。",
+        "en": "Flows balance webs of dependence; Expansion uses Dependent."
       },
       "interface": {
         "output": {
@@ -139,15 +139,15 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "detail": {
-        "zh": "不息的生成不蕴含更多（Bloom.not_more）：开花不息地反复生起，流平衡，至多一个形成取用；它满足普查、present 不重复与 Taking（Bloom.counted），所以“更多蕴含不息”是严格的。",
-        "en": "Unceasing generation does not imply more (Bloom.not_more): the bloom arises again and again, the flow balances, and at most one formation takes; it meets the census, present without repetition and Taking (Bloom.counted), so “more implies unceasing” is strict."
+        "zh": "不息的生成不蕴含更多（Oscillation.not_more）：振荡者不息地反复生起，流平衡，至多一个形成取用；它满足普查、present 不重复与 Taking（Oscillation.counted），所以“更多蕴含不息”是严格的。",
+        "en": "Unceasing generation does not imply more (Oscillation.not_more): the oscillator arises again and again, the flow balances, and at most one formation takes; it meets the census, present without repetition and Taking (Oscillation.counted), so “more implies unceasing” is strict."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "detail": {
-        "zh": "没有普查，不止地更多不蕴含不息（Dormant.more_without_arising）：花园的流中每个形成从开始就活跃，全部前提与 Taking 成立，不止地更多，而没有任何生起（第四次独立审查 H8）。",
-        "en": "Without a census, more without end does not imply unceasing generation (Dormant.more_without_arising): with every formation of the garden's flow active from the start, every premise and Taking hold and generation is more without end, while nothing arises (fourth independent review H8)."
+        "zh": "没有普查，不止地更多不蕴含不息（Dormant.more_without_arising）：扩张的流中每个形成从开始就活跃，全部前提与 Taking 成立，不止地更多，而没有任何生起（第四次独立审查 H8）。",
+        "en": "Without a census, more without end does not imply unceasing generation (Dormant.more_without_arising): with every formation of the expansion's flow active from the start, every premise and Taking hold and generation is more without end, while nothing arises (fourth independent review H8)."
       }
     },
     {
@@ -167,8 +167,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "detail": {
-        "zh": "Taking 的逆可以不成立（Crowd.drawing_without_taking）：越来越多的形成活跃、依存并汲取，而流不记录任何取用，不止地更多不成立。",
-        "en": "The converse of Taking can fail (Crowd.drawing_without_taking): ever more formations are active, depend and draw, while the flow records no taking and more without end fails."
+        "zh": "Taking 的逆可以不成立（Unrecorded.drawing_without_taking）：越来越多的形成活跃、依存并汲取，而流不记录任何取用，不止地更多不成立。",
+        "en": "The converse of Taking can fail (Unrecorded.drawing_without_taking): ever more formations are active, depend and draw, while the flow records no taking and more without end fails."
       }
     },
     {
@@ -205,14 +205,14 @@
     "en": "Contains no ethical predicate and yields no “more is better” or any ranking; “more” reads only the number of takers and does not state diversity, complexity or possibility; it constrains only sustained more, not the number at isolated steps; a minimum uptake of one unit per taker is a premise; “ever more” holds only in the averaged sense, and renewers can be absent at infinitely many steps; “more implies unceasing” needs a census, present without repetition and Taking (only its activity half), whose converse is an application duty; unceasing generation depends on identity across steps: the unceasing generation forced by more holds under every one-to-one reading of identity, more forces arising under every continuation without splits, and under a reading of new formations as budding what is forced is only that the active formations have no bound (identity-across-steps); the renewers can be the takers, and carrying the demand further along the unfolding needs a dissipation premise (see no-finite-part-bears-taking); formations and conditions are two kinds in Web and Flow, and life as a condition of life is read with one kind of relatum in life-as-condition-of-life; the generation component is not added to any reading of living; families of conditions and the formations taking part at each step are finite; the witnesses are minimal; the correspondence of flows and present is an application duty; the new names are the reviewer's suggestions, and the final choice is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T075031.720357Z）：Becoming.Flow 77 项定理与 Becoming.Population 112 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §14；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出 present 不重复的必要性与全部前提的正面见证，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T075031.720357Z): all 77 theorems of Becoming.Flow and 112 theorems of Becoming.Population have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §14 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added the necessity of present without repetition and positive witnesses meeting every premise, see §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T083222.285294Z）：Becoming.Flow 77 项定理与 Becoming.Population 112 项定理全部空依赖；同一回执覆盖包内 29 个模块（含只作导入的根模块与桥接），共 1356 项定理／2161 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §14；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出 present 不重复的必要性与全部前提的正面见证，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 31 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T083222.285294Z): all 77 theorems of Becoming.Flow and 112 theorems of Becoming.Population have empty axiom reports; the same receipt covers the package's 29 modules (including the import-only root and the bridge) with 1356 theorems/2161 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §14 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added the necessity of present without repetition and positive witnesses meeting every premise, see §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 31 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "b5d9814db765b10ebd40c4ec3c3c93b30d5b61bb2558c98f8681e27d0d7c8749",
+      "sha256": "4af6e1afa8f704075fdc4dd79bf9db797f173a1c78a914ad02b8af46555a15a1",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -245,11 +245,11 @@
         "Becoming.Flow.Balances.renewers_over",
         "Becoming.Flow.More.replenishment_unbounded",
         "Becoming.Flow.More.renewers_unbounded",
-        "Becoming.Garden.flow",
-        "Becoming.Garden.web",
-        "Becoming.Garden.more",
-        "Becoming.Bloom.flow",
-        "Becoming.Bloom.not_more",
+        "Becoming.Expansion.flow",
+        "Becoming.Expansion.web",
+        "Becoming.Expansion.more",
+        "Becoming.Oscillation.flow",
+        "Becoming.Oscillation.not_more",
         "Becoming.Cycle.present",
         "Becoming.Cycle.flow",
         "Becoming.Cycle.web",
@@ -257,27 +257,27 @@
         "Becoming.Pulse.flow",
         "Becoming.Pulse.web",
         "Becoming.Pulse.pulsed",
-        "Becoming.Garden.growers_take"
+        "Becoming.Expansion.growers_take"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
       "role": "proof",
-      "sha256": "d2ae85e475265c415fd08c20e7eb1849946141955fdfef6211e3975de3de3b20",
+      "sha256": "07441eba18278e7797faa50788b138c0c4d947daa062c5add9056027b3c9be5a",
       "declarations": [
         "Becoming.total",
         "Becoming.Web.stock",
         "Becoming.Web.RenewedBy",
         "Becoming.Web.Arises",
         "Becoming.Web.Unceasing",
-        "Becoming.Bloom.web",
-        "Becoming.Bloom.unceasing"
+        "Becoming.Oscillation.web",
+        "Becoming.Oscillation.unceasing"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "fcfedfc0f5268d6150e37f0218fd02a903a084063d2d3f2e182514a33d52b279",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
       "declarations": [
         "Becoming.Web",
         "Becoming.Web.Dependent"
@@ -286,19 +286,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "3ae408a8e7a8950fbd23823d663b0bf6106057eea1e935c29a809484502d69c1",
+      "sha256": "2f5e70aaefddc616e79892f93e6762b995939c82b70352751ef7a31c79f35740",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "142f7ea7b863e0284b31e08909d800c99c9c0b18afaa090675b708ecab4ed9be",
+      "sha256": "b7fbea7aace444c3ef4e487fad7a43fb9ec277d59d1a1e01b7595e531e248b49",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "98b0af5d0802f66bf6f47b2e09c56924ef06dd486b7424e05bad4ebcff961562",
+      "sha256": "4ff5a215dccdee5c66336f0f0954d887f9b7e473a8a1ccd533d39e4897fec88a",
       "declarations": []
     },
     {
@@ -316,7 +316,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "67df263ad222f24d3476c185ecd7e6a1d63da4fabce5212c1429cf5852b64966",
+      "sha256": "fdd2aeece2b0b9b0c06f2c2738637e9ad9343181cebce0adc6a91b021ea9fe5a",
       "declarations": [
         "Becoming.Distinct",
         "Becoming.length_le_of_sub",
@@ -326,31 +326,31 @@
         "Becoming.Web.arises_of_more",
         "Becoming.Web.unceasing_of_growth",
         "Becoming.Flow.More.unceasing",
-        "Becoming.Bloom.alive",
-        "Becoming.Bloom.census",
-        "Becoming.Bloom.counted",
+        "Becoming.Oscillation.alive",
+        "Becoming.Oscillation.census",
+        "Becoming.Oscillation.counted",
         "Becoming.Dormant.web",
         "Becoming.Dormant.more_without_arising",
         "Becoming.Inactive.flow",
         "Becoming.Inactive.web",
         "Becoming.Inactive.more_without_arising",
-        "Becoming.Crowd.flow",
-        "Becoming.Crowd.drawing_without_taking",
+        "Becoming.Unrecorded.flow",
+        "Becoming.Unrecorded.drawing_without_taking",
         "Becoming.search",
         "Becoming.length_le_of_matched",
         "Becoming.Flow.More.grows",
-        "Becoming.Garden.distinct",
-        "Becoming.Garden.census",
-        "Becoming.Garden.counted",
+        "Becoming.Expansion.distinct",
+        "Becoming.Expansion.census",
+        "Becoming.Expansion.counted",
         "Becoming.Cycle.distinct",
         "Becoming.Cycle.census",
         "Becoming.Cycle.counted",
         "Becoming.Repeated.web",
         "Becoming.Repeated.flow",
         "Becoming.Repeated.more_without_arising",
-        "Becoming.Bloom.pair",
+        "Becoming.Oscillation.pair",
         "Becoming.Cycle.listed",
-        "Becoming.Garden.listed",
+        "Becoming.Expansion.listed",
         "Becoming.Inactive.alive",
         "Becoming.Inactive.distinct",
         "Becoming.Inactive.gives",
@@ -562,6 +562,10 @@
     {
       "zh": "2026-10-10 P35：验证范围重新指向合并检查器回执 20261010T075031.720357Z 与外围回执 20261010T075308.552033Z（P34b：按第十三次独立审查更正，核心的算术集中于 Dependence，le_total_of_mem 移入 Flow；P35：被围住时与有限世界中计数的规律，Population 加入 occurrences、ChangeBound 与 Swap，Openness 加入 World.enclosure_bounds_change、被围住的队列与有限的队列）；所引模块的定理数改为该回执的数目（Dependence 58、Horizon 12、Flow 77、Change 57、Population 112、Dissipation 89、Premises 67、Openness 116）；外围闭包中其余模块按其回执计为 34 个。断言不变。",
       "en": "2026-10-10 P35: validation scope re-pointed to consolidated receipt 20261010T075031.720357Z and periphery receipt 20261010T075308.552033Z (P34b: the thirteenth review's corrections, the core's arithmetic gathered in Dependence and le_total_of_mem moved to Flow; P35: counting under enclosure and in finite worlds, Population adding occurrences, ChangeBound and Swap, Openness adding World.enclosure_bounds_change, the enclosed queue and the finite queue); the module counts cited are now that receipt's (Dependence 58, Horizon 12, Flow 77, Change 57, Population 112, Dissipation 89, Premises 67, Openness 116). The periphery closure's other modules are counted as its receipt lists them, 34. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P36：验证范围重新指向合并检查器回执 20261010T083222.285294Z 与外围回执 20261010T084107.973758Z（见证与声明改用形式的、系统与科学的名称，新旧对照见统一计划 §10；陈述、证明与各模块的定理数不变）。断言不变。本记录中的见证与声明名称随之更新。",
+      "en": "2026-10-10 P36: validation scope re-pointed to consolidated receipt 20261010T083222.285294Z and periphery receipt 20261010T084107.973758Z (witnesses and declarations take formal, systems and scientific names, with the old-to-new table in the unification plan §10; statements, proofs and each module's theorem count are unchanged). The claim is unchanged. This record's witness and declaration names are updated accordingly."
     }
   ]
 }

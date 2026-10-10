@@ -23,7 +23,7 @@ many formations are active at each step, and ties the flow's count to the web's.
   (`Listed.ceasing_iff_shortfall`, `Listed.coming_iff_excess`). Ceasings that recur
   accumulate past any list at the start, so ceasing to be at arbitrarily late steps needs
   coming to be at arbitrarily late steps (`Listed.coming_of_ceasing`). Not conversely:
-  ever new formations can arise while none ceases (`Dawn`). Where at most `K` are listed
+  ever new formations can arise while none ceases (`Accretion`). Where at most `K` are listed
   at arbitrarily late steps, comings that recur accumulate past `K`, and the converse
   holds too (`Listed.ceasing_of_returning`); so where from some step on at most `B` are
   listed, the two recur together (`Listed.ceasing_of_coming`,
@@ -73,9 +73,9 @@ many formations are active at each step, and ties the flow's count to the web's.
   active formations taking (`Flow.Taking`, of which only the activity half is used),
   the active formations grow without bound (`Flow.More.grows`), and more without end
   makes generation unceasing (`Flow.More.unceasing`). The premises hold together in the
-  garden and the cycle (`Garden.counted`, `Cycle.counted`). Not conversely: the bloom
+  expansion and the cycle (`Expansion.counted`, `Cycle.counted`). Not conversely: the oscillator
   meets every one of these premises, arises again and again, and is not more
-  (`Bloom.counted`). Under this correspondence, more without end is strictly stronger
+  (`Oscillation.counted`). Under this correspondence, more without end is strictly stronger
   than unceasing generation.
 * Each premise does work. Without a census, every formation of an infinite family can be
   active from the start, and more without end comes with nothing arising (`Dormant`).
@@ -86,7 +86,7 @@ many formations are active at each step, and ties the flow's count to the web's.
   (`Repeated`).
 * The converse of `Taking`, that every formation drawing on the family takes from it in
   the flow, is an application duty: ever more formations can be active, depend on a
-  condition and draw on it while the flow records no taking (`Crowd`).
+  condition and draw on it while the flow records no taking (`Unrecorded`).
 
 Activity at each step is supposed decidable where a theorem needs it; this is a
 hypothesis of the theorem, not an axiom. No ethical predicate, ranking or axiom occurs.
@@ -1149,7 +1149,7 @@ theorem Flow.More.unceasing {W : Web F C} [∀ t f, Decidable (W.active t f)] {L
 
 /-! ## Every premise together -/
 
-namespace Garden
+namespace Expansion
 
 theorem distinct : ∀ t, Distinct (present t)
   | 0 => trivial
@@ -1170,17 +1170,17 @@ theorem listed : ∀ t (f : Kind × Nat), f.2 < t → f ∈ present t
       | .grower => Eq.subst (motive := fun j => (Kind.grower, j) ∈ present (n + 1))
           same (.tail _ (.head _))
 
-/-- The garden's formations active at each step are those taking part, each listed once. -/
+/-- The expansion's formations active at each step are those taking part, each listed once. -/
 theorem census : web.Census present :=
   fun t => ⟨distinct t, fun f => ⟨listed t f, present_active t f⟩⟩
 
-/-- Every premise of `Flow.More.unceasing` holds together in the garden. -/
+/-- Every premise of `Flow.More.unceasing` holds together in the expansion. -/
 theorem counted :
     web.Census present ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
     flow.More [()] :=
   ⟨census, distinct, growers_take.1, more.2.2.2.2.2.2⟩
 
-end Garden
+end Expansion
 
 namespace Cycle
 
@@ -1209,57 +1209,57 @@ end Cycle
 
 /-! ## Under a census, unceasing generation is not yet more -/
 
-namespace Bloom
+namespace Oscillation
 
-/-- The sun at every step, and the bloom at even steps. -/
+/-- The source at every step, and the oscillator at even steps. -/
 def alive : Nat → List Formation
-  | 0 => [.sun, .bloom]
-  | 1 => [.sun]
+  | 0 => [.source, .oscillator]
+  | 1 => [.source]
   | n + 2 => alive n
 
-theorem pair : Distinct [Formation.sun, .bloom] :=
+theorem pair : Distinct [Formation.source, .oscillator] :=
   ⟨fun mem => (match mem with | .tail _ mem => nomatch mem), fun mem => (nomatch mem), trivial⟩
 
 theorem census : web.Census alive
   | 0 => ⟨pair, fun f => match f with
-    | .sun => ⟨fun _ => .head _, fun _ => trivial⟩
-    | .bloom => ⟨fun _ => .tail _ (.head _), fun _ => Nat.le_refl 2⟩⟩
+    | .source => ⟨fun _ => .head _, fun _ => trivial⟩
+    | .oscillator => ⟨fun _ => .tail _ (.head _), fun _ => Nat.le_refl 2⟩⟩
   | 1 => ⟨⟨fun mem => (nomatch mem), trivial⟩, fun f => match f with
-    | .sun => ⟨fun _ => .head _, fun _ => trivial⟩
-    | .bloom => ⟨fun two => absurd two (Nat.not_succ_le_self 1),
+    | .source => ⟨fun _ => .head _, fun _ => trivial⟩
+    | .oscillator => ⟨fun two => absurd two (Nat.not_succ_le_self 1),
         fun mem => match mem with | .tail _ mem => nomatch mem⟩⟩
   | n + 2 => census n
 
-/-- The bloom meets every premise of `Flow.More.unceasing` except more without end: a
-census lists the active formations, the sun and the bloom take part once each, and only
-the active bloom takes. Generation is unceasing and not more. -/
+/-- The oscillator meets every premise of `Flow.More.unceasing` except more without end: a
+census lists the active formations, the source and the oscillator take part once each, and only
+the active oscillator takes. Generation is unceasing and not more. -/
 theorem counted :
     web.Census alive ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
     web.Unceasing ∧ ¬ flow.More [()] :=
   ⟨census, fun _ => pair, takes.1, not_more.2.2.2.1, not_more.2.2.2.2⟩
 
-end Bloom
+end Oscillation
 
 /-! ## Without a census, more without end with nothing arising -/
 
 namespace Dormant
 
-/-- The garden's flow, with every formation active from the start. -/
-def web : Web (Garden.Kind × Nat) Unit :=
-  { Garden.web with active := fun _ _ => True }
+/-- The expansion's flow, with every formation active from the start. -/
+def web : Web (Expansion.Kind × Nat) Unit :=
+  { Expansion.web with active := fun _ _ => True }
 
 /-- Every premise of `More.renewers_unbounded` holds, only active formations take, and
 generation is more without end, yet nothing arises: infinitely many formations are
 active at every step, so no census lists them. -/
 theorem more_without_arising :
-    Garden.flow.Balances web ∧ Garden.flow.Acting web ∧ Garden.flow.Taking web ∧
-    Garden.flow.Capacity [()] 1 ∧ web.Dependent ∧ Garden.flow.More [()] ∧
+    Expansion.flow.Balances web ∧ Expansion.flow.Acting web ∧ Expansion.flow.Taking web ∧
+    Expansion.flow.Capacity [()] 1 ∧ web.Dependent ∧ Expansion.flow.More [()] ∧
     ∀ t f, ¬ web.Arises t f :=
-  ⟨Garden.more.1, fun _ _ _ _ _ => trivial,
+  ⟨Expansion.more.1, fun _ _ _ _ _ => trivial,
    fun t f _ mem takes => match f, mem, takes with
     | (.renewer, _), _, takes => absurd takes (Nat.lt_irrefl 0)
-    | (.grower, _), mem, _ => ⟨trivial, rfl, Garden.present_active t _ mem⟩,
-   Garden.more.2.2.1, fun _ _ _ _ _ => Nat.le_refl 1, Garden.more.2.2.2.2.2.2,
+    | (.grower, _), mem, _ => ⟨trivial, rfl, Expansion.present_active t _ mem⟩,
+   Expansion.more.2.2.1, fun _ _ _ _ _ => Nat.le_refl 1, Expansion.more.2.2.2.2.2.2,
    fun _ _ ⟨inactive, _⟩ => inactive trivial⟩
 
 end Dormant
@@ -1381,7 +1381,7 @@ end Inactive
 
 /-! ## Drawing that the flow does not record -/
 
-namespace Crowd
+namespace Unrecorded
 
 /-- The formations of the cycle, with no taking or giving recorded. -/
 def flow : Flow Nat Unit := ⟨Cycle.present, fun _ _ _ => 0, fun _ _ _ => 0⟩
@@ -1407,6 +1407,6 @@ theorem drawing_without_taking :
     | ⟨T, many⟩ => Nat.not_succ_le_zero 0
         (Nat.le_trans (many T (Nat.le_refl T)) (Nat.le_of_eq (none T)))⟩
 
-end Crowd
+end Unrecorded
 
 end Becoming

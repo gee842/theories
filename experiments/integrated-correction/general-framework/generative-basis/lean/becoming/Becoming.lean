@@ -197,7 +197,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   every step from some step on is enclosed around it, standing stops changing, and so
   does the exchange: any taking or giving there lowers the total standing, and without
   enclosure, dissipation, balance or the census of what stands the exchange can recur
-  (`exposed`, the cycle, `leaking`, `kindling`). Where at
+  (`exposed`, the cycle, `leaking`, `throughput`). Where at
   most `B` relata are active at each step, arising recurs exactly when ceasing does;
   finite worlds are a case, and an infinite procession of single relata is another; the
   bound may grow between steps at which it returns within a number, but no bound growing
@@ -234,7 +234,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   brings the level below their need ends the renewers and every formation depending on the
   condition at such a need, a taker among them where it so depends; the joint count binds a
   want that outlasts what the condition holds. The extent so derived runs one way, to what
-  one's continuation depends on; it ends with the want, and a keeper that meets every
+  one's continuation depends on; it ends with the want, and a clearer that meets every
   requirement derived here can still end a life it does not need. Ren's proposal of 10
   October 2026 (an AI reading).
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
@@ -268,10 +268,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   every living event is held. Read with one kind of relatum, conveyance leaves no step
   after which the boundary of a continuing family goes uncrossed, so its region is no cut
   in the relations, and it relates two conditions, which interaction, living on and
-  descent never do. In the web of the careful keeper of `Becoming.Continuation`, valued by
-  each formation over its own events and by the keeper also over what feeds its
+  descent never do. In the web of the clearer of `Becoming.Continuation`, valued by
+  each formation over its own events and by the clearer also over what feeds its
   continuation, S0 holds everywhere and significance is closed along feeding, while
-  another formation's life has no significance from the keeper: along dependence the
+  another formation's life has no significance from the clearer: along dependence the
   dynamics fixes the extent, not the center, and along every formed relation transmission
   would reach that life. Reading S0 as wanting one's continuation and standpoint
   neutrality as the one axiom is the AI's reading of Ren's proposal of 10 October 2026,

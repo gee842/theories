@@ -32,12 +32,12 @@ giving needs uptake there; a fall is taken from.
   recurring without it (`World.exchange_needs`): without enclosure in `exposed`, which
   meets all eight premises; without dissipation in the cycle of `Becoming.Flow`, its one
   condition standing throughout and every step enclosed around it; without balance in
-  `leaking`, finite and dissipative; and without the census of what stands in `kindling`,
+  `leaking`, finite and dissipative; and without the census of what stands in `throughput`,
   balanced, dissipative and enclosed at every step.
 * **Ceasing needs arising.** In a world with a census whose activity is decided, ceasing
   recurs only where arising recurs (`World.arising_of_ceasing`, from
-  `Web.arising_of_ceasing`). Not conversely: `dawn` has a census and arises without end
-  while nothing ceases; `dusk` keeps ceasing while nothing arises, so it has no census
+  `Web.arising_of_ceasing`). Not conversely: `accretion` has a census and arises without end
+  while nothing ceases; `attrition` keeps ceasing while nothing arises, so it has no census
   (`World.census_one_way`).
 * **A bounded count keeps them together.** Where at most `B` relata are active at each
   step (`World.CountedWithin`), arising recurs exactly when ceasing does
@@ -47,7 +47,7 @@ giving needs uptake there; a fall is taken from.
   is a case (`World.Finite.countedWithin`, `World.Finite.arising_iff_ceasing`);
   `procession`, with one relatum active at a time among infinitely many, keeps arising and
   ceasing
-  (`World.procession_world`); `dawn` has no bound (`World.dawn_unbounded`). The bound may
+  (`World.procession_world`); `accretion` has no bound (`World.accretion_unbounded`). The bound may
   grow between: where at most `B t` relata are active at each step `t`
   (`World.CountedBy`) and `B` returns to at most `K` at arbitrarily late steps, the two
   still recur together (`World.CountedBy.arising_iff_ceasing`). A bound growing without
@@ -69,10 +69,10 @@ giving needs uptake there; a fall is taken from.
   census of what is active as well, ceasing stops too, by the census law: the world comes
   to rest (`World.comes_to_rest`).
 * **Each census does work.** Without the census of what is active, ceasing can go on:
-  `dusk` meets every other premise and keeps ceasing (`World.rest_needs_census`). Without
-  the census of what stands, arising can go on: in `kindling` what is active is listed,
+  `attrition` meets every other premise and keeps ceasing (`World.rest_needs_census`). Without
+  the census of what stands, arising can go on: in `throughput` what is active is listed,
   whatever arises is embodied, the flow balances and dissipates and every step is
-  enclosed around every relatum ever active, yet every unburnt fuel stands; in `ember`,
+  enclosed around every relatum ever active, yet every unburnt fuel stands; in `embodiedThroughput`,
   the same flow with every relatum embodied, every step is enclosed and nothing is listed
   (`World.rest_needs_standing`).
 * **Its cases.** A finite world lists what stands and is enclosed around it at every step
@@ -94,7 +94,7 @@ giving needs uptake there; a fall is taken from.
   member and coming to hold at most once, it gives `LPO` (`Listed.lpo_of_few`, `Few`).
   Beyond finite worlds the rest theorem reaches only relata that never stand or act, as
   the idle ground of `hatch` (`World.hatch_idle`).
-* **The premises decide neither enclosure nor openness.** The sides of `Handing`, also
+* **The premises decide neither enclosure nor openness.** The sides of `Shuttle`, also
   taking a unit from each of infinitely many ground relata and giving it back at every
   step, meet all eight premises of `Becoming.Premises` and arise without end. No step is
   enclosed, so dissipation, which binds only at enclosed steps, binds at none
@@ -402,14 +402,14 @@ theorem Finite.arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (fini
 
 end World
 
-namespace Dawn
+namespace Accretion
 
-/-- The relata of `World.dawn` active at step `t`: the formations that arose before it. -/
+/-- The relata of `World.accretion` active at step `t`: the formations that arose before it. -/
 def alive : Nat → List (Nat ⊕ Unit)
   | 0 => []
   | t + 1 => .inl t :: alive t
 
-theorem mem_alive : ∀ {t : Nat} {x : Nat ⊕ Unit}, x ∈ alive t ↔ World.dawn.web.active t x
+theorem mem_alive : ∀ {t : Nat} {x : Nat ⊕ Unit}, x ∈ alive t ↔ World.accretion.web.active t x
   | 0, .inl f => ⟨fun mem => (nomatch mem), fun active => absurd active (Nat.not_lt_zero f)⟩
   | 0, .inr _ => ⟨fun mem => (nomatch mem), False.elim⟩
   | t + 1, .inl _ => ⟨fun mem => match mem with
@@ -425,26 +425,26 @@ theorem alive_distinct : ∀ t, Distinct (alive t)
   | 0 => trivial
   | t + 1 => ⟨fun mem => Nat.lt_irrefl t (mem_alive.mp mem), alive_distinct t⟩
 
-/-- At each step finitely many relata of `World.dawn` are active. -/
-theorem census : World.dawn.web.Census alive :=
+/-- At each step finitely many relata of `World.accretion` are active. -/
+theorem census : World.accretion.web.Census alive :=
   fun t => ⟨alive_distinct t, fun _ => mem_alive.symm⟩
 
-end Dawn
+end Accretion
 
 namespace World
 
-/-- One way only. In `dawn`, which has a census, arising recurs while ceasing does not; in
-`dusk` ceasing recurs while nothing arises, so by the census law it has no census. -/
+/-- One way only. In `accretion`, which has a census, arising recurs while ceasing does not; in
+`attrition` ceasing recurs while nothing arises, so by the census law it has no census. -/
 theorem census_one_way :
-    (dawn.Counted ∧ dawn.ArisingRecurs ∧ ¬ dawn.CeasingRecurs) ∧
-    (dusk.CeasingRecurs ∧ ¬ dusk.ArisingRecurs ∧ ¬ dusk.Counted) :=
+    (accretion.Counted ∧ accretion.ArisingRecurs ∧ ¬ accretion.CeasingRecurs) ∧
+    (attrition.CeasingRecurs ∧ ¬ attrition.ArisingRecurs ∧ ¬ attrition.Counted) :=
   match separate with
   | ⟨⟨arising, quiet, _⟩, ⟨ceasing, still, _⟩⟩ =>
-    ⟨⟨⟨Dawn.alive, Dawn.census⟩, arising, quiet⟩,
+    ⟨⟨⟨Accretion.alive, Accretion.census⟩, arising, quiet⟩,
      ⟨ceasing, still, fun counted => still (arising_of_ceasing counted ceasing)⟩⟩
 
-/-- `dawn` has a census but no bound on it: arising recurs there while ceasing does not. -/
-theorem dawn_unbounded (B : Nat) : ¬ dawn.CountedWithin B :=
+/-- `accretion` has a census but no bound on it: arising recurs there while ceasing does not. -/
+theorem accretion_unbounded (B : Nat) : ¬ accretion.CountedWithin B :=
   fun counted => census_one_way.1.2.2 (counted.arising_iff_ceasing.mp census_one_way.1.2.1)
 
 end World
@@ -587,18 +587,18 @@ theorem Finite.comes_to_rest [∀ t x, Decidable (w.web.active t x)] (finite : w
   | ⟨_, standing, around⟩ => World.comes_to_rest finite.counted standing embodied balanced
       dissipative (T := 0) fun t _ => around t
 
-/-- The rest theorem needs its census of activity: in `dusk` nothing stands and nothing
+/-- The rest theorem needs its census of activity: in `attrition` nothing stands and nothing
 takes part, so every other premise holds, every step is enclosed around what stands, and
 ceasing recurs. -/
 theorem rest_needs_census :
-    dusk.web.StandingCensus (fun _ => []) ∧ dusk.ArisingEmbodied ∧ dusk.Balanced ∧
-    dusk.Dissipative ∧ (∀ t, dusk.flow.AroundStanding (fun _ => []) t) ∧
-    dusk.CeasingRecurs ∧ ¬ dusk.Counted :=
+    attrition.web.StandingCensus (fun _ => []) ∧ attrition.ArisingEmbodied ∧ attrition.Balanced ∧
+    attrition.Dissipative ∧ (∀ t, attrition.flow.AroundStanding (fun _ => []) t) ∧
+    attrition.CeasingRecurs ∧ ¬ attrition.Counted :=
   ⟨fun _ => ⟨trivial, fun x => match x with
       | .inl _ => ⟨fun standing => absurd standing (Nat.lt_irrefl 0), fun mem => (nomatch mem)⟩
       | .inr _ => ⟨fun standing => absurd standing (Nat.lt_irrefl 0), fun mem => (nomatch mem)⟩⟩,
    fun t x arises => match x, arises with
-      | .inl f, arises => absurd arises (Dusk.nothing_arises t f)
+      | .inl f, arises => absurd arises (Attrition.nothing_arises t f)
       | .inr _, arises => False.elim arises.2,
    fun _ x => match x with
       | .inl _ => rfl
@@ -841,22 +841,22 @@ inductive Relatum where
   | side (b : Bool)
   | ground (n : Nat)
 
-/-- The sides stand as in `Handing`; the ground relata stand at nothing. -/
+/-- The sides stand as in `Shuttle`; the ground relata stand at nothing. -/
 def level (t : Nat) : Relatum → Nat
-  | .side b => Handing.stands b t
+  | .side b => Shuttle.stands b t
   | .ground _ => 0
 
 /-- Across every step the side holding the standing hands it to the other, as in
-`Handing`, and takes a unit from each ground relatum and gives it back. -/
+`Shuttle`, and takes a unit from each ground relatum and gives it back. -/
 def flow : Flow Relatum Relatum where
-  present t := [.side (Handing.holder t)]
+  present t := [.side (Shuttle.holder t)]
   take t x y := match x, y with
-    | .side b, .side c => Handing.flow.take t b c
+    | .side b, .side c => Shuttle.flow.take t b c
     | .side _, .ground _ => 1
     | .ground _, .side _ => 0
     | .ground _, .ground _ => 0
   give t x y := match x, y with
-    | .side b, .side c => Handing.flow.give t b c
+    | .side b, .side c => Shuttle.flow.give t b c
     | .side _, .ground _ => 1
     | .ground _, .side _ => 0
     | .ground _, .ground _ => 0
@@ -887,10 +887,10 @@ theorem outside (cs : List Relatum) : ¬ Relatum.ground (beyond (cs.map index)) 
 /-- No step is enclosed: the side taking part takes from every ground relatum. -/
 theorem open_at (t : Nat) : ¬ flow.Enclosed t :=
   fun ⟨cs, _, closed⟩ => Nat.zero_ne_one
-    (closed (.side (Handing.holder t)) (.head _) _ (outside cs)).1.symm
+    (closed (.side (Shuttle.holder t)) (.head _) _ (outside cs)).1.symm
 
 /-- A side stands exactly when it holds the standing. -/
-theorem stands_iff : ∀ (b : Bool) (t : Nat), 0 < Handing.stands b t ↔ b = Handing.holder t
+theorem stands_iff : ∀ (b : Bool) (t : Nat), 0 < Shuttle.stands b t ↔ b = Shuttle.holder t
   | true, 0 => ⟨fun _ => rfl, fun _ => Nat.zero_lt_one⟩
   | false, 0 => ⟨fun no => absurd no (Nat.lt_irrefl 0), fun no => Bool.noConfusion no⟩
   | true, 1 => ⟨fun no => absurd no (Nat.lt_irrefl 0), fun no => Bool.noConfusion no⟩
@@ -899,29 +899,29 @@ theorem stands_iff : ∀ (b : Bool) (t : Nat), 0 < Handing.stands b t ↔ b = Ha
   | false, t + 2 => stands_iff false t
 
 /-- The side holding the standing is the one active relatum. -/
-theorem census : web.Census fun t => [.side (Handing.holder t)] :=
+theorem census : web.Census fun t => [.side (Shuttle.holder t)] :=
   fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun x => match x with
     | .side b => ⟨fun standing => Eq.subst
-          (motive := fun c => Relatum.side c ∈ [Relatum.side (Handing.holder t)])
+          (motive := fun c => Relatum.side c ∈ [Relatum.side (Shuttle.holder t)])
           ((stands_iff b t).mp standing).symm (.head _),
         fun mem => (stands_iff b t).mpr (match mem_cons_cases mem with
           | .inl same => congrArg sideOf same
           | .inr no => nomatch no)⟩
     | .ground n => ⟨fun no => absurd no (Nat.lt_irrefl 0),
-        fun (mem : Relatum.ground n ∈ [Relatum.side (Handing.holder t)]) => match mem with
+        fun (mem : Relatum.ground n ∈ [Relatum.side (Shuttle.holder t)]) => match mem with
           | .tail _ no => (nomatch no)⟩⟩
 
 /-- The holder stands at one. -/
-theorem holder_one : ∀ t, Handing.stands (Handing.holder t) t = 1
+theorem holder_one : ∀ t, Shuttle.stands (Shuttle.holder t) t = 1
   | 0 => rfl
   | 1 => rfl
-  | t + 2 => (Handing.stands_two (Handing.holder t) t).trans (holder_one t)
+  | t + 2 => (Shuttle.stands_two (Shuttle.holder t) t).trans (holder_one t)
 
 /-- And stands at nothing after the step. -/
-theorem holder_after : ∀ t, Handing.stands (Handing.holder t) (t + 1) = 0
+theorem holder_after : ∀ t, Shuttle.stands (Shuttle.holder t) (t + 1) = 0
   | 0 => rfl
   | 1 => rfl
-  | t + 2 => (Handing.stands_two (Handing.holder t) (t + 1)).trans (holder_after t)
+  | t + 2 => (Shuttle.stands_two (Shuttle.holder t) (t + 1)).trans (holder_after t)
 
 end Exposed
 
@@ -974,7 +974,7 @@ end Holding
 
 namespace World
 
-/-- The sides of `Handing` exchanging with an unbounded ground. -/
+/-- The sides of `Shuttle` exchanging with an unbounded ground. -/
 def exposed : World :=
   ⟨Exposed.Relatum, Exposed.flow, Exposed.web⟩
 
@@ -984,17 +984,17 @@ theorem exposed_world :
     exposed.Premised ∧ exposed.ArisingRecurs ∧ ∀ t, ¬ exposed.flow.Enclosed t :=
   ⟨.of (fun _ _ _ _ no => no.elim)
      (fun t c => match c with
-      | .side c => Handing.balances t c
+      | .side c => Shuttle.balances t c
       | .ground _ => rfl)
      (fun t f _ present _ => match f, present with
-      | _, .head _ => Handing.holder_stands t
+      | _, .head _ => Shuttle.holder_stands t
       | _, .tail _ no => (nomatch no))
      (fun t f _ present _ => match f, present with
-      | _, .head _ => ⟨Handing.holder_stands t, trivial⟩
+      | _, .head _ => ⟨Shuttle.holder_stands t, trivial⟩
       | _, .tail _ no => (nomatch no))
      (fun cs t distinct closed => absurd ⟨cs, distinct, closed⟩ (Exposed.open_at t))
      (fun _ _ => Iff.rfl) ⟨_, Exposed.census⟩ ⟨0, fun _ _ _ _ _ no => no.elim⟩,
-   fun N => match Handing.recurs true N with
+   fun N => match Shuttle.recurs true N with
     | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩,
    Exposed.open_at⟩
 
@@ -1003,13 +1003,13 @@ step, and the holder falls across every step. The world is not finite; what is u
 is the number of relata it exchanges with, each standing at nothing (the tenth review's
 probe). -/
 theorem exposed_standing :
-    exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Handing.holder t)]) ∧
-    (∀ t, exposed.web.stock [Exposed.Relatum.side (Handing.holder t)] t = 1) ∧
-    (∀ t, exposed.web.Falls t (Exposed.Relatum.side (Handing.holder t))) ∧
+    exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Shuttle.holder t)]) ∧
+    (∀ t, exposed.web.stock [Exposed.Relatum.side (Shuttle.holder t)] t = 1) ∧
+    (∀ t, exposed.web.Falls t (Exposed.Relatum.side (Shuttle.holder t))) ∧
     ¬ exposed.Finite :=
   ⟨standingCensus Exposed.census fun _ _ => Iff.rfl,
-   fun t => show Handing.stands (Handing.holder t) t + 0 = 1 from Exposed.holder_one t,
-   fun t => show Handing.stands (Handing.holder t) (t + 1) < Handing.stands (Handing.holder t) t
+   fun t => show Shuttle.stands (Shuttle.holder t) t + 0 = 1 from Exposed.holder_one t,
+   fun t => show Shuttle.stands (Shuttle.holder t) (t + 1) < Shuttle.stands (Shuttle.holder t) t
      from Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq (Exposed.holder_after t))
        Nat.zero_lt_one) (Nat.le_of_eq (Exposed.holder_one t).symm),
    fun ⟨all, _, every⟩ => Exposed.outside all (every _)⟩
@@ -1031,7 +1031,7 @@ def holding : World :=
 eight with no step enclosed, and nothing ever arises or ceases (the eleventh review's
 probe). Under a census, with every relatum embodied, balance and dissipation, openness is
 necessary for arising without end (`arising_opens`), not sufficient. With only whatever
-arises embodied it is not necessary: `kindling` is enclosed at every step and arises
+arises embodied it is not necessary: `throughput` is enclosed at every step and arises
 without end (`rest_needs_standing`). -/
 theorem holding_world :
     holding.Premised ∧ (∀ t, ¬ holding.flow.Enclosed t) ∧ ¬ holding.ArisingRecurs ∧
@@ -1076,7 +1076,7 @@ end World
 
 /-! ## Finitely many standing cannot be dropped -/
 
-namespace Kindling
+namespace Throughput
 
 /-- Which side a side relatum is. -/
 def sideOf : Relatum → Bool
@@ -1094,10 +1094,10 @@ theorem fuel_stands : ∀ n, 0 < web.level 0 (.fuel n)
   | _ + 1 => Nat.zero_lt_two
 
 /-- The holder is the one active relatum. -/
-theorem census : web.Census fun t => [Relatum.side (Handing.holder t)] :=
+theorem census : web.Census fun t => [Relatum.side (Shuttle.holder t)] :=
   fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun x => match x with
     | .side b => ⟨fun active => Eq.subst
-          (motive := fun c => Relatum.side c ∈ [Relatum.side (Handing.holder t)])
+          (motive := fun c => Relatum.side c ∈ [Relatum.side (Shuttle.holder t)])
           ((Exposed.stands_iff b t).mp active).symm (.head _),
         fun mem => (Exposed.stands_iff b t).mpr (match mem_cons_cases mem with
           | .inl same => congrArg sideOf same
@@ -1111,49 +1111,50 @@ theorem unlisted {holds : Relatum → Prop} (l : List Relatum)
   beyond_not_mem (l.map index)
     (mem_map_of (g := index) ((listed (.fuel (beyond (l.map index)))).mp (fuels _)))
 
-end Kindling
+end Throughput
 
-namespace Ember
+namespace EmbodiedThroughput
 
-/-- `Kindling`'s levels, each relatum active exactly while it stands, and no dependence. -/
-def web : Web Kindling.Relatum Kindling.Relatum where
-  level := Kindling.web.level
-  active t c := 0 < Kindling.web.level t c
+/-- `Throughput`'s levels, each relatum active exactly while it stands, and no dependence. -/
+def web : Web Throughput.Relatum Throughput.Relatum where
+  level := Throughput.web.level
+  active t c := 0 < Throughput.web.level t c
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
 
-end Ember
+end EmbodiedThroughput
 
 namespace World
 
-/-- `Kindling`'s flow with every relatum active while it stands (the tenth review's
+/-- `Throughput`'s flow with every relatum active while it stands (the tenth review's
 probe). -/
-def ember : World :=
-  ⟨Kindling.Relatum, Kindling.flow, Ember.web⟩
+def embodiedThroughput : World :=
+  ⟨Throughput.Relatum, Throughput.flow, EmbodiedThroughput.web⟩
 
-/-- The rest theorem needs its census of what stands. In `kindling` what is active is
+/-- The rest theorem needs its census of what stands. In `throughput` what is active is
 listed, whatever arises is embodied, the flow balances and dissipates, and every step is
 enclosed around both sides, every relatum ever active; arising recurs, and what stands
-cannot be listed, since every unburnt fuel stands. In `ember`, the same flow with every
+cannot be listed, since every unburnt fuel stands. In `embodiedThroughput`, the same flow with every
 relatum embodied, every step is enclosed and arising recurs; nothing active can be
 listed (the tenth review's probes). -/
 theorem rest_needs_standing :
-    (kindling.Counted ∧ kindling.ArisingEmbodied ∧ kindling.Balanced ∧
-      kindling.Dissipative ∧
-      (∀ t, kindling.flow.Around [Kindling.Relatum.side true, .side false] t) ∧
-      kindling.ArisingRecurs ∧ ∀ stand, ¬ kindling.web.StandingCensus stand) ∧
-    ((∀ t, ember.flow.Enclosed t) ∧ ember.Embodied ∧ ember.Balanced ∧ ember.Dissipative ∧
-      ember.ArisingRecurs ∧ ¬ ember.Counted) :=
-  ⟨⟨⟨_, Kindling.census⟩, kindling_arising, kindling_world.1, kindling_world.2.1,
-    Kindling.around, kindling_world.2.2.2.1,
-    fun stand census => Kindling.unlisted (stand 0) (census 0).2 Kindling.fuel_stands⟩,
-   ⟨fun t => match Kindling.around t with
+    (throughput.Counted ∧ throughput.ArisingEmbodied ∧ throughput.Balanced ∧
+      throughput.Dissipative ∧
+      (∀ t, throughput.flow.Around [Throughput.Relatum.side true, .side false] t) ∧
+      throughput.ArisingRecurs ∧ ∀ stand, ¬ throughput.web.StandingCensus stand) ∧
+    ((∀ t, embodiedThroughput.flow.Enclosed t) ∧ embodiedThroughput.Embodied ∧
+      embodiedThroughput.Balanced ∧ embodiedThroughput.Dissipative ∧
+      embodiedThroughput.ArisingRecurs ∧ ¬ embodiedThroughput.Counted) :=
+  ⟨⟨⟨_, Throughput.census⟩, throughput_arising, throughput_world.1, throughput_world.2.1,
+    Throughput.around, throughput_world.2.2.2.1,
+    fun stand census => Throughput.unlisted (stand 0) (census 0).2 Throughput.fuel_stands⟩,
+   ⟨fun t => match Throughput.around t with
      | ⟨es, distinct, _, closed⟩ => ⟨es, distinct, closed⟩,
-    fun _ _ => Iff.rfl, Kindling.balances, Kindling.dissipative,
-    fun N => match Kindling.kindling.2.2.2.2.2 true N with
+    fun _ _ => Iff.rfl, Throughput.balances, Throughput.dissipative,
+    fun N => match Throughput.throughput.2.2.2.2.2 true N with
      | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩,
-    fun ⟨alive, census⟩ => Kindling.unlisted (alive 0) (census 0).2 Kindling.fuel_stands⟩⟩
+    fun ⟨alive, census⟩ => Throughput.unlisted (alive 0) (census 0).2 Throughput.fuel_stands⟩⟩
 
 end World
 
@@ -1167,31 +1168,31 @@ other premise holds and the flow exchanges at arbitrarily late steps. Without en
 Without dissipation: in the cycle of `Becoming.Flow` the one condition stands throughout,
 the flow balances and every step is enclosed around it. Without balance: `leaking` is
 dissipative, and every step is enclosed around the side holding the standing. Without the
-census of what stands: `kindling` is balanced and dissipative and every step is enclosed,
+census of what stands: `throughput` is balanced and dissipative and every step is enclosed,
 but what stands cannot be listed, so enclosure around the empty list says nothing about
 it. -/
 theorem exchange_needs :
-    (exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Handing.holder t)]) ∧
+    (exposed.web.StandingCensus (fun t => [Exposed.Relatum.side (Shuttle.holder t)]) ∧
       exposed.Balanced ∧ exposed.Dissipative ∧
       (∀ t, ¬ exposed.flow.AroundStanding
-        (fun t => [Exposed.Relatum.side (Handing.holder t)]) t) ∧
+        (fun t => [Exposed.Relatum.side (Shuttle.holder t)]) t) ∧
       exposed.flow.ExchangeRecurs) ∧
     (Cycle.web.StandingCensus (fun _ => [()]) ∧ Cycle.flow.Balances Cycle.web ∧
       ¬ Cycle.flow.Dissipative ∧ (∀ t, Cycle.flow.AroundStanding (fun _ => [()]) t) ∧
       Cycle.flow.ExchangeRecurs) ∧
-    (leaking.web.StandingCensus (fun t => [Handing.holder t]) ∧ ¬ leaking.Balanced ∧
-      leaking.Dissipative ∧ (∀ t, leaking.flow.AroundStanding (fun t => [Handing.holder t]) t) ∧
+    (leaking.web.StandingCensus (fun t => [Shuttle.holder t]) ∧ ¬ leaking.Balanced ∧
+      leaking.Dissipative ∧ (∀ t, leaking.flow.AroundStanding (fun t => [Shuttle.holder t]) t) ∧
       leaking.flow.ExchangeRecurs) ∧
-    ((∀ stand, ¬ kindling.web.StandingCensus stand) ∧ kindling.Balanced ∧
-      kindling.Dissipative ∧ (∀ t, kindling.flow.AroundStanding (fun _ => []) t) ∧
-      kindling.flow.ExchangeRecurs) :=
-  have takes : ∀ t (b : Bool), 0 < Handing.flow.take t b b := fun _ b => match b with
+    ((∀ stand, ¬ throughput.web.StandingCensus stand) ∧ throughput.Balanced ∧
+      throughput.Dissipative ∧ (∀ t, throughput.flow.AroundStanding (fun _ => []) t) ∧
+      throughput.flow.ExchangeRecurs) :=
+  have takes : ∀ t (b : Bool), 0 < Shuttle.flow.take t b b := fun _ b => match b with
     | true => Nat.zero_lt_one
     | false => Nat.zero_lt_one
   ⟨⟨exposed_standing.1, exposed_world.1 _ (.tail _ (.head _)),
      exposed_world.1 _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))),
      fun t ⟨es, distinct, _, _, closed⟩ => Exposed.open_at t ⟨es, distinct, closed⟩,
-     fun N => ⟨N, .side (Handing.holder N), .ground 0, Nat.le_refl N, .head _,
+     fun N => ⟨N, .side (Shuttle.holder N), .ground 0, Nat.le_refl N, .head _,
        .inl Nat.zero_lt_one⟩⟩,
    ⟨fun _ => ⟨⟨fun no => (nomatch no), trivial⟩, fun c => (match c with
       | () => ⟨fun _ => .head _, fun _ => Nat.zero_lt_one⟩)⟩,
@@ -1201,23 +1202,23 @@ theorem exchange_needs :
       fun _ _ c outside => (match c with | () => absurd (.head _) outside)⟩,
     fun N => ⟨N + 1, N, (), Nat.le_succ N, .head _, .inl Nat.zero_lt_one⟩⟩,
    ⟨fun t => ⟨⟨fun no => (nomatch no), trivial⟩, fun b =>
-      ⟨fun standing => show b ∈ [Handing.holder t] from
-        Eq.subst (motive := fun c => c ∈ [Handing.holder t])
+      ⟨fun standing => show b ∈ [Shuttle.holder t] from
+        Eq.subst (motive := fun c => c ∈ [Shuttle.holder t])
           ((Exposed.stands_iff b t).mp standing).symm (.head _),
-       fun (mem : b ∈ [Handing.holder t]) => (Exposed.stands_iff b t).mpr (match mem with
+       fun (mem : b ∈ [Shuttle.holder t]) => (Exposed.stands_iff b t).mpr (match mem with
         | .head _ => rfl
         | .tail _ no => (nomatch no))⟩⟩,
     leaking_world.2.2.2.2.1, leaking_world.2.2.1,
-    fun t => ⟨[true, false], Handing.distinct, fun c _ => Handing.every c,
-      fun c _ => Handing.every c, (leaking_world.2.2.2.2.2 t).1⟩,
-    fun N => ⟨N, Handing.holder N, Handing.holder N, Nat.le_refl N, .head _,
-      .inl (takes N (Handing.holder N))⟩⟩,
-   ⟨fun stand census => Kindling.unlisted (stand 0) (census 0).2 Kindling.fuel_stands,
-    kindling_world.1, kindling_world.2.1,
-    fun t => match Kindling.around t with
+    fun t => ⟨[true, false], Shuttle.distinct, fun c _ => Shuttle.every c,
+      fun c _ => Shuttle.every c, (leaking_world.2.2.2.2.2 t).1⟩,
+    fun N => ⟨N, Shuttle.holder N, Shuttle.holder N, Nat.le_refl N, .head _,
+      .inl (takes N (Shuttle.holder N))⟩⟩,
+   ⟨fun stand census => Throughput.unlisted (stand 0) (census 0).2 Throughput.fuel_stands,
+    throughput_world.1, throughput_world.2.1,
+    fun t => match Throughput.around t with
       | ⟨es, distinct, _, closed⟩ => ⟨es, distinct, fun _ no => (nomatch no),
           fun _ no => (nomatch no), closed⟩,
-    fun N => ⟨N, .side (Handing.holder N), .fuel N, Nat.le_refl N, .head _,
+    fun N => ⟨N, .side (Shuttle.holder N), .fuel N, Nat.le_refl N, .head _,
       .inl (Nat.lt_of_lt_of_le Nat.zero_lt_two
         (Nat.le_of_eq (congrArg (2 * ·) (Frontier.burning_self N)).symm))⟩⟩⟩
 
@@ -1364,7 +1365,7 @@ theorem empty_stays (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
     after.trans ((congrArg (· + a t) kept).trans ((Nat.zero_add _).trans joined))
 
 theorem outside_empty {k t : Nat} (empty : n t = 0) : ¬ Queue.holds n c k t :=
-  fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Tended.occupied holds) (Nat.le_of_eq empty))
+  fun holds => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (OpenQueue.occupied holds) (Nat.le_of_eq empty))
 
 /-- Across a step from an empty queue nothing is taken or given. -/
 theorem idle (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) {t : Nat}
@@ -1460,14 +1461,14 @@ variable {n c a : Nat → Nat} {B : Nat}
 theorem enclosedQueue_acting (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) :
     (enclosedQueue n c a B).Acting :=
   fun _ f _ present gives => match f, present, gives with
-    | _, .head _, gives => Tended.front.mpr (EnclosedQueue.busy tally company (.inr gives))
+    | _, .head _, gives => OpenQueue.front.mpr (EnclosedQueue.busy tally company (.inr gives))
     | _, .tail _ no, _ => (nomatch no)
 
 theorem enclosedQueue_taking (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) :
     (enclosedQueue n c a B).Taking :=
   fun _ f _ present takes => match f, present, takes with
     | _, .head _, takes =>
-      ⟨Tended.front.mpr (EnclosedQueue.busy tally company (.inl takes)), trivial⟩
+      ⟨OpenQueue.front.mpr (EnclosedQueue.busy tally company (.inl takes)), trivial⟩
     | _, .tail _ no, _ => (nomatch no)
 
 /-- Where the queue fits its store, what stands is at most the store, and is the store
@@ -1718,7 +1719,7 @@ theorem finiteQueue_premised (tally : Tally n c a) (company : ∀ t, 0 < a t →
   have active : ∀ {t : Nat}, 0 < n t →
       (finiteQueue n c a B).web.active t (FiniteQueue.front c B t) :=
     fun occupied => Eq.subst (motive := fun v => Queue.holds n c v _)
-      (FiniteQueue.front_val tally bound _).symm (Tended.front.mpr occupied)
+      (FiniteQueue.front_val tally bound _).symm (OpenQueue.front.mpr occupied)
   .of (fun _ _ _ _ no => (nomatch no))
     (fun t i => enclosedQueue_balanced n c a B t i.val)
     (fun _ f _ present gives => match f, present, gives with

@@ -449,14 +449,14 @@ theorem sub_self_add (n : Nat) : ∀ m, n - (n + m) = 0
   | 0 => Nat.sub_self n
   | m + 1 => congrArg Nat.pred (sub_self_add n m)
 
-namespace Commons
+namespace Renewable
 
 /-- The levels of the shared condition from `start` under the draws `draw`. -/
 def levels (start : Nat) (draw : Nat → Nat) : Nat → Nat
   | 0 => start
   | t + 1 => levels start draw t + 1 - draw t
 
-/-- The run of the commons from `start` under the draws `draw`. -/
+/-- The run of `Renewable` from `start` under the draws `draw`. -/
 def drawing (start : Nat) (draw : Nat → Nat) : Run process :=
   ⟨levels start draw, draw, fun _ => rfl⟩
 
@@ -522,6 +522,6 @@ theorem breaking_event_makes_step_difference :
     process.step 1 0 2 ∧ conditions.dependence.Keeps 1 2 .sustaining () :=
   ⟨rfl, rfl, ⟨trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, rfl, ⟨Nat.le_refl 1, Nat.le_succ 1⟩⟩
 
-end Commons
+end Renewable
 
 end Becoming

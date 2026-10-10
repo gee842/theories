@@ -51,10 +51,10 @@ unfolding as amounts that the formations taking part in each step take and give
   arbitrarily small, more takers would not need more replenishment (argued, not
   formalized: the core has natural numbers only).
 * The premises are consistent with more without end: renewers and growers arise
-  together at every step (`Garden.more`). There the level never rises, so the net-rise
-  premise of `Becoming.Generation` fails (`Garden.undepleted`), while the flow form
-  applies. Unceasing generation does not imply more without end: the bloom arises again
-  and again while at most one formation ever takes (`Bloom.not_more`).
+  together at every step (`Expansion.more`). There the level never rises, so the net-rise
+  premise of `Becoming.Generation` fails (`Expansion.undepleted`), while the flow form
+  applies. Unceasing generation does not imply more without end: the oscillator arises again
+  and again while at most one formation ever takes (`Oscillation.not_more`).
 * The renewers can be the takers themselves: in a closed cycle each formation gives
   back what it takes, the family's total never changes, and generation is more without
   end with as many renewers as takers (`Cycle`). That recurring taking must be carried
@@ -530,7 +530,7 @@ end Growing
 
 /-! ## More without end on renewers that arise -/
 
-namespace Garden
+namespace Expansion
 
 inductive Kind where
   | renewer
@@ -614,7 +614,7 @@ theorem undepleted :
       (fun _ _ rises => Nat.lt_irrefl 1 rises) with
     | ⟨_, _, falls⟩ => Nat.lt_irrefl 1 falls⟩
 
-end Garden
+end Expansion
 
 /-! ## Recurring uptake with nothing arising -/
 
@@ -660,47 +660,47 @@ end Steady
 
 /-! ## Unceasing generation is not yet more -/
 
-namespace Bloom
+namespace Oscillation
 
-/-- The bloom takes two when it is active, and the sun gives one at every step. -/
+/-- The oscillator takes two when it is active, and the source gives one at every step. -/
 def flow : Flow Formation Unit where
-  present _ := [.sun, .bloom]
+  present _ := [.source, .oscillator]
   take t f _ := match f with
-    | .sun => 0
-    | .bloom => 2 * (glow t - 1)
+    | .source => 0
+    | .oscillator => 2 * (charge t - 1)
   give _ f _ := match f with
-    | .sun => 1
-    | .bloom => 0
+    | .source => 1
+    | .oscillator => 0
 
 theorem balances : ∀ t, web.level (t + 1) () + flow.taken t () = web.level t () + flow.given t ()
   | 0 => rfl
   | 1 => rfl
   | t + 2 => balances t
 
-theorem takes_when_active : ∀ t, 2 ≤ glow t → 0 < 2 * (glow t - 1)
+theorem takes_when_active : ∀ t, 2 ≤ charge t → 0 < 2 * (charge t - 1)
   | 0, _ => Nat.zero_lt_succ 1
   | 1, two => absurd two (Nat.not_succ_le_self 1)
   | t + 2, two => takes_when_active t two
 
-theorem active_when_taking : ∀ t, 0 < 2 * (glow t - 1) → 2 ≤ glow t
+theorem active_when_taking : ∀ t, 0 < 2 * (charge t - 1) → 2 ≤ charge t
   | 0, _ => Nat.le_refl 2
   | 1, takes => absurd takes (Nat.lt_irrefl 0)
   | t + 2, takes => active_when_taking t takes
 
-/-- Only the active bloom takes, from the condition it draws on, and it takes at its
+/-- Only the active oscillator takes, from the condition it draws on, and it takes at its
 first active step. -/
 theorem takes : flow.Taking web ∧ ∀ t f, web.Arises t f → flow.ArisesTaking web [()] t f :=
   ⟨fun t f _ _ takes => match f, takes with
-    | .sun, takes => absurd takes (Nat.lt_irrefl 0)
-    | .bloom, takes => ⟨active_when_taking t takes, active_when_taking t takes⟩,
+    | .source, takes => absurd takes (Nat.lt_irrefl 0)
+    | .oscillator, takes => ⟨active_when_taking t takes, active_when_taking t takes⟩,
    fun t f arises => match f, arises with
-    | .sun, ⟨inactive, _⟩ => absurd trivial inactive
-    | .bloom, arises => ⟨arises, .tail _ (.head _), takes_when_active (t + 1) arises.2⟩⟩
+    | .source, ⟨inactive, _⟩ => absurd trivial inactive
+    | .oscillator, arises => ⟨arises, .tail _ (.head _), takes_when_active (t + 1) arises.2⟩⟩
 
 theorem takers_le (t : Nat) : flow.takers [()] t ≤ 1 :=
   Nat.add_le_add (Nat.zero_le 0) (Nat.add_le_add (sign_le_one _) (Nat.zero_le 0))
 
-/-- The bloom arises again and again (`Bloom.unceasing`), yet the flow balances, only
+/-- The oscillator arises again and again (`Oscillation.unceasing`), yet the flow balances, only
 active formations give, and at most one formation ever takes: unceasing generation is
 not more without end. -/
 theorem not_more :
@@ -708,15 +708,15 @@ theorem not_more :
     ¬ flow.More [()] :=
   ⟨fun t _ => balances t,
    fun _ f _ _ gives => match f, gives with
-    | .sun, _ => trivial,
+    | .source, _ => trivial,
    fun _ f _ => match f with
-    | .sun => Nat.le_refl 1
-    | .bloom => Nat.zero_le 1,
+    | .source => Nat.le_refl 1
+    | .oscillator => Nat.zero_le 1,
    unceasing.2.2.2.1,
    fun more => match more 2 with
     | ⟨T, many⟩ => Nat.not_succ_le_self 1 (Nat.le_trans (many T (Nat.le_refl T)) (takers_le T))⟩
 
-end Bloom
+end Oscillation
 
 /-! ## The renewers can be the takers -/
 
@@ -772,7 +772,7 @@ end Cycle
 
 namespace Pulse
 
-open Garden (Kind)
+open Expansion (Kind)
 
 /-- `n` formations of one kind. -/
 def kind (k : Kind) : Nat → List (Kind × Nat)

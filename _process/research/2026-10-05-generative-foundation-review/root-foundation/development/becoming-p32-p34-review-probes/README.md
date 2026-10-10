@@ -17,7 +17,7 @@
 - **Q1 `Balance`, `tally_balance`, `tally_le`, `tally_of_balance`, `tally_iff`, `balance_not_tally`:** in the core `Balance`, `Tally.balance`, `Tally.ceasing_le`, `tally_iff` and `balance_not_tally` (finding U1). `ceasing_bound_law` is kept here; its content is `balance_not_tally` with `Tally.ceasing_le`.
 - **Q2 `tally_congr`, `tally_iff_counted`:** `Tally.congr` and `tally_iff_counted` (U7).
 - **Q3 `since_le`, `since_zero_le`, `settles_zero`, `settles_iff_zero`, `same_laws`:** `occurrences_le`, `occurrences_zero_le`, `ChangeBound.from_zero`, `changeBound_iff_zero` and `World.enclosed_iff_finite_counting` (U4). The law is now stated once, with a change bound from the first step.
-- **Q4 `tended_dissipation_idle`, `tended_not_binds`:** `World.tended_not_binds`, which adds that bounded transmission is idle too (U3).
+- **Q4 `tended_dissipation_idle`, `tended_not_binds`:** `World.tended_not_binds`, which adds that bounded transmission is idle too (U3); P36 renamed it `World.openQueue_not_binds`.
 - **Q5 `FirstChange.*`, `lpo_of_settlesEnds`, `lpo_of_finiteEnds`:** `Swap.*`, `ChangeBound.lpo_of_ends` and `World.lpo_of_finite_ends` (U5). `Swap` counts with `mark` where the probes used `ind`.
 - **Q6 `OneSwap.*`, `closed_dissipation_binds`:** `World.replaced`, `World.finite_dissipation_binds` and `World.replaced_attains`, with `Swap` at a sequence that is `true` throughout.
 - **Q7 `binds_arising`, `binds_adds`:** `World.binds_arising` and `World.binds_adds` (U3).

@@ -66,7 +66,7 @@ Results:
   migration or seasonal absence continues a dependence is an application duty.
 * After a loss, further drawing breaks nothing, yet it is undermining. Undermining reads
   co-participation in a shortfall that is not restored, not what a draw does: drawing
-  that changes no level undermines too (`Pinned`), and in the commons, where renewal
+  that changes no level undermines too (`Pinned`), and in `Renewable`, where renewal
   continues below support, drawing after the loss also keeps the condition from
   returning.
 * The stepwise and whole-run readings differ in both directions: a formation can draw
@@ -898,7 +898,7 @@ end Crossing
 
 /-! ## The stepwise and whole-run readings differ -/
 
-namespace Commons
+namespace Renewable
 
 def escalatingState : Nat → Nat
   | 0 => 1
@@ -962,22 +962,22 @@ def pausingState : Nat → Nat
   | 1 => 0
   | t + 2 => t + 1
 
-/-- Drawing beyond renewal once, then taking nothing (action 0). The commons' `draws`
+/-- Drawing beyond renewal once, then taking nothing (action 0). `Renewable`'s `draws`
 is blind to amount, so the focal formation formally draws at every step. -/
 def pausing : Run process :=
   ⟨pausingState, fun | 0 => 2 | _ + 1 => 0, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
 
-/-- After the loss, further drawing breaks nothing, yet it undermines. In the winning
-run every later event of the focal formation draws on a condition that fails a need it
+/-- After the loss, further drawing breaks nothing, yet it undermines. In the run beyond
+renewal every later event of the focal formation draws on a condition that fails a need it
 once met, without breaking anything; in the run that takes the same first step and then
-takes nothing, the condition returns, since in the commons renewal continues below
+takes nothing, the condition returns, since in `Renewable` renewal continues below
 support. Undermining reads drawing on a condition that is left below a need it once met
 and below the present need; it does not test whether the drawing keeps the condition
 from returning (`Pinned`). -/
 theorem drawing_after_loss :
-    (∀ t, 0 < t → ¬ (conditions.dependence.along winning).BreakingAt t .focal ∧
-      (conditions.dependence.along winning).UnderminingAt t .focal) ∧
-    pausing.state 0 = winning.state 0 ∧ pausing.act 0 = winning.act 0 ∧
+    (∀ t, 0 < t → ¬ (conditions.dependence.along beyondRenewal).BreakingAt t .focal ∧
+      (conditions.dependence.along beyondRenewal).UnderminingAt t .focal) ∧
+    pausing.state 0 = beyondRenewal.state 0 ∧ pausing.act 0 = beyondRenewal.act 0 ∧
     ¬ (conditions.dependence.along pausing).Consumed () :=
   ⟨fun
     | _ + 1, _ => ⟨fun ⟨_, _, g, depends, met, _⟩ => match g, depends with
@@ -989,7 +989,7 @@ theorem drawing_after_loss :
       Nat.not_succ_le_zero T (Nat.le_of_succ_le_succ (below (T + 2)
         (Nat.lt_of_lt_of_le (Nat.lt_succ_self T) (Nat.le_succ _))))⟩
 
-end Commons
+end Renewable
 
 /-! ## Undermining without effect -/
 
@@ -1060,7 +1060,7 @@ end Pinned
 namespace Dip
 
 inductive Formation where
-  | keeper
+  | dependent
   | drawer
 
 /-- A shared condition dips for one step and is renewed. -/
@@ -1070,8 +1070,8 @@ def levels : Nat → Nat
   | 2 => 0
   | _ + 3 => 1
 
-/-- The keeper is active wherever the condition meets its need at both ends of its step. -/
-def keeperActive : Nat → Prop
+/-- The dependent is active wherever the condition meets its need at both ends of its step. -/
+def dependentActive : Nat → Prop
   | 0 => True
   | 1 => False
   | 2 => False
@@ -1083,33 +1083,33 @@ def drawerActive : Nat → Prop
   | 1 => True
   | _ + 2 => False
 
-/-- The keeper depends on the condition throughout; the drawer only draws on it. -/
+/-- The dependent depends on the condition throughout; the drawer only draws on it. -/
 def web : Web Formation Unit where
   level t _ := levels t
   active t
-    | .keeper => keeperActive t
+    | .dependent => dependentActive t
     | .drawer => drawerActive t
   requires _ f _ := match f with
-    | .keeper => True
+    | .dependent => True
     | .drawer => False
   need _ _ _ := 1
   draws t
-    | .keeper => fun _ => False
+    | .dependent => fun _ => False
     | .drawer => fun _ => drawerActive t
 
-/-- The keeper is within renewal at each of its own steps, yet does not renew in the
-run: the drawer breaks the shared condition while the keeper is inactive. Whole-run
+/-- The dependent is within renewal at each of its own steps, yet does not renew in the
+run: the drawer breaks the shared condition while the dependent is inactive. Whole-run
 renewal reads the shared condition, so it is not the conjunction of a formation's
-steps. The keeper draws on nothing, so this separates readings of renewal, not readings
+steps. The dependent draws on nothing, so this separates readings of renewal, not readings
 of whether its activity undermines others. -/
 theorem renewing_at_each_step_not_in_run :
-    web.Dependent ∧ (∀ t, web.active t .keeper → web.RenewingAt t .keeper) ∧
-    ¬ web.RenewingIn .keeper := by
+    web.Dependent ∧ (∀ t, web.active t .dependent → web.RenewingAt t .dependent) ∧
+    ¬ web.RenewingIn .dependent := by
   refine ⟨?_, ?_, fun renewing => ?_⟩
   · intro t f active c depends
     cases f with
     | drawer => exact False.elim depends
-    | keeper =>
+    | dependent =>
       match t, active with
       | 0, _ => exact Nat.le_refl 1
       | _ + 3, _ => exact Nat.le_refl 1
@@ -1117,11 +1117,11 @@ theorem renewing_at_each_step_not_in_run :
     refine ⟨active, fun _ _ g depends => ?_⟩
     cases g with
     | drawer => exact False.elim depends
-    | keeper =>
+    | dependent =>
       match t, active with
       | 0, _ => exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩
       | _ + 3, _ => exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩
-  · exact Nat.not_succ_le_zero 0 (renewing 0 () (Or.inl trivial) 1 .keeper trivial).2
+  · exact Nat.not_succ_le_zero 0 (renewing 0 () (Or.inl trivial) 1 .dependent trivial).2
 
 end Dip
 

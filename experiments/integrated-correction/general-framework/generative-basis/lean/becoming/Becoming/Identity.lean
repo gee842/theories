@@ -28,8 +28,8 @@ Results:
   balance of depletion and replenishment, and how many formations take and give, so
   whether generation is more without end (`More`). A census of the active formations and
   `Taking` carry over too, so under them more without end makes generation unceasing
-  under every re-identification (`More.unceasing_reidentified`), as in the garden
-  (`Garden.unceasing_reidentified`): under one-to-one readings of identity, the arising
+  under every re-identification (`More.unceasing_reidentified`), as in the expansion
+  (`Expansion.unceasing_reidentified`): under one-to-one readings of identity, the arising
   it forces is not an artefact of naming.
 * What a formation is across steps depends on it (`Turnover`). Exchanging names at
   every odd step, with every step's relations unchanged:
@@ -59,10 +59,10 @@ Results:
   - two members of a lineage active at alternate steps arise without end when named
     apart, and named as one the lineage is always active and nothing arises
     (`Lineage`);
-  - an heir that lives, is supported at its first step, and then needs more of the pool
+  - a successor that lives, is supported at its first step, and then needs more of the pool
     than it holds was never met above the pool's later level while its own dependence
-    held: drawing after the elder's loss undermines nothing when the two are named
-    apart, and undermines at every step from the third when the heir succeeds the elder
+    held: drawing after the predecessor's loss undermines nothing when the two are named
+    apart, and undermines at every step from the third when the successor succeeds the predecessor
     (`Succession`).
   In each witness the joined naming keeps every continuing activity and dependence of
   the apart naming; the apart naming does not keep the joined naming's
@@ -82,7 +82,7 @@ Results:
   (`Flow.More.unceasingFrom`, `Web.NoSplit`). Every re-identification is such a
   continuation, and so is one with merges (`Merge`); the decidability the theorem asks
   follows from the census and a decidable continuation (`Census.decideContinues`). On the
-  garden, whose formations never end, that merge comes with a persisting formation
+  expansion, whose formations never end, that merge comes with a persisting formation
   re-read as arising at every step, so the conclusion holds there without `More`
   (`Merge.idle`); where the merged formation ends, what arises under a merge is exactly
   what is new (`Confluence`).
@@ -126,7 +126,7 @@ transformation as against an ending and another forming, and arising, hence `Unc
 Continuity of activity and dependence, read one way, rules out making arising and
 removing undermining and leaves succession open; read both ways it fixes both, and it
 still leaves the class of a formation open across dormancy. Whether a lineage is one
-formation continuing, many generated, or both at two levels, and whether an heir
+formation continuing, many generated, or both at two levels, and whether a successor
 inherits a loss, are further readings. Where generation is more without end under a
 census, with each formation taking part listed once and only active formations taking,
 it is unceasing under every one-to-one reading of identity, and formations arise without
@@ -1124,13 +1124,13 @@ theorem naming_meets_premises :
 
 end TideFlip
 
-/-- In the garden every premise of `More.unceasing_reidentified` holds
-(`Garden.counted`), so its generation is unceasing under every re-identification. -/
-theorem Garden.unceasing_reidentified (σ : Reidentify (Garden.Kind × Nat) F') :
-    (Garden.web.reidentify σ).Unceasing :=
-  have : ∀ t f, Decidable (Garden.web.active t f) := fun t f => Nat.decLt f.2 t
-  Flow.More.unceasing_reidentified Garden.census Garden.distinct Garden.growers_take.1
-    Garden.counted.2.2.2 σ
+/-- In the expansion every premise of `More.unceasing_reidentified` holds
+(`Expansion.counted`), so its generation is unceasing under every re-identification. -/
+theorem Expansion.unceasing_reidentified (σ : Reidentify (Expansion.Kind × Nat) F') :
+    (Expansion.web.reidentify σ).Unceasing :=
+  have : ∀ t f, Decidable (Expansion.web.active t f) := fun t f => Nat.decLt f.2 t
+  Flow.More.unceasing_reidentified Expansion.census Expansion.distinct Expansion.growers_take.1
+    Expansion.counted.2.2.2 σ
 
 namespace Budding
 
@@ -1181,9 +1181,9 @@ end Fork
 
 namespace Merge
 
-open Garden (Kind)
+open Expansion (Kind)
 
-/-- The `i`th renewer and the `i`th grower of the garden both continue as the `i`th
+/-- The `i`th renewer and the `i`th grower of the expansion both continue as the `i`th
 renewer. -/
 def merges (_ : Nat) (g f : Kind × Nat) : Prop :=
   f = (.renewer, g.2)
@@ -1195,31 +1195,31 @@ instance decideMerges (t : Nat) : ∀ g f, Decidable (merges t g f)
       isTrue (congrArg (Prod.mk Kind.renewer) same : (Kind.renewer, i) = (.renewer, j))
     | isFalse other => isFalse fun same => other (congrArg Prod.snd same)
 
-theorem noSplit : Garden.web.NoSplit merges :=
+theorem noSplit : Expansion.web.NoSplit merges :=
   fun _ _ _ _ _ same same' _ _ => same.trans same'.symm
 
 /-- Two formations active at step one continue as one after it, so the continuation
-merges, and with no split and the garden's census every premise of
+merges, and with no split and the expansion's census every premise of
 `Flow.More.unceasingFrom` holds under it. The conclusion is met idly (`idle`). -/
 theorem merging :
-    Garden.web.active 1 (.renewer, 0) ∧ Garden.web.active 1 (.grower, 0) ∧
+    Expansion.web.active 1 (.renewer, 0) ∧ Expansion.web.active 1 (.grower, 0) ∧
     merges 1 (.renewer, 0) (.renewer, 0) ∧ merges 1 (.grower, 0) (.renewer, 0) ∧
-    Garden.web.active 2 (.renewer, 0) ∧ (Kind.renewer, 0) ≠ (Kind.grower, 0) ∧
-    Garden.web.UnceasingFrom merges :=
-  have := Garden.census.decideContinues (R := merges)
+    Expansion.web.active 2 (.renewer, 0) ∧ (Kind.renewer, 0) ≠ (Kind.grower, 0) ∧
+    Expansion.web.UnceasingFrom merges :=
+  have := Expansion.census.decideContinues (R := merges)
   ⟨Nat.zero_lt_one, Nat.zero_lt_one, rfl, rfl, Nat.zero_lt_succ 1,
    fun same => Kind.noConfusion (congrArg Prod.fst same),
-   Flow.More.unceasingFrom Garden.census Garden.distinct Garden.growers_take.1
-     Garden.counted.2.2.2 noSplit⟩
+   Flow.More.unceasingFrom Expansion.census Expansion.distinct Expansion.growers_take.1
+     Expansion.counted.2.2.2 noSplit⟩
 
 /-- No formation continues as a grower, so the first grower, active from step one on,
 arises under the merge across every step, and formations arise under it at arbitrarily
 late steps without `More`. Under each formation continuing only itself, the same grower
 arises only across step zero. -/
 theorem idle :
-    (∀ N, Garden.web.ArisesFrom merges N (.grower, 0)) ∧ Garden.web.UnceasingFrom merges ∧
-    ∀ N, ¬ Garden.web.Arises (N + 1) (.grower, 0) :=
-  have idle : ∀ N, Garden.web.ArisesFrom merges N (.grower, 0) := fun N =>
+    (∀ N, Expansion.web.ArisesFrom merges N (.grower, 0)) ∧ Expansion.web.UnceasingFrom merges ∧
+    ∀ N, ¬ Expansion.web.Arises (N + 1) (.grower, 0) :=
+  have idle : ∀ N, Expansion.web.ArisesFrom merges N (.grower, 0) := fun N =>
     ⟨Nat.succ_pos N, fun ⟨_, _, same⟩ => Kind.noConfusion (congrArg Prod.fst same)⟩
   ⟨idle, fun N => ⟨N, (.grower, 0), Nat.le_refl N, idle N⟩,
    fun N arises => arises.1 (Nat.succ_pos N)⟩
@@ -1287,12 +1287,12 @@ end Confluence
 only itself there is no split, only active formations take, each formation taking part is
 listed once, and generation is more without end, yet nothing arises under it. -/
 theorem Dormant.no_split_without_arising :
-    Dormant.web.NoSplit (fun _ g f => g = f) ∧ Garden.flow.More [()] ∧
-    Garden.flow.Taking Dormant.web ∧ (∀ t, Distinct (Garden.flow.present t)) ∧
+    Dormant.web.NoSplit (fun _ g f => g = f) ∧ Expansion.flow.More [()] ∧
+    Expansion.flow.Taking Dormant.web ∧ (∀ t, Distinct (Expansion.flow.present t)) ∧
     ¬ Dormant.web.UnceasingFrom (fun _ g f => g = f) :=
   ⟨fun _ _ _ _ _ same same' _ _ => same.symm.trans same',
    Dormant.more_without_arising.2.2.2.2.2.1, Dormant.more_without_arising.2.2.1,
-   Garden.distinct,
+   Expansion.distinct,
    fun unceasing => match (Dormant.web.unceasingFrom_self.mp unceasing) 0 with
     | ⟨t, f, _, arises⟩ => Dormant.more_without_arising.2.2.2.2.2.2 t f arises⟩
 
@@ -1476,45 +1476,46 @@ end Layered
 
 namespace Succession
 
-/-- A drawer, an elder that needs the pool at the first step, and an heir that needs it
+/-- A drawer, a predecessor that needs the pool at the first step, and a successor that needs it
 from the second step on. -/
 inductive Formation where
   | drawer
-  | elder
-  | heir
+  | predecessor
+  | successor
 
-/-- The pool of `Turnover`: two units, then one. The elder needs two units at the first
-step, where it is active and supported. The heir needs one unit at the second step,
+/-- The pool of `Turnover`: two units, then one. The predecessor needs two units at the first
+step, where it is active and supported. The successor needs one unit at the second step,
 where it is active and supported, and two from the third step on. -/
 def web : Web Formation Unit where
   level t _ := Turnover.pool t
   active t f := match f with
     | .drawer => True
-    | .elder => t = 0
-    | .heir => t = 1
+    | .predecessor => t = 0
+    | .successor => t = 1
   requires t f _ := match f with
     | .drawer => False
-    | .elder => t = 0
-    | .heir => 1 ≤ t
+    | .predecessor => t = 0
+    | .successor => 1 ≤ t
   need t f _ := match f with
     | .drawer => 0
-    | .elder => 2
-    | .heir => match t with
+    | .predecessor => 2
+    | .successor => match t with
       | 1 => 1
       | _ => 2
   draws _ f _ := match f with
     | .drawer => True
-    | .elder | .heir => False
+    | .predecessor | .successor => False
 
 def swap : Formation → Formation
   | .drawer => .drawer
-  | .elder => .heir
-  | .heir => .elder
+  | .predecessor => .successor
+  | .successor => .predecessor
 
 theorem swap_swap : ∀ f, swap (swap f) = f
-  | .drawer | .elder | .heir => rfl
+  | .drawer | .predecessor | .successor => rfl
 
-/-- The heir succeeds the elder: from the second step on, it bears the elder's name. -/
+/-- The successor succeeds the predecessor: from the second step on, it bears the
+predecessor's name. -/
 def succeeds : Reidentify Formation Formation := .exchanging afterFirst swap swap_swap
 
 /-- The re-identified web. -/
@@ -1523,47 +1524,49 @@ abbrev inherited : Web Formation Unit := web.reidentify succeeds
 theorem drawer_named (t : Nat) : turn swap (afterFirst t) .drawer = .drawer :=
   turn_fixed rfl (afterFirst t)
 
-/-- Activity needs support, and the heir lives at the second step. Succession keeps every
-continuing activity and dependence. Named apart, the drawer undermines at the first step,
-where it breaks the elder's dependence, and at no later step: the heir's need was never
-met above the pool's later level while its dependence held. With the heir succeeding the
-elder, the elder's tenure continues in the heir, and the drawer undermines at every step
-from the third. -/
+/-- Activity needs support, and the successor lives at the second step. Succession keeps
+every continuing activity and dependence. Named apart, the drawer undermines at the first
+step, where it breaks the predecessor's dependence, and at no later step: the successor's
+need was never met above the pool's later level while its dependence held. With the
+successor succeeding the predecessor, the predecessor's tenure continues in the successor,
+and the drawer undermines at every step from the third. -/
 theorem readings :
-    web.Dependent ∧ web.active 1 .heir ∧ succeeds.KeepsActive web ∧
+    web.Dependent ∧ web.active 1 .successor ∧ succeeds.KeepsActive web ∧
     succeeds.KeepsTenure web ∧ web.UnderminingAt 0 .drawer ∧
     (∀ t, 1 ≤ t → ¬ web.UnderminingAt t .drawer) ∧
     ∀ t, 2 ≤ t → inherited.UnderminingAt t .drawer :=
   ⟨fun t f active _ depends => match f, t, active, depends with
     | .drawer, _, _, h => (nomatch h)
-    | .elder, 0, _, _ => Nat.le_refl 2
-    | .elder, _ + 1, h, _ => Nat.noConfusion h
-    | .heir, 1, _, _ => Nat.le_refl 1
-    | .heir, 0, h, _ => Nat.noConfusion h
-    | .heir, _ + 2, h, _ => Nat.noConfusion (Nat.succ.inj h),
+    | .predecessor, 0, _, _ => Nat.le_refl 2
+    | .predecessor, _ + 1, h, _ => Nat.noConfusion h
+    | .successor, 1, _, _ => Nat.le_refl 1
+    | .successor, 0, h, _ => Nat.noConfusion h
+    | .successor, _ + 2, h, _ => Nat.noConfusion (Nat.succ.inj h),
    rfl,
    fun t f now next => match f, now, next with
     | .drawer, _, _ => (drawer_named (t + 1)).trans (drawer_named t).symm
-    | .elder, _, next => Nat.noConfusion next
-    | .heir, now, next => Nat.noConfusion ((Nat.succ.inj next).symm.trans now),
+    | .predecessor, _, next => Nat.noConfusion next
+    | .successor, now, next => Nat.noConfusion ((Nat.succ.inj next).symm.trans now),
    fun t g _ now next => match g, t, now, next with
     | .drawer, _, h, _ => (nomatch h)
-    | .elder, _, _, next => Nat.noConfusion next
-    | .heir, _ + 1, _, _ => rfl
-    | .heir, 0, now, _ => absurd now (Nat.not_succ_le_zero 0),
-   ⟨(), trivial, .elder, rfl, .now rfl (Nat.le_refl 2) (Nat.lt_succ_self 1), Nat.lt_succ_self 1⟩,
+    | .predecessor, _, _, next => Nat.noConfusion next
+    | .successor, _ + 1, _, _ => rfl
+    | .successor, 0, now, _ => absurd now (Nat.not_succ_le_zero 0),
+   ⟨(), trivial, .predecessor, rfl, .now rfl (Nat.le_refl 2) (Nat.lt_succ_self 1),
+    Nat.lt_succ_self 1⟩,
    fun t late ⟨_, _, g, depends, ⟨s, before, held, met, above⟩, _⟩ =>
     match g, depends, held, met, above with
     | .drawer, h, _, _, _ => (nomatch h)
-    | .elder, h, _, _, _ => Nat.not_succ_le_zero 0 (Eq.subst (motive := fun n => 1 ≤ n) h late)
-    | .heir, _, held, met, above =>
-      have above_one : 1 < web.need s .heir () := Nat.lt_of_le_of_lt
+    | .predecessor, h, _, _, _ =>
+      Nat.not_succ_le_zero 0 (Eq.subst (motive := fun n => 1 ≤ n) h late)
+    | .successor, _, held, met, above =>
+      have above_one : 1 < web.need s .successor () := Nat.lt_of_le_of_lt
         (Nat.le_of_eq (Turnover.pool_late (Nat.succ_le_succ (Nat.zero_le t))).symm) above
-      have at_most_one : web.need s .heir () ≤ 1 :=
+      have at_most_one : web.need s .successor () ≤ 1 :=
         Nat.le_trans met (Nat.le_of_eq (Turnover.pool_late (held s (Nat.le_refl s) before)))
       Nat.lt_irrefl 1 (Nat.lt_of_lt_of_le above_one at_most_one),
    fun t late => match t, late with
-    | m + 2, _ => ⟨(), trivial, .elder, Nat.succ_le_succ (Nat.zero_le (m + 1)),
+    | m + 2, _ => ⟨(), trivial, .predecessor, Nat.succ_le_succ (Nat.zero_le (m + 1)),
         ⟨0, Nat.zero_le _, fun u _ _ => match u with
           | 0 => rfl
           | v + 1 => Nat.succ_le_succ (Nat.zero_le v),

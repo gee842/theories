@@ -54,8 +54,8 @@ to be decidable at each step.
   premise at all: conditions of a finite family come to stand at arbitrarily late steps
   exactly when they cease to stand at arbitrarily late steps (`Web.standing_recurs_iff`).
 * **Finiteness does the work.** Ever new formations can arise, none ever ceasing, while a
-  level rises at every step and never falls (`Dawn`); formations all active at the start
-  can cease one after another while nothing arises (`Dusk`).
+  level rises at every step and never falls (`Accretion`); formations all active at the start
+  can cease one after another while nothing arises (`Attrition`).
 
 These laws hold of the whole space of unfoldings; a law that needs a premise names it, and
 the premise picks out a part of that space. No ethical predicate, ranking or axiom
@@ -584,7 +584,7 @@ end Web
 
 /-! ## Finiteness does the work -/
 
-namespace Dawn
+namespace Accretion
 
 /-- Formation `f` arises across step `f` and never ceases; the one condition rises at every
 step. -/
@@ -607,9 +607,9 @@ theorem rises : ∀ t, web.Rises t () :=
 theorem never_falls : ∀ t, ¬ web.Falls t () :=
   fun t falls => Nat.lt_asymm falls (Nat.lt_succ_self t)
 
-end Dawn
+end Accretion
 
-namespace Dusk
+namespace Attrition
 
 /-- Every formation is active from the start, and formation `f` ceases across step `f`;
 nothing arises. -/
@@ -626,6 +626,6 @@ theorem ceasing : ∀ N, ∃ t f, N ≤ t ∧ web.Ceases t f :=
 theorem nothing_arises : ∀ t f, ¬ web.Arises t f :=
   fun _ _ arises => arises.1 (Nat.le_of_succ_le arises.2)
 
-end Dusk
+end Attrition
 
 end Becoming

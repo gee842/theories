@@ -887,7 +887,7 @@ namespace Sleeper
 /-- One relatum standing at one throughout, awake at odd steps. -/
 def web : Web Unit Unit where
   level _ _ := 1
-  active t _ := 0 < Handing.stands false t
+  active t _ := 0 < Shuttle.stands false t
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
@@ -905,7 +905,7 @@ theorem sleeper : flow.Balances web ∧ flow.Dissipative ∧ web.Dependent ∧ w
     ∀ t, ¬ web.ComesToStand t () :=
   ⟨fun _ _ => rfl, fun _ _ _ _ _ present => (nomatch present),
    fun _ _ _ _ depends => (nomatch depends),
-   fun N => match Handing.recurs false N with
+   fun N => match Shuttle.recurs false N with
     | ⟨t, later, arises⟩ => ⟨t, (), later, arises⟩,
    fun _ _ => Nat.zero_lt_one,
    fun embodied => Nat.lt_irrefl 0 ((embodied 0).mpr Nat.zero_lt_one),
@@ -931,7 +931,7 @@ active. Nothing depends on or draws on anything. -/
 def web : Web Relatum Relatum where
   level t x := match x with
     | .parent => 0
-    | .seed => SunSeed.sprout t
+    | .seed => SourceSeed.sprout t
   active t x := match x with
     | .parent => True
     | .seed => 0 < late t
@@ -940,7 +940,7 @@ def web : Web Relatum Relatum where
   draws _ _ _ := False
 
 /-- One unit at step zero. -/
-def gift : Nat → Nat
+def provision : Nat → Nat
   | 0 => 1
   | _ => 0
 
@@ -949,7 +949,7 @@ def flow : Flow Relatum Relatum where
   present _ := [.parent]
   take _ _ _ := 0
   give t g y := match g, y with
-    | .parent, .seed => gift t
+    | .parent, .seed => provision t
     | .parent, .parent => 0
     | .seed, _ => 0
 

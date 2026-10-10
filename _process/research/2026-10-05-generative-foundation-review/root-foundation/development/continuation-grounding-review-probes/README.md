@@ -17,10 +17,10 @@ The rerun compiled `Becoming.Continuation` and `Becoming.Standpoints` from the b
 - **R1 `own_transmission_of_selfGood`:** S0 at every position gives transmission into each own region. In the core this is `Valuation.own_transmission` (finding C1).
 - **R2 `significant_of_selfGood_transmits`, `apart_fails_transmission`:** a second completion, and `Apart` failing N_rel. In the core these are `Valuation.significant_of_transmits` and a conjunct of `Apart.not_enough` (C2).
 - **R3 `significant_iff_held_own`:** on held lives, sharing restricted to each position's own region already suffices. This is kept here as evidence and was not moved.
-- **R4 `Tot.out_of_own_fails`, R5 `Tot.stronger`:** transmission out of own regions along formed relations fails, and a witness closed along dependence exists. In the core these are the strengthened `Totalizer.center_not_derived` with `Flow.FedBy` and `Totalizer.fedBy_sun`; the core's `FedBy` also requires the feeding formation to take part (C1).
-- **R6 `Tot.supply_not_cut_living_on`:** in the core this is `Totalizer.supply_not_cut_living_on` (C8).
+- **R4 `Tot.out_of_own_fails`, R5 `Tot.stronger`:** transmission out of own regions along formed relations fails, and a witness closed along dependence exists. In the core these are the strengthened `Totalizer.center_not_derived` with `Flow.FedBy` and `Totalizer.fedBy_sun`, which P36 renamed `Clearing.center_not_derived` and `Clearing.fedBy_source`; the core's `FedBy` also requires the feeding formation to take part (C1).
+- **R6 `Tot.supply_not_cut_living_on`:** in the core this is `Totalizer.supply_not_cut_living_on`, which P36 renamed `Clearing.resource_not_cut_living_on` (C8).
 - **R7 `lone_only_sun`, R8 `mortal_joint_excess`, R9 `exceeding_by_definition`:** evidence for C3, C6 and C7, handled by rewording.
-- **R10 `keeper_active_not_living`:** in the core this is `Totalizer.keeper_not_living` (C13).
+- **R10 `keeper_active_not_living`:** in the core this is `Totalizer.keeper_not_living`, which P36 renamed `Clearing.clearer_not_living` (C13).
 
 ## Reproduction
 

@@ -29,8 +29,8 @@ reading.
   living.
 * **Descent.** A relatum descends from a formation that takes part in a step at which it
   gives to the relatum and across which the relatum comes to stand (`Flow.Descends`, in
-  `Becoming.Evolution`). A gift entry of a formation that takes no part enters no level,
-  and makes no descent (`Stranger`). Descent relates relata whole, every event of the one
+  `Becoming.Evolution`). A `give` entry of a formation that takes no part enters no level,
+  and makes no descent (`Unrelated`). Descent relates relata whole, every event of the one
   to every event of the other (`Flow.descent`). In a balanced flow in which only active
   formations give, an embodied relatum that arises descends from another formation active
   at that step (`Embodied.descends`), which need not be embodied. Under N_rel, valuing any
@@ -193,7 +193,7 @@ theorem descends (t : Nat) : flow.Descends web (t + 1) t :=
   ⟨t, .head [], Nat.lt_of_lt_of_le Nat.zero_lt_one (Nat.le_of_eq (birth_next t).symm), arises t⟩
 
 /-- Only the generation taking part gives: the first generation does not descend from the
-eighth, whose gift entry at step zero belongs to no formation taking part. -/
+eighth, whose `give` entry at step zero belongs to no formation taking part. -/
 theorem not_descends : ¬ flow.Descends web 1 7 :=
   fun ⟨t, present, gives, _⟩ => match t, present, gives with
     | 0, .tail _ rest, _ => nomatch rest
@@ -349,7 +349,7 @@ def web : Web Relatum Relatum where
     | .sleeper => 1
   active t x := match x with
     | .eater => True
-    | .sleeper => 0 < Handing.stands false t
+    | .sleeper => 0 < Shuttle.stands false t
   requires _ g y := g = .eater ∧ y = .sleeper
   need _ _ _ := 1
   draws _ g y := g = .eater ∧ y = .sleeper
@@ -413,68 +413,68 @@ theorem drowsy : web.Dependent ∧ ¬ web.Embodied .sleeper ∧ web.active 0 .ea
 
 end Drowsy
 
-namespace Stranger
+namespace Unrelated
 
 inductive Relatum where
   | parent
   | seed
-  | stranger
+  | unrelated
 
-/-- The seed stands and is active from step one; the parent and the stranger are always
+/-- The seed stands and is active from step one; the parent and the unrelated relatum are always
 active and stand at zero. Nothing depends on or draws on anything. -/
 def web : Web Relatum Relatum where
   level t x := match x with
     | .parent => 0
-    | .seed => SunSeed.sprout t
-    | .stranger => 0
+    | .seed => SourceSeed.sprout t
+    | .unrelated => 0
   active t x := match x with
     | .parent => True
-    | .seed => 0 < SunSeed.sprout t
-    | .stranger => True
+    | .seed => 0 < SourceSeed.sprout t
+    | .unrelated => True
   requires _ _ _ := False
   need _ _ _ := 0
   draws _ _ _ := False
 
 def toSeed (t : Nat) : Relatum → Nat
   | .parent => 0
-  | .seed => Provisioned.gift t
-  | .stranger => 0
+  | .seed => Provisioned.provision t
+  | .unrelated => 0
 
 /-- Only the parent takes part, giving the seed one unit across step zero; the flow also
-carries a gift entry for the stranger, which takes no part. -/
+carries a `give` entry for the unrelated relatum, which takes no part. -/
 def flow : Flow Relatum Relatum where
   present _ := [.parent]
   take _ _ _ := 0
   give t g y := match g with
     | .parent => toSeed t y
     | .seed => 0
-    | .stranger => toSeed t y
+    | .unrelated => toSeed t y
 
 theorem balances : flow.Balances web
-  | 0, .parent | 0, .seed | 0, .stranger => rfl
-  | _ + 1, .parent | _ + 1, .seed | _ + 1, .stranger => rfl
+  | 0, .parent | 0, .seed | 0, .unrelated => rfl
+  | _ + 1, .parent | _ + 1, .seed | _ + 1, .unrelated => rfl
 
 theorem acting : flow.Acting web
   | _, .parent, _, _, _ => trivial
   | _, .seed, _, _, gives => absurd gives (Nat.lt_irrefl 0)
-  | _, .stranger, _, _, _ => trivial
+  | _, .unrelated, _, _, _ => trivial
 
-theorem absent (t : Nat) : ¬ Relatum.stranger ∈ flow.present t :=
+theorem absent (t : Nat) : ¬ Relatum.unrelated ∈ flow.present t :=
   fun mem => match mem with
     | .tail _ rest => nomatch rest
 
-/-- A gift entry of a formation that takes no part enters no level and makes no descent:
-the flow balances and only active formations give, the stranger's entry is positive
+/-- A `give` entry of a formation that takes no part enters no level and makes no descent:
+the flow balances and only active formations give, the unrelated relatum's entry is positive
 across the step at which the seed comes to stand, and the seed descends from the parent
 alone. -/
-theorem stranger : flow.Balances web ∧ flow.Acting web ∧
-    (∀ t, ¬ Relatum.stranger ∈ flow.present t) ∧ 0 < flow.give 0 .stranger .seed ∧
+theorem unrelated : flow.Balances web ∧ flow.Acting web ∧
+    (∀ t, ¬ Relatum.unrelated ∈ flow.present t) ∧ 0 < flow.give 0 .unrelated .seed ∧
     web.ComesToStand 0 .seed ∧ flow.Descends web .seed .parent ∧
-    ¬ flow.Descends web .seed .stranger :=
+    ¬ flow.Descends web .seed .unrelated :=
   ⟨balances, acting, absent, Nat.zero_lt_one, ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩,
    ⟨0, .head [], Nat.zero_lt_one, ⟨Nat.lt_irrefl 0, Nat.zero_lt_one⟩⟩,
    fun ⟨t, present, _⟩ => absent t present⟩
 
-end Stranger
+end Unrelated
 
 end Becoming
