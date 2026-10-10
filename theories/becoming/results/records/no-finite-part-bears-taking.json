@@ -200,8 +200,8 @@
     "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the source of Expansion and Oscillation) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family (SprayShuttle), drawing in is stated only for a family enclosed around (taking_draws_in), which needs each step's exchange to lie within finitely many conditions; gives_less needs the family without repetition (Lone.repeated_family), and giving to a family not dissipated on need not take (Frontier.gives_without_taking); the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T110824.890630Z）：Becoming.Dissipation 89 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 与上升的定理属于 generation-is-replenishment，同一交换的定理属于 rising-and-falling-in-one-exchange，P25b 新增的 Flow.Enclosed.around_not_not 属于 continued-change-needs-openness）；同一回执覆盖包内 32 个模块（含只作导入的根模块与桥接），共 1457 项定理／2316 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 34 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T110824.890630Z): all 89 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives and the rising theorems belong to generation-is-replenishment, those of the one exchange to rising-and-falling-in-one-exchange, and Flow.Enclosed.around_not_not, added in P25b, to continued-change-needs-openness); the same receipt covers the package's 32 modules (including the import-only root and the bridge) with 1457 theorems/2316 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 34 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T112632.899583Z）：Becoming.Dissipation 89 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 与上升的定理属于 generation-is-replenishment，同一交换的定理属于 rising-and-falling-in-one-exchange，P25b 新增的 Flow.Enclosed.around_not_not 属于 continued-change-needs-openness）；同一回执覆盖包内 32 个模块（含只作导入的根模块与桥接），共 1488 项定理／2361 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 34 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T112632.899583Z): all 89 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives and the rising theorems belong to generation-is-replenishment, those of the one exchange to rising-and-falling-in-one-exchange, and Flow.Enclosed.around_not_not, added in P25b, to continued-change-needs-openness); the same receipt covers the package's 32 modules (including the import-only root and the bridge) with 1488 theorems/2361 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 34 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -382,19 +382,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "1d87e6d4c3cf8c3a09984b72fdd16a22de18ae2c29965d7134c1012076e5ed38",
+      "sha256": "5f656db38ee35eb8e58222b9303b8ec0cc1790f8f3ac9e399c09f5f8d4ad9e10",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6923c55d82540ba7441a73cd28ea3f3fc09e6d81b2e48553a8266ba522ac8fa1",
+      "sha256": "0765c145332c3ab790a61c45b43838d20c3dab2c91b2dc8b65e020ba37026be9",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "4dd58523149fd17b59eddedc916ba5796e17edebc86004ca6d8a743baf3a114e",
+      "sha256": "a4fcdc915b0cfcce93d3eeeb8e4f738afcfef995119f4a17202f9b73b8834a37",
       "declarations": []
     },
     {
@@ -616,6 +616,10 @@
     {
       "zh": "2026-10-10 P39：验证范围重新指向合并检查器回执 20261010T110824.890630Z 与外围回执 20261010T111624.656993Z（核心新增 Becoming.Significance，包内模块由 31 个增至 32 个，核心闭包由 33 个增至 34 个，共 1457 项定理／2316 项声明审计；已有模块的源（根模块的导入与说明除外）与定理数不变；章节加第二部分 §6.8）。断言不变。",
       "en": "2026-10-10 P39: validation scope re-pointed to consolidated receipt 20261010T110824.890630Z and periphery receipt 20261010T111624.656993Z (the core adds Becoming.Significance, the package growing from 31 to 32 modules and the core closure from 33 to 34, with 1457 theorems/2316 declaration audits; existing modules' sources, apart from the root module's import and documentation, and theorem counts are unchanged; the chapter adds Part II's section 6.8). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 P38b：验证范围重新指向合并检查器回执 20261010T112632.899583Z 与外围回执 20261010T112836.954648Z（有限世界中每个前提选择之下计数的规律：Openness 加入环 Ring、World.ring、World.embodiedRing、World.balancedRing，以及 World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff 与 World.enclosed_iff_finite_counting_under）；所引模块的定理数改为该回执的数目（Openness 154）。断言不变。",
+      "en": "2026-10-10 P38b: validation scope re-pointed to consolidated receipt 20261010T112632.899583Z and periphery receipt 20261010T112836.954648Z (the laws of counting under each selection of the premises in finite worlds: Openness adds the rings Ring, World.ring, World.embodiedRing and World.balancedRing, with World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff and World.enclosed_iff_finite_counting_under); the module counts cited are now that receipt's (Openness 154). The claim is unchanged."
     }
   ]
 }
