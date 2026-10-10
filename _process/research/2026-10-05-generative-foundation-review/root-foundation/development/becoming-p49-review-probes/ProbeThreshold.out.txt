@@ -1,0 +1,13 @@
+'Becoming.Review47.Flow.threshold_blind_no_webs' does not depend on any axioms
+'Becoming.Review47.Flow.alike_keeps_difference' does not depend on any axioms
+'Becoming.Review47.Flow.alike_iff_richer_only' does not depend on any axioms
+'Becoming.Review47.Flow.richer_while_alike' does not depend on any axioms
+'Becoming.Review47.Flow.alike_while_poorer_supported' does not depend on any axioms
+'Becoming.Review47.Flow.changed_after_divergence' does not depend on any axioms
+'Becoming.Review47.Flow.threshold_blind_of_general' does not depend on any axioms
+'Becoming.Review47.JointFailure.untouched_after_joint_failure' does not depend on any axioms
+'Becoming.Review47.Attracting.richer_breaks_first' does not depend on any axioms
+'Becoming.Review47.Exact.registers_threshold_only' does not depend on any axioms
+'Becoming.Review47.Exact.observed_registers_level' does not depend on any axioms
+'Becoming.Review47.shift_le' does not depend on any axioms
+'Becoming.Review47.shift_eq' does not depend on any axioms

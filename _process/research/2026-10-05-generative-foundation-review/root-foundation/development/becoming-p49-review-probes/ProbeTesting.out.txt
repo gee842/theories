@@ -1,0 +1,25 @@
+
+
+
+
+'Becoming.Review47.refutes_iff_within_all' does not depend on any axioms
+'Becoming.Review47.RefutesWithin.narrow' does not depend on any axioms
+'Becoming.Review47.RefutesWithin.not_meets' does not depend on any axioms
+'Becoming.Review47.unrefuted_of_extension' does not depend on any axioms
+'Becoming.Review47.tail_untested' does not depend on any axioms
+'Becoming.Review47.model_refutes_tail' does not depend on any axioms
+'Becoming.Review47.Stationary.model_error' does not depend on any axioms
+'Becoming.Review47.Stationary.model_refuted' does not depend on any axioms
+'Becoming.Review47.refutesWithin_iff_conjunction' does not depend on any axioms
+'Becoming.Review47.beyond_needs_model' does not depend on any axioms
+'Becoming.Review47.ClearingModel.model_idles_registration' does not depend on any axioms
+'Becoming.Review47.RefutesBy.of_member' does not depend on any axioms
+'Becoming.Review47.ClearingPooled.pooled' does not depend on any axioms
+'Becoming.Review47.belief_refutes_iff' does not depend on any axioms
+'Becoming.Review47.belief_judge_iff' does not depend on any axioms
+'Becoming.Review47.belief_judge_later' does not depend on any axioms
+'Becoming.Review47.belief_judge_widen' does not depend on any axioms
+'Becoming.Review47.belief_judge_beyond' does not depend on any axioms
+'Becoming.Renewable.sound_not_complete' does not depend on any axioms
+'Becoming.Renewable.withholds_not_not' does not depend on any axioms
+'Becoming.Renewable.no_exact_finite_reading' does not depend on any axioms

@@ -1,0 +1,164 @@
+@Becoming.ownStanding_other : ∀ {X : Type} {g c : X}, c ≠ g → ¬Becoming.ownStanding g c
+@Becoming.Web.RegistersAlike.refl : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F}
+  {l : Nat → C → Nat} (t : Nat), W.RegistersAlike obs g l l t
+@Becoming.Web.RegistersAlike.symm : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F}
+  {l l' : Nat → C → Nat} {t : Nat}, W.RegistersAlike obs g l l' t → W.RegistersAlike obs g l' l t
+@Becoming.Web.AlikeUpTo.symm : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F} {l l' : Nat → C → Nat}
+  {t : Nat}, W.AlikeUpTo obs g l l' t → W.AlikeUpTo obs g l' l t
+@Becoming.Web.AlikeUpTo.earlier : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F}
+  {l l' : Nat → C → Nat} {s t : Nat}, W.AlikeUpTo obs g l l' t → s ≤ t → W.AlikeUpTo obs g l l' s
+@Becoming.Web.AlikeUpTo.of_obs : ∀ {F C : Type} {W : Becoming.Web F C} {obs obs' : F → C → Prop} {g : F}
+  {l l' : Nat → C → Nat},
+  (∀ (g : F) (c : C), obs g c → obs' g c) → ∀ {t : Nat}, W.AlikeUpTo obs' g l l' t → W.AlikeUpTo obs g l l' t
+@Becoming.Web.Refutes.not_of_alike : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F}
+  {l l' : Nat → C → Nat} {claim : (Nat → C → Nat) → Prop} {t : Nat},
+  claim l' → W.AlikeUpTo obs g l l' t → ¬W.Refutes obs claim g l t
+@Becoming.Web.Refutes.not_meets : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F} {l : Nat → C → Nat}
+  {claim : (Nat → C → Nat) → Prop} {t : Nat}, W.Refutes obs claim g l t → ¬claim l
+@Becoming.Web.Refutes.later : ∀ {F C : Type} {W : Becoming.Web F C} {obs : F → C → Prop} {g : F} {l : Nat → C → Nat}
+  {claim : (Nat → C → Nat) → Prop} {s t : Nat}, W.Refutes obs claim g l s → s ≤ t → W.Refutes obs claim g l t
+@Becoming.Web.Refutes.widen : ∀ {F C : Type} {W : Becoming.Web F C} {obs obs' : F → C → Prop} {g : F}
+  {l : Nat → C → Nat},
+  (∀ (g : F) (c : C), obs g c → obs' g c) →
+    ∀ {claim : (Nat → C → Nat) → Prop} {t : Nat}, W.Refutes obs claim g l t → W.Refutes obs' claim g l t
+@Becoming.Web.admits_iff_supported : ∀ {F C : Type} {W : Becoming.Web F C} {g : F} {W' : Becoming.Web F C},
+  (∀ (t : Nat) (c : C), W.requires t g c ↔ W'.requires t g c) →
+    (∀ (t : Nat) (c : C), W.need t g c = W'.need t g c) → ∀ (t : Nat), W.Admits (W'.level t) t g ↔ W'.Supported t g
+@Becoming.Flow.withinRegistration_of_withinInfluence : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} {f g : F}, L.WithinInfluence W f g → L.WithinRegistration W obs f g
+@Becoming.Flow.withinRegistration_supportOnly : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C} {f g : F},
+  L.WithinRegistration W Becoming.supportOnly f g ↔ L.WithinInfluence W f g
+@Becoming.Flow.beyond_registration : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C} {obs : F → C → Prop}
+  {f g h : F},
+  L.WithinRegistration W obs f g → ¬L.WithinRegistration W obs f h → ∀ {c : C}, W.Registers obs g c → ¬L.Exchanges h c
+@Becoming.Flow.Balances.unregistered_beyond_registration : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} {part : F → Bool},
+  L.Balances W →
+    ∀ {l : Nat → C → Nat},
+      L.WithheldLevels part W l →
+        ∀ {f : F},
+          (∀ (h : F), part h = true → ¬L.WithinRegistration W obs f h) →
+            ∀ (t : Nat) (g : F), L.WithinRegistration W obs f g → W.RegistersAlike obs g W.level l t
+@Becoming.Flow.Balances.unrefuted_beyond_registration : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} {part : F → Bool},
+  L.Balances W →
+    ∀ {l : Nat → C → Nat},
+      L.WithheldLevels part W l →
+        ∀ {f : F},
+          (∀ (h : F), part h = true → ¬L.WithinRegistration W obs f h) →
+            ∀ {claim : (Nat → C → Nat) → Prop},
+              claim l → ∀ (t : Nat) (g : F), L.WithinRegistration W obs f g → ¬W.Refutes obs claim g W.level t
+@Becoming.Flow.Balances.threshold_blind : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} [DecidableEq C] {L' : Becoming.Flow F C} {W' : Becoming.Web F C} {g : F} {c : C} {d : Nat},
+  L.Balances W →
+    L'.Balances W' →
+      (∀ (t : Nat) (e : C), W.requires t g e ↔ W'.requires t g e) →
+        (∀ (t : Nat) (e : C), W.need t g e = W'.need t g e) →
+          W.DependsOn g c →
+            ¬obs g c →
+              W'.level 0 c = W.level 0 c + d →
+                (∀ (e : C), W.Registers obs g e → e ≠ c → W.level 0 e = W'.level 0 e) →
+                  L.RespondsThrough W L' W' obs g →
+                    ∀ (t : Nat),
+                      (∀ (s : Nat), s < t → W.Supported s g) →
+                        W'.level t c = W.level t c + d ∧
+                          (∀ (e : C), W.Registers obs g e → e ≠ c → W.level t e = W'.level t e) ∧
+                            ∀ (s : Nat), s < t → W.RegistersAlike obs g W.level W'.level s
+@Becoming.Flow.Balances.surplus_untouched : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} [DecidableEq C] {L' : Becoming.Flow F C} {W' : Becoming.Web F C} {g : F} {c : C} {d : Nat},
+  L.Balances W →
+    L'.Balances W' →
+      (∀ (t : Nat) (e : C), W.requires t g e ↔ W'.requires t g e) →
+        (∀ (t : Nat) (e : C), W.need t g e = W'.need t g e) →
+          W.DependsOn g c →
+            ¬obs g c →
+              W'.level 0 c = W.level 0 c + d →
+                (∀ (e : C), W.Registers obs g e → e ≠ c → W.level 0 e = W'.level 0 e) →
+                  L.RespondsThrough W L' W' obs g →
+                    (∀ (t : Nat), W.Supported t g) →
+                      ∀ (t : Nat), W'.level t c = W.level t c + d ∧ W.RegistersAlike obs g W.level W'.level t
+@Becoming.Flow.Balances.surplus_after_break : ∀ {F C : Type} {L : Becoming.Flow F C} {W : Becoming.Web F C}
+  {obs : F → C → Prop} [DecidableEq C] {L' : Becoming.Flow F C} {W' : Becoming.Web F C} {g : F} {c : C} {d : Nat},
+  L.Balances W →
+    L'.Balances W' →
+      (∀ (t : Nat) (e : C), W.requires t g e ↔ W'.requires t g e) →
+        (∀ (t : Nat) (e : C), W.need t g e = W'.need t g e) →
+          W.DependsOn g c →
+            ¬obs g c →
+              W'.level 0 c = W.level 0 c + d →
+                (∀ (e : C), W.Registers obs g e → e ≠ c → W.level 0 e = W'.level 0 e) →
+                  L.RespondsThrough W L' W' obs g →
+                    ∀ {t : Nat},
+                      W'.level t c ≠ W.level t c + d →
+                        (¬∀ (s : Nat), s < t → W.Supported s g) ∧ (W.Dependent → ¬∀ (s : Nat), s < t → W.active s g)
+Becoming.one_ne_two : 1 ≠ 2
+Becoming.two_ne_three : 2 ≠ 3
+Becoming.Gauged.balances : ∀ (above : Nat), (Becoming.Gauged.flow above).Balances (Becoming.Gauged.web above)
+Becoming.Gauged.supported : ∀ (above t : Nat), (Becoming.Gauged.web above).Supported t ()
+Becoming.Gauged.dependent : ∀ (above : Nat), (Becoming.Gauged.web above).Dependent
+Becoming.Gauged.draws_surplus : (Becoming.Gauged.flow 1).Balances (Becoming.Gauged.web 1) ∧
+  (Becoming.Gauged.flow 2).Balances (Becoming.Gauged.web 2) ∧
+    (Becoming.Gauged.web 1).Dependent ∧
+      (Becoming.Gauged.web 2).Dependent ∧
+        (∀ (t : Nat), (Becoming.Gauged.web 1).Supported t () ∧ (Becoming.Gauged.web 2).Supported t ()) ∧
+          (Becoming.Gauged.web 2).level 0 () = (Becoming.Gauged.web 1).level 0 () + 1 ∧
+            (Becoming.Gauged.web 2).level 1 () ≠ (Becoming.Gauged.web 1).level 1 () + 1 ∧
+              (Becoming.Gauged.flow 1).RespondsThrough (Becoming.Gauged.web 1) (Becoming.Gauged.flow 2)
+                  (Becoming.Gauged.web 2) Becoming.Gauged.stock () ∧
+                ¬(Becoming.Gauged.flow 1).RespondsThrough (Becoming.Gauged.web 1) (Becoming.Gauged.flow 2)
+                    (Becoming.Gauged.web 2) Becoming.supportOnly ()
+Becoming.Gated.poor_balances : (Becoming.Gated.flow Becoming.Gated.poorDraw).Balances
+  (Becoming.Gated.web Becoming.Gated.poorLevel)
+Becoming.Gated.rich_balances : (Becoming.Gated.flow Becoming.Gated.richDraw).Balances
+  (Becoming.Gated.web Becoming.Gated.richLevel)
+Becoming.Gated.dependent : ∀ (level : Nat → Nat), (Becoming.Gated.web level).Dependent
+Becoming.Gated.responds : (Becoming.Gated.flow Becoming.Gated.poorDraw).RespondsThrough
+  (Becoming.Gated.web Becoming.Gated.poorLevel) (Becoming.Gated.flow Becoming.Gated.richDraw)
+  (Becoming.Gated.web Becoming.Gated.richLevel) Becoming.supportOnly ()
+Becoming.Gated.surplus_waits : (Becoming.Gated.flow Becoming.Gated.poorDraw).Balances
+    (Becoming.Gated.web Becoming.Gated.poorLevel) ∧
+  (Becoming.Gated.flow Becoming.Gated.richDraw).Balances (Becoming.Gated.web Becoming.Gated.richLevel) ∧
+    (Becoming.Gated.web Becoming.Gated.poorLevel).Dependent ∧
+      (Becoming.Gated.web Becoming.Gated.richLevel).Dependent ∧
+        (Becoming.Gated.flow Becoming.Gated.poorDraw).RespondsThrough (Becoming.Gated.web Becoming.Gated.poorLevel)
+            (Becoming.Gated.flow Becoming.Gated.richDraw) (Becoming.Gated.web Becoming.Gated.richLevel)
+            Becoming.supportOnly () ∧
+          (∀ (t : Nat),
+              t ≤ 2 →
+                (Becoming.Gated.web Becoming.Gated.richLevel).level t () =
+                  (Becoming.Gated.web Becoming.Gated.poorLevel).level t () + 1) ∧
+            ¬(Becoming.Gated.web Becoming.Gated.poorLevel).Supported 2 () ∧
+              (Becoming.Gated.web Becoming.Gated.richLevel).Supported 2 () ∧
+                (Becoming.Gated.web Becoming.Gated.richLevel).level 3 () ≠
+                  (Becoming.Gated.web Becoming.Gated.poorLevel).level 3 () + 1
+Becoming.Prey.balances : Becoming.Prey.flow.Balances Becoming.Prey.web
+Becoming.Prey.dependent : Becoming.Prey.web.Dependent
+Becoming.Prey.withheld : Becoming.Prey.flow.WithheldLevels Becoming.Prey.predatorPart Becoming.Prey.web
+  Becoming.Prey.spared
+Becoming.Prey.preyAlone_closed : Becoming.ClosedUnder (Becoming.Prey.flow.AffectedBy Becoming.Prey.web) fun x =>
+  x = Becoming.Prey.Relatum.prey
+Becoming.Prey.registers_taking : ¬Becoming.Prey.flow.WithinInfluence Becoming.Prey.web Becoming.Prey.Relatum.prey
+      Becoming.Prey.Relatum.predator ∧
+  Becoming.Prey.flow.WithinRegistration Becoming.Prey.web Becoming.ownStanding Becoming.Prey.Relatum.prey
+      Becoming.Prey.Relatum.predator ∧
+    (∀ (t : Nat),
+        Becoming.Prey.web.RegistersAlike Becoming.supportOnly Becoming.Prey.Relatum.prey Becoming.Prey.web.level
+          Becoming.Prey.spared t) ∧
+      ¬Becoming.Prey.web.RegistersAlike Becoming.ownStanding Becoming.Prey.Relatum.prey Becoming.Prey.web.level
+          Becoming.Prey.spared 1
+Becoming.Clearing.alike_for_clearer : ∀ (t : Nat),
+  Becoming.Clearing.web.AlikeUpTo Becoming.supportOnly Becoming.Clearing.Formation.clearer Becoming.Clearing.web.level
+    Becoming.Clearing.sparedWeb.level t
+Becoming.Clearing.tested_by_dweller : Becoming.Clearing.Ended Becoming.Clearing.web.level ∧
+  (∀ (t : Nat),
+      ¬Becoming.Clearing.web.Refutes Becoming.supportOnly Becoming.Clearing.Ended Becoming.Clearing.Formation.clearer
+          Becoming.Clearing.sparedWeb.level t) ∧
+    Becoming.Clearing.web.Refutes Becoming.supportOnly Becoming.Clearing.Ended Becoming.Clearing.Formation.dweller
+      Becoming.Clearing.sparedWeb.level 2
+Becoming.Renewable.finite_reading_withholds_renewal : ∀ (h : Nat)
+  (reading : Becoming.Run Becoming.Renewable.process → Prop),
+  (∀ (r r' : Becoming.Run Becoming.Renewable.process), Becoming.Run.AgreeUpTo h r r' → reading r → reading r') →
+    (∀ (r : Becoming.Run Becoming.Renewable.process),
+        reading r →
+          ¬(Becoming.Renewable.conditions.dependence.along r).ConsumingIn Becoming.Renewable.Formation.focal) →
+      ∃ r, (Becoming.Renewable.conditions.dependence.along r).RenewingIn Becoming.Renewable.Formation.focal ∧ ¬reading r
