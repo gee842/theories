@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "id": "significance-retained-within-margin",
+  "title": {
+    "zh": "保留有意义者在余量之内：从一个立场，保留与增加有意义者是接纳上的预序与超出；公理之下保留就是包含、增加就是超出，从每个立场都一样；部分恰在其净汲取超出余量之处失去有意义的延续，恰在其净交换把形成带入余量之处增加一个；先占的汲取者在逐步读法中活着，却失去一个可能性",
+    "en": "Significance retained within the margin: from a standpoint, retaining and adding what has significance are a preorder and an excess on admission; under the axiom retaining is inclusion and adding is exceeding, alike from every standpoint; a part loses a continuation with significance exactly where its net draw exceeds the margin, and adds one exactly where its net exchange brings a formation within it; a preempting drawer is living on the stepwise reading yet loses a possibility"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T11:22:00+00:00",
+  "claim": {
+    "zh": "从立场 p，水平路径 l 保留 l' 上的有意义者（Web.Retains），是指 l 接纳 l' 所接纳的每个从 p 有意义的延续；增加（Web.Adds），是指 l 接纳一个 l' 不接纳的从 p 有意义的延续。保留是预序（Retains.refl、Retains.trans），保留另一条者不被它增加，所以不终结其中任何有意义者（Retains.not_added）；包含总保留（Includes.retains），增加总超出（Adds.exceeds）。公理 Unrestricted 之下，保留就是包含、增加就是超出（retains_iff_includes、adds_iff_exceeds），从每个立场都一样（retains_agree）。在平衡的流中，设扣留一个部分后的水平为 l（WithheldLevels）：有该部分的水平保留无它时的有意义者，恰当在 l 所接纳的每个有意义的延续所需的每个条件上，所需加上部分到此为止取走的，不多于 l 加上部分给予的（Flow.Balances.retains_iff_within_margin）；部分失去一个有意义的延续，恰在 l 接纳它而部分在它所需的某个条件上的净汲取超出余量之处（Flow.Balances.loses_iff_beyond_margin）；增加一个，恰在 l 不接纳它而有部分的净交换使它的所需在余量之内之处（Flow.Balances.adds_iff_within_margin）。公理之下，传送者的部分不被定序：两条路径各自增加对方缺少的，谁也不保留谁（Transfer.unordered）；给予者的部分保留并增加（Restoring.Inflow.retains_adds）。在 Preemption 中，汲取者在第零步取走条件唯一的单位，那时没有依存形成：流平衡，只有活跃者给予与取用，活动需要支持，它的事件活跃且不侵蚀；形成 false 从第一步起以所需一依存于该条件，无此部分时每步被接纳，有此部分时第一步起每步不被支持；无此部分的水平包含有它的水平，公理之下这个部分失去一个有意义的延续，有它的水平不保留无它时的有意义者（Preemption.not_undermining_yet_loses）。不用伦理以外的前提，也不用 Lean 公理。",
+    "en": "From standpoint p, a level path l retains what has significance along l' (Web.Retains) when l admits every continuation with significance from p that l' admits; it adds (Web.Adds) when l admits a continuation with significance from p that l' does not. Retaining is a preorder (Retains.refl, Retains.trans), and a path that retains another is not added to by it, so it ends none of what has significance there (Retains.not_added); inclusion always retains (Includes.retains) and adding always exceeds (Adds.exceeds). Under the axiom Unrestricted, retaining is inclusion and adding is exceeding (retains_iff_includes, adds_iff_exceeds), alike from every standpoint (retains_agree). In a balanced flow, let l be the levels with a part withheld (WithheldLevels): the levels with the part retain what has significance without it exactly when, for every continuation with significance that l admits and every condition it requires, its need plus what the part has taken so far is at most l plus what the part has given (Flow.Balances.retains_iff_within_margin); the part loses a continuation with significance exactly where l admits it and the part's net draw on some condition it requires exceeds the margin (Flow.Balances.loses_iff_beyond_margin); it adds one exactly where l does not admit it and, with the part's net exchange, its need is met within the margin (Flow.Balances.adds_iff_within_margin). Under the axiom the conveyor's part is unordered: each path adds what the other lacks, and neither retains the other (Transfer.unordered); the giver's part retains and adds (Restoring.Inflow.retains_adds). In Preemption a drawer takes the condition's only unit at step zero, before any dependence forms: the flow balances, only active formations give and take, activity needs support, and its event is active and not undermining; the formation false depends on the condition at need one from step one on, and is admitted at every step without the part and supported at no step from step one with it; the levels without the part include the levels with it, and under the axiom the part loses a continuation with significance, so the levels with it do not retain what has significance without it (Preemption.not_undermining_yet_loses). No premise beyond those stated and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "公理：Unrestricted sig，即从每个立场，任何东西在每一步的延续都有意义（对指标 (p, t, f) 的边界中立）。它是定理的假设，不被证明；把它读作 Ren 的公理是 AI 的读法，待 Ren。",
+      "en": "The axiom: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as Ren's axiom is the AI's reading, pending Ren."
+    },
+    {
+      "zh": "平衡（Flow.Balances）；扣留后的水平存在（WithheldLevels，每个见证给出它）。",
+      "en": "Balance (Flow.Balances); the levels with the part withheld exist (WithheldLevels, given by each witness)."
+    },
+    {
+      "zh": "比较的是被接纳的形成，每一步；不比较更新能力与关系的丰富。",
+      "en": "What is compared is the formations admitted, step by step; renewal capacity and richness of relations are not compared."
+    },
+    {
+      "zh": "离散的步（从第零步计）；自然数的水平、所需与数量；部分是可判定的家族（part : F → Bool）。",
+      "en": "Discrete steps, counted from step zero; natural-number levels, needs and amounts; a part is a decided family (part : F → Bool)."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的公理是“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”。Ren 又写道，中心及其边界只存在于认知的结构与动力学中，“so there isn't really who's continuation matters, which requires axiom”，并说“not harm”是“a phase transition with a clear boundary”。作者的读法（AI 论证，待 Ren）：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊；保留读“as long as not harm”，增加读“create more significance”。名称（Unrestricted、Retains、Adds、Preemption 等）是 AI 按 Ren 的命名准则所选。",
+    "en": "Ren's axiom is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, pending Ren): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+  "aliases": [
+    "Becoming.Web.Retains",
+    "Becoming.Web.Adds",
+    "Becoming.Web.Retains.not_added",
+    "Becoming.Web.retains_iff_includes",
+    "Becoming.Web.adds_iff_exceeds",
+    "Becoming.Web.retains_agree",
+    "Becoming.Flow.Balances.retains_iff_within_margin",
+    "Becoming.Flow.Balances.loses_iff_beyond_margin",
+    "Becoming.Flow.Balances.adds_iff_within_margin",
+    "Becoming.Transfer.unordered",
+    "Becoming.Restoring.Inflow.retains_adds",
+    "Becoming.Preemption.not_undermining_yet_loses"
+  ],
+  "dependencies": [
+    {
+      "id": "closing-needs-net-draw",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用接纳、包含、超出、扣留后的水平与精确相界 Flow.Balances.supported_iff_within_margin（以及 opens_nothing）。",
+        "en": "Reuses admission, inclusion, exceeding, the withheld levels and the exact phase boundary Flow.Balances.supported_iff_within_margin (and opens_nothing)."
+      },
+      "interface": {
+        "output": {
+          "zh": "形成被支持，恰当部分在它所需的每个条件上的累计净汲取不超出余量。",
+          "en": "A formation is supported exactly when, on every condition it requires, the part's cumulative net draw stays within the margin."
+        },
+        "input": {
+          "zh": "保留、失去与增加有意义者各自的精确界。",
+          "en": "The exact boundary of retaining, losing and adding what has significance."
+        },
+        "conditions": {
+          "zh": "平衡；扣留后的水平。",
+          "en": "Balance; the withheld levels."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
+      }
+    },
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Restoring.Inflow.widens 与 Transfer.mixed：公理之下扩大的部分保留并增加，混合的部分不被定序。",
+        "en": "Reuses Restoring.Inflow.widens and Transfer.mixed: under the axiom a widening part retains and adds, and a mixed part is unordered."
+      },
+      "interface": {
+        "output": {
+          "zh": "部分的四种情形（扩大、缩小、不变、混合）。",
+          "en": "The four cases of a part (widening, narrowing, keeping, mixed)."
+        },
+        "input": {
+          "zh": "它们就是意义的四种情形。",
+          "en": "They are the four cases of significance."
+        },
+        "conditions": {
+          "zh": "公理。",
+          "en": "The axiom."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用公理 Unrestricted。",
+        "en": "Reuses the axiom Unrestricted."
+      },
+      "interface": {
+        "output": {
+          "zh": "公理。",
+          "en": "The axiom."
+        },
+        "input": {
+          "zh": "保留即包含、增加即超出。",
+          "en": "Retaining as inclusion and adding as exceeding."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "becoming-stepwise-reading",
+      "detail": {
+        "zh": "Preemption 表明逐步读法的“活的”（活跃且不侵蚀）与保留不同：逐步读法只计已被满足的依存，保留还计仍能形成的。",
+        "en": "Preemption shows that living on the stepwise reading (active and not undermining) differs from retaining: the stepwise reading counts only dependences met, retaining also counts what can still form."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "detail": {
+        "zh": "两种“不损”的读法不同：先占的汲取者活跃且不侵蚀，却使一个以后需要该条件的形成不能形成（Preemption.not_undermining_yet_loses）。",
+        "en": "The two readings of not harm differ: a preempting drawer is active and not undermining, yet closes a formation that needs the condition later (Preemption.not_undermining_yet_loses)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "detail": {
+        "zh": "混合的部分不被定序（Transfer.unordered）：定序需要度量，那是另一个前提。",
+        "en": "A mixed part is unordered (Transfer.unordered): ordering it needs a measure, a further premise."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只比较被接纳的形成，每一步；扣留一个部分时其余交换照旧；意义不分等级，所以混合的部分不被定序；形成在哪个层次个体化（成员或谱系）决定什么算失去，这里由表示给定；Preemption 中“以后需要”是表示的选择，它说明两种读法不同，不说明先占在每个模型中都失去什么；G0 的 living 指哪种读法由 Ren 定；读法与名称是 AI 的，待 Ren。",
+    "en": "Only formations admitted are compared, step by step; withholding a part leaves the rest of the exchange as it was; significance is not graded, so a mixed part is unordered; the level at which formations are individuated (members or lineages) fixes what counts as a loss and is given by the representation here; in Preemption the later need is a choice of representation, showing that the two readings differ, not that preemption loses something in every model; which reading G0's living names is Ren's choice; the readings and names are the AI's, pending Ren."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T110824.890630Z）：Becoming.Significance 的 27 项定理全部空依赖；同一回执覆盖包内 32 个模块（含只作导入的根模块与桥接），共 1457 项定理／2316 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T111624.656993Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 34 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T110824.890630Z): the 27 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 32 modules (including the import-only root and the bridge) with 1457 theorems/2316 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T111624.656993Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 34 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "declarations": [
+        "Becoming.Web.Retains",
+        "Becoming.Web.Adds",
+        "Becoming.Web.Retains.refl",
+        "Becoming.Web.Retains.trans",
+        "Becoming.Web.Retains.not_added",
+        "Becoming.Web.Includes.retains",
+        "Becoming.Web.Adds.exceeds",
+        "Becoming.Web.retains_iff_includes",
+        "Becoming.Web.adds_iff_exceeds",
+        "Becoming.Web.retains_agree",
+        "Becoming.Flow.Balances.retains_iff_within_margin",
+        "Becoming.Flow.Balances.loses_iff_beyond_margin",
+        "Becoming.Flow.Balances.adds_iff_within_margin",
+        "Becoming.Transfer.unordered",
+        "Becoming.Restoring.Inflow.retains_adds",
+        "Becoming.Preemption.flow",
+        "Becoming.Preemption.web",
+        "Becoming.Preemption.drawerPart",
+        "Becoming.Preemption.withheld",
+        "Becoming.Preemption.not_undermining_yet_loses"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "b38a7b1b0b6c4569dade1e258c869bb1e088a17d4f00b7c2bd65f05d877f74f2",
+      "declarations": [
+        "Becoming.Web.Admits",
+        "Becoming.Web.Includes",
+        "Becoming.Web.Exceeds",
+        "Becoming.Flow.partTaken",
+        "Becoming.Flow.partGiven",
+        "Becoming.Flow.WithheldLevels",
+        "Becoming.Flow.Balances.supported_iff_within_margin",
+        "Becoming.Flow.Balances.opens_nothing",
+        "Becoming.Restoring.Inflow.giverPart",
+        "Becoming.Restoring.Inflow.widens",
+        "Becoming.Transfer.conveyorPart",
+        "Becoming.Transfer.mixed",
+        "Becoming.unitDrop"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "declarations": [
+        "Becoming.Web.Supported",
+        "Becoming.Web.Dependent",
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "1d87e6d4c3cf8c3a09984b72fdd16a22de18ae2c29965d7134c1012076e5ed38"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "6923c55d82540ba7441a73cd28ea3f3fc09e6d81b2e48553a8266ba522ac8fa1"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "3304c1bdcbbefbadb25f2ab82940a6b50c694ca857122ded891b254fa046ca18"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
+      "role": "provenance",
+      "sha256": "bf0ff40c2dcd72f581645b6a67d5aa4a1af92958b6ef6248f39881a640c95b37"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
+      "role": "provenance",
+      "sha256": "0fdb18d63c6ad5f6be6f0f65ecd461d1d66494749a29a4e213876f955ecd4c06"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 的判断：“不损”读作保留还是逐步读法的不侵蚀；形成个体化的层次；为混合部分定序的度量；多步的比较。",
+    "en": "Ren's judgments: whether not harm reads as retaining or as the stepwise reading's not undermining; the level of individuation; a measure ordering mixed parts; comparison over several steps."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P39：新增，按 Ren“let's aim for a first, then try to archive b”与“yes to both readings, go ahead with Part I.”；统一计划 P39（第二部分：一条公理推出 G0），分工经另一会话同意；见整合文档 §53。",
+      "en": "2026-10-10 P39: added, following Ren's ‘let's aim for a first, then try to archive b’ and ‘yes to both readings, go ahead with Part I.’; unification plan P39 (Part II: one axiom yields G0), the division of work agreed with the other session; see §53 of the integration note."
+    }
+  ]
+}

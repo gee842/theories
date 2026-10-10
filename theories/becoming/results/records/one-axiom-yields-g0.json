@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "id": "one-axiom-yields-g0",
+  "title": {
+    "zh": "一条公理推出 G0：Ren 的公理读作延续之意义的边界中立（Unrestricted）；在主张的意义即某形成在某步之延续的意义的每种读法上，G0、处处 S0、两条中立与种子由它推出，不用连通；在水平路径上 C 也推出；没有任何东西有意义时什么都不被定序，所以公理是需要的",
+    "en": "One axiom yields G0: Ren's axiom read as boundary neutrality for the significance of continuation (Unrestricted); on every reading in which a claim's significance is that of a formation's continuation at a step, G0, S0 at every standpoint, both neutralities and a seed follow from it with no connection used; on level paths C follows too; where nothing has significance nothing is ordered, so the axiom is needed"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T11:22:00+00:00",
+  "claim": {
+    "zh": "一个意义 sig : Pos → Nat → F → Prop 对一个立场、一步与一个形成说：从该立场，该形成在该步的延续是否有意义。公理 Unrestricted sig 是对指标 (p, t, f) 的边界中立（Neutral）：从每个立场，任何东西在每一步的延续都有意义。以区域为界的意义（bounded region）是在各立场的区域之内接受同一规则（Within）；有形成在某个立场的区域之外时，它不是公理（bounded_rival）。设估值 V 中主张 c 从立场 p 的意义由形成 formation c 在步 step c 之延续的意义给出（reads）。公理之下，V 上的 G0（主张层面：每个活的主张从每个立场都有意义）成立，每个立场的 S0、N_rel 与 N_std 成立，有活的主张时种子存在，不用连通（Valuation.premises_of_unrestricted）。逐步读法（Web.valuation）、关系层读法（Web.relations）与整段读法（Conditions.valuation）都是这样的读法（Web.significant_of_unrestricted、Conditions.significant_of_unrestricted）。一个网的水平路径构成一个不走步的框架（Web.paths）：主张是某步的形成，在一条水平路径上被接纳即实现。公理之下，在这个框架上，对 living 的每种读法，G0 成立，其中正面意义读作从每个立场都有意义；C 也成立，其中“更好”读作从立场 p 保留且增加有意义者（Web.Retains 与 Web.Adds，Web.paths_g0_comparison）。没有任何东西有意义时，每条水平路径保留每一条、没有一条增加，逐步读法上的 G0 在任何活的事件上都不成立；一切都有意义时 G0 成立（Web.significance_undetermined）。不用 Lean 公理。",
+    "en": "A significance sig : Pos → Nat → F → Prop says, for a standpoint, a step and a formation, whether from the standpoint the formation's continuation at the step has significance. The axiom Unrestricted sig is boundary neutrality (Neutral) over the index (p, t, f): from every standpoint, the continuation of anything has significance at every step. A significance bounded by regions (bounded region) accepts the same rule inside each standpoint's region (Within); where some formation lies outside some standpoint's region it is not the axiom (bounded_rival). Let a claim c's significance from standpoint p in a valuation V be given by that of formation c's continuation at step c (reads). Under the axiom, G0 on V at the level of claims (every living claim significant from every standpoint) holds, S0 at every standpoint, N_rel and N_std hold, and a seed exists where some claim lives, with no connection used (Valuation.premises_of_unrestricted). The stepwise reading (Web.valuation), the reading of relations (Web.relations) and the whole-run reading (Conditions.valuation) are such readings (Web.significant_of_unrestricted, Conditions.significant_of_unrestricted). A web's level paths form a frame that does not step (Web.paths): a claim is a formation at a step, realized along a level path when the levels admit it there. Under the axiom, on this frame and for every reading of living, G0 holds with positive significance read as significance from every standpoint, and so does C, with “better” read as retaining and adding what has significance from standpoint p (Web.Retains and Web.Adds, Web.paths_g0_comparison). Where nothing has significance, every level path retains every other and none adds, and G0 on the stepwise reading fails at any event that lives; where everything has significance G0 holds (Web.significance_undetermined). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "公理：Unrestricted sig，即从每个立场，任何东西在每一步的延续都有意义（对指标 (p, t, f) 的边界中立）。它是定理的假设，不被证明；把它读作 Ren 的公理是 AI 的读法，待 Ren。",
+      "en": "The axiom: Unrestricted sig, that from every standpoint the continuation of anything has significance at every step (boundary neutrality over the index (p, t, f)). It is a hypothesis of the theorems and is not proved; reading it as Ren's axiom is the AI's reading, pending Ren."
+    },
+    {
+      "zh": "对应：主张的意义读作某形成在某步之延续的意义（formation、step 与 reads）；不满足它的读法上，定理不说什么。",
+      "en": "Correspondence: a claim's significance is read as that of some formation's continuation at some step (formation, step and reads); on readings that do not meet it the theorem says nothing."
+    },
+    {
+      "zh": "C 只在水平路径的框架上推出；在一般的框架上 C 仍是前提。",
+      "en": "C follows only on the frame of level paths; on a general frame C remains a premise."
+    },
+    {
+      "zh": "离散的步（从第零步计）；自然数的水平、所需与数量；部分是可判定的家族（part : F → Bool）。",
+      "en": "Discrete steps, counted from step zero; natural-number levels, needs and amounts; a part is a decided family (part : F → Bool)."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的公理是“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”。Ren 又写道，中心及其边界只存在于认知的结构与动力学中，“so there isn't really who's continuation matters, which requires axiom”，并说“not harm”是“a phase transition with a clear boundary”。作者的读法（AI 论证，待 Ren）：形成的索引读“anything”，形成在一步的延续读“its continuation into the future”，立场的索引读“has significance”不加限定、没有哪个中心特殊；保留读“as long as not harm”，增加读“create more significance”。名称（Unrestricted、Retains、Adds、Preemption 等）是 AI 按 Ren 的命名准则所选。",
+    "en": "Ren's axiom is “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”. Ren also wrote that a center and its boundary exist only within cognitive structure and dynamics, “so there isn't really who's continuation matters, which requires axiom”, and that “not harm” is “a phase transition with a clear boundary”. The author's reading (an AI argument, pending Ren): the formation index reads “anything”, a formation's continuation at a step reads “its continuation into the future”, and the standpoint index reads “has significance” unqualified, with no center privileged; retaining reads “as long as not harm”, and adding reads “create more significance”. The names (Unrestricted, Retains, Adds, Preemption and others) are the AI's, chosen by Ren's naming standard."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+  "aliases": [
+    "Becoming.Unrestricted",
+    "Becoming.bounded",
+    "Becoming.bounded_rival",
+    "Becoming.Valuation.premises_of_unrestricted",
+    "Becoming.Web.significant_of_unrestricted",
+    "Becoming.Conditions.significant_of_unrestricted",
+    "Becoming.Web.paths",
+    "Becoming.Web.paths_g0_comparison",
+    "Becoming.Web.significance_undetermined"
+  ],
+  "dependencies": [
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Valuation、Significant、SelfGood、Seed、transmits、shares、Neutral、Within、G0、Extension 与 Comparison；原刻画保持其范围。",
+        "en": "Reuses Valuation, Significant, SelfGood, Seed, transmits, shares, Neutral, Within, G0, Extension and Comparison; the earlier characterization keeps its scope."
+      },
+      "interface": {
+        "output": {
+          "zh": "估值、S0、两条中立、种子、G0 与 C 的定义。",
+          "en": "The valuation, S0, the two neutralities, the seed, G0 and C."
+        },
+        "input": {
+          "zh": "在主张的意义即延续之意义的读法上，由公理推出 G0、S0、两条中立与种子；在水平路径上推出 C。",
+          "en": "On readings where a claim's significance is that of a continuation, G0, S0, both neutralities and a seed are derived from the axiom; on level paths, C."
+        },
+        "conditions": {
+          "zh": "公理 Unrestricted；对应 reads。",
+          "en": "The axiom Unrestricted; the correspondence reads."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    },
+    {
+      "id": "held-lives-g0-is-centering",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "那里 G0 在被持有的生命上恰等于处处 S0 加 N_std（§6.7 的读法：S0 为想要，N_std 为公理）；这里公理更强，给出处处 S0 与 N_std，所以那一读法在这里是推论。",
+        "en": "There G0 on held lives is exactly S0 at every standpoint with N_std (the reading of section 6.7: S0 as wanting, N_std as the axiom); here the axiom is stronger and gives S0 at every standpoint and N_std, so that reading is here a consequence."
+      },
+      "interface": {
+        "output": {
+          "zh": "G0 与处处 S0 加 N_std 的等价。",
+          "en": "The equivalence of G0 with S0 at every standpoint and N_std."
+        },
+        "input": {
+          "zh": "公理之下等价的两边都成立。",
+          "en": "Under the axiom both sides of the equivalence hold."
+        },
+        "conditions": {
+          "zh": "持有；读法待 Ren。",
+          "en": "Holding; the reading pending Ren."
+        },
+        "evidence": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+      }
+    },
+    {
+      "id": "becoming-stepwise-reading",
+      "relation": "application",
+      "detail": {
+        "zh": "逐步读法（Web.valuation：活跃且不侵蚀的事件为活的）是公理推出 G0 的一种读法；significance_undetermined 在其上陈述。",
+        "en": "The stepwise reading (Web.valuation: an event active and not undermining is living) is one reading on which the axiom yields G0; significance_undetermined is stated on it."
+      },
+      "interface": {
+        "output": {
+          "zh": "逐步读法的估值。",
+          "en": "The stepwise valuation."
+        },
+        "input": {
+          "zh": "公理之下其上 G0 成立；没有意义时不成立。",
+          "en": "Under the axiom G0 holds on it; without significance it fails."
+        },
+        "conditions": {
+          "zh": "活的事件：活跃且不侵蚀（UnderminingAt）。",
+          "en": "A living event: active and not undermining (UnderminingAt)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    },
+    {
+      "id": "becoming-renewal-reading",
+      "relation": "application",
+      "detail": {
+        "zh": "整段读法（Conditions.valuation）是公理推出 G0 的另一种读法。",
+        "en": "The whole-run reading (Conditions.valuation) is another reading on which the axiom yields G0."
+      },
+      "interface": {
+        "output": {
+          "zh": "整段读法的估值。",
+          "en": "The whole-run valuation."
+        },
+        "input": {
+          "zh": "公理之下其上 G0 成立。",
+          "en": "Under the axiom G0 holds on it."
+        },
+        "conditions": {
+          "zh": "一个运行。",
+          "en": "A run."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    },
+    {
+      "id": "closing-needs-net-draw",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用接纳（Web.Admits），用它定义水平路径的框架（Web.paths）与保留、增加。",
+        "en": "Reuses admission (Web.Admits) to define the frame of level paths (Web.paths) and retaining and adding."
+      },
+      "interface": {
+        "output": {
+          "zh": "接纳与包含。",
+          "en": "Admission and inclusion."
+        },
+        "input": {
+          "zh": "水平路径的框架；C 在其上读作保留且增加。",
+          "en": "The frame of level paths; C on it read as retaining and adding."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "significance-retained-within-margin",
+      "detail": {
+        "zh": "保留与增加的性质、“不损”的精确界与先占在那里陈述。",
+        "en": "The properties of retaining and adding, the exact boundary of not harm and preemption are stated there."
+      }
+    },
+    {
+      "id": "whole-first-and-bounded-centers",
+      "detail": {
+        "zh": "以区域为界的意义（bounded）在那里与整体比较。",
+        "en": "Significance bounded by regions (bounded) is compared with the whole there."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "detail": {
+        "zh": "公理是需要的：没有任何东西有意义时，每条水平路径保留每一条、没有一条增加，G0 在任何活的事件上不成立（Web.significance_undetermined）；动力学不决定意义。",
+        "en": "The axiom is needed: where nothing has significance, every level path retains every other, none adds, and G0 fails at any event that lives (Web.significance_undetermined); the dynamics does not decide significance."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "detail": {
+        "zh": "以区域为界的意义不是公理：有形成在某个立场的区域之外时（bounded_rival）。",
+        "en": "A significance bounded by regions is not the axiom where some formation lies outside some standpoint's region (bounded_rival)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "G0 在主张层面是公理的直接推论：G0 是公理限于活的主张，公理更强，因为它还覆盖不活的事件与尚未形成的形成；不证明公理本身，不给出它的规范根据；从意义到理由的一步（A）、提升（L）与实践判断（J1–J4）仍是前提；不推出义务、排序、认识、动机或遵循；C 只在水平路径上推出；意义不分等级，不给混合的部分定序；把 Unrestricted 读作 Ren 的公理是 AI 的读法，待 Ren；在 Ren 接受这条公理替代 G0 之前，G0 仍是所采用的公理。",
+    "en": "G0 at the level of claims is an immediate consequence of the axiom: G0 is the axiom restricted to living claims, and the axiom is stronger, covering events that are not living and formations not yet formed; the axiom itself is not proved and its normative warrant is not given; the step from significance to a reason (A), the lifting (L) and practical judgment (J1–J4) remain premises; no duty, ranking, recognition, motivation or compliance is inferred; C follows only on level paths; significance is not graded and orders no mixed part; reading Unrestricted as Ren's axiom is the AI's reading, pending Ren; until Ren accepts this axiom in G0's place, G0 remains the adopted axiom."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T110824.890630Z）：Becoming.Significance 的 27 项定理全部空依赖；同一回执覆盖包内 32 个模块（含只作导入的根模块与桥接），共 1457 项定理／2316 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T111624.656993Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 34 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T110824.890630Z): the 27 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 32 modules (including the import-only root and the bridge) with 1457 theorems/2316 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T111624.656993Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 34 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "declarations": [
+        "Becoming.Unrestricted",
+        "Becoming.bounded",
+        "Becoming.bounded_rival",
+        "Becoming.Web.Retains",
+        "Becoming.Web.Adds",
+        "Becoming.Valuation.premises_of_unrestricted",
+        "Becoming.Web.significant_of_unrestricted",
+        "Becoming.Conditions.significant_of_unrestricted",
+        "Becoming.Web.paths",
+        "Becoming.Web.paths_g0_comparison",
+        "Becoming.Web.significance_undetermined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "caa6b40a98353117936b19fe65fbbe64b95fdc3a0f3dfc56740adbc6bbbc3980",
+      "declarations": [
+        "Becoming.Within",
+        "Becoming.Neutral",
+        "Becoming.Valuation",
+        "Becoming.Valuation.Significant",
+        "Becoming.Valuation.SelfGood",
+        "Becoming.Valuation.Seed",
+        "Becoming.Valuation.transmits",
+        "Becoming.Valuation.shares",
+        "Becoming.G0",
+        "Becoming.Extension",
+        "Becoming.Comparison",
+        "Becoming.Web.valuation",
+        "Becoming.Web.relations",
+        "Becoming.Conditions.valuation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Frame"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "b38a7b1b0b6c4569dade1e258c869bb1e088a17d4f00b7c2bd65f05d877f74f2",
+      "declarations": [
+        "Becoming.Web.Admits"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "declarations": [
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "1d87e6d4c3cf8c3a09984b72fdd16a22de18ae2c29965d7134c1012076e5ed38"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "6923c55d82540ba7441a73cd28ea3f3fc09e6d81b2e48553a8266ba522ac8fa1"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "3304c1bdcbbefbadb25f2ab82940a6b50c694ca857122ded891b254fa046ca18"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
+      "role": "provenance",
+      "sha256": "bf0ff40c2dcd72f581645b6a67d5aa4a1af92958b6ef6248f39881a640c95b37"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
+      "role": "provenance",
+      "sha256": "0fdb18d63c6ad5f6be6f0f65ecd461d1d66494749a29a4e213876f955ecd4c06"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 的判断：Unrestricted 是否读出这条公理、是否以它替代 G0；A 与 L 在公理之下的形式；不用公理的路线 (b)（P40）。",
+    "en": "Ren's judgments: whether Unrestricted reads the axiom, and whether it replaces G0; the form of A and L under the axiom; route (b) without axiom (P40)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P39：新增，按 Ren“let's aim for a first, then try to archive b”与“yes to both readings, go ahead with Part I.”；统一计划 P39（第二部分：一条公理推出 G0），分工经另一会话同意；见整合文档 §53。",
+      "en": "2026-10-10 P39: added, following Ren's ‘let's aim for a first, then try to archive b’ and ‘yes to both readings, go ahead with Part I.’; unification plan P39 (Part II: one axiom yields G0), the division of work agreed with the other session; see §53 of the integration note."
+    }
+  ]
+}

@@ -27,6 +27,7 @@ import Becoming.Ranking
 import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
+import Becoming.Significance
 
 /-!
 # The Theory of Becoming: the formal core
@@ -297,6 +298,20 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   would reach that life. Reading S0 as wanting one's continuation and standpoint
   neutrality as the one axiom is the AI's reading of Ren's proposal of 10 October 2026,
   pending Ren; G0 remains the adopted axiom until Ren accepts the restatement.
+* `Becoming.Significance` (L4): Part II, the one axiom. Ren's “for anything, its
+  continuation into the future has significance” is read as boundary neutrality for the
+  significance of continuation: from every standpoint, the continuation of anything has
+  significance at every step. Under it G0 holds on the stepwise, relation and whole-run
+  readings, with S0 at every standpoint, both neutralities and a seed wherever something
+  lives, and C holds on level paths with “better” read as retaining and adding what has
+  significance. Retaining is
+  inclusion and adding is exceeding, so a part loses a continuation with significance
+  exactly where its net draw exceeds the margin. A drawer taking a condition before any
+  dependence on it forms is living on the stepwise reading and still loses a possibility.
+  What retains in the whole retains within every region, while centers bounded by their
+  dependence license the free rider and disagree. Where nothing has significance nothing
+  is ordered, so the axiom is needed. The reading is the AI's, pending Ren; G0 remains the
+  adopted axiom until Ren accepts this axiom in its place.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

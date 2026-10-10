@@ -3226,6 +3226,90 @@ Integration: 计划 P38（第一部分的总陈述：每个前提加了什么）
 
 **边界。** 无伦理谓词，不评价生起、止息或静止；只对离散步与每步有限的活动陈述；选择之下的规律只读于活动的普查；有限世界中每个选择之下的规律、每个前提都起约束时的规律、水平与依存的计数在前提之下没有陈述；名称（Premise、Meets、BindsCounting、BoundsChange、drivenQueue、closingQueue）是 AI 按 Ren 的命名准则所选：驱动（driven）与闭合（closing）是系统的词，分别说外来的强迫与在某步封闭的流。本节尚未经独立审查。
 
+## 53. 一条公理推出什么（P39）
+
+2026-10-10。Ren 提议第二部分的一条公理：“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。Ren 选定路线：“let's aim for a first, then try to archive b”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。在路线 (a) 下，G0 是由这条公理与第一部分推出的目标定理。
+
+Ren 此后回答（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）：
+- 中心及其边界只存在于认知的结构与动力学中，也在同一系统之内形成，“so there isn't really who's continuation matters, which requires axiom”；
+- “not harm”是“a phase transition with a clear boundary”。
+
+所以本节不按 §47 的读法给每个想要之点放一个中心，而直接陈述 Ren 的原话。
+
+本节是计划 P39（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成；分工经另一会话同意。它在核心中新增模块 `Becoming.Significance`，27 项定理。成果记录新增三项：
+- [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)
+- [significance-retained-within-margin](../../../../theories/becoming/results/records/significance-retained-within-margin.md)
+- [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)
+
+```text
+Result(s): 复用 metaethical-core-characterization（Valuation、Significant、SelfGood、Seed、transmits、shares、Neutral、Within、
+           G0、Extension、Comparison）、held-lives-g0-is-centering（被持有的生命上 G0 恰等于处处 S0 加 N_std，作为读法引用）、
+           becoming-stepwise-reading（Web.valuation、Web.relations、UnderminingAt）、becoming-renewal-reading
+           （Conditions.valuation）、closing-needs-net-draw（Admits、Includes、Exceeds、WithheldLevels、
+           Balances.supported_iff_within_margin、opens_nothing）、four-cases-of-a-part（Restoring.Inflow.widens、
+           Transfer.mixed）、loss-beyond-a-region（AdmitsWithin、AdmitsWithin.narrow、Clearing 的见证与 loses_beyond）、
+           derived-extent-limits（Clearing，作为读法引用）；新增上列三项
+Delta: Unrestricted、bounded、bounded_rival；Web.Retains（refl、trans、not_added、of_fewer、within）、Web.Adds、
+       Includes.retains、Adds.exceeds、retains_iff_includes、adds_iff_exceeds、retains_agree、retains_bounded_iff；
+       Flow.Balances.retains_iff_within_margin、loses_iff_beyond_margin、adds_iff_within_margin；
+       Valuation.premises_of_unrestricted、Web.significant_of_unrestricted、Conditions.significant_of_unrestricted、
+       Web.paths、Web.paths_g0_comparison、Web.significance_undetermined；Clearing.admitted_all_without、free_rider_loses、
+       dependenceRegion、centers_disagree；Transfer.unordered；Restoring.Inflow.retains_adds；
+       Preemption（flow、web、drawerPart、withheld、not_undermining_yet_loses）
+Supplied premises / correspondence: 公理 Unrestricted 是定理的假设，不被证明；主张的意义读作某形成在某步之延续的意义
+       （formation、step、reads）；平衡与扣留后的水平（每个见证给出它）；离散的步、自然数的量、可判定的部分；
+       读法与名称是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261010T110824.890630Z（1457 项定理、2316 项声明审计、核心闭包 34 个模块、包 32 个模块，全部源声明公理报告
+          为空，没有新的生成常量依赖公理）；外围回执 20261010T111624.656993Z
+Boundary: G0 在主张层面是公理的直接推论；A、L、J1–J4 仍是前提；C 只在水平路径上推出；为混合部分定序的度量、形成个体化
+          的层次、G0 的 living 指哪种读法、公理的规范根据都不推出；只比较被接纳的形成，每一步
+Integration: 计划 P39（第二部分，路线 (a)）；G0 成为这条公理的定理，Ren 接受之前仍是所采用的公理；给 P40（路线 (b)）
+             留下以依存为界的中心容许搭便车者（Clearing.centers_disagree）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Unrestricted`、`bounded`、`bounded_rival` | 公理：从每个立场，任何东西在每一步的延续都有意义，即延续之意义的边界中立；以区域为界的意义是在区域之内接受同一规则，有形成在某个立场的区域之外时不是公理 |
+| `Web.Retains`、`Web.Adds`、`Retains.refl`、`Retains.trans`、`Retains.not_added` | 从一个立场，一条水平路径保留另一条上的有意义者，是指它接纳另一条所接纳的每个有意义的延续；增加，是指它接纳一个另一条不接纳的。保留是预序；保留另一条者不被它增加，所以不终结其中任何有意义者 |
+| `Web.Includes.retains`、`Web.Adds.exceeds`、`Web.retains_iff_includes`、`Web.adds_iff_exceeds`、`Web.retains_agree` | 包含总保留，增加总超出；公理之下保留就是包含、增加就是超出，从每个立场都一样 |
+| `Flow.Balances.retains_iff_within_margin`、`loses_iff_beyond_margin`、`adds_iff_within_margin` | “不损”的精确界：有部分的水平保留无它时的有意义者，恰当在无它时被接纳的每个有意义的延续所需的每个条件上，部分的累计净汲取不超出余量；失去恰在超出余量之处，增加恰在净交换把无它时不被接纳的形成带入余量之处 |
+| `Valuation.premises_of_unrestricted` | 在主张的意义即某形成在某步之延续的意义的每种读法上，公理给出 G0、处处 S0、N_rel、N_std 与（有活者时的）种子，不用连通 |
+| `Web.significant_of_unrestricted`、`Conditions.significant_of_unrestricted` | 逐步读法、关系层读法与整段读法都是这样的读法 |
+| `Web.paths`、`Web.paths_g0_comparison` | 水平路径的框架：主张是某步的形成，在路径上被接纳即实现，没有步。公理之下，对 living 的每种读法 G0 成立，正面意义读作从每个立场都有意义；C 也成立，“更好”读作保留且增加有意义者 |
+| `Web.significance_undetermined` | 没有任何东西有意义时，每条水平路径保留每一条，没有一条增加，逐步读法上的 G0 在任何活的事件上不成立；一切都有意义时 G0 成立 |
+| `Web.Retains.of_fewer`、`Web.retains_bounded_iff`、`Web.Retains.within` | 有意义者越少，保留的越多；以区域为界的意义保留的是区域之内被接纳的；公理之下在整体中保留的在每个区域内保留 |
+| `Clearing.admitted_all_without`、`Clearing.free_rider_loses` | 无清除者的部分时，每个形成每步都被接纳。公理之下从每个立场，这个部分失去栖居者；无它的水平保留有它的有意义者；清除者每步被支持，无它时也被接纳，所以扣留它不终结任何东西 |
+| `Clearing.dependenceRegion`、`Clearing.centers_disagree` | 让每个形成的意义止于其依存所及：从清除者的立场，部分在每一步保留有意义者；从栖居者的立场，它失去栖居者 |
+| `Transfer.unordered`、`Restoring.Inflow.retains_adds` | 公理之下，传送者的部分不被定序：两条路径各自增加对方缺少的；给予者的部分保留并增加 |
+| `Preemption.flow`、`web`、`drawerPart`、`withheld`、`not_undermining_yet_loses` | 汲取者在第零步、任何依存形成之前取走条件唯一的单位。流平衡，只有活跃者给予与取用，活动需要支持，它的事件活跃且不侵蚀。但一个从第一步起需要该条件的形成，无此部分时每步被接纳，有此部分时第一步起每步不被支持；无此部分的水平包含有它的水平，公理之下部分失去一个有意义的延续 |
+
+**它回答了什么。**
+- **G0 是公理的直接推论。** 公理比 G0 强：它对每个形成、每一步、每个立场成立，G0 只要求活的主张从每个立场有意义。所以在主张的意义即延续之意义的读法上，G0 是公理限于活的主张。前提卡上的种子、S0、N_rel 与 N_std 由它给出；C 在水平路径上给出。A、L 与 J1–J4 仍是前提。这一步本身不深，实质在下面几项：它们经第一部分给出“不损”与“生成”的精确形式。
+- **“不损”的相界。** Ren 说“not harm”是有清楚边界的相变。公理之下，保留就是包含，所以“不损”就是 P37 的相界：在每个有意义的延续所需的条件上，部分的净汲取不超出余量（`retains_iff_within_margin`）。界由部分自身的净交换与他者所需的余量定出，不需要动力学之外的意志或信念。增加（Ren 的“create more significance”）就是超出：部分的净交换把一个无它时不能形成的形成带入余量。所以 Ren 的强式是弱式之下的生成情形，不需要第二条公理。
+- **尚未形成者也算。** 逐步读法（[becoming-stepwise-reading](../../../../theories/becoming/results/records/becoming-stepwise-reading.md)）只计已被满足的依存：一个事件活跃且不侵蚀，就是活的；侵蚀是在某步汲取一个条件，使它在步后既低于依存于它者当前的所需，又低于该依存曾被满足的所需。`Preemption` 表明这与保留不同。汲取者在任何依存形成之前取走条件，它不侵蚀任何东西，却使一个以后需要该条件的形成每步都不能形成；公理之下这是失去一个有意义的延续。G0 的 `living` 指哪种读法是 Ren 的选择；这里只证明两者不同。
+- **整体优先。** 以区域为界的意义只看区域之内。公理之下，在整体中保留的在每个区域内都保留（`Retains.within`），反过来不成立。`Clearing.centers_disagree` 是反例：每个形成的意义止于其依存时，清除者从自己的立场保留一切，栖居者从自己的立场失去自身。公理之下这个部分从每个立场都失去栖居者，而扣留它不终结任何东西（`free_rider_loses`）。这给出 Ren 的次序：整体、所在的系统、自身，作为判断完整性的次序。Ren 说“not saying this is what life does”，这里也不说生命实际怎样做。
+- **公理是需要的。** 第一部分没有一条定理提到意义；没有任何东西有意义时，什么都不被定序（`significance_undetermined`）。以区域为界的意义也是被给出的：Ren 说自身“can not justify itself without some sort of "belief"”。没有这条公理，动力学不决定意义。
+
+**作者反审。**
+1. **G0 在主张层面是直接的。** `premises_of_unrestricted` 的证明只有几行：公理对每个形成、每一步、每个立场都给出意义，G0 只取其中活的。所以“G0 被推出”不应读作深的定理。记录如实写明这一点；深的部分是保留、相界与先占，它们用到第一部分（P37 的精确相界）。
+2. **`reads` 是对应，不是证明。** 主张的意义读作某形成在某步之延续的意义，由 `formation`、`step`、`reads` 给出。逐步读法、关系层读法与整段读法满足它；不满足它的读法上，定理不说什么。
+3. **C 只在水平路径上推出。** `Web.paths` 是一个没有步的框架：主张是某步的形成，在路径上被接纳即实现。C 在“更好”读作保留且增加时成立；在一般的框架上 C 仍是前提。
+4. **不分等级。** 意义是命题，不是量，所以混合的部分（`Transfer.unordered`）不被定序；定序需要度量，那是另一个前提。Ren 也说意义“doesn't have to be positive”：这里的“不损”是比较，不是正面的价值。
+5. **个体化的层次。** 什么算一个形成（成员或谱系）决定什么算失去。见证中形成是给定的，层次没有推出。
+6. **先占依赖“以后需要”的表示。** `Preemption` 中形成 `false` 从第一步起需要条件，这是表示的选择。它说明保留计入仍能形成者，逐步读法不计入；不说明先占在每个模型中都失去什么。
+7. **以依存为界的中心是一个选择。** `Clearing.dependenceRegion` 让清除者的区域是它沿依存所及的形成（含来源），栖居者与来源只含自身。它说明这样的中心彼此分歧并容许搭便车者，这正是路线 (b) 须面对的。
+8. **读法与名称是 AI 的。** `Unrestricted`、`Retains`、`Adds`、`bounded`、`Preemption` 是 AI 按 Ren 的命名准则所选：不受限、保留、增加、有界与先占都是形式与系统的词。读法待 Ren。
+
+**检查。**
+- 模块先在暂存区对 P37 的核心编译（P38 不影响它的导入），逐条审计全部 71 项声明（含 Lean 生成的辅助声明），公理报告全部为空。
+- 合并检查器对加入模块的包检查三次，三次运行都保留，每次都通过：
+  - 第一次是回执 20261010T104700.459715Z。之后只改了模块文档中的三处措辞：Ren 对中心的回答的转述、“positive”一句（Ren 说意义“doesn't have to be positive”）、立场索引的读法。
+  - 第二次是回执 20261010T105720.952257Z。之后只改了根模块文档中的一处：G0 成立的范围写明为逐步、关系层与整段读法。
+  - 第三次是回执 20261010T110824.890630Z，为本节的证据。
+- 外围检查有两次运行在上述文档修改前中止，没有回执。
+- 外围桥接对这个核心重查（20261010T111624.656993Z）。
+- 本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3605,4 +3689,13 @@ Reading these as Ren's generative, degenerative and neutral, and as self, system
 
 Section 52 (P38) states what each premise adds to counting, under every selection of the eight premises. A second route binds counting without any premise on giving: under balance, taking, dissipation and embodiment, nothing is taken at a step at which nothing is active, whatever is given comes to stand and so is active after the step, the relata active after it form a closed family, and dissipation lets nothing be given to it (`World.taking_binds_counting`). At an enclosed step, balance, dissipation and embodiment suffice (`World.enclosed_binds_counting`). So under each of the 256 selections the laws of counting are the tally alone, or the tally with nothing arising across a step at which nothing is active. The second holds exactly where balance and embodiment are selected with only active relata giving, or with only active relata taking and dissipation (`World.counting_under`, `World.counting_binds_iff`). Every other selection is met by a queue that counts every tally: the queue standing while active, the queue with nothing flowing, a queue driven by an idle ground relatum (`World.drivenQueue`), or the open queue. In worlds enclosed from some step on, one more condition is added exactly where balance, embodiment and dissipation are selected: from some step on, change stays within a bound and nothing arises across a step at which nothing is active (`World.enclosed_counting_under`). The witness there is an enclosed queue closing at that step (`World.closingQueue`). The chapter now has a Part I header before section 1, Part I stated whole after section 5 (what holds of every unfolding, what each premise adds, where the dynamics stop deciding), and a Part II header before section 6, quoting Ren's proposed axiom and route (a), with G0 the adopted axiom until P39 proves it; headings and anchors are unchanged. The laws under each selection in finite worlds, and where every premise binds, are not stated. Receipt 20261010T101327.506085Z has 1430 theorems and 2280 declaration audits; the periphery receipt is 20261010T102016.503705Z. The section has not been independently reviewed.
 
-The package now has 1430 theorems and 2280 declaration audits, over a core closure of 33 modules and a package of 31, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4. The following have not yet been independently reviewed: the handling in §47.1–47.4 and in section 48, and sections 49, 50, 51 and 52. The periphery bridge passed against this core (receipt 20261010T102016.503705Z).
+**P39: what the one axiom yields.** Ren proposed one axiom, “for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”, and chose route (a), with G0 as its target theorem. Ren then answered that a center and its boundary exist only within cognitive structure and dynamics, so no axiom decides whose continuation matters, and that not harm is a phase transition with a clear boundary. Section 53 therefore states the axiom as Ren's words, not as a center at every wanting point. `Becoming.Significance` (27 theorems) reads it as boundary neutrality for the significance of continuation (`Unrestricted`): from every standpoint, the continuation of anything has significance at every step.
+- **G0 follows, immediately.** Take any reading in which a claim's significance is that of a formation's continuation at a step; the stepwise, relation and whole-run readings are such readings. On it, G0, S0 at every standpoint, both neutralities and a seed follow, with no connection used (`Valuation.premises_of_unrestricted`). On level paths C follows too, with better read as retaining and adding (`Web.paths_g0_comparison`). G0 is the axiom restricted to living claims; A, L and J1–J4 remain premises.
+- **Not harm is the margin.** Under the axiom retaining what has significance is inclusion. So a part does no harm exactly where its net draw stays within the margin, loses a continuation exactly where the draw exceeds it, and adds one exactly where its net exchange brings a formation within it (`Flow.Balances.retains_iff_within_margin` and its two companions). Ren's strong form is the generative case of the weak one.
+- **What has not yet formed counts.** A drawer taking a condition before any dependence on it forms is living on the stepwise reading, yet under the axiom it loses a possibility (`Preemption.not_undermining_yet_loses`). Which reading G0's living names is Ren's choice.
+- **The whole first.** What retains in the whole retains within every region (`Web.Retains.within`), and not conversely. Centers bounded by their dependence license the free rider and disagree (`Clearing.centers_disagree`). Under the axiom the free rider's part loses the dweller from every standpoint, and withholding it ends nothing (`Clearing.free_rider_loses`).
+- **The axiom is needed.** Where nothing has significance, nothing is ordered (`Web.significance_undetermined`).
+
+G0 remains the adopted axiom until Ren accepts this axiom in its place. Records added: one-axiom-yields-g0, significance-retained-within-margin and whole-first-and-bounded-centers. Receipt 20261010T110824.890630Z has 1457 theorems and 2316 declaration audits; two earlier passed runs, 20261010T104700.459715Z and 20261010T105720.952257Z, differ from it only in documentation (three passages of the module's and one of the root module's). The periphery receipt is 20261010T111624.656993Z. The author's counterreview is in section 53, and the section has not been independently reviewed.
+
+The package now has 1457 theorems and 2316 declaration audits, over a core closure of 34 modules and a package of 32, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4. The following have not yet been independently reviewed: the handling in §47.1–47.4 and in section 48, and sections 49, 50, 51, 52 and 53. The periphery bridge passed against this core (receipt 20261010T111624.656993Z).

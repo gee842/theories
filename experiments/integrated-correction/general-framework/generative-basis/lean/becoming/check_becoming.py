@@ -42,7 +42,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Openness", "Becoming.Continuation", "Becoming.Admission", "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
-        "Becoming"]
+        "Becoming.Significance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -668,6 +668,36 @@ SCOPE = (
     "clearer, so standpoint neutrality and G0 fail, and transmission out of the clearer's own "
     "region along the formed relations fails. No premise is proved and no ethical axiom is "
     "assumed. "
+    "Significance: a significance says, for a standpoint, a step and a formation, whether the "
+    "formation's continuation at the step has significance from the standpoint; the axiom is that "
+    "no standpoint, step or formation restricts it, boundary neutrality for the significance of "
+    "continuation, and a significance bounded by regions is the same rule inside a formed "
+    "boundary and is not the axiom where some formation lies outside some region; under the "
+    "axiom, on every reading in which a claim's significance is that of a formation's "
+    "continuation at a step, every living claim is significant from every standpoint, S0 holds at "
+    "every standpoint, both neutralities hold and a seed exists wherever something lives, with no "
+    "connection used, the stepwise reading, the reading of relations and the whole-run reading "
+    "being such readings, and on the level paths of a web G0 holds with unindexed significance "
+    "and C holds with better read as retaining and adding what has significance; a level path "
+    "retains what has significance along another when it admits every continuation with "
+    "significance the other admits, a preorder never added to by what it retains, and adds when "
+    "it admits one the other does not; under the axiom retaining is inclusion and adding is "
+    "exceeding, alike from every standpoint; the levels with a part retain what has significance "
+    "without it exactly when the part's net draw stays within the margin for every continuation "
+    "with significance the levels without it admit, the part loses one exactly where its net draw "
+    "exceeds the margin, and adds one exactly where its net exchange brings within the margin a "
+    "formation the levels without it do not admit; under the axiom the conveyor's part is "
+    "unordered and the giver's part retains and adds; a drawer taking a condition's unit before "
+    "any dependence on it forms is active and not undermining, yet its part closes a formation "
+    "admitted at every step without it, and under the axiom loses a continuation with "
+    "significance; where fewer continuations have significance more is retained, significance "
+    "bounded by a region retains what is admitted within the region, and under the axiom what "
+    "retains retains within every region; with each formation's significance stopping at what its "
+    "continuation depends on, the clearer's part retains what has significance from the clearer's "
+    "standpoint and loses the dweller from the dweller's, while under the axiom it loses the "
+    "dweller from every standpoint, the levels without it admitting every formation at every "
+    "step; where nothing has significance every level path retains every other, none adds, and "
+    "G0 fails at any living event. The axiom is a hypothesis; no ethical premise is proved. "
     "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
     "the existing modules, the core's whole-run reading of courses is the relational inventory of "
     "RenewalComparison with the same undisturbed levels, and J1/J2 on configurations is "

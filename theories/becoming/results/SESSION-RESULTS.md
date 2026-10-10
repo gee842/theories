@@ -16,15 +16,15 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-10T10:34:57.289978+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-10T11:23:51.055478+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
 | Mapped chats / 已映射会话 | 44 |
 | Result families / 成果族 | 14 |
-| Working Lean sources / 工作源码 | 586 |
+| Working Lean sources / 工作源码 | 587 |
 | Audit drivers / 审计入口 | 14 |
-| Saved verification or build copies / 检查及构建副本 | 12694 |
+| Saved verification or build copies / 检查及构建副本 | 13194 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
 
 No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.
@@ -210,7 +210,7 @@ G0 and disclosed comparative commitments support scoped preservation, revision, 
 
 **Scope still separate / 保留范围:** Do not count applications as repeated foundations or import risk priorities into G0 without their extra premise.
 
-**Migrated records / 已迁移条目:** [alignment-direction-g0-j](records/alignment-direction-g0-j.md) · [becoming-renewal-reading](records/becoming-renewal-reading.md) · [becoming-spine-instances](records/becoming-spine-instances.md) · [becoming-stepwise-reading](records/becoming-stepwise-reading.md) · [classification-robust-generative-comparison](records/classification-robust-generative-comparison.md) · [condition-correspondence-discipline](records/condition-correspondence-discipline.md) · [conveyance-crosses-the-boundary](records/conveyance-crosses-the-boundary.md) · [derived-extent-limits](records/derived-extent-limits.md) · [fulfillment-chance-floor](records/fulfillment-chance-floor.md) · [held-lives-g0-is-centering](records/held-lives-g0-is-centering.md) · [living-on-and-descent](records/living-on-and-descent.md) · [metaethical-core-characterization](records/metaethical-core-characterization.md) · [open-form-realization-under-revision](records/open-form-realization-under-revision.md) · [organizational-formation-from-generative-comparison](records/organizational-formation-from-generative-comparison.md) · [positioned-positive-reason](records/positioned-positive-reason.md) · [positive-ground-open-futures](records/positive-ground-open-futures.md) · [practical-judgment-g0-j](records/practical-judgment-g0-j.md) · [protection-priority-excludes-uniform-aggregation](records/protection-priority-excludes-uniform-aggregation.md) · [ranking-under-readings](records/ranking-under-readings.md) · [relational-generative-comparison](records/relational-generative-comparison.md) · [relational-reading-comparison](records/relational-reading-comparison.md) · [renewing-consuming-formation](records/renewing-consuming-formation.md) · [self-good-reachable-g0](records/self-good-reachable-g0.md)
+**Migrated records / 已迁移条目:** [alignment-direction-g0-j](records/alignment-direction-g0-j.md) · [becoming-renewal-reading](records/becoming-renewal-reading.md) · [becoming-spine-instances](records/becoming-spine-instances.md) · [becoming-stepwise-reading](records/becoming-stepwise-reading.md) · [classification-robust-generative-comparison](records/classification-robust-generative-comparison.md) · [condition-correspondence-discipline](records/condition-correspondence-discipline.md) · [conveyance-crosses-the-boundary](records/conveyance-crosses-the-boundary.md) · [derived-extent-limits](records/derived-extent-limits.md) · [fulfillment-chance-floor](records/fulfillment-chance-floor.md) · [held-lives-g0-is-centering](records/held-lives-g0-is-centering.md) · [living-on-and-descent](records/living-on-and-descent.md) · [metaethical-core-characterization](records/metaethical-core-characterization.md) · [one-axiom-yields-g0](records/one-axiom-yields-g0.md) · [open-form-realization-under-revision](records/open-form-realization-under-revision.md) · [organizational-formation-from-generative-comparison](records/organizational-formation-from-generative-comparison.md) · [positioned-positive-reason](records/positioned-positive-reason.md) · [positive-ground-open-futures](records/positive-ground-open-futures.md) · [practical-judgment-g0-j](records/practical-judgment-g0-j.md) · [protection-priority-excludes-uniform-aggregation](records/protection-priority-excludes-uniform-aggregation.md) · [ranking-under-readings](records/ranking-under-readings.md) · [relational-generative-comparison](records/relational-generative-comparison.md) · [relational-reading-comparison](records/relational-reading-comparison.md) · [renewing-consuming-formation](records/renewing-consuming-formation.md) · [self-good-reachable-g0](records/self-good-reachable-g0.md) · [significance-retained-within-margin](records/significance-retained-within-margin.md) · [whole-first-and-bounded-centers](records/whole-first-and-bounded-centers.md)
 
 <a id="f08"></a>
 

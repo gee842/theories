@@ -1686,6 +1686,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
 
+## one-axiom-yields-g0 ← metaethical-core-characterization
+
+`formal-reuse` — 复用 Valuation、Significant、SelfGood、Seed、transmits、shares、Neutral、Within、G0、Extension 与 Comparison；原刻画保持其范围。 / Reuses Valuation, Significant, SelfGood, Seed, transmits, shares, Neutral, Within, G0, Extension and Comparison; the earlier characterization keeps its scope.
+
+**Producer output / 上游输出:** 估值、S0、两条中立、种子、G0 与 C 的定义。 / The valuation, S0, the two neutralities, the seed, G0 and C.
+
+**Consumer input / 下游输入:** 在主张的意义即延续之意义的读法上，由公理推出 G0、S0、两条中立与种子；在水平路径上推出 C。 / On readings where a claim's significance is that of a continuation, G0, S0, both neutralities and a seed are derived from the axiom; on level paths, C.
+
+**Retained conditions / 保留条件:** 公理 Unrestricted；对应 reads。 / The axiom Unrestricted; the correspondence reads.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## one-axiom-yields-g0 ← held-lives-g0-is-centering
+
+`interpretive` — 那里 G0 在被持有的生命上恰等于处处 S0 加 N_std（§6.7 的读法：S0 为想要，N_std 为公理）；这里公理更强，给出处处 S0 与 N_std，所以那一读法在这里是推论。 / There G0 on held lives is exactly S0 at every standpoint with N_std (the reading of section 6.7: S0 as wanting, N_std as the axiom); here the axiom is stronger and gives S0 at every standpoint and N_std, so that reading is here a consequence.
+
+**Producer output / 上游输出:** G0 与处处 S0 加 N_std 的等价。 / The equivalence of G0 with S0 at every standpoint and N_std.
+
+**Consumer input / 下游输入:** 公理之下等价的两边都成立。 / Under the axiom both sides of the equivalence hold.
+
+**Retained conditions / 保留条件:** 持有；读法待 Ren。 / Holding; the reading pending Ren.
+
+[Connection evidence / 连接证据](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md)
+
+## one-axiom-yields-g0 ← becoming-stepwise-reading
+
+`application` — 逐步读法（Web.valuation：活跃且不侵蚀的事件为活的）是公理推出 G0 的一种读法；significance_undetermined 在其上陈述。 / The stepwise reading (Web.valuation: an event active and not undermining is living) is one reading on which the axiom yields G0; significance_undetermined is stated on it.
+
+**Producer output / 上游输出:** 逐步读法的估值。 / The stepwise valuation.
+
+**Consumer input / 下游输入:** 公理之下其上 G0 成立；没有意义时不成立。 / Under the axiom G0 holds on it; without significance it fails.
+
+**Retained conditions / 保留条件:** 活的事件：活跃且不侵蚀（UnderminingAt）。 / A living event: active and not undermining (UnderminingAt).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## one-axiom-yields-g0 ← becoming-renewal-reading
+
+`application` — 整段读法（Conditions.valuation）是公理推出 G0 的另一种读法。 / The whole-run reading (Conditions.valuation) is another reading on which the axiom yields G0.
+
+**Producer output / 上游输出:** 整段读法的估值。 / The whole-run valuation.
+
+**Consumer input / 下游输入:** 公理之下其上 G0 成立。 / Under the axiom G0 holds on it.
+
+**Retained conditions / 保留条件:** 一个运行。 / A run.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## one-axiom-yields-g0 ← closing-needs-net-draw
+
+`formal-reuse` — 复用接纳（Web.Admits），用它定义水平路径的框架（Web.paths）与保留、增加。 / Reuses admission (Web.Admits) to define the frame of level paths (Web.paths) and retaining and adding.
+
+**Producer output / 上游输出:** 接纳与包含。 / Admission and inclusion.
+
+**Consumer input / 下游输入:** 水平路径的框架；C 在其上读作保留且增加。 / The frame of level paths; C on it read as retaining and adding.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
 ## open-form-realization-under-revision ← positive-ground-open-futures
 
 `formal-reuse` — positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.
@@ -2106,6 +2166,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
 
+## significance-retained-within-margin ← closing-needs-net-draw
+
+`formal-reuse` — 复用接纳、包含、超出、扣留后的水平与精确相界 Flow.Balances.supported_iff_within_margin（以及 opens_nothing）。 / Reuses admission, inclusion, exceeding, the withheld levels and the exact phase boundary Flow.Balances.supported_iff_within_margin (and opens_nothing).
+
+**Producer output / 上游输出:** 形成被支持，恰当部分在它所需的每个条件上的累计净汲取不超出余量。 / A formation is supported exactly when, on every condition it requires, the part's cumulative net draw stays within the margin.
+
+**Consumer input / 下游输入:** 保留、失去与增加有意义者各自的精确界。 / The exact boundary of retaining, losing and adding what has significance.
+
+**Retained conditions / 保留条件:** 平衡；扣留后的水平。 / Balance; the withheld levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## significance-retained-within-margin ← four-cases-of-a-part
+
+`formal-reuse` — 复用 Restoring.Inflow.widens 与 Transfer.mixed：公理之下扩大的部分保留并增加，混合的部分不被定序。 / Reuses Restoring.Inflow.widens and Transfer.mixed: under the axiom a widening part retains and adds, and a mixed part is unordered.
+
+**Producer output / 上游输出:** 部分的四种情形（扩大、缩小、不变、混合）。 / The four cases of a part (widening, narrowing, keeping, mixed).
+
+**Consumer input / 下游输入:** 它们就是意义的四种情形。 / They are the four cases of significance.
+
+**Retained conditions / 保留条件:** 公理。 / The axiom.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## significance-retained-within-margin ← one-axiom-yields-g0
+
+`formal-reuse` — 复用公理 Unrestricted。 / Reuses the axiom Unrestricted.
+
+**Producer output / 上游输出:** 公理。 / The axiom.
+
+**Consumer input / 下游输入:** 保留即包含、增加即超出。 / Retaining as inclusion and adding as exceeding.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
 ## space-and-its-parts ← coming-and-ceasing-keep-pace
 
 `formal-reuse` — 复用止息（Ceases）、形成有限多时生起不息恰当止息不息（unceasing_iff）与 Accretion、Attrition。 / Reuses ceasing (Ceases), that with finitely many formations arising is unceasing exactly when ceasing is (unceasing_iff), and Accretion and Attrition.
@@ -2321,6 +2417,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
+## whole-first-and-bounded-centers ← loss-beyond-a-region
+
+`formal-reuse` — 复用 Web.AdmitsWithin、AdmitsWithin.narrow 与清除者的见证（Clearing.withheld、admitted_without、unsupported_with、alongDependence、loses_beyond）。 / Reuses Web.AdmitsWithin, AdmitsWithin.narrow and the clearer's witness (Clearing.withheld, admitted_without, unsupported_with, alongDependence, loses_beyond).
+
+**Producer output / 上游输出:** 清除者在其依存之内不关闭任何东西，在其外关闭栖居者。 / The clearer closes nothing within its dependence and closes the dweller beyond it.
+
+**Consumer input / 下游输入:** 以依存为界的中心彼此分歧；公理之下从每个立场失去栖居者。 / Centers bounded by their dependence disagree; under the axiom the dweller is lost from every standpoint.
+
+**Retained conditions / 保留条件:** 扣留后的水平；以依存为界的区域。 / The withheld levels; the region along dependence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## whole-first-and-bounded-centers ← significance-retained-within-margin
+
+`formal-reuse` — 复用保留与增加及 Retains.not_added。 / Reuses retaining and adding and Retains.not_added.
+
+**Producer output / 上游输出:** 保留是预序，保留者不被增加。 / Retaining is a preorder, and what retains is not added to.
+
+**Consumer input / 下游输入:** 整体优先与搭便车者的失去。 / The whole first and the free rider's loss.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## whole-first-and-bounded-centers ← one-axiom-yields-g0
+
+`formal-reuse` — 复用公理 Unrestricted 与以区域为界的意义 bounded。 / Reuses the axiom Unrestricted and significance bounded by regions, bounded.
+
+**Producer output / 上游输出:** 公理与它的对手。 / The axiom and its rival.
+
+**Consumer input / 下游输入:** 整体的判断决定每个较窄的判断。 / The whole's judgment decides every narrower one.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## whole-first-and-bounded-centers ← derived-extent-limits
+
+`interpretive` — 那里在逐步读法上证明沿依存时中心不由动力学推出（清除者的见证）；这里以依存为界的中心彼此分歧并容许搭便车者，公理之下不分歧。 / There, on the stepwise reading, the center is shown not derived along dependence (the clearer's witness); here centers bounded by their dependence disagree and license the free rider, and under the axiom they do not disagree.
+
+**Producer output / 上游输出:** 沿依存的中心不被推出。 / The center along dependence is not derived.
+
+**Consumer input / 下游输入:** 以依存为界的意义是一个前提，与公理一样被给出。 / Significance bounded by dependence is a premise, supplied as the axiom is.
+
+**Retained conditions / 保留条件:** 读法待 Ren。 / The reading pending Ren.
+
+[Connection evidence / 连接证据](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md)
 
 ## whole-law-of-counting ← census-balance
 
