@@ -2254,6 +2254,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
 
+## rest-with-refinement-counted ← continued-change-needs-openness
+
+`formal-reuse` — World.rests_unrefined 与 World.rests_refinement_counted 把世界从 T 起读（World.after），对它应用脊柱的静止定理 World.rests_enclosed；World.arising_opens 是细分什么也不给时的情形。 / World.rests_unrefined and World.rests_refinement_counted read the world from T on (World.after) and apply the spine's rest theorem World.rests_enclosed to it; World.arising_opens is the case where the refinement gives nothing.
+
+**Producer output / 上游输出:** 有普查、关系项都体现、平衡、耗散且从某步起每步被围住的世界中，生起与止息都不复现。 / In a world with a census, embodied relata, balanced, dissipative and enclosed at every step from some step on, neither arising nor ceasing recurs.
+
+**Consumer input / 下游输入:** 细分从 T 起不给任何关系项时，从 T 起读的世界平衡（World.after_balanced）、耗散、被围住，并有普查与体现。 / Where the refinement gives no relatum anything from T on, the world read from T on is balanced (World.after_balanced), dissipative and enclosed, with a census and embodiment.
+
+**Retained conditions / 保留条件:** 活动的普查；关系项都体现；在细分的单位下平衡；从 T 起耗散并被围住；细分从 T 起什么也不给。 / A census of activity; embodied relata; balance at the refining unit; dissipative and enclosed from T on; the refinement giving nothing from T on.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
+## rest-with-refinement-counted ← rest-at-every-resolution
+
+`formal-reuse` — 复用细分单位下的平衡（Flow.BalancesAt、Flow.BalancesAt.lowers）、量子的计数（losses_bound、bounded_not_recurring）、乘法的重组（add_mul_split）与见证（Emission、Alternation、Circulation、Asymptote、Dwindle 及其平衡、耗散、封闭与复现的定理）。 / Reuses balance at a refining unit (Flow.BalancesAt, Flow.BalancesAt.lowers), the counting of quanta (losses_bound, bounded_not_recurring), the regrouping of products (add_mul_split) and the witnesses (Emission, Alternation, Circulation, Asymptote, Dwindle and their theorems of balance, dissipation, closure and recurrence).
+
+**Producer output / 上游输出:** 在细分的单位下平衡且被耗散时，家族的存量连同取用者不多于 r t 乘此前的存量；每步 q 乘余下的连同 k 个量子不多于 q 乘此前时，量子之和有界；见证在其单位下平衡、耗散，生起、交换或取用复现。 / Balanced at a refining unit and dissipated on, the family's stock with its takers is within r t times the stock before; where each step q times what remains with k quanta is within q times what was there, the quanta are bounded; the witnesses balance at their units, dissipate, and arise, exchange or take at arbitrarily late steps.
+
+**Consumer input / 下游输入:** 细分什么也不给时，r t 乘存量就是存量，每个取用的步失去一个单位。 / Where the refinement gives nothing, r t times the stock is the stock, and every taking step loses one unit.
+
+**Retained conditions / 保留条件:** 在 split + 1 的单位下平衡；耗散；封闭的不重复家族。 / Balance at the unit split + 1; dissipation; a closed family without repetition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
 ## retained-reference-joining-recovery ← branching-tests-bisimulation
 
 `formal-reuse` — 位置对接合的有限结果给出有限分支，再复用恢复及历史提升。 / Finite outcomes of slot-pair joining give finite branching, then reuse recovery and history lifting.

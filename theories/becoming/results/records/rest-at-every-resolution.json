@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "rest-at-every-resolution",
   "title": {
-    "zh": "每一分辨率下的静止：自然数的单位是一个损失的量子；单位可以细分时，按比例的损失连同最小尺度为被围住的交换、增长、下降、生起与止息定下界，最小花费为储备所推迟的终结定下界，缺少任一，各自无尽地继续",
-    "en": "Rest at every resolution: the natural-number unit is a quantum of loss; where the unit may refine, loss in proportion with a least size bounds enclosed exchange, growth, falling, arising and ceasing, a least cost bounds the end a reserve defers, and without either each continues without end"
+    "zh": "每一分辨率下每一固定尺度的静止：自然数的单位是一个损失的量子；不算入细分时，按比例的损失为被围住的家族交换的总量定下最小的界，连同最小尺度为被围住的交换、增长、下降、生起与止息的次数定下界，储备的最小下降为储备所推迟的终结定下界；缺少其中任何一个，变化都可以无尽地继续",
+    "en": "Rest at each size, at every resolution: the natural-number unit is a quantum of loss; without counting the refinement, loss in proportion sets the least bound on the whole amount an enclosed family exchanges and, with a least size, bounds the times of enclosed exchange, growth, falling, arising and ceasing, and a least fall of the reserve bounds the end a reserve defers; without any one of these, change can continue without end"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T16:59:22+00:00",
+  "reviewed_at_utc": "2026-10-10T18:33:54+00:00",
   "claim": {
-    "zh": "脊柱以一个固定单位的自然数计量，所以耗散每次交换至少损失一个单位；静止与开放的规律依赖这一量子。让单位跨过第 t 步分为 r t 个更细的单位（Flow.BalancesAt r；r 恒为一时就是 Balances，Flow.balancesAt_one），R 计每一步的单位数，以第 T 步的单位为一。损失的规律：从 T 起每步，q 乘余下的连同 k 个量子不多于 q 乘此前所有的时，自 T 起计到的量子不多于 q 乘该量在 T 的值（losses_invariant、losses_bound）；所以在细分分辨率下平衡且耗散时，从 T 起封闭的不重复家族损失至少 1/q 第 T 步单位的步不多于 q 乘其存量（Flow.quantum_bound），不复现（Flow.quantum_not_recurring）；单位固定时取用封闭家族停止（Flow.taking_stops）。按比例的损失：每个封闭家族得回的至多是从它取走的 q/(q+1) 时（Flow.DissipativeBy q；每个形成给回的至多是所取的 q/(q+1) 时如此，Flow.DissipatesBy.of_each），从 T 起封闭的家族中，取用至少 1/p 单位的形成逐个逐步计数，总数不多于 p(q+1) 乘其在 T 的存量（交换的规律，Flow.exchange_bound、Flow.exchange_not_recurring）；在有普查、关系项都体现、从 T 起每步被围住的世界中，增长至少 1/p 单位的关系项逐个逐步计数，总数不多于 p q 乘 T 时所立者的总水平（增长的规律，World.growth_bound），所以这样的增长不复现（World.growth_not_recurring），这一尺度的生起也不在任意晚的步发生（World.arising_not_recurring）；同样，下降至少 1/p 单位的关系项逐个逐步计数，总数不多于 p(q+1) 乘 T 时所立者的总水平（下降的规律，World.fall_bound、World.fall_not_recurring），所以立于至少 1/p 单位者的止息也不复现（World.ceasing_not_recurring）：在每一分辨率下，这一尺度的生起与止息都不复现（World.rests_at_resolution）。储备：每个活跃而不被支持的步至少花去 1/p 单位时（Web.CarriesAt），从 T 起不被支持的形成活跃的步不多于 p 乘其在 T 的储备（Web.CarriesAt.lasts）；脊柱的储备是 p 为一、单位固定的情形（Web.Carries.carriesAt），细分单位下只要求储备下降的读法在单位固定时就是脊柱的储备（Web.CarriesIn、Web.carriesIn_one）。每一尺度的最小损失：脊柱的耗散之下，取用至少 1/p 单位的形成都失去至少 1/m 单位时（Flow.LosesAtSize），从 T 起封闭的家族中这样的取用逐个逐步计数不多于 m 乘其在 T 的存量（Flow.exchange_bound_of_least_loss、Flow.exchange_not_recurring_of_least_loss）；逐个形成按比例的损失给出这样的最小损失（Flow.losesAtSize_of_each）。计数转移只需每一尺度的最小损失，计数关系项的增长需要更多。边界，每个见证都在无尽细分的单位下平衡并耗散：Asymptote 失去其所取用的全部，所以按每个比例耗散，恰在单位无尽地细分时无尽地被取用（rest_needs_quantum、Asymptote.exchange_recurs_iff）；Circulation 每步交换第 0 步的一整个单位，每步围住所立者，损失下一步的一个单位，不按任何比例耗散（exchange_needs_quantum）；Emission 有普查、关系项都体现、每步被围住、失去所取用的一半，每步生起一个新关系项，立于下一步的一个单位（arising_needs_quantum）；Alternation 有普查、关系项都体现、每步被围住，两侧轮流持有并生起第 0 步的一整个单位，不按任何比例耗散（arising_needs_proportion）；Dwindle 中单位每步减半，一个从不被支持的形成每步都活跃，储备在更细单位下每步下降而以第 0 步单位计趋于一个单位，对任何 p 都没有每步 1/p 单位的花费（reserve_needs_quantum）；Trickle 中单位每步分为四个，第 0 步的一整个单位在两侧之间由越来越多、越来越小的转移带过，每份失去下一步的两个单位，每一尺度都有最小损失，每个固定尺度的转移停止，而一整个单位在任意晚的步生起，不按任何比例耗散（growth_needs_proportion）。",
-    "en": "The spine counts amounts in natural numbers of one fixed unit, so dissipation loses at least a unit at every exchange, and the rest and openness laws rely on that quantum. Let the unit split into r t finer units across the step from t (Flow.BalancesAt r; with r constantly one it is Balances, Flow.balancesAt_one), and let R count the units of each step, the unit of step T being one. The loss law: where across each step from T on q times what remains together with k quanta is within q times what was there, the quanta counted since T number at most q times the quantity at T (losses_invariant, losses_bound); so, balanced at a refining resolution and dissipative, a family without repetition closed from T on loses at least 1/q of the unit of step T at no more steps than q times its stock (Flow.quantum_bound), and losing so does not recur (Flow.quantum_not_recurring); with the unit fixed, taking from a closed family stops (Flow.taking_stops). Loss in proportion: where every closed family gets back at most q/(q+1) of what is taken from it (Flow.DissipativeBy q; so where each formation gives back at most q/(q+1) of what it takes, Flow.DissipatesBy.of_each), the formations taking at least 1/p of the unit from a family closed from T on, counted formation by formation and step by step, number at most p(q+1) times its stock at T (the exchange law, Flow.exchange_bound, Flow.exchange_not_recurring); in a world with a census, embodied relata and every step from T on enclosed, the relata gaining at least 1/p of the unit, counted relatum by relatum and step by step, number at most p q times the total standing at T (the growth law, World.growth_bound), so such gains do not recur (World.growth_not_recurring) and nothing arises at that size at arbitrarily late steps (World.arising_not_recurring); likewise the relata falling by at least 1/p of the unit, counted relatum by relatum and step by step, number at most p(q+1) times the total standing at T (the fall law, World.fall_bound, World.fall_not_recurring), so nothing standing at least 1/p of the unit ceases at arbitrarily late steps (World.ceasing_not_recurring): at every resolution neither arising nor ceasing at that size recurs (World.rests_at_resolution). Reserve: where each active step beyond support costs at least 1/p of the unit (Web.CarriesAt), a formation unsupported from T on is active at most p times its reserve at T (Web.CarriesAt.lasts); the spine's reserve is the case of p one at a fixed unit (Web.Carries.carriesAt), and the reading in a refining unit that asks only that the reserve fall is, with the unit fixed, the spine's reserve (Web.CarriesIn, Web.carriesIn_one). A least loss at each size: with the spine's dissipation, where each formation taking at least 1/p of the unit loses at least 1/m of it (Flow.LosesAtSize), such takings from a family closed from T on, counted formation by formation and step by step, number at most m times its stock at T (Flow.exchange_bound_of_least_loss, Flow.exchange_not_recurring_of_least_loss); loss in proportion at each transfer gives such a least loss (Flow.losesAtSize_of_each). Counting transfers needs only a least loss at each size; counting what relata gain needs more. The boundaries, each witness balanced at a unit splitting without end and dissipative: Asymptote, losing all it takes and so dissipative by every share, is taken from without end exactly where the unit splits without end (rest_needs_quantum, Asymptote.exchange_recurs_iff); Circulation exchanges one whole unit of step 0 at every step, every step enclosed around what stands, losing one unit of the step after, and is dissipative by no share (exchange_needs_quantum); Emission, with a census, embodied relata, every step enclosed and half of what is taken lost, has a new relatum arise at every step, standing at one unit of the step after (arising_needs_quantum); Alternation, with a census, embodied relata and every step enclosed, has two sides hold and arise with one whole unit of step 0 in turn, and is dissipative by no share (arising_needs_proportion); in Dwindle, at a unit halving at each step, a formation never supported is active at every step, its reserve falling in the finer unit at each and tending to one unit of step 0, with no cost of 1/p of the unit at each step for any p (reserve_needs_quantum); in Trickle, at a unit quartering at each step, a whole unit of step 0 passes between two sides in ever more, ever smaller transfers, each losing two units of the step after, so every size has a least loss and transfers of each fixed size stop, yet a whole unit arises at arbitrarily late steps, with no share lost (growth_needs_proportion)."
+    "zh": "脊柱以一个固定单位的自然数计量，所以耗散每次交换至少损失一个单位；静止与开放的规律依赖这一量子。把单位的细分算作只给不取的形成时，脊柱的前提不添任何前提就带来每一分辨率下的静止（rest-with-refinement-counted）；本结果是不算入细分时的规律，按 Ren 2026-10-11 的选择作为研究笔记保留。让单位跨过第 t 步分为 r t 个更细的单位（Flow.BalancesAt r；r 恒为一时就是 Balances，Flow.balancesAt_one），R 计每一步的单位数，以第 T 步的单位为一。损失的规律：从 T 起每步，q 乘余下的连同 k 个量子不多于 q 乘此前所有的时，自 T 起计到的量子不多于 q 乘该量在 T 的值（losses_invariant、losses_bound）；所以在细分分辨率下平衡且耗散时，从 T 起封闭的不重复家族损失至少 1/q 第 T 步单位的步不多于 q 乘其存量（Flow.quantum_bound），不复现（Flow.quantum_not_recurring）；单位固定时取用封闭家族停止（Flow.taking_stops）。按比例的损失：每个封闭家族得回的至多是从它取走的 q/(q+1) 时（Flow.DissipativeBy q；每个形成给回的至多是所取的 q/(q+1) 时如此，Flow.DissipatesBy.of_each），量的规律在每一分辨率下成立：从 T 起封闭的不重复家族被取走的总量，每步的量以第 T 步的单位计（refinedSum），至多是它在 T 的存量的 q+1 倍，得回的总量至多 q 倍（Flow.uptake_bound、Flow.replenishment_bound，由不变式 refinedSum_invariant）；在有普查、关系项都体现、从 T 起每步被围住的世界中，从所立者被取走的总量至多是 T 时所立者总水平的 q+1 倍，给予所立者的至多 q 倍（World.taken_bound、World.given_bound）。这个界是最小的：Geometric 中一个形成每步取走整个封闭的池、给回 q/(q+1)，单位每步分为 q+1 个，被取走的总量对每个 m 都到达 q+1 乘池的 1/m 之内（amount_sharp）。每个尺度的计数都由量的规律得出：每步的计数不多于 p 乘一个量时，自 T 起的计数不多于 p 乘该量的界（counts_of_amounts）；所以从 T 起封闭的家族中，取用至少 1/p 单位的形成逐个逐步计数，总数不多于 p(q+1) 乘其在 T 的存量（交换的规律，Flow.exchange_bound、Flow.exchange_not_recurring）；在有普查、关系项都体现、从 T 起每步被围住的世界中，增长至少 1/p 单位的关系项逐个逐步计数，总数不多于 p q 乘 T 时所立者的总水平（增长的规律，World.growth_bound），所以这样的增长不复现（World.growth_not_recurring），这一尺度的生起也不在任意晚的步发生（World.arising_not_recurring）；同样，下降至少 1/p 单位的关系项逐个逐步计数，总数不多于 p(q+1) 乘 T 时所立者的总水平（下降的规律，World.fall_bound、World.fall_not_recurring），所以立于至少 1/p 单位者的止息也不复现（World.ceasing_not_recurring）：在每一分辨率下，这一尺度的生起与止息都不复现（World.rests_at_resolution）。储备：每个活跃而不被支持的步使储备至少下降 1/p 单位时（Web.CarriesAt），从 T 起不被支持的形成活跃的步不多于 p 乘其在 T 的储备（Web.CarriesAt.lasts）；脊柱的储备是 p 为一、单位固定的情形（Web.Carries.carriesAt），细分单位下只要求储备下降的读法在单位固定时就是脊柱的储备（Web.CarriesIn、Web.carriesIn_one）。每一尺度的最小损失：脊柱的耗散之下，取用至少 1/p 单位的形成都失去至少 1/m 单位时（Flow.LosesAtSize），从 T 起封闭的家族中这样的取用逐个逐步计数不多于 m 乘其在 T 的存量（Flow.exchange_bound_of_least_loss、Flow.exchange_not_recurring_of_least_loss）；逐个形成按比例的损失给出这样的最小损失（Flow.losesAtSize_of_each）。计数转移只需每一尺度的最小损失，计数关系项的增长与为交换的总量定界需要更多。边界，每个见证都在无尽细分的单位下平衡并耗散：Asymptote 失去其所取用的全部，所以按每个比例耗散，恰在单位无尽地细分时无尽地被取用，在固定单位下不平衡（rest_needs_quantum、Asymptote.exchange_recurs_iff、Asymptote.not_balanced）；Circulation 每步交换第 0 步的一整个单位，每步围住所立者，损失下一步的一个单位，不按任何比例耗散（exchange_needs_quantum）；Emission 有普查、关系项都体现、每步被围住、失去所取用的一半，每步生起一个新关系项，立于下一步的一个单位，在固定单位下不平衡（arising_needs_quantum、Emission.not_balanced）；Alternation 有普查、关系项都体现、每步被围住，两侧轮流持有并生起第 0 步的一整个单位，不按任何比例耗散，在固定单位下不平衡（arising_needs_proportion、Alternation.not_balanced）；Dwindle 中单位每步减半，一个从不被支持的形成每步都活跃，储备在更细单位下每步下降而以第 0 步单位计趋于一个单位，对任何 p，每个活跃的步都不使储备下降 1/p 单位（reserve_needs_quantum）；Trickle 中单位每步分为四个，第 0 步的一整个单位在两侧之间由越来越多、越来越小的转移带过，每份失去下一步的两个单位，每一尺度都有最小损失，每个固定尺度的转移停止，而一整个单位在任意晚的步生起，不按任何比例耗散（growth_needs_proportion）。",
+    "en": "The spine counts amounts in natural numbers of one fixed unit, so dissipation loses at least a unit at every exchange, and the rest and openness laws rely on that quantum. With the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added (rest-with-refinement-counted); this result gives the laws without counting the refinement, kept as research notes by Ren's choice of 11 October 2026. Let the unit split into r t finer units across the step from t (Flow.BalancesAt r; with r constantly one it is Balances, Flow.balancesAt_one), and let R count the units of each step, the unit of step T being one. The loss law: where across each step from T on q times what remains together with k quanta is within q times what was there, the quanta counted since T number at most q times the quantity at T (losses_invariant, losses_bound); so, balanced at a refining resolution and dissipative, a family without repetition closed from T on loses at least 1/q of the unit of step T at no more steps than q times its stock (Flow.quantum_bound), and losing so does not recur (Flow.quantum_not_recurring); with the unit fixed, taking from a closed family stops (Flow.taking_stops). Loss in proportion: where every closed family gets back at most q/(q+1) of what is taken from it (Flow.DissipativeBy q; so where each formation gives back at most q/(q+1) of what it takes, Flow.DissipatesBy.of_each), the amount law holds at every resolution: everything taken from a family without repetition closed from T on, each step's amount counted in the unit of step T (refinedSum), is at most q + 1 times its stock at T, and everything given back at most q times (Flow.uptake_bound, Flow.replenishment_bound, by the invariant refinedSum_invariant); in a world with a census, embodied relata and every step from T on enclosed, everything taken from what stands is at most q + 1 times the total standing at T, and everything given to what stands at most q times (World.taken_bound, World.given_bound). The bound is the least: in Geometric one formation takes the whole of a closed pool at each step and gives back q/(q+1) of it, at a unit splitting into q + 1 at each step, and everything taken comes within 1/m of q + 1 times the pool for every m (amount_sharp). Every count of a size follows from the amount law: where each step's count is within p times an amount, the count since T is within p times the amount's bound (counts_of_amounts); so the formations taking at least 1/p of the unit from a family closed from T on, counted formation by formation and step by step, number at most p(q+1) times its stock at T (the exchange law, Flow.exchange_bound, Flow.exchange_not_recurring); in a world with a census, embodied relata and every step from T on enclosed, the relata gaining at least 1/p of the unit, counted relatum by relatum and step by step, number at most p q times the total standing at T (the growth law, World.growth_bound), so such gains do not recur (World.growth_not_recurring) and nothing arises at that size at arbitrarily late steps (World.arising_not_recurring); likewise the relata falling by at least 1/p of the unit, counted relatum by relatum and step by step, number at most p(q+1) times the total standing at T (the fall law, World.fall_bound, World.fall_not_recurring), so nothing standing at least 1/p of the unit ceases at arbitrarily late steps (World.ceasing_not_recurring): at every resolution neither arising nor ceasing at that size recurs (World.rests_at_resolution). Reserve: where each active step beyond support lowers the reserve by at least 1/p of the unit (Web.CarriesAt), a formation unsupported from T on is active at most p times its reserve at T (Web.CarriesAt.lasts); the spine's reserve is the case of p one at a fixed unit (Web.Carries.carriesAt), and the reading in a refining unit that asks only that the reserve fall is, with the unit fixed, the spine's reserve (Web.CarriesIn, Web.carriesIn_one). A least loss at each size: with the spine's dissipation, where each formation taking at least 1/p of the unit loses at least 1/m of it (Flow.LosesAtSize), such takings from a family closed from T on, counted formation by formation and step by step, number at most m times its stock at T (Flow.exchange_bound_of_least_loss, Flow.exchange_not_recurring_of_least_loss); loss in proportion at each transfer gives such a least loss (Flow.losesAtSize_of_each). Counting transfers needs only a least loss at each size; counting what relata gain, and bounding the amount exchanged, needs more. The boundaries, each witness balanced at a unit splitting without end and dissipative: Asymptote, losing all it takes and so dissipative in every proportion, is taken from without end exactly where the unit splits without end, and does not balance at the fixed unit (rest_needs_quantum, Asymptote.exchange_recurs_iff, Asymptote.not_balanced); Circulation exchanges one whole unit of step 0 at every step, every step enclosed around what stands, losing one unit of the step after, and is dissipative in no proportion (exchange_needs_quantum); Emission, with a census, embodied relata, every step enclosed and half of what is taken lost, has a new relatum arise at every step, standing at one unit of the step after, and does not balance at the fixed unit (arising_needs_quantum, Emission.not_balanced); Alternation, with a census, embodied relata and every step enclosed, has two sides hold and arise with one whole unit of step 0 in turn, is dissipative in no proportion, and does not balance at the fixed unit (arising_needs_proportion, Alternation.not_balanced); in Dwindle, at a unit halving at each step, a formation never supported is active at every step, its reserve falling in the finer unit at each and tending to one unit of step 0, with no fall of the reserve by 1/p of the unit at each active step for any p (reserve_needs_quantum); in Trickle, at a unit quartering at each step, a whole unit of step 0 passes between two sides in ever more, ever smaller transfers, each losing two units of the step after, so every size has a least loss and transfers of each fixed size stop, yet a whole unit arises at arbitrarily late steps, with no proportion lost (growth_needs_proportion)."
   },
   "hypotheses": [
     {
@@ -19,25 +19,25 @@
       "en": "Resolution: R T = 1 and, from T on, R (t + 1) = r t · R t with 0 < r t, so the unit only splits; amounts at each step stay natural numbers of that step's unit. These are hypotheses of the theorems, not axioms."
     },
     {
-      "zh": "按比例的损失（Flow.DissipativeBy q）：在每个跨过一步封闭的不重复家族上，家族得回的至多是从它取走的 q/(q+1)；每个参与的形成给回的至多是所取的 q/(q+1) 时如此（Flow.DissipatesBy.of_each），反之不然。它是前提，是脊柱一单位损失的无单位对应，不是推出的；作者读作家族的交换合起来的效率上界。",
-      "en": "Loss in proportion (Flow.DissipativeBy q): on every family without repetition closed across a step, the family gets back at most q/(q+1) of what is taken from it; it holds where each formation taking part gives back at most q/(q+1) of what it takes (Flow.DissipatesBy.of_each), not conversely. It is a premise, the unit-free counterpart of the spine's one-unit loss, not derived; the author reads it as an upper bound on the efficiency of the family's exchanges taken together."
+      "zh": "按比例的损失（Flow.DissipativeBy q）：在每个跨过一步封闭的不重复家族上，家族得回的至多是从它取走的 q/(q+1)；每个参与的形成给回的至多是所取的 q/(q+1) 时如此（Flow.DissipatesBy.of_each），反之不然。它是前提，是脊柱一单位损失的无单位对应，不是推出的；作者读作家族的交换合起来的效率上界。Ren 2026-10-11 选择每次交换至少一个最小差异（“A is right”），未采用它为理论的前提；这一线作为研究笔记保留（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）。",
+      "en": "Loss in proportion (Flow.DissipativeBy q): on every family without repetition closed across a step, the family gets back at most q/(q+1) of what is taken from it; it holds where each formation taking part gives back at most q/(q+1) of what it takes (Flow.DissipatesBy.of_each), not conversely. It is a premise, the unit-free counterpart of the spine's one-unit loss, not derived; the author reads it as an upper bound on the efficiency of the family's exchanges taken together. On 11 October 2026 Ren chose a least difference at every exchange (‘A is right’) and did not take this as a premise of the theory; the line is kept as research notes (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)."
     },
     {
-      "zh": "最小损失的交换律：脊柱的耗散（每个形成给回封闭家族的不多于所取），以及每一尺度的最小损失（Flow.LosesAtSize：取用至少 1/p 单位的形成失去至少 1/m 单位，m 不随步变化）。",
-      "en": "The exchange law at a least loss: the spine's dissipation (each formation gives a closed family no more than it takes) and a least loss at each size (Flow.LosesAtSize: a formation taking at least 1/p of the unit loses at least 1/m of it, m the same at every step)."
+      "zh": "最小损失的交换律：脊柱的耗散（每个取用的形成给回封闭家族的至少比所取少下一步的一个单位；证明只用其不多于所取），以及每一尺度的最小损失（Flow.LosesAtSize：取用至少 1/p 单位的形成失去至少 1/m 单位，m 不随步变化）。",
+      "en": "The exchange law at a least loss: the spine's dissipation (each formation taking gives a closed family back at least one unit of the step after less than it takes; the proof uses only that it gives no more than it takes) and a least loss at each size (Flow.LosesAtSize: a formation taking at least 1/p of the unit loses at least 1/m of it, m the same at every step)."
     },
     {
       "zh": "世界的规律：活动的普查、每个关系项都体现、从 T 起每步被围住，与静止定理（continued-change-needs-openness）相同。交换的规律只对从 T 起固定的封闭家族陈述。",
       "en": "The world laws: a census of activity, every relatum embodied and every step from T on enclosed, as in the rest theorem (continued-change-needs-openness). The exchange law is stated for a fixed family closed from T on."
     },
     {
-      "zh": "储备的规律：从 T 起不被支持；活动可判定。最小花费（每个活跃的步至少 1/p 单位）是前提，是脊柱一单位下降的无单位对应。",
-      "en": "The reserve law: unsupported from T on; activity decidable. The least cost (at least 1/p of the unit at each active step) is a premise, the unit-free counterpart of the spine's one-unit fall."
+      "zh": "储备的规律：从 T 起不被支持；活动可判定。储备的最小下降（每个活跃的步至少 1/p 单位）是前提，是脊柱一单位下降的无单位对应；细分算入时，凡细分不给储备之处它就是脊柱的储备（Web.CarriesIn.lasts_unrefined，见 rest-with-refinement-counted）。",
+      "en": "The reserve law: unsupported from T on; activity decidable. The least fall of the reserve (at least 1/p of the unit at each active step) is a premise, the unit-free counterpart of the spine's one-unit fall; with the refinement counted, wherever it gives the reserve nothing the reserve is the spine's (Web.CarriesIn.lasts_unrefined, see rest-with-refinement-counted)."
     }
   ],
   "correspondence": {
-    "zh": "单位固定时的静止定理（continued-change-needs-openness）是 r = 1 并带脊柱一单位损失的情形；本结果说明那里的损失是由单位承载的一个量子，并给出每一分辨率下都成立的规律。作者的读法（AI 论证）：以第 T 步的单位计，所立者的总水平是一个有理量；细分单位以更细的分辨率表示量，而不改动力学；按比例的损失是效率的上界；1/p 是计数变化所用的尺度。在这一读法下，有界效率之下被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。所以“生起不息需要开放”不依赖表示的形式是：固定尺度的生起不息需要开放，或需要损失的比例趋于零。这回答了 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量与离散步的部分；连续时间与实数量仍开放。计数转移只需每一尺度的最小损失；计数关系项得到、失去、开始或终结的，需要对家族的比例，因为一整个单位可以由越来越多、越来越小的转移带过（Trickle）：只有损失随所转移的量成比例，分割才不能把损失分没。读法属于 Ren。",
-    "en": "The rest theorem with a fixed unit (continued-change-needs-openness) is the case r = 1 with the spine's one-unit loss; this result shows that the loss there is a quantum carried by the unit and gives the laws holding at every resolution. The author's reading (an AI argument): counted in the unit of step T, the total standing is a rational quantity; refining the unit represents amounts at finer resolution without changing the dynamics; loss in proportion is an upper bound on efficiency; 1/p is the size at which change is counted. On this reading, with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. So the form of ‘arising without end needs openness’ that does not depend on the representation is: arising without end at a fixed size needs openness, or a share of loss tending to zero. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness, ‘total standing with rates or continuous amounts’; continuous time and real amounts remain open. Counting transfers needs only a least loss at each size; counting what relata gain, lose, begin or end needs the family's share, since a whole unit can pass in ever more, ever smaller transfers (Trickle): only a loss in proportion to what is transferred cannot be split away. The readings are Ren's."
+    "zh": "单位固定时的静止定理（continued-change-needs-openness）是 r = 1 并带脊柱一单位损失的情形；本结果说明那里的损失是由单位承载的一个量子，并给出不算入细分时每一分辨率下成立的规律。Ren 2026-10-11 说每次交换至少一个最小差异属于生成本身（“A is right - because of change, there is difference”），并问零前提的情形（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；把单位的细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给（rest-with-refinement-counted）。作者的读法（AI 论证，待 Ren）：不算入细分时，以第 T 步的单位计，所立者的总水平是一个有理量，细分单位以更细的分辨率表示量；按比例的损失是效率的上界；1/p 是计数变化所用的尺度。在这一读法下，有界效率之下被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。这回答了 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量与离散步的部分；连续时间与实数量仍开放。计数转移只需每一尺度的最小损失；计数关系项得到的，需要多于每一尺度转移的最小损失，因为一整个单位可以由越来越多、越来越小的转移带过（Trickle）。对家族总和的前提不受分割影响：比例如此，第十五次独立审查的探针 ReplenishedLoses（被给予至少 1/p 单位的封闭家族至少失去 1/m 单位）也如此，它严格弱于比例而仍给出增长的规律；分割打败的只是逐个转移的前提。此前这里说计数关系项“需要对家族的比例”，“只有损失随所转移的量成比例，分割才不能把损失分没”，是过度的必要性陈述，按第十五次独立审查 W1 更正。",
+    "en": "The rest theorem with a fixed unit (continued-change-needs-openness) is the case r = 1 with the spine's one-unit loss; this result shows that the loss there is a quantum carried by the unit and gives the laws holding at every resolution without counting the refinement. On 11 October 2026 Ren said that a least difference at every exchange belongs to becoming itself (‘A is right - because of change, there is difference’) and asked about the case of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); with the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and the witnesses of this record are each fed by the refinement (rest-with-refinement-counted). The author's reading (an AI argument, pending Ren): without counting the refinement, the total standing counted in the unit of step T is a rational quantity, refining the unit representing amounts at finer resolution; loss in proportion is an upper bound on efficiency; 1/p is the size at which change is counted. On this reading, with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness, ‘total standing with rates or continuous amounts’; continuous time and real amounts remain open. Counting transfers needs only a least loss at each size; counting what relata gain needs more than a least loss at each size of transfer, since a whole unit can pass in ever more, ever smaller transfers (Trickle). A premise on the family's totals is immune to splitting: so is the proportion, and so is the fifteenth independent review's probe ReplenishedLoses (a closed family given at least 1/p of the unit loses at least 1/m of it), which is strictly weaker than the proportion and still gives the growth law; what splitting defeats is a premise per transfer. This passage earlier said that counting what relata gain ‘needs the family's share’ and that ‘only a loss in proportion to what is transferred cannot be split away’; both overclaimed necessity and are corrected following W1 of the fifteenth independent review."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
   "aliases": [
@@ -79,7 +79,19 @@
     "Becoming.Flow.LosesAtEverySize",
     "Becoming.Flow.exchange_bound_of_least_loss",
     "Becoming.Flow.exchange_not_recurring_of_least_loss",
-    "Becoming.growth_needs_proportion"
+    "Becoming.growth_needs_proportion",
+    "Becoming.refinedSum",
+    "Becoming.refinedSum_invariant",
+    "Becoming.counts_of_amounts",
+    "Becoming.Flow.uptake_bound",
+    "Becoming.Flow.replenishment_bound",
+    "Becoming.World.taken_bound",
+    "Becoming.World.given_bound",
+    "Becoming.amount_sharp",
+    "Becoming.throughput_needs_proportion",
+    "Becoming.Asymptote.not_balanced",
+    "Becoming.Emission.not_balanced",
+    "Becoming.Alternation.not_balanced"
   ],
   "dependencies": [
     {
@@ -166,65 +178,72 @@
         "zh": "计划 R1：表示的范围之一，量的单位；这不是无公理的整体演绎。",
         "en": "Plan R1: one dimension of the representation's scope, the unit of amounts; this is not the deduction of the whole without axioms."
       }
+    },
+    {
+      "id": "rest-with-refinement-counted",
+      "detail": {
+        "zh": "那里把细分算作只给不取的形成，脊柱的前提不添前提就带来每一分辨率下的静止，本记录的见证都由细分供给；本记录是不算入细分时的规律。",
+        "en": "There the splitting of the unit is counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and this record's witnesses are fed by the refinement; this record gives the laws without counting it."
+      }
     }
   ],
   "counterexamples": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Asymptote：失去所取用的全部，按每个比例耗散，池每步封闭，取用者每步受支持；恰在单位无尽地细分时取用无尽（Asymptote.exchange_recurs_iff），所取用的缩小到每个量子之下。所以最小尺度不能去掉。",
-        "en": "Asymptote: losing all it takes, dissipative by every share, the pool closed and the drawer supported at every step; taking continues without end exactly where the unit splits without end (Asymptote.exchange_recurs_iff), what is taken shrinking below every quantum. So the least size cannot be dropped."
+        "zh": "Asymptote：失去所取用的全部，按每个比例耗散，池每步封闭，取用者每步受支持；恰在单位无尽地细分时取用无尽（Asymptote.exchange_recurs_iff），所取用的缩小到每个量子之下，流在固定单位下不平衡（Asymptote.not_balanced）。所以最小尺度不能去掉。算入细分，细分供给它（refinement_feeds_witnesses）。",
+        "en": "Asymptote: losing all it takes, dissipative in every proportion, the pool closed and the drawer supported at every step; taking continues without end exactly where the unit splits without end (Asymptote.exchange_recurs_iff), what is taken shrinking below every quantum, and the flow does not balance at the fixed unit (Asymptote.not_balanced). So the least size cannot be dropped. Counted, the refinement feeds it (refinement_feeds_witnesses)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
         "zh": "Circulation：所立者被列出、平衡于减半的单位、耗散、每步围住所立者，每步交换第 0 步的一整个单位；由交换的规律，它不按任何比例耗散（Circulation.not_dissipativeBy）。所以单位固定时交换的静止（World.exchange_stops）依赖量子，而按比例的损失不能去掉。",
-        "en": "Circulation: what stands listed, balanced at a halving unit, dissipative, every step enclosed around what stands, one whole unit of step 0 exchanged at every step; by the exchange law it is dissipative by no share (Circulation.not_dissipativeBy). So the exchange's rest with a fixed unit (World.exchange_stops) relies on the quantum, and loss in proportion cannot be dropped."
+        "en": "Circulation: what stands listed, balanced at a halving unit, dissipative, every step enclosed around what stands, one whole unit of step 0 exchanged at every step; by the exchange law it is dissipative in no proportion (Circulation.not_dissipativeBy). So the exchange's rest with a fixed unit (World.exchange_stops) relies on the quantum, and loss in proportion cannot be dropped."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Emission：满足 World.rests_enclosed 的全部前提，只是平衡在减半的单位下，并按比例耗散（给回所取用的一半），每步生起一个新关系项，立于下一步的一个单位。所以静止定理依赖量子，按比例的损失没有最小尺度时也不足够。",
-        "en": "Emission: meets every premise of World.rests_enclosed but with balance at a halving unit, and is dissipative in proportion (giving back half of what it takes), with a new relatum arising at every step, standing at one unit of the step after. So the rest theorem relies on the quantum, and loss in proportion without a least size does not suffice."
+        "zh": "Emission：满足 World.rests_enclosed 的全部前提，只是平衡在减半的单位下，并按比例耗散（给回所取用的一半），每步生起一个新关系项，立于下一步的一个单位；世界在固定单位下不平衡（Emission.not_balanced）。所以静止定理依赖量子，按比例的损失没有最小尺度时也不足够。",
+        "en": "Emission: meets every premise of World.rests_enclosed but with balance at a halving unit, and is dissipative in proportion (giving back half of what it takes), with a new relatum arising at every step, standing at one unit of the step after; the world does not balance at the fixed unit (Emission.not_balanced). So the rest theorem relies on the quantum, and loss in proportion without a least size does not suffice."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Alternation：满足 World.rests_enclosed 的全部前提，只是平衡在减半的单位下，两侧轮流生起第 0 步的一整个单位；由增长的规律，它不按任何比例耗散（Alternation.not_dissipativeBy）。所以最小尺度没有按比例的损失时也不足够。",
-        "en": "Alternation: meets every premise of World.rests_enclosed but with balance at a halving unit, the two sides arising with one whole unit of step 0 in turn; by the growth law it is dissipative by no share (Alternation.not_dissipativeBy). So a least size without loss in proportion does not suffice."
+        "zh": "Alternation：满足 World.rests_enclosed 的全部前提，只是平衡在减半的单位下，两侧轮流生起第 0 步的一整个单位；由增长的规律，它不按任何比例耗散（Alternation.not_dissipativeBy），世界在固定单位下不平衡（Alternation.not_balanced）。所以最小尺度没有按比例的损失时也不足够。",
+        "en": "Alternation: meets every premise of World.rests_enclosed but with balance at a halving unit, the two sides arising with one whole unit of step 0 in turn; by the growth law it is dissipative in no proportion (Alternation.not_dissipativeBy), and the world does not balance at the fixed unit (Alternation.not_balanced). So a least size without loss in proportion does not suffice."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Dwindle：单位每步减半，一个从不被支持的形成每步都活跃，储备以当步单位计为 2^t + 1，在更细单位下每步下降（Dwindle.carriesIn），以第 0 步单位计从上方趋于一个单位，永不到零；对任何 p，每个活跃的步不都花去 1/p 单位（Dwindle.not_carriesAt、reserve_needs_quantum）。单位固定时这样的储备就是脊柱的储备（Web.carriesIn_one），由 Web.Carries.lasts 不能如此。所以储备推迟终结而不逃脱依赖量子，每一分辨率下要每步的最小花费。",
-        "en": "Dwindle: at a unit halving at each step, a formation never supported is active at every step, its reserve, 2^t + 1 in the unit of step t, falling in the finer unit at each step (Dwindle.carriesIn) and tending from above to one unit of step 0, never reaching zero; for no p does each active step cost 1/p of the unit (Dwindle.not_carriesAt, reserve_needs_quantum). With the unit fixed such a reserve is the spine's (Web.carriesIn_one), which Web.Carries.lasts forbids. So that a reserve defers the end without escaping it relies on the quantum, and at every resolution needs a least cost at each step."
+        "zh": "Dwindle：单位每步减半，一个从不被支持的形成每步都活跃，储备以当步单位计为 2^t + 1，在更细单位下每步下降（Dwindle.carriesIn），以第 0 步单位计从上方趋于一个单位，永不到零；对任何 p，每个活跃的步不都使储备下降 1/p 单位（Dwindle.not_carriesAt、reserve_needs_quantum）。单位固定时这样的储备就是脊柱的储备（Web.carriesIn_one），由 Web.Carries.lasts 不能如此。所以储备推迟终结而不逃脱依赖量子，每一分辨率下要每个活跃的步储备的最小下降；算入细分，细分每步给予这个储备（refinement_feeds_witnesses）。",
+        "en": "Dwindle: at a unit halving at each step, a formation never supported is active at every step, its reserve, 2^t + 1 in the unit of step t, falling in the finer unit at each step (Dwindle.carriesIn) and tending from above to one unit of step 0, never reaching zero; for no p does each active step lower the reserve by 1/p of the unit (Dwindle.not_carriesAt, reserve_needs_quantum). With the unit fixed such a reserve is the spine's (Web.carriesIn_one), which Web.Carries.lasts forbids. So that a reserve defers the end without escaping it relies on the quantum, and at every resolution needs a least fall of the reserve at each active step; counted, the refinement gives this reserve something at every step (refinement_feeds_witnesses)."
       }
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "detail": {
-        "zh": "Trickle：单位每步分为四个；两侧轮流持有第 0 步的一整个单位，第 t 步由 2^t 个水平为零的转移者分成 2^t 份交给另一侧，每份失去下一步的两个单位。它有普查、关系项都体现、平衡、耗散、每步被围住；每一尺度都有最小损失（Trickle.losesAtEverySize），每个固定尺度的转移停止（Trickle.exchange_stops）；一整个单位在任意晚的步生起，不按任何比例耗散（Trickle.not_dissipativeBy、growth_needs_proportion）。所以每一尺度的最小损失给出交换的规律，不给出增长的规律。转移者不活跃；要求只有活跃者取用的变体没有构造。",
-        "en": "Trickle: at a unit quartering at each step, two sides hold one whole unit of step 0 in turn, and at step t it passes to the other side in 2^t parts carried by 2^t carriers standing at nothing, each part losing two units of the step after. It has a census, embodied relata, balance, dissipation and every step enclosed; every size has a least loss (Trickle.losesAtEverySize) and transfers of each fixed size stop (Trickle.exchange_stops); a whole unit arises at arbitrarily late steps, with no share lost (Trickle.not_dissipativeBy, growth_needs_proportion). So a least loss at each size gives the exchange law but not the growth law. The carriers are not active; a variant in which only active formations take is not constructed."
+        "zh": "Trickle：单位每步分为四个；两侧轮流持有第 0 步的一整个单位，第 t 步由 2^t 个水平为零的通道（Trickle.conduits）分成 2^t 份交给另一侧，每份失去下一步的两个单位。它有普查、关系项都体现、平衡、耗散、每步被围住；每一尺度都有最小损失（Trickle.losesAtEverySize），每个固定尺度的转移停止（Trickle.exchange_stops）；一整个单位在任意晚的步生起，不按任何比例耗散（Trickle.not_dissipativeBy、growth_needs_proportion）。被取走的总量超过第 0 步单位的每个倍数（Trickle.throughput_unbounded、throughput_needs_proportion）。所以每一尺度的最小损失给出交换的规律，不给出增长的规律与量的规律；第十五次独立审查的探针表明 Trickle 所用的是每步无界多的转移（growth_needs_bounded_transfers，未移入核心）。通道不活跃；要求只有活跃者取用的变体没有构造。",
+        "en": "Trickle: at a unit quartering at each step, two sides hold one whole unit of step 0 in turn, and at step t it passes to the other side in 2^t parts carried by 2^t conduits standing at nothing (Trickle.conduits), each part losing two units of the step after. It has a census, embodied relata, balance, dissipation and every step enclosed; every size has a least loss (Trickle.losesAtEverySize) and transfers of each fixed size stop (Trickle.exchange_stops); a whole unit arises at arbitrarily late steps, with no proportion lost (Trickle.not_dissipativeBy, growth_needs_proportion). Everything taken from the two sides grows past every multiple of the unit of step 0 (Trickle.throughput_unbounded, throughput_needs_proportion). So a least loss at each size gives the exchange law but neither the growth law nor the amount law; the fifteenth independent review's probes show that what Trickle uses is unboundedly many transfers within one step (growth_needs_bounded_transfers, not moved into the core). The conduits are not active; a variant in which only active formations take is not constructed."
       }
     }
   ],
   "limitations": {
-    "zh": "离散步；量是细分后的有理数，单位不变粗，不含实数量与连续时间；界是否可达未证；交换的规律只对从 T 起固定的封闭家族陈述，没有以变化的围住读于世界；按比例的损失与储备的最小花费是前提，作为物理对应的根据未审；比对家族的比例更弱而仍给出增长的规律的前提没有陈述；Trickle 的转移者不活跃；其余见证只有一两个关系项，说明前提彼此独立，不描述实际系统；“不复现”是复现的否定，不是某步之后不再发生；不含伦理谓词；尚无独立审查；名称与读法属于 Ren。",
-    "en": "Discrete steps; amounts are rationals by refinement, the unit never coarsening, with neither real amounts nor continuous time; whether the bounds are attained is not proved; the exchange law is stated for a fixed family closed from T on, not read of worlds with changing enclosures; loss in proportion and the reserve's least cost are premises whose physical warrant is not reviewed; no premise weaker than the family's share is stated that still gives the growth law; the carriers of Trickle are not active; the other witnesses have one or two relata and show the premises independent, not describing actual systems; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; no ethical predicate; not yet independently reviewed; names and readings are Ren's."
+    "zh": "离散步；量是细分后的有理数，单位不变粗，不含实数量与连续时间；量的规律的界是最小的（amount_sharp），计数的界是否可达未证（第十五次独立审查的探针 Tight.attained 给出交换的界在 p = q = S = 1 时达到，未移入核心）；交换的规律只对从 T 起固定的封闭家族陈述，没有以变化的围住读于世界；按比例的损失与储备的最小下降是前提，Ren 未采用为理论的前提，作为研究笔记保留；比对家族的比例更弱而仍给出增长的规律的前提由审查的探针给出（ReplenishedLoses），未移入核心；Trickle 的通道不活跃；Asymptote、Circulation 与 Dwindle 只有一个关系项，Alternation 两个，Emission 每步加入一个；每个见证说明在其余前提之下它所缺的前提是需要的，不说明全部前提彼此独立，不描述实际系统；“不复现”是复现的否定，不是某步之后不再发生；不含伦理谓词；读法（AI，待 Ren）。",
+    "en": "Discrete steps; amounts are rationals by refinement, the unit never coarsening, with neither real amounts nor continuous time; the amount law's bound is the least (amount_sharp), while whether the counting bounds are attained is not proved in the core (the fifteenth independent review's probe Tight.attained attains the exchange bound at p = q = S = 1, not moved into the core); the exchange law is stated for a fixed family closed from T on, not read of worlds with changing enclosures; loss in proportion and the least fall of the reserve are premises Ren did not take for the theory, kept as research notes; a premise weaker than the family's proportion that still gives the growth law is given by the review's probes (ReplenishedLoses), not moved into the core; the conduits of Trickle are not active; Asymptote, Circulation and Dwindle have one relatum, Alternation two, and Emission adds one at every step; each witness shows the premise it lacks is needed given the others, not that all premises are mutually independent, and none describes an actual system; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; no ethical predicate; readings are the AI's, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T171040.121853Z）：Becoming.Resolution 的 200 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 35 个模块，核心闭包 37 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261010T171427.598973Z 通过。尚无独立审查；作者反审见整合文档 §59、§59.1 与 §59.2。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T171040.121853Z): the 200 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 35 modules over a core closure of 37, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261010T171427.598973Z passed. Not yet independently reviewed; the author's counterreview is in sections 59, 59.1 and 59.2 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T180948.563939Z）：Becoming.Resolution 的 261 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 35 个模块，核心闭包 37 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261010T182121.048951Z 通过。R1、R1b 与 R2 经第十五次独立审查（BECOMING-R1-R2-REVIEW.md），其发现在整合文档 §59.4 处理；R3 与 §59.4 的更正尚无独立审查；作者反审见整合文档 §59 至 §59.4。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T180948.563939Z): the 261 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 35 modules over a core closure of 37, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261010T182121.048951Z passed. R1, R1b and R2 were checked by the fifteenth independent review (BECOMING-R1-R2-REVIEW.md), its findings handled in section 59.4 of the integration note; R3 and the corrections of section 59.4 are not yet independently reviewed; the author's counterreview is in sections 59 to 59.4."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "374611f290cc9ecc2e87fda1ec702292db34862e7d63471ae5f298e8822c1966",
+      "sha256": "2081df33e3e504e5ca88f94650517a80bafb64bdc30c39f86e398ac28b02bf63",
       "declarations": [
         "Becoming.mul_regroup",
         "Becoming.mul_turn",
@@ -242,6 +261,12 @@
         "Becoming.quantum_step",
         "Becoming.quantum_bound",
         "Becoming.quantum_not_recurring",
+        "Becoming.refinedSum",
+        "Becoming.refinedSum_invariant",
+        "Becoming.refinedSum_mono",
+        "Becoming.refinedSum_mul",
+        "Becoming.refinedSum_marks",
+        "Becoming.counts_of_amounts",
         "Becoming.Flow.quantum_bound",
         "Becoming.Flow.quantum_not_recurring",
         "Becoming.Flow.takes_loses",
@@ -259,8 +284,12 @@
         "Becoming.Flow.BalancesAt.gain_given",
         "Becoming.Flow.total_mul_right",
         "Becoming.Flow.BalancesAt.gainers_lose",
+        "Becoming.Flow.BalancesAt.gainers_le",
         "Becoming.Flow.BalancesAt.lowersTaking",
+        "Becoming.Flow.uptake_bound",
+        "Becoming.Flow.replenishment_bound",
         "Becoming.Flow.takersAbove",
+        "Becoming.Flow.takersAbove_le",
         "Becoming.Flow.BalancesAt.takers_lose",
         "Becoming.Flow.exchange_bound",
         "Becoming.Flow.exchange_not_recurring",
@@ -274,6 +303,9 @@
         "Becoming.Flow.losesAtSize_of_each",
         "Becoming.Flow.BalancesAt.loss_taken",
         "Becoming.Flow.BalancesAt.losers_lose",
+        "Becoming.Flow.BalancesAt.losers_le",
+        "Becoming.World.taken_bound",
+        "Becoming.World.given_bound",
         "Becoming.World.growth_bound",
         "Becoming.World.growth_not_recurring",
         "Becoming.World.arising_not_recurring",
@@ -290,6 +322,11 @@
         "Becoming.quarter",
         "Becoming.quarter_eq",
         "Becoming.halving_pos",
+        "Becoming.quarter_pos",
+        "Becoming.powers",
+        "Becoming.powers_pos",
+        "Becoming.bernoulli_powers",
+        "Becoming.powers_outgrow",
         "Becoming.Asymptote.refinement",
         "Becoming.Asymptote.units",
         "Becoming.Asymptote.flow",
@@ -306,6 +343,14 @@
         "Becoming.Asymptote.falls",
         "Becoming.Asymptote.exchange_recurs_iff",
         "Becoming.Asymptote.taking_recurs",
+        "Becoming.Asymptote.not_balanced",
+        "Becoming.Geometric.flow",
+        "Becoming.Geometric.web",
+        "Becoming.Geometric.balances",
+        "Becoming.Geometric.closed",
+        "Becoming.Geometric.dissipativeBy",
+        "Becoming.Geometric.uptake",
+        "Becoming.Geometric.exact",
         "Becoming.Circulation.spare",
         "Becoming.Circulation.units",
         "Becoming.Circulation.flow",
@@ -353,6 +398,7 @@
         "Becoming.Emission.taking",
         "Becoming.Emission.dissipativeBy",
         "Becoming.Emission.arises_small",
+        "Becoming.Emission.not_balanced",
         "Becoming.Alternation.level",
         "Becoming.Alternation.flow",
         "Becoming.Alternation.web",
@@ -372,14 +418,15 @@
         "Becoming.Alternation.arising_whole",
         "Becoming.Alternation.arising_recurs",
         "Becoming.Alternation.not_dissipativeBy",
+        "Becoming.Alternation.not_balanced",
         "Becoming.Dwindle.web",
         "Becoming.Dwindle.reserve",
         "Becoming.Dwindle.unsupported",
         "Becoming.Dwindle.carriesIn",
         "Becoming.Dwindle.not_carriesAt",
         "Becoming.Trickle.Relatum",
-        "Becoming.Trickle.carriers",
-        "Becoming.Trickle.carriers_length",
+        "Becoming.Trickle.conduits",
+        "Becoming.Trickle.conduits_length",
         "Becoming.Trickle.side",
         "Becoming.Trickle.level",
         "Becoming.Trickle.flow",
@@ -402,8 +449,8 @@
         "Becoming.Trickle.off_sides",
         "Becoming.Trickle.sides_total",
         "Becoming.Trickle.holder_takes",
-        "Becoming.Trickle.carrier_mem",
-        "Becoming.Trickle.first_carrier",
+        "Becoming.Trickle.conduit_mem",
+        "Becoming.Trickle.first_conduit",
         "Becoming.Trickle.isHolder",
         "Becoming.Trickle.holder_mem",
         "Becoming.Trickle.given_total",
@@ -420,12 +467,16 @@
         "Becoming.Trickle.exchange_stops",
         "Becoming.Trickle.arising_whole",
         "Becoming.Trickle.not_dissipativeBy",
+        "Becoming.Trickle.uptake",
+        "Becoming.Trickle.throughput_unbounded",
         "Becoming.arising_needs_quantum",
         "Becoming.arising_needs_proportion",
         "Becoming.exchange_needs_quantum",
         "Becoming.rest_needs_quantum",
         "Becoming.reserve_needs_quantum",
-        "Becoming.growth_needs_proportion"
+        "Becoming.growth_needs_proportion",
+        "Becoming.amount_sharp",
+        "Becoming.throughput_needs_proportion"
       ]
     },
     {
@@ -537,31 +588,43 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "46065a8d10ed657c0099bee88ff74d6a071a8af1c9943c12b7d2bd573802bd62",
+      "sha256": "d890f37c9e70643294341fc2f3f870534bd0d32065361ba62d8b0d0325b94992",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "8018ff5e8ead0760964d46a2ba7d0e630cbbd6ff41e00b190ac9de4c2bdf9fa9",
+      "sha256": "ff83a80fc3f2936b51e6b2ba04df70b9015ea74f4e9037d01c3478fbd73afbe6",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "c4df7e79e34c75ef112347cc3c85d3d24620c2c88157bebaa70f80e2991c0315",
+      "sha256": "16a7e6321163d0930ec080a459f7bb5cabb399ccb1b86db332ccc823d83f032f",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "e846a226e8ab5af80d22022b18f5c4422796ff7e3f4023973f54118a0b57cd0c",
+      "sha256": "795e3b6fee5538bda35059564970d271e10ece2d59462242c5ee7cf014a93cc0",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md",
       "role": "provenance",
       "sha256": "80bacdae44c98994e4a56c825eceabf18edbca59abcb00c773ec74a1f8c552c2",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md",
+      "role": "provenance",
+      "sha256": "e7db91d68b6d7671395df3e83329c6b5cdb11624ecdff252a9479cc01e89fb92",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md",
+      "role": "review",
+      "sha256": "d8d00e93582c7d7afb59c504563c7a2b28cb9a6f15e18134cfdf4eba4d55ccfa",
       "declarations": []
     }
   ],
@@ -631,8 +694,8 @@
     }
   ],
   "next_delta": {
-    "zh": "界是否可达；以变化的围住读于世界的交换的规律；连续时间与实数量；对家族的比例是否是合适的前提（Ren），以及介于每一尺度的最小损失与它之间的前提；独立审查。",
-    "en": "Whether the bounds are attained; the exchange law read of worlds with changing enclosures; continuous time and real amounts; whether the family's share is the right premise (Ren), and premises between a least loss at each size and it; an independent review."
+    "zh": "研究笔记（Ren 2026-10-11：“they seem to be good research subjects, but this is separate matter, we can leave a note”）：计数的界是否可达；以变化的围住读于世界的交换的规律；比例之下的增长常数是否可更小；审查探针中更弱的前提（ReplenishedLoses、NotGaining、只要求家族不被增益的量子规律）与逐个形成的比例（EachShare）是否移入核心；连续时间与实数量；活跃的通道。",
+    "en": "Research notes (Ren, 11 October 2026: ‘they seem to be good research subjects, but this is separate matter, we can leave a note’): whether the counting bounds are attained; the exchange law read of worlds with changing enclosures; whether the growth constant under the proportion can be smaller; whether the review's weaker premises (ReplenishedLoses, NotGaining, the quantum law asking only that the family is not gained on) and the per-formation proportion (EachShare) move into the core; continuous time and real amounts; active conduits."
   },
   "history": [
     {
@@ -650,6 +713,14 @@
     {
       "zh": "2026-10-10 P45：验证范围重新指向合并检查器回执 20261010T171040.121853Z 与外围回执 20261010T171427.598973Z（每个选择之下所选前提都起约束时计数的规律：Counting 与 Premises 新增声明）；所引模块的定理数改为该回执的数目（Premises 59、Counting 161）。断言不变。",
       "en": "2026-10-10 P45: validation scope re-pointed to consolidated receipt 20261010T171040.121853Z and periphery receipt 20261010T171427.598973Z (the laws of counting where the premises of each selection bind: declarations added to Counting and Premises); the module counts cited are now that receipt's (Premises 59, Counting 161). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R3：加入量的规律（refinedSum、refinedSum_invariant、Flow.uptake_bound、Flow.replenishment_bound、World.taken_bound、World.given_bound）与其最小性（Geometric、amount_sharp）；交换、增长与下降的规律改由量的规律经 counts_of_amounts 证明，陈述不变；Trickle 中被取走的总量没有界（throughput_needs_proportion）；见整合文档 §59.3。",
+      "en": "2026-10-11 R3: adds the amount law (refinedSum, refinedSum_invariant, Flow.uptake_bound, Flow.replenishment_bound, World.taken_bound, World.given_bound) and that its bound is the least (Geometric, amount_sharp); the exchange, growth and fall laws are now proved from the amount law through counts_of_amounts, their statements unchanged; in Trickle everything taken grows without bound (throughput_needs_proportion); see section 59.3 of the integration note."
+    },
+    {
+      "zh": "2026-10-11 R4：整合第十五次独立审查（BECOMING-R1-R2-REVIEW.md）：更正过度的必要性陈述（W1）、量子规律缺少的耗散前提（W4）、最小损失交换律的耗散释义（W5）、量词与范围（W8：“可以无尽地继续”，“每一固定尺度的静止”）、见证的关系项（W9）、名称（W10：储备的最小下降、比例、Trickle 的通道）与读法的出处；边界定理加入在固定单位下不平衡（Asymptote.not_balanced、Emission.not_balanced、Alternation.not_balanced）；按 Ren 2026-10-11 选择 A，本记录作为不算入细分时的研究笔记，细分算入的一线见 rest-with-refinement-counted；见整合文档 §59.4。",
+      "en": "2026-10-11 R4: integrates the fifteenth independent review (BECOMING-R1-R2-REVIEW.md): corrects the overclaimed necessity (W1), the dissipation missing from the quantum law (W4), the gloss of dissipation in the least-loss exchange law (W5), quantifiers and scope (W8: ‘can continue without end’, ‘rest at each size’), the witnesses' relata (W9), names (W10: the least fall of the reserve, proportion, Trickle's conduits) and the provenance of readings; the boundary theorems add that the witnesses do not balance at the fixed unit (Asymptote.not_balanced, Emission.not_balanced, Alternation.not_balanced); following Ren's choice of A on 11 October 2026, this record holds the research notes without counting the refinement, the line counting it being rest-with-refinement-counted; see section 59.4 of the integration note."
     }
   ]
 }

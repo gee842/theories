@@ -246,21 +246,31 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
   openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
   at every exchange; letting the unit split into finer units across each step separates
-  the dynamics from that quantum. Whatever the refinement, the times a closed family loses
-  at least `1/q` of the unit number at most `q` times its stock (the loss law). Where every
-  closed family loses a fixed share of what is taken from it, the times a formation takes,
-  and the
-  times a relatum gains, falls, arises or ceases, at least `1/p` of the unit, inside an
-  enclosure, are bounded by the standing, so they do not recur at any resolution: the rest
-  theorem at every resolution. Where each active step beyond support costs at least `1/p`
+  the dynamics from that quantum. Splitting the unit is itself a change: counted as one more
+  formation, which gives each condition the finer units the splitting adds and takes
+  nothing, balance at a refining unit is the spine's balance, and the refinement gives
+  without taking, which the spine's dissipation excludes. So, read with the refinement
+  counted, the spine's premises bring rest at every resolution with no premise added: where
+  every step from some step on is enclosed and dissipated on with it counted, neither
+  arising nor ceasing recurs, and continued arising needs openness. Without counting it,
+  the same holds wherever the refinement gives nothing, and each witness below is fed by
+  it. Whatever the refinement, the steps at which a closed family dissipated on loses at
+  least `1/q` of the unit number at most `q` times its stock (the quantum law). Kept as
+  research notes beside this line: where every closed family loses at least a `(q + 1)`th
+  of what is taken from it, everything taken from a family closed from some step, in all,
+  is at most `q + 1` times its stock there, and no smaller multiple holds (the amount law);
+  so takings of at least `1/p` of the unit from a family closed from some step are bounded
+  by its stock, and gains, falls, arisings and ceasings of at least `1/p` of the unit
+  inside an enclosure by the total standing, and none recurs: rest at each size, at every
+  resolution. Where each active step beyond support lowers the reserve by at least `1/p`
   of the unit, a reserve defers the end. At a unit splitting without end each boundary is
-  attained: without a least size a closed pool is taken from, and a new relatum arises
+  witnessed: without a least size a closed pool is taken from, and a new relatum arises
   inside an enclosure, without end, at sizes shrinking without bound; without loss in
   proportion one whole unit is exchanged, or arises in turn inside an enclosure, without
-  end, its losses shrinking without bound; without a least cost an unsupported formation
-  is active at every step, its reserve falling at each. A least loss at each size bounds
-  the takings of that size, but not growth: a whole unit can pass in ever more, ever
-  smaller transfers without end.
+  end, its losses shrinking without bound; without a least fall of the reserve an
+  unsupported formation is active at every step, its reserve falling at each. A least loss
+  at each size bounds the takings of that size, but neither growth nor the amount: a whole
+  unit can pass in ever more, ever smaller transfers without end.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed

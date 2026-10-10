@@ -1,0 +1,149 @@
+@Becoming.Neutral.within : ∀ {I : Type} {rule : I → Prop},
+  Becoming.Neutral rule → ∀ (bound : I → Prop), Becoming.Within bound rule
+@Becoming.Valuation.seed_of_selfGood : ∀ {Pos C : Type} {V : Becoming.Valuation Pos C} {p : Pos} {c : C},
+  V.SelfGood p → V.own p c → V.living c → V.Seed
+@Becoming.Valuation.transmits_invariant : ∀ {Pos C : Type} {V : Becoming.Valuation Pos C},
+  Becoming.Neutral V.transmits → ∀ (p : Pos), Becoming.Invariant V.relations (V.sig p)
+@Becoming.Valuation.reaches : ∀ {Pos C : Type} {V : Becoming.Valuation Pos C},
+  Becoming.Neutral V.transmits → ∀ {p : Pos} {c d : C}, Becoming.Reach V.relations c d → V.sig p c → V.sig p d
+@Becoming.Valuation.significant_of_grounds : ∀ {Pos C : Type} {V : Becoming.Valuation Pos C},
+  V.Connected → V.Grounds → V.Significant
+@Becoming.Valuation.significant_iff : ∀ {Pos C : Type} {V : Becoming.Valuation Pos C},
+  V.Connected → ∀ (p₀ : Pos) {c₀ : C}, V.living c₀ → (V.Significant ↔ V.Grounds)
+@Becoming.Valuation.g0 : ∀ {S A C Pos : Type} (F : Becoming.Frame S A C) {V : Becoming.Valuation Pos C},
+  V.Significant → Becoming.G0 F V.living fun x c => ∀ (p : Pos), V.sig p c
+@Becoming.positioned_articulation_of_articulates : ∀ {C Pos H R : Type} {V : Becoming.Valuation Pos C}
+  {access : Pos → R → Prop} {admitted : R → H → Prop} {before : H → C → Prop} {Reason : Pos → R → Prop},
+  Becoming.Neutral (Becoming.articulates V access admitted before Reason) →
+    Becoming.PositionedArticulation access admitted before (fun x c => ∀ (p : Pos), V.sig p c) Reason
+@Becoming.universal_reason : ∀ {S A C Pos R : Type} {k : Nat} (F : Becoming.Frame S A C) (V : Becoming.Valuation Pos C)
+  (before : S → C → Prop) {safe : S → A → S → Prop} {sense : S → A → S → Fin k} {response : R → List A} {B : S → Prop}
+  (access Reason : Pos → Generative.InquirySufficiency.Policy A R k → Prop),
+  V.Grounds →
+    V.Connected →
+      Becoming.Neutral (Becoming.articulates V access (Becoming.Scope F.P sense response B) before Reason) →
+        ∀ (policy : Generative.InquirySufficiency.Policy A R k),
+          Generative.InquirySufficiency.Sound F.P safe (Becoming.Novel F V.living before) sense response policy B →
+            ∀ (p : Pos), access p policy → Reason p policy
+@Becoming.LiftBetter.trans : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s : S} {a b c : A},
+  (∀ {x y z : S}, better x y → better y z → better x z) →
+    Becoming.LiftBetter F better s a b →
+      Becoming.LiftBetter F better s b c → Generative.Enabled F.P s b → Becoming.LiftBetter F better s a c
+@Becoming.LiftBetter.irrefl : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s : S} {a : A},
+  (∀ (x : S), ¬better x x) → Generative.Enabled F.P s a → ¬Becoming.LiftBetter F better s a a
+@Becoming.LiftBetter.some : ∀ {S A C : Type} {F : Becoming.Frame S A C} {better : S → S → Prop} {s : S} {a b : A},
+  Becoming.LiftBetter F better s a b →
+    Generative.Enabled F.P s a → Generative.Enabled F.P s b → ∃ t t', F.P.step s a t ∧ F.P.step s b t' ∧ better t t'
+@Becoming.Conditions.connected_of_common : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop) (c₀ : Cond),
+  (∀ (e : F × Nat), (K.valuation r own sig).living e → RelationalRenewal.Participates (K.along r) e.fst c₀) →
+    (K.valuation r own sig).Connected
+@Becoming.Conditions.significant_iff_of_common : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop) (c₀ : Cond),
+  (∀ (e : F × Nat), (K.valuation r own sig).living e → RelationalRenewal.Participates (K.along r) e.fst c₀) →
+    ∀ (p₀ : Pos) {e₀ : F × Nat},
+      (K.valuation r own sig).living e₀ → ((K.valuation r own sig).Significant ↔ (K.valuation r own sig).Grounds)
+@Becoming.Conditions.consumption_relates : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop) {f : F},
+  RelationalRenewal.ConsumingIn (K.along r) f →
+    ∃ g T,
+      (∀ (t : Nat), T ≤ t → ¬RelationalRenewal.Supported (K.along r) t g) ∧
+        ∀ (t t' : Nat), (K.valuation r own sig).related (f, t) (g, t')
+@Becoming.Conditions.valuing_consumption_reaches : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop),
+  Becoming.Neutral (K.valuation r own sig).transmits →
+    ∀ {f : F},
+      RelationalRenewal.ConsumingIn (K.along r) f →
+        ∃ g T,
+          (∀ (t : Nat), T ≤ t → ¬RelationalRenewal.Supported (K.along r) t g) ∧
+            ∀ (p : Pos) (t t' : Nat),
+              (K.valuation r own sig).sig p (f, t) →
+                (K.valuation r own sig).living (g, t') → (K.valuation r own sig).sig p (g, t')
+Becoming.Separate.stays : ∀ (e e' : Bool × Nat),
+  (∃ c, (Becoming.Separate.same e.fst c ∨ False) ∧ (Becoming.Separate.same e'.fst c ∨ False)) →
+    e.fst = false → e'.fst = false
+Becoming.Separate.not_connected : ∀ (own sig : Unit → Bool × Nat → Prop),
+  ¬(Becoming.Separate.conditions.valuation Becoming.Separate.still own sig).Connected
+@Becoming.Web.connected_of_common : ∀ {Pos F Cond : Type} (W : Becoming.Web F Cond) (own sig : Pos → F × Nat → Prop)
+  (c₀ : Cond),
+  (∀ (e : F × Nat), (W.valuation own sig).living e → W.Participates e.snd e.fst c₀) → (W.valuation own sig).Connected
+@Becoming.Web.significant_iff_of_common : ∀ {Pos F Cond : Type} (W : Becoming.Web F Cond)
+  (own sig : Pos → F × Nat → Prop) (c₀ : Cond),
+  (∀ (e : F × Nat), (W.valuation own sig).living e → W.Participates e.snd e.fst c₀) →
+    ∀ (p₀ : Pos) {e₀ : F × Nat},
+      (W.valuation own sig).living e₀ → ((W.valuation own sig).Significant ↔ (W.valuation own sig).Grounds)
+@Becoming.Web.breaking_relates : ∀ {Pos F Cond : Type} (W : Becoming.Web F Cond) (own sig : Pos → F × Nat → Prop)
+  {f g : F} {t : Nat} {c : Cond},
+  W.draws t f c →
+    W.Broken t g c →
+      ¬(W.valuation own sig).living (f, t) ∧
+        ∀ (t' : Nat), W.Participates t' g c → (W.valuation own sig).related (f, t) (g, t')
+@Becoming.Web.valuing_breaking_reaches : ∀ {Pos F Cond : Type} (W : Becoming.Web F Cond)
+  (own sig : Pos → F × Nat → Prop),
+  Becoming.Neutral (W.valuation own sig).transmits →
+    ∀ {f g : F} {t : Nat} {c : Cond},
+      W.draws t f c →
+        W.Broken t g c →
+          ∀ {p : Pos},
+            (W.valuation own sig).sig p (f, t) →
+              ∀ {t' : Nat},
+                W.Participates t' g c → (W.valuation own sig).living (g, t') → (W.valuation own sig).sig p (g, t')
+@Becoming.Web.living_iff_relations : ∀ {Pos F Cond : Type} (W : Becoming.Web F Cond) (own sig : Pos → F × Nat → Prop)
+  (own' sig' : Pos → F × Cond × Nat → Prop) (f : F) (t : Nat),
+  (W.valuation own sig).living (f, t) ↔
+    W.active t f ∧ ∀ (c : Cond), W.Participates t f c → (W.relations own' sig').living (f, c, t)
+Becoming.Mixed.dependent : Becoming.Mixed.web.Dependent
+@Becoming.Mixed.one_event_two_relations : ∀ {Pos : Type} (own sig : Pos → Becoming.Mixed.Formation × Nat → Prop)
+  (own' sig' : Pos → Becoming.Mixed.Formation × Becoming.Mixed.Source × Nat → Prop),
+  ¬(Becoming.Mixed.web.valuation own sig).living (Becoming.Mixed.Formation.drawer, 0) ∧
+    (Becoming.Mixed.web.relations own' sig').living (Becoming.Mixed.Formation.drawer, Becoming.Mixed.Source.kept, 0) ∧
+      ¬(Becoming.Mixed.web.relations own' sig').living (Becoming.Mixed.Formation.drawer, Becoming.Mixed.Source.lost, 0)
+@Becoming.Conditions.stepwise_related : ∀ {S A Pos F Cond : Type} {P : Generative.Process S A}
+  (K : Becoming.Conditions S F Cond) (r : Becoming.Run P) (own sig : Pos → F × Nat → Prop),
+  ((K.dependence.along r).valuation own sig).related = (K.valuation r own sig).related
+@Becoming.Renewable.readings_differ : ∀ {Pos : Type} (own sig : Pos → Becoming.Renewable.Formation × Nat → Prop),
+  ((Becoming.Renewable.conditions.dependence.along Becoming.Renewable.escalating).valuation own sig).living
+      (Becoming.Renewable.Formation.focal, 0) ∧
+    ¬(Becoming.Renewable.conditions.valuation Becoming.Renewable.escalating own sig).living
+          (Becoming.Renewable.Formation.focal, 0) ∧
+      (Becoming.Renewable.conditions.valuation Becoming.Renewable.dipping own sig).living
+          (Becoming.Renewable.Formation.focal, 0) ∧
+        ¬((Becoming.Renewable.conditions.dependence.along Becoming.Renewable.dipping).valuation own sig).living
+              (Becoming.Renewable.Formation.focal, 0) ∧
+          (Becoming.Renewable.conditions.valuation Becoming.Renewable.escalating own sig).living
+              (Becoming.Renewable.Formation.sustaining, 1) ∧
+            ((Becoming.Renewable.conditions.dependence.along Becoming.Renewable.escalating).valuation own sig).living
+              (Becoming.Renewable.Formation.sustaining, 1)
+Becoming.Model.linked_connected : ∀ (sig : Becoming.Model.Who → Becoming.Model.Life → Prop),
+  (Becoming.Model.valuation Becoming.Model.linked sig).Connected
+Becoming.Model.seed_is_needed : have V := Becoming.Model.valuation Becoming.Model.linked fun x x_1 => False;
+V.Connected ∧ ¬V.Seed ∧ Becoming.Neutral V.transmits ∧ Becoming.Neutral V.shares ∧ ¬V.Significant
+Becoming.Model.relational_neutrality_is_needed : have V :=
+  Becoming.Model.valuation Becoming.Model.linked Becoming.Model.ownRegion;
+V.Connected ∧
+  V.SelfGood Becoming.Model.Who.evaluator ∧
+    V.Seed ∧
+      Becoming.Neutral V.shares ∧
+        Becoming.Within (fun i => Becoming.Model.own Becoming.Model.Who.evaluator i.snd.snd) V.transmits ∧
+          ¬Becoming.Neutral V.transmits ∧ ¬V.Significant
+Becoming.Model.standpoint_neutrality_is_needed : have V :=
+  Becoming.Model.valuation Becoming.Model.linked Becoming.Model.ownStandpoint;
+V.Connected ∧
+  V.Seed ∧
+    Becoming.Neutral V.transmits ∧
+      Becoming.Within (fun i => i.fst = i.snd.fst) V.shares ∧ ¬Becoming.Neutral V.shares ∧ ¬V.Significant
+Becoming.Model.no_relation_into_beyond : ∀ (c : Becoming.Model.Life),
+  ¬Becoming.Model.related c Becoming.Model.Life.beyond
+@Becoming.Model.isolated : ∀ {living : Becoming.Model.Life → Prop}
+  {sig : Becoming.Model.Who → Becoming.Model.Life → Prop} {c : Becoming.Model.Life} {word : List Unit},
+  Generative.Trace (Becoming.Model.valuation living sig).relations c word Becoming.Model.Life.beyond →
+    c = Becoming.Model.Life.beyond
+Becoming.Model.connection_is_needed : have V :=
+  Becoming.Model.valuation (fun x => True) fun x c => Becoming.Model.linked c;
+V.Grounds ∧ ¬V.Connected ∧ ¬V.Significant
+Becoming.Model.articulation_neutrality_is_needed : have V :=
+  Becoming.Model.valuation Becoming.Model.linked fun x x_1 => True;
+have Art :=
+  Becoming.articulates V (fun x x_1 => True) (fun x x_1 => True) (fun x x_1 => False) fun p x =>
+    Becoming.Model.endorses p;
+V.Significant ∧ Becoming.Within (fun i => Becoming.Model.endorses i.fst) Art ∧ ¬Becoming.Neutral Art

@@ -3721,7 +3721,112 @@ Integration: 记录 rest-at-every-resolution；计划 §10 R2；章节 §9 的�
 
 **读法（AI，待 Ren）。** 按比例的损失不是表示的偶然。增长的规律计数关系项得到多少，而一份得到可以分给任意多的转移；只有损失随所转移的量成比例，分割才不能把损失分没，每一尺度的最小损失做不到这一点。所以“被围住的生成停止”的物理前提可以读作：交换合起来失去所转移的一定比例。这也部分回答了向 Ren 提出的问题：前提现在是对家族的比例，逐个转移的效率上界只是它的充分条件。
 
+**更正（2026-10-11，第十五次独立审查 W1、W2、W5；原文保留）。** 上面读法中“只有损失随所转移的量成比例，分割才不能把损失分没，每一尺度的最小损失做不到这一点”过度：对家族总和的任何前提都不受分割影响，审查的探针 ReplenishedLoses（被给予至少 1/p 单位的封闭家族至少失去 1/m 单位）严格弱于对家族的比例而仍给出增长的规律；分割打败的只是逐个转移的前提，Trickle 所用的是每步无界多的转移。本节开头“把前提推到最弱”应为“推向更弱”。Supplied premises 一行中“脊柱的耗散（每个形成给回封闭家族的不多于所取）”是证明所用的，脊柱的耗散本身要求取用的形成给回的至少少一个单位。见 §59.4。
+
 **边界。** 同 §59；比对家族的比例更弱而仍给出增长的规律的前提没有陈述；Trickle 的转移者不活跃；尚无独立审查。
+
+### 59.3 量的规律：按比例的损失为交换的总量定下最小的界（R3）
+
+2026-10-11。同一方向：把结论推到最强。R1 至 R2 的规律都计数：取用、增长或下降至少 1/p 单位的有多少次。它们的证明都经过同一个每步的不等式：q + 1 乘余下的存量连同被取走的，不多于 q + 1 乘此前的存量（`Flow.BalancesAt.lowersTaking`）。这个不等式本身给出一条不提尺度的规律。本节在 Ren 2026-10-11 选择 A 之前完成，与 §59.4 一并提交；按 Ren，这一线作为研究笔记。
+
+```text
+Result(s): 修订 rest-at-every-resolution（同一记录：加入量的规律与其最小性；计数的规律改由它证明；Trickle 中总量无界）
+Delta: refinedSum、refinedSum_invariant、refinedSum_mono、refinedSum_mul、refinedSum_marks、counts_of_amounts；
+       Flow.uptake_bound、Flow.replenishment_bound、Flow.takersAbove_le、Flow.BalancesAt.gainers_le、
+       Flow.BalancesAt.losers_le；World.taken_bound、World.given_bound；Flow.exchange_bound、World.growth_bound、
+       World.fall_bound 改由量的规律证明（陈述不变）；powers、powers_pos、bernoulli_powers、powers_outgrow、
+       quarter_pos；见证 Geometric 与 amount_sharp；Trickle.uptake、Trickle.throughput_unbounded、
+       throughput_needs_proportion
+Supplied premises / correspondence: 同 §59.2；量的规律只用 R T = 1 与 R (t + 1) = r t · R t
+Evidence: 与 §59.4 同一回执 20261010T180948.563939Z（1788 项定理、2748 项声明审计，全部源声明公理报告为空；Resolution 207 项定理、261 项声明审计），
+          外围回执 20261010T182121.048951Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 离散步；总量以第 T 步的单位计，是有理数的和，不含实数量与连续时间；计数的界是否可达未证；尚无独立审查
+Integration: 记录 rest-at-every-resolution；计划 §10 R3；章节 §9 的脊柱表与第一部分；模块说明、根模块、包 README 与检查器的范围
+```
+
+**机制。**
+
+- **量的规律。** `refinedSum r ℓ T n` 把从 T 起 n 步的量相加：每步的量以下一步的单位计，再随单位在其后每步细分。它是以第 T + n 步的单位计的总量，除以 R (T + n) 就是以第 T 步的单位计。不变式（`refinedSum_invariant`）：每步 c 乘余下的连同该步的量不多于 c 乘此前的，则 c 乘余下的连同自 T 起的总量不多于 c 乘 T 时的量。按比例的损失给出 c = q + 1、量为被取走的（`lowersTaking`），与 c = q、量为得回的（`lowersBy`）。所以从 T 起封闭的家族被取走的总量至多是它在 T 的存量的 q + 1 倍，得回的至多 q 倍（`Flow.uptake_bound`、`Flow.replenishment_bound`）。在世界中，围住所立者的家族每步可以不同，从所立者被取走的与给予所立者的总量同样有界（`World.taken_bound`、`World.given_bound`）。这条规律不提任何尺度。
+- **最小性。** `Geometric`：单位每步分为 q + 1 个，一个形成每步取走整个封闭的池，给回 q/(q+1)。池以第 t 步单位计立于 s·q^t，以第 0 步单位计立于 s·(q/(q+1))^t。q + 1 乘余下的连同被取走的总量恰是 q + 1 乘池（`Geometric.exact`）。由伯努利不等式（`bernoulli_powers`），(q+1)^n 超过 q^n 的每个倍数（`powers_outgrow`），所以对每个 m，被取走的总量到达 (q+1)s 的 1/m 之内（`amount_sharp`）。q + 1 不能换成更小的数。
+- **计数是推论。** 取用至少 1/p 单位的形成每个都取走至少 1/p 单位（`Flow.takersAbove_le`）；增长至少 1/p 单位的关系项每个都被给予至少 1/p 单位（`Flow.BalancesAt.gainers_le`）；下降至少 1/p 单位的关系项每个都被取走至少 1/p 单位（`Flow.BalancesAt.losers_le`）。量子也是量：第 T 步单位的量子之和就是它们的个数乘 R (T + n)（`refinedSum_marks`）。所以计数不多于 p 乘量的界（`counts_of_amounts`）。交换、增长与下降的规律改由此证明，陈述与界都不变；生起、止息与每一固定尺度的静止随之。
+- **边界。** `Trickle` 每一尺度都有最小损失，每个固定尺度的转移停止，而被取走的总量每步至少是第 0 步的一个单位，超过它的每个倍数（`Trickle.throughput_unbounded`、`throughput_needs_proportion`）。所以每一尺度的最小损失不给出量的规律。
+
+**作者反审。**
+
+*反驳 14：量的规律是否只是交换律的另一种写法？* 不是。交换律计数，需要尺度 1/p 与只细分的单位；量的规律为总量定界，不提尺度。它推出每个尺度的计数，反之不然：Trickle 有每个尺度的计数界，总量却无界。
+
+*反驳 15：最小性是否只对一个特别的见证成立？* 最小性说的是常数 q + 1 不能更小：对每个 q 与每个池，有平衡、按比例 q 耗散、每步封闭的流，被取走的总量任意接近 q + 1 乘池。它不说每个流都接近这个界。
+
+*反驳 16：交换、增长与下降的证明改经量的规律，是否改变了记录的结果？* 陈述、前提与界都不变，只是证明的路径。原来的逐步引理（`Flow.BalancesAt.takers_lose`、`gainers_lose`、`losers_lose`）保留，仍成立。
+
+**读法（AI，待 Ren）。** 按比例的损失给出的是一个总量：被围住的家族一共能交换的，不超过它所立的 q + 1 倍。计数的规律是这个总量在某个尺度下的读数。只有每一尺度的最小损失时，总量可以无界，变化以越来越多、越来越小的份额继续。
+
+**边界。** 同 §59；离散步；总量以有理的单位计，不含实数量与连续时间；计数的界是否可达未证；尚无独立审查。
+
+### 59.4 算入细分：零前提的每一分辨率下的静止；第十五次独立审查（R4）
+
+2026-10-11。向 Ren 提出的问题是：每个封闭家族失去从它取走的一定比例，是否作为理论的前提。作者列出六个选项（A 保持整单位，每次交换至少损失一个最小量；B 至 F 是比例、最小损失与无新前提的各种形式，见[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）。Ren 的回答：
+
+> A is right - because of change, there is difference, therefore there are difference in its possibility in its becoming(think in karmic way, karma passes, and that passing has to have a form of change which its reverse transformation will take another change), so in the sense of becoming, the becoming into will have relational difference, or it won't be "becoming"
+>
+> But for the case of 0, why can't we have it? and for the rest, they seem to be good research subjects, but this is separate matter, we can leave a note
+>
+> I feel there should be some elegant ways to solve it
+
+作者的读法（AI，待 Ren）：最小差异属于生成本身，不属于表示；“the case of 0”指零前提的情形，即不添前提的每一分辨率下的静止；其余选项与第十五次独立审查的探针作为研究笔记。
+
+```text
+Result(s): 新增 rest-with-refinement-counted；修订 rest-at-every-resolution（审查更正；边界定理加入在固定单位下不平衡；作为不算入细分时的研究笔记）
+Delta: Flow.withRefinement、Web.withRefinement、Flow.withRefinement_taken、Flow.withRefinement_given、
+       Flow.balancesAt_iff_withRefinement、Flow.withRefinement_dissipatesOn_iff、Flow.ClosedAt.of_withRefinement、
+       Flow.ClosedAt.withRefinement、Flow.Enclosed.of_withRefinement、Flow.refinement_gives_nothing、
+       Flow.taking_needs_refinement；World.after 与 after_counted、after_embodied、after_balanced、after_dissipative、
+       after_enclosed、after_recurs、rests_of_after；World.rests_unrefined、World.rests_refinement_counted、
+       World.arising_opens_refinement_counted、World.arising_needs_refinement；Web.CarriesIn.lasts_unrefined；
+       refinement_feeds_witnesses；Asymptote.not_balanced、Emission.not_balanced、Alternation.not_balanced（边界定理
+       rest_needs_quantum、arising_needs_quantum 加入这一合取项）；total_map_some、mem_map_some、of_mem_map_some、refine_eq
+Supplied premises / correspondence: 算入细分是一种读法（Ren 的方向，作者的展开待 Ren），不是推出的；定理对两种读法都陈述
+Evidence: 合并检查器回执 20261010T180948.563939Z（1788 项定理、2748 项声明审计，全部源声明公理报告为空；Resolution 207 项定理、261 项声明审计），
+          外围回执 20261010T182121.048951Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 离散步；单位只细分；算入细分的流以 Option 为形成，不是同一种关系项的世界；尚无独立审查
+Integration: 记录 rest-with-refinement-counted 与 rest-at-every-resolution；计划 §10 R4；章节 §9 的脊柱表与第一部分；
+             模块说明、根模块、包 README 与检查器的范围；审查保存为 BECOMING-R1-R2-REVIEW.md
+```
+
+**机制。**
+
+- **细分是一个给予。** 单位跨过第 t 步分为 split t + 1 个更细的单位时，在细分的单位下平衡是：下一步的水平连同被取走的，等于 (split t + 1) 乘此前的水平连同被给予的。(split t + 1) 乘水平就是水平加 split t 乘水平（`refine_eq`）。把 split t 乘水平读作又一个形成给予的，它什么也不取，平衡就成了脊柱的平衡（`Flow.balancesAt_iff_withRefinement`）。这个形成是 `Flow.withRefinement` 中的 `none`：它在场，取用为零，给每个条件 split t 乘其水平；`Web.withRefinement` 使它从不活跃，不要求、不汲取任何东西。
+- **耗散排除只给不取。** 脊柱的耗散要求每个在场的形成给回封闭家族的不多于所取，取用时至少少一个单位。细分不取，所以在被耗散的封闭家族上它什么也不能给：算入细分的流在一个家族上耗散，恰当流自身的形成在其上耗散并且 split t 乘家族的存量为零（`Flow.withRefinement_dissipatesOn_iff`）。一步被围住时，细分的给予在封闭家族之外为零（封闭），在家族之内也为零（耗散），所以它什么也不给任何条件（`Flow.refinement_gives_nothing`；构造性证明，不判定成员）。
+- **零前提的静止。** 于是算入细分、耗散并从 T 起每步被围住时，细分从 T 起什么也不给，在细分的单位下平衡从 T 起就是脊柱的平衡，流自身从 T 起耗散、被围住。把世界从 T 起读（`World.after`），脊柱的静止定理 `World.rests_enclosed` 给出它的静止，再读回原世界（`World.rests_of_after`）：生起与止息都不复现（`World.rests_refinement_counted`）。生起不息时，算入细分后没有一步开始每步被围住的一段（`World.arising_opens_refinement_counted`）：“生起不息需要开放”在每一分辨率下成立，前提只是脊柱的前提。
+- **不算入细分。** 前提只说流自身耗散、被围住时，结论在细分什么也不给之处成立（`World.rests_unrefined`、`World.arising_needs_refinement`、`Flow.taking_needs_refinement`、储备的 `Web.CarriesIn.lasts_unrefined`）。
+- **见证由细分供给。** Emission、Alternation 与 Circulation 中，以及单位在任意晚的步细分时 Asymptote 中，细分在任意晚的步有所给予；Dwindle 中细分每步给予储备（`refinement_feeds_witnesses`）。它们在固定单位下不平衡（`Asymptote.not_balanced`、`Emission.not_balanced`、`Alternation.not_balanced`；审查 W7.2）。
+
+**第十五次独立审查的处理。** [审查](BECOMING-R1-R2-REVIEW.md)检查 R1、R1b 与 R2（`658db670`、`e79e00e5`、`de17f533`）：构建、公理、回执与计数全部正确，每条定理按陈述成立；文字有错处。逐项：
+
+- **W1**（“计数关系项需要比例”过度）：模块说明、记录的对应与读法更正；§59.2 读法原文保留，附更正。审查的探针给出严格弱于比例而仍给出增长的规律的前提（ReplenishedLoses），按 Ren 作为研究笔记。
+- **W2**（“推到最弱”）：计划 R2 行改为“推向更弱”；§59.2 原文保留，附更正。
+- **W3**（中文章节把 Trickle 写反）：改为“无尽地带过（每个固定尺度的转移不复现）”。
+- **W4**（量子规律的陈述缺少耗散）：模块说明、根模块、包 README 与检查器范围加入耗散。
+- **W5**（最小损失交换律的耗散释义）：记录假设改为“每个取用的形成给回的至少比所取少下一步的一个单位；证明只用其不多于所取”。更弱的前提（NotGaining、只要求家族不被增益的量子规律）作为研究笔记。
+- **W6、W7.1、W7.3、W7.4**（逐个形成的比例、严格更弱、Trickle 的下降与止息、界的可达）：作为研究笔记。**W7.2** 已移入核心（not_balanced）。
+- **W8**：章节与记录改为“可以无尽地继续”；交换的规律以其家族的存量为界，围住之内的增长、下降、生起与止息以所立者为界，分开陈述；记录标题与 `World.rests_at_resolution` 的说明改为“每一固定尺度的静止”；根模块与包 README 改为“有见证”。
+- **W9**：记录写明 Emission 每步加入一个关系项，见证只说明所缺的前提在其余前提之下是需要的；Trickle 说明中的比例改为“约四倍”。
+- **W10**：“最小花费”改为“储备的最小下降”；“share”改为“比例 / proportion”；Trickle 的 carriers 改为 conduits（与储备的 Carries 分开）；记录中“读法属于 Ren”改为“读法（AI，待 Ren）”；“损失的规律”专指 `losses_bound`，量子的计数称“量子的规律”。
+- **W11**（Trickle 的通道不活跃）：保留为开放项。
+
+**作者反审。**
+
+*反驳 17：算入细分是否把反例定义掉了？* 没有。不算入细分的规律与见证都保留并陈述（rest-at-every-resolution）；算入细分的定理对每个形成用的是脊柱原有的耗散。两种读法下的事实一致：细分在任意晚的步有所给予（`refinement_feeds_witnesses`）。变的是这一给予读作什么：表示的改变，还是一个源。Ren 的方向把它读作源，因为更细的差异也是一种生成。
+
+*反驳 18：零前提的定理是否空洞？* 算入细分后，被围住、被耗散的世界中凡有所立之处细分什么也不给，所以每一分辨率下的静止是在单位实际上不再细分之处得到的。这正是内容：围住之内的细分是一个给予，要有来源，而被耗散的围住没有只给不取的形成。定理的力量在于不添前提：比例、最小尺度与储备的最小下降都不需要。
+
+*反驳 19：细分在不立任何东西的条件上什么也不给，是否只管有所立的条件？* 是。细分给的是 split t 乘水平；水平为零的条件上单位的细分不改变任何量。静止定理只关于所立与活跃的关系项，所以这里不缺少什么。
+
+**读法（AI，待 Ren）。** 每个量是一个被做出的差异。把单位分细，就是做出更细的差异，这本身是一个变化，要有所给予。被围住、被耗散的整体中没有只给不取的东西，所以围住之内不能凭空分细；分辨率的每一次细化都来自围住之外，或来自一个不被耗散的源。于是“生起不息需要开放”不依赖表示，在每一分辨率下成立，前提只是脊柱的前提。
+
+**边界。** 离散步；单位只细分；算入细分的流以 Option 为形成，不是同一种关系项的世界（下一步：把细分作为普查中的关系项）；对“the case of 0”的读法待 Ren 确认；尚无独立审查。
+
+**之后（AI，待 Ren）。** Ren 随后说：“I know what "Every exchange loses at least one smallest amount" is now, it is entropy”，又说：“so that makes me to speculate if 0 is possible, if we can also derive entropy from this, if we can, spawn a new session to focus on this”。由此“0”也可读作无损的交换（损失为零）。本节的定理不依赖哪一种读法。无损的交换是否可能，每次交换的最小损失（熵）能否推出而不作前提，另开一个会话研究。
 
 ## 60. 每个选择之下所选前提都起约束时计数的规律（P45）
 
@@ -4199,6 +4304,10 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 **Loss in proportion per family, and a least loss at each size (R2).** Every law of R1 and R1b uses loss in proportion only summed over the closed family, so `Flow.DissipatesBy q` now says just that: each closed family gets back at most `q` parts in `q + 1` of what is taken from it. It holds where each formation does so (`Flow.DissipatesBy.of_each`), not conversely, so every law keeps its statement under a weaker premise, and the witnesses dissipative by no share now fail the weaker premise as well. A different weakening, a least loss at each size (a formation taking at least `1/p` of the unit loses at least `1/m` of it, `m` the same at every step, `Flow.LosesAtSize`), gives the exchange law with the spine's dissipation (`Flow.exchange_bound_of_least_loss`), but not the growth law. In `Trickle`, at a unit quartering at each step, a whole unit of step 0 passes between two sides in `2^t` parts at step `t`, each losing two units of the step after: every size has a least loss and transfers of each fixed size stop, yet a whole unit arises without end, with no share lost (`growth_needs_proportion`). Counting transfers needs a least loss at each size; counting what relata gain, lose, begin or end needs more, since one gain can be split across any number of transfers. Whether a premise weaker than the family's share still gives the growth law is not stated, and the carriers of `Trickle` are not active. Receipt 20261010T165248.121581Z, periphery receipt 20261010T165548.911356Z. Not yet independently reviewed; the author's counterreview is in section 59.2.
 
+**The amount law (R3).** Every law of R1 to R2 counts: the times something takes, gains or falls by at least `1/p` of the unit. All their proofs pass through one inequality per step, and that inequality itself gives a law naming no size. Summing each step's amount in the unit of step `T` (`refinedSum`), everything taken from a family closed from `T` on is at most `q + 1` times its stock at `T`, and everything given back at most `q` times (`Flow.uptake_bound`, `Flow.replenishment_bound`). In a world with a census, embodied relata and every step from `T` on enclosed, the same holds of what is taken from and given to what stands (`World.taken_bound`, `World.given_bound`). The bound is the least. In `Geometric` a formation takes a closed pool in full at each step and gives back `q` parts in `q + 1`, at a unit splitting into `q + 1`. Everything taken comes within `1/m` of `q + 1` times the pool for every `m` (`amount_sharp`, through Bernoulli's inequality). Every count follows from the amount law (`counts_of_amounts`), and the exchange, growth and fall laws are now proved this way, their statements unchanged. In `Trickle`, where every size has a least loss, everything taken grows past every multiple of the unit (`throughput_needs_proportion`). Done before Ren's choice of A and committed with R4; by Ren's choice this line is kept as research notes. The same receipt as R4. Not yet independently reviewed; the author's counterreview is in section 59.3.
+
+**Rest with the refinement counted; the fifteenth review (R4).** Asked whether each closed family should lose a fixed proportion of what is taken from it as a premise, Ren answered on 11 October 2026 that a least difference at every exchange belongs to becoming (‘A is right - because of change, there is difference’), asked ‘for the case of 0, why can't we have it?’, and asked that the other options be kept as research notes ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). Splitting the unit into `split t + 1` is itself a change. Counted as a formation that gives each condition `split t` times its level and takes nothing (`Flow.withRefinement`), balance at the refining unit is the spine's balance (`Flow.balancesAt_iff_withRefinement`). The spine's dissipation excludes giving without taking: with the refinement counted, a flow dissipates on a family exactly where its own formations do and the refinement gives the family nothing (`Flow.withRefinement_dissipatesOn_iff`), and across a step enclosed and dissipated on with it counted the refinement gives nothing (`Flow.refinement_gives_nothing`). So with the refinement counted the spine's premises bring rest at every resolution with no premise added (`World.rests_refinement_counted`), and arising without end needs openness (`World.arising_opens_refinement_counted`). Without counting it, the same holds wherever the refinement gives nothing (`World.rests_unrefined`, `Flow.taking_needs_refinement`, `Web.CarriesIn.lasts_unrefined`), and every witness of R1 is fed by the refinement (`refinement_feeds_witnesses`) and does not balance at the fixed unit (`Asymptote.not_balanced`, `Emission.not_balanced`, `Alternation.not_balanced`). The line of loss in proportion (R1 to R3) is kept as research notes. The fifteenth independent review of R1, R1b and R2 ([review](BECOMING-R1-R2-REVIEW.md)) found the build, axioms, receipts and statements correct and the prose wrong in places: an overclaimed necessity (W1), an inverted Chinese sentence (W3), dissipation missing from the quantum law (W4), quantifier slips (W8) and financial words (W10, now ‘least fall of the reserve’, ‘proportion’ and Trickle's ‘conduits’). All are corrected, the historical passages kept with correction notes; the review's probes are kept as research notes. On the AI's reading, pending Ren: a finer distinction is itself a becoming that something must give, so arising without end needs openness at every resolution with only the spine's premises. Record rest-with-refinement-counted added; rest-at-every-resolution revised. Receipt 20261010T180948.563939Z, periphery receipt 20261010T182121.048951Z. Not yet independently reviewed; the author's counterreview is in section 59.4.
+
 **The laws of counting where the premises of each selection bind (P45).** Following Ren's "let's aim for the strongest claim without axiom, as the first part" and "aim a complete theory of becoming, and finish related work", this states the two laws of counting that P41b left open (section 58). A premise now binds on its own (`World.Premise.Binds`), each condition as before, and `World.Binds` is every premise binding. Under each selection, where each selected premise binds, the laws of counting are those of `World.counting_under` and at most three more (`World.binding_counting_under`); each is what an instance of a condition leaves in the counts, and each is a law exactly under the selections named.
 - **Something is active,** exactly where activity needing support, only active relata giving, only active relata taking or embodiment is selected (`World.binding_activity_iff`): the first three have an active relatum as their instance, and what arises is active after the step.
 - **Something arises,** exactly where embodiment is selected (`World.binding_arising_iff`).
@@ -4208,4 +4317,4 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 On the AI's reading, pending Ren: binding leaves in the counts only its instances, activity and arising, and arising at a step of activity where arising is bound to come from activity. Records extended or revised: whole-law-of-counting, map-of-premises, counting-under-enclosure. Receipt 20261010T171040.121853Z (Premises 59, Counting 161). Not yet independently reviewed; the author's counterreview is in section 60.
 
-The package now has 1734 theorems and 2687 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59 to 59.2 and 60. The periphery bridge passed against this core (receipt 20261010T171427.598973Z).
+The package now has 1788 theorems and 2748 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60. The periphery bridge passed against this core (receipt 20261010T182121.048951Z).

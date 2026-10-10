@@ -271,17 +271,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "46065a8d10ed657c0099bee88ff74d6a071a8af1c9943c12b7d2bd573802bd62"
+      "sha256": "d890f37c9e70643294341fc2f3f870534bd0d32065361ba62d8b0d0325b94992"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "8018ff5e8ead0760964d46a2ba7d0e630cbbd6ff41e00b190ac9de4c2bdf9fa9"
+      "sha256": "ff83a80fc3f2936b51e6b2ba04df70b9015ea74f4e9037d01c3478fbd73afbe6"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "c4df7e79e34c75ef112347cc3c85d3d24620c2c88157bebaa70f80e2991c0315"
+      "sha256": "16a7e6321163d0930ec080a459f7bb5cabb399ccb1b86db332ccc823d83f032f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",

@@ -21,7 +21,8 @@ ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "theories/becoming/results"
 MANIFEST = ROOT / "_process/architecture/generated-manifest.json"
 SCRIPT = Path(__file__).resolve().relative_to(ROOT).as_posix()
-EXCLUDED = (".git", ".lake", "node_modules", ".venv", "venv", "__pycache__")
+# .claude/worktrees holds other sessions' checkouts of this repository, not sources of it.
+EXCLUDED = (".git", ".lake", "node_modules", ".venv", "venv", "__pycache__", ".claude/worktrees")
 KINDS = "theorem|lemma|def|abbrev|structure|inductive|opaque|axiom|constant"
 DECL = re.compile(r"^\s*(?:@\[[^\n]*?\]\s*)*(?:(?:private|protected|noncomputable|unsafe|partial|nonrec)\s+)*(?P<kind>" + KINDS + r")\s+(?P<name>«[^»]+»|[^\s\[\]{}():=]+)")
 LINK = re.compile(r"\[[^\]\n]*\]\((<[^>\n]+>|[^\s)]+)(?:\s+\"[^\"]*\")?\)")
@@ -342,7 +343,7 @@ def render_index(manifest: dict, sources: dict) -> str:
     for role_name, count in s["roles"].items():
         rows.append(f"| {ROLE_LABELS[role_name]} | {count:,} |")
     rows += ["", f"下方当前源与审计入口中，共扫描到 **{s['working_named_theorem_lemma_occurrences']:,} 个显式 theorem/lemma 声明位置**、{s['working_explicit_named_declaration_occurrences']:,} 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **{s['working_named_theorem_lemma_occurrences']:,} explicit theorem/lemma occurrences** and {s['working_explicit_named_declaration_occurrences']:,} explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.", "",
-        "扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录，不追随目录符号链接。历史导入、开发尝试、冻结副本均保存在 JSON 中，不在主表重复。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above are excluded and directory symlinks are not followed. Archives, attempts and frozen copies remain in JSON without repeating them in the main table. Working-source is a documentary role, not acceptance or verification status.", "",
+        "扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入、开发尝试、冻结副本均保存在 JSON 中，不在主表重复。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives, attempts and frozen copies remain in JSON without repeating them in the main table. Working-source is a documentary role, not acceptance or verification status.", "",
         "声明扫描识别显式 theorem、lemma、def、abbrev、structure、inductive、opaque、axiom、constant；不枚举 Lean 自动生成的构造子／投影、instance 或匿名 example。完整语义及假设以原源码为准。 / The scan lists the explicit named declaration kinds above, excluding generated constructors/projections, instances and anonymous examples. Source code remains authoritative for semantics and hypotheses.", "",
         "## 方向索引 / Direction index", "", "| 方向 / Direction | 当前源与审计入口 / Entries |", "|---|---:|",
     ]
