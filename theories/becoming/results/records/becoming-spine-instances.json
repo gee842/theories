@@ -371,13 +371,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b94a273b4eafc963b1927fa227f2bec766d94b2e941928d29d20c69c0f56e96f",
+      "sha256": "46065a8d10ed657c0099bee88ff74d6a071a8af1c9943c12b7d2bd573802bd62",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "role": "receipt",
-      "sha256": "0b92b37148d95aa54db48079212219294418b91cb84e422c7b76e941152014a2",
+      "sha256": "49940e2dc0688f6d3079797cfeeba2f1e34b6ff1773c87eacbaab0b246c8abcd",
       "declarations": []
     },
     {

@@ -161,7 +161,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   descends from a formation that takes part in a step, gives to it, and across which it
   comes to stand. Over any finite family of parents and offspring, the offspring's total
   with what transmission lowered is the parents' amounts weighted by their offspring with
-  what transmission raised: the counting form of Price's equation, an accounting identity
+  what transmission raised: the counting form of Price's equation, an arithmetic identity
   with no premise, whose weighted total is not selection proper. Where only active
   formations give and activity needs support, only supported formations leave
   descendants, so what is transmitted within a bound was selected within it: a
@@ -285,7 +285,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   and gained only from the supported, so the end absorbs where nothing beyond gives, each
   premise being needed. A part, one formation or a system, is withheld by leaving the rest
   of the exchange as it was; the levels without it are unique where they exist, and the
-  accounting is exact: each level with what the part took is the level without it with
+  difference is exact: each level with what the part took is the level without it with
   what the part gave. Closing what can form needs a net draw on a condition it requires,
   and opening needs a net give. Compared by inclusion, a part widens, narrows, keeps the
   same or is mixed, each exceeding the other, which inclusion does not order. Reading

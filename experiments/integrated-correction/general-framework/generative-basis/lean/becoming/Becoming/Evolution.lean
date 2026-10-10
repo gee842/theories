@@ -15,7 +15,7 @@ wherever descent, dependence and support are read on one unfolding.
   part in the step and gives to it, and it comes to stand across the step
   (`Flow.DescendsAt`, `Flow.Descends`). `Becoming.Descent` reads the relation in
   valuation.
-* **An accounting identity with no premise.** Over any finite family of parents, each
+* **An arithmetic identity with no premise.** Over any finite family of parents, each
   with a finite list of offspring, and any amounts read of parents and offspring, the
   offspring's total with what transmission lowered is the parents' amounts weighted by
   their offspring, each counted once for every offspring, with what transmission raised
@@ -102,7 +102,7 @@ def raised (ps : List α) (kids : α → List α) (a b : α → Nat) : Nat :=
 def lowered (ps : List α) (kids : α → List α) (a b : α → Nat) : Nat :=
   total ps fun p => total (kids p) fun k => excess (a p) (b k)
 
-/-- The counting form of Price's equation, an accounting identity: the offspring's total
+/-- The counting form of Price's equation, an arithmetic identity: the offspring's total
 with what transmission lowered is the parents' amounts weighted by their offspring with
 what transmission raised. -/
 theorem price (ps : List α) (kids : α → List α) (a b : α → Nat) :

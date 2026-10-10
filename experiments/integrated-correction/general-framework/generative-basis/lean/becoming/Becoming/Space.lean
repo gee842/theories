@@ -24,7 +24,7 @@ name"); they do not claim Ren's words.
   with the flow among them and their web (`World`). The two-kind reading of any flow and
   web is a world, and arising and ceasing read the same there (`World.ofRoles`,
   `World.arisingRecurs_ofRoles`, `World.ceasingRecurs_ofRoles`).
-* **Laws of the whole.** The laws of `Becoming.Change`, and the accounting identity of
+* **Laws of the whole.** The laws of `Becoming.Change`, and the arithmetic identity of
   `Becoming.Evolution`, are stated of every web and every amount with no premise about
   the unfolding, so they hold throughout the space. Read of worlds: in a finite world
   whose activity is decided, arising recurs exactly when ceasing does

@@ -185,7 +185,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
       "role": "proof",
-      "sha256": "b38a7b1b0b6c4569dade1e258c869bb1e088a17d4f00b7c2bd65f05d877f74f2",
+      "sha256": "bd9b4eb7598eb1930bf0b55754ce78ab73c64cf597c9a4b1827a5b10437a8fd5",
       "declarations": [
         "Becoming.Web.Admits",
         "Becoming.Web.Includes",
@@ -215,7 +215,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b94a273b4eafc963b1927fa227f2bec766d94b2e941928d29d20c69c0f56e96f"
+      "sha256": "46065a8d10ed657c0099bee88ff74d6a071a8af1c9943c12b7d2bd573802bd62"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",

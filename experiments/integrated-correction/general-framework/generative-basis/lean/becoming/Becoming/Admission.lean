@@ -37,7 +37,7 @@ representation. Its names describe the dynamics.
   single formation or a system of them. The flow with the part withheld leaves the rest of
   the exchange as it was (`Flow.withhold`). The levels without the part are those that
   balance this flow from the same start (`Flow.WithheldLevels`); where they exist they are
-  unique (`Flow.WithheldLevels.unique`). The accounting is exact
+  unique (`Flow.WithheldLevels.unique`). The difference is exact
   (`Flow.Balances.withheld`): at every step, each level, with what the part has taken from
   the condition so far, equals the level without the part with what the part has given it.
 * **The boundary is a net exchange.** At a step a formation is supported exactly when, on
@@ -253,7 +253,7 @@ end Web
 
 /-! ## A part withheld -/
 
-/-- An accounting step: `a` after a step with what is taken, `b` before it with what is
+/-- One step of the difference: `a` after a step with what is taken, `b` before it with what is
 given; the same for `m` and `k` with only the withheld exchange; and the running sums
 `P` and `Q` of the part's taking and giving before the step. -/
 theorem rebalance {a b x y p q P Q m k : Nat} (step : a + (x + p) = b + (y + q))
@@ -331,7 +331,7 @@ theorem WithheldLevels.unique {l l' : Nat → C → Nat} (without : L.WithheldLe
       ((without.1 t c).trans ((congrArg (· + (L.withhold part).given t c)
         (WithheldLevels.unique without without' t c)).trans (without'.1 t c).symm))
 
-/-- The accounting of a part. At every step, each level with what the part has taken from
+/-- The difference a part makes. At every step, each level with what the part has taken from
 the condition so far is the level without the part with what the part has given it so far. -/
 theorem Balances.withheld (balances : L.Balances W) {l : Nat → C → Nat}
     (without : L.WithheldLevels part W l) :

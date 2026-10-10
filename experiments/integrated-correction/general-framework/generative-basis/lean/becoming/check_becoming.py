@@ -428,7 +428,7 @@ SCOPE = (
     "of parents, each with finitely many offspring, and any amounts read of them, the offspring's "
     "total with what transmission lowered equals the parents' amounts, each counted once for every "
     "offspring, with what transmission raised, the counting form of Price's equation, an "
-    "accounting identity with no premise whose weighted total is not selection proper: with "
+    "arithmetic identity with no premise whose weighted total is not selection proper: with "
     "every parent having k offspring it is k times the parents' total; "
     "where only active formations give and activity needs support, a formation a relatum descends "
     "from across a step is supported there, so one unsupported at a step leaves no descendant "
