@@ -32,8 +32,8 @@
     }
   ],
   "correspondence": {
-    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”，也读 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。AI 的第二种机制“constraint: a part that degrades its whole removes its own supply”在这里读作：损失经供给者返回。Ren 回答：“there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。",
-    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”, and Ren's “the system that one is in” as the system reached from a center along dependence. The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. The AI's second mechanism, “constraint: a part that degrades its whole removes its own supply”, is read here as a loss returning through a feeder. Ren answered: “there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”."
+    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”。P40 也把它读作 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统；这一读法由 P42 撤回：供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，为那一层级提供的是所及闭包（见 levels-of-closure，AI 的读法，待 Ren）。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。AI 的第二种机制“constraint: a part that degrades its whole removes its own supply”在这里读作：损失经供给者返回。Ren 回答：“there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”。",
+    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. P40 also read it as Ren's “the system that one is in”, the system reached from a center along dependence; P42 withdraws that reading: the feeding closure lies within the influence closure, the influence and reach closures lie within the system, and the reach closure is offered for that level (see levels-of-closure; the AI's reading, pending Ren). The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. The AI's second mechanism, “constraint: a part that degrades its whole removes its own supply”, is read here as a loss returning through a feeder. Ren answered: “there could be the whole realizes itself(like us, we recognize that \"we\" are the universe/ecosystem that realizes its own existence), understanding itself, and updates itself, this is also under the selection rules and constraints in theory, but in practice, how this happens, needs more thoughts”."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
   "aliases": [
@@ -146,6 +146,13 @@
         "zh": "那里每次上升都由被支持者给予，一旦什么都不被支持此后不再被支持；这里没有被支持者向所耗条件给予时，消耗至多持续该条件的水平那么多步。",
         "en": "There every rise is given by a supported formation, and once nothing is supported nothing is supported again; here, where nothing supported gives to the condition consumed, consumption lasts at most as many steps as its level."
       }
+    },
+    {
+      "id": "feedback-and-reach",
+      "detail": {
+        "zh": "形成的支持只计入与其所依存者的交换，影响闭包之外的在闭包之内不被计入（Flow.Balances.unregistered_beyond_influence）；终结经供给者返回，是在影响闭包之内。",
+        "en": "A formation's support registers only its exchanges with what it depends on, and nothing beyond the influence closure registers within it (Flow.Balances.unregistered_beyond_influence); an ending returning through a feeder lies within the influence closure."
+      }
     }
   ],
   "counterexamples": [
@@ -169,14 +176,14 @@
     "en": "The general theorems do not say that a loss within the closure always returns: feeders may be redundant, and stock and timing decide when an ending arrives; in Overshoot there is one feeder and a stock of one; the witnesses' activity is stipulated and shown consistent with balance, support and dependence, the endings being derived in the general theorems; the return is shown on the actual flow against a separate reference flow, not by withholding a part of one flow; contains no ethical predicate and says nothing of what a center should do; reading it as the “constraint” the AI named is the AI's reading, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T180948.563939Z）：Becoming.Interdependence 的 28 项定理全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1788 项定理／2748 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T182121.048951Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T180948.563939Z): the 28 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1788 theorems/2748 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T182121.048951Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Interdependence 的 28 项定理全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T222130.672025Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): the 28 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T222130.672025Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
       "role": "proof",
-      "sha256": "de4b1af47184d253e25eeefd9f41f52aed0f41c6ec92b15c488bfa2d0a989f0d",
+      "sha256": "36c940528887cc8c51a8191bf014b9967210c457c280f0795a9a6d1f7ba826fe",
       "declarations": [
         "Becoming.Flow.Balances.unfed_consumption_ends",
         "Becoming.Flow.Balances.unfed_consumption_stops",
@@ -243,17 +250,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d890f37c9e70643294341fc2f3f870534bd0d32065361ba62d8b0d0325b94992"
+      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "84ffcba15d2fabcd6255c81d1681f6dced28384a1cab24fc6d600c9b0ea71e80"
+      "sha256": "d09394a9b60755ee31656c01d8b2c656952850cc4ec52e6eccc3f17f052a3c7c"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "795e3b6fee5538bda35059564970d271e10ece2d59462242c5ee7cf014a93cc0"
+      "sha256": "f7236a97fa06c3ac243dc62a7d6f8adddaa22ee07aa43c1e795a089af6000bde"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -341,6 +348,10 @@
     {
       "zh": "2026-10-11 R4：验证范围重新指向合并检查器回执 20261010T180948.563939Z 与外围回执 20261010T182121.048951Z（Becoming.Resolution 加入量的规律、算入细分的静止与第十五次独立审查的更正）。断言不变。",
       "en": "2026-10-11 R4: validation scope re-pointed to consolidated receipt 20261010T180948.563939Z and periphery receipt 20261010T182121.048951Z (the amount law, rest with the refinement counted and the corrections of the fifteenth independent review added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。对应更正：P40 把供给闭包也读作 Ren 的“the system that one is in”，这一读法由 P42 撤回，为那一层级提供所及闭包（levels-of-closure）。新增相关记录 feedback-and-reach。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged. Correspondence corrected: P40 also read the feeding closure as Ren's “the system that one is in”; P42 withdraws that reading and offers the reach closure for that level (levels-of-closure). Related record feedback-and-reach added."
     }
   ]
 }

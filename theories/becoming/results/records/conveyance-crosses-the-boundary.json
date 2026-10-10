@@ -177,8 +177,8 @@
     "en": "Conveyance relates events at a common step only, orders no steps, and does not ask whether what is conveyed sustains the receiver; it does not distinguish a living or held source from another; adopting it is Ren's choice; reaching under N_rel is the relational half of the axiom, not what the want requires; stated for the stepwise reading only; the names are the AI's wording, for Ren to choose (conveyance, Cut and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T180948.563939Z）：Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1788 项定理／2748 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T182121.048951Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T180948.563939Z): the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1788 theorems/2748 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T182121.048951Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T222130.672025Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T222130.672025Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -241,12 +241,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d890f37c9e70643294341fc2f3f870534bd0d32065361ba62d8b0d0325b94992"
+      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "84ffcba15d2fabcd6255c81d1681f6dced28384a1cab24fc6d600c9b0ea71e80"
+      "sha256": "d09394a9b60755ee31656c01d8b2c656952850cc4ec52e6eccc3f17f052a3c7c"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -373,6 +373,10 @@
     {
       "zh": "2026-10-11 R4：验证范围重新指向合并检查器回执 20261010T180948.563939Z 与外围回执 20261010T182121.048951Z（Becoming.Resolution 加入量的规律、算入细分的静止与第十五次独立审查的更正）。断言不变。",
       "en": "2026-10-11 R4: validation scope re-pointed to consolidated receipt 20261010T180948.563939Z and periphery receipt 20261010T182121.048951Z (the amount law, rest with the refinement counted and the corrections of the fifteenth independent review added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged."
     }
   ]
 }

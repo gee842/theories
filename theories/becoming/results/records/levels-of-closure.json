@@ -1,0 +1,401 @@
+{
+  "schema_version": 1,
+  "id": "levels-of-closure",
+  "title": {
+    "zh": "闭包的五个层次：供给闭包在影响闭包之内，影响闭包与所及闭包在系统之内，每个包含都可以是严格的，影响闭包与所及闭包方向相反；一个共同条件使系统成为整体",
+    "en": "Five levels of closure: the feeding closure lies within the influence closure, and the influence and reach closures within the system, each inclusion possibly strict, the influence and reach closures pointing in opposite directions; one common condition makes the system the whole"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T18:06:00+00:00",
+  "claim": {
+    "zh": "区域对一个关系封闭（ClosedUnder），是指成员与之有此关系者都是成员；g 在 f 对此关系的闭包之内（WithinClosure），是指含 f 的每个封闭区域都含 g。闭包自反、可传递，含 f 与之有此关系者，随关系增大，在对称关系下对称，闭包之内的不与闭包之外的有此关系（WithinClosure.refl、trans、of_rel、mono、symm、not_rel），闭包本身封闭（closedUnder_withinClosure），所以是含 f 的最小封闭区域；它恰是 Becoming.Bridge 中从 f 这一个种子出发的种子—边闭包（withinClosure_iff_closure）。P40 的供给闭包是对在某步被供给的闭包（Flow.FedFrom、Flow.withinFeeding_iff、Flow.fedClosed_iff）。形成受另一个影响（Flow.AffectedBy），是指后者与前者在某步所依存的条件交换（Web.DependsOn、Flow.Exchanges）；影响闭包（Flow.WithinInfluence）是对受影响的闭包，即能影响形成的；所及闭包（Flow.Affects、Flow.WithinReach）是对影响的闭包，即形成的交换能逐环影响的。形成参与一个条件（Flow.TakesPart），是指依存于它或与它交换；两个形成都参与一个条件，即共享它（Flow.Shares）；系统（Flow.WithinSystem）是对共享的闭包，是类（Flow.shares_symm、Flow.WithinSystem.symm）。供给闭包在影响闭包之内（Flow.affectedBy_of_fedFrom、Flow.withinInfluence_of_withinFeeding），影响闭包与所及闭包都在系统之内（Flow.shares_of_affectedBy、Flow.withinSystem_of_withinInfluence、Flow.withinSystem_of_withinReach），系统对影响封闭（Flow.withinSystem_closed）。每个包含都可以是严格的，影响闭包与所及闭包方向相反：营养级联 Trophic 中，两个流都平衡，只有活跃者给予与取用，活动需要支持；狼群不向任何条件给予，在森林的供给闭包之外、影响闭包之内，远处的形成在森林的系统之外（Trophic.mediates、Trophic.near_closed）；Clearing 中来源在清除者的供给闭包之内，栖居者在其影响闭包之外、系统之内（Clearing.alongDependence_closed、Clearing.levels），清除者的所及闭包含栖居者、不含来源（Clearing.clearerReach_closed、Clearing.reach_middle），栖居者的所及闭包只含它自己（Clearing.reach_centred）；两个形成依存于一个没有任何东西与之交换的条件时，共享一个系统而彼此不影响（Static.shares_unaffected）。每个形成都参与一个条件时，每个系统都是整体（Flow.system_whole_of_common）；每个形成都依存于它并与它交换时，每个所及闭包都是整体（Flow.reach_whole_of_common）；在某步每个形成都需要它并向它给予时，每个供给闭包都是整体（Flow.feeding_whole_of_common），以各中心供给闭包为界的意义，即 P40 不用公理的路线，就是公理（Flow.feeding_unrestricted_of_common）；每个中心的系统都是整体时，以系统为界的意义就是公理（Flow.bounded_system_whole）。Clearing 是一个系统（Clearing.clearer_system、Clearing.system_whole）。不用前提，也不用 Lean 公理；Unrestricted 在这里只作为结论出现：某个有界的意义恰是它。",
+    "en": "A region is closed under a relation (ClosedUnder) when whatever a member bears the relation to is a member; g lies within f's closure under the relation (WithinClosure) when every closed region holding f holds g. The closure is reflexive and transitive, holds what f bears the relation to, grows with the relation, is symmetric under a symmetric relation, and nothing within it bears the relation to what lies beyond it (WithinClosure.refl, trans, of_rel, mono, symm, not_rel); it is itself closed (closedUnder_withinClosure), so it is the least closed region holding f; it is exactly the seed–edge closure of Becoming.Bridge from the one seed f (withinClosure_iff_closure). P40's feeding closure is the closure under being fed at some step (Flow.FedFrom, Flow.withinFeeding_iff, Flow.fedClosed_iff). A formation is affected by another (Flow.AffectedBy) when the other exchanges with a condition the first depends on at some step (Web.DependsOn, Flow.Exchanges); the influence closure (Flow.WithinInfluence) is the closure under being affected, what can affect the formation; the reach closure (Flow.Affects, Flow.WithinReach) is the closure under affecting, what the formation's exchange can affect, link by link. A formation takes part in a condition (Flow.TakesPart) when it depends on it or exchanges with it; two formations taking part in one condition share it (Flow.Shares); the system (Flow.WithinSystem) is the closure under sharing, a class (Flow.shares_symm, Flow.WithinSystem.symm). The feeding closure lies within the influence closure (Flow.affectedBy_of_fedFrom, Flow.withinInfluence_of_withinFeeding), the influence and reach closures lie within the system (Flow.shares_of_affectedBy, Flow.withinSystem_of_withinInfluence, Flow.withinSystem_of_withinReach), and the system is closed under affecting (Flow.withinSystem_closed). Each inclusion can be strict, and the influence and reach closures point in opposite directions. In Trophic, a trophic cascade, both flows balance, only active formations give and take, and activity needs support; the wolves give to nothing, lying beyond the forest's feeding closure and within its influence closure, and a formation far off lies beyond the forest's system (Trophic.mediates, Trophic.near_closed). In Clearing the source lies within the clearer's feeding closure and the dweller beyond its influence closure and within its system (Clearing.alongDependence_closed, Clearing.levels); the clearer's reach closure holds the dweller and not the source (Clearing.clearerReach_closed, Clearing.reach_middle), and the dweller's holds only itself (Clearing.reach_centred). Two formations depending on a condition that nothing exchanges with share a system and neither affects the other (Static.shares_unaffected). Where every formation takes part in one condition, every system is the whole (Flow.system_whole_of_common); where every formation depends on it and exchanges with it, every reach closure is (Flow.reach_whole_of_common); where at one step every formation requires it and gives to it, every feeding closure is (Flow.feeding_whole_of_common), and significance bounded by each center's feeding closure, P40's route without axiom, is the axiom (Flow.feeding_unrestricted_of_common); where each center's system is the whole, significance bounded by the system is the axiom (Flow.bounded_system_whole). Clearing is one system (Clearing.clearer_system, Clearing.system_whole). No premise and no Lean axiom is used; Unrestricted appears here only as a conclusion, that some bounded significance is exactly it."
+  },
+  "hypotheses": [
+    {
+      "zh": "闭包、影响、共享与所及都是形成层面的：交换与依存各在某一步，不要求同一步，也不按时间先后；比较定理用按时间先后的 Flow.ReachesBefore。",
+      "en": "Closures, influence, sharing and reach are at the level of formations: the exchange and the dependence each hold at some step, not necessarily the same one, in any temporal order; the comparison theorems use Flow.ReachesBefore, which is ordered in time."
+    },
+    {
+      "zh": "Trophic、Static 与 Clearing 的结论：见证的流、网与依存（Trophic.flow、Trophic.web、Trophic.responsiveFlow、Trophic.responsiveWeb、Static.flow、Static.web、Clearing.flow、Clearing.web）。",
+      "en": "For the Trophic, Static and Clearing results: the witnesses' flows, webs and dependence (Trophic.flow, Trophic.web, Trophic.responsiveFlow, Trophic.responsiveWeb, Static.flow, Static.web, Clearing.flow, Clearing.web)."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，待 Ren）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能计入的；所及闭包读 Ren 中间的“the system that one is in”（P40 把供给闭包读作所在系统，这一读法撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
+    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (P40 read the feeding closure as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+  "aliases": [
+    "Becoming.ClosedUnder",
+    "Becoming.WithinClosure",
+    "Becoming.WithinClosure.refl",
+    "Becoming.WithinClosure.trans",
+    "Becoming.WithinClosure.of_rel",
+    "Becoming.WithinClosure.mono",
+    "Becoming.WithinClosure.symm",
+    "Becoming.WithinClosure.not_rel",
+    "Becoming.closedUnder_withinClosure",
+    "Becoming.Web.DependsOn",
+    "Becoming.Flow.FedFrom",
+    "Becoming.Flow.Exchanges",
+    "Becoming.Flow.AffectedBy",
+    "Becoming.Flow.WithinInfluence",
+    "Becoming.Flow.TakesPart",
+    "Becoming.Flow.Shares",
+    "Becoming.Flow.WithinSystem",
+    "Becoming.Flow.Affects",
+    "Becoming.Flow.WithinReach",
+    "Becoming.Flow.fedClosed_iff",
+    "Becoming.Flow.withinFeeding_iff",
+    "Becoming.Flow.affectedBy_of_fedFrom",
+    "Becoming.Flow.shares_of_affectedBy",
+    "Becoming.Flow.withinInfluence_of_withinFeeding",
+    "Becoming.Flow.withinSystem_of_withinInfluence",
+    "Becoming.Flow.shares_symm",
+    "Becoming.Flow.WithinSystem.symm",
+    "Becoming.Flow.withinSystem_of_withinReach",
+    "Becoming.Flow.withinSystem_closed",
+    "Becoming.Flow.system_whole_of_common",
+    "Becoming.Flow.reach_whole_of_common",
+    "Becoming.Flow.feeding_whole_of_common",
+    "Becoming.Flow.feeding_unrestricted_of_common",
+    "Becoming.Flow.bounded_system_whole",
+    "Becoming.Trophic.mediates",
+    "Becoming.Trophic.near_closed",
+    "Becoming.Static.shares_unaffected",
+    "Becoming.Clearing.alongDependence_closed",
+    "Becoming.Clearing.levels",
+    "Becoming.Clearing.clearer_system",
+    "Becoming.Clearing.system_whole",
+    "Becoming.Clearing.clearerReach_closed",
+    "Becoming.Clearing.reach_middle",
+    "Becoming.Clearing.reach_centred"
+  ],
+  "dependencies": [
+    {
+      "id": "feeding-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用供给闭包 Flow.WithinFeeding、Flow.FedClosed 与 Clearing.dependenceRegion_iff；这里表明供给闭包是对被供给的闭包，是五个层次中最下的一层。",
+        "en": "Reuses the feeding closure Flow.WithinFeeding, Flow.FedClosed and Clearing.dependenceRegion_iff; here the feeding closure is shown to be the closure under being fed, the lowest of the five levels."
+      },
+      "interface": {
+        "output": {
+          "zh": "供给闭包与对供给封闭。",
+          "en": "The feeding closure and closure under feeding."
+        },
+        "input": {
+          "zh": "Flow.withinFeeding_iff、Flow.fedClosed_iff 与 Clearing.levels。",
+          "en": "Flow.withinFeeding_iff, Flow.fedClosed_iff and Clearing.levels."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean"
+      }
+    },
+    {
+      "id": "loss-beyond-a-region",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.alongDependence；这里表明它对受影响封闭。",
+        "en": "Reuses Clearing.alongDependence; here it is shown closed under being affected."
+      },
+      "interface": {
+        "output": {
+          "zh": "清除者与其来源这一区域。",
+          "en": "The region of the clearer and its source."
+        },
+        "input": {
+          "zh": "Clearing.alongDependence_closed：栖居者在清除者的影响闭包之外。",
+          "en": "Clearing.alongDependence_closed: the dweller lies beyond the clearer's influence closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Unrestricted 与 bounded，只作为结论：某个有界的意义恰是公理。",
+        "en": "Reuses Unrestricted and bounded, as conclusions only: some bounded significance is exactly the axiom."
+      },
+      "interface": {
+        "output": {
+          "zh": "公理 Unrestricted 与有界的意义 bounded。",
+          "en": "The axiom Unrestricted and bounded significance."
+        },
+        "input": {
+          "zh": "Flow.feeding_unrestricted_of_common、Flow.bounded_system_whole、Clearing.system_whole。",
+          "en": "Flow.feeding_unrestricted_of_common, Flow.bounded_system_whole, Clearing.system_whole."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Bridge 的种子—边闭包 Closure；闭包与之等价（withinClosure_iff_closure，在桥接中）。",
+        "en": "Reuses Becoming.Bridge's seed–edge closure Closure; the closure is equivalent to it (withinClosure_iff_closure, in the bridge)."
+      },
+      "interface": {
+        "output": {
+          "zh": "种子—边闭包，即沿边的可达。",
+          "en": "The seed–edge closure, reachability along edges."
+        },
+        "input": {
+          "zh": "WithinClosure 是从一个种子出发的种子—边闭包。",
+          "en": "WithinClosure is the seed–edge closure from one seed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "whole-first-and-bounded-centers",
+      "detail": {
+        "zh": "Ren 的层级“the whole … the system that one is in … the self”：系统不读中间的层级，为它提供所及闭包（AI 的读法，待 Ren）。",
+        "en": "Ren's levels “the whole … the system that one is in … the self”: the system does not read the intermediate level, and the reach closure is offered for it (the AI's reading, pending Ren)."
+      }
+    },
+    {
+      "id": "feedback-and-reach",
+      "detail": {
+        "zh": "影响闭包是形成自身的反馈所能计入的上界；部分的交换在所及闭包与系统之内到达。",
+        "en": "The influence closure bounds what a formation's own feedback can register; a part's exchange reaches within the reach closure and the system."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "detail": {
+        "zh": "系统不读一个中心所在的中间层级：每个形成都参与一个共同条件时它就是整体（Flow.system_whole_of_common，Clearing.system_whole）；共享不推出影响（Static.shares_unaffected）。",
+        "en": "The system does not read an intermediate level a center is in: wherever every formation takes part in one common condition it is the whole (Flow.system_whole_of_common, Clearing.system_whole); sharing does not give affecting (Static.shares_unaffected)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "闭包是形成层面的，不按时间先后，所以是可靠的上界，不是当下的关系；共同条件是布尔的，不度量耦合的强度，不把 Ren 的“highly entangled system”读作这一条件；所及闭包读“the system that one is in”是 AI 的读法，待 Ren；中心怎样表示其闭包没有建模；不含伦理谓词。",
+    "en": "The closures are at the level of formations and not ordered in time, so they are safe upper bounds, not present relations; the common condition is Boolean and does not measure the strength of coupling, and Ren's “highly entangled system” is not read as that condition; reading the reach closure as “the system that one is in” is the AI's reading, pending Ren; how a center represents its closure is not modelled; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T222130.672025Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T222130.672025Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "dc2abebba7620898cae8fddbc92e74544cf6f23af4926f4a4c48d4e5ca13477d",
+      "declarations": [
+        "Becoming.ClosedUnder",
+        "Becoming.WithinClosure",
+        "Becoming.WithinClosure.refl",
+        "Becoming.WithinClosure.trans",
+        "Becoming.WithinClosure.of_rel",
+        "Becoming.WithinClosure.mono",
+        "Becoming.WithinClosure.symm",
+        "Becoming.WithinClosure.not_rel",
+        "Becoming.closedUnder_withinClosure",
+        "Becoming.Web.DependsOn",
+        "Becoming.Flow.FedFrom",
+        "Becoming.Flow.Exchanges",
+        "Becoming.Flow.AffectedBy",
+        "Becoming.Flow.WithinInfluence",
+        "Becoming.Flow.TakesPart",
+        "Becoming.Flow.Shares",
+        "Becoming.Flow.WithinSystem",
+        "Becoming.Flow.Affects",
+        "Becoming.Flow.WithinReach",
+        "Becoming.Flow.fedClosed_iff",
+        "Becoming.Flow.withinFeeding_iff",
+        "Becoming.Flow.affectedBy_of_fedFrom",
+        "Becoming.Flow.shares_of_affectedBy",
+        "Becoming.Flow.withinInfluence_of_withinFeeding",
+        "Becoming.Flow.withinSystem_of_withinInfluence",
+        "Becoming.Flow.shares_symm",
+        "Becoming.Flow.WithinSystem.symm",
+        "Becoming.Flow.withinSystem_of_withinReach",
+        "Becoming.Flow.withinSystem_closed",
+        "Becoming.Flow.system_whole_of_common",
+        "Becoming.Flow.reach_whole_of_common",
+        "Becoming.Flow.feeding_whole_of_common",
+        "Becoming.Flow.feeding_unrestricted_of_common",
+        "Becoming.Flow.bounded_system_whole",
+        "Becoming.Trophic.mediates",
+        "Becoming.Trophic.near_closed",
+        "Becoming.Static.shares_unaffected",
+        "Becoming.Clearing.alongDependence_closed",
+        "Becoming.Clearing.levels",
+        "Becoming.Clearing.clearer_system",
+        "Becoming.Clearing.system_whole",
+        "Becoming.Clearing.clearerReach_closed",
+        "Becoming.Clearing.reach_middle",
+        "Becoming.Clearing.reach_centred",
+        "Becoming.Trophic.flow",
+        "Becoming.Trophic.web",
+        "Becoming.Trophic.responsiveFlow",
+        "Becoming.Trophic.responsiveWeb",
+        "Becoming.Static.flow",
+        "Becoming.Static.web",
+        "Becoming.Clearing.clearerReach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "d423cbaecf9e0ebb1adbd24425db53721d6db594e5d40e299c36610f1a74c763",
+      "declarations": [
+        "Becoming.withinClosure_iff_closure",
+        "Becoming.Closure"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "role": "proof",
+      "sha256": "36c940528887cc8c51a8191bf014b9967210c457c280f0795a9a6d1f7ba826fe",
+      "declarations": [
+        "Becoming.Flow.WithinFeeding",
+        "Becoming.Flow.FedClosed",
+        "Becoming.Clearing.dependenceRegion_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "01438c718a4e4dcc55d60a35d3d1e4703d7e04a55c7b6a378a6f9052274aa695",
+      "declarations": [
+        "Becoming.Clearing.alongDependence"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "declarations": [
+        "Becoming.Unrestricted",
+        "Becoming.bounded"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "59de94b5499bc3085ec121eea1b6b7e9e02c9b54b06c5ff68dbf8548d115dc74",
+      "declarations": [
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "d09394a9b60755ee31656c01d8b2c656952850cc4ec52e6eccc3f17f052a3c7c"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f7236a97fa06c3ac243dc62a7d6f8adddaa22ee07aa43c1e795a089af6000bde"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "role": "review",
+      "sha256": "771e4090ede7d482205a1da3d369734ed9511fc23c334df8449b6ba147345b3d"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md",
+      "role": "provenance",
+      "sha256": "cc3d43d6adea73e09194f9e119d0d707014e14cb2bae314ea48716b5611e2a98"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interdependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "按步的闭包；耦合的度量；Ren 的判断：所及闭包是否读出“the system that one is in”。",
+    "en": "Closures step by step; a measure of coupling; Ren's judgment whether the reach closure reads “the system that one is in”."
+  },
+  "history": [
+    {
+      "zh": "2026-10-11 P42：新增，按 Ren“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”；统一计划 P42；见整合文档 §61；整合之前经第十六次独立审查，处理见 §62.1。",
+      "en": "2026-10-11 P42: added, following Ren's ‘continue, let's pursue the strongest claims and complete proof, i think you see the right direction’; unification plan P42; see §61 of the integration note; reviewed before integration by the sixteenth independent review, treated in §62.1."
+    },
+    {
+      "zh": "2026-10-11 落地：与 R3、R4 合并，同 P44 一次落地；验证范围由分支回执 20261010T174514.186722Z 与外围回执 20261010T175236.872210Z 重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心另含 R3、R4 更新的 Becoming.Resolution 与 P44 新增的 Becoming.Relevance，包内模块由 37 个增至 38 个，核心闭包由 39 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 Discharge 一节 5 项定理；Becoming.Feedback 与 Becoming.Boundaries 的源与定理数不变）。整合之前的独立审查改称第十六次：R1–R2 的审查先落地为第十五次。断言不变。",
+      "en": "2026-10-11 landing: merged with R3 and R4 and landed with P44 in one commit; validation scope re-pointed from branch receipt 20261010T174514.186722Z and periphery receipt 20261010T175236.872210Z to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core also has Becoming.Resolution as R3 and R4 updated it and Becoming.Relevance added by P44, the package growing from 37 to 38 modules and the core closure from 39 to 40, with 1971 theorems/2993 declaration audits; the bridge adds the 5 theorems of its Discharge section; the sources and theorem counts of Becoming.Feedback and Becoming.Boundaries are unchanged). The review before integration is renumbered the sixteenth: the review of R1–R2 landed first as the fifteenth. The claim is unchanged."
+    }
+  ]
+}

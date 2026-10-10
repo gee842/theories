@@ -3904,6 +3904,332 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 
 **边界。** 离散步，活动的计数；水平与依存的计数在前提之下、有限世界中每个选择之下的起约束规律、更强的起约束读法仍开放；没有伦理谓词；名称（saturated、lossyQueue、relayQueue 等）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
 
+## 61. 反馈与所及（P42）
+
+2026-10-10/11。Ren 写下长远的目标（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）：
+
+> you know the long term objectives don't you? I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics
+>
+> do you see answers for these questions?
+
+AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给闭包对供给是精确的，却漏掉保护，如狼群压住会吃光森林的鹿；一般的对象是对影响形成所需者的一切影响的闭包；所在的系统还更大，`Clearing` 中栖居者在清除者的系统之内、依存之外；所以层次有四个：自身、依存、系统与整体。AI 还提出工作次序 (a)–(d)，前两项是：一个形成自身的反馈能计入哪些损失、不能计入哪些；四个层次与影响闭包。Ren 答：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context”。AI 把“i think you see the right direction”读作接受这一框架、各项回答与工作次序（来源中的 AI 读法，待 Ren）。对层级，Ren 此前写过：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。
+
+本节是计划 P42（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
+- [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)
+- [feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)
+- [comparison-within-reach](../../../../theories/becoming/results/records/comparison-within-reach.md)
+
+另修订四项记录，断言不变：
+- [feeding-closure](../../../../theories/becoming/results/records/feeding-closure.md)、[consumption-ends-with-feeders](../../../../theories/becoming/results/records/consumption-ends-with-feeders.md)、[closure-verdict-meets-axiom](../../../../theories/becoming/results/records/closure-verdict-meets-axiom.md)：撤回把供给闭包也读作 Ren 的“the system that one is in”，为它提供所及闭包；closure-verdict-meets-axiom 由 comparison-within-reach 推进；
+- [whole-first-and-bounded-centers](../../../../theories/becoming/results/records/whole-first-and-bounded-centers.md)：下一增量中的“路线 (b) 到达自身与所在的系统”改为“自身及其所依存的”。
+
+```text
+Result(s): 复用 feeding-closure（Flow.FedBy、Flow.WithinFeeding、Flow.FedClosed、Clearing.dependenceRegion_iff）、
+           closure-verdict-meets-axiom（Web.retains_bounded_iff_includes）、closing-needs-net-draw
+           （Flow.WithheldLevels、Web.Admits、Flow.Balances.withheld）、four-cases-of-a-part（Clearing.clearerPart、
+           admitted_without、unsupported_with、Web.Includes、Web.Exceeds）、significance-retained-within-margin
+           （Web.Retains、Web.Adds、Web.retains_iff_includes、Web.adds_iff_exceeds）、one-axiom-yields-g0
+           （Unrestricted、bounded）、loss-beyond-a-region（Clearing.alongDependence、Clearing.loses_beyond）；
+           新增上列三项
+Delta: 闭包：ClosedUnder、WithinClosure（refl、trans、of_rel、mono、symm、not_rel）、closedUnder_withinClosure。层次：Web.DependsOn、
+       Flow.FedFrom、Flow.Exchanges、Flow.AffectedBy、Flow.WithinInfluence、Flow.TakesPart、Flow.Shares、
+       Flow.WithinSystem、Flow.Affects、Flow.WithinReach、Flow.fedClosed_iff、Flow.withinFeeding_iff、
+       Flow.affectedBy_of_fedFrom、Flow.shares_of_affectedBy、Flow.withinInfluence_of_withinFeeding、
+       Flow.withinSystem_of_withinInfluence、Flow.shares_symm、Flow.WithinSystem.symm、
+       Flow.withinSystem_of_withinReach、Flow.withinSystem_closed；共同条件：Flow.system_whole_of_common、
+       Flow.reach_whole_of_common、Flow.feeding_whole_of_common、Flow.feeding_unrestricted_of_common、
+       Flow.bounded_system_whole。水平与反馈：Flow.Balances.levels_agree、support_agrees、agrees_iff_even、le_withheld、
+       admits_without_taker、agrees_of_quiet、exchanges_before_of_differs、exchanges_of_differs、agrees_or_reaches_before、
+       agrees_or_reaches、admits_unreached_before、admits_unreached、unregistered_beyond_influence；Flow.beyond_influence、
+       Flow.unreached_within_influence、Flow.ite_part_zero、Flow.part_of_ite_pos。所及：Flow.Reaches、
+       Flow.ReachesBefore（reaches）、Flow.reaches_within_closed、reaches_withinReach、reaches_withinSystem、
+       unreached_within_system、own_within_reach、own_within_system。比较：Flow.Balances.retains_transfer、
+       not_adds_transfer、comparison_local、comparison_within_reach、adds_iff_exceeds_of_decidable、
+       not_not_adds_of_exceeds、closed_comparison；Flow.DiffersBefore、Flow.Balances.differs_before、
+       comparison_within_difference。见证：Trophic（营养级联：mediates、mediated_unregistered、responsive_mixed、
+       difference_reaches_forest、mixed_part 等）、Static.shares_unaffected、Clearing（alongDependence_closed、levels、
+       clearer_system、sparedFlow、sparedWeb、unregistered、reaches_dweller、system_counts_dweller、system_whole、
+       clearerReach、reach_middle、reach_centred、clearer_own、reach_counts_dweller、sourcePart、
+       no_levels_without_source）、Margin.reach_without_misjudgment、Late.affected_without_effect
+Supplied premises / correspondence: 不加公理；一般定理的前提只有平衡（Flow.Balances），部分的比较另用扣留水平
+       （Flow.WithheldLevels，其余交换不变，是表示上的选择）；公理 Unrestricted 只作为三个见证的假设出现
+       （Trophic.mediated_unregistered、responsive_mixed、mixed_part）；离散的步、自然数的量，部分是判定的形成家族；
+       读法与名称是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261010T174514.186722Z（1882 项定理、2889 项声明审计、核心闭包 39 个模块、包 37 个模块，
+          全部源声明公理报告为空；Lean 生成而依赖 propext 的常量 38 个，没有源声明使用）；外围回执 20261010T175236.872210Z；
+          整合之前的第十六次独立审查（BECOMING-P42-P43-REVIEW.md）
+Boundary: 形成知道其所及闭包、想要任何东西都不推出；意义本身仍是给定的；对每个意义正面形式的增加比较只在意义可判定处
+          推出，一般只到双重否定；以扣留水平的比较固定其余交换，他者有回应的比较须给出第二个流；耦合不被度量
+Integration: 计划 P42（工作次序 (a)–(b)）；推进 closure-verdict-meets-axiom：它的覆盖条件由动力学推出，只要意义覆盖部分
+             所及；撤回 P40 把供给闭包读作所在系统的读法，为 Ren 的中间层级提供所及闭包（待 Ren）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `ClosedUnder`、`WithinClosure` 与 `WithinClosure.refl`、`trans`、`of_rel`、`mono`、`symm`、`not_rel`、`closedUnder_withinClosure` | 区域对一个关系封闭：成员与之有此关系者都是成员；`g` 在 `f` 的闭包之内：含 `f` 的每个封闭区域都含 `g`。闭包自反、可传递，随关系增大，对称关系下对称，本身封闭，所以是含 `f` 的最小封闭区域 |
+| `Flow.withinFeeding_iff`、`Flow.fedClosed_iff` | P40 的供给闭包就是对被供给（某一步）的闭包；对供给封闭就是对这一关系封闭 |
+| `Flow.AffectedBy`、`Flow.WithinInfluence`、`Flow.Affects`、`Flow.WithinReach` | 形成受另一个影响：另一个与它所依存的条件交换；影响闭包是对受影响的闭包，即能影响它的；所及闭包是对影响的闭包，即它的交换能逐环影响的 |
+| `Flow.TakesPart`、`Flow.Shares`、`Flow.WithinSystem`、`Flow.WithinSystem.symm` | 参与一个条件：依存于它或与它交换；两个形成共享一个条件：都参与它；系统是对共享的闭包，是类 |
+| `Flow.withinInfluence_of_withinFeeding`、`Flow.withinSystem_of_withinInfluence`、`Flow.withinSystem_of_withinReach`、`Flow.withinSystem_closed` | 供给闭包在影响闭包之内；影响闭包与所及闭包都在系统之内；系统对影响封闭 |
+| `Flow.system_whole_of_common`、`Flow.reach_whole_of_common`、`Flow.feeding_whole_of_common`、`Flow.feeding_unrestricted_of_common`、`Flow.bounded_system_whole` | 每个形成都参与一个条件时每个系统都是整体；都依存于它并与它交换时每个所及闭包都是整体；在某步都需要它并向它给予时每个供给闭包都是整体，以它为界的意义就是公理；每个中心的系统都是整体时，以系统为界的意义就是公理 |
+| `Flow.Balances.levels_agree`、`support_agrees`、`agrees_iff_even`、`agrees_of_quiet`、`exchanges_before_of_differs` | 两个平衡的流在一个条件上起始、取用与给予相同，就使它相同；所以形成的支持只计入与其所依存者的交换；扣留部分时两种水平在某步于一个条件上相同，恰当此前部分向它给予的等于从它取用的；成员都不与它交换时相同；某步不同之处，必有成员在更早的步与它交换 |
+| `Flow.beyond_influence`、`Flow.Balances.unregistered_beyond_influence` | 影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在闭包之外的部分，在闭包之内每一步都不被计入 |
+| `Flow.Reaches`、`Flow.ReachesBefore`、`Flow.Balances.admits_unreached_before`、`admits_unreached` | 部分到达一个形成：成员与它所依存的条件交换；在某步之前到达：成员在更早的步与它在该步所需的条件交换；在某步之前没有到达的，在该步有与无部分时同样被接纳 |
+| `Flow.reaches_within_closed`、`reaches_withinReach`、`reaches_withinSystem`、`unreached_within_system`、`own_within_reach`、`own_within_system` | 成员在一个对影响封闭的区域之内的部分只到达区域之内；所及闭包与系统都是这样的区域；系统之外的部分到达不了系统之内；形成自身的部分在其所及闭包与系统之内 |
+| `Flow.Balances.comparison_local` | 两个意义从一个立场在每步对部分此前已到达者一致时，对有与无部分的水平作同样的四个比较 |
+| `Flow.Balances.comparison_within_reach` | 覆盖部分在每步之前已到达者的任何意义，有与无部分的水平恰如彼此包含那样彼此保留有意义者，两个方向都是；两者都不增加，恰当两者都不超出：公理的比较 |
+| `Flow.Balances.adds_iff_exceeds_of_decidable`、`not_not_adds_of_exceeds` | 意义可判定时，增加就是超出；对每个意义，超出给出双重否定下的增加 |
+| `Flow.Balances.closed_comparison` | 以对影响封闭、含部分成员的区域为界的意义，对这个部分作包含那样的比较；不用公理 |
+| `Flow.DiffersBefore`、`Flow.Balances.differs_before`、`comparison_within_difference` | 两个平衡的流起始相同时，水平某步不同之处，两者在该条件上的取用或给予在更早的步不同；覆盖这一差别所及者的任何意义，对两个流作公理的比较 |
+| `Trophic.mediates` | 营养级联：两个流都平衡，只有活跃者给予与取用，活动需要支持；有狼群时鹿只在第 0 步活跃，森林每步被支持；没有狼群而鹿有回应时，森林从第 2 步起不被支持；狼群不向任何条件给予，在森林的供给闭包之外、影响闭包之内；远处的形成在森林的系统之外 |
+| `Trophic.mediated_unregistered`、`responsive_mixed`、`difference_reaches_forest` | 其余交换固定时狼群的部分不到达森林，森林每步有与无它都同样被接纳，部分缩小，关闭鹿，公理之下不保留；对照鹿有回应的流，同一取用是混合的；狼群的部分不到达森林，而两个流的差别在第 2 步之前到达它 |
+| `Trophic.mixed_part` | 远处形成与狼群的联合部分：从远处形成的立场，以各系统为界的意义判它保留，公理之下它失去鹿 |
+| `Static.shares_unaffected` | 两个形成依存于一个没有任何东西与之交换的条件：它们共享一个系统，却彼此不影响，也不在彼此的影响闭包之内 |
+| `Clearing.levels`、`clearer_system`、`system_whole`、`reach_middle`、`reach_centred` | 来源在清除者的供给闭包之内，栖居者在其影响闭包之外、系统之内；每个形成都在每个形成的系统之内，以系统为界的意义就是公理；所及闭包含栖居者、不含来源，严格介于清除者与整体之间；栖居者的所及闭包只含它自己 |
+| `Clearing.unregistered`、`reaches_dweller` | 清除者清除与不清除栖息地时，每步的支持都相同；它的部分到达栖居者 |
+| `Clearing.system_counts_dweller`、`reach_counts_dweller` | 从清除者的立场，以各影响闭包为界，部分保留；以各系统为界，它失去栖居者；以各所及闭包为界的意义不是公理，部分却失去栖居者 |
+| `Clearing.no_levels_without_source` | 其余交换不变时，没有水平平衡扣留来源之部分的流：这一比较不存在 |
+| `Margin.reach_without_misjudgment` | 部分到达形成的影响闭包之外，有它时的水平包含无它时的，所以每个意义都保留：到达之外不必误判 |
+| `Late.affected_without_effect` | 交换在依存之后：形成被影响、被到达，每步有与无部分都同样被接纳，部分在任何一步之前都没有到达它 |
+
+**它回答了什么。**
+- **反馈至多计入影响闭包。** AI 工作次序的 (a) 问：一个形成自身的反馈能计入哪些损失。在平衡的流中，水平只随其交换，所以形成的支持只计入与其所依存者的交换；影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在影响闭包之外的部分，在闭包之内每一步都不被计入（`Flow.Balances.unregistered_beyond_influence`）。`Clearing` 中，清除者的支持不显示它是否终结栖居者。影响闭包是上界：其余交换固定时，只有直接到达形成的部分被计入（`Flow.Balances.admits_unreached`）。
+- **层次有五个，方向有两个。** 次序 (b) 问四个层次与影响闭包。闭包统一了它们：供给、影响、所及与系统都是对一个关系的闭包，整体在最上面。影响闭包与所及闭包方向相反：前者是能影响形成的，后者是形成能影响的；`Clearing` 中两者互不包含（`Clearing.reach_middle`）。每个包含都有严格的见证（`Clearing.levels`、`Trophic.mediates`）。
+- **比较在部分所及之内决定。** 覆盖部分所及的任何意义都给出公理的比较（`Flow.Balances.comparison_within_reach`）。这推进 P40：`Web.retains_bounded_iff_includes` 要求另一条路径接纳的每个形成都在区域之内或被第一条接纳；这里这一条件由动力学推出，只要意义覆盖部分在每步之前已到达的。更强的形式是比较的局部性（`comparison_local`）：两个意义在所及之处一致，比较就相同。任意两个流也是这样（`comparison_within_difference`），所以他者有回应时，比较在差别所及之内决定，差别含回应。
+- **系统与 Ren 的中间层级。** 系统界定每个效果：在系统之内的只到达系统之内。它却不读 Ren 中间的“the system that one is in”：一个共同条件就使它成为整体（`Flow.system_whole_of_common`），系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包（AI 的读法，待 Ren）：它有中心、可嵌套，指向前方，不必含中心所依存的。在它上面，Ren 的较弱版本读作：覆盖中心所及的意义，对所及之内、无它的水平存在的每个部分，在其余交换固定时给出公理的比较；`Clearing` 中这一意义不是公理，对清除者自身的部分却与公理一致（`Clearing.reach_counts_dweller`）。
+- **“situational awareness”（AI 的读法，待 Ren）。** 只看重其反馈所计入者的中心，在部分只到达那个闭包之内时，对自身部分作公理的比较（`comparison_local`）；部分到达其外时可以误判，如清除者；到达其外本身不使它误判（`Margin`）。Ren 把“still need situational awareness”系于“the full truth set”。读作：要比较自身的部分，中心须知道部分在其反馈之外所到达的。
+
+**作者反审。**
+1. **两种反事实。** 以扣留水平的比较固定其余交换。它只计入部分直接的交换：狼群经鹿对森林的作用在其中不出现，狼群的部分反而缩小（`Trophic.mediated_unregistered`）；对照鹿有回应的流，它是混合的（`responsive_mixed`）。影响闭包的动机来自经他者传递的影响，而它所支持的计入定理用固定其余交换的比较：影响闭包是上界，不是所计入者的刻画。回应的流在见证中是给出的，不由动力学推出；动力学给出回应的比较列为开放。
+2. **比较可以不存在。** 部分给出他者所取时，无它的水平可以不平衡任何流（`Clearing.no_levels_without_source`）。这类部分没有扣留的比较；两个流的比较（`comparison_within_difference`）仍可用，只要另给第二个流。
+3. **时间的次序。** `AffectedBy`、`Reaches` 与 `Shares` 是形成层面的，不看步的先后：交换可以晚于依存（`Late.affected_without_effect`）。它们是可靠的上界。比较定理用按时间先后的 `ReachesBefore`，所以不受这一点影响；闭包本身不按时间先后，按步的闭包列为开放。
+4. **正面形式的增加。** 核心是构造性的。对每个意义，“两者都不增加，恰当两者都不超出”成立；正面形式在意义可判定处成立，一般只到双重否定（`adds_iff_exceeds_of_decidable`、`not_not_adds_of_exceeds`）。缺的只是可判定性，它可以作为假设陈述。
+5. **部分是判定的形成家族。** 一个形成的某一动作不与其其余交换分开；比较一个动作要经第二个流，如 `Clearing.unregistered` 中清除与不清除的两个流。
+6. **共同条件不度量耦合。** `reach_whole_of_common` 的条件是布尔的，不看时间：一个共同条件就够。Ren 的“at this moment in time, the whole earth has become a highly entangled system”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md)）是关于当下耦合强度的历史判断，这里不推出它，也不把它读作这一条件。
+7. **知道其所及不推出。** 定理说部分到达什么，不说中心知道什么。中心怎样表示其所及闭包没有建模。
+8. **读法与名称是 AI 的。** 闭包、影响闭包、所及闭包、系统、共同条件与营养级联（`Trophic`，生态学用语）是 AI 按 Ren 的命名准则所选；审查之后，`Protection`、`guards`、`verdict`、`commons`、`unguarded` 等改名（§62.1 第 16 项）。
+
+**检查。**
+- 模块在暂存区对核心编译，逐条审计全部 373 项声明（含 Lean 生成的辅助声明），公理报告全部为空；全部是项证明，不用策略、`propext`、`funext` 或经典推理。
+- 合并检查器在一个分离的工作树中对加入 P42 与 P43 的包检查一次，通过：回执 20261010T174514.186722Z。`Becoming.Feedback` 的 100 项定理全部空依赖；Lean 生成而依赖 propext 的常量仍是 38 个，没有源声明使用它们。
+- 外围桥接对这个核心重查（20261010T175236.872210Z），闭包中其余 42 个模块的当前字节与已通过回执一致。
+- 整合之前经第十六次独立审查；处理见 §62.1。
+
+
+## 62. 公理的分解（P43）
+
+2026-10-10/11。Ren 在《Truth exist》中写道（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md)）：“There is a set of universal invariations, that for every universe, becoming happens, the law follows”，它是“the bases of all ethics, for all beings, in all universes”；又写道：“There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death.” 此前 Ren 写道，自身是“a cognitive model which can not justify itself without some sort of "belief"”，“we”是“the universe/ecosystem that realizes its own existence”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)），中心的“boundary”“is also with in the same cognitive system”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md)）。
+
+AI 在 P42 之前提出（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)，AI 的话）：公理不由动力学推出，却可能由三个主张推出——每个行为都预设某个延续有意义；没有绝对的自身；真理对每个存在都一样；批评者必须否认的只有一步，即从“我为之行动的延续”到“延续本身”；这一步应精确陈述，在 Lean 中检查其骨架，并交独立审查。这是工作次序 (c)。AI 当时说这三个主张是 Ren 已持有的；第十六次审查把它更正为 AI 从 Ren 的话中读出的。“every act presupposes that some continuation matters”不是 Ren 的话。
+
+本节是计划 P43，由本会话完成。核心新增模块 `Becoming.Boundaries`，47 项定理，导入 `Becoming.Feedback`；内容放进章节 §6.11。结果是公理的精确分解：它定位这一步，不降低公理的内容。审查之前的稿子把它叫作“由三个前提推出公理”，那一说法撤回（§62.1 第 3 项）。成果记录新增两项：
+- [presupposition-scopes](../../../../theories/becoming/results/records/presupposition-scopes.md)
+- [axiom-decomposition](../../../../theories/becoming/results/records/axiom-decomposition.md)
+
+```text
+Result(s): 复用 metaethical-core-characterization（Valuation.significant_iff）、held-lives-g0-is-centering
+           （Valuation.significant_iff_held）、one-axiom-yields-g0（Unrestricted、bounded、
+           Valuation.premises_of_unrestricted；公理读作边界中立）、significance-retained-within-margin
+           （Web.retains_agree）、feeding-closure 与路线 (b)（Flow.WithinFeeding、Clearing.dependenceRegion_iff）、
+           comparison-within-reach（Flow.Balances.comparison_within_reach、Flow.WithinReach、Flow.Shares）；
+           新增上列两项
+Delta: 边界与超赋值：Boundary（closure、whole、holds、of_larger、only_whole）、SuperTrue、SubTrue、BoundaryInvariant、
+       superTrue_iff、boundaryInvariant_iff_determinate、superTrue_member_iff、subTrue_member、superTrue_all_iff、
+       subTrue_all_iff。预设与辖域：SignificantWithin、superTrue_significantWithin_iff_union、
+       superTrue_significantWithin_iff、subTrue_significantWithin_iff、subTrue_of_larger、subTrue_total_iff、
+       subTrue_empty_iff、unrestricted_iff_superTrue、superTrue_level_free、bounded_closure_iff、bounded_closure_least、
+       presupposition_scopes。分解：boundaryInvariant_iff_extends、boundaryInvariant_iff_all、
+       boundaryInvariant_iff_conditional、not_subTrue_of_invariant、unrestricted_of_presupposed、
+       unrestricted_iff_presupposed、unrestricted_iff_presupposed_along、unrestricted_iff_presupposed_of_whole、
+       StandpointInvariant、unrestricted_of_standpointInvariant、boundaryInvariant_iff_standpointInvariant、
+       OneCounts（sig、forms_apart）；推论 retains_agree_of_presupposed、Valuation.significant_of_presupposed。
+       所及之内：Flow.presupposition_order、Flow.Balances.presupposed_comparison、presupposed_reach_comparison、
+       Flow.unrestricted_iff_system_presupposed、Flow.unrestricted_iff_presupposed_of_common。见证：Clearing
+       （without_presupposition、without_invariance、without_standpoint_invariance、with_fixed_boundary、levels_differ、
+       own_presupposition、system_presupposition）
+Supplied premises / correspondence: 覆盖（每个形成都在每个自身的某个可容许边界之内）、预设在每个立场次真、对边界不变，
+       都是假设，不是 Lean 公理；沿一个关系，可容许的边界是含中心、对关系封闭的每个区域，整体在内（这一可容许性是
+       实质的选择）；不用伦理前提；读法与名称是 AI 的，待 Ren；超真、次真取自超赋值（Fine 1975）与次赋值
+       （Hyde 1997），依据先前知识
+Evidence: 合并检查器回执 20261010T174514.186722Z；外围回执 20261010T175236.872210Z；整合之前的第十六次独立审查（BECOMING-P42-P43-REVIEW.md）
+Boundary: 预设、覆盖与不变本身不推出；分解定位这一步，不降低公理；中心知道其所及闭包不推出；从意义到理由、动机或实践的
+          一步不推出；G0 仍是所采用的公理，直到 Ren 接受替代，替代等待对 G0 各处用法的审计（P44）
+Integration: 计划 P43（工作次序 (c)）；把公理超出预设的全部内容定位到不变的一步上，与 P39 的边界中立和 N_std 的规则
+             相连；路线 (b) 与公理是同一预设的窄辖域与宽辖域
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Boundary` 与 `closure`、`whole`、`holds`、`of_larger`、`only_whole` | 沿一个关系，形成之自身的边界：含它、对关系封闭的区域；闭包最小，整体最大，每个边界含闭包；关系越小，边界越多；一切都在闭包之内时整体是唯一的边界 |
+| `SuperTrue`、`SubTrue`、`BoundaryInvariant`、`superTrue_iff`、`boundaryInvariant_iff_determinate` | 关于自身的主张，按每个可容许边界成立是超真，按某个成立是次真，按一个成立就按每个成立是对边界不变；有可容许边界时超真就是不变的次真；不变就是次真即超真 |
+| `superTrue_member_iff`、`subTrue_member`、`superTrue_all_iff`、`subTrue_all_iff` | 不论怎样划都在自身之内的恰是闭包，按某种划法一切都在自身之内；整体可容许时，“自身之内的都有某性质”超真恰当一切都有，次真恰当闭包之内的都有 |
+| `SignificantWithin`、`superTrue_significantWithin_iff_union`、`superTrue_significantWithin_iff`、`subTrue_significantWithin_iff` | 预设：从立场 `p`，区域之内一切的延续在每一步都有意义；超真是可容许边界之并上的意义，整体可容许时是 `p` 处的公理；沿关系次真是闭包上的意义 |
+| `subTrue_of_larger`、`subTrue_total_iff`、`subTrue_empty_iff` | 沿较大的关系次真推出沿较小的；沿全关系次真恰是 `p` 处的公理，沿空关系次真恰是中心自身延续的意义 |
+| `unrestricted_iff_superTrue`、`superTrue_level_free` | 公理恰是每个立场的预设沿关系超真，与沿哪个关系无关 |
+| `bounded_closure_iff`、`bounded_closure_least`、`presupposition_scopes` | 以各中心闭包为界的意义，恰是不论怎样划都在自身之内者的意义，也是使每个预设次真的最小意义；同一预设，“不论怎样划”在窄辖域给出它，在宽辖域给出公理 |
+| `boundaryInvariant_iff_extends`、`boundaryInvariant_iff_all`、`boundaryInvariant_iff_conditional`、`not_subTrue_of_invariant` | 整体可容许时，不变恰是从按某处划出的预设到按整体划出的预设，恰是从预设到 `p` 处公理的条件句；有了预设，它就是 `p` 处的公理；某个延续没有意义时，不变的预设在哪里都不次真 |
+| `unrestricted_of_presupposed`、`unrestricted_iff_presupposed`、`unrestricted_iff_presupposed_along`、`unrestricted_iff_presupposed_of_whole` | 覆盖、次真与不变给出公理；整体可容许时公理恰是每个立场上次真且不变的预设，沿任何关系都是；每个形成都在每个中心的闭包之内时，整体是唯一的边界，公理恰是每个立场上次真的预设 |
+| `StandpointInvariant`、`unrestricted_of_standpointInvariant`、`boundaryInvariant_iff_standpointInvariant`、`OneCounts.forms_apart` | 从一个立场有意义的从每个立场都有意义（N_std 的规则）；每个形成都在某个中心的闭包之内、每个预设都次真时，它给出公理，并与处处对边界不变等价；没有处处的预设时两者分开 |
+| `retains_agree_of_presupposed`、`Valuation.significant_of_presupposed` | 推论：各立场的保留一致；在主张层面 G0 成立（经 `Web.retains_agree` 与 `Valuation.premises_of_unrestricted`，不计为独立结果） |
+| `Flow.presupposition_order` | 沿全关系次真推出沿共享条件次真，沿共享条件推出沿影响与沿受影响，沿受影响推出沿供给，沿任何关系推出沿空关系 |
+| `Flow.Balances.presupposed_comparison`、`presupposed_reach_comparison` | 预设沿一个含影响的关系次真时，对成员在中心闭包之内的每个部分作公理的比较；沿影响，是所及闭包之内的每个部分；不用不变，也不用超真（`comparison_within_reach` 的推论） |
+| `Flow.unrestricted_iff_system_presupposed`、`Flow.unrestricted_iff_presupposed_of_common` | 每个中心的系统都是整体时，公理恰是每个立场上沿共享条件次真的预设；一个共同条件就使它成立 |
+| `Clearing.without_presupposition`、`without_invariance`、`without_standpoint_invariance`、`with_fixed_boundary` | 每个前提都需要：没有意义时预设不变而公理不成立；以供给闭包为界的意义使预设次真而公理不成立，清除者处不变与对立场不变都不成立；只容许供给闭包时预设次真而不变，栖居者不在清除者的任何可容许边界之内，公理仍不成立 |
+| `Clearing.levels_differ`、`own_presupposition`、`system_presupposition` | 次真依赖关系，超真不依赖；清除者自己的预设沿共享条件或超真时，给出它的部分失去栖居者，划在供给闭包处则有一个使部分保留的意义满足它；`Clearing` 只有一个系统，公理恰是沿共享条件处处次真的预设 |
+
+**它回答了什么。**
+- **路线 (b) 与公理是同一预设的两种辖域。** 沿一个关系，`SubTrue` 的预设是闭包上的意义；路线 (b) 以各中心闭包为界的意义，恰是确定在自身之内者的意义，也是使每个预设次真的最小意义（`bounded_closure_least`）。超真的预设是公理（`unrestricted_iff_superTrue`）。所以“不论边界怎样划”放在窄辖域给出路线 (b)，放在宽辖域给出公理（`presupposition_scopes`）；这一算子不对条件句分配。这把 P40 的路线 (b) 从供给推广到任何关系：沿空关系是一个立场自身的好，沿全关系是该立场上的公理。
+- **公理的内容在哪里。** 整体可容许时，公理恰是每个立场上次真且对边界不变的预设（`unrestricted_iff_presupposed`）。不变恰是从预设到该立场上公理的条件句（`boundaryInvariant_iff_conditional`）；有了预设，它就是那里的公理（`boundaryInvariant_iff_all`）。所以这一分解没有把公理化约为更弱的或独立持有的前提：它把公理超出预设的全部内容定位到不变的一步上。P39 把公理读作边界中立：在一个立场上，这一步就是边界中立。跨立场，有了处处的预设与覆盖，它就是对立场不变，即 N_std 的规则（`boundaryInvariant_iff_standpointInvariant`）。于是核心已有的两个分解被带到延续的意义上：`Valuation.significant_iff`（种子、N_rel 与连通整体上的 N_std）与 `Valuation.significant_iff_held`（处处 S0 加 N_std）。审查之前写的“立场之间的一致是推出的，不是假设的”撤回：一致随这些前提推出，而前提之一就是这一步。
+- **这一步两头都走。** 某个延续没有意义时，不变的预设在哪里都不成立（`not_subTrue_of_invariant`）：否认这一步的人可以保留预设而只在一种划法或一个立场上持有它，也可以放弃预设。这与此前审查在容差中发现的对等相同（[评价者路线的审查](EVALUATOR-GROUNDING-REVIEW.md) P3）：容差连同 Chain 承载 G0 超出 S0 的全部内容；这一步取代容差，同样承载公理超出预设的全部内容，只是一步，而不是沿分级联系的许多小步，所以不继承连锁悖论的反驳。
+- **每个前提都需要。** `Clearing` 的四个见证各去掉一个前提或改变可容许类，公理都不成立。
+- **所及之内的部分。** 沿影响次真的预设，对所及闭包之内的每个部分作公理的比较，不用不变，也不用超真（`presupposed_reach_comparison`）。这是 P42 比较的推论，读 Ren 的较弱版本。沿共享条件次真推出沿影响次真（`presupposition_order`），所以沿影响的前提较弱。每个中心的闭包都是整体时，不变平凡地成立（`unrestricted_iff_presupposed_of_whole`）：这一步没有被消除，而是移进了把自身的边界划成对关系封闭这一点。
+
+**作者反审。**
+1. **覆盖由构造成立。** 沿一个关系，含中心的每个封闭区域，整体在内，都算作自身的一种可容许划法，所以覆盖不用另加前提。这一可容许性是实质的选择；它也使可容许类不是对日常的、模糊的“自身”的超赋值：它没有确定的非成员（`subTrue_member`）。Ren 的“There is no absolute self”本身不给出覆盖；“we”是“the universe/ecosystem that realizes its own existence”支持把整体作为“we”的一种划法。
+2. **对手在哪里。** 沿一个关系覆盖由构造成立，所以对手否认的是另一个前提。把意义奠基于已形成闭包的对手（如运作闭合），沿该闭包不对之封闭的关系否认次真，沿它对之封闭的关系否认不变，只有它也把可容许的划法限于那个闭包时才否认覆盖。模糊的自身在陌生者被每种划法排除处否认覆盖，在陌生者处于边缘处否认不变。降到零的分级权重，在闭包之内降到零否认次真，在闭包之外否认不变。现时目的的评价者否认次真。这里定位这些否认，不驳倒它们。
+3. **预设与 Ren 的 belief。** Ren 写自身“can not justify itself without some sort of "belief"”，是在说自身层的限度。把这一 belief 用作前提，是 AI 的一步；沿一个关系次真，远强于某个延续有意义。
+4. **不变与 Ren 的“universal invariations”。** Ren 的不变是规律跨宇宙的不变：“for every universe, becoming happens, the law follows”。“for all beings”最直接地读作对立场不变，即 N_std 的规则。把不变推广到意义，是 AI 的读法。
+5. **文献只依据先前知识。** 超赋值（Fine 1975）、次赋值（Hyde 1997）、Nagel（1970）的行动者相对与行动者中立的理由、Gewirth（1978）的类属一致性原则及其批评、Parfit（1984）、Sidgwick 的实践理性的二元，都依据先前知识，没有重读原文。这里只用它们定位这一步：从行动者的立场到不偏的伦理的论证，正是在这一步上受到争议；Parfit 把没有深层的自我读作削弱自利理论的特权，对应覆盖；这一步不消解 Sidgwick 的二元，只把它定位在这一步上。
+6. **层级次序（AI 的读法，待 Ren）。** Ren 的“the whole, and a weaker version is within the system that one is in, then the self”读作预设的三种读法：超真；沿影响次真，在所及闭包处；沿空关系次真，在自身处。所及闭包指向前方，所以在这一读法上，次序一路降到单纯的自身，不经过供给闭包，供给闭包在 `presupposition_order` 的另一支上。这一方向是否合适由 Ren 判断。
+7. **“the continuation goes beyond one’s cycle of life, goes beyond one’s death”没有用到。** 它更自然地支持按谱系个体化与按时间先后的所及，列为开放。
+
+**检查。**
+- 模块在暂存区编译，逐条审计全部 64 项声明，公理报告全部为空；全部是项证明。
+- 合并检查器回执 20261010T174514.186722Z：`Becoming.Boundaries` 的 47 项定理全部空依赖。外围回执 20261010T175236.872210Z。
+
+### 62.1 第十六次独立审查与处理
+
+落地时的更正（2026-10-11）：本审查在分支上称第十五次；R1–R2 的审查（[BECOMING-R1-R2-REVIEW.md](BECOMING-R1-R2-REVIEW.md)）先落地为第十五次，这里改称第十六次，内容不变。
+
+另一 agent（Claude Opus 5.5，未参与撰写）在整合之前审查了 P42 与 P43 的暂存稿，以及应协调者要求追加的扩展（[审查](BECOMING-P42-P43-REVIEW.md)）。它对被审文件逐字节重编译，审计两个模块与扩展的全部声明，公理报告全部为空；142 个探针声明全部是项证明，没有经典推理。判断：Lean 全部成立；问题在模块层的散文、AI 的读法与框架，不在证明。下表是十六项更正的处理；表中的定理名是整合后的名称。
+
+| 项 | 审查所见 | 处理 |
+|---|---|---|
+| 1 | 把系统读作 Ren 的中间层级，中间层级坍缩为整体：一个共同条件就使系统成为整体，系统是类，没有嵌套与中心（F1） | 撤回这一读法；为它提供所及闭包（`Flow.Affects`、`Flow.WithinReach`、`Flow.reaches_withinReach`、`Flow.withinSystem_of_withinReach`、`Clearing.reach_middle`、`reach_centred`、`reach_counts_dweller`），写明它指向前方、不必含供给闭包；加入 `Flow.system_whole_of_common`、`Boundary.only_whole` 与拆分后的 `Clearing.system_whole`；`Becoming.Interdependence` 的读法与章节 §6.9 加更正，P40 把供给闭包读作所在系统的读法撤回 |
+| 2 | 较弱版本给出整体对系统之内每个行为的判断，说得过宽（§4） | 写明范围：所及之内、无它的水平存在的每个部分，其余交换固定；系统是整体时，前提就是该立场上的公理 |
+| 3 | “由三个前提推出公理”是分解，不是化约；“derived, not assumed”不成立（F6） | 标题改为“The axiom decomposed: where its content lies”；加入 `boundaryInvariant_iff_conditional`、`boundaryInvariant_iff_determinate`、`not_subTrue_of_invariant`（审查的 `invariance_levels_down`），扩展 `boundaryInvariant_iff_all`；撤回“derived, not assumed”；写明复用 `Valuation.significant_iff`、`Valuation.significant_iff_held` 与 P39 的边界中立；补上“像容差连同 Chain 一样，承载公理在预设之外的全部内容” |
+| 4 | 两种反事实：影响闭包的动机是经他者的影响，而计入与比较定理固定其余交换（F2） | 两个模块的说明加上这一点；加入见证 `Trophic.mediated_unregistered`（审查的 `protection_invisible`）、`responsive_mixed`、`Clearing.no_levels_without_source`；影响闭包的读法加“once effects pass through the support and activity of others”。审查之外另加 `Flow.Balances.comparison_within_difference`：任意两个流的比较在其差别所及之内决定，他者的回应在差别之内 |
+| 5 | 扩展的标题与主张 (2)–(4) 说得过多，`Clearing.system_whole` 的位置不能编译（§6） | 标题改为“有了预设与中心覆盖，两种形式等价：那时每种都是公理”；`unrestricted_iff_presupposed_of_whole` 的说明写明“because the whole is then the only boundary”；不把 `Flow.unrestricted_iff_system_presupposed` 读作 Ren 的“highly entangled system”；主张 (4) 改为“在一个系统之内的只到达系统之内，在系统之外的到达不了系统之内”；`without_standpoint_invariance` 的说明与陈述对齐；`Clearing.system_whole` 按 `merge_ext.py` 拆分，Boundaries 另立 `Clearing.system_presupposition` |
+| 6 | 对手的位置：在模块自己的边界下，闭包对手否认的是次真或不变，不是覆盖（F9） | 按审查的文字改写：沿一个关系覆盖由构造成立，各对手否认另一个前提，并加入分级权重与现时目的的评价者 |
+| 7 | 对 Ren 的归属过度（§5） | “three claims Ren holds”改为“three claims the assistant read from Ren's words”；不变一条改为：“for all beings”最直接地读作对立场不变，“universal invariations”是规律跨宇宙的不变，推广到意义是 AI 的读法；预设一条加：Ren 写的是自身的限度，把 belief 用作前提是 AI 的一步 |
+| 8 | 覆盖由可容许类构造进去（F7） | 改为：沿一个关系，覆盖成立，是因为含中心的每个封闭区域，整体在内，都算作自身的可容许划法；这一可容许性是实质的选择 |
+| 9 | 超赋值术语（F8） | 注明超真取自 Fine 1975、次真取自 Hyde 1997；可容许类没有确定的非成员；不变就是确定（`boundaryInvariant_iff_determinate`）；两种辖域写成一个定理（`presupposition_scopes`） |
+| 10 | 层级次序没有定理（F10） | 加入 `Flow.presupposition_order`（审查的 `presupposition_levels`）；次序的读法随所及闭包改为：超真；沿影响次真；沿空关系次真；`Clearing` 中沿共享条件与超真重合（`Clearing.system_presupposition`） |
+| 11 | “the whole need not be admissible”有误导：沿共享条件整体总可容许 | 改为“Neither invariance nor super-truth is used” |
+| 12 | “恰在其行为到达闭包之外处误判”有反例（F5，C3） | 改为：部分只到达闭包之内时作公理的比较（`Flow.Balances.comparison_local`，审查的 `verdict_local`）；到达之外时可以误判；到达之外本身不使它误判（`Margin.reach_without_misjudgment`） |
+| 13 | 正面形式的增加判断（F4） | 加入 `Flow.Balances.adds_iff_exceeds_of_decidable` 与 `not_not_adds_of_exceeds`；“不推出的”改为：正面形式在意义可判定处成立，一般只到双重否定 |
+| 14 | 局部的说明与陈述 | `system_retains_iff`（只给保留，公理只用来改写包含）换成不用公理、四个比较都给的 `Flow.Balances.closed_comparison`；`own_presupposition` 的说明改为“is met by a significance under which the part retains”；Boundaries 的“不推出的”加上预设本身是给定的、沿关系已带着传递；`superTrue_all_iff` 补上“where the whole is admissible” |
+| 15 | 记录与复用 | P43 的记录写明复用 metaethical-core-characterization、held-lives-g0-is-centering、one-axiom-yields-g0 与 feeding-closure，增量是边界与超赋值的表述、两种辖域与对手的定位；`retains_agree_of_presupposed`、`Valuation.significant_of_presupposed` 写作推论；P42 的记录写明推进 closure-verdict-meets-axiom，`presupposed_comparison` 写作 comparison-within-reach 的推论 |
+| 16 | 名称（Ren 的命名准则） | `Protection` 改为 `Trophic`（营养级联；审查建议的 `Cascade` 已是 `Becoming.Reserve` 中的命名空间）；`guards` 改为 `mediates`；判断（verdict）改为比较（`comparison_local`、`comparison_within_reach`、`closed_comparison`、`presupposed_comparison`、`presupposed_reach_comparison`）；“conduct”改为“a part's exchange”；假设名 `entangled` 改为 `connected`。审查之外，按同一准则另改：`commons`（经济学用语）改为共同条件（`system_whole_of_common` 等），`unguarded` 改为 `responsive`，`protection_unregistered` 改为 `mediated_unregistered` |
+
+**审查之外的加强。** 比较定理改用按时间先后的 `ReachesBefore`（审查的 B4）；`closed_comparison` 不用公理；任意两个流的比较（`comparison_within_difference`、`difference_reaches_forest`）；共同条件下的所及闭包与供给闭包（`reach_whole_of_common`、`feeding_whole_of_common`、`feeding_unrestricted_of_common`：在某步每个形成都需要一个条件并向它给予时，路线 (b) 就是公理）；`Static.shares_unaffected`。
+
+**边界。** 无伦理结论；不替 Ren 选择任何读法。仍开放：所及闭包是否读出“the system that one is in”、预设是否读出 Ren 的 belief、Ren 是否持有不变的一步（属于 Ren 的选择）；动力学给出回应的比较、按步的闭包、中心怎样表示其所及、耦合的度量（进一步的证明）；预设、覆盖与不变的根据（哲学根据）。本节与 §61 经第十六次审查；处理之后的文本尚未经独立审查。
+
+## 64. G0 各处用法的审计（P44）
+
+2026-10-11。Ren 的公理：“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。P39 表明它推出 G0（§53）。P40 之后，AI 对“是否以这条公理替代 G0”的回答是分两步：先审计 G0 每处用法对 `living` 的读法，再替换；Ren 写道：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）。AI 把它读作接受这一次序（AI 的读法，待 Ren）。这是工作次序 (d)。
+
+本节是计划 P44，由本会话完成。核心新增模块 `Becoming.Relevance`，30 项定理，导入 `Becoming.Boundaries` 与 `Becoming.Ranking`；桥接新增 5 项定理；内容放进章节 §6.12。结论：审计是干净的，其中一处读法是被迫的；在公理之下，以可能性读的 C 决定了 `Ranking` 留给读法选择的过度汲取，且不扣下任何事件。替换本身属于 Ren，G0 仍是所采用的公理。成果记录不新增，扩展两项：
+- [one-axiom-yields-g0](../../../../theories/becoming/results/records/one-axiom-yields-g0.md)：G0 的每处用法由公理解除；公理就是对任何东西的 G0；理由前提须读在活的内容上；普遍理由不用连通。
+- [ranking-under-readings](../../../../theories/becoming/results/records/ranking-under-readings.md)：可能性读法，以及可能性优先的次序。
+
+```text
+Result(s): 复用 one-axiom-yields-g0（Unrestricted、Valuation.premises_of_unrestricted、Web.paths）、ranking-under-readings
+           （course、absent、undisturbed_sustains、ExtendsUnder、ComparisonUnder、wholeRun、stepwise、credited_before_loss、
+           stops_credited、restraint、contest、sharing_credited、ThirdParty）、significance-retained-within-margin（Web.Retains、
+           Web.Adds、Includes.retains、Retains.not_added）、four-cases-of-a-part（Web.Admits、Web.Includes、Admits.mono）、
+           metaethical-core-characterization（SecuresPositiveGround、articulates、PositionedArticulation、universal_reason 的论证）、
+           becoming-spine-instances（Frame.inventory、g0_iff）、relational-renewal-classification（overdraw_consuming、
+           within_renewal_sustains、unfolding_dependent、malignant、sharing、winning）；扩展 one-axiom-yields-g0 与
+           ranking-under-readings
+Delta: 正面相关从意义读出：Frame.relevance、g0_of_unrestricted、relevance_least。公理就是对任何东西的 G0：
+       unrestricted_iff_g0、Web.paths_somewhere、Web.unrestricted_iff_paths_g0。理由前提：securesPositiveGround_total、
+       articulatesLiving、articulates_total、positioned_articulation_of_articulatesLiving、universal_reason_living、
+       universal_reason_of_unrestricted、Widening（valuation、admitted、before、bare_forces_reason）。水平处处不低：
+       Web.Includes.of_le、Web.not_added_of_le。可能性读法：Ranking.possible、possible_of_active、absent_admits_all、
+       possible_extends、possible_ranks、possible_course_iff、possible_extends_iff、malignant_possible、possible_contest、
+       possible_restraint、ThirdParty.possible_extends、possible_tie、readings_rank_presence、sharing_presence。可能性优先：
+       possibleFirst、possibleFirst_order、possibleFirst_overdraw、possibleFirst_presence、Rest（courses、rest_ranked_below）。
+       桥接：inventory_g0_of_unrestricted、relevance_inventory_iff、new_realization_of_unrestricted、
+       contingent_generation_of_unrestricted、every_situated_position_has_reason_of_unrestricted
+Supplied premises / correspondence: 公理（Unrestricted）只作假设出现；正面相关读作已实现的活的内容的意义、A 读在活的内容上、
+       可能性读法与可能性优先的次序都是定义；C 只作定义 Comparison 出现；读法与名称是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261010T214440.263682Z；外围回执 20261010T222130.672025Z；对 G0 全部出现的逐处阅读（下表）
+Boundary: 审计的完整性来自逐处阅读，Lean 证明的是解除引理，以及桥接已导入的三项定理的转移；从意义到理由的一步（A）仍是前提；
+          比较继续用哪一种属于 Ren；G0 仍是所采用的公理，直到 Ren 接受替换
+Integration: 计划 P44（工作次序 (d)）；把 P39 的“G0 推出”推到 G0 的每处用法；回答 Ranking 留下的问题的一部分：在公理之下，
+             以可能性读的 C 给出整段读法把没有过度汲取或消耗的继续排在上面的每个排序，而不扣下任何事件
+```
+
+**审计。** `grep` 出 G0 在核心（9 个文件）与外围 generative-capacity（19 个文件）中的全部出现，逐处分类：
+
+| 位置 | 用法 | 在公理之下 |
+|---|---|---|
+| `Metaethics`：`G0`、`Valuation.g0` | G0 的定义；主张层的 G0（`Valuation.Significant`）给出框架上的 G0 | 主张层的 G0 由公理推出（`Valuation.premises_of_unrestricted`，P39）；框架上的 G0 由 `g0_of_unrestricted` 给出，正面相关读作已实现的活的内容的意义 |
+| `Metaethics`：`articulates`（A）、`positioned_articulation_of_articulates`（D）、`universal_reason` | 正面相关进入理由前提：A 以裸意义写出 | 一切都有意义时，以裸意义读的 A 给产生任何新内容的回应以理由（`articulates_total`、`Widening.bare_forces_reason`）；读在活的内容上的 A（`articulatesLiving`）给出 D（`positioned_articulation_of_articulatesLiving`）与普遍理由，且不用种子、中立或连通（`universal_reason_of_unrestricted`） |
+| `Standpoints`、`Correspondence`、`Descent`、`Boundaries` | 主张层 G0 的刻画（处处 S0 加 N_std；种子加 N_rel 与 N_std）；中立不成立处 G0 不成立的反模型；P43 的推论 | 刻画是等价式，不受影响；公理推出等价式的两边（P39）；反模型定位公理所排除的有界规则 |
+| `Significance` | 公理推出 G0 | 替换的依据 |
+| `Ranking` | C 在两种 `living` 读法下的排序；不出现 G0 | 不受影响；在公理之下，以可能性读的 C 决定过度汲取族（见下） |
+| `Interdependence`、根模块 | 只在说明中提到 G0 | 不受影响 |
+| `Bridge` | 核心的 G0、C、D 按定义即外围的（`g0_iff` 等） | 新增五项，见下 |
+| 外围 `GenerativeComparison.new_realization_has_positive_relevance` | 以 G0 为假设 | `new_realization_of_unrestricted` |
+| 外围 `PositiveGroundUncertainty.contingent_generation_has_positive_ground`、`certified_integral_supplies_contributory_reason` | 以 G0 为假设；后者另有理由前提 `articulate : ∀ h q, positive h q → reason h` | 前者：`contingent_generation_of_unrestricted`；后者以从意义读出的正面相关实例化，理由前提保持其范围；以裸意义实例化，理由前提就要求每条历史都有理由 |
+| 外围 `PositionedPositiveReason.every_situated_position_has_reason`、`g0_holds` 及其模型 | 前者以 G0 与 D 为假设；模型中 G0 成立（`g0_holds`），有通达而不背书的立场有理由，背书而无通达的没有 | `every_situated_position_has_reason_of_unrestricted`，D 读在从意义读出的正面相关上；模型中取处处成立的意义，公理成立，`g0Relevant` 就是从意义读出的正面相关（`living` 读作生成的），决定理由的仍是通达而不是背书 |
+| 外围 `ProtectionPriorityRival.g0_recognizes_traded_gains`、`g0_leaves_ordering_open` | 以 G0 为假设；G0、C 与 J2 共存而 G0 不约束次序 | 前者以实例化解除；后者的模型中取处处成立的意义，公理成立，公理同样不约束次序 |
+| 外围 `OpenFutureRevision.positive_ground_by_bound` | 以 G0 为假设 | 以实例化解除 |
+| 外围 `RenewingFormation.event_reading_recognizes_both` | 在把每个已实现事件都算作生成的宽清单上以 G0 为假设 | 以实例化解除；公理同样给两个继续的事件以意义，区分要靠比较（见下） |
+| 外围 `EvaluatorGrounding.reach_is_g0`、`self_good_derives_reachable_g0` | 推出一个立场、一条历史上的 G0 实例 | 不以 G0 为假设，不受影响 |
+| 外围其余十二个文件 | 只在说明中提到 G0 | 不受影响 |
+
+| 声明 | 内容 |
+|---|---|
+| `Frame.relevance`、`g0_of_unrestricted`、`relevance_least` | 从意义读出的正面相关：已实现、其延续从每个立场都有意义的活的内容；在公理之下，它在每个框架上、对 `living` 的每种读法满足 G0，且是满足 G0 的最小者，恰是已实现的活的内容 |
+| `unrestricted_iff_g0`、`Web.paths_somewhere`、`Web.unrestricted_iff_paths_g0` | 在主张是形成在某步、每个主张都在某处实现的框架上，公理恰在 G0 以每个主张为活、以从每个立场的意义读正面相关时成立；每个依存网的水平路径都是这样的框架 |
+| `securesPositiveGround_total`、`articulatesLiving`、`articulates_total` | 一切都有意义时，以裸意义确保根据就是确保任何新内容；以裸意义读的 A 给产生任何新内容的回应以理由，读在活的内容上的 A 给确保新的活的内容的回应以理由 |
+| `Widening.bare_forces_reason` | 见证：唯一的新内容不活；以裸意义读的 A 迫使理由，读在活的内容上的 A 被空理由满足 |
+| `positioned_articulation_of_articulatesLiving`、`universal_reason_living`、`universal_reason_of_unrestricted` | 读在活的内容上的 A 给出 D；主张层的 G0 加这一 A 给出普遍理由；在公理之下，不用种子、中立或连通 |
+| `Web.Includes.of_le`、`Web.not_added_of_le` | 水平处处不低的路径包含另一条，从不被保留且增加排在下面 |
+| `Ranking.possible`、`possible_of_active` | 可能性读法：继续的水平容许某形成之处记入它，活跃与否；在依存的继续中它记入每个活跃的形成 |
+| `absent_admits_all`、`possible_extends`、`possible_ranks` | 没有焦点形成的继续每步容许每个形成；在定律族的每个定律中，超出更新地汲取者不在场的继续扩展它在场的继续，每个满足 C 的比较都把前者排得更高 |
+| `possible_course_iff`、`possible_extends_iff` | 同一定律的两个继续有同样的所需；在公理之下，按可能性读法的扩展就是在定律的网上保留且增加有意义者 |
+| `malignant_possible` | 恶性增殖：可能性读法把不在场排得更高，并记入它的第一个事件；逐步读法记入它，整段读法扣下它 |
+| `possible_contest`、`possible_restraint`、`ThirdParty.possible_extends` | 共享扩展以消耗取胜；二元族中节制扩展过度汲取；有第三个形成时亦然，那里逐步读法不排序 |
+| `possible_tie`、`readings_rank_presence`、`sharing_presence` | 在更新之内汲取的形成不增加可能性：两个继续容许同样的形成，互不扩展；两种 `living` 读法都把它的在场排得更高；共享是实例 |
+| `possibleFirst`、`possibleFirst_order`、`possibleFirst_overdraw`、`possibleFirst_presence` | 先比可能性、再比一种读法所记入的事件：在可能性读法下满足 C，非自反、传递；不论第二步用哪种读法都把过度汲取者的不在场排得更高，第二步用任一种 `living` 读法都把在更新之内的在场排在不在场之上 |
+| `Rest.rest_ranked_below` | 一个被支持而在第 0 步休息的形成：两个继续的可能性相同；可能性优先把休息排在不间断的活动之下 |
+| 桥接 `inventory_g0_of_unrestricted`、`relevance_inventory_iff` | 在公理之下，外围的 G0 对每个清单成立，正面相关读作已实现、其延续有意义的生成内容；在框架的清单上它就是核心的 `Frame.relevance` |
+| 桥接 `new_realization_of_unrestricted`、`contingent_generation_of_unrestricted`、`every_situated_position_has_reason_of_unrestricted` | 由公理推出：生成扩展的新实现、偶然的生成所确保的正面根据，以及定位表达的普遍指向（D 读在从意义读出的正面相关上） |
+
+**它回答了什么。**
+- **替换是干净的。** 每处以 G0 为假设的用法，都对任意的正面相关成立。从意义读出的正面相关在公理之下满足 G0（`g0_of_unrestricted`），且是满足 G0 的最小者，恰是已实现的活的内容（`relevance_least`），也就是外围模型中的 `g0Relevant`。所以每处用法由它解除；桥接对外围的接口作出这一点（`inventory_g0_of_unrestricted`），并写出桥接已导入的三项定理。刻画是等价式；反模型取处处成立的意义就满足公理；两者都不受影响。
+- **公理就是对任何东西的 G0。** 在每个依存网的水平路径上，公理恰在 G0 以每个主张为活、以从每个立场的意义读正面相关时成立（`unrestricted_iff_g0`、`Web.unrestricted_iff_paths_g0`）。P39 说 G0 是公理限于活的主张；这里反过来：公理是 G0 扩到任何东西，并把“正面”减弱为“有意义”。所以替换不是换上一条外来的公理，而是 G0 自身的形式取最宽的辖域。
+- **一处读法是被迫的。** 一切都有意义时，以裸意义读的 A 给产生任何新内容（活的与否）的回应以理由（`articulates_total`）；见证中唯一的新内容不活，裸意义的 A 仍迫使理由，读在活的内容上的 A 不迫使（`Widening.bare_forces_reason`）。所以在公理之下，正面相关必须读作活的内容的意义：意义不是正面相关，这也是 Ren“doesn't have to be positive”的一种读法。如此读，A 给出 D（`positioned_articulation_of_articulatesLiving`），普遍理由由公理推出，不用种子、N_rel、N_std 或连通（`universal_reason_of_unrestricted`）。前提卡上这四项都由公理给出，A 仍是前提。
+- **在公理之下，C 以可能性读。** 可能性读法在一个继续的水平容许某形成之处记入它，活跃与否（`Ranking.possible`）。对同一定律的两个继续，在公理之下按此读法的扩展就是保留且增加有意义者（`Ranking.possible_extends_iff`），即 P39 的比较。在定律族的每个定律中，它把没有过度汲取者的继续排在有它的之上（`possible_ranks`）；在二元族中把节制排在过度汲取之上（`possible_restraint`），有第三个形成时亦然，那里逐步读法不排序（`ThirdParty.possible_extends`）；它也把共享排在以消耗取胜之上（`possible_contest`）。它不扣下任何事件：在依存的继续中它记入每个活跃的形成（`possible_of_active`），包括恶性增殖者的第一个事件；逐步读法记入这个事件，整段读法扣下它（`malignant_possible`）。`Ranking` 的结论是：要由 C 保持“没有它更好”，所比较的读法须扣下损失之前的事件；这一结论在可能性上不出现，因为排序来自部分失去的，而不是不计形成本身。
+- **它不排序的。** 在更新之内汲取的形成不增加可能性：它的继续与没有它的继续容许同样的形成，互不扩展（`possible_tie`），而两种 `living` 读法都把它的在场排在上面（`readings_rank_presence`）；共享是实例（`sharing_presence`）。一般地，水平处处不低的路径从不被排在下面（`Web.not_added_of_le`），所以留下水平不低的休息与节制从不更差。
+- **可能性优先。** 先比可能性、再比一种读法所记入的事件，这一比较在可能性读法下满足 C，且非自反、传递（`possibleFirst_order`）。不论第二步用哪种读法，它都把过度汲取者的不在场排在其在场之上（`possibleFirst_overdraw`）；第二步用任一种 `living` 读法，它都把在更新之内的在场排在不在场之上（`possibleFirst_presence`）。它也把不增加可能性的一次休息排在不间断的活动之下（`Rest.rest_ranked_below`）。
+
+**作者反审。**
+1. **审计的完整性来自阅读。** Lean 不能对“仓库中的每处用法”量化。这里的完整性是：`grep` 出 G0 的全部出现，逐处分类（上表）。解除引理对任意清单与任意框架成立，所以每处以 G0 为假设的定理都可实例化。只为桥接已导入的三项写出了 Lean；`ProtectionPriorityRival`、`OpenFutureRevision` 与 `RenewingFormation` 不在桥接的导入之内，以同一实例化成立，没有写成 Lean。
+2. **从意义读出正面相关是定义。** 它不是推出的：AI 把 G0 的正面相关读作已实现的活的内容的意义。根据是上面被迫的一处：以裸意义读，A 就给任何新内容以理由。这一定义使正面相关恰是满足 G0 的最小者，所以它不给 G0 增加任何内容；外围已有的模型 `g0Relevant` 就是它。
+3. **可能性读法计能形成的，不计形成了的。** 一个形成活着而不增加可能性，与它能活而没有活，不分高下（`possible_tie`）。推广开去，一个无物活动而水平处处足够的继续，与一个形成在更新之内兴旺的继续，也不分高下。这是 Ren 的三相（生成、中性、退化）的一种读法：不损也不增加的是中性。如果 Ren 认为“its continuation into the future has significance”说的是实际的延续，实际活着比能活更好，可能性读法就漏掉了它。
+4. **可能性优先有代价。** 它是另加的前提；公理只给出可能性读法。它取回“在场优于不在场”，同时把不增加可能性的休息排在活动之下（`Rest.rest_ranked_below`），那正是 `RenewingFormation` 对按事件的 C 记下的表示限度（`event_comparison_ranks_rest_below`）。所以只要把实际的延续计在可能性之外，一次不增加可能性的停顿就算作失去；这一代价随读法而来，不是表示的偶然。
+5. **整段读法扣下的是什么。** `malignant_possible` 表明，整段读法保持“没有恶性增殖更好”，靠的是扣下恶性增殖者在损失之前的事件，即把它当作从未活过。在公理之下，一切的延续都有意义，恶性增殖者的也有。可能性读法把它的不在场排得更高，而不否认它的事件有意义：排序来自它的部分失去的，即维持者的延续，而不是不计它是什么。判断落在部分的交换上，不落在谁该存在上（AI 的读法，待 Ren）。
+6. **`possible_extends_iff` 的范围。** 它只对同一定律的两个继续成立，那里两者有同样的所需与需要量。不同定律的继续（如节制族的停止与过度汲取）各按自己的所需容许；`possible_restraint` 不依赖两者相同，但与保留、增加的等同需要共同的网。
+7. **`Rest` 在定律族之外。** 定律族中焦点形成被支持时总是活跃的，所以休息不能在其中表示；`Rest` 与 `ThirdParty` 一样是另设的展开。
+
+**检查。**
+- 模块在暂存区编译，逐条审计全部 76 项声明（含 Lean 生成的匹配函数），公理报告全部为空；全部是项证明。桥接新增的五项在暂存区编译，公理报告为空。
+- 合并检查器回执 20261010T214440.263682Z：`Becoming.Relevance` 的 30 项定理与桥接新增的 5 项定理全部空依赖。外围回执 20261010T222130.672025Z。
+- P42 与 P43 先在分支上检查（回执 20261010T174514.186722Z，外围回执 20261010T175236.872210Z）；与 R3、R4 合并后，P42–P44 一次落地，上面的回执覆盖合并后的整个包。
+
+**Ren 的选择。**
+1. 是否以公理替换 G0 为所采用的公理。审计干净：替换后 G0 是定理，前提卡上的种子、S0、N_rel、N_std（与水平路径上的 C）由公理给出；A、L 与 J1–J4 仍是前提，A 读在活的内容上。
+2. 正面相关是否读作已实现的活的内容的意义，作为“doesn't have to be positive”的读法。
+3. 比较继续用哪一种：可能性读法，由公理自身给出，不增加可能性的在场与不在场不分高下，休息不更差；`living` 的一种读法加 C，整段读法扣下过度汲取者的事件，逐步读法不排序过度汲取与其不在场；或可能性优先，在场优于不在场，休息排在活动之下。
+
+**边界。** 不推出伦理结论之外的东西；不替 Ren 选择读法；替换须经 Ren 接受。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4332,4 +4658,30 @@ On the AI's reading, pending Ren: with bounded efficiency, enclosed generation o
 
 On the AI's reading, pending Ren: binding leaves in the counts only its instances, activity and arising, and arising at a step of activity where arising is bound to come from activity. Records extended or revised: whole-law-of-counting, map-of-premises, counting-under-enclosure. Receipt 20261010T171040.121853Z (Premises 59, Counting 161). Not yet independently reviewed; the author's counterreview is in section 60.
 
-The package now has 1788 theorems and 2748 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60. The periphery bridge passed against this core (receipt 20261010T182121.048951Z).
+**P42: feedback and reach.** Ren set out the long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; after the AI's answers, Ren replied “continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context” ([source](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)). P42 asks, with no axiom, how far a formation's own feedback reaches, how far a part's exchange reaches, and where the comparison with and without a part is decided. `Becoming.Feedback` (100 theorems) imports `Becoming.Interdependence`; the axiom appears only as a hypothesis of three witnesses.
+- **Five levels of closure.** A region is closed under a relation when whatever a member bears the relation to is a member, and `WithinClosure` gives the least such region holding a formation, the Bridge's seed–edge closure from one seed (`withinClosure_iff_closure`). The feeding closure, the influence closure (what can affect a formation), the reach closure (what its exchange can affect, link by link) and the system (the closure under sharing a condition, a class) are each such a closure. The feeding closure lies within the influence closure, and the influence and reach closures lie within the system. Each inclusion can be strict, and influence and reach point in opposite directions (`Clearing.levels`, `Clearing.reach_middle`, `Trophic.mediates`).
+- **One common condition makes the system the whole.** Where every formation takes part in one condition, every system is the whole (`Flow.system_whole_of_common`). Where every formation depends on it and exchanges with it, every reach closure is the whole. Where at one step every formation requires it and gives to it, every feeding closure is the whole, and route (b) is the axiom (`Flow.feeding_unrestricted_of_common`).
+- **What feedback registers.** In a balanced flow a formation's support registers only its exchanges with what it depends on (`Flow.Balances.support_agrees`). So a part whose members all lie beyond a formation's influence closure is registered within it at no step (`Flow.Balances.unregistered_beyond_influence`). In `Clearing` the clearer's support is the same at every step whether or not it clears the habitat, while the dweller ends (`Clearing.unregistered`).
+- **The comparison is decided within reach.** For any significance covering what a part has reached before each step, the comparison of the levels with and without the part is the axiom's comparison by inclusion (`Flow.Balances.comparison_within_reach`). Two significances that agree on that reach compare alike (`comparison_local`). Where significance is decidable, adding is exceeding (`adds_iff_exceeds_of_decidable`); in general this holds only under double negation. This advances P40: the covering condition of `Web.retains_bounded_iff_includes` now follows from the dynamics. The comparison of any two balanced flows that start alike is decided within what their difference reaches (`comparison_within_difference`), so where others respond, the difference holds their responses.
+- **Where the comparison stops.** The comparison by withheld levels holds the rest of the exchange fixed. In the trophic cascade, with the deer's browsing held as it is, the wolves' part narrows and closes the deer (`Trophic.mediated_unregistered`); against the flow in which the deer respond, the same taking is mixed (`Trophic.responsive_mixed`). Where a part gives what others take, the levels without it may not exist (`Clearing.no_levels_without_source`). Reaching beyond a formation's influence closure does not by itself misjudge it (`Margin.reach_without_misjudgment`).
+
+On the AI's reading, pending Ren, the system does not read Ren's middle level, “the system that one is in”: one common condition makes it the whole, and it has no center. The reach closure is offered in its place: it has a center, can be nested and points forward. P40's reading of the feeding closure as that level is withdrawn. “still need situational awareness” is read as follows: to compare its own part, a center must know what the part reaches beyond its feedback. Records added: levels-of-closure, feedback-and-reach and comparison-within-reach. Feeding-closure, consumption-ends-with-feeders, closure-verdict-meets-axiom and whole-first-and-bounded-centers are revised; their claims are unchanged. The author's counterreview is in section 61.
+
+**P43: the axiom decomposed.** Ren wrote that there is “a set of universal invariations, that for every universe, becoming happens, the law follows”, “the bases of all ethics, for all beings, in all universes”, and that “There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death” ([source](../../../../sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md)). The AI read three claims from Ren's words that might give the axiom and proposed stating exactly the one step a critic must deny. `Becoming.Boundaries` (47 theorems) imports `Becoming.Feedback`. It decomposes the axiom and locates that step; it does not reduce the axiom. Along a relation, a boundary of a formation's self is a region holding it and closed under the relation. A claim about the self is super-true when it holds at every admissible boundary (Fine 1975), sub-true when it holds at some (Hyde 1997), and boundary-invariant when holding at one means holding at every one, that is, when it is determinate (`boundaryInvariant_iff_determinate`).
+- **Two scopes.** The presupposition from a standpoint is that everything within the region has significance at every step. Sub-true along a relation, it is significance on the closure, and route (b) is the least significance making every presupposition sub-true (`bounded_closure_least`). Super-true, it is the axiom (`unrestricted_iff_superTrue`). So “however the boundary is drawn” gives route (b) in the narrow scope and the axiom in the wide one (`presupposition_scopes`).
+- **Where the axiom's content lies.** Where the whole is admissible, the axiom is exactly the presupposition, sub-true and boundary-invariant at every standpoint (`unrestricted_iff_presupposed`). Invariance is exactly the conditional from the presupposition to the axiom at that standpoint (`boundaryInvariant_iff_conditional`). Given the presupposition everywhere and covering, invariance is the same as standpoint invariance, the rule N_std (`boundaryInvariant_iff_standpointInvariant`). So all of the axiom's content beyond the presupposition lies in the invariance step, as tolerance together with Chain carried all of G0's content beyond S0. The step runs both ways: where some continuation lacks significance, an invariant presupposition is nowhere sub-true (`not_subTrue_of_invariant`). Each premise is needed (`Clearing.without_presupposition`, `without_invariance`, `without_standpoint_invariance`, `with_fixed_boundary`).
+- **Parts within reach.** A presupposition sub-true along affecting gives the axiom's comparison for every part within the reach closure, with neither invariance nor super-truth (`Flow.Balances.presupposed_reach_comparison`, a corollary of P42). It reads Ren's weaker version.
+
+Covering holds by construction: along a relation, every closed region holding the center, the whole included, counts as an admissible drawing of the self, and that admissibility is a substantive choice. Using Ren's “belief” as a premise, and extending Ren's invariance across universes to significance, are the AI's steps. G0 remains the adopted axiom until Ren accepts a replacement, which waits on an audit of G0's uses (P44). Records added: presupposition-scopes and axiom-decomposition.
+
+**The sixteenth independent review (§62.1).** (Called the fifteenth on the branch; the review of R1–R2 landed first under that number, so this one is renumbered the sixteenth, its content unchanged.) Before integration another agent (Claude Opus 5.5, an author of none of it) reviewed P42 and P43 ([review](BECOMING-P42-P43-REVIEW.md)). It recompiled the reviewed files byte for byte and audited every declaration of both modules and the extension; every axiom report is empty, and its 142 probe declarations are term proofs without classical reasoning. The Lean is accepted; the sixteen findings concern the module prose, the AI's readings and the framing, and all are handled. The largest are these:
+- one common condition collapses the system to the whole, so the reach closure is added for Ren's middle level (F1);
+- “the axiom derived from three premises” is a decomposition, not a reduction, and is withdrawn (F6);
+- the comparison by withheld levels holds the rest of the exchange fixed, so effects through others' responses do not register in it (F2), answered by the trophic witnesses and by the comparison of any two flows;
+- the three claims are the AI's reading of Ren's words, not claims Ren holds.
+
+Names follow Ren's naming criteria: `Protection` becomes `Trophic`, “verdict” becomes “comparison” and “commons” becomes “common condition”. The first checker run failed on a name clash with the Bridge's `Closure` (receipt 20261010T173822.496446Z retained), so the core's closure became `WithinClosure`, and the Bridge now proves the two are one closure (`withinClosure_iff_closure`). Receipt 20261010T174514.186722Z (Feedback 100, Boundaries 47, Bridge 35); periphery receipt 20261010T175236.872210Z. The text after the handling has not been independently reviewed.
+
+**P44: G0's uses under the axiom (§64).** Every occurrence of G0 in the core (9 files) and the periphery's generative-capacity modules (19 files) was audited. Each use is a hypothesis for an arbitrary positive relevance, a characterization, a countermodel or a mention in prose. Read from significance, positive relevance is realized living content whose continuation has significance from every standpoint. Under the axiom it satisfies G0 on every frame and is the least positive relevance that does, exactly the realized living content (`g0_of_unrestricted`, `relevance_least`), so every use is discharged; the Bridge states this for the periphery's interface and for its three imported theorems. The axiom is exactly G0 for anything, with “positive” weakened to “has significance” (`unrestricted_iff_g0`). One reading is forced: with bare significance the reason premise A gives a reason for any new content, living or not (`articulates_total`, `Widening.bare_forces_reason`). Read on living content, A gives D, and the universal reason follows from the axiom with no seed, neutrality or connection premise (`universal_reason_of_unrestricted`). Read on possibilities, what a course's levels admit, extension under C is, under the axiom, retaining and adding what has significance (`Ranking.possible_extends_iff`). It ranks the absence of an overdrawing formation, restraint and sharing as the whole-run reading does, and it withholds no event (`Ranking.malignant_possible`). It leaves a formation that adds no possibility unranked against its absence, where both readings of `living` rank its presence higher (`Ranking.possible_tie`). Possibilities first, then a reading, is a strict order satisfying C that ranks that presence higher, and it also ranks a rest below uninterrupted activity (`Ranking.Rest.rest_ranked_below`). The records one-axiom-yields-g0 and ranking-under-readings are extended. G0 remains the adopted axiom; the replacement, the reading of positive relevance and the comparison of courses are Ren's choices. Receipt 20261010T214440.263682Z (Relevance 30, Bridge 40); periphery receipt 20261010T222130.672025Z. P42 and P43 were first checked on their branch (receipts 20261010T174514.186722Z and 20261010T175236.872210Z); merged with R3 and R4, P42 to P44 landed together, and the receipt above covers the merged package. Not yet independently reviewed.
+
+The package now has 1971 theorems and 2993 declaration audits, over a core closure of 40 modules and a package of 38, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and section 64. The periphery bridge passed against this core (receipt 20261010T222130.672025Z).

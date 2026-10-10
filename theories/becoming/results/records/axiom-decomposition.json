@@ -1,0 +1,426 @@
+{
+  "schema_version": 1,
+  "id": "axiom-decomposition",
+  "title": {
+    "zh": "公理的分解：整体可容许时，公理恰是每个立场上次真且对边界不变的预设；不变恰是从预设到该立场上公理的条件句，承载公理在预设之外的全部内容；有了处处的预设与覆盖，它就是对立场不变，即 N_std 的规则",
+    "en": "The axiom decomposed: where the whole is admissible, the axiom is exactly the presupposition sub-true and boundary-invariant at every standpoint; invariance is exactly the conditional from the presupposition to the axiom at that standpoint and carries all of the axiom's content beyond the presupposition; given the presupposition everywhere and covering, it is standpoint-invariance, the rule of N_std"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-10T18:06:00+00:00",
+  "claim": {
+    "zh": "整体可容许时，预设对边界不变，恰当按某处划出成立就按整体划出成立（boundaryInvariant_iff_extends）；恰是从预设到 p 处公理的条件句，不假设预设（boundaryInvariant_iff_conditional）；预设次真时，不变恰是 p 处的公理（boundaryInvariant_iff_all），P39 把公理读作边界中立，在一个立场上这一步就是边界中立；某个延续从 p 没有意义时，不变的预设按哪种划法都不成立（not_subTrue_of_invariant）：这一步两头都走。设每个形成都在每个自身的某个可容许边界之内（覆盖），每个立场的预设次真，并对边界不变，则公理成立（unrestricted_of_presupposed）；整体对每个自身可容许时，公理恰是每个立场上次真且不变的预设（unrestricted_iff_presupposed），沿任何关系都是（unrestricted_iff_presupposed_along）；每个中心的闭包都是整体时，整体是唯一的边界，不变平凡地成立，公理恰是每个立场上次真的预设（unrestricted_iff_presupposed_of_whole）。推论：各立场的保留一致（retains_agree_of_presupposed，经 Web.retains_agree），在每种以某形成在某步之延续的意义读主张之意义的读法上 G0 在主张层面成立（Valuation.significant_of_presupposed，经 Valuation.premises_of_unrestricted）。意义对立场不变（StandpointInvariant），是指从一个立场有意义的从每个立场都有意义，即 N_std 的规则；沿一个关系，每个形成都在某个中心的闭包之内、每个立场的预设次真时，它给出公理（unrestricted_of_standpointInvariant），并与处处对边界不变等价（boundaryInvariant_iff_standpointInvariant）；没有处处的预设时两者分开（OneCounts.forms_apart）。所以这些前提把核心已有的两个分解带到延续的意义上：Valuation.significant_iff（种子、N_rel 与连通整体上的 N_std）与 Valuation.significant_iff_held（处处 S0 加 N_std）。每个中心的系统都是整体时，公理恰是每个立场上沿共享条件次真的预设（Flow.unrestricted_iff_system_presupposed）；一个共同条件就使它成立（Flow.unrestricted_iff_presupposed_of_common）；Clearing 只有一个系统（Clearing.system_presupposition）。每个前提都需要：Clearing 中没有意义时预设不变、整体可容许而公理不成立（Clearing.without_presupposition）；以各供给闭包为界的意义使每个预设次真、整体可容许而公理不成立，清除者处预设不变不成立（Clearing.without_invariance），意义对立场不变也不成立（Clearing.without_standpoint_invariance）；只容许供给闭包时，同一意义使每个预设次真且不变，栖居者不在清除者的任何可容许边界之内，公理仍不成立（Clearing.with_fixed_boundary）。分解定位这一步，不降低公理的内容。不用 Lean 公理；覆盖、次真与不变都是假设。",
+    "en": "Wherever the whole is admissible, the presupposition is boundary-invariant exactly when, holding as drawn anywhere, it holds as drawn at the whole (boundaryInvariant_iff_extends); that is exactly the conditional from the presupposition to the axiom at p, with no presupposition assumed (boundaryInvariant_iff_conditional); with the presupposition sub-true, invariance is exactly the axiom at p (boundaryInvariant_iff_all), and since P39 reads the axiom as boundary neutrality, at one standpoint the step is boundary neutrality; where some continuation lacks significance from p, an invariant presupposition holds as the boundary is drawn nowhere (not_subTrue_of_invariant): the step runs both ways. Let every formation lie within some admissible boundary of every self (covering), let each standpoint's presupposition be sub-true, and let it be invariant: then the axiom holds (unrestricted_of_presupposed); where the whole is admissible for every self, the axiom is exactly the presupposition sub-true and invariant at every standpoint (unrestricted_iff_presupposed), along any relation (unrestricted_iff_presupposed_along); where each center's closure is the whole, the whole is the only boundary, invariance holds trivially, and the axiom is exactly the presupposition sub-true at every standpoint (unrestricted_iff_presupposed_of_whole). Corollaries: standpoints retain alike (retains_agree_of_presupposed, through Web.retains_agree), and G0 holds at the level of claims on every reading in which a claim's significance is that of some formation's continuation at some step (Valuation.significant_of_presupposed, through Valuation.premises_of_unrestricted). Significance is standpoint-invariant (StandpointInvariant) when what has significance from one standpoint has it from every other, the rule of N_std; along a relation, with every formation within some center's closure and every standpoint's presupposition sub-true, it gives the axiom (unrestricted_of_standpointInvariant) and is equivalent to boundary-invariance everywhere (boundaryInvariant_iff_standpointInvariant); without the presupposition everywhere the two come apart (OneCounts.forms_apart). So the premises carry two decompositions already in the core to the significance of continuation: Valuation.significant_iff (a seed, N_rel and N_std on a connected whole) and Valuation.significant_iff_held (S0 at every standpoint with N_std). Where each center's system is the whole, the axiom is exactly the presupposition sub-true along sharing a condition at every standpoint (Flow.unrestricted_iff_system_presupposed), one common condition sufficing (Flow.unrestricted_iff_presupposed_of_common); Clearing is one system (Clearing.system_presupposition). Each premise is needed: in Clearing, with nothing significant, the presupposition is invariant and the whole admissible while the axiom fails (Clearing.without_presupposition); significance bounded by each feeding closure makes every presupposition sub-true with the whole admissible while the axiom fails, the presupposition at the clearer is not invariant (Clearing.without_invariance), and significance is not standpoint-invariant (Clearing.without_standpoint_invariance); were each self's only admissible boundary its feeding closure, the same significance would make every presupposition sub-true and invariant, the dweller would lie within no admissible boundary of the clearer, and the axiom would still fail (Clearing.with_fixed_boundary). The decomposition locates the step and does not lower the axiom's content. No Lean axiom is used; covering, sub-truth and invariance are hypotheses."
+  },
+  "hypotheses": [
+    {
+      "zh": "覆盖（每个形成都在每个自身的某个可容许边界之内）、预设在每个立场次真、对边界不变，都是假设，不是 Lean 公理；沿一个关系，可容许的边界是含中心、对此关系封闭的每个区域，整体在内，这一可容许性是实质的选择。",
+      "en": "Covering (every formation within some admissible boundary of every self), the presupposition sub-true at every standpoint, and boundary-invariance are hypotheses, not Lean axioms; along a relation the admissible boundaries are every region holding the center that is closed under the relation, the whole included, and that admissibility is a substantive choice."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 在《Truth exist》中写道：“There is a set of universal invariations, that for every universe, becoming happens, the law follows”; “There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death.” 此前写道，自身是 “a cognitive model which can not justify itself without some sort of \"belief\"”，“we”是 “the universe/ecosystem that realizes its own existence”。AI 提出公理可能由它从 Ren 的话中读出的三个主张推出，只差一步（AI 的话，见来源）；第十六次审查更正：结果是公理的分解，不是化约。作者的读法（AI 论证，待 Ren）：预设读 Ren 所说自身不能没有的 belief，把它用作前提是 AI 的一步；沿一个关系覆盖由构造成立，“we”支持把整体作为一种划法，“There is no absolute self”本身不给出覆盖；“for all beings”最直接地读作对立场不变，即 N_std 的规则，把“universal invariations”推广到意义是 AI 的读法；Ren 的层级读作预设的三种读法：超真、沿影响次真、沿空关系次真。超真、次真之名取自超赋值（Fine 1975）与次赋值（Hyde 1997），依据先前知识；其余名称（Boundary、SignificantWithin、BoundaryInvariant、StandpointInvariant、OneCounts）是 AI 按 Ren 的命名准则所选。",
+    "en": "In “Truth exist” Ren wrote: “There is a set of universal invariations, that for every universe, becoming happens, the law follows”; “There is no absolute self, and the continuation goes beyond one’s cycle of life, goes beyond one’s death.” Earlier Ren wrote that the self is “a cognitive model which can not justify itself without some sort of \"belief\"”, and that “we” are “the universe/ecosystem that realizes its own existence”. The AI proposed that the axiom may follow from three claims it read from Ren's words, one step short (the AI's words, in the source); the sixteenth review corrected this: the result is a decomposition of the axiom, not a reduction. The author's reading (an AI argument, pending Ren): the presupposition reads the “belief” without which, Ren wrote, the self cannot justify itself, and using it as a premise is the AI's step; along a relation covering holds by construction, Ren's “we” supports the whole as one drawing, and “There is no absolute self” does not by itself give covering; “for all beings” reads most directly as standpoint-invariance, the rule of N_std, and extending “universal invariations” to significance is the AI's reading; Ren's levels read as three readings of the presupposition: super-true, sub-true along affecting, and sub-true along the empty relation. Super-truth and sub-truth are named from supervaluation (Fine 1975) and subvaluation (Hyde 1997), from prior knowledge; the other names (Boundary, SignificantWithin, BoundaryInvariant, StandpointInvariant, OneCounts) are the AI's, chosen by Ren's naming standard."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+  "aliases": [
+    "Becoming.boundaryInvariant_iff_extends",
+    "Becoming.boundaryInvariant_iff_all",
+    "Becoming.boundaryInvariant_iff_conditional",
+    "Becoming.not_subTrue_of_invariant",
+    "Becoming.unrestricted_of_presupposed",
+    "Becoming.unrestricted_iff_presupposed",
+    "Becoming.unrestricted_iff_presupposed_along",
+    "Becoming.unrestricted_iff_presupposed_of_whole",
+    "Becoming.retains_agree_of_presupposed",
+    "Becoming.Valuation.significant_of_presupposed",
+    "Becoming.StandpointInvariant",
+    "Becoming.unrestricted_of_standpointInvariant",
+    "Becoming.boundaryInvariant_iff_standpointInvariant",
+    "Becoming.OneCounts.forms_apart",
+    "Becoming.Flow.unrestricted_iff_system_presupposed",
+    "Becoming.Flow.unrestricted_iff_presupposed_of_common",
+    "Becoming.Clearing.without_presupposition",
+    "Becoming.Clearing.without_invariance",
+    "Becoming.Clearing.without_standpoint_invariance",
+    "Becoming.Clearing.with_fixed_boundary",
+    "Becoming.Clearing.system_presupposition"
+  ],
+  "dependencies": [
+    {
+      "id": "presupposition-scopes",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用边界、超真、次真、对边界不变与预设。",
+        "en": "Reuses boundaries, super-truth, sub-truth, boundary-invariance and the presupposition."
+      },
+      "interface": {
+        "output": {
+          "zh": "Boundary、SuperTrue、SubTrue、BoundaryInvariant、SignificantWithin 及其刻画。",
+          "en": "Boundary, SuperTrue, SubTrue, BoundaryInvariant, SignificantWithin and their characterizations."
+        },
+        "input": {
+          "zh": "公理恰是次真且不变的预设。",
+          "en": "The axiom is exactly the presupposition sub-true and invariant."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean"
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Unrestricted 与 Valuation.premises_of_unrestricted；P39 把公理读作边界中立，这一步在一个立场上就是边界中立。",
+        "en": "Reuses Unrestricted and Valuation.premises_of_unrestricted; P39 reads the axiom as boundary neutrality, and at one standpoint the step is boundary neutrality."
+      },
+      "interface": {
+        "output": {
+          "zh": "公理及其在主张层面给出的 G0。",
+          "en": "The axiom and the G0 it gives at the level of claims."
+        },
+        "input": {
+          "zh": "Valuation.significant_of_presupposed。",
+          "en": "Valuation.significant_of_presupposed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    },
+    {
+      "id": "significance-retained-within-margin",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.retains_agree：公理之下各立场的保留一致。",
+        "en": "Reuses Web.retains_agree: under the axiom standpoints retain alike."
+      },
+      "interface": {
+        "output": {
+          "zh": "公理之下保留与立场无关。",
+          "en": "Under the axiom retaining does not depend on the standpoint."
+        },
+        "input": {
+          "zh": "retains_agree_of_presupposed。",
+          "en": "retains_agree_of_presupposed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    },
+    {
+      "id": "levels-of-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.system_whole_of_common 与 Clearing.system_whole。",
+        "en": "Reuses Flow.system_whole_of_common and Clearing.system_whole."
+      },
+      "interface": {
+        "output": {
+          "zh": "一个共同条件使每个系统成为整体。",
+          "en": "One common condition makes every system the whole."
+        },
+        "input": {
+          "zh": "Flow.unrestricted_iff_presupposed_of_common 与 Clearing.system_presupposition。",
+          "en": "Flow.unrestricted_iff_presupposed_of_common and Clearing.system_presupposition."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "feeding-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.dweller_beyond：栖居者在清除者的供给闭包之外。",
+        "en": "Reuses Clearing.dweller_beyond: the dweller lies beyond the clearer's feeding closure."
+      },
+      "interface": {
+        "output": {
+          "zh": "栖居者在清除者的闭包之外。",
+          "en": "The dweller beyond the clearer's closure."
+        },
+        "input": {
+          "zh": "Clearing.without_invariance、without_standpoint_invariance 与 with_fixed_boundary。",
+          "en": "Clearing.without_invariance, without_standpoint_invariance and with_fixed_boundary."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean"
+      }
+    },
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "并行：Valuation.significant_iff 把 G0 分解为种子、N_rel 与连通整体上的 N_std；这里的前提把同类分解带到延续的意义上，没有形式复用。",
+        "en": "Parallel: Valuation.significant_iff decomposes G0 into a seed, N_rel and N_std on a connected whole; the premises here carry that kind of decomposition to the significance of continuation, with no formal reuse."
+      },
+      "interface": {
+        "output": {
+          "zh": "G0 的刻画。",
+          "en": "G0's characterization."
+        },
+        "input": {
+          "zh": "对立场不变读作 N_std 的规则。",
+          "en": "Standpoint-invariance read as the rule of N_std."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    },
+    {
+      "id": "held-lives-g0-is-centering",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "并行：Valuation.significant_iff_held 把 G0 分解为处处 S0 加 N_std；预设读作 S0 的延续形式（AI 的读法，待 Ren），没有形式复用。",
+        "en": "Parallel: Valuation.significant_iff_held decomposes G0 into S0 at every standpoint with N_std; the presupposition reads as the continuation form of S0 (the AI's reading, pending Ren), with no formal reuse."
+      },
+      "interface": {
+        "output": {
+          "zh": "被持有的生命之下 G0 的刻画。",
+          "en": "G0's characterization where lives are held."
+        },
+        "input": {
+          "zh": "预设与对立场不变的分解。",
+          "en": "The decomposition into the presupposition and standpoint-invariance."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "self-good-reachable-g0",
+      "detail": {
+        "zh": "评价者路线以容差连同 Chain 承载 G0 超出 S0 的全部内容；这里对边界不变的一步同样承载公理在预设之外的全部内容，只是一步，所以不继承连锁悖论的反驳（评价者路线的审查 P3）。",
+        "en": "The evaluator route's tolerance with Chain carries all of G0's content beyond S0; here the step of boundary-invariance likewise carries all of the axiom's content beyond the presupposition, in one step, so it does not inherit the sorites objection (the evaluator-route review, P3)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+      "detail": {
+        "zh": "每个前提都需要：Clearing.without_presupposition、without_invariance、without_standpoint_invariance 与 with_fixed_boundary 各去掉一个前提或改变可容许类，公理都不成立；没有处处的预设时，两种不变分开（OneCounts.forms_apart）。",
+        "en": "Each premise is needed: Clearing.without_presupposition, without_invariance, without_standpoint_invariance and with_fixed_boundary each drop a premise or change the admissible class, and the axiom fails; without the presupposition everywhere the two forms of invariance come apart (OneCounts.forms_apart)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "分解定位这一步，不降低公理：不变是从预设到公理的条件句，有了预设就是该立场上的公理；预设、覆盖与不变本身不推出；否认这一步的人可以只在一种划法或一个立场上持有预设，也可以放弃预设；各对手（运作闭合、模糊的自身、降到零的分级权重、现时目的的评价者）否认哪个前提只是定位，不是驳倒；文献依据先前知识；从意义到理由、动机或实践的一步不推出；读法与名称是 AI 的，待 Ren；在 Ren 接受替代之前，G0 仍是所采用的公理，替代等待对 G0 各处用法的审计（P44）。",
+    "en": "The decomposition locates the step and does not lower the axiom: invariance is the conditional from the presupposition to the axiom, and given the presupposition it is the axiom at that standpoint; the presupposition, covering and invariance themselves are not derived; one who denies the step can hold the presupposition only relative to a drawing or a standpoint, or give it up; which premise each rival denies (operational closure, a vague self, a graded weight falling to zero, a present-aim evaluator) is located, not refuted; the literature is from prior knowledge; the step from significance to a reason, to motivation or to practice is not derived; the readings and names are the AI's, pending Ren; G0 remains the adopted axiom until Ren accepts a replacement, which waits on an audit of G0's uses (P44)."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Boundaries 的 47 项定理全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T222130.672025Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §62；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): the 47 theorems of Becoming.Boundaries all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T222130.672025Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §62 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+      "role": "proof",
+      "sha256": "1833bfdb6747643c0ba6634359dfea7bf42fd80013ffe6e17a802b75820e4149",
+      "declarations": [
+        "Becoming.boundaryInvariant_iff_extends",
+        "Becoming.boundaryInvariant_iff_all",
+        "Becoming.boundaryInvariant_iff_conditional",
+        "Becoming.not_subTrue_of_invariant",
+        "Becoming.unrestricted_of_presupposed",
+        "Becoming.unrestricted_iff_presupposed",
+        "Becoming.unrestricted_iff_presupposed_along",
+        "Becoming.unrestricted_iff_presupposed_of_whole",
+        "Becoming.retains_agree_of_presupposed",
+        "Becoming.Valuation.significant_of_presupposed",
+        "Becoming.StandpointInvariant",
+        "Becoming.unrestricted_of_standpointInvariant",
+        "Becoming.boundaryInvariant_iff_standpointInvariant",
+        "Becoming.OneCounts.forms_apart",
+        "Becoming.Flow.unrestricted_iff_system_presupposed",
+        "Becoming.Flow.unrestricted_iff_presupposed_of_common",
+        "Becoming.Clearing.without_presupposition",
+        "Becoming.Clearing.without_invariance",
+        "Becoming.Clearing.without_standpoint_invariance",
+        "Becoming.Clearing.with_fixed_boundary",
+        "Becoming.Clearing.system_presupposition",
+        "Becoming.Boundary",
+        "Becoming.SuperTrue",
+        "Becoming.SubTrue",
+        "Becoming.BoundaryInvariant",
+        "Becoming.SignificantWithin",
+        "Becoming.superTrue_significantWithin_iff",
+        "Becoming.subTrue_significantWithin_iff",
+        "Becoming.Boundary.only_whole",
+        "Becoming.OneCounts.sig"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "dc2abebba7620898cae8fddbc92e74544cf6f23af4926f4a4c48d4e5ca13477d",
+      "declarations": [
+        "Becoming.Flow.system_whole_of_common",
+        "Becoming.Clearing.system_whole",
+        "Becoming.WithinClosure"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "role": "proof",
+      "sha256": "36c940528887cc8c51a8191bf014b9967210c457c280f0795a9a6d1f7ba826fe",
+      "declarations": [
+        "Becoming.Flow.WithinFeeding",
+        "Becoming.Clearing.dweller_beyond"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "declarations": [
+        "Becoming.Unrestricted",
+        "Becoming.bounded",
+        "Becoming.Valuation.premises_of_unrestricted",
+        "Becoming.Web.retains_agree"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "caa6b40a98353117936b19fe65fbbe64b95fdc3a0f3dfc56740adbc6bbbc3980",
+      "declarations": [
+        "Becoming.Valuation.significant_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "role": "proof",
+      "sha256": "1f322933aff6e2a855bd7e7209dabad5c6d3079152fd79a438593195eae8de4c",
+      "declarations": [
+        "Becoming.Valuation.significant_iff_held"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "d09394a9b60755ee31656c01d8b2c656952850cc4ec52e6eccc3f17f052a3c7c"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f7236a97fa06c3ac243dc62a7d6f8adddaa22ee07aa43c1e795a089af6000bde"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "role": "review",
+      "sha256": "771e4090ede7d482205a1da3d369734ed9511fc23c334df8449b6ba147345b3d"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md",
+      "role": "provenance",
+      "sha256": "cc3d43d6adea73e09194f9e119d0d707014e14cb2bae314ea48716b5611e2a98"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-truth-exists-opening.md",
+      "role": "provenance",
+      "sha256": "ffbced0a6273d7dc9787da7f24e3fd38b95950bb703aa9fd0c895d713fae9583"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
+      "role": "provenance",
+      "sha256": "0fdb18d63c6ad5f6be6f0f65ecd461d1d66494749a29a4e213876f955ecd4c06"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Boundaries.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Boundaries",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interdependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Standpoints",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 的选择：是否持有不变的一步；预设、覆盖与不变的哲学根据；对 G0 各处用法的审计（P44），然后由 Ren 决定是否以公理替代 G0。",
+    "en": "Ren's choice whether to hold the step of invariance; the philosophical warrant of the presupposition, covering and invariance; an audit of G0's uses (P44), after which Ren decides whether the axiom replaces G0."
+  },
+  "history": [
+    {
+      "zh": "2026-10-11 P43：新增，按 Ren“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”；统一计划 P43；见整合文档 §62；整合之前经第十六次独立审查，处理见 §62.1。",
+      "en": "2026-10-11 P43: added, following Ren's ‘continue, let's pursue the strongest claims and complete proof, i think you see the right direction’; unification plan P43; see §62 of the integration note; reviewed before integration by the sixteenth independent review, treated in §62.1."
+    },
+    {
+      "zh": "2026-10-11 落地：与 R3、R4 合并，同 P44 一次落地；验证范围由分支回执 20261010T174514.186722Z 与外围回执 20261010T175236.872210Z 重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心另含 R3、R4 更新的 Becoming.Resolution 与 P44 新增的 Becoming.Relevance，包内模块由 37 个增至 38 个，核心闭包由 39 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 Discharge 一节 5 项定理；Becoming.Feedback 与 Becoming.Boundaries 的源与定理数不变）。整合之前的独立审查改称第十六次：R1–R2 的审查先落地为第十五次。断言不变。",
+      "en": "2026-10-11 landing: merged with R3 and R4 and landed with P44 in one commit; validation scope re-pointed from branch receipt 20261010T174514.186722Z and periphery receipt 20261010T175236.872210Z to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core also has Becoming.Resolution as R3 and R4 updated it and Becoming.Relevance added by P44, the package growing from 37 to 38 modules and the core closure from 39 to 40, with 1971 theorems/2993 declaration audits; the bridge adds the 5 theorems of its Discharge section; the sources and theorem counts of Becoming.Feedback and Becoming.Boundaries are unchanged). The review before integration is renumbered the sixteenth: the review of R1–R2 landed first as the fifteenth. The claim is unchanged."
+    }
+  ]
+}

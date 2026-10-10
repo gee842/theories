@@ -68,9 +68,9 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   (`Clearing.within_closure_yet_loses`).
 
 **AI reading, pending Ren.**
-- The feeding closure reads “what it actually depends on”, and Ren's “the system that one is
-  in” as reached from a center along dependence. It is reached without axiom. How a center
-  comes to represent it is not modelled.
+- The feeding closure reads “what it actually depends on”. It is reached without axiom. How a
+  center comes to represent it is not modelled. P40 also read it as Ren's “the system that one
+  is in”; `Becoming.Feedback` withdraws that reading and offers the reach closure.
 - A center that wants its continuation and represents its closure has its own reason to retain
   what lies within it, since a loss there can return to it, as in `Overshoot`. This explains
   motivation. It is not a warrant.
@@ -79,9 +79,9 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   that continue: it removes the whole of `Overshoot`, which ends, and keeps that of `Clearing`,
   where the clearer continues while the dweller ends. Neither mechanism reaches a loss that
   returns to no one.
-- So this route reaches Ren's self and the system one is in. It reaches the whole only where
-  the whole is one feeding closure. What the axiom adds is significance for continuations whose
-  loss returns to no one, such as the dweller's.
+- So this route reaches Ren's self with what it depends on. It reaches the whole only where the
+  whole is one feeding closure. What the axiom adds is significance for continuations whose loss
+  returns to no one, such as the dweller's.
 - Ren wrote that the whole can realize itself, “like us, we recognize that "we" are the
   universe/ecosystem that realizes its own existence”. A center whose represented boundary is
   the whole holds the axiom's significance (`bounded_whole`). This route asks for a boundary

@@ -31,6 +31,9 @@ import Becoming.Descent
 import Becoming.Standpoints
 import Becoming.Significance
 import Becoming.Interdependence
+import Becoming.Feedback
+import Becoming.Boundaries
+import Becoming.Relevance
 
 /-!
 # The Theory of Becoming: the formal core
@@ -372,6 +375,48 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   bounded by a region is the axiom's wherever the losses lie within the region, and so on
   every comparison where a formation's feeding closure is the whole, while in the clearer's
   web the two part. The reading is the AI's, pending Ren.
+* `Becoming.Feedback` (L4): what feedback registers and what a part reaches, with no premise
+  beyond the representation. Closures under relations give five levels: a formation's feeding
+  closure lies within its influence closure, what can affect it, and the influence closure and
+  the reach closure, what its exchange can affect, lie within its system, the closure under
+  sharing a condition, a class. Each inclusion can be strict, the influence and reach closures
+  point in opposite directions, and wherever every formation takes part in one condition every
+  system is the whole. In a balanced flow levels follow their exchanges, so a formation's
+  support registers only its exchanges with what it depends on, and nothing beyond its
+  influence closure registers within it. What a part has not reached before a step is admitted
+  alike with and without it there, and any significance covering what the part reaches compares
+  the levels with and without it as the axiom does; the comparison of any two flows is decided
+  within what their difference reaches. The axiom enters only as a hypothesis of three
+  witnesses. The readings are the AI's, pending Ren.
+* `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
+  formation's self is a region holding it that is closed under the relation; a claim is
+  super-true when it holds however the boundary is drawn, sub-true when it holds as drawn
+  somewhere, and boundary-invariant when, holding as drawn anywhere, it holds as drawn
+  everywhere. The presupposition, that the continuation of everything within the boundary has
+  significance, is the axiom when super-true and significance over the closure when sub-true,
+  so route (b) and the axiom are one presupposition at narrow and at wide scope. Where the
+  whole is admissible the axiom is exactly the presupposition sub-true and invariant at every
+  standpoint, and invariance is the conditional from the presupposition to the axiom at that
+  standpoint: the decomposition locates the step and does not lower the axiom. Given the
+  presupposition everywhere and covering, invariance is standpoint-invariance, the rule of
+  N_std. Sub-true along affecting, the presupposition compares every part within the reach
+  closure as the axiom does, with no invariance. Covering, sub-truth and invariance are
+  hypotheses. The readings are the AI's, pending Ren; G0 remains the adopted axiom.
+* `Becoming.Relevance` (L4): G0's uses under the axiom. Read from significance,
+  positive relevance is realized living content whose continuation has significance;
+  under the axiom G0 holds on every frame for every reading of `living`, this relevance
+  being the least satisfying it, so every use of G0, each a hypothesis for an arbitrary
+  positive relevance, is discharged. The axiom is G0 for anything: on the level paths of
+  every web it holds exactly when G0 holds with every claim living and positive
+  relevance read as significance. Where everything has significance, A read with bare
+  significance gives a reason for any new content, living or not, so A keeps its scope
+  only read on living content; so read, the universal reason follows from the axiom
+  with no seed, neutrality or connection premise. Read on possibilities, what the levels
+  of a course admit, C under the axiom ranks the absence of an overdrawing formation,
+  restraint and sharing as the whole-run reading does and withholds no event; it leaves
+  a formation that adds no possibility unranked against its absence, where both
+  readings of `living` rank its presence higher. The readings are the AI's, pending Ren;
+  G0 remains the adopted axiom.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

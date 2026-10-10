@@ -1,0 +1,41 @@
+Becoming/Bridge.lean:62:4: error: `Becoming.Closure` has already been declared
+Becoming/Bridge.lean:69:57: error: Application type mismatch: The argument
+  x
+has type
+  X
+of sort `Type u` but is expected to have type
+  ?m.1
+of sort `Type` in the application
+  Closure ?m.3 ?m.4 x
+Becoming/Bridge.lean:72:76: error: Application type mismatch: The argument
+  y
+has type
+  X
+of sort `Type u` but is expected to have type
+  ?m.6
+of sort `Type` in the application
+  Closure ?m.8 ?m.9 y
+Becoming/Bridge.lean:78:22: error: Application type mismatch: The argument
+  x
+has type
+  X
+of sort `Type u` but is expected to have type
+  ?m.4
+of sort `Type` in the application
+  Closure ?m.6 ?m.7 x
+Becoming/Bridge.lean:85:64: error: Application type mismatch: The argument
+  x
+has type
+  X
+of sort `Type u` but is expected to have type
+  ?m.2
+of sort `Type` in the application
+  Closure ?m.4 ?m.5 x
+Becoming/Bridge.lean:94:75: error: Application type mismatch: The argument
+  x
+has type
+  X
+of sort `Type u` but is expected to have type
+  ?m.2
+of sort `Type` in the application
+  Closure ?m.4 ?m.5 x
