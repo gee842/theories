@@ -20,6 +20,7 @@ import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
 import Becoming.Counting
+import Becoming.Resolution
 import Becoming.Continuation
 import Becoming.Admission
 import Becoming.Regions
@@ -236,6 +237,18 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   binds, each condition having an instance, every census counts something arising, and
   that is all binding adds; it decides neither rest nor change without end. No finite
   world binds every premise, though in one every premise but the census can.
+* `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
+  openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
+  at every exchange; letting the unit split into finer units across each step separates
+  the dynamics from that quantum. Whatever the refinement, the times a closed family loses
+  at least `1/q` of the unit number at most `q` times its stock (the loss law). Where every
+  formation loses a fixed share of what it takes, the times a formation takes, and the
+  times a relatum gains or arises, at least `1/p` of the unit, inside an enclosure, are
+  bounded by the standing, so they do not recur at any resolution. At a unit splitting
+  without end each boundary is attained: without a least size a closed pool is taken from,
+  and a new relatum arises inside an enclosure, without end, at sizes shrinking without
+  bound; without loss in proportion one whole unit is exchanged, or arises in turn inside
+  an enclosure, without end, its losses shrinking without bound.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed

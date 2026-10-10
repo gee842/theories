@@ -3592,6 +3592,61 @@ Integration: 章节第 3、4、11 条，第一部分的总陈述，状态表、�
 
 **边界。** 无伦理谓词；没有新的成果记录，断言的数学不变或只是补上散文已说的；更强的起约束读法、每个选择之下所选前提都起约束时的规律、有限世界中除普查外都起约束时的规律、水平与依存的计数在前提之下，仍开放。第十四次审查检查了 §48 的处理与 §49、§50、§52、§54、§55；§47.1–47.4 的处理、§51、§53、§56、§57 与本节尚未经独立审查。
 
+## 59. 单位所承载的：每一分辨率下的静止（R1）
+
+2026-10-10。按 Ren“let's push as far as possible and if we see a stronger claim that can be make and is important, give it a try. we push pareto frontier”与“keep going please, agree with direction”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md)）。这一方向读作：每个主张取其成立的最强形式，并以只缺一个前提的见证标出它失效的确切边界。此前列出的难题之一是表示的范围，即哪些规律是量与步的表示方式的产物；这里处理量的单位。脊柱以一个固定单位的自然数计量。按这个单位读，耗散说取用封闭家族的形成给回的至少比取用的少一个单位，所以每次交换至少损失一个单位，静止定理与开放的规律都以这些损失抵扣所立者。新模块 `Becoming.Resolution`（导入 `Becoming.Openness`）让单位在每步可以细分，把属于动力学的与属于固定单位的分开。成果记录：[rest-at-every-resolution](../../../../theories/becoming/results/records/rest-at-every-resolution.md)。
+
+```text
+Result(s): 新记录 rest-at-every-resolution；复用 continued-change-needs-openness（所立者的普查及其存量、围住所立者的步、
+           exposed 的持有者）与 no-finite-part-bears-taking（耗散、封闭家族、DissipatesOn.replenishment_takers）
+Delta: Flow.BalancesAt r：单位跨过第 t 步分为 r t 个更细的单位，r 恒为一时就是 Balances；损失的规律 losses_invariant、
+       losses_bound 与量子的规律 Flow.quantum_bound、Flow.quantum_not_recurring；单位固定时取用停止 Flow.taking_stops；
+       按比例的损失 Flow.DissipativeBy q 之下交换的规律 Flow.exchange_bound、Flow.exchange_not_recurring 与增长的规律
+       World.growth_bound、World.growth_not_recurring、World.arising_not_recurring；见证 Asymptote、Circulation、
+       Emission、Alternation 与边界定理 rest_needs_quantum、exchange_needs_quantum、arising_needs_quantum、
+       arising_needs_proportion
+Supplied premises / correspondence: 单位只细分（R T = 1，R (t + 1) = r t · R t，0 < r t）；按比例的损失是前提，是脊柱一单位
+       损失的无单位对应，不是推出的；世界的规律另要活动的普查、关系项都体现、从 T 起每步被围住
+Evidence: 合并检查器回执 20261010T155424.663562Z（1649 项定理、2571 项声明审计，全部源声明公理报告为空；Resolution 97，核心闭包 37
+          个模块），外围回执 20261010T161037.642977Z；Becoming.Resolution 的声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms
+          全部为空
+Boundary: 离散步；有理量，单位不变粗；界是否可达未证；交换的规律只对固定的封闭家族陈述；尚无独立审查
+Integration: 回答 continued-change-needs-openness 的下一步“带比率或连续量的总水平”中有理量的部分；计划 §10 R1；章节 §9 的
+             脊柱表与第一部分的开放项；模块说明、根模块、包 README 与检查器的范围
+```
+
+**机制。**
+
+- **单位可以细分。** 跨过第 t 步，单位分为 r t 个更细的单位：步前的水平以更细的单位计，是以较粗单位计的 r t 倍（`Flow.BalancesAt`）。R 计每一步的单位数，以第 T 步的单位为一，R (t + 1) = r t · R t。以第 T 步的单位读，一个水平 n 在第 t 步是 n / R t，所以细分以越来越细的有理数表示量，而动力学不变。在耗散之下，封闭家族的存量连同取用者不多于 r t 乘此前的存量（`Flow.BalancesAt.lowers`）；r 恒为一时就是脊柱的情形。
+- **损失的规律。** 一个在更细单位下不上升的量，若每步 q 乘余下的连同 k 个量子（每个是 R (t + 1) 个更细单位）不多于 q 乘此前所有的，那么自 T 起计到的量子不多于 q 乘该量在 T 的值（`losses_invariant`、`losses_bound`）。证明只是算术：不变量 q·s + K·R ≤ q·s_T·R 跨过一步乘以 r。由此，封闭家族损失至少 1/q 单位的步不多于 q 乘其存量，不复现（`Flow.quantum_bound`、`Flow.quantum_not_recurring`）。单位固定时，每个取用的步至少损失一个单位，所以取用停止（`Flow.taking_stops`）；r 恒为一时这就是脊柱的 `Flow.Balances.taking_ceases`。
+- **按比例的损失。** 每个形成给回封闭家族的至多是所取用的 q/(q+1)（`Flow.DissipativeBy q`）。这一比例与单位无关。于是：
+  - 取用至少 1/p 单位的形成使家族至少损失 1/(p(q+1)) 单位，所以这样的取用逐个逐步计数不多于 p(q+1) 乘存量（`Flow.BalancesAt.takers_lose`、`Flow.exchange_bound`）；
+  - 增长至少 1/p 单位的关系项所得是被给予的，所以在围住它的家族中，补给至少是 R (t + 1)/p 乘增长者的数目，而按比例的损失使家族至少损失补给的 1/q（`Flow.BalancesAt.gain_given`、`Flow.BalancesAt.lowersBy`、`Flow.BalancesAt.gainers_lose`）；在有普查、关系项都体现、从 T 起每步被围住的世界中，围住的家族随步变化，所立者的总水平等于它的存量（`Web.StandingCensus.stock_eq`），所以增长者逐个逐步计数不多于 p q 乘 T 时所立者的总水平（`World.growth_bound`）；
+  - 体现的关系项生起时从水平零开始，所以这一尺度的生起是这一尺度的增长（`World.arising_not_recurring`）。
+- **边界。** 每个见证都在单位无尽细分时平衡且耗散，只缺一个前提：
+  - `Asymptote` 一个取用者从一个池取用而不给回，按每个比例耗散；恰在单位于任意晚的步细分时它在任意晚的步取用（`Asymptote.exchange_recurs_iff`），池在每个细分的步下降，始终高于取用者的需要；所取用的缩小到每个量子之下。
+  - `Circulation` 每步从池取用第 0 步的一整个单位，给回其余，只损失下一步的一个单位；所立者被列出，每步围住所立者，交换不息；由交换的规律，它不按任何比例耗散（`Circulation.not_dissipativeBy`）。
+  - `Emission` 一个池每步取用下一步的两个单位，给回一个给当步生起的新关系项；它有普查、关系项都体现、每步被围住，并按比例耗散（给回一半）；每步都有新关系项生起，立于下一步的一个单位，即第 0 步单位的 2^-(t+1)。
+  - `Alternation` 两侧轮流持有第 0 步的一整个单位与当步的一个单位；持有者取用全部并给另一侧除下一步一个单位以外的全部；它有普查、关系项都体现、每步被围住，一整个单位在任意晚的步生起；由增长的规律，它不按任何比例耗散（`Alternation.not_dissipativeBy`）。
+
+**作者反审。**
+
+*反驳 1：细分单位只是换记号，没有新内容？* 不是。在固定单位下，自然数的耗散蕴含每次交换至少损失一个单位，这是一个量子化的假设，此前没有陈述。见证说明：让损失随单位缩小，脊柱静止定理的其余前提都成立，其结论却不成立。所以静止定理依赖这一量子；细分之下仍成立的是损失的规律，以及按比例的损失连同最小尺度所给的界。
+
+*反驳 2：按比例的损失是否把静止偷偷放进前提？* 它不提静止、有限或步数；它是每次转移的效率上界。单靠它不给出静止：`Emission` 按比例耗散，生起仍不息，只是尺度趋于零。静止要它连同最小尺度一起，而缺少最小尺度的情形恰是 `Asymptote` 与 `Emission`。
+
+*反驳 3：见证满足的是静止定理的全部其余前提，还是只满足一部分？* `Emission` 与 `Alternation` 满足 `World.rests_enclosed` 与 `World.arising_opens` 的全部前提（普查、体现、耗散、每步被围住），只把平衡换为细分分辨率下的平衡；`Circulation` 满足 `World.exchange_stops` 的全部前提（所立者的普查、耗散、每步围住所立者），平衡同样换掉；`Asymptote` 对固定的封闭家族满足 `Flow.taking_stops` 的前提，只是单位细分。边界定理逐项陈述这些前提，由 Lean 检查。
+
+*反驳 4：`Alternation` 与 `Circulation` 不按任何比例耗散，是直接验证还是推出？* 由两条规律推出：若按某比例耗散，增长的规律禁止一整个单位的生起复现，交换的规律禁止一整个单位的取用复现，而两者都复现。这同时检验了两条规律不是空的。
+
+*反驳 5：增长的计数只数普查列表中的关系项，会不会漏掉？* 增长至少 1/p 单位的关系项在步后水平为正（R 为正），体现之下活跃，所以在普查列表中；`World.growth_not_recurring` 用的正是这一点。
+
+*反驳 6：模块名与已有名称冲突？* 初稿的见证名 `Transfer` 与 `Becoming.Admission` 的 `Transfer` 冲突，检查器的第一次运行（回执 20261010T154024.599588Z，失败，保留）在根模块处报错；改名为 `Alternation`，它也更准确地描述两侧轮流持有的结构。其余声明已逐一对照包内所有声明，没有冲突。
+
+**读法（AI，待 Ren）。** 有界效率之下，被围住的生成，任何固定尺度的都会停止；在围住之内只能以越来越细或越来越接近无损的方式继续。“生起不息需要开放”不依赖单位的形式是：固定尺度的生起不息需要开放，或需要损失的比例趋于零。这把开放的规律从整数的产物变为一个物理上可读的陈述。
+
+**边界。** 离散步；量是细分后的有理数，单位不变粗；连续时间与实数量仍开放；界是否可达未证；交换的规律以固定的封闭家族陈述；按比例的损失是前提；没有伦理谓词；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3996,4 +4051,11 @@ On the AI's reading, pending Ren, route (b) reaches the self and the system one 
 
 **The fourteenth independent review and its corrections (P41b).** Another agent (Claude Opus 5.5, an author of none of it) reviewed P34b, P35, P36, P36b, P38, P38b and P38c ([review](BECOMING-P34B-P38C-REVIEW.md), object `c95f6576`). It recompiled the 34 closure modules from the prelude outside the repository: all 2462 closure source declarations the receipt lists have empty axiom reports, and only the 38 generated `injEq` lemmas depend on `propext`, as listed. The six commits' receipts, hashes and retained artifacts match. P36 is a pure renaming by token comparison. The mathematics is accepted, with no wrong Lean statement, and its 32 probe declarations depend on no axiom. Of six findings, V1 and V2 matter most. V1: in the witness for `binding_counting`, activity needing support and bounded transmission hold whatever is active and whatever flows, so "binds" means only that each condition has an instance. This is now said wherever binding is described, and checked (`OnceClosedQueue.dependent_any_activity`, `OnceClosedQueue.transmits_any_flow`). The `World.Binds` docstring says an instance need not exclude anything. A stronger reading of binding is listed as open, for Ren. V2: plan section 10 now says Part I *aims at* the strongest claim with no axiom. The P38 row is scoped. The Part I statement ties "complete" to plan section 9's four checkable criteria and says that being the strongest has not been shown. V3: the Part I statement now says each *theorem* is checked, and states the enclosure law with its step. It names the premises of the end-step and parts-and-regions theorems, and gives the counting bullet's boundary in place. V4: new core theorems `World.enclosed_change_bound_iff`, `World.Finite.not_binds` and `World.finiteHatch_binds_but_census`. The last shows a finite world meeting the eight in which every condition but the census has an instance. The laws of counting in such worlds are listed as open. V5: stale record fields, chapter section 8 and the P36 table (`Provisioned.gift → provision`) are corrected, and `add_sub_turn_add` moves to Dependence. V6: the driver is an inactive ground relatum, "hold idly" becomes "hold vacuously", and the binding queue is renamed the queue closed once (`OnceClosedQueue`) for its dynamics. `credits` and `overdraw` are left for a later sweep under Ren's naming criteria. Receipt 20261010T150853.470895Z (1552 theorems, 2445 declaration audits); periphery receipt 20261010T151108.093153Z.
 
-The package now has 1552 theorems and 2445 declaration audits, over a core closure of 36 modules and a package of 34, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57 and 58. The periphery bridge passed against this core (receipt 20261010T151108.093153Z).
+**What the unit of amounts carries: rest at every resolution (R1).** Following Ren's "we push pareto frontier" and "keep going please, agree with direction" ([source](../../../../sources/15-codex-theory-conversations/2026-10-10-pareto-frontier.md)), read as stating each claim in its strongest true form with the exact boundary where it fails. The spine counts amounts in natural numbers of one unit, so dissipation loses at least a unit at every exchange, a quantum on which the rest and openness laws rely. The new module `Becoming.Resolution` lets the unit split into finer units across each step (`Flow.BalancesAt`), separating the dynamics from that quantum.
+- **The loss law.** Whatever the refinement, the quanta of the unit of step `T` a never-rising quantity loses, counted from `T`, number at most `q` times the quantity there (`losses_bound`). So a closed family loses at least `1/q` of the unit at no more than `q` times its stock steps (`Flow.quantum_bound`); with the unit fixed, taking from a closed family stops (`Flow.taking_stops`).
+- **Loss in proportion.** Where every formation gives a closed family at most `q/(q+1)` of what it takes (`Flow.DissipativeBy q`), the formations taking at least `1/p` of the unit number in all at most `p(q+1)` times the stock (`Flow.exchange_bound`). In a world with a census, embodied relata and every step from `T` on enclosed, the relata gaining at least `1/p` of the unit number in all at most `p q` times the total standing (`World.growth_bound`), so such gains, and arising at that size, do not recur (`World.growth_not_recurring`, `World.arising_not_recurring`).
+- **The boundaries.** Each witness is balanced at a unit splitting without end and dissipative, and lacks one premise. `Asymptote`, losing all it takes, is taken from without end exactly where the unit splits without end. `Emission`, with a census, embodied relata, every step enclosed and half of what it takes lost, has a new relatum arise at every step at sizes shrinking without bound. `Circulation` exchanges, and `Alternation` has arise in turn inside an enclosure, one whole unit at every step; by the two laws neither is dissipative by any share.
+
+On the AI's reading, pending Ren: with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness; continuous time and real amounts remain open. The first checker run failed on a name clash with `Becoming.Admission` (`Transfer`, now `Alternation`; receipt 20261010T154024.599588Z retained). Record added: rest-at-every-resolution. Not yet independently reviewed; the author's counterreview is in section 59.
+
+The package now has 1649 theorems and 2571 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58 and 59. The periphery bridge passed against this core (receipt 20261010T161037.642977Z).

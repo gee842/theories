@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-137 migrated records: 133 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+138 migrated records: 134 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -128,6 +128,7 @@
 | `reserve-defers-ending` | [储备推迟终结而不逃脱终结：Dependent 是零储备，储备可以是所持的条件，衰减的储备沿任意长的依存之链逐环界定共灭 / A reserve defers the end and does not escape it: Dependent is the zero reserve, a reserve can be a held condition, and a decaying reserve bounds coextinction link by link along a chain of any length](records/reserve-defers-ending.md) | theorem | recorded-checked |
 | `reserved-shutdown-during-recovery` | [恢复期间保留停止能力 / Reserved shutdown during incomplete recovery](records/reserved-shutdown-during-recovery.md) | theorem | recorded-checked |
 | `residual-continuation-correspondence` | [保留余项的部分展开与真实位置接续 / Partial unfolding with residuals and resumption at reached positions](records/residual-continuation-correspondence.md) | theorem | recorded-checked |
+| `rest-at-every-resolution` | [每一分辨率下的静止：自然数的单位是一个损失的量子；单位可以细分时，按比例的损失连同最小尺度为被围住的交换、增长与生起定下界，缺少任一，各自无尽地继续 / Rest at every resolution: the natural-number unit is a quantum of loss; where the unit may refine, loss in proportion with a least size bounds enclosed exchange, growth and arising, and without either each continues without end](records/rest-at-every-resolution.md) | theorem | recorded-checked |
 | `retained-reference-joining-recovery` | [保留共同引用的跨表述形成对应 / Cross-articulation formation matching with retained references](records/retained-reference-joining-recovery.md) | theorem | recorded-checked |
 | `retrospective-source-binding` | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](records/retrospective-source-binding.md) | theorem | recorded-checked |
 | `rising-and-falling-in-one-exchange` | [上升与下降在同一交换中：在家族被耗散的一步上，一个成员上升，同一步上家族另一个成员下降 / Rising and falling in one exchange: across a step at which a family is dissipated on, a member rising comes with another member of the family falling](records/rising-and-falling-in-one-exchange.md) | theorem | recorded-checked |

@@ -2218,6 +2218,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean)
 
+## rest-at-every-resolution ← continued-change-needs-openness
+
+`formal-reuse` — 复用所立者的普查与其存量（Web.StandingCensus、Web.StandingCensus.stock_eq、World.standingCensus）、围住所立者的步（Flow.AroundStanding、Flow.Enclosed.aroundStanding_not_not）与 exposed 的持有者（Exposed.stands_iff、Exposed.holder_one）；边界定理的前提对照 World.rests_enclosed、World.arising_opens 与 World.exchange_stops。 / Reuses the census of what stands and its stock (Web.StandingCensus, Web.StandingCensus.stock_eq, World.standingCensus), steps enclosed around what stands (Flow.AroundStanding, Flow.Enclosed.aroundStanding_not_not) and the holder of exposed (Exposed.stands_iff, Exposed.holder_one); the boundary theorems match the premises of World.rests_enclosed, World.arising_opens and World.exchange_stops.
+
+**Producer output / 上游输出:** 跨过围住所立者的步，所立者的总水平等于围住它的家族的存量；被围住的步不能被否定为围住所立者。 / Across a step enclosed around what stands, the total standing equals the stock of the enclosing family; an enclosed step cannot be refuted to be enclosed around what stands.
+
+**Consumer input / 下游输入:** 在细分分辨率下，所立者的总水平不上升，每个至少 1/p 单位的增长使它至少损失 1/(p q) 单位。 / At a refining resolution the total standing does not rise, and each gain of at least 1/p of the unit makes it lose at least 1/(p q) of the unit.
+
+**Retained conditions / 保留条件:** 活动的普查；关系项都体现；从 T 起每步被围住；细分分辨率下的平衡；按比例的损失。 / A census of activity; every relatum embodied; every step from T on enclosed; balance at a refining resolution; loss in proportion.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
+## rest-at-every-resolution ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用耗散与封闭家族（Flow.DissipatesOn、Flow.Dissipative、Flow.ClosedAt、Flow.Enclosed）、被耗散的家族的补给与取用者不多于其取用（DissipatesOn.replenishment_takers）、有限关系项时每步被围住（Flow.enclosed_of_finite）与支撑之间的总和比较（total_le_of_support）；单位固定时的情形对照 Flow.Balances.taking_ceases。 / Reuses dissipation and closed families (Flow.DissipatesOn, Flow.Dissipative, Flow.ClosedAt, Flow.Enclosed), that a family dissipated on has replenishment and takers within its uptake (DissipatesOn.replenishment_takers), that with finitely many relata every step is enclosed (Flow.enclosed_of_finite), and the comparison of totals between supports (total_le_of_support); the fixed-unit case matches Flow.Balances.taking_ceases.
+
+**Producer output / 上游输出:** 被耗散的家族的补给连同取用者不多于其取用。 / A family dissipated on has its replenishment together with its takers within its uptake.
+
+**Consumer input / 下游输入:** 在细分分辨率下，存量连同取用者不多于 r t 乘此前的存量（Flow.BalancesAt.lowers）。 / At a refining resolution, the stock together with the takers is within r t times the stock before (Flow.BalancesAt.lowers).
+
+**Retained conditions / 保留条件:** 细分分辨率下的平衡；耗散；封闭的不重复家族。 / Balance at a refining resolution; dissipation; a closed family without repetition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
 ## retained-reference-joining-recovery ← branching-tests-bisimulation
 
 `formal-reuse` — 位置对接合的有限结果给出有限分支，再复用恢复及历史提升。 / Finite outcomes of slot-pair joining give finite branching, then reuse recovery and history lifting.

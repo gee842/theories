@@ -145,8 +145,8 @@
     "en": "Stated for discrete steps and natural-number amounts; the threshold results compare one step, and the absorbing end needs requirements not loosening and, for a family, only members giving to what members require; the witnesses are minimal, their activity and requirements stipulated, and are shown consistent with balance, support and dependence, or each missing one premise; the whole is all the formations of a web, the represented whole; contains no ethical predicate; reading support gained only from the supported as the continuation of becoming continuing itself, and the absorbing end as the irreversible side of degeneration, is the AI's reading, pending Ren; the names (GainsSupport, Unloosened, Restoring and others) are the AI's wording, for Ren to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T150853.470895Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 34 个模块（含只作导入的根模块与桥接），共 1552 项定理／2445 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T151108.093153Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 36 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T150853.470895Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 34 modules (including the import-only root and the bridge) with 1552 theorems/2445 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T151108.093153Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 36 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T155424.663562Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1649 项定理／2571 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T161037.642977Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T155424.663562Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1649 theorems/2571 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T161037.642977Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
@@ -230,17 +230,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d0c52de203ed33410c48ed7504dc0ac2d4a6e0e91341209ac8b6e2f8070a7271"
+      "sha256": "331c2b0264cfae6742529ffe1d68d5df9d8b282e2ce5d09d66fcd39a9f0bbc7f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "52df9d5b83a4c81c83e4e5764fb74ce920f9558d08120d118340131bc678588e"
+      "sha256": "6b12dabd1299277d893c6b52962d0a346ac67285d190c35f9430a5d1b9751ab1"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "48ad96cd0d678148a15186a348ae6ac9a3a2d7324b9000a6642e537054a921a5"
+      "sha256": "5d8f0c63198bfb885608993bbd50a1aea44c3238e3aa0bc2503b4f65655edb8e"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -328,6 +328,10 @@
     {
       "zh": "2026-10-10 P41b：验证范围重新指向合并检查器回执 20261010T150853.470895Z 与外围回执 20261010T151108.093153Z（处理第十四次独立审查：Counting、Premises 与 Dependence 新增或移入声明）；所引模块的定理数改为该回执的数目（Dependence 59、Premises 59、Counting 132）。断言不变。",
       "en": "2026-10-10 P41b: validation scope re-pointed to consolidated receipt 20261010T150853.470895Z and periphery receipt 20261010T151108.093153Z (integrating the fourteenth independent review: declarations added to or moved into Counting, Premises and Dependence); the module counts cited are now that receipt's (Dependence 59, Premises 59, Counting 132). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R1：验证范围重新指向合并检查器回执 20261010T155424.663562Z 与外围回执 20261010T161037.642977Z（新模块 Becoming.Resolution 加入核心）。断言不变。",
+      "en": "2026-10-10 R1: validation scope re-pointed to consolidated receipt 20261010T155424.663562Z and periphery receipt 20261010T161037.642977Z (the new module Becoming.Resolution joins the core). The claim is unchanged."
     }
   ]
 }

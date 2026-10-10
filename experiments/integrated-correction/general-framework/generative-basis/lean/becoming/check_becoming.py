@@ -39,7 +39,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Openness", "Becoming.Counting", "Becoming.Continuation", "Becoming.Admission",
+        "Becoming.Openness", "Becoming.Counting", "Becoming.Resolution",
+        "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
@@ -598,6 +599,21 @@ SCOPE = (
     "conditions each onto the other keeps co-participation and interaction and removes that "
     "connection; a seed descends from the parent that provisioned it while dormant, and "
     "waking from dormancy descends from nothing. "
+    "Resolution: counted in a unit that may split into finer units across each step, a flow "
+    "balanced at that resolution has, over any family closed from some step, the quanta of the "
+    "unit of that step it loses within the loss law: where each step loses k quanta, the quanta "
+    "counted from that step are at most q times the quantity there, so steps losing at least "
+    "1/q of the unit number at most q times the stock and do not recur; with the unit fixed, "
+    "taking from a closed family stops; where every formation gives a closed family at most q "
+    "parts in q + 1 of what it takes, formations taking at least 1/p of the unit number at most "
+    "p (q + 1) times the stock, and in a world with a census, embodied relata and every step "
+    "from some step on enclosed, relata gaining at least 1/p of the unit number at most p q "
+    "times the total standing, so such gains, and arising at that size, do not recur; at a unit "
+    "splitting without end, a closed pool is taken from without end, a whole unit is exchanged "
+    "at every step with one unit of the step after lost and no share lost in proportion, a new "
+    "relatum arises at every step inside an enclosure with half of what is taken lost, and two "
+    "sides hand a whole unit back and forth inside an enclosure, each arising in turn, with no "
+    "share lost in proportion. "
     "Continuation: across a step a formation taking part conveys from one condition to another "
     "when it takes from the first and gives to the second, and a family is fed from beyond when "
     "something outside it is conveyed into a member; a step at which a family is fed from beyond "
