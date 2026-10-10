@@ -327,7 +327,7 @@ Formal completeness of a representation does not establish the deductive necessi
 |---|---|---|
 | P36 见证改名 ✓ | 见下表；陈述、证明与计数不变；历史各节、旧回执、审查与探针保留原名 | 回执 20261010T083222.285294Z，外围回执 20261010T084107.973758Z；[研究 §50](BECOMING-RENEWAL-READING.md#50-见证改名p36) |
 | P36b 生成不译作 generative（入口与标题 ✓） | 英文叙述中把整体（生成）叫作 generative 之处改为 becoming，generative 只指生成的区域；入口与标题已改（见下）；现行章节中约两千处用法须逐处判断，全库清扫的规模另行提出；引用 Ren 原话之处不改；GOALS 的文字等 Ren 同意，路径作为兼容入口保留 | 链接、阅读目录与生成页检查 |
-| P37 区域（另一会话） | 包括：可能性（接下来能形成什么，以包含比较，有无一个形成的反事实说明它贡献什么）；退化、中性与生成三个区域；相界定理（没有条件能被永远耗下去，门控条件的持续损失终结需要它者）；层级（自身 ⊂ 系统 ⊂ 整体）与延续和不退化在何处重合；搭便车者的见证；带有所表示边界的形成与其实际依存范围的比较 | Lean 检查、记录与研究节 |
+| P37 区域（另一会话）✓ | 包括：可能性（接下来能形成什么，以包含比较，有无一个形成的反事实说明它贡献什么）；退化、中性与生成三个区域；相界定理（没有条件能被永远耗下去，门控条件的持续损失终结需要它者）；层级（自身 ⊂ 系统 ⊂ 整体）与延续和不退化在何处重合；搭便车者的见证；带有所表示边界的形成与其实际依存范围的比较。完成：新模块 `Becoming.Admission`（38 项定理）与 `Becoming.Regions`（18 项）；支持只从被支持者获得，终结是吸收态；相界精确：形成恰在部分的累计净汲取不超出余量时被支持；关闭需要净汲取，打开需要净给予；部分扩大、缩小、保持不变或混合，混合的定序需要度量；区域越小其外越多，清除者延续而关闭其依存之外的栖居者（搭便车者的见证）；在条件区域上的更新与实际依存的比较；已有的相界结果是 `excess_bounded` 与 `joint_excess_ends` | 回执 20261010T100351.523624Z（1412 项定理、2251 项声明审计），外围回执 20261010T100610.366844Z；[研究 §51](BECOMING-RENEWAL-READING.md#51-接下来能形成什么接纳部分与区域p37)；五项新记录 |
 | P38 第一部分的总陈述与章节重组 | 章节分为第一部分与第二部分；第一部分以一条总陈述收束，说明三件事：不加公理时对每个展开成立什么，每个前提加了什么，动力学在何处不再决定 | 章节、记录与生成页检查 |
 | P39 第二部分（另一会话） | 一条公理，即延续到将来对任何东西都有意义；G0 作为目标定理 | Lean 检查与审查 |
 | P40 路线 (b) | 不加公理：“应当”是中心在其所表示的边界与其实际依存一致时所做的；只解释承认与动机，不主张更多的根据 | 待定 |
@@ -380,7 +380,7 @@ Ren confirmed two readings: possibilities as what can form next, and the whole a
 The stages:
 - **P36:** witness names, done; the table is above.
 - **P36b:** generative no longer stands for becoming in English prose. Entry points and titles are done (above); a sweep of the roughly two thousand uses in the current chapters, each needing a judgment, will be proposed with its scale; quotations of Ren stay.
-- **P37:** the regimes, by the other session. It covers possibilities, the three regimes and their phase boundaries, the levels, a free-rider witness, and represented boundaries against actual dependence.
+- **P37:** the regimes, by the other session. It covers possibilities, the three regimes and their phase boundaries, the levels, a free-rider witness, and represented boundaries against actual dependence. Done: `Becoming.Admission` (38 theorems, the exact phase boundary among them) and `Becoming.Regions` (18); receipt 20261010T100351.523624Z, periphery receipt 20261010T100610.366844Z; study section 51; five new records.
 - **P38:** the Part I capstone and the chapter restructure.
 - **P39:** Part II, by the other session.
 - **P40:** route (b).

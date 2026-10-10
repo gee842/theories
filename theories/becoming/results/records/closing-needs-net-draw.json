@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "id": "closing-needs-net-draw",
+  "title": {
+    "zh": "关闭需要净汲取：扣留一个部分而其余交换不变，扣留后的水平存在时唯一；每个水平加上该部分累计取走的，等于扣留后的水平加上它累计给予的；形成恰在部分的净汲取不超出余量时被支持；所以一个部分只经由在所需条件上的净汲取关闭能形成者，只经由净给予打开它",
+    "en": "Closing needs a net draw: with a part withheld and the rest of the exchange unchanged, the levels without it are unique where they exist; each level with what the part has taken so far equals the level without it with what the part has given so far; a formation is supported exactly when the part's net draw stays within the margin; so a part closes what can form only through a net draw on a condition it requires, and opens it only through a net give"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-10T10:08:00+00:00",
+  "claim": {
+    "zh": "水平 l 在 t 接纳形成 f（Web.Admits），是指 l 满足 f 在 t 的每项要求；支持就是现有水平的接纳（Web.supported_iff_admits），不更低的水平接纳更低水平所接纳的（Web.Admits.mono）。一个部分是可判定的形成家族（part : F → Bool），可以是单个形成或一个系统。扣留它的流（Flow.withhold）中，部分的成员不取用也不给予，其余交换照旧；扣留后的水平（Flow.WithheldLevels）是从同一起点、每步按扣留后的流平衡的水平路径，存在时唯一（Flow.WithheldLevels.unique）。每步的取用与给予分为其余者的与部分的（Flow.taken_withhold、Flow.given_withhold；部分的为 Flow.partTaken、Flow.partGiven）。在平衡的流中，记账是精确的（Flow.Balances.withheld）：每一步，每个条件的水平加上部分到该步为止从它取走的总量，等于扣留后的水平加上部分到该步为止给它的总量。所以边界是精确的（Flow.Balances.supported_iff_within_margin）：f 在 t 被支持，恰当在它所需的每个条件上，它的所需加上部分到该步为止从该条件取走的，不多于扣留后的水平加上部分到该步为止给它的；也就是说，部分的累计净汲取须在扣留后的水平满足所需的余量之内。由此，到 t 为止部分给 f 所需的每个条件的不少于从它取走的，则扣留后的水平在 t 接纳 f 之处，f 在 t 被支持（Flow.Balances.supported_of_net_give）；部分从 f 所需的每个条件取走的不少于给它的，则 f 在 t 被支持之处，扣留后的水平在 t 接纳 f（Flow.Balances.admits_of_net_draw）。部分关闭一个没有它时能形成的形成，只能经由在它所需的某个条件上超出余量的净汲取（对这一等价取否定，找出那个条件要用经典逻辑）；打开一个，只能经由净给予。比较保持其余交换不变，像 Becoming.Joint 的 but-for 检验保持动作不变。不用伦理前提，也不用 Lean 公理。",
+    "en": "Levels l admit a formation f at t (Web.Admits) when they meet every requirement f then has; support is admission by the levels that stand (Web.supported_iff_admits), and levels no lower admit whatever lower levels admit (Web.Admits.mono). A part is a decided family of formations (part : F → Bool), a single formation or a system of them. In the flow with the part withheld (Flow.withhold) its members take and give nothing and the rest of the exchange is as it was; the levels without the part (Flow.WithheldLevels) are the level path that balances this flow from the same start, unique where it exists (Flow.WithheldLevels.unique). Each step's taking and giving split into the rest's and the part's (Flow.taken_withhold, Flow.given_withhold; the part's are Flow.partTaken and Flow.partGiven). In a balanced flow the accounting is exact (Flow.Balances.withheld): at every step, each condition's level with everything the part has taken from it so far equals the level without the part with everything the part has given it so far. So the boundary is exact (Flow.Balances.supported_iff_within_margin): f is supported at t exactly when, on every condition it requires, its need with what the part has taken from the condition so far is at most the level without the part with what the part has given it so far; the part's cumulative net draw must stay within the margin by which the levels without it meet the need. Hence where, up to t, the part has given each condition f requires at least what it took from it, f is supported at t wherever the levels without the part admit it (Flow.Balances.supported_of_net_give); where the part has taken from each such condition at least what it gave, the levels without the part admit f at t wherever f is supported (Flow.Balances.admits_of_net_draw). A part closes a formation that could form without it only through a net draw beyond the margin on a condition that formation requires (negating the equivalence; finding that condition uses classical logic), and opens one only through a net give. The comparison holds the rest of the exchange fixed, as the but-for test of Becoming.Joint holds the move fixed. No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "有部分的流平衡（Flow.Balances）；扣留后的水平从同一起点按扣留后的流平衡（Flow.WithheldLevels）。",
+      "en": "The flow with the part balances (Flow.Balances); the levels without the part balance the withheld flow from the same start (Flow.WithheldLevels)."
+    },
+    {
+      "zh": "部分是可判定的家族（part : F → Bool）；扣留它时其余交换不变：其余者照旧取用与给予，即使它们因此会过度取用；那时没有平衡的水平路径，无可比较。",
+      "en": "A part is a decided family (part : F → Bool); withholding it leaves the rest of the exchange unchanged: the others take and give as they did, even where they would then overdraw, in which case no balanced level path exists and there is nothing to compare."
+    },
+    {
+      "zh": "净交换的条件是到 t 为止累计的，并且针对 f 在 t 所需的每个条件。",
+      "en": "The net-exchange conditions are cumulative up to t and hold for each condition f requires at t."
+    },
+    {
+      "zh": "离散的步（从第零步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step zero; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 确认的第一项读法：可能性是从现有者接下来能形成什么；一个形成的贡献是有它的将来减去没有它的将来。这里“接下来能形成什么”读作每步被水平接纳的形成，“没有它”读作扣留它而其余交换不变；读法经 Ren 确认，这一形式化是 AI 的，待 Ren。Ren 说“not harm”是“a phase transition with a clear boundary, not some \"outside will or belief\"”。作者的读法（AI 论证）：关闭与不关闭之间的界由部分自身在所需条件上的净交换决定，到某步为止给回不少于所取者在该步不关闭任何东西，不需要动力学之外的意志或信念。读法与名称是 AI 的。",
+    "en": "Ren's first confirmed reading: possibilities are what can form next from what exists, and a formation's contribution is the future with it minus the future without it. Here what can form next is read as the formations the levels admit at each step, and without it as the part withheld with the rest of the exchange unchanged; Ren confirmed the reading, and this formalization is the AI's, pending Ren. Ren said that “not harm” is “a phase transition with a clear boundary, not some \"outside will or belief\"”. The author's reading (an AI argument): the boundary between closing and not closing is fixed by the part's own net exchange on required conditions, and a part that has given back at least what it took up to a step closes nothing at that step, with no will or belief from outside the dynamics. The reading and the names are the AI's."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+  "aliases": [
+    "Becoming.Web.Admits",
+    "Becoming.Web.supported_iff_admits",
+    "Becoming.Web.Admits.mono",
+    "Becoming.Flow.withhold",
+    "Becoming.Flow.partTaken",
+    "Becoming.Flow.partGiven",
+    "Becoming.Flow.WithheldLevels",
+    "Becoming.Flow.taken_withhold",
+    "Becoming.Flow.given_withhold",
+    "Becoming.Flow.WithheldLevels.unique",
+    "Becoming.Flow.Balances.withheld",
+    "Becoming.Flow.Balances.supported_iff_within_margin",
+    "Becoming.Flow.Balances.supported_of_net_give",
+    "Becoming.Flow.Balances.admits_of_net_draw"
+  ],
+  "dependencies": [
+    {
+      "id": "more-needs-renewers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用平衡（Flow.Balances）与每步的取用、给予总量（Flow.taken、Flow.given）。",
+        "en": "Reuses balance (Flow.Balances) and the step totals taken and given (Flow.taken, Flow.given)."
+      },
+      "interface": {
+        "output": {
+          "zh": "平衡的流：一步之后的水平加取用，等于之前的水平加给予。",
+          "en": "A balanced flow: the level after a step with what is taken equals the level before with what is given."
+        },
+        "input": {
+          "zh": "部分的记账：有部分的流与扣留后的流的平衡，相差部分到该步为止的取用与给予。",
+          "en": "The accounting of a part: the balances of the flow with the part and of the withheld flow differ by what the part has taken and given so far."
+        },
+        "conditions": {
+          "zh": "有部分的流平衡；扣留后的水平从同一起点按扣留后的流平衡。",
+          "en": "The flow with the part balances; the levels without it balance the withheld flow from the same start."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "joint-difference-making",
+      "detail": {
+        "zh": "那里的 but-for 检验保持动作不变；这里的比较保持其余交换不变。这里部分的贡献是对能形成什么，不是对一次终结。",
+        "en": "Its but-for test holds the move fixed; this comparison holds the rest of the exchange fixed. A part's contribution here is to what can form, not to an ending."
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "detail": {
+        "zh": "联合超出比较每步的总量；这里的记账追踪一个部分的累计净交换。",
+        "en": "Joint excess compares each step's totals; the accounting here follows one part's cumulative net exchange."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "detail": {
+        "zh": "净交换按条件计：Transfer 中传送者从第一个条件净取走一单位、向第二个条件净给予一单位，关闭第一个形成而打开第二个（Transfer.mixed）；对第一个形成净给予的前提不成立，对第二个净汲取的前提不成立。",
+        "en": "Net exchange is counted condition by condition: in Transfer the conveyor draws a unit net from the first condition and gives a unit net to the second, closing the first formation and opening the second (Transfer.mixed); for the first formation the net-give premise fails, for the second the net-draw premise."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "detail": {
+        "zh": "其余者在扣留后会过度取用时，没有水平路径平衡扣留后的流，比较为空；所以每个见证都给出扣留后的水平（Restoring.Inflow.withheld、Transfer.withheld，以及 Becoming.Regions 中的 Clearing.withheld），WithheldLevels.unique 保证它是唯一的那一条。",
+        "en": "Where the others would overdraw without the part, no level path balances the withheld flow and the comparison is empty; so each witness exhibits its levels without the part (Restoring.Inflow.withheld, Transfer.withheld, and Clearing.withheld in Becoming.Regions), and WithheldLevels.unique makes them the only ones."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只比较每步被接纳的形成，不比较多步可达、更新能力或关系的丰富（Ren 也提到的“renewal capacity, or richness of relations”）；反事实不让其余者随之调整；扣留后没有平衡的水平时无可比较；部分须是可判定的家族；离散步与自然数的量；不含伦理谓词，也不说哪个部分应当被扣留；接纳、扣留、净汲取等名称是 AI 的表述，由 Ren 定。",
+    "en": "Compares only the formations admitted at each step, not reachability over several steps, renewal capacity or richness of relations (which Ren also named: “renewal capacity, or richness of relations”); the counterfactual does not let the rest adjust; where no level path balances the flow without the part there is nothing to compare; a part must be a decided family; discrete steps and natural-number amounts; contains no ethical predicate and does not say which part should be withheld; names such as admission, withholding and net draw are the AI's wording, for Ren to choose."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T100351.523624Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 31 个模块（含只作导入的根模块与桥接），共 1412 项定理／2251 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T100610.366844Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 33 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T100351.523624Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 31 modules (including the import-only root and the bridge) with 1412 theorems/2251 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T100610.366844Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 33 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "b38a7b1b0b6c4569dade1e258c869bb1e088a17d4f00b7c2bd65f05d877f74f2",
+      "declarations": [
+        "Becoming.Web.Admits",
+        "Becoming.Web.supported_iff_admits",
+        "Becoming.Web.Admits.mono",
+        "Becoming.rebalance",
+        "Becoming.Flow.withhold",
+        "Becoming.Flow.partTaken",
+        "Becoming.Flow.partGiven",
+        "Becoming.Flow.WithheldLevels",
+        "Becoming.Flow.split_at",
+        "Becoming.Flow.taken_withhold",
+        "Becoming.Flow.given_withhold",
+        "Becoming.Flow.WithheldLevels.unique",
+        "Becoming.Flow.Balances.withheld",
+        "Becoming.Flow.Balances.supported_iff_within_margin",
+        "Becoming.Flow.Balances.supported_of_net_give",
+        "Becoming.Flow.Balances.admits_of_net_draw",
+        "Becoming.Restoring.Inflow.withheld",
+        "Becoming.Transfer.withheld",
+        "Becoming.Transfer.mixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "4af6e1afa8f704075fdc4dd79bf9db797f173a1c78a914ad02b8af46555a15a1",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.given",
+        "Becoming.total_add",
+        "Becoming.total_congr",
+        "Becoming.total_le"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "984ce6e6b0cf1f32e9f0848d2f9ee78ded0e433fadc6413bff64db3af41269dc",
+      "declarations": [
+        "Becoming.Web.Supported",
+        "Becoming.add_right_cancel",
+        "Becoming.le_of_add_le_add_right"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "role": "proof",
+      "sha256": "6e2fd19d6c8bcdca25f6487e2275a7263076b059f4660376d1ab7ca3c05394e4",
+      "declarations": [
+        "Becoming.steps_last"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "64b27b34b98287bd0a673383619ed5d273e448912221675f060326ba15523978"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "0d8653fc82864bab23fca5ef7e1a107b7d8e6167ca82c07a34505ce5c2269221"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e6d41d51e8ef3c65deba9e205c3d4845e633f2435b513041d0adcdb7572f6c49"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
+      "role": "provenance",
+      "sha256": "0fdb18d63c6ad5f6be6f0f65ecd461d1d66494749a29a4e213876f955ecd4c06"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Change",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "让其余者随之调整的反事实（扣留后其余者的取用随水平而变）；多步可达的比较；与 Becoming.Joint 的 but-for 检验的形式联系。",
+    "en": "A counterfactual in which the rest adjust (the others' taking responding to the levels without the part); comparison of reachability over several steps; a formal link to the but-for test of Becoming.Joint."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P37：新增，按 Ren“yes to both readings, go ahead with Part I.”与“let's aim for a first, then try to archive b”；统一计划 P37（第一部分：可能性、三种区域、相界、层级、搭便车者的见证与所表示的边界），分工经另一会话同意；见整合文档 §51。",
+      "en": "2026-10-10 P37: added, following Ren's ‘yes to both readings, go ahead with Part I.’ and ‘let's aim for a first, then try to archive b’; unification plan P37 (Part I: possibilities, the three regimes, the phase boundary, levels, the free-rider witness and represented boundaries), the division of work agreed with the other session; see §51 of the integration note."
+    }
+  ]
+}

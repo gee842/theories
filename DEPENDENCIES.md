@@ -510,6 +510,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean)
 
+## closing-needs-net-draw ← more-needs-renewers
+
+`formal-reuse` — 复用平衡（Flow.Balances）与每步的取用、给予总量（Flow.taken、Flow.given）。 / Reuses balance (Flow.Balances) and the step totals taken and given (Flow.taken, Flow.given).
+
+**Producer output / 上游输出:** 平衡的流：一步之后的水平加取用，等于之前的水平加给予。 / A balanced flow: the level after a step with what is taken equals the level before with what is given.
+
+**Consumer input / 下游输入:** 部分的记账：有部分的流与扣留后的流的平衡，相差部分到该步为止的取用与给予。 / The accounting of a part: the balances of the flow with the part and of the withheld flow differ by what the part has taken and given so far.
+
+**Retained conditions / 保留条件:** 有部分的流平衡；扣留后的水平从同一起点按扣留后的流平衡。 / The flow with the part balances; the levels without it balance the withheld flow from the same start.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## code-plan-global-support ← joint-code-plan-lifting
 
 `formal-reuse` — 代码实现先提升为同一原生共同方案。 / Code realization first lifts to the same native joint plan.
@@ -1074,6 +1086,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)
 
+## four-cases-of-a-part ← closing-needs-net-draw
+
+`formal-reuse` — 复用 supported_of_net_give 与 admits_of_net_draw：每步的比较累加成到 t 为止的净交换，给出两个方向的包含。 / Reuses supported_of_net_give and admits_of_net_draw: the per-step comparisons sum to the net exchange up to t, giving inclusion either way.
+
+**Producer output / 上游输出:** 到 t 为止在所需条件上净给予（或净汲取）时，扣留后的接纳给出支持（或反之）。 / With a net give (or draw) on the required conditions up to t, admission without the part gives support (or conversely).
+
+**Consumer input / 下游输入:** 每步、每个条件上的取用与给予的比较给出水平路径的包含。 / Per-step comparisons of taking and giving on every condition give inclusion of level paths.
+
+**Retained conditions / 保留条件:** 平衡；扣留后的水平从同一起点。 / Balance; levels without the part from the same start.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## four-cases-of-a-part ← support-from-the-supported
+
+`formal-reuse` — 扩大的见证复用 Restoring 的流与 Inflow 的网（Restoring.flow、Restoring.Inflow.web、Restoring.balances_unitStep）。 / The widening witness reuses Restoring's flow and Inflow's web (Restoring.flow, Restoring.Inflow.web, Restoring.balances_unitStep).
+
+**Producer output / 上游输出:** Inflow：一个不需要任何东西的给予者在第零步向所需条件给予一单位；平衡、Acting 与 Dependent 成立。 / Inflow: a giver requiring nothing gives the required condition one unit at step zero; balance, Acting and Dependent hold.
+
+**Consumer input / 下游输入:** 同一流与网，与扣留给予者的部分后的水平比较。 / The same flow and web, compared with the giver's part withheld.
+
+**Retained conditions / 保留条件:** 如 Restoring.Inflow.restores。 / As in Restoring.Inflow.restores.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## four-cases-of-a-part ← derived-extent-limits
+
+`formal-reuse` — 缩小的见证复用 Clearing 的流、网与平衡（Clearing.flow、Clearing.web、Clearing.balances）。 / The narrowing witness reuses Clearing's flow, web and balance (Clearing.flow, Clearing.web, Clearing.balances).
+
+**Producer output / 上游输出:** Clearing：平衡；清除者每步活跃且被支持；栖居者的栖息地在第零步与第一步被清除。 / Clearing: balanced; the clearer active and supported at every step; the dweller's habitat cleared at steps zero and one.
+
+**Consumer input / 下游输入:** 同一流与网，与扣留清除者的部分后的水平比较。 / The same flow and web, compared with the clearer's part withheld.
+
+**Retained conditions / 保留条件:** 如 Clearing.undermines_within_renewal。 / As in Clearing.undermines_within_renewal.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
 ## generation-is-replenishment ← life-as-condition-of-life
 
 `formal-reuse` — 复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把体现的关系项经由给予而生起推进为“生成即补充”。 / Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries embodied arising through giving on to generation as replenishment.
@@ -1405,6 +1453,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** Connected；某个活的主张。 / Connected; some living claim.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## loss-beyond-a-region ← four-cases-of-a-part
+
+`formal-reuse` — 复用包含（Web.Includes）与 Clearing 扣留后的水平：Clearing.withheld、Clearing.admitted_without、Clearing.unsupported_with。 / Reuses inclusion (Web.Includes) and Clearing's levels without the clearer's part: Clearing.withheld, Clearing.admitted_without, Clearing.unsupported_with.
+
+**Producer output / 上游输出:** 水平路径的包含；Clearing 中扣留后的水平，栖居者无它时每步被接纳、有它时从第二步起不被支持。 / Inclusion of level paths; in Clearing the levels without the clearer's part, with the dweller admitted at every step without it and not supported from step two on with it.
+
+**Consumer input / 下游输入:** 包含即在整体之内的接纳；栖居者是清除者依存之外失去的形成。 / Inclusion as admission within the whole; the dweller as the formation lost beyond the clearer's dependence.
+
+**Retained conditions / 保留条件:** 平衡；扣留后的水平从同一起点。 / Balance; levels without the part from the same start.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## loss-beyond-a-region ← closing-needs-net-draw
+
+`formal-reuse` — 复用接纳（Web.Admits）与扣留后的水平（Flow.WithheldLevels）。 / Reuses admission (Web.Admits) and the levels without a part (Flow.WithheldLevels).
+
+**Producer output / 上游输出:** 水平在某步对一个形成的接纳。 / Admission of a formation by levels at a step.
+
+**Consumer input / 下游输入:** 在区域之内与之外的接纳。 / Admission within and beyond a region.
+
+**Retained conditions / 保留条件:** 除表示外没有前提。 / None beyond the representation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## loss-beyond-a-region ← derived-extent-limits
+
+`formal-reuse` — 复用 Clearing 的网与依存（Clearing.dependent）：清除者每步活跃且被支持，只依存于其资源；沿供给只有来源供给它（Clearing.fedBy_source）。 / Reuses Clearing's web and dependence (Clearing.dependent): the clearer is active and supported at every step and depends only on its resource; along feeding only the source feeds it (Clearing.fedBy_source).
+
+**Producer output / 上游输出:** 清除者每步活跃且被支持；沿供给只有来源供给它。 / The clearer is active and supported at every step; along feeding only the source feeds it.
+
+**Consumer input / 下游输入:** 区域 alongDependence 是清除者与来源；清除者在其中延续。 / The region alongDependence is the clearer and the source; the clearer continues within it.
+
+**Retained conditions / 保留条件:** 如 Clearing.undermines_within_renewal。 / As in Clearing.undermines_within_renewal.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 
 ## map-of-premises ← space-and-its-parts
 
@@ -1762,6 +1846,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean)
 
+## represented-boundary-against-dependence ← becoming-stepwise-reading
+
+`formal-reuse` — 复用逐步的读法：Web.RenewingAt、Web.UnderminingAt、Web.RenewingAt.not_undermining 与 Web.MetAbove.now。 / Reuses the stepwise reading: Web.RenewingAt, Web.UnderminingAt, Web.RenewingAt.not_undermining and Web.MetAbove.now.
+
+**Producer output / 上游输出:** 在更新之内的事件不侵蚀（Web.RenewingAt.not_undermining）。 / An event within renewal is not undermining (Web.RenewingAt.not_undermining).
+
+**Consumer input / 下游输入:** 在区域上的更新与该步的更新比较；区域遗漏所需或所汲取的条件时的侵蚀。 / Renewal over a region compared with renewal at the step; undermining where the region omits a required or drawn condition.
+
+**Retained conditions / 保留条件:** 逐步读法的定义；不用任何评价。 / The stepwise reading's definitions; no valuation is used.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## represented-boundary-against-dependence ← derived-extent-limits
+
+`formal-reuse` — 复用 Clearing.undermines_within_renewal：清除者只依存于其资源，资源被更新，它在第一步的事件侵蚀栖居者。 / Reuses Clearing.undermines_within_renewal: the clearer depends only on its resource, which is renewed, and its event at step one undermines the dweller.
+
+**Producer output / 上游输出:** 清除者只依存于其资源，资源的每项依存每步都被保住；它在第一步侵蚀。 / The clearer depends only on its resource, every dependence on which is kept at every step; it undermines at step one.
+
+**Consumer input / 下游输入:** 清除者每步在其资源上更新，第一步不在该步的更新之内。 / The clearer renews over its resource at every step and is not within renewal at step one.
+
+**Retained conditions / 保留条件:** 如 Clearing.undermines_within_renewal。 / As in Clearing.undermines_within_renewal.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## represented-boundary-against-dependence ← support-from-the-supported
+
+`formal-reuse` — 复用 Web.Untightened：要求在一步上不收紧。 / Reuses Web.Untightened: requirements that do not tighten across a step.
+
+**Producer output / 上游输出:** 要求在一步上不收紧。 / Requirements that do not tighten across a step.
+
+**Consumer input / 下游输入:** 在覆盖所需的区域上更新时保住自身支持。 / Keeping its own support while renewing over a region covering what it requires.
+
+**Retained conditions / 保留条件:** 除表示外没有前提。 / None beyond the representation.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
 ## reserve-defers-ending ← becoming-dependence-dynamics
 
 `formal-reuse` — 复用 Supported、Dependent 与损失的结局；零储备恰是 Dependent，consumed_lasts 推广 consumed_ends_when_fixed。 / Reuses Supported, Dependent and the outcomes of a loss; the zero reserve is exactly Dependent, and consumed_lasts generalizes consumed_ends_when_fixed.
@@ -2081,6 +2201,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
+
+## support-from-the-supported ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用 Web.supported_of：在 s 被支持的形成，在 t 的每项依存都在 s 已有、所需不更高、条件不更低时，在 t 被支持。 / Reuses Web.supported_of: a formation supported at s is supported at t where each dependence it has at t it had at s, at no greater need, on a condition standing no lower.
+
+**Producer output / 上游输出:** 依存不变或变弱、条件不降低时支持保持。 / Support persists where dependence stays or weakens and conditions do not fall.
+
+**Consumer input / 下游输入:** 获得支持需要所需条件上升或要求放松，失去支持需要所需条件下降或要求收紧（逆否）。 / Gaining support needs a required condition to rise or a requirement to loosen; losing it needs a fall or a tightening (the contrapositive).
+
+**Retained conditions / 保留条件:** 获得时要求不放松，失去时要求不收紧。 / Requirements not loosening for gaining, not tightening for losing.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## support-from-the-supported ← more-needs-renewers
+
+`formal-reuse` — 复用平衡（Flow.Balances）、只有活跃者给予（Flow.Acting）与 Flow.Balances.renewedBy（平衡且只有活跃者给予时，每次上升由一个参与的活跃形成给予）；这里加上活动需要支持（Web.Dependent），得出给予者被支持。 / Reuses balance (Flow.Balances), only active formations giving (Flow.Acting) and Flow.Balances.renewedBy (in a balanced flow where only active formations give, an active formation taking part gives to every condition that rises); this result adds activity needing support (Web.Dependent), so the giver is supported.
+
+**Producer output / 上游输出:** 每次上升由一个参与该步的活跃形成给予（本证明经 Flow.Balances.rise_given 与 total_pos）。 / Every rise is given by an active formation taking part (the proof here goes through Flow.Balances.rise_given and total_pos).
+
+**Consumer input / 下游输入:** 每次上升由一个参与该步的被支持的形成给予。 / Every rise is given by a supported formation taking part.
+
+**Retained conditions / 保留条件:** 平衡、Acting；另加 Dependent。 / Balance and Acting, with Dependent added.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## supported-renewal-recovery ← relational-renewal-classification
 

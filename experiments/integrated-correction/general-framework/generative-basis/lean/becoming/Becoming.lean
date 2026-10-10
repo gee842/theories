@@ -20,6 +20,8 @@ import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
 import Becoming.Continuation
+import Becoming.Admission
+import Becoming.Regions
 import Becoming.Metaethics
 import Becoming.Ranking
 import Becoming.Correspondence
@@ -237,6 +239,25 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   one's continuation depends on; it ends with the want, and a clearer that meets every
   requirement derived here can still end a life it does not need. Ren's proposal of 10
   October 2026 (an AI reading).
+* `Becoming.Admission` (L3): what can form next, and what a part opens or closes. Levels
+  admit a formation when they meet every requirement it has; support is admission by the
+  levels that stand, gained only at a rise and lost only at a fall where requirements hold,
+  and gained only from the supported, so the end absorbs where nothing beyond gives, each
+  premise being needed. A part, one formation or a system, is withheld by leaving the rest
+  of the exchange as it was; the levels without it are unique where they exist, and the
+  accounting is exact: each level with what the part took is the level without it with
+  what the part gave. Closing what can form needs a net draw on a condition it requires,
+  and opening needs a net give. Compared by inclusion, a part widens, narrows, keeps the
+  same or is mixed, each exceeding the other, which inclusion does not order. Reading
+  these as Ren's generative, degenerative and neutral is the AI's reading.
+* `Becoming.Regions` (L3): self, system and whole, and represented boundaries. What a
+  part's levels admit within a region they admit within every region inside it, what is
+  lost beyond a region is lost beyond every region inside it, and nothing lies beyond
+  the whole. The clearer continues and closes nothing within itself and the source it
+  depends on, while beyond them the dweller is admitted without its part and not with
+  it. Renewal over a region of conditions is renewal at the step when the region covers
+  every condition the formation takes part in, keeps its own support when it covers what
+  it requires, and over a region omitting a requirement can lose its own support.
 * `Becoming.Metaethics` (L4): the Universal Metaethical Core: the premise card,
   G0's characterization, minimality, the universal reason, C and L, and the
   relational readings over a whole run, stepwise and through relations.

@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "id": "loss-beyond-a-region",
+  "title": {
+    "zh": "区域之外的损失：在嵌套的形成区域上比较，区域越小其外越多，整体之外什么都没有；清除者每步活跃且被支持，在它与供给其资源的来源之内不关闭任何东西，从第二步起在其外关闭栖居者",
+    "en": "Loss beyond a region: compared over nested regions of formations, the smaller the region the more lies beyond it, and nothing lies beyond the whole; the clearer, active and supported at every step, closes nothing within itself and the source feeding its resource, and from step two on closes the dweller beyond them"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-10T10:08:00+00:00",
+  "claim": {
+    "zh": "在一个形成区域之内，水平 l 接纳水平 l′ 在那里接纳的每个形成（Web.AdmitsWithin）；在区域之外有损失（Web.LosesBeyond），是指区域外有一个形成被 l′ 接纳而不被 l 接纳。包含就是每步在整体之内的接纳（Web.includes_iff_within_whole）。在一个区域之内成立的，在它之内的每个区域之内也成立（Web.AdmitsWithin.narrow）；在一个区域之外的损失，在它之内的每个区域之外也是损失（Web.LosesBeyond.narrow）：区域越小，其外越多。整体之外什么都没有（Web.not_losesBeyond_whole），在整体之内成立的，在任何区域之外都不留下损失（Web.AdmitsWithin.not_losesBeyond）。在单个形成之内成立的，就是它自身在 l′ 接纳它之处被 l 接纳（Web.admitsWithin_self）。Clearing 中扣留清除者的部分（Clearing.clearerPart）后的水平存在（Clearing.withheld，见 four-cases-of-a-part）。区域 Clearing.alongDependence 由清除者与供给它唯一所需条件（资源）的来源组成；它与 Clearing.fedBy_source 沿供给找到的形成一致（逐项对照，不是定理）。每步清除者都活跃且被支持，并且在这个区域之内，有它的水平接纳无它的水平所接纳的每个形成；从第二步起，在区域之外，栖居者无它时被接纳而有它时不被接纳（Clearing.loses_beyond）。所以一个部分可以每步都延续、在其依存之内不关闭任何东西，同时关闭其依存之外的东西；以整体为区域时，没有之外的损失可言（Web.not_losesBeyond_whole）。不用伦理前提，也不用 Lean 公理。",
+    "en": "Within a region of formations, levels l admit every formation the levels l′ admit there (Web.AdmitsWithin); there is loss beyond the region (Web.LosesBeyond) when some formation outside it is admitted by l′ and not by l. Inclusion is admission within the whole at every step (Web.includes_iff_within_whole). What holds within a region holds within every region inside it (Web.AdmitsWithin.narrow); what is lost beyond a region is lost beyond every region inside it (Web.LosesBeyond.narrow): the smaller the region, the more lies beyond it. Nothing lies beyond the whole (Web.not_losesBeyond_whole), and what holds within the whole leaves nothing lost beyond any region (Web.AdmitsWithin.not_losesBeyond). Within one formation, what holds is its own admission by l wherever l′ admits it (Web.admitsWithin_self). In Clearing the levels without the clearer's part (Clearing.clearerPart) exist (Clearing.withheld, see four-cases-of-a-part). The region Clearing.alongDependence is the clearer with the source that feeds the one condition it requires, its resource; it matches the formations Clearing.fedBy_source finds along feeding (checked by inspection, not by a theorem). At every step the clearer is active and supported, and within this region the levels with its part admit every formation the levels without it admit; from step two on, beyond the region, the dweller is admitted without the clearer's part and not with it (Clearing.loses_beyond). So a part can continue at every step and close nothing within its dependence while closing what lies beyond it; with the whole as the region there is no loss beyond to speak of (Web.not_losesBeyond_whole). No ethical premise and no Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "形成的区域是陈述的参数（形成上的谓词）；整体是网中全部形成的区域，即所表示的整体。",
+      "en": "Regions of formations are parameters of the statement (predicates on formations); the whole is the region of all formations of the web, the represented whole."
+    },
+    {
+      "zh": "Clearing 的结论：平衡；清除者只依存于其资源；扣留清除者的部分后的水平从同一起点（Clearing.withheld）。",
+      "en": "For the Clearing results: balance; the clearer depends only on its resource; the levels without the clearer's part from the same start (Clearing.withheld)."
+    },
+    {
+      "zh": "比较在每一步上，并保持其余交换不变。",
+      "en": "The comparison is at each step and holds the rest of the exchange fixed."
+    },
+    {
+      "zh": "离散的步（从第零步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step zero; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 关于层级写道：“i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”。作者先前说只有不退化的动力学能无限延续，并在对话中更正：这对整体与形成自身的条件成立，对每个部分不成立，搭便车者是反例。Clearing.loses_beyond 就是这个反例的形式：清除者在其依存之内一直延续，在其外关闭栖居者。作者的读法（AI 论证，待 Ren）：形成的区域读作自身、所在的系统与整体；区域越小其外越多，给出 Ren 的次序——整体、系统、自身——按判据的强弱排列，不加公理；整体之外什么都没有，所以对整体，延续与不退化重合。这里的整体是一个网中全部形成的区域；按 Ren 确认的第二项读法，实际的整体从不是任何中心对它的模型，从不被完全表示。读法与名称是 AI 的。",
+    "en": "Of levels Ren wrote: “i think it should be the whole, and a weaker version is within the system that one is in, then the self. not saying this is what life does, but what's good for being generative, and the self is a cognitive model which can not justify itself without some sort of \"belief\"”. The author had said that only dynamics that do not degenerate can continue indefinitely, and corrected this in the conversation: it holds for the whole and for a formation's own conditions, not for every part, with a free rider as the counterexample. Clearing.loses_beyond is that counterexample in form: the clearer continues within its dependence and closes the dweller beyond it. The author's reading (an AI argument, pending Ren): regions of formations read as the self, the system one is in and the whole; that the smaller the region, the more lies beyond it gives Ren's order, whole, system, self, as an order of the criteria by strength, with no axiom; nothing lies beyond the whole, so for the whole continuing and not degenerating coincide. The whole here is the region of all formations of a web; by Ren's second confirmed reading the actual whole is never any center's model of it and is never fully represented. The reading and the names are the AI's."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+  "aliases": [
+    "Becoming.Web.AdmitsWithin",
+    "Becoming.Web.LosesBeyond",
+    "Becoming.Web.includes_iff_within_whole",
+    "Becoming.Web.AdmitsWithin.narrow",
+    "Becoming.Web.LosesBeyond.narrow",
+    "Becoming.Web.not_losesBeyond_whole",
+    "Becoming.Web.AdmitsWithin.not_losesBeyond",
+    "Becoming.Web.admitsWithin_self",
+    "Becoming.Clearing.alongDependence",
+    "Becoming.Clearing.loses_beyond"
+  ],
+  "dependencies": [
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用包含（Web.Includes）与 Clearing 扣留后的水平：Clearing.withheld、Clearing.admitted_without、Clearing.unsupported_with。",
+        "en": "Reuses inclusion (Web.Includes) and Clearing's levels without the clearer's part: Clearing.withheld, Clearing.admitted_without, Clearing.unsupported_with."
+      },
+      "interface": {
+        "output": {
+          "zh": "水平路径的包含；Clearing 中扣留后的水平，栖居者无它时每步被接纳、有它时从第二步起不被支持。",
+          "en": "Inclusion of level paths; in Clearing the levels without the clearer's part, with the dweller admitted at every step without it and not supported from step two on with it."
+        },
+        "input": {
+          "zh": "包含即在整体之内的接纳；栖居者是清除者依存之外失去的形成。",
+          "en": "Inclusion as admission within the whole; the dweller as the formation lost beyond the clearer's dependence."
+        },
+        "conditions": {
+          "zh": "平衡；扣留后的水平从同一起点。",
+          "en": "Balance; levels without the part from the same start."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "closing-needs-net-draw",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用接纳（Web.Admits）与扣留后的水平（Flow.WithheldLevels）。",
+        "en": "Reuses admission (Web.Admits) and the levels without a part (Flow.WithheldLevels)."
+      },
+      "interface": {
+        "output": {
+          "zh": "水平在某步对一个形成的接纳。",
+          "en": "Admission of a formation by levels at a step."
+        },
+        "input": {
+          "zh": "在区域之内与之外的接纳。",
+          "en": "Admission within and beyond a region."
+        },
+        "conditions": {
+          "zh": "除表示外没有前提。",
+          "en": "None beyond the representation."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
+      }
+    },
+    {
+      "id": "derived-extent-limits",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing 的网与依存（Clearing.dependent）：清除者每步活跃且被支持，只依存于其资源；沿供给只有来源供给它（Clearing.fedBy_source）。",
+        "en": "Reuses Clearing's web and dependence (Clearing.dependent): the clearer is active and supported at every step and depends only on its resource; along feeding only the source feeds it (Clearing.fedBy_source)."
+      },
+      "interface": {
+        "output": {
+          "zh": "清除者每步活跃且被支持；沿供给只有来源供给它。",
+          "en": "The clearer is active and supported at every step; along feeding only the source feeds it."
+        },
+        "input": {
+          "zh": "区域 alongDependence 是清除者与来源；清除者在其中延续。",
+          "en": "The region alongDependence is the clearer and the source; the clearer continues within it."
+        },
+        "conditions": {
+          "zh": "如 Clearing.undermines_within_renewal。",
+          "en": "As in Clearing.undermines_within_renewal."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "conveyance-crosses-the-boundary",
+      "detail": {
+        "zh": "那里一个延续的家族的区域不是关系中的割；这里一个形成区域之外有损失。两者都关乎区域遗漏了什么。",
+        "en": "There a continuing family's region is no cut in the relations; here a region of formations has loss beyond it. Both concern what a region leaves out."
+      }
+    },
+    {
+      "id": "own-count-misses-joint-excess",
+      "detail": {
+        "zh": "只计自身的取用漏掉联合超出；这里只在自身依存之内不关闭，漏掉其外的损失。",
+        "en": "Counting one's own draw misses joint excess; here closing nothing within one's dependence misses the loss beyond it."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "detail": {
+        "zh": "延续不蕴含不关闭任何东西：清除者每步活跃且被支持，在它与来源之内不关闭任何东西，从第二步起在其外关闭栖居者（Clearing.loses_beyond）。",
+        "en": "Continuing does not imply closing nothing: the clearer is active and supported at every step, closes nothing within itself and the source, and from step two on closes the dweller beyond them (Clearing.loses_beyond)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "沿依存的区域遗漏了清除者汲取其栖息地的栖居者：汲取不是依存（Clearing.undermines_within_renewal）。",
+        "en": "The region along dependence omits the dweller, whose habitat the clearer draws on: drawing is not dependence (Clearing.undermines_within_renewal)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "区域是陈述的参数，这里不模型一个中心怎样形成或表示它；“整体”是一个网中全部形成的区域，即所表示的整体；层级的定理大多是序的性质，实质在清除者的见证；比较只在每步的接纳上，其余交换不随之调整；alongDependence 与沿供给推出的范围一致是逐项对照，不是定理；不含伦理谓词，不说哪个判据应当被遵循，也不许可终结一个部分；读法（自身、系统、整体）与名称是 AI 的，待 Ren。",
+    "en": "Regions are parameters of the statement, and nothing here models how a center forms or represents one; the whole is the region of all formations of a web, the represented whole; most of the level theorems are order properties, and the substance is in the clearer's witness; the comparison is of admission at each step, with the rest of the exchange fixed; that alongDependence matches the extent derived along feeding is checked by inspection, not by a theorem; contains no ethical predicate, does not say which criterion should be followed, and licenses no ending of a part; the reading (self, system, whole) and the names are the AI's, pending Ren."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T100351.523624Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 31 个模块（含只作导入的根模块与桥接），共 1412 项定理／2251 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261010T100610.366844Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 33 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T100351.523624Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 31 modules (including the import-only root and the bridge) with 1412 theorems/2251 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261010T100610.366844Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 33 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "01438c718a4e4dcc55d60a35d3d1e4703d7e04a55c7b6a378a6f9052274aa695",
+      "declarations": [
+        "Becoming.Web.AdmitsWithin",
+        "Becoming.Web.LosesBeyond",
+        "Becoming.Web.includes_iff_within_whole",
+        "Becoming.Web.AdmitsWithin.narrow",
+        "Becoming.Web.LosesBeyond.narrow",
+        "Becoming.Web.not_losesBeyond_whole",
+        "Becoming.Web.AdmitsWithin.not_losesBeyond",
+        "Becoming.Web.admitsWithin_self",
+        "Becoming.Clearing.clearerPart",
+        "Becoming.Clearing.alongDependence",
+        "Becoming.Clearing.withheld",
+        "Becoming.Clearing.admitted_without",
+        "Becoming.Clearing.unsupported_with",
+        "Becoming.Clearing.loses_beyond"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "b38a7b1b0b6c4569dade1e258c869bb1e088a17d4f00b7c2bd65f05d877f74f2",
+      "declarations": [
+        "Becoming.Web.Admits",
+        "Becoming.Web.Includes",
+        "Becoming.Flow.WithheldLevels"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "59de94b5499bc3085ec121eea1b6b7e9e02c9b54b06c5ff68dbf8548d115dc74",
+      "declarations": [
+        "Becoming.Clearing.web",
+        "Becoming.Clearing.dependent",
+        "Becoming.Clearing.undermines_within_renewal"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "role": "proof",
+      "sha256": "1f322933aff6e2a855bd7e7209dabad5c6d3079152fd79a438593195eae8de4c",
+      "declarations": [
+        "Becoming.Clearing.fedBy_source"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "64b27b34b98287bd0a673383619ed5d273e448912221675f060326ba15523978"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "0d8653fc82864bab23fca5ef7e1a107b7d8e6167ca82c07a34505ce5c2269221"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "e6d41d51e8ef3c65deba9e205c3d4845e633f2435b513041d0adcdb7572f6c49"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
+      "role": "provenance",
+      "sha256": "0fdb18d63c6ad5f6be6f0f65ecd461d1d66494749a29a4e213876f955ecd4c06"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Standpoints",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "P38 的第一部分总陈述以这里的区域陈述层级；多步的依存范围与区域的比较；中心怎样形成并表示区域的模型（与路线 (b) 相关）。",
+    "en": "P38's Part I capstone states the levels with these regions; comparison of regions with dependence over several steps; a model of how a center forms and represents a region (relevant to route (b))."
+  },
+  "history": [
+    {
+      "zh": "2026-10-10 P37：新增，按 Ren“yes to both readings, go ahead with Part I.”与“let's aim for a first, then try to archive b”；统一计划 P37（第一部分：可能性、三种区域、相界、层级、搭便车者的见证与所表示的边界），分工经另一会话同意；见整合文档 §51。",
+      "en": "2026-10-10 P37: added, following Ren's ‘yes to both readings, go ahead with Part I.’ and ‘let's aim for a first, then try to archive b’; unification plan P37 (Part I: possibilities, the three regimes, the phase boundary, levels, the free-rider witness and represented boundaries), the division of work agreed with the other session; see §51 of the integration note."
+    }
+  ]
+}

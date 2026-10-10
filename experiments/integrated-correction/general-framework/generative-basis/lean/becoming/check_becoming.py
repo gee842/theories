@@ -39,7 +39,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Openness", "Becoming.Continuation", "Becoming.Metaethics", "Becoming.Ranking",
+        "Becoming.Openness", "Becoming.Continuation", "Becoming.Admission", "Becoming.Regions",
+        "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
@@ -579,6 +580,45 @@ SCOPE = (
     "continue; and a clearer active at every step, each condition it depends on renewed, fed from "
     "beyond and taken from jointly within what is given, draws down the habitat of a "
     "dweller, which ends, the clearer's event undermining it. No ethical predicate occurs. "
+    "Admission: levels admit a formation at a step when they meet every requirement it then has, "
+    "and support is admission by the levels that stand; where a formation's requirements do not "
+    "loosen across a step it gains support only if a condition it requires rises, and where they "
+    "do not tighten it loses support only if one falls; in a balanced flow where only active "
+    "formations give and activity needs support, every rise is given by a supported formation, so "
+    "support is gained only where a supported formation gives to a condition required, and where "
+    "no member of a family is supported, requirements do not loosen and only members give to what "
+    "members require, no member is supported again, and of the whole nothing is supported or "
+    "active again, each premise having a consistent countermodel; a part, a decided family of "
+    "formations, is withheld by leaving the rest of the exchange as it was, the levels balancing "
+    "that flow from the same start are unique where they exist, and at every step each level with "
+    "what the part has taken from the condition is the level without the part with what the part "
+    "has given it; where up to a step the part has given each condition a formation requires at "
+    "least what it took, the formation is supported wherever the levels without the part admit "
+    "it, and where it has taken at least what it gave, the levels without it admit the formation "
+    "wherever it is supported; a level path includes another when at every step it admits every "
+    "formation the other admits, a preorder, and exceeds it when at some step it admits one the "
+    "other does not; a part giving each condition at every step at least what it takes closes "
+    "nothing, one giving no more opens nothing and one giving exactly what it takes changes "
+    "nothing; a giver from beyond widens, its levels including and exceeding those without it, "
+    "and a conveyor's part is mixed, each level path exceeding the other. No ethical predicate "
+    "occurs. "
+    "Regions: within a region of formations levels admit everything other levels admit there, and "
+    "beyond it some formation the other levels admit these do not; inclusion is admission within "
+    "the whole at every step, what holds within a region holds within every region inside it, what "
+    "is lost beyond a region is lost beyond every region inside it, nothing lies beyond the whole, "
+    "what holds within the whole leaves nothing lost beyond any region, and within one formation "
+    "what holds is its own admission; with the clearer's part withheld the levels without it "
+    "exist, the clearer is active and supported at every step and within itself and the source "
+    "the levels with its part admit all that those without it admit, while from the third step on "
+    "the dweller is admitted without its part and not with it, so over the whole its part opens "
+    "nothing and closes the dweller; an event is within renewal over a region of conditions when "
+    "it is active and the step keeps every dependence on every condition of the region it takes "
+    "part in; renewal at a step is renewal over every region, renewal over a region covering every "
+    "condition the formation takes part in is renewal at the step, and renewal over a region "
+    "covering every condition it requires keeps its own support where its requirements do not "
+    "tighten, while the clearer renews over its resource at every step and undermines at step "
+    "one, and a formation renewing over a region omitting a condition it requires undermines its "
+    "own dependence by its own draw and loses its support. No ethical predicate occurs. "
     "Standpoints: a living claim is held when it lies in the own region of some position; where "
     "every living claim is held, significance of every living claim from every standpoint (G0 at "
     "claim level) is equivalent to S0 at every position with standpoint neutrality, using neither "

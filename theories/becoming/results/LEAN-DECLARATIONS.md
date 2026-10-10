@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 164 | 3,258 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 166 | 3,314 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -50,6 +50,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [ActionWitness.lean](lean-declarations/shared.md#module-1e9f6921303e) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [ActualRecovery.lean](lean-declarations/core.md#module-6b8e6a0d66ac) | 生成核心与关系结构 / Generative core and relational structure |
 | [AdaptiveCore.lean](lean-declarations/learning.md#module-c3234339b888) | 学习、预测与动力学 / Learning, prediction and dynamics |
+| [Admission.lean](lean-declarations/core.md#module-26ad83f73cb9) | 生成核心与关系结构 / Generative core and relational structure |
 | [Admission.lean](lean-declarations/abstraction.md#module-d133a5ed4253) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [AdmissionRevision.lean](lean-declarations/other.md#module-5db887ac5876) | 其他形式研究 / Other formal studies |
 | [AggregationContext.lean](lean-declarations/ethics.md#module-dd5b30c26cf2) | 规范根据与生成方向 / Normative grounding and generative direction |
@@ -500,6 +501,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RegimeAttraction.lean](lean-declarations/other.md#module-c03ef19c4e99) | 其他形式研究 / Other formal studies |
 | [RegimeBoundary.lean](lean-declarations/other.md#module-e0e2fb3f4028) | 其他形式研究 / Other formal studies |
 | [RegimeTransition.lean](lean-declarations/other.md#module-f1a05f3cb9c1) | 其他形式研究 / Other formal studies |
+| [Regions.lean](lean-declarations/core.md#module-e8b556b938af) | 生成核心与关系结构 / Generative core and relational structure |
 | [RelationalAssembly.lean](lean-declarations/abstraction.md#module-b1e9ae8b3572) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [RelationalBecoming.lean](lean-declarations/core.md#module-678ee419f096) | 生成核心与关系结构 / Generative core and relational structure |
 | [RelationalContinuation.lean](lean-declarations/core.md#module-670551b8b671) | 生成核心与关系结构 / Generative core and relational structure |
