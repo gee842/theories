@@ -158,6 +158,20 @@ giving needs uptake there; a fall is taken from.
   front's place also taking what each place's standing loses and giving what it gains, every
   premise but dissipation, only active relata giving where nothing joins an empty queue
   (`World.balancedRing_meets`).
+* **Counting where every premise binds.** Where every premise binds, every census counts
+  something arising (`World.binds_arising`), and that is all binding adds. A binding queue
+  is open across every step but one, `T`, at which its front stands `E` more: across `T` it
+  exchanges only within the queue and loses that excess, so dissipation binds there; every
+  relatum depends on every relatum, needing what it stands at, so activity needing support
+  and bounded transmission bind wherever something joins. With nothing joining an empty
+  queue, something joining across `T` and `E` more than join there, it meets the eight and
+  every premise binds (`World.bindingQueue_premised`, `World.bindingQueue_binds`). So where
+  every premise binds, the laws of counting under the eight are the tally, that nothing
+  arises across a step at which nothing is active, and that something arises
+  (`World.binding_counting`). A census binds only where the world is not finite, so no
+  finite world binds every premise. Every premise binding decides neither rest nor change
+  without end: `hatch` comes to rest, and in a binding queue in which one member replaces
+  another at every step arising and ceasing recur (`World.binding_contingent`).
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
@@ -2544,6 +2558,319 @@ theorem enclosed_iff_finite_counting_under (S : Premise → Bool) :
             (bound.from_zero t (Nat.zero_le t))⟩ (fun _ => quiet binds)
             (fun _ => ⟨_, bound.from_zero⟩)⟩
       (finite_counting_under S pointwise))⟩
+
+end World
+
+/-! ## Counting where every premise binds -/
+
+/-- The turn of `add_sub_turn`, with the same added on both sides. -/
+theorem add_sub_turn_add (x y u : Nat) : y + (x - y + u) = x + (y - x + u) :=
+  (Nat.add_assoc y (x - y) u).symm.trans ((congrArg (· + u) (add_sub_turn x y)).trans
+    (Nat.add_assoc x (y - x) u))
+
+namespace EnclosedQueue
+
+/-- A member stands at one, and at most `s` more. -/
+theorem place_le (g m s k : Nat) : place g m s k ≤ 1 + s :=
+  if h : g ≤ k ∧ k < g + m then
+    Nat.le_trans (Nat.le_of_eq (if_pos h)) (Nat.add_le_add_left
+      (if front : k = g then Nat.le_of_eq (if_pos front)
+       else Nat.le_trans (Nat.le_of_eq (if_neg front)) (Nat.zero_le s)) 1)
+  else Nat.le_trans (Nat.le_of_eq (if_neg h)) (Nat.zero_le _)
+
+/-- A queue stands at most at its length, and `s` more. -/
+theorem total_place_le (g m s : Nat) : total (steps g m) (place g m s) ≤ m + s :=
+  match m with
+  | 0 => Nat.zero_le _
+  | _ + 1 => Nat.le_of_eq (total_place g _ s)
+
+/-- A queue not empty stands at its length, and `s` more at its front. -/
+theorem total_place_pos {g m : Nat} (s : Nat) (occupied : 0 < m) :
+    total (steps g m) (place g m s) = m + s :=
+  match m, occupied with
+  | _ + 1, _ => total_place g _ s
+
+end EnclosedQueue
+
+namespace BindingQueue
+
+variable (n c : Nat → Nat) (T E : Nat)
+
+/-- What the front stands at beyond one: `E` at step `T`, nothing at any other step. -/
+def excess (t : Nat) : Nat :=
+  if t = T then E else 0
+
+/-- Members stand by their place in the queue, the front `E` more at step `T`. -/
+def level (t k : Nat) : Nat :=
+  EnclosedQueue.place (Queue.gone c t) (n t) (excess T E t) k
+
+/-- Across every step but `T` at which the queue is not empty, one unit is exchanged each
+way. -/
+def exchange (t : Nat) : Nat :=
+  mark (0 < n t ∧ ¬ t = T)
+
+/-- Members are active exactly while in the queue. Every relatum depends on every relatum,
+needing what it stands at. -/
+def web : Web Nat Nat where
+  level := level n c T E
+  active t k := Queue.holds n c k t
+  requires _ _ _ := True
+  need t _ k := level n c T E t k
+  draws _ _ _ := True
+
+/-- The front takes part at every step. It takes from each member what that member's
+standing loses across the step and gives each what it gains, and across every step but `T` at
+which the queue is not empty it exchanges one unit more each way with every relatum. -/
+def flow : Flow Nat Nat where
+  present t := [Queue.gone c t]
+  take t _ k := level n c T E t k - level n c T E (t + 1) k + exchange n T t
+  give t _ k := level n c T E (t + 1) k - level n c T E t k + exchange n T t
+
+variable {n c a : Nat → Nat} {T E : Nat}
+
+theorem excess_le (t : Nat) : excess T E t ≤ E :=
+  if same : t = T then Nat.le_of_eq (if_pos same)
+  else Nat.le_trans (Nat.le_of_eq (if_neg same)) (Nat.zero_le E)
+
+/-- No member stands at more than one and the excess. -/
+theorem level_le (t k : Nat) : level n c T E t k ≤ 1 + E :=
+  Nat.le_trans (EnclosedQueue.place_le _ _ _ k) (Nat.add_le_add_left (excess_le t) 1)
+
+/-- Where a member's standing does not change and nothing is exchanged, the front neither
+takes from nor gives to it. -/
+theorem still_flows {t k f : Nat} (same : level n c T E (t + 1) k = level n c T E t k)
+    (shut : exchange n T t = 0) :
+    (flow n c T E).take t f k = 0 ∧ (flow n c T E).give t f k = 0 :=
+  ⟨((congrArg (level n c T E t k - · + exchange n T t) same).trans
+      (congrArg (level n c T E t k - level n c T E t k + ·) shut)).trans (Nat.sub_self _),
+   ((congrArg (· - level n c T E t k + exchange n T t) same).trans
+      (congrArg (level n c T E t k - level n c T E t k + ·) shut)).trans (Nat.sub_self _)⟩
+
+theorem still {t k f : Nat}
+    (flows : (flow n c T E).take t f k = 0 ∧ (flow n c T E).give t f k = 0) :
+    ¬ (0 < (flow n c T E).take t f k ∨ 0 < (flow n c T E).give t f k)
+  | .inl takes => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le takes (Nat.le_of_eq flows.1))
+  | .inr gives => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives (Nat.le_of_eq flows.2))
+
+/-- Across a step from an empty queue nothing is taken or given. -/
+theorem idle (tally : Tally n c a) {t : Nat} (company : 0 < a t → 0 < n t)
+    (empty : n t = 0) (k f : Nat) :
+    (flow n c T E).take t f k = 0 ∧ (flow n c T E).give t f k = 0 :=
+  still_flows ((EnclosedQueue.place_zero (EnclosedQueue.outside_empty
+      (EnclosedQueue.empty_stays tally company empty))).trans
+      (EnclosedQueue.place_zero (EnclosedQueue.outside_empty empty)).symm)
+    (mark_zero fun ⟨occupied, _⟩ =>
+      Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le occupied (Nat.le_of_eq empty)))
+
+/-- Something taken or given means the queue is not empty. -/
+theorem busy (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) {t k f : Nat}
+    (moves : 0 < (flow n c T E).take t f k ∨ 0 < (flow n c T E).give t f k) : 0 < n t :=
+  match Nat.eq_zero_or_pos (n t) with
+  | .inl empty => absurd moves (still (idle tally (company t) empty k f))
+  | .inr occupied => occupied
+
+/-- Across a step at which nothing is exchanged, whatever the front takes from or gives to
+lies in the span. -/
+theorem moving_within (tally : Tally n c a) {t k f : Nat} (shut : exchange n T t = 0)
+    (moves : 0 < (flow n c T E).take t f k ∨ 0 < (flow n c T E).give t f k) :
+    k ∈ EnclosedQueue.span n c a t :=
+  if now : Queue.holds n c k t then EnclosedQueue.within_span tally (.inl now)
+  else if next : Queue.holds n c k (t + 1) then EnclosedQueue.within_span tally (.inr next)
+  else absurd moves (still (still_flows ((EnclosedQueue.place_zero next).trans
+    (EnclosedQueue.place_zero now).symm) shut))
+
+/-- Such a step is enclosed by its span. -/
+theorem closed (tally : Tally n c a) {t : Nat} (shut : exchange n T t = 0) :
+    (flow n c T E).ClosedAt (EnclosedQueue.span n c a t) t :=
+  fun _ _ _ out => ⟨eq_zero_of_not_pos fun takes => out (moving_within tally shut (.inl takes)),
+    eq_zero_of_not_pos fun gives => out (moving_within tally shut (.inr gives))⟩
+
+/-- Across every other step at which the queue is not empty, no family is closed. -/
+theorem not_closed {t : Nat} (occupied : 0 < n t) (other : ¬ t = T) (cs : List Nat) :
+    ¬ (flow n c T E).ClosedAt cs t :=
+  fun closed => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le Nat.zero_lt_one
+    (Nat.le_trans (Nat.le_of_eq (mark_one ⟨occupied, other⟩).symm) (Nat.le_add_left _ _)))
+    (Nat.le_of_eq (closed _ (.head _) (beyond cs) (beyond_not_mem cs)).1))
+
+end BindingQueue
+
+namespace World
+
+/-- A binding queue: open across every step but `T`, across which its front, standing `E`
+more, exchanges only within the queue and loses that excess. -/
+def bindingQueue (n c : Nat → Nat) (T E : Nat) : World :=
+  ⟨Nat, BindingQueue.flow n c T E, BindingQueue.web n c T E⟩
+
+instance bindingQueue_decided (n c : Nat → Nat) (T E : Nat) :
+    ∀ t x, Decidable ((bindingQueue n c T E).web.active t x) :=
+  fun t k => inferInstanceAs (Decidable (Queue.holds n c k t))
+
+/-- The census of a binding queue is the queue. -/
+theorem bindingQueue_census (n c : Nat → Nat) (T E : Nat) :
+    (bindingQueue n c T E).web.Census (Queue.line n c) :=
+  Queue.listed
+
+theorem bindingQueue_embodied (n c : Nat → Nat) (T E : Nat) :
+    (bindingQueue n c T E).Embodied :=
+  fun _ _ => EnclosedQueue.place_pos
+
+theorem bindingQueue_balanced (n c : Nat → Nat) (T E : Nat) :
+    (bindingQueue n c T E).Balanced :=
+  fun t k => add_sub_turn_add (BindingQueue.level n c T E t k)
+    (BindingQueue.level n c T E (t + 1) k) (BindingQueue.exchange n T t)
+
+variable {n c a : Nat → Nat} {T E : Nat}
+
+theorem bindingQueue_acting (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) :
+    (bindingQueue n c T E).Acting :=
+  fun _ f _ present gives => match f, present, gives with
+    | _, .head _, gives => OpenQueue.front.mpr (BindingQueue.busy tally company (.inr gives))
+    | _, .tail _ no, _ => (nomatch no)
+
+theorem bindingQueue_taking (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t) :
+    (bindingQueue n c T E).Taking :=
+  fun _ f _ present takes => match f, present, takes with
+    | _, .head _, takes =>
+      ⟨OpenQueue.front.mpr (BindingQueue.busy tally company (.inl takes)), trivial⟩
+    | _, .tail _ no, _ => (nomatch no)
+
+/-- Across step `T`, with the queue not empty and its front standing more than join across
+the step, the front takes from the span more than it gives: what stands falls. -/
+theorem bindingQueue_exceeds (tally : Tally n c a) {t : Nat} (same : t = T)
+    (occupied : 0 < n t) (excess : a t < E) (f : Nat) :
+    total (EnclosedQueue.span n c a t) ((bindingQueue n c T E).flow.give t f) + 1 ≤
+      total (EnclosedQueue.span n c a t) ((bindingQueue n c T E).flow.take t f) :=
+  have census := bindingQueue_census n c T E
+  have standing := standingCensus census (bindingQueue_embodied n c T E)
+  have before := standing.stock_eq (EnclosedQueue.span_distinct t) fun k mem =>
+    EnclosedQueue.within_span tally (.inl (((census t).2 k).mpr mem))
+  have after := standing.stock_eq (t := t + 1) (EnclosedQueue.span_distinct t) fun k mem =>
+    EnclosedQueue.within_span tally (.inr (((census (t + 1)).2 k).mpr mem))
+  have full : (bindingQueue n c T E).web.stock (Queue.line n c t) t = n t + E :=
+    (EnclosedQueue.total_place_pos _ occupied).trans (congrArg (n t + ·) (if_pos same))
+  have spent : (bindingQueue n c T E).web.stock (Queue.line n c (t + 1)) (t + 1) ≤ n (t + 1) :=
+    Nat.le_trans (EnclosedQueue.total_place_le _ _ _) (Nat.le_of_eq (congrArg (n (t + 1) + ·)
+      (if_neg fun later => Nat.succ_ne_self t (later.trans same.symm))))
+  have grows : n (t + 1) + 1 ≤ n t + E :=
+    Nat.le_trans (Nat.add_le_add_right (Nat.le_trans (Nat.le_add_right _ (c t))
+      (Nat.le_of_eq (tally.balance t))) 1)
+      (Nat.le_trans (Nat.le_of_eq (Nat.add_assoc _ _ _)) (Nat.add_le_add_left excess _))
+  have lowered := Nat.le_trans (Nat.add_le_add_right (Nat.le_trans (Nat.le_of_eq after.symm)
+      spent) 1) (Nat.le_trans grows (Nat.le_of_eq (full.symm.trans before)))
+  have over := (bindingQueue_balanced n c T E).over (EnclosedQueue.span n c a t) t
+  le_of_add_le_add_right _ (Nat.le_trans (Nat.le_of_eq ((Nat.add_assoc _ _ _).trans
+    (congrArg (_ + ·) (Nat.add_comm _ _)))) (Nat.le_trans (Nat.add_le_add_left lowered _)
+      (Nat.le_of_eq ((Nat.add_comm _ _).trans (over.symm.trans (Nat.add_comm _ _))))))
+
+/-- Where the front stands more than join across `T`, a binding queue dissipates: no family
+is closed across a step at which one unit is exchanged each way, nothing moves across a step
+from an empty queue, and across `T` what stands falls. -/
+theorem bindingQueue_dissipative (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
+    (excess : a T < E) : (bindingQueue n c T E).Dissipative :=
+  fun cs t distinct closed f present => match Nat.eq_zero_or_pos (n t) with
+    | .inl empty => Nat.le_trans (Nat.le_of_eq ((congrArg (· + _) (total_eq_zero fun k _ =>
+        (BindingQueue.idle tally (company t) empty k f).2)).trans ((Nat.zero_add _).trans
+          (congrArg sign (total_eq_zero fun k _ =>
+            (BindingQueue.idle tally (company t) empty k f).1))))) (Nat.zero_le _)
+    | .inr occupied => if same : t = T then
+        have shut : BindingQueue.exchange n T t = 0 := mark_zero fun ⟨_, other⟩ => other same
+        Nat.le_trans (Nat.add_le_add (total_le_of_support distinct fun _ _ gives =>
+            BindingQueue.moving_within tally shut (.inr gives)) (sign_le_one _))
+          (Nat.le_trans (bindingQueue_exceeds tally same occupied
+              (Nat.lt_of_le_of_lt (Nat.le_of_eq (congrArg a same)) excess) f)
+            (total_le_of_support (EnclosedQueue.span_distinct t) fun k _ takes =>
+              match decideMem k cs with
+              | .isTrue mem => mem
+              | .isFalse out => absurd (Nat.lt_of_lt_of_le takes
+                  (Nat.le_of_eq (closed f present k out).1)) (Nat.lt_irrefl 0)))
+      else absurd closed (BindingQueue.not_closed occupied same cs)
+
+/-- With nothing joining an empty queue and the front standing more than join across `T`, a
+binding queue meets all eight premises. -/
+theorem bindingQueue_premised (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
+    (excess : a T < E) : (bindingQueue n c T E).Premised :=
+  .of (fun _ _ _ _ _ => Nat.le_refl _) (bindingQueue_balanced n c T E)
+    (bindingQueue_acting tally company) (bindingQueue_taking tally company)
+    (bindingQueue_dissipative tally company excess) (bindingQueue_embodied n c T E)
+    ⟨_, bindingQueue_census n c T E⟩
+    ⟨1 + E, fun _ _ _ _ _ _ =>
+      ⟨trivial, Nat.le_trans (BindingQueue.level_le _ _) (Nat.le_add_left _ _)⟩⟩
+
+/-- Where moreover something joins across `T`, every premise binds there: the front is
+active and depends on its own standing, gives to a member joining, which comes to stand
+depending on what it stands at, and takes from the span more than it gives, the span
+closed; and no finite list holds every relatum. -/
+theorem bindingQueue_binds (tally : Tally n c a) (company : ∀ t, 0 < a t → 0 < n t)
+    (excess : a T < E) (joins : 0 < a T) : (bindingQueue n c T E).Binds :=
+  have front : Queue.holds n c (Queue.gone c T) T := OpenQueue.front.mpr (company T joins)
+  have shut : BindingQueue.exchange n T T = 0 := mark_zero fun ⟨_, other⟩ => other rfl
+  have takes := Nat.lt_of_lt_of_le (Nat.zero_lt_succ _)
+    (bindingQueue_exceeds tally rfl (company T joins) excess (Queue.gone c T))
+  match total_pos _ (Nat.lt_of_lt_of_le joins (Nat.le_of_eq (Queue.comings_eq tally T).symm)),
+      total_pos _ takes with
+  | ⟨x, _, comes⟩, ⟨k, _, taken⟩ =>
+    have comes := mark_pos.mp comes
+    have stands : 0 < BindingQueue.level n c T E (T + 1) x := EnclosedQueue.place_pos.mp comes.2
+    have gives : 0 < (bindingQueue n c T E).flow.give T (Queue.gone c T) x :=
+      Nat.lt_of_lt_of_le stands (Nat.le_trans (Nat.le_of_eq (congrArg
+        (BindingQueue.level n c T E (T + 1) x - ·) (EnclosedQueue.place_zero comes.1).symm))
+        (Nat.le_add_right _ _))
+    { dependent := ⟨T, _, _, front, trivial, EnclosedQueue.place_pos.mp front⟩
+      balanced := ⟨T, x, fun same => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le stands
+        (Nat.le_of_eq (same.trans (EnclosedQueue.place_zero comes.1))))⟩
+      acting := ⟨T, _, x, .head _, gives⟩
+      taking := ⟨T, _, k, .head _, taken⟩
+      dissipative := ⟨_, T, _, EnclosedQueue.span_distinct T, BindingQueue.closed tally shut,
+        .head _, takes⟩
+      embodied := ⟨T, x, comes⟩
+      counted := fun ⟨all, _, every⟩ => beyond_not_mem all (every _)
+      transmitting := ⟨T, x, _, x, ⟨.head _, gives, fun standing =>
+        comes.1 (EnclosedQueue.place_pos.mpr standing), stands⟩, trivial⟩ }
+
+/-- Where every premise binds, the laws of counting under the eight are the tally, that
+nothing arises across a step at which nothing is active, and that something arises: a
+property of the counts holds of every census of every world meeting the eight and binding
+each exactly when it holds of every tally of this kind. Binding adds one law, which binding
+embodiment gives by itself (`binds_arising`, `binds_adds`). -/
+theorem binding_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
+    (pointwise : Pointwise Q) :
+    (∀ n c a, Tally n c a → (∀ t, 0 < a t → 0 < n t) → (∃ t, 0 < a t) → Q n c a) ↔
+      ∀ (w : World) [∀ t x, Decidable (w.web.active t x)], w.Premised → w.Binds →
+        w.CountsObey Q :=
+  ⟨fun law w _ premised binds alive census =>
+    law _ _ _ census.tally
+      (counting_binds_jointly.1 w (premised _ (.tail _ (.head _)))
+        (premised _ (.tail _ (.tail _ (.head _))))
+        (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _
+          (.head _))))))))
+        alive census)
+      (binds_arising w binds alive census),
+   fun law n c a tally company ⟨T, joins⟩ => pointwise (Queue.counts tally)
+      (law (bindingQueue n c T (a T + 1)) (bindingQueue_premised tally company (Nat.lt_succ_self _))
+        (bindingQueue_binds tally company (Nat.lt_succ_self _) joins) _
+        (bindingQueue_census _ _ _ _))⟩
+
+/-- Every premise binding decides neither rest nor change without end: in `hatch` every
+premise binds and arising stops (`hatch_rests`); in a binding queue in which one member
+replaces another at every step every premise binds and arising and ceasing recur. -/
+theorem binding_contingent :
+    (hatch.Premised ∧ hatch.Binds ∧ ¬ hatch.ArisingRecurs) ∧
+      ((bindingQueue (fun _ => 1) (fun _ => 1) 0 2).Premised ∧
+        (bindingQueue (fun _ => 1) (fun _ => 1) 0 2).Binds ∧
+        (bindingQueue (fun _ => 1) (fun _ => 1) 0 2).ArisingRecurs ∧
+        (bindingQueue (fun _ => 1) (fun _ => 1) 0 2).CeasingRecurs) :=
+  have tally : Tally (fun _ => 1) (fun _ => 1) (fun _ => 1) := fun _ => ⟨0, rfl, rfl⟩
+  have company : ∀ t, 0 < (fun _ => 1 : Nat → Nat) t → 0 < (fun _ => 1 : Nat → Nat) t :=
+    fun _ pos => pos
+  ⟨⟨hatch_binds.1, hatch_binds.2, hatch_rests.2.2.1⟩,
+   ⟨bindingQueue_premised tally company (Nat.lt_succ_self 1),
+    bindingQueue_binds tally company (Nat.lt_succ_self 1) Nat.zero_lt_one,
+    fun N => match total_pos _ (Nat.lt_of_lt_of_le Nat.zero_lt_one
+        (Nat.le_of_eq (Queue.comings_eq tally N).symm)) with
+      | ⟨x, _, comes⟩ => ⟨N, x, Nat.le_refl N, mark_pos.mp comes⟩,
+    fun N => match total_pos _ (Nat.lt_of_lt_of_le Nat.zero_lt_one
+        (Nat.le_of_eq (Queue.ceasings_eq tally N).symm)) with
+      | ⟨x, _, ceases⟩ => ⟨N, x, Nat.le_refl N, mark_pos.mp ceases⟩⟩⟩
 
 end World
 

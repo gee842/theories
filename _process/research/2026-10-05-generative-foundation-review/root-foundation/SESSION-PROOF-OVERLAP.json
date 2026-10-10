@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
-  "captured_at_utc": "2026-10-10T11:32:05.062374+00:00",
+  "captured_at_utc": "2026-10-10T13:33:06.068112+00:00",
   "scope": "Same path-based roles as build_lean_catalogue.py. No compilation or semantic equivalence verification. Repeated headers are candidates only: namespaces, local variables, definitions and interpretation can differ.",
   "statistics": {
-    "lean_paths": 14441,
-    "distinct_byte_contents": 2071,
-    "byte_identical_duplicate_groups": 1162,
+    "lean_paths": 14609,
+    "distinct_byte_contents": 2074,
+    "byte_identical_duplicate_groups": 1163,
     "roles": {
       "audit-driver": 14,
       "development-attempt": 452,
       "historical-draft": 3,
       "imported-archive": 23,
-      "saved-copy": 13362,
+      "saved-copy": 13530,
       "working-source": 587
     },
-    "working_named_theorem_lemma_occurrences": 12281,
-    "working_explicit_named_declaration_occurrences": 20160,
+    "working_named_theorem_lemma_occurrences": 12305,
+    "working_explicit_named_declaration_occurrences": 20190,
     "working_groups": {
       "abstraction": 41,
       "concern": 15,
@@ -928,7 +928,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
-      "sha256": "6afcbced2cb4afd0d8e6f9196277d38f49e504e142539b72ea744b13a127408f",
+      "sha256": "736f42dabea4d9e3e7e5293ea936e61d5da11e72799a7333417de75680303a0d",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md",
@@ -8216,7 +8216,7 @@
         {
           "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
           "name": "Becoming.World.Finite.arising_iff_ceasing",
-          "line": 448
+          "line": 462
         },
         {
           "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
@@ -8231,7 +8231,7 @@
         {
           "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
           "name": "Becoming.World.Finite.comes_to_rest",
-          "line": 633
+          "line": 647
         },
         {
           "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
@@ -9076,10 +9076,10 @@
     ]
   },
   "catalogue_output_sha256": {
-    "theories/becoming/results/data/lean-index.json": "59cbe07248e70a263ee11896fdd2e239705acfc234e2c1cca0e695356158ae25",
+    "theories/becoming/results/data/lean-index.json": "32aa1d38ef44d6e55e92925334452b3b57dd9c4a189b2fc70711df63f5885e83",
     "theories/becoming/results/data/source-index.json": "7d0a7f92f1b755cf458d66a813dd271a71a8500190c6f574a50ce3722ea6d164",
-    "theories/becoming/results/LEAN-INDEX.md": "ef87ef0ec3e9720fcc8856e9b97ad3d767af8289ca317c8d1b18fbbf3d371850",
-    "theories/becoming/results/LEAN-DECLARATIONS.md": "079dd43431691929727bf6bd330bcea6c0f792e6b718ca16310f1bf24f13c6e0",
+    "theories/becoming/results/LEAN-INDEX.md": "ad3cdf7eb18de1678574416cd0a7613e082b658065ef7dbe1f09641feac22446",
+    "theories/becoming/results/LEAN-DECLARATIONS.md": "e16c7c7944d713c893b8bd590d1f4fc39e0795b9fd347f6338fda8938eaca261",
     "theories/becoming/results/lean-declarations/ethics.md": "b9284b5f2b14811c3e8f62fd7a68f057f3262e1c936bd742ea734ac92cd0e81b",
     "theories/becoming/results/lean-declarations/valuation.md": "12ae68922daf5fad63e5ee6d1341c0ece174a949cbdc50a4c7704789aa15fa1e",
     "theories/becoming/results/lean-declarations/inquiry.md": "ebce63b2beb97130cd809d6fc9e31539cf337f137f266a1f4fba8aa98bf11009",
@@ -9088,7 +9088,7 @@
     "theories/becoming/results/lean-declarations/abstraction.md": "67a80996cedaf5cd0b0cfbd8a0903b5f762ea4bf3a2831cbf9eac41dbfac56af",
     "theories/becoming/results/lean-declarations/concern.md": "dcf11e7a4ad6b2f582335f5f7ea558c488eea2a953721574680aa10402d0a330",
     "theories/becoming/results/lean-declarations/shared.md": "529d148ddd38ab103ae23db7def9da3e886323783407556d5b4f1aafd6cd533a",
-    "theories/becoming/results/lean-declarations/core.md": "ececf11ac34c7ae433615ea6dbf5f7faac130a9eb95e304bf8fb2e2c437fb008",
+    "theories/becoming/results/lean-declarations/core.md": "e27c92db84298b01d79c241e115756635d0366de7721cfcd37bb2b494bb85b64",
     "theories/becoming/results/lean-declarations/other.md": "3f17b3e53f7916b9e8eb266386cddf8bd1c8f591cfcd0d3c1832583946e83d3b"
   },
   "session_snapshot_sha256": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692"

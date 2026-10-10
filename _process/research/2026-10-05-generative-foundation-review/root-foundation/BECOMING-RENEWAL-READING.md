@@ -3365,6 +3365,57 @@ Integration: 计划 P38b（第一部分的总陈述：每个前提加了什么�
 
 **边界。** 无伦理谓词，不评价生起、止息或静止；只对离散步与每步有限的活动陈述；有限世界中的规律只读于活动的普查；每个前提都起约束时的规律、水平与依存的计数在前提之下没有陈述；名称（Ring、slot、seat、seated、ring、embodiedRing、balancedRing）是 AI 按 Ren 的命名准则所选：环（ring）取自系统中的环形缓冲区，说依次占用、满一圈重用的有限位置。本节尚未经独立审查。
 
+## 55. 每个前提都起约束时计数的规律（P38c）
+
+2026-10-10。按 Ren“let's aim for the strongest claim without axiom, as the first part”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)），补全第一部分总陈述中计数的规律在每个前提都起约束时的部分。全部八个前提之下计数的规律恰是计数表与没有关系项活跃的一步上没有生起（P34，`World.premised_counting`）；其见证开放的队列中耗散、活动需要支持与有界传递空成立（`World.openQueue_not_binds`，第十三次审查 U3 的探针）。每个前提都起约束时，每个普查都计到某个生起，这在八个前提之下不是规律（`World.binds_arising`、`World.binds_adds`）；是否还有更多的规律没有陈述（whole-law-of-counting 的下一增量）。本节给出完整的规律：只多出这一条。另外，`hatch` 中每个前提都起约束而世界归于静止（P29），开放纲领中“每个前提都起约束的世界归于静止”容易读作一般的陈述；本节表明，每个前提都起约束既不决定静止，也不决定变化不息。成果记录：修订 [whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md) 与 [continued-change-needs-openness](../../../../theories/becoming/results/records/continued-change-needs-openness.md)。
+
+```text
+Result(s): 复用 whole-law-of-counting（Tally、Queue、Pointwise、World.CountsObey、World.counting_binds_jointly、
+           World.premised_counting、World.binds_arising、World.binds_adds、OpenQueue.front）、counting-under-enclosure
+           （EnclosedQueue.place、place_pos、place_zero、total_place、span、within_span、span_distinct、empty_stays、
+           outside_empty）、map-of-premises（World.Binds、World.Premised、World.hatch_binds）、continued-change-needs-openness
+           （World.standingCensus、Web.StandingCensus.stock_eq、World.hatch_rests）
+Delta: Openness：add_sub_turn_add；EnclosedQueue.place_le、total_place_le、total_place_pos；BindingQueue（excess、level、
+       exchange、web、flow，excess_le、level_le、still_flows、still、idle、busy、moving_within、closed、not_closed）；
+       World.bindingQueue 与 bindingQueue_decided、_census、_embodied、_balanced、_acting、_taking、_exceeds、
+       _dissipative、_premised、_binds；World.binding_counting、World.binding_contingent
+Supplied premises / correspondence: 同 §52：列出与可判定，逐点；起约束是 World.Binds 的八个条件；有限与被围住不是前提
+Evidence: 合并检查器回执 20261010T132639.927992Z（1512 项定理、2392 项声明审计，全部源声明公理报告为空）；外围桥接重跑 20261010T132949.908183Z；实例检查
+Boundary: 只在全部八个前提之下陈述；每个选择之下所选前提都起约束时的规律、水平与依存的计数在前提之下没有陈述；
+          只说活动的计数；不评价生起、止息或静止；名称按 Ren 的命名准则由 AI 选，读法由 Ren 定
+Integration: 计划 P38c（第一部分的总陈述：每个前提都起约束时）；修订 whole-law-of-counting 与 continued-change-needs-openness
+```
+
+| 声明 | 内容 |
+|---|---|
+| `BindingQueue.excess`、`BindingQueue.level` | 队首在第 T 步多立着 E，其余步不多；成员按其在队中的位置而立 |
+| `BindingQueue.exchange`、`BindingQueue.web`、`BindingQueue.flow` | 在除第 T 步外队列不空的每一步上，队首与每个关系项各交换一个单位；每个关系项以其所立的水平依存于每个关系项；队首从每个成员取用其水平所降的、给予其所升的 |
+| `BindingQueue.not_closed`、`BindingQueue.closed` | 在除第 T 步外队列不空的步上，没有家族封闭；在不交换的一步上，跨度封闭这一步 |
+| `World.bindingQueue_exceeds` | 跨第 T 步，队列不空且队首多立着的多于加入的时，队首从跨度取用的多于给予的：所立者下降 |
+| `World.bindingQueue_premised`、`World.bindingQueue_binds` | 没有成员加入空队、E 多于第 T 步加入的数目时，起约束的队列满足全部八个前提；第 T 步有成员加入时每个前提都起约束 |
+| `World.binding_counting` | 每个前提都起约束时，八个前提之下计数的规律恰是计数表、没有关系项活跃的一步上没有生起，以及有某个生起 |
+| `World.binding_contingent` | `hatch` 中每个前提都起约束而生起停止；每步一个成员替换另一个的起约束的队列中每个前提都起约束，生起与止息复现 |
+
+**解读。**
+
+- **起约束只多出一条。** 第十三次审查问：开放的队列中三个前提空成立，全部八个前提之下计数的规律是否因此才这么少？回答是否定的。每个前提都起约束时，计数的规律只多出“有某个生起”，而这一条只来自体现起约束这一条件本身（有关系项生起时体现起约束），不用任何前提（`World.binds_arising`）。所以八个前提即使都在起作用，对计数的约束也不多于计数表与“没有关系项活跃的一步上没有生起”。
+- **起约束的队列。** 见证须让每个前提都起约束，同时实现每个满足条件的计数表。耗散只在被围住的步上起约束，而从某步起每步被围住会给出变化界（§49），所以队列只在一步 T 上闭合：其余队列不空的每一步上，队首与每个关系项各交换一个单位，没有有限的家族封闭；在 T 上，队首只在队中交换，并失去在那一步多立着的 E，所以所立者下降，耗散起约束。为了让所立者在 T 上下降，不论加入多少成员，E 须多于第 T 步加入的数目。依存与传递的约束由一个最弱的网给出：每个关系项以其所立的水平依存于每个关系项，所以活跃者依存于自己且所需为正，后代在其第一步所依存的，给予者也依存。
+- **静止与不息都不由起约束决定。** `hatch` 中每个前提都起约束，世界归于静止；每步替换一个成员的起约束的队列中每个前提都起约束，生起与止息复现。所以开放纲领中“每个前提都起约束的世界归于静止”只说 `hatch`，本节随之更正这一句。
+- **有限世界不在其中。** 普查起约束只在于世界不有限，所以没有有限世界使每个前提都起约束；有限世界中的规律见 §54。
+- **一元的读法（AI 论证）。** 起约束说的是前提在这个展开中确有实例：有依存，有给予与取用，有封闭家族上的耗散，有生起与传下。它们都起作用时，计数仍只记录进入与离开的相抵，加上至少有一次生起：关系怎样被给予、取用与依存，在计数中没有留下更多。
+
+**作者反审。**
+
+*反驳 1：“每个关系项以其所立的水平依存于每个关系项”是平凡的依存。* 它是最弱的，但满足 `World.Binds` 的条件：一个活跃者以正的所需依存于某个条件。断言说的是每个起约束的世界中都成立的规律；要表明更多的规律不成立，见证只需要是其中一个。更强的依存只会使更少的世界满足前提，不会使已在所有起约束的世界中失败的性质成为规律。
+
+*反驳 2：只在一步闭合是否人为？* 它是见证的选择。耗散的起约束只要求某一步上某个封闭的家族被取用；要求从某步起每步都闭合就给出变化界，那是被围住的情形（counting-under-enclosure）。
+
+*反驳 3：每个选择之下所选前提都起约束时如何？* 没有陈述。起约束的条件本身就给出计数的性质：活动需要支持起约束时某一步有活跃者，体现起约束时有某个生起；在部分选择之下，它们与前提的交互还须逐一给出见证。
+
+*反驳 4：起约束的队列的 E 依赖计数（E 多于第 T 步加入的数目），是否把计数写进了世界？* 是的，每个见证都由计数表构造，开放的队列与环也是；断言说的是满足这些条件的计数表都被某个起约束的世界实现，不是一个世界实现所有计数表。
+
+**边界。** 无伦理谓词，不评价生起、止息或静止；只对离散步与每步有限的活动陈述；只在全部八个前提之下陈述；每个选择之下所选前提都起约束时的规律、水平与依存的计数在前提之下没有陈述；名称（BindingQueue、excess、exchange、bindingQueue、binding_counting、binding_contingent）是 AI 按 Ren 的命名准则所选：起约束的队列（binding queue）取自它让每个前提起约束的作用，excess 说队首在一步上多立着的，exchange 说开放步上的交换。本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -3755,4 +3806,6 @@ G0 remains the adopted axiom until Ren accepts this axiom in its place. Records 
 
 Section 54 (P38b) completes what each premise adds to counting, in finite worlds. Every step of a finite world is enclosed, so there balance, embodiment and dissipation bind counting by themselves at every step and bound change from the first step, and every census is bounded. Under each selection of the eight premises the laws of counting in finite worlds are those of a tally with at most some number active at each step, adding that nothing arises across a step at which nothing is active where balance and embodiment are selected with only active relata giving or with dissipation, and a change bound from the first step where balance, embodiment and dissipation are selected (`World.finite_counting_under`, `World.finite_counting_binds_iff`, `World.finite_change_bound_iff`): three kinds of law, where worlds in general have two. The finite witnesses seat the members of a queue in turn round a ring of 2M + 1 places, where at most M are in the queue at each step, so members in the queue before or after any step hold distinct places and the ring counts what the queue counts (`Ring.slot`, `Ring.slot_inj`, `Ring.counts`); the ring is defined by its own recursion because the prelude's remainder lemmas carry `propext`. A ring with nothing standing meets every premise but embodiment, one whose places stand while held every premise but balance, and one whose front's place also takes what falls and gives what rises every premise but dissipation (`World.ring_meets`, `World.embodiedRing_meets`, `World.balancedRing_meets`). Finite worlds and worlds enclosed from some step on have the same laws of counting under a selection exactly when it bounds change and binds counting (`World.enclosed_iff_finite_counting_under`); this corrects the scope of the Part I statement's earlier sentence that finite worlds have the same laws, which holds under all eight premises (`World.enclosed_iff_finite_counting`) and not under every selection. The laws where every premise binds are not stated. Receipt 20261010T112632.899583Z has 1488 theorems and 2361 declaration audits; the periphery receipt is 20261010T112836.954648Z. The section has not been independently reviewed.
 
-The package now has 1488 theorems and 2361 declaration audits, over a core closure of 34 modules and a package of 32, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4. The following have not yet been independently reviewed: the handling in §47.1–47.4 and in section 48, and sections 49, 50, 51, 52, 53 and 54. The periphery bridge passed against this core (receipt 20261010T112836.954648Z).
+Section 55 (P38c) gives the laws of counting where every premise binds. Under the eight premises the laws of counting are the tally and that nothing arises across a step at which nothing is active (`World.premised_counting`), but in its witness three premises hold idly (`World.openQueue_not_binds`, the thirteenth review's U3 probe); where every premise binds, every census counts something arising (`World.binds_arising`), and it was open whether binding adds more. It does not: where every premise binds, the laws of counting under the eight are exactly the tally, that nothing arises across a step at which nothing is active, and that something arises (`World.binding_counting`). The witness is a binding queue, open across every step but one, `T`, at which its front stands `E` more; across `T` it exchanges only within the queue and loses that excess, so what stands falls and dissipation binds, while every relatum depends on every relatum at what it stands at, so activity needing support and bounded transmission bind wherever something joins (`World.bindingQueue_exceeds`, `World.bindingQueue_premised`, `World.bindingQueue_binds`). Every premise binding decides neither rest nor change without end: in `hatch` arising stops, and in a binding queue in which one member replaces another at every step arising and ceasing recur (`World.binding_contingent`); the open programme's sentence that the world in which every premise binds comes to rest is about `hatch` only and is corrected. No finite world binds every premise, a census binding only where the world is not finite. The laws where the premises of each selection bind are not stated. Receipt 20261010T132639.927992Z has 1512 theorems and 2392 declaration audits; the periphery receipt is 20261010T132949.908183Z. The section has not been independently reviewed.
+
+The package now has 1512 theorems and 2392 declaration audits, over a core closure of 34 modules and a package of 32, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4. The following have not yet been independently reviewed: the handling in §47.1–47.4 and in section 48, and sections 49, 50, 51, 52, 53, 54 and 55. The periphery bridge passed against this core (receipt 20261010T132949.908183Z).
