@@ -32,7 +32,20 @@ belongs to the dynamics from what belongs to the fixed unit.
     times a relatum gains at least `1/p` of the unit number at most `p q` times the total
     standing at `T` (the growth law, `World.growth_bound`), so such gains do not recur
     (`World.growth_not_recurring`) and nothing arises at that size at arbitrarily late
-    steps (`World.arising_not_recurring`).
+    steps (`World.arising_not_recurring`);
+  - under the same premises, the times a relatum falls by at least `1/p` of the unit
+    number at most `p (q + 1)` times the total standing at `T` (the fall law,
+    `World.fall_bound`), so nothing standing at that size ceases at arbitrarily late steps
+    (`World.ceasing_not_recurring`). Together, neither arising nor ceasing at that size
+    recurs (`World.rests_at_resolution`): the rest theorem at every resolution.
+* **A reserve at every resolution.** The spine's reserve falls by a whole unit at each
+  active step beyond support, so it defers the end without escaping it
+  (`Web.Carries.lasts`). Read in a refining unit, a reserve that only falls
+  (`Web.CarriesIn`, which with the unit fixed is `Web.Carries`, `Web.carriesIn_one`) may
+  fall forever. Where each active step beyond support costs at least `1/p` of the unit
+  (`Web.CarriesAt`), the formation is active at most `p` times its reserve
+  (`Web.CarriesAt.lasts`); the spine's reserve is the case of `p` one at a fixed unit
+  (`Web.Carries.carriesAt`).
 * **The frontier.** Each witness is balanced at a unit that splits without end, and its
   flow dissipates on every closed family.
   - In `Asymptote` a drawer takes from a closed pool without end and gives nothing back,
@@ -47,11 +60,16 @@ belongs to the dynamics from what belongs to the fixed unit.
   - In `Alternation` two sides hand one whole unit of step 0 back and forth inside an
     enclosure, each arising in turn; for no share is it dissipative in proportion
     (`arising_needs_proportion`).
+  - In `Dwindle`, at a unit halving at each step, a formation never supported is active at
+    every step, its reserve falling in the finer unit at each and tending to one unit of
+    step 0; for no `p` does each active step cost `1/p` of the unit
+    (`reserve_needs_quantum`).
 
 So the rest of enclosed change is carried either by a least loss per exchange in a fixed
 unit, as in the spine, or, at every resolution, by loss in proportion together with a
-least size of what is exchanged or arises. Without the least size, change continues at
-sizes shrinking without bound. Without the proportion, change of a whole unit continues
+least size of what is exchanged, arises or ceases; a reserve defers the end at every
+resolution only with a least cost per active step. Without the least size, change continues
+at sizes shrinking without bound. Without the proportion, change of a whole unit continues
 while its losses shrink without bound. What holds at every resolution without either is
 the quantum law: an enclosed family cannot keep losing at a non-vanishing rate.
 
@@ -365,6 +383,18 @@ instance (W : Web F C) (r R : Nat → Nat) (p t : Nat) (c : C) : Decidable (W.Ga
 def Web.gainers (W : Web F C) (r R : Nat → Nat) (p t : Nat) (gs : List C) : Nat :=
   total gs fun c => mark (W.Gains r R p t c)
 
+/-- Across the step from `t`, `c` loses at least `1/p` of the unit counted by `R`: counted
+in the unit of step `t + 1`, `p` times its fall is at least `R (t + 1)`. -/
+def Web.Loses (W : Web F C) (r R : Nat → Nat) (p t : Nat) (c : C) : Prop :=
+  R (t + 1) + p * W.level (t + 1) c ≤ p * (r t * W.level t c)
+
+instance (W : Web F C) (r R : Nat → Nat) (p t : Nat) (c : C) : Decidable (W.Loses r R p t c) :=
+  Nat.decLe _ _
+
+/-- The members of a list losing at least `1/p` of the unit across the step from `t`. -/
+def Web.losers (W : Web F C) (r R : Nat → Nat) (p t : Nat) (ls : List C) : Nat :=
+  total ls fun c => mark (W.Loses r R p t c)
+
 namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
@@ -481,6 +511,40 @@ theorem exchange_not_recurring {r : Nat → Nat} (balances : L.BalancesAt r W) {
       ⟨t, after, total_pos_of_mem (q := fun f => mark (R (t + 1) ≤ p * total cs (L.take t f)))
         present (mark_pos.mpr takes)⟩
 
+/-- Balanced at a resolution, what a condition loses across a step is taken from it. -/
+theorem BalancesAt.loss_taken {r : Nat → Nat} (balances : L.BalancesAt r W) {R : Nat → Nat}
+    {p t : Nat} {c : C} (loses : W.Loses r R p t c) : R (t + 1) ≤ p * L.taken t c :=
+  le_of_add_le_add_right (p * W.level (t + 1) c) (Nat.le_trans loses
+    (Nat.le_trans (Nat.mul_le_mul_left p (Nat.le_trans (Nat.le_add_right _ (L.given t c))
+        (Nat.le_of_eq (balances t c).symm)))
+      (Nat.le_of_eq ((Nat.left_distrib _ _ _).trans (Nat.add_comm _ _)))))
+
+/-- Dissipated on by the share `q`, the members of a list without repetition within the
+family that lose at least `1/p` of the unit across a step make the family lose at least
+`1/(p (q + 1))` of it each. -/
+theorem BalancesAt.losers_lose {r : Nat → Nat} (balances : L.BalancesAt r W) {R : Nat → Nat}
+    {p q : Nat} {cs ls : List C} {t : Nat} (dissipates : L.DissipatesBy q cs t)
+    (distinct : Distinct ls) (within : ∀ c, c ∈ ls → c ∈ cs) :
+    p * (q + 1) * W.stock cs (t + 1) + W.losers r R p t ls * R (t + 1) ≤
+      p * (q + 1) * (r t * W.stock cs t) :=
+  calc p * (q + 1) * W.stock cs (t + 1) + W.losers r R p t ls * R (t + 1)
+      ≤ p * (q + 1) * W.stock cs (t + 1) + p * L.uptake cs t :=
+        Nat.add_le_add_left (Nat.le_trans (Nat.le_of_eq (total_mul_right _ _ ls))
+          (Nat.le_trans (total_le ls fun c _ => mark_cases
+              (q := fun m => m * R (t + 1) ≤ p * L.taken t c)
+              (fun loses => Nat.le_trans (Nat.le_of_eq (Nat.one_mul _))
+                (balances.loss_taken loses))
+              (fun _ => Nat.le_trans (Nat.le_of_eq (Nat.zero_mul _)) (Nat.zero_le _)))
+            (Nat.le_trans (Nat.le_of_eq (total_mul p (L.taken t) ls))
+              (Nat.mul_le_mul_left p (total_le_of_support distinct fun c mem _ =>
+                within c mem))))) _
+    _ = p * ((q + 1) * W.stock cs (t + 1) + L.uptake cs t) :=
+        (congrArg (· + p * L.uptake cs t) (mul_regroup p (q + 1) _)).trans
+          (Nat.left_distrib _ _ _).symm
+    _ ≤ p * ((q + 1) * (r t * W.stock cs t)) :=
+        Nat.mul_le_mul_left p (balances.lowersTaking dissipates)
+    _ = p * (q + 1) * (r t * W.stock cs t) := (mul_regroup p (q + 1) _).symm
+
 end Flow
 
 namespace World
@@ -549,7 +613,135 @@ theorem arising_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r :
           ((congrArg (fun k => R (t + 1) + p * k) (Nat.mul_zero (r t))).trans
             ((congrArg (R (t + 1) + ·) (Nat.mul_zero p)).trans (Nat.add_zero _))))) size⟩
 
+/-- The fall law. Under the premises of the growth law, the times since `T` that a relatum
+loses at least `1/p` of the unit of step `T`, counted relatum by relatum, number at most
+`p (q + 1)` times the total standing at `T`. What falls is taken within an enclosure, and
+the loss in proportion makes the enclosure lose at least `1/(p (q + 1))` of the unit for
+each. -/
+theorem fall_bound {alive : Nat → List w.Relatum} (census : w.web.Census alive)
+    (embodied : w.Embodied) {r : Nat → Nat} (balances : w.flow.BalancesAt r w.web) {q : Nat}
+    (dissipative : w.flow.DissipativeBy q) {T : Nat}
+    (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) {R : Nat → Nat} (base : R T = 1)
+    (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t) (refining : ∀ t, T ≤ t → 0 < r t)
+    (p n : Nat) :
+    total (steps T n) (fun t => w.web.losers r R p t (alive t)) ≤
+      p * (q + 1) * w.web.stock (alive T) T :=
+  have standing := standingCensus census embodied
+  losses_bound (s := fun t => w.web.stock (alive t) t) base unit refining
+    (fun t later => Decidable.of_not_not fun no =>
+      (enclosed t later).aroundStanding_not_not alive fun ⟨es, distinct, before, after, closed⟩ =>
+        no (Nat.le_trans (Nat.le_of_eq (congrArg (fun k => p * (q + 1) * k + _)
+            (standing.stock_eq distinct after)))
+          (Nat.le_trans (balances.losers_lose (dissipative es t distinct closed)
+              (census t).1 before)
+            (Nat.le_of_eq (congrArg (fun k => p * (q + 1) * (r t * k))
+              (standing.stock_eq distinct before).symm))))) n
+
+/-- So no relatum loses at least `1/p` of the unit at arbitrarily late steps. -/
+theorem fall_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
+    (balances : w.flow.BalancesAt r w.web) {q : Nat} (dissipative : w.flow.DissipativeBy q)
+    {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) {R : Nat → Nat} (base : R T = 1)
+    (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t) (refining : ∀ t, T ≤ t → 0 < r t)
+    (p : Nat) : ¬ ∀ N, ∃ t x, N ≤ t ∧ w.web.Loses r R p t x :=
+  match counted with
+  | ⟨_, census⟩ => fun recurs => bounded_not_recurring
+    (fall_bound census embodied balances dissipative enclosed base unit refining p)
+    fun N => match recurs (N + T) with
+    | ⟨t, x, after, loses⟩ =>
+      have later := Nat.le_trans (Nat.le_add_left T N) after
+      have stood : 0 < w.web.level t x := Nat.pos_of_ne_zero fun zero =>
+        Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+          (units_pos base unit refining (Nat.le_succ_of_le later))
+          (Nat.le_trans (Nat.le_add_right _ _) (Nat.le_trans loses
+            (Nat.le_of_eq ((congrArg (fun k => p * (r t * k)) zero).trans
+              ((congrArg (p * ·) (Nat.mul_zero (r t))).trans (Nat.mul_zero p)))))))
+      ⟨t, Nat.le_trans (Nat.le_add_right N T) after,
+        total_pos_of_mem (q := fun c => mark (w.web.Loses r R p t c))
+          (((standingCensus census embodied t).2 x).mp stood) (mark_pos.mpr loses)⟩
+
+/-- So ceasing at a size not vanishing does not recur: no relatum standing at least `1/p` of
+the unit ceases at arbitrarily late steps. -/
+theorem ceasing_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
+    (balances : w.flow.BalancesAt r w.web) {q : Nat} (dissipative : w.flow.DissipativeBy q)
+    {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) {R : Nat → Nat} (base : R T = 1)
+    (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t) (refining : ∀ t, T ≤ t → 0 < r t)
+    (p : Nat) :
+    ¬ ∀ N, ∃ t x, N ≤ t ∧ w.web.Ceases t x ∧ R (t + 1) ≤ p * (r t * w.web.level t x) :=
+  fun recurs => fall_not_recurring counted embodied balances dissipative enclosed base unit
+    refining p fun N => match recurs N with
+    | ⟨t, x, after, ceases, size⟩ => ⟨t, x, after, Nat.le_trans (Nat.le_of_eq
+        ((congrArg (fun k => R (t + 1) + p * k)
+          (eq_zero_of_not_pos fun pos => ceases.2 ((embodied x (t + 1)).mpr pos))).trans
+          ((congrArg (R (t + 1) + ·) (Nat.mul_zero p)).trans (Nat.add_zero _)))) size⟩
+
+/-- Rest at every resolution. In a world with a census whose relata are embodied, balanced at
+a resolution that only refines and dissipative in proportion, with every step from some step
+on enclosed, neither arising nor ceasing at a size of at least `1/p` of the unit recurs. -/
+theorem rests_at_resolution (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
+    (balances : w.flow.BalancesAt r w.web) {q : Nat} (dissipative : w.flow.DissipativeBy q)
+    {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) {R : Nat → Nat} (base : R T = 1)
+    (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t) (refining : ∀ t, T ≤ t → 0 < r t)
+    (p : Nat) :
+    (¬ ∀ N, ∃ t x, N ≤ t ∧ w.web.Arises t x ∧ R (t + 1) ≤ p * w.web.level (t + 1) x) ∧
+      ¬ ∀ N, ∃ t x, N ≤ t ∧ w.web.Ceases t x ∧ R (t + 1) ≤ p * (r t * w.web.level t x) :=
+  ⟨arising_not_recurring counted embodied balances dissipative enclosed base unit refining p,
+   ceasing_not_recurring counted embodied balances dissipative enclosed base unit refining p⟩
+
 end World
+
+/-! ## A reserve at every resolution -/
+
+/-- A reserve at a resolution: across each step at which the formation is not supported,
+the reserve does not rise, counted in the finer unit, and where the formation is active it
+falls by at least `1/p` of the unit counted by `R`. -/
+def Web.CarriesAt (W : Web F C) (r R : Nat → Nat) (p : Nat) (a : Nat → F → Nat) : Prop :=
+  ∀ t f, ¬ W.Supported t f →
+    a (t + 1) f ≤ r t * a t f ∧ (W.active t f → R (t + 1) + p * a (t + 1) f ≤ p * (r t * a t f))
+
+/-- A reserve read in a refining unit: across each unsupported step it does not rise, and
+falls where the formation is active, counted in the finer unit; with `r` constantly one it is
+`Web.Carries` (`Web.carriesIn_one`). -/
+def Web.CarriesIn (W : Web F C) (r : Nat → Nat) (a : Nat → F → Nat) : Prop :=
+  ∀ t f, ¬ W.Supported t f → a (t + 1) f ≤ r t * a t f ∧ (W.active t f → a (t + 1) f < r t * a t f)
+
+/-- The spine's reserve, falling by a whole unit at each active unsupported step, carries at
+the fixed unit with `p` one. -/
+theorem Web.Carries.carriesAt {W : Web F C} {a : Nat → F → Nat} (carries : W.Carries a) :
+    W.CarriesAt (fun _ => 1) (fun _ => 1) 1 a :=
+  fun t f unsupported =>
+    ⟨Nat.le_trans (carries t f unsupported).1 (Nat.le_of_eq (Nat.one_mul _).symm),
+     fun active => Nat.le_trans (Nat.le_of_eq ((congrArg (1 + ·) (Nat.one_mul _)).trans
+        (Nat.add_comm _ _))) (Nat.le_trans ((carries t f unsupported).2 active)
+          (Nat.le_of_eq ((Nat.one_mul _).trans (Nat.one_mul _)).symm))⟩
+
+/-- With the unit fixed, a reserve read in the finer unit is the spine's reserve. -/
+theorem Web.carriesIn_one {W : Web F C} {a : Nat → F → Nat} :
+    W.CarriesIn (fun _ => 1) a ↔ W.Carries a :=
+  ⟨fun carries t f unsupported =>
+    ⟨Nat.le_trans (carries t f unsupported).1 (Nat.le_of_eq (Nat.one_mul _)),
+     fun active => Nat.lt_of_lt_of_le ((carries t f unsupported).2 active)
+      (Nat.le_of_eq (Nat.one_mul _))⟩,
+   fun carries t f unsupported =>
+    ⟨Nat.le_trans (carries t f unsupported).1 (Nat.le_of_eq (Nat.one_mul _).symm),
+     fun active => Nat.lt_of_lt_of_le ((carries t f unsupported).2 active)
+      (Nat.le_of_eq (Nat.one_mul _).symm)⟩⟩
+
+/-- A reserve defers the end at every resolution where each active step beyond support costs
+at least `1/p` of the unit of step `T`: unsupported from `T` on, the formation is active
+since `T` at most `p` times its reserve at `T`. -/
+theorem Web.CarriesAt.lasts {W : Web F C} {r R : Nat → Nat} {p : Nat} {a : Nat → F → Nat}
+    (carries : W.CarriesAt r R p a) {f : F} [∀ t, Decidable (W.active t f)] {T : Nat}
+    (base : R T = 1) (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t)
+    (refining : ∀ t, T ≤ t → 0 < r t) (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f)
+    (n : Nat) : total (steps T n) (fun t => mark (W.active t f)) ≤ p * a T f :=
+  losses_bound (s := fun t => a t f) base unit refining (fun t later =>
+    mark_cases (q := fun m => p * a (t + 1) f + m * R (t + 1) ≤ p * (r t * a t f))
+      (fun active => Nat.le_trans (Nat.le_of_eq ((congrArg (p * a (t + 1) f + ·)
+        (Nat.one_mul _)).trans (Nat.add_comm _ _)))
+        ((carries t f (unsupported t later)).2 active))
+      (fun _ => Nat.le_trans (Nat.le_of_eq ((congrArg (p * a (t + 1) f + ·)
+        (Nat.zero_mul _)).trans (Nat.add_zero _)))
+        (Nat.mul_le_mul_left p (carries t f (unsupported t later)).1))) n
 
 /-- Units of step `t` per unit of step 0 where the unit halves at each step. -/
 def halving : Nat → Nat
@@ -843,7 +1035,8 @@ theorem emitted_absent {t : Nat} :
       absent (Eq.subst (motive := fun k => some t ∈ some k :: cs) same.symm (.head cs)))).trans
     ((Nat.zero_add _).trans (emitted_absent fun mem => absent (.tail _ mem)))
 
-theorem emitted_le_one {t : Nat} : ∀ {cs : List (Option Nat)}, Distinct cs → total cs (emitted t) ≤ 1
+theorem emitted_le_one {t : Nat} :
+    ∀ {cs : List (Option Nat)}, Distinct cs → total cs (emitted t) ≤ 1
   | [], _ => Nat.zero_le 1
   | none :: _, ⟨_, distinct⟩ =>
     Nat.le_trans (Nat.le_of_eq (Nat.zero_add _)) (emitted_le_one distinct)
@@ -1032,6 +1225,43 @@ theorem not_dissipativeBy (q : Nat) : ¬ flow.DissipativeBy q :=
 
 end Alternation
 
+/-! ## A reserve dwindling without end
+
+One formation depends on one condition at need one,
+which never stands, so it is never supported; it is active at every step, its reserve
+standing at `halving t + 1` units of step `t`, one unit of step 0 and one of step `t`, and
+falling by one unit of the step after at each step. -/
+namespace Dwindle
+
+def web : Web Unit Unit :=
+  ⟨fun _ _ => 0, fun _ _ => True, fun _ _ _ => True, fun _ _ _ => 1, fun _ _ _ => True⟩
+
+def reserve (t : Nat) (_ : Unit) : Nat :=
+  halving t + 1
+
+theorem unsupported (t : Nat) : ¬ web.Supported t () :=
+  fun supported => Nat.lt_irrefl 0 (supported () trivial)
+
+theorem carriesIn : web.CarriesIn (fun _ => 2) reserve :=
+  fun t _ _ => have falls : halving (t + 1) + 1 < 2 * (halving t + 1) :=
+      Nat.lt_of_lt_of_le (Nat.lt_succ_self _) (Nat.le_of_eq (Nat.left_distrib 2 (halving t) 1).symm)
+    ⟨Nat.le_of_lt falls, fun _ => falls⟩
+
+instance (t : Nat) : Decidable (web.active t ()) :=
+  isTrue trivial
+
+/-- So no least cost per active step holds at any `p`: by `Web.CarriesAt.lasts`, the
+formation, never supported, would be active at most `p` times its reserve. -/
+theorem not_carriesAt (p : Nat) : ¬ web.CarriesAt (fun _ => 2) halving p reserve :=
+  fun carries =>
+    have bound := carries.lasts (f := ()) (T := 0) rfl (fun _ _ => rfl)
+      (fun _ _ => Nat.succ_pos 1) (fun t _ => unsupported t) (p * 2 + 1)
+    Nat.lt_irrefl (p * 2) (Nat.lt_of_lt_of_le (Nat.lt_succ_self _) (Nat.le_trans
+      (Nat.le_of_eq (((total_congr (fun _ => mark_one trivial) (steps 0 (p * 2 + 1))).trans
+        (total_ones _)).trans (steps_length 0 _)).symm) bound))
+
+end Dwindle
+
 
 /-- Continued arising needs a quantum. With a fixed unit, a world with a census whose
 relata are embodied, balanced and dissipative cannot arise without end with every step
@@ -1092,5 +1322,18 @@ theorem rest_needs_quantum (split : Nat → Nat) (splits : ∀ N, ∃ t, N ≤ t
       ∀ N, ∃ t, N ≤ t ∧ 0 < (Asymptote.flow split).takers [()] t :=
   ⟨Asymptote.balances split, Asymptote.dissipative split, Asymptote.dissipativeBy split,
     Asymptote.dependent split, Asymptote.closed split, Asymptote.taking_recurs split splits⟩
+
+/-- A reserve defers the end only with a least cost per active step. With the unit fixed, a
+reserve falling at each active step beyond support defers the end without escaping it
+(`Web.Carries.lasts`); at every resolution, where each such step costs at least `1/p` of
+the unit, the formation is active at most `p` times its reserve (`Web.CarriesAt.lasts`). In
+`Dwindle`, at a unit halving at each step, a formation never supported is active at every
+step, its reserve falling in the finer unit at each; for no `p` does each active step cost
+`1/p` of the unit. -/
+theorem reserve_needs_quantum :
+    (∀ t, ¬ Dwindle.web.Supported t ()) ∧ Dwindle.web.CarriesIn (fun _ => 2) Dwindle.reserve ∧
+      (∀ t, Dwindle.web.active t ()) ∧
+      ∀ p, ¬ Dwindle.web.CarriesAt (fun _ => 2) halving p Dwindle.reserve :=
+  ⟨Dwindle.unsupported, Dwindle.carriesIn, fun _ => trivial, Dwindle.not_carriesAt⟩
 
 end Becoming

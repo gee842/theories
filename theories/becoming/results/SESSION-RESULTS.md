@@ -16,7 +16,7 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-10T16:20:36.312877+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-10T16:51:25.119813+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
@@ -24,7 +24,7 @@ Snapshot UTC: `2026-10-10T16:20:36.312877+00:00`. Paths are documentary units, n
 | Result families / 成果族 | 14 |
 | Working Lean sources / 工作源码 | 590 |
 | Audit drivers / 审计入口 | 14 |
-| Saved verification or build copies / 检查及构建副本 | 14353 |
+| Saved verification or build copies / 检查及构建副本 | 14670 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
 
 No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.
@@ -322,7 +322,7 @@ Catalogues, handoffs, pushes and presentation exports preserve or communicate re
 
 ## 双语阅读版的覆盖 Reading edition coverage
 
-The earlier reading registers contain 139 chapters; the current directory contained 139 at this checkpoint. 2 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
+The earlier reading registers contain 139 chapters; the current directory contained 139 at this checkpoint. 1 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
 
 旧阅读版的逐章摘要保留其核读版本；新增章节在下方单列，现有摘要的待核读版本不以刷新哈希消除。
 

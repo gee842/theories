@@ -228,8 +228,8 @@
     "en": "Contains no ethical predicate; the conclusions about embodiment constrain only the arising of embodied relata, and arising that is not embodied is unconstrained; the general conclusions constrain coming to stand, not waking from dormancy (Sleeper); Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied, seed banks and dormancy being stated through came_to_stand, Provisioned and Sleeper; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, its conclusion can be met by exchange unrelated to the family (SprayShuttle), and drawing in is stated only for a family enclosed around (generation_draws_in), and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Shuttle the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T155424.663562Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1649 项定理／2571 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T155424.663562Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1649 theorems/2571 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T163746.432774Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1662 项定理／2590 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T163746.432774Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1662 theorems/2590 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -430,19 +430,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "331c2b0264cfae6742529ffe1d68d5df9d8b282e2ce5d09d66fcd39a9f0bbc7f",
+      "sha256": "53aa543832e66e383f868be1f21f8b1445c1d6816181d0f2e1b14cd13d123d2d",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6b12dabd1299277d893c6b52962d0a346ac67285d190c35f9430a5d1b9751ab1",
+      "sha256": "8870244672bc8027c4a8cd9ca0da52bb9cf3cd541574e97dfc722830495c48cb",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "30145eb26d1c0080084a750dbacee1528a243d3ce03419ee686a8d05fdeaa69d",
+      "sha256": "4da85fe6917a797810f75564e0828a92ff51f1153fc9e3064a4e0c589a47dc92",
       "declarations": []
     },
     {
@@ -695,6 +695,10 @@
     {
       "zh": "2026-10-10 R1：验证范围重新指向合并检查器回执 20261010T155424.663562Z 与外围回执 20261010T161037.642977Z（新模块 Becoming.Resolution 加入核心）。断言不变。",
       "en": "2026-10-10 R1: validation scope re-pointed to consolidated receipt 20261010T155424.663562Z and periphery receipt 20261010T161037.642977Z (the new module Becoming.Resolution joins the core). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-10 R1b：验证范围重新指向合并检查器回执 20261010T163746.432774Z 与外围回执 20261010T164738.513555Z（Becoming.Resolution 加入下降、止息与储备的规律）。断言不变。",
+      "en": "2026-10-10 R1b: validation scope re-pointed to consolidated receipt 20261010T163746.432774Z and periphery receipt 20261010T164738.513555Z (the laws of falling, ceasing and reserve added to Becoming.Resolution). The claim is unchanged."
     }
   ]
 }

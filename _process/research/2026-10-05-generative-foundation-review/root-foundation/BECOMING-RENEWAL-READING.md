@@ -3647,6 +3647,46 @@ Integration: 回答 continued-change-needs-openness 的下一步“带比率或�
 
 **边界。** 离散步；量是细分后的有理数，单位不变粗；连续时间与实数量仍开放；界是否可达未证；交换的规律以固定的封闭家族陈述；按比例的损失是前提；没有伦理谓词；尚无独立审查。
 
+### 59.1 下降、止息与储备（R1b）
+
+2026-10-10。同一方向的下一步。R1 在每一分辨率下给出了生起的一半；静止定理还说止息停止，而储备推迟终结而不逃脱（`Web.Carries.lasts`）同样以每步至少一个单位计。
+
+```text
+Result(s): 修订 rest-at-every-resolution（同一分辨率与同一前提之下的更强结论，加上储备的最小花费，不另立记录）；新依赖
+           reserve-defers-ending（储备 Web.Carries 与 Web.Carries.lasts）
+Delta: Web.Loses、Web.losers；Flow.BalancesAt.loss_taken、Flow.BalancesAt.losers_lose；下降的规律 World.fall_bound、
+       World.fall_not_recurring；World.ceasing_not_recurring；每一分辨率下的静止 World.rests_at_resolution；储备
+       Web.CarriesAt、Web.CarriesIn、Web.carriesIn_one、Web.Carries.carriesAt、Web.CarriesAt.lasts；见证 Dwindle 与边界
+       定理 reserve_needs_quantum
+Supplied premises / correspondence: 下降与止息的规律与增长的规律前提相同；储备的规律另要从 T 起不被支持、活动可判定，
+       并以每个活跃的步至少花去 1/p 单位为前提（最小花费，是脊柱一单位下降的无单位对应，不是推出的）
+Evidence: 合并检查器回执 20261010T163746.432774Z（1662 项定理、2590 项声明审计，全部源声明公理报告为空；Resolution 110 项定理、145 项声明审计），
+          外围回执 20261010T164738.513555Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 同 §59；储备的最小花费是前提；Dwindle 只有一个关系项；尚无独立审查
+Integration: 记录 rest-at-every-resolution；计划 §10 R1b；章节 §9 的脊柱表与第一部分；模块说明、根模块、包 README 与检查器的范围
+```
+
+**机制。**
+
+- **下降的规律。** 跨过一步下降至少 1/p 单位的关系项，所失去的是被取走的：平衡之下，r t 乘步前的水平连同所得等于步后的水平连同所取，所以所取至少是下降的量（`Flow.BalancesAt.loss_taken`）。在围住它的家族中，取用至少是 R (t + 1)/p 乘下降者的数目，按比例的损失使家族至少损失取用的 1/(q+1)（`Flow.BalancesAt.losers_lose`）。所以在增长的规律的前提之下，下降者逐个逐步计数不多于 p(q+1) 乘 T 时所立者的总水平（`World.fall_bound`），不复现（`World.fall_not_recurring`）。
+- **止息。** 体现的关系项止息时降到零，所以立于至少 1/p 单位者的止息是这一尺度的下降（`World.ceasing_not_recurring`）。连同 R1 的生起：在每一分辨率下，这一尺度的生起与止息都不复现（`World.rests_at_resolution`）。这是静止定理在每一分辨率下的形式：单位固定时，归于静止说的是从某步起什么都不生起、不止息；细分之下说的是，任何固定尺度的生起与止息都不复现。
+- **储备。** 脊柱的储备在每个活跃而不被支持的步至少减少一个单位，所以推迟终结而不逃脱（`Web.Carries.lasts`）。只要求储备在更细单位下下降的读法（`Web.CarriesIn`）在单位固定时就是脊柱的储备（`Web.carriesIn_one`），而单位细分时储备可以永远下降。每一分辨率下的形式是 `Web.CarriesAt`：每个活跃而不被支持的步至少花去 1/p 单位；于是从 T 起不被支持时，形成活跃的步不多于 p 乘其在 T 的储备（`Web.CarriesAt.lasts`），证明用的是同一条损失的规律；脊柱的储备是 p 为一、单位固定的情形（`Web.Carries.carriesAt`）。
+- **边界。** `Dwindle`：单位每步减半；一个从不被支持的形成每步都活跃；储备以当步单位计为 2^t + 1，在更细单位下每步下降（`Dwindle.carriesIn`），以第 0 步单位计是 1 + 2^-t，从上方趋于一个单位而永不到零；对任何 p，都有活跃的步花去不到 1/p 单位（`Dwindle.not_carriesAt`、`reserve_needs_quantum`）。
+
+**作者反审。**
+
+*反驳 7：下降的规律只是增长的规律的镜像？* 机制相同，界不同。增长者所得是被给予的，下降者所失是被取走的；按比例的损失对补给的约束是至少损失其 1/q，对取用的约束是至少损失其 1/(q+1)，所以增长的界是 p q，下降的界是 p(q+1)。两条都由同一条损失的规律推出。
+
+*反驳 8：止息为什么需要体现？* 不体现的关系项可以水平为正而不活跃，止息只说活动停止。体现使止息时水平降到零，所以止息是下降；静止定理同样用这一前提。
+
+*反驳 9：`Dwindle` 永远活跃而不被支持，是否违反脊柱的前提？* 它满足细分单位下的储备（`Web.CarriesIn`），只缺每步的最小花费。单位固定时 `Web.CarriesIn` 就是 `Web.Carries`（`Web.carriesIn_one`），而 `Web.Carries.lasts` 不容这样的储备永远维持活动；所以它恰在量子处。
+
+*反驳 10：这是新结果还是同一结果的扩展？* 同一分辨率与同一前提之下的更强结论，加上储备的最小花费这一前提，归入同一记录；`World.rests_at_resolution` 是 R1 的 `World.arising_not_recurring` 与止息的合取。
+
+**读法（AI，待 Ren）。** 有界效率之下，被围住的世界在每一分辨率下归于静止：任何固定尺度的生起与止息都停止，能继续的只有越来越细或越来越接近无损的变化。储备也是这样：没有每步的最小花费，一个不被支持的形成可以靠越来越细的储备永远活跃。
+
+**边界。** 同 §59；储备的最小花费是前提；见证只有一个关系项；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4058,4 +4098,6 @@ On the AI's reading, pending Ren, route (b) reaches the self and the system one 
 
 On the AI's reading, pending Ren: with bounded efficiency, enclosed generation of any fixed size stops, and inside an enclosure it can continue only ever finer or ever closer to lossless. This answers, for rational amounts and discrete steps, the next step of continued-change-needs-openness; continuous time and real amounts remain open. The first checker run failed on a name clash with `Becoming.Admission` (`Transfer`, now `Alternation`; receipt 20261010T154024.599588Z retained). Record added: rest-at-every-resolution. Not yet independently reviewed; the author's counterreview is in section 59.
 
-The package now has 1649 theorems and 2571 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58 and 59. The periphery bridge passed against this core (receipt 20261010T161037.642977Z).
+**Falling, ceasing and reserve at every resolution (R1b).** Under the same resolution and premises, the relata falling by at least `1/p` of the unit inside an enclosure, counted relatum by relatum and step by step, number at most `p(q+1)` times the total standing at `T` (`World.fall_bound`): what falls is taken (`Flow.BalancesAt.loss_taken`), and loss in proportion makes the enclosing family lose at least `1/(q+1)` of what is taken (`Flow.BalancesAt.losers_lose`), where it loses at least `1/q` of what is given, so the bound for falling is `p(q+1)` and for growth `p q`. An embodied relatum ceasing falls to zero, so ceasing at that size does not recur either (`World.ceasing_not_recurring`), and with R1 neither arising nor ceasing at that size recurs (`World.rests_at_resolution`): the rest theorem at every resolution. A reserve read in a refining unit that only falls (`Web.CarriesIn`, the spine's `Web.Carries` when the unit is fixed, `Web.carriesIn_one`) may fall forever. Where each active step beyond support costs at least `1/p` of the unit (`Web.CarriesAt`), a formation unsupported from `T` on is active at most `p` times its reserve at `T` (`Web.CarriesAt.lasts`, by the same loss law), the spine's reserve being the case of `p` one at a fixed unit (`Web.Carries.carriesAt`). In `Dwindle`, at a unit halving at each step, a formation never supported is active at every step, its reserve `1 + 2^-t` units of step 0 falling towards one unit and never reaching zero, with no least cost (`reserve_needs_quantum`). The least cost is a premise, the unit-free counterpart of the spine's one-unit fall. The same record is revised, with reserve-defers-ending as a new dependency. Receipt 20261010T163746.432774Z, periphery receipt 20261010T164738.513555Z. Not yet independently reviewed; the author's counterreview is in section 59.1.
+
+The package now has 1662 theorems and 2590 declaration audits, over a core closure of 37 modules and a package of 35, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59 and 59.1. The periphery bridge passed against this core (receipt 20261010T164738.513555Z).

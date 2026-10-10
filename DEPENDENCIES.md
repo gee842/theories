@@ -2242,6 +2242,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
 
+## rest-at-every-resolution ← reserve-defers-ending
+
+`formal-reuse` — 复用储备 Web.Carries；Web.Carries.carriesAt 说明脊柱的储备是 p 为一、单位固定时的每一分辨率下的储备，Web.carriesIn_one 说明细分单位下的读法在单位固定时就是它；Web.CarriesAt.lasts 是 Web.Carries.lasts 在每一分辨率下的形式。 / Reuses the reserve Web.Carries; Web.Carries.carriesAt shows the spine's reserve is the reserve at every resolution with p one at a fixed unit, and Web.carriesIn_one that the reading in a refining unit is it when the unit is fixed; Web.CarriesAt.lasts is the form of Web.Carries.lasts at every resolution.
+
+**Producer output / 上游输出:** 不被支持的步上储备不上升，活跃时下降。 / Across an unsupported step the reserve does not rise, and falls where the formation is active.
+
+**Consumer input / 下游输入:** 不被支持的步上储备在更细单位下不上升，活跃时至少下降 1/p 单位。 / Across an unsupported step the reserve does not rise in the finer unit, and falls by at least 1/p of the unit where the formation is active.
+
+**Retained conditions / 保留条件:** 从 T 起不被支持；单位只细分；活动可判定。 / Unsupported from T on; the unit only refines; activity decidable.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
 ## retained-reference-joining-recovery ← branching-tests-bisimulation
 
 `formal-reuse` — 位置对接合的有限结果给出有限分支，再复用恢复及历史提升。 / Finite outcomes of slot-pair joining give finite branching, then reuse recovery and history lifting.
