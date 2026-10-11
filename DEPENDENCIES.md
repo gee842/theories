@@ -628,7 +628,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## closure-verdict-meets-axiom ← one-axiom-yields-g0
 
@@ -964,7 +964,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## context-sensitive-updating-correspondence ← situated-recovery-empirical-correspondence
 
@@ -1089,6 +1089,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；可判定相等；生起的形式还需一类读法与体现。 / Balance; dissipation; no repetition; enclosure around; decided equality; the arising form also needs the one-kind reading and embodiment.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## continuing-self-fed-from-beyond ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与家族上假定 laws-of-one-step 的 Flow.BalancesOn；全局前提给出它，所以原定理是推论。 / The local laws assume Flow.BalancesOn of laws-of-one-step only at the steps and families they use; the global premises give it, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）与下降（Flow.RunsDown）。 / Balance on a finite family across one step (Flow.BalancesOn) and running down (Flow.RunsDown).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用家族假定它。 / This record's local laws assume it at the families and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## conveyance-crosses-the-boundary ← continuing-self-fed-from-beyond
 
@@ -2468,7 +2480,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## pending-task-context-applicability ← acquired-revision-of-pending-task
 
@@ -3002,6 +3014,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## rising-and-falling-in-one-exchange ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与家族上假定 laws-of-one-step 的 Flow.BalancesOn；全局前提给出它，所以原定理是推论。 / The local laws assume Flow.BalancesOn of laws-of-one-step only at the steps and families they use; the global premises give it, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）与下降（Flow.RunsDown）。 / Balance on a finite family across one step (Flow.BalancesOn) and running down (Flow.RunsDown).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用家族假定它。 / This record's local laws assume it at the families and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## risk-certificate-outcome-distinction ← assured-route-criterion
 
 `formal-reuse` — 原证明用 assured_route_iff 将计数失败接到实际不到达。 / The existing proof uses assured_route_iff to connect counted failure with failed arrival.
@@ -3048,7 +3072,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
 
@@ -3174,6 +3198,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## space-and-its-parts ← laws-of-one-step
+
+`formal-reuse` — 局部规律复用 laws-of-one-step 的 Flow.BalancesOn。 / The local laws reuse Flow.BalancesOn of laws-of-one-step.
+
+**Producer output / 上游输出:** Flow.BalancesOn。 / Flow.BalancesOn.
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用的步与家族上用它。 / This record's local laws use it at the steps and families they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## substitution-preserves-consumption ← relational-renewal-classification
 
 `formal-reuse` — 直接复用支持门控定律的 overdraw_crosses_support、permanently_below 与 dependent_overdraw_ends_itself；共同条件的水平就是 Law.level。 / Directly reuses the support-gated law's overdraw_crosses_support, permanently_below and dependent_overdraw_ends_itself; the shared condition's level is Law.level.
@@ -3268,7 +3304,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## supported-renewal-recovery ← relational-renewal-classification
 
@@ -3544,7 +3580,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 平衡；只有活跃者取用；耗散；体现。 / Balance; only active relata taking; dissipation; embodiment.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
 
 ## whole-persists-through-generation ← unceasing-generation-needs-renewal
 

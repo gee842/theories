@@ -224,8 +224,8 @@
     "en": "That a formation observes anything beyond its support, forms a model, wants to test or knows its registration closure is not derived; registering alike bounds what can be told apart and says nothing of what a difference is about; what an act does compares two histories and is testable only relative to a model of the history without it, and varying one's own act and registering the difference (experiment) is not stated; how others respond is supplied; the multi-step Scope bridge remains open; the readings are the AI's, narrowed by the review, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Web.Refutes.not_of_alike、Web.tail_unrefuted、Web.refutesWithin_iff_conjunction、Flow.refutes_tail_within、Web.belief_judge_iff、Flow.alike_within_closed、Clearing.tested_by_dweller 与 Clearing.pooled；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Web.Refutes.not_of_alike, Web.tail_unrefuted, Web.refutesWithin_iff_conjunction, Flow.refutes_tail_within, Web.belief_judge_iff, Flow.alike_within_closed, Clearing.tested_by_dweller and Clearing.pooled; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Web.Refutes.not_of_alike、Web.tail_unrefuted、Web.refutesWithin_iff_conjunction、Flow.refutes_tail_within、Web.belief_judge_iff、Flow.alike_within_closed、Clearing.tested_by_dweller 与 Clearing.pooled；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Web.Refutes.not_of_alike, Web.tail_unrefuted, Web.refutesWithin_iff_conjunction, Flow.refutes_tail_within, Web.belief_judge_iff, Flow.alike_within_closed, Clearing.tested_by_dweller and Clearing.pooled; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -312,9 +312,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Flow.BalancesOn",
         "Becoming.Flow.Balances.on"
@@ -370,7 +370,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": [
         "Becoming.Web.SelfBearing",
         "Becoming.Web.Embodied"
@@ -379,19 +379,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8f14304fe69eb1ee224a7868aa9b3edba9d933e1451bbbec385c0678cf2a9140",
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a",
       "declarations": []
     },
     {
@@ -418,13 +418,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Locality",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -462,6 +455,13 @@
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -480,6 +480,10 @@
     {
       "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“反映”；断言不变。",
       "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 反映; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.Flow.BalancesOn、Becoming.Flow.Balances.on 移入 Becoming.Flow（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: Becoming.Flow.BalancesOn, Becoming.Flow.Balances.on moved into Becoming.Flow (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

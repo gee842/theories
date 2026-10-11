@@ -177,6 +177,13 @@
         "zh": "活动越过支持时，储备推迟终结而不逃脱终结；水平越过活动由本记录的 came_to_stand、Provisioned 与 Sleeper 陈述，两者回答本记录先前的下一步（活动与水平不同步）。",
         "en": "Where activity outlasts support, a reserve defers the end without escaping it; standing outlasting activity is stated here by came_to_stand, Provisioned and Sleeper, together answering this record's earlier next step (activity and standing out of step)."
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "局部规律用 laws-of-one-step 的 Flow.BalancesOn；这是证明上的复用。记录之间不设依存边，因为 laws-of-one-step 经其依存链依存于本记录。",
+        "en": "The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies."
+      }
     }
   ],
   "counterexamples": [
@@ -228,14 +235,14 @@
     "en": "Contains no ethical predicate; the conclusions about embodiment constrain only the arising of embodied relata, and arising that is not embodied is unconstrained; the general conclusions constrain coming to stand, not waking from dormancy (Sleeper); Embodied is a representational premise, and remains, seed banks and inactive conditions are not embodied, seed banks and dormancy being stated through came_to_stand, Provisioned and Sleeper; dissipation is a physical premise with commensurable units; generation_opens constrains only generation recurring in one finite family, its conclusion can be met by exchange unrelated to the family (SprayShuttle), and drawing in is stated only for a family enclosed around (generation_draws_in), and arising of ever new relata (as in Brood) recurs in no finite family; “finite” means a finite family of relata; the witnesses are minimal, and in Shuttle the holder takes its own standing without that being read as drawing; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Roles 新增的 28 项定理与 Becoming.Dissipation 新增的 1 项定理，以及 P17 在 Becoming.Flow、Dissipation、Roles 与 Reserve 新增的开始作为条件而在的定理、P18b 在 Becoming.Flow 与 Dissipation 新增的上升的定理，全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §20 与 §24；§24 的部分经第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md），其数学被接受，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 28 theorems added to Becoming.Roles and the one added to Becoming.Dissipation, with the theorems on coming to stand that P17 adds to Becoming.Flow, Dissipation, Roles and Reserve and those on rising that P18b adds to Becoming.Flow and Dissipation, all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §20 and §24 of the integration note; the part in §24 was examined by the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md), which accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": [
         "Becoming.Web.Embodied.comesToStand",
         "Becoming.Web.Embodied.coming",
@@ -305,7 +312,13 @@
         "Becoming.SprayShuttle.even_sum",
         "Becoming.SprayShuttle.spray_shuttle",
         "Becoming.SprayShuttle.opens_anyway",
-        "Becoming.SprayShuttle.taking_opens_anyway"
+        "Becoming.SprayShuttle.taking_opens_anyway",
+        "Becoming.Web.Embodied.given_of_arises_at",
+        "Becoming.Web.Embodied.replenishes_at",
+        "Becoming.Web.generation_needs_replenishment_from",
+        "Becoming.Web.Embodied.arising_lowers_at",
+        "Becoming.Web.generation_ceases_from",
+        "Becoming.Web.generation_draws_in_from"
       ]
     },
     {
@@ -330,7 +343,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "8b1c821ce8e4d9dad5ad1d1e42339368c61b6e6771533a5bbd5d91957d2feb50",
+      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
       "declarations": [
         "Becoming.Flow.standing_lowers_on",
         "Becoming.Flow.standing_lowers",
@@ -353,13 +366,16 @@
         "Becoming.Flow.rising_ceases_on",
         "Becoming.Flow.rising_opens",
         "Becoming.Flow.rising_draws_in",
-        "Becoming.Flow.rising_ceases"
+        "Becoming.Flow.rising_ceases",
+        "Becoming.Flow.rising_ceases_from",
+        "Becoming.Flow.standing_ceases_from",
+        "Becoming.Flow.rising_draws_in_from"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Web.ComesToStand",
         "Becoming.Flow.Balances.standing_given",
@@ -387,7 +403,11 @@
         "Becoming.Growing.balances",
         "Becoming.Growing.growing",
         "Becoming.Web.rising_of_coming",
-        "Becoming.le_total_of_mem"
+        "Becoming.le_total_of_mem",
+        "Becoming.Flow.BalancesOn.standing_given",
+        "Becoming.Flow.BalancesOn.rise_replenishes",
+        "Becoming.Flow.rising_needs_replenishment_from",
+        "Becoming.Flow.standing_needs_replenishment_from"
       ]
     },
     {
@@ -406,7 +426,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "d3b1e822a27de825f66cd50c360ac30bfa4c1a6c39ac0682ad19feccafa229bd",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -430,19 +450,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "adc083ea1bcacb45aa32fe8945c8c624d3cd75fdcfe883d8c52e88e59705665e",
+      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a",
       "declarations": []
     },
     {
@@ -512,8 +532,8 @@
     }
   ],
   "next_delta": {
-    "zh": "生成在多大程度上必须读作体现（Ren）；有理数量的版本；体现的生成与“更多”在耗散之下的关系；实际生命中体现与耗散的经验对应。",
-    "en": "How far generation must be read as embodied (Ren); a version with rational amounts; the relation of embodied generation to “more” under dissipation; the empirical correspondence of embodiment and dissipation in actual lives."
+    "zh": "对每个世界的确切重述是本记录的 Flow.BalancesOn.standing_given、BalancesOn.rise_replenishes、rising_needs_replenishment_from、standing_needs_replenishment_from、rising_ceases_from、standing_ceases_from、rising_draws_in_from、Web.Embodied.given_of_arises_at、Embodied.replenishes_at、generation_needs_replenishment_from、Embodied.arising_lowers_at、generation_ceases_from、generation_draws_in_from（P57），局部条件写在规律之内：平衡与耗散只在所用的一步、一段或某步以后各步上，在所用的家族上；Flow.Balances.standing_given、Balances.rise_replenishes、rising_needs_replenishment、standing_needs_replenishment、rising_ceases_on、standing_ceases_on、rising_draws_in、Web.Embodied.given_of_arises、Embodied.replenishes、generation_needs_replenishment、Embodied.arising_lowers_on、generation_ceases_on是它们的推论；生成在多大程度上必须读作体现（Ren）；有理数量的版本；体现的生成与“更多”在耗散之下的关系；实际生命中体现与耗散的经验对应。",
+    "en": "The exact restatement for every world is this record's Flow.BalancesOn.standing_given, BalancesOn.rise_replenishes, rising_needs_replenishment_from, standing_needs_replenishment_from, rising_ceases_from, standing_ceases_from, rising_draws_in_from, Web.Embodied.given_of_arises_at, Embodied.replenishes_at, generation_needs_replenishment_from, Embodied.arising_lowers_at, generation_ceases_from, generation_draws_in_from (P57), the local condition inside the law: balance and dissipation only at the step, the stretch or the steps from some step on that are used, on the family used; Flow.Balances.standing_given, Balances.rise_replenishes, rising_needs_replenishment, standing_needs_replenishment, rising_ceases_on, standing_ceases_on, rising_draws_in, Web.Embodied.given_of_arises, Embodied.replenishes, generation_needs_replenishment, Embodied.arising_lowers_on, generation_ceases_on are their corollaries; how far generation must be read as embodied (Ren); a version with rational amounts; the relation of embodied generation to “more” under dissipation; the empirical correspondence of embodiment and dissipation in actual lives."
   },
   "history": [
     {
@@ -735,6 +755,10 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：新增对每个世界的局部规律 Flow.BalancesOn.standing_given、BalancesOn.rise_replenishes、rising_needs_replenishment_from、standing_needs_replenishment_from、rising_ceases_from、standing_ceases_from、rising_draws_in_from、Web.Embodied.given_of_arises_at、Embodied.replenishes_at、generation_needs_replenishment_from、Embodied.arising_lowers_at、generation_ceases_from、generation_draws_in_from（零前提计划 §1.3 B 组），局部条件写在规律之内；Flow.Balances.standing_given、Balances.rise_replenishes、rising_needs_replenishment、standing_needs_replenishment、rising_ceases_on、standing_ceases_on、rising_draws_in、Web.Embodied.given_of_arises、Embodied.replenishes、generation_needs_replenishment、Embodied.arising_lowers_on、generation_ceases_on在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §74。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: local laws for every world added, Flow.BalancesOn.standing_given, BalancesOn.rise_replenishes, rising_needs_replenishment_from, standing_needs_replenishment_from, rising_ceases_from, standing_ceases_from, rising_draws_in_from, Web.Embodied.given_of_arises_at, Embodied.replenishes_at, generation_needs_replenishment_from, Embodied.arising_lowers_at, generation_ceases_from, generation_draws_in_from (group B of the zero-premise plan, section 1.3), the local condition inside the law; Flow.Balances.standing_given, Balances.rise_replenishes, rising_needs_replenishment, standing_needs_replenishment, rising_ceases_on, standing_ceases_on, rising_draws_in, Web.Embodied.given_of_arises, Embodied.replenishes, generation_needs_replenishment, Embodied.arising_lowers_on, generation_ceases_on re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 74 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

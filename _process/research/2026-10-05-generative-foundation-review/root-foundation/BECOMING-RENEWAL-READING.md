@@ -4950,6 +4950,160 @@ Integration: 计划 P55；把 P49 失控读法所依的两点陈述为定理：�
 - 按 Ren 的“no extra review needed”，不作独立审查。
 
 
+## 74. 静止、开放与补给的规律，条件在规律之内（P57）
+
+2026-10-11。按 Ren 的转向（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）与“一起先完成一个统一的理论”的指示（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md)），把零前提计划 §1.3 的 B 组（静止与开放）中 §66 没有覆盖的规律对每个世界重述：证明用到的平衡、耗散与下降写在规律之内，只在用到它的一步、一段或某步以后各步，只在用到它的家族上。不推出任何前提；原定理名称与陈述不变，在原处改为推论重证。本节由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领；接口的两处安排由整合者决定（10-11）。
+
+```text
+Result(s): 修订 no-finite-part-bears-taking、rising-and-falling-in-one-exchange、generation-is-replenishment、
+           unceasing-generation-needs-renewal、more-needs-renewers、continuing-self-fed-from-beyond、
+           own-count-misses-joint-excess、continued-change-needs-openness（局部规律加入证明引用；下一步以确切重述开头）；
+           引用迁移的记录：laws-of-one-step 及列出迁移引理的其他记录
+Delta: 迁移（名称、陈述、证明不变）：Flow.BalancesOn、Balances.on、balances_iff_on、BalancesOn.over、
+       BalancesOn.rise_given、fall_taken、rises_iff_gives、lt_iff_pos 自 Locality 移入 Flow；
+       BalancesOn.runs_down、taking_lowers、fall_lowers、rise_lowers、comes_from_standing、DissipatesOn.still_untaken
+       移入 Dissipation；came_between 移入 Population。
+       新的局部规律：
+       Flow：accumulates_on、uptake_needs_replenishment_from、replenishment_recurs_from、renewing_recurs_from、
+       BalancesOn.standing_given、BalancesOn.rise_replenishes、rising_needs_replenishment_from、
+       standing_needs_replenishment_from、replenished_over_on、renewers_over_on、More.replenishment_unbounded_from、
+       More.renewers_unbounded_from；
+       Dissipation：takers_within_on、taking_ceases_from、taking_ceases_within、dissipatesOn_of_inward_at、
+       taking_draws_in_from、rising_ceases_from、standing_ceases_from、rising_draws_in_from、BalancesOn.falls_cover、
+       BalancesOn.falls_of_taking、depletes_at、BalancesOn.rise_with_fall、BalancesOn.rise_exchange；
+       Population：Flow.takers_le_covering、More.grows_covering、More.unceasing_covering；
+       Roles：Web.Embodied.given_of_arises_at、replenishes_at、arising_lowers_at、arising_with_fall_at、
+       generation_needs_replenishment_from、generation_ceases_from、generation_draws_in_from；
+       Continuation：Flow.fed_from_beyond_from、rising_fed_from_beyond_from、joint_keeps_at；
+       Openness：Flow.stills_from、exchanges_finitely_from、World.arising_stops_from。
+       推论改证（名称与陈述不变）：上列各局部规律所对应的原定理，以及 Flow.Balances.runs_down、Balances.rise_given、
+       Balances.fall_taken、rise_lowers_on（经迁移的引理）
+Supplied premises / correspondence: 无；不改任何定义；迁移是把共享的引理放到需要它的最低模块，不是重新奠基，也不是新概念
+Evidence: 合并检查器回执 20261011T122250.993495Z（2402 项定理、3568 项声明审计，全部源声明公理报告为空；核心闭包 46 个模块，包 44 个），
+          外围回执 20261011T143738.711009Z；先在暂存树中（main 加 P50）从前导编译，自 Becoming.Flow 以下各模块无错误、无警告，
+          改动模块逐条公理报告为空
+Boundary: 闭合的选择形式（Dissipative.opens、More.opens、opens_of_arising、finite_ceases、rising_opens 等）仍以闭合给出
+          耗散；它们的局部内容是相应的 _from 规律；尚无独立审查
+Integration: 记录；零前提计划 §1.3 B 组；Locality 模块说明（哪些规律住在更低的模块）；工作板
+```
+
+**接口：共享引理放到需要它的最低模块。** 一步的平衡（`Flow.BalancesOn`）原在 `Becoming.Locality`，而 `Becoming.Flow` 与 `Becoming.Dissipation` 在它之下，所以那里的规律不能用它，§66 只得在 Locality 重证 `BalancesOn.runs_down` 等，与 Dissipation 的全局形式重复。按整合者的决定，平衡在一步及一个条件上的引理（`BalancesOn`、`Balances.on`、`balances_iff_on`、`BalancesOn.over`、`rise_given`、`fall_taken`、`rises_iff_gives`、`lt_iff_pos`）移入 Flow；家族在平衡与耗散下降低的引理（`runs_down`、`taking_lowers`、`fall_lowers`、`rise_lowers`、`comes_from_standing`、`still_untaken`）移入 Dissipation；`came_between` 移入 Population。名称、陈述与证明都不变，Locality 的规律照旧使用这些名称；Flow 与 Dissipation 的全局形式（`Balances.runs_down`、`rise_given`、`fall_taken`、`rise_lowers_on`）改为它们的推论，重复的证明消去。这是迁移，不是重新奠基，也不是新概念；Locality 的模块说明写明哪些规律住在更低的模块。
+
+**有限的部分承担不了取用。** 一段之内每步平衡与耗散，取用者的数目不多于段首的存量（`takers_within_on`）；从某步起平衡与耗散，取用不复现（`taking_ceases_from`）；只要包含它的家族从某步起平衡与耗散（`taking_ceases_within`）。闭合只经它给出的耗散进入：`Dissipative.opens` 是推论。某步上闭合的家族都被耗散时，被围住而无外来者的家族被耗散（`dissipatesOn_of_inward_at`）；从某步起如此，取用的复现就向外汲取（`taking_draws_in_from`）。
+
+**一次交换中的升与降。** 一步上家族平衡与耗散，下降至少与上升一样多，每个取用者再多一（`BalancesOn.falls_cover`）；有取用就有成员下降（`BalancesOn.falls_of_taking`、`depletes_at`）；一个成员上升就有另一个下降（`BalancesOn.rise_with_fall`）；给予与取用者只在该步活跃时，读于形成（`BalancesOn.rise_exchange`）。
+
+**生成即补给。** 平衡在一步、一个条件上时，开始立着的条件至少被给予它新的立着（`BalancesOn.standing_given`），上升补给家族（`BalancesOn.rise_replenishes`）；从某步起平衡时，上升或开始立着的复现需要补给在那以后发生（`rising_needs_replenishment_from`、`standing_needs_replenishment_from`）；从某步起平衡与耗散时，上升与开始立着不复现（`rising_ceases_from`、`standing_ceases_from`），被围住时向外汲取（`rising_draws_in_from`）。读于体现的生起：`Web.Embodied.given_of_arises_at`、`replenishes_at`、`arising_lowers_at`、`arising_with_fall_at`、`generation_needs_replenishment_from`、`generation_ceases_from`、`generation_draws_in_from`。
+
+**不止的生成需要更新。** 从某步起平衡时，取用的复现需要补给在那以后（`uptake_needs_replenishment_from`）；于是取用着生起的形成的复现需要补给与更新者（`replenishment_recurs_from`、`renewing_recurs_from`）。
+
+**更多需要更新者。** 一段之内每步平衡，存量的平衡在这一段上成立（`accumulates_on`）；于是在段内，补给与更新者至少与取用者成比例（`replenished_over_on`、`renewers_over_on`）；从某步起平衡，更多不止需要无界的补给与更新者（`More.replenishment_unbounded_from`、`More.renewers_unbounded_from`）。更多导致生成不止，不需要普查：只要在任意晚的步上有覆盖活跃者的列表，从某步起参与者各列一次、取用者活跃，较晚的取用者中就有一个不在较早的覆盖列表上，它在其间开始活跃（`More.unceasing_covering`，经 `takers_le_covering`、`More.grows_covering`；条件与 §66 规律 2 的覆盖列表相同）。
+
+**持续的家族由外部供给；联合不超出时水平不降。** 从某步起家族平衡、被围住、每步闭合的家族被耗散，持续取用或上升的家族不能从某步起无外来供给（`fed_from_beyond_from`、`rising_fed_from_beyond_from`）。一步上该条件平衡，联合取用不超出所给时水平不降（`joint_keeps_at`）。
+
+**静止，不加前提。** 所立者有普查时，从某步起每步不被否定所立者下降，水平就不再在任意晚的步改变（`Flow.stills_from`）；闭合下降时交换也一样（`exchanges_finitely_from`）；生起者体现时，生起不复现（`World.arising_stops_from`）。这些是 §66 `change_recurs_iff` 与 `exchange_recurs_iff` 的直接推论，对流不加前提；`Flow.stills`、`exchanges_finitely` 与 `World.arising_stops` 是它们在前提给出下降时的情形。
+
+**表示的承诺（Ren 的第 4 项）。** 可判定：`More.unceasing_covering` 判定活跃（与原定理相同），其余不判定世界的谓词；整单位：耗散的 sign 项（选项 A）照旧；时间：离散的步；有限：只用所用家族与所用各步的有限列表；`More.unceasing_covering` 把普查换成任意晚的步上的覆盖列表。
+
+**作者反审。**
+
+*反驳 1：迁移是否改动了已落地的成果？* 名称、陈述、证明不变；只是声明所在的模块不同。§66 与 P50 的规律引用同样的名称，照旧成立；记录的引用随之改指。迁移消去了 §66 的重复证明，所以是向统一走，不是另起。
+
+*反驳 2：“从某步起”是不是只是把全局前提限制到尾段？* 是局部化，而且条件比限制更弱：耗散只在所用的家族上，平衡只在所用的家族上；闭合不在条件中，只经它给出的耗散进入；`More.unceasing_covering` 不要普查。复现形式的条件本来就只在尾段上起作用，把它写成“从某步起”就是它的确切位置。
+
+*反驳 3：每条都是“Y 当且仅当 Z”吗？* 不是。确切的当且仅当在 §66（`change_recurs_iff` 等）；本节的静止规律是它们的直接推论，其余是蕴含或界：反方向一般不成立（例如补给的复现不需要取用的复现）。存量在一段上的确切形式是 `accumulates_on` 的恒等式。
+
+*反驳 4：`dissipatesOn_of_inward_at` 的条件“该步上闭合的家族都被耗散”是不是全局耗散换了个名字？* 它只关于那一步，是耗散在那一步的局部形式；被围住而无外来者的家族的耗散由它给出。是否能只要求包围该家族的那一个封闭家族被耗散，需要从存在量词中取出它，这里没有做。
+
+*反驳 5：选择形式为何保留闭合？* `Dissipative.opens`、`rising_opens` 等陈述的是闭合与持续取用不相容；它们的局部内容是相应的 `_from` 规律（平衡与耗散从某步起），闭合只是给出耗散的方式。
+
+*反驳 6：这是否推出了前提？* 没有。规律对每个世界成立；前提在每一步成立时局部条件处处成立，原定理因此是推论。
+
+**边界。** 离散步；整单位（选项 A）；`dissipatesOn_of_inward_at` 要求该步上闭合的家族都被耗散；名称（`_on`、`_from`、`_at` 后缀，`takers_le_covering`、`depletes_at`）是 AI 所选，可由整合者或 Ren 改；尚无独立审查。
+
+## 75. 整体的规律，条件在规律之内（P60）
+
+2026-10-11。按 Ren 的转向（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）、“一起先完成一个统一的理论”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md)）与“先把所有零公理的部分封闭起来”的指示，把零前提计划 §1.3 的 D 组（整体、前提图与逻辑）对每个世界重述。不推出任何前提；原定理名称与陈述不变，在原处改为推论重证。由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领。
+
+```text
+Result(s): 修订 space-and-its-parts、coming-and-ceasing-keep-pace、map-of-premises、no-finite-part-bears-taking、
+           identity-across-steps（局部规律加入证明引用；下一步以确切重述开头）
+Delta: Change：Web.unceasing_iff_covering；Space：World.arising_iff_ceasing_covering、World.rests_covering；
+       Premises：World.acting_across_on、World.keep_lists；Dissipation：Flow.DissipatesOn.gives_less_closed；
+       Identity：Flow.More.unceasing_reidentified_covering。
+       推论改证（名称与陈述不变）：Web.unceasing_iff、World.arising_iff_ceasing、World.rests、World.acting_across
+       （经它 acting_of_enclosed、Finite.acting）、World.Finite.counted、Flow.Dissipative.gives_less、
+       Flow.More.unceasing_reidentified
+Supplied premises / correspondence: 无；不改任何定义
+Evidence: 合并检查器回执 20261011T122250.993495Z（2402 项定理、3568 项声明审计，全部源声明公理报告为空；核心闭包 46 个模块，包 44 个），
+          外围回执 20261011T143738.711009Z；先在暂存树中（main 加 P50 与 B 组）从前导编译，自 Becoming.Change 以下各模块无错误、无警告，
+          改动模块逐条公理报告为空
+Boundary: 有限世界的定律仍要判定活跃（World.law_iff_em 证明不能从此陈述中去掉）；World.lpo_of_finite_ends、
+          Listed.lpo_of_few 是已证明的边界，不改；尚无独立审查
+Integration: 记录；零前提计划 §1.3 D 组；工作板
+```
+
+**有限世界的定律不要有限世界。** 判定活跃时，只要一个列表从某步起覆盖活跃者，生起的复现恰当不再活跃的复现（`Web.unceasing_iff_covering`，读于世界：`World.arising_iff_ceasing_covering`）。世界在列表之外可以有无穷多关系项，某步以前也不作要求。`Web.unceasing_iff` 与 `World.arising_iff_ceasing` 是全体在一个列表上的情形。
+
+**静止不要闭合。** 判定活跃、生起者体现时，只要从某步起活跃者都在一个家族里，并且这个家族在那些步上平衡与耗散，生起与不再活跃都不复现（`World.rests_covering`）。不要世界有限，不要闭合，不要其他家族或其他步上的前提，也不要家族无重复。`World.rests` 是全体为一个列表、前提处处成立的情形：那个列表在每一步闭合，所以被耗散。
+
+**只有活跃者给予，在一步上。** 跨过一步，若某个家族闭合且被耗散，取用者在那一步活跃，则给予者在那一步活跃：给予需要从该家族取用（`World.acting_across_on`，经 `Flow.DissipatesOn.gives_less_closed`）。只用那一步与那一个家族。`World.acting_across`、`acting_of_enclosed` 与 `Finite.acting` 是推论。
+
+**列出只用一步。** 判定活跃时，一个无重复、覆盖某步活跃者的列表，保留其中活跃者，就恰好列出那一步的活跃者（`World.keep_lists`）。`World.Finite.counted` 是它在每一步的情形。
+
+**更多导致生成不止，在每个重新识别下，不要普查。** 只要任意晚的步上有覆盖活跃者的列表，从某步起参与者各列一次、取用者活跃，更多不止就使生成在每个重新识别下不止（`Flow.More.unceasing_reidentified_covering`，经 B 组的 `More.unceasing_covering`）。
+
+**表示的承诺（Ren 的第 4 项）。** 可判定：有限世界的定律与静止要判定活跃，与原定理相同；`World.law_iff_em` 证明它不能从这一陈述中去掉，这是 b(2) 的已证边界，留待 Ren。整单位、时间、有限：同 B 组；有限只以一个覆盖列表出现。
+
+**作者反审。**
+
+*反驳 1：“一个列表从某步起覆盖活跃者”是否只是有限世界换了个说法？* 不是。有限世界要求所有关系项在一个列表上；这里只要求从某步起活跃的关系项在一个列表上，其余关系项可以无穷多，某步以前的活跃也不受限。
+
+*反驳 2：静止为何不要闭合？* 闭合在原证明中只用来给出那个家族上的耗散。直接要求家族上的平衡与耗散，闭合就不需要。
+
+*反驳 3：`acting_across_on` 与 `acting_across` 的条件差在哪里？* 原定理要求处处取用者活跃、处处耗散；局部规律只要该步上取用者活跃、一个闭合家族在该步被耗散。
+
+*反驳 4：判定活跃能否去掉？* 不能，对这一陈述已证（`World.law_iff_em`）；这是表示的承诺，不是此处的遗漏。
+
+*反驳 5：这是否推出了前提？* 没有。规律对每个世界成立；前提处处成立时局部条件成立，原定理因此是推论。
+
+**边界。** 离散步；判定活跃；已证的边界（`law_iff_em`、`lpo_of_finite_ends`、`Listed.lpo_of_few`）不变；名称（`_covering`、`_on`、`keep_lists`、`gives_less_closed`）是 AI 所选；尚无独立审查。
+
+## 76. 延续之下的普查定律，只用一个覆盖列表（P61）
+
+2026-10-11。§71 留下的开放点（[工作板](../../../BECOMING-WORKBOARD.md)，整合者 10-11 提出）：延续之下的复现定律能否像 §66 的规律 2 一样，只用任意晚的步上的覆盖列表，而不是从某步起的列出？本节回答生起一侧：能，而且只用一个覆盖列表，不用普查，不用判定。由“0 axiom completeness”会话起草并验证。
+
+```text
+Result(s): 修订 census-balance-under-continuation（新增规律加入证明引用；下一步写明已回答与仍开放的部分）
+Delta: Identity：Web.Lineage、Lineage.unique、Lineage.through、Lineage.ends、Lineage.back、
+       ceasingFrom_found、not_not_arisingFrom_covered、arisingFrom_not_stopping_covered；
+       迁移（陈述与证明不变）：not_not_all 自 Locality 移入 Population
+Supplied premises / correspondence: 无；不改任何定义；原定理不变；not_not_all 移到需要它的最低模块，不是新概念
+Evidence: 合并检查器回执 20261011T122250.993495Z（2402 项定理、3568 项声明审计，全部源声明公理报告为空），外围回执 20261011T143738.711009Z；
+          先在暂存树中（main 加 P50、P57、P60）从前导编译，Identity 及其下游无错误、无警告，Identity 605 个常量公理报告为空
+Boundary: 结论是“不被否定”与“不会停止”，不是确切的存在形式（那需要在步后列出活跃者以便搜索）；反方向未做；尚无独立审查
+Integration: 记录 census-balance-under-continuation；工作板
+```
+
+**谱系。** 从第 M 步的 g 出发，经 k 步延续（每步在两端活跃的形成之间）到达的形成，是 g 的谱系在第 M + k 步的成员（`Web.Lineage`）。自 M 起不分裂时，谱系在每一步至多到达一个形成（`Lineage.unique`）；到达较晚一步的谱系，在较早一步被延续了（`Lineage.through`）；所以谱系在某步到达的形成在那里于延续之下不再存在时，谱系此后到达不了任何形成（`Lineage.ends`）。
+
+**定律。** 一个列表覆盖第 M 步的活跃者，自 M 起不分裂，不再存在于延续之下复现，则自 M 起有形成在延续之下生起，这一点不被否定（`Web.not_not_arisingFrom_covered`）。证明：设自 M 起没有生起；则此后每个活跃的形成都不被否定地在某个列表成员的谱系上（`Lineage.back`）；每次不再存在结束一个谱系，每个谱系至多结束一次；而复现给出比列表更多的、在不同步上的不再存在（`ceasingFrom_found`），鸽巢使它们落在同一谱系上，矛盾。有限个“不被否定”合为一个（`not_not_all`，规律 2 的同一引理；Identity 在 Locality 之下看不到它，所以它从 `Becoming.Locality` 移入 `Becoming.Population`，名称、陈述与证明不变）。有任意晚的覆盖列表、自某步起不分裂时，生起不会自某步起停止（`Web.arisingFrom_not_stopping_covered`）。这是规律 2 的 `Covers.not_not_coming_from` 在延续之下的读法：不用普查，不用判定。
+
+**作者反审。**
+
+*反驳 1：这比 §71 的 `arisingFrom_of_ceasingFrom_from` 强还是弱？* 条件弱（一个覆盖列表对从某步起的列出；不要判定），结论也弱（“不被否定”对存在）。两者都保留：确切的存在形式需要在每步后列出活跃者才能搜索生起者。
+
+*反驳 2：反方向呢？* 生起复现需要不再存在复现，原定理要不合并与有界；只用覆盖列表的形式这里没有做。
+
+*反驳 3：这是否推出了前提？* 没有。规律对每个世界成立。
+
+**边界。** 离散步；“不被否定”的结论；反方向开放；名称（`Lineage`、`not_not_arisingFrom_covered`）是 AI 所选；尚无独立审查。
+
+**P57、P60、P61 规律中的判定改为局部（供 P58）。** 按 Ren“decidability is too dualist”与“please”（在这些规律中判定改为局部；其余计数的陈述仍以判定为表示的承诺，由 P58 清点），“0 axiom completeness”会话把 P57、P60、P61 的规律重述：先给无判定的形式，判定的形式只在证明查看的步上判定。
+- 更多导致生成不止：无判定的形式是生起不会自某步起停止（`Flow.More.arising_never_stops_covering`）：自 N 起没有生起时，此后活跃的形成不被否定地在某个覆盖步 M 已活跃、故不被否定地在其列表上，而较晚一步的取用者多于该列表。存在形式 `Flow.More.unceasing_covering` 只在某步 S 以后判定活跃（`decided : ∀ s f, S ≤ s → Decidable (W.active s f)`），经只在 S 以后判定的 `came_between_from`；`came_between` 是它的推论。重新识别下同样（`Flow.More.arising_never_stops_reidentified_covering`、`unceasing_reidentified_covering`）。
+- `World.keep_lists` 只在它列出的一步判定活跃。
+- P61 本来不用判定。用计数陈述的普查规律（`Listed.keeps_at` 等、`Web.Census.balanceFrom_at`）与家族层面的 `coming_recurs_iff`（`Web.unceasing_iff_covering`、`World.arising_iff_ceasing_covering`、`World.rests_covering` 的不再活跃一半经它）留给 P58 的关系形式。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -5543,4 +5697,86 @@ On the AI's readings, pending Ren: an experiment is varying one's own act where 
 
 On the AI's readings, pending Ren: a runaway is a loop whose own registration, before the break, is that of a world with as much more stock as one likes, so no policy through it can use what it does not register; avoiding a runaway without forgoing what is there needs measurement, a model (理, answerable to registration) or another formation's registration, and knowing what one's own act does needs a return and a model of what is irrelevant (P53). This reads Ren's words of 4 October that reason must regulate the heart so that its positive feedback loop does not run out of control. Record added: runaway-distance-unregistered. Receipt 20261011T101806.880391Z (Runaway 13); periphery receipt 20261011T105433.502229Z. No independent review, at Ren's word; the author's counterreview is in section 73.
 
-The package now has 2344 theorems and 3509 declaration audits, over a core closure of 46 modules and a package of 44, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71, 72 and 73 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T105433.502229Z).
+**The laws of rest, openness and replenishment, with their condition inside them (P57).** This follows Ren's redirect of 11 October and the instruction to finish one unified theory together. It restates for every world the laws of group B of the zero-premise plan (§1.3: rest and openness) that section 66 did not cover. The balance, dissipation and running down a proof uses are stated inside the law, only at the step, the stretch or the steps from some step on that are used, and only on the family used. No premise is derived. The originals keep their names and statements and are re-proved in place as corollaries. The session "0 axiom completeness" drafted and verified it through the work board; the integrator decided both interface arrangements (10-11).
+- **Interface: a shared lemma lives in the lowest module that needs it.** Balance at a step was in `Becoming.Locality`, above `Becoming.Flow` and `Becoming.Dissipation`, so their laws could not use it, and section 66 had to re-prove `BalancesOn.runs_down` alongside Dissipation's global form. Each lemma below moves, with name, statement and proof unchanged. Locality's laws use the same names, and Locality's module header now says which of them live lower. The global forms in Flow and Dissipation (`Balances.runs_down`, `rise_given`, `fall_taken`, `rise_lowers_on`) become their corollaries, removing the duplicate proofs. This is a relocation, neither a re-founding nor a new notion.
+  - Into `Becoming.Flow`: balance at a step and the laws of one condition across one step (`BalancesOn`, `Balances.on`, `balances_iff_on`, `BalancesOn.over`, `rise_given`, `fall_taken`, `rises_iff_gives`, `lt_iff_pos`).
+  - Into `Becoming.Dissipation`: the lowering of a family balanced and dissipated on (`runs_down`, `taking_lowers`, `fall_lowers`, `rise_lowers`, `comes_from_standing`, `still_untaken`).
+  - Into `Becoming.Population`: `came_between`.
+- **No finite part bears taking.** Balanced and dissipated on across a stretch, the takers number at most the stock at its start (`takers_within_on`). From some step on, taking does not recur (`taking_ceases_from`, and for a containing family `taking_ceases_within`). Closure enters only through the dissipation it gives, so `Dissipative.opens` is a corollary. Inflow is `dissipatesOn_of_inward_at` and `taking_draws_in_from`.
+- **Rising and falling in one exchange, at the step:** `BalancesOn.falls_cover`, `falls_of_taking`, `depletes_at`, `rise_with_fall`, and `rise_exchange` with the activity of givers and takers at that step only.
+- **Generation is replenishment:**
+  - with balance at one condition across one step: `BalancesOn.standing_given`, `rise_replenishes`;
+  - from some step on: `rising_needs_replenishment_from`, `standing_needs_replenishment_from`, `rising_ceases_from`, `standing_ceases_from`, `rising_draws_in_from`;
+  - read of embodied arising: `Web.Embodied.given_of_arises_at`, `replenishes_at`, `arising_lowers_at`, `arising_with_fall_at`, `generation_needs_replenishment_from`, `generation_ceases_from`, `generation_draws_in_from`.
+- **Unceasing generation needs renewal, from some step on:** `uptake_needs_replenishment_from`, `replenishment_recurs_from`, `renewing_recurs_from`.
+- **More needs renewers.**
+  - The stock balances over a stretch balanced on (`accumulates_on`). On that stretch, replenishment and renewers keep pace with the takers (`replenished_over_on`, `renewers_over_on`), and from some step on they are unbounded (`More.replenishment_unbounded_from`, `More.renewers_unbounded_from`).
+  - More without end makes generation unceasing with no census (`More.unceasing_covering`, through `takers_le_covering` and `More.grows_covering`). It needs only lists covering the active formations at arbitrarily late steps, the condition of law 2. A late taker lies beyond an earlier covering list, so it came to be active between.
+- **The continuing family is fed from beyond:** `fed_from_beyond_from`, `rising_fed_from_beyond_from`. Joint taking within what is given keeps the level, with balance at the one step: `joint_keeps_at`.
+- **Rest, with no premise.**
+  - Under a census of what stands, where from some step on it is not refuted that what stands runs down, standing stops changing (`Flow.stills_from`), the exchange stops (`exchanges_finitely_from`, running down closed), and embodied arising stops (`World.arising_stops_from`).
+  - These are direct corollaries of section 66's `change_recurs_iff` and `exchange_recurs_iff`. `Flow.stills`, `exchanges_finitely` and `World.arising_stops` are the case where the premises supply the running down.
+- **Commitments.**
+  - Decidability: only `More.unceasing_covering` decides activity, as its original did.
+  - Whole units: dissipation's sign term (option A) is unchanged.
+  - Time: discrete steps.
+  - Finiteness: only the lists of the families and steps used. `More.unceasing_covering` trades the census for covering lists.
+- **Counterreview.**
+  - The relocation changes no name, statement or proof, and removes duplicates.
+  - "From some step on" is localization, with weaker conditions than restricting the premises: dissipation and balance only on the family used, closure only through the dissipation it gives, and no census for `More.unceasing_covering`.
+  - The exact iffs are section 66's. The rest laws here are its direct corollaries; the others are implications or bounds whose converses fail in general. The stretch identity is `accumulates_on`.
+  - `dissipatesOn_of_inward_at` still asks every family closed across that one step to be dissipated on. Narrowing it to the one enclosing family is not done here.
+  - The selection forms keep closure, and their local content is the matching `_from` law.
+
+Revised records:
+- no-finite-part-bears-taking;
+- rising-and-falling-in-one-exchange;
+- generation-is-replenishment;
+- unceasing-generation-needs-renewal;
+- more-needs-renewers;
+- continuing-self-fed-from-beyond;
+- own-count-misses-joint-excess;
+- continued-change-needs-openness.
+
+The relocated names' references follow the move in every record listing them. Receipt 20261011T122250.993495Z. Not yet independently reviewed; the author's counterreview is in section 74.
+
+**The laws of the whole, with their condition inside them (P60).** This follows Ren's redirect of 11 October, the instruction to finish one unified theory together, and the instruction to enclose all the no-axiom work first. It restates group D of the zero-premise plan (§1.3: the whole, the map of premises, and logic) for every world. No premise is derived. The originals keep their names and statements and are re-proved in place as corollaries. The session "0 axiom completeness" drafted and verified it through the work board.
+- **The finite-world law needs no finite world.** With activity decided, where one list covers the active relata from some step on, arising recurs exactly when ceasing does (`Web.unceasing_iff_covering`; read of worlds, `World.arising_iff_ceasing_covering`). Infinitely many relata may lie beyond the list, and nothing is asked before that step. `Web.unceasing_iff` and `World.arising_iff_ceasing` are the case of everything on one list.
+- **Rest needs no closure.** With activity decided and whatever arises embodied, take a world whose active relata from some step on lie in one family that is balanced and dissipated on at those steps. Then neither arising nor ceasing recurs (`World.rests_covering`). This needs no finiteness of the world, no closure, no premise on other families or steps, and no distinctness. `World.rests` is the case of a finite world under the premises.
+- **Only the active give, at one step.** Across a step at which some family is closed and dissipated on, and the takers there are active, the givers are active (`World.acting_across_on`, through `Flow.DissipatesOn.gives_less_closed`). `World.acting_across`, `acting_of_enclosed` and `Finite.acting` are its corollaries.
+- **Listing uses one step.** With activity decided, keeping the active members of a list without repetition that covers the active relata at a step lists them there exactly (`World.keep_lists`). `World.Finite.counted` is its case at every step.
+- **More makes generation unceasing under every re-identification, with no census** (`Flow.More.unceasing_reidentified_covering`, through group B's `More.unceasing_covering`).
+- **Commitments.** The finite-world law and rest decide activity, as the originals did. `World.law_iff_em` proves the decision cannot be dropped from this statement; this is b(2)'s proved boundary, left to Ren. Finiteness appears only as one covering list.
+- **Counterreview.**
+  - A list covering the active relata from some step on is not finiteness renamed: other relata may be infinitely many.
+  - Closure was used only to give dissipation on the family, so asking for that dissipation directly drops closure.
+  - The decision cannot be dropped (`law_iff_em`).
+
+Revised records:
+- space-and-its-parts;
+- coming-and-ceasing-keep-pace;
+- map-of-premises;
+- no-finite-part-bears-taking;
+- identity-across-steps.
+
+Receipt 20261011T122250.993495Z. Not yet independently reviewed; the author's counterreview is in section 75.
+
+**The census law under a continuation, from one covering list (P61).** This answers the open point left by section 71: can the recurrence laws under a continuation use, as law 2 of section 66 does, covering lists at arbitrarily late steps instead of a listing from some step on? For arising, yes, and with one covering list, no census and no decision.
+- **Lineages.** The lineage of `g` from step `M` reaches `h` at step `M + k` by `k` steps of continuation between formations active at each step's two ends (`Web.Lineage`). With no splits from `M` on:
+  - a lineage reaches at most one formation per step (`Lineage.unique`);
+  - a lineage reaching a later step was continued at each earlier one (`Lineage.through`);
+  - so a lineage whose formation ceases at a step reaches nothing later (`Lineage.ends`).
+- **The law.** Suppose a list covers what is active at `M`, nothing splits from `M` on, and ceasing under the continuation recurs. Then it is not refuted that something arises from `M` on (`Web.not_not_arisingFrom_covered`). With nothing arising, every later active formation lies, not refuted, on the lineage of a listed one (`Lineage.back`). Each ceasing ends one lineage, and each lineage ends at most once. The recurrence gives more ceasings at distinct steps than the list has members (`ceasingFrom_found`), so the pigeonhole gives a contradiction. The finitely many not-refuted facts are combined by `not_not_all`, law 2's own lemma. Identity sits below Locality and could not see it, so it moves from `Becoming.Locality` into `Becoming.Population`, with name, statement and proof unchanged.
+- **Corollary.** With covering lists at arbitrarily late steps, arising does not stop (`Web.arisingFrom_not_stopping_covered`). This is the continuation reading of law 2's `Covers.not_not_coming_from`.
+- **Counterreview.**
+  - Compared with `arisingFrom_of_ceasingFrom_from`, the condition is weaker and the conclusion is too (not refuted, rather than an existential). Both stand.
+  - The converse, from covering lists with a bound, is not done.
+
+Revised record: census-balance-under-continuation. Receipt 20261011T122250.993495Z. Not yet independently reviewed; the author's counterreview is in section 76.
+
+**Decidedness made local in the laws of P57, P60 and P61 (for P58).** Following Ren's "decidability is too dualist" and "please" (decidability made local in these laws; the other statements that count still take decidedness as a commitment of the representation, inventoried by P58), the session "0 axiom completeness" restated the laws of P57, P60 and P61. A decision-free form comes first, and the decided form decides only at the steps its proof consults.
+- **More makes generation unceasing.** The decision-free form says arising does not stop from any step on (`Flow.More.arising_never_stops_covering`). The existential form `Flow.More.unceasing_covering` decides activity only from some step `S` on (`decided : ∀ s f, S ≤ s → Decidable (W.active s f)`), through `came_between_from`; `came_between` is its corollary. The same holds under re-identification (`Flow.More.arising_never_stops_reidentified_covering`, `unceasing_reidentified_covering`).
+- **Listing.** `World.keep_lists` decides activity only at its one step.
+- **Left to P58.** P61 decides nothing. The census laws whose statements count, and the family-level `coming_recurs_iff` (which `Web.unceasing_iff_covering`, `World.arising_iff_ceasing_covering` and the ceasing half of `World.rests_covering` go through), are left to P58's relational form.
+
+The package now has 2402 theorems and 3568 declaration audits, over a core closure of 46 modules and a package of 44, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 76 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T143738.711009Z).

@@ -184,13 +184,36 @@ theorem ceasingRecurs_ofRoles {F C : Type} (L : Flow F C) (W : Web F C) :
 
 /-! ## Laws of the whole -/
 
+/-- In any world whose activity is decided, where one list covers the relata active at each
+step from some step on, arising recurs exactly when ceasing does. -/
+theorem arising_iff_ceasing_covering [∀ t x, Decidable (w.web.active t x)] {L : List w.Relatum}
+    {T : Nat} (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ L) :
+    w.ArisingRecurs ↔ w.CeasingRecurs :=
+  w.web.unceasing_iff_covering covers
+
 /-- In a finite world whose activity is decided, arising recurs exactly when ceasing does.
 Decidability is part of the representation: without it the law implies excluded middle
 (`law_decides`). -/
 theorem arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
     w.ArisingRecurs ↔ w.CeasingRecurs :=
   match finite with
-  | ⟨_, _, every⟩ => w.web.unceasing_iff every
+  | ⟨_, _, every⟩ => arising_iff_ceasing_covering (T := 0) fun _ _ x _ => every x
+
+/-- Rest, from a step on: in any world whose activity is decided and whatever arises is
+embodied, where from some step on the active relata lie in one family, balanced and
+dissipated on at each of those steps, neither arising nor ceasing recurs. No finiteness of
+the world, no closure and no premise on other families or steps. -/
+theorem rests_covering [∀ t x, Decidable (w.web.active t x)] {ds : List w.Relatum} {T : Nat}
+    (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds)
+    (balances : ∀ t, T ≤ t → w.flow.BalancesOn w.web ds t)
+    (dissipates : ∀ t, T ≤ t → w.flow.DissipatesOn ds t) (embodied : w.ArisingEmbodied) :
+    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+  have quiet : ¬ w.ArisingRecurs := fun arising =>
+    Web.generation_ceases_from balances dissipates fun N => match arising (N + T) with
+      | ⟨t, x, later, arises⟩ => ⟨t, x, Nat.le_trans (Nat.le_add_right N T) later,
+          covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans (Nat.le_add_left T N) later)) x arises.2,
+          embodied t x arises, arises⟩
+  ⟨quiet, fun ceasing => quiet ((arising_iff_ceasing_covering covers).mpr ceasing)⟩
 
 /-- Dissipation brings a finite world to rest: where activity is decided, the flow balances
 and dissipates and whatever arises is embodied, neither arising nor ceasing recurs. -/
@@ -198,12 +221,10 @@ theorem rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
     (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   match finite with
-  | ⟨_, distinct, every⟩ =>
-    have quiet : ¬ w.ArisingRecurs := fun arising =>
-      Web.generation_ceases balanced dissipative distinct every fun N =>
-        match arising N with
-        | ⟨t, x, later, arises⟩ => ⟨t, x, later, embodied t x arises, arises⟩
-    ⟨quiet, fun ceasing => quiet ((arising_iff_ceasing finite).mpr ceasing)⟩
+  | ⟨all, distinct, every⟩ =>
+    rests_covering (T := 0) (ds := all) (fun _ _ x _ => every x)
+      (fun t _ => Flow.Balances.on balanced all t)
+      (fun t _ => dissipative all t distinct fun _ _ c outside => absurd (every c) outside) embodied
 
 /-! ## Worlds -/
 

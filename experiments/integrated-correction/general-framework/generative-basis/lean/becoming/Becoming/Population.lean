@@ -234,6 +234,33 @@ theorem mark_one {p : Prop} [Decidable p] (holds : p) : mark p = 1 :=
 theorem mark_zero {p : Prop} [Decidable p] (fails : ¬ p) : mark p = 0 :=
   eq_zero_of_not_pos fun pos => fails (mark_pos.mp pos)
 
+/-- Doubly negated for each member of a list, doubly negated for all of them. -/
+theorem not_not_all {β : Type} {P : β → Prop} :
+    ∀ {E : List β}, (∀ b, b ∈ E → ¬ ¬ P b) → ¬ ¬ ∀ b, b ∈ E → P b
+  | [], _ => fun none => none fun _ mem => nomatch mem
+  | b :: E, each => fun none =>
+    each b (.head E) fun head =>
+      not_not_all (E := E) (fun c mem => each c (.tail b mem)) fun rest =>
+        none fun c mem => match mem_cons_cases mem with
+          | .inl same => Eq.subst (motive := P) same.symm head
+          | .inr mem => rest c mem
+
+/-- What fails at `N` and holds at a later step `T` came to be across some step between,
+where it is decided at the steps from `S` on, `S` no later than `N`: only those steps are
+consulted. -/
+theorem came_between_from {q : Nat → Prop} {S N : Nat} (decided : ∀ s, S ≤ s → Decidable (q s))
+    (from_ : S ≤ N) (fails : ¬ q N) : ∀ {T}, N ≤ T → q T → ∃ s, N ≤ s ∧ s < T ∧ ComesToBe q s
+  | _, .refl, holds => absurd holds fails
+  | m + 1, .step within, holds => match decided m (Nat.le_trans from_ within) with
+    | isTrue held => match came_between_from decided from_ fails within held with
+      | ⟨s, after, below, comes⟩ => ⟨s, after, Nat.lt_succ_of_lt below, comes⟩
+    | isFalse idle => ⟨m, within, Nat.lt_succ_self m, idle, holds⟩
+
+/-- What fails at `N` and holds at a later step `T` came to be across some step between. -/
+theorem came_between {q : Nat → Prop} [∀ t, Decidable (q t)] {N T : Nat} (le : N ≤ T)
+    (fails : ¬ q N) (holds : q T) : ∃ s, N ≤ s ∧ s < T ∧ ComesToBe q s :=
+  came_between_from (S := 0) (fun _ _ => inferInstance) (Nat.zero_le N) fails le holds
+
 /-- Of two decidable propositions, exactly one holding: their marks add to one. -/
 theorem mark_add_not {q r : Prop} [Decidable q] [Decidable r] (one : q ∨ r)
     (not_both : ¬ (q ∧ r)) : mark q + mark r = 1 :=
@@ -1224,18 +1251,105 @@ theorem Census.over_stretch {alive : Nat → List F} (census : W.Census alive) (
 
 end Web
 
+/-- At one step, the formations taking from the family number at most a list covering the
+formations active there, where each formation taking part is listed once in the flow and
+whatever takes there is active. -/
+theorem Flow.takers_le_covering {W : Web F C} {L : Flow F C} {cs : List C} {t : Nat}
+    {l : List F} (distinct : Distinct (L.present t))
+    (taking : ∀ f c, f ∈ L.present t → 0 < L.take t f c → W.active t f)
+    (covers : ∀ f, W.active t f → f ∈ l) : L.takers cs t ≤ l.length :=
+  count_le_of_sub distinct fun f mem takes => match total_pos cs takes with
+  | ⟨c, _, positive⟩ => covers f (taking f c mem positive)
+
+/-- More without end makes lists covering the active formations grow without bound, where
+from some step on such lists are given, each formation taking part is listed once in the
+flow, and whatever takes is active. Nothing is asked of the steps before. -/
+theorem Flow.More.grows_covering {W : Web F C} {L : Flow F C} {cs : List C} {S : Nat}
+    {l : Nat → List F} (covers : ∀ t, S ≤ t → ∀ f, W.active t f → f ∈ l t)
+    (distinct : ∀ t, S ≤ t → Distinct (L.present t))
+    (taking : ∀ t f c, S ≤ t → f ∈ L.present t → 0 < L.take t f c → W.active t f)
+    (more : L.More cs) : ∀ N K, ∃ t, N ≤ t ∧ K < (l t).length :=
+  fun N K => match more (K + 1) with
+  | ⟨T, many⟩ =>
+    have from_ : S ≤ N + (T + S) := Nat.le_trans (Nat.le_add_left S T) (Nat.le_add_left _ N)
+    ⟨N + (T + S), Nat.le_add_right N _, Nat.lt_of_lt_of_le
+      (many _ (Nat.le_trans (Nat.le_add_right T S) (Nat.le_add_left _ N)))
+      (takers_le_covering (distinct _ from_) (fun f c => taking _ f c from_) (covers _ from_))⟩
+
 /-- Under a census, with each formation taking part in the flow listed once and only
 active formations taking, more without end makes the active formations grow without
 bound. -/
 theorem Flow.More.grows {W : Web F C} {L : Flow F C} {cs : List C} {alive : Nat → List F}
     (census : W.Census alive) (distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W)
     (more : L.More cs) : ∀ N K, ∃ t, N ≤ t ∧ K < (alive t).length :=
-  have counted : ∀ t, L.takers cs t ≤ (alive t).length := fun t =>
-    count_le_of_sub (distinct t) fun f mem takes => match total_pos cs takes with
-    | ⟨c, _, positive⟩ => ((census t).2 f).mp (taking t f c mem positive).1
-  fun N K => match more (K + 1) with
-  | ⟨T, many⟩ => ⟨N + T, Nat.le_add_right N T,
-      Nat.lt_of_lt_of_le (many (N + T) (Nat.le_add_left T N)) (counted (N + T))⟩
+  Flow.More.grows_covering (S := 0) (fun t _ f active => ((census t).2 f).mp active)
+    (fun t _ => distinct t) (fun t f c _ mem takes => (taking t f c mem takes).1) more
+
+/-- More without end leaves no step from which nothing arises, with no census and no
+decision: where lists cover the active formations at arbitrarily late steps, and from some
+step on each formation taking part is listed once and whatever takes is active. With
+nothing arising from `N` on, every formation active later is not refuted to have been
+active at a covering step `M` from `N` on, so not refuted to lie on its list; and more takers
+than that list holds take at a later step. -/
+theorem Flow.More.arising_never_stops_covering {W : Web F C} {L : Flow F C} {cs : List C}
+    {S : Nat} (covered : ∀ N, ∃ M, ∃ l : List F, N ≤ M ∧ ∀ f, W.active M f → f ∈ l)
+    (distinct : ∀ t, S ≤ t → Distinct (L.present t))
+    (taking : ∀ t f c, S ≤ t → f ∈ L.present t → 0 < L.take t f c → W.active t f)
+    (more : L.More cs) : ¬ ∃ N, ∀ t f, N ≤ t → ¬ W.Arises t f :=
+  fun ⟨N, quiet⟩ => match covered N with
+  | ⟨M, l, later, covers⟩ =>
+    have back : ∀ k f, W.active (M + k) f → ¬¬ W.active M f := fun k => Nat.rec
+      (motive := fun k => ∀ f, W.active (M + k) f → ¬¬ W.active M f)
+      (fun _ active none => none active)
+      (fun k prior f active none =>
+        quiet (M + k) f (Nat.le_trans later (Nat.le_add_right M k))
+          ⟨fun idle => prior f idle none, active⟩) k
+    match more (l.length + 1) with
+    | ⟨T, many⟩ =>
+      have from_ : S ≤ M + (T + S) := Nat.le_trans (Nat.le_add_left S T) (Nat.le_add_left _ M)
+      not_not_all (P := fun f => 0 < total cs (L.take (M + (T + S)) f) → f ∈ l)
+        (E := L.present (M + (T + S)))
+        (fun f mem none => none fun takes => absurd (fun inside => none fun _ => inside)
+          (fun outside => match total_pos cs takes with
+            | ⟨c, _, positive⟩ => back (T + S) f (taking _ f c from_ mem positive)
+                fun active => outside (covers f active)))
+        fun all => Nat.not_succ_le_self l.length (Nat.le_trans
+          (many (M + (T + S)) (Nat.le_trans (Nat.le_add_right T S) (Nat.le_add_left _ M)))
+          (count_le_of_sub (distinct _ from_) fun f mem takes => all f mem takes))
+
+/-- More without end makes generation unceasing with no census, where activity is decided
+from some step on: where lists cover the active formations at arbitrarily late steps, and
+from that step on each formation taking part is listed once, whatever takes is active, and
+activity is decided. Some taker late enough lies beyond the covering list of an earlier
+step, so it came to be active between; only steps from `S` on are decided. -/
+theorem Flow.More.unceasing_covering {W : Web F C} {L : Flow F C} {cs : List C} {S : Nat}
+    (decided : ∀ s f, S ≤ s → Decidable (W.active s f))
+    (covered : ∀ N, ∃ M, ∃ l : List F, N ≤ M ∧ ∀ f, W.active M f → f ∈ l)
+    (distinct : ∀ t, S ≤ t → Distinct (L.present t))
+    (taking : ∀ t f c, S ≤ t → f ∈ L.present t → 0 < L.take t f c → W.active t f)
+    (more : L.More cs) : W.Unceasing :=
+  fun N => match covered (N + S) with
+  | ⟨M, l, later, covers⟩ => match more (l.length + 1) with
+    | ⟨T, many⟩ =>
+      have atM : S ≤ M := Nat.le_trans (Nat.le_add_left S N) later
+      have from_ : S ≤ M + (T + S) := Nat.le_trans (Nat.le_add_left S T) (Nat.le_add_left _ M)
+      have enough := many (M + (T + S))
+        (Nat.le_trans (Nat.le_add_right T S) (Nat.le_add_left _ M))
+      have : ∀ f, Decidable (W.active M f) := fun f => decided M f atM
+      match search (p := fun f => 0 < total cs (L.take (M + (T + S)) f) → W.active M f)
+          (L.present (M + (T + S))) with
+      | .inr all => absurd (Nat.le_trans enough (count_le_of_sub (distinct _ from_)
+          fun f mem takes => covers f (all f mem takes))) (Nat.not_succ_le_self l.length)
+      | .inl ⟨f, mem, lacks⟩ =>
+        match Nat.decLt 0 (total cs (L.take (M + (T + S)) f)) with
+        | isFalse idle => absurd (fun takes => absurd takes idle) lacks
+        | isTrue takes => match total_pos cs takes with
+          | ⟨c, _, positive⟩ =>
+            match came_between_from (q := fun s => W.active s f)
+                (fun s within => decided s f within) atM (fun active => lacks fun _ => active)
+                (Nat.le_add_right M (T + S)) (taking _ f c from_ mem positive) with
+            | ⟨s, after, _, comes⟩ =>
+              ⟨s, f, Nat.le_trans (Nat.le_trans (Nat.le_add_right N S) later) after, comes⟩
 
 /-- More without end makes generation unceasing when a census lists the active
 formations, each formation taking part in the flow is listed once, and only active
@@ -1244,7 +1358,9 @@ theorem Flow.More.unceasing {W : Web F C} [∀ t f, Decidable (W.active t f)] {L
     {cs : List C} {alive : Nat → List F} (census : W.Census alive)
     (distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W) (more : L.More cs) :
     W.Unceasing :=
-  W.unceasing_of_growth census (more.grows census distinct taking)
+  Flow.More.unceasing_covering (S := 0) (fun _ _ _ => inferInstance)
+    (fun N => ⟨N, alive N, Nat.le_refl N, fun f active => ((census N).2 f).mp active⟩)
+    (fun t _ => distinct t) (fun t f c _ mem takes => (taking t f c mem takes).1) more
 
 /-! ## Every premise together -/
 

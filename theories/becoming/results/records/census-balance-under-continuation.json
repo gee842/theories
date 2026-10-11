@@ -175,6 +175,13 @@
         "zh": "静止定理用名字规定的同一读止息；在没有分裂的延续下，止息需要生起这一半仍成立。",
         "en": "The rest theorem reads ceasing under the identity the names stipulate; under a continuation without splits the half in which ceasing needs arising still holds."
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "规律 2 的覆盖列表形式（Covers.not_not_coming_from）在延续之下的读法：Web.not_not_arisingFrom_covered。两者共用 not_not_all（为此移入 Becoming.Population），其余证明不互相引用。",
+        "en": "The continuation reading of law 2's covering-list form (Covers.not_not_coming_from): Web.not_not_arisingFrom_covered. They share not_not_all (moved into Becoming.Population for this); otherwise neither proof cites the other."
+      }
     }
   ],
   "counterexamples": [
@@ -191,14 +198,14 @@
     "en": "Stated for discrete steps and activity finite at each step; needs decided activity and continuation (hypotheses of the theorems); the continuation is given by a reading, and which one is identity is not said; the balance is a count, not a mechanism, and says not which formation arises or ceases; over a run, no split and no merge are only sufficient; formation classes, tenure and undermining under a continuation are not stated; evaluates neither arising nor ceasing; the names (CeasesFrom, NoMerge, Tandem) are the AI's wording, for Ren to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Population 的 123 项定理（含 mark_le_total、total_le_mark、le_over_stretch、ge_over_stretch、gaining_of_losing、losing_of_gaining）与 Becoming.Identity 的 103 项定理（含 Census.balanceFrom、Census.balanceFrom_eq、Census.arisingFrom_of_ceasingFrom、Census.ceasingFrom_of_arisingFrom 与 Tandem）全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。作者反审见整合文档 §43，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 123 theorems of Becoming.Population (including mark_le_total, total_le_mark, le_over_stretch, ge_over_stretch, gaining_of_losing and losing_of_gaining) and the 103 theorems of Becoming.Identity (including Census.balanceFrom, Census.balanceFrom_eq, Census.arisingFrom_of_ceasingFrom, Census.ceasingFrom_of_arisingFrom and Tandem) all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The author's counterreview is in §43 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Population 的 130 项定理（含 mark_le_total、total_le_mark、le_over_stretch、ge_over_stretch、gaining_of_losing、losing_of_gaining）与 Becoming.Identity 的 112 项定理（含 Census.balanceFrom、Census.balanceFrom_eq、Census.arisingFrom_of_ceasingFrom、Census.ceasingFrom_of_arisingFrom 与 Tandem）全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。作者反审见整合文档 §43，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 130 theorems of Becoming.Population (including mark_le_total, total_le_mark, le_over_stretch, ge_over_stretch, gaining_of_losing and losing_of_gaining) and the 112 theorems of Becoming.Identity (including Census.balanceFrom, Census.balanceFrom_eq, Census.arisingFrom_of_ceasingFrom, Census.ceasingFrom_of_arisingFrom and Tandem) all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The author's counterreview is in §43 of the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "role": "proof",
-      "sha256": "16e4457cb944d5a78b9ca25df952e29ba6bacbf3fe065ba569ff9daba0dad3e5",
+      "sha256": "21e192c62d8dc686b0179cc593b5a485e7ceedb6c50113fb1cab6a06e6166bfd",
       "declarations": [
         "Becoming.Web.Continues",
         "Becoming.Web.ArisesFrom",
@@ -228,13 +235,21 @@
         "Becoming.Web.Census.balanceFrom_at",
         "Becoming.Web.Census.balanceFrom_eq_at",
         "Becoming.Web.Census.arisingFrom_of_ceasingFrom_from",
-        "Becoming.Web.Census.ceasingFrom_of_arisingFrom_from"
+        "Becoming.Web.Census.ceasingFrom_of_arisingFrom_from",
+        "Becoming.Web.Lineage",
+        "Becoming.Web.Lineage.unique",
+        "Becoming.Web.Lineage.through",
+        "Becoming.Web.Lineage.ends",
+        "Becoming.Web.Lineage.back",
+        "Becoming.Web.ceasingFrom_found",
+        "Becoming.Web.not_not_arisingFrom_covered",
+        "Becoming.Web.arisingFrom_not_stopping_covered"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "d3b1e822a27de825f66cd50c360ac30bfa4c1a6c39ac0682ad19feccafa229bd",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
       "declarations": [
         "Becoming.Web.Census",
         "Becoming.Distinct",
@@ -257,7 +272,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.total_swap",
         "Becoming.total_le",
@@ -268,7 +283,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "19099658b52b5cc30758263a2ee46c3b98ad7e3e0cfa382d702e3012a2e805ad",
+      "sha256": "0a3aeb8aab6214766f39710e2255367549dd3b46b9c3f32c7f9c05afba9c9b45",
       "declarations": [
         "Becoming.mark",
         "Becoming.Web.Ceases",
@@ -279,22 +294,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c"
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8"
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "adc083ea1bcacb45aa32fe8945c8c624d3cd75fdcfe883d8c52e88e59705665e"
+      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8f14304fe69eb1ee224a7868aa9b3edba9d933e1451bbbec385c0678cf2a9140"
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -333,8 +348,8 @@
     }
   ],
   "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Web.Census.balanceFrom_at、balanceFrom_eq_at、arisingFrom_of_ceasingFrom_from、ceasingFrom_of_arisingFrom_from（P50），局部条件写在规律之内：一步的平衡只用该步两端的列出与该步的不分裂、不合并；复现定律只用某步以后各步的列出、不分裂（或不合并与有界）；Web.Census.balanceFrom、Web.Census.arisingFrom_of_ceasingFrom、Web.Census.ceasingFrom_of_arisingFrom是它们的推论；形成的类、任期与侵蚀在延续下的读法；整段上对延续关系的条件（单步的刻画见 identity-across-steps）；带比率的版本；名称（Ren）。",
-    "en": "The exact restatement for every world is this record's Web.Census.balanceFrom_at, balanceFrom_eq_at, arisingFrom_of_ceasingFrom_from, ceasingFrom_of_arisingFrom_from (P50), the local condition inside the law: the balance across a step uses only the listings at its two ends and that step's splits and merges; the recurrence laws use only the listing, no split (or no merge and the bound) from some step on; Web.Census.balanceFrom, Web.Census.arisingFrom_of_ceasingFrom, Web.Census.ceasingFrom_of_arisingFrom are their corollaries; formation classes, tenure and undermining read under a continuation; conditions on continuations over a run (the step characterization is in identity-across-steps); a version with rates; names (Ren)."
+    "zh": "延续之下只用一个覆盖列表（P61）：一个列表覆盖第 M 步的活跃者、自 M 起不分裂、不再存在于延续之下复现时，自 M 起有生起这一点不被否定（Web.not_not_arisingFrom_covered）；有任意晚的覆盖列表时，生起不会自某步起停止（Web.arisingFrom_not_stopping_covered）；不用普查，不用判定。反方向（生起复现需要不再存在复现）以覆盖列表加界的形式，以及得到确切的存在形式所需的判定，仍开放；对每个世界的确切重述是本记录的 Web.Census.balanceFrom_at、balanceFrom_eq_at、arisingFrom_of_ceasingFrom_from、ceasingFrom_of_arisingFrom_from（P50），局部条件写在规律之内：一步的平衡只用该步两端的列出与该步的不分裂、不合并；复现定律只用某步以后各步的列出、不分裂（或不合并与有界）；Web.Census.balanceFrom、Web.Census.arisingFrom_of_ceasingFrom、Web.Census.ceasingFrom_of_arisingFrom是它们的推论；形成的类、任期与侵蚀在延续下的读法；整段上对延续关系的条件（单步的刻画见 identity-across-steps）；带比率的版本；名称（Ren）。",
+    "en": "Under a continuation from one covering list (P61): where a list covers the active formations at step M, nothing splits from M on, and ceasing under the continuation recurs, it is not refuted that something arises from M on (Web.not_not_arisingFrom_covered); with covering lists at arbitrarily late steps, arising does not stop (Web.arisingFrom_not_stopping_covered); no census, no decision. The converse (arising recurring needs ceasing recurring) from covering lists with a bound, and the decision needed for the exact existential form, remain open; the exact restatement for every world is this record's Web.Census.balanceFrom_at, balanceFrom_eq_at, arisingFrom_of_ceasingFrom_from, ceasingFrom_of_arisingFrom_from (P50), the local condition inside the law: the balance across a step uses only the listings at its two ends and that step's splits and merges; the recurrence laws use only the listing, no split (or no merge and the bound) from some step on; Web.Census.balanceFrom, Web.Census.arisingFrom_of_ceasingFrom, Web.Census.ceasingFrom_of_arisingFrom are their corollaries; formation classes, tenure and undermining read under a continuation; conditions on continuations over a run (the step characterization is in identity-across-steps); a version with rates; names (Ren)."
   },
   "history": [
     {
@@ -448,6 +463,10 @@
     {
       "zh": "2026-10-11 P50：新增对每个世界的局部规律 Web.Census.balanceFrom_at、balanceFrom_eq_at、arisingFrom_of_ceasingFrom_from、ceasingFrom_of_arisingFrom_from（零前提计划 §1.3），局部条件写在规律之内；Web.Census.balanceFrom、Web.Census.arisingFrom_of_ceasingFrom、Web.Census.ceasingFrom_of_arisingFrom在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §71。验证范围重新指向回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z。",
       "en": "2026-10-11 P50: local laws for every world added, Web.Census.balanceFrom_at, balanceFrom_eq_at, arisingFrom_of_ceasingFrom_from, ceasingFrom_of_arisingFrom_from (the zero-premise plan, section 1.3), the local condition inside the law; Web.Census.balanceFrom, Web.Census.arisingFrom_of_ceasingFrom, Web.Census.ceasingFrom_of_arisingFrom re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 71 of the integration note. Validation scope re-pointed to receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z."
+    },
+    {
+      "zh": "2026-10-11 P61：新增延续之下的普查定律的覆盖列表形式：Web.Lineage 及其引理、Web.not_not_arisingFrom_covered、Web.arisingFrom_not_stopping_covered；不用普查、不用判定。原定理不变。断言不变。作者说明见整合文档 §76。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P61: the covering-list form of the census law under a continuation added: Web.Lineage with its lemmas, Web.not_not_arisingFrom_covered, Web.arisingFrom_not_stopping_covered; no census, no decision. The originals are unchanged. The claim is unchanged. The author's note is in section 76 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

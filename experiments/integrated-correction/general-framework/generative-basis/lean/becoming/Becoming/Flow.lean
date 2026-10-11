@@ -242,6 +242,12 @@ theorem Web.rising_of_coming {W : Web F C} {cs : List C}
   fun N => match coming N with
     | ⟨t, c, later, mem, comes⟩ => ⟨t, c, later, mem, comes.rises⟩
 
+/-- A number rises by what is added to it exactly when what is added is positive. -/
+theorem lt_iff_pos {a g b : Nat} (sum : b = a + g) : a < b ↔ 0 < g :=
+  ⟨fun lt => Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl a (Nat.lt_of_lt_of_le lt
+      (Nat.le_of_eq (sum.trans ((congrArg (a + ·) zero).trans (Nat.add_zero a))))),
+   fun pos => Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos) (Nat.le_of_eq sum.symm)⟩
+
 namespace Flow
 
 variable (L : Flow F C)
@@ -323,14 +329,81 @@ theorem Balances.over (balances : L.Balances W) : ∀ (cs : List C) (t : Nat),
     ((congrArg (W.level t c + L.given t c + ·) (balances.over cs t)).trans
       (Nat.add_add_add_comm (W.level t c) (L.given t c) (W.stock cs t) (L.replenishment cs t))))
 
-/-- The balance over a stretch of steps. -/
-theorem Balances.accumulates (balances : L.Balances W) (cs : List C) :
-    ∀ T N, W.stock cs (T + N) + total (steps T N) (L.uptake cs) =
-      W.stock cs T + total (steps T N) (L.replenishment cs)
-  | _, 0 => rfl
-  | T, N + 1 =>
-    have later := balances.accumulates cs (T + 1) N
-    have step := balances.over cs T
+variable (L W)
+
+/-- The flow balances on a family across the step from `t`: each member's level after the
+step, with what is taken from it, is its level before, with what is given to it. -/
+def BalancesOn (cs : List C) (t : Nat) : Prop :=
+  ∀ c, c ∈ cs → W.level (t + 1) c + L.taken t c = W.level t c + L.given t c
+
+variable {L W}
+
+/-- Balance is balance on every family across every step. -/
+theorem Balances.on (balances : L.Balances W) (cs : List C) (t : Nat) : L.BalancesOn W cs t :=
+  fun c _ => balances t c
+
+/-- And conversely. -/
+theorem balances_iff_on : L.Balances W ↔ ∀ cs t, L.BalancesOn W cs t :=
+  ⟨fun balances => balances.on, fun on t c => on [c] t c (.head [])⟩
+
+/-- Balanced on a family, the family's total after the step, with its uptake, is its total
+before, with its replenishment. -/
+theorem BalancesOn.over : ∀ {cs : List C} {t : Nat}, L.BalancesOn W cs t →
+    W.stock cs (t + 1) + L.uptake cs t = W.stock cs t + L.replenishment cs t
+  | [], _, _ => rfl
+  | c :: cs, t, balances =>
+    (Nat.add_add_add_comm (W.level (t + 1) c) (W.stock cs (t + 1))
+      (L.taken t c) (L.uptake cs t)).trans
+    ((congrArg (· + (W.stock cs (t + 1) + L.uptake cs t)) (balances c (.head cs))).trans
+    ((congrArg (W.level t c + L.given t c + ·)
+        (BalancesOn.over fun d mem => balances d (.tail c mem))).trans
+      (Nat.add_add_add_comm (W.level t c) (L.given t c) (W.stock cs t) (L.replenishment cs t))))
+
+section
+
+variable {cs : List C} {t : Nat} {c : C}
+
+/-- With balance at `c`, a rise of `c` is given to. -/
+theorem BalancesOn.rise_given (balances : L.BalancesOn W cs t) (mem : c ∈ cs)
+    (rises : W.Rises t c) : 0 < L.given t c :=
+  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt rises
+    (Nat.le_trans (Nat.le_add_right _ (L.taken t c))
+      (Nat.le_of_eq ((balances c mem).trans (congrArg (W.level t c + ·) nothing))))
+
+/-- With balance at `c`, a fall of `c` is taken from. -/
+theorem BalancesOn.fall_taken (balances : L.BalancesOn W cs t) (mem : c ∈ cs)
+    (falls : W.Falls t c) : 0 < L.taken t c :=
+  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt falls
+    (Nat.le_trans (Nat.le_add_right _ (L.given t c))
+      (Nat.le_of_eq ((balances c mem).symm.trans (congrArg (W.level (t + 1) c + ·) nothing))))
+
+/-- Across a step at which nothing is taken from a family balanced on it, a member rises
+exactly when some formation taking part gives to the family. -/
+theorem BalancesOn.rises_iff_gives (balances : L.BalancesOn W cs t)
+    (untaken : ∀ c, c ∈ cs → L.taken t c = 0) :
+    (∃ c, c ∈ cs ∧ W.Rises t c) ↔ ∃ f c, f ∈ L.present t ∧ c ∈ cs ∧ 0 < L.give t f c :=
+  have up : ∀ c, c ∈ cs → W.level (t + 1) c = W.level t c + L.given t c := fun c mem =>
+    (congrArg (W.level (t + 1) c + ·) (untaken c mem)).symm.trans (balances c mem)
+  ⟨fun ⟨c, mem, rises⟩ => match total_pos _ ((lt_iff_pos (up c mem)).mp rises) with
+    | ⟨f, present, gives⟩ => ⟨f, c, present, mem, gives⟩,
+   fun ⟨_, c, present, mem, gives⟩ => ⟨c, mem, (lt_iff_pos (up c mem)).mpr
+      (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := fun f => L.give t f c) present))⟩⟩
+
+end
+
+/-- The balance over a stretch of steps balanced on, each one: nothing is asked of the steps
+outside the stretch. -/
+theorem accumulates_on {cs : List C} :
+    ∀ T N, (∀ t, T ≤ t → t < T + N → L.BalancesOn W cs t) →
+      W.stock cs (T + N) + total (steps T N) (L.uptake cs) =
+        W.stock cs T + total (steps T N) (L.replenishment cs)
+  | _, 0, _ => rfl
+  | T, N + 1, balances =>
+    have later := accumulates_on (T + 1) N fun t after below =>
+      balances t (Nat.le_of_succ_le after)
+        (Nat.lt_of_lt_of_le below (Nat.le_of_eq (Nat.add_right_comm T 1 N)))
+    have step := (balances T (Nat.le_refl T) (Nat.lt_of_lt_of_le (Nat.lt_succ_self T)
+      (Nat.succ_le_succ (Nat.le_add_right T N)))).over
     calc W.stock cs (T + (N + 1)) + (L.uptake cs T + total (steps (T + 1) N) (L.uptake cs))
         = L.uptake cs T + (W.stock cs (T + 1 + N) + total (steps (T + 1) N) (L.uptake cs)) :=
           (congrArg (· + _) (congrArg (W.stock cs) (Nat.add_right_comm T 1 N).symm)).trans
@@ -342,12 +415,16 @@ theorem Balances.accumulates (balances : L.Balances W) (cs : List C) :
       _ = W.stock cs T + (L.replenishment cs T + total (steps (T + 1) N) (L.replenishment cs)) :=
           (congrArg (· + _) step).trans (Nat.add_assoc _ _ _)
 
+/-- The balance over a stretch of steps. -/
+theorem Balances.accumulates (balances : L.Balances W) (cs : List C) :
+    ∀ T N, W.stock cs (T + N) + total (steps T N) (L.uptake cs) =
+      W.stock cs T + total (steps T N) (L.replenishment cs) :=
+  fun T N => accumulates_on T N fun t _ _ => balances.on cs t
+
 /-- In a balanced flow every rise is given to. -/
 theorem Balances.rise_given (balances : L.Balances W) {t : Nat} {c : C} (rises : W.Rises t c) :
     0 < L.given t c :=
-  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt rises
-    (Nat.le_trans (Nat.le_add_right _ (L.taken t c))
-      (Nat.le_of_eq ((balances t c).trans (congrArg (W.level t c + ·) nothing))))
+  (balances.on [c] t).rise_given (.head []) rises
 
 /-- Every rise is the work of a formation: in a balanced flow where only active
 formations give, some active formation taking part gives to every condition that rises. -/
@@ -359,9 +436,7 @@ theorem Balances.renewedBy (balances : L.Balances W) (acting : L.Acting W) :
 /-- In a balanced flow every fall is taken from. -/
 theorem Balances.fall_taken (balances : L.Balances W) {t : Nat} {c : C} (falls : W.Falls t c) :
     0 < L.taken t c :=
-  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt falls
-    (Nat.le_trans (Nat.le_add_right _ (L.given t c))
-      (Nat.le_of_eq ((balances t c).symm.trans (congrArg (W.level (t + 1) c + ·) nothing))))
+  (balances.on [c] t).fall_taken (.head []) falls
 
 /-- Every fall is the work of a formation: in a balanced flow where only active
 formations take, some active formation taking part takes from every condition that falls,
@@ -396,14 +471,16 @@ theorem replenishment_le {cs : List C} {g : Nat} (capacity : L.Capacity cs g) (t
   Nat.le_trans (Nat.le_of_eq (total_swap (fun c f => L.give t f c) (L.present t) cs))
     (total_le_count (L.present t) (capacity t))
 
-/-- Recurring uptake needs recurring replenishment: in a balanced flow, positive uptake at
-arbitrarily late steps needs replenishment at arbitrarily late steps. -/
-theorem uptake_needs_replenishment {cs : List C} (balances : L.Balances W)
-    (uptake : ∀ N, ∃ t, N ≤ t ∧ 0 < L.uptake cs t) (T : Nat) :
+/-- Recurring uptake needs recurring replenishment, from a step on: where the family is
+balanced on from `T` on, positive uptake at arbitrarily late steps needs replenishment at
+some step from `T` on. -/
+theorem uptake_needs_replenishment_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
+    (uptake : ∀ N, ∃ t, N ≤ t ∧ 0 < L.uptake cs t) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
   fun none =>
     have step : ∀ t, T ≤ t → W.stock cs (t + 1) + L.uptake cs t = W.stock cs t :=
-      fun t later => (balances.over cs t).trans
+      fun t later => (balances t later).over.trans
         ((congrArg (W.stock cs t + ·) (none t later)).trans (Nat.add_zero _))
     falls_finitely (W.stock cs) T
       (fun t later => Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq (step t later)))
@@ -413,6 +490,33 @@ theorem uptake_needs_replenishment {cs : List C} (balances : L.Balances W)
           Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right positive)
             (Nat.le_of_eq (step t (Nat.le_trans (Nat.le_add_left T N) later)))⟩
 
+/-- Recurring uptake needs recurring replenishment: in a balanced flow, positive uptake at
+arbitrarily late steps needs replenishment at arbitrarily late steps. -/
+theorem uptake_needs_replenishment {cs : List C} (balances : L.Balances W)
+    (uptake : ∀ N, ∃ t, N ≤ t ∧ 0 < L.uptake cs t) (T : Nat) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  uptake_needs_replenishment_from (fun t _ => balances.on cs t) uptake
+
+/-- Unceasing generation of formations that take needs replenishment, from a step on:
+where the family is balanced on from `T` on and formations taking from it at their first
+active step arise at arbitrarily late steps, the family is replenished at some step from
+`T` on. -/
+theorem replenishment_recurs_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
+    (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  uptake_needs_replenishment_from balances fun N => match arising N with
+    | ⟨t, _, later, _, present, takes⟩ =>
+      ⟨t + 1, Nat.le_succ_of_le later, uptake_pos present takes⟩
+
+/-- And renewing activity recurs from that step on. -/
+theorem renewing_recurs_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
+    (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) :
+    ¬ ∀ t, T ≤ t → L.renewers cs t = 0 :=
+  fun none => replenishment_recurs_from balances arising fun t later =>
+    replenishment_zero (none t later)
+
 /-- Unceasing generation of formations that take needs replenishment: when formations
 taking from the family at their first active step arise at arbitrarily late steps, the
 family is replenished at arbitrarily late steps. The arising enters only through the
@@ -420,59 +524,105 @@ uptake it brings. -/
 theorem replenishment_recurs {cs : List C} (balances : L.Balances W)
     (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
-  uptake_needs_replenishment balances (fun N => match arising N with
-    | ⟨t, _, later, _, present, takes⟩ =>
-      ⟨t + 1, Nat.le_succ_of_le later, uptake_pos present takes⟩) T
+  replenishment_recurs_from (fun t _ => balances.on cs t) arising
 
 /-- Renewing activity recurs: under the same premises, formations give to the family at
 arbitrarily late steps. When only active formations give, they are active. -/
 theorem renewing_recurs {cs : List C} (balances : L.Balances W)
     (arising : ∀ N, ∃ t f, N ≤ t ∧ L.ArisesTaking W cs t f) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.renewers cs t = 0 :=
-  fun none => replenishment_recurs balances arising T fun t later =>
-    replenishment_zero (none t later)
+  renewing_recurs_from (fun t _ => balances.on cs t) arising
+
+/-- With balance at `c` across the step, a condition coming to stand is given at least its
+new standing: the rise is from nothing, so all of it is given. -/
+theorem BalancesOn.standing_given {cs : List C} {t : Nat} {c : C}
+    (balances : L.BalancesOn W cs t) (mem : c ∈ cs) (comes : W.ComesToStand t c) :
+    W.level (t + 1) c ≤ L.given t c :=
+  Nat.le_trans (Nat.le_add_right _ (L.taken t c)) (Nat.le_of_eq ((balances c mem).trans
+    ((congrArg (· + L.given t c) (eq_zero_of_not_pos comes.1)).trans (Nat.zero_add _))))
 
 /-- In a balanced flow, a condition coming to stand is given at least its new standing:
 the rise is from nothing, so all of it is given. -/
 theorem Balances.standing_given (balances : L.Balances W) {t : Nat} {c : C}
     (comes : W.ComesToStand t c) : W.level (t + 1) c ≤ L.given t c :=
-  Nat.le_trans (Nat.le_add_right _ (L.taken t c)) (Nat.le_of_eq ((balances t c).trans
-    ((congrArg (· + L.given t c) (eq_zero_of_not_pos comes.1)).trans (Nat.zero_add _))))
+  (balances.on [c] t).standing_given (.head []) comes
+
+/-- With balance at the member across the step, a member of a family rising replenishes
+the family. -/
+theorem BalancesOn.rise_replenishes {cs : List C} {t : Nat} {c : C}
+    (balances : L.BalancesOn W cs t) (mem : c ∈ cs) (rises : W.Rises t c) :
+    0 < L.replenishment cs t :=
+  total_pos_of_mem mem (balances.rise_given mem rises)
 
 /-- A member of a family rising replenishes the family. -/
 theorem Balances.rise_replenishes (balances : L.Balances W) {cs : List C} {c : C}
     (mem : c ∈ cs) {t : Nat} (rises : W.Rises t c) : 0 < L.replenishment cs t :=
-  total_pos_of_mem mem (balances.rise_given rises)
+  (balances.on cs t).rise_replenishes mem rises
 
 /-- So does a member coming to stand. -/
 theorem Balances.standing_replenishes (balances : L.Balances W) {cs : List C} {c : C}
     (mem : c ∈ cs) {t : Nat} (comes : W.ComesToStand t c) : 0 < L.replenishment cs t :=
   balances.rise_replenishes mem comes.rises
 
+/-- Rising carries the requirement itself, from a step on: where the family is balanced on
+from `T` on and its members rise at arbitrarily late steps, it is replenished at some step
+from `T` on, whatever is taken. -/
+theorem rising_needs_replenishment_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
+    (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ cs ∧ W.Rises t c) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  fun none => match rising T with
+  | ⟨t, _, later, mem, rises⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+      ((balances t later).rise_replenishes mem rises) (Nat.le_of_eq (none t later)))
+
+/-- And coming to stand, from that step on. -/
+theorem standing_needs_replenishment_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t)
+    (coming : ∀ N, ∃ t c, N ≤ t ∧ c ∈ cs ∧ W.ComesToStand t c) :
+    ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
+  rising_needs_replenishment_from balances (Web.rising_of_coming coming)
+
 /-- Rising carries the requirement itself: where members of a family rise at arbitrarily
 late steps, the family's replenishment recurs, whatever is taken. -/
 theorem rising_needs_replenishment {cs : List C} (balances : L.Balances W)
     (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ cs ∧ W.Rises t c) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
-  fun none => match rising T with
-  | ⟨t, _, later, mem, rises⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-      (balances.rise_replenishes mem rises) (Nat.le_of_eq (none t later)))
+  rising_needs_replenishment_from (fun t _ => balances.on cs t) rising
 
 /-- Coming to stand, the rise from nothing, carries it as well: where members of a family
 come to stand at arbitrarily late steps, the family's replenishment recurs. -/
 theorem standing_needs_replenishment {cs : List C} (balances : L.Balances W)
     (coming : ∀ N, ∃ t c, N ≤ t ∧ c ∈ cs ∧ W.ComesToStand t c) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.replenishment cs t = 0 :=
-  rising_needs_replenishment balances (Web.rising_of_coming coming) T
+  standing_needs_replenishment_from (fun t _ => balances.on cs t) coming
+
+/-- Over a stretch of `N` steps balanced on, from whose start on at least `K` formations
+take, the family is replenished by at least `K` per step, less its stock at the start. -/
+theorem replenished_over_on {cs : List C} {K S N : Nat}
+    (balances : ∀ t, S ≤ t → t < S + N → L.BalancesOn W cs t)
+    (many : ∀ t, S ≤ t → K ≤ L.takers cs t) :
+    K * N ≤ W.stock cs S + total (steps S N) (L.replenishment cs) :=
+  Nat.le_trans (steps_ge S N fun t later => Nat.le_trans (many t later) (takers_le_uptake cs t))
+    (Nat.le_trans (Nat.le_add_left _ (W.stock cs (S + N)))
+      (Nat.le_of_eq (accumulates_on S N balances)))
 
 /-- Over any stretch of steps from which at least `K` formations take, the family is
 replenished by at least `K` per step, less its stock at the start. -/
 theorem Balances.replenished_over {cs : List C} {K S : Nat} (balances : L.Balances W)
     (many : ∀ t, S ≤ t → K ≤ L.takers cs t) (N : Nat) :
     K * N ≤ W.stock cs S + total (steps S N) (L.replenishment cs) :=
-  Nat.le_trans (steps_ge S N fun t later => Nat.le_trans (many t later) (takers_le_uptake cs t))
-    (Nat.le_trans (Nat.le_add_left _ (W.stock cs (S + N)))
-      (Nat.le_of_eq (balances.accumulates cs S N)))
+  replenished_over_on (fun t _ _ => balances.on cs t) many
+
+/-- With bounded capacity, over a stretch of `N` steps balanced on, from whose start on at
+least `K` formations take, the formations giving to the family number at least `K` per
+step, less its stock at the start, up to the capacity. -/
+theorem renewers_over_on {cs : List C} {g K S N : Nat}
+    (balances : ∀ t, S ≤ t → t < S + N → L.BalancesOn W cs t) (capacity : L.Capacity cs g)
+    (many : ∀ t, S ≤ t → K ≤ L.takers cs t) :
+    K * N ≤ W.stock cs S + g * total (steps S N) (L.renewers cs) :=
+  Nat.le_trans (replenished_over_on balances many)
+    (Nat.add_le_add_left (Nat.le_trans (total_le _ fun t _ => replenishment_le capacity t)
+      (Nat.le_of_eq (total_mul g (L.renewers cs) _))) _)
 
 /-- With bounded capacity, over any stretch of steps from which at least `K` formations
 take, the formations giving to the family number at least `K` per step, less its stock
@@ -480,20 +630,21 @@ at the start, up to the capacity. -/
 theorem Balances.renewers_over {cs : List C} {g K S : Nat} (balances : L.Balances W)
     (capacity : L.Capacity cs g) (many : ∀ t, S ≤ t → K ≤ L.takers cs t) (N : Nat) :
     K * N ≤ W.stock cs S + g * total (steps S N) (L.renewers cs) :=
-  Nat.le_trans (balances.replenished_over many N)
-    (Nat.add_le_add_left (Nat.le_trans (total_le _ fun t _ => replenishment_le capacity t)
-      (Nat.le_of_eq (total_mul g (L.renewers cs) _))) _)
+  renewers_over_on (fun t _ _ => balances.on cs t) capacity many
 
-/-- More without end needs replenishment without bound: no bound holding from some step
-on bounds the family's replenishment. -/
-theorem More.replenishment_unbounded {cs : List C} (balances : L.Balances W)
-    (more : L.More cs) (R T₀ : Nat) : ¬ ∀ t, T₀ ≤ t → L.replenishment cs t ≤ R :=
+
+/-- More without end needs replenishment without bound, from a step on: where the family
+is balanced on from `T₀` on, no bound holding from `T₀` on bounds its replenishment. -/
+theorem More.replenishment_unbounded_from {cs : List C} {T₀ : Nat}
+    (balances : ∀ t, T₀ ≤ t → L.BalancesOn W cs t) (more : L.More cs) (R : Nat) :
+    ¬ ∀ t, T₀ ≤ t → L.replenishment cs t ≤ R :=
   fun bounded => match more (R + 1) with
   | ⟨T₁, many⟩ =>
     let S := T₁ + T₀
     let N := W.stock cs S + 1
-    have over := balances.replenished_over
-      (fun t later => many t (Nat.le_trans (Nat.le_add_right T₁ T₀) later)) N
+    have over := replenished_over_on (N := N)
+      (fun t later _ => balances t (Nat.le_trans (Nat.le_add_left T₀ T₁) later))
+      (fun t later => many t (Nat.le_trans (Nat.le_add_right T₁ T₀) later))
     have given : total (steps S N) (L.replenishment cs) ≤ R * N :=
       steps_le S N fun t later => bounded t (Nat.le_trans (Nat.le_add_left T₀ T₁) later)
     have le : R * N + N ≤ W.stock cs S + R * N :=
@@ -502,13 +653,27 @@ theorem More.replenishment_unbounded {cs : List C} (balances : L.Balances W)
     Nat.not_succ_le_self (W.stock cs S + R * N)
       (Nat.le_trans (Nat.le_of_eq (congrArg Nat.succ (Nat.add_comm _ _))) le)
 
+/-- More without end needs replenishment without bound: no bound holding from some step
+on bounds the family's replenishment. -/
+theorem More.replenishment_unbounded {cs : List C} (balances : L.Balances W)
+    (more : L.More cs) (R T₀ : Nat) : ¬ ∀ t, T₀ ≤ t → L.replenishment cs t ≤ R :=
+  more.replenishment_unbounded_from (fun t _ => balances.on cs t) R
+
+/-- More without end needs renewers without bound, from a step on: where the family is
+balanced on from `T₀` on and each formation gives at most a fixed amount, no bound holding
+from `T₀` on bounds how many formations give. -/
+theorem More.renewers_unbounded_from {cs : List C} {g T₀ : Nat}
+    (balances : ∀ t, T₀ ≤ t → L.BalancesOn W cs t) (capacity : L.Capacity cs g)
+    (more : L.More cs) (M : Nat) : ¬ ∀ t, T₀ ≤ t → L.renewers cs t ≤ M :=
+  fun bounded => more.replenishment_unbounded_from balances (g * M) fun t later =>
+    Nat.le_trans (replenishment_le capacity t) (Nat.mul_le_mul_left g (bounded t later))
+
 /-- More without end needs renewers without bound: when each formation gives at most a
 fixed amount, no bound holding from some step on bounds how many formations give. -/
 theorem More.renewers_unbounded {cs : List C} {g : Nat} (balances : L.Balances W)
     (capacity : L.Capacity cs g) (more : L.More cs) (M T₀ : Nat) :
     ¬ ∀ t, T₀ ≤ t → L.renewers cs t ≤ M :=
-  fun bounded => more.replenishment_unbounded balances (g * M) T₀ fun t later =>
-    Nat.le_trans (replenishment_le capacity t) (Nat.mul_le_mul_left g (bounded t later))
+  more.renewers_unbounded_from (fun t _ => balances.on cs t) capacity M
 
 end Flow
 

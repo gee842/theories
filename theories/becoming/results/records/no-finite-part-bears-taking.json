@@ -128,6 +128,13 @@
         "zh": "把本结果关于取用的结论推到体现的生起：在耗散之下，体现成员的生起降低封闭家族的存量，体现的生成复现的有限家族须与其外交换，不需要生起者自己取用。",
         "en": "Carries this result's conclusion about taking on to embodied arising: under dissipation an embodied member's arising lowers a closed family's stock, and a finite family in which embodied generation recurs must exchange beyond itself, with no taking by the arising relatum."
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "局部规律用 laws-of-one-step 的 Flow.BalancesOn；这是证明上的复用。记录之间不设依存边，因为 laws-of-one-step 经其依存链依存于本记录。",
+        "en": "The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies."
+      }
     }
   ],
   "counterexamples": [
@@ -200,14 +207,14 @@
     "en": "Contains no ethical predicate; dissipation is a physical premise with commensurable units; it constrains only steps at which some finite family is closed and is vacuous where exchange reaches beyond every finite family (Spray), giving needs uptake only at steps whose exchange lies within finitely many conditions, and representations omitting the source (the source of Expansion and Oscillation) do not meet it (witnesses_not_dissipative); the exchange beyond may be unrelated to the family (SprayShuttle), drawing in is stated only for a family enclosed around (taking_draws_in), which needs each step's exchange to lie within finitely many conditions; gives_less needs the family without repetition (Lone.repeated_family), and giving to a family not dissipated on need not take (Frontier.gives_without_taking); the conclusion constrains only taking in the flow, not arising without taking (for embodied arising relata, see generation-is-replenishment); “finite part” means a finite family of conditions, not a finite set of formations; formations and conditions remain two kinds here (the one-kind reading is in life-as-condition-of-life, and under dissipation in generation-is-replenishment); Frontier is a minimal witness, and its endless source is only a representation; the comparison with heat death is the author's analogy; the final choice of names is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Dissipation 89 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 与上升的定理属于 generation-is-replenishment，同一交换的定理属于 rising-and-falling-in-one-exchange，P25b 新增的 Flow.Enclosed.around_not_not 属于 continued-change-needs-openness）；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): all 89 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives and the rising theorems belong to generation-is-replenishment, those of the one exchange to rising-and-falling-in-one-exchange, and Flow.Enclosed.around_not_not, added in P25b, to continued-change-needs-openness); the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Dissipation 109 项定理全部空依赖（其中 DissipatesOn.takes_of_gives 与上升的定理属于 generation-is-replenishment，同一交换的定理属于 rising-and-falling-in-one-exchange，P25b 新增的 Flow.Enclosed.around_not_not 属于 continued-change-needs-openness）；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §17；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P13-P14-P12B-REVIEW.md），数学全部接受，其更正在整合文档 §22 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): all 109 theorems of Becoming.Dissipation have empty axiom reports (DissipatesOn.takes_of_gives and the rising theorems belong to generation-is-replenishment, those of the one exchange to rising-and-falling-in-one-exchange, and Flow.Enclosed.around_not_not, added in P25b, to continued-change-needs-openness); the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §17 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P13-P14-P12B-REVIEW.md) and accepted all the mathematics, and its corrections, handled in §22, have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "8b1c821ce8e4d9dad5ad1d1e42339368c61b6e6771533a5bbd5d91957d2feb50",
+      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
       "declarations": [
         "Becoming.pos_of_sign",
         "Becoming.sign_pos",
@@ -300,13 +307,19 @@
         "Becoming.Lone.closed",
         "Becoming.Lone.enclosed",
         "Becoming.Lone.draws_in",
-        "Becoming.Lone.repeated_family"
+        "Becoming.Lone.repeated_family",
+        "Becoming.Flow.takers_within_on",
+        "Becoming.Flow.taking_ceases_from",
+        "Becoming.Flow.taking_ceases_within",
+        "Becoming.Flow.dissipatesOn_of_inward_at",
+        "Becoming.Flow.taking_draws_in_from",
+        "Becoming.Flow.DissipatesOn.gives_less_closed"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.sign",
         "Becoming.count",
@@ -335,7 +348,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "d3b1e822a27de825f66cd50c360ac30bfa4c1a6c39ac0682ad19feccafa229bd",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
       "declarations": [
         "Becoming.Distinct"
       ]
@@ -368,7 +381,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "counterexample",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": []
     },
     {
@@ -382,19 +395,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "adc083ea1bcacb45aa32fe8945c8c624d3cd75fdcfe883d8c52e88e59705665e",
+      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a",
       "declarations": []
     },
     {
@@ -445,8 +458,8 @@
     }
   ],
   "next_delta": {
-    "zh": "耗散与可能性、多样性、复杂性的关系；有理数量的版本；不体现的生起是否另有耗散的形式（体现的生起见 generation-is-replenishment）；实际展开中耗散与开放的经验对应。",
-    "en": "The relation of dissipation to possibility, diversity and complexity; a version with rational amounts; whether arising that is not embodied has its own form of dissipation (embodied arising is in generation-is-replenishment); the empirical correspondence of dissipation and openness in actual unfoldings."
+    "zh": "对每个世界的确切重述是本记录的 Flow.DissipatesOn.gives_less_closed（P60），局部条件写在规律之内：只在该步、该闭合家族上耗散；Flow.Dissipative.gives_less是它的推论；对每个世界的确切重述是本记录的 Flow.takers_within_on、taking_ceases_from、taking_ceases_within、dissipatesOn_of_inward_at、taking_draws_in_from（P57），局部条件写在规律之内：平衡与耗散只在所用的一步、一段或某步以后各步上，在所用的家族上；闭合只经它给出的耗散进入；Flow.Balances.takers_within、Balances.taking_ceases、Dissipative.opens、Dissipative.dissipatesOn_of_inward、taking_draws_in是它们的推论；耗散与可能性、多样性、复杂性的关系；有理数量的版本；不体现的生起是否另有耗散的形式（体现的生起见 generation-is-replenishment）；实际展开中耗散与开放的经验对应。",
+    "en": "The exact restatement for every world is this record's Flow.DissipatesOn.gives_less_closed (P60), the local condition inside the law: dissipation on the closed family across that step only; Flow.Dissipative.gives_less is its corollary; the exact restatement for every world is this record's Flow.takers_within_on, taking_ceases_from, taking_ceases_within, dissipatesOn_of_inward_at, taking_draws_in_from (P57), the local condition inside the law: balance and dissipation only at the step, the stretch or the steps from some step on that are used, on the family used; closure enters only through the dissipation it gives; Flow.Balances.takers_within, Balances.taking_ceases, Dissipative.opens, Dissipative.dissipatesOn_of_inward, taking_draws_in are their corollaries; the relation of dissipation to possibility, diversity and complexity; a version with rational amounts; whether arising that is not embodied has its own form of dissipation (embodied arising is in generation-is-replenishment); the empirical correspondence of dissipation and openness in actual unfoldings."
   },
   "history": [
     {
@@ -680,6 +693,14 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：新增对每个世界的局部规律 Flow.takers_within_on、taking_ceases_from、taking_ceases_within、dissipatesOn_of_inward_at、taking_draws_in_from（零前提计划 §1.3 B 组），局部条件写在规律之内；Flow.Balances.takers_within、Balances.taking_ceases、Dissipative.opens、Dissipative.dissipatesOn_of_inward、taking_draws_in在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §74。",
+      "en": "2026-10-11 P57: local laws for every world added, Flow.takers_within_on, taking_ceases_from, taking_ceases_within, dissipatesOn_of_inward_at, taking_draws_in_from (group B of the zero-premise plan, section 1.3), the local condition inside the law; Flow.Balances.takers_within, Balances.taking_ceases, Dissipative.opens, Dissipative.dissipatesOn_of_inward, taking_draws_in re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 74 of the integration note."
+    },
+    {
+      "zh": "2026-10-11 P60：新增对每个世界的局部规律 Flow.DissipatesOn.gives_less_closed（零前提计划 §1.3 D 组），局部条件写在规律之内；Flow.Dissipative.gives_less在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §75。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P60: local laws for every world added, Flow.DissipatesOn.gives_less_closed (group D of the zero-premise plan, section 1.3), the local condition inside the law; Flow.Dissipative.gives_less re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 75 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

@@ -172,8 +172,8 @@
     "en": "That a formation knows its reach closure or wants anything is not derived; a part is a decided family of formations, and one act of a formation is compared through a second flow (as in Clearing.unregistered); responding flows are supplied in the witnesses; the readings and names are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
   },
   "references": [
     {
@@ -237,7 +237,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Flow.Balances"
       ]
@@ -254,7 +254,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "524c868c52913fbf9dc2e66da22fdc88c6bfe6c24993a5d293907ff999d6a13c",
+      "sha256": "50a53898ad23cdd9013f705f4c34652b519ee30b0d01c4823512cb0b64eaee77",
       "declarations": [
         "Becoming.Clearing.flow",
         "Becoming.Clearing.web"
@@ -263,17 +263,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c"
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8"
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8f14304fe69eb1ee224a7868aa9b3edba9d933e1451bbbec385c0678cf2a9140"
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -359,6 +359,10 @@
     {
       "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“计入”；断言不变。",
       "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 计入; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
     }
   ]
 }

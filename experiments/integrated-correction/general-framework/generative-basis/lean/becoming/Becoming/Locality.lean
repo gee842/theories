@@ -10,6 +10,16 @@ at every step, so the selection results are corollaries. Within the representati
 premises themselves are contingent (`World.contingent`, `World.independent`): what is derived
 is the law with its local condition, never a premise. The move made here is localization.
 
+Some of the laws stated here live in lower modules, each in the lowest module that needs it,
+with names and statements unchanged: balance at a step and the laws of one condition across
+one step (`Flow.BalancesOn`, `Flow.Balances.on`, `Flow.balances_iff_on`,
+`Flow.BalancesOn.over`, `Flow.BalancesOn.rise_given`, `Flow.BalancesOn.fall_taken`,
+`Flow.BalancesOn.rises_iff_gives`, `lt_iff_pos`) in `Becoming.Flow`; the lowering of a family
+balanced and dissipated on (`Flow.BalancesOn.runs_down`, `Flow.BalancesOn.taking_lowers`,
+`Flow.BalancesOn.fall_lowers`, `Flow.BalancesOn.rise_lowers`,
+`Flow.BalancesOn.comes_from_standing`, `Flow.DissipatesOn.still_untaken`) in
+`Becoming.Dissipation`; `came_between` in `Becoming.Population`.
+
 * **Balance at a step.** The flow balances on a family across one step (`Flow.BalancesOn`);
   balance is balance on every family across every step (`Flow.balances_iff_on`).
 * **Arising needs an active giver.** With balance at a condition, it comes to stand exactly
@@ -61,12 +71,6 @@ theorem pos_iff_lt {a b d : Nat} (sum : a + b = d) : 0 < a ↔ b < d :=
       (Nat.le_of_eq ((Nat.add_comm b a).trans sum)),
    fun lt => Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl b (Nat.lt_of_lt_of_le lt
       (Nat.le_of_eq (sum.symm.trans ((congrArg (· + b) zero).trans (Nat.zero_add b)))))⟩
-
-/-- A number rises by what is added to it exactly when what is added is positive. -/
-theorem lt_iff_pos {a g b : Nat} (sum : b = a + g) : a < b ↔ 0 < g :=
-  ⟨fun lt => Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl a (Nat.lt_of_lt_of_le lt
-      (Nat.le_of_eq (sum.trans ((congrArg (a + ·) zero).trans (Nat.add_zero a))))),
-   fun pos => Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos) (Nat.le_of_eq sum.symm)⟩
 
 /-- A total below another over the same list is below it at some member. -/
 theorem exists_lt_of_total_lt {α : Type} {p q : α → Nat} :
@@ -163,35 +167,7 @@ theorem Web.StandingCensus.length_le_stock {W : Web F C} {stand : Nat → List C
 
 namespace Flow
 
-variable (L : Flow F C) (W : Web F C)
-
-/-- The flow balances on a family across the step from `t`: each member's level after the
-step, with what is taken from it, is its level before, with what is given to it. -/
-def BalancesOn (cs : List C) (t : Nat) : Prop :=
-  ∀ c, c ∈ cs → W.level (t + 1) c + L.taken t c = W.level t c + L.given t c
-
-variable {L W}
-
-/-- Balance is balance on every family across every step. -/
-theorem Balances.on (balances : L.Balances W) (cs : List C) (t : Nat) : L.BalancesOn W cs t :=
-  fun c _ => balances t c
-
-/-- And conversely. -/
-theorem balances_iff_on : L.Balances W ↔ ∀ cs t, L.BalancesOn W cs t :=
-  ⟨fun balances => balances.on, fun on t c => on [c] t c (.head [])⟩
-
-/-- Balanced on a family, the family's total after the step, with its uptake, is its total
-before, with its replenishment. -/
-theorem BalancesOn.over : ∀ {cs : List C} {t : Nat}, L.BalancesOn W cs t →
-    W.stock cs (t + 1) + L.uptake cs t = W.stock cs t + L.replenishment cs t
-  | [], _, _ => rfl
-  | c :: cs, t, balances =>
-    (Nat.add_add_add_comm (W.level (t + 1) c) (W.stock cs (t + 1))
-      (L.taken t c) (L.uptake cs t)).trans
-    ((congrArg (· + (W.stock cs (t + 1) + L.uptake cs t)) (balances c (.head cs))).trans
-    ((congrArg (W.level t c + L.given t c + ·)
-        (BalancesOn.over fun d mem => balances d (.tail c mem))).trans
-      (Nat.add_add_add_comm (W.level t c) (L.given t c) (W.stock cs t) (L.replenishment cs t))))
+variable {L : Flow F C} {W : Web F C}
 
 /-! ## One condition across one step -/
 
@@ -217,86 +193,6 @@ theorem BalancesOn.ceasesToStand_iff (balances : L.BalancesOn W cs t) (mem : c �
    fun ⟨stands, all⟩ => ⟨stands, fun pos => Nat.lt_irrefl (L.taken t c)
       (Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right pos)
         (Nat.le_of_eq ((Nat.add_comm _ _).trans ((balances c mem).trans all.symm))))⟩⟩
-
-/-- With balance at `c`, a rise of `c` is given to. -/
-theorem BalancesOn.rise_given (balances : L.BalancesOn W cs t) (mem : c ∈ cs)
-    (rises : W.Rises t c) : 0 < L.given t c :=
-  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt rises
-    (Nat.le_trans (Nat.le_add_right _ (L.taken t c))
-      (Nat.le_of_eq ((balances c mem).trans (congrArg (W.level t c + ·) nothing))))
-
-/-- With balance at `c`, a fall of `c` is taken from. -/
-theorem BalancesOn.fall_taken (balances : L.BalancesOn W cs t) (mem : c ∈ cs)
-    (falls : W.Falls t c) : 0 < L.taken t c :=
-  Nat.pos_of_ne_zero fun nothing => Nat.not_le_of_gt falls
-    (Nat.le_trans (Nat.le_add_right _ (L.given t c))
-      (Nat.le_of_eq ((balances c mem).symm.trans (congrArg (W.level (t + 1) c + ·) nothing))))
-
-/-- Across a step at which nothing is taken from a family balanced on it, a member rises
-exactly when some formation taking part gives to the family. -/
-theorem BalancesOn.rises_iff_gives (balances : L.BalancesOn W cs t)
-    (untaken : ∀ c, c ∈ cs → L.taken t c = 0) :
-    (∃ c, c ∈ cs ∧ W.Rises t c) ↔ ∃ f c, f ∈ L.present t ∧ c ∈ cs ∧ 0 < L.give t f c :=
-  have up : ∀ c, c ∈ cs → W.level (t + 1) c = W.level t c + L.given t c := fun c mem =>
-    (congrArg (W.level (t + 1) c + ·) (untaken c mem)).symm.trans (balances c mem)
-  ⟨fun ⟨c, mem, rises⟩ => match total_pos _ ((lt_iff_pos (up c mem)).mp rises) with
-    | ⟨f, present, gives⟩ => ⟨f, c, present, mem, gives⟩,
-   fun ⟨_, c, present, mem, gives⟩ => ⟨c, mem, (lt_iff_pos (up c mem)).mpr
-      (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := fun f => L.give t f c) present))⟩⟩
-
-/-- So where nothing is taken from a family dissipated on across the step, no member
-rises: dissipation lets nothing give to it without taking from it. -/
-theorem DissipatesOn.still_untaken (dissipates : L.DissipatesOn cs t)
-    (balances : L.BalancesOn W cs t) (untaken : ∀ c, c ∈ cs → L.taken t c = 0) :
-    ¬ ∃ c, c ∈ cs ∧ W.Rises t c :=
-  fun rising => match (balances.rises_iff_gives untaken).mp rising with
-  | ⟨f, _, present, mem, gives⟩ =>
-    match total_pos cs (dissipates.takes_of_gives present
-        (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := L.give t f) mem))) with
-    | ⟨d, inside, takes⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
-        (Nat.lt_of_lt_of_le takes (le_total_of_mem (q := fun f => L.take t f d) present))
-        (Nat.le_of_eq (untaken d inside)))
-
-/-- Balanced and dissipated on, the family falls across the step by at least the number of
-formations taking from it. -/
-theorem BalancesOn.runs_down (balances : L.BalancesOn W cs t) (dissipates : L.DissipatesOn cs t) :
-    W.stock cs (t + 1) + L.takers cs t ≤ W.stock cs t :=
-  le_of_add_le_add_right (L.replenishment cs t) (Nat.le_trans
-    (Nat.le_of_eq ((Nat.add_assoc _ _ _).trans
-      (congrArg (W.stock cs (t + 1) + ·) (Nat.add_comm _ (L.replenishment cs t)))))
-    (Nat.le_trans (Nat.add_le_add_left dissipates.replenishment_takers _)
-      (Nat.le_of_eq balances.over)))
-
-/-- Balanced and dissipated on, a family a formation taking part takes from falls across
-the step. -/
-theorem BalancesOn.taking_lowers (balances : L.BalancesOn W cs t)
-    (dissipates : L.DissipatesOn cs t) {f : F} (present : f ∈ L.present t)
-    (takes : 0 < total cs (L.take t f)) : W.stock cs (t + 1) < W.stock cs t :=
-  Nat.lt_of_lt_of_le
-    (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total cs (L.take t f)))
-      present (sign_pos takes)))
-    (balances.runs_down dissipates)
-
-/-- Balanced and dissipated on, a member's fall lowers the family: it is taken from. -/
-theorem BalancesOn.fall_lowers (balances : L.BalancesOn W cs t) (dissipates : L.DissipatesOn cs t)
-    (mem : c ∈ cs) (falls : W.Falls t c) : W.stock cs (t + 1) < W.stock cs t :=
-  match total_pos (L.present t) (balances.fall_taken mem falls) with
-  | ⟨_, present, takes⟩ => balances.taking_lowers dissipates present (total_pos_of_mem mem takes)
-
-/-- Balanced and dissipated on, a member's rise lowers the family too: it is given to, and
-what gives to the family takes from it. -/
-theorem BalancesOn.rise_lowers (balances : L.BalancesOn W cs t) (dissipates : L.DissipatesOn cs t)
-    (mem : c ∈ cs) (rises : W.Rises t c) : W.stock cs (t + 1) < W.stock cs t :=
-  match total_pos (L.present t) (balances.rise_given mem rises) with
-  | ⟨_, present, gives⟩ => balances.taking_lowers dissipates present
-      (dissipates.takes_of_gives present (total_pos_of_mem mem gives))
-
-/-- Nothing comes to stand from nothing: across a step at which a family is balanced and
-dissipated on, a member comes to stand only where the family stood at something before. -/
-theorem BalancesOn.comes_from_standing (balances : L.BalancesOn W cs t)
-    (dissipates : L.DissipatesOn cs t) (mem : c ∈ cs) (comes : W.ComesToStand t c) :
-    0 < W.stock cs t :=
-  Nat.lt_of_le_of_lt (Nat.zero_le _) (balances.rise_lowers dissipates mem comes.rises)
 
 /-! ## Rest -/
 
@@ -604,17 +500,6 @@ section Decided
 
 variable {p : α → Nat → Prop} [∀ a t, Decidable (p a t)]
 
-/-- What fails at `N` and holds at a later step `T` came to be across some step between. -/
-theorem came_between {q : Nat → Prop} [∀ t, Decidable (q t)] {N T : Nat} (le : N ≤ T)
-    (fails : ¬ q N) (holds : q T) : ∃ s, N ≤ s ∧ s < T ∧ ComesToBe q s :=
-  match rises_between (q := fun t => mark (q t)) le
-      (Nat.lt_of_le_of_lt (Nat.le_of_eq (mark_zero fails)) (mark_pos.mpr holds)) with
-  | ⟨s, from_, below, up⟩ =>
-    ⟨s, from_, below,
-     ⟨fun held => Nat.lt_irrefl 1 (Nat.lt_of_lt_of_le
-        (Nat.lt_of_le_of_lt (Nat.le_of_eq (mark_one held).symm) up) (mark_le_one _)),
-      mark_pos.mp (Nat.lt_of_le_of_lt (Nat.zero_le _) up)⟩⟩
-
 /-- A list covering what holds at `N` covers every later step of a stretch across which
 nothing comes to be. -/
 theorem Covers.within {L : List α} {N n : Nat} (covers : Covers p L N)
@@ -703,17 +588,6 @@ theorem Listed.covered {l : Nat → List α} (listed : Listed p l) :
 end Decided
 
 /-! ## Without decidability -/
-
-/-- Doubly negated for each member of a list, doubly negated for all of them. -/
-theorem not_not_all {β : Type} {P : β → Prop} :
-    ∀ {E : List β}, (∀ b, b ∈ E → ¬ ¬ P b) → ¬ ¬ ∀ b, b ∈ E → P b
-  | [], _ => fun none => none fun _ mem => nomatch mem
-  | b :: E, each => fun none =>
-    each b (.head E) fun head =>
-      not_not_all (E := E) (fun c mem => each c (.tail b mem)) fun rest =>
-        none fun c mem => match mem_cons_cases mem with
-          | .inl same => Eq.subst (motive := P) same.symm head
-          | .inr mem => rest c mem
 
 section Undecided
 

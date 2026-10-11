@@ -92,6 +92,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean"
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "局部规律只在所用的步与家族上假定 laws-of-one-step 的 Flow.BalancesOn；全局前提给出它，所以原定理是推论。",
+        "en": "The local laws assume Flow.BalancesOn of laws-of-one-step only at the steps and families they use; the global premises give it, so the original theorems are corollaries."
+      },
+      "interface": {
+        "output": {
+          "zh": "跨一步对一个有限家族的平衡（Flow.BalancesOn）与下降（Flow.RunsDown）。",
+          "en": "Balance on a finite family across one step (Flow.BalancesOn) and running down (Flow.RunsDown)."
+        },
+        "input": {
+          "zh": "本记录的局部规律在所用各步对所用家族假定它。",
+          "en": "This record's local laws assume it at the families and steps they use."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
     }
   ],
   "related": [
@@ -131,14 +154,14 @@
     "en": "Stated for discrete steps, natural-number amounts and finite families; needs balance, dissipation, enclosure and decided equality; the conclusion is a constructive negation and exhibits no step at which the family is fed; says only that what lies beyond must be counted, not that it ought to be, and contains no ethical predicate; says neither which formation conveys nor whether the source is living; in Lone the one source does all the conveying; the names are the AI's wording, for Ren to choose (Conveys, FedFromBeyond and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Continuation 的 45 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 45 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Continuation 的 48 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 48 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "524c868c52913fbf9dc2e66da22fdc88c6bfe6c24993a5d293907ff999d6a13c",
+      "sha256": "50a53898ad23cdd9013f705f4c34652b519ee30b0d01c4823512cb0b64eaee77",
       "declarations": [
         "Becoming.Flow.Conveys",
         "Becoming.Flow.FedFromBeyond",
@@ -151,13 +174,15 @@
         "Becoming.Web.generation_fed_from_beyond",
         "Becoming.Lone.fed",
         "Becoming.Lone.each_fuel_once",
-        "Becoming.Lone.fed_not_recurring"
+        "Becoming.Lone.fed_not_recurring",
+        "Becoming.Flow.fed_from_beyond_from",
+        "Becoming.Flow.rising_fed_from_beyond_from"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "8b1c821ce8e4d9dad5ad1d1e42339368c61b6e6771533a5bbd5d91957d2feb50",
+      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
       "declarations": [
         "Becoming.Flow.taking_draws_in",
         "Becoming.Flow.rising_draws_in",
@@ -170,20 +195,29 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": [
         "Becoming.Web.generation_draws_in"
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c"
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8"
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -222,11 +256,18 @@
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "输送来自活着的来源时的读法；两个可移除的来源交替供给的见证（不需要特定的来源形成）；整段与以世界为单位的形式；输送是否算作已形成的关系（Ren）。",
-    "en": "The reading where what is conveyed comes from a living source; a witness fed alternately by two removable sources (no particular source formation needed); whole-run and world-level forms; whether conveyance counts as a formed relation (Ren)."
+    "zh": "对每个世界的确切重述是本记录的 Flow.fed_from_beyond_from、rising_fed_from_beyond_from（P57），局部条件写在规律之内：从某步起：该家族平衡、被围住，且每步闭合的家族被耗散；Flow.fed_from_beyond、rising_fed_from_beyond是它们的推论；输送来自活着的来源时的读法；两个可移除的来源交替供给的见证（不需要特定的来源形成）；整段与以世界为单位的形式；输送是否算作已形成的关系（Ren）。",
+    "en": "The exact restatement for every world is this record's Flow.fed_from_beyond_from, rising_fed_from_beyond_from (P57), the local condition inside the law: from some step on: the family balanced on and enclosed around, and the families closed across each step dissipated on; Flow.fed_from_beyond, rising_fed_from_beyond are their corollaries; the reading where what is conveyed comes from a living source; a witness fed alternately by two removable sources (no particular source formation needed); whole-run and world-level forms; whether conveyance counts as a formed relation (Ren)."
   },
   "history": [
     {
@@ -320,6 +361,10 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：新增对每个世界的局部规律 Flow.fed_from_beyond_from、rising_fed_from_beyond_from（零前提计划 §1.3 B 组），局部条件写在规律之内；Flow.fed_from_beyond、rising_fed_from_beyond在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §74。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: local laws for every world added, Flow.fed_from_beyond_from, rising_fed_from_beyond_from (group B of the zero-premise plan, section 1.3), the local condition inside the law; Flow.fed_from_beyond, rising_fed_from_beyond re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 74 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

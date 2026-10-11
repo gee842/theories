@@ -206,17 +206,16 @@
     "en": "No premise is derived: within the representation the premises remain contingent and independent (World.contingent, World.independent); the move is localization, not a re-founding of the representation. Running down bounding change is an inequality, its exact form being the identity of over_stretch with the one-step iffs; the recurrence laws and the bound use a census of what stands, and dropping it where infinitely many stand would change the representation of amounts, which is Ren's decision; the recurrence of law 1 and the bounds of law 3 use the least difference (option A), and whether each law survives amounts finer than whole units is not yet tested, rest being covered by the resolution line (R4); stated for discrete steps, coarser steps awaiting the localized Sampling and continuous time not studied; law 2's exact count needs a decision, its form that ceasing does not recur none; the name ‘closure bounds change’ is Ren's, and the proof shows that what bounds change is running down, closure being how the premises supply it; the section on law 2 was drafted and verified by another session (0 axiom completeness); evaluates neither arising, ceasing nor rest; the names (BalancesOn, RunsDownOn, RunsDown, RunsDownClosed, Covers, ListsAt, NoneComes, recurs_iff_unmet and others) are the AI's choice under Ren's naming criteria of 10 October, and readings remain Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：新核心模块 Becoming.Locality 的 57 项定理（含 Flow.BalancesOn.comesToStand_iff、Flow.BalancesOn.ceasesToStand_iff、Flow.BalancesOn.rises_iff_gives、Flow.BalancesOn.arises_given、Flow.RunsDownOn.changes_iff、recurs_iff_unmet、Flow.change_recurs_iff、Flow.exchange_recurs_iff、Flow.runsDown_bounds_change、cohort_closes_iff、ceasing_needs_arising 与 coming_of_ceasing_covered）、Becoming.Openness 的 77 项定理、Becoming.Roles 的 138 项定理、Becoming.Counting 的 212 项定理与 Becoming.Standing 的 37 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。尚无独立审查，作者反审见整合文档 §66。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 57 theorems of the new core module Becoming.Locality (including Flow.BalancesOn.comesToStand_iff, Flow.BalancesOn.ceasesToStand_iff, Flow.BalancesOn.rises_iff_gives, Flow.BalancesOn.arises_given, Flow.RunsDownOn.changes_iff, recurs_iff_unmet, Flow.change_recurs_iff, Flow.exchange_recurs_iff, Flow.runsDown_bounds_change, cohort_closes_iff, ceasing_needs_arising and coming_of_ceasing_covered), the 77 theorems of Becoming.Openness, the 138 theorems of Becoming.Roles, the 212 theorems of Becoming.Counting and the 37 theorems of Becoming.Standing all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. There is no independent review yet; the author's counterreview is in §66 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：新核心模块 Becoming.Locality 的 42 项定理（含 Flow.BalancesOn.comesToStand_iff、Flow.BalancesOn.ceasesToStand_iff、Flow.BalancesOn.rises_iff_gives、Flow.BalancesOn.arises_given、Flow.RunsDownOn.changes_iff、recurs_iff_unmet、Flow.change_recurs_iff、Flow.exchange_recurs_iff、Flow.runsDown_bounds_change、cohort_closes_iff、ceasing_needs_arising 与 coming_of_ceasing_covered）、Becoming.Openness 的 80 项定理、Becoming.Roles 的 145 项定理、Becoming.Counting 的 212 项定理与 Becoming.Standing 的 37 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。尚无独立审查，作者反审见整合文档 §66。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 57 theorems of the new core module Becoming.Locality (including Flow.BalancesOn.comesToStand_iff, Flow.BalancesOn.ceasesToStand_iff, Flow.BalancesOn.rises_iff_gives, Flow.BalancesOn.arises_given, Flow.RunsDownOn.changes_iff, recurs_iff_unmet, Flow.change_recurs_iff, Flow.exchange_recurs_iff, Flow.runsDown_bounds_change, cohort_closes_iff, ceasing_needs_arising and coming_of_ceasing_covered), the 80 theorems of Becoming.Openness, the 145 theorems of Becoming.Roles, the 212 theorems of Becoming.Counting and the 37 theorems of Becoming.Standing all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. There is no independent review yet; the author's counterreview is in §66 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
       "role": "proof",
-      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "sha256": "1dc3980839b53d5042c799f2c6d8f97a7c2a83b33c444898c0cf4409cde5c184",
       "declarations": [
         "Becoming.pos_iff_lt",
-        "Becoming.lt_iff_pos",
         "Becoming.exists_lt_of_total_lt",
         "Becoming.rises_or_le",
         "Becoming.unmet_or_lower",
@@ -225,21 +224,8 @@
         "Becoming.Web.StandingCensus",
         "Becoming.Web.StandingCensus.stock_eq",
         "Becoming.Web.StandingCensus.length_le_stock",
-        "Becoming.Flow.BalancesOn",
-        "Becoming.Flow.Balances.on",
-        "Becoming.Flow.balances_iff_on",
-        "Becoming.Flow.BalancesOn.over",
         "Becoming.Flow.BalancesOn.comesToStand_iff",
         "Becoming.Flow.BalancesOn.ceasesToStand_iff",
-        "Becoming.Flow.BalancesOn.rise_given",
-        "Becoming.Flow.BalancesOn.fall_taken",
-        "Becoming.Flow.BalancesOn.rises_iff_gives",
-        "Becoming.Flow.DissipatesOn.still_untaken",
-        "Becoming.Flow.BalancesOn.runs_down",
-        "Becoming.Flow.BalancesOn.taking_lowers",
-        "Becoming.Flow.BalancesOn.fall_lowers",
-        "Becoming.Flow.BalancesOn.rise_lowers",
-        "Becoming.Flow.BalancesOn.comes_from_standing",
         "Becoming.Flow.RunsDownOn",
         "Becoming.Flow.RunsDown",
         "Becoming.Flow.RunsDownClosed",
@@ -267,14 +253,12 @@
         "Becoming.NoneComes",
         "Becoming.accumulates_or",
         "Becoming.stays_failing_within",
-        "Becoming.came_between",
         "Becoming.Covers.within",
         "Becoming.cohort_closes_iff",
         "Becoming.ceasing_needs_arising",
         "Becoming.Covers.coming_from_of_ceasing",
         "Becoming.coming_of_ceasing_covered",
         "Becoming.Listed.covered",
-        "Becoming.not_not_all",
         "Becoming.ceases_once",
         "Becoming.Covers.ceasing_steps_within",
         "Becoming.ceasing_steps_found",
@@ -285,7 +269,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "834c8203a8dda2829aaaee6b9c32ae8a516e8fc534da29c86b6b73917be60d7b",
+      "sha256": "bada9520a3a331bfa27f67f07cb2d33ea3735c2340882c0043a17c268d1827ba",
       "declarations": [
         "Becoming.Flow.AroundStanding.runsDownClosed",
         "Becoming.Flow.fall_lowers_on",
@@ -302,7 +286,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": [
         "Becoming.Web.Embodied.arises_given"
       ]
@@ -330,26 +314,40 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "8b1c821ce8e4d9dad5ad1d1e42339368c61b6e6771533a5bbd5d91957d2feb50",
+      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
       "declarations": [
         "Becoming.Flow.DissipatesOn",
         "Becoming.Flow.ClosedAt",
         "Becoming.Flow.Dissipative",
-        "Becoming.Flow.Balances.runs_down"
+        "Becoming.Flow.Balances.runs_down",
+        "Becoming.Flow.DissipatesOn.still_untaken",
+        "Becoming.Flow.BalancesOn.runs_down",
+        "Becoming.Flow.BalancesOn.taking_lowers",
+        "Becoming.Flow.BalancesOn.fall_lowers",
+        "Becoming.Flow.BalancesOn.rise_lowers",
+        "Becoming.Flow.BalancesOn.comes_from_standing"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
-        "Becoming.Flow.Balances"
+        "Becoming.Flow.Balances",
+        "Becoming.lt_iff_pos",
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on",
+        "Becoming.Flow.balances_iff_on",
+        "Becoming.Flow.BalancesOn.over",
+        "Becoming.Flow.BalancesOn.rise_given",
+        "Becoming.Flow.BalancesOn.fall_taken",
+        "Becoming.Flow.BalancesOn.rises_iff_gives"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "19099658b52b5cc30758263a2ee46c3b98ad7e3e0cfa382d702e3012a2e805ad",
+      "sha256": "0a3aeb8aab6214766f39710e2255367549dd3b46b9c3f32c7f9c05afba9c9b45",
       "declarations": [
         "Becoming.ComesToBe",
         "Becoming.CeasesToBe",
@@ -360,35 +358,38 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
       "role": "proof",
-      "sha256": "d3b1e822a27de825f66cd50c360ac30bfa4c1a6c39ac0682ad19feccafa229bd",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
       "declarations": [
-        "Becoming.Listed"
+        "Becoming.Listed",
+        "Becoming.came_between",
+        "Becoming.not_not_all",
+        "Becoming.came_between_from"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c"
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8"
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "adc083ea1bcacb45aa32fe8945c8c624d3cd75fdcfe883d8c52e88e59705665e"
+      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "a8ced6339cb21b861ecc7fab6f9e127db88d28116d177cfff4a268f2fed74e32"
+      "sha256": "dddd358d8aa32824a9fd317d7ff711013951ea509dc3634e0a677778a4c35c61"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8f14304fe69eb1ee224a7868aa9b3edba9d933e1451bbbec385c0678cf2a9140"
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -483,6 +484,18 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.lt_iff_pos、Becoming.Flow.BalancesOn、Becoming.Flow.Balances.on、Becoming.Flow.balances_iff_on、Becoming.Flow.BalancesOn.over、Becoming.Flow.BalancesOn.rise_given、Becoming.Flow.BalancesOn.fall_taken、Becoming.Flow.BalancesOn.rises_iff_gives 移入 Becoming.Flow、Becoming.Flow.DissipatesOn.still_untaken、Becoming.Flow.BalancesOn.runs_down、Becoming.Flow.BalancesOn.taking_lowers、Becoming.Flow.BalancesOn.fall_lowers、Becoming.Flow.BalancesOn.rise_lowers、Becoming.Flow.BalancesOn.comes_from_standing 移入 Becoming.Dissipation、Becoming.came_between 移入 Becoming.Population（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。",
+      "en": "2026-10-11 P57: Becoming.lt_iff_pos, Becoming.Flow.BalancesOn, Becoming.Flow.Balances.on, Becoming.Flow.balances_iff_on, Becoming.Flow.BalancesOn.over, Becoming.Flow.BalancesOn.rise_given, Becoming.Flow.BalancesOn.fall_taken, Becoming.Flow.BalancesOn.rises_iff_gives moved into Becoming.Flow; Becoming.Flow.DissipatesOn.still_untaken, Becoming.Flow.BalancesOn.runs_down, Becoming.Flow.BalancesOn.taking_lowers, Becoming.Flow.BalancesOn.fall_lowers, Becoming.Flow.BalancesOn.rise_lowers, Becoming.Flow.BalancesOn.comes_from_standing moved into Becoming.Dissipation; Becoming.came_between moved into Becoming.Population (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P61：Becoming.not_not_all 自 Becoming.Locality 移入 Becoming.Population（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。",
+      "en": "2026-10-11 P61: Becoming.not_not_all moved from Becoming.Locality into Becoming.Population (a shared lemma relocated to the lowest module that needs it), statement and proof unchanged, and the references follow. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P58：判定改为局部（Ren 2026-10-11：“decidability is too dualist”）：新增 came_between_from（只在某步以后判定）；came_between 改为它的推论，陈述不变。断言不变。作者说明见整合文档 §76。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P58: decidedness made local (Ren, 11 October: \"decidability is too dualist\"): came_between_from added (decided only from some step on); came_between re-proved as its corollary, statement unchanged. The claim is unchanged. The author's note is in section 76 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }
