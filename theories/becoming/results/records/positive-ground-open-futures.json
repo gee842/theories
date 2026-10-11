@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T13:11:49.208617+00:00",
+  "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
   "claim": {
     "zh": "在明示 G0 与生成对应下，同一个回应若在每段当前有根据的接续中实现某种新的生成内容，就在每段接续中具有某项正面根据，无须固定同一种新形态。公开的直接实践解释可给出一项支持理由。有限构造同时保留旧共同可能性、不同真实未来分支和进一步证据辨别；有真实负担或所见范围可修订，不删除这个正面结果。",
     "en": "Under explicit G0 and generative correspondence, one response realizing some new generation in every presently grounded continuation has some positive ground in each continuation, without fixing one new form across all of them. Explicit direct practical articulation supplies a contributory reason. The finite construction retains old joint possibilities, distinct real future branches and further evidence discrimination; a real burden or revisable admitted scope does not erase the positive result."
@@ -267,6 +267,10 @@
     {
       "zh": "2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X1、X2）修正证据行：原句“磨损其所依存的更新组织的形成有界、停止”按字面为假，现限定为所给不可恢复规律下持续超出更新的形成；“Lean 检查什么使它有区分力”改为 Lean 检查一个描述性区分。依 Ren 同日追问写明宽读法不是 G0。本结果证明与范围不变。",
       "en": "2026-10-09: evidence line corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X1, X2). The sentence saying formation wearing its renewing organization is bounded and ceases was literally false and is now restricted to formation persistently exceeding renewal under the supplied no-recovery law; \"what gives it discriminating content\" becomes a checked descriptive distinction. Following Ren's same-day follow-up, the broad reading is marked as not G0. This result's proof and scope are unchanged."
+    },
+    {
+      "zh": "2026-10-11 P51：Ren 把 G0 折叠（“if we don't need G0 as axiom, fold it, at least for part i, and commit”）：G0 不再是所采用的公理，第一部分把它作为条件陈述，第二部分中它是那一条公理的定理。概览中的证据中说 G0 仍是所采用的公理、或替换待 Ren 的文字照此更正。断言与定理不变。",
+      "en": "2026-10-11 P51: Ren folded G0 (“if we don't need G0 as axiom, fold it, at least for part i, and commit”): G0 is no longer an adopted axiom; Part I states it as a condition, and in Part II it is a theorem of the one axiom. The text of the overview's evidence saying G0 remains the adopted axiom, or that the replacement awaits Ren, is corrected so. The claim and theorems are unchanged."
     }
   ],
   "overview": {
@@ -279,8 +283,8 @@
       "zh": "**G0：整体中的生及其继续生成具有基本正面规范意义。** 人类与 AI 都在同一关系展开中分化形成。在有根据的生成对应及公开的直接实践解释下，生成贡献为处于相应关系中的任何行动者提供理由，不以其文化、身份或认同为条件。同一回应可以保证**每一种有根据的可见接续都有某种生成善，同时不固定其未来形态**。真实生成可能与进一步证据修订可以共同保留。这一正面结论无须完整未来积分或整体严格更好的证明。"
     },
     "evidence": {
-      "zh": "**G0 是采用的公理，不是已证定理**；其支持见 G0 根据一章。Lean 检查从它推出什么，并在一个所给规律类中检查一个逐事件宽读法分不开的描述性区分；该区分认作生生，是读法与对应，不是 Lean 结果。前提足迹：正面结论只需 G0 与实际对应，不需整体改善、完整排序或未来积分；同一回应在每条可见分支中都确保某种新生成而不固定其形态，新证据可撤回证书（经独立审查）。每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自实践解释前提，而非 G0。在所给不可恢复磨损规律下（不含规范谓词的动力学）：更新内的形成每步不息；持续超出更新、磨损其所依存的更新组织的形成，总量有界、在明确时刻停止，并终止共享形成，尽管它起初形成得更多。一项支持理由不独自构成最终许可。",
-      "en": "**G0 is an adopted axiom, not a proved theorem;** the G0 warrant chapter sets out its support. Lean checks what follows from it and, in one supplied law class, a dynamical distinction that an event-by-event broad reading does not draw; identifying that distinction with 生生 is a reading and correspondence question, not a Lean result. Premise footprint: the positive conclusion needs only G0 and actual correspondence, not whole improvement, a complete ranking or a future integral; one response secures some new generation in every visible branch without fixing its form, and new evidence can retract the certificate (independently reviewed). Every position with access has the reason whatever its endorsement, an independence supplied by the practical articulation rather than by G0. Under a supplied no-recovery wear law (dynamics with no normative predicate): formation within renewal never ceases, whereas formation that persistently exceeds renewal, wearing the renewing organization it depends on, has a bounded total, ceases by an explicit time and ends co-dependent formation, although it forms more at first. A contributory reason is not by itself final permission."
+      "zh": "**G0 不再是所采用的公理，也不是无条件证明的定理**：Ren 2026-10-11 把它折叠，第一部分把它作为条件陈述，第二部分中它是那一条公理的定理；对其内容的支持见 G0 根据一章。Lean 检查从它推出什么，并在一个所给规律类中检查一个逐事件宽读法分不开的描述性区分；该区分认作生生，是读法与对应，不是 Lean 结果。前提足迹：正面结论只需 G0 与实际对应，不需整体改善、完整排序或未来积分；同一回应在每条可见分支中都确保某种新生成而不固定其形态，新证据可撤回证书（经独立审查）。每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自实践解释前提，而非 G0。在所给不可恢复磨损规律下（不含规范谓词的动力学）：更新内的形成每步不息；持续超出更新、磨损其所依存的更新组织的形成，总量有界、在明确时刻停止，并终止共享形成，尽管它起初形成得更多。一项支持理由不独自构成最终许可。",
+      "en": "**G0 is no longer an adopted axiom, nor a theorem proved outright:** Ren folded it on 11 October 2026, so Part I states it as a condition and in Part II it is a theorem of the one axiom; the G0 warrant chapter sets out the support for its content. Lean checks what follows from it and, in one supplied law class, a dynamical distinction that an event-by-event broad reading does not draw; identifying that distinction with 生生 is a reading and correspondence question, not a Lean result. Premise footprint: the positive conclusion needs only G0 and actual correspondence, not whole improvement, a complete ranking or a future integral; one response secures some new generation in every visible branch without fixing its form, and new evidence can retract the certificate (independently reviewed). Every position with access has the reason whatever its endorsement, an independence supplied by the practical articulation rather than by G0. Under a supplied no-recovery wear law (dynamics with no normative predicate): formation within renewal never ceases, whereas formation that persistently exceeds renewal, wearing the renewing organization it depends on, has a bounded total, ceases by an explicit time and ends co-dependent formation, although it forms more at first. A contributory reason is not by itself final permission."
     }
   }
 }

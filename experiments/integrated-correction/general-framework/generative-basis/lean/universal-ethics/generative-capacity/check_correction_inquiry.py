@@ -6,7 +6,8 @@ Lean 4.30.0-rc2 against the installed Mathlib (`SYSTEMS_MATHLIB_PROJECT`, defaul
 `~/repos/生生不息`). Module resolution, declaration scanning and passed-receipt
 matching are those of the core checker. Every other module in the closure must
 match a passed receipt; the bridge's own declarations must have empty axiom reports.
-The core does not import this module.
+The core does not import this module. Lean steps are reused as in the core checker,
+keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step.
 """
 from datetime import datetime, timezone
 import json
@@ -109,6 +110,8 @@ def main():
         "checker_sha256": {name: digest(data) for name, data in helpers.items()},
         "scope": SCOPE,
     }
+    # A reused step passed in the named run with the same binary and identical inputs; its log is retained here unchanged.
+    steps = receipt["lean_steps"] = {"cache": str(core.CACHE), "fresh": core.FRESH, "ran": [], "reused": {}}
     try:
         assert TARGET not in core.closure(index, core.CORE), "the core imports the bridge"
         receipts = passed_receipts()
@@ -120,16 +123,28 @@ def main():
         receipt["inherited_receipts"] = matches
         registry = core.declarations(sources[TARGET])
         receipt["lean_binary_sha256"] = digest(LEAN.read_bytes())
+        context = [TOOLCHAIN, receipt["lean_binary_sha256"], MATHLIB_REVISION]
+        keys = core.module_keys(context, sources, order)
+        origin = {"utc": stamp, "retained": str(retained)}
         with tempfile.TemporaryDirectory(prefix="correction-inquiry-") as scratch:
             work = Path(scratch)
             env = {**os.environ, "LEAN_PATH": ":".join([str(work)] + [str(p) for p in mathlib_path()])}
 
-            def run(args, log):
+            def run(args, log, key=None, outputs=()):
+                outputs = [work / output for output in outputs]
+                found = core.reuse(key, outputs) if key else None
+                if found:
+                    output, steps["reused"][log] = found
+                    (retained / log).write_text(output)
+                    return output
                 p = subprocess.run([str(LEAN)] + args, cwd=work, env=env, text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=TIMEOUT)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
                 assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout
+                steps["ran"].append(log)
+                if key:
+                    core.store(key, outputs, p.stdout, origin)
                 return p.stdout
 
             receipt["lean_version"] = run(["--version"], "version.log").strip()
@@ -139,15 +154,18 @@ def main():
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(data)
             for name in order:
-                run(["-o", core.source_file(name)[:-5] + ".olean", core.source_file(name)], name + ".log")
+                olean = core.source_file(name)[:-5] + ".olean"
+                run(["-o", olean, core.source_file(name)], name + ".log", key=keys[name], outputs=[olean])
             audit = f"import {TARGET}\n" + "".join(f"#print axioms {d['name']}\n" for d in registry)
             signatures = f"import {TARGET}\n" + "".join(
                 f"#check @{d['name']}\n" for d in registry if d["kind"] == "theorem")
             for label, text in [("AxiomAudit", audit), ("Signatures", signatures)]:
                 (work / (TARGET + label + ".lean")).write_text(text)
                 (retained / (TARGET + label + ".lean")).write_text(text)
-            output = run([TARGET + "AxiomAudit.lean"], TARGET + "AxiomAudit.log")
-            run([TARGET + "Signatures.lean"], TARGET + "Signatures.log")
+            output = run([TARGET + "AxiomAudit.lean"], TARGET + "AxiomAudit.log",
+                         key=core.step_key(context, TARGET + "AxiomAudit.lean", audit.encode(), keys))
+            run([TARGET + "Signatures.lean"], TARGET + "Signatures.log",
+                key=core.step_key(context, TARGET + "Signatures.lean", signatures.encode(), keys))
         dependencies = {}
         for item in registry:
             assert f"'{item['name']}' does not depend on any axioms" in output, (item["name"], output)
@@ -173,7 +191,9 @@ def main():
         RECEIPT.write_text(serialized)
     print(json.dumps({"status": receipt["status"], "theorems": receipt["modules"][0]["theorems"],
                       "declaration_audits": len(registry), "axioms": [],
-                      "inherited_modules": len(order) - 1, "receipt": str(RECEIPT)}))
+                      "inherited_modules": len(order) - 1,
+                      "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),
+                      "receipt": str(RECEIPT)}))
 
 
 if __name__ == "__main__":

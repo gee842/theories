@@ -4327,6 +4327,53 @@ Integration: 记录 entropy-history-and-record；计划 §10 R5；章节第一�
 
 **边界。** 离散步，固定单位的自然数量；确定的变化（`Web.Determined`）是合并定理的假设；`Merges` 的结论是双重否定；只陈述了合并与否的二分，没有陈述可达构型的个数不增；粗粒化的熵与有序的开端没有陈述；记录作为普查中的关系项、使算入记录的流本身是一个世界，仍开放；与热力学的对应是读法；尚无独立审查。
 
+## 67. 折叠 G0（P51）
+
+2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)）：
+
+> if we don't need G0 as axiom, fold it, at least for part i, and commit
+
+它回答 P42–P44 落地后的报告。报告列出 §64 的三项选择（是否以公理替换 G0；正面相关是否读作已实现的活的内容的意义；比较继续用哪一种），并提出下一项：审计第二部分哪些结果不用公理成立，以移入第一部分。AI 的读法（待 Ren）：
+- 条件成立：第一部分不需要采用 G0，第二部分中它是那一条公理的定理；这以从意义读出的正面相关为准（§64 的读法）。
+- 所以 G0 不再是所采用的公理：它的定义与已检查的刻画都保留，只改地位，在第一部分是条件，在第二部分是定理。第一项选择以此回答；第二项是折叠所用的读法，仍开放；第三项仍开放。
+- “at least for part i”：第一部分现在就做；同一条件在第二部分也成立，所以章节不再在任何地方称 G0 为所采用的公理。“at least”也读作为报告所提的更大一步留出余地：第二部分中不用公理成立的结果移入第一部分。
+
+本节是计划 P51，由本会话完成。没有新的 Lean，没有新的成果记录；改的是 G0 的地位与说到它的文字。
+
+```text
+Result(s): 复用 metaethical-core-characterization（G0、Valuation.Significant、Valuation.significant_iff、极小性反模型）、
+           held-lives-g0-is-centering（Valuation.significant_iff_held）、one-axiom-yields-g0
+           （Valuation.premises_of_unrestricted、Web.significance_undetermined、g0_of_unrestricted、relevance_least、
+           unrestricted_iff_g0、Web.unrestricted_iff_paths_g0）；不新增，不扩展
+Delta: G0 的地位：从所采用的公理改为第一部分中的条件（不用公理刻画，动力学不决定）与第二部分中公理的定理；
+       章节的前提卡、§5、第一部分的总陈述、第 10 条、第二部分各处与 §8 照此改写；七项记录的文字照此更正
+Supplied premises / correspondence: 无新前提；折叠以从意义读出的正面相关为准（§64 的读法，待 Ren）；
+       “fold”与“at least”的读法是 AI 的，待 Ren
+Evidence: 上列定理在核心回执 20261010T214440.263682Z 中，公理报告为空；本节没有新的检查
+Boundary: 不推出 G0 成立；不改任何定义或定理；正面相关的读法与比较的方式仍属 Ren；
+          核心七个模块的说明仍写“G0 仍是所采用的公理”，与下一次核心检查一起更改
+Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三）；第二部分以 G0 或其各部分为假设的定理在公理之下成立
+             （§53、§64）；回答 §64 的第一项选择
+```
+
+**改了什么。**
+- **前提卡。** G0 一行从“Ren 授权的公理，采用”改为“已折叠，不是公理”：第一部分把它作为条件陈述，由下面三条精确刻画（`significant_iff`、`significant_iff_held`），动力学不决定它（`Web.significance_undetermined`）；第二部分中它是公理的定理，各处用法由从意义读出的正面相关解除。公理一行去掉“Ren 接受之前 G0 仍是所采用的公理”。
+- **第一部分。** §5 新增“G0 折叠：一个条件，不是公理”：G0 恰是什么（连通时种子加两项中立，被持有时处处 S0 加立场中立，极小性），它与那一条公理（公理恰是对任何东西的 G0），动力学不决定它；断言它成立属于第二部分。总陈述三“意义”一条照此改写；理论的完整陈述中第 10 条的地位标为“G0 不是公理”，地位词表中的“公理”改指第二部分的一条公理。
+- **第二部分。** 开头、§6.1、§6.7、§6.8、§6.9、§6.11、§6.12 中“G0 仍是所采用的公理”与“替换须经 Ren 接受”改为折叠后的陈述；§6.1–§6.7 与 §7 的定理以 G0 或其各部分为假设，在公理之下这些假设成立，A、C、L 与 J1–J4 仍是公开的前提。
+- **§8。** 状态表与 Ren 的选择去掉“是否以公理替代 G0”“重述是否替代 G0”，记下折叠；G0 的根据就是那一条公理的根据。术语表新增 G0。
+- **一句话与两个目标。** 在它之下 G0 是定理，不再是公理；伦理方向的目标经 G0 及公开的实践前提完成，G0 现在是第二部分那一条公理的定理。
+- **记录。** 七项记录中说 G0 仍是所采用的公理、或替换待 Ren 的文字改为折叠后的陈述，各加一条历史：axiom-decomposition、closure-verdict-meets-axiom、held-lives-g0-is-centering、metaethical-core-characterization、one-axiom-yields-g0、positive-ground-open-futures、presupposition-scopes。它们的定理不变。
+- **范围与指令。** 生成之论的范围记录（前提一句）与指令登记各加一段；登记中先前“G0 仍是所采用的公理”的两段由新的一段取代，原文保留。
+
+**作者反审。**
+1. **折叠依赖一种读法。** 第二部分中 G0 是定理，是在正面相关读作已实现的活的内容的意义时（`g0_of_unrestricted`、`relevance_least`）。若 Ren 另读正面相关，例如读作继续创造更多意义（强式），G0 只在那一读法由意义推出之处是定理；那时第二部分要重新审视。第一部分的折叠不依赖这一读法：刻画与“动力学不决定”对任意意义成立。
+2. **没有新的 Lean。** 每条引用都是已在核心回执中的定理：公理之下 G0 成立且从意义读出的正面相关是满足它的最小者（`g0_of_unrestricted`、`relevance_least`），公理恰是对任何东西的 G0（`unrestricted_iff_g0`）。更精确的折叠形式——以从意义读出的正面相关，G0 恰是公理限于已实现的活的内容——没有写成 Lean，所以章节没有声称它。
+3. **G0 的名字保留。** 折叠不删 G0：它仍是定义、刻画与各处定理的假设；改的只是它不再被采用为真。G0/J 的已完成成果保持其条件范围，G0 现在由第二部分的公理给出，而不是另一条公理。
+4. **开篇未改。** Ren 的开篇（`theories/becoming/OPENING.md`，README 由它生成）的注释仍写“G0 remains the adopted axiom until this one takes its place”。按其注释，开篇只随 Ren 改；替换的文字交给 Ren。
+5. **Lean 说明滞后。** 核心七个模块的说明仍写 G0 仍是所采用的公理；改说明须重跑核心检查，按落地队列，补丁交给下一次核心检查（整合者决定）。在那之前，模块说明与章节不一致，章节为准。
+
+**边界。** 不推出 G0 成立，不改变任何定理；本节尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4454,6 +4501,13 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 - **Giving.** An embodied relatum arises through the giving of another active relatum, which need not be embodied (`SunSeed`; P18b wording, originally "need not be a life"). Where only embodied relata give, the relatum that gives is embodied (`arises_from_embodied`), and being embodied is not being a life (`EmbodiedSun`, P16c; originally "the giver is embodied").
 - **Splits.** No split is sufficient for `Flow.More.unceasingFrom`, not necessary (`Fork`), and without a census it fails (`Dormant.no_split_without_arising`).
 - **Vocabulary and counts.** The cost vocabulary becomes "giving needs uptake", and `Brood.costless` becomes `Brood.not_dissipative`; Ren may revert either. The P12, P13 and P14 paragraphs count the core closure (19, 20 and 21 modules). The P12b, P15 and P16 paragraphs count the package (19, 19 and 20).
+
+**P51: G0 folded (§67).** Ren answered the report after P42–P44 landed: “if we don't need G0 as axiom, fold it, at least for part i, and commit” ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)). On the AI's reading, pending Ren, the condition holds: Part I needs no adopted G0, and in Part II G0 is a theorem of the one axiom, with positive relevance read from significance (section 64). So G0 is no longer an adopted axiom. Its definition and checked characterizations stay, and only its standing changes: it is a condition in Part I and a theorem in Part II. This answers the first of section 64's three choices; the reading of positive relevance, which the fold uses, and the comparison of courses remain Ren's. No Lean is new and no record is added.
+- **Part I.** A new paragraph in chapter section 5 states G0 as a condition with no axiom: on a connected whole with a living claim it is a seed with both neutralities (`Valuation.significant_iff`); where every living claim is held it is S0 at every standpoint with standpoint neutrality (`Valuation.significant_iff_held`); on the level paths of every web the axiom is G0 for anything (`Web.unrestricted_iff_paths_g0`); and the dynamics do not decide it (`Web.significance_undetermined`). The Part I stated whole, item 10 of the full statement and the premise card say the same.
+- **Part II.** G0 is a theorem of the axiom (`Valuation.premises_of_unrestricted`, `g0_of_unrestricted`), and the theorems of chapter sections 6.1–6.7 and 7 take G0 or its parts as hypotheses, which hold under the axiom; A, C, L and J1–J4 stay disclosed premises. Every “G0 remains the adopted axiom” in the chapter is replaced, and the open lists drop whether the axiom or the restatement replaces G0.
+- **Records.** Seven records' text is corrected, with a history entry each and their theorems unchanged: axiom-decomposition, closure-verdict-meets-axiom, held-lives-g0-is-centering, metaethical-core-characterization, one-axiom-yields-g0, positive-ground-open-futures and presupposition-scopes. The scope of the Theory of Becoming and the directive register record the fold.
+
+What the fold leaves: under another reading of positive relevance, G0 is a theorem only where that reading follows from significance. The single “iff” stating G0 as the axiom restricted to realized living content is not written in Lean and is not claimed. Ren's opening still says G0 remains the adopted axiom and changes only with Ren. Seven core modules' docstrings still say the same until the next core checker run, which the integrator schedules; the chapter governs meanwhile.
 
 The package now has 676 theorems and 1115 declaration audits over a closure of 22 modules (a package of 20), all with empty axiom reports (P18b correction; originally "The core"). These corrections were reviewed by the seventh independent review; see P16c.
 
@@ -4795,4 +4849,4 @@ Names follow Ren's naming criteria: `Protection` becomes `Trophic`, “verdict�
 
 On the AI's reading, pending Ren: becoming leaves a difference with no premise, as history; what costs is holding it. In a finite enclosure, a configuration that holds the history runs out of configurations, a rising quantity of the levels needs a merging of distinctions, and the record held in the conserved amount is exactly the least loss per exchange. So Ren's entropy has two readings, exactly related: as history it needs no premise; as the record in the conserved amount it is the spine's dissipation. Correspondences to Clausius, Boltzmann, Zermelo, Loschmidt, Landauer, Bennett and Gouy–Stodola are readings, not physical derivations; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated. Record entropy-history-and-record added. Receipt 20261010T221843.461334Z (Entropy 172 theorems, 220 declaration audits), periphery receipt 20261010T222927.673958Z. Not yet independently reviewed; the author's counterreview is in section 65.
 
-The package now has @THM@ theorems and @DECL@ declaration audits, over a core closure of @CLOS@ modules and a package of @PKG@, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 64 and 65. The periphery bridge passed against this core (receipt @PERI@).
+The package now has @THM@ theorems and @DECL@ declaration audits, over a core closure of @CLOS@ modules and a package of @PKG@, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 64, 65 and 67. The periphery bridge passed against this core (receipt @PERI@).

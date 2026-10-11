@@ -201,3 +201,35 @@
 
   P46 and P47 land first, as Ren directed. Where those modules land, step 4 reuses `Sampling` rather than rebuilding it.
 - **P42–P44** of the peer session land before P46 and P47, as agreed.
+
+## 5. 连续时间：范围（AI 的提议，待 Ren）/ Continuous time: scope (AI proposal, awaits Ren)
+
+2026-10-11。会话 “0 axiom completeness” 应整合者之请撰写；没有 Lean，没有成果。Ren：“let's finish one first, then another”——先完成更粗的步（`Sampling`，已在 scratch 中验证，待落地），再做连续时间。下面只是范围。
+
+2026-10-11, written by the session “0 axiom completeness” at the integrator's request. There is no Lean and no result. Ren: “let's finish one first, then another”. Coarser steps come first (`Sampling`, verified in scratch, awaiting landing), then continuous time. What follows is scope only.
+
+**中文。**
+- **在核心之内能说什么。** 核心只用 Lean 的 prelude，没有实数，所以连续时间在核心里只能读作步的细分：一个细的世界，给定的世界是它在某些时刻的采样。这是 `Sampling` 的反方向。`Sampling` 已证明各局部条件从细步组合到粗步（平衡在每个关系项每步只列一次时，耗散，封闭恰好如此，耗散地运行下去只需两端）；`Cancelling` 与 `Averaging` 已证明反方向不自动成立。连续时间就读作一座塔：每一层都是下一层的采样，没有最细的一层。以实数为时间的模型只能放在外围（可用 Mathlib），用对应定理连到核心。选哪一种属于表示，所以是 Ren 的决定（b3 的第二部分）。
+- **塔上可以问的问题（待证，都是猜想）。**
+  1. 细分总是存在：把每一粗步的全部交换放在它的第一个细步，其余细步什么也不发生。这时所有局部条件都向下传递。所以单是“存在细分”没有内容，要问的是哪些条件在每一个细分中都成立。
+  2. 各层的局部条件：条件在第 k+1 层成立，就在第 k 层成立（由 `Sampling` 得）。所以在任意细的层上成立的条件，在每一个更粗的层上都成立。
+  3. 与最小差异（b1，Ren 选 A）相互作用：耗散的每一次取用至少失去一个单位。如果连续的交换在越来越细的步上都算作取用，有限时间里的损失就没有上界。一个猜想：在 A 与耗散之下，塔的每一层上改变的步数都以同一个总量为界（单位不随时间细分而变），所以连续时间中有耗散的生成只有有限多个改变事件，没有芝诺式的无穷细分。如果成立，最小差异就把连续时间中的改变定为离散的，这是 b1 与 b3 的连接。
+  4. 只有活跃者给予与取用、有界传递依赖于步（`Strobe`、`Delay`）。在塔中它们需要“活动在区间内保持”（`Web.Held`）在每一层成立，或者需要在没有最细层时重新表述。
+- **需要 Ren 决定的。** 核心中的塔，还是外围的实数时间（或两者，用对应定理连接）；交换事件按细步计，还是按交换计（这决定第 3 项）。
+
+**English.**
+- **What can be said inside the core.** The core uses only Lean's prelude and has no reals. So inside the core, continuous time can only be read as a refinement of the step: a fine world of which the given world is the sampling at some times. This is the converse direction of `Sampling`. `Sampling` proved that the local conditions compose from fine steps to a coarse step:
+  - balance, where each relatum is listed once at each step;
+  - dissipation;
+  - closure, exactly;
+  - running down, which needs only the two ends.
+
+  `Cancelling` and `Averaging` proved that the converse does not hold automatically. Continuous time then reads as a tower of worlds, each the sampling of the next, with no finest level. A model with real-valued time would sit in the periphery, which may use Mathlib, joined to the core by correspondence theorems. Which to choose is a matter of the representation, so it is Ren's decision (the second half of b3).
+- **Questions on a tower (to prove; all conjectures).**
+  1. A refinement always exists: put all of a coarse step's exchange at its first fine step, with nothing at the others. Then every local condition passes down. So mere existence says nothing; the question is which conditions hold in every refinement.
+  2. A condition holding at level k+1 holds at level k (by `Sampling`). So a condition holding at arbitrarily fine levels holds at every coarser one.
+  3. The interaction with the least difference (b1, where Ren chose A). Every taking under dissipation loses at least a unit. If a continuous exchange counts as a taking at ever finer steps, the loss in finite time has no bound. Conjecture: under A and dissipation, the steps of change at every level of a tower are bounded by the same total standing, since the unit does not change with the step. A dissipating becoming in continuous time would then have only finitely many events of change, with no Zeno-like infinite subdivision. If so, the least difference makes change in continuous time discrete, which links b1 and b3.
+  4. Only active relata giving, only active relata taking, and bounded transmission depend on the step (`Strobe`, `Delay`). In a tower they need activity held on the intervals (`Web.Held`) at every level, or a restatement for the case with no finest level.
+- **For Ren.**
+  - A tower in the core, or real time in the periphery, or both joined by correspondence theorems.
+  - Whether events of exchange are counted per fine step or per exchange. This settles question 3.

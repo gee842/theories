@@ -8,15 +8,15 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T00:55:55+00:00",
+  "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
   "claim": {
     "zh": "在同一框架（核心过程加主张赋值）上陈述评价，不另立世界模型。在已形成关系把生生连在一起、且有某一生生的整体上，“每一生生从每一立场都有正面意义”（G0 在主张层的形式）等价于三项合取：某处有一个生生被某立场珍视（种子；任何持 S0 且有自身生生的位置都提供一个）；正面意义沿非零的已形成关系传递（N_rel）；对生生的正面意义不随立场而取消（N_std）。位置化表述 D 由外在论表述 A 推出。一个以新生生为目标的 sound 探究，使每个对它有通达的位置都具有支持它的一项理由。种子、N_rel、N_std、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界（自身区域、自身立场、认同者）。提升规则 L 只有经由一个可行的中间回应才传递。",
     "en": "Evaluation is stated over one frame (the core process with realized claims), with no world model of its own. On a whole where formed relations connect living and further generation and some such claim exists, “every living claim is significant from every standpoint” (G0 at claim level) is equivalent to three conjuncts: some living claim is valued from some standpoint (a seed; any S0-holding position with own living supplies one); significance passes along nonzero formed relations (N_rel); and significance of living content holds from every standpoint (N_std). The positioned articulation D follows from the externalist articulation A. A sound inquiry whose goal is new living content gives every position with access a contributory reason for it. Seed, N_rel, N_std, connection and A each have a consistent countermodel, and each normative rival is the same rule restricted by a formed boundary (own region, own standpoint, endorsers). The lifting rule L is transitive only through a live middle response."
   },
   "hypotheses": [
     {
-      "zh": "S0、N_rel、N_std、A 是公开的规范前提，本结果不证明它们；它刻画 Ren 采用的 G0 的内容，不替换 G0。“G0 ⇒ 前提”一侧几乎是平凡的，内容在反方向与极小性。",
-      "en": "S0, N_rel, N_std and A are explicit normative premises, not proved here; the result characterizes the content of Ren's adopted G0 and does not replace it. The direction from G0 to the premises is nearly immediate; the content lies in the converse and in minimality."
+      "zh": "S0、N_rel、N_std、A 是公开的规范前提，本结果不证明它们；它不用公理刻画 G0 的内容；G0 原是 Ren 采用的公理，Ren 2026-10-11 把它折叠，此后它在第一部分是条件，在第二部分是那一条公理的定理（P51）。“G0 ⇒ 前提”一侧几乎是平凡的，内容在反方向与极小性。",
+      "en": "S0, N_rel, N_std and A are explicit normative premises, not proved here; the result characterizes G0's content with no axiom; G0 was Ren's adopted axiom until Ren folded it on 11 October 2026, after which it is a condition in Part I and a theorem of the one axiom in Part II (P51). The direction from G0 to the premises is nearly immediate; the content lies in the converse and in minimality."
     },
     {
       "zh": "A 是关于有贡献理由的外在论表述：在所见范围上确保自身立场下的正面内容、且有通达，即有一项支持理由；不以认同为条件。",
@@ -228,7 +228,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "2ee1f30b7902c2f1facdf75ccbd092eac71953fdf21330b658a46dfc7f7ec9ec",
+      "sha256": "67be8c0a0e3a716a77e2bb32e778dc3eb51035fb65dc8eb34d3b2b277d834d4f",
       "declarations": []
     },
     {
@@ -543,6 +543,10 @@
     {
       "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。",
       "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P51：Ren 把 G0 折叠（“if we don't need G0 as axiom, fold it, at least for part i, and commit”）：G0 不再是所采用的公理，第一部分把它作为条件陈述，第二部分中它是那一条公理的定理。第一项假设中说 G0 仍是所采用的公理、或替换待 Ren 的文字照此更正。断言与定理不变。",
+      "en": "2026-10-11 P51: Ren folded G0 (“if we don't need G0 as axiom, fold it, at least for part i, and commit”): G0 is no longer an adopted axiom; Part I states it as a condition, and in Part II it is a theorem of the one axiom. The text of the first hypothesis saying G0 remains the adopted axiom, or that the replacement awaits Ren, is corrected so. The claim and theorems are unchanged."
     }
   ]
 }

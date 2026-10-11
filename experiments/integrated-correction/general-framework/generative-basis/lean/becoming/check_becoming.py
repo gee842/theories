@@ -15,8 +15,14 @@ ones depending on an axiom are the injectivity lemmas of constructors with field
 (`injEq`), on `propext`, which no source declaration uses; the receipt lists them.
 The bridge imports existing modules to show that their interfaces are the core's;
 nothing in the core imports it, and its declarations also have empty axiom reports.
+
+A Lean step whose inputs match a step that passed in an earlier run is not run again:
+its outputs and log come from a cache shared by runs and worktrees (`step_key`). The
+receipt lists which steps ran and which were reused, with the run each came from.
+`BECOMING_FRESH=1` runs every step.
 """
 from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -1003,6 +1009,74 @@ def closure(index, roots=SPINE):
     return order
 
 
+# Lean steps that passed, kept outside the repository so that every worktree shares them.
+CACHE = Path(os.environ.get("BECOMING_LEAN_CACHE") or Path.home() / ".cache" / "becoming-lean")
+FRESH = os.environ.get("BECOMING_FRESH") == "1"
+# Imports supplied by the toolchain or the pinned Mathlib; the step's context names them.
+EXTERNAL_ROOTS = {"Init", "Std", "Lean", "Mathlib"}
+
+
+def step_key(context, label, data, keys):
+    """A Lean step's key: the toolchain context, the step, the bytes it reads and the keys
+    of the modules it imports, so a module's key covers its whole import closure. No
+    source in the closure reads files at compile time."""
+    imported = []
+    for name in imports_of(data):
+        if name not in keys:
+            assert name.split(".")[0] in EXTERNAL_ROOTS, ("import without a key", label, name)
+        imported.append(keys.get(name, name))
+    h = hashlib.sha256()
+    for part in [*context, label, data, *imported]:
+        part = part if isinstance(part, bytes) else str(part).encode()
+        h.update(len(part).to_bytes(8, "big") + part)
+    return h.hexdigest()
+
+
+def module_keys(context, sources, order):
+    """Keys of modules compiled in `order`, each after the modules it imports."""
+    keys = {}
+    for name in order:
+        keys[name] = step_key(context, "compile " + name, sources[name], keys)
+    return keys
+
+
+def reuse(key, outputs):
+    """For a step that passed with this key: restore its outputs and return its log and
+    the run it came from. Otherwise None."""
+    if FRESH:
+        return None
+    try:
+        entry = json.loads((CACHE / (key + ".json")).read_text())
+        blobs = [(CACHE / key / path.name).read_bytes() for path in outputs]
+        if [audit_support.digest(blob) for blob in blobs] != entry["outputs"]:
+            return None
+    except (OSError, ValueError, KeyError):
+        return None
+    for path, blob in zip(outputs, blobs):
+        path.write_bytes(blob)
+    return entry["log"], entry["run"]
+
+
+def store(key, outputs, log, run):
+    """Keep a passed step for later runs. The cache only saves work, so a failed write is ignored."""
+    def write(path, data):
+        temporary = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+        temporary.write_bytes(data)
+        os.replace(temporary, path)
+
+    try:
+        blobs = [path.read_bytes() for path in outputs]
+        if outputs:
+            (CACHE / key).mkdir(parents=True, exist_ok=True)
+        CACHE.mkdir(parents=True, exist_ok=True)
+        for path, blob in zip(outputs, blobs):
+            write(CACHE / key / path.name, blob)
+        entry = {"run": run, "log": log, "outputs": [audit_support.digest(blob) for blob in blobs]}
+        write(CACHE / (key + ".json"), json.dumps(entry, ensure_ascii=False).encode())
+    except OSError:
+        pass
+
+
 def passed_receipts():
     receipts = []
     for path in LEAN_ROOT.rglob("*.json"):
@@ -1116,6 +1190,8 @@ def main():
         "checker_sha256": {name: audit_support.digest(data) for name, data in helpers.items()},
         "scope": SCOPE,
     }
+    # A reused step passed in the named run with the same binary and identical inputs; its log is retained here unchanged.
+    steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}}
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
         inherited = [name for name in order if name not in SPINE]
@@ -1131,17 +1207,29 @@ def main():
         binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
         receipt["lean_binary_sha256"] = audit_support.digest(binary.read_bytes())
         command = [str(lean), "+" + audit_support.TOOLCHAIN]
+        context = [audit_support.TOOLCHAIN, receipt["lean_binary_sha256"]]
+        keys = module_keys(context, sources, order)
+        origin = {"utc": stamp, "retained": str(retained)}
         records = []
         with tempfile.TemporaryDirectory(prefix="becoming-spine-lean-") as scratch:
             work = Path(scratch)
 
-            def run(args, log, where=work):
+            def run(args, log, where=work, key=None, outputs=()):
+                outputs = [where / output for output in outputs]
+                found = reuse(key, outputs) if key else None
+                if found:
+                    output, steps["reused"][log] = found
+                    (retained / log).write_text(output)
+                    return output
                 env = {**os.environ, "LEAN_PATH": str(where)}
                 p = subprocess.run(command + args, cwd=where, env=env, text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=600)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
                 assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout
+                steps["ran"].append(log)
+                if key:
+                    store(key, outputs, p.stdout, origin)
                 return p.stdout
 
             receipt["lean_version"] = run(["--version"], "version.log").strip()
@@ -1152,12 +1240,14 @@ def main():
                 target.write_bytes(data)
             for name in order:
                 flat = name.replace(".", "")
-                run(["-o", source_file(name)[:-5] + ".olean", source_file(name)], name + ".log")
+                olean = source_file(name)[:-5] + ".olean"
+                run(["-o", olean, source_file(name)], name + ".log", key=keys[name], outputs=[olean])
                 audit = "import " + name + "\n" + "\n".join(
                     "#print axioms " + item["name"] for item in registry[name]) + "\n"
                 (work / (flat + "AxiomAudit.lean")).write_text(audit)
                 (retained / (flat + "AxiomAudit.lean")).write_text(audit)
-                output = run([flat + "AxiomAudit.lean"], flat + "AxiomAudit.log")
+                output = run([flat + "AxiomAudit.lean"], flat + "AxiomAudit.log",
+                             key=step_key(context, flat + "AxiomAudit.lean", audit.encode(), keys))
                 dependencies = {}
                 for item in registry[name]:
                     full = item["name"]
@@ -1175,7 +1265,8 @@ def main():
                         "#check @" + item["name"] for item in registry[name] if item["kind"] == "theorem") + "\n"
                     (work / (flat + "Signatures.lean")).write_text(signatures)
                     (retained / (flat + "Signatures.lean")).write_text(signatures)
-                    run([flat + "Signatures.lean"], flat + "Signatures.log")
+                    run([flat + "Signatures.lean"], flat + "Signatures.log",
+                        key=step_key(context, flat + "Signatures.lean", signatures.encode(), keys))
                 records.append({
                     "module": name, "spine": name in SPINE,
                     "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
@@ -1190,7 +1281,8 @@ def main():
                 modules=", ".join("`" + name for name in core_closure))
             (work / "EnvironmentAudit.lean").write_text(environment)
             (retained / "EnvironmentAudit.lean").write_text(environment)
-            output = run(["EnvironmentAudit.lean"], "EnvironmentAudit.log")
+            output = run(["EnvironmentAudit.lean"], "EnvironmentAudit.log",
+                         key=step_key(context, "EnvironmentAudit.lean", environment.encode(), keys))
             constants = {m: int(n) for m, n in re.findall(r"CONSTANTS (\S+) (\d+)", output)}
             assert sorted(constants) == sorted(core_closure), (constants, core_closure)
             generated = {n: [a.strip() for a in axs.split(",") if a.strip()]
@@ -1203,15 +1295,20 @@ def main():
             receipt["generated_axiom_dependencies"] = generated
             (work / "Controls.lean").write_text(CONTROLS)
             (retained / "Controls.lean").write_text(CONTROLS)
-            run(["Controls.lean"], "Controls.log")
+            run(["Controls.lean"], "Controls.log", key=step_key(context, "Controls.lean", CONTROLS.encode(), keys))
             # The core needs nothing beyond Lean's prelude.
             bare = work / "prelude-only"
             bare.mkdir()
+            stripped = {name: re.sub(r"^import Std\n", "", sources[name].decode(), flags=re.M).encode()
+                        for name in core_closure}
+            bare_keys = module_keys(context + ["prelude only"], stripped, core_closure)
             for name in core_closure:
                 target = bare / source_file(name)
                 target.parent.mkdir(parents=True, exist_ok=True)
-                target.write_text(re.sub(r"^import Std\n", "", sources[name].decode(), flags=re.M))
-                run(["-o", source_file(name)[:-5] + ".olean", source_file(name)], name + ".PreludeOnly.log", bare)
+                target.write_bytes(stripped[name])
+                olean = source_file(name)[:-5] + ".olean"
+                run(["-o", olean, source_file(name)], name + ".PreludeOnly.log", bare,
+                    key=bare_keys[name], outputs=[olean])
             receipt["core_compiles_from_prelude"] = True
             receipt["checked_application_examples"] = [
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
@@ -1249,6 +1346,7 @@ def main():
         "inherited_modules": len(records) - len(spine),
         "inherited_axioms": sorted({a for r in records if not r["spine"]
                                     for aa in r["axiom_dependencies"].values() for a in aa}),
+        "lean_steps_run": len(steps["ran"]), "lean_steps_reused": len(steps["reused"]),
         "receipt": str(RECEIPT),
     }))
 

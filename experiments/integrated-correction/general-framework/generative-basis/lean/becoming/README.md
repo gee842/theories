@@ -73,6 +73,10 @@ python3 -B experiments/integrated-correction/general-framework/generative-basis/
 
 The checker resolves the import closure, requires inherited modules to match passed receipts, compiles in dependency order with Lean 4.29.1, audits the axioms of every source declaration and of every constant Lean generates in the core closure, and checks the core's three purity conditions. The receipt records the result; each run's raw output is kept in `becoming-checks/`.
 
+每个 Lean 步骤以其读入的全部内容为键：工具链与二进制、本身字节，以及（经其键）所导入模块闭包的字节。键与先前已通过的步骤相同时，从各运行与各工作树共享的缓存（`~/.cache/becoming-lean`，可用 `BECOMING_LEAN_CACHE` 改）取回其输出与日志，不再重跑；所以只有改动的模块及依赖它的模块重新编译与审计。回执的 `lean_steps` 列出本次实际运行的步骤和被复用的步骤及其来源运行。`BECOMING_FRESH=1` 重跑全部步骤。[`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py) 用同一缓存，键中另含 Mathlib 修订。
+
+Each Lean step is keyed by everything it reads: the toolchain and binary, its own bytes and, through their keys, the bytes of its whole import closure. A step whose key matches one that passed earlier is not run again; its outputs and log come from a cache shared by runs and worktrees (`~/.cache/becoming-lean`, or `BECOMING_LEAN_CACHE`), so only changed modules and the modules depending on them are compiled and audited again. The receipt's `lean_steps` lists the steps run and the steps reused, each with the run it came from. `BECOMING_FRESH=1` runs every step. [`check_correction_inquiry.py`](../universal-ethics/generative-capacity/check_correction_inquiry.py) uses the same cache, with the Mathlib revision in its keys.
+
 ## 扩展 / Extending
 
 - 新的形式结果陈述在这里。核心表达不了时扩展核心，不另建模型。 / State new formal results here; extend the core rather than build another model.
