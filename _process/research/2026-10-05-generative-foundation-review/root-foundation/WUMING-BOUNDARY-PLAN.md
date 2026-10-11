@@ -14,6 +14,10 @@ Ren then wrote, on that AI-authored sentence of the opening's version 3:
 
 本文是计划：不向核心加入定理，不登记成果。下面的边界条件是待陈述、待证明的猜想，不是已有结论；读法属于 Ren。
 
+**状态（P62）。** 2026-10-11 Ren 答“yes let's do 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。B1 与 B2 已作为统一计划 P62 在核心模块 `Becoming.Seeking` 中陈述并检查；B3 与 B4 是 P49、P53、P55 已有的定理；B5 没有陈述。见 §6。§0–§5 是阶段开始之前写的计划，保留原文。
+
+**Status (P62).** On 11 October Ren answered "yes let's do 无明". B1 and B2 are stated and checked as unification plan P62 in the core module `Becoming.Seeking`; B3 and B4 are theorems P49, P53 and P55 already state; B5 is not stated. See section 6. Sections 0–5 are the plan as written before the stage and are kept as written.
+
 2026-10-10, Asia/Bangkok. A research note and plan written by the AI (Claude Opus 5.5) at Ren's instruction. Nothing enters the core and no result is registered. The boundary conditions below are conjectures to be stated and proved, not results, and the readings are Ren's to choose.
 
 ## 0. 问题 / The question
@@ -109,3 +113,28 @@ All five need no significance, so they belong to Part I, without axiom. Calling 
 - Correction of an illusion beyond dependence through some channel other than support and inquiry would refute the exclusivity in B3 and B4.
 - If inquiry cannot reach beyond what support marks in any represented world, B4 fails, and with it the opening's claim that one's own understanding can see.
 - Representing seeking may need more than the spine has: a target formed within the unfolding, rather than a predicate supplied from outside. If no such representation keeps the core pure, the stage moves to the periphery, and that is reported.
+
+## 6. 结果（P62）/ Result (P62)
+
+- **B1, enough.**
+  - Stated exactly: under a determined law, seeking comes to rest with its target met from some step on, exactly when it reaches a state the law leaves unchanged that meets it (`Law.rests_iff`).
+  - The three kinds of target behave as conjectured. A fixed target can be met at rest (`Law.fixed_rests`). "More than now" is met only by change and, met at every step, needs an open world (`more_not_at_rest`, `more_needs_open`). "Above all others" is met by at most one seeker at a state, so no state at rest meets it for two (`aboveAll_unique`, `Law.aboveAll_never_rests`).
+  - The family conjecture is not stated beyond these: that seekers rest together within the margin of `supported_iff_within_margin`.
+- **B2, expansion or exhaustion.**
+  - Where what stands is listed at each step, rising without end needs steps at arbitrarily late times at which what stands does not run down: drawing from beyond, or exchange that does not dissipate (`Flow.more_needs_unrun`).
+  - Where what stands runs down from some step on, the rises stop (`Flow.more_exhausted`).
+  - That exhaustion ends the seekers themselves, where activity needs support, is not stated.
+- **B3, feedback.** These are theorems already on the spine:
+  - the mark at the margin (`Flow.Balances.supported_iff_within_margin`);
+  - the delay below the threshold, and its exact form (`Flow.subthreshold_alike`, P49);
+  - the distance to the break, which is not registered (`Web.break_not_bounded`, P55);
+  - no mark at all beyond the registration closure (`Flow.unregistered_beyond_registration`, P49).
+  - "Corrects" rather than "marks" still needs a model of how a formed target is revised.
+- **B4, seeing (明).** Registration reaching what support does not mark:
+  - measurement (`Web.observed_raise_registers`);
+  - a model answerable to registration (`Flow.refutes_tail_within`);
+  - another formation's registration (`Clearing.pooled`);
+  - for one's own acts, a return under a model of what is irrelevant (`Run.fixes_on_return`, `Run.generalizes`, P53).
+- **B5, hijacking.** Not stated.
+
+The readings remain the AI's, pending Ren. 无明 is read as the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and 明 as registration reaching what support does not mark. The Chinese for "registers" is now 识 (Ren, 11 October).
