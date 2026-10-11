@@ -154,8 +154,8 @@
     "en": "Stated for discrete steps, natural-number amounts and finite families; needs balance, dissipation, enclosure and decided equality; the conclusion is a constructive negation and exhibits no step at which the family is fed; says only that what lies beyond must be counted, not that it ought to be, and contains no ethical predicate; says neither which formation conveys nor whether the source is living; in Lone the one source does all the conveying; the names are the AI's wording, for Ren to choose (Conveys, FedFromBeyond and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：Becoming.Continuation 的 48 项定理全部空依赖；同一回执覆盖包内 51 个模块（含只作导入的根模块与桥接），共 2673 项定理／3895 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T211111.085532Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 53 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 48 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 51 modules (including the import-only root and the bridge) with 2673 theorems/3895 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T211111.085532Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 53 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T225632.916383Z）：Becoming.Continuation 的 48 项定理全部空依赖；同一回执覆盖包内 55 个模块（含只作导入的根模块与桥接），共 2823 项定理／4112 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T230225.829392Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 57 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T225632.916383Z): the 48 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 55 modules (including the import-only root and the bridge) with 2823 theorems/4112 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T230225.829392Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 57 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -212,12 +212,12 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155"
+      "sha256": "7504ceb7638c263e4211c75d80fd47d84476f7b1174fdffe8297b8fcf8d3d871"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198"
+      "sha256": "bb3a29ae2ddc526a8778418f588c6048e93dd0552f52a5448ec0134f7fe96745"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",

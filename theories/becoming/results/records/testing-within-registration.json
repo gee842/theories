@@ -224,8 +224,8 @@
     "en": "That a formation observes anything beyond its support, forms a model, wants to test or knows its registration closure is not derived; registering alike bounds what can be told apart and says nothing of what a difference is about; what an act does compares two histories and is testable only relative to a model of the history without it, and varying one's own act and registering the difference (experiment) is not stated; how others respond is supplied; the multi-step Scope bridge remains open; the readings are the AI's, narrowed by the review, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Web.Refutes.not_of_alike、Web.tail_unrefuted、Web.refutesWithin_iff_conjunction、Flow.refutes_tail_within、Web.belief_judge_iff、Flow.alike_within_closed、Clearing.tested_by_dweller 与 Clearing.pooled；同一回执覆盖包内 51 个模块（含只作导入的根模块与桥接），共 2673 项定理／3895 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T211111.085532Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 53 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Web.Refutes.not_of_alike, Web.tail_unrefuted, Web.refutesWithin_iff_conjunction, Flow.refutes_tail_within, Web.belief_judge_iff, Flow.alike_within_closed, Clearing.tested_by_dweller and Clearing.pooled; the same receipt covers the package's 51 modules (including the import-only root and the bridge) with 2673 theorems/3895 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T211111.085532Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 53 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T225632.916383Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Web.Refutes.not_of_alike、Web.tail_unrefuted、Web.refutesWithin_iff_conjunction、Flow.refutes_tail_within、Web.belief_judge_iff、Flow.alike_within_closed、Clearing.tested_by_dweller 与 Clearing.pooled；同一回执覆盖包内 55 个模块（含只作导入的根模块与桥接），共 2823 项定理／4112 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T230225.829392Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 57 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T225632.916383Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Web.Refutes.not_of_alike, Web.tail_unrefuted, Web.refutesWithin_iff_conjunction, Flow.refutes_tail_within, Web.belief_judge_iff, Flow.alike_within_closed, Clearing.tested_by_dweller and Clearing.pooled; the same receipt covers the package's 55 modules (including the import-only root and the bridge) with 2823 theorems/4112 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T230225.829392Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 57 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -379,19 +379,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155",
+      "sha256": "7504ceb7638c263e4211c75d80fd47d84476f7b1174fdffe8297b8fcf8d3d871",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198",
+      "sha256": "bb3a29ae2ddc526a8778418f588c6048e93dd0552f52a5448ec0134f7fe96745",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f1ca93d64c2a5eb21ebb53d8a2e9800449eace7415cb34fc9be51417069dd055",
+      "sha256": "63c57284c225997a721b87aa718e3d42a068e2251b35d5a68564ebfeff51d73b",
       "declarations": []
     },
     {
@@ -465,8 +465,8 @@
     }
   ],
   "next_delta": {
-    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；实验：变动自己的动作并识差别；模型从哪里来；由动力学给出回应，而不是假设它；识关于什么（校准）。",
-    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; experiment: varying one's own act and registering the difference; where a model comes from; responses given by the dynamics rather than assumed; what a registration is about (calibration)."
+    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；实验：变动自己的动作并识差别；模型从哪里来（P66 给出哪些投影承载模型：恰是投影相同的配置同去者，见 projection-carrying-a-law）；由动力学给出回应，而不是另给它（P65 另给其余经其识回应，并把比较定在回应所及之内）；识关于什么（校准）。",
+    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; experiment: varying one's own act and registering the difference; where a model comes from (P66 states which projections carry one: exactly those under which configurations alike go alike, projection-carrying-a-law); responses given by the dynamics rather than supplied (P65 supplies that the rest responds through its registration and decides the comparison within the responsive reach); what a registration is about (calibration)."
   },
   "history": [
     {
@@ -500,6 +500,10 @@
     {
       "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
       "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P64、P65、P66：经选择者之识直到某步的每个选择（本记录的信念是其一）恰在选择者把两段历史识得相同时选它们相同（Web.selects_alike_iff，selection-through-registration）；其余经其识回应时，比较在回应所及之内决定，是本记录 Flow.alike_within_closed 从部分一方的对偶（comparison-where-the-rest-responds）；投影恰在投影相同的配置同去时承载规律（projection-carrying-a-law）。next_delta 随之修订；见整合文档 §86、§87、§88。断言不变。",
+      "en": "2026-10-12 P64, P65, P66: every selection through a selector's registration up to a step, this record's belief among them, selects two histories alike exactly when the selector registers them alike (Web.selects_alike_iff, selection-through-registration); with the rest responding through its registration, the comparison is decided within the responsive reach, the dual from a part's side of this record's Flow.alike_within_closed (comparison-where-the-rest-responds); a projection carries a law exactly where configurations alike under it go alike (projection-carrying-a-law). next_delta revised; see §86, §87 and §88 of the integration note. The claim is unchanged."
     }
   ]
 }

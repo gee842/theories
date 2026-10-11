@@ -41,7 +41,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
@@ -54,7 +54,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -136,6 +136,22 @@ SCOPE = (
     "configurations the projection returns; a wrong projection fixes a difference between moves "
     "that make none, is never refuted where the moves follow what it leaves out, and is refuted "
     "where they vary against it. "
+    "Mechanism: a projection of configuration carries a determined law exactly where configurations "
+    "alike under it go alike under it, the image of the step being the least process the step factors "
+    "through; what the step does not depend on is re-absorbed in one step, Capture's rule holding the "
+    "outcome being the instance with the rule as the projection; a system changing its own rule is one "
+    "determined process on the joint configuration, the state having a law of its own exactly where "
+    "the rule makes no difference to it; a law through a projection is not fixed where not yet taken; "
+    "the standard model x' = F(x, u, e) is a determined process whose move is the input and the noise, "
+    "an intervention is a move not taken and noise a move not represented, the model with the noise "
+    "forgotten being determined exactly where the noise makes no difference. "
+    "Attraction: for every determined law, with no premise, a configuration is drawn into an absorbing "
+    "region exactly where it does not return, and what is drawn in never comes back; what can be had n "
+    "steps on is absorbing and every possibility lost by step n is drawn into it; of two merged "
+    "configurations not both return; within finitely many configurations attraction is merging and "
+    "what returns draws in everything else, while counting on draws without merging; under any "
+    "process, once inside an invariant region what lies outside cannot be had again, and leaving a "
+    "region needs a move that does not keep it. "
     "Substitution: in the support-gated law, a focal formation that can substitute an alternative "
     "condition stays active, transforms its dependence at a step that can be found, and consumes, "
     "while the sustaining formation ends; a concrete law meets the premises, and there the stepwise "
@@ -497,7 +513,8 @@ SCOPE = (
     "descent at arbitrarily late steps needs steps at arbitrarily late times across which what "
     "stands does not run down, and where it runs down from some step on descent does not recur; "
     "where the next configuration depends on the rule and not the state, reforming the state alone "
-    "is re-absorbed from the next step on. "
+    "is re-absorbed from the next step on, the instance of Mechanism's re-absorption with the rule as "
+    "the projection. "
     "Evolution: a relatum descends from a formation across a step when the formation takes part "
     "in the step and gives to it and the relatum comes to stand across it; over any finite family "
     "of parents, each with finitely many offspring, and any amounts read of them, the offspring's "
@@ -1028,6 +1045,20 @@ SCOPE = (
     "for every horizon up to which only that stock may fail, some raise registers alike wherever "
     "the web supports the formation and supports it up to the horizon, while observing the stock "
     "registers every raise. "
+    "Response: where every formation outside a part exchanges alike across each step up to which it "
+    "has registered alike, a supplied premise of which the rest held fixed is a case, every formation "
+    "beyond the part's responsive reach, its closure under affecting what is registered, registers and "
+    "exchanges alike, the difference between two flows reaches none of them and the comparison is "
+    "decided within the reach; registering support only, with one flow, the responsive reach is the "
+    "union of the members' reach closures; in the trophic cascade it is the wolves, the deer and the "
+    "forest, and in a two-party loop the difference returns to the part's own support. "
+    "Selection: two histories are selected alike by every selection through a selector's registration "
+    "exactly when the selector registers them alike, and likewise for pooled registration; with the "
+    "rest fixed, selection and scoring are blind beyond the registration closure; the clearer's "
+    "selection misses the dweller's ending, which the dweller's and the pooled registration select; a "
+    "flow reaching beyond the registration closure to raise a gauged store is selected, alike with "
+    "raising it without reaching beyond; selection supplying the carriers, their share rises among "
+    "descendants. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "

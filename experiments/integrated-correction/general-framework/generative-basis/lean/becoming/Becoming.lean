@@ -7,6 +7,8 @@ import Becoming.Return
 import Becoming.Horizon
 import Becoming.Joint
 import Becoming.Experiment
+import Becoming.Mechanism
+import Becoming.Attraction
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
@@ -47,6 +49,8 @@ import Becoming.Boundaries
 import Becoming.Relevance
 import Becoming.Testing
 import Becoming.Runaway
+import Becoming.Response
+import Becoming.Selection
 
 /-!
 # The Theory of Becoming: the formal core
@@ -84,6 +88,21 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   factors through, one occasion stands for its whole class; a wrong projection misattributes,
   is never refuted by moves in step with what it leaves out, and is refuted by moves varied
   against it. The readings are the AI's, pending Ren.
+* `Becoming.Mechanism` (L3): a projection of configuration carries a determined law exactly
+  where configurations alike under it go alike, the image of the step being the least
+  candidate; what the step does not depend on is re-absorbed in one step; a system changing its
+  own rule is one determined process on the joint configuration, and the state has a law of its
+  own exactly where the rule makes no difference to it; a law through a projection is not fixed
+  where not yet taken. The standard causal model x′ = F(x, u, ε) is a determined process whose
+  move is the input and the noise: an intervention is a move not taken, noise a move not
+  represented. The readings are the AI's, pending Ren.
+* `Becoming.Attraction` (L3): for every determined law, with no premise, a configuration is
+  drawn into an absorbing region exactly where it does not return, and what is drawn in never
+  comes back; what can be had n steps on is absorbing and every lost possibility is drawn into
+  it; of two merged configurations not both return; within finitely many configurations
+  attraction is merging and what returns draws in everything else, while an open world
+  separates them; under a process, entering an invariant region locks in. The readings are the
+  AI's, pending Ren.
 * `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
@@ -224,7 +243,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   as the others, the target's share among the offspring does not fall, and rises where they
   leave more; where what stands runs down from some step on, descent and so the selection stop;
   where the next configuration depends on the rule and not the state, reforming the state alone
-  is re-absorbed. The readings are the AI's, pending Ren.
+  is re-absorbed, the instance of `Becoming.Mechanism`'s re-absorption with the rule as the
+  projection. The readings are the AI's, pending Ren.
 * `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world
@@ -517,6 +537,17 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   not observe. Before the break, for every horizon a world with the stock raised registers
   alike and lasts past it: how far off the break is does not register, while observing the stock
   registers it at once. The readings are the AI's, pending Ren.
+* `Becoming.Response` (L4): where the rest responds through its registration, a supplied
+  premise, the comparison is decided within the part's responsive reach, its closure under
+  affecting what is registered: the dual of the registration closure, and, registering support
+  only, the union of the members' reach closures. Beyond it every formation registers and
+  exchanges alike. The readings are the AI's, pending Ren.
+* `Becoming.Selection` (L4): two histories are selected alike by every selection through a
+  selector's registration exactly when it registers them alike; with the rest fixed, selection
+  is blind beyond the registration closure, so an ending within a candidate's reach closure and
+  beyond the selector's registration closure is not selected, while pooled registration selects
+  it; where reaching beyond raises what registers, selection favours it. The readings are the
+  AI's, pending Ren.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

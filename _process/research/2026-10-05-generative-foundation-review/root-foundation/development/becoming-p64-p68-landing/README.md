@@ -157,3 +157,26 @@ the rule as the projection."
 - The integrator sets the chapter's section 9 totals, the study's closing counts and the README counts at landing.
 - The work board's P66 row title said "a level of description"; the package says "projection" or "description"
   throughout, never level.
+
+## Landed (12 October)
+
+Landed on main by its owner (Ren, 12 October: "maybe merge first"; the integrator offline), right after P59 + P58
+(`9f588b56`), as study §86–§89. On a worktree of main at `0a67d2ef`:
+
+1. `python3 -B land_edits.py ROOT`: copies the four modules, applies `capture.patch` (checking the result equals
+   `lean/Becoming/Capture.lean`), and makes the root module, `CORE`, scope and Lean README edits above.
+2. The consolidated checker, once: receipt `20261011T225632.916383Z`, passed (core closure 57 modules, package 55;
+   2823 theorems, 4112 declaration audits, every axiom report empty; Mechanism 30, Attraction 47, Response 30,
+   Selection 43, Capture 11 theorems; 30 steps run, 225 reused). The periphery checker: `20261011T230225.829392Z`,
+   passed (60 inherited modules; 7 steps run, 57 reused).
+3. `apply_docs.py ROOT 86 '| P59 不平衡作为关系项' '- **P59:**'`.
+4. `python3 -B land_docs.py ROOT`: the chapter's section 9 totals, the study's closing counts and the reading
+   catalogue's entry (sentence and Lean list), from the receipt. **This goes before step 5**: run after it, it leaves
+   the hashes of the chapter and the study stale in every record citing them, which `research-render` reports. On
+   the first pass it ran after; the records were reset to main's and step 5 rerun, the result differing from the
+   first pass in reference hashes only.
+5. `make_records.py ROOT 2026-10-11T23:07:00+00:00 86`, then `repoint.py ROOT HEAD` (71 records re-pointed, no stale
+   reference left).
+6. `make research-render`, `make research-check`: no error, no drift. `linkcheck.py ROOT`: every relative link on an
+   added line resolves, anchors included.
+7. After the landing commit, `board_edit.py ROOT COMMIT CORE_UTC PERI_UTC` marks P64–P68 landed on the work board.

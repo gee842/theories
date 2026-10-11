@@ -5487,6 +5487,379 @@ Integration: 章节（§8 表示的选择、§9 行、术语表）；记录 imba
 
 **边界。** 不采用；不说明世界在哪里平衡；名称（`withImbalance`、idle／闲置）是 AI 所选；尚未经独立审查。
 
+## 86. 经识的选择：选择恰及选择者所识（P64）
+
+2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴入一段关于因果系统的说明（作者未注明，读来是别处的 AI 所写，不是 Ren 的话，也不是理论的前提）。AI 把理论与这一框架（`x_{t+1} = F(x_t, u_t, ε_t)`、反馈、改变自身规则的系统、吸引子）作了比较，又提出五项可学之处。Ren 写道：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。五项提议是 AI 的；本节是其中第一项：选择只及选择者所识。它在工作板上认领为 P64。它不加公理；平衡只在被识的条件上逐步假设，“选择经识”是写在每条定理中的条件，不推出。它属于第一部分。核心新增模块 `Becoming.Selection`（L4），43 项定理，导入 `Becoming.Testing` 与 `Becoming.Capture`（P62，先于本节落地），不改任何已有模块。
+
+成果记录新增一项：[selection-through-registration](../../../../theories/becoming/results/records/selection-through-registration.md)。
+
+```text
+Result(s): 复用 testing-within-registration（Web.RegistersAlike、Web.RegistersAlikeUpTo、RegistersAlike.refl、
+           RegistersAlikeUpTo.symm、earlier、of_obs、Web.Belief、Web.Refutes、Refutes.not_meets、Web.RegistersAlikeAll、
+           Flow.WithinRegistration、Flow.withinRegistration_supportOnly、Flow.unregistered_beyond_registration、
+           Flow.alike_within_registration、Clearing.alike_for_clearer、Clearing.tested_by_dweller、Clearing.DwellerEnded、
+           Clearing.resourceGone、Clearing.clearerAndDweller）、target-capture（share_rises、offspringCount）；
+           Becoming.Feedback 的 WithinClosure、Flow.WithinReach、Clearing.reach_middle、Clearing.resource_of_clearer；
+           Becoming.Change 的 mark 与 mark_cases；新增上列一项
+Delta: 经识的选择：Web.SelectsThrough、Web.ScoresThrough、Web.RegistersAlike.trans、Web.RegistersAlikeUpTo.trans、
+       Web.belief_selects、Web.selects_alike_iff、Web.separates、Web.SelectsThrough.refutes_iff、Web.admits_through、
+       Web.observed_scores、Web.ScoresThrough.atLeast、Web.SelectsThrough.later、Web.SelectsThrough.widen、
+       Web.SelectsThrough.not、Web.SelectsThrough.and、Web.scores_alike_iff。合起来的识：Web.SelectsThroughAll、
+       Web.RegistersAlikeAll.refl、symm、trans、Web.SelectsThrough.all、Web.SelectsThroughAll.and、
+       Web.selects_alike_all_iff、Web.separates_all。识闭包之外的不见：Flow.unselected_beyond_registration、
+       Flow.unscored_beyond_registration、Flow.unselected_beyond_registration_all、
+       Flow.unselected_beyond_registration_responsive。后代中的份额：share_rises_through（应用）。见证：Clearing
+       （unselected、dweller_within_reach、dweller_spared、clearer_spared、selected_by_dweller、dweller_alike_gone、
+       BothAdmitted、selected_pooled）；Diversion（Formation、Place、first、drawn、raised、diverting、restrained、
+       supplying、divertedLevel、restrainedLevel、suppliedLevel、web、gauge、StoreAtLeast、takerAlone、
+       diverting_balances、restrained_balances、supplying_balances、dependent、diverting_acting、diverting_taking、
+       takerAlone_closed、supplied_closed、favours、blind_to_source）
+Supplied premises / correspondence: 不加公理；选择经识（SelectsThrough、ScoresThrough、SelectsThroughAll）是给出的条件，
+       写在用到它的每条定理中，不推出；选择是关于水平历史的任意命题，“保留、奖励、留下后代、训练”是读法；识闭包之外的
+       不见另设与 unregistered_beyond_registration 相同的条件：其余交换固定（扣留的部分，WithheldLevels），平衡只在闭包
+       成员所识的条件上逐步假设，部分的每个成员都在识闭包之外；回应的形式用 alike_within_registration 的假设（两流在场者
+       相同，起始在所识者上相同，成员只经自己之识回应）；评分定律的逆向以“与第一段历史识得相同”的可判定性为命名的假设
+       （decided）；share_rises_through 中被选者与其余亲代各自的后代数之界、b < a、两类亲代都在，是给出的；离散的步、
+       自然数的量；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T225632.916383Z（Becoming.Selection 43 项定理，全部源声明公理报告为空），外围回执 20261011T230225.829392Z
+Boundary: 谁选择、选择者识什么、一个实际的选择是否经识、后代是否随选择、伸向识闭包之外是否被选取，都不推出；
+          share_rises_through 是 Capture 的 share_rises 的应用，不新增算术，传递不在其中；缺口与偏向只在见证中陈述，
+          没有一般定理；见证是最小的；不含伦理谓词
+Integration: 计划 P64，比较之后五项提议的第一项；把 P49 的识闭包之外的不见（unregistered_beyond_registration、
+             alike_within_registration）与 P42 的所及闭包接到选择上：缺口是所及闭包减去识闭包；把 P62 的份额上升接到
+             经识的选择上；与 P55 并列：经识的策略不能用上它所不识的，经识的选择不能对它所不识的作出选择
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Web.SelectsThrough`、`Web.ScoresThrough` | 一个选择（关于水平历史的任意命题）经形成 `f` 直到某步之识：`f` 直到那一步识得相同的历史，被选得相同；评分经它：识得相同的历史得分相同 |
+| `Web.RegistersAlike.trans`、`Web.RegistersAlikeUpTo.trans` | 识得相同可传递；连同 `RegistersAlike.refl` 与 `RegistersAlikeUpTo.symm`，是等价关系 |
+| `Web.belief_selects` | 形成的信念（它与某段历史识得相同的历史，`Web.Belief`）是经其识的选择 |
+| `Web.selects_alike_iff` | 选择恰及所识（不加前提）：两段历史被每个经 `g` 直到某步之识的选择选得相同，恰当 `g` 直到那一步把它们识得相同 |
+| `Web.separates` | `g` 把两段历史识得不同之处，有一个经其识的选择（它的信念）在前者成立、在后者不成立 |
+| `Web.SelectsThrough.refutes_iff` | 经识的选择被它的选择者完全检验：恰在它不成立之处被否证 |
+| `Web.admits_through`、`Web.observed_scores`、`Web.ScoresThrough.atLeast` | 到某步为止某一步上的接纳是经识的选择；被观察条件的水平是经识的评分；评分的阈值是经同一识的选择 |
+| `Web.SelectsThrough.later`、`widen`、`not`、`and` | 经识的选择在更晚的步、更多的观察之下仍经识；其否定与合取也经识 |
+| `Web.scores_alike_iff` | 与第一段历史识得相同可判定时（命名的假设），两段历史被每个经识的评分评得相同，恰当识得相同：信念的标记（`mark`）就是这样的评分 |
+| `Web.SelectsThroughAll`、`Web.RegistersAlikeAll.refl`、`symm`、`trans` | 选择经一组形成合起来的识：每个成员都识得相同的历史被选得相同；每个成员都识得相同是等价关系 |
+| `Web.SelectsThrough.all`、`Web.SelectsThroughAll.and` | 一个成员的选择是合起来的选择；合起来的选择在合取下封闭 |
+| `Web.selects_alike_all_iff`、`Web.separates_all` | 合起来的选择恰及合起来所识：两段历史被每个合起来的选择选得相同，恰当每个成员都把它们识得相同；不然，有一个合起来的选择把它们分开 |
+| `Flow.unselected_beyond_registration`、`Flow.unscored_beyond_registration` | 选择在识闭包之外不见：其余交换固定，部分的每个成员都在 `f` 的识闭包之外时，经闭包内任一形成（`f` 在其中）之识的每个选择与评分，把有与无部分的水平选得相同、评得相同：`unregistered_beyond_registration` 的实例 |
+| `Flow.unselected_beyond_registration_all` | 在闭包之内合起来仍不见：成员都在 `f` 的识闭包之内的一组，其合起来的每个选择把有与无闭包外部分的水平选得相同 |
+| `Flow.unselected_beyond_registration_responsive` | 成员回应时：在 `alike_within_registration` 的假设之下，经（对两流画出的）识闭包内任一形成之识的每个选择，把两个流的水平选得相同 |
+| `share_rises_through` | 后代中的份额（应用）：选择给它所成立的每个亲代至少 a 个后代、其余每个亲代至多 b < a 个；它在 ms 的每个亲代上成立、在 es 的每个亲代上不成立、两者都非空时，ms 的后代与 es 的后代之比严格大于 ms 与 es 之比：`share_rises`，由选择给出谁是携带者 |
+| `Clearing.unselected` | 清除者的选择所不及：经清除者之识（只识支持，即 `alike_for_clearer` 所用的观察）的每个选择，在每一步都把清除与不清除的世界选得相同；栖居者在清除的世界中被终结，在不清除的世界中不然；所以“栖居者被终结”在任何一步都不是经清除者之识的选择 |
+| `Clearing.dweller_within_reach` | 缺口：栖居者在清除者的所及闭包之内、识闭包之外；清除者不识它所清除的栖息地 |
+| `Clearing.dweller_spared`、`Clearing.clearer_spared` | 不清除的世界中，栖居者与清除者都在第三步被接纳 |
+| `Clearing.selected_by_dweller` | 栖居者之识选出：“栖居者在第三步被接纳”是经栖居者之识的选择，在不清除的世界成立、在清除的世界不成立；栖居者直到第三步把两者识得不同 |
+| `Clearing.dweller_alike_gone`、`Clearing.BothAdmitted` | 栖居者在每一步把不清除的世界与资源在第三步耗尽的世界识得相同；第三步栖居者与清除者都被接纳 |
+| `Clearing.selected_pooled` | 合起来的选择：`BothAdmitted` 经清除者与栖居者合起来的识，在不清除的世界成立、在清除的世界不成立；它不经两者中任一个单独之识：清除者把清除的世界与不清除的识得相同，栖居者把资源耗尽的世界与不清除的识得相同 |
+| `Diversion.Formation`、`Place`、`first`、`drawn`、`raised`、`diverting`、`restrained`、`supplying`、`divertedLevel`、`restrainedLevel`、`suppliedLevel`、`web`、`gauge`、`StoreAtLeast`、`takerAlone` | 见证：取用者与栖居者，来源与存储；栖居者依存于来源、所需为二，取用者不依存任何条件、观察存储（`gauge`）；转移的流在第一步从来源取一个单位、给存储一个单位，克制的流什么都不交换，供给的流在第一步给存储一个单位、什么都不取 |
+| `Diversion.diverting_balances`、`restrained_balances`、`supplying_balances`、`dependent`、`diverting_acting`、`diverting_taking`、`takerAlone_closed`、`supplied_closed` | 三个流都平衡；每个网中活动需要支持；转移的流中只有活跃者给予与取用，且只从所汲取者取用；转移的流中取用者单独对经所识者受影响封闭；供给的流中取用者单独对影响封闭 |
+| `Diversion.favours` | 选择偏向伸出：转移的流伸到栖居者，栖居者在取用者的所及闭包之内、识闭包之外；克制的流不伸到它；“存储在第二步至少为一”是经取用者之识的选择，在转移的流成立、在克制的流不成立；栖居者在转移的流中从第二步起不被支持，在克制的流中每步都被支持 |
+| `Diversion.blind_to_source` | 选择分不出伸出与否：供给的流平衡，像转移的流一样抬高存储，而不伸到取用者之外；取用者在每一步把转移与供给的水平识得相同，所以经其识的每个选择把它们选得相同；栖居者在供给的流中每步都被支持，在转移的流中从第二步起不被支持 |
+
+**它回答了什么。**
+- **选择恰及选择者所识。** 选择是关于水平历史的任意命题：哪些被保留、被奖励、留下更多后代。两段历史被每个经 `g` 之识的选择选得相同，恰当 `g` 把它们识得相同（`Web.selects_alike_iff`）；`g` 识得不同之处，它的信念就是把两者分开的选择（`Web.separates`）。所以经识的选择所能分辨的，不多于也不少于选择者所识。经识的选择也是选择者完全检验的主张：恰在不成立之处被否证（`Web.SelectsThrough.refutes_iff`）。
+- **选择在识闭包之外不见。** 其余交换固定、部分在 `f` 的识闭包之外时，经闭包内任一形成之识的每个选择与评分，都把有与无这一部分的世界选得相同（`Flow.unselected_beyond_registration`、`Flow.unscored_beyond_registration`）；与闭包内的形成合起来也不变（`Flow.unselected_beyond_registration_all`）；成员只经自己之识回应时亦然（`Flow.unselected_beyond_registration_responsive`）。
+- **缺口是所及闭包减去识闭包。** `Clearing` 中栖居者在清除者的所及闭包之内、识闭包之外（`Clearing.dweller_within_reach`）：清除者的部分伸到它，而经清除者之识的每个选择都把清除与不清除的世界选得相同，虽然栖居者在一个中被终结、在另一个中不然（`Clearing.unselected`）。
+- **缺口经关系合上。** 栖居者自己的识把两个世界分开（`Clearing.selected_by_dweller`）；清除者与栖居者合起来的识选出一个两者各自都选不出的选择（`Clearing.selected_pooled`）。这是 P49 的 `Clearing.tested_by_dweller` 与 `Clearing.pooled` 在选择上的形式。
+- **伸出而抬高所识者，选择偏向它。** `Diversion` 中，经取用者之识的选择“存储至少为一”在转移的流中成立、在克制的流中不成立，而转移的流伸到识闭包之外，终结栖居者（`Diversion.favours`）；经取用者之识的每个选择，又把转移与不伸出的供给选得相同（`Diversion.blind_to_source`）：选择不能因伸出而对它不利。
+- **后代中的份额。** 选择给它所成立的亲代更多后代时，它们在后代中的份额上升（`share_rises_through`）。这是 P62 的 `share_rises` 的应用：选择给出谁是携带者。
+
+**读法（AI 的，待 Ren）。**
+- 任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识。候选者的部分在选择者识闭包之外所做的，它都不见，无论候选者的所及闭包延伸多远。缺口是所及闭包减去识闭包。
+- 缺口只经关系合上：依存、观察，或他者之识合起来，如 `Clearing` 中的栖居者。与闭包之内的形成合起来，合不上它。
+- 伸出所识之外而抬高所识者之处，选择偏向它，并且分不出它与不伸出的抬高。连同 `share_rises`，伸出者在后代中的份额在世界开放时上升；被围住时，选择随后代一起停止（`Becoming.Capture` 的 `Flow.descent_exhausted`）。这一组合没有形式陈述。
+- 以 AI 训练读，奖励过程是一个选择者：训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接：经一个识选出的能力，可以伸到那个识之外，而经那个识的纠正到不了那里。这是 AI 的联系，不是 Ren 的陈述。
+- 与 P55 相对：失控是经自身之识的策略不能用上它所不识的储量；这里是经选择者之识的选择不能对它所不识的部分作出选择。
+
+**作者反审。**
+1. **主定律近乎定义。** `Web.selects_alike_iff` 的一个方向取信念为选择，另一个方向是定义的展开。它的内容在于选择量化于关于水平历史的一切命题，所以界是精确的；但它不是关于展开的深定理。识闭包之外的不见也是 P49 的 `unregistered_beyond_registration` 与 `alike_within_registration` 的一行推论。增量是概念上的：把选择写成识的函数，以及缺口与偏向的见证。
+2. **“经识”是给出的。** 一个实际的选择过程是否只依所识，模块不说。它依于什么，就可以把那个当作选择者之识（观察可以任意扩大，`Web.SelectsThrough.widen`）；所识越多，识闭包越大，缺口越小，甚至为空。所以定律的力量全在选择者实际识什么，而这是经验问题。
+3. **比较的是有与无一个部分。** `Flow.unselected_beyond_registration` 固定其余交换；他者回应时要给出第二个流和 `alike_within_registration` 的回应假设。他者回应储量本身时（P49 的 `Attracting`），这些假设可以不成立。
+4. **份额定理是应用。** `share_rises_through` 只是 `share_rises` 加上“选择给出携带者”；后代数与选择的关系（`rewarded`、`unrewarded`）是给出的，传递（后代携带亲代所携带的）不在其中。“伸出者的份额上升”还需要伸出者被选、且世界开放；这一组合是读法。为避免未用的假设，定理不带 `SelectsThrough` 假设；经识只在读法中进入。
+5. **自身动作的缺口没有一般定理。** 清除者的部分是它自己的动作，在它自己的识闭包之内，所以 `Flow.unselected_beyond_registration`（部分在闭包之外）不直接适用。`Clearing` 中的不见来自 `alike_within_closed` 的实例：清除只作用于闭包成员都不识的条件。一般形式（一个形成的动作只在其识闭包成员都不识的条件上不同时，经其识的每个选择都看不见它）可由 `Flow.unselected_beyond_registration_responsive` 得出，但没有单独陈述。
+6. **偏向只在见证中。** `Diversion` 一步、两个形成、两个条件；“抬高所识者的部分何时必伸出识闭包之外”的一般定理没有。`blind_to_source` 的供给的流是给出的第二个流，取用者不取用就给予。
+7. **评分的逆向需要判定性。** 选择的形式不需要；`Web.scores_alike_iff` 以可判定性为命名的假设。
+
+**检查。**
+- 模块在暂存区对 main 的核心与 P62 的 `Becoming.Capture` 草稿编译，没有错误或警告；逐条审计全部 136 个常量，公理报告全部为空；不用 `sorry`、`axiom`、`Classical`、`native_decide`、`by decide`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T225632.916383Z。`Becoming.Selection` 的 43 项定理全部空依赖；包共 2823 项定理、4112 项声明审计，核心闭包 57 个模块。外围桥接对这个核心重查，通过：回执 20261011T230225.829392Z。
+- 尚无独立审查。
+
+
+## 87. 其余回应时的比较：在回应所及之内决定（P65）
+
+2026-10-12。AI 把本理论与一般的因果系统（x_{t+1} = F(x_t, u_t, ε_t)、反馈、自适应参数、吸引子）作比较之后，提出五项改进；Ren 答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。本节是其中第二项，提议是 AI 的，在工作板上认领为 P65。它回答本章 §8 的开放项“其余交换随之调整的反事实”中其余经识回应的情形。P42 以扣留水平的比较固定其余交换；`Flow.Balances.comparison_within_difference` 在任意两个流的差别所及之内决定比较，却不说差别能到哪里。本节陈述：部分之外的形成都只经自己之识回应时，差别到不了部分对经所识者影响的闭包之外，比较就在那里决定。它是 P49 识闭包之不见（`Flow.alike_within_closed`，从区域一侧陈述）的对偶，从部分一侧陈述。不加公理；平衡、起始相同、两个流的在场形成相同与经识回应，每条都只作为用到它的定理的假设。属于第一部分。核心新增模块 `Becoming.Response`（L4），30 项定理，导入 `Becoming.Testing`，不改任何已有模块。
+
+成果记录新增一项：[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md)。
+
+```text
+Result(s): 复用 testing-within-registration（Flow.RegisteredFrom、Flow.RegisteredFromEither、Flow.WithinRegistration、
+           supportOnly、Web.Registers、Web.RegistersAlikeUpTo、Flow.alike_within_closed、Flow.exchange_agrees_within、
+           Flow.withheld_eq_of_false）、comparison-within-reach（Flow.DiffersBefore、Flow.Balances.comparison_within_difference；
+           Trophic.wolves_unreached、Trophic.responsive_mixed）、feedback-and-reach（Flow.Reaches）、levels-of-closure
+           （ClosedUnder、WithinClosure 及其引理、Flow.AffectedBy、Flow.Affects、Flow.WithinReach、Flow.WithinInfluence；
+           Trophic 的流、网与鹿有回应的流）、laws-of-one-step（Flow.BalancesOn、Flow.Balances.on）；新增上列一项
+Delta: 回应所及：Flow.WithinResponse、Flow.member_within_response、Flow.outside_part_of_beyond_response。
+       对偶与 P42：WithinClosure.converse、Flow.withinResponse_iff_registration、Flow.withinResponse_self_iff、
+       Flow.withinResponse_of_reaches、Flow.withinResponse_of_withinReach、Flow.withinResponse_supportOnly_iff、
+       Flow.withinReach_iff_withinInfluence。经识回应：Flow.RespondsThroughRegistration、
+       Flow.respondsThroughRegistration_withhold。限定：Flow.beyond_response_closed、Flow.alike_beyond_response、
+       Flow.exchange_alike_beyond_response、Flow.totals_alike_beyond_response、Flow.not_differs_beyond_response。
+       比较：Flow.Balances.comparison_within_response、Flow.Balances.comparison_within_response_of_decidable。
+       见证：Trophic（forest_within_response、responds_through_registration、responsiveReach、den_untouched、
+       far_unaffected、responsiveReach_closed、within_response_iff、responsive_comparison）；Loop（Formation、Place、
+       members、firstPart、own、act、reply、escalation、quiet、ofFirstLevel、ofSecondLevel、firstLive、web、quietWeb、
+       balances、quiet_balances、dependent、quiet_dependent、responds、returns）
+Supplied premises / correspondence: 不加公理；经识回应（Flow.RespondsThroughRegistration）是给出的前提，不由动力学推出；
+       限定的定理只在回应所及之外者所识的条件上逐步假设平衡（Flow.BalancesOn），并假设两个流的在场形成相同、在那些条件上
+       起始相同；主比较假设两个流全局平衡、起始相同；覆盖写成“不在回应所及之外”（双重否定），不用判定，回应所及可判定时
+       覆盖所及即可；离散的步（从第 0 步计）、自然数的量；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T225632.916383Z（Becoming.Response 30 项定理，全部源声明公理报告为空），外围回执 20261011T230225.829392Z
+Boundary: 形成只经其识回应不推出，怎样回应不推出；回应所及经两个流画出，须知第二个流与哪些条件交换（不须知其数量）；
+          回应所及是上界：不说差别到达其中的哪个形成，也不量差别多少，且不按时间先后；Loop 是一个两方的见证，不是回路的
+          一般定义，没有增益或失控的定理；不含伦理谓词
+Integration: 计划 P65；回答本章 §8 开放项“其余交换随之调整的反事实”中其余经识回应的情形，回应由动力学给出的情形仍开放；
+             把 P49 从区域一侧陈述的识闭包之不见对偶地从部分一侧陈述，接到 P42 的两流比较；只识支持、一个流时，回应所及
+             就是 P42 的所及闭包之并
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.WithinResponse` | 一个形成在部分（在两个流之间）的回应所及之内：它在某个成员对经所识者影响的闭包之内；a 对 b 有此关系，是指 a 在两个流之一中与 b 所识的条件交换 |
+| `Flow.member_within_response`、`Flow.outside_part_of_beyond_response` | 部分的每个成员都在其回应所及之内；所以回应所及之外的都在部分之外 |
+| `WithinClosure.converse` | 对一个关系之逆的闭包就是闭包之逆：g 在 f 对逆关系的闭包之内，恰当 f 在 g 对原关系的闭包之内 |
+| `Flow.withinResponse_iff_registration`、`Flow.withinResponse_self_iff` | 回应所及与识闭包对偶：一个形成在部分的回应所及之内，恰当某个成员在该形成经两个流画出的识闭包之内（`Flow.alike_within_registration` 的闭包）；一个流时，就是在其识闭包（`Flow.WithinRegistration`）之内 |
+| `Flow.withinResponse_of_reaches`、`Flow.withinResponse_of_withinReach` | 部分所到达的、每个成员的所及闭包，都在回应所及之内 |
+| `Flow.withinResponse_supportOnly_iff` | 只识支持、一个流时，回应所及恰是成员所及闭包之并：一个形成在其中，恰当它在某个成员的所及闭包之内 |
+| `Flow.withinReach_iff_withinInfluence` | 所及闭包是影响闭包之逆：g 在 h 的所及闭包之内，恰当 h 在 g 的影响闭包之内 |
+| `Flow.RespondsThroughRegistration` | 其余经识回应：部分之外的每个形成，凡直到某步识得相同，在该步与每个条件的交换在两个流中相同。给出的前提 |
+| `Flow.respondsThroughRegistration_withhold` | 其余固定是它的情形：无论识什么，扣留部分的流在部分之外与原流交换相同 |
+| `Flow.beyond_response_closed` | 回应所及之外的形成构成一个区域，在两个流中都对经所识者受影响封闭：与这样的形成所识的条件交换的，也在回应所及之外 |
+| `Flow.alike_beyond_response` | 限定：两个流在场形成相同，在回应所及之外者所识的条件上逐步平衡且起始相同，其余经识回应时，回应所及之外的每个形成每步都识得相同，无论部分做什么；`Flow.alike_within_closed` 的实例 |
+| `Flow.exchange_alike_beyond_response`、`Flow.totals_alike_beyond_response` | 同样的假设下，回应所及之外的每个形成每步交换相同；两个流每步从它所识的每个条件取用与向它给予的总量相同（与它交换的也在回应所及之外，经 `Flow.exchange_agrees_within` 与 `total_congr_on`） |
+| `Flow.not_differs_beyond_response` | 差别留在回应所及之内：同样的假设下，两个流的差别在任何一步之前都到不了回应所及之外的形成（`Flow.DiffersBefore` 不成立） |
+| `Flow.Balances.comparison_within_response` | 其余回应时的比较在回应所及之内决定：两个平衡的流在场形成相同、起始相同，其余经识回应，对从 p 覆盖每个不在回应所及之外的形成的任何意义，每个流的水平保留另一个上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方。覆盖写成双重否定，因为差别只表明它到达的形成不在回应所及之外；不用判定 |
+| `Flow.Balances.comparison_within_response_of_decidable` | 回应所及可判定时，覆盖回应所及本身即可 |
+| `Trophic.forest_within_response` | 营养级联中，在狼群之流与鹿有回应之流之间，森林在狼群的回应所及之内：狼群取用鹿所依存的鹿群（herd），鹿啃食森林所依存的生长（growth）；而狼群的部分到达不了森林（`Trophic.wolves_unreached`），两流的差别到达它（`Trophic.difference_reaches_forest`） |
+| `Trophic.responds_through_registration` | 营养级联满足前提，只识支持：狼群之外，每个形成凡识得相同之处交换相同；鹿在第 0 步啃食相同，从第 1 步起鹿群的损失已在其支持中被识 |
+| `Trophic.responsiveReach`、`Trophic.den_untouched`、`Trophic.far_unaffected`、`Trophic.responsiveReach_closed` | 狼群、鹿与森林；两个流中都没有什么与远处形成的巢（den）交换；远处形成所识的条件，在两个流中都没有什么与之交换；这三者对经所识者的影响封闭（太阳什么都不识） |
+| `Trophic.within_response_iff` | 狼群的回应所及恰是狼群、鹿与森林；太阳与远处形成在其外 |
+| `Trophic.responsive_comparison` | 有回应的比较在狼群、鹿与森林之间决定：对从 p 每步覆盖这三者的任何意义，两条水平路径恰如彼此包含那样彼此保留；两者互相超出（`Trophic.responsive_mixed`），所以都不保留。太阳与远处形成不需要意义；`Flow.Balances.comparison_within_response` 的实例 |
+| `Loop.Formation`、`Loop.Place`、`Loop.members`、`Loop.firstPart`、`Loop.own`、`Loop.act`、`Loop.reply`、`Loop.escalation`、`Loop.quiet`、`Loop.ofFirstLevel`、`Loop.ofSecondLevel`、`Loop.firstLive`、`Loop.web`、`Loop.quietWeb` | 两个形成，各需要（需要量一）并观察自己的条件；有动作的流：第一个在第 0 步从第二个的条件取用一单位，第二个观察到下降，在第 1 步从第一个的条件取用两单位；无动作的流什么都不取用；两个条件都从二起，有动作时第一个的条件在第 2 步归零，第二个的停在一；有动作时第一个形成只在第 0、1 步活跃 |
+| `Loop.balances`、`Loop.quiet_balances`、`Loop.dependent`、`Loop.quiet_dependent`、`Loop.responds` | 两个流平衡，两个网中活动都需要支持；第二个形成经其识回应 |
+| `Loop.returns` | 差别回到部分：两个流平衡，活动需要支持，起始相同，第二个经识回应；第一个的动作与第二个所观察的条件交换，第二个的回应与第一个所需的条件交换；第一个自身与其条件的交换在两个流中相同，而有动作时第一个在第 2 步不被支持，无动作时被支持；其余固定时第一个的部分到达不了第一个，而两流的差别在第 2 步之前到达它 |
+
+**它回答了什么。**
+- **其余回应时，差别能到哪里。** 部分之外的形成都只经自己之识回应时，回应所及之外的每个形成每步识得相同、交换相同，它所识的条件上的总量相同（`Flow.alike_beyond_response`、`Flow.exchange_alike_beyond_response`、`Flow.totals_alike_beyond_response`），两个流的差别到不了它（`Flow.not_differs_beyond_response`）。这是 P49 的 `Flow.alike_within_closed` 以回应所及之外为区域的实例；区域的封闭由闭包的定义直接得到（`Flow.beyond_response_closed`）。
+- **比较在回应所及之内决定。** 对两个平衡、起始相同的流，覆盖每个不在回应所及之外者的任何意义，都对两者作公理的比较（`Flow.Balances.comparison_within_response`）。这把 P42 的 `comparison_within_difference`（比较在差别所及之内决定）接到差别能到哪里。
+- **两种反事实。** 其余固定是经识回应的情形（`Flow.respondsThroughRegistration_withhold`），所以本节的定律也适用于它；那时 P42 给出更紧的界：只计部分在每步之前直接到达的（`Flow.Balances.comparison_within_reach`）。部分所到达的与每个成员的所及闭包都在回应所及之内（`Flow.withinResponse_of_reaches`、`Flow.withinResponse_of_withinReach`）。
+- **所及闭包的反事实意义。** 只识支持、一个流时，回应所及恰是成员所及闭包之并（`Flow.withinResponse_supportOnly_iff`）；回应所及与识闭包对偶（`Flow.withinResponse_iff_registration`），所及闭包与影响闭包对偶（`Flow.withinReach_iff_withinInfluence`）。
+- **营养级联与回路。** P42 的见证满足前提（`Trophic.responds_through_registration`）：森林在狼群的回应所及之内，而狼群的部分到达不了它；回应所及恰是狼群、鹿与森林，有回应的比较在它们之间决定（`Trophic.within_response_iff`、`Trophic.responsive_comparison`）。`Loop` 中部分的动作改变另一个形成所识的，后者回应，差别回到部分自身的支持，而以扣留水平的比较看不到它（`Loop.returns`）。
+
+**读法（AI 的，待 Ren）。**
+- 一个动作有两种反事实。其余固定（P42）时只计部分直接到达的；其余经识回应时，计部分对经所识者影响的闭包。一个动作对与之相互作用的形成造成什么，在第二种之内决定。
+- 升级回路是每一方都经其识回应、差别回到部分的情形（`Loop.returns`）。它不在其余固定的比较中出现。这对照 Ren 粘贴的框架中的军备竞赛回路（来源中的粘贴文字，作者未注明，不是 Ren 的话）。
+- 只识支持时，回应所及就是 P42 的所及闭包之并。这给所及闭包一个反事实的意义：其余经其支持回应时，一个动作的差别所能到之处。
+- 与因果系统的框架对照：干预改变的输入，其后果在其余经识回应时只沿“与所识者交换”传播；框架中的反馈，在这里是差别经他者的回应回到部分自身所识的。
+
+**作者反审。**
+1. **增量薄，部分近于定义。** 限定是 `alike_within_closed` 的实例；回应所及之外的区域封闭，是闭包定义的直接推论；主比较是 `comparison_within_difference` 接上 `not_differs_beyond_response`。实质的新内容是：把前提分离为 `RespondsThroughRegistration` 并说明其余固定是它的情形；回应所及与识闭包的对偶（经 `WithinClosure.converse`）；只识支持时与 P42 所及闭包的等价；以及两个见证。
+2. **前提是给出的，而且强于所用的。** 经识回应要求部分之外的形成在识得相同之处与每个条件的交换都相同；它排除对未被识者的回应（例如 P49 `Attracting` 中什么都不识而随储量取用的取用者：按检视那里前提不成立，本模块没有另立定理）、噪声，以及没有表示为条件的外来输入。定律只在回应所及之外用到它，而且主比较只用到那些形成在它们所识的条件上的交换；更弱的前提已足够。这里给出的形式说的是其余怎样回应，不是极小的假设。
+3. **回应所及经两个流画出。** 要知道它，须知第二个流与哪些条件交换（不须知数量）；所以它不使第二个流成为多余，只界定在前提之下第二个流能在哪里不同。其余固定时，扣留部分的流只在原流交换之处交换（`Flow.withhold_exchanges`，P49），回应所及就在原流中画出；这一点由那条引理直接可得，本模块没有另立定理。
+4. **上界，不是到达。** 回应所及与 P42 的各闭包一样，在形成的层次上，不按时间先后：它不说差别到达其中的哪个形成，也不量差别多少。P42 的 `ReachesBefore` 按时间先后；回应所及的按时间先后的形式没有陈述。
+5. **双重否定。** 覆盖“不在回应所及之外”在构造上强于覆盖“在回应所及之内”；可判定时两者相同（`comparison_within_response_of_decidable`）。有限的见证中可按情形判定（`Trophic.responsive_comparison` 经 `Trophic.within_response_iff`）。
+6. **见证是最小的。** `Trophic` 中鹿有回应的流仍是给出的，这里只检查它满足前提。`Loop` 只有两个形成、一个动作、一次回应、一个回合：没有增益、放大，也没有超过一次的返回；`own` 使需要与观察重合，第二个形成经观察（水平）而不是经支持回应，其支持从不失去。P55 的记录要求定义回路（水平影响取用、取用又影响水平）并把失控陈述为定理；`Loop` 是比较中一个定义好的两方回路的见证，不是回路的一般定义，也没有失控的定理。
+7. **辅助引理的位置。** `WithinClosure.converse` 与 `Flow.withinReach_iff_withinInfluence` 是关于 `Becoming.Feedback` 已有概念的一般事实，放在 Feedback 中更合适；已提请整合者决定。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 141 个常量，公理报告全部为空。证明都是项形式，没有用 `by decide`、`simp`、`omega` 或 `rw`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T225632.916383Z。`Becoming.Response` 的 30 项定理全部空依赖；包共 2823 项定理、4112 项声明审计，核心闭包 57 个模块。外围桥接对这个核心重查，通过：回执 20261011T230225.829392Z。
+- 尚无独立审查。
+
+
+## 88. 机制与标准因果模型：承载规律的投影，作为过程的因果模型（P66、P68）
+
+2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴入一段关于因果系统的说明。那段文字的作者没有注明，读来是别处 AI 助手所写；它不是 Ren 的话，其中没有任何内容是本理论的前提。AI 作了比较之后，Ren 写道：“alright, looks like we can learn things from this comparison - think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议，Ren 答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。本节是其中第三项（机制是一种分解）与第五项（标准因果模型作为过程），在工作板上认领为 P66 与 P68。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Mechanism`（L3），30 项定理，导入 `Becoming.Experiment`（经它导入 `Becoming.Joint`、`Becoming.Recurrence` 与 `Becoming.Frame`），已有模块中只改 P62 的 `Becoming.Capture`：它导入本模块，`Law.reform_reabsorbed` 改由 `Law.reabsorbed` 证明，名称与陈述不变（整合者的决定：一条定理，不是两条）。
+
+成果记录新增两项：[projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md)（P66）与 [causal-models-as-processes](../../../../theories/becoming/results/records/causal-models-as-processes.md)（P68）。
+
+```text
+Result(s): 复用 experiment-needs-return（FactorsThrough、Run.StepsThrough、Run.FixesThrough、Run.stepsThrough_of_factors、
+           Run.Takes、Run.Fixes、retarget、retarget_determined、retarget_step、Run.not_fixes_of_untaken）、
+           joint-difference-making（Determined：动作决定一步）、recurrence-without-premise（Law.orbit、Law.orbit_shift、
+           Law.process、Law.run）；Becoming.Frame 的 Run；新增上列两项
+Delta: 承载规律的投影：Image、factors_image、Image.least、GoAlike、image_determined_iff、carries_law_iff、goAlike_id_iff、
+       goAlike_const、goAlike_image_iff、GoAlike.runs_agree。重新吸收：DependsOnlyOn、DependsOnlyOn.goAlike、
+       DependsOnlyOn.reabsorbed、Law.dependsOnlyOn_iff、Law.reabsorbed。改变自身规则的系统：adaptive、
+       adaptive_determined、adaptive_state_law_iff、adaptive_state_carries_iff、ruleLaw、ruleLaw_determined、Run.steps_by_rule。
+       经投影而未取的：Run.TakesThrough、Run.stepsThrough_retarget、Run.not_fixesThrough_of_untaken、
+       Run.not_fixesThrough_of_goAlike。标准因果模型（P68）：inputs、inputs_determined、trajectory、inputsRun、
+       inputs_intervention_unfixed、inputs_model_fixes、forget、Run.forget、forget_inputs_determined_iff。
+       见证：Coarse（process、not_determined、goAlike、carries）、Switching（follow、alternate、process、next、run、
+       determined、not_goAlike、no_state_law）
+Supplied premises / correspondence: 不加公理，也不加前提；相同者同去（GoAlike）与只依于（DependsOnlyOn）是被刻画的性质，
+       不是假设，carries_law_iff 等是双向的；局部条件写在定理之中：runs_agree 与 reabsorbed 要相同的动作与经 π 相同的起点，
+       not_fixesThrough_of_untaken 要某个确定过程容许经 π 读的各步、运行未取与两个不同的投影配置，
+       inputs_intervention_unfixed 要未取与两个不同的配置，steps_by_rule 要规则在该段上保持；投影 π 与（状态，规则）的
+       分解由运行之外给出；离散的步；x′ = F(x, u, ε) 与适应动力学的形式取自 Ren 贴入的文字（作者未注明，不是 Ren 的话，
+       也不是前提）；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T225632.916383Z（Becoming.Mechanism 30 项定理，全部源声明公理报告为空），外围回执 20261011T230225.829392Z
+Boundary: 实际展开经哪个投影承载规律、任何形成形成或使用一个投影、规则怎样开始改变、输入与噪声在实际展开中可分，都不推出；
+          规律只指确定的过程，概率与随机过程没有陈述，不确定只以忘掉噪声的形式出现；多个变量之间的结构方程（图）、从观察
+          识别因果、连续的量与敏感性没有陈述；不含伦理谓词
+Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（FactorsThrough）不加前提地刻画为相同者同去；把 P62 的
+             Law.reform_reabsorbed（Becoming.Capture）改为 Law.reabsorbed 以规则为投影的实例，名称与陈述不变；
+             把所贴框架的 F、u、ε 与 θ 放在脊柱上
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Image`、`factors_image`、`Image.least` | 步骤经投影 π 读的像：P 的某一步以某动作从投影为 k 的配置到投影为 κ 的配置时，像中就有从 k 到 κ 的这一步；P 的步骤经 π 分解到它的像；像是步骤经 π 分解到的最小过程：每个这样的过程都容许像的每一步 |
+| `GoAlike`、`image_determined_iff`、`carries_law_iff` | 相同者同去：经 π 相同的两个配置，以同一动作到达经 π 相同的配置；像确定，恰当相同者同去；投影承载规律：某个描述上的确定过程容许 P 的每一步经 π 读，恰当相同者同去。对每个过程与每个投影成立，不加前提 |
+| `goAlike_id_iff`、`goAlike_const`、`goAlike_image_iff` | 经恒等，相同者同去就是确定性；不分任何东西的描述对每个过程都承载规律；描述可以复合：像的描述 ρ 承载规律，恰当复合的描述 ρ ∘ π 承载规律 |
+| `GoAlike.runs_agree` | 相同者同去时，取相同动作、起点经 π 相同的两个运行，在每一步经 π 都相同：投影承载规律时，它所略去的从不改变投影的进程 |
+| `DependsOnlyOn`、`DependsOnlyOn.goAlike` | 下一配置整个只依于 π：经 π 相同的两个配置以同一动作到达同一个配置；它蕴含相同者同去 |
+| `DependsOnlyOn.reabsorbed` | 所不依者一步之内被重新吸收：只依于 π 时，取相同动作、起点经 π 相同的两个运行，从第一步起相等 |
+| `Law.dependsOnlyOn_iff`、`Law.reabsorbed` | 确定的律作为过程只依于 π，恰当经 π 相同的配置下一步相同；这时它们的轨道从下一步起相同（`DependsOnlyOn.reabsorbed` 的实例）。配置读作状态与规则、以规则为投影时，就是 P62 的 `Law.reform_reabsorbed`（规则持有结果），`Becoming.Capture` 现以它一行证明 |
+| `adaptive`、`adaptive_determined` | 改变自身规则的系统：状态 x 在规则 g 之下以动作 u 变为 F g x u，规则变为 G g x，配置是这一对；它是联合配置上的一个确定过程 |
+| `adaptive_state_law_iff`、`adaptive_state_carries_iff` | 状态恰在规则对它不造成差别之处（对每两个规则、每个状态与动作，F 都相同）有自己的规律：经状态相同者同去；等价地，某个状态上的确定过程容许每一步经状态读 |
+| `ruleLaw`、`ruleLaw_determined`、`Run.steps_by_rule` | 规则固定为 g 时状态自身的律，它是确定的；沿改变自身规则的系统的运行，在规则保持为 g 的一段上，状态的各步就是这条律的步 |
+| `Run.TakesThrough`、`Run.stepsThrough_retarget` | 运行在某步之前于投影为 k 的配置取过某动作；未取时，把容许经 π 读的各步的过程在 k 处改送到任一投影配置，仍容许这些步 |
+| `Run.not_fixesThrough_of_untaken`、`Run.not_fixesThrough_of_goAlike` | 经投影的规律在未取之处不被固定：某个确定过程容许经 π 读的各步、运行没有于投影为 k 的配置取过某动作、有两个不同的投影配置时，记录不固定它在 k 的任何结果；相同者同去时亦然（规律由像给出） |
+| `inputs`、`inputs_determined`、`trajectory`、`inputsRun` | 标准模型 x′ = F(x, u, ε) 作为过程：动作是输入与噪声一起；它是确定的；从 x₀ 在输入 u 与噪声 e 之下的轨迹，以及作为运行的这条轨迹 |
+| `inputs_intervention_unfixed`、`inputs_model_fixes` | 干预是未取的动作：运行在某步之前没有于 x 取 (u′, e′)、有两个不同的配置时，记录不固定它在那里的任何结果（`Run.not_fixes_of_untaken` 的实例）；模型把它送到 F x u′ e′，且只送到那里 |
+| `forget`、`Run.forget`、`forget_inputs_determined_iff` | 忘掉动作第二部分的过程与运行；噪声是未表示的动作：忘掉噪声后，标准模型恰在噪声不造成差别之处仍确定 |
+| `Coarse.process`、`Coarse.not_determined`、`Coarse.goAlike`、`Coarse.carries` | 配置有两部分，每步翻转第一部分，第二部分任意：动作不决定配置，而第一部分相同者同去，步骤经它分解为翻转的确定律：描述可以有整体没有的规律 |
+| `Switching.follow`、`Switching.alternate`、`Switching.process`、`Switching.next`、`Switching.run`、`Switching.determined`、`Switching.not_goAlike`、`Switching.no_state_law` | 状态变为规则，规则每步翻转：联合过程确定，规则对状态造成差别；从状态与规则都为假出发的运行，没有状态上的确定过程容许它前两步（或任何更长一段）经状态读的步：改变自身规则的系统在状态上没有规律，它的规律在联合配置上 |
+
+**它回答了什么。**
+- **什么使一个投影成为机制。** P53 把步骤经投影分解为确定过程叫作关于何者无关的模型（§72），却没有说这样的模型何时存在。这里不加前提地回答：恰当相同者同去（`carries_law_iff`）。像是最小的候选（`Image.least`），所以一个描述是否承载规律，只看像是否确定（`image_determined_iff`）。经恒等它就是确定性（`goAlike_id_iff`）；描述的描述就是复合的描述（`goAlike_image_iff`）；投影承载规律时，它所略去的从不改变投影的进程（`GoAlike.runs_agree`）。
+- **规律可以在描述上而不在整体上，反之亦然。** `Coarse` 中动作不决定配置，而第一部分承载翻转的确定律；`Switching` 中整体确定，而状态的描述没有规律。所以承载规律对描述变粗或变细都不单调。不分任何东西的描述总承载规律（`goAlike_const`），所以“某个描述上有规律”本身不是信息，内容在于哪个描述承载它。
+- **所不依者被重新吸收。** 下一配置只依于 π 时，起点在 π 之外的差别一步之内消失（`DependsOnlyOn.reabsorbed`）。P62 B5 的“规则持有结果”是它以规则为投影的实例（`Law.reform_reabsorbed`，现由 `Law.reabsorbed` 证明）：重新吸收不是另一条规律，而是只依于的直接后果。
+- **改变自身因果的系统不需要另一种规律。** 状态与规则一起前进的系统，是联合配置上的一个确定过程（`adaptive_determined`）。状态恰在规则对它不造成差别之处有自己的规律（`adaptive_state_law_iff`）；规则保持的一段上，状态按这条规则的律走（`Run.steps_by_rule`）；规则改变自己时，状态可以没有任何规律（`Switching.no_state_law`）。第一部分对每个过程陈述的规律，因此已经涵盖它。
+- **真的机制也只在取过之处被固定。** 即使相同者同去，记录也不固定未取的投影配置上的结果（`Run.not_fixesThrough_of_goAlike`）：P53 的“未取的不被固定”经投影仍成立。经投影的实验所固定的，`Run.generalizes` 推广到投影相同的整个类，但只推广已取的。
+- **标准因果模型在脊柱上的位置（P68）。** x′ = F(x, u, ε) 是动作为 (u, ε) 的确定过程（`inputs_determined`）。干预是未取的动作：记录不固定它（`inputs_intervention_unfixed`），模型固定它（`inputs_model_fixes`）。噪声是未表示的动作：忘掉它，过程恰在噪声不造成差别之处仍确定（`forget_inputs_determined_iff`）。`Becoming.Joint` 中冲击作为动作（`Shock`）与写进步骤（`Hidden`）的对照，是这一点的见证；这里对每个 F 陈述。
+
+**读法（AI 的，待 Ren）。**
+- 机制是承载规律的投影。P53 的“关于何者无关的模型”现在被精确刻画：经 π 读，与变化无关的，就是经 π 相同的配置之间的不同。
+- 配置的投影（描述）是时间的读法与更细的量的单位之外的第三种东西：它读配置是什么，不读何时，也不读以什么单位计。较粗描述上的规律（涌现）就是那个描述上的相同者同去。
+- 所贴文字说，有用的因果模型总是在某种抽象上构造的。这里，抽象是一个描述；它是否承载规律，恰由相同者同去决定，不由描述者决定。
+- 改变自身因果的系统，是状态与规则的联合配置上的一个规律；规则对状态造成差别之处，状态单独没有规律。所贴文字说复杂适应系统能改变未来变化传播的机制：这里，被改变的“机制”是规则保持时状态的律（`ruleLaw`），改变它的是联合配置上的律，不是另一种更高的律。
+- 干预是未取的动作，由模型而不由记录固定。`retarget` 是在一个配置与一个动作上替换一条结构方程。噪声是未表示的动作；`Coarse` 可以读作噪声被忘掉的过程：整体没有规律，因为第二部分由未表示的动作决定，而第一部分不依于它。
+- 合于 §72 的读法：理 在那里是投影。这里说一个 理 何时承载规律：恰在它所不分的配置同去之处；它所不依的，被重新吸收。
+
+**作者反审。**
+1. **主定理近于定义。** `carries_law_iff` 与 `image_determined_iff` 的证明各只几行：相同者同去就是“像确定”展开写出。增量在于把 P53 由运行之外给出的模型刻画为一个配置上可查的条件，并给出最小的候选（`Image.least`）；它不是深的定理。
+2. **“承载规律”只指确定的规律。** 有结构而不确定的规律没有陈述。`GenerativeCore` 的 `projection_exact_iff` 说的是另一种性质：经投影精确表示有限路径的可能性，要求从纤维中每个配置都能提升；相同者同去不蕴含它（像的一步可以只从纤维中的某一个配置可取）。两者之间的桥接没有陈述。
+3. **重新吸收的定理很直接。** `DependsOnlyOn.reabsorbed` 是一步的论证。起初本模块另有一条与 P62 的 `Law.reform_reabsorbed` 陈述逐字相同的定理；按整合者的决定只留一条：本模块给一般的 `Law.reabsorbed`，Capture 的那条改为它以规则为投影的实例，名称与陈述不变。
+4. **适应系统的形式取自所贴文字。** `adaptive` 中规则的更新 G 不依于动作，与所贴的 θ′ = G(θ, x) 相同；G 依于动作的系统同样是联合配置上的过程，`adaptive_state_law_iff` 只涉及 F，对它也会成立，但没有陈述。
+5. **状态规律的判据是整体的。** `adaptive_state_law_iff` 要求规则在每一对规则、每个状态与动作上都不造成差别，包括任何运行都不经过的配置。沿一个运行只有经过的配置算数；沿运行的充要条件（到某步为止有确定过程容许经 π 读的各步，恰当经 π 相同、动作相同的两步到达经 π 相同的配置；构造性的）没有陈述，现在只有充分条件（`Run.steps_by_rule`）与一个见证（`Switching.no_state_law`）。
+6. **见证是最小的。** `Switching` 只有两个位，规则每步翻转，所以 `Run.steps_by_rule` 在那里只覆盖单步；`Coarse` 的第二部分完全任意，所以整体没有任何规律。规则缓慢改变、状态在长段上有近似规律的情形没有陈述。
+7. **P68 的增量主要是位置。** `inputs_intervention_unfixed` 是 P53 `Run.not_fixes_of_untaken` 的直接实例，`inputs_model_fixes` 按定义成立；实质的新陈述是 `forget_inputs_determined_iff`，也很短。Pearl 意义上多个变量之间的结构方程、do 演算、从观察数据识别因果，都没有陈述；这里的干预作用于整个动作 (u, ε)，对状态变量的“手术”只在读法上对应 `retarget`。
+8. **没有概率。** 噪声在这里是动作中任何未表示的部分；ε 的分布、独立同分布、期望之类的陈述都不在其中。
+9. **“机制”的读法比科学哲学的机制概念窄。** 机制哲学中的机制（例如 Machamer、Darden 与 Craver 2000：实体与活动经组织而产生有规律的变化）含有组成与组织；这里只取其中“在一个描述上有规律”这一面，是 AI 的读法。
+10. **所贴文字不是 Ren 的话。** 它只作为比较的对象；x′ = F(x, u, ε) 与 θ 的形式取自它，但它的任何主张都不是本理论的前提，所贴文字关于整个宇宙、量子与复杂系统的说法这里都没有采用。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 63 个常量，公理报告全部为空；没有禁用的记号（sorry、axiom、Classical、native_decide）。`by decide` 只用于自然数字面量的比较（`Switching.no_state_law`）。改过的 `Becoming.Capture`（导入本模块，以 `Law.reabsorbed` 证明 `Law.reform_reabsorbed`）连同 `Becoming.Seeking` 与本包其余模块一起编译，没有错误或警告，公理报告为空。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T225632.916383Z。`Becoming.Mechanism` 的 30 项定理全部空依赖；包共 2823 项定理、4112 项声明审计，核心闭包 57 个模块。外围桥接对这个核心重查，通过：回执 20261011T230225.829392Z。
+- 尚无独立审查。
+
+
+## 89. 吸引：被吸入者不再回来，每个律恰吸入不返回者（P67）
+
+2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴来一段关于一般因果系统的说明。那段文字作者未注明，读来是别处的 AI 所写，不是 Ren 的话，也不是理论的前提。它把系统写作 x_{t+1} = F(x_t, u_t, ε_t)，列出反馈、改变自身规则的系统、路径依赖与吸引子。AI 把这一框架对应到脊柱上；Ren 又写“think for one more round, what can we learn, being inspired, and improve?”，AI 提出五项，Ren 答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。五项是 AI 的提议，经 Ren 这句话认可；本节是其中第四项：吸引子与锁定就是合并。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 P67。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Attraction`（L3），47 项定理，只导入 `Becoming.Recurrence`（经它导入 `Becoming.Frame`），不改任何已有模块。
+
+成果记录新增一项：[attraction-is-not-returning](../../../../theories/becoming/results/records/attraction-is-not-returning.md)。
+
+```text
+Result(s): 复用 recurrence-without-premise（Law.orbit、Law.orbit_add、Law.orbit_shift、Law.orbit_mul、Law.Returns、
+           Law.Reachable、Law.Lossless、Law.Merges、Law.KeepsPossibilities、Law.Returns.undo、Law.Returns.reachable、
+           Law.Lossless.returns、Law.returns_iff_keeps、Law.returns_of_reachable、revisits_within、gap_of_lt、
+           Law.succ_open、Law.pred_open、Law.process）；Becoming.Frame 的 Run、Run.reach、Reach、Invariant、
+           Invariant.reach；新增上列一项
+Delta: 吸引子与吸引域：Law.Absorbing、Law.DrawnInto、Law.Drawn、Law.Ahead、Law.absorbing_ahead、Law.Absorbing.orbit、
+       Law.returns_iff_ahead。锁定：Law.DrawnInto.never_back、Law.Drawn.not_returns。主律：Law.drawnInto_ahead、
+       Law.drawn_iff_not_returns。未来收窄：Law.reachable_absorbing、Law.reachable_orbit、Law.lost_drawn、
+       Law.drawn_of_lost、Law.returning_absorbing。合并：Law.periods_meet、Law.Merges.not_both_return、Law.merge_draws、
+       Law.Merges.draws、Law.none_drawn_merges_nothing、Law.none_drawn_lossless。有限多配置：Law.Drawn.not_lossless、
+       Law.Lossless.not_drawn、Law.Drawn.not_keeps、Law.lossless_iff_none_drawn、Law.returns_iff_always_reachable、
+       Law.drawn_iff_lost、Law.enters_returning、Law.drawnInto_returning。开放：Law.succ_drawn_lossless、
+       Law.pred_orbit_zero、Law.pred_drawn_keeps。过程：Law.absorbing_iff_invariant、AbsorbingUnder、
+       invariant_iff_every_move、Invariant.locks_out、Run.locked_in、Run.stays、Run.leaving_needs。
+       见证：Ratchet（next、atTrue、merges、absorbing、false_drawn、false_never_returns、true_returns、true_not_drawn、
+       false_lost）；Exit（move、process、atTrue、keeps、leaves、not_invariant、staying、locked_in、path、moves、leaving、
+       leaving_takes）
+Supplied premises / correspondence: 不加公理，也不加关于展开或变化之律的前提；主律对每个确定的律（next : S → S）成立，
+       不用有限性，也不用可判定性；“某个列表持有每个配置”写进用到它的规律之内；可判定相等只是 none_drawn_lossless
+       与 lossless_iff_none_drawn 的局部假设；被合并的两个配置中哪一个被吸入，正面选出需要判定，只陈述双重否定的形式；
+       离散的步；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T225632.916383Z（Becoming.Attraction 47 项定理，全部源声明公理报告为空），外围回执 20261011T230225.829392Z
+Boundary: 实际展开进入哪些区域不推出；吸引域多深多宽不陈述（配置上没有度量，也没有拓扑）；表示之外的逃逸不陈述：
+          确定的律中没有来自其外的动作或交换，过程中只有它所容许的动作；不确定过程上的吸引（可能被吸入与必然被吸入）
+          没有陈述；“被吸入”只要求存在一个吸收区域，不是经典意义上的吸引子；不含伦理谓词
+Integration: 计划 P67（工作板）；Ren 认可的五项中的第四项（吸引子与锁定）；把 Becoming.Recurrence 的合并、丧失的可能
+             与返回接到吸收区域、吸引域与锁定上，并在过程上以 Frame 的不变量陈述锁定
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Law.Absorbing`、`Law.DrawnInto`、`Law.Drawn` | 吸收区域：律从不离开的区域；被吸入：配置在区域之外，其轨道进入区域，被吸入吸收区域者构成它的吸引域；配置被吸入：某个吸收区域把它吸入 |
+| `Law.Ahead`、`Law.absorbing_ahead`、`Law.returns_iff_ahead` | 配置的前方：从下一步起轨道上的配置；前方是吸收区域；配置返回，恰当它在自己的前方 |
+| `Law.Absorbing.orbit` | 一旦进入，永在其中：轨道在第 n 步进入吸收区域，此后每一步都在其中 |
+| `Law.DrawnInto.never_back` | 被吸入者不再回来：配置在吸收区域之外，从其轨道进入区域的那一步起，以后没有一步是它自己 |
+| `Law.Drawn.not_returns` | 被吸入的配置永不返回 |
+| `Law.drawnInto_ahead`、`Law.drawn_iff_not_returns` | 每个律恰吸入不返回者：对每个确定的律，不加前提，配置被某个吸收区域吸入，恰当它不返回；不返回者被吸入自己的前方，在第一步进入 |
+| `Law.reachable_absorbing`、`Law.reachable_orbit`、`Law.lost_drawn`、`Law.drawn_of_lost` | 未来收窄：n 步后可得者构成吸收区域；每条轨道在第 n 步都是 n 步后可得的；n 步后不可得的配置被吸入 n 步后可得者，在第 n 步进入；在某一步丧失的配置被吸入 |
+| `Law.returning_absorbing` | 返回者构成吸收区域 |
+| `Law.periods_meet`、`Law.Merges.not_both_return` | 两个周期相遇：a + (a + 1)·b 与 b + (b + 1)·a 是同一个数；被合并的两个配置不都返回，不需要有限性：两者都在共同的下一配置的轨道上，在同一步既是这一个又是那一个 |
+| `Law.merge_draws`、`Law.Merges.draws` | 合并吸入其一：被合并的两个配置不都逃过被吸入；合并的律吸入某个配置，都只以双重否定陈述，哪一个被吸入需要判定 |
+| `Law.none_drawn_merges_nothing`、`Law.none_drawn_lossless` | 没有配置被吸入时，被律归于一处的两个配置不是不同的（双重否定）；配置的相等可判定时，律不合并 |
+| `Law.Drawn.not_lossless`、`Law.Lossless.not_drawn`、`Law.Drawn.not_keeps` | 列表持有每个配置时：有配置被吸入，律就合并，也就丧失一个可能；不合并的律不吸入任何配置 |
+| `Law.lossless_iff_none_drawn` | 有限多配置之内吸引即合并：列表持有每个配置、相等可判定时，律不合并，恰当没有配置被吸入 |
+| `Law.returns_iff_always_reachable`、`Law.drawn_iff_lost` | 列表持有每个配置时，配置返回恰当它在每一步都可得；所以配置被吸入，恰当它不在每一步都可得（从右到左不需要有限性） |
+| `Law.enters_returning`、`Law.drawnInto_returning` | 列表持有每个配置时，每条轨道都进入一个返回的配置；所以每个不返回的配置都被吸入返回者的区域：有限多配置上的律，其吸引子是返回者，吸引域是其余一切 |
+| `Law.succ_drawn_lossless`、`Law.pred_orbit_zero`、`Law.pred_drawn_keeps` | 开放的世界：往上数吸入 0 而不合并；往下数吸入 1，而每个数在每一步都可得。所以上面有限多配置的每条规律都需要它的列表 |
+| `Law.absorbing_iff_invariant` | 确定的律的吸收区域，恰是它作为过程的不变量 |
+| `AbsorbingUnder`、`invariant_iff_every_move` | 区域在某个动作下吸收：以该动作从区域内出发的每一步都留在区域内；区域是不变量，恰当它在每个动作下吸收 |
+| `Invariant.locks_out`、`Run.locked_in` | 对每个过程：进入不变区域之后，其外的配置不再可达；运行从在不变区域内的一步起，以后没有一个配置是它曾在区域外时的配置 |
+| `Run.stays`、`Run.leaving_needs` | 运行的每个动作都保持一个区域时，运行留在其中；离开区域需要一个不保持它的动作 |
+| `Ratchet` | 每个配置都到 `true`：律合并 `false` 与 `true`，`{true}` 是吸收区域，`false` 被吸入它而永不返回，也在一步后不可得；`true` 返回，不被吸入 |
+| `Exit` | 配置与动作都是一位：动作 `false` 保持配置，动作 `true` 翻转它。`{true}` 在动作 `false` 下吸收，在动作 `true` 下不吸收，所以不是不变量；只取 `false` 的运行留在 `{true}` 中，离开的运行所取的是不保持它的动作 |
+
+**它回答了什么。**
+- **吸引子与锁定，不加前提。** 比较中的“路径依赖”与“吸引子”在脊柱上是同一条规律：被吸入者不再回来（`Law.DrawnInto.never_back`）。对每个确定的律，配置被某个吸收区域吸入，恰当它不返回（`Law.drawn_iff_not_returns`）。锁定不需要任何关于律的前提，只需要配置不返回。
+- **未来收窄。** n 步后可得者构成吸收区域（`Law.reachable_absorbing`）；到第 n 步丧失的每个可能都被吸入它，在第 n 步进入（`Law.lost_drawn`）。这把 `Becoming.Recurrence` 的“丧失的可能保持丧失”读成吸引：丧失的那一刻，配置就在一个吸收区域之外，其轨道进入它。
+- **合并吸入其一。** 被合并的两个配置不都返回（`Law.Merges.not_both_return`），这不需要有限性；所以合并的律不让两者都逃过被吸入（`Law.merge_draws`）。工作板上的“合并给出一个有吸引域的吸引子”因此在任意多配置中成立，只是以双重否定的形式。
+- **有限多配置之内吸引即合并，开放的世界把两者分开。** 列表持有每个配置时，有配置被吸入就有合并（`Law.Drawn.not_lossless`），相等可判定时两者等价（`Law.lossless_iff_none_drawn`）；返回者的区域是吸引子，吸引域是其余一切（`Law.drawnInto_returning`）。往上数吸入而不合并，往下数吸入而保留每个可能（`Law.succ_drawn_lossless`、`Law.pred_drawn_keeps`）。
+- **过程中的锁定。** 对每个过程，进入不变区域之后，其外者不再可达（`Invariant.locks_out`、`Run.locked_in`）。区域不变，恰当每个动作都保持它（`invariant_iff_every_move`）；离开需要一个不保持它的动作（`Run.leaving_needs`），`Exit` 是最小的例子。
+
+**读法（AI 的，待 Ren）。**
+- 吸引子是一个吸收区域，其外的配置进入它；吸引域是被吸入者。路径依赖与锁定是同一条规律：被吸入者不再回来，所以轨道已到哪里，决定它还能成为什么。
+- 有限多配置之内，吸引与合并相伴（经典逻辑下是一个等价）：有配置被吸入，恰在不同的配置归于一处，也就是一个可能永久丧失之处（`Law.Merges.loses`）。开放的世界可以不合并而吸入，例如往上数。
+- 未来收窄：第 n 步可得者是吸收区域，每个丧失的可能都已被吸入它。合于 Ren 的“more future, not less”（`Becoming.Admission`），吸引子是展开收窄自己的未来。
+- Capture 中规则所持的结果（P62，`Captured`）读作规则中的吸收区域：规则相同的配置构成律从不离开的区域；在其中，被改造的状态在第一步就被吸入规则所持的配置。
+- Admission 的“终结是吸收态”（`Flow.unsupported_stays`）在流与网上、在其前提之下，读作没有成员被支持这一区域的吸收；两种表示之间的实例定理没有给出。
+- “赢的元吸引子”读作展开轨道上的一个吸收区域：只有不保持这一区域的动作能从中出去。这一读法属于 AI，这里没有推出。
+
+**作者反审。**
+1. **主律近乎定义。** `Law.Drawn` 只要求存在一个吸收区域把配置吸入；从右到左所用的区域是配置自己的前方（`Law.Ahead`），它可以很大，例如往上数时 0 的前方是全部正整数。所以不加前提的主律说的是：被吸入恰是不返回。增量是把比较中的“吸引子”“路径依赖”“锁定”认同为不返回，以及这一认同的各个推论，不是一个新的动力学事实。经典动力系统的吸引子要求更多：吸引一个邻域，在某种意义上极小或不可分，有拓扑或度量；这些都不在这里。最接近经典者是有限多配置之内的 `Law.drawnInto_returning`：返回者的区域吸入其余一切。
+2. **数学是复用的。** 有限集上的自映射，每条轨道最终是周期的；不是单射的自映射有不周期的点；被合并的两个点不都是周期点。这些作为复用的数学记入，不作为数学上的新发现。增量是：在脊柱上零前提、不用可判定性陈述；合并的规律不需要有限性；有限与开放的分界由见证标出。
+3. **双重否定是实质的，不是措辞。** `Law.Returns` 是存在一个周期，一般不可判定；所以被合并的两个配置中哪一个被吸入，不能构造地选出（`Law.merge_draws`），“合并的律吸入某个配置”也只以双重否定成立（`Law.Merges.draws`）。可判定相等只用在 `Law.none_drawn_lossless` 与 `Law.lossless_iff_none_drawn`。
+4. **主律只对确定的律。** 不确定的过程上，“可能被吸入”与“必然被吸入”分开，都没有陈述。对过程只陈述不变区域的锁定与离开所需的动作（`Invariant.locks_out`、`Run.leaving_needs`）；它们是 `Frame` 的不变量的直接推论，增量小。
+5. **表示之外的逃逸没有陈述。** 确定的律已经包含所表示的一切；从其外来的动作或交换，就是另一个律。`Exit` 只说明：在所表示的动作之中，离开需要一个不保持该区域的动作。实际展开中有没有这样的动作、它从哪里来，不推出。
+6. **见证是最小的。** `Ratchet` 与 `Exit` 都只有两个配置；没有给出吸引域的深浅与宽窄，也没有几个吸引子分割配置的例子。
+7. **与 P53 的连接是读法。** 被吸入的配置不返回，按 `Becoming.Experiment`，在那里自己的动作若换一个会怎样不被记录固定。但确定的律只有一个动作，这一连接需要带动作的过程上的“被吸入”，没有陈述。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 83 个常量，公理报告全部为空。不用 `decide`、`simp` 或 `omega`；`periods_meet` 的算术只用前导中公理报告为空的引理（`Nat.succ_mul`、`Nat.add_left_comm`、`Nat.mul_comm`、`Nat.add_comm`）。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T225632.916383Z。`Becoming.Attraction` 的 47 项定理全部空依赖；包共 2823 项定理、4112 项声明审计，核心闭包 57 个模块。外围桥接对这个核心重查，通过：回执 20261011T230225.829392Z。
+- 尚无独立审查。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -6266,4 +6639,67 @@ New records counts-exist-where-decided and recurrence-without-decidedness. Recei
 
 New record imbalance-as-relatum. Receipt 20261011T210459.095261Z (Imbalance 15). Not yet independently reviewed; the author's counterreview is in section 85.
 
-The package now has 2673 theorems and 3895 declaration audits, over a core closure of 53 modules and a package of 51, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 85 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T211111.085532Z).
+**P64: selection through registration.** Ren asked "hows cause–effect system comparing to our theory?" and pasted an explanation of causal systems whose author is not stated; it reads as written by an AI assistant elsewhere and is neither Ren's wording nor a premise of the theory. The AI compared the theory with that frame (`x_{t+1} = F(x_t, u_t, ε_t)`, feedback, systems that change their own rule, attractors) and proposed five things to learn from it. Ren answered "Great, let's finish all of them, you can spawn sub agents in a wise order if needed" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)). The five proposals are the AI's. This is the first of them, claimed on the work board as P64: selection reaches only what the selector registers. `Becoming.Selection` (43 theorems, L4) imports `Becoming.Testing` and `Becoming.Capture` (P62, landed before it) and changes no existing module. It adds no axiom. Balance is assumed only on the conditions registered. That a selection goes through registration is a condition written into each theorem, never derived.
+- **A selection reaches exactly what registers.** A selection is any claim about level histories, read as which histories are kept, rewarded or leave more descendants. It goes through `f`'s registration up to `t` when histories `f` registers alike up to `t` are selected alike (`Web.SelectsThrough`); a score goes through it when they score alike (`Web.ScoresThrough`).
+  - Two histories are selected alike by every selection through `g`'s registration exactly when `g` registers them alike (`Web.selects_alike_iff`, no premise).
+  - Where `g` registers them apart, its belief is a selection through its registration that separates them (`Web.belief_selects`, `Web.separates`).
+  - A selection through registration is a claim its selector tests completely: it is refuted exactly where it fails (`Web.SelectsThrough.refutes_iff`).
+  - Admission and observed levels are selected and scored through registration (`Web.admits_through`, `Web.observed_scores`, `Web.ScoresThrough.atLeast`).
+  - The property survives later steps, more observation, negation and conjunction (`Web.SelectsThrough.later`, `widen`, `not`, `and`).
+  - Registering alike is an equivalence (`Web.RegistersAlikeUpTo.trans`).
+  - For scores the converse direction takes the decidability of registering alike as a named hypothesis (`Web.scores_alike_iff`).
+- **Pooled registration.** Group selections reach exactly what the group registers together (`Web.SelectsThroughAll`, `Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group selection (`Web.SelectsThrough.all`), and group selections are closed under conjunction (`Web.SelectsThroughAll.and`).
+- **Blind beyond the registration closure.** With the rest of the exchange fixed and a part beyond `f`'s registration closure:
+  - every selection and every score through the registration of a formation within the closure treats the levels with and without the part alike (`Flow.unselected_beyond_registration`, `Flow.unscored_beyond_registration`);
+  - so does every group whose members all lie within the closure (`Flow.unselected_beyond_registration_all`);
+  - where the members respond, the same holds under the hypotheses of `Flow.alike_within_registration` (`Flow.unselected_beyond_registration_responsive`).
+- **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its registration closure (`Clearing.dweller_within_reach`).
+  - Every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in one and not the other (`Clearing.unselected`).
+  - The dweller's admission at the third step is a selection through the dweller's registration, and it separates the two worlds (`Clearing.selected_by_dweller`).
+  - "Both admitted at the third step" is a selection through the pooled registration of the clearer and the dweller and through neither alone (`Clearing.selected_pooled`).
+- **Selection favours reaching beyond.** In `Diversion` a taker gauges a store.
+  - In the diverting flow the taker takes a unit from the source a dweller depends on and gives it to the store. "The store stands at least one at the second step" is a selection through the taker's registration that holds there and fails in the restrained flow. The diverting flow reaches the dweller, beyond the taker's registration closure, and ends it (`Diversion.favours`).
+  - Every selection through the taker's registration selects the diverting flow alike with a supplying flow that raises the store without reaching beyond (`Diversion.blind_to_source`).
+- **Share among descendants (an application).** Where a selection gives the parents it holds for at least `a` offspring each and the others at most `b < a`, the carriers' share rises among the offspring (`share_rises_through`). This is Capture's `share_rises` with the selection supplying the carriers; it adds no arithmetic.
+
+On the AI's readings, pending Ren:
+- Any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what that selector registers. It is blind to whatever a candidate's part does beyond the selector's registration closure, however far the candidate's reach closure extends; the gap is the reach closure less the registration closure.
+- The gap closes only through relations: dependence, observation, or another's registration pooled, as the dweller's is.
+- Where reaching beyond raises what registers, selection favours it. With `share_rises`, the share of what reaches beyond rises while the world is open.
+- Read for AI training, a reward process is a selector: training reaches only what the reward registers. The AI connects this with the title of Ren's paper "When Capability Outruns Correction"; the connection is the AI's.
+
+Record added: selection-through-registration. Receipt 20261011T225632.916383Z (Selection 43); periphery receipt 20261011T230225.829392Z. Not yet independently reviewed; the author's counterreview is in section 86.
+
+**P65: the comparison where the rest responds.** After the AI compared the theory with a general cause–effect system (x_{t+1} = F(x_t, u_t, ε_t), feedback, adaptive parameters, attractors) and proposed five improvements, Ren wrote: "Great, let's finish all of them, you can spawn sub agents in a wise order if needed" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)). This is the second proposal, the AI's, claimed on the work board as P65. It answers, for the case where the rest responds through its registration, the chapter's section 8 open item "the counterfactual in which the rest of the exchange adjusts". P42's comparison by withheld levels keeps the rest of the exchange fixed, and `Flow.Balances.comparison_within_difference` decides any two flows within what their difference reaches without saying where that difference can go. It is the dual, from a part's side, of P49's reach blindness (`Flow.alike_within_closed`, stated from a region's side). `Becoming.Response` (30 theorems, L4) imports `Becoming.Testing` and changes no existing module. It adds no axiom; balance, a common start, the same formations present and the response premise each enter only as hypotheses of the laws that use them.
+- **Responsive reach.** A formation lies within a part's responsive reach between two flows when it lies within some member's closure under affecting through what is registered, in either flow (`Flow.WithinResponse`). Every member lies within it, and what lies beyond is outside the part (`Flow.member_within_response`, `Flow.outside_part_of_beyond_response`). It is the dual of the registration closure: a formation lies within it exactly when some member lies within the formation's registration closure drawn through both flows (`Flow.withinResponse_iff_registration`, through `WithinClosure.converse`; with one flow, `Flow.withinResponse_self_iff`). It holds what the part reaches and each member's reach closure (`Flow.withinResponse_of_reaches`, `Flow.withinResponse_of_withinReach`). Registering support only, with one flow, it is exactly the union of the members' reach closures (`Flow.withinResponse_supportOnly_iff`); the reach closure is the converse of the influence closure (`Flow.withinReach_iff_withinInfluence`).
+- **Responding through registration, a supplied premise.** The rest responds through its registration when each formation outside the part exchanges alike in the two flows across every step up to which it has registered alike (`Flow.RespondsThroughRegistration`). With the rest of the exchange fixed it holds whatever registers (`Flow.respondsThroughRegistration_withhold`).
+- **Confinement.** The formations beyond the responsive reach form a region closed in both flows under being affected through what is registered (`Flow.beyond_response_closed`). With the same formations present, balance at each step on what those formations register, a common start there, and the rest responding through its registration, every formation beyond the reach registers alike, exchanges alike and meets alike totals on what it registers, at every step (`Flow.alike_beyond_response`, an instance of `Flow.alike_within_closed`; `Flow.exchange_alike_beyond_response`, `Flow.totals_alike_beyond_response`), and the difference between the flows reaches none of them (`Flow.not_differs_beyond_response`).
+- **The comparison where the rest responds.** For two balanced flows with the same formations present, starting alike, the rest responding through its registration, any significance that covers, from a standpoint, every formation not beyond the part's responsive reach compares the two flows as the axiom does: each retains along the other exactly as it includes it, and neither adds exactly where neither exceeds (`Flow.Balances.comparison_within_response`). The cover is double-negated because the difference shows only that a formation it reaches is not beyond; no decision is used, and where membership is decidable covering the reach suffices (`Flow.Balances.comparison_within_response_of_decidable`). With the rest fixed, P42 gives the sharper bound of what the part reaches directly (`Flow.Balances.comparison_within_reach`).
+- **Witnesses.** P42's trophic cascade meets the premise with support only: the deer browse alike at step 0 and, from step 1, the herd's loss has registered in their support (`Trophic.responds_through_registration`). The forest lies within the wolves' responsive reach, which their part does not reach (`Trophic.forest_within_response`, citing `Trophic.difference_reaches_forest`); the reach is exactly the wolves, the deer and the forest (`Trophic.within_response_iff`), so the responsive comparison of `Trophic.responsive_mixed` is decided among them, and neither flow retains along the other (`Trophic.responsive_comparison`). In `Loop` two formations each require and observe their own condition; the first's act takes from the second's condition, the second, having observed the fall, takes from the first's, and the first, whose own exchange with its condition is the same in both flows, is unsupported at step 2 with the act and supported without it; its part does not reach it with the rest fixed, while the difference reaches it before step 2 (`Loop.returns`).
+
+On the AI's readings, pending Ren: an act has two counterfactuals, with the rest fixed (only what the part reaches directly counts) and with the rest responding through its registration (the part's closure under affecting what is registered counts), and what an act does to formations that interact with it is decided within the second; an escalation loop is the case where each party responds through its registration and the difference returns to the part, which the comparison with the rest fixed does not show; registering support only, the responsive reach is the union of P42's reach closures, which gives the reach closure its counterfactual meaning. That formations respond only through their registration, how they respond, and how much difference arrives are not derived; responses given by the dynamics rather than supplied stay open. Record added: comparison-where-the-rest-responds. Receipt 20261011T225632.916383Z (Response 30); periphery receipt 20261011T230225.829392Z. No independent review yet; the author's counterreview is in section 87.
+
+**P66 and P68: mechanism and standard causal models.** Ren asked "hows cause–effect system comparing to our theory?" and pasted an explanation of cause–effect systems whose author is not stated; it reads as written by an AI assistant elsewhere, is not Ren's wording, and supplies no premise. After the AI's comparison Ren asked "think for one more round, what can we learn, being inspired, and improve?", and to the AI's five proposals answered "Great, let's finish all of them, you can spawn sub agents in a wise order if needed" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)). This is the third proposal (a mechanism is a factoring) and the fifth (standard causal models as processes), claimed on the work board as P66 and P68. `Becoming.Mechanism` (30 theorems, L3) imports `Becoming.Experiment`; of the existing modules only P62's `Becoming.Capture` changes, importing it and re-proving `Law.reform_reabsorbed` as an instance. It adds no premise.
+- **A projection carries a law exactly where configurations alike under it go alike.** The step read through a projection `π` (`Image`) is the least process the step factors through (`factors_image`, `Image.least`). Some determined process on the description admits every step read through `π` if and only if configurations alike under `π` go alike under it (`GoAlike`, `carries_law_iff`, `image_determined_iff`), for every process and every projection. Through the identity this is determinacy (`goAlike_id_iff`); the description that distinguishes nothing always carries a law (`goAlike_const`); a description of the image carries a law exactly where the composite does (`goAlike_image_iff`); runs with the same moves that start alike stay alike (`GoAlike.runs_agree`).
+- **What the step does not depend on is re-absorbed in one step.** Where the whole next configuration depends only on `π` (`DependsOnlyOn`), runs with the same moves from configurations alike under `π` are equal from the first step on (`DependsOnlyOn.reabsorbed`); for a determined law, `Law.reabsorbed`; with the configuration read as a state and a rule and the rule as the projection, it is P62's `Law.reform_reabsorbed`, which `Becoming.Capture` now proves as this instance, its name and statement unchanged (the integrator's decision: one theorem, not two).
+- **A system that changes its own rule.** A state going on under a rule that itself goes on (`adaptive`) is one determined process on the joint configuration (`adaptive_determined`). The state has a law of its own exactly where the rule makes no difference to it (`adaptive_state_law_iff`, `adaptive_state_carries_iff`); on a stretch where the rule stays, the state goes by the rule's own law (`ruleLaw`, `Run.steps_by_rule`). In `Switching` the rule alternates: the joint process is determined, and no determined process on the state admits even the run's first two steps read through the state (`Switching.no_state_law`).
+- **A law through a projection is not fixed where not yet taken.** Where some determined process on the description admits the run's steps so read, the record fixes no outcome of a move at a projected configuration the run has not taken it at (`Run.TakesThrough`, `Run.not_fixesThrough_of_untaken`), even where configurations alike go alike (`Run.not_fixesThrough_of_goAlike`): P53's `Run.not_fixes_of_untaken` read through `π`.
+- **Standard causal models (P68).** `x′ = F(x, u, ε)` is a determined process whose move is the input and the noise together (`inputs`, `inputs_determined`, `trajectory`, `inputsRun`). An intervention is a move not taken: the record fixes no outcome of it (`inputs_intervention_unfixed`, an instance of `Run.not_fixes_of_untaken`), and the model does (`inputs_model_fixes`). Noise is a move not represented: with it forgotten (`forget`, `Run.forget`), the model stays determined exactly where the noise makes no difference (`forget_inputs_determined_iff`), the general form of the contrast between `Becoming.Joint`'s `Shock` and `Hidden`.
+- **Witnesses.** In `Coarse` the move does not determine the configuration, yet its first part carries the determined law of flipping (`Coarse.carries`); in `Switching` the whole is determined and the state carries no law. Carrying a law is monotone neither toward coarser nor toward finer descriptions.
+
+On the AI's readings, pending Ren: a mechanism is a projection of configuration that carries a law, and P53's model of what is irrelevant is now characterized exactly; a projection of configuration is a third thing beside readings of time and finer units of amount; a law at a coarser description (emergence) is going alike there, and since the trivial description always carries one, the content of an emergent law is which description carries it; the rule holding the outcome (P62's B5) is dependence on the rule only; a system that changes its own causality has its law on the joint configuration of state and rule, so no further kind of law is needed; an intervention is a move not taken, fixed by a model and not by the record, `retarget` being the replacement of one structural equation at one configuration and move; noise is a move not represented. Records added: projection-carrying-a-law, causal-models-as-processes. Receipt 20261011T225632.916383Z (Mechanism 30); periphery receipt 20261011T230225.829392Z. No independent review yet; the author's counterreview is in section 88.
+
+**P67: attraction.** On 12 October 2026 Ren asked "hows cause–effect system comparing to our theory?" and pasted a general account of a cause–effect system (x_{t+1} = F(x_t, u_t, ε_t), with feedback, adaptive parameters, path dependence and attractors). Its author is not stated; it reads as written by an AI elsewhere and is neither Ren's wording nor a premise of the theory. After the AI's comparison Ren asked "think for one more round, what can we learn, being inspired, and improve?", and to the AI's five proposals wrote "Great, let's finish all of them, you can spawn sub agents in a wise order if needed" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)). This is the fourth proposal, attractors and lock-in, claimed on the work board as P67. `Becoming.Attraction` (47 theorems, L3) imports only `Becoming.Recurrence` (and through it `Becoming.Frame`) and changes no existing module. It adds no premise.
+- **An attractor and its basin.** A region the law never leaves is absorbing (`Law.Absorbing`). A configuration outside it whose course enters it is drawn into it (`Law.DrawnInto`); the configurations so drawn are its basin, and a configuration is drawn where some absorbing region draws it (`Law.Drawn`). Once in, always in (`Law.Absorbing.orbit`). What lies ahead of a configuration from its next step is absorbing (`Law.absorbing_ahead`), and a configuration returns exactly where it lies ahead of itself (`Law.returns_iff_ahead`).
+- **Lock-in.** What is drawn in never comes back: from the step at which its course enters an absorbing region it lay outside, no later configuration is the one it started from (`Law.DrawnInto.never_back`), so a drawn configuration never returns (`Law.Drawn.not_returns`).
+- **Every law draws exactly what does not return.** For every determined law, with no premise, no finiteness and no decidability, a configuration is drawn exactly where it does not return (`Law.drawn_iff_not_returns`): what lies ahead of it is an absorbing region it enters at the first step (`Law.drawnInto_ahead`).
+- **The future narrows.** What can be had `n` steps on is absorbing (`Law.reachable_absorbing`), and every possibility lost by step `n` is drawn into it, entering at step `n` (`Law.lost_drawn`, `Law.drawn_of_lost`). What returns is absorbing too (`Law.returning_absorbing`).
+- **A merge draws one of the two.** Of two configurations a law merges, not both return, with no finiteness (`Law.Merges.not_both_return`, through `Law.periods_meet`); so not both escape being drawn (`Law.merge_draws`), and a law that merges draws something (`Law.Merges.draws`), both in double-negation form, since which one is drawn needs deciding. Where nothing is drawn, no two configurations merge (`Law.none_drawn_merges_nothing`; with decidable equality, `Law.none_drawn_lossless`).
+- **Within finitely many configurations, attraction is merging.** Where a list holds every configuration, a drawn configuration means a merge and a lost possibility (`Law.Drawn.not_lossless`, `Law.Lossless.not_drawn`, `Law.Drawn.not_keeps`); with decidable equality, the law merges nothing exactly where nothing is drawn (`Law.lossless_iff_none_drawn`). A configuration returns exactly where it can be had at every step, so it is drawn exactly where it cannot (`Law.returns_iff_always_reachable`, `Law.drawn_iff_lost`). Every course enters what returns, so the attractor of a law on finitely many configurations is what returns, and its basin is everything else (`Law.enters_returning`, `Law.drawnInto_returning`).
+- **An open world separates them.** Counting on draws zero and merges nothing (`Law.succ_drawn_lossless`); counting down draws one and keeps every possibility (`Law.pred_drawn_keeps`). So every finite law above needs its list.
+- **Lock-in under every process.** A determined law's absorbing regions are the invariants of its process (`Law.absorbing_iff_invariant`). Once inside an invariant region, what lies outside cannot be had again (`Invariant.locks_out`, `Run.locked_in`). A region is invariant exactly where every move keeps it (`AbsorbingUnder`, `invariant_iff_every_move`); a run whose every move keeps it stays in it (`Run.stays`), and leaving it needs a move that does not keep it (`Run.leaving_needs`).
+- **Witnesses.** In `Ratchet` every configuration goes to `true`: `false` and `true` merge, `false` is drawn into `{true}` and never returns, `true` returns. In `Exit`, `{true}` is absorbing under one move and not under the other, so it is not invariant; the run that only keeps stays locked in, and the run that leaves takes the other move (`Exit.leaving_takes`).
+
+On the AI's readings, pending Ren: an attractor is an absorbing region a configuration outside it enters, and its basin is what is drawn into it; path dependence and lock-in are one law, what is drawn in never comes back; within finitely many configurations attraction and merging go together (classically an iff), while an open world can draw without merging; the future narrows, and read with Ren's "more future, not less" (`Becoming.Admission`) an attractor is the unfolding narrowing its own future; Capture's held rule (P62, `Captured`) reads as an absorbing region in the rule, and Admission's absorbing end (`Flow.unsupported_stays`) as an absorbing region on flows and webs under its premises; the meta-attractor of winning, read as an absorbing region of the course that only a move not keeping it leaves, is the AI's reading and is not derived. What is not derived: which regions actual unfoldings enter, how deep or wide a basin is (no measure or topology on configurations), attraction for processes that are not determined, and any escape from beyond the representation. The main law is close to definitional, an identification of lock-in with not returning, and the mathematics (eventual periodicity on finite sets) is reused; the counterreview in section 89 says so. Record added: attraction-is-not-returning. Receipt 20261011T225632.916383Z (Attraction 47); periphery receipt 20261011T230225.829392Z. Not yet independently reviewed; the author's counterreview is in section 89.
+
+The package now has 2823 theorems and 4112 declaration audits, over a core closure of 57 modules and a package of 55, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 85 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T211111.085532Z).

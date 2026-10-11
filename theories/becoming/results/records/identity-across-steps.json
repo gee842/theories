@@ -250,8 +250,8 @@
     "en": "Contains no ethical predicate; re-identification covers only one-to-one correspondence of formations at each step; splits and merges are represented by continuation relations, under which the arising forced by more is stated, with the census balance in census-balance-under-continuation, but not formation classes, tenure or undermining; over a run no split is sufficient for more to force arising, not necessary, while across one step it is necessary and sufficient, and an exact condition on continuations over a run is not stated; the arising in Merge is a persisting formation re-read, and a witness under a merge in which more does the work is not given; continuity is one reading of identity, not its definition, one-way and two-way continuity are two readings, and even two-way continuity does not constrain succession across dormancy; More.unceasing_reidentified and More.unceasingFrom hold only under a census, present without repetition and Taking, do not say which formation arises, and under budding what is forced is only that the active formations have no bound; how to read succession, whether the working reading lets a tenure continue through succession, and at which level 生生不息 is read are Ren's reading choices; the part–whole relation is stated in whole-persists-through-generation through activity only, without the whole's dependence or undermining; a full account deriving identity from relations (continuity of material, information or organization) is not given; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：Becoming.Identity 119 项定理全部空依赖；同一回执覆盖包内 51 个模块（含只作导入的根模块与桥接），共 2673 项定理／3895 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §16；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P11B-P12-REVIEW.md），其更正在整合文档 §19 处理；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，补出没有分裂只是充分条件、含合并的见证与省去的前提，见 §22，这些补正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 53 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): all 119 theorems of Becoming.Identity have empty axiom reports; the same receipt covers the package's 51 modules (including the import-only root and the bridge) with 2673 theorems/3895 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §16 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P11B-P12-REVIEW.md), and its corrections are handled in §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted them and found that no split is only sufficient, a witness with merges and omitted premises, see §22; these further corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 53 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T225632.916383Z）：Becoming.Identity 119 项定理全部空依赖；同一回执覆盖包内 55 个模块（含只作导入的根模块与桥接），共 2823 项定理／4112 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §16；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P11B-P12-REVIEW.md），其更正在整合文档 §19 处理；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，补出没有分裂只是充分条件、含合并的见证与省去的前提，见 §22，这些补正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 57 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T225632.916383Z): all 119 theorems of Becoming.Identity have empty axiom reports; the same receipt covers the package's 55 modules (including the import-only root and the bridge) with 2823 theorems/4112 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §16 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P11B-P12-REVIEW.md), and its corrections are handled in §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted them and found that no split is only sufficient, a witness with merges and omitted premises, see §22; these further corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 57 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -488,19 +488,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155",
+      "sha256": "7504ceb7638c263e4211c75d80fd47d84476f7b1174fdffe8297b8fcf8d3d871",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198",
+      "sha256": "bb3a29ae2ddc526a8778418f588c6048e93dd0552f52a5448ec0134f7fe96745",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "e9cf882ab19977e18792ebf3b553dbec54d19c0b629327c8852fb1144afcdabb",
+      "sha256": "34343841ccc8898c6a14b45b4b6b5583927a9aa42460b3c863ebac5e212cf579",
       "declarations": []
     },
     {

@@ -107,8 +107,8 @@
     "en": "Not done: real-valued time (a periphery correspondence); towers with no coarsest level; the exact form of the bound as levels refine. The count uses a census; running down is a condition at the level used. The names (Tower, reads, refine) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 51 个模块，共 2673 项定理／3895 项声明审计；外围回执 20261011T211111.085532Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 51 modules with 2673 theorems/3895 declaration audits; periphery receipt 20261011T211111.085532Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T225632.916383Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 55 个模块，共 2823 项定理／4112 项声明审计；外围回执 20261011T230225.829392Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T225632.916383Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 55 modules with 2823 theorems/4112 declaration audits; periphery receipt 20261011T230225.829392Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
   },
   "references": [
     {
@@ -147,17 +147,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155"
+      "sha256": "7504ceb7638c263e4211c75d80fd47d84476f7b1174fdffe8297b8fcf8d3d871"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198"
+      "sha256": "bb3a29ae2ddc526a8778418f588c6048e93dd0552f52a5448ec0134f7fe96745"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "e9cf882ab19977e18792ebf3b553dbec54d19c0b629327c8852fb1144afcdabb"
+      "sha256": "34343841ccc8898c6a14b45b4b6b5583927a9aa42460b3c863ebac5e212cf579"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
@@ -167,7 +167,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f1ca93d64c2a5eb21ebb53d8a2e9800449eace7415cb34fc9be51417069dd055"
+      "sha256": "63c57284c225997a721b87aa718e3d42a068e2251b35d5a68564ebfeff51d73b"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md",

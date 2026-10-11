@@ -54,6 +54,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](theories/becoming/chapters/ALIGNMENT-DIRECTION.md)
 
+## attraction-is-not-returning ← recurrence-without-premise
+
+`formal-reuse` — 复用确定的律的轨道与其代数（Law.orbit、orbit_add、orbit_shift、orbit_mul），返回、可达、合并、无损与保留每个可能（Law.Returns、Law.Reachable、Law.Merges、Law.Lossless、Law.KeepsPossibilities），撤销就是继续（Law.Returns.undo），返回者每步可得（Law.Returns.reachable），有限多配置中的 Law.Lossless.returns、Law.returns_iff_keeps、Law.returns_of_reachable、revisits_within、gap_of_lt，开放的见证 Law.succ_open、Law.pred_open，以及 Law.process；另用 Becoming.Frame 的 Run、Run.reach、Reach、Invariant、Invariant.reach。合并、返回与可达不重新定义。 / Reuses the orbit of a determined law and its algebra (Law.orbit, orbit_add, orbit_shift, orbit_mul), returning, reachability, merging, losing nothing and keeping every possibility (Law.Returns, Law.Reachable, Law.Merges, Law.Lossless, Law.KeepsPossibilities), undoing is going on (Law.Returns.undo), a returning configuration can be had at every step (Law.Returns.reachable), within finitely many configurations Law.Lossless.returns, Law.returns_iff_keeps, Law.returns_of_reachable, revisits_within and gap_of_lt, the open witnesses Law.succ_open and Law.pred_open, and Law.process; also Becoming.Frame's Run, Run.reach, Reach, Invariant and Invariant.reach. Merging, returning and reachability are not redefined.
+
+**Producer output / 上游输出:** 确定的律的轨道、返回、可达与合并；有限多配置中不合并即回返即保留每个可能；丧失的可能保持丧失；脊柱的运行、可达与不变量。 / The orbit, returning, reachability and merging of a determined law; within finitely many configurations, merging nothing is returning is keeping every possibility; a lost possibility stays lost; the spine's runs, reach and invariants.
+
+**Consumer input / 下游输入:** 吸收区域、被吸入与锁定；被吸入恰是不返回；有限多配置之内吸引即合并；过程中不变区域的锁定。 / Absorbing regions, being drawn and lock-in; being drawn is not returning; within finitely many configurations attraction is merging; lock-in in an invariant region of a process.
+
+**Retained conditions / 保留条件:** 列表持有每个配置，只在用到它的规律中；可判定相等只在两条规律中。 / A list holding every configuration, only in the laws that use it; decidable equality in two laws only.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## axiom-decomposition ← presupposition-scopes
 
 `formal-reuse` — 复用边界、超真、次真、对边界不变与预设。 / Reuses boundaries, super-truth, sub-truth, boundary-invariance and the presupposition.
@@ -401,6 +413,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 可判定。 / Decidability.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
+
+## causal-models-as-processes ← experiment-needs-return
+
+`formal-reuse` — 复用 Run.Takes、Run.Fixes 与 Run.not_fixes_of_untaken：干预不被记录固定是它对标准模型的实例。 / Reuses Run.Takes, Run.Fixes and Run.not_fixes_of_untaken: an intervention unfixed by the record is its instance for the standard model.
+
+**Producer output / 上游输出:** 确定过程中未取的动作不被记录固定。 / In a determined process an untaken move is not fixed by the record.
+
+**Consumer input / 下游输入:** 标准模型中干预不被记录固定。 / In the standard model an intervention is not fixed by the record.
+
+**Retained conditions / 保留条件:** 运行未取该动作；X 中两个不同的元素。 / The move untaken by the run; two different elements of X.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## causal-models-as-processes ← joint-difference-making
+
+`formal-reuse` — 复用 Determined。Joint 的见证中，冲击作为动作时动作决定一步（Shock），写进一步的关系时不决定（Hidden.shock_in_the_step）；forget_inputs_determined_iff 对每个 F 说忘掉噪声后何时仍确定。 / Reuses Determined. In Joint's witnesses the move determines the step with the shock as a move (Shock) and does not with the shock written into the step relation (Hidden.shock_in_the_step); forget_inputs_determined_iff says for every F when the process stays determined with the noise forgotten.
+
+**Producer output / 上游输出:** 确定性；冲击作为动作与写进步骤的对照。 / Determinacy; the contrast between a shock as a move and written into the step.
+
+**Consumer input / 下游输入:** 标准模型的确定性与忘掉噪声的判据。 / The standard model's determinacy and the criterion with the noise forgotten.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
 
 ## ceasing-needs-arising ← census-balance
 
@@ -821,6 +857,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** “更好”读作扩大。 / “Better” read as widening.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
+## comparison-where-the-rest-responds ← testing-within-registration
+
+`formal-reuse` — 复用 Flow.RegisteredFrom、Flow.RegisteredFromEither、Flow.WithinRegistration、supportOnly、Web.Registers、Web.RegistersAlikeUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。 / Reuses Flow.RegisteredFrom, Flow.RegisteredFromEither, Flow.WithinRegistration, supportOnly, Web.Registers, Web.RegistersAlikeUpTo, Flow.exchange_agrees_within and Flow.withheld_eq_of_false; the confinement is the instance of Flow.alike_within_closed whose region is what lies beyond the responsive reach.
+
+**Producer output / 上游输出:** 从区域一侧：对经所识者受影响封闭、成员只经自己之识回应的区域，其成员识得相同。 / From a region's side: members of a region closed under being affected through what is registered, responding only through their own registration, register alike.
+
+**Consumer input / 下游输入:** 从部分一侧：回应所及之外的区域封闭，其成员识得相同、交换相同。 / From a part's side: the region beyond the responsive reach is closed, and its members register alike and exchange alike.
+
+**Retained conditions / 保留条件:** 在区域成员所识的条件上逐步平衡；两个流的在场形成相同；起始相同；其余经识回应。 / Balance at each step on what the region's members register; the same formations present; a common start; the rest responding through its registration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## comparison-where-the-rest-responds ← comparison-within-reach
+
+`formal-reuse` — 复用 Flow.DiffersBefore 与 Flow.Balances.comparison_within_difference：两流的比较在差别所及之内决定；本项给出差别能到哪里。见证复用 Trophic.wolves_unreached 与 Trophic.responsive_mixed。 / Reuses Flow.DiffersBefore and Flow.Balances.comparison_within_difference: the comparison of two flows is decided within what their difference reaches; this record says where the difference can go. The witnesses reuse Trophic.wolves_unreached and Trophic.responsive_mixed.
+
+**Producer output / 上游输出:** 覆盖差别所及的任何意义作公理的比较。 / Any significance covering what the difference reaches makes the axiom's comparison.
+
+**Consumer input / 下游输入:** 差别到不了回应所及之外，所以覆盖不在回应所及之外者的意义就覆盖差别所及。 / The difference reaches nothing beyond the responsive reach, so a significance covering what is not beyond it covers what the difference reaches.
+
+**Retained conditions / 保留条件:** 两个流全局平衡；起始相同。 / Both flows balance throughout; a common start.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## comparison-where-the-rest-responds ← feedback-and-reach
+
+`formal-reuse` — 复用 Flow.Reaches：部分所到达的在回应所及之内。 / Reuses Flow.Reaches: what the part reaches lies within the responsive reach.
+
+**Producer output / 上游输出:** 部分直接到达的（其余固定时比较所计的）。 / What the part reaches directly (what the comparison with the rest fixed counts).
+
+**Consumer input / 下游输入:** 它在回应所及之内。 / It lies within the responsive reach.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## comparison-where-the-rest-responds ← levels-of-closure
+
+`formal-reuse` — 复用 ClosedUnder、WithinClosure 及其引理（refl、trans、of_rel、mono）、Flow.AffectedBy、Flow.Affects、Flow.WithinReach、Flow.WithinInfluence，以及 Trophic 的流、网与鹿有回应的流。 / Reuses ClosedUnder, WithinClosure and its lemmas (refl, trans, of_rel, mono), Flow.AffectedBy, Flow.Affects, Flow.WithinReach, Flow.WithinInfluence, and Trophic's flow, web and the flow in which the deer respond.
+
+**Producer output / 上游输出:** 对一个关系的闭包；所及闭包与影响闭包。 / The closure under a relation; the reach and influence closures.
+
+**Consumer input / 下游输入:** 回应所及是对经所识者影响的闭包；只识支持、一个流时是所及闭包之并；所及闭包是影响闭包之逆。 / The responsive reach is the closure under affecting what is registered; registering support only, with one flow, it is the union of reach closures; the reach closure is the converse of the influence closure.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## comparison-where-the-rest-responds ← laws-of-one-step
+
+`formal-reuse` — 复用 Flow.BalancesOn 与 Flow.Balances.on：限定只在回应所及之外者所识的条件上逐步假设平衡，全局平衡给出它。 / Reuses Flow.BalancesOn and Flow.Balances.on: the confinement assumes balance at each step only on what formations beyond the responsive reach register, and global balance gives it.
+
+**Producer output / 上游输出:** 一步上在一个家族上的平衡。 / Balance on a family across one step.
+
+**Consumer input / 下游输入:** 限定的局部平衡假设。 / The local balance hypotheses of the confinement.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## comparison-within-reach ← feedback-and-reach
 
@@ -2746,6 +2842,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
 
+## projection-carrying-a-law ← experiment-needs-return
+
+`formal-reuse` — 复用 FactorsThrough、Run.StepsThrough、Run.FixesThrough、Run.stepsThrough_of_factors 与 retarget、retarget_determined、retarget_step。P53 把步骤经投影分解为确定过程叫作关于何者无关的模型，由运行之外给出；这里刻画它何时存在（carries_law_iff），并把“未取的不被固定”经投影推广（Run.not_fixesThrough_of_untaken）。 / Reuses FactorsThrough, Run.StepsThrough, Run.FixesThrough, Run.stepsThrough_of_factors and retarget, retarget_determined, retarget_step. P53 calls the factoring of the step through a projection into a determined process a model of what is irrelevant, supplied from outside the run; here it is characterized when it exists (carries_law_iff), and “an untaken move is not fixed” is lifted through the projection (Run.not_fixesThrough_of_untaken).
+
+**Producer output / 上游输出:** 经投影的分解与记录所固定的；改送保持确定性并容许未取的运行。 / Factoring through a projection and what the record fixes so read; retargeting keeps determinacy and admits a run that has not taken the move.
+
+**Consumer input / 下游输入:** 承载规律的定义与刻画；经投影的未取不被固定。 / The definition and characterization of carrying a law; the untaken not fixed through a projection.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## projection-carrying-a-law ← joint-difference-making
+
+`formal-reuse` — 复用 Determined：动作决定一步。承载规律指描述上有确定的过程；经恒等，相同者同去就是它（goAlike_id_iff）。 / Reuses Determined: the move determines the step. Carrying a law means a determined process on the description; through the identity going alike is exactly it (goAlike_id_iff).
+
+**Producer output / 上游输出:** 确定性。 / Determinacy.
+
+**Consumer input / 下游输入:** “规律”的意义：描述上的确定过程。 / What a law means: a determined process on the description.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
+
+## projection-carrying-a-law ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、Law.orbit_shift、Law.process 与 Law.run：确定的律的重新吸收（Law.reabsorbed）经 Law.run 是 DependsOnlyOn.reabsorbed 的实例；Switching 的运行是 Law.orbit。 / Reuses Law.orbit, Law.orbit_shift, Law.process and Law.run: re-absorption for a determined law (Law.reabsorbed) is an instance of DependsOnlyOn.reabsorbed through Law.run; Switching's run is a Law.orbit.
+
+**Producer output / 上游输出:** 确定的律的轨道及其作为过程的运行。 / The orbit of a determined law and its run as a process.
+
+**Consumer input / 下游输入:** 律的重新吸收；见证的运行。 / Re-absorption for a law; the witness's run.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## ranking-under-readings ← relational-reading-comparison
 
 `formal-reuse` — whole_run_extends 在核心上重述该结果的 overdraw_relational_extension；桥接的 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 表明读法与不在场继续的水平就是该结果的。 / whole_run_extends restates that result's overdraw_relational_extension on the core; the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq show that the reading and the levels of the continuation without the formation are that result's.
@@ -3269,6 +3401,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 所立者每步被列出。 / What stands is listed at each step.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
+## selection-through-registration ← testing-within-registration
+
+`formal-reuse` — 复用 Web.RegistersAlike、Web.RegistersAlikeUpTo（refl、symm、earlier、of_obs）、Web.Belief、Web.Refutes（not_meets）、Web.RegistersAlikeAll、Flow.WithinRegistration、Flow.withinRegistration_supportOnly、Flow.unregistered_beyond_registration、Flow.alike_within_registration，以及见证 Clearing.alike_for_clearer、tested_by_dweller、DwellerEnded、resourceGone、clearerAndDweller。增量是把识得相同移到选择上：经识的选择恰及所识，识闭包之外的不见对每个经识的选择成立。 / Reuses Web.RegistersAlike, Web.RegistersAlikeUpTo (refl, symm, earlier, of_obs), Web.Belief, Web.Refutes (not_meets), Web.RegistersAlikeAll, Flow.WithinRegistration, Flow.withinRegistration_supportOnly, Flow.unregistered_beyond_registration, Flow.alike_within_registration, and the witness's Clearing.alike_for_clearer, tested_by_dweller, DwellerEnded, resourceGone and clearerAndDweller. The delta carries registering alike over to selection: selection through registration reaches exactly what registers, and blindness beyond the registration closure holds of every such selection.
+
+**Producer output / 上游输出:** 什么被识得相同；识闭包；识闭包之外的不被识；清除者与栖居者的检验。 / What registers alike; the registration closure; nothing beyond it registers; the clearer's and the dweller's testing.
+
+**Consumer input / 下游输入:** 经识的选择所能分辨的；它在识闭包之外的不见；缺口的见证。 / What a selection through registration can tell apart; its blindness beyond the registration closure; the witnesses of the gap.
+
+**Retained conditions / 保留条件:** 平衡只在被识的条件上逐步假设；其余交换固定，或成员只经自己之识回应。 / Balance only on the conditions registered, at each step; the rest of the exchange fixed, or members responding only through their own registration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## selection-through-registration ← levels-of-closure
+
+`formal-reuse` — 复用对一个关系的闭包（WithinClosure、ClosedUnder）、所及闭包（Flow.WithinReach）与 Clearing 中所及闭包介于清除者与整体之间（Clearing.reach_middle）。缺口是候选者的所及闭包减去选择者的识闭包。 / Reuses the closure under a relation (WithinClosure, ClosedUnder), the reach closure (Flow.WithinReach) and, in Clearing, the reach closure lying between the clearer and the whole (Clearing.reach_middle). The gap is a candidate's reach closure less the selector's registration closure.
+
+**Producer output / 上游输出:** 所及闭包；栖居者在清除者的所及闭包之内。 / The reach closure; the dweller within the clearer's reach closure.
+
+**Consumer input / 下游输入:** 缺口的一边：候选者的部分伸到哪里。 / One side of the gap: where a candidate's part reaches.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## selection-through-registration ← feedback-and-reach
+
+`formal-reuse` — 复用清除者的见证（Clearing.resource_of_clearer）。那里形成的反馈至多识及其影响闭包，而它的部分伸到所及闭包；这里经识的选择也止于识闭包，缺口是两者之差。 / Reuses the clearer's witness (Clearing.resource_of_clearer). There a formation's feedback registers at most its influence closure while its part reaches into its reach closure; here selection through registration also stops at the registration closure, and the gap is the difference.
+
+**Producer output / 上游输出:** 清除者的部分伸到栖居者所依存的资源。 / The clearer's part reaches the resource the dweller depends on.
+
+**Consumer input / 下游输入:** Clearing 中缺口的见证。 / The witness of the gap in Clearing.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## selection-through-registration ← target-capture
+
+`formal-reuse` — 复用 share_rises 与 offspringCount。share_rises_through 是 share_rises 的应用：选择给出谁是携带者，不新增算术。 / Reuses share_rises and offspringCount. share_rises_through is an application of share_rises: the selection supplies which parents are carriers, and no arithmetic is added.
+
+**Producer output / 上游输出:** 携带者各留下更多后代时，其份额在后代中上升。 / Where each carrier leaves more offspring, the carriers' share rises among the offspring.
+
+**Consumer input / 下游输入:** 选择所成立的亲代的份额上升。 / The share of the parents a selection holds for rises.
+
+**Retained conditions / 保留条件:** 后代数的界与 b < a 是给出的；两类亲代都在。 / The bounds on offspring and b < a are supplied; both kinds of parent present.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)
 
 ## self-good-reachable-g0 ← positive-ground-open-futures
 
