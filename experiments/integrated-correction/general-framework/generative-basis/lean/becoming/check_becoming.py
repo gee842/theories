@@ -41,7 +41,8 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment",
+        "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
@@ -51,7 +52,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -123,6 +124,16 @@ SCOPE = (
     "undermines; drawing beyond renewal at every step consumes the condition, the first event "
     "undermines for no positive cycle, with every draw before any step withheld the condition is "
     "still consumed, and at the breaking step drawing nothing keeps the dependence. "
+    "Experiment: along a run, relative to determinacy, the record up to a step fixes what a move "
+    "does at a configuration exactly where the run has taken that move there; a determined "
+    "process retargeting an untaken move has the same run, so what one's own act would have done "
+    "otherwise is fixed only where the configuration returns, and a run that never returns, as "
+    "one keeping its history never does, fixes no move other than the one it takes; read through "
+    "a projection the step factors through into a determined process, one occasion fixes the "
+    "outcome at every configuration in its class, and within finitely many projected "
+    "configurations the projection returns; a wrong projection fixes a difference between moves "
+    "that make none, is never refuted where the moves follow what it leaves out, and is refuted "
+    "where they vary against it. "
     "Substitution: in the support-gated law, a focal formation that can substitute an alternative "
     "condition stays active, transforms its dependence at a step that can be found, and consumes, "
     "while the sustaining formation ends; a concrete law meets the premises, and there the stepwise "
@@ -951,6 +962,14 @@ SCOPE = (
     "exchange idles registration; where the continuation is open no reading decided by a finite "
     "prefix is the whole-run classification. Balance is assumed only on the conditions registered; "
     "the response hypotheses are supplied; no ethical premise is used. "
+    "Runaway: a policy through registration, with the rest of the exchange on what the formation "
+    "registers fixed, is exchange following registration, so every such policy that keeps its "
+    "support never uses a larger stock it does not observe, and one that has used it has lost its "
+    "support at some earlier step; raising a stock keeps balance and dependence, and at every step "
+    "at which a web supports a formation not observing the stock, the raise registers alike; so "
+    "for every horizon up to which only that stock may fail, some raise registers alike wherever "
+    "the web supports the formation and supports it up to the horizon, while observing the stock "
+    "registers every raise. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "

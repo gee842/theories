@@ -4825,6 +4825,131 @@ Integration: 十一项记录；零前提计划 §1.3 C 组；计划 P50；模块
 
 **边界。** 离散步；超出整单位的量与连续时间未在此检验；确切的当且仅当只有一条；延续之下的复现定律用“从某步起列出”，未到覆盖列表；名称（`GiversSupported`，`_at`、`_on`、`_from` 后缀，`recurs_shift`）是 AI 所选，可由整合者或 Ren 改；尚无独立审查。
 
+## 72. 实验：变动自己的动作检验什么、需要什么（P53）
+
+2026-10-11。P49 留下一问（§70，审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较，而一个展开只有其中一段。P49 落地之后，Ren 写道：“land and merge all, then continue”；看过 P53 的结果后又写：“no extra review needed, merge, then continue”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。本节是统一计划 P53，按 Ren 的话不另作独立审查。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Experiment`（L3），25 项定理，导入 `Becoming.Joint` 与 `Becoming.Recurrence`，不改任何已有模块。
+
+成果记录新增一项：[experiment-needs-return](../../../../theories/becoming/results/records/experiment-needs-return.md)。
+
+```text
+Result(s): 复用 joint-difference-making（Determined：动作决定一步）、recurrence-without-premise（revisits_from、
+           Law.withHistory 的形式）、testing-within-registration（一个动作造成什么须相对于模型检验；反映作为投影的读法）；
+           Becoming.Frame 的 Run；新增上列一项
+Delta: 记录所固定的：Run.Takes、Run.StepsOf、Run.Fixes、Run.fixes_of_takes、retarget、retarget_determined、retarget_step、
+       Run.stepsOf_retarget、Run.not_fixes_of_untaken、Run.fixes_on_return、Run.not_fixes_other_of_new、Run.ordered_of_ne。
+       保留历史：keepHistory、keepHistory_length、keepHistory_new、keepHistory_determined、keepHistory_fixes_nothing_else。
+       经投影的实验：Run.StepsThrough、Run.FixesThrough、Run.fixesThrough_of_takes、FactorsThrough、
+       Run.stepsThrough_of_factors、Run.generalizes、Run.projection_returns。见证：Confound（next、process、states、outcome、
+       determined、move_idle、hidden_two、aligned、varied、run、aligned_with_hidden、moveDecides、moveDecides_determined、
+       misattributes、confounded、varied_refutes）
+Supplied premises / correspondence: 不加公理，也不加前提；“固定”相对于确定性（Determined），是所比较的过程类，不是对展开的假设；
+       “未取的动作不被固定”另要实际过程确定且有两个不同的配置；投影是模型（FactorsThrough），由运行之外给出；离散的步；
+       读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T101806.880391Z（Becoming.Experiment 25 项定理，全部源声明公理报告为空），外围回执 20261011T105433.502229Z
+Boundary: 形成变动其动作、保留或遗忘其历史、形成投影都不推出；实际展开经哪个投影分解是经验问题；随机或不确定的过程不在其中；
+          与 Becoming.Testing 的反映的形式桥接没有陈述；不含伦理谓词
+Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开自身比较一个动作的有与无；把 Becoming.Recurrence 的返回与
+             保留的历史接到检验上
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Run.Takes`、`Run.StepsOf`、`Run.Fixes` | 运行在某步之前于某配置取过某动作；一个过程容许运行在某步之前的每一步；相对于确定性，直到某步的记录把某动作在某配置的结果固定为某配置：容许运行这些步的每个确定过程，都把该动作在该配置送到那里 |
+| `Run.fixes_of_takes` | 取过的动作被固定：运行在某步取过某动作之后，每个容许其各步的确定过程都把该动作在该配置送到运行所到之处 |
+| `retarget`、`retarget_determined`、`retarget_step`、`Run.stepsOf_retarget` | 把某配置的某动作改送到任一配置、其余不变的过程；确定的过程改送之后仍确定；没有取过该动作的运行，其各步被每个改送所容许 |
+| `Run.not_fixes_of_untaken` | 未取的动作不被固定：实际过程确定、有两个不同的配置时，运行在某步之前没有于某配置取过某动作，记录就不固定该动作在那里的任何结果，无论什么被反映：容许运行各步的确定过程可以把它送到任意两个配置 |
+| `Run.fixes_on_return`、`Run.not_fixes_other_of_new` | 配置返回之处，另一个动作的结果被固定；配置永不返回的运行，在它经过的每个配置，只固定它在那里所取的动作 |
+| `keepHistory`、`keepHistory_length`、`keepHistory_new`、`keepHistory_determined`、`keepHistory_fixes_nothing_else` | 保留其所经配置与动作的历史的过程（`Law.withHistory` 带动作的对应）；历史每步长一；所以每步都是新的；确定的过程保留历史仍确定；所以保留一切的运行，关于自己的动作，除了所做的，什么都不固定 |
+| `Run.StepsThrough`、`Run.FixesThrough`、`Run.fixesThrough_of_takes` | 经投影读：容许运行各步投影的确定过程；经投影的记录所固定的；运行取过某动作的投影配置，其结果经投影被固定 |
+| `FactorsThrough`、`Run.stepsThrough_of_factors`、`Run.generalizes` | 过程的步经投影分解为一个过程：一个关于配置中何者与其变化无关的模型；模型成立、所分解到的过程确定时，一次场合所固定的结果，就是投影相同的每个配置经投影的结果，无论运行是否经过它 |
+| `Run.projection_returns` | 有限多个投影配置之内，投影从每一步起都返回：`revisits_from` 的实例 |
+| `Confound.misattributes` | 配置是一个隐藏位与一个结果；每步翻转隐藏位、把结果设为步前的隐藏位，动作在任何地方都不造成差别；只读结果的投影下，直到第二步的记录固定“左得假、右得真”：两个不造成差别的动作之间的差别 |
+| `Confound.confounded` | 动作与隐藏位同步时，每一步经结果读都被“动作决定结果”这一确定模型所容许：记录永不否证错误的投影 |
+| `Confound.varied_refutes` | 在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步：错误的投影被否证 |
+
+**它回答了什么。**
+- **展开自身在何处比较一个动作的有与无。** 相对于确定性，记录恰在运行取过某动作之处固定它在那里的结果（`Run.fixes_of_takes`），在别处什么都不固定，即使每个配置都被反映（`Run.not_fixes_of_untaken`）。所以自己的动作若换一个会怎样，只在配置返回、动作不同之处被固定（`Run.fixes_on_return`）。这是 P49 所说“一个动作造成什么，只相对于无此动作之历史的模型才可检验”的精确形式：所需的模型只是确定性，加上一次返回。
+- **保留一切者不能做实验。** 保留其全部历史的配置每步都是新的（`keepHistory_new`），所以关于自己的动作，除了所做的，什么都不固定（`keepHistory_fixes_nothing_else`）。这接上 `Becoming.Recurrence`：保留历史的展开永不返回；有限多个配置之内，当下会遗忘。
+- **实验需要一个关于何者无关的模型。** 经一个投影读，取过的动作经投影被固定（`Run.fixesThrough_of_takes`）；步骤经投影分解为确定过程时，一次场合代表投影相同的整个类（`Run.generalizes`）；有限多个投影配置之内，投影必返回（`Run.projection_returns`）。
+- **模型可以错，而变动能否证它。** 错误的投影把差别归于不造成差别的动作（`Confound.misattributes`）；动作与它所略去的同步时，模型永不被否证（`Confound.confounded`）；动作与之错开时，模型被否证（`Confound.varied_refutes`）。
+
+**读法（AI 的，待 Ren）。**
+- 实验是在配置（按实验者的读法）返回之处变动自己的动作。重复是这一返回。
+- 对照是这样一个主张：两次场合之间不同的，与变化无关；也就是步骤经这一读法分解的模型。
+- 与动作所略去者无关地变动动作，是能否证错误对照的方式；与之同步的动作永不否证它。这是随机化在这里的结构形式。
+- 以 P49 的反映为读法：经所反映者的实验，恰在展开经所反映者分解之处是对的；阈下与所及之外的不见，是不分解的情形。
+- 合于 Ren 的 理：理 作为对反映负责的模型（§70），在这里是投影；它使一次场合代表一类，又可被变动否证。
+
+**作者反审。**
+1. **确定性是比较的类，不是对世界的假设。** “固定”说的是：在一切容许记录的确定过程中，结果只有一个。实际过程不确定时，取过的动作在下一次场合也不必给出同样的结果；那时连 `fixes_of_takes` 所固定的也只是关于确定模型的。随机过程没有陈述。
+2. **“未取的不被固定”要两个配置和确定的实际过程。** 两者都是局部条件，写在定理中。
+3. **配置的相等是全配置的相等。** 实际展开中全配置几乎不返回（`keepHistory_new` 是极端情形），所以正面的结果实际上都经投影；投影本身由运行之外给出，模型从哪里来不推出。
+4. **实验者没有在流与网中表示。** 模块在过程层面陈述，形成的“动作”是过程的动作；与 `Becoming.Testing` 的反映（经支持与观察的阈值）之间的形式桥接，即以反映为投影，没有陈述，是读法。
+5. **不是 `Becoming.Joint` 的重证。** Joint 问一个部分是否造成差别，是关于过程的主张；这里问记录在何处固定这样的主张。两者相接，而不重叠。
+6. **见证是最小的。** `Confound` 只有一个隐藏位；更一般的形式，即动作与隐藏者的何种相关使模型永不被否证，没有陈述。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 78 个常量，公理报告全部为空。`by decide` 只用于自然数字面量的比较。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T101806.880391Z。`Becoming.Experiment` 的 25 项定理全部空依赖；包共 2344 项定理、3509 项声明审计，核心闭包 46 个模块。外围桥接对这个核心重查，通过：回执 20261011T105433.502229Z。
+- 按 Ren 的“no extra review needed”，不作独立审查。
+
+
+## 73. 失控：经自身反映的回路所不能反映的（P55）
+
+2026-10-11。Ren 最初问的是“wisdoms to avoid run away feedbacks”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。P49 把失控读作在一种不见之中运行的回路，并说这是启发，不是陈述（§70）。P53 之后，AI 提议在策略的层面陈述失控问题，Ren 答：“no extra review needed, merge, then continue”。本节是统一计划 P55。它不加公理，只在被反映的条件上逐步假设平衡，属于第一部分。核心新增模块 `Becoming.Runaway`，13 项定理，导入 `Becoming.Testing`，不改任何已有模块。
+
+成果记录新增一项：[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)。
+
+```text
+Result(s): 复用 subthreshold-registration（Flow.ExchangeFollows、Flow.subthreshold_alike_always、
+           Flow.difference_changes_after_divergence）、testing-within-registration（Web.RegistersAlike、Web.Registers、
+           Web.observed_level_registers）、laws-of-one-step（Flow.BalancesOn、Flow.Balances.on）；新增上列一项
+Delta: 策略：Flow.PolicyThrough、Flow.OthersFixed、Flow.exchangeFollows_of_policy、Flow.policy_keeps_difference、
+       Flow.policy_uses_after_failure。断裂的距离：Web.raise、Web.le_raise、Web.Supported.raise、Web.raise_other、
+       Web.registersAlike_raise、Web.observed_raise_registers、Web.needUpTo、Web.need_le_needUpTo、Web.Dependent.raise、
+       Web.break_not_bounded、Flow.BalancesOn.raise。实例：SupportDrawn.break_unregistered
+Supplied premises / correspondence: 不加公理；平衡只在被反映的条件上逐步假设；策略经反映与其余固定是给出的假设
+       （PolicyThrough、OthersFixed），由它们推出 ExchangeFollows；离散的步、自然数的量；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261011T101806.880391Z（Becoming.Runaway 13 项定理，全部源声明公理报告为空），外围回执 20261011T105433.502229Z
+Boundary: 形成汲取多于更新、想要保持支持、形成策略都不推出；他者回应什么是给出的；回路与增益没有定义，失控的读法仍是读法，
+          这里给的是它所依的两条定理；不含伦理谓词
+Integration: 计划 P55；把 P49 失控读法所依的两点陈述为定理：对每个经反映的策略（T5 的策略形式），以及断裂的距离不被反映
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Flow.PolicyThrough`、`Flow.OthersFixed`、`Flow.exchangeFollows_of_policy` | 形成的策略经其反映：凡它直到某步反映相同，它在所反映条件上的取用与给予在两个流中相同；其余形成在这些条件上的交换固定；两者合起来就是交换随反映（`Flow.ExchangeFollows`） |
+| `Flow.policy_keeps_difference` | 对每个经反映的策略，其余固定：起始只在形成依存而不观察的储量上不同、第二个网中高 d，第一个网每步都支持它时，储量每步都高 d，形成每步都反映相同：保持支持的策略永不动用较多的储量 |
+| `Flow.policy_uses_after_failure` | 对每个经反映的策略，其余固定：所反映条件上的差别在某步之前已改变，第一个网就并非此前每步都支持形成 |
+| `Web.raise`、`Web.le_raise`、`Web.Supported.raise`、`Web.raise_other`、`Flow.BalancesOn.raise`、`Web.Dependent.raise` | 把储量每步抬高 d、其余不变的网；它不低于原网，支持原网所支持的，在别的条件上相同；流在一个家族上平衡，在抬高的网上也平衡；原网依存之处，抬高的网也依存 |
+| `Web.registersAlike_raise` | 在网支持形成的每一步，对形成不观察的储量的抬高，形成反映相同 |
+| `Web.needUpTo`、`Web.need_le_needUpTo`、`Web.break_not_bounded` | 断裂没有被反映的界：形成不观察储量，且到某一视界为止只有这个储量的所需可能不满足时，有一个抬高，在原网支持形成的每一步都反映相同，并在视界之前每步都支持它。所以断裂之前，形成所反映的什么都不界定断裂还有多远 |
+| `Web.observed_raise_registers` | 观察储量时，任何正的抬高每步都被反映 |
+| `SupportDrawn.break_unregistered` | 实例：较低的网在第三步不支持形成；一个抬高在原网支持形成的每一步反映相同，在第三步支持它，流在其上平衡 |
+
+**它回答了什么。**
+- **T5 的策略形式。** 计划的 T5 问：只经支持的策略能否在较低的世界保持支持、又在较高的世界用上较多的储量。对每个经反映的策略，在其余固定之下，答案是否定的：保持支持就永不动用较多的储量（`Flow.policy_keeps_difference`），动用了就已在较低的世界失去支持（`Flow.policy_uses_after_failure`）。观察储量的策略可以两者兼得（`Gauged`，§70）。
+- **断裂的距离不被反映。** 断裂之前，对每一个视界，都有一个储量多到撑过那个视界的世界，与实际在形成所反映的一切上相同（`Web.break_not_bounded`）。所以经支持的反馈不仅在断裂之前不变，而且不给断裂还有多远的任何界。
+- **量度给出它。** 观察储量，任何差别立刻被反映（`Web.observed_raise_registers`）。
+
+**读法（AI 的，待 Ren）。**
+- 失控是这样的回路：断裂之前，它自身的反映与储量多出任意多的世界相同。它的策略再精巧，也不能用上它所不反映的。
+- 要避免失控而又不放弃所有的，形成需要反映储量的东西（量度），或储量的模型（理，对反映负责的模型），或反映它的另一个形成（§70）；要知道自己的动作造成什么，需要返回与关于何者无关的模型（P53）。
+- 合于 Ren 4 日的话：理 须调节 心，使其正反馈循环不失控（「不能让正反馈循环失控」）。这里 心 的回路经支持反映，理 是反映储量或其模型的那一部分。
+
+**作者反审。**
+1. **增量小而确切。** `policy_keeps_difference` 与 `policy_uses_after_failure` 是 P49 阈下定理的推论，增量是策略的层面：经反映的策略加其余固定推出交换随反映。实质的新陈述是 `break_not_bounded`：对每个视界的量化。
+2. **其余固定是强的假设。** 他者若回应储量本身，较高的储量可以先终结形成（`Attracting`，§70）；那时 T5 的策略形式不成立。
+3. **抬高的世界用同一个流。** 断裂之后，实际与抬高的世界反映不同，同一个流在抬高的世界里仍是一个平衡的展开，但不必是形成所会做的；定理只说断裂之前的反映。
+4. **回路没有定义。** 失控仍是读法；这里陈述的是它所依的两点。定义回路（水平影响取用、取用又影响水平的闭合）并陈述失控本身，是下一步。
+5. **“只有这个储量可能不满足”是局部条件。** 写在定理中；别的所需若也失败，抬高这个储量不足以撑过视界。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部常量，公理报告全部为空。
+- 合并检查器在落地队列中检查一次，通过：回执 20261011T101806.880391Z。`Becoming.Runaway` 的 13 项定理全部空依赖；包共 2344 项定理、3509 项声明审计，核心闭包 46 个模块。外围桥接对这个核心重查，通过：回执 20261011T105433.502229Z。
+- 按 Ren 的“no extra review needed”，不作独立审查。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -5403,4 +5528,19 @@ On the AI's reading, pending Ren: these, like the laws of one step, are laws of 
 
 The four of them that use `Flow.BalancesOn` reuse laws-of-one-step. Receipt 20261011T073932.785239Z. Not yet independently reviewed; the author's counterreview is in section 71.
 
-The package now has 2306 theorems and 3450 declaration audits, over a core closure of 44 modules and a package of 42, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69 and 71, and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T074322.969802Z).
+**P53: experiment.** P49 left one question open (section 70, review F6): what an act does compares the history with the act and the history without it, and one unfolding has only one of them. After P49 landed, Ren wrote "land and merge all, then continue", and, on P53's result, "no extra review needed, merge, then continue" ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)). `Becoming.Experiment` (25 theorems, L3) imports `Becoming.Joint` and `Becoming.Recurrence` and changes no existing module. It adds no premise.
+- **What the record fixes.** Relative to determinacy (`Determined`), the record fixes what a move does at a configuration where the run has taken that move there (`Run.fixes_of_takes`). It fixes nothing about an untaken move, even with every configuration registered: a determined process sending the untaken move anywhere has the same run (`retarget`, `Run.not_fixes_of_untaken`). So what one's act would have done otherwise is fixed only where the configuration returns (`Run.fixes_on_return`), and a run that never returns fixes no move other than the one it takes (`Run.not_fixes_other_of_new`).
+- **A kept history never returns.** A configuration keeping the history of configurations and moves (`keepHistory`, the counterpart with moves of `Law.withHistory`) is new at every step, so a run that keeps everything fixes nothing about its own acts but what it did (`keepHistory_fixes_nothing_else`).
+- **Experiment needs a model of what is irrelevant.** Read through a projection, a move taken is fixed at its projected configuration (`Run.fixesThrough_of_takes`). Where the step factors through the projection into a determined process, one occasion stands for every configuration with that projection (`Run.generalizes`). Within finitely many projected configurations the projection returns (`Run.projection_returns`).
+- **A wrong model, and what refutes it.** In `Confound` the move makes no difference anywhere, yet read through the outcome alone the record fixes a difference between the two moves (`Confound.misattributes`). Moves in step with the hidden bit never refute this model (`Confound.confounded`); varying the move against it refutes it (`Confound.varied_refutes`).
+
+On the AI's readings, pending Ren: an experiment is varying one's own act where the configuration, as read, returns; replication is that return; a control is the model that the step factors through the reading; varying the act independently of what the reading leaves out is how a wrong control is refuted, the structural form of randomization. Record added: experiment-needs-return. Receipt 20261011T101806.880391Z (Experiment 25); periphery receipt 20261011T105433.502229Z. No independent review, at Ren's word; the author's counterreview is in section 72.
+
+**P55: runaway.** Ren's first question was for "wisdoms to avoid run away feedbacks" ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)). P49 read a runaway as a loop running inside a blindness, a heuristic and not a statement (section 70). After P53 the AI proposed stating the runaway question at the level of policies, and Ren answered "no extra review needed, merge, then continue". `Becoming.Runaway` (13 theorems) imports `Becoming.Testing` and changes no existing module; balance is assumed only on the conditions registered.
+- **T5 over policies.** A formation's policy goes through its registration when its own exchange on what it registers is alike wherever it has registered alike (`Flow.PolicyThrough`). With the rest of that exchange fixed (`Flow.OthersFixed`), the exchange follows registration (`Flow.exchangeFollows_of_policy`). So every such policy that keeps its support never uses a larger stock it does not observe (`Flow.policy_keeps_difference`), and one that has used it has already lost its support in the lower web (`Flow.policy_uses_after_failure`).
+- **The distance to the break is not registered.** For every horizon, where the stock is the only requirement that may be unmet up to it, some web with the stock raised registers alike at every step at which the actual web supports the formation, and supports it at every step up to the horizon (`Web.break_not_bounded`). Raising keeps balance and dependence (`Flow.BalancesOn.raise`, `Web.Dependent.raise`). Before the break, nothing the formation registers bounds how far off the break is.
+- **Measurement registers it.** Observing the stock, any raise registers at once (`Web.observed_raise_registers`).
+
+On the AI's readings, pending Ren: a runaway is a loop whose own registration, before the break, is that of a world with as much more stock as one likes, so no policy through it can use what it does not register; avoiding a runaway without forgoing what is there needs measurement, a model (理, answerable to registration) or another formation's registration, and knowing what one's own act does needs a return and a model of what is irrelevant (P53). This reads Ren's words of 4 October that reason must regulate the heart so that its positive feedback loop does not run out of control. Record added: runaway-distance-unregistered. Receipt 20261011T101806.880391Z (Runaway 13); periphery receipt 20261011T105433.502229Z. No independent review, at Ren's word; the author's counterreview is in section 73.
+
+The package now has 2344 theorems and 3509 declaration audits, over a core closure of 46 modules and a package of 44, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71, 72 and 73 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T105433.502229Z).
