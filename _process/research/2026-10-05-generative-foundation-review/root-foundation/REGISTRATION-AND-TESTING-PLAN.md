@@ -8,9 +8,9 @@
 
 本文是计划：不向核心加入定理，不登记成果。下面的“已检查”都指脊柱上已有的 Lean 定理；“读法”是 AI 的，待 Ren；“待证”是拟议的陈述。
 
-**状态（P49）。** Ren 答“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”，这一阶段已作为统一计划 P49 完成（起草时编为 P47）：模块 `Becoming.Testing`，结果、审查的收窄与第 4 问的决定见 §7 与[研究 §{S}](BECOMING-RENEWAL-READING.md#{ANCHOR})。§0–§6 是阶段开始之前写的计划，保留原文；其中的读法与拟议陈述已被 §7 收窄或取代。
+**状态（P49）。** Ren 答“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”，这一阶段已作为统一计划 P49 完成（起草时编为 P47）：模块 `Becoming.Testing`，结果、审查的收窄与第 4 问的决定见 §7 与[研究 §69](BECOMING-RENEWAL-READING.md#69-计入与检验p49)。§0–§6 是阶段开始之前写的计划，保留原文；其中的读法与拟议陈述已被 §7 收窄或取代。
 
-**Status (P49).** Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”, and the stage is done as unification plan P49 (drafted as P47): module `Becoming.Testing`; the results, the review's narrowing and the decision on question 4 are in §7 and study section {S}. Sections 0–6 are the plan as written before the stage and are kept as written; §7 narrows or replaces their readings and proposed statements.
+**Status (P49).** Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”, and the stage is done as unification plan P49 (drafted as P47): module `Becoming.Testing`; the results, the review's narrowing and the decision on question 4 are in §7 and study section 69. Sections 0–6 are the plan as written before the stage and are kept as written; §7 narrows or replaces their readings and proposed statements.
 
 2026-10-11, Asia/Bangkok. A research note and plan written by the AI (Claude Opus 5.5) on Ren's proposal. Nothing enters the core and no result is registered. "Checked" cites Lean theorems already on the spine, "reading" is the AI's (pending Ren), and "to prove" marks a proposed statement.
 
@@ -167,13 +167,13 @@ The module `Becoming.Testing` is in the pure core with empty axiom reports; bala
 - **Base.** The base registers support only (`supportOnly`).
 - **Own standing.** In the one-kind reading, own standing registers through self-bearing (`Web.SelfBearing`), as a threshold, like any condition depended on.
 - **A gauge of oneself.** `ownStanding` is an observation premise, like `Gauged`'s gauge of the stock.
-- **Why.** The first draft counted own standing as registered. The review's arguments, and the AI's own, are in study section {S}.1. The deciding points:
+- **Why.** The first draft counted own standing as registered. The review's arguments, and the AI's own, are in study section 69.1. The deciding points:
   - an exact self-gauge by default supplies a knower rather than explaining one;
   - the default would make blindness to one's own depletion inexpressible (`Gauged.own_is_stock`), the central runaway case;
   - the weakest base gives the strongest statements, each observation stated as a local premise where it is used.
 - **Scope.** No theorem changes, since `obs` is a parameter. `SelfPrey.threshold_on_oneself` gives the contrast: through support a bite registers only where it brings the prey below its need, while a gauge of oneself registers every bite.
 
-**名称 / Names.** The Lean names follow the review and Ren's naming criteria: `subthreshold_alike`, `difference_kept`, `ExchangeFollows`, `RegistersAlikeUpTo` and `SupportDrawn`. The prose keeps "threshold, horizon and reach blindness" as readings, each with its scope. Whether to replace the Chinese 计入 for "registers" (candidate 反映) goes to Ren; any replacement would apply to P42 and P49 together.
+**名称 / Names.** The Lean names follow the review and Ren's naming criteria: `subthreshold_alike`, `difference_kept`, `ExchangeFollows`, `RegistersAlikeUpTo` and `SupportDrawn`. The prose keeps "threshold, horizon and reach blindness" as readings, each with its scope. The Chinese for "registers" was 计入, as in P42. Ren found it "apparently weird" and asked for a better word. P49 now uses 反映, in its scientific sense: a difference showing in the formation's state. P42's uses in that sense will change once Ren confirms the word. Its uses meaning "take into account" (必须计入) are a different sense and stay.
 
 **§6 中的检验 / The tests of §6.**
 - **The first test.** Under the hypothesis it cannot be met: a support-only exchange keeps the difference until support diverges.

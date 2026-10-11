@@ -9,19 +9,19 @@ STUDY = ('../../../_process/research/2026-10-05-generative-foundation-review/roo
          'BECOMING-RENEWAL-READING.md#{ANCHOR}')
 
 SECTION3_ZH = (
-    '**计入与检验（第一部分，P49）。** 一个形成计入它的支持（水平是否接纳它）与它所观察之条件的水平'
-    f'（[Becoming.Testing]({LEAN}/Testing.lean)）。经依存，计入是一个阈值：依存而不观察的条件只计入它是否满足所需'
-    '（`Web.alike_of_threshold`）；经观察，计入其水平（`Web.observed_level_registers`）。主张只经计入的差别被否证'
-    '（`Web.Refutes.not_of_alike`）：主张与其对手必须在能被计入之处不同，这是可否证性的结构。它是关系的：清除者不能检验的，栖居者能，'
+    '**反映与检验（第一部分，P49）。** 一个形成反映它的支持（水平是否接纳它）与它所观察之条件的水平'
+    f'（[Becoming.Testing]({LEAN}/Testing.lean)）。经依存，反映是一个阈值：依存而不观察的条件只反映它是否满足所需'
+    '（`Web.alike_of_threshold`）；经观察，反映其水平（`Web.observed_level_registers`）。主张只经反映的差别被否证'
+    '（`Web.Refutes.not_of_alike`）：主张与其对手必须在能被反映之处不同，这是可否证性的结构。它是关系的：清除者不能检验的，栖居者能，'
     '两者合起来能检验各自都不能的（`Clearing.tested_by_dweller`、`Clearing.pooled`）。没有模型，有限的记录不否证关于其后的主张'
     '（`Web.tail_unrefuted`）；相对于交换的模型，观察储量的形成在第一步否证假的主张（`Flow.refutes_tail_within`）；相对于模型的否证是对'
-    '模型与主张一起的否证，错的模型否证成立的，计入否证模型（`Web.refutesWithin_iff_conjunction`、`Stationary`）。由计入作出的判断，恰是'
+    '模型与主张一起的否证，错的模型否证成立的，反映否证模型（`Web.refutesWithin_iff_conjunction`、`Stationary`）。由反映作出的判断，恰是'
     '判断过程在形成之信念上的共同回应，更晚的步与更多的观察都保持它（`Web.belief_judge_iff`）：上面的“判断即一步探究”由此接到流上。'
-    '区域的成员只经自己的计入回应时，区域之外的在其中不被计入（`Flow.alike_within_closed`）；交换随形成的计入时，阈下的差别保持到两网的'
+    '区域的成员只经自己的反映回应时，区域之外的在其中不被反映（`Flow.alike_within_closed`）；交换随形成的反映时，阈下的差别保持到两网的'
     '支持分岔（`Flow.subthreshold_alike`、`Flow.difference_changes_after_divergence`），他者回应储量本身时则不然'
-    '（`Attracting.higher_breaks_first`）。平衡只在被计入的条件上逐步假设；回应的假设是给出的。读法（AI 的，经审查收窄，待 Ren）：'
-    '经由支持的反馈有三种不见，各在其范围之内（阈下、视界之外、计入闭包之外）；失控读作在其一之中运行的回路，是启发，不是陈述；'
-    f'理 读作对计入负责的模型。见[研究 §{{S}}]({STUDY})、'
+    '（`Attracting.higher_breaks_first`）。平衡只在被反映的条件上逐步假设；回应的假设是给出的。读法（AI 的，经审查收窄，待 Ren）：'
+    '经由支持的反馈有三种不见，各在其范围之内（阈下、视界之外、反映闭包之外）；失控读作在其一之中运行的回路，是启发，不是陈述；'
+    f'理 读作对反映负责的模型。见[研究 §{{S}}]({STUDY})、'
     '[testing-within-registration](../results/records/testing-within-registration.md) 与 '
     '[subthreshold-registration](../results/records/subthreshold-registration.md)。')
 
@@ -40,7 +40,7 @@ SECTION3_EN = (
     'response hypotheses are supplied; the readings are the AI\'s, narrowed by the review, pending Ren.')
 
 ITEM9_ZH_OLD = '不确定下的判断是一步探究（`Becoming.Inquiry`）。知识的完整说明见第 3 节。〔定理〕'
-ITEM9_ZH_NEW = ('不确定下的判断是一步探究（`Becoming.Inquiry`）。一个形成只能检验在它所计入者中有所不同的主张，由计入作出的判断是'
+ITEM9_ZH_NEW = ('不确定下的判断是一步探究（`Becoming.Inquiry`）。一个形成只能检验在它所反映者中有所不同的主张，由反映作出的判断是'
                 '对其信念的共同回应（`Becoming.Testing`）。知识的完整说明见第 3 节。〔定理〕')
 ITEM9_EN_OLD = ('and judgment under uncertainty is a one-step inquiry (`Becoming.Inquiry`); section 3 gives the account of '
                 'knowledge. [theorem]')
@@ -49,10 +49,10 @@ ITEM9_EN_NEW = ('and judgment under uncertainty is a one-step inquiry (`Becoming
                 'belief (`Becoming.Testing`); section 3 gives the account of knowledge. [theorem]')
 
 WHOLE_II_ZH = (
-    '- **计入与检验。** 依存而不观察的条件只计入它是否满足所需，观察的条件计入其水平（`Web.alike_of_threshold`）；主张只经计入的差别'
+    '- **反映与检验。** 依存而不观察的条件只反映它是否满足所需，观察的条件反映其水平（`Web.alike_of_threshold`）；主张只经反映的差别'
     '被否证（`Web.Refutes.not_of_alike`），相对于模型的否证是对模型与主张一起的否证（`Web.refutesWithin_iff_conjunction`）；区域的成员'
-    '只经自己的计入回应时，区域之外的在其中不被计入（`Flow.alike_within_closed`）；交换随计入时，阈下的差别保持到两网的支持分岔'
-    '（`Flow.difference_changes_after_divergence`）。平衡只在被计入的条件上逐步假设。')
+    '只经自己的反映回应时，区域之外的在其中不被反映（`Flow.alike_within_closed`）；交换随反映时，阈下的差别保持到两网的支持分岔'
+    '（`Flow.difference_changes_after_divergence`）。平衡只在被反映的条件上逐步假设。')
 WHOLE_II_EN = (
     '- **Registration and testing.** A condition depended on and not observed registers only whether it meets the need, '
     'an observed one its level (`Web.alike_of_threshold`); a claim is refuted only through a difference in what registers '
@@ -64,7 +64,7 @@ WHOLE_II_EN = (
 
 WHOLE_III_ZH = (
     '- **模型与回应。** 模型从哪里来、他者怎样回应，不由动力学决定。没有模型，有限的记录不否证关于其后的主张（`Web.tail_unrefuted`）；'
-    '相对于模型的否证可以出错（`Stationary.model_error`）。阈下与计入闭包之外的不见，以给出的回应假设为条件；他者回应储量本身时，较高的'
+    '相对于模型的否证可以出错（`Stationary.model_error`）。阈下与反映闭包之外的不见，以给出的回应假设为条件；他者回应储量本身时，较高的'
     '储量可以先终结形成（`Attracting.higher_breaks_first`）。一个动作造成什么，只相对于无此动作之历史的模型才可检验'
     '（`Flow.beyond_needs_model`）。')
 WHOLE_III_EN = (
@@ -76,16 +76,16 @@ WHOLE_III_EN = (
     'the history without it (`Flow.beyond_needs_model`).')
 
 SPINE_ROW = (
-    f'| L4 | [Becoming.Testing]({LEAN}/Testing.lean) | 计入与检验（不用公理，平衡只在被计入的条件上）：依存的条件只计入阈值，观察的计入水平；'
-    '主张只经计入的差别被否证，相对于模型的否证是模型与主张一起的否证；判断是对信念的共同回应；成员只经自己的计入回应时闭包之外的不被计入；'
-    '交换随计入时阈下的差别保持到支持分岔；检验是关系的 | {N_TESTING} |')
+    f'| L4 | [Becoming.Testing]({LEAN}/Testing.lean) | 反映与检验（不用公理，平衡只在被反映的条件上）：依存的条件只反映阈值，观察的反映水平；'
+    '主张只经反映的差别被否证，相对于模型的否证是模型与主张一起的否证；判断是对信念的共同回应；成员只经自己的反映回应时闭包之外的不被反映；'
+    '交换随反映时阈下的差别保持到支持分岔；检验是关系的 | {N_TESTING} |')
 
 GLOSSARY = [
-    '| 计入闭包 | registration closure | 对经所计入者受影响的闭包（另一个形成与它所依存或观察的条件交换）；含影响闭包，只计入支持时就是它；'
-    '成员只经自己的计入回应时，闭包之外的在其中不被计入 | `Flow.WithinRegistration`、`Flow.alike_within_closed` |',
-    '| 否证 | refutation | 满足主张的历史没有一个直到某步与实际计入相同；相对于模型（可容许历史的类）时，是对模型与主张一起的否证 | '
+    '| 反映闭包 | registration closure | 对经所反映者受影响的闭包（另一个形成与它所依存或观察的条件交换）；含影响闭包，只反映支持时就是它；'
+    '成员只经自己的反映回应时，闭包之外的在其中不被反映 | `Flow.WithinRegistration`、`Flow.alike_within_closed` |',
+    '| 否证 | refutation | 满足主张的历史没有一个直到某步与实际反映相同；相对于模型（可容许历史的类）时，是对模型与主张一起的否证 | '
     '`Web.Refutes`、`Web.RefutesWithin`、`Web.refutesWithin_iff_conjunction` |',
-    '| 阈下 | subthreshold | 依存而不观察的条件只计入它是否满足所需；交换随计入时，阈下的差别保持到两网的支持分岔 | '
+    '| 阈下 | subthreshold | 依存而不观察的条件只反映它是否满足所需；交换随反映时，阈下的差别保持到两网的支持分岔 | '
     '`Web.alike_of_threshold`、`Flow.subthreshold_alike`、`Flow.difference_changes_after_divergence` |',
 ]
 

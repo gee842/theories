@@ -14,6 +14,16 @@ The second message replied to the assistant's analysis and its four questions fo
 
 > agree with you, great job, start now. for 4, you can explore which option is better, then make decision
 
+## Ren's later words (11 October 2026)
+
+After the stage was verified and was waiting to land, the assistant ended a report with "Your one open decision is still the Chinese 计入 for “registers”." Ren replied:
+
+> need more context, 计入 is apparently weird, need better word
+
+Earlier in the same session, while the stage waited in the landing queue, Ren wrote:
+
+> land and merge all, then continue
+
 ## Context (AI-authored)
 
 Everything below is the assistant's, not Ren's.

@@ -44,6 +44,11 @@ N_THM = sum(m['theorems'] for m in spine)
 N_DECL = sum(len(m['declarations']) for m in spine)
 N_PKG = len(spine)
 N_CORE = len(receipt['core_closure'])
+N_INH = len(receipt['inherited_receipts'])
+PERI_RECEIPT = 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json'
+peri = json.loads((ROOT / PERI_RECEIPT).read_text())
+assert peri['status'] == 'passed'
+PERI_RUN = peri['utc']
 for path in (TESTING, LOCALITY, REVIEW, SOURCE, PLAN):
     assert (ROOT / path).exists(), path
 
@@ -81,16 +86,24 @@ def B(*names):
 def scope(names_zh, names_en):
     return zh_en(
         f'Lean 4.29.1 合并检查器成功实查（{RUN}）：Becoming.Testing 的 {N_TESTING} 项定理全部空依赖，其中含{names_zh}；同一回执覆盖包内 '
-        f'{N_PKG} 个模块（含只作导入的根模块与桥接），共 {N_THM} 项定理／{N_DECL} 项声明审计。检查器另核对核心纯净：核心的导入闭包恰为这 '
-        f'{N_CORE} 个模块，其中每条源声明的公理报告为空，并且只用 Lean 内置前导即可编译。整合之前经{ORD_ZH}独立审查'
-        f'（BECOMING-P49-REVIEW.md，起草时称 P47），处理见整合文档 §{SEC}.2，作者反审见 §{SEC}.3；处理之后的文本尚未经独立审查。',
+        f'{N_PKG} 个模块（含只作导入的根模块与桥接），共 {N_THM} 项定理／{N_DECL} 项声明审计，{N_INH} 个继承模块的当前字节与已通过回执一致；'
+        f'外围回执 {PERI_RUN} 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 '
+        f'Becoming）的导入闭包恰为这 {N_CORE} 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq '
+        '依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。'
+        f'作者反审见整合文档 §{SEC}.3；整合之前经{ORD_ZH}独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §{SEC}.2；'
+        '处理之后的文本尚未经独立审查。',
         f'Successful Lean 4.29.1 consolidated check ({RUN}): the {N_TESTING} theorems of Becoming.Testing all have empty '
-        f'axiom reports, among them {names_en}; the same receipt covers the package\'s {N_PKG} modules (including the '
-        f'import-only root and the bridge) with {N_THM} theorems/{N_DECL} declaration audits. The checker also verifies '
-        f'core purity: the import closure of the core is exactly these {N_CORE} modules, every source declaration in it has '
-        "an empty axiom report, and it compiles from Lean's prelude alone. Reviewed before integration by the "
-        f'{ORD_EN} independent review (BECOMING-P49-REVIEW.md, titled P47), handled in §{SEC}.2 of the integration note, '
-        f'with the author\'s counterreview in §{SEC}.3; the text after the handling is not yet independently reviewed.')
+        f"axiom reports, among them {names_en}; the same receipt covers the package's {N_PKG} modules (including the "
+        f'import-only root and the bridge) with {N_THM} theorems/{N_DECL} declaration audits, and {N_INH} inherited '
+        f'modules whose current bytes match passed receipts; periphery receipt {PERI_RUN} passed. The checker also '
+        'verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, '
+        f'L1–L4 and the root module Becoming) is exactly these {N_CORE} modules, every source declaration in it has an '
+        'empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, '
+        'injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from '
+        "Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in "
+        f'§{SEC}.3 of the integration note; reviewed before integration by the {ORD_EN} independent review '
+        f'(BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §{SEC}.2; the text after that treatment is not yet '
+        'independently reviewed.')
 
 
 CORRESPONDENCE = zh_en(
@@ -98,11 +111,11 @@ CORRESPONDENCE = zh_en(
     'scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all '
     'explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、'
     '可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option '
-    'is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（阈下在交换随计入之处，视界之外在延续开放之处，计入闭包'
-    '之外在成员只经自己的计入回应之处）；失控的读法是启发，不是陈述；理 读作对计入负责的模型。所以记录中的读法是 AI 收窄之后的，待 Ren，'
-    '不是 Ren 所接受的原文。第 4 问（形成自身的立着是否算作被计入）由 AI 探索后决定：基础只计入支持（supportOnly），一类读法中自身的立着'
-    f'经承担自身（Web.SelfBearing）作为阈值计入，量度自身（ownStanding）是观察前提；理由见整合文档 §{SEC}.1。“计入”（registers）沿用 P42 '
-    '的用语，是否换用交 Ren。',
+    'is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（阈下在交换随反映之处，视界之外在延续开放之处，反映闭包'
+    '之外在成员只经自己的反映回应之处）；失控的读法是启发，不是陈述；理 读作对反映负责的模型。所以记录中的读法是 AI 收窄之后的，待 Ren，'
+    '不是 Ren 所接受的原文。第 4 问（形成自身的立着是否算作被反映）由 AI 探索后决定：基础只反映支持（supportOnly），一类读法中自身的立着'
+    f'经承担自身（Web.SelfBearing）作为阈值反映，量度自身（ownStanding）是观察前提；理由见整合文档 §{SEC}.1。“反映”（registers）原作“计入”，与 P42 '
+    '一致；Ren 认为“计入 is apparently weird, need better word”，改为“反映”，取差别在形成的状态中显出之义（见整合文档 §{SEC}.2）。',
     'Ren\'s proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, '
     'learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, '
     'learn, update, are all explained within what we have, if not not proved yet”. The AI\'s answer proposed three '
@@ -116,14 +129,15 @@ CORRESPONDENCE = zh_en(
     'accepted. Question 4, whether a formation\'s own standing counts as registered, was decided by the AI after '
     'exploring the options: the base registers support only (supportOnly); in the one-kind reading own standing '
     'registers through self-bearing (Web.SelfBearing) as a threshold; and a gauge of oneself (ownStanding) is an '
-    f'observation premise. The reasons are in §{SEC}.1 of the integration note. The Chinese 计入 for “registers” '
-    'follows P42; whether to replace it goes to Ren.')
+    f'observation premise. The reasons are in §{SEC}.1 of the integration note. The Chinese for “registers” was 计入, '
+    'as in P42; Ren found it “apparently weird” and asked for a better word, so it is 反映, a difference showing in the '
+    f'formation\'s state (§{SEC}.2 of the integration note).')
 
 DISCRETE = zh_en('离散的步（从第 0 步计）；自然数的水平、所需与数量；条件上的判定相等（DecidableEq）只在按条件分情形处使用，不用经典推理。',
                  'Discrete steps, counted from step 0; natural-number levels, needs and amounts; decidable equality of '
                  'conditions (DecidableEq) is used only to split cases on conditions, and no classical reasoning is used.')
 LOCAL_BALANCE = zh_en(
-    '平衡只在被计入的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。',
+    '平衡只在被反映的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。',
     'Balance is assumed only on the conditions registered, at each step (Flow.BalancesOn, singleton families, needing '
     'no finiteness); global balance gives it through Flow.Balances.on.')
 HISTORY = [zh_en(
@@ -152,7 +166,7 @@ subthreshold = {
     'schema_version': 1,
     'id': 'subthreshold-registration',
     'title': zh_en(
-        '阈下的差别：交换随计入时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然',
+        '阈下的差别：交换随反映时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然',
         'Differences below the threshold: where the exchange follows registration, a difference in a stock a formation '
         'depends on and does not observe stays until the two webs\' support diverges; observing the stock lifts it, '
         'and others responding to the stock itself break it'),
@@ -161,19 +175,19 @@ subthreshold = {
     'family': 'F04',
     'reviewed_at_utc': REVIEWED,
     'claim': zh_en(
-        '设两个流在形成 g 所计入（依存或观察）的每个条件上逐步平衡，并且 g 周围的交换随其计入：凡 g 直到某步计入相同，两个流跨过该步在 g '
-        '所计入的每个条件上，对在场的全部形成，取用与给予的总量相同（Flow.ExchangeFollows）。那么 g 计入相同期间，它所计入条件上的每个差别'
-        '都保持起始的样子（Flow.difference_kept）。第二个网在 g 所计入的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 g '
-        '的每一步，g 都计入相同（Flow.alike_while_supported），可以有任意多个条件不同；差别在某步之前已改变，必有更早的一步，第二个网的水平'
+        '设两个流在形成 g 所反映（依存或观察）的每个条件上逐步平衡，并且 g 周围的交换随其反映：凡 g 直到某步反映相同，两个流跨过该步在 g '
+        '所反映的每个条件上，对在场的全部形成，取用与给予的总量相同（Flow.ExchangeFollows）。那么 g 反映相同期间，它所反映条件上的每个差别'
+        '都保持起始的样子（Flow.difference_kept）。第二个网在 g 所反映的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 g '
+        '的每一步，g 都反映相同（Flow.alike_while_supported），可以有任意多个条件不同；差别在某步之前已改变，必有更早的一步，第二个网的水平'
         '接纳 g 而第一个网不支持它，活动需要支持时 g 在第一个网中并非此前每步都活跃（Flow.difference_changes_after_divergence）。起始只在 g '
-        '依存而不观察的一个储量上不同、第二个网中高 d 时，在第一个网此前每步都支持 g 的每一步，储量恰好高 d，g 所计入的其余条件相同，g 此前'
-        '每步都计入相同（Flow.subthreshold_alike）；第一个网每步都支持 g 时每步都如此（Flow.subthreshold_alike_always）。见证：SupportDrawn '
+        '依存而不观察的一个储量上不同、第二个网中高 d 时，在第一个网此前每步都支持 g 的每一步，储量恰好高 d，g 所反映的其余条件相同，g 此前'
+        '每步都反映相同（Flow.subthreshold_alike）；第一个网每步都支持 g 时每步都如此（Flow.subthreshold_alike_always）。见证：SupportDrawn '
         '中形成需要一个单位、在每个被支持的步取一个单位，交换只随支持，差别保持到第三步，较低的网在第三步不支持它而较高的网支持，第四步差别'
         '已变（SupportDrawn.difference_waits）；JointFailure 中两网从第二步起都不支持形成，差别每步都保持（JointFailure.difference_kept）；'
-        'Gauged 中观察储量的形成在第一步取尽需要之上的全部，在较高的网中动用了差别，交换随其计入而不约束任何东西，只计入支持时交换不随其计入'
+        'Gauged 中观察储量的形成在第一步取尽需要之上的全部，在较高的网中动用了差别，交换随其反映而不约束任何东西，只反映支持时交换不随其反映'
         '（Gauged.gauge_changes_difference）；储量划作自身的立着时，量度自身就是量度储量（Gauged.own_is_stock）；Attracting 中被较高的储量'
-        '招来的取用者使较高的网在第二步就不支持依存者，交换不随其计入（Attracting.higher_breaks_first）；SelfPrey 中以所需一依存于自身的猎物，'
-        '咬一个单位经支持每步都计入相同，量度自身在第二步计入它，咬两个单位经支持在第二步就被计入（SelfPrey.threshold_on_oneself）。'
+        '招来的取用者使较高的网在第二步就不支持依存者，交换不随其反映（Attracting.higher_breaks_first）；SelfPrey 中以所需一依存于自身的猎物，'
+        '咬一个单位经支持每步都反映相同，量度自身在第二步反映它，咬两个单位经支持在第二步就被反映（SelfPrey.threshold_on_oneself）。'
         '不用 Lean 公理。',
         'Let two flows balance at each step on every condition a formation g registers (depends on or observes), and let '
         'the exchange around g follow its registration: wherever g has registered alike up to a step, the two flows take '
@@ -203,12 +217,12 @@ subthreshold = {
         'two registers through support at the second step (SelfPrey.threshold_on_oneself). No Lean axiom is used.'),
     'hypotheses': [
         LOCAL_BALANCE,
-        zh_en('交换随计入（Flow.ExchangeFollows）是给出的假设，不由动力学推出：它是关于 g 周围全部交换的，排除他者对 g 所不计入者作出回应；'
+        zh_en('交换随反映（Flow.ExchangeFollows）是给出的假设，不由动力学推出：它是关于 g 周围全部交换的，排除他者对 g 所不反映者作出回应；'
               'Attracting 是它不成立时的反例。',
               'The exchange following registration (Flow.ExchangeFollows) is a supplied hypothesis, not derived from the '
               'dynamics: it concerns the whole exchange around g and excludes others responding to what g does not '
               'register; Attracting is the counterexample where it fails.'),
-        zh_en('计入：形成计入它的支持（水平是否接纳它）与它所观察之条件的水平（obs，参数，基础是 supportOnly）。活动由表示给出，不算作被计入；'
+        zh_en('反映：形成反映它的支持（水平是否接纳它）与它所观察之条件的水平（obs，参数，基础是 supportOnly）。活动由表示给出，不算作被反映；'
               '在 Web.Dependent 之下它不能超出支持。',
               'Registration: a formation registers its support (whether the levels admit it) and the levels of the '
               'conditions it observes (obs, a parameter, with supportOnly the base). Activity is supplied by the '
@@ -229,41 +243,41 @@ subthreshold = {
         dep('testing-within-registration',
             zh_en('复用 Web.Registers、Web.RegistersAlike、Web.RegistersAlikeUpTo、supportOnly 与 ownStanding。',
                   'Reuses Web.Registers, Web.RegistersAlike, Web.RegistersAlikeUpTo, supportOnly and ownStanding.'),
-            zh_en('一个形成计入什么，两个水平历史何时对它计入相同。',
+            zh_en('一个形成反映什么，两个水平历史何时对它反映相同。',
                   'What a formation registers, and when two level histories register alike for it.'),
-            zh_en('交换随计入的假设与阈下差别的规律。', 'The hypothesis of the exchange following registration, and the '
+            zh_en('交换随反映的假设与阈下差别的规律。', 'The hypothesis of the exchange following registration, and the '
                   'laws of differences below the threshold.'),
             zh_en('无。', 'None.'), TESTING),
         dep('closing-needs-net-draw',
             zh_en('复用 Web.Admits：支持就是所需条件的水平接纳形成。', 'Reuses Web.Admits: support is admission by the '
                   'levels of the conditions required.'),
             zh_en('接纳。', 'Admission.'),
-            zh_en('第二个网的水平在第一个网支持 g 处接纳 g，所以 g 计入相同。', 'The second web\'s levels admit g wherever '
+            zh_en('第二个网的水平在第一个网支持 g 处接纳 g，所以 g 反映相同。', 'The second web\'s levels admit g wherever '
                   'the first web supports it, so g registers alike.'),
             zh_en('无。', 'None.'), ADMISSION),
         dep('levels-of-closure',
             zh_en('复用 Web.DependsOn：g 依存于储量。', 'Reuses Web.DependsOn: g depends on the stock.'),
-            zh_en('依存。', 'Dependence.'), zh_en('被计入的条件。', 'The conditions registered.'),
+            zh_en('依存。', 'Dependence.'), zh_en('被反映的条件。', 'The conditions registered.'),
             zh_en('无。', 'None.'), FEEDBACK),
     ],
     'related': [
-        related('reserve-defers-ending', zh_en('那里储备推迟终结而不逃脱它；这里交换随计入时，储量上的差别在支持分岔之前不被计入。',
+        related('reserve-defers-ending', zh_en('那里储备推迟终结而不逃脱它；这里交换随反映时，储量上的差别在支持分岔之前不被反映。',
                                                'There a reserve defers the end and does not escape it; here, where the '
                                                'exchange follows registration, a difference in a stock registers only '
                                                'once support diverges.')),
         related('consumption-ends-with-feeders', zh_en('那里只由不被支持的供给者供给的消耗至多持续其所消耗的水平那么多步；这里支持在分岔之前'
-                                                       '不计入储量的差别。',
+                                                       '不反映储量的差别。',
                                                        'There consumption fed only by unsupported feeders lasts at most as '
                                                        'many steps as the level it consumes; here support registers a '
                                                        'difference in a stock only once it diverges.')),
-        related('becoming-finite-horizon', zh_en('那里有限的前缀不决定更新还是消耗；这里是阈值处的计入。',
+        related('becoming-finite-horizon', zh_en('那里有限的前缀不决定更新还是消耗；这里是阈值处的反映。',
                                                  'There no finite prefix decides renewal or consumption; here registration '
                                                  'at a threshold.')),
     ],
     'counterexamples': [
         {'path': TESTING, 'detail': zh_en(
-            '他者回应储量本身时，交换不随计入，较高的储量可以先终结依存者：Attracting 中被三个单位的储量招来的取用者使较高的网在第二步就不'
-            '支持依存者，较低的网仍支持（Attracting.higher_breaks_first）。未加限定的读法“损失直到断裂才被计入”对此不成立。',
+            '他者回应储量本身时，交换不随反映，较高的储量可以先终结依存者：Attracting 中被三个单位的储量招来的取用者使较高的网在第二步就不'
+            '支持依存者，较低的网仍支持（Attracting.higher_breaks_first）。未加限定的读法“损失直到断裂才被反映”对此不成立。',
             'Where others respond to the stock itself the exchange does not follow registration, and a higher stock can end '
             'the dependent first: in Attracting a taker drawn by a stock of three makes the higher web fail the dependent at '
             'the second step while the lower web still supports it (Attracting.higher_breaks_first). The unqualified '
@@ -275,7 +289,7 @@ subthreshold = {
             '(Gauged.gauge_changes_difference).')},
     ],
     'limitations': zh_en(
-        '形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随计入是给出的假设，哪些展开满足它是经验问题；回路、增益与'
+        '形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随反映是给出的假设，哪些展开满足它是经验问题；回路、增益与'
         '失控没有定义，失控的读法是启发；观察是精确的，带误差的量度（校准）没有建模；读法是 AI 的，经审查收窄，待 Ren；不含伦理谓词。',
         'That a formation observes anything beyond its support, gauges its own standing or wants to avoid a runaway is '
         'not derived; the exchange following registration is a supplied hypothesis, and which unfoldings meet it is '
@@ -298,7 +312,7 @@ subthreshold = {
                        binding(ADMISSION, 'Becoming.Admission'), binding(FEEDBACK, 'Becoming.Feedback'),
                        binding(ROLES, 'Becoming.Roles')],
     'next_delta': zh_en(
-        '定义回路（水平影响取用、取用又影响水平的闭合）并把失控陈述为定理；由动力学给出交换随计入，而不是假设它；带误差的观察（校准）。',
+        '定义回路（水平影响取用、取用又影响水平的闭合）并把失控陈述为定理；由动力学给出交换随反映，而不是假设它；带误差的观察（校准）。',
         'Define a loop (levels affecting taking, and taking the levels) and state a runaway as a theorem; give the exchange '
         'following registration from the dynamics rather than assume it; observation with error (calibration).'),
     'history': HISTORY,
@@ -333,8 +347,8 @@ testing_rec = {
     'schema_version': 1,
     'id': 'testing-within-registration',
     'title': zh_en(
-        '检验在计入之内：主张只经计入的差别被否证，相对于模型的否证是对模型与主张一起的否证；成员只经自己的计入回应时，计入闭包之外的在其中'
-        '不被计入；检验是关系的',
+        '检验在反映之内：主张只经反映的差别被否证，相对于模型的否证是对模型与主张一起的否证；成员只经自己的反映回应时，反映闭包之外的在其中'
+        '不被反映；检验是关系的',
         'Testing lies within registration: a claim is refuted only through a difference in what registers, and refutation '
         'relative to a model is refutation of the model and the claim together; where the members respond only through '
         'their own registration, nothing beyond the registration closure registers within it; testing is relational'),
@@ -343,27 +357,27 @@ testing_rec = {
     'family': 'F04',
     'reviewed_at_utc': REVIEWED,
     'claim': zh_en(
-        '形成计入它的支持（水平是否接纳它）与它所观察之条件的水平（obs；基础是只计入支持，supportOnly）。在两个水平历史之下，在某步水平同样'
-        '接纳它、所观察的条件同样立着，就是计入相同（Web.RegistersAlike），直到某步每步如此就是直到该步计入相同（Web.RegistersAlikeUpTo）。'
-        '依存而不观察的条件只计入它是否满足所需（Web.alike_of_threshold），观察的条件计入其水平（Web.observed_level_registers），观察得更多'
-        '分辨得更多（Web.RegistersAlikeUpTo.of_obs）。关于水平历史的主张在某步被否证，是指满足它的历史没有一个直到该步与实际计入相同'
-        '（Web.Refutes）：主张只经计入的差别被否证（Web.Refutes.not_of_alike），成立的永不被否证，否证此后一直成立，观察得更多否证得更多；'
+        '形成反映它的支持（水平是否接纳它）与它所观察之条件的水平（obs；基础是只反映支持，supportOnly）。在两个水平历史之下，在某步水平同样'
+        '接纳它、所观察的条件同样立着，就是反映相同（Web.RegistersAlike），直到某步每步如此就是直到该步反映相同（Web.RegistersAlikeUpTo）。'
+        '依存而不观察的条件只反映它是否满足所需（Web.alike_of_threshold），观察的条件反映其水平（Web.observed_level_registers），观察得更多'
+        '分辨得更多（Web.RegistersAlikeUpTo.of_obs）。关于水平历史的主张在某步被否证，是指满足它的历史没有一个直到该步与实际反映相同'
+        '（Web.Refutes）：主张只经反映的差别被否证（Web.Refutes.not_of_alike），成立的永不被否证，否证此后一直成立，观察得更多否证得更多；'
         '没有模型时，对任何有限的记录，“某条件将归于无”与“它此后一直在无之上”都不被否证（Web.tail_unrefuted）。相对于模型（可容许历史的类）'
         '的否证（Web.RefutesWithin）恰是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction）；相对于流的水平历史，观察储量的形成在'
-        '第一步否证一切“它将归于无”的假主张（Flow.refutes_tail_within）；错的模型否证成立的，计入否证模型（Stationary.model_error、'
-        'model_refuted）。形成的信念是与实际计入相同的历史（Web.Belief）；否证是主张与信念不交；由计入作出的判断恰是 Becoming.Inquiry 中'
+        '第一步否证一切“它将归于无”的假主张（Flow.refutes_tail_within）；错的模型否证成立的，反映否证模型（Stationary.model_error、'
+        'model_refuted）。形成的信念是与实际反映相同的历史（Web.Belief）；否证是主张与信念不交；由反映作出的判断恰是 Becoming.Inquiry 中'
         '判断过程在信念上的共同回应，更晚的步与更多的观察都保持它（Web.belief_judge_iff、belief_judge_later、belief_judge_widen）。形成依存于'
-        '或观察一个条件就计入它（Web.Registers）；计入闭包是对经所计入者受影响的闭包（Flow.WithinRegistration），含影响闭包，只计入支持时就是'
-        '它，随观察与交换增大。两个流在相同的形成在场、在一个区域的成员所计入的每个条件上逐步平衡，区域在两个流中都对经所计入者受影响封闭，'
-        '水平起始在成员所计入的条件上相同，每个成员在自己计入相同之处对成员所计入的条件同样取用与给予时，每个成员每步都计入相同'
-        '（Flow.alike_within_closed）。其余交换固定时，这给出：成员都在计入闭包之外的部分，闭包之内每步有与无它都计入相同'
+        '或观察一个条件就反映它（Web.Registers）；反映闭包是对经所反映者受影响的闭包（Flow.WithinRegistration），含影响闭包，只反映支持时就是'
+        '它，随观察与交换增大。两个流在相同的形成在场、在一个区域的成员所反映的每个条件上逐步平衡，区域在两个流中都对经所反映者受影响封闭，'
+        '水平起始在成员所反映的条件上相同，每个成员在自己反映相同之处对成员所反映的条件同样取用与给予时，每个成员每步都反映相同'
+        '（Flow.alike_within_closed）。其余交换固定时，这给出：成员都在反映闭包之外的部分，闭包之内每步有与无它都反映相同'
         '（Flow.unregistered_beyond_registration，推广 P42 的 unregistered_beyond_influence），无部分的水平所满足的主张在闭包之内不被否证，'
         '相对于模型的否证靠模型对部分之交换的排除，闭包之内的判断在有与无部分时都可容许（Flow.unrefuted_beyond_registration、'
-        'beyond_needs_model、belief_judge_beyond）。Clearing 中清除者每步都计入相同，无论清除是否终结栖居者（Clearing.alike_for_clearer）；'
+        'beyond_needs_model、belief_judge_beyond）。Clearing 中清除者每步都反映相同，无论清除是否终结栖居者（Clearing.alike_for_clearer）；'
         '在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不否证，被栖居者在第三步否证（Clearing.tested_by_dweller）；“第三步栖居者或'
-        '清除者不被接纳”，两者各自都不否证，合起来否证（Clearing.pooled）；以固定起始与交换的模型，清除者在第一步否证它不计入的（'
-        'Clearing.model_idles_registration）。Prey 中不依存于自身的猎物，捕食者在其影响闭包之外、量度自身时的计入闭包之内，经支持每步计入'
-        '相同、量度自身则计入其取用（Prey.registers_taking），这靠被省略的关系（Prey.omits）。不用 Lean 公理。',
+        '清除者不被接纳”，两者各自都不否证，合起来否证（Clearing.pooled）；以固定起始与交换的模型，清除者在第一步否证它不反映的（'
+        'Clearing.model_idles_registration）。Prey 中不依存于自身的猎物，捕食者在其影响闭包之外、量度自身时的反映闭包之内，经支持每步反映'
+        '相同、量度自身则反映其取用（Prey.registers_taking），这靠被省略的关系（Prey.omits）。不用 Lean 公理。',
         'A formation registers its support (whether the levels admit it) and the levels of the conditions it observes '
         '(obs; the base registers support only, supportOnly). Under two level histories it registers alike at a step '
         'when the levels admit it alike and its observed conditions stand alike (Web.RegistersAlike), and alike up to a '
@@ -405,17 +419,17 @@ testing_rec = {
         'support at every step and through the gauge after the bite (Prey.registers_taking), which rests on omitted '
         'relations (Prey.omits). No Lean axiom is used.'),
     'hypotheses': [
-        zh_en('计入与否证的定义不设前提；模型是给出的可容许历史类。',
+        zh_en('反映与否证的定义不设前提；模型是给出的可容许历史类。',
               'The definitions of registration and refutation assume nothing; a model is a supplied class of admissible '
               'histories.'),
         LOCAL_BALANCE,
-        zh_en('Flow.alike_within_closed 另设区域在两个流中封闭、起始相同与成员只经自己的计入回应，都是给出的假设；有与无部分的比较用扣留水平'
+        zh_en('Flow.alike_within_closed 另设区域在两个流中封闭、起始相同与成员只经自己的反映回应，都是给出的假设；有与无部分的比较用扣留水平'
               '（Flow.WithheldLevels，其余交换不变，是表示上的选择）；部分是判定的形成家族。',
               'Flow.alike_within_closed further assumes the region closed in both flows, the starts alike, and the members '
               'responding only through their own registration, all supplied hypotheses; the comparison with and without a '
               'part uses withheld levels (Flow.WithheldLevels, the rest of the exchange unchanged, a choice of the '
               'representation); a part is a decided family of formations.'),
-        zh_en('计入：支持与所观察条件的水平（obs，参数）；活动由表示给出，不算作被计入。否证是对一个形成、在一步、在一个水平历史之下的；主张是'
+        zh_en('反映：支持与所观察条件的水平（obs，参数）；活动由表示给出，不算作被反映。否证是对一个形成、在一步、在一个水平历史之下的；主张是'
               '关于水平历史的任何命题。',
               'Registration: support and the levels of the conditions observed (obs, a parameter); activity is supplied by '
               'the representation and is not counted as registered. Refutation is by one formation, at a step, under one '
@@ -432,12 +446,12 @@ testing_rec = {
                    'Flow.alike_within_closed', 'Flow.unregistered_beyond_registration',
                    'Flow.unrefuted_beyond_registration', 'Flow.beyond_needs_model', 'Clearing.tested_by_dweller',
                    'Clearing.pooled', 'Stationary.model_error'),
-                'registration closure', '计入闭包', 'reach blindness', 'falsifiability', '可否证性',
+                'registration closure', '反映闭包', 'reach blindness', 'falsifiability', '可否证性',
                 'refutation relative to a model', '相对于模型的否证'],
     'dependencies': [
         dep('feedback-and-reach',
             zh_en('推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；'
-                  '只计入支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、'
+                  '只反映支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、'
                   'Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是'
                   '固定其余交换的形式。',
                   'Extends P42\'s Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the '
@@ -446,7 +460,7 @@ testing_rec = {
                   'Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is '
                   'alike_within_closed, not the fixed-rest form.'),
             zh_en('交换、影响闭包与不清除的世界。', 'Exchange, the influence closure and the world with the habitat spared.'),
-            zh_en('计入闭包及其不见；清除者不检验栖居者被终结。', 'The registration closure and its blindness; the clearer does '
+            zh_en('反映闭包及其不见；清除者不检验栖居者被终结。', 'The registration closure and its blindness; the clearer does '
                   'not test whether the dweller is ended.'),
             zh_en('平衡；扣留水平。', 'Balance; withheld levels.'), FEEDBACK),
         dep('levels-of-closure',
@@ -454,13 +468,13 @@ testing_rec = {
                   'Reuses ClosedUnder, WithinClosure (mono, not_rel, of_rel, refl, trans), closedUnder_withinClosure and '
                   'Web.DependsOn.'),
             zh_en('对一个关系的闭包。', 'Closure under a relation.'),
-            zh_en('计入闭包及其封闭。', 'The registration closure and its closedness.'),
+            zh_en('反映闭包及其封闭。', 'The registration closure and its closedness.'),
             zh_en('无。', 'None.'), FEEDBACK),
         dep('closing-needs-net-draw',
             zh_en('复用 Web.Admits、Flow.withhold 与 Flow.WithheldLevels。', 'Reuses Web.Admits, Flow.withhold and '
                   'Flow.WithheldLevels.'),
             zh_en('接纳与扣留水平。', 'Admission and withheld levels.'),
-            zh_en('计入相同的第一项；有与无部分的比较。', 'The first clause of registering alike; the comparison with and '
+            zh_en('反映相同的第一项；有与无部分的比较。', 'The first clause of registering alike; the comparison with and '
                   'without a part.'),
             zh_en('无。', 'None.'), ADMISSION),
         dep('four-cases-of-a-part',
@@ -471,7 +485,7 @@ testing_rec = {
             zh_en('无。', 'None.'), REGIONS),
     ],
     'related': [
-        related('subthreshold-registration', zh_en('那里是阈值处的计入与交换随计入时阈下差别的规律；这里是计入、否证、所及与检验的关系性。',
+        related('subthreshold-registration', zh_en('那里是阈值处的反映与交换随反映时阈下差别的规律；这里是反映、否证、所及与检验的关系性。',
                                                    'There registration at a threshold and the laws of differences below '
                                                    'it where the exchange follows registration; here registration, '
                                                    'refutation, reach and the relational character of testing.')),
@@ -484,7 +498,7 @@ testing_rec = {
                                                  'refutes a claim about what follows it, while relative to a model one '
                                                  'can.')),
         related('finite-fallible-inquiry-necessity', zh_en('外围的信息界：保持同样读数的适应关系不能同时满足更强的覆盖；这里在脊柱上，'
-                                                           '同样的计入不分辨，主张只经计入的差别被否证。',
+                                                           '同样的反映不分辨，主张只经反映的差别被否证。',
                                                            'The periphery\'s information bound: adaptive relations preserving '
                                                            'the same readouts cannot also meet stronger coverage; here on the '
                                                            'spine, the same registration does not distinguish, and a claim is '
@@ -505,7 +519,7 @@ testing_rec = {
             'it a formation gauging the stock refutes at the first step the claim that the stock comes to nothing, which '
             'holds of the actual history (Stationary.model_error).')},
         {'path': TESTING, 'detail': zh_en(
-            '计入闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其计入闭包之内（Prey.registers_taking）；所计入的'
+            '反映闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其反映闭包之内（Prey.registers_taking）；所反映的'
             '差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。',
             'The registration closure can be strictly larger than the influence closure: in Prey the predator lies beyond '
             'the prey\'s influence closure and, under a gauge of itself, within its registration closure '
@@ -513,8 +527,8 @@ testing_rec = {
             '(Prey.omits), so the witness rests on omitted relations.')},
     ],
     'limitations': zh_en(
-        '形成观察支持之外的任何东西、形成模型、想要检验或知道其计入闭包都不推出；计入相同界定能分辨的，不说一个差别关于什么；一个动作造成什么'
-        '是对两段历史的比较，只相对于无此动作之历史的模型才可检验，变动自己的动作并计入差别（实验）没有陈述；他者怎样回应是给出的；多步 '
+        '形成观察支持之外的任何东西、形成模型、想要检验或知道其反映闭包都不推出；反映相同界定能分辨的，不说一个差别关于什么；一个动作造成什么'
+        '是对两段历史的比较，只相对于无此动作之历史的模型才可检验，变动自己的动作并反映差别（实验）没有陈述；他者怎样回应是给出的；多步 '
         'Scope 的桥仍开放；读法是 AI 的，经审查收窄，待 Ren；不含伦理谓词。',
         'That a formation observes anything beyond its support, forms a model, wants to test or knows its registration '
         'closure is not derived; registering alike bounds what can be told apart and says nothing of what a difference is '
@@ -545,8 +559,8 @@ testing_rec = {
                        binding(INQUIRY, 'Becoming.Inquiry'), binding(REGIONS, 'Becoming.Regions'),
                        binding(ROLES, 'Becoming.Roles')],
     'next_delta': zh_en(
-        '多步 Scope 的桥：感知只经计入的策略在计入相同的流上有同样的所见范围；实验：变动自己的动作并计入差别；模型从哪里来；由动力学给出回应，'
-        '而不是假设它；计入关于什么（校准）。',
+        '多步 Scope 的桥：感知只经反映的策略在反映相同的流上有同样的所见范围；实验：变动自己的动作并反映差别；模型从哪里来；由动力学给出回应，'
+        '而不是假设它；反映关于什么（校准）。',
         'The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows '
         'registered alike; experiment: varying one\'s own act and registering the difference; where a model comes from; '
         'responses given by the dynamics rather than assumed; what a registration is about (calibration).'),

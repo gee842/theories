@@ -14,4 +14,4 @@ Question 4, whether a formation's own standing counts as registered, was the AI'
 - own standing should register through self-bearing, not as a default gauge (F3);
 - the closure's transitivity is idle in the fixed-rest comparison, so reach blindness is restated where the members respond (F4).
 
-Whether to replace the Chinese 计入 for "registers", which P42 also uses, is put to Ren. The text after the handling has not been independently reviewed.
+The Chinese for "registers" was 计入, as in P42; Ren found it "apparently weird" and asked for a better word, and P49 uses 反映, in its scientific sense of a difference showing in a state (a thermometer 反映 the temperature); P42's uses in that sense change with it once Ren confirms the choice. The text after the handling has not been independently reviewed.
