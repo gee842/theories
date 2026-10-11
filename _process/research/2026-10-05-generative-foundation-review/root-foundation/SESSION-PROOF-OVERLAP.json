@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "captured_at_utc": "2026-10-11T07:20:38.999336+00:00",
+  "captured_at_utc": "2026-10-11T07:31:19.436079+00:00",
   "scope": "Same path-based roles as build_lean_catalogue.py. No compilation or semantic equivalence verification. Repeated headers are candidates only: namespaces, local variables, definitions and interpretation can differ.",
   "statistics": {
     "lean_paths": 17944,
@@ -9221,7 +9221,7 @@
   },
   "catalogue_output_sha256": {
     "theories/becoming/results/data/lean-index.json": "fa64ef210673b5f2aeeec3f085192535ae369e805e7dcad09580ed367fc83eaa",
-    "theories/becoming/results/data/source-index.json": "6305a895c32f0f6045d6c1482df8a22a5a950094d78a3774db7de7a61d410ec7",
+    "theories/becoming/results/data/source-index.json": "16dd7186b8085c400e731bec9f750e014b9f131ad9346ff23bb54f6c84fcdb66",
     "theories/becoming/results/LEAN-INDEX.md": "6f2413ab204d5a41774b78e81e5dac6ea6e8ba58aa10092151b9dc5b8bdb1537",
     "theories/becoming/results/LEAN-DECLARATIONS.md": "c4276ed042fef32e164edbbdf2c7e671d4f39d3ffe3a1b042e0b8177193db1f8",
     "theories/becoming/results/lean-declarations/ethics.md": "b9284b5f2b14811c3e8f62fd7a68f057f3262e1c936bd742ea734ac92cd0e81b",

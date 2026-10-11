@@ -980,6 +980,7 @@ The first table gives the status of each target. Every open item is then placed 
 - 反馈与所及（§6.10）：所及闭包是否读出“the system that one is in”（它指向前方，不必含中心所依存的）；“situational awareness”是否读作中心知道部分在其反馈之外所到达的。
 - 公理的分解（§6.11）：预设是否读出 Ren 所说的“belief”；自身的可容许划法是否包括整体（覆盖由此成立）；Ren 是否持有不变的一步，即预设不随自身怎样划、从谁的立场而变；层级次序是否读作预设的三种读法（超真；沿影响次真，在所及闭包处；沿空关系次真，在自身处）。
 - G0 的各处用法在公理之下（§6.12）：正面相关是否读作已实现的活的内容的意义（G0 的折叠用这一读法；是否以公理替换 G0，Ren 2026-10-11 已以折叠回答）；比较继续用可能性读法（不增加可能性的在场与不在场不分高下，休息不更差）、`living` 的一种读法加 C，还是可能性优先（在场优于不在场，休息排在活动之下）。
+- 第二部分的结构（P52，[清点](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md)）：第二部分所引的 157 条定理中只有 22 条以公理为假设，各只在所指名的点上用到它，每条都是对任何意义成立的规律的特例；是否把不用公理的内容移入第一部分，使第二部分只留公理的断言与其根据。
 - 名称：本理论中由 AI 拟定的用语（英文名称 arising/ceasing 已由 Ren 确认，中文 生起／止息 是 AI 的译名；其余如世界、上升与下降、同一交换、世系、传递、选择、归于静止、开放）。
 
 - How 生生 is read, or which combination of readings, and whether G0 and C share one reading (what C ranks varies with the reading).
@@ -998,6 +999,7 @@ The first table gives the status of each target. Every open item is then placed 
 - Feedback and reach (section 6.10): whether the reach closure reads “the system that one is in” (it points forward and need not hold what the center depends on); whether “situational awareness” reads as a center knowing what its part reaches beyond its feedback.
 - The axiom decomposed (section 6.11): whether the presupposition reads Ren's “belief”; whether the admissible drawings of a self include the whole, which gives covering; whether Ren holds the step of invariance, that the presupposition does not change with how the self is drawn or from whose standpoint; whether the order of levels reads as three readings of the presupposition (super-true; sub-true along affecting, at the reach closure; sub-true along the empty relation, at the self).
 - G0's uses under the axiom (section 6.12): whether positive relevance is read as the significance of realized living content (the fold of G0 uses this reading; whether the axiom replaces G0, Ren answered on 11 October 2026 by folding G0); whether courses are compared on possibilities (a presence adding no possibility ties with its absence, and a rest is never worse), under a reading of `living` with C, or by possibilities first (presence above absence, and a rest below activity).
+- The structure of Part II (P52, [inventory](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md)): of the 157 theorems Part II cites, only 22 take the axiom as a hypothesis, each using it only at named points and each a law for any significance specialized there; whether what does not use the axiom moves into Part I, leaving in Part II the assertion of the axiom and its warrant.
 - Names: the terms the AI has proposed in this theory (the English names arising and ceasing confirmed by Ren, the Chinese 生起／止息 being the AI's rendering; others such as world, rising and falling, one exchange, descent, transmission, selection, coming to rest, openness).
 
 **哲学根据 / Philosophical warrant**
