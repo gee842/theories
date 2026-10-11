@@ -78,11 +78,14 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 8. R5 `Becoming.Entropy` [7ccb42]: one new core module importing only `Becoming.Resolution`, changing no existing module. It takes the next free study section when it lands. Where an item ahead stalls, it may go first by the integrator's call.
 
 Order from here (the integrator's call, 10-11, by readiness; one checker run per line):
-- P53 `Becoming.Experiment` + P55 `Becoming.Runaway` (feedback session), one run; §72, §73.
-- P57 group B + P60 group D ([9c2394]), one run, landed by the integrator: `Flow.BalancesOn` and the shared lemmas move to the lowest module that needs them (Flow, Dissipation, Population), names and statements unchanged.
+- ~~P53 `Becoming.Experiment` + P55 `Becoming.Runaway`~~ landed `5682d3f5` (§72, §73).
+- ~~P57 group B + P60 group D + P61 continuation cover, with [9c2394]'s P58 decidedness patch~~ landed `57ff25d8` (§74–§76; receipt 20261011T122250.993495Z): `Flow.BalancesOn` and the shared lemmas moved to the lowest module that needs them (Flow, Dissipation, Population), names and statements unchanged. Every group of the zero-premise inventory is now localized.
 - P54 + P56 (Universal Metaethical Core), one run.
-- Sampling v2 (item 7), with its record `laws-at-coarser-steps`.
+- P62 `Becoming.Seeking` + `Becoming.Capture` (feedback session), one run.
+- P63 reserve and dependence + P61b (P61's converse) + Sampling v2 (item 7, record `laws-at-coarser-steps`), from [9c2394], one run, landed by the integrator.
 - R5 (item 8).
+- Units (the finer-units test, record `laws-at-finer-units`, [9c2394]).
 - P59 `Becoming.Imbalance` (equivalence only, not adopted; adoption is Ren's).
+- P58's count module (Universal Metaethical Core).
 
 Section numbers held: §63 P46, §65 P47, §66 `Locality`; §67 P51 and §68 R6 are taken; later items take the next free number when they land.
