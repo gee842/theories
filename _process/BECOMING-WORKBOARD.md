@@ -68,9 +68,17 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 2. P46, P47.
 3. ~~`Becoming.Locality`~~ landed `12c7cb44` (P48, study §66; receipt 20261011T071749.484228Z): laws 1 to 4, law 2 from [9c2394] folded in, with their corollaries re-proved in `Openness`, `Roles`, `Counting` and P47's `Standing`. P49 goes next (ready), then group C when its records and study text arrive.
 4. ~~R6 `Becoming.Recurrence`~~ landed `f5ec9e6b`, ahead of item 3 (it imports only `Becoming.Frame` and `Locality` does not use it); study §68.
-5. Group C localized by [9c2394] (P50): 26 local laws in `Change`, `Population`, `Dependence`, `Roles`, `Continuation`, `Admission`, `Interdependence` and `Evolution`, each original re-proved in place; the shared condition named `Flow.GiversSupported` (the integrator's call, 10-11). Built on `Locality`, so after item 3. (Law 2, formerly this item, is folded into item 3.)
+5. ~~Group C localized by [9c2394] (P50)~~ landed `20e6ce82` with the census balance (study §71; receipt 20261011T073932.785239Z): 26 local laws in `Change`, `Population`, `Dependence`, `Roles`, `Continuation`, `Admission`, `Interdependence` and `Evolution`, each original re-proved in place; the shared condition named `Flow.GiversSupported` (the integrator's call, 10-11). Built on `Locality`, so after item 3. (Law 2, formerly this item, is folded into item 3.)
 6. ~~P49 registration and testing (`Becoming.Testing`)~~ landed `cd08dc8e` (study §70; receipt 20261011T072815.712072Z), stated on `Flow.BalancesOn`, ahead of group C by the integrator's call.
 7. `Sampling` localized by [9c2394] to `Flow.BalancesOn`, `Flow.DissipatesOn` and `Flow.RunsDownOn` per coarse step (the time test, coarser steps first): version 2, after item 5, since it uses `balance_over_stretch_on` in `Change`.
 8. R5 `Becoming.Entropy` [7ccb42]: one new core module importing only `Becoming.Resolution`, changing no existing module. It takes the next free study section when it lands. Where an item ahead stalls, it may go first by the integrator's call.
+
+Order from here (the integrator's call, 10-11, by readiness; one checker run per line):
+- P53 `Becoming.Experiment` + P55 `Becoming.Runaway` (feedback session), one run; §72, §73.
+- P57 group B + P60 group D ([9c2394]), one run, landed by the integrator: `Flow.BalancesOn` and the shared lemmas move to the lowest module that needs them (Flow, Dissipation, Population), names and statements unchanged.
+- P54 + P56 (Universal Metaethical Core), one run.
+- Sampling v2 (item 7), with its record `laws-at-coarser-steps`.
+- R5 (item 8).
+- P59 `Becoming.Imbalance` (equivalence only, not adopted; adoption is Ren's).
 
 Section numbers held: §63 P46, §65 P47, §66 `Locality`; §67 P51 and §68 R6 are taken; later items take the next free number when they land.
