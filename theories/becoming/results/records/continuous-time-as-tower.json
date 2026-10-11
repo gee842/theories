@@ -107,8 +107,8 @@
     "en": "Not done: real-valued time (a periphery correspondence); towers with no coarsest level; the exact form of the bound as levels refine. The count uses a census; running down is a condition at the level used. The names (Tower, reads, refine) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T194804.708104Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 49 个模块，共 2592 项定理／3809 项声明审计；外围回执 20261011T195216.607072Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T194804.708104Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 49 modules with 2592 theorems/3809 declaration audits; periphery receipt 20261011T195216.607072Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 51 个模块，共 2673 项定理／3895 项声明审计；外围回执 20261011T211111.085532Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 51 modules with 2673 theorems/3895 declaration audits; periphery receipt 20261011T211111.085532Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
   },
   "references": [
     {
@@ -129,7 +129,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean",
       "role": "proof",
-      "sha256": "d4b66b652f189a696afc53301a3d7edd4618c1343b2fb10a004739d1308085ab",
+      "sha256": "5bf6a8962ac24758336d1907399b7d19aa39c01c6ae773806384bcd8dea843eb",
       "declarations": [
         "Becoming.Web.sample",
         "Becoming.Flow.sample_balances",
@@ -147,27 +147,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "a2816da44a9d4854227c5941a4958f36316b6a21b101e0dc4a1154ab114dd642"
+      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fda7dfff2dd4383df29a63dc4bb0c70ec770bd31fe4192f62bc2dffe0b6a8110"
+      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "07ad6ff139e062e051175da4af4f8b55a01a9333485db5603556ec6c1026e817"
+      "sha256": "e9cf882ab19977e18792ebf3b553dbec54d19c0b629327c8852fb1144afcdabb"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "fc36c618abc51f7e57b9d140d090394b7a2b55b90272a969e28aeb6e3bc7d65f"
+      "sha256": "53dd21ac2d45c7de846452c1d626e4c778ae334bfd7464f1bf3491f9b84a0447"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "93a2d0bf53a42e4b3bbaf7e73df261e6d6164c00e4cd659124cc24a3d6fb6ace"
+      "sha256": "f1ca93d64c2a5eb21ebb53d8a2e9800449eace7415cb34fc9be51417069dd055"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md",
@@ -215,6 +215,10 @@
     {
       "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
       "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
     }
   ]
 }

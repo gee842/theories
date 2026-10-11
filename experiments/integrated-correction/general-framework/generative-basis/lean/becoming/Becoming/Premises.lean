@@ -33,7 +33,7 @@ that the rest are independent, none following from all the others together.
   (`World.draining_but`).
 * **All together.** Mutualists active throughout meet all eight
   (`World.mutualism_premised`), the four about the flow vacuously, since nothing flows.
-  A finite world whose activity is decided and which meets the eight comes to rest:
+  A finite world which meets the eight comes to rest, with no decision procedure:
   neither arising nor ceasing recurs (`World.premised_rests`). The proof uses three of
   them: balance, dissipation and embodiment.
 * **Selections.** The premises are named (`World.Premise`), and a selection of them is a
@@ -807,9 +807,9 @@ theorem mutualism_premised : mutualism.Premised :=
     (still_vacuous _).2.2.1 mutualism_world.2.2.2.2.2 mutualism_finite.counted
     (still_vacuous _).2.2.2
 
-/-- A finite world whose activity is decided and which meets the premises comes to rest:
-neither arising nor ceasing recurs. The proof uses balance, dissipation and embodiment. -/
-theorem premised_rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
+/-- A finite world which meets the premises comes to rest: neither arising nor ceasing
+recurs. The proof uses balance, dissipation and embodiment, and no decision procedure. -/
+theorem premised_rests (finite : w.Finite)
     (premised : w.Premised) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   rests finite (premised _ (.tail _ (.head _)))
     (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))

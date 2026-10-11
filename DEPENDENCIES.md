@@ -1330,6 +1330,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
+## counts-exist-where-decided ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用开始成立与不再成立（ComesToBe、CeasesToBe）及以判定程序的标记对它们的计数（mark、comings、ceasings）。 / Reuses coming to be and ceasing (ComesToBe, CeasesToBe) and their counts by a decision procedure's marks (mark, comings, ceasings).
+
+**Producer output / 上游输出:** 跨一步的开始成立与不再成立，以及以标记对它们的计数。 / Coming to be and ceasing across a step, and their counts by marks.
+
+**Consumer input / 下游输入:** 判定程序的标记之和就是计数（counts_total、comings_counts、ceasings_counts）；计数作为关系，存在恰当所计数者已定。 / Where a procedure decides, its marks sum to the count (counts_total, comings_counts, ceasings_counts); a count as a relation, existing exactly where what it counts is decided.
+
+**Retained conditions / 保留条件:** 判定程序（只对 counts_total、comings_counts、ceasings_counts）。 / A decision procedure (counts_total, comings_counts and ceasings_counts only).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
 ## derived-extent-limits ← continuing-self-fed-from-beyond
 
 `formal-reuse` — 复用 FedFromBeyond 与 Lone.fed_not_recurring；清除者的资源每步都从其外得到供给（Clearing.fed）。 / Reuses FedFromBeyond and Lone.fed_not_recurring; the clearer's resource is fed from beyond at every step (Clearing.fed).
@@ -1858,6 +1870,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
+## imbalance-as-relatum ← rest-with-refinement-counted
+
+`formal-reuse` — 复用把细分算作从不活跃、不要求任何东西的关系项的读法（Web.withRefinement）。 / Reuses reading the refinement as a relatum never active and requiring nothing (Web.withRefinement).
+
+**Producer output / 上游输出:** 细分作为惰性的关系项。 / The refinement as an inert relatum.
+
+**Consumer input / 下游输入:** 不平衡作为同样的惰性关系项。 / The imbalance as the same kind of inert relatum.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
+
+## imbalance-as-relatum ← laws-of-one-step
+
+`formal-reuse` — 复用局部的平衡（Flow.BalancesOn）。 / Reuses local balance (Flow.BalancesOn).
+
+**Producer output / 上游输出:** 一个家族上跨一步的平衡。 / Balance on a family across a step.
+
+**Consumer input / 下游输入:** 它恰是新增关系项闲置。 / It is exactly the added relatum idle.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## incidence-common-refinement ← branching-tests-bisimulation
 
 `formal-reuse` — 由同一接合构造关联模型后复用有限分支恢复。 / Reuse finite branch recovery after constructing each joining incidence model.
@@ -2242,7 +2278,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Consumer input / 下游输入:** 八个前提的地图：蕴含、独立与全部满足；有限世界中全部前提一起归于静止。 / The map of eight premises: implications, independence and one world meeting all; in a finite world all together come to rest.
 
-**Retained conditions / 保留条件:** 有限与活动可判定（只对 premised_rests）。 / Finite and decidable activity (premised_rests only).
+**Retained conditions / 保留条件:** 有限（只对 premised_rests）。 / Finite (premised_rests only).
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
@@ -2793,6 +2829,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 原初始覆盖、权限／代次检查及程序语义保留；新研究另加持久状态、微步骤和当前读取对应。 / Original initial coverage, permission/generation checks and program semantics remain; the new study additionally requires durable state, microsteps and current read correspondence.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean)
+
+## recurrence-without-decidedness ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用开始成立与不再成立（ComesToBe、CeasesToBe）与家族中的复现（Recurs）。 / Reuses coming to be and ceasing (ComesToBe, CeasesToBe) and recurrence in a family (Recurs).
+
+**Producer output / 上游输出:** 开始成立、不再成立与其复现；有限家族中，以判定程序，一方复现恰当另一方复现（coming_recurs_iff）。 / Coming to be, ceasing and their recurrence; in a finite family, with a decision procedure, each recurs exactly when the other does (coming_recurs_iff).
+
+**Consumer input / 下游输入:** 同一规律不用判定程序：永不终止的形式，以及从某步起已定时的形式。 / The same law with no decision procedure: the forms that never stop, and the form decided from some step on.
+
+**Retained conditions / 保留条件:** 有限家族。 / A finite family.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## recurrence-without-decidedness ← space-and-its-parts
+
+`formal-reuse` — 复用世界、有限、生起复现与止息复现（World、World.Finite、World.ArisingRecurs、World.CeasingRecurs）。 / Reuses worlds, finiteness, and arising and ceasing recurring (World, World.Finite, World.ArisingRecurs, World.CeasingRecurs).
+
+**Producer output / 上游输出:** 世界与其复现；活动可判定的有限世界中生起复现恰当止息复现（World.arising_iff_ceasing）。 / Worlds and their recurrence; in a finite world whose activity is decided, arising recurs exactly when ceasing does (World.arising_iff_ceasing).
+
+**Consumer input / 下游输入:** 有限世界中不要求可判定时的形式与从某步起已定时的形式。 / For finite worlds, the forms without decidedness and the form decided from some step on.
+
+**Retained conditions / 保留条件:** 有限世界，或从某步起覆盖活跃者的列表。 / A finite world, or a list covering what is active from some step on.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
 ## recurrent-chain-assembly ← material-preparation-output
 

@@ -26,10 +26,12 @@ import Becoming.Premises
 import Becoming.Sampling
 import Becoming.Tower
 import Becoming.Openness
+import Becoming.Decidedness
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
 import Becoming.Units
+import Becoming.Imbalance
 import Becoming.Continuation
 import Becoming.Admission
 import Becoming.Regions
@@ -282,6 +284,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   arises, so openness is necessary for arising without end and not sufficient; one
   meeting them with every step enclosed comes to rest, as does `hatch`, in which each of
   them binds.
+* `Becoming.Decidedness` (L3): decidedness made local (Ren, 11 October 2026: decidability
+  is "too dualist", then "please"). A proposition is decided where it holds or fails; a count
+  is a relation, existing exactly where what it counts is decided, and where a procedure
+  decides, its marks are the count. Between counts the census holds with no decidedness; in a
+  finite family, coming to be recurring makes ceasing never stop for good, and conversely, with
+  none; decided from some step on, the recurrence law holds. The rest theorems of
+  `Becoming.Space` and `Becoming.Openness` use no decision procedure. The readings are the
+  AI's, pending Ren.
 * `Becoming.Counting` (L3): what the premises add to the laws of counting, the tally being
   the whole law of counting with no premise (`Becoming.Population`). Premises lacking
   balance or embodiment leave counting free: every tally is the census of a world meeting
@@ -364,6 +374,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   it fails); a need is counted in the same unit as the level (Ren, 12 October 2026), so
   support does not depend on the grain of measurement; laws that count a loss over a stretch
   need a fixed unit or the refinement counted as a giving, as for rest.
+* `Becoming.Imbalance` (L3): imbalance counted as a relatum, proved equivalent first (Ren,
+  11 October 2026: "please"; adoption is Ren's). Wherever the flow does not balance, the
+  difference is counted as the exchange of one more relatum, never active and requiring
+  nothing; then every flow balances, the flow balances on a family across a step exactly where
+  that relatum is idle there, and on a family across a step the activity premises hold of the
+  extended flow exactly where they hold of the flow and it balances there. Nothing is adopted:
+  the laws of the core keep balance as a local condition. The readings are the AI's, pending
+  Ren.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed

@@ -8,19 +8,19 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T19:00:25+00:00",
+  "reviewed_at_utc": "2026-10-11T21:31:22+00:00",
   "claim": {
-    "zh": "一个世界是以一类读法的关系项、其间的流与依存网（World）；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同（World.ofRoles、arisingRecurs_ofRoles、ceasingRecurs_ofRoles）。Becoming.Change 的规律与 Becoming.Evolution 的算术恒等式（Price 方程的计数形式）不加关于展开的前提，对每个网与每个量陈述，所以对整个空间成立。读于部分：生起复现（某个关系项在任意晚的步生起，ArisingRecurs）与止息复现（某个关系项在任意晚的步止息，CeasingRecurs）在有限且活动可判定的世界中恰好同时成立（World.arising_iff_ceasing）。可判定性是表示的承诺：对每个有限世界都要求这一规律而不给可判定性，它就等价于排中律（World.law_iff_em，由 World.law_decides 与 World.law_of_em），在纯净核心中陈述，不需要选择公理。关系项无限多时，两者各可以没有另一个而复现（World.separate，由 Accretion 与 Attrition 给出），这些世界无限由该规律推出。活动需要支持、平衡、只有活跃者给予、只有活跃者取用且只取用所汲取的、耗散、体现与承载活动的储备，每一个都有满足与不满足它的世界（World.contingent）：它们是前提，不是规律。有限世界中，生起复现与否，都既可以每个事件都活（逐步读法中不侵蚀），也可以有事件不活（World.living_crosses）；活动可判定时，止息复现与否也是如此（World.living_crosses_ceasing）：两侧来回传递一个水平（shuttle），同样的两侧另有一个吃草者把另一个关系项所依存的池汲低（grazing），始终活跃的互利者（mutualism），以及把池汲低的亲代（drawdown）。所以生起与止息都不决定事件是否活。grazing 的不活在对终结之步汲取承担自身者的判定之外，但被侵蚀的食草者在该步之后不活跃（World.grazing_browser_ends）：活动需要支持时，跨一步落到所需之下、以不低的所需持续的依存，属于在步后不活跃的形成（Web.Dependent.inactive_below），依存者原本活跃时，这是它的终结（Web.Dependent.ceases_below）；依存者休眠时没有任何终结：在 seedbank 中一个事件不活，而世界中从无止息（World.seedbank_world）；与依存者在该步之后不活跃同时的侵蚀是否计入不活、对哪些汲取者，由 Ren 选择。同样的活动而每侧汲取自身的水平（selfDrawing）也有不活的事件，但只在逐步读法对体现关系项终结之步自我汲取的判定之下，这一判定属于 Ren。在有限、活动可判定、平衡、耗散且生起者体现的世界中，生起与止息都不复现（World.rests）；每个前提都不可少（World.rests_needs）：燃烧新燃料的世界以无限多关系项继续生起（throughput）；两侧来回传递，在没有耗散时继续生起（shuttle）；持有者每步取用自身一个单位而不给予，在没有平衡时继续生起，而它的耗散不空，两侧的家族每步封闭并被取用（leaking）；活动不是其水平的关系项在没有体现时继续生起（flicker），它从某步起不参与交换：有限、平衡且耗散的世界中取用不复现，所以任何这样的见证都如此。Ren 的“生成的”“退化的”指空间的哪些部分属于 Ren：本结果陈述活动的读法，生起复现与止息复现，二者在有限世界中重合，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；作为关系，更新的形成与消耗的形成不重叠（Web.renewing_not_consuming）。不用伦理前提，也不用 Lean 公理。",
-    "en": "A world is its relata, read with one kind, with the flow among them and their web (World); the space is every world. The two-kind reading of any flow and web is a world, and arising and ceasing read the same there (World.ofRoles, arisingRecurs_ofRoles, ceasingRecurs_ofRoles). The laws of Becoming.Change and the arithmetic identity of Becoming.Evolution (the counting form of Price's equation) are stated of every web and every amount with no premise about the unfolding, so they hold throughout the space. Read of parts: arising recurring (some relatum arising at arbitrarily late steps, ArisingRecurs) and ceasing recurring (some relatum ceasing at arbitrarily late steps, CeasingRecurs) hold together exactly in every finite world whose activity is decided (World.arising_iff_ceasing). Decidability is a commitment of the representation: asked of every finite world without it, the law is equivalent to excluded middle (World.law_iff_em, from World.law_decides and World.law_of_em), stated in the pure core with no choice. With infinitely many relata either can recur without the other (World.separate, from Accretion and Attrition), and that these worlds are infinite follows from the law. Activity needing support, balance, only active relata giving, only active relata taking and only what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others (World.contingent): they are premises, not laws. Among finite worlds, arising recurring or not occurs both with every event living, not undermining in the stepwise reading, and with some event not living (World.living_crosses), and with activity decided so does ceasing recurring or not (World.living_crosses_ceasing): two sides handing one standing back and forth (shuttle), the same sides with a grazer drawing down a pool another relatum depends on (grazing), mutualists active throughout (mutualism), and a parent drawing a pool down (drawdown). So neither arising nor ceasing decides whether events are living. grazing's verdict lies outside the verdict about drawing on a self-bearing relatum at its own ending, but the browser it undermines is not active after that step (World.grazing_browser_ends): where activity needs support, a dependence left below its need and persisting at no lower need belongs to a formation not active after the step (Web.Dependent.inactive_below), where that formation was active this is its ending (Web.Dependent.ceases_below), and where it was dormant nothing ends: in seedbank an event is not living while nothing in the world ever ceases (World.seedbank_world); whether undermining that co-occurs with the relatum depending not being active after the step counts against living, and for which drawers, is Ren's to choose. The same activity while each side draws on its own standing (selfDrawing) also has an event that is not living, but only on the stepwise reading's verdict about drawing on a self-bearing embodied relatum at its ending, which is Ren's to choose. In a finite, balanced, dissipative world whose activity is decided and in which whatever arises is embodied, neither arising nor ceasing recurs (World.rests), and each premise is needed (World.rests_needs): a world burning fresh fuel keeps arising with infinitely many relata (throughput); two sides handing a standing keep arising without dissipation (shuttle); the holder taking its own unit and giving nothing keeps arising without balance, with non-vacuous dissipation, the family of both sides closed and taken from at every step (leaking); and a relatum whose activity is not its standing keeps arising without embodiment (flicker), taking part in no exchange from some step on, as any such witness must, since taking does not recur in a finite, balanced, dissipative world. Which parts of the space Ren's ‘generative’ and ‘degenerative’ name is Ren's to choose: this result states the reading of activity, arising recurring and ceasing recurring, which coincide in finite worlds, with names Ren confirmed (2026-10-09-arising-ceasing-names); read as relations, renewing and consuming formations do not overlap (Web.renewing_not_consuming). No ethical premise and no Lean axiom is used."
+    "zh": "一个世界是以一类读法的关系项、其间的流与依存网（World）；空间是每个世界。两类读法的任一流与网都是一个世界，生起与止息在那里读法相同（World.ofRoles、arisingRecurs_ofRoles、ceasingRecurs_ofRoles）。Becoming.Change 的规律与 Becoming.Evolution 的算术恒等式（Price 方程的计数形式）不加关于展开的前提，对每个网与每个量陈述，所以对整个空间成立。读于部分：生起复现（某个关系项在任意晚的步生起，ArisingRecurs）与止息复现（某个关系项在任意晚的步止息，CeasingRecurs）在有限且活动可判定的世界中恰好同时成立（World.arising_iff_ceasing）。可判定性是这一规律自己的条件，不是表示的承诺：对每个有限世界都要求这一规律而不给可判定性，它就等价于排中律（World.law_iff_em，由 World.law_decides 与 World.law_of_em），在纯净核心中陈述，不需要选择公理。关系项无限多时，两者各可以没有另一个而复现（World.separate，由 Accretion 与 Attrition 给出），这些世界无限由该规律推出。活动需要支持、平衡、只有活跃者给予、只有活跃者取用且只取用所汲取的、耗散、体现与承载活动的储备，每一个都有满足与不满足它的世界（World.contingent）：它们是前提，不是规律。有限世界中，生起复现与否，都既可以每个事件都活（逐步读法中不侵蚀），也可以有事件不活（World.living_crosses）；活动可判定时，止息复现与否也是如此（World.living_crosses_ceasing）：两侧来回传递一个水平（shuttle），同样的两侧另有一个吃草者把另一个关系项所依存的池汲低（grazing），始终活跃的互利者（mutualism），以及把池汲低的亲代（drawdown）。所以生起与止息都不决定事件是否活。grazing 的不活在对终结之步汲取承担自身者的判定之外，但被侵蚀的食草者在该步之后不活跃（World.grazing_browser_ends）：活动需要支持时，跨一步落到所需之下、以不低的所需持续的依存，属于在步后不活跃的形成（Web.Dependent.inactive_below），依存者原本活跃时，这是它的终结（Web.Dependent.ceases_below）；依存者休眠时没有任何终结：在 seedbank 中一个事件不活，而世界中从无止息（World.seedbank_world）；与依存者在该步之后不活跃同时的侵蚀是否计入不活、对哪些汲取者，由 Ren 选择。同样的活动而每侧汲取自身的水平（selfDrawing）也有不活的事件，但只在逐步读法对体现关系项终结之步自我汲取的判定之下，这一判定属于 Ren。在有限、平衡、耗散且生起者体现的世界中，生起与止息都不复现，不用判定程序（World.rests）；每个前提都不可少（World.rests_needs）：燃烧新燃料的世界以无限多关系项继续生起（throughput）；两侧来回传递，在没有耗散时继续生起（shuttle）；持有者每步取用自身一个单位而不给予，在没有平衡时继续生起，而它的耗散不空，两侧的家族每步封闭并被取用（leaking）；活动不是其水平的关系项在没有体现时继续生起（flicker），它从某步起不参与交换：有限、平衡且耗散的世界中取用不复现，所以任何这样的见证都如此。Ren 的“生成的”“退化的”指空间的哪些部分属于 Ren：本结果陈述活动的读法，生起复现与止息复现，二者在有限世界中重合，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；作为关系，更新的形成与消耗的形成不重叠（Web.renewing_not_consuming）。不用伦理前提，也不用 Lean 公理。P58：静止不用判定程序。从某步起不上升的量趋于平息：并非此后每一步之后再有下降都不能被否证（falls_settle，由 still_le、unrefuted_falls_exceed；它此后不变不能被否证，amount_settles）。从某步起被平衡与耗散的家族中，体现的成员趋于平息：并非此后每一步之后其中再有生起都不能被否证（Web.generation_settles）。有一个列表从某步起覆盖活跃者时，止息复现使此后每一步之后的生起都不能被否证（World.arising_unrefuted_covering，由 laws-of-one-step 的 Covers.not_not_coming_from），平息否证它；所以 World.rests_covering 与 World.rests 不要求活动可判定，名称不变，陈述更强。",
+    "en": "A world is its relata, read with one kind, with the flow among them and their web (World); the space is every world. The two-kind reading of any flow and web is a world, and arising and ceasing read the same there (World.ofRoles, arisingRecurs_ofRoles, ceasingRecurs_ofRoles). The laws of Becoming.Change and the arithmetic identity of Becoming.Evolution (the counting form of Price's equation) are stated of every web and every amount with no premise about the unfolding, so they hold throughout the space. Read of parts: arising recurring (some relatum arising at arbitrarily late steps, ArisingRecurs) and ceasing recurring (some relatum ceasing at arbitrarily late steps, CeasingRecurs) hold together exactly in every finite world whose activity is decided (World.arising_iff_ceasing). Decidedness is this law's own condition, not a commitment of the representation: asked of every finite world without it, the law is equivalent to excluded middle (World.law_iff_em, from World.law_decides and World.law_of_em), stated in the pure core with no choice. With infinitely many relata either can recur without the other (World.separate, from Accretion and Attrition), and that these worlds are infinite follows from the law. Activity needing support, balance, only active relata giving, only active relata taking and only what they draw on, dissipation, embodiment and a reserve carrying activity are each met by some worlds and not by others (World.contingent): they are premises, not laws. Among finite worlds, arising recurring or not occurs both with every event living, not undermining in the stepwise reading, and with some event not living (World.living_crosses), and with activity decided so does ceasing recurring or not (World.living_crosses_ceasing): two sides handing one standing back and forth (shuttle), the same sides with a grazer drawing down a pool another relatum depends on (grazing), mutualists active throughout (mutualism), and a parent drawing a pool down (drawdown). So neither arising nor ceasing decides whether events are living. grazing's verdict lies outside the verdict about drawing on a self-bearing relatum at its own ending, but the browser it undermines is not active after that step (World.grazing_browser_ends): where activity needs support, a dependence left below its need and persisting at no lower need belongs to a formation not active after the step (Web.Dependent.inactive_below), where that formation was active this is its ending (Web.Dependent.ceases_below), and where it was dormant nothing ends: in seedbank an event is not living while nothing in the world ever ceases (World.seedbank_world); whether undermining that co-occurs with the relatum depending not being active after the step counts against living, and for which drawers, is Ren's to choose. The same activity while each side draws on its own standing (selfDrawing) also has an event that is not living, but only on the stepwise reading's verdict about drawing on a self-bearing embodied relatum at its ending, which is Ren's to choose. In a finite, balanced, dissipative world in which whatever arises is embodied, neither arising nor ceasing recurs, with no decision procedure (World.rests), and each premise is needed (World.rests_needs): a world burning fresh fuel keeps arising with infinitely many relata (throughput); two sides handing a standing keep arising without dissipation (shuttle); the holder taking its own unit and giving nothing keeps arising without balance, with non-vacuous dissipation, the family of both sides closed and taken from at every step (leaking); and a relatum whose activity is not its standing keeps arising without embodiment (flicker), taking part in no exchange from some step on, as any such witness must, since taking does not recur in a finite, balanced, dissipative world. Which parts of the space Ren's ‘generative’ and ‘degenerative’ name is Ren's to choose: this result states the reading of activity, arising recurring and ceasing recurring, which coincide in finite worlds, with names Ren confirmed (2026-10-09-arising-ceasing-names); read as relations, renewing and consuming formations do not overlap (Web.renewing_not_consuming). No ethical premise and no Lean axiom is used. P58: rest needs no decision procedure. An amount that does not rise from some step on settles: it is not the case that after every step from then on a later fall stays unrefuted (falls_settle, from still_le and unrefuted_falls_exceed; that it stays the same from some step on cannot be refuted, amount_settles). In a family balanced and dissipated on from some step on, the embodied members settle: it is not the case that after every step from then on a later arising of one of them stays unrefuted (Web.generation_settles). With a list covering what is active from some step on, ceasing recurring leaves a later arising unrefuted after every step (World.arising_unrefuted_covering, from Covers.not_not_coming_from of laws-of-one-step), which settling refutes; so World.rests_covering and World.rests need no decided activity, their names unchanged and their statements stronger."
   },
   "hypotheses": [
     {
-      "zh": "规律（arising_iff_ceasing）：世界有限，即有一个不重复地列出全部关系项的列表；每步每个关系项是否活跃是可判定的。可判定性是表示的逻辑承诺，经典地总是成立；对每个有限世界都要求这一规律而不给它，它就等价于排中律（law_iff_em）。",
-      "en": "The law (arising_iff_ceasing): the world is finite, a list naming every relatum once; whether each relatum is active at each step is decidable. Decidability is a logical commitment of the representation, classically always met; asked of every finite world without it, the law is equivalent to excluded middle (law_iff_em)."
+      "zh": "规律（arising_iff_ceasing）：世界有限，即有一个不重复地列出全部关系项的列表；每步每个关系项是否活跃是可判定的。可判定性是这一规律自己的条件，不是表示的承诺，经典地总是成立；对每个有限世界都要求这一规律而不给它，它就等价于排中律（law_iff_em）。",
+      "en": "The law (arising_iff_ceasing): the world is finite, a list naming every relatum once; whether each relatum is active at each step is decidable. Decidedness is this law's own condition, not a commitment of the representation, classically always met; asked of every finite world without it, the law is equivalent to excluded middle (law_iff_em)."
     },
     {
-      "zh": "静止（rests）：另加平衡（Balanced）、耗散（Dissipative）与生起者体现（ArisingEmbodied），同样要求活动可判定。",
-      "en": "Rest (rests): also balance (Balanced), dissipation (Dissipative) and whatever arises being embodied (ArisingEmbodied), with activity decided as well."
+      "zh": "静止（rests）：另加平衡（Balanced）、耗散（Dissipative）与生起者体现（ArisingEmbodied）；不要求活动可判定（P58）。",
+      "en": "Rest (rests): also balance (Balanced), dissipation (Dissipative) and whatever arises being embodied (ArisingEmbodied); activity need not be decided (P58)."
     },
     {
       "zh": "其余都是关于具体世界的陈述，不加前提；law_decides 以那一规律对每个有限世界成立为假设。",
@@ -58,7 +58,13 @@
     "Becoming.Web.Dependent.ceases_below",
     "Becoming.World.seedbank_world",
     "Becoming.World.law_of_em",
-    "Becoming.World.law_iff_em"
+    "Becoming.World.law_iff_em",
+    "Becoming.still_le",
+    "Becoming.unrefuted_falls_exceed",
+    "Becoming.falls_settle",
+    "Becoming.amount_settles",
+    "Becoming.Web.generation_settles",
+    "Becoming.World.arising_unrefuted_covering"
   ],
   "dependencies": [
     {
@@ -244,6 +250,13 @@
         "zh": "那里一步之内上升与下降的伴随，这里是整个空间中生起与止息的同时复现。",
         "en": "There, a rise accompanied by a fall within one step; here, arising and ceasing recurring together across the space."
       }
+    },
+    {
+      "id": "recurrence-without-decidedness",
+      "detail": {
+        "zh": "有限世界的规律在不要求可判定时的形式：止息永不终止、生起永不终止，以及从某步起已定时的规律。",
+        "en": "The forms of the law for finite worlds without decidedness: ceasing never stopping for good, arising never stopping for good, and the law where decided from some step on."
+      }
     }
   ],
   "counterexamples": [
@@ -267,14 +280,14 @@
     "en": "Contains no ethical predicate and evaluates no part; does not prove that the theory of becoming needs no axiom; Living is only the structural condition of the stepwise reading, not G0's valuation itself; the law for finite worlds needs decidable activity, and asked of every finite world without it is equivalent to excluded middle; stated for the reading across discrete steps; the parts listed are not exhaustive: combinations of premises and further parts, such as more or the rise of possibility, are not each given; which parts Ren's ‘generative’ and ‘degenerative’ name is Ren's to choose, and this result states only the reading of activity; names are Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T194804.708104Z）：Becoming.Space 的 56 项定理全部空依赖（P25b 新增 World.grazing_browser_ends 与 World.living_crosses_ceasing），Becoming.Roles 的 145 项定理（P25b 新增 Web.Dependent.inactive_below）亦然；同一回执覆盖包内 49 个模块（含只作导入的根模块与桥接），共 2592 项定理／3809 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T195216.607072Z 通过。作者反审见整合文档 §30；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）接受 P23c 的数学，所提更正在整合文档 §38 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 51 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T194804.708104Z): the 56 theorems of Becoming.Space (World.grazing_browser_ends and World.living_crosses_ceasing added in P25b) and the 145 theorems of Becoming.Roles (Web.Dependent.inactive_below added in P25b) all have empty axiom reports; the same receipt covers the package's 49 modules (including the import-only root and the bridge) with 2592 theorems/3809 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T195216.607072Z passed. The author's counterreview is in §30 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) accepts the mathematics of P23c, and its corrections are handled in §38; those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 51 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：Becoming.Space 的 62 项定理全部空依赖（P25b 新增 World.grazing_browser_ends 与 World.living_crosses_ceasing），Becoming.Roles 的 145 项定理（P25b 新增 Web.Dependent.inactive_below）亦然；同一回执覆盖包内 51 个模块（含只作导入的根模块与桥接），共 2673 项定理／3895 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T211111.085532Z 通过。作者反审见整合文档 §30；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）接受 P23c 的数学，所提更正在整合文档 §38 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 53 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 62 theorems of Becoming.Space (World.grazing_browser_ends and World.living_crosses_ceasing added in P25b) and the 145 theorems of Becoming.Roles (Web.Dependent.inactive_below added in P25b) all have empty axiom reports; the same receipt covers the package's 51 modules (including the import-only root and the bridge) with 2673 theorems/3895 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T211111.085532Z passed. The author's counterreview is in §30 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) accepts the mathematics of P23c, and its corrections are handled in §38; those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 53 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "4e5090f8d60995fca9a9f26b54af2ab544aabacb58692acfa1027e7f3aa462ab",
+      "sha256": "1a00494992e14a8b89d37f554c2f510925d6f510a135edc5890c8f00f3d0216a",
       "declarations": [
         "Becoming.Flow.still",
         "Becoming.Flow.still_dissipative",
@@ -343,7 +356,13 @@
         "Becoming.World.law_of_em",
         "Becoming.World.law_iff_em",
         "Becoming.World.arising_iff_ceasing_covering",
-        "Becoming.World.rests_covering"
+        "Becoming.World.rests_covering",
+        "Becoming.still_le",
+        "Becoming.unrefuted_falls_exceed",
+        "Becoming.falls_settle",
+        "Becoming.amount_settles",
+        "Becoming.Web.generation_settles",
+        "Becoming.World.arising_unrefuted_covering"
       ]
     },
     {
@@ -420,19 +439,28 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "sha256": "1dc3980839b53d5042c799f2c6d8f97a7c2a83b33c444898c0cf4409cde5c184",
+      "declarations": [
+        "Becoming.Covers",
+        "Becoming.Covers.not_not_coming_from"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "a2816da44a9d4854227c5941a4958f36316b6a21b101e0dc4a1154ab114dd642"
+      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fda7dfff2dd4383df29a63dc4bb0c70ec770bd31fe4192f62bc2dffe0b6a8110"
+      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "07ad6ff139e062e051175da4af4f8b55a01a9333485db5603556ec6c1026e817"
+      "sha256": "e9cf882ab19977e18792ebf3b553dbec54d19c0b629327c8852fb1144afcdabb"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -522,6 +550,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -702,6 +737,14 @@
     {
       "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
       "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58：陈述更强：World.rests 与 World.rests_covering 去掉活动的判定程序（未用到），名称不变；平息引理（still_le、unrefuted_falls_exceed、falls_settle、amount_settles、Web.generation_settles、World.arising_unrefuted_covering）；可判定性是规律 arising_iff_ceasing 自己的条件，不是表示的承诺（Ren：“i intuitively feel decidability is too dualist”，以“please”接受把它局部化）。见整合文档 §84 与清点页 DECIDABILITY-INVENTORY。",
+      "en": "2026-10-12 P58: statement strengthened: World.rests and World.rests_covering have the decision procedure on activity dropped (unused); names unchanged; the settling lemmas (still_le, unrefuted_falls_exceed, falls_settle, amount_settles, Web.generation_settles, World.arising_unrefuted_covering); decidedness is the own condition of the law arising_iff_ceasing, not a commitment of the representation (Ren: “i intuitively feel decidability is too dualist”, and “please” to making it local). See §84 of the integration note and the inventory page DECIDABILITY-INVENTORY."
     }
   ]
 }

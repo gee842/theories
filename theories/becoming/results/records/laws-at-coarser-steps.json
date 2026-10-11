@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T19:37:05+00:00",
+  "reviewed_at_utc": "2026-10-11T21:31:22+00:00",
   "claim": {
-    "zh": "把一个世界在严格递增的时刻 σ 读出，每个粗步是从 σ s 到 σ (s + 1) 之前的一段细步（Strict、span）。各条件都在一个粗步上陈述，假设只在该粗步内的细步上。合成的：家族上的平衡在粗步内各细步每个关系项只列出一次时合成（Flow.BalancesOn.sample，经 balance_over_stretch_on、Flow.sample_taken_on、Flow.sample_given_on）；家族上的耗散无条件合成（Flow.DissipatesOn.sample）；家族跨过粗步封闭恰当它跨过其内每个细步封闭（Flow.sample_closedAt_iff）；下降在家族只在粗步两端包含所立者时合成（Flow.RunsDownOn.sample），每个细步都下降时粗步下降（Flow.RunsDownOn.sample_of_fine）。所以粗步上：有水平改变恰当家族末端的总水平低于始端（Flow.sample_changes_iff）；细步上平衡时，一个条件跨过粗步开始立着恰当此前立在零且细步给它的多于取走的，不再立着恰当此前立着且细步取走它所有的连同所给的（Flow.sample_comesToStand_iff、Flow.sample_ceasesToStand_iff）。网在时刻 σ 读出（Web.sample），活动需要支持、体现与普查在被读出的细步上陈述（Web.sample_dependent、sample_embodied、sample_census、sample_standingCensus）；活动判定时，跨过粗步的生起或不再活跃是跨过其内某细步的生起或不再活跃（Web.sample_arises、Web.sample_ceases）。全局读法是推论（Flow.sample_balances、Flow.sample_dissipative、World.sample_survives、World.sample_rests）。",
-    "en": "Read a world at strictly increasing times σ, each coarse step being the fine steps from σ s to just before σ (s + 1) (Strict, span). Each condition is stated at one coarse step, with hypotheses on the fine steps inside it only. What composes: balance on a family composes where each relatum is listed once at the fine steps inside (Flow.BalancesOn.sample, through balance_over_stretch_on, Flow.sample_taken_on, Flow.sample_given_on); dissipation on a family composes unconditionally (Flow.DissipatesOn.sample); a family is closed across the coarse step exactly when it is closed across each fine step inside (Flow.sample_closedAt_iff); running down composes where the family holds what stands at the two coarse ends only (Flow.RunsDownOn.sample), and running down at every fine step gives it at the coarse step (Flow.RunsDownOn.sample_of_fine). So at the coarse step some standing changes exactly when the family's total at the end is below its total at the start (Flow.sample_changes_iff); with balance at the fine steps a condition comes to stand across the coarse step exactly when it stood at nothing and the fine steps gave it more than they took, and ceases to stand exactly when it stood and they took all it had with all they gave (Flow.sample_comesToStand_iff, Flow.sample_ceasesToStand_iff). The web read at the times σ (Web.sample) states activity needing support, embodiment and a census of the sampled fine step (Web.sample_dependent, sample_embodied, sample_census, sample_standingCensus); with activity decided, arising or ceasing across a coarse step is arising or ceasing across a fine step inside it (Web.sample_arises, Web.sample_ceases). The global readings are corollaries (Flow.sample_balances, Flow.sample_dissipative, World.sample_survives, World.sample_rests)."
+    "zh": "把一个世界在严格递增的时刻 σ 读出，每个粗步是从 σ s 到 σ (s + 1) 之前的一段细步（Strict、span）。各条件都在一个粗步上陈述，假设只在该粗步内的细步上。合成的：家族上的平衡在粗步内各细步每个关系项只列出一次时合成（Flow.BalancesOn.sample，经 balance_over_stretch_on、Flow.sample_taken_on、Flow.sample_given_on）；家族上的耗散无条件合成（Flow.DissipatesOn.sample）；家族跨过粗步封闭恰当它跨过其内每个细步封闭（Flow.sample_closedAt_iff）；下降在家族只在粗步两端包含所立者时合成（Flow.RunsDownOn.sample），每个细步都下降时粗步下降（Flow.RunsDownOn.sample_of_fine）。所以粗步上：有水平改变恰当家族末端的总水平低于始端（Flow.sample_changes_iff）；细步上平衡时，一个条件跨过粗步开始立着恰当此前立在零且细步给它的多于取走的，不再立着恰当此前立着且细步取走它所有的连同所给的（Flow.sample_comesToStand_iff、Flow.sample_ceasesToStand_iff）。网在时刻 σ 读出（Web.sample），活动需要支持、体现与普查在被读出的细步上陈述（Web.sample_dependent、sample_embodied、sample_census、sample_standingCensus）；活动判定时，跨过粗步的生起或不再活跃是跨过其内某细步的生起或不再活跃（Web.sample_arises、Web.sample_ceases）。全局读法是推论（Flow.sample_balances、Flow.sample_dissipative、World.sample_survives、World.sample_rests，后者不用判定程序）。",
+    "en": "Read a world at strictly increasing times σ, each coarse step being the fine steps from σ s to just before σ (s + 1) (Strict, span). Each condition is stated at one coarse step, with hypotheses on the fine steps inside it only. What composes: balance on a family composes where each relatum is listed once at the fine steps inside (Flow.BalancesOn.sample, through balance_over_stretch_on, Flow.sample_taken_on, Flow.sample_given_on); dissipation on a family composes unconditionally (Flow.DissipatesOn.sample); a family is closed across the coarse step exactly when it is closed across each fine step inside (Flow.sample_closedAt_iff); running down composes where the family holds what stands at the two coarse ends only (Flow.RunsDownOn.sample), and running down at every fine step gives it at the coarse step (Flow.RunsDownOn.sample_of_fine). So at the coarse step some standing changes exactly when the family's total at the end is below its total at the start (Flow.sample_changes_iff); with balance at the fine steps a condition comes to stand across the coarse step exactly when it stood at nothing and the fine steps gave it more than they took, and ceases to stand exactly when it stood and they took all it had with all they gave (Flow.sample_comesToStand_iff, Flow.sample_ceasesToStand_iff). The web read at the times σ (Web.sample) states activity needing support, embodiment and a census of the sampled fine step (Web.sample_dependent, sample_embodied, sample_census, sample_standingCensus); with activity decided, arising or ceasing across a coarse step is arising or ceasing across a fine step inside it (Web.sample_arises, Web.sample_ceases). The global readings are corollaries (Flow.sample_balances, Flow.sample_dissipative, World.sample_survives, and World.sample_rests, with no decision procedure)."
   },
   "hypotheses": [
     {
@@ -154,14 +154,14 @@
     "en": "The converse does not compose: balance and dissipation at the coarse step do not give them at the fine steps (Cancelling.coarse_not_fine, Averaging.coarse_not_fine). Only active relata giving and only active relata taking are step-relative (Strobe.acting_taking_step_relative), composing only where activity holds over the interval (Flow.sample_acting_on, sample_taking_on, Web.held_of_unit, Web.held_of_constant); bounded transmission of dependences is step-relative too (Delay.transmitting_step_relative). Recurring at the coarse steps is recurring at the fine ones, not conversely (Strobe.converse_fails). Not shown: continuous time (next); whether a becoming given with no step can be represented by discrete steps; whether listing once can be dropped for balance. This is a reading at a coarser step, not a refinement of the unit of amounts (Becoming.Resolution). No premise is derived. The names (Strict, span, sample, Held and others) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T194804.708104Z）：新核心模块 Becoming.Sampling 的 90 项定理全部空依赖；同一回执覆盖包内 49 个模块，共 2592 项定理／3809 项声明审计；外围回执 20261011T195216.607072Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §80。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T194804.708104Z): the 90 theorems of the new core module Becoming.Sampling all have empty axiom reports; the same receipt covers the package's 49 modules with 2592 theorems/3809 declaration audits; periphery receipt 20261011T195216.607072Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §80 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T210459.095261Z）：新核心模块 Becoming.Sampling 的 90 项定理全部空依赖；同一回执覆盖包内 51 个模块，共 2673 项定理／3895 项声明审计；外围回执 20261011T211111.085532Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §80。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T210459.095261Z): the 90 theorems of the new core module Becoming.Sampling all have empty axiom reports; the same receipt covers the package's 51 modules with 2673 theorems/3895 declaration audits; periphery receipt 20261011T211111.085532Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §80 of the integration note."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean",
       "role": "proof",
-      "sha256": "d4b66b652f189a696afc53301a3d7edd4618c1343b2fb10a004739d1308085ab",
+      "sha256": "5bf6a8962ac24758336d1907399b7d19aa39c01c6ae773806384bcd8dea843eb",
       "declarations": [
         "Becoming.Strict",
         "Becoming.Strict.le_self",
@@ -284,7 +284,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "0e521646fa56ba13b28f2ce8429258a3c034e70b6b09f4e2b84709a2406e5263",
+      "sha256": "6ff960146026428929a164fc5d1b53b2afb108ef4ac65002c3990490477d5ae1",
       "declarations": [
         "Becoming.World.Counted"
       ]
@@ -309,27 +309,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "a2816da44a9d4854227c5941a4958f36316b6a21b101e0dc4a1154ab114dd642"
+      "sha256": "98772985b8433a0de68e32bdae825f39faf88644dd5d9e53206494ac0a617155"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fda7dfff2dd4383df29a63dc4bb0c70ec770bd31fe4192f62bc2dffe0b6a8110"
+      "sha256": "e479b8fc60cfeebabcfedc9076859260e32e12c6d664bf89d18be19080405198"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "07ad6ff139e062e051175da4af4f8b55a01a9333485db5603556ec6c1026e817"
+      "sha256": "e9cf882ab19977e18792ebf3b553dbec54d19c0b629327c8852fb1144afcdabb"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "fc36c618abc51f7e57b9d140d090394b7a2b55b90272a969e28aeb6e3bc7d65f"
+      "sha256": "53dd21ac2d45c7de846452c1d626e4c778ae334bfd7464f1bf3491f9b84a0447"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "93a2d0bf53a42e4b3bbaf7e73df261e6d6164c00e4cd659124cc24a3d6fb6ace"
+      "sha256": "f1ca93d64c2a5eb21ebb53d8a2e9800449eace7415cb34fc9be51417069dd055"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -384,6 +384,14 @@
     {
       "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
       "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58：World.sample_rests 陈述更强：去掉活动的判定程序（未用到），名称不变（整合者同意在 P58 中一并修改）。见整合文档 §84 与清点页 DECIDABILITY-INVENTORY。",
+      "en": "2026-10-12 P58: World.sample_rests, statement strengthened: the decision procedure on activity dropped (unused); name unchanged (changed in P58, as agreed with the integrator). See §84 of the integration note and the inventory page DECIDABILITY-INVENTORY."
     }
   ]
 }

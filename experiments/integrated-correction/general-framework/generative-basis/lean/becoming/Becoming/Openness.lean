@@ -71,9 +71,13 @@ giving needs uptake there; a fall is taken from.
   (`Web.StandingCensus.coming_of_ceasing`, `Web.StandingCensus.coming_iff_ceasing`).
 * **The rest theorem.** Where what stands is listed, whatever arises is embodied, the
   flow balances and dissipates, and every step from some step on is enclosed around what
-  stands, arising stops, since standing stops changing (`World.arising_stops`). With a
-  census of what is active as well, ceasing stops too, by the census law: the world comes
-  to rest (`World.comes_to_rest`).
+  stands, arising stops, since standing stops changing (`World.arising_stops`); more, it
+  settles: it is not the case that after every step from then on a later arising stays
+  unrefuted (`World.arising_settles_from`, from `Flow.change_settles`). With a census of what is active
+  as well, ceasing stops too: the world comes to rest (`World.comes_to_rest`). No decision
+  procedure is used, and of the census only that it covers what is active: under a covering
+  list, ceasing recurring leaves a later arising unrefuted after every step
+  (`Covers.not_not_coming_from`), which settling refutes (`World.comes_to_rest_from`).
 * **Each census does work.** Without the census of what is active, ceasing can go on:
   `attrition` meets every other premise and keeps ceasing (`World.rest_needs_census`). Without
   the census of what stands, arising can go on: in `throughput` what is active is listed,
@@ -83,7 +87,8 @@ giving needs uptake there; a fall is taken from.
   (`World.rest_needs_standing`).
 * **Its cases.** A finite world lists what stands and is enclosed around it at every step
   (`World.Finite.standing`), so the finite rest of `Becoming.Space` is a case
-  (`World.Finite.comes_to_rest`). Where every relatum is embodied, the census of what is
+  (`World.Finite.comes_to_rest`), its relata covering whatever is active. Where every relatum
+  is embodied, the census of what is
   active lists what stands (`World.rests_around`), and enclosure from some step on
   suffices, with no decision of equality: an enclosed step is not not enclosed around
   what stands, and the totals compared are numbers (`World.rests_enclosed`). Read the
@@ -91,9 +96,10 @@ giving needs uptake there; a fall is taken from.
   some step on being enclosed: it exchanges beyond every finite family
   (`World.arising_opens`).
 * **What comes to rest is few.** Where what holds is listed at each step and coming to be
-  does not recur, not unboundedly many members ever hold (`Listed.few_of_quiet`). So in
-  every world that comes to rest under the rest theorem, not unboundedly many relata are
-  ever active and not unboundedly many ever stand (`World.rest_few`); conversely, where
+  does not recur, not unboundedly many members ever hold (`Listed.few_of_quiet`), and with no
+  decision procedure where coming to be settles (`Listed.few_of_settled`). So in every world
+  that comes to rest under the rest theorem, not unboundedly many relata are ever active and
+  not unboundedly many ever stand, with no decision procedure (`World.rest_few`); conversely, where
   some list holds every relatum ever active and activity is decided, a census exists
   (`World.counted_of_ever`). That stronger form, a list holding every member that ever
   holds, does not follow without omniscience: for a determination listed by at most one
@@ -117,8 +123,10 @@ giving needs uptake there; a fall is taken from.
 
 What stands and what is active coincide only for embodied relata. The standing laws need
 no embodiment; the rest theorem uses it only for what arises, turning arising into
-rising, and reaches ceasing through the census law. Activity is supposed decidable where
-a theorem needs it, a logical commitment of the representation. No ethical predicate,
+rising, and reaches ceasing through a list covering what is active. Decidedness of activity
+is not a commitment of the representation: it is the condition of the laws that find a step
+where without it a step is only not refuted, the census law, the bounded laws and
+`World.few_active`. No ethical predicate,
 ranking or axiom occurs.
 -/
 
@@ -272,6 +280,21 @@ theorem stills_from (census : W.StandingCensus stand) {T : Nat}
   fun changing => match (change_recurs_iff census).mp (fun N => match changing N with
       | ⟨t, c, later, changes⟩ => ⟨t, later, c, changes⟩) T with
   | ⟨t, later, unmet, _⟩ => runs t later unmet
+
+/-- Change settles: under a census of what stands, where across every step from `T` on it is
+not refuted that what stands runs down, it is not the case that after every step from `T` on a
+later change of some standing stays unrefuted. No premise; `stills_from` is the weaker form,
+that change does not recur. -/
+theorem change_settles (census : W.StandingCensus stand) {T : Nat}
+    (runs : ∀ t, T ≤ t → ¬¬ L.RunsDown W t) :
+    ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t c, M ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
+  fun changing => falls_settle (q := fun t => W.stock (stand t) t) (T := T)
+    (fun t later => Decidable.of_not_not fun above => runs t later fun down =>
+      above (down.standing_le census))
+    fun M from_ falls => changing M from_ fun ⟨t, c, later, changes⟩ =>
+      falls ⟨t, later, Decidable.of_not_not fun level =>
+        runs t (Nat.le_trans from_ later) fun down =>
+          level ((down.changes_iff census).mp ⟨c, changes⟩)⟩
 
 /-- Standing comes to rest: where every step from some step on is enclosed around what
 stands, no condition's standing changes at arbitrarily late steps. It is enough that each
@@ -531,6 +554,15 @@ theorem arising_stops_from {stand : Nat → List w.Relatum} (standing : w.web.St
     | ⟨t, x, later, arises⟩ =>
       ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
 
+/-- Arising settles there: it is not the case that after every step from `T` on a later arising
+stays unrefuted. No premise on the flow and no decision procedure (`Flow.change_settles`). -/
+theorem arising_settles_from {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
+    (embodied : w.ArisingEmbodied) {T : Nat} (runs : ∀ t, T ≤ t → ¬¬ w.flow.RunsDown w.web t) :
+    ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ w.web.Arises t x :=
+  fun arising => Flow.change_settles standing runs fun M from_ none_ =>
+    arising M from_ fun ⟨t, x, later, arises⟩ =>
+      none_ ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
+
 /-- Arising stops where what stands is listed, whatever arises is embodied, the flow
 balances and dissipates, and every step from some step on is enclosed around what stands:
 no standing changes at arbitrarily late steps (`Flow.stills`), and an embodied relatum
@@ -543,17 +575,39 @@ theorem arising_stops {stand : Nat → List w.Relatum} (standing : w.web.Standin
     | ⟨t, x, later, arises⟩ =>
       ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
 
+/-- Rest wherever what stands runs down from some step on: a world whose arising is
+embodied, with a census of what stands and a list covering what is active at each step from
+`T` on, across every step from `T` on of which it is not refuted that what stands runs down,
+comes to rest. No premise on the flow, no census of activity and no decision procedure:
+arising settles (`arising_settles_from`), and ceasing recurring would leave a later arising
+unrefuted after every step (`Covers.not_not_coming_from`). -/
+theorem comes_to_rest_from {stand : Nat → List w.Relatum} {T : Nat}
+    (covered : ∀ t, T ≤ t → ∃ L : List w.Relatum, Covers (fun x s => w.web.active s x) L t)
+    (standing : w.web.StandingCensus stand) (embodied : w.ArisingEmbodied)
+    (runs : ∀ t, T ≤ t → ¬¬ w.flow.RunsDown w.web t) :
+    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+  have settles := arising_settles_from standing embodied runs
+  ⟨fun arising => settles fun M _ none_ => match arising M with
+      | ⟨t, x, later, arises⟩ => none_ ⟨t, x, later, arises⟩,
+   fun ceasing => settles fun M from_ none_ => match covered M from_ with
+     | ⟨_, covers⟩ => Covers.not_not_coming_from (p := fun x s => w.web.active s x) covers ceasing
+         fun ⟨t, x, later, arises⟩ => none_ ⟨t, x, later, arises⟩⟩
+
 /-- The rest theorem. A world with a census of activity and of what stands, whose arising
 is embodied, with a balanced, dissipative flow, in which every step from some step on is
-enclosed around what stands, comes to rest. Arising stops (`arising_stops`), and by the
-census law ceasing stops too. -/
-theorem comes_to_rest [decided : ∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
+enclosed around what stands, comes to rest. Arising stops (`arising_stops`), and ceasing
+stops too, with no decision procedure: the census covers what is active
+(`comes_to_rest_from`). -/
+theorem comes_to_rest (counted : w.Counted)
     {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
     (embodied : w.ArisingEmbodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
     {T : Nat} (around : ∀ t, T ≤ t → w.flow.AroundStanding stand t) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  have quiet := arising_stops standing embodied balanced dissipative around
-  ⟨quiet, fun ceasing => quiet (arising_of_ceasing counted ceasing)⟩
+  match counted with
+  | ⟨alive, census⟩ => comes_to_rest_from (T := T)
+      (fun t _ => ⟨alive t, fun x active => ((census t).2 x).mp active⟩) standing embodied
+      fun t later unmet =>
+        unmet ((around t later).runsDownClosed balanced dissipative standing).runsDown
 
 /-- A finite world lists what stands at each step, and every step is enclosed around it,
 so `World.rests` is the finite case of the rest theorem (`Finite.comes_to_rest`). -/
@@ -567,13 +621,18 @@ theorem Finite.standing (finite : w.Finite) :
      fun _ => ⟨all, distinct, fun c _ => every c, fun c _ => every c,
        fun _ _ c outside => absurd (every c) outside⟩⟩
 
-/-- The finite case: `World.rests` follows from the rest theorem. -/
-theorem Finite.comes_to_rest [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
+/-- The finite case: `World.rests` follows from the rest theorem, with no decision procedure.
+A finite world lists what stands, every step is enclosed around it (`Finite.standing`), and
+its relata cover what is active (`comes_to_rest_from`); its census of activity, which needs a
+decision procedure (`Finite.counted`), is not used. -/
+theorem Finite.comes_to_rest (finite : w.Finite)
     (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   match finite.standing with
-  | ⟨_, standing, around⟩ => World.comes_to_rest finite.counted standing embodied balanced
-      dissipative (T := 0) fun t _ => around t
+  | ⟨_, standing, around⟩ => match finite with
+    | ⟨all, _, every⟩ => comes_to_rest_from (T := 0) (fun _ _ => ⟨all, fun x _ => every x⟩)
+        standing embodied fun t _ unmet =>
+          unmet ((around t).runsDownClosed balanced dissipative standing).runsDown
 
 /-- The rest theorem needs its census of activity: in `attrition` nothing stands and nothing
 takes part, so every other premise holds, every step is enclosed around what stands, and
@@ -621,7 +680,7 @@ theorem rests_around {alive : Nat → List w.Relatum} (census : w.web.Census ali
     (embodied : w.Embodied) (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
     (around : ∀ t, T ≤ t → w.flow.AroundStanding alive t) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  comes_to_rest (decided := fun t x => decidable_of_iff _ (embodied x t).symm) ⟨alive, census⟩
+    comes_to_rest ⟨alive, census⟩
     (standingCensus census embodied) embodied.arising balanced dissipative around
 
 /-- Enclosure from some step on suffices, with no decision of equality: each enclosed step
@@ -673,6 +732,13 @@ theorem comes_after {p : Nat → Prop} [∀ t, Decidable (p t)] {N : Nat} (fails
   | m + 1, .step within, holds =>
     if h : p m then comes_after fails within h else ⟨m, within, h, holds⟩
 
+/-- The same, unrefuted, with no decision procedure. -/
+theorem comes_after_unrefuted {p : Nat → Prop} {N : Nat} (fails : ¬ p N) :
+    ∀ {T}, N ≤ T → p T → ¬ ¬ ∃ t, N ≤ t ∧ ComesToBe p t
+  | _, .refl, holds => absurd holds fails
+  | _ + 1, .step within, holds => fun none_ =>
+      none_ ⟨_, within, fun h => comes_after_unrefuted fails within h none_, holds⟩
+
 /-- Where what holds is listed at each step and coming to be does not recur, not
 unboundedly many members ever hold: not every finite list misses a member holding at some
 step (the eleventh review's probe). -/
@@ -688,6 +754,21 @@ theorem Listed.few_of_quiet {p : α → Nat → Prop} [∀ a t, Decidable (p a t
         | ⟨s, after, comes⟩ => ⟨s, a, after, comes⟩
       | isFalse early => absurd (mem_gather (((listed t).2 a).mp holds)
           (Nat.le_of_lt (Nat.gt_of_not_le early))) out
+
+/-- Where what holds is listed at each step and coming to be settles, not unboundedly many
+members ever hold, with no decision procedure: `Listed.few_of_quiet` from the settling form
+of quiet. -/
+theorem Listed.few_of_settled {p : α → Nat → Prop} {l : Nat → List α} (listed : Listed p l)
+    (settled : ¬ ∀ N, ¬ ¬ ∃ t a, N ≤ t ∧ ComesToBe (p a) t) :
+    ¬ ∀ L : List α, ∃ t a, p a t ∧ ¬ a ∈ L :=
+  fun many => settled fun N none_ => match many (gather l N) with
+    | ⟨t, a, holds, out⟩ =>
+      have fails : ¬ p a N := fun h => out (mem_gather (((listed N).2 a).mp h) (Nat.le_refl N))
+      match Nat.decLe N t with
+      | isTrue later => comes_after_unrefuted fails later holds fun ⟨s, after, comes⟩ =>
+          none_ ⟨s, a, after, comes⟩
+      | isFalse early => out (mem_gather (((listed t).2 a).mp holds)
+          (Nat.le_of_lt (Nat.gt_of_not_le early)))
 
 namespace Few
 
@@ -793,23 +874,25 @@ theorem few_active [∀ t x, Decidable (w.web.active t x)] {alive : Nat → List
 
 /-- In every world to which the rest theorem applies, with enclosure from some step on not
 refuted, not unboundedly many relata are ever active and not unboundedly many ever stand
-(the eleventh review's probe). So the worlds it covers beyond finite ones add only relata
-that never stand or act. -/
-theorem rest_few [∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
+(the eleventh review's probe), with no decision procedure: change settles
+(`Flow.change_settles`), and with it coming to be (`Listed.few_of_settled`). So the worlds it
+covers beyond finite ones add only relata that never stand or act. -/
+theorem rest_few (counted : w.Counted)
     {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
     (embodied : w.ArisingEmbodied) (balanced : w.Balanced) (dissipative : w.Dissipative)
     {T : Nat} (around : ∀ t, T ≤ t → ¬¬ w.flow.AroundStanding stand t) :
     (¬ ∀ L : List w.Relatum, ∃ t x, w.web.active t x ∧ ¬ x ∈ L) ∧
     (¬ ∀ L : List w.Relatum, ∃ t x, 0 < w.web.level t x ∧ ¬ x ∈ L) :=
-  have still := Flow.stills balanced dissipative standing around
+  have settles := Flow.change_settles standing (T := T) fun t later unmet =>
+    around t later fun enclosed => unmet (enclosed.runsDownClosed balanced dissipative standing).runsDown
   match counted with
   | ⟨_, census⟩ =>
-    ⟨few_active census fun arising => still fun N => match arising N with
-      | ⟨t, x, later, arises⟩ =>
-        ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩,
-     Listed.few_of_quiet (p := fun x t => 0 < w.web.level t x) standing fun coming =>
-       still fun N => match coming N with
-       | ⟨t, x, later, comes⟩ => ⟨t, x, later, .inl (Web.ComesToStand.rises (W := w.web) comes)⟩⟩
+    ⟨Listed.few_of_settled (p := fun x t => w.web.active t x) census fun all =>
+        settles fun M _ none_ => all M fun ⟨t, x, later, arises⟩ =>
+          none_ ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩,
+     Listed.few_of_settled (p := fun x t => 0 < w.web.level t x) standing fun all =>
+        settles fun M _ none_ => all M fun ⟨t, x, later, comes⟩ =>
+          none_ ⟨t, x, later, .inl (Web.ComesToStand.rises (W := w.web) comes)⟩⟩
 
 /-- In such a world the exchange comes to rest as well: no relatum takes or gives at
 arbitrarily late steps (`Flow.exchanges_finitely`). This needs only the census of what

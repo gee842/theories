@@ -1,0 +1,31 @@
+Becoming.falls_finitely : ∀ (rank : Nat → Nat) (T : Nat),
+  (∀ (n : Nat), T ≤ n → rank (n + 1) ≤ rank n) → ¬∀ (N : Nat), ∃ n, N ≤ n ∧ rank (n + 1) < rank n
+@Becoming.Run.not_of_depletion : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (reserve : S → Nat),
+  (∀ (s : S) (a : A) (t : S), P.step s a t → reserve t < reserve s) → ∀ (r : Becoming.Run P), False
+@Becoming.no_execution_of_depletion : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (reserve : S → Nat),
+  (∀ (s : S) (a : A) (t : S), P.step s a t → reserve t < reserve s) →
+    ¬∃ states actions, ∀ (n : Nat), P.step (states n) (actions n) (states (n + 1))
+@Becoming.Run.renewal_recurs : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (r : Becoming.Run P)
+  (rank : S → Nat) (renewal : Nat → Prop),
+  (∀ (n : Nat), ¬renewal n → rank (r.state (n + 1)) < rank (r.state n)) →
+    ∀ (start : Nat), ¬∀ (n : Nat), start ≤ n → ¬renewal n
+@Becoming.Conditions.drawdown_finite : ∀ {S : Type u_1} {A : Type u_2} {F C : Type} (K : Becoming.Conditions S F C)
+  {P : Generative.Process S A} (r : Becoming.Run P) (f : F) (c : C) (T : Nat),
+  (∀ (t : Nat), T ≤ t → K.level (r.state (t + 1)) c ≤ K.level (r.state t) c) →
+    (∀ (t : Nat), T ≤ t → K.active (r.state t) f → K.level (r.state (t + 1)) c < K.level (r.state t) c) →
+      ¬∀ (N : Nat), ∃ t, N ≤ t ∧ K.active (r.state t) f
+Becoming.Renewable.class_belongs_to_the_run : Becoming.Renewable.withinRenewal.state 0 =
+    Becoming.Renewable.beyondRenewal.state 0 ∧
+  (∀ (t : Nat),
+      Becoming.Renewable.conditions.active (Becoming.Renewable.withinRenewal.state t)
+          Becoming.Renewable.Formation.focal ∧
+        Becoming.Renewable.conditions.active (Becoming.Renewable.beyondRenewal.state t)
+          Becoming.Renewable.Formation.focal) ∧
+    RelationalRenewal.RenewingIn (Becoming.Renewable.conditions.along Becoming.Renewable.withinRenewal)
+        Becoming.Renewable.Formation.focal ∧
+      RelationalRenewal.ConsumingIn (Becoming.Renewable.conditions.along Becoming.Renewable.beyondRenewal)
+          Becoming.Renewable.Formation.focal ∧
+        ∀ (t : Nat),
+          1 ≤ t →
+            ¬Becoming.Renewable.conditions.active (Becoming.Renewable.beyondRenewal.state t)
+                Becoming.Renewable.Formation.sustaining

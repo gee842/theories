@@ -136,25 +136,25 @@
 
 **中文。** 以下各项改动表示本身，所以属于 Ren：
 - **(b1) 最小差异。** 已决定：A（属于生成本身）。熵的会话研究它能否推出。
-- **(b2) 可判定性。** 保留，或者在不复现的形式中去掉。后一种做法中，明确终止之步的陈述按已证明的边界放弃。
+- **(b2) 可判定性。** 保留，或者在不复现的形式中去掉。后一种做法中，明确终止之步的陈述按已证明的边界放弃。已决定（Ren 2026-10-11：“too dualist”，再以“please”接受，[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）：局部化。可判定性不再是表示的承诺；计数或命名一步的规律把在所计数之处已定写作自己的条件，不需要它的规律不用它陈述（P58，`Becoming.Decidedness`，研究 §84，[清点](DECIDABILITY-INVENTORY.md)）。仍用它的：133 条定理的陈述依赖它（63 条计数，70 条关于由判定造出的对象），78 条只在证明中用到（49 条找出一步或成员，18 条分辨相同，8 条造出列表，3 条分情形），各有理由；静止定理已不用它。
 - **(b3) 时间。** 只检验更粗的步（采样）是否保持规律，还是也研究连续时间。另一个会话的工作区中有一个尚未提交的 `Sampling` 模块（见 §4）。已决定（Ren 2026-10-12，[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)）：较粗的步已检验（`Becoming.Sampling`）；连续时间在核心中读作一座越来越细的离散读法之塔，由 `Sampling` 连接，连续时间的规律就是每一层上的规律；实数时间是以后的外围对应。损失仍按交换计，不按细步计。
 - **(b4) 需要的单位。** 已决定（同上）：较细的单位下，需要与水平以同一单位计；不变的需要随细分放大，以 `r > 0` 为这一读法的条件，所以支持不依赖量度的粒度。这是关于怎样量度需要的表示承诺，公开陈述，不是世界的前提。
 - **两种可能的重新奠定（AI 的提议）。**
-  - 把不平衡算作关系项：任一步、任一条件上的不平衡，都可以算作一个只给或只取的关系项的交换，就像 R4 把细分算作给予。这样平衡就由表示成立，而它的局部失效成为可见的交换。
-  - 把体现读作定义：活跃就是立着。这会失去形成与条件两个角色的区分，所以 AI 不建议。
+  - 把不平衡算作关系项：任一步、任一条件上的不平衡，都可以算作一个只给或只取的关系项的交换，就像 R4 把细分算作给予。这样平衡就由表示成立，而它的局部失效成为可见的交换。已决定（Ren 2026-10-11，“please”）：先作为与现行表示等价的表示加以证明（P59，`Becoming.Imbalance`，研究 §85）：每个流都平衡，平衡恰是新增关系项的闲置，活动的前提逐步等价；是否采用由 Ren 定。
+  - 把体现读作定义：活跃就是立着。这会失去形成与条件两个角色的区分，所以 AI 不建议。已决定（同上）：不读作定义；体现仍是前提，在生起或止息的关系项上局部化。
 
-  两者都属于重新奠定表示，都需要 Ren 决定。
+  两者都属于重新奠定表示；Ren 2026-10-11 的决定见上，是否采用不平衡关系项仍由 Ren 定。
 
 **English.** These change the representation itself and so are Ren's:
 - **(b1) The least difference.** Decided: A, it belongs to becoming. Whether it can be derived is the entropy session's question.
-- **(b2) Decidability.** Keep it, or drop it in the forms stating that something does not recur. In the second case, statements naming an explicit end step are given up, as the proved boundary requires.
+- **(b2) Decidability.** Keep it, or drop it in the forms stating that something does not recur. In the second case, statements naming an explicit end step are given up, as the proved boundary requires. Decided (Ren, 11 October 2026: “too dualist”, then “please”, [words](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)): made local. Decidability is no longer a commitment of the representation; the laws that count or name a step state decidedness where they count as their own condition, and the laws that do not need it are stated without it (P58, `Becoming.Decidedness`, study section 84, [inventory](DECIDABILITY-INVENTORY.md)). What still uses it: 133 theorems whose statements depend on it (63 count, 70 concern objects built by deciding) and 78 that use it only in proofs (49 find a step or a member, 18 tell same from different, 8 build a list, 3 split on a case), each with its reason; the rest theorems no longer use it.
 - **(b3) Time.** Test only coarser steps (sampling), or also continuous time. Another session's worktree holds an uncommitted `Sampling` module (section 4). Decided (Ren, 12 October 2026, [words](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)): coarser steps are tested (`Becoming.Sampling`); continuous time is read in the core as a tower of ever finer discrete readings linked by `Sampling`, a law of continuous time being a law at every level; real-valued time is a later periphery correspondence. Loss stays counted per exchange, not per fine step.
 - **(b4) The unit of need.** Decided (same source): at a finer unit a need is counted in the same unit as the level; an unchanged need scales with the split, with `r > 0` the reading's condition, so support does not depend on the grain of measurement. This is a commitment of the representation about how need is measured, stated openly, not a premise on worlds.
 - **Two possible re-foundings, proposed by the AI.**
-  - Count imbalance as a relatum. An imbalance at a step and condition can be counted as the exchange of a relatum that only gives or only takes, as R4 counts the refinement as a giving. Balance then holds by the representation, and its local failure becomes a visible exchange.
-  - Read embodiment as a definition: to be active is to stand. This loses the distinction between the two roles of formation and condition, so the AI does not recommend it.
+  - Count imbalance as a relatum. An imbalance at a step and condition can be counted as the exchange of a relatum that only gives or only takes, as R4 counts the refinement as a giving. Balance then holds by the representation, and its local failure becomes a visible exchange. Decided (Ren, 11 October 2026, “please”): proved first as a representation equivalent to the current one (P59, `Becoming.Imbalance`, study section 85): every flow balances, balance is exactly the added relatum idle, and the activity premises are equivalent step by step; whether to adopt it is Ren's.
+  - Read embodiment as a definition: to be active is to stand. This loses the distinction between the two roles of formation and condition, so the AI does not recommend it. Decided (same source): not read as a definition; embodiment stays a premise, made local at the relata that arise or cease.
 
-  Both re-found the representation and need Ren's decision.
+  Both re-found the representation; Ren's decisions of 11 October 2026 are above, and whether to adopt the imbalance relatum is still Ren's.
 
 ## 2. 零前提的重述 / Zero-premise restatements
 
@@ -173,6 +173,10 @@
 **现状（P63、P61b、Sampling）。** C 组中 P50 漏掉的储备一行已局部重述（P63，研究 §79）；P61 的反方向已证（P61b）。时间：较粗的步已检验（`Becoming.Sampling`，研究 §80）：平衡（每个关系项只列出一次时）、耗散、封闭与下降跨粗步合成，不合成回细步，活动、取用与传递依步而定。整单位：以单位读变化时一步的规律成立，以原始计数读时不成立；需要与水平以同一单位计（`Becoming.Units`）。
 
 **Status (P63, P61b, Sampling).** The reserve row of group C missed in P50 is restated locally (P63, study section 79); the converse of P61 is proved (P61b). Time: coarser steps are tested (`Becoming.Sampling`, study section 80): balance (with each relatum listed once), dissipation, closure and running down compose across a coarse step, nothing composes back to the fine steps, and acting, taking and transmission are step-relative. Whole units: the laws of one step hold with change read in the unit and fail read in raw counts; a need is counted in the same unit as the level (`Becoming.Units`).
+
+**现状（P58、P59）。** 可判定性已局部化（P58，研究 §84）：计数是关系，计数存在恰当所计数者已定；计数之间的普查、有限家族中复现的不终止形式与静止定理都不用可判定性；仍用它的定理各有理由，列在[清点](DECIDABILITY-INVENTORY.md)。不平衡关系项已证与现行表示等价（P59，研究 §85），未采用。
+
+**Status (P58, P59).** Decidability is made local (P58, study section 84): a count is a relation, existing exactly where what it counts is decided; the census between counts, the never-stopping forms of recurrence in finite families and the rest theorems need no decidedness; the theorems still using it each have a reason, listed in the [inventory](DECIDABILITY-INVENTORY.md). The imbalance relatum is proved equivalent to the current representation (P59, study section 85) and not adopted.
 
 **中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
 

@@ -28,10 +28,10 @@ name"); they do not claim Ren's words.
   `Becoming.Evolution`, are stated of every web and every amount with no premise about
   the unfolding, so they hold throughout the space. Read of worlds: in a finite world
   whose activity is decided, arising recurs exactly when ceasing does
-  (`World.arising_iff_ceasing`). Decidability is part of the representation: asked of
-  every finite world without it, this law is equivalent to excluded middle
-  (`World.law_iff_em`, from `World.law_decides` and `World.law_of_em`); classically every
-  activity is decided.
+  (`World.arising_iff_ceasing`). Decidedness is this law's own condition, not a commitment of
+  the representation: asked of every finite world without it, the law is equivalent to
+  excluded middle (`World.law_iff_em`, from `World.law_decides` and `World.law_of_em`);
+  classically every activity is decided.
 * **Finiteness separates them.** Where the relata are infinitely many, either can recur
   without the other (`World.separate`, from `Accretion` and `Attrition`); that these worlds are
   infinite follows from the law.
@@ -57,8 +57,11 @@ name"); they do not claim Ren's words.
   the step counts against living, and for which drawers, is a question of the same
   kind.
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
-  whose activity is decided and in which whatever arises is embodied, neither arising nor
-  ceasing recurs (`World.rests`). Each premise is needed (`World.rests_needs`): a world
+  in which whatever arises is embodied, neither arising nor ceasing recurs, with no decision
+  procedure (`World.rests`): the stock does not rise, so generation settles
+  (`falls_settle`, `Web.generation_settles`), which refutes the arising that ceasing leaves
+  unrefuted under a covering list (`World.arising_unrefuted_covering`). Each premise is
+  needed (`World.rests_needs`): a world
   burning fresh fuel keeps arising with infinitely many relata, two sides handing a
   standing back and forth keep arising without dissipation, the same sides taking their
   own unit and giving nothing keep arising without balance, with a closed family taken
@@ -99,6 +102,57 @@ theorem quiet_of_once (em : ∀ P : Prop, P ∨ ¬ P) {α : Type} {E : α → Na
       | .inr never => ⟨M, after, fun b mem T' late => match mem with
           | .head _ => fun event => never ⟨T', late, event⟩
           | .tail _ mem => quiet b mem T' late⟩
+
+/-! ## Settling, with no decision procedure -/
+
+/-- An amount that does not rise from step `T` on is, at any later step, at most what it was. -/
+theorem still_le {q : Nat → Nat} {T M : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n)
+    (from_ : T ≤ M) : ∀ k, q (M + k) ≤ q M
+  | 0 => Nat.le_refl _
+  | k + 1 => Nat.le_trans (still (M + k) (Nat.le_trans from_ (Nat.le_add_right M k)))
+      (still_le still from_ k)
+
+/-- Where an amount does not rise from step `T` on and, after every step from `T` on, a later
+fall is not refuted, the amount exceeds every bound at every step from `T` on. -/
+theorem unrefuted_falls_exceed {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n)
+    (falls : ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ q (t + 1) < q t) :
+    ∀ v M, T ≤ M → q M ≤ v → False
+  | 0, M, from_, le => falls M from_ fun ⟨_, later, down⟩ => match le_dest later with
+    | ⟨k, same⟩ => Nat.not_lt_zero _ (Nat.lt_of_lt_of_le down (Nat.le_trans
+        (Eq.subst (motive := fun x => q x ≤ q M) same.symm (still_le still from_ k)) le))
+  | v + 1, M, from_, le => falls M from_ fun ⟨t, later, down⟩ => match le_dest later with
+    | ⟨k, same⟩ => unrefuted_falls_exceed still falls v (t + 1)
+        (Nat.le_succ_of_le (Nat.le_trans from_ later))
+        (Nat.le_of_lt_succ (Nat.lt_of_lt_of_le down (Nat.le_trans
+          (Eq.subst (motive := fun x => q x ≤ q M) same.symm (still_le still from_ k)) le)))
+
+/-- An amount that does not rise from step `T` on settles: it is not the case that after every
+step from `T` on a later fall stays unrefuted. No decidedness is needed;
+`falls_finitely_from_floor` is the weaker form, that its falls do not recur. -/
+theorem falls_settle {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
+    ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ q (t + 1) < q t :=
+  fun falls => unrefuted_falls_exceed still falls (q T) T (Nat.le_refl T) (Nat.le_refl _)
+
+/-- So the amount stays the same from some step on, which cannot be refuted. -/
+theorem amount_settles {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
+    ¬ ¬ ∃ M, T ≤ M ∧ ∀ t, M ≤ t → q (t + 1) = q t :=
+  fun never => falls_settle still fun M from_ none_ => never ⟨M, from_, fun t later =>
+    Nat.le_antisymm (still t (Nat.le_trans from_ later))
+      (Nat.ge_of_not_lt fun down => none_ ⟨t, later, down⟩)⟩
+
+/-- Embodied members of a family balanced and dissipated on from step `T` on settle: it is not
+the case that after every step from `T` on a later arising of one of them stays unrefuted. No
+decidedness is needed; `Web.generation_ceases_from` is the weaker form, that their arising does
+not recur. -/
+theorem Web.generation_settles {X : Type} {W : Web X X} {L : Flow X X} {ds : List X} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
+  fun arising => falls_settle (q := W.stock ds) (T := T)
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _)
+      ((balances t later).runs_down (dissipates t later)))
+    fun M from_ falls => arising M from_ fun ⟨t, _, later, mem, embodied, arises⟩ =>
+      falls ⟨t, later, (balances t (Nat.le_trans from_ later)).rise_lowers
+        (dissipates t (Nat.le_trans from_ later)) mem (embodied.comesToStand arises).rises⟩
 
 /-! ## The space and its parts -/
 
@@ -192,32 +246,46 @@ theorem arising_iff_ceasing_covering [∀ t x, Decidable (w.web.active t x)] {L 
   w.web.unceasing_iff_covering covers
 
 /-- In a finite world whose activity is decided, arising recurs exactly when ceasing does.
-Decidability is part of the representation: without it the law implies excluded middle
-(`law_decides`). -/
+Decidedness is this law's own condition, not part of the representation: without it the law
+implies excluded middle (`law_decides`). -/
 theorem arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
     w.ArisingRecurs ↔ w.CeasingRecurs :=
   match finite with
   | ⟨_, _, every⟩ => arising_iff_ceasing_covering (T := 0) fun _ _ x _ => every x
 
-/-- Rest, from a step on: in any world whose activity is decided and whatever arises is
-embodied, where from some step on the active relata lie in one family, balanced and
-dissipated on at each of those steps, neither arising nor ceasing recurs. No finiteness of
-the world, no closure and no premise on other families or steps. -/
-theorem rests_covering [∀ t x, Decidable (w.web.active t x)] {ds : List w.Relatum} {T : Nat}
+/-- With a list covering what is active from step `T` on, where ceasing recurs, after every
+step from `T` on a later arising of a member is not refuted. No decidedness is needed
+(`Covers.not_not_coming_from`). -/
+theorem arising_unrefuted_covering {ds : List w.Relatum} {T : Nat}
+    (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds) (ceasing : w.CeasingRecurs) :
+    ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ x ∈ ds ∧ w.web.Arises t x :=
+  fun M from_ none_ => Covers.not_not_coming_from (p := fun x t => w.web.active t x)
+    (L := ds) (N := M) (fun x active => covers M from_ x active) ceasing
+    fun ⟨t, x, later, arises⟩ => none_ ⟨t, x, later,
+      covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later)) x arises.2, arises⟩
+
+/-- Rest, from a step on: in any world whose arising is embodied, where from some step on the
+active relata lie in one family, balanced and dissipated on at each of those steps, neither
+arising nor ceasing recurs. No decision procedure, no finiteness of the world, no closure and
+no premise on other families or steps: generation settles (`Web.generation_settles`), which
+refutes the arising that ceasing leaves unrefuted (`arising_unrefuted_covering`). -/
+theorem rests_covering {ds : List w.Relatum} {T : Nat}
     (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds)
     (balances : ∀ t, T ≤ t → w.flow.BalancesOn w.web ds t)
     (dissipates : ∀ t, T ≤ t → w.flow.DissipatesOn ds t) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  have quiet : ¬ w.ArisingRecurs := fun arising =>
-    Web.generation_ceases_from balances dissipates fun N => match arising (N + T) with
-      | ⟨t, x, later, arises⟩ => ⟨t, x, Nat.le_trans (Nat.le_add_right N T) later,
-          covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans (Nat.le_add_left T N) later)) x arises.2,
-          embodied t x arises, arises⟩
-  ⟨quiet, fun ceasing => quiet ((arising_iff_ceasing_covering covers).mpr ceasing)⟩
+  have settles := Web.generation_settles balances dissipates
+  ⟨fun arising => settles fun M from_ none_ => match arising M with
+      | ⟨t, x, later, arises⟩ => none_ ⟨t, x, later,
+          covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later)) x arises.2,
+          embodied t x arises, arises⟩,
+   fun ceasing => settles fun M from_ none_ =>
+      arising_unrefuted_covering covers ceasing M from_ fun ⟨t, x, later, mem, arises⟩ =>
+        none_ ⟨t, x, later, mem, embodied t x arises, arises⟩⟩
 
-/-- Dissipation brings a finite world to rest: where activity is decided, the flow balances
-and dissipates and whatever arises is embodied, neither arising nor ceasing recurs. -/
-theorem rests [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite)
+/-- Dissipation brings a finite world to rest: where the flow balances and dissipates and
+whatever arises is embodied, neither arising nor ceasing recurs. No decision procedure. -/
+theorem rests (finite : w.Finite)
     (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   match finite with

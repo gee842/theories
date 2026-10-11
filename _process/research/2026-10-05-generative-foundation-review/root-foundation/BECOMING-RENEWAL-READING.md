@@ -5405,6 +5405,88 @@ Integration: 计划 P62（无明边界计划的 B1、B2、B5；B3、B4 读自 P4
 - 未作独立审查：Ren 对 P53 说过“no extra review needed”；P62 是否需要，交 Ren。
 
 
+## 84. 可判定性局部化（P58）
+
+2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）就零前提计划 §1.4 的 (b2) 问：
+
+> give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons
+
+并以“please”接受 AI 的建议：可判定性局部化，不再是表示的承诺；每条计数或命名一步的规律把在所计数之处已定写作自己的条件；不需要它的规律不用它陈述。“too dualist”读作强加于生成的是或否之分，是 AI 的读法，待 Ren。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 P58。新核心模块 `Becoming.Decidedness`（导入 `Becoming.Space`）；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理放在用到它们的最低模块（`Becoming.Space`、`Becoming.Openness`），与整合者商定；清点由外围 Lean 工具读出（[清点页](DECIDABILITY-INVENTORY.md)）。
+
+```text
+Result(s): 新增 counts-exist-where-decided、recurrence-without-decidedness；扩展 space-and-its-parts、continued-change-needs-openness、
+           map-of-premises、laws-at-coarser-steps；coming-and-ceasing-keep-pace、census-balance、whole-law-of-counting 加关联；
+           复用 laws-of-one-step 的不判定形式（Covers.not_not_coming_from，P48）
+Delta: 已定（Decided p := p ∨ ¬ p）是命题，不是判定程序。计数是关系：计数存在，恰当所计数者在所计数之处已定（counts_iff_decided）；
+       计数唯一，判定程序的标记就是计数。计数之间的普查不用可判定性，段内各步也不用（Counts.over_stretch），列出的家族上亦然
+       （Counts.listed_across、Counts.listed_over_stretch）。有限家族中开始成立复现时不再成立永不终止，反之亦然，不用可判定性
+       （Recurs.ceasing_not_stopping、Recurs.coming_not_stopping）；一段已定时那一步被找到（Recurs.ceasing_found）；从某步起已定时二者
+       同时复现（coming_recurs_iff_decided），依存网与有限世界中亦然（Web.unceasing_iff_decided、World.arising_iff_ceasing_decided），
+       有覆盖列表时只问列表的成员（World.arising_iff_ceasing_covered）。静止不用判定：不上升的量平息（falls_settle），生成因而平息
+       （Web.generation_settles），这否证了覆盖列表下止息复现所留下的生起（World.arising_unrefuted_covering）；World.rests_covering、
+       World.rests、World.comes_to_rest（经新的覆盖形式 World.comes_to_rest_from）、World.Finite.comes_to_rest、World.rest_few、
+       World.premised_rests 与 World.sample_rests 在原处去掉判定程序，名称不变。清点：核心中 133 条定理的陈述依赖可判定性（63 条计数，
+       70 条关于由判定造出的对象），78 条只在证明中用到，逐条给出理由。
+Supplied premises / correspondence: 无新前提；局部化是 Ren 对表示的选择（“please”）；“too dualist”读作强加于生成的是或否之分，“局部”读作
+       在所计数之处、作为该规律自己的条件，是 AI 的读法，待 Ren
+Evidence: 合并检查器回执 20261011T210459.095261Z（Decidedness 55 项定理；2673 项定理、3895 项声明审计，全部源声明公理报告为空；核心闭包 53 个模块，包 51 个），外围回执 20261011T211111.085532Z；Space 62 项、Openness
+          85 项定理；先在暂存树中从前导编译，无警告，改动与新增的声明逐条公理报告为空；清点在同一核心上由 Lean 读出
+Boundary: 对每个有限世界要求复现的形式而不给已定，是排中律（World.law_iff_em）；命名此后不再生起的一步是有限全知原则（World.lpo_of_finite_ends、
+          Listed.lpo_of_few、Web.lpo_of_ending）；以 mark 计数的定理仍以判定程序为自己的条件，未以 Counts 重述；尚无独立审查
+Integration: 章节（完整陈述的地位词、第 2 条与第 4 条、§1 的整体与部分、前提卡、第一部分的总陈述、§8、§9、术语表）；记录两项新增、四项扩展、
+             三项加关联；清点页；零前提计划 §1.4 (b2) 与现状；统一计划；工作板 P58
+```
+
+**改了什么。**
+- **已定，不是判定。** 一个命题已定，是指它成立或不成立（`Decided`）。判定程序（`Decidable`）把这一点作为数据给出；已定只是这一点本身，所以以它为条件的定理更强（`Decidable.em` 给出它）。是或否之分只在被要求的地方出现。
+- **计数是关系。** 一个数指示一个命题，是指它为一而命题成立，或为零而命题不成立（`Indicates`）；一个数计列表中某规定成立的成员，是指它是这些指示之和（`Counts`）；跨一列步，各步的计数相加（`CountsAcross`）。计数存在，恰当每个被计数的成员已定（`counts_iff_decided`）；计数唯一（`Counts.unique`）；判定程序给出的标记之和就是计数（`counts_total`、`comings_counts`、`ceasings_counts`）。
+- **计数之间的规律不用可判定性。** 一段步上，只要计数存在，终点成立的加其间不再成立的，等于起点成立的加其间开始成立的（`Counts.over_stretch`）。证明：段内各步已定时它成立（`Counts.over_stretch_decided`）；有限多个状态已定不能被否证（`not_not_decided`）；数的等式在其否定被否证处成立。计数不超过成员数（`Counts.le_length`）；开始与不再成立的计数相差不超过成员数（`CountsAcross.keep_pace`）。成立者在各步被列出、每个一次时亦然（`Counts.listed_across`、`Counts.listed_over_stretch`）：计数是被计成员的列表的长度（`Counts.listing`），成员相同、不重复的两个列表一样长（`length_eq_of_same`）。
+- **复现不用可判定性。** 有限家族中，没有东西不再成立时，开始成立过的不再开始成立（`comes_once`）；没有东西开始成立时，不再成立过的不再不再成立（`ceases_once_of`）。所以一段中看到成员开始成立（或不再成立）的不同步数不多于成员数（`coming_steps_within`、`ceasing_steps_within`，鸽巢）。由此，开始成立复现时，从每一步起都有一段，其中有东西不再成立不能被否证（`Recurs.ceasing_within`），不再成立永不终止（`Recurs.ceasing_not_stopping`），反之亦然（`Recurs.coming_within`、`Recurs.coming_not_stopping`）。
+- **在所寻之处已定。** 那一段的状态已定时，那一步被找到（`Recurs.ceasing_found`、`Recurs.coming_found`）；从某步起已定时，开始成立复现恰当不再成立复现（`coming_recurs_iff_decided`），不用判定程序，而 `coming_recurs_iff` 在每一步都要求判定程序。依存网（`Web.unceasing_iff_decided`）与有限世界（`World.arising_iff_ceasing_decided`、`World.arising_iff_ceasing_of_decidable`）亦然；有覆盖列表时只问列表的成员（`World.arising_iff_ceasing_covered`），不终止的形式不问任何东西（`World.ceasing_not_stopping`、`World.arising_not_stopping` 及其覆盖形式）。
+- **静止不用判定。** 一个从某步起不上升的量平息：并非此后每一步之后，后来的下降都不能被否证（`falls_settle`，对界归纳，经 `unrefuted_falls_exceed`；`amount_settles`：量从某步起不变，不能被否证）。在每步平衡与耗散的家族上，体现的成员的生成因而平息（`Web.generation_settles`）。有覆盖列表时，止息复现使此后每一步之后成员的生起不能被否证（`World.arising_unrefuted_covering`，由 P48 的 `Covers.not_not_coming_from`），平息否证了它。所以静止定理在原处去掉判定程序，名称不变：`World.rests_covering`、`World.rests`；`World.comes_to_rest` 经新的覆盖形式 `World.comes_to_rest_from`，它只需所立者的普查与一个覆盖每步活跃者的列表，不需要流的前提、活动的普查或判定，所立者跨每一步下降不被否证即可（`Flow.change_settles`、`World.arising_settles_from`）；`World.Finite.comes_to_rest` 以世界的关系项为覆盖列表，不再用它造出的活动普查（`Finite.counted` 需要判定）；`World.rest_few` 经 `Flow.change_settles` 与 `Listed.few_of_settled`；`World.premised_rests` 与 `World.sample_rests` 随之。较弱的“不复现”形式（`falls_finitely_from_floor`、`Web.generation_ceases_from`、`Flow.stills_from`、`World.arising_stops_from`）保留；平息是更强的形式。
+- **清点。** 外围 Lean 工具逐条读出核心中以可判定为假设的定理、陈述是否依赖它、证明是否用到它，以及陈述提到哪些取可判定族的定义（[清点页](DECIDABILITY-INVENTORY.md)）。陈述依赖它的 133 条中，63 条计数，其余 70 条关于由判定造出的对象：较粗的读法（粗步内每个关系项只列一次）51 条，抬高一个条件 8 条，保留的列表 4 条，不重复的列表 4 条，移开依存 3 条；可判定是它们自己的条件。只在证明中用到的 78 条中，49 条找出一步或一个成员（不给已定时它只是不能被否证），18 条分辨相同，8 条造出列表，3 条分情形；有不判定形式的，清点页列出那一形式。另有 6 条以排中律为假设的边界定理，75 条计数而可判定被证明（由见证世界或体现）。
+
+**作者反审。**
+1. **关系计数是否把可判定藏进了“计数存在”？** 没有藏：存在恰等价于已定（`counts_iff_decided`），这是定理，不是定义。规律对任何存在的计数成立，不要求它们存在；需要计数的陈述就把已定写作条件，范围是所计数之处。
+2. **不终止的形式是否太弱？** 它是双重否定的复现：不指出在哪一步，但排除了“从某步起再没有”。这正是已证明的界：不给已定时，命名一步需要全知原则，对每个世界要求复现需要排中律；从某步起已定时复现成立。
+3. **静止定理去掉判定，是否改变了它所说的？** 没有：结论不变，只去掉一个未用的假设，所以每个旧的用法仍然成立；证明改经平息，平息比不复现更强。`World.Finite.comes_to_rest` 的证明不再经过普查，而以世界的关系项为覆盖列表。
+4. **是否所有的判定都已局部化？** 判定已不是表示的承诺：每条仍用它的定理把它写作自己的条件，清点逐条给出理由。以 `mark` 计数的 63 条可以照普查的样子以 `Counts` 重述，基本的几条已有关系形式；其余未重述。
+5. **“过于二元”是否就是可判定性？** 这是 AI 的读法：可判定性把是或否之分强加于每一处。局部化后，这一分只在计数、命名一步、造出列表或分辨相同之处，作为该规律的条件出现；计数之间的规律、不终止的规律与静止定理不用它。
+
+**边界。** 不推出对每个世界的复现形式；不为命名一步的形式去掉全知原则；以 `mark` 计数的定理未以 `Counts` 重述；名称（`Decided`、`Indicates`、`Counts`、`CountsAcross`、settles／平息）是 AI 所选；尚未经独立审查。
+
+## 85. 不平衡作为关系项：先证等价（P59）
+
+2026-10-11。零前提计划 §1.4 提出一种重新奠定：把不平衡算作关系项。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）以“please”接受 AI 的建议：先把它作为与现行表示等价的表示加以证明，是否采用仍由 Ren 定。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 P59。新核心模块 `Becoming.Imbalance`（导入 `Becoming.Locality` 与 `Becoming.Resolution`，不改任何既有模块）。
+
+```text
+Result(s): 新增 imbalance-as-relatum；复用 R4 的惰性关系项读法（Web.withRefinement，rest-with-refinement-counted）与 P50/P57 的局部平衡
+           （Flow.BalancesOn）
+Delta: 一步上，一个条件的水平按流所给、所取改变，恰当流在那里平衡。不平衡之处，把差额算作又一个关系项 none 的交换：它给每个条件
+       其水平超出流的净交换而升的部分，取其超出而降的部分（Flow.withImbalance）；依存网照 R4 读入它：从不活跃，不要求任何东西。
+       于是扩展的流在每一步、每个条件上平衡（Flow.withImbalance_balances、Flow.withImbalance_balancesOn）。流在一个家族上跨一步
+       平衡，恰当新增的关系项在那里对其成员不给不取（Flow.balancesOn_iff_idle）。两种表示逐步等价：在一步一个条件上，扩展的流中
+       只有活跃者给予，恰当原流中只有活跃者给予且水平不超出净交换而升（Flow.withImbalance_acting_at_iff）；只有活跃者取、只取其
+       所汲取的，恰当原流如此且水平不超出净交换而降（Flow.withImbalance_taking_at_iff）；所以在一个家族上跨一步，二者在扩展的流上
+       成立，恰当二者在原流上成立且流在那里平衡（Flow.withImbalance_acting_taking_on_iff）。全步全条件的形式是推论。
+Supplied premises / correspondence: 无新前提；“算入不平衡”是一种表示，不是定理；是否采用由 Ren 定
+Evidence: 合并检查器回执 20261011T210459.095261Z（Imbalance 15 项定理；2673 项定理、3895 项声明审计，全部源声明公理报告为空；核心闭包 53 个模块，包 51 个），外围回执 20261011T211111.085532Z；先在暂存树中从前导编译，无警告，16 条源声明的公理报告全部为空
+Boundary: 不采用；核心的规律仍以 Flow.BalancesOn 为局部条件；等价不说明哪种读法更好，也不说明世界在哪里平衡；尚无独立审查
+Integration: 章节（§8 表示的选择、§9 行、术语表）；记录 imbalance-as-relatum；零前提计划；统一计划；工作板 P59
+```
+
+**改了什么。**
+- **平衡由构造成立。** 算入不平衡后，每个流在每一步、每个条件上都平衡；平衡不再是关于世界的条件，而是表示的性质。
+- **条件移到一个关系项上。** 原来平衡所说的，现在由新增关系项的闲置来说：流在一个家族上跨一步平衡，恰当它在那里对其成员不给不取（`Flow.balancesOn_iff_idle`、`Flow.balances_iff_idle`）。
+- **逐步等价，不增不减。** 原流的活动前提加上平衡，恰是扩展的流的活动前提，在每一步每个条件上如此（`Flow.withImbalance_acting_at_iff`、`Flow.withImbalance_taking_at_iff`、`Flow.withImbalance_acting_taking_on_iff`，全步的形式 `Flow.withImbalance_acting_iff`、`Flow.withImbalance_taking_iff`、`Flow.withImbalance_acting_taking_iff`）；所以以平衡为条件的规律，在扩展的表示中以新增关系项的不活跃为条件，所说的相同。
+
+**作者反审。**
+1. **是否把平衡藏进了定义？** 没有藏：扩展的流平衡是定理（`Flow.withImbalance_balances`），它所失去的内容由逐步的等价收回（`Flow.withImbalance_acting_taking_on_iff`）。在扩展的表示中，活动前提在新增关系项上恰是原来的平衡。
+2. **差额用自然数的截断减法，会不会丢失信息？** 不会：给与取各取一边的差额，一边为零；`Flow.balancesOn_iff_idle` 证明二者都为零恰是平衡。
+3. **采用它会改变什么？** 不改变任何规律所说的，只改变平衡出现的位置：从关于世界的条件，变成一个关系项是否活跃。哪种读法更好，是 Ren 的决定。
+
+**边界。** 不采用；不说明世界在哪里平衡；名称（`withImbalance`、idle／闲置）是 AI 所选；尚未经独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -6164,4 +6246,24 @@ New record continuous-time-as-tower. Receipt 20261011T192152.790658Z (Tower 6). 
 
 On the AI's readings, pending Ren: 无明 is the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and its boundary is B1; Laozi's 知足 and 知止 are targets within it; dominance as such is not the target ruled out. Hijacking reads as a target formed and passed on by a selection that rewards what cannot rest, held in place by a rule its winners write; that taking more yields more offspring, that offspring carry the target and that winners shape the rule are supplied. Records added: seeking-boundary and target-capture; evolution-on-descent is advanced. Receipt 20261011T194804.708104Z (Seeking 13, Capture 11); periphery receipt 20261011T195216.607072Z. Not independently reviewed; whether P62 needs a review is Ren's call. The author's counterreview is in section 83.
 
-The package now has 2592 theorems and 3809 declaration audits, over a core closure of 51 modules and a package of 49, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 83 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T195216.607072Z).
+**Decidedness made local (P58).** Ren asked about the zero-premise plan's (b2): “give me more context, but i intuitively feel decidability is too dualist, also proved solutions and their pro/cons”, and answered the AI's suggestion with “please”: decidability is no longer a commitment of the representation; each law that counts or names a step states decidedness where it counts, as its own condition, and every law that does not need it is stated without it. Reading “too dualist” as the yes/no split this imposes on becoming is the AI's, pending Ren. New core module `Becoming.Decidedness`; the rest theorems drop their unused decision procedure in place, names kept, as agreed with the integrator.
+- **Decided, not a procedure.** A proposition is decided where it holds or fails (`Decided`). A decision procedure gives this as data, so a theorem conditioned on decidedness is the stronger one.
+- **A count is a relation.** A number counts the members of a list of which a determination holds where it sums their indicators (`Indicates`, `Counts`, `CountsAcross`). A count exists exactly where what it counts is decided (`counts_iff_decided`), is unique, and where a procedure decides is its marks (`counts_total`, `comings_counts`, `ceasings_counts`).
+- **The census between counts needs none.** Over a stretch, wherever the counts exist, those holding at the end with those that ceased are those holding at the start with those that came to be, with no decidedness even inside the stretch (`Counts.over_stretch`); likewise where what holds is listed (`Counts.listed_across`, `Counts.listed_over_stretch`).
+- **Recurrence needs none.** In a finite family, coming to be recurring makes ceasing never stop for good, and conversely (`Recurs.ceasing_not_stopping`, `Recurs.coming_not_stopping`). Decided at a stretch, the step is found (`Recurs.ceasing_found`); decided from some step on, the two recur together (`coming_recurs_iff_decided`), in webs and finite worlds as well (`Web.unceasing_iff_decided`, `World.arising_iff_ceasing_decided`), a covering list asking decidedness only of its members (`World.arising_iff_ceasing_covered`).
+- **Rest needs none.** An amount that does not rise settles: it is not the case that after every step from then on a later fall stays unrefuted (`falls_settle`). So generation settles (`Web.generation_settles`), which refutes the arising that ceasing leaves unrefuted under a covering list (`World.arising_unrefuted_covering`). The rest theorems keep their names and drop the decision procedure: `World.rests_covering`, `World.rests`, `World.comes_to_rest` (through the new covering form `World.comes_to_rest_from`, which needs only a census of what stands and a list covering what is active), `World.Finite.comes_to_rest` (its relata as the covering list), `World.rest_few`, `World.premised_rests` and `World.sample_rests`.
+- **The inventory.** A periphery Lean tool reads every core theorem taking decidedness, whether its statement depends on it, whether its proof uses it, and which decidability-taking definitions its statement mentions ([inventory](DECIDABILITY-INVENTORY.md)). 133 statements depend on it: 63 count, and 70 concern objects built by deciding (coarser readings, each relatum listed once in a coarse step, 51; a raised condition 8; kept lists 4; lists without repetition 4; moved dependence 3). 78 use it only in proofs: 49 find a step or a member, 18 tell same from different, 8 build a list and 3 split on a case. Each one's reason is listed.
+- **Boundary.** Asked of every finite world without decidedness, the recurrence law is excluded middle (`World.law_iff_em`); naming a step after which nothing arises gives the limited principle of omniscience (`World.lpo_of_finite_ends`, `Listed.lpo_of_few`, `Web.lpo_of_ending`). The theorems counting with `mark` are not restated with `Counts`.
+
+New records counts-exist-where-decided and recurrence-without-decidedness. Receipt 20261011T210459.095261Z (Decidedness 55). Not yet independently reviewed; the author's counterreview is in section 84.
+
+**Imbalance as a relatum, proved equivalent first (P59).** The zero-premise plan, section 1.4, proposes a re-founding that counts an imbalance as a relatum. Ren accepted (“please”) the AI's suggestion to prove it first as a representation equivalent to the current one; adoption stays with Ren. New core module `Becoming.Imbalance`.
+- **The construction.** Across a step a condition's level changes by what the flow gives and takes exactly where the flow balances there. Wherever it does not, the difference is counted as the exchange of one more relatum, `none`, read like R4's refinement as never active and requiring nothing (`Flow.withImbalance`).
+- **Balance by construction.** Every flow so extended balances (`Flow.withImbalance_balances`, `Flow.withImbalance_balancesOn`).
+- **The condition moves to a relatum.** The flow balances on a family across a step exactly where the added relatum neither gives nor takes on its members there (`Flow.balancesOn_iff_idle`, `Flow.balances_iff_idle`).
+- **Equivalent step by step.** On a family across a step, only active relata giving, and only active relata taking and only what they draw on, hold of the extended flow exactly where they hold of the flow and it balances there (`Flow.withImbalance_acting_taking_on_iff`, with `Flow.withImbalance_acting_at_iff` and `Flow.withImbalance_taking_at_iff` at a step and condition); the forms over every step are corollaries.
+- **Boundary.** Nothing is adopted: the laws of the core keep balance as a local condition. The equivalence says neither which reading is better nor where a world balances.
+
+New record imbalance-as-relatum. Receipt 20261011T210459.095261Z (Imbalance 15). Not yet independently reviewed; the author's counterreview is in section 85.
+
+The package now has 2673 theorems and 3895 declaration audits, over a core closure of 53 modules and a package of 51, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 85 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T211111.085532Z).
