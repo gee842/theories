@@ -1,0 +1,35 @@
+--- a/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean
++++ b/experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean
+@@ -1,5 +1,6 @@
+ import Becoming.Evolution
+ import Becoming.Locality
++import Becoming.Mechanism
+ import Becoming.Recurrence
+ 
+ /-!
+@@ -27,7 +28,8 @@
+ * **The rule holds the outcome.** Read the configuration as a state scored and a rule that
+   scores it. Where the next configuration depends on the rule and not on the state, reforming
+   the state alone is re-absorbed: from the next step on the unfolding is as if it had not been
+-  reformed (`Law.reform_reabsorbed`). In `Captured` the state follows the rule and the rule keeps
++  reformed (`Law.reform_reabsorbed`, the instance of `Law.reabsorbed` of `Becoming.Mechanism`
++  with the rule as the projection). In `Captured` the state follows the rule and the rule keeps
+   itself: a reformed state returns at once, and a reformed rule changes the outcome
+   (`Captured.state_reform_returns`, `Captured.rule_reform_changes`).
+ 
+@@ -152,11 +154,12 @@
+ 
+ /-- **Reforming the state alone is re-absorbed.** Where the next configuration depends on the
+ rule and not on the state, two configurations with the same rule have the same orbit from the
+-next step on. -/
++next step on: the instance of `Law.reabsorbed` (`Becoming.Mechanism`) with the rule as the
++projection. -/
+ theorem reform_reabsorbed {next : S × R → S × R} (byRule : ∀ x x' g, next (x, g) = next (x', g))
+     (x x' : S) (g : R) : ∀ n, orbit next (x, g) (n + 1) = orbit next (x', g) (n + 1) :=
+-  fun n => (orbit_shift next (x, g) n).trans
+-    ((congrArg (fun s => orbit next s n) (byRule x x' g)).trans (orbit_shift next (x', g) n).symm)
++  reabsorbed (π := Prod.snd)
++    (fun s s' same => (byRule s.1 s'.1 s.2).trans (congrArg (fun h => next (s'.1, h)) same)) rfl
+ 
+ end Law
+ 

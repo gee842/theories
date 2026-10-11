@@ -13,18 +13,23 @@ The five proposals are the AI's; every reading is marked the AI's, pending Ren.
 | P66 a projection carrying a law; P68 standard causal models | `Becoming.Mechanism` | L3 | `Experiment` | projection-carrying-a-law, causal-models-as-processes (F11) |
 | P67 attraction | `Becoming.Attraction` | L3 | `Recurrence` | attraction-is-not-returning (F01) |
 
-No module changes an existing one. Selection imports P62's `Becoming.Capture`, so this package lands after P62.
+Of the existing modules only P62's `Becoming.Capture` changes (`capture.patch`, the integrator's decision of 12 October):
+it imports `Becoming.Mechanism`, and `Law.reform_reabsorbed` keeps its name and statement, re-proved as the instance
+`Law.reabsorbed (π := Prod.snd)`. Selection imports Capture; P62 landed as c3f6829f.
 
 ## Verified in scratch
 
-Against main at 7d8aa838 (core 49 modules, from the shared cache) with P62's `Seeking` and `Capture` from branch
-`p62-seeking` (9af94211): all six modules compile with no error or warning; every constant each new module declares
-has an empty axiom report (Attraction 83, Mechanism 64, Response 141, Selection 136 constants; Capture 22, Seeking 29);
-no `sorry`, `axiom`, `Classical` or `native_decide`. A file importing the root `Becoming` together with all six
-modules compiles, so no name clashes. The consolidated checker has not been run on them; that is the landing run.
+Against main at ae17922a, with P62 landed (c3f6829f; core closure 51 modules, from the shared cache), and
+`capture.patch` applied: all five modules compile with no error or warning; every constant each new module declares
+has an empty axiom report (Attraction 83, Mechanism 63, Response 141, Selection 136 constants; Capture, patched, 22);
+no `sorry`, `axiom`, `Classical` or `native_decide`. A file importing the root `Becoming` together with the four new
+modules and the patched Capture compiles, so no name clashes. The consolidated checker has not been run on them; that
+is the landing run.
 
 ## Contents
 
+- `capture.patch` and `lean/Becoming/Capture.lean`: Capture with the patch applied (one import, one proof, two
+  docstring lines), against main at c3f6829f (P62's landing; Capture there is byte-identical to branch `p62-seeking`).
 - `lean/Becoming/{Attraction,Mechanism,Response,Selection}.lean`: the modules, to copy into
   `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/`.
 - `docs/study/p6x_{zh,en}.md`: the four study sections (P66 and P68 share one) and their English summary entries,
@@ -40,27 +45,30 @@ modules compiles, so no name clashes. The consolidated checker has not been run 
 
 ## Landing steps
 
-1. Copy the four modules. Add to `Becoming.lean` (root) and to `CORE` in `check_becoming.py`, with the edits below.
+1. Copy the four modules and apply `capture.patch` to P62's Capture. Add to `Becoming.lean` (root) and to `CORE` in `check_becoming.py`, with the edits below.
 2. Run the consolidated checker once (with P62's modules if they land in the same run).
 3. `python3 -B apply_docs.py ROOT S PLAN_ZH_AFTER PLAN_EN_AFTER`: `S` is the first of four consecutive study
    sections (P64, P65, P66+P68, P67 in that order); the plan prefixes are those of the row and bullet these go
-   after (on 7d8aa838: `'| Tower 时间之塔'` and `'- **Tower:**'`).
+   after (on ae17922a: `'| P62 无明的边界条件'` and `'- **P62:**'`; after P59 and P58 land, theirs).
 4. `python3 -B make_records.py ROOT REVIEWED_AT_UTC S` (`REVIEWED_AT_UTC` as `2026-10-12T12:00:00+00:00`), then
    `python3 -B repoint.py ROOT BASE`.
 5. Update the chapter's section 9 totals and the Lean README with the receipt's counts; `make research-render`,
    `make research-check`.
 
-The package was dry-run on a copy of 7d8aa838 with P62's modules and a stand-in receipt (theorem counts by the
-checker's parser: Attraction 47, Mechanism 31, Response 30, Selection 43), with P62's `target-capture` written by its
-own script: every anchor matched once; the records script wrote the five records, advanced the six and, rerun, did
-not repeat a history entry; after `repoint.py`, `make research-render` and `make research-check` passed with no error
-and no drift; the 51 links in the inserted text resolve, anchors included.
+The package was dry-run on a worktree of main at ae17922a, with `capture.patch` applied and a stand-in receipt adding
+the four modules and Capture's new hash (theorem counts by the checker's parser: Attraction 47, Mechanism 30, Response
+30, Selection 43), with P62's `target-capture` as landed: every anchor matched once; the records script wrote the five
+records, advanced the six and target-capture (its history line after the integrator's of 12 October, its reference to
+`Mechanism.lean` with the proof binding) and, rerun, did not repeat a history entry; after `repoint.py`,
+`make research-render` and `make research-check` passed with no error and no drift; the links in the inserted text
+resolve, anchors included.
 
 ## Root module, checker and Lean README
 
-`Becoming.lean`: add `import Becoming.Mechanism` and `import Becoming.Attraction` after `import Becoming.Experiment`,
-and `import Becoming.Response` and `import Becoming.Selection` after `import Becoming.Runaway` (Selection after
-P62's `import Becoming.Capture`). Docstring bullets, after Experiment's and after Runaway's:
+`Becoming.lean`: add `import Becoming.Mechanism` and `import Becoming.Attraction` after `import Becoming.Experiment`
+(so Mechanism comes before `import Becoming.Capture`, which now needs it), and `import Becoming.Response` and
+`import Becoming.Selection` after `import Becoming.Runaway`. Capture's docstring bullet may add, after "is
+re-absorbed", ", the instance of `Becoming.Mechanism`'s re-absorption with the rule as the projection". Docstring bullets, after Experiment's and after Runaway's:
 
 ```text
 * `Becoming.Mechanism` (L3): a projection of configuration carries a determined law exactly
@@ -96,10 +104,9 @@ Experiment and Runaway ones:
 ```text
 "Mechanism: a projection of configuration carries a determined law exactly where configurations "
 "alike under it go alike under it, the image of the step being the least process the step factors "
-"through; what the step does not depend on is re-absorbed in one step, and with the configuration "
-"read as a state and a rule, re-forming the state alone is re-absorbed where the rule holds the "
-"outcome; a system changing its own rule is one determined process on the joint configuration, the "
-"state having a law of its own exactly where the rule makes no difference to it; a law through a "
+"through; what the step does not depend on is re-absorbed in one step, Capture's rule holding the "
+"outcome being the instance with the rule as the projection; a system changing its own rule is one "
+"determined process on the joint configuration, the state having a law of its own exactly where the rule makes no difference to it; a law through a "
 "projection is not fixed where not yet taken; the standard model x' = F(x, u, e) is a determined "
 "process whose move is the input and the noise, an intervention is a move not taken and noise a "
 "move not represented, the model with the noise forgotten being determined exactly where the noise "
@@ -130,15 +137,23 @@ Experiment and Runaway ones:
 Lean README: rows after Experiment (`Mechanism`, `Attraction`) and after Runaway (`Response`, `Selection`) use the
 chapter's spine-table descriptions in `docs/chapter.py` (`SPINE_L3`, `SPINE_L4`) with an English half from the
 docstring bullets above; the import sentences gain "`Mechanism` 导入 `Experiment`；`Attraction` 导入 `Recurrence`"
-(L3) and "`Response` 导入 `Testing`；`Selection` 导入 `Testing` 与 `Capture`" (L4), and the English likewise.
+(L3) and "`Response` 导入 `Testing`；`Selection` 导入 `Testing` 与 `Capture`" (L4), and the English likewise;
+Capture's import sentence becomes "`Capture` 导入 `Evolution`、`Locality`、`Recurrence` 与 `Mechanism`" / "`Capture`
+imports `Evolution`, `Locality`, `Recurrence` and `Mechanism`". Capture's row may add, after `Law.reform_reabsorbed`,
+"`Becoming.Mechanism` 的 `Law.reabsorbed` 以规则为投影的实例" / "the instance of `Becoming.Mechanism`'s
+`Law.reabsorbed` with the rule as the projection". In `check_becoming.py`, Capture's scope sentence may likewise end
+"..., reforming the state alone is re-absorbed from the next step on, the instance of Mechanism's re-absorption with
+the rule as the projection."
 
-## For the integrator to decide
+## The integrator's decisions (12 October)
 
-- `Law.rule_reabsorbs` (Mechanism) and P62's `Law.reform_reabsorbed` (Capture) have the same statement. A one-line
-  proof of Capture's from Mechanism's compiles (`Law.rule_reabsorbs byRule x x' g`), but that needs Capture to import
-  Mechanism; keep both, or make Capture's an instance after both land.
-- General facts that could move down: `Web.RegistersAlike.trans`, `Web.RegistersAlikeUpTo.trans` and
-  `Web.RegistersAlikeAll.refl/symm/trans` (Selection) to `Becoming.Testing`; `WithinClosure.converse` and
-  `Flow.withinReach_iff_withinInfluence` (Response) to `Becoming.Feedback`.
+- One theorem, not two: Mechanism's `Law.rule_reabsorbs` is removed; Capture imports Mechanism and proves
+  `Law.reform_reabsorbed` as the instance of `Law.reabsorbed` with π = `Prod.snd` (`capture.patch`). The target-capture
+  record gains a history line and a reference to `Mechanism.lean` (`docs/advances.json`); docs and records cite
+  `Law.reabsorbed` and `Law.reform_reabsorbed`.
+- Placement: a lemma stays in the lowest module that needs it. No lemma is shared by Selection and Response, so
+  `Web.RegistersAlike*.trans/refl/symm` stay in Selection and `WithinClosure.converse`,
+  `Flow.withinReach_iff_withinInfluence` in Response.
+- The integrator sets the chapter's section 9 totals, the study's closing counts and the README counts at landing.
 - The work board's P66 row title said "a level of description"; the package says "projection" or "description"
   throughout, never level.

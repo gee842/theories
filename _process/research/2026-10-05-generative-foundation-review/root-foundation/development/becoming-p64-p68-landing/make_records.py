@@ -111,7 +111,7 @@ SPEC = {
          ('Flow', B('Flow.BalancesOn', 'Flow.Balances.on'))]),
     'projection-carrying-a-law': (
         'Mechanism', S_MEC,
-        B('carries_law_iff', 'goAlike_id_iff', 'DependsOnlyOn.reabsorbed', 'Law.rule_reabsorbs',
+        B('carries_law_iff', 'goAlike_id_iff', 'DependsOnlyOn.reabsorbed', 'Law.reabsorbed',
           'adaptive_state_law_iff', 'Switching.no_state_law', 'Run.not_fixesThrough_of_goAlike'),
         'p66',
         [('Experiment', B('FactorsThrough', 'Run.StepsThrough', 'Run.FixesThrough', 'Run.stepsThrough_of_factors',
@@ -239,8 +239,9 @@ for record_id, (module, sec, _, _, builds_on) in SPEC.items():
     print('wrote', record_id)
 
 
-# The records these results advance, each with its next_delta as read, the revised next_delta and the history
-# entry (section placeholders {S_SELECTION}, {S_RESPONSE}, {S_MECHANISM}, {S_ATTRACTION}).
+# The records these results advance, each with its next_delta as read and the revised next_delta (both null
+# for a history entry alone), references to add, and the history entry (section placeholders {S_SELECTION},
+# {S_RESPONSE}, {S_MECHANISM}, {S_ATTRACTION}).
 ADVANCES = json.loads((HERE / 'docs/advances.json').read_text())
 for item in ADVANCES:
     path = RECORDS / f'{item["id"]}.json'
@@ -251,9 +252,18 @@ for item in ADVANCES:
     if entry in record['history']:
         print('already advanced', item['id'])
         continue
-    if record['next_delta'] != item['next_delta_read']:
-        sys.exit(f'{item["id"]}: next_delta changed since this package was written; read and reconcile it first')
-    record['next_delta'] = item['next_delta']
+    if item.get('next_delta_read') is not None:
+        if record['next_delta'] != item['next_delta_read']:
+            sys.exit(f'{item["id"]}: next_delta changed since this package was written; read and reconcile it first')
+        record['next_delta'] = item['next_delta']
+    for module, names in item.get('add_references', []):
+        missing = [n for n in names if n not in declarations(module)]
+        assert not missing, (item['id'], module, missing)
+        if all(r['path'] != lean(module) for r in record['references']):
+            at = next(i for i, r in enumerate(record['references']) if r['role'] != 'proof')
+            record['references'].insert(at, ref(lean(module), 'proof', names))
+        if all(b['source'] != lean(module) for b in record['proof_bindings']):
+            record['proof_bindings'].append(binding(module))
     record['history'].append(entry)
     path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
     print('advanced', item['id'])

@@ -24,8 +24,8 @@ reading of time nor a finer unit of amount (`Becoming.Resolution`).
   configuration depends only on `π` (`DependsOnlyOn`), two runs taking the same moves from
   configurations alike under `π` are equal from the first step on
   (`DependsOnlyOn.reabsorbed`). For a determined law this is `Law.reabsorbed`; with the
-  configuration read as a state and a rule it is `Law.rule_reabsorbs`, the statement of
-  `Law.reform_reabsorbed` in the P62 draft `Becoming.Capture`.
+  configuration read as a state and a rule, and the rule as the projection, it is
+  `Law.reform_reabsorbed` of `Becoming.Capture` (P62), proved there as its instance.
 * **A system that changes its own rule.** A state going on under a rule that itself goes on
   (`adaptive`) is one determined process on the joint configuration (`adaptive_determined`).
   The state carries a law of its own exactly where the rule makes no difference to it
@@ -195,18 +195,6 @@ theorem reabsorbed {next : S → S} {π : S → K} (only : ∀ s s', π s = π s
     {s s' : S} (same : π s = π s') : ∀ n, orbit next s (n + 1) = orbit next s' (n + 1) :=
   (dependsOnlyOn_iff.mpr only).reabsorbed (run next s) (run next s') (fun _ => rfl) same
 
-/-- **The rule holds the outcome.** Read the configuration as a state and a rule. Where the
-next configuration depends on the rule and not on the state, reforming the state alone is
-re-absorbed: two configurations with the same rule have the same orbit from the next step on.
-An instance of `Law.reabsorbed` through the rule. This is the statement, hypothesis and
-conclusion, of `Law.reform_reabsorbed` in the P62 draft `Becoming.Capture`, which becomes an
-instance of it when that module lands. -/
-theorem rule_reabsorbs {R : Type v} {next : S × R → S × R}
-    (byRule : ∀ x x' g, next (x, g) = next (x', g)) (x x' : S) (g : R) :
-    ∀ n, orbit next (x, g) (n + 1) = orbit next (x', g) (n + 1) :=
-  reabsorbed (π := Prod.snd)
-    (fun s s' same => (byRule s.1 s'.1 s.2).trans (congrArg (fun h => next (s'.1, h)) same))
-    rfl
 
 end Law
 

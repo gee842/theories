@@ -1,6 +1,6 @@
 ## {S}. 机制与标准因果模型：承载规律的投影，作为过程的因果模型（P66、P68）
 
-2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴入一段关于因果系统的说明。那段文字的作者没有注明，读来是别处 AI 助手所写；它不是 Ren 的话，其中没有任何内容是本理论的前提。AI 作了比较之后，Ren 写道：“alright, looks like we can learn things from this comparison - think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议，Ren 答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。本节是其中第三项（机制是一种分解）与第五项（标准因果模型作为过程），在工作板上认领为 P66 与 P68。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Mechanism`（L3），{N_MODULE} 项定理，导入 `Becoming.Experiment`（经它导入 `Becoming.Joint`、`Becoming.Recurrence` 与 `Becoming.Frame`），不改任何已有模块。
+2026-10-12。Ren 问：“hows cause–effect system comparing to our theory?”，随后贴入一段关于因果系统的说明。那段文字的作者没有注明，读来是别处 AI 助手所写；它不是 Ren 的话，其中没有任何内容是本理论的前提。AI 作了比较之后，Ren 写道：“alright, looks like we can learn things from this comparison - think for one more round, what can we learn, being inspired, and improve?”；对 AI 的五项提议，Ren 答：“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)）。本节是其中第三项（机制是一种分解）与第五项（标准因果模型作为过程），在工作板上认领为 P66 与 P68。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Mechanism`（L3），{N_MODULE} 项定理，导入 `Becoming.Experiment`（经它导入 `Becoming.Joint`、`Becoming.Recurrence` 与 `Becoming.Frame`），已有模块中只改 P62 的 `Becoming.Capture`：它导入本模块，`Law.reform_reabsorbed` 改由 `Law.reabsorbed` 证明，名称与陈述不变（整合者的决定：一条定理，不是两条）。
 
 成果记录新增两项：[projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md)（P66）与 [causal-models-as-processes](../../../../theories/becoming/results/records/causal-models-as-processes.md)（P68）。
 
@@ -11,7 +11,7 @@ Result(s): 复用 experiment-needs-return（FactorsThrough、Run.StepsThrough、
            Law.process、Law.run）；Becoming.Frame 的 Run；新增上列两项
 Delta: 承载规律的投影：Image、factors_image、Image.least、GoAlike、image_determined_iff、carries_law_iff、goAlike_id_iff、
        goAlike_const、goAlike_image_iff、GoAlike.runs_agree。重新吸收：DependsOnlyOn、DependsOnlyOn.goAlike、
-       DependsOnlyOn.reabsorbed、Law.dependsOnlyOn_iff、Law.reabsorbed、Law.rule_reabsorbs。改变自身规则的系统：adaptive、
+       DependsOnlyOn.reabsorbed、Law.dependsOnlyOn_iff、Law.reabsorbed。改变自身规则的系统：adaptive、
        adaptive_determined、adaptive_state_law_iff、adaptive_state_carries_iff、ruleLaw、ruleLaw_determined、Run.steps_by_rule。
        经投影而未取的：Run.TakesThrough、Run.stepsThrough_retarget、Run.not_fixesThrough_of_untaken、
        Run.not_fixesThrough_of_goAlike。标准因果模型（P68）：inputs、inputs_determined、trajectory、inputsRun、
@@ -28,8 +28,8 @@ Evidence: 合并检查器回执 {RECEIPT}（Becoming.Mechanism {N_MODULE} 项定
 Boundary: 实际展开经哪个投影承载规律、任何形成形成或使用一个投影、规则怎样开始改变、输入与噪声在实际展开中可分，都不推出；
           规律只指确定的过程，概率与随机过程没有陈述，不确定只以忘掉噪声的形式出现；多个变量之间的结构方程（图）、从观察
           识别因果、连续的量与敏感性没有陈述；不含伦理谓词
-Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（FactorsThrough）不加前提地刻画为相同者同去；把 P62 草稿
-             Becoming.Capture 的 Law.reform_reabsorbed 作为 Law.rule_reabsorbs 的陈述（P62 落地后成为其实例）；
+Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（FactorsThrough）不加前提地刻画为相同者同去；把 P62 的
+             Law.reform_reabsorbed（Becoming.Capture）改为 Law.reabsorbed 以规则为投影的实例，名称与陈述不变；
              把所贴框架的 F、u、ε 与 θ 放在脊柱上
 ```
 
@@ -41,8 +41,7 @@ Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（F
 | `GoAlike.runs_agree` | 相同者同去时，取相同动作、起点经 π 相同的两个运行，在每一步经 π 都相同：投影承载规律时，它所略去的从不改变投影的进程 |
 | `DependsOnlyOn`、`DependsOnlyOn.goAlike` | 下一配置整个只依于 π：经 π 相同的两个配置以同一动作到达同一个配置；它蕴含相同者同去 |
 | `DependsOnlyOn.reabsorbed` | 所不依者一步之内被重新吸收：只依于 π 时，取相同动作、起点经 π 相同的两个运行，从第一步起相等 |
-| `Law.dependsOnlyOn_iff`、`Law.reabsorbed` | 确定的律作为过程只依于 π，恰当经 π 相同的配置下一步相同；这时它们的轨道从下一步起相同（`DependsOnlyOn.reabsorbed` 的实例） |
-| `Law.rule_reabsorbs` | 规则持有结果：配置读作状态与规则，下一配置依于规则而不依于状态时，只改状态被重新吸收，同一规则的两个配置从下一步起轨道相同。假设与结论与 P62 草稿 `Becoming.Capture` 的 `Law.reform_reabsorbed` 逐字相同 |
+| `Law.dependsOnlyOn_iff`、`Law.reabsorbed` | 确定的律作为过程只依于 π，恰当经 π 相同的配置下一步相同；这时它们的轨道从下一步起相同（`DependsOnlyOn.reabsorbed` 的实例）。配置读作状态与规则、以规则为投影时，就是 P62 的 `Law.reform_reabsorbed`（规则持有结果），`Becoming.Capture` 现以它一行证明 |
 | `adaptive`、`adaptive_determined` | 改变自身规则的系统：状态 x 在规则 g 之下以动作 u 变为 F g x u，规则变为 G g x，配置是这一对；它是联合配置上的一个确定过程 |
 | `adaptive_state_law_iff`、`adaptive_state_carries_iff` | 状态恰在规则对它不造成差别之处（对每两个规则、每个状态与动作，F 都相同）有自己的规律：经状态相同者同去；等价地，某个状态上的确定过程容许每一步经状态读 |
 | `ruleLaw`、`ruleLaw_determined`、`Run.steps_by_rule` | 规则固定为 g 时状态自身的律，它是确定的；沿改变自身规则的系统的运行，在规则保持为 g 的一段上，状态的各步就是这条律的步 |
@@ -57,7 +56,7 @@ Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（F
 **它回答了什么。**
 - **什么使一个投影成为机制。** P53 把步骤经投影分解为确定过程叫作关于何者无关的模型（§72），却没有说这样的模型何时存在。这里不加前提地回答：恰当相同者同去（`carries_law_iff`）。像是最小的候选（`Image.least`），所以一个描述是否承载规律，只看像是否确定（`image_determined_iff`）。经恒等它就是确定性（`goAlike_id_iff`）；描述的描述就是复合的描述（`goAlike_image_iff`）；投影承载规律时，它所略去的从不改变投影的进程（`GoAlike.runs_agree`）。
 - **规律可以在描述上而不在整体上，反之亦然。** `Coarse` 中动作不决定配置，而第一部分承载翻转的确定律；`Switching` 中整体确定，而状态的描述没有规律。所以承载规律对描述变粗或变细都不单调。不分任何东西的描述总承载规律（`goAlike_const`），所以“某个描述上有规律”本身不是信息，内容在于哪个描述承载它。
-- **所不依者被重新吸收。** 下一配置只依于 π 时，起点在 π 之外的差别一步之内消失（`DependsOnlyOn.reabsorbed`）。P62 B5 的“规则持有结果”是它读于规则（`Law.rule_reabsorbs`）：重新吸收不是另一条规律，而是只依于的直接后果。
+- **所不依者被重新吸收。** 下一配置只依于 π 时，起点在 π 之外的差别一步之内消失（`DependsOnlyOn.reabsorbed`）。P62 B5 的“规则持有结果”是它以规则为投影的实例（`Law.reform_reabsorbed`，现由 `Law.reabsorbed` 证明）：重新吸收不是另一条规律，而是只依于的直接后果。
 - **改变自身因果的系统不需要另一种规律。** 状态与规则一起前进的系统，是联合配置上的一个确定过程（`adaptive_determined`）。状态恰在规则对它不造成差别之处有自己的规律（`adaptive_state_law_iff`）；规则保持的一段上，状态按这条规则的律走（`Run.steps_by_rule`）；规则改变自己时，状态可以没有任何规律（`Switching.no_state_law`）。第一部分对每个过程陈述的规律，因此已经涵盖它。
 - **真的机制也只在取过之处被固定。** 即使相同者同去，记录也不固定未取的投影配置上的结果（`Run.not_fixesThrough_of_goAlike`）：P53 的“未取的不被固定”经投影仍成立。经投影的实验所固定的，`Run.generalizes` 推广到投影相同的整个类，但只推广已取的。
 - **标准因果模型在脊柱上的位置（P68）。** x′ = F(x, u, ε) 是动作为 (u, ε) 的确定过程（`inputs_determined`）。干预是未取的动作：记录不固定它（`inputs_intervention_unfixed`），模型固定它（`inputs_model_fixes`）。噪声是未表示的动作：忘掉它，过程恰在噪声不造成差别之处仍确定（`forget_inputs_determined_iff`）。`Becoming.Joint` 中冲击作为动作（`Shock`）与写进步骤（`Hidden`）的对照，是这一点的见证；这里对每个 F 陈述。
@@ -73,7 +72,7 @@ Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（F
 **作者反审。**
 1. **主定理近于定义。** `carries_law_iff` 与 `image_determined_iff` 的证明各只几行：相同者同去就是“像确定”展开写出。增量在于把 P53 由运行之外给出的模型刻画为一个配置上可查的条件，并给出最小的候选（`Image.least`）；它不是深的定理。
 2. **“承载规律”只指确定的规律。** 有结构而不确定的规律没有陈述。`GenerativeCore` 的 `projection_exact_iff` 说的是另一种性质：经投影精确表示有限路径的可能性，要求从纤维中每个配置都能提升；相同者同去不蕴含它（像的一步可以只从纤维中的某一个配置可取）。两者之间的桥接没有陈述。
-3. **重新吸收的定理很直接。** `DependsOnlyOn.reabsorbed` 是一步的论证；`Law.rule_reabsorbs` 与 P62 草稿的 `Law.reform_reabsorbed` 陈述逐字相同，两者都落地时会有两个同陈述的定理，由整合者决定 Capture 的那条改为一行实例。
+3. **重新吸收的定理很直接。** `DependsOnlyOn.reabsorbed` 是一步的论证。起初本模块另有一条与 P62 的 `Law.reform_reabsorbed` 陈述逐字相同的定理；按整合者的决定只留一条：本模块给一般的 `Law.reabsorbed`，Capture 的那条改为它以规则为投影的实例，名称与陈述不变。
 4. **适应系统的形式取自所贴文字。** `adaptive` 中规则的更新 G 不依于动作，与所贴的 θ′ = G(θ, x) 相同；G 依于动作的系统同样是联合配置上的过程，`adaptive_state_law_iff` 只涉及 F，对它也会成立，但没有陈述。
 5. **状态规律的判据是整体的。** `adaptive_state_law_iff` 要求规则在每一对规则、每个状态与动作上都不造成差别，包括任何运行都不经过的配置。沿一个运行只有经过的配置算数；沿运行的充要条件（到某步为止有确定过程容许经 π 读的各步，恰当经 π 相同、动作相同的两步到达经 π 相同的配置；构造性的）没有陈述，现在只有充分条件（`Run.steps_by_rule`）与一个见证（`Switching.no_state_law`）。
 6. **见证是最小的。** `Switching` 只有两个位，规则每步翻转，所以 `Run.steps_by_rule` 在那里只覆盖单步；`Coarse` 的第二部分完全任意，所以整体没有任何规律。规则缓慢改变、状态在长段上有近似规律的情形没有陈述。
@@ -83,6 +82,6 @@ Integration: 计划 P66、P68；把 P53 的“关于何者无关的模型”（F
 10. **所贴文字不是 Ren 的话。** 它只作为比较的对象；x′ = F(x, u, ε) 与 θ 的形式取自它，但它的任何主张都不是本理论的前提，所贴文字关于整个宇宙、量子与复杂系统的说法这里都没有采用。
 
 **检查。**
-- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 64 个常量，公理报告全部为空；没有禁用的记号（sorry、axiom、Classical、native_decide）。`by decide` 只用于自然数字面量的比较（`Switching.no_state_law`）。另以 `Law.rule_reabsorbs byRule x x' g` 证明 P62 草稿中 `Law.reform_reabsorbed` 的陈述，单独编译通过。
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部 63 个常量，公理报告全部为空；没有禁用的记号（sorry、axiom、Classical、native_decide）。`by decide` 只用于自然数字面量的比较（`Switching.no_state_law`）。改过的 `Becoming.Capture`（导入本模块，以 `Law.reabsorbed` 证明 `Law.reform_reabsorbed`）连同 `Becoming.Seeking` 与本包其余模块一起编译，没有错误或警告，公理报告为空。
 - 合并检查器在落地队列中检查一次，通过：回执 {RECEIPT}。`Becoming.Mechanism` 的 {N_MODULE} 项定理全部空依赖；包共 {N_THM} 项定理、{N_DECL} 项声明审计，核心闭包 {N_CORE} 个模块。外围桥接对这个核心重查，通过：回执 {PERIPHERY}。
 - 尚无独立审查。

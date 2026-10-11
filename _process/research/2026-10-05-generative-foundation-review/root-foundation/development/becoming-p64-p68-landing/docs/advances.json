@@ -88,5 +88,22 @@
       "zh": "2026-10-12 P64、P65：经识的选择分不出所及超出与不超出而抬高所识者，并在所及超出抬高所识者时偏向它（Diversion.favours、Diversion.blind_to_source，selection-through-registration）；一个回路的见证：差别经另一形成的回应回到部分（Loop.returns，comparison-where-the-rest-responds）。next_delta 随之修订；见整合文档 §{S_SELECTION}、§{S_RESPONSE}。断言不变。",
       "en": "2026-10-12 P64, P65: a selection through registration cannot tell reaching beyond from raising what registers without it, and favours reaching beyond where it raises what registers (Diversion.favours, Diversion.blind_to_source, selection-through-registration); a witness of a loop in which the difference returns to the part through another's response (Loop.returns, comparison-where-the-rest-responds). next_delta revised; see §{S_SELECTION} and §{S_RESPONSE} of the integration note. The claim is unchanged."
     }
+  },
+  {
+    "id": "target-capture",
+    "next_delta_read": null,
+    "next_delta": null,
+    "add_references": [
+      [
+        "Mechanism",
+        [
+          "Becoming.Law.reabsorbed"
+        ]
+      ]
+    ],
+    "history": {
+      "zh": "2026-10-12 P66：Law.reform_reabsorbed 改为 Becoming.Mechanism 的 Law.reabsorbed 以 π = Prod.snd（规则）为投影的实例，一行证明；名称与陈述不变，Becoming.Capture 导入 Becoming.Mechanism（整合者的决定：一条定理，不是两条）；见整合文档 §{S_MECHANISM}。断言不变。",
+      "en": "2026-10-12 P66: Law.reform_reabsorbed re-proved as the instance of Law.reabsorbed (Becoming.Mechanism) with π = Prod.snd, the rule; name and statement unchanged, Becoming.Capture importing Becoming.Mechanism (the integrator's decision: one theorem, not two); see §{S_MECHANISM} of the integration note. The claim is unchanged."
+    }
   }
 ]
