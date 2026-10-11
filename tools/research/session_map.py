@@ -149,7 +149,7 @@ def render(data, inv):
         f"| Result families / 成果族 | {len(data['families'])} |",
         f"| Working Lean sources / 工作源码 | {s['roles']['working-source']} |",
         f"| Audit drivers / 审计入口 | {s['roles']['audit-driver']} |",
-        f"| Saved verification or build copies / 检查及构建副本 | {s['roles']['saved-copy']} |",
+        f"| Saved verification or build copies / 检查及构建副本 | {s['roles'].get('saved-copy', 'not listed; bound by their receipts / 不列入，由回执绑定')} |",
         f"| Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | {len(inv['byte_identical_active_groups'])} |", '',
         'No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.', '',
         '“新成果”仅指仓库中的增量；论证、应用、反例和复用可以同时出现，不将它们简单相加成独立发现数。', '',

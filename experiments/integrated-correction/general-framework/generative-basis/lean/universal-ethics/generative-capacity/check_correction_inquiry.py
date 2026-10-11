@@ -7,7 +7,9 @@ Lean 4.30.0-rc2 against the installed Mathlib (`SYSTEMS_MATHLIB_PROJECT`, defaul
 matching are those of the core checker. Every other module in the closure must
 match a passed receipt; the bridge's own declarations must have empty axiom reports.
 The core does not import this module. Lean steps are reused as in the core checker,
-keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step.
+keyed also by the Mathlib revision; `BECOMING_FRESH=1` runs every step. As in the core
+checker, the run folder keeps the receipt, the drivers and logs of the steps that ran,
+and a copy of each file `main` does not hold byte for byte.
 """
 from datetime import datetime, timezone
 import json
@@ -93,12 +95,14 @@ def main():
     order = closure(index)
     paths = {name: index[name][0] for name in order}
     sources = {name: paths[name].read_bytes() for name in order}
-    helpers = {p.name: p.read_bytes() for p in
-               [Path(__file__), LEAN_ROOT / "becoming/check_becoming.py", HERE / "check.py"]}
-    for name, data in helpers.items():
+    helper_paths = [Path(__file__).resolve(), LEAN_ROOT / "becoming/check_becoming.py", HERE / "check.py"]
+    helpers = {p.name: p.read_bytes() for p in helper_paths}
+    commit, held = core.held_in_main({**{p: helpers[p.name] for p in helper_paths},
+                                      **{paths[name]: sources[name] for name in order}})
+    copied = {p.name: helpers[p.name] for p in helper_paths if p not in held}
+    copied.update({name + ".lean": sources[name] for name in order if paths[name] not in held})
+    for name, data in copied.items():
         (retained / name).write_bytes(data)
-    for name, data in sources.items():
-        (retained / (name + ".lean")).write_bytes(data)
     digest = core.audit_support.digest
     receipt = {
         "status": "checking", "utc": stamp, "toolchain": TOOLCHAIN,
@@ -108,10 +112,13 @@ def main():
         "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
         "source_sha256": {name: digest(data) for name, data in sources.items()},
         "checker_sha256": {name: digest(data) for name, data in helpers.items()},
+        # Files main holds byte for byte are named by this commit; the rest are copied here.
+        "source_commit": {"main": commit, "copied": sorted(copied)},
         "scope": SCOPE,
     }
-    # A reused step passed in the named run with the same binary and identical inputs; its log is retained here unchanged.
-    steps = receipt["lean_steps"] = {"cache": str(core.CACHE), "fresh": core.FRESH, "ran": [], "reused": {}}
+    # A reused step passed in the named run with the same binary and identical inputs; its log
+    # stays in the cache under its key. Drivers and logs of the steps that ran are kept here.
+    steps = receipt["lean_steps"] = {"cache": str(core.CACHE), "fresh": core.FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert TARGET not in core.closure(index, core.CORE), "the core imports the bridge"
         receipts = passed_receipts()
@@ -130,13 +137,16 @@ def main():
             work = Path(scratch)
             env = {**os.environ, "LEAN_PATH": ":".join([str(work)] + [str(p) for p in mathlib_path()])}
 
-            def run(args, log, key=None, outputs=()):
+            def run(args, log, key=None, outputs=(), driver=None):
                 outputs = [work / output for output in outputs]
+                if key:
+                    steps["keys"][log] = key
                 found = core.reuse(key, outputs) if key else None
                 if found:
                     output, steps["reused"][log] = found
-                    (retained / log).write_text(output)
                     return output
+                if driver:
+                    (retained / driver).write_bytes((work / driver).read_bytes())
                 p = subprocess.run([str(LEAN)] + args, cwd=work, env=env, text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=TIMEOUT)
                 (retained / log).write_text(p.stdout)
@@ -161,11 +171,12 @@ def main():
                 f"#check @{d['name']}\n" for d in registry if d["kind"] == "theorem")
             for label, text in [("AxiomAudit", audit), ("Signatures", signatures)]:
                 (work / (TARGET + label + ".lean")).write_text(text)
-                (retained / (TARGET + label + ".lean")).write_text(text)
             output = run([TARGET + "AxiomAudit.lean"], TARGET + "AxiomAudit.log",
-                         key=core.step_key(context, TARGET + "AxiomAudit.lean", audit.encode(), keys))
+                         key=core.step_key(context, TARGET + "AxiomAudit.lean", audit.encode(), keys),
+                         driver=TARGET + "AxiomAudit.lean")
             run([TARGET + "Signatures.lean"], TARGET + "Signatures.log",
-                key=core.step_key(context, TARGET + "Signatures.lean", signatures.encode(), keys))
+                key=core.step_key(context, TARGET + "Signatures.lean", signatures.encode(), keys),
+                driver=TARGET + "Signatures.lean")
         dependencies = {}
         for item in registry:
             assert f"'{item['name']}' does not depend on any axioms" in output, (item["name"], output)

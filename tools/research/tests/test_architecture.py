@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from tools.research import registry, navigation, research
+from tools.research import registry, navigation, research, lean_catalogue
 
 
 class ArchitectureTests(unittest.TestCase):
@@ -52,6 +52,20 @@ class ArchitectureTests(unittest.TestCase):
         self.assertFalse(research.working('experiments/a/verification/sources/Current.lean'))
         self.assertFalse(research.working('_process/architecture/history/deadbeef/README.md'))
         self.assertFalse(research.working('sources/imported/Current.lean'))
+
+    def test_catalogue_neither_reads_nor_lists_saved_copies(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root/'experiments/a').mkdir(parents=True)
+            (root/'experiments/a/Current.lean').write_text('theorem t : True := trivial\n')
+            # The saved copy does not exist on disk, so reading it would fail.
+            saved = 'experiments/a/becoming-checks/20261012T000000.000000Z/Current.lean'
+            with patch.object(lean_catalogue, 'ROOT', root), patch.object(lean_catalogue, 'documents', return_value=({}, {})), \
+                    patch.object(lean_catalogue, 'discover', return_value=['experiments/a/Current.lean', saved]):
+                manifest, _ = lean_catalogue.catalogue()
+        self.assertEqual([f['path'] for f in manifest['files']], ['experiments/a/Current.lean'])
+        self.assertNotIn('saved-copy', manifest['statistics']['roles'])
+        self.assertEqual(lean_catalogue.role(saved, {'declarations': [], 'print_axioms_commands': 0}), 'saved-copy')
 
     def test_planned_generated_links_can_be_rendered_together(self):
         self.assertEqual(research.check_links({'README.md': '[New](future-test-view.md)'}, ['future-test-view.md']), [])

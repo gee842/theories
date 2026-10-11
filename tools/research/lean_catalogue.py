@@ -141,6 +141,11 @@ def parse_lean(raw: bytes) -> dict:
 
 
 def role(path: str, content: dict) -> str:
+    return path_role(path) or ("audit-driver" if not content["declarations"] and content["print_axioms_commands"] else "working-source")
+
+
+def path_role(path: str) -> str | None:
+    """The role a path alone decides, or None where the file's content decides."""
     parts = Path(path).parts
     if parts[0] == "sources":
         return "imported-archive"
@@ -161,9 +166,7 @@ def role(path: str, content: dict) -> str:
         for p in parts[:-1]
     ):
         return "saved-copy"
-    if not content["declarations"] and content["print_axioms_commands"]:
-        return "audit-driver"
-    return "working-source"
+    return None
 
 
 def group(path: str) -> str:
@@ -249,6 +252,10 @@ def catalogue() -> tuple[dict, dict]:
     contents = {}
     files = []
     for path in discover("*.lean"):
+        # A saved copy is bound by its own run's receipt; it is not read or listed, so a
+        # checker run leaves the catalogue unchanged.
+        if path_role(path) == "saved-copy":
+            continue
         raw = (ROOT / path).read_bytes()
         digest = hashlib.sha256(raw).hexdigest()
         if digest not in contents:
@@ -290,7 +297,7 @@ def catalogue() -> tuple[dict, dict]:
         "schema_version": 1,
         "generated_by": SCRIPT,
         "coverage": {
-            "discovery": "rg --files --hidden --no-ignore -g '*.lean' with excluded directory components below; untracked and ignored files are included",
+            "discovery": "rg --files --hidden --no-ignore -g '*.lean' with excluded directory components below; untracked and ignored files are included; saved copies (the path rule in path_role: run, check, snapshot and verification folders) are not read or listed, each being bound by its own run's receipt",
             "excluded_directory_components": list(EXCLUDED),
             "symlinks": "ripgrep default: directory symlinks are not followed",
             "declaration_scan": "Comment/string-aware, line-start explicit theorem/lemma/def/abbrev/structure/inductive/opaque/axiom/constant declarations. Namespace qualification is a textual hint. Generated constructors/projections/instances and anonymous examples are not enumerated as named declarations.",
@@ -335,7 +342,7 @@ def render_index(manifest: dict, sources: dict) -> str:
         "## 怎么查 / How to browse", "",
         "- 按研究方向：使用下方模块表；理论／研究链接来自真实的源码链接，包说明取最近的 README，其中记录的验证未必覆盖该目录的每个模块。 / By research direction: theory/study links are actual source backlinks; package notes are the nearest README, whose recorded verification may not cover every module in its directory.",
         "- 按定理名：打开[具名声明清单](LEAN-DECLARATIONS.md)，选择方向后搜索，或在编辑器搜索整个 `lean-declarations/` 目录。每条定理链接到原文件行；`#L` 行锚由 GitHub 支持，本地阅读器可能只打开文件。 / By theorem name: choose a topic in the [declaration list](LEAN-DECLARATIONS.md), or search the whole `lean-declarations/` folder in an editor. GitHub supports source-line fragments; local readers may open only the file.",
-        "- 程序化读取：[Lean 完整清单](data/lean-index.json)含所有文件、哈希、导入、声明、行号、角色及相同字节分组；[文档关联清单](data/source-index.json)保存实际文档链接。 / Machine-readable: the full inventory contains every path, hash, import, declaration, line, role and byte-identity group; the documentary index preserves actual links.", "",
+        "- 程序化读取：[Lean 完整清单](data/lean-index.json)含冻结副本以外的所有文件、哈希、导入、声明、行号、角色及相同字节分组；[文档关联清单](data/source-index.json)保存实际文档链接。 / Machine-readable: the full inventory contains every path except saved copies, with its hash, imports, declarations, lines, role and byte-identity group; the documentary index preserves actual links.", "",
         "## 覆盖范围 / Coverage", "",
         f"本次目录包含 **{s['lean_paths']:,} 个 `.lean` 路径、{s['distinct_byte_contents']:,} 份不同字节内容**；其中 {s['byte_identical_duplicate_groups']:,} 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **{s['lean_paths']:,} `.lean` paths and {s['distinct_byte_contents']:,} distinct byte contents**, including {s['byte_identical_duplicate_groups']:,} groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.", "",
         "| 文件角色 / File role | 路径数 / Paths |", "|---|---:|",
@@ -343,7 +350,7 @@ def render_index(manifest: dict, sources: dict) -> str:
     for role_name, count in s["roles"].items():
         rows.append(f"| {ROLE_LABELS[role_name]} | {count:,} |")
     rows += ["", f"下方当前源与审计入口中，共扫描到 **{s['working_named_theorem_lemma_occurrences']:,} 个显式 theorem/lemma 声明位置**、{s['working_explicit_named_declaration_occurrences']:,} 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **{s['working_named_theorem_lemma_occurrences']:,} explicit theorem/lemma occurrences** and {s['working_explicit_named_declaration_occurrences']:,} explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.", "",
-        "扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入、开发尝试、冻结副本均保存在 JSON 中，不在主表重复。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives, attempts and frozen copies remain in JSON without repeating them in the main table. Working-source is a documentary role, not acceptance or verification status.", "",
+        "扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录与其他会话的工作树 `.claude/worktrees`，不追随目录符号链接。历史导入与开发尝试保存在 JSON 中，不在主表重复；运行、检查与快照目录中的冻结副本不读取也不列入，各由其运行的回执绑定，所以一次检查运行不改变本目录。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above and other sessions' worktrees (`.claude/worktrees`) are excluded and directory symlinks are not followed. Archives and attempts remain in JSON without repeating them in the main table; saved copies in run, check and snapshot folders are neither read nor listed, each being bound by its own run's receipt, so a checker run leaves this catalogue unchanged. Working-source is a documentary role, not acceptance or verification status.", "",
         "声明扫描识别显式 theorem、lemma、def、abbrev、structure、inductive、opaque、axiom、constant；不枚举 Lean 自动生成的构造子／投影、instance 或匿名 example。完整语义及假设以原源码为准。 / The scan lists the explicit named declaration kinds above, excluding generated constructors/projections, instances and anonymous examples. Source code remains authoritative for semantics and hypotheses.", "",
         "## 方向索引 / Direction index", "", "| 方向 / Direction | 当前源与审计入口 / Entries |", "|---|---:|",
     ]
@@ -368,7 +375,7 @@ def render_index(manifest: dict, sources: dict) -> str:
 
 
 def render_declarations(manifest: dict, sources: dict, selected_group: str | None = None) -> str:
-    rows = ["# Lean 具名声明 / Named Lean declarations", "", "[返回 Lean 导航](LEAN-INDEX.md)。本表显示当前工作源与审计入口；所有历史副本仍见 [JSON 清单](data/lean-index.json)。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](LEAN-INDEX.md). Working sources and audit entries appear here; all historical copies remain in the JSON inventory. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.", "", "定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.", ""]
+    rows = ["# Lean 具名声明 / Named Lean declarations", "", "[返回 Lean 导航](LEAN-INDEX.md)。本表显示当前工作源与审计入口；历史导入与开发尝试见 [JSON 清单](data/lean-index.json)，冻结副本由其运行的回执绑定。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](LEAN-INDEX.md). Working sources and audit entries appear here; imported archives and development attempts are in the JSON inventory, and saved copies are bound by their runs' receipts. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.", "", "定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.", ""]
     active = [f for f in manifest["files"] if f["role"] in ("working-source", "audit-driver")]
     if selected_group is None:
         rows += ["## 按方向浏览 / Browse by topic", "", "| 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |", "|---|---:|---:|"]

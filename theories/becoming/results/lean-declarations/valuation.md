@@ -1,6 +1,6 @@
 # Lean 具名声明 / Named Lean declarations
 
-[返回 Lean 导航](../LEAN-INDEX.md)。本表显示当前工作源与审计入口；所有历史副本仍见 [JSON 清单](../data/lean-index.json)。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](../LEAN-INDEX.md). Working sources and audit entries appear here; all historical copies remain in the JSON inventory. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.
+[返回 Lean 导航](../LEAN-INDEX.md)。本表显示当前工作源与审计入口；历史导入与开发尝试见 [JSON 清单](../data/lean-index.json)，冻结副本由其运行的回执绑定。这是显式声明的位置索引，不能代替命题、假设及对应论证的阅读。 / [Return to navigation](../LEAN-INDEX.md). Working sources and audit entries appear here; imported archives and development attempts are in the JSON inventory, and saved copies are bound by their runs' receipts. These are explicit declaration locations, not substitutes for statements, hypotheses and correspondence arguments.
 
 定理／引理逐项列出；定义与类型声明列在同一模块的折叠项中。限定名由文本 namespace 推断，仅供导航；私有内部名称和自动生成名称以 Lean 为准。 / Theorems and lemmas are individually listed; definitions and type declarations share each module's foldout. Namespace-qualified names are textual hints; Lean determines private/internal and generated names.
 

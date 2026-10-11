@@ -18,8 +18,14 @@ nothing in the core imports it, and its declarations also have empty axiom repor
 
 A Lean step whose inputs match a step that passed in an earlier run is not run again:
 its outputs and log come from a cache shared by runs and worktrees (`step_key`). The
-receipt lists which steps ran and which were reused, with the run each came from.
-`BECOMING_FRESH=1` runs every step.
+receipt lists which steps ran and which were reused, with the run each came from and
+each step's key. `BECOMING_FRESH=1` runs every step; `LEAN_TIMEOUT` sets the seconds
+allowed for each Lean run.
+
+The run folder keeps the receipt, the drivers and logs of the steps that ran, and a copy
+of each source and checker file that `main` does not hold byte for byte. A file `main`
+holds is named by the receipt's `source_commit` and its sha256; a reused step's log stays
+in the cache under its key.
 """
 from datetime import datetime, timezone
 import hashlib
@@ -1201,6 +1207,8 @@ def closure(index, roots=SPINE):
 # Lean steps that passed, kept outside the repository so that every worktree shares them.
 CACHE = Path(os.environ.get("BECOMING_LEAN_CACHE") or Path.home() / ".cache" / "becoming-lean")
 FRESH = os.environ.get("BECOMING_FRESH") == "1"
+# Seconds allowed for each Lean run; a heavily loaded machine may need more.
+TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "600"))
 # Imports supplied by the toolchain or the pinned Mathlib; the step's context names them.
 EXTERNAL_ROOTS = {"Init", "Std", "Lean", "Mathlib"}
 
@@ -1264,6 +1272,31 @@ def store(key, outputs, log, run):
         write(CACHE / (key + ".json"), json.dumps(entry, ensure_ascii=False).encode())
     except OSError:
         pass
+
+
+def held_in_main(files):
+    """The commit `main` names, and which of `files` (path → bytes) it holds byte for byte
+    at the same path. A held file needs no copy in a run folder. Without git, `main` or a
+    SHA-1 object store, nothing is held and every file is copied."""
+    try:
+        def git(*args, cwd=HERE):
+            return subprocess.check_output(["git", *args], cwd=cwd, stderr=subprocess.DEVNULL)
+        top = Path(git("rev-parse", "--show-toplevel").decode().strip())
+        if git("rev-parse", "--show-object-format").decode().strip() != "sha1":
+            return None, set()
+        commit = git("rev-parse", "--verify", "main^{commit}").decode().strip()
+        relative = {str(path.resolve().relative_to(top)): path for path in files}
+        listing = git("ls-tree", "-z", commit, "--", *relative, cwd=top)
+    except (OSError, ValueError, subprocess.CalledProcessError):
+        return None, set()
+    blobs = {}
+    for entry in listing.split(b"\0"):
+        if entry:
+            meta, path = entry.split(b"\t", 1)
+            blobs[path.decode()] = meta.split()[2].decode()
+    held = {path for name, path in relative.items()
+            if blobs.get(name) == hashlib.sha1(b"blob %d\0" % len(files[path]) + files[path]).hexdigest()}
+    return commit, held
 
 
 def passed_receipts():
@@ -1362,11 +1395,14 @@ def main():
     core_closure = closure(index, CORE)
     paths = {name: index[name][0] for name in order}
     sources = {name: paths[name].read_bytes() for name in order}
-    helpers = {p.name: p.read_bytes() for p in [Path(__file__), LEAN_ROOT / "universal-ethics" / "generative-capacity" / "check.py"]}
-    for name, data in helpers.items():
+    helper_paths = [Path(__file__).resolve(), LEAN_ROOT / "universal-ethics" / "generative-capacity" / "check.py"]
+    helpers = {p.name: p.read_bytes() for p in helper_paths}
+    commit, held = held_in_main({**{p: helpers[p.name] for p in helper_paths},
+                                 **{paths[name]: sources[name] for name in order}})
+    copied = {p.name: helpers[p.name] for p in helper_paths if p not in held}
+    copied.update({name + ".lean": sources[name] for name in order if paths[name] not in held})
+    for name, data in copied.items():
         (retained / name).write_bytes(data)
-    for name, data in sources.items():
-        (retained / (name + ".lean")).write_bytes(data)
     receipt = {
         "status": "checking", "utc": stamp, "toolchain": audit_support.TOOLCHAIN,
         "retained_run": str(retained.relative_to(HERE)),
@@ -1377,10 +1413,13 @@ def main():
         "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
         "source_sha256": {name: audit_support.digest(data) for name, data in sources.items()},
         "checker_sha256": {name: audit_support.digest(data) for name, data in helpers.items()},
+        # Files main holds byte for byte are named by this commit; the rest are copied here.
+        "source_commit": {"main": commit, "copied": sorted(copied)},
         "scope": SCOPE,
     }
-    # A reused step passed in the named run with the same binary and identical inputs; its log is retained here unchanged.
-    steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}}
+    # A reused step passed in the named run with the same binary and identical inputs; its log
+    # stays in the cache under its key. Drivers and logs of the steps that ran are kept here.
+    steps = receipt["lean_steps"] = {"cache": str(CACHE), "fresh": FRESH, "ran": [], "reused": {}, "keys": {}}
     try:
         assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
         inherited = [name for name in order if name not in SPINE]
@@ -1403,16 +1442,19 @@ def main():
         with tempfile.TemporaryDirectory(prefix="becoming-spine-lean-") as scratch:
             work = Path(scratch)
 
-            def run(args, log, where=work, key=None, outputs=()):
+            def run(args, log, where=work, key=None, outputs=(), driver=None):
                 outputs = [where / output for output in outputs]
+                if key:
+                    steps["keys"][log] = key
                 found = reuse(key, outputs) if key else None
                 if found:
                     output, steps["reused"][log] = found
-                    (retained / log).write_text(output)
                     return output
+                if driver:
+                    (retained / driver).write_bytes((where / driver).read_bytes())
                 env = {**os.environ, "LEAN_PATH": str(where)}
                 p = subprocess.run(command + args, cwd=where, env=env, text=True,
-                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=600)
+                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=TIMEOUT)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
                 assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout
@@ -1434,9 +1476,9 @@ def main():
                 audit = "import " + name + "\n" + "\n".join(
                     "#print axioms " + item["name"] for item in registry[name]) + "\n"
                 (work / (flat + "AxiomAudit.lean")).write_text(audit)
-                (retained / (flat + "AxiomAudit.lean")).write_text(audit)
                 output = run([flat + "AxiomAudit.lean"], flat + "AxiomAudit.log",
-                             key=step_key(context, flat + "AxiomAudit.lean", audit.encode(), keys))
+                             key=step_key(context, flat + "AxiomAudit.lean", audit.encode(), keys),
+                             driver=flat + "AxiomAudit.lean")
                 dependencies = {}
                 for item in registry[name]:
                     full = item["name"]
@@ -1453,9 +1495,9 @@ def main():
                     signatures = "import " + name + "\n" + "\n".join(
                         "#check @" + item["name"] for item in registry[name] if item["kind"] == "theorem") + "\n"
                     (work / (flat + "Signatures.lean")).write_text(signatures)
-                    (retained / (flat + "Signatures.lean")).write_text(signatures)
                     run([flat + "Signatures.lean"], flat + "Signatures.log",
-                        key=step_key(context, flat + "Signatures.lean", signatures.encode(), keys))
+                        key=step_key(context, flat + "Signatures.lean", signatures.encode(), keys),
+                        driver=flat + "Signatures.lean")
                 records.append({
                     "module": name, "spine": name in SPINE,
                     "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
@@ -1469,9 +1511,9 @@ def main():
                 imports="\n".join("import " + name for name in core_closure),
                 modules=", ".join("`" + name for name in core_closure))
             (work / "EnvironmentAudit.lean").write_text(environment)
-            (retained / "EnvironmentAudit.lean").write_text(environment)
             output = run(["EnvironmentAudit.lean"], "EnvironmentAudit.log",
-                         key=step_key(context, "EnvironmentAudit.lean", environment.encode(), keys))
+                         key=step_key(context, "EnvironmentAudit.lean", environment.encode(), keys),
+                         driver="EnvironmentAudit.lean")
             constants = {m: int(n) for m, n in re.findall(r"CONSTANTS (\S+) (\d+)", output)}
             assert sorted(constants) == sorted(core_closure), (constants, core_closure)
             generated = {n: [a.strip() for a in axs.split(",") if a.strip()]
@@ -1483,8 +1525,8 @@ def main():
             receipt["core_closure_constants"] = constants
             receipt["generated_axiom_dependencies"] = generated
             (work / "Controls.lean").write_text(CONTROLS)
-            (retained / "Controls.lean").write_text(CONTROLS)
-            run(["Controls.lean"], "Controls.log", key=step_key(context, "Controls.lean", CONTROLS.encode(), keys))
+            run(["Controls.lean"], "Controls.log", key=step_key(context, "Controls.lean", CONTROLS.encode(), keys),
+                driver="Controls.lean")
             # The core needs nothing beyond Lean's prelude.
             bare = work / "prelude-only"
             bare.mkdir()
@@ -1509,7 +1551,7 @@ def main():
         receipt["source_unchanged_during_check"] = all(
             paths[name].read_bytes() == data for name, data in sources.items())
         assert receipt["source_unchanged_during_check"], "Source changed; only snapshot checked"
-        assert all((retained / name).read_bytes() == data for name, data in helpers.items())
+        assert all((retained / name).read_bytes() == data for name, data in copied.items())
         receipt["modules"] = records
         receipt["artifact_sha256"] = {
             p.name: audit_support.digest(p.read_bytes()) for p in sorted(retained.iterdir()) if p.is_file()
