@@ -15,13 +15,13 @@ REC_B = '../results/records/configurations-alike-by-relation.md'
 OPEN_ZH_OLD = '**机制。** 起点是过程：一个配置经一次可容许的变化成为另一个配置。'
 OPEN_ZH_NEW = ('**起点。** 起点是一个展开：一类读法的关系项，每一步各自取、给、立于、需要与汲取什么（`World`，见下文“整体与其部分”）。'
                '过程是它的一种读法：一个配置经一次可容许的变化成为另一个配置；动作可以读入配置，律所留开的就是下一个动作。'
-               '框架是另一种读法：每个配置上实现哪些主张。两种读法都回到同一展开（P69，见下）。')
+               '框架是另一种读法：每个配置上实现哪些主张。两种读法都回到同一展开：这是 P69 的结果，不是 Ren 的措辞（见下）。')
 OPEN_EN_OLD = '**Mechanism.** The starting point is the process: a configuration becomes another through an admissible change.'
 OPEN_EN_NEW = ('**Starting point.** The starting point is one unfolding: relata read with one kind, with what each takes, gives, '
                'stands at, needs and draws at each step (`World`, below under the whole and its parts). The process is one '
                'reading of it: a configuration becomes another through an admissible change; the move can be read within the '
                'configuration, and what the law leaves open is the next move. The frame is another: which claims are realized '
-               'at each configuration. Both readings return to the one unfolding (P69, below).')
+               "at each configuration. Both readings return to the one unfolding: this is P69's result, not Ren's wording (below).")
 
 UNF_ZH = (
     '**一个展开与它的读法（第一部分，P69）。** Ren 问核心的前两层“is this dualistic?”（[来源](' + SOURCE + ')）。'
