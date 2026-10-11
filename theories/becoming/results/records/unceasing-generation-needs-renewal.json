@@ -204,6 +204,13 @@
         "zh": "在流的读法中，消耗（Depletes）由平衡、耗散与事件之步上的取用推出（Flow.Balances.depletes），正如 RenewedBy 由平衡与只有活跃者给予推出；这里的对应前提由此化归为流的前提。",
         "en": "Read through flows, depletion (Depletes) follows from balance, dissipation and taking at the event's steps (Flow.Balances.depletes), as RenewedBy follows from balance with only active formations giving; the correspondence premises here thereby reduce to the flow's."
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "局部规律用 laws-of-one-step 的 Flow.BalancesOn；这是证明上的复用。记录之间不设依存边，因为 laws-of-one-step 经其依存链依存于本记录。",
+        "en": "The local laws use Flow.BalancesOn of laws-of-one-step; this is reuse in the proof. No dependency edge joins the records, since laws-of-one-step depends on this one through its chain of dependencies."
+      }
     }
   ],
   "counterexamples": [
@@ -290,8 +297,8 @@
     "en": "Contains no ethical predicate and yields no “unceasing is better” or any ranking; does not state “more”, diversity or complexity; the generation component is not added to any reading of living; the depletion premise asks only that some condition of the family change (depletes_iff) and does not screen out arisings made by naming (TideFlip); in the flow form of the two-kind reading arising works only through uptake (Steady), while the arising of an embodied relatum is itself replenishment (generation-is-replenishment); Unceasing depends on identity across steps (identity-across-steps): a naming that keeps continuing activity makes no arising, and reading the theorems as about generation needs such a naming; Rises is a net rise, and concurrent replenishment is visible only in the flow form; the conclusion of RenewedBy is only as strong as the renews the application supplies; dissipation is a physical premise (for the arisings of embodied members of a closed family it follows from balance, dissipation on flows and embodiment; see generation-is-replenishment), and the total presupposes commensurable units; families of conditions are finite; the witnesses are minimal; the depletion premise, ArisesTaking, RenewedBy and dissipation are application duties; the new names are the reviewer's suggestions, and the final choice is Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Generation 30 项定理与 Becoming.Flow 中流的形式的定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出流的形式只用到取用与命名造成的生起，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): all 30 theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, see §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Generation 30 项定理与 Becoming.Flow 中流的形式的定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §13；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P9B-P10-P11-REVIEW.md），其更正在整合文档 §15 处理；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）审查了这些更正，补出流的形式只用到取用与命名造成的生起，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): all 30 theorems of Becoming.Generation and the flow-form theorems of Becoming.Flow have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §13 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P9B-P10-P11-REVIEW.md), and its corrections are handled in §15; a fifth independent review (BECOMING-P11B-P12-REVIEW.md) reviewed those corrections and added that the flow form uses only uptake and that naming can make the arisings, see §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted these corrections, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -373,19 +380,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "79d84cc0e2c7045f3111a6da0621d96d35e98e47ca9e4d52011d1c02cbc38657",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "ab4c91365b1c5fadca306c3ddb3486bfe19e21652441e36c49f93796eefef38c",
+      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a",
       "declarations": []
     },
     {
@@ -403,7 +410,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "78d122c84adf392ce3b08fc653147e10741ecc5ab540657a149366e61d52d714",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.uptake",
@@ -420,7 +427,10 @@
         "Becoming.Flow.uptake_needs_replenishment",
         "Becoming.Steady.web",
         "Becoming.Steady.flow",
-        "Becoming.Steady.steady"
+        "Becoming.Steady.steady",
+        "Becoming.Flow.uptake_needs_replenishment_from",
+        "Becoming.Flow.replenishment_recurs_from",
+        "Becoming.Flow.renewing_recurs_from"
       ]
     },
     {
@@ -431,7 +441,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
       "role": "proof",
-      "sha256": "16e4457cb944d5a78b9ca25df952e29ba6bacbf3fe065ba569ff9daba0dad3e5",
+      "sha256": "21e192c62d8dc686b0179cc593b5a485e7ceedb6c50113fb1cab6a06e6166bfd",
       "declarations": [
         "Becoming.TideFlip.flip",
         "Becoming.TideFlip.flipped",
@@ -469,8 +479,8 @@
     }
   ],
   "next_delta": {
-    "zh": "“更多”的一种读法（取用者的数目）已由 more-needs-renewers 陈述，流上的耗散由 no-finite-part-bears-taking 陈述；可能性、多样性与复杂性的上升，把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通，以及生成成分能否进入 living 的读法而不重复“不损”的代价，仍开放；第二个“生”的范围与以消耗为条件的生起是否为生成，属于 Ren。",
-    "en": "One reading of “more” (the number of takers) is stated in more-needs-renewers, and dissipation on flows in no-finite-part-bears-taking; rising possibility, diversity and complexity, connecting the generation component to Frame.Novel and to the “new living content” of universal_reason, and whether a generation component can enter a reading of living without repeating the costs of “no harm” remain open; the scope of the second 生 and whether arising on a consumed condition is generation are Ren's to say."
+    "zh": "对每个世界的确切重述是本记录的 Flow.uptake_needs_replenishment_from、replenishment_recurs_from、renewing_recurs_from（P57），局部条件写在规律之内：只要求该家族从某步起平衡；Flow.uptake_needs_replenishment、replenishment_recurs、renewing_recurs是它们的推论；“更多”的一种读法（取用者的数目）已由 more-needs-renewers 陈述，流上的耗散由 no-finite-part-bears-taking 陈述；可能性、多样性与复杂性的上升，把生成成分与 Frame.Novel 和 universal_reason 的“新的活的内容”接通，以及生成成分能否进入 living 的读法而不重复“不损”的代价，仍开放；第二个“生”的范围与以消耗为条件的生起是否为生成，属于 Ren。",
+    "en": "The exact restatement for every world is this record's Flow.uptake_needs_replenishment_from, replenishment_recurs_from, renewing_recurs_from (P57), the local condition inside the law: balance on the family only from some step on; Flow.uptake_needs_replenishment, replenishment_recurs, renewing_recurs are their corollaries; one reading of “more” (the number of takers) is stated in more-needs-renewers, and dissipation on flows in no-finite-part-bears-taking; rising possibility, diversity and complexity, connecting the generation component to Frame.Novel and to the “new living content” of universal_reason, and whether a generation component can enter a reading of living without repeating the costs of “no harm” remain open; the scope of the second 生 and whether arising on a consumed condition is generation are Ren's to say."
   },
   "history": [
     {
@@ -720,6 +730,10 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：新增对每个世界的局部规律 Flow.uptake_needs_replenishment_from、replenishment_recurs_from、renewing_recurs_from（零前提计划 §1.3 B 组），局部条件写在规律之内；Flow.uptake_needs_replenishment、replenishment_recurs、renewing_recurs在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §74。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: local laws for every world added, Flow.uptake_needs_replenishment_from, replenishment_recurs_from, renewing_recurs_from (group B of the zero-premise plan, section 1.3), the local condition inside the law; Flow.uptake_needs_replenishment, replenishment_recurs, renewing_recurs re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 74 of the integration note. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "runaway-distance-unregistered",
   "title": {
-    "zh": "失控：每个经反映、其余固定的策略保持支持就永不动用它不观察的较多储量；断裂之前，断裂还有多远不被反映",
+    "zh": "失控：每个经识、其余固定的策略保持支持就永不动用它不观察的较多储量；断裂之前，断裂还有多远不被识",
     "en": "Runaway: every policy through registration, with the rest fixed, that keeps its support never uses a larger stock it does not observe; before the break, how far off the break is does not register"
   },
   "kind": "theorem",
@@ -10,12 +10,12 @@
   "family": "F04",
   "reviewed_at_utc": "2026-10-11T11:36:28+00:00",
   "claim": {
-    "zh": "形成 g 的策略经其反映，是指凡 g 直到某步反映相同，它在所反映的每个条件上的取用与给予在两个流中相同（Flow.PolicyThrough）；其余固定，是指其他形成在 g 所反映的条件上的交换每步相同（Flow.OthersFixed）。两个流在场的形成相同时，两者合起来就是交换随反映（Flow.exchangeFollows_of_policy）。所以，在被反映的条件上逐步平衡、起始只在 g 依存而不观察的储量上不同且第二个网中高 d 时，对每个经反映、其余固定的策略：第一个网每步都支持 g，储量就每步都高 d，g 每步都反映相同（Flow.policy_keeps_difference）；第二个网起始不低并在所观察者上相同时，所反映条件上的差别在某步之前已改变，第一个网就并非此前每步都支持 g（Flow.policy_uses_after_failure）。把储量 c 每步抬高 d、其余不变的网（Web.raise）不低于原网，支持原网所支持的，在别的条件上相同（Web.le_raise、Web.Supported.raise、Web.raise_other），原网依存之处它也依存（Web.Dependent.raise），流在一个家族上平衡，在其上也平衡（Flow.BalancesOn.raise）。在网支持 g 的每一步，g 不观察的储量的抬高，g 反映相同（Web.registersAlike_raise）；观察它时，任何正的抬高每步都被反映（Web.observed_raise_registers）。g 不观察 c，且到视界 u 为止只有 c 的所需可能不满足时，以到 u 为止的所需之和（Web.needUpTo）抬高 c，在原网支持 g 的每一步反映相同，并在 u 之前每步都支持 g（Web.break_not_bounded）。SupportDrawn 中较低的网在第三步不支持形成，一个抬高在原网支持它的每一步反映相同，在第三步支持它，流在其上平衡（SupportDrawn.break_unregistered）。不用 Lean 公理。",
+    "zh": "形成 g 的策略经其识，是指凡 g 直到某步识得相同，它在所识的每个条件上的取用与给予在两个流中相同（Flow.PolicyThrough）；其余固定，是指其他形成在 g 所识的条件上的交换每步相同（Flow.OthersFixed）。两个流在场的形成相同时，两者合起来就是交换随识（Flow.exchangeFollows_of_policy）。所以，在被识的条件上逐步平衡、起始只在 g 依存而不观察的储量上不同且第二个网中高 d 时，对每个经识、其余固定的策略：第一个网每步都支持 g，储量就每步都高 d，g 每步都识得相同（Flow.policy_keeps_difference）；第二个网起始不低并在所观察者上相同时，所识条件上的差别在某步之前已改变，第一个网就并非此前每步都支持 g（Flow.policy_uses_after_failure）。把储量 c 每步抬高 d、其余不变的网（Web.raise）不低于原网，支持原网所支持的，在别的条件上相同（Web.le_raise、Web.Supported.raise、Web.raise_other），原网依存之处它也依存（Web.Dependent.raise），流在一个家族上平衡，在其上也平衡（Flow.BalancesOn.raise）。在网支持 g 的每一步，g 不观察的储量的抬高，g 识得相同（Web.registersAlike_raise）；观察它时，任何正的抬高每步都被识（Web.observed_raise_registers）。g 不观察 c，且到视界 u 为止只有 c 的所需可能不满足时，以到 u 为止的所需之和（Web.needUpTo）抬高 c，在原网支持 g 的每一步识得相同，并在 u 之前每步都支持 g（Web.break_not_bounded）。SupportDrawn 中较低的网在第三步不支持形成，一个抬高在原网支持它的每一步识得相同，在第三步支持它，流在其上平衡（SupportDrawn.break_unregistered）。不用 Lean 公理。",
     "en": "A formation g's policy goes through its registration when, wherever g has registered alike up to a step, its take from and give to every condition it registers are alike in the two flows (Flow.PolicyThrough); the rest is fixed when every other formation's exchange on the conditions g registers is alike at every step (Flow.OthersFixed). With the same formations present, the two give exchange following registration (Flow.exchangeFollows_of_policy). So, balancing at each step on what g registers, with the starts differing only in a stock g depends on and does not observe, d higher in the second web, for every policy through registration with the rest fixed: where the first web supports g at every step, the stock stands d higher and g registers alike at every step (Flow.policy_keeps_difference); where the second web starts at least as high and alike on what g observes, and a difference on a condition g registers has changed by a step, the first web did not support g at every earlier step (Flow.policy_uses_after_failure). The web with stock c raised by d at every step, all else as it is (Web.raise), stands at least as high, supports whatever the web supports and stands alike elsewhere (Web.le_raise, Web.Supported.raise, Web.raise_other); it is dependent where the web is (Web.Dependent.raise), and a flow balancing on a family balances there on it (Flow.BalancesOn.raise). At every step at which the web supports g, a raise of a stock g does not observe registers alike for g (Web.registersAlike_raise); observing it, every positive raise registers at every step (Web.observed_raise_registers). Where g does not observe c and c is the only requirement of g that may be unmet up to a horizon u, raising c by the sum of the needs up to u (Web.needUpTo) registers alike at every step at which the web supports g and supports g at every step up to u (Web.break_not_bounded). In SupportDrawn the lower web fails the formation at the third step, and a raise registers alike at every step at which the lower web supports it, supports it at the third step and keeps the flow balanced (SupportDrawn.break_unregistered). No Lean axiom is used."
   },
   "hypotheses": [
     {
-      "zh": "平衡只在被反映的条件上逐步假设（Flow.BalancesOn）；策略经反映与其余固定是给出的假设，由它们推出交换随反映。",
+      "zh": "平衡只在被识的条件上逐步假设（Flow.BalancesOn）；策略经识与其余固定是给出的假设，由它们推出交换随识。",
       "en": "Balance is assumed only on the conditions registered, at each step (Flow.BalancesOn); the policy going through registration and the rest being fixed are supplied hypotheses, from which exchange following registration is derived."
     },
     {
@@ -28,7 +28,7 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 的“wisdoms to avoid run away feedbacks”；P49 把失控读作在一种不见之中运行的回路，并标为启发；P53 之后 AI 提议在策略的层面陈述，Ren 答“no extra review needed, merge, then continue”。读法（AI 的，待 Ren）：失控是断裂之前自身反映与储量多出任意多的世界相同的回路；它的策略不能用上它所不反映的；要避免它而又不放弃所有的，需要量度、模型（理）或他者的反映；合于 Ren 10 月 4 日“理须调节心，使其正反馈循环不失控”。见整合文档 §73。",
+    "zh": "Ren 的“wisdoms to avoid run away feedbacks”；P49 把失控读作在一种不见之中运行的回路，并标为启发；P53 之后 AI 提议在策略的层面陈述，Ren 答“no extra review needed, merge, then continue”。读法（AI 的，待 Ren）：失控是断裂之前自身之识与储量多出任意多的世界相同的回路；它的策略不能用上它所不识的；要避免它而又不放弃所有的，需要量度、模型（理）或他者之识；合于 Ren 10 月 4 日“理须调节心，使其正反馈循环不失控”。见整合文档 §73。",
     "en": "Ren's “wisdoms to avoid run away feedbacks”; P49 read a runaway as a loop running inside a blindness and marked it a heuristic; after P53 the AI proposed stating it at the level of policies, and Ren answered “no extra review needed, merge, then continue”. Readings (the AI's, pending Ren): a runaway is a loop whose own registration before the break is that of a world with as much more stock as one likes; its policy cannot use what it does not register; avoiding it without forgoing what is there needs measurement, a model (理) or another formation's registration; this reads Ren's words of 4 October that reason must regulate the heart so that its positive feedback loop does not run out of control. See §73 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
@@ -52,7 +52,7 @@
       "id": "subthreshold-registration",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经反映的策略加其余固定推出交换随反映。",
+        "zh": "复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经识的策略加其余固定推出交换随识。",
         "en": "Reuses Flow.ExchangeFollows, Flow.subthreshold_alike_always and Flow.difference_changes_after_divergence; the delta is the level of policies: a policy through registration with the rest fixed gives exchange following registration."
       },
       "interface": {
@@ -65,7 +65,7 @@
           "en": "T5 over policies."
         },
         "conditions": {
-          "zh": "平衡；交换随反映。",
+          "zh": "平衡；交换随识。",
           "en": "Balance; exchange following registration."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
@@ -80,11 +80,11 @@
       },
       "interface": {
         "output": {
-          "zh": "什么被反映。",
+          "zh": "什么被识。",
           "en": "What registers."
         },
         "input": {
-          "zh": "抬高不被反映；观察时被反映。",
+          "zh": "抬高不被识；观察时被识。",
           "en": "A raise does not register; observed, it does."
         },
         "conditions": {
@@ -98,7 +98,7 @@
       "id": "laws-of-one-step",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Flow.BalancesOn：平衡只在被反映的条件上逐步假设，抬高保持它。",
+        "zh": "复用 Flow.BalancesOn：平衡只在被识的条件上逐步假设，抬高保持它。",
         "en": "Reuses Flow.BalancesOn: balance is assumed only on the conditions registered, and raising keeps it."
       },
       "interface": {
@@ -114,7 +114,7 @@
           "zh": "无。",
           "en": "None."
         },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean"
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
       }
     }
   ],
@@ -122,14 +122,14 @@
     {
       "id": "reserve-defers-ending",
       "detail": {
-        "zh": "那里储备推迟终结而不逃脱它；这里储备推迟多久不被反映。",
+        "zh": "那里储备推迟终结而不逃脱它；这里储备推迟多久不被识。",
         "en": "There a reserve defers the end and does not escape it; here how long it defers it does not register."
       }
     },
     {
       "id": "experiment-needs-return",
       "detail": {
-        "zh": "要知道自己的动作造成什么，需要返回与关于何者无关的模型；这里经支持的反映连断裂的距离也不给。",
+        "zh": "要知道自己的动作造成什么，需要返回与关于何者无关的模型；这里经支持之识连断裂的距离也不给。",
         "en": "Knowing what one's own act does needs a return and a model of what is irrelevant; here registration through support does not even give the distance to the break."
       }
     }
@@ -148,8 +148,8 @@
     "en": "That a formation draws more than is renewed, wants to keep its support or forms a policy is not derived; what others respond to is supplied; loops and gain are not defined, so a runaway remains a reading, and what is given here are the two theorems it rests on; the raised world uses the same flow, which after the break need not be what the formation would do; the readings are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Runaway 的 13 项定理全部空依赖，其中含 Flow.exchangeFollows_of_policy、Flow.policy_keeps_difference、Web.break_not_bounded 与 Web.observed_raise_registers；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §73；按 Ren 的“no extra review needed”不作独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 13 theorems of Becoming.Runaway all have empty axiom reports, among them Flow.exchangeFollows_of_policy, Flow.policy_keeps_difference, Web.break_not_bounded and Web.observed_raise_registers; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §73 of the integration note; at Ren's “no extra review needed” there is no independent review."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Runaway 的 13 项定理全部空依赖，其中含 Flow.exchangeFollows_of_policy、Flow.policy_keeps_difference、Web.break_not_bounded 与 Web.observed_raise_registers；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §73；按 Ren 的“no extra review needed”不作独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 13 theorems of Becoming.Runaway all have empty axiom reports, among them Flow.exchangeFollows_of_policy, Flow.policy_keeps_difference, Web.break_not_bounded and Web.observed_raise_registers; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §73 of the integration note; at Ren's “no extra review needed” there is no independent review. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -190,9 +190,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Flow.BalancesOn"
       ]
@@ -209,25 +209,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "79d84cc0e2c7045f3111a6da0621d96d35e98e47ca9e4d52011d1c02cbc38657",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "829a9e7868f218a19dccb7e90c2c3e9869bb97831f5055fc166b3f9aeb6165d8",
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md",
       "role": "provenance",
-      "sha256": "57b9218ab8c1413569ef8ecc50ad7adaa764ce6119f374bfab9cc04076649a56",
+      "sha256": "4fc423936815ac19535df80e99d3142ff56eda536da9fa6ba55be77ef39a48fd",
       "declarations": []
     }
   ],
@@ -247,16 +247,16 @@
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -269,6 +269,14 @@
     {
       "zh": "2026-10-11 P55：新增，按 Ren“wisdoms to avoid run away feedbacks”与“no extra review needed, merge, then continue”；统一计划 P55；陈述 P49（§70）失控读法所依的两点；见整合文档 §73。",
       "en": "2026-10-11 P55: added, following Ren's ‘wisdoms to avoid run away feedbacks’ and ‘no extra review needed, merge, then continue’; unification plan P55; states the two points P49's runaway reading (§70) rests on; see §73 of the integration note."
+    },
+    {
+      "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“反映”；断言不变。",
+      "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 反映; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.Flow.BalancesOn 移入 Becoming.Flow（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: Becoming.Flow.BalancesOn moved into Becoming.Flow (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

@@ -586,19 +586,31 @@ theorem arising_recurs_iff (fs : List F) :
     Recurs fs (fun f t => W.Arises t f) ↔ Recurs fs (fun f t => W.Ceases t f) :=
   coming_recurs_iff (p := fun f t => W.active t f)
 
+/-- Where one list covers the formations active at each step from some step on, and their
+activity is decided, arising recurs exactly when ceasing recurs. Nothing is asked of the
+formations beyond the list or of the steps before: finitely many formations in all is not
+needed. -/
+theorem unceasing_iff_covering {fs : List F} {T : Nat}
+    (covers : ∀ t, T ≤ t → ∀ f, W.active t f → f ∈ fs) :
+    W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
+  ⟨fun unceasing N => match (W.arising_recurs_iff fs).mp
+      (fun N => match unceasing (N + T) with
+        | ⟨t, f, later, arises⟩ => ⟨t, f, Nat.le_trans (Nat.le_add_right N T) later,
+            covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans (Nat.le_add_left T N) later)) f arises.2,
+            arises⟩) N with
+    | ⟨t, f, later, _, ceases⟩ => ⟨t, f, later, ceases⟩,
+   fun ceasing N => match (W.arising_recurs_iff fs).mpr
+      (fun N => match ceasing (N + T) with
+        | ⟨t, f, later, ceases⟩ => ⟨t, f, Nat.le_trans (Nat.le_add_right N T) later,
+            covers t (Nat.le_trans (Nat.le_add_left T N) later) f ceases.1, ceases⟩) N with
+    | ⟨t, f, later, _, arises⟩ => ⟨t, f, later, arises⟩⟩
+
 /-- Where the formations are finitely many and their activity is decided, some formation
 arises at arbitrarily late steps (`Unceasing`) exactly when some formation ceases at
 arbitrarily late steps: arising recurs exactly when ceasing recurs. -/
 theorem unceasing_iff {fs : List F} (all : ∀ f, f ∈ fs) :
     W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
-  ⟨fun unceasing N => match (W.arising_recurs_iff fs).mp
-      (fun N => match unceasing N with
-        | ⟨t, f, later, arises⟩ => ⟨t, f, later, all f, arises⟩) N with
-    | ⟨t, f, later, _, ceases⟩ => ⟨t, f, later, ceases⟩,
-   fun ceasing N => match (W.arising_recurs_iff fs).mpr
-      (fun N => match ceasing N with
-        | ⟨t, f, later, ceases⟩ => ⟨t, f, later, all f, ceases⟩) N with
-    | ⟨t, f, later, _, arises⟩ => ⟨t, f, later, arises⟩⟩
+  W.unceasing_iff_covering (T := 0) fun _ _ f _ => all f
 
 end Activity
 

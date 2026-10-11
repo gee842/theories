@@ -262,6 +262,17 @@ theorem change_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
   ((around.runsDownClosed balances dissipative census).runsDown.changes_iff census).mp
     ⟨c, changes⟩
 
+/-- Standing comes to rest wherever what stands runs down from some step on: under a census
+of what stands, where across every step from `T` on it is not refuted that what stands runs
+down, no condition's standing changes at arbitrarily late steps. No premise is asked: the
+corollary of `Flow.change_recurs_iff`. -/
+theorem stills_from (census : W.StandingCensus stand) {T : Nat}
+    (runs : ∀ t, T ≤ t → ¬¬ L.RunsDown W t) :
+    ¬ ∀ N, ∃ t c, N ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
+  fun changing => match (change_recurs_iff census).mp (fun N => match changing N with
+      | ⟨t, c, later, changes⟩ => ⟨t, later, c, changes⟩) T with
+  | ⟨t, later, unmet, _⟩ => runs t later unmet
+
 /-- Standing comes to rest: where every step from some step on is enclosed around what
 stands, no condition's standing changes at arbitrarily late steps. It is enough that each
 of those enclosures is not refuted. The corollary of `Flow.change_recurs_iff`: change
@@ -271,10 +282,8 @@ theorem stills (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {T : Nat}
     (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
-  fun changing => match (change_recurs_iff census).mp (fun N => match changing N with
-      | ⟨t, c, later, changes⟩ => ⟨t, later, c, changes⟩) T with
-  | ⟨t, later, unmet, _⟩ => around t later fun enclosed =>
-      unmet (enclosed.runsDownClosed balances dissipative census).runsDown
+  stills_from census fun t later unmet => around t later fun enclosed =>
+    unmet (enclosed.runsDownClosed balances dissipative census).runsDown
 
 /-- Across a step enclosed around what stands, a formation taking part that takes or gives
 anything lowers the total standing: the enclosing family holds what it exchanges, and
@@ -286,16 +295,24 @@ theorem exchange_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
   ((around.runsDownClosed balances dissipative census).exchanges_iff census).mp
     ⟨f, c, present, exchanges⟩
 
+/-- The exchange comes to rest wherever what stands runs down closed from some step on:
+under a census of what stands, where across every step from `T` on it is not refuted that
+what stands runs down closed, no formation takes or gives at arbitrarily late steps. The
+corollary of `Flow.exchange_recurs_iff`, with no premise. -/
+theorem exchanges_finitely_from (census : W.StandingCensus stand) {T : Nat}
+    (runs : ∀ t, T ≤ t → ¬¬ L.RunsDownClosed W t) : ¬ L.ExchangeRecurs :=
+  fun exchanging => match (exchange_recurs_iff census).mp (fun N => match exchanging N with
+      | ⟨t, f, c, later, present, exchanges⟩ => ⟨t, later, .inl ⟨f, c, present, exchanges⟩⟩) T with
+  | ⟨t, later, unmet, _⟩ => runs t later unmet
+
 /-- The exchange comes to rest: where every step from some step on is not refuted to be
 enclosed around what stands, no formation takes or gives at arbitrarily late steps. The
 corollary of `Flow.exchange_recurs_iff`. -/
 theorem exchanges_finitely (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {T : Nat}
     (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) : ¬ L.ExchangeRecurs :=
-  fun exchanging => match (exchange_recurs_iff census).mp (fun N => match exchanging N with
-      | ⟨t, f, c, later, present, exchanges⟩ => ⟨t, later, .inl ⟨f, c, present, exchanges⟩⟩) T with
-  | ⟨t, later, unmet, _⟩ => around t later fun enclosed =>
-      unmet (enclosed.runsDownClosed balances dissipative census)
+  exchanges_finitely_from census fun t later unmet => around t later fun enclosed =>
+    unmet (enclosed.runsDownClosed balances dissipative census)
 
 end Flow
 
@@ -503,6 +520,16 @@ theorem slow_world {B : Nat → Nat} (grows : ∀ t, B t ≤ B (t + 1))
 /-! ## Worlds come to rest -/
 
 variable {w : World}
+
+/-- Arising stops wherever what stands runs down from some step on: where what stands is
+listed and whatever arises is embodied, and across every step from `T` on it is not refuted
+that what stands runs down, arising does not recur. No premise on the flow is asked. -/
+theorem arising_stops_from {stand : Nat → List w.Relatum} (standing : w.web.StandingCensus stand)
+    (embodied : w.ArisingEmbodied) {T : Nat} (runs : ∀ t, T ≤ t → ¬¬ w.flow.RunsDown w.web t) :
+    ¬ w.ArisingRecurs :=
+  fun arising => Flow.stills_from standing runs fun N => match arising N with
+    | ⟨t, x, later, arises⟩ =>
+      ⟨t, x, later, .inl ((embodied t x arises).comesToStand arises).rises⟩
 
 /-- Arising stops where what stands is listed, whatever arises is embodied, the flow
 balances and dissipates, and every step from some step on is enclosed around what stands:

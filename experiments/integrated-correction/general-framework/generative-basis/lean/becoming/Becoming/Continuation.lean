@@ -117,6 +117,26 @@ theorem fed_of_not_inward [DecidableEq C] {ds : List C} {N : Nat}
 
 variable {W : Web F C}
 
+/-- A continuing family is fed from beyond, from a step on: where formations take from a
+finite family without repetition at arbitrarily late steps, and from `T₀` on the family is
+balanced on, enclosed around, and every family closed across each step is dissipated on,
+it cannot from any step on be fed from nothing beyond it. -/
+theorem fed_from_beyond_from [DecidableEq C] {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+    (around : ∀ t, T₀ ≤ t → L.Around ds t) (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
+    (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+    (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
+    ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
+  fed_of_not_inward (taking_draws_in_from distinct around balances dissipative recurs N)
+
+/-- So is a family whose members rise at arbitrarily late steps. -/
+theorem rising_fed_from_beyond_from [DecidableEq C] {ds : List C} (distinct : Distinct ds)
+    {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+    (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
+    (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+    (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (N : Nat) :
+    ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
+  fed_of_not_inward (rising_draws_in_from distinct around balances dissipative rising N)
+
 /-- A continuing family is fed from beyond: under balance and dissipation, where formations
 take from a finite family without repetition at arbitrarily late steps and the family is
 enclosed around from some step on, it cannot from any step on be fed from nothing beyond
@@ -125,7 +145,8 @@ theorem fed_from_beyond [DecidableEq C] (balances : L.Balances W) (dissipative :
     {ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
     ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
-  fed_of_not_inward (taking_draws_in balances dissipative distinct around recurs N)
+  fed_from_beyond_from distinct around (fun t _ => balances.on ds t)
+    (fun t _ es => dissipative es t) recurs N
 
 /-- So is a family whose members rise at arbitrarily late steps. -/
 theorem rising_fed_from_beyond [DecidableEq C] (balances : L.Balances W)
@@ -133,7 +154,8 @@ theorem rising_fed_from_beyond [DecidableEq C] (balances : L.Balances W)
     (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (N : Nat) :
     ¬ ∀ t, N ≤ t → ¬ L.FedFromBeyond ds t :=
-  fed_of_not_inward (rising_draws_in balances dissipative distinct around rising N)
+  rising_fed_from_beyond_from distinct around (fun t _ => balances.on ds t)
+    (fun t _ es => dissipative es t) rising N
 
 end Conveying
 
@@ -152,11 +174,18 @@ def WithinJoint (L : Flow F C) (t : Nat) (c : C) : Prop :=
 
 variable {L : Flow F C} {W : Web F C}
 
+/-- With balance at the condition across the step, taking jointly within what is given, the
+level does not fall. -/
+theorem joint_keeps_at {t : Nat} {c : C} (balances : L.BalancesOn W [c] t)
+    (within : L.WithinJoint t c) : W.level t c ≤ W.level (t + 1) c :=
+  le_of_add_le_add_right (L.taken t c)
+    (Nat.le_trans (Nat.add_le_add_left within (W.level t c))
+      (Nat.le_of_eq (balances c (.head [])).symm))
+
 /-- Taking jointly within what is given, the level does not fall. -/
 theorem joint_keeps (balances : L.Balances W) {t : Nat} {c : C}
     (within : L.WithinJoint t c) : W.level t c ≤ W.level (t + 1) c :=
-  le_of_add_le_add_right (L.taken t c)
-    (Nat.le_trans (Nat.add_le_add_left within (W.level t c)) (Nat.le_of_eq (balances t c).symm))
+  joint_keeps_at (balances.on [c] t) within
 
 /-- With balance at the condition across the step, a step of joint excess lowers the level
 by at least one. -/

@@ -628,7 +628,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## closure-verdict-meets-axiom ← one-axiom-yields-g0
 
@@ -964,7 +964,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## context-sensitive-updating-correspondence ← situated-recovery-empirical-correspondence
 
@@ -1089,6 +1089,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 平衡；耗散；不重复；被围住；可判定相等；生起的形式还需一类读法与体现。 / Balance; dissipation; no repetition; enclosure around; decided equality; the arising form also needs the one-kind reading and embodiment.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)
+
+## continuing-self-fed-from-beyond ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与家族上假定 laws-of-one-step 的 Flow.BalancesOn；全局前提给出它，所以原定理是推论。 / The local laws assume Flow.BalancesOn of laws-of-one-step only at the steps and families they use; the global premises give it, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）与下降（Flow.RunsDown）。 / Balance on a finite family across one step (Flow.BalancesOn) and running down (Flow.RunsDown).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用家族假定它。 / This record's local laws assume it at the families and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## conveyance-crosses-the-boundary ← continuing-self-fed-from-beyond
 
@@ -1448,7 +1460,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## feedback-and-reach ← closing-needs-net-draw
 
-`formal-reuse` — 复用扣留水平 Flow.WithheldLevels、Flow.Balances.withheld 与 Web.Admits；这里表明有与无部分的水平在哪里相同，以及部分在哪里被计入。 / Reuses withheld levels Flow.WithheldLevels, Flow.Balances.withheld and Web.Admits; here it is shown where the levels with and without a part agree and where the part registers.
+`formal-reuse` — 复用扣留水平 Flow.WithheldLevels、Flow.Balances.withheld 与 Web.Admits；这里表明有与无部分的水平在哪里相同，以及部分在哪里被识。 / Reuses withheld levels Flow.WithheldLevels, Flow.Balances.withheld and Web.Admits; here it is shown where the levels with and without a part agree and where the part registers.
 
 **Producer output / 上游输出:** 扣留水平与扣留的算术恒等式。 / Withheld levels and the arithmetic identity of withholding.
 
@@ -1460,11 +1472,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## feedback-and-reach ← levels-of-closure
 
-`formal-reuse` — 复用影响闭包、所及闭包与系统；这里给出反馈计入什么、部分到达什么。 / Reuses the influence closure, the reach closure and the system; here what feedback registers and what a part reaches are given.
+`formal-reuse` — 复用影响闭包、所及闭包与系统；这里给出反馈识得什么、部分到达什么。 / Reuses the influence closure, the reach closure and the system; here what feedback registers and what a part reaches are given.
 
 **Producer output / 上游输出:** Flow.AffectedBy、Flow.WithinInfluence、Flow.Affects、Flow.WithinReach、Flow.WithinSystem。 / Flow.AffectedBy, Flow.WithinInfluence, Flow.Affects, Flow.WithinReach, Flow.WithinSystem.
 
-**Consumer input / 下游输入:** 影响闭包之外不计入；部分只到达对影响封闭的区域之内。 / Nothing registers beyond the influence closure; a part reaches only within a region closed under affecting.
+**Consumer input / 下游输入:** 影响闭包之外不被识；部分只到达对影响封闭的区域之内。 / Nothing registers beyond the influence closure; a part reaches only within a region closed under affecting.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -2468,7 +2480,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## pending-task-context-applicability ← acquired-revision-of-pending-task
 
@@ -3002,6 +3014,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## rising-and-falling-in-one-exchange ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与家族上假定 laws-of-one-step 的 Flow.BalancesOn；全局前提给出它，所以原定理是推论。 / The local laws assume Flow.BalancesOn of laws-of-one-step only at the steps and families they use; the global premises give it, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）与下降（Flow.RunsDown）。 / Balance on a finite family across one step (Flow.BalancesOn) and running down (Flow.RunsDown).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用家族假定它。 / This record's local laws assume it at the families and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## risk-certificate-outcome-distinction ← assured-route-criterion
 
 `formal-reuse` — 原证明用 assured_route_iff 将计数失败接到实际不到达。 / The existing proof uses assured_route_iff to connect counted failure with failed arrival.
@@ -3016,13 +3040,13 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## runaway-distance-unregistered ← subthreshold-registration
 
-`formal-reuse` — 复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经反映的策略加其余固定推出交换随反映。 / Reuses Flow.ExchangeFollows, Flow.subthreshold_alike_always and Flow.difference_changes_after_divergence; the delta is the level of policies: a policy through registration with the rest fixed gives exchange following registration.
+`formal-reuse` — 复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经识的策略加其余固定推出交换随识。 / Reuses Flow.ExchangeFollows, Flow.subthreshold_alike_always and Flow.difference_changes_after_divergence; the delta is the level of policies: a policy through registration with the rest fixed gives exchange following registration.
 
 **Producer output / 上游输出:** 阈下差别的规律。 / The laws of differences below the threshold.
 
 **Consumer input / 下游输入:** T5 的策略形式。 / T5 over policies.
 
-**Retained conditions / 保留条件:** 平衡；交换随反映。 / Balance; exchange following registration.
+**Retained conditions / 保留条件:** 平衡；交换随识。 / Balance; exchange following registration.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 
@@ -3030,9 +3054,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用 Web.RegistersAlike、Web.Registers 与 Web.observed_level_registers。 / Reuses Web.RegistersAlike, Web.Registers and Web.observed_level_registers.
 
-**Producer output / 上游输出:** 什么被反映。 / What registers.
+**Producer output / 上游输出:** 什么被识。 / What registers.
 
-**Consumer input / 下游输入:** 抬高不被反映；观察时被反映。 / A raise does not register; observed, it does.
+**Consumer input / 下游输入:** 抬高不被识；观察时被识。 / A raise does not register; observed, it does.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3040,7 +3064,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## runaway-distance-unregistered ← laws-of-one-step
 
-`formal-reuse` — 复用 Flow.BalancesOn：平衡只在被反映的条件上逐步假设，抬高保持它。 / Reuses Flow.BalancesOn: balance is assumed only on the conditions registered, and raising keeps it.
+`formal-reuse` — 复用 Flow.BalancesOn：平衡只在被识的条件上逐步假设，抬高保持它。 / Reuses Flow.BalancesOn: balance is assumed only on the conditions registered, and raising keeps it.
 
 **Producer output / 上游输出:** 一步上在一个家族上的平衡。 / Balance on a family across one step.
 
@@ -3048,7 +3072,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
 
@@ -3174,6 +3198,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## space-and-its-parts ← laws-of-one-step
+
+`formal-reuse` — 局部规律复用 laws-of-one-step 的 Flow.BalancesOn。 / The local laws reuse Flow.BalancesOn of laws-of-one-step.
+
+**Producer output / 上游输出:** Flow.BalancesOn。 / Flow.BalancesOn.
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用的步与家族上用它。 / This record's local laws use it at the steps and families they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
 ## substitution-preserves-consumption ← relational-renewal-classification
 
 `formal-reuse` — 直接复用支持门控定律的 overdraw_crosses_support、permanently_below 与 dependent_overdraw_ends_itself；共同条件的水平就是 Law.level。 / Directly reuses the support-gated law's overdraw_crosses_support, permanently_below and dependent_overdraw_ends_itself; the shared condition's level is Law.level.
@@ -3202,9 +3238,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `formal-reuse` — 复用 Web.Registers、Web.RegistersAlike、Web.RegistersAlikeUpTo、supportOnly 与 ownStanding。 / Reuses Web.Registers, Web.RegistersAlike, Web.RegistersAlikeUpTo, supportOnly and ownStanding.
 
-**Producer output / 上游输出:** 一个形成反映什么，两个水平历史何时对它反映相同。 / What a formation registers, and when two level histories register alike for it.
+**Producer output / 上游输出:** 一个形成识什么，两个水平历史何时对它识得相同。 / What a formation registers, and when two level histories register alike for it.
 
-**Consumer input / 下游输入:** 交换随反映的假设与阈下差别的规律。 / The hypothesis of the exchange following registration, and the laws of differences below the threshold.
+**Consumer input / 下游输入:** 交换随识的假设与阈下差别的规律。 / The hypothesis of the exchange following registration, and the laws of differences below the threshold.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3216,7 +3252,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 接纳。 / Admission.
 
-**Consumer input / 下游输入:** 第二个网的水平在第一个网支持 g 处接纳 g，所以 g 反映相同。 / The second web's levels admit g wherever the first web supports it, so g registers alike.
+**Consumer input / 下游输入:** 第二个网的水平在第一个网支持 g 处接纳 g，所以 g 识得相同。 / The second web's levels admit g wherever the first web supports it, so g registers alike.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3228,7 +3264,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 依存。 / Dependence.
 
-**Consumer input / 下游输入:** 被反映的条件。 / The conditions registered.
+**Consumer input / 下游输入:** 被识的条件。 / The conditions registered.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3268,7 +3304,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 无。 / None.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
 ## supported-renewal-recovery ← relational-renewal-classification
 
@@ -3284,11 +3320,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## testing-within-registration ← feedback-and-reach
 
-`formal-reuse` — 推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只反映支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。 / Extends P42's Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.unregistered_beyond_registration is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form.
+`formal-reuse` — 推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只识支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。 / Extends P42's Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.unregistered_beyond_registration is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form.
 
 **Producer output / 上游输出:** 交换、影响闭包与不清除的世界。 / Exchange, the influence closure and the world with the habitat spared.
 
-**Consumer input / 下游输入:** 反映闭包及其不见；清除者不检验栖居者被终结。 / The registration closure and its blindness; the clearer does not test whether the dweller is ended.
+**Consumer input / 下游输入:** 识闭包及其不见；清除者不检验栖居者被终结。 / The registration closure and its blindness; the clearer does not test whether the dweller is ended.
 
 **Retained conditions / 保留条件:** 平衡；扣留水平。 / Balance; withheld levels.
 
@@ -3300,7 +3336,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 对一个关系的闭包。 / Closure under a relation.
 
-**Consumer input / 下游输入:** 反映闭包及其封闭。 / The registration closure and its closedness.
+**Consumer input / 下游输入:** 识闭包及其封闭。 / The registration closure and its closedness.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3312,7 +3348,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 接纳与扣留水平。 / Admission and withheld levels.
 
-**Consumer input / 下游输入:** 反映相同的第一项；有与无部分的比较。 / The first clause of registering alike; the comparison with and without a part.
+**Consumer input / 下游输入:** 识得相同的第一项；有与无部分的比较。 / The first clause of registering alike; the comparison with and without a part.
 
 **Retained conditions / 保留条件:** 无。 / None.
 
@@ -3544,7 +3580,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** 平衡；只有活跃者取用；耗散；体现。 / Balance; only active relata taking; dissipation; embodiment.
 
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
 
 ## whole-persists-through-generation ← unceasing-generation-needs-renewal
 

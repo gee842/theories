@@ -273,19 +273,25 @@ theorem enclosed_of_finite {all : List C} (distinct : Distinct all) (every : ∀
     (t : Nat) : L.Enclosed t :=
   ⟨all, distinct, fun _ _ c outside => absurd (every c) outside⟩
 
-/-- Under dissipation, over a family without repetition closed across a step, a formation
-taking part that gives takes more than it gives. -/
-theorem Dissipative.gives_less (dissipative : L.Dissipative) {cs : List C} {t : Nat}
-    (distinct : Distinct cs) (closed : L.ClosedAt cs t) {f : F} (present : f ∈ L.present t)
-    {c : C} (gives : 0 < L.give t f c) : total cs (L.give t f) < total cs (L.take t f) :=
+/-- Over a family closed and dissipated on across a step, a formation taking part that gives
+takes more than it gives. -/
+theorem DissipatesOn.gives_less_closed {cs : List C} {t : Nat} (dissipates : L.DissipatesOn cs t)
+    (closed : L.ClosedAt cs t) {f : F} (present : f ∈ L.present t) {c : C}
+    (gives : 0 < L.give t f c) : total cs (L.give t f) < total cs (L.take t f) :=
   have given : 0 < total cs (L.give t f) := match Nat.decLt 0 (total cs (L.give t f)) with
     | isTrue positive => positive
     | isFalse zero => absurd (Nat.lt_of_lt_of_le gives (Nat.le_of_eq (closed f present c
         fun inside => zero (Nat.lt_of_lt_of_le gives (le_total_of_mem inside))).2))
         (Nat.lt_irrefl 0)
-  have dissipates := dissipative cs t distinct closed
   Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right (sign_pos (dissipates.takes_of_gives present given)))
     (dissipates f present)
+
+/-- Under dissipation, over a family without repetition closed across a step, a formation
+taking part that gives takes more than it gives. -/
+theorem Dissipative.gives_less (dissipative : L.Dissipative) {cs : List C} {t : Nat}
+    (distinct : Distinct cs) (closed : L.ClosedAt cs t) {f : F} (present : f ∈ L.present t)
+    {c : C} (gives : 0 < L.give t f c) : total cs (L.give t f) < total cs (L.take t f) :=
+  (dissipative cs t distinct closed).gives_less_closed closed present gives
 
 /-- Giving needs uptake: under dissipation, across an enclosed step, a formation taking
 part that gives takes from some condition. -/
@@ -298,42 +304,123 @@ theorem Dissipative.giving_needs_uptake (dissipative : L.Dissipative) {t : Nat}
         (dissipative.gives_less distinct closed present gives)) with
     | ⟨d, _, taken⟩ => ⟨d, taken⟩
 
-/-- Dissipated on, the family falls across a step by at least the number of formations
-taking from it. -/
-theorem Balances.runs_down (balances : L.Balances W) {cs : List C} {t : Nat}
+/-- Balanced and dissipated on, the family falls across the step by at least the number of
+formations taking from it. -/
+theorem BalancesOn.runs_down {cs : List C} {t : Nat} (balances : L.BalancesOn W cs t)
     (dissipates : L.DissipatesOn cs t) : W.stock cs (t + 1) + L.takers cs t ≤ W.stock cs t :=
   le_of_add_le_add_right (L.replenishment cs t) (Nat.le_trans
     (Nat.le_of_eq ((Nat.add_assoc _ _ _).trans
       (congrArg (W.stock cs (t + 1) + ·) (Nat.add_comm _ (L.replenishment cs t)))))
     (Nat.le_trans (Nat.add_le_add_left dissipates.replenishment_takers _)
-      (Nat.le_of_eq (balances.over cs t))))
+      (Nat.le_of_eq balances.over)))
 
-/-- Dissipated on from step `S`, the formations taking from the family over any later
-stretch of steps number at most its stock at `S`. -/
-theorem Balances.takers_within (balances : L.Balances W) {cs : List C} :
-    ∀ S N, (∀ t, S ≤ t → L.DissipatesOn cs t) →
+section
+
+variable {cs : List C} {t : Nat} {c : C}
+
+/-- So where nothing is taken from a family dissipated on across the step, no member
+rises: dissipation lets nothing give to it without taking from it. -/
+theorem DissipatesOn.still_untaken (dissipates : L.DissipatesOn cs t)
+    (balances : L.BalancesOn W cs t) (untaken : ∀ c, c ∈ cs → L.taken t c = 0) :
+    ¬ ∃ c, c ∈ cs ∧ W.Rises t c :=
+  fun rising => match (balances.rises_iff_gives untaken).mp rising with
+  | ⟨f, _, present, mem, gives⟩ =>
+    match total_pos cs (dissipates.takes_of_gives present
+        (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := L.give t f) mem))) with
+    | ⟨d, inside, takes⟩ => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+        (Nat.lt_of_lt_of_le takes (le_total_of_mem (q := fun f => L.take t f d) present))
+        (Nat.le_of_eq (untaken d inside)))
+
+/-- Balanced and dissipated on, a family a formation taking part takes from falls across
+the step. -/
+theorem BalancesOn.taking_lowers (balances : L.BalancesOn W cs t)
+    (dissipates : L.DissipatesOn cs t) {f : F} (present : f ∈ L.present t)
+    (takes : 0 < total cs (L.take t f)) : W.stock cs (t + 1) < W.stock cs t :=
+  Nat.lt_of_lt_of_le
+    (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total cs (L.take t f)))
+      present (sign_pos takes)))
+    (balances.runs_down dissipates)
+
+/-- Balanced and dissipated on, a member's fall lowers the family: it is taken from. -/
+theorem BalancesOn.fall_lowers (balances : L.BalancesOn W cs t) (dissipates : L.DissipatesOn cs t)
+    (mem : c ∈ cs) (falls : W.Falls t c) : W.stock cs (t + 1) < W.stock cs t :=
+  match total_pos (L.present t) (balances.fall_taken mem falls) with
+  | ⟨_, present, takes⟩ => balances.taking_lowers dissipates present (total_pos_of_mem mem takes)
+
+/-- Balanced and dissipated on, a member's rise lowers the family too: it is given to, and
+what gives to the family takes from it. -/
+theorem BalancesOn.rise_lowers (balances : L.BalancesOn W cs t) (dissipates : L.DissipatesOn cs t)
+    (mem : c ∈ cs) (rises : W.Rises t c) : W.stock cs (t + 1) < W.stock cs t :=
+  match total_pos (L.present t) (balances.rise_given mem rises) with
+  | ⟨_, present, gives⟩ => balances.taking_lowers dissipates present
+      (dissipates.takes_of_gives present (total_pos_of_mem mem gives))
+
+/-- Nothing comes to stand from nothing: across a step at which a family is balanced and
+dissipated on, a member comes to stand only where the family stood at something before. -/
+theorem BalancesOn.comes_from_standing (balances : L.BalancesOn W cs t)
+    (dissipates : L.DissipatesOn cs t) (mem : c ∈ cs) (comes : W.ComesToStand t c) :
+    0 < W.stock cs t :=
+  Nat.lt_of_le_of_lt (Nat.zero_le _) (balances.rise_lowers dissipates mem comes.rises)
+
+end
+
+/-- Dissipated on, the family falls across a step by at least the number of formations
+taking from it. -/
+theorem Balances.runs_down (balances : L.Balances W) {cs : List C} {t : Nat}
+    (dissipates : L.DissipatesOn cs t) : W.stock cs (t + 1) + L.takers cs t ≤ W.stock cs t :=
+  (balances.on cs t).runs_down dissipates
+
+/-- Balanced and dissipated on across each step of a stretch, the formations taking from the
+family over the stretch number at most its stock at the start. Nothing is asked of the steps
+outside the stretch. -/
+theorem takers_within_on {cs : List C} :
+    ∀ S N, (∀ t, S ≤ t → t < S + N → L.BalancesOn W cs t) →
+      (∀ t, S ≤ t → t < S + N → L.DissipatesOn cs t) →
       W.stock cs (S + N) + total (steps S N) (L.takers cs) ≤ W.stock cs S
-  | _, 0, _ => Nat.le_refl _
-  | S, N + 1, dissipates =>
-    have later := balances.takers_within (S + 1) N fun t after =>
-      dissipates t (Nat.le_of_succ_le after)
-    have now := balances.runs_down (dissipates S (Nat.le_refl S))
+  | _, 0, _, _ => Nat.le_refl _
+  | S, N + 1, balances, dissipates =>
+    have shift : ∀ t, t < S + 1 + N → t < S + (N + 1) := fun _ below =>
+      Nat.lt_of_lt_of_le below (Nat.le_of_eq (Nat.add_right_comm S 1 N))
+    have first : S < S + (N + 1) :=
+      Nat.lt_of_lt_of_le (Nat.lt_succ_self S) (Nat.succ_le_succ (Nat.le_add_right S N))
+    have later := takers_within_on (S + 1) N
+      (fun t after below => balances t (Nat.le_of_succ_le after) (shift t below))
+      (fun t after below => dissipates t (Nat.le_of_succ_le after) (shift t below))
+    have now := (balances S (Nat.le_refl S) first).runs_down (dissipates S (Nat.le_refl S) first)
     Nat.le_trans
       (Nat.le_of_eq
         ((congrArg (· + _) (congrArg (W.stock cs) (Nat.add_right_comm S 1 N).symm)).trans
           ((Nat.add_left_comm _ _ _).trans (Nat.add_comm _ _))))
       (Nat.le_trans (Nat.add_le_add_right later _) now)
 
+/-- Dissipated on from step `S`, the formations taking from the family over any later
+stretch of steps number at most its stock at `S`. -/
+theorem Balances.takers_within (balances : L.Balances W) {cs : List C} :
+    ∀ S N, (∀ t, S ≤ t → L.DissipatesOn cs t) →
+      W.stock cs (S + N) + total (steps S N) (L.takers cs) ≤ W.stock cs S :=
+  fun S N dissipates => takers_within_on S N (fun t _ _ => balances.on cs t)
+    fun t after _ => dissipates t after
+
+/-- Balanced and dissipated on from some step, taking from the family does not recur.
+Nothing is asked of the steps before. -/
+theorem taking_ceases_from {cs : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W cs t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) :
+    ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
+  fun recurs => falls_finitely (W.stock cs) T
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _)
+      ((balances t later).runs_down (dissipates t later)))
+    fun N => match recurs (N + T) with
+    | ⟨t, later, takes⟩ =>
+      have from_ := Nat.le_trans (Nat.le_add_left T N) later
+      ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+        Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right takes)
+          ((balances t from_).runs_down (dissipates t from_))⟩
+
 /-- Dissipated on from some step, taking from the family does not recur. -/
 theorem Balances.taking_ceases (balances : L.Balances W) {cs : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
-  fun recurs => falls_finitely (W.stock cs) T
-    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (balances.runs_down (dissipates t later)))
-    fun N => match recurs (N + T) with
-    | ⟨t, later, takes⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right takes)
-          (balances.runs_down (dissipates t (Nat.le_trans (Nat.le_add_left T N) later)))⟩
+  taking_ceases_from (fun t _ => balances.on cs t) dissipates
 
 /-- A formation taking from a family takes from every family containing it. -/
 theorem takers_pos_of_sub {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ ds) {t : Nat}
@@ -344,6 +431,14 @@ theorem takers_pos_of_sub {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ d
       total_pos_of_mem (q := fun f => sign (total ds (L.take t f))) mem
         (sign_pos (total_pos_of_mem (within c inside) taken))
 
+/-- Taking from a family does not recur where, from some step on, a family containing it is
+balanced and dissipated on. -/
+theorem taking_ceases_within {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ ds) {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
+  fun recurs => taking_ceases_from balances dissipates fun N => match recurs N with
+    | ⟨t, later, takes⟩ => ⟨t, later, takers_pos_of_sub within takes⟩
+
 /-- Under dissipation, a finite family from which formations take at arbitrarily late
 steps is not closed from any step on, and neither is any finite family without
 repetition containing it. -/
@@ -351,9 +446,8 @@ theorem Dissipative.opens (balances : L.Balances W) (dissipative : L.Dissipative
     {cs ds : List C} (distinct : Distinct ds) (within : ∀ c, c ∈ cs → c ∈ ds)
     (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
-  fun closed => balances.taking_ceases (fun t later => dissipative ds t distinct (closed t later))
-    fun N => match recurs N with
-    | ⟨t, later, takes⟩ => ⟨t, later, takers_pos_of_sub within takes⟩
+  fun closed => taking_ceases_within within (fun t _ => balances.on ds t)
+    (fun t later => dissipative ds t distinct (closed t later)) recurs
 
 /-- If finitely many conditions are all there is, taking from any family does not recur
 under dissipation. -/
@@ -429,10 +523,12 @@ theorem Enclosed.around_not_not {t : Nat} (enclosed : L.Enclosed t) :
         fun f present c out => closed f present c fun inside => out (.tail a inside)⟩
     widen (.inr fun inside => widen (.inl inside))
 
-/-- Under dissipation, a family without repetition enclosed around across a step, into
-which nothing beyond it flows, is dissipated on across that step. -/
-theorem Dissipative.dissipatesOn_of_inward (dissipative : L.Dissipative) {ds : List C}
-    (distinct : Distinct ds) {t : Nat} (around : L.Around ds t) (inward : L.Inward ds t) :
+/-- A family without repetition enclosed around across a step, into which nothing beyond it
+flows, is dissipated on across that step, where the families closed across that one step are
+dissipated on. -/
+theorem dissipatesOn_of_inward_at {t : Nat}
+    (dissipative : ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t) {ds : List C}
+    (distinct : Distinct ds) (around : L.Around ds t) (inward : L.Inward ds t) :
     L.DissipatesOn ds t :=
   match around with
   | ⟨es, distinctE, sub, closed⟩ => fun f present =>
@@ -445,13 +541,36 @@ theorem Dissipative.dissipatesOn_of_inward (dissipative : L.Dissipative) {ds : L
         total_le_of_support distinct fun c mem _ => sub c mem
       have takeE : total es (L.take t f) ≤ total ds (L.take t f) :=
         total_le_of_support distinctE fun c _ positive => inward f present gives c positive
-      have dissipates := dissipative es t distinctE closed
+      have dissipates := dissipative es distinctE closed
       have one : sign (total es (L.take t f)) = 1 := Nat.le_antisymm (sign_le_one _)
         (sign_pos (dissipates.takes_of_gives present (Nat.lt_of_lt_of_le gives giveE)))
       Nat.le_trans (Nat.add_le_add_left (sign_le_one _) _)
         (Nat.le_trans (Nat.add_le_add_right giveE 1)
           (Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) one.symm))
             (Nat.le_trans (dissipates f present) takeE)))
+
+/-- Under dissipation, a family without repetition enclosed around across a step, into
+which nothing beyond it flows, is dissipated on across that step. -/
+theorem Dissipative.dissipatesOn_of_inward (dissipative : L.Dissipative) {ds : List C}
+    (distinct : Distinct ds) {t : Nat} (around : L.Around ds t) (inward : L.Inward ds t) :
+    L.DissipatesOn ds t :=
+  dissipatesOn_of_inward_at (fun es => dissipative es t) distinct around inward
+
+/-- Taking draws in, from some step on: where formations take from a finite family without
+repetition at arbitrarily late steps, and from `T₀` on the family is balanced on, enclosed
+around, and every family closed across each step is dissipated on, at arbitrarily late
+steps some formation gives to the family and takes from a condition beyond it. -/
+theorem taking_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+    (around : ∀ t, T₀ ≤ t → L.Around ds t) (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
+    (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+    (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
+    ¬ ∀ t, N ≤ t → L.Inward ds t :=
+  fun inward => taking_ceases_from (T := N + T₀)
+    (fun t later => balances t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+    (fun t later => dissipatesOn_of_inward_at
+      (dissipative t (Nat.le_trans (Nat.le_add_left T₀ N) later)) distinct
+      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) recurs
 
 /-- Taking draws in: under dissipation, where formations take from a finite family without
 repetition at arbitrarily late steps and the family is enclosed around from some step on,
@@ -461,10 +580,8 @@ theorem taking_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
-  fun inward => balances.taking_ceases (T := N + T₀)
-    (fun t later => dissipative.dissipatesOn_of_inward distinct
-      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
-      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) recurs
+  taking_draws_in_from distinct around (fun t _ => balances.on ds t)
+    (fun t _ es => dissipative es t) recurs N
 
 /-! ## Rising and coming to stand -/
 
@@ -473,11 +590,7 @@ whatever gives to it takes more from the family. -/
 theorem rise_lowers_on (balances : L.Balances W) {ds : List C} {t : Nat}
     (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (rises : W.Rises t c) :
     W.stock ds (t + 1) < W.stock ds t :=
-  match total_pos (L.present t) (balances.rise_given rises) with
-  | ⟨_, present, gives⟩ => Nat.lt_of_lt_of_le
-      (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total ds (L.take t f)))
-        present (sign_pos (dissipates.takes_of_gives present (total_pos_of_mem mem gives)))))
-      (balances.runs_down dissipates)
+  (balances.on ds t).rise_lowers dissipates mem rises
 
 /-- So does a member coming to stand. -/
 theorem standing_lowers_on (balances : L.Balances W) {ds : List C} {t : Nat}
@@ -492,23 +605,38 @@ theorem standing_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
     (mem : c ∈ ds) (comes : W.ComesToStand t c) : W.stock ds (t + 1) < W.stock ds t :=
   standing_lowers_on balances (dissipative ds t distinct closed) mem comes
 
+/-- Members of a family balanced and dissipated on from some step on do not rise at
+arbitrarily late steps. Nothing is asked of the steps before. -/
+theorem rising_ceases_from {ds : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c :=
+  fun rising => falls_finitely (W.stock ds) T
+    (fun t later => Nat.le_trans (Nat.le_add_right _ _)
+      ((balances t later).runs_down (dissipates t later)))
+    fun N => match rising (N + T) with
+    | ⟨t, _, later, mem, rises⟩ =>
+      have from_ := Nat.le_trans (Nat.le_add_left T N) later
+      ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+        (balances t from_).rise_lowers (dissipates t from_) mem rises⟩
+
+/-- Nor do they come to stand at arbitrarily late steps. -/
+theorem standing_ceases_from {ds : List C} {T : Nat}
+    (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
+    ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c :=
+  fun coming => rising_ceases_from balances dissipates (Web.rising_of_coming coming)
+
 /-- Members of a family dissipated on from some step on do not rise at arbitrarily late
 steps. -/
 theorem rising_ceases_on (balances : L.Balances W) {ds : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c :=
-  fun rising => falls_finitely (W.stock ds) T
-    (fun t later => Nat.le_trans (Nat.le_add_right _ _) (balances.runs_down (dissipates t later)))
-    fun N => match rising (N + T) with
-    | ⟨t, _, later, mem, rises⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        rise_lowers_on balances (dissipates t (Nat.le_trans (Nat.le_add_left T N) later))
-          mem rises⟩
+  rising_ceases_from (fun t _ => balances.on ds t) dissipates
 
 /-- Nor do they come to stand at arbitrarily late steps. -/
 theorem standing_ceases_on (balances : L.Balances W) {ds : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c :=
-  fun coming => rising_ceases_on balances dissipates (Web.rising_of_coming coming)
+  standing_ceases_from (fun t _ => balances.on ds t) dissipates
 
 /-- Under dissipation, a finite family without repetition whose members rise at
 arbitrarily late steps is not closed from any step on. -/
@@ -526,6 +654,20 @@ theorem standing_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
   rising_opens balances dissipative distinct (Web.rising_of_coming coming) T
 
+/-- Rising draws in, from some step on: as `taking_draws_in_from`, with members of the
+family rising at arbitrarily late steps. -/
+theorem rising_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+    (around : ∀ t, T₀ ≤ t → L.Around ds t) (balances : ∀ t, T₀ ≤ t → L.BalancesOn W ds t)
+    (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+    (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (N : Nat) :
+    ¬ ∀ t, N ≤ t → L.Inward ds t :=
+  fun inward => rising_ceases_from (T := N + T₀)
+    (fun t later => balances t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+    (fun t later => dissipatesOn_of_inward_at
+      (dissipative t (Nat.le_trans (Nat.le_add_left T₀ N) later)) distinct
+      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
+      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) rising
+
 /-- Rising draws in: under dissipation, where members of a finite family without
 repetition rise at arbitrarily late steps and the family is enclosed around from some step
 on, at arbitrarily late steps some formation gives to the family and takes from a
@@ -534,10 +676,8 @@ theorem rising_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
     (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
-  fun inward => rising_ceases_on (T := N + T₀) balances
-    (fun t later => dissipative.dissipatesOn_of_inward distinct
-      (around t (Nat.le_trans (Nat.le_add_left T₀ N) later))
-      (inward t (Nat.le_trans (Nat.le_add_right N T₀) later))) rising
+  rising_draws_in_from distinct around (fun t _ => balances.on ds t)
+    (fun t _ es => dissipative es t) rising N
 
 /-- So does coming to stand. -/
 theorem standing_draws_in (balances : L.Balances W) (dissipative : L.Dissipative)
@@ -565,9 +705,9 @@ theorem standing_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
 
 /-! ## Rising and falling in one exchange -/
 
-/-- Across a step dissipated on, a family's members fall by at least as much as they rise,
-and by one more for each formation taking from the family. -/
-theorem Balances.falls_cover (balances : L.Balances W) {ds : List C} {t : Nat}
+/-- Across a step at which a family is balanced and dissipated on, its members fall by at
+least as much as they rise, and by one more for each formation taking from the family. -/
+theorem BalancesOn.falls_cover {ds : List C} {t : Nat} (balances : L.BalancesOn W ds t)
     (dissipates : L.DissipatesOn ds t) :
     risen ds (fun c s => W.level s c) t + L.takers ds t ≤ fallen ds (fun c s => W.level s c) t :=
   le_of_add_le_add_right (W.stock ds (t + 1)) (Nat.le_trans
@@ -577,25 +717,26 @@ theorem Balances.falls_cover (balances : L.Balances W) {ds : List C} {t : Nat}
       (Nat.le_of_eq ((family_over_stretch (fun c s => W.level s c) t 1 ds).symm.trans
         (Nat.add_comm _ _)))))
 
-/-- Across a step dissipated on, a formation taking from the family makes one of its
-members fall, whether or not another rises. -/
-theorem Balances.falls_of_taking (balances : L.Balances W) {ds : List C} {t : Nat}
+/-- Across a step at which a family is balanced and dissipated on, a formation taking from it
+makes one of its members fall. -/
+theorem BalancesOn.falls_of_taking {ds : List C} {t : Nat} (balances : L.BalancesOn W ds t)
     (dissipates : L.DissipatesOn ds t) (takes : 0 < L.takers ds t) :
     ∃ d, d ∈ ds ∧ W.Falls t d :=
   match total_pos (q := fun d => fall (fun s => W.level s d) t) ds (Nat.lt_of_lt_of_le takes
       (Nat.le_trans (Nat.le_add_left _ _) (balances.falls_cover dissipates))) with
   | ⟨d, mem, falls⟩ => ⟨d, mem, excess_pos.mp falls⟩
 
-/-- The depletion of `Becoming.Generation` follows: an event at each of whose steps the
-family is dissipated on and some formation takes from it depletes the family. -/
-theorem Balances.depletes (balances : L.Balances W) {ds : List C} {event : Nat → Prop}
-    (taken : ∀ t, event t → L.DissipatesOn ds t ∧ 0 < L.takers ds t) : W.Depletes ds event :=
+/-- An event at each of whose steps the family is balanced and dissipated on, and some
+formation takes from it, depletes the family. -/
+theorem depletes_at {ds : List C} {event : Nat → Prop}
+    (taken : ∀ t, event t → L.BalancesOn W ds t ∧ L.DissipatesOn ds t ∧ 0 < L.takers ds t) :
+    W.Depletes ds event :=
   fun t happens _ => match taken t happens with
-  | ⟨dissipates, takes⟩ => balances.falls_of_taking dissipates takes
+  | ⟨balances, dissipates, takes⟩ => balances.falls_of_taking dissipates takes
 
-/-- Rising and falling in one exchange: where a member of a family dissipated on across a
-step rises, another member falls across the same step. -/
-theorem rise_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
+/-- Rising and falling in one exchange, at the step: where a member of a family balanced and
+dissipated on across a step rises, another member falls across it. -/
+theorem BalancesOn.rise_with_fall {ds : List C} {t : Nat} (balances : L.BalancesOn W ds t)
     (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (rises : W.Rises t c) :
     ∃ d, d ∈ ds ∧ d ≠ c ∧ W.Falls t d :=
   match total_pos (q := fun d => fall (fun s => W.level s d) t) ds (Nat.lt_of_lt_of_le
@@ -605,6 +746,55 @@ theorem rise_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
   | ⟨d, mem', fell⟩ =>
     have falls : W.Falls t d := excess_pos.mp fell
     ⟨d, mem', fun same => Nat.lt_asymm rises (same ▸ falls), falls⟩
+
+/-- Rising and falling in one exchange, read of formations, at the step: where a member of a
+family balanced and dissipated on across a step rises, and its givers there are active and
+whatever takes there is active and draws on what it takes from, an active formation gives
+to it and takes from the family, and another member falls, taken from by an active
+formation drawing on it. -/
+theorem BalancesOn.rise_exchange {ds : List C} {t : Nat} (balances : L.BalancesOn W ds t)
+    (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (rises : W.Rises t c)
+    (acting : ∀ f, f ∈ L.present t → 0 < L.give t f c → W.active t f)
+    (taking : ∀ f d, f ∈ L.present t → 0 < L.take t f d → W.active t f ∧ W.draws t f d) :
+    (∃ f, f ∈ L.present t ∧ W.active t f ∧ 0 < L.give t f c ∧ 0 < total ds (L.take t f)) ∧
+      ∃ d g, d ∈ ds ∧ d ≠ c ∧ W.Falls t d ∧
+        g ∈ L.present t ∧ W.active t g ∧ W.draws t g d ∧ 0 < L.take t g d :=
+  ⟨match total_pos (L.present t) (balances.rise_given mem rises) with
+    | ⟨f, present, gives⟩ => ⟨f, present, acting f present gives, gives,
+        dissipates.takes_of_gives present (total_pos_of_mem mem gives)⟩,
+   match balances.rise_with_fall dissipates mem rises with
+    | ⟨d, mem', other, falls⟩ => match total_pos (L.present t) (balances.fall_taken mem' falls) with
+      | ⟨g, present, takes⟩ =>
+        ⟨d, g, mem', other, falls, present, (taking g d present takes).1,
+          (taking g d present takes).2, takes⟩⟩
+
+/-- Across a step dissipated on, a family's members fall by at least as much as they rise,
+and by one more for each formation taking from the family. -/
+theorem Balances.falls_cover (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) :
+    risen ds (fun c s => W.level s c) t + L.takers ds t ≤ fallen ds (fun c s => W.level s c) t :=
+  (balances.on ds t).falls_cover dissipates
+
+/-- Across a step dissipated on, a formation taking from the family makes one of its
+members fall, whether or not another rises. -/
+theorem Balances.falls_of_taking (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) (takes : 0 < L.takers ds t) :
+    ∃ d, d ∈ ds ∧ W.Falls t d :=
+  (balances.on ds t).falls_of_taking dissipates takes
+
+/-- The depletion of `Becoming.Generation` follows: an event at each of whose steps the
+family is dissipated on and some formation takes from it depletes the family. -/
+theorem Balances.depletes (balances : L.Balances W) {ds : List C} {event : Nat → Prop}
+    (taken : ∀ t, event t → L.DissipatesOn ds t ∧ 0 < L.takers ds t) : W.Depletes ds event :=
+  depletes_at fun t happens => match taken t happens with
+  | ⟨dissipates, takes⟩ => ⟨balances.on ds t, dissipates, takes⟩
+
+/-- Rising and falling in one exchange: where a member of a family dissipated on across a
+step rises, another member falls across the same step. -/
+theorem rise_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
+    (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (rises : W.Rises t c) :
+    ∃ d, d ∈ ds ∧ d ≠ c ∧ W.Falls t d :=
+  (balances.on ds t).rise_with_fall dissipates mem rises
 
 /-- So does a member coming to stand. -/
 theorem standing_with_fall (balances : L.Balances W) {ds : List C} {t : Nat}
@@ -631,13 +821,8 @@ theorem rise_exchange (balances : L.Balances W) (acting : L.Acting W) (taking : 
     (∃ f, f ∈ L.present t ∧ W.active t f ∧ 0 < L.give t f c ∧ 0 < total ds (L.take t f)) ∧
       ∃ d g, d ∈ ds ∧ d ≠ c ∧ W.Falls t d ∧
         g ∈ L.present t ∧ W.active t g ∧ W.draws t g d ∧ 0 < L.take t g d :=
-  ⟨match total_pos (L.present t) (balances.rise_given rises) with
-    | ⟨f, present, gives⟩ => ⟨f, present, acting t f c present gives, gives,
-        dissipates.takes_of_gives present (total_pos_of_mem mem gives)⟩,
-   match rise_with_fall balances dissipates mem rises with
-    | ⟨d, mem', other, falls⟩ => match balances.takenBy taking falls with
-      | ⟨g, present, takes, active, draws⟩ =>
-        ⟨d, g, mem', other, falls, present, active, draws, takes⟩⟩
+  (balances.on ds t).rise_exchange dissipates mem rises (fun f present gives =>
+    acting t f c present gives) fun f d present takes => taking t f d present takes
 
 end Flow
 

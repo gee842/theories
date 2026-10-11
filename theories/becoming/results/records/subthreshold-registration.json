@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "subthreshold-registration",
   "title": {
-    "zh": "阈下的差别：交换随反映时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然",
+    "zh": "阈下的差别：交换随识时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然",
     "en": "Differences below the threshold: where the exchange follows registration, a difference in a stock a formation depends on and does not observe stays until the two webs' support diverges; observing the stock lifts it, and others responding to the stock itself break it"
   },
   "kind": "theorem",
@@ -10,20 +10,20 @@
   "family": "F04",
   "reviewed_at_utc": "2026-10-11T07:31:40+00:00",
   "claim": {
-    "zh": "设两个流在形成 g 所反映（依存或观察）的每个条件上逐步平衡，并且 g 周围的交换随其反映：凡 g 直到某步反映相同，两个流跨过该步在 g 所反映的每个条件上，对在场的全部形成，取用与给予的总量相同（Flow.ExchangeFollows）。那么 g 反映相同期间，它所反映条件上的每个差别都保持起始的样子（Flow.difference_kept）。第二个网在 g 所反映的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 g 的每一步，g 都反映相同（Flow.alike_while_supported），可以有任意多个条件不同；差别在某步之前已改变，必有更早的一步，第二个网的水平接纳 g 而第一个网不支持它，活动需要支持时 g 在第一个网中并非此前每步都活跃（Flow.difference_changes_after_divergence）。起始只在 g 依存而不观察的一个储量上不同、第二个网中高 d 时，在第一个网此前每步都支持 g 的每一步，储量恰好高 d，g 所反映的其余条件相同，g 此前每步都反映相同（Flow.subthreshold_alike）；第一个网每步都支持 g 时每步都如此（Flow.subthreshold_alike_always）。见证：SupportDrawn 中形成需要一个单位、在每个被支持的步取一个单位，交换只随支持，差别保持到第三步，较低的网在第三步不支持它而较高的网支持，第四步差别已变（SupportDrawn.difference_waits）；JointFailure 中两网从第二步起都不支持形成，差别每步都保持（JointFailure.difference_kept）；Gauged 中观察储量的形成在第一步取尽需要之上的全部，在较高的网中动用了差别，交换随其反映而不约束任何东西，只反映支持时交换不随其反映（Gauged.gauge_changes_difference）；储量划作自身的立着时，量度自身就是量度储量（Gauged.own_is_stock）；Attracting 中被较高的储量招来的取用者使较高的网在第二步就不支持依存者，交换不随其反映（Attracting.higher_breaks_first）；SelfPrey 中以所需一依存于自身的猎物，咬一个单位经支持每步都反映相同，量度自身在第二步反映它，咬两个单位经支持在第二步就被反映（SelfPrey.threshold_on_oneself）。不用 Lean 公理。",
+    "zh": "设两个流在形成 g 所识（依存或观察）的每个条件上逐步平衡，并且 g 周围的交换随其识：凡 g 直到某步识得相同，两个流跨过该步在 g 所识的每个条件上，对在场的全部形成，取用与给予的总量相同（Flow.ExchangeFollows）。那么 g 识得相同期间，它所识条件上的每个差别都保持起始的样子（Flow.difference_kept）。第二个网在 g 所识的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 g 的每一步，g 都识得相同（Flow.alike_while_supported），可以有任意多个条件不同；差别在某步之前已改变，必有更早的一步，第二个网的水平接纳 g 而第一个网不支持它，活动需要支持时 g 在第一个网中并非此前每步都活跃（Flow.difference_changes_after_divergence）。起始只在 g 依存而不观察的一个储量上不同、第二个网中高 d 时，在第一个网此前每步都支持 g 的每一步，储量恰好高 d，g 所识的其余条件相同，g 此前每步都识得相同（Flow.subthreshold_alike）；第一个网每步都支持 g 时每步都如此（Flow.subthreshold_alike_always）。见证：SupportDrawn 中形成需要一个单位、在每个被支持的步取一个单位，交换只随支持，差别保持到第三步，较低的网在第三步不支持它而较高的网支持，第四步差别已变（SupportDrawn.difference_waits）；JointFailure 中两网从第二步起都不支持形成，差别每步都保持（JointFailure.difference_kept）；Gauged 中观察储量的形成在第一步取尽需要之上的全部，在较高的网中动用了差别，交换随其识而不约束任何东西，只识支持时交换不随其识（Gauged.gauge_changes_difference）；储量划作自身的立着时，量度自身就是量度储量（Gauged.own_is_stock）；Attracting 中被较高的储量招来的取用者使较高的网在第二步就不支持依存者，交换不随其识（Attracting.higher_breaks_first）；SelfPrey 中以所需一依存于自身的猎物，咬一个单位经支持每步都识得相同，量度自身在第二步识之，咬两个单位经支持在第二步就被识（SelfPrey.threshold_on_oneself）。不用 Lean 公理。",
     "en": "Let two flows balance at each step on every condition a formation g registers (depends on or observes), and let the exchange around g follow its registration: wherever g has registered alike up to a step, the two flows take from and give to every condition g registers alike across that step, in total over every formation present (Flow.ExchangeFollows). Then while g registers alike every difference on a condition it registers stays as it was at the start (Flow.difference_kept). Where the second web starts at least as high on what g registers and alike on what it observes, g registers alike at every step before which the first web supported it (Flow.alike_while_supported), any number of conditions differing; where a difference has changed by a step, at some earlier step the second web's levels admitted g and the first web did not support it, and where activity needs support g was not active in the first web at every earlier step (Flow.difference_changes_after_divergence). Where the starts differ only in one stock g depends on and does not observe, d higher in the second web, at every step before which the first web supported g at every step the stock stands exactly d higher, every other condition g registers stands alike and g has registered alike (Flow.subthreshold_alike), and at every step where the first web supports g at every step (Flow.subthreshold_alike_always). Witnesses: in SupportDrawn a formation needing one unit draws one unit at each supported step, the exchange following its support only; the difference stands through the third step, where the lower web fails to support it and the higher supports it, and has changed by the fourth (SupportDrawn.difference_waits); in JointFailure both webs fail the formation from the second step and the difference stands at every step (JointFailure.difference_kept); in Gauged a formation observing its stock draws all of it above its need at the first step and draws on the difference in the higher web, the exchange following its registration constraining nothing, while through support only the exchange does not follow its registration (Gauged.gauge_changes_difference); carving the stock as its own standing, a gauge of oneself is the gauge of the stock (Gauged.own_is_stock); in Attracting a taker drawn by the higher stock makes the higher web fail the dependent at the second step, the exchange not following its registration (Attracting.higher_breaks_first); in SelfPrey, with the prey depending on its own standing at need one, a bite of one registers alike through support at every step and through a gauge of oneself at the second, and a bite of two registers through support at the second step (SelfPrey.threshold_on_oneself). No Lean axiom is used."
   },
   "hypotheses": [
     {
-      "zh": "平衡只在被反映的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。",
+      "zh": "平衡只在被识的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。",
       "en": "Balance is assumed only on the conditions registered, at each step (Flow.BalancesOn, singleton families, needing no finiteness); global balance gives it through Flow.Balances.on."
     },
     {
-      "zh": "交换随反映（Flow.ExchangeFollows）是给出的假设，不由动力学推出：它是关于 g 周围全部交换的，排除他者对 g 所不反映者作出回应；Attracting 是它不成立时的反例。",
+      "zh": "交换随识（Flow.ExchangeFollows）是给出的假设，不由动力学推出：它是关于 g 周围全部交换的，排除他者对 g 所不识者作出回应；Attracting 是它不成立时的反例。",
       "en": "The exchange following registration (Flow.ExchangeFollows) is a supplied hypothesis, not derived from the dynamics: it concerns the whole exchange around g and excludes others responding to what g does not register; Attracting is the counterexample where it fails."
     },
     {
-      "zh": "反映：形成反映它的支持（水平是否接纳它）与它所观察之条件的水平（obs，参数，基础是 supportOnly）。活动由表示给出，不算作被反映；在 Web.Dependent 之下它不能超出支持。",
+      "zh": "识：形成识它的支持（水平是否接纳它）与它所观察之条件的水平（obs，参数，基础是 supportOnly）。活动由表示给出，不算作被识；在 Web.Dependent 之下它不能超出支持。",
       "en": "Registration: a formation registers its support (whether the levels admit it) and the levels of the conditions it observes (obs, a parameter, with supportOnly the base). Activity is supplied by the representation and is not counted as registered; under Web.Dependent it cannot outrun support."
     },
     {
@@ -36,8 +36,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（阈下在交换随反映之处，视界之外在延续开放之处，反映闭包之外在成员只经自己的反映回应之处）；失控的读法是启发，不是陈述；理 读作对反映负责的模型。所以记录中的读法是 AI 收窄之后的，待 Ren，不是 Ren 所接受的原文。第 4 问（形成自身的立着是否算作被反映）由 AI 探索后决定：基础只反映支持（supportOnly），一类读法中自身的立着经承担自身（Web.SelfBearing）作为阈值反映，量度自身（ownStanding）是观察前提；理由见整合文档 §70.1。“反映”（registers）原作“计入”，与 P42 一致；Ren 认为“计入 is apparently weird, need better word”，改为“反映”，取差别在形成的状态中显出之义（见整合文档 §{SEC}.2）。",
-    "en": "Ren's proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”. The AI's answer proposed three blindnesses of feedback, a runaway as a loop running inside one of them, the ways across them, falsifiability as the condition of being corrected by the unfolding, and a reading of 理; Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”. The independent review narrowed the readings: each blindness has its scope (below a threshold where the exchange follows registration, beyond the horizon where the continuation is open, beyond the registration closure where the members respond only through their own registration); the runaway reading is a heuristic, not a statement; and 理 is read as a model answerable to registration. So the readings recorded here are the AI's narrowed ones, pending Ren, not the wording Ren accepted. Question 4, whether a formation's own standing counts as registered, was decided by the AI after exploring the options: the base registers support only (supportOnly); in the one-kind reading own standing registers through self-bearing (Web.SelfBearing) as a threshold; and a gauge of oneself (ownStanding) is an observation premise. The reasons are in §70.1 of the integration note. The Chinese for “registers” was 计入, as in P42; Ren found it “apparently weird” and asked for a better word, so it is 反映, a difference showing in the formation's state (§70.2 of the integration note)."
+    "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（阈下在交换随识之处，视界之外在延续开放之处，识闭包之外在成员只经自己之识回应之处）；失控的读法是启发，不是陈述；理 读作对识负责的模型。所以记录中的读法是 AI 收窄之后的，待 Ren，不是 Ren 所接受的原文。第 4 问（形成自身的立着是否算作被识）由 AI 探索后决定：基础只识支持（supportOnly），一类读法中自身的立着经承担自身（Web.SelfBearing）作为阈值被识，量度自身（ownStanding）是观察前提；理由见整合文档 §70.1。“识”（registers）原作“计入”，与 P42 一致；Ren 认为“计入 is apparently weird, need better word”，AI 先改为“反映”，Ren 定为“识”（“for registers, use 识”），取差别在形成的状态中显出之义（见整合文档 §{SEC}.2）。",
+    "en": "Ren's proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”. The AI's answer proposed three blindnesses of feedback, a runaway as a loop running inside one of them, the ways across them, falsifiability as the condition of being corrected by the unfolding, and a reading of 理; Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”. The independent review narrowed the readings: each blindness has its scope (below a threshold where the exchange follows registration, beyond the horizon where the continuation is open, beyond the registration closure where the members respond only through their own registration); the runaway reading is a heuristic, not a statement; and 理 is read as a model answerable to registration. So the readings recorded here are the AI's narrowed ones, pending Ren, not the wording Ren accepted. Question 4, whether a formation's own standing counts as registered, was decided by the AI after exploring the options: the base registers support only (supportOnly); in the one-kind reading own standing registers through self-bearing (Web.SelfBearing) as a threshold; and a gauge of oneself (ownStanding) is an observation premise. The reasons are in §70.1 of the integration note. The Chinese for “registers” was 计入, as in P42; Ren found it “apparently weird” and asked for a better word, the AI proposed 反映, and Ren chose 识 (“for registers, use 识”): a difference showing in the formation's state (§70.2 of the integration note)."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
   "aliases": [
@@ -67,11 +67,11 @@
       },
       "interface": {
         "output": {
-          "zh": "一个形成反映什么，两个水平历史何时对它反映相同。",
+          "zh": "一个形成识什么，两个水平历史何时对它识得相同。",
           "en": "What a formation registers, and when two level histories register alike for it."
         },
         "input": {
-          "zh": "交换随反映的假设与阈下差别的规律。",
+          "zh": "交换随识的假设与阈下差别的规律。",
           "en": "The hypothesis of the exchange following registration, and the laws of differences below the threshold."
         },
         "conditions": {
@@ -94,7 +94,7 @@
           "en": "Admission."
         },
         "input": {
-          "zh": "第二个网的水平在第一个网支持 g 处接纳 g，所以 g 反映相同。",
+          "zh": "第二个网的水平在第一个网支持 g 处接纳 g，所以 g 识得相同。",
           "en": "The second web's levels admit g wherever the first web supports it, so g registers alike."
         },
         "conditions": {
@@ -117,7 +117,7 @@
           "en": "Dependence."
         },
         "input": {
-          "zh": "被反映的条件。",
+          "zh": "被识的条件。",
           "en": "The conditions registered."
         },
         "conditions": {
@@ -132,21 +132,21 @@
     {
       "id": "reserve-defers-ending",
       "detail": {
-        "zh": "那里储备推迟终结而不逃脱它；这里交换随反映时，储量上的差别在支持分岔之前不被反映。",
+        "zh": "那里储备推迟终结而不逃脱它；这里交换随识时，储量上的差别在支持分岔之前不被识。",
         "en": "There a reserve defers the end and does not escape it; here, where the exchange follows registration, a difference in a stock registers only once support diverges."
       }
     },
     {
       "id": "consumption-ends-with-feeders",
       "detail": {
-        "zh": "那里只由不被支持的供给者供给的消耗至多持续其所消耗的水平那么多步；这里支持在分岔之前不反映储量的差别。",
+        "zh": "那里只由不被支持的供给者供给的消耗至多持续其所消耗的水平那么多步；这里支持在分岔之前不识储量的差别。",
         "en": "There consumption fed only by unsupported feeders lasts at most as many steps as the level it consumes; here support registers a difference in a stock only once it diverges."
       }
     },
     {
       "id": "becoming-finite-horizon",
       "detail": {
-        "zh": "那里有限的前缀不决定更新还是消耗；这里是阈值处的反映。",
+        "zh": "那里有限的前缀不决定更新还是消耗；这里是阈值处的识。",
         "en": "There no finite prefix decides renewal or consumption; here registration at a threshold."
       }
     }
@@ -155,7 +155,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "detail": {
-        "zh": "他者回应储量本身时，交换不随反映，较高的储量可以先终结依存者：Attracting 中被三个单位的储量招来的取用者使较高的网在第二步就不支持依存者，较低的网仍支持（Attracting.higher_breaks_first）。未加限定的读法“损失直到断裂才被反映”对此不成立。",
+        "zh": "他者回应储量本身时，交换不随识，较高的储量可以先终结依存者：Attracting 中被三个单位的储量招来的取用者使较高的网在第二步就不支持依存者，较低的网仍支持（Attracting.higher_breaks_first）。未加限定的读法“损失直到断裂才被识”对此不成立。",
         "en": "Where others respond to the stock itself the exchange does not follow registration, and a higher stock can end the dependent first: in Attracting a taker drawn by a stock of three makes the higher web fail the dependent at the second step while the lower web still supports it (Attracting.higher_breaks_first). The unqualified reading that losses register only at the break fails here."
       }
     },
@@ -168,12 +168,12 @@
     }
   ],
   "limitations": {
-    "zh": "形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随反映是给出的假设，哪些展开满足它是经验问题；回路、增益与失控没有定义，失控的读法是启发；观察是精确的，带误差的量度（校准）没有建模；读法是 AI 的，经审查收窄，待 Ren；不含伦理谓词。",
+    "zh": "形成观察支持之外的任何东西、量度自身的立着或想要避免失控都不推出；交换随识是给出的假设，哪些展开满足它是经验问题；回路、增益与失控没有定义，失控的读法是启发；观察是精确的，带误差的量度（校准）没有建模；读法是 AI 的，经审查收窄，待 Ren；不含伦理谓词。",
     "en": "That a formation observes anything beyond its support, gauges its own standing or wants to avoid a runaway is not derived; the exchange following registration is a supplied hypothesis, and which unfoldings meet it is empirical; loops, gain and runaway are not defined, and the runaway reading is a heuristic; observation is exact, and measurement with error (calibration) is not modelled; the readings are the AI's, narrowed by the review, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T101806.880391Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Flow.difference_kept、alike_while_supported、difference_changes_after_divergence、subthreshold_alike、SupportDrawn.difference_waits 与 Attracting.higher_breaks_first；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2344 项定理／3509 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T105433.502229Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T101806.880391Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Flow.difference_kept, alike_while_supported, difference_changes_after_divergence, subthreshold_alike, SupportDrawn.difference_waits and Attracting.higher_breaks_first; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2344 theorems/3509 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T105433.502229Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Flow.difference_kept、alike_while_supported、difference_changes_after_divergence、subthreshold_alike、SupportDrawn.difference_waits 与 Attracting.higher_breaks_first；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Flow.difference_kept, alike_while_supported, difference_changes_after_divergence, subthreshold_alike, SupportDrawn.difference_waits and Attracting.higher_breaks_first; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -219,9 +219,9 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
       "declarations": [
         "Becoming.Flow.BalancesOn",
         "Becoming.Flow.Balances.on"
@@ -246,7 +246,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
       "declarations": [
         "Becoming.Web.SelfBearing"
       ]
@@ -254,25 +254,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "23d5b041dfe3e33cbf1448ba14172bf07b00cbf8d670b612f40a5f7bc0e4692c",
+      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "79d84cc0e2c7045f3111a6da0621d96d35e98e47ca9e4d52011d1c02cbc38657",
+      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "829a9e7868f218a19dccb7e90c2c3e9869bb97831f5055fc166b3f9aeb6165d8",
+      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
       "role": "integration",
-      "sha256": "d4f5bd8af7c36758b7300ab1d087865a178f18a873321d32e442255384421104",
+      "sha256": "425b68476ac8e939315dad002f5222ff51cbd692db09ae614ee4a9d0f9b8627f",
       "declarations": []
     },
     {
@@ -284,7 +284,7 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md",
       "role": "provenance",
-      "sha256": "57b9218ab8c1413569ef8ecc50ad7adaa764ce6119f374bfab9cc04076649a56",
+      "sha256": "4fc423936815ac19535df80e99d3142ff56eda536da9fa6ba55be77ef39a48fd",
       "declarations": []
     }
   ],
@@ -293,13 +293,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Testing",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Locality",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -323,10 +316,17 @@
       "sha256_pointer": "/source_sha256/Becoming.Roles",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "定义回路（水平影响取用、取用又影响水平的闭合）并把失控陈述为定理；由动力学给出交换随反映，而不是假设它；带误差的观察（校准）。",
+    "zh": "定义回路（水平影响取用、取用又影响水平的闭合）并把失控陈述为定理；由动力学给出交换随识，而不是假设它；带误差的观察（校准）。",
     "en": "Define a loop (levels affecting taking, and taking the levels) and state a runaway as a theorem; give the exchange following registration from the dynamics rather than assume it; observation with error (calibration)."
   },
   "history": [
@@ -337,6 +337,14 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“反映”；断言不变。",
+      "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 反映; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.Flow.BalancesOn、Becoming.Flow.Balances.on 移入 Becoming.Flow（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: Becoming.Flow.BalancesOn, Becoming.Flow.Balances.on moved into Becoming.Flow (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
     }
   ]
 }

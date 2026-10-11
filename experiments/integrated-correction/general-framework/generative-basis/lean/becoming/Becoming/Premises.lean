@@ -153,15 +153,21 @@ variable {w}
 theorem Dependent.carried (dependent : w.Dependent) : w.Carried :=
   ⟨fun _ _ => 0, Web.carries_zero.mpr dependent⟩
 
+/-- With activity decided, a list without repetition covering the relata active at a step
+lists them there, each once, by keeping those active: only that step is used. -/
+theorem keep_lists {t : Nat} [∀ x, Decidable (w.web.active t x)] {l : List w.Relatum}
+    (distinct : Distinct l) (covers : ∀ x, w.web.active t x → x ∈ l) :
+    Distinct (keep (w.web.active t) l) ∧ ∀ x, w.web.active t x ↔ x ∈ keep (w.web.active t) l :=
+  ⟨keep_distinct distinct, fun x =>
+    ⟨fun active => mem_keep.mpr ⟨covers x active, active⟩, fun mem => (mem_keep.mp mem).2⟩⟩
+
 /-- In a finite world whose activity is decided, the active relata at each step can be
 listed: a census exists. -/
 theorem Finite.counted [∀ t x, Decidable (w.web.active t x)] (finite : w.Finite) :
     w.Counted :=
   match finite with
   | ⟨all, distinct, every⟩ =>
-    ⟨fun t => keep (w.web.active t) all, fun _ =>
-      ⟨keep_distinct distinct, fun x =>
-        ⟨fun active => mem_keep.mpr ⟨every x, active⟩, fun mem => (mem_keep.mp mem).2⟩⟩⟩
+    ⟨fun t => keep (w.web.active t) all, fun _ => keep_lists distinct fun x _ => every x⟩
 
 /-- A world whose activity is decided and whose relata ever active lie on one list has a
 census (the eleventh review's probe). -/
@@ -174,13 +180,26 @@ theorem Finite.enclosed (finite : w.Finite) (t : Nat) : w.flow.Enclosed t :=
   match finite with
   | ⟨all, distinct, every⟩ => ⟨all, distinct, fun _ _ c outside => absurd (every c) outside⟩
 
+/-- Across a step at which some family is closed and dissipated on, and whatever takes is
+active, whatever gives is active: giving needs uptake from the family. Only that step and
+that family are used. -/
+theorem acting_across_on {t : Nat} {cs : List w.Relatum} (closed : w.flow.ClosedAt cs t)
+    (dissipates : w.flow.DissipatesOn cs t)
+    (taking : ∀ f c, f ∈ w.flow.present t → 0 < w.flow.take t f c → w.web.active t f)
+    {f c : w.Relatum} (present : f ∈ w.flow.present t) (gives : 0 < w.flow.give t f c) :
+    w.web.active t f :=
+  match total_pos (q := w.flow.take t f) cs (Nat.lt_of_le_of_lt (Nat.zero_le _)
+      (dissipates.gives_less_closed closed present gives)) with
+  | ⟨_, _, takes⟩ => taking f _ present takes
+
 /-- Where only active relata take and the flow dissipates, only active relata give across
 an enclosed step: giving needs uptake there (`Flow.Dissipative.giving_needs_uptake`). -/
 theorem acting_across (taking : w.Taking) (dissipative : w.Dissipative) {t : Nat}
     (enclosed : w.flow.Enclosed t) {f c : w.Relatum} (present : f ∈ w.flow.present t)
     (gives : 0 < w.flow.give t f c) : w.web.active t f :=
-  match Flow.Dissipative.giving_needs_uptake dissipative enclosed present gives with
-  | ⟨_, takes⟩ => (taking t _ _ present takes).1
+  match enclosed with
+  | ⟨cs, distinct, closed⟩ => acting_across_on closed (dissipative cs t distinct closed)
+      (fun f c present takes => (taking t f c present takes).1) present gives
 
 /-- So where every step is enclosed, only active relata give. -/
 theorem acting_of_enclosed (taking : w.Taking) (dissipative : w.Dissipative)
