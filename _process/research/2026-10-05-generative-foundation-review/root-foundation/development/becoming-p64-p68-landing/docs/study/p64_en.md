@@ -1,0 +1,30 @@
+**P64: selection through registration.** Ren asked "hows cause–effect system comparing to our theory?" and pasted an explanation of causal systems whose author is not stated; it reads as written by an AI assistant elsewhere and is neither Ren's wording nor a premise of the theory. The AI compared the theory with that frame (`x_{t+1} = F(x_t, u_t, ε_t)`, feedback, systems that change their own rule, attractors) and proposed five things to learn from it. Ren answered "Great, let's finish all of them, you can spawn sub agents in a wise order if needed" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-cause-effect-comparison.md)). The five proposals are the AI's. This is the first of them, claimed on the work board as P64: selection reaches only what the selector registers. `Becoming.Selection` ({N_MODULE} theorems, L4) imports `Becoming.Testing` and `Becoming.Capture` (P62, landed before it) and changes no existing module. It adds no axiom. Balance is assumed only on the conditions registered. That a selection goes through registration is a condition written into each theorem, never derived.
+- **A selection reaches exactly what registers.** A selection is any claim about level histories, read as which histories are kept, rewarded or leave more descendants. It goes through `f`'s registration up to `t` when histories `f` registers alike up to `t` are selected alike (`Web.SelectsThrough`); a score goes through it when they score alike (`Web.ScoresThrough`).
+  - Two histories are selected alike by every selection through `g`'s registration exactly when `g` registers them alike (`Web.selects_alike_iff`, no premise).
+  - Where `g` registers them apart, its belief is a selection through its registration that separates them (`Web.belief_selects`, `Web.separates`).
+  - A selection through registration is a claim its selector tests completely: it is refuted exactly where it fails (`Web.SelectsThrough.refutes_iff`).
+  - Admission and observed levels are selected and scored through registration (`Web.admits_through`, `Web.observed_scores`, `Web.ScoresThrough.atLeast`).
+  - The property survives later steps, more observation, negation and conjunction (`Web.SelectsThrough.later`, `widen`, `not`, `and`).
+  - Registering alike is an equivalence (`Web.RegistersAlikeUpTo.trans`).
+  - For scores the converse direction takes the decidability of registering alike as a named hypothesis (`Web.scores_alike_iff`).
+- **Pooled registration.** Group selections reach exactly what the group registers together (`Web.SelectsThroughAll`, `Web.selects_alike_all_iff`, `Web.separates_all`). A member's selection is a group selection (`Web.SelectsThrough.all`), and group selections are closed under conjunction (`Web.SelectsThroughAll.and`).
+- **Blind beyond the registration closure.** With the rest of the exchange fixed and a part beyond `f`'s registration closure:
+  - every selection and every score through the registration of a formation within the closure treats the levels with and without the part alike (`Flow.unselected_beyond_registration`, `Flow.unscored_beyond_registration`);
+  - so does every group whose members all lie within the closure (`Flow.unselected_beyond_registration_all`);
+  - where the members respond, the same holds under the hypotheses of `Flow.alike_within_registration` (`Flow.unselected_beyond_registration_responsive`).
+- **The gap.** In `Clearing` the dweller lies within the clearer's reach closure and beyond its registration closure (`Clearing.dweller_within_reach`).
+  - Every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in one and not the other (`Clearing.unselected`).
+  - The dweller's admission at the third step is a selection through the dweller's registration, and it separates the two worlds (`Clearing.selected_by_dweller`).
+  - "Both admitted at the third step" is a selection through the pooled registration of the clearer and the dweller and through neither alone (`Clearing.selected_pooled`).
+- **Selection favours reaching beyond.** In `Diversion` a taker gauges a store.
+  - In the diverting flow the taker takes a unit from the source a dweller depends on and gives it to the store. "The store stands at least one at the second step" is a selection through the taker's registration that holds there and fails in the restrained flow. The diverting flow reaches the dweller, beyond the taker's registration closure, and ends it (`Diversion.favours`).
+  - Every selection through the taker's registration selects the diverting flow alike with a supplying flow that raises the store without reaching beyond (`Diversion.blind_to_source`).
+- **Share among descendants (an application).** Where a selection gives the parents it holds for at least `a` offspring each and the others at most `b < a`, the carriers' share rises among the offspring (`share_rises_through`). This is Capture's `share_rises` with the selection supplying the carriers; it adds no arithmetic.
+
+On the AI's readings, pending Ren:
+- Any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what that selector registers. It is blind to whatever a candidate's part does beyond the selector's registration closure, however far the candidate's reach closure extends; the gap is the reach closure less the registration closure.
+- The gap closes only through relations: dependence, observation, or another's registration pooled, as the dweller's is.
+- Where reaching beyond raises what registers, selection favours it. With `share_rises`, the share of what reaches beyond rises while the world is open.
+- Read for AI training, a reward process is a selector: training reaches only what the reward registers. The AI connects this with the title of Ren's paper "When Capability Outruns Correction"; the connection is the AI's.
+
+Record added: selection-through-registration. Receipt {RECEIPT} (Selection {N_MODULE}); periphery receipt {PERIPHERY}. Not yet independently reviewed; the author's counterreview is in section {S}.
