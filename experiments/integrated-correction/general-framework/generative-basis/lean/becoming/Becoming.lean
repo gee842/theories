@@ -20,6 +20,7 @@ import Becoming.Seeking
 import Becoming.Roles
 import Becoming.Reserve
 import Becoming.Evolution
+import Becoming.Capture
 import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
@@ -213,6 +214,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   descendant's need is at most its condition's level at the giving step, plus the bound,
   met there only when the bound is zero, and in a balanced flow what is taken from and
   given to the condition in between sets that level.
+* `Becoming.Capture` (L3): how a target that cannot rest is selected and where the selection
+  is held (B5 of the boundary for 无明). Carriers of a target leaving at least as many offspring
+  as the others, the target's share among the offspring does not fall, and rises where they
+  leave more; where what stands runs down from some step on, descent and so the selection stop;
+  where the next configuration depends on the rule and not the state, reforming the state alone
+  is re-absorbed. The readings are the AI's, pending Ren.
 * `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
   reading). The space is every world, a world being relata read with one kind, their flow
   and their web. The laws stated with no premise hold of every world; in a finite world

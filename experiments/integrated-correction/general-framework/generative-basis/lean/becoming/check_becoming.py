@@ -46,7 +46,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Seeking",
         "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
+        "Becoming.Premises",
         "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
@@ -490,6 +491,13 @@ SCOPE = (
     "other neither co-participation nor interaction relates the bee to the flower, though both "
     "are embodied; relabelling the conditions of a one-kind web onto themselves keeps the "
     "connection of both valuations. "
+    "Capture: carriers of a target each leaving at least as many offspring as each other parent, "
+    "their offspring stand to the others' at least as the carriers stand to the others, and "
+    "strictly where each carrier leaves more and both are present; where what stands is listed, "
+    "descent at arbitrarily late steps needs steps at arbitrarily late times across which what "
+    "stands does not run down, and where it runs down from some step on descent does not recur; "
+    "where the next configuration depends on the rule and not the state, reforming the state alone "
+    "is re-absorbed from the next step on. "
     "Evolution: a relatum descends from a formation across a step when the formation takes part "
     "in the step and gives to it and the relatum comes to stand across it; over any finite family "
     "of parents, each with finitely many offspring, and any amounts read of them, the offspring's "
