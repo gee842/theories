@@ -40,7 +40,7 @@ import check as audit_support  # noqa: E402
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
-CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
+CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
@@ -62,6 +62,16 @@ SCOPE = (
     "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
     "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
     "configurations its actual executions reach, and a sound policy secures its goal there. "
+    "Recurrence: with no premise and no decidability, a list holding the first l.length + 1 values "
+    "of a sequence holds two equal ones, so a sequence that never revisits has no list holding it; "
+    "a quantity that never falls and rises across every change stops change within finitely many "
+    "configurations; under a determined law a lost possibility stays lost and merged configurations "
+    "stay merged, and where a list holds every configuration, merging nothing, every configuration "
+    "returning and every configuration reachable at every step are one, a rise along an orbit needs a "
+    "merge and a merge loses a possibility for good, while counting on and counting down separate "
+    "the three in an open world; keeping its history every law merges nothing, never returns, "
+    "cannot have its beginning again and has no list holding it, and within finitely many "
+    "configurations two histories share one present from every step on. "
     "Renewal: a run read through observables of conditions is one relational unfolding; an observable "
     "that never rises from some step on falls only finitely often, with depletion, recurrent renewal "
     "under a natural-number rank and unrenewed drawdown as its cases; in one process from one "

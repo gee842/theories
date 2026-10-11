@@ -4402,6 +4402,64 @@ Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三�
 
 **边界。** 不推出 G0 成立，不改变任何定理；本节尚未经独立审查。
 
+## 68. 每个变化之律保留、失去与回返的：零前提（R6）
+
+2026-10-11。Ren 答“0”指什么时说：
+
+> pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises. but for if "lossless exist", can we find a path, to figure out, and prove along the way? i think another session is working on this already
+
+随后：
+
+> i like the direction you are going, please keep advancing, zero-premise, zero axiom(we are not physics, we derive further)
+
+（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）。熵的会话在流与网的层面研究无损的交换（`Becoming.Entropy`，以第一定律为前提）。本节在其下一层：对任意构型上的任意变化之律，不加任何前提，问什么被保留、什么失去、什么回返。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 R6。
+
+```text
+Result(s): 新增 recurrence-without-premise
+Delta: 新核心模块 Becoming.Recurrence（L2，只导入 Becoming.Frame）：
+       revisits_within、Revisits、revisits_of_held、revisits_from、unheld_of_new、unlisted_of_new；
+       Marks、sumOver、le_sumOver、never_falls_over、Marks.mono、Marks.change_stops、not_marks；
+       Law.orbit、Law.Lossless、Law.Merges、Law.Returns、Law.Reachable、Law.KeepsPossibilities；
+       Law.lost_stays、Law.merged_stays、Law.Lossless.cancel、Law.lossless_of_returns、Law.Returns.reachable、
+       Law.Returns.undo；Law.Lossless.returns、Law.returns_of_reachable、Law.lossless_iff_returns、
+       Law.returns_iff_keeps、Law.lossless_of_reachable、Law.Merges.loses、Law.Lossless.unlisted、
+       Law.Lossless.no_rise、Law.rise_not_lossless；Law.succ_open、Law.pred_open；Law.withHistory、
+       Law.withHistory_lossless、Law.withHistory_new、Law.withHistory_never_returns、
+       Law.withHistory_loses_beginning、Law.withHistory_unlisted、Law.present_orbit、Law.return_keeps_history、
+       Law.present_forgets；Law.process、Law.run；Run.revisits_from、Run.change_stops、Reach.lost_stays
+Supplied premises / correspondence: 无关于展开或变化之律的前提；“某个列表持有这些构型”不对任何展开假设，
+       写进用到它的规律之内；不用可判定性；表示的承诺只有离散的步；无损与回返的等价只对确定的律（next : S → S）陈述
+Evidence: 合并检查器回执 20261011T011019.444120Z（2115 项定理、3194 项声明审计，全部源声明公理报告为空；Recurrence 55 项定理、68 项声明），
+          外围回执 20261011T011213.027508Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 离散的步；“有限多构型”指某个列表持有它们；无损与回返的等价只对确定的律；遗忘的计数未陈述；尚无独立审查
+Integration: 记录 recurrence-without-premise；计划 §10 R6；章节 §9 的脊柱表与第一部分；模块说明、根模块、包 README 与检查器的范围；工作板 R6
+```
+
+**机制。**
+
+- **鸽巢，不判定任何东西。** 一个列表持有一个序列的前 l.length + 1 项时，其中两项相同（`revisits_within`）。证明对列表归纳：每一项在 a :: l 中，就是 a 或在 l 中，这是给定的成员关系的两种情形，不判定构型是否相等。若两项是 a，得到重访；若没有一项是 a，全在 l 中；若恰一项是 a，跳过它（`skipAt`）后其余在 l 中。于是有限多构型中的序列从每一步起都重访（`revisits_from`），任何过程的任何运行也是（`Run.revisits_from`）；从不重访的序列没有列表持有（`unheld_of_new`、`unlisted_of_new`）：不重访需要开放。
+- **有标记的变化停止。** 构型的一个量沿序列从不下降、跨每次变化都上升（`Marks`）时，它在有限多构型上有界（`le_sumOver`），每次变化至少加一，所以变化不复现（`Marks.change_stops`）。变化复现的有限展开中，没有量标记它（`not_marks`）。
+- **每个律保留与失去的。** 对确定的律 next：某一步不能到达的构型，以后任何一步都不能到达（`Law.lost_stays`）；任何过程中，沿一条可行路径失去的可达，在每个延续中都失去（`Reach.lost_stays`，即 endpoint-loss-and-return 的“损失沿延续保持”在脊柱上的形式）。被合并的两个构型以后任何一步都不分开（`Law.merged_stays`）。每个构型都回返时律不合并任何东西（`Law.lossless_of_returns`，用两个回返时间的乘积）；回返的构型在每一步都可得（`Law.Returns.reachable`）。撤销就是继续：s 回返时，同一律的继续把 next s 带回 s（`Law.Returns.undo`）。
+- **有限多构型中，无损即回返。** 列表持有每个构型时，三者是一：律不合并任何东西（`Law.Lossless`）；每个构型都回返；每个构型在每一步都可得（`Law.lossless_iff_returns`、`Law.returns_iff_keeps`）。无损推出回返：s 的轨道重访，在 i < j 处相同，无损使前 i 步可以消去（`Law.Lossless.cancel`），所以 s 在 j − i 步后回返（`Law.Lossless.returns`）。在列表长度那么多步后可得推出回返：通向 s 的轨道在列表长度之内重访，重访点之后是一个环，s 在环上（`Law.returns_of_reachable`）。于是合并永久失去一个可能（`Law.Merges.loses`）；无损而有构型不回返，就没有列表持有每个构型（`Law.Lossless.unlisted`）。无损时，沿轨道从不下降的量在轨道上不变（`Law.Lossless.no_rise`）；所以沿轨道从不下降而在某步上升的量，即一个箭头，需要合并（`Law.rise_not_lossless`）。
+- **开放的世界把三者分开。** 往上数（`Nat.succ`）不合并、不回返、一步后不能再有开端，并且每步上升：无损的箭头（`Law.succ_open`）。往下数（`Nat.pred`）把零与一合并，却每个数在每一步都可得（`Law.pred_open`）。“有限多构型”这一条件，两个方向都需要。
+- **保留历史。** 让当下按律继续、并进入过去（`Law.withHistory`），每个律都不合并（`Law.withHistory_lossless`），从不重访（过去的长度每步加一，`Law.withHistory_new`），从不回返（`Law.withHistory_never_returns`）；开端在第一步之后就不能再有（`Law.withHistory_loses_beginning`）；没有列表持有一个展开所保留的历史（`Law.withHistory_unlisted`）。保留的历史的当下按律本身继续（`Law.present_orbit`）。当下回返时，它带着另一段历史回来（`Law.return_keeps_history`）。展开经过的构型有列表持有时，当下遗忘：从每一步起，两段不同的历史共有一个当下（`Law.present_forgets`）。
+
+**反驳与回答（作者）。**
+
+*反驳 1：这些是有限集合的教科书事实吗？* 数学是：鸽巢原理；有限集上的单射是双射，双射的每个点都回返。作为复用的数学记入，不作为数学上的新发现。增量是：在脊柱上以零前提、不用可判定性陈述；合并、可能的失去与回返在有限多构型中的等价，以及开放世界中把它们分开的两个见证；保留历史的构造与它需要开放；与静止规律的连接（反驳 2）。
+
+*反驳 2：这里的“无损”是不合并，不是 Ren 所说交换中不损失量。二者怎样相关？* 第一定律之下，被围住的家族的构型落在有限多个之中（熵的会话的 `configurations_exact`）。变化是构型的函数时（熵的会话的 `Web.Determined`），本节的规律就作用于它：不合并恰是回返；有量的损失（耗散）时从不重访，有限多构型中从不重访的变化停止，停止就合并两个构型（熵的会话的 `Web.merges_of_settles`、`Flow.Balances.merges_of_dissipates`）。所以在有限的围住之内，量的损失推出区分的损失。这些作为实例定理，在两边都落地后给出。
+
+*反驳 3：“保留历史需要开放”是否平凡？* 构造上，历史有无穷多，所以是的。内容在对照：同一展开，保留其历史时无损而有箭头（过去的长度），在有限多构型中的当下却遗忘。无损与箭头只在开放中共存（`Law.succ_open`、`Law.withHistory_unlisted`）；在有限多构型中，箭头需要合并（`Law.rise_not_lossless`）。
+
+*反驳 4：变化停止的结论是否强于所证？* `Marks.change_stops` 证的是变化不复现（复现的否定），不是有一步之后不再变化；后者需要 LPO（`Becoming.Change` 的 `Web.lpo_of_ending`）。
+
+*反驳 5：非确定的过程怎样？* 重访、变化停止与失去的可达保持失去，对每个过程陈述；无损与回返的等价只对确定的律。过程的形式（例如每个构型至多一个前驱）是下一步。
+
+**读法（AI）。** Ren 的类比：原子层面每次交换守恒能量，熵仍增加，零前提。物理学的第二定律用到两样东西：守恒的动力学，与一个低熵的开端（过去假设）。这里两样都不假设。在有限多构型中，律不合并任何东西，恰是每个构型都回返，没有任何量上升；有上升（箭头），就有合并，就有一个可能永久失去。所以无损的交换存在，而且恰在两处：有限多构型中的回返（没有箭头），与保留其历史的生成（有箭头，需要开放）。物理学设为前提的低熵开端，在这里是保留的历史的开端：它在第一步之后就不能再有（`Law.withHistory_loses_beginning`），是推出的，不是假设的。熵读作有限的当下对其历史的遗忘：两段历史共有一个当下（`Law.present_forgets`）。Ren 的“karma passes, and that passing has to have a form of change which its reverse transformation will take another change”：撤销就是继续（`Law.Returns.undo`），当下回来而历史不回来（`Law.return_keeps_history`）。这些读法属于 AI；与物理学的对应只是读法，不是物理推导。
+
+**边界。** 离散的步；“有限多构型”指某个列表持有它们；无损与回返的等价只对确定的律；遗忘的计数（需要判定构型相等）未陈述；尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -4879,4 +4937,6 @@ On the AI's reading, pending Ren: binding still leaves only its instances in the
 
 On the AI's reading, pending Ren: what an enclosed unfolding spends is what stands, activity being bound with it only where embodied; the premises bear on dependence only where it meets activity, standing and descent. The laws where each selected premise binds, and joint laws of the three counts, are not stated for what stands and what depends; following Ren's redirect of 11 October the selection tables are not extended, and these laws are to be restated for every world with no premise ([zero-premise plan](ZERO-PREMISE-PLAN.md)). New record counting-standing-and-dependence; counting-under-enclosure and whole-law-of-counting revised. Receipt 20261011T003217.297180Z (Standing 38). Not yet independently reviewed; the author's counterreview is in section 65.
 
-The package now has 2060 theorems and 3126 declaration audits, over a core closure of 41 modules and a package of 39, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 65 and 67. The periphery bridge passed against this core (receipt 20261011T003646.599930Z).
+**What every law of change keeps, loses and returns to, with no premise (R6).** Asked what "0" meant, Ren wrote on 11 October 2026 that at the atomic level each exchange conserves energy and entropy still rises, with zero premises, and asked whether, if lossless exchange exists, a path can be found and proved along the way; then: ‘please keep advancing, zero-premise, zero axiom(we are not physics, we derive further)’ ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). A new core module, `Becoming.Recurrence`, importing only `Becoming.Frame`, states what holds of every law of change on configurations of any kind, with no premise and no decidability; that a list holds the configurations is a condition written into each law that uses it. A list holding the first `l.length + 1` values of a sequence holds two equal ones (`revisits_within`, a pigeonhole by induction on the list that uses membership as given), so a sequence held by a list revisits from every step on, as does every run of every process (`Run.revisits_from`), and no list holds a sequence that never revisits (`unlisted_of_new`). A quantity of the configuration that never falls and rises across every change (`Marks`) stops change within finitely many configurations (`Marks.change_stops`). Under a determined law a possibility lost stays lost and configurations merged stay merged (`Law.lost_stays`, `Law.merged_stays`, and `Reach.lost_stays` for every process). Where a list holds every configuration, merging nothing, every configuration returning and every configuration reachable at every step are one (`Law.lossless_iff_returns`, `Law.returns_iff_keeps`); losing nothing, no quantity rises along an orbit, so an arrow needs a merge (`Law.Lossless.no_rise`, `Law.rise_not_lossless`), and a merge loses a possibility for good (`Law.Merges.loses`). Open worlds separate the three: counting on merges nothing, never returns and rises at every step, and counting down merges yet keeps every possibility (`Law.succ_open`, `Law.pred_open`). Keeping its history, every law merges nothing, never returns, cannot have its beginning again after the first step, and has no list holding it (`Law.withHistory_lossless`, `Law.withHistory_never_returns`, `Law.withHistory_loses_beginning`, `Law.withHistory_unlisted`); where the present returns it comes back with another history (`Law.return_keeps_history`), and within finitely many configurations two different histories share one present from every step on (`Law.present_forgets`). On the AI's reading: lossless exchange exists exactly as return within finitely many configurations, with no arrow, and as becoming that keeps its history, with an arrow and an open world; the low-entropy beginning that physics supplies is here the beginning of the kept history, which cannot be had again; entropy reads as the forgetting of a finite present. The mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is credited as reused. Record recurrence-without-premise added. Receipt 20261011T011019.444120Z, periphery receipt 20261011T011213.027508Z. Not yet independently reviewed; the author's counterreview is in section 68.
+
+The package now has 2115 theorems and 3194 declaration audits, over a core closure of 42 modules and a package of 40, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 65, 67 and 68. The periphery bridge passed against this core (receipt 20261011T011213.027508Z).

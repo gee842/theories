@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-145 migrated records: 141 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+146 migrated records: 142 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -125,6 +125,7 @@
 | `protection-priority-excludes-uniform-aggregation` | [基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示 / Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score](records/protection-priority-excludes-uniform-aggregation.md) | theorem | recorded-checked |
 | `ranking-under-readings` | [C 在各读法下的排序：逐步读法保持“共享优于以消耗取胜”，在二元定律族中保持节制优于过度汲取；过度汲取者在损失之前有被记入的事件时，失去“没有它更好”；可能性读法下，C 像整段读法那样把过度汲取者的不在场、节制与共享排在上面而不扣下事件，在公理之下按它的扩展就是保留且增加；不增加可能性的在场与不在场不分高下，可能性优先把在场排得更高，也把休息排在活动之下（P44） / What C ranks under each reading: the stepwise reading keeps “sharing is better than winning by consumption” and, in the two-part family, restraint above overdraw, and loses “better without the overdrawing formation” when that formation has a credited event before the loss; under the possibility reading C ranks the absence of overdraw, restraint and sharing as the whole-run reading does while withholding no event, extension under it being retaining and adding under the axiom; a presence adding no possibility ties with its absence, and possibilities first ranks that presence higher and a rest below activity (P44)](records/ranking-under-readings.md) | theorem | recorded-checked |
 | `recoverable-mediated-change` | [中断改变后的证据恢复与纠正边界 / Evidence recovery and corrective-access limits after interrupted change](records/recoverable-mediated-change.md) | theorem | recorded-checked |
+| `recurrence-without-premise` | [每个变化之律保留、失去与回返的，不加前提：有限多构型中不合并即回返即保留每个可能，上升需要合并；保留其历史的生成无损、不回返而需要开放，有限的当下遗忘 / What every law of change keeps, loses and returns to, with no premise: within finitely many configurations merging nothing is returning is keeping every possibility, and a rise needs a merge; becoming that keeps its history loses nothing, never returns and needs openness, and a finite present forgets](records/recurrence-without-premise.md) | theorem | recorded-checked |
 | `recurrent-chain-assembly` | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](records/recurrent-chain-assembly.md) | theorem | recorded-checked |
 | `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |
 | `relational-reading-comparison` | [以关系读生成：比较原则把消耗型形成排在其不发生之下 / Read relationally, comparison ranks consuming formation below its absence](records/relational-reading-comparison.md) | theorem | recorded-checked |

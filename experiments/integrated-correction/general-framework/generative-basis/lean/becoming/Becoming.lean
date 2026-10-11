@@ -1,5 +1,6 @@
 import Becoming.Frame
 import Becoming.Inquiry
+import Becoming.Recurrence
 import Becoming.Renewal
 import Becoming.Dependence
 import Becoming.Return
@@ -46,6 +47,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   reachability, invariants and new realization.
 * `Becoming.Inquiry` (L2): the visible scope of an inquiry is what its actual
   executions reach; a sound policy secures its goal there.
+* `Becoming.Recurrence` (L2): what every law of change keeps, loses and returns to, with
+  no premise and no decidability. A list holding enough of a sequence holds two equal values;
+  within finitely many configurations a law merges nothing exactly where every configuration
+  returns, a rise needs a merge, and a merge loses a possibility for good; keeping its history,
+  every law loses nothing, never returns and needs an open world, while a finite present
+  forgets.
 * `Becoming.Renewal` (L3): every run read through conditions is one relational
   unfolding; renewal and consumption belong to the run.
 * `Becoming.Dependence` (L3): dependence forms, holds, breaks and dissolves across

@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 174 | 3,962 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 175 | 4,017 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -491,6 +491,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [RecoverableControl.lean](lean-declarations/ethics.md#module-40ce621d7a4c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecoverableControlCases.lean](lean-declarations/ethics.md#module-7bfe2d0ea794) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecoveryQuantum.lean](lean-declarations/inquiry.md#module-02ce03487a51) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [Recurrence.lean](lean-declarations/core.md#module-6dd925531afa) | 生成核心与关系结构 / Generative core and relational structure |
 | [RecurrentAssembly.lean](lean-declarations/ethics.md#module-eb496cc7129c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecursiveGenerativeSelection.lean](lean-declarations/ethics.md#module-ecb2b467bd36) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [RecursiveGenerativeSelectionAudit.lean](lean-declarations/ethics.md#module-002fc680ef8a) | 规范根据与生成方向 / Normative grounding and generative direction |
