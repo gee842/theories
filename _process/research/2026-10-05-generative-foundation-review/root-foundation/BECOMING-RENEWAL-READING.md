@@ -4379,7 +4379,7 @@ Supplied premises / correspondence: 无新前提；折叠以从意义读出的�
        “fold”与“at least”的读法是 AI 的，待 Ren
 Evidence: 上列定理在核心回执 20261010T214440.263682Z 中，公理报告为空；本节没有新的检查
 Boundary: 不推出 G0 成立；不改任何定义或定理；正面相关的读法与比较的方式仍属 Ren；
-          核心七个模块的说明仍写“G0 仍是所采用的公理”，与下一次核心检查一起更改
+          核心七个模块的说明随后在 P47 的核心检查中一并更改（99e78ddd，回执 20261011T003217.297180Z）
 Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三）；第二部分以 G0 或其各部分为假设的定理在公理之下成立
              （§53、§64）；回答 §64 的第一项选择
 ```
@@ -4398,7 +4398,7 @@ Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三�
 2. **没有新的 Lean。** 每条引用都是已在核心回执中的定理：公理之下 G0 成立且从意义读出的正面相关是满足它的最小者（`g0_of_unrestricted`、`relevance_least`），公理恰是对任何东西的 G0（`unrestricted_iff_g0`）。更精确的折叠形式——以从意义读出的正面相关，G0 恰是公理限于已实现的活的内容——没有写成 Lean，所以章节没有声称它。
 3. **G0 的名字保留。** 折叠不删 G0：它仍是定义、刻画与各处定理的假设；改的只是它不再被采用为真。G0/J 的已完成成果保持其条件范围，G0 现在由第二部分的公理给出，而不是另一条公理。
 4. **开篇未改。** Ren 的开篇（`theories/becoming/OPENING.md`，README 由它生成）的注释仍写“G0 remains the adopted axiom until this one takes its place”。按其注释，开篇只随 Ren 改；替换的文字交给 Ren。
-5. **Lean 说明滞后。** 核心七个模块的说明仍写 G0 仍是所采用的公理；改说明须重跑核心检查，按落地队列，补丁交给下一次核心检查（整合者决定）。在那之前，模块说明与章节不一致，章节为准。
+5. **Lean 说明。** 落地时核心七个模块的说明仍写 G0 仍是所采用的公理；改说明须重跑核心检查，所以补丁交给下一次核心检查。整合者在 P47 的核心检查中一并更改（99e78ddd，回执 20261011T003217.297180Z），七个模块都通过检查，此后模块说明与章节一致。
 
 **边界。** 不推出 G0 成立，不改变任何定理；本节尚未经独立审查。
 
@@ -4593,7 +4593,7 @@ The core now has 376 theorems and 688 declaration audits over 18 modules, all wi
 - **Part II.** G0 is a theorem of the axiom (`Valuation.premises_of_unrestricted`, `g0_of_unrestricted`), and the theorems of chapter sections 6.1–6.7 and 7 take G0 or its parts as hypotheses, which hold under the axiom; A, C, L and J1–J4 stay disclosed premises. Every “G0 remains the adopted axiom” in the chapter is replaced, and the open lists drop whether the axiom or the restatement replaces G0.
 - **Records.** Seven records' text is corrected, with a history entry each and their theorems unchanged: axiom-decomposition, closure-verdict-meets-axiom, held-lives-g0-is-centering, metaethical-core-characterization, one-axiom-yields-g0, positive-ground-open-futures and presupposition-scopes. The scope of the Theory of Becoming and the directive register record the fold.
 
-What the fold leaves: under another reading of positive relevance, G0 is a theorem only where that reading follows from significance. The single “iff” stating G0 as the axiom restricted to realized living content is not written in Lean and is not claimed. Ren's opening still says G0 remains the adopted axiom and changes only with Ren. Seven core modules' docstrings still say the same until the next core checker run, which the integrator schedules; the chapter governs meanwhile.
+What the fold leaves: under another reading of positive relevance, G0 is a theorem only where that reading follows from significance. The single “iff” stating G0 as the axiom restricted to realized living content is not written in Lean and is not claimed. Ren's opening still says G0 remains the adopted axiom and changes only with Ren. Seven core modules' docstrings, which still said the same at landing, were folded in P47's core run (99e78ddd, receipt 20261011T003217.297180Z), where all seven passed the core check.
 
 The package now has 676 theorems and 1115 declaration audits over a closure of 22 modules (a package of 20), all with empty axiom reports (P18b correction; originally "The core"). These corrections were reviewed by the seventh independent review; see P16c.
 
