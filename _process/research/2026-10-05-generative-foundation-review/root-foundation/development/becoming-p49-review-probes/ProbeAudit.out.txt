@@ -1,0 +1,4 @@
+ProbeThreshold: 67 constants, 0 with axioms: []
+ProbeReach: 37 constants, 0 with axioms: []
+ProbeTesting: 62 constants, 0 with axioms: []
+ProbeStanding: 26 constants, 0 with axioms: []

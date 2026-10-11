@@ -1,0 +1,7 @@
+'Becoming.Review47.one_ne_two'' depends on axioms: [propext]
+'Becoming.Review47.two_ne_three'' depends on axioms: [propext]
+'Becoming.Review47.one_ne_two''' does not depend on any axioms
+Nat.succ_ne_self : ∀ (n : Nat), n.succ ≠ n
+ProbeNames.lean:18:8: error(lean.unknownIdentifier): Unknown constant `Nat.one_ne_two`
+ProbeNames.lean:19:8: error(lean.unknownIdentifier): Unknown identifier `one_ne_two`
+Becoming.one_ne_two : 1 ≠ 2

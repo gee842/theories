@@ -1,0 +1,8 @@
+'Becoming.Review47.Gauged_own' does not depend on any axioms
+'Becoming.Review47.SelfPrey.flow' does not depend on any axioms
+'Becoming.Review47.Prey_omits' does not depend on any axioms
+'Becoming.Review47.SelfPrey.balances_one' does not depend on any axioms
+'Becoming.Review47.SelfPrey.balances_two' does not depend on any axioms
+'Becoming.Review47.SelfPrey.selfBearing' does not depend on any axioms
+'Becoming.Review47.SelfPrey.within_influence' does not depend on any axioms
+'Becoming.Review47.SelfPrey.threshold_on_oneself' does not depend on any axioms

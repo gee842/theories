@@ -51,7 +51,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -949,6 +949,35 @@ SCOPE = (
     "held fixed the wolves' part narrows, against the flow in which the deer respond it is mixed, "
     "and where a part gives what others take the levels without it may balance no flow. The axiom "
     "enters only as a hypothesis of three witnesses. "
+    "Testing: a formation registers its support, whether the levels admit it, and the levels of "
+    "the conditions it observes; a condition it depends on and does not observe registers only "
+    "whether it meets the need, an observed one its level, and observing more distinguishes more; "
+    "a claim about level histories is refuted at a step when no history meeting it registers alike "
+    "up to that step, only through a difference in what registers, never where it holds, and "
+    "lasting; relative to a model, a class of admissible histories, refutation is refutation of "
+    "the model and the claim together; without a model no finite record refutes a claim about what "
+    "follows it, while relative to the level histories of a flow a formation observing a stock "
+    "refutes at the first step every false claim that it comes to nothing, a wrong model refutes "
+    "what holds and registration refutes the model; a judgment from registration is a common "
+    "response over the formation's belief and is kept as later steps and more observation narrow "
+    "it; the registration closure holds the influence closure, is that closure where the "
+    "formation registers support only, and grows with observation and exchange; for two flows with the same formations present, balancing "
+    "on each condition a member of a region registers, the region closed in both under being "
+    "affected through what is registered, the levels starting alike there and each member "
+    "exchanging alike wherever it has registered alike, every member registers alike at every step, "
+    "and with the rest of the exchange fixed a part beyond the closure is registered within it at "
+    "no step, a refutation there resting on a model of the part's exchange; with balance on what a "
+    "formation registers and the exchange there following its registration, a difference stays as "
+    "it was while the formation registers alike and changes only after the two webs' support "
+    "diverges, a stock higher by d standing d higher at every step before which the lower web "
+    "supported it; joint failure keeps the difference, observing the stock lifts the blindness, and "
+    "where others respond to the stock a higher stock can end the formation first; on a prey "
+    "bearing on itself a bite registers through support only where it brings the prey below its "
+    "need; in the clearer's web the dweller's ending is tested by the dweller and not the clearer, "
+    "a claim neither tests is tested by the two together, and a model fixing the start and the "
+    "exchange idles registration; where the continuation is open no reading decided by a finite "
+    "prefix is the whole-run classification. Balance is assumed only on the conditions registered; "
+    "the response hypotheses are supplied; no ethical premise is used. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "
