@@ -1410,6 +1410,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## experiment-needs-return ← joint-difference-making
+
+`formal-reuse` — 复用 Determined：动作决定一步。这里问记录在何处固定动作所造成的；Joint 问一个部分是否造成差别。 / Reuses Determined: the move determines the step. Here the question is where the record fixes what a move does; Joint asks whether a part makes the difference.
+
+**Producer output / 上游输出:** 确定性。 / Determinacy.
+
+**Consumer input / 下游输入:** 所比较的过程类。 / The class of processes compared.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
+
+## experiment-needs-return ← recurrence-without-premise
+
+`formal-reuse` — 复用 revisits_from（投影的返回）与 Law.withHistory 的形式（带动作的 keepHistory）。 / Reuses revisits_from (the projection's return) and the form of Law.withHistory (keepHistory with moves).
+
+**Producer output / 上游输出:** 有限多个配置之内的返回；保留的历史永不返回。 / Return within finitely many configurations; a kept history never returns.
+
+**Consumer input / 下游输入:** 投影的返回；保留历史者只固定所做的。 / The projection's return; a kept history fixes only what was done.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## experiment-needs-return ← testing-within-registration
+
+`formal-reuse` — 推进 P49 的开放项：一个动作造成什么只相对于模型才可检验（Flow.beyond_needs_model）；这里给出展开自身在何处固定它，所需的模型是确定性加一次返回，或一个投影。 / Advances P49's open item: what an act does is testable only relative to a model (Flow.beyond_needs_model); here the unfolding itself fixes it where it returns, the model needed being determinacy with one return, or a projection.
+
+**Producer output / 上游输出:** 一个动作的检验需要模型。 / Testing an act needs a model.
+
+**Consumer input / 下游输入:** 实验的条件。 / The conditions of experiment.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
 ## feedback-and-reach ← closing-needs-net-draw
 
 `formal-reuse` — 复用扣留水平 Flow.WithheldLevels、Flow.Balances.withheld 与 Web.Admits；这里表明有与无部分的水平在哪里相同，以及部分在哪里被计入。 / Reuses withheld levels Flow.WithheldLevels, Flow.Balances.withheld and Web.Admits; here it is shown where the levels with and without a part agree and where the part registers.
@@ -2977,6 +3013,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 原过程不变，两个事件规律和权重仍给定。 / The original process is unchanged; the two event laws and weights remain supplied.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean)
+
+## runaway-distance-unregistered ← subthreshold-registration
+
+`formal-reuse` — 复用 Flow.ExchangeFollows、Flow.subthreshold_alike_always 与 Flow.difference_changes_after_divergence；增量是策略的层面：经反映的策略加其余固定推出交换随反映。 / Reuses Flow.ExchangeFollows, Flow.subthreshold_alike_always and Flow.difference_changes_after_divergence; the delta is the level of policies: a policy through registration with the rest fixed gives exchange following registration.
+
+**Producer output / 上游输出:** 阈下差别的规律。 / The laws of differences below the threshold.
+
+**Consumer input / 下游输入:** T5 的策略形式。 / T5 over policies.
+
+**Retained conditions / 保留条件:** 平衡；交换随反映。 / Balance; exchange following registration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## runaway-distance-unregistered ← testing-within-registration
+
+`formal-reuse` — 复用 Web.RegistersAlike、Web.Registers 与 Web.observed_level_registers。 / Reuses Web.RegistersAlike, Web.Registers and Web.observed_level_registers.
+
+**Producer output / 上游输出:** 什么被反映。 / What registers.
+
+**Consumer input / 下游输入:** 抬高不被反映；观察时被反映。 / A raise does not register; observed, it does.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## runaway-distance-unregistered ← laws-of-one-step
+
+`formal-reuse` — 复用 Flow.BalancesOn：平衡只在被反映的条件上逐步假设，抬高保持它。 / Reuses Flow.BalancesOn: balance is assumed only on the conditions registered, and raising keeps it.
+
+**Producer output / 上游输出:** 一步上在一个家族上的平衡。 / Balance on a family across one step.
+
+**Consumer input / 下游输入:** 抬高的世界仍平衡。 / The raised world still balances.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
 ## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
 

@@ -6,6 +6,7 @@ import Becoming.Dependence
 import Becoming.Return
 import Becoming.Horizon
 import Becoming.Joint
+import Becoming.Experiment
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
@@ -39,6 +40,7 @@ import Becoming.Feedback
 import Becoming.Boundaries
 import Becoming.Relevance
 import Becoming.Testing
+import Becoming.Runaway
 
 /-!
 # The Theory of Becoming: the formal core
@@ -69,6 +71,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   once a part is withheld and read as intended when the move determines the step,
   belongs to the joint activity among formations; over a formation's events the run-level outcome is
   fixed by the tail, while the step-level test singles out the breaking event.
+* `Becoming.Experiment` (L3): what varying one's own act tests, and what it needs. Relative
+  to determinacy, the record fixes what a move does at a configuration exactly where the run
+  has taken it there; what one's act would have done otherwise is fixed only where the
+  configuration returns, and a kept history never returns. Read through a projection the step
+  factors through, one occasion stands for its whole class; a wrong projection misattributes,
+  is never refuted by moves in step with what it leaves out, and is refuted by moves varied
+  against it. The readings are the AI's, pending Ren.
 * `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
@@ -465,6 +474,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   support diverges, and where others respond to the stock itself a higher stock can end the
   formation first. The response hypotheses are supplied. The readings are the AI's, narrowed by
   the independent review, pending Ren.
+* `Becoming.Runaway` (L4): what a loop through its own registration cannot register. A policy
+  through registration, with the rest of the exchange fixed, is exchange following
+  registration, so every such policy that keeps its support never uses a larger stock it does
+  not observe. Before the break, for every horizon a world with the stock raised registers
+  alike and lasts past it: how far off the break is does not register, while observing the stock
+  registers it at once. The readings are the AI's, pending Ren.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

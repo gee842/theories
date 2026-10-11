@@ -24,6 +24,10 @@ Earlier in the same session, while the stage waited in the landing queue, Ren wr
 
 > land and merge all, then continue
 
+P49 landed, and the assistant reported P53 (experiment), built and checked on a branch. It asked whether Ren wanted an independent review of P53 before it landed, and proposed the runaway question at the level of policies as the next step. Ren replied:
+
+> no extra review needed, merge, then continue
+
 ## Context (AI-authored)
 
 Everything below is the assistant's, not Ren's.
