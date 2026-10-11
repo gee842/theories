@@ -37,8 +37,6 @@ new_q = ('- ~~P64–P68 `Becoming.Attraction`, `Becoming.Mechanism`, `Becoming.R
          ', periphery ' + PERI + '), with Capture\'s `Law.reform_reabsorbed` re-proved as the instance of Mechanism\'s '
          '`Law.reabsorbed` (name and statement kept).')
 s = s.replace(old_q, new_q)
-s = s.replace('- P69 one relational starting point (Current math core [1c3084]), after P64–P68.',
-              '- P69 one relational starting point (Current math core [1c3084]), after P64–P68: **next**.')
 board.write_text(s)
 for l in s.split('\n'):
     if l.startswith('| **P6') and any(l.startswith(f'| **{k} ') for k in STATUS):
