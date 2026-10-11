@@ -3186,6 +3186,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。 / The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished.
 
+## seeking-boundary ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、orbit_add、gap_of_lt、gap_of_le、unlisted_of_new 与 Law.succ_open。 / Reuses Law.orbit, orbit_add, gap_of_lt, gap_of_le, unlisted_of_new and Law.succ_open.
+
+**Producer output / 上游输出:** 永不重访需要开放；律的轨道。 / Never revisiting needs openness; the orbit of a law.
+
+**Consumer input / 下游输入:** “比现在更多”需要开放的世界；够的边界。 / More than now needs an open world; the boundary of enough.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## seeking-boundary ← laws-of-one-step
+
+`formal-reuse` — 复用 Web.StandingCensus、Flow.RunsDown 与 Flow.change_recurs_iff：持续的变化需要开放。 / Reuses Web.StandingCensus, Flow.RunsDown and Flow.change_recurs_iff: continued change needs openness.
+
+**Producer output / 上游输出:** 持续的变化需要所立者不衰减的步。 / Continued change needs steps at which what stands does not run down.
+
+**Consumer input / 下游输入:** 扩张或耗尽。 / Expansion or exhaustion.
+
+**Retained conditions / 保留条件:** 所立者每步被列出。 / What stands is listed at each step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## self-good-reachable-g0 ← positive-ground-open-futures
 
 `formal-reuse` — reach_is_g0 与 self_good_derives_reachable_g0 的结论使用同一 GenerativeComparison.G0 谓词；本结果为该谓词在可及库存上的成立提供由 S0 出发的推导，不改变原结果的证明与范围。 / reach_is_g0 and self_good_derives_reachable_g0 conclude the same GenerativeComparison.G0 predicate; this result supplies a derivation from S0 of that predicate on the reachable inventory, without changing the earlier proof or scope.
@@ -3425,6 +3449,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一规律、阈值和递推；无第三条供给。正面定理增加有限窗口前提。 / Same law, thresholds and recurrence; no third supply. The positive theorem adds the finite-window premise.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean)
+
+## target-capture ← evolution-on-descent
+
+`formal-reuse` — 推进它：它陈述 Price 方程的计数形式，未陈述选择项；这里给出二值目标的选择项（share_not_lower、share_rises），并复用 Flow.DescendsAt 与 Web.ComesToStand.rises。 / Advances it: it states the counting form of Price's equation and leaves the selection term unstated; here the selection term for a two-valued target is given (share_not_lower, share_rises), and Flow.DescendsAt and Web.ComesToStand.rises are reused.
+
+**Producer output / 上游输出:** 世系与 Price 方程的计数形式。 / Descent and the counting form of Price's equation.
+
+**Consumer input / 下游输入:** 目标的份额；世系停止之处。 / A target's share; where descent stops.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
+
+## target-capture ← laws-of-one-step
+
+`formal-reuse` — 复用 Web.StandingCensus、Flow.RunsDown 与 Flow.change_recurs_iff。 / Reuses Web.StandingCensus, Flow.RunsDown and Flow.change_recurs_iff.
+
+**Producer output / 上游输出:** 持续的变化需要开放。 / Continued change needs openness.
+
+**Consumer input / 下游输入:** 选择停止之处。 / Where the selection stops.
+
+**Retained conditions / 保留条件:** 所立者每步被列出。 / What stands is listed at each step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
+## target-capture ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit 与 orbit_shift。 / Reuses Law.orbit and orbit_shift.
+
+**Producer output / 上游输出:** 律的轨道。 / The orbit of a law.
+
+**Consumer input / 下游输入:** 规则握住结果。 / The rule holding the outcome.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
 ## testing-within-registration ← feedback-and-reach
 

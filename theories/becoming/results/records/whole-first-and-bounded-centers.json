@@ -193,8 +193,8 @@
     "en": "Regions are parameters of the statement, and nothing models how a center forms its boundary; the region along dependence is a choice (the source reached along dependence, the dweller and the source alone); P40 shows that this region is exactly each formation's feeding closure (Clearing.dependenceRegion_iff; see feeding-closure), so the region is given by the dynamics, while bounding significance by it remains a choice; only formations admitted are compared, step by step; no duty or compliance is inferred, and nothing says what a center should do; the order of levels reads as an order of how complete a judgment is, not as what life does; route (b) must face that centers bounded by their dependence license the free rider (P40: without the axiom, this loss counts only where the dependence reaches what is closed; see closure-verdict-meets-axiom); the readings and names are the AI's, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T192152.790658Z）：Becoming.Significance 的 37 项定理全部空依赖；同一回执覆盖包内 47 个模块（含只作导入的根模块与桥接），共 2568 项定理／3780 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T192511.756300Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 49 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T192152.790658Z): the 37 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 47 modules (including the import-only root and the bridge) with 2568 theorems/3780 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T192511.756300Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 49 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T194804.708104Z）：Becoming.Significance 的 37 项定理全部空依赖；同一回执覆盖包内 49 个模块（含只作导入的根模块与桥接），共 2592 项定理／3809 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T195216.607072Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 51 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T194804.708104Z): the 37 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 49 modules (including the import-only root and the bridge) with 2592 theorems/3809 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T195216.607072Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 51 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
@@ -245,17 +245,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "586bfbeea9652918194f2ff9caff21774919752017dca8732419de0818ddd0c8"
+      "sha256": "a2816da44a9d4854227c5941a4958f36316b6a21b101e0dc4a1154ab114dd642"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "e9b68bfca4c0d2553939c8c7a9d1da09ac8fcec338bd29dd8afdcd2168271148"
+      "sha256": "fda7dfff2dd4383df29a63dc4bb0c70ec770bd31fe4192f62bc2dffe0b6a8110"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9f1305fee84a40c276650b2e90b5b4f1a73ff0b1d8612c143d957f71a77ed3b4"
+      "sha256": "93a2d0bf53a42e4b3bbaf7e73df261e6d6164c00e4cd659124cc24a3d6fb6ace"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -379,6 +379,10 @@
     {
       "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
       "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
     }
   ]
 }

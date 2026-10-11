@@ -1063,7 +1063,7 @@ Imports: `GenerativeCore`
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming.lean`
 
-Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Units`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`
+Imports: `Becoming.Frame`, `Becoming.Inquiry`, `Becoming.Recurrence`, `Becoming.Renewal`, `Becoming.Dependence`, `Becoming.Return`, `Becoming.Horizon`, `Becoming.Joint`, `Becoming.Experiment`, `Becoming.Substitution`, `Becoming.Generation`, `Becoming.Flow`, `Becoming.Change`, `Becoming.Population`, `Becoming.Identity`, `Becoming.Wholes`, `Becoming.Dissipation`, `Becoming.Locality`, `Becoming.Seeking`, `Becoming.Roles`, `Becoming.Reserve`, `Becoming.Evolution`, `Becoming.Capture`, `Becoming.Space`, `Becoming.Premises`, `Becoming.Sampling`, `Becoming.Tower`, `Becoming.Openness`, `Becoming.Counting`, `Becoming.Standing`, `Becoming.Resolution`, `Becoming.Units`, `Becoming.Continuation`, `Becoming.Admission`, `Becoming.Regions`, `Becoming.Metaethics`, `Becoming.Ranking`, `Becoming.Correspondence`, `Becoming.Descent`, `Becoming.Standpoints`, `Becoming.Significance`, `Becoming.Interdependence`, `Becoming.Feedback`, `Becoming.Boundaries`, `Becoming.Relevance`, `Becoming.Testing`, `Becoming.Runaway`
 
 没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
 
@@ -1305,6 +1305,38 @@ Imports: `Becoming`, `GenerativeComparison`, `PositionedPositiveReason`, `Practi
 - `def` [Becoming.LiftModel.options](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean#L475) (L475)
 - `def` [Becoming.LiftModel.frame](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean#L481) (L481)
 - `def` [Becoming.LiftModel.larger](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean#L483) (L483)
+
+</details>
+
+<a id="module-96fb64c62e31"></a>
+
+<details>
+<summary>Capture.lean — 13 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean`
+
+Imports: `Becoming.Evolution`, `Becoming.Locality`, `Becoming.Recurrence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.mul_assoc_nat](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L59) | 59 |
+| [Becoming.le_offspringCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L73) | 73 |
+| [Becoming.offspringCount_le](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L83) | 83 |
+| [Becoming.share_not_lower](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L94) | 94 |
+| [Becoming.share_rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L107) | 107 |
+| [Becoming.Flow.descent_needs_unrun](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L130) | 130 |
+| [Becoming.Flow.descent_exhausted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L140) | 140 |
+| [Becoming.Law.reform_reabsorbed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L156) | 156 |
+| [Becoming.Captured.byRule](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L173) | 173 |
+| [Becoming.Captured.state_reform_returns](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L177) | 177 |
+| [Becoming.Captured.rule_reform_changes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L185) | 185 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.offspringCount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L69) (L69)
+- `def` [Becoming.Captured.next](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean#L171) (L171)
 
 </details>
 
@@ -4982,6 +5014,41 @@ Imports: `Becoming.Locality`, `Becoming.Premises`
 - `def` [Becoming.Cancelling.flow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean#L991) (L991)
 - `def` [Becoming.Cancelling.web](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean#L1000) (L1000)
 - `def` [Becoming.Averaging.flow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean#L1022) (L1022)
+
+</details>
+
+<a id="module-543aeee61b83"></a>
+
+<details>
+<summary>Seeking.lean — 16 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean) · [理论 / Theory](../../chapters/THE-THEORY-OF-BECOMING.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean`
+
+Imports: `Becoming.Locality`, `Becoming.Recurrence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Becoming.more_not_at_rest](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L80) | 80 |
+| [Becoming.more_rises](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L85) | 85 |
+| [Becoming.more_new](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L91) | 91 |
+| [Becoming.more_needs_open](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L101) | 101 |
+| [Becoming.succ_more](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L106) | 106 |
+| [Becoming.aboveAll_unique](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L114) | 114 |
+| [Becoming.aboveAll_not_two](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L119) | 119 |
+| [Becoming.Law.fixed_rests](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L127) | 127 |
+| [Becoming.Law.rests_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L137) | 137 |
+| [Becoming.Law.more_never_rests](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L156) | 156 |
+| [Becoming.Law.aboveAll_never_rests](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L162) | 162 |
+| [Becoming.Flow.more_needs_unrun](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L177) | 177 |
+| [Becoming.Flow.more_exhausted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L186) | 186 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Becoming.MoreThanNow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L72) (L72)
+- `def` [Becoming.RestsAt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L76) (L76)
+- `def` [Becoming.AboveAll](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean#L110) (L110)
 
 </details>
 

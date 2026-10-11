@@ -44,8 +44,10 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
-        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
+        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
+        "Becoming.Seeking", "Becoming.Roles",
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
+        "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
         "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Units",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
@@ -359,6 +361,14 @@ SCOPE = (
     "enclosure bound and binding of counting, Standing's bounds on what stands, the census law "
     "and the arising of an embodied relatum through another's giving are re-proved as its "
     "corollaries. "
+    "Seeking: a target met at a state the law leaves unchanged is met at rest, and under a "
+    "determined law seeking comes to rest with its target met exactly when it reaches such a state; "
+    "a target of more than now is met only by change, and met at every step makes every "
+    "configuration new, so no list holds them; a target of above all others is met at a state by "
+    "at most one seeker, so no state left unchanged meets it for two; where what stands is listed "
+    "at each step, a condition rising at arbitrarily late steps needs steps at arbitrarily late "
+    "times across which what stands does not run down, and where what stands runs down at every "
+    "step from some step on, its rises do not recur. "
     "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
     "support, dependence, renewal, consumption, the classes of formations, undermining, living "
     "events, arising, unceasing generation and a census, and what is taken and given, balance, "
@@ -481,6 +491,13 @@ SCOPE = (
     "other neither co-participation nor interaction relates the bee to the flower, though both "
     "are embodied; relabelling the conditions of a one-kind web onto themselves keeps the "
     "connection of both valuations. "
+    "Capture: carriers of a target each leaving at least as many offspring as each other parent, "
+    "their offspring stand to the others' at least as the carriers stand to the others, and "
+    "strictly where each carrier leaves more and both are present; where what stands is listed, "
+    "descent at arbitrarily late steps needs steps at arbitrarily late times across which what "
+    "stands does not run down, and where it runs down from some step on descent does not recur; "
+    "where the next configuration depends on the rule and not the state, reforming the state alone "
+    "is re-absorbed from the next step on. "
     "Evolution: a relatum descends from a formation across a step when the formation takes part "
     "in the step and gives to it and the relatum comes to stand across it; over any finite family "
     "of parents, each with finitely many offspring, and any amounts read of them, the offspring's "
