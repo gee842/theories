@@ -87,11 +87,10 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 Order from here (the integrator's call, 10-11, by readiness; one checker run per line):
 - ~~P53 `Becoming.Experiment` + P55 `Becoming.Runaway`~~ landed `5682d3f5` (§72, §73).
 - ~~P57 group B + P60 group D + P61 continuation cover, with [9c2394]'s P58 decidedness patch~~ landed `57ff25d8` (§74–§76; receipt 20261011T122250.993495Z): `Flow.BalancesOn` and the shared lemmas moved to the lowest module that needs them (Flow, Dissipation, Population), names and statements unchanged. Every group of the zero-premise inventory is now localized.
+- **On the checker now (the integrator's call by readiness, 10-12; P54 + P56 has not started its Lean and P62's owner is not running):** P63 reserve and dependence + P61b (P61's converse) + Sampling v2 (item 7, record `laws-at-coarser-steps`) + Units v2 (record `laws-at-finer-units`, with the need read in the unit) + Tower (record `continuous-time-as-tower`), from [9c2394], one run, landed by the integrator.
 - P54 + P56 (Universal Metaethical Core), one run.
 - P62 `Becoming.Seeking` + `Becoming.Capture` (feedback session), one run.
-- P63 reserve and dependence + P61b (P61's converse) + Sampling v2 (item 7, record `laws-at-coarser-steps`), from [9c2394], one run, landed by the integrator.
 - R5 (item 8).
-- Units (the finer-units test, record `laws-at-finer-units`, [9c2394]).
 - P59 `Becoming.Imbalance` (equivalence only, not adopted; adoption is Ren's).
 - P58's count module (Universal Metaethical Core).
 - P64–P68 `Becoming.Attraction`, `Becoming.Mechanism`, `Becoming.Response`, `Becoming.Selection` (Cause–effect comparison [31d5b6]), one run, after P62.
