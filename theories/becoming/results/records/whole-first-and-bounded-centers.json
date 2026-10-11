@@ -189,7 +189,7 @@
     }
   ],
   "limitations": {
-    "zh": "区域是陈述的参数，不模型中心怎样形成其边界；以依存为界的区域是一个选择（来源沿依存可达，栖居者与来源只含自身）；P40 表明这个区域恰是各形成的供给闭包（Clearing.dependenceRegion_iff，见 feeding-closure），所以区域由动力学给出，以它为意义的边界仍是选择；只比较被接纳的形成，每一步；不推出义务或遵循，也不说中心应当做什么；层级的次序读作判断完整性的次序，不是生命实际做什么；路线 (b) 须面对以依存为界的中心容许搭便车者（P40：不用公理时，这一损失只在依存到达所关闭者时被计入，见 closure-verdict-meets-axiom）；读法与名称是 AI 的，待 Ren。",
+    "zh": "区域是陈述的参数，不模型中心怎样形成其边界；以依存为界的区域是一个选择（来源沿依存可达，栖居者与来源只含自身）；P40 表明这个区域恰是各形成的供给闭包（Clearing.dependenceRegion_iff，见 feeding-closure），所以区域由动力学给出，以它为意义的边界仍是选择；只比较被接纳的形成，每一步；不推出义务或遵循，也不说中心应当做什么；层级的次序读作判断完整性的次序，不是生命实际做什么；路线 (b) 须面对以依存为界的中心容许搭便车者（P40：不用公理时，这一损失只在依存到达所关闭者时被识，见 closure-verdict-meets-axiom）；读法与名称是 AI 的，待 Ren。",
     "en": "Regions are parameters of the statement, and nothing models how a center forms its boundary; the region along dependence is a choice (the source reached along dependence, the dweller and the source alone); P40 shows that this region is exactly each formation's feeding closure (Clearing.dependenceRegion_iff; see feeding-closure), so the region is given by the dynamics, while bounding significance by it remains a choice; only formations admitted are compared, step by step; no duty or compliance is inferred, and nothing says what a center should do; the order of levels reads as an order of how complete a judgment is, not as what life does; route (b) must face that centers bounded by their dependence license the free rider (P40: without the axiom, this loss counts only where the dependence reaches what is closed; see closure-verdict-meets-axiom); the readings and names are the AI's, pending Ren."
   },
   "validation_scope": {
@@ -250,12 +250,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "79d84cc0e2c7045f3111a6da0621d96d35e98e47ca9e4d52011d1c02cbc38657"
+      "sha256": "34da078f70695c8ab8eebb5ea74fbc63effc19b65d5bcad6da8114aa70d4fef8"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "829a9e7868f218a19dccb7e90c2c3e9869bb97831f5055fc166b3f9aeb6165d8"
+      "sha256": "8f14304fe69eb1ee224a7868aa9b3edba9d933e1451bbbec385c0678cf2a9140"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -363,6 +363,10 @@
     {
       "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“计入”；断言不变。",
+      "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 计入; the claim is unchanged."
     }
   ]
 }

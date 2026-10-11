@@ -3912,7 +3912,7 @@ Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表
 >
 > do you see answers for these questions?
 
-AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给闭包对供给是精确的，却漏掉保护，如狼群压住会吃光森林的鹿；一般的对象是对影响形成所需者的一切影响的闭包；所在的系统还更大，`Clearing` 中栖居者在清除者的系统之内、依存之外；所以层次有四个：自身、依存、系统与整体。AI 还提出工作次序 (a)–(d)，前两项是：一个形成自身的反馈能计入哪些损失、不能计入哪些；四个层次与影响闭包。Ren 答：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context”。AI 把“i think you see the right direction”读作接受这一框架、各项回答与工作次序（来源中的 AI 读法，待 Ren）。对层级，Ren 此前写过：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。
+AI 回答了 P39 与 P40 留下的问题（同一来源，AI 的话）：供给闭包对供给是精确的，却漏掉保护，如狼群压住会吃光森林的鹿；一般的对象是对影响形成所需者的一切影响的闭包；所在的系统还更大，`Clearing` 中栖居者在清除者的系统之内、依存之外；所以层次有四个：自身、依存、系统与整体。AI 还提出工作次序 (a)–(d)，前两项是：一个形成自身的反馈能识得哪些损失、不能识得哪些；四个层次与影响闭包。Ren 答：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction, also update project context”。AI 把“i think you see the right direction”读作接受这一框架、各项回答与工作次序（来源中的 AI 读法，待 Ren）。对层级，Ren 此前写过：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md)）。
 
 本节是计划 P42（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)），由本会话完成。它不加公理。核心新增模块 `Becoming.Feedback`，100 项定理，导入 `Becoming.Interdependence`。不用公理的结果放进第一部分（章节 §2 的“反馈与所及”与第一部分的总陈述），与路线 (b) 和 Ren 的层级的关系放进第二部分（章节 §6.10）。整合之前，P42 与 P43 一起经[第十六次独立审查](BECOMING-P42-P43-REVIEW.md)，十六项更正已处理（§62.1）；结果是五个闭包，不是四个层次，所及闭包是审查之后加上的。成果记录新增三项：
 - [levels-of-closure](../../../../theories/becoming/results/records/levels-of-closure.md)
@@ -3972,8 +3972,8 @@ Integration: 计划 P42（工作次序 (a)–(b)）；推进 closure-verdict-mee
 | `Flow.TakesPart`、`Flow.Shares`、`Flow.WithinSystem`、`Flow.WithinSystem.symm` | 参与一个条件：依存于它或与它交换；两个形成共享一个条件：都参与它；系统是对共享的闭包，是类 |
 | `Flow.withinInfluence_of_withinFeeding`、`Flow.withinSystem_of_withinInfluence`、`Flow.withinSystem_of_withinReach`、`Flow.withinSystem_closed` | 供给闭包在影响闭包之内；影响闭包与所及闭包都在系统之内；系统对影响封闭 |
 | `Flow.system_whole_of_common`、`Flow.reach_whole_of_common`、`Flow.feeding_whole_of_common`、`Flow.feeding_unrestricted_of_common`、`Flow.bounded_system_whole` | 每个形成都参与一个条件时每个系统都是整体；都依存于它并与它交换时每个所及闭包都是整体；在某步都需要它并向它给予时每个供给闭包都是整体，以它为界的意义就是公理；每个中心的系统都是整体时，以系统为界的意义就是公理 |
-| `Flow.Balances.levels_agree`、`support_agrees`、`agrees_iff_even`、`agrees_of_quiet`、`exchanges_before_of_differs` | 两个平衡的流在一个条件上起始、取用与给予相同，就使它相同；所以形成的支持只计入与其所依存者的交换；扣留部分时两种水平在某步于一个条件上相同，恰当此前部分向它给予的等于从它取用的；成员都不与它交换时相同；某步不同之处，必有成员在更早的步与它交换 |
-| `Flow.beyond_influence`、`Flow.Balances.unregistered_beyond_influence` | 影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在闭包之外的部分，在闭包之内每一步都不被计入 |
+| `Flow.Balances.levels_agree`、`support_agrees`、`agrees_iff_even`、`agrees_of_quiet`、`exchanges_before_of_differs` | 两个平衡的流在一个条件上起始、取用与给予相同，就使它相同；所以形成经支持只识得与其所依存者的交换；扣留部分时两种水平在某步于一个条件上相同，恰当此前部分向它给予的等于从它取用的；成员都不与它交换时相同；某步不同之处，必有成员在更早的步与它交换 |
+| `Flow.beyond_influence`、`Flow.Balances.unregistered_beyond_influence` | 影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在闭包之外的部分，在闭包之内每一步都不被识 |
 | `Flow.Reaches`、`Flow.ReachesBefore`、`Flow.Balances.admits_unreached_before`、`admits_unreached` | 部分到达一个形成：成员与它所依存的条件交换；在某步之前到达：成员在更早的步与它在该步所需的条件交换；在某步之前没有到达的，在该步有与无部分时同样被接纳 |
 | `Flow.reaches_within_closed`、`reaches_withinReach`、`reaches_withinSystem`、`unreached_within_system`、`own_within_reach`、`own_within_system` | 成员在一个对影响封闭的区域之内的部分只到达区域之内；所及闭包与系统都是这样的区域；系统之外的部分到达不了系统之内；形成自身的部分在其所及闭包与系统之内 |
 | `Flow.Balances.comparison_local` | 两个意义从一个立场在每步对部分此前已到达者一致时，对有与无部分的水平作同样的四个比较 |
@@ -3993,14 +3993,14 @@ Integration: 计划 P42（工作次序 (a)–(b)）；推进 closure-verdict-mee
 | `Late.affected_without_effect` | 交换在依存之后：形成被影响、被到达，每步有与无部分都同样被接纳，部分在任何一步之前都没有到达它 |
 
 **它回答了什么。**
-- **反馈至多计入影响闭包。** AI 工作次序的 (a) 问：一个形成自身的反馈能计入哪些损失。在平衡的流中，水平只随其交换，所以形成的支持只计入与其所依存者的交换；影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在影响闭包之外的部分，在闭包之内每一步都不被计入（`Flow.Balances.unregistered_beyond_influence`）。`Clearing` 中，清除者的支持不显示它是否终结栖居者。影响闭包是上界：其余交换固定时，只有直接到达形成的部分被计入（`Flow.Balances.admits_unreached`）。
+- **反馈至多识及影响闭包。** AI 工作次序的 (a) 问：一个形成自身的反馈能识得哪些损失。在平衡的流中，水平只随其交换，所以形成经支持只识得与其所依存者的交换；影响闭包之外的不与闭包成员所依存的条件交换；所以成员都在影响闭包之外的部分，在闭包之内每一步都不被识（`Flow.Balances.unregistered_beyond_influence`）。`Clearing` 中，清除者的支持不显示它是否终结栖居者。影响闭包是上界：其余交换固定时，只有直接到达形成的部分被识（`Flow.Balances.admits_unreached`）。
 - **层次有五个，方向有两个。** 次序 (b) 问四个层次与影响闭包。闭包统一了它们：供给、影响、所及与系统都是对一个关系的闭包，整体在最上面。影响闭包与所及闭包方向相反：前者是能影响形成的，后者是形成能影响的；`Clearing` 中两者互不包含（`Clearing.reach_middle`）。每个包含都有严格的见证（`Clearing.levels`、`Trophic.mediates`）。
 - **比较在部分所及之内决定。** 覆盖部分所及的任何意义都给出公理的比较（`Flow.Balances.comparison_within_reach`）。这推进 P40：`Web.retains_bounded_iff_includes` 要求另一条路径接纳的每个形成都在区域之内或被第一条接纳；这里这一条件由动力学推出，只要意义覆盖部分在每步之前已到达的。更强的形式是比较的局部性（`comparison_local`）：两个意义在所及之处一致，比较就相同。任意两个流也是这样（`comparison_within_difference`），所以他者有回应时，比较在差别所及之内决定，差别含回应。
 - **系统与 Ren 的中间层级。** 系统界定每个效果：在系统之内的只到达系统之内。它却不读 Ren 中间的“the system that one is in”：一个共同条件就使它成为整体（`Flow.system_whole_of_common`），系统划分形成，没有嵌套，也没有中心。为那一读法提供的是所及闭包（AI 的读法，待 Ren）：它有中心、可嵌套，指向前方，不必含中心所依存的。在它上面，Ren 的较弱版本读作：覆盖中心所及的意义，对所及之内、无它的水平存在的每个部分，在其余交换固定时给出公理的比较；`Clearing` 中这一意义不是公理，对清除者自身的部分却与公理一致（`Clearing.reach_counts_dweller`）。
-- **“situational awareness”（AI 的读法，待 Ren）。** 只看重其反馈所计入者的中心，在部分只到达那个闭包之内时，对自身部分作公理的比较（`comparison_local`）；部分到达其外时可以误判，如清除者；到达其外本身不使它误判（`Margin`）。Ren 把“still need situational awareness”系于“the full truth set”。读作：要比较自身的部分，中心须知道部分在其反馈之外所到达的。
+- **“situational awareness”（AI 的读法，待 Ren）。** 只看重其反馈所识者的中心，在部分只到达那个闭包之内时，对自身部分作公理的比较（`comparison_local`）；部分到达其外时可以误判，如清除者；到达其外本身不使它误判（`Margin`）。Ren 把“still need situational awareness”系于“the full truth set”。读作：要比较自身的部分，中心须知道部分在其反馈之外所到达的。
 
 **作者反审。**
-1. **两种反事实。** 以扣留水平的比较固定其余交换。它只计入部分直接的交换：狼群经鹿对森林的作用在其中不出现，狼群的部分反而缩小（`Trophic.mediated_unregistered`）；对照鹿有回应的流，它是混合的（`responsive_mixed`）。影响闭包的动机来自经他者传递的影响，而它所支持的计入定理用固定其余交换的比较：影响闭包是上界，不是所计入者的刻画。回应的流在见证中是给出的，不由动力学推出；动力学给出回应的比较列为开放。
+1. **两种反事实。** 以扣留水平的比较固定其余交换。它只识得部分直接的交换：狼群经鹿对森林的作用在其中不出现，狼群的部分反而缩小（`Trophic.mediated_unregistered`）；对照鹿有回应的流，它是混合的（`responsive_mixed`）。影响闭包的动机来自经他者传递的影响，而它所支持的识的定理用固定其余交换的比较：影响闭包是上界，不是所识者的刻画。回应的流在见证中是给出的，不由动力学推出；动力学给出回应的比较列为开放。
 2. **比较可以不存在。** 部分给出他者所取时，无它的水平可以不平衡任何流（`Clearing.no_levels_without_source`）。这类部分没有扣留的比较；两个流的比较（`comparison_within_difference`）仍可用，只要另给第二个流。
 3. **时间的次序。** `AffectedBy`、`Reaches` 与 `Shares` 是形成层面的，不看步的先后：交换可以晚于依存（`Late.affected_without_effect`）。它们是可靠的上界。比较定理用按时间先后的 `ReachesBefore`，所以不受这一点影响；闭包本身不按时间先后，按步的闭包列为开放。
 4. **正面形式的增加。** 核心是构造性的。对每个意义，“两者都不增加，恰当两者都不超出”成立；正面形式在意义可判定处成立，一般只到双重否定（`adds_iff_exceeds_of_decidable`、`not_not_adds_of_exceeds`）。缺的只是可判定性，它可以作为假设陈述。
@@ -4108,7 +4108,7 @@ Integration: 计划 P43（工作次序 (c)）；把公理超出预设的全部�
 | 1 | 把系统读作 Ren 的中间层级，中间层级坍缩为整体：一个共同条件就使系统成为整体，系统是类，没有嵌套与中心（F1） | 撤回这一读法；为它提供所及闭包（`Flow.Affects`、`Flow.WithinReach`、`Flow.reaches_withinReach`、`Flow.withinSystem_of_withinReach`、`Clearing.reach_middle`、`reach_centred`、`reach_counts_dweller`），写明它指向前方、不必含供给闭包；加入 `Flow.system_whole_of_common`、`Boundary.only_whole` 与拆分后的 `Clearing.system_whole`；`Becoming.Interdependence` 的读法与章节 §6.9 加更正，P40 把供给闭包读作所在系统的读法撤回 |
 | 2 | 较弱版本给出整体对系统之内每个行为的判断，说得过宽（§4） | 写明范围：所及之内、无它的水平存在的每个部分，其余交换固定；系统是整体时，前提就是该立场上的公理 |
 | 3 | “由三个前提推出公理”是分解，不是化约；“derived, not assumed”不成立（F6） | 标题改为“The axiom decomposed: where its content lies”；加入 `boundaryInvariant_iff_conditional`、`boundaryInvariant_iff_determinate`、`not_subTrue_of_invariant`（审查的 `invariance_levels_down`），扩展 `boundaryInvariant_iff_all`；撤回“derived, not assumed”；写明复用 `Valuation.significant_iff`、`Valuation.significant_iff_held` 与 P39 的边界中立；补上“像容差连同 Chain 一样，承载公理在预设之外的全部内容” |
-| 4 | 两种反事实：影响闭包的动机是经他者的影响，而计入与比较定理固定其余交换（F2） | 两个模块的说明加上这一点；加入见证 `Trophic.mediated_unregistered`（审查的 `protection_invisible`）、`responsive_mixed`、`Clearing.no_levels_without_source`；影响闭包的读法加“once effects pass through the support and activity of others”。审查之外另加 `Flow.Balances.comparison_within_difference`：任意两个流的比较在其差别所及之内决定，他者的回应在差别之内 |
+| 4 | 两种反事实：影响闭包的动机是经他者的影响，而识与比较定理固定其余交换（F2） | 两个模块的说明加上这一点；加入见证 `Trophic.mediated_unregistered`（审查的 `protection_invisible`）、`responsive_mixed`、`Clearing.no_levels_without_source`；影响闭包的读法加“once effects pass through the support and activity of others”。审查之外另加 `Flow.Balances.comparison_within_difference`：任意两个流的比较在其差别所及之内决定，他者的回应在差别之内 |
 | 5 | 扩展的标题与主张 (2)–(4) 说得过多，`Clearing.system_whole` 的位置不能编译（§6） | 标题改为“有了预设与中心覆盖，两种形式等价：那时每种都是公理”；`unrestricted_iff_presupposed_of_whole` 的说明写明“because the whole is then the only boundary”；不把 `Flow.unrestricted_iff_system_presupposed` 读作 Ren 的“highly entangled system”；主张 (4) 改为“在一个系统之内的只到达系统之内，在系统之外的到达不了系统之内”；`without_standpoint_invariance` 的说明与陈述对齐；`Clearing.system_whole` 按 `merge_ext.py` 拆分，Boundaries 另立 `Clearing.system_presupposition` |
 | 6 | 对手的位置：在模块自己的边界下，闭包对手否认的是次真或不变，不是覆盖（F9） | 按审查的文字改写：沿一个关系覆盖由构造成立，各对手否认另一个前提，并加入分级权重与现时目的的评价者 |
 | 7 | 对 Ren 的归属过度（§5） | “three claims Ren holds”改为“three claims the assistant read from Ren's words”；不变一条改为：“for all beings”最直接地读作对立场不变，“universal invariations”是规律跨宇宙的不变，推广到意义是 AI 的读法；预设一条加：Ren 写的是自身的限度，把 belief 用作前提是 AI 的一步 |
@@ -4571,7 +4571,7 @@ Integration: 章节 §8 的 Ren 的选择加一项（第二部分的结构）；
 
 **边界。** 不新增定理，不改定义；移动待 Ren；尚无独立审查。
 
-## 70. 反映与检验（P49）
+## 70. 识与检验（P49）
 
 2026-10-11。Ren 提议（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）：
 
@@ -4581,9 +4581,9 @@ Integration: 章节 §8 的 Ren 的选择加一项（第二部分的结构）；
 >
 > Try again
 
-AI 的分析与拟议阶段在[计划](REGISTRATION-AND-TESTING-PLAN.md)中。它说经由支持的反馈有三种不见（阈下、视界之外、所及之外）；失控是在其一之中运行的回路；量度、延续的模型与他者的反映是跨过它们的方式；可否证性是被展开纠正的条件；理 读作反映 心 的反馈所不能反映者的模型。它还留给 Ren 四个问题。Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。AI 把这读作接受开始这一阶段、接受名称与 理 的读法（来源中的 AI 读法）。第 4 问，即形成自身的立着是否算作被反映，由 AI 探索后决定（§70.1）。独立审查收窄了这些读法（§70.2），所以下面的读法是收窄之后的，不是 Ren 所接受的原文。
+AI 的分析与拟议阶段在[计划](REGISTRATION-AND-TESTING-PLAN.md)中。它说经由支持的反馈有三种不见（阈下、视界之外、所及之外）；失控是在其一之中运行的回路；量度、延续的模型与他者之识是跨过它们的方式；可否证性是被展开纠正的条件；理 读作识 心 的反馈所不能识者的模型。它还留给 Ren 四个问题。Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。AI 把这读作接受开始这一阶段、接受名称与 理 的读法（来源中的 AI 读法）。第 4 问，即形成自身的立着是否算作被识，由 AI 探索后决定（§70.1）。独立审查收窄了这些读法（§70.2），所以下面的读法是收窄之后的，不是 Ren 所接受的原文。
 
-本节是统一计划 P49（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被反映的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
+本节是统一计划 P49（[计划 §10](BECOMING-UNIFICATION-PLAN.md#10-第一部分与第二部分--part-i-and-part-ii)）。起草时编为 P47，因 P47 已是 `Becoming.Standing`，在工作板上改为 P49；审查文件保留起草时的编号。它不加公理，属于第一部分。核心新增模块 `Becoming.Testing`，92 项定理，导入 `Becoming.Feedback` 与 `Becoming.Locality`。按[零前提转向](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)与整合者定下的接口，平衡只在被识的条件上逐步假设（`Flow.BalancesOn`）；整体的平衡经 `Flow.Balances.on` 给出它。
 
 成果记录新增两项：
 - [testing-within-registration](../../../../theories/becoming/results/records/testing-within-registration.md)
@@ -4599,7 +4599,7 @@ Result(s): 复用 feedback-and-reach（Flow.Exchanges、Flow.WithinInfluence、F
            （Renewable.prefix_does_not_decide）；Becoming.Inquiry 的 commonResponse_judge_iff 与 commonResponse_antitone；
            Becoming.Roles 的 Web.SelfBearing 与 Web.Embodied；Becoming.Locality 的 Flow.BalancesOn 与 Flow.Balances.on；
            新增上列两项
-Delta: 反映：supportOnly、ownStanding（ownStanding_other）、Web.RegistersAlike（refl、symm）、Web.RegistersAlikeUpTo
+Delta: 识：supportOnly、ownStanding（ownStanding_other）、Web.RegistersAlike（refl、symm）、Web.RegistersAlikeUpTo
        （symm、earlier、of_obs）、registersAlikeUpTo_of_agree、Web.alike_of_threshold、Web.observed_level_registers、
        Web.Registers、Web.LevelsAtLeast、Web.admits_iff_supported_of_agree、Web.registersAlike_iff_of_levelsAtLeast。
        否证：Web.Refutes（not_of_alike、not_meets、later、widen、not_of_extension）、Web.tail_unrefuted、Web.RefutesWithin
@@ -4616,13 +4616,13 @@ Delta: 反映：supportOnly、ownStanding（ownStanding_other）、Web.Registers
        Attracting.higher_breaks_first、Prey（registers_taking、omits）、SelfPrey（threshold_on_oneself、within_influence）、
        Stationary（model_error、model_refuted）、Clearing（alike_for_clearer、tested_by_dweller、pooled、
        model_idles_registration）、Renewable（no_exact_finite_reading、finite_reading_withholds_renewal）
-Supplied premises / correspondence: 不加公理；平衡只在被反映的条件上逐步假设（Flow.BalancesOn，单元素家族），整体的平衡
-       给出它；阈值定理另设交换随反映（Flow.ExchangeFollows），所及定理另设区域的封闭与成员只经自己的反映回应，都是给出的
+Supplied premises / correspondence: 不加公理；平衡只在被识的条件上逐步假设（Flow.BalancesOn，单元素家族），整体的平衡
+       给出它；阈值定理另设交换随识（Flow.ExchangeFollows），所及定理另设区域的封闭与成员只经自己之识回应，都是给出的
        假设，不由动力学推出；有与无部分的比较用扣留水平（其余交换不变，表示上的选择）；模型是可容许历史的类，是给出的；
-       观察（obs）是参数，基础是只反映支持；离散的步、自然数的量；读法是 AI 的，审查收窄之后待 Ren
+       观察（obs）是参数，基础是只识支持；离散的步、自然数的量；读法是 AI 的，审查收窄之后待 Ren
 Evidence: 合并检查器回执 20261011T072815.712072Z（Becoming.Testing 92 项定理，全部源声明公理报告为空），外围回执 20261011T072918.589912Z；
           整合之前的独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其 192 个探针常量都不依赖公理
-Boundary: 形成观察支持之外的任何东西、量度自身的立着、形成模型、想要避免失控都不推出；反映相同只界定能分辨的，不说差别
+Boundary: 形成观察支持之外的任何东西、量度自身的立着、形成模型、想要避免失控都不推出；识得相同只界定能分辨的，不说差别
           关于什么；一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验；他者怎样回应是给出的；
           “失控”没有定义，失控的读法是启发，不是陈述；不含伦理谓词
 Integration: 计划 P49（原计划的 T1–T5，见计划 §7）；推广 P42 的 unregistered_beyond_influence（观察，回应的形式）；
@@ -4631,62 +4631,62 @@ Integration: 计划 P49（原计划的 T1–T5，见计划 §7）；推广 P42 �
 
 | 声明 | 内容 |
 |---|---|
-| `supportOnly`、`ownStanding`、`Web.RegistersAlike`、`Web.RegistersAlikeUpTo` | 形成反映它的支持（水平是否接纳它）与它所观察之条件的水平（`obs`）；在两个水平历史之下，在某步水平同样接纳它、所观察的条件同样立着，就是反映相同；直到某步每步如此，就是直到该步反映相同。基础观察是只反映支持；量度自身的立着（`ownStanding`）是一个观察前提 |
-| `Web.alike_of_threshold`、`Web.observed_level_registers`、`RegistersAlikeUpTo.of_obs` | 一个依存而不观察的条件，只反映它是否满足所需：两个历史下都满足或都不满足，形成就反映相同，无论两个水平是多少；观察的条件反映其水平，任何差别都被反映；观察得更多，分辨得更多 |
-| `Web.Refutes`、`Refutes.not_of_alike`、`not_meets`、`later`、`widen`、`not_of_extension` | 满足主张的历史没有一个直到某步与实际反映相同，主张就在该步被否证；主张只经反映的差别被否证；成立的永不被否证；否证此后一直成立；观察得更多否证得更多；与记录在该步之前一致而满足主张的历史，使主张不被否证 |
+| `supportOnly`、`ownStanding`、`Web.RegistersAlike`、`Web.RegistersAlikeUpTo` | 形成识它的支持（水平是否接纳它）与它所观察之条件的水平（`obs`）；在两个水平历史之下，在某步水平同样接纳它、所观察的条件同样立着，就是识得相同；直到某步每步如此，就是直到该步识得相同。基础观察是只识支持；量度自身的立着（`ownStanding`）是一个观察前提 |
+| `Web.alike_of_threshold`、`Web.observed_level_registers`、`RegistersAlikeUpTo.of_obs` | 一个依存而不观察的条件，只识它是否满足所需：两个历史下都满足或都不满足，形成就识得相同，无论两个水平是多少；观察的条件以其水平被识，任何差别都被识；观察得更多，分辨得更多 |
+| `Web.Refutes`、`Refutes.not_of_alike`、`not_meets`、`later`、`widen`、`not_of_extension` | 满足主张的历史没有一个直到某步与实际识得相同，主张就在该步被否证；主张只经所识的差别被否证；成立的永不被否证；否证此后一直成立；观察得更多否证得更多；与记录在该步之前一致而满足主张的历史，使主张不被否证 |
 | `Web.tail_unrefuted` | 没有模型时，对任何直到某步的记录，“某条件将归于无”与“它此后一直在无之上”都不被任何形成、在任何观察下否证 |
-| `Web.RefutesWithin`、`refutesWithin_iff_conjunction`、`refutes_iff_refutesWithin_all`、`RefutesWithin.narrow`、`RefutesWithin.not_meets` | 相对于一个模型（可容许历史的类）否证：满足主张的可容许历史没有一个反映相同；这就是对“模型且主张”的否证（迪昂–奎因的结构）；不相对于模型就是相对于容许一切历史的模型；模型越窄否证越多；模型容许实际时，成立的不被否证 |
+| `Web.RefutesWithin`、`refutesWithin_iff_conjunction`、`refutes_iff_refutesWithin_all`、`RefutesWithin.narrow`、`RefutesWithin.not_meets` | 相对于一个模型（可容许历史的类）否证：满足主张的可容许历史没有一个识得相同；这就是对“模型且主张”的否证（迪昂–奎因的结构）；不相对于模型就是相对于容许一切历史的模型；模型越窄否证越多；模型容许实际时，成立的不被否证 |
 | `Flow.BalancedHistory`、`BalancedHistory.agree`、`Flow.refutes_tail_within` | 流的水平历史：每步每个条件得其所给、失其所取，是交换的模型；起始在一个条件上相同的两个水平历史在其上一直相同；相对于这一模型，观察储量的形成在第一步就否证一切“它将归于无”的假主张 |
-| `Stationary.model_error`、`model_refuted` | 错的模型否证成立的：模型说没有取用与给予，储量在第二步被模型遗漏的取用取尽；相对于它，量度储量的形成在第一步否证“它将归于无”，而这在实际中成立；在第二步，模型容许的历史没有一个与实际反映相同：反映否证了模型 |
-| `Web.Belief`、`belief_refutes_iff`、`belief_judge_iff`、`belief_judge_later`、`belief_judge_widen` | 形成的信念是与实际反映相同的历史；否证就是主张与信念不交；由反映作出的判断恰是 `Becoming.Inquiry` 中判断过程在信念上的共同回应；更晚的步与更多的观察收窄信念，保持每个共同回应 |
-| `Web.Registers`、`Flow.RegisteredFrom`、`Flow.WithinRegistration` | 形成依存于或观察一个条件，就反映它；另一个形成与它所反映的条件交换，它就经所反映者受其影响；反映闭包是对这一关系的闭包 |
-| `withinRegistration_of_withinInfluence`、`withinRegistration_supportOnly`、`withinRegistration_mono_obs`、`withinRegistration_mono_flow`、`beyond_registration` | 反映闭包含 P42 的影响闭包，只反映支持时就是它；它随观察与交换增大；闭包之外的不与闭包之内被反映的条件交换 |
-| `Flow.exchange_agrees_within`、`Flow.alike_within_closed`、`alike_within_registration` | 两个流在相同的形成在场、在成员所反映的每个条件上逐步平衡；区域在两个流中都对经所反映者受影响封闭；水平起始在成员所反映的条件上相同；每个成员在自己反映相同之处，对成员所反映的条件同样取用与给予。那么每个成员每步都反映相同，无论区域之外、成员不反映的条件上或成员不反映的水平上有什么不同。对从一个形成出发、经两个流画出的反映闭包也如此 |
-| `Flow.unregistered_beyond_registration`、`unrefuted_beyond_registration`、`beyond_needs_model`、`belief_judge_beyond` | 其余交换固定、部分的成员都在反映闭包之外时，闭包之内每个形成每步有与无部分都反映相同（上一定理的实例，第二个流是扣留部分的流；只反映支持时就是 P42 的 `unregistered_beyond_influence`）；所以无部分的水平所满足的主张在闭包之内不被否证；闭包之内相对于模型的否证，靠的是模型对部分之交换的排除；闭包之内的判断在有与无部分时都可容许 |
-| `Flow.ExchangeFollows` | 交换随 `g` 的反映：凡 `g` 直到某步反映相同，两个流跨过该步在 `g` 所反映的每个条件上，对在场的全部形成，取用与给予的总量相同。这是关于 `g` 周围全部交换的假设：它排除他者对 `g` 所不反映者作出回应 |
-| `Flow.difference_kept`、`levelsAtLeast_while_alike`、`alike_while_supported` | 在 `g` 反映的条件上逐步平衡、交换随其反映时：`g` 反映相同期间，它所反映条件上的每个差别都保持起始的样子；第二个网在 `g` 所反映的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 `g` 的每一步，`g` 都反映相同；可以有任意多个条件不同 |
+| `Stationary.model_error`、`model_refuted` | 错的模型否证成立的：模型说没有取用与给予，储量在第二步被模型遗漏的取用取尽；相对于它，量度储量的形成在第一步否证“它将归于无”，而这在实际中成立；在第二步，模型容许的历史没有一个与实际识得相同：识否证了模型 |
+| `Web.Belief`、`belief_refutes_iff`、`belief_judge_iff`、`belief_judge_later`、`belief_judge_widen` | 形成的信念是与实际识得相同的历史；否证就是主张与信念不交；由识作出的判断恰是 `Becoming.Inquiry` 中判断过程在信念上的共同回应；更晚的步与更多的观察收窄信念，保持每个共同回应 |
+| `Web.Registers`、`Flow.RegisteredFrom`、`Flow.WithinRegistration` | 形成依存于或观察一个条件，就识它；另一个形成与它所识的条件交换，它就经所识者受其影响；识闭包是对这一关系的闭包 |
+| `withinRegistration_of_withinInfluence`、`withinRegistration_supportOnly`、`withinRegistration_mono_obs`、`withinRegistration_mono_flow`、`beyond_registration` | 识闭包含 P42 的影响闭包，只识支持时就是它；它随观察与交换增大；闭包之外的不与闭包之内被识的条件交换 |
+| `Flow.exchange_agrees_within`、`Flow.alike_within_closed`、`alike_within_registration` | 两个流在相同的形成在场、在成员所识的每个条件上逐步平衡；区域在两个流中都对经所识者受影响封闭；水平起始在成员所识的条件上相同；每个成员在自己识得相同之处，对成员所识的条件同样取用与给予。那么每个成员每步都识得相同，无论区域之外、成员不识的条件上或成员不识的水平上有什么不同。对从一个形成出发、经两个流画出的识闭包也如此 |
+| `Flow.unregistered_beyond_registration`、`unrefuted_beyond_registration`、`beyond_needs_model`、`belief_judge_beyond` | 其余交换固定、部分的成员都在识闭包之外时，闭包之内每个形成每步有与无部分都识得相同（上一定理的实例，第二个流是扣留部分的流；只识支持时就是 P42 的 `unregistered_beyond_influence`）；所以无部分的水平所满足的主张在闭包之内不被否证；闭包之内相对于模型的否证，靠的是模型对部分之交换的排除；闭包之内的判断在有与无部分时都可容许 |
+| `Flow.ExchangeFollows` | 交换随 `g` 的识：凡 `g` 直到某步识得相同，两个流跨过该步在 `g` 所识的每个条件上，对在场的全部形成，取用与给予的总量相同。这是关于 `g` 周围全部交换的假设：它排除他者对 `g` 所不识者作出回应 |
+| `Flow.difference_kept`、`levelsAtLeast_while_alike`、`alike_while_supported` | 在 `g` 识的条件上逐步平衡、交换随其识时：`g` 识得相同期间，它所识条件上的每个差别都保持起始的样子；第二个网在 `g` 所识的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 `g` 的每一步，`g` 都识得相同；可以有任意多个条件不同 |
 | `Flow.difference_changes_after_divergence` | 差别在某步之前已改变，必有更早的一步，第二个网的水平接纳 `g` 而第一个网不支持它：起作用的是两网的分岔；活动需要支持时，`g` 在第一个网中并非此前每步都活跃；两网一起失败不是分岔 |
-| `Flow.subthreshold_alike`、`subthreshold_alike_always` | 阈下：起始只在 `g` 依存而不观察的一个储量上不同，第二个网中高 `d`。那么在第一个网此前每步都支持 `g` 的每一步，储量在第二个网中恰好高 `d`，`g` 所反映的其余条件相同，`g` 此前每步都反映相同；第一个网每步都支持 `g` 时，每步都如此 |
+| `Flow.subthreshold_alike`、`subthreshold_alike_always` | 阈下：起始只在 `g` 依存而不观察的一个储量上不同，第二个网中高 `d`。那么在第一个网此前每步都支持 `g` 的每一步，储量在第二个网中恰好高 `d`，`g` 所识的其余条件相同，`g` 此前每步都识得相同；第一个网每步都支持 `g` 时，每步都如此 |
 | `SupportDrawn.difference_waits` | 形成需要一个单位，在每个被支持的步取一个单位，较低的储量是二、较高的是三，交换只随支持：差别一直保持到第三步，较低的网在第三步不支持它而较高的网支持，第四步差别已变 |
 | `JointFailure.difference_kept` | 第二个所需条件在第一步之后消失，两个网都从第二步起不支持形成：储量差别每步都保持，较低者的失败不是分岔 |
-| `Gauged.gauge_changes_difference`、`own_is_stock` | 观察储量的形成在第一步就取尽需要之上的全部：两网中它每步都被支持，较高的网中它动用了差别；它在第一步就把两网反映为不同，所以交换随其反映不约束任何东西；只反映支持时交换不随其反映。储量划作自身的立着时，量度自身就是量度储量 |
-| `Attracting.higher_breaks_first` | 他者回应储量本身时：取用者被三个单位的储量招来，在第一步取两个单位；较高的网在第二步就不支持依存者，较低的网仍支持；依存者在第一步反映相同而取用总量不同，交换不随其反映 |
-| `Prey.registers_taking`、`Prey.omits` | 猎物依存于无人交换的食物，不依存于自身：捕食者在其影响闭包之外、在量度自身时的反映闭包之内；其余交换固定时，猎物经支持每步都把捕食者的部分反映相同，量度自身则在咬之后反映它。所反映的差别对猎物不起任何作用：它每步都被支持、活跃并被无捕食者的水平接纳；它不承担自身，捕食者以零水平活跃：第一项靠的是这些被省略的关系 |
-| `SelfPrey.threshold_on_oneself`、`within_influence` | 猎物以所需一依存于自身：捕食者在其影响闭包之内；咬一个单位不使它低于自身所需，经支持每步都反映相同，量度自身在第二步反映它；咬两个单位，经支持在第二步就被反映 |
-| `Clearing.alike_for_clearer`、`tested_by_dweller` | 清除者每步都反映相同，无论清除是否终结栖居者（`alike_within_closed` 的实例：清除是对清除者一侧无人反映之条件的作用）；在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不否证，被栖居者在第三步否证 |
+| `Gauged.gauge_changes_difference`、`own_is_stock` | 观察储量的形成在第一步就取尽需要之上的全部：两网中它每步都被支持，较高的网中它动用了差别；它在第一步就把两网识为不同，所以交换随其识不约束任何东西；只识支持时交换不随其识。储量划作自身的立着时，量度自身就是量度储量 |
+| `Attracting.higher_breaks_first` | 他者回应储量本身时：取用者被三个单位的储量招来，在第一步取两个单位；较高的网在第二步就不支持依存者，较低的网仍支持；依存者在第一步识得相同而取用总量不同，交换不随其识 |
+| `Prey.registers_taking`、`Prey.omits` | 猎物依存于无人交换的食物，不依存于自身：捕食者在其影响闭包之外、在量度自身时的识闭包之内；其余交换固定时，猎物经支持每步都把捕食者的部分识得相同，量度自身则在咬之后识它。所识的差别对猎物不起任何作用：它每步都被支持、活跃并被无捕食者的水平接纳；它不承担自身，捕食者以零水平活跃：第一项靠的是这些被省略的关系 |
+| `SelfPrey.threshold_on_oneself`、`within_influence` | 猎物以所需一依存于自身：捕食者在其影响闭包之内；咬一个单位不使它低于自身所需，经支持每步都识得相同，量度自身在第二步识之；咬两个单位，经支持在第二步就被识 |
+| `Clearing.alike_for_clearer`、`tested_by_dweller` | 清除者每步都识得相同，无论清除是否终结栖居者（`alike_within_closed` 的实例：清除是对清除者一侧无人识之条件的作用）；在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不否证，被栖居者在第三步否证 |
 | `Clearing.pooled` | 在不清除的世界中，“第三步栖居者或清除者不被接纳”，清除者与栖居者各自都不否证，两者合起来否证 |
-| `Clearing.model_idles_registration` | 以固定起始与交换的模型，清除者在第一步就否证“栖居者在第三步被接纳”，而它不反映栖息地的任何东西：完整的模型使反映不起作用 |
+| `Clearing.model_idles_registration` | 以固定起始与交换的模型，清除者在第一步就否证“栖居者在第三步被接纳”，而它不识栖息地的任何东西：完整的模型使识不起作用 |
 | `Renewable.no_exact_finite_reading`、`finite_reading_withholds_renewal` | 延续开放时，没有由前 `h` 步决定的读法恰是整段的分类；不认可任何消耗的运行的这种读法，不认可某个更新的运行。两者都是 `prefix_does_not_decide` 的推论 |
 
 **它回答了什么。**
-- **一个形成能反映什么。** 经依存，反映是一个阈值：一个条件只反映它是否满足所需（`Web.alike_of_threshold`）；经观察，反映其水平（`Web.observed_level_registers`）。这是计划 T1 的反映等价，在一步上是精确的。
-- **主张需要什么才能被检验。** 主张只经反映的差别被否证（`Web.Refutes.not_of_alike`）。这是可否证性的结构：主张与其对手必须在能被反映之处不同。它是关系的：清除者不能检验的，栖居者能（`Clearing.tested_by_dweller`），两者合起来能检验各自都不能的（`Clearing.pooled`）。它随所反映者而动：观察得更多，否证得更多（`Refutes.widen`）。
-- **视界与模型。** 没有模型，有限的记录不否证任何关于其后的主张（`Web.tail_unrefuted`）。审查之前，AI 把这读作“关于整个运行的主张不被有限记录检验”；它只在延续开放时成立。相对于交换的模型，观察储量的形成在第一步就否证关于整个运行的假主张（`Flow.refutes_tail_within`）。代价也在：相对于模型的否证是对模型与主张一起的否证（`Web.refutesWithin_iff_conjunction`），错的模型否证成立的（`Stationary.model_error`），而反映否证模型（`Stationary.model_refuted`）。延续开放时，没有有限的读法是精确的（`Renewable.no_exact_finite_reading`）。
-- **所及之外的不见，在成员有回应时。** 审查之前的形式固定其余交换，闭包的传递性在其中不起作用。现在的形式让区域之内的成员回应：只要每个成员只经自己的反映回应，区域之外的差别永不在区域之内被反映（`Flow.alike_within_closed`）。固定其余交换的形式是它的实例（`unregistered_beyond_registration`），`Clearing.alike_for_clearer` 也是。
-- **阈下的不见，精确的形式。** 在交换随反映之下，差别在 `g` 反映相同期间不变（`difference_kept`），只在两网支持分岔之后改变（`difference_changes_after_divergence`）；两网一起失败时，差别可以永远保持（`JointFailure`）。观察储量解除这一点（`Gauged`）。他者回应储量本身时，假设不成立，较高的储量可以先终结 `g`（`Attracting`）：这是审查找到的真实反例，针对未加限定的读法。
-- **与 Becoming.Inquiry 的桥。** 形成的信念是与实际反映相同的历史；由反映作出的判断恰是判断过程在信念上的共同回应，更晚的步与更多的观察都保持它（`Web.belief_judge_iff`、`belief_judge_later`、`belief_judge_widen`）；闭包之内的判断在有与无闭包之外的部分时都可容许（`Flow.belief_judge_beyond`）。
+- **一个形成能识什么。** 经依存，识是一个阈值：一个条件只以是否满足所需被识（`Web.alike_of_threshold`）；经观察，识其水平（`Web.observed_level_registers`）。这是计划 T1 的识等价，在一步上是精确的。
+- **主张需要什么才能被检验。** 主张只经所识的差别被否证（`Web.Refutes.not_of_alike`）。这是可否证性的结构：主张与其对手必须在能被识之处不同。它是关系的：清除者不能检验的，栖居者能（`Clearing.tested_by_dweller`），两者合起来能检验各自都不能的（`Clearing.pooled`）。它随所识者而动：观察得更多，否证得更多（`Refutes.widen`）。
+- **视界与模型。** 没有模型，有限的记录不否证任何关于其后的主张（`Web.tail_unrefuted`）。审查之前，AI 把这读作“关于整个运行的主张不被有限记录检验”；它只在延续开放时成立。相对于交换的模型，观察储量的形成在第一步就否证关于整个运行的假主张（`Flow.refutes_tail_within`）。代价也在：相对于模型的否证是对模型与主张一起的否证（`Web.refutesWithin_iff_conjunction`），错的模型否证成立的（`Stationary.model_error`），而识否证模型（`Stationary.model_refuted`）。延续开放时，没有有限的读法是精确的（`Renewable.no_exact_finite_reading`）。
+- **所及之外的不见，在成员有回应时。** 审查之前的形式固定其余交换，闭包的传递性在其中不起作用。现在的形式让区域之内的成员回应：只要每个成员只经自己之识回应，区域之外的差别永不在区域之内被识（`Flow.alike_within_closed`）。固定其余交换的形式是它的实例（`unregistered_beyond_registration`），`Clearing.alike_for_clearer` 也是。
+- **阈下的不见，精确的形式。** 在交换随识之下，差别在 `g` 识得相同期间不变（`difference_kept`），只在两网支持分岔之后改变（`difference_changes_after_divergence`）；两网一起失败时，差别可以永远保持（`JointFailure`）。观察储量解除这一点（`Gauged`）。他者回应储量本身时，假设不成立，较高的储量可以先终结 `g`（`Attracting`）：这是审查找到的真实反例，针对未加限定的读法。
+- **与 Becoming.Inquiry 的桥。** 形成的信念是与实际识得相同的历史；由识作出的判断恰是判断过程在信念上的共同回应，更晚的步与更多的观察都保持它（`Web.belief_judge_iff`、`belief_judge_later`、`belief_judge_widen`）；闭包之内的判断在有与无闭包之外的部分时都可容许（`Flow.belief_judge_beyond`）。
 
 **读法（AI 的；Ren 接受过收窄之前的措辞，审查收窄了它们）。**
-- 经由支持的反馈有三种不见，各有其范围：阈下，在交换随反映之处；视界之外，在延续开放之处；反映闭包之外，在成员只经自己的反映回应之处。它们不是全部：支持只反映净交换（`Flow.Balances.agrees_iff_even`），跨所需诸条件只有一个合起来的比特。
-- 失控是在其一之中运行的回路。这是启发，不是陈述：回路与增益都没有定义；他者回应储量时，其损失可以更早被反映（`Attracting`）。
-- 量度反映阈下的水平（`Web.observed_level_registers`）；交换的模型相对于自身越过视界，并对反映负责（`Flow.refutes_tail_within`、`Stationary`）；新的观察与新的交换扩大闭包（`withinRegistration_mono_obs`、`withinRegistration_mono_flow`）；他者的反映检验自己不能检验的（`Clearing.tested_by_dweller`、`Clearing.pooled`），而它只经本身是交换或观察的关系到达自己。
-- 可否证性是被展开纠正的条件：主张与其对手必须在能被反映之处不同。它是关系的，随所反映者而动。没有模型，有限的记录不检验关于其后的主张；有了模型，检验的是模型与主张一起。
-- 与 Ren 的 心 与 理 合读，理 是对反映负责的模型：它收窄所容许的历史，使同样的反映判定更多；它可以误导，反映纠正它。
+- 经由支持的反馈有三种不见，各有其范围：阈下，在交换随识之处；视界之外，在延续开放之处；识闭包之外，在成员只经自己之识回应之处。它们不是全部：经支持只识得净交换（`Flow.Balances.agrees_iff_even`），跨所需诸条件只有一个合起来的比特。
+- 失控是在其一之中运行的回路。这是启发，不是陈述：回路与增益都没有定义；他者回应储量时，其损失可以更早被识（`Attracting`）。
+- 量度识阈下的水平（`Web.observed_level_registers`）；交换的模型相对于自身越过视界，并对识负责（`Flow.refutes_tail_within`、`Stationary`）；新的观察与新的交换扩大闭包（`withinRegistration_mono_obs`、`withinRegistration_mono_flow`）；他者之识检验自己不能检验的（`Clearing.tested_by_dweller`、`Clearing.pooled`），而它只经本身是交换或观察的关系到达自己。
+- 可否证性是被展开纠正的条件：主张与其对手必须在能被识之处不同。它是关系的，随所识者而动。没有模型，有限的记录不检验关于其后的主张；有了模型，检验的是模型与主张一起。
+- 与 Ren 的 心 与 理 合读，理 是对识负责的模型：它收窄所容许的历史，使同样的识判定更多；它可以误导，识纠正它。
 
-### 70.1 第 4 问：形成自身的立着是否算作被反映
+### 70.1 第 4 问：形成自身的立着是否算作被识
 
 Ren 把第 4 问留给 AI：“for 4, you can explore which option is better, then make decision”。这是表示上的选择：`obs` 是参数，每个定理对每个 `obs` 成立，所以决定不改变任何定理，只改变读法与默认。
 
-**最初的决定。** 起草时 AI 决定：在一类读法中，形成自身的立着算作被反映（`ownStanding` 为默认），只反映支持（`supportOnly`）是两类读法的情形。理由有三：一类读法中形成与条件是一个关系项，否认自身立着的变化在自身中被反映，看起来像把形成拆成观察者与身体；被取用是最直接的承受；形式上无害。
+**最初的决定。** 起草时 AI 决定：在一类读法中，形成自身的立着算作被识（`ownStanding` 为默认），只识支持（`supportOnly`）是两类读法的情形。理由有三：一类读法中形成与条件是一个关系项，否认自身立着的变化在自身中被识，看起来像把形成拆成观察者与身体；被取用是最直接的承受；形式上无害。
 
 **审查的论证（第 6 节）。** 审查认为这是较弱的选择，理由是：
-1. 经依存，反映是一个阈值（`Web.alike_of_threshold`）。`ownStanding` 给形成以对自身水平的精确、完整的量度，别的关系都没有。这是特权的、透明的自我通达。[非二方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)要求说明认识怎样在展开中形成，而不是先给出一个认识者。
+1. 经依存，识是一个阈值（`Web.alike_of_threshold`）。`ownStanding` 给形成以对自身水平的精确、完整的量度，别的关系都没有。这是特权的、透明的自我通达。[非二方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)要求说明认识怎样在展开中形成，而不是先给出一个认识者。
 2. 脊柱已有这一关系：`Web.SelfBearing`，以正的所需依存于自身的立着。Roles 把体现与承担自身写作同一对应之下的读法；`ownStanding` 是同类的进一步读法，不是同一对应的推论。
 3. `Prey` 显示的是决定，不是其根据：捕食者在影响闭包之外，只因为猎物不承担自身（`Prey.omits`）。
 4. 在 `ownStanding` 之下，对划作自身立着者之耗竭的阈下不见无法表达（`Gauged.own_is_stock`）。而不被察觉的自我耗竭直到崩溃，正是失控的核心情形：过劳、成瘾、身体缓慢的失去。同一储备划作所持条件时就有阈下不见。结论取决于划法。
 5. 模块自己的“不推出”写着：形成观察支持之外的任何东西不推出。自身的立着在支持之外。
 
-**决定。** 采纳审查的建议。基础是只反映支持（`supportOnly`）；在一类读法中，自身的立着经承担自身（`Web.SelfBearing`）反映，像其他依存的条件一样是阈值；量度自身（`ownStanding`）是一个观察前提，与 `Gauged` 对储量的量度同类。`SelfPrey.threshold_on_oneself` 给出对照：咬只在使猎物低于自身所需时经支持被反映，量度自身则反映每一口。
+**决定。** 采纳审查的建议。基础是只识支持（`supportOnly`）；在一类读法中，自身的立着经承担自身（`Web.SelfBearing`）识，像其他依存的条件一样是阈值；量度自身（`ownStanding`）是一个观察前提，与 `Gauged` 对储量的量度同类。`SelfPrey.threshold_on_oneself` 给出对照：咬只在使猎物低于自身所需时经支持被识，量度自身则识每一口。
 
 除了审查的五条，AI 另有两条理由：
 - **最弱的基础给出最强的陈述。** 观察得更多，分辨得更多（`RegistersAlikeUpTo.of_obs`），否证得更多（`Refutes.widen`），闭包也更大（`withinRegistration_mono_obs`）。在基础观察下证明的不见与检验的条件，以更多观察为前提时仍可陈述，每个观察都作为局部前提写在用它之处。这也合于零前提转向：前提局部化，写在用它的地方。
@@ -4700,30 +4700,30 @@ Ren 把第 4 问留给 AI：“for 4, you can explore which option is better, th
 |---|---|---|
 | F1 | 视界的读法说过了头：“关于整个运行的主张不被有限记录检验”“每个有限的更新检验都在一侧出错”只在延续开放时成立；对一切历史它们平凡成立，相对于模型它们是假的 | 加入 `Web.tail_unrefuted`（C2）、`Web.RefutesWithin`、`refutesWithin_iff_conjunction`（C6）、`Flow.BalancedHistory`、`Flow.refutes_tail_within`（C3）、`Stationary.model_error`、`model_refuted`（C4、C4b）、`RefutesWithin.not_meets`（C1）；两条读法加上延续开放的范围；“在一侧出错”改为“没有有限的读法是精确的”（`Renewable.no_exact_finite_reading`） |
 | F2 | 阈下的不见依赖 `RespondsThrough`，它排除了直接回应储量的他者，读法与 README 都没有写出；`Attracting` 中较高的网先断 | 改名为 `Flow.ExchangeFollows`，说明写明它是关于 `g` 周围全部交换的假设；读法、README 与章节写出这一范围；加入 `Attracting.higher_breaks_first`（A7） |
-| F3 | 自身的立着应经承担自身反映，不应默认为完全的量度；`Prey` 靠一个省略 | 决定改为 `supportOnly` 加 `Web.SelfBearing`，`ownStanding` 是观察前提（§70.1）；加入 `SelfPrey`、`Prey.omits`、`Gauged.own_is_stock` |
+| F3 | 自身的立着应经承担自身被识，不应默认为完全的量度；`Prey` 靠一个省略 | 决定改为 `supportOnly` 加 `Web.SelfBearing`，`ownStanding` 是观察前提（§70.1）；加入 `SelfPrey`、`Prey.omits`、`Gauged.own_is_stock` |
 | F4 | 所及闭包的传递性在固定其余交换的比较中不起作用 | 采纳回应的形式 `Flow.alike_within_closed`（B1），以 `unregistered_beyond_registration` 与 `Clearing.alike_for_clearer` 为其实例（B3、B4）；加入 `alike_within_registration`、`exchange_agrees_within` |
 | F5 | 阈值定理可以更精确；断裂是分岔 | 去掉空转的 `requires` 与 `need` 假设（A0）；加入 `difference_kept`（A1）、`alike_while_supported`（A2，任意多个条件不同）、`difference_changes_after_divergence`（A4）、`JointFailure.difference_kept`（A6）、`Web.alike_of_threshold`（A8）；`subthreshold_alike` 不再要求所需一致；只在按条件分情形处用 `DecidableEq` |
-| F6 | `Refutes` 检验的是关于一段历史的主张；“我的行动造成什么”是反事实的 | “不推出”写明：一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验（`Flow.beyond_needs_model`、`Clearing.model_idles_registration`，C7、C8）；变动自己的动作并反映差别列为开放 |
+| F6 | `Refutes` 检验的是关于一段历史的主张；“我的行动造成什么”是反事实的 | “不推出”写明：一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验（`Flow.beyond_needs_model`、`Clearing.model_idles_registration`，C7、C8）；变动自己的动作并识差别列为开放 |
 | F7 | “Ren 接受”没有来源记录 | 来源文件保存 Ren 的第二条消息（`2026-10-11-wisdom-from-registration.md`）；模块写明读法是 AI 的、Ren 接受过收窄之前的措辞、审查收窄了它们 |
 | F8 | 引错的定理 | 各处改为引用一般定理与 B5、C5；`Gauged` 的说明写明观察储量时假设空成立；`SupportDrawn` 写“第三步之前” |
 | F9 | 视界的对偶是推论 | 记作 becoming-finite-horizon 的推论；以 `no_exact_finite_reading` 为主陈述 |
 | F10 | 对 P42 的复用 | 记录写明 `unregistered_beyond_registration` 推广 P42 的 `unregistered_beyond_influence`（观察），实质的增量是 `alike_within_closed` |
 | F11 | `tested_by_dweller` 近乎定义 | 加入 `Clearing.pooled`（C5）：需要两个位置的检验 |
 | F12 | 缺少到 `Becoming.Inquiry` 的桥 | 加入 D：`Web.Belief`、`belief_refutes_iff`、`belief_judge_iff`、`belief_judge_later`、`belief_judge_widen`、`Flow.belief_judge_beyond`；多步 `Scope` 的桥仍开放 |
-| F13 | 名称 | `RespondsThrough` 改为 `ExchangeFollows`；`AlikeUpTo` 改为 `RegistersAlikeUpTo`；`threshold_blind` 改为 `subthreshold_alike`；`surplus_untouched`、`surplus_after_break` 改为 `difference_kept`、`difference_changes_after_divergence`；`Gated` 改为 `SupportDrawn`（审查也提议 `Thresholded`；`Drawdown` 与 `Becoming.Evolution` 中的命名空间冲突）；`Ended` 改为 `DwellerEnded`；`admits_iff_supported` 改为 `admits_iff_supported_of_agree`；根层的 `one_ne_two`、`two_ne_three` 去掉，改用 `by decide`；中文原作“计入”，与 P42 一致；Ren 读到这一问后答“need more context, 计入 is apparently weird, need better word”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)），改为“反映”（见下）；P42 中同义的“计入”待 Ren 确认这一选择后一起改，“必须计入”等“考虑在内”之义不变 |
+| F13 | 名称 | `RespondsThrough` 改为 `ExchangeFollows`；`AlikeUpTo` 改为 `RegistersAlikeUpTo`；`threshold_blind` 改为 `subthreshold_alike`；`surplus_untouched`、`surplus_after_break` 改为 `difference_kept`、`difference_changes_after_divergence`；`Gated` 改为 `SupportDrawn`（审查也提议 `Thresholded`；`Drawdown` 与 `Becoming.Evolution` 中的命名空间冲突）；`Ended` 改为 `DwellerEnded`；`admits_iff_supported` 改为 `admits_iff_supported_of_agree`；根层的 `one_ne_two`、`two_ne_three` 去掉，改用 `by decide`；中文原作“计入”，与 P42 一致；Ren 读到这一问后答“need more context, 计入 is apparently weird, need better word”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)），AI 先改为“反映”；Ren 定为“识”（“for registers, use 识”），P42 中同义的“计入”一起改为“识”，“必须计入”等“考虑在内”之义不变（见下） |
 
-**审查之外的改动。** 按零前提转向与整合者的接口，全部一般定理只在被反映的条件上逐步假设平衡（`Flow.BalancesOn`，单元素家族，不需要有限性）；见证经 `Flow.Balances.on` 给出它。整合者要求不另立局部平衡或局部耗散的概念，模块没有另立。
+**审查之外的改动。** 按零前提转向与整合者的接口，全部一般定理只在被识的条件上逐步假设平衡（`Flow.BalancesOn`，单元素家族，不需要有限性）；见证经 `Flow.Balances.on` 给出它。整合者要求不另立局部平衡或局部耗散的概念，模块没有另立。
 
-**“反映”。** 英文的 registers 在这里说的是：一个差别在形成的状态中显出来，即支持（水平是否接纳它）或所观察的水平不同。它不是记账（“计入”有会计的意味，核心已去掉 accounting 一词），不是登记（行政的意味），也不是感知或认识（那会先给出一个认识者）。“反映”在科学用语中正是这一义（温度计反映温度），并且读得通：“支持只反映与其所依存者的交换”“两段历史在 g 中反映相同”“反映闭包”。限度：日常也有“向上反映问题”的用法，哲学上会让人想到反映论；这里只取“差别在其中显出”一义，不主张复制或符合。其他候选：“显现”（差别在 g 中显现，但“支持显现交换”不通）；“感应”（感而遂通，一元而传统，但会混入回应，回应在这里另是 `Flow.ExchangeFollows`）。名称由 Ren 定。
+**“识”。** 英文的 registers 在这里说的是：一个差别在形成的状态中显出来，即支持（水平是否接纳它）或所观察的水平不同。中文原作“计入”（与 P42 一致），有记账的意味；Ren 认为“计入 is apparently weird, need better word”，AI 先改为“反映”，取科学用语中“温度计反映温度”之义；Ren 定为“识”：“for registers, use 识”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。于是：形成识其支持与所观察的水平；两段历史之下 g 识得相同；依存而不观察的条件只以是否满足所需被识；识闭包；交换随识。P42 中同义的“计入”一起改为“识”（如“经支持只识得与其所依存者的交换”“反馈至多识及影响闭包”），“必须计入”“谁的延续计入”等“考虑在内”之义不变。读法（AI 的，待 Ren）：识在缘起中紧随无明与行，P62 的无明一线因此用同一个字；这里只取“差别在其中显出”一义，不先给出一个认识者。
 
 ### 70.3 作者反审
 
-1. **给出的回应假设。** `Flow.ExchangeFollows` 与 `alike_within_closed` 的回应假设是给出的，不由动力学推出。它们刻画的是：只要他者不回应 `g` 不反映者，差别就这样保持。他者回应储量本身时，假设不成立（`Attracting`）。哪些展开满足它，是经验问题。
+1. **给出的回应假设。** `Flow.ExchangeFollows` 与 `alike_within_closed` 的回应假设是给出的，不由动力学推出。它们刻画的是：只要他者不回应 `g` 不识者，差别就这样保持。他者回应储量本身时，假设不成立（`Attracting`）。哪些展开满足它，是经验问题。
 2. **回路没有定义。** “失控是在其一之中运行的回路”是启发：模块没有定义回路、增益或失控。要把它变成陈述，需要先定义回路（例如水平影响取用、取用又影响水平的闭合），那是另一步。
 3. **模型是给出的。** `RefutesWithin` 的模型是任意的可容许历史类；模型从哪里来、形成怎样形成它，不推出。`Flow.BalancedHistory` 是一种模型，即交换本身；其余模型的来源没有表示。
-4. **否证不是一种行动。** 对没有探究的形成，`Refutes` 读作“它的反映排除了主张”。形成是否对否证作出回应，是另一回事；桥（D）只说判断是对信念的共同回应，不说形成会作出它。
-5. **反映不说关于什么。** 反映相同界定能分辨的；同样的支持可以出自不同的原因（`Flow.Balances.agrees_iff_even`），反映的差别指向什么不在其中（校准）。
-6. **一个动作的检验。** 一个动作造成什么，是对有与无此动作的两段历史的比较；单个形成的反映只给出一段。相对于固定起始与交换的模型，反映不起作用（`Clearing.model_idles_registration`）；变动自己的动作而反映差别，即实验，没有陈述。
+4. **否证不是一种行动。** 对没有探究的形成，`Refutes` 读作“它之识排除了主张”。形成是否对否证作出回应，是另一回事；桥（D）只说判断是对信念的共同回应，不说形成会作出它。
+5. **识不说关于什么。** 识得相同界定能分辨的；同样的支持可以出自不同的原因（`Flow.Balances.agrees_iff_even`），识的差别指向什么不在其中（校准）。
+6. **一个动作的检验。** 一个动作造成什么，是对有与无此动作的两段历史的比较；单个形成的识只给出一段。相对于固定起始与交换的模型，识不起作用（`Clearing.model_idles_registration`）；变动自己的动作而识差别，即实验，没有陈述。
 7. **视界的结论是存在性的。** `no_exact_finite_reading` 用一个过程见证；它说的是延续开放之处，不说实际的延续是否开放。
 8. **读法与名称是 AI 的。** Ren 接受的是收窄之前的措辞；收窄之后的读法、改动后的名称与第 4 问的决定，都待 Ren 看过。
 
@@ -4833,7 +4833,7 @@ Integration: 十一项记录；零前提计划 §1.3 C 组；计划 P50；模块
 
 ```text
 Result(s): 复用 joint-difference-making（Determined：动作决定一步）、recurrence-without-premise（revisits_from、
-           Law.withHistory 的形式）、testing-within-registration（一个动作造成什么须相对于模型检验；反映作为投影的读法）；
+           Law.withHistory 的形式）、testing-within-registration（一个动作造成什么须相对于模型检验；识作为投影的读法）；
            Becoming.Frame 的 Run；新增上列一项
 Delta: 记录所固定的：Run.Takes、Run.StepsOf、Run.Fixes、Run.fixes_of_takes、retarget、retarget_determined、retarget_step、
        Run.stepsOf_retarget、Run.not_fixes_of_untaken、Run.fixes_on_return、Run.not_fixes_other_of_new、Run.ordered_of_ne。
@@ -4847,7 +4847,7 @@ Supplied premises / correspondence: 不加公理，也不加前提；“固定�
        读法是 AI 的，待 Ren
 Evidence: 合并检查器回执 20261011T101806.880391Z（Becoming.Experiment 25 项定理，全部源声明公理报告为空），外围回执 20261011T105433.502229Z
 Boundary: 形成变动其动作、保留或遗忘其历史、形成投影都不推出；实际展开经哪个投影分解是经验问题；随机或不确定的过程不在其中；
-          与 Becoming.Testing 的反映的形式桥接没有陈述；不含伦理谓词
+          与 Becoming.Testing 的识的形式桥接没有陈述；不含伦理谓词
 Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开自身比较一个动作的有与无；把 Becoming.Recurrence 的返回与
              保留的历史接到检验上
 ```
@@ -4857,7 +4857,7 @@ Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开�
 | `Run.Takes`、`Run.StepsOf`、`Run.Fixes` | 运行在某步之前于某配置取过某动作；一个过程容许运行在某步之前的每一步；相对于确定性，直到某步的记录把某动作在某配置的结果固定为某配置：容许运行这些步的每个确定过程，都把该动作在该配置送到那里 |
 | `Run.fixes_of_takes` | 取过的动作被固定：运行在某步取过某动作之后，每个容许其各步的确定过程都把该动作在该配置送到运行所到之处 |
 | `retarget`、`retarget_determined`、`retarget_step`、`Run.stepsOf_retarget` | 把某配置的某动作改送到任一配置、其余不变的过程；确定的过程改送之后仍确定；没有取过该动作的运行，其各步被每个改送所容许 |
-| `Run.not_fixes_of_untaken` | 未取的动作不被固定：实际过程确定、有两个不同的配置时，运行在某步之前没有于某配置取过某动作，记录就不固定该动作在那里的任何结果，无论什么被反映：容许运行各步的确定过程可以把它送到任意两个配置 |
+| `Run.not_fixes_of_untaken` | 未取的动作不被固定：实际过程确定、有两个不同的配置时，运行在某步之前没有于某配置取过某动作，记录就不固定该动作在那里的任何结果，无论什么被识：容许运行各步的确定过程可以把它送到任意两个配置 |
 | `Run.fixes_on_return`、`Run.not_fixes_other_of_new` | 配置返回之处，另一个动作的结果被固定；配置永不返回的运行，在它经过的每个配置，只固定它在那里所取的动作 |
 | `keepHistory`、`keepHistory_length`、`keepHistory_new`、`keepHistory_determined`、`keepHistory_fixes_nothing_else` | 保留其所经配置与动作的历史的过程（`Law.withHistory` 带动作的对应）；历史每步长一；所以每步都是新的；确定的过程保留历史仍确定；所以保留一切的运行，关于自己的动作，除了所做的，什么都不固定 |
 | `Run.StepsThrough`、`Run.FixesThrough`、`Run.fixesThrough_of_takes` | 经投影读：容许运行各步投影的确定过程；经投影的记录所固定的；运行取过某动作的投影配置，其结果经投影被固定 |
@@ -4868,7 +4868,7 @@ Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开�
 | `Confound.varied_refutes` | 在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步：错误的投影被否证 |
 
 **它回答了什么。**
-- **展开自身在何处比较一个动作的有与无。** 相对于确定性，记录恰在运行取过某动作之处固定它在那里的结果（`Run.fixes_of_takes`），在别处什么都不固定，即使每个配置都被反映（`Run.not_fixes_of_untaken`）。所以自己的动作若换一个会怎样，只在配置返回、动作不同之处被固定（`Run.fixes_on_return`）。这是 P49 所说“一个动作造成什么，只相对于无此动作之历史的模型才可检验”的精确形式：所需的模型只是确定性，加上一次返回。
+- **展开自身在何处比较一个动作的有与无。** 相对于确定性，记录恰在运行取过某动作之处固定它在那里的结果（`Run.fixes_of_takes`），在别处什么都不固定，即使每个配置都被识（`Run.not_fixes_of_untaken`）。所以自己的动作若换一个会怎样，只在配置返回、动作不同之处被固定（`Run.fixes_on_return`）。这是 P49 所说“一个动作造成什么，只相对于无此动作之历史的模型才可检验”的精确形式：所需的模型只是确定性，加上一次返回。
 - **保留一切者不能做实验。** 保留其全部历史的配置每步都是新的（`keepHistory_new`），所以关于自己的动作，除了所做的，什么都不固定（`keepHistory_fixes_nothing_else`）。这接上 `Becoming.Recurrence`：保留历史的展开永不返回；有限多个配置之内，当下会遗忘。
 - **实验需要一个关于何者无关的模型。** 经一个投影读，取过的动作经投影被固定（`Run.fixesThrough_of_takes`）；步骤经投影分解为确定过程时，一次场合代表投影相同的整个类（`Run.generalizes`）；有限多个投影配置之内，投影必返回（`Run.projection_returns`）。
 - **模型可以错，而变动能否证它。** 错误的投影把差别归于不造成差别的动作（`Confound.misattributes`）；动作与它所略去的同步时，模型永不被否证（`Confound.confounded`）；动作与之错开时，模型被否证（`Confound.varied_refutes`）。
@@ -4877,14 +4877,14 @@ Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开�
 - 实验是在配置（按实验者的读法）返回之处变动自己的动作。重复是这一返回。
 - 对照是这样一个主张：两次场合之间不同的，与变化无关；也就是步骤经这一读法分解的模型。
 - 与动作所略去者无关地变动动作，是能否证错误对照的方式；与之同步的动作永不否证它。这是随机化在这里的结构形式。
-- 以 P49 的反映为读法：经所反映者的实验，恰在展开经所反映者分解之处是对的；阈下与所及之外的不见，是不分解的情形。
-- 合于 Ren 的 理：理 作为对反映负责的模型（§70），在这里是投影；它使一次场合代表一类，又可被变动否证。
+- 以 P49 的识为读法：经所识者的实验，恰在展开经所识者分解之处是对的；阈下与所及之外的不见，是不分解的情形。
+- 合于 Ren 的 理：理 作为对识负责的模型（§70），在这里是投影；它使一次场合代表一类，又可被变动否证。
 
 **作者反审。**
 1. **确定性是比较的类，不是对世界的假设。** “固定”说的是：在一切容许记录的确定过程中，结果只有一个。实际过程不确定时，取过的动作在下一次场合也不必给出同样的结果；那时连 `fixes_of_takes` 所固定的也只是关于确定模型的。随机过程没有陈述。
 2. **“未取的不被固定”要两个配置和确定的实际过程。** 两者都是局部条件，写在定理中。
 3. **配置的相等是全配置的相等。** 实际展开中全配置几乎不返回（`keepHistory_new` 是极端情形），所以正面的结果实际上都经投影；投影本身由运行之外给出，模型从哪里来不推出。
-4. **实验者没有在流与网中表示。** 模块在过程层面陈述，形成的“动作”是过程的动作；与 `Becoming.Testing` 的反映（经支持与观察的阈值）之间的形式桥接，即以反映为投影，没有陈述，是读法。
+4. **实验者没有在流与网中表示。** 模块在过程层面陈述，形成的“动作”是过程的动作；与 `Becoming.Testing` 的识（经支持与观察的阈值）之间的形式桥接，即以识为投影，没有陈述，是读法。
 5. **不是 `Becoming.Joint` 的重证。** Joint 问一个部分是否造成差别，是关于过程的主张；这里问记录在何处固定这样的主张。两者相接，而不重叠。
 6. **见证是最小的。** `Confound` 只有一个隐藏位；更一般的形式，即动作与隐藏者的何种相关使模型永不被否证，没有陈述。
 
@@ -4894,9 +4894,9 @@ Integration: 计划 P53；回答 P49 的开放项（§70，F6）：何处展开�
 - 按 Ren 的“no extra review needed”，不作独立审查。
 
 
-## 73. 失控：经自身反映的回路所不能反映的（P55）
+## 73. 失控：经自身之识的回路所不能识的（P55）
 
-2026-10-11。Ren 最初问的是“wisdoms to avoid run away feedbacks”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。P49 把失控读作在一种不见之中运行的回路，并说这是启发，不是陈述（§70）。P53 之后，AI 提议在策略的层面陈述失控问题，Ren 答：“no extra review needed, merge, then continue”。本节是统一计划 P55。它不加公理，只在被反映的条件上逐步假设平衡，属于第一部分。核心新增模块 `Becoming.Runaway`，13 项定理，导入 `Becoming.Testing`，不改任何已有模块。
+2026-10-11。Ren 最初问的是“wisdoms to avoid run away feedbacks”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。P49 把失控读作在一种不见之中运行的回路，并说这是启发，不是陈述（§70）。P53 之后，AI 提议在策略的层面陈述失控问题，Ren 答：“no extra review needed, merge, then continue”。本节是统一计划 P55。它不加公理，只在被识的条件上逐步假设平衡，属于第一部分。核心新增模块 `Becoming.Runaway`，13 项定理，导入 `Becoming.Testing`，不改任何已有模块。
 
 成果记录新增一项：[runaway-distance-unregistered](../../../../theories/becoming/results/records/runaway-distance-unregistered.md)。
 
@@ -4908,39 +4908,39 @@ Delta: 策略：Flow.PolicyThrough、Flow.OthersFixed、Flow.exchangeFollows_of_
        Flow.policy_uses_after_failure。断裂的距离：Web.raise、Web.le_raise、Web.Supported.raise、Web.raise_other、
        Web.registersAlike_raise、Web.observed_raise_registers、Web.needUpTo、Web.need_le_needUpTo、Web.Dependent.raise、
        Web.break_not_bounded、Flow.BalancesOn.raise。实例：SupportDrawn.break_unregistered
-Supplied premises / correspondence: 不加公理；平衡只在被反映的条件上逐步假设；策略经反映与其余固定是给出的假设
+Supplied premises / correspondence: 不加公理；平衡只在被识的条件上逐步假设；策略经识与其余固定是给出的假设
        （PolicyThrough、OthersFixed），由它们推出 ExchangeFollows；离散的步、自然数的量；读法是 AI 的，待 Ren
 Evidence: 合并检查器回执 20261011T101806.880391Z（Becoming.Runaway 13 项定理，全部源声明公理报告为空），外围回执 20261011T105433.502229Z
 Boundary: 形成汲取多于更新、想要保持支持、形成策略都不推出；他者回应什么是给出的；回路与增益没有定义，失控的读法仍是读法，
           这里给的是它所依的两条定理；不含伦理谓词
-Integration: 计划 P55；把 P49 失控读法所依的两点陈述为定理：对每个经反映的策略（T5 的策略形式），以及断裂的距离不被反映
+Integration: 计划 P55；把 P49 失控读法所依的两点陈述为定理：对每个经识的策略（T5 的策略形式），以及断裂的距离不被识
 ```
 
 | 声明 | 内容 |
 |---|---|
-| `Flow.PolicyThrough`、`Flow.OthersFixed`、`Flow.exchangeFollows_of_policy` | 形成的策略经其反映：凡它直到某步反映相同，它在所反映条件上的取用与给予在两个流中相同；其余形成在这些条件上的交换固定；两者合起来就是交换随反映（`Flow.ExchangeFollows`） |
-| `Flow.policy_keeps_difference` | 对每个经反映的策略，其余固定：起始只在形成依存而不观察的储量上不同、第二个网中高 d，第一个网每步都支持它时，储量每步都高 d，形成每步都反映相同：保持支持的策略永不动用较多的储量 |
-| `Flow.policy_uses_after_failure` | 对每个经反映的策略，其余固定：所反映条件上的差别在某步之前已改变，第一个网就并非此前每步都支持形成 |
+| `Flow.PolicyThrough`、`Flow.OthersFixed`、`Flow.exchangeFollows_of_policy` | 形成的策略经其识：凡它直到某步识得相同，它在所识条件上的取用与给予在两个流中相同；其余形成在这些条件上的交换固定；两者合起来就是交换随识（`Flow.ExchangeFollows`） |
+| `Flow.policy_keeps_difference` | 对每个经识的策略，其余固定：起始只在形成依存而不观察的储量上不同、第二个网中高 d，第一个网每步都支持它时，储量每步都高 d，形成每步都识得相同：保持支持的策略永不动用较多的储量 |
+| `Flow.policy_uses_after_failure` | 对每个经识的策略，其余固定：所识条件上的差别在某步之前已改变，第一个网就并非此前每步都支持形成 |
 | `Web.raise`、`Web.le_raise`、`Web.Supported.raise`、`Web.raise_other`、`Flow.BalancesOn.raise`、`Web.Dependent.raise` | 把储量每步抬高 d、其余不变的网；它不低于原网，支持原网所支持的，在别的条件上相同；流在一个家族上平衡，在抬高的网上也平衡；原网依存之处，抬高的网也依存 |
-| `Web.registersAlike_raise` | 在网支持形成的每一步，对形成不观察的储量的抬高，形成反映相同 |
-| `Web.needUpTo`、`Web.need_le_needUpTo`、`Web.break_not_bounded` | 断裂没有被反映的界：形成不观察储量，且到某一视界为止只有这个储量的所需可能不满足时，有一个抬高，在原网支持形成的每一步都反映相同，并在视界之前每步都支持它。所以断裂之前，形成所反映的什么都不界定断裂还有多远 |
-| `Web.observed_raise_registers` | 观察储量时，任何正的抬高每步都被反映 |
-| `SupportDrawn.break_unregistered` | 实例：较低的网在第三步不支持形成；一个抬高在原网支持形成的每一步反映相同，在第三步支持它，流在其上平衡 |
+| `Web.registersAlike_raise` | 在网支持形成的每一步，对形成不观察的储量的抬高，形成识得相同 |
+| `Web.needUpTo`、`Web.need_le_needUpTo`、`Web.break_not_bounded` | 断裂没有被识的界：形成不观察储量，且到某一视界为止只有这个储量的所需可能不满足时，有一个抬高，在原网支持形成的每一步都识得相同，并在视界之前每步都支持它。所以断裂之前，形成所识的什么都不界定断裂还有多远 |
+| `Web.observed_raise_registers` | 观察储量时，任何正的抬高每步都被识 |
+| `SupportDrawn.break_unregistered` | 实例：较低的网在第三步不支持形成；一个抬高在原网支持形成的每一步识得相同，在第三步支持它，流在其上平衡 |
 
 **它回答了什么。**
-- **T5 的策略形式。** 计划的 T5 问：只经支持的策略能否在较低的世界保持支持、又在较高的世界用上较多的储量。对每个经反映的策略，在其余固定之下，答案是否定的：保持支持就永不动用较多的储量（`Flow.policy_keeps_difference`），动用了就已在较低的世界失去支持（`Flow.policy_uses_after_failure`）。观察储量的策略可以两者兼得（`Gauged`，§70）。
-- **断裂的距离不被反映。** 断裂之前，对每一个视界，都有一个储量多到撑过那个视界的世界，与实际在形成所反映的一切上相同（`Web.break_not_bounded`）。所以经支持的反馈不仅在断裂之前不变，而且不给断裂还有多远的任何界。
-- **量度给出它。** 观察储量，任何差别立刻被反映（`Web.observed_raise_registers`）。
+- **T5 的策略形式。** 计划的 T5 问：只经支持的策略能否在较低的世界保持支持、又在较高的世界用上较多的储量。对每个经识的策略，在其余固定之下，答案是否定的：保持支持就永不动用较多的储量（`Flow.policy_keeps_difference`），动用了就已在较低的世界失去支持（`Flow.policy_uses_after_failure`）。观察储量的策略可以两者兼得（`Gauged`，§70）。
+- **断裂的距离不被识。** 断裂之前，对每一个视界，都有一个储量多到撑过那个视界的世界，与实际在形成所识的一切上相同（`Web.break_not_bounded`）。所以经支持的反馈不仅在断裂之前不变，而且不给断裂还有多远的任何界。
+- **量度给出它。** 观察储量，任何差别立刻被识（`Web.observed_raise_registers`）。
 
 **读法（AI 的，待 Ren）。**
-- 失控是这样的回路：断裂之前，它自身的反映与储量多出任意多的世界相同。它的策略再精巧，也不能用上它所不反映的。
-- 要避免失控而又不放弃所有的，形成需要反映储量的东西（量度），或储量的模型（理，对反映负责的模型），或反映它的另一个形成（§70）；要知道自己的动作造成什么，需要返回与关于何者无关的模型（P53）。
-- 合于 Ren 4 日的话：理 须调节 心，使其正反馈循环不失控（「不能让正反馈循环失控」）。这里 心 的回路经支持反映，理 是反映储量或其模型的那一部分。
+- 失控是这样的回路：断裂之前，它自身之识与储量多出任意多的世界相同。它的策略再精巧，也不能用上它所不识的。
+- 要避免失控而又不放弃所有的，形成需要识储量的东西（量度），或储量的模型（理，对识负责的模型），或识它的另一个形成（§70）；要知道自己的动作造成什么，需要返回与关于何者无关的模型（P53）。
+- 合于 Ren 4 日的话：理 须调节 心，使其正反馈循环不失控（「不能让正反馈循环失控」）。这里 心 的回路经支持而识，理 是识储量或其模型的那一部分。
 
 **作者反审。**
-1. **增量小而确切。** `policy_keeps_difference` 与 `policy_uses_after_failure` 是 P49 阈下定理的推论，增量是策略的层面：经反映的策略加其余固定推出交换随反映。实质的新陈述是 `break_not_bounded`：对每个视界的量化。
+1. **增量小而确切。** `policy_keeps_difference` 与 `policy_uses_after_failure` 是 P49 阈下定理的推论，增量是策略的层面：经识的策略加其余固定推出交换随识。实质的新陈述是 `break_not_bounded`：对每个视界的量化。
 2. **其余固定是强的假设。** 他者若回应储量本身，较高的储量可以先终结形成（`Attracting`，§70）；那时 T5 的策略形式不成立。
-3. **抬高的世界用同一个流。** 断裂之后，实际与抬高的世界反映不同，同一个流在抬高的世界里仍是一个平衡的展开，但不必是形成所会做的；定理只说断裂之前的反映。
+3. **抬高的世界用同一个流。** 断裂之后，实际与抬高的世界识不同，同一个流在抬高的世界里仍是一个平衡的展开，但不必是形成所会做的；定理只说断裂之前的识。
 4. **回路没有定义。** 失控仍是读法；这里陈述的是它所依的两点。定义回路（水平影响取用、取用又影响水平的闭合）并陈述失控本身，是下一步。
 5. **“只有这个储量可能不满足”是局部条件。** 写在定理中；别的所需若也失败，抬高这个储量不足以撑过视界。
 
@@ -5476,7 +5476,7 @@ Question 4, whether a formation's own standing counts as registered, was the AI'
 - own standing should register through self-bearing, not as a default gauge (F3);
 - the closure's transitivity is idle in the fixed-rest comparison, so reach blindness is restated where the members respond (F4).
 
-The Chinese for "registers" was 计入, as in P42; Ren found it "apparently weird" and asked for a better word, and P49 uses 反映, in its scientific sense of a difference showing in a state (a thermometer 反映 the temperature); P42's uses in that sense change with it once Ren confirms the choice. The text after the handling has not been independently reviewed.
+The Chinese for "registers" was 计入, as in P42. Ren found it "apparently weird" and asked for a better word; the AI proposed 反映, and Ren chose 识 ("for registers, use 识"). P42's uses of 计入 in that sense now read 识 as well; its uses meaning "take into account" stay. The text after the handling has not been independently reviewed.
 
 **The laws of dependence, reserve, support and the census balance, with their condition inside them (P50).** This follows Ren's redirect of 11 October ("stop extending the premise-selection tables. New goal: remove premises and derive the most general versions, zero premises first") and Ren's instruction of the same day to finish one unified theory together. It restates group C of the zero-premise plan (§1.3: dependence, reserve and support) for every world, and with it the census balance beyond law 2. In each law, the condition the proof uses is stated inside the law, at the steps, conditions and formations where the proof uses it. The move is again localization. No premise is derived. The original theorems keep their names and statements and are re-proved in place as corollaries. The session "0 axiom completeness" drafted and verified this section, assigned by the integrator through the work board. It builds on `Flow.BalancesOn` of section 66, and adds no new module.
 - **The shared condition.** In group C's proofs, only active formations giving (`Flow.Acting`) together with activity needing support (`Web.Dependent`) is used in one way only: across the step used, whatever gives to the condition used is supported there. That is `Flow.GiversSupported`. The global premises give it through `Flow.Acting.giversSupported`. It is a fact about the givers to one condition across one step, and says nothing of formations that do not give.
