@@ -56,7 +56,7 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 
 1. P42, P43 (`c9c219e3`), then P44.
 2. P46, P47.
-3. `Becoming.Locality` (P48, study §66): laws 1 to 4, law 2 from [9c2394] folded in, with their corollaries re-proved in `Openness`, `Roles`, `Counting` and P47's `Standing`.
+3. ~~`Becoming.Locality`~~ landed `12c7cb44` (P48, study §66; receipt 20261011T071749.484228Z): laws 1 to 4, law 2 from [9c2394] folded in, with their corollaries re-proved in `Openness`, `Roles`, `Counting` and P47's `Standing`. P49 goes next (ready), then group C when its records and study text arrive.
 4. ~~R6 `Becoming.Recurrence`~~ landed `f5ec9e6b`, ahead of item 3 (it imports only `Becoming.Frame` and `Locality` does not use it); study §68.
 5. Group C localized by [9c2394] (P50): 26 local laws in `Change`, `Population`, `Dependence`, `Roles`, `Continuation`, `Admission`, `Interdependence` and `Evolution`, each original re-proved in place; the shared condition named `Flow.GiversSupported` (the integrator's call, 10-11). Built on `Locality`, so after item 3. (Law 2, formerly this item, is folded into item 3.)
 6. P49 registration and testing (`Becoming.Testing`), stated on `Flow.BalancesOn` (the integrator's call, 10-11: under the zero-premise redirect the local form is the theorem, global balance the corollary), so after item 3.
