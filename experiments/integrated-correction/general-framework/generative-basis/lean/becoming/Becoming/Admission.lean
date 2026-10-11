@@ -155,13 +155,31 @@ namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
 
+/-- With balance at the condition across the step, a rise is given by a formation taking
+part; where whatever gives to it there is supported, by a supported one. -/
+theorem rise_given_by_supported_at {t : Nat} {c : C} (balances : L.BalancesOn W [c] t)
+    (givers : L.GiversSupported W t c) (rises : W.Rises t c) : ∃ g, g ∈ L.present t ∧ 0 < L.give t g c ∧ W.Supported t g :=
+  match total_pos (L.present t) (balances.rise_given (.head []) rises) with
+  | ⟨g, mem, gives⟩ => ⟨g, mem, gives, givers g mem gives⟩
+
 /-- In a balanced flow where only active formations give and activity needs support,
 every rise is given by a supported formation taking part. -/
 theorem rise_given_by_supported (balances : L.Balances W) (acting : L.Acting W)
     (dependent : W.Dependent) {t : Nat} {c : C} (rises : W.Rises t c) :
     ∃ g, g ∈ L.present t ∧ 0 < L.give t g c ∧ W.Supported t g :=
-  match total_pos (L.present t) (balances.rise_given rises) with
-  | ⟨g, mem, gives⟩ => ⟨g, mem, gives, dependent t g (acting t g c mem gives)⟩
+  rise_given_by_supported_at (balances.on [c] t) (acting.giversSupported dependent t c) rises
+
+/-- Support is gained only from the supported, at the step it is gained: with balance
+across the step at each condition the formation requires, and whatever gives to such a
+condition there supported, a formation whose requirements do not loosen gains support only
+where a supported formation taking part gives to a condition it requires. -/
+theorem gains_from_supported_at {t : Nat} {f : F}
+    (balances : ∀ c, W.requires t f c → L.BalancesOn W [c] t)
+    (givers : ∀ c, W.requires t f c → L.GiversSupported W t c) (gains : W.GainsSupport t f) (unloosened : W.Unloosened t f) :
+    ¬ ∀ c, W.requires t f c → ∀ g, g ∈ L.present t → 0 < L.give t g c → ¬ W.Supported t g :=
+  fun none => gains.rises unloosened fun c requires rises =>
+    match rise_given_by_supported_at (balances c requires) (givers c requires) rises with
+    | ⟨g, mem, gives, supported⟩ => none c requires g mem gives supported
 
 /-- Support is gained only from the supported: in a balanced flow where only active
 formations give and activity needs support, a formation whose requirements do not loosen
@@ -171,9 +189,30 @@ theorem gains_from_supported (balances : L.Balances W) (acting : L.Acting W)
     (dependent : W.Dependent) {t : Nat} {f : F} (gains : W.GainsSupport t f)
     (unloosened : W.Unloosened t f) :
     ¬ ∀ c, W.requires t f c → ∀ g, g ∈ L.present t → 0 < L.give t g c → ¬ W.Supported t g :=
-  fun none => gains.rises unloosened fun c requires rises =>
-    match rise_given_by_supported balances acting dependent rises with
-    | ⟨g, mem, gives, supported⟩ => none c requires g mem gives supported
+  gains_from_supported_at (fun c _ => balances.on [c] t)
+    (fun c _ => acting.giversSupported dependent t c) gains unloosened
+
+/-- Where nothing beyond gives, the end absorbs, over the steps it is used at: with balance
+at each condition a member requires and whatever gives to such a condition supported, across
+each of the `n` steps from `T`, no member is supported at `T + n`. -/
+theorem unsupported_stays_at {member : F → Prop} {T : Nat}
+    (unloosened : ∀ n f, member f → W.Unloosened (T + n) f)
+    (within : ∀ n f c, member f → W.requires (T + n) f c → ∀ g, g ∈ L.present (T + n) →
+      0 < L.give (T + n) g c → member g)
+    (none : ∀ f, member f → ¬ W.Supported T f) :
+    ∀ n, (∀ k f c, k < n → member f → W.requires (T + k) f c → L.BalancesOn W [c] (T + k)) →
+      (∀ k f c, k < n → member f → W.requires (T + k) f c →
+        L.GiversSupported W (T + k) c) →
+      ∀ f, member f → ¬ W.Supported (T + n) f
+  | 0, _, _, f, m => none f m
+  | n + 1, balances, givers, f, m => fun supported =>
+    have before := unsupported_stays_at unloosened within none n
+      (fun k f c below => balances k f c (Nat.lt_succ_of_lt below))
+      fun k f c below => givers k f c (Nat.lt_succ_of_lt below)
+    gains_from_supported_at (fun c requires => balances n f c (Nat.lt_succ_self n) m requires)
+      (fun c requires => givers n f c (Nat.lt_succ_self n) m requires)
+      ⟨before f m, supported⟩ (unloosened n f m)
+      fun c requires g mem gives => before g (within n f c m requires g mem gives)
 
 /-- Where nothing beyond gives, the end absorbs. If no member of a family is supported
 at `T`, the members' requirements do not loosen from `T` on, and only members give to what
@@ -184,12 +223,26 @@ theorem unsupported_stays (balances : L.Balances W) (acting : L.Acting W)
     (within : ∀ n f c, member f → W.requires (T + n) f c → ∀ g, g ∈ L.present (T + n) →
       0 < L.give (T + n) g c → member g)
     (none : ∀ f, member f → ¬ W.Supported T f) :
-    ∀ n f, member f → ¬ W.Supported (T + n) f
-  | 0, f, m => none f m
-  | n + 1, f, m => fun supported =>
-    have before := unsupported_stays balances acting dependent unloosened within none n
-    gains_from_supported balances acting dependent ⟨before f m, supported⟩ (unloosened n f m)
-      fun c requires g mem gives => before g (within n f c m requires g mem gives)
+    ∀ n f, member f → ¬ W.Supported (T + n) f :=
+  fun n => unsupported_stays_at unloosened within none n
+    (fun k _ c _ _ _ => balances.on [c] (T + k))
+    fun k _ c _ _ _ => acting.giversSupported dependent (T + k) c
+
+/-- Of the whole nothing is beyond, over the steps it is used at: once nothing is supported,
+while requirements do not loosen, with balance at each required condition and whatever gives
+to it supported across each of the `n` steps from `T`, nothing is supported at `T + n`, and
+a formation active there only while supported is not active. -/
+theorem nothing_supported_stays_at {T n : Nat} (unloosened : ∀ n f, W.Unloosened (T + n) f)
+    (none : ∀ f, ¬ W.Supported T f)
+    (balances : ∀ k f c, k < n → W.requires (T + k) f c → L.BalancesOn W [c] (T + k))
+    (givers : ∀ k f c, k < n → W.requires (T + k) f c → L.GiversSupported W (T + k) c)
+    (f : F) (dependent : W.active (T + n) f → W.Supported (T + n) f) :
+    ¬ W.Supported (T + n) f ∧ ¬ W.active (T + n) f :=
+  have unsupported := unsupported_stays_at (member := fun _ => True)
+    (fun n f _ => unloosened n f) (fun _ _ _ _ _ _ _ _ => trivial) (fun f _ => none f) n
+    (fun k f c below _ requires => balances k f c below requires)
+    (fun k f c below _ requires => givers k f c below requires) f trivial
+  ⟨unsupported, fun active => unsupported (dependent active)⟩
 
 /-- Of the whole nothing is beyond. In a balanced flow where only active formations give and
 activity needs support, once nothing is supported, while requirements do not loosen,
@@ -198,11 +251,10 @@ theorem nothing_supported_stays (balances : L.Balances W) (acting : L.Acting W)
     (dependent : W.Dependent) {T : Nat} (unloosened : ∀ n f, W.Unloosened (T + n) f)
     (none : ∀ f, ¬ W.Supported T f) :
     ∀ n f, ¬ W.Supported (T + n) f ∧ ¬ W.active (T + n) f :=
-  fun n f =>
-    have unsupported := unsupported_stays (member := fun _ => True) balances acting dependent
-      (fun n f _ => unloosened n f) (fun _ _ _ _ _ _ _ _ => trivial) (fun f _ => none f) n f
-      trivial
-    ⟨unsupported, fun active => unsupported (dependent _ f active)⟩
+  fun n f => nothing_supported_stays_at unloosened none
+    (fun k _ c _ _ => balances.on [c] (T + k))
+    (fun k _ c _ _ => acting.giversSupported dependent (T + k) c)
+    f (dependent (T + n) f)
 
 end Flow
 
@@ -331,23 +383,75 @@ theorem WithheldLevels.unique {l l' : Nat → C → Nat} (without : L.WithheldLe
       ((without.1 t c).trans ((congrArg (· + (L.withhold part).given t c)
         (WithheldLevels.unique without without' t c)).trans (without'.1 t c).symm))
 
-/-- The difference a part makes. At every step, each level with what the part has taken from
+/-- The difference a part makes, at one condition up to one step: with balance at the
+condition across every step before `t`, the level at `t` with what the part has taken from
 the condition so far is the level without the part with what the part has given it so far. -/
-theorem Balances.withheld (balances : L.Balances W) {l : Nat → C → Nat}
-    (without : L.WithheldLevels part W l) :
-    ∀ t c, W.level t c + total (steps 0 t) (fun s => L.partTaken part s c) =
-      l t c + total (steps 0 t) (fun s => L.partGiven part s c)
-  | 0, c => congrArg (· + 0) (without.2 c).symm
-  | t + 1, c =>
+theorem withheld_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l) {c : C} :
+    ∀ t, (∀ s, s < t → L.BalancesOn W [c] s) →
+      W.level t c + total (steps 0 t) (fun s => L.partTaken part s c) =
+        l t c + total (steps 0 t) (fun s => L.partGiven part s c)
+  | 0, _ => congrArg (· + 0) (without.2 c).symm
+  | t + 1, balances =>
     have last : ∀ q : Nat → Nat, total (steps 0 (t + 1)) q = total (steps 0 t) q + q t :=
       fun q => (steps_last q 0 t).trans (congrArg (total (steps 0 t) q + ·)
         (congrArg q (Nat.zero_add t)))
     (congrArg (W.level (t + 1) c + ·) (last _)).trans
       ((rebalance
         (((congrArg (W.level (t + 1) c + ·) (taken_withhold L part t c)).symm.trans
-          (balances t c)).trans (congrArg (W.level t c + ·) (given_withhold L part t c)))
-        (without.1 t c) (Balances.withheld balances without t c)).trans
+          ((balances t (Nat.lt_succ_self t)) c (.head []))).trans
+            (congrArg (W.level t c + ·) (given_withhold L part t c)))
+        (without.1 t c) (withheld_at without t fun s below =>
+          balances s (Nat.lt_succ_of_lt below))).trans
         (congrArg (l (t + 1) c + ·) (last _).symm))
+
+/-- The difference a part makes. At every step, each level with what the part has taken from
+the condition so far is the level without the part with what the part has given it so far. -/
+theorem Balances.withheld (balances : L.Balances W) {l : Nat → C → Nat}
+    (without : L.WithheldLevels part W l) :
+    ∀ t c, W.level t c + total (steps 0 t) (fun s => L.partTaken part s c) =
+      l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
+  fun t c => withheld_at without t fun s _ => balances.on [c] s
+
+/-- Closing needs a net draw, with balance only at the conditions `f` requires, across the
+steps before `t`. -/
+theorem supported_of_net_give_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    {t : Nat} {f : F} (balances : ∀ c, W.requires t f c → ∀ s, s < t → L.BalancesOn W [c] s)
+    (net : ∀ c, W.requires t f c → total (steps 0 t) (fun s => L.partTaken part s c) ≤
+      total (steps 0 t) (fun s => L.partGiven part s c))
+    (admits : W.Admits (l t) t f) : W.Supported t f :=
+  fun c requires => Nat.le_trans (admits c requires)
+    (le_of_add_le_add_right (total (steps 0 t) fun s => L.partGiven part s c)
+      (Nat.le_trans (Nat.le_of_eq (withheld_at without t (balances c requires)).symm)
+        (Nat.add_le_add_left (net c requires) _)))
+
+/-- Opening needs a net give, with balance only at the conditions `f` requires, across the
+steps before `t`. -/
+theorem admits_of_net_draw_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    {t : Nat} {f : F} (balances : ∀ c, W.requires t f c → ∀ s, s < t → L.BalancesOn W [c] s)
+    (net : ∀ c, W.requires t f c → total (steps 0 t) (fun s => L.partGiven part s c) ≤
+      total (steps 0 t) (fun s => L.partTaken part s c))
+    (supported : W.Supported t f) : W.Admits (l t) t f :=
+  fun c requires => Nat.le_trans (supported c requires)
+    (le_of_add_le_add_right (total (steps 0 t) fun s => L.partTaken part s c)
+      (Nat.le_trans (Nat.le_of_eq (withheld_at without t (balances c requires)))
+        (Nat.add_le_add_left (net c requires) _)))
+
+/-- The boundary is exact, with balance only at the conditions `f` requires, across the steps
+before `t`: `f` is supported at `t` exactly when its need with what the part has taken from
+each such condition so far is at most the level without the part with what the part has
+given it so far. -/
+theorem supported_iff_within_margin_at {l : Nat → C → Nat}
+    (without : L.WithheldLevels part W l) {t : Nat} {f : F}
+    (balances : ∀ c, W.requires t f c → ∀ s, s < t → L.BalancesOn W [c] s) :
+    W.Supported t f ↔ ∀ c, W.requires t f c →
+      W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+        l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
+  ⟨fun supported c requires => Nat.le_trans
+      (Nat.add_le_add_right (supported c requires) (total (steps 0 t) fun s => L.partTaken part s c))
+      (Nat.le_of_eq (withheld_at without t (balances c requires))),
+   fun within c requires => le_of_add_le_add_right (total (steps 0 t) fun s => L.partTaken part s c)
+      (Nat.le_trans (within c requires)
+        (Nat.le_of_eq (withheld_at without t (balances c requires)).symm))⟩
 
 /-- Closing needs a net draw. Where, up to `t`, the part has given each condition `f`
 requires at least what it has taken from it, `f` is supported at `t` wherever the levels
@@ -357,10 +461,7 @@ theorem Balances.supported_of_net_give (balances : L.Balances W) {l : Nat → C 
     (net : ∀ c, W.requires t f c → total (steps 0 t) (fun s => L.partTaken part s c) ≤
       total (steps 0 t) (fun s => L.partGiven part s c))
     (admits : W.Admits (l t) t f) : W.Supported t f :=
-  fun c requires => Nat.le_trans (admits c requires)
-    (le_of_add_le_add_right (total (steps 0 t) fun s => L.partGiven part s c)
-      (Nat.le_trans (Nat.le_of_eq (balances.withheld without t c).symm)
-        (Nat.add_le_add_left (net c requires) _)))
+  supported_of_net_give_at without (fun c _ s _ => balances.on [c] s) net admits
 
 /-- Opening needs a net give. Where, up to `t`, the part has taken from each condition `f`
 requires at least what it has given to it, the levels without the part admit `f` at `t`
@@ -370,10 +471,7 @@ theorem Balances.admits_of_net_draw (balances : L.Balances W) {l : Nat → C →
     (net : ∀ c, W.requires t f c → total (steps 0 t) (fun s => L.partGiven part s c) ≤
       total (steps 0 t) (fun s => L.partTaken part s c))
     (supported : W.Supported t f) : W.Admits (l t) t f :=
-  fun c requires => Nat.le_trans (supported c requires)
-    (le_of_add_le_add_right (total (steps 0 t) fun s => L.partTaken part s c)
-      (Nat.le_trans (Nat.le_of_eq (balances.withheld without t c))
-        (Nat.add_le_add_left (net c requires) _)))
+  admits_of_net_draw_at without (fun c _ s _ => balances.on [c] s) net supported
 
 /-- The boundary is exact. At `t`, `f` is supported exactly when, on every condition it
 requires, its need with what the part has taken from the condition so far is at most the
@@ -384,11 +482,7 @@ theorem Balances.supported_iff_within_margin (balances : L.Balances W) {l : Nat 
     W.Supported t f ↔ ∀ c, W.requires t f c →
       W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
         l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
-  ⟨fun supported c requires => Nat.le_trans
-      (Nat.add_le_add_right (supported c requires) (total (steps 0 t) fun s => L.partTaken part s c))
-      (Nat.le_of_eq (balances.withheld without t c)),
-   fun within c requires => le_of_add_le_add_right (total (steps 0 t) fun s => L.partTaken part s c)
-      (Nat.le_trans (within c requires) (Nat.le_of_eq (balances.withheld without t c).symm))⟩
+  supported_iff_within_margin_at without fun c _ s _ => balances.on [c] s
 
 /-- A part that gives each condition at every step at least what it takes from it closes
 nothing: the levels with it include those without it. -/

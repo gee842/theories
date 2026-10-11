@@ -745,28 +745,33 @@ instance (t : Nat) (g : F) : Decidable (W.CeasesFrom R t g) := instDecidableAnd
 
 variable {W R} [∀ t g f, Decidable (R t g f)]
 
-/-- The census balance under a continuation. Under a census, across each step: without
-splits, the formations active after the step with those ceasing under the continuation are
-at most those active before with those arising under it; without merges, at least. Each
-side is read against the continuing pairs: no more formations after the step continue one
-before it than there are pairs, nor are more before it continued, and without merges the
-first count is the pairs, without splits the second. -/
-theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t : Nat) :
-    (W.NoSplit R → (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) ≤
-      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) ∧
-    (W.NoMerge R → (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) ≤
-      (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))) :=
+/-- The census balance under a continuation, across one step at whose two ends the active
+formations are listed: without splits across it, the formations active after the step with
+those ceasing under the continuation are at most those active before with those arising
+under it; without merges across it, at least. Only the two listings and the step's splits
+and merges are used. -/
+theorem Census.balanceFrom_at {alive : Nat → List F} {t : Nat}
+    (now : Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t)
+    (next : Distinct (alive (t + 1)) ∧ ∀ f, W.active (t + 1) f ↔ f ∈ alive (t + 1)) :
+    ((∀ g f f', W.active t g → R t g f → R t g f' → W.active (t + 1) f →
+      W.active (t + 1) f' → f = f') →
+      (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) ≤
+        (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) ∧
+    ((∀ g g' f, W.active t g → W.active t g' → R t g f → R t g' f →
+      W.active (t + 1) f → g = g') →
+      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) ≤
+        (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))) :=
   have after : (alive (t + 1)).length = total (alive (t + 1)) (fun f => mark (W.Continues R t f)) +
       total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
     (total_ones _).symm.trans ((total_congr_on fun f mem =>
-      have active : W.active (t + 1) f := ((census (t + 1)).2 f).mpr mem
+      have active : W.active (t + 1) f := (next.2 f).mpr mem
       Eq.symm (mark_add_not (q := W.Continues R t f) (r := W.ArisesFrom R t f)
         (if h : W.Continues R t f then .inl h else .inr ⟨active, h⟩)
         fun both => both.2.2 both.1)).trans (total_add _ _ _))
   have before : (alive t).length = total (alive t) (fun g => mark (W.Continued R t g)) +
       total (alive t) (fun g => mark (W.CeasesFrom R t g)) :=
     (total_ones _).symm.trans ((total_congr_on fun g mem =>
-      have active : W.active t g := ((census t).2 g).mpr mem
+      have active : W.active t g := (now.2 g).mpr mem
       Eq.symm (mark_add_not (q := W.Continued R t g) (r := W.CeasesFrom R t g)
         (if h : W.Continued R t g then .inl h else .inr ⟨active, h⟩)
         fun both => both.2.2 both.1)).trans (total_add _ _ _))
@@ -776,19 +781,19 @@ theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t
   have continued : total (alive (t + 1)) (fun f => mark (W.Continues R t f)) ≤
       total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) :=
     Nat.le_trans (total_le _ fun _ _ => mark_le_total fun ⟨g, active, continues⟩ =>
-      ⟨g, ((census t).2 g).mp active, continues⟩) (Nat.le_of_eq swap.symm)
+      ⟨g, (now.2 g).mp active, continues⟩) (Nat.le_of_eq swap.symm)
   have continuing : total (alive t) (fun g => mark (W.Continued R t g)) ≤
       total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) :=
     total_le _ fun _ _ => mark_le_total fun ⟨f, active, continues⟩ =>
-      ⟨f, ((census (t + 1)).2 f).mp active, continues⟩
+      ⟨f, (next.2 f).mp active, continues⟩
   ⟨fun noSplit =>
     have pairs : total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) ≤
         total (alive t) (fun g => mark (W.Continued R t g)) :=
-      total_le _ fun g mem => total_le_mark (census (t + 1)).1
+      total_le _ fun g mem => total_le_mark next.1
         (fun f f' mem_f mem_f' continues continues' =>
-          noSplit t g f f' (((census t).2 g).mpr mem) continues continues'
-            (((census (t + 1)).2 f).mpr mem_f) (((census (t + 1)).2 f').mpr mem_f'))
-        fun f mem_f continues => ⟨f, ((census (t + 1)).2 f).mpr mem_f, continues⟩
+          noSplit g f f' ((now.2 g).mpr mem) continues continues'
+            ((next.2 f).mpr mem_f) ((next.2 f').mpr mem_f'))
+        fun f mem_f continues => ⟨f, (next.2 f).mpr mem_f, continues⟩
     calc (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))
         = (total (alive (t + 1)) (fun f => mark (W.Continues R t f)) +
             total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) +
@@ -802,11 +807,11 @@ theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t
    fun noMerge =>
     have pairs : total (alive t) (fun g => total (alive (t + 1)) fun f => mark (R t g f)) ≤
         total (alive (t + 1)) (fun f => mark (W.Continues R t f)) :=
-      Nat.le_trans (Nat.le_of_eq swap) (total_le _ fun f mem => total_le_mark (census t).1
+      Nat.le_trans (Nat.le_of_eq swap) (total_le _ fun f mem => total_le_mark now.1
         (fun g g' mem_g mem_g' continues continues' =>
-          noMerge t g g' f (((census t).2 g).mpr mem_g) (((census t).2 g').mpr mem_g')
-            continues continues' (((census (t + 1)).2 f).mpr mem))
-        fun g mem_g continues => ⟨g, ((census t).2 g).mpr mem_g, continues⟩)
+          noMerge g g' f ((now.2 g).mpr mem_g) ((now.2 g').mpr mem_g')
+            continues continues' ((next.2 f).mpr mem))
+        fun g mem_g continues => ⟨g, (now.2 g).mpr mem_g, continues⟩)
     calc (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))
         = (total (alive t) (fun g => mark (W.Continued R t g)) +
             total (alive t) (fun g => mark (W.CeasesFrom R t g))) +
@@ -818,6 +823,33 @@ theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t
       _ = (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) :=
         (Nat.add_right_comm _ _ _).trans (congrArg (· + _) after.symm)⟩
 
+/-- The census balance under a continuation. Under a census, across each step: without
+splits, the formations active after the step with those ceasing under the continuation are
+at most those active before with those arising under it; without merges, at least. Each
+side is read against the continuing pairs: no more formations after the step continue one
+before it than there are pairs, nor are more before it continued, and without merges the
+first count is the pairs, without splits the second. -/
+theorem Census.balanceFrom {alive : Nat → List F} (census : W.Census alive) (t : Nat) :
+    (W.NoSplit R → (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) ≤
+      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f))) ∧
+    (W.NoMerge R → (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) ≤
+      (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g))) :=
+  ⟨fun noSplit => (balanceFrom_at (census t) (census (t + 1))).1 (noSplit t),
+   fun noMerge => (balanceFrom_at (census t) (census (t + 1))).2 (noMerge t)⟩
+
+/-- Across one step listed at its two ends, with neither splits nor merges across it, the
+census balance under a continuation is exact. -/
+theorem Census.balanceFrom_eq_at {alive : Nat → List F} {t : Nat}
+    (now : Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t)
+    (next : Distinct (alive (t + 1)) ∧ ∀ f, W.active (t + 1) f ↔ f ∈ alive (t + 1))
+    (noSplit : ∀ g f f', W.active t g → R t g f → R t g f' → W.active (t + 1) f →
+      W.active (t + 1) f' → f = f')
+    (noMerge : ∀ g g' f, W.active t g → W.active t g' → R t g f → R t g' f →
+      W.active (t + 1) f → g = g') :
+    (alive (t + 1)).length + total (alive t) (fun g => mark (W.CeasesFrom R t g)) =
+      (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
+  Nat.le_antisymm ((balanceFrom_at now next).1 noSplit) ((balanceFrom_at now next).2 noMerge)
+
 /-- Under a census and a continuation with neither splits nor merges, the census balance is
 exact across each step. -/
 theorem Census.balanceFrom_eq {alive : Nat → List F} (census : W.Census alive) (t : Nat)
@@ -826,18 +858,55 @@ theorem Census.balanceFrom_eq {alive : Nat → List F} (census : W.Census alive)
       (alive t).length + total (alive (t + 1)) (fun f => mark (W.ArisesFrom R t f)) :=
   Nat.le_antisymm ((census.balanceFrom t).1 noSplit) ((census.balanceFrom t).2 noMerge)
 
+/-- The census law under a continuation, from a step on: where from `T` on the active
+formations are listed at each step and no formation continues as two, ceasing at arbitrarily
+late steps needs arising at arbitrarily late steps. Nothing is asked of the steps before
+`T`. -/
+theorem Census.arisingFrom_of_ceasingFrom_from {alive : Nat → List F} {T : Nat}
+    (listing : ∀ s, T ≤ s → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s)
+    (noSplit : ∀ s, T ≤ s → ∀ g f f', W.active s g → R s g f → R s g f' →
+      W.active (s + 1) f → W.active (s + 1) f' → f = f')
+    (ceasing : ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g) : W.UnceasingFrom R :=
+  fun N => match gaining_of_losing_from (T := T) (q := fun t => (alive t).length)
+      (x := fun t => total (alive t) fun g => mark (W.CeasesFrom R t g))
+      (y := fun t => total (alive (t + 1)) fun f => mark (W.ArisesFrom R t f))
+      (fun t from_ => (balanceFrom_at (listing t from_)
+        (listing (t + 1) (Nat.le_succ_of_le from_))).1 (noSplit t from_))
+      (fun M => match ceasing (M + T) with
+        | ⟨t, g, later, ceases⟩ => ⟨t, Nat.le_trans (Nat.le_add_right M T) later,
+          total_pos_of_mem (((listing t (Nat.le_trans (Nat.le_add_left T M) later)).2 g).mp
+            ceases.1) (mark_pos.mpr ceases)⟩) N with
+  | ⟨t, later, arose⟩ => match total_pos _ arose with
+    | ⟨f, _, arises⟩ => ⟨t, f, later, mark_pos.mp arises⟩
+
 /-- The census law under a continuation: under a census and a continuation in which no
 formation continues as two, ceasing at arbitrarily late steps needs arising at arbitrarily
 late steps (`arising_of_ceasing`). -/
 theorem Census.arisingFrom_of_ceasingFrom {alive : Nat → List F} (census : W.Census alive)
     (noSplit : W.NoSplit R) (ceasing : ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g) :
     W.UnceasingFrom R :=
-  fun N => match gaining_of_losing (q := fun t => (alive t).length)
-      (fun t => (census.balanceFrom t).1 noSplit) (fun M => match ceasing M with
-        | ⟨t, g, later, ceases⟩ =>
-          ⟨t, later, total_pos_of_mem (((census t).2 g).mp ceases.1) (mark_pos.mpr ceases)⟩) N with
-  | ⟨t, later, arose⟩ => match total_pos _ arose with
-    | ⟨f, _, arises⟩ => ⟨t, f, later, mark_pos.mp arises⟩
+  arisingFrom_of_ceasingFrom_from (T := 0) (fun s _ => census s) (fun s _ => noSplit s) ceasing
+
+/-- And from a step on: where from `T` on the active formations are listed at each step, at
+most `B` of them, and no formation continues two, arising at arbitrarily late steps needs
+ceasing at arbitrarily late steps. -/
+theorem Census.ceasingFrom_of_arisingFrom_from {alive : Nat → List F} {T B : Nat}
+    (listing : ∀ s, T ≤ s → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s)
+    (noMerge : ∀ s, T ≤ s → ∀ g g' f, W.active s g → W.active s g' → R s g f → R s g' f →
+      W.active (s + 1) f → g = g')
+    (bounded : ∀ t, T ≤ t → (alive t).length ≤ B) (arising : W.UnceasingFrom R) :
+    ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g :=
+  fun N => match losing_of_gaining_from (T := T) (q := fun t => (alive t).length)
+      (x := fun t => total (alive t) fun g => mark (W.CeasesFrom R t g))
+      (y := fun t => total (alive (t + 1)) fun f => mark (W.ArisesFrom R t f))
+      (fun t from_ => (balanceFrom_at (listing t from_)
+        (listing (t + 1) (Nat.le_succ_of_le from_))).2 (noMerge t from_))
+      bounded (fun M => match arising (M + T) with
+        | ⟨t, f, later, arises⟩ => ⟨t, Nat.le_trans (Nat.le_add_right M T) later,
+          total_pos_of_mem (((listing (t + 1) (Nat.le_succ_of_le
+            (Nat.le_trans (Nat.le_add_left T M) later))).2 f).mp arises.1) (mark_pos.mpr arises)⟩) N with
+  | ⟨t, later, ceased⟩ => match total_pos _ ceased with
+    | ⟨g, _, ceases⟩ => ⟨t, g, later, mark_pos.mp ceases⟩
 
 /-- And under a census and a continuation in which no formation continues two, with at
 most `B` formations active at each step from some step on, arising at arbitrarily late
@@ -845,12 +914,7 @@ steps needs ceasing at arbitrarily late steps (`ceasing_of_arising`). -/
 theorem Census.ceasingFrom_of_arisingFrom {alive : Nat → List F} (census : W.Census alive)
     (noMerge : W.NoMerge R) {T B : Nat} (bounded : ∀ t, T ≤ t → (alive t).length ≤ B)
     (arising : W.UnceasingFrom R) : ∀ N, ∃ t g, N ≤ t ∧ W.CeasesFrom R t g :=
-  fun N => match losing_of_gaining (q := fun t => (alive t).length)
-      (fun t => (census.balanceFrom t).2 noMerge) bounded (fun M => match arising M with
-        | ⟨t, f, later, arises⟩ => ⟨t, later,
-          total_pos_of_mem (((census (t + 1)).2 f).mp arises.1) (mark_pos.mpr arises)⟩) N with
-  | ⟨t, later, ceased⟩ => match total_pos _ ceased with
-    | ⟨g, _, ceases⟩ => ⟨t, g, later, mark_pos.mp ceases⟩
+  ceasingFrom_of_arisingFrom_from (fun s _ => census s) (fun s _ => noMerge s) bounded arising
 
 end Counting
 

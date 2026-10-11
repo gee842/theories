@@ -474,14 +474,32 @@ theorem Embodied.ending_breaks (dependent : W.Dependent) {x : X} (embodied : W.E
     Nat.lt_of_le_of_lt (Nat.ge_of_not_lt fun stands => ends ((embodied (t + 1)).mpr stands))
       (self t active).2⟩
 
+/-- A dependence left below its need across a step, persisting after the step at no lower
+need, belongs to a formation not active after the step, where it is active after the step
+only while supported then: the support of that one formation at that one step is all that
+is used. -/
+theorem inactive_below_at {W : Web F C} {t : Nat} {g : F} {c : C}
+    (dependent : W.active (t + 1) g → W.Supported (t + 1) g)
+    (below : W.level (t + 1) c < W.need t g c) (persists : W.requires (t + 1) g c)
+    (noLess : W.need t g c ≤ W.need (t + 1) g c) : ¬ W.active (t + 1) g :=
+  fun active => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le below
+    (Nat.le_trans noLess (dependent active c persists)))
+
+/-- Where the formation was active, the dependence left below its need ends it, its activity
+after the step needing its support then. -/
+theorem ceases_below_at {W : Web F C} {t : Nat} {g : F} {c : C}
+    (dependent : W.active (t + 1) g → W.Supported (t + 1) g) (active : W.active t g)
+    (below : W.level (t + 1) c < W.need t g c) (persists : W.requires (t + 1) g c)
+    (noLess : W.need t g c ≤ W.need (t + 1) g c) : W.Ceases t g :=
+  ⟨active, inactive_below_at dependent below persists noLess⟩
+
 /-- Under `Dependent`, a dependence left below its need across a step, persisting after the
 step at no lower need, belongs to a formation not active after the step. That is its
 ending only where it was active (`ceases_below`). -/
 theorem Dependent.inactive_below {W : Web F C} (dependent : W.Dependent) {t : Nat} {g : F}
     {c : C} (below : W.level (t + 1) c < W.need t g c) (persists : W.requires (t + 1) g c)
     (noLess : W.need t g c ≤ W.need (t + 1) g c) : ¬ W.active (t + 1) g :=
-  fun active => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le below
-    (Nat.le_trans noLess (dependent (t + 1) g active c persists)))
+  inactive_below_at (dependent (t + 1) g) below persists noLess
 
 /-- Where the formation was active, the dependence left below its need ends it: under
 `Dependent`, undermining a dependence that persists unchanged co-occurs with the ending of
@@ -490,7 +508,7 @@ theorem Dependent.ceases_below {W : Web F C} (dependent : W.Dependent) {t : Nat}
     {c : C} (active : W.active t g) (below : W.level (t + 1) c < W.need t g c)
     (persists : W.requires (t + 1) g c) (noLess : W.need t g c ≤ W.need (t + 1) g c) :
     W.Ceases t g :=
-  ⟨active, dependent.inactive_below below persists noLess⟩
+  ceases_below_at (dependent (t + 1) g) active below persists noLess
 
 /-- Arising through another's giving: in a balanced flow in which only active formations
 give, an embodied relatum arises only as an active formation taking part gives to it, and

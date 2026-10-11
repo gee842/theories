@@ -162,6 +162,17 @@ instance Web.decideCeasesToStand (W : Web F C) (t : Nat) (c : C) :
     Decidable (W.CeasesToStand t c) :=
   instDecidableAnd
 
+/-- The census balance read of standing, over a stretch at each step of which what stands is
+listed: the conditions standing at the end with those that ceased to stand are those
+standing at the start with those that came to stand (`Listed.over_stretch_on`). -/
+theorem Web.StandingCensus.over_stretch_on {W : Web F C} {stand : Nat → List C} {S n : Nat}
+    (listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (stand s) ∧ ∀ c, 0 < W.level s c ↔ c ∈ stand s) :
+    (stand (S + n)).length + total (steps S n) (fun t => total (stand t) fun c =>
+      mark (W.CeasesToStand t c)) =
+      (stand S).length + total (steps S n) (fun t => total (stand (t + 1)) fun c =>
+        mark (W.ComesToStand t c)) :=
+  Listed.over_stretch_on (p := fun c t => 0 < W.level t c) listing
+
 /-- The census balance read of standing: over any stretch, the conditions standing at the
 end with those that ceased to stand are those standing at the start with those that came
 to stand (`Listed.over_stretch`). -/
@@ -171,7 +182,7 @@ theorem Web.StandingCensus.over_stretch {W : Web F C} {stand : Nat → List C}
       mark (W.CeasesToStand t c)) =
       (stand S).length + total (steps S n) (fun t => total (stand (t + 1)) fun c =>
         mark (W.ComesToStand t c)) :=
-  Listed.over_stretch census S n
+  Web.StandingCensus.over_stretch_on fun s _ _ => census s
 
 /-- The step from `t` is enclosed around what stands across it: some family without
 repetition, closed across the step, holds whatever stands before or after it. -/

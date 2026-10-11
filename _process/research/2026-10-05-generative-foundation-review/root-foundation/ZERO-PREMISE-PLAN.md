@@ -160,6 +160,10 @@
 
 **Status (P48).** The four laws below are checked in `Becoming.Locality` and registered as [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) ([study section 66](BECOMING-RENEWAL-READING.md#66-一步的规律条件在规律之内p48)); what follows keeps the proposals as they stood before the check. The check changed three things: law 1's condition needs no closure (`Flow.RunsDownOn`: a family holding what stands, balanced and dissipated on, suffices, closure entering only the iff for the exchange); law 3 needs no embodiment for what stands; law 2's form that ceasing does not recur needs no decision (`Covers.ceasing_not_recurring`), while the exact count does. The proposed `stock es (t+1) + takers es t ≤ stock es t` is `Flow.RunsDownOn.takers_le_fall`.
 
+**现状（P50）。** 清点 C 组（依存、储备与支持，§1.3）与普查平衡已对每个世界重述，条件写在规律之内，由“0 axiom completeness”会话起草并验证（[研究 §71](BECOMING-RENEWAL-READING.md#71)）。证明对活动的要求只以一种方式出现：给予所用条件者在所用一步被支持（`Flow.GiversSupported`）。不需要 b 类的决定。剩下的是组 B 其余（`Dissipation` 与 `Flow` 中的规律）与组 D。
+
+**Status (P50).** Group C of the inventory (dependence, reserve and support, section 1.3) and the census balance are restated for every world with their condition inside them, drafted and verified by the session “0 axiom completeness” ([study section 71](BECOMING-RENEWAL-READING.md#71)). What the proofs need of activity appears in one way only: whatever gives to the condition used is supported across the step used (`Flow.GiversSupported`). No decision of class (b) was needed. What remains is the rest of group B (the laws in `Dissipation` and `Flow`) and group D.
+
 **中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
 
 **English.** In Ren's order, four laws come first. Each is stated for every world, with its local condition inside it. The move in each is “localize”. The forms below are proposals, not results until checked in Lean.

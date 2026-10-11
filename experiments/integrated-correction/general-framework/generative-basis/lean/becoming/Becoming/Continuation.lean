@@ -158,8 +158,9 @@ theorem joint_keeps (balances : L.Balances W) {t : Nat} {c : C}
   le_of_add_le_add_right (L.taken t c)
     (Nat.le_trans (Nat.add_le_add_left within (W.level t c)) (Nat.le_of_eq (balances t c).symm))
 
-/-- A step of joint excess lowers the level by at least one. -/
-theorem excess_lowers (balances : L.Balances W) {t : Nat} {c : C}
+/-- With balance at the condition across the step, a step of joint excess lowers the level
+by at least one. -/
+theorem excess_lowers_at {t : Nat} {c : C} (balances : L.BalancesOn W [c] t)
     (excess : L.given t c < L.taken t c) : W.level (t + 1) c + 1 ≤ W.level t c :=
   le_of_add_le_add_right (L.given t c)
     (Nat.le_trans
@@ -167,19 +168,34 @@ theorem excess_lowers (balances : L.Balances W) {t : Nat} {c : C}
         (congrArg (W.level (t + 1) c + ·) (Nat.add_comm 1 (L.given t c)))))
       (Nat.le_trans
         (Nat.add_le_add_left (show L.given t c + 1 ≤ L.taken t c from excess) _)
-        (Nat.le_of_eq (balances t c))))
+        (Nat.le_of_eq (balances c (.head [])))))
+
+/-- A step of joint excess lowers the level by at least one. -/
+theorem excess_lowers (balances : L.Balances W) {t : Nat} {c : C}
+    (excess : L.given t c < L.taken t c) : W.level (t + 1) c + 1 ≤ W.level t c :=
+  excess_lowers_at (balances.on [c] t) excess
+
+/-- With balance at the condition across each of the `n` steps, `n` consecutive steps of
+joint excess lower the level by at least `n`. -/
+theorem excess_bounded_at {c : C} {T : Nat} :
+    ∀ n, (∀ k, k < n → L.BalancesOn W [c] (T + k)) →
+      (∀ k, k < n → L.given (T + k) c < L.taken (T + k) c) →
+      W.level (T + n) c + n ≤ W.level T c
+  | 0, _, _ => Nat.le_refl _
+  | n + 1, balances, excess =>
+    Nat.le_trans (Nat.le_of_eq (Nat.add_right_comm (W.level (T + n + 1) c) n 1))
+      (Nat.le_trans
+        (Nat.add_le_add_right (excess_lowers_at (balances n (Nat.lt_succ_self n))
+          (excess n (Nat.lt_succ_self n))) n)
+        (excess_bounded_at n (fun k below => balances k (Nat.lt_succ_of_lt below))
+          fun k below => excess k (Nat.lt_succ_of_lt below)))
 
 /-- Joint excess cannot last: over `n` consecutive steps of joint excess from `T`, the
 level falls by at least `n`. -/
 theorem excess_bounded (balances : L.Balances W) {c : C} {T : Nat} :
     ∀ n, (∀ k, k < n → L.given (T + k) c < L.taken (T + k) c) →
-      W.level (T + n) c + n ≤ W.level T c
-  | 0, _ => Nat.le_refl _
-  | n + 1, excess =>
-    Nat.le_trans (Nat.le_of_eq (Nat.add_right_comm (W.level (T + n + 1) c) n 1))
-      (Nat.le_trans
-        (Nat.add_le_add_right (excess_lowers balances (excess n (Nat.lt_succ_self n))) n)
-        (excess_bounded balances n fun k below => excess k (Nat.lt_succ_of_lt below)))
+      W.level (T + n) c + n ≤ W.level T c :=
+  fun n => excess_bounded_at n fun k _ => balances.on [c] (T + k)
 
 end Joint
 
@@ -189,6 +205,31 @@ section Gated
 
 variable {L : Flow F C} {W : Web F C}
 
+/-- Once below `m`, below `m` over the next `n` steps, where across each of them the
+condition is balanced on and whatever gives to it depends on it at a need of at least `m`
+and is supported. -/
+theorem stays_below_at {c : C} {m T : Nat} (below : W.level T c < m) :
+    ∀ n, (∀ k, k < n → L.BalancesOn W [c] (T + k)) →
+      (∀ k f, k < n → f ∈ L.present (T + k) → 0 < L.give (T + k) f c →
+        W.requires (T + k) f c ∧ m ≤ W.need (T + k) f c) →
+      (∀ k, k < n → L.GiversSupported W (T + k) c) →
+      W.level (T + n) c < m
+  | 0, _, _, _ => below
+  | n + 1, balances, gated, givers =>
+    have before := stays_below_at below n (fun k lt => balances k (Nat.lt_succ_of_lt lt))
+      (fun k f lt => gated k f (Nat.lt_succ_of_lt lt))
+      fun k lt => givers k (Nat.lt_succ_of_lt lt)
+    have none : L.given (T + n) c = 0 := total_eq_zero fun f present =>
+      eq_zero_of_not_pos fun gives => match gated n f (Nat.lt_succ_self n) present gives with
+        | ⟨depends, high⟩ =>
+          Nat.lt_irrefl m (Nat.lt_of_le_of_lt (Nat.le_trans high
+            (givers n (Nat.lt_succ_self n) f present gives c depends)) before)
+    Nat.lt_of_le_of_lt
+      (Nat.le_trans (Nat.le_add_right _ (L.taken (T + n) c))
+        (Nat.le_of_eq (((balances n (Nat.lt_succ_self n)) c (.head [])).trans
+          (congrArg (W.level (T + n) c + ·) none))))
+      before
+
 /-- Once below `m`, always below `m`: where every formation giving to the condition
 depends on it at a need of at least `m`, only active formations give and activity needs
 support, nothing gives to the condition while its level is below `m`, so the level stays
@@ -197,28 +238,54 @@ theorem stays_below (balances : L.Balances W) (acting : L.Acting W)
     (dependent : W.Dependent) {c : C} {m : Nat}
     (gated : ∀ t f, f ∈ L.present t → 0 < L.give t f c →
       W.requires t f c ∧ m ≤ W.need t f c)
-    {T : Nat} (below : W.level T c < m) : ∀ n, W.level (T + n) c < m
-  | 0 => below
-  | n + 1 =>
-    have before := stays_below balances acting dependent gated below n
-    have none : L.given (T + n) c = 0 := total_eq_zero fun f present =>
-      eq_zero_of_not_pos fun gives => match gated (T + n) f present gives with
-        | ⟨depends, high⟩ =>
-          Nat.lt_irrefl m (Nat.lt_of_le_of_lt (Nat.le_trans high
-            (dependent (T + n) f (acting (T + n) f c present gives) c depends)) before)
-    Nat.lt_of_le_of_lt
-      (Nat.le_trans (Nat.le_add_right _ (L.taken (T + n) c))
-        (Nat.le_of_eq ((balances (T + n) c).trans (congrArg (W.level (T + n) c + ·) none))))
-      before
+    {T : Nat} (below : W.level T c < m) : ∀ n, W.level (T + n) c < m :=
+  fun n => stays_below_at below n (fun k _ => balances.on [c] (T + k))
+    (fun k f _ => gated (T + k) f) fun k _ => acting.giversSupported dependent (T + k) c
+
+/-- At one step, a formation depending on a condition below its need is not active there,
+where it is active only while supported. -/
+theorem ends_below_at {c : C} {m t : Nat} {g : F}
+    (dependent : W.active t g → W.Supported t g) (below : W.level t c < m)
+    (depends : W.requires t g c) (high : m ≤ W.need t g c) : ¬ W.active t g :=
+  fun active => Nat.lt_irrefl m (Nat.lt_of_le_of_lt
+    (Nat.le_trans high (dependent active c depends)) below)
 
 /-- Below `m` from `T` on, every formation depending on the condition at a need of at least
 `m` is inactive. -/
 theorem ends_below (dependent : W.Dependent) {c : C} {m T : Nat}
     (below : ∀ n, W.level (T + n) c < m) :
     ∀ n g, W.requires (T + n) g c → m ≤ W.need (T + n) g c → ¬ W.active (T + n) g :=
-  fun n g depends high active =>
-    Nat.lt_irrefl m (Nat.lt_of_le_of_lt
-      (Nat.le_trans high (dependent (T + n) g active c depends)) (below n))
+  fun n g => ends_below_at (dependent (T + n) g) (below n)
+
+/-- Joint excess ends gated renewal, at the steps it uses: with balance at the condition
+across the first `n + k` steps from `T`, whatever gives to it there depending on it at a need
+of at least `m` and supported, `n` steps of joint excess from `T` starting below `n + m`
+leave a formation depending on it at a need of at least `m` inactive at step `T + n + k`,
+where it is active only while supported. -/
+theorem joint_excess_ends_at {c : C} {m T n k : Nat} {g : F}
+    (balances : ∀ j, j < n + k → L.BalancesOn W [c] (T + j))
+    (gated : ∀ j f, j < n + k → f ∈ L.present (T + j) → 0 < L.give (T + j) f c →
+      W.requires (T + j) f c ∧ m ≤ W.need (T + j) f c)
+    (givers : ∀ j, j < n + k → L.GiversSupported W (T + j) c)
+    (excess : ∀ j, j < n → L.given (T + j) c < L.taken (T + j) c)
+    (start : W.level T c < n + m)
+    (dependent : W.active (T + n + k) g → W.Supported (T + n + k) g) :
+    W.requires (T + n + k) g c → m ≤ W.need (T + n + k) g c → ¬ W.active (T + n + k) g :=
+  have early : ∀ j, j < n → j < n + k := fun _ below => Nat.lt_of_lt_of_le below (Nat.le_add_right n k)
+  have shift : ∀ j, j < k → n + j < n + k := fun _ below => Nat.add_lt_add_left below n
+  have low : W.level (T + n) c < m := Nat.lt_of_add_lt_add_left (n := n)
+    (Nat.lt_of_le_of_lt
+      (Nat.le_trans (Nat.le_of_eq (Nat.add_comm n _))
+        (excess_bounded_at n (fun j below => balances j (early j below)) excess))
+      start)
+  ends_below_at dependent (stays_below_at (T := T + n) low k
+    (fun j below => Eq.subst (motive := fun s => L.BalancesOn W [c] s) (Nat.add_assoc T n j).symm
+      (balances (n + j) (shift j below)))
+    (fun j f below => Eq.subst (motive := fun s => f ∈ L.present s → 0 < L.give s f c →
+        W.requires s f c ∧ m ≤ W.need s f c) (Nat.add_assoc T n j).symm
+      (gated (n + j) f (shift j below)))
+    fun j below => Eq.subst (motive := fun s => L.GiversSupported W s c)
+      (Nat.add_assoc T n j).symm (givers (n + j) (shift j below)))
 
 /-- Joint excess ends gated renewal: if `n` consecutive steps of joint excess from `T`
 start below `n + m`, the level is below `m` from `T + n` on, nothing gives to the
@@ -232,11 +299,9 @@ theorem joint_excess_ends (balances : L.Balances W) (acting : L.Acting W)
     (start : W.level T c < n + m) :
     ∀ k g, W.requires (T + n + k) g c → m ≤ W.need (T + n + k) g c →
       ¬ W.active (T + n + k) g :=
-  ends_below dependent (stays_below balances acting dependent gated
-    (Nat.lt_of_add_lt_add_left (n := n)
-      (Nat.lt_of_le_of_lt
-        (Nat.le_trans (Nat.le_of_eq (Nat.add_comm n _)) (excess_bounded balances n excess))
-        start)))
+  fun k g => joint_excess_ends_at (fun j _ => balances.on [c] (T + j))
+    (fun j f _ => gated (T + j) f) (fun j _ => acting.giversSupported dependent (T + j) c)
+    excess start (dependent (T + n + k) g)
 
 end Gated
 
