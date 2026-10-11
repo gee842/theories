@@ -3090,6 +3090,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)
 
+## subthreshold-registration ← testing-within-registration
+
+`formal-reuse` — 复用 Web.Registers、Web.RegistersAlike、Web.RegistersAlikeUpTo、supportOnly 与 ownStanding。 / Reuses Web.Registers, Web.RegistersAlike, Web.RegistersAlikeUpTo, supportOnly and ownStanding.
+
+**Producer output / 上游输出:** 一个形成反映什么，两个水平历史何时对它反映相同。 / What a formation registers, and when two level histories register alike for it.
+
+**Consumer input / 下游输入:** 交换随反映的假设与阈下差别的规律。 / The hypothesis of the exchange following registration, and the laws of differences below the threshold.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## subthreshold-registration ← closing-needs-net-draw
+
+`formal-reuse` — 复用 Web.Admits：支持就是所需条件的水平接纳形成。 / Reuses Web.Admits: support is admission by the levels of the conditions required.
+
+**Producer output / 上游输出:** 接纳。 / Admission.
+
+**Consumer input / 下游输入:** 第二个网的水平在第一个网支持 g 处接纳 g，所以 g 反映相同。 / The second web's levels admit g wherever the first web supports it, so g registers alike.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## subthreshold-registration ← levels-of-closure
+
+`formal-reuse` — 复用 Web.DependsOn：g 依存于储量。 / Reuses Web.DependsOn: g depends on the stock.
+
+**Producer output / 上游输出:** 依存。 / Dependence.
+
+**Consumer input / 下游输入:** 被反映的条件。 / The conditions registered.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
 ## support-from-the-supported ← coming-and-ceasing-keep-pace
 
 `formal-reuse` — 复用 Web.supported_of：在 s 被支持的形成，在 t 的每项依存都在 s 已有、所需不更高、条件不更低时，在 t 被支持。 / Reuses Web.supported_of: a formation supported at s is supported at t where each dependence it has at t it had at s, at no greater need, on a condition standing no lower.
@@ -3125,6 +3161,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一规律、阈值和递推；无第三条供给。正面定理增加有限窗口前提。 / Same law, thresholds and recurrence; no third supply. The positive theorem adds the finite-window premise.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean)
+
+## testing-within-registration ← feedback-and-reach
+
+`formal-reuse` — 推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只反映支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。 / Extends P42's Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.unregistered_beyond_registration is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form.
+
+**Producer output / 上游输出:** 交换、影响闭包与不清除的世界。 / Exchange, the influence closure and the world with the habitat spared.
+
+**Consumer input / 下游输入:** 反映闭包及其不见；清除者不检验栖居者被终结。 / The registration closure and its blindness; the clearer does not test whether the dweller is ended.
+
+**Retained conditions / 保留条件:** 平衡；扣留水平。 / Balance; withheld levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## testing-within-registration ← levels-of-closure
+
+`formal-reuse` — 复用 ClosedUnder、WithinClosure（mono、not_rel、of_rel、refl、trans）、closedUnder_withinClosure 与 Web.DependsOn。 / Reuses ClosedUnder, WithinClosure (mono, not_rel, of_rel, refl, trans), closedUnder_withinClosure and Web.DependsOn.
+
+**Producer output / 上游输出:** 对一个关系的闭包。 / Closure under a relation.
+
+**Consumer input / 下游输入:** 反映闭包及其封闭。 / The registration closure and its closedness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
+
+## testing-within-registration ← closing-needs-net-draw
+
+`formal-reuse` — 复用 Web.Admits、Flow.withhold 与 Flow.WithheldLevels。 / Reuses Web.Admits, Flow.withhold and Flow.WithheldLevels.
+
+**Producer output / 上游输出:** 接纳与扣留水平。 / Admission and withheld levels.
+
+**Consumer input / 下游输入:** 反映相同的第一项；有与无部分的比较。 / The first clause of registering alike; the comparison with and without a part.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean)
+
+## testing-within-registration ← four-cases-of-a-part
+
+`formal-reuse` — 复用 Clearing.unsupported_with：清除时栖居者从第三步起不被支持。 / Reuses Clearing.unsupported_with: with the clearing the dweller is unsupported from the third step on.
+
+**Producer output / 上游输出:** 栖居者被终结。 / The dweller is ended.
+
+**Consumer input / 下游输入:** Clearing.DwellerEnded 在清除的世界中成立。 / Clearing.DwellerEnded holds in the world with the clearing.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
 
 ## theory-of-becoming-foundation ← becoming-context-coherence
 

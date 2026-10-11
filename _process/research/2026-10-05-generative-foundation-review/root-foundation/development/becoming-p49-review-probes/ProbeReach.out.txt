@@ -1,0 +1,8 @@
+'Becoming.Review47.total_congr_mem' does not depend on any axioms
+'Becoming.Review47.Flow.exchange_agrees' does not depend on any axioms
+'Becoming.Review47.Flow.Balances.alike_within_closed' does not depend on any axioms
+'Becoming.Review47.Flow.Balances.alike_within_registration' does not depend on any axioms
+'Becoming.Review47.Flow.withinRegistration_mono_obs' does not depend on any axioms
+'Becoming.Review47.Flow.withinRegistration_mono_flow' does not depend on any axioms
+'Becoming.Review47.ClearingResponsive.alike_for_clearer_responsive' does not depend on any axioms
+'Becoming.Review47.Flow.withheld_instance' does not depend on any axioms

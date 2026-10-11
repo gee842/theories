@@ -37,6 +37,7 @@ import Becoming.Interdependence
 import Becoming.Feedback
 import Becoming.Boundaries
 import Becoming.Relevance
+import Becoming.Testing
 
 /-!
 # The Theory of Becoming: the formal core
@@ -431,6 +432,20 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   the levels with and without it as the axiom does; the comparison of any two flows is decided
   within what their difference reaches. The axiom enters only as a hypothesis of three
   witnesses. The readings are the AI's, pending Ren.
+* `Becoming.Testing` (L4): what registers in a formation and what it can test, with no premise
+  beyond balance on the conditions registered and the representation. A condition a formation
+  depends on and does not observe registers only whether it meets the need; an observed one
+  registers its level. A claim is refuted only through a difference in what registers, and
+  relative to a model the refutation is of the model and the claim together: without a model no
+  finite record refutes a claim about what follows it, a model of the exchange refutes a false one
+  at the first step, and a wrong model refutes what holds. A judgment from registration is a
+  common response of `Becoming.Inquiry` over the formation's belief. Where the members of a region
+  closed under being affected through what is registered respond only through their own
+  registration, nothing beyond the region registers within it; where the exchange follows a
+  formation's registration, a difference below its threshold stays as it was until the two webs'
+  support diverges, and where others respond to the stock itself a higher stock can end the
+  formation first. The response hypotheses are supplied. The readings are the AI's, narrowed by
+  the independent review, pending Ren.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-09T03:10:36+00:00",
   "claim": {
-    "zh": "在 Becoming.Renewal 的可更新条件的过程中，对每个视界 h，有两次运行在 h 之前的配置与动作都相同：焦点形成每一步都汲取两个单位（每步更新一个），而它的每个事件都在更新之内。此后一次在更新之内汲取，焦点形成在运行中是更新的；另一次继续超出，焦点形成是消耗的。因此，任何由前 h 步的配置与动作决定、并记入每次更新运行的读法，必记入某次消耗运行。分类不仅不是初始配置的函数，也不是任何有限前缀的函数。有反馈时也如此：在支持门控定律中，同一起点、h 之前每步汲取两个单位，在 h 停止则更新，继续则消耗；停止的一次从不到达支持阈值。这一结论的力量来自“记入每次更新运行”：那次更新运行在 h 之前每步都超出更新地汲取，整段读法记入这些事件；按数量的读法（该步所取不超过更新）由有限前缀决定，扣下两次运行在 h 之前的每个事件，只是不记入每次整段更新的运行。形成层面的周期读法不由任何有限前缀决定。不用伦理前提，也不用 Lean 公理。",
-    "en": "In the renewable process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that credits every renewing run credits some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. The same holds with feedback: in the support-gated law, from one start and drawing two units at every step before h, stopping at h renews and continuing consumes; the stopping schedule never reaches the support threshold. The force of the conclusion lies in “credits every renewing run”: that renewing run draws beyond renewal at every step before h, and the whole-run reading credits those events; an amount reading (taking no more than is renewed at the step) is fixed by finite prefixes and withholds every event before h in both runs, failing only to credit every whole-run-renewing run. The formation-level cycle reading is fixed by no finite prefix. No ethical premise and no Lean axiom is used."
+    "zh": "在 Becoming.Renewal 的可更新条件的过程中，对每个视界 h，有两次运行在 h 之前的配置与动作都相同：焦点形成每一步都汲取两个单位（每步更新一个），而它的每个事件都在更新之内。此后一次在更新之内汲取，焦点形成在运行中是更新的；另一次继续超出，焦点形成是消耗的。因此，任何由前 h 步的配置与动作决定、并记入每次更新运行的读法，必记入某次消耗运行。分类不仅不是初始配置的函数，也不是任何有限前缀的函数。有反馈时也如此：在支持门控定律中，同一起点、h 之前每步汲取两个单位，在 h 停止则更新，继续则消耗；停止的一次从不到达支持阈值。这一结论的力量来自“记入每次更新运行”：那次更新运行在 h 之前每步都超出更新地汲取，整段读法记入这些事件；按数量的读法（该步所取不超过更新）由有限前缀决定，扣下两次运行在 h 之前的每个事件，只是不记入每次整段更新的运行。形成层面的周期读法不由任何有限前缀决定。不用伦理前提，也不用 Lean 公理。推论（P49，Becoming.Testing）：没有由前 h 步决定的读法恰是整段的分类（Renewable.no_exact_finite_reading）；不认可任何消耗的运行的这种读法，不认可某个更新的运行（Renewable.finite_reading_withholds_renewal）。",
+    "en": "In the renewable process of Becoming.Renewal, for every horizon h there are two runs whose configurations and actions agree before h: the focal formation draws two units at every step (one is renewed each step), and each of its events is within renewal. Afterwards one run draws within renewal and the focal formation renews in it; the other keeps exceeding and the focal formation consumes. Hence any reading fixed by the configurations and actions of the first h steps that credits every renewing run credits some consuming run. The classification is a function neither of the initial configuration nor of any finite prefix. The same holds with feedback: in the support-gated law, from one start and drawing two units at every step before h, stopping at h renews and continuing consumes; the stopping schedule never reaches the support threshold. The force of the conclusion lies in “credits every renewing run”: that renewing run draws beyond renewal at every step before h, and the whole-run reading credits those events; an amount reading (taking no more than is renewed at the step) is fixed by finite prefixes and withholds every event before h in both runs, failing only to credit every whole-run-renewing run. The formation-level cycle reading is fixed by no finite prefix. No ethical premise and no Lean axiom is used. Corollaries (P49, Becoming.Testing): no reading decided by the first h steps is the whole-run classification (Renewable.no_exact_finite_reading); such a reading crediting no consuming run withholds credit from some renewing run (Renewable.finite_reading_withholds_renewal)."
   },
   "hypotheses": [
     {
@@ -38,7 +38,9 @@
     "Becoming.Renewable.whole_run_credits_overdraw",
     "Becoming.Renewable.amount_reading",
     "Becoming.Renewable.cycle_reading_not_finite",
-    "Becoming.Feedback.prefix_does_not_decide"
+    "Becoming.Feedback.prefix_does_not_decide",
+    "Becoming.Renewable.no_exact_finite_reading",
+    "Becoming.Renewable.finite_reading_withholds_renewal"
   ],
   "dependencies": [
     {
@@ -155,10 +157,19 @@
     "en": "Contains no ethical predicate; proved once in the renewable process without feedback and once in the support-gated law with feedback; does not say how to inquire into a run's continuation; does not treat webs of dependence with amounts and renewal rates."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T071749.484228Z）：Becoming.Horizon 12 项定理全部空依赖；同一回执覆盖包内 41 个模块（含只作导入的根模块与桥接），共 2171 项定理／3257 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 43 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T071749.484228Z): all 12 theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 41 modules (including the import-only root and the bridge) with 2171 theorems/3257 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 43 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T072815.712072Z）：Becoming.Horizon 12 项定理全部空依赖；同一回执覆盖包内 42 个模块（含只作导入的根模块与桥接），共 2263 项定理／3406 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 44 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。两个推论在 Becoming.Testing 中（同一回执 20261011T072815.712072Z，92 项定理全部空依赖），经第十七次独立审查（F9）记作本记录的推论。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T072815.712072Z): all 12 theorems of Becoming.Horizon have empty axiom reports; the same receipt covers the package's 42 modules (including the import-only root and the bridge) with 2263 theorems/3406 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 44 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The two corollaries are in Becoming.Testing (the same receipt 20261011T072815.712072Z, all 92 theorems with empty axiom reports), recorded as corollaries of this record following the seventeenth independent review (F9)."
   },
   "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "09ddc1df49b69cb1258c5dfafdf3647784138d465ecca329fbae65606796d81a",
+      "declarations": [
+        "Becoming.Renewable.no_exact_finite_reading",
+        "Becoming.Renewable.finite_reading_withholds_renewal"
+      ]
+    },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "role": "proof",
@@ -197,19 +208,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "49ffc22eb0dd02ea5f2eeccbf1bff9908c9c64cb64fcba4442f61c3749cc2858",
+      "sha256": "f9528cc60247e23d9586c0619b7263c3fdda63d9513bb2a8e71809bc998fcdc8",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "09ba1b0f1a9da5899e5728a862e6e9facc0aa593b82f5fdfd90eb8588cc01087",
+      "sha256": "c51a018cb7b577231b4134af837877d78b0205178d66a263a42fffa4d200052f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "939716c6c79ef6af5c95e0d50b2df38b17079086c96994465d45ca45b6035914",
+      "sha256": "32b89d6fc50e0c2fcf56a324c01697c69b7c505504cd989aa92647db71d8fa83",
       "declarations": []
     },
     {
@@ -249,6 +260,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Horizon.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Horizon",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -497,6 +515,10 @@
     {
       "zh": "2026-10-11 P48：验证范围重新指向合并检查器回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z（一步的规律：新的核心模块 Locality，57 项定理；Openness、Roles、Counting 与 Standing 的推论改经它证明，陈述不变；定理数改变的已有模块：Standing；包与核心闭包各多一个模块）。断言不变。",
       "en": "2026-10-11 P48: validation scope re-pointed to consolidated receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z (the laws of one step: a new core module, Locality, with 57 theorems; corollaries in Openness, Roles, Counting and Standing re-proved through it, statements unchanged; existing modules whose theorem count changed: Standing; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P49：加入两个推论 Renewable.no_exact_finite_reading 与 finite_reading_withholds_renewal（Becoming.Testing），按第十七次独立审查 F9 记作本记录的推论，不是另一项成果；原有断言与证明不变；见整合文档 §70。",
+      "en": "2026-10-11 P49: added the two corollaries Renewable.no_exact_finite_reading and finite_reading_withholds_renewal (Becoming.Testing), recorded as corollaries of this record and not as another result, following the seventeenth independent review F9; the original claim and proofs are unchanged; see §70 of the integration note."
     }
   ]
 }

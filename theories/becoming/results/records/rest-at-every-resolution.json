@@ -236,8 +236,8 @@
     "en": "Discrete steps; amounts are rationals by refinement, the unit never coarsening, with neither real amounts nor continuous time; the amount law's bound is the least (amount_sharp), while whether the counting bounds are attained is not proved in the core (the fifteenth independent review's probe Tight.attained attains the exchange bound at p = q = S = 1, not moved into the core); the exchange law is stated for a fixed family closed from T on, not read of worlds with changing enclosures; loss in proportion and the least fall of the reserve are premises Ren did not take for the theory, kept as research notes; a premise weaker than the family's proportion that still gives the growth law is given by the review's probes (ReplenishedLoses), not moved into the core; the conduits of Trickle are not active; Asymptote, Circulation and Dwindle have one relatum, Alternation two, and Emission adds one at every step; each witness shows the premise it lacks is needed given the others, not that all premises are mutually independent, and none describes an actual system; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; no ethical predicate; readings are the AI's, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T071749.484228Z）：Becoming.Resolution 的 261 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 41 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261011T071753.574921Z 通过。R1、R1b 与 R2 经第十五次独立审查（BECOMING-R1-R2-REVIEW.md），其发现在整合文档 §59.4 处理；R3 与 §59.4 的更正尚无独立审查；作者反审见整合文档 §59 至 §59.4。Becoming.Locality 的 57 项定理亦空依赖（P48）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T071749.484228Z): the 261 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 41 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T071753.574921Z passed. R1, R1b and R2 were checked by the fifteenth independent review (BECOMING-R1-R2-REVIEW.md), its findings handled in section 59.4 of the integration note; R3 and the corrections of section 59.4 are not yet independently reviewed; the author's counterreview is in sections 59 to 59.4. The 57 theorems of Becoming.Locality (P48) also have empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T072815.712072Z）：Becoming.Resolution 的 261 项声明全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 42 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261011T072918.589912Z 通过。R1、R1b 与 R2 经第十五次独立审查（BECOMING-R1-R2-REVIEW.md），其发现在整合文档 §59.4 处理；R3 与 §59.4 的更正尚无独立审查；作者反审见整合文档 §59 至 §59.4。Becoming.Locality 的 57 项定理亦空依赖（P48）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T072815.712072Z): the 261 declarations of Becoming.Resolution all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 42 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T072918.589912Z passed. R1, R1b and R2 were checked by the fifteenth independent review (BECOMING-R1-R2-REVIEW.md), its findings handled in section 59.4 of the integration note; R3 and the corrections of section 59.4 are not yet independently reviewed; the author's counterreview is in sections 59 to 59.4. The 57 theorems of Becoming.Locality (P48) also have empty axiom reports."
   },
   "references": [
     {
@@ -595,25 +595,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "49ffc22eb0dd02ea5f2eeccbf1bff9908c9c64cb64fcba4442f61c3749cc2858",
+      "sha256": "f9528cc60247e23d9586c0619b7263c3fdda63d9513bb2a8e71809bc998fcdc8",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "09ba1b0f1a9da5899e5728a862e6e9facc0aa593b82f5fdfd90eb8588cc01087",
+      "sha256": "c51a018cb7b577231b4134af837877d78b0205178d66a263a42fffa4d200052f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "939716c6c79ef6af5c95e0d50b2df38b17079086c96994465d45ca45b6035914",
+      "sha256": "32b89d6fc50e0c2fcf56a324c01697c69b7c505504cd989aa92647db71d8fa83",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7bd99084e34b92e37f100a8b71b4857575bb2df8e611ce1754026f59c410f10f",
+      "sha256": "4df9fb837e4eb04d932da42a7432a5516ce00b7da172684af829ce754a433f36",
       "declarations": []
     },
     {

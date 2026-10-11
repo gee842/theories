@@ -87,8 +87,8 @@
     "en": "Discrete steps; ‘finitely many configurations’ means that a list holds them, not a cardinality; the equivalence of losing nothing, returning and keeping every possibility is for determined laws, and no form for processes that are not determined is stated; ‘the present forgets’ means that two different histories share one present, and no count of what is forgotten (which needs equality of configurations decided) is stated; ‘change does not recur’ is a negated recurrence, not a step after which nothing changes; the mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is reused; the readings as entropy, as karmic passing and as physics are the AI's; instance theorems for the entropy session's results are not given; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T071749.484228Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 41 个模块，核心闭包 42 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261011T071753.574921Z 通过。尚无独立审查；作者反审见整合文档 §68。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T071749.484228Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 40 modules of the package and a core closure of 42 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T071753.574921Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T072815.712072Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 42 个模块，核心闭包 42 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261011T072918.589912Z 通过。尚无独立审查；作者反审见整合文档 §68。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T072815.712072Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 40 modules of the package and a core closure of 42 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T072918.589912Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
   },
   "references": [
     {
@@ -179,25 +179,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "49ffc22eb0dd02ea5f2eeccbf1bff9908c9c64cb64fcba4442f61c3749cc2858",
+      "sha256": "f9528cc60247e23d9586c0619b7263c3fdda63d9513bb2a8e71809bc998fcdc8",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "09ba1b0f1a9da5899e5728a862e6e9facc0aa593b82f5fdfd90eb8588cc01087",
+      "sha256": "c51a018cb7b577231b4134af837877d78b0205178d66a263a42fffa4d200052f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "939716c6c79ef6af5c95e0d50b2df38b17079086c96994465d45ca45b6035914",
+      "sha256": "32b89d6fc50e0c2fcf56a324c01697c69b7c505504cd989aa92647db71d8fa83",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "7bd99084e34b92e37f100a8b71b4857575bb2df8e611ce1754026f59c410f10f",
+      "sha256": "4df9fb837e4eb04d932da42a7432a5516ce00b7da172684af829ce754a433f36",
       "declarations": []
     },
     {

@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-147 migrated records: 143 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+149 migrated records: 145 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -148,8 +148,10 @@
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
 | `space-and-its-parts` | [整体与其部分：不加前提的规律对每个世界成立，前提划出部分；活动可判定的有限世界中生起复现恰当止息复现，活跨越生起与止息，耗散使有限世界归于静止 / The whole and its parts: the laws with no premise hold of every world and premises carve parts; in a finite world whose activity is decided arising recurs exactly when ceasing does, living crosses arising and ceasing, and dissipation brings a finite world to rest](records/space-and-its-parts.md) | theorem | recorded-checked |
 | `substitution-preserves-consumption` | [替代在整段读法下保持消耗：能替代条件的消耗者以转化依存的方式持续，整段仍是消耗的 / Substitution preserves consumption on the whole-run reading: a consumer that can substitute a condition persists by transforming its dependence and still consumes over the run](records/substitution-preserves-consumption.md) | theorem | recorded-checked |
+| `subthreshold-registration` | [阈下的差别：交换随反映时，形成依存而不观察的储量上的差别保持到两网的支持分岔；观察储量解除它，他者回应储量本身时则不然 / Differences below the threshold: where the exchange follows registration, a difference in a stock a formation depends on and does not observe stays until the two webs' support diverges; observing the stock lifts it, and others responding to the stock itself break it](records/subthreshold-registration.md) | theorem | recorded-checked |
 | `support-from-the-supported` | [支持只从被支持者获得：越过阈值需要所需条件的升降或要求的改变；在平衡、只有活跃者给予、活动需要支持之下，每次上升由被支持者给予；没有来自外部的给予时，终结是吸收态 / Support is gained only from the supported: crossing a threshold needs a required condition to rise or fall, or a requirement to change; under balance, only active formations giving and activity needing support, every rise is given by a supported formation; with nothing given from beyond, the end absorbs](records/support-from-the-supported.md) | theorem | recorded-checked |
 | `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
+| `testing-within-registration` | [检验在反映之内：主张只经反映的差别被否证，相对于模型的否证是对模型与主张一起的否证；成员只经自己的反映回应时，反映闭包之外的在其中不被反映；检验是关系的 / Testing lies within registration: a claim is refuted only through a difference in what registers, and refutation relative to a model is refutation of the model and the claim together; where the members respond only through their own registration, nothing beyond the registration closure registers within it; testing is relational](records/testing-within-registration.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |
 | `trace-law-equivalence` | [逐步规律与端点历史等价 / Step laws and endpoint traces](records/trace-law-equivalence.md) | theorem | recorded-checked |
 | `transition-grouping-word-partition` | [转移分节恢复编码词序列 / Transition grouping recovers encoded word sequences](records/transition-grouping-word-partition.md) | theorem | recorded-checked |
