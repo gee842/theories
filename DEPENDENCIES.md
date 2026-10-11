@@ -618,6 +618,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## closing-needs-net-draw ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与条件上假定平衡，即 laws-of-one-step 的 Flow.BalancesOn（单元素家族）；全局平衡经 Flow.Balances.on 给出它，所以原定理是推论。 / The local laws assume balance only at the steps and conditions they use, Flow.BalancesOn of laws-of-one-step (singleton families); global balance gives it through Flow.Balances.on, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）；全局平衡蕴含它（Flow.Balances.on）。 / Balance on a finite family across one step (Flow.BalancesOn); global balance implies it (Flow.Balances.on).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用条件假定它。 / This record's local laws assume it at the conditions and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## closure-verdict-meets-axiom ← one-axiom-yields-g0
 
 `formal-reuse` — 复用公理 Unrestricted 与以区域为界的意义 bounded。 / Reuses the axiom Unrestricted and significance bounded by regions, bounded.
@@ -941,6 +953,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 读法待 Ren。 / The reading pending Ren.
 
 [Connection evidence / 连接证据](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md)
+
+## consumption-ends-with-feeders ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与条件上假定平衡，即 laws-of-one-step 的 Flow.BalancesOn（单元素家族）；全局平衡经 Flow.Balances.on 给出它，所以原定理是推论。 / The local laws assume balance only at the steps and conditions they use, Flow.BalancesOn of laws-of-one-step (singleton families); global balance gives it through Flow.Balances.on, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）；全局平衡蕴含它（Flow.Balances.on）。 / Balance on a finite family across one step (Flow.BalancesOn); global balance implies it (Flow.Balances.on).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用条件假定它。 / This record's local laws assume it at the conditions and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
 ## context-sensitive-updating-correspondence ← situated-recovery-empirical-correspondence
 
@@ -2398,6 +2422,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 外围在一类磨损定律中已有联合超出终止共享形成；本结果在脊柱的支持门控网中陈述同一现象，没有实例定理。 / The periphery has joint excess ending a shared formation in one wear-law class; this result states the same phenomenon in the spine's support-gated web, with no instance theorem.
 
+## own-count-misses-joint-excess ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与条件上假定平衡，即 laws-of-one-step 的 Flow.BalancesOn（单元素家族）；全局平衡经 Flow.Balances.on 给出它，所以原定理是推论。 / The local laws assume balance only at the steps and conditions they use, Flow.BalancesOn of laws-of-one-step (singleton families); global balance gives it through Flow.Balances.on, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）；全局平衡蕴含它（Flow.Balances.on）。 / Balance on a finite family across one step (Flow.BalancesOn); global balance implies it (Flow.Balances.on).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用条件假定它。 / This record's local laws assume it at the conditions and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## pending-task-context-applicability ← acquired-revision-of-pending-task
 
 `formal-reuse` — revised_delivery_enters_review 直接消费 revised_head_completes 的实际送达值与尾队列；continueReviewed 消费 paidRetarget 的实际状态和开支。 / revised_delivery_enters_review directly consumes revised_head_completes’s delivered value and queue tail; continueReviewed consumes paidRetarget’s actual state and expenditure.
@@ -3149,6 +3185,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 平衡、Acting；另加 Dependent。 / Balance and Acting, with Dependent added.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## support-from-the-supported ← laws-of-one-step
+
+`formal-reuse` — 局部规律只在所用的步与条件上假定平衡，即 laws-of-one-step 的 Flow.BalancesOn（单元素家族）；全局平衡经 Flow.Balances.on 给出它，所以原定理是推论。 / The local laws assume balance only at the steps and conditions they use, Flow.BalancesOn of laws-of-one-step (singleton families); global balance gives it through Flow.Balances.on, so the original theorems are corollaries.
+
+**Producer output / 上游输出:** 跨一步对一个有限家族的平衡（Flow.BalancesOn）；全局平衡蕴含它（Flow.Balances.on）。 / Balance on a finite family across one step (Flow.BalancesOn); global balance implies it (Flow.Balances.on).
+
+**Consumer input / 下游输入:** 本记录的局部规律在所用各步对所用条件假定它。 / This record's local laws assume it at the conditions and steps they use.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
 ## supported-renewal-recovery ← relational-renewal-classification
 

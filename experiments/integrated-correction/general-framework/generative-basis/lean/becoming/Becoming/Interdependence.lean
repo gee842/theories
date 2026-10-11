@@ -153,6 +153,31 @@ theorem beyond_gives_nothing {f g h : F} (within : L.WithinFeeding W f g)
 
 /-! ## Consumption without a feeder ends -/
 
+/-- Unfed consumption ends, over the steps it is used at: with balance at `c` across each of
+`n` steps from `T`, whatever gives to `c` there supported, `g` taking from `c` at each step
+from `T` at which it is active and nothing supported giving to `c` while `g` is active, `g`
+is active for `n` consecutive steps from `T` only where `n` is at most the level of `c` at
+`T`. -/
+theorem unfed_consumption_ends_at {c : C} {g : F} {T : Nat}
+    (unfed : ∀ t f, T ≤ t → W.active t g → f ∈ L.present t → W.Supported t f →
+      L.give t f c = 0)
+    (consumes : ∀ t, T ≤ t → W.active t g → g ∈ L.present t ∧ 0 < L.take t g c) :
+    ∀ n, (∀ k, k < n → L.BalancesOn W [c] (T + k)) →
+      (∀ k, k < n → L.GiversSupported W (T + k) c) →
+      (∀ k, k < n → W.active (T + k) g) → n ≤ W.level T c :=
+  fun n balances givers active =>
+    Nat.le_trans (Nat.le_add_left n (W.level (T + n) c))
+      (excess_bounded_at (c := c) (T := T) n balances fun k below =>
+        have later : T ≤ T + k := Nat.le_add_right T k
+        have live : W.active (T + k) g := active k below
+        have none : L.given (T + k) c = 0 := total_eq_zero fun f present =>
+          eq_zero_of_not_pos fun gives =>
+            Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives (Nat.le_of_eq
+              (unfed (T + k) f later live present (givers k below f present gives))))
+        have consuming := consumes (T + k) later live
+        Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq none) consuming.2)
+          (le_total_of_mem (q := fun f => L.take (T + k) f c) consuming.1))
+
 /-- Unfed consumption ends. Under balance, with only active formations giving and activity
 needing support, let `g` take from `c` at every step from `T` at which it is active, while
 nothing supported gives to `c`. Then `g` is active for at most as many consecutive steps from
@@ -163,19 +188,8 @@ theorem Balances.unfed_consumption_ends (balances : L.Balances W) (acting : L.Ac
       L.give t f c = 0)
     (consumes : ∀ t, T ≤ t → W.active t g → g ∈ L.present t ∧ 0 < L.take t g c) :
     ∀ n, (∀ k, k < n → W.active (T + k) g) → n ≤ W.level T c :=
-  fun n active =>
-    Nat.le_trans (Nat.le_add_left n (W.level (T + n) c))
-      (excess_bounded (c := c) (T := T) balances n fun k below =>
-        have later : T ≤ T + k := Nat.le_add_right T k
-        have live : W.active (T + k) g := active k below
-        have none : L.given (T + k) c = 0 := total_eq_zero fun f present =>
-          eq_zero_of_not_pos fun gives =>
-            Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives (Nat.le_of_eq
-              (unfed (T + k) f later live present
-                (dependent (T + k) f (acting (T + k) f c present gives)))))
-        have consuming := consumes (T + k) later live
-        Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt (Nat.le_of_eq none) consuming.2)
-          (le_total_of_mem (q := fun f => L.take (T + k) f c) consuming.1))
+  fun n => unfed_consumption_ends_at unfed consumes n (fun k _ => balances.on [c] (T + k))
+    fun k _ => acting.giversSupported dependent (T + k) c
 
 /-- So unfed consumption does not continue: `g` is not active at every step from `T`. -/
 theorem Balances.unfed_consumption_stops (balances : L.Balances W) (acting : L.Acting W)
@@ -197,6 +211,18 @@ theorem unfed_of_feeders_unsupported {c : C} {g : F} {T : Nat}
       L.give t f c = 0 :=
   fun t f later live present supported => eq_zero_of_not_pos fun gives =>
     unsupported t f later ⟨rfl, c, requires t later live, present, gives⟩ supported
+
+/-- Consumption ends with its feeders, over the steps it is used at: as
+`unfed_consumption_ends_at`, with everything feeding `g`'s continuation from `T` on
+unsupported in place of nothing supported giving to `c`. -/
+theorem consumption_ends_with_feeders_at {c : C} {g : F} {T : Nat}
+    (requires : ∀ t, T ≤ t → W.active t g → W.requires t g c)
+    (unsupported : ∀ t f, T ≤ t → L.FedBy W (g, t) (f, t) → ¬ W.Supported t f)
+    (consumes : ∀ t, T ≤ t → W.active t g → g ∈ L.present t ∧ 0 < L.take t g c) :
+    ∀ n, (∀ k, k < n → L.BalancesOn W [c] (T + k)) →
+      (∀ k, k < n → L.GiversSupported W (T + k) c) →
+      (∀ k, k < n → W.active (T + k) g) → n ≤ W.level T c :=
+  unfed_consumption_ends_at (unfed_of_feeders_unsupported requires unsupported) consumes
 
 /-- Consumption ends with its feeders. Under balance, with only active formations giving and
 activity needing support, let `g` require and take `c` at every step from `T` at which it is

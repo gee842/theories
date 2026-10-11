@@ -162,20 +162,59 @@ theorem DescendsAt.active (acting : L.Acting W) {t : Nat} {x g : X}
     (descends : L.DescendsAt W t x g) : W.active t g :=
   acting t g x descends.1 descends.2.1
 
+/-- A parent giving at descent only while active, and active only while supported, is
+supported at that step: its activity and support at that one step are all that is used. -/
+theorem DescendsAt.supported_at {t : Nat} {x g : X}
+    (acting : g ∈ L.present t → 0 < L.give t g x → W.active t g)
+    (dependent : W.active t g → W.Supported t g) (descends : L.DescendsAt W t x g) :
+    W.Supported t g :=
+  dependent (acting descends.1 descends.2.1)
+
 /-- Where activity also needs support, it is supported at that step. -/
 theorem DescendsAt.supported (acting : L.Acting W) (dependent : W.Dependent) {t : Nat}
     {x g : X} (descends : L.DescendsAt W t x g) : W.Supported t g :=
-  dependent t g (descends.active acting)
+  descends.supported_at (acting t g x) (dependent t g)
+
+/-- Selection at one step: a formation unsupported there, giving to `x` only while active
+and active only while supported, leaves no descendant `x` across it. -/
+theorem unsupported_childless_at {t : Nat} {g : X} (unsupported : ¬ W.Supported t g) {x : X}
+    (acting : g ∈ L.present t → 0 < L.give t g x → W.active t g)
+    (dependent : W.active t g → W.Supported t g) : ¬ L.DescendsAt W t x g :=
+  fun descends => unsupported (descends.supported_at acting dependent)
 
 /-- Selection: a formation unsupported at a step leaves no descendant across it. -/
 theorem unsupported_childless (acting : L.Acting W) (dependent : W.Dependent) {t : Nat}
     {g : X} (unsupported : ¬ W.Supported t g) (x : X) : ¬ L.DescendsAt W t x g :=
-  fun descends => unsupported (descends.supported acting dependent)
+  unsupported_childless_at unsupported (acting t g x) (dependent t g)
 
 /-- A formation never supported leaves no descendant. -/
 theorem never_supported_childless (acting : L.Acting W) (dependent : W.Dependent) {g : X}
     (never : ∀ t, ¬ W.Supported t g) (x : X) : ¬ L.Descends W x g :=
   fun ⟨t, descends⟩ => never t (descends.supported acting dependent)
+
+/-- The weighted needs of the parents, at the step of descent, with each parent giving to
+its offspring only while active and active only while supported. -/
+theorem selected_le_at {t : Nat} {c : X} {ps : List X} {kids : X → List X}
+    (descend : ∀ p k, p ∈ ps → k ∈ kids p → L.DescendsAt W t k p)
+    (depends : ∀ p, p ∈ ps → W.requires t p c)
+    (acting : ∀ p k, p ∈ ps → k ∈ kids p → 0 < L.give t p k → W.active t p)
+    (dependent : ∀ p, p ∈ ps → W.active t p → W.Supported t p) :
+    selected ps kids (fun p => W.need t p c) ≤ selected ps kids (fun _ => W.level t c) :=
+  total_le ps fun p mem => length_mul_le fun k kid =>
+    (descend p k mem kid).supported_at (fun _ gives => acting p k mem kid gives)
+      (dependent p mem) c (depends p mem)
+
+/-- So the offspring's total of any amount, at the step of descent, with each parent giving
+to its offspring only while active and active only while supported. -/
+theorem selection_within_at {t : Nat} {c : X} {ps : List X} {kids : X → List X}
+    (descend : ∀ p k, p ∈ ps → k ∈ kids p → L.DescendsAt W t k p)
+    (depends : ∀ p, p ∈ ps → W.requires t p c)
+    (acting : ∀ p k, p ∈ ps → k ∈ kids p → 0 < L.give t p k → W.active t p)
+    (dependent : ∀ p, p ∈ ps → W.active t p → W.Supported t p) (b : X → Nat) :
+    offspring ps kids b + lowered ps kids (fun p => W.need t p c) b ≤
+      selected ps kids (fun _ => W.level t c) + raised ps kids (fun p => W.need t p c) b :=
+  Nat.le_trans (Nat.le_of_eq (price ps kids _ b))
+    (Nat.add_le_add_right (selected_le_at descend depends acting dependent) _)
 
 /-- Read of needs on a condition every parent depends on, the parents' needs weighted by
 their offspring are at most the condition's level counted once for every offspring. This
@@ -185,8 +224,8 @@ theorem selected_le (acting : L.Acting W) (dependent : W.Dependent) {t : Nat} {c
     (descend : ∀ p k, p ∈ ps → k ∈ kids p → L.DescendsAt W t k p)
     (depends : ∀ p, p ∈ ps → W.requires t p c) :
     selected ps kids (fun p => W.need t p c) ≤ selected ps kids (fun _ => W.level t c) :=
-  total_le ps fun p mem => length_mul_le fun k kid =>
-    (descend p k mem kid).supported acting dependent c (depends p mem)
+  selected_le_at descend depends
+    (fun p k mem kid gives => acting t p k (descend p k mem kid).1 gives) fun p _ => dependent t p
 
 /-- So the offspring's total of any amount, with what transmission lowered from the
 parents' needs, is at most the level counted once for every offspring, with what
@@ -209,15 +248,43 @@ def TransmitsWithin (L : Flow X X) (W : Web X X) (c : X) (δ : Nat) : Prop :=
   ∀ t x g, L.DescendsAt W t x g → W.requires (t + 1) x c →
     W.requires t g c ∧ W.need (t + 1) x c ≤ W.need t g c + δ
 
+/-- What is transmitted was selected, at the one descent: with the descendant's dependence
+inherited within `δ` there and the parent supported, the descendant's need is at most the
+condition's level at the step it was given, plus `δ`. -/
+theorem transmitted_supported_at {c : X} {δ : Nat} {t : Nat} {x g : X}
+    (transmits : W.requires (t + 1) x c →
+      W.requires t g c ∧ W.need (t + 1) x c ≤ W.need t g c + δ)
+    (supported : W.Supported t g) (depends : W.requires (t + 1) x c) :
+    W.need (t + 1) x c ≤ W.level t c + δ :=
+  match transmits depends with
+  | ⟨inherited, within⟩ => Nat.le_trans within
+      (Nat.add_le_add_right (supported c inherited) δ)
+
+/-- Activity sets later selection, at the steps it is used at: with balance at the
+condition across each step of the stretch, the descendant's need with everything taken from
+the condition since is at most its level at the start with everything given since, plus `δ`. -/
+theorem transmitted_within_at {c : X} {δ : Nat} {S n : Nat} {x g : X}
+    (balances : ∀ s, S ≤ s → s < S + n →
+      W.level (s + 1) c + L.taken s c = W.level s c + L.given s c)
+    (transmits : W.requires (S + n + 1) x c →
+      W.requires (S + n) g c ∧ W.need (S + n + 1) x c ≤ W.need (S + n) g c + δ)
+    (supported : W.Supported (S + n) g) (depends : W.requires (S + n + 1) x c) :
+    W.need (S + n + 1) x c + total (steps S n) (fun s => L.taken s c) ≤
+      W.level S c + total (steps S n) (fun s => L.given s c) + δ :=
+  Nat.le_trans
+    (Nat.add_le_add_right (transmitted_supported_at transmits supported depends) _)
+    (Nat.le_of_eq ((Nat.add_right_comm _ δ _).trans
+      (congrArg (· + δ) (balance_over_stretch_on (q := fun s => W.level s c)
+        (x := fun s => L.taken s c) (y := fun s => L.given s c) S n balances))))
+
 /-- What is transmitted was selected: a descendant's need is at most the condition's level
 at the step it was given, plus what transmission allows. -/
 theorem transmitted_supported (acting : L.Acting W) (dependent : W.Dependent) {c : X}
     {δ : Nat} (transmits : L.TransmitsWithin W c δ) {t : Nat} {x g : X}
     (descends : L.DescendsAt W t x g) (depends : W.requires (t + 1) x c) :
     W.need (t + 1) x c ≤ W.level t c + δ :=
-  match transmits t x g descends depends with
-  | ⟨inherited, within⟩ => Nat.le_trans within
-      (Nat.add_le_add_right (descends.supported acting dependent c inherited) δ)
+  transmitted_supported_at (transmits t x g descends) (descends.supported acting dependent)
+    depends
 
 /-- Activity sets later selection: in a balanced flow, a descendant's need with everything
 taken from its condition since an earlier step is at most the condition's level then, with
@@ -228,10 +295,8 @@ theorem transmitted_within (balances : L.Balances W) (acting : L.Acting W)
     (depends : W.requires (S + n + 1) x c) :
     W.need (S + n + 1) x c + total (steps S n) (L.uptake [c]) ≤
       W.level S c + total (steps S n) (L.replenishment [c]) + δ :=
-  Nat.le_trans
-    (Nat.add_le_add_right (transmitted_supported acting dependent transmits descends depends) _)
-    (Nat.le_of_eq ((Nat.add_right_comm _ δ _).trans
-      (congrArg (· + δ) (balances.accumulates [c] S n))))
+  transmitted_within_at (fun s _ _ => balances s c) (transmits (S + n) x g descends)
+    (descends.supported acting dependent) depends
 
 end Flow
 

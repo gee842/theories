@@ -16,15 +16,15 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-11T07:31:19.436079+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-11T09:04:13.223773+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
 | Mapped chats / 已映射会话 | 44 |
 | Result families / 成果族 | 14 |
-| Working Lean sources / 工作源码 | 596 |
+| Working Lean sources / 工作源码 | 597 |
 | Audit drivers / 审计入口 | 14 |
-| Saved verification or build copies / 检查及构建副本 | 16856 |
+| Saved verification or build copies / 检查及构建副本 | 17418 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
 
 No semantic duplicate percentage is asserted. Header matches are review candidates, not proofs of equivalence. New-result denotes a repository contribution, not a literature novelty claim. The result classes may overlap; their counts must not be summed as discoveries.
@@ -162,7 +162,7 @@ Faithful descriptions, measured timing, changing dependence and tracking connect
 
 **Scope still separate / 保留范围:** Reliable readings, relevance of newly formed relations and justified response limits are not supplied by convergence alone.
 
-**Migrated records / 已迁移条目:** [context-sensitive-updating-correspondence](records/context-sensitive-updating-correspondence.md) · [situated-recovery-empirical-correspondence](records/situated-recovery-empirical-correspondence.md)
+**Migrated records / 已迁移条目:** [context-sensitive-updating-correspondence](records/context-sensitive-updating-correspondence.md) · [situated-recovery-empirical-correspondence](records/situated-recovery-empirical-correspondence.md) · [subthreshold-registration](records/subthreshold-registration.md) · [testing-within-registration](records/testing-within-registration.md)
 
 <a id="f05"></a>
 

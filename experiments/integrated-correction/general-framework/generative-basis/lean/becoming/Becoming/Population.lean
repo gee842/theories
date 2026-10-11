@@ -340,19 +340,8 @@ theorem total_le_mark {P : Prop} [Decidable P] {q : α → Prop} [∀ a, Decidab
 over any stretch: at the end with everything lost, it is the count at the start with
 everything gained. -/
 theorem balance_over_stretch {q x y : Nat → Nat} (across : ∀ t, q (t + 1) + x t = q t + y t)
-    (S : Nat) : ∀ n, q (S + n) + total (steps S n) x = q S + total (steps S n) y
-  | 0 => rfl
-  | n + 1 => calc
-      q (S + (n + 1)) + (x S + total (steps (S + 1) n) x)
-          = x S + (q (S + 1 + n) + total (steps (S + 1) n) x) :=
-        (congrArg (· + _) (congrArg q (Nat.add_right_comm S 1 n).symm)).trans
-          (Nat.add_left_comm _ _ _)
-      _ = x S + (q (S + 1) + total (steps (S + 1) n) y) :=
-        congrArg (x S + ·) (balance_over_stretch across (S + 1) n)
-      _ = (q (S + 1) + x S) + total (steps (S + 1) n) y :=
-        (Nat.add_left_comm _ _ _).trans (Nat.add_assoc _ _ _).symm
-      _ = (q S + y S) + total (steps (S + 1) n) y := congrArg (· + _) (across S)
-      _ = q S + (y S + total (steps (S + 1) n) y) := Nat.add_assoc _ _ _
+    (S : Nat) : ∀ n, q (S + n) + total (steps S n) x = q S + total (steps S n) y :=
+  fun n => balance_over_stretch_on S n fun t _ _ => across t
 
 /-- A count that, at each step, ends with what it loses at most where it started with what
 it gains does so over any stretch. -/
@@ -412,6 +401,41 @@ theorem losing_of_gaining {q x y : Nat → Nat} (across : ∀ t, q t + y t ≤ q
           (Nat.le_add_right _ n))) _))) with
     | ⟨t, mem, lost⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) (steps_mem mem), lost⟩
 
+/-- A recurrence read from a step `T` on: what recurs recurs at `T + m` for arbitrarily large
+`m`. -/
+theorem recurs_shift {r : Nat → Prop} (T : Nat) (recurs : ∀ N, ∃ t, N ≤ t ∧ r t) :
+    ∀ N, ∃ m, N ≤ m ∧ r (T + m) :=
+  fun N => match recurs (N + T) with
+  | ⟨_, later, holds⟩ => match le_dest (Nat.le_trans (Nat.le_add_left T N) later) with
+    | ⟨m, same⟩ => ⟨m, le_of_add_le_add_right T
+        (Nat.le_trans later (Nat.le_of_eq (same.trans (Nat.add_comm T m)))), same ▸ holds⟩
+
+/-- And back: what holds at `T + m` for arbitrarily large `m` recurs. -/
+theorem recurs_unshift {r : Nat → Prop} (T : Nat) (recurs : ∀ N, ∃ m, N ≤ m ∧ r (T + m)) :
+    ∀ N, ∃ t, N ≤ t ∧ r t :=
+  fun N => match recurs N with
+  | ⟨m, later, holds⟩ => ⟨T + m, Nat.le_trans later (Nat.le_add_left m T), holds⟩
+
+/-- Losses at arbitrarily late steps need gains at arbitrarily late steps, where the count at
+each step from `T` on ends with what it loses at most where it starts with what it gains:
+nothing is asked of the steps before `T`. -/
+theorem gaining_of_losing_from {q x y : Nat → Nat} {T : Nat}
+    (across : ∀ t, T ≤ t → q (t + 1) + x t ≤ q t + y t)
+    (losing : ∀ N, ∃ t, N ≤ t ∧ 0 < x t) : ∀ N, ∃ t, N ≤ t ∧ 0 < y t :=
+  recurs_unshift T (gaining_of_losing (q := fun m => q (T + m)) (x := fun m => x (T + m))
+    (y := fun m => y (T + m)) (fun m => across (T + m) (Nat.le_add_right T m))
+    (recurs_shift T losing))
+
+/-- Gains at arbitrarily late steps need losses at arbitrarily late steps, where from `T` on
+the count is at most `B` and at each step starts with what it gains at most where it ends
+with what it loses. -/
+theorem losing_of_gaining_from {q x y : Nat → Nat} {T B : Nat}
+    (across : ∀ t, T ≤ t → q t + y t ≤ q (t + 1) + x t) (bounded : ∀ t, T ≤ t → q t ≤ B)
+    (gaining : ∀ N, ∃ t, N ≤ t ∧ 0 < y t) : ∀ N, ∃ t, N ≤ t ∧ 0 < x t :=
+  recurs_unshift T (losing_of_gaining (q := fun m => q (T + m)) (x := fun m => x (T + m))
+    (y := fun m => y (T + m)) (T := 0) (B := B) (fun m => across (T + m) (Nat.le_add_right T m))
+    (fun m _ => bounded (T + m) (Nat.le_add_right T m)) (recurs_shift T gaining))
+
 /-! ## Listing what holds -/
 
 /-- The members of which a determination holds at each step are listed, each once:
@@ -423,49 +447,74 @@ namespace Listed
 
 variable {p : α → Nat → Prop} [∀ a t, Decidable (p a t)] {l : Nat → List α}
 
-/-- Across a step, some members are kept: with the members that ceased to be they are the
-list before the step, with the members that came to be the list after it. -/
-theorem keeps (listed : Listed p l) (t : Nat) :
+/-- Across a step, some members are kept, where what holds is listed, each once, at the
+step's two ends: only those two listings are used. -/
+theorem keeps_at {t : Nat} (now : Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t)
+    (next : Distinct (l (t + 1)) ∧ ∀ a, p a (t + 1) ↔ a ∈ l (t + 1)) :
     ∃ k, (l t).length = k + ceasings (l t) p t ∧
       (l (t + 1)).length = k + comings (l (t + 1)) p t :=
   have before : (l t).length = total (l t) (fun a => mark (p a (t + 1))) + ceasings (l t) p t :=
     (total_ones (l t)).symm.trans ((total_congr_on fun a mem =>
-      have held : p a t := ((listed t).2 a).mpr mem
+      have held : p a t := (now.2 a).mpr mem
       Eq.symm (mark_add_not (q := p a (t + 1)) (r := CeasesToBe (p a) t)
         (if h : p a (t + 1) then .inl h else .inr ⟨held, h⟩)
         fun both => both.2.2 both.1)).trans (total_add _ _ (l t)))
   have after : (l (t + 1)).length =
       total (l (t + 1)) (fun a => mark (p a t)) + comings (l (t + 1)) p t :=
     (total_ones (l (t + 1))).symm.trans ((total_congr_on fun a mem =>
-      have held : p a (t + 1) := ((listed (t + 1)).2 a).mpr mem
+      have held : p a (t + 1) := (next.2 a).mpr mem
       Eq.symm (mark_add_not (q := p a t) (r := ComesToBe (p a) t)
         (if h : p a t then .inl h else .inr ⟨h, held⟩)
         fun both => both.2.1 both.1)).trans (total_add _ _ (l (t + 1))))
   have kept : total (l t) (fun a => mark (p a (t + 1))) =
       total (l (t + 1)) (fun a => mark (p a t)) :=
     Nat.le_antisymm
-      (marks_le_of_sub (q := fun a => p a (t + 1)) (r := fun a => p a t) (listed t).1
-        (listed (t + 1)).1 fun a mem h => ⟨((listed (t + 1)).2 a).mp h, ((listed t).2 a).mpr mem⟩)
-      (marks_le_of_sub (q := fun a => p a t) (r := fun a => p a (t + 1)) (listed (t + 1)).1
-        (listed t).1 fun a mem h => ⟨((listed t).2 a).mp h, ((listed (t + 1)).2 a).mpr mem⟩)
+      (marks_le_of_sub (q := fun a => p a (t + 1)) (r := fun a => p a t) now.1
+        next.1 fun a mem h => ⟨(next.2 a).mp h, (now.2 a).mpr mem⟩)
+      (marks_le_of_sub (q := fun a => p a t) (r := fun a => p a (t + 1)) next.1
+        now.1 fun a mem h => ⟨(now.2 a).mp h, (next.2 a).mpr mem⟩)
   ⟨_, before, after.trans (congrArg (· + _) kept.symm)⟩
 
-/-- The census balance across a step: the list after it with the members that ceased to be
-is the list before it with the members that came to be. The members kept across the step
-are counted alike on both lists. -/
-theorem across (listed : Listed p l) (t : Nat) :
+/-- Across a step, some members are kept: with the members that ceased to be they are the
+list before the step, with the members that came to be the list after it. -/
+theorem keeps (listed : Listed p l) (t : Nat) :
+    ∃ k, (l t).length = k + ceasings (l t) p t ∧
+      (l (t + 1)).length = k + comings (l (t + 1)) p t :=
+  keeps_at (listed t) (listed (t + 1))
+
+/-- The census balance across a step, where what holds is listed at its two ends: the list
+after it with the members that ceased to be is the list before it with the members that came
+to be. The members kept across the step are counted alike on both lists. -/
+theorem across_at {t : Nat} (now : Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t)
+    (next : Distinct (l (t + 1)) ∧ ∀ a, p a (t + 1) ↔ a ∈ l (t + 1)) :
     (l (t + 1)).length + ceasings (l t) p t = (l t).length + comings (l (t + 1)) p t :=
-  match listed.keeps t with
+  match keeps_at now next with
   | ⟨_, before, after⟩ => (congrArg (· + _) after).trans
       ((Nat.add_right_comm _ _ _).trans (congrArg (· + _) before.symm))
+
+/-- The census balance across a step: the list after it with the members that ceased to be
+is the list before it with the members that came to be. -/
+theorem across (listed : Listed p l) (t : Nat) :
+    (l (t + 1)).length + ceasings (l t) p t = (l t).length + comings (l (t + 1)) p t :=
+  across_at (listed t) (listed (t + 1))
+
+/-- Over a stretch at each step of which what holds is listed, each once, the list at the end
+with the members that ceased to be is the list at the start with the members that came to
+be. Nothing is asked of the steps outside the stretch. -/
+theorem over_stretch_on {S n : Nat}
+    (listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+    (l (S + n)).length + total (steps S n) (fun t => ceasings (l t) p t) =
+      (l S).length + total (steps S n) (fun t => comings (l (t + 1)) p t) :=
+  balance_over_stretch_on (q := fun t => (l t).length) (x := fun t => ceasings (l t) p t)
+    (y := fun t => comings (l (t + 1)) p t) S n fun t from_ below =>
+      across_at (listing t from_ (Nat.le_of_lt below)) (listing (t + 1) (Nat.le_succ_of_le from_) below)
 
 /-- Over any stretch, the list at the end with the members that ceased to be is the list at
 the start with the members that came to be. -/
 theorem over_stretch (listed : Listed p l) (S n : Nat) :
     (l (S + n)).length + total (steps S n) (fun t => ceasings (l t) p t) =
       (l S).length + total (steps S n) (fun t => comings (l (t + 1)) p t) :=
-  balance_over_stretch (q := fun t => (l t).length) (x := fun t => ceasings (l t) p t)
-    (y := fun t => comings (l (t + 1)) p t) listed.across S n
+  over_stretch_on fun s _ _ => listed s
 
 /-- So over any stretch, the members ceasing to be are at most those coming to be and those
 listed at the start: the census law counted. -/
@@ -481,6 +530,31 @@ theorem comings_within (listed : Listed p l) (S n : Nat) :
       (l (S + n)).length + total (steps S n) (fun t => ceasings (l t) p t) :=
   Nat.le_trans (Nat.le_add_left _ (l S).length) (Nat.le_of_eq (listed.over_stretch S n).symm)
 
+/-- Read of recurrence, the balance is exact where what holds is listed from `T` on: ceasing to
+be recurs exactly when, from each step from `T` on, the list at some later step is shorter
+than the list at the start with the members that came to be between. -/
+theorem ceasing_iff_shortfall_from {T : Nat} (listing : ∀ s, T ≤ s → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+    (∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) ↔
+      ∀ N, T ≤ N → ∃ n, (l (N + n)).length <
+        (l N).length + total (steps N n) fun t => comings (l (t + 1)) p t :=
+  ⟨fun ceasing N from_ => match ceasing N with
+    | ⟨t, a, later, ceases⟩ => match le_dest later with
+      | ⟨m, same⟩ =>
+        have ceased : 0 < total (steps N (m + 1)) fun t => ceasings (l t) p t :=
+          Nat.lt_of_lt_of_le
+            (same ▸ total_pos_of_mem (((listing t (Nat.le_trans from_ later)).2 a).mp ceases.1)
+              (mark_pos.mpr ceases))
+            (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (steps_last _ N m).symm))
+        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right ceased)
+          (Nat.le_of_eq (over_stretch_on fun s lo _ => listing s (Nat.le_trans from_ lo)))⟩,
+   fun shortfall N => match shortfall (N + T) (Nat.le_add_left T N) with
+    | ⟨n, short⟩ =>
+      match total_pos (steps (N + T) n) (pos_of_exceeds short (Nat.le_of_eq
+          (over_stretch_on fun s lo _ => listing s (Nat.le_trans (Nat.le_add_left T N) lo)).symm)) with
+      | ⟨t, mem, ceased⟩ => match total_pos (l t) ceased with
+        | ⟨a, _, ceases⟩ =>
+          ⟨t, a, Nat.le_trans (Nat.le_add_right N T) (steps_mem mem), mark_pos.mp ceases⟩⟩
+
 /-- Read of recurrence, the balance is exact: ceasing to be recurs exactly when, from each
 step, the list at some later step is shorter than the list at the start with the members
 that came to be between. -/
@@ -488,21 +562,34 @@ theorem ceasing_iff_shortfall (listed : Listed p l) :
     (∀ N, ∃ t a, N ≤ t ∧ CeasesToBe (p a) t) ↔
       ∀ N, ∃ n, (l (N + n)).length <
         (l N).length + total (steps N n) fun t => comings (l (t + 1)) p t :=
-  ⟨fun ceasing N => match ceasing N with
-    | ⟨t, a, later, ceases⟩ => match le_dest later with
+  (ceasing_iff_shortfall_from (T := 0) fun s _ => listed s).trans
+    ⟨fun short N => short N (Nat.zero_le N), fun short N _ => short N⟩
+
+/-- And where what holds is listed from `T` on, coming to be recurs exactly when, from each
+step from `T` on, the list at some later step with the members that ceased to be between is
+longer than the list at the start. -/
+theorem coming_iff_excess_from {T : Nat} (listing : ∀ s, T ≤ s → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+    (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔
+      ∀ N, T ≤ N → ∃ n, (l N).length <
+        (l (N + n)).length + total (steps N n) fun t => ceasings (l t) p t :=
+  ⟨fun coming N from_ => match coming N with
+    | ⟨t, a, later, comes⟩ => match le_dest later with
       | ⟨m, same⟩ =>
-        have ceased : 0 < total (steps N (m + 1)) fun t => ceasings (l t) p t :=
+        have came : 0 < total (steps N (m + 1)) fun t => comings (l (t + 1)) p t :=
           Nat.lt_of_lt_of_le
-            (same ▸ total_pos_of_mem (((listed t).2 a).mp ceases.1) (mark_pos.mpr ceases))
+            (same ▸ total_pos_of_mem
+              (((listing (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later))).2 a).mp comes.2)
+              (mark_pos.mpr comes))
             (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (steps_last _ N m).symm))
-        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right ceased)
-          (Nat.le_of_eq (listed.over_stretch N (m + 1)))⟩,
-   fun shortfall N => match shortfall N with
+        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right came)
+          (Nat.le_of_eq (over_stretch_on fun s lo _ => listing s (Nat.le_trans from_ lo)).symm)⟩,
+   fun excess N => match excess (N + T) (Nat.le_add_left T N) with
     | ⟨n, short⟩ =>
-      match total_pos (steps N n)
-        (pos_of_exceeds short (Nat.le_of_eq (listed.over_stretch N n).symm)) with
-      | ⟨t, mem, ceased⟩ => match total_pos (l t) ceased with
-        | ⟨a, _, ceases⟩ => ⟨t, a, steps_mem mem, mark_pos.mp ceases⟩⟩
+      match total_pos (steps (N + T) n) (pos_of_exceeds short (Nat.le_of_eq
+          (over_stretch_on fun s lo _ => listing s (Nat.le_trans (Nat.le_add_left T N) lo)))) with
+      | ⟨t, mem, came⟩ => match total_pos (l (t + 1)) came with
+        | ⟨a, _, comes⟩ =>
+          ⟨t, a, Nat.le_trans (Nat.le_add_right N T) (steps_mem mem), mark_pos.mp comes⟩⟩
 
 /-- And coming to be recurs exactly when, from each step, the list at some later step with
 the members that ceased to be between is longer than the list at the start. -/
@@ -510,21 +597,8 @@ theorem coming_iff_excess (listed : Listed p l) :
     (∀ N, ∃ t a, N ≤ t ∧ ComesToBe (p a) t) ↔
       ∀ N, ∃ n, (l N).length <
         (l (N + n)).length + total (steps N n) fun t => ceasings (l t) p t :=
-  ⟨fun coming N => match coming N with
-    | ⟨t, a, later, comes⟩ => match le_dest later with
-      | ⟨m, same⟩ =>
-        have came : 0 < total (steps N (m + 1)) fun t => comings (l (t + 1)) p t :=
-          Nat.lt_of_lt_of_le
-            (same ▸ total_pos_of_mem (((listed (t + 1)).2 a).mp comes.2) (mark_pos.mpr comes))
-            (Nat.le_trans (Nat.le_add_left _ _) (Nat.le_of_eq (steps_last _ N m).symm))
-        ⟨m + 1, Nat.lt_of_lt_of_le (Nat.lt_add_of_pos_right came)
-          (Nat.le_of_eq (listed.over_stretch N (m + 1)).symm)⟩,
-   fun excess N => match excess N with
-    | ⟨n, short⟩ =>
-      match total_pos (steps N n)
-        (pos_of_exceeds short (Nat.le_of_eq (listed.over_stretch N n))) with
-      | ⟨t, mem, came⟩ => match total_pos (l (t + 1)) came with
-        | ⟨a, _, comes⟩ => ⟨t, a, steps_mem mem, mark_pos.mp comes⟩⟩
+  (coming_iff_excess_from (T := 0) fun s _ => listed s).trans
+    ⟨fun excess N => excess N (Nat.zero_le N), fun excess N _ => excess N⟩
 
 /-- The census law: where what holds is listed at each step, ceasing to be at arbitrarily
 late steps needs coming to be at arbitrarily late steps. Ceasings recurring accumulate past
@@ -1055,6 +1129,19 @@ instance decideDissolves (W : Web F C) [∀ t g c, Decidable (W.requires t g c)]
     (g : F) (c : C) : Decidable (W.Dissolves t g c) :=
   instDecidableAnd
 
+/-- The census balance read of dependence, over a stretch at each step of which the
+dependences are listed: the dependences holding at the end with those that dissolved are
+those holding at the start with those that formed (`Listed.over_stretch_on`). -/
+theorem DependenceCensus.over_stretch_on {W : Web F C} [∀ t g c, Decidable (W.requires t g c)]
+    {deps : Nat → List (F × C)} {S n : Nat}
+    (listing : ∀ s, S ≤ s → s ≤ S + n →
+      Distinct (deps s) ∧ ∀ d, W.requires s d.1 d.2 ↔ d ∈ deps s) :
+    (deps (S + n)).length + total (steps S n) (fun t => total (deps t) fun d =>
+      mark (W.Dissolves t d.1 d.2)) =
+      (deps S).length + total (steps S n) (fun t => total (deps (t + 1)) fun d =>
+        mark (W.Forms t d.1 d.2)) :=
+  Listed.over_stretch_on (p := fun (d : F × C) t => W.requires t d.1 d.2) listing
+
 /-- The census balance read of dependence: over any stretch, the dependences holding at the
 end with those that dissolved are those holding at the start with those that formed
 (`Listed.over_stretch`). -/
@@ -1064,7 +1151,7 @@ theorem DependenceCensus.over_stretch {W : Web F C} [∀ t g c, Decidable (W.req
       mark (W.Dissolves t d.1 d.2)) =
       (deps S).length + total (steps S n) (fun t => total (deps (t + 1)) fun d =>
         mark (W.Forms t d.1 d.2)) :=
-  Listed.over_stretch census S n
+  DependenceCensus.over_stretch_on fun s _ _ => census s
 
 variable (W : Web F C) [∀ t f, Decidable (W.active t f)]
 
@@ -1113,6 +1200,18 @@ theorem unceasing_iff_bounded {alive : Nat → List F} (census : W.Census alive)
     W.Unceasing ↔ ∀ N, ∃ t f, N ≤ t ∧ W.Ceases t f :=
   Listed.coming_iff_ceasing census bounded
 
+/-- The census balance read of activity, over a stretch at each step of which the active
+formations are listed: the formations active at the end with those that ceased are those
+active at the start with those that arose (`Listed.over_stretch_on`). Nothing is asked of
+the steps outside the stretch. -/
+theorem Census.over_stretch_on {alive : Nat → List F} {S n : Nat}
+    (listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s) :
+    (alive (S + n)).length + total (steps S n) (fun t => total (alive t) fun f =>
+      mark (W.Ceases t f)) =
+      (alive S).length + total (steps S n) (fun t => total (alive (t + 1)) fun f =>
+        mark (W.Arises t f)) :=
+  Listed.over_stretch_on (p := fun f t => W.active t f) listing
+
 /-- The census balance read of activity: over any stretch, the formations active at the end
 with those that ceased are those active at the start with those that arose
 (`Listed.over_stretch`). -/
@@ -1121,7 +1220,7 @@ theorem Census.over_stretch {alive : Nat → List F} (census : W.Census alive) (
       mark (W.Ceases t f)) =
       (alive S).length + total (steps S n) (fun t => total (alive (t + 1)) fun f =>
         mark (W.Arises t f)) :=
-  Listed.over_stretch census S n
+  Census.over_stretch_on W fun s _ _ => census s
 
 end Web
 

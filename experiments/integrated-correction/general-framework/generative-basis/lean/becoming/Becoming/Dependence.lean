@@ -316,20 +316,34 @@ theorem kept_not_broken {t : Nat} {g : F} {c : C} (kept : W.Kept t g c) : ¬ W.B
 
 /-! ## Outcomes of a loss where activity needs support -/
 
+/-- A formation supported at `t`, with a dependence at least as strong as an earlier one,
+finds the condition meeting the earlier need. Only its support at `t` is used. -/
+theorem continuing_restores_at {T t : Nat} {g : F} {c : C} (supported : W.Supported t g)
+    (depends : W.requires t g c) (unchanged : W.need T g c ≤ W.need t g c) :
+    W.need T g c ≤ W.level t c :=
+  Nat.le_trans unchanged (supported c depends)
+
 /-- Under `Dependent`, a formation active with a dependence at least as strong as an
 earlier one finds the condition meeting the earlier need. -/
 theorem continuing_restores (dependent : W.Dependent) {T t : Nat} {g : F} {c : C}
     (active : W.active t g) (depends : W.requires t g c)
     (unchanged : W.need T g c ≤ W.need t g c) : W.need T g c ≤ W.level t c :=
-  Nat.le_trans unchanged (dependent t g active c depends)
+  continuing_restores_at (dependent t g active) depends unchanged
+
+/-- After a loss without return, a formation supported at a later step has weakened or
+dissolved its dependence on the condition. Only its support at that step is used. -/
+theorem consumed_continues_transformed_at {T : Nat} {g : F} {c : C}
+    (below : ∀ t, T < t → W.level t c < W.need T g c) {t : Nat} (later : T < t)
+    (supported : W.Supported t g) : ¬ (W.requires t g c ∧ W.need T g c ≤ W.need t g c)
+  | ⟨depends, unchanged⟩ =>
+    Nat.not_le_of_gt (below t later) (continuing_restores_at supported depends unchanged)
 
 /-- Under `Dependent`, after a loss without return, a formation that is still active has
 weakened or dissolved its dependence on the condition. -/
 theorem consumed_continues_transformed (dependent : W.Dependent) {T : Nat} {g : F} {c : C}
     (below : ∀ t, T < t → W.level t c < W.need T g c) {t : Nat} (later : T < t)
-    (active : W.active t g) : ¬ (W.requires t g c ∧ W.need T g c ≤ W.need t g c)
-  | ⟨depends, unchanged⟩ =>
-    Nat.not_le_of_gt (below t later) (continuing_restores dependent active depends unchanged)
+    (active : W.active t g) : ¬ (W.requires t g c ∧ W.need T g c ≤ W.need t g c) :=
+  consumed_continues_transformed_at below later (dependent t g active)
 
 /-- Under `Dependent`, with dependence that does not change, a formation is not active
 after a loss without return. -/

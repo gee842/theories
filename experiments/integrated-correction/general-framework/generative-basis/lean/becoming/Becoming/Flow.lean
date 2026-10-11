@@ -267,6 +267,10 @@ def Acting (W : Web F C) : Prop :=
 def Taking (W : Web F C) : Prop :=
   ∀ t f c, f ∈ L.present t → 0 < L.take t f c → W.active t f ∧ W.draws t f c
 
+/-- Whatever takes part and gives to `c` across the step from `t` is supported there. -/
+def GiversSupported (W : Web F C) (t : Nat) (c : C) : Prop :=
+  ∀ f, f ∈ L.present t → 0 < L.give t f c → W.Supported t f
+
 /-- The family's uptake: everything taken from a finite family of conditions across the
 step from `t`. -/
 def uptake (cs : List C) (t : Nat) : Nat :=
@@ -300,6 +304,12 @@ def ArisesTaking (W : Web F C) (cs : List C) (t : Nat) (f : F) : Prop :=
   W.Arises t f ∧ f ∈ L.present (t + 1) ∧ 0 < total cs (L.take (t + 1) f)
 
 variable {L} {W : Web F C}
+
+/-- Where only active formations give and activity needs support, whatever gives to a
+condition across any step is supported there. -/
+theorem Acting.giversSupported (acting : L.Acting W) (dependent : W.Dependent) (t : Nat)
+    (c : C) : L.GiversSupported W t c :=
+  fun f present gives => dependent t f (acting t f c present gives)
 
 /-- The family's total after a step, plus its uptake, is its total before, plus its
 replenishment. -/

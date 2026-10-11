@@ -244,8 +244,8 @@
     "en": "Contains no ethical predicate and evaluates no part; does not prove that the theory of becoming needs no axiom; Living is only the structural condition of the stepwise reading, not G0's valuation itself; the law for finite worlds needs decidable activity, and asked of every finite world without it is equivalent to excluded middle; stated for the reading across discrete steps; the parts listed are not exhaustive: combinations of premises and further parts, such as more or the rise of possibility, are not each given; which parts Ren's ‘generative’ and ‘degenerative’ name is Ren's to choose, and this result states only the reading of activity; names are Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T072815.712072Z）：Becoming.Space 的 54 项定理全部空依赖（P25b 新增 World.grazing_browser_ends 与 World.living_crosses_ceasing），Becoming.Roles 的 136 项定理（P25b 新增 Web.Dependent.inactive_below）亦然；同一回执覆盖包内 42 个模块（含只作导入的根模块与桥接），共 2263 项定理／3406 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T072918.589912Z 通过。作者反审见整合文档 §30；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）接受 P23c 的数学，所提更正在整合文档 §38 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 44 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T072815.712072Z): the 54 theorems of Becoming.Space (World.grazing_browser_ends and World.living_crosses_ceasing added in P25b) and the 136 theorems of Becoming.Roles (Web.Dependent.inactive_below added in P25b) all have empty axiom reports; the same receipt covers the package's 42 modules (including the import-only root and the bridge) with 2263 theorems/3406 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T072918.589912Z passed. The author's counterreview is in §30 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) accepts the mathematics of P23c, and its corrections are handled in §38; those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 44 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T073932.785239Z）：Becoming.Space 的 54 项定理全部空依赖（P25b 新增 World.grazing_browser_ends 与 World.living_crosses_ceasing），Becoming.Roles 的 138 项定理（P25b 新增 Web.Dependent.inactive_below）亦然；同一回执覆盖包内 42 个模块（含只作导入的根模块与桥接），共 2306 项定理／3450 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T074322.969802Z 通过。作者反审见整合文档 §30；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）接受 P23c 的数学，所提更正在整合文档 §38 处理，这些更正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 44 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P50）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T073932.785239Z): the 54 theorems of Becoming.Space (World.grazing_browser_ends and World.living_crosses_ceasing added in P25b) and the 138 theorems of Becoming.Roles (Web.Dependent.inactive_below added in P25b) all have empty axiom reports; the same receipt covers the package's 42 modules (including the import-only root and the bridge) with 2306 theorems/3450 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T074322.969802Z passed. The author's counterreview is in §30 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) accepts the mathematics of P23c, and its corrections are handled in §38; those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 44 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P50) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -324,7 +324,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "6e2fd19d6c8bcdca25f6487e2275a7263076b059f4660376d1ab7ca3c05394e4",
+      "sha256": "19099658b52b5cc30758263a2ee46c3b98ad7e3e0cfa382d702e3012a2e805ad",
       "declarations": [
         "Becoming.Web.Ceases",
         "Becoming.Web.unceasing_iff",
@@ -337,7 +337,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "dbfef0fe3adc0a386904d9f4bdcb50d740787ac319e10f82c2e8982122ad7e47",
+      "sha256": "67f57b9544d9021870f2b6c6f2062e21390af08a3a2287a056451ec66c07abde",
       "declarations": [
         "Becoming.Web.roles",
         "Becoming.Web.roles_unceasing",
@@ -351,7 +351,9 @@
         "Becoming.Shuttle.balances",
         "Becoming.Shuttle.holder_stands",
         "Becoming.Web.Dependent.inactive_below",
-        "Becoming.Web.Dependent.ceases_below"
+        "Becoming.Web.Dependent.ceases_below",
+        "Becoming.Web.inactive_below_at",
+        "Becoming.Web.ceases_below_at"
       ]
     },
     {
@@ -367,7 +369,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
       "role": "proof",
-      "sha256": "217834f8b6f4e4ca8a57ff2b35fa0625514077940a0b5be6ffb447c8b088410b",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
       "declarations": [
         "Becoming.Drawdown.drawdown",
         "Becoming.Unchecked.unchecked"
@@ -376,7 +378,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "90b83159aad5d6c62bb4f9f35e0a935c83b5ad62c3e7eb09105bf0a295b7559e",
+      "sha256": "f309de3ddfe13c6ec0f722fa55ed894e3f781052fddf19edeb8c542ae1a34d26",
       "declarations": [
         "Becoming.Web.RenewingIn",
         "Becoming.Web.ConsumingIn",
@@ -386,17 +388,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f9528cc60247e23d9586c0619b7263c3fdda63d9513bb2a8e71809bc998fcdc8"
+      "sha256": "02bce08cbacc65c04844b0aa69745438f1be34ddb2ac1fd6fa1cf2a9e03d50d3"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c51a018cb7b577231b4134af837877d78b0205178d66a263a42fffa4d200052f"
+      "sha256": "e4ab704addc376aac435bfd6b002cd40fe09e38248a6328eabb4f83db5d9a963"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "32b89d6fc50e0c2fcf56a324c01697c69b7c505504cd989aa92647db71d8fa83"
+      "sha256": "1a11155b44fe0dcacc26b8c423106636ae96945171b7568c476b375495662e5a"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -484,8 +486,8 @@
     }
   ],
   "next_delta": {
-    "zh": "提议中“生成的、退化的”的读法（Ren）；更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律已在纯净核心中以排中律为假设陈述（law_of_em）；名称（Ren）。",
-    "en": "The reading of the proposal's ‘generative, degenerative’ (Ren); a map of further parts (more, the rise of possibility and diversity) and of combinations of premises; the law for finite worlds without decidable activity is stated in the pure core with excluded middle as a hypothesis (law_of_em); names (Ren)."
+    "zh": "对每个世界的确切重述是本记录的 Web.inactive_below_at、Web.ceases_below_at（P50），局部条件写在规律之内：只用该形成在步后活跃时被支持；Web.Dependent.inactive_below、Web.Dependent.ceases_below是它们的推论；提议中“生成的、退化的”的读法（Ren）；更多的部分（更多、可能性与多样性的上升）与前提组合的地图；不可判定活动时有限世界的规律已在纯净核心中以排中律为假设陈述（law_of_em）；名称（Ren）。",
+    "en": "The exact restatement for every world is this record's Web.inactive_below_at, Web.ceases_below_at (P50), the local condition inside the law: only that the formation is supported after the step where it is active then; Web.Dependent.inactive_below, Web.Dependent.ceases_below are their corollaries; the reading of the proposal's ‘generative, degenerative’ (Ren); a map of further parts (more, the rise of possibility and diversity) and of combinations of premises; the law for finite worlds without decidable activity is stated in the pure core with excluded middle as a hypothesis (law_of_em); names (Ren)."
   },
   "history": [
     {
@@ -639,6 +641,10 @@
     {
       "zh": "2026-10-11 P48：验证范围重新指向合并检查器回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z（一步的规律：新的核心模块 Locality，57 项定理；Openness、Roles、Counting 与 Standing 的推论改经它证明，陈述不变；定理数改变的已有模块：Standing；包与核心闭包各多一个模块）。断言不变。",
       "en": "2026-10-11 P48: validation scope re-pointed to consolidated receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z (the laws of one step: a new core module, Locality, with 57 theorems; corollaries in Openness, Roles, Counting and Standing re-proved through it, statements unchanged; existing modules whose theorem count changed: Standing; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P50：新增对每个世界的局部规律 Web.inactive_below_at、Web.ceases_below_at（零前提计划 §1.3），局部条件写在规律之内；Web.Dependent.inactive_below、Web.Dependent.ceases_below在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §71。验证范围重新指向回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z。",
+      "en": "2026-10-11 P50: local laws for every world added, Web.inactive_below_at, Web.ceases_below_at (the zero-premise plan, section 1.3), the local condition inside the law; Web.Dependent.inactive_below, Web.Dependent.ceases_below re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 71 of the integration note. Validation scope re-pointed to receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z."
     }
   ]
 }
