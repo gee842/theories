@@ -1090,6 +1090,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
 
+## counting-standing-and-dependence ← whole-law-of-counting
+
+`formal-reuse` — 复用计数表与队列（Tally、Listed.tally、Queue.holds、Queue.line、Queue.listed、Queue.counts）、逐点、World.CountsObey、World.counting_under 与 World.counting_binds_iff、开放与被驱动的队列（World.openQueue_census、World.openQueue_counts、World.drivenQueue_holds、OpenQueue.driven）。 / Reuses tallies and queues (Tally, Listed.tally, Queue.holds, Queue.line, Queue.listed, Queue.counts), Pointwise, World.CountsObey, World.counting_under and World.counting_binds_iff, and the open and driven queues (World.openQueue_census, World.openQueue_counts, World.drivenQueue_holds, OpenQueue.driven).
+
+**Producer output / 上游输出:** 每个选择之下活动的计数规律是计数表，约束计数时再加没有关系项活跃的一步上没有生起。 / Under each selection the laws of counting activity are the tally, and where it binds counting, nothing arising across a step at which nothing is active.
+
+**Consumer input / 下游输入:** 体现时所立者就是活跃者，所以所立者的计数规律相同；不选体现时由源供给的队列实现每个计数表。 / With embodiment what stands is what is active, so the laws of counting what stands are the same; without it a queue fed from a source counts every tally.
+
+**Retained conditions / 保留条件:** 列出；可判定；逐点。 / Listing; decidability; pointwise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean)
+
+## counting-standing-and-dependence ← counting-under-enclosure
+
+`formal-reuse` — 复用被围住时与有限世界中每个选择之下的规律（World.enclosed_counting_under、World.enclosed_change_bound_iff、World.finite_counting_under）、闭合的队列（EnclosedQueue.closing、World.closingQueue_balanced、World.closingQueue_enclosed、World.closingQueue_dissipative）、环（Ring.census、Ring.counts、World.embodiedRing_meets）与有限的队列（World.finiteQueue_premised、World.finiteQueue_census、World.finiteQueue_counts）。 / Reuses the laws under each selection with enclosure and in finite worlds (World.enclosed_counting_under, World.enclosed_change_bound_iff, World.finite_counting_under), the closing queue (EnclosedQueue.closing, World.closingQueue_balanced, World.closingQueue_enclosed, World.closingQueue_dissipative), rings (Ring.census, Ring.counts, World.embodiedRing_meets) and the finite queue (World.finiteQueue_premised, World.finiteQueue_census, World.finiteQueue_counts).
+
+**Producer output / 上游输出:** 被围住时与有限世界中，每个选择之下活动的计数规律；选中平衡、体现与耗散时再加变化界。 / The laws of counting activity under each selection with enclosure and in finite worlds; a change bound where balance, embodiment and dissipation are selected.
+
+**Consumer input / 下游输入:** 所立者的规律在选中平衡与耗散时就加变化界，不需要体现。 / The laws of what stands add the change bound where balance and dissipation are selected, with no embodiment.
+
+**Retained conditions / 保留条件:** 列出；可判定；逐点；被围住或有限。 / Listing; decidability; pointwise; enclosure or finiteness.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean)
+
+## counting-standing-and-dependence ← continued-change-needs-openness
+
+`formal-reuse` — 复用所立者的普查（Web.StandingCensus、World.standingCensus）、被围住的步上所立者的总水平不升而任何水平变化都使它下降（Flow.standing_never_rises、Flow.change_lowers）与被围住的步不是不围住所立者（Flow.Enclosed.aroundStanding_not_not）。 / Reuses the census of what stands (Web.StandingCensus, World.standingCensus), that across an enclosed step the total standing never rises and every change of standing lowers it (Flow.standing_never_rises, Flow.change_lowers), and that an enclosed step is not refutably enclosed around what stands (Flow.Enclosed.aroundStanding_not_not).
+
+**Producer output / 上游输出:** 平衡与耗散之下，围住所立者的步上总水平不升，任何水平变化都使它下降。 / Under balance and dissipation, across a step enclosed around what stands, the total standing never rises and every change of standing lowers it.
+
+**Consumer input / 下游输入:** 被围住时所立者的变化不多于所立者的总水平，不需要关于活动的前提。 / Under enclosure the change of what stands stays within the total standing, with no premise on activity.
+
+**Retained conditions / 保留条件:** 所立者的普查；平衡；耗散；被围住。 / A census of what stands; balance; dissipation; enclosure.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean)
+
+## counting-standing-and-dependence ← map-of-premises
+
+`formal-reuse` — 复用八个前提与其选择（World.Premised.of、World.Premised.meets、World.Meets）、没有什么流动时四个关于流的前提空成立（World.still_vacuous）与有限世界每步被围住（World.Finite.enclosed）。 / Reuses the eight premises and their selections (World.Premised.of, World.Premised.meets, World.Meets), that the four premises about the flow hold vacuously where nothing flows (World.still_vacuous), and that every step of a finite world is enclosed (World.Finite.enclosed).
+
+**Producer output / 上游输出:** 八个前提与其选择；有限世界每步被围住。 / The eight premises and their selections; every step of a finite world enclosed.
+
+**Consumer input / 下游输入:** 依存的队列与环满足全部八个前提。 / The depending queue and ring meet all eight premises.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
 ## counting-under-enclosure ← whole-law-of-counting
 
 `formal-reuse` — 复用计数表与队列（Tally、Queue.holds、Queue.line、Queue.listed、Queue.counts、Queue.ceasings_eq、Queue.comings_eq、Queue.kept_end）、逐点、World.CountsObey、counting_binds_jointly 与队首的引理（OpenQueue.front、OpenQueue.occupied）。 / Reuses tallies and queues (Tally, Queue.holds, Queue.line, Queue.listed, Queue.counts, Queue.ceasings_eq, Queue.comings_eq, Queue.kept_end), Pointwise, World.CountsObey, counting_binds_jointly and the front lemmas (OpenQueue.front, OpenQueue.occupied).

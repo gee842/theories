@@ -4,8 +4,8 @@ import Becoming.Ranking
 /-!
 # Relevance: G0's uses under the axiom
 
-G0 is the adopted axiom until Ren accepts a replacement, and `Becoming.Significance` shows that
-Ren's one axiom gives it. Before Ren decides, every use of G0 in the core and in the periphery's
+`Becoming.Significance` shows that Ren's one axiom gives G0. Before Ren decided whether the axiom
+replaces G0, every use of G0 in the core and in the periphery's
 generative-capacity modules was audited for what it needs of positive relevance and of
 `living`. This module states what the audit found.
 
@@ -67,8 +67,8 @@ generative-capacity modules was audited for what it needs of positive relevance 
 
 What is not derived: the warrant of the axiom; which comparison of courses Ren adopts, the
 possibility reading, a reading of `living`, or possibilities first; the step from significance to
-a reason (A), which stays a premise. G0 remains the adopted axiom until Ren accepts the
-replacement.
+a reason (A), which stays a premise. After the audit Ren folded G0 (11 October 2026): it is no
+longer an axiom.
 -/
 
 namespace Becoming

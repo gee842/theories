@@ -284,8 +284,8 @@
     "en": "Proved only in the support-gated family (two parts: the focal and the sustaining formation) and for three pairs of compared continuations (occurs/absent, sharing/winning, stops/overdraws); the third-party witness (ThirdParty) shows the restraint conclusion does not extend to several co-drawers; the relation-level reading also credits the focal formation's first relation but is not formalized separately; yields no responsibility, duty or feasibility; chooses no reading. The possibility reading of P44 coincides with retaining and adding only for two courses of one law; it counts what can form, not what does, so it leaves a presence adding no possibility unranked; possibilities first is a further premise, at the cost of ranking a rest below activity; it chooses no reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Ranking 27 项定理、Becoming.Relevance 中属本结果的 19 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。P44 的作者反审见整合文档 §64；P44 尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): the 27 theorems of Becoming.Ranking, the 19 of Becoming.Relevance belonging to this result and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview of P44 is in §64 of the integration note; P44 has not yet been independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T011019.444120Z）：Becoming.Ranking 27 项定理、Becoming.Relevance 中属本结果的 19 项定理与 Becoming.Bridge 的 Ranking.wholeRun_iff、Ranking.undisturbed_eq 全部空依赖；同一回执覆盖包内 40 个模块（含只作导入的根模块与桥接），共 2115 项定理／3194 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §9；第二次独立审查（BECOMING-P7-REVIEW.md）只在其问题 4 所涉范围内读了本结果，并预期了节制的结论，本记录据此新增 restraint_ranks 与 malignant_restraint；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md，另一 agent，Claude Opus 5.5，未参与撰写）审查了全部结果，接受其数学，把节制的结论限于二元定律族，并给逐步读法的代价补上被记入事件的假设，其更正在整合文档 §12 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 42 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。P44 的作者反审见整合文档 §64；P44 尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T011019.444120Z): the 27 theorems of Becoming.Ranking, the 19 of Becoming.Relevance belonging to this result and the bridge's Ranking.wholeRun_iff and Ranking.undisturbed_eq all have empty axiom reports; the same receipt covers the package's 40 modules (including the import-only root and the bridge) with 2115 theorems/3194 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §9 of the integration note. The second independent review (BECOMING-P7-REVIEW.md) read this result only as far as its question 4 required and anticipated the restraint result, which this record added as restraint_ranks and malignant_restraint. A third independent review (BECOMING-P8-P9-P7B-REVIEW.md, by a separate agent, Claude Opus 5.5, not an author) reviewed the whole result, accepted its mathematics, scoped the restraint conclusion to the two-part family and supplied the credited-event hypothesis to the stepwise cost; its corrections are handled in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 42 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview of P44 is in §64 of the integration note; P44 has not yet been independently reviewed."
   },
   "references": [
     {
@@ -345,7 +345,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
       "role": "proof",
-      "sha256": "caa6b40a98353117936b19fe65fbbe64b95fdc3a0f3dfc56740adbc6bbbc3980",
+      "sha256": "20fea62f57243c79d712821f6f0affe874a7107055ca4642ec8d9e2adf327fcd",
       "declarations": [
         "Becoming.Extension",
         "Becoming.Comparison",
@@ -367,7 +367,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean",
       "role": "proof",
-      "sha256": "780d2d20d5402ee67dc8b968b77b73448b7a46d30fb29462f2527955dfc01140",
+      "sha256": "a1458236c18f1ef14dd61e053a69a39610c4f3aed37d3ab5ada6bacada679965",
       "declarations": [
         "Becoming.Ranking.possible",
         "Becoming.Ranking.possibleFirst",
@@ -396,7 +396,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "92df639fb9683eead84a6290a6e3dc33e8c64c1bc5b54448d2cd11b4d2bce1fa",
+      "sha256": "5813e4de67b9cc79d72aab80f7197072a5fad7842002603a3ac1dbb04f5ff41f",
       "declarations": [
         "Becoming.Unrestricted",
         "Becoming.Web.Retains",
@@ -417,19 +417,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8",
+      "sha256": "9acf4b0cc43925780bc5b1a3bcc03a9b0fc853c64345b1d03c1043fbbbf93516",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2225a925fd37536307da2ad5cd701d488adc51c96045267c57f0ef65369b9c19",
+      "sha256": "002088110ea52480b8851a6c1218e8aef2c2f1679a17ad7a5ab6c55e4392e8e6",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "67be8c0a0e3a716a77e2bb32e778dc3eb51035fb65dc8eb34d3b2b277d834d4f",
+      "sha256": "9a2fd22aff4275e51410eeac13a085cb8cc5eaf29f583005b82ad7460ea98834",
       "declarations": []
     },
     {
@@ -712,6 +712,18 @@
     {
       "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。P44 扩展断言：可能性读法与可能性优先；新增依赖 one-axiom-yields-g0、significance-retained-within-margin、closing-needs-net-draw 与两个反例；下一增量加入比较继续的选择。",
       "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged. P44 extends the claim: the possibility reading and possibilities first; adds the dependencies one-axiom-yields-g0, significance-retained-within-margin and closing-needs-net-draw and two counterexamples; the next delta adds the choice of comparison of courses."
+    },
+    {
+      "zh": "2026-10-11 P46：验证范围重新指向合并检查器回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z（有限世界中与从某步起被围住时每个选择之下所选前提都起约束时计数的规律：Counting 新增声明）；所引模块的定理数改为该回执的数目（Counting 212）。断言不变。",
+      "en": "2026-10-11 P46: validation scope re-pointed to consolidated receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z (the laws of counting in finite worlds and under enclosure from some step on where the premises of each selection bind: declarations added to Counting); the module counts cited are now that receipt's (Counting 212). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P47：验证范围重新指向合并检查器回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z（前提之下所立者与依存的计数规律：新的核心模块 Standing，38 项定理；包与核心闭包各多一个模块；P51 折叠 G0 的说明文字随此运行改入七个核心模块，只改说明，陈述与定理数不变）。断言不变。",
+      "en": "2026-10-11 P47: validation scope re-pointed to consolidated receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z (the laws of counting what stands and what depends under the premises: a new core module, Standing, with 38 theorems; the package and the core closure each have one module more; P51's fold of G0 enters the docstrings of seven core modules with this run, docstrings only, statements and theorem counts unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
     }
   ]
 }

@@ -4126,6 +4126,75 @@ Integration: 计划 P43（工作次序 (c)）；把公理超出预设的全部�
 
 **边界。** 无伦理结论；不替 Ren 选择任何读法。仍开放：所及闭包是否读出“the system that one is in”、预设是否读出 Ren 的 belief、Ren 是否持有不变的一步（属于 Ren 的选择）；动力学给出回应的比较、按步的闭包、中心怎样表示其所及、耦合的度量（进一步的证明）；预设、覆盖与不变的根据（哲学根据）。本节与 §61 经第十六次审查；处理之后的文本尚未经独立审查。
 
+## 63. 有限世界中与被围住时前提起约束的计数（P46）
+
+2026-10-11。按 Ren“let's aim for the strongest claim without axiom, as the first part, and add one axiom, as the following part, the no axiom part is most important and elegant”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。P45 留下两项开放（§60 反驳 4，whole-law-of-counting 与 counting-under-enclosure 的下一步）：有限世界中每个选择之下所选前提都起约束时计数的规律，以及从某步起被围住且每个前提都起约束时的规律。本节给出这两项，并给出两者之间的一项：从某步起被围住时每个选择之下所选前提都起约束时的规律。这样，前提起约束时计数的规律在不限制、有限与从某步起被围住三类世界中都已陈述。
+
+```text
+Result(s): 扩展 counting-under-enclosure（有限世界中与从某步起被围住时，每个选择之下所选前提都起约束时计数的规律）；
+           修订 whole-law-of-counting（开放项改指 counting-under-enclosure）；没有新的成果记录
+Delta: Counting：World.enclosedQueue_saturated_binds、World.enclosed_binding_counting；RelayRing 与 World.relayRing
+       （_balanced、_dissipative、_acts、_binds、_binding）；LossyRing 与 World.lossyRing（_dissipative、_taking、_acting、
+       _binds、_binding）；Ring.exchanged、Ring.exchanging 与 World.exchangingRing（_balanced、_taking、_acting、_binds、
+       _binding）；World.BoundsChange 可判定；World.finite_binding_census、World.finite_binding_counting_under、
+       World.finite_binding_activity_iff、World.finite_binding_arising_iff、World.finite_binding_joint_iff；
+       World.relayQueue_enclosed、World.lossyQueue_enclosed；EnclosedQueue.exchanged、EnclosedQueue.exchanging 与
+       World.exchangingQueue（_balanced、_taking、_acting、_enclosed、_binds、_binding）；last_positive、Tally.occupied_from；
+       EnclosedQueue.sub_add_le、store_succ_le、spare、held、sheddingWeb、shedding、spare_zero、held_outside、shedding_closed、
+       shedding_flows 与 World.sheddingQueue（_balanced、_embodied、_enclosed、_level_le、_exceeds、_dissipative、_binds、
+       _binding）；World.enclosed_binding_counting_under、World.enclosed_binding_activity_iff、
+       World.enclosed_binding_arising_iff、World.enclosed_binding_joint_iff。已有声明不变
+Supplied premises / correspondence: 不变；起约束仍是条件有实例（P41b）
+Evidence: 合并检查器回执 20261011T001147.906623Z（2022 项定理、3071 项声明审计，全部源声明公理报告为空；Counting 212），外围回执 20261011T001754.342153Z；
+          新声明先在暂存树中从前导编译，逐条 #print axioms 全部为空
+Boundary: 只是活动的计数；更强的起约束读法仍开放（由 Ren 选择）；尚无独立审查
+Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表与术语表；计划 P46；模块说明、根模块、包 README 与检查器的范围
+```
+
+**从某步起被围住且每个前提都起约束。** 全部八个前提之下，从某步起被围住时计数的规律是计数表、没有关系项活跃的一步上没有生起与从第 0 步起的变化界（`World.enclosed_counting`，P35）。每个前提都起约束时只多出有某个生起（`World.enclosed_binding_counting`），与不限于被围住时（`World.binding_counting`）和有限世界中除普查外每个前提都起约束时（`World.finite_binding_counting`）一样。见证是被围住的队列把依存网饱和：有成员在第 T 步加入时，加入者生起而改变所立，从队首传下，步后活跃并依存于自身的所立；队首从第 T 步的跨度取用，跨度封闭，耗散只许它给予少于所取的；关系项是自然数，没有有限的列表包含全部，所以普查也起约束（`World.enclosedQueue_saturated_binds`）。
+
+**有限世界中每个选择之下。** 没有有限世界使普查起约束，所以在选中普查的选择之下，有限世界中每个性质都是规律（`World.finite_binding_census`）。不选普查时，回答是有限世界中该选择之下的规律（`World.finite_counting_under`：每步至多有某数活跃；约束计数或约束变化时没有关系项活跃的一步上没有生起；约束变化时从第 0 步起的变化界），再加至多三条（`World.finite_binding_counting_under`）：
+
+1. *有关系项活跃*，恰在选中活动需要支持、只有活跃者给予、只有活跃者取用或体现时（`World.finite_binding_activity_iff`），与不限于有限世界时相同。
+2. *有某个生起*，恰在选中体现时（`World.finite_binding_arising_iff`），也相同。
+3. *在有关系项活跃的一步上有生起*，恰在选中体现，且选择约束计数或约束变化，或选中有界传递并选中只有活跃者给予、或同时选中只有活跃者取用与耗散时（`World.finite_binding_joint_iff`）。与 P45 不同之处有两个，§60 反驳 4 已预见：有限世界的每一步都被围住，所以平衡、体现与耗散本身就约束计数（`World.enclosed_binds_counting`），第 2 条的生起之步上就有关系项活跃；只有活跃者取用与耗散在被围住的步上推出只有活跃者给予（`World.Finite.acting`），所以有界传递起约束时，传下所从出的给予者在该步活跃。
+
+每条的反方向与 P45 相同：什么都不发生的计数表、每步一个关系项而无生起的计数表、一个关系项在第一步从无到有地生起并留下（`Queue.lone`），都由满足选择且所选前提都起约束的有限世界实现。
+
+**有限的见证。** P45 的见证有无限多个关系项，有限世界需要有限的见证。它们都按 P38b 把计数表的队列排在一圈位置上（`Ring.slot`、`Ring.counts`），并把依存网饱和：
+
+- *环旁的传递*（`World.relayRing`）：位置 1 到第 U 步为止立着两个单位，参与者 g 在第 U 步取用这两个单位，给位置 0 一个，失去另一个；位置的所立与它是否被占无关，所以不满足体现，只用于不选体现的选择。选中活动需要支持、只有活跃者给予或取用时，g 取为第 U 步队首的位置，那时活跃（`World.relayRing_binding`）。圈按 M+1 取大小，至少有两个位置。
+- *有损的环*（`World.lossyRing`）：每个位置被占时立着一；跨第 U 步，队首的位置与自身及每个开始被占的位置各交换一个单位，再失去一个单位。所立者不记录这些，所以它不平衡；它对任何计数都耗散（封闭的家族含队首的位置，队首多取了一个单位）。用于选中体现而不选平衡、并选中耗散或只有活跃者给予的选择：选中有界传递，并选中只有活跃者给予、或同时选中只有活跃者取用与耗散时，U 取为第 3 条规律给出的步；不选有界传递时，U 取为生起之后一步，那时队列不空；两个给予与取用的条件都不选时，U 取为生起之步，队首的位置不被占也可以给予与取用（`World.lossyRing_binding`）。
+- *交换的环*（`World.exchangingRing`）：P38b 的平衡的环（队首的位置取用每个位置所降的、给予其所升的），在生起之后一步，队首的位置再与自身各交换一个单位，使取用起约束；它满足除耗散外的全部前提，没有成员加入空队时也满足只有活跃者给予（`World.exchangingRing_binding`）。用于选中体现、不选耗散，且不选平衡时也不选只有活跃者给予的选择。
+- *饱和的有限队列*（`World.finiteQueue_saturated_binds`，P45）：选中平衡、体现与耗散，即约束变化时。
+
+按体现、平衡、耗散、只有活跃者给予、取用与有界传递分情形，每个情形都由其中一个见证实现，所以 iff 的两个方向都在 Lean 中检查。
+
+**从某步起被围住时每个选择之下。** 在每个选择 S 之下，从某步起被围住、S 所选前提都起约束时，计数的规律是被围住时该选择之下的规律（`World.enclosed_counting_under`：约束计数时没有关系项活跃的一步上没有生起；约束变化时从某步起的变化界，此后没有关系项活跃的一步上没有生起）再加 P45 的三条（`World.enclosed_binding_counting_under`），每条恰在与不被围住时相同的选择之下多出（`World.enclosed_binding_activity_iff`、`World.enclosed_binding_arising_iff`、`World.enclosed_binding_joint_iff`）。所以从某步起被围住时，被围住与起约束各自加上自己的规律，互不相干；有限世界中两者相干，因为那里生起之步本身也被围住。普查在这里可以起约束，因为见证有无限多个关系项。
+
+见证都在某步之后被围住：
+
+- *传递*（`World.relayQueue`，P45）在每一步被围住，它取用与给予的都在两个地关系项中（`World.relayQueue_enclosed`）；*有损的队列*（`World.lossyQueue`，P45）从地关系项的给予之后一步起被围住，跨度含队首与加入者（`World.lossyQueue_enclosed`）。
+- *交换的队列*（`World.exchangingQueue`）：被围住的队列在生起之后一步让队首与自身再交换一个单位，使取用起约束；它在每一步被围住，满足除耗散外的全部前提，没有成员加入空队时也满足只有活跃者给予（`World.exchangingQueue_binding`）。用于选中平衡与体现而不选耗散的选择。
+- *饱和的被围住的队列*（`World.enclosedQueue_saturated_binds`）：选中平衡、体现与耗散，并选中只有活跃者给予或取用时，选择约束计数，从第 0 步起的变化界由被围住时的变化界给出（`ChangeBound.from_zero`）。
+- *失去多立单位的队列*（`World.sheddingQueue`）：选中平衡、体现与耗散而不选只有活跃者给予与取用时，耗散只能在封闭的步上起约束，而在平衡与体现之下封闭的家族失去一个单位，需要有所立者先多立一个单位。生起却可以只在被围住之前，从无到有，此后计数不再变化（如 `Queue.lone`）。所以先找一步 T′，那时有关系项活跃，此后没有关系项活跃的一步上没有生起（`Tally.occupied_from`：若变化界之步 T 上有关系项活跃，取 T；否则若生起不在 T 之前，取生起之步；否则取 T 之前最后一个有关系项活跃的步，`last_positive`，在有限的步中搜索）。队列在 T′ 闭合（此前每个关系项与队首各交换一个单位，没有封闭的家族），队首在 T′ 多立一个单位，跨 T′ 时失去它（`EnclosedQueue.spare`、`EnclosedQueue.held`），于是跨度在 T′ 失去的多于所给（`World.sheddingQueue_exceeds`），耗散起约束；T′ 之后它与被围住的队列相同（`EnclosedQueue.shedding_flows`）。它从 T′ 起被围住，满足选择，每个前提都起约束（`World.sheddingQueue_binds`、`World.sheddingQueue_binding`）。
+
+**作者反审。**
+
+*反驳 1：有限世界中的第 3 条是否只是改写了 P45？* 不是。它在有限世界中恰在更多的选择之下成立。选中体现、平衡与耗散而不选只有活跃者给予与取用时，P45 中一个关系项可以从无到有地生起（只闭合一次的队列），有限世界中不能：那里这个选择约束变化，因而没有关系项活跃的一步上没有生起。选中体现、只有活跃者取用、耗散与有界传递而不选平衡与只有活跃者给予时，P45 的有损的队列让一个地关系项给予每个关系项，传下由它而来；有限世界中每一步都封闭，给予须伴随损失，给予者于是取用而活跃。两处差别都由 `World.finite_binding_joint_iff` 确认。
+
+*反驳 2：选中普查时“每个性质都是规律”是否空洞？* 是空洞的，而且如实：普查起约束即世界不有限，所以这类选择在有限世界中没有实例。单独陈述它（`World.finite_binding_census`），256 个选择在有限世界中就都有了回答。
+
+*反驳 3：环旁的传递让未被占的位置立着单位，是否违背关系的读法？* 它只用于不选体现的选择，那里所立与活跃本来可以分开，体现正是使二者一致的前提。选中体现时用的是有损的环、交换的环与有限的队列，那里每个位置恰在被占时立着。
+
+*反驳 4：从某步起被围住为何不像有限世界那样使第 3 条在更多的选择之下成立？* 因为被围住只从某步起：生起可以在被围住之前、在没有关系项活跃的一步上从无到有，被围住之后的变化界与没有关系项活跃的一步上没有生起都不触及它。失去多立单位的队列确认这一点：`Queue.lone` 由一个从第 1 步起被围住、满足平衡、体现与耗散且每个前提都起约束的世界实现。代价只是耗散的实例要放在被围住之后有所可失的一步上，这需要在有限的步中搜索那一步；变化界之步作为规律的一部分给出（P38b），所以搜索是有界的，不需要全知。
+
+*反驳 5：多立的单位是否是为了见证而造的？* 是见证的构造，不是规律的内容：它只说明，在平衡、体现与耗散之下，一个封闭的家族要失去什么，须有所立者先立着它。规律本身（`World.enclosed_binding_counting_under`）不提到它。
+
+**读法（AI，待 Ren）。** 起约束在计数上留下的仍只是它的实例。有限世界与从某步起被围住的世界的差别在于生起之步：有限世界的每一步都被围住，所以更多的生起须从活动而来；从某步起被围住时，生起可以在被围住之前，被围住与起约束各自加上自己的规律。
+
+**边界。** 离散步，活动的计数；水平与依存的计数在前提之下、更强的起约束读法仍开放；没有伦理谓词；名称（relayRing、lossyRing、exchangingRing、exchangingQueue、sheddingQueue、spare、held 等）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
+
 ## 64. G0 各处用法的审计（P44）
 
 2026-10-11。Ren 的公理：“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。P39 表明它推出 G0（§53）。P40 之后，AI 对“是否以这条公理替代 G0”的回答是分两步：先审计 G0 每处用法对 `living` 的读法，再替换；Ren 写道：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）。AI 把它读作接受这一次序（AI 的读法，待 Ren）。这是工作次序 (d)。
@@ -4229,7 +4298,168 @@ Integration: 计划 P44（工作次序 (d)）；把 P39 的“G0 推出”推到
 3. 比较继续用哪一种：可能性读法，由公理自身给出，不增加可能性的在场与不在场不分高下，休息不更差；`living` 的一种读法加 C，整段读法扣下过度汲取者的事件，逐步读法不排序过度汲取与其不在场；或可能性优先，在场优于不在场，休息排在活动之下。
 
 **边界。** 不推出伦理结论之外的东西；不替 Ren 选择读法；替换须经 Ren 接受。本节尚未经独立审查。
-## 65. 熵：生成留下的历史与守住它的代价（R5）
+## 65. 所立者与依存的计数（P47）
+
+2026-10-11。按 Ren“let's aim for the strongest claim without axiom, as the first part, and add one axiom, as the following part, the no axiom part is most important and elegant”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。P38 到 P46 给出的是活动的计数在前提之下的规律；whole-law-of-counting 与 counting-under-enclosure 的下一步都留着同一项：水平与依存的计数在前提之下（§63 的边界）。`Becoming.Population` 把同一个计数表读于三种列出：活动的普查、所立者的普查（`Web.StandingCensus`）与依存的普查（`Web.DependenceCensus`），不加前提时三者的规律都是计数表（`counting_laws`）。本节给出前提给后两者加了什么。这样，第一部分不加公理的计数规律在三个读法上都已陈述；所选前提都起约束时的规律仍只对活动陈述。
+
+```text
+Result(s): 新成果记录 counting-standing-and-dependence；修订 counting-under-enclosure 与 whole-law-of-counting（局限与下一步改指新记录）
+Delta: 新核心模块 Becoming.Standing（导入 Becoming.Counting）：ceasings_congr、comings_congr、pairs、mem_pairs、
+       Web.StandingCensus.length_le_stock；World.StandsObey、World.Embodied.decided、World.Embodied.standsObey_iff、
+       World.Embodied.tally_of_stands；OpenQueue.sourced 与 World.sourcedQueue（_holds、_meets、_standing、_counts）；
+       World.standing_counting_under、World.standing_iff_counting、World.standing_binds_iff；
+       World.enclosure_bounds_standing、World.enclosed_binds_standing、World.BoundsStanding；
+       EnclosedQueue.waiting、EnclosedQueue.waiting_front 与 World.waitingQueue（_holds、_meets、_standing、_counts）；
+       World.embodiedQueue_stands、World.enclosed_standing_counting_under、World.enclosed_standing_bound_iff；
+       World.activeRing（_holds、_meets、_counts）；World.finite_standing_counting_under、World.finite_standing_binds_iff、
+       World.finite_standing_bound_iff；World.DependsObey、Queue.depending、World.dependingQueue（_premised、_census、_counts）、
+       World.still_premised、World.dependence_counting、World.enclosed_dependence_counting；Ring.first、Ring.depending、
+       World.dependingRing（_premised、_counts）、World.finite_dependence_counting。Becoming.Counting 只改结尾一段说明；
+       已有声明不变
+Supplied premises / correspondence: 不变；读于水平时水平为正可判定（自然数的比较），读于依存时要求可判定
+Evidence: 合并检查器回执 20261011T003217.297180Z（2060 项定理、3126 项声明审计，全部源声明公理报告为空；Standing 38；核心闭包 41 个模块，
+          包 39 个），外围回执 20261011T003646.599930Z；新模块先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空
+Boundary: 所选前提都起约束时所立者与依存的计数规律、三种计数之间的联合规律没有陈述；尚无独立审查
+Integration: 章节第 4 条、第一部分的总陈述、§8 的开放项与现状表、§9 的脊柱表与总数、§10 的术语表；计划 P47；
+             模块说明、Counting 的结尾、根模块、包 README、检查器的核心模块列表与范围
+```
+
+**所立者与活动。** 关系项都体现时，立着就是活跃，所立者的普查就是活动的普查，两者的计数满足同样的性质（`World.Embodied.standsObey_iff`）。不选体现时，二者可以分开：由源供给的队列是 P38 的被驱动的队列，驱动者是地关系项 0，始终活跃而不立任何东西，与每个地关系项各交换一个单位；成员在队中时立着而从不活跃（`World.sourcedQueue`）。它平衡；只有源给予与取用，而源活跃；任何有限的家族之外都有一个地关系项与源交换，所以没有家族跨过任何一步封闭，耗散成立；活动需要支持与有界传递空成立（没有什么依存于什么），活动的普查是 [0]（`World.sourcedQueue_holds`）。所以它满足除体现外的全部前提，不论计数；它的所立者的普查计到队列所计的（`World.sourcedQueue_counts`）。于是在每个选择之下，所立者的计数规律就是活动的（`World.standing_counting_under`、`World.standing_iff_counting`）：计数表，以及恰在选择约束计数时，没有关系项立着的一步上没有关系项开始立着（`World.standing_binds_iff`）。
+
+**被围住时，平衡与耗散单独约束所立者。** 流所取用与给予的是水平。在平衡与耗散之下，跨过围住所立者的步，所立者的总水平不升，任何水平变化都使它下降（`Flow.standing_never_rises`、`Flow.change_lowers`，P25）。立着的关系项至少立着一，所以所立者的数目不多于其总水平（`Web.StandingCensus.length_le_stock`）；从第 T 步起每步被围住时，所立者的任何普查自 T 起的变化，即此后任一步立着的数目连同自 T 以来有关系项开始立着或不再立着的步，不多于第 T 步所立者的总水平（`World.enclosure_bounds_standing`）。被围住而没有关系项立着的一步上，封闭家族的总水平是零，一个关系项开始立着会使它下降，所以没有关系项开始立着（`World.enclosed_binds_standing`）。两者都不需要关于活动的前提：不需要体现，不需要只有活跃者给予或取用，也不需要活动的普查。对活动，同样的界要经体现才成立（`World.enclosure_bounds_change`，P35），因为活动只在体现时随所立者而变。
+
+所以从某步起每步被围住时，在每个选择之下，所立者的计数规律是：计数表；选择约束计数时，没有关系项立着的一步上没有关系项开始立着；选择选中平衡与耗散（`World.BoundsStanding`）时，从某步 T 起变化在一个界之内，此后没有关系项立着的一步上没有关系项开始立着（`World.enclosed_standing_counting_under`）。这是被围住时活动的规律（`World.enclosed_counting_under`，P38b）在其第二个条件中去掉体现。变化界恰在选中平衡与耗散时是所立者的规律（`World.enclosed_standing_bound_iff`），对活动则恰在选中平衡、体现与耗散时（`World.enclosed_change_bound_iff`）。
+
+见证要在选中平衡而不选体现时满足只有活跃者给予与取用。等待的队列是 P38 的闭合的队列，只改活动：下一个加入者在立着之前就活跃，所以队首每步都活跃，队空时也是（`EnclosedQueue.waiting_front`）；给予与取用的只是队首，它活跃，所以只有活跃者给予与取用（`World.waitingQueue_holds`）。在第 0 步闭合时它每步被围住，满足除耗散与体现外的全部前提；在第 T 步闭合、从 T 起在变化界之内且此后没有成员加入空队时，耗散也成立（`World.closingQueue_dissipative`），满足除体现外的全部前提（`World.waitingQueue_meets`）。不选平衡时，体现的队列（P34）满足其余全部前提，什么都不流动，每步被围住。
+
+**有限世界中。** 有限世界的每一步都被围住，所以平衡与耗散在那里单独约束所立者。在每个选择之下，有限世界中所立者的计数规律是：每步至多有某数立着的计数表；选择约束计数或选中平衡与耗散时，没有关系项立着的一步上没有关系项开始立着；选中平衡与耗散时，从第 0 步起的变化界（`World.finite_standing_counting_under`、`World.finite_standing_binds_iff`、`World.finite_standing_bound_iff`）。与活动相比（`World.finite_counting_under`），没有关系项立着的一步上没有关系项开始立着在平衡、并在耗散或体现连同只有活跃者给予之下成立，活动的对应一条则在平衡与体现、并在耗散或只有活跃者给予之下成立：去掉的仍只是平衡与耗散起约束之处的体现。新的有限见证是始终活跃的环：P38b 的平衡的环，每个位置始终活跃、被占时立着，满足除耗散与体现外的全部前提（`World.activeRing_holds`）；选中耗散时用有限的队列（P35），不选平衡时用体现的环。
+
+**依存。** 要求可判定时，前提不给依存的计数加任何规律：在每个选择之下，在每个世界中、从某步起每步被围住时，以及每步至多有某数依存时在有限世界中，对计数的一个性质在依存的每个普查中成立，恰当它对每个计数表成立（`World.dependence_counting`、`World.enclosed_dependence_counting`、`World.finite_dependence_counting`）。有限世界中依存是关系项的对，至多是其数目的平方（`pairs`、`mem_pairs`）。见证是依存的队列与环：一个条件（关系项 0，或环的第一个位置）立在一、始终活跃；队列的成员或环的位置在队中时依存于它，各需它的一个单位，每个依存都被满足；没有什么流动（`World.dependingQueue`、`World.dependingRing`）。没有什么流动、水平不变时，四个关于流的前提与平衡都成立，只剩三个关于依存网的前提：活动需要支持（每个依存都被满足）、体现（只有条件活跃，也只有它立着）与普查（[0]）（`World.still_premised`）。所以这些世界满足全部八个前提，计到每个计数表。前提只在依存与活动、水平与世系一起时约束它：活动需要支持只要求活跃者所依存的支持它，有界传递只要求后代开始立着时所依存的，其亲代也依存，所需在一个界之内。
+
+**作者反审。**
+
+*反驳 1：体现之下所立者就是活跃者，这一半是否平凡？* 是恒等，不是新的规律，所以证明直接转用活动的定理。内容在另外两处：不选体现时，一个满足其余全部前提的世界实现所立者的每个计数表，所以没有关系项立着的一步上没有关系项开始立着在那里不是规律；被围住时，所立者的界不需要体现。
+
+*反驳 2：源活跃而不立着，成员立着而不活跃，是否违背关系的读法？* 它只用于不选体现的选择，那里所立与活跃本来可以分开，体现正是使二者一致的前提（与 §63 反驳 3 相同）。选中体现时，所立者的规律就是活动的，不用这个见证。
+
+*反驳 3：被围住为所立者定下界，是否已由 P25 给出？* P25 给出所立者的总水平跨过被围住的步只降不升，任何水平变化都使它下降（continued-change-needs-openness），并由此推出交换与生起的停止。这里新加的是计数的形式与它的精确范围：所立者的普查自 T 起的变化界（`World.enclosure_bounds_standing`），以及它在每个选择之下恰在选中平衡与耗散时是规律（`World.enclosed_standing_bound_iff`）；缺平衡或缺耗散时，体现的队列与在第 0 步闭合的等待的队列实现每个计数表。所以复用 P25 的结果，不重做。
+
+*反驳 4：依存的见证是否退化？* 初稿的见证以零所需依存，什么都不立着、不活跃；一个依存什么也不需要，读者可以说它不算依存。改为条件立在一、始终活跃，每个依存需要一个单位且被满足后，定理不变，见证不再依赖零所需，所以只计所需为正的依存或只计被满足的依存，规律也相同。仍然没有什么流动：关于流的前提在那里空成立。这正是结论的内容：前提不给依存本身的计数加规律，它们约束的是依存与活动、水平与世系的联合。
+
+*反驳 5：为何不陈述所选前提都起约束时的规律？* 对活动，起约束加上的是条件的实例（P38c、P45、P46）。对所立者与依存，要逐个选择构造使所选前提都起约束、又实现所立者或依存的每个计数表的见证。按 Ren 2026-10-11 的转向（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)），选择表不再扩展：这些规律改为去掉前提、对每个世界重述，局部条件写在规律之内（[零前提计划](ZERO-PREMISE-PLAN.md)）。模块说明与记录的局限写明它们没有陈述。
+
+*反驳 6：三种计数各自的规律是否就是整体的计数规律？* 不是。三种计数之间有联合规律，例如在平衡与只有活跃者给予之下，没有关系项活跃的一步上没有关系项开始立着；这里没有陈述，记录的局限写明。
+
+**读法（AI，待 Ren）。** 被围住的展开所耗去的是立着的东西：平衡与耗散约束的是水平，所以所立者先受约束，活动只在体现时随之受约束。依存是关系的形状，前提不单独约束它的形成与消解，只在它与活动、水平与世系相遇处约束。
+
+**边界。** 离散步，每步有限的所立者与依存；所选前提都起约束时所立者与依存的计数规律、三种计数之间的联合规律没有陈述，按 Ren 的转向不再作为选择表扩展；更强的起约束读法仍开放（由 Ren 选择）；没有伦理谓词，不评价立起、不再立着、形成或消解；名称（StandsObey、DependsObey、BoundsStanding、sourcedQueue、waitingQueue、activeRing、dependingQueue、dependingRing、pairs）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
+
+## 67. 折叠 G0（P51）
+
+2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)）：
+
+> if we don't need G0 as axiom, fold it, at least for part i, and commit
+
+它回答 P42–P44 落地后的报告。报告列出 §64 的三项选择（是否以公理替换 G0；正面相关是否读作已实现的活的内容的意义；比较继续用哪一种），并提出下一项：审计第二部分哪些结果不用公理成立，以移入第一部分。AI 的读法（待 Ren）：
+- 条件成立：第一部分不需要采用 G0，第二部分中它是那一条公理的定理；这以从意义读出的正面相关为准（§64 的读法）。
+- 所以 G0 不再是所采用的公理：它的定义与已检查的刻画都保留，只改地位，在第一部分是条件，在第二部分是定理。第一项选择以此回答；第二项是折叠所用的读法，仍开放；第三项仍开放。
+- “at least for part i”：第一部分现在就做；同一条件在第二部分也成立，所以章节不再在任何地方称 G0 为所采用的公理。“at least”也读作为报告所提的更大一步留出余地：第二部分中不用公理成立的结果移入第一部分。
+
+本节是计划 P51，由本会话完成。没有新的 Lean，没有新的成果记录；改的是 G0 的地位与说到它的文字。
+
+```text
+Result(s): 复用 metaethical-core-characterization（G0、Valuation.Significant、Valuation.significant_iff、极小性反模型）、
+           held-lives-g0-is-centering（Valuation.significant_iff_held）、one-axiom-yields-g0
+           （Valuation.premises_of_unrestricted、Web.significance_undetermined、g0_of_unrestricted、relevance_least、
+           unrestricted_iff_g0、Web.unrestricted_iff_paths_g0）；不新增，不扩展
+Delta: G0 的地位：从所采用的公理改为第一部分中的条件（不用公理刻画，动力学不决定）与第二部分中公理的定理；
+       章节的前提卡、§5、第一部分的总陈述、第 10 条、第二部分各处与 §8 照此改写；七项记录的文字照此更正
+Supplied premises / correspondence: 无新前提；折叠以从意义读出的正面相关为准（§64 的读法，待 Ren）；
+       “fold”与“at least”的读法是 AI 的，待 Ren
+Evidence: 上列定理在核心回执 20261010T214440.263682Z 中，公理报告为空；本节没有新的检查
+Boundary: 不推出 G0 成立；不改任何定义或定理；正面相关的读法与比较的方式仍属 Ren；
+          核心七个模块的说明仍写“G0 仍是所采用的公理”，与下一次核心检查一起更改
+Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三）；第二部分以 G0 或其各部分为假设的定理在公理之下成立
+             （§53、§64）；回答 §64 的第一项选择
+```
+
+**改了什么。**
+- **前提卡。** G0 一行从“Ren 授权的公理，采用”改为“已折叠，不是公理”：第一部分把它作为条件陈述，由下面三条精确刻画（`significant_iff`、`significant_iff_held`），动力学不决定它（`Web.significance_undetermined`）；第二部分中它是公理的定理，各处用法由从意义读出的正面相关解除。公理一行去掉“Ren 接受之前 G0 仍是所采用的公理”。
+- **第一部分。** §5 新增“G0 折叠：一个条件，不是公理”：G0 恰是什么（连通时种子加两项中立，被持有时处处 S0 加立场中立，极小性），它与那一条公理（公理恰是对任何东西的 G0），动力学不决定它；断言它成立属于第二部分。总陈述三“意义”一条照此改写；理论的完整陈述中第 10 条的地位标为“G0 不是公理”，地位词表中的“公理”改指第二部分的一条公理。
+- **第二部分。** 开头、§6.1、§6.7、§6.8、§6.9、§6.11、§6.12 中“G0 仍是所采用的公理”与“替换须经 Ren 接受”改为折叠后的陈述；§6.1–§6.7 与 §7 的定理以 G0 或其各部分为假设，在公理之下这些假设成立，A、C、L 与 J1–J4 仍是公开的前提。
+- **§8。** 状态表与 Ren 的选择去掉“是否以公理替代 G0”“重述是否替代 G0”，记下折叠；G0 的根据就是那一条公理的根据。术语表新增 G0。
+- **一句话与两个目标。** 在它之下 G0 是定理，不再是公理；伦理方向的目标经 G0 及公开的实践前提完成，G0 现在是第二部分那一条公理的定理。
+- **记录。** 七项记录中说 G0 仍是所采用的公理、或替换待 Ren 的文字改为折叠后的陈述，各加一条历史：axiom-decomposition、closure-verdict-meets-axiom、held-lives-g0-is-centering、metaethical-core-characterization、one-axiom-yields-g0、positive-ground-open-futures、presupposition-scopes。它们的定理不变。
+- **范围与指令。** 生成之论的范围记录（前提一句）与指令登记各加一段；登记中先前“G0 仍是所采用的公理”的两段由新的一段取代，原文保留。
+
+**作者反审。**
+1. **折叠依赖一种读法。** 第二部分中 G0 是定理，是在正面相关读作已实现的活的内容的意义时（`g0_of_unrestricted`、`relevance_least`）。若 Ren 另读正面相关，例如读作继续创造更多意义（强式），G0 只在那一读法由意义推出之处是定理；那时第二部分要重新审视。第一部分的折叠不依赖这一读法：刻画与“动力学不决定”对任意意义成立。
+2. **没有新的 Lean。** 每条引用都是已在核心回执中的定理：公理之下 G0 成立且从意义读出的正面相关是满足它的最小者（`g0_of_unrestricted`、`relevance_least`），公理恰是对任何东西的 G0（`unrestricted_iff_g0`）。更精确的折叠形式——以从意义读出的正面相关，G0 恰是公理限于已实现的活的内容——没有写成 Lean，所以章节没有声称它。
+3. **G0 的名字保留。** 折叠不删 G0：它仍是定义、刻画与各处定理的假设；改的只是它不再被采用为真。G0/J 的已完成成果保持其条件范围，G0 现在由第二部分的公理给出，而不是另一条公理。
+4. **开篇未改。** Ren 的开篇（`theories/becoming/OPENING.md`，README 由它生成）的注释仍写“G0 remains the adopted axiom until this one takes its place”。按其注释，开篇只随 Ren 改；替换的文字交给 Ren。
+5. **Lean 说明滞后。** 核心七个模块的说明仍写 G0 仍是所采用的公理；改说明须重跑核心检查，按落地队列，补丁交给下一次核心检查（整合者决定）。在那之前，模块说明与章节不一致，章节为准。
+
+**边界。** 不推出 G0 成立，不改变任何定理；本节尚未经独立审查。
+
+## 68. 每个变化之律保留、失去与回返的：零前提（R6）
+
+2026-10-11。Ren 答“0”指什么时说：
+
+> pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises. but for if "lossless exist", can we find a path, to figure out, and prove along the way? i think another session is working on this already
+
+随后：
+
+> i like the direction you are going, please keep advancing, zero-premise, zero axiom(we are not physics, we derive further)
+
+（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）。熵的会话在流与网的层面研究无损的交换（`Becoming.Entropy`，以第一定律为前提）。本节在其下一层：对任意构型上的任意变化之律，不加任何前提，问什么被保留、什么失去、什么回返。按[工作板](../../../BECOMING-WORKBOARD.md)认领为 R6。
+
+```text
+Result(s): 新增 recurrence-without-premise
+Delta: 新核心模块 Becoming.Recurrence（L2，只导入 Becoming.Frame）：
+       revisits_within、Revisits、revisits_of_held、revisits_from、unheld_of_new、unlisted_of_new；
+       Marks、sumOver、le_sumOver、never_falls_over、Marks.mono、Marks.change_stops、not_marks；
+       Law.orbit、Law.Lossless、Law.Merges、Law.Returns、Law.Reachable、Law.KeepsPossibilities；
+       Law.lost_stays、Law.merged_stays、Law.Lossless.cancel、Law.lossless_of_returns、Law.Returns.reachable、
+       Law.Returns.undo；Law.Lossless.returns、Law.returns_of_reachable、Law.lossless_iff_returns、
+       Law.returns_iff_keeps、Law.lossless_of_reachable、Law.Merges.loses、Law.Lossless.unlisted、
+       Law.Lossless.no_rise、Law.rise_not_lossless；Law.succ_open、Law.pred_open；Law.withHistory、
+       Law.withHistory_lossless、Law.withHistory_new、Law.withHistory_never_returns、
+       Law.withHistory_loses_beginning、Law.withHistory_unlisted、Law.present_orbit、Law.return_keeps_history、
+       Law.present_forgets；Law.process、Law.run；Run.revisits_from、Run.change_stops、Reach.lost_stays
+Supplied premises / correspondence: 无关于展开或变化之律的前提；“某个列表持有这些构型”不对任何展开假设，
+       写进用到它的规律之内；不用可判定性；表示的承诺只有离散的步；无损与回返的等价只对确定的律（next : S → S）陈述
+Evidence: 合并检查器回执 20261011T011019.444120Z（2115 项定理、3194 项声明审计，全部源声明公理报告为空；Recurrence 55 项定理、68 项声明），
+          外围回执 20261011T011213.027508Z；新声明先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms 全部为空
+Boundary: 离散的步；“有限多构型”指某个列表持有它们；无损与回返的等价只对确定的律；遗忘的计数未陈述；尚无独立审查
+Integration: 记录 recurrence-without-premise；计划 §10 R6；章节 §9 的脊柱表与第一部分；模块说明、根模块、包 README 与检查器的范围；工作板 R6
+```
+
+**机制。**
+
+- **鸽巢，不判定任何东西。** 一个列表持有一个序列的前 l.length + 1 项时，其中两项相同（`revisits_within`）。证明对列表归纳：每一项在 a :: l 中，就是 a 或在 l 中，这是给定的成员关系的两种情形，不判定构型是否相等。若两项是 a，得到重访；若没有一项是 a，全在 l 中；若恰一项是 a，跳过它（`skipAt`）后其余在 l 中。于是有限多构型中的序列从每一步起都重访（`revisits_from`），任何过程的任何运行也是（`Run.revisits_from`）；从不重访的序列没有列表持有（`unheld_of_new`、`unlisted_of_new`）：不重访需要开放。
+- **有标记的变化停止。** 构型的一个量沿序列从不下降、跨每次变化都上升（`Marks`）时，它在有限多构型上有界（`le_sumOver`），每次变化至少加一，所以变化不复现（`Marks.change_stops`）。变化复现的有限展开中，没有量标记它（`not_marks`）。
+- **每个律保留与失去的。** 对确定的律 next：某一步不能到达的构型，以后任何一步都不能到达（`Law.lost_stays`）；任何过程中，沿一条可行路径失去的可达，在每个延续中都失去（`Reach.lost_stays`，即 endpoint-loss-and-return 的“损失沿延续保持”在脊柱上的形式）。被合并的两个构型以后任何一步都不分开（`Law.merged_stays`）。每个构型都回返时律不合并任何东西（`Law.lossless_of_returns`，用两个回返时间的乘积）；回返的构型在每一步都可得（`Law.Returns.reachable`）。撤销就是继续：s 回返时，同一律的继续把 next s 带回 s（`Law.Returns.undo`）。
+- **有限多构型中，无损即回返。** 列表持有每个构型时，三者是一：律不合并任何东西（`Law.Lossless`）；每个构型都回返；每个构型在每一步都可得（`Law.lossless_iff_returns`、`Law.returns_iff_keeps`）。无损推出回返：s 的轨道重访，在 i < j 处相同，无损使前 i 步可以消去（`Law.Lossless.cancel`），所以 s 在 j − i 步后回返（`Law.Lossless.returns`）。在列表长度那么多步后可得推出回返：通向 s 的轨道在列表长度之内重访，重访点之后是一个环，s 在环上（`Law.returns_of_reachable`）。于是合并永久失去一个可能（`Law.Merges.loses`）；无损而有构型不回返，就没有列表持有每个构型（`Law.Lossless.unlisted`）。无损时，沿轨道从不下降的量在轨道上不变（`Law.Lossless.no_rise`）；所以沿轨道从不下降而在某步上升的量，即一个箭头，需要合并（`Law.rise_not_lossless`）。
+- **开放的世界把三者分开。** 往上数（`Nat.succ`）不合并、不回返、一步后不能再有开端，并且每步上升：无损的箭头（`Law.succ_open`）。往下数（`Nat.pred`）把零与一合并，却每个数在每一步都可得（`Law.pred_open`）。“有限多构型”这一条件，两个方向都需要。
+- **保留历史。** 让当下按律继续、并进入过去（`Law.withHistory`），每个律都不合并（`Law.withHistory_lossless`），从不重访（过去的长度每步加一，`Law.withHistory_new`），从不回返（`Law.withHistory_never_returns`）；开端在第一步之后就不能再有（`Law.withHistory_loses_beginning`）；没有列表持有一个展开所保留的历史（`Law.withHistory_unlisted`）。保留的历史的当下按律本身继续（`Law.present_orbit`）。当下回返时，它带着另一段历史回来（`Law.return_keeps_history`）。展开经过的构型有列表持有时，当下遗忘：从每一步起，两段不同的历史共有一个当下（`Law.present_forgets`）。
+
+**反驳与回答（作者）。**
+
+*反驳 1：这些是有限集合的教科书事实吗？* 数学是：鸽巢原理；有限集上的单射是双射，双射的每个点都回返。作为复用的数学记入，不作为数学上的新发现。增量是：在脊柱上以零前提、不用可判定性陈述；合并、可能的失去与回返在有限多构型中的等价，以及开放世界中把它们分开的两个见证；保留历史的构造与它需要开放；与静止规律的连接（反驳 2）。
+
+*反驳 2：这里的“无损”是不合并，不是 Ren 所说交换中不损失量。二者怎样相关？* 第一定律之下，被围住的家族的构型落在有限多个之中（熵的会话的 `configurations_exact`）。变化是构型的函数时（熵的会话的 `Web.Determined`），本节的规律就作用于它：不合并恰是回返；有量的损失（耗散）时从不重访，有限多构型中从不重访的变化停止，停止就合并两个构型（熵的会话的 `Web.merges_of_settles`、`Flow.Balances.merges_of_dissipates`）。所以在有限的围住之内，量的损失推出区分的损失。这些作为实例定理，在两边都落地后给出。
+
+*反驳 3：“保留历史需要开放”是否平凡？* 构造上，历史有无穷多，所以是的。内容在对照：同一展开，保留其历史时无损而有箭头（过去的长度），在有限多构型中的当下却遗忘。无损与箭头只在开放中共存（`Law.succ_open`、`Law.withHistory_unlisted`）；在有限多构型中，箭头需要合并（`Law.rise_not_lossless`）。
+
+*反驳 4：变化停止的结论是否强于所证？* `Marks.change_stops` 证的是变化不复现（复现的否定），不是有一步之后不再变化；后者需要 LPO（`Becoming.Change` 的 `Web.lpo_of_ending`）。
+
+*反驳 5：非确定的过程怎样？* 重访、变化停止与失去的可达保持失去，对每个过程陈述；无损与回返的等价只对确定的律。过程的形式（例如每个构型至多一个前驱）是下一步。
+
+**读法（AI）。** Ren 的类比：原子层面每次交换守恒能量，熵仍增加，零前提。物理学的第二定律用到两样东西：守恒的动力学，与一个低熵的开端（过去假设）。这里两样都不假设。在有限多构型中，律不合并任何东西，恰是每个构型都回返，没有任何量上升；有上升（箭头），就有合并，就有一个可能永久失去。所以无损的交换存在，而且恰在两处：有限多构型中的回返（没有箭头），与保留其历史的生成（有箭头，需要开放）。物理学设为前提的低熵开端，在这里是保留的历史的开端：它在第一步之后就不能再有（`Law.withHistory_loses_beginning`），是推出的，不是假设的。熵读作有限的当下对其历史的遗忘：两段历史共有一个当下（`Law.present_forgets`）。Ren 的“karma passes, and that passing has to have a form of change which its reverse transformation will take another change”：撤销就是继续（`Law.Returns.undo`），当下回来而历史不回来（`Law.return_keeps_history`）。这些读法属于 AI；与物理学的对应只是读法，不是物理推导。
+
+**边界。** 离散的步；“有限多构型”指某个列表持有它们；无损与回返的等价只对确定的律；遗忘的计数（需要判定构型相等）未陈述；尚无独立审查。
+
+## 69. 熵：生成留下的历史与守住它的代价（R5）
 
 2026-10-11。Ren 在 §59.4 之后说（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)）：
 
@@ -4326,53 +4556,6 @@ Integration: 记录 entropy-history-and-record；计划 §10 R5；章节第一�
 **读法（AI，待 Ren）。** 生成留下差异，这一点不需要前提：每次变化都是一次交换，逆转也是一次交换，历史只增不减。需要代价的是守住它：在有限的围住之内，守住历史的构型会耗尽构型，守住一个不断上升的量要合并区分，把记录放在守恒量之中就是每次交换的最小损失。所以 Ren 所说的熵可以有两种读法：作为历史，它不需要前提；作为守恒量中的记录，它就是脊柱的耗散。两者之间是精确的：耗散恰是第一律加上守恒量中的记录。
 
 **边界。** 离散步，固定单位的自然数量；确定的变化（`Web.Determined`）是合并定理的假设；`Merges` 的结论是双重否定；只陈述了合并与否的二分，没有陈述可达构型的个数不增；粗粒化的熵与有序的开端没有陈述；记录作为普查中的关系项、使算入记录的流本身是一个世界，仍开放；与热力学的对应是读法；尚无独立审查。
-
-## 67. 折叠 G0（P51）
-
-2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)）：
-
-> if we don't need G0 as axiom, fold it, at least for part i, and commit
-
-它回答 P42–P44 落地后的报告。报告列出 §64 的三项选择（是否以公理替换 G0；正面相关是否读作已实现的活的内容的意义；比较继续用哪一种），并提出下一项：审计第二部分哪些结果不用公理成立，以移入第一部分。AI 的读法（待 Ren）：
-- 条件成立：第一部分不需要采用 G0，第二部分中它是那一条公理的定理；这以从意义读出的正面相关为准（§64 的读法）。
-- 所以 G0 不再是所采用的公理：它的定义与已检查的刻画都保留，只改地位，在第一部分是条件，在第二部分是定理。第一项选择以此回答；第二项是折叠所用的读法，仍开放；第三项仍开放。
-- “at least for part i”：第一部分现在就做；同一条件在第二部分也成立，所以章节不再在任何地方称 G0 为所采用的公理。“at least”也读作为报告所提的更大一步留出余地：第二部分中不用公理成立的结果移入第一部分。
-
-本节是计划 P51，由本会话完成。没有新的 Lean，没有新的成果记录；改的是 G0 的地位与说到它的文字。
-
-```text
-Result(s): 复用 metaethical-core-characterization（G0、Valuation.Significant、Valuation.significant_iff、极小性反模型）、
-           held-lives-g0-is-centering（Valuation.significant_iff_held）、one-axiom-yields-g0
-           （Valuation.premises_of_unrestricted、Web.significance_undetermined、g0_of_unrestricted、relevance_least、
-           unrestricted_iff_g0、Web.unrestricted_iff_paths_g0）；不新增，不扩展
-Delta: G0 的地位：从所采用的公理改为第一部分中的条件（不用公理刻画，动力学不决定）与第二部分中公理的定理；
-       章节的前提卡、§5、第一部分的总陈述、第 10 条、第二部分各处与 §8 照此改写；七项记录的文字照此更正
-Supplied premises / correspondence: 无新前提；折叠以从意义读出的正面相关为准（§64 的读法，待 Ren）；
-       “fold”与“at least”的读法是 AI 的，待 Ren
-Evidence: 上列定理在核心回执 20261010T214440.263682Z 中，公理报告为空；本节没有新的检查
-Boundary: 不推出 G0 成立；不改任何定义或定理；正面相关的读法与比较的方式仍属 Ren；
-          核心七个模块的说明仍写“G0 仍是所采用的公理”，与下一次核心检查一起更改
-Integration: 第一部分得到 G0 的条件陈述（章节 §5 与总陈述三）；第二部分以 G0 或其各部分为假设的定理在公理之下成立
-             （§53、§64）；回答 §64 的第一项选择
-```
-
-**改了什么。**
-- **前提卡。** G0 一行从“Ren 授权的公理，采用”改为“已折叠，不是公理”：第一部分把它作为条件陈述，由下面三条精确刻画（`significant_iff`、`significant_iff_held`），动力学不决定它（`Web.significance_undetermined`）；第二部分中它是公理的定理，各处用法由从意义读出的正面相关解除。公理一行去掉“Ren 接受之前 G0 仍是所采用的公理”。
-- **第一部分。** §5 新增“G0 折叠：一个条件，不是公理”：G0 恰是什么（连通时种子加两项中立，被持有时处处 S0 加立场中立，极小性），它与那一条公理（公理恰是对任何东西的 G0），动力学不决定它；断言它成立属于第二部分。总陈述三“意义”一条照此改写；理论的完整陈述中第 10 条的地位标为“G0 不是公理”，地位词表中的“公理”改指第二部分的一条公理。
-- **第二部分。** 开头、§6.1、§6.7、§6.8、§6.9、§6.11、§6.12 中“G0 仍是所采用的公理”与“替换须经 Ren 接受”改为折叠后的陈述；§6.1–§6.7 与 §7 的定理以 G0 或其各部分为假设，在公理之下这些假设成立，A、C、L 与 J1–J4 仍是公开的前提。
-- **§8。** 状态表与 Ren 的选择去掉“是否以公理替代 G0”“重述是否替代 G0”，记下折叠；G0 的根据就是那一条公理的根据。术语表新增 G0。
-- **一句话与两个目标。** 在它之下 G0 是定理，不再是公理；伦理方向的目标经 G0 及公开的实践前提完成，G0 现在是第二部分那一条公理的定理。
-- **记录。** 七项记录中说 G0 仍是所采用的公理、或替换待 Ren 的文字改为折叠后的陈述，各加一条历史：axiom-decomposition、closure-verdict-meets-axiom、held-lives-g0-is-centering、metaethical-core-characterization、one-axiom-yields-g0、positive-ground-open-futures、presupposition-scopes。它们的定理不变。
-- **范围与指令。** 生成之论的范围记录（前提一句）与指令登记各加一段；登记中先前“G0 仍是所采用的公理”的两段由新的一段取代，原文保留。
-
-**作者反审。**
-1. **折叠依赖一种读法。** 第二部分中 G0 是定理，是在正面相关读作已实现的活的内容的意义时（`g0_of_unrestricted`、`relevance_least`）。若 Ren 另读正面相关，例如读作继续创造更多意义（强式），G0 只在那一读法由意义推出之处是定理；那时第二部分要重新审视。第一部分的折叠不依赖这一读法：刻画与“动力学不决定”对任意意义成立。
-2. **没有新的 Lean。** 每条引用都是已在核心回执中的定理：公理之下 G0 成立且从意义读出的正面相关是满足它的最小者（`g0_of_unrestricted`、`relevance_least`），公理恰是对任何东西的 G0（`unrestricted_iff_g0`）。更精确的折叠形式——以从意义读出的正面相关，G0 恰是公理限于已实现的活的内容——没有写成 Lean，所以章节没有声称它。
-3. **G0 的名字保留。** 折叠不删 G0：它仍是定义、刻画与各处定理的假设；改的只是它不再被采用为真。G0/J 的已完成成果保持其条件范围，G0 现在由第二部分的公理给出，而不是另一条公理。
-4. **开篇未改。** Ren 的开篇（`theories/becoming/OPENING.md`，README 由它生成）的注释仍写“G0 remains the adopted axiom until this one takes its place”。按其注释，开篇只随 Ren 改；替换的文字交给 Ren。
-5. **Lean 说明滞后。** 核心七个模块的说明仍写 G0 仍是所采用的公理；改说明须重跑核心检查，按落地队列，补丁交给下一次核心检查（整合者决定）。在那之前，模块说明与章节不一致，章节为准。
-
-**边界。** 不推出 G0 成立，不改变任何定理；本节尚未经独立审查。
 
 ## English summary
 
@@ -4833,7 +5016,25 @@ Covering holds by construction: along a relation, every closed region holding th
 
 Names follow Ren's naming criteria: `Protection` becomes `Trophic`, “verdict” becomes “comparison” and “commons” becomes “common condition”. The first checker run failed on a name clash with the Bridge's `Closure` (receipt 20261010T173822.496446Z retained), so the core's closure became `WithinClosure`, and the Bridge now proves the two are one closure (`withinClosure_iff_closure`). Receipt 20261010T174514.186722Z (Feedback 100, Boundaries 47, Bridge 35); periphery receipt 20261010T175236.872210Z. The text after the handling has not been independently reviewed.
 
+**Counting where premises bind in finite worlds and under enclosure (P46).** Following Ren's "let's aim for the strongest claim without axiom, as the first part" and "aim a complete theory of becoming, and finish related work", this states the two laws of counting P45 left open (section 60, objection 4), and the one between them, so that the laws of counting where premises bind are stated in unrestricted, finite and eventually enclosed worlds.
+- **Enclosure, every premise binding.** With every step from some step on enclosed, where every premise binds the laws of counting under the eight are those under enclosure and that something arises (`World.enclosed_binding_counting`), the enclosed queue with its web saturated binding every premise, the census included (`World.enclosedQueue_saturated_binds`).
+- **Finite worlds, each selection.** No finite world binds the census, so under a selection with it every property is a law there (`World.finite_binding_census`). Under each selection without it, where each selected premise binds, the laws are those of `World.finite_counting_under` and at most three more (`World.finite_binding_counting_under`): something is active and something arises, exactly where they are added in general (`World.finite_binding_activity_iff`, `World.finite_binding_arising_iff`); and something arises across a step at which something is active, exactly where embodiment is selected and the selection binds counting or bounds change, or selects bounded transmission with only active relata giving or with only active relata taking and dissipation (`World.finite_binding_joint_iff`). The two differences from P45 are what finiteness adds: every step is enclosed, so balance, embodiment and dissipation bind counting, and taking with dissipation gives only active relata giving (`World.Finite.acting`).
+- **Finite witnesses.** A relay beside a ring, handing one of the two units one place stands at on to another whatever holds them (`World.relayRing_binding`); a lossy ring, whose front's place across one step exchanges a unit each way with itself and each place coming to be held and loses one unit more (`World.lossyRing_binding`); a balanced ring whose front's place exchanges one unit more each way with itself across the step after something joins (`World.exchangingRing_binding`); and the finite queue with its web saturated.
+- **Enclosure from some step on, each selection.** Under each selection, where its premises bind, the laws are those of `World.enclosed_counting_under` and the three of P45 (`World.enclosed_binding_counting_under`), each under exactly the same selections as where nothing is enclosed (`World.enclosed_binding_activity_iff`, `World.enclosed_binding_arising_iff`, `World.enclosed_binding_joint_iff`): enclosure and binding add their laws each on its own, since what arises may arise before enclosure. The relay is enclosed at every step and the lossy queue after its gift (`World.relayQueue_enclosed`, `World.lossyQueue_enclosed`); without dissipation, a queue whose front exchanges one unit more with itself is enclosed throughout (`World.exchangingQueue_binding`); and with balance, embodiment and dissipation but neither only active relata giving nor taking, a queue closes at a step at which something is active, from which on nothing arises across a step at which nothing is active (`Tally.occupied_from`, found by a bounded search), its front standing one spare unit there and shedding it, so that dissipation binds at a closed step (`World.sheddingQueue_binding`).
+
+On the AI's reading, pending Ren: binding still leaves only its instances in the counts; finite worlds and eventually enclosed ones differ at the step at which something arises, which in a finite world is itself enclosed. Records extended or revised: counting-under-enclosure, whole-law-of-counting. Receipt 20261011T001147.906623Z (Counting 212). Not yet independently reviewed; the author's counterreview is in section 63.
+
 **P44: G0's uses under the axiom (§64).** Every occurrence of G0 in the core (9 files) and the periphery's generative-capacity modules (19 files) was audited. Each use is a hypothesis for an arbitrary positive relevance, a characterization, a countermodel or a mention in prose. Read from significance, positive relevance is realized living content whose continuation has significance from every standpoint. Under the axiom it satisfies G0 on every frame and is the least positive relevance that does, exactly the realized living content (`g0_of_unrestricted`, `relevance_least`), so every use is discharged; the Bridge states this for the periphery's interface and for its three imported theorems. The axiom is exactly G0 for anything, with “positive” weakened to “has significance” (`unrestricted_iff_g0`). One reading is forced: with bare significance the reason premise A gives a reason for any new content, living or not (`articulates_total`, `Widening.bare_forces_reason`). Read on living content, A gives D, and the universal reason follows from the axiom with no seed, neutrality or connection premise (`universal_reason_of_unrestricted`). Read on possibilities, what a course's levels admit, extension under C is, under the axiom, retaining and adding what has significance (`Ranking.possible_extends_iff`). It ranks the absence of an overdrawing formation, restraint and sharing as the whole-run reading does, and it withholds no event (`Ranking.malignant_possible`). It leaves a formation that adds no possibility unranked against its absence, where both readings of `living` rank its presence higher (`Ranking.possible_tie`). Possibilities first, then a reading, is a strict order satisfying C that ranks that presence higher, and it also ranks a rest below uninterrupted activity (`Ranking.Rest.rest_ranked_below`). The records one-axiom-yields-g0 and ranking-under-readings are extended. G0 remains the adopted axiom; the replacement, the reading of positive relevance and the comparison of courses are Ren's choices. Receipt 20261010T214440.263682Z (Relevance 30, Bridge 40); periphery receipt 20261010T222130.672025Z. P42 and P43 were first checked on their branch (receipts 20261010T174514.186722Z and 20261010T175236.872210Z); merged with R3 and R4, P42 to P44 landed together, and the receipt above covers the merged package. Not yet independently reviewed.
+
+**Counting what stands and what depends (P47).** Following Ren's "let's aim for the strongest claim without axiom, as the first part" and "aim a complete theory of becoming, and finish related work", this states what the premises add to the two other listings of `Becoming.Population`, the census of what stands and the census of dependences, the item whole-law-of-counting and counting-under-enclosure left open, so that Part I's laws of counting are stated, with no axiom, in all three readings. New core module `Becoming.Standing` (importing `Becoming.Counting`).
+- **What stands, unenclosed.** Where every relatum is embodied, what stands is what is active, and the counts of the two censuses obey the same properties (`World.Embodied.standsObey_iff`). Without embodiment a queue fed from a source, the driven queue whose driver is active throughout and stands at nothing while its members stand and never act, meets every other premise whatever its counts (`World.sourcedQueue_holds`). So under each selection the laws of counting what stands are those of activity (`World.standing_counting_under`, `World.standing_iff_counting`, `World.standing_binds_iff`).
+- **Enclosure bounds what stands under balance and dissipation alone.** With every step from `T` on enclosed, the change from `T` of any census of what stands stays within the total standing at `T` (`World.enclosure_bounds_standing`), and nothing comes to stand across an enclosed step at which nothing stands (`World.enclosed_binds_standing`), with no premise on activity: what the flow takes and gives is standing, and embodiment is what carries the bound to what is active. So with enclosure from some step on the laws of counting what stands are those of `World.enclosed_counting_under` with embodiment dropped from the condition for a change bound (`World.enclosed_standing_counting_under`), a change bound being a law exactly where balance and dissipation are selected (`World.enclosed_standing_bound_iff`). Where balance is selected without embodiment the witnesses are waiting queues, closing queues whose next to join is active before it stands, so that the front is active at every step (`World.waitingQueue_holds`).
+- **Finite worlds.** Every step is enclosed, so the laws of counting what stands are those of a tally with at most some number standing at each step, nothing coming to stand across a step at which nothing stands where the selection binds counting or selects balance and dissipation, and a change bound from the first step where it selects balance and dissipation (`World.finite_standing_counting_under`, `World.finite_standing_binds_iff`, `World.finite_standing_bound_iff`), with a ring each of whose places is active throughout as the new witness (`World.activeRing_holds`).
+- **Dependence.** With requiring decided, the premises add nothing to the law of counting dependences, under each selection, with enclosure from some step on and, with at most some number holding at each step, in finite worlds (`World.dependence_counting`, `World.enclosed_dependence_counting`, `World.finite_dependence_counting`). A queue and a ring whose members depend while in it on a common condition standing at one and active throughout, each needing a unit of it and met, with nothing flowing, meet all eight premises whatever the counts (`World.still_premised`, `World.dependingQueue_premised`, `World.dependingRing_premised`). A first draft had the dependences at need nothing; the met dependence at need one removes that objection without changing the theorems.
+
+On the AI's reading, pending Ren: what an enclosed unfolding spends is what stands, activity being bound with it only where embodied; the premises bear on dependence only where it meets activity, standing and descent. The laws where each selected premise binds, and joint laws of the three counts, are not stated for what stands and what depends; following Ren's redirect of 11 October the selection tables are not extended, and these laws are to be restated for every world with no premise ([zero-premise plan](ZERO-PREMISE-PLAN.md)). New record counting-standing-and-dependence; counting-under-enclosure and whole-law-of-counting revised. Receipt 20261011T003217.297180Z (Standing 38). Not yet independently reviewed; the author's counterreview is in section 65.
+
+**What every law of change keeps, loses and returns to, with no premise (R6).** Asked what "0" meant, Ren wrote on 11 October 2026 that at the atomic level each exchange conserves energy and entropy still rises, with zero premises, and asked whether, if lossless exchange exists, a path can be found and proved along the way; then: ‘please keep advancing, zero-premise, zero axiom(we are not physics, we derive further)’ ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). A new core module, `Becoming.Recurrence`, importing only `Becoming.Frame`, states what holds of every law of change on configurations of any kind, with no premise and no decidability; that a list holds the configurations is a condition written into each law that uses it. A list holding the first `l.length + 1` values of a sequence holds two equal ones (`revisits_within`, a pigeonhole by induction on the list that uses membership as given), so a sequence held by a list revisits from every step on, as does every run of every process (`Run.revisits_from`), and no list holds a sequence that never revisits (`unlisted_of_new`). A quantity of the configuration that never falls and rises across every change (`Marks`) stops change within finitely many configurations (`Marks.change_stops`). Under a determined law a possibility lost stays lost and configurations merged stay merged (`Law.lost_stays`, `Law.merged_stays`, and `Reach.lost_stays` for every process). Where a list holds every configuration, merging nothing, every configuration returning and every configuration reachable at every step are one (`Law.lossless_iff_returns`, `Law.returns_iff_keeps`); losing nothing, no quantity rises along an orbit, so an arrow needs a merge (`Law.Lossless.no_rise`, `Law.rise_not_lossless`), and a merge loses a possibility for good (`Law.Merges.loses`). Open worlds separate the three: counting on merges nothing, never returns and rises at every step, and counting down merges yet keeps every possibility (`Law.succ_open`, `Law.pred_open`). Keeping its history, every law merges nothing, never returns, cannot have its beginning again after the first step, and has no list holding it (`Law.withHistory_lossless`, `Law.withHistory_never_returns`, `Law.withHistory_loses_beginning`, `Law.withHistory_unlisted`); where the present returns it comes back with another history (`Law.return_keeps_history`), and within finitely many configurations two different histories share one present from every step on (`Law.present_forgets`). On the AI's reading: lossless exchange exists exactly as return within finitely many configurations, with no arrow, and as becoming that keeps its history, with an arrow and an open world; the low-entropy beginning that physics supplies is here the beginning of the kept history, which cannot be had again; entropy reads as the forgetting of a finite present. The mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is credited as reused. Record recurrence-without-premise added. Receipt 20261011T011019.444120Z, periphery receipt 20261011T011213.027508Z. Not yet independently reviewed; the author's counterreview is in section 68.
 
 **Entropy: what becoming leaves, and what holding it costs (R5).** After section 59.4 Ren read the least loss per exchange as entropy (‘I know what "Every exchange loses at least one smallest amount" is now, it is entropy’), asked whether 0 is possible and whether entropy can be derived (‘so that makes me to speculate if 0 is possible, if we can also derive entropy from this, if we can, spawn a new session to focus on this’), and confirmed that the case of 0 means zero premises (‘pure thermodynamics, at atomic level, each exchange between objects holds the conservation of energy, but entropy still rise. zero premises. but for if "lossless exist", can we find a path, to figure out, and prove along the way?’) ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). The new module `Becoming.Entropy` answers, strongest form first.
 
@@ -4847,6 +5048,6 @@ Names follow Ren's naming criteria: `Protection` becomes `Trophic`, “verdict�
 - **Holding the history.** A configuration carrying the history makes its reading an arrow (`Flow.Balances.arrow_of_carries`), so exchange stops within the configurations (`Flow.Balances.exchange_stops_of_carries`), and a finite world under the first law that keeps exchanging forgets (`World.forgets`).
 - **An arrow drawn from beyond.** In `Gathering` a record takes a unit from a new relatum at every step: every exchange conserves exactly, every step is enclosed, and the record's level rises without end, in a world that is not finite (`Gathering.gathers`).
 
-On the AI's reading, pending Ren: becoming leaves a difference with no premise, as history; what costs is holding it. In a finite enclosure, a configuration that holds the history runs out of configurations, a rising quantity of the levels needs a merging of distinctions, and the record held in the conserved amount is exactly the least loss per exchange. So Ren's entropy has two readings, exactly related: as history it needs no premise; as the record in the conserved amount it is the spine's dissipation. Correspondences to Clausius, Boltzmann, Zermelo, Loschmidt, Landauer, Bennett and Gouy–Stodola are readings, not physical derivations; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated. Record entropy-history-and-record added. Receipt 20261011T001043.806392Z (Entropy 172 theorems, 220 declaration audits), periphery receipt 20261011T001757.802413Z. Not yet independently reviewed; the author's counterreview is in section 65.
+On the AI's reading, pending Ren: becoming leaves a difference with no premise, as history; what costs is holding it. In a finite enclosure, a configuration that holds the history runs out of configurations, a rising quantity of the levels needs a merging of distinctions, and the record held in the conserved amount is exactly the least loss per exchange. So Ren's entropy has two readings, exactly related: as history it needs no premise; as the record in the conserved amount it is the spine's dissipation. Correspondences to Clausius, Boltzmann, Zermelo, Loschmidt, Landauer, Bennett and Gouy–Stodola are readings, not physical derivations; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated. Record entropy-history-and-record added. Receipt 20261011T001043.806392Z (Entropy 172 theorems, 220 declaration audits), periphery receipt 20261011T001757.802413Z. Not yet independently reviewed; the author's counterreview is in section 69.
 
-The package now has 2143 theorems and 3213 declaration audits, over a core closure of 41 modules and a package of 39, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 64, 65 and 67. The periphery bridge passed against this core (receipt 20261011T001757.802413Z).
+The package now has @THM@ theorems and @DECL@ declaration audits, over a core closure of @CLOS@ modules and a package of @PKG@, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 65 and 67 to 69. The periphery bridge passed against this core (receipt @PERI@).

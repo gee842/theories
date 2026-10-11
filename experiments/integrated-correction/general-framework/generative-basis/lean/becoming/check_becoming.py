@@ -40,13 +40,13 @@ import check as audit_support  # noqa: E402
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
-CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Dependence",
+CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Openness", "Becoming.Counting", "Becoming.Resolution", "Becoming.Entropy",
-        "Becoming.Continuation", "Becoming.Admission",
+        "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
+        "Becoming.Entropy", "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
@@ -62,6 +62,16 @@ SCOPE = (
     "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
     "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
     "configurations its actual executions reach, and a sound policy secures its goal there. "
+    "Recurrence: with no premise and no decidability, a list holding the first l.length + 1 values "
+    "of a sequence holds two equal ones, so a sequence that never revisits has no list holding it; "
+    "a quantity that never falls and rises across every change stops change within finitely many "
+    "configurations; under a determined law a lost possibility stays lost and merged configurations "
+    "stay merged, and where a list holds every configuration, merging nothing, every configuration "
+    "returning and every configuration reachable at every step are one, a rise along an orbit needs a "
+    "merge and a merge loses a possibility for good, while counting on and counting down separate "
+    "the three in an open world; keeping its history every law merges nothing, never returns, "
+    "cannot have its beginning again and has no list holding it, and within finitely many "
+    "configurations two histories share one present from every step on. "
     "Renewal: a run read through observables of conditions is one relational unfolding; an observable "
     "that never rises from some step on falls only finitely often, with depletion, recurrent renewal "
     "under a natural-number rank and unrenewed drawdown as its cases; in one process from one "
@@ -600,6 +610,43 @@ SCOPE = (
     "bounded, and a lossy queue, its front exchanging a unit each way with itself and each "
     "member joining and losing one unit more, and a relay handing one of two units to a "
     "ground relatum and losing the other, witness the rest. "
+    "With every step from some step on enclosed, where every premise binds the laws of "
+    "counting under the eight are those under enclosure and that something arises, an "
+    "enclosed queue with its web saturated binding every premise. No finite world binds a "
+    "selection with the census; in finite worlds, under each selection without it, where each "
+    "selected premise binds, the laws of counting are those of finite worlds under the "
+    "selection and the same three, the third also where embodiment is selected with balance "
+    "and dissipation, or with only active relata taking, dissipation and bounded transmission, "
+    "which in a finite world give only active relata giving; a relay beside a ring, a lossy "
+    "ring and a ring exchanging a unit each way with its front's place witness them. "
+    "With every step from some step on enclosed, where the premises of each selection bind, "
+    "the laws of counting are those under enclosure and the same three, each under the same "
+    "selections as where nothing is enclosed, since what arises may arise before enclosure; "
+    "the relay and the lossy queue, a queue exchanging a unit each way with its front, and a "
+    "queue closing at a step at which something is active, whose front sheds a spare unit "
+    "there so that dissipation binds at a closed step, witness them. "
+    "Standing: where every relatum is embodied what stands is what is active, and where "
+    "embodiment is not selected a queue whose members stand without acting, fed by a ground "
+    "relatum active throughout and standing at nothing that exchanges a unit each way with "
+    "every ground relatum, meets every other premise whatever its counts, so under each "
+    "selection the laws of counting what stands are those of counting what is active; under "
+    "balance and dissipation alone, with every step from some step on enclosed, the change of "
+    "any census of what stands stays within the total standing at that step and nothing comes "
+    "to stand across an enclosed step at which nothing stands, so with enclosure from some "
+    "step on the laws of counting what stands add, where balance and dissipation are selected, "
+    "a change bound from some step with nothing coming to stand from then on across a step at "
+    "which nothing stands, a waiting queue, whose next to join is active before it stands, "
+    "witnessing this without embodiment; in finite worlds the laws of counting what stands are "
+    "those of a tally with at most some number standing at each step, nothing coming to stand "
+    "across a step at which nothing stands where the selection binds counting or selects "
+    "balance and dissipation, and a change bound from the first step where it selects balance "
+    "and dissipation, a ring each of whose places is active throughout witnessing the rest. "
+    "The premises add nothing to the law of counting dependences: members of a queue, or "
+    "places of a ring, depending while in it on a common condition standing at one and "
+    "active throughout, each needing a unit of it and met, with nothing flowing, meet all "
+    "eight whatever the counts, so under each "
+    "selection, with enclosure from some step on and in finite worlds, where at most some "
+    "number hold at each step, the laws of counting dependences are the tally's. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "

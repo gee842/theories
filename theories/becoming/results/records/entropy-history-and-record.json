@@ -142,8 +142,8 @@
     "en": "Discrete steps, natural-number amounts at a fixed unit; whether ‘entropy’ names the history or the record in the conserved amount is Ren's decision; the least loss is decomposed, not derived; determined change is a hypothesis of the merging theorems, and the conclusions of merges_of_* are double negations; only the dichotomy of merging or not is stated, not that the number of reachable configurations never rises; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated; the flow with the record counted has Option conditions and is not a world of one kind of relatum; the correspondences to thermodynamics are readings, not physical derivations; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T001043.806392Z）：Becoming.Entropy 的 220 项声明审计全部空依赖（172 项定理；先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖 2143 项定理、3213 项声明审计，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译；外围回执 20261011T001757.802413Z 通过。尚无独立审查；作者反审见整合文档 §65。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T001043.806392Z): the 220 declaration audits of Becoming.Entropy all empty (172 theorems; first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers 2143 theorems and 3213 declaration audits, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T001757.802413Z passed. Not yet independently reviewed; the author's counterreview is in section 65 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T001043.806392Z）：Becoming.Entropy 的 220 项声明审计全部空依赖（172 项定理；先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖 2143 项定理、3213 项声明审计，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译；外围回执 20261011T001757.802413Z 通过。尚无独立审查；作者反审见整合文档 §69。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T001043.806392Z): the 220 declaration audits of Becoming.Entropy all empty (172 theorems; first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers 2143 theorems and 3213 declaration audits, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261011T001757.802413Z passed. Not yet independently reviewed; the author's counterreview is in section 69 of the integration note."
   },
   "next_delta": {
     "zh": "由 Ren 决定“熵”的读法（历史或守恒量中的记录）；可达构型的个数在确定的变化下不增，并在不合并时恒定；把记录作为普查中的关系项，使算入记录的流本身是一个世界；粗粒化的熵与关于开端的前提（外围）；连续时间与实数量；独立审查。",
@@ -152,7 +152,7 @@
   "history": [
     {
       "zh": "2026-10-11：作为统一计划 R5 新增，按 Ren“I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy … so that makes me to speculate if 0 is possible, if we can also derive entropy from this”与零前提的确认（sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md）；见整合文档 §61。",
-      "en": "2026-10-11: added as R5 of the unification plan, following Ren's ‘I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy … so that makes me to speculate if 0 is possible, if we can also derive entropy from this’ and the confirmation of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); see section 65 of the integration note."
+      "en": "2026-10-11: added as R5 of the unification plan, following Ren's ‘I know what \"Every exchange loses at least one smallest amount\" is now, it is entropy … so that makes me to speculate if 0 is possible, if we can also derive entropy from this’ and the confirmation of zero premises (sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md); see section 69 of the integration note."
     }
   ],
   "references": [
