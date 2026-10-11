@@ -93,7 +93,7 @@ What is not derived:
 - that a loss within the closure does return: feeders may be redundant, and stock and timing
   decide when an ending arrives;
 - any warrant, which the route does not claim. G0 follows from the axiom of
-  `Becoming.Significance`, and G0 remains the adopted axiom until Ren accepts the replacement.
+  `Becoming.Significance` and, folded by Ren on 11 October 2026, is no longer an axiom.
 
 The comparisons by withheld levels keep the rest of the exchange fixed, so an ending that
 returns through the dynamics is shown on the actual flow, against a separate reference flow.

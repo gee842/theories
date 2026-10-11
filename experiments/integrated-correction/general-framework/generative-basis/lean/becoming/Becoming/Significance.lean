@@ -83,7 +83,7 @@ it also adds.
 - Ren wrote that the self “can not justify itself without some sort of "belief"”. This reads
   onto `bounded_rival` and `Web.significance_undetermined`: a significance bounded by a region
   is supplied, as the axiom is, and the dynamics decides neither.
-- G0 remains the adopted axiom until Ren accepts this axiom in its place.
+- G0 is a theorem of this axiom and, since Ren folded it on 11 October 2026, no longer an axiom.
 
 What is not derived:
 - the step from significance to a reason (A), the lifting (L), and practical judgment (J1–J4);

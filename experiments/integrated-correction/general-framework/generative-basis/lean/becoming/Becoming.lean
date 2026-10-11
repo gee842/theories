@@ -20,6 +20,7 @@ import Becoming.Space
 import Becoming.Premises
 import Becoming.Openness
 import Becoming.Counting
+import Becoming.Standing
 import Becoming.Resolution
 import Becoming.Continuation
 import Becoming.Admission
@@ -251,6 +252,20 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   embodiment is selected with balance and dissipation, or with only active relata taking,
   dissipation and bounded transmission. With every step from some step on enclosed, where
   the premises of a selection bind, enclosure and binding add their laws each on its own.
+* `Becoming.Standing` (L3): what the premises add to the laws of counting what stands and
+  what depends. Where every relatum is embodied what stands is what is active; where
+  embodiment is not selected, a queue whose members stand without acting, fed by a source
+  active throughout and standing at nothing, meets every other premise whatever its counts.
+  So under each selection the laws of counting what stands are those of counting what is
+  active. Enclosure bounds what stands under balance and dissipation alone, with no premise
+  on activity: with every step from some step on enclosed, the change of what stands stays
+  within the total standing at that step, and nothing comes to stand across an enclosed step
+  at which nothing stands. So with enclosure from some step on, and in finite worlds, the
+  laws of counting what stands are those of counting what is active with embodiment dropped
+  from where balance and dissipation bind: embodiment is what carries the bound from what
+  stands to what is active. The premises add nothing to the law of counting dependences,
+  under any selection, with enclosure or in finite worlds, where at most some number hold at
+  each step: they bear on dependence only together with activity, standing and descent.
 * `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
   openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
   at every exchange; letting the unit split into finer units across each step separates
@@ -354,7 +369,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dynamics fixes the extent, not the center, and along every formed relation transmission
   would reach that life. Reading S0 as wanting one's continuation and standpoint
   neutrality as the one axiom is the AI's reading of Ren's proposal of 10 October 2026,
-  pending Ren; G0 remains the adopted axiom until Ren accepts the restatement.
+  pending Ren. G0 is no longer an axiom: Ren folded it on 11 October 2026.
 * `Becoming.Significance` (L4): Part II, the one axiom. Ren's “for anything, its
   continuation into the future has significance” is read as boundary neutrality for the
   significance of continuation: from every standpoint, the continuation of anything has
@@ -367,8 +382,8 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   dependence on it forms is living on the stepwise reading and still loses a possibility.
   What retains in the whole retains within every region, while centers bounded by their
   dependence license the free rider and disagree. Where nothing has significance nothing
-  is ordered, so the axiom is needed. The reading is the AI's, pending Ren; G0 remains the
-  adopted axiom until Ren accepts this axiom in its place.
+  is ordered, so the axiom is needed. The reading is the AI's, pending Ren. G0 is a theorem
+  of this axiom and, since Ren folded it on 11 October 2026, no longer an axiom.
 * `Becoming.Interdependence` (L4): how far the route without axiom reaches. What a
   formation's continuation depends on is its feeding closure, the least region holding it
   that is closed under feeding, and nothing beyond the closure gives to what it requires.
@@ -406,7 +421,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   presupposition everywhere and covering, invariance is standpoint-invariance, the rule of
   N_std. Sub-true along affecting, the presupposition compares every part within the reach
   closure as the axiom does, with no invariance. Covering, sub-truth and invariance are
-  hypotheses. The readings are the AI's, pending Ren; G0 remains the adopted axiom.
+  hypotheses. The readings are the AI's, pending Ren.
 * `Becoming.Relevance` (L4): G0's uses under the axiom. Read from significance,
   positive relevance is realized living content whose continuation has significance;
   under the axiom G0 holds on every frame for every reading of `living`, this relevance
@@ -420,8 +435,9 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   of a course admit, C under the axiom ranks the absence of an overdrawing formation,
   restraint and sharing as the whole-run reading does and withholds no event; it leaves
   a formation that adds no possibility unranked against its absence, where both
-  readings of `living` rank its presence higher. The readings are the AI's, pending Ren;
-  G0 remains the adopted axiom.
+  readings of `living` rank its presence higher. The readings are the AI's, pending Ren.
+  After this audit Ren folded G0 (11 October 2026): it is a condition with no axiom in
+  Part I and a theorem of the axiom in Part II.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the

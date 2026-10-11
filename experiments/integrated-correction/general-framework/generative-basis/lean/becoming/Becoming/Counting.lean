@@ -186,8 +186,8 @@ rings counting each such tally being the witnesses.
   (`Tally.occupied_from`), has its front shed a spare unit there
   (`World.sheddingQueue_binding`).
 
-The counts are of activity; what the premises add to the counts of standing and of
-dependence is not stated. Binding here is an instance of each condition; a sense of
+The counts are of activity; `Becoming.Standing` states what the premises add to the counts
+of what stands and of what depends. Binding here is an instance of each condition; a sense of
 binding in which each premise excludes something the representation allows would be a
 further reading. A property of the counts respects their values at each step (`Pointwise`),
 as function extensionality would give and the pure core does not assume. Activity is

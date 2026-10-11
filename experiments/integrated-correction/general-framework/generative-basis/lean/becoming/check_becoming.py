@@ -45,7 +45,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Renewal", "Becoming.Depe
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Openness", "Becoming.Counting", "Becoming.Resolution",
+        "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
@@ -615,6 +615,28 @@ SCOPE = (
     "the relay and the lossy queue, a queue exchanging a unit each way with its front, and a "
     "queue closing at a step at which something is active, whose front sheds a spare unit "
     "there so that dissipation binds at a closed step, witness them. "
+    "Standing: where every relatum is embodied what stands is what is active, and where "
+    "embodiment is not selected a queue whose members stand without acting, fed by a ground "
+    "relatum active throughout and standing at nothing that exchanges a unit each way with "
+    "every ground relatum, meets every other premise whatever its counts, so under each "
+    "selection the laws of counting what stands are those of counting what is active; under "
+    "balance and dissipation alone, with every step from some step on enclosed, the change of "
+    "any census of what stands stays within the total standing at that step and nothing comes "
+    "to stand across an enclosed step at which nothing stands, so with enclosure from some "
+    "step on the laws of counting what stands add, where balance and dissipation are selected, "
+    "a change bound from some step with nothing coming to stand from then on across a step at "
+    "which nothing stands, a waiting queue, whose next to join is active before it stands, "
+    "witnessing this without embodiment; in finite worlds the laws of counting what stands are "
+    "those of a tally with at most some number standing at each step, nothing coming to stand "
+    "across a step at which nothing stands where the selection binds counting or selects "
+    "balance and dissipation, and a change bound from the first step where it selects balance "
+    "and dissipation, a ring each of whose places is active throughout witnessing the rest. "
+    "The premises add nothing to the law of counting dependences: members of a queue, or "
+    "places of a ring, depending while in it on a common condition standing at one and "
+    "active throughout, each needing a unit of it and met, with nothing flowing, meet all "
+    "eight whatever the counts, so under each "
+    "selection, with enclosure from some step on and in finite worlds, where at most some "
+    "number hold at each step, the laws of counting dependences are the tally's. "
     "Descent: read with one kind of relatum, an event living on a relatum, drawing on it and "
     "depending on it at a positive need, is related to that relatum's events, and an event is "
     "related to the events of the relata it descends from and that descend from it, descent "

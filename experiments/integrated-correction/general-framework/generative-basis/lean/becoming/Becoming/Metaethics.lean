@@ -49,7 +49,8 @@ The premise card, every item named and visible:
 Results:
 * `significant_iff`: on a connected whole with some living content, G0 for every
   standpoint is equivalent to a seed with N_rel and N_std. This characterizes the
-  content of Ren's adopted G0; it does not replace it. The forward direction is
+  content of G0 with no axiom; since Ren folded G0 (11 October 2026) it is a condition,
+  and a theorem of the axiom of `Becoming.Significance`. The forward direction is
   nearly immediate; the content lies in the backward direction and in minimality.
 * `positioned_articulation_of_articulates`: the positioned articulation D follows
   from A with G0's unindexed significance.

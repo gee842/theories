@@ -142,8 +142,8 @@ What is not derived:
   (`Flow.Balances.unregistered_beyond_influence`);
 - the step from significance to a reason, to motivation or to practice.
 
-G0 remains the adopted axiom until Ren accepts a replacement, which waits on an audit of G0's
-uses.
+The audit of G0's uses (`Becoming.Relevance`) is clean, and Ren folded G0 on 11 October 2026: it
+is no longer an axiom.
 -/
 
 namespace Becoming

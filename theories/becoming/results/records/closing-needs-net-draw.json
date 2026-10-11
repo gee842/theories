@@ -114,8 +114,8 @@
     "en": "Compares only the formations admitted at each step, not reachability over several steps, renewal capacity or richness of relations (which Ren also named: “renewal capacity, or richness of relations”); the counterfactual does not let the rest adjust; where no level path balances the flow without the part there is nothing to compare; a part must be a decided family; discrete steps and natural-number amounts; contains no ethical predicate and does not say which part should be withheld; names such as admission, withholding and net draw are the AI's wording, for Ren to choose."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T001147.906623Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 2022 项定理／3071 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T001754.342153Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T001147.906623Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 2022 theorems/3071 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T001754.342153Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T003217.297180Z）：Becoming.Admission 的 38 项定理与 Becoming.Regions 的 18 项定理全部空依赖；同一回执覆盖包内 39 个模块（含只作导入的根模块与桥接），共 2060 项定理／3126 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T003646.599930Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 41 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §51；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T003217.297180Z): the 38 theorems of Becoming.Admission and the 18 of Becoming.Regions all have empty axiom reports; the same receipt covers the package's 39 modules (including the import-only root and the bridge) with 2060 theorems/3126 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T003646.599930Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 41 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §51 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
@@ -178,17 +178,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "17c3d73fd848832ca15f8424fbeba39b35a93e23cc200a96ff9e4df47091dad7"
+      "sha256": "b5bb17f17106e5097b9b2679e19e473e5c81791fbd234fbdd72b9b2811e1c022"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "cbe6680bdc642f5a8af2a4eceb20b73dd739c1805f84671cb35243bd6175793c"
+      "sha256": "5314c0ceef282cfae32623e2a73f7be58953988ae76301f6c2b9eb6f1df2f333"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "b2cdb85330321cbfb809ac5a7b8a038fa1e1c4c7371e1154962c8930c871f6a2"
+      "sha256": "aad4cb1a924d682e91d2bec3d8bf10fe55fada13ed2ca8886cc722376afe3317"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -295,6 +295,10 @@
     {
       "zh": "2026-10-11 P46：验证范围重新指向合并检查器回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z（有限世界中与从某步起被围住时每个选择之下所选前提都起约束时计数的规律：Counting 新增声明）；所引模块的定理数改为该回执的数目（Counting 212）。断言不变。",
       "en": "2026-10-11 P46: validation scope re-pointed to consolidated receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z (the laws of counting in finite worlds and under enclosure from some step on where the premises of each selection bind: declarations added to Counting); the module counts cited are now that receipt's (Counting 212). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P47：验证范围重新指向合并检查器回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z（前提之下所立者与依存的计数规律：新的核心模块 Standing，38 项定理；包与核心闭包各多一个模块；P51 折叠 G0 的说明文字随此运行改入七个核心模块，只改说明，陈述与定理数不变）。断言不变。",
+      "en": "2026-10-11 P47: validation scope re-pointed to consolidated receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z (the laws of counting what stands and what depends under the premises: a new core module, Standing, with 38 theorems; the package and the core closure each have one module more; P51's fold of G0 enters the docstrings of seven core modules with this run, docstrings only, statements and theorem counts unchanged). The claim is unchanged."
     }
   ]
 }

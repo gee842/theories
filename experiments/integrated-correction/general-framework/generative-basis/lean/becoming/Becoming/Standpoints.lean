@@ -73,8 +73,8 @@ center, whose continuation counts. This module states the center on the valuatio
 
 Reading S0 as what wanting is, the seed at each wanting point, and standpoint neutrality as
 the one axiom, so that what has significance from any center has it from every standpoint
-and no center is privileged, is the AI's reading of Ren's proposal, pending Ren; G0 remains
-the adopted axiom until Ren accepts the restatement. The source of `Clearing` requires
+and no center is privileged, is the AI's reading of Ren's proposal, pending Ren. G0 is no
+longer an axiom: Ren folded it on 11 October 2026. The source of `Clearing` requires
 nothing by stipulation. Decided holding is a disclosed logical commitment of
 `significant_iff_reached`, as decided equality is of the conveyance results. Names are
 working names.
