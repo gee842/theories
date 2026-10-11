@@ -16,6 +16,7 @@ import Becoming.Identity
 import Becoming.Wholes
 import Becoming.Dissipation
 import Becoming.Locality
+import Becoming.Seeking
 import Becoming.Roles
 import Becoming.Reserve
 import Becoming.Evolution
@@ -166,6 +167,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   With a list holding exactly what holds at one step and nothing coming to be after it, what
   holds later with what ceased number exactly those on it; ceasing recurring needs coming to
   be recurring wherever some list covers what holds at arbitrarily late steps.
+* `Becoming.Seeking` (L3): the boundary condition for 无明. Under a determined law, seeking
+  comes to rest with its target met exactly when it reaches a state the law leaves unchanged
+  that meets it. A target of more than now is met only by change and, met at every step, needs
+  an open world; a target of above all others is met by at most one seeker at a state. Where
+  what stands is listed, rising without end needs steps at which what stands does not run down,
+  and where it runs down from some step on the rises stop. The readings are the AI's, pending
+  Ren.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands

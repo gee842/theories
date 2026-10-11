@@ -44,7 +44,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
-        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Roles",
+        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Seeking",
+        "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
         "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
         "Becoming.Continuation", "Becoming.Admission",
@@ -359,6 +360,14 @@ SCOPE = (
     "enclosure bound and binding of counting, Standing's bounds on what stands, the census law "
     "and the arising of an embodied relatum through another's giving are re-proved as its "
     "corollaries. "
+    "Seeking: a target met at a state the law leaves unchanged is met at rest, and under a "
+    "determined law seeking comes to rest with its target met exactly when it reaches such a state; "
+    "a target of more than now is met only by change, and met at every step makes every "
+    "configuration new, so no list holds them; a target of above all others is met at a state by "
+    "at most one seeker, so no state left unchanged meets it for two; where what stands is listed "
+    "at each step, a condition rising at arbitrarily late steps needs steps at arbitrarily late "
+    "times across which what stands does not run down, and where what stands runs down at every "
+    "step from some step on, its rises do not recur. "
     "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
     "support, dependence, renewal, consumption, the classes of formations, undermining, living "
     "events, arising, unceasing generation and a census, and what is taken and given, balance, "
