@@ -245,7 +245,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is selected with balance and only active relata giving or only active relata taking and
   dissipation, or with only active relata giving and bounded transmission. No finite world
   binds every premise, though in one every premise but the census can, adding only that
-  something arises.
+  something arises; with every step from some step on enclosed, every premise binding adds
+  only that something arises as well. In finite worlds, where the premises of a selection
+  without the census bind, binding adds at most the same three, the third also where
+  embodiment is selected with balance and dissipation, or with only active relata taking,
+  dissipation and bounded transmission. With every step from some step on enclosed, where
+  the premises of a selection bind, enclosure and binding add their laws each on its own.
 * `Becoming.Resolution` (L3): what the fixed unit of amounts carries in the rest and
   openness laws. Counted in natural numbers of one unit, dissipation loses at least a unit
   at every exchange; letting the unit split into finer units across each step separates

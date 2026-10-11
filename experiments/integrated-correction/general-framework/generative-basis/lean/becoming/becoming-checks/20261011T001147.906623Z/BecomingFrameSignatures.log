@@ -1,0 +1,26 @@
+@Becoming.Run.window_trace : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (r : Becoming.Run P)
+  (k n : Nat), Generative.Trace P (r.state n) (r.window n k) (r.state (n + k))
+@Becoming.Reach.refl : ∀ {S : Type u_1} {A : Type u_2} (P : Generative.Process S A) (s : S), Becoming.Reach P s s
+@Becoming.Reach.of_step : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {s t : S} {a : A},
+  P.step s a t → Becoming.Reach P s t
+@Becoming.Reach.trans : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {s m t : S},
+  Becoming.Reach P s m → Becoming.Reach P m t → Becoming.Reach P s t
+@Becoming.Reach.map : ∀ {S : Type u_1} {A : Type u_2} {S' : Type u_1} {P : Generative.Process S A}
+  {Q : Generative.Process S' A} {f : S → S'},
+  (∀ (s : S) (a : A) (t : S), P.step s a t → Q.step (f s) a (f t)) →
+    ∀ {s t : S}, Becoming.Reach P s t → Becoming.Reach Q (f s) (f t)
+@Becoming.Reach.lift : ∀ {S : Type u_1} {A : Type u_2} {S' : Type u_1} {P : Generative.Process S A}
+  {Q : Generative.Process S' A} {q : S → S'},
+  (∀ (s : S) (a : A) (r : S'), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) →
+    ∀ {s : S} {r : S'}, Becoming.Reach Q (q s) r → ∃ t, Becoming.Reach P s t ∧ q t = r
+@Becoming.Run.reach : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} (r : Becoming.Run P) (n k : Nat),
+  Becoming.Reach P (r.state n) (r.state (n + k))
+@Becoming.Invariant.trace : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {I : S → Prop},
+  Becoming.Invariant P I → ∀ {s t : S} {as : List A}, Generative.Trace P s as t → I s → I t
+@Becoming.Invariant.reach : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {I : S → Prop},
+  Becoming.Invariant P I → ∀ {s t : S}, Becoming.Reach P s t → I s → I t
+@Becoming.Invariant.run : ∀ {S : Type u_1} {A : Type u_2} {P : Generative.Process S A} {I : S → Prop},
+  Becoming.Invariant P I → ∀ (r : Becoming.Run P), I (r.state 0) → ∀ (n : Nat), I (r.state n)
+@Becoming.Novel.mono : ∀ {S : Type u_1} {A : Type u_2} {C : Type u_3} {F : Becoming.Frame S A C}
+  {reading reading' : C → Prop} {before : S → C → Prop} {t : S},
+  (∀ (c : C), reading c → reading' c) → Becoming.Novel F reading before t → Becoming.Novel F reading' before t

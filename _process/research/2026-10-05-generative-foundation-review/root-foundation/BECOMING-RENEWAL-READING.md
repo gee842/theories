@@ -4126,6 +4126,75 @@ Integration: 计划 P43（工作次序 (c)）；把公理超出预设的全部�
 
 **边界。** 无伦理结论；不替 Ren 选择任何读法。仍开放：所及闭包是否读出“the system that one is in”、预设是否读出 Ren 的 belief、Ren 是否持有不变的一步（属于 Ren 的选择）；动力学给出回应的比较、按步的闭包、中心怎样表示其所及、耦合的度量（进一步的证明）；预设、覆盖与不变的根据（哲学根据）。本节与 §61 经第十六次审查；处理之后的文本尚未经独立审查。
 
+## 63. 有限世界中与被围住时前提起约束的计数（P46）
+
+2026-10-11。按 Ren“let's aim for the strongest claim without axiom, as the first part, and add one axiom, as the following part, the no axiom part is most important and elegant”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md)）与“aim a complete theory of becoming, and finish related work”继续。P45 留下两项开放（§60 反驳 4，whole-law-of-counting 与 counting-under-enclosure 的下一步）：有限世界中每个选择之下所选前提都起约束时计数的规律，以及从某步起被围住且每个前提都起约束时的规律。本节给出这两项，并给出两者之间的一项：从某步起被围住时每个选择之下所选前提都起约束时的规律。这样，前提起约束时计数的规律在不限制、有限与从某步起被围住三类世界中都已陈述。
+
+```text
+Result(s): 扩展 counting-under-enclosure（有限世界中与从某步起被围住时，每个选择之下所选前提都起约束时计数的规律）；
+           修订 whole-law-of-counting（开放项改指 counting-under-enclosure）；没有新的成果记录
+Delta: Counting：World.enclosedQueue_saturated_binds、World.enclosed_binding_counting；RelayRing 与 World.relayRing
+       （_balanced、_dissipative、_acts、_binds、_binding）；LossyRing 与 World.lossyRing（_dissipative、_taking、_acting、
+       _binds、_binding）；Ring.exchanged、Ring.exchanging 与 World.exchangingRing（_balanced、_taking、_acting、_binds、
+       _binding）；World.BoundsChange 可判定；World.finite_binding_census、World.finite_binding_counting_under、
+       World.finite_binding_activity_iff、World.finite_binding_arising_iff、World.finite_binding_joint_iff；
+       World.relayQueue_enclosed、World.lossyQueue_enclosed；EnclosedQueue.exchanged、EnclosedQueue.exchanging 与
+       World.exchangingQueue（_balanced、_taking、_acting、_enclosed、_binds、_binding）；last_positive、Tally.occupied_from；
+       EnclosedQueue.sub_add_le、store_succ_le、spare、held、sheddingWeb、shedding、spare_zero、held_outside、shedding_closed、
+       shedding_flows 与 World.sheddingQueue（_balanced、_embodied、_enclosed、_level_le、_exceeds、_dissipative、_binds、
+       _binding）；World.enclosed_binding_counting_under、World.enclosed_binding_activity_iff、
+       World.enclosed_binding_arising_iff、World.enclosed_binding_joint_iff。已有声明不变
+Supplied premises / correspondence: 不变；起约束仍是条件有实例（P41b）
+Evidence: 合并检查器回执 20261011T001147.906623Z（2022 项定理、3071 项声明审计，全部源声明公理报告为空；Counting 212），外围回执 20261011T001754.342153Z；
+          新声明先在暂存树中从前导编译，逐条 #print axioms 全部为空
+Boundary: 只是活动的计数；更强的起约束读法仍开放（由 Ren 选择）；尚无独立审查
+Integration: 章节第 3 条、第一部分的总陈述、§8、§9 的脊柱表与术语表；计划 P46；模块说明、根模块、包 README 与检查器的范围
+```
+
+**从某步起被围住且每个前提都起约束。** 全部八个前提之下，从某步起被围住时计数的规律是计数表、没有关系项活跃的一步上没有生起与从第 0 步起的变化界（`World.enclosed_counting`，P35）。每个前提都起约束时只多出有某个生起（`World.enclosed_binding_counting`），与不限于被围住时（`World.binding_counting`）和有限世界中除普查外每个前提都起约束时（`World.finite_binding_counting`）一样。见证是被围住的队列把依存网饱和：有成员在第 T 步加入时，加入者生起而改变所立，从队首传下，步后活跃并依存于自身的所立；队首从第 T 步的跨度取用，跨度封闭，耗散只许它给予少于所取的；关系项是自然数，没有有限的列表包含全部，所以普查也起约束（`World.enclosedQueue_saturated_binds`）。
+
+**有限世界中每个选择之下。** 没有有限世界使普查起约束，所以在选中普查的选择之下，有限世界中每个性质都是规律（`World.finite_binding_census`）。不选普查时，回答是有限世界中该选择之下的规律（`World.finite_counting_under`：每步至多有某数活跃；约束计数或约束变化时没有关系项活跃的一步上没有生起；约束变化时从第 0 步起的变化界），再加至多三条（`World.finite_binding_counting_under`）：
+
+1. *有关系项活跃*，恰在选中活动需要支持、只有活跃者给予、只有活跃者取用或体现时（`World.finite_binding_activity_iff`），与不限于有限世界时相同。
+2. *有某个生起*，恰在选中体现时（`World.finite_binding_arising_iff`），也相同。
+3. *在有关系项活跃的一步上有生起*，恰在选中体现，且选择约束计数或约束变化，或选中有界传递并选中只有活跃者给予、或同时选中只有活跃者取用与耗散时（`World.finite_binding_joint_iff`）。与 P45 不同之处有两个，§60 反驳 4 已预见：有限世界的每一步都被围住，所以平衡、体现与耗散本身就约束计数（`World.enclosed_binds_counting`），第 2 条的生起之步上就有关系项活跃；只有活跃者取用与耗散在被围住的步上推出只有活跃者给予（`World.Finite.acting`），所以有界传递起约束时，传下所从出的给予者在该步活跃。
+
+每条的反方向与 P45 相同：什么都不发生的计数表、每步一个关系项而无生起的计数表、一个关系项在第一步从无到有地生起并留下（`Queue.lone`），都由满足选择且所选前提都起约束的有限世界实现。
+
+**有限的见证。** P45 的见证有无限多个关系项，有限世界需要有限的见证。它们都按 P38b 把计数表的队列排在一圈位置上（`Ring.slot`、`Ring.counts`），并把依存网饱和：
+
+- *环旁的传递*（`World.relayRing`）：位置 1 到第 U 步为止立着两个单位，参与者 g 在第 U 步取用这两个单位，给位置 0 一个，失去另一个；位置的所立与它是否被占无关，所以不满足体现，只用于不选体现的选择。选中活动需要支持、只有活跃者给予或取用时，g 取为第 U 步队首的位置，那时活跃（`World.relayRing_binding`）。圈按 M+1 取大小，至少有两个位置。
+- *有损的环*（`World.lossyRing`）：每个位置被占时立着一；跨第 U 步，队首的位置与自身及每个开始被占的位置各交换一个单位，再失去一个单位。所立者不记录这些，所以它不平衡；它对任何计数都耗散（封闭的家族含队首的位置，队首多取了一个单位）。用于选中体现而不选平衡、并选中耗散或只有活跃者给予的选择：选中有界传递，并选中只有活跃者给予、或同时选中只有活跃者取用与耗散时，U 取为第 3 条规律给出的步；不选有界传递时，U 取为生起之后一步，那时队列不空；两个给予与取用的条件都不选时，U 取为生起之步，队首的位置不被占也可以给予与取用（`World.lossyRing_binding`）。
+- *交换的环*（`World.exchangingRing`）：P38b 的平衡的环（队首的位置取用每个位置所降的、给予其所升的），在生起之后一步，队首的位置再与自身各交换一个单位，使取用起约束；它满足除耗散外的全部前提，没有成员加入空队时也满足只有活跃者给予（`World.exchangingRing_binding`）。用于选中体现、不选耗散，且不选平衡时也不选只有活跃者给予的选择。
+- *饱和的有限队列*（`World.finiteQueue_saturated_binds`，P45）：选中平衡、体现与耗散，即约束变化时。
+
+按体现、平衡、耗散、只有活跃者给予、取用与有界传递分情形，每个情形都由其中一个见证实现，所以 iff 的两个方向都在 Lean 中检查。
+
+**从某步起被围住时每个选择之下。** 在每个选择 S 之下，从某步起被围住、S 所选前提都起约束时，计数的规律是被围住时该选择之下的规律（`World.enclosed_counting_under`：约束计数时没有关系项活跃的一步上没有生起；约束变化时从某步起的变化界，此后没有关系项活跃的一步上没有生起）再加 P45 的三条（`World.enclosed_binding_counting_under`），每条恰在与不被围住时相同的选择之下多出（`World.enclosed_binding_activity_iff`、`World.enclosed_binding_arising_iff`、`World.enclosed_binding_joint_iff`）。所以从某步起被围住时，被围住与起约束各自加上自己的规律，互不相干；有限世界中两者相干，因为那里生起之步本身也被围住。普查在这里可以起约束，因为见证有无限多个关系项。
+
+见证都在某步之后被围住：
+
+- *传递*（`World.relayQueue`，P45）在每一步被围住，它取用与给予的都在两个地关系项中（`World.relayQueue_enclosed`）；*有损的队列*（`World.lossyQueue`，P45）从地关系项的给予之后一步起被围住，跨度含队首与加入者（`World.lossyQueue_enclosed`）。
+- *交换的队列*（`World.exchangingQueue`）：被围住的队列在生起之后一步让队首与自身再交换一个单位，使取用起约束；它在每一步被围住，满足除耗散外的全部前提，没有成员加入空队时也满足只有活跃者给予（`World.exchangingQueue_binding`）。用于选中平衡与体现而不选耗散的选择。
+- *饱和的被围住的队列*（`World.enclosedQueue_saturated_binds`）：选中平衡、体现与耗散，并选中只有活跃者给予或取用时，选择约束计数，从第 0 步起的变化界由被围住时的变化界给出（`ChangeBound.from_zero`）。
+- *失去多立单位的队列*（`World.sheddingQueue`）：选中平衡、体现与耗散而不选只有活跃者给予与取用时，耗散只能在封闭的步上起约束，而在平衡与体现之下封闭的家族失去一个单位，需要有所立者先多立一个单位。生起却可以只在被围住之前，从无到有，此后计数不再变化（如 `Queue.lone`）。所以先找一步 T′，那时有关系项活跃，此后没有关系项活跃的一步上没有生起（`Tally.occupied_from`：若变化界之步 T 上有关系项活跃，取 T；否则若生起不在 T 之前，取生起之步；否则取 T 之前最后一个有关系项活跃的步，`last_positive`，在有限的步中搜索）。队列在 T′ 闭合（此前每个关系项与队首各交换一个单位，没有封闭的家族），队首在 T′ 多立一个单位，跨 T′ 时失去它（`EnclosedQueue.spare`、`EnclosedQueue.held`），于是跨度在 T′ 失去的多于所给（`World.sheddingQueue_exceeds`），耗散起约束；T′ 之后它与被围住的队列相同（`EnclosedQueue.shedding_flows`）。它从 T′ 起被围住，满足选择，每个前提都起约束（`World.sheddingQueue_binds`、`World.sheddingQueue_binding`）。
+
+**作者反审。**
+
+*反驳 1：有限世界中的第 3 条是否只是改写了 P45？* 不是。它在有限世界中恰在更多的选择之下成立。选中体现、平衡与耗散而不选只有活跃者给予与取用时，P45 中一个关系项可以从无到有地生起（只闭合一次的队列），有限世界中不能：那里这个选择约束变化，因而没有关系项活跃的一步上没有生起。选中体现、只有活跃者取用、耗散与有界传递而不选平衡与只有活跃者给予时，P45 的有损的队列让一个地关系项给予每个关系项，传下由它而来；有限世界中每一步都封闭，给予须伴随损失，给予者于是取用而活跃。两处差别都由 `World.finite_binding_joint_iff` 确认。
+
+*反驳 2：选中普查时“每个性质都是规律”是否空洞？* 是空洞的，而且如实：普查起约束即世界不有限，所以这类选择在有限世界中没有实例。单独陈述它（`World.finite_binding_census`），256 个选择在有限世界中就都有了回答。
+
+*反驳 3：环旁的传递让未被占的位置立着单位，是否违背关系的读法？* 它只用于不选体现的选择，那里所立与活跃本来可以分开，体现正是使二者一致的前提。选中体现时用的是有损的环、交换的环与有限的队列，那里每个位置恰在被占时立着。
+
+*反驳 4：从某步起被围住为何不像有限世界那样使第 3 条在更多的选择之下成立？* 因为被围住只从某步起：生起可以在被围住之前、在没有关系项活跃的一步上从无到有，被围住之后的变化界与没有关系项活跃的一步上没有生起都不触及它。失去多立单位的队列确认这一点：`Queue.lone` 由一个从第 1 步起被围住、满足平衡、体现与耗散且每个前提都起约束的世界实现。代价只是耗散的实例要放在被围住之后有所可失的一步上，这需要在有限的步中搜索那一步；变化界之步作为规律的一部分给出（P38b），所以搜索是有界的，不需要全知。
+
+*反驳 5：多立的单位是否是为了见证而造的？* 是见证的构造，不是规律的内容：它只说明，在平衡、体现与耗散之下，一个封闭的家族要失去什么，须有所立者先立着它。规律本身（`World.enclosed_binding_counting_under`）不提到它。
+
+**读法（AI，待 Ren）。** 起约束在计数上留下的仍只是它的实例。有限世界与从某步起被围住的世界的差别在于生起之步：有限世界的每一步都被围住，所以更多的生起须从活动而来；从某步起被围住时，生起可以在被围住之前，被围住与起约束各自加上自己的规律。
+
+**边界。** 离散步，活动的计数；水平与依存的计数在前提之下、更强的起约束读法仍开放；没有伦理谓词；名称（relayRing、lossyRing、exchangingRing、exchangingQueue、sheddingQueue、spare、held 等）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
+
 ## 64. G0 各处用法的审计（P44）
 
 2026-10-11。Ren 的公理：“for anything, its continuation into the future has significance(doesn't have to be positive, we could argue as long as not harm), or continuation into the future needs to create more significance(being generative)”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md)）。P39 表明它推出 G0（§53）。P40 之后，AI 对“是否以这条公理替代 G0”的回答是分两步：先审计 G0 每处用法对 `living` 的读法，再替换；Ren 写道：“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md)）。AI 把它读作接受这一次序（AI 的读法，待 Ren）。这是工作次序 (d)。
@@ -4736,6 +4805,14 @@ Covering holds by construction: along a relation, every closed region holding th
 
 Names follow Ren's naming criteria: `Protection` becomes `Trophic`, “verdict” becomes “comparison” and “commons” becomes “common condition”. The first checker run failed on a name clash with the Bridge's `Closure` (receipt 20261010T173822.496446Z retained), so the core's closure became `WithinClosure`, and the Bridge now proves the two are one closure (`withinClosure_iff_closure`). Receipt 20261010T174514.186722Z (Feedback 100, Boundaries 47, Bridge 35); periphery receipt 20261010T175236.872210Z. The text after the handling has not been independently reviewed.
 
+**Counting where premises bind in finite worlds and under enclosure (P46).** Following Ren's "let's aim for the strongest claim without axiom, as the first part" and "aim a complete theory of becoming, and finish related work", this states the two laws of counting P45 left open (section 60, objection 4), and the one between them, so that the laws of counting where premises bind are stated in unrestricted, finite and eventually enclosed worlds.
+- **Enclosure, every premise binding.** With every step from some step on enclosed, where every premise binds the laws of counting under the eight are those under enclosure and that something arises (`World.enclosed_binding_counting`), the enclosed queue with its web saturated binding every premise, the census included (`World.enclosedQueue_saturated_binds`).
+- **Finite worlds, each selection.** No finite world binds the census, so under a selection with it every property is a law there (`World.finite_binding_census`). Under each selection without it, where each selected premise binds, the laws are those of `World.finite_counting_under` and at most three more (`World.finite_binding_counting_under`): something is active and something arises, exactly where they are added in general (`World.finite_binding_activity_iff`, `World.finite_binding_arising_iff`); and something arises across a step at which something is active, exactly where embodiment is selected and the selection binds counting or bounds change, or selects bounded transmission with only active relata giving or with only active relata taking and dissipation (`World.finite_binding_joint_iff`). The two differences from P45 are what finiteness adds: every step is enclosed, so balance, embodiment and dissipation bind counting, and taking with dissipation gives only active relata giving (`World.Finite.acting`).
+- **Finite witnesses.** A relay beside a ring, handing one of the two units one place stands at on to another whatever holds them (`World.relayRing_binding`); a lossy ring, whose front's place across one step exchanges a unit each way with itself and each place coming to be held and loses one unit more (`World.lossyRing_binding`); a balanced ring whose front's place exchanges one unit more each way with itself across the step after something joins (`World.exchangingRing_binding`); and the finite queue with its web saturated.
+- **Enclosure from some step on, each selection.** Under each selection, where its premises bind, the laws are those of `World.enclosed_counting_under` and the three of P45 (`World.enclosed_binding_counting_under`), each under exactly the same selections as where nothing is enclosed (`World.enclosed_binding_activity_iff`, `World.enclosed_binding_arising_iff`, `World.enclosed_binding_joint_iff`): enclosure and binding add their laws each on its own, since what arises may arise before enclosure. The relay is enclosed at every step and the lossy queue after its gift (`World.relayQueue_enclosed`, `World.lossyQueue_enclosed`); without dissipation, a queue whose front exchanges one unit more with itself is enclosed throughout (`World.exchangingQueue_binding`); and with balance, embodiment and dissipation but neither only active relata giving nor taking, a queue closes at a step at which something is active, from which on nothing arises across a step at which nothing is active (`Tally.occupied_from`, found by a bounded search), its front standing one spare unit there and shedding it, so that dissipation binds at a closed step (`World.sheddingQueue_binding`).
+
+On the AI's reading, pending Ren: binding still leaves only its instances in the counts; finite worlds and eventually enclosed ones differ at the step at which something arises, which in a finite world is itself enclosed. Records extended or revised: counting-under-enclosure, whole-law-of-counting. Receipt 20261011T001147.906623Z (Counting 212). Not yet independently reviewed; the author's counterreview is in section 63.
+
 **P44: G0's uses under the axiom (§64).** Every occurrence of G0 in the core (9 files) and the periphery's generative-capacity modules (19 files) was audited. Each use is a hypothesis for an arbitrary positive relevance, a characterization, a countermodel or a mention in prose. Read from significance, positive relevance is realized living content whose continuation has significance from every standpoint. Under the axiom it satisfies G0 on every frame and is the least positive relevance that does, exactly the realized living content (`g0_of_unrestricted`, `relevance_least`), so every use is discharged; the Bridge states this for the periphery's interface and for its three imported theorems. The axiom is exactly G0 for anything, with “positive” weakened to “has significance” (`unrestricted_iff_g0`). One reading is forced: with bare significance the reason premise A gives a reason for any new content, living or not (`articulates_total`, `Widening.bare_forces_reason`). Read on living content, A gives D, and the universal reason follows from the axiom with no seed, neutrality or connection premise (`universal_reason_of_unrestricted`). Read on possibilities, what a course's levels admit, extension under C is, under the axiom, retaining and adding what has significance (`Ranking.possible_extends_iff`). It ranks the absence of an overdrawing formation, restraint and sharing as the whole-run reading does, and it withholds no event (`Ranking.malignant_possible`). It leaves a formation that adds no possibility unranked against its absence, where both readings of `living` rank its presence higher (`Ranking.possible_tie`). Possibilities first, then a reading, is a strict order satisfying C that ranks that presence higher, and it also ranks a rest below uninterrupted activity (`Ranking.Rest.rest_ranked_below`). The records one-axiom-yields-g0 and ranking-under-readings are extended. G0 remains the adopted axiom; the replacement, the reading of positive relevance and the comparison of courses are Ren's choices. Receipt 20261010T214440.263682Z (Relevance 30, Bridge 40); periphery receipt 20261010T222130.672025Z. P42 and P43 were first checked on their branch (receipts 20261010T174514.186722Z and 20261010T175236.872210Z); merged with R3 and R4, P42 to P44 landed together, and the receipt above covers the merged package. Not yet independently reviewed.
 
-The package now has 1971 theorems and 2993 declaration audits, over a core closure of 40 modules and a package of 38, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 64 and 67. The periphery bridge passed against this core (receipt 20261010T222130.672025Z).
+The package now has 2022 theorems and 3071 declaration audits, over a core closure of 40 modules and a package of 38, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63, 64 and 67. The periphery bridge passed against this core (receipt 20261011T001754.342153Z).
