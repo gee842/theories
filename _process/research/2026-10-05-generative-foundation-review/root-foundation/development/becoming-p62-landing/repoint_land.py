@@ -20,7 +20,7 @@ BASE = sys.argv[2] if len(sys.argv) > 2 else 'HEAD'
 D = 'experiments/integrated-correction/general-framework/generative-basis/lean'
 RCPT = f'{D}/becoming/becoming-verification.json'
 PERI = f'{D}/universal-ethics/generative-capacity/correction-inquiry-verification.json'
-SKIP = {'seeking-boundary'}
+SKIP = {'seeking-boundary', 'target-capture'}
 
 
 def git(*args):

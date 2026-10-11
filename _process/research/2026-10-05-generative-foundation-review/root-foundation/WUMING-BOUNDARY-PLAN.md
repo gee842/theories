@@ -14,9 +14,9 @@ Ren then wrote, on that AI-authored sentence of the opening's version 3:
 
 本文是计划：不向核心加入定理，不登记成果。下面的边界条件是待陈述、待证明的猜想，不是已有结论；读法属于 Ren。
 
-**状态（P62）。** 2026-10-11 Ren 答“yes let's do 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。B1 与 B2 已作为统一计划 P62 在核心模块 `Becoming.Seeking` 中陈述并检查；B3 与 B4 是 P49、P53、P55 已有的定理；B5 没有陈述。见 §6。§0–§5 是阶段开始之前写的计划，保留原文。
+**状态（P62）。** 2026-10-11 Ren 答“yes let's do 无明”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md)）。B1 与 B2 已作为统一计划 P62 在核心模块 `Becoming.Seeking` 中陈述并检查，B5 在 `Becoming.Capture` 中（Ren：“b5”）；B3 与 B4 是 P49、P53、P55 已有的定理。见 §6。§0–§5 是阶段开始之前写的计划，保留原文。
 
-**Status (P62).** On 11 October Ren answered "yes let's do 无明". B1 and B2 are stated and checked as unification plan P62 in the core module `Becoming.Seeking`; B3 and B4 are theorems P49, P53 and P55 already state; B5 is not stated. See section 6. Sections 0–5 are the plan as written before the stage and are kept as written.
+**Status (P62).** On 11 October Ren answered "yes let's do 无明". B1 and B2 are stated and checked as unification plan P62 in the core module `Becoming.Seeking`, and B5 in `Becoming.Capture` (Ren: "b5"); B3 and B4 are theorems P49, P53 and P55 already state. See section 6. Sections 0–5 are the plan as written before the stage and are kept as written.
 
 2026-10-10, Asia/Bangkok. A research note and plan written by the AI (Claude Opus 5.5) at Ren's instruction. Nothing enters the core and no result is registered. The boundary conditions below are conjectures to be stated and proved, not results, and the readings are Ren's to choose.
 
@@ -135,6 +135,10 @@ All five need no significance, so they belong to Part I, without axiom. Calling 
   - a model answerable to registration (`Flow.refutes_tail_within`);
   - another formation's registration (`Clearing.pooled`);
   - for one's own acts, a return under a model of what is irrelevant (`Run.fixes_on_return`, `Run.generalizes`, P53).
-- **B5, hijacking.** Not stated.
+- **B5, hijacking.** After Ren's "b5", three parts are stated in `Becoming.Capture`:
+  - A target's share among descendants does not fall, and rises where its carriers leave more offspring (`share_not_lower`, `share_rises`). This is the selection term that `Becoming.Evolution` leaves unstated, for a two-valued target.
+  - Running down from some step on stops descent, and so the selection (`Flow.descent_exhausted`).
+  - Where the next configuration depends on the rule and not on the state, reforming the state alone is re-absorbed (`Law.reform_reabsorbed`, `Captured`).
+  - These are supplied, not derived: that taking more yields more offspring, that offspring carry the target, and that winners shape the rule.
 
 The readings remain the AI's, pending Ren. 无明 is read as the not-seeing that keeps seeking locked onto a target that cannot be met at rest, and 明 as registration reaching what support does not mark. The Chinese for "registers" is now 识 (Ren, 11 October).

@@ -30,6 +30,7 @@ VALUES = {
     '{RECEIPT}': receipt['utc'],
     '{PERIPHERY}': periphery['utc'],
     '{N_MODULE}': str(next(m for m in receipt['modules'] if m['module'] == 'Becoming.Seeking')['theorems']),
+    '{N_CAP}': str(next(m for m in receipt['modules'] if m['module'] == 'Becoming.Capture')['theorems']),
     '{N_THM}': str(sum(m['theorems'] for m in spine)),
     '{N_DECL}': str(sum(len(m['declarations']) for m in spine)),
     '{N_CORE}': str(len(receipt['core_closure'])),
