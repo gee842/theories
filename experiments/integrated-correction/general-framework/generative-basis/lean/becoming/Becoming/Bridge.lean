@@ -27,7 +27,8 @@ imports none of these modules; the dependency runs from them to the core.
   J1/J2 on configurations, `BetterAt`, is `PracticalJudgment.Better`.
 * Seed–edge closures (`WholeGroundCoverage.Reached`, `CutCoverageAudit.Reach`)
   and finite chains (`EvaluatorGrounding.Chain`) are reachability on the process
-  whose steps are the edges.
+  whose steps are the edges. The core's closure under a relation (`WithinClosure`,
+  `Becoming.Feedback`) is the seed–edge closure from one seed.
 * Joint-continuation spaces are the configurations reachable in a frame; their
   faithful transports are the core's `trace_map` and `trace_lift`.
 * `PracticalJudgment.Robust` is `CommonResponse`; `PracticalReach.Guarantees` is
@@ -39,6 +40,12 @@ imports none of these modules; the dependency runs from them to the core.
   lifted one, and the lifted comparison, reason and selection results hold for
   every frame. Two countermodels show that the choice of lifting rule is
   substantive and that transitivity needs a live middle response.
+* Under the axiom of `Becoming.Significance`, `GenerativeComparison.G0` holds for
+  every inventory with positive relevance read from significance, which on a frame's
+  inventory is the core's `Frame.relevance`. The periphery's theorems taking G0 as a
+  hypothesis for an arbitrary positive relevance follow from the axiom with it: a new
+  realization of a generative extension, contingent generation, and the universal
+  address of positioned articulation with D read on it.
 
 Direction conventions differ and are kept: in `GenerativeComparison`,
 `Better first second` says the second is better; in `PracticalJudgment` and
@@ -98,6 +105,16 @@ theorem cutReach_iff_closure {X : Type u} {seed : X → Prop} {edge : X → X �
     | root held => exact Closure.base held
     | step _ e ih => exact ih.step e
   · exact Closure.induction (fun _ held => .root held) (fun _ _ r e => .step r e)
+
+/-- The core's closure under a relation, what lies in every region closed under it that holds a
+formation (`Becoming.Feedback`), is the seed–edge closure from that formation alone. -/
+theorem withinClosure_iff_closure {X : Type} {rel : X → X → Prop} {f g : X} :
+    WithinClosure rel f g ↔ Closure (fun x => x = f) rel g :=
+  ⟨fun within => within (Closure (fun x => x = f) rel) (fun _ _ held e => held.step e)
+      (Closure.base rfl),
+   Closure.induction (motive := WithinClosure rel f)
+      (fun x (same : x = f) => same.symm ▸ WithinClosure.refl f)
+      (fun _ _ within e => within.trans (WithinClosure.of_rel e))⟩
 
 theorem chain_iff_reach {X : Type} {step : X → X → Prop} {p q : X} :
     EvaluatorGrounding.Chain step p q ↔ Reach (edgeProcess step) p q := by
@@ -293,6 +310,74 @@ theorem Ranking.undisturbed_eq (L : RelationalRenewal.Law) :
     congrArg (fun x => if L.needG ≤ x then x + L.renew else x) (Ranking.undisturbed_eq L t)
 
 end Definitions
+
+/-! ## The axiom discharges G0 in the existing modules -/
+
+section Discharge
+
+/-- Under the axiom `GenerativeComparison.G0` holds for every inventory, with positive relevance
+read from significance: realized generative content whose continuation has significance from
+every standpoint. Every theorem taking G0 as a hypothesis for an arbitrary positive relevance
+holds with this one. -/
+theorem inventory_g0_of_unrestricted {H Q F Pos : Type}
+    (inventory : GenerativeComparison.Inventory H Q) {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) :
+    GenerativeComparison.G0 inventory
+      (fun h q => inventory.generative q ∧ inventory.realized h q ∧
+        ∀ p, sig p (step q) (formation q)) :=
+  fun _ q generative realized => ⟨generative, realized, fun p => unrestricted (p, step q, formation q)⟩
+
+/-- On a frame's inventory it is the core's positive relevance read from significance. -/
+theorem relevance_inventory_iff {S A Q F Pos : Type} (M : Frame S A Q) (living : Q → Prop)
+    (sig : Pos → Nat → F → Prop) (formation : Q → F) (step : Q → Nat) (s : S) (c : Q) :
+    M.relevance living sig formation step s c ↔
+      (M.inventory living).generative c ∧ (M.inventory living).realized s c ∧
+        ∀ p, sig p (step c) (formation c) :=
+  Iff.rfl
+
+/-- From the axiom, a new realization of a generative extension has positive relevance read from
+significance (`GenerativeComparison.new_realization_has_positive_relevance`). -/
+theorem new_realization_of_unrestricted {H Q F Pos : Type}
+    {inventory : GenerativeComparison.Inventory H Q} {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat) {first second : H}
+    (extension : GenerativeComparison.GenerativeExtension inventory first second) :
+    ∃ q, (inventory.generative q ∧ inventory.realized second q ∧
+        ∀ p, sig p (step q) (formation q)) ∧ ¬ inventory.realized first q :=
+  GenerativeComparison.new_realization_has_positive_relevance
+    (inventory_g0_of_unrestricted inventory unrestricted formation step) extension
+
+/-- From the axiom, contingent generation secures positive ground read from significance
+(`PositiveGroundUncertainty.contingent_generation_has_positive_ground`). -/
+theorem contingent_generation_of_unrestricted {H Q F Pos : Type} (admitted : H → Prop)
+    (before : H → Q → Prop) (inventory : GenerativeComparison.Inventory H Q)
+    {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig) (formation : Q → F)
+    (step : Q → Nat)
+    (formed : ∀ h, admitted h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧
+      ¬ before h q) :
+    ∀ h, admitted h → ∃ q, (inventory.generative q ∧ inventory.realized h q ∧
+      ∀ p, sig p (step q) (formation q)) ∧ ¬ before h q :=
+  PositiveGroundUncertainty.contingent_generation_has_positive_ground admitted before inventory _
+    (inventory_g0_of_unrestricted inventory unrestricted formation step) formed
+
+/-- Universal address from the axiom: with D read on positive relevance from significance,
+formation correspondence gives every position with access the reason
+(`PositionedPositiveReason.every_situated_position_has_reason`). -/
+theorem every_situated_position_has_reason_of_unrestricted {Pos H Q R F : Type}
+    (access : Pos → R → Prop) (admitted : R → H → Prop) (before : H → Q → Prop)
+    (inventory : GenerativeComparison.Inventory H Q) {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat)
+    (Reason : Pos → R → Prop)
+    (articulate : PositionedPositiveReason.PositionedArticulation access admitted before
+      (fun h q => inventory.generative q ∧ inventory.realized h q ∧
+        ∀ p, sig p (step q) (formation q)) Reason)
+    (a : R)
+    (formed : ∀ h, admitted a h → ∃ q, inventory.generative q ∧ inventory.realized h q ∧
+      ¬ before h q) :
+    ∀ p, access p a → Reason p a :=
+  PositionedPositiveReason.every_situated_position_has_reason access admitted before inventory _
+    Reason (inventory_g0_of_unrestricted inventory unrestricted formation step) articulate a formed
+
+end Discharge
 
 /-! ## Situations of a frame and the lifting rule -/
 

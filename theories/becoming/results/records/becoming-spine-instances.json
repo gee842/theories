@@ -130,6 +130,20 @@
         "zh": "securesPositiveGround_iff 与 positionedArticulation_iff 表明核心的确保的正面根据与 D 就是该结果的定义。",
         "en": "securesPositiveGround_iff and positionedArticulation_iff show that the core's secured positive ground and D are that result's definitions."
       }
+    },
+    {
+      "id": "levels-of-closure",
+      "detail": {
+        "zh": "核心的闭包 WithinClosure（Becoming.Feedback）恰是这里从一个种子出发的种子—边闭包（withinClosure_iff_closure，在桥接中）。",
+        "en": "The core's closure WithinClosure (Becoming.Feedback) is exactly the seed–edge closure here from one seed (withinClosure_iff_closure, in the bridge)."
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "detail": {
+        "zh": "桥接的 Discharge 一节在那里：公理之下外围的 G0 对每个清单成立，外围的三项定理由公理推出。",
+        "en": "The bridge's Discharge section belongs there: under the axiom the periphery's G0 holds for every inventory, and three of the periphery's theorems follow from the axiom."
+      }
     }
   ],
   "counterexamples": [
@@ -160,14 +174,14 @@
     "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading. The Mathlib bridge connects only the selection and safety interfaces of CorrectionBoundary and ObservationChange; their randomized bounds and real-valued models are not stated on the core, and the passage by choice to a single policy is not restated."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T180948.563939Z）：Becoming.Bridge 34 项定理（其中 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 属 ranking-under-readings），连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 35 个模块（含只作导入的根模块与桥接），共 1788 项定理／2748 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 37 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261010T182121.048951Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 40 个模块（含核心）的当前字节与已通过回执一致。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261010T180948.563939Z): Becoming.Bridge's 34 theorems (Ranking.wholeRun_iff and Ranking.undisturbed_eq belonging to ranking-under-readings), with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 35 modules (including the import-only root and the bridge) with 1788 theorems/2748 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 37 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261010T182121.048951Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 40 modules in its closure, the core included, match passed receipts."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261010T214440.263682Z）：Becoming.Bridge 40 项定理（其中 Ranking.wholeRun_iff 与 Ranking.undisturbed_eq 属 ranking-under-readings，withinClosure_iff_closure 属 levels-of-closure，Discharge 一节的 5 项属 one-axiom-yields-g0），连同 Becoming.Frame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执覆盖包内 38 个模块（含只作导入的根模块与桥接），共 1971 项定理／2993 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 46 个模块逐行机械检查。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 40 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。核心新增 commonResponse_judge_iff，空依赖。外围桥接 CorrectionInquiry 经 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）成功实查（20261010T222130.672025Z）：7 项定理／8 项声明审计，全部空依赖；闭包中其余 43 个模块（含核心）的当前字节与已通过回执一致。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261010T214440.263682Z): Becoming.Bridge's 40 theorems (Ranking.wholeRun_iff and Ranking.undisturbed_eq belonging to ranking-under-readings, withinClosure_iff_closure to levels-of-closure, the 5 of the Discharge section to one-axiom-yields-g0), with Becoming.Frame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers the package's 38 modules (including the import-only root and the bridge) with 1971 theorems/2993 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 46 module rows. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 40 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The core adds commonResponse_judge_iff with an empty axiom report. The peripheral bridge CorrectionInquiry passed a check with Lean 4.30.0-rc2 and Mathlib (ea11ccc0) (20261010T222130.672025Z): 7 theorems/8 declaration audits, all with empty axiom reports; the current bytes of the other 43 modules in its closure, the core included, match passed receipts."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "33f961da3d4ecaa9dc80c7f97e530f73b1f031a434b72eb2c5ff084cda1117d3",
+      "sha256": "d423cbaecf9e0ebb1adbd24425db53721d6db594e5d40e299c36610f1a74c763",
       "declarations": [
         "Becoming.edgeProcess",
         "Becoming.Closure",
@@ -371,13 +385,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d890f37c9e70643294341fc2f3f870534bd0d32065361ba62d8b0d0325b94992",
+      "sha256": "30c806b7a2df2c886eef4a80662bfe4dc37663fa5d448b1038a6e7d3f4b41ca8",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-verification.json",
       "role": "receipt",
-      "sha256": "8e8d41c2942f235a206e2e1d9fe2d6c117698f068d146815f248058152596d75",
+      "sha256": "edd445c6fdb71d2a38993deca1f0c852d4cbfd66e2f33d38e892c31f25772432",
       "declarations": []
     },
     {
@@ -395,7 +409,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "c1c278e7d1e47fc7d6a0f60c15079e77fa2580a95b4974a82162997eafe911da",
+      "sha256": "2ee1f30b7902c2f1facdf75ccbd092eac71953fdf21330b658a46dfc7f7ec9ec",
       "declarations": []
     },
     {
@@ -787,6 +801,10 @@
     {
       "zh": "2026-10-11 R4：验证范围重新指向合并检查器回执 20261010T180948.563939Z 与外围回执 20261010T182121.048951Z（Becoming.Resolution 加入量的规律、算入细分的静止与第十五次独立审查的更正）。断言不变。",
       "en": "2026-10-11 R4: validation scope re-pointed to consolidated receipt 20261010T180948.563939Z and periphery receipt 20261010T182121.048951Z (the amount law, rest with the refinement counted and the corrections of the fifteenth independent review added to Becoming.Resolution). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P42–P44：验证范围重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心新增 Becoming.Feedback、Becoming.Boundaries 与 Becoming.Relevance，包内模块由 35 个增至 38 个，核心闭包由 37 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 withinClosure_iff_closure 与 Discharge 一节 5 项定理；Becoming.Interdependence 的模块说明更正读法，陈述与证明不变；其余已有模块的源（根模块的导入与说明、桥接除外）与定理数不变；章节加第一部分 §2 的“反馈与所及”与第二部分 §6.10–§6.12）。断言不变。外围闭包中其余模块按其回执计为 43 个。桥接的定理由 34 项增至 35 项：新增的 withinClosure_iff_closure 属 levels-of-closure；新增相关记录 levels-of-closure。P44：桥接的定理由 35 项增至 40 项：新增的 Discharge 一节 5 项属 one-axiom-yields-g0；新增相关记录 one-axiom-yields-g0。",
+      "en": "2026-10-11 P42–P44: validation scope re-pointed to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core adds Becoming.Feedback, Becoming.Boundaries and Becoming.Relevance, the package growing from 35 to 38 modules and the core closure from 37 to 40, with 1971 theorems/2993 declaration audits; the bridge adds withinClosure_iff_closure and the 5 theorems of its Discharge section; Becoming.Interdependence's module documentation corrects a reading, its statements and proofs unchanged; other existing modules' sources, apart from the root module's imports and documentation and the bridge, and theorem counts are unchanged; the chapter adds Part I's feedback and reach in section 2 and Part II's sections 6.10 to 6.12). The claim is unchanged. The periphery closure's other modules are counted as its receipt lists them, 43. The bridge's theorems grow from 34 to 35: the new withinClosure_iff_closure belongs to levels-of-closure; related record levels-of-closure added. P44: the bridge grows from 35 to 40 theorems: the 5 of the new Discharge section belong to one-axiom-yields-g0; adds the related record one-axiom-yields-g0."
     }
   ]
 }
