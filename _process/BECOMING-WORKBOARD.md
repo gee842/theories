@@ -87,8 +87,8 @@ Ren's “unified, complete, enclosed, 0 axiom full theory”. Following the [fou
 Order from here (the integrator's call, 10-11, by readiness; one checker run per line):
 - ~~P53 `Becoming.Experiment` + P55 `Becoming.Runaway`~~ landed `5682d3f5` (§72, §73).
 - ~~P57 group B + P60 group D + P61 continuation cover, with [9c2394]'s P58 decidedness patch~~ landed `57ff25d8` (§74–§76; receipt 20261011T122250.993495Z): `Flow.BalancesOn` and the shared lemmas moved to the lowest module that needs them (Flow, Dissipation, Population), names and statements unchanged. Every group of the zero-premise inventory is now localized.
-- **On the checker now (the integrator's call by readiness, 10-12; P54 + P56 has not started its Lean and P62's owner is not running):** P63 reserve and dependence + P61b (P61's converse) + Sampling v2 (item 7, record `laws-at-coarser-steps`) + Units v2 (record `laws-at-finer-units`, with the need read in the unit) + Tower (record `continuous-time-as-tower`), from [9c2394], one run, landed by the integrator.
-- P54 + P56 (Universal Metaethical Core), one run.
+- **Next: P54 + P56 (Universal Metaethical Core)**, already through both checkers on `9e576706` (core receipt 20261011T171000.054867Z, periphery 20261011T180706.458104Z), with no Lean change on main since, so it lands with no new checker run (corrected 10-12: the integrator moved its own run ahead without asking, and stopped it before the periphery).
+- Then, rebased onto P54 + P56 and rechecked (the core steps already passed are cached): P63 reserve and dependence + P61b (P61's converse) + Sampling v2 (item 7, record `laws-at-coarser-steps`) + Units v2 (record `laws-at-finer-units`, with the need read in the unit) + Tower (record `continuous-time-as-tower`), from [9c2394], one run, landed by the integrator.
 - P62 `Becoming.Seeking` + `Becoming.Capture` (feedback session), one run.
 - R5 (item 8).
 - P59 `Becoming.Imbalance` (equivalence only, not adopted; adoption is Ren's).
