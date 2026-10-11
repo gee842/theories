@@ -15,7 +15,9 @@ generative-capacity modules was audited for what it needs of positive relevance 
   (`g0_of_unrestricted`), and this relevance is the least satisfying G0, exactly the realized
   living content (`relevance_least`). Every use of G0 takes it as a hypothesis for an arbitrary
   positive relevance, so each is discharged by this one; `Becoming.Bridge` does so for the
-  periphery's interface.
+  periphery's interface. With no axiom, G0 with this relevance holds exactly where every
+  realized living claim's continuation has significance from every standpoint
+  (`g0_relevance_iff`): it is the axiom's condition on realized living content.
 * **The axiom is G0 for anything.** On a frame whose claims are formations at steps, each
   realized at some configuration, the axiom holds exactly when G0 holds with every claim living
   and positive relevance read as significance from every standpoint (`unrestricted_iff_g0`).
@@ -56,19 +58,21 @@ generative-capacity modules was audited for what it needs of positive relevance 
   possibilities counts a pause as a loss. The order is a further premise; the axiom gives the
   possibility reading alone.
 
+**Ren's decisions, 11 October 2026.** Positive relevance is folded into significance (“Positive
+relevance - yes, let's fold”): it is the significance of realized living content. Ren left the
+comparison of courses to the AI (“Comparing courses - you decide”), which compares courses on
+possibilities; the theorems of the other comparisons stay.
+
 **AI reading, pending Ren.**
-- Positive relevance read as the significance of realized living content reads Ren's “doesn't
-  have to be positive”: significance is not positive relevance, and what is positive is the
-  living, 生生.
+- Significance need not be positive, and what is positive is the living, 生生: so the AI reads
+  Ren's “doesn't have to be positive”.
 - The possibility reading of C reads “what has significance is what can form”
   (`Becoming.Significance`) and Ren's “more possibilities of becoming”. It counts what can form,
   not what does: a course in which a formation lives without adding a possibility is neither
   better nor worse than one in which it could live and does not.
 
-What is not derived: the warrant of the axiom; which comparison of courses Ren adopts, the
-possibility reading, a reading of `living`, or possibilities first; the step from significance to
-a reason (A), which stays a premise. After the audit Ren folded G0 (11 October 2026): it is no
-longer an axiom.
+What is not derived: the warrant of the axiom; the step from significance to a reason (A), which
+stays a premise. After the audit Ren folded G0 (11 October 2026): it is no longer an axiom.
 -/
 
 namespace Becoming
@@ -104,6 +108,16 @@ theorem relevance_least (M : Frame S A Q) (living : Q → Prop) {sig : Pos → N
   ⟨fun _ c => ⟨fun ⟨alive, realized, _⟩ => ⟨alive, realized⟩,
      fun ⟨alive, realized⟩ => ⟨alive, realized, fun p => unrestricted (p, step c, formation c)⟩⟩,
    fun _ g0 s c ⟨alive, realized, _⟩ => g0 s c alive realized⟩
+
+/-- Positive relevance folded into significance (Ren, 11 October 2026). Read from significance, G0
+holds exactly where the continuation of every realized living claim has significance from every
+standpoint: it is the axiom's condition on realized living content, with no axiom. -/
+theorem g0_relevance_iff (M : Frame S A Q) (living : Q → Prop) (sig : Pos → Nat → F → Prop)
+    (formation : Q → F) (step : Q → Nat) :
+    G0 M living (M.relevance living sig formation step) ↔
+      ∀ s c, living c → M.realized s c → ∀ p, sig p (step c) (formation c) :=
+  ⟨fun g0 s c alive realized => (g0 s c alive realized).2.2,
+   fun all s c alive realized => ⟨alive, realized, all s c alive realized⟩⟩
 
 /-- The axiom is G0 for anything. On a frame whose claims are formations at steps, each realized
 at some configuration, the axiom holds exactly when G0 holds with every claim living and

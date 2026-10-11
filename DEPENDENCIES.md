@@ -798,6 +798,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## comparison-by-widening ← four-cases-of-a-part
+
+`formal-reuse` — 复用扩大（Web.Widens，P56）：包含且超出。 / Reuses widening (Web.Widens, P56): including and exceeding.
+
+**Producer output / 上游输出:** 水平路径之间的扩大、包含与超出。 / Widening, inclusion and exceeding between level paths.
+
+**Consumer input / 下游输入:** 水平路径上的扩展恰是扩大。 / An extension on level paths is exactly a widening.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## comparison-by-widening ← metaethical-core-characterization
+
+`formal-reuse` — 复用 Extension 与 Comparison 的定义；C 的形式不变。 / Reuses the definitions of Extension and Comparison; the form of C is unchanged.
+
+**Producer output / 上游输出:** 扩展与比较前提 C 的定义。 / The definitions of extension and of the comparison premise C.
+
+**Consumer input / 下游输入:** 在水平路径的框架上，以扩大为“更好”，C 成立。 / On the frame of level paths, with widening as “better”, C holds.
+
+**Retained conditions / 保留条件:** “更好”读作扩大。 / “Better” read as widening.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
+
 ## comparison-within-reach ← feedback-and-reach
 
 `formal-reuse` — 复用 Flow.ReachesBefore 与 Flow.Balances.admits_unreached_before：在某步之前没有到达的同样被接纳。 / Reuses Flow.ReachesBefore and Flow.Balances.admits_unreached_before: what is not reached before a step is admitted alike.

@@ -41,7 +41,10 @@ This module states the axiom on the spine and what follows from it with the resu
   (`Flow.Balances.retains_iff_within_margin`). The part loses a continuation with significance
   exactly where its net draw exceeds the margin (`Flow.Balances.loses_iff_beyond_margin`). It
   adds one exactly where its net exchange brings within the margin a formation that the levels
-  without it do not admit (`Flow.Balances.adds_iff_within_margin`).
+  without it do not admit (`Flow.Balances.adds_iff_within_margin`). Each holds with balance
+  only at the conditions of the continuations compared, across the steps before each
+  (`Flow.retains_iff_within_margin_at`, `Flow.loses_iff_beyond_margin_at`,
+  `Flow.adds_iff_within_margin_at`).
 * **No ending is licensed.** A level path that retains what has significance along another
   ends none of it (`Web.Retains.not_added`). Under the axiom the conveyor's part is unordered,
   each path adding what the other lacks (`Transfer.unordered`), so ordering it needs a measure,
@@ -66,9 +69,23 @@ This module states the axiom on the spine and what follows from it with the resu
   standpoint. Meanwhile, the levels without the part admit every formation at every step, and
   the clearer is supported throughout, so withholding the part ends nothing
   (`Clearing.free_rider_loses`).
+* **The generative space, with no axiom.** With balance at the conditions each formation
+  requires, across the steps before it, the levels with a part widen those without it exactly
+  when its net draw stays within the margin for everything the levels without it admit and
+  its net exchange brings one more formation within the margin
+  (`Flow.widens_iff_within_margin_at`; in a balanced flow,
+  `Flow.Balances.widens_iff_within_margin`). On level paths, an extension in which every
+  claim counts as living is exactly a widening, so C holds for every reading of `living`
+  with “better” read as widening, with no axiom (`Web.paths_extension_iff_widens`,
+  `Web.paths_comparison_widens`). With the axiom as a condition, widening is retaining and
+  adding, keeping the same is retaining both ways, and being mixed is adding both ways
+  (`Web.widens_iff_retains_adds`, `Web.keeps_iff_retains`, `Web.mixed_iff_adds`): the
+  reduction to possibilities loses nothing, and the rules above need no axiom (Ren, 11
+  October 2026: “as long as the derivation of the rules doesn't rely on axiom, don't use
+  one”).
 * **The axiom is needed.** Where nothing has significance, every level path retains every
   other and none adds, and G0 fails at any event that lives (`Web.significance_undetermined`).
-  No theorem of Part I mentions significance, so the dynamics does not decide it.
+  No law of the dynamics mentions significance, so the dynamics does not decide it.
 
 Significance here is not graded, and, as Ren wrote, it need not be positive. A part does no
 harm when the levels with it retain what has significance without it, and it is generative when
@@ -184,6 +201,31 @@ theorem retains_agree {sig : Pos → Nat → F → Prop} (unrestricted : Unrestr
     (p q : Pos) {l l' : Nat → C → Nat} : W.Retains sig p l l' ↔ W.Retains sig q l l' :=
   (retains_iff_includes unrestricted p).trans (retains_iff_includes unrestricted q).symm
 
+/-- The one-axiom case. With the axiom as a condition, retaining and adding what has significance
+is widening what can form: the reduction to possibilities loses nothing. -/
+theorem widens_iff_retains_adds {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
+    (p : Pos) {l l' : Nat → C → Nat} : W.Widens l l' ↔ W.Retains sig p l l' ∧ W.Adds sig p l l' :=
+  ⟨fun ⟨includes, exceeds⟩ => ⟨(retains_iff_includes unrestricted p).mpr includes,
+     (adds_iff_exceeds unrestricted p).mpr exceeds⟩,
+   fun ⟨retains, adds⟩ => ⟨(retains_iff_includes unrestricted p).mp retains, adds.exceeds⟩⟩
+
+/-- The one-axiom case. With the axiom as a condition, keeping what can form the same is retaining
+what has significance both ways. -/
+theorem keeps_iff_retains {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
+    (p : Pos) {l l' : Nat → C → Nat} : W.Keeps l l' ↔ W.Retains sig p l l' ∧ W.Retains sig p l' l :=
+  ⟨fun ⟨first, second⟩ => ⟨(retains_iff_includes unrestricted p).mpr first,
+     (retains_iff_includes unrestricted p).mpr second⟩,
+   fun ⟨first, second⟩ => ⟨(retains_iff_includes unrestricted p).mp first,
+     (retains_iff_includes unrestricted p).mp second⟩⟩
+
+/-- The one-axiom case. With the axiom as a condition, being mixed is each adding what has
+significance that the other lacks. -/
+theorem mixed_iff_adds {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
+    (p : Pos) {l l' : Nat → C → Nat} : W.Mixed l l' ↔ W.Adds sig p l l' ∧ W.Adds sig p l' l :=
+  ⟨fun ⟨first, second⟩ => ⟨(adds_iff_exceeds unrestricted p).mpr first,
+     (adds_iff_exceeds unrestricted p).mpr second⟩,
+   fun ⟨first, second⟩ => ⟨first.exceeds, second.exceeds⟩⟩
+
 /-- Where fewer continuations have significance, more is retained. -/
 theorem Retains.of_fewer {sig sig' : Pos → Nat → F → Prop}
     (fewer : ∀ p t f, sig' p t f → sig p t f) {p : Pos} {l l' : Nat → C → Nat}
@@ -211,6 +253,61 @@ namespace Flow
 
 variable {L : Flow F C} {part : F → Bool} {W : Web F C}
 
+/-- From standpoint `p`, with balance only at the conditions required by the continuations with
+significance that the levels without the part admit, across the steps before each: the levels with
+the part retain what has significance without it exactly when, for each such continuation, the
+part's net draw on each condition the formation requires stays within the margin. -/
+theorem retains_iff_within_margin_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    {sig : Pos → Nat → F → Prop} {p : Pos}
+    (balances : ∀ t f, sig p t f → W.Admits (l t) t f → ∀ c, W.requires t f c → ∀ s, s < t →
+      L.BalancesOn W [c] s) :
+    W.Retains sig p W.level l ↔ ∀ t f, sig p t f → W.Admits (l t) t f → ∀ c, W.requires t f c →
+      W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+        l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
+  ⟨fun retains t f significant admits =>
+      (supported_iff_within_margin_at without (balances t f significant admits)).mp
+        (retains t f significant admits),
+   fun within t f significant admits =>
+      (supported_iff_within_margin_at without (balances t f significant admits)).mpr
+        (within t f significant admits)⟩
+
+/-- From standpoint `p`, with balance as in `retains_iff_within_margin_at`: a part loses a
+continuation with significance exactly where the levels without it admit the formation and the
+part's net draw on some condition it requires exceeds the margin. -/
+theorem loses_iff_beyond_margin_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    {sig : Pos → Nat → F → Prop} {p : Pos}
+    (balances : ∀ t f, sig p t f → W.Admits (l t) t f → ∀ c, W.requires t f c → ∀ s, s < t →
+      L.BalancesOn W [c] s) :
+    W.Adds sig p l W.level ↔ ∃ t f, sig p t f ∧ W.Admits (l t) t f ∧ ¬ ∀ c, W.requires t f c →
+      W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+        l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
+  ⟨fun ⟨t, f, significant, admits, lost⟩ => ⟨t, f, significant, admits, fun within =>
+      lost ((supported_iff_within_margin_at without (balances t f significant admits)).mpr
+        within)⟩,
+   fun ⟨t, f, significant, admits, beyond⟩ => ⟨t, f, significant, admits, fun supported =>
+      beyond ((supported_iff_within_margin_at without (balances t f significant admits)).mp
+        supported)⟩⟩
+
+/-- From standpoint `p`, with balance only at the conditions required by the continuations with
+significance that the levels without the part do not admit, across the steps before each: a part
+adds a continuation with significance exactly where the levels without it do not admit the
+formation and, with the part's net exchange, its need is met within the margin on every condition
+it requires. -/
+theorem adds_iff_within_margin_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    {sig : Pos → Nat → F → Prop} {p : Pos}
+    (balances : ∀ t f, sig p t f → ¬ W.Admits (l t) t f → ∀ c, W.requires t f c → ∀ s, s < t →
+      L.BalancesOn W [c] s) :
+    W.Adds sig p W.level l ↔ ∃ t f, sig p t f ∧ (∀ c, W.requires t f c →
+      W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+        l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧ ¬ W.Admits (l t) t f :=
+  ⟨fun ⟨t, f, significant, supported, fresh⟩ => ⟨t, f, significant,
+      (supported_iff_within_margin_at without (balances t f significant fresh)).mp supported,
+      fresh⟩,
+   fun ⟨t, f, significant, within, fresh⟩ => ⟨t, f, significant,
+      (supported_iff_within_margin_at without (balances t f significant fresh)).mpr within,
+      fresh⟩⟩
+
+
 /-- From standpoint `p`, the levels with a part retain what has significance without it exactly
 when, at every step, for every continuation with significance that the levels without it admit,
 the part's net draw on each condition the formation requires stays within the margin. -/
@@ -219,12 +316,7 @@ theorem Balances.retains_iff_within_margin (balances : L.Balances W) {l : Nat �
     W.Retains sig p W.level l ↔ ∀ t f, sig p t f → W.Admits (l t) t f → ∀ c, W.requires t f c →
       W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
         l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
-  ⟨fun retains t f significant admits =>
-      (balances.supported_iff_within_margin without (t := t) (f := f)).mp
-        (retains t f significant admits),
-   fun within t f significant admits =>
-      (balances.supported_iff_within_margin without (t := t) (f := f)).mpr
-        (within t f significant admits)⟩
+  retains_iff_within_margin_at without fun _ _ _ _ c _ s _ => balances.on [c] s
 
 /-- From standpoint `p`, a part loses a continuation with significance exactly where the levels
 without it admit the formation and the part's net draw on some condition it requires exceeds the
@@ -234,10 +326,7 @@ theorem Balances.loses_iff_beyond_margin (balances : L.Balances W) {l : Nat → 
     W.Adds sig p l W.level ↔ ∃ t f, sig p t f ∧ W.Admits (l t) t f ∧ ¬ ∀ c, W.requires t f c →
       W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
         l t c + total (steps 0 t) (fun s => L.partGiven part s c) :=
-  ⟨fun ⟨t, f, significant, admits, lost⟩ => ⟨t, f, significant, admits, fun within =>
-      lost ((balances.supported_iff_within_margin without (t := t) (f := f)).mpr within)⟩,
-   fun ⟨t, f, significant, admits, beyond⟩ => ⟨t, f, significant, admits, fun supported =>
-      beyond ((balances.supported_iff_within_margin without (t := t) (f := f)).mp supported)⟩⟩
+  loses_iff_beyond_margin_at without fun _ _ _ _ c _ s _ => balances.on [c] s
 
 /-- From standpoint `p`, a part adds a continuation with significance exactly where the levels
 without it do not admit the formation and, with the part's net exchange, its need is met within
@@ -247,10 +336,42 @@ theorem Balances.adds_iff_within_margin (balances : L.Balances W) {l : Nat → C
     W.Adds sig p W.level l ↔ ∃ t f, sig p t f ∧ (∀ c, W.requires t f c →
       W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
         l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧ ¬ W.Admits (l t) t f :=
-  ⟨fun ⟨t, f, significant, supported, fresh⟩ => ⟨t, f, significant,
-      (balances.supported_iff_within_margin without (t := t) (f := f)).mp supported, fresh⟩,
-   fun ⟨t, f, significant, within, fresh⟩ => ⟨t, f, significant,
-      (balances.supported_iff_within_margin without (t := t) (f := f)).mpr within, fresh⟩⟩
+  adds_iff_within_margin_at without fun _ _ _ _ c _ s _ => balances.on [c] s
+
+/-- The exact boundary of the generative space, with no axiom, and balance only where it is used:
+at the conditions each formation requires, across the steps before it. The levels with a part
+widen those without it exactly when the part's net draw stays within the margin for every
+formation the levels without it admit, and, at some step, its net exchange brings within the
+margin a formation the levels without it do not admit. -/
+theorem widens_iff_within_margin_at {l : Nat → C → Nat} (without : L.WithheldLevels part W l)
+    (balances : ∀ t f c, W.requires t f c → ∀ s, s < t → L.BalancesOn W [c] s) :
+    W.Widens W.level l ↔
+      (∀ t f, W.Admits (l t) t f → ∀ c, W.requires t f c →
+        W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+          l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧
+      ∃ t f, (∀ c, W.requires t f c →
+        W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+          l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧ ¬ W.Admits (l t) t f :=
+  ⟨fun ⟨includes, t, f, admits, not⟩ =>
+    ⟨fun t f admitted => (supported_iff_within_margin_at without (balances t f)).mp
+        (includes t f admitted),
+     t, f, (supported_iff_within_margin_at without (balances t f)).mp admits, not⟩,
+   fun ⟨within, t, f, brought, not⟩ =>
+    ⟨fun t f admitted => (supported_iff_within_margin_at without (balances t f)).mpr
+        (within t f admitted),
+     t, f, (supported_iff_within_margin_at without (balances t f)).mpr brought, not⟩⟩
+
+/-- In a balanced flow, the exact boundary of the generative space (`widens_iff_within_margin_at`). -/
+theorem Balances.widens_iff_within_margin (balances : L.Balances W) {l : Nat → C → Nat}
+    (without : L.WithheldLevels part W l) :
+    W.Widens W.level l ↔
+      (∀ t f, W.Admits (l t) t f → ∀ c, W.requires t f c →
+        W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+          l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧
+      ∃ t f, (∀ c, W.requires t f c →
+        W.need t f c + total (steps 0 t) (fun s => L.partTaken part s c) ≤
+          l t c + total (steps 0 t) (fun s => L.partGiven part s c)) ∧ ¬ W.Admits (l t) t f :=
+  widens_iff_within_margin_at without fun _ _ c _ s _ => balances.on [c] s
 
 end Flow
 
@@ -300,6 +421,21 @@ theorem Web.paths_g0_comparison (W : Web F C) {sig : Pos → Nat → F → Prop}
    fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
      ⟨fun t f _ admits => keeps (f, t) admits,
       ⟨e.2, e.1, unrestricted (p, e.2, e.1), realized, fresh⟩⟩⟩
+
+/-- C with no axiom. On level paths, an extension in which every claim counts as living is exactly
+a widening. -/
+theorem Web.paths_extension_iff_widens (W : Web F C) {l l' : Nat → C → Nat} :
+    Extension W.paths (fun _ => True) l' l ↔ W.Widens l l' :=
+  ⟨fun ⟨keeps, e, _, realized, fresh⟩ => ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩,
+   fun ⟨includes, t, f, admits, not⟩ =>
+    ⟨fun e admits => includes e.2 e.1 admits, (f, t), trivial, admits, not⟩⟩
+
+/-- C with no axiom. On level paths, C holds for every reading of `living` with “better” read as
+widening what can form: the comparison by possibilities is a law, not a premise. -/
+theorem Web.paths_comparison_widens (W : Web F C) (living : F × Nat → Prop) :
+    Comparison W.paths living fun l' l => W.Widens l l' :=
+  fun _ _ ⟨keeps, e, _, realized, fresh⟩ =>
+    ⟨fun t f admits => keeps (f, t) admits, e.2, e.1, realized, fresh⟩
 
 /-- The axiom is needed. Where nothing has significance, every level path retains every other
 and none adds, and G0 fails at any event that lives; where everything has significance G0 holds.

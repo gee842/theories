@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-151 migrated records: 147 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+152 migrated records: 148 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -38,6 +38,7 @@
 | `closure-verdict-meets-axiom` | [闭包内的判断与公理相合之处：以整体为界的意义就是公理；另一条路径接纳的每个形成都在区域之内或被第一条接纳之处，以区域为界的判断就是公理的判断，所以供给闭包是整体时总是；在清除者的网中两者分开 / Where the verdict within the closure meets the axiom: significance bounded by the whole is the axiom; wherever every formation the other path admits lies in the region or is admitted by the first, the verdict bounded by the region is the axiom's, and so always where the feeding closure is the whole; in the clearer's web the two part](records/closure-verdict-meets-axiom.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `coming-and-ceasing-keep-pace` | [不加前提的变化规律：有限之中，开始成立与不再成立同步 / Laws of change with no premise: in a finite family, coming to be and ceasing to be keep pace](records/coming-and-ceasing-keep-pace.md) | theorem | recorded-checked |
+| `comparison-by-widening` | [C 是规律：在水平路径上，每个主张都算作活的扩展恰是扩大能形成者；把“更好”读作扩大，C 对 living 的每种读法成立，不用公理 / C is a law: on level paths an extension in which every claim counts as living is exactly a widening of what can form; with “better” read as widening, C holds for every reading of living, with no axiom](records/comparison-by-widening.md) | theorem | recorded-checked |
 | `comparison-within-reach` | [比较在部分所及之内决定：覆盖部分在每步之前已到达者的任何意义，对有与无部分的水平作公理的比较；任意两个流的比较在其差别所及之内决定 / The comparison is decided within what the part reaches: any significance covering what the part has reached before each step compares the levels with and without it as the axiom does; the comparison of any two flows is decided within what their difference reaches](records/comparison-within-reach.md) | theorem | recorded-checked |
 | `condition-correspondence-discipline` | [条件的对应纪律：只有交互才经由条件相关，惰性条件不再免费连通，连通由活的使用造成 / A correspondence discipline for conditions: only interaction relates through a condition, idle conditions no longer connect for free, and connection is made by living use](records/condition-correspondence-discipline.md) | theorem | recorded-checked |
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |

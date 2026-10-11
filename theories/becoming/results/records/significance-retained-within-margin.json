@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T11:22:00+00:00",
+  "reviewed_at_utc": "2026-10-11T19:09:09+00:00",
   "claim": {
-    "zh": "从立场 p，水平路径 l 保留 l' 上的有意义者（Web.Retains），是指 l 接纳 l' 所接纳的每个从 p 有意义的延续；增加（Web.Adds），是指 l 接纳一个 l' 不接纳的从 p 有意义的延续。保留是预序（Retains.refl、Retains.trans），保留另一条者不被它增加，所以不终结其中任何有意义者（Retains.not_added）；包含总保留（Includes.retains），增加总超出（Adds.exceeds）。公理 Unrestricted 之下，保留就是包含、增加就是超出（retains_iff_includes、adds_iff_exceeds），从每个立场都一样（retains_agree）。在平衡的流中，设扣留一个部分后的水平为 l（WithheldLevels）：有该部分的水平保留无它时的有意义者，恰当在 l 所接纳的每个有意义的延续所需的每个条件上，所需加上部分到此为止取走的，不多于 l 加上部分给予的（Flow.Balances.retains_iff_within_margin）；部分失去一个有意义的延续，恰在 l 接纳它而部分在它所需的某个条件上的净汲取超出余量之处（Flow.Balances.loses_iff_beyond_margin）；增加一个，恰在 l 不接纳它而有部分的净交换使它的所需在余量之内之处（Flow.Balances.adds_iff_within_margin）。公理之下，传送者的部分不被定序：两条路径各自增加对方缺少的，谁也不保留谁（Transfer.unordered）；给予者的部分保留并增加（Restoring.Inflow.retains_adds）。在 Preemption 中，汲取者在第零步取走条件唯一的单位，那时没有依存形成：流平衡，只有活跃者给予与取用，活动需要支持，它的事件活跃且不侵蚀；形成 false 从第一步起以所需一依存于该条件，无此部分时每步被接纳，有此部分时第一步起每步不被支持；无此部分的水平包含有它的水平，公理之下这个部分失去一个有意义的延续，有它的水平不保留无它时的有意义者（Preemption.not_undermining_yet_loses）。不用伦理以外的前提，也不用 Lean 公理。",
-    "en": "From standpoint p, a level path l retains what has significance along l' (Web.Retains) when l admits every continuation with significance from p that l' admits; it adds (Web.Adds) when l admits a continuation with significance from p that l' does not. Retaining is a preorder (Retains.refl, Retains.trans), and a path that retains another is not added to by it, so it ends none of what has significance there (Retains.not_added); inclusion always retains (Includes.retains) and adding always exceeds (Adds.exceeds). Under the axiom Unrestricted, retaining is inclusion and adding is exceeding (retains_iff_includes, adds_iff_exceeds), alike from every standpoint (retains_agree). In a balanced flow, let l be the levels with a part withheld (WithheldLevels): the levels with the part retain what has significance without it exactly when, for every continuation with significance that l admits and every condition it requires, its need plus what the part has taken so far is at most l plus what the part has given (Flow.Balances.retains_iff_within_margin); the part loses a continuation with significance exactly where l admits it and the part's net draw on some condition it requires exceeds the margin (Flow.Balances.loses_iff_beyond_margin); it adds one exactly where l does not admit it and, with the part's net exchange, its need is met within the margin (Flow.Balances.adds_iff_within_margin). Under the axiom the conveyor's part is unordered: each path adds what the other lacks, and neither retains the other (Transfer.unordered); the giver's part retains and adds (Restoring.Inflow.retains_adds). In Preemption a drawer takes the condition's only unit at step zero, before any dependence forms: the flow balances, only active formations give and take, activity needs support, and its event is active and not undermining; the formation false depends on the condition at need one from step one on, and is admitted at every step without the part and supported at no step from step one with it; the levels without the part include the levels with it, and under the axiom the part loses a continuation with significance, so the levels with it do not retain what has significance without it (Preemption.not_undermining_yet_loses). No premise beyond those stated and no Lean axiom is used."
+    "zh": "从立场 p，水平路径 l 保留 l' 上的有意义者（Web.Retains），是指 l 接纳 l' 所接纳的每个从 p 有意义的延续；增加（Web.Adds），是指 l 接纳一个 l' 不接纳的从 p 有意义的延续。保留是预序（Retains.refl、Retains.trans），保留另一条者不被它增加，所以不终结其中任何有意义者（Retains.not_added）；包含总保留（Includes.retains），增加总超出（Adds.exceeds）。公理 Unrestricted 之下，保留就是包含、增加就是超出（retains_iff_includes、adds_iff_exceeds），从每个立场都一样（retains_agree）。在平衡的流中，设扣留一个部分后的水平为 l（WithheldLevels）：有该部分的水平保留无它时的有意义者，恰当在 l 所接纳的每个有意义的延续所需的每个条件上，所需加上部分到此为止取走的，不多于 l 加上部分给予的（Flow.Balances.retains_iff_within_margin）；部分失去一个有意义的延续，恰在 l 接纳它而部分在它所需的某个条件上的净汲取超出余量之处（Flow.Balances.loses_iff_beyond_margin）；增加一个，恰在 l 不接纳它而有部分的净交换使它的所需在余量之内之处（Flow.Balances.adds_iff_within_margin）。公理之下，传送者的部分不被定序：两条路径各自增加对方缺少的，谁也不保留谁（Transfer.unordered）；给予者的部分保留并增加（Restoring.Inflow.retains_adds）。在 Preemption 中，汲取者在第零步取走条件唯一的单位，那时没有依存形成：流平衡，只有活跃者给予与取用，活动需要支持，它的事件活跃且不侵蚀；形成 false 从第一步起以所需一依存于该条件，无此部分时每步被接纳，有此部分时第一步起每步不被支持；无此部分的水平包含有它的水平，公理之下这个部分失去一个有意义的延续，有它的水平不保留无它时的有意义者（Preemption.not_undermining_yet_loses）。不用伦理以外的前提，也不用 Lean 公理。P56：三条界都有局部形式，平衡只在所比较的延续所需的条件上、在其之前的各步：保留与失去只在无部分时接纳的有意义的延续上，增加只在无部分时不接纳的上（Flow.retains_iff_within_margin_at、Flow.loses_iff_beyond_margin_at、Flow.adds_iff_within_margin_at）；原定理在原处作推论重证，名称与陈述不变。以公理为条件，扩大（Web.Widens，见 four-cases-of-a-part）就是保留且增加有意义者，保持不变就是双向保留，混合就是双向增加（Web.widens_iff_retains_adds、Web.keeps_iff_retains、Web.mixed_iff_adds）：还原到可能性不失去任何东西。",
+    "en": "From standpoint p, a level path l retains what has significance along l' (Web.Retains) when l admits every continuation with significance from p that l' admits; it adds (Web.Adds) when l admits a continuation with significance from p that l' does not. Retaining is a preorder (Retains.refl, Retains.trans), and a path that retains another is not added to by it, so it ends none of what has significance there (Retains.not_added); inclusion always retains (Includes.retains) and adding always exceeds (Adds.exceeds). Under the axiom Unrestricted, retaining is inclusion and adding is exceeding (retains_iff_includes, adds_iff_exceeds), alike from every standpoint (retains_agree). In a balanced flow, let l be the levels with a part withheld (WithheldLevels): the levels with the part retain what has significance without it exactly when, for every continuation with significance that l admits and every condition it requires, its need plus what the part has taken so far is at most l plus what the part has given (Flow.Balances.retains_iff_within_margin); the part loses a continuation with significance exactly where l admits it and the part's net draw on some condition it requires exceeds the margin (Flow.Balances.loses_iff_beyond_margin); it adds one exactly where l does not admit it and, with the part's net exchange, its need is met within the margin (Flow.Balances.adds_iff_within_margin). Under the axiom the conveyor's part is unordered: each path adds what the other lacks, and neither retains the other (Transfer.unordered); the giver's part retains and adds (Restoring.Inflow.retains_adds). In Preemption a drawer takes the condition's only unit at step zero, before any dependence forms: the flow balances, only active formations give and take, activity needs support, and its event is active and not undermining; the formation false depends on the condition at need one from step one on, and is admitted at every step without the part and supported at no step from step one with it; the levels without the part include the levels with it, and under the axiom the part loses a continuation with significance, so the levels with it do not retain what has significance without it (Preemption.not_undermining_yet_loses). No premise beyond those stated and no Lean axiom is used. P56: each of the three boundaries has a local form, with balance only at the conditions the continuations compared require, across the steps before each: retaining and losing only at the continuations with significance that the levels without the part admit, adding only at those they do not admit (Flow.retains_iff_within_margin_at, Flow.loses_iff_beyond_margin_at, Flow.adds_iff_within_margin_at); the originals are re-proved in place as corollaries, names and statements unchanged. With the axiom as a condition, widening (Web.Widens, see four-cases-of-a-part) is retaining and adding what has significance, keeping the same is retaining both ways, and being mixed is adding both ways (Web.widens_iff_retains_adds, Web.keeps_iff_retains, Web.mixed_iff_adds): the reduction to possibilities loses nothing."
   },
   "hypotheses": [
     {
@@ -48,7 +48,13 @@
     "Becoming.Flow.Balances.adds_iff_within_margin",
     "Becoming.Transfer.unordered",
     "Becoming.Restoring.Inflow.retains_adds",
-    "Becoming.Preemption.not_undermining_yet_loses"
+    "Becoming.Preemption.not_undermining_yet_loses",
+    "Becoming.Flow.retains_iff_within_margin_at",
+    "Becoming.Flow.loses_iff_beyond_margin_at",
+    "Becoming.Flow.adds_iff_within_margin_at",
+    "Becoming.Web.widens_iff_retains_adds",
+    "Becoming.Web.keeps_iff_retains",
+    "Becoming.Web.mixed_iff_adds"
   ],
   "dependencies": [
     {
@@ -151,14 +157,14 @@
     "en": "Only formations admitted are compared, step by step; withholding a part leaves the rest of the exchange as it was; significance is not graded, so a mixed part is unordered; the level at which formations are individuated (members or lineages) fixes what counts as a loss and is given by the representation here; in Preemption the later need is a choice of representation, showing that the two readings differ, not that preemption loses something in every model; which reading G0's living names is Ren's choice; the readings and names are the AI's, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Significance 的 27 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T143738.711009Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): the 27 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T143738.711009Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T171000.054867Z）：Becoming.Significance 的 37 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2421 项定理／3590 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T180706.458104Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。公理 Unrestricted 是定理的假设，不是 Lean 公理。作者反审见整合文档 §53；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T171000.054867Z): the 37 theorems of Becoming.Significance all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2421 theorems/3590 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T180706.458104Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The axiom Unrestricted is a hypothesis of the theorems, not a Lean axiom. The author's counterreview is in §53 of the integration note; not yet independently reviewed."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
       "role": "proof",
-      "sha256": "5813e4de67b9cc79d72aab80f7197072a5fad7842002603a3ac1dbb04f5ff41f",
+      "sha256": "f71118288abb3c0f1c992d16bd5c543399474f00da5fbedd071eaf50d7a91684",
       "declarations": [
         "Becoming.Web.Retains",
         "Becoming.Web.Adds",
@@ -179,7 +185,13 @@
         "Becoming.Preemption.web",
         "Becoming.Preemption.drawerPart",
         "Becoming.Preemption.withheld",
-        "Becoming.Preemption.not_undermining_yet_loses"
+        "Becoming.Preemption.not_undermining_yet_loses",
+        "Becoming.Flow.retains_iff_within_margin_at",
+        "Becoming.Flow.loses_iff_beyond_margin_at",
+        "Becoming.Flow.adds_iff_within_margin_at",
+        "Becoming.Web.widens_iff_retains_adds",
+        "Becoming.Web.keeps_iff_retains",
+        "Becoming.Web.mixed_iff_adds"
       ]
     },
     {
@@ -215,17 +227,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a"
+      "sha256": "19d3cdf547e4f42c25508575953343aabc301528f8beddf7da15577f622e2179"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549"
+      "sha256": "fb738105344fcb67409b5281c7563f4a4a3afe8385dfbba5cb25610f0d18b105"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9ac191fbff2ba55cd16adaa424f44aed5a2c276618db18443eb8dbce5d06239a"
+      "sha256": "f56ac603eb3924eefbccc2ffff208f2b6d7df1e38bd389c3e1d132fe71d0401c"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-wanting-continuation-one-axiom.md",
@@ -337,6 +349,14 @@
     {
       "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P56：三条界的局部形式（平衡只在所用之处），以及以公理为条件时扩大、保持不变与混合在意义上的读法；规则不用公理推出，这三条留给一条公理的情形（Ren 2026-10-11）。见整合文档 §78。",
+      "en": "2026-10-11 P56: the local forms of the three boundaries (balance only where it is used), and, with the axiom as a condition, widening, keeping the same and being mixed read in significance; the rules are derived with no axiom, and these three stay for the one-axiom case (Ren, 11 October 2026). See §78 of the integration note."
     }
   ]
 }

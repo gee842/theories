@@ -172,8 +172,8 @@
     "en": "Contains no ethical predicate. The general theorems on the three outcomes only constrain them, and the outcomes are neither exhaustive nor exclusive; the reading of the break does not fix the next configuration. Dependent excludes buffers, reserves and lags; it is the zero reserve, and with a reserve these outcomes are deferred, not removed, see reserve-defers-ending. Does not complete the whole deduction. Difference-making, cycle-level renewal and substitution are in joint-difference-making, becoming-return-grades and substitution-preserves-consumption."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T122250.993495Z）：Becoming.Dependence 61 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2402 项定理／3568 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T122250.993495Z): all 61 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2402 theorems/3568 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T171000.054867Z）：Becoming.Dependence 61 项定理全部空依赖，其中逐步读法的定理（含 P7b 新增的 NewNeed 与 Pinned 的定理，P9b 新增的 FallingNeed、RisingNeed 与 Gap 的定理，及 P11b 新增的 MetAbove.now 与 Stunted 的定理）属 becoming-stepwise-reading；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2421 项定理／3590 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T171000.054867Z): all 61 theorems of Becoming.Dependence have empty axiom reports, the stepwise ones (including P7b's NewNeed and Pinned theorems, P9b's FallingNeed, RisingNeed and Gap theorems, and P11b's MetAbove.now and Stunted theorems) belonging to becoming-stepwise-reading; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2421 theorems/3590 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -247,19 +247,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "dc8a045ae3601d14701f7d92aeda992f20d7eb07e4a8b24e661591489077774a",
+      "sha256": "19d3cdf547e4f42c25508575953343aabc301528f8beddf7da15577f622e2179",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "c3118657736750ea92a804d1828602176fa648f6e5f3248e6fe73a0f0748c549",
+      "sha256": "fb738105344fcb67409b5281c7563f4a4a3afe8385dfbba5cb25610f0d18b105",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "c3dc01bc98464468cd6b869bc537f23ecf73c9113dc4796341ce8588aa5f339a",
+      "sha256": "f98a80c2e60bca8a78309ae04335f6c98ae6fb3e4711bb409871487de4aefad5",
       "declarations": []
     },
     {
@@ -570,6 +570,10 @@
     {
       "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
     }
   ]
 }

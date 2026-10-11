@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "id": "comparison-by-widening",
+  "title": {
+    "zh": "C 是规律：在水平路径上，每个主张都算作活的扩展恰是扩大能形成者；把“更好”读作扩大，C 对 living 的每种读法成立，不用公理",
+    "en": "C is a law: on level paths an extension in which every claim counts as living is exactly a widening of what can form; with “better” read as widening, C holds for every reading of living, with no axiom"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-11T19:09:09+00:00",
+  "claim": {
+    "zh": "在依存网的水平路径框架（Web.paths）上，主张是（形成，步），一条水平路径实现它恰当在该步接纳该形成。以每个主张都算作活，水平路径 l 对 l′ 的扩展（Extension：实现 l′ 实现的每个主张，并多实现一个）恰是 l 扩大 l′，即包含且超出它（Web.paths_extension_iff_widens）。对 living 的任何读法，扩展都是以每个主张为活的扩展，所以以“更好”读作扩大，C（每个扩展都更好）成立（Web.paths_comparison_widens），不用公理。以公理为条件，扩大就是保留且增加有意义者（Web.widens_iff_retains_adds，见 significance-retained-within-margin），所以水平路径上以公理推出的 C（Web.paths_g0_comparison，见 one-axiom-yields-g0）是它在意义上的读法。",
+    "en": "On the frame of a web's level paths (Web.paths), claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step. With every claim counting as living, an extension of l′ by l (Extension: realizing every claim l′ realizes, and one more) is exactly l widening l′, including and exceeding it (Web.paths_extension_iff_widens). For any reading of living, an extension is an extension with every claim living, so with “better” read as widening, C, that every extension is better, holds (Web.paths_comparison_widens), with no axiom. With the axiom as a condition, widening is retaining and adding what has significance (Web.widens_iff_retains_adds, see significance-retained-within-margin), so the C the axiom gives on level paths (Web.paths_g0_comparison, see one-axiom-yields-g0) is its reading in significance."
+  },
+  "hypotheses": [
+    {
+      "zh": "水平路径的框架（Web.paths）：主张是（形成，步），水平路径实现它恰当在该步接纳该形成；比较在任意两条水平路径之间。",
+      "en": "The frame of level paths (Web.paths): claims are pairs of a formation and a step, and a level path realizes one exactly when it admits the formation at that step; the comparison is between any two level paths."
+    },
+    {
+      "zh": "“更好”读作扩大能形成者（Web.Widens）；C 在这一读法下是定理，“更好”另作他读或在一般的框架上，C 仍是前提。",
+      "en": "“Better” is read as widening what can form (Web.Widens); C is a theorem on this reading, and remains a premise where “better” is read otherwise or on a general frame."
+    },
+    {
+      "zh": "离散的步；自然数的水平与所需。",
+      "en": "Discrete steps; natural-number levels and needs."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 2026-10-11 问：“can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”，并定：“as long as the derivation of the rules doesn't rely on axiom, don't use one”。AI 的读法：扩大读“leads to more futures”，Ren 已确认可能性读作接下来能形成的；生成的空间读作部分在其中扩大能形成者之处。“flourishes/plurality”是否都由扩大读出、它是否就是生生的空间，由 Ren 选择（章节 §8）。",
+    "en": "Ren asked on 11 October 2026: “can we reduce is \"for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively\" - so we can be like \"these are space where generatively happens\", which allows us to derive everything without axiom?”, and decided: “as long as the derivation of the rules doesn't rely on axiom, don't use one”. The AI's reading: widening reads “leads to more futures”, Ren having confirmed that possibilities are what can form next; the generative space is where a part widens what can form. Whether “flourishes/plurality” is read by widening alone, and whether it is the space of 生生, is Ren's choice (chapter section 8)."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+  "aliases": [
+    "Becoming.Web.paths_extension_iff_widens",
+    "Becoming.Web.paths_comparison_widens"
+  ],
+  "dependencies": [
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用扩大（Web.Widens，P56）：包含且超出。",
+        "en": "Reuses widening (Web.Widens, P56): including and exceeding."
+      },
+      "interface": {
+        "output": {
+          "zh": "水平路径之间的扩大、包含与超出。",
+          "en": "Widening, inclusion and exceeding between level paths."
+        },
+        "input": {
+          "zh": "水平路径上的扩展恰是扩大。",
+          "en": "An extension on level paths is exactly a widening."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Extension 与 Comparison 的定义；C 的形式不变。",
+        "en": "Reuses the definitions of Extension and Comparison; the form of C is unchanged."
+      },
+      "interface": {
+        "output": {
+          "zh": "扩展与比较前提 C 的定义。",
+          "en": "The definitions of extension and of the comparison premise C."
+        },
+        "input": {
+          "zh": "在水平路径的框架上，以扩大为“更好”，C 成立。",
+          "en": "On the frame of level paths, with widening as “better”, C holds."
+        },
+        "conditions": {
+          "zh": "“更好”读作扩大。",
+          "en": "“Better” read as widening."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "one-axiom-yields-g0",
+      "detail": {
+        "zh": "那里以公理为条件，在水平路径上 C 以保留且增加有意义者为“更好”成立（Web.paths_g0_comparison）；这里不用公理，以扩大为“更好”，公理之下二者相同。",
+        "en": "There, with the axiom as a condition, C holds on level paths with retaining and adding what has significance as “better” (Web.paths_g0_comparison); here, with no axiom, with widening as “better”, the two being the same under the axiom."
+      }
+    },
+    {
+      "id": "ranking-under-readings",
+      "detail": {
+        "zh": "继续之间以可能性比较（章节 §6.12）；这里在水平路径上，以可能性读的比较本身满足 C。",
+        "en": "Courses are compared on possibilities (chapter section 6.12); here, on level paths, the comparison on possibilities itself satisfies C."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "detail": {
+        "zh": "扩大不为每对水平路径定序：输送者的部分使两条路径混合（Transfer.mixed，见 four-cases-of-a-part）。",
+        "en": "Widening does not order every pair of level paths: the conveyor's part leaves the two paths mixed (Transfer.mixed, see four-cases-of-a-part)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "C 在这里是水平路径框架上的规律，“更好”读作扩大；在一般的框架上，或“更好”另作他读时，C 仍是前提。扩大是偏序，混合的部分不被定序，定序需要度量。把扩大称作“更好”的规范根据开放（章节 §8）：还原之后，公理的不变之步成为称生成的空间为好的内容。把扩大读作 Ren 的“更多的未来”与生生是 AI 的读法，待 Ren。不含伦理谓词。",
+    "en": "C is a law here on the frame of level paths, with “better” read as widening; on a general frame, or with “better” read otherwise, C remains a premise. Widening is a partial order: mixed parts are not ordered, and ordering them needs a measure. The normative warrant for calling widening “better” is open (chapter section 8): after the reduction, the axiom's step of invariance becomes the content of calling the generative space good. Reading widening as Ren's “more futures” and as 生生 is the AI's reading, pending Ren. No ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T171000.054867Z）：Becoming.Significance 的 37 项定理、Becoming.Regions 的 26 项定理与 Becoming.Metaethics 的 35 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2421 项定理／3590 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T180706.458104Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §78；尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T171000.054867Z): the 37 theorems of Becoming.Significance, the 26 of Becoming.Regions and the 35 of Becoming.Metaethics all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2421 theorems/3590 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T180706.458104Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §78 of the integration note; not yet independently reviewed."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "f71118288abb3c0f1c992d16bd5c543399474f00da5fbedd071eaf50d7a91684",
+      "declarations": [
+        "Becoming.Web.paths_extension_iff_widens",
+        "Becoming.Web.paths_comparison_widens",
+        "Becoming.Web.paths",
+        "Becoming.Web.widens_iff_retains_adds",
+        "Becoming.Web.paths_g0_comparison"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "13b5c507bec0ef8c986251981879704c02b76e07757e4e00e578c0797f552727",
+      "declarations": [
+        "Becoming.Web.Widens"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "20fea62f57243c79d712821f6f0affe874a7107055ca4642ec8d9e2adf327fcd",
+      "declarations": [
+        "Becoming.Extension",
+        "Becoming.Comparison"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "6e6d134d53e3587a801904538458aae705c90802885f6cc8df6dc28cebbef912",
+      "declarations": [
+        "Becoming.Transfer.mixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "19d3cdf547e4f42c25508575953343aabc301528f8beddf7da15577f622e2179",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "fb738105344fcb67409b5281c7563f4a4a3afe8385dfbba5cb25610f0d18b105",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f56ac603eb3924eefbccc2ffff208f2b6d7df1e38bd389c3e1d132fe71d0401c",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-generative-space-no-axiom.md",
+      "role": "provenance",
+      "sha256": "40d2e217eb9495fe9ac148477302b7175f6a447d8100eefb7638ed9177c1627c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Metaethics",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 选择是否把扩大读作“更多的未来”与生生；在一般的框架上把 C 读作规律需要什么；混合部分的度量；称生成的空间为好的根据。",
+    "en": "Ren's choice whether widening reads “more futures” and 生生; what reading C as a law needs on a general frame; a measure for mixed parts; the warrant for calling the generative space good."
+  },
+  "history": [
+    {
+      "zh": "2026-10-11 P56：新增，按 Ren“these are space where generatively happens”与“yes, let's get all of no axiom work enclosed, then we will get into 1 axiom case, as long as the derivation of the rules doesn't rely on axiom, don't use one”；按工作板认领；见整合文档 §78 与章节 §6.13。",
+      "en": "2026-10-11 P56: added, following Ren's “these are space where generatively happens” and “yes, let's get all of no axiom work enclosed, then we will get into 1 axiom case, as long as the derivation of the rules doesn't rely on axiom, don't use one”; claimed on the work board; see §78 of the integration note and chapter section 6.13."
+    }
+  ]
+}

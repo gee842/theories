@@ -28,6 +28,18 @@ conditions a formation actually requires and takes part in.
     whole leaves nothing lost beyond any region (`Web.AdmitsWithin.not_losesBeyond`).
   - Within one formation, what holds is its own admission wherever the other levels admit
     it (`Web.admitsWithin_self`).
+  - The whole first: the comparison over the whole is the comparison within every region at
+    once (`Web.includes_iff_within_every`). A region's comparison takes the region as an
+    input; the whole's takes none.
+* **The generative space, with no axiom.** Ren, 11 October 2026: “these are space where
+  generatively happens”. One level path *widens* another when it admits everything the
+  other admits and one more (`Web.Widens`); two *keep* what can form the same when each
+  includes the other (`Web.Keeps`), and are *mixed* when each exceeds the other
+  (`Web.Mixed`). A part is generative where the levels with it widen those without it,
+  degenerative where those without it widen those with it. Widening goes one way and is
+  transitive, and the four cases exclude one another (`Web.Widens.not_reverse`,
+  `Web.Widens.trans`, `Web.Widens.not_keeps`, `Web.Widens.not_mixed`,
+  `Web.Keeps.not_mixed`). No significance, standpoint or boundary enters.
 * **Losing beyond the dependence.** In `Clearing`, the levels without the clearer's part
   exist (`Clearing.withheld`): the resource rises by one at each step and the habitat
   stays at two.
@@ -124,6 +136,69 @@ theorem admitsWithin_self {l l' : C → Nat} {t : Nat} {f : F} :
     W.AdmitsWithin (· = f) l l' t ↔ (W.Admits l' t f → W.Admits l t f) :=
   ⟨fun within => within f rfl, fun own g same => match g, same with
     | _, rfl => own⟩
+
+/-! ## The generative space, with no axiom
+
+Ren, 11 October 2026: “for anything, its continuation into the future leads to more
+futures(flourishes/plurality) from generatively”, read as “these are space where generatively
+happens”. Two level paths are compared by what can form along them; no significance, standpoint
+or boundary enters. -/
+
+variable (W)
+
+/-- The level path `l` widens `l'`: it admits every formation `l'` admits and, at some step, one
+more. A part whose levels widen those without it is generative. -/
+def Widens (l l' : Nat → C → Nat) : Prop :=
+  W.Includes l l' ∧ W.Exceeds l l'
+
+/-- The level paths `l` and `l'` keep what can form the same: each admits what the other admits. -/
+def Keeps (l l' : Nat → C → Nat) : Prop :=
+  W.Includes l l' ∧ W.Includes l' l
+
+/-- The level paths `l` and `l'` are mixed: each admits, at some step, a formation the other does
+not. -/
+def Mixed (l l' : Nat → C → Nat) : Prop :=
+  W.Exceeds l l' ∧ W.Exceeds l' l
+
+variable {W}
+
+/-- Widening goes one way. -/
+theorem Widens.not_reverse {l l' : Nat → C → Nat} (widens : W.Widens l l') : ¬ W.Widens l' l :=
+  fun back => widens.1.not_exceeded back.2
+
+/-- Widening is transitive. -/
+theorem Widens.trans {l l' l'' : Nat → C → Nat} (first : W.Widens l l') (second : W.Widens l' l'') :
+    W.Widens l l'' :=
+  ⟨first.1.trans second.1, match first.2 with
+    | ⟨t, f, admits, not⟩ => ⟨t, f, admits, fun admitted => not (second.1 t f admitted)⟩⟩
+
+/-- Keeping the same is symmetric. -/
+theorem Keeps.symm {l l' : Nat → C → Nat} (keeps : W.Keeps l l') : W.Keeps l' l :=
+  ⟨keeps.2, keeps.1⟩
+
+/-- Being mixed is symmetric. -/
+theorem Mixed.symm {l l' : Nat → C → Nat} (mixed : W.Mixed l l') : W.Mixed l' l :=
+  ⟨mixed.2, mixed.1⟩
+
+/-- Widening is not keeping the same. -/
+theorem Widens.not_keeps {l l' : Nat → C → Nat} (widens : W.Widens l l') : ¬ W.Keeps l l' :=
+  fun keeps => keeps.2.not_exceeded widens.2
+
+/-- Widening is not mixed. -/
+theorem Widens.not_mixed {l l' : Nat → C → Nat} (widens : W.Widens l l') : ¬ W.Mixed l l' :=
+  fun mixed => widens.1.not_exceeded mixed.2
+
+/-- Keeping the same is not mixed. -/
+theorem Keeps.not_mixed {l l' : Nat → C → Nat} (keeps : W.Keeps l l') : ¬ W.Mixed l l' :=
+  fun mixed => keeps.1.not_exceeded mixed.2
+
+/-- The whole first. The comparison over the whole is the comparison within every region at
+once: `l` includes `l'` exactly when, at every step and within every region, it admits what `l'`
+admits there. A region's comparison takes the region as an input; the whole's takes none. -/
+theorem includes_iff_within_every {l l' : Nat → C → Nat} :
+    W.Includes l l' ↔ ∀ (region : F → Prop) t, W.AdmitsWithin region (l t) (l' t) t :=
+  ⟨fun includes _ t f _ admits => includes t f admits,
+   fun within t f admits => within (fun _ => True) t f trivial admits⟩
 
 /-! ## Represented boundaries -/
 
