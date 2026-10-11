@@ -1,4 +1,5 @@
 import Becoming.Resolution
+import Becoming.Recurrence
 
 /-!
 # Entropy: what becoming leaves, and what holding it costs
@@ -90,6 +91,18 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
   `Flow.Balances.merges_of_dissipates`). In `Passing` the sides swap, merging nothing
   (`Passing.history_without_arrow`); in `Settling` coming to rest merges, and the level of
   the side receiving the unit is an arrow (`Settling.merges`).
+* **The laws of change, read on the family.** `Becoming.Recurrence` states what every
+  sequence and every determined law keeps, loses and returns to, with no premise. Revisiting
+  after a change is revisiting (`Web.Revisits.recurs`), an arrow marks every change
+  (`Web.Arrow.marks`), a merge along the family is a merge of the law (`Web.Merges.law`),
+  and determined change runs along the law's orbit (`Web.Determined.orbit`). Under the
+  first law the configurations stay within one list (`Flow.Balances.held`), so from every
+  step on they take one value twice, constructively (`Flow.Balances.recurs`), an arrow
+  stops change (`Flow.Balances.arrow_stops`), within that bound a law merging nothing
+  brings the start back (`Flow.Balances.returns_of_lossless`; the bound does the work, as
+  `Law.succ_open` merges nothing and never returns), the present forgets the kept history
+  (`Flow.Balances.present_forgets`), and an arrow or dissipation rules out a law merging
+  nothing (`Flow.Balances.not_lossless_of_arrow`, `Flow.Balances.not_lossless_of_dissipates`).
 * **An arrow drawn from beyond.** In `Gathering` a record takes one unit from a new relatum
   at every step: every exchange conserves exactly, every step is enclosed, the exchange
   recurs, and the record's level is an arrow without end. The record gains by exchange
@@ -1323,6 +1336,143 @@ theorem Balances.merges_of_dissipates (balances : L.Balances W) {T : Nat}
     (changes : W.Changes cs v) : ¬¬ W.Merges cs T next :=
   balances.merges_of_never_revisits (fun t later => (dissipates t later).gainlessOn) determined
     (balances.never_revisits dissipates) from_ changes
+
+end Flow
+
+/-! ## The laws of change on a family's configuration
+
+`Becoming.Recurrence` states, with no premise, what every sequence of configurations and every
+determined law keeps, loses and returns to. A family's configurations from `T` on are such a
+sequence, and where its change is a function of its configuration, `next` is such a law.
+Revisiting after a change is revisiting, an arrow marks every change, and a merge along the
+family is a merge of the law; under the first law the configurations stay within one list,
+so the pigeonhole, the stopping of marked change and the forgetting present apply to it. -/
+
+namespace Web
+
+variable {W : Web F C} {cs : List C}
+
+/-- Revisiting after a change is revisiting: the family's configurations from `T` on take one
+value at two steps. -/
+theorem Revisits.recurs {T : Nat} (revisits : W.Revisits cs T) :
+    Becoming.Revisits (fun n => W.config cs (T + n)) :=
+  match revisits with
+  | ⟨_, _, _, from_, sv, vu, _, same⟩ =>
+    match gap_of_le from_, gap_of_le (Nat.le_trans from_ (Nat.le_trans sv (Nat.le_of_lt vu))) with
+    | ⟨i, si⟩, ⟨j, uj⟩ =>
+      ⟨i, j, Nat.lt_of_add_lt_add_left (Nat.lt_of_le_of_lt (Nat.le_of_eq si.symm)
+          (Nat.lt_of_lt_of_le (Nat.lt_of_le_of_lt sv vu) (Nat.le_of_eq uj))),
+        (congrArg (W.config cs) si).symm.trans (same.symm.trans (congrArg (W.config cs) uj))⟩
+
+/-- An arrow marks every change: a quantity of the configuration that is an arrow from `T` on
+marks the changes of the family's configurations from `T` on. -/
+theorem Arrow.marks {T : Nat} {S : List Nat → Nat} (arrow : W.Arrow cs T S) :
+    Marks S (fun n => W.config cs (T + n)) :=
+  fun n => ⟨arrow.1 (T + n) (Nat.le_add_right T n), arrow.2 (T + n) (Nat.le_add_right T n)⟩
+
+/-- A merge along the family is a merge of its law. -/
+theorem Merges.law {T : Nat} {next : List Nat → List Nat} (merges : W.Merges cs T next) :
+    Law.Merges next :=
+  match merges with
+  | ⟨t, _, changes, merged⟩ => ⟨W.config cs (t + 1), W.config cs t, changes, merged⟩
+
+/-- Where the family's change is a function of its configuration from `T` on, its
+configuration `n` steps after `T` is the orbit of its configuration at `T` under `next`. -/
+theorem Determined.orbit {T : Nat} {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) :
+    ∀ n, W.config cs (T + n) = Law.orbit next (W.config cs T) n
+  | 0 => rfl
+  | n + 1 => (determined (T + n) (Nat.le_add_right T n)).trans
+      (congrArg next (Determined.orbit determined n))
+
+end Web
+
+namespace Flow
+
+variable {L : Flow F C} {W : Web F C} {cs : List C}
+
+/-- Under the first law the family's configurations from `T` on stay within one list: those
+of its members totalling at most its stock at `T`. -/
+theorem Balances.held (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) (n : Nat) :
+    W.config cs (T + n) ∈ configurationsWithin cs.length (W.stock cs T) :=
+  Web.config_within (nonrising_between (fun s l => balances.nonrising (gainless s l))
+    (Nat.le_refl T) (Nat.le_add_right T n))
+
+/-- So, where its change from `T` on is the law `next`, the orbit of its configuration at `T`
+stays within that list. -/
+theorem Balances.orbit_held (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) (n : Nat) :
+    Law.orbit next (W.config cs T) n ∈ configurationsWithin cs.length (W.stock cs T) :=
+  Eq.subst (motive := fun x => x ∈ configurationsWithin cs.length (W.stock cs T))
+    (determined.orbit n) (balances.held gainless n)
+
+/-- **Under the first law the configuration recurs**, with no decision and no further
+premise: in a balanced flow over a family gaining nothing at every step from `T` on, from
+every step on its configurations take one value at two steps (`revisits_from`). -/
+theorem Balances.recurs (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) (M : Nat) :
+    ∃ i j, M ≤ i ∧ i < j ∧ W.config cs (T + i) = W.config cs (T + j) :=
+  revisits_from (g := fun n => W.config cs (T + n)) (balances.held gainless) M
+
+/-- An arrow stops change under the first law, as every marked change within finitely many
+configurations stops (`Marks.change_stops`). -/
+theorem Balances.arrow_stops (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {S : List Nat → Nat} (arrow : W.Arrow cs T S) :
+    ¬ ∀ M, ∃ k, M ≤ k ∧ W.Changes cs (T + k) :=
+  fun recurs => Marks.change_stops (g := fun n => W.config cs (T + n)) arrow.marks
+    (balances.held gainless) recurs
+
+/-- **Merging nothing within the bound of the first law, the start returns.** The bound does
+the work, not losing alone: `Law.succ_open` merges nothing and never returns. In a balanced
+flow over a family gaining nothing at every step from `T` on, the configurations stay among
+those of its members totalling at most its stock at `T` (`Flow.Balances.orbit_held`); where
+its change from `T` on is the law `next` and `next` merges no two configurations, the
+configuration at `T` comes back. -/
+theorem Balances.returns_of_lossless (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) (lossless : Law.Lossless next) :
+    Law.Returns next (W.config cs T) :=
+  match revisits_of_held (g := Law.orbit next (W.config cs T))
+      (balances.orbit_held gainless determined) with
+  | ⟨i, _, lt, same⟩ => match gap_of_lt lt with
+    | ⟨d, gap⟩ => ⟨d + 1, Nat.succ_pos d, lossless.cancel i
+        ((Law.orbit_add next (W.config cs T) (d + 1) i).symm.trans
+          ((congrArg (Law.orbit next (W.config cs T)) (Nat.add_comm (d + 1) i)).trans
+            ((congrArg (Law.orbit next (W.config cs T)) gap.symm).trans same.symm)))⟩
+
+/-- **A finite present forgets**, for the family: under the first law, where its change from
+`T` on is the law `next`, from every step on two different kept histories of its
+configuration share one present (`Law.present_forgets`). -/
+theorem Balances.present_forgets (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) (M : Nat) :
+    ∃ i j, M ≤ i ∧ i < j ∧
+      (Law.orbit (Law.withHistory next) (W.config cs T, []) i).1 =
+        (Law.orbit (Law.withHistory next) (W.config cs T, []) j).1 ∧
+      Law.orbit (Law.withHistory next) (W.config cs T, []) i ≠
+        Law.orbit (Law.withHistory next) (W.config cs T, []) j :=
+  Law.present_forgets next (balances.orbit_held gainless determined) M
+
+/-- So an arrow rules out a law merging nothing: under the first law, where the family's
+change is the law `next` and some quantity of its configuration is an arrow, once it changes
+`next` merges two configurations somewhere (`Law.rise_not_lossless`, here with no list of
+every configuration). -/
+theorem Balances.not_lossless_of_arrow (balances : L.Balances W) {T : Nat}
+    (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) {S : List Nat → Nat} (arrow : W.Arrow cs T S)
+    {v : Nat} (from_ : T ≤ v) (changes : W.Changes cs v) : ¬ Law.Lossless next :=
+  fun lossless => balances.merges_of_arrow gainless determined arrow from_ changes
+    fun merges => merges.law.not_lossless lossless
+
+/-- And so does dissipation. -/
+theorem Balances.not_lossless_of_dissipates (balances : L.Balances W) {T : Nat}
+    (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) {next : List Nat → List Nat}
+    (determined : W.Determined cs T next) {v : Nat} (from_ : T ≤ v)
+    (changes : W.Changes cs v) : ¬ Law.Lossless next :=
+  fun lossless => balances.merges_of_dissipates dissipates determined from_ changes
+    fun merges => merges.law.not_lossless lossless
 
 end Flow
 
