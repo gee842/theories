@@ -16,8 +16,9 @@
 2. **别人认领的条目不重证。** 手上有与之重叠且已验证的东西，把路径交给所有者，由所有者决定合并、引用或放弃。 / **Do not reprove an item another session holds.** If you hold verified work that overlaps it, give the path to the owner, who decides whether to merge, cite or drop it.
 3. **一个整合者。** 第一部分零前提一线的整合者决定顺序、接口（共享的定义）与合并；新模块先对齐它的定义，不另立平行的定义。 / **One integrator.** The integrator of Part I's zero-premise line decides order, interfaces (the shared definitions) and merges; a new module builds on its definitions rather than setting up parallel ones.
 4. **只改自己的行；写前重读。** 所有者变化、完成或放弃时更新自己的行；完成的行保留，注明提交。 / **Edit only your own rows; reread before writing.** Update your row when ownership changes, or when the item lands or is dropped; landed rows stay, with the commit.
-5. **落地排队。** 检查器一次只跑一个，按下面的落地队列。 / **Landing queue.** One checker run at a time, in the order of the landing queue below.
+5. **落地排队。** 检查器一次只跑一个，按下面的落地队列。检查器复用输入相同且已通过的 Lean 步骤，所以一次运行只编译改动的模块及依赖它的模块；`BECOMING_FRESH=1` 全部重跑（[Ren，2026-10-11](../sources/15-codex-theory-conversations/2026-10-11-unified-head-and-incremental-checks.md)）。 / **Landing queue.** One checker run at a time, in the order of the landing queue below. The checkers reuse Lean steps that passed on identical inputs, so a run compiles only the changed modules and those depending on them; `BECOMING_FRESH=1` runs everything ([Ren, 11 October 2026](../sources/15-codex-theory-conversations/2026-10-11-unified-head-and-incremental-checks.md)).
 6. **消息之外以本页为准。** 消息可能被扣住或过期；本页的行就是认领。 / **This page governs where messages fail.** Messages can be held or expire; a row here is the claim.
+7. **一个头。** 开始新的 Lean 之前，先把已验证的工作经队列落到 main，或交给整合者；被取代的草稿移出，含未落地工作的 scratch 留给其所有者（同一来源）。 / **One head.** Before starting new Lean, land verified work on main through the queue, or hand it to the integrator. Set superseded drafts aside, and leave scratch that holds unlanded work with its owner (same source).
 
 ## 目标 / Target
 
