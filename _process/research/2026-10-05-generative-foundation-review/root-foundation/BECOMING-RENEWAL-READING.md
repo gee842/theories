@@ -4355,6 +4355,76 @@ Integration: 章节第 4 条、第一部分的总陈述、§8 的开放项与现
 
 **边界。** 离散步，每步有限的所立者与依存；所选前提都起约束时所立者与依存的计数规律、三种计数之间的联合规律没有陈述，按 Ren 的转向不再作为选择表扩展；更强的起约束读法仍开放（由 Ren 选择）；没有伦理谓词，不评价立起、不再立着、形成或消解；名称（StandsObey、DependsObey、BoundsStanding、sourcedQueue、waitingQueue、activeRing、dependingQueue、dependingRing、pairs）是 AI 按 Ren 的命名准则所选，形式而描述动力学；尚无独立审查。
 
+## 66. 一步的规律，条件在规律之内（P48）
+
+2026-10-11。按 Ren 的转向：“stop extending the premise-selection tables. New goal: remove premises and derive the most general versions, zero premises first”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md)）；又按 Ren 同日“一起先完成一个统一的理论”的指示（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md)）。本节把 Ren 先点名的四条规律对每个世界重述：静止与持续变化需要开放、不再存在需要生起、封闭约束变化、生起需要活跃的给予者。每条规律里，证明用到的条件写在规律之内，是关于该世界在证明用到它的那些步与关系项上的事实。所作的一步是局部化，不推出任何前提：表示之内各前提仍是偶然的、彼此独立的（`World.contingent`、`World.independent`）。新核心模块 `Becoming.Locality` 导入 `Becoming.Dissipation`，`Becoming.Roles` 导入它。撤回的联合规律原编号 P48，它的三个引理在这里被改写为局部规律。
+
+```text
+Result(s): 新成果记录 laws-of-one-step；修订 continued-change-needs-openness、counting-under-enclosure、
+           whole-law-of-counting、counting-standing-and-dependence、ceasing-needs-arising、life-as-condition-of-life
+           （证明改经新的规律，局限与下一步改指新记录）
+Delta: 新核心模块 Becoming.Locality（导入 Becoming.Dissipation）：
+       pos_iff_lt、lt_iff_pos、exists_lt_of_total_lt、rises_or_le、unmet_or_lower、unmet_from、recurs_iff_unmet；
+       Web.StandingCensus、Web.StandingCensus.stock_eq（自 Openness 移来）、Web.StandingCensus.length_le_stock（自 Standing 移来）；
+       Flow.BalancesOn、Flow.Balances.on、Flow.balances_iff_on、Flow.BalancesOn.over；
+       Flow.BalancesOn.comesToStand_iff、ceasesToStand_iff、rise_given、fall_taken、rises_iff_gives、
+       Flow.DissipatesOn.still_untaken；Flow.BalancesOn.runs_down、taking_lowers、fall_lowers、rise_lowers、
+       comes_from_standing；Flow.RunsDownOn、Flow.RunsDown、Flow.RunsDownClosed、Flow.RunsDownOn.changes_iff、
+       exchanges_iff、stock_eq、Flow.RunsDown.standing_le、changes_iff、Flow.RunsDownClosed.exchanges_iff、runsDown、
+       Flow.rise_of_standing、Flow.change_recurs_iff、Flow.exchange_recurs_iff；Flow.RunsDown.rise_zero、fall_pos_iff、
+       lowers_mark、Flow.RunsDownOn.takers_le_fall、Flow.standing_bounds_change、Flow.runsDown_bounds_change、
+       Flow.runsDown_change_bound；Flow.BalancesOn.arises_iff、arises_given；
+       Covers、ListsAt、NoneComes、accumulates_or、stays_failing_within、came_between、Covers.within、
+       cohort_closes_iff、ceasing_needs_arising、Covers.coming_from_of_ceasing、coming_of_ceasing_covered、Listed.covered、
+       not_not_all、ceases_once、Covers.ceasing_steps_within、ceasing_steps_found、Covers.ceasing_not_recurring、
+       Covers.not_not_coming_from（不再存在需要生起一节由“0 axiom completeness”会话起草并验证，此处整合）。
+       推论改证（陈述不变）：Web.Embodied.arises_given（Roles）；Flow.fall_lowers_on、standing_runs_down、
+       standing_never_rises、change_lowers、stills、exchange_lowers、exchanges_finitely、World.arising_of_ceasing、
+       Web.StandingCensus.coming_of_ceasing，新增 Flow.AroundStanding.runsDownClosed（Openness）；
+       World.enclosure_bounds_change、taking_binds_counting、enclosed_binds_counting（Counting）；
+       World.enclosure_bounds_standing、enclosed_binds_standing（Standing）
+Supplied premises / correspondence: 无；每条规律的条件写在规律之内
+Evidence: 合并检查器回执 20261011T071749.484228Z（2171 项定理、3257 项声明审计，全部源声明公理报告为空；Locality 57；核心闭包 43 个模块，
+          包 41 个），外围回执 20261011T071753.574921Z；先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空
+Boundary: 超出整单位的量、连续时间未在此检验；规律 3 与规律 1 的复现用所立者的普查；尚无独立审查
+Integration: 章节第 4 条、第一部分的总陈述、§8 的开放项与现状表、§9 的脊柱表与总数、§10 的术语表；计划 P48；零前提计划；
+             模块说明、根模块、包 README、检查器的核心模块列表与范围
+```
+
+**一步的平衡。** 流跨过一步在一个家族上平衡：每个成员步后的水平连同被取的，等于步前的水平连同被给的（`Flow.BalancesOn`）。平衡就是每一步、每个家族上的平衡（`Flow.balances_iff_on`）；平衡的流的每个证明只在它用到的步与条件上需要它。
+
+**生起需要活跃的给予者。** 一个条件跨过一步平衡时，它开始立着，恰当它此前立在零，且被给的多于被取的（`Flow.BalancesOn.comesToStand_iff`）。它不再立着，恰当它此前立着，且被取的等于它所有的连同被给的（`Flow.BalancesOn.ceasesToStand_iff`）。跨过没有从家族取用的一步，平衡的家族中有成员上升，恰当有参与者给予它（`Flow.BalancesOn.rises_iff_gives`）；家族上的耗散排除这一点：给予须以从家族取用为条件（`Flow.DissipatesOn.still_untaken`）。一个关系项在一步的两端都体现、只有活跃者给予它时，它生起恰当它开始立着，所以由一个活跃的、不是它自己的给予者给予（`Flow.BalancesOn.arises_iff`、`Flow.BalancesOn.arises_given`）。跨过一个包含它的家族被平衡与耗散的一步，不会从无中开始立着（`Flow.BalancesOn.comes_from_standing`）。`Web.Embodied.arises_given`、`World.taking_binds_counting`、`World.enclosed_binds_counting` 与 P47 的 `World.enclosed_binds_standing` 改为它的推论。撤回的联合规律的三个引理就是两个当且仅当与 `still_untaken`。
+
+**静止。** 家族跨过一步时满足三点：不重复地包含步前或步后立着的每个条件，流在它上面平衡，并在它上面耗散。这时称家族跨过该步下降（`Flow.RunsDownOn`），条件中没有封闭。跨过这样的一步，有条件的水平改变，恰当家族的总水平下降（`Flow.RunsDownOn.changes_iff`）；家族也封闭时，有参与者取用或给予，也恰在此时（`Flow.RunsDownOn.exchanges_iff`）。持续变化需要开放，取确切形式：所立者有普查时，水平在任意晚的步改变，恰当它在任意晚的、所立者不下降的步上改变（`Flow.change_recurs_iff`）；交换连同封闭也一样（`Flow.exchange_recurs_iff`）。一般形式是 `recurs_iff_unmet`，有三个条件：在条件之下事件使一个量下降；在条件之下这个量不上升；它的每次上升都是事件。这时事件复现，恰当它在不满足条件的步上复现。找那一步的搜索有界，不用判定。`Flow.stills`、`Flow.exchanges_finitely`、`standing_never_rises`、`change_lowers`、`exchange_lowers`、`standing_runs_down` 与 `fall_lowers_on` 改为它的推论，`Becoming.Openness` 的静止定理随之。
+
+**下降约束变化。** 任何一段步，不加条件：末步立着的，连同总水平下降的步，不多于首步的总水平连同它在这一段上升的全部（`Flow.standing_bounds_change`）。总水平只在所立者不下降的步上上升，所以在下降的各步上，末步立着的连同有水平改变的步不多于首步的总水平；这不需要判定水平是否改变（`Flow.runsDown_bounds_change`）。对任何计数的变化界见 `Flow.runsDown_change_bound`；`World.enclosure_bounds_change`（P46）与 `World.enclosure_bounds_standing`（P47）是它的推论。Ren 把这条称为“封闭约束变化”；约束变化的是下降，即在包含所立者的家族上平衡与耗散，封闭是前提给出下降的方式。
+
+**不再存在需要生起。** 本节一部分由“0 axiom completeness”会话起草并验证，此处整合。一个列表覆盖一步上成立者，指那里每个成立的成员都在列表上（`Covers`）。对任何有限列表，段末它成立的连同这一段上的不再成立，等于段首它成立的，恰当这一段上它没有成员开始成立（`cohort_closes_iff`）。一个列表恰好列出第 N 步成立者（`ListsAt`），N 之后没有开始成立时，段末成立的连同自 N 以来不再成立的，恰好等于第 N 步成立的数目（`ceasing_needs_arising`）。只要在任意晚的步有列表覆盖成立者，不再成立的复现就需要开始成立的复现（`coming_of_ceasing_covered`）；普查覆盖每一步（`Listed.covered`），普查定律是它的推论，`World.arising_of_ceasing` 与 `Web.StandingCensus.coming_of_ceasing` 改经它证明。不用判定时：一个列表覆盖第 N 步，N 之后没有开始成立，则不再成立不复现（`Covers.ceasing_steps_within`、`Covers.ceasing_not_recurring`、`Covers.not_not_coming_from`）。
+
+**表示的承诺（Ren 的第 4 项）。** 以下由陈述与证明读出：
+- **可判定。** 规律 1、3、4 不判定世界的任何谓词，证明只判定数的大小；规律 2 的确切计数需要标记，它的“不复现”形式不需要。
+- **整单位。** 规律 1 与 4 的一步当且仅当只用加法与次序。规律 1 的复现与规律 3 的界用最小差异：耗散中的 sign 项，每个取用的形成至少失去一个单位（Ren 的选项 A）。超出整单位的量下各条是否成立，这里尚未检验；静止由分辨率一线覆盖（R4：把细分算作给予时，每一分辨率下都静止）。
+- **时间。** 较粗的步由局部化的 `Sampling` 检验（落地队列第 7 项，来自“0 axiom completeness”会话）：每个关系项只列出一次时，家族上的平衡与耗散跨过一个粗步内的各细步合成；家族下降只需要在粗步两端包含所立者；只有活跃者给予与取用仍依步而定。
+- **有限。** 所立者的普查（每步有限多立着）只被规律 1 的复现与规律 3 用到，作用只是使每步的总水平是一个数；一步的规律不需要普查。
+
+**作者反审。**
+
+*反驳 1：把前提搬进规律之内，是否只是改写？* 不只是。第一，得到原来没有的确切形式：一步上水平改变当且仅当总水平下降，复现当且仅当在不满足条件的步上复现，而且后者用有界搜索给出那一步，不用判定。第二，条件比把前提限于那些步更弱：下降不需要封闭，耗散只在那一个家族上；规律 2 只需要一步的列表，或任意晚的步上的覆盖列表，不需要普查；规律 3 对所立者不需要体现，对活动只需要生起与不再活跃者的体现。第三，选择结果改经这些规律证明，所以新模块是来源，不是包装。
+
+*反驳 2：每条都是“Y 当且仅当 Z”吗？* 规律 1、4 与规律 2 的群体定律是当且仅当，复现定律也是。规律 3 是不等式：它的确切形式是 `over_stretch` 的恒等式，连同一步的当且仅当。界按界陈述，并写出它所来自的恒等式。
+
+*反驳 3：所立者的普查是否偷渡了有限？* 它只用来使每步的总水平是一个数。下降的步上家族本身给出这个数，但在不下降的步上，立着的可以无穷多。所以复现定律留着普查，作为尾段各步上的局部条件（a 类），没有作为全局前提。要去掉它，须在无穷多立着时给出总水平，那就是改变量的表示（b 类），属于 Ren 的决定。
+
+*反驳 4：为何不沿用“封闭约束变化”的名称？* 证明表明封闭不是所需的条件，所需的是下降。名称 `runsDown_bounds_change` 描述证明了的内容，Ren 的说法仍作为推论的描述保留；名称由 Ren 定。
+
+*反驳 5：规律 2 来自另一会话，是否经过同样的检查？* 收到的文件逐字保存，sha256 记录在整合的工作区。它在同一暂存树中与其余部分一起从前导编译，逐条公理报告为空，并作为一节并入 `Becoming.Locality`。为了不与 `World.ceasing_not_recurring` 混淆，四个名称改为以 `Covers.` 开头；与普查定律陈述相同的 `Listed.coming_of_ceasing_covered` 没有并入，相关推论直接改证。
+
+*反驳 6：这是否推出了前提？* 没有。规律对每个世界成立，不论前提成立与否；前提对每一步成立时，局部条件在每一步成立，选择结果因此是推论。前提本身仍是偶然的。
+
+**读法（AI，待 Ren）。** 前提约束的第一部分规律，是每一步及其关系项的规律；前提是使它们的条件处处成立的一种方式。
+
+**边界。** 离散步；超出整单位的量与连续时间未在此检验，较粗的步待 `Sampling` 落地；复现定律与规律 3 用所立者的普查；规律 3 的界用最小差异（选项 A）；没有伦理谓词；名称（BalancesOn、RunsDownOn、RunsDown、RunsDownClosed、Covers、ListsAt、NoneComes 等）是 AI 按 Ren 的命名准则所选；尚无独立审查。
+
 ## 67. 折叠 G0（P51）
 
 2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-fold-g0.md)）：
@@ -4939,4 +5009,33 @@ On the AI's reading, pending Ren: what an enclosed unfolding spends is what stan
 
 **What every law of change keeps, loses and returns to, with no premise (R6).** Asked what "0" meant, Ren wrote on 11 October 2026 that at the atomic level each exchange conserves energy and entropy still rises, with zero premises, and asked whether, if lossless exchange exists, a path can be found and proved along the way; then: ‘please keep advancing, zero-premise, zero axiom(we are not physics, we derive further)’ ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). A new core module, `Becoming.Recurrence`, importing only `Becoming.Frame`, states what holds of every law of change on configurations of any kind, with no premise and no decidability; that a list holds the configurations is a condition written into each law that uses it. A list holding the first `l.length + 1` values of a sequence holds two equal ones (`revisits_within`, a pigeonhole by induction on the list that uses membership as given), so a sequence held by a list revisits from every step on, as does every run of every process (`Run.revisits_from`), and no list holds a sequence that never revisits (`unlisted_of_new`). A quantity of the configuration that never falls and rises across every change (`Marks`) stops change within finitely many configurations (`Marks.change_stops`). Under a determined law a possibility lost stays lost and configurations merged stay merged (`Law.lost_stays`, `Law.merged_stays`, and `Reach.lost_stays` for every process). Where a list holds every configuration, merging nothing, every configuration returning and every configuration reachable at every step are one (`Law.lossless_iff_returns`, `Law.returns_iff_keeps`); losing nothing, no quantity rises along an orbit, so an arrow needs a merge (`Law.Lossless.no_rise`, `Law.rise_not_lossless`), and a merge loses a possibility for good (`Law.Merges.loses`). Open worlds separate the three: counting on merges nothing, never returns and rises at every step, and counting down merges yet keeps every possibility (`Law.succ_open`, `Law.pred_open`). Keeping its history, every law merges nothing, never returns, cannot have its beginning again after the first step, and has no list holding it (`Law.withHistory_lossless`, `Law.withHistory_never_returns`, `Law.withHistory_loses_beginning`, `Law.withHistory_unlisted`); where the present returns it comes back with another history (`Law.return_keeps_history`), and within finitely many configurations two different histories share one present from every step on (`Law.present_forgets`). On the AI's reading: lossless exchange exists exactly as return within finitely many configurations, with no arrow, and as becoming that keeps its history, with an arrow and an open world; the low-entropy beginning that physics supplies is here the beginning of the kept history, which cannot be had again; entropy reads as the forgetting of a finite present. The mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is credited as reused. Record recurrence-without-premise added. Receipt 20261011T011019.444120Z, periphery receipt 20261011T011213.027508Z. Not yet independently reviewed; the author's counterreview is in section 68.
 
-The package now has 2115 theorems and 3194 declaration audits, over a core closure of 42 modules and a package of 40, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 65, 67 and 68. The periphery bridge passed against this core (receipt 20261011T011213.027508Z).
+**The laws of one step, with their condition inside them (P48).** Following Ren's redirect of 11 October ("stop extending the premise-selection tables. New goal: remove premises and derive the most general versions, zero premises first"), and Ren's instruction of the same day to finish one unified theory together, this restates the four laws Ren named first for every world: rest and continued change needing openness, ceasing needing arising, closure bounding change, and arising needing an active giver. In each, the condition the proof uses is stated inside the law, as a fact about the world at the steps and relata where the proof uses it. The move made is localization. No premise is derived: within the representation the premises stay contingent and independent (`World.contingent`, `World.independent`). The new core module is `Becoming.Locality`, which imports `Becoming.Dissipation` and is imported by `Becoming.Roles`. The withdrawn joint law kept the number P48, and its three lemmas are recast here.
+- **Balance at a step.** The flow balances on a family across one step (`Flow.BalancesOn`). Balance is the same as balance on every family across every step (`Flow.balances_iff_on`).
+- **Arising needs an active giver.** Where a condition is balanced across a step, it comes to stand exactly when it stood at nothing and was given more than was taken from it (`Flow.BalancesOn.comesToStand_iff`). It ceases to stand exactly when it stood and what was taken from it is all it had with all it was given (`Flow.BalancesOn.ceasesToStand_iff`). Across a step at which nothing is taken from a balanced family, a member rises exactly when something taking part gives to it (`Flow.BalancesOn.rises_iff_gives`), and dissipation on the family excludes this (`Flow.DissipatesOn.still_untaken`). Take a relatum embodied at both ends of the step, and suppose only active formations give to it. It arises exactly when it comes to stand, and an active giver other than itself gives to it (`Flow.BalancesOn.arises_iff`, `Flow.BalancesOn.arises_given`). Nothing comes to stand from nothing across a step at which a family holding it is balanced and dissipated on (`Flow.BalancesOn.comes_from_standing`). The following are now its corollaries: `Web.Embodied.arises_given`, `World.taking_binds_counting`, `World.enclosed_binds_counting` and P47's `World.enclosed_binds_standing`. The three lemmas of the withdrawn joint law are the two iffs and `still_untaken`.
+- **Rest.** Across a step the family runs down when three things hold: it holds, without repetition, whatever stands before or after the step; the flow balances on it; and the flow dissipates on it (`Flow.RunsDownOn`). Closure is not part of this condition.
+  - Across such a step, some condition's standing changes exactly when the family's total falls (`Flow.RunsDownOn.changes_iff`). With the family also closed, something taking part takes or gives exactly then (`Flow.RunsDownOn.exchanges_iff`).
+  - Continued change needs openness, exactly. Under a census of what stands, standing changes at arbitrarily late steps exactly when it changes at arbitrarily late steps across which what stands does not run down (`Flow.change_recurs_iff`); the exchange obeys the same law with closure (`Flow.exchange_recurs_iff`).
+  - The general form is `recurs_iff_unmet`. An event recurs exactly where it recurs without a condition when three things hold: under the condition the event lowers an amount; the amount never rises under the condition; and every rise of the amount is the event. The search for the step is bounded, so no decision is used.
+  - `Flow.stills`, `Flow.exchanges_finitely`, `standing_never_rises`, `change_lowers`, `exchange_lowers`, `standing_runs_down` and `fall_lowers_on` are now its corollaries, and with them the rest theorems of `Becoming.Openness`.
+- **Running down bounds change.**
+  - Over any stretch, with no condition, what stands at its end, with the steps at which the total standing fell, number at most the total standing at its start with everything it rose (`Flow.standing_bounds_change`).
+  - The total rises only across steps at which what stands does not run down. So across steps that run down, what stands at the end with the steps at which some standing changed is within the total at the start, with no decision of whether a standing changed (`Flow.runsDown_bounds_change`).
+  - For any counts, the change bound is `Flow.runsDown_change_bound`.
+  - `World.enclosure_bounds_change` (P46) and `World.enclosure_bounds_standing` (P47) are its corollaries.
+  - Ren named the law "closure bounds change". What bounds change is the running down, balance and dissipation on a family holding what stands. Closure is how the premises supply that.
+- **Ceasing needs arising.** This part was drafted and verified by the session "0 axiom completeness" and integrated here.
+  - A list covers what holds at a step when every member holding there is on it (`Covers`).
+  - For any finite list, what holds of it at the end of a stretch, with its ceasings, is what held of it at the start exactly when none of it comes to be across the stretch (`cohort_closes_iff`).
+  - Take a list holding exactly what holds at `N` (`ListsAt`), with nothing coming to be after `N`. Then what holds at the end with what ceased since `N` number exactly those holding at `N` (`ceasing_needs_arising`).
+  - Ceasing recurring needs coming to be recurring wherever some list covers what holds at arbitrarily late steps (`coming_of_ceasing_covered`). The census law is the case of a census (`Listed.covered`). `World.arising_of_ceasing` and `Web.StandingCensus.coming_of_ceasing` are re-proved through it.
+  - Without decidability, with a list covering `N` and nothing coming to be from `N` on, ceasing does not recur (`Covers.ceasing_steps_within`, `Covers.ceasing_not_recurring`, `Covers.not_not_coming_from`).
+
+Commitments of the representation (Ren's item 4), from the statements and proofs:
+- **Decidability.** Laws 1, 3 and 4 take no decision of any predicate of the world; their proofs decide only the order of numbers. Law 2's exact count needs marks, and its form that ceasing does not recur needs none.
+- **Whole units.** The one-step iffs of laws 1 and 4 use addition and order only. The recurrence of law 1 and the bounds of law 3 use the least difference: dissipation's sign term, a unit lost by each formation taking (Ren's option A). Whether each law survives amounts finer than whole units has not yet been checked here. For rest, the resolution line covers it (R4: rest at every resolution with the refinement counted).
+- **Time.** The test on coarser steps is the localized `Sampling` (queue item 7, from the session "0 axiom completeness"). Balance and dissipation on a family compose across the fine steps of a coarse step, with each relatum listed once, and a family running down needs to hold what stands only at the two coarse ends. Acting and taking stay relative to the step.
+- **Finiteness.** The census of what stands, finitely many standing at each step, is used by the recurrence of law 1 and by law 3, and only to make the total standing a number at each step. The one-step laws need no census.
+
+On the AI's reading, pending Ren: the laws of Part I that the premises bound are laws of each step and its relata, and the premises are one way of making their conditions hold everywhere. New record laws-of-one-step. Revised records: continued-change-needs-openness, counting-under-enclosure, whole-law-of-counting, counting-standing-and-dependence, ceasing-needs-arising and life-as-condition-of-life. Receipt 20261011T071749.484228Z (Locality 57). Not yet independently reviewed; the author's counterreview is in section 66.
+
+The package now has 2171 theorems and 3257 declaration audits, over a core closure of 43 modules and a package of 41, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 67. The periphery bridge passed against this core (receipt 20261011T071753.574921Z).

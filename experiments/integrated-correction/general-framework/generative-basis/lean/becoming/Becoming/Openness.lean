@@ -16,6 +16,12 @@ stands before or after it, lies within finitely many conditions, the total stand
 not rise, and it falls whenever any condition's standing changes: a rise is given to, and
 giving needs uptake there; a fall is taken from.
 
+* **The laws of one step.** Each law below is a corollary of a law of `Becoming.Locality`
+  stated for every world, its condition inside it: across a step at which a family holding
+  whatever stands is balanced and dissipated on, some standing changes exactly when the total
+  falls, and change recurs exactly when it recurs across steps at which what stands does not
+  run down (`Flow.change_recurs_iff`). The premises supply that condition across a step
+  enclosed around what stands (`Flow.AroundStanding.runsDownClosed`).
 * **Total standing runs down.** Where what stands at each step is listed, each once
   (`Web.StandingCensus`), the total standing across a step enclosed around what stands
   (`Flow.AroundStanding`) does not rise (`Flow.standing_never_rises`), and any rise or
@@ -132,18 +138,13 @@ theorem mem_append_right {a : α} : ∀ (l : List α) {m : List α}, a ∈ m →
 
 /-! ## Total standing -/
 
-/-- What stands at each step is listed, each once: finitely many conditions stand at each
-step. -/
-def Web.StandingCensus (W : Web F C) (stand : Nat → List C) : Prop :=
-  Listed (fun c t => 0 < W.level t c) stand
-
 /-- The census law read of standing: under a census of what stands, conditions ceasing to
 stand at arbitrarily late steps need conditions coming to stand at arbitrarily late
-steps (`Listed.coming_of_ceasing`). -/
+steps (`coming_of_ceasing_covered`). -/
 theorem Web.StandingCensus.coming_of_ceasing {W : Web F C} {stand : Nat → List C}
     (census : W.StandingCensus stand) (ceasing : ∀ N, ∃ t c, N ≤ t ∧ W.CeasesToStand t c) :
     ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
-  Listed.coming_of_ceasing census ceasing
+  coming_of_ceasing_covered (Listed.covered census) ceasing
 
 /-- With at most `B` conditions standing at each step from some step on, coming to stand
 recurs exactly when ceasing to stand does (`Listed.coming_iff_ceasing`). -/
@@ -183,14 +184,6 @@ something. -/
 def Flow.ExchangeRecurs (L : Flow F C) : Prop :=
   ∀ N, ∃ t f c, N ≤ t ∧ f ∈ L.present t ∧ (0 < L.take t f c ∨ 0 < L.give t f c)
 
-/-- The total standing over the list of what stands is the stock of any family without
-repetition holding it. -/
-theorem Web.StandingCensus.stock_eq {W : Web F C} {stand : Nat → List C}
-    (census : W.StandingCensus stand) {es : List C} (distinct : Distinct es) {t : Nat}
-    (within : ∀ c, c ∈ stand t → c ∈ es) : W.stock (stand t) t = W.stock es t :=
-  Nat.le_antisymm (total_le_of_support (census t).1 fun c mem _ => within c mem)
-    (total_le_of_support distinct fun c _ positive => ((census t).2 c).mp positive)
-
 namespace Flow
 
 variable {L : Flow F C} {W : Web F C} {stand : Nat → List C}
@@ -214,15 +207,22 @@ theorem Enclosed.aroundStanding_not_not {t : Nat} (enclosed : L.Enclosed t)
       fun c mem => within c (mem_append_right _ mem), closed⟩
 
 /-- A member of a family dissipated on across the step falling lowers the family's stock:
-it is taken from. -/
+it is taken from (`Flow.BalancesOn.fall_lowers`). -/
 theorem fall_lowers_on (balances : L.Balances W) {ds : List C} {t : Nat}
     (dissipates : L.DissipatesOn ds t) {c : C} (mem : c ∈ ds) (falls : W.Falls t c) :
     W.stock ds (t + 1) < W.stock ds t :=
-  match total_pos (L.present t) (balances.fall_taken falls) with
-  | ⟨_, present, takes⟩ => Nat.lt_of_lt_of_le
-      (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total ds (L.take t f)))
-        present (sign_pos (total_pos_of_mem mem takes))))
-      (balances.runs_down dissipates)
+  (balances.on ds t).fall_lowers dissipates mem falls
+
+/-- Under balance and dissipation, a family closed across a step and holding what stands
+before and after it runs down across it: the premises give the local condition of
+`Becoming.Locality` there. -/
+theorem AroundStanding.runsDownClosed (balances : L.Balances W) (dissipative : L.Dissipative)
+    (census : W.StandingCensus stand) {t : Nat} :
+    L.AroundStanding stand t → L.RunsDownClosed W t
+  | ⟨es, distinct, before, after, closed⟩ =>
+    ⟨es, ⟨distinct, fun c positive => before c (((census t).2 c).mp positive),
+      fun c positive => after c (((census (t + 1)).2 c).mp positive), balances.on es t,
+      dissipative es t distinct closed⟩, closed⟩
 
 /-- Under dissipation, across a step enclosed around what stands, the total standing falls
 by at least the number of formations taking from the enclosing family. -/
@@ -230,91 +230,61 @@ theorem standing_runs_down (balances : L.Balances W) (dissipative : L.Dissipativ
     (census : W.StandingCensus stand) {t : Nat} :
     L.AroundStanding stand t →
       ∃ es, W.stock (stand (t + 1)) (t + 1) + L.takers es t ≤ W.stock (stand t) t
-  | ⟨es, distinct, before, after, closed⟩ =>
-    ⟨es, Nat.le_trans (Nat.le_of_eq (congrArg (· + L.takers es t) (census.stock_eq distinct after)))
-      (Nat.le_trans (balances.runs_down (dissipative es t distinct closed))
-        (Nat.le_of_eq (census.stock_eq distinct before).symm))⟩
+  | around => match around.runsDownClosed balances dissipative census with
+    | ⟨es, runs, _⟩ => match runs.stock_eq census, runs with
+      | ⟨now, next⟩, ⟨_, _, _, balancesOn, dissipates⟩ =>
+        ⟨es, Nat.le_trans (Nat.le_of_eq (congrArg (· + L.takers es t) next))
+          (Nat.le_trans (balancesOn.runs_down dissipates) (Nat.le_of_eq now.symm))⟩
 
-/-- So the total standing does not rise. -/
+/-- So the total standing does not rise (`Flow.RunsDown.standing_le`). -/
 theorem standing_never_rises (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {t : Nat} (around : L.AroundStanding stand t) :
     W.stock (stand (t + 1)) (t + 1) ≤ W.stock (stand t) t :=
-  match standing_runs_down balances dissipative census around with
-  | ⟨_, runs⟩ => Nat.le_trans (Nat.le_add_right _ _) runs
+  (around.runsDownClosed balances dissipative census).runsDown.standing_le census
 
-/-- And any condition's standing rising or falling across the step lowers it. -/
+/-- And any condition's standing rising or falling across the step lowers it
+(`Flow.RunsDown.changes_iff`). -/
 theorem change_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {t : Nat} (around : L.AroundStanding stand t) {c : C}
     (changes : W.Rises t c ∨ W.Falls t c) :
     W.stock (stand (t + 1)) (t + 1) < W.stock (stand t) t :=
-  match around with
-  | ⟨es, distinct, before, after, closed⟩ =>
-    have dissipates := dissipative es t distinct closed
-    have lowers : W.stock es (t + 1) < W.stock es t := match changes with
-      | .inl rises => rise_lowers_on balances dissipates
-          (after c (((census (t + 1)).2 c).mp (Nat.lt_of_le_of_lt (Nat.zero_le _) rises))) rises
-      | .inr falls => fall_lowers_on balances dissipates
-          (before c (((census t).2 c).mp (Nat.lt_of_le_of_lt (Nat.zero_le _) falls))) falls
-    Nat.lt_of_le_of_lt (Nat.le_of_eq (census.stock_eq distinct after))
-      (Nat.lt_of_lt_of_le lowers (Nat.le_of_eq (census.stock_eq distinct before).symm))
+  ((around.runsDownClosed balances dissipative census).runsDown.changes_iff census).mp
+    ⟨c, changes⟩
 
 /-- Standing comes to rest: where every step from some step on is enclosed around what
 stands, no condition's standing changes at arbitrarily late steps. It is enough that each
-of those enclosures is not refuted, since what the proof compares are numbers, whose order
-is decided. -/
+of those enclosures is not refuted. The corollary of `Flow.change_recurs_iff`: change
+recurring would recur across steps at which what stands does not run down, and under the
+premises an enclosure around what stands is such a step. -/
 theorem stills (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {T : Nat}
     (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ (W.Rises t c ∨ W.Falls t c) :=
-  fun changing => falls_finitely (fun t => W.stock (stand t) t) T
-    (fun t later => Decidable.of_not_not fun rises => around t later fun enclosed =>
-      rises (standing_never_rises balances dissipative census enclosed))
-    fun N => match changing (N + T) with
-    | ⟨t, _, later, changes⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        Decidable.of_not_not fun stays =>
-          around t (Nat.le_trans (Nat.le_add_left T N) later) fun enclosed =>
-            stays (change_lowers balances dissipative census enclosed changes)⟩
+  fun changing => match (change_recurs_iff census).mp (fun N => match changing N with
+      | ⟨t, c, later, changes⟩ => ⟨t, later, c, changes⟩) T with
+  | ⟨t, later, unmet, _⟩ => around t later fun enclosed =>
+      unmet (enclosed.runsDownClosed balances dissipative census).runsDown
 
 /-- Across a step enclosed around what stands, a formation taking part that takes or gives
 anything lowers the total standing: the enclosing family holds what it exchanges, and
-under dissipation giving to it needs taking from it. -/
+under dissipation giving to it needs taking from it (`Flow.RunsDownClosed.exchanges_iff`). -/
 theorem exchange_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {t : Nat} (around : L.AroundStanding stand t) {f : F}
     {c : C} (present : f ∈ L.present t) (exchanges : 0 < L.take t f c ∨ 0 < L.give t f c) :
     W.stock (stand (t + 1)) (t + 1) < W.stock (stand t) t :=
-  match around with
-  | ⟨es, distinct, before, after, closed⟩ =>
-    have dissipates := dissipative es t distinct closed
-    have inside : ¬¬ c ∈ es := fun out => match closed f present c out with
-      | ⟨noTake, noGive⟩ => match exchanges with
-        | .inl takes => Nat.lt_irrefl 0 (Eq.subst (motive := fun k => 0 < k) noTake takes)
-        | .inr gives => Nat.lt_irrefl 0 (Eq.subst (motive := fun k => 0 < k) noGive gives)
-    have takes : 0 < total es (L.take t f) := Decidable.of_not_not fun idle => inside fun mem =>
-      idle (match exchanges with
-        | .inl takes => total_pos_of_mem mem takes
-        | .inr gives => dissipates.takes_of_gives present (total_pos_of_mem mem gives))
-    have lowers : W.stock es (t + 1) < W.stock es t :=
-      Nat.lt_of_lt_of_le
-        (Nat.lt_add_of_pos_right (total_pos_of_mem (q := fun f => sign (total es (L.take t f)))
-          present (sign_pos takes)))
-        (balances.runs_down dissipates)
-    Nat.lt_of_le_of_lt (Nat.le_of_eq (census.stock_eq distinct after))
-      (Nat.lt_of_lt_of_le lowers (Nat.le_of_eq (census.stock_eq distinct before).symm))
+  ((around.runsDownClosed balances dissipative census).exchanges_iff census).mp
+    ⟨f, c, present, exchanges⟩
 
 /-- The exchange comes to rest: where every step from some step on is not refuted to be
-enclosed around what stands, no formation takes or gives at arbitrarily late steps. Each
-such exchange lowers the total standing, which never rises across those steps. -/
+enclosed around what stands, no formation takes or gives at arbitrarily late steps. The
+corollary of `Flow.exchange_recurs_iff`. -/
 theorem exchanges_finitely (balances : L.Balances W) (dissipative : L.Dissipative)
     (census : W.StandingCensus stand) {T : Nat}
     (around : ∀ t, T ≤ t → ¬¬ L.AroundStanding stand t) : ¬ L.ExchangeRecurs :=
-  fun exchanging => falls_finitely (fun t => W.stock (stand t) t) T
-    (fun t later => Decidable.of_not_not fun rises => around t later fun enclosed =>
-      rises (standing_never_rises balances dissipative census enclosed))
-    fun N => match exchanging (N + T) with
-    | ⟨t, _, _, later, present, exchanges⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-        Decidable.of_not_not fun stays =>
-          around t (Nat.le_trans (Nat.le_add_left T N) later) fun enclosed =>
-            stays (exchange_lowers balances dissipative census enclosed present exchanges)⟩
+  fun exchanging => match (exchange_recurs_iff census).mp (fun N => match exchanging N with
+      | ⟨t, f, c, later, present, exchanges⟩ => ⟨t, later, .inl ⟨f, c, present, exchanges⟩⟩) T with
+  | ⟨t, later, unmet, _⟩ => around t later fun enclosed =>
+      unmet (enclosed.runsDownClosed balances dissipative census)
 
 end Flow
 
@@ -333,11 +303,12 @@ def CountedWithin (w : World) (B : Nat) : Prop :=
 variable {w : World}
 
 /-- The census law: in a world with a census whose activity is decided, ceasing recurs
-only where arising recurs (`Web.arising_of_ceasing`). -/
+only where arising recurs. The corollary of `coming_of_ceasing_covered`, which needs lists
+covering what is active only at arbitrarily late steps. -/
 theorem arising_of_ceasing [∀ t x, Decidable (w.web.active t x)] (counted : w.Counted)
     (ceasing : w.CeasingRecurs) : w.ArisingRecurs :=
   match counted with
-  | ⟨_, census⟩ => w.web.arising_of_ceasing census ceasing
+  | ⟨_, census⟩ => coming_of_ceasing_covered (Listed.covered census) ceasing
 
 /-- With at most `B` relata active at each step, arising recurs exactly when ceasing does
 (`Web.unceasing_iff_bounded`). -/

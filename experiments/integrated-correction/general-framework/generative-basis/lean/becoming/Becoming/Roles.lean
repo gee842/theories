@@ -1,4 +1,4 @@
-import Becoming.Dissipation
+import Becoming.Locality
 
 /-!
 # Roles: formations and conditions are roles of one relatum
@@ -494,14 +494,14 @@ theorem Dependent.ceases_below {W : Web F C} (dependent : W.Dependent) {t : Nat}
 
 /-- Arising through another's giving: in a balanced flow in which only active formations
 give, an embodied relatum arises only as an active formation taking part gives to it, and
-that formation is another. -/
+that formation is another. The corollary of the local law, which needs balance at the
+relatum across the step, embodiment at its two ends and only active givers to it
+(`Flow.BalancesOn.arises_given`). -/
 theorem Embodied.arises_given {L : Flow X X} (balances : L.Balances W) (acting : L.Acting W)
     {x : X} (embodied : W.Embodied x) {t : Nat} (arises : W.Arises t x) :
     ∃ f, W.active t f ∧ f ∈ L.present t ∧ 0 < L.give t f x ∧ f ≠ x :=
-  match balances.renewedBy acting t x (Nat.lt_of_le_of_lt
-      (Nat.ge_of_not_lt fun stands => arises.1 ((embodied t).mpr stands))
-      ((embodied (t + 1)).mp arises.2)) with
-  | ⟨f, active, present, gives⟩ => ⟨f, active, present, gives, fun same => arises.1 (same ▸ active)⟩
+  (balances.on [x] t).arises_given (.head []) (embodied t) (embodied (t + 1))
+    (fun f present gives => acting t f x present gives) arises
 
 /-- Where only embodied relata give, a premise supplied by the representation, a
 formation giving to an arising embodied relatum is embodied too, and stands as a

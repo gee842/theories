@@ -43,7 +43,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
-        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Roles",
+        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
         "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
         "Becoming.Continuation", "Becoming.Admission",
@@ -318,6 +318,36 @@ SCOPE = (
     "family open across that step, an active formation "
     "giving to the one and taking from the family and an active formation drawing on the other "
     "taking from it where only active formations give and take. "
+    "Locality: each law holds of every world, its condition stated inside it at the steps and "
+    "relata where the proof uses it, so that a premise selected for every step makes the "
+    "condition hold at every step and the selection results are corollaries, no premise being "
+    "derived; balance on a family across one step; with balance at a condition across a step, "
+    "it comes to stand exactly when it stood at nothing and was given more than was taken from "
+    "it, ceases to stand exactly when it stood and what was taken from it is all it had with all "
+    "it was given, and, nothing being taken from a family balanced on, a member rises exactly "
+    "when something taking part gives to it, which dissipation on the family excludes; an "
+    "embodied relatum, embodied at both ends of the step and given to only by active formations, "
+    "arises exactly when it comes to stand, so as an active giver other than itself gives to "
+    "it; across a step at which a family without repetition holding whatever stands before or "
+    "after it is balanced and dissipated on, with no closure, some standing changes exactly when "
+    "the family's total falls, and with the family closed something taking part takes or gives "
+    "exactly then; under a census of what stands, standing changes at arbitrarily late steps "
+    "exactly when it changes at arbitrarily late steps across which what stands does not run "
+    "down, by a bounded search with no decision, and so with the exchange; over any stretch what "
+    "stands at its end with the steps at which the total fell number at most the total at its "
+    "start with what it rose, which rises only across steps that do not run down, so that any "
+    "count within the total standing has a change bound from a step after which every step runs "
+    "down, wherever each counted change is a change of standing; a list covering what holds at "
+    "one step, with nothing coming to be across a stretch after it, covers every step of the "
+    "stretch, for any finite list what holds of it at the end with its ceasings is what held at "
+    "the start exactly when none of it comes to be across the stretch, with a list holding "
+    "exactly what holds at a step what holds at the end with what ceased number exactly those, "
+    "and ceasing recurring needs coming to be recurring wherever some list covers what holds at "
+    "arbitrarily late steps, and, with no decision, does not recur where a list covers what "
+    "holds at one step and nothing comes to be after it. Openness's rest theorems, Counting's "
+    "enclosure bound and binding of counting, Standing's bounds on what stands, the census law "
+    "and the arising of an embodied relatum through another's giving are re-proved as its "
+    "corollaries. "
     "Roles: a web or flow read with one kind of relatum, in which no formation is a condition, keeps "
     "support, dependence, renewal, consumption, the classes of formations, undermining, living "
     "events, arising, unceasing generation and a census, and what is taken and given, balance, "

@@ -154,7 +154,11 @@
 
   Both re-found the representation and need Ren's decision.
 
-## 2. 零前提的重述（下一步，尚未写 Lean）/ Zero-premise restatements (next, no Lean yet)
+## 2. 零前提的重述 / Zero-premise restatements
+
+**现状（P48）。** 下面四条已在 `Becoming.Locality` 中检查并登记为 [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)（[研究 §66](BECOMING-RENEWAL-READING.md#66-一步的规律条件在规律之内p48)）；下面保留的是检查前的提议。检查改变了三处：规律 1 的条件不需要封闭（`Flow.RunsDownOn`：包含所立者、被平衡与耗散的家族即可，封闭只在交换的当且仅当中出现）；规律 3 对所立者不需要体现；规律 2 的不复现形式不需要判定（`Covers.ceasing_not_recurring`），确切计数需要。提议中的 `stock es (t+1) + takers es t ≤ stock es t` 是 `Flow.RunsDownOn.takers_le_fall`。
+
+**Status (P48).** The four laws below are checked in `Becoming.Locality` and registered as [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md) ([study section 66](BECOMING-RENEWAL-READING.md#66-一步的规律条件在规律之内p48)); what follows keeps the proposals as they stood before the check. The check changed three things: law 1's condition needs no closure (`Flow.RunsDownOn`: a family holding what stands, balanced and dissipated on, suffices, closure entering only the iff for the exchange); law 3 needs no embodiment for what stands; law 2's form that ceasing does not recur needs no decision (`Covers.ceasing_not_recurring`), while the exact count does. The proposed `stock es (t+1) + takers es t ≤ stock es t` is `Flow.RunsDownOn.takers_le_fall`.
 
 **中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
 
@@ -182,6 +186,12 @@
 - Laws 1 and 3 need the least difference, b (1). With finer units they fail unless the refinement is counted (R4) or the loss is proportional (R3). They need no decidability in their “does not recur” form, and they need discrete steps.
 - Law 2 needs decidability for the count; whether a ¬¬ or pigeonhole form avoids it is to be tested. It needs discrete steps.
 
+**检查后（P48）/ As checked (P48).**
+- 可判定：规律 1、3、4 不判定世界的任何谓词，证明只判定数的大小；规律 2 的确切计数需要标记，不复现形式不需要。 / Decidability: laws 1, 3 and 4 decide no predicate of the world, their proofs deciding only the order of numbers; law 2's exact count needs marks, its form that ceasing does not recur none.
+- 整单位：规律 1、4 的一步当且仅当只用加法与次序；规律 1 的复现与规律 3 的界用最小差异（A）。超出整单位的量尚未检验；静止由 R4 覆盖（`World.rests_refinement_counted`、`World.arising_opens_refinement_counted`）。 / Whole units: the one-step iffs of laws 1 and 4 use addition and order only; the recurrence of law 1 and the bounds of law 3 use the least difference (A). Amounts finer than whole units are not yet tested; rest is covered by R4 (`World.rests_refinement_counted`, `World.arising_opens_refinement_counted`).
+- 时间：较粗的步由局部化的 `Sampling` 检验（落地队列）。 / Time: coarser steps are tested by the localized `Sampling` (landing queue).
+- 有限：所立者的普查只被规律 1 的复现与规律 3 用到，作用只是使每步的总水平是一个数。 / Finiteness: the census of what stands is used only by law 1's recurrence and by law 3, to make the total standing a number at each step.
+
 ## 3. 不主张什么 / What is not claimed
 
 **中文。** 不主张任何前提作为规律被推出；不主张最小差异已被推出（那是熵的会话的问题）；不主张八个前提之外没有别的前提被用到。逻辑、`Std` 与核心的纯净规则不变。已落地的选择定理保持其范围内的成果。
@@ -194,12 +204,16 @@
   - this work states dissipation only as `Flow.DissipatesOn es t` at the steps used;
   - it does not touch `Becoming/Dissipation.lean`, `Becoming/Flow.lean` or `Becoming/Resolution.lean`;
   - it does not take up the derivability of the least loss.
+
+  更新（P48 落地时）：消息已送达，熵的会话已答复。它的 R5 `Becoming.Entropy` 只导入 `Becoming.Resolution`，不改任何已有模块，排在落地队列第 8 项；它报告 b(1) 的结果是分解而不是推导（尚未落地）。 / Update (as P48 lands): the message was delivered and the entropy session replied. Its R5 `Becoming.Entropy` imports only `Becoming.Resolution` and changes no existing module; it is item 8 of the landing queue. It reports its result on b(1) as a decomposition, not a derivation (not yet landed).
 - **Another session's uncommitted modules.** A worktree under session `858b224e` holds uncommitted modules:
   - `StandingCounting`, `DependenceCounting` and `FiniteBinding`, which overlap P47 and P46;
   - `Sampling`, coarser steps, which bears on the time test of step 4;
   - `Determination`, standing fixed by the exchange and one cross-section.
 
   P46 and P47 land first, as Ren directed. Where those modules land, step 4 reuses `Sampling` rather than rebuilding it.
+
+  更新（P48 落地时）：P46、P47 已落地；同一会话（“0 axiom completeness”）起草了规律 2，并入 `Becoming.Locality`；它把 `Sampling` 局部化（落地队列第 7 项），并交付了清点 C 组的局部重述（第 5 项，P50）。 / Update (as P48 lands): P46 and P47 have landed; the same session (“0 axiom completeness”) drafted law 2, folded into `Becoming.Locality`; it localized `Sampling` (queue item 7) and delivered the local restatements of the inventory's group C (item 5, P50).
 - **P42–P44** of the peer session land before P46 and P47, as agreed.
 
 ## 5. 连续时间：范围（AI 的提议，待 Ren）/ Continuous time: scope (AI proposal, awaits Ren)

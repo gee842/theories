@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-146 migrated records: 142 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+147 migrated records: 143 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -94,6 +94,7 @@
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
+| `laws-of-one-step` | [一步的规律，条件在规律之内：一步上的平衡确切地定下开始立着与不再立着；包含所立者的家族跨过一步下降时，水平改变恰当总水平下降；变化复现恰当它在不下降的步上复现；下降约束变化；只要在任意晚的步有列表覆盖成立者，不再成立的复现就需要开始成立的复现 / The laws of one step, with their condition inside them: balance at a step fixes coming to stand and ceasing to stand exactly; across a step at which a family holding what stands runs down, some standing changes exactly when its total falls; change recurs exactly where it recurs across steps that do not run down; running down bounds change; ceasing recurring needs coming to be recurring wherever some list covers what holds at arbitrarily late steps](records/laws-of-one-step.md) | theorem | recorded-checked |
 | `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
 | `levels-of-closure` | [闭包的五个层次：供给闭包在影响闭包之内，影响闭包与所及闭包在系统之内，每个包含都可以是严格的，影响闭包与所及闭包方向相反；一个共同条件使系统成为整体 / Five levels of closure: the feeding closure lies within the influence closure, and the influence and reach closures within the system, each inclusion possibly strict, the influence and reach closures pointing in opposite directions; one common condition makes the system the whole](records/levels-of-closure.md) | theorem | recorded-checked |
 | `life-as-condition-of-life` | [回答“生作为生的条件”：形成与条件是一个关系项的两种角色，体现的关系项作为条件，并经由另一个活跃者的给予而生起 / Answering ‘life as a condition of life’: formations and conditions are two roles of one relatum, an embodied relatum is a condition, and it arises through another's giving](records/life-as-condition-of-life.md) | theorem | recorded-checked |

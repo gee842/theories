@@ -101,13 +101,6 @@ theorem mem_pairs {β : Type} {a : α} {b : β} :
 
 variable {F C : Type} {w : World} {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) → Prop}
 
-/-- Each condition standing at a step stands at one or more, so what stands numbers at most
-its total standing. -/
-theorem Web.StandingCensus.length_le_stock {W : Web F C} {stand : Nat → List C}
-    (census : W.StandingCensus stand) (t : Nat) : (stand t).length ≤ W.stock (stand t) t :=
-  Nat.le_trans (Nat.le_of_eq (total_ones (stand t)).symm)
-    (total_le (stand t) fun c mem => ((census t).2 c).mpr mem)
-
 namespace World
 
 /-- `Q` holds of the counts of every census of what stands in the world: how many relata
@@ -285,41 +278,30 @@ theorem standing_binds_iff (S : Premise → Bool) :
 /-- Enclosure bounds what stands, with no premise on activity. With a balanced, dissipative
 flow and every step from `T` on enclosed, the total standing at `T` bounds the change of any
 census of what stands from `T`: what stands at any later step, with the steps since `T` at
-which something came to stand or ceased to stand, numbers at most that total. -/
+which something came to stand or ceased to stand, numbers at most that total. The corollary
+of `Flow.runsDown_change_bound`, with no embodiment needed. -/
 theorem enclosure_bounds_standing {stand : Nat → List w.Relatum}
     (census : w.web.StandingCensus stand) (balanced : w.Balanced) (dissipative : w.Dissipative)
     {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) :
     ChangeBound T (w.web.stock (stand T) T) (fun t => (stand t).length)
       (fun t => ceasings (stand t) (fun x s => 0 < w.web.level s x) t)
       (fun t => comings (stand (t + 1)) (fun x s => 0 < w.web.level s x) t) :=
-  fun _ later => Nat.le_trans (Nat.add_le_add_right (census.length_le_stock _) _)
-    (falls_by_occurrences (fun t => w.web.stock (stand t) t) _ (fun t later =>
-      Decidable.of_not_not fun no => (enclosed t later).aroundStanding_not_not stand
-        fun around => no (match Nat.eq_zero_or_pos (ceasings (stand t)
-            (fun x s => 0 < w.web.level s x) t + comings (stand (t + 1))
-            (fun x s => 0 < w.web.level s x) t) with
-          | .inl quiet => Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) (mark_zero
-              fun positive => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le positive
-                (Nat.le_of_eq quiet)))))
-              (Flow.standing_never_rises balanced dissipative census around)
-          | .inr changes =>
-            have lowers : ∃ x, w.web.Rises t x ∨ w.web.Falls t x :=
-              match Nat.eq_zero_or_pos (ceasings (stand t) (fun x s => 0 < w.web.level s x) t) with
-              | .inr ceasing => match total_pos _ ceasing with
-                | ⟨x, _, ceases⟩ => ⟨x, .inr (Nat.lt_of_le_of_lt (Nat.le_of_eq
-                    (eq_zero_of_not_pos (mark_pos.mp ceases).2)) (mark_pos.mp ceases).1)⟩
-              | .inl still => match total_pos _ (Nat.lt_of_lt_of_le changes (Nat.le_of_eq
-                  ((congrArg (· + _) still).trans (Nat.zero_add _)))) with
-                | ⟨x, _, comes⟩ => ⟨x, .inl (Web.ComesToStand.rises (W := w.web)
-                    (mark_pos.mp comes))⟩
-            match lowers with
-            | ⟨_, change⟩ => Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) (mark_one changes)))
-                (Flow.change_lowers balanced dissipative census around change)))
-      later)
+  Flow.runsDown_change_bound census
+    (fun t later down => (enclosed t later).aroundStanding_not_not stand fun around =>
+      down (around.runsDownClosed balanced dissipative census).runsDown)
+    (fun t _ => census.length_le_stock t)
+    fun t _ changes => match Nat.eq_zero_or_pos (ceasings (stand t)
+        (fun x s => 0 < w.web.level s x) t) with
+      | .inr ceasing => match total_pos _ ceasing with
+        | ⟨x, _, ceases⟩ => ⟨x, .inr (Nat.lt_of_le_of_lt (Nat.le_of_eq
+            (eq_zero_of_not_pos (mark_pos.mp ceases).2)) (mark_pos.mp ceases).1)⟩
+      | .inl still => match total_pos _ (Nat.lt_of_lt_of_le changes (Nat.le_of_eq
+          ((congrArg (· + _) still).trans (Nat.zero_add _)))) with
+        | ⟨x, _, comes⟩ => ⟨x, .inl (Web.ComesToStand.rises (W := w.web) (mark_pos.mp comes))⟩
 
 /-- Under balance and dissipation nothing comes to stand across an enclosed step at which
-nothing stands, whatever is active: a closed family's stock is nothing there, and a member
-coming to stand would lower it (`Flow.standing_lowers`). -/
+nothing stands, whatever is active: a closed family's stock is nothing there, and nothing
+comes to stand from nothing (`Flow.BalancesOn.comes_from_standing`). -/
 theorem enclosed_binds_standing (balanced : w.Balanced) (dissipative : w.Dissipative)
     {stand : Nat → List w.Relatum} (census : w.web.StandingCensus stand) {t : Nat}
     (enclosed : w.flow.Enclosed t)
@@ -337,8 +319,8 @@ theorem enclosed_binds_standing (balanced : w.Balanced) (dissipative : w.Dissipa
     have comes : w.web.ComesToStand t x := mark_pos.mp comes
     match total_pos _ (Flow.Balances.rise_given balanced comes.rises) with
     | ⟨f, present, gives⟩ =>
-      absurd (fun mem => Nat.not_lt_zero _ (Nat.lt_of_lt_of_le
-          (Flow.standing_lowers balanced dissipative distinct closed mem comes)
+      absurd (fun mem => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+          ((balanced.on cs t).comes_from_standing (dissipative cs t distinct closed) mem comes)
           (Nat.le_of_eq nothing)))
         fun out => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives
           (Nat.le_of_eq (closed f present x out).2))

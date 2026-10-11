@@ -189,6 +189,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean"
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "证明改经一步的规律：被围住之界与对计数的约束（World.enclosure_bounds_change、World.enclosed_binds_counting）。",
+        "en": "The proofs now go through the laws of one step: enclosure bound and binding of counting (World.enclosure_bounds_change, World.enclosed_binds_counting)."
+      },
+      "interface": {
+        "output": {
+          "zh": "下降的各步上，变化不多于首步的总水平；跨过包含它的家族被平衡与耗散的一步，没有什么从无中开始立着。",
+          "en": "Across steps that run down change stays within the total standing at the first; nothing comes to stand from nothing across a step at which a family holding it is balanced and dissipated on."
+        },
+        "input": {
+          "zh": "被围住的步上前提给出下降，再加体现，得活动的变化界与约束。",
+          "en": "Across enclosed steps the premises give the running down; with embodiment, the change bound and binding for activity."
+        },
+        "conditions": {
+          "zh": "平衡；耗散；体现；被围住。",
+          "en": "Balance; dissipation; embodiment; enclosure."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean"
+      }
     }
   ],
   "related": [
@@ -263,8 +286,8 @@
     "en": "Stated for discrete steps and activity finite at each step; needs decidability (a logical commitment) and pointwise properties (in place of function extensionality); speaks only of the counting of activity, the counts of standing and dependence under the premises being in counting-standing-and-dependence; the change bound is the total standing at enclosure, which can be attained but is not the value in every world; the bound counts steps of change, not events; in the enclosed queue activity needing support and bounded transmission hold vacuously (nothing depends on anything), and the whole law of counting where every premise binds is in whole-law-of-counting (World.binding_counting, relative to World.Binds), adding only that something arises, and under enclosure from some step on where every premise binds the laws are those under enclosure and that something arises (World.enclosed_binding_counting); no finite world binds every premise (World.Finite.not_binds), the laws in finite worlds where every premise but the census binds are in whole-law-of-counting (World.finite_binding_counting: those of finite worlds and that something arises), and in finite worlds where the premises of each selection without the census bind the laws are those of finite worlds under the selection and at most three more (World.finite_binding_counting_under), witnessed by finite rings; the laws under enclosure from some step on where the premises of each selection bind are those under enclosure and the selection and the same three (World.enclosed_binding_counting_under), witnessed by enclosed, relaying, lossy, exchanging and shedding queues; change does not recur, and an end step needs omniscience in general; the laws under each selection with enclosure are given, the condition where change is bounded stated with its step; the laws under each selection in finite worlds are given, the finite witnesses being rings whose number of places is set by a bound on how many are in the queue at each step; evaluates neither arising, ceasing nor rest; the names (occurrences, ChangeBound, EnclosedQueue, enclosedQueue, FiniteQueue, finiteQueue, placesBelow, Swap, replaced, closingQueue, BoundsChange, Ring, slot, ring, embodiedRing, balancedRing, relayRing, lossyRing, exchangingRing, exchangingQueue, sheddingQueue) are the AI's choice under Ren's naming criteria of 10 October (in the zero-axiom part, formal words describing the abstract dynamics, social and financial words not the first choice), and readings remain Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T011019.444120Z）：Becoming.Population 的 112 项定理（含 occurrences、ChangeBound.not_recurring、ChangeBound.from_zero、ChangeBound.reach 与 ChangeBound.lpo_of_ends）、Becoming.Openness 的 76 项定理、Becoming.Premises 的 59 项定理与 Becoming.Counting 的 212 项定理（含 World.enclosure_bounds_change、World.enclosedQueue_premised、World.enclosed_counting、World.finiteQueue_premised、World.finite_counting、World.enclosed_iff_finite_counting、World.replaced_attains、World.lpo_of_finite_ends、World.closingQueue_dissipative、World.enclosed_counting_under、World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff、World.enclosed_iff_finite_counting_under、World.enclosed_binds_counting、World.enclosed_binding_counting、World.finite_binding_census、World.finite_binding_counting_under、World.finite_binding_activity_iff、World.finite_binding_arising_iff、World.finite_binding_joint_iff、World.enclosed_binding_counting_under、World.enclosed_binding_activity_iff、World.enclosed_binding_arising_iff 与 World.enclosed_binding_joint_iff）全部空依赖；同一回执覆盖包内 40 个模块（含只作导入的根模块与桥接），共 2115 项定理／3194 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T011213.027508Z 通过。草稿经第十三次独立审查（BECOMING-P32-P34-REVIEW.md），按其 U4–U6 重构；重构后的结果尚无独立反审，作者反审见整合文档 §49、§52、§54 与 §63。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 42 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T011019.444120Z): the 112 theorems of Becoming.Population (including occurrences, ChangeBound.not_recurring, ChangeBound.from_zero, ChangeBound.reach and ChangeBound.lpo_of_ends), the 76 theorems of Becoming.Openness, the 59 theorems of Becoming.Premises and the 212 theorems of Becoming.Counting (including World.enclosure_bounds_change, World.enclosedQueue_premised, World.enclosed_counting, World.finiteQueue_premised, World.finite_counting, World.enclosed_iff_finite_counting, World.replaced_attains, World.lpo_of_finite_ends, World.closingQueue_dissipative, World.enclosed_counting_under, World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff, World.enclosed_iff_finite_counting_under, World.enclosed_binds_counting, World.enclosed_binding_counting, World.finite_binding_census, World.finite_binding_counting_under, World.finite_binding_activity_iff, World.finite_binding_arising_iff, World.finite_binding_joint_iff, World.enclosed_binding_counting_under, World.enclosed_binding_activity_iff, World.enclosed_binding_arising_iff and World.enclosed_binding_joint_iff) all have empty axiom reports; the same receipt covers the package's 40 modules (including the import-only root and the bridge) with 2115 theorems/3194 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T011213.027508Z passed. The drafts were checked by the thirteenth independent review (BECOMING-P32-P34-REVIEW.md) and rebuilt following its U4–U6; the rebuilt result has no independent review yet, and the author's counterreview is in §49, §52, §54 and §63 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 42 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T071749.484228Z）：Becoming.Population 的 112 项定理（含 occurrences、ChangeBound.not_recurring、ChangeBound.from_zero、ChangeBound.reach 与 ChangeBound.lpo_of_ends）、Becoming.Openness 的 76 项定理、Becoming.Premises 的 59 项定理与 Becoming.Counting 的 212 项定理（含 World.enclosure_bounds_change、World.enclosedQueue_premised、World.enclosed_counting、World.finiteQueue_premised、World.finite_counting、World.enclosed_iff_finite_counting、World.replaced_attains、World.lpo_of_finite_ends、World.closingQueue_dissipative、World.enclosed_counting_under、World.finite_counting_under、World.finite_counting_binds_iff、World.finite_change_bound_iff、World.enclosed_iff_finite_counting_under、World.enclosed_binds_counting、World.enclosed_binding_counting、World.finite_binding_census、World.finite_binding_counting_under、World.finite_binding_activity_iff、World.finite_binding_arising_iff、World.finite_binding_joint_iff、World.enclosed_binding_counting_under、World.enclosed_binding_activity_iff、World.enclosed_binding_arising_iff 与 World.enclosed_binding_joint_iff）全部空依赖；同一回执覆盖包内 41 个模块（含只作导入的根模块与桥接），共 2171 项定理／3257 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T071753.574921Z 通过。草稿经第十三次独立审查（BECOMING-P32-P34-REVIEW.md），按其 U4–U6 重构；重构后的结果尚无独立反审，作者反审见整合文档 §49、§52、§54 与 §63。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 43 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。Becoming.Locality 的 57 项定理亦空依赖（P48）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T071749.484228Z): the 112 theorems of Becoming.Population (including occurrences, ChangeBound.not_recurring, ChangeBound.from_zero, ChangeBound.reach and ChangeBound.lpo_of_ends), the 76 theorems of Becoming.Openness, the 59 theorems of Becoming.Premises and the 212 theorems of Becoming.Counting (including World.enclosure_bounds_change, World.enclosedQueue_premised, World.enclosed_counting, World.finiteQueue_premised, World.finite_counting, World.enclosed_iff_finite_counting, World.replaced_attains, World.lpo_of_finite_ends, World.closingQueue_dissipative, World.enclosed_counting_under, World.finite_counting_under, World.finite_counting_binds_iff, World.finite_change_bound_iff, World.enclosed_iff_finite_counting_under, World.enclosed_binds_counting, World.enclosed_binding_counting, World.finite_binding_census, World.finite_binding_counting_under, World.finite_binding_activity_iff, World.finite_binding_arising_iff, World.finite_binding_joint_iff, World.enclosed_binding_counting_under, World.enclosed_binding_activity_iff, World.enclosed_binding_arising_iff and World.enclosed_binding_joint_iff) all have empty axiom reports; the same receipt covers the package's 41 modules (including the import-only root and the bridge) with 2171 theorems/3257 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T071753.574921Z passed. The drafts were checked by the thirteenth independent review (BECOMING-P32-P34-REVIEW.md) and rebuilt following its U4–U6; the rebuilt result has no independent review yet, and the author's counterreview is in §49, §52, §54 and §63 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 43 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The 57 theorems of Becoming.Locality (P48) also have empty axiom reports."
   },
   "references": [
     {
@@ -311,15 +334,24 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "98bd13dd51347a863efdcb34c3c948fe32d93d2da13795d1ffcce65eacde251d",
+      "sha256": "4061b27691d35a923c4574be5bdd8a3b742d978f022cad54a034854945f9938d",
       "declarations": [
         "Becoming.World.standingCensus",
         "Becoming.World.rises_of_arises",
         "Becoming.World.falls_of_ceases",
         "Becoming.Flow.standing_never_rises",
         "Becoming.Flow.change_lowers",
-        "Becoming.Web.StandingCensus.stock_eq",
         "Becoming.World.Finite.census_bounded"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "declarations": [
+        "Becoming.Web.StandingCensus.stock_eq",
+        "Becoming.Flow.runsDown_change_bound",
+        "Becoming.Flow.BalancesOn.comes_from_standing"
       ]
     },
     {
@@ -341,7 +373,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "role": "proof",
-      "sha256": "3a1bd15991148ccd78d2ca76341049921a4e8989fec253df9c6b67e6b6c882b3",
+      "sha256": "88506730dec75b252ba95f217b8679abc0133e44f1e65054e432a8baa32a26d9",
       "declarations": [
         "Becoming.World.length_le_stock",
         "Becoming.World.enclosure_bounds_change",
@@ -590,22 +622,22 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "9acf4b0cc43925780bc5b1a3bcc03a9b0fc853c64345b1d03c1043fbbbf93516"
+      "sha256": "49ffc22eb0dd02ea5f2eeccbf1bff9908c9c64cb64fcba4442f61c3749cc2858"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "90b87754d61a39cf11078be288599e8dbe71074e71c54828e649af9d2818454c"
+      "sha256": "0540e0baea62ea5049cfc7aeb581c84be9f9ebac3b47ed54a82681edb34fb975"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "78db283d3c18499122cb40c4c8be0d81dd1a2f6796edef5f7c8715d217109134"
+      "sha256": "49b1a89d0695b26470bbfb24f0dc18f10389a20291ca1d45a809225c8aca8e34"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "5f6479e35017791a83bda728c3cfd62980b1faee74fa67c5c9a3805b1c8d775d"
+      "sha256": "ec5233c218f76f12f25a59be9abe185957f8fa9bcc2469f4e2e412e8f7ca4db8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
@@ -697,11 +729,18 @@
       "sha256_pointer": "/source_sha256/Becoming.Dependence",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "按 Ren 2026-10-11 的转向不再扩展选择表：规律改为去掉前提、对每个世界重述，局部条件写在规律之内（零前提计划）；名称（Ren）。",
-    "en": "Following Ren's redirect of 11 October, no further selection tables: the laws are to be restated for every world with no premise, the local condition inside the law (the zero-premise plan); names (Ren)."
+    "zh": "对每个世界的确切重述见 laws-of-one-step（P48），本记录的被围住之界与对计数的约束（World.enclosure_bounds_change、World.enclosed_binds_counting）是它的推论；其余规律按零前提计划处理；名称（Ren）。",
+    "en": "The exact restatement for every world is laws-of-one-step (P48), of which this record's enclosure bound and binding of counting (World.enclosure_bounds_change, World.enclosed_binds_counting) are corollaries; the other laws follow the zero-premise plan; names (Ren)."
   },
   "history": [
     {
@@ -787,6 +826,10 @@
     {
       "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
       "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：被围住之界与对计数的约束（World.enclosure_bounds_change、World.enclosed_binds_counting）改经 laws-of-one-step 证明（Becoming.Locality），陈述不变；Becoming.Web.StandingCensus.stock_eq 移入 Becoming.Locality，引用随之改指。断言不变。作者说明见整合文档 §66。验证范围重新指向回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z。",
+      "en": "2026-10-11 P48: Enclosure bound and binding of counting (World.enclosure_bounds_change, World.enclosed_binds_counting) now proved through laws-of-one-step (Becoming.Locality), statements unchanged; Becoming.Web.StandingCensus.stock_eq moved into Becoming.Locality, and the references follow. The claim is unchanged. The author's note is in section 66 of the integration note. Validation scope re-pointed to receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z."
     }
   ]
 }

@@ -462,6 +462,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
+## ceasing-needs-arising ← laws-of-one-step
+
+`formal-reuse` — 证明改经一步的规律：World.arising_of_ceasing 与 Web.StandingCensus.coming_of_ceasing 经 coming_of_ceasing_covered 证明。 / The proofs now go through the laws of one step: World.arising_of_ceasing and Web.StandingCensus.coming_of_ceasing are proved through coming_of_ceasing_covered.
+
+**Producer output / 上游输出:** 只要在任意晚的步有列表覆盖成立者，不再成立的复现就需要开始成立的复现；不用判定时，覆盖第 N 步且此后没有开始成立，不再成立就不复现。 / Ceasing recurring needs coming to be recurring wherever some list covers what holds at arbitrarily late steps; with no decision, where a list covers step N and nothing comes to be after it, ceasing does not recur.
+
+**Consumer input / 下游输入:** 普查覆盖每一步（Listed.covered），所以普查定律的世界与水平读法是推论。 / A census covers every step (Listed.covered), so the world and standing readings of the census law are corollaries.
+
+**Retained conditions / 保留条件:** 覆盖成立者的列表；确切计数要求判定。 / A list covering what holds; the exact count needs a decision.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## census-balance ← coming-and-ceasing-keep-pace
 
 `formal-reuse` — 复用开始成立与不再成立的计数（comings、ceasings）、标记（mark）与步段（steps），并以有限家族定律（held_over_stretch、keep_pace）为对照。 / Reuses the counts of coming to be and ceasing to be (comings, ceasings), marks (mark) and stretches (steps), with the law of a finite family (held_over_stretch, keep_pace) for comparison.
@@ -1018,6 +1030,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
+## continued-change-needs-openness ← laws-of-one-step
+
+`formal-reuse` — 证明改经一步的规律：水平的静止定理（stills、exchanges_finitely、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。 / The proofs now go through the laws of one step: the standing rest theorems (stills, exchanges_finitely, standing_never_rises, change_lowers, exchange_lowers, standing_runs_down, fall_lowers_on), the premises supplying the condition by Flow.AroundStanding.runsDownClosed; Web.StandingCensus and stock_eq moved into Becoming.Locality.
+
+**Producer output / 上游输出:** 跨过包含所立者、被平衡与耗散的家族下降的一步，水平改变恰当总水平下降；所立者有普查时，变化复现恰当它在不下降的步上复现。 / Across a step at which a family holding what stands, balanced and dissipated on, runs down, some standing changes exactly when the total falls; under a census of what stands, change recurs exactly where it recurs across steps that do not run down.
+
+**Consumer input / 下游输入:** 围住所立者的步上，前提给出下降（Flow.AroundStanding.runsDownClosed），所以被围住的步上变化归于静止。 / Across a step enclosed around what stands the premises give the running down (Flow.AroundStanding.runsDownClosed), so change comes to rest across enclosed steps.
+
+**Retained conditions / 保留条件:** 所立者的普查；平衡；耗散；步围住所立者。 / A census of what stands; balance; dissipation; the step enclosed around it.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## continuing-self-fed-from-beyond ← no-finite-part-bears-taking
 
 `formal-reuse` — 复用 taking_draws_in、Inward、Around、Distinct 与 Lone；fed_from_beyond 由 taking_draws_in 经 fed_of_not_inward 推出。 / Reuses taking_draws_in, Inward, Around, Distinct and Lone; fed_from_beyond follows from taking_draws_in through fed_of_not_inward.
@@ -1138,6 +1162,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
 
+## counting-standing-and-dependence ← laws-of-one-step
+
+`formal-reuse` — 证明改经一步的规律：所立者的被围住之界与约束（World.enclosure_bounds_standing、World.enclosed_binds_standing）。 / The proofs now go through the laws of one step: bound and binding of what stands under enclosure (World.enclosure_bounds_standing, World.enclosed_binds_standing).
+
+**Producer output / 上游输出:** 下降的各步上，所立者的变化不多于首步的总水平，不需要体现。 / Across steps that run down the change of what stands stays within the total standing at the first, with no embodiment.
+
+**Consumer input / 下游输入:** 被围住的步上前提给出下降。 / Across enclosed steps the premises give the running down.
+
+**Retained conditions / 保留条件:** 平衡；耗散；被围住。 / Balance; dissipation; enclosure.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## counting-under-enclosure ← whole-law-of-counting
 
 `formal-reuse` — 复用计数表与队列（Tally、Queue.holds、Queue.line、Queue.listed、Queue.counts、Queue.ceasings_eq、Queue.comings_eq、Queue.kept_end）、逐点、World.CountsObey、counting_binds_jointly 与队首的引理（OpenQueue.front、OpenQueue.occupied）。 / Reuses tallies and queues (Tally, Queue.holds, Queue.line, Queue.listed, Queue.counts, Queue.ceasings_eq, Queue.comings_eq, Queue.kept_end), Pointwise, World.CountsObey, counting_binds_jointly and the front lemmas (OpenQueue.front, OpenQueue.occupied).
@@ -1197,6 +1233,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## counting-under-enclosure ← laws-of-one-step
+
+`formal-reuse` — 证明改经一步的规律：被围住之界与对计数的约束（World.enclosure_bounds_change、World.enclosed_binds_counting）。 / The proofs now go through the laws of one step: enclosure bound and binding of counting (World.enclosure_bounds_change, World.enclosed_binds_counting).
+
+**Producer output / 上游输出:** 下降的各步上，变化不多于首步的总水平；跨过包含它的家族被平衡与耗散的一步，没有什么从无中开始立着。 / Across steps that run down change stays within the total standing at the first; nothing comes to stand from nothing across a step at which a family holding it is balanced and dissipated on.
+
+**Consumer input / 下游输入:** 被围住的步上前提给出下降，再加体现，得活动的变化界与约束。 / Across enclosed steps the premises give the running down; with embodiment, the change bound and binding for activity.
+
+**Retained conditions / 保留条件:** 平衡；耗散；体现；被围住。 / Balance; dissipation; embodiment; enclosure.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
 ## derived-extent-limits ← continuing-self-fed-from-beyond
 
@@ -1773,6 +1821,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 回应匹配当前检验关系、实际修订与重试、继续参与、原治理门槛；未把操作正确当作自动授权。 / Response matches the current test relation; actual revision and retry, continuing participation and the original governance threshold; correct execution does not automatically confer authority.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean)
+
+## laws-of-one-step ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用开始成立与不再成立（ComesToBe、CeasesToBe）、一段上的恒等式（over_stretch）与标记（mark）。 / Reuses coming to be and ceasing to be (ComesToBe, CeasesToBe), the identity over a stretch (over_stretch) and marks (mark).
+
+**Producer output / 上游输出:** 一段步上一个量的末值连同下降等于初值连同上升；有限家族中开始成立与不再成立同步。 / Over a stretch an amount at its end with its falls is its start with its rises; in a finite family coming to be and ceasing to be keep pace.
+
+**Consumer input / 下游输入:** 下降约束变化以该恒等式读总水平；不再存在需要生起把同步局部化为覆盖成立者的列表。 / Running down bounds change reads the total standing through that identity; ceasing needs arising localizes keeping pace to a list covering what holds.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## laws-of-one-step ← more-needs-renewers
+
+`formal-reuse` — 复用流的平衡（Flow.Balances）。 / Reuses the balance of a flow (Flow.Balances).
+
+**Producer output / 上游输出:** 平衡的流：每一步每个条件上，步后的水平连同被取的等于步前的水平连同被给的。 / A balanced flow: at every step and condition, the level after with what was taken is the level before with what was given.
+
+**Consumer input / 下游输入:** 一步的平衡把它限于一步与一个家族（BalancesOn），平衡就是处处的一步平衡。 / Balance at a step restricts it to one step and one family (BalancesOn), balance being balance at every step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## laws-of-one-step ← no-finite-part-bears-taking
+
+`formal-reuse` — 复用家族上的耗散与封闭（Flow.DissipatesOn、Flow.ClosedAt）、耗散（Flow.Dissipative）与平衡的流跨过被耗散的步下降（Flow.Balances.runs_down）。 / Reuses dissipation and closure on a family (Flow.DissipatesOn, Flow.ClosedAt), dissipation (Flow.Dissipative) and a balanced flow running down across a step dissipated on (Flow.Balances.runs_down).
+
+**Producer output / 上游输出:** 被耗散的家族的存量下降至少为取用它的形成数。 / A family dissipated on runs down by at least the number of formations taking from it.
+
+**Consumer input / 下游输入:** 同一下降只用该步、该家族上的平衡（BalancesOn.runs_down），再加上下降的确切条件。 / The same running down uses balance only at that step and family (BalancesOn.runs_down), with the exact condition of running down added.
+
+**Retained conditions / 保留条件:** 一步、一个家族上的平衡与耗散。 / Balance and dissipation on one family across one step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean)
+
+## laws-of-one-step ← census-balance
+
+`formal-reuse` — 复用普查（Listed）。 / Reuses censuses (Listed).
+
+**Producer output / 上游输出:** 普查的平衡：段末的列表连同不再成立的等于段首的列表连同开始成立的。 / The census balance: the list at the end with what ceased is the list at the start with what came.
+
+**Consumer input / 下游输入:** 对任何有限列表，同一平衡恰当这一段没有成员开始成立时成立（cohort_closes_iff），普查是覆盖每一步的情形。 / For any finite list the same balance holds exactly when none of it comes to be across the stretch (cohort_closes_iff), a census being the case of covering every step.
+
+**Retained conditions / 保留条件:** 覆盖成立者的列表。 / A list covering what holds.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
 ## learned-procedure-transmission ← encounter-selection-and-revision
 
@@ -3233,6 +3329,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
+## whole-law-of-counting ← laws-of-one-step
+
+`formal-reuse` — 证明改经一步的规律：取用对计数的约束（World.taking_binds_counting）。 / The proofs now go through the laws of one step: binding of counting by taking (World.taking_binds_counting).
+
+**Producer output / 上游输出:** 跨过没有从平衡的家族取用的一步，家族上的耗散排除成员上升。 / Across a step at which nothing is taken from a balanced family, dissipation on the family excludes a member rising.
+
+**Consumer input / 下游输入:** 没有关系项活跃的一步上没有什么被取用，所以没有生起。 / Nothing is taken across a step at which nothing is active, so nothing arises.
+
+**Retained conditions / 保留条件:** 平衡；只有活跃者取用；耗散；体现。 / Balance; only active relata taking; dissipation; embodiment.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
 
 ## whole-persists-through-generation ← unceasing-generation-needs-renewal
 
