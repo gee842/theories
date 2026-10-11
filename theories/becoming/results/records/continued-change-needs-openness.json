@@ -224,6 +224,29 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean"
       }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "证明改经一步的规律：水平的静止定理（stills、exchanges_finitely、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。",
+        "en": "The proofs now go through the laws of one step: the standing rest theorems (stills, exchanges_finitely, standing_never_rises, change_lowers, exchange_lowers, standing_runs_down, fall_lowers_on), the premises supplying the condition by Flow.AroundStanding.runsDownClosed; Web.StandingCensus and stock_eq moved into Becoming.Locality."
+      },
+      "interface": {
+        "output": {
+          "zh": "跨过包含所立者、被平衡与耗散的家族下降的一步，水平改变恰当总水平下降；所立者有普查时，变化复现恰当它在不下降的步上复现。",
+          "en": "Across a step at which a family holding what stands, balanced and dissipated on, runs down, some standing changes exactly when the total falls; under a census of what stands, change recurs exactly where it recurs across steps that do not run down."
+        },
+        "input": {
+          "zh": "围住所立者的步上，前提给出下降（Flow.AroundStanding.runsDownClosed），所以被围住的步上变化归于静止。",
+          "en": "Across a step enclosed around what stands the premises give the running down (Flow.AroundStanding.runsDownClosed), so change comes to rest across enclosed steps."
+        },
+        "conditions": {
+          "zh": "所立者的普查；平衡；耗散；步围住所立者。",
+          "en": "A census of what stands; balance; dissipation; the step enclosed around it."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean"
+      }
     }
   ],
   "related": [
@@ -294,24 +317,22 @@
     }
   ],
   "limitations": {
-    "zh": "交换归于静止陈述为交换不在任意晚的步发生（复现的否定），不是某步之后没有交换，后者需要判定；静止定理只要求生起者体现，但要求活动的普查、所立者的普查与活动可判定（逻辑承诺）；rests_around、rests_enclosed 与 arising_opens 要求每个关系项体现；归于静止的世界中曾经立着或活跃的不是无界多（rest_few），列出全部的列表一般地需要全知（lpo_of_few），所以推广只在于闲置的关系项；开放连同八个前提不充分（holding），每个前提都起约束也不充分（binding_contingent）；exposed 中三个前提空成立，这是耗散只约束被围住的交换这一表示特点，而不是对实际开放系统的描述；只对离散步与自然数的量陈述；不评价开放或静止；名称由 Ren 定。",
-    "en": "The exchange coming to rest is stated as no exchange at arbitrarily late steps (a negated recurrence), not as a step after which none occurs, which would need a decision; the rest theorem needs only whatever arises to be embodied, but needs a census of what is active, a census of what stands and decided activity (a logical commitment); rests_around, rests_enclosed and arising_opens need every relatum embodied; in a world that comes to rest not unboundedly many relata ever stand or act (rest_few), a list holding all of them needing omniscience in general (lpo_of_few), so the generalization lies only in idle relata; openness with the eight premises does not suffice (holding), nor does every premise binding (binding_contingent); in exposed three premises hold vacuously, a feature of representing dissipation as binding only enclosed exchange, not a description of actual open systems; stated for discrete steps and natural-number amounts; evaluates neither openness nor rest; names are Ren's to choose."
+    "zh": "交换归于静止陈述为交换不在任意晚的步发生（复现的否定），不是某步之后没有交换，后者需要判定；静止定理只要求生起者体现，但要求活动的普查、所立者的普查与活动可判定（逻辑承诺）；rests_around、rests_enclosed 与 arising_opens 要求每个关系项体现；归于静止的世界中曾经立着或活跃的不是无界多（rest_few），列出全部的列表一般地需要全知（lpo_of_few），所以推广只在于闲置的关系项；开放连同八个前提不充分（holding），每个前提都起约束也不充分（binding_contingent）；exposed 中三个前提空成立，这是耗散只约束被围住的交换这一表示特点，而不是对实际开放系统的描述；只对离散步与自然数的量陈述；不评价开放或静止；名称由 Ren 定。前提只是给出局部条件的一种方式：对每个世界的确切形式见 laws-of-one-step，那里下降不需要封闭。",
+    "en": "The exchange coming to rest is stated as no exchange at arbitrarily late steps (a negated recurrence), not as a step after which none occurs, which would need a decision; the rest theorem needs only whatever arises to be embodied, but needs a census of what is active, a census of what stands and decided activity (a logical commitment); rests_around, rests_enclosed and arising_opens need every relatum embodied; in a world that comes to rest not unboundedly many relata ever stand or act (rest_few), a list holding all of them needing omniscience in general (lpo_of_few), so the generalization lies only in idle relata; openness with the eight premises does not suffice (holding), nor does every premise binding (binding_contingent); in exposed three premises hold vacuously, a feature of representing dissipation as binding only enclosed exchange, not a description of actual open systems; stated for discrete steps and natural-number amounts; evaluates neither openness nor rest; names are Ren's to choose. The premises are one way of supplying the local condition: the exact form for every world is in laws-of-one-step, where running down needs no closure."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T011019.444120Z）：Becoming.Openness 的 76 项定理全部空依赖（P30 新增的 CountedBy 与 slow 五项属于 bounded-census-keeps-pace；P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法，P28 新增水平的平衡，P25b 新增 Flow.Enclosed.aroundStanding_not_not、World.arising_stops、World.exposed_standing、World.openness_contingent 与 World.rest_needs_standing 及其世界，P29 新增 World.brood_rests，P29b 更名为 World.hatch_rests，并新增 Listed.few_of_quiet、World.rest_few 与 holding，P38c 新增 World.binding_contingent，它在 P41 移入 Becoming.Counting，该模块的 132 项定理亦空依赖），Becoming.Dissipation 的 89 项定理（P25b 新增 Flow.Enclosed.around_not_not）亦然；同一回执覆盖包内 40 个模块（含只作导入的根模块与桥接），共 2115 项定理／3194 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T011213.027508Z 通过。作者反审见整合文档 §33 与 §35；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）审查 P25 部分并接受其数学，所提更正在整合文档 §38 处理；P26 部分与这些更正尚未经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 42 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T011019.444120Z): the 76 theorems of Becoming.Openness (the five of CountedBy and slow added in P30 belong to bounded-census-keeps-pace; with the rest theorem and its cases added in P26, the world and standing readings of the bounded census law in P27, the balance of standing in P28, and Flow.Enclosed.aroundStanding_not_not, World.arising_stops, World.exposed_standing, World.openness_contingent and World.rest_needs_standing with its worlds in P25b, and World.brood_rests in P29, renamed World.hatch_rests in P29b, which adds Listed.few_of_quiet, World.rest_few and holding, and World.binding_contingent in P38c, moved in P41 to Becoming.Counting, whose 132 theorems also have empty axiom reports) and the 89 theorems of Becoming.Dissipation (Flow.Enclosed.around_not_not added in P25b) all have empty axiom reports; the same receipt covers the package's 40 modules (including the import-only root and the bridge) with 2115 theorems/3194 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T011213.027508Z passed. The author's counterreview is in §33 and §35 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) reviewed the P25 part and accepts its mathematics, and its corrections are handled in §38 of the integration note; the P26 part and those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 42 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T071749.484228Z）：Becoming.Openness 的 76 项定理全部空依赖（P30 新增的 CountedBy 与 slow 五项属于 bounded-census-keeps-pace；P26 新增静止定理及其情形，P27 新增有界普查定律的世界与水平读法，P28 新增水平的平衡，P25b 新增 Flow.Enclosed.aroundStanding_not_not、World.arising_stops、World.exposed_standing、World.openness_contingent 与 World.rest_needs_standing 及其世界，P29 新增 World.brood_rests，P29b 更名为 World.hatch_rests，并新增 Listed.few_of_quiet、World.rest_few 与 holding，P38c 新增 World.binding_contingent，它在 P41 移入 Becoming.Counting，该模块的 132 项定理亦空依赖），Becoming.Dissipation 的 89 项定理（P25b 新增 Flow.Enclosed.around_not_not）亦然；同一回执覆盖包内 41 个模块（含只作导入的根模块与桥接），共 2171 项定理／3257 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T071753.574921Z 通过。作者反审见整合文档 §33 与 §35；第十次独立审查（BECOMING-P23C-P24-P25-REVIEW.md）审查 P25 部分并接受其数学，所提更正在整合文档 §38 处理；P26 部分与这些更正尚未经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 43 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。Becoming.Locality 的 57 项定理亦空依赖（P48）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T071749.484228Z): the 76 theorems of Becoming.Openness (the five of CountedBy and slow added in P30 belong to bounded-census-keeps-pace; with the rest theorem and its cases added in P26, the world and standing readings of the bounded census law in P27, the balance of standing in P28, and Flow.Enclosed.aroundStanding_not_not, World.arising_stops, World.exposed_standing, World.openness_contingent and World.rest_needs_standing with its worlds in P25b, and World.brood_rests in P29, renamed World.hatch_rests in P29b, which adds Listed.few_of_quiet, World.rest_few and holding, and World.binding_contingent in P38c, moved in P41 to Becoming.Counting, whose 132 theorems also have empty axiom reports) and the 89 theorems of Becoming.Dissipation (Flow.Enclosed.around_not_not added in P25b) all have empty axiom reports; the same receipt covers the package's 41 modules (including the import-only root and the bridge) with 2171 theorems/3257 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T071753.574921Z passed. The author's counterreview is in §33 and §35 of the integration note; the tenth independent review (BECOMING-P23C-P24-P25-REVIEW.md) reviewed the P25 part and accepts its mathematics, and its corrections are handled in §38 of the integration note; the P26 part and those corrections have not yet been independently reviewed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 43 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. The 57 theorems of Becoming.Locality (P48) also have empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "98bd13dd51347a863efdcb34c3c948fe32d93d2da13795d1ffcce65eacde251d",
+      "sha256": "4061b27691d35a923c4574be5bdd8a3b742d978f022cad54a034854945f9938d",
       "declarations": [
         "Becoming.mem_append_left",
         "Becoming.mem_append_right",
-        "Becoming.Web.StandingCensus",
         "Becoming.Flow.AroundStanding",
-        "Becoming.Web.StandingCensus.stock_eq",
         "Becoming.Flow.Enclosed.aroundStanding",
         "Becoming.Flow.fall_lowers_on",
         "Becoming.Flow.standing_runs_down",
@@ -388,6 +409,19 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "sha256": "0ecb0c12630a3368fe6f9fa4e66f3a7cb0a81ca4b000995e223d624187f2181e",
+      "declarations": [
+        "Becoming.Web.StandingCensus",
+        "Becoming.Web.StandingCensus.stock_eq",
+        "Becoming.Flow.change_recurs_iff",
+        "Becoming.Flow.exchange_recurs_iff",
+        "Becoming.Flow.RunsDownOn.changes_iff",
+        "Becoming.Flow.RunsDownClosed.exchanges_iff"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
       "sha256": "8b1c821ce8e4d9dad5ad1d1e42339368c61b6e6771533a5bbd5d91957d2feb50",
@@ -426,7 +460,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
       "role": "proof",
-      "sha256": "d404d5f5d04d128c84c71e79e538c404e3d7077e31b69a0cd3138954f5002acb",
+      "sha256": "dbfef0fe3adc0a386904d9f4bdcb50d740787ac319e10f82c2e8982122ad7e47",
       "declarations": [
         "Becoming.Shuttle.holder",
         "Becoming.Shuttle.stands",
@@ -458,7 +492,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counting.lean",
       "role": "proof",
-      "sha256": "3a1bd15991148ccd78d2ca76341049921a4e8989fec253df9c6b67e6b6c882b3",
+      "sha256": "88506730dec75b252ba95f217b8679abc0133e44f1e65054e432a8baa32a26d9",
       "declarations": [
         "Becoming.World.binding_contingent"
       ]
@@ -528,17 +562,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "9acf4b0cc43925780bc5b1a3bcc03a9b0fc853c64345b1d03c1043fbbbf93516"
+      "sha256": "49ffc22eb0dd02ea5f2eeccbf1bff9908c9c64cb64fcba4442f61c3749cc2858"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "002088110ea52480b8851a6c1218e8aef2c2f1679a17ad7a5ab6c55e4392e8e6"
+      "sha256": "0540e0baea62ea5049cfc7aeb581c84be9f9ebac3b47ed54a82681edb34fb975"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "9a2fd22aff4275e51410eeac13a085cb8cc5eaf29f583005b82ad7460ea98834"
+      "sha256": "49b1a89d0695b26470bbfb24f0dc18f10389a20291ca1d45a809225c8aca8e34"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -648,11 +682,18 @@
       "sha256_pointer": "/source_sha256/Becoming.Renewal",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "带比率或连续量的总水平；“开放”指交换还是流入（Ren）；名称（Ren）。",
-    "en": "Total standing with rates or continuous amounts; whether ‘openness’ names exchange or inflow (Ren); names (Ren)."
+    "zh": "对每个世界的确切重述见 laws-of-one-step（P48），本记录的水平的静止定理（Flow.stills、Flow.exchanges_finitely 等）是它的推论；带比率或连续量的总水平；“开放”指交换还是流入（Ren）；名称（Ren）。",
+    "en": "The exact restatement for every world is laws-of-one-step (P48), of which this record's standing rest theorems (Flow.stills, Flow.exchanges_finitely and others) are corollaries; total standing with rates or continuous amounts; whether ‘openness’ names exchange or inflow (Ren); names (Ren)."
   },
   "history": [
     {
@@ -794,6 +835,10 @@
     {
       "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
       "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：水平的静止定理（Flow.stills、Flow.exchanges_finitely 等）改经 laws-of-one-step 证明（Becoming.Locality），陈述不变；Becoming.Web.StandingCensus、Becoming.Web.StandingCensus.stock_eq 移入 Becoming.Locality，引用随之改指。断言不变。作者说明见整合文档 §66。验证范围重新指向回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z。",
+      "en": "2026-10-11 P48: Standing rest theorems (Flow.stills, Flow.exchanges_finitely and others) now proved through laws-of-one-step (Becoming.Locality), statements unchanged; Becoming.Web.StandingCensus, Becoming.Web.StandingCensus.stock_eq moved into Becoming.Locality, and the references follow. The claim is unchanged. The author's note is in section 66 of the integration note. Validation scope re-pointed to receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z."
     }
   ]
 }

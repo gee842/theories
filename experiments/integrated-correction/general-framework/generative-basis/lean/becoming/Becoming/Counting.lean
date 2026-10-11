@@ -629,7 +629,8 @@ balances, only active relata take and only from what they draw on, the flow diss
 every relatum is embodied, then under a census nothing arises across a step at which nothing
 is active, whoever gives. At such a step nothing is taken and nothing stands; whatever is
 given comes to stand, so it is active after the step, and the relata active after it form
-a closed family, to which dissipation lets nothing be given. -/
+a closed family, to which dissipation lets nothing be given without taking
+(`Flow.DissipatesOn.still_untaken`). -/
 theorem taking_binds_counting (w : World) [∀ t x, Decidable (w.web.active t x)]
     (balanced : w.Balanced) (taking : w.Taking) (dissipative : w.Dissipative)
     (embodied : w.Embodied) : w.CountsObey fun n _ a => ∀ t, 0 < a t → 0 < n t :=
@@ -655,23 +656,18 @@ theorem taking_binds_counting (w : World) [∀ t x, Decidable (w.web.active t x)
             (Nat.lt_of_lt_of_le gives (le_total_of_mem (q := fun g => w.flow.give t g c)
               present)) (Nat.le_of_eq (flows c).symm))))⟩
       match total_pos _ arising with
-      | ⟨x, listed, comes⟩ =>
-        match total_pos _ (Nat.lt_of_lt_of_le ((embodied x (t + 1)).mp (mark_pos.mp comes).2)
-            (Nat.le_of_eq (flows x))) with
-        | ⟨f, present, gives⟩ =>
-          have nothing : total (alive (t + 1)) (w.flow.take t f) = 0 :=
-            (total_congr_on (g := fun _ => 0) fun c _ => untaken f c present).trans (total_zero _)
-          absurd (Nat.lt_of_lt_of_le (Nat.lt_of_lt_of_le gives
-              (le_total_of_mem (q := w.flow.give t f) listed))
-              (Nat.le_trans (Nat.le_add_right _ _)
-                (dissipative _ t (census (t + 1)).1 closed f present)))
-            fun pos => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le pos (Nat.le_of_eq nothing))
+      | ⟨x, listed, comes⟩ => False.elim
+        ((dissipative _ t (census (t + 1)).1 closed).still_untaken (balanced.on _ t)
+          (fun c _ => (total_congr_on (g := fun _ => 0) fun f present =>
+            untaken f c present).trans (total_zero _))
+          ⟨x, listed, Nat.lt_of_le_of_lt (Nat.le_of_eq (eq_zero_of_not_pos fun stands =>
+            idle x ((embodied x t).mpr stands))) ((embodied x (t + 1)).mp (mark_pos.mp comes).2)⟩)
 
 /-- Enclosure lets dissipation stand in for only active relata giving, too. Where the flow
 balances and dissipates and every relatum is embodied, under a census nothing arises across
 an enclosed step at which nothing is active, whoever gives and whoever takes: nothing stands
-there, so a closed family's stock is nothing, and a member coming to stand would lower it
-(`Flow.standing_lowers`). -/
+there, so a closed family's stock is nothing, and nothing comes to stand from nothing
+(`Flow.BalancesOn.comes_from_standing`). -/
 theorem enclosed_binds_counting (w : World) [∀ t x, Decidable (w.web.active t x)]
     (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.Embodied)
     {alive : Nat → List w.Relatum} (census : w.web.Census alive) {t : Nat}
@@ -692,8 +688,8 @@ theorem enclosed_binds_counting (w : World) [∀ t x, Decidable (w.web.active t 
        (embodied x (t + 1)).mp (mark_pos.mp comes).2⟩
     match total_pos _ (Flow.Balances.rise_given balanced comes.rises) with
     | ⟨f, present, gives⟩ =>
-      absurd (fun mem => Nat.not_lt_zero _ (Nat.lt_of_lt_of_le
-          (Flow.standing_lowers balanced dissipative distinct closed mem comes)
+      absurd (fun mem => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
+          ((balanced.on cs t).comes_from_standing (dissipative cs t distinct closed) mem comes)
           (Nat.le_of_eq nothing)))
         fun out => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le gives
           (Nat.le_of_eq (closed f present x out).2))
@@ -842,7 +838,9 @@ theorem length_le_stock {alive : Nat → List w.Relatum} (census : w.web.Census 
 balanced, dissipative flow, in which every step from `T` on is enclosed, the total standing
 at `T` bounds the change of the census from `T`: the relata active at any
 later step, with the steps since `T` at which something arose or ceased, number at most
-that total. -/
+that total. The corollary of `Flow.runsDown_change_bound`: the premises make what stands run
+down across those steps, and embodiment makes each arising and ceasing a change of
+standing. -/
 theorem enclosure_bounds_change [∀ t x, Decidable (w.web.active t x)]
     {alive : Nat → List w.Relatum} (census : w.web.Census alive) (embodied : w.Embodied)
     (balanced : w.Balanced) (dissipative : w.Dissipative) {T : Nat}
@@ -851,28 +849,17 @@ theorem enclosure_bounds_change [∀ t x, Decidable (w.web.active t x)]
       (fun t => ceasings (alive t) (fun x s => w.web.active s x) t)
       (fun t => comings (alive (t + 1)) (fun x s => w.web.active s x) t) :=
   have standing := standingCensus census embodied
-  fun _ later => Nat.le_trans (Nat.add_le_add_right (length_le_stock census embodied _) _)
-    (falls_by_occurrences (fun t => w.web.stock (alive t) t) _ (fun t later =>
-      Decidable.of_not_not fun no => (enclosed t later).aroundStanding_not_not alive
-        fun around => no (match Nat.eq_zero_or_pos (ceasings (alive t)
-            (fun x s => w.web.active s x) t + comings (alive (t + 1))
-            (fun x s => w.web.active s x) t) with
-          | .inl quiet => Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) (mark_zero
-              fun positive => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le positive
-                (Nat.le_of_eq quiet)))))
-              (Flow.standing_never_rises balanced dissipative standing around)
-          | .inr changes =>
-            have lowers : ∃ x, w.web.Rises t x ∨ w.web.Falls t x :=
-              match Nat.eq_zero_or_pos (ceasings (alive t) (fun x s => w.web.active s x) t) with
-              | .inr ceasing => match total_pos _ ceasing with
-                | ⟨x, _, ceases⟩ => ⟨x, .inr (falls_of_ceases embodied (mark_pos.mp ceases))⟩
-              | .inl still => match total_pos _ (Nat.lt_of_lt_of_le changes (Nat.le_of_eq
-                  ((congrArg (· + _) still).trans (Nat.zero_add _)))) with
-                | ⟨x, _, comes⟩ => ⟨x, .inl (rises_of_arises embodied (mark_pos.mp comes))⟩
-            match lowers with
-            | ⟨_, change⟩ => Nat.le_trans (Nat.le_of_eq (congrArg (_ + ·) (mark_one changes)))
-                (Flow.change_lowers balanced dissipative standing around change)))
-      later)
+  Flow.runsDown_change_bound standing
+    (fun t later down => (enclosed t later).aroundStanding_not_not alive fun around =>
+      down (around.runsDownClosed balanced dissipative standing).runsDown)
+    (fun t _ => length_le_stock census embodied t)
+    fun t _ changes => match Nat.eq_zero_or_pos (ceasings (alive t)
+        (fun x s => w.web.active s x) t) with
+      | .inr ceasing => match total_pos _ ceasing with
+        | ⟨x, _, ceases⟩ => ⟨x, .inr (falls_of_ceases embodied (mark_pos.mp ceases))⟩
+      | .inl still => match total_pos _ (Nat.lt_of_lt_of_le changes (Nat.le_of_eq
+          ((congrArg (· + _) still).trans (Nat.zero_add _)))) with
+        | ⟨x, _, comes⟩ => ⟨x, .inl (rises_of_arises embodied (mark_pos.mp comes))⟩
 
 end World
 

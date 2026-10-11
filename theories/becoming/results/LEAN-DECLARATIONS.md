@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 175 | 4,017 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 176 | 4,073 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -361,6 +361,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [LivingOrganization.lean](lean-declarations/ethics.md#module-a48e0f306c41) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingRealization.lean](lean-declarations/ethics.md#module-90135b67b58c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LivingRecovery.lean](lean-declarations/ethics.md#module-37187272c431) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [Locality.lean](lean-declarations/core.md#module-0ddb9a8ad442) | 生成核心与关系结构 / Generative core and relational structure |
 | [MaintenanceBaseline.lean](lean-declarations/ethics.md#module-878f7de6ea2c) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [MarketDiagnosis.lean](lean-declarations/other.md#module-e2732406feff) | 其他形式研究 / Other formal studies |
 | [MarketGenerativity.lean](lean-declarations/other.md#module-e2e5c347dc5a) | 其他形式研究 / Other formal studies |

@@ -14,6 +14,7 @@ import Becoming.Population
 import Becoming.Identity
 import Becoming.Wholes
 import Becoming.Dissipation
+import Becoming.Locality
 import Becoming.Roles
 import Becoming.Reserve
 import Becoming.Evolution
@@ -141,6 +142,21 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   more for each formation taking from it: a member rising comes with another falling in
   the same exchange, and the depletion that `Becoming.Generation` supplies as a premise
   follows for an event at whose steps the family is dissipated on and taken from.
+* `Becoming.Locality` (L3): the laws of one step, with their condition inside them. Each
+  holds of every world: where a premise selected for every step was used, the law states the
+  condition the proof uses at the steps and relata where it uses it, so the selection results
+  are corollaries and no premise is derived. With balance at a condition across a step, it
+  comes to stand exactly when it stood at nothing and was given more than was taken from it,
+  and ceases to stand exactly when what was taken from it is all it had with all it was
+  given; an embodied relatum arises only as an active giver other than itself gives to it,
+  where only active formations give to it. Across a step at which a family holding whatever
+  stands is balanced and dissipated on, some standing changes exactly when its total falls;
+  where what stands is listed at each step, change recurs exactly when it recurs across steps
+  at which what stands does not run down, and over any stretch what stands at its end, with
+  the steps at which the total fell, is at most the total at its start with what it rose.
+  With a list holding exactly what holds at one step and nothing coming to be after it, what
+  holds later with what ceased number exactly those on it; ceasing recurring needs coming to
+  be recurring wherever some list covers what holds at arbitrarily late steps.
 * `Becoming.Roles` (L3): formations and conditions are roles of one relatum; the
   two-kind reading embeds as the one in which no formation is a condition, and which
   condition is which formation is supplied by the shared index. Where a relatum stands

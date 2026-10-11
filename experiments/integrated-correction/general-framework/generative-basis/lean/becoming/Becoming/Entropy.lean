@@ -29,7 +29,8 @@ whether an exchange can lose nothing, where the spine's least loss per exchange
 * **The least loss is a record held in the conserved amount.** Count the record of the
   exchanges as one more condition, given to by every formation taking part and taken from
   by none (`Flow.withRecord`, `Web.withRecord`); with it the flow balances exactly where it
-  balances (`Flow.balances_withRecord`). A flow dissipates on a family across a step
+  balances (`Flow.balances_withRecord`), and so at each step on each family
+  (`Flow.balancesOn_withRecord`). A flow dissipates on a family across a step
   exactly where, with some record counted, every exchange conserves the family with its
   record exactly and leaves the record at least one unit
   (`Flow.dissipatesOn_iff_conserved`), and exactly where, with each exchange recorded at
@@ -409,6 +410,20 @@ theorem balances_withRecord : L.Balances W ↔ (L.withRecord ρ).Balances (W.wit
         (recorded_succ L ρ t)
     | some d => balances t d,
    fun balances t d => balances t (some d)⟩
+
+/-- The same at one step and on one family: with the record counted, the flow balances on a
+family across a step exactly where it balances on the family with its record across that
+step. The record's own balance needs nothing of the family. -/
+theorem balancesOn_withRecord :
+    L.BalancesOn W cs t ↔
+      (L.withRecord ρ).BalancesOn (W.withRecord L ρ) ((none : Option C) :: cs.map some) t :=
+  ⟨fun balances x mem => match x, mem with
+    | none, _ => (congrArg (L.recorded ρ (t + 1) + ·) (total_zero (L.present t))).trans
+        (recorded_succ L ρ t)
+    | some d, mem => balances d (match mem_cons_cases mem with
+      | .inl same => nomatch same
+      | .inr mem => mem_of_map (fun _ _ same => Option.some.inj same) mem),
+   fun balances d mem => balances (some d) (.tail _ (mem_map_some mem))⟩
 
 /-- A family with the record is closed for the flow with the record counted exactly where
 the family is closed for the flow. -/
