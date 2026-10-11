@@ -345,13 +345,21 @@ theorem consumed_continues_transformed (dependent : W.Dependent) {T : Nat} {g : 
     (active : W.active t g) : ¬ (W.requires t g c ∧ W.need T g c ≤ W.need t g c) :=
   consumed_continues_transformed_at below later (dependent t g active)
 
+/-- At one step after a loss, with the dependence as it was and the condition below the
+earlier need there, a formation active there only while supported is not active. -/
+theorem consumed_ends_when_fixed_at {T t : Nat} {g : F} {c : C}
+    (dependent : W.active t g → W.Supported t g)
+    (fixed : W.requires t g c ∧ W.need T g c ≤ W.need t g c) (below : W.level t c < W.need T g c) :
+    ¬ W.active t g :=
+  fun active => Nat.not_le_of_gt below (Nat.le_trans fixed.2 (dependent active c fixed.1))
+
 /-- Under `Dependent`, with dependence that does not change, a formation is not active
 after a loss without return. -/
 theorem consumed_ends_when_fixed (dependent : W.Dependent) {T : Nat} {g : F} {c : C}
     (fixed : ∀ t, T < t → W.requires t g c ∧ W.need T g c ≤ W.need t g c)
     (below : ∀ t, T < t → W.level t c < W.need T g c) :
     ∀ t, T < t → ¬ W.active t g :=
-  fun t later active => consumed_continues_transformed dependent below later active (fixed t later)
+  fun t later => consumed_ends_when_fixed_at (dependent t g) (fixed t later) (below t later)
 
 /-! ## Stepwise readings -/
 

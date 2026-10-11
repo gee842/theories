@@ -1126,6 +1126,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## continuous-time-as-tower ← laws-at-coarser-steps
+
+`formal-reuse` — 复用读出（Web.sample、Flow.sample）与平衡、耗散的合成（Flow.sample_balances、Flow.sample_dissipative）。 / Reuses the reading (Web.sample, Flow.sample) and the composition of balance and dissipation (Flow.sample_balances, Flow.sample_dissipative).
+
+**Producer output / 上游输出:** 一个粗步上由细步合成的平衡与耗散。 / Balance and dissipation at a coarse step composed from its fine steps.
+
+**Consumer input / 下游输入:** 塔的相邻两层之间。 / Between adjacent levels of the tower.
+
+**Retained conditions / 保留条件:** 平衡要只列出一次。 / Balance asks listing once.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Sampling.lean)
+
+## continuous-time-as-tower ← laws-of-one-step
+
+`formal-reuse` — 复用下降约束变化（Flow.runsDown_bounds_change）。 / Reuses running down bounding change (Flow.runsDown_bounds_change).
+
+**Producer output / 上游输出:** 下降的各步上，有改变的步不多于首步的总水平。 / Across steps that run down, the steps of change are within the total at the first.
+
+**Consumer input / 下游输入:** 在任何一层读出最粗一层的一段。 / Applied at any level to a stretch of the coarsest level.
+
+**Retained conditions / 保留条件:** 所立者的普查。 / A census of what stands.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
 ## conveyance-crosses-the-boundary ← continuing-self-fed-from-beyond
 
 `formal-reuse` — 复用 Conveys 与 fed_from_beyond；穿越定理由它推出。 / Reuses Conveys and fed_from_beyond; the crossing theorems follow from it.
@@ -1917,6 +1941,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 回应匹配当前检验关系、实际修订与重试、继续参与、原治理门槛；未把操作正确当作自动授权。 / Response matches the current test relation; actual revision and retry, continuing participation and the original governance threshold; correct execution does not automatically confer authority.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean)
+
+## laws-at-coarser-steps ← laws-of-one-step
+
+`formal-reuse` — 复用一步的平衡、耗散与下降（Flow.BalancesOn、Flow.DissipatesOn、Flow.RunsDownOn）与它们的一步规律（Flow.RunsDownOn.changes_iff、Flow.BalancesOn.comesToStand_iff、ceasesToStand_iff）。 / Reuses balance, dissipation and running down at a step (Flow.BalancesOn, Flow.DissipatesOn, Flow.RunsDownOn) and their laws of one step (Flow.RunsDownOn.changes_iff, Flow.BalancesOn.comesToStand_iff, ceasesToStand_iff).
+
+**Producer output / 上游输出:** 一步、一个家族上的平衡、耗散与下降，以及它们的确切规律。 / Balance, dissipation and running down on a family across one step, with their exact laws.
+
+**Consumer input / 下游输入:** 在粗步上陈述这些条件，由粗步内各细步上的条件合成，于是规律在粗步上成立。 / These conditions stated at a coarse step, composed from those at the fine steps inside it, so the laws hold at the coarse step.
+
+**Retained conditions / 保留条件:** 平衡要每个关系项只列出一次。 / Balance asks each relatum to be listed once.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
+## laws-at-coarser-steps ← census-balance
+
+`formal-reuse` — 复用一段上的平衡（balance_over_stretch_on）。 / Reuses balance over a stretch (balance_over_stretch_on).
+
+**Producer output / 上游输出:** 一段之内每步平衡的计数在整段上平衡，段外不作要求。 / A count balanced across each step of a stretch is balanced over the stretch, nothing asked outside it.
+
+**Consumer input / 下游输入:** 粗步上的平衡就是粗步内各细步上平衡之和。 / Balance at a coarse step is the sum of balance at the fine steps inside it.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
+
+## laws-at-coarser-steps ← map-of-premises
+
+`formal-reuse` — 复用世界与其前提（World、World.Dependent、Embodied、Counted、Finite）。 / Reuses worlds and their premises (World, World.Dependent, Embodied, Counted, Finite).
+
+**Producer output / 上游输出:** 世界的前提。 / The premises of a world.
+
+**Consumer input / 下游输入:** 在粗步上读出的世界中，前提在被读出的细步上陈述（World.sample_survives）。 / In a world read at coarser steps the premises are stated of the sampled fine steps (World.sample_survives).
+
+**Retained conditions / 保留条件:** 平衡要只列出一次。 / Balance asks listing once.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## laws-at-finer-units ← laws-of-one-step
+
+`formal-reuse` — 复用一步的规律的形式与家族上的耗散（Flow.DissipatesOn），在较细单位下重述；r 恒为一时即原规律。 / Reuses the form of the laws of one step and dissipation on a family (Flow.DissipatesOn), restated at a finer unit; with r constantly one they are the original laws.
+
+**Producer output / 上游输出:** 一步、一个家族上的平衡与耗散下的确切规律。 / Exact laws under balance and dissipation on a family across one step.
+
+**Consumer input / 下游输入:** 在单位分成 r t 的一步上陈述同样的规律，变化按单位读出。 / The same laws stated across a step at which the unit splits into r t, with change read in the unit.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean)
+
+## laws-at-finer-units ← rest-at-every-resolution
+
+`formal-reuse` — 复用细分的单位（Flow.BalancesAt），把它局部到一个家族与一步。 / Reuses the refining unit (Flow.BalancesAt), made local to a family and a step.
+
+**Producer output / 上游输出:** 跨过每一步单位分成 r t、按较细单位计的平衡。 / Balance counted in a unit splitting into r t across each step.
+
+**Consumer input / 下游输入:** 只在所用的一步与家族上（Flow.BalancesAtOn）；复现与界在细分算作给予时成立（R4，引用）。 / Only at the step and family used (Flow.BalancesAtOn); recurrence and the bound hold with the refinement counted (R4, cited).
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean)
 
 ## laws-of-one-step ← coming-and-ceasing-keep-pace
 

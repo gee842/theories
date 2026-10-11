@@ -206,8 +206,8 @@
     "en": "No premise is derived: within the representation the premises remain contingent and independent (World.contingent, World.independent); the move is localization, not a re-founding of the representation. Running down bounding change is an inequality, its exact form being the identity of over_stretch with the one-step iffs; the recurrence laws and the bound use a census of what stands, and dropping it where infinitely many stand would change the representation of amounts, which is Ren's decision; the recurrence of law 1 and the bounds of law 3 use the least difference (option A), and whether each law survives amounts finer than whole units is not yet tested, rest being covered by the resolution line (R4); stated for discrete steps, coarser steps awaiting the localized Sampling and continuous time not studied; law 2's exact count needs a decision, its form that ceasing does not recur none; the name ‘closure bounds change’ is Ren's, and the proof shows that what bounds change is running down, closure being how the premises supply it; the section on law 2 was drafted and verified by another session (0 axiom completeness); evaluates neither arising, ceasing nor rest; the names (BalancesOn, RunsDownOn, RunsDown, RunsDownClosed, Covers, ListsAt, NoneComes, recurs_iff_unmet and others) are the AI's choice under Ren's naming criteria of 10 October, and readings remain Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T171000.054867Z）：新核心模块 Becoming.Locality 的 42 项定理（含 Flow.BalancesOn.comesToStand_iff、Flow.BalancesOn.ceasesToStand_iff、Flow.BalancesOn.rises_iff_gives、Flow.BalancesOn.arises_given、Flow.RunsDownOn.changes_iff、recurs_iff_unmet、Flow.change_recurs_iff、Flow.exchange_recurs_iff、Flow.runsDown_bounds_change、cohort_closes_iff、ceasing_needs_arising 与 coming_of_ceasing_covered）、Becoming.Openness 的 80 项定理、Becoming.Roles 的 145 项定理、Becoming.Counting 的 212 项定理与 Becoming.Standing 的 37 项定理全部空依赖；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2421 项定理／3590 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T180706.458104Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。尚无独立审查，作者反审见整合文档 §66。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T171000.054867Z): the 57 theorems of the new core module Becoming.Locality (including Flow.BalancesOn.comesToStand_iff, Flow.BalancesOn.ceasesToStand_iff, Flow.BalancesOn.rises_iff_gives, Flow.BalancesOn.arises_given, Flow.RunsDownOn.changes_iff, recurs_iff_unmet, Flow.change_recurs_iff, Flow.exchange_recurs_iff, Flow.runsDown_bounds_change, cohort_closes_iff, ceasing_needs_arising and coming_of_ceasing_covered), the 80 theorems of Becoming.Openness, the 145 theorems of Becoming.Roles, the 212 theorems of Becoming.Counting and the 37 theorems of Becoming.Standing all have empty axiom reports; the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2421 theorems/3590 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T180706.458104Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. There is no independent review yet; the author's counterreview is in §66 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T192152.790658Z）：新核心模块 Becoming.Locality 的 42 项定理（含 Flow.BalancesOn.comesToStand_iff、Flow.BalancesOn.ceasesToStand_iff、Flow.BalancesOn.rises_iff_gives、Flow.BalancesOn.arises_given、Flow.RunsDownOn.changes_iff、recurs_iff_unmet、Flow.change_recurs_iff、Flow.exchange_recurs_iff、Flow.runsDown_bounds_change、cohort_closes_iff、ceasing_needs_arising 与 coming_of_ceasing_covered）、Becoming.Openness 的 80 项定理、Becoming.Roles 的 145 项定理、Becoming.Counting 的 212 项定理与 Becoming.Standing 的 37 项定理全部空依赖；同一回执覆盖包内 47 个模块（含只作导入的根模块与桥接），共 2568 项定理／3780 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T192511.756300Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。尚无独立审查，作者反审见整合文档 §66。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 49 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T192152.790658Z): the 57 theorems of the new core module Becoming.Locality (including Flow.BalancesOn.comesToStand_iff, Flow.BalancesOn.ceasesToStand_iff, Flow.BalancesOn.rises_iff_gives, Flow.BalancesOn.arises_given, Flow.RunsDownOn.changes_iff, recurs_iff_unmet, Flow.change_recurs_iff, Flow.exchange_recurs_iff, Flow.runsDown_bounds_change, cohort_closes_iff, ceasing_needs_arising and coming_of_ceasing_covered), the 80 theorems of Becoming.Openness, the 145 theorems of Becoming.Roles, the 212 theorems of Becoming.Counting and the 37 theorems of Becoming.Standing all have empty axiom reports; the same receipt covers the package's 47 modules (including the import-only root and the bridge) with 2568 theorems/3780 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T192511.756300Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. There is no independent review yet; the author's counterreview is in §66 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 49 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -369,27 +369,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "19d3cdf547e4f42c25508575953343aabc301528f8beddf7da15577f622e2179"
+      "sha256": "586bfbeea9652918194f2ff9caff21774919752017dca8732419de0818ddd0c8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fb738105344fcb67409b5281c7563f4a4a3afe8385dfbba5cb25610f0d18b105"
+      "sha256": "e9b68bfca4c0d2553939c8c7a9d1da09ac8fcec338bd29dd8afdcd2168271148"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "f98a80c2e60bca8a78309ae04335f6c98ae6fb3e4711bb409871487de4aefad5"
+      "sha256": "72cab979e97b133d64b4939e1d926e1cf00acef03d6134e3d6de66216f132d31"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "dddd358d8aa32824a9fd317d7ff711013951ea509dc3634e0a677778a4c35c61"
+      "sha256": "fc36c618abc51f7e57b9d140d090394b7a2b55b90272a969e28aeb6e3bc7d65f"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f56ac603eb3924eefbccc2ffff208f2b6d7df1e38bd389c3e1d132fe71d0401c"
+      "sha256": "9f1305fee84a40c276650b2e90b5b4f1a73ff0b1d8612c143d957f71a77ed3b4"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -500,6 +500,10 @@
     {
       "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
     }
   ]
 }

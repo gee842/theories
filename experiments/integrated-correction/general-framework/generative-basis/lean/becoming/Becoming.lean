@@ -21,10 +21,13 @@ import Becoming.Reserve
 import Becoming.Evolution
 import Becoming.Space
 import Becoming.Premises
+import Becoming.Sampling
+import Becoming.Tower
 import Becoming.Openness
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
+import Becoming.Units
 import Becoming.Continuation
 import Becoming.Admission
 import Becoming.Regions
@@ -228,6 +231,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   finitely many ever active. A finite world whose activity is decided
   and which meets them comes to rest, by three of them. The premises are named, and a
   selection of them is a function to `Bool`.
+* `Becoming.Sampling` (L3): the laws of one step at coarser steps, the test of the
+  commitment to discrete steps. Read at strictly increasing times, balance on a family
+  composes across a coarse step where each relatum is listed once at the fine steps inside,
+  dissipation composes with no condition, closure is exact, and running down composes where
+  the family holds what stands at the two coarse ends; so the law of one exchange and the
+  exact conditions of coming to stand and ceasing to stand hold across the coarse step.
+  Balance and dissipation do not compose back to the fine steps (fine imbalances cancel; a
+  lossless fine step is outweighed), and acting, taking and transmission are step-relative.
+* `Becoming.Tower` (L3): continuous time as a tower of ever finer discrete readings (Ren, 12
+  October 2026), each level read at strictly increasing times from the next. The laws pass to
+  coarser levels, and the changes across a coarsest stretch, read at any level where what
+  stands runs down at each fine step, number at most the total standing at its start: a bound
+  independent of the level, so no Zeno-like subdivision of change.
 * `Becoming.Openness` (L3): continued change needs exchange beyond what stands. Under
   balance and dissipation, across a step enclosed around what stands, the total standing
   does not rise and any change of standing lowers it, so where what stands is listed and
@@ -327,6 +343,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   unsupported formation is active at every step, its reserve falling at each. A least loss
   at each size bounds the takings of that size, but neither growth nor the amount: a whole
   unit can pass in ever more, ever smaller transfers without end.
+* `Becoming.Units` (L3): the laws of one step at a finer unit, the test of the commitment
+  to whole units. Arising needing an active giver holds at every resolution with no condition
+  on the split; the law of one exchange holds with change read in the unit (read in raw counts
+  it fails); a need is counted in the same unit as the level (Ren, 12 October 2026), so
+  support does not depend on the grain of measurement; laws that count a loss over a stretch
+  need a fixed unit or the refinement counted as a giving, as for rest.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed

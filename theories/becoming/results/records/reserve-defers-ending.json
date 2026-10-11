@@ -230,14 +230,14 @@
     "en": "Contains no ethical predicate; Carries and the held condition are representational premises; the conclusions bind a formation unsupported from some step on, not whether support returns: a reserve that bridges to returning support can carry activity without end; under Carries dormancy uses no reserve, and the time of dormancy is bounded only under the further premise Decays; the quantitative bound needs decidable activity; lagged coextinction along chains of dependence is bounded only where the reserve decays: without decay a link's end step has no bound, excluded middle as a hypothesis giving only that each link ends (chain_ends_of_em), and without it turning ‘active only finitely often’ into an end step implies LPO in general (lpo_of_ending), so the core does not state it; the bound along each finite chain reaching a relatum is given by chain_ends, while the form taking the least bound over the chains of a graph is not stated; the general construction of the transformed reading needs decidable support; carries_of_held counts any uptake by the formations taking part, not only the holder's (the review's Larder probe); the two readings differ in living, and which is used is a correspondence premise; the witnesses are minimal."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T171000.054867Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 72 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 44 个模块（含只作导入的根模块与桥接），共 2421 项定理／3590 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 46 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261011T180706.458104Z）。P31 新增的沿依存链共灭与 Cascade 的作者反审见整合文档 §41，尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T171000.054867Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 72 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 44 modules (including the import-only root and the bridge) with 2421 theorems/3590 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 46 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261011T180706.458104Z). The chain coextinction and Cascade added in P31 have the author's counterreview in §41 of the integration note and are not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T192152.790658Z）：Becoming.Reserve 中本记录的定理全部空依赖（模块共 72 项定理，其余属于 generation-is-replenishment）；同一回执覆盖包内 47 个模块（含只作导入的根模块与桥接），共 2568 项定理／3780 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §24；第八次独立审查（BECOMING-P16C-P17-P18-REVIEW.md）接受其数学，所提更正在整合文档 §27 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 49 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围桥接重跑通过（20261011T192511.756300Z）。P31 新增的沿依存链共灭与 Cascade 的作者反审见整合文档 §41，尚未经独立审查。本记录的局部规律（P63、P61b）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T192152.790658Z): this record's theorems in Becoming.Reserve all have empty axiom reports (the module has 72 theorems; the rest belong to generation-is-replenishment); the same receipt covers the package's 47 modules (including the import-only root and the bridge) with 2568 theorems/3780 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §24 of the integration note; the eighth independent review (BECOMING-P16C-P17-P18-REVIEW.md) accepts its mathematics, and its corrections are handled in §27 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 49 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The periphery bridge reran successfully (20261011T192511.756300Z). The chain coextinction and Cascade added in P31 have the author's counterreview in §41 of the integration note and are not yet independently reviewed. This record's local laws (P63, P61b) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reserve.lean",
       "role": "proof",
-      "sha256": "3fd7562d54211dea0ae3a0e265be436761091160e4dce41cde213ac6a9d45e01",
+      "sha256": "bab4bc46ed2323ef6fd99e353b92c501bad1c1128d8431a158af25bbc52a3d79",
       "declarations": [
         "Becoming.Web.Carries",
         "Becoming.Web.carries_zero",
@@ -333,7 +333,21 @@
         "Becoming.Once.carries",
         "Becoming.Once.decided",
         "Becoming.Once.once",
-        "Becoming.Web.lpo_of_ending"
+        "Becoming.Web.lpo_of_ending",
+        "Becoming.Web.CarriesAcross",
+        "Becoming.Web.DecaysAcross",
+        "Becoming.Web.carries_zero_across",
+        "Becoming.Web.CarriesAcross.pos",
+        "Becoming.Web.active_finitely_from",
+        "Becoming.Web.CarriesAcross.step",
+        "Becoming.Web.lasts_on",
+        "Becoming.Web.arising_finitely_from",
+        "Becoming.Web.decays_by_from",
+        "Becoming.Web.ends_within_from",
+        "Becoming.Web.redirect_supported_at",
+        "Becoming.Web.chain_ends_from",
+        "Becoming.Web.chain_ends_of_em_from",
+        "Becoming.Flow.carriesAcross_of_held"
       ]
     },
     {
@@ -363,7 +377,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
       "role": "proof",
-      "sha256": "f309de3ddfe13c6ec0f722fa55ed894e3f781052fddf19edeb8c542ae1a34d26",
+      "sha256": "ce4501e4f9709f649f474e56a4bd3289183165a454832e536fe89d904f356d34",
       "declarations": [
         "Becoming.Web.Supported",
         "Becoming.Web.Dependent",
@@ -413,17 +427,17 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "19d3cdf547e4f42c25508575953343aabc301528f8beddf7da15577f622e2179"
+      "sha256": "586bfbeea9652918194f2ff9caff21774919752017dca8732419de0818ddd0c8"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "fb738105344fcb67409b5281c7563f4a4a3afe8385dfbba5cb25610f0d18b105"
+      "sha256": "e9b68bfca4c0d2553939c8c7a9d1da09ac8fcec338bd29dd8afdcd2168271148"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "f98a80c2e60bca8a78309ae04335f6c98ae6fb3e4711bb409871487de4aefad5"
+      "sha256": "72cab979e97b133d64b4939e1d926e1cf00acef03d6134e3d6de66216f132d31"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
@@ -457,8 +471,8 @@
     }
   ],
   "next_delta": {
-    "zh": "图上各链的最小界；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。",
-    "en": "The least bound over the chains of a graph; who replenishes a held condition under dissipation; where a held condition is represented, which reading the valuation uses (Ren); the empirical correspondence for fat, seed banks and savings."
+    "zh": "对每个世界的确切重述是本记录的 Web.CarriesAcross、DecaysAcross、carries_zero_across、CarriesAcross.pos、active_finitely_from、CarriesAcross.step、lasts_on、arising_finitely_from、decays_by_from、ends_within_from、chain_ends_from、chain_ends_of_em_from、redirect_supported_at、Flow.carriesAcross_of_held（P63），局部条件写在规律之内：储备只在所用的那个形成、所用的步上承载（CarriesAcross）与衰减（DecaysAcross）；零储备在一步、一个形成上恰是活跃时被支持；持有的条件只在该步、该条件上平衡；Web.carries_zero、Carries.pos、active_finitely、step、lasts、arising_finitely、decays_by、ends_within、consumed_lasts、coextinct_lasts、chain_ends、chain_ends_of_em、redirect_dependent、Flow.carries_of_held（经它 carries_of_own）是它们的推论；图上各链的最小界；耗散之下谁补充所持的条件；在所持条件被表示的地方，估值用哪种读法（Ren）；脂肪、种子库与储蓄的经验对应。",
+    "en": "The exact restatement for every world is this record's Web.CarriesAcross, DecaysAcross, carries_zero_across, CarriesAcross.pos, active_finitely_from, CarriesAcross.step, lasts_on, arising_finitely_from, decays_by_from, ends_within_from, chain_ends_from, chain_ends_of_em_from, redirect_supported_at, Flow.carriesAcross_of_held (P63), the local condition inside the law: the reserve carries (CarriesAcross) and decays (DecaysAcross) only for the formation and at the steps used; the zero reserve at one step and formation is exactly being supported while active there; the held condition balanced only at that step and condition; Web.carries_zero, Carries.pos, active_finitely, step, lasts, arising_finitely, decays_by, ends_within, consumed_lasts, coextinct_lasts, chain_ends, chain_ends_of_em, redirect_dependent, Flow.carries_of_held (and carries_of_own through it) are their corollaries; the least bound over the chains of a graph; who replenishes a held condition under dissipation; where a held condition is represented, which reading the valuation uses (Ren); the empirical correspondence for fat, seed banks and savings."
   },
   "history": [
     {
@@ -652,6 +666,10 @@
     {
       "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
       "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P63：新增对每个世界的局部规律 Web.CarriesAcross、DecaysAcross、carries_zero_across、CarriesAcross.pos、active_finitely_from、CarriesAcross.step、lasts_on、arising_finitely_from、decays_by_from、ends_within_from、chain_ends_from、chain_ends_of_em_from、redirect_supported_at、Flow.carriesAcross_of_held（零前提计划 §1.3，清点之外的第一部分模块），局部条件写在规律之内；Web.carries_zero、Carries.pos、active_finitely、step、lasts、arising_finitely、decays_by、ends_within、consumed_lasts、coextinct_lasts、chain_ends、chain_ends_of_em、redirect_dependent、Flow.carries_of_held（经它 carries_of_own）在原处改为它们的推论重证，名称与陈述不变。断言不变。作者说明见整合文档 §79。验证范围重新指向回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z。",
+      "en": "2026-10-11 P63: local laws for every world added, Web.CarriesAcross, DecaysAcross, carries_zero_across, CarriesAcross.pos, active_finitely_from, CarriesAcross.step, lasts_on, arising_finitely_from, decays_by_from, ends_within_from, chain_ends_from, chain_ends_of_em_from, redirect_supported_at, Flow.carriesAcross_of_held (the zero-premise plan, section 1.3, Part I modules beyond the inventory), the local condition inside the law; Web.carries_zero, Carries.pos, active_finitely, step, lasts, arising_finitely, decays_by, ends_within, consumed_lasts, coextinct_lasts, chain_ends, chain_ends_of_em, redirect_dependent, Flow.carries_of_held (and carries_of_own through it) re-proved in place as their corollaries, names and statements unchanged. The claim is unchanged. The author's note is in section 79 of the integration note. Validation scope re-pointed to receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z."
     }
   ]
 }

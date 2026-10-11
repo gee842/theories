@@ -5104,6 +5104,8 @@ Integration: 记录 census-balance-under-continuation；工作板
 - `World.keep_lists` 只在它列出的一步判定活跃。
 - P61 本来不用判定。用计数陈述的普查规律（`Listed.keeps_at` 等、`Web.Census.balanceFrom_at`）与家族层面的 `coming_recurs_iff`（`Web.unceasing_iff_covering`、`World.arising_iff_ceasing_covering`、`World.rests_covering` 的不再活跃一半经它）留给 P58 的关系形式。
 
+**反方向（P61b）。** §76 留下的反方向：生起于延续之下复现，需要不再存在复现。只用一个覆盖列表，不用普查、不用判定：一个列表从某步 T 起覆盖活跃者，自 T 起没有两个形成延续为一个，生起复现，则不再存在不会自某步起停止（`Web.ceasingFrom_not_stopping_covered`）。证明：设自 N 起没有不再存在；每次生起开始一个谱系，此后它不被否定地延续下去（`Lineage.onward`，经 `Lineage.active`）；不合并时，在同一步到达同一形成的两个谱系出自同一形成（`Lineage.origin`，经 `Lineage.split`），而较晚生起的形成不在较早生起的谱系上，否则它延续了一个活跃者（`lineages_apart`）；于是比列表更多的生起（`arisingFrom_found`）在某个较晚的步上给出比列表更多的、不同的活跃者，与鸽巢矛盾。这是 §76 的对偶：那里谱系自覆盖步向后数不再存在，这里自每次生起向前。两个方向的确切存在形式仍需在每步后列出活跃者。核心引理 `Nat.add_left_cancel` 依赖 propext，已改用本核心的 `add_right_cancel`，公理报告为空。
+
 ## 77. 第二部分中不用公理的内容移入第一部分（P54）
 
 2026-10-11。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-part-ii-into-part-i.md)）答 P52 之后的四项决定：
@@ -5182,6 +5184,157 @@ Integration: 章节 §6.13，以及一句话、前提卡、§2、第一部分的
 4. **还原是否去掉了公理的全部内容？** 没有。去掉的是公理在规则中的用处：每条规则都不用它推出。没有去掉的是“应当”，即公理的不变之步（§62）；它成为称生成的空间为好的内容，章节 §8 把它列为根据问题。
 
 **边界。** 不推出“应当”；不为混合的部分定序；尚未经独立审查。
+
+## 79. 储备与依存的规律，条件在规律之内（P63）
+
+2026-10-11。整合者提出：检查零前提清点之外的第一部分模块（Return、Horizon、Joint、Substitution、Wholes、Reserve 等）是否还有可局部化的全局前提。清点（无 Lean）：Horizon、Joint、Substitution、Wholes、Renewal、Frame、Inquiry 中没有全局前提；Return 与 Generation 中出现的 `Renewed`、`Unceasing` 是所论现象的条件，不是前提；剩下的是 Reserve 的储备承载（`Carries r`，对每一步、每个形成）与 Dependence 的 `consumed_ends_when_fixed`（`Dependent`）。储备一行本在 §1.3 的 C 组（reserve-defers-ending），§71 漏做，此处补上。由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领。
+
+```text
+Result(s): 修订 reserve-defers-ending、becoming-dependence-dynamics、map-of-premises
+Delta: Reserve：Web.CarriesAcross、DecaysAcross（一步、一个形成上的承载与衰减；Carries、Decays 是它们在每一步、每个形成上）；
+       carries_zero_across、CarriesAcross.pos、active_finitely_from、CarriesAcross.step、lasts_on、arising_finitely_from、
+       decays_by_from、ends_within_from、chain_ends_from、chain_ends_of_em_from、redirect_supported_at、Flow.carriesAcross_of_held；
+       Dependence：Web.consumed_ends_when_fixed_at。
+       推论改证（名称与陈述不变）：carries_zero、Carries.pos、active_finitely、step、lasts、arising_finitely、decays_by、ends_within、
+       consumed_lasts、coextinct_lasts、chain_ends、chain_ends_of_em、redirect_dependent、Flow.carries_of_held（经它 carries_of_own）、
+       consumed_ends_when_fixed
+Supplied premises / correspondence: 无；新增的两个定义是既有前提在一步、一个形成上的形式，不改既有定义
+Evidence: 合并检查器回执 20261011T192152.790658Z（2568 项定理、3780 项声明审计，全部源声明公理报告为空），外围回执 20261011T192511.756300Z；先在暂存树中从前导编译，
+          自 Becoming.Dependence 以下各模块无错误、无警告，改动模块逐条公理报告为空
+Boundary: Carries.chain_ends_of_em 以排中律为假设，这是已证的边界，不改；lasts 的计数判定活跃（留给 P58）；尚无独立审查
+Integration: 记录；零前提计划 §1.3；工作板
+```
+
+**储备只在所用的形成与步上。** 储备 r 跨过从 t 起的一步承载 f，指 f 在那里不被支持时储备不升、活跃时下降（`Web.CarriesAcross`）；衰减类似（`Web.DecaysAcross`）。`Carries r` 与 `Decays r` 是它们对每一步、每个形成成立。零储备在一步、一个形成上承载它，恰当它在那里活跃时被支持（`carries_zero_across`），所以 `Dependent` 是零储备（`carries_zero`）是它在每一处的情形。
+
+**储备推迟终结而不逃脱，只用该形成。** 只要从某步起承载 f 且 f 不被支持，f 只活跃有限多次（`active_finitely_from`），只生起有限多次（`arising_finitely_from`）；一段之内承载且不被支持，f 在这一段活跃的次数不多于段首的储备（`lasts_on`）；承载、衰减且不被支持，n 步后储备降了 n 或耗尽（`decays_by_from`），储备过后不再活跃（`ends_within_from`）。链上的共灭只用链上各环的承载与衰减（`chain_ends_from`、`chain_ends_of_em_from`）。持有的条件只在该步、该条件上平衡时承载其持有者（`Flow.carriesAcross_of_held`），重定向的读法在承载处支持活跃的形成（`redirect_supported_at`）。
+
+**依存。** 损失之后依存不变时，一个只在被支持时活跃的形成在那一步不活跃（`Web.consumed_ends_when_fixed_at`）。
+
+**作者反审。**
+
+*反驳 1：新增 CarriesAcross 是否另立平行的定义？* 不是：它就是 `Carries` 的被量化体，`Carries r` 与“∀ t f, CarriesAcross r t f”定义上相同；它让规律能只在所用的形成与步上要求储备。
+
+*反驳 2：为何 §71 漏掉了储备？* C 组按记录逐行处理时没有覆盖 Reserve 模块；本节补上，并把清点扩到清点之外的模块。
+
+*反驳 3：这是否推出了前提？* 没有。
+
+**边界。** `chain_ends_of_em` 的排中律假设是已证的边界；计数的判定留给 P58；名称（`CarriesAcross`、`DecaysAcross`、`_from`、`_on`、`_at`）是 AI 所选（`Web.CarriesAt` 已被分辨率一线占用）；尚无独立审查。
+
+## 80. 较粗的步上的一步规律（Sampling）
+
+2026-10-11。零前提计划把离散的步列为表示的一项承诺（Ren 的第 4 项：时间）。Ren 定下顺序：“coarser steps only, or also continuous time: i let's finish one first, then another”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md)）。本节完成较粗的步：把一个世界在严格递增的时刻读出，问 §66 的局部条件在粗步上是否由粗步内各细步上的条件合成。这是对表示承诺的检验，不是新的前提：规律对每个世界成立，所以对粗步读出的世界也成立；要证的只是条件是否合成。由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领。
+
+```text
+Result(s): 新增 laws-at-coarser-steps
+Delta: 新核心模块 Becoming.Sampling（导入 Becoming.Locality、Becoming.Premises）：Strict、span、Web.sample、Flow.sample；
+       Flow.sample_taken_on、sample_given_on、BalancesOn.sample、DissipatesOn.sample、sample_closedAt_iff、RunsDownOn.sample、
+       RunsDownOn.sample_of_fine、sample_changes_iff、sample_comesToStand_iff、sample_ceasesToStand_iff、sample_acting_on、
+       sample_taking_on；Web.sample_dependent、sample_embodied、sample_census、sample_standingCensus、sample_arises、sample_ceases、
+       Held、held_of_unit、held_of_constant；World.sample_survives、sample_rests；见证 Cancelling、Averaging、Strobe、Delay
+Supplied premises / correspondence: 无；读法是严格递增的时刻，粗步之间的细步视为给定；平衡的合成要每个关系项只列出一次
+Evidence: 合并检查器回执 20261011T192152.790658Z（Sampling 90 项定理；2568 项定理、3780 项声明审计，全部源声明公理报告为空；核心闭包 49 个模块，包 47 个），
+          外围回执 20261011T192511.756300Z；先在暂存树中（main 加 P50、P57、P60）从前导编译，无警告，202 个常量逐条公理报告为空
+Boundary: 连续时间未做；平衡的合成要只列出一次；反方向不合成；只有活跃者给予与取用依步而定；尚无独立审查
+Integration: 记录 laws-at-coarser-steps；零前提计划 §1.4 与 §5；根模块与检查器的核心模块列表；工作板
+```
+
+**合成的，在一个粗步上。** 家族上的平衡合成，只要粗步内各细步每个关系项只列出一次（`Flow.BalancesOn.sample`）：粗步上一个条件的改变就是各细步取用与给予之和（`balance_over_stretch_on`、`Flow.sample_taken_on`、`Flow.sample_given_on`）。粗步的计数把一个关系项算一次，细步的计数按列出的次数，所以要只列出一次。家族上的耗散无条件合成：粗步的不等式是细步不等式之和（`Flow.DissipatesOn.sample`）。封闭恰好合成：家族跨过粗步封闭，恰当它跨过其内每个细步封闭（`Flow.sample_closedAt_iff`），因为量是自然数，和为零当且仅当各项为零。下降在家族只在粗步两端包含所立者时合成，不要中间各步（`Flow.RunsDownOn.sample`）；每个细步都下降时粗步下降（`Flow.RunsDownOn.sample_of_fine`）。
+
+**粗步上的规律。** 于是一次交换的规律在粗步上成立：有水平改变恰当家族末端的总水平低于始端（`Flow.sample_changes_iff`）；细步上平衡时，开始立着与不再立着的确切条件在粗步上成立（`Flow.sample_comesToStand_iff`、`Flow.sample_ceasesToStand_iff`）。
+
+**不合成回去的。** 粗步上的平衡与耗散不给出细步上的：细步上的不平衡可以相互抵消（`Cancelling.coarse_not_fine`），一个无损给予的细步可以被后来的细步抵过（`Averaging.coarse_not_fine`）。
+
+**依步而定的。** 只有活跃者给予、只有活跃者取用不合成：Strobe 中一个关系项在每个粗步的第二个细步上活跃、给予并取用，而在两个读出时刻都不活跃（`Strobe.acting_taking_step_relative`）。它们在活动于区间内保持时合成（`Flow.sample_acting_on`、`sample_taking_on`），如每个粗步只一个细步（`Web.held_of_unit`）或活动在区间内不变（`Web.held_of_constant`）。有界的依存传递也依步而定（`Delay.transmitting_step_relative`）。
+
+**网。** 在时刻读出的网显示那些时刻的细网（`Web.sample`），所以一步上陈述的（活动需要支持、体现、普查）在被读出的细步上陈述（`Web.sample_dependent`、`sample_embodied`、`sample_census`、`sample_standingCensus`）。活动判定时，粗步上的生起或不再活跃是其内某细步上的（`Web.sample_arises`、`Web.sample_ceases`）：粗步上的复现是细步上的复现，反之不然（`Strobe.converse_fails`）。全局读法是推论（`Flow.sample_balances`、`Flow.sample_dissipative`、`World.sample_survives`、`World.sample_rests`）。
+
+**作者反审。**
+
+*反驳 1：这是否把“离散的步”换成了“任意粗的步”而已，没有触及连续时间？* 是，按 Ren 的顺序先做较粗的步。连续时间另做；§5 的提议（细分的塔与外围的实数时间）待 Ren。
+
+*反驳 2：“只列出一次”是否偷渡了一个前提？* 它是关于读法的条件：粗步的计数把一个关系项算一次。去掉它时平衡能否合成，未证，列为下一步。
+
+*反驳 3：反方向不合成，是否说明粗步的规律弱于细步？* 规律本身对每个世界成立；不合成回去说明粗步上的条件不足以推出细步上的条件，所以细步的平衡与耗散是更细的事实，粗步读不出。这与分辨率一线互补：那里细分量的单位，这里改变步的粗细。
+
+*反驳 4：这是否推出了前提？* 没有。
+
+**边界。** 严格递增的时刻；粗步之间的细步视为给定；连续时间未做；名称（Strict、span、sample、Held、Strobe、Cancelling、Averaging、Delay）是 AI 所选；尚无独立审查。
+
+## 81. 较细的单位上的一步规律（Units）
+
+2026-10-11。零前提计划把整单位列为表示的一项承诺（Ren 的第 4 项），问各条规律在超出整单位的量下是否成立。本节对 §66 的一步的规律作这一检验：把单位读为跨过每一步分成 r t 个较细的单位（`Becoming.Resolution` 的 `Flow.BalancesAt`），平衡局部到一个家族与一步，变化按单位读出。这是对表示承诺的检验，不是新的前提，也不改 `Becoming.Resolution` 的任何定义。由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领（原先留给分辨率一线，该会话已不在）。
+
+```text
+Result(s): 新增 laws-at-finer-units
+Delta: 新核心模块 Becoming.Units（导入 Becoming.Resolution）：Flow.BalancesAtOn、BalancesAt.on、balancesAtOn_one、BalancesAtOn.over、
+       BalancesAtOn.lowers；Web.RisesAt、FallsAt、risesAt_one、fallsAt_one；Flow.BalancesAtOn.comesToStand_iff、ceasesToStand_iff、
+       rise_given、fall_taken、rises_iff_gives、taking_lowers、fall_lowers、rise_lowers、comes_from_standing、arises_given；
+       Flow.DissipatesOn.still_untaken_at；Flow.risesAt_of_comesToStand；Flow.RunsDownOnAt、runsDownOnAt_one、RunsDownOnAt.changes_iff；
+       见证 Doubling（raw_reading_fails）；所需按单位读：unitFactor、unitFactor_one、Web.supported_unchanged_by_split、continuing_restores_in_unit、consumed_continues_transformed_in_unit、inactive_below_in_unit、Flow.BalancesAtOn.rise_given_by_supported；见证 Feeding（endless）
+Supplied premises / correspondence: 无；不对细分 r 加任何条件；变化按单位读出是表示的承诺
+Evidence: 合并检查器回执 20261011T192152.790658Z（Units 31 项定理；2568 项定理、3780 项声明审计，全部源声明公理报告为空；核心闭包 49 个模块，包 47 个），
+          外围回执 20261011T192511.756300Z；先在暂存树中从前导编译，无警告，71 个常量逐条公理报告为空
+Boundary: 规律 1 的复现与规律 3 的界引用 R4，不重证；一段上数损失的依存规律要把细分算作给予（Feeding）；尚无独立审查
+Integration: 记录 laws-at-finer-units；零前提计划 §2 的第 4 步；根模块与检查器的核心模块列表；工作板
+```
+
+**变化按单位读出。** 跨过一步单位分成 r t 时，条件上升指步后的水平超过 r t 乘以步前的水平（`Web.RisesAt`），下降反之（`Web.FallsAt`）；r 恒为一时即原来的上升与下降（`Web.risesAt_one`、`Web.fallsAt_one`），平衡与下降也一样（`Flow.balancesAtOn_one`、`Flow.runsDownOnAt_one`）。
+
+**在每一分辨率下成立的。** 不对 r 加任何条件。开始立着与不再立着与单位无关：零在每个单位里都是零。一个条件在该分辨率下平衡时，开始立着恰当此前立在零且被给的多于被取的（`Flow.BalancesAtOn.comesToStand_iff`），不再立着恰当此前立着且被取的等于它按较细单位所有的连同被给的（`ceasesToStand_iff`）。按单位的上升被给予、下降被取用（`rise_given`、`fall_taken`）；没有从家族取用时，成员按单位上升恰当有参与者给予它（`rises_iff_gives`），家族上的耗散排除这一点（`Flow.DissipatesOn.still_untaken_at`）。体现的关系项只由一个不是它自己的活跃给予者生起（`arises_given`）；没有什么从无中开始立着（`comes_from_standing`，经 `risesAt_of_comesToStand`：开始立着在每个单位里都是上升）。这就是规律 4 在每一分辨率下的形式。
+
+**一次交换，按单位。** 家族不重复地包含所立者、在该分辨率下平衡并被耗散时（`Flow.RunsDownOnAt`），有条件按单位上升或下降，恰当家族步后的总水平低于 r t 乘以步前的总水平（`Flow.RunsDownOnAt.changes_iff`）。
+
+**按原始计数读出不成立，这是表示的承诺。** 单位一分为二、什么都不交换时，每个水平加倍：原始计数下处处上升，而按单位没有变化、总水平不降（`Doubling.raw_reading_fails`）。所以一次交换的规律是按单位量度的变化的规律：变化须按单位量度，这是表示的一项承诺（如何量度变化），不是规律的失效。
+
+**引用，不重证。** 规律 2 关于成立与否，不关于量，按原样成立。规律 1 的复现与规律 3 的界用固定单位中的最小差异：细分供给所立者处它们不成立（`Becoming.Resolution` 的见证，`refinement_feeds_witnesses`）；把细分算作给予时成立（`World.rests_refinement_counted`、`World.arising_opens_refinement_counted`，R4），单位自某步起固定时也成立（`Flow.taking_stops`）。
+
+**所需按单位读（Ren 2026-10-12 的决定，[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)）。** 在较细的单位下，所需按与水平相同的单位计：细分时不变的所需随之放大，条件是 r t > 0。于是支持不随量度的粗细而变：要求不变、所需与所需的水平都按较细单位读出的形成，步后被支持恰当步前被支持（`Web.supported_unchanged_by_split`）。跨步比较所需时按单位因子读出（`unitFactor`；`continuing_restores_in_unit`、`consumed_continues_transformed_in_unit`、`inactive_below_in_unit`），r 恒为一时因子为一（`unitFactor_one`）。按单位的上升由被支持者给予（`Flow.BalancesAtOn.rise_given_by_supported`）。
+
+**一段上数损失要固定单位。** 单位每步加倍、没有给予者时，一个形成每步取一个较细单位，永远活跃且被支持，流在该分辨率下平衡并被耗散（`Feeding.endless`）：固定单位下无供给的消耗至多持续水平那么多步（`Flow.Balances.unfed_consumption_ends`），这里细分供给了它，把细分算作给予（`Flow.withRefinement`）时细分就是供给者。储备同样：在细分下由细分供给时可永远下降（`Becoming.Resolution` 的 `Web.CarriesIn`）。这与 R4 对静止的结论一致。
+
+**作者反审。**
+
+*反驳 1：变化按单位读出，是否把结论放进了定义？* 定义只说“上升”比较的是同一单位中的量；r 恒为一时就是原来的定义。Doubling 说明不这样读时规律不成立，所以这是承诺，要明说，而不是隐藏的选择。
+
+*反驳 2：为何不重证复现与界？* R4 已证，且证明依赖细分是否算作给予；重证只会重复。本节只补一步的规律。
+
+*反驳 3：r t = 0 怎样？* 不加条件；r t = 0 时步前的水平按较细单位计为零，各当且仅当仍成立（零情形下开始立着就是从零上升）。
+
+*反驳 4：这是否推出了前提？* 没有。
+
+**边界。** 离散步；所需按单位读（条件 r t > 0）；与较粗的步合并的检验未做；名称（BalancesAtOn、RisesAt、FallsAt、RunsDownOnAt、Doubling）是 AI 所选；尚无独立审查。
+
+## 82. 时间之塔：连续时间作为越来越细的离散读法（Tower）
+
+2026-10-12。Ren 决定（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)）：连续时间在核心中构造为由 `Becoming.Sampling` 相连的、越来越细的离散读法之塔，连续时间的规律即塔的每一层上的规律，实数时间以后作为外围的对应。本节给出塔与它的第一条规律。由“0 axiom completeness”会话起草并验证，按[工作板](../../../BECOMING-WORKBOARD.md)认领。
+
+```text
+Result(s): 新增 continuous-time-as-tower
+Delta: 新核心模块 Becoming.Tower（导入 Becoming.Sampling）：Tower、Tower.reads、web_zero、level_zero、reads_strict、balances_coarser、
+       dissipative_coarser、changes_within
+Supplied premises / correspondence: 无；时间为由读出相连的一族离散读法（Ren 的决定）；核心不取实数
+Evidence: 合并检查器回执 20261011T192152.790658Z（Tower 6 项定理；2568 项定理、3780 项声明审计，全部源声明公理报告为空），外围回执 20261011T192511.756300Z；
+          先在暂存树中从前导编译，无警告，33 个常量逐条公理报告为空
+Boundary: 界要所立者在各细步下降（Strobe）；实数时间、没有最粗一层的塔未做；尚无独立审查
+Integration: 记录 continuous-time-as-tower；零前提计划 §5；根模块与检查器的核心模块列表；工作板
+```
+
+**塔。** 每一层有一个网与一个流；第 n 层是第 n+1 层在严格递增的时刻读出（`Tower`）。最粗一层的步 s 是第 n 层的 `reads n s`，最粗一层就是第 n 层在这些时刻读出（`Tower.web_zero`、`Tower.level_zero`），这些时刻严格递增（`Tower.reads_strict`）。
+
+**每一层上的规律。** 每个关系项只列出一次的平衡、耗散由更细一层传到更粗一层（`Tower.balances_coarser`、`Tower.dissipative_coarser`），这就是 Sampling 在一个粗步上的合成。
+
+**分得再细，变化也有界。** 最粗一层从 S 起 N 步的一段在任何一层 n 读出：第 n 层有所立者的普查，所立者在其中各细步不被否定地下降时，总水平下降的细步（即有水平改变的步）不多于最粗一层在 S 的总水平（`Tower.changes_within`）。界与 n 无关：把时间分得更细不增加变化。依据是一步的规律（`Flow.runsDown_bounds_change`）与每次交换的最小损失，不加前提。
+
+**作者反审。**
+
+*反驳 1：这是否只是把 §66 的界搬到另一层？* 内容是界与层无关：同一个最粗的数界住每一层的变化。这是连续时间所需的“有限的一段只有有限多变化”在塔中的形式。
+
+*反驳 2：界要下降，是否把结论放进了条件？* 下降是该层上关于所立者的局部条件，与 §66 相同；不下降时更细的一层可显示无界的变化（`Strobe.converse_fails`），所以条件是必要的边界。
+
+*反驳 3：为何不取实数？* 实数依赖经典公理，核心须从前导编译且公理报告为空；按 Ren 的决定，实数时间以后作为外围对应。
+
+**边界。** 离散的层；界要下降与普查；没有最粗一层的塔、界随层细化的确切形式、实数时间未做；名称（Tower、reads、refine）是 AI 所选；尚无独立审查。
 
 ## English summary
 
@@ -5862,4 +6015,76 @@ Revised record: census-balance-under-continuation. Receipt 20261011T122250.99349
 
 **P56: the generative space, with no axiom (§78).** Ren asked on 11 October 2026 whether the axiom reduces to “for anything, its continuation into the future leads to more futures(flourishes/plurality) from generatively”, read as “these are space where generatively happens”, and decided: “yes, let's get all of no axiom work enclosed, then we will get into 1 axiom case, as long as the derivation of the rules doesn't rely on axiom, don't use one” ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-generative-space-no-axiom.md)). The four cases of a part are named: one level path widens another when it includes and exceeds it (`Web.Widens`), two keep the same when each includes the other (`Web.Keeps`), and two are mixed when each exceeds the other (`Web.Mixed`); widening goes one way and is transitive, and the cases exclude one another. The exact boundary of widening is the margin of the part's net draw, with balance only at the conditions each formation requires, across the steps before it (`Flow.widens_iff_within_margin_at`, on P50's local form, as the integrator asked); the margin laws of retaining, losing and adding gain local forms, the originals re-proved in place. On level paths an extension in which every claim counts as living is exactly a widening, so C holds for every reading of `living` with “better” read as widening, with no axiom (`Web.paths_comparison_widens`). The comparison over the whole is the comparison within every region at once (`Web.includes_iff_within_every`). With the axiom as a condition, widening is retaining and adding, keeping the same is retaining both ways, and being mixed is adding both ways. Mixed parts still need a measure, that the four cases are exhaustive uses classical logic, and the warrant for calling the generative space good is open. Receipt 20261011T171000.054867Z, every axiom report empty. Not yet independently reviewed.
 
-The package now has 2421 theorems and 3590 declaration audits, over a core closure of 46 modules and a package of 44, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 76 (72 and 73 without review at Ren's word), and the text of section 70 after its handling, and sections 77 and 78. The periphery bridge passed against this core (receipt 20261011T143738.711009Z).
+**The converse (P61b).** This answers the converse left in section 76: arising under a continuation recurring needs ceasing recurring. It uses one covering list, no census and no decision. Where one list covers the active formations from some step `T` on, no two formations continue as one from `T` on, and arising recurs, ceasing does not stop from any step on (`Web.ceasingFrom_not_stopping_covered`). The proof:
+1. With nothing ceasing from `N` on, each arising starts a lineage that goes on, not refuted (`Lineage.onward`, through `Lineage.active`).
+2. Without merges, two lineages reaching one formation at one step start from one formation (`Lineage.origin`, through `Lineage.split`).
+3. A later arising cannot lie on an earlier one's lineage, or it would continue an active formation (`lineages_apart`).
+4. So more arisings than the list holds (`arisingFrom_found`) would leave more distinct active formations at one late step than the list holds.
+
+This is the dual of section 76, whose lineages run from a covering step rather than from each arising. The exact existential forms of both directions still need listings after each step. The core lemma `Nat.add_left_cancel` depends on propext, so the core's own `add_right_cancel` is used instead, and the axiom reports are empty.
+
+**The laws of reserve and dependence, with their condition inside them (P63).** The integrator asked for a check of the Part I modules outside the zero-premise inventory for global premises that could be local. The inventory, with no Lean:
+- Horizon, Joint, Substitution, Wholes, Renewal, Frame and Inquiry have none.
+- Return's and Generation's `Renewed` and `Unceasing` are conditions of the phenomenon studied, not premises.
+- What remains is Reserve's carrying reserve (`Carries r`, at every step and formation) and Dependence's `consumed_ends_when_fixed` (`Dependent`).
+
+The reserve row was in group C of §1.3 (reserve-defers-ending) and was missed in section 71; it is done here.
+- **A reserve at one step and formation.** `Web.CarriesAcross` and `Web.DecaysAcross` state carrying and decaying at one step and formation; `Carries r` and `Decays r` are these everywhere. The zero reserve carries `f` across a step exactly when `f` is supported there while active (`carries_zero_across`), so `carries_zero` is its case everywhere.
+- **The reserve defers the end, using only that formation.** Carried and unsupported from some step on:
+  - `f` is active and arises only finitely often (`active_finitely_from`, `arising_finitely_from`);
+  - on a stretch, it is active at most as often as its reserve at the start (`lasts_on`);
+  - with decay, the reserve falls by `n` or is spent (`decays_by_from`), and then `f` is no longer active (`ends_within_from`).
+- **Chains, held conditions and redirection.** Chains use only the links' carrying and decay (`chain_ends_from`, `chain_ends_of_em_from`). A held condition balanced at one step carries its holder there (`Flow.carriesAcross_of_held`). The redirected reading supports a formation where it is carried (`redirect_supported_at`).
+- **Dependence.** `Web.consumed_ends_when_fixed_at` holds at one step.
+- **Originals.** All are re-proved in place, with names and statements unchanged.
+- **Counterreview.**
+  - `CarriesAcross` is `Carries`'s body, not a parallel definition. `Web.CarriesAt` is taken in Resolution, hence the name.
+  - `chain_ends_of_em`'s excluded middle is a proved boundary and is unchanged. The count in `lasts` decides activity, left to P58.
+
+Revised records:
+- reserve-defers-ending;
+- becoming-dependence-dynamics;
+- map-of-premises.
+
+Receipt 20261011T192152.790658Z. Not yet independently reviewed; the author's counterreview is in section 79.
+
+**The laws of one step at coarser steps (Sampling).** The zero-premise plan lists discrete steps as a commitment of the representation (Ren's item 4: time). Ren set the order: coarser steps first, then continuous time. This finishes coarser steps: it reads a world at strictly increasing times and asks whether the local conditions of section 66 at a coarse step compose from those at the fine steps inside it. It is a test of a commitment of the representation, not a new premise: the laws hold of every world, so of a world read at coarser steps; what has to be shown is whether their conditions compose.
+- **What composes.**
+  - Balance on a family composes where each relatum is listed once inside the coarse step (`Flow.BalancesOn.sample`, through `balance_over_stretch_on`, `Flow.sample_taken_on`, `Flow.sample_given_on`).
+  - Dissipation composes unconditionally (`Flow.DissipatesOn.sample`).
+  - Closure composes exactly (`Flow.sample_closedAt_iff`).
+  - Running down composes with what stands held only at the two coarse ends (`Flow.RunsDownOn.sample`, `sample_of_fine`).
+- **The laws at the coarse step.** So the law of one exchange holds at the coarse step (`Flow.sample_changes_iff`), and so do the exact conditions of coming and ceasing to stand (`Flow.sample_comesToStand_iff`, `sample_ceasesToStand_iff`).
+- **What does not compose back.** Coarse balance and dissipation do not give fine ones. Fine imbalances can cancel (`Cancelling.coarse_not_fine`), and a fine step giving without loss can be outweighed by a later one (`Averaging.coarse_not_fine`).
+- **What is step-relative.**
+  - Only active relata giving and taking (`Strobe.acting_taking_step_relative`). These compose where activity holds over the interval (`sample_acting_on`, `sample_taking_on`, `Web.held_of_unit`, `Web.held_of_constant`).
+  - Bounded transmission (`Delay.transmitting_step_relative`).
+- **The web.** The web read at the times states the sampled fine steps (`Web.sample_dependent`, `sample_embodied`, `sample_census`, `sample_standingCensus`). Coarse recurrence is fine recurrence, not conversely (`Web.sample_arises`, `sample_ceases`, `Strobe.converse_fails`).
+- **Corollaries.** `Flow.sample_balances`, `sample_dissipative`, `World.sample_survives`, `World.sample_rests`.
+- **Counterreview.**
+  - Continuous time comes next; section 5's proposal awaits Ren.
+  - Listing once is a condition of the reading. Whether it can be dropped is open.
+  - Fine balance and dissipation are finer facts the coarse step cannot read back. This complements the resolution line, which refines the unit of amounts.
+
+New record laws-at-coarser-steps. Receipt 20261011T192152.790658Z (Sampling 90). Not yet independently reviewed; the author's counterreview is in section 80.
+
+**The laws of one step at a finer unit (Units).** The zero-premise plan lists whole units as a commitment of the representation (Ren's item 4) and asks which laws survive amounts finer than them. This tests the laws of one step of section 66 at a unit splitting into `r t` across each step (`Flow.BalancesAt` of `Becoming.Resolution`), with balance made local to a family and a step and change read in the unit. It is a test of a commitment of the representation, not a new premise, and it changes no definition of `Becoming.Resolution`.
+- **Change read in the unit.** A condition rises where its level after the step exceeds `r t` times its level before (`Web.RisesAt`), and falls where it is below (`Web.FallsAt`). With `r` constantly one these are the original notions (`risesAt_one`, `fallsAt_one`, `balancesAtOn_one`, `runsDownOnAt_one`).
+- **At every resolution, with no condition on `r`.** The exact conditions of coming and ceasing to stand hold (`Flow.BalancesAtOn.comesToStand_iff`, `ceasesToStand_iff`). A rise in the unit is given to and a fall taken from (`rise_given`, `fall_taken`), and `rises_iff_gives` with `still_untaken_at` hold. Arising needs an active giver (`arises_given`), and nothing comes to stand from nothing (`comes_from_standing`). This is law 4 at every resolution.
+- **One exchange, in the unit.** Take a step at which a family holding what stands is balanced at resolution `r` and dissipated on. Some condition rises or falls in the unit exactly when the total after is below `r t` times the total before (`Flow.RunsDownOnAt.changes_iff`).
+- **In raw counts it fails, which is a commitment of the representation.** A unit splitting in two with nothing exchanged doubles every level. Every condition rises in raw counts while nothing changes in the unit (`Doubling.raw_reading_fails`). So change must be measured in the unit: this is a commitment about how change is measured, not a failure of the law.
+- **Cited, not reproved.** Law 2 concerns what holds and survives as stated. The recurrence of law 1 and the bound of law 3 fail where the refinement feeds what stands (Resolution's witnesses). They hold with the refinement counted (R4: `World.rests_refinement_counted`, `World.arising_opens_refinement_counted`) or with the unit fixed from some step on (`Flow.taking_stops`).
+- **Need read in the unit (Ren's decision of 12 October).** At a finer unit a need is counted in the unit of the level, with `r t > 0`. So support does not depend on the grain of measurement: with requirements staying and needs and required levels read in the finer unit, a formation is supported after a split exactly when before (`Web.supported_unchanged_by_split`). Needs compared across steps are read through the unit factor (`unitFactor`, `continuing_restores_in_unit`, `consumed_continues_transformed_in_unit`, `inactive_below_in_unit`). A rise in the unit is given by a supported formation (`Flow.BalancesAtOn.rise_given_by_supported`).
+- **Counting a loss over a stretch needs a fixed unit.** With the unit doubling and nothing giving, a formation taking one finer unit at every step is active and supported forever (`Feeding.endless`). With a fixed unit unfed consumption ends (`Flow.Balances.unfed_consumption_ends`); here the refinement feeds it, and counted as a giving it is the feeder. A reserve fed by the refinement may likewise fall forever (`Web.CarriesIn`). This is the same finding as R4's for rest.
+
+New record laws-at-finer-units. Receipt 20261011T192152.790658Z (Units 31). Not yet independently reviewed; the author's counterreview is in section 81.
+
+**The tower of time: continuous time as ever-finer discrete readings (Tower).** Ren decided on 12 October that continuous time is built in the core as a tower of ever-finer discrete readings linked by `Becoming.Sampling`, a law of continuous time being a law at every level, with real-valued time a later periphery correspondence. This gives the tower and its first law.
+- **The tower.** Level `n` is level `n + 1` read at strictly increasing times (`Tower`). The coarsest level is any level read at the times `reads n` (`Tower.web_zero`, `Tower.level_zero`, `Tower.reads_strict`).
+- **Laws at every level.** Balance with each relatum listed once, and dissipation, pass to the coarser level (`Tower.balances_coarser`, `Tower.dissipative_coarser`).
+- **Change bounded however finely divided.** Read a stretch of the coarsest level at any level `n`, under a census of what stands there, with what stands not refuted to run down at each fine step. Then the fine steps at which some standing changes number at most the coarsest level's total standing at the stretch's start (`Tower.changes_within`). The bound does not depend on `n`, so dividing time more finely adds no change. This rests on the laws of one step and the least loss per exchange, with no premise added.
+- **Boundary.** Without running down, a finer level can show unbounded change a coarser one does not (`Strobe.converse_fails`). Real numbers, which rest on classical axioms, stay out of the core.
+
+New record continuous-time-as-tower. Receipt 20261011T192152.790658Z (Tower 6). Not yet independently reviewed; the author's counterreview is in section 82.
+
+The package now has 2568 theorems and 3780 declaration audits, over a core closure of 49 modules and a package of 47, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 82 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T192511.756300Z).

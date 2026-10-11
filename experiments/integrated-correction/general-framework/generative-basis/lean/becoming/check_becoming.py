@@ -45,8 +45,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality", "Becoming.Roles",
-        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises",
-        "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution",
+        "Becoming.Reserve", "Becoming.Evolution", "Becoming.Space", "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
+        "Becoming.Openness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Units",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
@@ -544,6 +544,18 @@ SCOPE = (
     "anything the representation allows; no finite world binds every premise, and without its "
     "idle ground hatch is a finite world meeting the eight in which every condition but the "
     "census has an instance. "
+    "Sampling: read at strictly increasing times, balance on a family composes across a coarse "
+    "step where each relatum is listed once at the fine steps inside, dissipation composes with "
+    "no condition, closure across a coarse step is exactly closure across each fine step inside, "
+    "and running down composes where the family holds what stands at the two coarse ends, so the "
+    "law of one exchange and the exact conditions of coming to stand and ceasing to stand hold "
+    "across the coarse step; balance and dissipation do not compose back to the fine steps, and "
+    "only active relata giving, only active relata taking and bounded transmission are "
+    "step-relative. "
+    "Tower: continuous time as a tower of ever finer discrete readings, each level read at strictly "
+    "increasing times from the next; the laws pass to coarser levels, and the changes across a "
+    "coarsest stretch read at any level, what stands running down at each fine step, number at most "
+    "the total standing at its start, independently of the level. "
     "Openness: under balance and dissipation, across a step enclosed around what stands, the "
     "total standing does not rise and any condition's standing rising or falling lowers it, so "
     "where what stands is listed and every step from some step on is enclosed around it, "
@@ -747,6 +759,11 @@ SCOPE = (
     " at most m times the stock, while a whole unit passing in ever more, ever smaller "
     "transfers, each size with a least loss, arises without end and is taken without bound in"
     " amount. "
+    "Units: at a unit splitting into r t finer units across each step, arising needing an active "
+    "giver holds with no condition on r, the law of one exchange holds with change read in the "
+    "unit and fails read in raw counts, a need counted in the same unit as the level leaves support "
+    "unchanged by the split, and laws counting a loss over a stretch need a fixed unit or the "
+    "refinement counted as a giving. "
     "Continuation: across a step a formation taking part conveys from one condition to another "
     "when it takes from the first and gives to the second, and a family is fed from beyond when "
     "something outside it is conveyed into a member; a step at which a family is fed from beyond "

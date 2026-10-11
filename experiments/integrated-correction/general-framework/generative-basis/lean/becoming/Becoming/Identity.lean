@@ -1088,6 +1088,150 @@ theorem arisingFrom_not_stopping_covered {T : Nat}
       ceasing fun ⟨s, f, from_, arises⟩ =>
         quiet s f (Nat.le_trans (Nat.le_trans (Nat.le_add_right N T) later) from_) arises
 
+/-! ### The converse: arising recurring needs ceasing -/
+
+/-- A lineage is active at each step it reaches, where it starts active. -/
+theorem Lineage.active {M : Nat} {g : F} (start : W.active M g) :
+    ∀ {k h}, W.Lineage R M g k h → W.active (M + k) h
+  | 0, _, same => Eq.subst (motive := fun x => W.active M x) same.symm start
+  | _ + 1, _, ⟨_, _, _, _, active⟩ => active
+
+/-- A lineage reaching a later step passes through each earlier one, and from there is a
+lineage itself. -/
+theorem Lineage.split {M : Nat} {g : F} {j : Nat} :
+    ∀ i {h}, W.Lineage R M g (j + i) h → ∃ x, W.Lineage R M g j x ∧ W.Lineage R (M + j) x i h
+  | 0, h, lineage => ⟨h, lineage, rfl⟩
+  | i + 1, h, ⟨h₀, lineage, active₀, cont, active⟩ => match Lineage.split i lineage with
+    | ⟨x, before, after⟩ =>
+      have same : M + (j + i) = M + j + i := (Nat.add_assoc M j i).symm
+      ⟨x, before, h₀, after, Eq.subst (motive := fun s => W.active s h₀) same active₀,
+        Eq.subst (motive := fun s => R s h₀ h) same cont,
+        Eq.subst (motive := fun s => W.active (s + 1) h) same active⟩
+
+/-- Without merges from `M` on, two lineages from `M` reaching one formation at one step start
+from one formation. -/
+theorem Lineage.origin {M : Nat}
+    (noMerge : ∀ s, M ≤ s → ∀ g g' f, W.active s g → W.active s g' → R s g f → R s g' f →
+      W.active (s + 1) f → g = g') :
+    ∀ {k g g' h}, W.Lineage R M g k h → W.Lineage R M g' k h → g = g'
+  | 0, _, _, _, same, same' => same.symm.trans same'
+  | k + 1, _, _, _, ⟨h₀, lineage, active₀, cont, active⟩, ⟨h₀', lineage', active₀', cont', _⟩ =>
+    have prior : h₀ = h₀' :=
+      noMerge (M + k) (Nat.le_add_right M k) h₀ h₀' _ active₀ active₀' cont cont' active
+    Lineage.origin noMerge lineage (Eq.subst (motive := fun x => W.Lineage R M _ k x) prior.symm
+      lineage')
+
+/-- Where nothing ceases under the continuation from `N` on, a lineage from a formation active
+at a step `M` from `N` on is not refuted to reach some formation at every later step. -/
+theorem Lineage.onward {N M : Nat} (later : N ≤ M) {g : F}
+    (quiet : ∀ t g, N ≤ t → ¬ W.CeasesFrom R t g) (start : W.active M g) :
+    ∀ k, ¬¬ ∃ h, W.Lineage R M g k h
+  | 0 => fun none => none ⟨g, rfl⟩
+  | k + 1 => fun none => Lineage.onward later quiet start k fun ⟨h, lineage⟩ =>
+    have active := lineage.active start
+    quiet (M + k) h (Nat.le_trans later (Nat.le_add_right M k)) ⟨active, fun ⟨f, after, cont⟩ =>
+      none ⟨f, h, lineage, active, cont, after⟩⟩
+
+/-- Arising under the continuation at arbitrarily late steps gives, from any step, any number
+of arisings at distinct steps. -/
+theorem arisingFrom_found (arising : W.UnceasingFrom R) :
+    ∀ n N, ∃ ps : List (Nat × F), Distinct ps ∧ ps.length = n ∧
+      ∀ p, p ∈ ps → N ≤ p.1 ∧ W.ArisesFrom R p.1 p.2
+  | 0, _ => ⟨[], trivial, rfl, fun _ mem => nomatch mem⟩
+  | n + 1, N => match arising N with
+    | ⟨t, f, later, arises⟩ => match arisingFrom_found arising n (t + 1) with
+      | ⟨ps, distinct, length, all⟩ =>
+        ⟨(t, f) :: ps, ⟨fun mem => Nat.not_succ_le_self t (all _ mem).1, distinct⟩,
+         congrArg Nat.succ length, fun p mem => match mem_cons_cases mem with
+          | .inl same => Eq.subst (motive := fun q : Nat × F => N ≤ q.1 ∧ W.ArisesFrom R q.1 q.2)
+              same.symm ⟨later, arises⟩
+          | .inr mem => ⟨Nat.le_trans (Nat.le_succ_of_le later) (all p mem).1, (all p mem).2⟩⟩
+
+/-- An arising does not lie on the lineage of an earlier one: without merges from `N` on, the
+lineage of a formation arising across the step from `t`, reaching at a later step what the
+lineage of one arising across the step from `t + 1 + d` reaches, would pass through the later
+formation at its arising, so that formation would continue an active one. -/
+theorem lineages_apart {N : Nat}
+    (noMerge : ∀ s, N ≤ s → ∀ g g' f, W.active s g → W.active s g' → R s g f → R s g' f →
+      W.active (s + 1) f → g = g')
+    {t d : Nat} {f₁ f₂ h : F} (from_ : N ≤ t) (arises₂ : W.ArisesFrom R (t + 1 + d) f₂)
+    {k₁ k₂ : Nat} (lineage₁ : W.Lineage R (t + 1) f₁ k₁ h)
+    (lineage₂ : W.Lineage R (t + 1 + d + 1) f₂ k₂ h) (same : t + 1 + k₁ = t + 1 + d + 1 + k₂) :
+    False :=
+  have lengths : k₁ = d + 1 + k₂ :=
+    add_right_cancel (t + 1) ((Nat.add_comm _ _).trans ((same.trans
+      (Nat.add_assoc (t + 1) (d + 1) k₂)).trans (Nat.add_comm _ _)))
+  match Lineage.split (j := d + 1) k₂
+      (Eq.subst (motive := fun j => W.Lineage R (t + 1) f₁ j h) lengths lineage₁) with
+  | ⟨x, ⟨x₀, _, active₀, cont, _⟩, rest⟩ =>
+    have origin : x = f₂ := Lineage.origin (M := t + 1 + d + 1)
+      (fun s from_s => noMerge s (Nat.le_trans from_ (Nat.le_trans (Nat.le_trans
+        (Nat.le_add_right t 1) (Nat.le_trans (Nat.le_add_right (t + 1) d) (Nat.le_succ _))) from_s)))
+      rest lineage₂
+    arises₂.2 ⟨x₀, active₀, Eq.subst (motive := fun y => R (t + 1 + d) x₀ y) origin cont⟩
+
+/-- The converse of the census law under a continuation, from one covering list: where one list
+covers what is active at each step from `T` on, no two formations continue as one from `T` on,
+and something arises under the continuation at arbitrarily late steps, ceasing under it never
+stops for good. No census and no decision is used. With nothing ceasing from `N` on, the
+lineage of each arising goes on, not refuted, and lineages of distinct arisings never meet; so
+more arisings than the list holds would leave more formations active at one late step than the
+list holds. -/
+theorem ceasingFrom_not_stopping_covered {T : Nat} {L : List F}
+    (covers : ∀ t, T ≤ t → ∀ f, W.active t f → f ∈ L)
+    (noMerge : ∀ s, T ≤ s → ∀ g g' f, W.active s g → W.active s g' → R s g f → R s g' f →
+      W.active (s + 1) f → g = g')
+    (arising : W.UnceasingFrom R) : ¬ ∃ N, ∀ t g, N ≤ t → ¬ W.CeasesFrom R t g :=
+  fun ⟨N₀, quiet₀⟩ =>
+    have quiet : ∀ t g, N₀ + T ≤ t → ¬ W.CeasesFrom R t g :=
+      fun t g later => quiet₀ t g (Nat.le_trans (Nat.le_add_right N₀ T) later)
+    have merge : ∀ s, N₀ + T ≤ s → ∀ g g' f, W.active s g → W.active s g' → R s g f →
+        R s g' f → W.active (s + 1) f → g = g' :=
+      fun s later => noMerge s (Nat.le_trans (Nat.le_add_left T N₀) later)
+    match arisingFrom_found arising (L.length + 1) (N₀ + T) with
+    | ⟨ps, distinct, length, all⟩ =>
+      have reach : ∀ p, p ∈ ps → p.1 + 1 ≤ total ps (fun q : Nat × F => q.1 + 1) :=
+        fun _ mem => le_total_of_mem (q := fun q : Nat × F => q.1 + 1) mem
+      not_not_all (P := fun p : Nat × F => ∃ h, h ∈ L ∧ ∃ k,
+          p.1 + 1 + k = total ps (fun q : Nat × F => q.1 + 1) ∧ W.Lineage R (p.1 + 1) p.2 k h)
+        (E := ps)
+        (fun p mem none => match le_dest (reach p mem) with
+          | ⟨k, at_end⟩ => Lineage.onward (Nat.le_succ_of_le (all p mem).1) quiet
+              (all p mem).2.1 k fun ⟨h, lineage⟩ =>
+              none ⟨h, covers _ (Nat.le_trans (Nat.le_add_left T N₀) (Nat.le_trans
+                  (Nat.le_succ_of_le (all p mem).1) (reach p mem))) h
+                (Eq.subst (motive := fun s => W.active s h) at_end.symm
+                  (lineage.active (all p mem).2.1)), k, at_end.symm, lineage⟩)
+        fun matched => Nat.not_succ_le_self L.length (Nat.le_trans (Nat.le_of_eq length.symm)
+          (length_le_of_matched (S := fun p h => ∃ k,
+              p.1 + 1 + k = total ps (fun q : Nat × F => q.1 + 1) ∧ W.Lineage R (p.1 + 1) p.2 k h)
+            distinct (fun p mem => match matched p mem with
+              | ⟨h, inside, k, at_end, lineage⟩ => ⟨h, inside, k, at_end, lineage⟩)
+            fun p p' _ mem mem' ⟨k, at_end, lineage⟩ ⟨k', at_end', lineage'⟩ =>
+              have joined : p.1 + 1 + k = p'.1 + 1 + k' := at_end.trans at_end'.symm
+              match Nat.lt_or_ge p.1 p'.1 with
+              | .inl below => match le_dest below with
+                | ⟨_, gap⟩ => absurd (lineages_apart merge (all p mem).1
+                    (Eq.subst (motive := fun s => W.ArisesFrom R s p'.2) gap (all p' mem').2)
+                    lineage (Eq.subst (motive := fun s => W.Lineage R (s + 1) p'.2 k' _) gap lineage')
+                    (joined.trans (congrArg (· + 1 + k') gap))) id
+              | .inr above => match Nat.eq_or_lt_of_le above with
+                | .inl equal =>
+                  have lengths : k = k' := add_right_cancel (p.1 + 1) ((Nat.add_comm _ _).trans
+                    ((joined.trans (congrArg (· + 1 + k') equal)).trans (Nat.add_comm _ _)))
+                  have names : p.2 = p'.2 := Lineage.origin (M := p.1 + 1)
+                    (fun s from_s => merge s (Nat.le_trans (all p mem).1
+                      (Nat.le_trans (Nat.le_succ p.1) from_s))) lineage
+                    (Eq.subst (motive := fun j => W.Lineage R (p.1 + 1) p'.2 j _) lengths.symm
+                      (Eq.subst (motive := fun s => W.Lineage R (s + 1) p'.2 k' _) equal lineage'))
+                  match p, p', equal.symm, names with
+                  | (_, _), (_, _), rfl, rfl => rfl
+                | .inr beyond => match le_dest beyond with
+                  | ⟨_, gap⟩ => absurd (lineages_apart merge (all p' mem').1
+                      (Eq.subst (motive := fun s => W.ArisesFrom R s p.2) gap (all p mem).2)
+                      lineage' (Eq.subst (motive := fun s => W.Lineage R (s + 1) p.2 k _) gap lineage)
+                      (joined.symm.trans (congrArg (· + 1 + k) gap))) id))
+
 end Covering
 
 end Web

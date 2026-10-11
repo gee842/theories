@@ -91,44 +91,90 @@ viability. -/
 def Decays (r : Nat → F → Nat) : Prop :=
   ∀ t f, ¬ W.Supported t f → 0 < r t f → r (t + 1) f < r t f
 
+/-- A reserve `r` carries `f` across the step from `t`: if `f` is not supported there, its
+reserve does not rise, and it falls if `f` is active there. `Carries` is this at every step
+and formation. -/
+def CarriesAcross (r : Nat → F → Nat) (t : Nat) (f : F) : Prop :=
+  ¬ W.Supported t f → r (t + 1) f ≤ r t f ∧ (W.active t f → r (t + 1) f < r t f)
+
+/-- And decays across it: if `f` is not supported there and its reserve is positive, the
+reserve falls. `Decays` is this at every step and formation. -/
+def DecaysAcross (r : Nat → F → Nat) (t : Nat) (f : F) : Prop :=
+  ¬ W.Supported t f → 0 < r t f → r (t + 1) f < r t f
+
 variable {W} {r : Nat → F → Nat}
+
+/-- At one step and formation, the zero reserve carries it exactly when it is active there
+only while supported. -/
+theorem carries_zero_across {t : Nat} {f : F} :
+    W.CarriesAcross (fun _ _ => 0) t f ↔ (W.active t f → W.Supported t f) :=
+  ⟨fun carries active c depends => Nat.ge_of_not_lt fun short => Nat.lt_irrefl 0
+      ((carries fun supported => Nat.not_le_of_gt short (supported c depends)).2 active),
+   fun dependent unsupported =>
+      ⟨Nat.le_refl 0, fun active => absurd (dependent active) unsupported⟩⟩
 
 /-- `Dependent` is exactly the zero reserve. -/
 theorem carries_zero : W.Carries (fun _ _ => 0) ↔ W.Dependent :=
-  ⟨fun carries t f active c depends => Nat.ge_of_not_lt fun short => Nat.lt_irrefl 0
-      ((carries t f fun supported => Nat.not_le_of_gt short (supported c depends)).2 active),
-   fun dependent _ _ unsupported =>
-      ⟨Nat.le_refl 0, fun active => absurd (dependent _ _ active) unsupported⟩⟩
+  ⟨fun carries t f => carries_zero_across.mp (carries t f),
+   fun dependent t f => carries_zero_across.mpr (dependent t f)⟩
+
+/-- Carried across the step, an active formation whose dependences fail there has a positive
+reserve. -/
+theorem CarriesAcross.pos {t : Nat} {f : F} (carries : W.CarriesAcross r t f)
+    (active : W.active t f) (unsupported : ¬ W.Supported t f) : 0 < r t f :=
+  Nat.lt_of_le_of_lt (Nat.zero_le _) ((carries unsupported).2 active)
 
 /-- An active formation whose dependences fail has a positive reserve. -/
 theorem Carries.pos (carries : W.Carries r) {t : Nat} {f : F} (active : W.active t f)
     (unsupported : ¬ W.Supported t f) : 0 < r t f :=
-  Nat.lt_of_le_of_lt (Nat.zero_le _) ((carries t f unsupported).2 active)
+  CarriesAcross.pos (carries t f) active unsupported
+
+/-- Carried and unsupported from step `T` on, a formation is active only finitely often:
+only that formation and those steps are used. -/
+theorem active_finitely_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
+    (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t f :=
+  fun recurs => falls_finitely (fun t => r t f) T
+    (fun t later => (carries t later (unsupported t later)).1)
+    fun N => match recurs (N + T) with
+      | ⟨t, later, active⟩ =>
+        have from_ := Nat.le_trans (Nat.le_add_left T N) later
+        ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
+          (carries t from_ (unsupported t from_)).2 active⟩
 
 /-- Unsupported from step `T` on, a formation is active only finitely often. -/
 theorem Carries.active_finitely (carries : W.Carries r) {f : F} {T : Nat}
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t f :=
-  fun recurs => falls_finitely (fun t => r t f) T
-    (fun t later => (carries t f (unsupported t later)).1)
-    fun N => match recurs (N + T) with
-      | ⟨t, later, active⟩ => ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
-          (carries t f (unsupported t (Nat.le_trans (Nat.le_add_left T N) later))).2 active⟩
+  active_finitely_from (fun t _ => carries t f) unsupported
+
+/-- Carried across an unsupported step, the reserve falls by at least one if the formation is
+active. -/
+theorem CarriesAcross.step {t : Nat} {f : F} [Decidable (W.active t f)]
+    (carries : W.CarriesAcross r t f) (unsupported : ¬ W.Supported t f) :
+    r (t + 1) f + mark (W.active t f) ≤ r t f :=
+  mark_cases (q := fun m => r (t + 1) f + m ≤ r t f) (carries unsupported).2
+    fun _ => (carries unsupported).1
 
 /-- Across an unsupported step, the reserve falls by at least one if the formation is
 active. -/
 theorem Carries.step (carries : W.Carries r) {t : Nat} {f : F} [Decidable (W.active t f)]
     (unsupported : ¬ W.Supported t f) : r (t + 1) f + mark (W.active t f) ≤ r t f :=
-  mark_cases (q := fun m => r (t + 1) f + m ≤ r t f) (carries t f unsupported).2
-    fun _ => (carries t f unsupported).1
+  CarriesAcross.step (carries t f) unsupported
 
-/-- Unsupported from step `S` on, a formation is active over any stretch of steps from
-`S` at most as often as its reserve at `S`. -/
-theorem Carries.lasts (carries : W.Carries r) {f : F} [∀ t, Decidable (W.active t f)] :
-    ∀ S N, (∀ t, S ≤ t → ¬ W.Supported t f) →
+/-- Carried and unsupported across each step of a stretch, a formation is active over it at
+most as often as its reserve at the start. Nothing is asked of other steps or formations. -/
+theorem lasts_on {f : F} [∀ t, Decidable (W.active t f)] :
+    ∀ S N, (∀ t, S ≤ t → t < S + N → W.CarriesAcross r t f) →
+      (∀ t, S ≤ t → t < S + N → ¬ W.Supported t f) →
       r (S + N) f + total (steps S N) (fun t => mark (W.active t f)) ≤ r S f
-  | _, 0, _ => Nat.le_refl _
-  | S, N + 1, unsupported =>
-    have later := carries.lasts (S + 1) N fun t after => unsupported t (Nat.le_of_succ_le after)
+  | _, 0, _, _ => Nat.le_refl _
+  | S, N + 1, carries, unsupported =>
+    have shift : ∀ t, t < S + 1 + N → t < S + (N + 1) := fun _ below =>
+      Nat.lt_of_lt_of_le below (Nat.le_of_eq (Nat.add_right_comm S 1 N))
+    have first : S < S + (N + 1) :=
+      Nat.lt_of_lt_of_le (Nat.lt_succ_self S) (Nat.succ_le_succ (Nat.le_add_right S N))
+    have later := lasts_on (S + 1) N
+      (fun t after below => carries t (Nat.le_of_succ_le after) (shift t below))
+      (fun t after below => unsupported t (Nat.le_of_succ_le after) (shift t below))
     Nat.le_trans
       (Nat.le_of_eq ((Nat.add_left_comm _ _ _).trans (congrArg
         (fun n => mark (W.active S f) + (r n f + total (steps (S + 1) N) fun t =>
@@ -136,7 +182,15 @@ theorem Carries.lasts (carries : W.Carries r) {f : F} [∀ t, Decidable (W.activ
         (Nat.add_right_comm S 1 N).symm)))
       (Nat.le_trans (Nat.add_le_add_left later _)
         (Nat.le_trans (Nat.le_of_eq (Nat.add_comm _ _))
-          (carries.step (unsupported S (Nat.le_refl S)))))
+          ((carries S (Nat.le_refl S) first).step (unsupported S (Nat.le_refl S) first))))
+
+/-- Unsupported from step `S` on, a formation is active over any stretch of steps from
+`S` at most as often as its reserve at `S`. -/
+theorem Carries.lasts (carries : W.Carries r) {f : F} [∀ t, Decidable (W.active t f)] :
+    ∀ S N, (∀ t, S ≤ t → ¬ W.Supported t f) →
+      r (S + N) f + total (steps S N) (fun t => mark (W.active t f)) ≤ r S f :=
+  fun S N unsupported => lasts_on S N (fun t _ _ => carries t f)
+    fun t from_ _ => unsupported t from_
 
 /-- With a reserve of capacity `k`, a formation unsupported from some step on is active
 over any later stretch at most `k` times. -/
@@ -147,42 +201,63 @@ theorem Carries.lasts_within (carries : W.Carries r) {f : F} [∀ t, Decidable (
   Nat.le_trans (Nat.le_trans (Nat.le_add_left _ _) (carries.lasts S N unsupported))
     (capacity S)
 
+/-- Carried and unsupported from step `T` on, a formation arises only finitely often. -/
+theorem arising_finitely_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
+    (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.Arises t f :=
+  fun arising => active_finitely_from carries unsupported fun N => match arising N with
+    | ⟨t, later, arises⟩ => ⟨t + 1, Nat.le_succ_of_le later, arises.2⟩
+
 /-- Unsupported from step `T` on, a formation arises only finitely often: dormancy defers
 the end and does not escape it. -/
 theorem Carries.arising_finitely (carries : W.Carries r) {f : F} {T : Nat}
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.Arises t f :=
-  fun arising => carries.active_finitely unsupported fun N => match arising N with
-    | ⟨t, later, arises⟩ => ⟨t + 1, Nat.le_succ_of_le later, arises.2⟩
+  arising_finitely_from (fun t _ => carries t f) unsupported
 
-/-- Unsupported from step `S` on, a carried reserve that decays has, after `n` steps, fallen
-by `n` or been spent. -/
-theorem Carries.decays_by (carries : W.Carries r) (decays : W.Decays r) {f : F} {S : Nat}
-    (unsupported : ∀ t, S ≤ t → ¬ W.Supported t f) :
+/-- Carried, decaying and unsupported from step `S` on, a reserve has, after `n` steps,
+fallen by `n` or been spent: only that formation and those steps are used. -/
+theorem decays_by_from {f : F} {S : Nat} (carries : ∀ t, S ≤ t → W.CarriesAcross r t f)
+    (decays : ∀ t, S ≤ t → W.DecaysAcross r t f) (unsupported : ∀ t, S ≤ t → ¬ W.Supported t f) :
     ∀ n, r (S + n) f + n ≤ r S f ∨ r (S + n) f = 0
   | 0 => .inl (Nat.le_refl _)
   | n + 1 =>
-    have step := carries (S + n) f (unsupported (S + n) (Nat.le_add_right S n))
+    have from_ := Nat.le_add_right S n
+    have step := carries (S + n) from_ (unsupported (S + n) from_)
     have spent (empty : r (S + n) f = 0) : r (S + n + 1) f = 0 :=
       Nat.le_antisymm (Nat.le_trans step.1 (Nat.le_of_eq empty)) (Nat.zero_le _)
-    match carries.decays_by decays unsupported n, Nat.eq_zero_or_pos (r (S + n) f) with
+    match decays_by_from carries decays unsupported n, Nat.eq_zero_or_pos (r (S + n) f) with
     | .inr empty, _ => .inr (spent empty)
     | .inl _, .inl empty => .inr (spent empty)
     | .inl fell, .inr left => .inl (Nat.le_trans
         (Nat.le_of_eq (Nat.add_right_comm (r (S + n + 1) f) 1 n).symm)
         (Nat.le_trans (Nat.add_le_add_right (Nat.succ_le_of_lt
-          (decays (S + n) f (unsupported (S + n) (Nat.le_add_right S n)) left)) n) fell))
+          (decays (S + n) from_ (unsupported (S + n) from_) left)) n) fell))
+
+/-- Unsupported from step `S` on, a carried reserve that decays has, after `n` steps, fallen
+by `n` or been spent. -/
+theorem Carries.decays_by (carries : W.Carries r) (decays : W.Decays r) {f : F} {S : Nat}
+    (unsupported : ∀ t, S ≤ t → ¬ W.Supported t f) :
+    ∀ n, r (S + n) f + n ≤ r S f ∨ r (S + n) f = 0 :=
+  decays_by_from (fun t _ => carries t f) (fun t _ => decays t f) unsupported
+
+/-- Bounded dormancy, from step `S` on: carried, decaying and unsupported from `S` on, a
+formation is not active once as many steps have passed as its reserve at `S`. -/
+theorem ends_within_from {f : F} {S : Nat} (carries : ∀ t, S ≤ t → W.CarriesAcross r t f)
+    (decays : ∀ t, S ≤ t → W.DecaysAcross r t f) (unsupported : ∀ t, S ≤ t → ¬ W.Supported t f)
+    {n : Nat} (spent : r S f ≤ n) : ¬ W.active (S + n) f :=
+  fun active =>
+    have from_ := Nat.le_add_right S n
+    have left := (carries (S + n) from_).pos active (unsupported (S + n) from_)
+    match decays_by_from carries decays unsupported n with
+    | .inl fell => Nat.not_le_of_gt (Nat.lt_add_of_pos_left left)
+        (Nat.le_trans fell (Nat.le_trans spent (Nat.le_refl n)))
+    | .inr empty => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le left (Nat.le_of_eq empty))
 
 /-- Bounded dormancy: unsupported from step `S` on, a formation whose carried reserve decays
 is not active once as many steps have passed as its reserve at `S`. -/
 theorem Carries.ends_within (carries : W.Carries r) (decays : W.Decays r) {f : F} {S : Nat}
     (unsupported : ∀ t, S ≤ t → ¬ W.Supported t f) {n : Nat} (spent : r S f ≤ n) :
     ¬ W.active (S + n) f :=
-  fun active =>
-    have left := carries.pos active (unsupported (S + n) (Nat.le_add_right S n))
-    match carries.decays_by decays unsupported n with
-    | .inl fell => Nat.not_le_of_gt (Nat.lt_add_of_pos_left left)
-        (Nat.le_trans fell (Nat.le_trans spent (Nat.le_refl n)))
-    | .inr empty => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le left (Nat.le_of_eq empty))
+  ends_within_from (fun t _ => carries t f) (fun t _ => decays t f) unsupported spent
 
 /-- After a loss without return with the dependence unchanged, a formation is not supported
 at any later step. -/
@@ -199,7 +274,7 @@ loss (`Carries.lasts`). Under `Dependent`, the zero reserve, it is not active at
 theorem Carries.consumed_lasts (carries : W.Carries r) {T : Nat} {g : F} {c : C}
     (fixed : ∀ t, T < t → W.requires t g c ∧ W.need T g c ≤ W.need t g c)
     (below : ∀ t, T < t → W.level t c < W.need T g c) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t g :=
-  carries.active_finitely (T := T + 1) (unsupported_after_loss fixed below)
+  active_finitely_from (T := T + 1) (fun t _ => carries t g) (unsupported_after_loss fixed below)
 
 end Web
 
@@ -209,6 +284,22 @@ namespace Flow
 
 variable {L : Flow F C} {W : Web F C}
 
+/-- With balance at the held condition across the step, where nothing gives to it while its
+holder is unsupported there, and it is taken from while the holder is active there, it
+carries the holder across that step. -/
+theorem carriesAcross_of_held {t : Nat} {f : F} (hold : F → C)
+    (balances : L.BalancesOn W [hold f] t)
+    (unreplenished : ¬ W.Supported t f → L.given t (hold f) = 0)
+    (drawn : ¬ W.Supported t f → W.active t f → 0 < L.taken t (hold f)) :
+    W.CarriesAcross (fun t f => W.level t (hold f)) t f :=
+  fun unsupported =>
+    have balance : W.level (t + 1) (hold f) + L.taken t (hold f) = W.level t (hold f) :=
+      (balances (hold f) (.head [])).trans
+        (congrArg (W.level t (hold f) + ·) (unreplenished unsupported))
+    ⟨Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq balance),
+     fun active => Nat.lt_of_lt_of_le
+       (Nat.lt_add_of_pos_right (drawn unsupported active)) (Nat.le_of_eq balance)⟩
+
 /-- In a balanced flow, a condition that nothing gives to while its holder is unsupported,
 and that is taken from, by whatever takes part, while the holder is active there, carries
 the holder: its standing is the holder's reserve. -/
@@ -216,13 +307,7 @@ theorem carries_of_held (balances : L.Balances W) (hold : F → C)
     (unreplenished : ∀ t f, ¬ W.Supported t f → L.given t (hold f) = 0)
     (drawn : ∀ t f, ¬ W.Supported t f → W.active t f → 0 < L.taken t (hold f)) :
     W.Carries fun t f => W.level t (hold f) :=
-  fun t f unsupported =>
-    have balance : W.level (t + 1) (hold f) + L.taken t (hold f) = W.level t (hold f) :=
-      (balances t (hold f)).trans
-        (congrArg (W.level t (hold f) + ·) (unreplenished t f unsupported))
-    ⟨Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq balance),
-     fun active => Nat.lt_of_lt_of_le
-       (Nat.lt_add_of_pos_right (drawn t f unsupported active)) (Nat.le_of_eq balance)⟩
+  fun t f => carriesAcross_of_held hold (balances.on [hold f] t) (unreplenished t f) (drawn t f)
 
 /-- Where the holder itself takes part and takes from what it holds at each step at which
 it is unsupported and active, the held condition carries it: the holder's own use. -/
@@ -257,11 +342,12 @@ theorem redirect_same (hold : F → C) :
       (W.redirect hold).draws = W.draws :=
   ⟨rfl, rfl, rfl⟩
 
-/-- Wherever a held condition carries the formations, the redirected reading is
-`Dependent` by construction: lag is dependence moved onto the held condition. -/
-theorem redirect_dependent {hold : F → C} (carries : W.Carries fun t f => W.level t (hold f)) :
-    (W.redirect hold).Dependent :=
-  fun t f active c depends =>
+/-- Where a held condition carries a formation across a step, the redirected reading supports
+it there while it is active: only that step and formation are used. -/
+theorem redirect_supported_at {hold : F → C} {t : Nat} {f : F}
+    (carries : W.CarriesAcross (fun t f => W.level t (hold f)) t f) (active : W.active t f) :
+    (W.redirect hold).Supported t f :=
+  fun c depends =>
     if supported : W.Supported t f then
       Nat.le_trans (Nat.le_of_eq (if_pos supported :
           (W.redirect hold).need t f c = W.need t f c))
@@ -273,6 +359,12 @@ theorem redirect_dependent {hold : F → C} (carries : W.Carries fun t f => W.le
           (Eq.mp (if_neg supported : (W.redirect hold).requires t f c = (c = hold f))
             depends).symm
           (carries.pos active supported))
+
+/-- Wherever a held condition carries the formations, the redirected reading is
+`Dependent` by construction: lag is dependence moved onto the held condition. -/
+theorem redirect_dependent {hold : F → C} (carries : W.Carries fun t f => W.level t (hold f)) :
+    (W.redirect hold).Dependent :=
+  fun t f active => redirect_supported_at (carries t f) active
 
 end Web
 
@@ -298,7 +390,7 @@ theorem Carries.coextinct_lasts {r : Nat → X → Nat} (carries : W.Carries r) 
     (embodied : W.Embodied y) {T : Nat}
     (bears : ∀ t, T ≤ t → W.requires t g y ∧ 0 < W.need t g y)
     (ended : ∀ t, T ≤ t → ¬ W.active t y) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t g :=
-  carries.active_finitely (unsupported_after_end embodied bears ended)
+  active_finitely_from (fun t _ => carries t g) (unsupported_after_end embodied bears ended)
 
 /-- When each link of a chain has ended: the first at `T`, each later one once its reserve,
 read when the link before it has ended, has passed. -/
@@ -318,6 +410,30 @@ theorem chainEnd_zero (chain : Nat → X) (T : Nat) :
   | 0 => rfl
   | k + 1 => chainEnd_zero chain T k
 
+/-- Coextinction along a chain, carried and decaying at its links only: as
+`Carries.chain_ends`, with the reserve carrying and decaying the links after the first from
+step `T` on, and nothing asked of other formations. -/
+theorem chain_ends_from {r : Nat → X → Nat} {chain : Nat → X} {n : Nat} {T : Nat}
+    (carries : ∀ k t, k < n → T ≤ t → W.CarriesAcross r t (chain (k + 1)))
+    (decays : ∀ k t, k < n → T ≤ t → W.DecaysAcross r t (chain (k + 1)))
+    (embodied : ∀ k, k < n → W.Embodied (chain k))
+    (bears : ∀ k t, k < n → T ≤ t →
+      W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
+    (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
+    ∀ k, k ≤ n → ∀ t, chainEnd r chain T k ≤ t → ¬ W.active t (chain k)
+  | 0, _ => ended
+  | k + 1, within => fun _ later active =>
+    have start := chainEnd_ge r chain T k
+    have unsupported := unsupported_after_end (embodied k within)
+      (fun s from_ => bears k s within (Nat.le_trans start from_))
+      (chain_ends_from carries decays embodied bears ended k (Nat.le_of_succ_le within))
+    match le_dest later with
+    | ⟨m, same⟩ => ends_within_from (fun t from_ => carries k t within (Nat.le_trans start from_))
+        (fun t from_ => decays k t within (Nat.le_trans start from_)) unsupported
+        (Nat.le_add_right _ m)
+        (Eq.subst (motive := fun s => W.active s (chain (k + 1)))
+          (same.trans (Nat.add_assoc _ _ m)) active)
+
 /-- Coextinction along a chain: where, in a chain of `n` links, each relatum depends at a
 positive need on the one before it from step `T` on, the relata depended on are embodied,
 the reserve decays, and the first has ended from `T`, each relatum up to the `n`th has
@@ -329,16 +445,31 @@ theorem Carries.chain_ends {r : Nat → X → Nat} (carries : W.Carries r) (deca
     (bears : ∀ k t, k < n → T ≤ t →
       W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
     (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
-    ∀ k, k ≤ n → ∀ t, chainEnd r chain T k ≤ t → ¬ W.active t (chain k)
-  | 0, _ => ended
-  | k + 1, within => fun _ later active =>
-    have unsupported := unsupported_after_end (embodied k within)
-      (fun s from_ => bears k s within (Nat.le_trans (chainEnd_ge r chain T k) from_))
-      (carries.chain_ends decays embodied bears ended k (Nat.le_of_succ_le within))
-    match le_dest later with
-    | ⟨m, same⟩ => carries.ends_within decays unsupported (Nat.le_add_right _ m)
-        (Eq.subst (motive := fun s => W.active s (chain (k + 1)))
-          (same.trans (Nat.add_assoc _ _ m)) active)
+    ∀ k, k ≤ n → ∀ t, chainEnd r chain T k ≤ t → ¬ W.active t (chain k) :=
+  chain_ends_from (fun k t _ _ => carries t (chain (k + 1))) (fun k t _ _ => decays t (chain (k + 1)))
+    embodied bears ended
+
+/-- Coextinction along a chain without decay, carried at its links only: as
+`Carries.chain_ends_of_em`, with the reserve carrying the links after the first from step `T`
+on, and nothing asked of other formations. -/
+theorem chain_ends_of_em_from (em : ∀ P : Prop, P ∨ ¬ P) {r : Nat → X → Nat}
+    {chain : Nat → X} {n : Nat} {T : Nat}
+    (carries : ∀ k t, k < n → T ≤ t → W.CarriesAcross r t (chain (k + 1)))
+    (embodied : ∀ k, k < n → W.Embodied (chain k))
+    (bears : ∀ k t, k < n → T ≤ t →
+      W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
+    (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
+    ∀ k, k ≤ n → ∃ E, T ≤ E ∧ ∀ t, E ≤ t → ¬ W.active t (chain k)
+  | 0, _ => ⟨T, Nat.le_refl T, ended⟩
+  | k + 1, within => match chain_ends_of_em_from em carries embodied bears ended k
+      (Nat.le_of_succ_le within) with
+    | ⟨E, from_T, gone⟩ =>
+      match exists_not_of_em em (active_finitely_from (T := E)
+          (fun t from_ => carries k t within (Nat.le_trans from_T from_))
+          (unsupported_after_end (embodied k within)
+            (fun s from_ => bears k s within (Nat.le_trans from_T from_)) gone)) with
+      | ⟨N, quiet⟩ => ⟨E + N, Nat.le_trans from_T (Nat.le_add_right E N),
+          fun t later active => quiet ⟨t, Nat.le_trans (Nat.le_add_left N E) later, active⟩⟩
 
 /-- Coextinction along a chain without decay: with excluded middle as a hypothesis, where,
 in a chain of `n` links, each relatum depends at a positive need on the one before it from
@@ -351,16 +482,8 @@ theorem Carries.chain_ends_of_em (em : ∀ P : Prop, P ∨ ¬ P) {r : Nat → X 
     (bears : ∀ k t, k < n → T ≤ t →
       W.requires t (chain (k + 1)) (chain k) ∧ 0 < W.need t (chain (k + 1)) (chain k))
     (ended : ∀ t, T ≤ t → ¬ W.active t (chain 0)) :
-    ∀ k, k ≤ n → ∃ E, T ≤ E ∧ ∀ t, E ≤ t → ¬ W.active t (chain k)
-  | 0, _ => ⟨T, Nat.le_refl T, ended⟩
-  | k + 1, within => match carries.chain_ends_of_em em embodied bears ended k
-      (Nat.le_of_succ_le within) with
-    | ⟨E, from_T, gone⟩ =>
-      match exists_not_of_em em (carries.active_finitely
-          (unsupported_after_end (embodied k within)
-            (fun s from_ => bears k s within (Nat.le_trans from_T from_)) gone)) with
-      | ⟨N, quiet⟩ => ⟨E + N, Nat.le_trans from_T (Nat.le_add_right E N),
-          fun t later active => quiet ⟨t, Nat.le_trans (Nat.le_add_left N E) later, active⟩⟩
+    ∀ k, k ≤ n → ∃ E, T ≤ E ∧ ∀ t, E ≤ t → ¬ W.active t (chain k) :=
+  chain_ends_of_em_from em (fun k t _ _ => carries t (chain (k + 1))) embodied bears ended
 
 theorem climbs {ρ : X → Nat} {chain : Nat → X}
     (up : ∀ k, ρ (chain k) < ρ (chain (k + 1))) : ∀ k, k ≤ ρ (chain k)

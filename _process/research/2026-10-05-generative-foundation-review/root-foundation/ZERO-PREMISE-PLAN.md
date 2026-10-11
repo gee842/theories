@@ -137,7 +137,8 @@
 **中文。** 以下各项改动表示本身，所以属于 Ren：
 - **(b1) 最小差异。** 已决定：A（属于生成本身）。熵的会话研究它能否推出。
 - **(b2) 可判定性。** 保留，或者在不复现的形式中去掉。后一种做法中，明确终止之步的陈述按已证明的边界放弃。
-- **(b3) 时间。** 只检验更粗的步（采样）是否保持规律，还是也研究连续时间。另一个会话的工作区中有一个尚未提交的 `Sampling` 模块（见 §4）。
+- **(b3) 时间。** 只检验更粗的步（采样）是否保持规律，还是也研究连续时间。另一个会话的工作区中有一个尚未提交的 `Sampling` 模块（见 §4）。已决定（Ren 2026-10-12，[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)）：较粗的步已检验（`Becoming.Sampling`）；连续时间在核心中读作一座越来越细的离散读法之塔，由 `Sampling` 连接，连续时间的规律就是每一层上的规律；实数时间是以后的外围对应。损失仍按交换计，不按细步计。
+- **(b4) 需要的单位。** 已决定（同上）：较细的单位下，需要与水平以同一单位计；不变的需要随细分放大，以 `r > 0` 为这一读法的条件，所以支持不依赖量度的粒度。这是关于怎样量度需要的表示承诺，公开陈述，不是世界的前提。
 - **两种可能的重新奠定（AI 的提议）。**
   - 把不平衡算作关系项：任一步、任一条件上的不平衡，都可以算作一个只给或只取的关系项的交换，就像 R4 把细分算作给予。这样平衡就由表示成立，而它的局部失效成为可见的交换。
   - 把体现读作定义：活跃就是立着。这会失去形成与条件两个角色的区分，所以 AI 不建议。
@@ -147,7 +148,8 @@
 **English.** These change the representation itself and so are Ren's:
 - **(b1) The least difference.** Decided: A, it belongs to becoming. Whether it can be derived is the entropy session's question.
 - **(b2) Decidability.** Keep it, or drop it in the forms stating that something does not recur. In the second case, statements naming an explicit end step are given up, as the proved boundary requires.
-- **(b3) Time.** Test only coarser steps (sampling), or also continuous time. Another session's worktree holds an uncommitted `Sampling` module (section 4).
+- **(b3) Time.** Test only coarser steps (sampling), or also continuous time. Another session's worktree holds an uncommitted `Sampling` module (section 4). Decided (Ren, 12 October 2026, [words](../../../../sources/15-codex-theory-conversations/2026-10-12-unit-of-need-and-tower-of-time.md)): coarser steps are tested (`Becoming.Sampling`); continuous time is read in the core as a tower of ever finer discrete readings linked by `Sampling`, a law of continuous time being a law at every level; real-valued time is a later periphery correspondence. Loss stays counted per exchange, not per fine step.
+- **(b4) The unit of need.** Decided (same source): at a finer unit a need is counted in the same unit as the level; an unchanged need scales with the split, with `r > 0` the reading's condition, so support does not depend on the grain of measurement. This is a commitment of the representation about how need is measured, stated openly, not a premise on worlds.
 - **Two possible re-foundings, proposed by the AI.**
   - Count imbalance as a relatum. An imbalance at a step and condition can be counted as the exchange of a relatum that only gives or only takes, as R4 counts the refinement as a giving. Balance then holds by the representation, and its local failure becomes a visible exchange.
   - Read embodiment as a definition: to be active is to stand. This loses the distinction between the two roles of formation and condition, so the AI does not recommend it.
@@ -167,6 +169,10 @@
 **现状（P57、P60、P61）。** B 组其余（`Dissipation` 与 `Flow` 中的规律）、D 组与延续之下的普查定律已对每个世界重述，由“0 axiom completeness”会话起草并验证（研究 [§74](BECOMING-RENEWAL-READING.md#74-静止开放与补给的规律条件在规律之内p57)、[§75](BECOMING-RENEWAL-READING.md#75-整体的规律条件在规律之内p60)、[§76](BECOMING-RENEWAL-READING.md#76-延续之下的普查定律只用一个覆盖列表p61)）。共享的引理移入需要它的最低模块（`Flow.BalancesOn` 移入 `Flow`），名称与陈述不变。清点的四组至此都已局部化。剩下的不是局部化：b 类的表示决定（最小差异已由 Ren 定为 A；可判定性由 P58 清点；时间由 `Sampling` 检验），以及超出整单位的量的检验。
 
 **Status (P57, P60, P61).** The rest of group B (the laws in `Dissipation` and `Flow`), group D and the census law under a continuation are restated for every world, drafted and verified by the session “0 axiom completeness” (study sections [74](BECOMING-RENEWAL-READING.md#74-静止开放与补给的规律条件在规律之内p57), [75](BECOMING-RENEWAL-READING.md#75-整体的规律条件在规律之内p60), [76](BECOMING-RENEWAL-READING.md#76-延续之下的普查定律只用一个覆盖列表p61)). Shared lemmas move to the lowest module that needs them (`Flow.BalancesOn` into `Flow`), names and statements unchanged. Every group of the inventory is now localized. What remains is not localization: the representation decisions of class (b) (the least difference, decided A by Ren; decidability, inventoried by P58; time, tested by `Sampling`) and the test with amounts finer than whole units.
+
+**现状（P63、P61b、Sampling）。** C 组中 P50 漏掉的储备一行已局部重述（P63，研究 §79）；P61 的反方向已证（P61b）。时间：较粗的步已检验（`Becoming.Sampling`，研究 §80）：平衡（每个关系项只列出一次时）、耗散、封闭与下降跨粗步合成，不合成回细步，活动、取用与传递依步而定。整单位：以单位读变化时一步的规律成立，以原始计数读时不成立；需要与水平以同一单位计（`Becoming.Units`）。
+
+**Status (P63, P61b, Sampling).** The reserve row of group C missed in P50 is restated locally (P63, study section 79); the converse of P61 is proved (P61b). Time: coarser steps are tested (`Becoming.Sampling`, study section 80): balance (with each relatum listed once), dissipation, closure and running down compose across a coarse step, nothing composes back to the fine steps, and acting, taking and transmission are step-relative. Whole units: the laws of one step hold with change read in the unit and fail read in raw counts; a need is counted in the same unit as the level (`Becoming.Units`).
 
 **中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
 
@@ -225,6 +231,8 @@
 - **P42–P44** of the peer session land before P46 and P47, as agreed.
 
 ## 5. 连续时间：范围（AI 的提议，待 Ren）/ Continuous time: scope (AI proposal, awaits Ren)
+
+更新（2026-10-12）：Ren 已决定，连续时间在核心中读作越来越细的离散读法之塔（见 §1.4 (b3)）；下面的范围保留为当时的提议。 / Update (12 October 2026): Ren decided that continuous time is read in the core as a tower of ever finer discrete readings (see section 1.4, b3); the scope below is kept as the proposal it was.
 
 2026-10-11。会话 “0 axiom completeness” 应整合者之请撰写；没有 Lean，没有成果。Ren：“let's finish one first, then another”——先完成更粗的步（`Sampling`，已在 scratch 中验证，待落地），再做连续时间。下面只是范围。
 
