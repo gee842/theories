@@ -1,15 +1,15 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261011T210459.095261Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261011T232354.807725Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261011T210459.095261Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261011T232354.807725Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
 | 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 133 |
-| 只在证明中用到 / used only in proofs | 78 |
+| 只在证明中用到 / used only in proofs | 82 |
 | 不用到 / unused | 0 |
 | 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 6 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 75 |
@@ -30,8 +30,9 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 4 |
 | 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 49 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
-| 分辨相同 / tells same from different | 分辨相同：证明按两个条件或关系项是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions or relata are the same, or a condition is in a family | 18 |
+| 分辨相同 / tells same from different | 分辨相同：证明按两个条件或关系项是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions or relata are the same, or a condition is in a family | 21 |
 | 分情形 / splits on a case | 按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its failing case | 3 |
+| 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 1 |
 
 ## 陈述依赖可判定性的定理（计数或构造） / Theorems whose statements depend on decidedness (counting or construction)
 
@@ -175,6 +176,8 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 
 | 模块 / Module | 定理 / Theorem | 可判定 / Decidability | 理由 / Reason | 另一形式 / Other form |
 |---|---|---|---|---|
+| Attraction | `Law.lossless_iff_none_drawn` | `DecidableEq S` | 分辨相同 / tells same from different | `Law.Lossless.not_drawn`、`Law.none_drawn_merges_nothing`（不判定 / no decision, P67） |
+| Attraction | `Law.none_drawn_lossless` | `DecidableEq S` | 分辨相同 / tells same from different | `Law.none_drawn_merges_nothing`（不判定 / no decision, P67） |
 | Change | `Web.arising_recurs_iff` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | 同上 / as for `coming_recurs_iff` |
 | Change | `Web.unceasing_iff` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | `Web.unceasing_iff_decided`（从某步起已定 / decided from some step on） |
 | Change | `Web.unceasing_iff_covering` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | — |
@@ -205,13 +208,13 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Locality | `Covers.within` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | — |
 | Locality | `coming_of_ceasing_covered` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`、`Covers.ceasing_not_recurring`（无前提 / no premise, P48） |
 | Openness | `Flow.Enclosed.aroundStanding` | `DecidableEq C` | 造出列表 / builds a list | `Flow.Enclosed.aroundStanding_not_not`（不判定 / no decision） |
-| Openness | `Listed.few_of_quiet` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Listed.few_of_settled`（不判定 / no decision, P58） |
+| Openness | `Listed.few_of_quiet` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Listed.few_of_stop_unrefuted`（不判定 / no decision, P58） |
 | Openness | `World.CountedBy.arising_iff_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Openness | `World.CountedWithin.arising_iff_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Openness | `World.Finite.arising_iff_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Openness | `World.Finite.countedWithin` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 造出列表 / builds a list | — |
 | Openness | `World.arising_of_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
-| Openness | `World.few_active` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | `Listed.few_of_settled`、`World.rest_few`（不判定 / no decision, P58） |
+| Openness | `World.few_active` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | `Listed.few_of_stop_unrefuted`、`World.rest_few`（不判定 / no decision, P58） |
 | Openness | `comes_after` | `(t : Nat) → Decidable (p t)` | 找出 / finds | `comes_after_unrefuted`（不判定，那一步不能被否证 / no decision, the step unrefuted） |
 | Population | `Flow.More.unceasing` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | — |
 | Population | `Flow.More.unceasing_covering` | `(s : Nat) → (f : F) → S ≤ s → Decidable (W.active s f)` | 找出 / finds | — |
@@ -231,6 +234,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Population | `search` | `(a : α) → Decidable (p a)` | 找出 / finds | — |
 | Premises | `World.Finite.counted` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 造出列表 / builds a list | — |
 | Premises | `World.counted_of_ever` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 造出列表 / builds a list | — |
+| Response | `Flow.Balances.comparison_within_response_of_decidable` | `(g : F) → Decidable (L.WithinResponse L' W obs part g)` | 分辨相同 / tells same from different | `Flow.Balances.comparison_within_response`（覆盖不被否证在回应所及之内者，不判定 / covering what is not refuted to be within the reach, no decision, P65） |
 | Runaway | `Flow.exchangeFollows_of_policy` | `DecidableEq F` | 分辨相同 / tells same from different | — |
 | Runaway | `Flow.policy_keeps_difference` | `DecidableEq C`；`DecidableEq F` | 分辨相同 / tells same from different | — |
 | Runaway | `Flow.policy_uses_after_failure` | `DecidableEq F` | 分辨相同 / tells same from different | — |
@@ -243,6 +247,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Sampling | `Web.sample_unceasing` | `(t : Nat) → (x : F) → Decidable (W.active t x)` | 找出 / finds | — |
 | Sampling | `arises_within` | `(n : Nat) → Decidable (p n)` | 找出 / finds | — |
 | Sampling | `ceases_within` | `(n : Nat) → Decidable (p n)` | 找出 / finds | — |
+| Selection | `Web.scores_alike_iff` | `(m : Nat → C → Nat) → Decidable (W.RegistersAlikeUpTo obs g l m t)` | 造出指示 / builds an indicator | `Web.selects_alike_iff`（选择而非分数，不判定 / selections rather than scores, no decision, P64） |
 | Space | `World.arising_iff_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | `World.ceasing_not_stopping`、`World.arising_not_stopping`（无前提 / no premise）；`World.arising_iff_ceasing_decided`（从某步起已定 / decided from some step on） |
 | Space | `World.arising_iff_ceasing_covering` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Standpoints | `Flow.boundary_crossed` | `DecidableEq X` | 分辨相同 / tells same from different | — |

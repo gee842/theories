@@ -56,9 +56,10 @@ and across a list of steps the counts at each step sum (`CountsAcross`).
   `World.arising_iff_ceasing_covered`).
 * **Rest needs none.** The rest theorems of `Becoming.Space` and `Becoming.Openness`
   (`World.rests_covering`, `World.rests`, `World.comes_to_rest`, `World.Finite.comes_to_rest`,
-  `World.rest_few`) use no decision procedure: an amount that does not rise settles, it not
-  being the case that after every step from then on a later fall stays unrefuted
-  (`falls_settle`), and that refutes the arising which ceasing recurring under a covering list
+  `World.rest_few`) use no decision procedure: that the falls of an amount that does not rise
+  stop from some step on cannot be refuted, it not being the case that after every step from
+  then on a later fall stays unrefuted (`falls_stop_unrefuted`, `stop_unrefuted_iff`), and that
+  refutes the arising which ceasing recurring under a covering list
   leaves unrefuted after every step (`Covers.not_not_coming_from`).
 * **Where decidedness is provably needed.** Asked of every finite world, the recurring form
   without decidedness is excluded middle (`World.law_iff_em`), and naming a last step is a

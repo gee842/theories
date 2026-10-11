@@ -5860,6 +5860,51 @@ Integration: 计划 P67（工作板）；Ren 认可的五项中的第四项（�
 - 尚无独立审查。
 
 
+## 90. 确切的名称：停止不能被否证（P58b）
+
+2026-10-12。Ren（[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-integrator-and-names.md)）：
+
+> be the integrator from now on, let's adopt these names for now, as long as the proof has the exact meaning.
+
+AI 的读法（待 Ren 更正）：P58 与 P59 引入的名称暂时采用，条件是每个名称的 Lean 陈述恰是名称所说；P59 的重新奠定未被采用，“too dualist”与“局部”的读法也未被确认。逐个核对：`Decided`、`Indicates`、`Counts`、`CountsAcross`、`Flow.withImbalance`、所加关系项闲置（`Flow.balancesOn_iff_idle`）、`…_unrefuted` 一族与 `…_not_stopping` 一族说的恰是它们的陈述；平息（settles）一族不是：它们的陈述是双重否定，只说从某步起停止不能被否证，名称却说停止。对每个不上升的量找出那一步是全知原则，不能证明，所以限定须进入名称。按[工作板](../../../BECOMING-WORKBOARD.md)由整合者认领为 P58b，一次检查器运行。
+
+```text
+Result(s): 改名，不是新结果；space-and-its-parts 加 stop_unrefuted_iff，两项记录（space-and-its-parts、continued-change-needs-openness）
+           的断言与别名改用新名
+Delta: 六个引理改名，陈述与证明不变（见下表）。新增 stop_unrefuted_iff（Space，只用前导）：并非此后每一步之后，后来的发生都不能被
+       否证，恰当从某步起不再发生不能被否证。每个改名的引理陈述左边，名称说右边，这一等价使二者是同一命题。
+Supplied premises / correspondence: 无；名称的条件是 Ren 的（“as long as the proof has the exact meaning”），逐个核对与新名称是 AI 的
+Evidence: 合并检查器回执 20261011T232354.807725Z（Space 63 项定理；2824 项定理、4113 项声明审计，全部源声明公理报告为空；核心闭包 57 个模块，包 55 个），
+          外围回执 20261011T232716.311380Z
+Boundary: 实际找出那一步需要有限全知原则（World.lpo_of_finite_ends、Listed.lpo_of_few、Web.lpo_of_ending，P58）；World.rests 名称说
+          静止而陈述是生起与止息都不复现，比在某步归于静止弱，P58 之前已有，未改，留给 Ren；P59 的重新奠定未采用；尚无独立审查
+Integration: 核心 Space、Openness、Decidedness 的名称与文档字符串；章节 §9 的两行、术语表与总数；统一计划；Lean README；清点工具的名称表
+             与清点页；阅读条目；两项记录；工作板 P58b
+```
+
+**改名对照。**
+
+| 原名 | 新名 | 陈述（不变） |
+|---|---|---|
+| `falls_settle` | `falls_stop_unrefuted` | 从 `T` 起不上升的量：并非此后每一步之后，再有下降都不能被否证 |
+| `amount_settles` | `amount_still_unrefuted` | 同一个量从某步起不变，不能被否证 |
+| `Web.generation_settles` | `Web.generation_stops_unrefuted` | 从 `T` 起被平衡与耗散的家族：并非此后每一步之后，体现的成员再有生起都不能被否证 |
+| `Flow.change_settles` | `Flow.change_stops_unrefuted` | 所立者的普查之下、跨每步下降不被否证时：并非此后每一步之后，再有立着的变化都不能被否证 |
+| `World.arising_settles_from` | `World.arising_stops_unrefuted_from` | 同上而生起者体现：并非此后每一步之后，再有生起都不能被否证 |
+| `Listed.few_of_settled` | `Listed.few_of_stop_unrefuted` | 每步被列出、开始成立从某步起停止不能被否证（假设 `settled` 改称 `stopping`）：曾成立者不是无界多 |
+
+**为什么这样命名。** 核心已有 `…_unrefuted` 一族（如 `World.arising_unrefuted_covering`），说“不能被否证”。新名把限定放进名称：`falls_stop_unrefuted` 读作“下降停止，不能被否证”。`stop_unrefuted_iff` 证明双重否定的两种写法等价，所以名称所说（从某步起停止不能被否证）与陈述（并非此后每一步之后再发生都不能被否证）是同一命题。术语“平息／settles”改为“停止不能被否证／stopping unrefuted”。
+
+**作者反审。**
+1. **改名是否改变了定理？** 没有：陈述与证明不变，只加一个等价引理；Space 由 62 项定理增至 63 项即此引理。
+2. **`Listed.few_of_stop_unrefuted` 的假设没有起点。** 它是起点为 0 的情形，`0 ≤ N` 总成立；文档字符串如此注明。
+3. **为什么不把陈述改成右边的形式？** 两种形式等价；改陈述会动到用它们的证明，而 Ren 的条件是证明有确切的意义，等价引理满足它而不改证明。
+4. **`World.rests`。** 名称说静止，陈述是 ¬ 复现，比在某步归于静止弱；这是 P58 之前的名称，未改，留给 Ren。
+
+**检查。** 改动的三个模块先在暂存树中从前导编译；合并检查器回执 20261011T232354.807725Z：2824 项定理、4113 项声明审计，公理报告全部为空；外围桥接对这个核心重查，通过：回执 20261011T232716.311380Z。
+
+**边界。** 只改名称与文档字符串，加一个等价引理；历史文字（§84、工作板、冻结的落地包、来源与记录的历史条目）保留旧名作为历史。尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -6702,4 +6747,11 @@ On the AI's readings, pending Ren: a mechanism is a projection of configuration 
 
 On the AI's readings, pending Ren: an attractor is an absorbing region a configuration outside it enters, and its basin is what is drawn into it; path dependence and lock-in are one law, what is drawn in never comes back; within finitely many configurations attraction and merging go together (classically an iff), while an open world can draw without merging; the future narrows, and read with Ren's "more future, not less" (`Becoming.Admission`) an attractor is the unfolding narrowing its own future; Capture's held rule (P62, `Captured`) reads as an absorbing region in the rule, and Admission's absorbing end (`Flow.unsupported_stays`) as an absorbing region on flows and webs under its premises; the meta-attractor of winning, read as an absorbing region of the course that only a move not keeping it leaves, is the AI's reading and is not derived. What is not derived: which regions actual unfoldings enter, how deep or wide a basin is (no measure or topology on configurations), attraction for processes that are not determined, and any escape from beyond the representation. The main law is close to definitional, an identification of lock-in with not returning, and the mathematics (eventual periodicity on finite sets) is reused; the counterreview in section 89 says so. Record added: attraction-is-not-returning. Receipt 20261011T225632.916383Z (Attraction 47); periphery receipt 20261011T230225.829392Z. Not yet independently reviewed; the author's counterreview is in section 89.
 
-The package now has 2823 theorems and 4112 declaration audits, over a core closure of 57 modules and a package of 55, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 85 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T211111.085532Z).
+**Exact names for P58 (P58b).** On 12 October 2026 Ren wrote “be the integrator from now on, let's adopt these names for now, as long as the proof has the exact meaning” ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-integrator-and-names.md)). On the AI's reading, pending Ren, the names P58 and P59 introduced are adopted provisionally, each on condition that its Lean statement means exactly what it says; P59's re-founding is not adopted, and the readings of “too dualist” and “local” are not confirmed. Checked one by one, `Decided`, `Indicates`, `Counts`, `CountsAcross`, `Flow.withImbalance`, the added relatum being idle (`Flow.balancesOn_iff_idle`), the `…_unrefuted` names and the `…_not_stopping` names say exactly what their statements say. The settling names do not: their statements are double negations, saying only that stopping from some step on cannot be refuted, and finding the step for every amount that does not rise is a principle of omniscience. P58b renames them, statements and proofs unchanged, as the integrator's one checker run.
+- **The renames.** `falls_settle` → `falls_stop_unrefuted`; `amount_settles` → `amount_still_unrefuted`; `Web.generation_settles` → `Web.generation_stops_unrefuted`; `Flow.change_settles` → `Flow.change_stops_unrefuted`; `World.arising_settles_from` → `World.arising_stops_unrefuted_from`; `Listed.few_of_settled` → `Listed.few_of_stop_unrefuted` (its hypothesis `settled` now `stopping`).
+- **The equivalence.** `stop_unrefuted_iff` (Space, prelude only): it is not the case that after every step from `T` on a later occurrence stays unrefuted exactly where that occurrences stop from some step on cannot be refuted. Each renamed lemma states the left side and its name says the right, so they are one proposition. The glossary term 平息／settles becomes 停止不能被否证／stopping unrefuted.
+- **Boundary.** Finding the step needs the limited principle of omniscience (P58). `World.rests`, a name older than P58, states that neither arising nor ceasing recurs, weaker than coming to rest at a step; it is left to Ren. Historical text keeps the old names.
+
+Receipt 20261011T232354.807725Z (Space 63). Not yet independently reviewed; the author's counterreview is in section 90.
+
+The package now has 2824 theorems and 4113 declaration audits, over a core closure of 57 modules and a package of 55, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T232716.311380Z).

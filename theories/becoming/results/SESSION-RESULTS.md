@@ -16,7 +16,7 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-11T23:14:26.051588+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-11T23:40:07.285315+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
@@ -322,7 +322,7 @@ Catalogues, handoffs, pushes and presentation exports preserve or communicate re
 
 ## 双语阅读版的覆盖 Reading edition coverage
 
-The earlier reading registers contain 139 chapters; the current directory contained 139 at this checkpoint. 2 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
+The earlier reading registers contain 139 chapters; the current directory contained 139 at this checkpoint. 1 registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.
 
 旧阅读版的逐章摘要保留其核读版本；新增章节在下方单列，现有摘要的待核读版本不以刷新哈希消除。
 

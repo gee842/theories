@@ -58,8 +58,9 @@ name"); they do not claim Ren's words.
   kind.
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
   in which whatever arises is embodied, neither arising nor ceasing recurs, with no decision
-  procedure (`World.rests`): the stock does not rise, so generation settles
-  (`falls_settle`, `Web.generation_settles`), which refutes the arising that ceasing leaves
+  procedure (`World.rests`): the stock does not rise, so that generation stops from some step
+  on cannot be refuted (`falls_stop_unrefuted`, `Web.generation_stops_unrefuted`; read through
+  `stop_unrefuted_iff`), which refutes the arising that ceasing leaves
   unrefuted under a covering list (`World.arising_unrefuted_covering`). Each premise is
   needed (`World.rests_needs`): a world
   burning fresh fuel keeps arising with infinitely many relata, two sides handing a
@@ -126,28 +127,41 @@ theorem unrefuted_falls_exceed {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤
         (Nat.le_of_lt_succ (Nat.lt_of_lt_of_le down (Nat.le_trans
           (Eq.subst (motive := fun x => q x ≤ q M) same.symm (still_le still from_ k)) le)))
 
-/-- An amount that does not rise from step `T` on settles: it is not the case that after every
-step from `T` on a later fall stays unrefuted. No decidedness is needed;
-`falls_finitely_from_floor` is the weaker form, that its falls do not recur. -/
-theorem falls_settle {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
+/-- Stopping from some step on cannot be refuted exactly where it is not the case that after
+every step from `T` on a later occurrence stays unrefuted. Each `…_unrefuted` stopping lemma below
+states the left side; this reads it as the right. No decidedness: actually finding the step
+would need it. -/
+theorem stop_unrefuted_iff {P : Nat → Prop} {T : Nat} :
+    (¬ ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ P t) ↔ ¬ ¬ ∃ M, T ≤ M ∧ ∀ t, M ≤ t → ¬ P t :=
+  ⟨fun h no => h fun M from_ none_ => no ⟨M, from_, fun t later holds => none_ ⟨t, later, holds⟩⟩,
+   fun nn all => nn fun ⟨M, from_, none_⟩ => all M from_ fun ⟨t, later, holds⟩ =>
+     none_ t later holds⟩
+
+/-- That the falls of an amount not rising from step `T` on stop from some step on cannot be
+refuted: it is not the case that after every step from `T` on a later fall stays unrefuted
+(`stop_unrefuted_iff`). No decidedness is needed; `falls_finitely_from_floor` is the weaker
+form, that its falls do not recur. -/
+theorem falls_stop_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ q (t + 1) < q t :=
   fun falls => unrefuted_falls_exceed still falls (q T) T (Nat.le_refl T) (Nat.le_refl _)
 
-/-- So the amount stays the same from some step on, which cannot be refuted. -/
-theorem amount_settles {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
+/-- So that the amount stays the same from some step on cannot be refuted. -/
+theorem amount_still_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
     ¬ ¬ ∃ M, T ≤ M ∧ ∀ t, M ≤ t → q (t + 1) = q t :=
-  fun never => falls_settle still fun M from_ none_ => never ⟨M, from_, fun t later =>
+  fun never => falls_stop_unrefuted still fun M from_ none_ => never ⟨M, from_, fun t later =>
     Nat.le_antisymm (still t (Nat.le_trans from_ later))
       (Nat.ge_of_not_lt fun down => none_ ⟨t, later, down⟩)⟩
 
-/-- Embodied members of a family balanced and dissipated on from step `T` on settle: it is not
-the case that after every step from `T` on a later arising of one of them stays unrefuted. No
+/-- That the arising of embodied members of a family balanced and dissipated on from step `T`
+on stops from some step on cannot be refuted: it is not the case that after every step from `T`
+on a later arising of one of them stays unrefuted (`stop_unrefuted_iff`). No
 decidedness is needed; `Web.generation_ceases_from` is the weaker form, that their arising does
 not recur. -/
-theorem Web.generation_settles {X : Type} {W : Web X X} {L : Flow X X} {ds : List X} {T : Nat}
+theorem Web.generation_stops_unrefuted {X : Type} {W : Web X X} {L : Flow X X} {ds : List X}
+    {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
-  fun arising => falls_settle (q := W.stock ds) (T := T)
+  fun arising => falls_stop_unrefuted (q := W.stock ds) (T := T)
     (fun t later => Nat.le_trans (Nat.le_add_right _ _)
       ((balances t later).runs_down (dissipates t later)))
     fun M from_ falls => arising M from_ fun ⟨t, _, later, mem, embodied, arises⟩ =>
@@ -267,19 +281,20 @@ theorem arising_unrefuted_covering {ds : List w.Relatum} {T : Nat}
 /-- Rest, from a step on: in any world whose arising is embodied, where from some step on the
 active relata lie in one family, balanced and dissipated on at each of those steps, neither
 arising nor ceasing recurs. No decision procedure, no finiteness of the world, no closure and
-no premise on other families or steps: generation settles (`Web.generation_settles`), which
+no premise on other families or steps: that generation stops cannot be refuted
+(`Web.generation_stops_unrefuted`), which
 refutes the arising that ceasing leaves unrefuted (`arising_unrefuted_covering`). -/
 theorem rests_covering {ds : List w.Relatum} {T : Nat}
     (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds)
     (balances : ∀ t, T ≤ t → w.flow.BalancesOn w.web ds t)
     (dissipates : ∀ t, T ≤ t → w.flow.DissipatesOn ds t) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  have settles := Web.generation_settles balances dissipates
-  ⟨fun arising => settles fun M from_ none_ => match arising M with
+  have unrefuted := Web.generation_stops_unrefuted balances dissipates
+  ⟨fun arising => unrefuted fun M from_ none_ => match arising M with
       | ⟨t, x, later, arises⟩ => none_ ⟨t, x, later,
           covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later)) x arises.2,
           embodied t x arises, arises⟩,
-   fun ceasing => settles fun M from_ none_ =>
+   fun ceasing => unrefuted fun M from_ none_ =>
       arising_unrefuted_covering covers ceasing M from_ fun ⟨t, x, later, mem, arises⟩ =>
         none_ ⟨t, x, later, mem, embodied t x arises, arises⟩⟩
 

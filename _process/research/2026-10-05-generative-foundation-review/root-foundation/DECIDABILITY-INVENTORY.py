@@ -93,10 +93,14 @@ FORMS = {
     'persists': '`stays_failing`（不成立的持续，不判定 / failing persists, no decision）；`persists_of_em` 示其需要 / '
                 'shows the need',
     'comes_after': '`comes_after_unrefuted`（不判定，那一步不能被否证 / no decision, the step unrefuted）',
-    'Listed.few_of_quiet': '`Listed.few_of_settled`（不判定 / no decision, P58）',
-    'World.few_active': '`Listed.few_of_settled`、`World.rest_few`（不判定 / no decision, P58）',
+    'Listed.few_of_quiet': '`Listed.few_of_stop_unrefuted`（不判定 / no decision, P58）',
+    'World.few_active': '`Listed.few_of_stop_unrefuted`、`World.rest_few`（不判定 / no decision, P58）',
     'Flow.Enclosed.around': '`Flow.Enclosed.around_not_not`（不判定 / no decision）',
     'Flow.Enclosed.aroundStanding': '`Flow.Enclosed.aroundStanding_not_not`（不判定 / no decision）',
+    'Flow.Balances.comparison_within_response_of_decidable': '`Flow.Balances.comparison_within_response`（覆盖不被否证在回应所及之内者，不判定 / covering what is not refuted to be within the reach, no decision, P65）',
+    'Law.none_drawn_lossless': '`Law.none_drawn_merges_nothing`（不判定 / no decision, P67）',
+    'Law.lossless_iff_none_drawn': '`Law.Lossless.not_drawn`、`Law.none_drawn_merges_nothing`（不判定 / no decision, P67）',
+    'Web.scores_alike_iff': '`Web.selects_alike_iff`（选择而非分数，不判定 / selections rather than scores, no decision, P64）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -124,6 +128,7 @@ LABEL = {
     'redirect': '移开依存 / dependence moved', 'keep': '保留的列表 / a kept list',
     'once': '不重复的列表 / a list without repetition', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
+    'indicate': '造出指示 / builds an indicator',
 }
 # Why a proof uses decidedness its statement does not mention. Every such theorem is classified here (asserted).
 PROOF_REASON = {
@@ -135,6 +140,9 @@ PROOF_REASON = {
             'splits on whether two conditions or relata are the same, or a condition is in a family',
     'split': '按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its '
              'failing case',
+    'indicate': '造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the '
+                'proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such '
+                'as a score',
 }
 PROOF_KIND = {
     **{n: 'find' for n in [
@@ -163,9 +171,11 @@ PROOF_KIND = {
         'Web.generation_fed_from_beyond', 'forces_iff_noSplit', 'Flow.exchangeFollows_of_policy',
         'Flow.policy_keeps_difference', 'Flow.policy_uses_after_failure', 'Flow.boundary_crossed',
         'Flow.region_not_a_cut', 'Flow.subthreshold_alike', 'Flow.subthreshold_alike_always', 'Web.alike_of_threshold',
-        'Web.tail_unrefuted']},
+        'Web.tail_unrefuted', 'Flow.Balances.comparison_within_response_of_decidable',
+        'Law.none_drawn_lossless', 'Law.lossless_iff_none_drawn']},
     **{n: 'split' for n in ['persists', 'Flow.Balances.adds_iff_exceeds_of_decidable',
                             'Valuation.significant_iff_reached']},
+    **{n: 'indicate' for n in ['Web.scores_alike_iff']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
