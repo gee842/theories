@@ -6,6 +6,7 @@ import Becoming.Dependence
 import Becoming.Return
 import Becoming.Horizon
 import Becoming.Joint
+import Becoming.Experiment
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
@@ -68,6 +69,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   once a part is withheld and read as intended when the move determines the step,
   belongs to the joint activity among formations; over a formation's events the run-level outcome is
   fixed by the tail, while the step-level test singles out the breaking event.
+* `Becoming.Experiment` (L3): what varying one's own act tests, and what it needs. Relative
+  to determinacy, the record fixes what a move does at a configuration exactly where the run
+  has taken it there; what one's act would have done otherwise is fixed only where the
+  configuration returns, and a kept history never returns. Read through a projection the step
+  factors through, one occasion stands for its whole class; a wrong projection misattributes,
+  is never refuted by moves in step with what it leaves out, and is refuted by moves varied
+  against it. The readings are the AI's, pending Ren.
 * `Becoming.Substitution` (L3): in the support-gated law, a consumer that substitutes
   a condition persists and still consumes on the whole-run reading, while the stepwise
   reading credits it until the sustaining formation loses support and withholds it from
