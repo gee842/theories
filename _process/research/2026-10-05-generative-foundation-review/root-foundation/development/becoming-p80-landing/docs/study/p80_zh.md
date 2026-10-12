@@ -1,0 +1,101 @@
+## {S}. 回应由动力学给出：反事实是规律的进程（P80）
+
+2026-10-12。P64–P68 落地（`bca9695b`）之后，Ren 说：“another agent has got this far, maybe merge first and see if there is something to work on”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-merge-first.md)）。AI 在本章 §8 的进一步证明中找到一项与 P65 相接、无人认领的：“他者有回应的比较，由动力学给出回应而不是另给第二个流”，它也是 P65 记录的下一步。AI 在工作板上认领为 P80，整合者（Universal Metaethical Core）接受并排在 P76 之后。提议与读法是 AI 的。P65（§87）在回应所及之内决定比较，给出两样：第二个流，与其余经识回应的前提（`Flow.RespondsThroughRegistration`）。本节把其余的交换给作一个规律，两样都推出。不加公理；交换律、它读已立者、进程可行与条件有限，每条都只作为用到它的定理的假设。属于第一部分。核心新增模块 `Becoming.Counterfactual`（L4），{N_MODULE} 项定理，导入 `Becoming.Response` 与 `Becoming.Mechanism`，不改任何已有模块。
+
+成果记录新增一项：[counterfactual-is-the-course](../../../../theories/becoming/results/records/counterfactual-is-the-course.md)；推进三项：[comparison-where-the-rest-responds](../../../../theories/becoming/results/records/comparison-where-the-rest-responds.md)（P65 的前提由律推出，按整合者的要求推进该记录而不另立平行的主张）、[feedback-and-reach](../../../../theories/becoming/results/records/feedback-and-reach.md)、[causal-models-as-processes](../../../../theories/becoming/results/records/causal-models-as-processes.md)。
+
+```text
+Result(s): 复用 comparison-where-the-rest-responds（Flow.RespondsThroughRegistration、Flow.WithinResponse、
+           Flow.Balances.comparison_within_response；Loop 的流、网与 own、firstPart）、testing-within-registration
+           （Web.Registers、Web.RegistersAlike、Web.RegistersAlikeUpTo、Web.DependsOn 经 Feedback）、causal-models-as-processes
+           （inputs、trajectory、inputs_intervention_unfixed、inputs_model_fixes）、laws-of-one-step（Flow.Balances、total、
+           total_congr_on）、recurrence-without-premise（Law.orbit、le_succ_cases、gap_of_le、mem_cons_split）；新增上列一项，
+           推进上列三项
+Delta: 交换律：ExchangeLaw、AgreeUpTo、ExchangeLaw.GivesAlike、ExchangeLaw.Nonanticipating、ExchangeLaw.Through、
+       ExchangeLaw.InsensitiveAt、ExchangeLaw.Sensitive、Flow.Follows、Flow.ActsAlike。
+       经识回应推出：ExchangeLaw.Through.responds、ExchangeLaw.Nonanticipating.through_all。
+       反事实由动作固定：Flow.totals_alike_of_each、exchange_alike_of_agree、levels_fixed、counterfactual_fixed。
+       生成：ExchangeLaw.takenUnder、givenUnder、extend、history、levels、course、Feasible、withAct、next、Web.withLevel、
+       ExchangeLaw.history_succ_of_le、history_stable、history_agree、levels_zero、levels_succ、course_follows、totals_under、
+       sub_add_back、sub_add_back_iff、course_balances_iff、history_orbit。
+       敏感是最小的识：nat_eq_of_not_not、ExchangeLaw.Through.registers_of_sensitive、mixIn、mixIn_either、mixIn_listed、
+       swap_alike、mixIn_alike、alike_of_sensitive_agree、ExchangeLaw.Nonanticipating.through_of_observed、
+       ExchangeLaw.Nonanticipating.through_sensitive。
+       比较：comparison_of_courses、comparison_through_sensitivity、ExchangeLaw.withAct_follows、
+       ExchangeLaw.withAct_nonanticipating、comparison_with_act、counterfactual_is_course、ExchangeLaw.course_unique。
+       输入：ExchangeLaw.ofMoves、ExchangeLaw.stepBy、ExchangeLaw.course_trajectory、ExchangeLaw.act_not_taken。
+       见证：Loop.replyLaw、replyLaw_nonanticipating、replyLaw_through、escalation_follows、quiet_follows、responds_by_law、
+       courses_fixed
+Supplied premises / correspondence: 不加公理；其余遵从的交换律是给出的；律读已立者（ExchangeLaw.Nonanticipating）是用到它的
+       定理的假设；生成的进程可行（ExchangeLaw.Feasible）是 comparison_with_act、counterfactual_is_course 与
+       ExchangeLaw.course_unique 的假设，已证明等价于生成的流平衡；敏感的形式假设条件有限（一个列表含每个条件）且条件的相等可判定；
+       实际的流平衡、两个流的在场形成相同与起始相同，如 P65；不判定敏感，只判定两个数是否相等；离散的步（从第 0 步计）、自然数的量；
+       读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 {RECEIPT}（Becoming.Counterfactual {N_MODULE} 项定理，全部源声明公理报告为空），外围回执 {PERIPHERY}
+Boundary: 律本身不推出（其余遵从哪个律）；读已立者不推出；条件无穷多时敏感是否仍是最小的识未陈述；差别到达多少不量；不可行的
+          动作没有进程，本节不给它别的读法；部分的动作以“动作相同”（逐值相同）或以一个律给出；不含伦理谓词
+Integration: 计划 P80；回答本章 §8“反馈与所及”中“他者有回应的比较，由动力学给出回应而不是另给第二个流”；把 P65 的给出的前提
+             变为定理（推进 comparison-where-the-rest-responds），把一个动作的反事实接到 P68 的标准因果模型（干预是未取的动作）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `ExchangeLaw` | 交换律：从水平历史读出每个形成跨过每步从每个条件取用与给予多少 |
+| `AgreeUpTo`、`ExchangeLaw.GivesAlike` | 两段水平历史到第 t 步为止每步相同；律在第 t 步对 h 在两段历史下给出相同的取用与给予 |
+| `ExchangeLaw.Nonanticipating` | 律读已立者：跨过第 t 步只读到第 t 步为止的历史 |
+| `ExchangeLaw.Through` | 律对部分之外的每个形成只读其所识：识得相同到第 t 步的两段历史，律在第 t 步给出相同 |
+| `ExchangeLaw.InsensitiveAt`、`ExchangeLaw.Sensitive` | 跨过第 t 步，h 的交换由其他条件到第 t 步的水平固定：c 的水平与第 t 步之后的水平都不造成差别；h 的交换对 c 敏感，是指某步不如此 |
+| `Flow.Follows`、`Flow.ActsAlike` | 部分之外，流在其自身水平下按律交换；部分在两个流中动作相同 |
+| `ExchangeLaw.Through.responds` | 经识回应推出：其余遵从一个只读各形成所识的律时，其余在律的任意两个进程中经识回应，即 P65 的前提，对这两个流不另给什么 |
+| `ExchangeLaw.Nonanticipating.through_all` | 每个读已立者的律都经识一切而读 |
+| `Flow.totals_alike_of_each`、`exchange_alike_of_agree` | 每个形成交换相同时总量相同；水平到第 t 步相同、部分动作相同、其余遵从读已立者的律时，第 t 步每个形成交换相同 |
+| `levels_fixed`、`counterfactual_fixed` | 反事实由动作固定：两个平衡的流在场形成相同、起始相同，部分动作相同，其余遵从同一个读已立者的律，则每步水平相同、每个形成交换相同 |
+| `ExchangeLaw.takenUnder`、`givenUnder`、`extend`、`history`、`levels`、`course` | 律从起始水平逐步生成：至今历史下的总取用与总给予，跨过一步把历史延伸，到第 n 阶段的历史，生成的水平，生成的流 |
+| `ExchangeLaw.history_succ_of_le`、`history_stable`、`history_agree`、`levels_zero`、`levels_succ` | 再生成保留已生成的；第 n 阶段的历史到 n 为止就是生成的水平；生成的水平从起始水平开始，跨过一步是之前的水平加所给减所取 |
+| `ExchangeLaw.course_follows`、`totals_under` | 生成的流对每个形成按律交换；律读已立者时，至今历史下的总量就是生成的流的总量 |
+| `sub_add_back`、`sub_add_back_iff` | 取走再加回，恰在所取不多于所有时复原；不用 `Nat.sub_add_cancel`（它依赖 propext） |
+| `ExchangeLaw.Feasible`、`ExchangeLaw.course_balances_iff` | 进程可行：律从不从一个条件取用多于其上所立与所给的；律读已立者时，生成的流平衡恰当可行 |
+| `ExchangeLaw.next`、`ExchangeLaw.history_orbit` | 生成的历史是阶段与至今历史上一个确定律的轨道 |
+| `Web.withLevel` | 以另一水平历史读一个网（依存不变） |
+| `nat_eq_of_not_not` | 不被否证的数的相等成立（数的相等可判定） |
+| `ExchangeLaw.Through.registers_of_sensitive` | 律经一个识而读时，它对一个形成敏感的每个条件，都不在形成所依存与所观察的之外（双重否定） |
+| `mixIn`、`mixIn_either`、`mixIn_listed`、`swap_alike`、`mixIn_alike` | 逐个条件把一段历史换成另一段；读已立者的律在律不敏感或两段历史在该条件上相同之处，换一个条件不改变律所给 |
+| `alike_of_sensitive_agree` | 条件有限时，读已立者的律在两段历史于其敏感的每个条件上到该步相同之处给出相同 |
+| `ExchangeLaw.Nonanticipating.through_of_observed`、`ExchangeLaw.Nonanticipating.through_sensitive` | 所以条件有限时，读已立者的律经每个观察其敏感者的识而读，尤其经其敏感本身而读 |
+| `comparison_of_courses` | 回应由动力学给出的比较：律的两个平衡的进程在场形成相同、起始相同，律经一个识而读时，对覆盖每个不在经此识画出的回应所及之外者的任何意义，每个保留另一个上有意义者恰如包含它，两者都不增加恰当两者都不超出 |
+| `comparison_through_sensitivity` | 条件有限时不须给出识：回应所及经律的敏感画出 |
+| `ExchangeLaw.withAct`、`ExchangeLaw.withAct_follows`、`ExchangeLaw.withAct_nonanticipating` | 部分按 act、其余按律；生成的进程中其余遵从律；两者都读已立者时合起来的律也读已立者 |
+| `comparison_with_act` | 一个动作与另一个动作所生成的、可行的进程之间的比较，在经律之识画出的回应所及之内决定，不另给第二个流与回应 |
+| `counterfactual_is_course` | 一个动作的反事实是它生成的进程：部分动作与进程中相同、其余遵从律、从进程的水平起的平衡的流，有进程的水平与交换 |
+| `ExchangeLaw.course_unique` | 每个形成（部分在内）都遵从一个读已立者的律时，平衡的流就是律生成的进程（进程可行时） |
+| `ExchangeLaw.ofMoves`、`ExchangeLaw.stepBy`、`ExchangeLaw.course_trajectory` | 部分做一列动作时生成的历史，是以部分的动作为输入、无噪声的标准模型（P68 的 `inputs`）的轨道 |
+| `ExchangeLaw.act_not_taken` | 未取的动作是干预：这个模型的一次运行在第 t 步之前未在 x 取动作 a 时，记录不固定其结果，模型固定它（`inputs_intervention_unfixed`、`inputs_model_fixes` 的实例） |
+| `Loop.replyLaw`、`Loop.replyLaw_nonanticipating`、`Loop.replyLaw_through` | P65 的 `Loop` 中第二个形成的律：自身条件下降之后的那一步从第一个的条件取用两单位；它读已立者，只读第二个所观察的 |
+| `Loop.escalation_follows`、`Loop.quiet_follows`、`Loop.responds_by_law` | 有动作与无动作的流都遵从这个律；所以 P65 逐情形检查的 `Loop.responds` 由律推出 |
+| `Loop.courses_fixed` | 两个流各由第一个的动作固定：两个形成在场、第二个遵从律、两个条件都从二起的平衡的流，第一个动作如有动作的流时就有其水平与交换，第一个不动作时就有无动作的流的 |
+
+**它回答了什么。**
+- **反事实不是另给的。** 其余遵从一个读已立者的律时，部分动作相同的两个平衡的流是一个流（`counterfactual_fixed`）；所以给出律之后，一个动作至多有一个进程。律逐步生成进程，生成的流平衡恰当可行（`ExchangeLaw.course_balances_iff`）；一个动作的反事实就是它生成的进程（`counterfactual_is_course`），每个形成都遵从律时平衡的流就是律的进程（`ExchangeLaw.course_unique`）。
+- **P65 的前提成为定理。** 律只读各形成所识时，其余在律的任意两个进程中经识回应（`ExchangeLaw.Through.responds`）。每个读已立者的律都经识一切而读（`ExchangeLaw.Nonanticipating.through_all`）；条件有限时，它经其敏感而读（`ExchangeLaw.Nonanticipating.through_sensitive`），而它所经的每个识，连同所依存的，都不漏掉其敏感者（`ExchangeLaw.Through.registers_of_sensitive`，双重否定）。所以“经识回应”中的识可以取作律的敏感，不必另给：前提只剩律本身。
+- **比较由动力学给出。** 回应所及经律的识画出，条件有限时经其敏感；比较在律的两个进程之间、在其中决定（`comparison_of_courses`、`comparison_through_sensitivity`），一个动作与另一个动作所生成的进程之间亦然（`comparison_with_act`）。
+- **与标准因果模型接上。** 进程是 P68 中以部分的动作为输入的模型的轨道（`ExchangeLaw.course_trajectory`）；未取的动作是干预，记录不固定其结果，模型固定它（`ExchangeLaw.act_not_taken`）。P53 说动作造成什么只相对于无此动作之历史的模型才可检验；这里那个模型就是律。
+- **见证。** P65 的 `Loop` 中第二个形成的回应是律，`Loop.responds` 由律推出，两个流各由第一个的动作固定（`Loop.responds_by_law`、`Loop.courses_fixed`）。
+
+**读法（AI 的，待 Ren）。**
+- 反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程：可行时存在，由动作固定。与 Ren 在 P69 所说的“there are no two realities”相应（这一对应是 AI 的）。一个会取用多于所立与所给的动作没有进程。
+- 对遵从读已立者之律的其余，P65 的前提不是另加的关于形成怎样行为的假设：无论其余遵从哪个这样的律，它都经一个识而读，条件有限时即其交换所敏感者。读作识：形成识其交换所敏感的。敏感越窄，一个动作的差别所能到之处越窄。
+- 一个未取的动作是标准因果模型意义上的干预：记录不固定其结果，律固定它。
+
+**作者反审。**
+1. **推出的部分近于定义。** `ExchangeLaw.Through.responds` 只是把律的读法转到两个流上；实质的新内容是：反事实由动作固定（对步作归纳，经平衡相消）、生成与可行的等价、敏感是最小的识（逐个条件替换，不判定敏感）、与 P68 模型的实例，以及 `Loop` 由律推出。
+2. **前提移到律上。** 推出的不是“形成只经其识回应”，而是：形成遵从一个律时，它经律的敏感而读。哪个律、律是否读已立者，仍是给出的。读已立者排除对未来的读取；对未被识者的回应、噪声、未表示为条件的输入，现在落在律的敏感之内，所以回应所及变宽而不是被排除。
+3. **条件有限。** `through_sensitive` 用一个含每个条件的列表与可判定的相等。条件无穷多时，一个律可以对每个单独的条件都不敏感而仍读许多条件（例如只看从某处起是否全为零的读法）；这样的律要构造需要非构造的函数，本模块没有陈述，也没有反例。
+4. **依存与观察不对称。** 识得相同只要求依存的条件被同样容许（阈值），被观察的条件水平相同。所以 `registers_of_sensitive` 的结论是敏感者在依存或观察之内，而 `through_of_observed` 要求敏感者被观察：只依存而敏感于其水平的律，不经只含依存的识而读。
+5. **可行。** 生成用自然数的截断减法；可行是生成的流平衡的条件（`course_balances_iff`），不是额外的选择。不可行的动作没有进程，本模块不给它另外的读法（例如截断的读法）。
+6. **部分的动作。** `counterfactual_fixed` 与 `counterfactual_is_course` 要求部分的动作逐值相同；部分以读水平的策略行动时，用 `ExchangeLaw.course_unique`（把部分的策略并入律）。
+7. **见证是最小的。** `Loop` 只有一个回应；它显示 P65 的前提在那里由律推出，不是回路的一般理论。
+
+**检查。**
+- 模块在暂存区对 main 的核心（含 P64–P68）编译，没有错误或警告；逐条审计全部 116 个常量，公理报告全部为空。没有用 `simp`、`omega`、`Classical` 或 `native_decide`；数的截断减法的引理自证，不用依赖 propext 的 `Nat.sub_add_cancel`；匹配写全，不用通配，以免生成依赖 propext 的辅助常量。
+- 合并检查器在落地队列中检查一次，通过：回执 {RECEIPT}。`Becoming.Counterfactual` 的 {N_MODULE} 项定理全部空依赖；包共 {N_THM} 项定理、{N_DECL} 项声明审计，核心闭包 {N_CORE} 个模块。外围桥接对这个核心重查，通过：回执 {PERIPHERY}。
+- 尚无独立审查。

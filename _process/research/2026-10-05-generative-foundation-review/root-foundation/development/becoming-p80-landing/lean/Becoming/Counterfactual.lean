@@ -73,9 +73,10 @@ beyond the law of exchange itself and what each theorem names.
   gives with the part acting otherwise, fixed by the act where it exists, and it exists only where
   the law could be followed: a course that would take more than stands and is given is no
   course.
-- P65's response premise is not an assumption about how formations behave. Whatever law their
-  exchange follows, it reads through a registration, namely what the exchange is sensitive to;
-  read as 识, a formation registers what its own exchange is sensitive to. The narrower that
+- For a rest following a law of what has stood, P65's response premise is no further assumption
+  about how formations behave. Whatever such law their exchange follows, it reads through a
+  registration, with finitely many conditions what the exchange is sensitive to; read as 识, a
+  formation registers what its own exchange is sensitive to. The narrower that
   sensitivity, the narrower the reach in which the difference an act makes can arrive.
 - An act not taken is an intervention in the sense of the standard causal model: the record does
   not fix its outcome, and the law does.
@@ -455,11 +456,11 @@ is not sensitive to it or the two histories agree on it. -/
 theorem swap_alike (na : law.Nonanticipating) {t : Nat} {h : F} {c : C}
     {X l l' : Nat → C → Nat} (either : ∀ s, s ≤ t → X s c = l s c ∨ X s c = l' s c)
     (agree : law.Sensitive h c → ∀ s, s ≤ t → l s c = l' s c) :
-    law.GivesAlike t h X (fun s e => if e = c then l' s e else X s e) :=
-  have off : ∀ s, s ≤ t → ∀ e, e ≠ c → X s e = (if e = c then l' s e else X s e) :=
+    law.GivesAlike t h X (mixIn X l' [c]) :=
+  have off : ∀ s, s ≤ t → ∀ e, e ≠ c → X s e = mixIn X l' [c] s e :=
     fun _ _ _ differ => (if_neg differ).symm
   have whenSensitive : law.Sensitive h c →
-      law.GivesAlike t h X (fun s e => if e = c then l' s e else X s e) := fun sensitive =>
+      law.GivesAlike t h X (mixIn X l' [c]) := fun sensitive =>
     na t h _ _ fun s le e =>
       match (inferInstance : Decidable (e = c)) with
       | isTrue same => by
