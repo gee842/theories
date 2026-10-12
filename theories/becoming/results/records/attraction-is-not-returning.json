@@ -172,8 +172,8 @@
     "en": "The main law is close to definitional: being drawn asks only for some absorbing region, and the region used is the configuration's own course ahead, so it identifies lock-in with not returning and is not an attractor in the classical sense (attracting a neighbourhood, minimal, with a topology or measure); the mathematics (eventual periodicity on finite sets, a non-injective map having a point that is not periodic) is reused; the main law is for determined laws only, and attraction for processes that are not determined (possibly or necessarily drawn) is not stated; which of two merged configurations is drawn is not chosen, only the double-negation form is stated; which regions actual unfoldings enter and how deep or wide a basin is are not derived; escape from beyond the representation is not stated, a determined law having no move or exchange from beyond; the witnesses have two configurations; the links to Capture, Admission and P53 are readings; the readings are the AI's, pending Ren; contains no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T232354.807725Z）：Becoming.Attraction 的 47 项定理全部空依赖，其中含 Law.DrawnInto.never_back、Law.drawn_iff_not_returns、Law.lost_drawn、Law.Merges.not_both_return、Law.lossless_iff_none_drawn、Law.drawnInto_returning与 Run.locked_in；同一回执覆盖包内 55 个模块（含只作导入的根模块与桥接），共 2824 项定理／4113 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 57 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §89；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261011T232354.807725Z): the 47 theorems of Becoming.Attraction all have empty axiom reports, among them Law.DrawnInto.never_back, Law.drawn_iff_not_returns, Law.lost_drawn, Law.Merges.not_both_return, Law.lossless_iff_none_drawn, Law.drawnInto_returning and Run.locked_in; the same receipt covers the package's 55 modules (including the import-only root and the bridge) with 2824 theorems/4113 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T232716.311380Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 57 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §89 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T235410.578553Z）：Becoming.Attraction 的 47 项定理全部空依赖，其中含 Law.DrawnInto.never_back、Law.drawn_iff_not_returns、Law.lost_drawn、Law.Merges.not_both_return、Law.lossless_iff_none_drawn、Law.drawnInto_returning与 Run.locked_in；同一回执覆盖包内 56 个模块（含只作导入的根模块与桥接），共 2895 项定理／4222 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261012T001545.944611Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 58 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §89；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T235410.578553Z): the 47 theorems of Becoming.Attraction all have empty axiom reports, among them Law.DrawnInto.never_back, Law.drawn_iff_not_returns, Law.lost_drawn, Law.Merges.not_both_return, Law.lossless_iff_none_drawn, Law.drawnInto_returning and Run.locked_in; the same receipt covers the package's 56 modules (including the import-only root and the bridge) with 2895 theorems/4222 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261012T001545.944611Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 58 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §89 of the integration note; there is no independent review yet."
   },
   "references": [
     {
@@ -274,19 +274,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "84be7f4dc228737d78a473bb3a22f8db96221492a694eb4786922f6e485e55d8",
+      "sha256": "ddc5a33379b86094cff2d6e9a95e5cc2c28383e79fc4104acb98e5f6aa427894",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3c64e79d11ab307304e751b1285c47806f4bb2414bf26d766c8b454d90b3c339",
+      "sha256": "363a9b39734a3a472d6ad87c242abb2031b867f5288e09acc81622a484d84b82",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f51f2fad843aee46661f31f776f8ab7bca3335993fed11f8993ce4dacf84e9df",
+      "sha256": "44803cfcb9d470a521b36d1291e72a2f1f4f3cf13cc0554f7150d125c753a4aa",
       "declarations": []
     },
     {

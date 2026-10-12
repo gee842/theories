@@ -160,7 +160,7 @@ PROOF_KIND = {
         'Web.ceasing_of_arising', 'Web.unceasing_iff_bounded', 'Web.unceasing_of_growth', 'came_between',
         'came_between_from', 'search', 'Web.sample_arises', 'Web.sample_ceases', 'Web.sample_ceasing',
         'Web.sample_unceasing', 'arises_within', 'ceases_within', 'World.arising_iff_ceasing',
-        'World.arising_iff_ceasing_covering', 'ceasing_step']},
+        'World.arising_iff_ceasing_covering', 'ceasing_step', 'Frame.claims_recur_iff']},
     **{n: 'build' for n in [
         'Flow.Enclosed.around', 'Flow.Enclosed.aroundStanding', 'World.Finite.countedWithin', 'World.Finite.counted',
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',

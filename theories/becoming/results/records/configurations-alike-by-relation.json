@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "id": "configurations-alike-by-relation",
+  "title": {
+    "zh": "配置由它怎样关系而定：互模拟所联系的配置相同，相同的配置通过同样的检验；有意义的描述恰把相同者等同，并承载规律；作为相等的确定性依赖于命名",
+    "en": "A configuration is how it relates: configurations related by a bisimulation are alike and pass the same tests; a description makes sense where it identifies exactly the alike ones, and then carries a law; determinacy as equality depends on names"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-12T12:00:00+00:00",
+  "claim": {
+    "zh": "设 F 与 G 是配置类型 S 与 S′ 上、动作类型 A 与主张类型 C 相同的框架。关系 B 是它们之间的互模拟（Bisimulation F G B），指被联系的配置实现同样的主张，任一方的每一步都由另一方以同一动作到被联系配置的一步相配；s 与 s′ 相同（Alike F G s s′），指有互模拟联系它们。相等是互模拟，互模拟的逆是互模拟，两个互模拟可以复合（Bisimulation.eq、Bisimulation.converse、Bisimulation.comp）；所以相同是自反、对称、传递的（Alike.refl、Alike.symm、Alike.trans），作为关系陈述，因为商需要 Quot.sound。相同的配置实现同样的主张（Alike.realized），以同一动作到相同配置的一步彼此相配（Alike.step），每个动作序列都到相同的配置（Bisimulation.trace、Alike.trace），通过同样的检验：一个动作序列之后的一个主张（Alike.tests）。框架在 s 处相同之下确定（DeterminedAt F s），指 s 处同一动作的任何两个结果相同；确定的框架处处如此（Determined.at）；相同之下的确定性沿相同传递（DeterminedAt.transfer），它成立时同一动作把相同的配置带到相同的配置（DeterminedAt.goAlike）。Twins 中起点以一个动作有两个后继：它们相同（Twins.left_alike_right），框架不确定（Twins.not_determined），而它的起点与只有一个后继的框架的起点相同，后者确定，所以双胞胎在起点处相同之下确定（Twins.alike_one）。交换之律经“某个关系项立于某量”这些主张读（exchangeFrame），在每个关系项上相等是互模拟（exchange_pointwise_bisimulation）；水平相同，恰当它们在每个关系项上相等（exchange_alike_iff、exchange_alike_of_pointwise、exchange_pointwise_of_alike）；这条律在每个水平处相同之下确定（exchange_determinedAt）。配置的一个描述 π 有意义（MakesSense F π），指它恰把相同的配置等同；它有意义，恰当被它等同这一关系是互模拟且它等同每一对相同者（makesSense_iff）；有意义的描述等同同样的配置（MakesSense.unique）；框架处处相同之下确定时，有意义的描述承载规律（MakesSense.carries，经 Becoming.Mechanism 的 carries_law_iff）；以配置自身命名有意义，恰当相同的配置是同一个（makesSense_id_iff），双胞胎的命名没有意义（Twins.naming_senseless）。对确定的律经一个识读（Law.registered next o，主张是所识者），配置相同，恰当它们所识的未来相同（Law.SameFuture、Law.alike_iff_sameFuture；Law.alike_future、Law.sameFuture_bisimulation），这时有意义的描述承载规律（Law.MakesSense.carries）。外围桥接（Becoming.Bridge）中：RelationalDynamics 的 Deeper.Bisimulation 就是核心的没有主张的框架之间的互模拟（Frame.unclaimed、deeper_bisimulation_iff），所以 static 与 toggle 中一方的每个配置都与另一方的每个配置相同（static_toggle_alike）；ExplanatoryBranching.Bisimulation 就是以模型的条件为主张的框架之间的互模拟（Frame.ofModel、branching_bisimulation_iff），相同的配置通过每个分支检验，否定与合取在内（Alike.same，经 bisimulation_implies_same）。不用 Lean 公理。",
+    "en": "Let F and G be frames on configurations S and S′ with the same moves A and claims C. A relation B is a bisimulation between them (Bisimulation F G B) where related configurations realize the same claims and each step of either is matched by a step of the other by the same move into related configurations; s and s′ are alike (Alike F G s s′) where some bisimulation relates them. Equality is a bisimulation, the converse of a bisimulation is one, and two compose (Bisimulation.eq, Bisimulation.converse, Bisimulation.comp); so likeness is reflexive, symmetric and transitive (Alike.refl, Alike.symm, Alike.trans), stated as a relation since a quotient needs Quot.sound. Alike configurations realize the same claims (Alike.realized), match each other's steps by the same move into alike configurations (Alike.step) and every course of moves into alike configurations (Bisimulation.trace, Alike.trace), and pass the same tests, a course of moves followed by a claim (Alike.tests). A frame is determined up to likeness at s (DeterminedAt F s) where any two outcomes of one move at s are alike; a determined frame is so everywhere (Determined.at); determinacy up to likeness passes along likeness (DeterminedAt.transfer), and where it holds the same move takes alike configurations to alike ones (DeterminedAt.goAlike). In Twins a start has two successors by one move: they are alike (Twins.left_alike_right), the frame is not determined (Twins.not_determined), and its start is alike to the start of a frame with one successor, which is determined, so the twins are determined up to likeness at the start (Twins.alike_one). Under the law of exchange read through the claims that a relatum stands at an amount (exchangeFrame), agreeing at every relatum is a bisimulation (exchange_pointwise_bisimulation); standings are alike exactly where they agree at every relatum (exchange_alike_iff, exchange_alike_of_pointwise, exchange_pointwise_of_alike), and the law is determined up to likeness at every standing (exchange_determinedAt). A description π of configurations makes sense (MakesSense F π) where it identifies exactly the alike configurations; it does exactly where being identified by it is a bisimulation and it identifies every alike pair (makesSense_iff); descriptions that make sense identify the same configurations (MakesSense.unique); where the frame is determined up to likeness everywhere, a description that makes sense carries a law (MakesSense.carries, through carries_law_iff of Becoming.Mechanism); naming the configurations makes sense exactly where alike configurations are one (makesSense_id_iff), and the twins' naming does not (Twins.naming_senseless). For a determined law read through a registration (Law.registered next o, the claims being what is registered), configurations are alike exactly where their registered futures are the same (Law.SameFuture, Law.alike_iff_sameFuture; Law.alike_future, Law.sameFuture_bisimulation), and there a description that makes sense carries a law (Law.MakesSense.carries). In the periphery bridge (Becoming.Bridge): Deeper.Bisimulation of RelationalDynamics is the core's bisimulation of frames with no claims (Frame.unclaimed, deeper_bisimulation_iff), so in static and toggle every configuration of one is alike to every configuration of the other (static_toggle_alike); ExplanatoryBranching.Bisimulation is the core's bisimulation of frames whose claims are a model's conditions (Frame.ofModel, branching_bisimulation_iff), and alike configurations pass every branching test, negation and conjunction included (Alike.same, through bisimulation_implies_same). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：相同由互模拟刻画，不是假设，也不取商；Alike.tests、exchange_alike_iff、makesSense_iff 与 makesSense_id_iff 是双向的。",
+      "en": "No premise: likeness is characterized by bisimulation, not assumed, and no quotient is taken; Alike.tests, exchange_alike_iff, makesSense_iff and makesSense_id_iff are two-way."
+    },
+    {
+      "zh": "互模拟比较动作与主张类型相同的框架；检验是一个有限动作序列之后的一个主张，经同样检验推出相同（需要分支条件）没有陈述。",
+      "en": "Bisimulation compares frames with the same move and claim types; a test is a claim after a finite course of moves, and that passing the same tests makes configurations alike (which needs a condition on branching) is not stated."
+    },
+    {
+      "zh": "相同之下的确定性（DeterminedAt）是定义；第一部分以 Determined 陈述的定理没有以它重述。",
+      "en": "Determinacy up to likeness (DeterminedAt) is a definition; the Part I theorems stated with Determined are not restated with it."
+    },
+    {
+      "zh": "MakesSense.carries 要框架在每个配置处相同之下确定；有意义的描述是给出的，不推出它存在。",
+      "en": "MakesSense.carries needs the frame determined up to likeness at every configuration; a description that makes sense is supplied, and that one exists is not derived."
+    },
+    {
+      "zh": "见证的结论：Twins 的框架，以及经 exchangeFrame 读的交换之律。",
+      "en": "For the witnesses: the frames of Twins, and the law of exchange read through exchangeFrame."
+    }
+  ],
+  "correspondence": {
+    "zh": "P69 的第四项（工作板），按 Ren 2026-10-12 的“yes, put it on the board and start”：从 World 一侧陈述“配置先于其间的关系”这一分割。它把外围的关系的同一（RelationalDynamics，2026-10-06；ExplanatoryBranching 的分支检验）带进核心。那里发现“状态不变”读的是载体的相等（unchanged_reads_carrier_identity）；作为相等的确定性也如此（Twins）。读法（AI 的，待 Ren）：配置的名字，像关系项的名字（Becoming.Identity）一样，不承载任何东西，能查明的对相同的配置都一样；交换之律下水平在每个关系项上相等就是相同，所以零前提计划以逐点性质代替函数外延性的承诺（§1.2，b(5)）陈述的是水平的关系的同一，函数外延性只会再加上相同的水平是同一个。有意义的描述在本模块的定义上，对有分支、带主张的框架重述分支“Current math core (fork)”对一个确定的律检查过的 MakesSense（其 Saying.lean，回答 Ren 关于框架与成对的问题）。见整合文档 §91。",
+    "en": "The fourth item of P69 (work board), following Ren's “yes, put it on the board and start” of 12 October 2026: the split “configurations prior to their relation” stated from the world's side. It brings into the core the periphery's relational identity of configurations (RelationalDynamics, 6 October 2026; the branching tests of ExplanatoryBranching). There a step leaving the configuration unchanged was found to read the carrier's equality (unchanged_reads_carrier_identity); so does determinacy as equality (Twins). Readings (the AI's, pending Ren): the names of configurations, like those of relata (Becoming.Identity), carry nothing, and what can be found out is the same for alike configurations; under the law of exchange, agreeing at every relatum is being alike, so the zero-premise plan's commitment to pointwise properties in place of function extensionality (§1.2, b(5)) states the relational identity of standings, function extensionality adding only that alike standings are one and the same. Descriptions that make sense restate on this module's definitions, for frames that branch and carry claims, the MakesSense checked for one determined law on the branch \"Current math core (fork)\" (its Saying.lean, answering Ren's questions on framing and pairs). See §91 of the integration note."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+  "aliases": [
+    "Becoming.Bisimulation",
+    "Becoming.Alike",
+    "Becoming.Alike.trace",
+    "Becoming.Alike.tests",
+    "Becoming.DeterminedAt",
+    "Becoming.DeterminedAt.transfer",
+    "Becoming.DeterminedAt.goAlike",
+    "Becoming.Twins.alike_one",
+    "Becoming.exchangeFrame",
+    "Becoming.exchange_alike_iff",
+    "Becoming.exchange_determinedAt",
+    "bisimulation",
+    "互模拟",
+    "relational identity",
+    "关系的同一",
+    "alike",
+    "相同",
+    "determined up to likeness",
+    "相同之下确定",
+    "Becoming.MakesSense",
+    "Becoming.makesSense_iff",
+    "Becoming.MakesSense.carries",
+    "Becoming.makesSense_id_iff",
+    "makes sense",
+    "有意义的描述",
+    "Becoming.Law.SameFuture",
+    "Becoming.Law.alike_iff_sameFuture",
+    "same registered future",
+    "所识的未来相同"
+  ],
+  "dependencies": [
+    {
+      "id": "joint-difference-making",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Determined：确定的框架处处相同之下确定（Determined.at）；双胞胎不确定而与确定的框架相同（Twins.alike_one）。",
+        "en": "Reuses Determined: a determined frame is determined up to likeness everywhere (Determined.at); the twins are not determined and are alike to a determined frame (Twins.alike_one)."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定性。",
+          "en": "Determinacy."
+        },
+        "input": {
+          "zh": "相同之下的确定性与它的见证。",
+          "en": "Determinacy up to likeness and its witness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean"
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用同一模块的交换之律（exchange、exchange_agrees）：在每个关系项上相等是互模拟，这条律相同之下确定。",
+        "en": "Reuses the same module's law of exchange (exchange, exchange_agrees): agreeing at every relatum is a bisimulation, and the law is determined up to likeness."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换之律；它固定一步之后的每个水平。",
+          "en": "The law of exchange; it fixes each standing after a step."
+        },
+        "input": {
+          "zh": "水平的相同。",
+          "en": "Likeness of standings."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 carries_law_iff：框架处处相同之下确定时，有意义的描述相同者同去，所以承载规律（MakesSense.carries）。GoAlike 以投影上的相等定义相同者同去；DeterminedAt.goAlike 以互模拟的相同给出同一形式。",
+        "en": "Reuses carries_law_iff: where the frame is determined up to likeness everywhere, a description that makes sense goes alike and so carries a law (MakesSense.carries). GoAlike defines going alike through equality on a projection; DeterminedAt.goAlike gives the same form with likeness by bisimulation."
+      },
+      "interface": {
+        "output": {
+          "zh": "投影承载规律，恰当相同者同去。",
+          "en": "A projection carries a law exactly where configurations alike under it go alike."
+        },
+        "input": {
+          "zh": "有意义的描述承载规律。",
+          "en": "A description that makes sense carries a law."
+        },
+        "conditions": {
+          "zh": "框架在每个配置处相同之下确定。",
+          "en": "The frame determined up to likeness at every configuration."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、Law.orbit_shift 与 Law.process：确定的律经识读的框架，所识的未来相同恰是相同。",
+        "en": "Reuses Law.orbit, Law.orbit_shift and Law.process: for a determined law read through a registration, the same registered future is exactly likeness."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定的律的轨道及其作为过程。",
+          "en": "The orbit of a determined law and the law as a process."
+        },
+        "input": {
+          "zh": "所识的未来相同与相同的等价。",
+          "en": "The equivalence of the same registered future with likeness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "branching-tests-bisimulation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）要求像有限，由外围的 same_iff_bisimilar 给出，核心没有陈述。",
+        "en": "Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) needs image-finiteness and is the periphery's same_iff_bisimilar; the core does not state it."
+      },
+      "interface": {
+        "output": {
+          "zh": "分支检验与互模拟；互模拟推出同测。",
+          "en": "Branching tests and bisimulation; bisimulation gives the same tests."
+        },
+        "input": {
+          "zh": "核心的相同通过外围的全部分支检验。",
+          "en": "The core's likeness passing all of the periphery's branching tests."
+        },
+        "conditions": {
+          "zh": "外围桥接导入 ExplanatoryBranching。",
+          "en": "The periphery bridge imports ExplanatoryBranching."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "identity-across-steps",
+      "detail": {
+        "zh": "关系项的标签不承载任何东西，名字跨步的模式承载同一；这里配置的名字同样不承载任何东西：相同的配置能查明的都一样。",
+        "en": "Relata's labels carry nothing, and the pattern of names across steps carries identity; here configurations' names likewise carry nothing: what can be found out is the same for alike configurations."
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "桥接模块：外围的接口是脊柱的实例；外围的两种互模拟在此成为核心的。",
+        "en": "The bridge module: the periphery's interfaces are instances of the spine; the periphery's two bisimulations become the core's there."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "detail": {
+        "zh": "作为相等的确定性依赖于命名：Twins 中两个后继在每个关系上相同，框架不确定，而它与一个确定的框架相同（Twins.not_determined、Twins.left_alike_right、Twins.alike_one）。",
+        "en": "Determinacy as equality depends on names: in Twins the two successors are alike in every relation, the frame is not determined, and it is alike to a determined frame (Twins.not_determined, Twins.left_alike_right, Twins.alike_one)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "经同样检验的配置相同需要分支条件，没有陈述（外围在像有限时有 same_iff_bisimilar，要经典逻辑）；第一部分以 Determined 陈述的定理在相同之下成立，没有陈述；互模拟只比较动作与主张类型相同的框架；有意义的描述存在没有陈述（以“与哪些相同”描述每个配置，要函数外延性与命题外延性才有意义；按相同取商要 Quot.sound）；相同不取商，所以“相同的配置是同一个”不是这里的陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That configurations passing the same tests are alike needs a condition on branching and is not stated (the periphery has same_iff_bisimilar for image-finite models, classically); that the Part I theorems stated with Determined hold up to likeness is not stated; bisimulation compares only frames with the same move and claim types; that a description making sense exists is not stated (describing each configuration by what it is alike to makes sense given function and propositional extensionality, and the quotient by likeness needs Quot.sound); likeness takes no quotient, so “alike configurations are one and the same” is not stated here; the readings are the AI's, pending Ren; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261011T235410.578553Z）：Becoming.Unfolding 的 67 项定理全部空依赖，其中含 Alike.trans、Alike.tests、DeterminedAt.transfer、DeterminedAt.goAlike、Twins.alike_one、makesSense_iff、MakesSense.carries、makesSense_id_iff、Law.alike_iff_sameFuture、Law.MakesSense.carries、exchange_alike_iff与 exchange_determinedAt；同一回执中，外围桥接 Becoming.Bridge 的 deeper_bisimulation_iff、static_toggle_alike、branching_bisimulation_iff 与 Alike.same 空依赖；同一回执覆盖包内 56 个模块（含只作导入的根模块与桥接），共 2895 项定理／4222 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 58 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §91；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261011T235410.578553Z): the 67 theorems of Becoming.Unfolding all have empty axiom reports, among them Alike.trans, Alike.tests, DeterminedAt.transfer, DeterminedAt.goAlike, Twins.alike_one, makesSense_iff, MakesSense.carries, makesSense_id_iff, Law.alike_iff_sameFuture, Law.MakesSense.carries, exchange_alike_iff and exchange_determinedAt. In the same receipt the periphery bridge Becoming.Bridge's deeper_bisimulation_iff, static_toggle_alike, branching_bisimulation_iff and Alike.same have empty axiom reports. The same receipt covers the package's 56 modules (including the import-only root and the bridge) with 2895 theorems/4222 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T232716.311380Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 58 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §91 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.Bisimulation",
+        "Becoming.Alike",
+        "Becoming.Bisimulation.eq",
+        "Becoming.Bisimulation.converse",
+        "Becoming.Bisimulation.comp",
+        "Becoming.Alike.refl",
+        "Becoming.Alike.symm",
+        "Becoming.Alike.trans",
+        "Becoming.Alike.realized",
+        "Becoming.Alike.step",
+        "Becoming.Bisimulation.trace",
+        "Becoming.Alike.trace",
+        "Becoming.Alike.tests",
+        "Becoming.DeterminedAt",
+        "Becoming.Determined.at",
+        "Becoming.DeterminedAt.transfer",
+        "Becoming.DeterminedAt.goAlike",
+        "Becoming.MakesSense",
+        "Becoming.makesSense_iff",
+        "Becoming.MakesSense.unique",
+        "Becoming.MakesSense.carries",
+        "Becoming.makesSense_id_iff",
+        "Becoming.Twins.Config",
+        "Becoming.Twins.frame",
+        "Becoming.Twins.one",
+        "Becoming.Twins.not_determined",
+        "Becoming.Twins.one_determined",
+        "Becoming.Twins.bisimulation",
+        "Becoming.Twins.left_alike_right",
+        "Becoming.Twins.successor_not_start",
+        "Becoming.Twins.bisimulation_one",
+        "Becoming.Twins.alike_one",
+        "Becoming.Twins.naming_senseless",
+        "Becoming.Law.registered",
+        "Becoming.Law.registered_determined",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.alike_future",
+        "Becoming.Law.sameFuture_bisimulation",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.MakesSense.carries",
+        "Becoming.exchangeFrame",
+        "Becoming.exchange_pointwise_bisimulation",
+        "Becoming.exchange_alike_of_pointwise",
+        "Becoming.exchange_pointwise_of_alike",
+        "Becoming.exchange_alike_iff",
+        "Becoming.exchange_determinedAt"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Frame",
+        "Becoming.Run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "declarations": [
+        "Becoming.carries_law_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "role": "proof",
+      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "declarations": [
+        "Becoming.FactorsThrough"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "d65a3d05e7897942d6a64cd592e7d7498ea1f141b6b56e5dd34c3a7fad266cfa",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_shift",
+        "Becoming.Law.process"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "9a3d02789ef8ddd82bbc5f6d6f0e33a7f7937a34b7cd63dd0877cc52b408b0b9",
+      "declarations": [
+        "Becoming.Frame.unclaimed",
+        "Becoming.deeper_bisimulation_iff",
+        "Becoming.static_toggle_alike",
+        "Becoming.Frame.ofModel",
+        "Becoming.branching_bisimulation_iff",
+        "Becoming.Alike.same"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "role": "proof",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "ddc5a33379b86094cff2d6e9a95e5cc2c28383e79fc4104acb98e5f6aa427894",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "363a9b39734a3a472d6ad87c242abb2031b867f5288e09acc81622a484d84b82",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "44803cfcb9d470a521b36d1291e72a2f1f4f3cf13cc0554f7150d125c753a4aa",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-relational-starting-point.md",
+      "role": "provenance",
+      "sha256": "ab0832849a0a0315fcc4f34f7bcfca0afb749a82f18a6ae9ef00fcb25952c15b",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-no-two-realities.md",
+      "role": "provenance",
+      "sha256": "115e7cee47046597ad0cedc3a5a96c77ce99f55bb3ecc940dc38c8fcf233551c",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-framing-evidence/Saying.lean",
+      "role": "provenance",
+      "sha256": "1f97aec46003a0178ff6f45923f79a134eae78b346feb90e0e644bbf63dab3f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "第一部分以 Determined 陈述的定理在相同之下重述（DeterminedAt），或说明何处需要相等；核心中经同样检验推出相同的构造性条件；Ren 的判断：配置的同一是否读作相同。",
+    "en": "Restating the Part I theorems stated with Determined up to likeness (DeterminedAt), or saying where equality is needed; a constructive condition in the core under which passing the same tests makes configurations alike; Ren's judgment whether the identity of configurations reads as likeness."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P69：新增，按 Ren“yes, put it on the board and start”（对“is this dualistic?”的回答所附的提议）；律与历史的读法经 Ren 确认（“yes, i do agree with your reading, there are no two realities”）；见整合文档 §91。",
+      "en": "2026-10-12 P69: added, following Ren's ‘yes, put it on the board and start’ (to the proposal answering ‘is this dualistic?’); the reading of law and history confirmed by Ren (‘yes, i do agree with your reading, there are no two realities’); see §91 of the integration note."
+    }
+  ]
+}

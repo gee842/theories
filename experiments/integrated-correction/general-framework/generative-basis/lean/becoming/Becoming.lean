@@ -8,6 +8,7 @@ import Becoming.Horizon
 import Becoming.Joint
 import Becoming.Experiment
 import Becoming.Mechanism
+import Becoming.Unfolding
 import Becoming.Attraction
 import Becoming.Substitution
 import Becoming.Generation
@@ -96,6 +97,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   where not yet taken. The standard causal model x′ = F(x, u, ε) is a determined process whose
   move is the input and the noise: an intervention is a move not taken, noise a move not
   represented. The readings are the AI's, pending Ren.
+* `Becoming.Unfolding` (L3): one unfolding and its readings (P69). The labelled process and the
+  frame are readings of a world: read within the configuration the move changes no run and is
+  what the law leaves open, and a world's move is its relata's exchange, balance being running by
+  the law of exchange; every history is a run of the law it shows, the least one, determined
+  exactly where the history is consistent, the correspondence failing to be an identity through
+  dead ends and splices and closing where the history is kept; a claim is a relatum and novelty
+  is arising; configurations are alike where a bisimulation relates them, pass the same tests,
+  and are named sensibly exactly where alike ones are one; determinacy as equality depends on
+  names. Ren confirmed the reading of law and history; the other readings are the AI's.
 * `Becoming.Attraction` (L3): for every determined law, with no premise, a configuration is
   drawn into an absorbing region exactly where it does not return, and what is drawn in never
   comes back; what can be had n steps on is absorbing and every lost possibility is drawn into

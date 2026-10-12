@@ -1014,6 +1014,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## configurations-alike-by-relation ← joint-difference-making
+
+`formal-reuse` — 复用 Determined：确定的框架处处相同之下确定（Determined.at）；双胞胎不确定而与确定的框架相同（Twins.alike_one）。 / Reuses Determined: a determined frame is determined up to likeness everywhere (Determined.at); the twins are not determined and are alike to a determined frame (Twins.alike_one).
+
+**Producer output / 上游输出:** 确定性。 / Determinacy.
+
+**Consumer input / 下游输入:** 相同之下的确定性与它的见证。 / Determinacy up to likeness and its witness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
+
+## configurations-alike-by-relation ← process-and-frame-as-readings
+
+`formal-reuse` — 复用同一模块的交换之律（exchange、exchange_agrees）：在每个关系项上相等是互模拟，这条律相同之下确定。 / Reuses the same module's law of exchange (exchange, exchange_agrees): agreeing at every relatum is a bisimulation, and the law is determined up to likeness.
+
+**Producer output / 上游输出:** 交换之律；它固定一步之后的每个水平。 / The law of exchange; it fixes each standing after a step.
+
+**Consumer input / 下游输入:** 水平的相同。 / Likeness of standings.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## configurations-alike-by-relation ← projection-carrying-a-law
+
+`formal-reuse` — 复用 carries_law_iff：框架处处相同之下确定时，有意义的描述相同者同去，所以承载规律（MakesSense.carries）。GoAlike 以投影上的相等定义相同者同去；DeterminedAt.goAlike 以互模拟的相同给出同一形式。 / Reuses carries_law_iff: where the frame is determined up to likeness everywhere, a description that makes sense goes alike and so carries a law (MakesSense.carries). GoAlike defines going alike through equality on a projection; DeterminedAt.goAlike gives the same form with likeness by bisimulation.
+
+**Producer output / 上游输出:** 投影承载规律，恰当相同者同去。 / A projection carries a law exactly where configurations alike under it go alike.
+
+**Consumer input / 下游输入:** 有意义的描述承载规律。 / A description that makes sense carries a law.
+
+**Retained conditions / 保留条件:** 框架在每个配置处相同之下确定。 / The frame determined up to likeness at every configuration.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## configurations-alike-by-relation ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、Law.orbit_shift 与 Law.process：确定的律经识读的框架，所识的未来相同恰是相同。 / Reuses Law.orbit, Law.orbit_shift and Law.process: for a determined law read through a registration, the same registered future is exactly likeness.
+
+**Producer output / 上游输出:** 确定的律的轨道及其作为过程。 / The orbit of a determined law and the law as a process.
+
+**Consumer input / 下游输入:** 所识的未来相同与相同的等价。 / The equivalence of the same registered future with likeness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## configurations-alike-by-relation ← branching-tests-bisimulation
+
+`formal-reuse` — 复用 ExplanatoryBranching.Bisimulation、Same 与 bisimulation_implies_same：桥接证明它的互模拟就是核心的，相同的配置通过每个分支检验。反方向（同测推出互模拟）要求像有限，由外围的 same_iff_bisimilar 给出，核心没有陈述。 / Reuses ExplanatoryBranching.Bisimulation, Same and bisimulation_implies_same: the bridge proves its bisimulation is the core's, and alike configurations pass every branching test. The converse (passing the same tests gives a bisimulation) needs image-finiteness and is the periphery's same_iff_bisimilar; the core does not state it.
+
+**Producer output / 上游输出:** 分支检验与互模拟；互模拟推出同测。 / Branching tests and bisimulation; bisimulation gives the same tests.
+
+**Consumer input / 下游输入:** 核心的相同通过外围的全部分支检验。 / The core's likeness passing all of the periphery's branching tests.
+
+**Retained conditions / 保留条件:** 外围桥接导入 ExplanatoryBranching。 / The periphery bridge imports ExplanatoryBranching.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean)
+
 ## constitutive-binding-assessment ← binding-preserving-substitution
 
 `interpretive` — 复用已有代入机制及误接界限；解释性连接不把形式定理升级为构成性奠基证明。 / Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof.
@@ -2841,6 +2901,66 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
+
+## process-and-frame-as-readings ← space-and-its-parts
+
+`formal-reuse` — 复用 World、Flow.Balances、Flow.BalancesOn 与 Web.Arises：世界的动作读作其关系项的交换，平衡恰是按交换之律运行；框架沿运行读作一个世界，主张的生起是 Web.Arises。 / Reuses World, Flow.Balances, Flow.BalancesOn and Web.Arises: a world's moves are read as its relata's exchanges, and balance is running by the law of exchange; a frame along a run is read as a world, a claim's arising being Web.Arises.
+
+**Producer output / 上游输出:** 世界：关系项、流与依存网；平衡与一步上家族的平衡；生起。 / The world: relata, flow and web; balance, and balance on a family at a step; arising.
+
+**Consumer input / 下游输入:** World.move、World.balances_iff_exchange、World.exchange_step_iff；Frame.world 与 Frame.arises_iff。 / World.move, World.balances_iff_exchange, World.exchange_step_iff; Frame.world and Frame.arises_iff.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
+
+## process-and-frame-as-readings ← projection-carrying-a-law
+
+`formal-reuse` — 复用 carries_law_iff 与 goAlike_id_iff：有确定的律容许历史恰当历史一致（exists_law_iff），因为 Shown g m 是它分解到的最小过程；复用 GoAlike.runs_agree：动作在内形成时运行相同（closedBy_runs_agree）。 / Reuses carries_law_iff and goAlike_id_iff: some determined law admits a history exactly where it is consistent (exists_law_iff), Shown g m being the least process it factors through; reuses GoAlike.runs_agree: with the move formed within, runs agree (closedBy_runs_agree).
+
+**Producer output / 上游输出:** 投影承载规律的刻画；相同者同去时运行相同。 / The characterization of a projection carrying a law; runs agree where configurations alike go alike.
+
+**Consumer input / 下游输入:** 历史所显示之律的确定性；动作在内形成的运行。 / Determinacy of the law a history shows; runs with the move formed within.
+
+**Retained conditions / 保留条件:** 无（以恒等为投影）。 / None (the identity as the projection).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## process-and-frame-as-readings ← experiment-needs-return
+
+`formal-reuse` — 复用 keepHistory 与 keepHistory_new：保留历史的运行从不重访，所以它所显示的律只容许它（Run.keepHistory_shown）。先于历史给出的律所多出的，是它未取的动作，记录不固定它们（Run.not_fixes_of_untaken，读法中引用）。 / Reuses keepHistory and keepHistory_new: a run keeping its history never revisits, so the law it shows admits only it (Run.keepHistory_shown). What a law supplied before the history adds is its moves not taken, which the record does not fix (Run.not_fixes_of_untaken, cited in the reading).
+
+**Producer output / 上游输出:** 保留历史的过程；保留的历史每一步都是新的。 / The process keeping its history; a kept history is new at every step.
+
+**Consumer input / 下游输入:** 保留历史时律与历史的对应。 / The correspondence of law and history where the history is kept.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## process-and-frame-as-readings ← joint-difference-making
+
+`formal-reuse` — 复用 Determined：律指确定的过程；动作读入配置后的确定性（withMove_determined_iff），历史所显示之律的确定性（shown_determined_iff）。 / Reuses Determined: a law is a determined process; determinacy with the move inside (withMove_determined_iff), and of the law a history shows (shown_determined_iff).
+
+**Producer output / 上游输出:** 确定性。 / Determinacy.
+
+**Consumer input / 下游输入:** “律”的意义。 / What a law means.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
+
+## process-and-frame-as-readings ← coming-and-ceasing-keep-pace
+
+`formal-reuse` — 复用 ComesToBe、CeasesToBe、Recurs 与 coming_recurs_iff：主张是关系项，开始被实现复现恰当不再被实现复现（Frame.claims_recur_iff）。 / Reuses ComesToBe, CeasesToBe, Recurs and coming_recurs_iff: claims are relata, and coming to be realized recurs exactly where ceasing to be realized recurs (Frame.claims_recur_iff).
+
+**Producer output / 上游输出:** 有限家族中开始成立与不再成立同步。 / In a finite family coming to be and ceasing to be keep pace.
+
+**Consumer input / 下游输入:** 主张的活动规律。 / The laws of activity for claims.
+
+**Retained conditions / 保留条件:** 有限的主张列表，每步可判定。 / A finite list of claims, decided at each step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean)
 
 ## projection-carrying-a-law ← experiment-needs-return
 

@@ -47,7 +47,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Attraction",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
@@ -151,6 +151,22 @@ SCOPE = (
     "the standard model x' = F(x, u, e) is a determined process whose move is the input and the noise, "
     "an intervention is a move not taken and noise a move not represented, the model with the noise "
     "forgotten being determined exactly where the noise makes no difference. "
+    "Unfolding: read with the move inside the configuration a process has the same runs, the law "
+    "leaving the next move open and determined exactly where it is with moves as labels and one move "
+    "wherever it steps; with the move formed within by a policy, runs from one configuration agree; "
+    "a shared move couples the parts of a synchronized product; a world balances exactly where its "
+    "standings run by the law of exchange with its relata's exchanges as moves, the exchange fixing "
+    "the standings from a beginning and the standings not fixing the exchange; every history is a "
+    "run of the law it shows, the least law it is a run of, determined exactly where the history is "
+    "consistent, a law can have a step and no run, a revisiting history shows a law admitting a run "
+    "it never took, and a kept history shows a law admitting only it; a frame along a run is a world "
+    "whose relata are its claims, novelty being arising; configurations are alike where a "
+    "bisimulation relates them, an equivalence with no quotient, and alike ones pass the same tests; "
+    "determinacy up to likeness passes along likeness while determinacy as equality depends on names; "
+    "a description makes sense where it identifies exactly the alike configurations, and then carries "
+    "a law where the frame is determined up to likeness; under a determined law likeness is the same "
+    "registered future; under the law of exchange standings are alike exactly where they agree "
+    "pointwise. "
     "Attraction: for every determined law, with no premise, a configuration is drawn into an absorbing "
     "region exactly where it does not return, and what is drawn in never comes back; what can be had n "
     "steps on is absorbing and every possibility lost by step n is drawn into it; of two merged "

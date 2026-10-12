@@ -1,0 +1,27 @@
+import ExplanatoryBranching
+#print axioms Generative.ExplanatoryBranching.Test
+#print axioms Generative.ExplanatoryBranching.Model
+#print axioms Generative.ExplanatoryBranching.Holds
+#print axioms Generative.ExplanatoryBranching.Same
+#print axioms Generative.ExplanatoryBranching.Bisimulation
+#print axioms Generative.ExplanatoryBranching.ImageFinite
+#print axioms Generative.ExplanatoryBranching.same_refl
+#print axioms Generative.ExplanatoryBranching.same_symm
+#print axioms Generative.ExplanatoryBranching.same_trans
+#print axioms Generative.ExplanatoryBranching.bisimulation_preserves_tests
+#print axioms Generative.ExplanatoryBranching.bisimulation_implies_same
+#print axioms Generative.ExplanatoryBranching.finite_separating_test
+#print axioms Generative.ExplanatoryBranching.not_same_has_separating_test
+#print axioms Generative.ExplanatoryBranching.same_forces_successor_match
+#print axioms Generative.ExplanatoryBranching.same_is_bisimulation
+#print axioms Generative.ExplanatoryBranching.same_iff_bisimilar
+#print axioms Generative.ExplanatoryBranching.exact_equal_codes_force_branch_matching
+#print axioms Generative.ExplanatoryBranching.bisimulation_lifts_trace
+#print axioms Generative.ExplanatoryBranching.ReachableFrom
+#print axioms Generative.ExplanatoryBranching.Separated
+#print axioms Generative.ExplanatoryBranching.same_functional
+#print axioms Generative.ExplanatoryBranching.same_inverse_functional
+#print axioms Generative.ExplanatoryBranching.same_total_on_reachable
+#print axioms Generative.ExplanatoryBranching.branching_structural_correspondence
+#print axioms Generative.ExplanatoryBranching.correspondence_preserves_steps
+#print axioms Generative.ExplanatoryBranching.any_bisimulation_agrees
