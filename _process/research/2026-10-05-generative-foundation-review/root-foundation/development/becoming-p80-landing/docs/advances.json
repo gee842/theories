@@ -102,5 +102,21 @@
       "zh": "2026-10-12 P80：一个实例：部分做一列动作、其余遵从交换律时，生成的历史是以部分的动作为输入、无噪声的 inputs 的轨道（ExchangeLaw.course_trajectory），未取的动作是干预（ExchangeLaw.act_not_taken，inputs_intervention_unfixed 与 inputs_model_fixes 的实例）（Becoming.Counterfactual，counterfactual-is-the-course）；见整合文档 §{S}。断言不变。",
       "en": "2026-10-12 P80: an instance: where the part makes a list of moves and the rest follows a law of exchange, the generated history is a trajectory of inputs with the part's move as the input and no noise (ExchangeLaw.course_trajectory), and an act not taken is an intervention (ExchangeLaw.act_not_taken, an instance of inputs_intervention_unfixed and inputs_model_fixes) (Becoming.Counterfactual, counterfactual-is-the-course); see §{S} of the integration note. The assertion is unchanged."
     }
+  },
+  {
+    "id": "process-and-frame-as-readings",
+    "add_related": [
+      {
+        "id": "counterfactual-is-the-course",
+        "detail": {
+          "zh": "实例（P80b）：交换律的进程是一个世界，按交换之律而行恰当可行；确定的律在 Shown 之外的步恰在运行未取的动作（Run.beyond_shown_iff，关于 Shown 的一条律，暂放在 Counterfactual），所以进程历史之外的是反事实；部分的动作由律在配置上形成时，closedBy 的运行就是进程。",
+          "en": "Instances (P80b): the course of a law of exchange is a world, running by the law of exchange exactly where feasible; a determined law's steps beyond Shown are exactly at the moves the run never takes (Run.beyond_shown_iff, a law about Shown, kept in Counterfactual for now), so what lies beyond the course's history is its counterfactuals; with the part's move formed by a law on the configuration, a run of closedBy is the course."
+        }
+      }
+    ],
+    "history": {
+      "zh": "2026-10-12 P80（并入 P80b）：实例：交换律的进程是一个世界（ExchangeLaw.world、ExchangeLaw.world_exchange_iff）；确定的律在运行所显示者之外的步恰在运行未取的动作（Run.beyond_shown_iff，关于 Shown 的一条律，按整合者的安排暂放在 Becoming.Counterfactual，第二个模块需要时移入 Unfolding，名字与陈述不变），所以进程历史之外的是反事实（ExchangeLaw.counterfactual_beyond_shown）；部分的动作由律在配置上形成时，closedBy 的运行就是进程（ExchangeLaw.closedBy_course）（counterfactual-is-the-course）。何时一个动作是部分自己的，仍不推出；next_delta 不变；见整合文档 §{S}。断言不变。",
+      "en": "2026-10-12 P80 (P80b folded in): instances: the course of a law of exchange is a world (ExchangeLaw.world, ExchangeLaw.world_exchange_iff); a determined law's steps beyond what a run shows are exactly at the moves the run never takes (Run.beyond_shown_iff, a law about Shown, kept in Becoming.Counterfactual as the integrator arranged, moving to Unfolding, name and statement kept, when a second module needs it), so what lies beyond the course's history is its counterfactuals (ExchangeLaw.counterfactual_beyond_shown); with the part's move formed by a law on the configuration, a run of closedBy is the course (ExchangeLaw.closedBy_course) (counterfactual-is-the-course). When a move is the part's own is still not derived; next_delta unchanged; see §{S} of the integration note. The assertion is unchanged."
+    }
   }
 ]

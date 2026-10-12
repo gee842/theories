@@ -38,7 +38,10 @@ BULLET = """* `Becoming.Counterfactual` (L4): the rest's exchange given by a law
   feasible. Where the law reads only what each formation registers, P65's response premise is a
   theorem, and with finitely many conditions the registration is what the law is sensitive to;
   the comparison is then decided within the responsive reach with neither the second flow nor
-  the response supplied. An act not taken is an intervention of the standard causal model. The
+  the response supplied. An act not taken is an intervention of the standard causal model. As
+  P69's unfolding, the course is a `World`, balancing exactly where feasible; what a determined law
+  adds beyond a history (P69's `Shown`) is exactly the moves the history never takes, so the
+  counterfactuals; with the part's act formed by a law, a run of `closedBy` is the course. The
   readings are the AI's, pending Ren.
 """
 root = B / 'Becoming.lean'
@@ -57,7 +60,11 @@ SCOPE = (
     '    "reads through what it is sensitive to, the least registration; the comparison is then decided "\n'
     '    "within the responsive reach with neither the second flow nor the response supplied; the course is "\n'
     '    "a trajectory of the standard model whose input is the part\'s move, an act not taken an "\n'
-    '    "intervention. "\n')
+    '    "intervention; over one kind of relatum the course is a world of the unfolding, running by the "\n'
+    '    "law of exchange exactly where feasible; a determined law steps beyond what a run shows exactly "\n'
+    '    "at the moves the run never takes, so the course\'s history shows its law and the moves beyond it "\n'
+    '    "are the counterfactuals; with the part\'s act formed by a law on the configuration, a run of the "\n'
+    '    "closed process is the course. "\n')
 edit(B / 'check_becoming.py', [
     ('"Becoming.Response",', '"Becoming.Response", "Becoming.Counterfactual",'),
     ('    "Selection: two histories are selected alike', SCOPE + '    "Selection: two histories are selected alike'),
@@ -66,7 +73,9 @@ edit(B / 'check_becoming.py', [
 NAMES = ['counterfactual_fixed', 'ExchangeLaw.course_balances_iff', 'counterfactual_is_course',
          'ExchangeLaw.course_unique', 'ExchangeLaw.Through.responds', 'ExchangeLaw.Nonanticipating.through_sensitive',
          'ExchangeLaw.Through.registers_of_sensitive', 'comparison_with_act', 'ExchangeLaw.course_trajectory',
-         'ExchangeLaw.act_not_taken', 'Loop.responds_by_law', 'Loop.courses_fixed']
+         'ExchangeLaw.act_not_taken', 'ExchangeLaw.world_exchange_iff', 'Run.beyond_shown_iff',
+         'ExchangeLaw.counterfactual_beyond_shown', 'ExchangeLaw.closedBy_course', 'Loop.responds_by_law',
+         'Loop.courses_fixed']
 declared(NAMES)
 ROW = ('| L4 | [`Becoming.Counterfactual`](Becoming/Counterfactual.lean) | '
        '回应由动力学给出（不用公理；交换律、它读已立者与进程可行是各定理的假设）：其余遵从一个读已立者的交换律时，部分动作相同、'
@@ -76,7 +85,10 @@ ROW = ('| L4 | [`Becoming.Counterfactual`](Becoming/Counterfactual.lean) | '
        '读已立者的律经其敏感而读，敏感是最小的识（`ExchangeLaw.Nonanticipating.through_sensitive`、'
        '`ExchangeLaw.Through.registers_of_sensitive`）；比较在动作与另一动作生成的进程之间、在回应所及之内决定，不另给第二个流与'
        '回应（`comparison_with_act`）；进程是以部分的动作为输入的标准因果模型的轨道，未取的动作是干预（'
-       '`ExchangeLaw.course_trajectory`、`ExchangeLaw.act_not_taken`）；`Loop` 的回应是律（`Loop.responds_by_law`、'
+       '`ExchangeLaw.course_trajectory`、`ExchangeLaw.act_not_taken`）；作为 P69 的展开，关系项一类时进程是一个世界，按交换之律而行'
+       '恰当可行（`ExchangeLaw.world_exchange_iff`），确定的律在运行所显示者之外的步恰在运行未取的动作（关于 `Shown` 的'
+       '`Run.beyond_shown_iff`），所以历史之外的是反事实（`ExchangeLaw.counterfactual_beyond_shown`），部分的动作由律在配置上'
+       '形成时 `closedBy` 的运行就是进程（`ExchangeLaw.closedBy_course`）；`Loop` 的回应是律（`Loop.responds_by_law`、'
        '`Loop.courses_fixed`）；读法是 AI 的，待 Ren / '
        "the response as the dynamics give (no axiom; the law of exchange, that it reads what has stood, and feasibility "
        "are hypotheses of the theorems that use them): where the rest follows one law reading what has stood, two "
@@ -90,7 +102,12 @@ ROW = ('| L4 | [`Becoming.Counterfactual`](Becoming/Counterfactual.lean) | '
        "the comparison of an act with the course another act generates is decided within the responsive reach with "
        "neither the second flow nor the response supplied (`comparison_with_act`); the course is a trajectory of the "
        "standard causal model whose input is the part's move, and an act not taken is an intervention "
-       "(`ExchangeLaw.course_trajectory`, `ExchangeLaw.act_not_taken`); `Loop`'s reply is a law "
+       "(`ExchangeLaw.course_trajectory`, `ExchangeLaw.act_not_taken`); as P69's unfolding, over one kind of relatum "
+       "the course is a world running by the law of exchange exactly where feasible (`ExchangeLaw.world_exchange_iff`), "
+       "a determined law steps beyond what a run shows exactly at the moves the run never takes (`Run.beyond_shown_iff`, "
+       "a law about `Shown`), so what lies beyond the history is the counterfactuals "
+       "(`ExchangeLaw.counterfactual_beyond_shown`), and with the part's act formed by a law on the configuration a "
+       "run of `closedBy` is the course (`ExchangeLaw.closedBy_course`); `Loop`'s reply is a law "
        "(`Loop.responds_by_law`, `Loop.courses_fixed`); the readings are the AI's, pending Ren |\n")
 
 readme = B / 'README.md'
@@ -102,6 +119,7 @@ assert '`Becoming.Counterfactual`' not in s
 s = s[:j] + ROW + s[j:]
 readme.write_text(s)
 edit(readme, [
-    ('`Response` 导入 `Testing`；', '`Response` 导入 `Testing`；`Counterfactual` 导入 `Response` 与 `Mechanism`；'),
-    ('`Response` imports `Testing`;', '`Response` imports `Testing`; `Counterfactual` imports `Response` and `Mechanism`;'),
+    ('`Response` 导入 `Testing`；', '`Response` 导入 `Testing`；`Counterfactual` 导入 `Response`、`Mechanism` 与 `Unfolding`；'),
+    ('`Response` imports `Testing`;',
+     '`Response` imports `Testing`; `Counterfactual` imports `Response`, `Mechanism` and `Unfolding`;'),
 ])

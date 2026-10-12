@@ -81,13 +81,18 @@ def declarations(module):
 NAMED = B('counterfactual_fixed', 'ExchangeLaw.course_balances_iff', 'counterfactual_is_course',
           'ExchangeLaw.course_unique', 'ExchangeLaw.Through.responds', 'ExchangeLaw.Nonanticipating.through_sensitive',
           'ExchangeLaw.Through.registers_of_sensitive', 'comparison_with_act', 'ExchangeLaw.act_not_taken',
-          'Loop.responds_by_law')
+          'ExchangeLaw.world_exchange_iff', 'Run.beyond_shown_iff', 'ExchangeLaw.counterfactual_beyond_shown',
+          'ExchangeLaw.closedBy_course', 'Loop.responds_by_law')
 BUILDS_ON = [
     ('Response', B('Flow.RespondsThroughRegistration', 'Flow.WithinResponse', 'Flow.Balances.comparison_within_response',
                    'Loop.web', 'Loop.escalation', 'Loop.quiet', 'Loop.balances', 'Loop.quiet_balances', 'Loop.firstPart',
                    'Loop.own', 'Loop.responds')),
     ('Testing', B('Web.Registers', 'Web.RegistersAlike', 'Web.RegistersAlikeUpTo')),
-    ('Mechanism', B('inputs', 'trajectory', 'inputs_intervention_unfixed', 'inputs_model_fixes')),
+    ('Mechanism', B('inputs', 'trajectory', 'inputs_intervention_unfixed', 'inputs_model_fixes', 'inputs_determined')),
+    ('Unfolding', B('Exchange', 'exchange', 'World.move', 'World.balances_iff_exchange', 'World.exchangeRun', 'Shown',
+                    'Consistent', 'exists_law_iff', 'closedBy', 'closedBy_runs_agree')),
+    ('Space', B('World')),
+    ('Joint', B('Determined')),
     ('Recurrence', B('Law.orbit', 'le_succ_cases', 'gap_of_le', 'mem_cons_split')),
     ('Flow', B('Flow', 'Flow.Balances')),
     ('Generation', B('total')),
@@ -162,10 +167,12 @@ record = {
     'proof_bindings': [binding(MODULE), *[binding(m) for m, _ in BUILDS_ON]],
     'history': [zh_en(
         f'2026-10-12 P80：新增，按 Ren“another agent has got this far, maybe merge first and see if there is something '
-        f'to work on”；本章 §8 的进一步证明与 comparison-where-the-rest-responds 的下一步（工作板 P80）；见整合文档 §{SEC}。',
+        f'to work on”；本章 §8 的进一步证明与 comparison-where-the-rest-responds 的下一步（工作板 P80）；与 P69 Unfolding 的实例'
+        f'（P80b，整合者同意并入同一次落地）；见整合文档 §{SEC}。',
         f'2026-10-12 P80: added, following Ren\'s ‘another agent has got this far, maybe merge first and see if there '
         f'is something to work on’; the chapter\'s section 8 further proof and the next step of '
-        f'comparison-where-the-rest-responds (work board P80); see §{SEC} of the integration note.')],
+        f'comparison-where-the-rest-responds (work board P80); with the instances with P69\'s Unfolding (P80b, folded '
+        f'into the same landing with the integrator\'s agreement); see §{SEC} of the integration note.')],
 }
 missing = [k for k in ORDER if k not in record]
 assert not missing, missing

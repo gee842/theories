@@ -18,10 +18,15 @@ CF_ZH = ('**回应由动力学给出（第一部分，P80）。** P65 的比较�
          '之间亦然，不另给第二个流与回应（`comparison_of_courses`、`comparison_through_sensitivity`、`comparison_with_act`）。动作是'
          '标准因果模型的输入：进程是 P68 中以部分的动作为输入的模型的轨道，未取的动作是干预，记录不固定其结果，模型固定它'
          '（`ExchangeLaw.course_trajectory`、`ExchangeLaw.act_not_taken`）。P65 的 `Loop` 中，第二个形成的回应是只读其所观察者的律，'
-         '`Loop.responds` 由它推出，两个流各是该律在其动作下唯一平衡的进程（`Loop.responds_by_law`、`Loop.courses_fixed`）。读法'
-         '（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定；对遵从读已立者之律的其余，P65 的前提'
+         '`Loop.responds` 由它推出，两个流各是该律在其动作下唯一平衡的进程（`Loop.responds_by_law`、`Loop.courses_fixed`）。作为'
+         ' P69 的展开：形成与条件同类时，进程是一个世界，按交换之律而行恰当可行（`ExchangeLaw.world_exchange_iff`）；确定的律在一个'
+         '运行所显示者之外的步，恰在运行未取的动作（`Run.beyond_shown_iff`，关于 `Shown` 的一条律），所以进程历史之外的恰是它的'
+         '反事实（`ExchangeLaw.counterfactual_beyond_shown`）；部分的动作由律在配置上形成时，`closedBy` 的运行就是进程'
+         '（`ExchangeLaw.closedBy_course`）。读法'
+         '（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定，是律在其历史'
+         '之外的一步，不是旁边的第二段历史；对遵从读已立者之律的其余，P65 的前提'
          '不是另加的关于形成怎样行为的假设，读作识，形成识其交换所敏感者。律本身、它读已立者、进程可行，以及条件无穷多时敏感是否仍是最小的识，'
-         '都不推出。见[研究 §{S}]({STUDY})与 [counterfactual-is-the-course](../results/records/counterfactual-is-the-course.md)、'
+         '都不推出，何时一个动作是部分自己的也不推出。见[研究 §{S}]({STUDY})与 [counterfactual-is-the-course](../results/records/counterfactual-is-the-course.md)、'
          '[comparison-where-the-rest-responds](../results/records/comparison-where-the-rest-responds.md)。')
 
 CF_EN = ("**The response as the dynamics give (Part I, P80).** P65's comparison supplies two things: the second flow, and "
@@ -53,12 +58,18 @@ CF_EN = ("**The response as the dynamics give (Part I, P80).** P65's comparison 
          "intervention, whose outcome the record does not fix and the model does (`ExchangeLaw.course_trajectory`, "
          "`ExchangeLaw.act_not_taken`). In P65's `Loop` the second's reply is a law reading only what it observes, "
          "`Loop.responds` follows from it, and each flow is the only balanced course of the law with its act "
-         "(`Loop.responds_by_law`, `Loop.courses_fixed`). On the AI's reading, pending Ren, a counterfactual is not a "
-         "second world beside the actual one but the course of the same law with the part acting otherwise, existing "
-         "where feasible and fixed by the act; for a rest following a law of what has stood, P65's premise is no further assumption about how formations behave, and read as "
+         "(`Loop.responds_by_law`, `Loop.courses_fixed`). As P69's unfolding: where formations and conditions are one "
+         "kind of relatum, the course is a world running by the law of exchange exactly where feasible "
+         "(`ExchangeLaw.world_exchange_iff`); a determined law steps beyond what a run of it shows exactly at the moves "
+         "the run never takes (`Run.beyond_shown_iff`, a law about `Shown`), so what lies beyond the course's history is "
+         "exactly its counterfactuals (`ExchangeLaw.counterfactual_beyond_shown`); with the part's move formed by a law "
+         "on the configuration, a run of `closedBy` is the course (`ExchangeLaw.closedBy_course`). On the AI's reading, "
+         "pending Ren, a counterfactual is not a second world beside the actual one but the course of the same law with "
+         "the part acting otherwise, existing where feasible and fixed by the act, the law's step beyond its history "
+         "rather than a second history beside it; for a rest following a law of what has stood, P65's premise is no further assumption about how formations behave, and read as "
          "识, a formation registers what its exchange is sensitive to. The law itself, that it reads what has stood, "
          "feasibility, and whether sensitivity is still the least registration with infinitely many conditions, are "
-         "not derived.")
+         "not derived, nor when a move is the part's own.")
 
 WHOLE_ZH = ('- **回应由动力学给出。** 其余遵从一个读已立者的律时，一个动作的进程由动作固定，可行时存在（`counterfactual_fixed`、'
             '`ExchangeLaw.course_balances_iff`）；律只读各形成所识时，其余经识回应是定理（`ExchangeLaw.Through.responds`），条件有限时'
@@ -106,7 +117,8 @@ SPINE = ('| L4 | [Becoming.Counterfactual]({LEAN}/Counterfactual.lean) | 回应�
          '是各定理的假设）：其余遵从一个读已立者的交换律时，部分动作相同、起始相同的两个平衡的流是一个流；律逐步生成进程，即阶段与'
          '历史上确定律的轨道，进程平衡恰当可行；动作的反事实是它生成的进程；律只读各形成所识时其余经识回应（P65 的前提），条件有限时'
          '这个识就是律的敏感，敏感是最小的识；比较在律的两个进程之间、在回应所及之内决定；进程是以部分的动作为输入的标准因果模型的'
-         '轨道，未取的动作是干预；Loop 的回应是律 | {N_MODULE} |')
+         '轨道，未取的动作是干预；作为 P69 的展开，进程是一个世界，确定的律在历史之外的步恰是未取的动作，部分的动作由律形成时 '
+         'closedBy 的运行就是进程；Loop 的回应是律 | {N_MODULE} |')
 
 GLOSS = ('| 交换律／读已立者 | law of exchange / reads what has stood | 从水平历史读出每个形成每步与每个条件取用与给予多少；读已立者：'
          '跨过第 t 步只读到第 t 步为止的历史 | `ExchangeLaw`、`ExchangeLaw.Nonanticipating`、`Flow.Follows` |\n'
