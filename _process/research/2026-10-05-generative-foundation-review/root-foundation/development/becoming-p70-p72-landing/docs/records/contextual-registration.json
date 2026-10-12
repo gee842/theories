@@ -1,0 +1,84 @@
+{
+  "id": "contextual-registration",
+  "title": {
+    "zh": "语境中的识：诸识恰在语境相交处一致时粘合，不依语境的主张的框架恰在处处粘合时合；有的世界在任何配置都不粘合（Specker、Mermin–Peres，量子比特实现）；部分失去整体的两种方式",
+    "en": "Contextual registration: registrations glue exactly where contexts agree where they meet, and a frame of context-free claims fits exactly where they glue everywhere; some worlds glue nowhere (Specker, Mermin–Peres, realized by qubits); the two ways parts fail a whole"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "在语境中被识的主张（Contextual S K C V）：within k c 说语境 k 识主张 c，shows s k c 是 k 在配置 s 处对 c 所识的值。在 s 处诸识粘合（Contextual.Glues），指有 v : C → V 与每个语境在其所识的每个主张上一致；它推出识同一主张的任意两个语境一致（Contextual.Glues.agree），每个主张有识它的语境时两者等价（Contextual.glues_iff_agree）。连同语境读，每次识是框架的主张（Contextual.indexed），以语境为索引的框架合于每次识（Contextual.indexed_fits）；不依语境的主张的框架合（Contextual.FitsFree），恰当诸识在每个配置粘合（Contextual.fitsFree_iff）。语境能显示什么只取决于它所识的主张（Local），没有不依语境的读法落在每个语境的可能性之内（NoGlobal）时，没有尊重可能性的配置粘合（Contextual.not_glues），只要一个配置尊重它们，就没有不依语境的主张的框架合（Contextual.no_free_frame）。整体 W 在语境中允许的（restrict）是局部的（restrict_local），W 在其部分粘合成者（Glued）之内（glued_of_whole）；部分给回整体记作 PartsDetermine；可能性非空且没有不依语境的读法时，它们不是任何整体的部分（no_whole）。Specker 的三个盒子与三次打开、打开的两个中恰有一个有宝石：可能性局部（Specker.local_），没有打开强制任何盒子（Specker.unforced），没有放置合于全部（Specker.noGlobal），每次打开都在第一个盒子显示宝石的世界尊重它们（Specker.respects）而不粘合（Specker.not_glues），它们不是任何整体的部分（Specker.no_whole）。Mermin–Peres 方阵：九格三行三列，每行与前两列的奇偶为偶，第三列为奇：可能性局部（Square.local_），没有线强制任何格（Square.unforced），没有赋值合于全部六条线（Square.nine、Square.noGlobal），它们不是任何整体的部分（Square.no_whole）。量子实现（Becoming.Quantum，P72q）：两个量子比特上的九个可观测量作为整数矩阵，每个平方为 I（obs_sq），每条线的三个两两对易（line_commute），线的乘积在第三列为 −I、否则为 I（line_product）；非零向量在一条线上共同显示的值有该线的奇偶（line_parity），是该线的一个可能（shows_support），每个可能都由一个明确的整数向量显示（line_realized、support_shown）；所以没有对九格的赋值在每条线上被量子态共同显示（no_context_free_values）。不用 Lean 公理（生成的单射引理 injEq 除外，没有源声明使用它们）。",
+    "en": "Claims registered in contexts (Contextual S K C V): within k c says that context k registers claim c, and shows s k c is what k registers of c at configuration s. At s the registrations glue (Contextual.Glues) when some v : C → V agrees with every context on every claim it registers; this gives that any two contexts registering a claim agree (Contextual.Glues.agree), and where each claim has a context registering it the two are equivalent (Contextual.glues_iff_agree). Read with its context, every registration is a claim of a frame (Contextual.indexed), and the indexed frame fits every registration (Contextual.indexed_fits); a frame of context-free claims fits (Contextual.FitsFree) exactly where the registrations glue at every configuration (Contextual.fitsFree_iff). Where what a context can show depends only on the claims it registers (Local) and no context-free reading lies within every context's possibilities (NoGlobal), no configuration respecting the possibilities glues (Contextual.not_glues), and if one configuration respects them no frame of context-free claims fits (Contextual.no_free_frame). What a whole W allows within a context (restrict) is local (restrict_local), and W lies within what its parts glue to (Glued, glued_of_whole); the parts giving the whole back is PartsDetermine; nonempty possibilities with no context-free reading are the parts of no whole (no_whole). Specker's three boxes and three openings, exactly one of the two opened holding the gem: the possibilities are local (Specker.local_), no opening forces a box (Specker.unforced), no placement fits all (Specker.noGlobal), the world showing the gem in each opening's first box respects them (Specker.respects) and does not glue (Specker.not_glues), and they are the parts of no whole (Specker.no_whole). The Mermin–Peres square, nine cells in three rows and three columns, rows and the first two columns of even parity and the third column odd: the possibilities are local (Square.local_), no line forces a cell (Square.unforced), no assignment fits all six lines (Square.nine, Square.noGlobal), and they are the parts of no whole (Square.no_whole). The quantum realization (Becoming.Quantum, P72q): the nine two-qubit observables as integer matrices each square to I (obs_sq), the three of each line commute pairwise (line_commute), and a line multiplies to −I in the third column and to I otherwise (line_product); the values a nonzero vector shows jointly on a line have the line's parity (line_parity) and are a possibility of the line (shows_support), and every possibility is shown by an explicit integer vector (line_realized, support_shown); so no assignment to the nine cells is shown jointly on every line by quantum states (no_context_free_values). No Lean axiom is used (except by the generated injectivity lemmas injEq, which no source declaration uses)."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：glues_iff_agree 与 fitsFree_iff 是双向的，要每个主张有一个识它的语境（home、covers）。",
+      "en": "No premise: glues_iff_agree and fitsFree_iff are two-way and need a context registering each claim (home, covers)."
+    },
+    {
+      "zh": "not_glues 与 no_free_frame 要可能性局部、没有不依语境的读法与一个尊重它们的配置；no_whole 要某个语境允许某物，不用局部性（局部条件）。",
+      "en": "not_glues and no_free_frame need local possibilities, no context-free reading and one configuration respecting them; no_whole needs some context to allow something, and does not use locality (local conditions)."
+    },
+    {
+      "zh": "量子实现只覆盖这个方阵：实矩阵、整数本征向量；希尔伯特空间、测量与 Born 权重没有陈述。",
+      "en": "The quantum realization covers only this square: real matrices and integer eigenvectors; Hilbert space, measurement and Born weights are not stated."
+    }
+  ],
+  "correspondence": {
+    "zh": "P72 与 P72q（工作板），按 Ren 2026-10-12 的“push the frontier, as far as possible”，回答 Ren 的“wave/particle”：核心的 Frame 在类型上把主张读作不依语境，这里把它定为表示的承诺并给出它何时合的充要条件；量子的识属于不粘合的一类（两个量子比特上的 Kochen–Specker，Mermin 1990、Peres 1990）。P72q 由“Cause–effect system theory comparison”（P64–P68 的所有者）写成并检查。部分失去整体的两种方式（不给回：P70 的奇偶；没有整体：no_whole）是可能性上层的唯一与粘合两个条件。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：波与粒子都是向不依语境的值的投影；值是在语境中的识，即关系；Ren 推测的“真”是关系的。见整合文档 §{S}。",
+    "en": "P72 and P72q (work board), following Ren's “push the frontier, as far as possible” of 12 October 2026, answering Ren's “wave/particle”: the core's Frame reads claims as context-free by type; here that is named a commitment of the representation, with the condition under which it fits; quantum registrations are of the kind that does not glue (Kochen–Specker for two qubits, Mermin 1990, Peres 1990). P72q was written and checked by “Cause–effect system theory comparison” (the owner of P64–P68). The two ways parts fail a whole (not giving it back: P70's parity; having no whole: no_whole) are the uniqueness and gluing conditions of a sheaf, for possibilities. Readings (the AI's, pending Ren; Ren agreed with the reply containing them): wave and particle are both projections onto context-free values; a value is a registration in context, a relation; the truth of Ren's speculation is relational. See §{S} of the integration note."
+  },
+  "aliases": [
+    "Becoming.Contextual",
+    "Becoming.Contextual.glues_iff_agree",
+    "Becoming.Contextual.fitsFree_iff",
+    "Becoming.Contextual.indexed_fits",
+    "Becoming.Contextual.no_free_frame",
+    "Becoming.PartsDetermine",
+    "Becoming.no_whole",
+    "Becoming.Specker.noGlobal",
+    "Becoming.Square.noGlobal",
+    "Becoming.Square.no_whole",
+    "Becoming.Square.no_context_free_values",
+    "contextuality",
+    "语境性",
+    "Kochen–Specker",
+    "Mermin–Peres square",
+    "Mermin–Peres 方阵",
+    "context-free claims",
+    "不依语境的主张"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "separation-loses-the-relation",
+      "detail": {
+        "zh": "部分失去整体的另一种方式：奇偶是诸对不给回的整体，在同样的三对上。",
+        "en": "The other way parts fail a whole: parity is a whole its pairs do not give back, on the same three pairs."
+      }
+    },
+    {
+      "id": "registration-within-what-it-registers",
+      "detail": {
+        "zh": "另一种投影的限制：从内部持有每个读法。",
+        "en": "Another limit of projection: holding every reading from within."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean",
+      "detail": {
+        "zh": "Specker 的三个盒子与 Mermin–Peres 方阵：每个语境内一致，没有语境强制任何主张，没有不依语境的读法（Specker.noGlobal、Square.noGlobal）；量子比特实现方阵（Becoming.Quantum 的 no_context_free_values）。",
+        "en": "Specker's three boxes and the Mermin–Peres square: consistent within each context, no context forcing a claim, no context-free reading (Specker.noGlobal, Square.noGlobal); qubits realize the square (no_context_free_values of Becoming.Quantum)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只陈述可能性，不陈述概率（Bell 型不等式）；一般的层论与 Abramsky–Brandenburger 框架没有陈述；奇偶障碍的一般定理没有陈述，三个见证各自由 decide 检查；量子实现只覆盖这个方阵；PartsDetermine 要求一个值的类型；读法是 AI 的；不含伦理谓词。",
+    "en": "Only possibilities are stated, not probabilities (Bell-type inequalities); general sheaf theory and the Abramsky–Brandenburger framework are not stated; the general parity obstruction is not stated, the three witnesses each checked by decide; the quantum realization covers only this square; PartsDetermine needs one type of values; the readings are the AI's; contains no ethical predicate."
+  },
+  "next_delta": {
+    "zh": "零前提计划把不依语境的主张列为表示的承诺（整合者决定）；奇偶障碍的一般定理；概率的语境性；Ren 的判断：值读作语境中的识。",
+    "en": "The zero-premise plan listing context-free claims as a commitment of the representation (the integrator decides); the general parity obstruction; probabilistic contextuality; Ren's judgment on reading a value as a registration in context."
+  }
+}

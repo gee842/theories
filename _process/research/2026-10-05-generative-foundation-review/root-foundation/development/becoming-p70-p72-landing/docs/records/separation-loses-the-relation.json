@@ -1,0 +1,108 @@
+{
+  "id": "separation-loses-the-relation",
+  "title": {
+    "zh": "分离恰失去关系：分别描述各部分恰在整体为矩形处给回整体；关系只由共同作用形成，在各自无损的律下持续，只由失去或共同作用结束；奇偶是诸对不给回的整体",
+    "en": "Separation loses exactly the relation: describing the parts separately gives back the whole exactly where it is rectangular; a relation forms only by joint action, lasts under separate laws that lose nothing, and ends only by loss or joint action; parity is a whole its pairs do not give back"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "设 whole 是 A × B 上的整体（哪些组合出现）。whole 是矩形的（Rectangular），指 whole (a, b) 与 whole (a′, b′) 推出 whole (a, b′)；分离的描述（Separated whole p）只说 p 的每个部分能出现。分离保留每个出现的组合（separated_of_whole），并且“分离的描述只含出现者”恰当 whole 是矩形的（separation_faithful_iff）；总是同去的两个部分分别描述时可以分开（separation_surplus）。三个部分可以作为整体相关而任意两个都自由：偶奇偶的三元组中，任意两个值都能补成偶的三元组，而 (true, false, false) 不是（whole_not_in_pairs）；放在 Specker 的三个盒子与三对上（Becoming.Context 的 restrict、Glued、PartsDetermine），每个读法都被每一对容许（evenBoxes_glued），诸对不给回整体（evenBoxes_not_determined）。律 next 从 whole 通到的配置记作 imageOf next whole。各自移动每个部分的律 (f × g) 保持矩形，不论有损与否（Rectangular.image_of_separate）；把第一部分复制进第二部分的律把全部组合变成两个部分相同，不是矩形的（copy_relates）。f 在出现的第一部分上不合并、g 在出现的第二部分上不合并时，(f × g) 的像是矩形的推出 whole 是矩形的（Rectangular.of_image_injective），所以不是矩形的整体在这样的律下保持不是矩形的（relation_persists）。把第一部分送到一个值的律，不论怎样移动第二部分，通到矩形的整体（forgetting_unrelates）。例：Bool × Bool 上的 couple (x, y) = (x, flipIf x y) 是对合（couple_couple）；它把“第二部分为假”（矩形）通到不是矩形的整体，再作用一次通回“第二部分为假”（coupling_relates_and_unrelates）。不用 Lean 公理。",
+    "en": "Let whole be a whole on A × B (which combinations occur). It is rectangular (Rectangular) when whole (a, b) and whole (a′, b′) give whole (a, b′); the separated description (Separated whole p) says only that each part of p occurs. Separation keeps every combination that occurs (separated_of_whole), and it contains only what occurs exactly when whole is rectangular (separation_faithful_iff); two parts that always go alike can go apart when described separately (separation_surplus). Three parts can be related as a whole while every two are free: in the even-parity triples any two values complete to an even triple, and (true, false, false) is not one (whole_not_in_pairs); on Specker's three boxes and three pairs (restrict, Glued and PartsDetermine of Becoming.Context) every reading is allowed by every pair (evenBoxes_glued) and the pairs do not give the whole back (evenBoxes_not_determined). Write imageOf next whole for the configurations a law next leads to from whole. A law moving each part by itself (f × g) keeps a whole rectangular, lossy or not (Rectangular.image_of_separate); the law copying the first part into the second turns the full whole into the parts being equal, which is not rectangular (copy_relates). Where f merges no two first parts that occur and g no two second parts, a rectangular image under f × g gives a rectangular whole (Rectangular.of_image_injective), so a whole that is not rectangular stays so under such a law (relation_persists). A law sending the first part to one value, however it moves the second, leads to a rectangular whole (forgetting_unrelates). For example, couple (x, y) = (x, flipIf x y) on Bool × Bool is an involution (couple_couple); it leads from “the second part is false” (rectangular) to a whole that is not rectangular, and acting again back to “the second part is false” (coupling_relates_and_unrelates). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：separation_faithful_iff 是双向的，对每个整体成立；Rectangular.image_of_separate 对任何 f、g 成立。",
+      "en": "No premise: separation_faithful_iff is two-way and holds for every whole; Rectangular.image_of_separate holds for any f and g."
+    },
+    {
+      "zh": "relation_persists 要 f 与 g 在出现者上不合并（局部条件，写在定理之中）。",
+      "en": "relation_persists needs f and g to merge nothing that occurs (a local condition, written into the theorem)."
+    },
+    {
+      "zh": "见证的结论：奇偶、复制与 couple 都在 Bool 上。",
+      "en": "For the witnesses: parity, copying and couple are on Bool."
+    }
+  ],
+  "correspondence": {
+    "zh": "P70 的第一部分（工作板），按 Ren 2026-10-12 的“push the frontier, as far as possible”，回答 Ren 的“the framing may lose something”与“what makes a pair, a pair?”：分别描述各部分扣除的恰是关系；关系的“能一起是什么”是“怎样一起继续”在一刻的记录。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：相关是一次相遇的记忆；三生万物读作三是整体能持有任何部分都不持有的关系的最小数目。部分失去整体的另一种方式（部分允许没有整体有的）是 contextual-registration 的 no_whole，在同样的三对上。见整合文档 §{S}。",
+    "en": "The first part of P70 (work board), following Ren's “push the frontier, as far as possible” of 12 October 2026, answering Ren's “the framing may lose something” and “what makes a pair, a pair?”: what describing the parts separately deducts is exactly the relation; “what can go together” is the record at a moment of “how they go on”. Readings (the AI's, pending Ren; Ren agreed with the reply containing them): a correlation is the memory of a meeting; 三生万物 read as three being the least number at which a whole holds a relation no part holds. The other way parts fail a whole (parts allowing what no whole has) is no_whole of contextual-registration, on the same three pairs. See §{S} of the integration note."
+  },
+  "aliases": [
+    "Becoming.Rectangular",
+    "Becoming.Separated",
+    "Becoming.separation_faithful_iff",
+    "Becoming.separation_surplus",
+    "Becoming.whole_not_in_pairs",
+    "Becoming.evenBoxes_not_determined",
+    "Becoming.imageOf",
+    "Becoming.Rectangular.image_of_separate",
+    "Becoming.copy_relates",
+    "Becoming.relation_persists",
+    "Becoming.forgetting_unrelates",
+    "Becoming.coupling_relates_and_unrelates",
+    "rectangular whole",
+    "矩形的整体",
+    "separation",
+    "分离",
+    "relation held by no part",
+    "不在任何部分中的关系"
+  ],
+  "dependencies": [
+    {
+      "id": "contextual-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 restrict、Glued、PartsDetermine 与 Specker 的盒子和对：奇偶在同样的三对上是诸对不给回的整体。",
+        "en": "Reuses restrict, Glued, PartsDetermine and Specker's boxes and pairs: on the same three pairs parity is a whole its pairs do not give back."
+      },
+      "interface": {
+        "output": {
+          "zh": "整体在语境中允许什么、部分粘合成什么、部分是否给回整体；三个盒子与三对。",
+          "en": "What a whole allows within a context, what the parts glue to, whether the parts give the whole back; three boxes and three pairs."
+        },
+        "input": {
+          "zh": "奇偶作为部分失去整体的第一种方式的见证。",
+          "en": "Parity as the witness of the first way parts fail a whole."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "the-split-that-makes-sense",
+      "detail": {
+        "zh": "同一模块：有意义的切分相对于所识；这里是任何描述把整体切成部分时失去什么。",
+        "en": "Same module: the split that makes sense, relative to what is registered; here, what any description cutting a whole into parts loses."
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "detail": {
+        "zh": "投影承载规律恰当经它相同者同去；这里各自移动每个部分的律保持矩形，共同的律可以使部分相关或不再相关。",
+        "en": "A projection carries a law exactly where what it lumps goes alike; here laws moving each part by itself keep wholes rectangular, and joint laws can relate or unrelate the parts."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "detail": {
+        "zh": "不是矩形的整体分别描述时多出组合（separation_surplus）；三个部分的偶奇偶不被任何一对持有（whole_not_in_pairs）；一个无损的耦合可以结束关系（coupling_relates_and_unrelates），所以“不失去什么”不足以保持关系，要加“各自移动每个部分”。",
+        "en": "A whole that is not rectangular gains combinations when described separately (separation_surplus); the even parity of three parts is held by no pair (whole_not_in_pairs); a lossless coupling can end a relation (coupling_relates_and_unrelates), so losing nothing does not keep a relation without “moving each part by itself”."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "关系只对两个部分的整体陈述，三个部分以奇偶为见证；哪些共同的律保持矩形没有刻画；耦合的结束只有一个见证；PartsDetermine 与 separation_faithful_iff 不是实例关系（两个部分的类型不同）；读法是 AI 的；不含伦理谓词。",
+    "en": "Relation is stated for wholes of two parts, with parity as the witness for three; which joint laws keep wholes rectangular is not characterized; a coupling ending a relation has one witness; PartsDetermine and separation_faithful_iff are not related as instance and law (the two parts have different types); the readings are the AI's; contains no ethical predicate."
+  },
+  "next_delta": {
+    "zh": "刻画保持矩形的共同的律；n 个部分的分离与“部分给回整体”的统一陈述；Ren 的判断：相关读作相遇的记忆。",
+    "en": "Characterizing the joint laws that keep wholes rectangular; one statement of separation and of parts giving back the whole for n parts; Ren's judgment on reading a correlation as the memory of a meeting."
+  }
+}
