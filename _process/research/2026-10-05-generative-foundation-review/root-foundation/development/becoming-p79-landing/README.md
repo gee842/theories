@@ -10,7 +10,7 @@ No existing module changes.
 
 ## Verified in scratch
 
-The subagent's `mk.sh` build against the session's scratch copy of the core: 379 constants, no warning, no axiom (the constructor injection lemmas Lean generates, `*.injEq`, report `propext` as in other modules and are not declarations the checker audits). To be rebuilt against main with `scratch_build.py` before landing.
+The subagent's `mk.sh` build against the session's scratch copy of the core: 379 constants, no warning, no axiom (the constructor injection lemmas Lean generates, `*.injEq`, report `propext` as in other modules and are not declarations the checker audits). Rebuilt 10-12 by `scratch_build.py` against main `66dc4450`: 118 theorems, 154 declarations, no axiom, no warning.
 
 ## Not covered
 
