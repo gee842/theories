@@ -95,4 +95,10 @@ finitely many conditions for the sensitivity. The earlier bytes are kept in scra
    `land_docs.py`) before the records and re-pointing, so the hashes recorded are final. The inventory runs after the
    checker, on the core the receipt checked. The generators are followed by a second re-pointing pass for the files
    they change.
-4. Commit only P80's files. Then mark P80 landed on the work board (its own row, reread first).
+4. Commit only P80's files, with explicit paths (`git commit -- <paths>`; the live tree's index is shared). The
+   commit message names the periphery closure-count fix that `repoint.py` makes: scopes citing the new periphery
+   receipt get the closure count read from it, which corrects becoming-spine-instances' stale "the other 46
+   modules" (the integrator, 12 October: keep it in this landing and name it). Then mark P80 landed on the work
+   board (its own row, reread first).
+
+Queue place: after P76 (board `ffb09e13`). P58c, which lands later, renames no name this package uses.
