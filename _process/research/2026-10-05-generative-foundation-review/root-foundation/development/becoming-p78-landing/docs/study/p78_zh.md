@@ -3,4 +3,24 @@
 - **交换次序。** 两侧分开的相继两个交换可以以相反次序取：平衡、耗散与体现恰在原来成立处成立，段上的计数与总量保持（`World.commute_laws`、`World.commute_counts`），在任意次这样的交换下也如此（`Reorders.laws`、`Reorders.totals`），即 Mazurkiewicz 迹等价。
 - **次序携带什么。** 次序经依存与共享的关系项被登记：在 `Crossing` 中次序相反时一个关系项在没有支持时活跃，在 `Arising` 中一个关系项在活跃之前给予（`Crossing.order_registers`、`Arising.order_registers`）。
 
-读法是 AI 的，待 Ren：对规律、总量与复现，步序号不携带变化次序以外的东西；速率相对于读法的单位；规律所需的次序会是交换的偏序，逆方向（Foata 范式）没有证明。由本会话的一个 Opus 子代理构建（338 个常量，公理报告为空）。尚无独立审查。
+- **次序作为对象（P78b）。**
+  - 足迹说出每个交换触及哪些关系项；在包含交换之处，交换之间的相连生成严格偏序（`Footprinted.Precedes`）。
+  - 交换不相连的交换在重新编号下保持它（`Footprinted.reorder_precedes`）。
+  - 反过来，以构造性的冒泡排序，一段上如此达到的重新编号恰是保持它的那些。以这样的次序有相同交换、足迹与变化、起点相同的世界，每步都与一个重排一致（`Footprinted.sorts_iff`、`Footprinted.converse`）。
+- **什么被保持（P78b）。**
+  - 沿不相连的交换，每个前提双向保持（`Footprinted.reorder_premises`）。
+  - 沿任意重排，生起与止息的计数保持（`Reorders.counts`）。
+  - 交换相连的交换破坏活动需要支持与只有活跃者给予（`Crossing.reorders_joined`、`Arising.reorders_joined`）。
+- **移除空步（P78b）。** 去掉停顿的空步的世界（`World.withoutIdle`）恰在原世界满足每个前提处满足它，恰在原世界有普查处有普查，任一段上的总量与计数相同（`World.withoutIdle_premises`、`World.withoutIdle_counted`、`World.withoutIdle_totals`）。
+
+读法是 AI 的，待 Ren：
+- 对规律、总量与复现，步序号不携带变化次序以外的东西。
+- 速率相对于读法的单位。
+- 给定足迹，规律所需的次序是相连交换的偏序，不是步的序列。
+
+没有证明：
+- 最小足迹；
+- Foata 范式；
+- 沿重排的普查。
+
+由本会话的 Opus 子代理构建（266 条定理，公理报告为空）。尚无独立审查。

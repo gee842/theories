@@ -2,4 +2,20 @@
 - **每个条件下精确。** 一个模式（家族成员的通过、取用者之数、是否有交换）恰在服从每步之律时由某个世界显示（`OneStep.every_iff`）；在被平衡、耗减、封闭或两者兼有的家族上，恰在还服从该条件之律时（`OneStep.balance_iff`、`OneStep.runsDown_iff`、`OneStep.closed_iff`、`OneStep.runsDownClosed_iff`）；所以一个性质在每个这样的步成立，恰在它对服从该律的每个模式成立时（`OneStep.laws`）。跨一个家族的运行，唯一多出的律是每步之后所立就是下一步之前所立（`OneStep.Chained`、`OneStep.run_every_iff`）。
 - **脊柱此前未陈述的两条律。** 有所取就有取用者（`Flow.sign_uptake_le_takers`）；所取不超过所立加所给（`Flow.BalancesOn.taken_le`）。没有前者，所陈述的律允许没有世界显示的模式（`OneStep.stated_not_realized`）；有了它，对耗减且封闭的家族它们就是全部规律（`OneStep.runsDownClosed_iff_stated`）。
 
-读法是 AI 的，待 Ren。未涵盖：给家族的关系项之数；逐步选择家族的运行。由本会话的一个 Opus 子代理构建（379 个常量，公理报告为空）。尚无独立审查。
+- **给予者、容量与活动（P79b）。**
+  - 有所给就有给予者：有所给之处，给予者至少一个，至多为所给之数（`OneStep.Givers`）。
+  - 耗减恰再加每个给予者都取（`Flow.DissipatesOn.renewers_le_takers`）。
+  - 容量恰添所给不超过容量乘给予者数（`OneStep.every_capacity_iff`）。
+  - 该步的活动不添规律（`OneStep.every_active_iff`）。
+- **逐步选定的家族（P79b）。**
+  - 家族可以每步改变时，无条件、平衡与封闭不把一步连到下一步（`OneStep.step_every_iff`）。
+  - 耗减以不计次序的延续把各步相连：在每个正的水平上，一步之后立于那里的与下一步之前一样多（`OneStep.Continues`、`OneStep.step_runsDown_iff`）。
+  - 它严格弱于逐位跟随（`OneStep.steps_not_run`、`OneStep.vanishing_steps`）。
+
+读法是 AI 的，待 Ren。
+
+未涵盖：
+- 计数活跃者（需要活动可判定）；
+- 容量与活动在运行上的形式。
+
+由本会话的 Opus 子代理构建（311 条定理，公理报告为空）。尚无独立审查。

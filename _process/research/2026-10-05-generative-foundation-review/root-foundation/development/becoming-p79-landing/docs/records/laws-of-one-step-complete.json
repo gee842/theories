@@ -1,13 +1,13 @@
 {
   "id": "laws-of-one-step-complete",
   "title": {
-    "zh": "一步的规律就是一步的全部规律：在每个条件下与跨运行，一个模式恰在服从该条件的规律时由某个世界显示",
-    "en": "The laws of one step are all the laws of one step: under each condition and across runs, a pattern is shown by some world exactly where it obeys that condition's law"
+    "zh": "一步的规律就是一步的全部规律：在每个条件下与跨运行，一个模式（含给予者）恰在服从该条件的规律时由某个世界显示；容量添一条规律，活动不添",
+    "en": "The laws of one step are all the laws of one step: under each condition and across runs, a pattern, its givers included, is shown by some world exactly where it obeys that condition's law; capacity adds one law and activity none"
   },
   "family": "F01",
   "claim": {
-    "zh": "一步在一个条件处所显示的是它的通过（Passage、Flow.passage）：步前与步后的层级，以及参与者从它取用与给它的总量。一步在一个家族上显示一个模式（Flow.Realizes），即其成员的通过依次排列、取用者的个数（Flow.takers）以及是否有参与者交换（Flow.ExchangesAt）。每一步都服从每步之律（Flow.Realizes.every）：凡有所取，取用者至少一个且至多所取之量，凡有所取或所给，就有交换。一个模式恰在服从每步之律时，由某个世界跨某步在某个家族上显示，每个参与者列出一次（OneStep.every_iff）；在被平衡的家族上，恰在每个通过还各自平衡时（OneStep.balance_iff）；在耗减的家族上，恰在总量下降至少取用者之数时（OneStep.runsDown_iff）；在跨此步封闭的家族上，恰在除非对家族有取或给否则无交换时（OneStep.closed_iff）；两个条件都有时，恰在两条律都成立时（OneStep.runsDownClosed_iff）。不论取用者之数，一个家族的通过恰在平衡且凡有所取总量至少降一时能够耗减（OneStep.runsDown_passages_iff）。所以模式的一个性质在条件成立的每一步成立，恰在它对服从该条件之律的每个模式成立时（OneStep.laws），这是 counting_laws 的对应。跨一个家族的每一步，只多一条律：通过前后相接，每步之后所立就是下一步之前所立（OneStep.Chained）；一串模式恰在通过相接且每步服从该条件之律时由某个世界显示（OneStep.run_every_iff、OneStep.run_balance_iff、OneStep.run_runsDown_iff、OneStep.run_closed_iff、OneStep.run_runsDownClosed_iff；OneStep.run_laws），这是 tally_iff_counted 的对应。一个见证世界服务每个模式（OneStep.Witness，经 World.ofRoles 读成脊柱的世界）。不加前提。",
-    "en": "What the step from t shows of a condition is its passage (Passage, Flow.passage): its level before and after, and what the relata taking part take from it and give to it. A step shows a pattern on a family (Flow.Realizes): the passages of its members in order, how many relata take from it (Flow.takers), and whether something taking part exchanges (Flow.ExchangesAt). Every step obeys the law of every step (Flow.Realizes.every): where anything is taken from a family, the relata taking are at least one and at most what is taken, and where anything is taken or given something exchanges. A pattern is shown by some world across some step on some family, listing each relatum taking part once, exactly when it obeys the law of every step (OneStep.every_iff); on a family balanced on, exactly when each passage also balances (OneStep.balance_iff); on a family running down, exactly when moreover the total falls by at least the relata taking (OneStep.runsDown_iff); on a family closed across the step, exactly when moreover nothing exchanges unless something is taken from or given to the family (OneStep.closed_iff); with both conditions, with both laws (OneStep.runsDownClosed_iff). Whatever the count, a family's passages can run down exactly when they balance and the total falls by one wherever anything is taken (OneStep.runsDown_passages_iff). So a property of patterns holds of every step where a condition holds exactly when it holds of every pattern obeying that condition's law (OneStep.laws), the counterpart of counting_laws. Across every step of one family there is one more law: the passages follow one another, what stands after each step being what stands before the next (OneStep.Chained); a run of patterns is shown by some world exactly when its passages follow one another and each step obeys the condition's law (OneStep.run_every_iff, OneStep.run_balance_iff, OneStep.run_runsDown_iff, OneStep.run_closed_iff, OneStep.run_runsDownClosed_iff; OneStep.run_laws), the counterpart of tally_iff_counted. One witness world serves every pattern (OneStep.Witness, read as a world of the spine through World.ofRoles). No premise."
+    "zh": "一步在一个条件处所显示的是它的通过（Passage、Flow.passage）：步前与步后的层级，以及参与者从它取用与给它的总量。一步在一个家族上显示一个模式（Flow.Realizes），即其成员的通过依次排列、取用者的个数（Flow.takers）以及是否有参与者交换（Flow.ExchangesAt）。每一步都服从每步之律（Flow.Realizes.every）：凡有所取，取用者至少一个且至多所取之量，凡有所取或所给，就有交换。一个模式恰在服从每步之律时，由某个世界跨某步在某个家族上显示，每个参与者列出一次（OneStep.every_iff）；在被平衡的家族上，恰在每个通过还各自平衡时（OneStep.balance_iff）；在耗减的家族上，恰在总量下降至少取用者之数时（OneStep.runsDown_iff）；在跨此步封闭的家族上，恰在除非对家族有取或给否则无交换时（OneStep.closed_iff）；两个条件都有时，恰在两条律都成立时（OneStep.runsDownClosed_iff）。不论取用者之数，一个家族的通过恰在平衡且凡有所取总量至少降一时能够耗减（OneStep.runsDown_passages_iff）。所以模式的一个性质在条件成立的每一步成立，恰在它对服从该条件之律的每个模式成立时（OneStep.laws），这是 counting_laws 的对应。跨一个家族的每一步，只多一条律：通过前后相接，每步之后所立就是下一步之前所立（OneStep.Chained）；一串模式恰在通过相接且每步服从该条件之律时由某个世界显示（OneStep.run_every_iff、OneStep.run_balance_iff、OneStep.run_runsDown_iff、OneStep.run_closed_iff、OneStep.run_runsDownClosed_iff；OneStep.run_laws），这是 tally_iff_counted 的对应。一个见证世界服务每个模式（OneStep.Witness，经 World.ofRoles 读成脊柱的世界）。把给予者加入模式（P79b）：给予家族的东西有给予它的关系项，有所给之处给予者至少一个，至多为所给之数（Flow.sign_replenishment_le_renewers、Flow.renewers_le_replenishment、OneStep.Givers）；在无条件、平衡与封闭之下这就是全部新规律，耗减恰再加每个给予者都取，给予者不多于取用者（Flow.DissipatesOn.renewers_le_takers；OneStep.every_givers_iff、OneStep.balance_givers_iff、OneStep.closed_givers_iff、OneStep.runsDown_givers_iff、OneStep.runsDownClosed_givers_iff、OneStep.laws_givers）。该步的容量恰添所给不超过容量乘给予者数（Flow.CapacityAt.replenishment_le；OneStep.every_capacity_iff 及其四个同伴）；该步只有活跃者给予、只从所汲取者取，不添一步所显示的规律（OneStep.every_active_iff 及其四个同伴）。带给予者的一个家族上的运行：经过彼此相接，每步遵守带给予者的规律（OneStep.run_every_givers_iff 及其四个同伴）。不加前提。",
+    "en": "What the step from t shows of a condition is its passage (Passage, Flow.passage): its level before and after, and what the relata taking part take from it and give to it. A step shows a pattern on a family (Flow.Realizes): the passages of its members in order, how many relata take from it (Flow.takers), and whether something taking part exchanges (Flow.ExchangesAt). Every step obeys the law of every step (Flow.Realizes.every): where anything is taken from a family, the relata taking are at least one and at most what is taken, and where anything is taken or given something exchanges. A pattern is shown by some world across some step on some family, listing each relatum taking part once, exactly when it obeys the law of every step (OneStep.every_iff); on a family balanced on, exactly when each passage also balances (OneStep.balance_iff); on a family running down, exactly when moreover the total falls by at least the relata taking (OneStep.runsDown_iff); on a family closed across the step, exactly when moreover nothing exchanges unless something is taken from or given to the family (OneStep.closed_iff); with both conditions, with both laws (OneStep.runsDownClosed_iff). Whatever the count, a family's passages can run down exactly when they balance and the total falls by one wherever anything is taken (OneStep.runsDown_passages_iff). So a property of patterns holds of every step where a condition holds exactly when it holds of every pattern obeying that condition's law (OneStep.laws), the counterpart of counting_laws. Across every step of one family there is one more law: the passages follow one another, what stands after each step being what stands before the next (OneStep.Chained); a run of patterns is shown by some world exactly when its passages follow one another and each step obeys the condition's law (OneStep.run_every_iff, OneStep.run_balance_iff, OneStep.run_runsDown_iff, OneStep.run_closed_iff, OneStep.run_runsDownClosed_iff; OneStep.run_laws), the counterpart of tally_iff_counted. One witness world serves every pattern (OneStep.Witness, read as a world of the spine through World.ofRoles). With the givers in the pattern (P79b): something given to a family has a relatum giving it, the givers numbering at least one wherever anything is given and at most what is given (Flow.sign_replenishment_le_renewers, Flow.renewers_le_replenishment, OneStep.Givers); that is the whole new law under no condition, balance and closure, and running down adds exactly that every giver takes, the givers at most the takers (Flow.DissipatesOn.renewers_le_takers; OneStep.every_givers_iff, OneStep.balance_givers_iff, OneStep.closed_givers_iff, OneStep.runsDown_givers_iff, OneStep.runsDownClosed_givers_iff, OneStep.laws_givers). Capacity at the step adds exactly that what is given is at most capacity times the givers (Flow.CapacityAt.replenishment_le; OneStep.every_capacity_iff and its four companions); only active relata giving and taking only from what is drawn on, at the step, add no law that one step shows (OneStep.every_active_iff and its four companions). Runs on one family with givers: the passages follow one another and each step obeys its law with givers (OneStep.run_every_givers_iff and its four companions). No premise."
   },
   "hypotheses": [
     {
@@ -39,7 +39,22 @@
     "laws of one step complete",
     "一步之律完备",
     "passage",
-    "通过"
+    "通过",
+    "Becoming.OneStep.Givers",
+    "Becoming.Flow.sign_replenishment_le_renewers",
+    "Becoming.Flow.renewers_le_replenishment",
+    "Becoming.Flow.DissipatesOn.renewers_le_takers",
+    "Becoming.Flow.CapacityAt",
+    "Becoming.Flow.ActingAt",
+    "Becoming.Flow.TakingAt",
+    "Becoming.OneStep.every_givers_iff",
+    "Becoming.OneStep.runsDown_givers_iff",
+    "Becoming.OneStep.every_capacity_iff",
+    "Becoming.OneStep.every_active_iff",
+    "Becoming.OneStep.laws_givers",
+    "Becoming.OneStep.run_every_givers_iff",
+    "givers",
+    "给予者"
   ],
   "dependencies": [
     {
@@ -96,6 +111,13 @@
         "zh": "同一模块中所发现的两条遗漏之律。",
         "en": "The two missing laws found in the same module."
       }
+    },
+    {
+      "id": "runs-on-families-chosen-step-by-step",
+      "detail": {
+        "zh": "逐步选定家族的运行在另一记录中。",
+        "en": "Runs on families chosen step by step are in the other record."
+      }
     }
   ],
   "counterexamples": [
@@ -108,11 +130,11 @@
     }
   ],
   "limitations": {
-    "zh": "给家族的关系项数（renewers 及其容量律）不在模式中；运行只在固定的家族上刻画；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "The number of relata giving to a family (renewers, with its capacity law) is not part of the pattern; runs are characterized on a fixed family only; the readings are the AI's, pending Ren; no ethical predicate occurs."
+    "zh": "计数活跃的关系项、或参与而不交换的关系项不在模式中（需要活动可判定）；容量与活动只在一步上陈述，不在运行上；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "Counting active relata, or relata taking part without exchanging, is not in the pattern (it would need activity decided); capacity and activity are stated at one step, not over runs; the readings are the AI's, pending Ren; no ethical predicate occurs."
   },
   "next_delta": {
-    "zh": "把给予者之数加入模式，并刻画逐步选择家族的运行。",
-    "en": "Add the number of giving relata to the pattern, and characterize runs on families chosen step by step."
+    "zh": "容量与活动在运行上的形式；活动可判定时计数活跃者。",
+    "en": "Capacity and activity over runs; counting active relata where activity is decided."
   }
 }

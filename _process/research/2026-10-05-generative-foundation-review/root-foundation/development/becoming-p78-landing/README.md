@@ -1,24 +1,38 @@
-# P78 landing package: the step index, re-founded
+# P78 landing package: the step index, re-founded (with P78b)
 
-Under Ren's "move towards 100%" of 12 October 2026 ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)), the session "Current math core" [1c3084] claimed P78 on the [work board](../../../../../BECOMING-WORKBOARD.md): examine the zero-premise plan's commitment to a shared discrete index of steps. The module was built by an Opus subagent of the session and checked by the session.
+Under Ren's "move towards 100%" of 12 October 2026 ([source](../../../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)), the session "Current math core" [1c3084] claimed P78 and its extension P78b on the [work board](../../../../../BECOMING-WORKBOARD.md). The item examines the zero-premise plan's commitment to a shared discrete index of steps. Opus subagents of the session built the module in two rounds, and the session checked both.
 
 | Item | Module | Imports | Records |
 |---|---|---|---|
-| P78 order | `Becoming.Order` | `Sampling` | only-the-order-of-change-registers, exchanges-commute-unless-joined (F01) |
+| P78 + P78b order | `Becoming.Order` | `Sampling` | only-the-order-of-change-registers, exchanges-commute-unless-joined, order-of-exchanges-is-the-invariant (F01) |
 
-No existing module changes.
+No existing module changes. P78 and P78b land together as one module.
 
 ## What it contains
 
-- `lean/Becoming/Order.lean`: stuttering (idle steps) and commutation of consecutive independent exchanges, with the witnesses `Expansion`, `Lapse`, `Crossing` and `Arising`. Pure term mode.
-- `docs/records/`, `docs/study/`: record drafts and the study section.
+`lean/Becoming/Order.lean` is pure term mode, with 266 theorems and 317 declarations by the checker's parser.
+- **P78.** Stuttering, i.e. inserting idle steps, and the commutation of consecutive independent exchanges. Witnesses: `Expansion`, `Lapse`, `Crossing`, `Arising`.
+- **P78b, the order as an object.** A footprint (`Footprinted`) gives the order of joined exchanges (`Precedes`), a strict partial order. Commuting unjoined exchanges keeps that order up to renumbering (`reorder_precedes`).
+- **P78b, the converse.** Proved by constructive bubble sort, as Mazurkiewicz's theorem with footprints (`sorts_iff`, `converse`).
+- **P78b, what carries along commutation.**
+  - Along unjoined commutations, every premise carries (`reorder_premises`).
+  - Along any `Reorders`, the counts of arising and ceasing carry (`Reorders.counts`).
+  - Two witnesses show that joined commutations break activity needing support and only-active giving (`Crossing.reorders_joined`, `Arising.reorders_joined`).
+- **P78b, removing idle steps.** This is a construction (`World.withoutIdle`). Every premise, the census, the totals and the counts are kept.
 
-One change from the subagent's file: the reading's last sentence is softened to "would then be a partial order of exchanges … the converse that would make this exact is not shown", since the converse is not proved.
+The reading's last sentence in P78 was softened while its converse was open. The converse is now proved, and it is cited in `order-of-exchanges-is-the-invariant`.
 
 ## Verified in scratch
 
-The subagent's `mk.sh` build against the session's scratch copy of the core: 338 constants, no warning, no axiom. It must be rebuilt against main with `scratch_build.py` before landing; main has since renamed P58b's lemmas, none of which `Order` uses.
+`scratch_build.py` against main `66dc4450`: no error or warning, and the audit of `Becoming.Order` reports 266 theorems and 317 declarations with no axiom. The P78 part alone was 161 theorems and 191 declarations. A text scan found no name clash against the core, P69's `Unfolding` or the queued packages.
 
 ## Not shown
 
-Removing idle steps as a construction; the converse (Foata normal form) and the partial order as an object; activity needing support, only active relata giving, and the counts of arising and ceasing along repeated commutation; invariance of Part II's predicates; continuous time. No independent review yet.
+- The footprint is given; the least footprint would need being moved decided.
+- No Foata normal form is built.
+- The moving step of each read step is a hypothesis of the removal.
+- The census along reorderings is not shown.
+- Invariance of Part II's predicates is not shown.
+- Continuous time is not covered.
+
+No independent review yet.
