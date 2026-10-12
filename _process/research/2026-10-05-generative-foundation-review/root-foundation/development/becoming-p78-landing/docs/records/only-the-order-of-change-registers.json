@@ -1,0 +1,107 @@
+{
+  "id": "only-the-order-of-change-registers",
+  "title": {
+    "zh": "只有变化的次序被登记：插入空步不改变一步的规律、段上的总量与计数以及复现；每步所计的（速率、储备承载多久）相对于读法的单位",
+    "en": "Only the order of change registers: inserting idle steps leaves the laws of one step, the totals and counts over a stretch, and recurrence unchanged; what is counted per step, rates and how long a reserve carries, is relative to the unit of the reading"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "一个停顿（Stutter ρ）指 ρ 0 = 0，每步或空（ρ (n+1) = ρ n）或前进一步，且每步都被到达；经 ρ 读用 Sampling 的 sample。空步上没有参与：平衡、耗散与封闭在每个家族上成立，存量耗减在持有所立者的家族上成立（Flow.sample_idle_balancesOn 等）；前进步上各自恰在所读之步上成立时成立（Flow.sample_moves_balancesOn_iff 等）。所以经停顿读的世界恰在原世界满足前提时满足它们（World.stutter_premises_iff）：平衡（每步每个关系项列出一次）、耗散、只有活跃者给予、只有活跃者取用、活动需要支持、体现与有界的传递；与较粗的读法不同，不需要关于活动如何保持的条件。任何段上的总量就是所读之段的总量（stutter_total；Flow.stutter_taken、Flow.stutter_given、stutter_risen、stutter_fallen、stutter_rise_count、stutter_fall_count，以及在已定之处的 stutter_comings、stutter_ceasings）；生起、止息与立的变化恰在原来复现时复现（World.stutter_arisingRecurs_iff、World.stutter_ceasingRecurs_iff、World.stutter_change_recurs_iff）；普查经停顿保留（World.stutter_counted），给出每个原步的读法之步时返回（World.stutter_counted_of_section）。停顿改变的是每步所计的：空步出现得任意晚时，没有流无终地更多（Flow.sample_not_more）；扩张无终地更多，每步读两次则不然（Expansion.more_step_relative）；由一份储备承载的世界在每步读两次时需要至少两份（Lapse.reserve_step_relative）。不加前提。",
+    "en": "A stuttering (Stutter ρ) has ρ 0 = 0, each step idle (ρ (n+1) = ρ n) or moving by one, and every step reached; it is read with Sampling's sample. At an idle step nothing takes part: balance, dissipation and closure hold on every family, and running down on a family holding what stands (Flow.sample_idle_balancesOn and others); at a moving step each holds exactly where it holds across the step read (Flow.sample_moves_balancesOn_iff and others). So a world read through a stuttering meets the premises exactly where it meets them (World.stutter_premises_iff): balance (each relatum listed once at each step), dissipation, only active relata giving, only active relata taking, activity needing support, embodiment and bounded transmission; unlike a coarser reading, no condition on how activity is held is needed. Over any stretch the totals are those of the stretch read (stutter_total; Flow.stutter_taken, Flow.stutter_given, stutter_risen, stutter_fallen, stutter_rise_count, stutter_fall_count, and where decided stutter_comings, stutter_ceasings); arising, ceasing and change of standing recur exactly where they recurred (World.stutter_arisingRecurs_iff, World.stutter_ceasingRecurs_iff, World.stutter_change_recurs_iff); a census survives a stuttering (World.stutter_counted) and returns where a step of the reading is given for each step (World.stutter_counted_of_section). What a stuttering changes is what is counted per step: with idle steps arbitrarily late no flow is more without end (Flow.sample_not_more); the expansion is more without end and, every step read twice, it is not (Expansion.more_step_relative); a world carried by a reserve of one needs a reserve of at least two when every step is read twice (Lapse.reserve_step_relative). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "停顿是给定的读法 ρ；空步的移除只经由上述等价与普查的截面引理，不作为构造。",
+      "en": "The stuttering ρ is a given reading; removing idle steps is covered only through the equivalences above and the census's section lemma, not as a construction."
+    },
+    {
+      "zh": "总量中取用与给予的部分要求每个关系项列出一次；生起与止息的计数要求活动已定。",
+      "en": "The taken and given totals require each relatum listed once; the counts of arising and ceasing require activity decided."
+    }
+  ],
+  "correspondence": {
+    "zh": "P78（工作板），按 Ren 2026-10-12 的“move towards 100%”：零前提计划把共享的离散步序号列为表示的承诺，像 P69 对出发点那样重新奠基。这里给出 Sampling 的严格递增读法的逆：插入空步。读法（AI 的，待 Ren）：对一步的规律、段上的总量与计数以及复现，步序号不携带变化次序以外的东西；空步什么也不登记；每步所计的相对于读法的单位，正如较粗的步。见整合文档 §{S}。",
+    "en": "P78 (work board), following Ren's “move towards 100%” of 12 October 2026: the zero-premise plan lists a shared discrete index of steps among the commitments of the representation, to be re-founded as P69 re-founded the starting point. This gives the converse of Sampling's strictly increasing reading: inserting idle steps. Reading (the AI's, pending Ren): for the laws of one step, the totals and counts over a stretch, and recurrence, the step index carries nothing beyond the order of change; an idle step registers nothing; what is counted per step is relative to the unit of the reading, as with coarser steps. See the integration document §{S}."
+  },
+  "aliases": [
+    "Becoming.Stutter",
+    "Becoming.World.stutter_premises_iff",
+    "Becoming.stutter_total",
+    "Becoming.World.stutter_arisingRecurs_iff",
+    "Becoming.World.stutter_counted",
+    "Becoming.Flow.sample_not_more",
+    "Becoming.Expansion.more_step_relative",
+    "Becoming.Lapse.reserve_step_relative",
+    "stuttering",
+    "停顿",
+    "idle step",
+    "空步",
+    "step index",
+    "步序号"
+  ],
+  "dependencies": [
+    {
+      "id": "laws-at-coarser-steps",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Sampling 的 sample、span 与跨读法之步的一步规律；停顿是它的逆方向。",
+        "en": "Reuses Sampling's sample, span and the laws of one step across a step of the reading; a stuttering is its converse direction."
+      },
+      "interface": {
+        "output": {
+          "zh": "经单调读法读世界。",
+          "en": "Reading a world through a monotone reading."
+        },
+        "input": {
+          "zh": "停顿的读法。",
+          "en": "Stuttering readings."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "一步的规律：经停顿读时不变。",
+        "en": "The laws of one step: unchanged when read through a stuttering."
+      }
+    },
+    {
+      "id": "continuous-time-as-tower",
+      "detail": {
+        "zh": "连续时间作为越来越细的离散读法之塔；这里是相反方向：插入空步。",
+        "en": "Continuous time as a tower of ever-finer discrete readings; here the other direction: inserting idle steps."
+      }
+    },
+    {
+      "id": "exchanges-commute-unless-joined",
+      "detail": {
+        "zh": "同一模块：相继的独立交换的次序。",
+        "en": "The same module: the order of consecutive independent exchanges."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "detail": {
+        "zh": "每步读两次时扩张不再无终地更多（Expansion.more_step_relative），储备需要加倍（Lapse.reserve_step_relative）。",
+        "en": "Read with every step twice, the expansion is no longer more without end (Expansion.more_step_relative), and the reserve must double (Lapse.reserve_step_relative)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "空步的移除不作为构造；第二部分的谓词的不变性没有证明；连续时间没有陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "Removing idle steps is not built as a construction; invariance of the predicates of Part II is not shown; continuous time is not stated; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "next_delta": {
+    "zh": "证明第二部分谓词在停顿下的不变性，并把空步的移除作为构造。",
+    "en": "Prove the invariance of Part II's predicates under stuttering, and build the removal of idle steps as a construction."
+  }
+}

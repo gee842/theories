@@ -1,0 +1,125 @@
+{
+  "id": "sum-over-histories-exact",
+  "title": {
+    "zh": "历史之和是精确的：任何赋权下 n 步历程的加权和等于一步一步的转移；可能性就是核心的关系，计数无损地细化它；经描述的积分恰在一步可归并处精确",
+    "en": "The sum over histories is exact: for every weighting, the weighted sum over courses of n steps is n steps of the transfer; possibility is the core's relation, counting refines it without loss, and integrating out is exact exactly where it is lumpable at one step"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "权重（Weights R）由零、一、备选的相加与相继之步的复合组成，结合律、单位、零的吸收与复合对相加的分配律是结构的字段。列出动作与配置（列表 moves 与 all）之后，n 步的历程（courses）是 n 个开放之步的序列；沿一个历程的权重（Weights.along）复合它各步的权重与终点处所读；转移（Weights.transfer）一次走一步。对每个赋权，n 步历程上沿各历程权重之和等于 n 步转移（Weights.sum_courses）。保持权重规律的、从一种赋权到另一种的读法（Weights.Hom）可以逐历程取，也可以最后取（Weights.Hom.transfer）。可能性（possibility：备选相并，相继相交）就是核心的关系：一个布尔权重读出一个过程的步、每个动作与配置都已列出时，n 步之后的可能性转移恰在有一条 n 个动作的迹通向终点读法成立之处时成立（possibility_transfer_iff）。计数是否为零（nonzero）是计数（counting）在可能性中保持规律的读法（support），所以历程的计数恰在有历程时不为零（counting_transfer_iff）。对每个值都有代表的描述 π，经 π 在任意步数之后所读恰在一步之后只依赖描述时只依赖描述（Weights.lumped_iff）；不然，描述不承载加权的规律（Lumping.loses）。除权重自身的规律与各定理所列的列表外不加前提。",
+    "en": "Weights (Weights R) consist of a zero, a one, an addition of alternatives and a composition of successive steps, with associativity, units, absorption by zero and the distribution of composition over addition as fields of the structure. With the moves and configurations listed (lists moves and all), the courses of n steps (courses) are the sequences of n open steps; the weight along a course (Weights.along) composes the weights of its steps with what is read at its end; the transfer (Weights.transfer) takes one step at a time. For every weighting, the sum over the courses of n steps of the weight along each is n steps of the transfer (Weights.sum_courses). A reading of one weighting in another that keeps its laws (Weights.Hom) can be taken course by course or at the end (Weights.Hom.transfer). Possibility (possibility: alternatives join, successive steps meet) is the core's relation: where a Boolean weight reads a process's steps and every move and configuration is listed, the possibility transfer after n steps holds exactly where a trace of n moves leads to a configuration where the end reading holds (possibility_transfer_iff). Whether a count is zero (nonzero) is a reading of counting (counting) in possibility that keeps the laws (support), so the count of courses is not zero exactly where a course exists (counting_transfer_iff). For a description π with a representative of each of its values, what is read through π after every number of steps depends on the description alone exactly where it does after one step (Weights.lumped_iff); where it does not, the description carries no weighted law (Lumping.loses). No premise beyond the weights' own laws and the listings each theorem names."
+  },
+  "hypotheses": [
+    {
+      "zh": "权重连同其规律一起给出，作为结构的字段；任何世界都不被假定有某个赋权。",
+      "en": "The weights are given with their laws, as fields of the structure; no world is assumed to have any weighting."
+    },
+    {
+      "zh": "动作与配置以有限列表列出；possibility_transfer_iff 与 counting_transfer_iff 还要求列表包含每个动作与每个配置。",
+      "en": "Moves and configurations are listed finitely; possibility_transfer_iff and counting_transfer_iff also require the lists to contain every move and every configuration."
+    },
+    {
+      "zh": "Weights.lumped_iff 要求描述的每个值都有一个代表配置。",
+      "en": "Weights.lumped_iff requires a representative configuration for each value of the description."
+    },
+    {
+      "zh": "视野有界：每个定理都在给定步数 n 上陈述。",
+      "en": "The horizon is bounded: every theorem is stated at a given number of steps n."
+    }
+  ],
+  "correspondence": {
+    "zh": "P82（工作板），回应 Ren 2026-10-12 关于不确定规律的问题：“this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”。核心的不确定规律陈述何者可能，不陈述多少；本结果陈述赋权加上什么，并证明历史之和在有限配置、有界视野下对任意多历程精确，经描述的积分恰在一步可归并处精确（P66 的 carries_law_iff 的加权形式）。读法（AI 的，待 Ren）：AI 把“Fermi's diagrams”读作费曼图，其历史求和有同样的形状：一段历史的权重由其各步的权重复合，备选相加。见整合文档 §{S}。",
+    "en": "P82 (work board), answering Ren's question of 12 October 2026 on laws that are not determined: “this is somewhat like quantum dynamics. For examples, Fermi's diagrams. … we can still find a way to to integrate so we can still calculate this effects but how how accurate can we do that”. The core's laws that are not determined state what is possible, not how much; this result states what a weighting adds and proves the sum over histories exact, for any number of courses, with finitely many configurations and a bounded horizon, and exact through a description exactly where the description is lumpable at one step (the weighted form of P66's carries_law_iff). Reading (the AI's, pending Ren): the AI reads “Fermi's diagrams” as Feynman diagrams, whose sum over histories has this shape: the weight of a history is composed of its steps' weights, and alternatives add. See the integration document §{S}."
+  },
+  "aliases": [
+    "Becoming.Weights",
+    "Becoming.Weights.sum_courses",
+    "Becoming.Weights.transfer",
+    "Becoming.Weights.along",
+    "Becoming.courses",
+    "Becoming.Weights.Hom",
+    "Becoming.Weights.Hom.transfer",
+    "Becoming.possibility",
+    "Becoming.possibility_transfer_iff",
+    "Becoming.counting",
+    "Becoming.support",
+    "Becoming.counting_transfer_iff",
+    "Becoming.Weights.lumped_iff",
+    "Becoming.Lumping.loses",
+    "sum over histories",
+    "历史之和",
+    "weighted histories",
+    "加权历史",
+    "transfer",
+    "转移",
+    "lumpability",
+    "可归并",
+    "Feynman diagrams",
+    "费曼图"
+  ],
+  "dependencies": [
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "Weights.lumped_iff 是 carries_law_iff 的加权形式：投影承载确定规律恰在经它相同者同去之处；这里经描述所读在所有步数后只依赖描述，恰在一步之后如此。",
+        "en": "Weights.lumped_iff is the weighted form of carries_law_iff: a projection carries a determined law exactly where configurations alike under it go alike; here what is read through a description depends on it alone after every number of steps exactly where it does after one."
+      },
+      "interface": {
+        "output": {
+          "zh": "投影承载规律的条件。",
+          "en": "The condition for a projection to carry a law."
+        },
+        "input": {
+          "zh": "加权描述的可归并条件。",
+          "en": "The lumpability condition for a weighted description."
+        },
+        "conditions": {
+          "zh": "加权形式要求描述的每个值有代表；它不导入 Mechanism。",
+          "en": "The weighted form requires a representative of each value of the description; it does not import Mechanism."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "finite-trace-transport",
+      "detail": {
+        "zh": "核心的有限迹；possibility_transfer_iff 把可能性转移等同于它。",
+        "en": "The core's finite traces; possibility_transfer_iff identifies the possibility transfer with them."
+      }
+    },
+    {
+      "id": "joint-correlation-reduced-dynamics",
+      "detail": {
+        "zh": "外围的实振幅片段中，局部描述不决定下一步；这里在核心中给出一般条件：描述恰在一步可归并处承载加权规律。",
+        "en": "In the periphery's real-amplitude fragment a local description does not determine the next step; here the general condition in the core: a description carries a weighted law exactly where it is lumpable at one step."
+      }
+    },
+    {
+      "id": "losses-of-the-sum-over-histories",
+      "detail": {
+        "zh": "同一模块中历史之和的损失：截断、抵消、记忆与回路。",
+        "en": "The losses of the sum over histories in the same module: truncation, cancellation, memory and loops."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "detail": {
+        "zh": "两个描述相同的配置在一步之后所读不同，描述不承载加权规律（Lumping.loses）。",
+        "en": "Two configurations with one description differ in what is read after one step, so the description carries no weighted law (Lumping.loses)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "权重从何而来、实际展开有哪个赋权没有陈述；无穷多配置或无界视野上的和及其收敛没有陈述；带相位的振幅（复数）属于外围；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "Where weights come from and which weighting an actual unfolding has are not stated; sums over infinitely many configurations or an unbounded horizon, with their convergence, are not stated; amplitudes with phases (complex numbers) belong to the periphery; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "next_delta": {
+    "zh": "外围的实数与复数赋权的实例（概率与振幅），以及 Ren 对“历史之和”读法的判断。",
+    "en": "Instances of real and complex weightings in the periphery (probabilities and amplitudes), and Ren's judgment on the reading of the sum over histories."
+  }
+}

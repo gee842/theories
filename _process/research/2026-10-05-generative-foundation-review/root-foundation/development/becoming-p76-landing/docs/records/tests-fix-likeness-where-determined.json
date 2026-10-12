@@ -1,0 +1,88 @@
+{
+  "id": "tests-fix-likeness-where-determined",
+  "title": {
+    "zh": "检验在相同之下确定时固定相同：两个框架都在相同之下确定时，配置恰在通过同样的检验时相同；有分支时检验不固定相同",
+    "en": "Tests fix likeness where branching is determined up to likeness: where both frames are, configurations are alike exactly where they pass the same tests; with branching the tests do not fix likeness"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "设 F 与 G 是动作与主张类型相同的框架。s 与 s′ 通过同样的检验（SameTests F G s s′），指从两者出发开放的动作序列相同，且每个序列之后能实现的主张相同；相同的配置如此（Alike.sameTests）。两者在相同之下确定时，同样的检验在一个动作之后保持（SameTests.after），通过同样的检验是一个互模拟（sameTests_bisimulation），所以配置恰在通过同样的检验时相同（alike_iff_sameTests；对一个确定的框架，Determined.alike_iff_sameTests）。分支不确定时检验不固定相同：在第一步之后选择的框架与在第一步选择的框架，起点通过同样的检验而不相同（Choosing.sameTests、Choosing.not_alike），后者不确定（Choosing.early_not_determined）。不加前提，构造性。",
+    "en": "Let F and G be frames with the same move and claim types. Configurations s and s′ pass the same tests (SameTests F G s s′) where the same courses of moves are open from each and after each course the same claims can be realized; alike configurations do (Alike.sameTests). Where both frames are determined up to likeness, passing the same tests survives a move (SameTests.after) and is a bisimulation (sameTests_bisimulation), so configurations are alike exactly where they pass the same tests (alike_iff_sameTests; for one determined frame, Determined.alike_iff_sameTests). Where branching is not determined the tests do not fix likeness: a frame choosing after its first move and one choosing at it pass the same tests from their starts and are not alike (Choosing.sameTests, Choosing.not_alike), the second not determined (Choosing.early_not_determined). No premise; constructive."
+  },
+  "hypotheses": [
+    {
+      "zh": "alike_iff_sameTests 以两个框架处处在相同之下确定为条件；没有这个条件，Branching 给出反例。",
+      "en": "alike_iff_sameTests takes both frames determined up to likeness everywhere as its condition; without it, Branching gives a counterexample."
+    },
+    {
+      "zh": "检验是有限动作序列，可带一个最后的主张；带否定与合取的分支检验在外围（ExplanatoryBranching）。",
+      "en": "A test is a finite course of moves, possibly followed by one claim; branching tests with negation and conjunction are in the periphery (ExplanatoryBranching)."
+    }
+  ],
+  "correspondence": {
+    "zh": "P76 的第二项（工作板），按 Ren 2026-10-12 的“move towards 100%”：给出 configurations-alike-by-relation 的 next_delta 中“核心中经同样检验推出相同的构造性条件”：相同之下的确定性。读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经 P69 的桥接节（branching_bisimulation_iff）与核心的互模拟相连。见整合文档 §{S}。",
+    "en": "The second item of P76 (work board), following Ren's “move towards 100%” of 12 October 2026: it gives what configurations-alike-by-relation's next_delta names, a constructive condition in the core under which passing the same tests makes configurations alike: determinacy up to likeness. Reading (the AI's, pending Ren): what tests cannot see is when a choice is made; with branching, only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by P69's bridge section (branching_bisimulation_iff). See the integration document §{S}."
+  },
+  "aliases": [
+    "Becoming.SameTests",
+    "Becoming.Alike.sameTests",
+    "Becoming.sameTests_bisimulation",
+    "Becoming.alike_iff_sameTests",
+    "Becoming.Choosing.not_alike",
+    "same tests",
+    "同样的检验",
+    "tests fix likeness",
+    "检验固定相同"
+  ],
+  "dependencies": [
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Bisimulation、Alike、Alike.trace、Alike.tests 与 DeterminedAt；给出它的 next_delta 所求的构造性条件。",
+        "en": "Reuses Bisimulation, Alike, Alike.trace, Alike.tests and DeterminedAt; gives the constructive condition its next_delta asks for."
+      },
+      "interface": {
+        "output": {
+          "zh": "相同及其在检验与相同之下确定性上的性质。",
+          "en": "Likeness and its properties on tests and determinacy up to likeness."
+        },
+        "input": {
+          "zh": "检验固定相同的条件与反例。",
+          "en": "The condition under which tests fix likeness, and its counterexample."
+        },
+        "conditions": {
+          "zh": "两个框架处处在相同之下确定。",
+          "en": "Both frames determined up to likeness everywhere."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "branching-tests-bisimulation",
+      "detail": {
+        "zh": "外围中像有限的模型的分支检验恰固定相同（经典）；这里是核心中的线性检验，条件是相同之下的确定性。",
+        "en": "In the periphery, branching tests fix likeness exactly for image-finite models (classically); here linear tests in the core, under determinacy up to likeness."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "detail": {
+        "zh": "Branching：在第一步之后选择与在第一步选择的两个框架，通过同样的检验而不相同。",
+        "en": "Branching: frames choosing after and at the first move pass the same tests and are not alike."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "核心中分支检验固定相同没有陈述（外围的证明用经典逻辑；在配置有限的框架上是否有构造性证明，这里开放）；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That branching tests fix likeness is not stated in the core (the periphery's proof reasons classically; whether a constructive proof exists for frames with finitely many configurations is open here); the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "next_delta": {
+    "zh": "配置有限、步与主张已定的框架上，分支检验固定相同的构造性证明，或它需要哪个逻辑原则的边界。",
+    "en": "A constructive proof that branching tests fix likeness on frames with finitely many configurations and decided steps and claims, or the boundary naming the logical principle it needs."
+  }
+}

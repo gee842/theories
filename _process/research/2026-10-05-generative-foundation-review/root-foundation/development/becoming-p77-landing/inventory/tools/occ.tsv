@@ -1,0 +1,195 @@
+Continuation.lean:124	theorem	Becoming.Flow.fed_from_beyond_from	stmt	theorem fed_from_beyond_from [DecidableEq C] {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+Continuation.lean:126	theorem	Becoming.Flow.fed_from_beyond_from	stmt	(dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+Continuation.lean:132	theorem	Becoming.Flow.rising_fed_from_beyond_from	stmt	theorem rising_fed_from_beyond_from [DecidableEq C] {ds : List C} (distinct : Distinct ds)
+Continuation.lean:135	theorem	Becoming.Flow.rising_fed_from_beyond_from	stmt	(dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+Continuation.lean:145	theorem	Becoming.Flow.fed_from_beyond	stmt	{ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+Continuation.lean:153	theorem	Becoming.Flow.rising_fed_from_beyond	stmt	(dissipative : L.Dissipative) {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+Continuation.lean:349	theorem	Becoming.Web.generation_fed_from_beyond	stmt	(dissipative : L.Dissipative) {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
+Counting.lean:215	theorem	distinct_map_on	stmt	∀ {l : List α}, (∀ a b, a ∈ l → b ∈ l → g a = g b → a = b) → Distinct l →
+Counting.lean:216	theorem	distinct_map_on	stmt	Distinct (l.map g)
+Counting.lean:1011	theorem	Becoming.EnclosedQueue.span_distinct	stmt	theorem span_distinct (t : Nat) : Distinct (span n c a t) :=
+Counting.lean:1090	theorem	Becoming.World.enclosedQueue_dissipatesOn	stmt	(distinct : Distinct cs) (closed : (EnclosedQueue.flow n c a B).ClosedAt cs t) :
+Counting.lean:1212	theorem	placesBelow_distinct	stmt	∀ {l : List Nat}, Distinct l → Distinct (placesBelow K l)
+Counting.lean:1216	theorem	placesBelow_distinct	proof	Eq.mpr (congrArg Distinct (dif_pos h))
+Counting.lean:1218	theorem	placesBelow_distinct	proof	else Eq.mpr (congrArg Distinct (dif_neg h)) (placesBelow_distinct distinct)
+Counting.lean:1232	theorem	places_listed	stmt	theorem places_listed (K : Nat) : ∃ all : List (Fin K), Distinct all ∧ ∀ i, i ∈ all :=
+Counting.lean:1387	theorem	Becoming.World.finite_dissipation_binds	stmt	∃ cs t f, Distinct cs ∧ replaced.flow.ClosedAt cs t ∧ f ∈ replaced.flow.present t ∧
+Counting.lean:4318	theorem	Becoming.World.sheddingQueue_dissipative	proof	have sheds : ∀ {cs : List Nat}, Distinct cs →
+Decidedness.lean:406	theorem	Counts.listing	stmt	∃ s : List α, s.length = n ∧ (∀ a, a ∈ s ↔ a ∈ as ∧ q a) ∧ (Distinct as → Distinct s)
+Decidedness.lean:433	theorem	length_eq_of_same	stmt	theorem length_eq_of_same {s s' : List α} (distinct : Distinct s) (distinct' : Distinct s')
+Decidedness.lean:443	theorem	Counts.listed_across	stmt	theorem Counts.listed_across {t c d : Nat} (now : Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t)
+Decidedness.lean:444	theorem	Counts.listed_across	stmt	(next : Distinct (l (t + 1)) ∧ ∀ a, p a (t + 1) ↔ a ∈ l (t + 1))
+Decidedness.lean:479	theorem	Counts.listed_over_stretch	stmt	(∀ s, S ≤ s → s ≤ S + n → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) →
+Decidedness.lean:544	theorem	coming_steps_within	stmt	(distinct : Distinct E)
+Decidedness.lean:564	theorem	ceasing_steps_within	stmt	(distinct : Distinct E)
+Decidedness.lean:583	theorem	Recurs.steps_found	stmt	∀ k, ∃ E U, Distinct E ∧ E.length = k ∧ M ≤ U ∧
+Dissipation.lean:133	theorem	total_le_at	stmt	∀ {as : List α}, Distinct as → total as q ≤ q a
+Dissipation.lean:147	theorem	total_le_of_support	stmt	∀ {l m : List α}, Distinct l → (∀ a, a ∈ l → 0 < q a → a ∈ m) → total l q ≤ total m q
+Dissipation.lean:184	theorem	insertNew_spec	stmt	theorem insertNew_spec {a : α} {l : List α} (distinct : Distinct l) :
+Dissipation.lean:185	theorem	insertNew_spec	stmt	∀ decide : Decidable (a ∈ l), Distinct (insertNew a l decide) ∧
+Dissipation.lean:196	theorem	adjoin_spec	stmt	theorem adjoin_spec [DecidableEq α] {l : List α} (distinct : Distinct l) :
+Dissipation.lean:197	theorem	adjoin_spec	stmt	∀ ds : List α, Distinct (adjoin ds l) ∧ (∀ a, a ∈ ds → a ∈ adjoin ds l) ∧
+Dissipation.lean:231	def	Becoming.Flow.Dissipative	proof	∀ cs t, Distinct cs → L.ClosedAt cs t → L.DissipatesOn cs t
+Dissipation.lean:236	def	Becoming.Flow.Enclosed	proof	∃ cs, Distinct cs ∧ L.ClosedAt cs t
+Dissipation.lean:242	def	Becoming.Flow.Around	proof	∃ es, Distinct es ∧ (∀ c, c ∈ ds → c ∈ es) ∧ L.ClosedAt es t
+Dissipation.lean:272	theorem	Becoming.Flow.enclosed_of_finite	stmt	theorem enclosed_of_finite {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all)
+Dissipation.lean:292	theorem	Becoming.Flow.Dissipative.gives_less	stmt	(distinct : Distinct cs) (closed : L.ClosedAt cs t) {f : F} (present : f ∈ L.present t)
+Dissipation.lean:446	theorem	Becoming.Flow.Dissipative.opens	stmt	{cs ds : List C} (distinct : Distinct ds) (within : ∀ c, c ∈ cs → c ∈ ds)
+Dissipation.lean:455	theorem	Becoming.Flow.Dissipative.finite_ceases	stmt	{all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) (cs : List C) :
+Dissipation.lean:479	theorem	Becoming.Flow.More.opens	stmt	(distinct : Distinct ds) (within : ∀ c, c ∈ cs → c ∈ ds) (more : L.More cs) (T : Nat) :
+Dissipation.lean:485	theorem	Becoming.Flow.opens_of_arising	stmt	{cs ds : List C} (distinct : Distinct ds) (within : ∀ c, c ∈ cs → c ∈ ds)
+Dissipation.lean:494	theorem	Becoming.Flow.around_of_finite	stmt	theorem around_of_finite {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all)
+Dissipation.lean:530	theorem	Becoming.Flow.dissipatesOn_of_inward_at	stmt	(dissipative : ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t) {ds : List C}
+Dissipation.lean:531	theorem	Becoming.Flow.dissipatesOn_of_inward_at	stmt	(distinct : Distinct ds) (around : L.Around ds t) (inward : L.Inward ds t) :
+Dissipation.lean:555	theorem	Becoming.Flow.Dissipative.dissipatesOn_of_inward	stmt	(distinct : Distinct ds) {t : Nat} (around : L.Around ds t) (inward : L.Inward ds t) :
+Dissipation.lean:563	theorem	Becoming.Flow.taking_draws_in_from	stmt	theorem taking_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+Dissipation.lean:565	theorem	Becoming.Flow.taking_draws_in_from	stmt	(dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+Dissipation.lean:580	theorem	Becoming.Flow.taking_draws_in	stmt	{ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+Dissipation.lean:604	theorem	Becoming.Flow.standing_lowers	stmt	{ds : List C} (distinct : Distinct ds) {t : Nat} (closed : L.ClosedAt ds t) {c : C}
+Dissipation.lean:644	theorem	Becoming.Flow.rising_opens	stmt	{ds : List C} (distinct : Distinct ds)
+Dissipation.lean:652	theorem	Becoming.Flow.standing_opens	stmt	{ds : List C} (distinct : Distinct ds)
+Dissipation.lean:659	theorem	Becoming.Flow.rising_draws_in_from	stmt	theorem rising_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
+Dissipation.lean:661	theorem	Becoming.Flow.rising_draws_in_from	stmt	(dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+Dissipation.lean:676	theorem	Becoming.Flow.rising_draws_in	stmt	{ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+Dissipation.lean:684	theorem	Becoming.Flow.standing_draws_in	stmt	{ds : List C} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+Dissipation.lean:692	theorem	Becoming.Flow.rising_ceases	stmt	{all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) :
+Dissipation.lean:701	theorem	Becoming.Flow.standing_ceases	stmt	{all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) :
+Dissipation.lean:809	theorem	Becoming.Flow.rise_alone_opens	stmt	{ds : List C} (distinct : Distinct ds) {t : Nat} {c : C} (mem : c ∈ ds)
+Dissipation.lean:976	theorem	Becoming.Frontier.frontier	stmt	theorem frontier {ds : List Condition} (distinct : Distinct ds) (pool : Condition.pool ∈ ds)
+Dissipation.lean:995	theorem	Becoming.Frontier.pool_fuel_distinct	stmt	theorem pool_fuel_distinct (t : Nat) : Distinct [Condition.pool, .fuel t] :=
+Dissipation.lean:1067	theorem	Becoming.Rooted.growers_distinct	stmt	theorem growers_distinct : ∀ t, Distinct (growers t)
+Dissipation.lean:1074	theorem	Becoming.Rooted.present_distinct	stmt	theorem present_distinct (t : Nat) : Distinct (Frontier.flow.present t) :=
+Dissipation.lean:1122	theorem	Becoming.Rooted.rooted	stmt	∀ {ds : List Condition}, Distinct ds → Condition.pool ∈ ds →
+Dissipation.lean:1208	theorem	Becoming.Lone.frontier	stmt	theorem frontier {ds : List Condition} (distinct : Distinct ds) (pool : Condition.pool ∈ ds)
+Identity.lean:352	theorem	Flow.More.arising_never_stops_reidentified_covering	stmt	(distinct : ∀ t, S ≤ t → Distinct (L.present t))
+Identity.lean:368	theorem	Flow.More.unceasing_reidentified_covering	stmt	(distinct : ∀ t, S ≤ t → Distinct (L.present t))
+Identity.lean:384	theorem	Flow.More.unceasing_reidentified	stmt	(distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W) (more : L.More cs)
+Identity.lean:591	theorem	Becoming.Web.arisesFrom_of_more	stmt	(listed : ∀ f, W.active t f → f ∈ before) (distinct : Distinct after)
+Identity.lean:622	theorem	Flow.More.unceasingFrom	stmt	{alive : Nat → List F} (census : W.Census alive) (distinct : ∀ t, Distinct (L.present t))
+Identity.lean:663	theorem	forces_iff_noSplit	stmt	(∀ before after : List F, Distinct after → before.length < after.length →
+Identity.lean:696	theorem	paired_noSplit	stmt	theorem paired_noSplit : ∀ {before after : List F}, Distinct before →
+Identity.lean:724	theorem	forced_iff_more	stmt	theorem forced_iff_more {before after : List F} (apart : Distinct before)
+Identity.lean:725	theorem	forced_iff_more	stmt	(distinct : Distinct after) :
+Identity.lean:787	theorem	Becoming.Web.Census.balanceFrom_at	stmt	(now : Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t)
+Identity.lean:788	theorem	Becoming.Web.Census.balanceFrom_at	stmt	(next : Distinct (alive (t + 1)) ∧ ∀ f, W.active (t + 1) f ↔ f ∈ alive (t + 1)) :
+Identity.lean:876	theorem	Becoming.Web.Census.balanceFrom_eq_at	stmt	(now : Distinct (alive t) ∧ ∀ f, W.active t f ↔ f ∈ alive t)
+Identity.lean:877	theorem	Becoming.Web.Census.balanceFrom_eq_at	stmt	(next : Distinct (alive (t + 1)) ∧ ∀ f, W.active (t + 1) f ↔ f ∈ alive (t + 1))
+Identity.lean:899	theorem	Becoming.Web.Census.arisingFrom_of_ceasingFrom_from	stmt	(listing : ∀ s, T ≤ s → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s)
+Identity.lean:927	theorem	Becoming.Web.Census.ceasingFrom_of_arisingFrom_from	stmt	(listing : ∀ s, T ≤ s → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s)
+Identity.lean:1013	theorem	Becoming.Web.ceasingFrom_found	stmt	∀ n N, ∃ ps : List (Nat × F), Distinct ps ∧ ps.length = n ∧
+Identity.lean:1138	theorem	Becoming.Web.arisingFrom_found	stmt	∀ n N, ∃ ps : List (Nat × F), Distinct ps ∧ ps.length = n ∧
+Identity.lean:1671	theorem	Dormant.no_split_without_arising	stmt	Expansion.flow.Taking Dormant.web ∧ (∀ t, Distinct (Expansion.flow.present t)) ∧
+Locality.lean:156	theorem	Web.StandingCensus.stock_eq	stmt	(census : W.StandingCensus stand) {es : List C} (distinct : Distinct es) {t : Nat}
+Locality.lean:204	def	Becoming.Flow.RunsDownOn	proof	Distinct es ∧ (∀ c, 0 < W.level t c → c ∈ es) ∧ (∀ c, 0 < W.level (t + 1) c → c ∈ es) ∧
+Locality.lean:464	def	ListsAt	proof	Distinct L ∧ ∀ a, p a N ↔ a ∈ L
+Locality.lean:616	theorem	Covers.ceasing_steps_within	stmt	(none : NoneComes p N n) {E : List Nat} (distinct : Distinct E)
+Locality.lean:643	theorem	ceasing_steps_found	stmt	∀ k, ∃ E U, Distinct E ∧ E.length = k ∧ N ≤ U ∧
+Openness.lean:177	theorem	Web.StandingCensus.over_stretch_on	stmt	(listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (stand s) ∧ ∀ c, 0 < W.level s c ↔ c ∈ stand s) :
+Openness.lean:198	def	Flow.AroundStanding	proof	∃ es, Distinct es ∧ (∀ c, c ∈ stand t → c ∈ es) ∧ (∀ c, c ∈ stand (t + 1) → c ∈ es) ∧
+Openness.lean:425	theorem	Becoming.Accretion.alive_distinct	stmt	theorem alive_distinct : ∀ t, Distinct (alive t)
+Openness.lean:791	theorem	Becoming.Few.distinct_pick	stmt	theorem distinct_pick : ∀ (b : Bool) (t : Nat) {l : List Nat}, Distinct l →
+Openness.lean:792	theorem	Becoming.Few.distinct_pick	stmt	Distinct (pick b t l)
+Openness.lean:796	theorem	Becoming.Few.distinct_found	stmt	theorem distinct_found : ∀ t, Distinct (found s t)
+Population.lean:102	def	Distinct	stmt	def Distinct : List α → Prop
+Population.lean:104	def	Distinct	proof	| a :: as => ¬ a ∈ as ∧ Distinct as
+Population.lean:127	theorem	distinct_map	stmt	∀ {l : List α}, Distinct l → Distinct (l.map g)
+Population.lean:142	theorem	length_le_of_matched	stmt	theorem length_le_of_matched {S : α → β → Prop} : ∀ {l : List α} {m : List β}, Distinct l →
+Population.lean:165	theorem	length_le_of_sub	stmt	theorem length_le_of_sub {l m : List α} (distinct : Distinct l) (sub : ∀ a, a ∈ l → a ∈ m) :
+Population.lean:172	theorem	count_le_of_sub	stmt	theorem count_le_of_sub {q : α → Nat} : ∀ {l m : List α}, Distinct l →
+Population.lean:301	theorem	distinct_remove	stmt	theorem distinct_remove {a : α} : ∀ {p q : List α}, Distinct (p ++ a :: q) → Distinct (p ++ q)
+Population.lean:309	theorem	marks_le_of_sub	stmt	∀ {l m : List α}, Distinct l → Distinct m → (∀ a, a ∈ l → q a → a ∈ m ∧ r a) →
+Population.lean:350	theorem	total_le_mark	stmt	∀ {l : List α}, Distinct l → (∀ a b, a ∈ l → b ∈ l → q a → q b → a = b) →
+Population.lean:471	def	Listed	proof	∀ t, Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t
+Population.lean:479	theorem	Becoming.Listed.keeps_at	stmt	theorem keeps_at {t : Nat} (now : Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t)
+Population.lean:480	theorem	Becoming.Listed.keeps_at	stmt	(next : Distinct (l (t + 1)) ∧ ∀ a, p a (t + 1) ↔ a ∈ l (t + 1)) :
+Population.lean:515	theorem	Becoming.Listed.across_at	stmt	theorem across_at {t : Nat} (now : Distinct (l t) ∧ ∀ a, p a t ↔ a ∈ l t)
+Population.lean:516	theorem	Becoming.Listed.across_at	stmt	(next : Distinct (l (t + 1)) ∧ ∀ a, p a (t + 1) ↔ a ∈ l (t + 1)) :
+Population.lean:532	theorem	Becoming.Listed.over_stretch_on	stmt	(listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+Population.lean:563	theorem	Becoming.Listed.ceasing_iff_shortfall_from	stmt	theorem ceasing_iff_shortfall_from {T : Nat} (listing : ∀ s, T ≤ s → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+Population.lean:598	theorem	Becoming.Listed.coming_iff_excess_from	stmt	theorem coming_iff_excess_from {T : Nat} (listing : ∀ s, T ≤ s → Distinct (l s) ∧ ∀ a, p a s ↔ a ∈ l s) :
+Population.lean:766	theorem	steps_distinct	stmt	theorem steps_distinct : ∀ T n, Distinct (steps T n)
+Population.lean:1165	theorem	Becoming.Web.DependenceCensus.over_stretch_on	stmt	Distinct (deps s) ∧ ∀ d, W.requires s d.1 d.2 ↔ d ∈ deps s) :
+Population.lean:1188	theorem	Becoming.Web.arises_of_more	stmt	(listed : ∀ f, W.active t f → f ∈ before) (distinct : Distinct after)
+Population.lean:1235	theorem	Becoming.Web.Census.over_stretch_on	stmt	(listing : ∀ s, S ≤ s → s ≤ S + n → Distinct (alive s) ∧ ∀ f, W.active s f ↔ f ∈ alive s) :
+Population.lean:1258	theorem	Flow.takers_le_covering	stmt	{l : List F} (distinct : Distinct (L.present t))
+Population.lean:1269	theorem	Flow.More.grows_covering	stmt	(distinct : ∀ t, S ≤ t → Distinct (L.present t))
+Population.lean:1283	theorem	Flow.More.grows	stmt	(census : W.Census alive) (distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W)
+Population.lean:1296	theorem	Flow.More.arising_never_stops_covering	stmt	(distinct : ∀ t, S ≤ t → Distinct (L.present t))
+Population.lean:1328	theorem	Flow.More.unceasing_covering	stmt	(distinct : ∀ t, S ≤ t → Distinct (L.present t))
+Population.lean:1359	theorem	Flow.More.unceasing	stmt	(distinct : ∀ t, Distinct (L.present t)) (taking : L.Taking W) (more : L.More cs) :
+Population.lean:1369	theorem	Becoming.Expansion.distinct	stmt	theorem distinct : ∀ t, Distinct (present t)
+Population.lean:1394	theorem	Becoming.Expansion.counted	stmt	web.Census present ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
+Population.lean:1402	theorem	Becoming.Cycle.distinct	stmt	theorem distinct : ∀ t, Distinct (present t)
+Population.lean:1419	theorem	Becoming.Cycle.counted	stmt	web.Census present ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
+Population.lean:1435	theorem	Becoming.Oscillation.pair	stmt	theorem pair : Distinct [Formation.source, .oscillator] :=
+Population.lean:1452	theorem	Becoming.Oscillation.counted	stmt	web.Census alive ∧ (∀ t, Distinct (flow.present t)) ∧ flow.Taking web ∧
+Population.lean:1517	theorem	Becoming.Repeated.more_without_arising	stmt	flow.More [()] ∧ ¬ (∀ t, Distinct (flow.present t)) ∧ ∀ t f, ¬ web.Arises t f :=
+Population.lean:1570	theorem	Becoming.Inactive.distinct	stmt	theorem distinct : ∀ n, Distinct (present n)
+Population.lean:1579	theorem	Becoming.Inactive.more_without_arising	stmt	(∀ t, Distinct (flow.present t)) ∧ flow.More [()] ∧ ¬ flow.Taking web ∧
+Premises.lean:111	theorem	keep_distinct	stmt	∀ {as : List α}, Distinct as → Distinct (keep p as)
+Premises.lean:114	theorem	keep_distinct	proof	show Distinct (if p a then a :: keep p as else keep p as)
+Premises.lean:124	theorem	listed_of_ever	stmt	{L : List α} (distinct : Distinct L) (ever : ∀ t a, p a t → a ∈ L) :
+Premises.lean:159	theorem	Becoming.World.keep_lists	stmt	(distinct : Distinct l) (covers : ∀ x, w.web.active t x → x ∈ l) :
+Premises.lean:160	theorem	Becoming.World.keep_lists	stmt	Distinct (keep (w.web.active t) l) ∧ ∀ x, w.web.active t x ↔ x ∈ keep (w.web.active t) l :=
+Premises.lean:175	theorem	Becoming.World.counted_of_ever	stmt	(distinct : Distinct L) (ever : ∀ t x, w.web.active t x → x ∈ L) : w.Counted :=
+Premises.lean:870	def	Becoming.World.Premise.Binds	proof	| .dissipative, w => ∃ cs t f, Distinct cs ∧ w.flow.ClosedAt cs t ∧ f ∈ w.flow.present t ∧
+Premises.lean:958	theorem	Becoming.World.Hatch.kin_distinct	stmt	theorem kin_distinct : Distinct kin :=
+Premises.lean:1103	theorem	Becoming.World.FiniteHatch.kin_distinct	stmt	theorem kin_distinct : Distinct kin :=
+Resolution.lean:400	theorem	Becoming.Flow.quantum_bound	stmt	(dissipative : L.Dissipative) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:410	theorem	Becoming.Flow.quantum_not_recurring	stmt	(dissipative : L.Dissipative) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:429	theorem	Becoming.Flow.taking_stops	stmt	(dissipative : L.Dissipative) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:577	theorem	Becoming.Flow.refinement_gives_nothing	stmt	(dissipates : ∀ cs, Distinct cs → (L.withRefinement W split).ClosedAt cs t →
+Resolution.lean:598	theorem	Becoming.Flow.taking_needs_refinement	stmt	{cs : List C} (distinct : Distinct cs) {T : Nat} (closed : ∀ t, T ≤ t → L.ClosedAt cs t)
+Resolution.lean:644	theorem	Becoming.World.after_dissipative	stmt	(dissipative : ∀ t, T ≤ t → ∀ cs, Distinct cs → w.flow.ClosedAt cs t →
+Resolution.lean:742	def	Becoming.Flow.DissipativeBy	proof	∀ cs t, Distinct cs → L.ClosedAt cs t → L.DissipatesBy q cs t
+Resolution.lean:840	theorem	Becoming.Flow.BalancesAt.gainers_lose	stmt	(distinct : Distinct gs) (within : ∀ c, c ∈ gs → c ∈ cs) :
+Resolution.lean:893	theorem	Becoming.Flow.uptake_bound	stmt	(dissipative : L.DissipativeBy q) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:903	theorem	Becoming.Flow.replenishment_bound	stmt	(dissipative : L.DissipativeBy q) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:955	theorem	Becoming.Flow.exchange_bound	stmt	(dissipative : L.DissipativeBy q) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:967	theorem	Becoming.Flow.exchange_not_recurring	stmt	(dissipative : L.DissipativeBy q) {cs : List C} (distinct : Distinct cs) {T : Nat}
+Resolution.lean:989	def	Becoming.Flow.LosesAtEverySize	proof	∀ p, ∃ m, ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t
+Resolution.lean:1051	theorem	Becoming.Flow.exchange_bound_of_least_loss	stmt	(loses : ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t)
+Resolution.lean:1052	theorem	Becoming.Flow.exchange_bound_of_least_loss	stmt	{cs : List C} (distinct : Distinct cs) {T : Nat} (closed : ∀ t, T ≤ t → L.ClosedAt cs t)
+Resolution.lean:1064	theorem	Becoming.Flow.exchange_not_recurring_of_least_loss	stmt	(loses : ∀ cs t, Distinct cs → L.ClosedAt cs t → L.LosesAtSize R p m cs t)
+Resolution.lean:1065	theorem	Becoming.Flow.exchange_not_recurring_of_least_loss	stmt	{cs : List C} (distinct : Distinct cs) {T : Nat} (closed : ∀ t, T ≤ t → L.ClosedAt cs t)
+Resolution.lean:1106	theorem	Becoming.Flow.BalancesAt.losers_lose	stmt	(distinct : Distinct ls) (within : ∀ c, c ∈ ls → c ∈ cs) :
+Resolution.lean:1501	theorem	Becoming.Asymptote.distinct	stmt	theorem distinct : Distinct [()] :=
+Resolution.lean:1693	theorem	Becoming.Circulation.distinct	stmt	theorem distinct : Distinct [()] :=
+Resolution.lean:1825	theorem	Becoming.Emission.emitted_le_one	stmt	∀ {cs : List (Option Nat)}, Distinct cs → total cs (emitted t) ≤ 1
+Resolution.lean:1985	theorem	Becoming.Alternation.given_total	stmt	theorem given_total {es : List Bool} (distinct : Distinct es) (t : Nat) (f : Bool) :
+Resolution.lean:2180	theorem	Becoming.Trickle.sides_distinct	stmt	theorem sides_distinct : Distinct sides :=
+Resolution.lean:2230	theorem	Becoming.Trickle.given_total	stmt	theorem given_total {es : List Relatum} (distinct : Distinct es) (t : Nat) (f : Relatum) :
+Resolution.lean:2239	theorem	Becoming.Trickle.taken_le	stmt	theorem taken_le {es : List Relatum} (distinct : Distinct es) (t : Nat) (f : Relatum) :
+Resolution.lean:2261	theorem	Becoming.Trickle.loses_two	stmt	theorem loses_two {es : List Relatum} (distinct : Distinct es) {t : Nat}
+Roles.lean:162	theorem	distinct_conditionsOf	stmt	theorem distinct_conditionsOf : ∀ {l : List (F ⊕ C)}, Distinct l → Distinct (conditionsOf l)
+Roles.lean:165	theorem	distinct_conditionsOf	proof	(distinct_conditionsOf (l := l) distinct : Distinct (conditionsOf l))
+Roles.lean:366	theorem	Becoming.Flow.roles_distinct	stmt	theorem roles_distinct {t : Nat} (distinct : Distinct (L.present t)) :
+Roles.lean:367	theorem	Becoming.Flow.roles_distinct	stmt	Distinct (L.roles.present t) :=
+Roles.lean:671	theorem	Becoming.Web.Embodied.arising_lowers	stmt	{ds : List X} (distinct : Distinct ds) {t : Nat} (closed : L.ClosedAt ds t) {x : X}
+Roles.lean:709	theorem	Becoming.Web.generation_opens	stmt	{ds : List X} (distinct : Distinct ds)
+Roles.lean:718	theorem	Becoming.Web.generation_draws_in_from	stmt	theorem generation_draws_in_from {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
+Roles.lean:720	theorem	Becoming.Web.generation_draws_in_from	stmt	(dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
+Roles.lean:731	theorem	Becoming.Web.generation_draws_in	stmt	{ds : List X} (distinct : Distinct ds) {T₀ : Nat} (around : ∀ t, T₀ ≤ t → L.Around ds t)
+Roles.lean:739	theorem	Becoming.Web.generation_ceases	stmt	{all : List X} (distinct : Distinct all) (every : ∀ x, x ∈ all) :
+Roles.lean:1241	theorem	Becoming.Shuttle.distinct	stmt	theorem distinct : Distinct [true, false] :=
+Roles.lean:1369	theorem	Becoming.Throughput.side_dissipates	stmt	theorem side_dissipates {ds : List Relatum} {t : Nat} (distinct : Distinct ds)
+Roles.lean:1404	theorem	Becoming.Throughput.frontier	stmt	theorem frontier {ds : List Relatum} (distinct : Distinct ds) {x : Bool}
+Roles.lean:1496	theorem	Becoming.SprayShuttle.sides_distinct	stmt	theorem sides_distinct : Distinct sides :=
+Sampling.lean:359	theorem	total_gate	stmt	theorem total_gate [DecidableEq α] {U P : List α} (distinctU : Distinct U)
+Sampling.lean:360	theorem	total_gate	stmt	(distinctP : Distinct P) (inside : ∀ a, a ∈ P → a ∈ U) (q : α → Nat) :
+Sampling.lean:406	theorem	Becoming.Flow.unionPresent_spec	stmt	theorem unionPresent_spec : ∀ js : List Nat, Distinct (L.unionPresent js) ∧
+Sampling.lean:432	def	Becoming.Flow.Once	proof	∀ t, Distinct (L.present t)
+Sampling.lean:442	theorem	Becoming.Flow.sample_taken_on	stmt	theorem sample_taken_on {s : Nat} (once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:452	theorem	Becoming.Flow.sample_given_on	stmt	theorem sample_given_on {s : Nat} (once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:476	theorem	Becoming.Flow.BalancesOn.sample	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:605	theorem	Becoming.Flow.RunsDownOn.sample	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j)) (distinct : Distinct es)
+Sampling.lean:616	theorem	Becoming.Flow.RunsDownOn.sample_of_fine	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:631	theorem	Becoming.Flow.sample_changes_iff	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j)) (distinct : Distinct es)
+Sampling.lean:644	theorem	Becoming.Flow.sample_comesToStand_iff	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:658	theorem	Becoming.Flow.sample_ceasesToStand_iff	stmt	(once : ∀ j, j ∈ span σ s → Distinct (L.present j))
+Sampling.lean:862	theorem	Becoming.Strobe.alive_listed	stmt	theorem alive_listed : ∀ b : Bool, Distinct (alive b) ∧ ∀ a : Unit, (b = true ↔ a ∈ alive b)
+Space.lean:172	def	Becoming.World.Finite	proof	∃ all : List w.Relatum, Distinct all ∧ ∀ x, x ∈ all
+Space.lean:849	theorem	Becoming.World.Seedbank.distinct	stmt	theorem distinct : Distinct [Relatum.drawer, .seed, .soil] :=
+Standpoints.lean:273	theorem	Becoming.Flow.boundary_crossed	stmt	(dissipative : L.Dissipative) {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
+Standpoints.lean:295	theorem	Becoming.Flow.region_not_a_cut	stmt	(dissipative : L.Dissipative) {ds : List X} (distinct : Distinct ds) {T₀ : Nat}
+Units.lean:271	def	Becoming.Flow.RunsDownOnAt	proof	Distinct es ∧ (∀ c, 0 < W.level t c → c ∈ es) ∧ (∀ c, 0 < W.level (t + 1) c → c ∈ es) ∧

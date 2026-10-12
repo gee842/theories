@@ -1,0 +1,118 @@
+{
+  "id": "laws-of-one-step-complete",
+  "title": {
+    "zh": "一步的规律就是一步的全部规律：在每个条件下与跨运行，一个模式恰在服从该条件的规律时由某个世界显示",
+    "en": "The laws of one step are all the laws of one step: under each condition and across runs, a pattern is shown by some world exactly where it obeys that condition's law"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "一步在一个条件处所显示的是它的通过（Passage、Flow.passage）：步前与步后的层级，以及参与者从它取用与给它的总量。一步在一个家族上显示一个模式（Flow.Realizes），即其成员的通过依次排列、取用者的个数（Flow.takers）以及是否有参与者交换（Flow.ExchangesAt）。每一步都服从每步之律（Flow.Realizes.every）：凡有所取，取用者至少一个且至多所取之量，凡有所取或所给，就有交换。一个模式恰在服从每步之律时，由某个世界跨某步在某个家族上显示，每个参与者列出一次（OneStep.every_iff）；在被平衡的家族上，恰在每个通过还各自平衡时（OneStep.balance_iff）；在耗减的家族上，恰在总量下降至少取用者之数时（OneStep.runsDown_iff）；在跨此步封闭的家族上，恰在除非对家族有取或给否则无交换时（OneStep.closed_iff）；两个条件都有时，恰在两条律都成立时（OneStep.runsDownClosed_iff）。不论取用者之数，一个家族的通过恰在平衡且凡有所取总量至少降一时能够耗减（OneStep.runsDown_passages_iff）。所以模式的一个性质在条件成立的每一步成立，恰在它对服从该条件之律的每个模式成立时（OneStep.laws），这是 counting_laws 的对应。跨一个家族的每一步，只多一条律：通过前后相接，每步之后所立就是下一步之前所立（OneStep.Chained）；一串模式恰在通过相接且每步服从该条件之律时由某个世界显示（OneStep.run_every_iff、OneStep.run_balance_iff、OneStep.run_runsDown_iff、OneStep.run_closed_iff、OneStep.run_runsDownClosed_iff；OneStep.run_laws），这是 tally_iff_counted 的对应。一个见证世界服务每个模式（OneStep.Witness，经 World.ofRoles 读成脊柱的世界）。不加前提。",
+    "en": "What the step from t shows of a condition is its passage (Passage, Flow.passage): its level before and after, and what the relata taking part take from it and give to it. A step shows a pattern on a family (Flow.Realizes): the passages of its members in order, how many relata take from it (Flow.takers), and whether something taking part exchanges (Flow.ExchangesAt). Every step obeys the law of every step (Flow.Realizes.every): where anything is taken from a family, the relata taking are at least one and at most what is taken, and where anything is taken or given something exchanges. A pattern is shown by some world across some step on some family, listing each relatum taking part once, exactly when it obeys the law of every step (OneStep.every_iff); on a family balanced on, exactly when each passage also balances (OneStep.balance_iff); on a family running down, exactly when moreover the total falls by at least the relata taking (OneStep.runsDown_iff); on a family closed across the step, exactly when moreover nothing exchanges unless something is taken from or given to the family (OneStep.closed_iff); with both conditions, with both laws (OneStep.runsDownClosed_iff). Whatever the count, a family's passages can run down exactly when they balance and the total falls by one wherever anything is taken (OneStep.runsDown_passages_iff). So a property of patterns holds of every step where a condition holds exactly when it holds of every pattern obeying that condition's law (OneStep.laws), the counterpart of counting_laws. Across every step of one family there is one more law: the passages follow one another, what stands after each step being what stands before the next (OneStep.Chained); a run of patterns is shown by some world exactly when its passages follow one another and each step obeys the condition's law (OneStep.run_every_iff, OneStep.run_balance_iff, OneStep.run_runsDown_iff, OneStep.run_closed_iff, OneStep.run_runsDownClosed_iff; OneStep.run_laws), the counterpart of tally_iff_counted. One witness world serves every pattern (OneStep.Witness, read as a world of the spine through World.ofRoles). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：每个刻画都是双向的，对每个模式成立；见证世界每个参与者列出一次。",
+      "en": "No premise: each characterization is two-way and holds for every pattern; the witness world lists each relatum taking part once."
+    },
+    {
+      "zh": "运行只在跨每一步固定的一个家族上刻画；逐步选择家族的情形（Locality 的 RunsDown 所允许的）没有刻画。",
+      "en": "Runs are characterized on one family fixed across every step; families chosen step by step, as Locality's RunsDown allows, are not characterized."
+    }
+  ],
+  "correspondence": {
+    "zh": "P79（工作板），按 Ren 2026-10-12 的“move towards 100%”：强意义上的完备，即一类规律是该类的全部规律，此前只对计数成立（tally_iff_counted，P34）；这里对 Locality（P48）的一步之律给出。读法（AI 的，待 Ren）：加上下面两条遗漏之律后，一步之律就是全部；跨运行唯一多出的律是所立的连续。见整合文档 §{S}。",
+    "en": "P79 (work board), following Ren's “move towards 100%” of 12 October 2026: completeness in the strong sense, the laws of a kind being all its laws, held before for counting only (tally_iff_counted, P34); here for Locality's (P48) laws of one step. Reading (the AI's, pending Ren): with the two missing laws below added, the laws of one step are all of them; across runs the only further law is the continuity of what stands. See the integration document §{S}."
+  },
+  "aliases": [
+    "Becoming.Passage",
+    "Becoming.Flow.passage",
+    "Becoming.Flow.Realizes",
+    "Becoming.OneStep.every_iff",
+    "Becoming.OneStep.balance_iff",
+    "Becoming.OneStep.runsDown_iff",
+    "Becoming.OneStep.closed_iff",
+    "Becoming.OneStep.runsDown_passages_iff",
+    "Becoming.OneStep.laws",
+    "Becoming.OneStep.Chained",
+    "Becoming.OneStep.run_every_iff",
+    "Becoming.OneStep.Witness",
+    "laws of one step complete",
+    "一步之律完备",
+    "passage",
+    "通过"
+  ],
+  "dependencies": [
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Locality 的 BalancesOn、RunsDownOn、ClosedAt 与所陈述的一步之律；这里证明它们（加两条）是全部。",
+        "en": "Reuses Locality's BalancesOn, RunsDownOn, ClosedAt and the stated laws of one step; here they are proved, with two more, to be all."
+      },
+      "interface": {
+        "output": {
+          "zh": "一步之律。",
+          "en": "The laws of one step."
+        },
+        "input": {
+          "zh": "一步之律的完备性。",
+          "en": "The completeness of the laws of one step."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean"
+      }
+    },
+    {
+      "id": "whole-law-of-counting",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "计数的全部规律（tally_iff_counted、counting_laws）的对应：同样以精确刻画与见证世界回答。",
+        "en": "The counterpart of the whole law of counting (tally_iff_counted, counting_laws): answered the same way, by an exact characterization and a witness world."
+      },
+      "interface": {
+        "output": {
+          "zh": "计数完备的方法。",
+          "en": "The method of completeness for counting."
+        },
+        "input": {
+          "zh": "一步之律的完备。",
+          "en": "Completeness of the laws of one step."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "one-step-missing-laws",
+      "detail": {
+        "zh": "同一模块中所发现的两条遗漏之律。",
+        "en": "The two missing laws found in the same module."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
+      "detail": {
+        "zh": "所陈述的律允许而没有世界显示的模式（OneStep.stated_not_realized、OneStep.standing_bound_needed）。",
+        "en": "Patterns the stated laws allow and no world shows (OneStep.stated_not_realized, OneStep.standing_bound_needed)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "给家族的关系项数（renewers 及其容量律）不在模式中；运行只在固定的家族上刻画；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The number of relata giving to a family (renewers, with its capacity law) is not part of the pattern; runs are characterized on a fixed family only; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "next_delta": {
+    "zh": "把给予者之数加入模式，并刻画逐步选择家族的运行。",
+    "en": "Add the number of giving relata to the pattern, and characterize runs on families chosen step by step."
+  }
+}

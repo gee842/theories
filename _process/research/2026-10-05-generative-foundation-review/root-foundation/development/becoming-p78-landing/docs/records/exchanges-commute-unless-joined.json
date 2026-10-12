@@ -1,0 +1,96 @@
+{
+  "id": "exchanges-commute-unless-joined",
+  "title": {
+    "zh": "独立的交换可交换：两侧分开两步时，平衡、耗散、体现、总量与计数都保持，在任意次这样的交换下也如此；次序恰经共享的关系项或依存被登记",
+    "en": "Independent exchanges commute: where sides split two steps, balance, dissipation, embodiment, totals and counts are kept, under any number of such commutations too; the order registers through a shared relatum or a dependence"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "Flow.Commuted L L' t：L' 以相反次序取 L 跨步 t 与 t+1 的交换，其余交换照旧；Web.Commuted W W' t：W 的每个立、活动、依存、需要与汲取至多跨两步之一变化，W' 跨另一步作此变化（Moved）。两个关系都对称（Flow.Commuted.symm、Web.Commuted.symm），在两侧说明哪些关系项跨哪一步变化并分开两步之处由 Flow.swap 与 Web.commute 实现（Web.Split、Flow.swap_commuted、Web.commute_commuted）。平衡、耗散与体现在交换后的世界中恰在原世界中成立时成立（World.commute_laws、Flow.Commuted.balances_iff、Flow.Commuted.dissipative_iff、Web.Commuted.embodied）：立的量相互交换（Exchanged），其升降互换位置。在含有两步的任何段上，有限家族的生起与止息计数、总立的升降与下降之步的计数都与原世界相同（World.commute_counts）。重复交换生成 Reorders，保持平衡、耗散与体现（Reorders.laws），并在含有每对被交换之步的段上保持总量（Reorders.totals）：这是以两侧分开两步为独立的 Mazurkiewicz 迹等价。次序经依存与共享的关系项被登记，各有见证：活动需要支持在没有依存跨越两侧时于交换后保持（Web.commute_dependent），而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃（Crossing.order_registers）；只有活跃者给予在交换后保持于没有给予者的活动被第一步开始或被第二步结束之处（Flow.Commuted.acting），而在 Arising 中跨第一步生起的关系项跨第二步给予，次序相反时它在活跃之前给予（Arising.order_registers）。不加前提。",
+    "en": "Flow.Commuted L L' t: L' takes the exchanges of L across the steps from t and t+1 in the other order and every other exchange as L does; Web.Commuted W W' t: each standing, activity, dependence, need and drawing of W changes across at most one of the two steps, and W' makes that change across the other (Moved). Both relations are symmetric (Flow.Commuted.symm, Web.Commuted.symm) and are realized by Flow.swap and Web.commute wherever sides say which relata change across which step and split the two steps (Web.Split, Flow.swap_commuted, Web.commute_commuted). Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world (World.commute_laws, Flow.Commuted.balances_iff, Flow.Commuted.dissipative_iff, Web.Commuted.embodied): the standing amounts exchange (Exchanged), their rises and falls changing places. Over any stretch holding both steps, the counts of a finite family's arising and ceasing, the rises and falls of a family's total standing and the steps at which it falls are those of the world (World.commute_counts). Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment (Reorders.laws) and, over a stretch holding every commuted pair, the totals (Reorders.totals): Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them. The order registers through dependence and through a shared relatum, each with a witness: activity needing support holds after commuting where no dependence crosses the sides (Web.commute_dependent), and in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support (Crossing.order_registers); only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second (Flow.Commuted.acting), and in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active (Arising.order_registers). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "交换是相继两步的；两侧是给定的，不由世界导出；每个立与活动只跨两步之一变化。",
+      "en": "Commutation is of consecutive steps; the sides are given, not derived from the world; each standing and activity changes across one of the two steps."
+    },
+    {
+      "zh": "逆方向——同样交换、同样依存次序的任意两个序列由 Reorders 相关（Foata 范式）——没有证明，偏序本身没有形式化。",
+      "en": "The converse, that any two sequences of the same exchanges with the same order of dependence are related by Reorders (Foata normal form), is not proved, and the partial order itself is not formalized."
+    }
+  ],
+  "correspondence": {
+    "zh": "P78（工作板），同上。读法（AI 的，待 Ren）：在次序之内，被登记的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向没有证明。见整合文档 §{S}。",
+    "en": "P78 (work board), as above. Reading (the AI's, pending Ren): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that would make this exact is not proved. See the integration document §{S}."
+  },
+  "aliases": [
+    "Becoming.Flow.Commuted",
+    "Becoming.Web.Commuted",
+    "Becoming.Web.Split",
+    "Becoming.World.commute",
+    "Becoming.World.commute_laws",
+    "Becoming.World.commute_counts",
+    "Becoming.Reorders",
+    "Becoming.Reorders.laws",
+    "Becoming.Reorders.totals",
+    "Becoming.Crossing.order_registers",
+    "Becoming.Arising.order_registers",
+    "commutation",
+    "交换次序",
+    "Mazurkiewicz traces",
+    "Mazurkiewicz 迹",
+    "partial order of exchanges",
+    "交换的偏序"
+  ],
+  "dependencies": [
+    {
+      "id": "only-the-order-of-change-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "同一模块的算术与段上总量的引理。",
+        "en": "The same module's arithmetic and stretch-total lemmas."
+      },
+      "interface": {
+        "output": {
+          "zh": "段上的总量与计数。",
+          "en": "Totals and counts over a stretch."
+        },
+        "input": {
+          "zh": "交换后的总量与计数。",
+          "en": "Totals and counts after commuting."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "平衡就是变化的平衡：交换后的世界上一步的规律。",
+        "en": "Balance is balance of change: the laws of one step in the commuted world."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "detail": {
+        "zh": "Crossing 与 Arising：两个可交换且仍平衡的交换，次序相反时活动需要支持或只有活跃者给予不再成立。",
+        "en": "Crossing and Arising: two exchanges that commute and still balance, where in the other order activity needing support, or only active relata giving, fails."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "活动需要支持、只有活跃者给予以及生起与止息的计数沿重复交换没有证明保持；存量耗减只在两步上；逆方向未证；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "Activity needing support, only active relata giving and the counts of arising and ceasing are not shown to carry along repeated commutation; running down is shown only at the two steps; the converse is not proved; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "next_delta": {
+    "zh": "证明逆方向（Foata 范式）并把交换的偏序形式化。",
+    "en": "Prove the converse (Foata normal form) and formalize the partial order of exchanges."
+  }
+}
