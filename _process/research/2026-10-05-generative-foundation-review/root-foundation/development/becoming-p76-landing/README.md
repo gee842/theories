@@ -17,4 +17,4 @@ The witness namespace is `Choosing` (renamed from `Branching`, which P81's modul
 
 ## Verified in scratch
 
-`mk.sh` against main `52feb7ef`'s core with P69's `Unfolding`: 162 constants, no warning, no axiom. To be rebuilt with `scratch_build.py` after P69 lands. No independent review yet.
+`mk.sh` against main `52feb7ef`'s core with P69's `Unfolding`: 162 constants, no warning, no axiom. Rebuilt 10-12 by `scratch_build.py` against main `66dc4450` with P69's `Unfolding` (byte-identical to the P69 landing): 27 theorems, 41 declarations, no axiom, no warning. No independent review yet.

@@ -302,9 +302,24 @@ theorem returns_iff_keepsWithin : (∀ s, Returns P s) ↔ ∀ R, Invariant P R 
 
 /-! ## Within finitely many configurations -/
 
+end Courses
+end Branching
+
+namespace Run
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+open Branching
+
 /-- A run read from step `i` on. -/
-def _root_.Becoming.Run.onward (r : Run P) (i : Nat) : Run P :=
+def onward (r : Run P) (i : Nat) : Run P :=
   ⟨fun n => r.state (i + n), fun n => r.act (i + n), fun n => r.step (i + n)⟩
+
+end Run
+
+namespace Branching
+section Courses
+variable {S : Type u} {A : Type v} {P : Process S A}
 
 /-- Merging nothing, where two steps of a run are at one configuration, so are the steps as
 many before them, back to the beginning. -/
@@ -373,8 +388,17 @@ theorem Lossless.unlisted (lossless : Lossless P) (r : Run P) (never : ¬ Return
     ¬ ∃ all : List S, ∀ s, s ∈ all :=
   fun ⟨_, every⟩ => never (lossless.returns every r)
 
+end Courses
+end Branching
+
+namespace Run
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+open Branching
+
 /-- **Within finitely many configurations, every run enters what returns.** -/
-theorem _root_.Becoming.Run.enters_returning (r : Run P) {l : List S}
+theorem enters_returning (r : Run P) {l : List S}
     (held : ∀ n, r.state n ∈ l) : ∃ n, Returns P (r.state n) :=
   match revisits_within l r.state (fun n _ => held n) with
   | ⟨i, _, lt, _, same⟩ => match gap_of_lt lt with
@@ -383,6 +407,12 @@ theorem _root_.Becoming.Run.enters_returning (r : Run P) {l : List S}
         Eq.subst (motive := fun z => Reach P (r.state (i + 1)) z)
           ((congrArg r.state (Nat.succ_add i d)).trans
             ((congrArg r.state gap.symm).trans same.symm)) (r.reach (i + 1) d)⟩
+
+end Run
+
+namespace Branching
+section Courses
+variable {S : Type u} {A : Type v} {P : Process S A}
 
 /-! ## A configuration that returns has a run that never loses it -/
 
@@ -488,12 +518,27 @@ def PossiblyDrawn (P : Process S A) (s : S) : Prop :=
 def NecessarilyDrawn (P : Process S A) (s : S) : Prop :=
   ∃ R : S → Prop, Invariant P R ∧ NecessarilyDrawnInto P R s
 
+end Courses
+end Branching
+
+namespace Run
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+open Branching
+
 /-- A run from `s` that enters `R` makes `s` possibly drawn into `R`. -/
-theorem _root_.Becoming.Run.possiblyDrawnInto {R : S → Prop} (r : Run P)
+theorem possiblyDrawnInto {R : S → Prop} (r : Run P)
     (outside : ¬ R (r.state 0)) {n : Nat} (inside : R (r.state n)) :
     PossiblyDrawnInto P R (r.state 0) :=
   ⟨outside, r.state n, Eq.subst (motive := fun k => Reach P (r.state 0) (r.state k))
     (Nat.zero_add n) (r.reach 0 n), inside⟩
+
+end Run
+
+namespace Branching
+section Courses
+variable {S : Type u} {A : Type v} {P : Process S A}
 
 /-- Necessarily drawn, with a run from it, a configuration is possibly drawn. -/
 theorem NecessarilyDrawnInto.possibly {R : S → Prop} {s : S}
@@ -556,9 +601,24 @@ theorem reachable_invariant (P : Process S A) (n : Nat) : Invariant P (Reachable
     Reachable.earlier ⟨x, as ++ [a], (length_append_one a as).trans (congrArg Nat.succ len),
       trace_append_iff.mpr ⟨_, path, .cons step (.nil t)⟩⟩
 
-theorem _root_.Becoming.Run.window_length (r : Run P) : ∀ k m, (r.window m k).length = k
+end Courses
+end Branching
+
+namespace Run
+
+variable {S : Type u} {A : Type v} {P : Process S A}
+
+open Branching
+
+theorem window_length (r : Run P) : ∀ k m, (r.window m k).length = k
   | 0, _ => rfl
   | k + 1, m => congrArg Nat.succ (Run.window_length r k (m + 1))
+
+end Run
+
+namespace Branching
+section Courses
+variable {S : Type u} {A : Type v} {P : Process S A}
 
 /-- **A lost possibility is necessarily drawn in.** A configuration that cannot be had `n`
 steps on is necessarily drawn into what can be had `n` steps on, every run entering at step
@@ -850,12 +910,20 @@ end Transit
 
 /-! ## The fork merges nothing and does not return -/
 
+end Branching
+
+namespace Reach
+
 /-- A configuration with no step leads only to itself. -/
-theorem _root_.Becoming.Reach.of_dead_end {S : Type u} {A : Type v} {P : Process S A} {t u : S}
+theorem of_dead_end {S : Type u} {A : Type v} {P : Process S A} {t u : S}
     (dead : ∀ a v, ¬ P.step t a v) : Reach P t u → t = u :=
   fun ⟨as, path⟩ => match as, path with
   | [], .nil _ => rfl
   | _ :: _, .cons step _ => absurd step (dead _ _)
+
+end Reach
+
+namespace Branching
 
 /-- Every step of the fork leaves the origin. -/
 theorem fork_source {s : Fork.Pos} {a : Fork.Way} {t : Fork.Pos} :
