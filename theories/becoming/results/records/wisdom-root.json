@@ -69,6 +69,13 @@
         "zh": "局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。",
         "en": "The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root."
       }
+    },
+    {
+      "id": "wisdom-root-part-one",
+      "detail": {
+        "zh": "完成本目标的形式部分：识、理（Ren 的读法）、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的规律对每个学习者与每个表示成立，不用公理。",
+        "en": "Completes this target's formal part: the laws of registration, 理 (Ren's reading), testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every learner and every representation, with no axiom."
+      }
     }
   ],
   "counterexamples": [
@@ -95,8 +102,8 @@
     }
   ],
   "limitations": {
-    "zh": "目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。",
-    "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
+    "zh": "完整目标的形式部分已在第一部分完成（wisdom-root-part-one），实际形成的对应、关切与情感的形成及充分性未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。",
+    "en": "The full target's formal part is completed in Part I (wisdom-root-part-one), while the correspondence of actual formation, the formation of concern and affect, and sufficiency remain unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
   },
   "validation_scope": {
     "zh": "第15节新增八种构造情境的哲学应用及反审，复用一般实践判断、目的评价、关系比较和开放未来的原证明。不新增定理、Lean运行、盲法历史检验或独立验收；完整根目标保持开放。",
@@ -142,8 +149,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "将本组判断所需的实际区别与已完成目的形成、反馈取得和修订历史的输出逐项对应，说明形成的能力怎样取得理由并用于回应；复用机制，明示规范输入，继续检验道德及其他智慧范围。",
-    "en": "Match the distinctions needed by these judgments to outputs of completed goal formation, feedback acquisition and revision histories, explaining how formed capacities acquire reasons and use them in response. Reuse mechanisms, disclose normative inputs and continue testing moral and other wisdom scope."
+    "zh": "形式部分已在第一部分完成（wisdom-root-part-one）；留下：把这些规律与本组判断所需的区别对到人类发展与 AI 训练中实际形成的证据，说明形成的能力怎样取得理由并用于回应；关切与情感的形成（认知一章的义务）；这组关系对全部智慧的充分性；继续检验道德及其他智慧范围，明示规范输入（第二部分）。",
+    "en": "The formal part is completed in Part I (wisdom-root-part-one). What remains: matching these laws, and the distinctions these judgments need, to evidence of actual formation in human development and AI training, explaining how formed capacities acquire reasons and use them in response; the formation of concern and affect (the cognition chapter's obligations); the sufficiency of these relations for all wisdom; continued testing of moral and other wisdom scope with normative inputs disclosed (Part II)."
   },
   "history": [
     {
@@ -169,6 +176,10 @@
     {
       "zh": "2026-10-08：沿道德评价becoming的主线，第15节固定共同前提展开八种判断，列明改变条件、非唯一选择与错误诊断。新增哲学应用，不重复计算既有定理；角色和情境为明示构造，未冒称独立历史样本。",
       "en": "2026-10-08: section 15 develops eight judgments from shared premises along the becoming-appraisal route, stating reversal conditions, nonunique choice and error diagnoses. This adds philosophical applications without recounting existing theorems; constructed roles and cases are not independent historical evidence."
+    },
+    {
+      "zh": "2026-10-12 P75：按 Ren“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”，形式部分在第一部分所及范围内完成，见新记录 wisdom-root-part-one 与整合文档 §93；按登记规则目标仍为目标，开放部分明示为实际形成的对应、关切与情感的形成及充分性；理的读法依 Ren。断言不变。",
+      "en": "2026-10-12 P75: following Ren's “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”, the formal part is completed at the scope Part I reaches, in the new record wisdom-root-part-one and §93 of the integration note; by the registry's rule the target stays a target, its open part named as the correspondence of actual formation, the formation of concern and affect, and sufficiency; 理 is read as Ren reads it. The claim is unchanged."
     }
   ]
 }

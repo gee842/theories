@@ -90,6 +90,10 @@
     {
       "zh": "2026-10-08：按最新明确完成请求登记本会话目标；条件形式进展和普遍完成分开。",
       "en": "2026-10-08: records this session’s latest explicit completion request, separating conditional formal progress from universal completion."
+    },
+    {
+      "zh": "2026-10-12 P73：归纳的规律在第一部分陈述，不用公理：无记录固定下一个，每个学习者都有否证它每个主张的开放的序列，被列表所持的世界中按否证学习的否证有界、静止不能被否证（learning-by-refutation）；推广恰在世界经模型所归并者同去之处正确（generalization-through-lumping）；见整合文档 §92。它们是科学探究的必要关系的一部分，不证明完整核心对科学的不可或缺性；断言与 next_delta 不变。",
+      "en": "2026-10-12 P73: the laws of induction are stated in Part I with no axiom: no record fixes the next value, every learner has an open course refuting each of its claims, and in a world held by a list learning by refutation is refuted a bounded number of times with its rest unrefuted (learning-by-refutation); a generalization is right exactly where the world goes alike across what the model lumps (generalization-through-lumping); see §92 of the integration note. They are part of the necessary relations of scientific inquiry and do not prove the whole core indispensable to science; the claim and next_delta are unchanged."
     }
   ]
 }

@@ -6019,6 +6019,172 @@ Integration: 计划 P69；回答 Ren 的“is this dualistic?”；按 Ren 2026-
 - 尚无独立审查。
 
 
+## 92. 学习：归纳、推广、训练与元层次（P73、P74）
+
+2026-10-12。Ren 问：“how complete are we at explaining meta level? can we explain artificial neuron networks? can we explain cognition? do we have complete wisdoms about learning?”。AI 答四者都未完成，称归纳问题（“关于何者无关的模型何时正确”）尚未消解，并提出三步：损失作为选择者（P64 用于训练）、把习得链与连接主义模型接到脊柱上的实例定理、推广作为规律。Ren 答：“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md)）。本节是这三步，在工作板上认领为 P73（核心）与 P74（外围桥接）；智慧之根（P75）见 §93。它不加公理，也不加每条规律所写条件之外的前提，属于第一部分。核心新增模块 `Becoming.Learning`（L4），75 项定理，导入 `Becoming.Mechanism`（P66）与 `Becoming.Selection`（P64），不改已有模块。外围桥接 `LearningCorrespondence`（Lean 4.30.0-rc2 与 Mathlib）导入它与既有的 `CompositionalAcquisition`、`UpdaterConsequences`，核心不导入它。
+
+理的读法依 Ren：理是对结构与变化之规律的建模。它取代 AI 在 §70 中的读法（“对识负责的模型”）；两者不相对立：按 Ren 的读法，模型仍只经识被检验（§70）。
+
+成果记录新增两项：[learning-by-refutation](../../../../theories/becoming/results/records/learning-by-refutation.md) 与 [generalization-through-lumping](../../../../theories/becoming/results/records/generalization-through-lumping.md)。
+
+```text
+Result(s): 复用 testing-within-registration（Web.tail_unrefuted、Web.RegistersAlikeUpTo、Web.SelectsThrough 的识）、
+           experiment-needs-return（Run.not_fixes_of_untaken、FactorsThrough）、projection-carrying-a-law（GoAlike、
+           carries_law_iff、adaptive、adaptive_state_law_iff、Run.not_fixesThrough_of_goAlike）、
+           selection-through-registration（Web.SelectsThrough）、recurrence-without-premise（Law.orbit、Law.process、
+           revisits_within、unlisted_of_new）、joint-difference-making（Determined）；新增上列两项
+Delta: 记录与否证：record、back、back_record、Refuted、RefutedAt、Holds。前方：holdFrom、no_record_fixes_next、
+       claim_refuted_on_one、no_record_fixes_next_finite。对角：answerTo、answerStep、diagonal、record_diagonal、diagonal_refutes、
+       diagonal_unrested、diagonal_open、swapTo_moves。按否证学习：indexOn、learner、index、index_le_of_holds、
+       refuted_before、index_unbounded、refutations_not_recurring、learner_through_record、stable_unrefuted。套索：Lasso、
+       lasso_of_held、lasso_positions、lasso_realized、holdFrom_lasso、lasso、lasso_claims、lasso_holds；次序：
+       pairAt、tri、pairAt_place、lassos；lasso_learner_bounded、rest_unrefuted、lasso_of_rest、held_learner_bounded、held_rest_unrefuted、diagonal_not_lasso。
+       元层次：merged、merged_bound、merged_unrested。归并：Determines、Lumped、Free、lumped_determines、determines_lumped_iff、
+       lumped_right_iff、lumped_world_right、free_determines_iff、every_free、every_determines_nothing。结构与变化：
+       GoAlikeAt、goAlike_iff_at、transfer_right_iff、goAlike_iff_lumped。训练：Training.Through、Training.AgreeOn、
+       Training.web_selectsThrough_iff、Training.loss_through、Training.unselected_beyond_data、Training.fit_right_iff。
+       见证：Shift（determines、every_nothing、right_same、wrong_both）、Alternate（repeats、index_three、rests）。
+       外围（P74）：Uniform、acquire_exact、uniform_determines、nonuniform_not_determined、develop_orbit、hebbian、
+       hebbian_determined、hebbian_activity_law_iff、weights_matter、hebbian_no_activity_law、updating、
+       updating_determined、updating_network_law_iff、responsive_kept、responsive_learns、route_matters、
+       updating_no_network_law
+Supplied premises / correspondence: 不加公理；每条规律的条件写在定理之中：值可判定相等（DecidableEq，按否证学习与
+       判定归并处；逐条分类见[可判定性清点](DECIDABILITY-INVENTORY.md)）；有两个不同的值（no_record_fixes_next、determines_lumped_iff、every_determines_nothing）；
+       other 移动每个值（对角）；世界的配置被一个列表所持（held_learner_bounded、held_rest_unrefuted）；假设、类与归并由学习之外给出；
+       外围中语法、探针、任务、剖面、常数与路线取自既有模块，保持其原有范围；读法除理（Ren 的）之外是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261012T012916.201078Z（Becoming.Learning 75 项定理，全部源声明公理报告为空）；外围桥接 CorrectionInquiry
+          对这个核心重查，回执 20261012T013048.258651Z；学习桥接回执 20261012T014649.248714Z（15 项定理；其声明中用 Mathlib 实数的报告其标准公理，逐项列出）
+Boundary: 一个实际形成持有或能达到哪些假设、类或归并，它的识是否分辨值，它的世界是否被列表所持，一个实际网络的
+          结构与更新是否施加某个归并，都不推出；学习理论中可数类的一般界、概率的或近似的学习（PAC）、
+          优化的动力学与隐式偏置没有陈述；外围的网络是小模型，不是现代深度网络；不含伦理谓词
+Integration: 计划 P73、P74；把 P49 的 Web.tail_unrefuted 推广为任意序列上的无记录固定下一个；把 P53 的“关于何者
+             无关的模型”何时正确定为世界经归并同去之处；把 P66 的相同者同去读作同一个归并（结构与变化）；
+             把 P64 的经识选择接为训练；习得链（CompositionalAcquisition）与连接主义模型（DevelopmentalMemory、
+             UpdaterConsequences）成为脊柱上的实例
+```
+
+| 声明 | 内容 |
+|---|---|
+| `record`、`back_record`、`Refuted`、`RefutedAt`、`Holds` | 一个被识的序列（course）是被识的值的序列，例如一个确定律之轨道的识；第 t 步之前的记录（最新在前）；主张是 `Option O`，不主张为 `none`；主张被否证，指它主张了一个值而所识的值不同；假设在某个序列上成立，指它在任何一步都不被否证 |
+| `holdFrom`、`no_record_fixes_next`、`claim_refuted_on_one` | 无记录固定下一个：对每个序列与每步 t，给出两个不同的值，就有两个序列与它在 t 之前有相同的记录，在 t 分别取这两个值；从该记录作出的主张不在两者上都对，值可判定时在其中之一被否证。对序列不作任何假设；P49 的 `Web.tail_unrefuted` 是水平历史上的同一规律 |
+| `holdFrom_lasso`、`no_record_fixes_next_finite` | 上述两个序列都是被列表所持之世界的序列（从 t 起不变）：即使在有限的世界中，记录也不固定下一个 |
+| `diagonal`、`diagonal_refutes`、`diagonal_unrested` | 对角：对每个学习者（任意从记录作出主张的规则），有一个序列在每一步回答它的主张，把它否证；所以在这个序列上它在任何一步之后都不静止。对每个学习者成立，不论它持有什么、怎样修订 |
+| `record_diagonal`、`diagonal_open` | 回答的序列是一个保留其记录之律的识；这个世界从不返回，没有列表持有它的配置（`unlisted_of_new` 的实例）：击败学习者的世界是开放的 |
+| `indexOn`、`learner`、`index` | 按否证学习：假设依次排列，从第 0 个开始，恰在所持者被否证时移向下一个；指标就是至今的否证数 |
+| `index_le_of_holds`、`refutations_not_recurring`、`refuted_before` | 学习者从不越过一个成立的假设，所以至多被否证该假设的位置那么多次，且不在任意晚处被否证；越过的每个假设都在记录中某一步被否证 |
+| `learner_through_record` | 学习者经记录：相同的记录，相同的假设，相同的主张 |
+| `stable_unrefuted` | 有界、不降的计数从某步起不变，这一点不能被否证（双重否定） |
+| `Lasso`、`lasso_of_held`、`lasso_realized` | 套索：从第 i 步起以周期 q + 1 重复。确定律的轨道被列表 l 所持时，其每个识都是套索，i + q + 1 ≤ l 的长度（由 `revisits_within`）；每个套索都是某个被列表所持之世界的识 |
+| `lasso`、`lasso_holds`、`pairAt`、`tri`、`pairAt_place`、`lassos` | 套索假设：在长度足够时回看 q + 1 步；套索序列上它成立。假设对 (i, q) 按对角次序排列，(i, q) 位于 `tri (i + q) + q` |
+| `lasso_learner_bounded`、`rest_unrefuted`、`lasso_of_rest` | 在套索序列上，不知 i 与 q 的学习者至多被否证 `tri (i + q) + q` 次，从第 i + q + 1 步起每步主张，不在任意晚处被否证；它静止（每步主张且正确）这一点不能被否证（双重否定）；它只在套索序列上静止 |
+| `held_learner_bounded`、`held_rest_unrefuted` | 有限世界中的归纳：确定律的轨道被列表 l 所持时，只读一个能分辨值的识、不知配置也不知其数目的学习者，被否证少于 `tri l.length` 次，从第 l.length 步起每步主张，不在任意晚处被否证；它静止这一点不能被否证（双重否定） |
+| `diagonal_not_lasso` | 套索学习者的对角序列不是套索：击败它的世界不被任何列表所持 |
+| `merged`、`merged_bound`、`merged_unrested` | 元层次：假设的类沿对合并为一个枚举；对类的学习就是在合并枚举上的同一按否证学习，界复合为 `tri (c + j) + j`；不论怎样选择与合并类，学习者都有其对角序列：没有顶层 |
+| `Determines`、`Lumped`、`Free` | 在类 C 之中，数据 D 上的值固定 x 处的值；g 经归并 π 同去（π 相同的输入取同一值）；类在 x 处于数据之外自由（每个成员在数据上的值都能与每个成员在 x 的值组合） |
+| `lumped_determines`、`determines_lumped_iff` | 归并恰在它归并之处推广：在经 π 同去的函数之中，有限数据固定未试的 x 处之值，恰当某个观察到的输入与 x 被归并在一起（有两个值时） |
+| `lumped_right_iff`、`lumped_world_right` | 推广恰在世界经归并同去之处正确：在数据上拟合世界 f 的成员，在 x 处主张与之归并的观察输入的值；它正确恰当 f 在两者取同一值；世界本身经归并同去时，在与观察输入归并的每个输入上都学对 |
+| `free_determines_iff`、`every_free`、`every_determines_nothing` | 在数据之外自由的类，在那里只决定其成员共有的；一切函数之类在每个未观察的输入处自由，所以数据单独不固定任何未试之值 |
+| `GoAlikeAt`、`goAlike_iff_at`、`transfer_right_iff` | 变化之律恰在步骤同去之处推广：在确定过程中，在 s₀ 观察到的动作 a 的结果（经 π 读）转移到 s 处的每一步，恰当 s₀ 与 s 经 π 以 a 同去；取之前记录不固定它（`Run.not_fixesThrough_of_goAlike`） |
+| `goAlike_iff_lumped` | 结构与变化是同一个归并：确定律经 π 同去，恰当下一配置（经 π 读）经 π 所归并者同去 |
+| `Training.loss_through`、`Training.web_selectsThrough_iff` | 训练是经数据的选择：由数据上的值算出的损失，以及由它作出的每个选择，把在数据上一致的两个函数选得相同；P64 的经识选择是经“识得相同”的选择（定义上相同） |
+| `Training.unselected_beyond_data`、`Training.fit_right_iff` | 在数据之外自由的类中，每个经数据的选择使未试之值与类同样自由；拟合在数据之外对类中每个世界都正确，恰当类在那里由数据决定 |
+| `Shift`、`Alternate` | 见证：输入是位置与内容，归并读内容、忘位置；数据只在一个位置；位置间共享在世界于各位置相同处正确，在不同处错误。序列 false, true, false, …：套索学习者被否证两次，从第三步起正确，恰在界 `tri 1 + 1 = 2` |
+
+外围（P74，`LearningCorrespondence`）：
+
+| 声明 | 内容 |
+|---|---|
+| `Uniform`、`acquire_exact`、`uniform_determines` | 习得链的推广：在原子效果可分辨的一致律族中，三次接触决定每个表达式（含从未接触的）的值；这是既有 `CompositionalAcquisition` 的结论读作 `Determines`。习得代码的精确性逐例重证，使实例不依赖经典推理 |
+| `nonuniform_not_determined` | 容许既有的、在三次接触上一致的非一致律时，接触在新表达式处不决定任何东西：既有 `nonuniform_fails_transfer` 读作类在那里自由 |
+| `develop_orbit` | 固定权重下网络的发展是其步的轨道：规则保持时的律（P66） |
+| `hebbian`、`hebbian_determined`、`hebbian_activity_law_iff`、`weights_matter`、`hebbian_no_activity_law` | Hebb 式发展（活动在权重下前进、权重储存活动）是 P66 的 `adaptive` 系统；活动恰在权重对其步不造成差别之处有自己的律；三单元记忆中权重造成差别（存储的网络与空网络把第一个剖面送到不同的活动），所以活动单独没有律 |
+| `updating`、`updating_determined`、`updating_network_law_iff`、`route_matters`、`updating_no_network_law` | 更新路线是元层次：网络在一条更新路线下随所遇任务前进，又是 `adaptive` 系统，路线是规则；网络恰在路线不造成差别之处有自己的律；在起始网络与第一个任务上两条路线不同（持续路线学习，回应路线保持），所以网络单独没有律 |
+| `responsive_kept`、`responsive_learns` | 回应路线恰在任务失败处改变网络：网络层次上的按否证学习 |
+
+**它回答了什么。**
+- **归纳问题被分解为规律。** 它不被证明，也不被否定，而是分成几条精确的规律。无记录固定下一个，有限世界中亦然（`no_record_fixes_next`、`no_record_fixes_next_finite`）。每个学习者都有一个世界，否证它的每个主张；这个世界保留其记录，所以开放（`diagonal_refutes`、`diagonal_open`）。在每个被列表所持的世界中，按否证学习的学习者不知配置也不知其数目，被否证的次数有界于配置数，不在任意晚处被否证（`held_learner_bounded`）；它静止这一点不能被否证（`held_rest_unrefuted`，双重否定）；它只在这样的世界中静止（`lasso_of_rest`）。它的记录从不表明它已静止（`no_record_fixes_next_finite`）：学会这一点不能被否证，学习者却从不识得自己何时已学会。
+- **何时关于何者无关的模型正确。** 这是 AI 所说未消解的问题。模型是一个归并：它把它视为无关的差别归在一起。它所推广的，恰是它与已识者归在一起的（`determines_lumped_iff`）；在那里它正确，恰当世界经该归并同去（`lumped_right_iff`）；对变化之律，恰当步骤同去（`transfer_right_iff`）。自然的一致性因此不是前提，而是一条规律的局部条件：世界经模型所归并者同去。不归并任何东西，数据单独不固定任何未试之值（`every_determines_nothing`）：没有理就没有推广。
+- **理：结构与变化的同一建模（Ren 的读法）。** 对结构的建模是一个归并（`Lumped`）；对变化的建模是步骤经它同去的归并（`GoAlike`）；两者是同一个概念（`goAlike_iff_lumped`）。P66 的“投影承载规律”与这里的“归并推广”是同一条件的两种读法。
+- **训练与人工神经网络。** 损失经数据选择（`Training.loss_through`），P64 的经识选择是其实例（`Training.web_selectsThrough_iff`）。在数据之外自由的类中，训练使未试之值与类同样自由（`Training.unselected_beyond_data`）；拟合在数据之外正确，恰当类在那里由数据决定（`Training.fit_right_iff`）。所以推广不来自损失，而来自训练能达到的类：结构、起点与更新的动力学所施加的归并。
+- **元层次。** 选择怎样学习就是再学习，在合并的枚举上，界复合（`merged_bound`）；没有顶层（`merged_unrested`）。外围中，更新路线正是网络之上的规则（`updating_network_law_iff`、`route_matters`），回应路线就是网络层次的按否证学习（`responsive_learns`）。
+- **既有模型在脊柱上。** 习得链的推广是经律的归并的推广（`uniform_determines`），其失败是类在数据之外自由（`nonuniform_not_determined`）；Hebb 式发展与更新路线是 P66 的 `adaptive` 系统，活动或网络单独没有律之处恰是权重或路线造成差别之处。
+
+**读法。**
+- 理（Ren 的读法）：对结构与变化之规律的建模。把归并读作对结构的模型、把经它同去的归并读作对变化的模型，是 AI 对形式项的读法。
+- （AI 的，待 Ren）归纳被消解为规律，而不是被保证：在每个有限的世界中，按否证学习静止而不知何时；没有学习者在每个世界中静止；击败它的世界是开放的。休谟的问题在这里的位置是 `no_record_fixes_next`；古德曼的新谜（哪个谓词可投射）是哪个归并；“没有免费的午餐”的有限形式是 `every_determines_nothing`。
+- （AI 的，待 Ren）对受训网络，类是训练所能达到的，损失只经数据选择；解释其推广就是识别结构与更新所施加的归并（位置间共享、不变性、组合）及其与世界的对应，而不是损失。
+- （AI 的，待 Ren）元层次是再学习，没有顶层；智慧不是一个完成的学习者。
+
+**作者反审。**
+1. **“消解”是分解，不是保证。** 正面结果要求世界被列表所持、识能分辨值、假设类给定；在开放的世界中，没有学习者处处静止。这正是规律，但若把“消解”读作“归纳已被证成”，就错了。
+2. **主要定理是学习理论中已知结果在脊柱上的形式。** 对角论证见 Putnam（1963，对 Carnap 确证函数的批评）；极限中的识别见 Gold（1967）与 Putnam（1965）；按否证、依次枚举的学习是 Gold 的枚举法；以学习理论处理归纳问题见 Kelly（1996，*The Logic of Reliable Inquiry*）；`every_determines_nothing` 是 Wolpert（1996）“没有先验区别”的有限、确定性形式。增量在于把它们放在一元关系的脊柱上，与识（P49）、实验（P53）、机制（P66）与选择（P64）接为一体，并以 Ren 的理把结构与变化统一，而不在于定理本身新颖。
+3. **双重否定。** `rest_unrefuted` 与 `held_rest_unrefuted` 的静止只以双重否定陈述，名称依整合者的规则（P58b）带“unrefuted”：这里不给出静止之步；这是本模块所陈述的范围，不是“不能给出”的证明：已知界（列表的长度）时，P83 的两周期引理（`Becoming.Identification` 的 `period_extends`）界定这一步看来可行（只是草图，此处未检查），留给 P83。学习者自己的记录从不表明它已静止（`no_record_fixes_next_finite`），这才是“何时静止不被识”的内容。在经典读法下双重否定就是“最终静止”。
+4. **界粗。** `tri N` 不是最优界；对任意枚举的假设类，界是第一个成立假设的位置（`index_le_of_holds`），套索只是有限世界的完全类。
+5. **类是给出的。** `Determines` 量化于类；什么类是一个实际形成所持有或能达到的，不推出。“类是训练所能达到的”是读法；优化的动力学、隐式偏置与概率的推广界（PAC、VC 维）没有陈述。
+6. **`goAlike_iff_lumped` 很短。** 它几乎是定义展开；内容在于它把 P66 的“相同者同去”与这里的“归并”认作一个，使 Ren 的理有一个形式所指。它与 P70 的 `Law.goAlike_process_iff`（`Becoming.Description`，另一会话所持、同日待落地）展开 `Lumped` 后是同一陈述，证明也相同；两者独立写成，后落地的一方把二者的同一写明（实例或注明），不再另证。P71 的 `Becoming.Diagonal`（Lawvere 的缺口）与本节的对角序列同型：后者是按记录、逐步构造的学习者版本，同样由后落地的一方写明二者的关系。
+7. **外围实例很薄。** `uniform_determines` 是既有精确性定理的重读；`hebbian` 与 `updating` 是定义上的实例；`weights_matter` 与 `route_matters` 是数值见证。它们的增量是连接，不是新的网络理论。
+8. **识的可判定性。** 按否证学习要求值可判定相等；不分辨值的识（P49 的阈下）不在此列，其上的学习没有陈述。
+
+**检查。**
+- 模块在暂存区对 main 与 P64–P68 的落地包编译，没有错误或警告；检查器所列 112 项声明（75 项定理）逐条审计，公理报告全部为空；没有禁用的记号（sorry、axiom、Classical、native_decide、omega、simp）。见证 `Alternate.index_three` 以 `rfl` 计算。
+- 外围桥接在暂存区以 Lean 4.30.0-rc2 与 Mathlib（ea11ccc0）编译，导入闭包中的核心模块以同一工具链重编（共享缓存）；习得部分的声明公理报告为空，用实数的声明报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）。
+- 合并检查器在落地队列中检查一次，通过：回执 20261012T012916.201078Z。`Becoming.Learning` 的 75 项定理全部空依赖；包共 2970 项定理、4334 项声明审计，核心闭包 59 个模块。外围桥接 CorrectionInquiry 导入根模块，对这个核心重查，通过：回执 20261012T013048.258651Z。学习桥接检查通过：回执 20261012T014649.248714Z（15 项定理）。
+- 尚无独立审查。
+
+
+## 93. 智慧之根在第一部分所及（P75）
+
+2026-10-12，同一来源。Ren 的“finish wisdom root”指向成果记录 [wisdom-root](../../../../theories/becoming/results/records/wisdom-root.md)：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成（[主研究 §8](CORE-CONSTRAINT-AND-WISDOM.md#8-明确目标证明这是智慧之根--the-root-of-wisdom-objective)）。§8.4 列出要闭合的四条连接：智慧问题到根部关系（跨表示的必要性）、根部关系到智慧的形成、根部与公开根据到判断的正当性、同一根到持续展开。本节不新增 Lean：它把第一部分已检查的规律（P49、P53、P55、P62、P64、P66 与 §92 的 P73、P74）按这四条连接逐项对上，说明每条现在完成到哪里，什么只有对实际形成的对应才能决定。新增记录 [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-part-one.md)；目标记录 wisdom-root 按登记规则仍为目标（目标不能标为完成），其形式部分由该记录完成，留下的开放部分明示。
+
+```text
+Result(s): 复用 testing-within-registration（P49）、experiment-needs-return（P53）、runaway-distance-unregistered（P55）、
+           P62 的 Seeking 与 Capture 记录、selection-through-registration（P64）、projection-carrying-a-law（P66）、
+           learning-by-refutation 与 generalization-through-lumping（P73、P74）；practical-judgment-g0-j 等第二部分记录不变
+Delta: 新增记录 wisdom-root-part-one：第一部分中构成智慧之形式内容的规律，逐条对每个学习者、每个表示、每个选择成立；
+       目标 wisdom-root 的四条连接各自完成到哪里；理的读法改依 Ren
+Supplied premises / correspondence: 不新增前提；各规律的条件保持在其定理中；把规律对应到智慧的各部分（识、理、检验、
+       明、够、不失控、不为代理所欺、元）是 AI 的读法，理依 Ren，其余待 Ren
+Evidence: 各模块已通过的合并检查器回执（P73 的在 20261012T012916.201078Z）；无新的 Lean
+Boundary: 实际的人与 AI 怎样形成智慧、情感与关切怎样形成、文化与原典中的智慧是否对应这些规律，只有经验对应能决定；
+          判断的伦理正当性走第二部分（G0 为那一条公理的定理，P51），本节不改变它；不含伦理谓词
+Integration: 目标 wisdom-root 的 next_delta 与边界随之修订；testing-within-registration 中理的读法改依 Ren；
+             认知一章的完成义务表随之更新
+```
+
+**第一条连接：智慧问题到根部关系（跨表示的必要性）。** 主研究 §8.3 要求：独立说明的智慧内容为何需要这些关系，保留相同内容的替代实现能否避开它们。第一部分的规律是对每个学习者、每个归并、每个选择、每个确定的律陈述的，所以任何保留相同内容的实现都不能避开它们。
+
+| 智慧的一面（读法） | 第一部分的规律（不用公理） | 对每个……成立 |
+|---|---|---|
+| 识：只有所识者能纠正 | 主张只经所识的差别被否证（`Web.Refutes.not_of_alike`）；没有模型，有限记录不否证关于其后的主张（`Web.tail_unrefuted`），任意序列上亦然（`no_record_fixes_next`） | 每个形成、每个主张、每个序列 |
+| 理：对结构与变化之规律的建模（Ren） | 数据单独不固定任何未试之值（`every_determines_nothing`）；推广恰在归并之处，正确恰在世界经归并同去之处（`determines_lumped_iff`、`lumped_right_iff`）；结构与变化是同一个归并（`goAlike_iff_lumped`）；投影恰在相同者同去时承载规律（`carries_law_iff`） | 每个类、每个归并、每个过程 |
+| 检验：模型与主张一起被否证，实验需要返回 | 相对于模型的否证是对模型与主张一起的否证（`Web.refutesWithin_iff_conjunction`）；记录只在取过之处固定一个动作的结果（`Run.not_fixes_of_untaken`），重复是返回（`Run.fixes_on_return`），推广到经模型相同的类（`Run.generalizes`） | 每个运行、每个确定过程 |
+| 学会而不知何时 | 有限世界中按否证学习，否证次数有界于配置数（`held_learner_bounded`），它静止这一点不能被否证，它的记录从不表明它已静止（`held_rest_unrefuted`、`no_record_fixes_next_finite`）；没有学习者在每个世界中静止（`diagonal_refutes`） | 每个学习者 |
+| 明：看见自身所识之外，要他者之识 | 清除者不能检验的，栖居者能，两者合起来能检验各自都不能的（`Clearing.tested_by_dweller`、`Clearing.pooled`）；经识的选择在识闭包之外不见，合起来的识选出它（`Flow.unselected_beyond_registration`、`Clearing.selected_pooled`） | 每个经识的选择 |
+| 够：寻求在够处静止 | 寻求恰在到达律所不变、满足其目标的状态时静止（`Law.rests_iff`）；“比现在更多”需要开放的世界（`more_needs_open`）；“高于一切他者”的两个寻求者从不同时静止（`Law.aboveAll_never_rests`） | 每个确定的律、每个目标 |
+| 不失控：断裂还有多远不被自身之识识 | 断裂之前，对每个视界都有储量抬高的世界与实际在所识的一切上相同（`Web.break_not_bounded`）；观察储量则立刻识之（`Web.observed_raise_registers`） | 每个经识的策略 |
+| 不为代理所欺 | 选择与训练只经选择者之识或数据（`Web.selects_alike_iff`、`Training.loss_through`）；数据之外的值与类同样自由（`Training.unselected_beyond_data`）；伸出识闭包之外而抬高所识者被选中（`Diversion.favours`） | 每个选择、每个损失 |
+| 判断：一步的探究 | 由识作出的判断恰是判断过程在信念上的共同回应（`commonResponse_judge_iff`、`Web.belief_judge_iff`） | 每个信念 |
+| 元：没有顶层 | 对类的学习是合并枚举上的同一学习（`merged_bound`），没有顶层（`merged_unrested`）；改变自身规则的系统的规律在联合配置上（`adaptive_state_law_iff`） | 每种合并、每个规则 |
+
+这些规律回答 §8.3 的问题的一半：独立说明的智慧内容（辨明理由、纠正错误、对判断的范围负责）在其形式部分要求这些关系，而且替代的表示避不开它们，因为它们对每个表示成立。另一半，即这组关系对全部智慧的充分性，不在此证明：第一部分说出智慧不能缺少什么，以及缺少时怎样失败（`diagonal_refutes`、`every_determines_nothing`、`Web.break_not_bounded`、`Flow.unselected_beyond_registration`），不说出一个形成何时有智慧。
+
+**第二条连接：根部关系到智慧的形成。** 形成的形式部分已陈述：按否证学习从记录形成正确的模型，否证次数有界，静止不能被否证（`held_learner_bounded`、`held_rest_unrefuted`），其纠正就是否证；习得链从三次接触形成对全部表达式的解释（`uniform_determines`）；Hebb 式发展与更新路线是联合配置上的律（`hebbian_activity_law_iff`、`updating_network_law_iff`），回应路线在失败处学习（`responsive_learns`）。实际的人与 AI 是否经这些路线形成其理解与修正，是对应问题，只有经验能决定；认知一章的完成义务（意识、情感、自然语言、发育与演化）保持开放。
+
+**第三条连接：根部与公开根据到判断的正当性。** 不变。伦理方向走第二部分：G0 是那一条公理的定理（P51），第二部分记录（practical-judgment-g0-j 等）保持其范围。第一部分的规律不含伦理谓词，不推出何者应做；它们推出的是，任何声称有根据的判断都只经识、经理、经检验而成立或失败。
+
+**第四条连接：同一根到持续展开。** `merged_unrested` 与 `diagonal_refutes`：智慧不是一个完成的学习者，在每个层次上它都可被一个开放的世界否证，所以持续展开不是附加的要求，而是规律。P71（一个在其所识之内的识在每一步都不完全）若落地，加强这一条；它尚在暂存证据中，不计入。
+
+**结论。** 目标 wisdom-root 的形式部分，在第一部分所能到达的范围内，已完成：智慧的形式内容是一组对每个学习者成立的规律，不用公理，其条件写在定理中。目标仍开放的，恰是三项：(1) 实际形成的对应（经验）；(2) 关切与情感的形成（认知一章）；(3) 这组关系对全部智慧的充分性。第二部分的伦理正当性有其自身的已完成范围。
+
+**读法。** 理依 Ren。把规律对到“识、理、检验、明、够、不失控、不为代理所欺、判断、元”是 AI 的读法，待 Ren；“明”在这里只指看见自身所识之外要他者之识（P49、P64），不取其全部古典含义；“够”取自 P62 的读法。
+
+**作者反审。**
+1. **形式部分完成，不等于智慧之根完成。** 主研究 §8.1 把智慧之根定为“揭示智慧不可缺少的构成关系，并解释其形成、成立与失败”。本节完成的是不可缺少性与失败的形式部分，以及形成的形式路线；形成的实际对应与充分性没有完成，目标记录因此保持开放，这不是登记规则造成的形式问题。
+2. **必要性的意义是窄的。** “对每个表示成立”说的是：任何学习者都受这些规律约束；它不说每个有智慧者都显式持有一个归并、一个假设列表或一个模型。隐性的、身体的、共同的实践智慧同样受这些规律约束，但它们怎样实现这些关系没有陈述。
+3. **表中的对应是读法。** 每行左列是 AI 对智慧一面的命名，右列是已检查的定理；左右之间的对应不是定理。原典（儒、道、佛、亚里士多德的 phronesis）的比较见主研究 §12–§13，本节不重做。
+4. **没有新的 Lean。** 本节是整合；它的新信用只在 §92 的 P73 与 P74。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -6876,4 +7042,72 @@ Receipt 20261011T232354.807725Z (Space 63). Not yet independently reviewed; the 
 
 Ren confirmed the reading of law and history ("there are no two realities"). The rest are the AI's readings, pending Ren: `World` is where the core begins, the labelled process and the frame being readings of it, with both directions proved; an agent's choice is not a second kind of cause beside the unfolding; the gap between a law and its histories is memory; knowing is within the unfolding; configurations' names carry nothing, and the zero-premise plan's pointwise properties state the relational identity of standings. Not derived: the shared index of steps; that a move is formed within, or by what; which law a formation takes its history to show; that configurations passing the same tests are alike; that a description making sense exists; that Part I's theorems stated with `Determined` hold up to likeness. `GenerativeCore` is unchanged, so this is a reading with theorems in both directions and a bridge, not another foundation. Records added: process-and-frame-as-readings, configurations-alike-by-relation. Receipt 20261011T235410.578553Z (Unfolding 67); periphery receipt 20261011T232716.311380Z. No independent review yet; the author's counterreview is in section 91.
 
-The package now has 2895 theorems and 4222 declaration audits, over a core closure of 58 modules and a package of 56, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T232716.311380Z).
+**P73 and P74: learning, that is, induction, generalization, training and the meta level.** Ren asked "how complete are we at explaining meta level? can we explain artificial neuron networks? can we explain cognition? do we have complete wisdoms about learning?". The AI answered that none of the four is complete, called the problem of induction ("when a model of what doesn't matter is right") undissolved, and proposed three steps: a loss as a selector, instance theorems for the acquisition chain and the connectionist models, and generalization as a law. Ren answered "please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md)). These are P73 (core) and P74 (periphery); the wisdom root (P75) is section 93. `Becoming.Learning` (75 theorems, L4) imports `Becoming.Mechanism` and `Becoming.Selection` and changes no existing module. The periphery bridge `LearningCorrespondence` (Lean 4.30.0-rc2 and Mathlib) imports it with the earlier `CompositionalAcquisition` and `UpdaterConsequences`. No axiom is added, and no premise beyond what each law names. 理 is read as Ren reads it: the modeling of the laws of structure and of change. This replaces the AI's reading in section 70, "a model answerable to registration", and does not oppose it, since on Ren's reading a model is still tested only through registration.
+- **Induction resolved into laws.** No record fixes the next value: given two values, two courses share any record and differ at its next step, so a claim made from the record is not right on both (`no_record_fixes_next`), and with values decided it is refuted on one of them (`claim_refuted_on_one`). This holds even among worlds held by a list (`no_record_fixes_next_finite`), and P49's `Web.tail_unrefuted` is the same law for level histories. For every learner a course answers each of its claims against it, so on that course it rests at no step (`diagonal_refutes`, `diagonal_unrested`). That course registers a law keeping its record, a world no list holds (`diagonal_open`).
+- **Learning by refutation.** A learner holds hypotheses in order and moves on exactly where the one held is refuted (`indexOn`, `learner`). It never passes a hypothesis that holds, so it is refuted at most that hypothesis's place and not at arbitrarily late steps (`index_le_of_holds`, `refutations_not_recurring`). Every hypothesis it passed was refuted on the record (`refuted_before`).
+- **Learning in a world held by a list.** Under a determined law whose orbit is held by a list `l`, every registration repeats from some step (a lasso, `lasso_of_held`). Every lasso is the registration of such a world (`lasso_realized`). Over the lasso hypotheses in diagonal order, the learner reads only a registration it can tell apart and knows neither the configurations nor how many there are. It is refuted fewer than `tri l.length` times, claims at every step from `l.length` on and is not refuted at arbitrarily late steps (`held_learner_bounded`, `lasso_learner_bounded`). That it comes to rest is unrefuted, a double negation, and the names say so under the integrator's rule (`held_rest_unrefuted`, `rest_unrefuted`). It rests only on lassos (`lasso_of_rest`). The step at which it rests is not stated, and its record never shows that it has come to rest: given two values, every claim it makes is refuted, at that step, on a course of a world held by a list sharing its record (`no_record_fixes_next_finite`). With the list's length known, P83's two-period lemma appears to bound the step (a sketch, not checked here); that is left to P83. In `Alternate` it is refuted twice and right from the third step, at the bound.
+- **The meta level.** Learning over classes is the same refutation over one merged enumeration, with the bound composed (`merged`, `merged_bound`). However the classes are merged, the learner has its answering course: there is no top (`merged_unrested`).
+- **When a model of what does not matter is right.** A model lumps together the differences it treats as irrelevant. Within the functions that go alike across a lumping (`Lumped`), finite data fix the value at an untried input exactly where it is lumped with an observed one (`determines_lumped_iff`). The value carried over is right exactly where the world takes one value at the two (`lumped_right_iff`, `lumped_world_right`). For a law of change, an observed outcome transfers exactly where the two configurations go alike by the move (`transfer_right_iff`). The class of every function is free at every untried input, so data alone fix nothing there (`every_free`, `every_determines_nothing`). A free class determines only what its members share (`free_determines_iff`).
+- **Structure and change are one lumping.** A determined law goes alike under `π` exactly where its next configuration, read through `π`, goes alike across what `π` lumps (`goAlike_iff_lumped`). P66's carrying a law and generalization through a lumping are one condition.
+- **Training is selection through the data.** A loss computed from the values on the data, and every choice made from it, select alike what agrees on the data (`Training.loss_through`). P64's selection through registration is a selection through registering alike (`Training.web_selectsThrough_iff`). Within a class free beyond the data, every such selection leaves the untried value as free as the class leaves it (`Training.unselected_beyond_data`). A fit is right beyond the data, for every world in the class, exactly where the class determines it (`Training.fit_right_iff`).
+- **The earlier models on the spine (P74).**
+  - Within the uniform law family with distinguishable primitive effects, the three encounters of the acquisition chain determine every expression, encountered or not (`uniform_determines`). Admitting the earlier nonuniform law, they determine nothing at the novel expression (`nonuniform_not_determined`).
+  - Hebbian development is P66's `adaptive` system, and activity has a law of its own exactly where the weights make no difference to its step (`hebbian_activity_law_iff`). In the three-unit memory the weights do make a difference, so activity alone has no law there (`hebbian_no_activity_law`).
+  - The route of updating is the rule one level up (`updating_network_law_iff`). The two routes differ at the start (`route_matters`), so the network alone has no law there. The responsive route learns exactly where the task fails (`responsive_learns`).
+
+**Readings.** 理 is Ren's reading. The rest are the AI's, pending Ren:
+- Reading a lumping as a model of structure, and a lumping the step goes alike across as a model of change, is the AI's reading of the formal terms.
+- Induction is resolved into laws rather than certified.
+- The uniformity of nature is not a premise. It is the local condition of a law: the world goes alike across what the model lumps.
+- Hume's problem sits at `no_record_fixes_next`. Goodman's new riddle is the question of which lumping. A finite form of "no free lunch" is `every_determines_nothing`.
+- For a trained network the class is what training can reach, and explaining generalization is identifying the lumping that architecture and updates impose, not the loss.
+- The meta level is learning again, with no top.
+
+**Counterreview.** The author's counterreview in section 92 credits the learning-theory literature: Putnam's diagonal (1963), identification in the limit (Gold 1967, Putnam 1965), Kelly (1996), and Wolpert (1996). The increment is the integration on the spine, not the theorems' novelty. Further points:
+- The positive results need a world held by a list, a registration that tells values apart (decidable equality, each use classified in the [decidability inventory](DECIDABILITY-INVENTORY.md)) and a supplied hypothesis class.
+- Rest is stated under a double negation.
+- The bound `tri N` is coarse.
+- Optimization dynamics, implicit bias and probabilistic (PAC) bounds are not stated.
+- The periphery networks are small models.
+- `goAlike_iff_lumped` is, with `Lumped` unfolded, the statement of P70's `Law.goAlike_process_iff` (`Becoming.Description`, held by another session and landing the same day), with the same proof. The two were written independently. Whichever lands second writes down their identity, as an instance or a note, and does not prove it again. P71's `Becoming.Diagonal` (Lawvere's gap) has the same form as this section's diagonal course, which is the learner's version, built step by step from the record; the relation is likewise written down by whichever lands second.
+
+**Status.** Records added: learning-by-refutation, generalization-through-lumping. Receipts: 20261012T012916.201078Z (Learning 75); periphery receipt 20261012T013048.258651Z (CorrectionInquiry, which imports the root, rechecked); learning-bridge receipt 20261012T014649.248714Z (15 theorems). No independent review yet.
+
+**P75: the root of wisdom as far as Part I reaches.**
+
+Ren's "finish wisdom root" points to the target [wisdom-root](../../../../theories/becoming/results/records/wisdom-root.md): that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope. Section 8.4 of the [main study](CORE-CONSTRAINT-AND-WISDOM.md#8-明确目标证明这是智慧之根--the-root-of-wisdom-objective) names four connections to close. This section matches Part I's checked laws to each of them and adds no Lean: P49, P53, P55, P62, P64 and P66, with P73 and P74 of section 92.
+
+1. **Wisdom to root relations: necessity across representations.** The laws are stated for every learner, lumping, selection and determined law, so no realization keeping the same content escapes them:
+   - **识.** A claim is refuted only through a registered difference, and no record fixes the next value.
+   - **理, in Ren's reading.** Data alone fix no untried value. Generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it. Structure and change are one lumping.
+   - **Testing.** A model is refuted together with its claim. The record fixes an act's outcome only where taken.
+   - **Learning without knowing when.** In every world held by a list the refutations are bounded, that learning comes to rest is unrefuted and when it does is not registered; no learner rests everywhere.
+   - **明.** What one cannot test, another's registration can, and pooled registration selects what one's own misses.
+   - **够.** Seeking rests at enough. "More than now" needs an open world. Two seekers of "above all others" never rest together.
+   - **No runaway.** The distance to a break is unregistered.
+   - **Proxies.** Selection and training go only through the selector's registration or the data.
+   - **Judgment.** A judgment is a common response over belief.
+   - **The meta level.** There is no top.
+
+   This answers half of §8.3's question. The independently stated content of wisdom requires these relations in its formal part, and alternative representations cannot avoid them. Their sufficiency for all wisdom is not shown: Part I says what wisdom cannot lack and how it fails without it, not when a formation is wise.
+2. **Root to formation.** The formal routes are stated:
+   - learning by refutation forms a model from the record, with refutations bounded and coming to rest unrefuted;
+   - the acquisition chain forms an interpretation of every expression from three encounters;
+   - Hebbian development and the route of updating are laws on the joint configuration;
+   - the responsive route learns where the task fails.
+
+   Whether actual humans and AI form understanding and correction this way is correspondence, settled only empirically.
+3. **Warrant.** Unchanged. The ethical direction goes through Part II, where G0 is the theorem of the one axiom (P51). Part I contains no ethical predicate.
+4. **Continuing development.** `merged_unrested` and `diagonal_refutes`: wisdom is never a completed learner, so continuing development is a law, not an added demand. P71, if it lands, strengthens this; it is still scratch evidence and is not counted.
+
+**Result.** The formal part of the target is completed at the scope Part I reaches, in the new record [wisdom-root-part-one](../../../../theories/becoming/results/records/wisdom-root-part-one.md). The target stays open by the registry's rule and, substantively, in three respects:
+- the correspondence of actual formation;
+- the formation of concern and affect;
+- the sufficiency of these relations for all wisdom.
+
+**Readings and counterreview.** 理 is Ren's reading. Matching the laws to 识, 理, testing, 明, 够, no runaway, proxies, judgment and the meta level is the AI's reading, pending Ren; 明 here means only that seeing beyond one's own registration needs another's. The counterreview in section 93 adds:
+- "for every representation" means every learner is bound by these laws, not that the wise hold an explicit model;
+- the table's matching is a reading;
+- the section adds no Lean.
+
+The package now has 2970 theorems and 4334 declaration audits, over a core closure of 59 modules and a package of 57, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T232716.311380Z).

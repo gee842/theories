@@ -44,8 +44,28 @@ Against main with P64–P68 landed (bca9695b; the five modules byte-identical to
   and keep "unrefuted". Rebuilt against main at 5c3b011b (P58b landed): 75 theorems / 112 declarations, every report
   empty, no warnings.
 
-The consolidated checker has not run on them: that is the landing run. A dry run of the bridge checker, against
-stand-in receipts in a scratch worktree, is recorded below once it finishes.
+## Landed
+
+In a worktree of main, after P69 (da8f75a7, §91), rebased onto 5359086d before the copy (the commits between touched
+only the board and other packages' folders):
+
+- consolidated receipt 20261012T012916.201078Z: passed, `Becoming.Learning` 75 theorems, 2970 theorems and 4334
+  declaration audits over 57 package modules (core closure 59), every core axiom report empty, 12 Lean steps run;
+- `CorrectionInquiry` receipt 20261012T013048.258651Z: passed (it imports the root);
+- learning-bridge receipt 20261012T014649.248714Z: passed, 15 theorems / 19 declarations, the six acquisition
+  declarations empty, the network ones only Mathlib's three standard axioms, 42 inherited modules;
+- decidability inventory regenerated (`inventory_edit.py`): 153 statements depending on decidedness (63 count, 90
+  built by deciding: 19 through the learner, 1 through `swapTo`), 88 proof-only (51 find, 25 tell same from
+  different, 8, 3, 1); `eq_of_not_refuted` became visible once the skip list was narrowed; P80's `inventory_edit.py`
+  and `zero_count.py` were run on the result in scratch and still apply;
+- study §92 (P73, P74) and §93 (P75); records learning-by-refutation, generalization-through-lumping,
+  wisdom-root-part-one; six advanced; 78 re-pointed; the two chapters' reading entries reread against this
+  landing's diff and their hashes refreshed (`reading_entries.py`);
+- `research.py check`, the Lean and reading catalogue checks and the session map check passed; the generative-chain
+  check reports the same five unversioned-source errors as main without this landing; links on added lines: 391,
+  none bad.
+
+`land.sh` reruns every step after the checkers.
 
 ## Contents
 
@@ -69,6 +89,15 @@ stand-in receipts in a scratch worktree, is recorded below once it finishes.
   and history for wisdom-root, testing-within-registration, experiment-needs-return, projection-carrying-a-law,
   selection-through-registration and scientific-inquiry-foundation, each with the text it was written against.
 - `apply_docs.py`, `make_records.py`, `repoint.py`.
+- `inventory_edit.py`: `edit` classifies Learning's decidability uses in `DECIDABILITY-INVENTORY.py` (the learner and
+  `swapTo` as constructions in statements; `determines_lumped_iff` finds, four proofs tell values or inputs apart) and
+  narrows the Lean side's skip list, which dropped every name beginning with `eq_` and so hid
+  `Learning.eq_of_not_refuted` (it now skips only `eq_def`, `eq_unfold` and `eq_` followed by digits; no other core
+  declaration so far named `eq_…` takes a decidability family); `zero` updates the zero-premise plan's sentence from the
+  regenerated page, the counting/construction split included, and says that the learner's rest theorems depend on it.
+- `reading_entries.py`: the reading-catalogue entries of the two edited chapters (one sentence added to the cognition
+  entry; both hashes refreshed only where the entry was current with the chapter at HEAD).
+- `land.sh W S PLAN_ZH_AFTER PLAN_EN_AFTER`: every step after the three checkers, on P80's pattern.
 
 ## Landing steps
 
@@ -76,7 +105,9 @@ In queue order, after P69 (the integrator's order: P58b, P69, P73, then P70–P7
 
 1. Copy the module, the bridge and its checker; `python3 -B root_edits.py ROOT core`.
 2. Run the consolidated checker once; then `check_correction_inquiry.py` (it imports the root); then
-   `check_learning_correspondence.py` (with a longer `LEAN_TIMEOUT`, e.g. 3600, on a loaded machine).
+   `check_learning_correspondence.py` (with a longer `LEAN_TIMEOUT`, e.g. 3600, on a loaded machine). After the core
+   run: `python3 -B inventory_edit.py ROOT edit`, `python3 -B DECIDABILITY-INVENTORY.py` (in the root-foundation
+   folder), `python3 -B inventory_edit.py ROOT zero`.
 3. `python3 -B apply_docs.py ROOT S PLAN_ZH_AFTER PLAN_EN_AFTER`. `S` is the next free study section (P73 takes `S`,
    P75 `S+1`). The plan prefixes are the row and bullet these go after: after P69 lands, P69's; on bca9695b,
    `'| P67 吸引'` and `'- **P67:**'`.
@@ -84,7 +115,7 @@ In queue order, after P69 (the integrator's order: P58b, P69, P73, then P70–P7
    `python3 -B root_edits.py ROOT readmes`.
 5. `make research-render`, `make research-check`; commit only these changes; mark the board.
 
-## Dry run
+## Dry run (before landing)
 
 On a worktree of main at 6b9514a6 (P58b landed as §90, P69 not yet), with `S` = 91, the plan prefixes
 `'| P58b P58 的确切名称'` and `'- **P58b:**'`, and stand-in receipts (the core receipt adds Learning, 75 theorems by the

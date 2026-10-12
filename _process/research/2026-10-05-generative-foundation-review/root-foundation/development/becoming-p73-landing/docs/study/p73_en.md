@@ -20,7 +20,7 @@
 - The meta level is learning again, with no top.
 
 **Counterreview.** The author's counterreview in section {S} credits the learning-theory literature: Putnam's diagonal (1963), identification in the limit (Gold 1967, Putnam 1965), Kelly (1996), and Wolpert (1996). The increment is the integration on the spine, not the theorems' novelty. Further points:
-- The positive results need a world held by a list, a registration that tells values apart and a supplied hypothesis class.
+- The positive results need a world held by a list, a registration that tells values apart (decidable equality, each use classified in the [decidability inventory](DECIDABILITY-INVENTORY.md)) and a supplied hypothesis class.
 - Rest is stated under a double negation.
 - The bound `tri N` is coarse.
 - Optimization dynamics, implicit bias and probabilistic (PAC) bounds are not stated.

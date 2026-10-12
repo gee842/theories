@@ -16,13 +16,13 @@ A bounded map of outcomes retrieved from 44 repository chats, with canonical reu
 
 ## 清点范围 Inventory scope
 
-Snapshot UTC: `2026-10-12T01:21:53.874453+00:00`. Paths are documentary units, not independent theorems.
+Snapshot UTC: `2026-10-12T02:04:48.304026+00:00`. Paths are documentary units, not independent theorems.
 
 | Item / 项目 | Count / 数量 |
 |---|---:|
 | Mapped chats / 已映射会话 | 44 |
 | Result families / 成果族 | 14 |
-| Working Lean sources / 工作源码 | 611 |
+| Working Lean sources / 工作源码 | 613 |
 | Audit drivers / 审计入口 | 14 |
 | Saved verification or build copies / 检查及构建副本 | not listed; bound by their receipts / 不列入，由回执绑定 |
 | Exact duplicate groups among working sources and audit drivers / 当前源及审计入口相同字节组 | 0 |
@@ -274,7 +274,7 @@ Finite-basis joint interpretation, potentialist truth and resource-sensitive rul
 
 **Scope still separate / 保留范围:** These results do not derive the metalogic or actual universal admission from no premises.
 
-**Migrated records / 已迁移条目:** [binding-preserving-substitution](records/binding-preserving-substitution.md) · [causal-models-as-processes](records/causal-models-as-processes.md) · [constitutive-binding-assessment](records/constitutive-binding-assessment.md) · [derivation-soundness](records/derivation-soundness.md) · [experiment-needs-return](records/experiment-needs-return.md) · [finite-basis-common-interpretation](records/finite-basis-common-interpretation.md) · [finite-fallible-inquiry-necessity](records/finite-fallible-inquiry-necessity.md) · [projection-carrying-a-law](records/projection-carrying-a-law.md) · [scientific-inquiry-foundation](records/scientific-inquiry-foundation.md)
+**Migrated records / 已迁移条目:** [binding-preserving-substitution](records/binding-preserving-substitution.md) · [causal-models-as-processes](records/causal-models-as-processes.md) · [constitutive-binding-assessment](records/constitutive-binding-assessment.md) · [derivation-soundness](records/derivation-soundness.md) · [experiment-needs-return](records/experiment-needs-return.md) · [finite-basis-common-interpretation](records/finite-basis-common-interpretation.md) · [finite-fallible-inquiry-necessity](records/finite-fallible-inquiry-necessity.md) · [generalization-through-lumping](records/generalization-through-lumping.md) · [learning-by-refutation](records/learning-by-refutation.md) · [projection-carrying-a-law](records/projection-carrying-a-law.md) · [scientific-inquiry-foundation](records/scientific-inquiry-foundation.md) · [wisdom-root-part-one](records/wisdom-root-part-one.md)
 
 <a id="f12"></a>
 

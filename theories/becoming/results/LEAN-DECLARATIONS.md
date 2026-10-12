@@ -8,7 +8,7 @@
 
 | 方向 / Topic | 模块／审计入口 / Entries | theorem/lemma 位置 / Occurrences |
 |---|---:|---:|
-| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 133 | 2,238 |
+| [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 134 | 2,253 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
 | [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 191 | 4,797 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 192 | 4,872 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -357,6 +357,8 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [KitchenTransitions.lean](lean-declarations/ethics.md#module-74df76c70b6e) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [KnowledgeCorrespondence.lean](lean-declarations/inquiry.md#module-3c2658ad7582) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [LearnedProcedureTransmission.lean](lean-declarations/ethics.md#module-314ffd0b4f8a) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [Learning.lean](lean-declarations/core.md#module-d65f42130cd4) | 生成核心与关系结构 / Generative core and relational structure |
+| [LearningCorrespondence.lean](lean-declarations/ethics.md#module-2aadf9f9573e) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LegacyReconciliation.lean](lean-declarations/other.md#module-b662dec55785) | 其他形式研究 / Other formal studies |
 | [LifecycleCorrespondence.lean](lean-declarations/ethics.md#module-5beb4a64d4f6) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [LineageAudit.lean](lean-declarations/valuation.md#module-7d1b924b40d2) | 评价的形成与良知 / Valuation development and liangzhi |

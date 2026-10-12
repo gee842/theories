@@ -28,7 +28,7 @@ Delta: 记录与否证：record、back、back_record、Refuted、RefutedAt、Hol
        updating_determined、updating_network_law_iff、responsive_kept、responsive_learns、route_matters、
        updating_no_network_law
 Supplied premises / correspondence: 不加公理；每条规律的条件写在定理之中：值可判定相等（DecidableEq，按否证学习与
-       判定归并处）；有两个不同的值（no_record_fixes_next、determines_lumped_iff、every_determines_nothing）；
+       判定归并处；逐条分类见[可判定性清点](DECIDABILITY-INVENTORY.md)）；有两个不同的值（no_record_fixes_next、determines_lumped_iff、every_determines_nothing）；
        other 移动每个值（对角）；世界的配置被一个列表所持（held_learner_bounded、held_rest_unrefuted）；假设、类与归并由学习之外给出；
        外围中语法、探针、任务、剖面、常数与路线取自既有模块，保持其原有范围；读法除理（Ren 的）之外是 AI 的，待 Ren
 Evidence: 合并检查器回执 {RECEIPT}（Becoming.Learning {N_MODULE} 项定理，全部源声明公理报告为空）；外围桥接 CorrectionInquiry

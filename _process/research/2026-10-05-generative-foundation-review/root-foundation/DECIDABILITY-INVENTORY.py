@@ -101,6 +101,9 @@ FORMS = {
     'Law.none_drawn_lossless': '`Law.none_drawn_merges_nothing`（不判定 / no decision, P67）',
     'Law.lossless_iff_none_drawn': '`Law.Lossless.not_drawn`、`Law.none_drawn_merges_nothing`（不判定 / no decision, P67）',
     'Web.scores_alike_iff': '`Web.selects_alike_iff`（选择而非分数，不判定 / selections rather than scores, no decision, P64）',
+    'Learning.claim_refuted_on_one': '`Learning.no_record_fixes_next`（无前提：主张不在两者上都对 / no premise: the claim is '
+                                     'not right on both, P73）',
+    'Learning.determines_lumped_iff': '`Learning.lumped_determines`（无前提的一个方向 / one direction, no premise, P73）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -111,6 +114,7 @@ CONSTRUCTIONS = {
     'Flow.sample': 'coarse', 'World.sample': 'coarse', 'Flow.unionPresent': 'coarse', 'gate': 'coarse',
     'gateBy': 'coarse', 'Tower.web': 'coarse', 'Tower.flow': 'coarse', 'Tower.reads': 'coarse',
     'Tower.refine': 'coarse', 'Web.raise': 'raise', 'Web.redirect': 'redirect', 'keep': 'keep', 'insertNew': 'once',
+    'Learning.learner': 'refute', 'Learning.index': 'refute', 'Learning.swapTo': 'other',
     'adjoin': 'once',
 }
 MENT_REASON = {
@@ -121,12 +125,17 @@ MENT_REASON = {
     'raise': '抬高一个条件：需分辨条件的相同 / one condition raised: tells conditions apart',
     'redirect': '在不被支持之步移开依存：支持已定 / dependence moved at unsupported steps: support decided',
     'keep': '按规定保留的列表：对其成员已定 / a list kept by a determination: decided of its members',
+    'refute': '按否证学习：学习者保留一个假设直到它的主张被否证，需分辨值的相同 / learning by refutation: the learner '
+              'keeps a hypothesis until its claim is refuted, which tells values apart',
+    'other': '另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells '
+             'values apart',
     'once': '不重复的列表：成员关系已定 / a list without repetition: membership decided',
 }
 LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
     'redirect': '移开依存 / dependence moved', 'keep': '保留的列表 / a kept list',
-    'once': '不重复的列表 / a list without repetition', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
+    'once': '不重复的列表 / a list without repetition', 'refute': '按否证学习 / learning by refutation',
+    'other': '另一个值 / another value', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
     'indicate': '造出指示 / builds an indicator',
 }
@@ -136,8 +145,9 @@ PROOF_REASON = {
             'asserts one exists, which without decidedness is only not refuted',
     'build': '造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from '
              'decided members',
-    'same': '分辨相同：证明按两个条件或关系项是否相同、或条件是否在家族中分情形 / tells same from different: the proof '
-            'splits on whether two conditions or relata are the same, or a condition is in a family',
+    'same': '分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: '
+            'the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a '
+            'family',
     'split': '按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its '
              'failing case',
     'indicate': '造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the '
@@ -160,12 +170,15 @@ PROOF_KIND = {
         'Web.ceasing_of_arising', 'Web.unceasing_iff_bounded', 'Web.unceasing_of_growth', 'came_between',
         'came_between_from', 'search', 'Web.sample_arises', 'Web.sample_ceases', 'Web.sample_ceasing',
         'Web.sample_unceasing', 'arises_within', 'ceases_within', 'World.arising_iff_ceasing',
-        'World.arising_iff_ceasing_covering', 'ceasing_step', 'Frame.claims_recur_iff']},
+        'World.arising_iff_ceasing_covering', 'ceasing_step', 'Frame.claims_recur_iff',
+        'Learning.determines_lumped_iff']},
     **{n: 'build' for n in [
         'Flow.Enclosed.around', 'Flow.Enclosed.aroundStanding', 'World.Finite.countedWithin', 'World.Finite.counted',
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',
         'Flow.sample_comesToStand_iff']},
     **{n: 'same' for n in [
+        'Learning.claim_refuted_on_one', 'Learning.eq_of_not_refuted', 'Learning.every_free',
+        'Learning.every_determines_nothing',
         'Flow.fed_from_beyond', 'Flow.fed_from_beyond_from', 'Flow.fed_of_not_inward', 'Flow.inward_iff_not_fed',
         'Flow.inward_of_not_fed', 'Flow.rising_fed_from_beyond', 'Flow.rising_fed_from_beyond_from',
         'Web.generation_fed_from_beyond', 'forces_iff_noSplit', 'Flow.exchangeFollows_of_policy',

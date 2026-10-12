@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1081,6 +1081,26 @@ SCOPE = (
     "flow reaching beyond the registration closure to raise a gauged store is selected, alike with "
     "raising it without reaching beyond; selection supplying the carriers, their share rises among "
     "descendants. "
+    "Learning: given two values, two courses share the record before any step and differ at it, also "
+    "among worlds held by a list, so a claim from the record is not right on both and, with values "
+    "decided, is refuted on one; for every learner and every map moving each value the diagonal "
+    "course refutes each of its claims, is the registration of a law keeping its record and has no "
+    "list holding that law's configurations; learning by refutation over hypotheses in order never "
+    "passes one that holds, is then not refuted at arbitrarily late steps, and passes only refuted "
+    "hypotheses; every registration of an orbit held by a list l is a lasso within l.length, on it "
+    "the learner over the lassos in diagonal order is refuted fewer than tri l.length times and "
+    "claims at every step from step l.length on, its coming to rest unrefuted, and its diagonal "
+    "course is no lasso; over classes merged along the pairs the index is bounded where a member "
+    "of a class holds, and every merging is unrested on its diagonal course; the class of functions "
+    "going alike across a lumping is determined at an input lumped with an observed one, and with "
+    "two values, listed data and decided equality exactly there; a member fitting the world on the "
+    "data is right at an input lumped with an observed one exactly where the world takes one value "
+    "at the two; the class of every function fixes no unobserved value; a determined law goes alike "
+    "under a projection exactly when the projection of its step goes alike across it, and an "
+    "observed outcome transfers exactly where the configurations go alike; a loss computed on the "
+    "data selects through agreement on the data, within a class free at an input every selection "
+    "through the data leaves every value there selected, and every member fitting a world of the "
+    "class is right at an input exactly where the data determine it. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "

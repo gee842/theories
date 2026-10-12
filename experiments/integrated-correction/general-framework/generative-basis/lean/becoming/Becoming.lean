@@ -52,6 +52,7 @@ import Becoming.Testing
 import Becoming.Runaway
 import Becoming.Response
 import Becoming.Selection
+import Becoming.Learning
 
 /-!
 # The Theory of Becoming: the formal core
@@ -558,6 +559,17 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   beyond the selector's registration closure is not selected, while pooled registration selects
   it; where reaching beyond raises what registers, selection favours it. The readings are the
   AI's, pending Ren.
+* `Becoming.Learning` (L4): no record fixes the next value: two courses share any record and
+  differ at its next step, also among worlds held by a list, and for every learner a course
+  refutes each of its claims, the registration of a law keeping its record, so open. Learning by
+  refutation never passes a hypothesis that holds; where a list holds the world the lasso learner
+  is refuted a bounded number of times, its coming to rest is unrefuted, and when it rests is not
+  registered; learning over classes is the same learning over a merged enumeration. A lumping
+  determines exactly the inputs it lumps with the data and is right exactly where the world goes
+  alike across it; structure and change are one lumping; the class of every function fixes no
+  untried value; training selects through the data, and its fit is right beyond them exactly
+  where the class is determined there. 理 is read as Ren reads it, the modeling of the laws of
+  structure and of change; the other readings are the AI's, pending Ren.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

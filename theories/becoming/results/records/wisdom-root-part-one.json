@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "id": "wisdom-root-part-one",
+  "title": {
+    "zh": "智慧之根在第一部分：识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的规律对每个学习者与每个表示成立，不用公理",
+    "en": "The root of wisdom in Part I: the laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every learner and every representation, with no axiom"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-12T01:47:53+00:00",
+  "claim": {
+    "zh": "目标 wisdom-root（核心揭示智慧不可缺少的构成关系，并解释其形成、成立与失败）的形式部分，在第一部分所及范围内完成：下列已检查的规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，各自的条件写在定理中，所以保留相同内容的任何表示都避不开它们。识：主张只经所识的差别被否证（Web.Refutes.not_of_alike），无记录固定下一个（Web.tail_unrefuted、no_record_fixes_next）。理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值（every_determines_nothing），推广恰在归并之处、正确恰在世界经归并同去之处（determines_lumped_iff、lumped_right_iff），结构与变化是同一个归并（goAlike_iff_lumped），投影恰在相同者同去时承载规律（carries_law_iff）。检验：相对于模型的否证是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction），记录只在取过之处固定动作的结果（Run.not_fixes_of_untaken），重复是返回（Run.fixes_on_return），一次场合代表经模型相同的类（Run.generalizes）。学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止（held_learner_bounded、held_rest_unrefuted、no_record_fixes_next_finite），每个学习者都有否证它每个主张的开放的序列（diagonal_refutes、diagonal_open）。明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的（Clearing.tested_by_dweller、Clearing.pooled），经识的选择在识闭包之外不见，合起来的识选出它（Flow.unselected_beyond_registration、Clearing.selected_pooled）。够：寻求恰在到达律所不变、满足其目标的状态时静止（Law.rests_iff），“比现在更多”需要开放的世界（more_needs_open），“高于一切他者”的两个寻求者从不同时静止（Law.aboveAll_never_rests）。失控：断裂之前断裂还有多远不被识（Web.break_not_bounded），观察储量则识之（Web.observed_raise_registers）。代理：选择与训练只经选择者之识或数据（Web.selects_alike_iff、Training.loss_through），数据之外的值与类同样自由（Training.unselected_beyond_data），伸出识闭包之外而抬高所识者被选中（Diversion.favours）。判断：由识作出的判断恰是判断过程在信念上的共同回应（commonResponse_judge_iff、Web.belief_judge_iff）。元层次：对类的学习是合并枚举上的同一学习（merged_bound），每种合并都有其对角序列（merged_unrested），改变自身规则的系统的规律在联合配置上（adaptive_state_law_iff）。形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释（uniform_determines），Hebb 式发展与更新路线是联合配置上的律（hebbian_activity_law_iff、updating_network_law_iff），回应路线在失败处学习（responsive_learns）。",
+    "en": "The formal part of the target wisdom-root (that the core reveals the relations indispensable to wisdom and explains their formation, warrant and failure) is completed at the scope Part I reaches: the following checked laws are each stated for every formation, learner, lumping, selection or determined law, with no axiom and their conditions written into the theorems, so no representation keeping the same content escapes them. Registration: a claim is refuted only through a registered difference (Web.Refutes.not_of_alike), and no record fixes the next value (Web.tail_unrefuted, no_record_fixes_next). 理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value (every_determines_nothing), generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it (determines_lumped_iff, lumped_right_iff), structure and change are one lumping (goAlike_iff_lumped), and a projection carries a law exactly where configurations alike go alike (carries_law_iff). Testing: refutation relative to a model refutes the model and the claim together (Web.refutesWithin_iff_conjunction), the record fixes an act's outcome only where taken (Run.not_fixes_of_untaken), replication is return (Run.fixes_on_return), and one occasion stands for its class under the model (Run.generalizes). Learning: in a world held by a list learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest (held_learner_bounded, held_rest_unrefuted, no_record_fixes_next_finite), and every learner has an open course refuting each of its claims (diagonal_refutes, diagonal_open). 明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone (Clearing.tested_by_dweller, Clearing.pooled); selection through registration is blind beyond the registration closure and pooled registration selects what it misses (Flow.unselected_beyond_registration, Clearing.selected_pooled). Enough: seeking rests exactly at a state the law leaves unchanged that meets its target (Law.rests_iff), “more than now” needs an open world (more_needs_open), and two seekers of “above all others” never rest together (Law.aboveAll_never_rests). Runaway: before the break, how far it is does not register (Web.break_not_bounded), while observing the stock registers it (Web.observed_raise_registers). Proxies: selection and training go only through the selector's registration or the data (Web.selects_alike_iff, Training.loss_through), values beyond the data stay as free as the class leaves them (Training.unselected_beyond_data), and reaching beyond the registration closure to raise what registers is selected (Diversion.favours). Judgment: a judgment from registration is exactly a common response of the judging process over the belief (commonResponse_judge_iff, Web.belief_judge_iff). The meta level: learning over classes is the same learning over a merged enumeration (merged_bound), every merging has its diagonal course (merged_unrested), and a system changing its own rule has its law on the joint configuration (adaptive_state_law_iff). The formal routes of formation: learning by refutation forms a model from the record, the acquisition chain forms an interpretation of every expression from three encounters (uniform_determines), Hebbian development and the route of updating are laws on the joint configuration (hebbian_activity_law_iff, updating_network_law_iff), and the responsive route learns where the task fails (responsive_learns)."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加公理，不加前提；各规律的条件保持在其定理中（平衡只在所用之处、其余交换固定、值可判定、世界被列表所持等），见各自的记录。",
+      "en": "No axiom and no premise is added; each law's conditions stay in its theorems (balance only where used, the rest of the exchange fixed, decided values, a world held by a list and so on), as in the respective records."
+    },
+    {
+      "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余待 Ren；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
+      "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, 理 being Ren's and the rest pending Ren; 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 2026-10-12：“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”。AI 读作：在核心所能到达的范围内完成 wisdom-root，只有对实际形成的对应才能决定的明示为此。主研究 §8.4 的四条连接中，第一条（跨表示的必要性）与第二条（形成）的形式部分由本记录完成，第三条（判断的伦理正当性）走第二部分，不变，第四条（持续展开）由 merged_unrested 与 diagonal_refutes 读出。",
+    "en": "Ren, 12 October 2026: “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”. The AI reads it as completing wisdom-root at the scope the core can reach, marking what only correspondence to actual formations can settle. Of the four connections in section 8.4 of the main study, the formal parts of the first (necessity across representations) and the second (formation) are completed by this record; the third (ethical warrant of judgment) goes through Part II, unchanged; the fourth (continuing development) is read off merged_unrested and diagonal_refutes."
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+  "aliases": [
+    "root of wisdom, Part I",
+    "智慧之根（第一部分）"
+  ],
+  "dependencies": [
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "识、否证与他者之识（明）的规律。",
+        "en": "The laws of registration, refutation and others' registration (明)."
+      },
+      "interface": {
+        "output": {
+          "zh": "主张只经所识的差别被否证；检验是关系的；由识作出的判断是信念上的共同回应。",
+          "en": "A claim is refuted only through a registered difference; testing is relational; a judgment from registration is a common response over belief."
+        },
+        "input": {
+          "zh": "智慧的识、检验、明与判断各面。",
+          "en": "The registration, testing, 明 and judgment aspects of wisdom."
+        },
+        "conditions": {
+          "zh": "平衡只在被识的条件上逐步假设；回应的假设是给出的。",
+          "en": "Balance assumed only on the conditions registered, step by step; response hypotheses supplied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
+      }
+    },
+    {
+      "id": "learning-by-refutation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "归纳、学习与元层次的规律。",
+        "en": "The laws of induction, learning and the meta level."
+      },
+      "interface": {
+        "output": {
+          "zh": "无记录固定下一个；对角；按否证学习的否证有界、静止不能被否证；合并枚举。",
+          "en": "No record fixes the next value; the diagonal; learning by refutation bounded, its rest unrefuted; the merged enumeration."
+        },
+        "input": {
+          "zh": "智慧的学习与元层次两面；持续展开。",
+          "en": "The learning and meta-level aspects of wisdom; continuing development."
+        },
+        "conditions": {
+          "zh": "值可判定；世界被列表所持（正面结果）。",
+          "en": "Decided values; a world held by a list (for the positive results)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "理（Ren 的读法）、推广与训练的规律。",
+        "en": "The laws of 理 (Ren's reading), generalization and training."
+      },
+      "interface": {
+        "output": {
+          "zh": "推广恰在归并之处、正确恰在世界经归并同去之处；结构与变化是同一个归并；训练经数据选择。",
+          "en": "Generalization exactly where a lumping lumps, right exactly where the world goes alike across it; structure and change one lumping; training selects through the data."
+        },
+        "input": {
+          "zh": "智慧的理与代理两面；形成的形式路线。",
+          "en": "The 理 and proxy aspects of wisdom; the formal routes of formation."
+        },
+        "conditions": {
+          "zh": "类、数据与归并是给出的。",
+          "en": "Class, data and lumping supplied."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "experiment-needs-return",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "实验与检验的规律。",
+        "en": "The laws of experiment and testing."
+      },
+      "interface": {
+        "output": {
+          "zh": "记录只在取过之处固定动作的结果；重复是返回；实验需要关于何者无关的模型。",
+          "en": "The record fixes an act's outcome only where taken; replication is return; experiment needs a model of what is irrelevant."
+        },
+        "input": {
+          "zh": "智慧的检验一面。",
+          "en": "The testing aspect of wisdom."
+        },
+        "conditions": {
+          "zh": "相对于确定性。",
+          "en": "Relative to determinacy."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean"
+      }
+    },
+    {
+      "id": "seeking-boundary",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "够的规律。",
+        "en": "The laws of enough."
+      },
+      "interface": {
+        "output": {
+          "zh": "寻求恰在够处静止；“比现在更多”需要开放；“高于一切他者”不同时满足两个寻求者。",
+          "en": "Seeking rests exactly at enough; “more than now” needs openness; “above all others” never meets two seekers at once."
+        },
+        "input": {
+          "zh": "智慧的够一面。",
+          "en": "The enough aspect of wisdom."
+        },
+        "conditions": {
+          "zh": "确定的律；目标由展开之中给出。",
+          "en": "A determined law; the target given within the unfolding."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean"
+      }
+    },
+    {
+      "id": "runaway-distance-unregistered",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "失控的规律。",
+        "en": "The laws of runaway."
+      },
+      "interface": {
+        "output": {
+          "zh": "断裂还有多远不被自身之识识；观察储量则识之。",
+          "en": "How far the break is does not register through one's own registration; observing the stock registers it."
+        },
+        "input": {
+          "zh": "智慧的不失控一面。",
+          "en": "The no-runaway aspect of wisdom."
+        },
+        "conditions": {
+          "zh": "经识的策略，其余固定。",
+          "en": "A policy through registration, the rest fixed."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean"
+      }
+    },
+    {
+      "id": "selection-through-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "经识的选择与代理的规律。",
+        "en": "The laws of selection through registration and of proxies."
+      },
+      "interface": {
+        "output": {
+          "zh": "经识的选择恰及选择者所识；在识闭包之外不见；合起来的识选出缺口中的终结。",
+          "en": "Selection through registration reaches exactly what the selector registers; blind beyond the registration closure; pooled registration selects the ending in the gap."
+        },
+        "input": {
+          "zh": "智慧的明与代理两面。",
+          "en": "The 明 and proxy aspects of wisdom."
+        },
+        "conditions": {
+          "zh": "其余交换固定（不见处）。",
+          "en": "The rest of the exchange fixed (for the blindness)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "机制与改变自身规则的系统的规律。",
+        "en": "The laws of mechanism and of systems changing their own rule."
+      },
+      "interface": {
+        "output": {
+          "zh": "投影恰在相同者同去时承载规律；状态恰在规则不造成差别之处有自己的规律。",
+          "en": "A projection carries a law exactly where configurations alike go alike; the state has a law of its own exactly where the rule makes no difference."
+        },
+        "input": {
+          "zh": "智慧的理与元层次两面。",
+          "en": "The 理 and meta-level aspects of wisdom."
+        },
+        "conditions": {
+          "zh": "不加前提。",
+          "en": "No premise."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "wisdom-root",
+      "detail": {
+        "zh": "本记录完成该目标的形式部分；目标按登记规则仍为目标，其开放部分是实际形成的对应、关切与情感的形成，以及这组关系对全部智慧的充分性。",
+        "en": "This record completes the target's formal part; the target stays a target by the registry's rule, its open part being the correspondence of actual formation, the formation of concern and affect, and the sufficiency of these relations for all wisdom."
+      }
+    },
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "zh": "判断的伦理正当性走第二部分（G0 为那一条公理的定理），本记录不改变它，也不含伦理谓词。",
+        "en": "The ethical warrant of judgment goes through Part II (G0 a theorem of the one axiom); this record does not change it and contains no ethical predicate."
+      }
+    },
+    {
+      "id": "target-capture",
+      "detail": {
+        "zh": "目标被劫持的规律（份额上升、重新吸收）是够一面的另一侧。",
+        "en": "The laws of target capture (the share rising, re-absorption) are the other side of the enough aspect."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "detail": {
+        "zh": "第 8.2 节：共同受约束不等于已说明智慧；本记录说出智慧不能缺少什么、缺少时怎样失败，不说出一个形成何时有智慧，所以不把必要的形式部分升级为充分的定义。",
+        "en": "Section 8.2: being jointly constrained does not explain wisdom; this record says what wisdom cannot lack and how it fails without it, not when a formation is wise, so it does not upgrade the necessary formal part into a sufficient definition."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "实际的人与 AI 怎样形成智慧、关切与情感怎样形成、原典中的智慧是否对应这些规律，只有经验对应能决定；这组关系对全部智慧的充分性没有证明；判断的伦理正当性不在第一部分；P71（在其所识之内的识在每一步不完全）尚在暂存证据中，不计入；表中把规律对到智慧各面是读法；本记录不新增 Lean，其新的形式信用只在 learning-by-refutation 与 generalization-through-lumping；不含伦理谓词。",
+    "en": "How actual humans and AI form wisdom, how concern and affect form, and whether the wisdom of primary texts corresponds to these laws can be settled only by empirical correspondence; the sufficiency of these relations for all wisdom is not proved; the ethical warrant of judgment is not in Part I; P71 (a registration within what it registers incomplete at every step) is still scratch evidence and is not counted; matching the laws to aspects of wisdom is a reading; this record adds no Lean, its new formal credit lying only in learning-by-refutation and generalization-through-lumping; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261012T012916.201078Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261012T014649.248714Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
+    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261012T012916.201078Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261012T014649.248714Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
+  },
+  "references": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "review",
+      "sha256": "1b6d92920c4da8d19d4002b49c30a172615f1dc8162e9d24f9e95e93d346db6c",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "8e3d515414ef77f9374facfc04e2211d42a1d01cfe5283f29f9a67d67ace32bd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "09ddc1df49b69cb1258c5dfafdf3647784138d465ecca329fbae65606796d81a",
+      "declarations": [
+        "Becoming.Web.Refutes.not_of_alike",
+        "Becoming.Web.tail_unrefuted",
+        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Clearing.tested_by_dweller",
+        "Becoming.Clearing.pooled",
+        "Becoming.Web.belief_judge_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "role": "proof",
+      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "role": "proof",
+      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "declarations": [
+        "Becoming.Run.not_fixes_of_untaken",
+        "Becoming.Run.fixes_on_return",
+        "Becoming.Run.generalizes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "role": "proof",
+      "sha256": "4c0500e00a67a18c2a0b52254aecda8310f220646ccc58411fe289af9155382e",
+      "declarations": [
+        "Becoming.Web.selects_alike_iff",
+        "Becoming.Flow.unselected_beyond_registration",
+        "Becoming.Clearing.selected_pooled",
+        "Becoming.Diversion.favours"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
+      "role": "proof",
+      "sha256": "230aab49dc985252ed7cb93ec21318c90c9da3ef4e8b917e410f7398d6a882ff",
+      "declarations": [
+        "Becoming.Law.rests_iff",
+        "Becoming.more_needs_open",
+        "Becoming.Law.aboveAll_never_rests"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
+      "role": "proof",
+      "sha256": "a034a3989e458bc599d11e14750a3e10731e800b5e023347ed6fe415afc9bb76",
+      "declarations": [
+        "Becoming.Web.break_not_bounded",
+        "Becoming.Web.observed_raise_registers"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "declarations": [
+        "Becoming.carries_law_iff",
+        "Becoming.adaptive_state_law_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "role": "proof",
+      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "declarations": [
+        "Becoming.Learning.no_record_fixes_next",
+        "Becoming.Learning.every_determines_nothing",
+        "Becoming.Learning.determines_lumped_iff",
+        "Becoming.Learning.lumped_right_iff",
+        "Becoming.Learning.goAlike_iff_lumped",
+        "Becoming.Learning.held_learner_bounded",
+        "Becoming.Learning.held_rest_unrefuted",
+        "Becoming.Learning.no_record_fixes_next_finite",
+        "Becoming.Learning.diagonal_refutes",
+        "Becoming.Learning.diagonal_open",
+        "Becoming.Learning.Training.loss_through",
+        "Becoming.Learning.Training.unselected_beyond_data",
+        "Becoming.Learning.merged_bound",
+        "Becoming.Learning.merged_unrested"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean",
+      "role": "proof",
+      "sha256": "15409ee45ce1be2f3496b6e65185ba182362151a792881a32b5827fa93dba3a9",
+      "declarations": [
+        "Becoming.LearningCorrespondence.uniform_determines",
+        "Becoming.LearningCorrespondence.hebbian_activity_law_iff",
+        "Becoming.LearningCorrespondence.updating_network_law_iff",
+        "Becoming.LearningCorrespondence.responsive_learns"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "b2948df1d0205cd550210c358b142eb5c6d0f64b2c5bb687d6c79fe8153e6d64",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learning-correspondence-verification.json",
+      "role": "receipt",
+      "sha256": "75d2a5632c500b7c05a28ffda18b088a25eb661ccb67f55c536eb7aed9094504",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "role": "integration",
+      "sha256": "c14b6211e0fa47115dfc4eb4305d0a9ad1b027bb8f98cfaacdd3e638e476527d",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
+      "role": "provenance",
+      "sha256": "c648f395f1da2e423e27a2b801e2421550867f71209ac7c63c3aa7fb1f071e1e",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Inquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Selection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Seeking",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Runaway",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearningCorrespondence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learning-correspondence-verification.json",
+      "sha256_pointer": "/source_sha256/LearningCorrespondence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "实际形成的对应：把这些规律对到人类发展与 AI 训练的证据；关切与情感的形成（认知一章的义务）；P71 落地后的元层次；Ren 对智慧各面之读法的判断。",
+    "en": "The correspondence of actual formation: matching these laws to evidence from human development and AI training; the formation of concern and affect (the cognition chapter's obligations); the meta level once P71 lands; Ren's judgment on the reading of the aspects of wisdom."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P75：新增，按 Ren“finish wisdom root”（同一消息）；把第一部分已检查的规律逐条对到目标 wisdom-root 的四条连接，不新增 Lean（工作板 P75）；见整合文档 §93。",
+      "en": "2026-10-12 P75: added, following Ren's ‘finish wisdom root’ (same message); matches Part I's checked laws to the four connections of the target wisdom-root, adding no Lean (work board P75); see §93 of the integration note."
+    }
+  ]
+}

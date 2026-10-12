@@ -1878,6 +1878,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
 
+## generalization-through-lumping ← projection-carrying-a-law
+
+`formal-reuse` — 复用 GoAlike、carries_law_iff、adaptive、adaptive_determined、adaptive_state_law_iff、Run.not_fixesThrough_of_goAlike。增量是把相同者同去读作一个归并：结构与变化是同一个归并（goAlike_iff_lumped），结果转移恰在步骤同去之处（transfer_right_iff）；外围的 Hebb 式发展与更新路线是 adaptive 的实例。 / Reuses GoAlike, carries_law_iff, adaptive, adaptive_determined, adaptive_state_law_iff and Run.not_fixesThrough_of_goAlike. The delta reads going alike as a lumping: structure and change are one lumping (goAlike_iff_lumped), and an outcome transfers exactly where the step goes alike (transfer_right_iff); the periphery's Hebbian development and route of updating are instances of adaptive.
+
+**Producer output / 上游输出:** 投影恰在相同者同去时承载确定的规律；改变自身规则的系统的状态恰在规则不造成差别之处有自己的规律。 / A projection carries a determined law exactly where configurations alike go alike; a system changing its own rule has a state law exactly where the rule makes no difference.
+
+**Consumer input / 下游输入:** 归并的推广何时正确；结构与变化的同一；网络与更新路线的规律。 / When a lumping's generalization is right; structure and change as one; the laws of networks and routes of updating.
+
+**Retained conditions / 保留条件:** 不加前提；transfer_right_iff 设过程确定。 / No premise; transfer_right_iff assumes the process determined.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## generalization-through-lumping ← selection-through-registration
+
+`formal-reuse` — 复用 Web.SelectsThrough 与 Web.RegistersAlikeUpTo：经识的选择是经“识得相同”的选择（Training.web_selectsThrough_iff）。增量是把选择移到训练上：损失经数据选择，数据之外的值与类同样自由。 / Reuses Web.SelectsThrough and Web.RegistersAlikeUpTo: selection through registration is selection through registering alike (Training.web_selectsThrough_iff). The delta carries selection over to training: a loss selects through the data, and values beyond the data stay as free as the class leaves them.
+
+**Producer output / 上游输出:** 两段历史被每个经识的选择选得相同，恰当选择者把它们识得相同。 / Two histories are selected alike by every selection through registration exactly when the selector registers them alike.
+
+**Consumer input / 下游输入:** 训练作为经数据的选择；拟合在数据之外何时正确。 / Training as selection through the data; when a fit is right beyond the data.
+
+**Retained conditions / 保留条件:** 不加前提。 / No premise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
+
 ## generation-is-replenishment ← life-as-condition-of-life
 
 `formal-reuse` — 复用一类关系项的读法、Embodied、SelfBearing 与 Brood；把体现的关系项经由给予而生起推进为“生成即补充”。 / Reuses the one-kind reading, Embodied, SelfBearing and Brood; carries embodied arising through giving on to generation as replenishment.
@@ -2245,6 +2269,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## learned-procedure-transmission ← encounter-selection-and-revision
 
 `interpretive` — 复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。 / Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model.
+
+## learning-by-refutation ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、Law.process、revisits_within（有限多配置之内轨道返回）、unlisted_of_new（每步新的律不被列表所持）、gap_of_le、gap_of_lt、mem_cons_split。增量是把返回读到识上：被列表所持的轨道的识是套索，保留记录之律的识是对角序列。 / Reuses Law.orbit, Law.process, revisits_within (within finitely many configurations the orbit returns), unlisted_of_new (a law new at every step is held by no list), gap_of_le, gap_of_lt and mem_cons_split. The delta reads return off the registration: the registration of an orbit held by a list is a lasso, and the registration of a law keeping its record is the diagonal course.
+
+**Producer output / 上游输出:** 有限多配置之内轨道返回；每步新的律不被列表所持。 / Within finitely many configurations the orbit returns; a law new at every step is held by no list.
+
+**Consumer input / 下游输入:** 被列表所持之世界的识是套索；对角序列的世界开放。 / The registration of a world held by a list is a lasso; the diagonal course's world is open.
+
+**Retained conditions / 保留条件:** 不加前提；确定的律。 / No premise; a determined law.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## learning-by-refutation ← testing-within-registration
+
+`interpretive` — P49 的 Web.tail_unrefuted（没有模型，有限记录不否证关于其后的主张）是水平历史上的同一规律；这里对任意被识的序列陈述（no_record_fixes_next），并给出它的正面一侧：被列表所持的世界中按否证学习否证有界。 / P49's Web.tail_unrefuted (without a model no finite record refutes a claim about what follows) is the same law for level histories; here it is stated for every course (no_record_fixes_next), with its positive side: in a world held by a list learning by refutation is refuted a bounded number of times.
+
+**Producer output / 上游输出:** 主张只经所识的差别被否证；无模型时记录不否证关于其后的主张。 / A claim is refuted only through a registered difference; without a model the record refutes no claim about what follows.
+
+**Consumer input / 下游输入:** 被识的序列上的否证与学习。 / Refutation and learning on a course of registered values.
+
+**Retained conditions / 保留条件:** 识能分辨值（按否证学习处）。 / A registration that tells values apart (for learning by refutation).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
 
 ## levels-of-closure ← feeding-closure
 
@@ -4145,6 +4193,102 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## wisdom-root ← positive-ground-open-futures
 
 `interpretive` — 既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。 / The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission.
+
+## wisdom-root-part-one ← testing-within-registration
+
+`formal-reuse` — 识、否证与他者之识（明）的规律。 / The laws of registration, refutation and others' registration (明).
+
+**Producer output / 上游输出:** 主张只经所识的差别被否证；检验是关系的；由识作出的判断是信念上的共同回应。 / A claim is refuted only through a registered difference; testing is relational; a judgment from registration is a common response over belief.
+
+**Consumer input / 下游输入:** 智慧的识、检验、明与判断各面。 / The registration, testing, 明 and judgment aspects of wisdom.
+
+**Retained conditions / 保留条件:** 平衡只在被识的条件上逐步假设；回应的假设是给出的。 / Balance assumed only on the conditions registered, step by step; response hypotheses supplied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## wisdom-root-part-one ← learning-by-refutation
+
+`formal-reuse` — 归纳、学习与元层次的规律。 / The laws of induction, learning and the meta level.
+
+**Producer output / 上游输出:** 无记录固定下一个；对角；按否证学习的否证有界、静止不能被否证；合并枚举。 / No record fixes the next value; the diagonal; learning by refutation bounded, its rest unrefuted; the merged enumeration.
+
+**Consumer input / 下游输入:** 智慧的学习与元层次两面；持续展开。 / The learning and meta-level aspects of wisdom; continuing development.
+
+**Retained conditions / 保留条件:** 值可判定；世界被列表所持（正面结果）。 / Decided values; a world held by a list (for the positive results).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## wisdom-root-part-one ← generalization-through-lumping
+
+`formal-reuse` — 理（Ren 的读法）、推广与训练的规律。 / The laws of 理 (Ren's reading), generalization and training.
+
+**Producer output / 上游输出:** 推广恰在归并之处、正确恰在世界经归并同去之处；结构与变化是同一个归并；训练经数据选择。 / Generalization exactly where a lumping lumps, right exactly where the world goes alike across it; structure and change one lumping; training selects through the data.
+
+**Consumer input / 下游输入:** 智慧的理与代理两面；形成的形式路线。 / The 理 and proxy aspects of wisdom; the formal routes of formation.
+
+**Retained conditions / 保留条件:** 类、数据与归并是给出的。 / Class, data and lumping supplied.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## wisdom-root-part-one ← experiment-needs-return
+
+`formal-reuse` — 实验与检验的规律。 / The laws of experiment and testing.
+
+**Producer output / 上游输出:** 记录只在取过之处固定动作的结果；重复是返回；实验需要关于何者无关的模型。 / The record fixes an act's outcome only where taken; replication is return; experiment needs a model of what is irrelevant.
+
+**Consumer input / 下游输入:** 智慧的检验一面。 / The testing aspect of wisdom.
+
+**Retained conditions / 保留条件:** 相对于确定性。 / Relative to determinacy.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## wisdom-root-part-one ← seeking-boundary
+
+`formal-reuse` — 够的规律。 / The laws of enough.
+
+**Producer output / 上游输出:** 寻求恰在够处静止；“比现在更多”需要开放；“高于一切他者”不同时满足两个寻求者。 / Seeking rests exactly at enough; “more than now” needs openness; “above all others” never meets two seekers at once.
+
+**Consumer input / 下游输入:** 智慧的够一面。 / The enough aspect of wisdom.
+
+**Retained conditions / 保留条件:** 确定的律；目标由展开之中给出。 / A determined law; the target given within the unfolding.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Seeking.lean)
+
+## wisdom-root-part-one ← runaway-distance-unregistered
+
+`formal-reuse` — 失控的规律。 / The laws of runaway.
+
+**Producer output / 上游输出:** 断裂还有多远不被自身之识识；观察储量则识之。 / How far the break is does not register through one's own registration; observing the stock registers it.
+
+**Consumer input / 下游输入:** 智慧的不失控一面。 / The no-runaway aspect of wisdom.
+
+**Retained conditions / 保留条件:** 经识的策略，其余固定。 / A policy through registration, the rest fixed.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Runaway.lean)
+
+## wisdom-root-part-one ← selection-through-registration
+
+`formal-reuse` — 经识的选择与代理的规律。 / The laws of selection through registration and of proxies.
+
+**Producer output / 上游输出:** 经识的选择恰及选择者所识；在识闭包之外不见；合起来的识选出缺口中的终结。 / Selection through registration reaches exactly what the selector registers; blind beyond the registration closure; pooled registration selects the ending in the gap.
+
+**Consumer input / 下游输入:** 智慧的明与代理两面。 / The 明 and proxy aspects of wisdom.
+
+**Retained conditions / 保留条件:** 其余交换固定（不见处）。 / The rest of the exchange fixed (for the blindness).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean)
+
+## wisdom-root-part-one ← projection-carrying-a-law
+
+`formal-reuse` — 机制与改变自身规则的系统的规律。 / The laws of mechanism and of systems changing their own rule.
+
+**Producer output / 上游输出:** 投影恰在相同者同去时承载规律；状态恰在规则不造成差别之处有自己的规律。 / A projection carries a law exactly where configurations alike go alike; the state has a law of its own exactly where the rule makes no difference.
+
+**Consumer input / 下游输入:** 智慧的理与元层次两面。 / The 理 and meta-level aspects of wisdom.
+
+**Retained conditions / 保留条件:** 不加前提。 / No premise.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
 
 ## Wider composition evidence / 更广组合证据
 

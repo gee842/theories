@@ -36,7 +36,8 @@ def binderKind (t : Expr) : MetaM (Option String) := do
 def skipName (n : Name) : Bool :=
   n.isInternal ||
   (match n with
-   | .str _ s => s.startsWith "eq_" || s == "eq_def" || s == "inj" || s == "injEq" || s == "sizeOf_spec" ||
+   | .str _ s => s == "eq_def" || s == "eq_unfold" ||
+       (s.startsWith "eq_" && (s.toList.drop 3).all Char.isDigit) || s == "inj" || s == "injEq" || s == "sizeOf_spec" ||
        s == "noConfusion" || s == "noConfusionType" || s == "casesOn" || s == "recOn" || s == "rec" ||
        s == "brecOn" || s == "below" || s == "binductionOn" || s == "ibelow" || s == "ctorIdx" ||
        s == "toCtorIdx" || s.startsWith "match_" || s.startsWith "proof_"
