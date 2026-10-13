@@ -68,6 +68,10 @@ PUBLIC_FIELDS = ('title', 'statement', 'claim', 'overview.', 'does_not_show', 'n
                  'limitations', 'counterexamples', 'progress')
 # Fields whose growth the ratchet blocks on a changed schema-1 record.
 GROWTH_FIELDS = ('limitations', 'validation_scope', 'correspondence')
+# Growth up to this many characters per language (en, zh) only warns: renamed
+# identifiers and wording fixes lengthen a field slightly; an appended boundary
+# sentence does not fit in it.
+GROWTH_TOLERANCE = (40, 20)
 
 
 def sentences(text, lang):
@@ -193,10 +197,11 @@ def growth(old, new, fields=GROWTH_FIELDS):
                  'detail': 'a schema-2 record may not return to schema 1'}]
     found = []
     for key in fields:
-        for lang in ('en', 'zh'):
+        for lang, tolerance in zip(('en', 'zh'), GROWTH_TOLERANCE):
             before, after = len(text(old.get(key), lang)), len(text(new.get(key), lang))
             if after > before:
-                found.append({'id': ident, 'field': key, 'rule': 'v1-growth', 'severity': 'error',
+                severity = 'error' if after - before > tolerance else 'warning'
+                found.append({'id': ident, 'field': key, 'rule': 'v1-growth', 'severity': severity,
                               'detail': f'{lang} grew {before} -> {after} chars; migrate the record to schema 2 before adding text here'})
     return found
 

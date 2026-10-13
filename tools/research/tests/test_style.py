@@ -96,10 +96,17 @@ class RatchetTests(unittest.TestCase):
     def test_ratchet_blocks_growth_of_v1_boundaries(self):
         old = v1_record()
         new = copy.deepcopy(old)
-        new['limitations']['en'] += ' This round adds no new theorem.'
-        self.assertEqual([f['rule'] for f in style.growth(old, new)], ['v1-growth'])
+        new['limitations']['en'] += ' This round adds no new theorem and keeps every earlier boundary.'
+        self.assertEqual([(f['rule'], f['severity']) for f in style.growth(old, new)], [('v1-growth', 'error')])
         new['schema_version'] = 2
         self.assertEqual(style.growth(old, new), [])
+
+    def test_ratchet_only_warns_on_slight_growth(self):
+        # A renamed identifier or a wording fix lengthens a field by a few characters.
+        old = v1_record()
+        new = copy.deepcopy(old)
+        new['limitations']['en'] += ' (renamed)'
+        self.assertEqual([(f['rule'], f['severity']) for f in style.growth(old, new)], [('v1-growth', 'warning')])
 
     def test_ratchet_reads_both_languages_and_allows_shrinking(self):
         old = v1_record()
@@ -120,7 +127,7 @@ class RatchetTests(unittest.TestCase):
             self.skipTest('first record already migrated')
         record = dict(copy.deepcopy(committed), _record_path=path)
         self.assertEqual(research.ratchet([record], 'HEAD', {path}), [])
-        record['validation_scope'] = {k: v + ' Another receipt paragraph.' for k, v in committed['validation_scope'].items()}
+        record['validation_scope'] = {k: v + ' Another receipt paragraph, appended for this round of checks and its receipt.' for k, v in committed['validation_scope'].items()}
         found = research.ratchet([record], 'HEAD', {path})
         self.assertEqual({(f['field'], f['rule'], f['severity']) for f in found}, {('validation_scope', 'v1-growth', 'error')})
 
