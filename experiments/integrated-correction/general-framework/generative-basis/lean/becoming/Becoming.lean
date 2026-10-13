@@ -12,6 +12,8 @@ import Becoming.Joint
 import Becoming.Experiment
 import Becoming.Mechanism
 import Becoming.Unfolding
+import Becoming.Histories
+import Becoming.Branching
 import Becoming.Attraction
 import Becoming.Substitution
 import Becoming.Generation
@@ -133,6 +135,24 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is arising; configurations are alike where a bisimulation relates them, pass the same tests,
   and are named sensibly exactly where alike ones are one; determinacy as equality depends on
   names. Ren confirmed the reading of law and history; the other readings are the AI's.
+* `Becoming.Histories` (L3): what histories fix (P76). A family of histories is the family of
+  some law's histories exactly where it holds every sequence made of its own steps, and of a
+  determined law's exactly where it is also consistent; two laws admit the same histories exactly
+  where they have the same live steps, so laws up to their dead ends and families holding their
+  splices correspond one to one, and with histories that stop no dead end remains. Where both
+  frames are determined up to likeness, configurations are alike exactly where they pass the same
+  tests; with branching they need not (`Choosing`). The readings are the AI's, pending Ren.
+* `Becoming.Branching` (L3): R6's and P67's laws for every process, whose course branches
+  (P81). A configuration that returns can be had at every step, and every configuration
+  returns exactly where every region the process never leaves keeps every possibility of
+  its own; keeping every possibility does not give returning, merging nothing gives it along
+  runs, and a merge need not lose a possibility. Every process necessarily draws exactly
+  what does not return; possibly drawn is losing oneself on some course and allows return.
+  Determinacy is determinacy up to likeness with configurations named; the main theorems of
+  `Experiment` and `Mechanism` stated with `Determined` are restated up to likeness, and
+  those needing equality are named with witnesses. Capture's rule region is absorbing and a
+  reform of the state alone is drawn into what the rule holds. The readings are the AI's,
+  pending Ren.
 * `Becoming.Attraction` (L3): for every determined law, with no premise, a configuration is
   drawn into an absorbing region exactly where it does not return, and what is drawn in never
   comes back; what can be had n steps on is absorbing and every lost possibility is drawn into

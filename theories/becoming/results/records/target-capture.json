@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-11T20:06:27+00:00",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
   "claim": {
     "zh": "一个亲代家族的后代计数（offspringCount）在每个亲代至少（至多）留下若干后代时有相应的界（le_offspringCount、offspringCount_le）。带着目标的亲代 ms 各留下至少 a 个后代、其他亲代 es 各至多 b 个、b ≤ a 时，|ms|·（es 的后代）≤（ms 的后代）·|es|（share_not_lower）；b < a 且两类都在时严格小于（share_rises）。后代带着亲代的目标时，这就是目标在后代中的份额不低于、高于它在亲代中的份额。世系是一次开始而立，即一次上升；所立者每步被列出（Web.StandingCensus）时，任意晚的世系需要任意晚处所立者不衰减的步（Flow.descent_needs_unrun）；所立者从某步起每步衰减时世系不再复现（Flow.descent_exhausted）。在状态与规则的配置上，下一配置取决于规则而不取决于状态时，规则相同的两个配置从下一步起轨道相同（Law.reform_reabsorbed）；Captured 中状态随规则、规则保持自身，改过的状态立即回来，改过的规则改变结果（Captured.state_reform_returns、Captured.rule_reform_changes）。乘法结合律以递归证明（mul_assoc_nat），因为前导的 Nat.mul_assoc 用 propext。不用 Lean 公理。",
     "en": "The offspring of a family of parents, counted (offspringCount), are bounded where each parent leaves at least or at most so many (le_offspringCount, offspringCount_le). Carriers of a target ms each leaving at least a offspring and the other parents es each at most b, with b ≤ a, |ms|·(es's offspring) ≤ (ms's offspring)·|es| (share_not_lower), strictly where b < a and both kinds are present (share_rises). Where the offspring carry their parents' target, this is the target's share among the offspring not below, or above, its share among the parents. A descent is a coming to stand, so a rise; where what stands is listed at each step (Web.StandingCensus), descent at arbitrarily late steps needs steps at arbitrarily late times across which what stands does not run down (Flow.descent_needs_unrun), and where it runs down at every step from some step on, descent does not recur (Flow.descent_exhausted). On configurations of a state and a rule, where the next configuration depends on the rule and not on the state, two configurations with the same rule have the same orbit from the next step on (Law.reform_reabsorbed); in Captured the state follows the rule and the rule keeps itself, a reformed state returns at once and a reformed rule changes the outcome (Captured.state_reform_returns, Captured.rule_reform_changes). Associativity is proved by recursion (mul_assoc_nat), since the prelude's Nat.mul_assoc uses propext. No Lean axiom is used."
@@ -123,6 +123,13 @@
         "zh": "B1、B2：寻求何处能静止；这里是 B5：不能静止的目标怎样被选择、选择握在哪里。",
         "en": "B1 and B2: where seeking can rest; here B5: how a target that cannot rest is selected and where the selection is held."
       }
+    },
+    {
+      "id": "necessarily-drawn-is-not-returning",
+      "detail": {
+        "zh": "Captured 的规则区域是吸收区域；改过的状态或规则被吸入且不返回（P81）。",
+        "en": "Captured's rule region is an absorbing region; a reformed state or rule is drawn in and never returns (P81)."
+      }
     }
   ],
   "counterexamples": [
@@ -139,8 +146,8 @@
     "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are the counting for a two-valued target; the condition of reform_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085153.061517Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.reform_reabsorbed；同一回执覆盖包内 62 个模块（含只作导入的根模块与桥接），共 3156 项定理／4613 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085221.613502Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 64 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T085153.061517Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.reform_reabsorbed; the same receipt covers the package's 62 modules (including the import-only root and the bridge) with 3156 theorems/4613 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085221.613502Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 64 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed, whether it needs a review is Ren's call."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.reform_reabsorbed；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085914.780427Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.reform_reabsorbed; the same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085914.780427Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed, whether it needs a review is Ren's call."
   },
   "references": [
     {
@@ -211,19 +218,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6b3ab4826b9335e8d97a5cd3be21a7fc907a5a1f246af1f8baf775a8c55b1add",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ceab038a29ce815a4b16a14b67c6f37a398dc0e6db742d10bada1c4dafd015d5",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9ac31959acb84b471b667ad7b12a7be17a3fe4316b0e4624426810cf5fd27dc9",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
       "declarations": []
     },
     {
@@ -325,6 +332,14 @@
     {
       "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
       "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P81：Captured 的规则区域作为吸收区域由 necessarily-drawn-is-not-returning 陈述；见整合文档 §99。断言不变。",
+      "en": "2026-10-12 P81: Captured's rule region as an absorbing region is stated by necessarily-drawn-is-not-returning; see §99 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
     }
   ]
 }

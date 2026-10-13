@@ -6517,6 +6517,131 @@ Integration: 计划 P83；回答 P70–P72 留下的后两个开放问题；“�
 - 独立审查范围：2026-10-13 接续时 Ren 提供的会话交接报告称，P73 的所有者审查过加入有界静止之步前的版本，并要求纠正对 Learning 的双重否定的读法、以 period_extends 给出构造的静止之步；本包采用了这些修正。最终 42 项定理版本的独立审查尚未确认。
 
 
+## 98. 历史固定什么：律与历史的完备对应，检验固定相同的条件（P76）
+
+2026-10-12。Ren 问封闭的百分比，随后设定会话目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。缺口之一是强意义上的完备：一类规律是该类的全部规律；此前只对计数成立（每个计数表都由某个列出计数，`tally_iff_counted`）。P69（§91）证明历史固定它所显示的律，并指出对应不是同一之处：死路与拼接。本节证明这两者就是律与历史之间的全部规律，并给出检验固定相同的构造性条件。本节在工作板上认领为 P76。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Histories`（L3），27 项定理，只导入 `Becoming.Unfolding`，不改任何已有模块。
+
+成果记录新增两项：[histories-fix-law-up-to-dead-ends](../../../../theories/becoming/results/records/histories-fix-law-up-to-dead-ends.md) 与 [tests-fix-likeness-where-determined](../../../../theories/becoming/results/records/tests-fix-likeness-where-determined.md)。
+
+```text
+Result(s): 复用 process-and-frame-as-readings（Run、Shown、Consistent、DeadEnd、Splice、Run.keepHistory_shown）、
+           configurations-alike-by-relation（Bisimulation、Alike、Alike.trace、Alike.tests、DeterminedAt、Determined.at）、
+           joint-difference-making（Determined）；GenerativeCore 的 Trace、trace_nil_iff、trace_cons_iff；新增上列两项
+Delta: 律与历史族：Admits、Run.admits、ShownBy、ShownBy.admits、shownBy_le_iff、SpliceClosed、admits_spliceClosed、
+       family_iff、ConsistentFamily、shownBy_determined_iff、determined_family_iff；活的步：live、live_le、admits_live_iff、
+       same_histories_iff、live_live、DeadEnd.not_live；会停止的历史：Trace.of_same、same_finite_histories_iff、MadeOfSteps、finite_family_iff。检验：SameTests、Alike.sameTests、SameTests.after、
+       sameTests_bisimulation、alike_iff_sameTests、Determined.alike_iff_sameTests；Choosing（Move、Pos、Late、Early、late、
+       early、Open、late_open、early_open、late_of_open、early_of_open、sameTests、not_alike、early_not_determined）
+Supplied premises / correspondence: 不加公理，也不加前提；family_iff、determined_family_iff、same_histories_iff 与
+       alike_iff_sameTests 是双向的；alike_iff_sameTests 以两个框架处处在相同之下确定为条件，Choosing 说明没有它不成立；
+       历史是不终止的序列（表示的承诺）；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261013T085835.650723Z（Becoming.Histories 27 项定理，全部源声明公理报告为空），外围回执 20261013T085914.780427Z
+Boundary: 实际展开的历史是否终止没有陈述；核心中分支检验固定相同没有陈述（外围的证明用经典逻辑，配置有限时是否有构造性
+          证明，这里开放）；实际展开是哪一族历史没有陈述；不含伦理谓词
+Integration: 计划 P76；P69 的死路与拼接成为律与历史之间的全部规律；给出 configurations-alike-by-relation 的 next_delta
+             所求的构造性条件（相同之下的确定性）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Admits`、`Run.admits`、`ShownBy`、`ShownBy.admits`、`shownBy_le_iff` | 律容许一段历史，指历史的每一步都是律的一步；一族历史所显示的律以族中历史所走的步为步，是容许族中每段历史的最小的律 |
+| `SpliceClosed`、`admits_spliceClosed`、`family_iff` | 一族历史含有它的拼接，指由它自己的步组成的每个序列都在族中；律的历史族如此；一族历史恰在如此时是某个律的历史族 |
+| `ConsistentFamily`、`shownBy_determined_iff`、`determined_family_iff` | 一族历史一致，指其中任何两段历史从不以同一动作把同一配置带到两处；所显示的律恰在这时确定；一族历史恰在含有拼接且一致时是某个确定的律的历史族 |
+| `live`、`live_le`、`admits_live_iff`、`same_histories_iff`、`live_live`、`DeadEnd.not_live` | 律的活的步是它的某段历史所走的步；律与它的活的步容许同样的历史；两个律恰在活的步相同时容许同样的历史；活的律没有死路；死路的那一步不是活的 |
+| `Trace.of_same`、`same_finite_histories_iff`、`MadeOfSteps`、`finite_family_iff` | 会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史；一族有限历史恰在由它的步组成时是某个律的有限历史族 |
+| `SameTests`、`Alike.sameTests`、`SameTests.after` | 通过同样的检验：开放的动作序列相同，每个序列之后能实现的主张相同；相同的配置如此；两侧在相同之下确定时，它在一个动作之后保持 |
+| `sameTests_bisimulation`、`alike_iff_sameTests`、`Determined.alike_iff_sameTests` | 两个框架处处在相同之下确定时，通过同样的检验是互模拟，所以配置恰在通过同样的检验时相同 |
+| `Choosing.sameTests`、`Choosing.not_alike`、`Choosing.early_not_determined` | 在第一步之后选择与在第一步选择的两个框架，起点通过同样的检验而不相同；后者不确定 |
+
+**它回答了什么。**
+- **律与历史之间的全部规律。** 从历史读出的律，就是含有拼接的历史族（`family_iff`）；历史把律固定到死路为止（`same_histories_iff`）。所以不计死路的律与含有拼接的历史族一一对应：P69 的两处“对应不是同一”就是全部。确定的律多一个条件，一致（`determined_family_iff`）。会停止的历史下死路消失，律恰由它的有限历史固定（`same_finite_histories_iff`、`finite_family_iff`）：死路是不终止历史的事实。
+- **检验何时固定相同。** 线性检验（动作序列，加一个最后的主张）在相同之下确定时固定相同（`alike_iff_sameTests`）；有分支时不固定（`Choosing`）。外围中带否定与合取的分支检验对像有限的模型固定相同（`same_iff_bisimilar`，经典）。
+
+**读法。** AI 的，待 Ren。Ren 同意律与历史是同一展开的两种读法、律从展开读出（“there are no two realities”）。在本结果之下：从历史读出的律就是含有拼接的历史族，别无其他；置于展开之上的律所能多出的只是死路，没有历史显示它们。拼接是记忆的缺席：律从所在处作答，不从怎样来到此处作答，所以记住来路的历史（保留的历史）所显示的律只容许它自己（`Run.keepHistory_shown`）。检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。
+
+**作者反审。**
+1. **证明短。** 每条定理只有几行；内容在于刻画是双向的、完备的，以及条件的边界（`Choosing`）。
+2. **死路依赖于历史不终止。** 本节对两种历史都给出完备对应：不终止的历史下有死路，会停止的历史下没有。实际展开的历史是否终止，不是这里能定的。
+3. **分支检验的完备留在外围。** 核心只给线性检验在相同之下确定时的完备；分支检验的构造性证明开放。
+
+**检查。**
+- 模块在暂存区对 main 的核心与 P69 的 `Becoming.Unfolding` 编译，没有错误或警告；逐条审计全部 162 个常量，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`，不用 `simp`、`omega` 或 `decide`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T085835.650723Z。包共 3302 项定理、4810 项声明审计，核心闭包 66 个模块。
+- 尚无独立审查。
+
+
+## 99. 路径分支时：返回、被吸入与相同之下的确定（P81）
+
+2026-10-12。按 Ren 的会话目标“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。R6（`Becoming.Recurrence`）与 P67（`Becoming.Attraction`）对确定的律 `next` 陈述它们的规律：配置固定它的整条路径。脊柱的过程只固定哪些步可容许：从一个配置可以有几个动作，或一个动作有几个结果，路径分支。检查 R6 的三方等价（无损、返回、保留每个可能）是否对不确定的过程成立时，发现它不成立。本节对每个过程陈述 R6 与 P67 的规律，说明哪些保留、哪些只单向成立、哪些不成立，各给见证；把 `Becoming.Experiment` 与 `Becoming.Mechanism` 中以 `Determined` 陈述的定理在相同之下（P69 的 `DeterminedAt`）重述，需要相等之处给出见证；并把 Capture 的规则区域陈述为 P67 吸收区域的实例。本节在工作板上认领为 P81。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Branching`（L3），119 项定理，导入 `Becoming.Unfolding`、`Becoming.Attraction` 与 `Becoming.Capture`，不改任何已有模块（在已有命名空间 `Run`、`Reach`、`Law`、`Twins`、`Coarse`、`Confound`、`Captured` 中新增定理，不改已有声明）。模块由本会话的一个 Opus 子代理构建，由本会话检查。
+
+成果记录新增三项：[returning-where-the-course-branches](../../../../theories/becoming/results/records/returning-where-the-course-branches.md)、[necessarily-drawn-is-not-returning](../../../../theories/becoming/results/records/necessarily-drawn-is-not-returning.md) 与 [determinacy-up-to-likeness](../../../../theories/becoming/results/records/determinacy-up-to-likeness.md)。
+
+```text
+Result(s): 复用 recurrence-without-premise（Law.Returns、Law.Lossless、Law.Keeps 与三方等价）、attraction-is-not-returning
+           （Law.Absorbing、Law.DrawnInto、Law.drawn_iff_not_returns）、process-and-frame-as-readings（Run、Fork、DeadEnd）、
+           configurations-alike-by-relation（Bisimulation、Alike、DeterminedAt、Twins）、experiment-needs-return（Run.Fixes、
+           retarget、keepHistory、Confound）、projection-carrying-a-law（GoAlike、DependsOnlyOn、forget、inputs、Coarse、
+           carries_law_iff）、target-capture（Captured、Law.reform_reabsorbed）；新增上列三项
+Delta: 路径：Branching.Reachable、Returns、KeepsPossibilities、Lossless、Merges、lost_stays、Returns.reachable、keeps_of_returns、
+       keeps_iff_fed、returns_iff_fed_ahead、returns_iff_fedWithin、KeepsWithin、keepsWithin_iff_fedWithin、returns_iff_keepsWithin；
+       有限多配置之内：Lossless.comes_back、Lossless.recurs、Lossless.returns、Lossless.no_rise、rise_not_lossless、
+       Lossless.unlisted、Run.enters_returning；返回者的运行：Returns.run；被吸入：PossiblyDrawnInto、NecessarilyDrawnInto、
+       PossiblyDrawn、NecessarilyDrawn、possiblyDrawn_iff、PossiblyDrawnInto.never_back、necessarilyDrawnInto_ahead、
+       NecessarilyDrawnInto.not_returns、necessarilyDrawn_iff_not_returns、reachable_invariant、lost_necessarily_drawn、
+       NecessarilyDrawn.not_lossless、Determined.moves_decide、Determined.stays_merged；确定的律是实例：law_*；见证：OneWay、
+       Transit、fork_lossless_not_returns、Coarse.meet_and_part；相同之下：determined_iff_named、goesAlike_iff、
+       DeterminedAt.stays_alike、DependsOnlyOnAlike.reabsorbed、forget_inputs_determinedAt_iff、Run.fixesAlike_of_takes、
+       Run.generalizesAlike、Run.not_fixesAlike_of_untaken、retargetAlike、keepFrame_alike_iff、keepHistory_new_named、
+       carries_unregistered、Twins.retarget_breaks、Confound.refutes_registered；Capture：Law.rule_absorbing、Law.held_absorbing、
+       Law.reform_drawnInto、Captured.rule_region_absorbing、Captured.state_reform_drawn、Captured.rule_reform_drawn
+Supplied premises / correspondence: 不加公理，也不加前提；returns_iff_fed_ahead、returns_iff_keepsWithin、
+       necessarilyDrawn_iff_not_returns、possiblyDrawn_iff 与 determined_iff_named 是双向的；沿运行的定律以一个运行为给定
+       （从每个能动的配置都有运行要选择）；“有限多配置”指某个列表持有运行的配置；读法是 AI 的，待 Ren
+Evidence: 合并检查器回执 20261013T085835.650723Z（Becoming.Branching 119 项定理，全部源声明公理报告为空），外围回执 20261013T085914.780427Z
+Boundary: 从每个能动的配置出发的运行（选择）；在界内被吸入；实际展开进入哪些区域；分支路径上的度量（P82）；
+          carries_law_iff 在相同之下的双向形式；Image／FactorsThrough 的刻画、not_fixes_other_of_new 与 Joint 的
+          determined_dichotomy 在相同之下没有重述；不含伦理谓词
+Integration: 计划 P81；回答 recurrence-without-premise 与 attraction-is-not-returning 的 next_delta 中不确定过程的一项、
+             attraction-is-not-returning 中 Captured 的规则区域一项，以及 configurations-alike-by-relation 中
+             以 Determined 陈述的定理在相同之下重述一项的主要部分
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Branching.Reachable`、`Branching.Returns`、`Branching.Lossless`、`Branching.Merges`、`law_reachable_iff`、`law_returns_iff`、`law_lossless_iff`、`law_merges_iff`、`law_keeps_iff` | 配置 n 步之后可得，指有 n 个动作的路径通向它；它返回，指从它的一步通向能再得到它之处；过程合并，指两个不同的配置一步到同一处；在确定的律下每个都是 R6 的 |
+| `Branching.lost_stays`、`Branching.Returns.reachable`、`keeps_of_returns`、`keeps_iff_fed` | 失去的可能保持失去；返回的配置每步可得，所以处处返回则保留每个可能；保留每个可能恰是每个配置下一步可得 |
+| `returns_iff_fed_ahead`、`returns_iff_keepsWithin`、`returns_iff_fedWithin`、`keepsWithin_iff_fedWithin` | 配置恰在它自己的路径下一步能再得到它时返回；每个配置都返回，恰在过程从不离开的每个区域都保留它自己的每个可能时；不用有限性 |
+| `Lossless.comes_back`、`Lossless.recurs`、`Branching.Lossless.returns`、`Branching.Lossless.no_rise`、`Branching.rise_not_lossless`、`Branching.Lossless.unlisted` | 列表持有运行的配置、过程不合并时，运行的每个配置在运行上回来，运行开始处的配置返回，沿运行没有上升；上升需要合并；不合并而有不返回的配置需要开放 |
+| `Transit.keeps_not_returns`、`OneWay.merge_keeps`、`fork_lossless_not_returns`、`Coarse.meet_and_part`、`Determined.stays_merged` | 保留每个可能不给返回；合并不必失去可能；不合并沿运行才给返回（Fork 的终点不能动）；合并后保持合并需要确定 |
+| `PossiblyDrawnInto`、`NecessarilyDrawnInto`、`PossiblyDrawn`、`NecessarilyDrawn`、`law_possibly_iff`、`law_necessarily_iff`、`law_drawn_iff` | 某条路径进入区域是可能被吸入，每个运行都进入是必然被吸入；被吸入，指某个过程从不离开的区域如此吸入它；在确定的律下两者都是 P67 的 |
+| `Branching.Returns.run`、`necessarilyDrawn_iff_not_returns`、`NecessarilyDrawnInto.not_returns`、`necessarilyDrawnInto_ahead` | 返回的配置有一个从不失去它的运行；每个过程必然吸入的恰是不返回者（`Law.drawn_iff_not_returns` 的推广） |
+| `possiblyDrawn_iff`、`PossiblyDrawnInto.never_back`、`OneWay.possibly_not_necessarily`、`Determined.moves_decide` | 可能被吸入就是在某一路径中失去自身，沿该路径被锁定；可能被吸入者可以在另一路径中返回；确定的过程下动作决定运行是否被吸入 |
+| `reachable_invariant`、`lost_necessarily_drawn`、`Run.enters_returning`、`NecessarilyDrawn.not_lossless`、`Transit.returning_not_invariant` | 每个过程下未来变窄，失去的可能必然被吸入；有限多配置之内每个运行进入返回者，必然被吸入意味着合并；返回者不是过程从不离开的区域 |
+| `determined_iff_named`、`alike_configurations`、`goesAlike_iff`、`DeterminedAt.stays_alike`、`DependsOnlyOnAlike.reabsorbed`、`forget_inputs_determinedAt_iff` | 主张命名配置时，确定就是相同之下的确定；经相同而同行、相同的运行保持相同、不依赖者被重新吸收、标准模型在噪声无差别时确定，都在相同之下成立 |
+| `Run.fixesAlike_of_takes`、`Run.generalizesAlike`、`Run.not_fixesAlike_of_untaken`、`retargetAlike`、`retargetAlike_determinedAt` | 所取的动作在相同之下固定，一次代表其类；未取的动作对在一个主张上不同的结果不被固定，经对整个相同类的干预 |
+| `Twins.retarget_breaks`、`keepFrame_alike_iff`、`keepHistory_returns_alike`、`keepHistory_new_named`、`carries_unregistered`、`Confound.refutes_registered` | 需要相等之处：改送两个相同配置之一破坏相同之下的确定；过去没有被登记时保留的历史在相同之下返回；没有主张时每个描述承载规律，没有混杂被否证 |
+| `Law.rule_absorbing`、`Law.held_absorbing`、`Law.reform_drawnInto`、`Captured.rule_region_absorbing`、`Captured.held_absorbing`、`Captured.state_reform_drawn`、`Captured.rule_reform_drawn` | 规则保持自身时，规则给定的配置是律从不离开的区域；下一配置只依赖规则时，规则所持的配置固定，改过的状态第一步被吸入它；Captured 中改过的状态或规则被吸入且不返回 |
+
+**它回答了什么。**
+- **路径分支时的返回。** 返回比保留每个可能要求得多：一个配置可以从别处一再得到，而从不回到自己（`Transit.keeps_not_returns`）。精确条件是局部的：配置恰在它自己的路径能再得到它时返回（`returns_iff_fed_ahead`），处处返回恰是过程不离开的每个区域都保留它自己的每个可能（`returns_iff_keepsWithin`）。R6 的“不失去即返回”在有限多配置之内沿每个运行成立（`Branching.Lossless.returns`），但不能省去运行（`fork_lossless_not_returns`）；合并不必失去可能（`OneWay.merge_keeps`）。
+- **可能与必然被吸入。** 每个过程必然吸入的恰是不返回者（`necessarilyDrawn_iff_not_returns`），所以 P67 的主律对每个过程成立；可能被吸入是在某一路径中失去自身（`possiblyDrawn_iff`），可能被吸入者可以在另一路径中返回（`OneWay.possibly_not_necessarily`）。P67 的其余规律中，未来变窄与失去的可能被吸入对每个过程成立；返回者的区域吸入其余一切、合并吸入两者之一，对过程不成立（`Transit.returning_not_invariant`、`OneWay.merge_keeps`）。
+- **相同之下的确定。** 确定是相同之下确定的命名情形（`determined_iff_named`），所以问题是哪些定理对每种主张成立。关于配置怎样相关的定理在相同之下成立；需要相等的是对相同者之一的干预、没有登记的过去与没有登记的描述（`Twins.retarget_breaks`、`keepHistory_new_named`、`carries_unregistered`）。
+- **Capture 是吸引。** Capture 的规则区域是吸收区域，改过的状态被吸入规则所持之处（`Law.rule_absorbing`、`Captured.state_reform_drawn`）。
+
+**读法。** AI 的，待 Ren。路径分支时，返回比保留每个可能要求得多：返回的是它自己的路径能再得到的。可能与必然被吸入恰在路径开放之处分开：一个配置可以在一条路径中被吸入，在另一条中回来；每条路径都吸入的是不返回者，某条路径吸入的是能失去自身者。有分支时，合并本身不失去可能，失去可能也不需要合并；R6 的“不失去即返回”是有限多配置之内确定变化的规律，在每个过程下沿每个运行成立。相同是展开自己对配置的同一：在相同之下成立的确定性定理讲配置怎样相关，需要相等的定理取决于登记了什么，没有什么登记的既不固定也不被否证（参见 `Becoming.Testing` 的登记）。Capture 读作吸引：只改状态会被吸回规则所持之处，吸引子只随规则移动。
+
+**作者反审。**
+1. **沿运行的定律以运行为给定。** 从每个能动的配置出发的运行要在每步选择一个延续，这是选择；需要运行的定律以一个运行为前件。核心的运行不终止，所以没有运行开始的配置空真地必然被吸入每个不含它的区域；这是表示的事实，已写入模块说明。
+2. **见证小。** `OneWay`、`Transit` 与 Fork 各只有两三个配置；它们表明单向与不成立，不表明这些情形常见。
+3. **“有限多配置”是列表。** 与 R6 一样，指某个列表持有运行的配置，不是基数。
+4. **相同之下的重述不完全。** `Experiment` 与 `Mechanism` 中关于配置怎样相关的主要定理已在相同之下重述，需要相等之处给出见证；“某过程确定”的实例经 `Determined.at` 直接给出相同之下的确定。没有重述的：`Mechanism` 中投影的确定性刻画（`Image`、`FactorsThrough`）、`Experiment` 的 `not_fixes_other_of_new`、`Joint` 的 `determined_dichotomy`；`carries_law_iff` 在相同之下的双向形式没有给出。
+
+**检查。**
+- 模块由子代理在暂存区对本会话的核心与 P69 的 `Becoming.Unfolding` 编译（308 个常量，没有警告，公理报告为空），与 P76 的 `Histories` 一起编译没有名称冲突。本会话 10-12 以 `scratch_build.py` 对 main `66dc4450` 与 P69 的 `Unfolding` 重建：119 项定理、156 项声明，没有公理，没有警告。为让检查器的解析器读得到，五个写作 `_root_.Becoming.Run.*` 的声明与 `_root_.Becoming.Reach.of_dead_end` 移入 `namespace Run` 与 `namespace Reach` 块（名称与陈述不变）。没有 `sorry`、`axiom`、`Classical` 或 `native_decide`，不用 `simp`、`omega` 或 `decide`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T085835.650723Z。包共 3302 项定理、4810 项声明审计，核心闭包 66 个模块。
+- 尚无独立审查。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -7485,4 +7610,17 @@ Readings (the AI's, pending Ren):
 
 Fine–Wilf, Moore and Gold are cited as the known results. The exactness of `N + N' - 1` for general `N`, `N'`, and Moore's sharper bound for one history, are not stated; the rest bound `N + (2N - 1) * tri N` is coarse. Record added: identification-where-bounded. Receipt 20261013T085153.061517Z (Identification 42); periphery receipt 20261013T085221.613502Z. Independent review scope: the session handoff supplied by Ren on 13 October 2026 reports that P73's owner reviewed the version before the bounded rest step, requested the corrected reading of Learning's double negation and a constructive rest step through period_extends; this package incorporates those corrections. Independent review of the final 42-theorem version is not confirmed. The author's counterreview is in section 97.
 
-The package now has 3156 theorems and 4613 declaration audits, over a core closure of 64 modules and a package of 62, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T085221.613502Z).
+**P76: what histories fix.** After Ren's question on how enclosed the theory is, Ren set the goal "move towards 100%". Completeness in the strong sense, the laws of a kind being all its laws, had held for counting only. P69 named where a law and its histories do not correspond, dead ends and splices; P76 shows that these are the whole of it, and gives a constructive condition under which tests fix likeness. A new core module `Becoming.Histories` (L3, imports `Becoming.Unfolding` only), no axiom, no premise.
+- **Law and history, complete.** The law a family of histories shows is the least law admitting each of them (`ShownBy`, `shownBy_le_iff`). A family is the family of some law's histories exactly where it holds every sequence made of its own steps (`SpliceClosed`, `family_iff`), and of a determined law's exactly where it is also consistent (`determined_family_iff`). Two laws admit the same histories exactly where they have the same live steps, those some history takes (`live`, `same_histories_iff`); the dead end's step is not live (`DeadEnd.not_live`). So laws up to dead ends and families holding their splices correspond one to one. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (`same_finite_histories_iff`, `finite_family_iff`).
+- **Tests and likeness.** Where both frames are determined up to likeness, configurations are alike exactly where they pass the same tests, the same courses open and the same claims realizable after each (`SameTests`, `alike_iff_sameTests`). With branching they do not: a frame choosing after its first move and one choosing at it pass the same tests and are not alike (`Choosing.not_alike`).
+
+The readings are the AI's, pending Ren: with Ren's agreement that the law is read off the unfolding, a law read off histories is a family holding its splices, and what a law set over the unfolding can add are dead ends no history shows; the splice is memory's absence; tests cannot see when a choice is made. Not derived: whether an actual unfolding's histories stop; branching tests fixing likeness in the core (classical in the periphery; a constructive proof for finitely many configurations is open). No independent review yet.
+
+**P81: beyond determined laws.** Under Ren's "move towards 100%", after R6's three-way equivalence was found to fail for laws that are not determined, R6's and P67's laws are stated for every process, and the main theorems of Experiment and Mechanism stated with `Determined` are restated up to likeness. A new core module `Becoming.Branching` (imports `Unfolding`, `Attraction`, `Capture`), no axiom, no premise, no existing module changed.
+- **Returning.** A configuration returns exactly where its own course can have it at the next step (`returns_iff_fed_ahead`); every configuration returns exactly where every region the process never leaves keeps every possibility of its own (`returns_iff_keepsWithin`). Keeping every possibility does not give returning (`Transit.keeps_not_returns`); merging nothing gives it along runs within finitely many configurations (`Branching.Lossless.returns`); a merge need not lose a possibility (`OneWay.merge_keeps`).
+- **Drawn.** Every process necessarily draws exactly what does not return (`necessarilyDrawn_iff_not_returns`); possibly drawn is losing oneself on some course (`possiblyDrawn_iff`), and a configuration possibly drawn can return on another course (`OneWay.possibly_not_necessarily`). Capture's rule region is an absorbing region and a reformed state is drawn into what the rule holds (`Law.rule_absorbing`, `Captured.state_reform_drawn`).
+- **Determinacy up to likeness.** Determinacy is the named case of determinacy up to likeness (`determined_iff_named`); the theorems on how configurations relate hold up to likeness (`DeterminedAt.stays_alike`, `Run.fixesAlike_of_takes`, `Run.not_fixesAlike_of_untaken`), while an intervention on one of two alike configurations, an unregistered past and an unregistered description need equality (`Twins.retarget_breaks`, `keepHistory_new_named`, `carries_unregistered`).
+
+The readings are the AI's, pending Ren. Not derived: a run from every configuration that can move (a choice); being drawn in within a bound; a measure on branching courses (P82); up to likeness, the characterization through `Image` and `FactorsThrough`, `not_fixes_other_of_new`, Joint's `determined_dichotomy` and the two-way form of `carries_law_iff`. Built by an Opus subagent of the session and checked by the session. No independent review yet.
+
+The package now has 3302 theorems and 4810 declaration audits, over a core closure of 66 modules and a package of 64, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 99 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T085914.780427Z).

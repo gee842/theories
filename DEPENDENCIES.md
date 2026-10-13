@@ -1558,6 +1558,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean)
 
+## determinacy-up-to-likeness ← configurations-alike-by-relation
+
+`formal-reuse` — 复用 P69 的 Alike、DeterminedAt 与 Twins。 / Reuses P69's Alike, DeterminedAt and Twins.
+
+**Producer output / 上游输出:** 相同与相同之下的确定。 / Likeness and determinacy up to likeness.
+
+**Consumer input / 下游输入:** 确定定理的相同形式。 / The likeness forms of the theorems with determinacy.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## determinacy-up-to-likeness ← experiment-needs-return
+
+`formal-reuse` — 复用 Experiment 的 Run.fixes_of_takes、retarget_determined 等，作为命名实例。 / Reuses Experiment's Run.fixes_of_takes, retarget_determined and others, as the named instances.
+
+**Producer output / 上游输出:** 确定之下实验的规律。 / The laws of experiment under determinacy.
+
+**Consumer input / 下游输入:** 相同之下的形式。 / The forms up to likeness.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean)
+
+## determinacy-up-to-likeness ← projection-carrying-a-law
+
+`formal-reuse` — 复用 Mechanism 的 DependsOnlyOn、forget_inputs_determined_iff 与 Confound。 / Reuses Mechanism's DependsOnlyOn, forget_inputs_determined_iff and Confound.
+
+**Producer output / 上游输出:** 机制与标准因果模型。 / Mechanism and standard causal models.
+
+**Consumer input / 下游输入:** 相同之下的形式与需要登记之处。 / The forms up to likeness and where registration is needed.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
 ## enacted-scene-binding ← acquired-binding-compositional-use
 
 `formal-reuse` — 空间接触史产生旧绑定构造的解释输入，直接调用其任意序列定理。 / The spatial history produces the prior construction’s interpretation inputs and directly invokes its all-sequence theorem.
@@ -2013,6 +2049,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 目标可用、记录实现条件及唯一解成立。 / Available target, packet-realization hypotheses and unique resolution.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean)
+
+## histories-fix-law-up-to-dead-ends ← process-and-frame-as-readings
+
+`formal-reuse` — 复用 P69 的 Run、DeadEnd 与对应的界限：一段历史的情形（Shown、Consistent、exists_law_iff）推广到历史族，死路与拼接成为全部规律。 / Reuses P69's runs, DeadEnd and the limits of the correspondence: the case of one history (Shown, Consistent, exists_law_iff) generalizes to families, dead ends and splices becoming the whole law.
+
+**Producer output / 上游输出:** 一段历史所显示的律、死路与拼接的见证。 / The law one history shows, and the witnesses of dead end and splice.
+
+**Consumer input / 下游输入:** 律与历史族的完备对应。 / The complete correspondence of laws and families of histories.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## histories-fix-law-up-to-dead-ends ← joint-difference-making
+
+`formal-reuse` — 复用 Determined：确定的律的历史族恰是含有拼接且一致的族。 / Reuses Determined: the families of determined laws are exactly those holding their splices and consistent.
+
+**Producer output / 上游输出:** 确定性。 / Determinacy.
+
+**Consumer input / 下游输入:** 一致的历史族。 / Consistent families of histories.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean)
 
 ## identification-where-bounded ← learning-by-refutation
 
@@ -2693,6 +2753,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## naming-attention-coverage ← encounter-selection-and-revision
 
 `interpretive` — 检验其合作命名覆盖的经验对应，保留条件证明及覆盖失败反例；没有声称把注视数据形式转换为Lean候选集。 / Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed.
+
+## necessarily-drawn-is-not-returning ← attraction-is-not-returning
+
+`formal-reuse` — 复用 P67 的 Law.DrawnInto、Law.Drawn 与 Law.drawn_iff_not_returns；确定的律下新概念就是它们。 / Reuses P67's Law.DrawnInto, Law.Drawn and Law.drawn_iff_not_returns; under a determined law the new notions are these.
+
+**Producer output / 上游输出:** 确定的律的吸引。 / Attraction for determined laws.
+
+**Consumer input / 下游输入:** 每个过程的可能与必然被吸入。 / Possibly and necessarily drawn for every process.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean)
+
+## necessarily-drawn-is-not-returning ← target-capture
+
+`formal-reuse` — 复用 Capture 的 Captured 与 Law.reform_reabsorbed，作为吸引区域的实例。 / Reuses Capture's Captured and Law.reform_reabsorbed, as instances of attracting regions.
+
+**Producer output / 上游输出:** 规则的捕获。 / Capture of the rule.
+
+**Consumer input / 下游输入:** 规则区域作为吸收区域。 / The rule region as an absorbing region.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)
+
+## necessarily-drawn-is-not-returning ← returning-where-the-course-branches
+
+`formal-reuse` — 同一模块的 Returns 与 Reachable。 / The same module's Returns and Reachable.
+
+**Producer output / 上游输出:** 分支下的返回。 / Returning under branching.
+
+**Consumer input / 下游输入:** 吸入与返回的等价。 / The equivalence of drawing and not returning.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean)
 
 ## no-finite-part-bears-taking ← more-needs-renewers
 
@@ -3482,6 +3578,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 复用选择不自动产生保留优势的经验约束；无数据到Lean状态的已验证转换。 / Reuses the empirical limit on automatic control-to-retention advantage; no verified conversion from data to Lean states.
 
+## returning-where-the-course-branches ← recurrence-without-premise
+
+`formal-reuse` — 复用 R6 的 Law.Returns、Lossless 与其规律；确定的律下每个新概念就是 R6 的。 / Reuses R6's Law.Returns, Lossless and their laws; under a determined law each new notion is R6's.
+
+**Producer output / 上游输出:** 确定变化的返回之律。 / The laws of return for determined change.
+
+**Consumer input / 下游输入:** 每个过程的返回之律。 / The laws of return for every process.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## returning-where-the-course-branches ← process-and-frame-as-readings
+
+`formal-reuse` — 复用 P69 的 Run、Fork 与 Reach。 / Reuses P69's runs, Fork and Reach.
+
+**Producer output / 上游输出:** 运行与分叉的见证。 / Runs and the fork witness.
+
+**Consumer input / 下游输入:** 沿运行的定律与其见证。 / The laws along runs and their witnesses.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
 ## rising-and-falling-in-one-exchange ← no-finite-part-bears-taking
 
 `formal-reuse` — 复用封闭与耗散（ClosedAt、DissipatesOn、Dissipative）、runs_down 与 takes_of_gives。 / Reuses closure and dissipation (ClosedAt, DissipatesOn, Dissipative), runs_down and takes_of_gives.
@@ -4013,6 +4133,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## tests-fix-likeness-where-determined ← configurations-alike-by-relation
+
+`formal-reuse` — 复用 Bisimulation、Alike、Alike.trace、Alike.tests 与 DeterminedAt；给出它的 next_delta 所求的构造性条件。 / Reuses Bisimulation, Alike, Alike.trace, Alike.tests and DeterminedAt; gives the constructive condition its next_delta asks for.
+
+**Producer output / 上游输出:** 相同及其在检验与相同之下确定性上的性质。 / Likeness and its properties on tests and determinacy up to likeness.
+
+**Consumer input / 下游输入:** 检验固定相同的条件与反例。 / The condition under which tests fix likeness, and its counterexample.
+
+**Retained conditions / 保留条件:** 两个框架处处在相同之下确定。 / Both frames determined up to likeness everywhere.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
 
 ## the-split-that-makes-sense ← configurations-alike-by-relation
 

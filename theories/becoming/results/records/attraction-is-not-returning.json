@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T23:07:00+00:00",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
   "claim": {
     "zh": "设 next : S → S 是任意类型 S 上的确定的律，轨道 Law.orbit。区域 R 在 next 下吸收，是指 R s 推出 R (next s)（Law.Absorbing）；s 被吸入 R，是指 ¬ R s 且某一步 R (orbit next s n)（Law.DrawnInto）；s 被吸入，是指有吸收区域把它吸入（Law.Drawn）；s 的前方是从 next s 起轨道上的配置（Law.Ahead）。前方吸收（Law.absorbing_ahead）；轨道进入吸收区域之后每一步都在其中（Law.Absorbing.orbit）；s 返回恰当 s 在自己的前方（Law.returns_iff_ahead）。锁定：R 吸收、¬ R s、R (orbit next s n) 时，对每个 k，orbit next s (n + k) ≠ s（Law.DrawnInto.never_back），所以被吸入的配置不返回（Law.Drawn.not_returns）。主律，不加前提、不用有限性与可判定性：Drawn next s ↔ ¬ Returns next s（Law.drawn_iff_not_returns）；不返回的 s 被吸入自己的前方，在第一步进入（Law.drawnInto_ahead）。未来收窄：Reachable next n 吸收（Law.reachable_absorbing）；n 步后不可得的 s 被吸入 Reachable next n，在第 n 步进入（Law.reachable_orbit、Law.lost_drawn），所以被吸入（Law.drawn_of_lost）；返回者吸收（Law.returning_absorbing）。合并：x ≠ y、next x = next y 时 ¬ (Returns next x ∧ Returns next y)，不需要有限性（Law.Merges.not_both_return，经 Law.periods_meet：a + (a + 1)·b = b + (b + 1)·a）；所以 ¬ (¬ Drawn next x ∧ ¬ Drawn next y)（Law.merge_draws），合并的律有 ¬¬ ∃ s, Drawn next s（Law.Merges.draws）；没有配置被吸入时，next x = next y 推出 ¬ x ≠ y（Law.none_drawn_merges_nothing），相等可判定时律不合并（Law.none_drawn_lossless）。列表持有每个配置时：被吸入推出不是 Lossless、不是 KeepsPossibilities（Law.Drawn.not_lossless、Law.Lossless.not_drawn、Law.Drawn.not_keeps）；相等可判定时 Lossless next ↔ ∀ s, ¬ Drawn next s（Law.lossless_iff_none_drawn）；Returns next s ↔ ∀ n, Reachable next n s（Law.returns_iff_always_reachable），所以 Drawn next s ↔ ¬ ∀ n, Reachable next n s（Law.drawn_iff_lost，从右到左不需要列表）；每条轨道进入一个返回的配置（Law.enters_returning），所以不返回的配置被吸入返回者的区域（Law.drawnInto_returning）。开放的见证：Drawn Nat.succ 0 ∧ Lossless Nat.succ（Law.succ_drawn_lossless）；Drawn Nat.pred 1 ∧ KeepsPossibilities Nat.pred（Law.pred_drawn_keeps，经 Law.pred_orbit_zero）。过程：Absorbing next R ↔ Invariant (Law.process next) R（Law.absorbing_iff_invariant）；R 在动作 a 下吸收（AbsorbingUnder）；Invariant P R ↔ ∀ a, AbsorbingUnder P R a（invariant_iff_every_move）；不变的 R、R t、¬ R s 时 ¬ Reach P t s（Invariant.locks_out）；运行 r 在第 n 步于不变的 R 内、第 m 步在 R 外时，对每个 k，r.state (n + k) ≠ r.state m（Run.locked_in）；从第 n 步起每个动作都保持 R 时运行留在 R 中（Run.stays）；R (r.state n) 而 ¬ R (r.state (n + 1)) 时，第 n 步的动作不保持 R（Run.leaving_needs）。Ratchet 中每个配置都到 true：律合并 false 与 true，{true} 吸收，false 被吸入它而不返回，也在一步后不可得，true 返回而不被吸入（Ratchet.merges、absorbing、false_drawn、false_never_returns、false_lost、true_returns、true_not_drawn）。Exit 中动作 false 保持配置、动作 true 翻转它：{true} 在 false 下吸收、在 true 下不吸收，所以不是不变量；只取 false 的运行留在 {true} 中；离开的运行第一步所取的动作不保持 {true}（Exit.keeps、leaves、not_invariant、locked_in、leaving_takes）。不用 Lean 公理。",
     "en": "Let next : S → S be a determined law on a type S of any kind, with orbit Law.orbit. A region R is absorbing under next when R s gives R (next s) (Law.Absorbing); s is drawn into R when ¬ R s and R (orbit next s n) at some step (Law.DrawnInto); s is drawn when some absorbing region draws it (Law.Drawn); what lies ahead of s is the course from next s on (Law.Ahead). What lies ahead is absorbing (Law.absorbing_ahead); once the course is in an absorbing region it is in it at every later step (Law.Absorbing.orbit); s returns exactly where it lies ahead of itself (Law.returns_iff_ahead). Lock-in: with R absorbing, ¬ R s and R (orbit next s n), orbit next s (n + k) ≠ s for every k (Law.DrawnInto.never_back), so a drawn configuration never returns (Law.Drawn.not_returns). The main law, with no premise, no finiteness and no decidability: Drawn next s ↔ ¬ Returns next s (Law.drawn_iff_not_returns); an s that does not return is drawn into what lies ahead of it, entering at the first step (Law.drawnInto_ahead). The future narrows: Reachable next n is absorbing (Law.reachable_absorbing); an s that cannot be had n steps on is drawn into Reachable next n, entering at step n (Law.reachable_orbit, Law.lost_drawn), so it is drawn (Law.drawn_of_lost); what returns is absorbing (Law.returning_absorbing). Merging: where x ≠ y and next x = next y, ¬ (Returns next x ∧ Returns next y), with no finiteness (Law.Merges.not_both_return, through Law.periods_meet: a + (a + 1)·b = b + (b + 1)·a); so ¬ (¬ Drawn next x ∧ ¬ Drawn next y) (Law.merge_draws), and a law that merges has ¬¬ ∃ s, Drawn next s (Law.Merges.draws); where nothing is drawn, next x = next y gives ¬ x ≠ y (Law.none_drawn_merges_nothing), and with decidable equality the law merges nothing (Law.none_drawn_lossless). Where a list holds every configuration: being drawn rules out Lossless and KeepsPossibilities (Law.Drawn.not_lossless, Law.Lossless.not_drawn, Law.Drawn.not_keeps); with decidable equality, Lossless next ↔ ∀ s, ¬ Drawn next s (Law.lossless_iff_none_drawn); Returns next s ↔ ∀ n, Reachable next n s (Law.returns_iff_always_reachable), so Drawn next s ↔ ¬ ∀ n, Reachable next n s (Law.drawn_iff_lost, right to left with no list); every course enters a configuration that returns (Law.enters_returning), so a configuration that does not return is drawn into what returns (Law.drawnInto_returning). Open witnesses: Drawn Nat.succ 0 ∧ Lossless Nat.succ (Law.succ_drawn_lossless); Drawn Nat.pred 1 ∧ KeepsPossibilities Nat.pred (Law.pred_drawn_keeps, through Law.pred_orbit_zero). Processes: Absorbing next R ↔ Invariant (Law.process next) R (Law.absorbing_iff_invariant); R is absorbing under the move a (AbsorbingUnder); Invariant P R ↔ ∀ a, AbsorbingUnder P R a (invariant_iff_every_move); with R invariant, R t and ¬ R s, ¬ Reach P t s (Invariant.locks_out); where a run r is inside an invariant R at step n and outside it at step m, r.state (n + k) ≠ r.state m for every k (Run.locked_in); where every move from step n on keeps R, the run stays in R (Run.stays); where R (r.state n) and ¬ R (r.state (n + 1)), the move at step n does not keep R (Run.leaving_needs). In Ratchet every configuration goes to true: the law merges false and true, {true} is absorbing, false is drawn into it, never returns and cannot be had one step on, and true returns and is not drawn (Ratchet.merges, absorbing, false_drawn, false_never_returns, false_lost, true_returns, true_not_drawn). In Exit the move false keeps the configuration and the move true flips it: {true} is absorbing under false and not under true, so it is not invariant; the run that only moves false stays in {true}; the run that leaves takes, at its first step, a move that does not keep {true} (Exit.keeps, leaves, not_invariant, locked_in, leaving_takes). No Lean axiom is used."
@@ -142,6 +142,13 @@
         "zh": "Admission 的“终结吸收”（Flow.unsupported_stays）在流与网上、在其前提之下，是没有成员被支持这一区域的吸收；两种表示之间的实例定理没有给出。",
         "en": "Admission's absorbing end (Flow.unsupported_stays) is, on flows and webs and under its premises, the absorption of the region in which no member is supported; instance theorems between the two representations are not given."
       }
+    },
+    {
+      "id": "necessarily-drawn-is-not-returning",
+      "detail": {
+        "zh": "对每个过程的主律：必然被吸入恰是不返回，可能被吸入允许在另一路径中返回；Captured 的规则区域是吸收区域。",
+        "en": "The main law for every process: necessarily drawn is exactly not returning, possibly drawn allows return on another course; Captured's rule region is an absorbing region."
+      }
     }
   ],
   "counterexamples": [
@@ -168,12 +175,12 @@
     }
   ],
   "limitations": {
-    "zh": "主律近乎定义：被吸入只要求存在一个吸收区域，所用的区域是配置自己的前方，所以它把锁定认同为不返回，不是经典意义的吸引子（吸引一个邻域、极小、有拓扑或度量）；数学（有限集上轨道最终周期，非单射有不周期的点）是复用的；主律只对确定的律，不确定过程上的吸引（可能与必然被吸入）没有陈述；哪一个被合并的配置被吸入不选出，只陈述双重否定；实际展开进入哪些区域、吸引域多深多宽不推出；表示之外的逃逸不陈述，确定的律中没有来自其外的动作或交换；见证只有两个配置；与 Capture、Admission 与 P53 的连接是读法；读法是 AI 的，待 Ren；不含伦理谓词；尚无独立审查。",
-    "en": "The main law is close to definitional: being drawn asks only for some absorbing region, and the region used is the configuration's own course ahead, so it identifies lock-in with not returning and is not an attractor in the classical sense (attracting a neighbourhood, minimal, with a topology or measure); the mathematics (eventual periodicity on finite sets, a non-injective map having a point that is not periodic) is reused; the main law is for determined laws only, and attraction for processes that are not determined (possibly or necessarily drawn) is not stated; which of two merged configurations is drawn is not chosen, only the double-negation form is stated; which regions actual unfoldings enter and how deep or wide a basin is are not derived; escape from beyond the representation is not stated, a determined law having no move or exchange from beyond; the witnesses have two configurations; the links to Capture, Admission and P53 are readings; the readings are the AI's, pending Ren; contains no ethical predicate; not yet independently reviewed."
+    "zh": "主律近乎定义：被吸入只要求存在一个吸收区域，所用的区域是配置自己的前方，所以它把锁定认同为不返回，不是经典意义的吸引子（吸引一个邻域、极小、有拓扑或度量）；数学（有限集上轨道最终周期，非单射有不周期的点）是复用的；主律在此只对确定的律（对每个过程，必然被吸入恰是不返回，可能被吸入允许返回，见 necessarily-drawn-is-not-returning，P81）；哪一个被合并的配置被吸入不选出，只陈述双重否定；实际展开进入哪些区域、吸引域多深多宽不推出；表示之外的逃逸不陈述，确定的律中没有来自其外的动作或交换；见证只有两个配置；与 Capture、Admission 与 P53 的连接是读法；读法是 AI 的，待 Ren；不含伦理谓词；尚无独立审查。",
+    "en": "The main law is close to definitional: being drawn asks only for some absorbing region, and the region used is the configuration's own course ahead, so it identifies lock-in with not returning and is not an attractor in the classical sense (attracting a neighbourhood, minimal, with a topology or measure); the mathematics (eventual periodicity on finite sets, a non-injective map having a point that is not periodic) is reused; the main law is here for determined laws only (for every process, necessarily drawn is not returning and possibly drawn allows return: see necessarily-drawn-is-not-returning, P81); which of two merged configurations is drawn is not chosen, only the double-negation form is stated; which regions actual unfoldings enter and how deep or wide a basin is are not derived; escape from beyond the representation is not stated, a determined law having no move or exchange from beyond; the witnesses have two configurations; the links to Capture, Admission and P53 are readings; the readings are the AI's, pending Ren; contains no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085153.061517Z）：Becoming.Attraction 的 47 项定理全部空依赖，其中含 Law.DrawnInto.never_back、Law.drawn_iff_not_returns、Law.lost_drawn、Law.Merges.not_both_return、Law.lossless_iff_none_drawn、Law.drawnInto_returning与 Run.locked_in；同一回执覆盖包内 62 个模块（含只作导入的根模块与桥接），共 3156 项定理／4613 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085221.613502Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 64 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §89；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T085153.061517Z): the 47 theorems of Becoming.Attraction all have empty axiom reports, among them Law.DrawnInto.never_back, Law.drawn_iff_not_returns, Law.lost_drawn, Law.Merges.not_both_return, Law.lossless_iff_none_drawn, Law.drawnInto_returning and Run.locked_in; the same receipt covers the package's 62 modules (including the import-only root and the bridge) with 3156 theorems/4613 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085221.613502Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 64 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §89 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Attraction 的 47 项定理全部空依赖，其中含 Law.DrawnInto.never_back、Law.drawn_iff_not_returns、Law.lost_drawn、Law.Merges.not_both_return、Law.lossless_iff_none_drawn、Law.drawnInto_returning与 Run.locked_in；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085914.780427Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §89；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 47 theorems of Becoming.Attraction all have empty axiom reports, among them Law.DrawnInto.never_back, Law.drawn_iff_not_returns, Law.lost_drawn, Law.Merges.not_both_return, Law.lossless_iff_none_drawn, Law.drawnInto_returning and Run.locked_in; the same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085914.780427Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §89 of the integration note; there is no independent review yet."
   },
   "references": [
     {
@@ -274,19 +281,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6b3ab4826b9335e8d97a5cd3be21a7fc907a5a1f246af1f8baf775a8c55b1add",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ceab038a29ce815a4b16a14b67c6f37a398dc0e6db742d10bada1c4dafd015d5",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9ac31959acb84b471b667ad7b12a7be17a3fe4316b0e4624426810cf5fd27dc9",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
       "declarations": []
     },
     {
@@ -320,8 +327,8 @@
     }
   ],
   "next_delta": {
-    "zh": "不确定过程上的吸引：可能被吸入与必然被吸入，与 Becoming.Experiment 的带动作运行相接；Capture 落地后，Captured 的规则区域作为 Law.Absorbing 与 Law.DrawnInto 的实例定理；Admission 的终结吸收作为吸收区域的实例（需要流与网上的确定律）；相等可判定时有限多配置之内吸引域的计数与合并的计数；独立审查。",
-    "en": "Attraction for processes that are not determined, possibly and necessarily drawn, connected with Becoming.Experiment's runs with moves; once Capture has landed, Captured's rule region as an instance of Law.Absorbing and Law.DrawnInto; Admission's absorbing end as an instance of an absorbing region (needing a determined law on flows and webs); with equality decided, the count of a basin and of merges within finitely many configurations; an independent review."
+    "zh": "不确定过程上的吸引与 Captured 的规则区域作为吸收区域已由 necessarily-drawn-is-not-returning 给出（P81）；在界内被吸入；Admission 的终结吸收作为吸收区域的实例（需要流与网上的确定律）；相等可判定时有限多配置之内吸引域的计数与合并的计数；独立审查。",
+    "en": "attraction for processes that are not determined and Captured's rule region as an absorbing region are given by necessarily-drawn-is-not-returning (P81); being drawn in within a bound; Admission's absorbing end as an instance of an absorbing region (needing a determined law on flows and webs); with equality decided, the count of a basin and of merges within finitely many configurations; an independent review."
   },
   "history": [
     {
@@ -343,6 +350,14 @@
     {
       "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
       "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P81：next_delta 中不确定过程上的吸引与 Captured 规则区域两项由 necessarily-drawn-is-not-returning 回答；见整合文档 §99。断言不变。",
+      "en": "2026-10-12 P81: the next_delta items on attraction for processes that are not determined and on Captured's rule region are answered by necessarily-drawn-is-not-returning; see §99 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
     }
   ]
 }

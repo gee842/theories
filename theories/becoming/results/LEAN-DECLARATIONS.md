@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 197 | 5,058 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 199 | 5,204 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -76,6 +76,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [Boundaries.lean](lean-declarations/core.md#module-c3cdcfc6af74) | 生成核心与关系结构 / Generative core and relational structure |
 | [BoundaryModels.lean](lean-declarations/core.md#module-5ffb89fcbb01) | 生成核心与关系结构 / Generative core and relational structure |
 | [BoundedRiskRevision.lean](lean-declarations/ethics.md#module-3588f48eb92f) | 规范根据与生成方向 / Normative grounding and generative direction |
+| [Branching.lean](lean-declarations/core.md#module-42cb6c343496) | 生成核心与关系结构 / Generative core and relational structure |
 | [Bridge.lean](lean-declarations/core.md#module-014c999286cd) | 生成核心与关系结构 / Generative core and relational structure |
 | [BridgesAudit.lean](lean-declarations/valuation.md#module-e1bed40c8da7) | 评价的形成与良知 / Valuation development and liangzhi |
 | [CalibratedMacro.lean](lean-declarations/inquiry.md#module-c90fa4594397) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
@@ -326,6 +327,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [GroundingContract.lean](lean-declarations/concern.md#module-618302908b9f) | 关切与共同活动 / Concern and shared activity |
 | [GrownFragmentation.lean](lean-declarations/ethics.md#module-93d3383fc37b) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [HistoricalBinding.lean](lean-declarations/inquiry.md#module-b3efe142595e) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [Histories.lean](lean-declarations/core.md#module-41f2b00bb90e) | 生成核心与关系结构 / Generative core and relational structure |
 | [HistoryIdeals.lean](lean-declarations/abstraction.md#module-81928aacbe61) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [HistoryRealization.lean](lean-declarations/core.md#module-a7d9b0de6d97) | 生成核心与关系结构 / Generative core and relational structure |
 | [Horizon.lean](lean-declarations/core.md#module-35179900d759) | 生成核心与关系结构 / Generative core and relational structure |

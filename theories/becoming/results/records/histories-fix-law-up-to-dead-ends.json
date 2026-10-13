@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "id": "histories-fix-law-up-to-dead-ends",
+  "title": {
+    "zh": "律与历史的完备对应：一族历史恰在含有它的拼接时是某个律的历史族；历史把律固定到死路为止",
+    "en": "Law and history correspond completely: a family of histories is a law's exactly where it holds its splices, and histories fix a law up to its dead ends"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
+  "claim": {
+    "zh": "设 S 为配置类型，A 为动作类型，历史是一对序列 g : ℕ → S 与 m : ℕ → A。律 P 容许历史（Admits P g m），指历史的每一步都是 P 的一步；运行的历史为其律所容许（Run.admits）。一族历史 H 所显示的律（ShownBy H）以 H 中历史所走的各步为步；它是容许 H 中每段历史的最小的律（ShownBy.admits、shownBy_le_iff）。一族历史含有它的拼接（SpliceClosed H），指每个由它自己的步组成的序列都在族中。律的历史族含有它的拼接（admits_spliceClosed）；一族历史恰在含有它的拼接时是某个律的历史族，它所显示的律就是这样一个律（family_iff）。一族历史一致（ConsistentFamily H），指其中任何两段历史从不以同一动作把同一配置带到两处；它所显示的律恰在这时确定（shownBy_determined_iff），一族历史恰在含有它的拼接且一致时是某个确定的律的历史族（determined_family_iff）。律的活的步（live P）是它的某段历史所走的步；律与它的活的步容许同样的历史（admits_live_iff），两个律恰在活的步相同时容许同样的历史（same_histories_iff），活的律没有死路（live_live），死路的那一步不是活的（DeadEnd.not_live）。所以不计死路的律与含有拼接的历史族一一对应：拼接与死路就是律与历史之间的全部规律。会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史（same_finite_histories_iff）；一族有限历史恰在由它的步组成时，即空序列不移动、序列是第一步接其余时，是某个律的有限历史族（MadeOfSteps、finite_family_iff）。死路是不终止历史的事实。不加前提。",
+    "en": "Let S be a type of configurations and A one of moves; a history is a pair of sequences g : ℕ → S and m : ℕ → A. A law P admits a history (Admits P g m) where every step the history takes is a step of P; a run's history is admitted by its law (Run.admits). The law a family of histories H shows (ShownBy H) has as steps the steps its histories take; it is the least law admitting each history of H (ShownBy.admits, shownBy_le_iff). A family holds its splices (SpliceClosed H) where every sequence made of its own steps is in it. The histories of a law hold their splices (admits_spliceClosed), and a family is the family of some law's histories exactly where it holds its splices, the law it shows being one such law (family_iff). A family is consistent (ConsistentFamily H) where no two of its histories take one move at one configuration to two outcomes; the law it shows is determined exactly then (shownBy_determined_iff), and a family is the family of a determined law's histories exactly where it holds its splices and is consistent (determined_family_iff). The live steps of a law (live P) are those some history of it takes; a law and its live steps admit the same histories (admits_live_iff), two laws admit the same histories exactly where they have the same live steps (same_histories_iff), the live law has no dead end (live_live), and the dead end's step is not live (DeadEnd.not_live). So laws up to their dead ends and families holding their splices correspond one to one: splicing and dead ends are the whole law of law and history. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (same_finite_histories_iff), and a family of finite histories is a law's exactly where it is made of its steps, the empty course going nowhere and a course being a first step followed by the rest (MadeOfSteps, finite_family_iff). The dead end is a fact of unending histories. No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：family_iff、determined_family_iff、shownBy_determined_iff、same_histories_iff 与 admits_live_iff 是双向的，对每个律与每族历史成立。",
+      "en": "No premise: family_iff, determined_family_iff, shownBy_determined_iff, same_histories_iff and admits_live_iff are two-way and hold for every law and every family of histories."
+    },
+    {
+      "zh": "历史有两种：不终止的序列（核心的运行）与有限的动作序列（Trace）；死路只在前者中出现。",
+      "en": "Histories are of two kinds: unending sequences (the core's runs) and finite courses (Trace); dead ends occur only in the first."
+    },
+    {
+      "zh": "一族历史是序列对上的谓词；族之间的相等以“对每段历史等价”陈述，不用函数外延性。",
+      "en": "A family is a predicate on pairs of sequences; families are compared by equivalence at every history, without function extensionality."
+    }
+  ],
+  "correspondence": {
+    "zh": "P76（工作板），按 Ren 2026-10-12 的“move towards 100%”：完备在强的意义上，即一类规律是该类的全部规律，此前只对计数成立（tally_iff_counted）。P69 证明历史固定它所显示的律，并指出对应不是同一之处：死路与拼接；这里证明这两者就是全部。读法（AI 的，待 Ren）：Ren 同意律与历史是同一展开的两种读法、律从展开读出（“there are no two realities”）；在本结果之下，从历史读出的律就是含有拼接的历史族，别无其他；置于展开之上的律所能多出的只是死路，没有历史显示它们；拼接是记忆的缺席：律从所在处作答，不从怎样来到此处作答。见整合文档 §98。",
+    "en": "P76 (work board), following Ren's “move towards 100%” of 12 October 2026: completeness in the strong sense, the laws of a kind being all its laws, held before for counting only (tally_iff_counted). P69 proved that a history fixes the law it shows and named where the correspondence is not an identity, dead ends and splices; this shows that these two are the whole of it. Reading (the AI's, pending Ren): Ren agreed that law and history are one unfolding read two ways, the law read off the unfolding (“there are no two realities”); with this result, a law read off histories is a family of histories holding its splices and nothing else; what a law set over the unfolding can add are dead ends, which no history shows; the splice is memory's absence: a law answers from where one is, not from how one came there. See the integration document §98."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+  "aliases": [
+    "Becoming.Admits",
+    "Becoming.ShownBy",
+    "Becoming.SpliceClosed",
+    "Becoming.family_iff",
+    "Becoming.ConsistentFamily",
+    "Becoming.determined_family_iff",
+    "Becoming.live",
+    "Becoming.same_histories_iff",
+    "Becoming.DeadEnd.not_live",
+    "splice-closed",
+    "含有拼接",
+    "live steps",
+    "活的步",
+    "law and history complete",
+    "律与历史的完备对应",
+    "Becoming.same_finite_histories_iff",
+    "Becoming.MadeOfSteps",
+    "Becoming.finite_family_iff",
+    "histories that stop",
+    "会停止的历史"
+  ],
+  "dependencies": [
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 P69 的 Run、DeadEnd 与对应的界限：一段历史的情形（Shown、Consistent、exists_law_iff）推广到历史族，死路与拼接成为全部规律。",
+        "en": "Reuses P69's runs, DeadEnd and the limits of the correspondence: the case of one history (Shown, Consistent, exists_law_iff) generalizes to families, dead ends and splices becoming the whole law."
+      },
+      "interface": {
+        "output": {
+          "zh": "一段历史所显示的律、死路与拼接的见证。",
+          "en": "The law one history shows, and the witnesses of dead end and splice."
+        },
+        "input": {
+          "zh": "律与历史族的完备对应。",
+          "en": "The complete correspondence of laws and families of histories."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "joint-difference-making",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Determined：确定的律的历史族恰是含有拼接且一致的族。",
+        "en": "Reuses Determined: the families of determined laws are exactly those holding their splices and consistent."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定性。",
+          "en": "Determinacy."
+        },
+        "input": {
+          "zh": "一致的历史族。",
+          "en": "Consistent families of histories."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "trace-law-equivalence",
+      "detail": {
+        "zh": "外围的迹与律的等价；这里在核心中给出律与历史族的完备对应。",
+        "en": "The periphery's equivalence of traces and laws; here the complete correspondence of laws and families of histories in the core."
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "detail": {
+        "zh": "保留的历史从不返回；它所显示的律只容许它（P69 的 Run.keepHistory_shown）。",
+        "en": "A kept history never returns; the law it shows admits only it (P69's Run.keepHistory_shown)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "detail": {
+        "zh": "死路：有一步而没有历史的律（DeadEnd.no_history），它的步不是活的（DeadEnd.not_live）；拼接：重访的历史所显示的律容许它没走过的历史（Splice.spliced）。",
+        "en": "Dead end: a law with a step and no history (DeadEnd.no_history), whose step is not live (DeadEnd.not_live); splice: the law a revisiting history shows admits a history it never took (Splice.spliced)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "实际展开的历史是否终止没有陈述；实际展开是哪一族历史没有陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "Whether an actual unfolding's histories stop is not stated; which family an actual unfolding is is not stated; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Histories 的 27 项定理全部空依赖，其中含 shownBy_le_iff、family_iff、shownBy_determined_iff、determined_family_iff、admits_live_iff、same_histories_iff、DeadEnd.not_live、same_finite_histories_iff与 finite_family_iff；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085914.780427Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §98；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 27 theorems of Becoming.Histories all have empty axiom reports, among them shownBy_le_iff, family_iff, shownBy_determined_iff, determined_family_iff, admits_live_iff, same_histories_iff, DeadEnd.not_live, same_finite_histories_iff and finite_family_iff. The same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085914.780427Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §98 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "role": "proof",
+      "sha256": "b65ce283e0ab62d874924b5ec786cff2248f29593b690e0487cacc9bfbf913f0",
+      "declarations": [
+        "Becoming.Admits",
+        "Becoming.Run.admits",
+        "Becoming.ShownBy",
+        "Becoming.ShownBy.admits",
+        "Becoming.shownBy_le_iff",
+        "Becoming.SpliceClosed",
+        "Becoming.admits_spliceClosed",
+        "Becoming.family_iff",
+        "Becoming.ConsistentFamily",
+        "Becoming.shownBy_determined_iff",
+        "Becoming.determined_family_iff",
+        "Becoming.live",
+        "Becoming.live_le",
+        "Becoming.admits_live_iff",
+        "Becoming.same_histories_iff",
+        "Becoming.live_live",
+        "Becoming.DeadEnd.not_live",
+        "Becoming.Trace.of_same",
+        "Becoming.same_finite_histories_iff",
+        "Becoming.MadeOfSteps",
+        "Becoming.finite_family_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.Shown",
+        "Becoming.Consistent",
+        "Becoming.Run.keepHistory_shown",
+        "Becoming.exists_law_iff",
+        "Becoming.DeadEnd.no_history",
+        "Becoming.Splice.spliced"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.Trace",
+        "Generative.trace_nil_iff",
+        "Generative.trace_cons_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Histories",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "Ren 的判断：律是否读作含有拼接的历史族，以及展开的历史是否读作不终止。",
+    "en": "Ren's judgment whether a law reads as a family of histories holding its splices, and whether an unfolding's histories read as unending."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P76：新增，按 Ren“move towards 100%”；见整合文档 §98。",
+      "en": "2026-10-12 P76: added, following Ren's ‘move towards 100%’; see §98 of the integration note."
+    }
+  ]
+}

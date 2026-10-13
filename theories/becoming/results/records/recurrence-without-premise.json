@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T01:25:52+00:00",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
   "claim": {
     "zh": "对任意构型上的任意变化之律，不加前提、不用可判定性。鸽巢：一个列表持有一个序列的前 l.length + 1 项时其中两项相同（revisits_within，只用给定的成员关系）；所以列表持有的序列从每一步起都重访（revisits_from），任何过程的任何运行也是（Run.revisits_from），从不重访的序列没有列表持有（unheld_of_new、unlisted_of_new）。构型的量沿序列从不下降、跨每次变化都上升（Marks）时，列表持有的序列的变化不复现（Marks.change_stops、Run.change_stops）。对确定的律 next（Law.orbit）：某步不能到达的构型此后都不能到达（Law.lost_stays；任何过程中沿可行路径失去的可达在每个延续中失去，Reach.lost_stays）；被合并的构型此后不分开（Law.merged_stays）；每个构型都回返时律不合并（Law.lossless_of_returns）；回返的构型每一步都可得（Law.Returns.reachable）；撤销就是继续（Law.Returns.undo）。列表持有每个构型时：律不合并（Law.Lossless）恰是每个构型都回返（Law.lossless_iff_returns），恰是每个构型在每一步都可得（Law.returns_iff_keeps）；合并永久失去一个可能（Law.Merges.loses）；无损而有构型不回返就没有列表持有每个构型（Law.Lossless.unlisted）；无损时沿轨道从不下降的量不变（Law.Lossless.no_rise），所以从不下降而某步上升的量需要合并（Law.rise_not_lossless）。开放的见证：Nat.succ 不合并、不回返、一步后不能再有 0、每步上升（Law.succ_open）；Nat.pred 合并 0 与 1 而每个数每步都可得（Law.pred_open）。保留历史（Law.withHistory：当下按律继续并进入过去）：每个律都不合并（Law.withHistory_lossless）、不重访（Law.withHistory_new）、不回返（Law.withHistory_never_returns），开端在第一步后不能再有（Law.withHistory_loses_beginning），没有列表持有所保留的历史（Law.withHistory_unlisted）；当下按律本身继续（Law.present_orbit），当下回返时带着另一段历史（Law.return_keeps_history）；展开经过的构型有列表持有时，从每一步起两段不同的历史共有一个当下（Law.present_forgets）。确定的律是脊柱的过程，其轨道是一个运行（Law.process、Law.run）。",
     "en": "For every law of change on configurations of any kind, with no premise and no decidability. Pigeonhole: a list holding the first l.length + 1 values of a sequence holds two equal ones (revisits_within, using membership as given); so a sequence held by a list revisits from every step on (revisits_from), as does every run of every process (Run.revisits_from), and no list holds a sequence that never revisits (unheld_of_new, unlisted_of_new). Where a quantity of the configuration never falls along a sequence and rises across every change (Marks), the change of a sequence held by a list does not recur (Marks.change_stops, Run.change_stops). Under a determined law next (Law.orbit): a configuration not reachable at a step is not reachable at any later step (Law.lost_stays; for every process, reachability lost along an admissible path is lost along every continuation, Reach.lost_stays); merged configurations are never told apart again (Law.merged_stays); where every configuration returns the law merges nothing (Law.lossless_of_returns); a configuration that returns can be had at every step (Law.Returns.reachable); undoing is going on (Law.Returns.undo). Where a list holds every configuration: the law merges nothing (Law.Lossless) exactly where every configuration returns (Law.lossless_iff_returns), and exactly where every configuration can be had at every step (Law.returns_iff_keeps); a merge loses a possibility for good (Law.Merges.loses); a law merging nothing under which some configuration never returns has no list holding every configuration (Law.Lossless.unlisted); merging nothing, a quantity that never falls along an orbit keeps its value (Law.Lossless.no_rise), so one that never falls and rises at some step needs a merge (Law.rise_not_lossless). Open witnesses: Nat.succ merges nothing, never returns, cannot have 0 again after one step and rises at every step (Law.succ_open); Nat.pred merges 0 and 1, yet every number can be had at every step (Law.pred_open). Keeping its history (Law.withHistory: the present goes on by the law and passes into the past), every law merges nothing (Law.withHistory_lossless), never revisits (Law.withHistory_new) and never returns (Law.withHistory_never_returns); its beginning cannot be had again after the first step (Law.withHistory_loses_beginning), and no list holds the kept history (Law.withHistory_unlisted); the present goes on by the law itself (Law.present_orbit), and where it returns it comes back with another history (Law.return_keeps_history); where a list holds the configurations an unfolding passes through, from every step on two different histories share one present (Law.present_forgets). A determined law is a process of the spine, and its orbit a run of it (Law.process, Law.run)."
@@ -71,6 +71,13 @@
         "zh": "统一计划 R6：第一部分零前提一线中“对每个变化之律成立的”；这不是无公理的整体演绎。",
         "en": "Unification plan R6: ‘what holds of every law of change’ in Part I's zero-premise line; this is not the deduction of the whole without axioms."
       }
+    },
+    {
+      "id": "returning-where-the-course-branches",
+      "detail": {
+        "zh": "对每个过程：返回的精确条件，三方等价在路径分支时分开之处。",
+        "en": "For every process: the exact condition for returning, and where the three-way equivalence comes apart when the course branches."
+      }
     }
   ],
   "counterexamples": [
@@ -83,12 +90,12 @@
     }
   ],
   "limitations": {
-    "zh": "离散的步；“有限多构型”指某个列表持有它们，不是基数；无损、回返与保留可能的等价只对确定的律，非确定过程的形式未陈述；“当下遗忘”指两段不同的历史共有一个当下，遗忘的计数（需要判定构型相等）未陈述；“变化不复现”是复现的否定，不是某步之后不再变化；数学（鸽巢；有限集上的单射是双射，每点回返）是复用的；对熵、业与物理学的对应是 AI 的读法；与熵的会话的结果的实例定理未给出；不含伦理谓词；尚无独立审查。",
-    "en": "Discrete steps; ‘finitely many configurations’ means that a list holds them, not a cardinality; the equivalence of losing nothing, returning and keeping every possibility is for determined laws, and no form for processes that are not determined is stated; ‘the present forgets’ means that two different histories share one present, and no count of what is forgotten (which needs equality of configurations decided) is stated; ‘change does not recur’ is a negated recurrence, not a step after which nothing changes; the mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is reused; the readings as entropy, as karmic passing and as physics are the AI's; instance theorems for the entropy session's results are not given; no ethical predicate; not yet independently reviewed."
+    "zh": "离散的步；“有限多构型”指某个列表持有它们，不是基数；无损、回返与保留可能的等价只对确定的律（对每个过程三者分开：保留每个可能不给回返，合并不必失去可能，不合并沿运行给回返，见 returning-where-the-course-branches，P81）；“当下遗忘”指两段不同的历史共有一个当下，遗忘的计数（需要判定构型相等）未陈述；“变化不复现”是复现的否定，不是某步之后不再变化；数学（鸽巢；有限集上的单射是双射，每点回返）是复用的；对熵、业与物理学的对应是 AI 的读法；与熵的会话的结果的实例定理未给出；不含伦理谓词；尚无独立审查。",
+    "en": "Discrete steps; ‘finitely many configurations’ means that a list holds them, not a cardinality; the equivalence of losing nothing, returning and keeping every possibility is for determined laws (for every process the three come apart: keeping every possibility does not give returning, a merge need not lose a possibility, merging nothing gives returning along runs; see returning-where-the-course-branches, P81); ‘the present forgets’ means that two different histories share one present, and no count of what is forgotten (which needs equality of configurations decided) is stated; ‘change does not recur’ is a negated recurrence, not a step after which nothing changes; the mathematics (pigeonhole; an injection of a finite set into itself is a bijection, every point of which returns) is reused; the readings as entropy, as karmic passing and as physics are the AI's; instance theorems for the entropy session's results are not given; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085153.061517Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 62 个模块，核心闭包 42 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T085221.613502Z 通过。尚无独立审查；作者反审见整合文档 §68。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T085153.061517Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 40 modules of the package and a core closure of 42 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T085221.613502Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Recurrence 的 68 项声明（55 项定理）全部空依赖（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 64 个模块，核心闭包 42 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T085914.780427Z 通过。尚无独立审查；作者反审见整合文档 §68。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 68 declarations of Becoming.Recurrence (55 theorems) all have empty axiom reports (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the 40 modules of the package and a core closure of 42 modules, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T085914.780427Z passed. Not yet independently reviewed; the author's counterreview is in section 68 of the integration note."
   },
   "references": [
     {
@@ -179,25 +186,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6b3ab4826b9335e8d97a5cd3be21a7fc907a5a1f246af1f8baf775a8c55b1add",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ceab038a29ce815a4b16a14b67c6f37a398dc0e6db742d10bada1c4dafd015d5",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "fb97c9ad508442f36734e5bdc9f77bf74b90a8fbdee16dc9fc6fe91a1c1b1703",
+      "sha256": "06f73c1771049aa2901188a7d0e32752a2bf63235c85036acbb9fa8b2a0c0995",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "9ac31959acb84b471b667ad7b12a7be17a3fe4316b0e4624426810cf5fd27dc9",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
       "declarations": []
     },
     {
@@ -224,8 +231,8 @@
     }
   ],
   "next_delta": {
-    "zh": "熵的会话的 Web.Determined、Web.Merges、Flow.Balances.unending_change_revisits 与 World.forgets 作为本结果的实例（两边落地后，由后落地者给出）；非确定过程的无损与回返；在可判定相等之下遗忘的计数作为一个不减的量；独立审查。",
-    "en": "The entropy session's Web.Determined, Web.Merges, Flow.Balances.unending_change_revisits and World.forgets as instances of this result (given by whichever lands second); losing nothing and returning for processes that are not determined; with equality decided, the count of what is forgotten as a quantity that never falls; an independent review."
+    "zh": "熵的会话的 Web.Determined、Web.Merges、Flow.Balances.unending_change_revisits 与 World.forgets 作为本结果的实例（两边落地后，由后落地者给出）；非确定过程的无损与回返已由 returning-where-the-course-branches 给出（P81）；对每个能动的构型不加选择地陈述沿运行的定律；在可判定相等之下遗忘的计数作为一个不减的量；独立审查。",
+    "en": "The entropy session's Web.Determined, Web.Merges, Flow.Balances.unending_change_revisits and World.forgets as instances of this result (given by whichever lands second); losing nothing and returning for processes that are not determined are given by returning-where-the-course-branches (P81); the laws along runs stated for every configuration that can move, without a choice; with equality decided, the count of what is forgotten as a quantity that never falls; an independent review."
   },
   "history": [
     {
@@ -275,6 +282,14 @@
     {
       "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
       "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P81：next_delta 中非确定过程的无损与回返一项由 returning-where-the-course-branches 回答；见整合文档 §99。断言不变。",
+      "en": "2026-10-12 P81: the next_delta item on losing nothing and returning for processes that are not determined is answered by returning-where-the-course-branches; see §99 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
     }
   ]
 }

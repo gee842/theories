@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "id": "returning-where-the-course-branches",
+  "title": {
+    "zh": "分支过程的返回：返回者每步可得；处处返回恰是每个过程不离开的区域都保留它自己的每个可能；保留每个可能不给返回，不合并沿运行给返回，合并不必失去可能",
+    "en": "Returning where the course branches: what returns can be had at every step, and every configuration returns exactly where every region the process never leaves keeps every possibility of its own; keeping every possibility does not give returning, merging nothing gives it along runs, and a merge need not lose a possibility"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
+  "claim": {
+    "zh": "对过程 P：配置 n 步之后可得（Branching.Reachable），指有 n 个动作的路径通向它；它返回（Branching.Returns），指从它的一步通向能再得到它之处；过程合并（Branching.Merges、Branching.Lossless），指两个不同的配置一步到同一处。在确定的律下每个都是 R6 的（law_reachable_iff、law_returns_iff、law_lossless_iff、law_merges_iff、law_keeps_iff）。不加前提：失去的可能保持失去（Branching.lost_stays）；返回的配置每步可得（Branching.Returns.reachable），所以处处返回则保留每个可能（keeps_of_returns）；保留每个可能恰是每个配置下一步可得（keeps_iff_fed）。返回的精确条件：配置恰在它自己的路径下一步能得到它时返回（returns_iff_fed_ahead）；每个配置都返回，恰在过程从不离开的每个区域都保留它自己的每个可能时（returns_iff_keepsWithin、returns_iff_fedWithin、keepsWithin_iff_fedWithin），不用有限性。只沿运行、在有限多配置中成立：不合并时运行的每个配置在运行上回来（Lossless.comes_back、Lossless.recurs），运行开始处的配置返回（Branching.Lossless.returns），沿运行没有上升（Branching.Lossless.no_rise），上升需要合并（Branching.rise_not_lossless），不合并而有不返回的配置需要开放（Branching.Lossless.unlisted）。见证：Transit 中每个配置能动、每个可能都保留，between 却从不返回（Transit.keeps_not_returns）；OneWay 合并 false 与 true，两者都返回，每个可能都保留（OneWay.merge_keeps）；P69 的 Fork 不合并而其起点从不返回，因为其终点不能动，所以 Lossless.returns 需要运行（fork_lossless_not_returns）；合并后保持合并需要确定性（Determined.stays_merged；Coarse.meet_and_part）。不加前提。",
+    "en": "For a process P: a configuration can be had n steps on (Branching.Reachable) where some course of n moves leads to it; it returns (Branching.Returns) where a step from it leads to where it can be had again; a process merges (Branching.Merges, Branching.Lossless) where two distinct configurations step to one. Under a determined law each is R6's (law_reachable_iff, law_returns_iff, law_lossless_iff, law_merges_iff, law_keeps_iff). With no premise: a possibility lost stays lost (Branching.lost_stays); a configuration that returns can be had at every step (Branching.Returns.reachable), so where every configuration returns every possibility is kept (keeps_of_returns); every possibility is kept exactly where every configuration can be had at the next step (keeps_iff_fed). The exact condition for returning: a configuration returns exactly where its own course can have it at the next step (returns_iff_fed_ahead); every configuration returns exactly where every region the process never leaves keeps every possibility of its own (returns_iff_keepsWithin, returns_iff_fedWithin, keepsWithin_iff_fedWithin), with no finiteness used. Along runs, within finitely many configurations: where nothing merges every configuration of a run comes back on the run (Lossless.comes_back, Lossless.recurs), a configuration at which a run begins returns (Branching.Lossless.returns), nothing rises along a run (Branching.Lossless.no_rise), a rise needs a merge (Branching.rise_not_lossless), and merging nothing with a configuration that never returns needs openness (Branching.Lossless.unlisted). Witnesses: in Transit every configuration can move and every possibility is kept, yet between never returns (Transit.keeps_not_returns); OneWay merges false and true, both return, and every possibility is kept (OneWay.merge_keeps); P69's Fork merges nothing and its origin never returns, its ends being unable to move, so Lossless.returns needs its run (fork_lossless_not_returns); merged stays merged needs determinacy (Determined.stays_merged; Coarse.meet_and_part). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "沿运行的定律以一个给定的运行为前提：从每个能动的配置造出运行要在每步选择延续，即一种选择。",
+      "en": "The laws along runs take a run as given: building a run from every configuration that can move needs choosing a continuation at each step, which is a choice."
+    },
+    {
+      "zh": "沿运行的定律要求列表含有运行的配置（有限多配置）。",
+      "en": "The laws along runs require a list holding the run's configurations (finitely many configurations)."
+    }
+  ],
+  "correspondence": {
+    "zh": "P81（工作板），按 Ren 2026-10-12 的“move towards 100%”：R6 的三方等价对不确定的律不成立（a→a、a→b、b→c、c→c 中 b 从不返回）；Ren 随后把这比作费曼图（见 P82）。这里对每个过程陈述 R6 的规律。读法（AI 的，待 Ren）：路径分支之处，返回比保留每个可能要求更多；R6 的“不失去即返回”是有限多配置中确定变化的规律，对每个过程它沿每个运行成立。见整合文档 §99。",
+    "en": "P81 (work board), following Ren's “move towards 100%” of 12 October 2026: R6's three-way equivalence fails for laws that are not determined (with a→a, a→b, b→c, c→c, b never returns); Ren then compared this with Feynman diagrams (see P82). This states R6's laws for every process. Reading (the AI's, pending Ren): where the course branches, returning asks more than keeping every possibility; R6's “losing nothing is returning” is a law of determined change within finitely many configurations, and under every process it holds along each run. See the integration document §99."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+  "aliases": [
+    "Becoming.Branching.Reachable",
+    "Becoming.Branching.Returns",
+    "Becoming.Branching.Lossless",
+    "Becoming.Branching.returns_iff_fed_ahead",
+    "Becoming.Branching.returns_iff_keepsWithin",
+    "Becoming.Branching.keeps_iff_fed",
+    "Becoming.Branching.Transit.keeps_not_returns",
+    "Becoming.Branching.OneWay.merge_keeps",
+    "Becoming.Branching.Lossless.returns",
+    "returning under branching",
+    "分支下的返回"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 R6 的 Law.Returns、Lossless 与其规律；确定的律下每个新概念就是 R6 的。",
+        "en": "Reuses R6's Law.Returns, Lossless and their laws; under a determined law each new notion is R6's."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定变化的返回之律。",
+          "en": "The laws of return for determined change."
+        },
+        "input": {
+          "zh": "每个过程的返回之律。",
+          "en": "The laws of return for every process."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 P69 的 Run、Fork 与 Reach。",
+        "en": "Reuses P69's runs, Fork and Reach."
+      },
+      "interface": {
+        "output": {
+          "zh": "运行与分叉的见证。",
+          "en": "Runs and the fork witness."
+        },
+        "input": {
+          "zh": "沿运行的定律与其见证。",
+          "en": "The laws along runs and their witnesses."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "necessarily-drawn-is-not-returning",
+      "detail": {
+        "zh": "同一模块：可能与必然被吸入。",
+        "en": "The same module: possibly and necessarily drawn."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "detail": {
+        "zh": "Transit、OneWay 与 Fork：保留不给返回，合并不必失去，不合并需要运行。",
+        "en": "Transit, OneWay and Fork: keeping does not give returning, a merge need not lose, merging nothing needs a run."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "沿运行的定律以运行为给定；不陈述在界内被吸入；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The laws along runs take the run as given; being drawn in within a bound is not stated; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Branching 的 119 项定理全部空依赖，其中含 Branching.lost_stays、Branching.Returns.reachable、Branching.keeps_iff_fed、Branching.returns_iff_fed_ahead、Branching.returns_iff_keepsWithin、Branching.Lossless.returns、Branching.rise_not_lossless、Branching.Returns.run、Branching.Transit.keeps_not_returns、Branching.fork_lossless_not_returns、Branching.Determined.stays_merged与 Coarse.meet_and_part；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085914.780427Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §99；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 119 theorems of Becoming.Branching all have empty axiom reports, among them Branching.lost_stays, Branching.Returns.reachable, Branching.keeps_iff_fed, Branching.returns_iff_fed_ahead, Branching.returns_iff_keepsWithin, Branching.Lossless.returns, Branching.rise_not_lossless, Branching.Returns.run, Branching.Transit.keeps_not_returns, Branching.fork_lossless_not_returns, Branching.Determined.stays_merged and Coarse.meet_and_part. The same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085914.780427Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §99 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "sha256": "44a12701a76d10831d605eaba3acda3e02e311ed762e8cd5abdddb87f8736b83",
+      "declarations": [
+        "Becoming.Branching.Reachable",
+        "Becoming.Branching.KeepsPossibilities",
+        "Becoming.Branching.Returns",
+        "Becoming.Branching.Ahead",
+        "Becoming.Branching.Lossless",
+        "Becoming.Branching.Merges",
+        "Becoming.Branching.FedWithin",
+        "Becoming.Branching.Merges.not_lossless",
+        "Becoming.Branching.Reachable.earlier",
+        "Becoming.Branching.lost_stays",
+        "Becoming.Branching.trace_last",
+        "Becoming.Branching.Returns.pred",
+        "Becoming.Branching.Returns.reachable_from",
+        "Becoming.Branching.Returns.reachable",
+        "Becoming.Branching.keeps_of_returns",
+        "Becoming.Branching.fed_keeps",
+        "Becoming.Branching.Reachable.one",
+        "Becoming.Branching.keeps_iff_fed",
+        "Becoming.Branching.returns_iff_ahead",
+        "Becoming.Branching.invariant_ahead",
+        "Becoming.Branching.returns_iff_fed_ahead",
+        "Becoming.Branching.returns_iff_fedWithin",
+        "Becoming.Branching.KeepsWithin",
+        "Becoming.Branching.FedWithin.keeps",
+        "Becoming.Branching.keepsWithin_iff_fedWithin",
+        "Becoming.Branching.returns_iff_keepsWithin",
+        "Becoming.Run.onward",
+        "Becoming.Branching.Lossless.cancel",
+        "Becoming.Branching.Lossless.comes_back",
+        "Becoming.Branching.Lossless.recurs",
+        "Becoming.Branching.Lossless.returns",
+        "Becoming.Branching.Lossless.no_rise",
+        "Becoming.Branching.rise_not_lossless",
+        "Becoming.Branching.Lossless.unlisted",
+        "Becoming.Run.enters_returning",
+        "Becoming.Branching.trace_positions",
+        "Becoming.Branching.positions_reach",
+        "Becoming.Branching.lap",
+        "Becoming.Branching.lap_succ",
+        "Becoming.Branching.lap_le",
+        "Becoming.Branching.Returns.run",
+        "Becoming.Branching.Determined.moves_decide",
+        "Becoming.Branching.Determined.stays_merged",
+        "Becoming.Branching.Transit.Stage",
+        "Becoming.Branching.Transit.move",
+        "Becoming.Branching.Transit.process",
+        "Becoming.Branching.Transit.determined",
+        "Becoming.Branching.Transit.every",
+        "Becoming.Branching.Transit.total",
+        "Becoming.Branching.Transit.fed",
+        "Becoming.Branching.Transit.atAfter",
+        "Becoming.Branching.Transit.atAfter_invariant",
+        "Becoming.Branching.Transit.between_never",
+        "Becoming.Branching.Transit.before_returns",
+        "Becoming.Branching.Transit.keeps_not_returns",
+        "Becoming.Branching.Transit.returning_not_invariant",
+        "Becoming.Reach.of_dead_end",
+        "Becoming.Branching.fork_source",
+        "Becoming.Branching.fork_target",
+        "Becoming.Branching.fork_lossless",
+        "Becoming.Branching.fork_origin_never",
+        "Becoming.Branching.fork_left_invariant",
+        "Becoming.Branching.fork_lossless_not_returns",
+        "Becoming.Coarse.flips",
+        "Becoming.Coarse.still",
+        "Becoming.Coarse.turnedPart",
+        "Becoming.Coarse.turned",
+        "Becoming.Coarse.firstFrame",
+        "Becoming.Coarse.first_bisimulation",
+        "Becoming.Coarse.first_determinedAt",
+        "Becoming.Coarse.meet_and_part"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "d65a3d05e7897942d6a64cd592e7d7498ea1f141b6b56e5dd34c3a7fad266cfa",
+      "declarations": [
+        "Becoming.Law.Returns",
+        "Becoming.Law.Lossless",
+        "Becoming.Law.KeepsPossibilities",
+        "Becoming.Law.process",
+        "Becoming.Law.orbit"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Run",
+        "Becoming.Reach",
+        "Becoming.Invariant"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.Fork.law"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.Trace"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "对每个能动的配置不加选择地陈述沿运行的定律（例如对有限的、可判定的过程）。",
+    "en": "State the laws along runs for every configuration that can move without a choice (for instance for finite, decidable processes)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P81：新增，按 Ren“move towards 100%”；见整合文档 §99。",
+      "en": "2026-10-12 P81: added, following Ren's ‘move towards 100%’; see §99 of the integration note."
+    }
+  ]
+}

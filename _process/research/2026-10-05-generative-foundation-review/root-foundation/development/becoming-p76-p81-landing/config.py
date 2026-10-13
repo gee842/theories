@@ -5,6 +5,8 @@ Anchors are lines of main after P69 (da8f75a7); P73 and P70–P72 land before th
 against the main it lands on, and an anchor that has moved fails loudly rather than landing twice.
 """
 
+LABEL = 'P76 + P81'
+
 MOVE = '../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md'
 SOURCE = 'sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md'
 REC = '../results/records/'

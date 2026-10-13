@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "id": "determinacy-up-to-likeness",
+  "title": {
+    "zh": "相同之下的确定：配置被命名时，确定就是相同之下的确定；关于配置如何相关的定理在相同之下成立，对相同者之一的干预、未登记的过去与未登记的描述需要相等",
+    "en": "Determinacy up to likeness: with configurations named, determinacy is determinacy up to likeness; the theorems on how configurations relate hold up to likeness, while an intervention on one of alike configurations, an unregistered past and an unregistered description need equality"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
+  "claim": {
+    "zh": "确定恰是主张命名配置时的相同之下的确定（determined_iff_named、alike_configurations），所以每个用 Determined 陈述的定理都是一个用 DeterminedAt 陈述者的命名实例。以下在相同之下成立：经相同而同行就是相同之下的确定（goesAlike_iff，对应 goAlike_id_iff）；相同的运行保持相同（DeterminedAt.stays_alike，对应 GoAlike.runs_agree）；一步不依赖的在相同之下被重新吸收（DependsOnlyOnAlike.reabsorbed）；遗忘噪声后，标准模型恰在噪声在相同之下无差别时在相同之下确定（forget_inputs_determinedAt_iff）；所取的动作在相同之下固定（Run.fixesAlike_of_takes），一次代表其类（Run.generalizesAlike）；在与所命名者相同的配置处从未取的动作，对在一个主张上不同的结果不被固定（Run.not_fixesAlike_of_untaken），经对整个相同类的干预（retargetAlike、retargetAlike_determinedAt）。以下需要相等，或登记相等所分开者的主张：对两个相同配置之一的改送破坏相同之下的确定（Twins.retarget_breaks）；保留的历史在其现在返回且没有什么登记过去之处在相同之下返回（keepFrame_alike_iff、keepHistory_returns_alike），所以 keepHistory_new 需要过去被登记（keepHistory_new_named）；没有主张时每个描述承载规律而没有混杂被否证（carries_unregistered、Confound.refutes_registered）。不加前提。",
+    "en": "Determinacy is determinacy up to likeness where the claims name the configurations (determined_iff_named, alike_configurations), so each theorem stated with Determined is the named instance of one stated with DeterminedAt. These hold up to likeness: going alike through likeness is determinacy up to likeness (goesAlike_iff, after goAlike_id_iff); runs alike stay alike (DeterminedAt.stays_alike, after GoAlike.runs_agree); what the step does not depend on is re-absorbed up to likeness (DependsOnlyOnAlike.reabsorbed); with the noise forgotten, the standard model is determined up to likeness exactly where the noise makes no difference up to likeness (forget_inputs_determinedAt_iff); a move taken is fixed up to likeness (Run.fixesAlike_of_takes) and one occasion stands for its class (Run.generalizesAlike); a move taken at no configuration alike to the one named is not fixed, for outcomes that differ in a claim (Run.not_fixesAlike_of_untaken), through an intervention on a whole likeness class (retargetAlike, retargetAlike_determinedAt). These need equality, or claims registering what equality tells apart: retargeting one of two alike configurations breaks determinacy up to likeness (Twins.retarget_breaks); a kept history returns up to likeness where its present does and nothing registers the past (keepFrame_alike_iff, keepHistory_returns_alike), so keepHistory_new needs the past registered (keepHistory_new_named); with nothing claimed, every description carries a law and no confound is refuted (carries_unregistered, Confound.refutes_registered). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "carries_law_iff 在相同之下没有双向形式，只给出平凡性见证；not_fixesThrough_* 没有重述。",
+      "en": "carries_law_iff has no two-way form up to likeness, only the triviality witness; not_fixesThrough_* are not restated."
+    }
+  ],
+  "correspondence": {
+    "zh": "P81（工作板），同上；回应 configurations-alike-by-relation 的 next_delta。读法（AI 的，待 Ren）：相同是展开自身的配置同一；在相同之下成立的确定定理关乎配置如何相关，需要相等的那些依赖于所登记的：对相同者中一个名字的干预、没有登记的过去、没有登记的描述。没有登记的既不被固定也不被否证（比较 Becoming.Testing 的登记）。见整合文档 §99。",
+    "en": "P81 (work board), as above; answering the next_delta of configurations-alike-by-relation. Reading (the AI's, pending Ren): likeness is the unfolding's own identity of configurations; the theorems with determinacy that hold up to likeness are about how configurations relate, and those that need equality depend on what is registered: an intervention on one name among alike configurations, a past nothing registers, a description nothing registers. What nothing registers is neither fixed nor refuted (compare the registers of Becoming.Testing). See the integration document §99."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+  "aliases": [
+    "Becoming.determined_iff_named",
+    "Becoming.goesAlike_iff",
+    "Becoming.DeterminedAt.stays_alike",
+    "Becoming.Run.fixesAlike_of_takes",
+    "Becoming.Run.not_fixesAlike_of_untaken",
+    "Becoming.Twins.retarget_breaks",
+    "Becoming.carries_unregistered",
+    "determinacy up to likeness",
+    "相同之下的确定"
+  ],
+  "dependencies": [
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 P69 的 Alike、DeterminedAt 与 Twins。",
+        "en": "Reuses P69's Alike, DeterminedAt and Twins."
+      },
+      "interface": {
+        "output": {
+          "zh": "相同与相同之下的确定。",
+          "en": "Likeness and determinacy up to likeness."
+        },
+        "input": {
+          "zh": "确定定理的相同形式。",
+          "en": "The likeness forms of the theorems with determinacy."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "experiment-needs-return",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Experiment 的 Run.fixes_of_takes、retarget_determined 等，作为命名实例。",
+        "en": "Reuses Experiment's Run.fixes_of_takes, retarget_determined and others, as the named instances."
+      },
+      "interface": {
+        "output": {
+          "zh": "确定之下实验的规律。",
+          "en": "The laws of experiment under determinacy."
+        },
+        "input": {
+          "zh": "相同之下的形式。",
+          "en": "The forms up to likeness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Mechanism 的 DependsOnlyOn、forget_inputs_determined_iff 与 Confound。",
+        "en": "Reuses Mechanism's DependsOnlyOn, forget_inputs_determined_iff and Confound."
+      },
+      "interface": {
+        "output": {
+          "zh": "机制与标准因果模型。",
+          "en": "Mechanism and standard causal models."
+        },
+        "input": {
+          "zh": "相同之下的形式与需要登记之处。",
+          "en": "The forms up to likeness and where registration is needed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "returning-where-the-course-branches",
+      "detail": {
+        "zh": "同一模块。",
+        "en": "The same module."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "detail": {
+        "zh": "Twins.retarget_breaks：对两个相同孪生之一的改送破坏相同之下的确定。",
+        "en": "Twins.retarget_breaks: retargeting one of two alike twins breaks determinacy up to likeness."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "Experiment 与 Mechanism 中关于配置怎样相关的主要定理已重述；没有重述的：Mechanism 中投影的确定性刻画（Image、FactorsThrough）、Experiment 的 not_fixes_other_of_new 与 Joint 的 determined_dichotomy；carries_law_iff 没有相同之下的双向形式；“某过程确定”的实例经 Determined.at 直接给出相同之下的确定；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The main theorems of Experiment and Mechanism on how configurations relate are restated; not restated: Mechanism's characterization of determinacy through a projection (Image, FactorsThrough), Experiment's not_fixes_other_of_new and Joint's determined_dichotomy; carries_law_iff has no two-way form up to likeness; instances stating that a process is determined give determinacy up to likeness directly through Determined.at; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Branching 的 119 项定理全部空依赖，其中含 determined_iff_named、goesAlike_iff、DeterminedAt.stays_alike、DependsOnlyOnAlike.reabsorbed、forget_inputs_determinedAt_iff、Run.fixesAlike_of_takes、Run.generalizesAlike、Run.not_fixesAlike_of_untaken、keepHistory_new_named、carries_unregistered、Twins.retarget_breaks与 Confound.refutes_registered；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085914.780427Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §99；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 119 theorems of Becoming.Branching all have empty axiom reports, among them determined_iff_named, goesAlike_iff, DeterminedAt.stays_alike, DependsOnlyOnAlike.reabsorbed, forget_inputs_determinedAt_iff, Run.fixesAlike_of_takes, Run.generalizesAlike, Run.not_fixesAlike_of_untaken, keepHistory_new_named, carries_unregistered, Twins.retarget_breaks and Confound.refutes_registered. The same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085914.780427Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §99 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "role": "proof",
+      "sha256": "44a12701a76d10831d605eaba3acda3e02e311ed762e8cd5abdddb87f8736b83",
+      "declarations": [
+        "Becoming.alike_configurations",
+        "Becoming.determined_iff_named",
+        "Becoming.GoesAlike",
+        "Becoming.goesAlike_iff",
+        "Becoming.DeterminedAt.stays_alike",
+        "Becoming.DependsOnlyOnAlike",
+        "Becoming.DependsOnlyOnAlike.determinedAt",
+        "Becoming.DependsOnlyOn.alike",
+        "Becoming.DependsOnlyOnAlike.reabsorbed",
+        "Becoming.forget_inputs_determinedAt_iff",
+        "Becoming.Run.FixesAlike",
+        "Becoming.Run.fixesAlike_of_takes",
+        "Becoming.Run.TakesAlike",
+        "Becoming.retargetAlike",
+        "Becoming.retargetAlike_bisimulation",
+        "Becoming.retargetAlike_determinedAt",
+        "Becoming.retargetAlike_step",
+        "Becoming.Run.not_fixesAlike_of_untaken",
+        "Becoming.keepFrame",
+        "Becoming.keepFrame_bisimulation",
+        "Becoming.keepFrame_present",
+        "Becoming.keepFrame_alike_iff",
+        "Becoming.keepHistory_returns_alike",
+        "Becoming.keepHistory_new_named",
+        "Becoming.anything",
+        "Becoming.anything_alike",
+        "Becoming.Run.FixesThroughAlike",
+        "Becoming.Run.generalizesAlike",
+        "Becoming.carries_unregistered",
+        "Becoming.Twins.determinedAt",
+        "Becoming.Twins.retargeted",
+        "Becoming.Twins.retarget_breaks",
+        "Becoming.Confound.refutes_registered"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.DeterminedAt",
+        "Becoming.Alike",
+        "Becoming.Bisimulation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "declarations": [
+        "Becoming.goAlike_id_iff",
+        "Becoming.GoAlike.runs_agree",
+        "Becoming.DependsOnlyOn.reabsorbed",
+        "Becoming.forget_inputs_determined_iff",
+        "Becoming.carries_law_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "role": "proof",
+      "sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc",
+      "declarations": [
+        "Becoming.Run.fixes_of_takes",
+        "Becoming.Run.not_fixes_of_untaken",
+        "Becoming.Run.generalizes",
+        "Becoming.retarget",
+        "Becoming.retarget_determined",
+        "Becoming.keepHistory",
+        "Becoming.keepHistory_new",
+        "Becoming.Confound.varied_refutes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Branching",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "给出 carries_law_iff 在相同之下的精确形式（经登记的描述）；在相同之下重述 Image／FactorsThrough 的刻画、not_fixes_other_of_new 与 Joint 的 determined_dichotomy，或给出需要相等的见证。",
+    "en": "Give the exact form of carries_law_iff up to likeness (through registered descriptions); restate up to likeness the characterization through Image and FactorsThrough, not_fixes_other_of_new and Joint's determined_dichotomy, or give witnesses that they need equality."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P81：新增，按 Ren“move towards 100%”；见整合文档 §99。",
+      "en": "2026-10-12 P81: added, following Ren's ‘move towards 100%’; see §99 of the integration note."
+    }
+  ]
+}

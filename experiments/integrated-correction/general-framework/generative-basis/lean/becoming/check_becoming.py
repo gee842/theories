@@ -47,7 +47,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Attraction",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
@@ -191,6 +191,28 @@ SCOPE = (
     "a law where the frame is determined up to likeness; under a determined law likeness is the same "
     "registered future; under the law of exchange standings are alike exactly where they agree "
     "pointwise. "
+    "Histories: the law a family of histories shows is the least law admitting each of them; a "
+    "family is the family of some law's histories exactly where it holds every sequence made of "
+    "its own steps, and of a determined law's exactly where it is also consistent; two laws admit "
+    "the same histories exactly where they have the same live steps, the dead end's step not "
+    "being live, and have the same finite histories exactly where they have the same steps; where "
+    "both frames are determined up to likeness, configurations are alike exactly where they pass "
+    "the same tests, the same courses open and the same claims realizable after each, while a "
+    "frame choosing after its first move and one choosing at it pass the same tests and are not "
+    "alike. "
+    "Branching: for every process, a configuration returns exactly where its own course can have "
+    "it at the next step, and every configuration returns exactly where every region the process "
+    "never leaves keeps every possibility of its own; a configuration that returns can be had at "
+    "every step and has a run that never loses it; keeping every possibility does not give "
+    "returning, merging nothing gives it along a run listed within finitely many configurations, "
+    "and a merge need not lose a possibility; every process necessarily draws exactly what does "
+    "not return, and possibly drawn is losing oneself on some course, which allows return on "
+    "another; under a determined law each notion is R6's or P67's; determinacy is determinacy up "
+    "to likeness where the claims name the configurations, theorems on how configurations relate "
+    "hold up to likeness, and retargeting one of two alike configurations, an unregistered past "
+    "and an unregistered description need equality; where a rule keeps itself its region is "
+    "absorbing, and where the next configuration depends on the rule alone a reformed state is "
+    "drawn into what the rule holds. "
     "Attraction: for every determined law, with no premise, a configuration is drawn into an absorbing "
     "region exactly where it does not return, and what is drawn in never comes back; what can be had n "
     "steps on is absorbing and every possibility lost by step n is drawn into it; of two merged "
