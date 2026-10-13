@@ -808,8 +808,8 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成”",
-      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation”"
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation”"
     },
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Identity 只改名（及相应的文档字符串），按新哈希重读；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；统一计划只在 §10 的 P36 对照表后加入 2026-10-14 的对照表。本记录的主张、前提与状态不变，不记作重新证明。",

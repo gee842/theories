@@ -213,8 +213,8 @@
       "en": "2026-10-09 (P5b): two G0-WARRANT links to MetaethicalCore.lean now point to the package path Becoming/Metaethics.lean, and the §3 row label reads Becoming.Metaethics; the text and the paragraphs this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
     },
     {
-      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示”",
-      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score”"
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score”"
     }
   ]
 }
