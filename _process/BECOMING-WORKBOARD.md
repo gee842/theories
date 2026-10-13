@@ -248,3 +248,15 @@ Merge checks: the core receipt `20261013T145624.509021Z` matches all 107 current
 Claude (Opus 5.5) merge session, at Ren's request (2026-10-14: “all needs to have general law proved, change bad names, and spawn a few agents to figure out how to address this: The records’ claims and limitations have grown into long lists of caveats and are getting hard to read, then present me with a plan”). Planning phase only: four agents work in their own scratch trees (`scratch_build.py`, shared cache), with no repository edits, receipts or landings. Scope: general laws behind the constructed-instance results of P93 (Revision instance), P99 (ReferencePlan), P100 (RepairComparison), P103 (ContinuingRevision) and the FallibleInquiry/TimedResponse witnesses; a naming audit of the 10-12/13 additions; a structural fix for records whose claims and limitations have become caveat lists. Execution waits for Ren's approval of the plan and will claim the checker through the queue.
 
 Planning completed: the four agents' results and the proposed order are in [the plan package](research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/PLAN.md). Scratch-proved (not landed): `Becoming.Support`, `Becoming.Contacts`, `Becoming.RevisionInstances`, `Becoming.LossMatching` and the RepairComparison instance theorems (153 new theorems, empty scratch audits). The package also holds the naming audit and the readability prototype. Awaiting Ren's choices; no checker slot held.
+
+### 2026-10-14 执行 / Execution of the plan (Ren: “go with your recommendations … please finish your plan”)
+
+Owner: Claude (Opus 5.5) merge session, as integrator for these streams; agents work in isolated worktrees or scratch, and only the integrator edits this board and lands on main. Choices taken: scope “all” (audit records before 10-12; lift the two family-scoped results), `Life` (A1), `IdentifiesAlike` (B1), module `Stock` (not `Support`), `use` for `cost`, P-numbers out of public headings, structure-led `seeking-boundary` title with 无明 kept as an alias, field names statement/陈述 · does_not_show/未表明 · not_required/不要求 · progress/已接通, short spine titles, migration tranche one plus the growth ratchet, and a standard key for “No ethical premise and no Lean axiom is used”.
+
+| Stream | Scope | State |
+|---|---|---|
+| T | readability tooling: schema 2, lint, ratchet, render, guide | worktree agent |
+| L1 | Lean batch 1: renames A1–A11, B1–B5; Stock, Contacts, LossMatching; instance theorems; P103 with parameters; its checker runs | worktree agent; holds the checker slot when it runs |
+| L2 | remaining laws: joint-difference-making, learned-procedure-transmission, the two family-scoped lifts | worktree agent; core changes via scratch_build until batch 2 |
+| A | general-law audit of records unchanged since 10-12 | read-only agent |
+| later | chapter de-jargon, migration tranche one, batch 2 landing | after T and L1 land |
