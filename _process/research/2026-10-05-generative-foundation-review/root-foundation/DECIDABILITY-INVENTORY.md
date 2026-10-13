@@ -1,20 +1,20 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T085835.650723Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T090346.930838Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T085835.650723Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T090346.930838Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 161 |
-| 只在证明中用到 / used only in proofs | 93 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 165 |
+| 只在证明中用到 / used only in proofs | 97 |
 | 不用到 / unused | 0 |
 | 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 6 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 78 |
 | 证明可判定的定义与实例 / definitions and instances proving decidedness | 83 |
-| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 45 |
+| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 46 |
 
 ## 理由 / Reasons
 
@@ -31,9 +31,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 首个符合者 / first fitting member | 选出首个符合者：依次判定列表成员是否满足规定 / first fitting member: decides the condition on each listed member in order | 2 |
 | 另一个值 / another value | 另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells values apart | 1 |
 | 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 4 |
+| 逐个条件换入 / mixed in condition by condition | 逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells conditions apart | 4 |
 | 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 51 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
-| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 30 |
+| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 34 |
 | 分情形 / splits on a case | 按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its failing case | 3 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 1 |
 
@@ -52,6 +53,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Change | `mark_pos` | `Decidable p` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Change | `marks_within` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | `Counts.le_length`（无前提 / no premise） |
 | Change | `rise_mark` | `(t : Nat) → Decidable (p t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Counterfactual | `mixIn_alike` | `DecidableEq C` | 逐个条件换入 / mixed in condition by condition | 可判定是它自己的条件 / its own condition |
+| Counterfactual | `mixIn_either` | `DecidableEq C` | 逐个条件换入 / mixed in condition by condition | 可判定是它自己的条件 / its own condition |
+| Counterfactual | `mixIn_listed` | `DecidableEq C` | 逐个条件换入 / mixed in condition by condition | 可判定是它自己的条件 / its own condition |
+| Counterfactual | `swap_alike` | `DecidableEq C` | 逐个条件换入 / mixed in condition by condition | 可判定是它自己的条件 / its own condition |
 | Counting | `World.binds_arising` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Counting | `World.counts_arising` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Counting | `World.enclosed_binds_counting` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
@@ -222,6 +227,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Continuation | `Flow.rising_fed_from_beyond` | `DecidableEq C` | 分辨相同 / tells same from different | — |
 | Continuation | `Flow.rising_fed_from_beyond_from` | `DecidableEq C` | 分辨相同 / tells same from different | — |
 | Continuation | `Web.generation_fed_from_beyond` | `DecidableEq X` | 分辨相同 / tells same from different | — |
+| Counterfactual | `ExchangeLaw.Nonanticipating.through_of_observed` | `DecidableEq C` | 分辨相同 / tells same from different | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
+| Counterfactual | `ExchangeLaw.Nonanticipating.through_sensitive` | `DecidableEq C` | 分辨相同 / tells same from different | `ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision） |
+| Counterfactual | `alike_of_sensitive_agree` | `DecidableEq C` | 分辨相同 / tells same from different | `ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P80） |
+| Counterfactual | `comparison_through_sensitivity` | `DecidableEq C` | 分辨相同 / tells same from different | `comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P80） |
 | Decidedness | `World.arising_iff_ceasing_of_decidable` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Diagonal | `Diagonal.alike_of_complete` | `(x : B) → Decidable (x = b)` | 分辨相同 / tells same from different | — |
 | Diagonal | `Diagonal.complete_iff_alike` | `DecidableEq B` | 分辨相同 / tells same from different | — |
@@ -339,6 +348,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Change | `instDecidableCeasesToBe` | `(t : Nat) → Decidable (p t)` |
 | Change | `instDecidableComesToBe` | `(t : Nat) → Decidable (p t)` |
 | Change | `mark` | `Decidable p` |
+| Counterfactual | `mixIn` | `DecidableEq C` |
 | Counting | `World.CountsObey` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` |
 | Counting | `World.saturated_decided` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` |
 | Dissipation | `adjoin` | `DecidableEq α` |

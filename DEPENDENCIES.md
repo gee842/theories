@@ -1354,6 +1354,78 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Correspondence.lean)
 
+## counterfactual-is-the-course ← comparison-where-the-rest-responds
+
+`formal-reuse` — 复用 Flow.RespondsThroughRegistration、Flow.WithinResponse 与 Flow.Balances.comparison_within_response：本记录把其前提推出，比较是它的应用；见证复用 Loop 的流、网、部分与 Loop.responds 的陈述。 / Reuses Flow.RespondsThroughRegistration, Flow.WithinResponse and Flow.Balances.comparison_within_response: this record derives its premise, and the comparison is its application; the witness reuses Loop's flows, webs, part and the statement of Loop.responds.
+
+**Producer output / 上游输出:** 其余经识回应时，比较在回应所及之内决定。 / Where the rest responds through its registration, the comparison is decided within the responsive reach.
+
+**Consumer input / 下游输入:** 律经识而读时，其余在律的任意两个进程中经识回应；第二个流是另一个动作生成的进程。 / Where the law reads through a registration, the rest responds through its registration in any two courses of the law; the second flow is the course another act generates.
+
+**Retained conditions / 保留条件:** 交换律；它经识而读（或读已立者且条件有限）；两个流平衡（第二个由可行给出）；在场形成相同；起始相同。 / A law of exchange; that it reads through the registration (or reads what has stood, with finitely many conditions); both flows balance (the second by feasibility); the same formations present; a common start.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean)
+
+## counterfactual-is-the-course ← testing-within-registration
+
+`formal-reuse` — 复用 Web.Registers、Web.RegistersAlike 与 Web.RegistersAlikeUpTo：律经识而读与敏感的最小性都以它们陈述。 / Reuses Web.Registers, Web.RegistersAlike and Web.RegistersAlikeUpTo: reading through a registration and the leastness of sensitivity are stated with them.
+
+**Producer output / 上游输出:** 一个形成识什么（所依存的被同样容许，所观察的水平相同），以及到第 t 步识得相同。 / What a formation registers (what it depends on admitted alike, what it observes at alike levels), and registering alike up to step t.
+
+**Consumer input / 下游输入:** 律经识而读的定义；敏感者在所依存或所观察之内。 / The definition of a law reading through a registration; what the law is sensitive to lies within what is depended on or observed.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## counterfactual-is-the-course ← causal-models-as-processes
+
+`formal-reuse` — 复用 inputs、trajectory、inputs_intervention_unfixed、inputs_model_fixes 与 inputs_determined：进程是以部分的动作为输入的轨道，未取的动作是干预；模型确定，所以其历史显示它的律（ExchangeLaw.counterfactual_beyond_shown）。 / Reuses inputs, trajectory, inputs_intervention_unfixed, inputs_model_fixes and inputs_determined: the course is a trajectory with the part's move as the input, and an act not taken is an intervention; the model is determined, so its history shows its law (ExchangeLaw.counterfactual_beyond_shown).
+
+**Producer output / 上游输出:** x′ = F(x, u, ε) 是动作为输入与噪声的确定过程；记录不固定未取的动作，模型固定它。 / x′ = F(x, u, ε) is a determined process whose move is the input and the noise; the record does not fix a move not taken, and the model does.
+
+**Consumer input / 下游输入:** 以部分的动作为输入、无噪声的实例。 / The instance with the part's move as the input and no noise.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## counterfactual-is-the-course ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、le_succ_cases、gap_of_le 与 mem_cons_split：生成的历史是一个确定律的轨道；步的归纳与列表的拆分。 / Reuses Law.orbit, le_succ_cases, gap_of_le and mem_cons_split: the generated history is the orbit of a determined law; induction on steps and splitting a list.
+
+**Producer output / 上游输出:** 一个确定律的轨道与自然数、列表的引理。 / The orbit of a determined law and lemmas on numbers and lists.
+
+**Consumer input / 下游输入:** 生成的历史是阶段与至今历史上 ExchangeLaw.next 的轨道。 / The generated history is the orbit of ExchangeLaw.next on the stage and the history so far.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## counterfactual-is-the-course ← laws-of-one-step
+
+`formal-reuse` — 复用 Flow.Balances 与总量 total（Generation）、total_congr_on（Population）：反事实由动作固定是对步作归纳，每步经平衡相消。 / Reuses Flow.Balances and the totals total (Generation) and total_congr_on (Population): that the counterfactual is fixed by the act is an induction on steps, cancelling through balance at each step.
+
+**Producer output / 上游输出:** 一步上的平衡：下一步的水平是本步水平加所给减所取。 / Balance across one step: the next level is this level plus what is given less what is taken.
+
+**Consumer input / 下游输入:** 两个流交换相同时总量相同，所以水平相同传到下一步。 / Where two flows exchange alike their totals are alike, so alike levels carry to the next step.
+
+**Retained conditions / 保留条件:** 两个流平衡；在场形成相同。 / Both flows balance; the same formations present.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
+
+## counterfactual-is-the-course ← process-and-frame-as-readings
+
+`formal-reuse` — 复用 World、Exchange、exchange、World.move、World.balances_iff_exchange、World.exchangeRun、Shown、Consistent、exists_law_iff、closedBy 与 closedBy_runs_agree：进程读作一个世界，历史之外的步是反事实，部分的动作由律形成时 closedBy 的运行就是进程。 / Reuses World, Exchange, exchange, World.move, World.balances_iff_exchange, World.exchangeRun, Shown, Consistent, exists_law_iff, closedBy and closedBy_runs_agree: the course read as a world, the steps beyond a history as its counterfactuals, and a run of closedBy, with the part's move formed by a law, as the course.
+
+**Producer output / 上游输出:** 世界的动作是关系项的交换；历史是它所显示之律的运行；动作由策略形成时运行由起点固定。 / A world's moves are its relata's exchanges; a history is a run of the law it shows; with the move formed by a policy, a run is fixed by its start.
+
+**Consumer input / 下游输入:** 进程的世界按交换之律而行恰当可行；确定的律在运行所显示者之外的步恰在未取的动作；closedBy 的运行是进程。 / The course's world runs by the law of exchange exactly where feasible; a determined law's steps beyond what a run shows are exactly at the moves not taken; a run of closedBy is the course.
+
+**Retained conditions / 保留条件:** 形成与条件同类（world 系列）；律确定；部分的动作由律在配置上形成（closedBy_course）。 / Formations and conditions of one kind (the world forms); a determined law; the part's move formed by a law on the configuration (closedBy_course).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
 ## counting-standing-and-dependence ← whole-law-of-counting
 
 `formal-reuse` — 复用计数表与队列（Tally、Listed.tally、Queue.holds、Queue.line、Queue.listed、Queue.counts）、逐点、World.CountsObey、World.counting_under 与 World.counting_binds_iff、开放与被驱动的队列（World.openQueue_census、World.openQueue_counts、World.drivenQueue_holds、OpenQueue.driven）。 / Reuses tallies and queues (Tally, Listed.tally, Queue.holds, Queue.line, Queue.listed, Queue.counts), Pointwise, World.CountsObey, World.counting_under and World.counting_binds_iff, and the open and driven queues (World.openQueue_census, World.openQueue_counts, World.drivenQueue_holds, OpenQueue.driven).

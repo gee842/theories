@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Counterfactual", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1120,6 +1120,20 @@ SCOPE = (
     "decided within the reach; registering support only, with one flow, the responsive reach is the "
     "union of the members' reach closures; in the trophic cascade it is the wolves, the deer and the "
     "forest, and in a two-party loop the difference returns to the part's own support. "
+    "Counterfactual: where the rest exchanges by a law reading what has stood, two balanced flows in "
+    "which the part acts alike, starting alike, are one flow; the law generates a course, the orbit "
+    "of one determined law on the stage and the history so far, which balances exactly where the law "
+    "never takes more than stands and is given; the counterfactual of an act is the course it "
+    "generates; where the law reads only what each formation registers, the rest responds through its "
+    "registration in any two courses, and with finitely many conditions every law of what has stood "
+    "reads through what it is sensitive to, the least registration; the comparison is then decided "
+    "within the responsive reach with neither the second flow nor the response supplied; the course is "
+    "a trajectory of the standard model whose input is the part's move, an act not taken an "
+    "intervention; over one kind of relatum the course is a world of the unfolding, running by the "
+    "law of exchange exactly where feasible; a determined law steps beyond what a run shows exactly "
+    "at the moves the run never takes, so the course's history shows its law and the moves beyond it "
+    "are the counterfactuals; with the part's act formed by a law on the configuration, a run of the "
+    "closed process is the course. "
     "Selection: two histories are selected alike by every selection through a selector's registration "
     "exactly when the selector registers them alike, and likewise for pooled registration; with the "
     "rest fixed, selection and scoring are blind beyond the registration closure; the clearer's "

@@ -6,6 +6,7 @@
 #   PLAN_ZH_AFTER, PLAN_EN_AFTER: prefixes of the plan's row and bullet P80's go after.
 # Stops at the first failure.
 set -e
+set -o pipefail
 W=${1:a}; S=$2; ZH=$3; EN=$4
 L=${5:-$W/../p80-landing-logs}
 RF=_process/research/2026-10-05-generative-foundation-review/root-foundation
@@ -13,6 +14,7 @@ K=${0:a:h}
 mkdir -p $L
 cd $W
 test -z "$BECOMING_FRESH" || { echo "BECOMING_FRESH is set"; exit 1; }
+python3 -B $K/verify_sources.py $W
 python3 -B $K/apply_docs.py $W $S "$ZH" "$EN"
 python3 -B $K/land_docs.py $W $S
 python3 -B $K/inventory_edit.py $W

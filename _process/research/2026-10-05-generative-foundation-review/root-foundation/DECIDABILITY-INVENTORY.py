@@ -104,6 +104,10 @@ FORMS = {
     'Learning.claim_refuted_on_one': '`Learning.no_record_fixes_next`（无前提：主张不在两者上都对 / no premise: the claim is '
                                      'not right on both, P73）',
     'Learning.determines_lumped_iff': '`Learning.lumped_determines`（无前提的一个方向 / one direction, no premise, P73）',
+    'alike_of_sensitive_agree': '`ExchangeLaw.Nonanticipating.through_all`（经识一切，不判定 / through registering everything, no decision, P80）',
+    'ExchangeLaw.Nonanticipating.through_of_observed': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'ExchangeLaw.Nonanticipating.through_sensitive': '`ExchangeLaw.Nonanticipating.through_all`（不判定 / no decision, P80）；逆向 `ExchangeLaw.Through.registers_of_sensitive`（不判定 / the converse, no decision）',
+    'comparison_through_sensitivity': '`comparison_of_courses`（经律所经的识，不判定 / through a registration the law reads through, no decision, P80）',
 }
 
 # Why a statement depends on decidedness: the decidability-taking definitions it mentions (Lean's `ment` column).
@@ -116,7 +120,7 @@ CONSTRUCTIONS = {
     'Tower.refine': 'coarse', 'Web.raise': 'raise', 'Web.redirect': 'redirect', 'keep': 'keep', 'insertNew': 'once',
     'Learning.learner': 'refute', 'Learning.index': 'refute', 'Learning.swapTo': 'other',
     'Identification.knowing': 'refute', 'Identification.firstFit': 'first',
-    'adjoin': 'once',
+    'adjoin': 'once', 'mixIn': 'mix',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -134,6 +138,8 @@ MENT_REASON = {
     'other': '另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells '
              'values apart',
     'once': '不重复的列表：成员关系已定 / a list without repetition: membership decided',
+    'mix': '逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells '
+           'conditions apart',
 }
 LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
@@ -141,7 +147,7 @@ LABEL = {
     'once': '不重复的列表 / a list without repetition', 'refute': '按否证学习 / learning by refutation',
     'other': '另一个值 / another value', 'first': '首个符合者 / first fitting member', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
-    'indicate': '造出指示 / builds an indicator',
+    'indicate': '造出指示 / builds an indicator', 'mix': '逐个条件换入 / mixed in condition by condition',
 }
 # Why a proof uses decidedness its statement does not mention. Every such theorem is classified here (asserted).
 PROOF_REASON = {
@@ -192,7 +198,8 @@ PROOF_KIND = {
         'Flow.policy_keeps_difference', 'Flow.policy_uses_after_failure', 'Flow.boundary_crossed',
         'Flow.region_not_a_cut', 'Flow.subthreshold_alike', 'Flow.subthreshold_alike_always', 'Web.alike_of_threshold',
         'Web.tail_unrefuted', 'Flow.Balances.comparison_within_response_of_decidable',
-        'Law.none_drawn_lossless', 'Law.lossless_iff_none_drawn']},
+        'Law.none_drawn_lossless', 'Law.lossless_iff_none_drawn',
+        'alike_of_sensitive_agree', 'ExchangeLaw.Nonanticipating.through_of_observed', 'ExchangeLaw.Nonanticipating.through_sensitive', 'comparison_through_sensitivity']},
     **{n: 'split' for n in ['persists', 'Flow.Balances.adds_iff_exceeds_of_decidable',
                             'Valuation.significant_iff_reached']},
     **{n: 'indicate' for n in ['Web.scores_alike_iff']},

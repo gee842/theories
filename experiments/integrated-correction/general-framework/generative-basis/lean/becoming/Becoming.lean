@@ -56,6 +56,7 @@ import Becoming.Relevance
 import Becoming.Testing
 import Becoming.Runaway
 import Becoming.Response
+import Becoming.Counterfactual
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Description
@@ -599,6 +600,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   affecting what is registered: the dual of the registration closure, and, registering support
   only, the union of the members' reach closures. Beyond it every formation registers and
   exchanges alike. The readings are the AI's, pending Ren.
+* `Becoming.Counterfactual` (L4): the rest's exchange given by a law of what has stood, the
+  counterfactual of an act is the course the law gives: fixed by the act, existing exactly where
+  feasible. Where the law reads only what each formation registers, P65's response premise is a
+  theorem, and with finitely many conditions the registration is what the law is sensitive to;
+  the comparison is then decided within the responsive reach with neither the second flow nor
+  the response supplied. An act not taken is an intervention of the standard causal model. As
+  P69's unfolding, the course is a `World`, balancing exactly where feasible; what a determined law
+  adds beyond a history (P69's `Shown`) is exactly the moves the history never takes, so the
+  counterfactuals; with the part's act formed by a law, a run of `closedBy` is the course. The
+  readings are the AI's, pending Ren.
 * `Becoming.Selection` (L4): two histories are selected alike by every selection through a
   selector's registration exactly when it registers them alike; with the rest fixed, selection
   is blind beyond the registration closure, so an ending within a candidate's reach closure and

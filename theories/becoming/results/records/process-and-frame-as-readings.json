@@ -242,6 +242,13 @@
         "zh": "标准因果模型中动作是输入与噪声；这里动作读入配置时，律所留开的就是它们，由策略在内形成时律仍确定。",
         "en": "In standard causal models the move is the input and the noise; here, with the move read within the configuration, they are what the law leaves open, and with a policy forming them within the law stays determined."
       }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "detail": {
+        "zh": "实例（P80b）：交换律的进程是一个世界，按交换之律而行恰当可行；确定的律在 Shown 之外的步恰在运行未取的动作（Run.beyond_shown_iff，关于 Shown 的一条律，暂放在 Counterfactual），所以进程历史之外的是反事实；部分的动作由律在配置上形成时，closedBy 的运行就是进程。",
+        "en": "Instances (P80b): the course of a law of exchange is a world, running by the law of exchange exactly where feasible; a determined law's steps beyond Shown are exactly at the moves the run never takes (Run.beyond_shown_iff, a law about Shown, kept in Counterfactual for now), so what lies beyond the course's history is its counterfactuals; with the part's move formed by a law on the configuration, a run of closedBy is the course."
+      }
     }
   ],
   "counterexamples": [
@@ -279,8 +286,8 @@
     "en": "The shared index of steps is a commitment of the representation and is not derived from relations (see Becoming.Sampling and Becoming.Tower); that a move is formed within the unfolding, or by what, and which law a formation takes its history to show, are not derived; a law means a determined process, and probabilities are not treated; GenerativeCore is unchanged and still states processes in labelled form, so what is given here is a reading and a bridge, not another foundation; Frame.world has no flow or web, and relations among claims are not stated; most main theorems are near-definitional, the delta being that both directions are proved, where the correspondence fails to be an identity, and its price; the readings are the AI's, Ren having confirmed only the reading of law and history; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085835.650723Z）：Becoming.Unfolding 的 67 项定理全部空依赖，其中含 withMove_determined_iff、closedBy_runs_agree、Fork.label_couples、World.balances_iff_exchange、exchange_runs_agree、exists_law_iff、Shown.runs_of_new、Splice.spliced、DeadEnd.no_history、Frame.novel_iff_arises与 Frame.world_fixes_run；同一回执覆盖包内 64 个模块（含只作导入的根模块与桥接），共 3302 项定理／4810 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 66 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §91；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T085835.650723Z): the 67 theorems of Becoming.Unfolding all have empty axiom reports, among them withMove_determined_iff, closedBy_runs_agree, Fork.label_couples, World.balances_iff_exchange, exchange_runs_agree, exists_law_iff, Shown.runs_of_new, Splice.spliced, DeadEnd.no_history, Frame.novel_iff_arises and Frame.world_fixes_run. The same receipt covers the package's 64 modules (including the import-only root and the bridge) with 3302 theorems/4810 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T232716.311380Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 66 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §91 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090346.930838Z）：Becoming.Unfolding 的 67 项定理全部空依赖，其中含 withMove_determined_iff、closedBy_runs_agree、Fork.label_couples、World.balances_iff_exchange、exchange_runs_agree、exists_law_iff、Shown.runs_of_new、Splice.spliced、DeadEnd.no_history、Frame.novel_iff_arises与 Frame.world_fixes_run；同一回执覆盖包内 65 个模块（含只作导入的根模块与桥接），共 3348 项定理／4882 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261011T232716.311380Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 67 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §91；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090346.930838Z): the 67 theorems of Becoming.Unfolding all have empty axiom reports, among them withMove_determined_iff, closedBy_runs_agree, Fork.label_couples, World.balances_iff_exchange, exchange_runs_agree, exists_law_iff, Shown.runs_of_new, Splice.spliced, DeadEnd.no_history, Frame.novel_iff_arises and Frame.world_fixes_run. The same receipt covers the package's 65 modules (including the import-only root and the bridge) with 3348 theorems/4882 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261011T232716.311380Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 67 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §91 of the integration note; there is no independent review yet."
   },
   "references": [
     {
@@ -432,19 +439,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "d50c9ba7294a539b108961e3e003f28d5909da5f4b39ee21de67a606cdc8d335",
+      "sha256": "96756f4a04744e398ac5c929f436ecef418529b0dd18e591dddf8440392df849",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "94833f7969a5d2bab4575ee92715f90c9f89c7b1467da27269fe1b4584125000",
+      "sha256": "d71d86ff7496b96b47c3deda30f86984573001103fa9d12992c63fa11aa391ac",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a20375b66ee25b922e9c87e08880b35fe896973469a1413eec64f9c743d0e3f9",
+      "sha256": "a27b9d177c01a139f2e4c5583f30e0256a0256d38567528f271296a99bb0f09d",
       "declarations": []
     },
     {
@@ -562,6 +569,14 @@
     {
       "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
       "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P80（并入 P80b）：实例：交换律的进程是一个世界（ExchangeLaw.world、ExchangeLaw.world_exchange_iff）；确定的律在运行所显示者之外的步恰在运行未取的动作（Run.beyond_shown_iff，关于 Shown 的一条律，按整合者的安排暂放在 Becoming.Counterfactual，第二个模块需要时移入 Unfolding，名字与陈述不变），所以进程历史之外的是反事实（ExchangeLaw.counterfactual_beyond_shown）；部分的动作由律在配置上形成时，closedBy 的运行就是进程（ExchangeLaw.closedBy_course）（counterfactual-is-the-course）。何时一个动作是部分自己的，仍不推出；next_delta 不变；见整合文档 §100。断言不变。",
+      "en": "2026-10-12 P80 (P80b folded in): instances: the course of a law of exchange is a world (ExchangeLaw.world, ExchangeLaw.world_exchange_iff); a determined law's steps beyond what a run shows are exactly at the moves the run never takes (Run.beyond_shown_iff, a law about Shown, kept in Becoming.Counterfactual as the integrator arranged, moving to Unfolding, name and statement kept, when a second module needs it), so what lies beyond the course's history is its counterfactuals (ExchangeLaw.counterfactual_beyond_shown); with the part's move formed by a law on the configuration, a run of closedBy is the course (ExchangeLaw.closedBy_course) (counterfactual-is-the-course). When a move is the part's own is still not derived; next_delta unchanged; see §100 of the integration note. The assertion is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
     }
   ]
 }

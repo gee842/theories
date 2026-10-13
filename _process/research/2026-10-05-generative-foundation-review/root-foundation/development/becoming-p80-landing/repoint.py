@@ -53,10 +53,11 @@ REPLACE = [
 # The periphery's closure, cited only beside its own receipt: the count read from the new receipt.
 REST = [(r'闭包中其余 \d+ 个模块', f'闭包中其余 {n_rest} 个模块'),
         (r'the other \d+ modules in its closure', f'the other {n_rest} modules in its closure')]
+date = f'{n_run[:4]}-{n_run[4:6]}-{n_run[6:8]}'
 HISTORY = {
-    'zh': f'2026-10-12 P80：验证范围重新指向合并检查器回执 {n_run} 与外围回执 {new_p["utc"]}（新增 Becoming.Counterfactual，'
+    'zh': f'{date} P80：验证范围重新指向合并检查器回执 {n_run} 与外围回执 {new_p["utc"]}（新增 Becoming.Counterfactual，'
           f'{o_thm}→{n_thm} 项定理，包 {o_pkg}→{n_pkg} 个模块；已有模块不变）。断言不变。',
-    'en': f'2026-10-12 P80: validation scope re-pointed to consolidated receipt {n_run} and periphery receipt '
+    'en': f'{date} P80: validation scope re-pointed to consolidated receipt {n_run} and periphery receipt '
           f'{new_p["utc"]} (Becoming.Counterfactual added, {o_thm} to {n_thm} theorems, package {o_pkg} to {n_pkg} '
           f'modules; existing modules unchanged). The claim is unchanged.',
 }

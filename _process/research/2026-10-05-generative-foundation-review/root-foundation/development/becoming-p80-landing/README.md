@@ -112,6 +112,11 @@ statements are unchanged.
   each with its no-decision form), and the zero-premise plan's count read from the regenerated page.
 - `land.sh W S PLAN_ZH_AFTER PLAN_EN_AFTER`: everything after the checkers, in order, then the generators and every
   check. `linkcheck.py W`: relative links on added lines, anchors included.
+- `verify_sources.py W`: before documents are written, require both actual receipts to bind the current source bytes,
+  require `Counterfactual.lean` to match this preserved package, and verify its receipt lists the exact 46 theorems and
+  72 source declarations with empty axiom reports. This reads existing evidence and runs no Lean checker. Shell
+  pipelines stop when an upstream stage fails. Marked stand-in receipts are rejected unless the helper is explicitly
+  invoked with `--dry-run` for documentation rehearsal; `land.sh` never enables that option.
 
 ## Landing steps
 
@@ -129,3 +134,21 @@ statements are unchanged.
    board (its own row, reread first).
 
 Queue place: fourth, after P73, P70–P72 and the P76 + P81 run (board `9a70ff1a`); rebase onto main after P76 + P81 lands and rerun the dry run. P58c, which lands later, renames no name this package uses.
+
+13 October takeover preparation retains the module byte for byte (full SHA-256
+`90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee`). The current declaration parser confirms 46 theorems
+and 72 declarations. The inventory classification still applies cleanly after P73's narrower generated-name exclusion
+and its added construction categories. Receipt-transition history uses the actual check date; the original research and
+review chronology remains unchanged. These preparation checks are not a new mathematical check.
+
+The documentation pipeline was rehearsed after P70–P72, P83 and P76/P81 in a disposable checkout using explicitly
+marked 2099 stand-in receipts. Study §100, both plan insertions after P81, all chapter anchors, the catalogue update,
+the new record and four existing-record advances passed. Rendering and focused checks of all five records reported
+no errors or source drift; the added-line link check reported 515 links with no broken targets. The periphery closure
+count was read from the stand-in receipt and propagated to both languages, with exactly one receipt-transition history
+entry after repeated re-pointing. No Lean checker or live inventory run was performed in that rehearsal. The synthetic
+receipts and detached rehearsal commit must never be merged into the theory's evidence.
+
+## Integrated landing, 13 October 2026
+
+Landed at study §100 on top of P76/P81. Real core receipt `20261013T090346.930838Z` and periphery receipt `20261013T090430.379669Z` passed: Counterfactual adds 46 theorems / 72 declarations, current package 3,348 / 4,882. Inventory (165 statement-dependent / 97 proof-only), research render/check, catalogues, session map and link check passed. The five pre-existing curated-chain audit errors remain unchanged.
