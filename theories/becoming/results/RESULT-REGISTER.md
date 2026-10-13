@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-174 migrated records: 170 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+175 migrated records: 171 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -92,6 +92,7 @@
 | `guarded-program-question-recovery` | [随到达条件分支的有限展开与问答恢复 / Finite reached-condition branching and question recovery](records/guarded-program-question-recovery.md) | theorem | recorded-checked |
 | `held-lives-g0-is-centering` | [被持有的生命上 G0 是 S0 加立场中立：每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加 N_std，不需要连通与 N_rel；在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全 / On held lives G0 is S0 with standpoint neutrality: where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with N_std, needing neither connection nor N_rel; on a connected whole where every standpoint holds a living claim, S0 with N_rel is another completion](records/held-lives-g0-is-centering.md) | theorem | recorded-checked |
 | `historical-source-binding` | [来源历史约束旧内容绑定 / Source histories constrain retained-content binding](records/historical-source-binding.md) | theorem | recorded-checked |
+| `identification-where-bounded` | [辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，知道界的学习者从 2N − 1 起每步都对且不能更早，不知道界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商 / Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner that knows the bound is right from 2N − 1 on and none can always speak sooner, and the learner that does not know it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient](records/identification-where-bounded.md) | theorem | recorded-checked |
 | `identity-across-steps` | [跨步的同一：标签不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁；单向的连续留下接续，双向的连续仍留下跨过休眠的接续；在普查之下，更多在每种没有分裂的延续下迫使生起，跨一步恰当没有分裂 / Identity across steps: labels carry nothing, each step and each condition are fixed by relations, and readings that follow a formation depend on who continues whom; continuity read one way leaves succession, and read both ways still leaves succession across dormancy; under a census, more forces arising under every continuation without splits, across one step exactly then](records/identity-across-steps.md) | theorem | recorded-checked |
 | `imbalance-as-relatum` | [不平衡作为关系项：算入不平衡，每个流都平衡；平衡恰是新增关系项闲置，两种表示逐步等价 / Imbalance as a relatum: with the imbalance counted, every flow balances; balance is exactly the added relatum idle, and the two representations are equivalent step by step](records/imbalance-as-relatum.md) | theorem | recorded-checked |
 | `incidence-common-refinement` | [关联问题导出跨分节共同细化 / Incidence questions yield a common relational refinement](records/incidence-common-refinement.md) | theorem | recorded-checked |

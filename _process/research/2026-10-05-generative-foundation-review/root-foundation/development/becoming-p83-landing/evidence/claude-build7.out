@@ -1,0 +1,18 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories/27ca9fd9-d3aa-4667-b205-3440a8b4e511/scratchpad/frontier/p83/tree",
+  "modules": 42,
+  "ran": [
+    "Becoming.Description",
+    "Becoming.Identification",
+    "BecomingIdentificationAxiomAudit"
+  ],
+  "reused": 40,
+  "unclean": [],
+  "audits": {
+    "Becoming.Identification": {
+      "theorems": 42,
+      "declarations": 54,
+      "with_axioms": {}
+    }
+  }
+}

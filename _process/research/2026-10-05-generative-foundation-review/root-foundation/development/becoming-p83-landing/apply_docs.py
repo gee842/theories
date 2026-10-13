@@ -7,7 +7,8 @@ Usage: python3 -B apply_docs.py ROOT S PLAN_ZH_AFTER PLAN_EN_AFTER
 S is P83's study section. PLAN_ZH_AFTER and PLAN_EN_AFTER are the prefixes of the plan's table row and
 bullet it goes after (after P70–P72: '| P72、P72q 语境中的识与量子实现' and '- **P72 and P72q:**'). Counts
 come from ROOT's receipts, which must cover Becoming.Identification. The sections of P70 and P73 are
-found by their headings. The layer is Description's, read from the receipt. The review sentences come
+found by their headings. The layer is Description's, read from its root-module docstring (receipt layers
+name core/bridge membership, not the L0–L4 layer). The review sentences come
 from docs/review.json. One sentence each is added to P73's counterreview point 3 and English summary,
 which left the step of rest to P83. Every anchor must occur exactly once; the chapter anchors are lines the P70–P72
 package adds, so apply this after it. Rerunning on an applied checkout fails.
@@ -33,7 +34,10 @@ periphery = json.loads((ROOT / D / 'universal-ethics/generative-capacity/correct
 assert receipt['status'] == periphery['status'] == 'passed'
 modules = {m['module']: m for m in receipt['modules']}
 assert 'Becoming.Identification' in modules and 'Becoming.Identification' in receipt['core_closure']
-LAYER = modules['Becoming.Description']['layer']
+root_module = (ROOT / D / 'becoming/Becoming.lean').read_text()
+layers = re.findall(r'^\* `Becoming\.Description` \((L\d)\)', root_module, flags=re.M)
+assert len(layers) == 1, layers
+LAYER = layers[0]
 review = json.loads((HERE / 'docs/review.json').read_text())
 
 

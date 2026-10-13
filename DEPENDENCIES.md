@@ -2014,6 +2014,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean)
 
+## identification-where-bounded ← learning-by-refutation
+
+`formal-reuse` — 复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、RefutedAt、record、back_record、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用按否证学习的 learner、lassos、index 及其引理与 lasso_learner_bounded，给出它的静止之步。 / Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_holds, Holds, RefutedAt, record, back_record, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses the learner by refutation (learner, lassos, index and its lemmas, lasso_learner_bounded) to state the step at which it rests.
+
+**Producer output / 上游输出:** 套索、记录、否证与回答的历程；按否证学习者及其否证之界。 / Lassos, records, refutation and the answering course; the learner by refutation and its bound on refutations.
+
+**Consumer input / 下游输入:** 有界的记录确定历程；知道界的学习者；不知道界的学习者的静止之步。 / A bounded record fixes the course; the learner that knows the bound; the step at which the learner that does not know it rests.
+
+**Retained conditions / 保留条件:** 学习者要值可判定。 / The learner needs values decided.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean)
+
+## identification-where-bounded ← the-split-that-makes-sense
+
+`formal-reuse` — 复用 SameAhead、StatesBelow、shared_below、statesBelow_of_same、lasso_iff_sameAhead 与 Denial：状态的界就是套索的界。 / Reuses SameAhead, StatesBelow, shared_below, statesBelow_of_same, lasso_iff_sameAhead and Denial: the bound on states is the bound on the lasso.
+
+**Producer output / 上游输出:** 从历史读出的状态。 / States read off a history.
+
+**Consumer input / 下游输入:** 状态数的界。 / The bound on states.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean)
+
+## identification-where-bounded ← configurations-alike-by-relation
+
+`formal-reuse` — 复用 MakesSense、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：有限的名是有意义的切分。 / Reuses MakesSense, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: the finite name is the split that makes sense.
+
+**Producer output / 上游输出:** 有意义的描述。 / Descriptions that make sense.
+
+**Consumer input / 下游输入:** 以有限的名命名。 / Naming by finite names.
+
+**Retained conditions / 保留条件:** 世界被列表持有。 / A world held by a list.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## identification-where-bounded ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、gap_of_le、gap_of_lt。 / Reuses Law.orbit, gap_of_le and gap_of_lt.
+
+**Producer output / 上游输出:** 轨道与间隔。 / Orbits and gaps.
+
+**Consumer input / 下游输入:** 余数与套索世界的位置。 / Remainders and the lasso world's positions.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## identity-across-steps ← becoming-dependence-dynamics
 
 `formal-reuse` — 复用依存网、支持、保持、断裂、任期、侵蚀、形成与消解，以及该记录下一步中的个体化问题。 / Reuses webs, support, keeping, breaking, tenure, undermining, forming and dissolving, and the individuation question in that record's next step.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Step 3 of a landing, after the checkers: the documentation of the run's packages in a checkout W.
-Usage: python3 -B land_docs.py RUN_DIR W S
+Usage: python3 -B land_docs.py RUN_DIR W S [BASE]
 
 S is the study section of the first package; the others follow in the order of the config's PACKAGES.
 From W's receipts, which must cover every package's module:
@@ -19,6 +19,8 @@ Placeholders: {RECEIPT}, {PERIPHERY}, {N_THM}, {N_DECL}, {N_CORE}, {N_PKG}, {LEA
 """
 import json
 import re
+import hashlib
+import subprocess
 import sys
 from pathlib import Path
 
@@ -28,9 +30,19 @@ import kit  # noqa: E402
 RUN = Path(sys.argv[1]).resolve()
 W = Path(sys.argv[2]).resolve()
 S = int(sys.argv[3])
+BASE = sys.argv[4] if len(sys.argv) > 4 else 'HEAD'
 config = kit.load_config(RUN)
 R = kit.Receipts(W)
 print('totals', R.n_thm, R.n_decl, R.n_core, R.n_pkg)
+
+# Validate the existing reading entry before any document is changed.
+cat = W / 'theories/becoming/results/data/arguments-m-z.json'
+data = json.loads(cat.read_text())
+entry = next(d for d in data if d['id'] == 'the-theory-of-becoming')
+base_chapter = subprocess.run(['git', 'show', f'{BASE}:{kit.CHAPTER}'], cwd=W,
+                             capture_output=True, check=True).stdout
+assert entry['source_sha256'] == hashlib.sha256(base_chapter).hexdigest(), \
+    'reading entry was stale at BASE; read and reconcile its chapter before refreshing the hash'
 
 STUDY_LINK = f'../../../{kit.STUDY}'
 VALUES = {
@@ -49,6 +61,9 @@ for i, p in enumerate(config.PACKAGES):
     docs = W / kit.DEV / p['package'] / 'docs/study'
     zh = (docs / f'{p["prefix"]}_zh.md').read_text()
     en = (docs / f'{p["prefix"]}_en.md').read_text()
+    if 'study_heading' in p:
+        assert not zh.startswith('## '), 'study_heading would duplicate an existing section heading'
+        zh = f'## {{S}}. {p["study_heading"]}\n\n' + zh
     heading = zh.split('\n', 1)[0].replace('{S}', sec)
     assert heading.startswith(f'## {sec}. '), heading
     n = str(R.theorems(p['module']))
@@ -85,8 +100,20 @@ def study(s):
         s = kit.insert_before_line(s, '## English summary', fill(zh, sec, n).rstrip('\n') + '\n', True)
         s = kit.insert_before_line(s, 'The package now has ', fill(en, sec, n).rstrip('\n'), True, last=True)
     last = list(re.finditer(TOTALS_EN, s))[-1]
-    return (s[:last.start()] + f'The package now has {R.n_thm} theorems and {R.n_decl} declaration audits, over a core '
-            f'closure of {R.n_core} modules and a package of {R.n_pkg}' + s[last.end():])
+    end = s.find('\n', last.end())
+    if end == -1:
+        end = len(s)
+    paragraph = (f'The package now has {R.n_thm} theorems and {R.n_decl} declaration audits, over a core '
+                 f'closure of {R.n_core} modules and a package of {R.n_pkg}' + s[last.end():end])
+    # These packages retain their own review statements; this summary describes their
+    # unreviewed integration text. Do not change earlier review evidence.
+    paragraph, n = re.subn(r', 71 to \d+ \(72 and 73',
+                           f', 71 to {S + len(SECTIONS) - 1} (72 and 73', paragraph)
+    assert n == 1, 'the review summary changed; reconcile it before landing'
+    paragraph, n = re.subn(r'(The periphery bridge passed against this core \(receipt )\d{8}T\d{6}\.\d+Z\)',
+                           r'\g<1>' + R.peri_run + ')', paragraph)
+    assert n == 1, 'the periphery summary changed; reconcile it before landing'
+    return s[:last.start()] + paragraph + s[end:]
 
 
 change(kit.STUDY, study)
@@ -128,9 +155,6 @@ def chapter(s):
 
 change(kit.CHAPTER, chapter)
 
-cat = W / 'theories/becoming/results/data/arguments-m-z.json'
-data = json.loads(cat.read_text())
-entry = next(d for d in data if d['id'] == 'the-theory-of-becoming')
 r = config.READING
 for lang in ('en', 'zh'):
     field, after, text = f'argument_{lang}', r[f'after_{lang}'], fill(r[lang])
@@ -143,5 +167,6 @@ for p in config.PACKAGES:
     assert path not in lean
     lean.insert(at, path)
     at += 1
+entry['source_sha256'] = kit.sha(W, kit.CHAPTER)
 cat.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 print('reading entry: sentences and', len(lean), 'Lean files')

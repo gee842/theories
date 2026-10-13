@@ -52,7 +52,10 @@ assert f'Becoming.{MODULE}' in MODULES and f'Becoming.{MODULE}' in receipt['core
 
 
 def declared(full):
-    return [d['name'] if isinstance(d, dict) else d for d in MODULES[full]['declarations']]
+    # The canonical reference scanner recognizes named definitions/theorems but not instances.
+    # Instances remain in the actual checker receipt and the source's full proof binding.
+    return [d['name'] if isinstance(d, dict) else d for d in MODULES[full]['declarations']
+            if not isinstance(d, dict) or d['kind'] != 'instance']
 
 
 OWNER = {n: m.removeprefix('Becoming.') for m in MODULES for n in declared(m)}
@@ -203,6 +206,8 @@ for item in json.loads((HERE / 'docs/advances.json').read_text()):
             sys.exit(f'{item["id"]}: {field}/{lang} passage changed since this package was written; read and reconcile it first')
         for h in holders:
             h[lang] = h[lang].replace(read, fill(revised))
+    if item.get('replace'):
+        advanced['reviewed_at_utc'] = REVIEWED
     advanced['history'].append(entry)
     path.write_text(json.dumps(advanced, ensure_ascii=False, indent=2) + '\n')
     print('advanced', item['id'])

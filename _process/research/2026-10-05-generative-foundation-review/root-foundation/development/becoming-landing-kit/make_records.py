@@ -147,4 +147,12 @@ for record_id, spec in config.RECORDS.items():
     print('wrote', record_id, f'({len(own)} own declarations, {len(by_module)} other modules)')
 
 for script in getattr(config, 'DELTAS', []):
+    before = {p.name: p.read_bytes() for p in RECORDS.glob('*.json')}
     subprocess.run([sys.executable, '-B', str(RUN / script), str(W), str(S)], check=True)
+    # A delta edits documentary content, unlike receipt-only repointing. The
+    # workflow therefore requires its documentary review date to advance.
+    for path in RECORDS.glob('*.json'):
+        if path.name in before and path.read_bytes() != before[path.name]:
+            record = json.loads(path.read_text())
+            record['reviewed_at_utc'] = REVIEWED
+            path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')

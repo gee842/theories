@@ -83,8 +83,8 @@
     "en": "Only possibilities are stated, not probabilities (Bell-type inequalities); general sheaf theory and the Abramsky–Brandenburger framework are not stated; the general parity obstruction is not stated, the three witnesses each checked by decide; the quantum realization covers only this square; PartsDetermine needs one type of values; the readings are the AI's; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T084405.661795Z）：Becoming.Context 的 28 项定理全部空依赖，其中含 Contextual.glues_iff_agree、Contextual.fitsFree_iff、Contextual.indexed_fits、Contextual.not_glues、Contextual.no_free_frame、glued_of_whole、no_whole、Specker.noGlobal、Specker.not_glues、Specker.no_whole、Square.noGlobal与 Square.no_whole；Becoming.Quantum 的 37 项定理全部空依赖，其中含 Square.obs_sq、Square.line_commute、Square.line_product、Square.line_parity、Square.shows_support、Square.support_shown与 Square.no_context_free_values；同一回执覆盖包内 61 个模块（含只作导入的根模块与桥接），共 3114 项定理／4559 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T084521.070057Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 63 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §96；独立审查的范围见同节。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T084405.661795Z): the 28 theorems of Becoming.Context all have empty axiom reports, among them Contextual.glues_iff_agree, Contextual.fitsFree_iff, Contextual.indexed_fits, Contextual.not_glues, Contextual.no_free_frame, glued_of_whole, no_whole, Specker.noGlobal, Specker.not_glues, Specker.no_whole, Square.noGlobal and Square.no_whole; the 37 theorems of Becoming.Quantum all have empty axiom reports, among them Square.obs_sq, Square.line_commute, Square.line_product, Square.line_parity, Square.shows_support, Square.support_shown and Square.no_context_free_values. the same receipt covers the package's 61 modules (including the import-only root and the bridge) with 3114 theorems/4559 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T084521.070057Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 63 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §96 of the integration note, with the scope of the independent review."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085153.061517Z）：Becoming.Context 的 28 项定理全部空依赖，其中含 Contextual.glues_iff_agree、Contextual.fitsFree_iff、Contextual.indexed_fits、Contextual.not_glues、Contextual.no_free_frame、glued_of_whole、no_whole、Specker.noGlobal、Specker.not_glues、Specker.no_whole、Square.noGlobal与 Square.no_whole；Becoming.Quantum 的 37 项定理全部空依赖，其中含 Square.obs_sq、Square.line_commute、Square.line_product、Square.line_parity、Square.shows_support、Square.support_shown与 Square.no_context_free_values；同一回执覆盖包内 62 个模块（含只作导入的根模块与桥接），共 3156 项定理／4613 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T085221.613502Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 64 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §96；独立审查的范围见同节。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085153.061517Z): the 28 theorems of Becoming.Context all have empty axiom reports, among them Contextual.glues_iff_agree, Contextual.fitsFree_iff, Contextual.indexed_fits, Contextual.not_glues, Contextual.no_free_frame, glued_of_whole, no_whole, Specker.noGlobal, Specker.not_glues, Specker.no_whole, Square.noGlobal and Square.no_whole; the 37 theorems of Becoming.Quantum all have empty axiom reports, among them Square.obs_sq, Square.line_commute, Square.line_product, Square.line_parity, Square.shows_support, Square.support_shown and Square.no_context_free_values. the same receipt covers the package's 62 modules (including the import-only root and the bridge) with 3156 theorems/4613 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T085221.613502Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 64 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §96 of the integration note, with the scope of the independent review."
   },
   "references": [
     {
@@ -241,19 +241,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6486fb81d22ce08d197498cc50bfdc3c65411195d38c39199ed87f526c08b639",
+      "sha256": "6b3ab4826b9335e8d97a5cd3be21a7fc907a5a1f246af1f8baf775a8c55b1add",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "d4bfed47b4c203084e0a29e848d98b82d31713fd457c59af261ec192b2754857",
+      "sha256": "ceab038a29ce815a4b16a14b67c6f37a398dc0e6db742d10bada1c4dafd015d5",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d58c364289c9a6a1d7cd124d2eedfdc963b68529799e092c8a39bdde7a721587",
+      "sha256": "9ac31959acb84b471b667ad7b12a7be17a3fe4316b0e4624426810cf5fd27dc9",
       "declarations": []
     },
     {
@@ -306,6 +306,10 @@
     {
       "zh": "2026-10-12 P72、P72q：新增，按 Ren“push the frontier, as far as possible”（对框架失去什么、什么使一对成为一对的回答之后），及其后“keep prove to the deepest, i agree with your last reply”；见整合文档 §96。",
       "en": "2026-10-12 P72 and P72q: added, following Ren's ‘push the frontier, as far as possible’ (after the answer on what the framing loses and what makes a pair a pair) and the later ‘keep prove to the deepest, i agree with your last reply’; see §96 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
     }
   ]
 }

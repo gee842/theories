@@ -50,7 +50,9 @@ for p in config.PACKAGES:
     i = s.index(f'| [`Becoming.{after}`](Becoming/{after}.lean) |')
     i = s.rindex('\n', 0, i) + 1
     j = s.index('\n', i) + 1
-    row = f'| L3 | [`Becoming.{module}`](Becoming/{module}.lean) | {p["readme_zh"]} / {p["readme_en"]} |\n'
+    layer = p.get('layer', 'L3')
+    assert bullet.startswith(f'* `Becoming.{module}` ({layer})'), (module, layer)
+    row = f'| {layer} | [`Becoming.{module}`](Becoming/{module}.lean) | {p["readme_zh"]} / {p["readme_en"]} |\n'
     s = s[:j] + row + s[j:]
     readme.write_text(s)
     kit.edit(W, f'{kit.D}/README.md', [p['imports_zh'], p['imports_en']])

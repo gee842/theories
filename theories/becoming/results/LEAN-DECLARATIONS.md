@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 196 | 5,016 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 197 | 5,058 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -330,6 +330,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [HistoryRealization.lean](lean-declarations/core.md#module-a7d9b0de6d97) | 生成核心与关系结构 / Generative core and relational structure |
 | [Horizon.lean](lean-declarations/core.md#module-35179900d759) | 生成核心与关系结构 / Generative core and relational structure |
 | [IdealWarrant.lean](lean-declarations/abstraction.md#module-e3abf1a9ab66) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
+| [Identification.lean](lean-declarations/core.md#module-0f512e4907a0) | 生成核心与关系结构 / Generative core and relational structure |
 | [Identity.lean](lean-declarations/core.md#module-58430fdbccab) | 生成核心与关系结构 / Generative core and relational structure |
 | [Imbalance.lean](lean-declarations/core.md#module-3a01f3d463aa) | 生成核心与关系结构 / Generative core and relational structure |
 | [IndexedAssembly.lean](lean-declarations/abstraction.md#module-e1734fcd36ac) | 抽象、适用性与构成 / Abstraction, applicability and constitution |

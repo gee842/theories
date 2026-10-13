@@ -6118,7 +6118,7 @@ Integration: 计划 P73、P74；把 P49 的 Web.tail_unrefuted 推广为任意�
 **作者反审。**
 1. **“消解”是分解，不是保证。** 正面结果要求世界被列表所持、识能分辨值、假设类给定；在开放的世界中，没有学习者处处静止。这正是规律，但若把“消解”读作“归纳已被证成”，就错了。
 2. **主要定理是学习理论中已知结果在脊柱上的形式。** 对角论证见 Putnam（1963，对 Carnap 确证函数的批评）；极限中的识别见 Gold（1967）与 Putnam（1965）；按否证、依次枚举的学习是 Gold 的枚举法；以学习理论处理归纳问题见 Kelly（1996，*The Logic of Reliable Inquiry*）；`every_determines_nothing` 是 Wolpert（1996）“没有先验区别”的有限、确定性形式。增量在于把它们放在一元关系的脊柱上，与识（P49）、实验（P53）、机制（P66）与选择（P64）接为一体，并以 Ren 的理把结构与变化统一，而不在于定理本身新颖。
-3. **双重否定。** `rest_unrefuted` 与 `held_rest_unrefuted` 的静止只以双重否定陈述，名称依整合者的规则（P58b）带“unrefuted”：这里不给出静止之步；这是本模块所陈述的范围，不是“不能给出”的证明：已知界（列表的长度）时，P83 的两周期引理（`Becoming.Identification` 的 `period_extends`）界定这一步看来可行（只是草图，此处未检查），留给 P83。学习者自己的记录从不表明它已静止（`no_record_fixes_next_finite`），这才是“何时静止不被识”的内容。在经典读法下双重否定就是“最终静止”。
+3. **双重否定。** `rest_unrefuted` 与 `held_rest_unrefuted` 的静止只以双重否定陈述，名称依整合者的规则（P58b）带“unrefuted”：这里不给出静止之步；这是本模块所陈述的范围，不是“不能给出”的证明：已知界（列表的长度）时，P83 的两周期引理（`Becoming.Identification` 的 `period_extends`）界定这一步看来可行（只是草图，此处未检查），留给 P83。P83 已给出这一步：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确（`Identification.held_learner_rests`，§97）。学习者自己的记录从不表明它已静止（`no_record_fixes_next_finite`），这才是“何时静止不被识”的内容。在经典读法下双重否定就是“最终静止”。
 4. **界粗。** `tri N` 不是最优界；对任意枚举的假设类，界是第一个成立假设的位置（`index_le_of_holds`），套索只是有限世界的完全类。
 5. **类是给出的。** `Determines` 量化于类；什么类是一个实际形成所持有或能达到的，不推出。“类是训练所能达到的”是读法；优化的动力学、隐式偏置与概率的推广界（PAC、VC 维）没有陈述。
 6. **`goAlike_iff_lumped` 很短。** 它几乎是定义展开；内容在于它把 P66 的“相同者同去”与这里的“归并”认作一个，使 Ren 的理有一个形式所指。它与 P70 的 `Law.goAlike_process_iff`（`Becoming.Description`，另一会话所持、同日待落地）展开 `Lumped` 后是同一陈述，证明也相同；两者独立写成，后落地的一方把二者的同一写明（实例或注明），不再另证。P71 的 `Becoming.Diagonal`（Lawvere 的缺口）与本节的对角序列同型：后者是按记录、逐步构造的学习者版本，同样由后落地的一方写明二者的关系。
@@ -6425,6 +6425,96 @@ Integration: 计划 P72（含 P72q）；回答 Ren 关于 wave/particle 的问�
 - 合并检查器在落地队列中检查一次，通过：回执 20261013T084405.661795Z。外围回执 20261013T084521.070057Z。
 - 独立审查：P66 的所有者 2026-10-12 审查了 `a655aa36` 版本，没有发现错误；同日又审查了其后加入的“整体与其部分”一节（`349fbc63`），读了证明，没有发现错误，`no_whole` 的说明补上“某个语境允许某物”。
 - 检查器的声明解析器不读名字末尾的撇号（把 `neg'` 读作 `neg`），所以 `Becoming.Quantum` 的四个辅助名 `neg'`、`zero_mul'`、`zero_add'`、`neg_one_mul'` 落地时改为 `negAt`、`int_zero_mul`、`int_zero_add`、`int_neg_one_mul`，陈述不变；改名后作者以共享的暂存构建重新编译并审计，全部源声明公理报告为空。
+
+
+## 97. 辨识：有界的记录确定什么（P83）
+
+2026-10-12，同一来源（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。Ren 05:12 推测：“i was speculating there is a "truth", but when we model it, projection is the limitation - i am not sure if this is right, i also speculate the full "truth" can be derived, situationally, including the cognition/controller part.”。AI 以已检查的结果检验这一推测，留下三个开放问题：展开是否有这样的律；能否从有限的记录推出律；能否不加公理命名有意义的切分的类。Ren 06:01 答：“keep prove to the deepest, i agree with your last reply(just saw), be smart, resolve and connect things elegantly. and for the open questions, if they need to be answered to move forward, answer them”。第一个问题已由 P70 回答（§94）：除了步的相继，每段所识的历史都是一条律，状态从它读出。P73（§92）证明：没有记录确定下一个值，在列表持有的世界中也不能；不知道有多少配置的按否证学习者，它会静止这一点不被否证，它的记录从不表明它已静止。本节回答后两个问题，并给出那个学习者静止之步的界。情境给出的是状态数的一个界。有了界，有限的记录确定整个历程，归纳成为演绎，有意义的切分的类以有限的名命名，不用商公理。本节在工作板上认领为 P83。它不加公理，除了界不加前提，属于第一部分。核心新增模块 `Becoming.Identification`（L4），42 项定理，导入 `Becoming.Description`（从而导入 `Becoming.Learning` 与 `Becoming.Unfolding`），不改任何已有模块。
+
+成果记录新增一项：[identification-where-bounded](../../../../theories/becoming/results/records/identification-where-bounded.md)。
+
+```text
+Result(s): 复用 learning-by-refutation（Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、
+           RefutedAt、Refuted、eq_of_not_refuted、record、record_congr、back_record、back_made、holdFrom、
+           holdFrom_lasso、lassoNext、diagonal_unrested、learner、lassos、index、index_refuted、index_kept、
+           index_le_succ、index_mono_le、lasso_learner_bounded、pairAt、pairAt_place、diag、diag_le、tri、tri_mono、
+           place_lt）；the-split-that-makes-sense（SameAhead、StatesBelow、shared_below、statesBelow_of_same、
+           lasso_iff_sameAhead、Denial.register、Denial.zero_two）；configurations-alike-by-relation（MakesSense、
+           Law.registered、Law.SameFuture、Law.alike_iff_sameFuture、Law.MakesSense.carries）；
+           recurrence-without-premise（Law.orbit、gap_of_le、gap_of_lt）；新增上列一项
+Delta: 两个周期：Identification.residue、Identification.periodic_whole、Identification.period_extends、
+       Identification.lassos_agree。强归纳与套索世界：Identification.below_upto、Identification.below_all、
+       Identification.lassoPos_early、Identification.lassoPos_period。有界的记录：Identification.statesBelow_mono、
+       Identification.statesBelow_iff_lasso、Identification.statesBelow_pos、Identification.le_twice_less_one、
+       Identification.bounded_agree、Identification.record_eq_iff、Identification.record_fixes、
+       Identification.record_short、Identification.mark、Identification.record_short_twice、
+       Identification.statesBelow_shift、Identification.sameAhead_iff_below。界给定时的归纳：
+       Identification.lasso_of_fits、Identification.fits_of_unrefuted、Identification.bounded_induction、
+       Identification.bounded_hypothesis。知道界的学习者：Identification.BorneOut、Identification.decBorneOut、
+       Identification.borneOut_record_iff、Identification.column、Identification.grid、Identification.mem_column、
+       Identification.mem_grid、Identification.firstFit、Identification.firstFit_sound、Identification.firstFit_found、
+       Identification.Fits、Identification.decFits、Identification.claimBy、Identification.knowing、
+       Identification.knowing_right、Identification.knowing_holds、Identification.knowing_earliest、
+       Identification.denial_derived、Identification.answer_exceeds_bound。不知道界的学习者：
+       Identification.unrefuted_persists、Identification.learner_rests、Identification.rests_of_lasso、
+       Identification.held_learner_rests。命名：Law.orbit_held、Law.statesBelow_held、
+       Law.sameFuture_iff_below、Law.name、Law.name_makesSense、Law.name_carries、Law.decideAlike
+Supplied premises / correspondence: 不加公理；除了状态数的界不加前提；界写在每条定理之中（StatesBelow o N，或世界被长度
+       为 N 的列表持有）；学习者与按名判定相同要所识的值可判定（DecidableEq），这是 P73 的“值可判定”；读法是 AI 的
+Evidence: 合并检查器回执 20261013T085153.061517Z（Becoming.Identification 42 项定理，全部源声明公理报告为空），外围回执 20261013T085221.613502Z
+Boundary: 界是状态数的界。界给学习者时，它从 2N − 1 起每步都对；界成立而学习者不知道时，P73 的学习者在 N + (2N − 1)·tri N
+          之前静止，这一步由界给出，学习者的记录不表明它；没有界时，记录不确定下一个值，套索学习者不静止（P73）。N + N' − 1 对一般的
+          N、N' 是充分的；精确性只对 N = 1（record_short）与 N = N'（record_short_twice）陈述。同一历史的两个时刻、同一世界
+          的两个配置的更锐的界（Moore 1956）没有陈述。只陈述确定的律与单个所识的历程；有分支的框架与概率没有陈述。
+          不含伦理谓词
+Integration: 计划 P83；回答 P70–P72 留下的后两个开放问题；“完整的真可按情境推出”读作：给出状态数的界，所识的一切从长 2N − 1
+             的记录推出，不能更短；把 P73 的未知界的结果补成恰好的边界；把 P69 的有意义的切分以有限的名给出
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Identification.residue`、`Identification.periodic_whole` | 每一步是一个不超过 `p` 的余数加整周期 `p + 1`；周期为 `p + 1` 的历程在整周期之后取原值（不用 `Nat` 的取模引理，它们依赖 `propext`） |
+| `Identification.period_extends` | **两个周期（Fine 与 Wilf，1965）。** 周期为 `p + 1`、在前 `p` 步都在 `Q` 步后回来的历程，在每一步都在 `Q` 步后回来：`p + Q、p + 2Q、…` 的余数走过一个循环，唯一没有给出的那一步（在 `p`）沿循环的其余部分传回来 |
+| `Identification.lassos_agree` | 从第 `i`、`i'` 步起以周期 `q + 1`、`q' + 1` 重复的两个历程，在 `(i + q + 1) + (i' + q')` 之前相同，就在每一步相同 |
+| `Identification.statesBelow_iff_lasso`、`Identification.statesBelow_mono`、`Identification.statesBelow_pos` | 历史至多有 `N` 个状态，恰当它从某一步 `i` 起以某个周期 `q + 1` 重复，`i + q + 1 ≤ N`（P70 的 `finitely_many_states_iff` 与 P73 的套索的有界形式） |
+| `Identification.bounded_agree`、`Identification.record_eq_iff`、`Identification.record_fixes` | 至多 `N` 个与至多 `N'` 个状态的两段历史，在 `N + N' − 1` 之前相同，就在每一步相同；记录相等恰当历程在记录长度之前相同；所以长 `N + N' − 1` 的记录确定历程 |
+| `Identification.record_short`、`Identification.mark`、`Identification.record_short_twice` | 不能更短：对每个 `T`，一个状态的历史与 `T + 1` 个状态的历史有相同的长 `T` 的记录而在 `T` 不同；对每个 `N ≥ 2`，两段至多 `N` 个状态的历史有相同的长 `2N − 2` 的记录而在那里不同（每 `N` 步标记一次与每 `N − 1` 步标记一次） |
+| `Identification.statesBelow_shift`、`Identification.sameAhead_iff_below` | 有界历史的较晚一段仍在界内；两个时刻是同一状态，恰当其后所识的在 `2N − 1` 步内相同 |
+| `Identification.lasso_of_fits`、`Identification.fits_of_unrefuted`、`Identification.bounded_induction`、`Identification.bounded_hypothesis` | **界给定时，归纳就是演绎。** 至多 `N` 个状态的历史上，`N` 之内的套索假设在长 `2N − 1` 的记录上不被否证，就在每一步不被否证；总有这样的假设。证明：以 P73 的套索世界读记录，得到第二段在界内、在 `2N − 1` 之前相同的历史 |
+| `Identification.BorneOut`、`Identification.borneOut_record_iff`、`Identification.grid`、`Identification.firstFit`、`Identification.Fits`、`Identification.claimBy`、`Identification.knowing` | 知道界 `N` 的学习者：在 `2N − 1` 之前不说；之后以网格中第一个在 `N` 之内且为记录所证实的套索假设作主张。记录证实一个主张者，恰当它在记录长度之前不被否证 |
+| `Identification.knowing_holds`、`Identification.knowing_right` | 它在任何至多 `N` 个状态的历史上都不被否证，从 `2N − 1` 起每一步都对 |
+| `Identification.knowing_earliest` | 不能更早：给出两个值，没有在每段至多 `N ≥ 2` 个状态的历史上都不被否证的学习者，在 `2N − 2` 步对每段都作主张 |
+| `Identification.denial_derived` | 说谎者的真被推出：二值否定没有一个固定的值被证实（`Diagonal.revision_never_rests`），知道有两个状态的学习者从第 3 步起每一步都对 |
+| `Identification.answer_exceeds_bound` | 回答自己的学习者的世界超出学习者所知的界：回答知道 `N` 的学习者每个主张的历程有多于 `N` 个状态（P73 的 `diagonal_unrested`） |
+| `Identification.unrefuted_persists` | **不被否证 `2N − 1` 步就永不被否证。** 至多 `N` 个状态的历史上，`N` 之内的套索假设 `(a, b)` 从第 `s ≥ a` 步起 `2N − 1` 步内不被否证，就从 `s` 起处处不被否证：从 `s` 起的一段在长 `2N − 1` 的记录上以周期 `b + 1` 重复，所以处处如此（`lasso_of_fits`） |
+| `Identification.learner_rests`、`Identification.held_learner_rests`、`Identification.rests_of_lasso` | **不知道界的学习者在界内静止。** 至多 `N` 个状态的历史上，P73 的按否证学习者（套索假设按对角排列，不知道 `N` 也不知道历程）从第 `N + (2N − 1)·tri N` 步起每步主张且正确：它所持的假设都在 `N` 之内；从 `N` 起每段 `2N − 1` 步中它被否证，或所持的假设永不再被否证；它被否证少于 `tri N` 次。列表持有的世界中 `N` 是列表的长度；套索历程上，P73 的 `rest_unrefuted` 留作不被否证的静止被找到。构造的证明：只比较两个自然数，不用排中律 |
+| `Law.orbit_held`、`Law.statesBelow_held`、`Law.sameFuture_iff_below` | 列表在律下封闭时，其成员的所识的未来至多有列表长度个状态；两个成员的所识的未来相同，恰当它们在 `2N − 1` 步内相同 |
+| `Law.name`、`Law.name_makesSense`、`Law.name_carries`、`Law.decideAlike` | **有意义的切分，不用商就命名。** 列表持有的世界中，以长 `2N − 1` 的所识的未来（一个有限列表）命名每个配置，这一命名有意义（P69 的 `MakesSense`）；名承载规律；值可判定时，比较名就判定相同 |
+
+**它回答了什么。**
+- **从有限的记录推出律。** 状态数的界给定时可以推出，而且记录长度是恰好的：至多 `N` 与 `N'` 个状态的两段历史，长 `N + N' − 1` 的记录确定它们（`bounded_agree`，经 Fine 与 Wilf 的两个周期定理），在 `N = 1` 与 `N = N'` 时更短的不行（`record_short`、`record_short_twice`）。界不给出时，没有记录确定下一个值（`no_record_fixes_next_finite`）。所以“按情境”恰是界：情境给出它所识的状态有多少，有限的记录就确定它的整个历程。
+- **归纳成为演绎。** 至多 `N` 个状态的历史上，一个 `N` 之内、在长 `2N − 1` 的记录上不被否证的套索假设，就是整个历程的律（`bounded_induction`）。知道界的学习者从 `2N − 1` 起每一步都对，在任何地方都不被否证（`knowing_right`、`knowing_holds`）；没有这样的学习者能更早地总作主张（`knowing_earliest`）。
+- **不知道界的学习者在界内静止。** P73 的按否证学习者不知道界，它会静止这一点在那里不被否证（`held_rest_unrefuted`）。界成立时它静止的步由界给出：至多 `N` 个状态的历史上，它从第 `N + (2N − 1)·tri N` 步起每步主张且正确（`learner_rests`、`held_learner_rests`），因为 `N` 之内的套索假设在一段 `2N − 1` 步中不被否证就永不被否证（`unrefuted_persists`）。它自己不知道这一步：它的记录从不表明它已静止（`no_record_fixes_next_finite`），因为同样的记录也属于状态更多的世界。所以知道界与不知道界的差别不在最后是否对，而在何时对，以及能否知道已对：知道界的学习者从 `2N − 1` 起对并且从不被否证；不知道界的学习者最终对，却被否证过，也不知道自己何时已对。
+- **命名有意义的切分的类，不用公理。** 列表持有的世界中，每个配置以它长 `2N − 1` 的所识的未来命名；名相等恰当所识的未来相同，所以这一命名就是 P69 的有意义的切分（`Law.name_makesSense`），名承载规律（`Law.name_carries`），相同可以判定（`Law.decideAlike`）。以整个所识的未来（一个函数）命名需要函数外延性，Lean 由商公理 `Quot.sound` 证明它；界使有限的名足够。
+- **包括控制者。** 这些陈述中的世界是任何列表持有的世界，其中的控制者或认知是所识的一部分（P70 的 `Law.adaptive_makesSense_iff`）。只有一种世界能使知道界的学习者落空：回答它的每个主张的世界。这样的世界有多于那个界的状态（`answer_exceeds_bound`）。说谎者不是这种世界：它的真是节律，知道两个状态的学习者从第 3 步起推出它（`denial_derived`）。
+
+**读法。** 以下是 AI 的，待 Ren：
+- 对 Ren 的推测：投影是限制，一个有限的记录也是一个投影；界是使这个投影对整个历程不失去什么的东西。“完整的真按情境可推出”，读作：情境给出它的状态数，所识的一切，包括其中的控制者，从长 `2N − 1` 的记录推出，不能更短；情境不给出界时，没有有限的记录足够。
+- 自我预测：认知在它所识的世界之中，仍可以推出这个世界的律；不能的只是在回答它的世界中给出一个被证实的宣布，而那样的世界超出它所知的界。P71 的“从内部不能一次全部说出”与此并不冲突：那里是同时持有每个读法，这里是推出一个有界历程的律。
+- 名：有界时，一个类的名是它在界内所识的未来，一个有限的东西；“名可名”可读作有界时的有限名，以整个未来为名需要一条公理。这是 AI 早先“名可名，非常名”读法的一个精确化，是否采用由 Ren 判断。
+
+**作者反审。**
+1. **核心是已知的定理。** Fine 与 Wilf（1965）的两个周期定理；有界时有限的观测确定自动机的行为，是 Moore（1956）一类的结果；Gold（1967）区分了极限中的辨识与有限的辨识。增量是：在核心中不用公理、不用取模引理证明它们；与 P73 的未知界的结果和 P69 的有意义的切分连成一体；给出知道界的学习者及其恰好的起点；把命名的问题落在函数外延性上。
+2. **界只对 `N = 1` 与 `N = N'` 是恰好的。** 对一般的 `N`、`N'`，`N + N' − 1` 是充分的，恰好与否要 Fine 与 Wilf 定理的极值构造，没有陈述。
+3. **同一历史的界较松。** `sameAhead_iff_below` 与 `Law.sameFuture_iff_below` 用 `2N − 1`；同一历史的两个时刻、同一世界的两个配置，Moore 的界约为 `N`，没有陈述。
+4. **学习者要求值可判定。** `knowing` 与 `decideAlike` 用 `DecidableEq`；`bounded_agree`、`lasso_of_fits`、`Law.name_makesSense` 不用。
+5. **`answer_exceeds_bound` 只对知道 `N` 的学习者。** 对每个学习者的一般陈述是 P73 的 `diagonal_unrested`；这里是它与界的连接。
+6. **静止之界粗。** `learner_rests` 的 `N + (2N − 1)·tri N` 约为 `N³`：它来自每段 `2N − 1` 步中至少一次否证与少于 `tri N` 次否证，不是最优；最优的界没有陈述。P73 的 `held_rest_unrefuted` 以双重否定陈述，这里不改它，只给出构造的静止之步；那里是本模块所陈述的范围，不是“不能给出”。
+
+**检查。**
+- 模块在暂存区对 main 的核心（加上 P69 的 `Unfolding`、P73 的 `Learning` 与 P70–P72 的模块）编译，没有错误或警告；逐条审计全部常量，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。`Nat` 的取模与减法引理依赖 `propext`，所以不用：余数由本模块自己的归纳给出，套索世界取 P73 的 `lassoNext`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T085153.061517Z。`Becoming.Identification` 的 42 项定理全部空依赖。外围回执 20261013T085221.613502Z。
+- 独立审查范围：2026-10-13 接续时 Ren 提供的会话交接报告称，P73 的所有者审查过加入有界静止之步前的版本，并要求纠正对 Learning 的双重否定的读法、以 period_extends 给出构造的静止之步；本包采用了这些修正。最终 42 项定理版本的独立审查尚未确认。
 
 
 ## English summary
@@ -7287,7 +7377,7 @@ Ren confirmed the reading of law and history ("there are no two realities"). The
 **P73 and P74: learning, that is, induction, generalization, training and the meta level.** Ren asked "how complete are we at explaining meta level? can we explain artificial neuron networks? can we explain cognition? do we have complete wisdoms about learning?". The AI answered that none of the four is complete, called the problem of induction ("when a model of what doesn't matter is right") undissolved, and proposed three steps: a loss as a selector, instance theorems for the acquisition chain and the connectionist models, and generalization as a law. Ren answered "please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md)). These are P73 (core) and P74 (periphery); the wisdom root (P75) is section 93. `Becoming.Learning` (75 theorems, L4) imports `Becoming.Mechanism` and `Becoming.Selection` and changes no existing module. The periphery bridge `LearningCorrespondence` (Lean 4.30.0-rc2 and Mathlib) imports it with the earlier `CompositionalAcquisition` and `UpdaterConsequences`. No axiom is added, and no premise beyond what each law names. 理 is read as Ren reads it: the modeling of the laws of structure and of change. This replaces the AI's reading in section 70, "a model answerable to registration", and does not oppose it, since on Ren's reading a model is still tested only through registration.
 - **Induction resolved into laws.** No record fixes the next value: given two values, two courses share any record and differ at its next step, so a claim made from the record is not right on both (`no_record_fixes_next`), and with values decided it is refuted on one of them (`claim_refuted_on_one`). This holds even among worlds held by a list (`no_record_fixes_next_finite`), and P49's `Web.tail_unrefuted` is the same law for level histories. For every learner a course answers each of its claims against it, so on that course it rests at no step (`diagonal_refutes`, `diagonal_unrested`). That course registers a law keeping its record, a world no list holds (`diagonal_open`).
 - **Learning by refutation.** A learner holds hypotheses in order and moves on exactly where the one held is refuted (`indexOn`, `learner`). It never passes a hypothesis that holds, so it is refuted at most that hypothesis's place and not at arbitrarily late steps (`index_le_of_holds`, `refutations_not_recurring`). Every hypothesis it passed was refuted on the record (`refuted_before`).
-- **Learning in a world held by a list.** Under a determined law whose orbit is held by a list `l`, every registration repeats from some step (a lasso, `lasso_of_held`). Every lasso is the registration of such a world (`lasso_realized`). Over the lasso hypotheses in diagonal order, the learner reads only a registration it can tell apart and knows neither the configurations nor how many there are. It is refuted fewer than `tri l.length` times, claims at every step from `l.length` on and is not refuted at arbitrarily late steps (`held_learner_bounded`, `lasso_learner_bounded`). That it comes to rest is unrefuted, a double negation, and the names say so under the integrator's rule (`held_rest_unrefuted`, `rest_unrefuted`). It rests only on lassos (`lasso_of_rest`). The step at which it rests is not stated, and its record never shows that it has come to rest: given two values, every claim it makes is refuted, at that step, on a course of a world held by a list sharing its record (`no_record_fixes_next_finite`). With the list's length known, P83's two-period lemma appears to bound the step (a sketch, not checked here); that is left to P83. In `Alternate` it is refuted twice and right from the third step, at the bound.
+- **Learning in a world held by a list.** Under a determined law whose orbit is held by a list `l`, every registration repeats from some step (a lasso, `lasso_of_held`). Every lasso is the registration of such a world (`lasso_realized`). Over the lasso hypotheses in diagonal order, the learner reads only a registration it can tell apart and knows neither the configurations nor how many there are. It is refuted fewer than `tri l.length` times, claims at every step from `l.length` on and is not refuted at arbitrarily late steps (`held_learner_bounded`, `lasso_learner_bounded`). That it comes to rest is unrefuted, a double negation, and the names say so under the integrator's rule (`held_rest_unrefuted`, `rest_unrefuted`). It rests only on lassos (`lasso_of_rest`). The step at which it rests is not stated, and its record never shows that it has come to rest: given two values, every claim it makes is refuted, at that step, on a course of a world held by a list sharing its record (`no_record_fixes_next_finite`). With the list's length known, P83's two-period lemma appears to bound the step (a sketch, not checked here); that is left to P83. P83 states it: where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on (`Identification.held_learner_rests`, section 97). In `Alternate` it is refuted twice and right from the third step, at the bound.
 - **The meta level.** Learning over classes is the same refutation over one merged enumeration, with the bound composed (`merged`, `merged_bound`). However the classes are merged, the learner has its answering course: there is no top (`merged_unrested`).
 - **When a model of what does not matter is right.** A model lumps together the differences it treats as irrelevant. Within the functions that go alike across a lumping (`Lumped`), finite data fix the value at an untried input exactly where it is lumped with an observed one (`determines_lumped_iff`). The value carried over is right exactly where the world takes one value at the two (`lumped_right_iff`, `lumped_world_right`). For a law of change, an observed outcome transfers exactly where the two configurations go alike by the move (`transfer_right_iff`). The class of every function is free at every untried input, so data alone fix nothing there (`every_free`, `every_determines_nothing`). A free class determines only what its members share (`free_determines_iff`).
 - **Structure and change are one lumping.** A determined law goes alike under `π` exactly where its next configuration, read through `π`, goes alike across what `π` lumps (`goAlike_iff_lumped`). P66's carrying a law and generalization through a lumping are one condition.
@@ -7375,4 +7465,24 @@ Readings (the AI's, pending Ren; Ren agreed with the reply containing them): fro
 
 Readings (the AI's, pending Ren; Ren agreed with the reply containing them): neither wave nor particle is the truth, each being a projection onto context-free values, while the context-indexed statement fits; a value is a registration in context, a relation; so the truth that exists, in Ren's speculation, is relational. Specker, the square and P70's parity are parity phenomena (Mermin's argument), stated as a reading, not as a general theorem. Only possibilities are stated, not probabilities or Hilbert space. Record added: contextual-registration. Receipt 20261013T084405.661795Z (Context 28, Quantum 37); periphery receipt 20261013T084521.070057Z. Reviewed independently by the owner of P64–P68 at `a655aa36`, and the later section on wholes and their parts at `349fbc63`, with no error found; four helper names of `Becoming.Quantum` lose their primes, which the checker's parser does not read, with statements unchanged; the author's counterreview is in section 96.
 
-The package now has 3114 theorems and 4559 declaration audits, over a core closure of 63 modules and a package of 61, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T084521.070057Z).
+**P83: identification, what a bounded record fixes.** Same source. Ren speculated that "the full "truth" can be derived, situationally, including the cognition/controller part", then asked for the deepest proof, with the open questions answered where needed. The answer had left three questions open. P70 answers the first: beyond the succession of steps, every registered history is a law with its states read off it. P73 shows that no record fixes the next value, not even in worlds a list holds; that a learner by refutation not knowing how many configurations there are comes to rest is unrefuted, and its record never shows that it has. This section answers the other two, and bounds the step at which that learner rests: what the situation supplies is a bound on its states. `Becoming.Identification` (42 theorems, L4) imports `Becoming.Description` and changes no existing module. It adds no premise beyond the bound.
+- **Two periods.** A course with period `p + 1` that comes back after `Q` steps at its first `p` steps does so at every step (`period_extends`, Fine and Wilf, 1965, proved with no modulus lemma). Two lassos agreeing before `(i + q + 1) + (i' + q')` agree everywhere (`lassos_agree`).
+- **A bounded record fixes the course, and no shorter one does.** A history has at most `N` states exactly where it is a lasso within `N` (`statesBelow_iff_lasso`). Histories with at most `N` and `N'` states are fixed by their record before `N + N' - 1` (`bounded_agree`, `record_fixes`). Before `N + N' - 2` they are not, for `N = 1` (`record_short`) and for `N = N'` (`record_short_twice`). The states of a bounded history are read off `2N - 1` steps (`sameAhead_iff_below`).
+- **Induction is deduction where the bound is given.**
+  - A lasso hypothesis within `N` unrefuted on the record before `2N - 1` holds at every step (`lasso_of_fits`, `bounded_induction`).
+  - The learner that knows `N` (`knowing`) is refuted nowhere and is right from step `2N - 1` on (`knowing_holds`, `knowing_right`).
+  - No learner that is never refuted can claim at step `2N - 2` on every such history (`knowing_earliest`).
+  - The liar's rhythm is derived from step 3 (`denial_derived`).
+  - A world answering the learner that knows `N` has more than `N` states (`answer_exceeds_bound`).
+- **The learner that does not know the bound rests within it.** A lasso hypothesis within `N` unrefuted for `2N - 1` steps from `s ≥ a` is never refuted from `s` on (`unrefuted_persists`). So P73's learner by refutation, knowing neither `N` nor the course, claims and is right at every step from `N + (2N - 1) * tri N` on (`learner_rests`); in a world a list holds `N` is its length (`held_learner_rests`), and on a lasso course the rest P73 leaves unrefuted is found (`rests_of_lasso`). Its record does not show the step (`no_record_fixes_next_finite`): the step is a function of the bound, which the learner does not have.
+- **The split that makes sense, named with no quotient.** In a world a list holds, configurations have the same registered future exactly where their futures agree for `2N - 1` steps (`Law.sameFuture_iff_below`). Naming each configuration by that finite future makes sense, carries the law and decides likeness (`Law.name_makesSense`, `Law.name_carries`, `Law.decideAlike`). Naming by the whole future would need function extensionality, which Lean proves from `Quot.sound`.
+
+Readings (the AI's, pending Ren):
+- "Situationally" is the bound. A finite record is a projection, and the bound makes it lose nothing of the course.
+- The controller is inside the bounded world. Only a world answering its learner escapes that learner, and such a world exceeds the bound.
+- With a bound, a class's name is its finite future.
+- Knowing the bound and not knowing it differ not in whether the learner ends right but in when, and in whether it can know it is: the learner that knows it is right from `2N - 1` on and never refuted; the one that does not is right in the end, after refutations, and never knows when.
+
+Fine–Wilf, Moore and Gold are cited as the known results. The exactness of `N + N' - 1` for general `N`, `N'`, and Moore's sharper bound for one history, are not stated; the rest bound `N + (2N - 1) * tri N` is coarse. Record added: identification-where-bounded. Receipt 20261013T085153.061517Z (Identification 42); periphery receipt 20261013T085221.613502Z. Independent review scope: the session handoff supplied by Ren on 13 October 2026 reports that P73's owner reviewed the version before the bounded rest step, requested the corrected reading of Learning's double negation and a constructive rest step through period_extends; this package incorporates those corrections. Independent review of the final 42-theorem version is not confirmed. The author's counterreview is in section 97.
+
+The package now has 3156 theorems and 4613 declaration audits, over a core closure of 64 modules and a package of 62, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T085221.613502Z).

@@ -115,6 +115,7 @@ CONSTRUCTIONS = {
     'gateBy': 'coarse', 'Tower.web': 'coarse', 'Tower.flow': 'coarse', 'Tower.reads': 'coarse',
     'Tower.refine': 'coarse', 'Web.raise': 'raise', 'Web.redirect': 'redirect', 'keep': 'keep', 'insertNew': 'once',
     'Learning.learner': 'refute', 'Learning.index': 'refute', 'Learning.swapTo': 'other',
+    'Identification.knowing': 'refute', 'Identification.firstFit': 'first',
     'adjoin': 'once',
 }
 MENT_REASON = {
@@ -125,8 +126,11 @@ MENT_REASON = {
     'raise': '抬高一个条件：需分辨条件的相同 / one condition raised: tells conditions apart',
     'redirect': '在不被支持之步移开依存：支持已定 / dependence moved at unsupported steps: support decided',
     'keep': '按规定保留的列表：对其成员已定 / a list kept by a determination: decided of its members',
-    'refute': '按否证学习：学习者保留一个假设直到它的主张被否证，需分辨值的相同 / learning by refutation: the learner '
-              'keeps a hypothesis until its claim is refuted, which tells values apart',
+    'refute': '按否证学习：判定主张是否被否证，以保留假设或选出记录所支持的假设，需分辨值的相同 / learning by refutation: '
+              'decides whether claims are refuted, to retain a hypothesis or select one borne out by the record, which '
+              'tells values apart',
+    'first': '选出首个符合者：依次判定列表成员是否满足规定 / first fitting member: decides the condition on each '
+             'listed member in order',
     'other': '另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells '
              'values apart',
     'once': '不重复的列表：成员关系已定 / a list without repetition: membership decided',
@@ -135,7 +139,7 @@ LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
     'redirect': '移开依存 / dependence moved', 'keep': '保留的列表 / a kept list',
     'once': '不重复的列表 / a list without repetition', 'refute': '按否证学习 / learning by refutation',
-    'other': '另一个值 / another value', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
+    'other': '另一个值 / another value', 'first': '首个符合者 / first fitting member', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
     'indicate': '造出指示 / builds an indicator',
 }
@@ -177,6 +181,8 @@ PROOF_KIND = {
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',
         'Flow.sample_comesToStand_iff']},
     **{n: 'same' for n in [
+        'Identification.bounded_induction', 'Identification.fits_of_unrefuted',
+        'Identification.unrefuted_persists',
         'Diagonal.alike_of_complete', 'Diagonal.complete_iff_alike',
         'Learning.claim_refuted_on_one', 'Learning.eq_of_not_refuted', 'Learning.every_free',
         'Learning.every_determines_nothing',

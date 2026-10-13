@@ -114,8 +114,8 @@
     "en": "The recurrence of law 1 and the bound of law 3 use the least difference in a fixed unit: at a refining unit they fail where the refinement feeds what stands (the witnesses of Becoming.Resolution, refinement_feeds_witnesses), and hold with the refinement counted as a giving (World.rests_refinement_counted, World.arising_opens_refinement_counted) or with the unit fixed from some step on (Flow.taking_stops); these are cited, not reproved. Law 2 concerns what holds, not amounts, and survives as stated. Need is read in the unit of the level, a commitment of the representation Ren decided on 12 October (condition r t > 0), not a premise on worlds; a reserve fed by the refinement may fall forever (Web.CarriesIn of Becoming.Resolution), and the laws of dependence counting a loss over a stretch likewise need the refinement counted as a giving. No premise is derived; no definition of Resolution is changed. The names (BalancesAtOn, RisesAt, FallsAt, RunsDownOnAt, Doubling) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T084405.661795Z）：新核心模块 Becoming.Units 的 31 项定理全部空依赖；同一回执覆盖包内 61 个模块，共 3114 项定理／4559 项声明审计；外围回执 20261013T084521.070057Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §81。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T084405.661795Z): the 31 theorems of the new core module Becoming.Units all have empty axiom reports; the same receipt covers the package's 61 modules with 3114 theorems/4559 declaration audits; periphery receipt 20261013T084521.070057Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §81 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T085153.061517Z）：新核心模块 Becoming.Units 的 31 项定理全部空依赖；同一回执覆盖包内 62 个模块，共 3156 项定理／4613 项声明审计；外围回执 20261013T085221.613502Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §81。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T085153.061517Z): the 31 theorems of the new core module Becoming.Units all have empty axiom reports; the same receipt covers the package's 62 modules with 3156 theorems/4613 declaration audits; periphery receipt 20261013T085221.613502Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §81 of the integration note."
   },
   "references": [
     {
@@ -187,27 +187,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "6486fb81d22ce08d197498cc50bfdc3c65411195d38c39199ed87f526c08b639"
+      "sha256": "6b3ab4826b9335e8d97a5cd3be21a7fc907a5a1f246af1f8baf775a8c55b1add"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "d4bfed47b4c203084e0a29e848d98b82d31713fd457c59af261ec192b2754857"
+      "sha256": "ceab038a29ce815a4b16a14b67c6f37a398dc0e6db742d10bada1c4dafd015d5"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "debc6d42fd137fa6f31af297659733aa94f6f66225a2d12fd48c5cb2fbfeeda2"
+      "sha256": "fb97c9ad508442f36734e5bdc9f77bf74b90a8fbdee16dc9fc6fe91a1c1b1703"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "33c6c1477360a474c8428d8cdc636cdc4ed69781d3b1a4522f8b845c24509b7f"
+      "sha256": "6ea6aa5384849f7bb488d7b03600b569e6c7bf74732176e6c6932debd05ca1d5"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "d58c364289c9a6a1d7cd124d2eedfdc963b68529799e092c8a39bdde7a721587"
+      "sha256": "9ac31959acb84b471b667ad7b12a7be17a3fe4316b0e4624426810cf5fd27dc9"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -276,6 +276,10 @@
     {
       "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
       "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
     }
   ]
 }

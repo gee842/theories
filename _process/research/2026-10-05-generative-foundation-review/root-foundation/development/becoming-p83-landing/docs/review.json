@@ -1,4 +1,4 @@
 {
-  "zh": "独立审查：待定。",
-  "en": "Independent review: pending."
+  "zh": "独立审查范围：2026-10-13 接续时 Ren 提供的会话交接报告称，P73 的所有者审查过加入有界静止之步前的版本，并要求纠正对 Learning 的双重否定的读法、以 period_extends 给出构造的静止之步；本包采用了这些修正。最终 42 项定理版本的独立审查尚未确认。",
+  "en": "Independent review scope: the session handoff supplied by Ren on 13 October 2026 reports that P73's owner reviewed the version before the bounded rest step, requested the corrected reading of Learning's double negation and a constructive rest step through period_extends; this package incorporates those corrections. Independent review of the final 42-theorem version is not confirmed."
 }

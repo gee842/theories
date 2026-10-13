@@ -57,6 +57,7 @@ import Becoming.Response
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Description
+import Becoming.Identification
 
 /-!
 # The Theory of Becoming: the formal core
@@ -609,6 +610,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   law as `Learning.goAlike_iff_lumped` is its instance here, and finitely many states is P73's
   lasso. The readings are the AI's; Ren asked for the pair to be dug
   deeper and agreed with the reply that followed.
+* `Becoming.Identification` (L4): identification, what a bounded record fixes (P83), with no
+  premise beyond the bound on states. Two periods (Fine and Wilf): a course with period `p + 1`
+  that comes back after `Q` steps at its first `p` steps does so at every step. Histories with at
+  most `N` and `N'` states are fixed by their record before `N + N' - 1`, and for `N = 1` and
+  `N = N'` no shorter record does. Where the bound is given induction is deduction: a lasso
+  hypothesis within `N` unrefuted before `2N - 1` holds at every step; the learner that knows the
+  bound is refuted nowhere and right from `2N - 1` on, and none can always speak sooner; the
+  liar's rhythm is derived; a world answering that learner exceeds the bound. The learner that
+  does not know the bound rests within it: a lasso hypothesis within `N` unrefuted for `2N - 1`
+  steps is never refuted again, so the learner by refutation over the lasso hypotheses is right
+  at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
+  list holds, naming configurations by their registered futures for `2N - 1` steps makes sense
+  and carries the law, with no quotient. The readings are the AI's.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

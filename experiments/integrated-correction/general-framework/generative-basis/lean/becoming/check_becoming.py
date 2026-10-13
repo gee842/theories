@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -1143,6 +1143,22 @@ SCOPE = (
     "; going alike under a determined law is Learning's lumping, and a lasso is two moments being "
     "one state, so finitely many states is a lasso"
     ". "
+    "Identification: a course with period p + 1 coming back after Q steps at its first p steps comes "
+    "back after Q steps at every step, and two lassos agreeing before (i + q + 1) + (i' + q') agree "
+    "everywhere; a history has at most N states exactly where it is a lasso within N, histories with "
+    "at most N and N' states agreeing before N + N' - 1 agree everywhere, records are equal exactly "
+    "where courses agree before their length, and for N = 1 and for N = N' two such histories share "
+    "their record before N + N' - 2 and differ there; on a history with at most N states a lasso "
+    "within N holding before 2N - 1 holds everywhere, the learner that knows N is refuted nowhere and "
+    "right from 2N - 1 on, no learner refuted nowhere claims at 2N - 2 on every such history, the "
+    "learner that knows two states is right about the denial from step 3, and the course answering "
+    "the learner that knows N has more than N states; on a history with at most N states a lasso "
+    "hypothesis (a, b) within N unrefuted for N + N - 1 steps from s >= a is unrefuted from s on, and the "
+    "learner by "
+    "refutation over the lasso hypotheses claims and is right at every step from N + (N + N - 1) * tri N "
+    "on, in a world a list of length N holds too; under a determined law on a list closed under "
+    "it, the same registered future is agreement for 2N - 1 steps, and naming by that finite future "
+    "makes sense, carries the law and decides likeness. "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "
