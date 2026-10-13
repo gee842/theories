@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.research import registry, navigation, lean_catalogue, reading_catalogue
+from tools.research import registry, navigation, lean_catalogue, reading_catalogue, style
 
 
 @contextmanager
@@ -40,6 +40,8 @@ def input_snapshot():
     paths = {navigation.CONFIG, navigation.HISTORY}
     if isinstance(config.get('readme_opening'), str):
         paths.add(ROOT / config['readme_opening'])
+    if registry.standard_boundaries_path(config):
+        paths.add(ROOT / registry.standard_boundaries_path(config))
     paths.update((ROOT / config['goal_directory']).glob('*.json'))
     for directory in config['record_directories']:
         for path in (ROOT / directory).glob('*.json'):
@@ -56,12 +58,51 @@ def unchanged_inputs(before):
     return before == input_snapshot()
 
 
-def changed_paths(base):
+def revision(base):
     # Git validates the revision; never interpolate it into a shell command.
-    rev = subprocess.check_output(['git', 'rev-parse', '--verify', base + '^{commit}'], cwd=ROOT, text=True).strip()
+    return subprocess.check_output(['git', 'rev-parse', '--verify', base + '^{commit}'], cwd=ROOT, text=True).strip()
+
+
+def changed_paths(base):
+    rev = revision(base)
     changed = subprocess.check_output(['git', 'diff', '--name-only', '-z', rev, '--'], cwd=ROOT).decode().split('\0')
     new = subprocess.check_output(['git', 'ls-files', '--others', '--exclude-standard', '-z'], cwd=ROOT).decode().split('\0')
     return set(changed + new) - {''}
+
+
+def ratchet(records, base, changed=None):
+    """Growth findings for changed records against their bytes at `base` (errors), and
+    a warning for a record created in schema 1 rather than schema 2."""
+    rev = revision(base)
+    changed = changed_paths(base) if changed is None else changed
+    findings = []
+    for r in records:
+        path = str(registry.record_path(r).relative_to(ROOT))
+        if path not in changed:
+            continue
+        try:
+            old = json.loads(subprocess.check_output(['git', 'show', f'{rev}:{path}'], cwd=ROOT, stderr=subprocess.DEVNULL))
+        except subprocess.CalledProcessError:
+            if r.get('schema_version') != 2:
+                findings.append({'id': r['id'], 'field': 'schema_version', 'rule': 'new-v1-record', 'severity': 'warning',
+                                 'detail': 'write new records in schema 2'})
+            continue
+        except ValueError:
+            continue  # The earlier bytes were not a record; nothing to compare.
+        if isinstance(old, dict):
+            findings += style.growth(old, r)
+    return findings
+
+
+def lint(ids=None, base=None):
+    """Every readability finding, with the growth ratchet when a base commit is given."""
+    records, errors = registry.load_records()
+    selected = set(ids) if ids else registry.affected_ids(records, changed_paths(base)) if base else {r['id'] for r in records}
+    findings = [f for r in records if r['id'] in selected for f in style.lint(r)]
+    if base:
+        findings += [f for f in ratchet(records, base) if f['id'] in selected]
+    return {'records': len(selected), 'summary': style.summary(findings), 'findings': findings, 'errors': errors,
+            'scope': 'Form only: length, process narration, shared boundaries written out. Whether a boundary is substantive is the author\'s reading.'}
 
 
 def inventory():
@@ -87,7 +128,7 @@ def search(query, archives=False, limit=30):
     needle = query.casefold()
     results = []
     for r in records:
-        text = json.dumps({k: r[k] for k in ('id', 'title', 'claim', 'aliases')}, ensure_ascii=False)
+        text = json.dumps({k: r.get(k) for k in ('id', 'title', 'statement', 'claim', 'laws', 'does_not_show', 'aliases')}, ensure_ascii=False)
         if needle in text.casefold():
             results.append({'kind': 'result', 'path': str(registry.record_path(r).relative_to(ROOT)), 'id': r['id'], 'summary': registry.bilingual(r['title'])})
     for path in inventory():
@@ -153,7 +194,8 @@ def check_or_render(render=False, base=None, ids=None):
     records, errors = registry.load_records()
     findings, drift = registry.validate(records)
     errors += findings + registry.orphan_pages(records) + navigation.validate_goals(records) + navigation.validate_history()
-    selected = set(ids) if ids else registry.affected_ids(records, changed_paths(base)) if base else {r['id'] for r in records}
+    changed = changed_paths(base) if base else None
+    selected = set(ids) if ids else registry.affected_ids(records, changed) if base else {r['id'] for r in records}
     errors += ['unknown result id: ' + x for x in selected - {r['id'] for r in records}]
     if errors:
         return 1, {'errors': errors, 'source_drift': drift}
@@ -177,10 +219,21 @@ def check_or_render(render=False, base=None, ids=None):
         for path, body in {**outputs, **record_outputs}.items():
             if not (ROOT / path).exists() or (ROOT / path).read_text() != body:
                 errors.append('generated view differs; reconcile and run make research-render: ' + path)
+    # Readability: schema-2 errors are already among the validation errors; the rest warn.
+    # The growth ratchet applies to records changed since the base commit.
+    warnings = [f for r in records for f in style.lint(r) if f['severity'] == 'warning']
+    grown = ratchet(records, base, changed) if base and not render else []
+    errors += [f'{f["id"]}: {f["field"]}: {f["rule"]}: {f["detail"]}' for f in grown if f['severity'] == 'error']
+    warnings += [f for f in grown if f['severity'] == 'warning']
     if not unchanged_inputs(before):
         errors.append('Research inputs changed during this operation; rerun against the latest source versions.')
     scoped = [d for d in drift if d['id'] in selected]
-    return (1 if errors else 2 if scoped else 0), {'records': len(records), 'selected_records': sorted(selected), 'errors': errors, 'source_drift': scoped, 'unrelated_source_drift': [d for d in drift if d['id'] not in selected], 'scope': 'Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.'}
+    result = {'records': len(records), 'selected_records': sorted(selected), 'errors': errors, 'source_drift': scoped, 'unrelated_source_drift': [d for d in drift if d['id'] not in selected],
+              'style_warnings': {**style.summary(warnings), 'list': 'python3 -B tools/research/research.py lint [--ids ...]'}}
+    if ids or base:
+        result['selected_style_warnings'] = [f for f in warnings if f['id'] in selected]
+    result['scope'] = 'Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.'
+    return (1 if errors else 2 if scoped else 0), result
 
 
 def main():
@@ -195,6 +248,11 @@ def main():
     p.add_argument('--archives', action='store_true')
     p.add_argument('--limit', type=int, default=30)
     sub.add_parser('imports')
+    p = sub.add_parser('lint', help='List readability findings (form only); with --changed-since, also the growth ratchet')
+    p.add_argument('--changed-since')
+    p.add_argument('--ids', nargs='+')
+    p = sub.add_parser('snapshot', help='Before migrating a record, store its exact bytes and print the text_versions entry')
+    p.add_argument('id')
     p = sub.add_parser('preserve-view', help='After reading and reconciling added prose, preserve it before rendering')
     p.add_argument('path')
     p.add_argument('--note', required=True, help='Where the reviewed additions were integrated, with their scope')
@@ -205,6 +263,12 @@ def main():
         result, code = search(args.query, args.archives, args.limit), 0
     elif args.command == 'imports':
         result, code = import_graph(), 0
+    elif args.command == 'lint':
+        result = lint(args.ids, args.changed_since)
+        code = 1 if result['errors'] or result['summary']['by_severity'].get('error') else 0
+    elif args.command == 'snapshot':
+        result, code = {'text_versions_entry': registry.snapshot_record(args.id),
+                        'next': 'Add this entry to the record\'s text_versions, map every earlier sentence, and add a history note.'}, 0
     elif args.command == 'preserve-view':
         with render_lock():
             result, code = navigation.preserve_view(args.path, args.note), 0
