@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "unceasing-generation-needs-renewal",
   "title": {
-    "zh": "不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成",
-    "en": "Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation"
+    "zh": "不息的生成需要更新",
+    "en": "Unceasing generation needs renewal"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "statement": {
+    "zh": "生起消耗有限条件时，不息的生成需要更新复现；更新却不蕴含生成。",
+    "en": "Where arising depletes finitely many conditions, unceasing generation needs renewal to recur; renewal does not imply generation."
+  },
   "claim": {
     "zh": "在依存网上，一个形成跨某步生起，当它在该步不活跃、在其后活跃；生成不息，当某个形成在任意晚的步生起（同一形成可以再生起）。生起（变为活跃）是生生第二个“生”的一种读法的形式载体（作者的读法）。一个事件消耗一个有限的条件家族，当在它的每一步，若家族中没有条件上升，则其中某个条件下降；这恰是说事件的每一步家族中有条件变化，与事件的关系不论。从某步起家族中没有条件上升时，消耗它的事件不在任意晚的步发生。因此，若生起消耗家族，不息的生成使家族中某个条件在任意晚的步上升（净上升）；若每次上升都由某个活跃形成更新该条件造成，更新的活动在任意晚的步复现。在平衡的流中有不需要净上升的形式：任意晚的步上有正的取用，家族就在任意晚的步得到补充；在其第一个活跃步从家族取用的形成在任意晚的步生起是其一种情形，补充者于是在任意晚的步出现，恒定的取用者而没有任何生起是另一种；生起在这一形式中只经由它带来的取用起作用。这一形式看得见与汲取同步的补充。一个在每个活跃步都使家族中某个条件下降的形成，在家族不再上升之后不在任意晚的步活跃，无论它怎样在其中转移依存：替代推迟终结而不逃脱终结。若一个量从不上升而每次生起都使它下降（耗散），生成不是不息的；一个总水平不变的封闭循环可以维持不息的生成。更新可以复现而没有任何生起（月亮更新的潮水），所以在这些前提下不息的生成严格强于复现的更新。形成在汲取一个不被更新的条件时可以接连生起，条件被消耗，生起不复现；消耗者可以从一个来源转向另一个而终结。一个形成在源所更新的条件上反复生起，满足全部前提，生成不息；工作候选的逐步读法扣下它的每一次生起，两步周期的读法记入它。不用伦理前提，也不用 Lean 公理。",
     "en": "On a web of dependence, a formation arises across a step when it is inactive at the step and active after it; generation is unceasing when some formation arises at arbitrarily late steps (the same formation may arise again). Arising, becoming active, is the formal carrier of one reading of the second 生 of 生生 (the author's reading). An event depletes a finite family of conditions when, at each of its steps at which no condition of the family rises, one of them falls; this says exactly that some condition of the family changes at each step of the event, whatever its relation to the event. If from some step none of them rises, events depleting the family do not occur at arbitrarily late steps. Hence, if arising depletes the family, unceasing generation makes some condition of the family rise (a net rise) at arbitrarily late steps; and if every rise is made by some active formation renewing the condition, renewing activity recurs. Balanced flows give a form that needs no net rise: positive uptake at arbitrarily late steps needs the family replenished at arbitrarily late steps; formations taking from the family at their first active step and arising at arbitrarily late steps are one case, in which renewers recur, and a constant consumer with nothing arising is another; in this form arising works only through the uptake it brings. This form sees replenishment concurrent with drawing. A formation lowering some condition of the family at each active step is not active at arbitrarily late steps once none of them rises any more, however it moves its dependence among them: substitution defers the end and does not escape it. If a quantity never rises and every arising lowers it (dissipation), generation is not unceasing; a closed cycle whose total stays constant sustains unceasing generation. Renewal can recur with nothing arising (a tide the moon renews), so under these premises unceasing generation is strictly stronger than recurring renewal. Formations can arise one after another while drawing an unrenewed condition, consume it, and arising does not recur; a consumer can move from one source to another and end. A formation arising again and again on a condition the source renews meets every premise and generation is unceasing; the stepwise working candidate withholds each of its arisings, and the reading over cycles of two credits it. No ethical premise and no Lean axiom is used."
@@ -802,6 +806,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“不息需要更新：生起消耗有限条件时，不息的生成需要更新复现，更新却不蕴含生成”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Unceasing generation needs renewal: where arising depletes finitely many conditions, unceasing generation needs renewal to recur, while renewal does not imply generation”"
     }
   ]
 }

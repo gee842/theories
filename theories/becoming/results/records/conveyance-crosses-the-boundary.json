@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "conveyance-crosses-the-boundary",
   "title": {
-    "zh": "输送穿越边界：以一类关系项读，输送是一种候选的 related；延续家族的边界不会从某步起再无穿越，其区域不是关系的切口；输送使两个条件相关，交互、以之为生与世系从不如此",
-    "en": "Conveyance crosses the boundary: read with one kind of relatum, conveyance is a candidate reading of related; a continuing family's boundary is from no step on left uncrossed, so its region is no cut in the relations; conveyance relates two conditions, which interaction, living on and descent never do"
+    "zh": "输送穿越边界",
+    "en": "Conveyance crosses the boundary"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-10T07:45:00+00:00",
+  "statement": {
+    "zh": "以一类关系项读，输送是一种候选的 related。延续家族的边界不会从某步起再无穿越，其区域不是关系的切口；输送使两个条件相关，交互、以之为生与世系从不如此。",
+    "en": "Read with one kind of relatum, conveyance is a candidate reading of related. A continuing family's boundary is from no step on left uncrossed, so its region is no cut in the relations; conveyance relates two conditions, which interaction, living on and descent never do."
+  },
   "claim": {
     "zh": "以一类关系项读，把事件逐步读（living：活跃且不侵蚀），两个同一步的事件在有东西在它们的关系项之间输送时相关（Flow.conveyance）。在某步什么都不被取用、不被给予的关系项，在该步与任何事件都不相关（Flow.conveyance_idle）。没有已形成的关系离开一个区域，称该区域的边界为关系的切口（Flow.Cut）。在平衡与耗散之下，取用复现、从某步起被围住的不重复有限家族，它的边界不会从某步起再无穿越（Flow.boundary_crossed），所以它的区域不是切口（Flow.region_not_a_cut）；在 N_rel 下，珍视一个关系项的事件，就到达向它输送的那个关系项在该步的活的事件（Flow.valuing_reaches_source）。输送新增的是两个条件之间、沿流入方向的关系：以一类关系项读，两个条件之间的输送使它们的事件相关（Flow.roles_conveyance），而交互、以之为生与世系在任何步上都不使两个条件相关（Flow.roles_conditions_unrelated）；所以清除者的资源每步都被穿越（Clearing.crossed、Clearing.resource_not_cut），该步的燃料与资源只由输送相关（Clearing.conveyance_only）。以之为生之下，清除者以之为生的资源的区域也不是切口（Clearing.resource_not_cut_living_on），所以区域不是切口本身不新；新的是条件之间的关系，region_not_a_cut 的独特之处在方向。不用伦理公理，也不用 Lean 公理；N_rel 是假设。",
     "en": "Read with one kind of relatum, with events read stepwise (living: active and not undermining), two events at a common step are related when something is conveyed between their relata (Flow.conveyance). A relatum nothing is taken from or given to at a step is related to nothing at that step (Flow.conveyance_idle). A region's boundary is a cut in the relations when no formed relation leaves it (Flow.Cut). Under balance and dissipation, the boundary of a finite family without repetition, enclosed around from some step on, from which taking recurs, is from no step on left uncrossed (Flow.boundary_crossed), so its region is not a cut (Flow.region_not_a_cut); under N_rel, valuing a relatum's event reaches the living event at that step of what is conveyed into it (Flow.valuing_reaches_source). What conveyance adds is a relation between two conditions, in the direction of inflow: read with one kind of relatum, something conveyed between two conditions relates their events (Flow.roles_conveyance), while interaction, living on and descent relate no two conditions at any steps (Flow.roles_conditions_unrelated); so the clearer's resource is crossed at every step (Clearing.crossed, Clearing.resource_not_cut) and the step's fuel and the resource are related by conveyance alone (Clearing.conveyance_only). Under living on the resource's region, which the clearer lives on, is no cut either (Clearing.resource_not_cut_living_on), so a region being no cut is not itself new; what is new is the relation between conditions, and region_not_a_cut is distinctive in direction. No ethical axiom and no Lean axiom is used; N_rel is a hypothesis."
@@ -465,6 +469,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“输送穿越边界：以一类关系项读，输送是一种候选的 related；延续家族的边界不会从某步起再无穿越，其区域不是关系的切口；输送使两个条件相关，交互、以之为生与世系从不如此”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Conveyance crosses the boundary: read with one kind of relatum, conveyance is a candidate reading of related; a continuing family's boundary is from no step on left uncrossed, so its region is no cut in the relations; conveyance relates two conditions, which interaction, living on and descent never do”"
     }
   ]
 }

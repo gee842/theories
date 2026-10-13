@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "continuing-self-fed-from-beyond",
   "title": {
-    "zh": "延续者从其外得到供给：汲入律的输送形式；在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现",
-    "en": "A continuing family is fed from beyond: the conveyance form of the draw-in laws; with equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur"
+    "zh": "延续者从其外得到供给",
+    "en": "A continuing family is fed from beyond"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "statement": {
+    "zh": "延续者从其外得到供给，这是汲入律的输送形式。在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现。",
+    "en": "A continuing family is fed from beyond, the conveyance form of the draw-in laws. With equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur."
+  },
   "claim": {
     "zh": "跨从 t 起的一步，一个参与的形成从 c 取用并向 d 给予时，有东西从 c 输送到 d（Flow.Conveys）；有东西从家族 ds 之外的条件输送入它的某个成员时，家族在该步从其外得到供给（Flow.FedFromBeyond）。家族在某步从其外得到供给时，该步不内向（Flow.not_inward_of_fed）；相等可判定时，没有从其外得到供给的一步是内向的（Flow.inward_of_not_fed），所以二者恰相反（Flow.inward_iff_not_fed），驳倒“从某步起每步都内向”的，也驳倒“从某步起都没有东西从其外输送入”（Flow.fed_of_not_inward）。于是在平衡与耗散之下，从某步起被围住的、不重复的有限家族，若取用它复现（Flow.fed_from_beyond，由 taking_draws_in），若它的成员在任意晚的步上升（Flow.rising_fed_from_beyond，由 rising_draws_in），或以一类关系项读、体现的成员在任意晚的步生起（Web.generation_fed_from_beyond，由 Web.generation_draws_in），就不能从某步起都没有东西从其外输送入。必要的是得到供给，不必有哪个来源条件复现：在平衡、耗散、吃者每步取用的 Lone 中（Lone.lone），池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出（Lone.fed、Lone.each_fuel_once、Lone.fed_not_recurring）；输送的始终是同一个源。不用伦理前提，也不用 Lean 公理。",
     "en": "Across the step from t, something is conveyed from c to d when a formation taking part takes from c and gives to d (Flow.Conveys); a family ds is fed from beyond across the step when something is conveyed from a condition outside it into one of its members (Flow.FedFromBeyond). A step at which the family is fed from beyond is not inward (Flow.not_inward_of_fed); with equality decided, a step at which it is not fed from beyond is inward (Flow.inward_of_not_fed), so the two are exact opposites (Flow.inward_iff_not_fed), and whatever refutes ‘inward at every step from some step on’ refutes ‘fed from nothing beyond from some step on’ (Flow.fed_of_not_inward). So under balance and dissipation a finite family without repetition, enclosed around from some step on, cannot from any step on be fed from nothing beyond it, whether taking from it recurs (Flow.fed_from_beyond, from taking_draws_in), its members rise at arbitrarily late steps (Flow.rising_fed_from_beyond, from rising_draws_in), or, read with one kind of relatum, embodied members arise at arbitrarily late steps (Web.generation_fed_from_beyond, from Web.generation_draws_in). Being fed is needed, and no source condition need recur: in Lone, balanced and dissipative with an eater taking at every step (Lone.lone), the pool is fed from beyond at every step while each fuel is conveyed from at its own step only (Lone.fed, Lone.each_fuel_once, Lone.fed_not_recurring); the one source does all the conveying. No ethical premise and no Lean axiom is used."
@@ -464,6 +468,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“延续者从其外得到供给：汲入律的输送形式；在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A continuing family is fed from beyond: the conveyance form of the draw-in laws; with equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur”"
     }
   ]
 }

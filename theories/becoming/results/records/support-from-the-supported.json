@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "support-from-the-supported",
   "title": {
-    "zh": "支持只从被支持者获得：越过阈值需要所需条件的升降或要求的改变；在平衡、只有活跃者给予、活动需要支持之下，每次上升由被支持者给予；没有来自外部的给予时，终结是吸收态",
-    "en": "Support is gained only from the supported: crossing a threshold needs a required condition to rise or fall, or a requirement to change; under balance, only active formations giving and activity needing support, every rise is given by a supported formation; with nothing given from beyond, the end absorbs"
+    "zh": "来自被支持者的支持",
+    "en": "Support from the supported"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "支持只从被支持者获得：在平衡、只有活跃者给予、活动需要支持之下，每次上升由被支持者给予。越过阈值需要所需条件的升降或要求的改变；没有来自外部的给予时，终结是吸收态。",
+    "en": "Support is gained only from the supported: under balance, with only active formations giving and activity needing support, every rise is given by a supported formation. Crossing a threshold needs a change in a required condition or in a requirement; with nothing given from beyond, the end absorbs."
+  },
   "claim": {
     "zh": "一个形成在从 t 起的一步上获得支持（Web.GainsSupport），是指它在 t 不被支持、在 t+1 被支持；失去支持（Web.LosesSupport）反之。它的要求在该步上不放松（Web.Unloosened），是指它在 t 的每项要求在 t+1 仍在、所需不降低；不收紧（Web.Untightened），是指它在 t+1 的每项要求在 t 已有、所需不升高。要求不放松时，获得支持只因它所需的某个条件上升（Web.GainsSupport.rises）；要求不收紧时，失去支持只因它所需的某个条件下降（Web.LosesSupport.falls）。在平衡的流中，只有活跃者给予（Acting）且活动需要支持（Dependent）时，每次上升都由参与该步的一个被支持的形成给予（Flow.rise_given_by_supported）；所以要求不放松的形成，只在参与该步的一个被支持的形成向它所需的条件给予时获得支持（Flow.gains_from_supported）。在同样的前提下，一个家族在 T 没有被支持的成员，从 T 起成员的要求都不放松，并且只有成员向成员所需的条件给予时，此后没有成员再被支持（Flow.unsupported_stays）；对整体，一旦什么都不被支持，在要求不放松时，此后什么都不再被支持或活跃（Flow.nothing_supported_stays）。每项前提都必要，各有一个见证（Restoring），其中一个在第零步不被支持的形成在第一步被支持：要求消解（Adapting，要求放松）；家族之外的给予（Inflow，一个不需要任何东西的给予者向所需的条件给予）；不活跃的给予者（Idle，Acting 不成立）；不被支持的活跃给予者（Carried，Dependent 不成立）；没有给予的上升（Spontaneous，平衡不成立）。不用伦理前提，也不用 Lean 公理。",
     "en": "A formation gains support across the step from t (Web.GainsSupport) when it is not supported at t and is supported at t+1; it loses support (Web.LosesSupport) in the converse case. Its requirements do not loosen across the step (Web.Unloosened) when each requirement it has at t it still has at t+1, at no lower need; they do not tighten (Web.Untightened) when each requirement it has at t+1 it had at t, at no greater need. Where its requirements do not loosen, it gains support only if a condition it requires rises (Web.GainsSupport.rises); where they do not tighten, it loses support only if a condition it requires falls (Web.LosesSupport.falls). In a balanced flow where only active formations give (Acting) and activity needs support (Dependent), every rise is given by a supported formation taking part in the step (Flow.rise_given_by_supported); so a formation whose requirements do not loosen gains support only where a supported formation taking part gives to a condition it requires (Flow.gains_from_supported). Under the same premises, if no member of a family is supported at T, the members' requirements do not loosen from T on, and only members give to what members require, then no member is supported at any later step (Flow.unsupported_stays); of the whole, once nothing is supported, while requirements do not loosen, nothing is supported or active again (Flow.nothing_supported_stays). Each premise is needed, with a witness for each (Restoring) in which a formation unsupported at step zero is supported at step one: a requirement dissolves (Adapting, requirements loosen); something beyond the family gives (Inflow, a giver requiring nothing gives to the required condition); a giver is not active (Idle, Acting fails); an active giver is not supported (Carried, Dependent fails); a rise is given by nothing (Spontaneous, balance fails). No ethical premise and no Lean axiom is used."
@@ -503,6 +507,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“支持只从被支持者获得：越过阈值需要所需条件的升降或要求的改变；在平衡、只有活跃者给予、活动需要支持之下，每次上升由被支持者给予；没有来自外部的给予时，终结是吸收态”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Support is gained only from the supported: crossing a threshold needs a required condition to rise or fall, or a requirement to change; under balance, only active formations giving and activity needing support, every rise is given by a supported formation; with nothing given from beyond, the end absorbs”"
     }
   ]
 }

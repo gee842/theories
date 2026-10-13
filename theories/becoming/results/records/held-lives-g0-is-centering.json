@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "held-lives-g0-is-centering",
   "title": {
-    "zh": "被持有的生命上 G0 是 S0 加立场中立：每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加 N_std，不需要连通与 N_rel；在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全",
-    "en": "On held lives G0 is S0 with standpoint neutrality: where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with N_std, needing neither connection nor N_rel; on a connected whole where every standpoint holds a living claim, S0 with N_rel is another completion"
+    "zh": "被持有的生命上的 G0",
+    "en": "G0 on held lives"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
+  "statement": {
+    "zh": "每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加立场中立（N_std），不需要连通与 N_rel；在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全。",
+    "en": "Where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with standpoint neutrality (N_std), needing neither connection nor N_rel; on a connected whole where every standpoint holds a living claim, S0 with N_rel is another completion."
+  },
   "claim": {
     "zh": "在估值上，一个活的主张在某个立场的自身区域中，称为被持有；每个活的主张都被持有，记为 Valuation.Held，无人持有的主张记为 Valuation.Unheld。每个活的主张都被持有时，G0（主张层面：每个活的主张从每个立场都有意义）恰等于每个立场的 S0 加立场中立 N_std，既不用连通，也不用 N_rel（Valuation.significant_iff_held）。持有可判定、每个活的主张都经已形成的关系从一个被持有的活的主张到达时，G0 恰等于每个立场的 S0、N_std 与只指向无人持有者的 N_rel（Valuation.significant_iff_reached）。三者都必要：每个生命都被持有、只被自己的立场珍视时 S0 处处成立，而 N_std、N_rel 与 G0 都不成立，所以持有与 S0 不够（Apart.not_enough）；一个无人持有的生命在 S0 与 N_std 之下没有意义（Unclaimed.held_is_needed）；从被持有者到达而无人持有的生命，在 S0 与 N_std 之下没有意义，指向无人持有者的 N_rel 不成立（Relayed.transmission_is_needed）。S0 本身已使每个立场的意义沿任何关系进入其自身区域（Valuation.own_transmission）。N_std 不是唯一的补全：在连通、每个立场都持有某个活主张的整体上，处处 S0 加 N_rel 不用 N_std 也给出 G0（Valuation.significant_of_transmits）。逐步读、每个形成以自身的事件为自身区域时，每个活的事件都被持有（Web.held_by_formations），所以 G0 恰等于每个形成的 S0 加 N_std（Web.significant_iff_self）。沿依存推出的范围不定出中心，见 derived-extent-limits。不用伦理公理，也不用 Lean 公理：S0、N_std 与 N_rel 都是定理的假设。",
     "en": "On a valuation, a living claim is held when it lies in the own region of some standpoint; every living claim being held is Valuation.Held, and a claim no standpoint holds is Valuation.Unheld. Where every living claim is held, G0 at the level of claims (every living claim significant from every standpoint) is exactly S0 at every standpoint with standpoint neutrality N_std, using neither connection nor N_rel (Valuation.significant_iff_held). With holding decided and every living claim reached through formed relations from a held living claim, G0 is exactly S0 at every standpoint, N_std, and N_rel into claims no standpoint holds (Valuation.significant_iff_reached). Each is needed: with every life held and valued by its own standpoint only, S0 holds everywhere while N_std, N_rel and G0 fail, so holding and S0 do not suffice (Apart.not_enough); a life no standpoint holds has no significance under S0 and N_std (Unclaimed.held_is_needed); a life reached from a held one that no standpoint holds has no significance under S0 and N_std, N_rel into unheld claims failing (Relayed.transmission_is_needed). S0 already carries each standpoint's significance along any relation into its own region (Valuation.own_transmission). N_std is not the only completion: on a connected whole where every standpoint holds a living claim, S0 at every standpoint with N_rel gives G0 without N_std (Valuation.significant_of_transmits). Read stepwise with each formation a standpoint whose own region is its own events, every living event is held (Web.held_by_formations), so G0 is exactly S0 at every formation with N_std (Web.significant_iff_self). That the extent derived along dependence does not fix the center is shown in derived-extent-limits. No ethical axiom and no Lean axiom is used: S0, N_std and N_rel are hypotheses of the theorems."
@@ -396,6 +400,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“被持有的生命上 G0 是 S0 加立场中立：每个活的主张都被某个立场持有时，G0 恰等于每个立场的 S0 加 N_std，不需要连通与 N_rel；在连通、每个立场都持有活主张的整体上，S0 加 N_rel 是另一种补全”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “On held lives G0 is S0 with standpoint neutrality: where every living claim is held by some standpoint, G0 is exactly S0 at every standpoint with N_std, needing neither connection nor N_rel; on a connected whole where every standpoint holds a living claim, S0 with N_rel is another completion”"
     }
   ]
 }

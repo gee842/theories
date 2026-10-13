@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "runs-on-families-chosen-step-by-step",
   "title": {
-    "zh": "逐步选定的家族：只有持有前后所立者的条件把一步连到下一步，以不计次序的延续代替逐位跟随",
-    "en": "Families chosen step by step: only a condition holding what stands before and after joins one step to the next, and continuity up to order replaces following position by position"
+    "zh": "逐步选定的家族",
+    "en": "Families chosen step by step"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "只有持有前后所立者的条件把一步连到下一步，以不计次序的延续代替逐位跟随。",
+    "en": "Only a condition holding what stands before and after joins one step to the next, and continuity up to order replaces following position by position."
+  },
   "claim": {
     "en": "Where the family may change at each step (OneStep.StepRealized, with givers; OneStep.StepRunRealized, without), a sequence of patterns is shown by some world under no condition, under balance and under closure exactly when each step obeys its law (OneStep.step_every_iff, OneStep.step_balance_iff, OneStep.step_closed_iff, OneStep.stepRun_balance_iff): these conditions join no step to the next. Running down holds in its family everything standing before and after its step, and there a sequence is shown exactly when each step obeys its law and the passages continue up to order: at each positive level, as many stand there after a step as before the next (OneStep.Continues; OneStep.step_runsDown_iff, OneStep.step_runsDownClosed_iff, OneStep.stepRun_runsDown_iff, OneStep.stepRun_runsDownClosed_iff; OneStep.StepRealized.continues). Following position by position on one family gives continuity (OneStep.Chained.continues) and not conversely: a sequence of two idle conditions in swapped order runs down on families chosen step by step and on no single family (OneStep.steps_not_run), and a sequence shown under balance on chosen families is not shown under running down, its passages not continuing (OneStep.vanishing_steps). No premise.",
     "zh": "家族可以每步改变时（OneStep.StepRealized，带给予者；OneStep.StepRunRealized，不带），一串模式在无条件、平衡与封闭之下恰在每步遵守其规律时由某个世界显示（OneStep.step_every_iff、OneStep.step_balance_iff、OneStep.step_closed_iff、OneStep.stepRun_balance_iff）：这些条件不把一步连到下一步。耗减在其家族中持有该步之前与之后所立的一切，在那里一串模式恰在每步遵守其规律、且经过不计次序地延续时被显示：在每个正的水平上，一步之后立于那里的与下一步之前一样多（OneStep.Continues；OneStep.step_runsDown_iff、OneStep.step_runsDownClosed_iff、OneStep.stepRun_runsDown_iff、OneStep.stepRun_runsDownClosed_iff；OneStep.StepRealized.continues）。在一个家族上逐位跟随给出延续（OneStep.Chained.continues），反之不然：两个空闲条件次序交换的一串在逐步选定的家族上耗减，在任何单一家族上都不（OneStep.steps_not_run）；在选定家族上于平衡之下显示的一串在耗减之下不显示，其经过不延续（OneStep.vanishing_steps）。不加前提。"
@@ -236,6 +240,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“逐步选定的家族：只有持有前后所立者的条件把一步连到下一步，以不计次序的延续代替逐位跟随”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Families chosen step by step: only a condition holding what stands before and after joins one step to the next, and continuity up to order replaces following position by position”"
     }
   ]
 }

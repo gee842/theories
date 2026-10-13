@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "closure-verdict-meets-axiom",
   "title": {
-    "zh": "闭包内的判断与公理相合之处：以整体为界的意义就是公理；另一条路径接纳的每个形成都在区域之内或被第一条接纳之处，以区域为界的判断就是公理的判断，所以供给闭包是整体时总是；在清除者的网中两者分开",
-    "en": "Where the verdict within the closure meets the axiom: significance bounded by the whole is the axiom; wherever every formation the other path admits lies in the region or is admitted by the first, the verdict bounded by the region is the axiom's, and so always where the feeding closure is the whole; in the clearer's web the two part"
+    "zh": "闭包内的判断与公理相合之处",
+    "en": "Where the verdict within the closure meets the axiom"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "以整体为界的意义就是公理。另一条路径接纳的每个形成都在区域之内或被第一条接纳之处，以区域为界的判断就是公理的判断，所以供给闭包是整体时总是；在清除者的网中两者分开。",
+    "en": "Significance bounded by the whole is the axiom. Wherever every formation the other path admits lies in the region or is admitted by the first, the verdict bounded by the region is the axiom's, so always where the feeding closure is the whole; in the clearer's web the two part."
+  },
   "claim": {
     "zh": "以整体为界的意义（各立场的区域都是整体）就是公理 Unrestricted（bounded_whole）。设区域族 region、立场 p 与水平路径 l、l'，并设 l' 在每一步接纳的每个形成都在 p 的区域之内、或被 l 在该步接纳（covers）。则以区域为界的意义从 p 保留 l' 上的有意义者，恰当 l 包含 l'（Web.retains_bounded_iff_includes）；公理之下，这又恰当 l 从 p 保留 l' 上的有意义者（Web.retains_bounded_iff_retains），即两个判断一致。一个形成 p 的供给闭包是整体时，覆盖条件总成立，所以公理之下，以供给闭包为界的判断在每个比较上都是公理的判断（Flow.within_closure_iff_retains）；Overshoot 中从任一立场都是这样（Overshoot.within_closure_iff_retains）。在 Clearing 中两者分开：设 l 是扣留清除者的部分后的水平（Flow.WithheldLevels）；以供给闭包为界，从清除者的立场，有其部分的水平保留 l 上的有意义者；公理之下，从每个立场都不保留；从栖居者的立场、在栖居者自己的闭包内，l 增加有其部分的水平所缺的（Clearing.within_closure_yet_loses）。不用 Lean 公理；公理只作为比较定理的假设出现。",
     "en": "Significance bounded by the whole (each standpoint's region the whole) is the axiom Unrestricted (bounded_whole). Given regions region, a standpoint p and level paths l and l', suppose every formation l' admits at a step lies in p's region or is admitted by l at that step (covers). Then significance bounded by the regions retains from p what has significance along l' exactly when l includes l' (Web.retains_bounded_iff_includes); under the axiom this is exactly when l retains from p what has significance along l' (Web.retains_bounded_iff_retains), so the two verdicts agree. Where a formation p's feeding closure is the whole, the covering condition always holds, so under the axiom the verdict bounded by the feeding closure is the axiom's on every comparison (Flow.within_closure_iff_retains); in Overshoot this holds from either standpoint (Overshoot.within_closure_iff_retains). In Clearing the two part: let l be the levels with the clearer's part withheld (Flow.WithheldLevels); bounded by the feeding closure, from the clearer's standpoint the levels with its part retain what has significance along l; under the axiom they do not, from any standpoint; and from the dweller's standpoint, within the dweller's own closure, l adds what the levels with the part lack (Clearing.within_closure_yet_loses). No Lean axiom is used; the axiom appears only as a hypothesis of the comparison theorems."
@@ -518,6 +522,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“闭包内的判断与公理相合之处：以整体为界的意义就是公理；另一条路径接纳的每个形成都在区域之内或被第一条接纳之处，以区域为界的判断就是公理的判断，所以供给闭包是整体时总是；在清除者的网中两者分开”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Where the verdict within the closure meets the axiom: significance bounded by the whole is the axiom; wherever every formation the other path admits lies in the region or is admitted by the first, the verdict bounded by the region is the axiom's, and so always where the feeding closure is the whole; in the clearer's web the two part”"
     }
   ]
 }

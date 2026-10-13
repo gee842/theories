@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "more-needs-renewers",
   "title": {
-    "zh": "更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成",
-    "en": "More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation"
+    "zh": "更多需要更多更新者",
+    "en": "More needs more renewers"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
+  "statement": {
+    "zh": "更多的生成需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成。",
+    "en": "More generation needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation."
+  },
   "claim": {
     "zh": "把条件读作数量：一个流给出每步参与的形成，以及每个形成从每个条件取用与给予的量；流平衡一个依存网，当条件水平的每次变化恰是取用与给予之差。对一个有限的条件家族，一步之后的总水平加上取用，等于之前的总水平加上补充；对任意一段步也如此（消耗与补充的平衡）。平衡且只有活跃形成给予时，每次上升都由某个活跃的补充者造成，所以 unceasing-generation-needs-renewal 的对应前提 RenewedBy 成为定理。生成不止地更多，当对每个数，从某步起每一步至少有那么多形成从家族取用。取用的量是自然数，所以每个取用者每步至少取用一个单位。于是在任意一段至少 K 个形成取用的步上，家族所得的补充每步至少 K，减去开始时的存量；不止地更多需要补充没有最终的界。每个形成每步给予家族的量至多一个固定量时，补充者的数目在同一平均意义上增长，没有最终的界，但可以在无穷多步上为零。在活跃形成的普查之下（每步活跃的形成列成不重复的有限表），若流的 present 每步每个形成只列一次，只有活跃的形成取用（Taking 中只用到这一半），活跃的形成没有界地增多，不止地更多蕴含不息的生成；扩张与循环满足全部这些前提，所以蕴含不是空的；不息地反复生起的振荡者满足这些前提而不更多，所以这一蕴含是严格的；没有普查、present 有重复，或取用者不活跃时，不止地更多可以没有任何生起。每一步都生起一个更新者和一个生长者的流满足全部前提，并且不止地更多；在封闭循环中，每个形成归还所取，总量不变，生成不止地更多，补充者恰是取用者。所以在平衡的流中，复现的取用与不止地更多所需的补充构成严格的层级：前者（取用的形成不息地生起是其一种情形）需要补充在任意晚的步出现，后者需要补充没有最终的界。不用伦理前提，也不用 Lean 公理。",
     "en": "Reading conditions as amounts: a flow gives the formations taking part in each step and how much each takes from and gives to each condition; it balances a web of dependence when every change of a condition's level is what is taken and given. For a finite family of conditions, the total after a step plus its uptake equals the total before plus its replenishment, and the same holds over any stretch of steps (the balance of depletion and replenishment). When the flow balances and only active formations give, every rise is made by some active renewer, so the correspondence premise RenewedBy of unceasing-generation-needs-renewal becomes a theorem. Generation is more without end when, for every number, from some step on at least that many formations take from the family at every step. Amounts are natural numbers, so each taker takes at least one unit per step. Then over any stretch from which at least K formations take, the family is replenished by at least K per step, less its stock at the start, and more without end needs replenishment with no eventual bound. When each formation gives the family at most a fixed amount per step, the number of renewers grows in the same averaged sense and has no eventual bound, but it can be zero at infinitely many steps. Under a census of active formations (the active formations at each step listed once in a finite list), if the flow's present lists each formation once per step and only active formations take (only this half of Taking is used), the active formations grow without bound and more without end implies unceasing generation; the expansion and the cycle meet all these premises, so the implication is not vacuous; the oscillator that arises again and again meets these premises and is not more, so the implication is strict; without a census, with a formation listed many times in present, or with takers that are not active, more without end can come with nothing arising. A flow in which a renewer and a grower arise at every step meets every premise and is more without end; in a closed cycle each formation gives back what it takes, the total never changes, generation is more without end, and the renewers are exactly the takers. So in balanced flows the replenishment needed by recurring uptake and by more without end forms a strict hierarchy: the first, of which unceasing arising of takers is one case, needs replenishment at arbitrarily late steps, the second replenishment with no eventual bound. No ethical premise and no Lean axiom is used."
@@ -730,6 +734,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“更多需要更多更新者：不止地更多的生成需要没有最终界的补充，每个形成给予有限时需要没有最终界的补充者；在活跃形成的普查之下，它蕴含不息的生成”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “More needs more renewers: generation more without end needs replenishment with no eventual bound and, with bounded capacity, renewers with no eventual bound; under a census of active formations it implies unceasing generation”"
     }
   ]
 }

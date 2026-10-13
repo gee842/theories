@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "experiment-needs-return",
   "title": {
-    "zh": "实验需要返回：相对于确定性，记录恰在取过之处固定一个动作的结果；自己的动作若换一个会怎样，只在配置返回之处被固定；保留历史的运行永不返回，所以实验需要一个关于何者无关的模型",
-    "en": "Experiment needs return: relative to determinacy, the record fixes a move's outcome exactly where it was taken; what one's act would have done otherwise is fixed only where the configuration returns; a kept history never returns, so experiment needs a model of what is irrelevant"
+    "zh": "实验需要返回",
+    "en": "Experiment needs return"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "相对于确定性，记录恰在取过之处固定一个动作的结果，自己的动作若换一个会怎样只在配置返回之处被固定。保留历史的运行永不返回，所以实验需要一个关于何者无关的模型。",
+    "en": "Relative to determinacy, the record fixes a move's outcome exactly where it was taken, and what one's act would have done otherwise is fixed only where the configuration returns. A kept history never returns, so experiment needs a model of what is irrelevant."
+  },
   "claim": {
     "zh": "设 r 是过程 P 的一个运行。相对于确定性，直到某步的记录把动作 a 在配置 s 的结果固定为 u，是指容许 r 在该步之前每一步的每个确定过程都把 a 在 s 送到 u（Run.Fixes）。运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处（Run.fixes_of_takes）；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论什么被识：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步（retarget、retarget_determined、Run.stepsOf_retarget、Run.not_fixes_of_untaken）。所以在配置返回之处，另一个动作的结果被固定（Run.fixes_on_return）；配置永不返回的运行，在经过的每个配置只固定它所取的动作（Run.not_fixes_other_of_new）。保留其所经配置与动作之历史的过程（keepHistory，Law.withHistory 带动作的对应）中，历史每步长一，所以每步都是新的（keepHistory_length、keepHistory_new），确定性保持（keepHistory_determined），关于自己的动作除了所做的什么都不固定（keepHistory_fixes_nothing_else）。经投影 π 读：运行取过 a 于投影为 k 的配置，经投影的记录固定其结果（Run.fixesThrough_of_takes）；P 的步经 π 分解为确定过程 Q 时（FactorsThrough），所固定的结果就是投影为 k 的每个配置经 π 的结果，无论运行是否经过它（Run.generalizes）；有限多个投影配置之内，投影从每一步起都返回（Run.projection_returns，revisits_from 的实例）。Confound 中配置是一个隐藏位与一个结果，每步翻转隐藏位、把结果设为步前的隐藏位，动作不造成差别（Confound.move_idle）；只读结果时，直到第二步的记录固定左得假、右得真（Confound.misattributes）；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都容许投影各步（Confound.confounded）；在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步（Confound.varied_refutes）。不用 Lean 公理。",
     "en": "Let r be a run of a process P. Relative to determinacy, the record up to a step fixes the outcome of move a at configuration s to u when every determined process admitting each step of r before it sends a at s to u (Run.Fixes). Once the run has taken a at s, the record fixes it to where the run went (Run.fixes_of_takes); where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run (retarget, retarget_determined, Run.stepsOf_retarget, Run.not_fixes_of_untaken). So where the configuration returns, another move's outcome is fixed (Run.fixes_on_return), and a run whose configurations never return fixes, at each configuration it passes, no move other than the one it takes (Run.not_fixes_other_of_new). In the process keeping the history of configurations and moves passed through (keepHistory, the counterpart with moves of Law.withHistory) the past grows by one at each step, so every step is new (keepHistory_length, keepHistory_new), determinacy is kept (keepHistory_determined), and nothing about one's own acts but what one did is fixed (keepHistory_fixes_nothing_else). Read through a projection π: once the run has taken a at a configuration projecting to k, the record so read fixes its outcome (Run.fixesThrough_of_takes); where P's step factors through π into a determined process (FactorsThrough), the fixed outcome is the outcome, read through π, at every configuration projecting to k, passed by the run or not (Run.generalizes); within finitely many projected configurations the projection returns from every step on (Run.projection_returns, an instance of revisits_from). In Confound the configuration is a hidden bit and an outcome, each step flips the hidden bit and sets the outcome to the hidden bit before the step, and the move makes no difference (Confound.move_idle); read through the outcome, the record up to the second step fixes left to false and right to true (Confound.misattributes); with the moves in step with the hidden bit, the determined model in which the move decides the outcome admits the projected steps at every step (Confound.confounded); moving left again where the hidden bit differs from the first step, no determined process admits the projected steps up to the fifth (Confound.varied_refutes). No Lean axiom is used."
@@ -437,6 +441,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“实验需要返回：相对于确定性，记录恰在取过之处固定一个动作的结果；自己的动作若换一个会怎样，只在配置返回之处被固定；保留历史的运行永不返回，所以实验需要一个关于何者无关的模型”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Experiment needs return: relative to determinacy, the record fixes a move's outcome exactly where it was taken; what one's act would have done otherwise is fixed only where the configuration returns; a kept history never returns, so experiment needs a model of what is irrelevant”"
     }
   ]
 }

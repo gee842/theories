@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "self-good-reachable-g0",
   "title": {
-    "zh": "立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例",
-    "en": "A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation"
+    "zh": "从立场自身之善到可及的 G0",
+    "en": "From a standpoint's own good to reachable G0"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:58:39.641466+00:00",
+  "statement": {
+    "zh": "立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例。",
+    "en": "A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation."
+  },
   "claim": {
     "zh": "对持 S0（自身的生及继续生成对自己有提供理由的正面意义）的评价位置：其一，S0 加上不受限（跨越自他）的单调性（等价于随附性、剖面单调估值与 BI），使任何至少同样相连于某一被珍视的自身继续生成的他者生命具有正面意义；承认“连接程度就是完整根据”的只承认“我的”的对手，一旦自身继续生成分化出这样的他者，就严格不一致。其二，再加容差与分级连通，正面意义及于此位置活动所能及的全部生命与继续生成；所得是 G0 谓词在此立场、单一历史、可及库存上的实例。超出 S0 的全部内容由容差承担；所采用的不带索引、跨接续的 G0，仍需从立场相对意义到规范意义的桥接。",
     "en": "For an evaluating position holding S0 (its own living and further generation have reason-giving positive significance): first, S0 with unrestricted monotonicity across self and other (equivalently supervenience, a profile-monotone valuation and BI) gives positive significance to any living occurrence at least as connected as a valued occurrence of its own further generation, and an own-only rival that grants connection degree as the whole ground is inconsistent once its further generation differentiates into such an occurrence; second, adding tolerance and graded connection, significance reaches all living generation the position's activity can condition, a standpoint-indexed, single-history instance of the G0 predicate on the reachable inventory. Tolerance carries everything beyond S0; the adopted unindexed G0 over continuations still needs a bridge from standpoint-relative to normative significance."
@@ -259,6 +263,10 @@
     {
       "zh": "2026-10-10：按 Ren 的要求，标题中的“自我之善”改为“立场自身之善（S0）”，不以独立的自我作框架；主张与证明不变。",
       "en": "2026-10-10: “Self-good” in the title becomes “a standpoint's own good (S0)”, which does not frame a self apart, at Ren's request; claim and proof unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“立场自身之善（S0）加不受限单调性与容差，推出立场索引的可及 G0 实例”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A standpoint's own good (S0), with unrestricted monotonicity and tolerance, gives a standpoint-indexed instance of G0 on reachable generation”"
     }
   ]
 }

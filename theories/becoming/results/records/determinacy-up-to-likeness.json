@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "determinacy-up-to-likeness",
   "title": {
-    "zh": "相同之下的确定：配置被命名时，确定就是相同之下的确定；关于配置如何相关的定理在相同之下成立，对相同者之一的干预、未登记的过去与未登记的描述需要相等",
-    "en": "Determinacy up to likeness: with configurations named, determinacy is determinacy up to likeness; the theorems on how configurations relate hold up to likeness, while an intervention on one of alike configurations, an unregistered past and an unregistered description need equality"
+    "zh": "相同之下的确定",
+    "en": "Determinacy up to likeness"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "配置被命名时，确定就是相同之下的确定。关于配置如何相关的定理在相同之下成立，对相同者之一的干预、未登记的过去与未登记的描述需要相等。",
+    "en": "With configurations named, determinacy is determinacy up to likeness. The theorems on how configurations relate hold up to likeness, while an intervention on one of alike configurations, an unregistered past and an unregistered description need equality."
+  },
   "claim": {
     "zh": "确定恰是主张命名配置时的相同之下的确定（determined_iff_named、alike_configurations），所以每个用 Determined 陈述的定理都是一个用 DeterminedAt 陈述者的命名实例。以下在相同之下成立：经相同而同行就是相同之下的确定（goesAlike_iff，对应 goAlike_id_iff）；相同的运行保持相同（DeterminedAt.stays_alike，对应 GoAlike.runs_agree）；一步不依赖的在相同之下被重新吸收（DependsOnlyOnAlike.reabsorbed）；遗忘噪声后，标准模型恰在噪声在相同之下无差别时在相同之下确定（forget_inputs_determinedAt_iff）；所取的动作在相同之下固定（Run.fixesAlike_of_takes），一次代表其类（Run.generalizesAlike）；在与所命名者相同的配置处从未取的动作，对在一个主张上不同的结果不被固定（Run.not_fixesAlike_of_untaken），经对整个相同类的干预（retargetAlike、retargetAlike_determinedAt）。以下需要相等，或登记相等所分开者的主张：对两个相同配置之一的改送破坏相同之下的确定（Twins.retarget_breaks）；保留的历史在其现在返回且没有什么登记过去之处在相同之下返回（keepFrame_alike_iff、keepHistory_returns_alike），所以 keepHistory_new 需要过去被登记（keepHistory_new_named）；没有主张时每个描述承载规律而没有混杂被否证（carries_unregistered、Confound.refutes_registered）。不加前提。",
     "en": "Determinacy is determinacy up to likeness where the claims name the configurations (determined_iff_named, alike_configurations), so each theorem stated with Determined is the named instance of one stated with DeterminedAt. These hold up to likeness: going alike through likeness is determinacy up to likeness (goesAlike_iff, after goAlike_id_iff); runs alike stay alike (DeterminedAt.stays_alike, after GoAlike.runs_agree); what the step does not depend on is re-absorbed up to likeness (DependsOnlyOnAlike.reabsorbed); with the noise forgotten, the standard model is determined up to likeness exactly where the noise makes no difference up to likeness (forget_inputs_determinedAt_iff); a move taken is fixed up to likeness (Run.fixesAlike_of_takes) and one occasion stands for its class (Run.generalizesAlike); a move taken at no configuration alike to the one named is not fixed, for outcomes that differ in a claim (Run.not_fixesAlike_of_untaken), through an intervention on a whole likeness class (retargetAlike, retargetAlike_determinedAt). These need equality, or claims registering what equality tells apart: retargeting one of two alike configurations breaks determinacy up to likeness (Twins.retarget_breaks); a kept history returns up to likeness where its present does and nothing registers the past (keepFrame_alike_iff, keepHistory_returns_alike), so keepHistory_new needs the past registered (keepHistory_new_named); with nothing claimed, every description carries a law and no confound is refuted (carries_unregistered, Confound.refutes_registered). No premise."
@@ -344,6 +348,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“相同之下的确定：配置被命名时，确定就是相同之下的确定；关于配置如何相关的定理在相同之下成立，对相同者之一的干预、未登记的过去与未登记的描述需要相等”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Determinacy up to likeness: with configurations named, determinacy is determinacy up to likeness; the theorems on how configurations relate hold up to likeness, while an intervention on one of alike configurations, an unregistered past and an unregistered description need equality”"
     }
   ]
 }

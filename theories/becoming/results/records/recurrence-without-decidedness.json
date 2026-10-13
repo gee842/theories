@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "recurrence-without-decidedness",
   "title": {
-    "zh": "复现不用可判定性：有限家族中开始成立复现时不再成立永不终止，反之亦然；在所寻之处已定时找到那一步，从某步起已定时二者同时复现",
-    "en": "Recurrence with no decidedness: in a finite family, where coming to be recurs ceasing never stops for good, and conversely; decided where it is sought the step is found, and decided from some step on the two recur together"
+    "zh": "不用可判定性的复现",
+    "en": "Recurrence without decidedness"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "有限家族中开始成立复现时不再成立永不终止，反之亦然；在所寻之处已定时找到那一步，从某步起已定时二者同时复现。",
+    "en": "In a finite family, recurring coming to be refutes any end to ceasing, and conversely; decided where it is sought, the step is found, and decided from some step on, the two recur together."
+  },
   "claim": {
     "zh": "有限家族中，没有东西不再成立时，每个成员至多开始成立一次（comes_once）；没有东西开始成立时，每个成员至多不再成立一次（ceases_once_of）。所以一段中看到成员开始成立、或不再成立的不同步数不多于成员数（coming_steps_within、ceasing_steps_within）。由此，开始成立复现时，从每一步起都有一段，其中有东西不再成立不能被否证（Recurs.ceasing_within），不再成立永不终止：从某步起再没有不再成立被否证（Recurs.ceasing_not_stopping）；反之亦然（Recurs.coming_within、Recurs.coming_not_stopping）。不用可判定性。那一段的状态已定时，那一步被找到（Recurs.ceasing_found、Recurs.coming_found）；从某步起已定时，开始成立复现恰当不再成立复现（coming_recurs_iff_decided），不要判定程序，而 coming_recurs_iff 在每一步都要求判定程序。依存网中形成有限多时亦然（Web.unceasing_iff_decided）。有限世界中，生起复现时止息永不终止，反之亦然，不用可判定性（World.ceasing_not_stopping、World.arising_not_stopping）；从某步起已定时生起复现恰当止息复现（World.arising_iff_ceasing_decided），World.arising_iff_ceasing 是由判定程序从第一步起已定的情形（World.arising_iff_ceasing_of_decidable）；有一个列表从某步起覆盖活跃者时亦然，已定只问列表的成员（World.ceasing_not_stopping_covered、World.arising_not_stopping_covered、World.arising_iff_ceasing_covered）。不用伦理前提，也不用 Lean 公理。",
     "en": "In a finite family, while nothing of it ceases each member comes to be at most once (comes_once), and while nothing comes to be each ceases at most once (ceases_once_of); so no more steps of a stretch see a member come to be, or cease, than the family has members (coming_steps_within, ceasing_steps_within). Hence, where coming to be recurs, from any step there is a stretch in which something ceasing cannot be refuted (Recurs.ceasing_within), and ceasing never stops for good: that from some step on nothing ceases is refuted (Recurs.ceasing_not_stopping); and conversely (Recurs.coming_within, Recurs.coming_not_stopping). No decidedness is used. With the states of that stretch decided, the step is found (Recurs.ceasing_found, Recurs.coming_found); decided from some step on, coming to be recurs exactly where ceasing does (coming_recurs_iff_decided), with no decision procedure, where coming_recurs_iff asks one at every step. The same holds of a web with finitely many formations (Web.unceasing_iff_decided). In a finite world, where arising recurs ceasing never stops for good, and conversely, with no decidedness (World.ceasing_not_stopping, World.arising_not_stopping); decided from some step on, arising recurs exactly when ceasing does (World.arising_iff_ceasing_decided), World.arising_iff_ceasing being the case decided by a procedure from the first step (World.arising_iff_ceasing_of_decidable); with a list covering what is active from some step on the same holds, decidedness asked only of the list's members (World.ceasing_not_stopping_covered, World.arising_not_stopping_covered, World.arising_iff_ceasing_covered). No ethical premise and no Lean axiom is used."
@@ -333,6 +337,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“复现不用可判定性：有限家族中开始成立复现时不再成立永不终止，反之亦然；在所寻之处已定时找到那一步，从某步起已定时二者同时复现”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Recurrence with no decidedness: in a finite family, where coming to be recurs ceasing never stops for good, and conversely; decided where it is sought the step is found, and decided from some step on the two recur together”"
     }
   ]
 }

@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "causal-models-as-processes",
   "title": {
-    "zh": "作为过程的标准因果模型：x′ = F(x, u, ε) 是动作为输入与噪声的确定过程；干预是未取的动作，记录不固定它，模型固定它；噪声是未表示的动作，忘掉它时过程恰在噪声不造成差别之处仍确定",
-    "en": "Standard causal models as processes: x′ = F(x, u, ε) is a determined process whose move is the input and the noise; an intervention is a move not taken, unfixed by the record and fixed by the model; noise is a move not represented, and with it forgotten the process stays determined exactly where the noise makes no difference"
+    "zh": "作为过程的标准因果模型",
+    "en": "Standard causal models as processes"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "x′ = F(x, u, ε) 是动作为输入与噪声的确定过程。干预是未取的动作，记录不固定它，模型固定它；噪声是未表示的动作，忘掉它时过程恰在噪声不造成差别之处仍确定。",
+    "en": "x′ = F(x, u, ε) is a determined process whose move is the input and the noise. An intervention is a move not taken, unfixed by the record and fixed by the model; noise is a move not represented, and with it forgotten the process stays determined exactly where the noise makes no difference."
+  },
   "claim": {
     "zh": "对任意 F : X → U → E → X，标准模型 inputs F 是配置 X 上、动作为（输入，噪声）的过程：x 以 (u, e) 到达 F x u e；它是确定的（inputs_determined）。trajectory F x₀ u e 是从 x₀ 在输入 u 与噪声 e 之下的轨迹，inputsRun 是它作为运行，动作为 (u n, e n)。对 inputs F 的任一运行，运行在 t 之前没有于 x 取 (u′, e′)、X 有两个不同的元素时，直到 t 的记录不固定 (u′, e′) 在 x 的任何结果（inputs_intervention_unfixed，Run.not_fixes_of_untaken 的实例）；模型把它送到 F x u′ e′，且只送到那里（inputs_model_fixes）。对动作为对的任一过程，forget 忘掉动作的第二部分：u 从 s 到 s′，当某个 e 使 (u, e) 从 s 到 s′；Run.forget 是相应的运行。忘掉噪声后，标准模型确定，恰当对每个 x、u 与 e、e′，F x u e = F x u e′（forget_inputs_determined_iff）。所贴的适应动力学 x′ = F_θ(x)、θ′ = G(θ, x) 是 projection-carrying-a-law 中的 adaptive，联合配置上的确定过程。不用 Lean 公理。",
     "en": "For any F : X → U → E → X, the standard model inputs F is the process on configurations X with moves (input, noise): x goes by (u, e) to F x u e; it is determined (inputs_determined). trajectory F x₀ u e is the trajectory from x₀ under inputs u and noise e, and inputsRun is it as a run with moves (u n, e n). For any run of inputs F, where the run has not taken (u′, e′) at x before t and X has two different elements, the record up to t fixes no outcome of (u′, e′) at x (inputs_intervention_unfixed, an instance of Run.not_fixes_of_untaken); the model sends it to F x u′ e′ and nowhere else (inputs_model_fixes). For any process whose moves are pairs, forget forgets the second part of the move: u goes from s to s′ where (u, e) does for some e; Run.forget is the corresponding run. With the noise forgotten the standard model is determined exactly where F x u e = F x u e′ for every x, u and e, e′ (forget_inputs_determined_iff). The pasted adaptive dynamics x′ = F_θ(x), θ′ = G(θ, x) is adaptive in projection-carrying-a-law, a determined process on the joint configuration. No Lean axiom is used."
@@ -324,6 +328,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“作为过程的标准因果模型：x′ = F(x, u, ε) 是动作为输入与噪声的确定过程；干预是未取的动作，记录不固定它，模型固定它；噪声是未表示的动作，忘掉它时过程恰在噪声不造成差别之处仍确定”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Standard causal models as processes: x′ = F(x, u, ε) is a determined process whose move is the input and the noise; an intervention is a move not taken, unfixed by the record and fixed by the model; noise is a move not represented, and with it forgotten the process stays determined exactly where the noise makes no difference”"
     }
   ]
 }

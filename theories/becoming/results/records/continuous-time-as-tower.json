@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "continuous-time-as-tower",
   "title": {
-    "zh": "连续时间作为越来越细的离散读法之塔：每一层是更细一层在严格递增的时刻读出；平衡（每个关系项只列出一次）与耗散由更细一层传到更粗一层；一段最粗的步在任何一层读出时，所立者在其中各细步不被否定地下降，则总水平下降的细步数不多于最粗一层段首的总水平，与层无关",
-    "en": "Continuous time as a tower of ever-finer discrete readings: each level is the next finer one read at strictly increasing times; balance (each relatum listed once) and dissipation pass from each level to the coarser one; a stretch of the coarsest level read at any level, with what stands not refuted to run down at each of its fine steps, has at most as many fine steps at which the total standing falls as the coarsest level's total standing at its start, whatever the level"
+    "zh": "连续时间作为离散读法之塔",
+    "en": "Continuous time as a tower of discrete readings"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "每一层是更细一层在严格递增的时刻读出；平衡（每个关系项只列出一次）与耗散由更细一层传到更粗一层。一段最粗的步在任何一层读出时，所立者在其中各细步不被否定地下降，则总水平下降的细步数不多于最粗一层段首的总水平，与层无关。",
+    "en": "Each level reads the next finer one at strictly increasing times, and balance (each relatum listed once) and dissipation pass to coarser levels. At any level, with what stands not refuted to run down at each fine step, a coarsest stretch has no more falls of total standing than its starting total."
+  },
   "claim": {
     "zh": "塔（Tower）：每一层有一个网与一个流，第 n 层是第 n+1 层在严格递增的时刻 refine n 读出（web_sample、flow_sample）。最粗一层的步 s 是第 n 层的 reads n s；最粗一层是第 n 层在这些时刻读出（Tower.web_zero、Tower.level_zero），这些时刻严格递增（Tower.reads_strict）。每一层的规律：每个关系项只列出一次的平衡与耗散传到更粗一层（Tower.balances_coarser、Tower.dissipative_coarser）。分得再细，变化也有界：最粗一层从 S 起 N 步的一段在第 n 层读出，第 n 层有所立者的普查、所立者在其中各细步不被否定地下降时，总水平下降的细步（即有水平改变的步）不多于最粗一层在 S 的总水平（Tower.changes_within），界与 n 无关。",
     "en": "A tower (Tower): at each level a web and a flow, level n being level n+1 read at the strictly increasing times refine n (web_sample, flow_sample). Step s of the coarsest level is step reads n s of level n; the coarsest level is level n read at those times (Tower.web_zero, Tower.level_zero), which are strictly increasing (Tower.reads_strict). Laws at every level: balance with each relatum listed once, and dissipation, pass to the coarser level (Tower.balances_coarser, Tower.dissipative_coarser). Change bounded however finely divided: a stretch of N steps of the coarsest level from S, read at level n, under a census of what stands at level n and with what stands not refuted to run down at each of its fine steps, has at most as many fine steps at which the total standing falls, the steps at which some standing changes, as the coarsest level's total standing at S (Tower.changes_within); the bound does not depend on n."
@@ -295,6 +299,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“连续时间作为越来越细的离散读法之塔：每一层是更细一层在严格递增的时刻读出；平衡（每个关系项只列出一次）与耗散由更细一层传到更粗一层；一段最粗的步在任何一层读出时，所立者在其中各细步不被否定地下降，则总水平下降的细步数不多于最粗一层段首的总水平，与层无关”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Continuous time as a tower of ever-finer discrete readings: each level is the next finer one read at strictly increasing times; balance (each relatum listed once) and dissipation pass from each level to the coarser one; a stretch of the coarsest level read at any level, with what stands not refuted to run down at each of its fine steps, has at most as many fine steps at which the total standing falls as the coarsest level's total standing at its start, whatever the level”"
     }
   ]
 }

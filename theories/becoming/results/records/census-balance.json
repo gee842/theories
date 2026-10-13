@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "census-balance",
   "title": {
-    "zh": "普查的平衡：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的；读于复现，它是精确的",
-    "en": "The census balance: the list at the end with what ceased is the list at the start with what came; read of recurrence, it is exact"
+    "zh": "普查的平衡",
+    "en": "The census balance"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的；读于复现，它是精确的。",
+    "en": "The list at the end with what ceased is the list at the start with what came; read of recurrence, it is exact."
+  },
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出（Listed）且可判定时，跨过每一步，步后的列表长度加上跨步不再成立的成员数，等于步前的列表长度加上跨步开始成立的成员数（Listed.across）：跨步保持成立的成员在两张列表上计数相同（marks_le_of_sub）。所以任一段步上，终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的（Listed.over_stretch，由 balance_over_stretch 逐步累加）；不再成立的至多是开始成立的加上起点的列表，开始成立的至多是不再成立的加上终点的列表（Listed.ceasings_within、Listed.comings_within）。读于活动：普查之下，终点活跃的形成连同其间止息的，恰是起点活跃的连同其间生起的（Web.Census.over_stretch）；读于水平：所立者的普查之下，终点所立者连同其间不再作为条件而在的，恰是起点所立者连同其间开始作为条件而在的（Web.StandingCensus.over_stretch）。读于依存：依存的普查之下，终点的依存连同其间消解的，恰是起点的依存连同其间形成的（Web.DependenceCensus.over_stretch）。读于复现，平衡是精确的：不再成立复现，恰当从每一步起某个后来的列表短于起点的列表连同其间开始成立的（Listed.ceasing_iff_shortfall）；开始成立复现，恰当起点的列表长于某个后来的列表连同其间不再成立的（Listed.coming_iff_excess）。普查定律与有界定律由此推出（ceasing-needs-arising、bounded-census-keeps-pace）。这是 §26 有限家族定律（held_over_stretch、keep_pace）的普查形式：不要求固定的有限家族，只要求每步的列表。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided, across each step the length of the list after it with the number of members that ceased to be across it equals the length of the list before it with the number that came to be (Listed.across): the members kept across the step are counted alike on both lists (marks_le_of_sub). So over any stretch the list at the end with what ceased between is the list at the start with what came between (Listed.over_stretch, summed step by step by balance_over_stretch); what ceases is at most what comes and the list at the start, and what comes at most what ceases and the list at the end (Listed.ceasings_within, Listed.comings_within). Read of activity: under a census, the formations active at the end with those that ceased between are those active at the start with those that arose between (Web.Census.over_stretch); read of standing: under a census of what stands, what stands at the end with what ceased to stand between is what stood at the start with what came to stand between (Web.StandingCensus.over_stretch). Read of dependence: under a census of dependences, the dependences at the end with those that dissolved between are those at the start with those that formed between (Web.DependenceCensus.over_stretch). Read of recurrence the balance is exact: ceasing to be recurs exactly when, from each step, some later list is shorter than the list at the start with what came to be between (Listed.ceasing_iff_shortfall), and coming to be recurs exactly when the list at the start is longer than some later list with what ceased to be between (Listed.coming_iff_excess). The census law and the bounded law follow from it (ceasing-needs-arising, bounded-census-keeps-pace). This is the census form of section 26's law of a finite family (held_over_stretch, keep_pace): no fixed finite family is needed, only the list at each step. No ethical premise and no Lean axiom is used."
@@ -600,6 +604,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“普查的平衡：终点的列表连同其间不再成立的，恰是起点的列表连同其间开始成立的；读于复现，它是精确的”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “The census balance: the list at the end with what ceased is the list at the start with what came; read of recurrence, it is exact”"
     }
   ]
 }

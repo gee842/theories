@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "no-finite-part-bears-taking",
   "title": {
-    "zh": "耗散之下复现的取用打开有限家族：取用复现的有限家族，连同包含它的每个有限家族，在任意晚的步不封闭，被围住时从家族之外汲入",
-    "en": "Under dissipation recurring taking opens finite families: a finite family on which taking recurs, with every finite family containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it"
+    "zh": "复现的取用打开有限家族",
+    "en": "Recurring taking opens finite families"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "statement": {
+    "zh": "耗散之下，取用复现的有限家族，连同包含它的每个有限家族，在任意晚的步不封闭，被围住时从家族之外汲入。",
+    "en": "Under dissipation, a finite family on which taking recurs, with every finite family containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it."
+  },
   "claim": {
     "zh": "在流上，一个条件家族跨某步封闭，当没有参与的形成从家族之外的条件取用或向其给予；一个形成在该步耗散于家族，当它给予家族的不多于从家族所取，取用时更少；流是耗散的，当每一步，每个在该步封闭的不重复家族都被耗散。在平衡的流中，被耗散的家族跨一步至少下降其取用者的数目；从某步起被耗散，此后任一段步上取用者的总数不超过当时的存量，取用不再复现。所以在耗散之下，一个取用在任意晚的步复现的有限家族，连同包含它的每个不重复的有限家族，在任意晚的步都不封闭：有参与的形成与其外的条件交换。任何复现的取用都是这样的取用：不止地更多、在第一个活跃步取用的形成的不息生起，以及维持；一个恒定的取用者，没有生起也不更多，同样如此（Lone）。越出的交换可以与家族无关：一个汇与不断新的关系项交换时，耗散空成立，取用在两方的家族中每步复现而没有任何东西流入，汇使家族不封闭（SprayShuttle）。一步围住一个家族（Around），当某个包含它的不重复有限家族跨该步封闭；相等可判定时，每个被封闭的步围住每个有限家族（Enclosed.around）。家族从某步起被围住、取用在任意晚的步复现时，它汲入：在任意晚的步，有形成给予家族而从家族之外取用（taking_draws_in）。耗散只约束有封闭有限家族的步：一步的交换落在有限个不重复的条件之内（Enclosed）时，在耗散之下给予的形成在每个封闭的不重复家族上取用多于所给，给予须以取用为条件；某个形成与无穷多个条件交换时没有一步如此，耗散是空的，补充者可以不取用而给予（Spray）。若有限个条件就是全部，取用不再复现。一个源每步燃烧一份新的燃料、给池的少于所燃、越来越多的生长者从池取用的流满足全部前提，并且不止地更多；它所燃的燃料不在任何有限家族之内，而每步被池与当步的燃料封闭，池的家族汲入燃料（Frontier.draws_in）；生长者依存于池时，同一流还满足普查与 Taking，生成不息，池的家族也由不息的生起而打开（Rooted）。没有耗散，封闭循环可以不止地更多（Cycle）；此前流的见证中，在一个条件上取用复现的都不耗散。不用伦理前提，也不用 Lean 公理。",
     "en": "On flows, a family of conditions is closed across a step when no formation taking part takes from or gives to a condition outside it; a formation dissipates on the family across the step when it gives the family no more than it takes from it, and less when it takes; a flow is dissipative when, across every step, every family without repetition closed across it is dissipated on. In a balanced flow a dissipated family falls across a step by at least its number of takers; dissipated from some step on, its takers over any later stretch number at most its stock there, and taking from it does not recur. So under dissipation a finite family from which formations take at arbitrarily late steps, together with every finite family without repetition containing it, is not closed at arbitrarily late steps: some formation taking part exchanges with a condition outside it. Any recurring uptake is such taking: more without end, the unceasing arising of formations taking at their first active step, and maintenance, since a steady consumer with nothing arising and no growth needs it too (Lone). The exchange beyond may be unrelated to the family: with a sink exchanging with ever new relata, dissipation holds vacuously, taking recurs at every step in the family of two sides with nothing flowing in, and the sink opens the family (SprayShuttle). A step encloses a family around (Around) when some finite family without repetition containing it is closed across the step; with decidable equality, every enclosed step encloses every finite family around (Enclosed.around). Where a family is enclosed around from some step on and taking from it recurs, it draws in: at arbitrarily late steps some formation gives to the family and takes from beyond it (taking_draws_in). Dissipation constrains only steps at which some finite family is closed: where the exchange of a step lies within finitely many conditions without repetition (Enclosed), under dissipation a formation that gives takes more than it gives over every closed family without repetition, so giving needs uptake; where a formation exchanges with infinitely many conditions, no step is so, dissipation is vacuous, and a renewer can give while taking nothing (Spray). If finitely many conditions are all there is, taking does not recur. A flow in which a source burns a fresh fuel at every step, gives a pool less than it burns, and ever more growers take from the pool meets every premise and is more without end; the fuels it burns lie in no finite family, while each step is enclosed by the pool and that step's fuel and the pool's family draws in the fuel (Frontier.draws_in); with the growers depending on the pool, the same flow also meets a census and Taking, generation is unceasing, and the pool's families open through unceasing arising as well (Rooted). Without dissipation a closed cycle is more without end (Cycle), and none of the earlier flow witnesses in which taking recurs on one condition is dissipative. No ethical premise and no Lean axiom is used."
@@ -769,6 +773,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“耗散之下复现的取用打开有限家族：取用复现的有限家族，连同包含它的每个有限家族，在任意晚的步不封闭，被围住时从家族之外汲入”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Under dissipation recurring taking opens finite families: a finite family on which taking recurs, with every finite family containing it, is open at arbitrarily late steps and, enclosed around, draws in from beyond it”"
     }
   ]
 }

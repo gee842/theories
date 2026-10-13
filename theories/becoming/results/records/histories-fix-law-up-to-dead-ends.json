@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "histories-fix-law-up-to-dead-ends",
   "title": {
-    "zh": "律与历史的完备对应：一族历史恰在含有它的拼接时是某个律的历史族；历史把律固定到死路为止",
-    "en": "Law and history correspond completely: a family of histories is a law's exactly where it holds its splices, and histories fix a law up to its dead ends"
+    "zh": "律与历史的完备对应",
+    "en": "The complete correspondence of law and history"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "一族历史恰在含有它的拼接时是某个律的历史族；历史把律固定到死路为止。",
+    "en": "A family of histories is a law's exactly where it holds its splices, and histories fix a law up to its dead ends."
+  },
   "claim": {
     "zh": "设 S 为配置类型，A 为动作类型，历史是一对序列 g : ℕ → S 与 m : ℕ → A。律 P 容许历史（Admits P g m），指历史的每一步都是 P 的一步；运行的历史为其律所容许（Run.admits）。一族历史 H 所显示的律（ShownBy H）以 H 中历史所走的各步为步；它是容许 H 中每段历史的最小的律（ShownBy.admits、shownBy_le_iff）。一族历史含有它的拼接（SpliceClosed H），指每个由它自己的步组成的序列都在族中。律的历史族含有它的拼接（admits_spliceClosed）；一族历史恰在含有它的拼接时是某个律的历史族，它所显示的律就是这样一个律（family_iff）。一族历史一致（ConsistentFamily H），指其中任何两段历史从不以同一动作把同一配置带到两处；它所显示的律恰在这时确定（shownBy_determined_iff），一族历史恰在含有它的拼接且一致时是某个确定的律的历史族（determined_family_iff）。律的活的步（live P）是它的某段历史所走的步；律与它的活的步容许同样的历史（admits_live_iff），两个律恰在活的步相同时容许同样的历史（same_histories_iff），活的律没有死路（live_live），死路的那一步不是活的（DeadEnd.not_live）。所以不计死路的律与含有拼接的历史族一一对应：拼接与死路就是律与历史之间的全部规律。会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史（same_finite_histories_iff）；一族有限历史恰在由它的步组成时，即空序列不移动、序列是第一步接其余时，是某个律的有限历史族（MadeOfSteps、finite_family_iff）。死路是不终止历史的事实。不加前提。",
     "en": "Let S be a type of configurations and A one of moves; a history is a pair of sequences g : ℕ → S and m : ℕ → A. A law P admits a history (Admits P g m) where every step the history takes is a step of P; a run's history is admitted by its law (Run.admits). The law a family of histories H shows (ShownBy H) has as steps the steps its histories take; it is the least law admitting each history of H (ShownBy.admits, shownBy_le_iff). A family holds its splices (SpliceClosed H) where every sequence made of its own steps is in it. The histories of a law hold their splices (admits_spliceClosed), and a family is the family of some law's histories exactly where it holds its splices, the law it shows being one such law (family_iff). A family is consistent (ConsistentFamily H) where no two of its histories take one move at one configuration to two outcomes; the law it shows is determined exactly then (shownBy_determined_iff), and a family is the family of a determined law's histories exactly where it holds its splices and is consistent (determined_family_iff). The live steps of a law (live P) are those some history of it takes; a law and its live steps admit the same histories (admits_live_iff), two laws admit the same histories exactly where they have the same live steps (same_histories_iff), the live law has no dead end (live_live), and the dead end's step is not live (DeadEnd.not_live). So laws up to their dead ends and families holding their splices correspond one to one: splicing and dead ends are the whole law of law and history. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (same_finite_histories_iff), and a family of finite histories is a law's exactly where it is made of its steps, the empty course going nowhere and a course being a first step followed by the rest (MadeOfSteps, finite_family_iff). The dead end is a fact of unending histories. No premise."
@@ -329,6 +333,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“律与历史的完备对应：一族历史恰在含有它的拼接时是某个律的历史族；历史把律固定到死路为止”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Law and history correspond completely: a family of histories is a law's exactly where it holds its splices, and histories fix a law up to its dead ends”"
     }
   ]
 }

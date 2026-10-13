@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "ceasing-needs-arising",
   "title": {
-    "zh": "普查定律：成立者每步被列出时，不再成立的复现需要开始成立的复现，反之不然",
-    "en": "The census law: where what holds is listed at each step, ceasing to be recurring needs coming to be recurring, and not conversely"
+    "zh": "普查定律",
+    "en": "The census law"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "成立者每步被列出时，不再成立的复现需要开始成立的复现；反之不然。",
+    "en": "Where what holds is listed at each step, ceasing to be recurring needs coming to be recurring; the converse fails."
+  },
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出（Listed），且每步可判定时，在任意晚的步有成员不再成立，就在任意晚的步有成员开始成立（Listed.coming_of_ceasing）。证明经过普查的平衡（census-balance）：不再成立复现时，从任一步 N 起其间不再成立的累加而超过 N 时的列表（recurring_accumulates），而终点的列表连同其间不再成立的恰是 N 时的列表连同其间开始成立的，所以其间有开始成立（Listed.coming_iff_excess）。P26 与 P27 曾直接由列表的长短证明（一次不再成立若此前没有开始成立，列表就变短，而列表不能永远变短）；P30 改由平衡证明，那一路线的三个引理不再被用到，从核心中去掉。普查就是活动的列出（Web.Census）：在普查之下，止息复现需要生起复现（Web.arising_of_ceasing）；读于世界：有普查、活动可判定的世界中，止息复现就有生起复现（World.arising_of_ceasing）。读于水平：所立者的普查（Web.StandingCensus）之下，不再作为条件而在的复现需要开始作为条件而在的复现（Web.StandingCensus.coming_of_ceasing）。读于依存：每步的依存被列出（Web.DependenceCensus）时，消解复现需要形成复现（Web.DependenceCensus.forming_of_dissolving）。反之不然：accretion 有普查，生起复现而从不止息；attrition 止息复现而没有任何生起，所以由这一规律，它没有普查（World.census_one_way）。逆命题在列表有界时成立，见 bounded-census-keeps-pace。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once (Listed), and the determination is decided at each step, members ceasing to hold at arbitrarily late steps need members coming to hold at arbitrarily late steps (Listed.coming_of_ceasing). The proof goes through the census balance (census-balance): with ceasing to be recurring, the ceasings from any step N on accumulate past the list at N (recurring_accumulates), while the list at the end with what ceased between is the list at N with what came between, so something comes to be between (Listed.coming_iff_excess). P26 and P27 proved it from the lengths of the lists directly (a ceasing not preceded by a coming to be shortens the list, which cannot shorten forever); P30 proves it through the balance, and the three lemmas of that route, no longer used, are removed from the core. A census is the listing of activity (Web.Census): under a census, ceasing recurring needs arising recurring (Web.arising_of_ceasing); read of worlds, in a world with a census whose activity is decided, ceasing recurs only where arising recurs (World.arising_of_ceasing). Read of standing: under a census of what stands (Web.StandingCensus), ceasing to stand recurring needs coming to stand recurring (Web.StandingCensus.coming_of_ceasing). Read of dependence: where the dependences of each step are listed (Web.DependenceCensus), dissolving recurring needs forming recurring (Web.DependenceCensus.forming_of_dissolving). Not conversely: accretion has a census, and arising recurs in it while nothing ever ceases; attrition keeps ceasing while nothing arises, so by this law it has no census (World.census_one_way). The converse holds where the list is bounded; see bounded-census-keeps-pace. No ethical premise and no Lean axiom is used."
@@ -680,6 +684,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“普查定律：成立者每步被列出时，不再成立的复现需要开始成立的复现，反之不然”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “The census law: where what holds is listed at each step, ceasing to be recurring needs coming to be recurring, and not conversely”"
     }
   ]
 }

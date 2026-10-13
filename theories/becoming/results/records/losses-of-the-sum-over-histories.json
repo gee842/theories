@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "losses-of-the-sum-over-histories",
   "title": {
-    "zh": "历史之和的损失：截断恰好漏掉所弃的部分；可抵消时可能性看不见抵消；记忆须保留在配置中；回路使历程倍增",
-    "en": "The losses of the sum over histories: a truncation misses exactly what it drops, possibility cannot see a cancellation, memory must be kept in the configuration, and loops double the courses"
+    "zh": "历史之和的损失",
+    "en": "Losses of the sum over histories"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "截断恰好漏掉所弃的部分；可抵消时可能性看不见抵消；记忆须保留在配置中；回路使历程倍增。",
+    "en": "A truncation misses exactly what it drops, possibility cannot see a cancellation, memory must be kept in the configuration, and loops double the courses."
+  },
   "claim": {
     "zh": "对每个赋权，所留与所弃历程之和是所留之和加所弃之和（Weights.truncation）；备选只相加之处（计数），截断从下方界定整体（counting_truncation_le）。带符号的计数（signed：一对，所加与所减；备选逐分量相加，减的一步把其后翻转）满足权重的规律。一个配置、两个回到它的动作，一加一减：每个历程都可能，它们的并也可能，而一步的带符号计数是 (1, 1)，所加等于所减（Interference.cancels）；只留第一个历程得 (1, 0)（Interference.truncation_misleads）；任何保持备选之并、把一个历程标为可能的读法，都把它所进入的每个和标为可能，平衡与否（Interference.unseen），其中包括两个历程平衡的并（Interference.unseen_balanced）。一个配置上要求第二步不同于第一步的两步历程的可能性赋权，不是该配置上任何步权重与终点读法沿历程的权重（Memory.not_of_steps），而在保留上一动作的配置上是（Memory.of_kept）。一个配置、两个回到它的动作，n 步历程的计数是 2^n（Loop.courses_double）。不加前提。",
     "en": "For every weighting, the sum over kept and dropped courses is the sum over those kept added to the sum over those dropped (Weights.truncation); where alternatives only add (counting), a truncation bounds the whole from below (counting_truncation_le). Signed counts (signed: pairs of what adds and what subtracts, alternatives adding part by part, a subtracting step turning what follows around) satisfy the laws of weights. With one configuration and two moves back to it, one adding and one subtracting, each course is possible and so is their join, while the signed count of the one step is (1, 1), what adds equalling what subtracts (Interference.cancels); keeping the first course alone gives (1, 0) (Interference.truncation_misleads); and every reading into possibility that keeps the join of alternatives and marks a course possible marks possible every sum the course enters, balanced or not (Interference.unseen), the balanced join of the two courses among them (Interference.unseen_balanced). A possibility weighting of two-step courses on one configuration requiring the second move to differ from the first is not the weight along courses of any step weight and end reading on that configuration (Memory.not_of_steps), and is one on configurations keeping the last move (Memory.of_kept). With one configuration and two moves back to it, the count of courses of n steps is 2^n (Loop.courses_double). No premise."
@@ -220,6 +224,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“历史之和的损失：截断恰好漏掉所弃的部分；可抵消时可能性看不见抵消；记忆须保留在配置中；回路使历程倍增”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “The losses of the sum over histories: a truncation misses exactly what it drops, possibility cannot see a cancellation, memory must be kept in the configuration, and loops double the courses”"
     }
   ]
 }

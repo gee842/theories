@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "separation-loses-the-relation",
   "title": {
-    "zh": "分离恰失去关系：分别描述各部分恰在整体为矩形处给回整体；关系只由共同作用形成，在各自无损的律下持续，只由失去或共同作用结束；奇偶是诸对不给回的整体",
-    "en": "Separation loses exactly the relation: describing the parts separately gives back the whole exactly where it is rectangular; a relation forms only by joint action, lasts under separate laws that lose nothing, and ends only by loss or joint action; parity is a whole its pairs do not give back"
+    "zh": "分离恰失去关系",
+    "en": "Separation loses exactly the relation"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "分别描述各部分恰在整体为矩形处给回整体；关系只由共同作用形成，在各自无损的律下持续，只由失去或共同作用结束；奇偶是诸对不给回的整体。",
+    "en": "Describing the parts separately gives back the whole exactly where it is rectangular; a relation forms only by joint action, lasts under separate laws that lose nothing, and ends only by loss or joint action; parity is a whole its pairs do not give back."
+  },
   "claim": {
     "zh": "设 whole 是 A × B 上的整体（哪些组合出现）。whole 是矩形的（Rectangular），指 whole (a, b) 与 whole (a′, b′) 推出 whole (a, b′)；分离的描述（Separated whole p）只说 p 的每个部分能出现。分离保留每个出现的组合（separated_of_whole），并且“分离的描述只含出现者”恰当 whole 是矩形的（separation_faithful_iff）；总是同去的两个部分分别描述时可以分开（separation_surplus）。三个部分可以作为整体相关而任意两个都自由：偶奇偶的三元组中，任意两个值都能补成偶的三元组，而 (true, false, false) 不是（whole_not_in_pairs）；放在 Specker 的三个盒子与三对上（Becoming.Context 的 restrict、Glued、PartsDetermine），每个读法都被每一对容许（evenBoxes_glued），诸对不给回整体（evenBoxes_not_determined）。律 next 从 whole 通到的配置记作 imageOf next whole。各自移动每个部分的律 (f × g) 保持矩形，不论有损与否（Rectangular.image_of_separate）；把第一部分复制进第二部分的律把全部组合变成两个部分相同，不是矩形的（copy_relates）。f 在出现的第一部分上不合并、g 在出现的第二部分上不合并时，(f × g) 的像是矩形的推出 whole 是矩形的（Rectangular.of_image_injective），所以不是矩形的整体在这样的律下保持不是矩形的（relation_persists）。把第一部分送到一个值的律，不论怎样移动第二部分，通到矩形的整体（forgetting_unrelates）。例：Bool × Bool 上的 couple (x, y) = (x, flipIf x y) 是对合（couple_couple）；它把“第二部分为假”（矩形）通到不是矩形的整体，再作用一次通回“第二部分为假”（coupling_relates_and_unrelates）。不用 Lean 公理。",
     "en": "Let whole be a whole on A × B (which combinations occur). It is rectangular (Rectangular) when whole (a, b) and whole (a′, b′) give whole (a, b′); the separated description (Separated whole p) says only that each part of p occurs. Separation keeps every combination that occurs (separated_of_whole), and it contains only what occurs exactly when whole is rectangular (separation_faithful_iff); two parts that always go alike can go apart when described separately (separation_surplus). Three parts can be related as a whole while every two are free: in the even-parity triples any two values complete to an even triple, and (true, false, false) is not one (whole_not_in_pairs); on Specker's three boxes and three pairs (restrict, Glued and PartsDetermine of Becoming.Context) every reading is allowed by every pair (evenBoxes_glued) and the pairs do not give the whole back (evenBoxes_not_determined). Write imageOf next whole for the configurations a law next leads to from whole. A law moving each part by itself (f × g) keeps a whole rectangular, lossy or not (Rectangular.image_of_separate); the law copying the first part into the second turns the full whole into the parts being equal, which is not rectangular (copy_relates). Where f merges no two first parts that occur and g no two second parts, a rectangular image under f × g gives a rectangular whole (Rectangular.of_image_injective), so a whole that is not rectangular stays so under such a law (relation_persists). A law sending the first part to one value, however it moves the second, leads to a rectangular whole (forgetting_unrelates). For example, couple (x, y) = (x, flipIf x y) on Bool × Bool is an involution (couple_couple); it leads from “the second part is false” (rectangular) to a whole that is not rectangular, and acting again back to “the second part is false” (coupling_relates_and_unrelates). No Lean axiom is used."
@@ -272,6 +276,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“分离恰失去关系：分别描述各部分恰在整体为矩形处给回整体；关系只由共同作用形成，在各自无损的律下持续，只由失去或共同作用结束；奇偶是诸对不给回的整体”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Separation loses exactly the relation: describing the parts separately gives back the whole exactly where it is rectangular; a relation forms only by joint action, lasts under separate laws that lose nothing, and ends only by loss or joint action; parity is a whole its pairs do not give back”"
     }
   ]
 }

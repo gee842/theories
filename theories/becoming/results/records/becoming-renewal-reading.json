@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "becoming-renewal-reading",
   "title": {
-    "zh": "运行上的更新／消耗与生生的关系读法：在对应纪律下由共同条件给出连通，意义沿共同参与传递",
-    "en": "Renewal on runs and the relational reading: under a correspondence discipline a common condition gives connection, and significance passes along co-participation"
+    "zh": "运行上的更新与生生的关系读法",
+    "en": "Renewal on runs and the relational reading of living"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "statement": {
+    "zh": "更新与消耗是运行的类别；在对应纪律下由共同条件给出连通，意义沿共同参与传递。",
+    "en": "Renewal and consumption are classes of runs; under a correspondence discipline a common condition gives connection, and significance passes along co-participation."
+  },
   "claim": {
     "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量不在任意晚的步下降，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；条件互不相交时可不连通。消耗者与被它消耗的形成共同参与被汲取的条件，故在 N_rel 下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件；传递沿共同参与进行，不用到消耗本身。",
     "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on does not fall at arbitrarily late steps; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; disjoint conditions can leave it unconnected. A consumer and the formation it consumes participate in the drawn condition, so under N_rel a standpoint valuing the consumer's activity holds significant every living event of the formation it consumes; the transmission runs along co-participation and does not use consumption itself."
@@ -709,6 +713,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“运行上的更新／消耗与生生的关系读法：在对应纪律下由共同条件给出连通，意义沿共同参与传递”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Renewal on runs and the relational reading: under a correspondence discipline a common condition gives connection, and significance passes along co-participation”"
     }
   ]
 }

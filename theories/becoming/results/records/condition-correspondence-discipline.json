@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "condition-correspondence-discipline",
   "title": {
-    "zh": "条件的对应纪律：只有交互才经由条件相关，惰性条件不再免费连通，连通由活的使用造成",
-    "en": "A correspondence discipline for conditions: only interaction relates through a condition, idle conditions no longer connect for free, and connection is made by living use"
+    "zh": "条件的对应纪律",
+    "en": "A correspondence discipline for conditions"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-09T03:10:36+00:00",
+  "statement": {
+    "zh": "只有交互才经由条件相关；惰性条件不再免费连通，连通由活的使用造成。",
+    "en": "Interaction alone relates through a condition; idle conditions no longer connect for free, and connection is made by living use."
+  },
   "claim": {
     "zh": "在依存网的逐步读法上，保留 living（活跃且不侵蚀），把 related 从共同参与收窄为交互：两个事件经由某条件相关，仅当一方汲取它、另一方以正水平依存于它，在任何步上（不排定时间，也不问汲取是否改变水平）。没有活动汲取、或没有依存能落空的条件是惰性的：它不构成任何关系，也不使任何事件侵蚀；加入它不改变 living、关系与连通。于是独立审查 Q4 的免费连通被排除：加入人人在水平 0 依存、无人汲取的条件，在共同参与下使每个网连通，在交互下连通不变。每个侵蚀关系都是交互；在 N_rel 下，珍视一个侵蚀事件的立场，必珍视被侵蚀形成在以正水平依存于该条件的每一步上的活的事件。传递由汲取承担，不由侵蚀承担：珍视任何汲取事件的立场，必珍视以正水平依存于该条件的每个活的事件（drawing_reaches），所以审查 Q5 只有共同依存的一半被排除。一个条件，每个活的事件都汲取它或以正水平依存于它，且有活的汲取者与活的依存者，使整体连通，任意两个活的事件至多经两次交互相连；于是 G0 在那里恰等于种子加 N_rel 加 N_std。在一个例子中，两个依存于同一条件的形成，经由维持其支持的使用连通；唯一的使用侵蚀它们时不连通；共同参与在两次运行中都连通它们。加入一个被更新、人人以正水平依存的条件，只要一个活的事件汲取它一次，仍使每个网在交互下连通而不改变 living（one_use_connects）；不需要人人汲取。不用 Lean 公理，不加伦理谓词。",
     "en": "On the stepwise reading of a web, keep living (active and not undermining) and narrow related from co-participation to interaction: two events are related through a condition only when one draws on it and the other depends on it at a positive level, at any steps (neither order in time nor change of level enters). A condition that no activity draws on, or no dependence on which can fail, is idle: it relates nothing and undermines nothing, and adjoining one leaves living, the relation and connection unchanged. So the free connection of the independent review's Q4 is excluded: adjoining a condition every formation requires at level zero and nothing draws on connects every web under co-participation and leaves connection unchanged under interaction. Every undermining relation is an interaction; under N_rel, a standpoint valuing an undermining event holds significant the living events of the formation it undermines at every step where that formation depends on the condition at a positive level. The transmission is carried by drawing, not undermining: a standpoint valuing any drawing event holds significant every living event depending on the condition at a positive level (drawing_reaches), so only the co-dependence half of review Q5 is excluded. A condition that every living event draws on or depends on at a positive level, with a living drawer and a living dependent, connects the whole, any two living events being linked in at most two interactions; G0 there is exactly a seed with N_rel and N_std. In one example two formations depending on one condition are connected through a use that keeps their support, and not when the only use undermines it, while co-participation connects them in both runs. Adjoining a renewed condition on which every formation depends at a positive level, used once by one living event, still connects every web under interaction without changing living (one_use_connects); every formation drawing on it is not needed. No Lean axiom is used and no ethical predicate is added."
@@ -623,6 +627,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“条件的对应纪律：只有交互才经由条件相关，惰性条件不再免费连通，连通由活的使用造成”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A correspondence discipline for conditions: only interaction relates through a condition, idle conditions no longer connect for free, and connection is made by living use”"
     }
   ]
 }

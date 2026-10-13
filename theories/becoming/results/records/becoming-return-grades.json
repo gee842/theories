@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "becoming-return-grades",
   "title": {
-    "zh": "回程等级：消耗恰是不再回程，恢复可以无界地变慢",
-    "en": "Return grades: consumption is exactly a dependence that never returns, and recovery can slow without bound"
+    "zh": "回程等级",
+    "en": "Return grades"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-09T04:41:28+00:00",
+  "statement": {
+    "zh": "消耗恰是不再回程，恢复可以无界地变慢。",
+    "en": "Consumption is exactly a dependence that never returns, and recovery can slow without bound."
+  },
   "claim": {
     "zh": "在依存网上，某步成立的依存在其后 p 步之内再被满足，为在 p 步内回程；条件上每个依存都如此，为在 p 步周期内更新；每个依存都在以后某步再被满足，为回程。等级有序：更新蕴含一步周期内更新；p 步内更新蕴含任何更长周期内更新，也蕴含回程；回程的条件不被消耗。消耗恰是某个依存不再回程。RelationalRenewal 中既不更新也不消耗的季节性条件，在两步周期内更新，不在一步内更新。恢复可以无界地变慢：一个间隔越来越长地再被满足的条件总会回程、从不被消耗，但没有任何周期长度能界定它的回程。周期层面的读法扩展逐步读法：形成在 p 步周期内更新，当它参与的每个条件都在 p 步内更新；事件侵蚀 p 步，当它在某步汲取某条件，而此后 p 步中的每一步，条件既低于某个依存现在的所需，也低于该依存在其成立期间曾被满足的某个所需。侵蚀一步恰是逐步的侵蚀；周期越长记入越多；在某个周期内更新的形成不消耗，它的事件也不侵蚀该周期。更新蕴含一步周期内更新，逆命题不成立：一个依存在其第 0 步不被满足、此后每步都被满足时，形成在一步周期内更新而不整段更新。周期长度 0 是退化的：零步内更新恰是无人依存，任何对有依存者的条件的汲取都侵蚀零步。两步周期下，短暂下降与在不活跃时被断裂的依存者都被记入；加码之后条件不再回来，加码事件对每个周期都侵蚀。不用伦理前提，也不用 Lean 公理。",
     "en": "On a web of dependence, a dependence holding at a step returns within p steps when the condition meets it at one of the next p steps; a condition is renewed within p when every dependence on it does so, and it returns when every dependence on it is met at some later step. The grades are ordered: renewal implies renewal within one step; renewal within p implies renewal within any longer cycle and implies return; a condition that returns is not consumed. Consumption is exactly a dependence that never returns. The seasonal condition of RelationalRenewal, neither renewed nor consumed, is renewed within two steps and not within one. Recovery can slow without bound: a condition met again after ever longer gaps always returns and is never consumed, yet no cycle length bounds its return. Readings over cycles extend the stepwise readings: a formation renews over cycles of p when every condition it participates in is renewed within p, and its event undermines for p steps when it draws on a condition at a step after which, at each of the next p steps, the condition is below both the present need of a dependence on it and a need that dependence met while it held. Undermining for one step is exactly undermining at the step; a longer cycle credits more; a formation renewing over some cycle is not consuming, and none of its events undermines for that cycle. Renewal implies renewal within one step, not conversely: when a dependence is unmet at its step 0 and met at every later step, the formation renews over cycles of one without renewing in the run. Cycle length 0 is degenerate: renewal within zero steps holds exactly when nothing depends on the condition, and any draw on a condition something depends on undermines for zero steps. Over cycles of two, a dip and a dependent broken while inactive are credited; after an escalation the condition never returns, and the escalating event undermines for every cycle. No ethical premise and no Lean axiom is used."
@@ -617,6 +621,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“回程等级：消耗恰是不再回程，恢复可以无界地变慢”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Return grades: consumption is exactly a dependence that never returns, and recovery can slow without bound”"
     }
   ]
 }

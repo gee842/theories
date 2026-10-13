@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "becoming-stepwise-reading",
   "title": {
-    "zh": "逐步读法：在更新之内的分类与“活跃且不侵蚀”的 living，与整段读法两个方向都有分歧",
-    "en": "The stepwise reading: classification within renewal and living as active and not undermining, differing from the whole-run reading in both directions"
+    "zh": "逐步读法",
+    "en": "The stepwise reading"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
+  "statement": {
+    "zh": "逐步读法在更新之内对事件分类，与整段读法两个方向都有分歧；它把 living 读作“活跃且不侵蚀”。",
+    "en": "The stepwise reading classifies events within renewal and differs from the whole-run reading in both directions; it reads living as active and not undermining."
+  },
   "claim": {
     "zh": "在依存网上，一个事件（形成，步）在更新之内，当它活跃，且该步维持它所参与的每个条件上的每个依存。整段运行的更新使每个活跃步都在更新之内；断裂所参与条件上依存的步不在更新之内；一个形成可以在自己的每个活跃步都在更新之内而整段不更新。一个形成对某条件的关系在某步侵蚀，当它在该步汲取该条件，而该步之后，条件既低于一个依存现在的所需，也低于该依存在不间断成立期间的某步曾被满足的所需；在断裂某个依存之步汲取（断裂）是侵蚀的一种，在更新之内的事件既不侵蚀也不断裂。以“活跃且不侵蚀”为 living、以各自步上共同参与某一条件为 related：被断裂者在断裂之步不在更新之内，但不侵蚀，所以被记入；损失之后继续的汲取不再断裂任何依存，却侵蚀，而同样的第一步之后若不再取（动作为 0），条件回到；在依存成立期间从未以其所需被满足的依存不使任何事件侵蚀，所需下降时也如此；只低于增长到从未被满足的所需，不算侵蚀；所需增长之后，把水平取到曾被满足的所需之下的汲取侵蚀而不断裂；依存中断一步即开始新的一段。侵蚀读的是共同参与一个未恢复的短缺，不是汲取的效果：在外来崩塌之后，一个不改变任何水平的汲取者也侵蚀。整段读法与这一读法两个方向都有分歧：先在更新之内汲取、后来超出的形成，整段记为消耗，第一个事件逐步被记入；先超出一次、条件随后恢复的形成，整段不记为消耗，断裂之步的事件逐步不被记入；两种读法都记入被断裂者在断裂之步的事件。每个活的事件都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；在断裂之步汲取的事件不是活的，并与被断裂形成参与该条件的每个事件相关，在 N_rel 下珍视它的立场必珍视那些活的事件。关系层读法以（形成，条件，步）为主张，活的关系是活跃、参与且不侵蚀；一个事件的逐步读法恰是它所参与关系的读法的合取，同一事件可以有一个活的关系和一个侵蚀的关系。依存不变时整段与逐步读法的 related 相同。",
     "en": "On a web of dependence, an event (formation, step) is within renewal when it is active and its step keeps every dependence on every condition it participates in. Whole-run renewal credits every active step; a step breaking a dependence on a condition the event participates in is not within renewal; a formation can be within renewal at each of its own active steps without renewing in the run. A formation's relation to a condition undermines at a step when it draws on the condition at that step and, after the step, the condition is below both the present need of a dependence on it and a need that dependence met at some step of its unbroken tenure; drawing at a step that breaks a dependence (breaking) is a case of undermining, and an event within renewal neither undermines nor breaks. Taking “active and not undermining” as `living` and participation in a common condition at the events' steps as `related`: the broken formation is not within renewal at the breaking step but does not undermine, so it is credited; drawing after a loss breaks nothing further yet undermines, while with the same first step and nothing further taken (action 0) the condition returns; a requirement never met at its own need while it held makes no event undermine, also when the need falls; falling short only of a need grown beyond anything met does not undermine, while after a need has grown a draw taking the level below a need that was met undermines without breaking; and a dependence that lapses for a step starts a new tenure. Undermining reads co-participation in an unrestored shortfall, not what a draw does: after an exogenous collapse, a drawer that changes no level undermines too. The whole-run reading and this one differ in both directions: a formation drawing within renewal at first and beyond it later is consuming on the whole-run reading while its first event is credited stepwise; a formation that draws beyond renewal once while the condition later returns is not consuming on the whole-run reading while its event at the breaking step is not credited stepwise; both credit the broken formation's event at the breaking step. A condition in which every living event participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; an event drawing at a breaking step is not living and is related to every event of the broken formation participating in that condition, so under N_rel a standpoint valuing it holds those living events significant. A relation-level reading takes (formation, condition, step) as claims, a living relation being active, participating and not undermining; an event's stepwise reading is exactly the conjunction over the relations it takes part in, and one event can have a living and an undermining relation. With constant dependence the whole-run and stepwise readings have the same `related`."
@@ -786,6 +790,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“逐步读法：在更新之内的分类与“活跃且不侵蚀”的 living，与整段读法两个方向都有分歧”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “The stepwise reading: classification within renewal and living as active and not undermining, differing from the whole-run reading in both directions”"
     }
   ]
 }

@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "whole-first-and-bounded-centers",
   "title": {
-    "zh": "整体优先，以依存为界的中心彼此分歧：有意义者越少保留越多；公理之下在整体中保留的在每个区域内保留，反过来不成立；让每个形成的意义止于其依存时，清除者从自己的立场保留一切，从栖居者的立场失去栖居者；公理之下它从每个立场失去栖居者，而扣留它不终结任何东西",
-    "en": "The whole first, and centers bounded by their dependence disagree: where fewer continuations have significance more is retained; under the axiom what retains in the whole retains within every region, and not conversely; with each formation's significance stopping at its dependence, the clearer's part retains everything from the clearer's standpoint and loses the dweller from the dweller's; under the axiom it loses the dweller from every standpoint, while withholding it ends nothing"
+    "zh": "整体优先，与以依存为界的中心",
+    "en": "The whole first, and centers bounded by dependence"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "有意义者越少保留越多；公理之下在整体中保留的在每个区域内保留，反过来不成立。让每个形成的意义止于其依存时，清除者的部分从清除者的立场保留一切，从栖居者的立场失去栖居者；公理之下它从每个立场失去栖居者。",
+    "en": "With fewer significant continuations more is retained; under the axiom what retains in the whole retains in every region, not conversely. With dependence-bounded significance, the clearer's part retains all for the clearer, loses the dweller for the dweller, and under the axiom for every standpoint."
+  },
   "claim": {
     "zh": "有意义者越少，保留的越多：sig' 蕴含 sig 时，从 sig 保留者从 sig' 也保留（Web.Retains.of_fewer）。以区域为界的意义（bounded region）从 p 保留，恰当每一步在 p 的区域之内 l 接纳 l' 所接纳的（Web.retains_bounded_iff，经 Web.AdmitsWithin）。公理之下，从 p 保留者，对每个区域族都从 p 保留（Web.Retains.within）：整体的判断决定每个较窄的判断，无论区域是系统的还是自身的；区域之内成立的在其内每个区域都成立（Web.AdmitsWithin.narrow）。反过来不成立：在 Clearing 中，清除者从资源汲取，资源由来源供给；栖居者依存于栖息地，清除者的汲取使它从第二步起不被支持。无清除者的部分时，每个形成每一步都被接纳（Clearing.admitted_all_without）。让每个形成的意义止于其依存所及（Clearing.dependenceRegion：清除者及其沿依存可达的来源，来源与栖居者只含自身）：从清除者的立场，它的部分每一步都保留有意义者；从栖居者的立场，它失去栖居者（Clearing.centers_disagree）。公理之下，从每个立场，它都失去栖居者，有它的水平不保留无它时的有意义者，无它的水平保留有它的有意义者，清除者每一步被支持、无它时也被接纳，所以扣留这个部分不终结任何东西（Clearing.free_rider_loses）。不用 Lean 公理。",
     "en": "Where fewer continuations have significance, more is retained: where sig' implies sig, what retains from p for sig retains for sig' (Web.Retains.of_fewer). A significance bounded by regions (bounded region) retains from p exactly when at every step, within p's region, l admits what l' admits (Web.retains_bounded_iff, through Web.AdmitsWithin). Under the axiom, what retains from p retains from p for every family of regions (Web.Retains.within): the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it (Web.AdmitsWithin.narrow). The converse fails: in Clearing the clearer draws on a resource fed by the source, while the dweller depends on a habitat that the clearer's draw leaves unsupported from step two on. Without the clearer's part every formation is admitted at every step (Clearing.admitted_all_without). Let each formation's significance stop at what its dependence reaches (Clearing.dependenceRegion: the clearer with the source reached along its dependence; the source and the dweller alone): from the clearer's standpoint its part retains what has significance at every step; from the dweller's standpoint it loses the dweller (Clearing.centers_disagree). Under the axiom it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing (Clearing.free_rider_loses). No Lean axiom is used."
@@ -467,6 +471,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述，并压缩到陈述的长度上限（主张保留每一部分）。主张、证明与证据不变。原标题：“整体优先，以依存为界的中心彼此分歧：有意义者越少保留越多；公理之下在整体中保留的在每个区域内保留，反过来不成立；让每个形成的意义止于其依存时，清除者从自己的立场保留一切，从栖居者的立场失去栖居者；公理之下它从每个立场失去栖居者，而扣留它不终结任何东西”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement, condensed to the statement's length limit (the claim keeps every part). Claim, proof and evidence unchanged. Former title: “The whole first, and centers bounded by their dependence disagree: where fewer continuations have significance more is retained; under the axiom what retains in the whole retains within every region, and not conversely; with each formation's significance stopping at its dependence, the clearer's part retains everything from the clearer's standpoint and loses the dweller from the dweller's; under the axiom it loses the dweller from every standpoint, while withholding it ends nothing”"
     }
   ]
 }

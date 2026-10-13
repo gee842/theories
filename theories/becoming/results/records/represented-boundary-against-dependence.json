@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "represented-boundary-against-dependence",
   "title": {
-    "zh": "所表示的边界与实际依存：在条件区域上的更新，只在区域覆盖其参与时是该步的更新；覆盖其所需且要求不收紧时保住自身支持，仍可侵蚀他者；遗漏其所需时，可以经自身的汲取失去自身支持",
-    "en": "A represented boundary against actual dependence: renewal over a region of conditions is renewal at the step where the region covers what the formation takes part in; covering what it requires, with requirements not tightening, it keeps its own support and can still undermine another; omitting what it requires, its own draw can lose its own support"
+    "zh": "所表示的边界与实际依存",
+    "en": "A represented boundary and actual dependence"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "在条件区域上的更新，只在区域覆盖其参与时是该步的更新。覆盖其所需且要求不收紧时保住自身支持，仍可侵蚀他者；遗漏其所需时，可以经自身的汲取失去自身支持。",
+    "en": "Renewal over a region of conditions is renewal at the step where the region covers what the formation takes part in. Covering what it requires, with requirements not tightening, it keeps its own support yet can undermine another; omitting what it requires, its own draw can lose its own support."
+  },
   "claim": {
     "zh": "一个形成在 t 的事件在条件区域上更新（Web.RenewingOver），是指它活跃，并且该步保住它在区域中参与的每个条件上的每项依存。该步的更新就是在每个区域上的更新（Web.RenewingAt.over、Web.renewingAt_iff_over_all），在一个区域上的更新也是在它之内每个区域上的更新（Web.RenewingOver.narrow）。与形成的实际关系相比：区域覆盖它参与的每个条件时，在区域上的更新就是该步的更新（Web.RenewingOver.at）；区域覆盖它所需的每个条件、它的要求在该步不收紧时，在区域上更新的形成在该步之后被支持（Web.RenewingOver.keeps_own），但仍可侵蚀他者——Clearing 中清除者每步都在其资源（它唯一所需的条件）上更新，在第一步侵蚀，不在该步的更新之内（Clearing.renewing_over_resource）；区域遗漏它所需的一个条件时，它自身的汲取可以侵蚀它自身的依存——Omitted 中一个形成需要两个条件，在第零步在 false 上更新、要求不收紧，它也需要区域遗漏的 true，它对 true 的汲取侵蚀，在该步之后它不被支持（Omitted.loses_own；平衡、Acting、Taking 与 Dependent 都成立）。不用伦理前提，也不用 Lean 公理。",
     "en": "A formation's event at t is within renewal over a region of conditions (Web.RenewingOver) when it is active and the step keeps every dependence on every condition of the region it takes part in. Renewal at the step is renewal over every region (Web.RenewingAt.over, Web.renewingAt_iff_over_all), and renewal over a region is renewal over every region inside it (Web.RenewingOver.narrow). Compared with the formation's actual relations: over a region covering every condition it takes part in, renewal over the region is renewal at the step (Web.RenewingOver.at); over a region covering every condition it requires, where its requirements do not tighten across the step, a formation renewing over the region is supported after the step (Web.RenewingOver.keeps_own), yet it can still undermine another: in Clearing the clearer renews over its resource, the one condition it requires, at every step, undermines at step one and is not within renewal there (Clearing.renewing_over_resource); over a region omitting a condition it requires, its own draw can undermine its own dependence: in Omitted a formation requires two conditions, renews over false at step zero with requirements not tightening, also requires true, which the region omits, and its draw on true undermines, so after the step it is not supported (Omitted.loses_own; balance, Acting, Taking and Dependent all hold). No ethical premise and no Lean axiom is used."
@@ -475,6 +479,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“所表示的边界与实际依存：在条件区域上的更新，只在区域覆盖其参与时是该步的更新；覆盖其所需且要求不收紧时保住自身支持，仍可侵蚀他者；遗漏其所需时，可以经自身的汲取失去自身支持”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “A represented boundary against actual dependence: renewal over a region of conditions is renewal at the step where the region covers what the formation takes part in; covering what it requires, with requirements not tightening, it keeps its own support and can still undermine another; omitting what it requires, its own draw can lose its own support”"
     }
   ]
 }

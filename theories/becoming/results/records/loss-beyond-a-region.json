@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "loss-beyond-a-region",
   "title": {
-    "zh": "区域之外的损失：在嵌套的形成区域上比较，区域越小其外越多，整体之外什么都没有；清除者每步活跃且被支持，在它与供给其资源的来源之内不关闭任何东西，从第二步起在其外关闭栖居者",
-    "en": "Loss beyond a region: compared over nested regions of formations, the smaller the region the more lies beyond it, and nothing lies beyond the whole; the clearer, active and supported at every step, closes nothing within itself and the source feeding its resource, and from step two on closes the dweller beyond them"
+    "zh": "区域之外的损失",
+    "en": "Loss beyond a region"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "在嵌套的形成区域上比较，区域越小其外越多，整体之外什么都没有。清除者每步活跃且被支持，在它与供给其资源的来源之内不关闭任何东西，从第二步起在其外关闭栖居者。",
+    "en": "Compared over nested regions of formations, the smaller the region the more lies beyond it, and nothing lies beyond the whole. The clearer, active and supported at every step, closes nothing within itself and the source feeding its resource, and from step two on closes the dweller beyond them."
+  },
   "claim": {
     "zh": "在一个形成区域之内，水平 l 接纳水平 l′ 在那里接纳的每个形成（Web.AdmitsWithin）；在区域之外有损失（Web.LosesBeyond），是指区域外有一个形成被 l′ 接纳而不被 l 接纳。包含就是每步在整体之内的接纳（Web.includes_iff_within_whole）。在一个区域之内成立的，在它之内的每个区域之内也成立（Web.AdmitsWithin.narrow）；在一个区域之外的损失，在它之内的每个区域之外也是损失（Web.LosesBeyond.narrow）：区域越小，其外越多。整体之外什么都没有（Web.not_losesBeyond_whole），在整体之内成立的，在任何区域之外都不留下损失（Web.AdmitsWithin.not_losesBeyond）。在单个形成之内成立的，就是它自身在 l′ 接纳它之处被 l 接纳（Web.admitsWithin_self）。Clearing 中扣留清除者的部分（Clearing.clearerPart）后的水平存在（Clearing.withheld，见 four-cases-of-a-part）。区域 Clearing.alongDependence 由清除者与供给它唯一所需条件（资源）的来源组成；它与 Clearing.fedBy_source 沿供给找到的形成一致（逐项对照，不是定理）。每步清除者都活跃且被支持，并且在这个区域之内，有它的水平接纳无它的水平所接纳的每个形成；从第二步起，在区域之外，栖居者无它时被接纳而有它时不被接纳（Clearing.loses_beyond）。所以一个部分可以每步都延续、在其依存之内不关闭任何东西，同时关闭其依存之外的东西；以整体为区域时，没有之外的损失可言（Web.not_losesBeyond_whole）。不用伦理前提，也不用 Lean 公理。P56：包含恰是同时在每一步、每个区域内的接纳（Web.includes_iff_within_every）：区域的比较以区域为输入，整体的比较不以任何边界为输入。",
     "en": "Within a region of formations, levels l admit every formation the levels l′ admit there (Web.AdmitsWithin); there is loss beyond the region (Web.LosesBeyond) when some formation outside it is admitted by l′ and not by l. Inclusion is admission within the whole at every step (Web.includes_iff_within_whole). What holds within a region holds within every region inside it (Web.AdmitsWithin.narrow); what is lost beyond a region is lost beyond every region inside it (Web.LosesBeyond.narrow): the smaller the region, the more lies beyond it. Nothing lies beyond the whole (Web.not_losesBeyond_whole), and what holds within the whole leaves nothing lost beyond any region (Web.AdmitsWithin.not_losesBeyond). Within one formation, what holds is its own admission by l wherever l′ admits it (Web.admitsWithin_self). In Clearing the levels without the clearer's part (Clearing.clearerPart) exist (Clearing.withheld, see four-cases-of-a-part). The region Clearing.alongDependence is the clearer with the source that feeds the one condition it requires, its resource; it matches the formations Clearing.fedBy_source finds along feeding (checked by inspection, not by a theorem). At every step the clearer is active and supported, and within this region the levels with its part admit every formation the levels without it admit; from step two on, beyond the region, the dweller is admitted without the clearer's part and not with it (Clearing.loses_beyond). So a part can continue at every step and close nothing within its dependence while closing what lies beyond it; with the whole as the region there is no loss beyond to speak of (Web.not_losesBeyond_whole). No ethical premise and no Lean axiom is used. P56: inclusion is exactly admission within every region at every step at once (Web.includes_iff_within_every): a region's comparison takes the region as an input, while the whole's takes no boundary as an input."
@@ -458,6 +462,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“区域之外的损失：在嵌套的形成区域上比较，区域越小其外越多，整体之外什么都没有；清除者每步活跃且被支持，在它与供给其资源的来源之内不关闭任何东西，从第二步起在其外关闭栖居者”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Loss beyond a region: compared over nested regions of formations, the smaller the region the more lies beyond it, and nothing lies beyond the whole; the clearer, active and supported at every step, closes nothing within itself and the source feeding its resource, and from step two on closes the dweller beyond them”"
     }
   ]
 }

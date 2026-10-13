@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "protection-priority-excludes-uniform-aggregation",
   "title": {
-    "zh": "基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示",
-    "en": "Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score"
+    "zh": "基本条件优先",
+    "en": "Basic-condition priority"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
   "reviewed_at_utc": "2026-10-08T18:56:05.941008+00:00",
+  "statement": {
+    "zh": "基本条件优先独立于 C，排除每个自然数评分，但可由有界评分表示。",
+    "en": "Basic-condition priority is independent of C, excludes every natural-number score, and is representable by a bounded score."
+  },
   "claim": {
     "zh": "在一个构造的保护对增益情境中，G0、无损生成比较 C 与 J2 的排序可同时成立，J2 从不以任何数量的次级增益交换受保护的基本条件。G0 只约束正面相关性，不约束排序，它同样与一个满足 C、会交换的排序并存，因此 J2 不由 C 推出。每一个满足 C 的自然数评分都会在 score 0 + 2 项增益处交换，因而没有这样的评分能表示 J2。一个有界有理评分（保护为 1，k 项增益为 k/(k+1)）在每一对选项上与 J2 一致。所以此情境只把 J2 与单位步长的聚合分开。",
     "en": "In one constructed protection-versus-gains situation, G0, the no-loss generative comparison C and J2's ordering hold together, and J2 never trades the protected basic condition for any number of secondary gains. G0 constrains positive relevance, not ordering: it holds equally alongside a trading ordering satisfying C, so J2 does not follow from C. Every natural-number score satisfying C trades at score 0 + 2 gains, so no such score represents J2. A bounded rational score (1 for protection, k/(k+1) for k gains) agrees with J2 on every pair of options. The situation therefore separates J2 from unit-step aggregation only."
@@ -207,6 +211,10 @@
     {
       "zh": "2026-10-09（P5b）：G0-WARRANT 两处指向 MetaethicalCore.lean 的链接改到包路径 Becoming/Metaethics.lean，§3 表行名随之改为 Becoming.Metaethics；正文与本记录所依的段落不变。读过改动后更新哈希；主张、证明与回执不变。",
       "en": "2026-10-09 (P5b): two G0-WARRANT links to MetaethicalCore.lean now point to the package path Becoming/Metaethics.lean, and the §3 row label reads Becoming.Metaethics; the text and the paragraphs this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score”"
     }
   ]
 }

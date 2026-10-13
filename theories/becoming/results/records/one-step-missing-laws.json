@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "one-step-missing-laws",
   "title": {
-    "zh": "所陈述的一步之律所遗漏的：有所取就有取用者；所取不超过所立加所给",
-    "en": "What the stated laws of one step miss: something taken has a taker, and nothing is taken beyond what stood with what was given"
+    "zh": "所陈述的一步之律所遗漏的",
+    "en": "What the stated laws of one step miss"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "所陈述的一步之律遗漏两条：有所取就有取用者；所取不超过所立加所给。",
+    "en": "The stated laws of one step miss two laws: something taken has a taker, and nothing is taken beyond what stood with what was given."
+  },
   "claim": {
     "zh": "从一个家族所取的有取用它的关系项：取用量的符号至多是取用者之数（Flow.sign_uptake_le_takers）。在家族耗减的一步，恰在家族的总量下降时有所取（Flow.RunsDownOn.taken_iff）。在一个跨此步被平衡的条件处，所取不超过步前所立加所给（Flow.BalancesOn.taken_le）。对跨此步耗减并封闭的家族，Locality 中所陈述的律（每个成员平衡、按取用者下降、恰在总量下降时有立的变化与交换）加上“有所取就有取用者”就是全部规律（OneStep.runsDownClosed_iff_stated）；没有后者，它们允许一个条件被取用与被给予相等、无人取用而通过，而没有世界显示它（OneStep.stated_not_realized）。在一个被平衡的条件处，步前层级、所取与所给以及是否来到或停止立，恰在所取不超过所立加所给、来到与停止如 Flow.BalancesOn.comesToStand_iff 与 Flow.BalancesOn.ceasesToStand_iff 所定时一同显示（OneStep.standing_iff）；单凭这些读法允许所取多于所有（OneStep.standing_bound_needed）。不加前提。",
     "en": "Something taken from a family has a relatum taking it: the sign of the uptake is at most the count of takers (Flow.sign_uptake_le_takers). Across a step at which a family runs down, something is taken from it exactly when its total falls (Flow.RunsDownOn.taken_iff). At a condition balanced across a step, nothing is taken beyond what stood before with what was given (Flow.BalancesOn.taken_le). For a family running down closed across the step, the laws as stated in Locality (balance at each member, the fall by the takers, some standing changing and something exchanging exactly when the total falls) with the law that something taken has a taker are the whole law (OneStep.runsDownClosed_iff_stated); without it they allow a condition taken from and given to alike, passed through with nothing taking from it, which no world shows (OneStep.stated_not_realized). At one balanced condition, its level before, what is taken and given, and whether it comes or ceases to stand are shown together exactly where nothing is taken beyond what stood with what was given and coming and ceasing are as Flow.BalancesOn.comesToStand_iff and Flow.BalancesOn.ceasesToStand_iff fix them (OneStep.standing_iff); the readings alone allow more taken than there was (OneStep.standing_bound_needed). No premise."
@@ -211,6 +215,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“所陈述的一步之律所遗漏的：有所取就有取用者；所取不超过所立加所给”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “What the stated laws of one step miss: something taken has a taker, and nothing is taken beyond what stood with what was given”"
     }
   ]
 }

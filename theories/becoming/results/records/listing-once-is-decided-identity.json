@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "listing-once-is-decided-identity",
   "title": {
-    "zh": "列出一次就是已定的同一：一个列表恰在其成员之间同一已定时能列出一次，按成员的和与计数于是唯一；否证之律不需要它，求和与计数之律只把它作为局部条件",
-    "en": "Listing once is decided identity: a list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition"
+    "zh": "列出一次就是已定的同一",
+    "en": "Listing once is decided identity"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "一个列表恰在其成员之间同一已定时能列出一次，按成员的和与计数于是唯一；否证之律不需要它，求和与计数之律只把它作为局部条件。",
+    "en": "A list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition."
+  },
   "claim": {
     "zh": "一个列表的成员之间同一已定（IdentityDecided l），指其中任何两个成员相同或不同已定。s 把 l 列出一次（ListsOnce s l），指 s 不重复（Distinct）且与 l 成员相同。不重复的列表决定其成员之间的同一（Distinct.identityDecided）；成员之间同一已定时，有一个与之成员相同的不重复列表（listsOnce_of_decided，构造性地由 listOnce 给出）；所以列表恰在成员之间同一已定时能列出一次（listsOnce_iff_decided），而它能列出一次从不能被否证（not_not_listsOnce）。成员相同的不重复列表有同样的每个量的总和与同样的长度（total_eq_of_same、ListsOnce.total_eq、ListsOnce.length_eq）；列表所含关系项的数目（Numbers）唯一（Numbers.unique），恰在成员之间同一已定时存在（numbers_iff_decided）；重复只会增加（Numbers.le_length、ListsOnce.total_le）。处处列出一次时否证某事的律，对该列表不加前提地否证它（not_of_listsOnce）；所以结论是否证的律对任何列出方式的家族成立（Flow.Dissipative.opens_listing、Flow.Dissipative.finite_taking_not_recurring_listing、Flow.taking_draws_in_listing、Web.generation_not_recurring_listing、Flow.taking_not_recurring_listing），在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）。用到这一承诺之处它是局部的：一步被封闭（或围绕一个家族被封闭）恰在有一个跨此步封闭、成员之间同一已定的家族时（Flow.enclosed_iff、Flow.around_iff）；世界有限恰在可枚举且关系项之间同一已定时（World.finite_iff）；耗散就是每个封闭家族按成员读一次时的耗散（Flow.dissipative_iff）；每个普查决定其所列者之间的同一（Listed.identityDecided），任何带同一判定的列出给出普查（Listed.of_listing）。重复并非无害：在 Doubled 中流平衡并耗散，把来到静止的条件列两次的家族是封闭的而没有在其上耗散，其存量不降，列一次则降（Doubled.needs_once）。不加前提。",
     "en": "Identity among a list's members is decided (IdentityDecided l) where for any two members it is decided whether they are the same. s lists l once (ListsOnce s l) where s is without repetition (Distinct) and has the members of l. A list without repetition decides identity among its members (Distinct.identityDecided); where identity among a list's members is decided, some list without repetition has exactly its members (listsOnce_of_decided, constructively by listOnce); so a list can be listed once exactly where identity among its members is decided (listsOnce_iff_decided), and that it can be is never refuted (not_not_listsOnce). Lists without repetition with the same members have the same total of every quantity and the same length (total_eq_of_same, ListsOnce.total_eq, ListsOnce.length_eq); the number of relata a list holds (Numbers) is one number (Numbers.unique) and exists exactly where identity among its members is decided (numbers_iff_decided); repetition only adds (Numbers.le_length, ListsOnce.total_le). A law refuting something wherever a list is listed once refutes it of the list with no premise (not_of_listsOnce); so the laws whose conclusion is a refutation hold of every family however listed (Flow.Dissipative.opens_listing, Flow.Dissipative.finite_taking_not_recurring_listing, Flow.taking_draws_in_listing, Web.generation_not_recurring_listing, Flow.taking_not_recurring_listing), and under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (World.Enumerated, World.Enumerated.not_recurring). Where the commitment is used it is local: a step is enclosed, or enclosed around a family, exactly where some family closed across it has decided identity among its members (Flow.enclosed_iff, Flow.around_iff); a world is finite exactly where it is enumerated and identity among its relata is decided (World.finite_iff); dissipation is dissipation on every closed family read once per member (Flow.dissipative_iff); every census decides identity among what it lists (Listed.identityDecided), and any listing with identity decided gives a census (Listed.of_listing). Repetition is not harmless: in Doubled the flow balances and dissipates, the family listing twice the condition that comes to stand is closed and not dissipated on, and its stock does not fall, while listed once it falls (Doubled.needs_once). No premise."
@@ -382,6 +386,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“列出一次就是已定的同一：一个列表恰在其成员之间同一已定时能列出一次，按成员的和与计数于是唯一；否证之律不需要它，求和与计数之律只把它作为局部条件”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Listing once is decided identity: a list can be listed once exactly where identity among its members is decided, and sums and counts once per member are then one number; laws refuting something need nothing, and laws that sum or count need it only as a local condition”"
     }
   ]
 }

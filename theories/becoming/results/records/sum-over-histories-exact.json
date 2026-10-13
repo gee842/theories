@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "sum-over-histories-exact",
   "title": {
-    "zh": "历史之和是精确的：任何赋权下 n 步历程的加权和等于一步一步的转移；可能性就是核心的关系，计数无损地细化它；经描述的积分恰在一步可归并处精确",
-    "en": "The sum over histories is exact: for every weighting, the weighted sum over courses of n steps is n steps of the transfer; possibility is the core's relation, counting refines it without loss, and integrating out is exact exactly where it is lumpable at one step"
+    "zh": "精确的历史之和",
+    "en": "The exact sum over histories"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "任何赋权下 n 步历程的加权和等于一步一步的转移；可能性就是核心的关系，计数无损地细化它；经描述的积分恰在一步可归并处精确。",
+    "en": "For every weighting, the weighted sum over courses of n steps is n steps of the transfer; possibility is the core's relation, counting refines it without loss, and integrating out is exact exactly where it is lumpable at one step."
+  },
   "claim": {
     "zh": "权重（Weights R）由零、一、备选的相加与相继之步的复合组成，结合律、单位、零的吸收与复合对相加的分配律是结构的字段。列出动作与配置（列表 moves 与 all）之后，n 步的历程（courses）是 n 个开放之步的序列；沿一个历程的权重（Weights.along）复合它各步的权重与终点处所读；转移（Weights.transfer）一次走一步。对每个赋权，n 步历程上沿各历程权重之和等于 n 步转移（Weights.sum_courses）。保持权重规律的、从一种赋权到另一种的读法（Weights.Hom）可以逐历程取，也可以最后取（Weights.Hom.transfer）。可能性（possibility：备选相并，相继相交）就是核心的关系：一个布尔权重读出一个过程的步、每个动作与配置都已列出时，n 步之后的可能性转移恰在有一条 n 个动作的迹通向终点读法成立之处时成立（possibility_transfer_iff）。计数是否为零（nonzero）是计数（counting）在可能性中保持规律的读法（support），所以历程的计数恰在有历程时不为零（counting_transfer_iff）。对每个值都有代表的描述 π，经 π 在任意步数之后所读恰在一步之后只依赖描述时只依赖描述（Weights.lumped_iff）；不然，描述不承载加权的规律（Lumping.loses）。除权重自身的规律与各定理所列的列表外不加前提。",
     "en": "Weights (Weights R) consist of a zero, a one, an addition of alternatives and a composition of successive steps, with associativity, units, absorption by zero and the distribution of composition over addition as fields of the structure. With the moves and configurations listed (lists moves and all), the courses of n steps (courses) are the sequences of n open steps; the weight along a course (Weights.along) composes the weights of its steps with what is read at its end; the transfer (Weights.transfer) takes one step at a time. For every weighting, the sum over the courses of n steps of the weight along each is n steps of the transfer (Weights.sum_courses). A reading of one weighting in another that keeps its laws (Weights.Hom) can be taken course by course or at the end (Weights.Hom.transfer). Possibility (possibility: alternatives join, successive steps meet) is the core's relation: where a Boolean weight reads a process's steps and every move and configuration is listed, the possibility transfer after n steps holds exactly where a trace of n moves leads to a configuration where the end reading holds (possibility_transfer_iff). Whether a count is zero (nonzero) is a reading of counting (counting) in possibility that keeps the laws (support), so the count of courses is not zero exactly where a course exists (counting_transfer_iff). For a description π with a representative of each of its values, what is read through π after every number of steps depends on the description alone exactly where it does after one step (Weights.lumped_iff); where it does not, the description carries no weighted law (Lumping.loses). No premise beyond the weights' own laws and the listings each theorem names."
@@ -296,6 +300,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“历史之和是精确的：任何赋权下 n 步历程的加权和等于一步一步的转移；可能性就是核心的关系，计数无损地细化它；经描述的积分恰在一步可归并处精确”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “The sum over histories is exact: for every weighting, the weighted sum over courses of n steps is n steps of the transfer; possibility is the core's relation, counting refines it without loss, and integrating out is exact exactly where it is lumpable at one step”"
     }
   ]
 }

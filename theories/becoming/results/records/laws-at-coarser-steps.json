@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "laws-at-coarser-steps",
   "title": {
-    "zh": "较粗的步上的一步规律：一个家族上的平衡（每个关系项只列出一次时）、耗散与下降（只在粗步两端包含所立者）跨过粗步内的各细步合成，封闭恰好合成；所以一次交换的规律与开始、不再立着的确切条件在粗步上成立；反方向不合成，只有活跃者给予与取用依步而定",
-    "en": "The laws of one step at coarser steps: balance on a family (with each relatum listed once), dissipation and running down (holding what stands only at the coarse ends) compose across the fine steps inside a coarse step, and closure composes exactly; so the law of one exchange and the exact conditions of coming and ceasing to stand hold at the coarse step; the converse does not compose, and only active relata giving and taking are step-relative"
+    "zh": "较粗的步上的一步规律",
+    "en": "Laws of one step at coarser steps"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "一个家族上的平衡（每个关系项只列出一次时）、耗散与下降（只在粗步两端包含所立者）跨过粗步内的各细步合成，封闭恰好合成；所以一次交换的规律与开始、不再立着的确切条件在粗步上成立。反方向不合成；只有活跃者给予与取用依步而定。",
+    "en": "Balance (each relatum listed once), dissipation and running down (what stands held at both ends) compose over a coarse step, closure exactly, so one exchange's law and the exact conditions of coming and ceasing to stand hold there. Not conversely; only active giving and taking are step-relative."
+  },
   "claim": {
     "zh": "把一个世界在严格递增的时刻 σ 读出，每个粗步是从 σ s 到 σ (s + 1) 之前的一段细步（Strict、span）。各条件都在一个粗步上陈述，假设只在该粗步内的细步上。合成的：家族上的平衡在粗步内各细步每个关系项只列出一次时合成（Flow.BalancesOn.sample，经 balance_over_stretch_on、Flow.sample_taken_on、Flow.sample_given_on）；家族上的耗散无条件合成（Flow.DissipatesOn.sample）；家族跨过粗步封闭恰当它跨过其内每个细步封闭（Flow.sample_closedAt_iff）；下降在家族只在粗步两端包含所立者时合成（Flow.RunsDownOn.sample），每个细步都下降时粗步下降（Flow.RunsDownOn.sample_of_fine）。所以粗步上：有水平改变恰当家族末端的总水平低于始端（Flow.sample_changes_iff）；细步上平衡时，一个条件跨过粗步开始立着恰当此前立在零且细步给它的多于取走的，不再立着恰当此前立着且细步取走它所有的连同所给的（Flow.sample_comesToStand_iff、Flow.sample_ceasesToStand_iff）。网在时刻 σ 读出（Web.sample），活动需要支持、体现与普查在被读出的细步上陈述（Web.sample_dependent、sample_embodied、sample_census、sample_standingCensus）；活动判定时，跨过粗步的生起或不再活跃是跨过其内某细步的生起或不再活跃（Web.sample_arises、Web.sample_ceases）。全局读法是推论（Flow.sample_balances、Flow.sample_dissipative、World.sample_survives、World.sample_rests_unrefuted，后者不用判定程序）。",
     "en": "Read a world at strictly increasing times σ, each coarse step being the fine steps from σ s to just before σ (s + 1) (Strict, span). Each condition is stated at one coarse step, with hypotheses on the fine steps inside it only. What composes: balance on a family composes where each relatum is listed once at the fine steps inside (Flow.BalancesOn.sample, through balance_over_stretch_on, Flow.sample_taken_on, Flow.sample_given_on); dissipation on a family composes unconditionally (Flow.DissipatesOn.sample); a family is closed across the coarse step exactly when it is closed across each fine step inside (Flow.sample_closedAt_iff); running down composes where the family holds what stands at the two coarse ends only (Flow.RunsDownOn.sample), and running down at every fine step gives it at the coarse step (Flow.RunsDownOn.sample_of_fine). So at the coarse step some standing changes exactly when the family's total at the end is below its total at the start (Flow.sample_changes_iff); with balance at the fine steps a condition comes to stand across the coarse step exactly when it stood at nothing and the fine steps gave it more than they took, and ceases to stand exactly when it stood and they took all it had with all they gave (Flow.sample_comesToStand_iff, Flow.sample_ceasesToStand_iff). The web read at the times σ (Web.sample) states activity needing support, embodiment and a census of the sampled fine step (Web.sample_dependent, sample_embodied, sample_census, sample_standingCensus); with activity decided, arising or ceasing across a coarse step is arising or ceasing across a fine step inside it (Web.sample_arises, Web.sample_ceases). The global readings are corollaries (Flow.sample_balances, Flow.sample_dissipative, World.sample_survives, and World.sample_rests_unrefuted, with no decision procedure)."
@@ -472,6 +476,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述，并压缩到陈述的长度上限（主张保留每一部分）。主张、证明与证据不变。原标题：“较粗的步上的一步规律：一个家族上的平衡（每个关系项只列出一次时）、耗散与下降（只在粗步两端包含所立者）跨过粗步内的各细步合成，封闭恰好合成；所以一次交换的规律与开始、不再立着的确切条件在粗步上成立；反方向不合成，只有活跃者给予与取用依步而定”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement, condensed to the statement's length limit (the claim keeps every part). Claim, proof and evidence unchanged. Former title: “The laws of one step at coarser steps: balance on a family (with each relatum listed once), dissipation and running down (holding what stands only at the coarse ends) compose across the fine steps inside a coarse step, and closure composes exactly; so the law of one exchange and the exact conditions of coming and ceasing to stand hold at the coarse step; the converse does not compose, and only active relata giving and taking are step-relative”"
     }
   ]
 }

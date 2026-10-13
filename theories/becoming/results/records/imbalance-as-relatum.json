@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "imbalance-as-relatum",
   "title": {
-    "zh": "不平衡作为关系项：算入不平衡，每个流都平衡；平衡恰是新增关系项闲置，两种表示逐步等价",
-    "en": "Imbalance as a relatum: with the imbalance counted, every flow balances; balance is exactly the added relatum idle, and the two representations are equivalent step by step"
+    "zh": "不平衡作为关系项",
+    "en": "Imbalance as a relatum"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "算入不平衡，每个流都平衡；平衡恰是新增关系项闲置，两种表示逐步等价。",
+    "en": "With the imbalance counted, every flow balances; balance is exactly the added relatum idle, and the two representations are equivalent step by step."
+  },
   "claim": {
     "zh": "一步上，一个条件的水平按流所给、所取改变，恰当流在那里平衡。不平衡之处，把差额算作又一个关系项 none 的交换：它给每个条件其水平超出流的净交换而升的部分，取其超出而降的部分（Flow.withImbalance，Flow.withImbalance_given、Flow.withImbalance_taken）；依存网照 rest-with-refinement-counted 的细分读入它：从不活跃，不要求任何东西（Web.withRefinement）。于是扩展的流在每一步、每个条件上平衡（Flow.withImbalance_balances），在每个家族上亦然（Flow.withImbalance_balancesOn）。流在一个家族上跨一步平衡，恰当新增的关系项在那里对其成员不给不取（Flow.balancesOn_iff_idle），处处平衡恰当它处处闲置（Flow.balances_iff_idle）。两种表示逐步等价：在一步一个条件上，扩展的流中只有活跃者给予，恰当原流中只有活跃者给予且水平不超出净交换而升（Flow.withImbalance_acting_at_iff）；只有活跃者取、只取其所汲取的，恰当原流如此且水平不超出净交换而降（Flow.withImbalance_taking_at_iff）；所以在一个家族上跨一步，二者在扩展的流上成立，恰当二者在原流上成立且流在那里平衡（Flow.withImbalance_acting_taking_on_iff）；全步全条件的形式是推论（Flow.withImbalance_acting_iff、Flow.withImbalance_taking_iff、Flow.withImbalance_acting_taking_iff）。自然数的截断减法不丢失信息：给与取各取一边的差额，一边为零（sub_eq_zero_of_le、le_of_sub_eq_zero）。不用伦理前提，也不用 Lean 公理。",
     "en": "Across a step, a condition's level changes by what the flow gives and takes exactly where the flow balances there. Wherever it does not, the difference is counted as the exchange of one more relatum, none: it gives each condition what its level rose beyond the flow's net exchange, and takes what its level fell beyond it (Flow.withImbalance, Flow.withImbalance_given, Flow.withImbalance_taken); the web reads it as the refinement of rest-with-refinement-counted is read, never active and requiring nothing (Web.withRefinement). Then the extended flow balances at every step and condition (Flow.withImbalance_balances), and on every family (Flow.withImbalance_balancesOn). The flow balances on a family across a step exactly where the added relatum neither gives nor takes on its members there (Flow.balancesOn_iff_idle), and everywhere exactly where it is idle everywhere (Flow.balances_iff_idle). The two representations are equivalent step by step: at a step and condition, in the extended flow only active relata give exactly where only active relata give in the flow and the level does not rise beyond the flow's net exchange (Flow.withImbalance_acting_at_iff), and only active relata take, and only what they draw on, exactly where they do so in the flow and the level does not fall beyond it (Flow.withImbalance_taking_at_iff); so on a family across a step both hold of the extended flow exactly where both hold of the flow and it balances there (Flow.withImbalance_acting_taking_on_iff), the forms over every step and condition being corollaries (Flow.withImbalance_acting_iff, Flow.withImbalance_taking_iff, Flow.withImbalance_acting_taking_iff). Truncated subtraction loses nothing: giving and taking each take one side of the difference, the other being zero (sub_eq_zero_of_le, le_of_sub_eq_zero). No ethical premise and no Lean axiom is used."
@@ -310,6 +314,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“不平衡作为关系项：算入不平衡，每个流都平衡；平衡恰是新增关系项闲置，两种表示逐步等价”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Imbalance as a relatum: with the imbalance counted, every flow balances; balance is exactly the added relatum idle, and the two representations are equivalent step by step”"
     }
   ]
 }

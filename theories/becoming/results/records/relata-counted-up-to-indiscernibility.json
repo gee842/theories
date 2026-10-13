@@ -2,13 +2,17 @@
   "schema_version": 1,
   "id": "relata-counted-up-to-indiscernibility",
   "title": {
-    "zh": "经关系计数的关系项：在每个世界的每个列表上，经不可分辨所计的关系项数恰在排中律下固定；按名字计数多给一份已定的同一；按出现读，每个流都把参与者列出一次而数量不变",
-    "en": "Relata counted through relations: the number of relata each list of each world holds, read up to indiscernibility, is fixed exactly under excluded middle; counting by name gives one decided identity more; read by occurrence, every flow lists what takes part once with its amounts unchanged"
+    "zh": "经关系计数的关系项",
+    "en": "Relata counted through relations"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "在每个世界的每个列表上，经不可分辨所计的关系项数恰在排中律下固定；按名字计数多给一份已定的同一；按出现读，每个流都把参与者列出一次而数量不变。",
+    "en": "The number of relata each list of each world holds, read up to indiscernibility, is fixed exactly under excluded middle; counting by name gives one decided identity more; read by occurrence, every flow lists what takes part once with its amounts unchanged."
+  },
   "claim": {
     "zh": "一个类型上的每个列表都能列出一次，恰在该类型上同一已定时（listsOnce_all_iff）。一个世界的两个关系项不可分辨（World.Indiscernible），指在每一步活动、层级与参与上相同，并在对每个关系项的每个关系上（两个方向）相同；这是一种相似（World.indiscernible_equivalence）。在一种相似之下，列表所含关系项的数目（NumbersBy）唯一（NumbersBy.unique），恰在成员间相似已定时存在（numbersBy_iff_decided）；按名字计数就是在名字相同之下计数（numbers_iff_numbersBy_eq）。对每个世界问：两个关系项是否不可分辨已定，以及每个列表的关系项数固定，都恰在排中律下成立（World.indiscernible_decided_iff_em、World.numbers_indiscernible_iff_em；探针世界 World.probe 中两个关系项恰在 Q 成立时不可分辨，World.probe_indiscernible）。名字计数关系分不开的：Q 成立时，两者的列表按名字有两个成员，经关系只含一个关系项（World.probe_named_apart）。按出现读（Flow.byOccurrence、Web.byOccurrence），一步列表中的每个位置被当作自身的关系项，在每个关系上与该处的关系项相似（Flow.byOccurrence_alike）；每个流如此读时不需已定的同一就把参与者列出一次（Flow.byOccurrence_once），并保持其数量、取用者、封闭、耗散、平衡与活动前提（Flow.byOccurrence_dissipative、Flow.byOccurrence_balances 等），所以平衡对每个按出现读的流在粗步上组合（Flow.BalancesOn.sample_byOccurrence）。出现不跨步追踪：凡有关系项活跃之处，没有列表含有它的全部活跃出现（Flow.byOccurrence_uncounted）。不加前提。",
     "en": "Every list over a type can be listed once exactly where identity on the type is decided (listsOnce_all_iff). Two relata of a world are indiscernible (World.Indiscernible) where at every step they are alike in activity, level and taking part, and alike in every relation to every relatum, either way round; this is a likeness (World.indiscernible_equivalence). Up to a likeness the number of relata a list holds (NumbersBy) is one number (NumbersBy.unique) and exists exactly where likeness among its members is decided (numbersBy_iff_decided); counting by name is counting up to identity of names (numbers_iff_numbersBy_eq). Asked of every world, whether two relata are indiscernible is decided, and the number of relata each list holds is fixed, exactly under excluded middle (World.indiscernible_decided_iff_em, World.numbers_indiscernible_iff_em; in the probe world World.probe two relata are indiscernible exactly where Q holds, World.probe_indiscernible). Names count what relations do not tell apart: where Q holds, the list of both has two members by name and holds one relatum through relations (World.probe_named_apart). Read by occurrence (Flow.byOccurrence, Web.byOccurrence), each place in a step's list is taken as a relatum of its own, alike in every relation to the relatum there (Flow.byOccurrence_alike); every flow so read lists what takes part once with no decided identity (Flow.byOccurrence_once) and keeps its amounts, takers, closure, dissipation, balance and activity premises (Flow.byOccurrence_dissipative, Flow.byOccurrence_balances and others), so balance composes across a coarse step for every flow read by occurrence (Flow.BalancesOn.sample_byOccurrence). Occurrences are not followed across steps: wherever a relatum is active, no list holds all its active occurrences (Flow.byOccurrence_uncounted). No premise."
@@ -300,6 +304,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“经关系计数的关系项：在每个世界的每个列表上，经不可分辨所计的关系项数恰在排中律下固定；按名字计数多给一份已定的同一；按出现读，每个流都把参与者列出一次而数量不变”",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Relata counted through relations: the number of relata each list of each world holds, read up to indiscernibility, is fixed exactly under excluded middle; counting by name gives one decided identity more; read by occurrence, every flow lists what takes part once with its amounts unchanged”"
     }
   ]
 }
