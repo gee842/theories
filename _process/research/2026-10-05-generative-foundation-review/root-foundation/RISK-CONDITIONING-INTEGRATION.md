@@ -133,3 +133,45 @@ Lean 4.29.1冻结并编译7个模块：新增10项定理／19项声明审计，1
 下一实质连接应针对**具体目的改变时，什么真实生成内容使新目的值得支持，又怎样与同一历史中仍有效的特定承担相接**，直接复用实践判断与机会成果。更好的完成证书不能独自回答这个问题；多证明一个机制也不能代替它。若研究回到有损分担，则依第7节选定真实支持与阶段后作规范比较，不用本结果假装得到比例。两者是不同后续问题，不把完成全部未来积分、每步单调增长或无公理普遍证明增设为本轮的验收门槛。
 
 Completed: an explicit handoff composes finite realization with the existing open-form G0 result. Still supplied are meaningful generative content, actual scope and execution, and the status of continuing undertakings. Subsequent theoretical work should evaluate concrete changes of ends using the already completed practical principles, rather than rebuild this mechanism or treat a realization certificate as ethical permission.
+
+<a id="spine-bridge-completion"></a>
+
+## 9. P89：旧成果的正式脊柱连接与局部结项 / The checked spine connection and local closure
+
+2026-10-13。用户核对仓库进度后要求“请继续 推进完成”。先核读工作板，原已准备落地队列清空，再认领 P89；不接管其他独立研究目标。本节是既有研究的完成审计，不另造模型或新的成果身份。
+
+**Results：**复用 `open-form-realization-under-revision`、`one-axiom-yields-g0`、`becoming-spine-instances`，以及 `formed-goal-revision-continuation`、`acquired-revision-of-pending-task`、`pending-task-context-applicability` 的现有完成范围。**Delta：**补写并实际检查此前只有逐处审计说明的 OpenFutureRevision 脊柱适配，及其在实际 Run 上的形式；这四项包装／应用是旧成果的新证据，不是四个新规范原则。**Premises：**实际运行、指定完成事件的可判定性、初始有限界、未完成步的下降、同阶段交接不增加、完成与实际生的对应；`Unrestricted` 及意义到理由／许可的额外实践条件仍明示。**Boundary：**无新伦理权重、无现实可靠性或整个无公理伦理根据证明。**Integration：**旧生产端实际进入以共同意义定义取得 G0 的旧消费端；四项声明写在共享 `Becoming.Bridge`，纯净核心不导入外围。
+
+### 9.1 直接连接，而非并排陈述
+
+| 适配声明 | 生产端 → 消费端 | 保留范围 |
+|---|---|---|
+| `Run.novel_by_handoff` | `OpenFutureRevision.handed_off_progress` 与 `ContinuationRenewal.renewal_within_rank_bound` → 同一 Frame 的 `Novel` | Run 的每个步骤实际满足共同过程；完成到主张实现仍由 correspondence 给出 |
+| `Run.relevance_by_handoff_of_unrestricted` | 上一项实际新形成见证 → `g0_of_unrestricted` → 同一状态、同一内容上的 `Frame.relevance` | 不更换完成见证；可变形态、真正的新内容及意义条件保留 |
+| `positive_ground_by_bound_of_unrestricted` | `inventory_g0_of_unrestricted` → 原 `OpenFutureRevision.positive_ground_by_bound` | 原清单、当前范围、此前未形成条件完全接续 |
+| `revised_generation_by_bound_of_unrestricted` | 原 `generation_by_bound` → 上一项 | 完整传入全部初值、实际步、交接、完成对应；不靠元数据把两个证明叫作组合 |
+
+其中前两项给共同框架上的运行形式，后两项给原接口的精确实例。`Frame`、`Run`、`Novel`、`relevance`、`Unrestricted` 都是共同定义，没有复制其原语。事件 n对应到达状态 n+1，因此 n≤B仍只表示至多 B+1次所表示转变。框架允许什么与现实确实发生什么的对应，不能靠类型正确替代。
+
+肯定论证现在可以完整地在一个接口上陈述：修订后实际接续的活动形成某项生；这同一个形成在意义条件下给出正面根据；具体形态不必预先锁死。原先的无限切换反例仍然说明局部推进不足以保证组合推进。迁移没有把目的形成史、实际损失或承担重置为零；它也没有声称原模块所有有限实例都已逐个翻写到核心。
+
+**实际检查：**共享检查器于 `20261013T102207.009826Z` 通过，[冻结回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json)逐项绑定源文。新增四项声明全部为空公理报告；Bridge 共48项定理／66项源声明审计，75个包模块合计4522项定理／6374项源声明审计。77个纯净核心闭包模块及24个继承模块按检查器口径分列，5个Lean步骤实际运行、348个复用；纯净核心源文未改。历史成果的证明引用固定到各自已经保留、字节相同的冻结回执，不把本次汇总覆盖当作旧成果的新证明。
+
+The source-bound shared check passed; the four adapters have empty axiom reports. These reports certify the checked deductions under their explicit hypotheses, not the independent warrant of those hypotheses. Historical proof bindings retain their original byte-identical receipts.
+
+### 9.2 实质反审与来源范围
+
+1. **是否偷偷把公理证明掉了？** 没有。`Unrestricted` 是明确的定理假设；G0由它取得。空公理报告不删除函数参数里的实质条件。四项声明只完成适配，不重新证明那一条意义条件的规范根据。
+2. **是否只改了命名？** 不只命名：旧生产端输出直接送入旧消费端，且共同运行上的新形成与正面相关使用同一状态和同一见证。但这仍是旧结果的形式整合，不能单独算新理论发现。
+3. **目的修订是否因此任意正当？** 不是。已完成的目的修订案例依既有比较、基本条件分类、权限、资源及响应条件取得支持。它们保留先前损失，且明确不证明全部旧义务已经解除。应用复查仅保护给定作用，不证明原比较理由永远成立；任务留在队列里也不等于实际满足需求。
+4. **是否补出了风险交换的分量？** 没有。净汲取余量、包含与扩大给出可检查的关系；混合情形仍可互不包含。将任意分量写进一个评分再验证其运算，不能完成尚缺的规范论证。
+
+本次原始证据是实际读取的共同定义、原 OpenFutureRevision 源文、四项新增调用和源绑定检查回执。前轮 Lamport 原典阅读保持第8.4节的范围，不重复计作新证据。目的修订与在途应用按其正式记录和相连研究核读：它们完成有限条件实现，不证明任意目的的发现、全部承担解除、无限变化中的成功或生物联合验证。本次反审由作者完成，没有独立验收。
+
+### 9.3 完成判定
+
+**关闭：**这条旧研究线的开放形态有限实现、G0 正面根据接口、共同 Frame／Run 上的连接，以及“缺少一般目的修订相连实现”的旧待做项。后者已有给定实践中的成果可直接用，继续把它当作一般缺口会重复研究。
+
+**保留：**NP 的伦理强度与具体风险分担校准，任意混合得失的排序，真实新案例中仍发生的需求和承担，意义条件本身的规范根据，以及统一理论整体的更强完成目标。它们各按现有记录和工作板推进，不是让本适配永远不结项的条件，也未由本适配解决。
+
+P89 supplies four adapters for the existing result on the shared Frame, Run and relevance definitions. All operational hypotheses and the explicit significance condition remain. The finite realization and formal connection are complete; acquired-goal and pending-task work already supply the scoped implementation once listed as a generic next step. Mixed-loss ranking and the stronger normative foundation remain distinct. The original result identity, counterexamples and historical validation scopes are preserved.

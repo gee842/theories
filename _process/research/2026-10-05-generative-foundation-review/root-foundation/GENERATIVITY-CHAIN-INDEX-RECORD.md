@@ -977,3 +977,8 @@ M25/F30成对接入[原研究§10](MEDIATED-CONTROL-INTEGRATION.md#10-reserved-s
 ## 目录改名后的指纹沿用 / Fingerprints across the directory renames — 9 October 2026
 
 按 [Ren 的后续指示](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory)，理论目录改为 `theories/becoming/`，章节目录改为 `chapters/`。成对条目、发现路径与链接随路径更新，阅读内容不变。来源指纹只在两种情况下沿用：原指纹与旧字节相符且新字节恰为其路径替换，或该来源是一份只沿用了已审哈希的记录。待复读项与改名前相同：24 项改动来源、14 个新页、2 个移除页。/ Paired entries, discovery paths and links follow the moved paths; no reading changes. A fingerprint moved only where it matched the old bytes and the new bytes are exactly their path substitution, or where the source is a record that only carried reviewed hashes. Pending reviews are unchanged: 24 modified sources, 14 new pages and 2 removed. The [rename receipt](../../../architecture/rename-2026-10-09.json) lists every carried fingerprint; [its checker](../../../architecture/check_rename.py) re-derives each one from the base commit.
+
+
+## 开放形态成果的脊柱结项 / Open-form spine completion — 13 October 2026
+
+M20成对接入[既有研究§9](RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion)：四项实际检查的适配将旧有限形成与正面根据接入共同 Frame／Run 和意义定义，归原成果身份；已完成的通用目的修订待做项退出。运行、交接、生成对应和 Unrestricted 保持显式，NP 强度、混合得失与更强规范根据未由此解决。/ [Scoped checks](OPEN-FORM-BRIDGE-CHECKS.json) preserve all 93 other paired entries and unrelated rendered lines. Only five read/authored source fingerprints change; the standard renderer supplies the owned row and content date. Historical evidence remains, and unrelated source/discovery reviews—including three previously unversioned M20 links—remain pending. No full-table, new independent result or independent-agent acceptance is claimed.

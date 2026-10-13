@@ -11,6 +11,7 @@ import PracticalReach
 import StandardsBridge
 import CorrectionInfrastructure
 import ExplanatoryBranching
+import OpenFutureRevision
 
 /-!
 # Existing interfaces as instances of the spine
@@ -384,6 +385,95 @@ theorem every_situated_position_has_reason_of_unrestricted {Pos H Q R F : Type}
     Reason (inventory_g0_of_unrestricted inventory unrestricted formation step) articulate a formed
 
 end Discharge
+
+/-! ## Open-form revision on the shared frame (P89)
+
+These are adapters for the existing result, not another model or an independent
+ethical principle. The run supplies actual admissible steps. A completion event at
+index `n` concerns the step to configuration `n + 1`; a bound `B` therefore allows
+at most `B + 1` steps. The certificate is not a value measure. The significance
+premise remains explicit, and no permission to replace an undertaking is inferred.
+-/
+
+section OpenFormRevision
+
+/-- The inherited finite handoff argument supplies new realization on a run of the
+shared frame. Completion-to-realization correspondence stays a visible premise. -/
+theorem Run.novel_by_handoff {S A Q : Type} (M : Frame S A Q) (r : Run M.P)
+    (living : Q → Prop) (before : S → Q → Prop)
+    (rank : Nat → S → Nat) (completed : Nat → Prop) [DecidablePred completed]
+    (bound : Nat) (initial : rank 0 (r.state 0) ≤ bound)
+    (localStep : ∀ n, ¬ completed n → rank n (r.state (n + 1)) < rank n (r.state n))
+    (handoff : ∀ n, ¬ completed n →
+      rank (n + 1) (r.state (n + 1)) ≤ rank n (r.state (n + 1)))
+    (correspondence : ∀ n, completed n → Novel M living before (r.state (n + 1))) :
+    ∃ n, n ≤ bound ∧ Novel M living before (r.state (n + 1)) := by
+  have decrease := OpenFutureRevision.handed_off_progress r.state rank completed localStep handoff
+  obtain ⟨n, _, within, finished⟩ := ContinuationRenewal.renewal_within_rank_bound
+    (fun n => rank n (r.state n)) completed decrease bound 0 initial
+  exact ⟨n, by simpa using within, correspondence n finished⟩
+
+/-- The same realized witness has the core's positive relevance under the named
+significance condition. Its form is not fixed in advance or across runs. -/
+theorem Run.relevance_by_handoff_of_unrestricted {S A Q F Pos : Type}
+    (M : Frame S A Q) (r : Run M.P) (living : Q → Prop) (before : S → Q → Prop)
+    (rank : Nat → S → Nat) (completed : Nat → Prop) [DecidablePred completed]
+    (bound : Nat) (initial : rank 0 (r.state 0) ≤ bound)
+    (localStep : ∀ n, ¬ completed n → rank n (r.state (n + 1)) < rank n (r.state n))
+    (handoff : ∀ n, ¬ completed n →
+      rank (n + 1) (r.state (n + 1)) ≤ rank n (r.state (n + 1)))
+    (correspondence : ∀ n, completed n → Novel M living before (r.state (n + 1)))
+    {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
+    (formation : Q → F) (step : Q → Nat) :
+    ∃ n, n ≤ bound ∧ ∃ q,
+      M.relevance living sig formation step (r.state (n + 1)) q ∧
+      ¬ before (r.state (n + 1)) q := by
+  obtain ⟨n, within, q, alive, real, fresh⟩ :=
+    r.novel_by_handoff M living before rank completed bound initial localStep handoff correspondence
+  exact ⟨n, within, q,
+    g0_of_unrestricted M living unrestricted formation step _ q alive real, fresh⟩
+
+/-- The previously audited but unwritten instance of
+`OpenFutureRevision.positive_ground_by_bound`, now checked in the bridge. -/
+theorem positive_ground_by_bound_of_unrestricted {H Q F Pos : Type}
+    (admitted : H → Prop) (appears : H → Nat → Q → Prop) (generative : Q → Prop)
+    (before : H → Q → Prop) (bound : Nat) {sig : Pos → Nat → F → Prop}
+    (unrestricted : Unrestricted sig) (formation : Q → F) (step : Q → Nat)
+    (formed : ∀ h, admitted h → ∃ q,
+      (OpenFutureRevision.boundedInventory appears generative bound).generative q ∧
+      (OpenFutureRevision.boundedInventory appears generative bound).realized h q ∧
+      ¬ before h q) :
+    ∀ h, admitted h → ∃ q,
+      (generative q ∧ (∃ n, n ≤ bound ∧ appears h n q) ∧
+        ∀ p, sig p (step q) (formation q)) ∧ ¬ before h q :=
+  OpenFutureRevision.positive_ground_by_bound admitted appears generative before bound _
+    (inventory_g0_of_unrestricted (OpenFutureRevision.boundedInventory appears generative bound)
+      unrestricted formation step) formed
+
+/-- Complete producer-to-consumer instance, with every operational hypothesis of
+the inherited generation theorem retained and G0 obtained from significance. -/
+theorem revised_generation_by_bound_of_unrestricted {H S Q F Pos : Type}
+    (admitted : H → Prop) (states : H → Nat → S) (rank : H → Nat → S → Nat)
+    (completed : H → Nat → Prop) (decideEvent : ∀ h, DecidablePred (completed h))
+    (appears : H → Nat → Q → Prop) (generative : Q → Prop) (before : H → Q → Prop)
+    (bound : Nat) (initial : ∀ h, admitted h → rank h 0 (states h 0) ≤ bound)
+    (localStep : ∀ h, admitted h → ∀ n, ¬ completed h n →
+      rank h n (states h (n + 1)) < rank h n (states h n))
+    (handoff : ∀ h, admitted h → ∀ n, ¬ completed h n →
+      rank h (n + 1) (states h (n + 1)) ≤ rank h n (states h (n + 1)))
+    (correspondence : ∀ h, admitted h → ∀ n, completed h n →
+      ∃ q, generative q ∧ appears h n q ∧ ¬ before h q)
+    {sig : Pos → Nat → F → Prop} (unrestricted : Unrestricted sig)
+    (formation : Q → F) (step : Q → Nat) :
+    ∀ h, admitted h → ∃ q,
+      (generative q ∧ (∃ n, n ≤ bound ∧ appears h n q) ∧
+        ∀ p, sig p (step q) (formation q)) ∧ ¬ before h q :=
+  positive_ground_by_bound_of_unrestricted admitted appears generative before bound
+    unrestricted formation step
+    (OpenFutureRevision.generation_by_bound admitted states rank completed decideEvent
+      appears generative before bound initial localStep handoff correspondence)
+
+end OpenFormRevision
 
 /-! ## Situations of a frame and the lifting rule -/
 

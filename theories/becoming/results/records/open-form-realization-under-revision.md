@@ -6,25 +6,25 @@
 
 记录源 / Editable record: [open-form-realization-under-revision.json](open-form-realization-under-revision.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:28:41.503543+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-13T10:34:51.255963+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-同一实际历史中，当前规则的未完成步骤若降低其剩余证书，修订后的规则又接过该实际阶段而不增加证书，则已有有限更新定理保证界限内的一次完成。完成与实际新生成的显式对应精确接入已有 G0 正面根据定理；最终形态可以改变。各规则单独持续都完成及各步局部推进，并不足以保证反复修订后的实际完成。 / Along one actual history, unfinished current-rule steps that lower a remaining certificate, together with a non-increasing handoff at the actual reached stage, feed the existing finite-renewal theorem and ensure completion within its bound. Explicit correspondence to actual new generation supplies the premise of the existing G0 positive-ground theorem; the realized form may change. Individually finishing rules and local progress at every step do not alone guarantee realization under repeated revision.
+同一实际历史中，当前规则的未完成步骤若降低其剩余证书，修订后的规则又接过该实际阶段而不增加证书，则已有有限更新定理保证界限内的一次完成。完成与实际新生成的显式对应精确接入已有 G0 正面根据定理；最终形态可以改变。各规则单独持续都完成及各步局部推进，并不足以保证反复修订后的实际完成。 P89 已在共同 Frame／Run 上陈述，并以实际 Lean 调用把原 G0 条件实例化为统一理论从意义取得的正面相关；原有限实现与失败范围不变。 / Along one actual history, unfinished current-rule steps that lower a remaining certificate, together with a non-increasing handoff at the actual reached stage, feed the existing finite-renewal theorem and ensure completion within its bound. Explicit correspondence to actual new generation supplies the premise of the existing G0 positive-ground theorem; the realized form may change. Individually finishing rules and local progress at every step do not alone guarantee realization under repeated revision. P89 states the result on the shared Frame/Run and checks the exact instance of the inherited G0 condition using relevance read from significance; the finite-realization and failure scopes are unchanged.
 
 Canonical source: [OpenFutureRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)
 
 ## 前提与对应 Hypotheses and correspondence
 
 - 实际索引历史、步骤、自然数证书、可判定完成事件及初值上界明示供应；未完成时的局部下降与同一阶段的交接不增加分别给出。 / Actual indexed histories, steps, natural-number certificates, decidable completion events and an initial bound are supplied; unfinished local descent and non-increasing handoff at the same reached stage are separate hypotheses.
-- 完成事件对应同一历史中新形成的真实生成内容；不同历史允许不同内容。G0 是独立明示的正面规范前提，不由进展证书推导。 / Completion corresponds to actual newly formed generative content in the same history; different histories may realize different content. G0 is a separately explicit normative premise, not derived from the progress certificate.
+- 完成事件对应同一历史中新形成的真实生成内容；不同历史允许不同内容。历史一般形式以 G0 为显式条件；P89 的统一实例从 Unrestricted 取得 G0，意义条件不由进展证书推导。 / Completion corresponds to actual newly formed generative content in the same history, with different content allowed across histories. The historical generic form takes explicit G0; P89 derives its instance from Unrestricted, whose significance condition is not derived from progress.
 - 从所见范围传递到实际需要实际覆盖及执行、支持对应。许可、真实损失与仍有效的特定承担沿已有实践原则另作判断。 / Transport from admitted scope to actuality requires actual coverage and execution/support correspondence. Permission, real losses and still-valid specific undertakings require judgment under existing practical principles.
 
 阶段、组织路线和修订均是共同活动内的分化，不预设外在操控者或私有价值所有者。证书只证明指定的有限实现界限；若事件编号 n 表示第 n 到 n+1 次转变，0..B的事件范围为至多 B+1次转变。名字为 formed 的终止状态本身不认证现实中的善或履约。 / Stages, organizational rules and revisions differentiate within shared activity, without a primitive external controller or private value owners. Certificates support a specified finite realization bound; if event n denotes transition n to n+1, events 0..B comprise at most B+1 transitions. Terminal states named formed do not themselves certify actual goodness or fulfillment.
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 propext；98项继承定理／185项审计分别重编。1个完整生产端到消费端控制应用不另计定理。作者七项反审与 Lamport 原典限定阅读；无独立验收或新经验实验。 / Lean 4.29.1 checked 10 new theorems/19 declaration audits: 14 empty and 5 propext only; 98 inherited theorems/185 audits separately rebuilt. One complete producer-consumer control application is not an additional theorem. Seven author counterreviews and scoped primary-source reading of Lamport; no independent acceptance or new empirical experiment.
+Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 propext；98项继承定理／185项审计分别重编。1个完整生产端到消费端控制应用不另计定理。作者七项反审与 Lamport 原典限定阅读；无独立验收或新经验实验。 P89（2026-10-13）：共享检查器核查四项适配、全部空公理依赖；Bridge 共48项定理／66项源声明审计，75个包模块共4522项定理／6374项审计，另列24个继承模块；77个纯净核心模块的字节及空公理范围保持，实际运行5个Lean步骤、复用348个。无新独立成果或独立验收。 / Lean 4.29.1 checked 10 new theorems/19 declaration audits: 14 empty and 5 propext only; 98 inherited theorems/185 audits separately rebuilt. One complete producer-consumer control application is not an additional theorem. Seven author counterreviews and scoped primary-source reading of Lamport; no independent acceptance or new empirical experiment. P89 (13 October 2026): the shared checker verifies four adapters, all axiom-free. Bridge has 48 theorems/66 source declaration audits; 75 package modules have 4522 theorems/6374 audits, with 24 inherited modules separate. The 77 pure core modules retain their bytes and empty-axiom scope; 5 Lean steps ran and 348 were reused. No new independent result or independent acceptance.
 
 一项有条件组合及实质反例，非普遍生产期限、必要的正当探索形式、伦理标量、最终许可或义务。未新证实际认识开放通道、物理可靠性、唯一风险比例或所有智能必然遵循。 / A conditional composition with substantive counterexamples, not a universal productive deadline, necessary form of justified exploration, ethical scalar, final permission or duty. It does not newly prove executed epistemic openness, physical reliability, unique risk shares or inevitable compliance by all intelligence.
 
@@ -35,6 +35,7 @@ Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 
 ## 依赖与关联 Dependencies and related results
 
 - **formal-reuse**: [positive-ground-open-futures](positive-ground-open-futures.md). positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.
+- **formal-reuse**: [one-axiom-yields-g0](one-axiom-yields-g0.md). P89 调用 inventory_g0_of_unrestricted 与 g0_of_unrestricted，补齐旧正面根据的正式实例与共同运行上的形式。 / P89 calls inventory_g0_of_unrestricted and g0_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run.
 
 **Output / 输出:** 在 G0 下，逐历史实际新生成给出逐历史某项新的正面根据，不要求统一形态。 / Under G0, actual new generation in each history supplies some new positive ground per history without one fixed form.
 
@@ -42,8 +43,18 @@ Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 
 
 **Preserved conditions / 保留条件:** 同一 admitted、before、boundedInventory 和显式 G0；实际执行、当前下降、交接与生成对应未被取消。 / The same admitted scope, before relation, boundedInventory and explicit G0 are retained, as are actual execution, local descent, handoff and generative correspondence. [OpenFutureRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)
 
+
+**Output / 输出:** 从意义读出的正面相关在 Unrestricted 条件下满足 G0。 / Relevance read from significance satisfies G0 under Unrestricted.
+
+**Input / 输入:** 原 positive_ground_by_bound 所需的 G0，以及共同 Frame 中新实现取得 relevance 的条件。 / The G0 premise of the original positive_ground_by_bound and the premise giving relevance to novel realization in the shared Frame.
+
+**Preserved conditions / 保留条件:** 同一有界清单、同一新形成见证、原执行与交接条件；Unrestricted 保持显式。 / The same bounded inventory and novel witness, the inherited execution and handoff conditions, with Unrestricted explicit. [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
+
 - Related, not a proved adapter / 关联而非已证转换: [practical-judgment-g0-j](practical-judgment-g0-j.md). 解释关联：特定承担及损失仍须按既有原则评价；允许不同形成内容不授予任意替代权限。 / Interpretive connection: specific undertakings and losses remain governed by existing principles; different possible forms do not license arbitrary replacement.
 - Related, not a proved adapter / 关联而非已证转换: [alignment-direction-g0-j](alignment-direction-g0-j.md). 解释关联：本结果为规则自身修订补充一个实现接口，复用已完成的对齐方向，不重证方向或普遍遵循。 / Interpretive connection: supplies a realization interface for revisable rules while reusing the completed alignment direction, without reproving that direction or universal compliance.
+- Related, not a proved adapter / 关联而非已证转换: [formed-goal-revision-continuation](formed-goal-revision-continuation.md). 已给出有比较根据的目的改变及实际接续，不再列为一般缺口。 / Already supplies comparatively warranted end revision and actual continuation; not a generic missing connection.
+- Related, not a proved adapter / 关联而非已证转换: [acquired-revision-of-pending-task](acquired-revision-of-pending-task.md). 已有在途工作改写，原历史损失与支持成本保留。 / Existing pending-task rewriting retains historical loss and support costs.
+- Related, not a proved adapter / 关联而非已证转换: [pending-task-context-applicability](pending-task-context-applicability.md). 已有作用前复查；任务保留仍不等于需求满足，具体应用另审。 / Existing pre-action checking retains its scope; keeping a task is not satisfying the need, and concrete applications require review.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -58,15 +69,19 @@ Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 
 | integration | [RISK-CONDITIONING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md) | — |
 | statement | [CHOICE-AND-GENERATIVE-CONTEXT.md](../../chapters/CHOICE-AND-GENERATIVE-CONTEXT.md) | — |
 | provenance | [2026-10-08-positive-generative-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) | — |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.Run.novel_by_handoff`, `Becoming.Run.relevance_by_handoff_of_unrestricted`, `Becoming.positive_ground_by_bound_of_unrestricted`, `Becoming.revised_generation_by_bound_of_unrestricted` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-复用已完成的实现组合，研究具体目的改变的真实生成内容怎样取得支持，并与同一历史中仍有效的特定承担相接；直接使用已有实践判断。风险分担校准另保留其范围，不把更多进展构造或全未来积分作为正面根据的门槛。 / Reuse this completed realization composition to evaluate the actual generative content of concrete end changes and its relation to still-valid specific undertakings in the same history, using existing practical judgment. Risk-sharing calibration retains its separate scope; neither more progress constructions nor full-future integration is a gate for positive ground.
+本条的通用有限实现及正式脊柱连接已完成；直接复用既有目的修订、在途改写和复查成果。只有具名实际案例的新需求、有效承担与作用对应才另作应用研究。NP、混合得失排序及更强规范根据不被此结项宣布解决，归统一研究范围。 / The generic finite realization and formal spine connection are complete. Reuse acquired-goal revision, pending-task rewriting and applicability checks. Further application work must name a concrete need, undertaking or effect correspondence. NP, mixed-loss ordering and stronger normative warrant remain in the unified programme and are not settled by this closure.
 
-Aliases / 别名: `OpenFutureRevision.handed_off_progress`, `OpenFutureRevision.generation_by_bound`, `OpenFutureRevision.positive_ground_by_bound`, `OpenFutureRevision.each_fixed_rule_finishes`, `OpenFutureRevision.each_rule_local_progress`, `OpenFutureRevision.revising_run_stays_unfinished`, `OpenFutureRevision.revised_rules_can_fail_forever`, `OpenFutureRevision.revision_resets_remaining`, `OpenFutureRevision.changed_form_with_valid_handoff`, `OpenFutureRevision.realized_form_need_not_be_fixed`
+Aliases / 别名: `OpenFutureRevision.handed_off_progress`, `OpenFutureRevision.generation_by_bound`, `OpenFutureRevision.positive_ground_by_bound`, `OpenFutureRevision.each_fixed_rule_finishes`, `OpenFutureRevision.each_rule_local_progress`, `OpenFutureRevision.revising_run_stays_unfinished`, `OpenFutureRevision.revised_rules_can_fail_forever`, `OpenFutureRevision.revision_resets_remaining`, `OpenFutureRevision.changed_form_with_valid_handoff`, `OpenFutureRevision.realized_form_need_not_be_fixed`, `Becoming.Run.novel_by_handoff`, `Becoming.Run.relevance_by_handoff_of_unrestricted`, `Becoming.positive_ground_by_bound_of_unrestricted`, `Becoming.revised_generation_by_bound_of_unrestricted`
 
 ## 沿革 History
 
 - 2026-10-08：在已完成正面开放成果与有限更新证明之间新增正式组合；保留固定规则都终止而反复修订不终止的反例。包装推论与继承证明不重复记为独立成果。 / 2026-10-08: adds a checked composition between completed positive-openness and finite-renewal results, preserving a counterexample where fixed rules terminate but their perpetual revision does not. Wrappers and inherited proofs are not counted as independent results.
+- 2026-10-13 P89：四项共享桥接适配关闭此前仅有审计说明的连接；已完成的通用目的修订待做项撤出。沿用本成果身份，原定理、反例、历史回执及实际对应限制保留。 / 13 October 2026, P89: four shared adapters close the previously audit-only connection; completed generic goal-revision work is removed from next steps. The result identity, original theorems, counterexamples, historical receipts and correspondence limits remain.
+- 2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。 / 13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged.

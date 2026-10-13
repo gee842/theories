@@ -254,3 +254,17 @@ A sufficient interface hands the remaining realization certificate between rules
 [同一研究中的论证、反审与来源评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#open-form-realization-under-revision)及[规范成果记录](../results/records/open-form-realization-under-revision.md)保存这项组合的准确范围。新增10项 Lean 定理／19项声明审计通过，继承的98项定理／185项审计另列，不重复算作新理论成果。当前接通的是“开放形态下的逐次修订→有条件的实际生成→G0正面根据”；真实内容的识别、具体承担是否容许替换及有损分担校准各保留已有成果与尚未完成的范围。
 
 The theoretical gain is a checked connection from revisable realization to positive ground with open forms. It neither imposes universal productivity nor makes guaranteed success necessary for justified exploration. A warranted change may retract a failed certificate. Continuing ethical relations and real losses still govern whether the revised activity should be carried out.
+
+<a id="open-form-spine-completion"></a>
+
+## 20. 这条研究线在统一理论中的完成位置 / Completion within the unified theory
+
+2026-10-13，P89。第17–19节的成果现已正式接入 Becoming 脊柱。[Becoming.Bridge](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)不另建过程或评价模型：`Run.novel_by_handoff` 在同一 `Frame` 的实际 `Run` 上复用旧有限实现证明，`Run.relevance_by_handoff_of_unrestricted` 把其中同一个新形成见证送入 `Frame.relevance`。另两项适配声明直接调用原 `OpenFutureRevision` 的生产端与消费端，补齐以前只有审计说明的实例化。四项声明都是空公理依赖的已检查推论，不新增独立成果身份。
+
+G0 的位置按新总论更新：原定理仍可把 G0 当作显式条件使用；统一理论中，它由所声明的 `Unrestricted` 条件推出。空 Lean 公理报告检查的是这条推论，不是证明该意义条件无须根据。实际执行、有限实现证书、完成与生的对应、活的内容范围，以及意义到理由的实践条件都没有被迁移删除。
+
+上轮笼统列出的“研究目的改变怎样取得支持并接续行动”已有[取得根据的目的修订](../results/records/formed-goal-revision-continuation.md)、[在途工作改写](../results/records/acquired-revision-of-pending-task.md)及[作用前复查](../results/records/pending-task-context-applicability.md)可直接复用。它们在给定实践、比较与支持条件下完成相连实现，保留真实损失和失败。这条旧研究线的通用实现问题及正式桥接据此关闭；具体案例的新需求、承担替换与作用对应须具名研究，不再另开同一个通用目的修订模型。
+
+仍开放的是第11–16节的混合基本得失与风险分担力度。统一理论的[生成空间比较](THE-THEORY-OF-BECOMING.md#613-生成的空间不用公理p56-the-generative-space-with-no-axiom-p56)给出扩大与损失的准确范围，却不把互有得失排成唯一顺序。这不是本桥接欠缺，也不能靠迁移旧证明补出权重。[本次完成审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion)保留前提、反审与后续范围。
+
+P89 completes the existing result's formal connection to the shared Frame, Run and relevance definitions, with four checked adapters and no new result identity. G0 remains a condition of the historical theorem and is discharged by the explicit significance condition in the unified account. Existing acquired-goal, pending-task and applicability results close the generic implementation next-step at their stated scopes. Mixed-loss ordering, concrete unmet needs and the warrant of the significance condition remain separate questions; the bridge neither supplies weights nor removes practical premises.

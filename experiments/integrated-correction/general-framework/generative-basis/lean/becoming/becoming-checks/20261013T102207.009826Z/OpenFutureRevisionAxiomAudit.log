@@ -1,0 +1,19 @@
+'OpenFutureRevision.handed_off_progress' does not depend on any axioms
+'OpenFutureRevision.boundedInventory' does not depend on any axioms
+'OpenFutureRevision.generation_by_bound' does not depend on any axioms
+'OpenFutureRevision.positive_ground_by_bound' does not depend on any axioms
+'OpenFutureRevision.Stage' does not depend on any axioms
+'OpenFutureRevision.Rule' does not depend on any axioms
+'OpenFutureRevision.completed' does not depend on any axioms
+'OpenFutureRevision.advance' does not depend on any axioms
+'OpenFutureRevision.remaining' does not depend on any axioms
+'OpenFutureRevision.each_fixed_rule_finishes' depends on axioms: [propext]
+'OpenFutureRevision.each_rule_local_progress' depends on axioms: [propext]
+'OpenFutureRevision.restartChoice' does not depend on any axioms
+'OpenFutureRevision.revisingRun' does not depend on any axioms
+'OpenFutureRevision.revising_run_stays_unfinished' depends on axioms: [propext]
+'OpenFutureRevision.revised_rules_can_fail_forever' depends on axioms: [propext]
+'OpenFutureRevision.revision_resets_remaining' depends on axioms: [propext]
+'OpenFutureRevision.changed_form_with_valid_handoff' does not depend on any axioms
+'OpenFutureRevision.realizes' does not depend on any axioms
+'OpenFutureRevision.realized_form_need_not_be_fixed' does not depend on any axioms

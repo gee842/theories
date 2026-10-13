@@ -3174,6 +3174,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)
 
+## open-form-realization-under-revision ← one-axiom-yields-g0
+
+`formal-reuse` — P89 调用 inventory_g0_of_unrestricted 与 g0_of_unrestricted，补齐旧正面根据的正式实例与共同运行上的形式。 / P89 calls inventory_g0_of_unrestricted and g0_of_unrestricted to complete the exact old positive-ground instance and its form on a shared run.
+
+**Producer output / 上游输出:** 从意义读出的正面相关在 Unrestricted 条件下满足 G0。 / Relevance read from significance satisfies G0 under Unrestricted.
+
+**Consumer input / 下游输入:** 原 positive_ground_by_bound 所需的 G0，以及共同 Frame 中新实现取得 relevance 的条件。 / The G0 premise of the original positive_ground_by_bound and the premise giving relevance to novel realization in the shared Frame.
+
+**Retained conditions / 保留条件:** 同一有界清单、同一新形成见证、原执行与交接条件；Unrestricted 保持显式。 / The same bounded inventory and novel witness, the inherited execution and handoff conditions, with Unrestricted explicit.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean)
+
 ## order-of-exchanges-is-the-invariant ← exchanges-commute-unless-joined
 
 `formal-reuse` — 复用 Flow.swap、Web.commute、Reorders 与 Web.Split；以足迹为两侧。 / Reuses Flow.swap, Web.commute, Reorders and Web.Split, with the footprint as the sides.

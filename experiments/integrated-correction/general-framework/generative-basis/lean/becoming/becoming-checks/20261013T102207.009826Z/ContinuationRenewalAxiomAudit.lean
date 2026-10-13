@@ -1,0 +1,23 @@
+import ContinuationRenewal
+#print axioms ContinuationRenewal.no_unrenewed_tail_of_accessible
+#print axioms ContinuationRenewal.no_renewal_free_tail
+#print axioms ContinuationRenewal.renewal_after_of_accessible
+#print axioms ContinuationRenewal.renewal_arbitrarily_late
+#print axioms ContinuationRenewal.renewal_arbitrarily_late_of_decidable
+#print axioms ContinuationRenewal.renewal_within_rank_bound
+#print axioms ContinuationRenewal.renewal_within_rank_plus_one_steps
+#print axioms ContinuationRenewal.rank_renewal_arbitrarily_late
+#print axioms ContinuationRenewal.alternatingState
+#print axioms ContinuationRenewal.alternatingRank
+#print axioms ContinuationRenewal.alternatingRenewal
+#print axioms ContinuationRenewal.alternatingRenewalDecidable
+#print axioms ContinuationRenewal.alternatingStep
+#print axioms ContinuationRenewal.alternating_actual_steps
+#print axioms ContinuationRenewal.alternating_nonrenewal_decreases
+#print axioms ContinuationRenewal.alternating_renews_arbitrarily_late
+#print axioms ContinuationRenewal.alternating_period_two
+#print axioms ContinuationRenewal.alternating_one_restoring_form
+#print axioms ContinuationRenewal.alternating_restoration_raises_rank
+#print axioms ContinuationRenewal.alternating_has_actual_unrenewed_step
+#print axioms ContinuationRenewal.alternating_no_new_configurations
+#print axioms ContinuationRenewal.alternating_every_configuration_score_bounded
