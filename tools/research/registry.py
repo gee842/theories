@@ -53,6 +53,22 @@ def at_pointer(value, pointer):
     return value
 
 
+def declaration_in_source(text, name):
+    """Existence aid only; receipt bindings check the full elaborated name.
+
+    Lean instances may have a name and a priority before that name. Require the
+    actual identifier after the command, so an anonymous instance's result type
+    or binder cannot be mistaken for a named declaration.
+    """
+    command = (r'(?:theorem|lemma|def|abbrev|structure|inductive|'
+               r'instance(?:\s+\(priority\s*:=\s*[^)\n]+\))?)')
+    return re.search(
+        r'^[ \t]*(?:@\[[^\]\n]*\]\s*)*'
+        r'(?:(?:protected|private|noncomputable)\s+)*' + command +
+        r'\s+(?:[\w\'.]+\.)?' + re.escape(name.split('.')[-1]) +
+        r'(?=\s|\{|\(|\[|:)', text, re.M) is not None
+
+
 def validate(records):
     errors, drift = [], []
     ids, aliases = {}, {}
@@ -119,9 +135,7 @@ def validate(records):
             elif digest(p) != expected:
                 drift.append({'id': ident, 'path': path, 'reviewed_sha256': expected, 'current_sha256': digest(p)})
             for name in ref.get('declarations', []):
-                # Existence aid only: the linked source establishes namespace and meaning.
-                # A declaration may be written with a dotted prefix (`theorem Run.reach`).
-                if not re.search(r'^\s*(?:(?:protected|private)\s+)?(?:theorem|lemma|def|abbrev|structure|inductive)\s+(?:[\w.]+\.)?' + re.escape(name.split('.')[-1]) + r'(?=\s|\{|\(|:)', p.read_text(), re.M):
+                if not declaration_in_source(p.read_text(), name):
                     fail(f'declaration not found: {name} in {path}')
         if r.get('canonical_source') not in paths:
             fail('canonical source must be a hashed reference')

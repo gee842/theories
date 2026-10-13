@@ -20,3 +20,5 @@ The mutation steps use exact anchors and normally fail when rerun on a checkout 
 `RECORDS` maps stable IDs to `package` keys, source section headings, checked declaration names, exact `builds_on` declarations and provenance paths. `HISTORY` supplies the authored history. `DELTAS` lists scripts called with `W S`. Optional `LABEL` names the landing in receipt-repoint history. The record writer checks names and sections against the actual receipt; synthetic dry-run receipts are only for disposable documentation rehearsals and must never be landed as proof evidence.
 
 No new scientific claim is introduced by this kit. Source assertions, supplied hypotheses, review limits and remaining questions belong to the package drafts and canonical records.
+
+A package may supply `study_suffix_zh` and `study_suffix_en` to append source-bound integration notes to preserved study snippets before placeholders are filled. They default to empty strings. `study_heading` supplies a missing numbered Chinese study heading without altering the original package snippet.

@@ -7,6 +7,38 @@ from unittest.mock import patch
 from tools.research import registry
 
 
+class SourceDeclarationTests(unittest.TestCase):
+    def test_named_instance_with_namespace_attributes_and_priority(self):
+        sources = [
+            'namespace Becoming.Expansion\ninstance kind_decided : DecidableEq Kind := by decide\n',
+            'instance Expansion.kind_decided : DecidableEq Kind := by decide\n',
+            '@[reducible] private instance (priority := 100) kind_decided : DecidableEq Kind := by decide\n',
+            'instance (priority := low)\n  kind_decided [Inhabited Kind] : DecidableEq Kind := by decide\n',
+        ]
+        for source in sources:
+            with self.subTest(source=source):
+                self.assertTrue(registry.declaration_in_source(source, 'Becoming.Expansion.kind_decided'))
+
+    def test_anonymous_instance_type_and_binders_are_not_names(self):
+        sources = [
+            'instance : kind_decided := by infer_instance\n',
+            'instance (priority := 100) : kind_decided := by infer_instance\n',
+            'instance (kind_decided : Type) : Inhabited kind_decided := by infer_instance\n',
+            'instance [kind_decided : Inhabited Kind] : Nonempty Kind := by infer_instance\n',
+            'instance\n  : kind_decided := by infer_instance\n',
+            'instance kind_decided_other : DecidableEq Kind := by decide\n',
+        ]
+        for source in sources:
+            with self.subTest(source=source):
+                self.assertFalse(registry.declaration_in_source(source, 'Becoming.Expansion.kind_decided'))
+
+    def test_existing_dotted_and_primed_declarations_remain_exact(self):
+        self.assertTrue(registry.declaration_in_source('protected theorem Run.reach (h : True) : True := h',
+                                                      'Becoming.Run.reach'))
+        self.assertTrue(registry.declaration_in_source("def Example.value' : Nat := 0", "Example.value'"))
+        self.assertFalse(registry.declaration_in_source("def Example.value' : Nat := 0", 'Example.value'))
+
+
 class RegistryTests(unittest.TestCase):
     def setUp(self):
         self.records = [json.loads(p.read_text()) for p in sorted(registry.RECORDS.glob('*.json'))]

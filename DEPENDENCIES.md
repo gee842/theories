@@ -1746,6 +1746,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## exchanges-commute-unless-joined ← only-the-order-of-change-registers
+
+`formal-reuse` — 同一模块的算术与段上总量的引理。 / The same module's arithmetic and stretch-total lemmas.
+
+**Producer output / 上游输出:** 段上的总量与计数。 / Totals and counts over a stretch.
+
+**Consumer input / 下游输入:** 交换后的总量与计数。 / Totals and counts after commuting.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
+
 ## experiment-needs-return ← joint-difference-making
 
 `formal-reuse` — 复用 Determined：动作决定一步。这里问记录在何处固定动作所造成的；Joint 问一个部分是否造成差别。 / Reuses Determined: the move determines the step. Here the question is where the record fixes what a move does; Joint asks whether a part makes the difference.
@@ -2446,6 +2458,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
+## laws-of-one-step-complete ← laws-of-one-step
+
+`formal-reuse` — 复用 Locality 的 BalancesOn、RunsDownOn、ClosedAt 与所陈述的一步之律；这里证明它们（加两条）是全部。 / Reuses Locality's BalancesOn, RunsDownOn, ClosedAt and the stated laws of one step; here they are proved, with two more, to be all.
+
+**Producer output / 上游输出:** 一步之律。 / The laws of one step.
+
+**Consumer input / 下游输入:** 一步之律的完备性。 / The completeness of the laws of one step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean)
+
+## laws-of-one-step-complete ← whole-law-of-counting
+
+`interpretive` — 计数的全部规律（tally_iff_counted、counting_laws）的对应：同样以精确刻画与见证世界回答。 / The counterpart of the whole law of counting (tally_iff_counted, counting_laws): answered the same way, by an exact characterization and a witness world.
+
+**Producer output / 上游输出:** 计数完备的方法。 / The method of completeness for counting.
+
+**Consumer input / 下游输入:** 一步之律的完备。 / Completeness of the laws of one step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean)
+
 ## learned-procedure-transmission ← encounter-selection-and-revision
 
 `interpretive` — 复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。 / Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model.
@@ -2570,6 +2606,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## listing-once-is-decided-identity ← counts-exist-where-decided
+
+`formal-reuse` — 复用 P58 的 Decided 与普查：普查决定其所列者之间的同一，带同一判定的列出给出普查。 / Reuses P58's Decided and censuses: a census decides identity among what it lists, and a listing with identity decided gives a census.
+
+**Producer output / 上游输出:** 已定与普查。 / Decidedness and censuses.
+
+**Consumer input / 下游输入:** 列出一次的条件。 / The condition for listing once.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean)
+
+## listing-once-is-decided-identity ← laws-at-coarser-steps
+
+`formal-reuse` — 复用 Sampling 的 Once 与跨粗步的平衡：按出现读的流满足 Once，平衡于是在粗步上组合。 / Reuses Sampling's Once and balance across a coarse step: a flow read by occurrence satisfies Once, so balance composes across coarse steps.
+
+**Producer output / 上游输出:** 跨粗步的平衡，在每个参与者列出一次时。 / Balance across a coarse step, where each relatum taking part is listed once.
+
+**Consumer input / 下游输入:** 按出现读的流。 / Flows read by occurrence.
+
+**Retained conditions / 保留条件:** Sampling 的并仍需 DecidableEq F。 / Sampling's union still needs DecidableEq F.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean)
+
 ## living-on-and-descent ← condition-correspondence-discipline
 
 `formal-reuse` — 复用交互（Interacts、Bearing、interaction）与连通的转移；以之为生沿用“依存须能落空”的纪律。 / Reuses interaction (Interacts, Bearing, interaction) and the transfer of connection; living on keeps the discipline that the dependence must be able to fail.
@@ -2653,6 +2713,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 如 Clearing.undermines_within_renewal。 / As in Clearing.undermines_within_renewal.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean)
+
+## losses-of-the-sum-over-histories ← sum-over-histories-exact
+
+`formal-reuse` — 复用权重、转移与可能性；截断由求和的拆分得出。 / Reuses the weights, the transfer and possibility; truncation follows from the splitting of sums.
+
+**Producer output / 上游输出:** 权重、转移、可能性与计数。 / Weights, the transfer, possibility and counting.
+
+**Consumer input / 下游输入:** 损失的见证。 / The witnesses of the losses.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
 
 ## map-of-premises ← space-and-its-parts
 
@@ -2994,6 +3066,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 
+## one-step-missing-laws ← laws-of-one-step-complete
+
+`formal-reuse` — 同一模块的模式与见证世界。 / The same module's patterns and witness world.
+
+**Producer output / 上游输出:** 模式与其实现。 / Patterns and their realization.
+
+**Consumer input / 下游输入:** 遗漏之律的必要性。 / The necessity of the missing laws.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean)
+
+## only-the-order-of-change-registers ← laws-at-coarser-steps
+
+`formal-reuse` — 复用 Sampling 的 sample、span 与跨读法之步的一步规律；停顿是它的逆方向。 / Reuses Sampling's sample, span and the laws of one step across a step of the reading; a stuttering is its converse direction.
+
+**Producer output / 上游输出:** 经单调读法读世界。 / Reading a world through a monotone reading.
+
+**Consumer input / 下游输入:** 停顿的读法。 / Stuttering readings.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
+
 ## open-form-realization-under-revision ← positive-ground-open-futures
 
 `formal-reuse` — positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.
@@ -3005,6 +3101,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一 admitted、before、boundedInventory 和显式 G0；实际执行、当前下降、交接与生成对应未被取消。 / The same admitted scope, before relation, boundedInventory and explicit G0 are retained, as are actual execution, local descent, handoff and generative correspondence.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)
+
+## order-of-exchanges-is-the-invariant ← exchanges-commute-unless-joined
+
+`formal-reuse` — 复用 Flow.swap、Web.commute、Reorders 与 Web.Split；以足迹为两侧。 / Reuses Flow.swap, Web.commute, Reorders and Web.Split, with the footprint as the sides.
+
+**Producer output / 上游输出:** 交换与重排的关系及其保持的规律。 / Commutation and reordering, with the laws they keep.
+
+**Consumer input / 下游输入:** 重排所保持的偏序及逆方向。 / The partial order reordering keeps, and the converse.
+
+**Retained conditions / 保留条件:** 包含交换的足迹；交换不相连。 / A footprint containing the exchanges; the exchanges commuted not joined.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
 
 ## organizational-formation-from-generative-comparison ← practical-judgment-g0-j
 
@@ -3406,6 +3514,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
 
+## relata-counted-up-to-indiscernibility ← listing-once-is-decided-identity
+
+`formal-reuse` — 复用 IdentityDecided、ListsOnce 与 Numbers；边界把它们推广到相似之下。 / Reuses IdentityDecided, ListsOnce and Numbers; the boundary generalizes them up to a likeness.
+
+**Producer output / 上游输出:** 列出一次与计数的条件。 / The conditions for listing once and counting.
+
+**Consumer input / 下游输入:** 经关系计数的边界。 / The boundary of counting through relations.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean)
+
 ## relational-reading-comparison ← relational-renewal-classification
 
 `formal-reuse` — 导入 RelationalRenewal，直接调用 overdraw_consuming、within_renewal_renewing、within_renewal_sustains、independent_overdraw_persists 与 renewing_not_consuming。 / Imports RelationalRenewal and calls overdraw_consuming, within_renewal_renewing, within_renewal_sustains, independent_overdraw_persists and renewing_not_consuming directly.
@@ -3794,6 +3914,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean)
 
+## runs-on-families-chosen-step-by-step ← laws-of-one-step-complete
+
+`formal-reuse` — 复用模式、条件之律、见证世界与 Chained。 / Reuses the patterns, each condition's law, the witness world and Chained.
+
+**Producer output / 上游输出:** 一步的规律与固定家族上的运行。 / The laws of one step and runs on a fixed family.
+
+**Consumer input / 下游输入:** 逐步选定家族上的运行。 / Runs on families chosen step by step.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean)
+
 ## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
 
 `interpretive` — 已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。 / The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished.
@@ -4074,6 +4206,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean)
 
+## sum-over-histories-exact ← projection-carrying-a-law
+
+`interpretive` — Weights.lumped_iff 是 carries_law_iff 的加权形式：投影承载确定规律恰在经它相同者同去之处；这里经描述所读在所有步数后只依赖描述，恰在一步之后如此。 / Weights.lumped_iff is the weighted form of carries_law_iff: a projection carries a determined law exactly where configurations alike under it go alike; here what is read through a description depends on it alone after every number of steps exactly where it does after one.
+
+**Producer output / 上游输出:** 投影承载规律的条件。 / The condition for a projection to carry a law.
+
+**Consumer input / 下游输入:** 加权描述的可归并条件。 / The lumpability condition for a weighted description.
+
+**Retained conditions / 保留条件:** 加权形式要求描述的每个值有代表；它不导入 Mechanism。 / The weighted form requires a representative of each value of the description; it does not import Mechanism.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean)
+
 ## support-from-the-supported ← coming-and-ceasing-keep-pace
 
 `formal-reuse` — 复用 Web.supported_of：在 s 被支持的形成，在 t 的每项依存都在 s 已有、所需不更高、条件不更低时，在 t 被支持。 / Reuses Web.supported_of: a formation supported at s is supported at t where each dependence it has at t it had at s, at no greater need, on a condition standing no lower.
@@ -4289,6 +4433,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一状态、动作类型和原端点；没有物理规律识别。 / Same state/action types and endpoints; no physical law identification.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean)
+
+## transmission-independent-where-it-binds ← map-of-premises
+
+`formal-reuse` — 复用 Premise、MeetsAllBut、finiteHatch、novel 与 novel_but；把 novel 的单个见证推广到传递起约束的每个世界。 / Reuses Premise, MeetsAllBut, finiteHatch, novel and novel_but; generalizes the single witness novel to every world in which transmission binds.
+
+**Producer output / 上游输出:** 八个前提、见证世界与传递的独立（一个见证）。 / The eight premises, the witness worlds and the independence of transmission (one witness).
+
+**Consumer input / 下游输入:** 在传递起约束的每个世界旁都有一个邻居。 / A neighbour beside every world in which transmission binds.
+
+**Retained conditions / 保留条件:** 其余七个前提；传递起约束。 / The seven other premises; transmission binding.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean)
+
+## transmission-independent-where-it-binds ← transmission-is-inheritance-and-need
+
+`formal-reuse` — 复用传递的分解（transmitsWithin_iff）与所需之界的推出。 / Reuses the split of transmission (transmitsWithin_iff) and the derivation of the need half.
+
+**Producer output / 上游输出:** 传递恰是承继加所需之界。 / Transmission is exactly inheritance with the need within a bound.
+
+**Consumer input / 下游输入:** 有限世界中传递恰是承继。 / In finite worlds transmission is exactly inheritance.
+
+**Retained conditions / 保留条件:** 有限、平衡、耗散、体现、活动需要支持。 / Finiteness, balance, dissipation, embodiment, activity needing support.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean)
+
+## transmission-is-inheritance-and-need ← evolution-on-descent
+
+`formal-reuse` — 复用 DescendsAt、TransmitsWithin、Drawdown 与 transmitted_supported；把传递拆成承继与所需之界，并在一次世系上重述演化的界。 / Reuses DescendsAt, TransmitsWithin, Drawdown and transmitted_supported; splits transmission into inheritance and the need within a bound and restates the evolution bounds at one descent.
+
+**Producer output / 上游输出:** 以 TransmitsWithin 为前提的演化的界。 / The evolution bounds with TransmitsWithin as a premise.
+
+**Consumer input / 下游输入:** 传递在一次世系上的确切形式。 / The exact form of transmission at one descent.
+
+**Retained conditions / 保留条件:** 平衡；只有活跃者给予；活动需要支持。 / Balance; only active relata give; activity needs support.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean)
 
 ## unanchored-incidence-collapse ← joining-open-map-factor
 

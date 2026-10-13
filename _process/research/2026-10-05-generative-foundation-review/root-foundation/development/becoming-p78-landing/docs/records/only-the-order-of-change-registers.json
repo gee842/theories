@@ -11,16 +11,16 @@
   },
   "hypotheses": [
     {
-      "zh": "停顿是给定的读法 ρ；空步的移除只经由上述等价与普查的截面引理，不作为构造。",
-      "en": "The stuttering ρ is a given reading; removing idle steps is covered only through the equivalences above and the census's section lemma, not as a construction."
+      "zh": "停顿 ρ 是给定的读法；World.withoutIdle 从给定的移动步 σ 构造移除空步的世界，保持结论使用 Stutter.Moves ρ σ 与 World.IdleAt。",
+      "en": "The stuttering ρ is a given reading; World.withoutIdle constructs the world with idle steps removed from supplied moving steps σ, with preservation proved under Stutter.Moves ρ σ and World.IdleAt."
     },
     {
-      "zh": "总量中取用与给予的部分要求每个关系项列出一次；生起与止息的计数要求活动已定。",
-      "en": "The taken and given totals require each relatum listed once; the counts of arising and ceasing require activity decided."
+      "zh": "插入停顿的取用与给予总量要求每个关系项列出一次；withoutIdle 的移除总量不需要这一条件。生起与止息的计数要求活动已定。",
+      "en": "The taken and given totals for inserting a stuttering require each relatum listed once; the withoutIdle removal totals require no such condition. Counts of arising and ceasing require activity decided."
     },
     {
-      "zh": "移除空步以读每个原步的移动之步为假设（Stutter.Moves）：每个都存在且唯一，一次选出全部是无界搜索，没有做。",
-      "en": "Removing idle steps takes the moving step reading each step as a hypothesis (Stutter.Moves): each exists and is unique, and choosing all of them at once is an unbounded search, which is not done."
+      "zh": "移除空步把每个原步的移动之步作为给定函数 σ（Stutter.Moves）；每个移动步都存在且唯一，但本模块没有从停顿单独构造这个函数。",
+      "en": "Removing idle steps takes the moving step reading each step as a supplied function σ (Stutter.Moves); each moving step exists and is unique, but this module does not construct that function from the stuttering alone."
     }
   ],
   "correspondence": {

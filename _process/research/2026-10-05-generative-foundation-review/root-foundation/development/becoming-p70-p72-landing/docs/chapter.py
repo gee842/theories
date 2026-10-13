@@ -137,11 +137,11 @@ CTX_EN = (
 
 # Item 9 of the theory stated in full.
 KNOW_ZH_OLD = '知识的完整说明见第 3 节。〔定理〕'
-KNOW_ZH_NEW = ('描述有意义，恰当它恰把所识的未来相同者等同；部分单独有意义，恰当其余对它不造成差别；状态从所识的历史读出（`Becoming.Description`）。'
+KNOW_ZH_NEW = ('确定的律下，描述有意义，恰当它恰把所识的未来相同者等同；部分单独有意义，恰当其余对它不造成差别；状态从所识的历史读出（`Becoming.Description`）。'
                '在所识之中的识不能同时持有每个读法，补全它是从不返回的展开（`Becoming.Diagonal`）。不依语境的主张是表示的承诺，量子的识不满足它'
                '（`Becoming.Context`、`Becoming.Quantum`）。知识的完整说明见第 3 节。〔定理〕')
 KNOW_EN_OLD = '; section 3 gives the account of knowledge. [theorem]'
-KNOW_EN_NEW = ('; a description makes sense exactly where it identifies what has the same registered future, a part alone '
+KNOW_EN_NEW = ('; under a determined law, a description makes sense exactly where it identifies what has the same registered future, a part alone '
                'exactly where the rest makes no difference to it, and states are read off a registered history '
                '(`Becoming.Description`); a registration within what it registers cannot hold every reading at once, and '
                'completing it is an unfolding that never returns (`Becoming.Diagonal`); context-free claims are a commitment '

@@ -75,6 +75,10 @@ print(f'restored {restored} modules from the cache, compiled {len(compiled)}')
 
 # Where a form with no decision procedure, or none at all, exists: the theorem name (without `Becoming.`) maps to it.
 FORMS = {
+    'Web.arising_of_ceasing_listing': '`Web.arising_of_ceasing`（给定普查；此处还用 `listOnce` 造普查 / a supplied '
+                                      'census; here `listOnce` also constructs it, P77）',
+    'Web.inheritsAt_of_split': '`Web.inheritsAt_not_not`（不判定时继承不能被否证 / inheritance is unrefuted without '
+                               'the decision, P84）',
     'held_over_stretch': '`Counts.over_stretch`（无前提 / no premise）',
     'marks_within': '`Counts.le_length`（无前提 / no premise）',
     'keep_pace': '`CountsAcross.keep_pace`（无前提 / no premise）',
@@ -120,6 +124,7 @@ CONSTRUCTIONS = {
     'Tower.refine': 'coarse', 'Web.raise': 'raise', 'Web.redirect': 'redirect', 'keep': 'keep', 'insertNew': 'once',
     'Learning.learner': 'refute', 'Learning.index': 'refute', 'Learning.swapTo': 'other',
     'Identification.knowing': 'refute', 'Identification.firstFit': 'first',
+    'listOnce': 'once', 'keepFresh': 'once',
     'adjoin': 'once', 'mixIn': 'mix',
 }
 MENT_REASON = {
@@ -158,14 +163,15 @@ PROOF_REASON = {
     'same': '分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: '
             'the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a '
             'family',
-    'split': '按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its '
-             'failing case',
+    'split': '按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both '
+             'its holding and failing cases',
     'indicate': '造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the '
                 'proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such '
                 'as a score',
 }
 PROOF_KIND = {
     **{n: 'find' for n in [
+        'Web.arising_of_ceasing_listing',
         'Web.arising_recurs_iff', 'Web.unceasing_iff', 'Web.unceasing_iff_covering', 'coming_recurs_iff',
         'World.arising_iff_ceasing_of_decidable', 'Flow.More.unceasingFrom', 'Flow.More.unceasing_reidentified',
         'Flow.More.unceasing_reidentified_covering', 'Web.Census.arisingFrom_of_ceasingFrom',
@@ -200,7 +206,7 @@ PROOF_KIND = {
         'Web.tail_unrefuted', 'Flow.Balances.comparison_within_response_of_decidable',
         'Law.none_drawn_lossless', 'Law.lossless_iff_none_drawn',
         'alike_of_sensitive_agree', 'ExchangeLaw.Nonanticipating.through_of_observed', 'ExchangeLaw.Nonanticipating.through_sensitive', 'comparison_through_sensitivity']},
-    **{n: 'split' for n in ['persists', 'Flow.Balances.adds_iff_exceeds_of_decidable',
+    **{n: 'split' for n in ['Web.inheritsAt_of_split', 'Flow.transmitsWithin_iff_split', 'persists', 'Flow.Balances.adds_iff_exceeds_of_decidable',
                             'Valuation.significant_iff_reached']},
     **{n: 'indicate' for n in ['Web.scores_alike_iff']},
 }

@@ -107,8 +107,8 @@
     "en": "Not done: real-valued time (a periphery correspondence); towers with no coarsest level; the exact form of the bound as levels refine. The count uses a census; running down is a condition at the level used. The names (Tower, reads, refine) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090346.930838Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 65 个模块，共 3348 项定理／4882 项声明审计；外围回执 20261013T090430.379669Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T090346.930838Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 65 modules with 3348 theorems/4882 declaration audits; periphery receipt 20261013T090430.379669Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：新核心模块 Becoming.Tower 的 6 项定理全部空依赖；同一回执覆盖包内 71 个模块，共 4115 项定理／5850 项声明审计；外围回执 20261013T091033.730173Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块。尚无独立审查，作者反审见整合文档 §82。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 6 theorems of the new core module Becoming.Tower all have empty axiom reports; the same receipt covers the package's 71 modules with 4115 theorems/5850 declaration audits; periphery receipt 20261013T091033.730173Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules. There is no independent review yet; the author's counterreview is in §82 of the integration note."
   },
   "references": [
     {
@@ -147,27 +147,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "96756f4a04744e398ac5c929f436ecef418529b0dd18e591dddf8440392df849"
+      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "d71d86ff7496b96b47c3deda30f86984573001103fa9d12992c63fa11aa391ac"
+      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "847b3f53ce8bc5e373587d4832964da0eb597491bd88936bc624a54d0c0a3ab4"
+      "sha256": "cda6a5b3cdc705cd5b2a797df5fb305e3882bff0c1d6f1f0933aecd3bf365097"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "5e8a27133679057a4134fd85141769d4dae7aa61590adac5455284e0cc33db44"
+      "sha256": "2535977e749e5f928be8b9a89f7309a7840c6822864398dbfc9cef3674962237"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "a27b9d177c01a139f2e4c5583f30e0256a0256d38567528f271296a99bb0f09d"
+      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-one-unified-theory-together.md",
@@ -243,6 +243,10 @@
     {
       "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
       "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
     }
   ]
 }

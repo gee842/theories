@@ -1,17 +1,17 @@
 {
-  "checked_at_utc": "2026-10-13T09:07:48.921062+00:00",
+  "checked_at_utc": "2026-10-13T09:16:44.757935+00:00",
   "passed": true,
   "errors": [],
   "mapped_chats": 44,
   "families": 14,
-  "local_map_links_checked": 324,
-  "inventory_paths_checked": 1182,
+  "local_map_links_checked": 336,
+  "inventory_paths_checked": 1188,
   "live_active_sources_changed_after_capture": [],
   "semantics": "Snapshot documentary checks, not theorem validity, whole-repository freshness or independent scientific review.",
   "input_sha256": {
     "theories/becoming/results/data/session-results.json": "e167ae3eacfd9b0417ad2f419e98dcba71d0010de38853b3a6ab2677ed7a7301",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "e4b191f94b15640ad25cfd19778640543093dd2ed9758078274ca0fecebc17e2",
-    "theories/becoming/results/SESSION-RESULTS.md": "1519f003b0a8930df53bee8a35e693ba65bec94c9fefcbfa0ddfcbc1d29f93d8"
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "e122cbb9eb6abbd743ff2501da9a3c0c2bc201a7518053cc201a6c11edeaa20c",
+    "theories/becoming/results/SESSION-RESULTS.md": "973e94c057800946802ac2861cc7326dd6aa477f2af5207fbdd2fe5bf876036f"
   }
 }

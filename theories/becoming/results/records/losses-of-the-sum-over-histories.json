@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "id": "losses-of-the-sum-over-histories",
+  "title": {
+    "zh": "历史之和的损失：截断恰好漏掉所弃的部分；可抵消时可能性看不见抵消；记忆须保留在配置中；回路使历程倍增",
+    "en": "The losses of the sum over histories: a truncation misses exactly what it drops, possibility cannot see a cancellation, memory must be kept in the configuration, and loops double the courses"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "claim": {
+    "zh": "对每个赋权，所留与所弃历程之和是所留之和加所弃之和（Weights.truncation）；备选只相加之处（计数），截断从下方界定整体（counting_truncation_le）。带符号的计数（signed：一对，所加与所减；备选逐分量相加，减的一步把其后翻转）满足权重的规律。一个配置、两个回到它的动作，一加一减：每个历程都可能，它们的并也可能，而一步的带符号计数是 (1, 1)，所加等于所减（Interference.cancels）；只留第一个历程得 (1, 0)（Interference.truncation_misleads）；任何保持备选之并、把一个历程标为可能的读法，都把它所进入的每个和标为可能，平衡与否（Interference.unseen），其中包括两个历程平衡的并（Interference.unseen_balanced）。一个配置上要求第二步不同于第一步的两步历程的可能性赋权，不是该配置上任何步权重与终点读法沿历程的权重（Memory.not_of_steps），而在保留上一动作的配置上是（Memory.of_kept）。一个配置、两个回到它的动作，n 步历程的计数是 2^n（Loop.courses_double）。不加前提。",
+    "en": "For every weighting, the sum over kept and dropped courses is the sum over those kept added to the sum over those dropped (Weights.truncation); where alternatives only add (counting), a truncation bounds the whole from below (counting_truncation_le). Signed counts (signed: pairs of what adds and what subtracts, alternatives adding part by part, a subtracting step turning what follows around) satisfy the laws of weights. With one configuration and two moves back to it, one adding and one subtracting, each course is possible and so is their join, while the signed count of the one step is (1, 1), what adds equalling what subtracts (Interference.cancels); keeping the first course alone gives (1, 0) (Interference.truncation_misleads); and every reading into possibility that keeps the join of alternatives and marks a course possible marks possible every sum the course enters, balanced or not (Interference.unseen), the balanced join of the two courses among them (Interference.unseen_balanced). A possibility weighting of two-step courses on one configuration requiring the second move to differ from the first is not the weight along courses of any step weight and end reading on that configuration (Memory.not_of_steps), and is one on configurations keeping the last move (Memory.of_kept). With one configuration and two moves back to it, the count of courses of n steps is 2^n (Loop.courses_double). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "带符号的计数是自然数对，按平衡（所加等于所减）比较，不是整数：核心不取商。",
+      "en": "Signed counts are pairs of natural numbers compared by balance (what adds equalling what subtracts), not integers: the core takes no quotient."
+    },
+    {
+      "zh": "抵消、记忆与回路的定理是见证：各在一个给定的小世界上陈述。",
+      "en": "The theorems on cancellation, memory and loops are witnesses: each is stated on one given small world."
+    }
+  ],
+  "correspondence": {
+    "zh": "P82（工作板），回应 Ren 2026-10-12 的问题：“how how accurate can we do that uh what is the limitation do we have losses”。读法（AI 的，待 Ren）：精度的界限就是这四种损失，各是一条定理：截断恰好漏掉所弃者；可能性看不见抵消（振幅可抵消，可能性不能）；依赖来路的权重须把所需保留在配置中，损失在描述而不在展开；回路使历程无界地增多，无界视野上的和没有更多结构就没有有限值。见整合文档 §104。",
+    "en": "P82 (work board), answering Ren's question of 12 October 2026: “how how accurate can we do that uh what is the limitation do we have losses”. Reading (the AI's, pending Ren): the limits of accuracy are these four losses, each a theorem: a truncation misses exactly what it drops; possibility cannot see a cancellation (amplitudes cancel, possibility does not); a weighting that depends on how one came must have what it needs kept in the configuration, the loss being in the description, not the unfolding; loops multiply courses without bound, so a sum over every horizon has no finite value without more structure. See the integration document §104."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+  "aliases": [
+    "Becoming.Weights.truncation",
+    "Becoming.counting_truncation_le",
+    "Becoming.signed",
+    "Becoming.Interference.cancels",
+    "Becoming.Interference.truncation_misleads",
+    "Becoming.Interference.unseen",
+    "Becoming.Interference.unseen_balanced",
+    "Becoming.Memory.not_of_steps",
+    "Becoming.Memory.of_kept",
+    "Becoming.Loop.courses_double",
+    "interference",
+    "干涉",
+    "cancellation",
+    "抵消",
+    "truncation",
+    "截断",
+    "memory",
+    "记忆",
+    "signed counts",
+    "带符号的计数"
+  ],
+  "dependencies": [
+    {
+      "id": "sum-over-histories-exact",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用权重、转移与可能性；截断由求和的拆分得出。",
+        "en": "Reuses the weights, the transfer and possibility; truncation follows from the splitting of sums."
+      },
+      "interface": {
+        "output": {
+          "zh": "权重、转移、可能性与计数。",
+          "en": "Weights, the transfer, possibility and counting."
+        },
+        "input": {
+          "zh": "损失的见证。",
+          "en": "The witnesses of the losses."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "projection-carrying-a-law",
+      "detail": {
+        "zh": "记忆的损失是描述的损失：保留所需的配置承载规律。",
+        "en": "The loss of memory is a loss of the description: configurations keeping what is needed carry the law."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "detail": {
+        "zh": "可能的历程相抵消（Interference.cancels）；依赖来路的赋权不是步的赋权（Memory.not_of_steps）。",
+        "en": "Possible courses cancel (Interference.cancels); a weighting depending on how one came is not one of steps (Memory.not_of_steps)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "见证在小世界上；保留整个历程使每个赋权成为步的赋权，对一般权重没有证明；无界视野上的收敛与重整化没有陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The witnesses are on small worlds; that keeping the whole course makes every weighting one of steps is not proved for weights in general; convergence and renormalization over an unbounded horizon are not stated; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.Weighted 的 35 项定理全部空依赖，其中含 Weights.truncation、counting_truncation_le、signed、Interference.cancels、Interference.truncation_misleads、Interference.unseen、Interference.unseen_balanced、Memory.not_of_steps、Memory.of_kept与 Loop.courses_double；同一回执覆盖包内 71 个模块（含只作导入的根模块与桥接），共 4115 项定理／5850 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091033.730173Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 73 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §104；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 35 theorems of Becoming.Weighted all have empty axiom reports, among them Weights.truncation, counting_truncation_le, signed, Interference.cancels, Interference.truncation_misleads, Interference.unseen, Interference.unseen_balanced, Memory.not_of_steps, Memory.of_kept and Loop.courses_double. The same receipt covers the package's 71 modules (including the import-only root and the bridge) with 4115 theorems/5850 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091033.730173Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 73 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §104 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "role": "proof",
+      "sha256": "d5d234f7ce5c1ad7d452da4840f869d8b549d4bf88714f95efdfe80cb05b25c0",
+      "declarations": [
+        "Becoming.Weights.truncation",
+        "Becoming.counting_truncation_le",
+        "Becoming.pair_eq",
+        "Becoming.swap_middle",
+        "Becoming.pair_assoc",
+        "Becoming.pair_spread",
+        "Becoming.pair_spread_right",
+        "Becoming.signed",
+        "Becoming.Interference.weight",
+        "Becoming.Interference.cancels",
+        "Becoming.Interference.truncation_misleads",
+        "Becoming.Interference.unseen",
+        "Becoming.Interference.unseen_balanced",
+        "Becoming.Memory.differ",
+        "Becoming.Memory.not_of_steps",
+        "Becoming.Memory.lands",
+        "Becoming.Memory.fresh",
+        "Becoming.Memory.kept",
+        "Becoming.Memory.of_kept",
+        "Becoming.Loop.courses",
+        "Becoming.Loop.courses_double"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Weighted",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "对一般权重证明保留历程恢复步的赋权，并在外围给出带相位振幅的抵消实例。",
+    "en": "Prove for weights in general that keeping the course restores a weighting of steps, and give an instance of cancellation with phased amplitudes in the periphery."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13：接续并整合 P82 的现存证明包；见整合文档 §104。",
+      "en": "2026-10-13: resumed and integrated the existing P82 proof package; see §104 of the integration note."
+    }
+  ]
+}

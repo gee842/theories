@@ -6496,11 +6496,11 @@ Integration: 计划 P83；回答 P70–P72 留下的后两个开放问题；“�
 - **归纳成为演绎。** 至多 `N` 个状态的历史上，一个 `N` 之内、在长 `2N − 1` 的记录上不被否证的套索假设，就是整个历程的律（`bounded_induction`）。知道界的学习者从 `2N − 1` 起每一步都对，在任何地方都不被否证（`knowing_right`、`knowing_holds`）；没有这样的学习者能更早地总作主张（`knowing_earliest`）。
 - **不知道界的学习者在界内静止。** P73 的按否证学习者不知道界，它会静止这一点在那里不被否证（`held_rest_unrefuted`）。界成立时它静止的步由界给出：至多 `N` 个状态的历史上，它从第 `N + (2N − 1)·tri N` 步起每步主张且正确（`learner_rests`、`held_learner_rests`），因为 `N` 之内的套索假设在一段 `2N − 1` 步中不被否证就永不被否证（`unrefuted_persists`）。它自己不知道这一步：它的记录从不表明它已静止（`no_record_fixes_next_finite`），因为同样的记录也属于状态更多的世界。所以知道界与不知道界的差别不在最后是否对，而在何时对，以及能否知道已对：知道界的学习者从 `2N − 1` 起对并且从不被否证；不知道界的学习者最终对，却被否证过，也不知道自己何时已对。
 - **命名有意义的切分的类，不用公理。** 列表持有的世界中，每个配置以它长 `2N − 1` 的所识的未来命名；名相等恰当所识的未来相同，所以这一命名就是 P69 的有意义的切分（`Law.name_makesSense`），名承载规律（`Law.name_carries`），相同可以判定（`Law.decideAlike`）。以整个所识的未来（一个函数）命名需要函数外延性，Lean 由商公理 `Quot.sound` 证明它；界使有限的名足够。
-- **包括控制者。** 这些陈述中的世界是任何列表持有的世界，其中的控制者或认知是所识的一部分（P70 的 `Law.adaptive_makesSense_iff`）。只有一种世界能使知道界的学习者落空：回答它的每个主张的世界。这样的世界有多于那个界的状态（`answer_exceeds_bound`）。说谎者不是这种世界：它的真是节律，知道两个状态的学习者从第 3 步起推出它（`denial_derived`）。
+- **包括控制者。** 这些陈述中的世界是任何列表持有的世界，其中的控制者或认知是所识的一部分（P70 的 `Law.adaptive_makesSense_iff`）。一个经过证明的障碍是回答学习者每个主张的世界：这样的世界有多于学习者所知的那个界的状态；此定理不把它刻画为超出界后学习者失效的唯一方式（`answer_exceeds_bound`）。说谎者不是这种世界：它的真是节律，知道两个状态的学习者从第 3 步起推出它（`denial_derived`）。
 
 **读法。** 以下是 AI 的，待 Ren：
 - 对 Ren 的推测：投影是限制，一个有限的记录也是一个投影；界是使这个投影对整个历程不失去什么的东西。“完整的真按情境可推出”，读作：情境给出它的状态数，所识的一切，包括其中的控制者，从长 `2N − 1` 的记录推出，不能更短；情境不给出界时，没有有限的记录足够。
-- 自我预测：认知在它所识的世界之中，仍可以推出这个世界的律；不能的只是在回答它的世界中给出一个被证实的宣布，而那样的世界超出它所知的界。P71 的“从内部不能一次全部说出”与此并不冲突：那里是同时持有每个读法，这里是推出一个有界历程的律。
+- 自我预测：认知在它所识的世界之中，仍可以在满足给定状态数之界时推出所识历程的律；回答它每个主张的世界是已证明超出这个界的一种障碍，并非对界外所有失效方式的刻画。P71 的“从内部不能一次全部说出”与此并不冲突：那里是同时持有每个读法，这里是推出一个有界历程的律。
 - 名：有界时，一个类的名是它在界内所识的未来，一个有限的东西；“名可名”可读作有界时的有限名，以整个未来为名需要一条公理。这是 AI 早先“名可名，非常名”读法的一个精确化，是否采用由 Ren 判断。
 
 **作者反审。**
@@ -6555,7 +6555,7 @@ Integration: 计划 P76；P69 的死路与拼接成为律与历史之间的全�
 
 **它回答了什么。**
 - **律与历史之间的全部规律。** 从历史读出的律，就是含有拼接的历史族（`family_iff`）；历史把律固定到死路为止（`same_histories_iff`）。所以不计死路的律与含有拼接的历史族一一对应：P69 的两处“对应不是同一”就是全部。确定的律多一个条件，一致（`determined_family_iff`）。会停止的历史下死路消失，律恰由它的有限历史固定（`same_finite_histories_iff`、`finite_family_iff`）：死路是不终止历史的事实。
-- **检验何时固定相同。** 线性检验（动作序列，加一个最后的主张）在相同之下确定时固定相同（`alike_iff_sameTests`）；有分支时不固定（`Choosing`）。外围中带否定与合取的分支检验对像有限的模型固定相同（`same_iff_bisimilar`，经典）。
+- **检验何时固定相同。** 线性检验（动作序列，加一个最后的主张）在相同之下确定时固定相同（`alike_iff_sameTests`）；没有这一条件时未必固定（`Choosing`）。外围中带否定与合取的分支检验对像有限的模型固定相同（`same_iff_bisimilar`，经典）。
 
 **读法。** AI 的，待 Ren。Ren 同意律与历史是同一展开的两种读法、律从展开读出（“there are no two realities”）。在本结果之下：从历史读出的律就是含有拼接的历史族，别无其他；置于展开之上的律所能多出的只是死路，没有历史显示它们。拼接是记忆的缺席：律从所在处作答，不从怎样来到此处作答，所以记住来路的历史（保留的历史）所显示的律只容许它自己（`Run.keepHistory_shown`）。检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。
 
@@ -6611,12 +6611,12 @@ Integration: 计划 P81；回答 recurrence-without-premise 与 attraction-is-no
 | `Branching.Reachable`、`Branching.Returns`、`Branching.Lossless`、`Branching.Merges`、`law_reachable_iff`、`law_returns_iff`、`law_lossless_iff`、`law_merges_iff`、`law_keeps_iff` | 配置 n 步之后可得，指有 n 个动作的路径通向它；它返回，指从它的一步通向能再得到它之处；过程合并，指两个不同的配置一步到同一处；在确定的律下每个都是 R6 的 |
 | `Branching.lost_stays`、`Branching.Returns.reachable`、`keeps_of_returns`、`keeps_iff_fed` | 失去的可能保持失去；返回的配置每步可得，所以处处返回则保留每个可能；保留每个可能恰是每个配置下一步可得 |
 | `returns_iff_fed_ahead`、`returns_iff_keepsWithin`、`returns_iff_fedWithin`、`keepsWithin_iff_fedWithin` | 配置恰在它自己的路径下一步能再得到它时返回；每个配置都返回，恰在过程从不离开的每个区域都保留它自己的每个可能时；不用有限性 |
-| `Lossless.comes_back`、`Lossless.recurs`、`Branching.Lossless.returns`、`Branching.Lossless.no_rise`、`Branching.rise_not_lossless`、`Branching.Lossless.unlisted` | 列表持有运行的配置、过程不合并时，运行的每个配置在运行上回来，运行开始处的配置返回，沿运行没有上升；上升需要合并；不合并而有不返回的配置需要开放 |
+| `Lossless.comes_back`、`Lossless.recurs`、`Branching.Lossless.returns`、`Branching.Lossless.no_rise`、`Branching.rise_not_lossless`、`Branching.Lossless.unlisted` | 列表持有运行的配置、过程不合并时，运行的每个配置在运行上回来，运行开始处的配置返回，沿运行从不下降的量保持不变；这样的量严格上升与不合并矛盾（结论为 ¬ Lossless，不给出 Merges 的见证）；不合并而有不返回的配置需要开放 |
 | `Transit.keeps_not_returns`、`OneWay.merge_keeps`、`fork_lossless_not_returns`、`Coarse.meet_and_part`、`Determined.stays_merged` | 保留每个可能不给返回；合并不必失去可能；不合并沿运行才给返回（Fork 的终点不能动）；合并后保持合并需要确定 |
 | `PossiblyDrawnInto`、`NecessarilyDrawnInto`、`PossiblyDrawn`、`NecessarilyDrawn`、`law_possibly_iff`、`law_necessarily_iff`、`law_drawn_iff` | 某条路径进入区域是可能被吸入，每个运行都进入是必然被吸入；被吸入，指某个过程从不离开的区域如此吸入它；在确定的律下两者都是 P67 的 |
 | `Branching.Returns.run`、`necessarilyDrawn_iff_not_returns`、`NecessarilyDrawnInto.not_returns`、`necessarilyDrawnInto_ahead` | 返回的配置有一个从不失去它的运行；每个过程必然吸入的恰是不返回者（`Law.drawn_iff_not_returns` 的推广） |
 | `possiblyDrawn_iff`、`PossiblyDrawnInto.never_back`、`OneWay.possibly_not_necessarily`、`Determined.moves_decide` | 可能被吸入就是在某一路径中失去自身，沿该路径被锁定；可能被吸入者可以在另一路径中返回；确定的过程下动作决定运行是否被吸入 |
-| `reachable_invariant`、`lost_necessarily_drawn`、`Run.enters_returning`、`NecessarilyDrawn.not_lossless`、`Transit.returning_not_invariant` | 每个过程下未来变窄，失去的可能必然被吸入；有限多配置之内每个运行进入返回者，必然被吸入意味着合并；返回者不是过程从不离开的区域 |
+| `reachable_invariant`、`lost_necessarily_drawn`、`Run.enters_returning`、`NecessarilyDrawn.not_lossless`、`Transit.returning_not_invariant` | 每个过程下未来变窄，失去的可能必然被吸入；有限多配置之内每个运行进入返回者，运行起点必然被吸入与不合并矛盾（结论为 ¬ Lossless）；返回者不是过程从不离开的区域 |
 | `determined_iff_named`、`alike_configurations`、`goesAlike_iff`、`DeterminedAt.stays_alike`、`DependsOnlyOnAlike.reabsorbed`、`forget_inputs_determinedAt_iff` | 主张命名配置时，确定就是相同之下的确定；经相同而同行、相同的运行保持相同、不依赖者被重新吸收、标准模型在噪声无差别时确定，都在相同之下成立 |
 | `Run.fixesAlike_of_takes`、`Run.generalizesAlike`、`Run.not_fixesAlike_of_untaken`、`retargetAlike`、`retargetAlike_determinedAt` | 所取的动作在相同之下固定，一次代表其类；未取的动作对在一个主张上不同的结果不被固定，经对整个相同类的干预 |
 | `Twins.retarget_breaks`、`keepFrame_alike_iff`、`keepHistory_returns_alike`、`keepHistory_new_named`、`carries_unregistered`、`Confound.refutes_registered` | 需要相等之处：改送两个相同配置之一破坏相同之下的确定；过去没有被登记时保留的历史在相同之下返回；没有主张时每个描述承载规律，没有混杂被否证 |
@@ -6758,6 +6758,139 @@ Integration: 计划 P80；回答本章 §8“反馈与所及”中“他者有�
 - 模块在暂存区对 main 的核心（含 P64–P69）编译（`scratch_build.py`，与检查器共用缓存），没有错误或警告；逐条审计全部 130 个常量，公理报告全部为空。没有用 `simp`、`omega`、`Classical` 或 `native_decide`；数的截断减法的引理自证，不用依赖 propext 的 `Nat.sub_add_cancel`；匹配写全，不用通配，以免生成依赖 propext 的辅助常量。
 - 合并检查器在落地队列中检查一次，通过：回执 20261013T090346.930838Z。`Becoming.Counterfactual` 的 46 项定理全部空依赖；包共 3348 项定理、4882 项声明审计，核心闭包 67 个模块。外围桥接对这个核心重查，通过：回执 20261013T090430.379669Z。
 - 尚无独立审查。
+
+
+## 101. 列出一次所承诺的（P77）
+
+**P77：列出一次承诺了什么。** 按 Ren 的“move towards 100%”，像 P58 对可判定性那样，找出零前提计划中每个关系项列出一次、家族不重复（`Distinct`）这一承诺是什么。新的核心模块 `Becoming.Listing`（导入 `Decidedness`、`Sampling`、`Resolution`），不用公理，不加前提，不改动已有模块。
+- **列出一次就是已定的同一。** 列表恰在其成员之间同一已定时能列出一次（`listsOnce_iff_decided`），构造性地（`listOnce`），而它能列出一次从不能被否证（`not_not_listsOnce`）。列表所含关系项的数目唯一，恰在此时存在（`Numbers.unique`、`numbers_iff_decided`）。
+- **否证不需要它，求和与计数只局部地需要它。** 处处列出一次时否证某事的律不加前提地否证它（`not_of_listsOnce`），所以否证之律对任何列出方式的家族成立，耗散使每个可枚举的世界归于静止（`World.Enumerated.rests`）。一步被封闭恰在有一个成员间同一已定的封闭家族时（`Flow.enclosed_iff`）；世界有限恰在可枚举且关系项之间同一已定时（`World.finite_iff`）。重复并非无害：把一个成员列两次的家族上求和之律不成立（`Doubled.needs_once`）。
+- **边界。** 一个类型上的每个列表都能列出一次，恰在该类型上同一已定时（`listsOnce_all_iff`）。经关系、在不可分辨之下，每个世界每个列表的关系项数恰在排中律下固定（`World.Indiscernible`、`World.numbers_indiscernible_iff_em`），名字把没有关系能分开的计为二（`World.probe_named_apart`）。
+- **按出现。** 按出现读，每个流不需已定的同一就把参与者列出一次，并保持其数量（`Flow.byOccurrence_once`、`Flow.byOccurrence_balances`）；出现不跨步追踪（`Flow.byOccurrence_uncounted`）。
+
+清点：15 个模块中 169 个声明用到 `Distinct`；30 个不需前提（6 个作为推论证明，其余已分类），33 个是求和的局部条件，31 个是计数的局部条件，9 个按出现重新奠基，其余是数、工具或见证。读法是 AI 的，待 Ren。由本会话的一个 Opus 子代理构建，本会话复核（85 项定理，公理报告为空）。尚无独立审查。
+
+
+**复用、产出与检查。** 复用 [counts-exist-where-decided](../../../../theories/becoming/results/records/counts-exist-where-decided.md)、[laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md)；本节的确切增量与消费者接口由 [listing-once-is-decided-identity](../../../../theories/becoming/results/records/listing-once-is-decided-identity.md)、[relata-counted-up-to-indiscernibility](../../../../theories/becoming/results/records/relata-counted-up-to-indiscernibility.md) 记录。当前 [Becoming.Listing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean) 的 85 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+
+
+## 102. 变化的次序（P78）
+
+**P78：步序号的重新奠基。** 按 Ren 的“move towards 100%”，像 P69 对出发点那样，检查零前提计划中共享的离散步序号这一承诺。新的核心模块 `Becoming.Order`（只导入 `Becoming.Sampling`），不用公理，不加前提，不改动已有模块。它给出与 Sampling 的较粗读法相反的两个动作：插入空步，以及以相反次序取两个交换。
+- **停顿。** 经停顿读的世界恰在原世界满足前提时满足它们（`World.stutter_premises_iff`），任何段上的总量就是所读之段的总量（`stutter_total`），生起、止息与变化恰在原来复现时复现（`World.stutter_arisingRecurs_iff`）。改变的是每步所计的：空步出现得任意晚时没有什么无终地更多（`Flow.sample_not_more`），每步读两次时储备须加倍（`Lapse.reserve_step_relative`）。
+- **交换次序。** 两侧分开的相继两个交换可以以相反次序取：平衡、耗散与体现恰在原来成立处成立，段上的计数与总量保持（`World.commute_laws`、`World.commute_counts`），在任意次这样的交换下也如此（`Reorders.laws`、`Reorders.totals`），即 Mazurkiewicz 迹等价。
+- **次序携带什么。** 次序经依存与共享的关系项被登记：在 `Crossing` 中次序相反时一个关系项在没有支持时活跃，在 `Arising` 中一个关系项在活跃之前给予（`Crossing.order_registers`、`Arising.order_registers`）。
+
+- **次序作为对象（P78b）。**
+  - 足迹说出每个交换触及哪些关系项；在包含交换之处，交换之间的相连生成严格偏序（`Footprinted.Precedes`）。
+  - 交换不相连的交换在重新编号下保持它（`Footprinted.reorder_precedes`）。
+  - 反过来，以构造性的冒泡排序，一段上如此达到的重新编号恰是保持它的那些。以这样的次序有相同交换、足迹与变化、起点相同的世界，每步都与一个重排一致（`Footprinted.sorts_iff`、`Footprinted.converse`）。
+- **什么被保持（P78b）。**
+  - 沿不相连的交换，每个前提双向保持（`Footprinted.reorder_premises`）。
+  - 沿任意重排，生起与止息的计数保持（`Reorders.counts`）。
+  - 交换相连的交换破坏活动需要支持与只有活跃者给予（`Crossing.reorders_joined`、`Arising.reorders_joined`）。
+- **移除空步（P78b）。** 去掉停顿的空步的世界（`World.withoutIdle`）恰在原世界满足每个前提处满足它，恰在原世界有普查处有普查，任一段上的总量与计数相同（`World.withoutIdle_premises`、`World.withoutIdle_counted`、`World.withoutIdle_totals`）。
+
+读法是 AI 的，待 Ren：
+- 对规律、总量与复现，步序号不携带变化次序以外的东西。
+- 速率相对于读法的单位。
+- 给定足迹，规律所需的次序是相连交换的偏序，不是步的序列。
+
+没有证明：
+- 最小足迹；
+- Foata 范式；
+- 沿重排的普查。
+
+由本会话的 Opus 子代理构建（266 条定理，公理报告为空）。尚无独立审查。
+
+
+**复用、产出与检查。** 复用 [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md)；本节的确切增量与消费者接口由 [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-registers.md)、[exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md)、[order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md) 记录。当前 [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) 的 266 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+
+
+## 103. 一步与逐步选择家族的全部规律（P79）
+
+**P79：一步的规律就是一步的全部规律。** 按 Ren 的“move towards 100%”，此前只对计数成立的强意义上的完备（`tally_iff_counted`），这里对 Locality 的一步之律证明。新的核心模块 `Becoming.OneStep`（导入 `Counting` 与 `Sampling`），不用公理，不加前提，不改动已有模块。
+- **每个条件下精确。** 一个模式（家族成员的通过、取用者之数、是否有交换）恰在服从每步之律时由某个世界显示（`OneStep.every_iff`）；在被平衡、耗减、封闭或两者兼有的家族上，恰在还服从该条件之律时（`OneStep.balance_iff`、`OneStep.runsDown_iff`、`OneStep.closed_iff`、`OneStep.runsDownClosed_iff`）；所以一个性质在每个这样的步成立，恰在它对服从该律的每个模式成立时（`OneStep.laws`）。跨一个家族的运行，唯一多出的律是每步之后所立就是下一步之前所立（`OneStep.Chained`、`OneStep.run_every_iff`）。
+- **脊柱此前未陈述的两条律。** 有所取就有取用者（`Flow.sign_uptake_le_takers`）；所取不超过所立加所给（`Flow.BalancesOn.taken_le`）。没有前者，所陈述的律允许没有世界显示的模式（`OneStep.stated_not_realized`）；有了它，对耗减且封闭的家族它们就是全部规律（`OneStep.runsDownClosed_iff_stated`）。
+
+- **给予者、容量与活动（P79b）。**
+  - 有所给就有给予者：有所给之处，给予者至少一个，至多为所给之数（`OneStep.Givers`）。
+  - 耗减恰再加每个给予者都取（`Flow.DissipatesOn.renewers_le_takers`）。
+  - 容量恰添所给不超过容量乘给予者数（`OneStep.every_capacity_iff`）。
+  - 该步的活动不添规律（`OneStep.every_active_iff`）。
+- **逐步选定的家族（P79b）。**
+  - 家族可以每步改变时，无条件、平衡与封闭不把一步连到下一步（`OneStep.step_every_iff`）。
+  - 耗减以不计次序的延续把各步相连：在每个正的水平上，一步之后立于那里的与下一步之前一样多（`OneStep.Continues`、`OneStep.step_runsDown_iff`）。
+  - 它严格弱于逐位跟随（`OneStep.steps_not_run`、`OneStep.vanishing_steps`）。
+
+读法是 AI 的，待 Ren。
+
+未涵盖：
+- 计数活跃者（需要活动可判定）；
+- 容量与活动在运行上的形式。
+
+由本会话的 Opus 子代理构建（311 条定理，公理报告为空）。尚无独立审查。
+
+
+**复用、产出与检查。** 复用 [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md)、[whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md)；本节的确切增量与消费者接口由 [laws-of-one-step-complete](../../../../theories/becoming/results/records/laws-of-one-step-complete.md)、[one-step-missing-laws](../../../../theories/becoming/results/records/one-step-missing-laws.md)、[runs-on-families-chosen-step-by-step](../../../../theories/becoming/results/records/runs-on-families-chosen-step-by-step.md) 记录。当前 [Becoming.OneStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean) 的 311 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+
+
+## 104. 加权历史及其损失（P82）
+
+**P82：加权的历史。** Ren 问：对不确定的规律，能否像费曼图那样对其众多模式与回路积分；能有多准，有什么损失，理论是否可靠。核心的不确定规律陈述何者可能，不陈述多少。P82 陈述步的赋权加上什么，并证明历史之和在哪里精确、在哪里有损失。新的核心模块 `Becoming.Weighted`（L3，为两条算术引理导入 `Becoming.Capture` 与 `Becoming.Resolution`），不用公理；权重连同其规律一起给出（`Weights`），每个定理对它所列的每个赋权与列表成立。
+- **精确。** 列出动作与配置之后，n 步每个历程上复合权重之和等于 n 步转移（`Weights.sum_courses`）：指数多的历程，一次一步求和。保持权重规律的读法可以逐历程取，也可以最后取（`Weights.Hom.transfer`）。
+- **可能性就是核心的关系。** 可能性权重读出一个过程的步时，n 步之后的转移恰在有一条 n 个动作的迹通向终点读法成立处时成立（`possibility_transfer_iff`）；历程的计数恰在有历程时不为零（`support`、`counting_transfer_iff`）。
+- **经描述的积分。** 经描述在任意步数之后所读，恰在一步之后只依赖描述时只依赖描述（`Weights.lumped_iff`），即 `carries_law_iff` 的加权形式；不然，描述不承载加权规律（`Lumping.loses`）。
+- **损失，各是一条定理。** 截断恰好漏掉所弃者；备选只相加之处，截断从下方界定整体（`Weights.truncation`、`counting_truncation_le`）。带符号的计数下，可能的历程能相互平衡，截断会误导，任何保持备选之并的、到可能性的读法都看不见这一抵消（`signed`、`Interference.cancels`、`Interference.truncation_misleads`、`Interference.unseen`）。依赖来路的赋权在它所给出的配置上不是步的赋权，在保留所需的配置上是（`Memory.not_of_steps`、`Memory.of_kept`）。两个动作的回路上，历程每步倍增（`Loop.courses_double`）。
+
+读法是 AI 的，待 Ren：把“Fermi's diagrams”读作费曼图；在有限配置、有界视野下，和对任意多历程精确，经更粗的描述恰在可归并处精确；精度的界限就是这四种损失。没有推出：权重从何而来、实际展开有哪个赋权；带相位的振幅（外围）；无穷多配置或无界视野上的和；对一般权重，保留整个历程恢复步的赋权。尚无独立审查。
+
+
+**复用、产出与检查。** 复用 [projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md)；本节的确切增量与消费者接口由 [sum-over-histories-exact](../../../../theories/becoming/results/records/sum-over-histories-exact.md)、[losses-of-the-sum-over-histories](../../../../theories/becoming/results/records/losses-of-the-sum-over-histories.md) 记录。当前 [Becoming.Weighted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean) 的 35 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+
+
+## 105. 传递的精确条件与边界（P84）
+
+**P84：传递，推出或划界。** `Becoming.Evolution` 以传递为前提（`Flow.TransmitsWithin`）：在此前提下，跨一步经世系而来、在第一个立足之步依存 `c` 的关系项，只由在给予之步依存 `c` 的关系项而来，所需至多多 `δ`。P84 问这一前提是否由核心的其余前提推出，把它陈述为一次世系上的规律，并证明什么推出它、哪里没有推出能达到。新的核心模块 `Becoming.Transmission`（L3，导入 `Becoming.Premises`），不用公理。
+- **传递是什么。**
+  - 在一次世系上，传递是承继加所需之界（`Web.transmits_at_iff`、`Flow.transmitsWithin_iff`）。承继指后代在第一个立足之步的依存由给予者在给予之步持有。
+  - 后代立足前不依存之处，承继恰是形成的规律：在开始作为条件而在的关系项处形成的依存，是其给予者持有的（`Web.inheritsAt_iff_forming`）。
+  - 一般地，先前的持有可判定之处，形成与持有构成承继；对每次世系都要求这一点，就是排中律（`split_iff_em`）。
+- **经世系不形成新依存。** 在平衡与承继之下，参与者都不依存的条件，开始作为条件而在者在该步之后也不依存（`Flow.no_new_dependence`）。
+- **演化的规律，前提写在其内。** 演化的界在其所用的那一次世系上成立（`Flow.inherited_supported_at`）。在开始作为条件而在的关系项处，只需某个被支持的给予者（`Flow.fromSome_supported`），这一形式严格较弱（`TwoGivers.twofold`）。
+- **在起约束之处独立。**
+  - 去掉给予者的一条依存，不改变任何水平、活动、取用、所需与流，保持其余每个前提与有限，而使传递失效（`World.drop_but`）。
+  - 所以，去掉依存时保持且推出传递的条件，推出传递不起约束（`World.vacuous_of_drop_invariant`）。
+  - 取用的读法就是这样的条件（`World.drawn_not_enough`）。
+- **什么推出它。**
+  - 加上一条要求依存的规律，即取用 `c` 即依存 `c`，读法给出承继（`Flow.inherits_of_drawn`）。
+  - 在满足平衡、耗散、体现与活动需要支持的有限世界中，传递恰是承继（`World.transmitting_iff_inherits`），所以读法加上这条规律给出传递（`World.transmitting_of_drawn`）。
+  - 这不是空的（`World.bearingHatch_derived`），二者都需要（`World.drawn_and_link_needed`）。
+
+其余七个前提只限制依存；传递要求给予者的依存，所以任何推出都需要一条要求某个依存存在的规律。
+
+以下读法是 AI 的，待 Ren 定：
+- 传递是开始作为条件而在之时依存形成的规律；
+- 世系中新形成的依存（幼体依存亲代）不在传递之内，是对应问题；
+- 是否采用取用即依存，或另一条形成的规律；
+- 是否把 `World.Transmitting` 放宽为 `TransmitsFromSome`。
+
+不含伦理谓词、排序或公理。
+
+
+**复用、产出与检查。** 复用 [evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md)、[map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md)；本节的确切增量与消费者接口由 [transmission-is-inheritance-and-need](../../../../theories/becoming/results/records/transmission-is-inheritance-and-need.md)、[transmission-independent-where-it-binds](../../../../theories/becoming/results/records/transmission-independent-where-it-binds.md) 记录。当前 [Becoming.Transmission](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) 的 64 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
+
+
+## 106. 没有哪个来源复现的供给（P85）
+
+**P85：不靠哪个特定来源得到供给。** 记录 continuing-self-fed-from-beyond 证明了延续的家族从其外得到供给，且不必有哪个来源条件复现（`Lone.fed_not_recurring`）；`Lone` 中输送的始终是同一个源，该记录留下一个没有哪个来源形成复现的见证。新的核心模块 `Becoming.Succession`（L3，导入 `Becoming.Continuation`），不用公理，不用前提，给出这个见证（`Successive`）。
+- **相继的来源。** 每步有它自己的源，只在那一步在场并活跃，燃烧那一步的燃料，向池给予一份；一个吃者每步从池取用一份（`Successive.flow`、`Successive.web`）。
+- **每步得到供给，不靠哪个特定来源。** 流平衡、耗散，只有活跃的形成给予；吃者每步从池取用，池每步从其外得到供给；没有哪个来源形成在两步参与，也没有哪个在两步活跃（`Successive.relay`，由 `Successive.takes_part_once` 推出）。
+
+与 `Lone` 合看，特定的来源条件与特定的来源形成都不必复现：延续需要的是得到供给，不是哪一个供给者。每个源在它自己的那一步仍被需要：去掉它，那一步不被供给。可移除的形式，即同一世界去掉一个来源形成后仍得到供给，没有证明；去掉形成会改变水平，所以那是另一个流，以世界为单位的形式是它的位置。也没有证明来源从流中生起（这里每个源在它的步被给定）。读法是 AI 的，待 Ren 定；不含伦理谓词、排序或公理。
+
+
+**复用、产出与检查。** 复用 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)；本节的确切增量与消费者接口由 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md) 记录。当前 [Becoming.Succession](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean) 的 6 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
 
 
 ## English summary
@@ -7722,7 +7855,7 @@ Readings (the AI's, pending Ren; Ren agreed with the reply containing them): nei
 
 Readings (the AI's, pending Ren):
 - "Situationally" is the bound. A finite record is a projection, and the bound makes it lose nothing of the course.
-- The controller is inside the bounded world. Only a world answering its learner escapes that learner, and such a world exceeds the bound.
+- The controller is inside the bounded world. A demonstrated obstruction is a world answering every claim of its learner: such a world exceeds the bound. This does not characterize every way the learner can fail outside its bound.
 - With a bound, a class's name is its finite future.
 - Knowing the bound and not knowing it differ not in whether the learner ends right but in when, and in whether it can know it is: the learner that knows it is right from `2N - 1` on and never refuted; the one that does not is right in the end, after refutations, and never knows when.
 
@@ -7730,7 +7863,7 @@ Fine–Wilf, Moore and Gold are cited as the known results. The exactness of `N 
 
 **P76: what histories fix.** After Ren's question on how enclosed the theory is, Ren set the goal "move towards 100%". Completeness in the strong sense, the laws of a kind being all its laws, had held for counting only. P69 named where a law and its histories do not correspond, dead ends and splices; P76 shows that these are the whole of it, and gives a constructive condition under which tests fix likeness. A new core module `Becoming.Histories` (L3, imports `Becoming.Unfolding` only), no axiom, no premise.
 - **Law and history, complete.** The law a family of histories shows is the least law admitting each of them (`ShownBy`, `shownBy_le_iff`). A family is the family of some law's histories exactly where it holds every sequence made of its own steps (`SpliceClosed`, `family_iff`), and of a determined law's exactly where it is also consistent (`determined_family_iff`). Two laws admit the same histories exactly where they have the same live steps, those some history takes (`live`, `same_histories_iff`); the dead end's step is not live (`DeadEnd.not_live`). So laws up to dead ends and families holding their splices correspond one to one. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (`same_finite_histories_iff`, `finite_family_iff`).
-- **Tests and likeness.** Where both frames are determined up to likeness, configurations are alike exactly where they pass the same tests, the same courses open and the same claims realizable after each (`SameTests`, `alike_iff_sameTests`). With branching they do not: a frame choosing after its first move and one choosing at it pass the same tests and are not alike (`Choosing.not_alike`).
+- **Tests and likeness.** Where both frames are determined up to likeness, configurations are alike exactly where they pass the same tests, the same courses open and the same claims realizable after each (`SameTests`, `alike_iff_sameTests`). Without that condition they need not: a frame choosing after its first move and one choosing at it pass the same tests and are not alike (`Choosing.not_alike`).
 
 The readings are the AI's, pending Ren: with Ren's agreement that the law is read off the unfolding, a law read off histories is a family holding its splices, and what a law set over the unfolding can add are dead ends no history shows; the splice is memory's absence; tests cannot see when a choice is made. Not derived: whether an actual unfolding's histories stop; branching tests fixing likeness in the core (classical in the periphery; a constructive proof for finitely many configurations is open). No independent review yet.
 
@@ -7772,4 +7905,119 @@ Records:
 
 Receipt 20261013T090346.930838Z (Counterfactual 46); periphery receipt 20261013T090430.379669Z. No independent review yet; the author's counterreview is in section 100.
 
-The package now has 3348 theorems and 4882 declaration audits, over a core closure of 67 modules and a package of 65, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 100 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T090430.379669Z).
+**P77: what listing once commits to.** Under Ren's "move towards 100%", the zero-premise plan's commitment that each relatum is listed once and families are without repetition (`Distinct`) is found out, as P58 did for decidedness. A new core module `Becoming.Listing` (imports `Decidedness`, `Sampling`, `Resolution`), no axiom, no premise, no existing module changed.
+- **Listing once is decided identity.** A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`), constructively (`listOnce`), and that it can be is never refuted (`not_not_listsOnce`). The number of relata a list holds is one number and exists exactly then (`Numbers.unique`, `numbers_iff_decided`).
+- **Refutations need nothing; sums and counts need it locally.** A law refuting something wherever a list is listed once refutes it with no premise (`not_of_listsOnce`), so the refutation laws hold of families however listed, and dissipation brings every enumerated world to rest (`World.Enumerated.rests`). A step is enclosed exactly where some closed family has decided identity among its members (`Flow.enclosed_iff`); a world is finite exactly where it is enumerated and identity among its relata is decided (`World.finite_iff`). Repetition is not harmless: a sum law fails over a family listing a member twice (`Doubled.needs_once`).
+- **The boundary.** Every list over a type can be listed once exactly where identity on the type is decided (`listsOnce_all_iff`). Read through relations, up to indiscernibility, the number of relata of every list of every world is fixed exactly under excluded middle (`World.Indiscernible`, `World.numbers_indiscernible_iff_em`), and names count twice what no relation tells apart (`World.probe_named_apart`).
+- **By occurrence.** Read by its occurrences every flow lists what takes part once with no decided identity and keeps its amounts (`Flow.byOccurrence_once`, `Flow.byOccurrence_balances`); occurrences are not followed across steps (`Flow.byOccurrence_uncounted`).
+
+Inventory: 169 declarations in 15 modules use `Distinct`; 30 need no premise (6 proved as corollaries, the rest classified), 33 are local conditions of a sum, 31 of a count, 9 re-founded by occurrence, the rest numbers, tools or witnesses. The readings are the AI's, pending Ren. Built by an Opus subagent of the session and checked by the session (85 theorems, empty axiom reports). No independent review yet.
+
+
+**Reuse, output and verification.** Reuses [counts-exist-where-decided](../../../../theories/becoming/results/records/counts-exist-where-decided.md), [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md); the exact delta and consumer interfaces are recorded in [listing-once-is-decided-identity](../../../../theories/becoming/results/records/listing-once-is-decided-identity.md), [relata-counted-up-to-indiscernibility](../../../../theories/becoming/results/records/relata-counted-up-to-indiscernibility.md). The current [Becoming.Listing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Listing.lean) has 85 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+**P78: the step index, re-founded.** Under Ren's "move towards 100%", the zero-premise plan's commitment to a shared discrete index of steps is examined, as P69 examined the starting point. A new core module `Becoming.Order` (imports `Becoming.Sampling` only), no axiom, no premise, no existing module changed. It makes the two moves converse to Sampling's coarser reading: inserting idle steps, and taking two exchanges in the other order.
+- **Stuttering.** A world read through a stuttering meets the premises exactly where it meets them (`World.stutter_premises_iff`), its totals over every stretch are those of the stretch read (`stutter_total`), and arising, ceasing and change recur exactly where they recurred (`World.stutter_arisingRecurs_iff`). What changes is what is counted per step: with idle steps arbitrarily late nothing is more without end (`Flow.sample_not_more`), and a reserve must double when every step is read twice (`Lapse.reserve_step_relative`).
+- **Commutation.** Two consecutive exchanges that sides split can be taken in the other order: balance, dissipation and embodiment hold exactly where they held, and counts and totals over a stretch are kept (`World.commute_laws`, `World.commute_counts`), under any number of such commutations too (`Reorders.laws`, `Reorders.totals`), Mazurkiewicz trace equivalence.
+- **What the order carries.** The order registers through dependence and through a shared relatum: in `Crossing` a relatum is active without support in the other order, and in `Arising` a relatum gives before it is active (`Crossing.order_registers`, `Arising.order_registers`).
+
+- **The order as an object (P78b).**
+  - A footprint says which relata each exchange touches; where it contains the exchanges, the joins between exchanges generate a strict partial order (`Footprinted.Precedes`).
+  - Commuting unjoined exchanges keeps that order up to the renumbering (`Footprinted.reorder_precedes`).
+  - Conversely, by constructive bubble sort, the renumberings of a stretch reached so are exactly those keeping it. A world with the same exchanges, footprints and changes in such an order, from the same start, agrees with a reordering at every step (`Footprinted.sorts_iff`, `Footprinted.converse`).
+- **What carries (P78b).**
+  - Along unjoined commutations, every premise carries both ways (`Footprinted.reorder_premises`).
+  - Along any reordering, the counts of arising and ceasing carry (`Reorders.counts`).
+  - Commuting joined exchanges breaks activity needing support and only active relata giving (`Crossing.reorders_joined`, `Arising.reorders_joined`).
+- **Removing idle steps (P78b).** The world without the idle steps of a stuttering (`World.withoutIdle`) meets every premise exactly where the world does. It has a census exactly where the world does, and the same totals and counts over any stretch (`World.withoutIdle_premises`, `World.withoutIdle_counted`, `World.withoutIdle_totals`).
+
+The readings are the AI's, pending Ren:
+- The step index carries nothing beyond the order of change for the laws, totals and recurrence.
+- Rates are relative to the unit of the reading.
+- Given a footprint, the order the laws need is the partial order of joined exchanges, not a sequence of steps.
+
+Not shown:
+- the least footprint;
+- the Foata normal form;
+- the census along reorderings.
+
+Built by Opus subagents of the session (266 theorems, empty axiom reports). No independent review yet.
+
+
+**Reuse, output and verification.** Reuses [laws-at-coarser-steps](../../../../theories/becoming/results/records/laws-at-coarser-steps.md); the exact delta and consumer interfaces are recorded in [only-the-order-of-change-registers](../../../../theories/becoming/results/records/only-the-order-of-change-registers.md), [exchanges-commute-unless-joined](../../../../theories/becoming/results/records/exchanges-commute-unless-joined.md), [order-of-exchanges-is-the-invariant](../../../../theories/becoming/results/records/order-of-exchanges-is-the-invariant.md). The current [Becoming.Order](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) has 266 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+**P79: the laws of one step are all the laws of one step.** Under Ren's "move towards 100%", completeness in the strong sense, which held for counting only (`tally_iff_counted`), is proved for Locality's laws of one step. A new core module `Becoming.OneStep` (imports `Counting` and `Sampling`), no axiom, no premise, no existing module changed.
+- **Exact under each condition.** A pattern (the passages of a family's members, the count of takers, whether something exchanges) is shown by some world exactly when it obeys the law of every step (`OneStep.every_iff`), and on a family balanced on, running down, closed, or both, exactly when it also obeys that condition's law (`OneStep.balance_iff`, `OneStep.runsDown_iff`, `OneStep.closed_iff`, `OneStep.runsDownClosed_iff`); so a property holds of every such step exactly when it holds of every pattern obeying the law (`OneStep.laws`). Across runs on one family the only further law is that what stands after each step stands before the next (`OneStep.Chained`, `OneStep.run_every_iff`).
+- **Two laws the spine had not stated.** Something taken has a taker (`Flow.sign_uptake_le_takers`); nothing is taken beyond what stood with what was given (`Flow.BalancesOn.taken_le`). Without the first, the stated laws allow a pattern no world shows (`OneStep.stated_not_realized`); with it they are the whole law for a family running down closed (`OneStep.runsDownClosed_iff_stated`).
+
+- **Givers, capacity and activity (P79b).**
+  - Something given has a giver: the givers number at least one wherever anything is given, and at most what is given (`OneStep.Givers`).
+  - Running down adds exactly that every giver takes (`Flow.DissipatesOn.renewers_le_takers`).
+  - Capacity adds exactly that what is given is at most capacity times the givers (`OneStep.every_capacity_iff`).
+  - Activity at the step adds no law (`OneStep.every_active_iff`).
+- **Families chosen step by step (P79b).**
+  - Where the family may change at each step, no condition, balance and closure join no step to the next (`OneStep.step_every_iff`).
+  - Running down joins steps by continuity up to order: at each positive level as many stand after a step as before the next (`OneStep.Continues`, `OneStep.step_runsDown_iff`).
+  - This is strictly weaker than following position by position (`OneStep.steps_not_run`, `OneStep.vanishing_steps`).
+
+The readings are the AI's, pending Ren.
+
+Not covered:
+- counting active relata (it needs activity decided);
+- capacity and activity over runs.
+
+Built by Opus subagents of the session (311 theorems, empty axiom reports). No independent review yet.
+
+
+**Reuse, output and verification.** Reuses [laws-of-one-step](../../../../theories/becoming/results/records/laws-of-one-step.md), [whole-law-of-counting](../../../../theories/becoming/results/records/whole-law-of-counting.md); the exact delta and consumer interfaces are recorded in [laws-of-one-step-complete](../../../../theories/becoming/results/records/laws-of-one-step-complete.md), [one-step-missing-laws](../../../../theories/becoming/results/records/one-step-missing-laws.md), [runs-on-families-chosen-step-by-step](../../../../theories/becoming/results/records/runs-on-families-chosen-step-by-step.md). The current [Becoming.OneStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean) has 311 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+**P82: weighted histories.** Ren asked, of laws that are not determined, whether one can still integrate over their many patterns and loops as with Feynman diagrams, how accurately, with what losses, and whether the theory is sound. The core's laws that are not determined state what is possible, not how much. P82 states what a weighting of steps adds and proves where the sum over histories is exact and where it loses. A new core module `Becoming.Weighted` (L3, imports `Becoming.Capture` and `Becoming.Resolution` for two arithmetic lemmas), no axiom; the weights come with their laws (`Weights`), and each theorem holds for every weighting and listing it names.
+- **Exact.** With the moves and configurations listed, the sum over every course of `n` steps of the composed weights is `n` steps of the transfer (`Weights.sum_courses`): exponentially many courses, summed one step at a time. A reading that keeps the laws of the weights can be taken course by course or at the end (`Weights.Hom.transfer`).
+- **Possibility is the core's relation.** With possibility weights reading a process's steps, the transfer after `n` steps holds exactly where a trace of `n` moves leads where the end reading holds (`possibility_transfer_iff`); the count of courses is not zero exactly where a course exists (`support`, `counting_transfer_iff`).
+- **Integrating out.** What is read through a description after every number of steps depends on the description alone exactly where it does after one step (`Weights.lumped_iff`), the weighted form of `carries_law_iff`; where it does not, the description carries no weighted law (`Lumping.loses`).
+- **The losses, each a theorem.** A truncation misses exactly what it drops, and where alternatives only add it bounds the whole from below (`Weights.truncation`, `counting_truncation_le`). With signed counts possible courses can balance, a truncation can mislead, and no reading into possibility that keeps the join of alternatives sees the cancellation (`signed`, `Interference.cancels`, `Interference.truncation_misleads`, `Interference.unseen`). A weighting depending on how one came is not one of steps on the configurations it is given on, and is one on configurations keeping what it needs (`Memory.not_of_steps`, `Memory.of_kept`). Around a loop of two moves the courses double at every step (`Loop.courses_double`).
+
+The readings are the AI's, pending Ren: "Fermi's diagrams" read as Feynman diagrams; the sum is exact, for any number of courses, with finitely many configurations and a bounded horizon, and exact through a coarser description exactly where it is lumpable; the limits of accuracy are the four losses. Not derived: where weights come from or which weighting an actual unfolding has; amplitudes with phases (periphery); sums over infinitely many configurations or an unbounded horizon; that keeping the whole course restores a weighting of steps for weights in general. No independent review yet.
+
+
+**Reuse, output and verification.** Reuses [projection-carrying-a-law](../../../../theories/becoming/results/records/projection-carrying-a-law.md); the exact delta and consumer interfaces are recorded in [sum-over-histories-exact](../../../../theories/becoming/results/records/sum-over-histories-exact.md), [losses-of-the-sum-over-histories](../../../../theories/becoming/results/records/losses-of-the-sum-over-histories.md). The current [Becoming.Weighted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Weighted.lean) has 35 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+**P84: transmission, derived or bounded.** `Becoming.Evolution` takes transmission as a premise (`Flow.TransmitsWithin`). Under it, a relatum descending across a step that depends on `c` at its first standing step descends only from relata depending on `c` at the giving step, and needs `c` at most `δ` more. P84 asks whether the premise follows from the core's others. It states the premise as a law of one descent, and proves what derives it and where no derivation reaches. The work is a new core module, `Becoming.Transmission` (L3, imports `Becoming.Premises`), with no axiom.
+- **What transmission is.**
+  - At one descent, transmission is inheritance together with the need within a bound (`Web.transmits_at_iff`, `Flow.transmitsWithin_iff`). Inheritance means the descendant's dependence at its first standing step was held by the giver at the giving step.
+  - Where the descendant held no dependence before it stood, inheritance is exactly the law of forming: a dependence forming at a relatum as it comes to stand is one its giver held (`Web.inheritsAt_iff_forming`).
+  - In general, forming and holding make inheritance where the earlier holding is decided. Asked of every descent, that is excluded middle (`split_iff_em`).
+- **No new dependence by descent.** Under balance and inheritance, nothing coming to stand depends after the step on a condition nothing taking part depended on (`Flow.no_new_dependence`).
+- **The evolution laws, with the premise inside.** The evolution bounds hold at the one descent they use (`Flow.inherited_supported_at`). At a relatum coming to stand they need only some supported giver (`Flow.fromSome_supported`). That form is strictly weaker (`TwoGivers.twofold`).
+- **Independent wherever it binds.**
+  - Dropping one dependence of the giver changes no level, activity, drawing, need or flow. It keeps every other premise and finiteness, and breaks transmission (`World.drop_but`).
+  - So a condition kept by dropping a dependence that implies transmission implies that transmission does not bind (`World.vacuous_of_drop_invariant`).
+  - The reading of drawing is such a condition (`World.drawn_not_enough`).
+- **What derives it.**
+  - With one law requiring dependence, that drawing on `c` is depending on it, the reading gives inheritance (`Flow.inherits_of_drawn`).
+  - In a finite world meeting balance, dissipation, embodiment and activity needing support, transmission is exactly inheritance (`World.transmitting_iff_inherits`), so the reading with the law gives transmission (`World.transmitting_of_drawn`).
+  - This is not vacuous (`World.bearingHatch_derived`), and each of the two is needed (`World.drawn_and_link_needed`).
+
+The other seven premises only limit dependence; transmission requires the giver's, so any derivation needs a law requiring some dependence to exist.
+
+Readings are the AI's, pending Ren:
+- transmission as a law of forming at coming to stand;
+- dependences newly formed by descent (young depending on their parents) as outside it, a matter of correspondence;
+- whether drawing being depending, or another law of forming, is adopted;
+- whether `World.Transmitting` is weakened to `TransmitsFromSome`.
+
+No ethical predicate, ranking or axiom occurs.
+
+
+**Reuse, output and verification.** Reuses [evolution-on-descent](../../../../theories/becoming/results/records/evolution-on-descent.md), [map-of-premises](../../../../theories/becoming/results/records/map-of-premises.md); the exact delta and consumer interfaces are recorded in [transmission-is-inheritance-and-need](../../../../theories/becoming/results/records/transmission-is-inheritance-and-need.md), [transmission-independent-where-it-binds](../../../../theories/becoming/results/records/transmission-independent-where-it-binds.md). The current [Becoming.Transmission](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Transmission.lean) has 64 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+**P85: fed by no particular source.** The record continuing-self-fed-from-beyond proved that a continuing family is fed from beyond and that no source condition need recur (`Lone.fed_not_recurring`); in `Lone` the one source does all the conveying, and the record left open a witness in which no particular source formation recurs. A new core module `Becoming.Succession` (L3, imports `Becoming.Continuation`), no axiom, no premise, gives it (`Successive`).
+- **Sources in succession.** Each step has its own source, present and active at that step only, which burns that step's fuel and gives the pool one unit; one eater takes one unit from the pool at every step (`Successive.flow`, `Successive.web`).
+- **Fed at every step, by no particular source.** The flow balances, is dissipative and only active formations give; the eater takes from the pool at every step and the pool is fed from beyond at every step; no source formation takes part at two steps and none is active at two (`Successive.relay`, from `Successive.takes_part_once`).
+
+With `Lone`, neither a particular source condition nor a particular source formation need recur: what continuing needs is being fed, not any one feeder. Each source is still needed at its own step: without it that step is not fed. The removable form, the same world still fed with one source formation taken away, is not shown; taking a formation away changes the levels, so it is another flow, and the world-level form is its place. Not shown either: that the sources arise from the flow (here each is given at its step). The reading is the AI's, pending Ren; no ethical predicate, ranking or axiom occurs.
+
+
+**Reuse, output and verification.** Reuses [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md), [derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md); the exact delta and consumer interfaces are recorded in [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md). The current [Becoming.Succession](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean) has 6 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
+
+The package now has 4115 theorems and 5850 declaration audits, over a core closure of 73 modules and a package of 71, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 106 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T091033.730173Z).

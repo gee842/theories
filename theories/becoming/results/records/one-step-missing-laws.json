@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "id": "one-step-missing-laws",
+  "title": {
+    "zh": "所陈述的一步之律所遗漏的：有所取就有取用者；所取不超过所立加所给",
+    "en": "What the stated laws of one step miss: something taken has a taker, and nothing is taken beyond what stood with what was given"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "claim": {
+    "zh": "从一个家族所取的有取用它的关系项：取用量的符号至多是取用者之数（Flow.sign_uptake_le_takers）。在家族耗减的一步，恰在家族的总量下降时有所取（Flow.RunsDownOn.taken_iff）。在一个跨此步被平衡的条件处，所取不超过步前所立加所给（Flow.BalancesOn.taken_le）。对跨此步耗减并封闭的家族，Locality 中所陈述的律（每个成员平衡、按取用者下降、恰在总量下降时有立的变化与交换）加上“有所取就有取用者”就是全部规律（OneStep.runsDownClosed_iff_stated）；没有后者，它们允许一个条件被取用与被给予相等、无人取用而通过，而没有世界显示它（OneStep.stated_not_realized）。在一个被平衡的条件处，步前层级、所取与所给以及是否来到或停止立，恰在所取不超过所立加所给、来到与停止如 Flow.BalancesOn.comesToStand_iff 与 Flow.BalancesOn.ceasesToStand_iff 所定时一同显示（OneStep.standing_iff）；单凭这些读法允许所取多于所有（OneStep.standing_bound_needed）。不加前提。",
+    "en": "Something taken from a family has a relatum taking it: the sign of the uptake is at most the count of takers (Flow.sign_uptake_le_takers). Across a step at which a family runs down, something is taken from it exactly when its total falls (Flow.RunsDownOn.taken_iff). At a condition balanced across a step, nothing is taken beyond what stood before with what was given (Flow.BalancesOn.taken_le). For a family running down closed across the step, the laws as stated in Locality (balance at each member, the fall by the takers, some standing changing and something exchanging exactly when the total falls) with the law that something taken has a taker are the whole law (OneStep.runsDownClosed_iff_stated); without it they allow a condition taken from and given to alike, passed through with nothing taking from it, which no world shows (OneStep.stated_not_realized). At one balanced condition, its level before, what is taken and given, and whether it comes or ceases to stand are shown together exactly where nothing is taken beyond what stood with what was given and coming and ceasing are as Flow.BalancesOn.comesToStand_iff and Flow.BalancesOn.ceasesToStand_iff fix them (OneStep.standing_iff); the readings alone allow more taken than there was (OneStep.standing_bound_needed). No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提。",
+      "en": "No premise."
+    }
+  ],
+  "correspondence": {
+    "zh": "P79（工作板），同上：完备性的证明发现所陈述的一步之律缺两条。读法（AI 的，待 Ren）：有所取就有取用者，以及所取不超过所立加所给，是一步之律的一部分，此前只隐含在定义中。见整合文档 §103。",
+    "en": "P79 (work board), as above: the proof of completeness found two laws missing from those stated of one step. Reading (the AI's, pending Ren): that something taken has a taker, and that nothing is taken beyond what stood with what was given, belong to the laws of one step, and were before only implicit in the definitions. See the integration document §103."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
+  "aliases": [
+    "Becoming.Flow.sign_uptake_le_takers",
+    "Becoming.Flow.RunsDownOn.taken_iff",
+    "Becoming.Flow.BalancesOn.taken_le",
+    "Becoming.OneStep.runsDownClosed_iff_stated",
+    "Becoming.OneStep.stated_not_realized",
+    "Becoming.OneStep.standing_iff",
+    "Becoming.OneStep.standing_bound_needed",
+    "a taker for what is taken",
+    "有所取就有取用者"
+  ],
+  "dependencies": [
+    {
+      "id": "laws-of-one-step-complete",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "同一模块的模式与见证世界。",
+        "en": "The same module's patterns and witness world."
+      },
+      "interface": {
+        "output": {
+          "zh": "模式与其实现。",
+          "en": "Patterns and their realization."
+        },
+        "input": {
+          "zh": "遗漏之律的必要性。",
+          "en": "The necessity of the missing laws."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "Locality 所陈述的一步之律：这里补上两条。",
+        "en": "Locality's stated laws of one step: here two are added."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
+      "detail": {
+        "zh": "模式 [⟨1,1,1,1⟩]、零个取用者、无交换满足所陈述的每条律而没有世界显示它（OneStep.stated_not_realized）。",
+        "en": "The pattern [⟨1,1,1,1⟩] with no taker and nothing exchanging satisfies every stated law and is shown by no world (OneStep.stated_not_realized)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.OneStep 的 311 项定理全部空依赖，其中含 Flow.sign_uptake_le_takers、Flow.RunsDownOn.taken_iff、Flow.BalancesOn.taken_le、OneStep.runsDownClosed_iff_stated、OneStep.stated_not_realized、OneStep.standing_iff与 OneStep.standing_bound_needed；同一回执覆盖包内 71 个模块（含只作导入的根模块与桥接），共 4115 项定理／5850 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091033.730173Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 73 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §103；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 311 theorems of Becoming.OneStep all have empty axiom reports, among them Flow.sign_uptake_le_takers, Flow.RunsDownOn.taken_iff, Flow.BalancesOn.taken_le, OneStep.runsDownClosed_iff_stated, OneStep.stated_not_realized, OneStep.standing_iff and OneStep.standing_bound_needed. The same receipt covers the package's 71 modules (including the import-only root and the bridge) with 4115 theorems/5850 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091033.730173Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 73 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §103 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
+      "role": "proof",
+      "sha256": "3f2bc307acff3e5dfbd3e7af5369c7a1386ad2f68c9dad29ad021b5298cf99a2",
+      "declarations": [
+        "Becoming.Flow.sign_uptake_le_takers",
+        "Becoming.Flow.exchangesAt_of_uptake",
+        "Becoming.Flow.exchangesAt_of_replenishment",
+        "Becoming.Flow.BalancesOn.taken_le",
+        "Becoming.Flow.ExchangesAt.closed",
+        "Becoming.Flow.RunsDownOn.taken_iff",
+        "Becoming.OneStep.Stated",
+        "Becoming.OneStep.runsDownClosed_iff_stated",
+        "Becoming.OneStep.stated_not_realized",
+        "Becoming.OneStep.standing_iff",
+        "Becoming.OneStep.standing_bound_needed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "role": "proof",
+      "sha256": "1dc3980839b53d5042c799f2c6d8f97a7c2a83b33c444898c0cf4409cde5c184",
+      "declarations": [
+        "Becoming.Flow.BalancesOn.comesToStand_iff",
+        "Becoming.Flow.BalancesOn.ceasesToStand_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OneStep.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.OneStep",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Locality",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "在 Locality 的陈述旁记下这两条律（整合时）。",
+    "en": "Note the two laws beside Locality's statement (at integration)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13：接续并整合 P79 的现存证明包；见整合文档 §103。",
+      "en": "2026-10-13: resumed and integrated the existing P79 proof package; see §103 of the integration note."
+    }
+  ]
+}

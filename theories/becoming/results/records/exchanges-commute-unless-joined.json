@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "id": "exchanges-commute-unless-joined",
+  "title": {
+    "zh": "独立的交换可交换：两侧分开两步时，平衡、耗散、体现、总量与计数都保持，在任意次这样的交换下也如此；次序恰经共享的关系项或依存被登记",
+    "en": "Independent exchanges commute: where sides split two steps, balance, dissipation, embodiment, totals and counts are kept, under any number of such commutations too; the order registers through a shared relatum or a dependence"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "claim": {
+    "zh": "Flow.Commuted L L' t：L' 以相反次序取 L 跨步 t 与 t+1 的交换，其余交换照旧；Web.Commuted W W' t：W 的每个立、活动、依存、需要与汲取至多跨两步之一变化，W' 跨另一步作此变化（Moved）。两个关系都对称（Flow.Commuted.symm、Web.Commuted.symm），在两侧说明哪些关系项跨哪一步变化并分开两步之处由 Flow.swap 与 Web.commute 实现（Web.Split、Flow.swap_commuted、Web.commute_commuted）。平衡、耗散与体现在交换后的世界中恰在原世界中成立时成立（World.commute_laws、Flow.Commuted.balances_iff、Flow.Commuted.dissipative_iff、Web.Commuted.embodied）：立的量相互交换（Exchanged），其升降互换位置。在含有两步的任何段上，有限家族的生起与止息计数、总立的升降与下降之步的计数都与原世界相同（World.commute_counts）。重复交换生成 Reorders，保持平衡、耗散与体现（Reorders.laws），并在含有每对被交换之步的段上保持总量（Reorders.totals）：这是以两侧分开两步为独立的 Mazurkiewicz 迹等价。次序经依存与共享的关系项被登记，各有见证：活动需要支持在没有依存跨越两侧时于交换后保持（Web.commute_dependent），而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃（Crossing.order_registers）；只有活跃者给予在交换后保持于没有给予者的活动被第一步开始或被第二步结束之处（Flow.Commuted.acting），而在 Arising 中跨第一步生起的关系项跨第二步给予，次序相反时它在活跃之前给予（Arising.order_registers）。有一个足迹说出每个交换触及哪些关系项、并包含这些交换时（Footprinted、Footprinted.Contains），交换相邻而不相连的交换是以足迹为两侧的 Reorders 的一步（Footprinted.split），任意多次这样的交换双向保持每个前提，其中有活动需要支持、只有活跃者给予与取用、以同一界的传递（Footprinted.reorder_premises）。沿任意 Reorders，包括相连的交换，在含有每对被交换之步的段上，两个世界中活动都可判定时，生起与止息的计数保持（Reorders.counts）。只给两侧而无足迹的 Reorders 可以交换每个包含它们的足迹都相连的交换，这样做破坏活动需要支持（Crossing.reorders_joined）与只有活跃者给予（Arising.reorders_joined）：这两个前提恰沿不相连交换的交换而保持。不加前提。",
+    "en": "Flow.Commuted L L' t: L' takes the exchanges of L across the steps from t and t+1 in the other order and every other exchange as L does; Web.Commuted W W' t: each standing, activity, dependence, need and drawing of W changes across at most one of the two steps, and W' makes that change across the other (Moved). Both relations are symmetric (Flow.Commuted.symm, Web.Commuted.symm) and are realized by Flow.swap and Web.commute wherever sides say which relata change across which step and split the two steps (Web.Split, Flow.swap_commuted, Web.commute_commuted). Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world (World.commute_laws, Flow.Commuted.balances_iff, Flow.Commuted.dissipative_iff, Web.Commuted.embodied): the standing amounts exchange (Exchanged), their rises and falls changing places. Over any stretch holding both steps, the counts of a finite family's arising and ceasing, the rises and falls of a family's total standing and the steps at which it falls are those of the world (World.commute_counts). Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment (Reorders.laws) and, over a stretch holding every commuted pair, the totals (Reorders.totals): Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them. The order registers through dependence and through a shared relatum, each with a witness: activity needing support holds after commuting where no dependence crosses the sides (Web.commute_dependent), and in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support (Crossing.order_registers); only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second (Flow.Commuted.acting), and in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active (Arising.order_registers). With a footprint saying which relata each exchange touches and containing the exchanges (Footprinted, Footprinted.Contains), commuting neighbouring exchanges not joined is a step of Reorders with the footprint as sides (Footprinted.split), and any number of such commutations keeps every premise in both directions, activity needing support, only active relata giving and taking and bounded transmission with the same bound among them (Footprinted.reorder_premises). Along any Reorders, joined commutations included, the counts of arising and ceasing over a stretch holding every commuted pair are kept where activity is decided in both worlds (Reorders.counts). Plain Reorders, its sides given without a footprint, can commute exchanges that every containing footprint joins, and doing so breaks activity needing support (Crossing.reorders_joined) and only active relata giving (Arising.reorders_joined): these two premises carry exactly along commutations of exchanges not joined. No premise."
+  },
+  "hypotheses": [
+    {
+      "zh": "交换是相继两步的；两侧是给定的，不由世界导出；每个立与活动只跨两步之一变化。",
+      "en": "Commutation is of consecutive steps; the sides are given, not derived from the world; each standing and activity changes across one of the two steps."
+    },
+    {
+      "zh": "逆方向——同样交换、同样依存次序的任意两个序列由 Reorders 相关（Foata 范式）——没有证明，偏序本身没有形式化。",
+      "en": "The converse, that any two sequences of the same exchanges with the same order of dependence are related by Reorders (Foata normal form), is not proved, and the partial order itself is not formalized."
+    }
+  ],
+  "correspondence": {
+    "zh": "P78（工作板），同上。读法（AI 的，待 Ren）：在次序之内，被登记的是经关系项或依存相连的交换的次序；两者都不相连的交换可以任意次序取。于是规律所需的次序会是交换的偏序而不是步的序列；使之精确的逆方向没有证明。见整合文档 §102。",
+    "en": "P78 (work board), as above. Reading (the AI's, pending Ren): within the order, what registers is the order of exchanges joined through a relatum or a dependence; exchanges joined by neither may be taken in either order. The order the laws need would then be a partial order of exchanges, not a sequence of steps; the converse that makes this exact is in order-of-exchanges-is-the-invariant. See the integration document §102."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+  "aliases": [
+    "Becoming.Flow.Commuted",
+    "Becoming.Web.Commuted",
+    "Becoming.Web.Split",
+    "Becoming.World.commute",
+    "Becoming.World.commute_laws",
+    "Becoming.World.commute_counts",
+    "Becoming.Reorders",
+    "Becoming.Reorders.laws",
+    "Becoming.Reorders.totals",
+    "Becoming.Crossing.order_registers",
+    "Becoming.Arising.order_registers",
+    "commutation",
+    "交换次序",
+    "Mazurkiewicz traces",
+    "Mazurkiewicz 迹",
+    "Becoming.Footprinted",
+    "Becoming.Footprinted.Contains",
+    "Becoming.Footprinted.split",
+    "Becoming.Footprinted.reorder_premises",
+    "Becoming.Reorders.counts",
+    "Becoming.Crossing.reorders_joined",
+    "Becoming.Arising.reorders_joined",
+    "footprint",
+    "足迹"
+  ],
+  "dependencies": [
+    {
+      "id": "only-the-order-of-change-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "同一模块的算术与段上总量的引理。",
+        "en": "The same module's arithmetic and stretch-total lemmas."
+      },
+      "interface": {
+        "output": {
+          "zh": "段上的总量与计数。",
+          "en": "Totals and counts over a stretch."
+        },
+        "input": {
+          "zh": "交换后的总量与计数。",
+          "en": "Totals and counts after commuting."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "laws-of-one-step",
+      "detail": {
+        "zh": "平衡就是变化的平衡：交换后的世界上一步的规律。",
+        "en": "Balance is balance of change: the laws of one step in the commuted world."
+      }
+    },
+    {
+      "id": "order-of-exchanges-is-the-invariant",
+      "detail": {
+        "zh": "交换的偏序与逆方向在另一记录中。",
+        "en": "The partial order of exchanges and the converse are in the other record."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "detail": {
+        "zh": "Crossing 与 Arising：两个可交换且仍平衡的交换，次序相反时活动需要支持或只有活跃者给予不再成立。",
+        "en": "Crossing and Arising: two exchanges that commute and still balance, where in the other order activity needing support, or only active relata giving, fails."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "足迹是给定的，不由世界推出（最小的足迹需要“被变动”可判定）；存量耗减只在两步上；沿重排的普查没有证明；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The footprint is given, not derived from the world (the least footprint would need being moved decided); running down is shown only at the two steps; the census along reorderings is not shown; the readings are the AI's, pending Ren; no ethical predicate occurs."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.Order 的 266 项定理全部空依赖，其中含 Flow.Commuted、Web.Commuted、Web.Split、World.commute、World.commute_laws、World.commute_counts、Reorders、Reorders.laws、Reorders.totals、Crossing.order_registers、Arising.order_registers、Footprinted、Footprinted.Contains、Footprinted.split、Footprinted.reorder_premises、Reorders.counts、Crossing.reorders_joined与 Arising.reorders_joined；同一回执覆盖包内 71 个模块（含只作导入的根模块与桥接），共 4115 项定理／5850 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091033.730173Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 73 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §102；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 266 theorems of Becoming.Order all have empty axiom reports, among them Flow.Commuted, Web.Commuted, Web.Split, World.commute, World.commute_laws, World.commute_counts, Reorders, Reorders.laws, Reorders.totals, Crossing.order_registers, Arising.order_registers, Footprinted, Footprinted.Contains, Footprinted.split, Footprinted.reorder_premises, Reorders.counts, Crossing.reorders_joined and Arising.reorders_joined. The same receipt covers the package's 71 modules (including the import-only root and the bridge) with 4115 theorems/5850 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091033.730173Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 73 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §102 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "role": "proof",
+      "sha256": "1da2ff7f6f894440e86e022906d397d348ad63257c14ad9fd4e75b2025642784",
+      "declarations": [
+        "Becoming.Flow.SameExchange",
+        "Becoming.Flow.Commuted",
+        "Becoming.Flow.SameExchange.symm",
+        "Becoming.Flow.Commuted.symm",
+        "Becoming.Flow.SameExchange.mem",
+        "Becoming.Flow.SameExchange.taken",
+        "Becoming.Flow.SameExchange.given",
+        "Becoming.Flow.SameExchange.takers",
+        "Becoming.Flow.SameExchange.dissipatesOn_iff",
+        "Becoming.Flow.SameExchange.closedAt_iff",
+        "Becoming.Web.Commuted",
+        "Becoming.Web.Commuted.symm",
+        "Becoming.Web.Commuted.stock",
+        "Becoming.Web.Commuted.stands_between",
+        "Becoming.Web.Commuted.changes_first",
+        "Becoming.Web.Commuted.changes_second",
+        "Becoming.Web.Commuted.embodied",
+        "Becoming.Flow.Commuted.balancesOn_first",
+        "Becoming.Flow.Commuted.balancesOn_second",
+        "Becoming.Flow.Commuted.balancesOn_away",
+        "Becoming.Flow.Commuted.balances_iff",
+        "Becoming.Flow.Commuted.dissipative_iff",
+        "Becoming.Flow.Commuted.runsDownOn_first",
+        "Becoming.Flow.Commuted.runsDownOn_second",
+        "Becoming.Flow.Commuted.acting",
+        "Becoming.swapAt",
+        "Becoming.swapAt_first",
+        "Becoming.swapAt_second",
+        "Becoming.swapAt_away",
+        "Becoming.cond_of_true",
+        "Becoming.cond_of_false",
+        "Becoming.moved_of_side",
+        "Becoming.Flow.swap",
+        "Becoming.Flow.swap_commuted",
+        "Becoming.Web.commute",
+        "Becoming.Web.Split",
+        "Becoming.Web.commute_level_true",
+        "Becoming.Web.commute_level_false",
+        "Becoming.Web.commute_active_true",
+        "Becoming.Web.commute_requires_true",
+        "Becoming.Web.commute_active_away",
+        "Becoming.Web.commute_commuted",
+        "Becoming.Web.commute_dependent",
+        "Becoming.World.commute",
+        "Becoming.World.commute_laws",
+        "Becoming.World.commute_counts",
+        "Becoming.Reorders",
+        "Becoming.Reorders.laws",
+        "Becoming.Reorders.totals",
+        "Becoming.firstSide",
+        "Becoming.Crossing.act",
+        "Becoming.Crossing.standing",
+        "Becoming.Crossing.web",
+        "Becoming.Crossing.take",
+        "Becoming.Crossing.present",
+        "Becoming.Crossing.flow",
+        "Becoming.Crossing.world",
+        "Becoming.Crossing.balances",
+        "Becoming.Crossing.dependent",
+        "Becoming.Crossing.split",
+        "Becoming.Crossing.order_registers",
+        "Becoming.Arising.act",
+        "Becoming.Arising.standing",
+        "Becoming.Arising.web",
+        "Becoming.Arising.give",
+        "Becoming.Arising.present",
+        "Becoming.Arising.flow",
+        "Becoming.Arising.world",
+        "Becoming.Arising.balances",
+        "Becoming.Arising.acting",
+        "Becoming.Arising.split",
+        "Becoming.Arising.order_registers",
+        "Becoming.Footprinted",
+        "Becoming.Footprinted.world",
+        "Becoming.Footprinted.Contains",
+        "Becoming.Footprinted.Joined",
+        "Becoming.Footprinted.Precedes",
+        "Becoming.Footprinted.Joined.symm",
+        "Becoming.Footprinted.Precedes.lt",
+        "Becoming.Footprinted.Precedes.irrefl",
+        "Becoming.Footprinted.Precedes.asymm",
+        "Becoming.Footprinted.commute",
+        "Becoming.Footprinted.disjoint",
+        "Becoming.Footprinted.commute_shows_first",
+        "Becoming.Footprinted.commute_shows_second",
+        "Becoming.Footprinted.commute_shows",
+        "Becoming.Footprinted.commute_contains",
+        "Becoming.Footprinted.commute_joined",
+        "Becoming.Footprinted.commute_apart",
+        "Becoming.Footprinted.commute_precedes_of",
+        "Becoming.Footprinted.precedes_of_commute",
+        "Becoming.Footprinted.commute_precedes",
+        "Becoming.Footprinted.split",
+        "Becoming.Footprinted.reorder_acting_iff",
+        "Becoming.Footprinted.reorder_taking_iff",
+        "Becoming.Footprinted.reorder_transmits_iff",
+        "Becoming.Footprinted.reorder_dependent_iff",
+        "Becoming.Footprinted.reorder_premises",
+        "Becoming.Web.commuteDecided",
+        "Becoming.comings_of_iff",
+        "Becoming.ceasings_of_iff",
+        "Becoming.Reorders.counts",
+        "Becoming.Crossing.joined",
+        "Becoming.Crossing.reorders_joined",
+        "Becoming.Arising.joined",
+        "Becoming.Arising.reorders_joined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.Taking"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "role": "proof",
+      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
+      "declarations": [
+        "Becoming.Flow.Dissipative"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "ce4501e4f9709f649f474e56a4bd3289183165a454832e536fe89d904f356d34",
+      "declarations": [
+        "Becoming.Web.Dependent"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "a1be372add35151d7e8024152151037a0fab1a9c4c0db8d0ea7235da5ac4dd85",
+      "declarations": [
+        "Becoming.Web.Embodied"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "role": "proof",
+      "sha256": "e67ee59057675ac686f35ff210a01161eff80bad6195b59fc52a286467ac7e7e",
+      "declarations": [
+        "Becoming.Flow.TransmitsWithin"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Order",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dissipation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Dependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Evolution",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "en": "The census along reorderings; the least footprint where being moved is decided.",
+    "zh": "沿重排的普查；“被变动”可判定时的最小足迹。"
+  },
+  "history": [
+    {
+      "zh": "2026-10-13：接续并整合 P78 的现存证明包；见整合文档 §102。",
+      "en": "2026-10-13: resumed and integrated the existing P78 proof package; see §102 of the integration note."
+    }
+  ]
+}

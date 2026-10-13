@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T07:45:00+00:00",
+  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
   "claim": {
     "zh": "跨从 t 起的一步，一个参与的形成从 c 取用并向 d 给予时，有东西从 c 输送到 d（Flow.Conveys）；有东西从家族 ds 之外的条件输送入它的某个成员时，家族在该步从其外得到供给（Flow.FedFromBeyond）。家族在某步从其外得到供给时，该步不内向（Flow.not_inward_of_fed）；相等可判定时，没有从其外得到供给的一步是内向的（Flow.inward_of_not_fed），所以二者恰相反（Flow.inward_iff_not_fed），驳倒“从某步起每步都内向”的，也驳倒“从某步起都没有东西从其外输送入”（Flow.fed_of_not_inward）。于是在平衡与耗散之下，从某步起被围住的、不重复的有限家族，若取用它复现（Flow.fed_from_beyond，由 taking_draws_in），若它的成员在任意晚的步上升（Flow.rising_fed_from_beyond，由 rising_draws_in），或以一类关系项读、体现的成员在任意晚的步生起（Web.generation_fed_from_beyond，由 Web.generation_draws_in），就不能从某步起都没有东西从其外输送入。必要的是得到供给，不必有哪个来源条件复现：在平衡、耗散、吃者每步取用的 Lone 中（Lone.lone），池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出（Lone.fed、Lone.each_fuel_once、Lone.fed_not_recurring）；输送的始终是同一个源。不用伦理前提，也不用 Lean 公理。",
     "en": "Across the step from t, something is conveyed from c to d when a formation taking part takes from c and gives to d (Flow.Conveys); a family ds is fed from beyond across the step when something is conveyed from a condition outside it into one of its members (Flow.FedFromBeyond). A step at which the family is fed from beyond is not inward (Flow.not_inward_of_fed); with equality decided, a step at which it is not fed from beyond is inward (Flow.inward_of_not_fed), so the two are exact opposites (Flow.inward_iff_not_fed), and whatever refutes ‘inward at every step from some step on’ refutes ‘fed from nothing beyond from some step on’ (Flow.fed_of_not_inward). So under balance and dissipation a finite family without repetition, enclosed around from some step on, cannot from any step on be fed from nothing beyond it, whether taking from it recurs (Flow.fed_from_beyond, from taking_draws_in), its members rise at arbitrarily late steps (Flow.rising_fed_from_beyond, from rising_draws_in), or, read with one kind of relatum, embodied members arise at arbitrarily late steps (Web.generation_fed_from_beyond, from Web.generation_draws_in). Being fed is needed, and no source condition need recur: in Lone, balanced and dissipative with an eater taking at every step (Lone.lone), the pool is fed from beyond at every step while each fuel is conveyed from at its own step only (Lone.fed, Lone.each_fuel_once, Lone.fed_not_recurring); the one source does all the conveying. No ethical premise and no Lean axiom is used."
@@ -44,7 +44,9 @@
     "Becoming.Flow.fed_from_beyond",
     "Becoming.Flow.rising_fed_from_beyond",
     "Becoming.Web.generation_fed_from_beyond",
-    "Becoming.Lone.fed_not_recurring"
+    "Becoming.Lone.fed_not_recurring",
+    "Becoming.Successive.relay",
+    "Becoming.Successive.takes_part_once"
   ],
   "dependencies": [
     {
@@ -142,6 +144,13 @@
       }
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean",
+      "detail": {
+        "zh": "也不必有哪个来源形成复现：Successive 中每步有它自己的源，只在那一步在场并活跃，燃烧那一步的燃料，向池给予一份；吃者每步从池取用一份。流平衡、耗散，只有活跃的形成给予；池每步从其外得到供给，而没有哪个来源形成在两步参与，也没有哪个在两步活跃（Successive.relay，由 Successive.takes_part_once 推出）。每个源仍在它自己的那一步被需要：去掉它，那一步不被供给。",
+        "en": "No source formation need recur either: in Successive each step has its own source, present and active at that step only, which burns that step's fuel and gives the pool one unit; the eater takes one unit from the pool at every step. The flow balances, is dissipative and only active formations give; the pool is fed from beyond at every step, while no source formation takes part at two steps and none is active at two (Successive.relay, from Successive.takes_part_once). Each source is still needed at its own step: without it that step is not fed."
+      }
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "detail": {
         "zh": "没有耗散时封闭的家族可以永远生成（Recycle），所以耗散是必要的前提；以喷洒交换的汇使耗散空成立时，家族开放而什么都不输送入（SprayShuttle，见 no-finite-part-bears-taking）。",
@@ -150,12 +159,12 @@
     }
   ],
   "limitations": {
-    "zh": "只对离散步、自然数的量与有限家族陈述；需要平衡、耗散、被围住与可判定相等；结论是构造性的否定形式，不给出输送入的某一步；只说必须计入其外，不说应当，不含伦理谓词；不说输送来自哪个形成，也不说来源是否活着；Lone 中输送的始终是同一个源；名称是 AI 的表述，由 Ren 定（Conveys、FedFromBeyond 等）。",
-    "en": "Stated for discrete steps, natural-number amounts and finite families; needs balance, dissipation, enclosure and decided equality; the conclusion is a constructive negation and exhibits no step at which the family is fed; says only that what lies beyond must be counted, not that it ought to be, and contains no ethical predicate; says neither which formation conveys nor whether the source is living; in Lone the one source does all the conveying; the names are the AI's wording, for Ren to choose (Conveys, FedFromBeyond and others)."
+    "zh": "只对离散步、自然数的量与有限家族陈述；需要平衡、耗散、被围住与可判定相等；结论是构造性的否定形式，不给出输送入的某一步；只说必须计入其外，不说应当，不含伦理谓词；不说输送来自哪个形成，也不说来源是否活着；Lone 中输送的始终是同一个源，Successive 中没有哪个来源形成复现，而每个源在它自己的那一步仍被需要；名称是 AI 的表述，由 Ren 定（Conveys、FedFromBeyond 等）。",
+    "en": "Stated for discrete steps, natural-number amounts and finite families; needs balance, dissipation, enclosure and decided equality; the conclusion is a constructive negation and exhibits no step at which the family is fed; says only that what lies beyond must be counted, not that it ought to be, and contains no ethical predicate; says neither which formation conveys nor whether the source is living; in Lone the one source does all the conveying, and in Successive no source formation recurs while each source is still needed at its own step; the names are the AI's wording, for Ren to choose (Conveys, FedFromBeyond and others)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090346.930838Z）：Becoming.Continuation 的 48 项定理全部空依赖；同一回执覆盖包内 65 个模块（含只作导入的根模块与桥接），共 3348 项定理／4882 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T090430.379669Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 67 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T090346.930838Z): the 48 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 65 modules (including the import-only root and the bridge) with 3348 theorems/4882 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T090430.379669Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 67 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.Continuation 的 48 项定理全部空依赖；同一回执覆盖包内 71 个模块（含只作导入的根模块与桥接），共 4115 项定理／5850 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091033.730173Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 73 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 48 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 71 modules (including the import-only root and the bridge) with 4115 theorems/5850 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091033.730173Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 73 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
@@ -210,14 +219,29 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean",
+      "role": "proof",
+      "sha256": "275bc1ca882757b0d01299d6f1ef76987d54bd5f6342dc7643855d5629504b70",
+      "declarations": [
+        "Becoming.Successive.flow",
+        "Becoming.Successive.web",
+        "Becoming.Successive.balances",
+        "Becoming.Successive.dissipative",
+        "Becoming.Successive.acting",
+        "Becoming.Successive.fed",
+        "Becoming.Successive.takes_part_once",
+        "Becoming.Successive.relay"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "96756f4a04744e398ac5c929f436ecef418529b0dd18e591dddf8440392df849"
+      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "d71d86ff7496b96b47c3deda30f86984573001103fa9d12992c63fa11aa391ac"
+      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
@@ -263,11 +287,18 @@
       "sha256_pointer": "/source_sha256/Becoming.Flow",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Succession",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.fed_from_beyond_from、rising_fed_from_beyond_from（P57），局部条件写在规律之内：从某步起：该家族平衡、被围住，且每步闭合的家族被耗散；Flow.fed_from_beyond、rising_fed_from_beyond是它们的推论；输送来自活着的来源时的读法；两个可移除的来源交替供给的见证（不需要特定的来源形成）；整段与以世界为单位的形式；输送是否算作已形成的关系（Ren）。",
-    "en": "The exact restatement for every world is this record's Flow.fed_from_beyond_from, rising_fed_from_beyond_from (P57), the local condition inside the law: from some step on: the family balanced on and enclosed around, and the families closed across each step dissipated on; Flow.fed_from_beyond, rising_fed_from_beyond are their corollaries; the reading where what is conveyed comes from a living source; a witness fed alternately by two removable sources (no particular source formation needed); whole-run and world-level forms; whether conveyance counts as a formed relation (Ren)."
+    "zh": "对每个世界的确切重述是本记录的 Flow.fed_from_beyond_from、rising_fed_from_beyond_from（P57），局部条件写在规律之内：从某步起：该家族平衡、被围住，且每步闭合的家族被耗散；Flow.fed_from_beyond、rising_fed_from_beyond是它们的推论；输送来自活着的来源时的读法；没有哪个来源形成复现的见证已给出（Successive.relay）；可移除的形式，即同一世界去掉一个来源形成后仍每步得到供给（去掉形成会改变水平，所以那是另一个流，以世界为单位的形式是它的位置）；整段与以世界为单位的形式；输送是否算作已形成的关系（Ren）。",
+    "en": "The exact restatement for every world is this record's Flow.fed_from_beyond_from, rising_fed_from_beyond_from (P57), the local condition inside the law: from some step on: the family balanced on and enclosed around, and the families closed across each step dissipated on; Flow.fed_from_beyond, rising_fed_from_beyond are their corollaries; the reading where what is conveyed comes from a living source; the witness in which no source formation recurs is given (Successive.relay); the removable form, the same world still fed at every step with one source formation taken away (taking a formation away changes the levels, so that is another flow, and the world-level form is its place); whole-run and world-level forms; whether conveyance counts as a formed relation (Ren)."
   },
   "history": [
     {
@@ -405,6 +436,14 @@
     {
       "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
       "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P85：按 Ren“move towards 100%”加入 Successive（Becoming.Succession）：没有哪个来源形成复现的见证，回答本记录 next_delta 中的这一项；合并检查器回执 20261013T090945.451917Z；见整合文档 §106。原有定理不变。",
+      "en": "2026-10-12 P85: following Ren's ‘move towards 100%’, Successive (Becoming.Succession) added: the witness in which no source formation recurs, answering that item of this record's next_delta; consolidated receipt 20261013T090945.451917Z; see §106 of the integration note. The existing theorems are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
     }
   ]
 }

@@ -35,7 +35,7 @@
     "Becoming.OneStep.laws",
     "Becoming.OneStep.Chained",
     "Becoming.OneStep.run_every_iff",
-    "Becoming.OneStep.Witness",
+    "OneStep.Witness",
     "laws of one step complete",
     "一步之律完备",
     "passage",

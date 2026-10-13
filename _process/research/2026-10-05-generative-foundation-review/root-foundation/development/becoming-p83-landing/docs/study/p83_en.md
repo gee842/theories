@@ -12,7 +12,7 @@
 
 Readings (the AI's, pending Ren):
 - "Situationally" is the bound. A finite record is a projection, and the bound makes it lose nothing of the course.
-- The controller is inside the bounded world. Only a world answering its learner escapes that learner, and such a world exceeds the bound.
+- The controller is inside the bounded world. A demonstrated obstruction is a world answering every claim of its learner: such a world exceeds the bound. This does not characterize every way the learner can fail outside its bound.
 - With a bound, a class's name is its finite future.
 - Knowing the bound and not knowing it differ not in whether the learner ends right but in when, and in whether it can know it is: the learner that knows it is right from `2N - 1` on and never refuted; the one that does not is right in the end, after refutations, and never knows when.
 

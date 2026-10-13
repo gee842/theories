@@ -1,20 +1,20 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T090346.930838Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T090945.451917Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T090346.930838Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T090945.451917Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 165 |
-| 只在证明中用到 / used only in proofs | 97 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 214 |
+| 只在证明中用到 / used only in proofs | 100 |
 | 不用到 / unused | 0 |
-| 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 6 |
-| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 78 |
-| 证明可判定的定义与实例 / definitions and instances proving decidedness | 83 |
-| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 46 |
+| 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 7 |
+| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 79 |
+| 证明可判定的定义与实例 / definitions and instances proving decidedness | 86 |
+| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 50 |
 
 ## 理由 / Reasons
 
@@ -22,20 +22,20 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 
 | 理由 / Reason | 说明 / Meaning | 定理数 / Theorems |
 |---|---|---:|
-| 计数 / counts | 计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts is decided (`counts_iff_decided`) | 63 |
-| 较粗的读法 / coarser reading | 较粗的读法：粗步内每个关系项只列一次，需分辨关系项的相同 / a coarser reading: each relatum listed once within a coarse step, which tells relata apart | 51 |
+| 计数 / counts | 计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts is decided (`counts_iff_decided`) | 72 |
+| 较粗的读法 / coarser reading | 较粗的读法：粗步内每个关系项只列一次，需分辨关系项的相同 / a coarser reading: each relatum listed once within a coarse step, which tells relata apart | 88 |
 | 抬高一个条件 / one condition raised | 抬高一个条件：需分辨条件的相同 / one condition raised: tells conditions apart | 8 |
 | 移开依存 / dependence moved | 在不被支持之步移开依存：支持已定 / dependence moved at unsupported steps: support decided | 3 |
 | 保留的列表 / a kept list | 按规定保留的列表：对其成员已定 / a list kept by a determination: decided of its members | 4 |
 | 按否证学习 / learning by refutation | 按否证学习：判定主张是否被否证，以保留假设或选出记录所支持的假设，需分辨值的相同 / learning by refutation: decides whether claims are refuted, to retain a hypothesis or select one borne out by the record, which tells values apart | 25 |
 | 首个符合者 / first fitting member | 选出首个符合者：依次判定列表成员是否满足规定 / first fitting member: decides the condition on each listed member in order | 2 |
 | 另一个值 / another value | 另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells values apart | 1 |
-| 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 4 |
+| 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 7 |
 | 逐个条件换入 / mixed in condition by condition | 逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells conditions apart | 4 |
-| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 51 |
+| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 52 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
 | 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 34 |
-| 分情形 / splits on a case | 按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its failing case | 3 |
+| 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 5 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 1 |
 
 ## 陈述依赖可判定性的定理（计数或构造） / Theorems whose statements depend on decidedness (counting or construction)
@@ -101,8 +101,57 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Learning | `Learning.refuted_before` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
 | Learning | `Learning.rest_unrefuted` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
 | Learning | `Learning.swapTo_moves` | `DecidableEq O` | 另一个值 / another value | 可判定是它自己的条件 / its own condition |
+| Listing | `Flow.BalancesOn.sample_byOccurrence` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Listing | `Listed.of_listing` | `(t : Nat) → (a b : α) → a ∈ l t → b ∈ l t → Decidable (a = b)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
+| Listing | `keepFresh_spec` | `Decidable (a ∈ l)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
+| Listing | `listOnce_listsOnce` | `(a b : α) → a ∈ l → b ∈ l → Decidable (a = b)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
 | Locality | `ceasing_needs_arising` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Locality | `cohort_closes_iff` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_balancesOn` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_closedAt` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_dissipatesOn` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_enclosed` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_give` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_not_descends` | `DecidableEq X` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_present` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_runsDownOn` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_take` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_idle_takers` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_acting_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_balancesOn_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_closedAt_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_descends_iff` | `DecidableEq X` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_dissipatesOn_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_give` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_given` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_mem` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_runsDownOn_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_take` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_taken` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_moves_taking_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.sample_not_more` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_acting_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_balances_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_dissipative_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_given` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_taken` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_taking_iff` | `DecidableEq F` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Flow.stutter_transmitsWithin_iff` | `DecidableEq X` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `Reorders.counts` | `(n : Nat) → (x : X) → Decidable (W'.active n x)`；`(n : Nat) → (x : X) → Decidable (W.active n x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `World.commute_counts` | `(n : Nat) → (x : (w.commute t side).Relatum) → Decidable ((w.commute t side).web.active n x)`；`(n : Nat) → (x : w.Relatum) → Decidable (w.web.active n x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_arisingRecurs_iff` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_ceasingRecurs_iff` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_change_recurs_iff` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_counted` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_counted_of_section` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.stutter_premises_iff` | `DecidableEq w.Relatum` | 较粗的读法 / coarser reading | 可判定是它自己的条件 / its own condition |
+| Order | `World.withoutIdle_counts` | `(n : Nat) → (x : v.Relatum) → Decidable (v.web.active n x)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `ceasings_moved` | `(a : α) → (n : Nat) → Decidable (p a n)`；`(a : α) → (n : Nat) → Decidable (p' a n)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `ceasings_of_iff` | `(a : α) → (n : Nat) → Decidable (p a n)`；`(a : α) → (n : Nat) → Decidable (q a n)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `comings_moved` | `(a : α) → (n : Nat) → Decidable (p a n)`；`(a : α) → (n : Nat) → Decidable (p' a n)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `comings_of_iff` | `(a : α) → (n : Nat) → Decidable (p a n)`；`(a : α) → (n : Nat) → Decidable (q a n)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `stutter_ceasings` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| Order | `stutter_comings` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Population | `Listed.across` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | `Counts.listed_across`（无前提 / no premise） |
 | Population | `Listed.across_at` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | `Counts.listed_across`（无前提 / no premise） |
 | Population | `Listed.ceasing_iff_shortfall` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
@@ -254,6 +303,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Learning | `Learning.eq_of_not_refuted` | `DecidableEq O` | 分辨相同 / tells same from different | — |
 | Learning | `Learning.every_determines_nothing` | `DecidableEq I` | 分辨相同 / tells same from different | — |
 | Learning | `Learning.every_free` | `DecidableEq I` | 分辨相同 / tells same from different | — |
+| Listing | `Web.arising_of_ceasing_listing` | `(t : Nat) → (a b : F) → a ∈ l t → b ∈ l t → Decidable (a = b)`；`(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | `Web.arising_of_ceasing`（给定普查；此处还用 `listOnce` 造普查 / a supplied census; here `listOnce` also constructs it, P77） |
 | Locality | `Covers.coming_from_of_ceasing` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`（无前提 / no premise, P48） |
 | Locality | `Covers.within` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | — |
 | Locality | `coming_of_ceasing_covered` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`、`Covers.ceasing_not_recurring`（无前提 / no premise, P48） |
@@ -308,6 +358,8 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Testing | `Flow.subthreshold_alike_always` | `DecidableEq C` | 分辨相同 / tells same from different | — |
 | Testing | `Web.alike_of_threshold` | `DecidableEq C` | 分辨相同 / tells same from different | — |
 | Testing | `Web.tail_unrefuted` | `DecidableEq C` | 分辨相同 / tells same from different | — |
+| Transmission | `Flow.transmitsWithin_iff_split` | `(t : Nat) → (x : X) → Decidable (W.requires t x c)` | 分情形 / splits on a case | — |
+| Transmission | `Web.inheritsAt_of_split` | `Decidable (W.requires t x c)` | 分情形 / splits on a case | `Web.inheritsAt_not_not`（不判定时继承不能被否证 / inheritance is unrefuted without the decision, P84） |
 | Unfolding | `Frame.claims_recur_iff` | `(c : C) → (t : Nat) → Decidable (F.realized (r.state t) c)` | 找出 / finds | — |
 
 ## 排中律作为假设 / Excluded middle as a hypothesis
@@ -320,6 +372,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 - Reserve: `Web.chain_ends_of_em_from`
 - Space: `World.law_of_em`
 - Space: `quiet_of_once`
+- Transmission: `split_of_em`
 
 ## 计数而可判定被证明 / Counting with decidedness proved
 
@@ -330,6 +383,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 - Learning: 2
 - Locality: 1
 - Openness: 2
+- Order: 1
 - Population: 14
 - Reserve: 2
 - Resolution: 3
@@ -370,6 +424,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Learning | `Learning.indexOn` | `DecidableEq O` |
 | Learning | `Learning.learner` | `DecidableEq O` |
 | Learning | `Learning.swapTo` | `DecidableEq O` |
+| Listing | `decideIn` | `(b : α) → b ∈ l → Decidable (a = b)` |
+| Listing | `keepFresh` | `Decidable P` |
+| Listing | `listOnce` | `(a b : α) → a ∈ l → b ∈ l → Decidable (a = b)` |
+| Order | `Web.commuteDecided` | `(n : Nat) → (f : F) → Decidable (W.active n f)` |
 | Population | `Web.decideDissolves` | `(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)` |
 | Population | `Web.decideForms` | `(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)` |
 | Population | `decideSome` | `(a : α) → Decidable (p a)` |

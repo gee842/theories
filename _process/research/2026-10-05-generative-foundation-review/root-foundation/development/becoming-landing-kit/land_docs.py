@@ -61,6 +61,8 @@ for i, p in enumerate(config.PACKAGES):
     docs = W / kit.DEV / p['package'] / 'docs/study'
     zh = (docs / f'{p["prefix"]}_zh.md').read_text()
     en = (docs / f'{p["prefix"]}_en.md').read_text()
+    zh += p.get('study_suffix_zh', '')
+    en += p.get('study_suffix_en', '')
     if 'study_heading' in p:
         assert not zh.startswith('## '), 'study_heading would duplicate an existing section heading'
         zh = f'## {{S}}. {p["study_heading"]}\n\n' + zh

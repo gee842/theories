@@ -32,7 +32,7 @@ PACKAGES = [
                "choosing at it pass the same tests and are not alike."),
         readme_zh=('历史固定什么（不加前提，P76）：一族历史恰在含有它的拼接时是某个律的历史族，还一致时是确定的律的；两个律恰在活的步相同时'
                    '容许同样的历史，所以不计死路的律与含有拼接的历史族一一对应；会停止的历史下没有死路；两个框架在相同之下确定时，'
-                   '配置恰在通过同样的检验时相同，有分支时不然（`Choosing`）'),
+                   '配置恰在通过同样的检验时相同，没有这一条件时未必如此（`Choosing`）'),
         readme_en=("what histories fix (no premise, P76): a family of histories is a law's exactly where it holds its "
                    "splices, a determined law's where it is also consistent; two laws admit the same histories exactly "
                    "where they have the same live steps, so laws up to dead ends and families holding their splices "
@@ -69,12 +69,12 @@ PACKAGES = [
                "where a rule keeps itself its region is absorbing, and where the next configuration depends on the "
                "rule alone a reformed state is drawn into what the rule holds."),
         readme_zh=('路径分支时（不加前提，P81）：配置恰在它自己的路径下一步能再得到它时返回，处处返回恰是过程不离开的每个区域都保留它自己的'
-                   '每个可能；保留每个可能不给返回，不合并沿运行给返回，合并不必失去可能；每个过程必然吸入的恰是不返回者，可能被吸入'
+                   '每个可能；保留每个可能不给返回，不合并在有限多配置之内沿运行给返回，合并不必失去可能；每个过程必然吸入的恰是不返回者，可能被吸入'
                    '允许在另一路径中返回；确定是相同之下确定的命名情形，需要相等之处有见证；Capture 的规则区域是吸收区域'),
         readme_en=("when the course branches (no premise, P81): a configuration returns exactly where its own course can "
                    "have it at the next step, and every configuration returns exactly where every region the process "
                    "never leaves keeps every possibility of its own; keeping every possibility does not give returning, "
-                   "merging nothing gives it along runs, a merge need not lose a possibility; every process necessarily "
+                   "merging nothing gives it along runs within finitely many configurations, a merge need not lose a possibility; every process necessarily "
                    "draws exactly what does not return, and possibly drawn allows return on another course; "
                    "determinacy is the named case of determinacy up to likeness, with witnesses where equality is "
                    "needed; Capture's rule region is absorbing"),
@@ -89,11 +89,11 @@ PLAN_ZH = '\n'.join([
      '一族历史恰在含有它的拼接时是某个律的历史族，还一致时是确定的律的（`family_iff`、`determined_family_iff`）；两个律恰在活的步相同时'
      '容许同样的历史（`same_histories_iff`），所以不计死路的律与含有拼接的历史族一一对应，P69 的死路与拼接就是律与历史之间的全部规律；'
      '会停止的历史下没有死路（`same_finite_histories_iff`）。两个框架在相同之下确定时，配置恰在通过同样的检验时相同'
-     '（`alike_iff_sameTests`），有分支时不然（`Choosing.not_alike`）。记录 histories-fix-law-up-to-dead-ends、'
+     '（`alike_iff_sameTests`），没有这一条件时未必如此（`Choosing.not_alike`）。记录 histories-fix-law-up-to-dead-ends、'
      'tests-fix-likeness-where-determined（F01）；研究 §{S_HISTORIES}。核心中分支检验固定相同的构造性证明开放。 |'),
     ('| P81 路径分支时 ✓ | 同一来源；R6 的三方等价对不确定的律不成立。完成：新模块 `Becoming.Branching`（{N_BRANCHING} 项定理，L3，'
      '导入 Unfolding、Attraction 与 Capture，不改已有模块），不加前提。返回的精确条件（`returns_iff_fed_ahead`、`returns_iff_keepsWithin`）；'
-     '保留每个可能不给返回，合并不必失去可能，不合并沿运行给返回（`Transit.keeps_not_returns`、`OneWay.merge_keeps`、'
+     '保留每个可能不给返回，合并不必失去可能，不合并在有限多配置之内沿运行给返回（`Transit.keeps_not_returns`、`OneWay.merge_keeps`、'
      '`Branching.Lossless.returns`）；每个过程必然吸入的恰是不返回者，可能被吸入允许返回（`necessarilyDrawn_iff_not_returns`、'
      '`OneWay.possibly_not_necessarily`）；确定是相同之下确定的命名情形，`Experiment` 与 `Mechanism` 的主要定理在相同之下重述，需要相等之处有见证'
      '（`determined_iff_named`、`Twins.retarget_breaks`）；Capture 的规则区域是吸收区域（`Law.rule_absorbing`）。记录 '
@@ -109,14 +109,14 @@ PLAN_EN = '\n'.join([
      "where they have the same live steps (`same_histories_iff`), so P69's dead ends and splices are the whole law of "
      'law and history; with histories that stop no dead end remains (`same_finite_histories_iff`). Where both frames '
      'are determined up to likeness, configurations are alike exactly where they pass the same tests '
-     '(`alike_iff_sameTests`), not with branching (`Choosing.not_alike`). Records histories-fix-law-up-to-dead-ends '
+     '(`alike_iff_sameTests`), not necessarily without that condition (`Choosing.not_alike`). Records histories-fix-law-up-to-dead-ends '
      'and tests-fix-likeness-where-determined (F01); study §{S_HISTORIES}. A constructive proof that branching tests fix '
      'likeness in the core is open.'),
     ("- **P81:** when the course branches, from the same source, after R6's three-way equivalence was found to fail for "
      'laws that are not determined. Done: `Becoming.Branching` ({N_BRANCHING} theorems, L3, importing Unfolding, '
      'Attraction and Capture, changing no existing module), with no premise. The exact condition for returning '
      "(`returns_iff_fed_ahead`, `returns_iff_keepsWithin`); keeping every possibility does not give returning, a merge "
-     'need not lose a possibility, merging nothing gives returning along runs (`Transit.keeps_not_returns`, '
+     'need not lose a possibility, merging nothing gives returning along runs within finitely many configurations (`Transit.keeps_not_returns`, '
      '`OneWay.merge_keeps`, `Branching.Lossless.returns`); every process necessarily draws exactly what does not return, '
      'and possibly drawn allows return (`necessarilyDrawn_iff_not_returns`, `OneWay.possibly_not_necessarily`); '
      'determinacy is the named case of determinacy up to likeness, the main theorems of Experiment and Mechanism are '
@@ -138,7 +138,7 @@ P76_ZH = (
     '一族历史恰在含有它的拼接（由它自己的步组成的每个序列都在族中）时是某个律的历史族，恰在还一致时是某个确定的律的'
     '（`family_iff`、`determined_family_iff`）。两个律恰在活的步（某段历史所走的步）相同时容许同样的历史（`same_histories_iff`），'
     '所以不计死路的律与含有拼接的历史族一一对应。会停止的历史下死路消失：两个律恰在步相同时有同样的有限历史（`same_finite_histories_iff`）。'
-    '两个框架处处在相同之下确定时，配置恰在通过同样的检验时相同（`alike_iff_sameTests`）；有分支时不然：在第一步之后选择与在第一步选择的'
+    '两个框架处处在相同之下确定时，配置恰在通过同样的检验时相同（`alike_iff_sameTests`）；没有这一条件时未必如此：在第一步之后选择与在第一步选择的'
     '两个框架通过同样的检验而不相同（`Choosing.not_alike`）。读法是 AI 的，待 Ren：从历史读出的律就是含有拼接的历史族，'
     '置于展开之上的律所能多出的只是没有历史显示的死路；拼接是记忆的缺席。不推出：实际展开的历史是否终止；核心中分支检验固定相同。'
     '见[研究 §{S_HISTORIES}]({STUDY_HISTORIES})与 ' + R76A + '、' + R76B + '。')
@@ -203,7 +203,7 @@ WHOLE_I_81_EN = ('- Every process necessarily draws exactly what does not return
 
 STATUS = '\n'.join([
     ('| 历史固定什么（P76） | 已陈述并检查，不加前提：一族历史恰在含有拼接时是某个律的历史族，律与历史一一对应到死路为止，会停止的历史下没有死路'
-     '（' + R76A + '）；两个框架在相同之下确定时检验固定相同，有分支时不然（' + R76B + '）；读法待 Ren；核心中分支检验固定相同开放 |'),
+     '（' + R76A + '）；两个框架在相同之下确定时检验固定相同，没有这一条件时未必如此（' + R76B + '）；读法待 Ren；核心中分支检验固定相同开放 |'),
     ('| 路径分支时（P81） | 已陈述并检查，不加前提：分支过程中返回的精确条件，R6 的三方等价分开之处（' + R81A + '）；每个过程必然吸入的恰是'
      '不返回者，可能被吸入允许返回，Capture 的规则区域是吸收区域（' + R81B + '）；确定是相同之下确定的命名情形，需要相等之处有见证'
      '（' + R81C + '）；读法待 Ren；在界内被吸入与分支路径上的度量开放 |'),
@@ -236,9 +236,9 @@ FURTHER_ADD_EN = ('- When the course branches: being drawn in within a bound; wh
 SPINE = '\n'.join([
     ('| L3 | [Becoming.Histories]({LEAN}/Histories.lean) | 历史固定什么（不加前提，P76）：一族历史恰在含有它的拼接时是某个律的历史族，还一致时是确定的律的；'
      '两个律恰在活的步相同时容许同样的历史，不计死路的律与含有拼接的历史族一一对应；会停止的历史下没有死路；两个框架在相同之下确定时，'
-     '配置恰在通过同样的检验时相同，有分支时不然 | {N_HISTORIES} |'),
+     '配置恰在通过同样的检验时相同，没有这一条件时未必如此 | {N_HISTORIES} |'),
     ('| L3 | [Becoming.Branching]({LEAN}/Branching.lean) | 路径分支时（不加前提，P81）：返回的精确条件，处处返回恰是过程不离开的每个区域都保留它自己的'
-     '每个可能；保留每个可能不给返回，不合并沿运行给返回，合并不必失去可能；每个过程必然吸入的恰是不返回者，可能被吸入允许返回；确定是相同之下'
+     '每个可能；保留每个可能不给返回，不合并在有限多配置之内沿运行给返回，合并不必失去可能；每个过程必然吸入的恰是不返回者，可能被吸入允许返回；确定是相同之下'
      '确定的命名情形，需要相等之处有见证；Capture 的规则区域是吸收区域 | {N_BRANCHING} |'),
 ])
 

@@ -1,0 +1,604 @@
+{
+  "packages": [
+    {
+      "number": 77,
+      "module": "Listing",
+      "imports": [
+        "Decidedness",
+        "Sampling",
+        "Resolution"
+      ],
+      "title_zh": "列出一次所承诺的",
+      "title_en": "What listing once commits to",
+      "zh": "列表恰在成员间同一已定时能列出一次（`listsOnce_iff_decided`），所含关系项的数唯一且恰在此时存在；否证形式的规律不需这一前提。按世界的关系不可分辨地计数，对每个世界都固定数目等价于排中律（`World.numbers_indiscernible_iff_em`）；按出现读保持数量与局部规律，但不跨步追踪出现。",
+      "en": "A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`); its number of members is unique and exists exactly then. Refutation laws need no such premise. Fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws without tracking occurrences across steps.",
+      "boundary_zh": "与配置相同（`Alike`）的连接及另外 24 个被归类为不需前提的用处之推论尚未证明。原有 Distinct 清点是 193c5511 的历史快照。",
+      "boundary_en": "The connection to likeness of configurations (`Alike`) and corollaries for the other 24 uses classified as premise-free remain open. The Distinct inventory is a historical snapshot at 193c5511.",
+      "records": [
+        "listing-once-is-decided-identity",
+        "relata-counted-up-to-indiscernibility"
+      ],
+      "reuses": [
+        "counts-exist-where-decided",
+        "laws-at-coarser-steps"
+      ]
+    },
+    {
+      "number": 78,
+      "module": "Order",
+      "imports": [
+        "Sampling"
+      ],
+      "title_zh": "变化的次序",
+      "title_en": "The order of change",
+      "zh": "停顿保留世界的前提、段的总量及复现，速率与储备的步数依读法而定；给定覆盖交换的足迹，交换无交集的相邻交换保持全部前提，恰可达到保持其有交集交换偏序的重编号（`Footprinted.sorts_iff`、`Footprinted.converse`）。移除空步保留前提、普查与总量。",
+      "en": "Stuttering keeps the premises, stretch totals and recurrence, while rates and reserves counted in steps depend on the reading. For a given footprint containing the exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, `Footprinted.converse`). Removing idle steps keeps premises, censuses and totals.",
+      "boundary_zh": "足迹给定；移除空步使用给定的移动步。最小足迹、Foata 正规形、重排中的普查与连续时间未证明。",
+      "boundary_en": "The footprint and the moving steps used to remove idle steps are supplied. The least footprint, a Foata normal form, censuses along reorderings and continuous time remain open.",
+      "records": [
+        "only-the-order-of-change-registers",
+        "exchanges-commute-unless-joined",
+        "order-of-exchanges-is-the-invariant"
+      ],
+      "reuses": [
+        "laws-at-coarser-steps"
+      ]
+    },
+    {
+      "number": 79,
+      "module": "OneStep",
+      "imports": [
+        "Counting",
+        "Sampling"
+      ],
+      "title_zh": "一步与逐步选择家族的全部规律",
+      "title_en": "All laws of one step and of families chosen step by step",
+      "zh": "一步的样式恰在遵守每步的规律与所名局部条件的规律时由一个世界实现（`OneStep.every_iff`、`OneStep.laws`）；所取非零须有取者，所给非零须有给者。给者、容量与活动的增量精确刻画；单一家族上的运行加跨步接续，逐步选家族时耗减所加的是按正水平计数的连续（`OneStep.step_runsDown_iff`），严格弱于逐位置追踪。",
+      "en": "A pattern of one step is realized by a world exactly where it obeys the law of every step and the law of each named local condition (`OneStep.every_iff`, `OneStep.laws`); nonzero taking needs a taker and nonzero giving a giver. Givers, capacity and activity are characterized exactly. Runs on one family add chaining; for families chosen step by step, running down adds continuity counted at positive levels (`OneStep.step_runsDown_iff`), strictly weaker than tracking positions.",
+      "boundary_zh": "完备性限于所给样式与条件；活跃者计数、整段上的容量与活动仍开放。",
+      "boundary_en": "Completeness is for the stated patterns and conditions; counts of active relata and capacity and activity over runs remain open.",
+      "records": [
+        "laws-of-one-step-complete",
+        "one-step-missing-laws",
+        "runs-on-families-chosen-step-by-step"
+      ],
+      "reuses": [
+        "laws-of-one-step",
+        "whole-law-of-counting"
+      ]
+    },
+    {
+      "number": 82,
+      "module": "Weighted",
+      "imports": [
+        "Capture",
+        "Resolution"
+      ],
+      "title_zh": "加权历史及其损失",
+      "title_en": "Weighted histories and their losses",
+      "zh": "给定权重及其规律、动作与配置的有限列表，有限步数的历史权重之和恰是逐步转移（`Weights.sum_courses`）；可能性的实例就是核心的迹，计数保留可能性。经一个有代表的描述，在所有步数上的精确保留恰是一步的可归并（`Weights.lumped_iff`）；截断、抵消、未保留的记忆与回路各有明确边界见证。",
+      "en": "Given weights with their laws and finite lists of moves and configurations, the sum of histories over a finite horizon is exactly stepwise transfer (`Weights.sum_courses`). Possibility is the core's trace relation, and counting preserves possibility. For a description with representatives, exact preservation at every horizon is exactly one-step lumpability (`Weights.lumped_iff`); truncation, cancellation, unkept memory and loops have explicit boundary witnesses.",
+      "boundary_zh": "不推出实际权重、带相位的振幅、无限和收敛或一般权重的记忆恢复；权重自身的规律是公开的结构字段。",
+      "boundary_en": "Actual weights, phased amplitudes, convergence of infinite sums and memory restoration for general weights are not derived; the weight laws are explicit structure fields.",
+      "records": [
+        "sum-over-histories-exact",
+        "losses-of-the-sum-over-histories"
+      ],
+      "reuses": [
+        "projection-carrying-a-law"
+      ]
+    },
+    {
+      "number": 84,
+      "module": "Transmission",
+      "imports": [
+        "Premises"
+      ],
+      "title_zh": "传递的精确条件与边界",
+      "title_en": "The exact conditions and boundary of transmission",
+      "zh": "传递恰是承继与所需之界（`Flow.transmitsWithin_iff`）；先前没有依存时承继就是形成的规律，一般的形成与持有分解用到已定。去掉给予者的一条依存保持其余前提而破坏起约束的传递（`World.drop_but`）；在所名有限、平衡、耗散、体现与支持条件下，取用的读法加上取用即依存推出传递（`World.transmitting_of_drawn`）。",
+      "en": "Transmission is exactly inheritance with a need bound (`Flow.transmitsWithin_iff`); where no dependence was held before, inheritance is the forming law, while the general forming/holding split uses decidedness. Dropping one dependence of a giver keeps the other premises and breaks binding transmission (`World.drop_but`). Under the named finite, balance, dissipation, embodiment and support conditions, a reading of drawing together with drawing being depending derives transmission (`World.transmitting_of_drawn`).",
+      "boundary_zh": "这不是从其余核心前提单独推出传递；链接仅充分，水平无界的情形与新依存的形成仍开放。",
+      "boundary_en": "This does not derive transmission from the other core premises alone; the link is sufficient only, and unbounded levels and the formation of new dependences remain open.",
+      "records": [
+        "transmission-is-inheritance-and-need",
+        "transmission-independent-where-it-binds"
+      ],
+      "reuses": [
+        "evolution-on-descent",
+        "map-of-premises"
+      ]
+    },
+    {
+      "number": 85,
+      "module": "Succession",
+      "imports": [
+        "Continuation"
+      ],
+      "title_zh": "没有哪个来源复现的供给",
+      "title_en": "Fed without any source recurring",
+      "zh": "`Successive.relay` 给出平衡、耗散且只有活跃者给予的流，池每步被供给，而每个来源只在自己的那一步参与与活跃；延续所需的供给不要求哪个来源形成复现。这推进 continuing-self-fed-from-beyond，不另立成果。",
+      "en": "`Successive.relay` gives a balanced, dissipative flow in which only active formations give, the pool is fed at every step, and each source participates and is active at its own step only. Continuing to be fed needs no source formation to recur. This advances continuing-self-fed-from-beyond and is not a separate result.",
+      "boundary_zh": "每个来源在自己的那一步仍被需要；同一世界移去来源后仍被供给与来源从流中形成都未证明。",
+      "boundary_en": "Each source is still needed at its own step; remaining fed after removing a source from the same world and the formation of the sources from the flow are not shown.",
+      "records": [
+        "continuing-self-fed-from-beyond"
+      ],
+      "reuses": [
+        "continuing-self-fed-from-beyond",
+        "derived-extent-limits"
+      ]
+    }
+  ],
+  "records": {
+    "listing-once-is-decided-identity": {
+      "package": "LISTING",
+      "sections": [
+        "Listing once is decided identity among the listed",
+        "Sums and counts once per member",
+        "Listing once by a procedure",
+        "Families of conditions: membership, and sums once per member",
+        "Finite worlds",
+        "Censuses from any listing",
+        "A sum over a family listing a member twice"
+      ],
+      "named": [
+        "IdentityDecided",
+        "ListsOnce",
+        "listsOnce_iff_decided",
+        "not_not_listsOnce",
+        "listOnce",
+        "Numbers",
+        "numbers_iff_decided",
+        "not_of_listsOnce",
+        "World.Enumerated",
+        "World.finite_iff",
+        "World.Enumerated.rests",
+        "Flow.enclosed_iff",
+        "Flow.dissipative_iff",
+        "Doubled.needs_once"
+      ],
+      "builds_on": [
+        "Distinct",
+        "World.rests",
+        "World.Finite",
+        "World.CountedBy",
+        "Decided"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md"
+      ]
+    },
+    "relata-counted-up-to-indiscernibility": {
+      "package": "LISTING",
+      "sections": [
+        "Where identity is not decided",
+        "Identity read through relations",
+        "Taking part, listed once by its occurrences"
+      ],
+      "named": [
+        "listsOnce_all_iff",
+        "World.Indiscernible",
+        "NumbersBy",
+        "numbersBy_iff_decided",
+        "World.indiscernible_decided_iff_em",
+        "World.numbers_indiscernible_iff_em",
+        "World.probe",
+        "World.probe_named_apart",
+        "Flow.byOccurrence",
+        "Flow.byOccurrence_once",
+        "Flow.byOccurrence_uncounted"
+      ],
+      "builds_on": [
+        "Decided",
+        "Alike",
+        "Flow.BalancesOn.sample"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p77-landing/inventory/INVENTORY.md"
+      ]
+    },
+    "only-the-order-of-change-registers": {
+      "package": "ORDER",
+      "sections": [
+        "Arithmetic",
+        "Stutterings",
+        "One change read through a stuttering",
+        "Totals over a stretch read through a stuttering",
+        "A flow and a web read through a stuttering",
+        "The laws of one step at an idle step",
+        "The laws of one step at a moving step",
+        "The laws of a flow read through a stuttering",
+        "What a stretch takes and gives",
+        "Recurrence, totals and counts read through a stuttering",
+        "A web read through a stuttering",
+        "Descent read through a stuttering",
+        "Worlds read through a stuttering",
+        "What a stuttering changes: rates and durations",
+        "The halving: every step read twice",
+        "Removing idle steps"
+      ],
+      "named": [
+        "Stutter",
+        "World.stutter_premises_iff",
+        "stutter_total",
+        "World.stutter_arisingRecurs_iff",
+        "World.stutter_counted",
+        "Flow.sample_not_more",
+        "Expansion.more_step_relative",
+        "Lapse.reserve_step_relative",
+        "World.withoutIdle",
+        "World.IdleAt",
+        "Stutter.Moves",
+        "Stutter.moving_unique",
+        "World.withoutIdle_premises",
+        "World.withoutIdle_transmits",
+        "World.withoutIdle_counted",
+        "World.withoutIdle_totals",
+        "World.withoutIdle_counts"
+      ],
+      "builds_on": [
+        "Flow.sample",
+        "Web.sample",
+        "World.sample",
+        "Flow.BalancesOn.sample",
+        "Flow.DissipatesOn.sample"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "exchanges-commute-unless-joined": {
+      "package": "ORDER",
+      "sections": [
+        "Flows and webs taken in the other order",
+        "Taking two exchanges in the other order: the construction",
+        "Worlds with two exchanges taken in the other order",
+        "Reorderings: independent exchanges commuted again and again",
+        "What the order of two exchanges carries",
+        "Footprints",
+        "Two exchanges not joined, taken in the other order",
+        "Along repeated commutation",
+        "Counts along any reordering",
+        "Where the order registers, every footprint joins the two exchanges"
+      ],
+      "named": [
+        "Flow.Commuted",
+        "Web.Commuted",
+        "Web.Split",
+        "World.commute",
+        "World.commute_laws",
+        "World.commute_counts",
+        "Reorders",
+        "Reorders.laws",
+        "Reorders.totals",
+        "Crossing.order_registers",
+        "Arising.order_registers",
+        "Footprinted",
+        "Footprinted.Contains",
+        "Footprinted.split",
+        "Footprinted.reorder_premises",
+        "Reorders.counts",
+        "Crossing.reorders_joined",
+        "Arising.reorders_joined"
+      ],
+      "builds_on": [
+        "Flow.Balances",
+        "Flow.Dissipative",
+        "Flow.Acting",
+        "Flow.Taking",
+        "Web.Dependent",
+        "Web.Embodied",
+        "Flow.TransmitsWithin"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "order-of-exchanges-is-the-invariant": {
+      "package": "ORDER",
+      "sections": [
+        "Footprints",
+        "The order is relative to the footprint",
+        "Two exchanges not joined, taken in the other order",
+        "Commuting again and again: where each exchange goes",
+        "The converse: every renumbering keeping the order is reached",
+        "What a web shows of a relatum"
+      ],
+      "named": [
+        "Footprinted.Joined",
+        "Footprinted.Precedes",
+        "Footprinted.Precedes.lt",
+        "Footprinted.Precedes.irrefl",
+        "Footprinted.Precedes.asymm",
+        "Footprinted.contains_everything",
+        "Footprinted.commute_contains",
+        "Footprinted.commute_precedes",
+        "Footprinted.reorder_precedes",
+        "Footprinted.Independent.keeps",
+        "Footprinted.reorder_reorders",
+        "Footprinted.sorts_iff",
+        "Footprinted.converse",
+        "Reindexes",
+        "Footprinted.Keeps",
+        "Web.Unmoved",
+        "Web.SameAt"
+      ],
+      "builds_on": [
+        "Flow",
+        "Web"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "laws-of-one-step-complete": {
+      "package": "ONESTEP",
+      "sections": [
+        "Lists and numbers",
+        "The passage of a condition and the pattern of a family",
+        "The law of every step",
+        "What a shown pattern obeys",
+        "The law of each condition, read on a pattern",
+        "What a shown pattern obeys, under each condition",
+        "Read with one kind of relatum",
+        "Runs of steps",
+        "The witness: a world showing a given run of patterns",
+        "Positions",
+        "Sharing out the units",
+        "Each relatum taking part listed once",
+        "What the witness shows across a step",
+        "The conditions in the witness",
+        "Each law is the whole law of one step under its condition",
+        "Each law is the whole law of a run under its condition",
+        "The givers: the laws of every step",
+        "The givers in the pattern of one step: each condition adds exactly its law",
+        "With the capacity of each giver",
+        "With activity",
+        "Runs with their givers: on one family, and on families chosen step by step"
+      ],
+      "named": [
+        "Passage",
+        "Flow.passage",
+        "Flow.Realizes",
+        "OneStep.every_iff",
+        "OneStep.balance_iff",
+        "OneStep.runsDown_iff",
+        "OneStep.closed_iff",
+        "OneStep.runsDown_passages_iff",
+        "OneStep.laws",
+        "OneStep.Chained",
+        "OneStep.run_every_iff",
+        "OneStep.Givers",
+        "Flow.sign_replenishment_le_renewers",
+        "Flow.renewers_le_replenishment",
+        "Flow.DissipatesOn.renewers_le_takers",
+        "Flow.CapacityAt",
+        "Flow.ActingAt",
+        "Flow.TakingAt",
+        "OneStep.every_givers_iff",
+        "OneStep.runsDown_givers_iff",
+        "OneStep.every_capacity_iff",
+        "OneStep.every_active_iff",
+        "OneStep.laws_givers",
+        "OneStep.run_every_givers_iff"
+      ],
+      "builds_on": [
+        "Flow.takers",
+        "counting_laws",
+        "tally_iff_counted",
+        "World.ofRoles",
+        "Flow.BalancesOn",
+        "Flow.RunsDownOn"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "one-step-missing-laws": {
+      "package": "ONESTEP",
+      "sections": [
+        "The law of every step",
+        "What the stated laws miss",
+        "Standing at one condition"
+      ],
+      "named": [
+        "Flow.sign_uptake_le_takers",
+        "Flow.RunsDownOn.taken_iff",
+        "Flow.BalancesOn.taken_le",
+        "OneStep.runsDownClosed_iff_stated",
+        "OneStep.stated_not_realized",
+        "OneStep.standing_iff",
+        "OneStep.standing_bound_needed"
+      ],
+      "builds_on": [
+        "Flow.BalancesOn.comesToStand_iff",
+        "Flow.BalancesOn.ceasesToStand_iff"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "runs-on-families-chosen-step-by-step": {
+      "package": "ONESTEP",
+      "sections": [
+        "Runs with their givers: on one family, and on families chosen step by step",
+        "The pattern without its givers, on families chosen step by step",
+        "Continuity of what stands, up to order",
+        "Families chosen step by step",
+        "Continuity up to order is weaker than following position by position"
+      ],
+      "named": [
+        "OneStep.StepRealized",
+        "OneStep.StepRunRealized",
+        "OneStep.Continues",
+        "OneStep.step_every_iff",
+        "OneStep.step_balance_iff",
+        "OneStep.step_closed_iff",
+        "OneStep.step_runsDown_iff",
+        "OneStep.step_runsDownClosed_iff",
+        "OneStep.stepRun_runsDown_iff",
+        "OneStep.stepRun_runsDownClosed_iff",
+        "OneStep.stepRun_balance_iff",
+        "OneStep.StepRealized.continues",
+        "OneStep.Chained.continues",
+        "OneStep.steps_not_run",
+        "OneStep.vanishing_steps"
+      ],
+      "builds_on": [],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "sum-over-histories-exact": {
+      "package": "WEIGHTED",
+      "sections": [
+        "Weights",
+        "Sums over histories",
+        "Readings between weightings",
+        "Possibility and counting",
+        "Integrating out"
+      ],
+      "named": [
+        "Weights",
+        "Weights.sum_courses",
+        "Weights.transfer",
+        "Weights.along",
+        "courses",
+        "Weights.Hom",
+        "Weights.Hom.transfer",
+        "possibility",
+        "possibility_transfer_iff",
+        "counting",
+        "support",
+        "counting_transfer_iff",
+        "Weights.lumped_iff",
+        "Lumping.loses"
+      ],
+      "builds_on": [
+        "carries_law_iff",
+        "Generative.Trace"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "losses-of-the-sum-over-histories": {
+      "package": "WEIGHTED",
+      "sections": [
+        "Truncation, cancellation, memory and loops"
+      ],
+      "named": [
+        "Weights.truncation",
+        "counting_truncation_le",
+        "signed",
+        "Interference.cancels",
+        "Interference.truncation_misleads",
+        "Interference.unseen",
+        "Interference.unseen_balanced",
+        "Memory.not_of_steps",
+        "Memory.of_kept",
+        "Loop.courses_double"
+      ],
+      "builds_on": [],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "transmission-is-inheritance-and-need": {
+      "package": "TRANSMISSION",
+      "sections": [
+        "The two laws of a descent",
+        "Inheritance is a law of forming",
+        "Dropping a dependence",
+        "The laws of a flow",
+        "No new dependence by descent",
+        "The evolution laws with the premise inside",
+        "Two givers",
+        "What transmission carries"
+      ],
+      "named": [
+        "Web.InheritsAt",
+        "Web.NeedsWithinAt",
+        "Web.transmits_at_iff",
+        "Web.InheritsAt.split",
+        "Web.inheritsAt_iff_forming",
+        "Web.inheritsAt_of_split",
+        "Web.inheritsAt_not_not",
+        "split_iff_em",
+        "Flow.Inherits",
+        "Flow.NeedsWithin",
+        "Flow.transmitsWithin_iff",
+        "Flow.transmitsWithin_iff_forming",
+        "Flow.transmitsWithin_iff_split",
+        "Flow.descends_of_comes",
+        "Flow.no_new_dependence",
+        "Flow.inherited_supported_at",
+        "Flow.inherited_within_at",
+        "Flow.TransmitsFromSome",
+        "Flow.fromSome_supported",
+        "Flow.TransmitsWithin.fromSome",
+        "TwoGivers.twofold",
+        "Drawdown.carried"
+      ],
+      "builds_on": [
+        "Flow.TransmitsWithin",
+        "Flow.transmitted_supported",
+        "Flow.transmitted_within",
+        "Flow.Descends"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    },
+    "transmission-independent-where-it-binds": {
+      "package": "TRANSMISSION",
+      "sections": [
+        "The two laws of a descent",
+        "Worlds",
+        "Dropping a dependence",
+        "Dropping a dependence breaks transmission",
+        "Witnesses",
+        "The laws of a flow",
+        "What derives inheritance",
+        "Finite worlds"
+      ],
+      "named": [
+        "Web.drop",
+        "World.drop",
+        "Web.drop_dependent",
+        "World.drop_holds",
+        "World.drop_finite",
+        "Flow.drop_untransmitted",
+        "World.drop_untransmitting",
+        "World.drop_but",
+        "World.finiteHatch_pair",
+        "World.vacuous_of_drop_invariant",
+        "Flow.DependsOnDrawn",
+        "Flow.DependsOnFed",
+        "Web.DrawingDepends",
+        "World.drawn_not_enough",
+        "Flow.inherits_of_drawn",
+        "Flow.inherits_of_fed",
+        "World.Finite.level_le",
+        "World.transmitting_iff_inherits",
+        "World.transmitting_of_drawn",
+        "World.transmitting_of_fed",
+        "World.bearingHatch_derived",
+        "World.drawn_and_link_needed",
+        "World.drawn_without_link",
+        "World.link_without_drawn"
+      ],
+      "builds_on": [
+        "World.Premise.Holds",
+        "World.Finite",
+        "World.Transmitting"
+      ],
+      "provenance": [
+        "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md"
+      ]
+    }
+  }
+}

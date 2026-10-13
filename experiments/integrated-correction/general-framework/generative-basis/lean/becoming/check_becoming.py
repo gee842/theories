@@ -47,7 +47,7 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Attraction",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
@@ -213,6 +213,40 @@ SCOPE = (
     "and an unregistered description need equality; where a rule keeps itself its region is "
     "absorbing, and where the next configuration depends on the rule alone a reformed state is "
     "drawn into what the rule holds. "
+    "Listing: A list can be listed once exactly where identity among its members is decided "
+    "(`listsOnce_iff_decided`); its number of members is unique and exists exactly then. "
+    "Refutation laws need no such premise. Fixing every list's number up to relational "
+    "indiscernibility in every world is equivalent to excluded middle "
+    "(`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws "
+    "without tracking occurrences across steps. "
+    "Order: Stuttering keeps the premises, stretch totals and recurrence, while rates and "
+    "reserves counted in steps depend on the reading. For a given footprint containing the "
+    "exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly "
+    "the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, "
+    "`Footprinted.converse`). Removing idle steps keeps premises, censuses and totals. "
+    "OneStep: A pattern of one step is realized by a world exactly where it obeys the law of "
+    "every step and the law of each named local condition (`OneStep.every_iff`, `OneStep.laws`); "
+    "nonzero taking needs a taker and nonzero giving a giver. Givers, capacity and activity are "
+    "characterized exactly. Runs on one family add chaining; for families chosen step by step, "
+    "running down adds continuity counted at positive levels (`OneStep.step_runsDown_iff`), "
+    "strictly weaker than tracking positions. "
+    "Weighted: Given weights with their laws and finite lists of moves and configurations, the "
+    "sum of histories over a finite horizon is exactly stepwise transfer (`Weights.sum_courses`). "
+    "Possibility is the core's trace relation, and counting preserves possibility. For a "
+    "description with representatives, exact preservation at every horizon is exactly one-step "
+    "lumpability (`Weights.lumped_iff`); truncation, cancellation, unkept memory and loops have "
+    "explicit boundary witnesses. "
+    "Transmission: Transmission is exactly inheritance with a need bound "
+    "(`Flow.transmitsWithin_iff`); where no dependence was held before, inheritance is the "
+    "forming law, while the general forming/holding split uses decidedness. Dropping one "
+    "dependence of a giver keeps the other premises and breaks binding transmission "
+    "(`World.drop_but`). Under the named finite, balance, dissipation, embodiment and support "
+    "conditions, a reading of drawing together with drawing being depending derives transmission "
+    "(`World.transmitting_of_drawn`). "
+    "Succession: `Successive.relay` gives a balanced, dissipative flow in which only active "
+    "formations give, the pool is fed at every step, and each source participates and is active "
+    "at its own step only. Continuing to be fed needs no source formation to recur. This advances "
+    "continuing-self-fed-from-beyond and is not a separate result. "
     "Attraction: for every determined law, with no premise, a configuration is drawn into an absorbing "
     "region exactly where it does not return, and what is drawn in never comes back; what can be had n "
     "steps on is absorbing and every possibility lost by step n is drawn into it; of two merged "

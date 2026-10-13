@@ -1,13 +1,13 @@
 {
   "id": "tests-fix-likeness-where-determined",
   "title": {
-    "zh": "检验在相同之下确定时固定相同：两个框架都在相同之下确定时，配置恰在通过同样的检验时相同；有分支时检验不固定相同",
-    "en": "Tests fix likeness where branching is determined up to likeness: where both frames are, configurations are alike exactly where they pass the same tests; with branching the tests do not fix likeness"
+    "zh": "检验在相同之下确定时固定相同：两个框架都在相同之下确定时，配置恰在通过同样的检验时相同；没有相同之下确定这一条件时，检验未必固定相同",
+    "en": "Tests fix likeness where branching is determined up to likeness: where both frames are, configurations are alike exactly where they pass the same tests; without determinacy up to likeness the tests need not fix likeness"
   },
   "family": "F01",
   "claim": {
-    "zh": "设 F 与 G 是动作与主张类型相同的框架。s 与 s′ 通过同样的检验（SameTests F G s s′），指从两者出发开放的动作序列相同，且每个序列之后能实现的主张相同；相同的配置如此（Alike.sameTests）。两者在相同之下确定时，同样的检验在一个动作之后保持（SameTests.after），通过同样的检验是一个互模拟（sameTests_bisimulation），所以配置恰在通过同样的检验时相同（alike_iff_sameTests；对一个确定的框架，Determined.alike_iff_sameTests）。分支不确定时检验不固定相同：在第一步之后选择的框架与在第一步选择的框架，起点通过同样的检验而不相同（Choosing.sameTests、Choosing.not_alike），后者不确定（Choosing.early_not_determined）。不加前提，构造性。",
-    "en": "Let F and G be frames with the same move and claim types. Configurations s and s′ pass the same tests (SameTests F G s s′) where the same courses of moves are open from each and after each course the same claims can be realized; alike configurations do (Alike.sameTests). Where both frames are determined up to likeness, passing the same tests survives a move (SameTests.after) and is a bisimulation (sameTests_bisimulation), so configurations are alike exactly where they pass the same tests (alike_iff_sameTests; for one determined frame, Determined.alike_iff_sameTests). Where branching is not determined the tests do not fix likeness: a frame choosing after its first move and one choosing at it pass the same tests from their starts and are not alike (Choosing.sameTests, Choosing.not_alike), the second not determined (Choosing.early_not_determined). No premise; constructive."
+    "zh": "设 F 与 G 是动作与主张类型相同的框架。s 与 s′ 通过同样的检验（SameTests F G s s′），指从两者出发开放的动作序列相同，且每个序列之后能实现的主张相同；相同的配置如此（Alike.sameTests）。两者在相同之下确定时，同样的检验在一个动作之后保持（SameTests.after），通过同样的检验是一个互模拟（sameTests_bisimulation），所以配置恰在通过同样的检验时相同（alike_iff_sameTests；对一个确定的框架，Determined.alike_iff_sameTests）。没有相同之下确定这一条件时，检验未必固定相同：在第一步之后选择的框架与在第一步选择的框架，起点通过同样的检验而不相同（Choosing.sameTests、Choosing.not_alike），后者不确定（Choosing.early_not_determined）。不加前提，构造性。",
+    "en": "Let F and G be frames with the same move and claim types. Configurations s and s′ pass the same tests (SameTests F G s s′) where the same courses of moves are open from each and after each course the same claims can be realized; alike configurations do (Alike.sameTests). Where both frames are determined up to likeness, passing the same tests survives a move (SameTests.after) and is a bisimulation (sameTests_bisimulation), so configurations are alike exactly where they pass the same tests (alike_iff_sameTests; for one determined frame, Determined.alike_iff_sameTests). Without determinacy up to likeness the tests need not fix likeness: a frame choosing after its first move and one choosing at it pass the same tests from their starts and are not alike (Choosing.sameTests, Choosing.not_alike), the second not determined (Choosing.early_not_determined). No premise; constructive."
   },
   "hypotheses": [
     {
