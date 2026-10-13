@@ -11,8 +11,8 @@
   },
   "hypotheses": [
     {
-      "zh": "alike_iff_sameTests 以两个框架处处在相同之下确定为条件；没有这个条件，Branching 给出反例。",
-      "en": "alike_iff_sameTests takes both frames determined up to likeness everywhere as its condition; without it, Branching gives a counterexample."
+      "zh": "alike_iff_sameTests 以两个框架处处在相同之下确定为条件；没有这个条件，Choosing 给出反例。",
+      "en": "alike_iff_sameTests takes both frames determined up to likeness everywhere as its condition; without it, Choosing gives a counterexample."
     },
     {
       "zh": "检验是有限动作序列，可带一个最后的主张；带否定与合取的分支检验在外围（ExplanatoryBranching）。",
@@ -72,8 +72,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
       "detail": {
-        "zh": "Branching：在第一步之后选择与在第一步选择的两个框架，通过同样的检验而不相同。",
-        "en": "Branching: frames choosing after and at the first move pass the same tests and are not alike."
+        "zh": "Choosing：在第一步之后选择与在第一步选择的两个框架，通过同样的检验而不相同。",
+        "en": "Choosing: frames choosing after and at the first move pass the same tests and are not alike."
       }
     }
   ],

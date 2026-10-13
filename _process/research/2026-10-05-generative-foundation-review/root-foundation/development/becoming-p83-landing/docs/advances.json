@@ -1,0 +1,30 @@
+[
+ {
+  "id": "learning-by-refutation",
+  "replace": [
+   [
+    "hypotheses",
+    "zh",
+    "此处不给出静止之步（并未证明不能给出；已知列表长度时，P83 的两周期引理看来能界定它，只是未检查的草图）",
+    "此处不给出静止之步（并未证明不能给出；P83 给出它：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确，Identification.held_learner_rests，这一步由界给出，学习者的记录不表明它）"
+   ],
+   [
+    "hypotheses",
+    "en",
+    "the step of rest is not stated here (not shown impossible; with the list's length known, P83's two-period lemma appears to bound it, an unchecked sketch)",
+    "the step of rest is not stated here (not shown impossible; P83 states it: where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on, Identification.held_learner_rests, a step the bound gives and the learner's record does not show)"
+   ]
+  ],
+  "history": {
+   "zh": "2026-10-12 P83：静止之步由 P83 给出（identification-where-bounded）：轨道被长 N 的列表所持时，学习者从第 N + (2N − 1)·tri N 步起每步主张且正确（Identification.held_learner_rests，经 Identification.unrefuted_persists：N 之内的套索假设在 2N − 1 步中不被否证就永不被否证）；这里的双重否定陈述不变，未检查草图的说法改为这一定理；见整合文档 §{S}。断言不变。",
+   "en": "2026-10-12 P83: the step of rest is stated by P83 (identification-where-bounded): where the orbit is held by a list of length N, the learner claims and is right at every step from N + (2N − 1)·tri N on (Identification.held_learner_rests, through Identification.unrefuted_persists: a lasso hypothesis within N unrefuted for 2N − 1 steps is never refuted again); the double-negation statements here are unchanged, and the mention of an unchecked sketch is replaced by that theorem; see §{S} of the integration note. The claim is unchanged."
+  }
+ },
+ {
+  "id": "wisdom-root-part-one",
+  "history": {
+   "zh": "2026-10-12 P83：“学习”一项中静止不能被否证（held_rest_unrefuted）之外，P83 给出静止之步：轨道被长 N 的列表所持时，按否证学习者从第 N + (2N − 1)·tri N 步起每步主张且正确，这一步是学习者所没有的列表长度的函数（Identification.held_learner_rests，identification-where-bounded）；见整合文档 §{S}。断言不变。",
+   "en": "2026-10-12 P83: beyond the learning clause's coming to rest being unrefuted (held_rest_unrefuted), P83 states the step of rest: where the orbit is held by a list of length N, the learner by refutation claims and is right at every step from N + (2N − 1)·tri N on, a function of the list's length, which the learner does not have (Identification.held_learner_rests, identification-where-bounded); see §{S} of the integration note. The claim is unchanged."
+  }
+ }
+]

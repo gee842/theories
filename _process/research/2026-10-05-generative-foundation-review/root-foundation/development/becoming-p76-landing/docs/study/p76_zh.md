@@ -1,6 +1,6 @@
 ## {S}. 历史固定什么：律与历史的完备对应，检验固定相同的条件（P76）
 
-2026-10-12。Ren 问封闭的百分比，随后设定会话目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。缺口之一是强意义上的完备：一类规律是该类的全部规律；此前只对计数成立（每个计数表都由某个列出计数，`tally_iff_counted`）。P69（§{S_UNFOLDING}）证明历史固定它所显示的律，并指出对应不是同一之处：死路与拼接。本节证明这两者就是律与历史之间的全部规律，并给出检验固定相同的构造性条件。本节在工作板上认领为 P76。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Histories`（L3），{N_MODULE} 项定理，只导入 `Becoming.Unfolding`，不改任何已有模块。
+2026-10-12。Ren 问封闭的百分比，随后设定会话目标：“move towards 100%, you can spawn a few agents for help, pick the "What would move it most next" first, and don't stop until we are 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)）。缺口之一是强意义上的完备：一类规律是该类的全部规律；此前只对计数成立（每个计数表都由某个列出计数，`tally_iff_counted`）。P69（§91）证明历史固定它所显示的律，并指出对应不是同一之处：死路与拼接。本节证明这两者就是律与历史之间的全部规律，并给出检验固定相同的构造性条件。本节在工作板上认领为 P76。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Histories`（L3），{N_MODULE} 项定理，只导入 `Becoming.Unfolding`，不改任何已有模块。
 
 成果记录新增两项：[histories-fix-law-up-to-dead-ends](../../../../theories/becoming/results/records/histories-fix-law-up-to-dead-ends.md) 与 [tests-fix-likeness-where-determined](../../../../theories/becoming/results/records/tests-fix-likeness-where-determined.md)。
 
@@ -11,10 +11,10 @@ Result(s): 复用 process-and-frame-as-readings（Run、Shown、Consistent、Dea
 Delta: 律与历史族：Admits、Run.admits、ShownBy、ShownBy.admits、shownBy_le_iff、SpliceClosed、admits_spliceClosed、
        family_iff、ConsistentFamily、shownBy_determined_iff、determined_family_iff；活的步：live、live_le、admits_live_iff、
        same_histories_iff、live_live、DeadEnd.not_live；会停止的历史：Trace.of_same、same_finite_histories_iff、MadeOfSteps、finite_family_iff。检验：SameTests、Alike.sameTests、SameTests.after、
-       sameTests_bisimulation、alike_iff_sameTests、Determined.alike_iff_sameTests；Branching（Move、Pos、Late、Early、late、
+       sameTests_bisimulation、alike_iff_sameTests、Determined.alike_iff_sameTests；Choosing（Move、Pos、Late、Early、late、
        early、Open、late_open、early_open、late_of_open、early_of_open、sameTests、not_alike、early_not_determined）
 Supplied premises / correspondence: 不加公理，也不加前提；family_iff、determined_family_iff、same_histories_iff 与
-       alike_iff_sameTests 是双向的；alike_iff_sameTests 以两个框架处处在相同之下确定为条件，Branching 说明没有它不成立；
+       alike_iff_sameTests 是双向的；alike_iff_sameTests 以两个框架处处在相同之下确定为条件，Choosing 说明没有它不成立；
        历史是不终止的序列（表示的承诺）；读法是 AI 的，待 Ren
 Evidence: 合并检查器回执 {RECEIPT}（Becoming.Histories {N_MODULE} 项定理，全部源声明公理报告为空），外围回执 {PERIPHERY}
 Boundary: 实际展开的历史是否终止没有陈述；核心中分支检验固定相同没有陈述（外围的证明用经典逻辑，配置有限时是否有构造性
@@ -36,12 +36,12 @@ Integration: 计划 P76；P69 的死路与拼接成为律与历史之间的全�
 
 **它回答了什么。**
 - **律与历史之间的全部规律。** 从历史读出的律，就是含有拼接的历史族（`family_iff`）；历史把律固定到死路为止（`same_histories_iff`）。所以不计死路的律与含有拼接的历史族一一对应：P69 的两处“对应不是同一”就是全部。确定的律多一个条件，一致（`determined_family_iff`）。会停止的历史下死路消失，律恰由它的有限历史固定（`same_finite_histories_iff`、`finite_family_iff`）：死路是不终止历史的事实。
-- **检验何时固定相同。** 线性检验（动作序列，加一个最后的主张）在相同之下确定时固定相同（`alike_iff_sameTests`）；有分支时不固定（`Branching`）。外围中带否定与合取的分支检验对像有限的模型固定相同（`same_iff_bisimilar`，经典）。
+- **检验何时固定相同。** 线性检验（动作序列，加一个最后的主张）在相同之下确定时固定相同（`alike_iff_sameTests`）；有分支时不固定（`Choosing`）。外围中带否定与合取的分支检验对像有限的模型固定相同（`same_iff_bisimilar`，经典）。
 
 **读法。** AI 的，待 Ren。Ren 同意律与历史是同一展开的两种读法、律从展开读出（“there are no two realities”）。在本结果之下：从历史读出的律就是含有拼接的历史族，别无其他；置于展开之上的律所能多出的只是死路，没有历史显示它们。拼接是记忆的缺席：律从所在处作答，不从怎样来到此处作答，所以记住来路的历史（保留的历史）所显示的律只容许它自己（`Run.keepHistory_shown`）。检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。
 
 **作者反审。**
-1. **证明短。** 每条定理只有几行；内容在于刻画是双向的、完备的，以及条件的边界（`Branching`）。
+1. **证明短。** 每条定理只有几行；内容在于刻画是双向的、完备的，以及条件的边界（`Choosing`）。
 2. **死路依赖于历史不终止。** 本节对两种历史都给出完备对应：不终止的历史下有死路，会停止的历史下没有。实际展开的历史是否终止，不是这里能定的。
 3. **分支检验的完备留在外围。** 核心只给线性检验在相同之下确定时的完备；分支检验的构造性证明开放。
 

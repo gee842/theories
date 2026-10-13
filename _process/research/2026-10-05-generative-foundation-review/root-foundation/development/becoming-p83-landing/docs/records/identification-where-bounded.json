@@ -1,0 +1,193 @@
+{
+  "id": "identification-where-bounded",
+  "title": {
+    "zh": "辨识：有界的记录确定历程，记录长度恰好；界给定时归纳即演绎，知道界的学习者从 2N − 1 起每步都对且不能更早，不知道界的学习者在界给出的一步之前静止；有意义的切分以有限的名命名，不用商",
+    "en": "Identification: a bounded record fixes the course, at an exact length; where the bound is given induction is deduction, the learner that knows the bound is right from 2N − 1 on and none can always speak sooner, and the learner that does not know it rests by a step the bound gives; the split that makes sense is named with finite names, with no quotient"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "设 o、o' : ℕ → O 是所识的历程，StatesBelow o N 指 o 至多有 N 个状态（P70）。周期为 p + 1、在前 p 步都在 Q 步后回来的 x 在每一步都在 Q 步后回来（Identification.period_extends，Fine–Wilf）；从 i、i' 起以周期 q + 1、q' + 1 重复的 o、o' 在 (i + q + 1) + (i' + q') 之前相同，就处处相同（Identification.lassos_agree）。StatesBelow o N 恰当有 i、q 使 i + q + 1 ≤ N 且 Learning.Lasso o i q（Identification.statesBelow_iff_lasso）。StatesBelow o N、StatesBelow o' N' 且 o、o' 在 N + N' − 1 之前相同，则处处相同（Identification.bounded_agree）；记录相等恰当历程在其长度之前相同（Identification.record_eq_iff），所以长 N + N' − 1 的记录确定历程（Identification.record_fixes）。给出两个值：对每个 T，有 StatesBelow 1 与 StatesBelow (T + 1) 的历程，长 T 的记录相同而在 T 不同（Identification.record_short）；对每个 M，有两个 StatesBelow (M + 2) 的历程，长 M + M + 2 的记录相同而在那里不同（Identification.record_short_twice）。StatesBelow o N 时，两个时刻同一状态恰当其后在 N + N − 1 步内相同（Identification.sameAhead_iff_below）。StatesBelow o N、i + q + 1 ≤ N，且对 i ≤ u、u + q + 1 < N + N − 1 有 o (u + q + 1) = o u，则 Learning.Lasso o i q（Identification.lasso_of_fits）；值可判定时，套索假设 (i, q) 在 N + N − 1 之前不被否证，就处处不被否证（Identification.bounded_induction），总有这样的假设（Identification.bounded_hypothesis）。知道 N 的学习者 Identification.knowing N 在 N + N − 1 之前不说，之后以第一个在 N 之内、为记录所证实的套索假设主张：StatesBelow o N 时它处处不被否证（Identification.knowing_holds），从 N + N − 1 起每步都对（Identification.knowing_right）；给出两个值，没有学习者在每个 StatesBelow o (M + 2) 的历程上都不被否证且在第 M + M + 2 步都作主张（Identification.knowing_earliest）；knowing 2 对二值否定从第 3 步起每步都对（Identification.denial_derived）；other 移动每个值时，回答 knowing N 的历程不满足 StatesBelow N（Identification.answer_exceeds_bound）。StatesBelow o N、a + b + 1 ≤ N、a ≤ s，且套索假设 (a, b) 在 s 到 s + (N + N − 1) 之前的每步不被否证，则从 s 起每步不被否证（Identification.unrefuted_persists）；StatesBelow o N 时，P73 的按否证学习者 Learning.learner Learning.lassos 从第 N + (N + N − 1) · Learning.tri N 步起每步主张且正确（Identification.learner_rests）；套索历程上有这样的一步（Identification.rests_of_lasso）；轨道被列表 l 所持时，以 N = l.length 亦然（Identification.held_learner_rests）。列表 l 在 next 下封闭时，成员 s、s' 的所识的未来相同恰当它们在 l.length + l.length − 1 步内相同（Law.sameFuture_iff_below）；l 持有每个配置时，以这一长度的所识的未来命名（Law.name）有意义（Law.name_makesSense），承载规律（Law.name_carries），值可判定时判定相同（Law.decideAlike）。不用 Lean 公理。",
+    "en": "Let o, o' : ℕ → O be registered courses, StatesBelow o N meaning o has at most N states (P70). An x with period p + 1 that comes back after Q steps at each of its first p steps comes back after Q steps at every step (Identification.period_extends, Fine–Wilf); o, o' repeating from i, i' with periods q + 1, q' + 1 and agreeing before (i + q + 1) + (i' + q') agree everywhere (Identification.lassos_agree). StatesBelow o N holds exactly where some i, q have i + q + 1 ≤ N and Learning.Lasso o i q (Identification.statesBelow_iff_lasso). With StatesBelow o N and StatesBelow o' N', agreeing before N + N' − 1 is agreeing everywhere (Identification.bounded_agree); records are equal exactly where the courses agree before their length (Identification.record_eq_iff), so the record before N + N' − 1 fixes the course (Identification.record_fixes). Given two values: for every T, courses with StatesBelow 1 and StatesBelow (T + 1) share their record before T and differ at T (Identification.record_short); for every M, two courses with StatesBelow (M + 2) share their record before M + M + 2 and differ there (Identification.record_short_twice). With StatesBelow o N, two moments are one state exactly where what follows them agrees for N + N − 1 steps (Identification.sameAhead_iff_below). With StatesBelow o N, i + q + 1 ≤ N and o (u + q + 1) = o u for i ≤ u, u + q + 1 < N + N − 1, Learning.Lasso o i q holds (Identification.lasso_of_fits); with values decided, a lasso hypothesis (i, q) unrefuted before N + N − 1 is unrefuted everywhere (Identification.bounded_induction), and one always is (Identification.bounded_hypothesis). The learner that knows N, Identification.knowing N, silent before N + N − 1 and then claiming by the first lasso hypothesis within N that the record bears out, is refuted nowhere where StatesBelow o N (Identification.knowing_holds) and is right at every step from N + N − 1 on (Identification.knowing_right); given two values, no learner is refuted nowhere on every course with StatesBelow o (M + 2) and claims at step M + M + 2 on each (Identification.knowing_earliest); knowing 2 is right about the two-valued denial from step 3 on (Identification.denial_derived); where other moves every value, the course answering knowing N fails StatesBelow N (Identification.answer_exceeds_bound). With StatesBelow o N, a + b + 1 ≤ N and a ≤ s, a lasso hypothesis (a, b) unrefuted at every step from s to before s + (N + N − 1) is unrefuted at every step from s on (Identification.unrefuted_persists); with StatesBelow o N, P73's learner by refutation Learning.learner Learning.lassos claims and is right at every step from N + (N + N − 1) · Learning.tri N on (Identification.learner_rests); on a lasso course there is such a step (Identification.rests_of_lasso); where an orbit is held by a list l, the same holds with N = l.length (Identification.held_learner_rests). For a list l closed under next, members s, s' have the same registered future exactly where those futures agree for l.length + l.length − 1 steps (Law.sameFuture_iff_below); where l holds every configuration, naming by the registered future of that length (Law.name) makes sense (Law.name_makesSense), carries the law (Law.name_carries) and, values decided, decides likeness (Law.decideAlike). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加公理；除了状态数的界不加前提：界写在每条定理之中（StatesBelow o N，或世界被长度为 N 的列表持有）。",
+      "en": "No axiom; no premise beyond the bound on states, written into each theorem (StatesBelow o N, or a world held by a list of length N)."
+    },
+    {
+      "zh": "学习者与按名判定相同要所识的值可判定（DecidableEq O、DecidableEq R），即 P73 的“值可判定”；bounded_agree、lasso_of_fits、Law.name_makesSense 不要。",
+      "en": "The learner and deciding likeness by names need registered values decided (DecidableEq O, DecidableEq R), P73's ‘values decided’; bounded_agree, lasso_of_fits and Law.name_makesSense do not."
+    },
+    {
+      "zh": "只陈述确定的律与单个所识的历程；有分支的框架与概率没有陈述。",
+      "en": "Only determined laws and single registered courses are stated; branching frames and probabilities are not."
+    }
+  ],
+  "correspondence": {
+    "zh": "P83（工作板），按 Ren 2026-10-12 05:12 的推测“the full \"truth\" can be derived, situationally, including the cognition/controller part”与 06:01 的“keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them”，回答 P70–P72 留下的后两个开放问题：从有限的记录推出律，以及不加公理命名有意义的切分的类。P73（learning-by-refutation）给出不用界的一面：没有记录确定下一个值，学习者静止这一点不被否证；这里给出界给定的一面与恰好的边界，并给出不知道界的学习者静止之步（由界给出，学习者的记录不表明它）。已知的结果：Fine 与 Wilf（1965）的两个周期定理，Moore（1956）的有限实验，Gold（1967）的极限中的辨识；这里在核心中不用公理重证并连成一体。读法（AI 的，待 Ren）：“按情境”就是界；有限的记录是一个投影，界使它对历程不失去什么；控制者在有界的世界之内，只有回答它的世界使它落空，而那超出界；有界时类的名是它的有限的未来；知道界与不知道界的差别在何时对与能否知道已对，不在最后是否对。见整合文档 §{S}。",
+    "en": "P83 (work board), following Ren's speculation of 05:12 on 12 October 2026, ‘the full \"truth\" can be derived, situationally, including the cognition/controller part’, and the 06:01 ‘keep prove to the deepest … for the open questions, if they need to be answered to move forward, answer them’; it answers the last two questions P70–P72 left open: deriving the law from a finite record, and naming the classes of the split that makes sense with no axiom. P73 (learning-by-refutation) gives the side where no bound is used: no record fixes the next value, and the learner's coming to rest is unrefuted; this gives the side where the bound is given, with the exact boundary, and the step by which the learner that does not know the bound rests (given by the bound; the learner's record does not show it). Known results: Fine and Wilf's two periods (1965), Moore's finite experiments (1956), Gold's identification in the limit (1967); here reproved in the core with no axiom and connected. Readings (the AI's, pending Ren): ‘situationally’ is the bound; a finite record is a projection, which the bound makes lose nothing of the course; the controller is inside the bounded world, and only a world answering it defeats it, which exceeds the bound; with a bound, a class's name is its finite future; knowing the bound and not knowing it differ in when the learner is right and whether it can know it is, not in whether it ends right. See §{S} of the integration note."
+  },
+  "aliases": [
+    "Becoming.Identification.period_extends",
+    "Becoming.Identification.lassos_agree",
+    "Becoming.Identification.statesBelow_iff_lasso",
+    "Becoming.Identification.bounded_agree",
+    "Becoming.Identification.record_fixes",
+    "Becoming.Identification.record_short_twice",
+    "Becoming.Identification.bounded_induction",
+    "Becoming.Identification.knowing",
+    "Becoming.Identification.knowing_right",
+    "Becoming.Identification.knowing_earliest",
+    "Becoming.Identification.denial_derived",
+    "Becoming.Identification.answer_exceeds_bound",
+    "Becoming.Identification.unrefuted_persists",
+    "Becoming.Identification.learner_rests",
+    "Becoming.Identification.held_learner_rests",
+    "Becoming.Law.sameFuture_iff_below",
+    "Becoming.Law.name_makesSense",
+    "identification",
+    "辨识",
+    "Fine–Wilf",
+    "两个周期",
+    "bounded induction",
+    "有界的归纳",
+    "finite name",
+    "有限的名",
+    "bounded rest",
+    "有界的静止"
+  ],
+  "dependencies": [
+    {
+      "id": "learning-by-refutation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Learning.Lasso、lasso_of_held、lasso、lasso_claims、lasso_holds、Holds、RefutedAt、record、back_record、back_made、holdFrom、lassoNext 与 diagonal_unrested：界给定时补上它在界未知时的结果；复用按否证学习的 learner、lassos、index 及其引理与 lasso_learner_bounded，给出它的静止之步。",
+        "en": "Reuses Learning.Lasso, lasso_of_held, lasso, lasso_claims, lasso_holds, Holds, RefutedAt, record, back_record, back_made, holdFrom, lassoNext and diagonal_unrested: it completes, with the bound given, what that record states with the bound unknown; reuses the learner by refutation (learner, lassos, index and its lemmas, lasso_learner_bounded) to state the step at which it rests."
+      },
+      "interface": {
+        "output": {
+          "zh": "套索、记录、否证与回答的历程；按否证学习者及其否证之界。",
+          "en": "Lassos, records, refutation and the answering course; the learner by refutation and its bound on refutations."
+        },
+        "input": {
+          "zh": "有界的记录确定历程；知道界的学习者；不知道界的学习者的静止之步。",
+          "en": "A bounded record fixes the course; the learner that knows the bound; the step at which the learner that does not know it rests."
+        },
+        "conditions": {
+          "zh": "学习者要值可判定。",
+          "en": "The learner needs values decided."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean"
+      }
+    },
+    {
+      "id": "the-split-that-makes-sense",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 SameAhead、StatesBelow、shared_below、statesBelow_of_same、lasso_iff_sameAhead 与 Denial：状态的界就是套索的界。",
+        "en": "Reuses SameAhead, StatesBelow, shared_below, statesBelow_of_same, lasso_iff_sameAhead and Denial: the bound on states is the bound on the lasso."
+      },
+      "interface": {
+        "output": {
+          "zh": "从历史读出的状态。",
+          "en": "States read off a history."
+        },
+        "input": {
+          "zh": "状态数的界。",
+          "en": "The bound on states."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean"
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 MakesSense、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：有限的名是有意义的切分。",
+        "en": "Reuses MakesSense, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: the finite name is the split that makes sense."
+      },
+      "interface": {
+        "output": {
+          "zh": "有意义的描述。",
+          "en": "Descriptions that make sense."
+        },
+        "input": {
+          "zh": "以有限的名命名。",
+          "en": "Naming by finite names."
+        },
+        "conditions": {
+          "zh": "世界被列表持有。",
+          "en": "A world held by a list."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、gap_of_le、gap_of_lt。",
+        "en": "Reuses Law.orbit, gap_of_le and gap_of_lt."
+      },
+      "interface": {
+        "output": {
+          "zh": "轨道与间隔。",
+          "en": "Orbits and gaps."
+        },
+        "input": {
+          "zh": "余数与套索世界的位置。",
+          "en": "Remainders and the lasso world's positions."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "registration-within-what-it-registers",
+      "detail": {
+        "zh": "那里从内部不能同时持有每个读法；这里有界的历程的律可以推出，回答自己的学习者的世界超出界。",
+        "en": "There, no registration within holds every reading at once; here, a bounded course's law is derived, and a world answering its own learner exceeds the bound."
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "detail": {
+        "zh": "推广恰在归并之处；这里界使有限的数据确定整个历程。",
+        "en": "Generalization is exactly where it lumps; here the bound makes finite data fix the whole course."
+      }
+    },
+    {
+      "id": "wisdom-root-part-one",
+      "detail": {
+        "zh": "其“学习”一项说按否证学习者静止这一点不被否证；held_learner_rests 给出这一步，是列表长度的函数，学习者自己没有它。",
+        "en": "Its learning clause says the learner by refutation's coming to rest is unrefuted; held_learner_rests states the step, a function of the list's length, which the learner does not have."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "detail": {
+        "zh": "record_short：一个状态的历程与 T + 1 个状态的历程有相同的长 T 的记录而在 T 不同；record_short_twice：两个 M + 2 个状态的历程（每 M + 2 步与每 M + 1 步标记一次）有相同的长 M + M + 2 的记录而在那里不同；answer_exceeds_bound：回答知道 N 的学习者的历程超出 N 个状态。",
+        "en": "record_short: a course with one state and one with T + 1 share their record before T and differ at T; record_short_twice: two courses with M + 2 states (marking every M + 2 and every M + 1 steps) share their record before M + M + 2 and differ there; answer_exceeds_bound: the course answering the learner that knows N exceeds N states."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "界必须给出；N + N' − 1 对一般的 N、N' 充分，只在 N = 1 与 N = N' 证明为恰好；同一历史、同一世界的更锐的 Moore 界没有陈述；静止之步 N + (2N − 1)·tri N 粗，不是最优；只陈述确定的律与单个历程；读法是 AI 的；不含伦理谓词。",
+    "en": "The bound must be given; N + N' − 1 suffices for all N, N' and is shown exact only for N = 1 and N = N'; Moore's sharper bound for one history or one world is not stated; the rest step N + (2N − 1)·tri N is coarse, not optimal; only determined laws and single courses are stated; the readings are the AI's; contains no ethical predicate."
+  },
+  "next_delta": {
+    "zh": "对一般的 N、N' 的恰好性（Fine–Wilf 的极值）；同一世界的 Moore 界；不知道界的学习者的最优静止之步；有分支的框架下的辨识（以 P69 的 Alike 与 P76 的检验）；与 P76 的 alike_iff_sameTests 的实例定理（由后落地者写出）；Ren 对“按情境就是界”与有限名读法的判断。",
+    "en": "Exactness for general N, N' (the Fine–Wilf extremal words); Moore's bound for one world; the optimal rest step of the learner that does not know the bound; identification for branching frames (with P69's Alike and P76's tests); the instance theorem to P76's alike_iff_sameTests (by whichever lands second); Ren's judgment on reading ‘situationally’ as the bound and on the finite-name reading."
+  }
+}

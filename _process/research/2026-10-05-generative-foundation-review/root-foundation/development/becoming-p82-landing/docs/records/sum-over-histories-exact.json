@@ -103,6 +103,13 @@
         "zh": "同一模块中历史之和的损失：截断、抵消、记忆与回路。",
         "en": "The losses of the sum over histories in the same module: truncation, cancellation, memory and loops."
       }
+    },
+    {
+      "id": "returning-where-the-course-branches",
+      "detail": {
+        "zh": "分支进程上的回返与被吸入（P81）：这里的加权历史给它们一个度量。",
+        "en": "Returning and being drawn on branching courses (P81): the weighted histories here give them a measure."
+      }
     }
   ],
   "counterexamples": [
