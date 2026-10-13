@@ -53,9 +53,9 @@ registration is supplied, never derived.
   (`Clearing.selected_pooled`).
 * **Selection favours reaching beyond.** In `Diversion` a taker gauges a store. In the diverting
   flow it takes one unit from a source a dweller depends on and gives it to the store; in the
-  restrained flow nothing is exchanged. The selection that the store stands at least one at the
+  undiverted flow nothing is exchanged. The selection that the store stands at least one at the
   second step is through the taker's registration, holds in the diverting flow and fails in the
-  restrained one, while the diverting flow reaches the dweller, beyond the taker's registration
+  undiverted one, while the diverting flow reaches the dweller, beyond the taker's registration
   closure, and ends it (`Diversion.favours`). Every selection through the taker's registration
   selects the diverting flow alike with a supplying flow, which raises the store without drawing
   on the source and reaches nothing beyond the taker (`Diversion.blind_to_source`).
@@ -465,7 +465,7 @@ end Clearing
 
 A taker gauges a store and depends on nothing; a dweller depends on a source, needing two units.
 In the diverting flow the taker takes one unit of the source across the first step and gives it to
-the store; in the restrained flow nothing is exchanged; in the supplying flow the taker gives the
+the store; in the undiverted flow nothing is exchanged; in the supplying flow the taker gives the
 store one unit across the first step and takes nothing. -/
 
 namespace Diversion
@@ -508,7 +508,7 @@ def diverting : Flow Formation Place where
     | .dweller, _ => 0
 
 /-- Nothing is taken or given. -/
-def restrained : Flow Formation Place where
+def undiverted : Flow Formation Place where
   present _ := [.taker, .dweller]
   take _ _ _ := 0
   give _ _ _ := 0
@@ -524,8 +524,8 @@ def divertedLevel (t : Nat) : Place → Nat
   | .source => drawn t
   | .store => raised t
 
-/-- The levels of the restrained flow: the source at two, the store at nothing. -/
-def restrainedLevel (_ : Nat) : Place → Nat
+/-- The levels of the undiverted flow: the source at two, the store at nothing. -/
+def undivertedLevel (_ : Nat) : Place → Nat
   | .source => 2
   | .store => 0
 
@@ -572,7 +572,7 @@ theorem diverting_balances : diverting.Balances (web divertedLevel)
   | 0, .store => rfl
   | _ + 1, .store => rfl
 
-theorem restrained_balances : restrained.Balances (web restrainedLevel)
+theorem undiverted_balances : undiverted.Balances (web undivertedLevel)
   | _, .source => rfl
   | _, .store => rfl
 
@@ -619,22 +619,22 @@ theorem supplied_closed : ClosedUnder (supplying.Affects (web suppliedLevel)) ta
 /-- **Selection favours reaching beyond.** Both flows balance and in both activity needs support;
 in the diverting flow only active formations give and take, and take only from what they draw on.
 The diverting flow reaches the dweller, which lies within the taker's reach closure and beyond its
-registration closure; the restrained flow does not reach it. The selection that the store stands
+registration closure; the undiverted flow does not reach it. The selection that the store stands
 at least one at the second step is through the taker's registration, holds in the diverting flow
-and fails in the restrained one. The dweller is unsupported from the second step on in the
-diverting flow and supported at every step in the restrained one. -/
+and fails in the undiverted one. The dweller is unsupported from the second step on in the
+diverting flow and supported at every step in the undiverted one. -/
 theorem favours :
-    diverting.Balances (web divertedLevel) ∧ restrained.Balances (web restrainedLevel) ∧
-      (web divertedLevel).Dependent ∧ (web restrainedLevel).Dependent ∧
+    diverting.Balances (web divertedLevel) ∧ undiverted.Balances (web undivertedLevel) ∧
+      (web divertedLevel).Dependent ∧ (web undivertedLevel).Dependent ∧
       diverting.Acting (web divertedLevel) ∧ diverting.Taking (web divertedLevel) ∧
       diverting.WithinReach (web divertedLevel) .taker .dweller ∧
       ¬ diverting.WithinRegistration (web divertedLevel) gauge .taker .dweller ∧
-      ¬ restrained.WithinReach (web restrainedLevel) .taker .dweller ∧
+      ¬ undiverted.WithinReach (web undivertedLevel) .taker .dweller ∧
       (web divertedLevel).SelectsThrough gauge .taker 1 (StoreAtLeast 1 1) ∧
-      StoreAtLeast 1 1 divertedLevel ∧ ¬ StoreAtLeast 1 1 restrainedLevel ∧
+      StoreAtLeast 1 1 divertedLevel ∧ ¬ StoreAtLeast 1 1 undivertedLevel ∧
       (∀ n, ¬ (web divertedLevel).Supported (n + 1) .dweller) ∧
-      ∀ t, (web restrainedLevel).Supported t .dweller :=
-  ⟨diverting_balances, restrained_balances, dependent _, dependent _, diverting_acting,
+      ∀ t, (web undivertedLevel).Supported t .dweller :=
+  ⟨diverting_balances, undiverted_balances, dependent _, dependent _, diverting_acting,
    diverting_taking,
    WithinClosure.of_rel ⟨.source, ⟨0, trivial⟩, 0, .head _, .inl Nat.zero_lt_one⟩,
    fun within => within takerAlone takerAlone_closed trivial,

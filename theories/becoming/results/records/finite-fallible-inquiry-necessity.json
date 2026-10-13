@@ -52,7 +52,7 @@
     "Becoming.FallibleInquiry.different_answers_not_beyond",
     "Becoming.FallibleInquiry.answer_alike_beyond_law",
     "Becoming.FallibleInquiry.coverage_le_errors_add_reach",
-    "Becoming.FallibleInquiry.error_budgets_require_reach",
+    "Becoming.FallibleInquiry.error_bounds_require_reach",
     "Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors",
     "Becoming.FallibleInquiry.alike_with_common_imbalance",
     "Becoming.FallibleInquiry.answer_alike_with_common_imbalance"
@@ -157,8 +157,8 @@
     "en": "Retains finite natural weights, complete inputs, a common rule and actual probability correspondence. The native adapter adds its balance, presence and initial-record conditions; structural reach may include future or wrongly ordered edges and does not prove time-ordered transmission by answer time or successful understanding/use. Science-wide necessity of the whole core is unproved. P94 generalizes qualitative blindness only; it claims neither a newly formalized weighted bound nor a least-condition result. Predictive success with an incomplete description is not an adequate rival to a complete mechanism explanation."
   },
   "validation_scope": {
-    "zh": "原统计18／27及P92/P94冻结回执保持。P104仅追加3项逐时接续，另记 timely-response-necessity；原28项定理声明及证明逐字保留。当前外围31定理／37声明，20空、17仅 propext 与 Quot.sound，无 Classical.choice；43继承模块来源绑定。纯核心不导入外围，无经验或独立评审。",
-    "en": "Original statistical 18/27 and P92/P94 receipts retained. P104 appends three timed adapters registered as timely-response-necessity; all original 28 statements and proofs are byte-preserved. Current periphery: 31 theorems / 37 declarations, 20 empty and 17 using only propext and Quot.sound, no Classical.choice; 43 inherited modules source-bound. Pure core does not import it; no empirical or independent review."
+    "zh": "2026-10-14：Becoming.FallibleInquiry 的当前字节由回执 20261013T205526.452771Z 绑定（通过，31 项定理、37 项声明审计）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 原统计18／27及P92/P94冻结回执保持。P104仅追加3项逐时接续，另记 timely-response-necessity；原28项定理声明及证明逐字保留。当前外围31定理／37声明，20空、17仅 propext 与 Quot.sound，无 Classical.choice；43继承模块来源绑定。纯核心不导入外围，无经验或独立评审。",
+    "en": "14 October 2026: the current bytes of Becoming.FallibleInquiry are bound to receipt 20261013T205526.452771Z (passed, 31 theorems, 37 declaration audits). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Original statistical 18/27 and P92/P94 receipts retained. P104 appends three timed adapters registered as timely-response-necessity; all original 28 statements and proofs are byte-preserved. Current periphery: 31 theorems / 37 declarations, 20 empty and 17 using only propext and Quot.sound, no Classical.choice; 43 inherited modules source-bound. Pure core does not import it; no empirical or independent review."
   },
   "references": [
     {
@@ -210,13 +210,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
       "role": "proof",
-      "sha256": "c7044c4ee33aea3d5093e7b5314901a8b4ef1acb17624297cb57345b7dc048e3",
+      "sha256": "c0e085ff612901da4dbd2ba77e8cbf64abfc6f16b4a70eea38fd3475eb4e4021",
       "declarations": [
         "Becoming.FallibleInquiry.answer_alike_beyond_response",
         "Becoming.FallibleInquiry.different_answers_not_beyond",
         "Becoming.FallibleInquiry.answer_alike_beyond_law",
         "Becoming.FallibleInquiry.coverage_le_errors_add_reach",
-        "Becoming.FallibleInquiry.error_budgets_require_reach",
+        "Becoming.FallibleInquiry.error_bounds_require_reach",
         "Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors",
         "Becoming.FallibleInquiry.Witness.balanced",
         "Becoming.FallibleInquiry.Witness.law_through",
@@ -273,6 +273,12 @@
       "role": "receipt",
       "sha256": "27cf7417826cc785919b437d7e2708bd32672cd7ff84d57bf3cf477c0b8ce55e",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
+      "role": "receipt",
+      "sha256": "26ec20ad76d9c1acd39de927f3400875132b4f3a9a3dbcd1c1c10ffee251afd8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -285,7 +291,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -327,6 +333,10 @@
     {
       "zh": "2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。",
       "en": "2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`；陈述、证明与定理数不变；Lean 源：FallibleInquiry 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`; statements, proofs and theorem counts unchanged; Lean sources: FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "target-capture",
   "title": {
-    "zh": "目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只改状态被重新吸收",
-    "en": "The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, reforming the state alone is re-absorbed"
+    "zh": "目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收",
+    "en": "The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
   "claim": {
-    "zh": "一个亲代家族的后代计数（offspringCount）在每个亲代至少（至多）留下若干后代时有相应的界（le_offspringCount、offspringCount_le）。带着目标的亲代 ms 各留下至少 a 个后代、其他亲代 es 各至多 b 个、b ≤ a 时，|ms|·（es 的后代）≤（ms 的后代）·|es|（share_not_lower）；b < a 且两类都在时严格小于（share_rises）。后代带着亲代的目标时，这就是目标在后代中的份额不低于、高于它在亲代中的份额。世系是一次开始而立，即一次上升；所立者每步被列出（Web.StandingCensus）时，任意晚的世系需要任意晚处所立者不衰减的步（Flow.descent_needs_unrun）；所立者从某步起每步衰减时世系不再复现（Flow.descent_exhausted）。在状态与规则的配置上，下一配置取决于规则而不取决于状态时，规则相同的两个配置从下一步起轨道相同（Law.reform_reabsorbed）；Captured 中状态随规则、规则保持自身，改过的状态立即回来，改过的规则改变结果（Captured.state_reform_returns、Captured.rule_reform_changes）。乘法结合律以递归证明（mul_assoc_nat），因为前导的 Nat.mul_assoc 用 propext。不用 Lean 公理。",
-    "en": "The offspring of a family of parents, counted (offspringCount), are bounded where each parent leaves at least or at most so many (le_offspringCount, offspringCount_le). Carriers of a target ms each leaving at least a offspring and the other parents es each at most b, with b ≤ a, |ms|·(es's offspring) ≤ (ms's offspring)·|es| (share_not_lower), strictly where b < a and both kinds are present (share_rises). Where the offspring carry their parents' target, this is the target's share among the offspring not below, or above, its share among the parents. A descent is a coming to stand, so a rise; where what stands is listed at each step (Web.StandingCensus), descent at arbitrarily late steps needs steps at arbitrarily late times across which what stands does not run down (Flow.descent_needs_unrun), and where it runs down at every step from some step on, descent does not recur (Flow.descent_exhausted). On configurations of a state and a rule, where the next configuration depends on the rule and not on the state, two configurations with the same rule have the same orbit from the next step on (Law.reform_reabsorbed); in Captured the state follows the rule and the rule keeps itself, a reformed state returns at once and a reformed rule changes the outcome (Captured.state_reform_returns, Captured.rule_reform_changes). Associativity is proved by recursion (mul_assoc_nat), since the prelude's Nat.mul_assoc uses propext. No Lean axiom is used."
+    "zh": "一个亲代家族的后代计数（offspringCount）在每个亲代至少（至多）留下若干后代时有相应的界（le_offspringCount、offspringCount_le）。带着目标的亲代 ms 各留下至少 a 个后代、其他亲代 es 各至多 b 个、b ≤ a 时，|ms|·（es 的后代）≤（ms 的后代）·|es|（share_not_lower）；b < a 且两类都在时严格小于（share_rises）。后代带着亲代的目标时，这就是目标在后代中的份额不低于、高于它在亲代中的份额。世系是一次开始而立，即一次上升；所立者每步被列出（Web.StandingCensus）时，任意晚的世系需要任意晚处所立者不衰减的步（Flow.descent_needs_unrun）；所立者从某步起每步衰减时世系不再复现（Flow.descent_exhausted）。在状态与规则的配置上，下一配置取决于规则而不取决于状态时，规则相同的两个配置从下一步起轨道相同（Law.perturbation_reabsorbed）；Captured 中状态随规则、规则保持自身，扰动过的状态立即回来，扰动过的规则改变结果（Captured.state_perturbation_returns、Captured.rule_perturbation_changes）。乘法结合律以递归证明（mul_assoc_nat），因为前导的 Nat.mul_assoc 用 propext。不用 Lean 公理。",
+    "en": "The offspring of a family of parents, counted (offspringCount), are bounded where each parent leaves at least or at most so many (le_offspringCount, offspringCount_le). Carriers of a target ms each leaving at least a offspring and the other parents es each at most b, with b ≤ a, |ms|·(es's offspring) ≤ (ms's offspring)·|es| (share_not_lower), strictly where b < a and both kinds are present (share_rises). Where the offspring carry their parents' target, this is the target's share among the offspring not below, or above, its share among the parents. A descent is a coming to stand, so a rise; where what stands is listed at each step (Web.StandingCensus), descent at arbitrarily late steps needs steps at arbitrarily late times across which what stands does not run down (Flow.descent_needs_unrun), and where it runs down at every step from some step on, descent does not recur (Flow.descent_exhausted). On configurations of a state and a rule, where the next configuration depends on the rule and not on the state, two configurations with the same rule have the same orbit from the next step on (Law.perturbation_reabsorbed); in Captured the state follows the rule and the rule keeps itself, a perturbed state returns at once and a perturbed rule changes the outcome (Captured.state_perturbation_returns, Captured.rule_perturbation_changes). Associativity is proved by recursion (mul_assoc_nat), since the prelude's Nat.mul_assoc uses propext. No Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "The share theorems assume only bounds on offspring numbers; that offspring carry their parents' target (transmission) is the premise needed to read them as shares, as with TransmitsWithin in Becoming.Evolution."
     },
     {
-      "zh": "世系的定理设所立者每步被列出，这是写在定理中的局部条件；reform_reabsorbed 设下一配置不取决于状态。",
-      "en": "The descent theorems assume what stands is listed at each step, a local condition written into them; reform_reabsorbed assumes the next configuration does not depend on the state."
+      "zh": "世系的定理设所立者每步被列出，这是写在定理中的局部条件；perturbation_reabsorbed 设下一配置不取决于状态。",
+      "en": "The descent theorems assume what stands is listed at each step, a local condition written into them; perturbation_reabsorbed assumes the next configuration does not depend on the state."
     },
     {
       "zh": "离散的步；自然数的量。",
@@ -37,7 +37,7 @@
     "Becoming.share_rises",
     "Becoming.Flow.descent_needs_unrun",
     "Becoming.Flow.descent_exhausted",
-    "Becoming.Law.reform_reabsorbed",
+    "Becoming.Law.perturbation_reabsorbed",
     "hijacking",
     "劫持",
     "capture",
@@ -127,8 +127,8 @@
     {
       "id": "necessarily-drawn-is-not-returning",
       "detail": {
-        "zh": "Captured 的规则区域是吸收区域；改过的状态或规则被吸入且不返回（P81）。",
-        "en": "Captured's rule region is an absorbing region; a reformed state or rule is drawn in and never returns (P81)."
+        "zh": "Captured 的规则区域是吸收区域；扰动过的状态或规则被吸入且不返回（P81）。",
+        "en": "Captured's rule region is an absorbing region; a perturbed state or rule is drawn in and never returns (P81)."
       }
     }
   ],
@@ -136,24 +136,24 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "detail": {
-        "zh": "边界：被重新吸收的只是对状态的改变。在 Captured 中，只改状态的展开在下一步回到规则所握之处（`Captured.state_reform_returns`），改规则则从下一步起改变结果（`Captured.rule_reform_changes`）。",
-        "en": "Boundary: only a reform of the state is re-absorbed. In Captured, reforming the state alone is back where the rule holds it at the next step (`Captured.state_reform_returns`), while reforming the rule changes the outcome from the next step on (`Captured.rule_reform_changes`)."
+        "zh": "边界：被重新吸收的只是对状态的扰动。在 Captured 中，只扰动状态的展开在下一步回到规则所握之处（`Captured.state_perturbation_returns`），扰动规则则从下一步起改变结果（`Captured.rule_perturbation_changes`）。",
+        "en": "Boundary: only a perturbation of the state is re-absorbed. In Captured, perturbing the state alone is back where the rule holds it at the next step (`Captured.state_perturbation_returns`), while perturbing the rule changes the outcome from the next step on (`Captured.rule_perturbation_changes`)."
       }
     }
   ],
   "limitations": {
-    "zh": "多取者留下更多后代、后代带着亲代的目标、胜者塑造规则，都是给出的，不推出；份额定理是二值目标的计数；reform_reabsorbed 的条件（下一配置不取决于状态）是强的，规则怎样被胜者改写而仍握住结果没有一般地陈述；Captured 是最小的见证；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are the counting for a two-valued target; the condition of reform_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, pending Ren; contains no ethical predicate."
+    "zh": "多取者留下更多后代、后代带着亲代的目标、胜者塑造规则，都是给出的，不推出；份额定理是二值目标的计数；perturbation_reabsorbed 的条件（下一配置不取决于状态）是强的，规则怎样被胜者改写而仍握住结果没有一般地陈述；Captured 是最小的见证；读法是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "That taking more yields more offspring, that offspring carry their parents' target and that winners shape the rule are supplied, not derived; the share theorems are the counting for a two-valued target; the condition of perturbation_reabsorbed (the next configuration not depending on the state) is strong, and how a rule rewritten by its winners still holds the outcome is not stated in general; Captured is a minimal witness; the readings are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.reform_reabsorbed；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.reform_reabsorbed; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed, whether it needs a review is Ren's call."
+    "zh": "2026-10-14：Becoming.Capture、Becoming.Mechanism 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Capture 的 11 项定理全部空依赖，其中含 share_not_lower、share_rises、Flow.descent_exhausted 与 Law.perturbation_reabsorbed；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §83；未作独立审查，是否需要交 Ren。",
+    "en": "14 October 2026: the current bytes of Becoming.Capture, Becoming.Mechanism are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 11 theorems of Becoming.Capture all have empty axiom reports, among them share_not_lower, share_rises, Flow.descent_exhausted and Law.perturbation_reabsorbed; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §83 of the integration note; not independently reviewed, whether it needs a review is Ren's call."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "0dd4d2c4d3f2172d3fa5b76f5265ce4ff1d521c9ad761a945686d6865438d13b",
+      "sha256": "aee13a1d93a93d7a5de9d6f5c1878feb367257fdddc148941ce82dffd303d27b",
       "declarations": [
         "Becoming.mul_assoc_nat",
         "Becoming.offspringCount",
@@ -163,11 +163,11 @@
         "Becoming.share_rises",
         "Becoming.Flow.descent_needs_unrun",
         "Becoming.Flow.descent_exhausted",
-        "Becoming.Law.reform_reabsorbed",
+        "Becoming.Law.perturbation_reabsorbed",
         "Becoming.Captured.next",
         "Becoming.Captured.byRule",
-        "Becoming.Captured.state_reform_returns",
-        "Becoming.Captured.rule_reform_changes"
+        "Becoming.Captured.state_perturbation_returns",
+        "Becoming.Captured.rule_perturbation_changes"
       ]
     },
     {
@@ -210,7 +210,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
       "declarations": [
         "Becoming.Law.reabsorbed"
       ]
@@ -224,13 +224,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -250,12 +250,18 @@
       "role": "provenance",
       "sha256": "4fc423936815ac19535df80e99d3142ff56eda536da9fa6ba55be77ef39a48fd",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -290,7 +296,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -400,6 +406,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Law.reform_reabsorbed` → `Law.perturbation_reabsorbed`、`Captured.state_reform_returns` → `Captured.state_perturbation_returns`、`Captured.rule_reform_changes` → `Captured.rule_perturbation_changes`；陈述、证明与定理数不变；描述这些声明的文字随之改用新词：“改过的”“只改状态”改为“扰动过的”“只扰动状态”；Lean 源：Capture、Mechanism 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”；标题由「目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只改状态被重新吸收」改为「目标的捕获：带着目标的亲代留下更多后代时目标的份额上升；所立者衰减不断则选择停止；下一配置取决于规则时只扰动状态被重新吸收」。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Law.reform_reabsorbed` → `Law.perturbation_reabsorbed`, `Captured.state_reform_returns` → `Captured.state_perturbation_returns`, `Captured.rule_reform_changes` → `Captured.rule_perturbation_changes`; statements, proofs and theorem counts unchanged; prose describing these declarations follows the new words: “reformed”/“reforming” become “perturbed”/“perturbing”; Lean sources: Capture, Mechanism only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”; title changed from “The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, reforming the state alone is re-absorbed” to “The capture of a target: a target's share rises where its carriers leave more offspring; running down stops the selection; where the next configuration depends on the rule, perturbing the state alone is re-absorbed”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

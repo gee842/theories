@@ -206,8 +206,8 @@
     "en": "The closures are at the level of formations and not ordered in time, so they are safe upper bounds, not present relations; the common condition is Boolean and does not measure the strength of coupling, and Ren's “highly entangled system” is not read as that condition; reading the reach closure as “the system that one is in” is the AI's reading, pending Ren; how a center represents its closure is not modelled; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。 P89（2026-10-13）：Bridge 的旧声明保持，四项新增适配已实查且公理报告为空；本记录的 Bridge 绑定转到本次冻结回执，其余既有证明保留各自原回执，不将适配另计为独立成果。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed. P89 (13 October 2026): prior Bridge declarations remain; four added adapters are checked with empty axiom reports. This record binds Bridge to the new frozen receipt while other proofs retain their original receipts; adapters are not independent results."
+    "zh": "2026-10-14：Becoming.Bridge 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。 P89（2026-10-13）：Bridge 的旧声明保持，四项新增适配已实查且公理报告为空；本记录的 Bridge 绑定转到本次冻结回执，其余既有证明保留各自原回执，不将适配另计为独立成果。",
+    "en": "14 October 2026: the current bytes of Becoming.Bridge are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed. P89 (13 October 2026): prior Bridge declarations remain; four added adapters are checked with empty axiom reports. This record binds Bridge to the new frozen receipt while other proofs retain their original receipts; adapters are not independent results."
   },
   "references": [
     {
@@ -271,7 +271,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "5ab71acea5161506548c983a5078b72fc2fe0f317e3450a5a8cc1d4fb50e408c",
+      "sha256": "36a21e9fc890ab60f35c59bd7a4f88bbc09853aaf5b2c6d333504460e7860d5a",
       "declarations": [
         "Becoming.withinClosure_iff_closure",
         "Becoming.Closure"
@@ -321,12 +321,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db"
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed"
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -348,6 +348,12 @@
       "role": "receipt",
       "sha256": "b4b0d6b2ce654b05ee8b4731faee4f8332834ed22dac0de2adb9e6b1a1d14bb0",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -360,7 +366,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -534,6 +540,10 @@
     {
       "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“闭包的五个层次：供给闭包在影响闭包之内，影响闭包与所及闭包在系统之内，每个包含都可以是严格的，影响闭包与所及闭包方向相反；一个共同条件使系统成为整体”",
       "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Five levels of closure: the feeding closure lies within the influence closure, and the influence and reach closures within the system, each inclusion possibly strict, the influence and reach closures pointing in opposite directions; one common condition makes the system the whole”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Bridge 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

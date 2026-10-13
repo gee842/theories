@@ -14,8 +14,8 @@
     "en": "Every process necessarily draws exactly what does not return; possibly drawn is losing oneself on some course, and allows return."
   },
   "claim": {
-    "zh": "区域外的配置可能被吸入区域（PossiblyDrawnInto），指从它出发的某个路径进入区域；必然被吸入（NecessarilyDrawnInto），指从它开始的每个运行都进入；被吸入（PossiblyDrawn、NecessarilyDrawn），指某个过程从不离开的区域（Frame.Invariant）如此吸入它。在确定的律下两者都是 P67 的（law_possibly_iff、law_necessarily_iff、law_drawn_iff）。返回的配置有一个从不失去它的运行，绕其路径永远回到它（Branching.Returns.run，构造性地）。所以每个过程必然吸入的恰是不返回者（necessarilyDrawn_iff_not_returns，Law.drawn_iff_not_returns 的实例）：必然被吸入者从不返回（NecessarilyDrawnInto.not_returns），不返回者在第一步必然被吸入它前方之处（necessarilyDrawnInto_ahead）。可能被吸入就是在某一路径中失去自身（possiblyDrawn_iff），沿该路径被锁定（PossiblyDrawnInto.never_back）；可能被吸入者可以在另一路径中返回：OneWay 的 false 可能而非必然被吸入 {true}，并且返回（OneWay.possibly_not_necessarily）。在确定的过程下，动作决定运行是否被吸入（Determined.moves_decide）。每个过程下未来变窄：n 步后可得者是过程从不离开的区域（reachable_invariant），失去的可能必然被吸入它（lost_necessarily_drawn）；在有限多配置中每个运行都进入返回者（Run.enters_returning），在有限多配置中，运行开始处的配置必然被吸入与不合并矛盾（NecessarilyDrawn.not_lossless，结论为 ¬ Lossless P，不给出 Merges 的见证）。对过程不成立的：返回者不是过程从不离开的区域（Transit.returning_not_invariant）；合并不必吸入两者之一（OneWay.merge_keeps）。在 Capture 中，规则保持自身时，具有给定规则的配置是律从不离开的区域（Law.rule_absorbing），下一配置也只依赖规则时，规则所持的配置固定（Law.held_absorbing），改革的状态在第一步被吸入它（Law.reform_drawnInto）；Captured 中的实例（Captured.rule_region_absorbing、Captured.held_absorbing、Captured.state_reform_drawn、Captured.rule_reform_drawn）。不加前提。",
-    "en": "A configuration outside a region is possibly drawn into it (PossiblyDrawnInto) where some course from it enters it, and necessarily drawn (NecessarilyDrawnInto) where every run from it does; drawn (PossiblyDrawn, NecessarilyDrawn) where some region the process never leaves (Frame.Invariant) so draws it. Under a determined law both are P67's (law_possibly_iff, law_necessarily_iff, law_drawn_iff). A configuration that returns has a run that never loses it, going round its course back to it forever (Branching.Returns.run, constructively). So every process necessarily draws exactly what does not return (necessarilyDrawn_iff_not_returns, the instance of Law.drawn_iff_not_returns): what is necessarily drawn never returns (NecessarilyDrawnInto.not_returns), and what does not return is necessarily drawn into what lies ahead of it at the first step (necessarilyDrawnInto_ahead). Possibly drawn is losing oneself on some course (possiblyDrawn_iff), locked in along that course (PossiblyDrawnInto.never_back); a configuration possibly drawn may return on another course: OneWay's false is possibly but not necessarily drawn into {true}, and returns (OneWay.possibly_not_necessarily). Under a determined process the moves decide whether a run is drawn in (Determined.moves_decide). Under every process the future narrows: what can be had n steps on is a region the process never leaves (reachable_invariant), and a lost possibility is necessarily drawn into it (lost_necessarily_drawn); within finitely many configurations every run enters what returns (Run.enters_returning), and within finitely many configurations a necessarily drawn starting configuration of a given run contradicts losslessness (NecessarilyDrawn.not_lossless, concluding ¬ Lossless P rather than supplying a witness of Merges). What fails for processes: what returns is not a region the process never leaves (Transit.returning_not_invariant); a merge need draw neither of the two (OneWay.merge_keeps). In Capture, where the rule keeps itself, the configurations with a given rule are a region the law never leaves (Law.rule_absorbing); where the next configuration also depends on the rule alone, the configuration the rule holds is fixed (Law.held_absorbing), and a reformed state is drawn into it at the first step (Law.reform_drawnInto); the instances in Captured (Captured.rule_region_absorbing, Captured.held_absorbing, Captured.state_reform_drawn, Captured.rule_reform_drawn). No premise."
+    "zh": "区域外的配置可能被吸入区域（PossiblyDrawnInto），指从它出发的某个路径进入区域；必然被吸入（NecessarilyDrawnInto），指从它开始的每个运行都进入；被吸入（PossiblyDrawn、NecessarilyDrawn），指某个过程从不离开的区域（Frame.Invariant）如此吸入它。在确定的律下两者都是 P67 的（law_possibly_iff、law_necessarily_iff、law_drawn_iff）。返回的配置有一个从不失去它的运行，绕其路径永远回到它（Branching.Returns.run，构造性地）。所以每个过程必然吸入的恰是不返回者（necessarilyDrawn_iff_not_returns，Law.drawn_iff_not_returns 的实例）：必然被吸入者从不返回（NecessarilyDrawnInto.not_returns），不返回者在第一步必然被吸入它前方之处（necessarilyDrawnInto_ahead）。可能被吸入就是在某一路径中失去自身（possiblyDrawn_iff），沿该路径被锁定（PossiblyDrawnInto.never_back）；可能被吸入者可以在另一路径中返回：OneWay 的 false 可能而非必然被吸入 {true}，并且返回（OneWay.possibly_not_necessarily）。在确定的过程下，动作决定运行是否被吸入（Determined.moves_decide）。每个过程下未来变窄：n 步后可得者是过程从不离开的区域（reachable_invariant），失去的可能必然被吸入它（lost_necessarily_drawn）；在有限多配置中每个运行都进入返回者（Run.enters_returning），在有限多配置中，运行开始处的配置必然被吸入与不合并矛盾（NecessarilyDrawn.not_lossless，结论为 ¬ Lossless P，不给出 Merges 的见证）。对过程不成立的：返回者不是过程从不离开的区域（Transit.returning_not_invariant）；合并不必吸入两者之一（OneWay.merge_keeps）。在 Capture 中，规则保持自身时，具有给定规则的配置是律从不离开的区域（Law.rule_absorbing），下一配置也只依赖规则时，规则所持的配置固定（Law.held_absorbing），扰动的状态在第一步被吸入它（Law.perturbation_drawnInto）；Captured 中的实例（Captured.rule_region_absorbing、Captured.held_absorbing、Captured.state_perturbation_drawn、Captured.rule_perturbation_drawn）。不加前提。",
+    "en": "A configuration outside a region is possibly drawn into it (PossiblyDrawnInto) where some course from it enters it, and necessarily drawn (NecessarilyDrawnInto) where every run from it does; drawn (PossiblyDrawn, NecessarilyDrawn) where some region the process never leaves (Frame.Invariant) so draws it. Under a determined law both are P67's (law_possibly_iff, law_necessarily_iff, law_drawn_iff). A configuration that returns has a run that never loses it, going round its course back to it forever (Branching.Returns.run, constructively). So every process necessarily draws exactly what does not return (necessarilyDrawn_iff_not_returns, the instance of Law.drawn_iff_not_returns): what is necessarily drawn never returns (NecessarilyDrawnInto.not_returns), and what does not return is necessarily drawn into what lies ahead of it at the first step (necessarilyDrawnInto_ahead). Possibly drawn is losing oneself on some course (possiblyDrawn_iff), locked in along that course (PossiblyDrawnInto.never_back); a configuration possibly drawn may return on another course: OneWay's false is possibly but not necessarily drawn into {true}, and returns (OneWay.possibly_not_necessarily). Under a determined process the moves decide whether a run is drawn in (Determined.moves_decide). Under every process the future narrows: what can be had n steps on is a region the process never leaves (reachable_invariant), and a lost possibility is necessarily drawn into it (lost_necessarily_drawn); within finitely many configurations every run enters what returns (Run.enters_returning), and within finitely many configurations a necessarily drawn starting configuration of a given run contradicts losslessness (NecessarilyDrawn.not_lossless, concluding ¬ Lossless P rather than supplying a witness of Merges). What fails for processes: what returns is not a region the process never leaves (Transit.returning_not_invariant); a merge need draw neither of the two (OneWay.merge_keeps). In Capture, where the rule keeps itself, the configurations with a given rule are a region the law never leaves (Law.rule_absorbing); where the next configuration also depends on the rule alone, the configuration the rule holds is fixed (Law.held_absorbing), and a perturbed state is drawn into it at the first step (Law.perturbation_drawnInto); the instances in Captured (Captured.rule_region_absorbing, Captured.held_absorbing, Captured.state_perturbation_drawn, Captured.rule_perturbation_drawn). No premise."
   },
   "hypotheses": [
     {
@@ -25,7 +25,7 @@
   ],
   "correspondence": {
     "zh": "P81（工作板），同上；P67 的吸引对不确定的过程。读法（AI 的，待 Ren）：可能与必然被吸入恰在路径开放处分开：一个配置可以在一个路径中被吸入而在另一个中回来；每个路径都吸入的是不返回者，某个路径吸入的是能失去自身者。Capture 读作吸引：只改革状态被吸回规则所持之处，吸引子只随规则移动。见整合文档 §99。",
-    "en": "P81 (work board), as above; P67's attraction for processes that are not determined. Reading (the AI's, pending Ren): possibly and necessarily drawn come apart exactly where the course is open: a configuration can be drawn in on one course and come back on another; what every course draws in is what does not return, what some course draws in is what can lose itself. Capture read as attraction: reform of the state alone is drawn back into what the rule holds, and the attractor moves only with the rule. See the integration document §99."
+    "en": "P81 (work board), as above; P67's attraction for processes that are not determined. Reading (the AI's, pending Ren): possibly and necessarily drawn come apart exactly where the course is open: a configuration can be drawn in on one course and come back on another; what every course draws in is what does not return, what some course draws in is what can lose itself. Capture read as attraction: perturbation of the state alone is drawn back into what the rule holds, and the attractor moves only with the rule. See the integration document §99."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
   "aliases": [
@@ -36,8 +36,8 @@
     "Becoming.Branching.Returns.run",
     "Becoming.Branching.OneWay.possibly_not_necessarily",
     "Becoming.Law.rule_absorbing",
-    "Becoming.Law.reform_drawnInto",
-    "Becoming.Captured.state_reform_drawn",
+    "Becoming.Law.perturbation_drawnInto",
+    "Becoming.Captured.state_perturbation_drawn",
     "possibly drawn",
     "可能被吸入",
     "necessarily drawn",
@@ -71,8 +71,8 @@
       "id": "target-capture",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "复用 Capture 的 Captured 与 Law.reform_reabsorbed，作为吸引区域的实例。",
-        "en": "Reuses Capture's Captured and Law.reform_reabsorbed, as instances of attracting regions."
+        "zh": "复用 Capture 的 Captured 与 Law.perturbation_reabsorbed，作为吸引区域的实例。",
+        "en": "Reuses Capture's Captured and Law.perturbation_reabsorbed, as instances of attracting regions."
       },
       "interface": {
         "output": {
@@ -137,14 +137,14 @@
     "en": "Being drawn in within a bound is not stated; no measure on branching courses is given (see P82); the readings are the AI's, pending Ren; no ethical predicate occurs."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Branching 的 119 项定理全部空依赖，其中含 Branching.necessarilyDrawn_iff_not_returns、Branching.NecessarilyDrawnInto.not_returns、Branching.necessarilyDrawnInto_ahead、Branching.possiblyDrawn_iff、Branching.PossiblyDrawnInto.never_back、Branching.OneWay.possibly_not_necessarily、Branching.reachable_invariant、Branching.lost_necessarily_drawn、Run.enters_returning、Law.rule_absorbing、Law.reform_drawnInto与 Captured.state_reform_drawn；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §99；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 119 theorems of Becoming.Branching all have empty axiom reports, among them Branching.necessarilyDrawn_iff_not_returns, Branching.NecessarilyDrawnInto.not_returns, Branching.necessarilyDrawnInto_ahead, Branching.possiblyDrawn_iff, Branching.PossiblyDrawnInto.never_back, Branching.OneWay.possibly_not_necessarily, Branching.reachable_invariant, Branching.lost_necessarily_drawn, Run.enters_returning, Law.rule_absorbing, Law.reform_drawnInto and Captured.state_reform_drawn. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §99 of the integration note; there is no independent review yet."
+    "zh": "2026-10-14：Becoming.Attraction、Becoming.Branching、Becoming.Capture 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Branching 的 119 项定理全部空依赖，其中含 Branching.necessarilyDrawn_iff_not_returns、Branching.NecessarilyDrawnInto.not_returns、Branching.necessarilyDrawnInto_ahead、Branching.possiblyDrawn_iff、Branching.PossiblyDrawnInto.never_back、Branching.OneWay.possibly_not_necessarily、Branching.reachable_invariant、Branching.lost_necessarily_drawn、Run.enters_returning、Law.rule_absorbing、Law.perturbation_drawnInto与 Captured.state_perturbation_drawn；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §99；尚无独立审查。",
+    "en": "14 October 2026: the current bytes of Becoming.Attraction, Becoming.Branching, Becoming.Capture are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 119 theorems of Becoming.Branching all have empty axiom reports, among them Branching.necessarilyDrawn_iff_not_returns, Branching.NecessarilyDrawnInto.not_returns, Branching.necessarilyDrawnInto_ahead, Branching.possiblyDrawn_iff, Branching.PossiblyDrawnInto.never_back, Branching.OneWay.possibly_not_necessarily, Branching.reachable_invariant, Branching.lost_necessarily_drawn, Run.enters_returning, Law.rule_absorbing, Law.perturbation_drawnInto and Captured.state_perturbation_drawn. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §99 of the integration note; there is no independent review yet."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
       "role": "proof",
-      "sha256": "44a12701a76d10831d605eaba3acda3e02e311ed762e8cd5abdddb87f8736b83",
+      "sha256": "67b311c9d0a4e34acf792fc211bfb0d4b8647160771143478bf06247188f7223",
       "declarations": [
         "Becoming.Branching.PossiblyDrawnInto",
         "Becoming.Branching.NecessarilyDrawnInto",
@@ -191,19 +191,19 @@
         "Becoming.Branching.OneWay.moves_decide",
         "Becoming.Law.rule_absorbing",
         "Becoming.Law.held_absorbing",
-        "Becoming.Law.reform_drawnInto",
+        "Becoming.Law.perturbation_drawnInto",
         "Becoming.Captured.keeps",
         "Becoming.Captured.not_ne",
         "Becoming.Captured.rule_region_absorbing",
         "Becoming.Captured.held_absorbing",
-        "Becoming.Captured.state_reform_drawn",
-        "Becoming.Captured.rule_reform_drawn"
+        "Becoming.Captured.state_perturbation_drawn",
+        "Becoming.Captured.rule_perturbation_drawn"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
       "role": "proof",
-      "sha256": "f084baf58d433c7fcc7effc9eac5ba6e4f604f765b358e14bb26403ceb892459",
+      "sha256": "78a02badf591336b83cc7cb1fb0eb9359d2b109a3cc9f8910204c0b334198414",
       "declarations": [
         "Becoming.Law.Absorbing",
         "Becoming.Law.DrawnInto",
@@ -230,9 +230,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
       "role": "proof",
-      "sha256": "0dd4d2c4d3f2172d3fa5b76f5265ce4ff1d521c9ad761a945686d6865438d13b",
+      "sha256": "aee13a1d93a93d7a5de9d6f5c1878feb367257fdddc148941ce82dffd303d27b",
       "declarations": [
-        "Becoming.Law.reform_reabsorbed"
+        "Becoming.Law.perturbation_reabsorbed"
       ]
     },
     {
@@ -244,13 +244,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -258,19 +258,25 @@
       "role": "provenance",
       "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Branching.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Branching",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Attraction.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Attraction",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -291,7 +297,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Capture",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -369,6 +375,10 @@
     {
       "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“可能与必然被吸入：每个过程必然吸入的恰是不返回者；可能被吸入是在某一路径中失去自身，并允许返回”",
       "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Possibly and necessarily drawn: every process necessarily draws exactly what does not return; possibly drawn is losing oneself on some course, and allows return”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Law.reform_drawnInto` → `Law.perturbation_drawnInto`、`Captured.state_reform_drawn` → `Captured.state_perturbation_drawn`、`Captured.rule_reform_drawn` → `Captured.rule_perturbation_drawn`、`Law.reform_reabsorbed` → `Law.perturbation_reabsorbed`；陈述、证明与定理数不变；描述这些声明的文字随之改用新词：“改革的状态”改为“扰动的状态”；Lean 源：Branching、Attraction、Capture 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Law.reform_drawnInto` → `Law.perturbation_drawnInto`, `Captured.state_reform_drawn` → `Captured.state_perturbation_drawn`, `Captured.rule_reform_drawn` → `Captured.rule_perturbation_drawn`, `Law.reform_reabsorbed` → `Law.perturbation_reabsorbed`; statements, proofs and theorem counts unchanged; prose describing these declarations follows the new words: “reformed state”/“reform of the state” become “perturbed state”/“perturbation of the state”; Lean sources: Branching, Attraction, Capture only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

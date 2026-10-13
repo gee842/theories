@@ -232,7 +232,7 @@ namespace Hibernation
 inductive Formation where
   | hibernator
   | forager
-  | needy
+  | consumer
 
 /-- A spring, a den and a pool. -/
 inductive Condition where
@@ -269,26 +269,26 @@ def fromSecond : Nat → Bool
 
 /-- Every condition stands at one. The hibernator is active at every step but the second, where
 it is dormant, needing its den; while awake it needs one unit of the spring and draws it. The
-forager is active from the third step on and draws the pool. The needy formation needs two
+forager is active from the third step on and draws the pool. The consumer needs two
 units of the pool at the first step, which the pool never meets. -/
 def web : Web Formation Condition where
   level _ _ := 1
   active t f := match f with
     | .hibernator => awake t
     | .forager => foraging t
-    | .needy => False
+    | .consumer => False
   requires t f c := match f, c with
     | .hibernator, .spring => awake t
     | .hibernator, .den => asleep t
     | .hibernator, .pool => False
     | .forager, _ => False
-    | .needy, .pool => first t
-    | .needy, .spring => False
-    | .needy, .den => False
+    | .consumer, .pool => first t
+    | .consumer, .spring => False
+    | .consumer, .den => False
   need _ f _ := match f with
     | .hibernator => 1
     | .forager => 0
-    | .needy => 2
+    | .consumer => 2
   draws t f c := match f, c with
     | .hibernator, .spring => awake t
     | .hibernator, .den => False
@@ -296,16 +296,16 @@ def web : Web Formation Condition where
     | .forager, .pool => foraging t
     | .forager, .spring => False
     | .forager, .den => False
-    | .needy, _ => False
+    | .consumer, _ => False
 
 /-- Exchange the hibernator and the forager. -/
 def swap : Formation → Formation
   | .hibernator => .forager
   | .forager => .hibernator
-  | .needy => .needy
+  | .consumer => .consumer
 
 theorem swap_swap : ∀ f, swap (swap f) = f
-  | .hibernator | .forager | .needy => rfl
+  | .hibernator | .forager | .consumer => rfl
 
 /-- From the third step on, the hibernator and the forager exchange names: the formation active
 after the hibernator's dormancy is read as the forager. -/
@@ -318,21 +318,21 @@ theorem holds_always : ∀ t, web.Holds t .hibernator
   | _ + 2 => .inl trivial
 
 theorem pool_consumed : web.Consumed .pool :=
-  ⟨.needy, 0, trivial, fun _ _ => Nat.lt_succ_self 1⟩
+  ⟨.consumer, 0, trivial, fun _ _ => Nat.lt_succ_self 1⟩
 
 theorem pool_not_renewed : ¬ web.Renewed .pool :=
-  fun renewed => Nat.not_succ_le_self 1 (renewed 0 .needy trivial).1
+  fun renewed => Nat.not_succ_le_self 1 (renewed 0 .consumer trivial).1
 
 theorem renewing : web.RenewingIn .hibernator :=
   fun _ c joins => match c, joins with
   | .spring, _ => fun _ g depends => match g, depends with
     | .hibernator, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩
     | .forager, h => nomatch h
-    | .needy, h => nomatch h
+    | .consumer, h => nomatch h
   | .den, _ => fun _ g depends => match g, depends with
     | .hibernator, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩
     | .forager, h => nomatch h
-    | .needy, h => nomatch h
+    | .consumer, h => nomatch h
   | .pool, .inl h => nomatch h
   | .pool, .inr h => nomatch h
 
@@ -369,7 +369,7 @@ theorem readings :
     | .hibernator, .den, _, _ => Nat.le_refl 1
     | .hibernator, .pool, _, h => nomatch h
     | .forager, _, _, h => nomatch h
-    | .needy, _, a, _ => (nomatch a),
+    | .consumer, _, a, _ => (nomatch a),
    id, .inr ⟨.den, trivial⟩, ⟨id, trivial⟩, Web.waking_not_arising (holds_always 1),
    ⟨id, trivial⟩,
    ⟨fun held => match held with
@@ -378,50 +378,50 @@ theorem readings :
    fun t f now next => match t, f, now, next with
     | 0, .hibernator, _, next => nomatch next
     | 0, .forager, now, _ => nomatch now
-    | 0, .needy, now, _ => nomatch now
+    | 0, .consumer, now, _ => nomatch now
     | 1, .hibernator, now, _ => nomatch now
     | 1, .forager, now, _ => nomatch now
-    | 1, .needy, now, _ => nomatch now
+    | 1, .consumer, now, _ => nomatch now
     | _ + 2, _, _, _ => rfl,
    fun t x now next => match t, x, now, next with
     | 0, .hibernator, _, next => nomatch next
     | 0, .forager, now, _ => nomatch now
     | 1, .hibernator, now, _ => nomatch now
     | 1, .forager, now, _ => nomatch now
-    | 0, .needy, now, _ => nomatch now
-    | 1, .needy, now, _ => nomatch now
+    | 0, .consumer, now, _ => nomatch now
+    | 1, .consumer, now, _ => nomatch now
     | _ + 2, _, _, _ => rfl,
    fun t g c now next => match t, g, c, now, next with
     | 0, .hibernator, .spring, _, next => nomatch next
     | 0, .hibernator, .den, now, _ => nomatch now
     | 1, .hibernator, .spring, now, _ => nomatch now
     | 1, .hibernator, .den, _, next => nomatch next
-    | 0, .needy, .pool, _, next => nomatch next
-    | 1, .needy, .pool, now, _ => nomatch now
+    | 0, .consumer, .pool, _, next => nomatch next
+    | 1, .consumer, .pool, now, _ => nomatch now
     | 0, .hibernator, .pool, now, _ => nomatch now
     | 1, .hibernator, .pool, now, _ => nomatch now
     | 0, .forager, _, now, _ => nomatch now
     | 1, .forager, _, now, _ => nomatch now
-    | 0, .needy, .spring, now, _ => nomatch now
-    | 0, .needy, .den, now, _ => nomatch now
-    | 1, .needy, .spring, now, _ => nomatch now
-    | 1, .needy, .den, now, _ => nomatch now
+    | 0, .consumer, .spring, now, _ => nomatch now
+    | 0, .consumer, .den, now, _ => nomatch now
+    | 1, .consumer, .spring, now, _ => nomatch now
+    | 1, .consumer, .den, now, _ => nomatch now
     | _ + 2, _, _, _, _ => rfl,
    fun t x c now next => match t, x, c, now, next with
     | 0, .hibernator, .spring, _, next => nomatch next
     | 0, .hibernator, .den, now, _ => nomatch now
     | 1, .hibernator, .spring, now, _ => nomatch now
     | 1, .hibernator, .den, _, next => nomatch next
-    | 0, .needy, .pool, _, next => nomatch next
-    | 1, .needy, .pool, now, _ => nomatch now
+    | 0, .consumer, .pool, _, next => nomatch next
+    | 1, .consumer, .pool, now, _ => nomatch now
     | 0, .hibernator, .pool, now, _ => nomatch now
     | 1, .hibernator, .pool, now, _ => nomatch now
     | 0, .forager, _, now, _ => nomatch now
     | 1, .forager, _, now, _ => nomatch now
-    | 0, .needy, .spring, now, _ => nomatch now
-    | 0, .needy, .den, now, _ => nomatch now
-    | 1, .needy, .spring, now, _ => nomatch now
-    | 1, .needy, .den, now, _ => nomatch now
+    | 0, .consumer, .spring, now, _ => nomatch now
+    | 0, .consumer, .den, now, _ => nomatch now
+    | 1, .consumer, .spring, now, _ => nomatch now
+    | 1, .consumer, .den, now, _ => nomatch now
     | _ + 2, _, _, _, _ => rfl,
    fun keeps => Formation.noConfusion (keeps 1 .hibernator (holds_always 1) (holds_always 2)),
    renewing, exchanged_consuming, exchanged_not_renewing,
@@ -442,7 +442,7 @@ theorem Dormancy.held_both :
   have at_ : ∀ s f, Dormancy.web.Holds s f → s = 0 ∨ s = 2 := fun s f held => match held with
     | .inl active => match f, active with
       | .early, same => .inl same
-      | .needy, same => .inl same
+      | .consumer, same => .inl same
       | .late, same => .inr same
     | .inr ⟨c, depends⟩ => .inl (Dormancy.first_only s f c depends)
   have once : ∀ s f g, Dormancy.web.Holds s f → Dormancy.web.Holds (s + 1) g → False :=

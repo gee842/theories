@@ -170,8 +170,8 @@
     "en": "Equal minimum requirements fix admission only; distinct lives, histories and expressions can have equal needs. Marginal admission does not establish joint realizability, which must itself be represented. All-level tests may include dynamically inaccessible levels and are stronger than local fidelity on feasible courses. Actual dependencies, a unique complete content language, constitution of changing needs, complete mixed-loss ordering and zero-substantive-axiom normative warrant are not derived. No universal lossless-action requirement, institutional-retreat default or new empirical validation is claimed."
   },
   "validation_scope": {
-    "zh": "共享 Lean 4.29.1 检查 20261013T104720.812252Z 通过：Regrouping 24 项新定理／33 项源声明审计，公理依赖全空；78 个纯净核心模块从前导编译通过，76 个包模块含 4546 项定理／6407 项源声明审计。24 个继承外围模块另列；12 个 Lean 步骤实际运行、345 个按相同输入复用。作者反审已写，无独立 agent 验收；元数据检查不替代证明。 外围兼容检查 20261013T105346.131772Z 也通过：Lean 4.30.0-rc2／Mathlib 下编译新增核心，原桥接 7 项定理／8 项审计空依赖；运行 6 步、复用 79 步。",
-    "en": "Shared Lean 4.29.1 run 20261013T104720.812252Z passed: Regrouping has 24 new theorems/33 source-declaration audits, all axiom-free; the 78-module pure core compiles from the prelude, and 76 package modules contain 4546 theorems/6407 source-declaration audits. Twenty-four inherited peripheral modules are separate; 12 Lean steps ran and 345 reused identical inputs. Author counterreview is recorded, without independent-agent acceptance; metadata checks do not replace proof. Peripheral compatibility run 20261013T105346.131772Z also passed: the added core compiles under Lean 4.30.0-rc2/Mathlib; the existing bridge has 7 theorems/8 axiom-free audits; 6 steps ran and 79 were reused."
+    "zh": "2026-10-14：Becoming.Counterfactual 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 共享 Lean 4.29.1 检查 20261013T104720.812252Z 通过：Regrouping 24 项新定理／33 项源声明审计，公理依赖全空；78 个纯净核心模块从前导编译通过，76 个包模块含 4546 项定理／6407 项源声明审计。24 个继承外围模块另列；12 个 Lean 步骤实际运行、345 个按相同输入复用。作者反审已写，无独立 agent 验收；元数据检查不替代证明。 外围兼容检查 20261013T105346.131772Z 也通过：Lean 4.30.0-rc2／Mathlib 下编译新增核心，原桥接 7 项定理／8 项审计空依赖；运行 6 步、复用 79 步。",
+    "en": "14 October 2026: the current bytes of Becoming.Counterfactual are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Shared Lean 4.29.1 run 20261013T104720.812252Z passed: Regrouping has 24 new theorems/33 source-declaration audits, all axiom-free; the 78-module pure core compiles from the prelude, and 76 package modules contain 4546 theorems/6407 source-declaration audits. Twenty-four inherited peripheral modules are separate; 12 Lean steps ran and 345 reused identical inputs. Author counterreview is recorded, without independent-agent acceptance; metadata checks do not replace proof. Peripheral compatibility run 20261013T105346.131772Z also passed: the added core compiles under Lean 4.30.0-rc2/Mathlib; the existing bridge has 7 theorems/8 axiom-free audits; 6 steps ran and 79 were reused."
   },
   "references": [
     {
@@ -234,7 +234,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee",
+      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
       "declarations": [
         "Becoming.ExchangeLaw.course_balances_iff",
         "Becoming.ExchangeLaw.withAct_follows",
@@ -256,13 +256,19 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T105346.131772Z/verification.json",
       "role": "receipt",
       "sha256": "605074edc0c63c2f64625f16368c90c9604adc88e86e0b5a8d23319638bdc5db",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
       "declarations": []
     }
   ],
@@ -290,7 +296,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -328,6 +334,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Counterfactual 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Counterfactual only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

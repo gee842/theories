@@ -2,16 +2,16 @@
   "schema_version": 1,
   "id": "recurring-reference-revision",
   "title": {
-    "zh": "共同活动形成并再生产参考修订",
-    "en": "Activity forms and reproduces reference revision"
+    "zh": "活动形成并重现参考修订",
+    "en": "Activity forms reference revision and makes it recur"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T13:20:43.017394+00:00",
+  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
   "claim": {
-    "zh": "共享 Process 中，空方法及参考装置经实际失败、取得、安装和使用形成。直接复用 P99 的操作，每一后继位置的失配都修改方法、取得双参考、安装并成功使用；成功兑现的生产回返支付更替和下一修订。统一控制器中存在实际无限 Run，精确衔接形成历史；每轮累计消耗及取得不清零。冻结、断供、储备消耗和旧区分退役保留实际失败与损失。",
-    "en": "In the shared Process, actual failure, acquisition, installation and use form a reference apparatus from empty retention. Directly reusing P99 operations, mismatch at every successor revises the method and yields newly acquired, installed and successfully used references. Earned production pays succession and the next revision. An actual infinite Run obeys one controller and connects exactly to the formation trace, with cumulative ledgers. Frozen methods, cut return, reserve expenditure and retired distinctions retain failures and losses."
+    "zh": "存量的一般规律（Becoming.Stock）支配持续的修订：沿平衡过程的每个运行，任意晚的汲取需要任意晚的补充；循环无尽重复需要回补覆盖其汲取。ContinuingRevision 是其实例，延伸 ReferencePlan 的操作：燃料对每个动作的用量与更替的回补平衡（balanced）；断供时任何控制器都没有无尽运行（no_run_without_return）；沿每个产出下的每个运行，更替复现，更替只由下一地址上的成功启用，所以成功活动复现（renew_recurs、renew_needs_enabled、enabled_by_success、success_recurs）。燃料储备与产出成为参数后，存在一个起点使任意多轮循环都可行，恰当产出覆盖每轮用去的 9 单位（repeats_iff），对每个产出成立。产出为 9 的见证中，空方法及参考装置经实际失败、取得、安装和使用形成；每一后继位置的失配都修改方法、取得双参考、安装并成功使用；统一控制器中存在实际无限 Run，精确衔接形成历史，每轮累计用量与回补不清零（continuing、formed_and_continues）。冻结、断供、储备消耗和旧区分退役保留实际失败与损失。",
+    "en": "The general laws of stock (Becoming.Stock) govern continuing revision: along every run of a balanced process, drawing at arbitrarily late steps needs replenishment at arbitrarily late steps, and unending repetition of a cycle needs its return to cover its draw. ContinuingRevision is an instance, extending ReferencePlan’s operations. Its fuel is balanced against what each act uses and what renewal returns (balanced); with the return cut, no unending run exists under any controller (no_run_without_return); along every run at every yield renewal recurs, renewal is enabled only by a successful undertaking at the next address, and so successful activity recurs (renew_recurs, renew_needs_enabled, enabled_by_success, success_recurs). With the fuel held in reserve and the yield as parameters, the cycle repeats for every number of rounds from some configuration exactly where the yield covers the nine units a round uses (repeats_iff), at every yield. In the witnesses at yield nine, actual failure, acquisition, installation and use form a reference apparatus from empty retention; mismatch at every successor revises the method and yields newly acquired, installed and successfully used references; an actual infinite Run obeys one controller and connects exactly to the formation trace, with cumulative amounts used and returned (continuing, formed_and_continues). Frozen methods, cut return, reserve expenditure and retired distinctions retain failures and losses."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "P99’s addressed Boolean contacts, faithful return, bound references, stable correspondence, revision and checked-installation operations remain supplied."
     },
     {
-      "zh": "共同活动按当前承载位置取得下一任务；成功产生一次可兑现且消耗的生产凭据。兑现花费1并取得9单位，保留已安装的后继参考并退役旧接触。",
-      "en": "The supplied policy addresses the next locus; actual success earns a consumed production claim. Realization spends one and obtains nine units, retains the installed successor reference and retires the old contact."
+      "zh": "共同活动按当前承载位置取得下一任务；下一地址上的实际成功使一次更替可行，用一次。更替用去 1 并取得产出（见证中为 9），保留已安装的后继参考并退役旧接触。",
+      "en": "The supplied policy addresses the next locus; an actual success at the next address enables one renewal, used once. Renewal uses one unit and returns the yield (nine in the witnesses), retains the installed successor reference and retires the old contact."
     },
     {
       "zh": "计数装置对生产支承开放；接触与承载位置的物理对应、更替和储存能力均为局部条件，不声称封闭有限存量无限持续。",
@@ -37,7 +37,9 @@
     "Becoming.ContinuingRevision.formed_and_continues",
     "Becoming.ContinuingRevision.new_available_choice",
     "recurring reference revision",
-    "反复参考修订"
+    "反复参考修订",
+    "Becoming.ContinuingRevision.repeats_iff",
+    "Becoming.ContinuingRevision.no_run_without_return"
   ],
   "dependencies": [
     {
@@ -85,8 +87,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
       "detail": {
-        "zh": "cut_return/cut_stops_next 是 P 9 与 P 0 的配对回返干预；reserve_consumed 与 frozen_plan_no_return 是 P 9 内的真实替代执行；retired_choice 证明区分损失。",
-        "en": "cut_return/cut_stops_next compare the return relation in P 9 and P 0; reserve_consumed and frozen_plan_no_return are genuine alternatives within P 9; retired_choice proves a lost distinction."
+        "zh": "cut_return/cut_stops_next 是 P 9 与 P 0 的配对回返干预；reserve_consumed 与 frozen_plan_no_return 是 P 9 内的真实替代执行；retired_choice 证明区分损失。 no_run_without_return 把断供写成规律：产出为 0 时任何控制器都没有无尽运行。",
+        "en": "cut_return/cut_stops_next compare the return relation in P 9 and P 0; reserve_consumed and frozen_plan_no_return are genuine alternatives within P 9; retired_choice proves a lost distinction. no_run_without_return states the cut as a law: at yield 0 no controller runs without end."
       }
     }
   ],
@@ -95,23 +97,23 @@
     "en": "Proves formation and continuing revision under specified open production and task laws, not all disturbances, demands, physical realizations or preservation of every old selection. It does not derive arbitrary sensor primitives, universal basins, a compilation of all older material models, normative warrant or the stronger premise-free programme."
   },
   "validation_scope": {
-    "zh": "核心20261013T125907.288531Z实际通过：36定理／62源声明空公理报告，纯核心从前导编译；外围20261013T130233.156038Z通过。作者逐项反审和旧表述整合，无独立代理或经验验收。 本任务的独立提交内容再经核心 20261013T131556.258659Z、外围 20261013T131750.258973Z、完整成果检查及49项基础设施测试通过，未收入并行会话内容。",
-    "en": "Core 20261013T125907.288531Z passed: 36 theorems/62 source declarations with empty axiom reports, pure prelude compilation; peripheral 20261013T130233.156038Z passed. Author counterreview and historical reconciliation, without independent-agent or empirical acceptance. The owned-only commit tree additionally passes core 20261013T131556.258659Z, peripheral 20261013T131750.258973Z, full registry checks and all 49 infrastructure tests, excluding concurrent active work."
+    "zh": "2026-10-14：Becoming.ContinuingRevision、Becoming.Stock 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 核心20261013T125907.288531Z实际通过：36定理／62源声明空公理报告，纯核心从前导编译；外围20261013T130233.156038Z通过。作者逐项反审和旧表述整合，无独立代理或经验验收。 本任务的独立提交内容再经核心 20261013T131556.258659Z、外围 20261013T131750.258973Z、完整成果检查及49项基础设施测试通过，未收入并行会话内容。",
+    "en": "14 October 2026: the current bytes of Becoming.ContinuingRevision, Becoming.Stock are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Core 20261013T125907.288531Z passed: 36 theorems/62 source declarations with empty axiom reports, pure prelude compilation; peripheral 20261013T130233.156038Z passed. Author counterreview and historical reconciliation, without independent-agent or empirical acceptance. The owned-only commit tree additionally passes core 20261013T131556.258659Z, peripheral 20261013T131750.258973Z, full registry checks and all 49 infrastructure tests, excluding concurrent active work."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
       "role": "proof",
-      "sha256": "4074878f102abad867fdb9dd0e3818cc9367bee04e24b128975e445abb1c4478",
+      "sha256": "33d85895a037b2d1c544acbeb778f4c599f1de2bc461970ba54b6c3f5bd00852",
       "declarations": [
         "Becoming.ContinuingRevision.State",
         "Becoming.ContinuingRevision.Act",
         "Becoming.ContinuingRevision.execute",
         "Becoming.ContinuingRevision.P",
-        "Becoming.ContinuingRevision.cost",
+        "Becoming.ContinuingRevision.use",
         "Becoming.ContinuingRevision.returned",
-        "Becoming.ContinuingRevision.step_account",
-        "Becoming.ContinuingRevision.trace_account",
+        "Becoming.ContinuingRevision.step_conserves",
+        "Becoming.ContinuingRevision.trace_conserves",
         "Becoming.ContinuingRevision.choose",
         "Becoming.ContinuingRevision.selected",
         "Becoming.ContinuingRevision.forget_policy",
@@ -138,12 +140,12 @@
         "Becoming.ContinuingRevision.one_cycle",
         "Becoming.ContinuingRevision.history",
         "Becoming.ContinuingRevision.all_cycles",
-        "Becoming.ContinuingRevision.all_cycles_account",
+        "Becoming.ContinuingRevision.all_cycles_amounts",
         "Becoming.ContinuingRevision.method_changed",
         "Becoming.ContinuingRevision.singleton_member",
         "Becoming.ContinuingRevision.next_absent",
         "Becoming.ContinuingRevision.new_available_choice",
-        "Becoming.ContinuingRevision.no_unearned_return",
+        "Becoming.ContinuingRevision.no_return_without_success",
         "Becoming.ContinuingRevision.cut_return",
         "Becoming.ContinuingRevision.cut_stops_next",
         "Becoming.ContinuingRevision.seed",
@@ -165,7 +167,23 @@
         "Becoming.ContinuingRevision.run_at_cycle",
         "Becoming.ContinuingRevision.run_installs",
         "Becoming.ContinuingRevision.unbounded_succession",
-        "Becoming.ContinuingRevision.formation_to_run"
+        "Becoming.ContinuingRevision.formation_to_run",
+        "Becoming.ContinuingRevision.readyAt",
+        "Becoming.ContinuingRevision.one_cycle_at",
+        "Becoming.ContinuingRevision.cycles_at",
+        "Becoming.ContinuingRevision.balanced",
+        "Becoming.ContinuingRevision.use_pos",
+        "Becoming.ContinuingRevision.no_return",
+        "Becoming.ContinuingRevision.no_run_without_return",
+        "Becoming.ContinuingRevision.renew_recurs",
+        "Becoming.ContinuingRevision.renew_needs_enabled",
+        "Becoming.ContinuingRevision.enabled_by_success",
+        "Becoming.ContinuingRevision.success_recurs",
+        "Becoming.ContinuingRevision.history_cycles",
+        "Becoming.ContinuingRevision.word_use",
+        "Becoming.ContinuingRevision.word_return",
+        "Becoming.ContinuingRevision.cycles_need_yield",
+        "Becoming.ContinuingRevision.repeats_iff"
       ]
     },
     {
@@ -195,7 +213,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -215,13 +233,38 @@
       "role": "receipt",
       "sha256": "de8e51c0eca26e33b10ba3f53586588ecc90de2e5e59747de6da7c000cc4afe9",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "role": "proof",
+      "sha256": "d1ac93985f6c1101548936c86ad153829718a4a945c31a434114a6352033434f",
+      "declarations": [
+        "Becoming.Stock.Balanced",
+        "Becoming.Stock.cycles_need",
+        "Becoming.Stock.repeat_covered_iff",
+        "Becoming.Run.replenishes_of_draws",
+        "Becoming.Run.draws_iff_replenishes"
+      ]
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T131556.258659Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ContinuingRevision",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -246,6 +289,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `ContinuingRevision.cost` → `ContinuingRevision.use`、`ContinuingRevision.step_account` → `ContinuingRevision.step_conserves`、`ContinuingRevision.trace_account` → `ContinuingRevision.trace_conserves`、`ContinuingRevision.all_cycles_account` → `ContinuingRevision.all_cycles_amounts`、`ContinuingRevision.no_unearned_return` → `ContinuingRevision.no_return_without_success`；陈述、证明与定理数不变；Lean 源：ContinuingRevision 另加入作为 Stock 实例的定理，循环的燃料与产出成为参数，绑定改为新回执（见检查范围）；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”；标题由「共同活动形成并再生产参考修订」改为「活动形成并重现参考修订」（中英文一致，去掉“再生产”）；主张改为先陈述存量的一般规律（Run.replenishes_of_draws、Stock.cycles_need），原 ContinuingRevision 例子作为实例；循环的燃料与产出成为参数，repeats_iff 对每个产出成立，产出 9 的见证与无限 Run 保留；第二条前提的“凭据”“花费”改为启用与用去；新增 Stock.lean 的证明绑定（回执 20261013T204910.042715Z）。状态不变；主张按一般规律重写，原例子的陈述与证明不变，不记作对原例子的重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `ContinuingRevision.cost` → `ContinuingRevision.use`, `ContinuingRevision.step_account` → `ContinuingRevision.step_conserves`, `ContinuingRevision.trace_account` → `ContinuingRevision.trace_conserves`, `ContinuingRevision.all_cycles_account` → `ContinuingRevision.all_cycles_amounts`, `ContinuingRevision.no_unearned_return` → `ContinuingRevision.no_return_without_success`; statements, proofs and theorem counts unchanged; Lean sources: ContinuingRevision with theorems added as instances of Stock, and fuel and yield of the cycle made parameters; bindings move to the new receipts (see validation scope); chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”; title changed from “Activity forms and reproduces reference revision” to “Activity forms reference revision and makes it recur” (zh and en now match, without 再生产); the claim now states the general laws of stock first (Run.replenishes_of_draws, Stock.cycles_need), with the ContinuingRevision example as their instance; fuel and yield of the cycle are parameters, repeats_iff holds at every yield, and the yield-nine witnesses with their infinite Run are kept; the second premise speaks of enabling and using instead of an earned claim and spending; a proof binding for Stock.lean is added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them."
     }
   ]
 }

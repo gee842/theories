@@ -208,7 +208,7 @@ This continuation reuses the checked goal-ground and risk results without adding
 
 2026-10-13。[主研究第17节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#tacit-understanding-and-forgetting)把替代说明落实到一个拒绝显式表征的熟练实践解释，定位接触、习得、辨别与回应中仍被保留的联系；又以坐忘段检验把智慧等同于不断增加知识与辨别的读法。两项来源的核读范围和限制在主研究公开。
 
-这一比较得到一个有用区别：行动者没有逐次执行言语规则，不等于相关生活关系没有起作用；但说明能写成某种规律，也不足以证明它保留了智慧内容。core 已有 `goAlike_const` 与 `Law.const_makesSense_iff`，指出常值描述何时只是空洞的规律承载，何时对已固定的所识确实不损失内容。这里复用原证明，实际对应仍须说明，不能先抹掉问题再宣布保真。
+这一比较得到一个有用区别：行动者没有逐次执行言语规则，不等于相关生活关系没有起作用；但说明能写成某种规律，也不足以证明它保留了智慧内容。core 已有 `goAlike_const` 与 `Law.const_identifiesAlike_iff`，指出常值描述何时只是空洞的规律承载，何时对已固定的所识确实不损失内容。这里复用原证明，实际对应仍须说明，不能先抹掉问题再宣布保真。
 
 忘却还要求区分：不显式提取历史、理论描述省去细节、实际习惯和关切发生转化。投影的保真条件直接检验第二项，不能替代第三项的生成说明与评价。共同根应容许恰当保留及有根据的改变；坐忘的全部内容尚未被这个框架解释，不能仅称它为“隐性判断”就算完成。
 

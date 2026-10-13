@@ -26,22 +26,21 @@ it, with no axiom and no premise beyond what each law names.
   every step from some step on, descent does not recur and the selection stops
   (`Flow.descent_exhausted`).
 * **The rule holds the outcome.** Read the configuration as a state scored and a rule that
-  scores it. Where the next configuration depends on the rule and not on the state, reforming
+  scores it. Where the next configuration depends on the rule and not on the state, perturbing
   the state alone is re-absorbed: from the next step on the unfolding is as if it had not been
-  reformed (`Law.reform_reabsorbed`, the instance of `Law.reabsorbed` of `Becoming.Mechanism`
+  perturbed (`Law.perturbation_reabsorbed`, the instance of `Law.reabsorbed` of `Becoming.Mechanism`
   with the rule as the projection). In `Captured` the state follows the rule and the rule keeps
-  itself: a reformed state returns at once, and a reformed rule changes the outcome
-  (`Captured.state_reform_returns`, `Captured.rule_reform_changes`).
+  itself: a perturbed state returns at once, and a perturbed rule changes the outcome
+  (`Captured.state_perturbation_returns`, `Captured.rule_perturbation_changes`).
 
 **Readings (the AI's, pending Ren).**
 - The meta-attractor's selection of minds: where a target of more than now, or of above all
   others (`Becoming.Seeking`), leads its carriers to take more, and taking more leads to more
   offspring, the target's share rises; it does so only while the world is open, and enclosed,
   the selection stops with the descent.
-- "The winner rewrites the test": where the winners' state shapes the rule, and the rule fixes
-  the state, the outcome is held in the rule. Reform of the state alone is re-absorbed; escape
-  needs the rule changed. Ren's "even rationality is self-interest" reads as the rule reaching
-  the standard of reason itself.
+- The winner rewrites the test: where the winners' state shapes the rule, and the rule fixes
+  the state, the outcome is held in the rule. Perturbation of the state alone is re-absorbed;
+  escape needs the rule changed. The rule can reach the standard of reason itself.
 - Hijacking is this: a target formed and passed on by a selection that rewards what cannot
   rest, held in place by a rule its winners write.
 
@@ -152,11 +151,11 @@ namespace Law
 
 variable {S : Type u} {R : Type v}
 
-/-- **Reforming the state alone is re-absorbed.** Where the next configuration depends on the
+/-- **Perturbing the state alone is re-absorbed.** Where the next configuration depends on the
 rule and not on the state, two configurations with the same rule have the same orbit from the
 next step on: the instance of `Law.reabsorbed` (`Becoming.Mechanism`) with the rule as the
 projection. -/
-theorem reform_reabsorbed {next : S × R → S × R} (byRule : ∀ x x' g, next (x, g) = next (x', g))
+theorem perturbation_reabsorbed {next : S × R → S × R} (byRule : ∀ x x' g, next (x, g) = next (x', g))
     (x x' : S) (g : R) : ∀ n, orbit next (x, g) (n + 1) = orbit next (x', g) (n + 1) :=
   reabsorbed (π := Prod.snd)
     (fun s s' same => (byRule s.1 s'.1 s.2).trans (congrArg (fun h => next (s'.1, h)) same)) rfl
@@ -175,20 +174,20 @@ def next (s : Bool × Bool) : Bool × Bool := (s.2, s.2)
 
 theorem byRule (x x' g : Bool) : next (x, g) = next (x', g) := rfl
 
-/-- **A reformed state returns at once.** Reforming the state against the rule, the unfolding is
+/-- **A perturbed state returns at once.** Perturbing the state against the rule, the unfolding is
 back where the rule holds it at the next step and stays there. -/
-theorem state_reform_returns (g : Bool) :
+theorem state_perturbation_returns (g : Bool) :
     ∀ n, Law.orbit next (!g, g) (n + 1) = (g, g) ∧ Law.orbit next (g, g) (n + 1) = (g, g)
   | 0 => ⟨rfl, rfl⟩
-  | n + 1 => match state_reform_returns g n with
+  | n + 1 => match state_perturbation_returns g n with
     | ⟨back, here⟩ => ⟨congrArg next back, congrArg next here⟩
 
-/-- **A reformed rule changes the outcome.** Reforming the rule, the state follows the new rule
+/-- **A perturbed rule changes the outcome.** Perturbing the rule, the state follows the new rule
 from the next step on. -/
-theorem rule_reform_changes (g : Bool) :
+theorem rule_perturbation_changes (g : Bool) :
     ∀ n, Law.orbit next (g, !g) (n + 1) = (!g, !g)
   | 0 => rfl
-  | n + 1 => congrArg next (rule_reform_changes g n)
+  | n + 1 => congrArg next (rule_perturbation_changes g n)
 
 end Captured
 

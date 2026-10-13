@@ -1076,7 +1076,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## configurations-alike-by-relation ← projection-carrying-a-law
 
-`formal-reuse` — 复用 carries_law_iff：框架处处相同之下确定时，有意义的描述相同者同去，所以承载规律（MakesSense.carries）。GoAlike 以投影上的相等定义相同者同去；DeterminedAt.goAlike 以互模拟的相同给出同一形式。 / Reuses carries_law_iff: where the frame is determined up to likeness everywhere, a description that makes sense goes alike and so carries a law (MakesSense.carries). GoAlike defines going alike through equality on a projection; DeterminedAt.goAlike gives the same form with likeness by bisimulation.
+`formal-reuse` — 复用 carries_law_iff：框架处处相同之下确定时，有意义的描述相同者同去，所以承载规律（IdentifiesAlike.carries）。GoAlike 以投影上的相等定义相同者同去；DeterminedAt.goAlike 以互模拟的相同给出同一形式。 / Reuses carries_law_iff: where the frame is determined up to likeness everywhere, a description that makes sense goes alike and so carries a law (IdentifiesAlike.carries). GoAlike defines going alike through equality on a projection; DeterminedAt.goAlike gives the same form with likeness by bisimulation.
 
 **Producer output / 上游输出:** 投影承载规律，恰当相同者同去。 / A projection carries a law exactly where configurations alike under it go alike.
 
@@ -2344,7 +2344,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Producer output / 上游输出:** 套索、记录、否证与回答的历程；按否证学习者及其否证之界。 / Lassos, records, refutation and the answering course; the learner by refutation and its bound on refutations.
 
-**Consumer input / 下游输入:** 有界的记录确定历程；知道界的学习者；不知道界的学习者的静止之步。 / A bounded record fixes the course; the learner that knows the bound; the step at which the learner that does not know it rests.
+**Consumer input / 下游输入:** 有界的记录确定历程；给定界的学习者；未给定界的学习者的静止之步。 / A bounded record fixes the course; the learner given the bound; the step at which the learner not given it rests.
 
 **Retained conditions / 保留条件:** 学习者要值可判定。 / The learner needs values decided.
 
@@ -2352,7 +2352,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## identification-where-bounded ← the-split-that-makes-sense
 
-`formal-reuse` — 复用 SameAhead、StatesBelow、shared_below、statesBelow_of_same、lasso_iff_sameAhead 与 Denial：状态的界就是套索的界。 / Reuses SameAhead, StatesBelow, shared_below, statesBelow_of_same, lasso_iff_sameAhead and Denial: the bound on states is the bound on the lasso.
+`formal-reuse` — 复用 SameAhead、StatesBelow、shared_below、statesBelow_of_same、lasso_iff_sameAhead 与 Negation：状态的界就是套索的界。 / Reuses SameAhead, StatesBelow, shared_below, statesBelow_of_same, lasso_iff_sameAhead and Negation: the bound on states is the bound on the lasso.
 
 **Producer output / 上游输出:** 从历史读出的状态。 / States read off a history.
 
@@ -2364,7 +2364,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## identification-where-bounded ← configurations-alike-by-relation
 
-`formal-reuse` — 复用 MakesSense、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：有限的名是有意义的切分。 / Reuses MakesSense, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: the finite name is the split that makes sense.
+`formal-reuse` — 复用 IdentifiesAlike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.IdentifiesAlike.carries：有限的名是有意义的切分。 / Reuses IdentifiesAlike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.IdentifiesAlike.carries: the finite name is the split that makes sense.
 
 **Producer output / 上游输出:** 有意义的描述。 / Descriptions that make sense.
 
@@ -3116,7 +3116,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## necessarily-drawn-is-not-returning ← target-capture
 
-`formal-reuse` — 复用 Capture 的 Captured 与 Law.reform_reabsorbed，作为吸引区域的实例。 / Reuses Capture's Captured and Law.reform_reabsorbed, as instances of attracting regions.
+`formal-reuse` — 复用 Capture 的 Captured 与 Law.perturbation_reabsorbed，作为吸引区域的实例。 / Reuses Capture's Captured and Law.perturbation_reabsorbed, as instances of attracting regions.
 
 **Producer output / 上游输出:** 规则的捕获。 / Capture of the rule.
 
@@ -3772,7 +3772,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## registration-within-what-it-registers ← recurrence-without-premise
 
-`formal-reuse` — 复用 Law.orbit、Law.Returns 与 gap_of_lt：修正是轨道，否定的返回是 Returns；补全的展开像保留的历史一样从不返回。 / Reuses Law.orbit, Law.Returns and gap_of_lt: revision is an orbit and the denial's return is Returns; the completing unfolding, like a kept history, never returns.
+`formal-reuse` — 复用 Law.orbit、Law.Returns 与 gap_of_lt：修正是轨道，否定的返回是 Returns；补全的展开像保留的历史一样从不返回。 / Reuses Law.orbit, Law.Returns and gap_of_lt: revision is an orbit and the negation's return is Returns; the completing unfolding, like a kept history, never returns.
 
 **Producer output / 上游输出:** 轨道与返回。 / Orbits and return.
 
@@ -4724,7 +4724,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## the-split-that-makes-sense ← configurations-alike-by-relation
 
-`formal-reuse` — 复用 MakesSense、makesSense_iff、makesSense_id_iff、Alike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：这里给出确定的律下有意义的切分何时存在、部分何时单独有意义，以及时刻之律的相同。 / Reuses MakesSense, makesSense_iff, makesSense_id_iff, Alike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: here, when a split making sense exists under a determined law, when a part alone makes sense, and likeness under the law of moments.
+`formal-reuse` — 复用 IdentifiesAlike、identifiesAlike_iff、identifiesAlike_id_iff、Alike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.IdentifiesAlike.carries：这里给出确定的律下有意义的切分何时存在、部分何时单独有意义，以及时刻之律的相同。 / Reuses IdentifiesAlike, identifiesAlike_iff, identifiesAlike_id_iff, Alike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.IdentifiesAlike.carries: here, when a split making sense exists under a determined law, when a part alone makes sense, and likeness under the law of moments.
 
 **Producer output / 上游输出:** 有意义的定义与刻画；确定的律下相同就是所识的未来相同。 / The definition and characterization of making sense; under a determined law likeness is the same registered future.
 
@@ -4760,11 +4760,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## the-split-that-makes-sense ← registration-within-what-it-registers
 
-`formal-reuse` — 复用 Diagonal.revision_never_rests 与 Diagonal.flip_moves：否定的前两个时刻不同。 / Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the denial's first two moments differ.
+`formal-reuse` — 复用 Diagonal.revision_never_rests 与 Diagonal.flip_moves：否定的前两个时刻不同。 / Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the negation's first two moments differ.
 
 **Producer output / 上游输出:** 修正从不静止。 / Revision never rests.
 
-**Consumer input / 下游输入:** 否定的两个状态。 / The denial's two states.
+**Consumer input / 下游输入:** 否定的两个状态。 / The negation's two states.
 
 **Retained conditions / 保留条件:** 无。 / None.
 

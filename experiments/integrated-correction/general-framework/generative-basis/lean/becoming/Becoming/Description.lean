@@ -12,8 +12,8 @@ reading lumps together. This module states what a cut keeps and what it loses, w
 * **Separation loses exactly the relation.** Describing each part by what it can be, with
   nothing of what it goes with, keeps every combination that occurs (`separated_of_whole`) and
   gives back the whole exactly where the whole is rectangular, whatever goes with one part going
-  with every other (`separation_faithful_iff`). The lost relation reappears as surplus: two
-  parts that always go alike, described separately, could go apart (`separation_surplus`).
+  with every other (`separation_faithful_iff`). The lost relation reappears as extra combinations: two
+  parts that always go alike, described separately, could go apart (`separation_admits_extra`).
 * **A relation held by no part.** Three parts can be related as a whole while every two of them
   are free (`whole_not_in_pairs`), so describing every pair still loses it. Read on Specker's
   three boxes and their pairs (`Becoming.Context`), parity is a whole its pairs do not give back
@@ -27,29 +27,29 @@ reading lumps together. This module states what a cut keeps and what it loses, w
   the parts together: for example, a coupling that relates two parts unrelates them when it acts
   a second time, losing nothing either way (`coupling_relates_and_unrelates`).
 * **The split that makes sense, under a determined law.** `Becoming.Unfolding` (P69) states
-  when a description makes sense (`MakesSense`: it identifies exactly the alike configurations)
+  when a description makes sense (`IdentifiesAlike`: it identifies exactly the alike configurations)
   and, for a determined law read through a registration (`Law.registered`), that alike is the
   same registered future (`Law.alike_iff_sameFuture`). In those terms: a split that keeps what
   is registered and carries a law in `Becoming.Mechanism`'s sense (`GoAlike`) relates
   configurations by a bisimulation (`Law.kernel_bisimulation`), so it loses nothing registered
-  (`Law.sameFuture_of_law`), and the coarsest such split makes sense (`Law.makesSense_of_law`).
+  (`Law.sameFuture_of_law`), and the coarsest such split makes sense (`Law.identifiesAlike_of_law`).
   Carrying a law is not enough: the split that lumps everything always carries one
   (`goAlike_const`) and makes sense only where nothing registered ever differs
-  (`Law.const_makesSense_iff`). Registering everything, the configuration itself makes sense
-  (`Law.whole_makesSense`). What is registered now makes sense by itself exactly where it
-  carries a law, a condition on one step (`Law.now_makesSense_iff_goAlike`), equivalently where it
-  fixes its own registered future (`Law.now_makesSense_iff`). So a registered part alone makes
+  (`Law.const_identifiesAlike_iff`). Registering everything, the configuration itself makes sense
+  (`Law.whole_identifiesAlike`). What is registered now makes sense by itself exactly where it
+  carries a law, a condition on one step (`Law.now_identifiesAlike_iff_goAlike`), equivalently where it
+  fixes its own registered future (`Law.now_identifiesAlike_iff`). So a registered part alone makes
   sense exactly where the rest makes no difference to its next value
-  (`Law.part_makesSense_iff_step`, `Law.part_makesSense_iff`), and otherwise the split that makes
+  (`Law.part_identifiesAlike_iff_step`, `Law.part_identifiesAlike_iff`), and otherwise the split that makes
   sense includes the rest. For a part whose next value is set by a rule that changes with it, as
   in `Becoming.Mechanism`'s `adaptive`, that is the rule making no difference to it
-  (`Law.adaptive_makesSense_iff`).
+  (`Law.adaptive_identifiesAlike_iff`).
 * **The pair.** Where a standing changes by a passing and only the standing is registered
-  (`Motion.move`), the split that makes sense is the pair (`Motion.makes_sense`); the standing
+  (`Motion.move`), the split that makes sense is the pair (`Motion.pair_identifiesAlike`); the standing
   alone carries no law, as `Becoming.Mechanism`'s `adaptive_state_law_iff` gives with the
   passing as the rule (`Motion.standing_alone`), and the passing alone loses the standing
   (`Motion.passing_alone`), so neither alone makes sense (`Motion.neither_alone`). Where nothing
-  passes, the standing alone makes sense (`Motion.still_makes_sense`).
+  passes, the standing alone makes sense (`Motion.still_identifiesAlike`).
 * **States from one registered history.** Two moments of one registered unfolding are one state
   when everything registered after them is alike (`SameAhead`); this is an equivalence that goes
   on as itself (`SameAhead.next`), `Becoming.Unfolding`'s same registered future read along
@@ -63,8 +63,8 @@ reading lumps together. This module states what a cut keeps and what it loses, w
   that is, where its registration repeats from some moment on (`finitely_many_states_iff`, by a
   pigeonhole up to a relation with no decision, `shared_below`); a configuration that returns
   has finitely many states under every registration (`Law.Returns.states`). The two-valued
-  denial, `Becoming.Diagonal`'s rhythm of a revision that never rests, has exactly two states
-  (`Denial.two_states`), each defined through the other (`Denial.each_through_other`).
+  negation, `Becoming.Diagonal`'s rhythm of a revision that never rests, has exactly two states
+  (`Negation.two_states`), each defined through the other (`Negation.each_through_other`).
   `Becoming.Learning`'s lasso course is two moments being one state (`lasso_iff_sameAhead`), so
   finitely many states is a lasso (`finitely_many_states_iff_lasso`).
 
@@ -112,8 +112,8 @@ theorem separation_faithful_iff {whole : A × B → Prop} :
    fun rect p ⟨⟨b, hb⟩, ⟨a, ha⟩⟩ => rect p.1 a b p.2 hb ha⟩
 
 /-- Two parts that always go alike, described separately, could go apart: the lost relation
-reappears as surplus. -/
-theorem separation_surplus :
+reappears as extra combinations. -/
+theorem separation_admits_extra :
     Separated (fun p : Bool × Bool => p.1 = p.2) (true, false) ∧
       ¬ (fun p : Bool × Bool => p.1 = p.2) (true, false) :=
   ⟨⟨⟨true, rfl⟩, ⟨false, rfl⟩⟩, fun h => nomatch h⟩
@@ -341,38 +341,38 @@ theorem sameFuture_of_law {next : S → S} {o : S → R} {π : S → K}
   alike_iff_sameFuture.mp ⟨_, kernel_bisimulation keeps alike, same⟩
 
 /-- **The coarsest split that keeps what is registered and carries a law makes sense.** -/
-theorem makesSense_of_law {next : S → S} {o : S → R} {π : S → K}
+theorem identifiesAlike_of_law {next : S → S} {o : S → R} {π : S → K}
     (keeps : ∀ s s', π s = π s' → o s = o s') (alike : GoAlike (process next) π)
-    (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : MakesSense (registered next o) π :=
-  makesSense_iff.mpr ⟨kernel_bisimulation keeps alike,
+    (coarsest : ∀ s s', SameFuture next o s s' → π s = π s') : IdentifiesAlike (registered next o) π :=
+  identifiesAlike_iff.mpr ⟨kernel_bisimulation keeps alike,
     fun s s' same => coarsest s s' (alike_iff_sameFuture.mp same)⟩
 
 /-- The split that lumps everything always carries a law (`goAlike_const`), and makes sense only
 where nothing registered ever differs. -/
-theorem const_makesSense_iff {next : S → S} {o : S → R} (k : K) :
-    MakesSense (registered next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
+theorem const_identifiesAlike_iff {next : S → S} {o : S → R} (k : K) :
+    IdentifiesAlike (registered next o) (fun _ => k) ↔ ∀ s s', SameFuture next o s s' :=
   ⟨fun sense s s' => alike_iff_sameFuture.mp ((sense s s').mp rfl),
    fun all s s' => ⟨fun _ => alike_iff_sameFuture.mpr (all s s'), fun _ => rfl⟩⟩
 
 /-- **What is registered now makes sense by itself exactly where it fixes its own registered
 future.** -/
-theorem now_makesSense_iff {next : S → S} {o : S → R} :
-    MakesSense (registered next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
+theorem now_identifiesAlike_iff {next : S → S} {o : S → R} :
+    IdentifiesAlike (registered next o) o ↔ ∀ s s', o s = o s' → SameFuture next o s s' :=
   ⟨fun sense s s' e => alike_iff_sameFuture.mp ((sense s s').mp e),
    fun fixes s s' => ⟨fun e => alike_iff_sameFuture.mpr (fixes s s' e),
      fun same => (alike_iff_sameFuture.mp same) 0⟩⟩
 
 /-- **Registering everything, the configuration itself is the split that makes sense**: nothing
 alike is two. -/
-theorem whole_makesSense (next : S → S) : MakesSense (registered next id) id :=
-  makesSense_id_iff.mpr fun _ _ alike => alike_iff_sameFuture.mp alike 0
+theorem whole_identifiesAlike (next : S → S) : IdentifiesAlike (registered next id) id :=
+  identifiesAlike_id_iff.mpr fun _ _ alike => alike_iff_sameFuture.mp alike 0
 
 /-- **The registered part alone makes sense exactly where the rest never makes a registered
 difference**; elsewhere the split that makes sense includes the rest. -/
-theorem part_makesSense_iff {X : Type u} {C : Type v} {next : X × C → X × C} :
-    MakesSense (registered next Prod.fst) Prod.fst ↔
+theorem part_identifiesAlike_iff {X : Type u} {C : Type v} {next : X × C → X × C} :
+    IdentifiesAlike (registered next Prod.fst) Prod.fst ↔
       ∀ x c c', SameFuture next Prod.fst (x, c) (x, c') :=
-  now_makesSense_iff.trans
+  now_identifiesAlike_iff.trans
     ⟨fun fixes x c c' => fixes (x, c) (x, c') rfl,
      fun rest s s' e => by
        cases s with
@@ -393,16 +393,16 @@ theorem sameFuture_of_goAlike {next : S → S} {o : S → R} (alike : GoAlike (p
 
 /-- **What is registered now makes sense by itself exactly where it carries a law**: a condition on
 one step. -/
-theorem now_makesSense_iff_goAlike {next : S → S} {o : S → R} :
-    MakesSense (registered next o) o ↔ GoAlike (process next) o :=
-  now_makesSense_iff.trans
+theorem now_identifiesAlike_iff_goAlike {next : S → S} {o : S → R} :
+    IdentifiesAlike (registered next o) o ↔ GoAlike (process next) o :=
+  now_identifiesAlike_iff.trans
     ⟨fun fixes => goAlike_process_iff.mpr fun s s' e => fixes s s' e 1, sameFuture_of_goAlike⟩
 
 /-- **The registered part alone makes sense exactly where the rest makes no difference to its next
 value.** -/
-theorem part_makesSense_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
-    MakesSense (registered next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
-  refine now_makesSense_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
+theorem part_identifiesAlike_iff_step {X : Type u} {C : Type v} {next : X × C → X × C} :
+    IdentifiesAlike (registered next Prod.fst) Prod.fst ↔ ∀ x c c', (next (x, c)).1 = (next (x, c')).1 := by
+  refine now_identifiesAlike_iff_goAlike.trans ⟨fun alike x c c' => goAlike_process_iff.mp alike _ _ rfl, ?_⟩
   intro every
   apply goAlike_process_iff.mpr
   intro s s' e
@@ -416,10 +416,10 @@ theorem part_makesSense_iff_step {X : Type u} {C : Type v} {next : X × C → X 
 
 /-- A part whose next value is set by a rule that changes with it: the part alone makes sense
 exactly where the rule makes no difference to it, the condition of `adaptive_state_law_iff`. -/
-theorem adaptive_makesSense_iff {X : Type u} {C : Type v} (F : C → X → X) (G : C → X → C) :
-    MakesSense (registered (fun s : X × C => (F s.2 s.1, G s.2 s.1)) Prod.fst) Prod.fst ↔
+theorem adaptive_identifiesAlike_iff {X : Type u} {C : Type v} (F : C → X → X) (G : C → X → C) :
+    IdentifiesAlike (registered (fun s : X × C => (F s.2 s.1, G s.2 s.1)) Prod.fst) Prod.fst ↔
       ∀ x c c', F c x = F c' x :=
-  part_makesSense_iff_step
+  part_identifiesAlike_iff_step
 
 end Law
 
@@ -440,7 +440,7 @@ theorem move_adaptive :
   rfl
 
 /-- **Registering only the standing, the split that makes sense is the pair.** -/
-theorem makes_sense : MakesSense (Law.registered move Prod.fst) (fun s : Nat × Nat => s) :=
+theorem pair_identifiesAlike : IdentifiesAlike (Law.registered move Prod.fst) (fun s : Nat × Nat => s) :=
   fun ⟨x, v⟩ ⟨x', v'⟩ =>
     ⟨fun e => match e with | rfl => Alike.refl _ (x, v),
      fun alike =>
@@ -461,9 +461,9 @@ theorem passing_alone : ¬ Law.SameFuture move Prod.fst (0, 0) (1, 0) :=
 
 /-- Neither alone makes sense. -/
 theorem neither_alone :
-    ¬ MakesSense (Law.registered move Prod.fst) Prod.fst ∧
-      ¬ MakesSense (Law.registered move Prod.fst) Prod.snd :=
-  ⟨fun sense => standing_alone (carries_law_iff.mp (Law.MakesSense.carries sense)),
+    ¬ IdentifiesAlike (Law.registered move Prod.fst) Prod.fst ∧
+      ¬ IdentifiesAlike (Law.registered move Prod.fst) Prod.snd :=
+  ⟨fun sense => standing_alone (carries_law_iff.mp (Law.IdentifiesAlike.carries sense)),
    fun sense => passing_alone (Law.alike_iff_sameFuture.mp ((sense (0, 0) (1, 0)).mp rfl))⟩
 
 /-- Nothing passes. -/
@@ -474,8 +474,8 @@ theorem orbit_still : ∀ (s : Nat × Nat) n, Law.orbit still s n = s
   | s, n + 1 => orbit_still s n
 
 /-- **Where nothing passes, the standing alone makes sense**: the pair is one. -/
-theorem still_makes_sense : MakesSense (Law.registered still Prod.fst) Prod.fst :=
-  Law.now_makesSense_iff.mpr fun s s' h n =>
+theorem still_identifiesAlike : IdentifiesAlike (Law.registered still Prod.fst) Prod.fst :=
+  Law.now_identifiesAlike_iff.mpr fun s s' h n =>
     (congrArg Prod.fst (orbit_still s n)).trans (h.trans (congrArg Prod.fst (orbit_still s' n)).symm)
 
 end Motion
@@ -627,9 +627,9 @@ theorem Law.Returns.states {S : Type u} {next : S → S} {s : S} (returns : Law.
 
 end Moments
 
-namespace Denial
+namespace Negation
 
-/-- The two-valued denial, registered at each moment. -/
+/-- The two-valued negation, registered at each moment. -/
 def register (n : Nat) : Bool := Law.orbit (fun b : Bool => !b) true n
 
 theorem zero_two : SameAhead register 0 2 :=
@@ -654,7 +654,7 @@ theorem each_through_other (t : Nat) :
       (SameAhead register t 1 → register t = false ∧ SameAhead register (t + 1) 0) :=
   ⟨fun h => ⟨h 0, h.next⟩, fun h => ⟨h 0, h.next.trans zero_two.symm⟩⟩
 
-end Denial
+end Negation
 
 /-! ## Lassos are finitely many states -/
 

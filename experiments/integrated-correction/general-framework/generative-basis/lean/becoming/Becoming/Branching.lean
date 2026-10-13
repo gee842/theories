@@ -98,10 +98,10 @@ states Capture's rule region as an instance of P67's absorbing regions.
 * **Capture's rule region.** Where the rule keeps itself, the configurations with a given rule
   are a region the law never leaves (`Law.rule_absorbing`); where the next configuration also
   depends on the rule alone, the configuration the rule holds is fixed (`Law.held_absorbing`) and
-  a reformed state is drawn into it at the first step (`Law.reform_drawnInto`). In `Captured`
-  (P62) these are `Captured.rule_region_absorbing` and `Captured.held_absorbing`, and a reformed
-  state or a reformed rule is drawn in and never returns (`Captured.state_reform_drawn`,
-  `Captured.rule_reform_drawn`).
+  a perturbed state is drawn into it at the first step (`Law.perturbation_drawnInto`). In `Captured`
+  (P62) these are `Captured.rule_region_absorbing` and `Captured.held_absorbing`, and a perturbed
+  state or a perturbed rule is drawn in and never returns (`Captured.state_perturbation_drawn`,
+  `Captured.rule_perturbation_drawn`).
 
 **Readings (the AI's, pending Ren).**
 - Where the course branches, returning asks more than keeping every possibility: a
@@ -120,7 +120,7 @@ states Capture's rule region as an instance of P67's absorbing regions.
   what is registered: an intervention on one name among alike configurations, a past nothing
   registers, a description nothing registers. What nothing registers is neither fixed nor
   refuted (compare the registers of `Becoming.Testing`).
-- Capture read as attraction: reform of the state alone is drawn back into what the rule holds,
+- Capture read as attraction: perturbation of the state alone is drawn back into what the rule holds,
   and the attractor moves only with the rule.
 
 What is not derived: a run from every configuration that can move (choosing a continuation at
@@ -1368,9 +1368,9 @@ theorem held_absorbing {next : S × R → S × R} (byRule : ∀ x x' g, next (x,
   fun _ same => (congrArg next same).trans
     ((congrArg (fun h => next ((next (x, g)).1, h)) (keeps (x, g))).trans (byRule _ x g))
 
-/-- **A reformed state is drawn into the configuration the rule holds**, entering at the first
+/-- **A perturbed state is drawn into the configuration the rule holds**, entering at the first
 step, where the next configuration depends on the rule and not on the state. -/
-theorem reform_drawnInto {next : S × R → S × R}
+theorem perturbation_drawnInto {next : S × R → S × R}
     (byRule : ∀ x x' g, next (x, g) = next (x', g))
     {x x' : S} {g : R} (apart : (x', g) ≠ next (x, g)) :
     DrawnInto next (fun s => s = next (x, g)) (x', g) :=
@@ -1397,20 +1397,20 @@ theorem rule_region_absorbing (g : Bool) : Law.Absorbing next (fun s => s.2 = g)
 theorem held_absorbing (g : Bool) : Law.Absorbing next (fun s => s = (g, g)) :=
   Law.held_absorbing byRule keeps g g
 
-/-- **A reformed state is drawn into the configuration the rule holds and never returns**: an
+/-- **A perturbed state is drawn into the configuration the rule holds and never returns**: an
 instance of `Law.DrawnInto` and of `Law.Drawn.not_returns`. -/
-theorem state_reform_drawn (g : Bool) :
+theorem state_perturbation_drawn (g : Bool) :
     Law.DrawnInto next (fun s => s = (g, g)) (!g, g) ∧ ¬ Law.Returns next (!g, g) :=
   have drawn : Law.DrawnInto next (fun s => s = (g, g)) (!g, g) :=
-    Law.reform_drawnInto byRule (x := g) fun same => not_ne g (congrArg Prod.fst same)
+    Law.perturbation_drawnInto byRule (x := g) fun same => not_ne g (congrArg Prod.fst same)
   ⟨drawn, Law.Drawn.not_returns ⟨_, held_absorbing g, drawn⟩⟩
 
-/-- **A reformed rule draws the state into the configuration the new rule holds**, and the
-reformed configuration never returns. -/
-theorem rule_reform_drawn (g : Bool) :
+/-- **A perturbed rule draws the state into the configuration the new rule holds**, and the
+perturbed configuration never returns. -/
+theorem rule_perturbation_drawn (g : Bool) :
     Law.DrawnInto next (fun s => s = (!g, !g)) (g, !g) ∧ ¬ Law.Returns next (g, !g) :=
   have drawn : Law.DrawnInto next (fun s => s = (!g, !g)) (g, !g) :=
-    Law.reform_drawnInto byRule (x := !g) fun same => not_ne g (congrArg Prod.fst same).symm
+    Law.perturbation_drawnInto byRule (x := !g) fun same => not_ne g (congrArg Prod.fst same).symm
   ⟨drawn, Law.Drawn.not_returns ⟨_, held_absorbing (!g), drawn⟩⟩
 
 end Captured

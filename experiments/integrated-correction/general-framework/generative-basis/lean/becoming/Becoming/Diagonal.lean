@@ -34,10 +34,10 @@ names it.
   held by a finite stock.
 * **No still value, a rhythm.** Revising a value by a map that moves every value never rests
   (`revision_never_rests`); for a claim that denies itself, revision never rests up to `Iff`
-  (`denial_never_rests`); and the two-valued denial returns every two steps
-  (`denial_returns`). The liar, read as a revision, is the simplest rhythm, not a
+  (`negation_never_rests`); and the two-valued negation returns every two steps
+  (`negation_returns`). The liar, read as a revision, is the simplest rhythm, not a
   contradiction; `Becoming.Description` reads the same rhythm off its registrations as two
-  states, each defined through the other (`Denial.two_states`).
+  states, each defined through the other (`Negation.two_states`).
 
 So, with no premise: a registration within what it registers is complete exactly where there
 is nothing to tell apart. Where there is, what it misses is definite, and the next step can
@@ -281,12 +281,12 @@ theorem revision_never_rests {f : B → B} (moves : Moves Eq f) (b : B) (n : Nat
   fun e => moves (Law.orbit f b n) e.symm
 
 /-- A claim that denies itself: revision never rests, up to `Iff`. -/
-theorem denial_never_rests (P : Prop) (n : Nat) :
+theorem negation_never_rests (P : Prop) (n : Nat) :
     ¬ (Law.orbit Not P (n + 1) ↔ Law.orbit Not P n) :=
   fun e => moves_not (Law.orbit Not P n) (Iff.symm e)
 
-/-- The two-valued denial returns every two steps. -/
-theorem denial_returns (b : Bool) : Law.Returns (fun b : Bool => !b) b :=
+/-- The two-valued negation returns every two steps. -/
+theorem negation_returns (b : Bool) : Law.Returns (fun b : Bool => !b) b :=
   ⟨2, Nat.zero_lt_succ 1, Bool.not_not b⟩
 
 end Diagonal

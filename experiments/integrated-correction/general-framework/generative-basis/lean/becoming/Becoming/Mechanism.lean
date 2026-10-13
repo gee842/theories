@@ -25,7 +25,7 @@ reading of time nor a finer unit of amount (`Becoming.Resolution`).
   configurations alike under `π` are equal from the first step on
   (`DependsOnlyOn.reabsorbed`). For a determined law this is `Law.reabsorbed`; with the
   configuration read as a state and a rule, and the rule as the projection, it is
-  `Law.reform_reabsorbed` of `Becoming.Capture` (P62), proved there as its instance.
+  `Law.perturbation_reabsorbed` of `Becoming.Capture` (P62), proved there as its instance.
 * **A system that changes its own rule.** A state going on under a rule that itself goes on
   (`adaptive`) is one determined process on the joint configuration (`adaptive_determined`).
   The state carries a law of its own exactly where the rule makes no difference to it
