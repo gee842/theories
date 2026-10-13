@@ -3178,6 +3178,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
+## registration-within-what-it-registers ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、Law.Returns 与 gap_of_lt：修正是轨道，否定的返回是 Returns；补全的展开像保留的历史一样从不返回。 / Reuses Law.orbit, Law.Returns and gap_of_lt: revision is an orbit and the denial's return is Returns; the completing unfolding, like a kept history, never returns.
+
+**Producer output / 上游输出:** 轨道与返回。 / Orbits and return.
+
+**Consumer input / 下游输入:** 节律；缺口两两不同。 / The rhythm; gaps pairwise different.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
 ## relational-reading-comparison ← relational-renewal-classification
 
 `formal-reuse` — 导入 RelationalRenewal，直接调用 overdraw_consuming、within_renewal_renewing、within_renewal_sustains、independent_overdraw_persists 与 renewing_not_consuming。 / Imports RelationalRenewal and calls overdraw_consuming, within_renewal_renewing, within_renewal_sustains, independent_overdraw_persists and renewing_not_consuming directly.
@@ -3630,6 +3642,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
 
+## separation-loses-the-relation ← contextual-registration
+
+`formal-reuse` — 复用 restrict、Glued、PartsDetermine 与 Specker 的盒子和对：奇偶在同样的三对上是诸对不给回的整体。 / Reuses restrict, Glued, PartsDetermine and Specker's boxes and pairs: on the same three pairs parity is a whole its pairs do not give back.
+
+**Producer output / 上游输出:** 整体在语境中允许什么、部分粘合成什么、部分是否给回整体；三个盒子与三对。 / What a whole allows within a context, what the parts glue to, whether the parts give the whole back; three boxes and three pairs.
+
+**Consumer input / 下游输入:** 奇偶作为部分失去整体的第一种方式的见证。 / Parity as the witness of the first way parts fail a whole.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Context.lean)
+
 ## significance-retained-within-margin ← closing-needs-net-draw
 
 `formal-reuse` — 复用接纳、包含、超出、扣留后的水平与精确相界 Flow.Balances.supported_iff_within_margin（以及 opens_nothing）。 / Reuses admission, inclusion, exceeding, the withheld levels and the exact phase boundary Flow.Balances.supported_iff_within_margin (and opens_nothing).
@@ -3941,6 +3965,54 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无。 / None.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean)
+
+## the-split-that-makes-sense ← configurations-alike-by-relation
+
+`formal-reuse` — 复用 MakesSense、makesSense_iff、makesSense_id_iff、Alike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：这里给出确定的律下有意义的切分何时存在、部分何时单独有意义，以及时刻之律的相同。 / Reuses MakesSense, makesSense_iff, makesSense_id_iff, Alike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: here, when a split making sense exists under a determined law, when a part alone makes sense, and likeness under the law of moments.
+
+**Producer output / 上游输出:** 有意义的定义与刻画；确定的律下相同就是所识的未来相同。 / The definition and characterization of making sense; under a determined law likeness is the same registered future.
+
+**Consumer input / 下游输入:** 最粗的切分、部分单独、时刻之律。 / The coarsest split, a part alone, the law of moments.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
+## the-split-that-makes-sense ← projection-carrying-a-law
+
+`formal-reuse` — 复用 GoAlike、goAlike_const、carries_law_iff、adaptive 与 adaptive_state_law_iff：部分单独有意义的条件就是规则不造成差别的条件。 / Reuses GoAlike, goAlike_const, carries_law_iff, adaptive and adaptive_state_law_iff: the condition for a part alone to make sense is the condition that the rule makes no difference.
+
+**Producer output / 上游输出:** 承载规律的刻画；改变自身规则的系统。 / The characterization of carrying a law; a system changing its own rule.
+
+**Consumer input / 下游输入:** 有意义的切分与一对的见证。 / The split that makes sense and the witness of the pair.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## the-split-that-makes-sense ← recurrence-without-premise
+
+`formal-reuse` — 复用 Law.orbit、Law.orbit_add、Law.succ_orbit、Law.Returns，以及 revisits_within 的证明工具 skipAt、le_succ_cases：按关系的鸽笼照它的证明。 / Reuses Law.orbit, Law.orbit_add, Law.succ_orbit, Law.Returns, and the tools of revisits_within's proof, skipAt and le_succ_cases: the pigeonhole up to a relation follows its proof.
+
+**Producer output / 上游输出:** 轨道、返回、不加判定的鸽笼。 / Orbits, return, a pigeonhole with no decision.
+
+**Consumer input / 下游输入:** 状态有限恰是重复；返回的构型状态有限。 / Finitely many states is repetition; a returning configuration has finitely many states.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean)
+
+## the-split-that-makes-sense ← registration-within-what-it-registers
+
+`formal-reuse` — 复用 Diagonal.revision_never_rests 与 Diagonal.flip_moves：否定的前两个时刻不同。 / Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the denial's first two moments differ.
+
+**Producer output / 上游输出:** 修正从不静止。 / Revision never rests.
+
+**Consumer input / 下游输入:** 否定的两个状态。 / The denial's two states.
+
+**Retained conditions / 保留条件:** 无。 / None.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean)
 
 ## theory-of-becoming-foundation ← becoming-context-coherence
 

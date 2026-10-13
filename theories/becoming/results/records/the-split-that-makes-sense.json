@@ -1,0 +1,407 @@
+{
+  "schema_version": 1,
+  "id": "the-split-that-makes-sense",
+  "title": {
+    "zh": "有意义的切分与从历史读出的状态：确定的律下，保留所识并承载规律的最粗切分有意义；所识的部分单独有意义恰当其余对它的下一值不造成差别；每段所识的历史是一条确定的律，状态有限恰当所识从某一刻起重复",
+    "en": "The split that makes sense, and states read off a history: under a determined law the coarsest split keeping what is registered and carrying a law makes sense; a registered part alone makes sense exactly where the rest makes no difference to its next value; every registered history is a determined law, with finitely many states exactly where its registration repeats from some moment on"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T08:50:16+00:00",
+  "claim": {
+    "zh": "以 P69 的定义：确定的律 next 经识读 o 读作框架 Law.registered next o，描述 π 有意义（MakesSense），指它恰把相同的配置等同，相同就是所识的未来相同（Law.alike_iff_sameFuture）。确定的律下，π 与律同去恰当它把被等同者带到被等同者（Law.goAlike_process_iff）；保留所识并同去的切分以互模拟联系配置（Law.kernel_bisimulation），不失去所识的任何东西（Law.sameFuture_of_law），最粗的这样的切分有意义（Law.makesSense_of_law）。什么都不分的切分有意义，恰当所识的未来处处相同（Law.const_makesSense_iff）；识得一切（o = id），配置自身有意义（Law.whole_makesSense）。现在所识者 o 自身有意义，恰当它固定自己所识的未来（Law.now_makesSense_iff），恰当它与律同去，这是一步上的条件（Law.sameFuture_of_goAlike、Law.now_makesSense_iff_goAlike）。律在 X × C 上、识第一部分时，第一部分单独有意义恰当 ∀ x c c′，(next (x, c)).1 = (next (x, c′)).1（Law.part_makesSense_iff_step），等价地恰当其余从不造成所识的差别（Law.part_makesSense_iff）；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当 ∀ x c c′，F c x = F c′ x（Law.adaptive_makesSense_iff），即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。Motion.move (x, v) = (x + v, v) 是 adaptive 过程（Motion.move_adaptive）；只识 x 时这一对有意义（Motion.makes_sense），x 单独不承载规律（Motion.standing_alone），v 单独失去 x（Motion.passing_alone），两者单独都没有意义（Motion.neither_alone）；不动的律下 x 单独有意义（Motion.still_makes_sense）。一段所识的序列 o : ℕ → O 中，时刻 t 与 t′ 是同一状态（SameAhead o t t′），指 ∀ n，o (t + n) = o (t′ + n)；这是等价关系，并作为自身继续（SameAhead.next）；沿轨道读就是所识的未来相同（sameAhead_orbit_iff）；每个时刻所识都不同时，每个时刻是自己的状态（SameAhead.new_each）。时刻之律 Law.registered Nat.succ o 下，t 与 t′ 相同恰当 SameAhead o t t′（alike_moments_iff）。不加判定的按关系的鸽笼（split_top、shared_below）给出：o 状态有限（∃ L，每个时刻与某个小于 L 的时刻是同一状态，StatesBelow）恰当有 i < j 使 SameAhead o i j（statesBelow_of_same、finitely_many_states_iff）；返回的构型在每个识读之下状态有限（Law.Returns.states）。二值否定的所识（Denial.register）恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一（Denial.two_states），每个经另一个定义（Denial.each_through_other）。Law.goAlike_process_iff 是 Becoming.Learning 的 goAlike_iff_lumped 的实例；Learning.Lasso o i q 恰当 SameAhead o i (i + (q + 1))（lasso_iff_sameAhead），所以状态有限恰当有 Lasso（finitely_many_states_iff_lasso）。不用 Lean 公理。",
+    "en": "With P69's definitions: a determined law next read through a registration o is the frame Law.registered next o; a description π makes sense (MakesSense) when it identifies exactly the alike configurations, and alike is the same registered future (Law.alike_iff_sameFuture). Under a determined law, π goes alike with the law exactly where it carries what it identifies into what it identifies (Law.goAlike_process_iff); a split keeping what is registered and going alike relates configurations by a bisimulation (Law.kernel_bisimulation), loses nothing registered (Law.sameFuture_of_law), and the coarsest such split makes sense (Law.makesSense_of_law). The split lumping everything makes sense exactly where the registered futures are all the same (Law.const_makesSense_iff); registering everything (o = id), the configuration itself makes sense (Law.whole_makesSense). What is registered now, o, makes sense by itself exactly where it fixes its own registered future (Law.now_makesSense_iff), exactly where it goes alike with the law, a condition on one step (Law.sameFuture_of_goAlike, Law.now_makesSense_iff_goAlike). For a law on X × C registering the first part, the first part alone makes sense exactly where ∀ x c c′, (next (x, c)).1 = (next (x, c′)).1 (Law.part_makesSense_iff_step), equivalently where the rest never makes a registered difference (Law.part_makesSense_iff); where the next value is set by a rule changing with it (next (x, c) = (F c x, G c x)), exactly where ∀ x c c′, F c x = F c′ x (Law.adaptive_makesSense_iff), the condition of adaptive_state_law_iff of Becoming.Mechanism. Motion.move (x, v) = (x + v, v) is an adaptive process (Motion.move_adaptive); registering x, the pair makes sense (Motion.makes_sense), x alone carries no law (Motion.standing_alone), v alone loses x (Motion.passing_alone), and neither alone makes sense (Motion.neither_alone); under the still law x alone makes sense (Motion.still_makes_sense). In a registered sequence o : ℕ → O, moments t and t′ are one state (SameAhead o t t′) when ∀ n, o (t + n) = o (t′ + n); this is an equivalence that goes on as itself (SameAhead.next), is the same registered future read along an orbit (sameAhead_orbit_iff), and where every moment is registered differently each moment is its own state (SameAhead.new_each). Under the law of moments Law.registered Nat.succ o, t and t′ are alike exactly where SameAhead o t t′ (alike_moments_iff). A pigeonhole up to a relation with no decision (split_top, shared_below) gives: o has finitely many states (∃ L, every moment is one state with some moment below L, StatesBelow) exactly where SameAhead o i j for some i < j (statesBelow_of_same, finitely_many_states_iff); a configuration that returns has finitely many states under every registration (Law.Returns.states). The registration of the two-valued denial (Denial.register) has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two (Denial.two_states), each defined through the other (Denial.each_through_other). Law.goAlike_process_iff is the instance of Becoming.Learning's goAlike_iff_lumped; Learning.Lasso o i q holds exactly where SameAhead o i (i + (q + 1)) (lasso_iff_sameAhead), so there are finitely many states exactly where there is a lasso (finitely_many_states_iff_lasso). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "不加前提：Law.now_makesSense_iff_goAlike、Law.part_makesSense_iff_step、alike_moments_iff 与 finitely_many_states_iff 是双向的，对每条确定的律、每个识读或每段序列成立。",
+      "en": "No premise: Law.now_makesSense_iff_goAlike, Law.part_makesSense_iff_step, alike_moments_iff and finitely_many_states_iff are two-way and hold for every determined law, registration or sequence."
+    },
+    {
+      "zh": "Law.makesSense_of_law 要切分保留所识、与律同去并且最粗；Law.Returns.states 要构型返回（局部条件）。",
+      "en": "Law.makesSense_of_law needs the split to keep what is registered, go alike with the law and be coarsest; Law.Returns.states needs the configuration to return (local conditions)."
+    },
+    {
+      "zh": "时刻之律只用步的相继，即表示的共同步序（表示的承诺）；除此之外不给任何律。",
+      "en": "The law of moments uses only the succession of steps, the representation's shared step index (a commitment of the representation); no law beyond it is given."
+    },
+    {
+      "zh": "只陈述确定的律；有分支的框架由 P69 的 Alike 陈述。",
+      "en": "Only determined laws are stated; frames that branch are stated by P69's Alike."
+    },
+    {
+      "zh": "有意义的描述作为值（给每个类一个名字）存在没有陈述；类作为关系（SameFuture、SameAhead）总在。",
+      "en": "That a description making sense exists as values (a name for each class) is not stated; the classes always exist as relations (SameFuture, SameAhead)."
+    }
+  ],
+  "correspondence": {
+    "zh": "P70 的第二部分（工作板），回答 Ren 的“what is that \"make sense\" itself? what makes a pair, a pair?”与“maybe change(now) -> future”：相对于所识，有意义的切分唯一并由律给出；两个是一对，恰在律不在它们之间分开并且所识把它们分开。检验 Ren 的推测（“the full \"truth\" can be derived, situationally, including the cognition/controller part”）：按情境的真确切，控制者恰在造成所识差别处在内（Law.adaptive_makesSense_iff）。回答“展开是否有律”：每段所识的历史是时刻之律，律的内容是它的压缩，状态有限恰是从某一刻起重复。这是极小自动机与计算力学因果状态在确定情形的形式。P73 先落地，所以这里写出同一：Law.goAlike_process_iff 是 Becoming.Learning 的 goAlike_iff_lumped 的实例（两者各自写成，证明相同），状态有限就是 P73 的 Lasso。一步形式来自 P66 所有者的审查。读法（AI 的，待 Ren；Ren 同意了包含它们的回答）：阴阳读作所立与所经、否定的两个状态；变化与状态彼此经对方定义。见整合文档 §94。",
+    "en": "The second part of P70 (work board), answering Ren's “what is that \"make sense\" itself? what makes a pair, a pair?” and “maybe change(now) -> future”: relative to what is registered, the split that makes sense is unique and given by the law; two are a pair exactly where the law does not split between them and what is registered tells them apart. It tests Ren's speculation (“the full \"truth\" can be derived, situationally, including the cognition/controller part”): a situational truth is exact, and includes the controller exactly where it makes a registered difference (Law.adaptive_makesSense_iff). It answers whether an unfolding has a law: every registered history is the law of moments, the content of a law is its compression, and finitely many states is repetition from some moment on. This is the deterministic case of the minimal automaton and of the causal states of computational mechanics. P73 landed first, so the identities are stated here: Law.goAlike_process_iff is the instance of Becoming.Learning's goAlike_iff_lumped (written independently, with the same proof), and finitely many states is P73's lasso. The one-step forms come from the review by P66's owner. Readings (the AI's, pending Ren; Ren agreed with the reply containing them): 阴阳 as the standing and the passing, and as the denial's two states; change and state each defined through the other. See §94 of the integration note."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+  "aliases": [
+    "Becoming.Law.makesSense_of_law",
+    "Becoming.Law.const_makesSense_iff",
+    "Becoming.Law.whole_makesSense",
+    "Becoming.Law.now_makesSense_iff_goAlike",
+    "Becoming.Law.part_makesSense_iff_step",
+    "Becoming.Law.adaptive_makesSense_iff",
+    "Becoming.Motion.neither_alone",
+    "Becoming.SameAhead",
+    "Becoming.alike_moments_iff",
+    "Becoming.shared_below",
+    "Becoming.finitely_many_states_iff",
+    "Becoming.Law.Returns.states",
+    "Becoming.Denial.two_states",
+    "split that makes sense",
+    "有意义的切分",
+    "what makes a pair",
+    "什么使一对成为一对",
+    "states from a history",
+    "从历史读出的状态",
+    "causal states",
+    "因果状态",
+    "Becoming.lasso_iff_sameAhead",
+    "Becoming.finitely_many_states_iff_lasso"
+  ],
+  "dependencies": [
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 MakesSense、makesSense_iff、makesSense_id_iff、Alike、Law.registered、Law.SameFuture、Law.alike_iff_sameFuture 与 Law.MakesSense.carries：这里给出确定的律下有意义的切分何时存在、部分何时单独有意义，以及时刻之律的相同。",
+        "en": "Reuses MakesSense, makesSense_iff, makesSense_id_iff, Alike, Law.registered, Law.SameFuture, Law.alike_iff_sameFuture and Law.MakesSense.carries: here, when a split making sense exists under a determined law, when a part alone makes sense, and likeness under the law of moments."
+      },
+      "interface": {
+        "output": {
+          "zh": "有意义的定义与刻画；确定的律下相同就是所识的未来相同。",
+          "en": "The definition and characterization of making sense; under a determined law likeness is the same registered future."
+        },
+        "input": {
+          "zh": "最粗的切分、部分单独、时刻之律。",
+          "en": "The coarsest split, a part alone, the law of moments."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    },
+    {
+      "id": "projection-carrying-a-law",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 GoAlike、goAlike_const、carries_law_iff、adaptive 与 adaptive_state_law_iff：部分单独有意义的条件就是规则不造成差别的条件。",
+        "en": "Reuses GoAlike, goAlike_const, carries_law_iff, adaptive and adaptive_state_law_iff: the condition for a part alone to make sense is the condition that the rule makes no difference."
+      },
+      "interface": {
+        "output": {
+          "zh": "承载规律的刻画；改变自身规则的系统。",
+          "en": "The characterization of carrying a law; a system changing its own rule."
+        },
+        "input": {
+          "zh": "有意义的切分与一对的见证。",
+          "en": "The split that makes sense and the witness of the pair."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、Law.orbit_add、Law.succ_orbit、Law.Returns，以及 revisits_within 的证明工具 skipAt、le_succ_cases：按关系的鸽笼照它的证明。",
+        "en": "Reuses Law.orbit, Law.orbit_add, Law.succ_orbit, Law.Returns, and the tools of revisits_within's proof, skipAt and le_succ_cases: the pigeonhole up to a relation follows its proof."
+      },
+      "interface": {
+        "output": {
+          "zh": "轨道、返回、不加判定的鸽笼。",
+          "en": "Orbits, return, a pigeonhole with no decision."
+        },
+        "input": {
+          "zh": "状态有限恰是重复；返回的构型状态有限。",
+          "en": "Finitely many states is repetition; a returning configuration has finitely many states."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "registration-within-what-it-registers",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Diagonal.revision_never_rests 与 Diagonal.flip_moves：否定的前两个时刻不同。",
+        "en": "Reuses Diagonal.revision_never_rests and Diagonal.flip_moves: the denial's first two moments differ."
+      },
+      "interface": {
+        "output": {
+          "zh": "修正从不静止。",
+          "en": "Revision never rests."
+        },
+        "input": {
+          "zh": "否定的两个状态。",
+          "en": "The denial's two states."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "separation-loses-the-relation",
+      "detail": {
+        "zh": "同一模块：任何把整体切成部分的描述失去什么。",
+        "en": "Same module: what any description cutting a whole into parts loses."
+      }
+    },
+    {
+      "id": "causal-models-as-processes",
+      "detail": {
+        "zh": "标准因果模型是确定的过程；这里经识读，有意义的切分是其状态。",
+        "en": "Standard causal models are determined processes; read through a registration, the split that makes sense is their state."
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "detail": {
+        "zh": "Law.goAlike_process_iff 是其 goAlike_iff_lumped 的实例。",
+        "en": "Law.goAlike_process_iff is the instance of its goAlike_iff_lumped."
+      }
+    },
+    {
+      "id": "learning-by-refutation",
+      "detail": {
+        "zh": "它的 Lasso 就是两个时刻是同一状态（lasso_iff_sameAhead）。",
+        "en": "Its Lasso is two moments being one state (lasso_iff_sameAhead)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "detail": {
+        "zh": "承载规律不足以有意义：什么都不分的切分总承载规律（goAlike_const），只在所识的未来处处相同时有意义（Law.const_makesSense_iff）；Motion 中所立者单独不承载规律，所经者单独失去所立者（Motion.neither_alone）。",
+        "en": "Carrying a law is not enough for sense: the split lumping everything always carries one (goAlike_const) and makes sense only where all registered futures are the same (Law.const_makesSense_iff); in Motion the standing alone carries no law and the passing alone loses the standing (Motion.neither_alone)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只陈述确定的律；有意义的描述作为值存在没有陈述（命名一般要商，Quot.sound）；有限的记录能否固定状态不在此陈述（P73）；alike_moments_iff 中时刻之律的确定性是平凡的，内容在相同恰是同一状态；不陈述任何实际展开状态有限；读法是 AI 的；不含伦理谓词。",
+    "en": "Only determined laws are stated; that a description making sense exists as values is not stated (naming in general needs a quotient, Quot.sound); whether a finite record fixes the states is not stated here (P73); in alike_moments_iff the determinacy of the law of moments is trivial, the content being that likeness is being one state; it is not stated that any actual unfolding has finitely many states; the readings are the AI's; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T084405.661795Z）：Becoming.Description 的 53 项定理全部空依赖，其中含 Law.kernel_bisimulation、Law.makesSense_of_law、Law.const_makesSense_iff、Law.now_makesSense_iff_goAlike、Law.part_makesSense_iff_step、Law.adaptive_makesSense_iff、Motion.neither_alone、Motion.still_makes_sense、alike_moments_iff、shared_below、finitely_many_states_iff、Law.Returns.states、Denial.two_states、lasso_iff_sameAhead与 finitely_many_states_iff_lasso；同一回执覆盖包内 61 个模块（含只作导入的根模块与桥接），共 3114 项定理／4559 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T084521.070057Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 63 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §94；独立审查的范围见同节。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T084405.661795Z): the 53 theorems of Becoming.Description all have empty axiom reports, among them Law.kernel_bisimulation, Law.makesSense_of_law, Law.const_makesSense_iff, Law.now_makesSense_iff_goAlike, Law.part_makesSense_iff_step, Law.adaptive_makesSense_iff, Motion.neither_alone, Motion.still_makes_sense, alike_moments_iff, shared_below, finitely_many_states_iff, Law.Returns.states, Denial.two_states, lasso_iff_sameAhead and finitely_many_states_iff_lasso; the same receipt covers the package's 61 modules (including the import-only root and the bridge) with 3114 theorems/4559 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T084521.070057Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 63 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §94 of the integration note, with the scope of the independent review."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "role": "proof",
+      "sha256": "a7552ae0feeb0893ad0d5c390978360c8faa262db82c13728c8aea7583aac8cd",
+      "declarations": [
+        "Becoming.Law.goAlike_process_iff",
+        "Becoming.Law.kernel_bisimulation",
+        "Becoming.Law.sameFuture_of_law",
+        "Becoming.Law.makesSense_of_law",
+        "Becoming.Law.const_makesSense_iff",
+        "Becoming.Law.now_makesSense_iff",
+        "Becoming.Law.whole_makesSense",
+        "Becoming.Law.part_makesSense_iff",
+        "Becoming.Law.sameFuture_of_goAlike",
+        "Becoming.Law.now_makesSense_iff_goAlike",
+        "Becoming.Law.part_makesSense_iff_step",
+        "Becoming.Law.adaptive_makesSense_iff",
+        "Becoming.Motion.cancel",
+        "Becoming.Motion.move",
+        "Becoming.Motion.move_adaptive",
+        "Becoming.Motion.makes_sense",
+        "Becoming.Motion.standing_alone",
+        "Becoming.Motion.passing_alone",
+        "Becoming.Motion.neither_alone",
+        "Becoming.Motion.still",
+        "Becoming.Motion.orbit_still",
+        "Becoming.Motion.still_makes_sense",
+        "Becoming.SameAhead",
+        "Becoming.SameAhead.refl",
+        "Becoming.SameAhead.symm",
+        "Becoming.SameAhead.trans",
+        "Becoming.SameAhead.next",
+        "Becoming.sameAhead_orbit_iff",
+        "Becoming.SameAhead.new_each",
+        "Becoming.alike_moments_iff",
+        "Becoming.split_top",
+        "Becoming.shared_below",
+        "Becoming.StatesBelow",
+        "Becoming.statesBelow_of_same",
+        "Becoming.finitely_many_states_iff",
+        "Becoming.Law.Returns.states",
+        "Becoming.Denial.register",
+        "Becoming.Denial.zero_two",
+        "Becoming.Denial.two_states",
+        "Becoming.Denial.each_through_other",
+        "Becoming.lasso_iff_sameAhead",
+        "Becoming.finitely_many_states_iff_lasso"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.Alike",
+        "Becoming.Alike.refl",
+        "Becoming.Bisimulation",
+        "Becoming.MakesSense",
+        "Becoming.makesSense_iff",
+        "Becoming.makesSense_id_iff",
+        "Becoming.Law.registered",
+        "Becoming.Law.SameFuture",
+        "Becoming.Law.alike_iff_sameFuture",
+        "Becoming.Law.MakesSense.carries"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "declarations": [
+        "Becoming.GoAlike",
+        "Becoming.adaptive",
+        "Becoming.adaptive_state_law_iff",
+        "Becoming.carries_law_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "d65a3d05e7897942d6a64cd592e7d7498ea1f141b6b56e5dd34c3a7fad266cfa",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.Law.orbit_add",
+        "Becoming.Law.succ_orbit",
+        "Becoming.Law.process",
+        "Becoming.Law.Returns",
+        "Becoming.skipAt",
+        "Becoming.skipAt_le",
+        "Becoming.skipAt_lt",
+        "Becoming.skipAt_ne",
+        "Becoming.le_succ_cases"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
+      "role": "proof",
+      "sha256": "1a1d3ecb2c0b8940f07292488ba03b9707aee268a602856e8b578b88680791c0",
+      "declarations": [
+        "Becoming.Diagonal.revision_never_rests",
+        "Becoming.Diagonal.flip_moves"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "role": "proof",
+      "sha256": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
+      "declarations": [
+        "Becoming.Learning.goAlike_iff_lumped",
+        "Becoming.Learning.Lasso"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "6486fb81d22ce08d197498cc50bfdc3c65411195d38c39199ed87f526c08b639",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "d4bfed47b4c203084e0a29e848d98b82d31713fd457c59af261ec192b2754857",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "d58c364289c9a6a1d7cd124d2eedfdc963b68529799e092c8a39bdde7a721587",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md",
+      "role": "provenance",
+      "sha256": "93e89d2880eb068ac19822be3a1d95ea842d7e60fef9ba81b419f874e7e01799",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-framing-evidence/README.md",
+      "role": "provenance",
+      "sha256": "ef5699566c3ae5b7575ea1383d5cef26f279a43d4717f227d934b74fec88a501",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Description",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Diagonal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Diagonal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Learning.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Learning",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "有分支的框架下最粗切分与部分单独的形式；状态有限时可判定的命名；Ren 的判断：一对的刻画与阴阳的读法。",
+    "en": "The forms of the coarsest split and of a part alone for frames that branch; decidable naming where the states are finite; Ren's judgment on the account of the pair and the reading of 阴阳."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P70：新增，按 Ren“push the frontier, as far as possible”（对框架失去什么、什么使一对成为一对的回答之后），及其后“keep prove to the deepest, i agree with your last reply”；见整合文档 §94。",
+      "en": "2026-10-12 P70: added, following Ren's ‘push the frontier, as far as possible’ (after the answer on what the framing loses and what makes a pair a pair) and the later ‘keep prove to the deepest, i agree with your last reply’; see §94 of the integration note."
+    }
+  ]
+}

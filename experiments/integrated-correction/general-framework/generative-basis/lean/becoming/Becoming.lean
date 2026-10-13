@@ -1,6 +1,9 @@
 import Becoming.Frame
 import Becoming.Inquiry
 import Becoming.Recurrence
+import Becoming.Diagonal
+import Becoming.Context
+import Becoming.Quantum
 import Becoming.Renewal
 import Becoming.Dependence
 import Becoming.Return
@@ -53,6 +56,7 @@ import Becoming.Runaway
 import Becoming.Response
 import Becoming.Selection
 import Becoming.Learning
+import Becoming.Description
 
 /-!
 # The Theory of Becoming: the formal core
@@ -70,6 +74,27 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   returns, a rise needs a merge, and a merge loses a possibility for good; keeping its history,
   every law loses nothing, never returns and needs an open world, while a finite present
   forgets.
+* `Becoming.Diagonal` (L2): a registration within what it registers (P71), with no premise. A
+  family indexed by what it reads misses the gap of any map moving every value (Lawvere's
+  diagonal); no family of claims is complete, and no frame realizes with its own configurations
+  every claim about them; for values compared by equality, a registration within what it
+  registers is complete exactly where nothing differs, and a complete one has fixed points.
+  Completing is an unfolding, incomplete at every step, its gaps pairwise different, never
+  returning and held by no finite stock, and one exists; revision by a map moving every value
+  never rests, and the two-valued denial returns every two steps. The readings are the AI's.
+* `Becoming.Context` (L2): contextual registration (P72), with no premise. Registrations in
+  contexts glue exactly where contexts agree where they meet; a frame of context-free claims fits
+  exactly where they glue at every configuration, and the frame indexed by context always fits,
+  so context-free claims are a commitment of the representation; with local possibilities and no
+  context-free reading no configuration respecting them glues, and where some context allows
+  something they are the parts of no whole. Specker's three boxes and the Mermin–Peres square are
+  witnesses. The readings are the AI's.
+* `Becoming.Quantum` (L2): the quantum realization of the Mermin–Peres square (P72q, written and
+  checked by the owner of P64–P68). The nine two-qubit observables as integer matrices square to
+  the identity, commute along each line, and multiply to minus the identity along the third
+  column and to the identity along every other line; the values a nonzero vector shows jointly on
+  a line are a possibility of the line, and every possibility is shown, so no context-free
+  assignment is shown jointly on every line.
 * `Becoming.Renewal` (L3): every run read through conditions is one relational
   unfolding; renewal and consumption belong to the run.
 * `Becoming.Dependence` (L3): dependence forms, holds, breaks and dissolves across
@@ -570,6 +595,20 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   untried value; training selects through the data, and its fit is right beyond them exactly
   where the class is determined there. 理 is read as Ren reads it, the modeling of the laws of
   structure and of change; the other readings are the AI's, pending Ren.
+* `Becoming.Description` (L4): what a description keeps and loses (P70), with no premise.
+  Describing the parts separately gives back the whole exactly where it is rectangular, the lost
+  relation reappearing as surplus; three parts can be related as a whole while every two are free,
+  and on Specker's pairs the pairs do not give the parity back; a relation forms only by joint
+  action, lasts under laws moving each part by itself and merging nothing that occurs, and ends
+  only by loss or joint action. Under a determined law the coarsest split keeping what is
+  registered and carrying a law makes sense; what is registered now makes sense exactly where it
+  carries a law, and a part alone exactly where the rest makes no difference to its next value, a
+  controller's rule included; position and velocity are a pair. States are read off a registered
+  history: beyond the succession of steps every registered history is a determined law, with
+  finitely many states exactly where its registration repeats from some moment on. The same
+  law as `Learning.goAlike_iff_lumped` is its instance here, and finitely many states is P73's
+  lasso. The readings are the AI's; Ren asked for the pair to be dug
+  deeper and agreed with the reply that followed.
 * `Becoming.Boundaries` (L4): the axiom decomposed. Along a relation a boundary of a
   formation's self is a region holding it that is closed under the relation; a claim is
   super-true when it holds however the boundary is drawn, sub-true when it holds as drawn

@@ -104,3 +104,9 @@ In queue order, after P69 and P73, with one checker run:
 - quantum registrations do not glue.
 
 The proposal is to list "context-free claims" in ZERO-PREMISE-PLAN §1.2 beside discrete steps, natural-number amounts, the shared index and relata listed once. P72 is the condition under which that commitment fits. Ren decides whether it is listed.
+
+## Codex takeover landing, 13 October 2026
+
+Landed from the preserved package after P73–P75. The four source modules and the Learning instance patch passed the consolidated checker (core receipt `20261013T084405.661795Z`) and CorrectionInquiry (receipt `20261013T084521.070057Z`). The package now covers 3,114 theorems and 4,559 declaration audits; every source declaration in the pure core has an empty axiom report. These packages add 144 theorems. Study sections 94–96, four canonical records, chapter, catalogue and inventory are reconciled. The two new proof-only equality uses in Diagonal are classified explicitly. Research render/check passed; the five existing generativity-chain errors remain an independent historical maintenance issue.
+
+This integration reuses the package's two recorded reviews; it does not claim a fresh independent mathematical review. The representation choices and empirical correspondence boundaries above remain open. The original package and scratch evidence remain preserved.

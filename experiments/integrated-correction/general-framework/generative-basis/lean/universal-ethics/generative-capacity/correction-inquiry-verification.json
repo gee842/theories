@@ -1,9 +1,9 @@
 {
   "status": "passed",
-  "utc": "20261012T013048.258651Z",
+  "utc": "20261013T084521.070057Z",
   "toolchain": "leanprover/lean4:v4.30.0-rc2",
   "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
-  "retained_run": "correction-inquiry-checks/20261012T013048.258651Z",
+  "retained_run": "correction-inquiry-checks/20261013T084521.070057Z",
   "bridge_module": "CorrectionInquiry",
   "compile_order": [
     "GenerativeCore",
@@ -11,6 +11,9 @@
     "InquirySufficiency",
     "Becoming.Inquiry",
     "Becoming.Recurrence",
+    "Becoming.Diagonal",
+    "Becoming.Context",
+    "Becoming.Quantum",
     "RelationalRenewal",
     "Becoming.Renewal",
     "Becoming.Dependence",
@@ -64,6 +67,7 @@
     "Becoming.Response",
     "Becoming.Selection",
     "Becoming.Learning",
+    "Becoming.Description",
     "Becoming",
     "CorrectionBoundary",
     "ObservationRepair",
@@ -76,6 +80,9 @@
     "InquirySufficiency": "inquiry-root/sufficiency/InquirySufficiency.lean",
     "Becoming.Inquiry": "becoming/Becoming/Inquiry.lean",
     "Becoming.Recurrence": "becoming/Becoming/Recurrence.lean",
+    "Becoming.Diagonal": "becoming/Becoming/Diagonal.lean",
+    "Becoming.Context": "becoming/Becoming/Context.lean",
+    "Becoming.Quantum": "becoming/Becoming/Quantum.lean",
     "RelationalRenewal": "deeper/RelationalRenewal.lean",
     "Becoming.Renewal": "becoming/Becoming/Renewal.lean",
     "Becoming.Dependence": "becoming/Becoming/Dependence.lean",
@@ -129,6 +136,7 @@
     "Becoming.Response": "becoming/Becoming/Response.lean",
     "Becoming.Selection": "becoming/Becoming/Selection.lean",
     "Becoming.Learning": "becoming/Becoming/Learning.lean",
+    "Becoming.Description": "becoming/Becoming/Description.lean",
     "Becoming": "becoming/Becoming.lean",
     "CorrectionBoundary": "universal-ethics/generative-capacity/CorrectionBoundary.lean",
     "ObservationRepair": "universal-ethics/generative-capacity/ObservationRepair.lean",
@@ -141,6 +149,9 @@
     "InquirySufficiency": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
     "Becoming.Inquiry": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
     "Becoming.Recurrence": "d65a3d05e7897942d6a64cd592e7d7498ea1f141b6b56e5dd34c3a7fad266cfa",
+    "Becoming.Diagonal": "1a1d3ecb2c0b8940f07292488ba03b9707aee268a602856e8b578b88680791c0",
+    "Becoming.Context": "c454da2d677f50808dc93744780c20a087a62e856cac376e0959398ce403144c",
+    "Becoming.Quantum": "5bfd752991b30a9ae125eef842d94c5dac683eaff6a3891d6b47504f3adb3e74",
     "RelationalRenewal": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
     "Becoming.Renewal": "17a81c613e07ed52124bc44916c53d4f18224bdbfe2f07ecfeb930708da80403",
     "Becoming.Dependence": "ce4501e4f9709f649f474e56a4bd3289183165a454832e536fe89d904f356d34",
@@ -194,7 +205,8 @@
     "Becoming.Response": "279704f4d0e1b801e386d6d7e8d560aac68b49fb4b63cc4e1242895f6beb9abf",
     "Becoming.Selection": "4c0500e00a67a18c2a0b52254aecda8310f220646ccc58411fe289af9155382e",
     "Becoming.Learning": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
-    "Becoming": "031fede4e6b7618c7d43952dfc8ae3b8a63374303b2c4d2ae2304c730fc281ff",
+    "Becoming.Description": "a7552ae0feeb0893ad0d5c390978360c8faa262db82c13728c8aea7583aac8cd",
+    "Becoming": "969d7e28d9146887d4a722555a1b5b89aa6ec5de47377473334be253885f3160",
     "CorrectionBoundary": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
     "ObservationRepair": "1aa81a713d2333ae73b1d0643a09c3306b7e4c189f0570a8545bd4a2c5bed4f4",
     "ObservationChange": "47edeb32ffa0975c65d9264856b83cdbfd934c3acb39bf694da2f66ddcce22cd",
@@ -202,13 +214,16 @@
   },
   "checker_sha256": {
     "check_correction_inquiry.py": "34c6f8293fb1148ce1c6e859c5e9f3718348f4225f87bf0343240f8d623ce5d9",
-    "check_becoming.py": "deca2e0b418c3639de4e652a3c3c2a95ae7f346da9b3f6c014fcdc493dd17337",
+    "check_becoming.py": "4f13251aac64654b7bb39b45e73d14d3f586cd46cde434fa0156ef374d58ae65",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
   "source_commit": {
-    "main": "d6ade432aaee9d229cc16db92f244c812aef6d9a",
+    "main": "1860d9e34133188367320ea22e28be3794589d0a",
     "copied": [
-      "Becoming.Learning.lean",
+      "Becoming.Context.lean",
+      "Becoming.Description.lean",
+      "Becoming.Diagonal.lean",
+      "Becoming.Quantum.lean",
       "Becoming.lean",
       "check_becoming.py"
     ]
@@ -219,7 +234,10 @@
     "fresh": false,
     "ran": [
       "version.log",
-      "Becoming.Learning.log",
+      "Becoming.Diagonal.log",
+      "Becoming.Context.log",
+      "Becoming.Quantum.log",
+      "Becoming.Description.log",
       "Becoming.log",
       "CorrectionInquiry.log",
       "CorrectionInquiryAxiomAudit.log",
@@ -454,6 +472,10 @@
         "utc": "20261011T232716.311380Z",
         "retained": "/private/tmp/claude-501/-Users-ren-theories/dfe4a1b1-3a34-40ef-86a7-d1c09e897f30/scratchpad/p58/wt/experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261011T232716.311380Z"
       },
+      "Becoming.Learning.log": {
+        "utc": "20261012T013048.258651Z",
+        "retained": "/private/tmp/claude-501/-Users-ren-theories/d8647ba4-5512-4095-bf47-6cb21d90a334/scratchpad/land73/experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261012T013048.258651Z"
+      },
       "CorrectionBoundary.log": {
         "utc": "20261010T225803.468669Z",
         "retained": "/private/tmp/claude-501/-Users-ren-theories/1927be31-c1f4-49e3-bf4f-0b1807d55cae/scratchpad/cachehead/experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261010T225803.468669Z"
@@ -473,6 +495,9 @@
       "InquirySufficiency.log": "415b4cf115674d3b28c0572e5febd7dc474c73fdb2a579d46f43818d35eaea81",
       "Becoming.Inquiry.log": "7c2cd59da23138c0b6519e5c2b71d08bb27ea501f71ecee778073c69d1a9a6c8",
       "Becoming.Recurrence.log": "586d984c3368daef136aaaaa7685d38bf28cc2afe17a42aa8e6af63f789eb5ef",
+      "Becoming.Diagonal.log": "dc74e1b112a16f4f33e7eef142cd35fbcf9cf32b418bd125b0017bda03799258",
+      "Becoming.Context.log": "0b194173a7a8fc585da7e2ef313b2b6d0d6e056fc599000dab17dab560778855",
+      "Becoming.Quantum.log": "2df817243e8b01d15685370a3f9e27b52102f64f9bf1473e647f9dce38945f31",
       "RelationalRenewal.log": "d6217b7092570161906edcac864d94050ad04211002d318f252d6ab987b4f11c",
       "Becoming.Renewal.log": "18c63af6584163bcfb16c8280f554ae1bd18b17826e177e0b450dd2ae844bf75",
       "Becoming.Dependence.log": "6640ec68b5456f5b9597894aa821e501ba71652ddeb19f8ee603f39c8d6bfb4f",
@@ -526,13 +551,14 @@
       "Becoming.Response.log": "e2a30a34e6451875851a5490ffc63543d6b94611771a649a9c92e50fcd545753",
       "Becoming.Selection.log": "220e08f9e1bbd16a49b86dc3406f836109d02b076751ca97f549116ef845259d",
       "Becoming.Learning.log": "c8370feba1ce6b7f200f976af0ab228aa75cd6d68d0185d81f77f04fedfe0a76",
-      "Becoming.log": "5afc6c88b9fd25464027f861920ef9bab37a1d9c830d17dfcabee4c00df2aad1",
+      "Becoming.Description.log": "2e4e6773d60d1e0ee6b4e30ca2ea2996fef9c88c7d30a4eb965939c86734e485",
+      "Becoming.log": "3b5e629466e06fc769a6ec53b91e1b07541f4a1549a11629a61ff8e690ebaf29",
       "CorrectionBoundary.log": "0940a32cfa3f316240b15e5a463ff74b7e8969b88d9bb6d46ad6845a756d08f3",
       "ObservationRepair.log": "77d6a0d82686bba2d672fffb5b3b1750af1b5781e65aa3e2c9993a0eec027a12",
       "ObservationChange.log": "2779b27c9e5f0f32becb73dcfe2a207517f9e4f432d572a5442b74efd78bd5b8",
-      "CorrectionInquiry.log": "2127c1bd3f2dd05a83a194458b00b6da4ee0ed66027fdc1cb69ad653dfd66bc7",
-      "CorrectionInquiryAxiomAudit.log": "4ec84f540f702126ee669fc7c7b08140b6e443e15a0137ee9252c74a8306e2de",
-      "CorrectionInquirySignatures.log": "3aaf0b59e18d27f0d52e9c6fd3615f19ec160bcbe26b29d6db6a3df392d5d1ba"
+      "CorrectionInquiry.log": "67f592ff1807096e1ad4523805063593ad9cee439bd32ee1a03767408a33084d",
+      "CorrectionInquiryAxiomAudit.log": "96ac19a3a415acdd527109352d81765369ba16432ac1838cb9d27cd191f85957",
+      "CorrectionInquirySignatures.log": "cb6ea5df44353d1132c587164c5423d5df550618fe48a7c3a4a3d69a1874c00a"
     }
   },
   "inherited_receipts": {
@@ -640,6 +666,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json",
       "conditional/native-port/verification.json",
       "conditional/renewal/verification.json",
@@ -892,6 +919,8 @@
       "universal-ethics/copying-registration-verification/verification.json",
       "universal-ethics/developmental-association-verification/verification.json",
       "universal-ethics/developmental-reconstruction-verification/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json",
       "universal-ethics/evolution-network-comparison-verification/verification.json",
       "universal-ethics/generative-capacity/checks/20261007T130838.854157Z/verification.json",
       "universal-ethics/generative-capacity/checks/20261007T130945.936650Z/verification.json",
@@ -1051,7 +1080,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "InquirySufficiency": [
       "becoming/becoming-checks/20261008T195935.130766Z/verification.json",
@@ -1156,6 +1188,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json",
       "inquiry-root/sufficiency/contact-formation-verification.json",
       "inquiry-root/sufficiency/derived-inquiry-runs/1791286286937536000/baseline-verification.json",
@@ -1195,6 +1228,8 @@
       "inquiry-root/sufficiency/stock-derivation-verification.json",
       "inquiry-root/sufficiency/verification.json",
       "inquiry-root/sufficiency/whole-port-continuation-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json",
       "verification-history/2026-10-06-before-axiom-removal/sufficiency/verification.json",
       "verification-history/2026-10-06-before-vocabulary-rename/receipt.json",
       "verification-history/2026-10-06-before-vocabulary-rename/receipts/sufficiency/contact-formation-verification.json",
@@ -1299,7 +1334,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Recurrence": [
       "becoming/becoming-checks/20261011T011019.444120Z/verification.json",
@@ -1317,6 +1355,21 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
+    ],
+    "Becoming.Diagonal": [
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json"
+    ],
+    "Becoming.Context": [
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json"
+    ],
+    "Becoming.Quantum": [
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "RelationalRenewal": [
@@ -1420,13 +1473,16 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json",
       "deeper/relational-renewal-checks/20261008T185948.447355Z/verification.json",
       "deeper/relational-renewal-checks/20261008T191703.522544Z/verification.json",
       "deeper/relational-renewal-checks/20261008T191915.432934Z/verification.json",
       "deeper/relational-renewal-verification.json",
       "deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
-      "deeper/renewal-recovery-verification.json"
+      "deeper/renewal-recovery-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Renewal": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -1467,7 +1523,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Dependence": [
       "becoming/becoming-checks/20261011T192152.790658Z/verification.json",
@@ -1477,7 +1536,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Return": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -1518,7 +1580,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Horizon": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -1559,7 +1624,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Joint": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -1600,7 +1668,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Experiment": [
       "becoming/becoming-checks/20261011T101806.880391Z/verification.json",
@@ -1613,14 +1684,20 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Mechanism": [
       "becoming/becoming-checks/20261011T225632.916383Z/verification.json",
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Generation": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -1661,7 +1738,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Flow": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1673,7 +1753,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Change": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1685,7 +1768,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Evolution": [
       "becoming/becoming-checks/20261011T073932.785239Z/verification.json",
@@ -1699,7 +1785,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Population": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1711,7 +1800,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Dissipation": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1723,7 +1815,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Locality": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1735,7 +1830,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Roles": [
       "becoming/becoming-checks/20261011T122250.993495Z/verification.json",
@@ -1747,7 +1845,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Reserve": [
       "becoming/becoming-checks/20261011T192152.790658Z/verification.json",
@@ -1757,17 +1858,24 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Space": [
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Unfolding": [
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Attraction": [
@@ -1775,6 +1883,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Substitution": [
@@ -1860,6 +1969,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Identity": [
@@ -1870,6 +1980,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Wholes": [
@@ -1947,6 +2058,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Seeking": [
@@ -1956,6 +2068,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Capture": [
@@ -1963,7 +2076,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Premises": [
       "becoming/becoming-checks/20261011T210459.095261Z/verification.json",
@@ -1971,6 +2087,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Sampling": [
@@ -1979,6 +2096,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Tower": [
@@ -1989,18 +2107,21 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Openness": [
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Decidedness": [
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Counting": [
@@ -2018,6 +2139,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Standing": [
@@ -2035,6 +2157,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Resolution": [
@@ -2057,6 +2180,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Units": [
@@ -2067,6 +2191,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Imbalance": [
@@ -2075,6 +2200,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Continuation": [
@@ -2087,7 +2213,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Admission": [
       "becoming/becoming-checks/20261011T073932.785239Z/verification.json",
@@ -2101,7 +2230,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Regions": [
       "becoming/becoming-checks/20261011T171000.054867Z/verification.json",
@@ -2112,7 +2244,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Metaethics": [
       "becoming/becoming-checks/20261011T003217.297180Z/verification.json",
@@ -2131,7 +2266,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Ranking": [
       "becoming/becoming-checks/20261009T042823.534750Z/verification.json",
@@ -2216,6 +2354,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Correspondence": [
@@ -2257,7 +2396,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Descent": [
       "becoming/becoming-checks/20261010T083222.285294Z/verification.json",
@@ -2298,7 +2440,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Standpoints": [
       "becoming/becoming-checks/20261011T003217.297180Z/verification.json",
@@ -2317,7 +2462,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Significance": [
       "becoming/becoming-checks/20261011T171000.054867Z/verification.json",
@@ -2328,7 +2476,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Interdependence": [
       "becoming/becoming-checks/20261011T073932.785239Z/verification.json",
@@ -2342,7 +2493,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Feedback": [
       "becoming/becoming-checks/20261010T174514.186722Z/verification.json",
@@ -2365,7 +2519,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Boundaries": [
       "becoming/becoming-checks/20261011T003217.297180Z/verification.json",
@@ -2384,6 +2541,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Relevance": [
@@ -2395,6 +2553,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Testing": [
@@ -2410,7 +2569,10 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Runaway": [
       "becoming/becoming-checks/20261011T101806.880391Z/verification.json",
@@ -2423,6 +2585,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Response": [
@@ -2430,6 +2593,7 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming.Selection": [
@@ -2437,14 +2601,24 @@
       "becoming/becoming-checks/20261011T232354.807725Z/verification.json",
       "becoming/becoming-checks/20261011T235410.578553Z/verification.json",
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
-      "becoming/becoming-verification.json"
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
     ],
     "Becoming.Learning": [
       "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
+      "becoming/becoming-verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-checks/20261012T014649.248714Z/verification.json",
+      "universal-ethics/evolution-connectionism/learning-correspondence-verification.json"
+    ],
+    "Becoming.Description": [
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "Becoming": [
-      "becoming/becoming-checks/20261012T012916.201078Z/verification.json",
+      "becoming/becoming-checks/20261013T084405.661795Z/verification.json",
       "becoming/becoming-verification.json"
     ],
     "CorrectionBoundary": [
@@ -2526,16 +2700,22 @@
     }
   ],
   "artifact_sha256": {
-    "Becoming.Learning.lean": "b5d869ba9bfa90ef5a8f81c2166fcfb45f8811d6cd2c41daec6ccec5cab6537b",
-    "Becoming.Learning.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "Becoming.lean": "031fede4e6b7618c7d43952dfc8ae3b8a63374303b2c4d2ae2304c730fc281ff",
+    "Becoming.Context.lean": "c454da2d677f50808dc93744780c20a087a62e856cac376e0959398ce403144c",
+    "Becoming.Context.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Description.lean": "a7552ae0feeb0893ad0d5c390978360c8faa262db82c13728c8aea7583aac8cd",
+    "Becoming.Description.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Diagonal.lean": "1a1d3ecb2c0b8940f07292488ba03b9707aee268a602856e8b578b88680791c0",
+    "Becoming.Diagonal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.Quantum.lean": "5bfd752991b30a9ae125eef842d94c5dac683eaff6a3891d6b47504f3adb3e74",
+    "Becoming.Quantum.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Becoming.lean": "969d7e28d9146887d4a722555a1b5b89aa6ec5de47377473334be253885f3160",
     "Becoming.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CorrectionInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CorrectionInquiryAxiomAudit.lean": "d032c693617e49efbd9af1c076e2911c77e8531aac201a10951ac556e1b06e72",
     "CorrectionInquiryAxiomAudit.log": "10315457cc2039a0783fb77975ff9eb7a0f1aba542579d034ed65f16dba82776",
     "CorrectionInquirySignatures.lean": "9139b47719f64f3a3490d1bdd5ca2e22d5add2f3d0952426b9bd07d13869596f",
     "CorrectionInquirySignatures.log": "b00731be47173221f6d244170118ef5aa0ccb71dddb8cf6497f799f3e8a8b545",
-    "check_becoming.py": "deca2e0b418c3639de4e652a3c3c2a95ae7f346da9b3f6c014fcdc493dd17337",
+    "check_becoming.py": "4f13251aac64654b7bb39b45e73d14d3f586cd46cde434fa0156ef374d58ae65",
     "version.log": "6b38d6160c0223bc189f88caad3d56588b06ca7af2b81d19cb4dbcef5024f387"
   }
 }

@@ -46,7 +46,7 @@ import check as audit_support  # noqa: E402
 # The foundation the core builds on (L0 and its two direct companions).
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
-CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Renewal", "Becoming.Dependence",
+CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.R
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -81,6 +81,30 @@ SCOPE = (
     "the three in an open world; keeping its history every law merges nothing, never returns, "
     "cannot have its beginning again and has no list holding it, and within finitely many "
     "configurations two histories share one present from every step on. "
+    "Diagonal: a family of registrations indexed by what it reads says no gap of a map moving every "
+    "value, and one saying every reading gives every map a value alike with its image; a claim is "
+    "never alike with its negation, so no family of claims says every reading and no frame realizes "
+    "every pattern of claims about its own configurations; with equality of values decidable, "
+    "completeness is exactly all values being equal; a registration keeping what it says and next "
+    "saying its gap is incomplete at every step, says no later gap earlier, has no two gaps alike "
+    "where likeness is transitive, never returns, and holds its gaps in no finite stock where "
+    "likeness is symmetric and transitive, and such an unfolding exists on Bool; revision by a map "
+    "moving every value never rests, and the two-valued denial returns every two steps. "
+    "Context: registrations in contexts glue at a configuration exactly where any two contexts "
+    "registering a claim agree, each claim having a context; a frame of context-free claims fits "
+    "exactly where they glue at every configuration, while the frame indexed by context always fits; "
+    "where possibilities are local and admit no context-free reading no respecting configuration "
+    "glues, and no frame of context-free claims fits a world with one respecting configuration; a "
+    "whole lies within what its restrictions glue to, restrictions are local, and possibilities with "
+    "no context-free reading, where some context allows something, are the restrictions of no whole; "
+    "Specker's three boxes and the Mermin-Peres square admit no context-free reading, no context "
+    "forcing a claim. "
+    "Quantum: the nine two-qubit observables of the Mermin-Peres square, as integer matrices, each "
+    "square to the identity, commute along each line and anticommute off it, and multiply along a "
+    "line to minus the identity in the third column and to the identity otherwise; the values a "
+    "nonzero vector shows jointly on a line have the line's parity and are a possibility of the "
+    "line, every possibility is shown by an explicit vector, and no assignment to the nine cells is "
+    "shown jointly on every line. "
     "Renewal: a run read through observables of conditions is one relational unfolding; an observable "
     "that never rises from some step on falls only finitely often, with depletion, recurrent renewal "
     "under a natural-number rank and unrenewed drawdown as its cases; in one process from one "
@@ -1101,6 +1125,24 @@ SCOPE = (
     "data selects through agreement on the data, within a class free at an input every selection "
     "through the data leaves every value there selected, and every member fitting a world of the "
     "class is right at an input exactly where the data determine it. "
+    "Description: describing the parts separately gives back a whole of two parts exactly where it "
+    "is rectangular, and two parts that always go alike can go apart; three parts can be related "
+    "while every two are free, and on Specker's pairs every reading is allowed by every pair while "
+    "the pairs do not give the whole back; a law moving each part by itself keeps a whole "
+    "rectangular, copying relates, a relation lasts under laws merging nothing that occurs and ends "
+    "by forgetting or by a coupling acting again; under a determined law read through a "
+    "registration, a split keeping what is registered and going alike relates configurations by a "
+    "bisimulation and the coarsest one makes sense, what is registered now makes sense exactly where "
+    "it goes alike with the law, a registered part alone exactly where the rest makes no difference "
+    "to its next value, and for a rule changing with it exactly where the rule makes none; "
+    "registering position under motion the pair makes sense and neither alone; moments of a "
+    "registered sequence are one state where all registered after them is alike, which is likeness "
+    "under the law of moments, and there are finitely many states exactly where two moments are one "
+    "state, by a pigeonhole up to a relation with no decision; a returning configuration has finitely "
+    "many states under every registration, and the two-valued denial has exactly two"
+    "; going alike under a determined law is Learning's lumping, and a lasso is two moments being "
+    "one state, so finitely many states is a lasso"
+    ". "
     "Boundaries: along a relation a boundary of a formation is a region holding it that is closed "
     "under the relation, the closure the least and the whole the greatest, and the only one where "
     "everything lies within the closure; a claim about a drawn region is super-true when it holds "

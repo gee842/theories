@@ -6185,6 +6185,248 @@ Integration: 目标 wisdom-root 的 next_delta 与边界随之修订；testing-w
 4. **没有新的 Lean。** 本节是整合；它的新信用只在 §92 的 P73 与 P74。
 
 
+## 94. 描述保留什么、失去什么：分离、关系的生灭与有意义的切分（P70）
+
+2026-10-12。在对话的第三个分支上，Ren 说：描述似乎把整体分开，用词造出一个投影，失去了什么（“i feel there is something i can't quite describe, but what i describe seems to separates the whole and creates a projection using words? doesn't this feels like wave/particle, 道可道非常道, i somehow feel the framing may lose something”）；又问：“maybe change(now) -> future … maybe it is a whole, like 阴阳, change and state/relation is by itself an separation already … but it has to be an splitting that make sense - and what is that "make sense" itself? what makes a pair, a pair?”。AI 回答之后，Ren 说“push the frontier, as far as possible, i am going to sleep, good luck”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。之后 Ren 要求就“What makes two a pair, then, is relation, in what can go together or in how they go on”再往深处挖，并纠正 AI 对道可道的读法：“i was speculating there is a "truth", but when we model it, projection is the limitation - i am not sure if this is right, i also speculate the full "truth" can be derived, situationally, including the cognition/controller part.”。AI 以本节与 §95、§96 的定理检验这一推测，Ren 答：“keep prove to the deepest, i agree with your last reply(just saw), be smart, resolve and connect things elegantly. and for the open questions, if they need to be answered to move forward, answer them”（同一来源）。本节在工作板上认领为 P70。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Description`（L4），53 项定理，导入 `Becoming.Unfolding`（P69）、`Becoming.Diagonal`（P71）与 `Becoming.Context`（P72），以及 `Becoming.Learning`（P73），不改任何已有模块。
+
+成果记录新增两项：[separation-loses-the-relation](../../../../theories/becoming/results/records/separation-loses-the-relation.md)（分离与关系的生灭）与 [the-split-that-makes-sense](../../../../theories/becoming/results/records/the-split-that-makes-sense.md)（相对于所识有意义的切分，与从一段所识的历史读出的状态）。
+
+```text
+Result(s): 复用 configurations-alike-by-relation（Bisimulation、Alike、MakesSense、makesSense_iff、makesSense_id_iff、
+           Law.registered、Law.SameFuture、Law.alike_iff_sameFuture、Law.MakesSense.carries）、projection-carrying-a-law
+           （GoAlike、goAlike_const、carries_law_iff、adaptive、adaptive_state_law_iff）、recurrence-without-premise
+           （Law.orbit、Law.orbit_add、Law.succ_orbit、Law.Returns、skipAt、le_succ_cases）、
+           registration-within-what-it-registers（Diagonal.revision_never_rests、Diagonal.flip_moves）、
+           contextual-registration（restrict、Glued、PartsDetermine、Specker.Box、Specker.within、Specker.no_whole）；
+           新增上列两项
+Delta: 分离：Rectangular、Separated、separated_of_whole、separation_faithful_iff、separation_surplus、flipIf、EvenThree、
+       whole_not_in_pairs、evenBoxes、flipIf_self、even_first、even_third、evenBoxes_glued、evenBoxes_not_determined。
+       关系的生灭：imageOf、Rectangular.image_of_separate、copy_relates、Rectangular.of_image_injective、relation_persists、
+       forgetting_unrelates、couple、couple_couple、coupling_relates_and_unrelates。有意义的切分：Law.goAlike_process_iff、
+       Law.kernel_bisimulation、Law.sameFuture_of_law、Law.makesSense_of_law、Law.const_makesSense_iff、
+       Law.now_makesSense_iff、Law.whole_makesSense、Law.part_makesSense_iff、Law.sameFuture_of_goAlike、
+       Law.now_makesSense_iff_goAlike、Law.part_makesSense_iff_step、Law.adaptive_makesSense_iff。一对：Motion（cancel、
+       move、move_adaptive、makes_sense、standing_alone、passing_alone、neither_alone、still、orbit_still、
+       still_makes_sense）。从一段所识的历史读出的状态：SameAhead、SameAhead.refl、SameAhead.symm、SameAhead.trans、
+       SameAhead.next、sameAhead_orbit_iff、SameAhead.new_each、alike_moments_iff、split_top、shared_below、StatesBelow、
+       statesBelow_of_same、finitely_many_states_iff、Law.Returns.states、Denial（register、zero_two、two_states、
+       each_through_other）
+Supplied premises / correspondence: 不加公理，也不加前提；separation_faithful_iff、Law.now_makesSense_iff_goAlike、
+       Law.part_makesSense_iff_step、alike_moments_iff 与 finitely_many_states_iff 是双向的，对每个整体、每条确定的律或
+       每段所识的序列成立；局部条件写在定理之中：relation_persists 要两个部分的律在出现者上不合并，Law.makesSense_of_law
+       要切分保留所识、承载规律并且最粗，Law.Returns.states 要构型返回；“有意义”沿用 P69 的定义；所识是给出的读法；
+       离散的步（表示的承诺）；读法是 AI 的，Ren 同意的是 06:01 之前那次回答
+Evidence: 合并检查器回执 20261013T084405.661795Z（Becoming.Description 53 项定理，全部源声明公理报告为空），外围回执 20261013T084521.070057Z
+Boundary: 只陈述确定的律下有意义的切分；有分支的框架下由 P69 的 Alike 陈述，没有在此重述。有意义的描述作为值（给每个类
+          一个名字）存在，没有陈述：类作为关系总在（SameFuture、SameAhead），命名它们一般要商（Quot.sound）。有限的记录能否
+          固定状态，不在此陈述（P73）。关系只对两个部分的整体陈述；奇偶在三个部分上作为见证。不含伦理谓词
+Integration: 计划 P70；回答 Ren 关于框架失去什么、什么使切分有意义、什么使一对成为一对的问题，并检验 Ren 的推测
+             （真存在，限制在投影，完整的真可按情境推出，认知或控制者在内）；建在 P69 的 MakesSense 与 Alike 上，
+             以 P66 的 adaptive 陈述控制者，以 P71 的节律推出否定的两个状态，以 P72 的部分与整体陈述奇偶；
+             状态有限恰是所识从某一刻起重复，即 P73 的 Lasso（`lasso_iff_sameAhead`、`finitely_many_states_iff_lasso`）；`Law.goAlike_process_iff` 是 P73 的 `goAlike_iff_lumped` 的实例（两者各自写成，P73 先落地）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Rectangular`、`Separated`、`separated_of_whole`、`separation_faithful_iff` | 两个部分的整体是矩形的，指与一个部分同在的，与另一部分的每一项同在；分离的描述只说每个部分能是什么；它保留每个出现的组合，恰在整体是矩形时给回整体 |
+| `separation_surplus` | 总是同去的两个部分，分别描述时可以分开：失去的关系作为多余重现 |
+| `flipIf`、`EvenThree`、`whole_not_in_pairs` | 三个部分作为整体相关（奇偶为偶），任意两个都是自由的：描述每一对仍失去它 |
+| `evenBoxes`、`flipIf_self`、`even_first`、`even_third`、`evenBoxes_glued`、`evenBoxes_not_determined` | 同一关系放在 Specker 的三个盒子与三对之上（`Becoming.Context`）：每个读法都被每一对容许，诸对不给回整体；同样的三对上 Specker 的可能性不是任何整体的部分（`Specker.no_whole`）：部分失去整体的两种方式 |
+| `imageOf`、`Rectangular.image_of_separate`、`copy_relates` | 律从一个整体通到的配置；各自移动每个部分的律从不使无关的部分相关；把一个部分复制进另一部分的律使它们相关 |
+| `Rectangular.of_image_injective`、`relation_persists` | 关系形成之后，在各自移动每个部分、在出现者上不合并的每条律下持续 |
+| `forgetting_unrelates` | 忘掉一个部分（把它送到一个值）使关系结束 |
+| `couple`、`couple_couple`、`coupling_relates_and_unrelates` | 例：一次耦合使两个部分相关，再作用一次使它们不再相关，两次都不失去什么；`couple` 是双射，结束关系的是它共同作用于两个部分 |
+| `Law.goAlike_process_iff`、`Law.kernel_bisimulation`、`Law.sameFuture_of_law`、`Law.makesSense_of_law` | 确定的律下，同去就是把被等同者带到被等同者；保留所识并承载规律的切分以互模拟联系配置，不失去所识的任何东西；最粗的这样的切分有意义 |
+| `Law.const_makesSense_iff`、`Law.whole_makesSense` | 什么都不分的切分总承载规律，只在所识从不不同时有意义；识得一切时，配置自身是有意义的切分 |
+| `Law.now_makesSense_iff`、`Law.sameFuture_of_goAlike`、`Law.now_makesSense_iff_goAlike` | 现在所识者自身有意义，恰当它承载规律，这是一步上的条件；等价地，恰当它固定自己所识的未来 |
+| `Law.part_makesSense_iff`、`Law.part_makesSense_iff_step`、`Law.adaptive_makesSense_iff` | 所识的部分单独有意义，恰当其余对它的下一值不造成差别；否则有意义的切分含有其余；下一值由随之改变的规则给出时，恰是规则对它不造成差别（`adaptive_state_law_iff` 的条件） |
+| `Motion.move`、`Motion.move_adaptive`、`Motion.makes_sense`、`Motion.standing_alone`、`Motion.passing_alone`、`Motion.neither_alone` | 所立者按所经者变化，如位置按速度；只识所立者时，有意义的切分是这一对；所立者单独不承载规律，所经者单独失去所立者，所以两者单独都没有意义（`Motion.cancel` 是不用 `propext` 的相消） |
+| `Motion.still`、`Motion.orbit_still`、`Motion.still_makes_sense` | 没有什么经过时，所立者单独有意义：一对是一 |
+| `SameAhead`、`SameAhead.refl`、`SameAhead.symm`、`SameAhead.trans`、`SameAhead.next` | 一段所识的展开中，两个时刻是同一状态，指其后所识的一切相同；这是等价关系，并作为自身继续：状态与它们的律从历史读出，不给配置 |
+| `sameAhead_orbit_iff`、`SameAhead.new_each` | 沿轨道读，同一状态就是所识的未来相同；每个时刻所识都不同时，每个时刻是自己的状态 |
+| `alike_moments_iff` | 每段所识的历史都是一条确定的律经所识而读：时刻之律，每个时刻走向下一个，只用步的相继（表示的共同步序）；它的相同的时刻恰是同一状态的时刻（经 `Law.alike_iff_sameFuture` 与 `Law.succ_orbit`） |
+| `split_top`、`shared_below` | 不加判定的、按关系的鸽笼：前 L + 1 个时刻每个都与某个小于 L 的值相关时，有两个与同一个值相关（照 `revisits_within` 的证明，以关系代替相等） |
+| `StatesBelow`、`statesBelow_of_same`、`finitely_many_states_iff` | 两个时刻是同一状态时，每个时刻是较晚者之前某时刻的状态；所识的历史状态有限，恰当它有两个时刻是同一状态，即所识从某刻起重复 |
+| `Law.Returns.states` | 返回的构型在每个识读之下状态有限 |
+| `Denial.register`、`Denial.zero_two`、`Denial.two_states`、`Denial.each_through_other` | 二值的否定（`Becoming.Diagonal` 中从不静止的修正）恰有两个状态：前两个不同，因为修正从不静止（`Diagonal.revision_never_rests`）；第三个回到第一个，每个时刻是二者之一（`statesBelow_of_same`）；每个经另一个定义 |
+
+**它回答了什么。**
+- **分离恰失去关系。** 分别描述各部分，保留每个出现的组合，恰在整体是矩形时给回整体（`separation_faithful_iff`）；失去的关系作为多余重现（`separation_surplus`）。关系可以在整体之中而不在任何一对之中（`whole_not_in_pairs`）。放在 Specker 的盒子上，这是部分失去整体的两种方式之一：奇偶是诸对不给回的整体（`evenBoxes_not_determined`），同样的诸对上 Specker 的可能性不是任何整体的部分（`Specker.no_whole`，§96）。
+- **关系在共同的律中形成、持续与结束。** 各自移动每个部分的律，无论有损与否，从不使无关者相关（`Rectangular.image_of_separate`）；复制使它们相关（`copy_relates`）。关系一旦形成，在各自移动每个部分、在出现者上不失去什么的每条律下持续（`relation_persists`）；所以它只由出现者之内的失去结束，例如忘掉一个部分（`forgetting_unrelates`），或由共同作用于各部分者结束：同一次耦合再作用一次，就使它们不再相关，两次都不失去什么（`coupling_relates_and_unrelates`）。“能一起是什么”与“怎样一起继续”是同一关系的两面：前者是后者在一刻的记录，相关是一次相遇的记忆。
+- **什么使切分有意义。** 有意义沿用 P69：恰把相同者等同（`MakesSense`）。确定的律下，保留所识并承载规律的切分不失去所识的任何东西，最粗的这样的切分有意义（`Law.makesSense_of_law`）；承载规律不够：什么都不分的切分总承载规律，只在所识从不不同时有意义（`Law.const_makesSense_iff`）。识得一切，配置自身就是有意义的切分（`Law.whole_makesSense`）。现在所识者自身有意义，恰当它承载规律，这是一步上的条件（`Law.now_makesSense_iff_goAlike`；一步的形式由 P66 所有者的审查给出）。
+- **什么使一对成为一对。** 所识的部分单独有意义，恰当其余对它的下一值不造成差别；否则有意义的切分含有其余（`Law.part_makesSense_iff_step`）。其余可以是所经者、规则或控制者：下一值由随之改变的规则给出时，恰是 `adaptive_state_law_iff` 的条件（`Law.adaptive_makesSense_iff`）。所立者按所经者变化时，两者单独都没有意义，这一对有（`Motion.neither_alone`、`Motion.makes_sense`）；没有什么经过时，一对是一（`Motion.still_makes_sense`）。所以两个是一对，恰在一个展开的律不在它们之间分开（相遇过而没有忘记），并且所识把它们分开；两个条件都是关系，“二”在关系之后。
+- **除了步的相继，一个展开有律不是前提。** 每段所识的历史都是一条确定的律经所识而读，即时刻之律，它只用步的相继，即表示的共同步序；它的相同的时刻恰是同一状态的时刻（`alike_moments_iff`）。状态与它们的律从历史读出（`SameAhead.next`）。状态有限，恰当有两个时刻是同一状态，即所识从某刻起重复（`finitely_many_states_iff`）；返回的构型在每个识读下状态有限（`Law.Returns.states`）。所以“世界是否有律”不是一个是或否的前提：每个展开在最细的描述下有律，律的内容是它的压缩，即有意义的切分需要多少状态。二值的否定恰有两个状态，每个经另一个定义（`Denial.two_states`、`Denial.each_through_other`），这就是 §95 的节律。
+
+**Ren 的推测怎样被检验。** Ren 推测：有一个真；建模时投影是限制；完整的真可以按情境推出，认知或控制者在内。按本节与 §95、§96 的定理（AI 的组织；Ren 同意了这次回答，见上）：
+- **失去在投影。** 核心找到的每一种失去都属于一个投影，每一种都有不失去的对应：分别描述各部分恰失去关系，共同的描述不失去（`separation_faithful_iff`）；不依语境的值恰在语境不粘合处失败，以语境为索引的值总合（`Contextual.fitsFree_iff`、`Contextual.indexed_fits`）；把相同者之外的也等同的描述，恰在不满足 `MakesSense` 时失去，有意义的切分不失去。
+- **按情境的真是确切的，不是部分的。** 固定所识，不失去的切分由律固定、唯一并承载规律（P69）；识得一切，它就是配置自身（`Law.whole_makesSense`）。
+- **控制者在内。** 改变自身规则的系统是一个确定的过程（`adaptive_determined`，P66）；它按情境的真恰在控制者对所识造成差别处含有控制者（`Law.adaptive_makesSense_iff`）。
+- **三处精化。** 存在的真是关系的：在语境世界中不依语境的值根本不存在（§96）。从内部，任何给定的真都可推出，但不能一次全部：在所识之中的识不能持有自己的每个读法，补全它是永不封闭的展开（§95）。运动的自指循环没有静值，它的真是运动本身，一个状态有限的节律（`Denial.two_states`）。
+- **答复中的三个未决问题。** 展开是否有律：如上，不是前提（`alike_moments_iff`、`finitely_many_states_iff`）。有限的记录能固定什么：记录不固定下一值，状态有限的世界中也不，学习只在状态有限处到达静止，何时静止不被识（P73 的 `no_record_fixes_next_finite` 与 `comes_to_rest`，由其所有者陈述，这里不重证）。给类命名：不阻碍推进，类作为关系（`SameAhead`、`Law.SameFuture`）总在，核心的每条定理都以关系陈述；命名一般要商，那是表示上的又一个投影。
+
+**读法。** 以下是 AI 的，待 Ren；Ren 06:01 同意了包含它们的那次回答，这不使它们成为 Ren 的读法：
+- “描述扣除了什么”：扣除的恰是所切者之间的关系，与使描述有意义所需的、所识之外的差别。不扣除的描述总在：共同的、以语境为索引的、有意义的切分。
+- 阴阳：所立者与所经者是一对，两者单独都没有意义（`Motion.neither_alone`）；否定的两个状态每个经另一个定义（`Denial.each_through_other`），这有互根与转化的形式。“变化与状态本身已是一个分离”：状态是“其后怎样继续”的类，变化是这些类的继续，两者经对方定义。
+- 三生万物：三是整体能持有任何部分都不持有的关系的最小数目（`whole_not_in_pairs`）。
+- 认识者之内的真：一个认识者所识的部分单独有意义，恰当它自己不造成差别；它造成差别时，按情境的真含有它。
+
+**作者反审。**
+1. **多数定理很短。** `separation_faithful_iff`、`forgetting_unrelates`、`Law.whole_makesSense` 各只几行。增量在于两个方向都证明、条件写得最弱（不合并只要求在出现者上）、以及这些结果连成一条线：分离、关系的生灭、有意义的切分、一对、从历史读出的状态。
+2. **有意义的切分只对确定的律陈述。** 有分支的框架由 P69 的 `Alike` 与 `MakesSense` 陈述；`Law.makesSense_of_law` 与 `Law.part_makesSense_iff_step` 没有对它们重述。
+3. **“世界有律”被回答的方式是读法上的。** 时刻之律的确定性是平凡的：每个时刻只有一个下一时刻。内容在于相同的时刻恰是同一状态（`alike_moments_iff`），以及状态有限恰是从某一刻起重复（`finitely_many_states_iff`）。它没有说任何实际展开状态有限。
+4. **耦合的例子是一个。** `coupling_relates_and_unrelates` 是 Bool × Bool 上的一个见证；一般的陈述是 `relation_persists` 的逆否：各自移动每个部分且不失去什么的律从不结束关系。哪些共同的律保持矩形，没有刻画。
+5. **关系只对两个部分陈述。** `Rectangular` 是二元的；三个部分的关系以奇偶为见证，一般的“部分给回整体”由 §96 的 `PartsDetermine` 陈述，`separation_faithful_iff` 不是它的实例（两个部分的类型不同）。
+6. **有意义的描述作为值没有构造。** 状态有限时，给每个状态一个名字，要判定时刻是否同一状态，`SameAhead` 量化全部未来，一般不可判定。核心以关系陈述，这是选择，也是边界。
+7. **审查的贡献。** 一步形式的 `Law.sameFuture_of_goAlike`、`Law.now_makesSense_iff_goAlike` 与 `Law.part_makesSense_iff_step`、不合并只在出现者上、`no_free_frame` 只要一个配置，都来自“Cause–effect system theory comparison”（P66 的所有者）的审查；第二次审查指出时刻之律依赖共同步序、`no_whole` 要某个语境允许某物、`Unfolds.incomplete` 就是每一步的 `gap_unsaid`，并指出 `shared_below` 推广 `revisits_within`；作者采纳并检查。
+8. **与 P73 的关系。** P73 先落地，所以由本节写出同一：`Law.goAlike_process_iff` 与 `Becoming.Learning` 的 `goAlike_iff_lumped` 是同一定律，各自写成、证明相同，这里取为它的实例（名称与陈述不变）；P73 的 Lasso 就是两个时刻是同一状态（`lasso_iff_sameAhead`），所以状态有限就是 Lasso（`finitely_many_states_iff_lasso`）。本模块因此导入 `Becoming.Learning`，在 L4。
+
+**检查。**
+- 模块在暂存区对 main 的核心、P64–P68（`Becoming.Mechanism`）与 P69 包（`Becoming.Unfolding`，sha256 46c3d049…）编译，没有错误或警告；逐条审计全部常量，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。不用 `simp`、`omega`；相消用自己的 `Motion.cancel`，因为 `Nat.add_right_cancel` 依赖 `propext`。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T084405.661795Z。`Becoming.Description` 的 53 项定理全部空依赖；包共 3114 项定理、4559 项声明审计，核心闭包 63 个模块。外围回执 20261013T084521.070057Z。
+- 独立审查：“Cause–effect system theory comparison” 2026-10-12 审查了三个模块的 Lean（Description `6af48ab0`、Diagonal `c98eb6a8`、Context `a655aa36`），没有发现错误，提出的加强与修正均已采纳（见反审 7）；同日又审查了其后加入的部分（Description `10d7b043`、Context `349fbc63`、Diagonal `e14821d9`，对前一版本作差）：本模块的“从一段所识的历史读出的状态”、Specker 盒子上的奇偶与 Context 的“整体与其部分”，读了证明而没有重新编译，没有发现错误，四处措辞已改（见反审 7）。最终版本由作者以共享的暂存构建编译并审计。
+
+
+## 95. 在所识之中的识：对角线、补全的展开与没有静值的节律（P71）
+
+2026-10-12，同一来源（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。Ren 说框架似乎失去了什么，提到“道可道非常道”；AI 的回答指出第三种失去：一个世界对自身的识由它的部分作出，部分在所识者之中。Ren 后来纠正：“i was speculating there is a "truth", but when we model it, projection is the limitation … i also speculate the full "truth" can be derived, situationally, including the cognition/controller part.”。本节检验其中“从内部”的一半。本节在工作板上认领为 P71。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Diagonal`（L2），26 项定理，导入 `Becoming.Recurrence`，不改任何已有模块。外围的 `RootCoverageBoundary`（数学抽象，`CoverageBoundary.lean`，导入 `Std`）有同一对角线的函数与谓词形式；本模块在核心中不用公理重述它，并加上完备恰在没有差别处、补全的展开与节律。
+
+成果记录新增一项：[registration-within-what-it-registers](../../../../theories/becoming/results/records/registration-within-what-it-registers.md)。
+
+```text
+Result(s): 复用 recurrence-without-premise（Law.orbit、Law.Returns、gap_of_lt；保留历史从不返回的
+           Law.withHistory_never_returns、Law.withHistory_unlisted 作为类比引用）；Becoming.Frame 的 Frame 与 realized；
+           新增上列一项
+Delta: 缺口：Diagonal.Says、Diagonal.gap、Diagonal.Moves、Diagonal.gap_unsaid、Diagonal.fixed_of_complete、
+       Diagonal.Says.congr。主张：Diagonal.moves_not、Diagonal.claims_incomplete、Diagonal.claims_gap、
+       Frame.self_incomplete。恰在没有差别处：Diagonal.alike_of_complete、Diagonal.complete_of_alike、
+       Diagonal.complete_iff_alike。补全是展开：Diagonal.Unfolds、Diagonal.Unfolds.keeps_on、Diagonal.Unfolds.incomplete、
+       Diagonal.Unfolds.gap_new、Diagonal.Unfolds.gaps_differ、Diagonal.Unfolds.never_returns、Diagonal.two_ne_odd、
+       Diagonal.stock_unheld、Diagonal.Unfolds.unheld；见证：Diagonal.unfolding、Diagonal.unfolding_fresh、
+       Diagonal.unfolding_zero、Diagonal.flip_moves、Diagonal.unfolding_unfolds、Diagonal.unfolding_open。节律：
+       Diagonal.revision_never_rests、Diagonal.denial_never_rests、Diagonal.denial_returns
+Supplied premises / correspondence: 不加公理，也不加前提；gap_unsaid、claims_incomplete、Unfolds 的各条与节律对每个
+       族、每个值的类型与每个“相同”成立；局部条件写在定理之中：alike_of_complete 要与一个值的相等可判定，
+       complete_iff_alike 要值的相等可判定，Unfolds.gaps_differ 要“相同”可传递，stock_unheld 要它对称、可传递
+       （下标上用自然数的判定，值上不判定）；“识”是一个以所读者为索引的族，这是给出的读法；读法是 AI 的
+Evidence: 合并检查器回执 20261013T084405.661795Z（Becoming.Diagonal 26 项定理，全部源声明公理报告为空），外围回执 20261013T084521.070057Z
+Boundary: 族以所读者为索引（A → A → B）；以别的东西为索引的识不在此陈述。不陈述哥德尔的不完备（那需要算术编码），
+          不陈述停机问题；“完备恰在没有差别处”是对以相等比较的值；对主张只有一个方向（从不完备）。节律只对二值的否定
+          给出周期 2；一般的修正只陈述从不静止。不含伦理谓词
+Integration: 计划 P71；回答 Ren 关于框架失去什么的问题中“从内部”的一半，并检验 Ren 的推测：从内部，任何给定的真可在
+             下一步说出，不能一次全部；外围 RootCoverageBoundary 的对角线在核心中重述；P70 以本模块的节律推出否定的
+             两个状态（Denial.two_states）
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Diagonal.Says`、`Diagonal.gap`、`Diagonal.Moves` | 族 ψ : A → A → B 说出读法 g，指某个成员 a 对每个 x 识得与 g x 相同的值；缺口：把每个成员对自身的识经 f 移动；f 移动每个值，指没有值与它的像相同 |
+| `Diagonal.gap_unsaid`、`Diagonal.fixed_of_complete` | f 移动每个值时，缺口不被任何成员说出（Lawvere 的对角线）；说出每个读法的族给每个映射一个与像相同的值：在所识之中包含自身是可以的（不动点、自复制程序的一面） |
+| `Diagonal.Says.congr`、`Diagonal.moves_not`、`Diagonal.claims_incomplete`、`Diagonal.claims_gap` | 主张从不与它的否定相同（构造的）；所以以所读者为索引的主张族不实现每种主张的模式；没有成员恰实现不实现自身的成员 |
+| `Frame.self_incomplete` | 主张就是自己的配置的框架：没有配置实现关于配置的每种主张模式 |
+| `Diagonal.alike_of_complete`、`Diagonal.complete_of_alike`、`Diagonal.complete_iff_alike` | 以相等比较的值：在所识之中的识说出每个读法，恰当值之间没有什么可分（一个方向只要与一个值的相等可判定，另一个方向只要一个成员与一个值） |
+| `Diagonal.Unfolds`、`Diagonal.Unfolds.keeps_on`、`Diagonal.Unfolds.incomplete` | 保留所识、下一步识得所漏者的识；它在每一步都不完备：缺的是该步自己的缺口 |
+| `Diagonal.Unfolds.gap_new`、`Diagonal.Unfolds.gaps_differ`、`Diagonal.Unfolds.never_returns` | 一个缺口在它自己那一步及之前都不被识；没有两个缺口相同；识从不返回：每个较晚的步识得某个较早的步都没有识得的 |
+| `Diagonal.two_ne_odd`、`Diagonal.stock_unheld`、`Diagonal.Unfolds.unheld` | 两两不同的读法不都与一个有限储存的成员相同（不在值上判定，按偶数位与奇数位对半）；所以没有有限的储存持有展开所漏的 |
+| `Diagonal.unfolding`、`Diagonal.unfolding_fresh`、`Diagonal.unfolding_zero`、`Diagonal.flip_moves`、`Diagonal.unfolding_unfolds`、`Diagonal.unfolding_open` | 这样的展开存在：第 n + 1 步由成员 n + 1 接住第 n 步的缺口；它从不封闭、从不返回，没有有限储存持有它所漏的 |
+| `Diagonal.revision_never_rests`、`Diagonal.denial_never_rests`、`Diagonal.denial_returns` | 以移动每个值的映射修正一个值，从不静止；否定自身的主张，修正在 Iff 之下从不静止；二值的否定每两步返回：说谎者读作修正，是最简单的节律，不是矛盾 |
+
+**它回答了什么。**
+- **从内部，什么不能被识。** 世界对自身的识由它的部分作出。以所读者为索引的族，对移动每个值的映射，漏掉一个确定的读法（`gap_unsaid`）；对主张，这总成立，因为主张从不与它的否定相同（`claims_incomplete`）。所以框架不能以自己的配置实现关于配置的每种主张（`Frame.self_incomplete`）。
+- **限制恰在有差别处。** 以相等比较的值，在所识之中的识说出每个读法，恰当值之间没有什么可分（`complete_iff_alike`）。所以限制不在“自身包含”：说出每个读法的族给每个映射一个不动点（`fixed_of_complete`），在所识之中包含自身是可以的。限制在把每个读法同时持有在一个内部的描述中。
+- **补全是展开。** 下一步可以识得所漏者（`Unfolds`），但那一步又漏掉新的（`Unfolds.incomplete`、`Unfolds.gap_new`），没有两个缺口相同，识从不返回（`Unfolds.never_returns`），没有有限储存持有所漏的（`Unfolds.unheld`）。这样的展开存在（`unfolding_unfolds`、`unfolding_open`）。像保留的历史（`Law.withHistory_never_returns`），它从不返回，不能被有限储存持有。
+- **没有静值，是节律。** 说谎者读作修正：从不静止（`revision_never_rests`、`denial_never_rests`），二值时每两步返回（`denial_returns`）。P70 从同一节律读出恰两个状态，每个经另一个定义（`Denial.two_states`）。“悖论”是一个运动之真的静止投影。
+
+**读法。** 以下是 AI 的，待 Ren；Ren 06:01 同意了包含它们的那次回答：
+- 对 Ren 的推测：从内部，任何给定的真都可以在某个情境（下一步）说出，不能从一个情境全部说出；限制又一次在投影，即试图把整体持有在它之中的一个描述里，不是在真之外还有什么。
+- 庄子“一与言为二，二与一为三。自此以往，巧历不能得”有 `Unfolds` 的回退形式。
+- 自我预测：预测被宣布进它所预测者、而回应离开每个宣布时，没有静止的预测是对的（`revision_never_rests`）；循环的真是它的节律。认知或控制者可以被包含在真之中，但宣布在循环之内的静止的自我预测不能总是它的一部分。
+- 早先把道可道读作“说不尽”，是 AI 的读法，不是 Ren 的；Ren 的推测见 §94。
+
+**作者反审。**
+1. **核心是一个已知的论证。** Lawvere 的不动点定理（1969）及其前身康托尔、罗素、哥德尔、塔斯基；外围已有 `RootCoverageBoundary`。增量是在核心中不用公理、不判定值，加上完备恰在没有差别处、补全的展开从不返回且不被有限储存持有，以及节律。P73（`Becoming.Learning`）的 `diagonal_refutes` 与 `diagonal_unrested` 是学习者的形式：对记录上的每个主张映射，一个逐步建成的历程以移动后的值回答每个主张；它与 `gap_unsaid`、`revision_never_rests` 同形而对象不同，两者各自写成，这里只记下这一关系，不陈述为定理。
+2. **不是哥德尔。** 这里的“识”是任意以所读者为索引的族，没有算术编码与可证性；不完备定理没有陈述。
+3. **`complete_iff_alike` 一个方向要判定。** 从完备推出值没有差别，要与一个值的相等可判定；对主张只陈述从不完备（`claims_incomplete`）。
+4. **`stock_unheld` 在下标上判定。** 它用自然数下标的相等判定（`decEq i L`），不在值上判定；“不判定”指值。
+5. **节律只对二值的否定是周期的。** 一般的修正只陈述从不静止；它是否返回取决于值的世界（`Becoming.Recurrence`：有限多值中，不合并的修正都返回）。
+6. **审查的贡献。** `Unfolds.incomplete` 取展开为参数（它就是每一步的 `gap_unsaid`，对任何族的序列成立，文档说明这一点）、`Frame.self_incomplete` 移出 `Diagonal`、去掉重复的双重否定（用前导的 `Bool.not_not`）、文档的措辞，来自 P66 所有者的审查。
+
+**检查。**
+- 模块在暂存区对 main 的核心编译，没有错误或警告；逐条审计全部常量，公理报告全部为空；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。`if_pos`、`if_neg` 只用于自然数相等的判定。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T084405.661795Z。`Becoming.Diagonal` 的 26 项定理全部空依赖。外围回执 20261013T084521.070057Z。
+- 独立审查：P66 的所有者 2026-10-12 审查了 `c98eb6a8` 版本，没有发现错误，又审查了 `e14821d9`；其后的改动只是审查所建议的（见反审 6）。
+
+
+## 96. 语境中的识：粘合、不依语境的主张作为承诺，与部分失去整体的两种方式（P72）
+
+2026-10-12，同一来源（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)）。Ren 问框架失去的东西是否像“wave/particle”。AI 的回答指出：核心的 `Frame` 在类型上不依语境，一个主张被识得什么，不取决于与它一起被识的是什么；而在 Specker（1960）与 Kochen–Specker（1967）的世界中，不依语境的值根本不存在。AI 提出把它作为一项陈述，Ren 答“push the frontier, as far as possible”。本节在工作板上认领为 P72。它不加公理，也不加前提，属于第一部分。核心新增模块 `Becoming.Context`（L2），28 项定理，导入 `Becoming.Frame`，不改任何已有模块；量子实现 `Becoming.Quantum`（37 项定理，只导入本模块）由“Cause–effect system theory comparison”（P64–P68 的所有者）作为 P72q 写成并检查，随本节落地。
+
+成果记录新增一项：[contextual-registration](../../../../theories/becoming/results/records/contextual-registration.md)。
+
+```text
+Result(s): 复用 Becoming.Frame 的 Frame、Process 与 realized；新增上列一项
+Delta: 语境中的识：Contextual、Local、NoGlobal、Unforced。粘合：Contextual.Glues、Contextual.Agree、Contextual.Glues.agree、
+       Contextual.glues_iff_agree。框架：Contextual.indexed、Contextual.indexed_fits、Contextual.FitsFree、
+       Contextual.fitsFree_iff。可能性不粘合之处：Contextual.Respects、Contextual.not_glues、Contextual.no_free_frame。
+       整体与其部分的读法：restrict、Glued、PartsDetermine、glued_of_whole、restrict_local、no_whole。
+       Specker 的三个盒子：Specker（Box、Opening、first、second、within、support、local_、three_do_not、noGlobal、marks、
+       marks_self、marks_other、flip_ne、unforced、world、respects、not_glues、no_whole）。Mermin–Peres 方阵：Square（Cell、
+       i0、i1、i2、Line、within、at_、within_at、parity、odd、support、local_、nine、noGlobal、pos、pos_at、at_pos、fill、
+       fill_parity、unforced、no_whole）。量子实现（P72q，Becoming.Quantum）：obs、obs_sq、row_commute、column_commute、
+       line_commute、off_line_anticommute、row_product、column_product、line_product、Shows、obs_signed、mulVec_obs、
+       line_parity、shows_support、line_realized、support_shown、no_context_free_values 等
+Supplied premises / correspondence: 不加公理，也不加前提；glues_iff_agree 与 fitsFree_iff 是双向的，要每个主张有一个
+       识它的语境（home、covers）；not_glues 要可能性是局部的、没有不依语境的读法、配置尊重可能性；no_whole 要可能性
+       非空；语境、主张与可能性是给出的读法；Quantum 以整数矩阵与整数本征向量给出，只覆盖这个方阵（九个可观测量都是
+       实的）；读法是 AI 的
+Evidence: 合并检查器回执 20261013T084405.661795Z（Becoming.Context 28 项定理、Becoming.Quantum 37 项定理，全部源声明
+          公理报告为空），外围回执 20261013T084521.070057Z
+Boundary: 只陈述有限的见证与一般的粘合定理；不陈述一般的层论、Abramsky–Brandenburger 的完整框架、概率（Bell 不等式）
+          或希尔伯特空间；Quantum 不是测量的理论，Born 权重没有陈述；“世界在语境中”是表示上的选择：以语境为索引的
+          框架总合，代价是在两个语境中被识的主张是两个主张。不含伦理谓词
+Integration: 计划 P72（含 P72q）；回答 Ren 关于 wave/particle 的问题；把“不依语境的主张”记为表示的承诺（零前提计划的
+             表示承诺之一，由整合者决定是否列入）；部分失去整体的两种方式与 P70 的奇偶（evenBoxes_not_determined）在
+             同样的三对上相接
+```
+
+| 声明 | 内容 |
+|---|---|
+| `Contextual`、`Local`、`NoGlobal`、`Unforced` | 在语境中被识的主张：哪个语境识哪些主张，每个配置上它识得什么；一个语境能显示什么只取决于它所识的主张；没有不依语境的读法落在每个语境的可能性之内；没有语境强制任何主张：每个主张在识它的每个语境中都能显示每个值 |
+| `Contextual.Glues`、`Contextual.Agree`、`Contextual.Glues.agree`、`Contextual.glues_iff_agree` | 在配置 s 处诸识粘合：有一个不依语境的读法与每个语境在其所识的每个主张上一致；它们粘合恰当识同一主张的任意两个语境识得相同 |
+| `Contextual.indexed`、`Contextual.indexed_fits` | 连同语境读，每次识都是一个框架的主张（语境、主张、值）；以语境为索引的框架合于每次识 |
+| `Contextual.FitsFree`、`Contextual.fitsFree_iff` | 不依语境的主张的框架合于诸识，恰当诸识在每个配置粘合 |
+| `Contextual.Respects`、`Contextual.not_glues`、`Contextual.no_free_frame` | 可能性局部且没有不依语境的读法时，没有尊重它们的配置粘合；所以只要有一个配置尊重它们，没有不依语境的主张的框架合于这个世界，而以语境为索引的框架合 |
+| `restrict`、`Glued`、`glued_of_whole`、`restrict_local` | 整体的可能性在一个语境中允许什么；各语境的描述粘合成什么；整体在它的部分粘合成者之内；整体在语境中允许的是局部的 |
+| `PartsDetermine`、`no_whole` | 部分给回整体；没有不依语境的读法、某个语境允许某物的可能性不是任何整体的部分（不用局部性）：部分失去整体的两种方式之二（之一是不给回，P70 的奇偶） |
+| `Specker.*` | 三个盒子，任意两个可以一起打开，打开的两个中恰有一个有宝石：每次打开的可能性是局部的，没有打开强制任何盒子（`Specker.unforced`），没有放置合于全部（`Specker.noGlobal`），每次打开都在第一个盒子显示宝石的世界尊重它们而不粘合（`Specker.respects`、`Specker.not_glues`），这些可能性不是任何整体的部分（`Specker.no_whole`） |
+| `Square.*` | 九个主张，三行三列，每条线识三个；每行与前两列的三个值奇偶为偶，第三列为奇：每条线的可能性是局部的，没有线强制任何格（`Square.unforced`），没有赋值合于全部六条线（`Square.nine`、`Square.noGlobal`），这些可能性不是任何整体的部分（`Square.no_whole`）；`Fin 3` 的数字字面量依赖 `propext`，所以位置取作 `i0`、`i1`、`i2` |
+| `Becoming.Quantum`（P72q） | 两个量子比特上的九个可观测量 X⊗I、I⊗X、X⊗X／I⊗Z、Z⊗I、Z⊗Z／X⊗Z、Z⊗X、Y⊗Y 作为整数 4×4 矩阵：每个平方为 I，每条线的三个两两对易，不共线的反对易，行乘积为 +I，列乘积为 +I、+I、−I（`line_product`）；态在一条线上共同显示的值是该线的一个可能（`shows_support`），每个可能都由一个明确的整数向量显示（`support_shown`）；所以没有对九个格的赋值在每条线上被量子态共同显示（`no_context_free_values`，由 `Square.noGlobal`） |
+
+**它回答了什么。**
+- **不依语境的主张是表示的承诺。** `Frame` 在类型上把主张读作不依语境。这里证明它何时合：恰在诸识在每个配置粘合时（`fitsFree_iff`），粘合恰是语境在相交处一致（`glues_iff_agree`）。以语境为索引的框架总合（`indexed_fits`）。
+- **有的世界在任何配置都不粘合。** Specker 的三个盒子与 Mermin–Peres 方阵：每个语境内一致，没有语境强制任何主张，没有不依语境的读法（`noGlobal`）；尊重它们的配置不粘合（`not_glues`），不依语境的主张的框架不合（`no_free_frame`）。量子比特实现这个方阵（`Becoming.Quantum`），所以量子的识属于这一类：Kochen–Specker 在两个量子比特上的形式（Mermin 1990、Peres 1990）。
+- **部分失去整体的两种方式。** 整体在它的部分粘合成者之内（`glued_of_whole`）。部分可以不给回整体：在 Specker 的三对上，奇偶是诸对不给回的整体（P70，`evenBoxes_not_determined`）；部分也可以允许没有整体有的：同样的三对上，Specker 的可能性不是任何整体的部分（`Specker.no_whole`，`Square.no_whole`）。这是层的两个条件（唯一与粘合）在可能性上的形式。
+
+**读法。** 以下是 AI 的，待 Ren；Ren 06:01 同意了包含它们的那次回答：
+- 波与粒子：两种图像都不是真；每一种是向不依语境的值的投影，以语境为索引的陈述合。值是在语境中的识，即关系。
+- Ren 的推测“有一个真”：在语境世界中，存在的真是关系的（主张在语境中），不是每个主张单独持有的值的表；不依语境的值的表根本不存在（`no_context_free_values`）。
+- 奇偶的统一：Specker、方阵与 P70 的奇偶都是奇偶的现象：每个主张在两个语境中，语境要求的奇偶之和为奇，就没有整体；整体的奇偶不在任何一对中，就不被诸对给回。这是读法（Mermin 的奇偶论证），没有作为一般定理陈述。
+
+**作者反审。**
+1. **见证是经典的。** Specker（1960）、Kochen–Specker（1967）、Mermin（1990）、Peres（1990）、Abramsky–Brandenburger（2011）。增量是在核心中不用公理陈述，并把不依语境的主张定为表示的承诺，连同它何时合的充要条件。
+2. **只有可能性，没有概率。** 这里是可能性的（“strong contextuality”）形式；Bell 型不等式与概率的语境性没有陈述。
+3. **Quantum 很窄。** 实矩阵、整数本征向量，只覆盖这个方阵；不是希尔伯特空间、测量或 Born 权重的理论。它检查的是算子代数与它和 `Square.support` 的连接。
+4. **`no_free_frame` 只要一个配置。** 不依语境的框架必须在每个配置粘合，所以一个尊重可能性的配置就足以排除它（审查后改弱）。
+5. **奇偶的统一没有证明。** 一般的“奇偶障碍”定理需要有限求和，没有陈述；三个见证各自由 `decide` 检查。
+6. **`PartsDetermine` 与 P70 的 `separation_faithful_iff` 不是实例关系。** 后者的两个部分类型不同；前者要求一个值的类型。
+
+**检查。**
+- `Becoming.Context` 在暂存区对 main 的 `Becoming.Frame` 编译，没有错误或警告；逐条审计全部常量：源声明的公理报告全部为空，生成的常量中只有带字段构造子的单射引理（`Contextual.mk.injEq`、`Square.Line.row.injEq`、`Square.Line.column.injEq`）依赖 `propext`，检查器允许并列出它们；没有 `sorry`、`axiom`、`Classical` 或 `native_decide`。有限的事实由 `decide` 检查，不以数值测试代替陈述。
+- `Becoming.Quantum` 由其作者检查（88 个常量，43 项定理，公理报告全部为空）；本模块改名与加入整体一节之后，P72 的作者对它重新编译，结果相同。
+- 合并检查器在落地队列中检查一次，通过：回执 20261013T084405.661795Z。外围回执 20261013T084521.070057Z。
+- 独立审查：P66 的所有者 2026-10-12 审查了 `a655aa36` 版本，没有发现错误；同日又审查了其后加入的“整体与其部分”一节（`349fbc63`），读了证明，没有发现错误，`no_whole` 的说明补上“某个语境允许某物”。
+- 检查器的声明解析器不读名字末尾的撇号（把 `neg'` 读作 `neg`），所以 `Becoming.Quantum` 的四个辅助名 `neg'`、`zero_mul'`、`zero_add'`、`neg_one_mul'` 落地时改为 `negAt`、`int_zero_mul`、`int_zero_add`、`int_neg_one_mul`，陈述不变；改名后作者以共享的暂存构建重新编译并审计，全部源声明公理报告为空。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -7110,4 +7352,27 @@ Ren's "finish wisdom root" points to the target [wisdom-root](../../../../theori
 - the table's matching is a reading;
 - the section adds no Lean.
 
-The package now has 2970 theorems and 4334 declaration audits, over a core closure of 59 modules and a package of 57, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261011T232716.311380Z).
+**P70: what a description keeps and loses.** Ren said that describing seems to separate the whole into a projection made of words and to lose something ("wave/particle, 道可道非常道"), and asked what makes a split make sense and "what makes a pair, a pair?"; after the AI's answer, "push the frontier, as far as possible". Ren then asked the AI to dig deeper into "What makes two a pair, then, is relation, in what can go together or in how they go on", and corrected its reading of 道可道: "i was speculating there is a "truth", but when we model it, projection is the limitation … i also speculate the full "truth" can be derived, situationally, including the cognition/controller part". To the AI's test of that speculation Ren answered "keep prove to the deepest, i agree with your last reply(just saw), be smart, resolve and connect things elegantly. and for the open questions, if they need to be answered to move forward, answer them" ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-framing-and-pairs.md)). `Becoming.Description` (53 theorems, L4) imports `Becoming.Unfolding` (P69), `Becoming.Diagonal` (P71) and `Becoming.Context` (P72) and `Becoming.Learning` (P73) and changes no existing module. It adds no premise.
+- **Separation loses exactly the relation.** Describing each part by what it can be keeps every combination that occurs and gives back the whole exactly where it is rectangular (`separation_faithful_iff`); the lost relation reappears as surplus (`separation_surplus`). A whole can hold a relation no pair holds (`whole_not_in_pairs`). On Specker's three boxes, parity is a whole its pairs do not give back (`evenBoxes_not_determined`), while on the same pairs Specker's possibilities are the parts of no whole (`Specker.no_whole`): the two ways parts fail a whole.
+- **A relation forms, lasts and ends in the joint law.** A law moving each part by itself never relates unrelated parts, lossy or not (`Rectangular.image_of_separate`); copying does (`copy_relates`). Once formed, a relation lasts under every law that moves each part by itself and loses nothing of what occurs (`relation_persists`), so it ends only by loss within what occurs, as by forgetting a part (`forgetting_unrelates`), or by acting on the parts together: for example, a coupling that relates two parts unrelates them when it acts again, losing nothing either way (`coupling_relates_and_unrelates`).
+- **The split that makes sense.** In P69's sense (`MakesSense`), under a determined law the coarsest split keeping what is registered and carrying a law makes sense (`Law.makesSense_of_law`); carrying a law is not enough (`Law.const_makesSense_iff`); registering everything, the configuration itself makes sense (`Law.whole_makesSense`). What is registered now makes sense by itself exactly where it carries a law, a condition on one step (`Law.now_makesSense_iff_goAlike`), so a registered part alone makes sense exactly where the rest makes no difference to its next value (`Law.part_makesSense_iff_step`); for a rule changing with it, as in P66's `adaptive`, that is the rule making no difference (`Law.adaptive_makesSense_iff`). Where a standing changes by a passing, neither alone makes sense and the pair does (`Motion.neither_alone`, `Motion.makes_sense`); where nothing passes the pair is one (`Motion.still_makes_sense`). So two are a pair where the law of one unfolding does not split between them and what is registered tells them apart.
+- **Beyond the succession of steps, that an unfolding has a law is not a premise.** Two moments of one registered history are one state when everything registered after them is alike (`SameAhead`), and the states go on as themselves (`SameAhead.next`). Every registered history is a determined law, the law of moments, which uses only the succession of steps, the representation's shared index, read through what is registered, and its alike moments are its states (`alike_moments_iff`). It has finitely many states exactly where two moments are one state, that is, where its registration repeats from some moment on (`finitely_many_states_iff`, by a pigeonhole up to a relation with no decision, `shared_below`); a configuration that returns has finitely many states under every registration (`Law.Returns.states`). The two-valued denial, P71's rhythm, has exactly two states, each defined through the other (`Denial.two_states`, `Denial.each_through_other`). P73 landed first, so this section states the identities: `Law.goAlike_process_iff` is the instance of `Becoming.Learning`'s identical `goAlike_iff_lumped`, written independently, and finitely many states is P73's lasso (`lasso_iff_sameAhead`, `finitely_many_states_iff_lasso`).
+
+Tested against these theorems and those of P71 and P72, Ren's speculation holds with three refinements (the AI's organization; Ren agreed with the reply that gave it): every loss found is a projection's and has a lossless counterpart; a situational truth is exact, and includes the controller exactly where the controller makes a registered difference; but the truth that exists is relational (P72), from within any given truth can be said and not all at once (P71), and a moving self-referential loop has no still value, its truth being a rhythm. Of the reply's three open questions: whether an unfolding has a law is settled above; what a finite record fixes is P73's (`no_record_fixes_next_finite`, `comes_to_rest`); naming the classes blocks nothing, since the core states them as relations. Readings (the AI's, pending Ren): what a description deducts is the relation between what it cuts and the differences outside what is registered; 阴阳 as the standing and the passing, each meaningless alone, and as the denial's two states; 三生万物 as three being the least number with a whole held by no part. Records added: separation-loses-the-relation, the-split-that-makes-sense. Receipt 20261013T084405.661795Z (Description 53); periphery receipt 20261013T084521.070057Z. Reviewed independently by the owner of P64–P68 at `6af48ab0`, whose strengthening (the one-step forms) is adopted; the later states read off a history, the parity on Specker's boxes and Context's wholes were reviewed by the same session at `10d7b043`, `349fbc63` and `e14821d9`, reading the proofs, with no error found and four wording points adopted; the author's counterreview is in section 94.
+
+**P71: a registration within what it registers.** Same source. A world's registration of itself is made by its parts, which are among what is registered; this section tests the "from within" half of Ren's speculation. `Becoming.Diagonal` (26 theorems, L2) imports `Becoming.Recurrence` and changes no existing module. It restates in the core, with no axiom and no decision on values, the diagonal that the periphery's `RootCoverageBoundary` states with `Std`, and extends it. It adds no premise.
+- **The gap.** A family indexed by what it reads misses a definite reading for every map moving every value (`gap_unsaid`, Lawvere's diagonal); for claims always, since a claim is never alike with its negation (`claims_incomplete`), so no frame realizes with its own configurations every pattern of claims about them (`Frame.self_incomplete`). A family saying every reading gives every map a fixed point (`fixed_of_complete`): containing oneself is fine.
+- **Exactly where nothing differs.** For values compared by equality, a registration within says every reading exactly where there is nothing to tell apart (`complete_iff_alike`).
+- **Completion is an unfolding.** Keeping what it registered and next registering what it missed (`Unfolds`), it is incomplete at every step, each gap new, no two alike, never returning, and held by no finite stock (`Unfolds.incomplete`, `Unfolds.gap_new`, `Unfolds.gaps_differ`, `Unfolds.never_returns`, `Unfolds.unheld`); such an unfolding exists (`unfolding_unfolds`, `unfolding_open`).
+- **No still value, a rhythm.** Revision by a map moving every value never rests (`revision_never_rests`, `denial_never_rests`); the two-valued denial returns every two steps (`denial_returns`). The liar read as revision is the simplest rhythm, not a contradiction; P70 reads its two states off it.
+
+Readings (the AI's, pending Ren; Ren agreed with the reply containing them): from within, any given truth can be said from some situation, the next step, and not all from one; the limit is again a projection's, holding the whole in one description inside it. Zhuangzi's 一与言为二，二与一为三 has the form of `Unfolds`. A prediction announced into what it predicts, where the response moves away from every announcement, is never borne out; the loop's truth is its rhythm. The AI's earlier reading of 道可道 as "说不尽" was its own, not Ren's. P73's `diagonal_refutes` and `diagonal_unrested` (`Becoming.Learning`) are the learner's form, a course built step by step answering every claim on records with a moved value: the same form as `gap_unsaid` and `revision_never_rests`, a different object, written independently; the relation is noted, not stated as a theorem. Not Gödel: no arithmetic coding is stated. Record added: registration-within-what-it-registers. Receipt 20261013T084405.661795Z (Diagonal 26); periphery receipt 20261013T084521.070057Z. Reviewed independently by the owner of P64–P68 at `c98eb6a8` and again at `e14821d9`, the later changes being the review's suggestions; the author's counterreview is in section 95.
+
+**P72: contextual registration.** Same source. Ren asked whether what a framing loses is like "wave/particle". The core's `Frame` reads claims as context-free by type: what is registered of a claim does not depend on what else is registered with it. In Specker's (1960) and Kochen and Specker's (1967) worlds no context-free values exist at all. `Becoming.Context` (28 theorems, L2) imports `Becoming.Frame` and changes no existing module; the quantum realization `Becoming.Quantum` (37 theorems, importing only this module) was written and checked as P72q by the owner of P64–P68 and lands with it. It adds no premise.
+- **Context-free claims are a commitment of the representation.** The registrations at a configuration glue exactly where contexts agree where they meet (`Contextual.glues_iff_agree`); a frame of context-free claims fits exactly where they glue at every configuration (`Contextual.fitsFree_iff`); the frame indexed by context always fits (`Contextual.indexed_fits`).
+- **Some worlds glue nowhere.** Where each context's possibilities are local and no context-free reading lies within all of them, no configuration respecting them glues (`Contextual.not_glues`), and one such configuration rules out every context-free frame (`Contextual.no_free_frame`). Specker's three boxes and the Mermin–Peres square are witnesses: no context forces a claim (`unforced`), yet no assignment fits all (`noGlobal`). Two-qubit observables realize the square: each line's three commute and multiply to ±I as the square requires, every possibility of a line is shown by an explicit vector, and no assignment to the nine cells is shown jointly on every line by quantum states (`Becoming.Quantum`: `line_product`, `support_shown`, `no_context_free_values`).
+- **Two ways parts fail a whole.** A whole lies within what its parts glue to (`glued_of_whole`). Its parts may not give it back (`PartsDetermine` fails: P70's parity on Specker's pairs), or may allow what no whole has: possibilities with no context-free reading, where some context allows something, are the parts of no whole (`no_whole`, `Specker.no_whole`, `Square.no_whole`). These are the two sheaf conditions, uniqueness and gluing, for possibilities.
+
+Readings (the AI's, pending Ren; Ren agreed with the reply containing them): neither wave nor particle is the truth, each being a projection onto context-free values, while the context-indexed statement fits; a value is a registration in context, a relation; so the truth that exists, in Ren's speculation, is relational. Specker, the square and P70's parity are parity phenomena (Mermin's argument), stated as a reading, not as a general theorem. Only possibilities are stated, not probabilities or Hilbert space. Record added: contextual-registration. Receipt 20261013T084405.661795Z (Context 28, Quantum 37); periphery receipt 20261013T084521.070057Z. Reviewed independently by the owner of P64–P68 at `a655aa36`, and the later section on wholes and their parts at `349fbc63`, with no error found; four helper names of `Becoming.Quantum` lose their primes, which the checker's parser does not read, with statements unchanged; the author's counterreview is in section 96.
+
+The package now has 3114 theorems and 4559 declaration audits, over a core closure of 63 modules and a package of 61, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 90 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T084521.070057Z).

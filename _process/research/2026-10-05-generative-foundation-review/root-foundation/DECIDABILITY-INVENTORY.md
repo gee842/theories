@@ -1,19 +1,19 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261012T012916.201078Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T084405.661795Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261012T012916.201078Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T084405.661795Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
 | 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 153 |
-| 只在证明中用到 / used only in proofs | 88 |
+| 只在证明中用到 / used only in proofs | 90 |
 | 不用到 / unused | 0 |
 | 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 6 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 77 |
-| 证明可判定的定义与实例 / definitions and instances proving decidedness | 78 |
+| 证明可判定的定义与实例 / definitions and instances proving decidedness | 80 |
 | 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 40 |
 
 ## 理由 / Reasons
@@ -32,7 +32,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 4 |
 | 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 51 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
-| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 25 |
+| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 27 |
 | 分情形 / splits on a case | 按规定分情形：等价的一个方向在规定不成立处才得出 / splits on a determination: one direction holds by its failing case | 3 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 1 |
 
@@ -214,6 +214,8 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Continuation | `Flow.rising_fed_from_beyond_from` | `DecidableEq C` | 分辨相同 / tells same from different | — |
 | Continuation | `Web.generation_fed_from_beyond` | `DecidableEq X` | 分辨相同 / tells same from different | — |
 | Decidedness | `World.arising_iff_ceasing_of_decidable` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
+| Diagonal | `Diagonal.alike_of_complete` | `(x : B) → Decidable (x = b)` | 分辨相同 / tells same from different | — |
+| Diagonal | `Diagonal.complete_iff_alike` | `DecidableEq B` | 分辨相同 / tells same from different | — |
 | Dissipation | `Flow.Enclosed.around` | `DecidableEq C` | 造出列表 / builds a list | `Flow.Enclosed.around_not_not`（不判定 / no decision） |
 | Feedback | `Flow.Balances.adds_iff_exceeds_of_decidable` | `(t : Nat) → (g : F) → Decidable (sig p t g)` | 分情形 / splits on a case | — |
 | Identity | `Flow.More.unceasingFrom` | `(t : Nat) → (f : F) → Decidable (W.Continues R t f)` | 找出 / finds | — |

@@ -255,20 +255,20 @@
     "en": "How actual humans and AI form wisdom, how concern and affect form, and whether the wisdom of primary texts corresponds to these laws can be settled only by empirical correspondence; the sufficiency of these relations for all wisdom is not proved; the ethical warrant of judgment is not in Part I; P71 (a registration within what it registers incomplete at every step) is still scratch evidence and is not counted; matching the laws to aspects of wisdom is a reading; this record adds no Lean, its new formal credit lying only in learning-by-refutation and generalization-through-lumping; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261012T012916.201078Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261012T014649.248714Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
-    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261012T012916.201078Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261012T014649.248714Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
+    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T084405.661795Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261012T014649.248714Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
+    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T084405.661795Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261012T014649.248714Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
   },
   "references": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "1b6d92920c4da8d19d4002b49c30a172615f1dc8162e9d24f9e95e93d346db6c",
+      "sha256": "d4bfed47b4c203084e0a29e848d98b82d31713fd457c59af261ec192b2754857",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8e3d515414ef77f9374facfc04e2211d42a1d01cfe5283f29f9a67d67ace32bd",
+      "sha256": "d58c364289c9a6a1d7cd124d2eedfdc963b68529799e092c8a39bdde7a721587",
       "declarations": []
     },
     {
@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b2948df1d0205cd550210c358b142eb5c6d0f64b2c5bb687d6c79fe8153e6d64",
+      "sha256": "6486fb81d22ce08d197498cc50bfdc3c65411195d38c39199ed87f526c08b639",
       "declarations": []
     },
     {
@@ -471,6 +471,10 @@
     {
       "zh": "2026-10-12 P75：新增，按 Ren“finish wisdom root”（同一消息）；把第一部分已检查的规律逐条对到目标 wisdom-root 的四条连接，不新增 Lean（工作板 P75）；见整合文档 §93。",
       "en": "2026-10-12 P75: added, following Ren's ‘finish wisdom root’ (same message); matches Part I's checked laws to the four connections of the target wisdom-root, adding no Lean (work board P75); see §93 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
     }
   ]
 }

@@ -126,8 +126,8 @@
     "en": "The class, the data and the lumping are supplied; which class an actual formation or network holds or can reach, which lumping it imposes and its correspondence to the world are not derived; optimization dynamics, implicit bias and probabilistic generalization bounds (PAC, VC dimension) are not stated; the periphery's networks are three-unit models, not modern deep networks; goAlike_iff_lumped is near-definitional, its content being that it gives Ren's 理 a formal referent; the periphery instances re-read earlier results and give numerical witnesses, the delta being the connection; the readings other than 理 (Ren's) are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261012T012916.201078Z）：Becoming.Learning 的 75 项定理全部空依赖，其中含 determines_lumped_iff、lumped_right_iff、every_determines_nothing、goAlike_iff_lumped、transfer_right_iff、Training.loss_through与 Training.fit_right_iff；同一回执覆盖包内 57 个模块（含只作导入的根模块与桥接），共 2970 项定理／4334 项声明审计，22 个继承模块的当前字节与已通过回执一致。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 59 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib ea11ccc0 成功实查（20261012T014649.248714Z）：LearningCorrespondence 的 15 项定理／19 项声明审计，其中习得部分 6 项声明公理报告为空，其余只报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；导入闭包中的每个其他模块与已通过回执一致；核心不导入它。作者反审见整合文档 §92；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261012T012916.201078Z): the 75 theorems of Becoming.Learning all have empty axiom reports, among them determines_lumped_iff, lumped_right_iff, every_determines_nothing, goAlike_iff_lumped, transfer_right_iff, Training.loss_through and Training.fit_right_iff; the same receipt covers the package's 57 modules (including the import-only root and the bridge) with 2970 theorems/4334 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 59 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). Successful periphery learning-bridge check with Lean 4.30.0-rc2 and Mathlib ea11ccc0 (20261012T014649.248714Z): the 15 theorems/19 declaration audits of LearningCorrespondence, the 6 acquisition declarations with empty axiom reports and the rest reporting only Mathlib's standard axioms (propext, Classical.choice, Quot.sound); every other module in its import closure matches a passed receipt; the core does not import it. The author's counterreview is in §92 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T084405.661795Z）：Becoming.Learning 的 75 项定理全部空依赖，其中含 determines_lumped_iff、lumped_right_iff、every_determines_nothing、goAlike_iff_lumped、transfer_right_iff、Training.loss_through与 Training.fit_right_iff；同一回执覆盖包内 61 个模块（含只作导入的根模块与桥接），共 3114 项定理／4559 项声明审计，22 个继承模块的当前字节与已通过回执一致。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 63 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib ea11ccc0 成功实查（20261012T014649.248714Z）：LearningCorrespondence 的 15 项定理／19 项声明审计，其中习得部分 6 项声明公理报告为空，其余只报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；导入闭包中的每个其他模块与已通过回执一致；核心不导入它。作者反审见整合文档 §92；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T084405.661795Z): the 75 theorems of Becoming.Learning all have empty axiom reports, among them determines_lumped_iff, lumped_right_iff, every_determines_nothing, goAlike_iff_lumped, transfer_right_iff, Training.loss_through and Training.fit_right_iff; the same receipt covers the package's 61 modules (including the import-only root and the bridge) with 3114 theorems/4559 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 63 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). Successful periphery learning-bridge check with Lean 4.30.0-rc2 and Mathlib ea11ccc0 (20261012T014649.248714Z): the 15 theorems/19 declaration audits of LearningCorrespondence, the 6 acquisition declarations with empty axiom reports and the rest reporting only Mathlib's standard axioms (propext, Classical.choice, Quot.sound); every other module in its import closure matches a passed receipt; the core does not import it. The author's counterreview is in §92 of the integration note; there is no independent review yet."
   },
   "references": [
     {
@@ -221,7 +221,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "b2948df1d0205cd550210c358b142eb5c6d0f64b2c5bb687d6c79fe8153e6d64",
+      "sha256": "6486fb81d22ce08d197498cc50bfdc3c65411195d38c39199ed87f526c08b639",
       "declarations": []
     },
     {
@@ -233,13 +233,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "1b6d92920c4da8d19d4002b49c30a172615f1dc8162e9d24f9e95e93d346db6c",
+      "sha256": "d4bfed47b4c203084e0a29e848d98b82d31713fd457c59af261ec192b2754857",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8e3d515414ef77f9374facfc04e2211d42a1d01cfe5283f29f9a67d67ace32bd",
+      "sha256": "d58c364289c9a6a1d7cd124d2eedfdc963b68529799e092c8a39bdde7a721587",
       "declarations": []
     },
     {
@@ -294,6 +294,10 @@
     {
       "zh": "2026-10-12 P73、P74：新增，按 Ren“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”；来自 AI 对元层次、神经网络、认知与学习之完整性的回答与三步提议（工作板 P73、P74）；见整合文档 §92。",
       "en": "2026-10-12 P73, P74: added, following Ren's ‘please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved’; from the AI's answer on how complete the account of the meta level, networks, cognition and learning is, and its three proposed steps (work board P73, P74); see §92 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
     }
   ]
 }

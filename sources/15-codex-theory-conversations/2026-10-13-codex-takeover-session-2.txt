@@ -1,0 +1,107 @@
+Regenerating the decidability inventory in the landing worktree with Learning's uses classified, while fixing a record sentence to pinpoint exactly where Learning uses decidable equality.
+
+The edit stopped at a wrong anchor: the `CONSTRUCTIONS` line begins with `'Tower.refine'`. The Lean file in the worktree was already edited, so I'm restoring it, fixing the anchor and rerunning.
+
+Inventory regenerated: 153 statements depend on decidedness (63 count, 90 object-building, including Learning's 19 refutation-based and 1 another-value cases), with 88 theorems using it only in proofs and `eq_of_not_refuted` now contributing to the 25 tells-same uses. Next I'll update the zero-premise plan.
+
+I'm making the record name exactly where Learning uses decidable equality, and pointing the study to the inventory.
+
+Now I'm adding the inventory step to the package README.
+
+The docs step needs the CorrectionInquiry and bridge receipts, so I'm waiting for both checkers.
+
+While that runs, I'm writing the rest of the landing as one rerunnable script, following P80's `land.sh`.
+
+P80 also has an `inventory_edit.py` and a `zero_count.py`, and it lands after me. I'm checking that my changes to the inventory script and the plan sentence won't break its anchors.
+
+P80's edit anchors on the dict/list endings I was planning to modify, which would conflict with my change. I'm now checking every queued package's anchors so I can insert my entries in spots no one else is anchoring on.
+
+P80 is the only queued package touching the inventory script, so I'll insert my entries just before the dict ends—before 'adjoin', before the 'once' reason, and at the start of the 'same' list—preserving P80's anchors, then verify by running its script on the result.
+
+My patch to the script failed partway and nothing was written, so I'm rewriting the edit section in full.
+
+Both edits now apply cleanly in sequence. Next I'm redoing the worktree's inventory with this version.
+
+P80's `zero_count.py` reads the plan sentence I just changed, so I'm checking it still parses that sentence.
+
+P80's counter matches my page's numbers (153 = 63 + 90; 88 = 51 + 25 + 8 + 3 + 1). Now I'll write `land.sh` for the post-check steps, reusing P69's link checker if it's already committed.
+
+The script re-points only records that still cite the old receipt, so running it twice is safe. I'm back to waiting on the checkers.
+
+CorrectionInquiry passed: 7 theorems, empty axioms, 62 inherited modules. The learning-bridge checker is running now.
+
+That commit touches only the board and P80's package, so no receipt is affected. I'm moving the worktree onto it now, keeping the uncommitted landing changes.
+
+The run folders get committed with each landing (P69's did), so I'll carry mine too. While the bridge check runs, I'm reading the board rows I'll mark landed.
+
+The bridge checker confirmed only Mathlib's standard axioms across the 42 inherited network modules. I'll confirm the receipt now and restore the inventory files so `land.sh` can rerun all post-check steps cleanly.
+
+All three receipts have passed, so I'm running `land.sh`: inventory, docs at §92, records, re-pointing, generators and every check.
+
+The script stopped silently after the README edits. The next step's output goes to a log, so I'm reading it.
+
+The edits made the catalogue entries for those two chapters stale, so I need to reread them before refreshing their hashes. I'll check how P69 and P80 handle the refresh, then review both entries against my diff.
+
+Both entries were already up to date, so the only drift comes from this landing's chapter edit. The Becoming entry's sentence and Lean list are already updated; now I'll review the cognition chapter's diff before adding a line about the new laws-of-learning section.
+
+I've confirmed the diff adds the learning laws, bridge instance readings, and uniform-law note. Now writing `reading_entries.py` to add one sentence to the cognition entry and refresh both hashes, but only where the entry was current at HEAD.
+
+Before running it, I'm checking how these JSON files are serialized so the rewrite doesn't reformat them.
+
+The files are top-level lists written with indent 2, which matches. I'm adding the step to `land.sh` and resuming from the catalogue step.
+
+Every check in the script passed. The 167 changed records is far more than the 78 re-pointed plus 9 written or advanced, so I'm finding out what touched the rest.
+
+Rerunning the link check since its output got cut off.
+
+All checks pass—391 links verified, no errors from the research check. Now I'll merge the landing into the live tree, first confirming main hasn't moved and no peer has uncommitted edits to the files I'll be writing.
+
+The two new commits touch only the P58c package and the board. In case the session map tracks the board, I'm moving the worktree onto the new head and rerunning the check-only steps before copying.
+
+The Lean catalogue check printed no "ok", so I'm reading its log.
+
+The Lean catalogue indexes every Lean file in the tree, including P58c's newly committed package, so it needs regenerating on the new head. I'm doing that and rechecking.
+
+Everything passes except the session map check this time, so I'm reading its log.
+
+The session map holds a snapshot of the catalogue, so it needs recapturing after the regeneration, in the order P80's script uses.
+
+All checks pass except the generative-chain check, which P80's script treats as advisory. I'm checking whether it already fails on main without my changes.
+
+The 5 generative-chain errors also appear on clean main, confirming they're pre-existing and not caused by my changes. I'll remove the scratch worktree, then document the landing results in the package README before copying into the live tree.
+
+Main shifted again since P80's commit added two Lean files that the catalogue indexes, so I'll rebase, regenerate the catalogue, rerun checks, then copy and commit—guarded against main moving again mid-process.
+
+Next I'm writing the commit message.
+
+I'm landing P73–P75 now: rebasing the worktree onto main, regenerating, rechecking, then the guarded copy and commit.
+
+Commit `9087ad08` landed with all 260 files (252 verified landing files plus 8 package files); ignoring the git gc warning since pruning is off-limits. Now confirming the commit only touches my paths before marking the board.
+
+The commit holds exactly the landing files and none of the peers' work in progress. Next I'm marking P73–P75 landed on the board; I'll reread it first, since peers commit to it often.
+
+Board committed as `2f414f39`. Next I'm telling the integrator and the next landers (P70–P72, and P80, whose inventory edit I tested).
+
+Now I'm updating memory: P73 is landed, plus the lesson about generators that index the whole tree.
+
+Learning, the learning bridge and the root of wisdom (P73–P75) are now on main as `9087ad08`, with the work board marked in `2f414f39`. Both are not pushed. The core and the bridge passed their checkers on this base. The research and catalogue checks pass, and the generative-chain check shows the same five errors main already had.
+
+**What is now proved (no axiom, every axiom report empty):**
+- **Induction is resolved into laws.** No record of past values fixes the next one. Every learner has a course that refutes each claim it makes, and that course stays open. Learning by refutation never passes a hypothesis that holds.
+- **Learning in a finite world.** Where the world is held by a finite list, the learner is refuted only a bounded number of times. That it comes to rest cannot be refuted, but its record never shows that it has come to rest.
+- **The meta level.** Learning which class to learn in is the same learning, run over a merged enumeration.
+- **理 as you read it**, the modeling of the laws of structure and of change. Its formal statement is `goAlike_iff_lumped`: structure and change are one lumping. Generalization holds exactly where the class lumps an untried case with an observed one. Data alone fix no untried value.
+- **Neural networks and the acquisition chain** are instances of these laws, checked in a separate bridge module (Lean with Mathlib). The network part relies only on Mathlib's three standard axioms.
+- **The root of wisdom.** Its formal part is recorded at Part I's scope: registration, 理, testing, learning, 明, enough, runaway, proxies and the meta level are each matched to a checked law.
+
+**What stays open:**
+- Whether actual minds and networks hold these classes, tell values apart, or live in finite worlds. That is empirical correspondence, not something these theorems decide.
+- The step at which the learner rests is not stated. Another session's item, P83, may bound it.
+- Cognition's full objective (consciousness, affect, language), the formation of concern and affect, and whether these laws are sufficient. The `wisdom-root` target stays open for these.
+- No independent review of P73–P75 has been done yet.
+
+**Found in passing:** the decidability inventory had been silently skipping every theorem whose name starts with `eq_`. It now skips only the equation lemmas Lean generates for itself. The integrator, who owns the inventory, has accepted the fix. The plan now records that the learner's rest theorems depend on telling values apart.
+
+The session leading the next landing has been told P73 is in, and the counterfactual work (P80) has confirmed its package still applies unchanged. Should I push main, or leave that to the integrator?
+
+The landing record is in the [package README](_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p73-landing/README.md); the study sections are §92–93 of [BECOMING-RENEWAL-READING.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md).

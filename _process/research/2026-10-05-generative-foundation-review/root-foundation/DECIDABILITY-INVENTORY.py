@@ -177,6 +177,7 @@ PROOF_KIND = {
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',
         'Flow.sample_comesToStand_iff']},
     **{n: 'same' for n in [
+        'Diagonal.alike_of_complete', 'Diagonal.complete_iff_alike',
         'Learning.claim_refuted_on_one', 'Learning.eq_of_not_refuted', 'Learning.every_free',
         'Learning.every_determines_nothing',
         'Flow.fed_from_beyond', 'Flow.fed_from_beyond_from', 'Flow.fed_of_not_inward', 'Flow.inward_iff_not_fed',
