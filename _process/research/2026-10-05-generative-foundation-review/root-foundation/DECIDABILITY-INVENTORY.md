@@ -1,19 +1,19 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T091820.375259Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T093441.881086Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T091820.375259Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T093441.881086Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 225 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 226 |
 | 只在证明中用到 / used only in proofs | 106 |
 | 不用到 / unused | 0 |
 | 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 7 |
-| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 79 |
-| 证明可判定的定义与实例 / definitions and instances proving decidedness | 86 |
+| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 84 |
+| 证明可判定的定义与实例 / definitions and instances proving decidedness | 87 |
 | 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 53 |
 
 ## 理由 / Reasons
@@ -22,7 +22,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 
 | 理由 / Reason | 说明 / Meaning | 定理数 / Theorems |
 |---|---|---:|
-| 计数 / counts | 计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts is decided (`counts_iff_decided`) | 72 |
+| 计数 / counts | 计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts is decided (`counts_iff_decided`) | 73 |
 | 较粗的读法 / coarser reading | 较粗的读法：粗步内每个关系项只列一次，需分辨关系项的相同 / a coarser reading: each relatum listed once within a coarse step, which tells relata apart | 88 |
 | 抬高一个条件 / one condition raised | 抬高一个条件：需分辨条件的相同 / one condition raised: tells conditions apart | 8 |
 | 移开依存 / dependence moved | 在不被支持之步移开依存：支持已定 / dependence moved at unsupported steps: support decided | 3 |
@@ -71,6 +71,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Decidedness | `indicates_mark` | `Decidable p` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Dissipation | `adjoin_spec` | `DecidableEq α` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
 | Dissipation | `insertNew_spec` | `Decidable (a ∈ l)` | 不重复的列表 / a list without repetition | 可判定是它自己的条件 / its own condition |
+| Entropy | `mark_mono` | `Decidable p`；`Decidable q` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Identification | `Identification.answer_exceeds_bound` | `DecidableEq O` | 按否证学习 / learning by refutation | 可判定是它自己的条件 / its own condition |
 | Identification | `Identification.firstFit_found` | `(a : α) → Decidable (p a)` | 首个符合者 / first fitting member | 可判定是它自己的条件 / its own condition |
 | Identification | `Identification.firstFit_sound` | `(a : α) → Decidable (p a)` | 首个符合者 / first fitting member | 可判定是它自己的条件 / its own condition |
@@ -398,6 +399,7 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 这些定理的陈述计数，但不以可判定为假设：可判定由见证世界或体现证明（例如 `Embodied.decided`）。按模块计： / These theorems count in their statements without taking decidedness as a hypothesis: it is proved for witness worlds or from embodiment (for example `Embodied.decided`). By module:
 
 - Counting: 35
+- Entropy: 5
 - Identification: 1
 - Learning: 2
 - Locality: 1

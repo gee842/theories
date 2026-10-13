@@ -1698,6 +1698,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean)
 
+## entropy-history-and-record ← continued-change-needs-openness
+
+`formal-reuse` — 从不复返的证明用 Flow.rise_lowers_on 与 Flow.fall_lowers_on（被耗散的家族中成员上升或下降都使存量下降）；有限世界的结论用 World.rises_of_arises、World.falls_of_ceases 与 Flow.ExchangeRecurs。 / The proof of never revisiting uses Flow.rise_lowers_on and Flow.fall_lowers_on (a member rising or falling in a family dissipated on lowers the stock); the finite-world results use World.rises_of_arises, World.falls_of_ceases and Flow.ExchangeRecurs.
+
+**Producer output / 上游输出:** 平衡与耗散之下，被耗散的家族中任何成员的水平变化都使家族的存量严格下降；体现之下生起即上升、止息即下降。 / Under balance and dissipation, any change of a member's level in a family dissipated on strictly lowers the family's stock; under embodiment, arising is a rise and ceasing a fall.
+
+**Consumer input / 下游输入:** 构型变化之处有成员上升或下降（Web.changes_member），所以耗散之下存量在每次变化时严格下降，且从不上升，故不能复返。 / Where the configuration changes some member rises or falls (Web.changes_member), so under dissipation the stock strictly falls at every change and never rises, and cannot come back.
+
+**Retained conditions / 保留条件:** 平衡；家族自 T 起被耗散；不重复的家族。 / Balance; the family dissipated on from T on; a family without repetition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
+
+## entropy-history-and-record ← rest-at-every-resolution
+
+`formal-reuse` — Flow.DissipatesBy.uptake_le_lost 与 Flow.uptake_within_dissipated 用 Flow.DissipatesBy 与 Flow.DissipatesBy.replenishment_le。 / Flow.DissipatesBy.uptake_le_lost and Flow.uptake_within_dissipated use Flow.DissipatesBy and Flow.DissipatesBy.replenishment_le.
+
+**Producer output / 上游输出:** 按比例 q 耗散时，q+1 乘家族得回的不多于 q 乘从它取走的，所以得回的不多于取走的。 / Under loss in proportion q, q + 1 times what the family gets back is within q times what is taken from it, so what it gets back is within what is taken.
+
+**Consumer input / 下游输入:** 于是取走的等于得回的加失去的，取走的至多是失去的 q+1 倍。 / So what is taken is what is got back with what is lost, and what is taken is at most q + 1 times what is lost.
+
+**Retained conditions / 保留条件:** 按比例 q 耗散于家族（固定单位）。 / Loss in proportion q on the family (at a fixed unit).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
+
+## entropy-history-and-record ← recurrence-without-premise
+
+`formal-reuse` — 实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_stops、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。 / The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_stops, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets.
+
+**Producer output / 上游输出:** 不加前提：被一个列表容纳的序列复返（鸽巢，不用判定）；被标记的变化在有限多构型之内停止；不合并的规律在多个步上仍不合并；保留历史的展开中有限的当下遗忘。 / With no premise: a sequence held by a list revisits (pigeonhole, without decidability); a marked change stops within finitely many configurations; a law merging nothing merges nothing over many steps; in an unfolding that keeps its history a finite present forgets.
+
+**Consumer input / 下游输入:** 家族自 T 起的构型是一个序列；变化是构型的函数时 next 是一个规律；第一律之下构型被其 T 时存量之内的构型列表容纳（Flow.Balances.held）。 / The family's configurations from T on are a sequence; where change is a function of the configuration, next is a law; under the first law the configurations are held by the list of those within the stock at T (Flow.Balances.held).
+
+**Retained conditions / 保留条件:** 平衡；家族自 T 起不得益（第一律）；回返与遗忘还要求变化自 T 起由 next 决定（Web.Determined）。 / Balance; the family gaining nothing from T on (the first law); return and forgetting also need change determined by next from T on (Web.Determined).
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean)
+
 ## evolution-on-descent ← living-on-and-descent
 
 `formal-reuse` — 复用 P18 引入、P18b 改正的世系关系（给予的形成须参与该步）；定义移入 Becoming.Evolution（DescendsAt、Descends），在估值中的读法留在 Becoming.Descent。 / Reuses the descent relation introduced in P18 and corrected in P18b (the formation giving must take part in the step); its definition moves to Becoming.Evolution (DescendsAt, Descends), and its readings in valuation stay in Becoming.Descent.

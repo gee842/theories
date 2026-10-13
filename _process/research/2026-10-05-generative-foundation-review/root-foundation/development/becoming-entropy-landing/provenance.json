@@ -1,0 +1,19 @@
+{
+  "branch": "claude/jolly-pike-140c94",
+  "commit": "52ff83a4994443e1a9255d51eace8500772b7c0e",
+  "lean_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
+  "source_sha256": "627f0b125beb9fa5d7887ac3d6133c254af556038e0dddc700872978334f10aa",
+  "landing_source_sha256": "2b019eca1d11ea50026b0f06e9ddf07ac8ff7b053a14766918a8bcc3771ca10d",
+  "original_source_artifact": "evidence/Entropy.original.lean",
+  "helper_name_reconciliation": {
+    "joinMap": "EntropyLists.joinMap",
+    "mem_joinMap": "EntropyLists.mem_joinMap",
+    "mem_append_cases": "EntropyLists.mem_append_cases",
+    "distinct_append": "EntropyLists.distinct_append"
+  },
+  "original_record": "theories/becoming/results/records/entropy-history-and-record.json",
+  "historical_receipt": "20261011T170859.998618Z",
+  "historical_module_theorems": 185,
+  "historical_declaration_audits": 233,
+  "package_status": "prepared; current consolidated core and periphery check required at landing"
+}

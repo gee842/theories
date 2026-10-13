@@ -46,6 +46,7 @@ import Becoming.Decidedness
 import Becoming.Counting
 import Becoming.Standing
 import Becoming.Resolution
+import Becoming.Entropy
 import Becoming.Units
 import Becoming.Imbalance
 import Becoming.Continuation
@@ -471,6 +472,24 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   unsupported formation is active at every step, its reserve falling at each. A least loss
   at each size bounds the takings of that size, but neither growth nor the amount: a whole
   unit can pass in ever more, ever smaller transfers without end.
+* `Becoming.Entropy` (L3): what becoming leaves, and what holding it costs. In a balanced
+  flow every change of a level is an exchange, so the history of exchanges grows at every
+  change without a dissipation premise, and an exchange and its reverse restore every level but not the
+  history. Under the first law (nothing from nothing) the reverse of an exchange is within
+  the law exactly where the exchange loses nothing; zero loss is possible, and a finite,
+  enclosed, lossless world can exchange without end, its configuration coming back while
+  its history grows. The spine's least loss per exchange is the first law with the record
+  of each exchange held in the conserved amount: a flow dissipates exactly where, with some
+  record counted, every exchange conserves the family with its record exactly and leaves
+  the record at least one unit. This decomposes dissipation; it does not derive it. Under
+  the first law the configuration stays among its stock's configurations, counted exactly;
+  a family that never revisits one rests, so while change goes on no quantity of the
+  configuration rises at every change (no arrow of the levels), a finite world that keeps
+  exchanging cannot carry its history in its configuration, and, where the change is a
+  function of the configuration, coming to rest or any arrow merges two configurations
+  while merging none keeps change going and coming back. An arrow without end under exact
+  conservation draws on relata beyond the family. In proportion, what is taken is at most
+  `q + 1` times what is dissipated.
 * `Becoming.Units` (L3): the laws of one step at a finer unit, the test of the commitment
   to whole units. Arising needing an active giver holds at every resolution with no condition
   on the split; the law of one exchange holds with change read in the unit (read in raw counts

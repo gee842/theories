@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 209 | 6,230 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 210 | 6,415 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -193,6 +193,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [EnactedOrientation.lean](lean-declarations/core.md#module-7587315c346a) | 生成核心与关系结构 / Generative core and relational structure |
 | [EnactedScene.lean](lean-declarations/inquiry.md#module-79f5d61b66c6) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [EncounterChoice.lean](lean-declarations/inquiry.md#module-130b052828c4) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [Entropy.lean](lean-declarations/core.md#module-53f5f554b2a8) | 生成核心与关系结构 / Generative core and relational structure |
 | [Enumeration.lean](lean-declarations/shared.md#module-2aa3f81f3ba3) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [EqualityGenerativity.lean](lean-declarations/abstraction.md#module-475eb20715c8) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [EthicalOrientation.lean](lean-declarations/core.md#module-b65d39fd3ece) | 生成核心与关系结构 / Generative core and relational structure |

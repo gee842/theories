@@ -22,7 +22,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 
 ## 已登记成果 / Registered results
 
-195 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+196 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -81,6 +81,7 @@ Read [the shared method / 非二元方法](chapters/NONDUAL-METHOD.md) before fo
 | [经历控制与保留使用的经验范围 / Empirical scope of encounter control and retained use](results/records/encounter-control-and-retention.md) | reviewed-scoped | [README.md](../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md) |
 | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](results/records/encounter-selection-and-revision.md) | recorded-checked | [EncounterChoice.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean) |
 | [端点可能性丧失与返回 / Endpoint opportunity loss and return](results/records/endpoint-loss-and-return.md) | recorded-checked | [BecomingReversibility.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean) |
+| [熵的历史与记录：无损交换可不息而复返；平衡与第一律下有限家族的箭头受界；守恒量中的逐次记录恰好分解最小损失 / Entropy, history and record: lossless exchange can continue and return; under balance and the first law an arrow on a finite family is bounded; recording each exchange within the conserved amount decomposes the least loss](results/records/entropy-history-and-record.md) | recorded-checked | [Entropy.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean) |
 | [经世系的演化：不加前提的算术恒等式；只有被支持的形成留下后代，在界内传递的所需在界内被选择，活动设定后来的选择 / Evolution on descent: an arithmetic identity with no premise; only supported formations leave descendants, what is transmitted within a bound was selected within it, and activity sets later selection](results/records/evolution-on-descent.md) | recorded-checked | [Evolution.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Evolution.lean) |
 | [独立的交换可交换：两侧分开两步时，平衡、耗散、体现、总量与计数都保持，在任意次这样的交换下也如此；次序恰经共享的关系项或依存被登记 / Independent exchanges commute: where sides split two steps, balance, dissipation, embodiment, totals and counts are kept, under any number of such commutations too; the order registers through a shared relatum or a dependence](results/records/exchanges-commute-unless-joined.md) | recorded-checked | [Order.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean) |
 | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](results/records/exclusive-footprint-support.md) | recorded-checked | [ExplanatoryFootprints.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean) |

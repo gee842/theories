@@ -54,7 +54,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Seeking", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
-        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Units", "Becoming.Imbalance",
+        "Becoming.Openness", "Becoming.Decidedness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
@@ -947,6 +947,32 @@ SCOPE = (
     "across a step, only active relata giving, and only active relata taking and only what "
     "they draw on, hold of the extended flow exactly where they hold of the flow and it "
     "balances there; nothing is adopted. "
+    "Entropy: in a balanced flow every change of a level is an exchange, so the history of a "
+    "family's exchanges never shrinks and grows at every change, and an exchange followed by its "
+    "reverse restores every level while the history counts both; under the first law, every "
+    "closed family getting back at most what is taken from it, the reverse of an exchange is "
+    "within the law exactly where the exchange loses nothing, and under dissipation no exchange "
+    "is reversed; a carrier handing one unit back and forth in a finite, balanced, lossless and "
+    "enclosed world exchanges without end, its configuration coming back every two steps, its "
+    "history growing by one at every step and no quantity of its configuration rising at every "
+    "change; a flow dissipates on a family exactly where, with a record counted as one more "
+    "condition given to and never taken from, every exchange conserves the family with its record "
+    "exactly and leaves the record at least one unit, and exactly where, recording each exchange "
+    "at one unit, the family with its record gains nothing, both parts needed; under the first "
+    "law the amount dissipated with the stock is conserved and is what the record receives; under "
+    "dissipation it bounds the history, loss does not recur under the first law, and in "
+    "proportion q what is taken is at most q + 1 times it; under the first law the configuration "
+    "stays among the configurations of its stock, listed exactly, a family never revisiting a "
+    "configuration changes across at most that many steps and rests, so unending change revisits "
+    "and admits no quantity of the configuration rising at every change, a finite world that "
+    "keeps exchanging carries its history in its configuration from no step on, and with the "
+    "change a function of the configuration, rest after a change merges two configurations, "
+    "merging none keeps change going and coming back, and never revisiting, under an arrow or "
+    "dissipation, merges; one passing then rest rests without dissipation, merging; a record "
+    "gathering one unit from a new relatum at every step under exact conservation, every step "
+    "enclosed, rises without end in a world not finite. Read as instances of Recurrence: within "
+    "the first law's bound the configurations recur, an arrow marks every change and stops it, a "
+    "law merging nothing brings the start back, and the present forgets the kept history.  "
     "Continuation: across a step a formation taking part conveys from one condition to another "
     "when it takes from the first and gives to the second, and a family is fed from beyond when "
     "something outside it is conveyed into a member; a step at which a family is fed from beyond "
