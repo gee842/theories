@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-13",
+  "workboard_item": "P97",
+  "kind": "author-source-assessment-and-correspondence",
+  "new_theorems": 0,
+  "new_experiments": 0,
+  "raw_data_reanalysis": false,
+  "independent_review": false,
+  "prior_design_status": "Section 4 remains unrun",
+  "delta": "Distinguish complete formal interface and exhaustive device knowledge from warranted restrictions sufficient for a particular scientific inference. Preserve full-core necessity as an open, revisable hypothesis.",
+  "reused_records": [
+    "scientific-inquiry-foundation",
+    "finite-fallible-inquiry-necessity",
+    "counterfactual-is-the-course",
+    "identification-where-bounded",
+    "tests-fix-likeness-where-determined"
+  ],
+  "producer_consumer_mapping": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#141-reuse-the-completed-results-without-adding-an-epistemic-oracle",
+  "counterreview": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#143-evidence-and-substantive-counterreview",
+  "primary_sources": [
+    {
+      "id": "E5",
+      "url": "https://doi.org/10.6028/NIST.TN.2156",
+      "read_url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=932360",
+      "scope": "Printed pages 5–9, sections 3.2 and 4; later FAQ fetches timed out and were not relied upon.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "E6",
+      "url": "https://doi.org/10.1103/PhysRevLett.115.250402",
+      "read_url": "https://arxiv.org/pdf/1511.03189v2",
+      "scope": "Author preprint v2, 6 September 2016; main-text assumptions, trial/test construction, predictability and remaining-assumptions discussion, especially printed pages 2–3 and 6–8; no supplementary-method or raw-data audit.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "E7",
+      "url": "https://www.nist.gov/publications/analysis-coincidence-time-loopholes-experimental-bell-tests",
+      "doi": "10.1103/PhysRevA.91.032105",
+      "scope": "Primary author abstract and publication record only.",
+      "accessed": "2026-10-13"
+    }
+  ],
+  "external_bytes_imported": false,
+  "preserved_prefixes": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "preserved_prefix_bytes": 13196,
+      "preserved_prefix_sha256": "00b68f96094ed166aedf16397caf5ce8686fe7e2a38e94cc4e01cfc3fb1803b4"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "preserved_prefix_bytes": 89138,
+      "preserved_prefix_sha256": "30614d63fe3283ff1d53a891e403732b476e4dc5dc31a90a467dc0a1bd353bbf"
+    },
+    {
+      "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "preserved_prefix_bytes": 39725,
+      "preserved_prefix_sha256": "cdae53bdee4faaef3ccaaaa297a428e82e1be8ee5d67bb62eb37b3ec4200cd91"
+    }
+  ],
+  "reused_proof_source_bindings": [
+    {
+      "id": "counterfactual-is-the-course",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee"
+    },
+    {
+      "id": "identification-where-bounded",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "3bc3beb5afde6f1266d20926fd830b7a99f4a14c34f5a69225d6336ff05e5a10"
+    }
+  ],
+  "formal_correspondence_claim": "No Bell/measurement-to-Flow instance theorem or experimental validation of the finite-fallible result is claimed.",
+  "no_automation": true,
+  "chain_scope": {
+    "row": "M21",
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "discovery_preserved": true,
+    "reviewed_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "theories/becoming/results/records/scientific-inquiry-foundation.md",
+      "theories/becoming/results/records/finite-fallible-inquiry-necessity.md"
+    ],
+    "owned_links_resolve": true,
+    "whole_table_freshness": "not certified; unrelated review guards preserved"
+  }
+}

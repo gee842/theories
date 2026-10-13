@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T10:08:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个形成在从 t 起的一步上获得支持（Web.GainsSupport），是指它在 t 不被支持、在 t+1 被支持；失去支持（Web.LosesSupport）反之。它的要求在该步上不放松（Web.Unloosened），是指它在 t 的每项要求在 t+1 仍在、所需不降低；不收紧（Web.Untightened），是指它在 t+1 的每项要求在 t 已有、所需不升高。要求不放松时，获得支持只因它所需的某个条件上升（Web.GainsSupport.rises）；要求不收紧时，失去支持只因它所需的某个条件下降（Web.LosesSupport.falls）。在平衡的流中，只有活跃者给予（Acting）且活动需要支持（Dependent）时，每次上升都由参与该步的一个被支持的形成给予（Flow.rise_given_by_supported）；所以要求不放松的形成，只在参与该步的一个被支持的形成向它所需的条件给予时获得支持（Flow.gains_from_supported）。在同样的前提下，一个家族在 T 没有被支持的成员，从 T 起成员的要求都不放松，并且只有成员向成员所需的条件给予时，此后没有成员再被支持（Flow.unsupported_stays）；对整体，一旦什么都不被支持，在要求不放松时，此后什么都不再被支持或活跃（Flow.nothing_supported_stays）。每项前提都必要，各有一个见证（Restoring），其中一个在第零步不被支持的形成在第一步被支持：要求消解（Adapting，要求放松）；家族之外的给予（Inflow，一个不需要任何东西的给予者向所需的条件给予）；不活跃的给予者（Idle，Acting 不成立）；不被支持的活跃给予者（Carried，Dependent 不成立）；没有给予的上升（Spontaneous，平衡不成立）。不用伦理前提，也不用 Lean 公理。",
     "en": "A formation gains support across the step from t (Web.GainsSupport) when it is not supported at t and is supported at t+1; it loses support (Web.LosesSupport) in the converse case. Its requirements do not loosen across the step (Web.Unloosened) when each requirement it has at t it still has at t+1, at no lower need; they do not tighten (Web.Untightened) when each requirement it has at t+1 it had at t, at no greater need. Where its requirements do not loosen, it gains support only if a condition it requires rises (Web.GainsSupport.rises); where they do not tighten, it loses support only if a condition it requires falls (Web.LosesSupport.falls). In a balanced flow where only active formations give (Acting) and activity needs support (Dependent), every rise is given by a supported formation taking part in the step (Flow.rise_given_by_supported); so a formation whose requirements do not loosen gains support only where a supported formation taking part gives to a condition it requires (Flow.gains_from_supported). Under the same premises, if no member of a family is supported at T, the members' requirements do not loosen from T on, and only members give to what members require, then no member is supported at any later step (Flow.unsupported_stays); of the whole, once nothing is supported, while requirements do not loosen, nothing is supported or active again (Flow.nothing_supported_stays). Each premise is needed, with a witness for each (Restoring) in which a formation unsupported at step zero is supported at step one: a requirement dissolves (Adapting, requirements loosen); something beyond the family gives (Inflow, a giver requiring nothing gives to the required condition); a giver is not active (Idle, Acting fails); an active giver is not supported (Carried, Dependent fails); a rise is given by nothing (Spontaneous, balance fails). No ethical premise and no Lean axiom is used."
@@ -271,7 +271,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -473,8 +473,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

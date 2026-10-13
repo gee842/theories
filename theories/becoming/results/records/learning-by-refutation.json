@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T08:54:51+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "被识的序列 o : Nat → O 是被识的值的序列（例如确定律之轨道的识）；第 t 步之前的记录 record o t（最新在前）；学习者是任意从记录作出的主张 pred : List O → Option O；主张被否证（Refuted）指它主张了一个值而所识的值不同；假设在序列上成立（Holds）指它在任何一步都不被否证。不加前提：对每个序列与每步 t，给出两个不同的值，有两个序列与它在 t 之前记录相同、在 t 分别取这两个值，从该记录作出的主张不在两者上都对（no_record_fixes_next），值可判定时在其中之一被否证（claim_refuted_on_one）；两者都是被列表所持之世界的序列（holdFrom_lasso、no_record_fixes_next_finite）。对每个学习者与移动每个值的 other，对角序列 diagonal pred other x 在每个主张处否证它（diagonal_refutes），所以在它上面学习者不从任何一步起都主张且正确（diagonal_unrested）；它是保留记录之律的识，没有列表持有该律的配置（record_diagonal、diagonal_open）。按否证学习（indexOn、learner：假设 H 依次排列，恰在所持者被否证时移向下一个；值可判定）从不越过成立的假设：H j 成立时指标至多为 j（index_le_of_holds），学习者不在任意晚处被否证（refutations_not_recurring）；越过的每个假设都在记录中某一步被否证（refuted_before）；相同的记录给出相同的假设与主张（learner_through_record）。套索（Lasso o i q：从第 i 步起以周期 q + 1 重复）：确定律的轨道被列表 l 所持时，其每个识都是套索且 i + q + 1 ≤ l.length（lasso_of_held）；每个套索都是被列表所持之世界的识（lasso_realized）。套索假设按对角次序排列（lassos、pairAt、pairAt_place）时：在套索序列上学习者至多被否证 tri (i + q) + q 次、从第 i + q + 1 步起每步主张、不在任意晚处被否证（lasso_learner_bounded），它从某步起每步主张且正确这一点不能被否证（rest_unrefuted，双重否定）；它从某步起每步主张且正确时，序列是套索（lasso_of_rest）；轨道被列表 l 所持时，被否证少于 tri l.length 次、从第 l.length 步起每步主张、不在任意晚处被否证（held_learner_bounded），静止不能被否证（held_rest_unrefuted）；它的对角序列不是套索（diagonal_not_lasso）；有界不降的计数从某步起不变这一点不能被否证（stable_unrefuted）。类 G c 沿对合并（merged）时，G c j 成立则合并枚举上的学习者指标至多为 tri (c + j) + j（merged_bound），而每种合并的学习者在其对角序列上不静止（merged_unrested）。见证：Alternate（false, true, false, …）上学习者被否证两次，从第三步起每步正确（Alternate.index_three、Alternate.rests）。",
     "en": "A course o : Nat → O is a sequence of registered values (such as the registration of a determined law's orbit); record o t is its record before step t, latest first; a learner is any claim pred : List O → Option O made from a record; a claim is refuted (Refuted) when it claims a value and the registered value differs; a hypothesis holds on a course (Holds) when it is refuted at no step. With no premise: for every course and step t, given two values, two courses share its record before t and take the one and the other value at t, and a claim made from that record is not right on both (no_record_fixes_next), and with values decided is refuted on one of them (claim_refuted_on_one); both are courses of worlds held by a list (holdFrom_lasso, no_record_fixes_next_finite). For every learner and every other moving each value, the diagonal course diagonal pred other x refutes each of its claims (diagonal_refutes), so on it the learner does not, from any step on, claim at every step and be right (diagonal_unrested); it is the registration of a law keeping its record, whose configurations no list holds (record_diagonal, diagonal_open). Learning by refutation (indexOn, learner: hypotheses H in order, moving on exactly where the one held is refuted; values decided) never passes a hypothesis that holds: where H j holds the index is at most j (index_le_of_holds) and the learner is not refuted at arbitrarily late steps (refutations_not_recurring); every hypothesis passed was refuted on the record at some step (refuted_before); one record gives one hypothesis and one claim (learner_through_record). Lassos (Lasso o i q: repeating from step i with period q + 1): where a determined law's orbit is held by a list l, every registration of it is a lasso with i + q + 1 ≤ l.length (lasso_of_held); every lasso is the registration of a world held by a list (lasso_realized). With the lasso hypotheses in diagonal order (lassos, pairAt, pairAt_place): on a lasso course the learner is refuted at most tri (i + q) + q times, claims at every step from step i + q + 1 on and is not refuted at arbitrarily late steps (lasso_learner_bounded), and that from some step on it claims at every step and is right is unrefuted (rest_unrefuted, a double negation); where from some step on it claims at every step and is right, the course is a lasso (lasso_of_rest); where the orbit is held by a list l it is refuted fewer than tri l.length times, claims at every step from step l.length on and is not refuted at arbitrarily late steps (held_learner_bounded), its coming to rest unrefuted (held_rest_unrefuted); its diagonal course is no lasso (diagonal_not_lasso); that a bounded count that never falls is constant from some step on is unrefuted (stable_unrefuted). With classes G c merged along the pairs (merged), where G c j holds the learner over the merged enumeration has index at most tri (c + j) + j (merged_bound), and the learner over every merging is unrested on its diagonal course (merged_unrested). Witness: on Alternate (false, true, false, …) the learner is refuted twice and right at every step from the third (Alternate.index_three, Alternate.rests)."
@@ -246,7 +246,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -329,8 +329,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "让单位跨过第 t 步分为 split t + 1 个更细的单位：以更细的单位计，每个条件比此前多立 split t 乘其水平。把细分算作又一个形成（Flow.withRefinement、Web.withRefinement：它从不活跃，不要求、不汲取任何东西），它给每个条件 split t 乘其水平，什么也不取。于是在细分的单位下平衡（Flow.BalancesAt (split + 1)）恰是算入细分的流在脊柱意义下平衡（Flow.balancesAt_iff_withRefinement）。细分只给不取：算入它的流在一个家族上耗散，恰当流自身的形成在其上耗散并且细分什么也不给该家族（Flow.withRefinement_dissipatesOn_iff）；算入它而一步被围住并被耗散时，细分在那一步什么也不给任何条件（Flow.refinement_gives_nothing）。所以，在有普查、关系项都体现、在细分的单位下平衡的世界中，算入细分后耗散并且从 T 起每步被围住时，世界从某步起静止不能被否证，所以生起与止息都不复现（World.rests_unrefuted_refinement_counted）；生起不息时，算入细分后没有一步开始每步被围住的一段（World.arising_opens_refinement_counted）。前提就是脊柱的前提，只是读入了细分：不添任何前提。不算入细分，同样的结论在细分什么也不给之处成立：耗散、从 T 起每步被围住而细分从 T 起不给任何关系项时，世界从某步起静止不能被否证，所以生起与止息都不复现（World.rests_unrefuted_without_refinement，经 World.after 把世界从 T 起读，用脊柱的 World.rests_unrefuted_enclosed），生起不息需要开放或细分的给予（World.arising_needs_refinement）；从 T 起封闭、细分从 T 起不给该家族时取用不复现（Flow.taking_needs_refinement）；储备在细分的单位下只下降而细分不给它时，就是脊柱的储备，不被支持的形成活跃的步不多于其储备（Web.CarriesIn.lasts_unrefined）。见证：Emission、Alternation 与 Circulation 中，以及单位在任意晚的步细分时 Asymptote 中，细分在任意晚的步有所给予；Dwindle 中细分每步给予储备（refinement_feeds_witnesses）。它们的流在每个封闭家族上耗散，所以它们的生起、交换、取用与储备的延续都由细分供给。",
     "en": "Let the unit split into split t + 1 finer units across the step from t: counted in the finer unit, each condition stands at split t times its level more than before. Count the refinement as one more formation (Flow.withRefinement, Web.withRefinement: never active, requiring and drawing on nothing), which gives each condition split t times its level and takes nothing. Then balance at the refining unit (Flow.BalancesAt (split + 1)) is exactly the spine's balance of the flow with the refinement counted (Flow.balancesAt_iff_withRefinement). The refinement gives without taking: with it counted, the flow dissipates on a family exactly where its own formations do and the refinement gives the family nothing (Flow.withRefinement_dissipatesOn_iff); across a step enclosed and dissipated on with it counted, the refinement gives no condition anything (Flow.refinement_gives_nothing). So in a world with a census and embodied relata, balanced at the refining unit and, with the refinement counted, dissipative and enclosed at every step from T on, that the world rests from some step on cannot be refuted, so neither arising nor ceasing recurs (World.rests_unrefuted_refinement_counted); where arising recurs, no step begins a stretch in which every step is enclosed with the refinement counted (World.arising_opens_refinement_counted). The premises are the spine's, read with the refinement counted: none is added. Without counting it, the same holds wherever the refinement gives nothing: dissipative and enclosed at every step from T on, with the refinement giving no relatum anything from T on, that the world rests from some step on cannot be refuted, so neither arising nor ceasing recurs (World.rests_unrefuted_without_refinement, reading the world from T on by World.after and using the spine's World.rests_unrefuted_enclosed), and arising without end needs openness or the refinement's giving (World.arising_needs_refinement); taking from a family closed from T on does not recur where the refinement gives it nothing from T on (Flow.taking_needs_refinement); a reserve that only falls in the refining unit, where the refinement gives it nothing, is the spine's reserve, an unsupported formation being active at most its reserve times (Web.CarriesIn.lasts_unrefined). The witnesses: in Emission, Alternation and Circulation, and in Asymptote where the unit splits at arbitrarily late steps, the refinement gives at arbitrarily late steps, and in Dwindle it gives the reserve at every step (refinement_feeds_witnesses). Their flows dissipate on every closed family, so what keeps them arising, exchanging, taking or lasting is what the refinement gives."
@@ -241,7 +241,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -401,8 +401,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

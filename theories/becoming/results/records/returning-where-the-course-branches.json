@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:14:36+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "对过程 P：配置 n 步之后可得（Branching.Reachable），指有 n 个动作的路径通向它；它返回（Branching.Returns），指从它的一步通向能再得到它之处；过程合并（Branching.Merges、Branching.Lossless），指两个不同的配置一步到同一处。在确定的律下每个都是 R6 的（law_reachable_iff、law_returns_iff、law_lossless_iff、law_merges_iff、law_keeps_iff）。不加前提：失去的可能保持失去（Branching.lost_stays）；返回的配置每步可得（Branching.Returns.reachable），所以处处返回则保留每个可能（keeps_of_returns）；保留每个可能恰是每个配置下一步可得（keeps_iff_fed）。返回的精确条件：配置恰在它自己的路径下一步能得到它时返回（returns_iff_fed_ahead）；每个配置都返回，恰在过程从不离开的每个区域都保留它自己的每个可能时（returns_iff_keepsWithin、returns_iff_fedWithin、keepsWithin_iff_fedWithin），不用有限性。只沿运行、在有限多配置中成立：不合并时运行的每个配置在运行上回来（Lossless.comes_back、Lossless.recurs），运行开始处的配置返回（Branching.Lossless.returns），沿运行从不下降的量保持不变（Branching.Lossless.no_rise），这样的量严格上升与不合并矛盾（Branching.rise_not_lossless，结论为 ¬ Lossless P，不给出 Merges 的见证），不合并而有不返回的配置需要开放（Branching.Lossless.unlisted）。见证：Transit 中每个配置能动、每个可能都保留，between 却从不返回（Transit.keeps_not_returns）；OneWay 合并 false 与 true，两者都返回，每个可能都保留（OneWay.merge_keeps）；P69 的 Fork 不合并而其起点从不返回，因为其终点不能动，所以 Lossless.returns 需要运行（fork_lossless_not_returns）；合并后保持合并需要确定性（Determined.stays_merged；Coarse.meet_and_part）。不加前提。",
     "en": "For a process P: a configuration can be had n steps on (Branching.Reachable) where some course of n moves leads to it; it returns (Branching.Returns) where a step from it leads to where it can be had again; a process merges (Branching.Merges, Branching.Lossless) where two distinct configurations step to one. Under a determined law each is R6's (law_reachable_iff, law_returns_iff, law_lossless_iff, law_merges_iff, law_keeps_iff). With no premise: a possibility lost stays lost (Branching.lost_stays); a configuration that returns can be had at every step (Branching.Returns.reachable), so where every configuration returns every possibility is kept (keeps_of_returns); every possibility is kept exactly where every configuration can be had at the next step (keeps_iff_fed). The exact condition for returning: a configuration returns exactly where its own course can have it at the next step (returns_iff_fed_ahead); every configuration returns exactly where every region the process never leaves keeps every possibility of its own (returns_iff_keepsWithin, returns_iff_fedWithin, keepsWithin_iff_fedWithin), with no finiteness used. Along runs, within finitely many configurations: where nothing merges every configuration of a run comes back on the run (Lossless.comes_back, Lossless.recurs), a configuration at which a run begins returns (Branching.Lossless.returns), a quantity nondecreasing along the run is constant (Branching.Lossless.no_rise), and a strict rise of such a quantity contradicts losslessness (Branching.rise_not_lossless, concluding ¬ Lossless P rather than supplying a witness of Merges), and merging nothing with a configuration that never returns needs openness (Branching.Lossless.unlisted). Witnesses: in Transit every configuration can move and every possibility is kept, yet between never returns (Transit.keeps_not_returns); OneWay merges false and true, both return, and every possibility is kept (OneWay.merge_keeps); P69's Fork merges nothing and its origin never returns, its ends being unable to move, so Lossless.returns needs its run (fork_lossless_not_returns); merged stays merged needs determinacy (Determined.stays_merged; Coarse.meet_and_part). No premise."
@@ -255,7 +255,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -347,8 +347,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

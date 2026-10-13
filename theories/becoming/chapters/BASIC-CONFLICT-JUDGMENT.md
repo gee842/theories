@@ -230,6 +230,74 @@ Completed at this scope: a defended local comparison candidate, a conditional im
 
 <a id="grounding-initial-chances"></a>
 
+<a id="finite-responsiveness-beyond-lr"></a>
+
+## 超出近邻的候选：有限合并回应 FR / Beyond the neighborhood: finite responsiveness FR
+
+2026-10-13，P96。[原交叉损失研究§10](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#finite-responsiveness-beyond-lr)提出比 LR 更强的比较候选：一处较长且较重的基本阻断，与多处较短但同样真实的基本阻断，能否在不是“只差一点”时仍有充分比较？先从共同支持的形成、失效和修复说明这些生活及损失，不能把它们设为独立价值容器再相加。
+
+13 October 2026, P96. The [existing crossed-loss study §10](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#finite-responsiveness-beyond-lr) proposes a stronger comparison beyond LR: one prolonged, graver basic interruption against many shorter but still basic interruptions, with more than a slight difference. Identify living and loss through the formation, failure and repair of common support, rather than start from independent value containers.
+
+**FR：在独立说明的同类、可恢复基本损失中，固定的较重损失不应仅凭程度差异，始终压过任意多项固定的较轻基本保护；若相关支持、负担与历史条件能够在规模扩展中保持，应存在某个有限的共同保护规模，使较多的实际保护取得充分选择根据。** 这是新增、可争辩的规范候选，不是 G0、LR、有限时长或物理连续性的推论，也不是被加入第一部分的新定理或第二部分的第二条基础公理。
+
+**FR:** for independently specified same-kind, recoverable basic losses, a fixed graver loss should not always prevail over arbitrarily many fixed lesser basic protections solely through its gravity difference. Where support, burdens and historical conditions can be retained as scale expands, some finite scale of joint protection should supply sufficient grounds for choosing the greater protection. This is an additional contestable normative candidate, not a consequence of G0, LR, finite duration or physical continuity, and not an added Part I theorem or second fundamental axiom.
+
+其正面理由是：新增的每段基本生活均真实受到保护，固定的同类加重可以要求更强的共同救助理由，却不应仅凭“更重”的顺序地位永久免于比较。**这里公开增加了“共同理由能达到充分强度”的承诺。** 一个对手可以接受 BC1/LR、计入所有较轻损失，却认为其合并始终有上限，或要求较重一方始终得到正机会；本论证未证明对手矛盾。
+
+The rationale is that each additional basic living realization is actually protected. A fixed same-kind increase can demand stronger collective reasons without being permanently exempted from comparison by its ordinal rank. **The added commitment is that joint reasons can become sufficient.** A rival can accept BC1/LR and count every lesser loss while capping their combined force or requiring a positive chance for the graver claimant. No contradiction in that rival is claimed.
+
+实际适用要求较轻损失本身仍属基本、每处实现确实不同、恢复及时且期间支持真实；终末损失、不可重复参与、共同崩塌、额外强加伤害及先行机会承诺不能被隐去。扩大人数可能改变这些条件，所以没有无条件复制判断。较重一处失去此次机会是 FR 的真实代价；别处获救不被称为对它的补偿，后续可行照护仍须保留。没有取得具体充分界限时，不能仅引 FR 就宣布该处请求已被充分击败，既有 J4/CP 的未决范围继续保留。
+
+Application requires that L remains basic, realizations are genuinely distinct, recovery is timely and intervening support is real. Omit no terminal loss, unrepeatable participation, common collapse, imposed harm or prior chance commitment. Scale may change these conditions, so judgments cannot be copied unconditionally. Loss of the graver claimant's chance is a real cost; rescue elsewhere is not compensation, and feasible later care remains relevant. Without a grounded actual sufficiency boundary, citing FR does not establish that this claim is defeated; J4/CP retain their unresolved scope.
+
+本轮给出候选及作者反审，没有新数学、独立验收或普遍交换率；原八项机会定理及其评审范围保持。FR 比 LR 更强之处是容许远离同等点的有限合并，不是把局部小变化无限接力。下一步需在同一具体支持关系内为不足与充分的比较提供根据；完整混合排序与更强奠基仍开放。
+
+This round supplies the candidate and author counterreview, with no new mathematics, independent acceptance or universal exchange rate. The original eight opportunity theorems retain their scope. FR permits finite aggregation farther from equality rather than indefinitely chaining small LR changes. Next establish insufficient and sufficient comparisons within one concrete support relation; full mixed ranking and stronger grounding remain open.
+
+<a id="complete-episode-comparison-anchors"></a>
+
+### FR 的第一组条件边界：完整活动片段 / FR's first conditional anchors: complete activity episodes
+
+2026-10-13，P100。[原研究§11](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episode-comparison-anchors)在共享 `Frame/Run` 上构造同一共同支持过程：路线 A 避免同一生活 P 的两次基本活动阻断，两次之间支持重新可用；B₁、B₂、B₃ 分别避免 Q/R/S 中一次、两次、三次活动阻断。历史主张与相应时点的实际支持已经形式接通；最后支持恢复不会删除失去的活动。它是给定机制中的理论构造，没有现实网络的经验校准。
+
+13 October 2026, P100. The [existing study §11](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episode-comparison-anchors) constructs courses of one common support process on `Frame/Run`: A prevents two interruptions in P, with support available between them; B₁/B₂/B₃ prevent one/two/three interruptions at Q/R/S. Historical claims are formally connected to actual support at their times; final restoration does not erase missed activity. This is a supplied-mechanism construction, not empirical calibration.
+
+新增的公开承诺是：**在基本活动片段内容完整、实际相当且无重复的范围内，完整匹配的减损可以取得充分比较效力。** 它加强了 LC 的理由强度，不由 LC 或支持恢复本身推出。片段对应还须保留累积伤害、共同后果、先行承担与权限；`scope` 不能定义成希望得到的答案。若这些前提成立，A 相对 B₁ 多避免一次完整损失，B₃ 相对 A 多避免一次，因而得到**一次不足、三次足够**的两个条件锚点。B₂ 与 A 仅检查了可逆的损失对应，不声称最终平局或唯一机会比例。
+
+The added commitment is **sufficiency of complete matching within complete, equivalent, nonduplicated basic activity episodes**. It strengthens LC rather than following from LC or restored support. Correspondence must retain cumulative harm, common effects, prior undertakings and permission; `scope` cannot mean the desired answer. Under these premises, A prevents an extra complete loss relative to B₁, and B₃ prevents an extra one relative to A, giving **one insufficient and three sufficient** as conditional anchors. B₂ versus A receives only a reversible loss correspondence, not final indifference or a unique chance ratio.
+
+[外围模块](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean)实际检查 17 项定理、45 项源声明，全部空公理报告；规范充分性仍是显式参数。骨干被三接入修复切断时，原匹配失效的控制也已检查。当前支持可用不证明完整的经验恢复；重复受损的集中即使没有额外功能损伤，也仍是可反对这项规范承诺的理由。连续恶化不能按时间格强行拆成同等片段。本次取得具体范围内的边界，未完成任意 H 的交换或整个 FR。
+
+The [peripheral module](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean) checks 17 theorems and 45 source declarations, all with empty axiom reports; normative sufficiency remains an explicit parameter. The backbone-disconnecting control defeats the match. Available support does not prove full experiential recovery; concentration of repeated loss can challenge the commitment even without additional functional harm. Continuous deterioration cannot be divided into equivalent clock cells. These are scoped anchors, not exchange for arbitrary H or completion of FR.
+
+<a id="complete-episodes-and-whole-course-judgment"></a>
+
+### 完整片段的资格与持续损伤的直接比较 / Complete episodes and direct comparison of sustained harm
+
+2026-10-13，P102。[原研究§§12–13](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episodes-and-relational-remainders)完成上一节两项对应。共同活动的形成、维持、中断和接续给出损失的内容；不能先按时钟制造若干独立价值单位。
+
+13 October 2026, P102. The [existing study §§12–13](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md#complete-episodes-and-relational-remainders) completes the preceding two correspondence questions. Loss content follows the formation, maintenance, interruption and continuation of common activity, without first manufacturing independent value units from clock intervals.
+
+**片段可以分别说明，不等于可以同等计数。** 使用 P100 的匹配须说明五件事：活动具有实际形成和完成／失去的边界；记录指向不同阻断而未重复；跨段能力、承受、期待与共同支持的变化得到保留；保护组合真实可共同实行；完整基本内容及后果在本次比较中确实相当。联合后果可以另行保留，但不能因此从整体判断中消失。相同背景仍会改变损失的意义，也不能直接取消。
+
+**Separate description does not license equal counting.** P100 requires actual activity boundaries, nonduplicated losses, retained cross-episode changes in capacity/burden/expectation/support, jointly implementable protection, and warranted equivalence of complete basic content and consequences. Joint effects may be represented separately but cannot disappear from appraisal. Identical background can still affect the significance of a loss.
+
+支持恢复是边界证据之一，并非任何分解的必要条件，也不是同等匹配的充分条件。不同活动可处在同一持续不利境况中；短暂恢复也可属于同一长期受损。事实完整仍不自动解决受损集中是否具有特殊规范优先；P100 的充分性承诺保持显式。此处完整性相对于实际比较及有证据的关键关系，不要求穷尽全部未来。
+
+Restoration is evidence for a boundary, neither necessary for every decomposition nor sufficient for equal matching. Different activities may share sustained disadvantage, while brief restoration may remain part of one long injury. Factual completeness does not settle an independent normative priority for concentrated harm; P100 sufficiency remains explicit. Completeness is relative to the actual comparison and evidenced decisive relations, not every possible future.
+
+**持续损伤直接按整段生活比较。** 同时说明当下承受与参与、行动及自护能力、实际恢复路径和负担，以及共同支持和进一步生成。若真实修复保住一项基本实现并保留其余相关内容，可用已有 C/J；如果数量与程度交叉，则从独立成立的整段参照取得边界：较轻参照已经不够，目标仅加重同一处损伤时，不足判断可以接续；较重参照已经被共同保护胜过，目标只减轻该方案留下的损伤时，充分判断可以接续。两种接续直接使用旧损失比较定理，传递性、完整方案对应及参照本身的规范根据分别保留。
+
+**Compare sustained harm as a whole living course.** Retain present experience and participation, action/self-care capacity, restoration paths and burdens, common support and further generation. Real repair preserving other relevant content can feed C/J. Crossed gravity/number comparisons use independently warranted whole references: insufficiency against a lighter reference can survive worsening of the same loss; sufficiency against a graver reference can survive reduction of the loss left by that response. These directly reuse the earlier transport theorems, with transitivity, whole-course correspondence and anchor warrant explicit.
+
+具体说，把 P100 两次阻断之间也改成持续阻断，在保护路线及其余关系按原说明保持时，原“一次不足”有恶化依据；原“三次足够”却不能自动沿用，因为三处保护现在留下更重损伤。充分上端需要另获整段参照或实际满足 LR 的规范范围，不能由“有限时长”取得。BC2/LC 的理由不自动升级为这样的充分参照。
+
+Concretely, filling P100’s recovery interval with sustained interruption can provide a worsening input for the original one-protection insufficiency, when protection and other relations remain as specified. Three-protection sufficiency cannot automatically survive: that course now leaves graver harm. An upper anchor needs a further whole reference or warranted LR scope, not merely finite duration. BC2/LC reasons do not automatically become sufficient anchors.
+
+本轮完成分解资格及整段直接比较的理论方法和作者反审；无新数学、公理、经验校准或独立验收，不重记原 17 项定理。新的具体数值阈值仍须给定完整案例及独立比较根据；无需先完成所有持续损伤的统一计量，已经有根据的判断可以成立。
+
+This completes the theoretical method and author counterreview for decomposition and direct whole-course comparison, adding no mathematics, axiom, empirical calibration or independent acceptance and not recounting the 17 prior theorems. A new numerical threshold requires a complete specified case and independent comparative grounds; warranted judgments need not await a universal measure of sustained harm.
+
 ## 初始机会的根据 / Grounding initial chances
 
 2026-10-08。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md)推进不等基本请求对共同分配权限的约束。沿 G0/J 公理路线，继承 BC1、BC2、LC、LR、联合风险与分配历史的完成结果；不因初始份额未定就重开这些成果。

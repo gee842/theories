@@ -1,0 +1,14 @@
+import Becoming.FallibleInquiry
+#check @Becoming.FallibleInquiry.answer_alike_beyond_response
+#check @Becoming.FallibleInquiry.different_answers_not_beyond
+#check @Becoming.FallibleInquiry.answer_alike_beyond_law
+#check @Becoming.FallibleInquiry.coverage_le_errors_add_reach
+#check @Becoming.FallibleInquiry.error_budgets_require_reach
+#check @Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors
+#check @Becoming.FallibleInquiry.Witness.balanced
+#check @Becoming.FallibleInquiry.Witness.law_through
+#check @Becoming.FallibleInquiry.Witness.follows
+#check @Becoming.FallibleInquiry.Witness.read_through
+#check @Becoming.FallibleInquiry.Witness.connected
+#check @Becoming.FallibleInquiry.Witness.correct_answers
+#check @Becoming.FallibleInquiry.Witness.ignored_signal

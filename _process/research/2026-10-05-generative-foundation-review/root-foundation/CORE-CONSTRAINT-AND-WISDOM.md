@@ -1,6 +1,8 @@
 # 为什么核心能够导向智慧：生成约束与理由
 # Why the core can lead to wisdom: generative constraints and reasons
 
+**一个理论中的接通，2026-10-13：**[第23–29节](#wisdom-within-one-connected-theory)接通共同内容与过程保留；[第30节](#static-description-and-warranted-alternatives)接用反事实生成检验静态说明；[第31节](#fallible-acceptance-and-operative-grounds)接用认识研究，修正把每项有根据接受都要求为真的过强读法。全部目标智慧与整个core的实质必要性继续论证。/ Existing content, process and counterfactual results are connected; section 31 uses the knowledge account to distinguish operative fallible support from a guarantee of truth. Whole-core necessity across the intended wisdom scope remains open.
+
 **当前推进，2026-10-08：**[第15节](#deriving-a-family-of-moral-judgments)在固定G0/J/E下展开改变、保留、节制、交接、结束、开放探索、恰当保留选择及有限认识的判断。各项同时列出改变结论的关系；复用既有证明，不把情境构造或历史格言重合记为新定理。
 
 **当前方向纠正，2026-10-08：**[Ren明确指出](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)，道德依赖本理论的普遍原则，因为它判断becoming，而模型能够判断becoming。[第14节](#morality-as-judgment-of-becoming)据此正面接通生成变化、共同评价根据与情境回应。第13节的文献比较保留为背景，不再用情境敏感性或不显式循原则，作为搁置普遍原则路线的理由。
@@ -442,3 +444,1011 @@ G0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、�
 **接入完整目标的下一连接：**利用已完成的目的形成、反馈取得与修订历史，说明形成的判断能力怎样取得这些相关区别，并把认识到的理由用于实际回应。机制本身直接复用；需要对齐的是其实际输出、这里所需的判断内容和仍明示的规范前提。判断内容的统一解释、能力的生成解释与全部智慧的必要关系各自记录进展，不互相冒充完成。
 
 **English scope.** Eight constructed applications make the common generative appraisal operationally discriminating: they state grounds, judgments and reversal conditions under fixed G0/J/E. Existing checked results retain their original credit. Adequacy of a fixed selector does not make its default choice uniquely warranted in incomparable cases. The contribution is philosophical application and error analysis, with no new theorem, empirical sample, blinded historical test or independent acceptance.
+
+<a id="necessity-through-judgment-content"></a>
+## 16. 从判断的内容接通必要关系 / Necessity through the content of judgment
+
+2026-10-13。接续本会话的“core 与智慧的必要关系”。本节是 AI 的哲学论证与作者反审，不是 Ren 的原话，也不新增数学定理。先接住 [P75 的已完成形式整合](BECOMING-RENEWAL-READING.md#93-智慧之根在第一部分所及p75)，再说明这些定理怎样进入智慧的必要性论证。第8、12节的旧“下一步”不重新打开已完成的学习、形成和实践判断；P75 的形式普遍性也不自动承担全部智慧的覆盖证明。
+
+```text
+Result(s): wisdom-root；wisdom-root-part-one；复用 testing-within-registration、
+  generalization-through-lumping、learning-by-refutation、identification-where-bounded、
+  assured-route-criterion、risk-certificate-outcome-distinction、practical-judgment-g0-j
+Delta: 从独立陈述的判断内容与根据，接到共同回应、推广与识别的既有条件；
+  区分关系不可省略、必须作出辨别与必须持续修订；给出五类对应及实质反审
+Supplied premises / correspondence: 判断所声称的内容、范围和强度；有根据的适当性标准；
+  实际过程与表示的对应 E；伦理分支保留 Unrestricted 及 A/L/J 的相应用法
+Evidence: 已检查的共同回应、推广、学习和有界识别声明；原研究的局部必要关系；
+  既有原典区分与本节两项现代作者来源的限定核读；无新增实验或 Lean
+Boundary: 覆盖表不是全部智慧的充分定义；凡需限定实际过程、保证强度或规范根据处均保留；
+  不把形式全称量词升级为全部智慧的构成定理
+Integration: 已证规律的条件与结论 → 独立说明的判断所需内容，连接类型为 interpretive；
+  更新同一 wisdom-root 与 wisdom-root-part-one，而不把此接通另计为数学成果
+```
+
+### 16.1 先说明同一展开中什么需要解释
+
+共同活动留下可继续起作用的差别；其中形成的身体、记忆、语言、工具与安排，使某些差别进入后续辨别和回应。回应又改变这些条件。有智慧者、所判断的处境和承担的范围，是在这些联系中分化的角色，不能先设一个无历史的裁判，再把世界交给它评分。
+
+本轮独立说明的对象是：能说明或恰当地把握一件事，能辨明自己的根据支持到哪里，并在所声称的实践范围内对实际得失作出有根据的回应。它保留第12节的理论理解、熟练回应、认识自限与伦理判断之别。这里没有把 core 的术语放进“智慧”的定义，也没有规定所有智慧必须具有同一套行为。某项传统或实践若有未被这些描述包括的智慧内容，应作为新的覆盖要求保留，而不能因未入表就被排除。
+
+这一对象有一个实质要求：**理解的根据与所理解的内容不能完全失去联系。** 只有答案相同，不足以区分理解、背诵、偶然猜中或有效操纵；但联系也不必是每次口头给出理由。训练形成的辨别、身体对接触的响应、可依赖的共同校验，都可能使联系成立。哪种联系足够，需要按具体主张说明，不能以“正确”二字把它包进定义。
+
+### 16.2 必要关系的正面论证
+
+论证从一个已说明的判断开始，依次接通五步。
+
+1. **固定所判断的内容。** 判断是说“这条路线保证到达”“这项风险不超过某界限”“这个解释适用于这些情况”，还是“这项承担在此仍有效”？这些内容不同，不能用一次动作的成败代替全部检验。
+2. **固定支持它的根据及允许范围。** 实际后果、取得的证据、保留的记忆、可靠见证、模型条件和伦理承诺各自公开。备选情况须是这些根据尚未排除的情况；不是在较弱模型中任意开关谓词，然后宣称现实缺少根据。
+3. **检查省略是否改变判断的适当性。** 依第9节，省略某些差别后仍有共同恰当回应，就不需要恢复所有细节。若省略使原来声称的保证无法成立，则须恢复足够区别、改变回应路线，或诚实收窄主张；暂缓只在其本身有根据时才是选项。
+4. **接到已有形式结果。** `Becoming.commonResponse_judge_iff` 对任意给定的 `admissible` 与信念范围陈述共同回应的准确条件；`Web.belief_judge_iff` 把它接到所识不能区分的历史。这里的 `admissible` 是待说明的适当性标准，不是 core 从空白创造的伦理结论。旧回应与目的评价结果给出真实不兼容的有限实例；它们的条件不被删去。
+5. **回到形成的能力。** 实现可以通过言语、习惯、共同程序或别的方式保持这些联系。必要的是承载所声称能力的关系，不是掌握我们的术语、完整状态表或唯一算法。把判断的所有实际输入——包括记忆、身体、环境提示和他人——保留后，才能说一种实现“忽略了”某区别；只在描述中漏写，不等于实际能力没有它。
+
+所得解释比“智慧也服从规律”更强：**在既定的内容、范围和根据下，某些关系之所以不可省略，是因为省略它们会丢失该判断所声称的能力或根据。** core 的贡献是给出哪些省略有此后果、何种表示仍充分以及怎样失败的精确条件。这些条件允许多种实际实现，所以共同根不要求统一的最小表述。
+
+这并未把所有智慧改成全分支必胜。共同回应判准直接说明的是它所陈述的保证；若主张只是有根据的风险估计，检验对象就是估计及其证据，真实失败仍可发生。若主张是有限证据下可撤销的判断，则需要该类判断自身的正当性说明，不能偷用全分支保证来代替。第11节的结果只证明正确风险界限与失败实现并存，没有证明所有可辩护的错误信念。
+
+### 16.3 五种智慧内容怎样接入，而不被压成一种
+
+| 独立说明的内容 | 此内容所需的关系及既有支点 | 保留的条件和未覆盖处 |
+|---|---|---|
+| 理论理解与推广：一个解释为什么适用于未逐一见过的情况 | 学习到的归并、已见情况与未见情况的联系；`determines_lumped_iff` 区分数据在哪些点足以决定，`lumped_right_iff` 区分推广何时实际正确 | 这是指定函数类与归并的精确结果，不是全部理论智慧的定义；不要求理解立即带来行动收益 |
+| 熟练而审慎的回应：遇到会改变可行性的接触，响应随之适当调整 | 形成的辨别与实际响应相连；共同回应条件与第9节的不同充分描述容许隐性能力和多种方法 | 操作成功不自动成为伦理智慧；具体操练怎样实现这些关系仍由实际对应决定，不能仅凭《庖丁》文字认定机制已验 |
+| 知道自己能说到哪里：在根据不足时不冒称确定，在根据足够时能够确定 | 未限定序列类时的 `no_record_fixes_next`；有状态数界时的 `Identification.bounded_induction`、`knowing_right` 与 `held_learner_rests` | 不知道界与没有界不同；这些是确定性有界历程的结果。由它们不能推出一切认识都须永久怀疑，也不能推出实际世界具有给定界 |
+| 共同判断：分散的接触能进入共同考虑，且回应在实际安排中可实现 | `Clearing.pooled` 给出合并所识能检验单独所识不能检验的情形；共同回应与已有共同实施结果分别承担认识和实行的工作 | 他人在这个情形提供关键区别，不证明每次智慧都必须征询另一个人；合并证据不自动赋予决策权限，也不保证实现 |
+| 道德判断：实际生成、损失和承担使保留、改变、交接或结束各有根据 | 第15节的八种应用与目的评价中的相反比较；普遍根据作用于不同 becoming，结论随实际关系分化 | 第二部分由 `Unrestricted` 推出 G0；相应 A、L、J 与 E 仍须明示。动力学不独自推出优先强度、唯一选择或实际遵行 |
+
+表的第一列不是从定理反向命名出来的全部智慧目录；它沿用第12节已分别说明的内容。第二列说明具体连接，第三列允许反例击中它。共同根在这里承担**解释这些能力怎样有区别地取得和运用根据**的工作，不要求一次理论理解同时执行伦理判断、共同决策和无穷学习。
+
+### 16.4 与独立来源的实质比较
+
+本次补读两项作者来源，目的在于检验对应，不把文献赞同当作根据。[Grossmann 等（2020）的作者摘要](https://wisdomcenter.uchicago.edu/publications/science-wisdom-polarized-world-knowns-and-unknowns)提出把道德根据与元认知应用结合的共同模型，并保留概念和测量争议。本次只读摘要，不能据此声称该模型覆盖全部智慧或认可 G0。它要求我们的伦理与认识连接不能彼此代替。
+
+[Grossmann 与 Kross（2014）作者版本](https://uwaterloo.ca/wisdom-and-culture-lab/sites/default/files/uploads/files/grossmann_kross_-_exploring_solomons_paradox_-_article_proof.pdf)在研究2、3中操纵思考视角，报告对个人问题的智慧推理评分改善；研究3的自身／他人差异仅降至边缘显著。所用的是假想关系情境及评分，不能等同实际决定的正确性。核读范围为摘要、研究2的方法与结果、研究3的指标与结果，以及总讨论的外推限制；未复算数据。
+
+**这一比较改变了候选解释。** P75 中“看见自身所识之外，要他者之识”不能普遍读作必须新增外部消息或请来第二个人。已经取得的经验可能因重新组织注意、提取与比较而开始参与判断；实验并未测定是哪一种内部机制。此时需要解释的是有效辨别怎样改变，不能把一切改善都归为原先缺少外界数据。反之，若某区别确实不在原有效输入中，且判断要求它，单纯改称“换个角度”也不会使该信息凭空出现。这是本研究的解释性区分，不是该实验验证了我们的形式模型。
+
+**English source scope.** Grossmann et al. (2020), abstract only, supplies a moral–metacognitive comparator, not support for G0 or exhaustive coverage. Grossmann and Kross (2014), Studies 2–3 and the discussion, supplies a perspective manipulation and scored hypothetical reasoning, not a test of this core. Reorganizing accessible experience must be distinguished from receiving new external evidence. No replication, data reanalysis or measured formal correspondence is claimed.
+
+### 16.5 自然延伸为什么会发现相连的智慧
+
+现在可以给出一条有内容的发现路线。开始只要求一个判断有根据；追问其根据来自哪些接触和保留，便进入识；追问为什么已有接触能支持未见情况，便进入理与推广；追问模型何时失效，便进入检验；追问检验能否改变后来主张，便进入学习；把同样的问题施于自己的范围和方法，便进入元层次。每一步新增的是前一步尚未承担的解释问题，不能把所有答案事先写进“有根据”。
+
+伦理分支再问：回应使整体中哪些生、后续可能和实际承担改变？在公开规范根据下，就得到第15节中修复与保留、继续承担与合宜结束、探索与审慎等相连但不同的判断。因此，core 能不断生成智慧候选的正面解释，是问题的接续不断暴露实际使能、限制与正当根据，而这些接续已由共同理论中的一组结果支撑。
+
+这解释了为什么核心可能具有发现能力；它还不是“所有历史格言都能推出”的定理。与历史智慧的重合可以由人们反复面对这些关系来解释，但这一历史因果假说还要与传承、相互影响和选择性选例区分。当前论证也没有证明上段每个问题都是每次智慧活动必须显式经历的步骤。
+
+### 16.6 对 P75 两项推论的限定与反审
+
+**保留形式完成，说明必要性的连接。** P75 的定理对其声明的任意学习者、归并或过程成立，这是实质成果。把独立的智慧内容对应到这些形式对象，仍需本节的内容、强度、标准和 E。不能由“每个形式对象服从此律”略去这一步，也不因此重开原定理。记录中的智慧依赖关系采用 `interpretive`；实际 Lean 组合继续在各原成果中保有 `formal-reuse` 信用。
+
+**保留量词，不把开放性变成永远修改的义务。** `diagonal_refutes` 与 `merged_unrested` 给每个学习者构造能反驳其主张的历程；它们不是说每个实际世界都将永远反驳每个学习者。P83 的有界识别与稳定正确结果已经落地，故恰当的正面读法是：认识何时能够收束、何时不能声称收束，由世界范围与已有根据决定。P71 也已落地，不能继续列为未纳入主仓库的暂存证据；其自身条件不由“元层次”一词解除。
+
+另有四项反审约束本节：
+
+- **愚蠢与恶意同样服从规律。** 本论证新增的是所声称根据与回应的适配关系，而非宣称一切活动都智慧；恶意的技术胜任仍需依公开伦理原则评价。
+- **替代解释可能保留同样关系。** 经验、德性或熟练实践的解释若保留全部相关联系，便得到相应解释信用；必须逐项说明哪里等价、哪里仍不同，不能只因都谈“关系”就宣称它接受整个 core。
+- **沉默、观照和不行动不自动是反例或失败。** 它们可以包含把握、保留或改变关系；但若某种被独立辩护的智慧确实不需要本论证所主张的联系，应修订必要性范围，不能无限扩展“隐性”来免疫反例。
+- **理由不全是不可缺少的手段。** 一种回应可以有正面理由而另有同样有根据的替代。必要性落在判断内容与根据之间的联系，不把每一项理由都改写成唯一必要条件。
+
+### 16.7 当前确切完成处与剩余推论
+
+本节完成了一段此前缺失的**哲学接通**：从独立陈述的判断能力，经过其内容、根据和强度，接到统一 core 的具体条件；说明什么省略使能力失去根据，什么省略无害，以及为何不同智慧不必使用同一表示。五类对应使论证可以逐项被检验；原定理、原形成机制和条件性伦理论证保持已完成范围。
+
+**整个必要性目标仍有一项实质负担：覆盖并论证这些关系为何穷尽所主张的智慧范围所需的根部内容。** 本节没有把五类表格宣布为穷尽分类，也未证明每种智慧都须承担 core 的全部实质承诺。下一中心工作应逐项检验本节最强的替代说明与未覆盖内容，辨明共同结构是否真被保留及哪些核心承诺仅为某分支所需。实际形成、情感与充分性保留在完整慧根目标；不把它们全部设成本次必要关系的新增门槛。完整目标也不因这一局部接通而缩小。
+
+**English argument and completion scope.** Within one unfolding, acquired and continuing differences can enter judgment and change subsequent activity. Start with a capacity described independently of this core, its content, grounds and claimed strength. The existing common-response criterion states when an undifferentiated response suffices; the learning and identification results state when recorded evidence can support transfer or stable correctness. Their relevance to wisdom requires the disclosed correspondence and appraisal standard. Necessary relations need not be explicit representations, unique actions, extra external observations or perpetual revision. Five correspondences connect theoretical understanding, tacit skill, epistemic scope, collective judgment and moral appraisal, without collapsing them. This completes an interpretive bridge, not a new mathematical theorem or an exhaustive necessity proof. The remaining necessity burden is substantive coverage and comparison with faithful alternatives; actual formation and sufficiency retain their distinct broader scope.
+
+<a id="tacit-understanding-and-forgetting"></a>
+## 17. 隐性理解与忘却：替代解释保留什么 / Tacit understanding and forgetting
+
+2026-10-13，同一必要性目标的实质对照。先从操练、接触、习惯及环境相互改变的关系开始：哪些影响继续起作用，哪些区分被放下，回应能力怎样改变。由此再说明“有理解的人”“所面对的情况”和“能力的说明”各指什么。这里的理论表示不是在现实之外另立一个观察者。
+
+```text
+Result(s): wisdom-root；复用 wisdom-root-part-one、projection-carrying-a-law、
+  the-split-that-makes-sense、assured-route-criterion 与原来的规范应用
+Delta: 实际比较非表征的熟练实践解释；检验坐忘段对“智慧必须增加辨别”的压力；
+  区分没有显式回忆、说明中的省略及实际能力的改变；固定相关内容后再判断保留
+Evidence: Dreyfus 2002 作者论文的指定部分；《大宗师》坐忘一段；
+  已检查的 goAlike_const、carries_law_iff、Law.sameFuture_of_law、
+  Law.const_makesSense_iff 及旧共同回应结果。无新增 Lean、经验结果或独立评审
+Boundary: 保留这些关系不等于接受全部 core；描述的投影不等于实际遗忘；
+  技艺的成功不自行提供伦理根据；坐忘没有被化约为压缩算法
+Integration: 既有描述保真条件 → 对智慧说明的省略与保留检验（interpretive）；
+  第16节的一般替代解释现有一项具体核对，非又一次宣称所有对手都可翻译
+```
+
+### 17.1 非表征解释是可用的对照，不是一个被删空的对手
+
+[Dreyfus（2002）](https://www.mit.edu/~shaslang/mprg/DreyfusIWR.pdf)把熟练回应解释为身体与情境的习得联系，不要求逐次执行心理规则。他明确区分行动具有满足条件与行动者心中表征这些条件；也承认推广需要说明哪些相似性相关。核读 pp.367–377 的相关段落，不据此认证其全部神经科学判断或当代网络能力。
+
+这项对照可以固定为同一问题：一种形成的能力怎样根据实际接触而作出相宜回应，其范围在哪里？我们允许对照解释拒绝显式模型、可提取的事件清单和先行表述的目标。继续需要说明的，是既往接触何以改变现在的辨别与回应；不能在翻译时把这些实际联系删除，也不能把“有联系”偷偷翻译成“脑内有命题表征”。
+
+| 在本次比较中固定的问题 | 可以省去的说明形式 | 必须继续交代的内容 |
+|---|---|---|
+| 过去操练为何对现在有作用 | 每次检索一份过去事件清单 | 实际组织怎样承接过去的影响；仅称“过去发生过”不说明当前作用 |
+| 相似处境为何有时可用同一回应、有时不行 | 行动者先说出类别和规则 | 对何种相关差别保持响应，在哪些情况同一回应仍恰当；不预设每个细节都要分开 |
+| 回应失效为何可能改变后来能力 | 必须先形成一条言语反驳 | 失效是否实际进入后续组织、由何种联系进入；仅列出失败终点不等于已经纠正 |
+| 这一回应为什么在伦理上可取 | 实践者必须背诵规范原则 | 实际生成后果与公开规范根据；熟练性本身没有替代第15节的伦理论证 |
+
+表是本研究的比较框架，不是把四项都归作 Dreyfus 已证明的主张。**比较得到的正面结论是：对显式表征的拒绝可以与 core 的这组关系相容，而且对照说明确实保留了接触、形成、辨别与回应的部分联系。** 因此，不能用“它不执行规则”作为根基失败的证据；也不能从这些局部对应宣布全部 core 已被对手接受。第13节的笼统“经验／德性／判断”替代说明，在这一项上已有具体保留内容。
+
+### 17.2 有规律的描述仍可能丢掉全部所问内容
+
+仅要求描述服从某条规律太弱，这一点已有 core 自身的证明。`goAlike_const` 表明把全部配置压到同一值的描述，对每个过程都满足 `GoAlike`；由 `carries_law_iff`，承载一条确定规律本身并不保证描述有实质内容。这里引用原已查声明，不新增推论信用。
+
+怎样排除这个空洞胜利？**在比较表示之前，先固定原问题所关心的内容。** 对确定的展开，`Law.sameFuture_of_law` 要求描述既保留给定的所识（`keeps`），又满足相同者同去（`GoAlike`），由此保留所识的未来。`Law.const_makesSense_iff` 则精确说明：常值描述只有在所有配置的所识未来本来就相同时，才是该定义下有意义的切分。不能在看到反例后把所识也改成常值，再宣布保真。
+
+这是一个有内容的根基检验：省略言语规则但保留实际响应关系，与省略使恰当回应不同的关系，不是同一种省略。前者可能是忠实替代说明，后者必须缩窄所声称的解释范围。`keeps` 对应哪个实际问题仍由 E 承担；上面的定理不从空白指定智慧的标准。
+
+也不能把保留完整所识未来强加给每次智慧判断。它适用于声称解释该未来结构的说明；第9节的行动问题只要求相应共同回应，而且充分描述未必有共同最粗者。理论说明的重建条件、一次判断的充分条件与实际人的内部机制各自保留范围。所用类型来自同一形式脊柱，不据这些分析区分另设三种实体。
+
+### 17.3 坐忘使“智慧就是增加辨别”的读法失效
+
+《大宗师》的坐忘段以忘仁义、忘礼乐及“离形去知，同于大通”叙述进益，又说“化则无常”。[中国哲学书电子化计划，坐忘段](https://ctext.org/zhuangzi/great-and-most-honoured-master)。本次经检索返回的完整中文段落核对；直连页面受限，未据此声称通读全章、校勘版本或完成思想史解释。
+
+这一段必须作为覆盖压力保留：智慧不能被预先限定为主张数量、记忆内容或辨别精度不断增加。也不能仅凭“同于大通”就宣布它与本理论是同一个学说。至少须区分三种不同情况：
+
+1. **没有显式回忆，影响仍在。** 训练留下的实际组织继续支持回应；不能把不检索事件表误作历史影响不存在。
+2. **说明少区分了某些事，实际过程未被改变。** 这才是上述投影保真的直接问题：在独立固定的任务内容上，省略是否有害？
+3. **人的习惯、关切或与处境的联系实际改变。** 放下某种执取可能属于这一类。它是 becoming 中的转化，不能仅用更粗描述代替，也不能由投影定理直接证明其改善或智慧。
+
+这一分辨保护了正面路线，也给它真实责任：同一 core 可以表示取得、保留、改变与失去，因而无需把忘却逐出智慧；但要说明某次放下何以有根据，需要交代它改变了哪些实际关系、保留或损伤什么，以及相应评价根据。坐忘的全部内容尚未被这三分法解释。若其独立辩护的智慧内容超出当前判断接口，须扩展解释，不能用“隐性的判断”一个标签宣告覆盖。
+
+### 17.4 对整个必要性目标的实际推进
+
+本节完成两项实质工作。第一，对一个拒绝显式表征的具体解释，定位了它保留的关系和仍未接通的伦理内容；不同实现不再只是抽象许可。第二，以核心的常值描述边界排除了“只要能写成规律就算解释智慧”的捷径，并把忘却造成的覆盖要求分成表示问题与实际转化问题。
+
+由此，根基论证可以更准确地前进：**共同根约束的是取得、运用、保留和改变根据的关系；某一关系应被保留还是被改变，要在具体 becoming 中说明。** 这是一项候选构成论证，不是把所有善于适应的活动定义成智慧。G0 的当前来源及实践承诺保持第16节的公开账目。
+
+尚未完成的具体连接现在是：对于不以作出判断或达成技术目标为中心的智慧，独立说明其所肯定的转化，并证明忠实说明该转化时哪些 core 关系不可缺少。坐忘在这里给出实际需要处理的内容，不能靠继续增加同类操作成功案例替代。全部智慧的必要性目标保持原范围；已完成的形式支撑和本轮局部对应不重新打开。
+
+**English scope.** This continuation makes one alternative concrete and adds a difficult coverage case. It distinguishes an explicit representation from the relations that sustain a capacity, and a coarser description from an actual change in the person’s activity. Existing constant-projection and content-preservation results rule out equating mere law-carrying with informative explanation. The tacit-skill comparison preserves local relational content; it does not identify the rival with the full core. The sitting-and-forgetting passage challenges an accumulating-information conception of wisdom and remains only partly explained. No new theorem, empirical result or independent review is claimed. The next necessity connection concerns the independently warranted content of such transformations.
+
+<a id="letting-go-and-operative-relations"></a>
+## 18. 放下怎样仍有根据：转化中的必要关系 / Letting go and operative relations
+
+2026-10-13。接续第17节。共同生活形成相互支持、注意、习惯与期待；这些联系也可能僵化，使原来有用的回应继续占据已经改变的生活。转化可以发生在共同条件、习惯或体验的组织中。先说明这些变化，再区分放下者、所放下者与评价它的根据；“内部变化”并不因此在实际 becoming 之外。
+
+```text
+Result(s): wisdom-root；复用 practical-judgment-g0-j、comparison-content-under-regrouping、
+  the-split-that-makes-sense 与 wisdom-root-part-one
+Delta: 从独立文本中的相忘、应物和善终，说明转化何以不能被化约为少报一种差别；
+  接通实际需要、供给、解除与评价，区分根部关系的必要性和旧关系的永久保存
+Evidence: 《大宗师》《应帝王》《人间世》的指定中文段落；既有实际交接、解除及
+  分组保真声明与源哈希绑定的通过回执；作者反审，无新 Lean 或经验认证
+Supplied: 原典的有限读法；实际关系对应 E；Unrestricted 所给 G0 及相应用到的 A/L/J；
+  不以原典、平静报告或某种形式的消失自行供应整体伦理结论
+Integration: 既有实践条件与描述边界 → 转化内容不可删去的解释关系（interpretive）；
+  无新增成果身份。整个必要性目标不缩为这个例子，也不再把它当作完全未接通
+```
+
+### 18.1 原问题肯定的内容并非记忆减少本身
+
+本次核读[《大宗师》](https://ctext.org/zhuangzi/great-and-most-honoured-master)的泉涸与生死段、[《应帝王》](https://ctext.org/zhuangzi/normal-course-for-rulers-and-kings/ens)的用心若镜段，以及[《人间世》](https://ctext.org/zhuangzi/man-in-the-world-associated-with/ens)的心斋问答。文本分别把相忘置于江湖，把“不藏”与“应”并列，把虚写成“待物”；生死段又肯定“善始善终”。三个页面直连受限，本次依据检索返回的这些完整中文段落，未通读各章、校勘版本或采用英译替中文定义术语。
+
+**本研究的解释性提取：**这里至少有一种可独立说明的智慧候选——解除对某个既定形式的拘执，使生活与变化中的处境形成较合宜的关系；它不以增加主张、保存原角色或维持原情绪为成就标准。原典支持检验这一候选，不证明整个《庄子》接受本理论的规范原则，更不证明坐忘的全部内容已经解释。
+
+### 18.2 两种实际转化，不能用同一种省略代替
+
+**共同条件改变。** 江湖与涸地的差别使相濡的紧迫作用不同；这一对照的内容不能仅由“鱼不再注意彼此”保留。本研究不把寓言改写成已验证的生态机制。它揭示的解释责任是：如果声称某种紧迫支援可以合宜地结束，就须说明原需要是否仍在、什么实际条件承接了生活，或原要求是否已被正当解除。旧支援形式可以消失，支撑这一结束的关系仍不能被删去。
+
+**与处境相处的方式改变。** 外部事件没有改变，也可能因不再反复抓取同一表象而形成实际安宁。注意、记忆的当前作用和体验之间的关系变了，这不只是观察者改了名称。这里不要求外部问题先被消灭，也不要求安宁将来提高产出或帮助别人，才承认其正面意义；[Ren 已明确自身之善在整体之内](../../../../sources/15-codex-theory-conversations/2026-10-07-self-good-within-the-whole.md)。实际体验的改变与整体比较分别说明，不能把正面的一方面升级为所有后果均无损。
+
+两条路线都可能有根据，也都可能失败。第一条不能用“我不再觉得需要”代替需要已结束；第二条不能因外部事件未变就被判作虚假改善。它们同属关系的实际改变，解释时须保留各自改变的内容。
+
+### 18.3 接到现有 core：什么关系在此不可省略
+
+| 被解释的主张 | 不能省略的关系与已有形式支点 | 精确边界 |
+|---|---|---|
+| 原紧迫支援结束后，仍有效的生活需要得到承接 | `PracticalJudgment.transfer_requires_actual_successor`：在覆盖实际需要的前提下，有需要而旧支持撤去之处，新支持必须存在 | `Covered` 是给定的覆盖要求，不自行产生义务。对应江湖或某项共同安排是解释，不是已写成 Lean 的寓言模型 |
+| 某项原承担已经结束 | `settlement_removes_residual` 与 `unfulfilled_unreleased_remains`：完成或正当解除，与既未完成又未解除，不能靠改名相互替换 | 何者原本正当、什么算完成或解除，仍由实际关系及公开 J3 说明；不宣称每一项联系都产生责任 |
+| 换一种描述后，所称改善仍是真实比较 | P91 的 `Frame.respectsAt_iff` 与 `regroup_extension_iff` 给出局部保真条件；`Transfer.generated_mixed_hidden` 展示从共同初态实际生成的得失可被分组隐藏 | 这些检验描述是否保留比较内容；不证明每次实际转化都须保留全部旧内容，更不证明同需者是同一个生命 |
+| 不再以旧方式分类，仍能对当前情况相宜回应 | 第16节的共同回应判准允许多个情况有同一回应；第17节保留所问内容的条件检验何种省略有害 | 不要求持续显式判断、最大辨别率或永远增加知识；观照本身也不必被改写成一次外部任务 |
+
+表中形式声明已在原来源核查；本节只使用其原条件，没有新建一个“忘却模型”。尤其 P91 的实际混合得失来自同一初态及共同其余规律，不是任意开关较弱模型的伦理谓词。它说明一种描述确实可能遗漏损失，不说明完整 core 无法解释转化。
+
+**必要性论证的增量：**若解释要保留上述转化所声称的内容，就不能同时抹掉使结束有别于失接、解除有别于逃避、实际安宁有别于仅改报告的关系。抹掉后，解释已无法说明原来肯定的是什么。所需关系可以由不同心理或共同实践实现；既不要求使用本理论术语，也不要求把整个证明装进实践者的头脑。
+
+**为什么这仍不是把一切改善叫作智慧？** 须保留三个不同主张：发生了某种变化；变化有实际正面内容；它体现了有根据的理解、相处方式或实践。安宁可以满足第二项而没有证据支持第三项，一次偶然奏效的退出也不自动体现智慧。本节提取的候选包含解除拘执与合宜相处的联系，不能只以满意报告代替这一联系。上述条件对其所声称的内容提供必要检验，尚不是把三项合一的充分判准。因而本节的信用在于接通这一特定智慧内容所不能遗漏的实际关系，不在于仅仅发现它同其他活动一样发生于 becoming 中。
+
+### 18.4 对最强反例的作者反审
+
+1. **善终不保留原个体的回应能力。** 原典的生死段阻止我们把本论证改成“智慧永远扩大每个人的未来能力”。适当承认不可逆变化、减轻当下承受、完成仍可完成的关系，可以是所问内容；不以生产后继或无限延寿为必要条件。这里未从动力学推出如何对待死亡的唯一伦理结论。
+2. **平静可以本身有价值。** 不把它降为供将来行动使用的资源，也不规定必须有某种言语反事实检验才是真体验。若只改变报告而体验未改变，就没有解释所声称的体验改善；若体验确实改善却留下别处损失，正面方面与整体判断须同时保留。这是内容区分，不是关于任何实际修习或疾病的诊断。
+3. **适应环境可能伴随冷酷或自欺。** 能持续、能回应、少冲突均不单独证明智慧。伦理读法继续用 `Unrestricted` 所给 G0、相应实践承诺及 E，不能以“顺应变化”给任何既成状态背书。
+4. **更彻底的无分别解释可能拒绝这个候选。** 若其被辩护的成就完全不在当前回应、体验、生活或结束的内容中，本节没有证明它已被覆盖。反过来，不能为了吸收这一反例，把所有差别都称为隐性回应。须保留对方肯定的具体内容，再检验必要关系。
+
+### 18.5 对整个根的实质修正与下一连接
+
+第17节留下的转化问题现在完成了一项内容明确的解释连接：**必要的根部关系不等于每个已经形成的关系都必须被保持。** 实际需要、实现、失去与解除的关系，恰可说明为什么有时应保持旧方式，有时应替代或结束它。核心推演于是能同时发现“认真回应”和“适时放下”的根据，而不把它们当作互相取消的格言。这是肯定的哲学论证，规范强度仍来自公开前提。
+
+从此不应把“放下必然破坏 core 所需关系”作为尚未处理的反例；也不应把这一个连接宣布成全部转化智慧的穷尽证明。全目标下一步是将已处理的理解、实践、共同判断和转化放到同一必要性论证中，区分共同根的必要内容与只属于某分支的承诺，并检验仍有根据但不落在这些内容中的智慧。不能以再增加相近例子、形式定理总数或一份新分类表代替覆盖论证。
+
+**English scope.** The independent target is a transformation in how life meets changing circumstances, not an increase in stored claims. The argument connects two different realizations: changed shared conditions can make an old support practice unnecessary, and changed attention or habitual grasping can alter experience without first removing an external event. Existing transfer, discharge and regrouping results identify content a faithful explanation cannot omit. They do not require every old relationship, individual capacity or distinction to persist. Tranquility can have value in itself; an appropriate ending need not generate a successor. These are interpretive connections under disclosed normative grounds, not new Lean theorems, empirical findings or a complete interpretation of sitting-and-forgetting. The remaining universal burden is to establish the common necessary content across the independently characterized scope of wisdom, distinguishing it from branch-specific commitments.
+
+<a id="one-root-and-distinct-grounds"></a>
+## 19. 一个共同根怎样容纳不同根据 / One root and distinct grounds
+
+2026-10-13。共同活动中的表达、操练、论证和体验可以形成不同能力；同一人或共同安排又把其中一些联系起来。理论理解、实践判断与生活转化是在这些关系中分化的内容。共同根的论证要说明其连接，不能要求每次活动都执行全部分支，也不能预设每种内容具有同一种成立根据。
+
+```text
+Result: wisdom-root；保留 wisdom-root-part-one 与 §§16–18 的信用
+Delta: 以不变对象的理论智慧检验共同论证；明确共同关系、分支条件与统一解释的不同义务；
+  将全范围任务接回已查的根—规则—闭包判准，取代不断添加同类例子的完成办法
+Reused evidence: InquiryRoot.derivation_sound、InquiryRoot.entire_closure_necessary_iff_basis；
+  InquiryRoot.JointInterpretation.common_basis_iff_common_closure、pointwise_closure_iff_common；
+  历史结果仍归原 inquiry-root 研究，不是新增数学成果或新的 Becoming 适配器
+Supplied: 独立智慧内容；指定所指、实际获得与使用、相应成立根据；完整解释须在这些所指上相容；
+  伦理分支保留 Unrestricted 及实际用到的 A/L/J/E
+Boundary: 没有从形式可表示性推出智慧；未证明所有智慧都实例化当前 core 的全部构成承诺
+```
+
+### 19.1 理论智慧给共同根的严格检验
+
+本次重新核读[亚里士多德《尼各马可伦理学》VI.2–3、6–7，Ross 译本](https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html)：文本区分理论与实践的成就，要求理论智慧既把握原理也把握由原理所得，并容许这种智慧不擅长个人事务。读取的是上述章节的译文，没有作希腊文校勘；不采用其灵魂分部或对象等级作为本理论前提。第12节已经指出理论对象未必在时间中生成，本节接通的是这一点对根基证明的具体约束。
+
+**认识的形成不能代替所知内容的根据。** 以本仓库为可核查例子：`derivation_sound` 的内容是给定推导在其前提成立时保真；某次编译通过，是关于该形式证明被检查的证据；某个人读懂了证明，又是关于理解实际形成的主张。后两件事可以改变，不能据此把同一个定理的真假改写成读者或编译器当时的心理／物理状态。反过来，定理成立也不保证任何实际读者已经理解它。
+
+这些区分没有把数学对象另立为现实之外的实体，也没有先判定数学本体。它们固定了正在解释的内容：命题为什么成立、我们有什么根据知道它成立、什么活动实际取得并运用这种根据。若一个解释只说明阅读如何发生，它尚未解释推论为何有效；若它只列出有效推论，又没有说明某人怎样把握，就不能据此给该人归属理论智慧。
+
+理论智慧由此进入共同论证，而不必被改成“选择下一项有利行动”。此分支需要保留原理、推论和所理解内容的关系；这些关系可保持不变，其实际把握仍可形成或失去。它不要求每个理论判断先在心理上接受 G0，不要求每次使用重新学习，也不要求永远修订一个已经在所定范围内充分成立的证明。
+
+### 19.2 共同关系在何处，分支条件在何处
+
+共同论证现在可围绕同一解释中的三个联系展开。它们是从已有独立内容中提取的候选共同关系，尚不是宣告穷尽全部智慧的定义。
+
+**适用读法，§31补明：**以下“根据”和“把握”须随所称成就区分。知道或理解一个真结论，需要相应内容成立；有根据但可错的接受，则要求实际证据与接受之间有可辩护的支持关系，不能加强成每个被接受结论都真。事后发现错误也不能把原所指改成另一个真命题。[§31](#fallible-acceptance-and-operative-grounds)接用既有认识研究完成这一范围修正，保留以下候选共同关系及全部根基目标。
+
+1. **内容与成立根据的联系。** 被理解、回应或转化的究竟是什么，什么使所称成就在其范围内成立？理论分支要保留原理与推论；实践分支要保留实际得失与公开规范根据；转化分支要保留真正改变的体验、生活或承担。共同之处是不能以一个无关成就替换原问题，并非所有分支使用同一个真值表或价值尺度。
+2. **根据与实际把握的联系。** 若声称某人、某种能力或共同实践有智慧，相关根据须以某种方式参与其理解或相处方式。言语、习惯、记忆、身体配合和共同程序都可承担这一工作；不要求每次显式论证。单把正确答案放在外部解释者的清单上，没有说明这种把握已经发生。偶然符合一项结果也没有独自说明能力。
+3. **把握与所称接续的联系。** 若声称的只是理解，不额外要求成功行动；若声称有实践能力或实际转化，则还须说明其怎样进入相关活动。需要时得到修正与每时每刻修改不同；保持、替代和结束均可在这一联系中成立。主体、能力与环境由实际分化关系定位，不先设三个独立对象再补接线。
+
+每一联系都有可定位的省略：改换问题使答案失去所指；把未实际取得的根据归给能力，使偶然吻合冒充把握；把理解等同已经实施，使尚未接通的行动被报告为完成。§§16–18 与原形成／实践研究分别给出这些省略的实例和条件支点。**这支持一种共同解释结构；它不因使用三个名称就成为全部 core 的已证必要基底。**
+
+相应地，以下条件保留在其分支，不移成每种智慧都须满足的要求：
+
+| 条件 | 何时进入论证 | 不作的普遍升级 |
+|---|---|---|
+| 原理与规则的有效性 | 通过这些原理与规则支持理论结论时 | 不要求所有智慧都是形式演绎，也不由一个人成功学会规则证明其初始原理 |
+| 状态界、可判定所识、指定假设类 | 使用 P73/P83 的相应学习与识别结果时 | 不认定每个智慧过程有限、确定或采用该学习算法 |
+| 共同实施、能力与权限 | 声称实践回应可实行或应由某位置承担时 | 不把这些条件强加给纯理论理解，不把有能力等同有义务 |
+| Unrestricted 所给 G0 与相应 A/L/J | 沿本理论路线主张伦理理由与实践比较时 | 不把它们说成裸动力学的结论，也不把识别真命题等同伦理智慧 |
+| 保留或修订相关区别 | 所称内容的根据依赖这些区别时 | 不要求保留全部信息、全部旧形式或永远继续修改 |
+
+### 19.3 从共同关系到整个根，还必须保持一个解释
+
+现在有一个具体的联合要求：同一论证在使用上述三个联系时，要保持问题、所指和根据相容。例如，不能用某人的实际后果确定“支持生活”，随后在评价时将它换成任意人的替代收益；不能以一种证据说明解释成立，随后把另一个人尚未取得的证据归给他的理解。这不是要求全体智慧使用同一内部表征，而是要求我们的完整解释不在分支之间偷换内容。
+
+仓库已有的[共同解释研究](HUIGEN-NECESSITY-ARGUMENTS.md#10-necessity-across-representations-without-trivial-containment)对此有形式支点，本次核查原源码和回执后直接复用：
+
+- `common_basis_iff_common_closure`：在其语义系统中，一个合格解释使整组根前提成立，恰对应一个合格解释使全部闭合推论成立。
+- `pointwise_closure_iff_common`：根由一个覆盖全部索引的有限列表给出时，**整个闭合理论中每个命题**各有合格解释，已经足以得到共同解释。不能把“分别解释根的几行”误作这个更强前件，也不能在强前件成立后再重复声称仍缺共同解释。
+- `entire_closure_necessary_iff_basis`：对给定的求知类，全部闭合推论必要恰当全部根前提必要。带局部前提的推论仍保留其条件；推演结果丰富不替初始根据作证。
+
+这些是既有小演绎系统的结果。源文件仍在外围 `inquiry-root`，不是新加的纯核心模块；它们没有给出所有智慧的实际解释，也没有把任意生成过程等同形式推导。其作用是准确定位全范围证明的负担：**先为共同根及其规则给出联合根据，随后可复用有效展开；无需把每个未来智慧命题逐一列举。**
+
+### 19.4 对共同论证的反审与可改变结论的条件
+
+**并非只有智慧才需要这些联系。** 普通知识和部分技艺也可能需要它们。这不反驳必要性，但说明目前不能由这些联系单独认定智慧；“为何为智慧”的充分解释仍不能被更名为已经完成。当前目标所要证明的必要地位也不能靠这一点豁免。
+
+**解释者的保真要求还不是全部现实构成根据。** 指出一种说明漏掉内容，可以证明这份说明不足；要进而证明任何现实中的相同智慧都必须具有 core 的某项实质关系，还须表明这种关系确实属于所解释的成就或能力，且 core 对它的读法忠实。仅把所有故事编码为 `Process` 或把所有认可写成 `admissible`，没有完成这一步。
+
+**直接领会不因未经过演绎而被排除。** 它仍有被领会的内容及其实际发生这一主张，但本节不预先认定它必有我们的规则清单。若有根据的解释能保留同一内容和领会，而不需要某项被主张为共同必要的 core 承诺，该项承诺就须收窄或重建；不能把缺少证据的机制称作“隐性”以保护它。
+
+**替代说明得到同等检验。** 一种经验、德性或直接把握的说明若忠实保留上述联系，便具有相应解释信用；它没有因此自动接受完整 core。当前尚需证明的是它保留的内容为什么在共同解释下必然实例化核心关系，不能用术语的可互译性替代这一根据。
+
+### 19.5 本轮推进到的确切位置
+
+本轮完成的是共同论证中的一项必要校正与连接：理论智慧可以接入内容、根据和实际理解的同一说明，而不被化约为关于变化结果的实践决策；道德判断 becoming 的正面路线保持。共同关系与分支条件现已分列，并通过已查的联合解释／闭包结果确定全范围证明的结构。
+
+**剩余前件不再写成笼统的“多找几类智慧”。** 要建立的是：在独立辩护的智慧范围内，上述内容、根据与实际把握的关系能否由同一个 core 解释忠实承载，并使其所需的实质根前提在该范围内不可省略。现有对应还没有证明这一联合必要性；当前三个候选联系既不能被称为全部智慧的定义，也不能被默认为 core 的最小必要公理表。下一工作须落在一项仍有争议的构成承诺及同内容的充分替代说明上，给出肯定理由或真正的反例；本节不以再列一张总表宣告完成。
+
+**English scope.** Theoretical wisdom requires separating why a content holds, what warrants access to it and how understanding is actually realized. A changing knower does not make the known truth true by changing. The candidate common relations connect content to grounds, grounds to actual grasp, and grasp to any continuation the attribution claims; branch-specific requirements retain their scope. Existing closure and joint-interpretation theorems identify the burden of a universal root-and-rules argument, not a requirement to enumerate every future insight. Their conditions and original peripheral credit are retained. What remains unproved is that independently warranted wisdom throughout the intended scope must jointly instantiate the substantive core commitments under a faithful interpretation. No new mathematical theorem or exhaustive wisdom definition is introduced.
+
+<a id="discovery-grasp-and-operative-ground"></a>
+## 20. 偶然发现、直接领会与实际根据 / Discovery, apprehension and operative grounds
+
+2026-10-13。阅读、操练、表达和检验在同一展开中可以相互改变；在其中形成的联系，才使某次活动成为读懂、照抄或猜测。不能先把一个自足的“真理对象”与一个自足的“认识者”分开，再要求前者向后者传递一种特殊因果作用。这里检验第19节第二项共同联系的实质内容，不新增智慧种类。
+
+```text
+Result: wisdom-root；复用 wisdom-root-part-one、acquired-binding-compositional-use
+Delta: 排除把“根据参与把握”读作可靠发现来源或逐项不可替代的因果链；
+  分开取得线索、内容的成立与内容关系在实际理解中的作用；允许直接、冗余和共同实现
+Evidence: 第19节已核查的 derivation_sound；AcquiredBinding 的原声明与通过回执；
+  Pritchard 2009 指定段落的对照及下述作者反审，无新 Lean 或经验实验
+Supplied: 所归属的理解内容与范围；已有推理规则、操作解释及对应证据；
+  理解有别于仅输出相同答案这一独立于 core 术语的解释要求
+Integration: 有效推导的内容输出 ≠ 取得该内容的实际把握；
+  已习得绑定 → interpret → execute 是已有局部接通，不能代替全范围的内容根据
+Boundary: 没有证明所有理解都是规则演算，或每项智慧必须实现整个 core 的每个模块
+```
+
+### 20.1 发现途径不能独占根据
+
+考虑一项明确的同内容对照，这是思想实验，不是新实验数据。一个候选清单包含仓库已有的有效证明；读者偶然遇到这一项，随后读懂各步为什么支持结论。另一个读者只复制同样的结论，既未读懂证明，也没有其他把握。两人遇到材料的方式可以同样偶然，输出文字也可以相同；支持理解归属的差别在随后发生的阅读关系，而不在发现时有没有运气。
+
+这一对照不以“后来核验过”自动认证人的理解。机器通过与人读懂仍须分别举证：前者按原检查范围认证形式证明，后者要求说明读者确实把握了所称的关系。思想实验明确给定第一位读者做到了后一项，随后检验一项候选必要条件——若把非偶然来源定为必要，就会错误排除这一理解。反过来，随机取得一个结论而没有这样的后续根据，不因结论恰真就变成理解。
+
+因此，**取得线索的原因、结论成立的根据、某次理解实际依凭的联系，不必是同一条关系。** 第19节的 `derivation_sound` 为给定推导与前提之间的保真提供原有形式支点；它不要求证明必须由可靠的搜索方法首先发现。这里不新增关于随机搜索成功率、发现算法或心理机制的数学主张。
+
+原典对照：[Pritchard 2009，§§11–13，出版页34–38](https://www.pure.ed.ac.uk/ws/files/8457781/PRITCHARD_2009_Knowledge_understanding_and_epistemic_value.pdf)区分介入能力与成功之间的运气和环境运气，并主张后者可与理解并存；他也以儿童接受起火原因却未理解其关系作区分。本研究不把这一有争议的认识论作为公理，也不采纳“某类来源不可靠，便无论后续核验如何都不可能理解”的扩张。以上证明对照是本研究的进一步检验，不归为该作者原话。读取范围是所列段落，没有据此认证全文或其他作者的立场。
+
+### 20.2 直接领会与多条根据不会破坏必要联系
+
+直接看出一个关系，无需先在时间中执行一串符号推导。例如，对一个合取所包含内容的当下把握，不必先在心中运行 `Derives.andLeft`；该构造是已有演绎系统的表达，不是被宣称的心理过程。要解释这种领会，需要保留领会的具体内容及实际发生的把握，却不应在证据之外增加一个隐性推导程序。若第一次领会没有后续表现机会，也不能仅因缺少测试就断言它未发生。
+
+“实际参与”也不是逐项的反事实不可替代。两条独立核验都已被理解并用于同一结论，撤去一条仍可留下另一条；这并不说明原先两条都没有起作用。相应地，共同理解可由不同位置承担不同工作，不要求每个位置独自拥有所有根据。这里允许的是可替代实现及实际冗余，不是把一个完全未接入理解的外部清单算作它的根据。
+
+对必然内容也不宜采用“如果真理变假，读者是否跟着改变”的普遍检验。应考察仍有意义的差别：读者是否理解这项内容而非只认得句子；论证实际支持的是哪个结论；去掉某个必要前提后，原有支持是否还在。哪些变化容许、哪些关系构成内容，须在该分支说明，不能自由翻转真值制造反例。
+
+### 20.3 既有 core 哪一部分确实接得上
+
+现有结果已经能检验内容关系的若干具体实现，不需要再创造一个布尔变量命名“理解”。[AcquiredBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean)中，接触所得的形式—操作候选实际进入 `resolve`，再经 `interpret` 进入 `execute`。以下是原结果的复用：
+
+- `acquired_binding_and_grouping_compose` 保留任意所编码有限序列与组合解释的对应；`acquired_bindings_reach_actual_compositional_response` 给出其中实际执行的见证。取得的区别在消费它的后续步骤中起作用，不只是研究者给过程附上的标签。
+- `omitted_target_can_produce_a_wrong_unique_binding` 表明局部唯一候选仍可能绑定错操作；`corrected_admission_repairs_use_without_erasing_history` 在原记录保留时修复后续解释和执行。因此“有确定答案”“有因果来历”与“所解释的内容正确”在这个已有历史中确实分开了。
+- `interpretation_can_outlast_affordable_execution` 允许解释仍在而执行支持不足。理解与落实不能混同；纯理论理解无需承担一个未声称的行动成就。
+
+当前源码与其通过的[原冻结回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-checks/20261008T125717.615564Z/verification.json)哈希匹配。本次没有新增定理、重新记数或把外围模块导入纯核心；本节复用的五项声明均保留原外围报告中的 `propext` 与 `Quot.sound`。这个模型仍给定已有操作、分类、有效接触覆盖及来源排除判断；它证明一条获得与使用的关系，未自行建立这些操作的全部语义或全部理解的规范。
+
+与此相连，`commonResponse_judge_iff` 中的 `admissible` 仍是输入。将“真正理解”直接塞进它，不能补上缺口。`carries_law_iff` 则检验投影是否承载确定的律；一个只保留固定正确答案的投影可能丢失理解关系，这不由它仍承载某条律而得到修复。**核心的价值在于可以公开并检验实际承担内容的关系；单纯可表示或输出正确，尚未给这种对应以根据。**
+
+### 20.4 修正后的共同承诺与最强反审
+
+第19节的“根据须实际参与把握”现在应读作：**归属某项理解时，解释须指明所理解的关系怎样在该次把握或能力中实际起作用；发现渠道可靠、正确答案已在某处存在，均不能单独完成这一归属。** 直接领会可以是关系的当下把握，习得技能可以是形成的辨别，共同活动可以分担根据；不把它们统一成一条从外部输入事实的因果链。
+
+肯定理由来自待解释的成就差异：把“某人读懂这一证明”替成“某处出现其正确结论”，删去了原归属的实质内容。这一差别并非 core 发明。已有绑定历史又说明，其部分实现可以在活动内部定位，而非只能诉诸外加的判词。这支持必要联系的候选，却没有使候选免于下列反审。
+
+最强替代说明可以承认一种直接、非推论的内容把握，而否认它需要我们当前指定的分节、归并或更新机制。对此，本节接受其对机制必需性的限制：没有理由把这些分支结构普遍化。进一步争议是，这种把握的具体内容与成就能否在同一解释中保留，而真正不需要任何被声称为共同根的内容关系。仅换术语不回答它；仅说直接领会“很神秘”也不回答它。若可保留同一成就并去掉一项声称必要的关系，就应收窄该项关系。
+
+本轮因此排除了两种错误的完成办法：把可靠取得链当作全部智慧的共同根；把任何正确输出视作所需关系已经实现。接下来的核心义务是**明确当前 core 中哪些内容区分与组合关系足以忠实说明直接和习得的把握，并论证为何保留相同成就就不可省去它们**。已有语义绑定与有效推导分别提供实际作用和内容保真的支点；不能把两者并列就当作已经完成它们的统一必要性。这个义务属于当前必要关系目标，未额外要求完整认知心理学或智慧充分性。
+
+**English scope.** Chance discovery of a proof is compatible with subsequently understanding its grounds. A reliable discovery source, an explicit inference sequence and the indispensability of each individual causal route are therefore unsuitable as universal requirements. The candidate necessity concerns the operation of content relations in the attributed grasp, allowing direct, redundant and shared realizations. Existing acquired-binding results locate one such relation in the interpreter and its actual use, while preserving their supplied meanings and coverage. They do not bridge all semantic warrant to every form of understanding. This is a philosophical correction with source-bound reuse, not a new theorem or completion of the universal root claim.
+
+<a id="content-dependence-and-composition"></a>
+## 21. 内容依存怎样约束接合 / Content dependence and composition
+
+2026-10-13。在同一论证活动中，一次引入可以成为后续判断的根据；新的假设又可形成另一个位置。先有这些相互承接、改接与使用的关系，才说明“原根据”“新假设”“所理解的结论”各是哪一作用。这里不用独立的心灵、对象或外部裁判作为起点。
+
+```text
+Result: wisdom-root；复用 binding-preserving-substitution、constitutive-binding-assessment、wisdom-root-part-one
+Delta: 把“内容关系”落实到已核验的绑定与代入；以当前同值而依存不同的原见证反审；
+  区分全部使用的保真、特定成就的必要依存和核心的实际路径接合
+Evidence: InferentialSubstitution 的原9项定理及冻结回执；GenerativeCore.trace_append_iff；
+  已有构成绑定解释；本轮没有新定理、模型、心理实验或独立验收
+Supplied: 原有限语法、解释和实际对应；哪些依存属于被声称的理解内容；
+  伦理分支的 Unrestricted、A/L/J/E 保持独立公开
+Connection: 实际根据接到指定使用位置 → 原代入定理传递相应评估；
+  核心接合只处理所用读法已保留的边界，不替该读法建立语义充分性
+Boundary: 不把全部项的量词移给一次智慧；不把零前提元逻辑目标追加为本任务的门槛
+```
+
+### 21.1 一个无需外加“理解”标签的差别
+
+[既有代入研究](RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution)中的两个项都类型正确。`retainedOuter` 承接已给的外层根据；`capturedInner` 则返回后来引入的内层假设。外层与内层当前都取 `true` 时，`matching_values_hide_capture` 表明输出相同；保持外层而把内层取为 `false` 时，`typed_capture_changes_answer` 显示两个项各自跟随什么。这里变化的是已给语法所允许的两个输入，不是自由改写一个命名为“理解”的判词。
+
+要保留的成就也必须说清。若任务只是得到当前布尔值，两项都完成了；若所称成就是“承接原根据，而不改用新假设”，后者没有完成。这不要求把所有内部差别都算成理解差别：只有当这项依存属于原来声称的内容，误接才构成对该内容的失去。知道一个结论、理解它由什么支持以及实现一次具体承接，因此可以在输出相同的情况下区别开。
+
+这一点把第20节的“实际作用”从泛泛的成功归因推进到可定位的依存。它既不是结果旁边附加的评价标签，也不是要求原根据在每个可能情况下都无法被别的根据替代。保留该依存可以有不同实现；若改用了另一充分根据，应说明形成的是另一条支持路线，而不是宣称原承接已发生。
+
+### 21.2 现有证明已经给出什么必要性
+
+`all_terms_agree_iff_positions` 的量词十分关键：在原有限语言及解释下，**所有项**经代入的解释都与原来相同，恰当**每个上下文位置**得到原来对应的值。正向用最简单的单位置使用就能检出遗漏；反向由 `extract_substitute` 传递。它给出了全部使用保真的精确判据，不是要求每一项都使用每个位置。
+
+原定理的注释已明示：对一个具体使用者，这个全位置条件不必必要，因为它可能忽略某个位置。因此，从它推出“任何智慧都必须保留一切区别”，或者推出“忘记任一旧根据便不再有智慧”，都不成立。这一量词限制与第18节的合宜放下相容，也与第20节的冗余根据相容。此次不是重证原定理，而是撤去它通向慧根时可能被误加的全范围前件。
+
+正面接通由 `discharge_preserves_assessment` 提供：具体产物满足输入要求，原假设活动确实把满足该要求的根据送到满足输出要求的结果，正确代入便保留该输出要求。这里“确实”由原定理的假设公开表达，不能把其规范地位藏起来。原根据的有效性、规则的适用范围和原实际对应仍需各自支持；代入不会使无根据的输入自行变好。
+
+### 21.3 核心的接合规律如何进入，而不偷换内容
+
+当前脊柱把过程与框架读作同一展开的分析方式，[`Becoming.Unfolding`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)保留这种定位。在这一读法中，[`GenerativeCore.trace_append_iff`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)说明：一条合成路径恰由通过同一个中间配置的两段组成。第一段得到一个当前数值，第二段却从另一个具有不同绑定的配置开始，不能只因数值碰巧相同就当作原路径的接续。
+
+但是，如果一个粗读法原来只保留当前数值，接合定理只对这个读法已经记录的配置说话；它不会自动恢复被删去的绑定。要解释“承接原根据”，读法就须在适当范围内承载这种依存。原代入模型展示了一种承载方式，不能由此断定它是唯一方式或所有直接领会都运行这份语法。这里是两项既有结果的解释性接通，没有新写把推理项翻译成 `Trace` 的适配器，也不把并列引用登记为形式组合。
+
+这指出了 core 与智慧的一项具体必要联系：**当智慧归属包含某种有根据的承接，实际承接的关系不能被仅同值的替换省去；组合所保留的必须是该项成就的内容，而不只是结果符号。** 这个要求来自所声称的成就；原代入与误接结果给它一种可检查的实现。核心接合规律则约束这种实现的继续。它比“一切都发生在过程里”更具体，却还没有使原语法和整个 core 自动成为全部智慧的唯一根据。
+
+### 21.4 不把解释保真冒充现实证明
+
+反对者可以正确指出：上述形式项尚不是一个实际的人。对此，不能把模型中的取值直接改名为人的理解。实际归属仍需证据，显示那项理解确实是对所说关系的把握。若证据只支持知晓当前答案，应收窄归属；若证据支持原根据的承接，则一个删去该承接的说明遗漏了实际成就。新的替代说明可以纠正原依存的归属，而不是因与模型不同便被排除。
+
+直接领会也不因缺少前后两段而被排除。第20节允许一种关系在当下被把握；这里没有强加时间分段。若当下领会的内容含有某项依存，就应说明该依存怎样被把握；若不含有，就不能借代入定理要求它含有。这保留了一个尚须解决的实质问题：直接、隐性和实践的把握能否在同一 core 解释下共同成立，而不把每一种都改写为演绎项。
+
+已有[构成绑定评估](../../../../theories/becoming/results/records/constitutive-binding-assessment.md)完成局部说明，同时留下全部元推理资源的无前提根据。那是其独立的更强目标，本轮不把它追加为当前智慧必要关系的完成条件。反过来，排除这个额外门槛也不自动补齐智慧覆盖。
+
+### 21.5 本轮改变了哪一步推论
+
+现在可以停止把“全表示无损”当作通向共同根的必要中介。下一共同论证应以**成就所需的依存**为单位，容许省略无关位置、改变实现和合宜结束。已完成的绑定／代入负责所定范围内的根据接续；原主张若要求真实生活改变，便由已完成的实践比较及实际对应承担其规范内容。两者不能互相代替。
+
+本轮核对 `InferentialSubstitution` 及其 `InferentialGrounds` 依赖同[原冻结回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json)匹配：原9项定理中3项空报告、6项仅 `Quot.sound`；不重新计数。核心源码与[20261013T113031.597794Z 回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T113031.597794Z/verification.json)匹配，该回执确认核心从 prelude 编译。本轮无新增 Lean。全目标尚需一个有根据的覆盖论证：所指明的共同依存为何对目标范围内的智慧都不可省略；有限语言的全称定理不能独自充当它。
+
+**English scope.** The inherited equal-value capture witness distinguishes a correct current output from retaining a specified dependence. The substitution theorem supplies an exact criterion for preserving every use, but its universal consumer quantifier must not be transferred to each episode of wisdom. Core trace composition constrains continuation under a reading; it does not supply the reading's semantic adequacy. The positive connection concerns the dependencies constitutive of the attributed achievement, allowing irrelevant distinctions to be dropped and realizations to differ. The result is a philosophical integration of checked sources, not a new mathematical adapter, a complete account of actual understanding or a universal root proof. The separate premise-free metalogical target is not added as a completion gate.
+
+<a id="from-reading-to-operative-relations"></a>
+## 22. 从读法接到实际关系 / From a reading to operative relations
+
+2026-10-13。同一展开中，有些变化使一项活动得以继续，有些使一项主张取得根据，有些使根据在理解和回应中实际起作用。应先说明这些关系，再按所问的问题分出条件、活动、主张与把握。把它们共同叫作“依存”，还没有说明它们怎样相连；本节查明现有核心接口已经承担和仍未承担的连接。
+
+```text
+Result: wisdom-root；复用 process-and-frame-as-readings、space-and-its-parts、
+  life-as-condition-of-life，以及第21节的绑定结果；不是新的独立结果
+Delta: 审核从智慧内容进入 World 的接口；分别定位活动读法、支持／交换保留及语义对应
+Evidence: Unfolding、Roles、Space 原声明和冻结检查回执；Dependence.Supported 原定义
+Supplied: 所分析的实际关系、对应及原分支前提；不把量的支持直接改名为推论根据
+Connection: 已给 Flow/Web → ofRoles 保留所列关系 → 在对应成立处复用相应核心规律
+Boundary: 一次运行的保留不是规律与全部可能路线的确定；可表示不等于必要根据；
+  没有新 Lean、经验检验或独立审查，亦没有将全目标改为单项接口维护
+```
+
+### 22.1 “每段运行都是一个世界”保留什么
+
+[`Frame.world`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)以主张为关系项，把主张在运行中的实现读为活动。`Frame.world_active` 与 `Frame.arises_iff` 精确保留实现和新实现；在有限、可判定的范围内，`Frame.claims_recur_iff` 接上开始与不再成立的规律。这是已完成的正面结果。
+
+当主张是“配置等于这个配置”时，`Frame.world_fixes_run` 的结论是两个运行的**状态序列**相等。它不直接断言原动作序列相等；已有 `withMove` 与两个往返定理允许先把动作读进配置，再保留动作。这个修正不需要新证明。无论哪一种，保留一段运行都不能仅凭该定理变成确定未发生的路线或全部过程律。
+
+这个构造同时把 `present` 设为空表，`take/give/level/need` 设为零，`requires/draws` 设为假。因此它的原生流和依存字段没有承载原活动的支持与交换。**这不证明原活动没有这些关系，也不证明所有信息已经丢失。** 状态或主张的内容仍可编码这些关系，`withMove` 正是补充读法的一例。但要使用有关支持或交换的原生定理，就须说明该编码怎样接到定理实际读取的字段；仅有类型为 `World` 的输出没有完成这项对应。
+
+### 22.2 已完成的关系保留路线
+
+[`World.ofRoles`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)直接接收一个已给的 `Flow F C` 和 `Web F C`，通过 [`Flow.roles` 与 `Web.roles`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean)放到共同关系项类型中。原证明给出了精确的接口：
+
+| 输入中的关系 | 已有保留结果 | 下游可以据此使用什么 |
+|---|---|---|
+| 指定活动在指定时刻得到所需支持 | `Web.roles_supported`、`roles_dependent` | 同一支持判定，以及活动依赖支持的条件 |
+| 条件的更新、消耗及被破坏关系 | `roles_renewed`、`roles_consumed`、`roles_undermining` | 相应变化判断，保留原量词与前提 |
+| 实际取与给，以及平衡条件 | `Flow.roles_taken`、`roles_given`、`roles_balances` | 原交换量及其平衡关系；平衡没有被接口创造 |
+| 生起与止息的复现 | `World.arisingRecurs_ofRoles`、`ceasingRecurs_ofRoles` | 同一活动范围内的生起／止息规律 |
+
+这条路线使需要这些关系的判断能够进入共同框架；它不需要把全部内容压缩为当前答案。但它的输入已经包含原关系，并没有从“这是智慧”或“存在一个运行”推出这些关系。若支持关系已经按配置给出，既有 `Dependence.along` 只是沿运行取出它们，亦不自行制造其实际对应。
+
+还有一项应保留的界限：`ofRoles` 用不交和分别放置形成角色和条件角色，不由此认定其中哪个形成就是哪个条件。原 `roles_not_embodied` 与 `roles_not_selfBearing` 明示活跃形成在这个嵌入中不满足对应的体现／自身承受读法。这是该嵌入的范围，不能变成实际生命不承受自身条件的结论。需要角色同一的判断应使用已经确立该对应的共同索引读法。
+
+### 22.3 不能靠同名完成内容对应
+
+第21节的代入关系说明某项结论实际承接哪个根据。[`Web.Supported`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean)则对每个所需条件要求 `need ≤ level`。后者涉及给定量与阈值；它的原定义不是逻辑蕴涵、正当理由或理解。仅把前提命名为条件、把结论命名为活动，还没有建立两者的对应。
+
+这也不排除对应。可以在适当任务中用条件的成立、可用性或保持来解释推理活动怎样实现；但需区分**推论为什么有效**与**这项活动何以得到实行**。一个有效推论可能没有被执行；一项执行也可能承接了错误根据。原绑定与习得结果已经保留这些区别。若建立数值或真值编码，所需结论是指定内容在编码下保持；不能由能编码便宣告理解的根据已经推出。
+
+因此，正面的接续方式是：由独立说明的成就指出实际内容和所需关系，选用确实保留该关系的已有接口，在对应和分支前提成立处应用核心规律，再返回原主张检验其强度。每一箭头都承担不同工作。规范分支继续使用已完成的 becoming 评价路线、第二部分的 `Unrestricted` 及明示的 A/L/J/E；不另加 Dancy 的同意或规范起点的无公理证明作为门槛。
+
+### 22.4 对整个根的推论改变在哪里
+
+本节撤去一个可能的捷径：**“全部智慧均可写成运行；运行均可写成 World；所以整个 core 已证明为全部智慧的必要根。”** 前两项即便在给定表示范围内成立，接口所保留的关系也不足以独自支持最后一项。上述检查限定的是这个推论，并不反驳完整理论，也不把一个弱读法遗漏的关系当成现实中不存在。
+
+正面已有的结果同样具体：共同框架中已经存在保持实际支持、交换和生灭关系的接口；智慧必要性的研究可以直接消费这些证明，不必重建模型。剩余的共同根主张是：**所讨论智慧的内容根据与实际把握，为什么都必须保留 core 所指明的关系，并且这些关系怎样共同成立。** 此处需要一个有内容的统一对应论证。再增加一个 `World` 编码不会完成它；要求每次智慧满足所有分支的前件，也会改变原目标。
+
+这把第12节的“整个根”落实到一个可审查的要求：共同根须解释各分支成立和相连的根据；一次成就只需承担自己范围内的关系。对所给关系的原生保留已经完成；它们作为全部目标智慧不可省略的共同根据仍待论证。两者不能在结项时互换。
+
+**检查范围。** 本轮核对 `Unfolding.lean`、`Roles.lean`、`Space.lean`、`Dependence.lean` 当前字节与[20261013T113031.597794Z 冻结回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T113031.597794Z/verification.json)一致，所复用的29项受审声明公理依赖为空，回执确认核心从 prelude 编译。没有重跑未变的证明，没有新增数学声明或独立成果。`wisdom-root` 保持开放；全目标完成后提交 main 的指令保持。
+
+**English scope.** A frame-world preserves realization along a run, and the configuration reading fixes its state sequence; existing move internalization also retains actions. Native support and exchange fields are empty in that construction, without implying absent relations or irrecoverable information in the original activity. The existing role embedding instead preserves supplied support, renewal, consumption, exchange and balance, but neither supplies their actual correspondence nor identifies formation and condition roles. Inferential dependence and quantified support have different contracts. The positive route therefore carries independently specified achievement relations through an appropriate existing interface before applying core laws. This audits the passage to the whole core and credits completed preservation proofs; it does not turn representability into universal necessity or establish the complete wisdom root.
+
+<a id="wisdom-within-one-connected-theory"></a>
+## 23. 智慧研究在同一个理论中接通 / Wisdom within one connected theory
+
+2026-10-13。[Ren 指出](../../../../sources/15-codex-theory-conversations/2026-10-13-wisdom-within-one-theory.md)，这些研究就是一个理论，其他证明可以提供本研究需要的证明。执行上的修正是：先查整个共同理论已供应什么，再说明尚缺的推论；不能把一个接口、一个文件或一条研究路线的局限直接归给全体。
+
+从同一展开说起：支持关系使活动可以实现，形成的辨别使这些差异参与判断，判断与回应又改变接触方式和支持条件。描述、比较、学习与规范评价是在这些关系中分化的工作。已有证明正是在共同的 `Web`、`Frame`、`Process/Trace` 与 `Through` 上处理它们，不是四个先已独立的世界。
+
+```text
+Result: wisdom-root；复用 comparison-content-under-regrouping (P91)、
+  selection-under-registration-revision (P93)、consequence-revised-reference-plan (P99)、
+  open-form-realization-under-revision (P89)
+Delta: 四项纯核心适配直接连接 P91 与 P93；把 P99/P89 已完成的实际／规范连接纳入根论证
+Supplied: 原 Frame/Web 的内容与需要，指定分组，所需可判定性；
+  P99 的实际接触／绑定／支持；P89 的下降、交接、完成对应及 Unrestricted
+Evidence: RegroupingSelection 的实际 Lean 检查；四项既有成果的10项源码—回执绑定核对
+Connection: 所需剖面 → 接纳内容保真 ↔ 相应判断／选择保留；
+  既有取得／使用及实际完成／正面根据已正式连接，不再重开
+Boundary: 四项适配不是新独立成果；全选择保留不是每次判断使用全部区别；
+  不把不同实例未经适配宣称为同一运行，也不据此宣布全部慧根完成
+```
+
+### 23.1 已有成果实际供应了什么
+
+| 共同理论的已有产物 | 本研究实际需要的输入 | 连接地位 |
+|---|---|---|
+| P91：`Web.paths` 把所需条件接到可实现活动；`SameRequirements.respects`、`regroup_faithful_iff_requiredLevel` 给出保真的充分／精确条件；`extension_iff_widens` 接到原比较 | 判断何时保留实际支持区别，何时分组隐藏得失 | 已有形式连接；不是等待建立的任意编码 |
+| P93：`keeps_through_iff` 与 `lost_choice` 给出判断／选择保留的精确条件与遗失见证；`trace_keeps` 使保留沿实际中间配置组合 | 把内容保留接到可以作出的判断，以及其继续 | 原定理已完成；本节新增四项适配接上 P91 |
+| P99：`complete_history`、`first_installed_choice`、`second_installed_choice` 与两项使用成功，接通取得的后果、参考计划修订、安装与实际回应 | 所需区别能在实际学习活动中形成并被使用，而非只有静态描述 | 已有同一有支持历史的局部实现，实际调用共享 `Through`；不重新要求证明这个接口 |
+| P89：`Run.novel_by_handoff` 把局部推进和规则交接接到界内完成；`Run.relevance_by_handoff_of_unrestricted` 用同一个实现见证取得正面相关 | 实际继续怎样进入生成评价，且后续形态可改变 | 已有正式调用；完成对应和意义前提保持公开 |
+
+这里的 `Web.paths` 承载逐项接纳内容：给定需要均被水平满足。它本身的过程没有步骤，不把逐项接纳自动变成实际发生或联合可行；P91 的同律搬运／保留路线另行提供实际动力学见证，P99 提供取得与使用的历史。共同框架容纳并连接这些不同职责，不能省略其中任何已声明的对应。
+
+因此，第22节检查 `Frame.world` 是必要的局部接口核对，但不能据此说实际依存尚未进入共同 `Frame`：P91 的 `Web.paths` 已经做到了。也不能再泛泛说“形式实现与正面根据只有并列引用”：P89 对所述完成分支已有实际组合。这里修正的是本研究对全体现有证据的使用，不撤销原定理的准确界限。
+
+### 23.2 P91 与 P93 的正式接合
+
+新增的 [`Becoming.RegroupingSelection`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean)只导入这两项原模块，没有新建过程、智慧判词或理解模型。
+
+1. `Frame.regroup_same_realized_iff`：在两个配置都保真的情况下，分组后同样实现什么，恰当分组前同样实现什么。它直接消费 P91 的 `respectsAt_iff`。
+2. `Frame.regroup_through`：依原实现内容作出的指定判断，也能依保真分组后的内容作出。所判断的谓词和过程不变，使用的是 P93 沿用的 `Learning.Training.Through`。
+3. `Web.group_keeps_selections_iff_faithful`：**在所需关系可判定的原范围内，每一步所有依最低所需剖面作出的选择都能经分组表达，恰当该分组在所有水平路径上保留原接纳内容。** 证明实际调用 P93 的 `keeps_through_iff`，再接到 P91 的 `regroup_faithful_iff_requiredLevel`，没有重新证明任一核心结果。
+4. `Web.merged_requirement_loses_selection`：若同组的两个形成在某步、某条件的最低所需不同，就有一种依该所需剖面作出的选择无法经这个分组表达。这直接实例化原 `lost_choice`。
+
+第三项把原来分别说明的两件事接成一个精确判据：保留足够的实际接纳内容，与保留该内容支持的整类判断，是同一条件的两种用法。这不是“都有依存”这种同名联系。量、谓词、分组、全称范围和中间命题都在实际调用中保持。
+
+这里 `Through` 指不可分辨者得到相同的选择判定，是判断与所用内容的相容条件；它不单独构造一个可执行算法或保证行动可执行。P99 的取得、安装和实际使用承担另一个已经证明的工作。
+
+全称范围也不扩大：这里覆盖原 `Web` 的所需剖面、各步以及全部水平路径，没有声称所有这些路径都由某个指定动力学产生。在受限的实际路径上，较弱的局部保真条件仍可足够。一个具体判断可以忽略某些区别；最后一项只给出**至少一种**原选择被遗失，不说所有判断均失败，也不从丢失某个选择推出伦理错误。
+
+### 23.3 这些连接怎样推进共同根
+
+现在已有一条可以直接使用的论证：活动能否实现取决于实际所需；当所声称的判断涉及这些实现差异，P91 提供其内容，P93 提供保留或丧失判断能力的条件，本节把两者正式连接。P99 进一步给出一条实际取得新区别并改变回应的路径，P89 则已经说明一种有条件的实际新实现怎样取得正面根据。
+
+因此，智慧研究无须独自重新奠定接纳、辨别、学习、完成及生成评价。它要消费同一理论已供应的这些结果，解释它们如何成为所讨论智慧的内容和根据。**“本节没有独自证明”不再作为“整个理论没有证明”的理由。** 反过来，连接已有证明也应带上它们确实需要的条件，不能因共同定义相同就把 P99 的有限布尔接触实例直接当作 P89 的全部完成对应已获满足。
+
+这也正面推进 Ren 的 `reason—constraint` 直觉：在该类判断中，理由并非任意附加的标签；所需关系约束什么能实现，保留这些内容的辨别才足以承载相应判断。它有一个正式的共同中间条件，而不是从一次成功输出回填理由。规范效力继续由理论已有意义与实践根据承担，具体支撑关系则给它可判断的内容。
+
+### 23.4 更新后的未完推论
+
+撤去“仍需重新把支持接到内容、把内容接到选择、把实际完成接到正面意义”这种泛化任务。这些连接在上述范围内已经完成，应保留成果信用。
+
+尚需推进的是**这些已连接的关系，怎样共同覆盖所讨论智慧的内容与根据**：包括第17–21节保留的直接领会、隐性实践、合宜结束及理论理解。接续时先查共同理论的对应结果，再补确实不存在的箭头；不为每种智慧另立封闭模型，也不把缺少统一结论当作每条中间连接都要重做。完整必要性目标及完成后提交 main 的要求保持。
+
+**English.** Ren's correction changes the unit of inquiry to one connected theory. P91 already links requirements to admitted activity and comparison; P93 supplies exact selection-preservation and loss criteria; P99 instantiates acquired revision and later use on the shared process; P89 formally joins bounded realization to positive relevance under its disclosed premises. Four pure adapters now compose P91 and P93 directly, identifying preservation of all requirement-based selections with all-level admission fidelity and specializing the existing loss witness. These are connections of existing results, not four independent discoveries or a new wisdom model. Universal wisdom coverage remains the joint argument to develop; completed content, learning and normative handoffs are no longer generic missing steps.
+
+**实际检查 / Actual checks.** [共同核心回执 `20261013T125626.097616Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/verification.json)已通过：四项新适配／四项源声明公理报告均为空，核心从 prelude 编译，内核检查通过，检查期间源码未变。原 P91/P93/P99 模块字节未改。P91、P93、P99、P89 正典记录所列10项继承源码—回执绑定也已匹配；不重新计算其证明信用。/ Four checked adapters, no new independent result; inherited mechanisms, hypotheses and historical receipts retain their scope. This is not an empirical validation or a completed universal wisdom-root proof.
+
+<a id="claim-content-and-configuration"></a>
+## 24. 所判断的内容与发生判断的配置 / Claim content and configuration
+
+2026-10-13。同一活动可以保留多项内容：哪些关系成立、某个推论承接哪个根据、某次交接是否实际发生。配置改变与所判断内容的区别由这段活动中的关系给出，不能因分别设了变量就把二者当作独立存在。本节继续使用共同 `Frame`，查明第23节的选择保留如何进入这些不同内容。
+
+```text
+Result: wisdom-root；继续复用 comparison-content-under-regrouping、
+  selection-under-registration-revision 与现有 RegroupingSelection，未新建独立结果
+Delta: 将 P93 的精确判据接到任意 Frame 的主张成立状态，不再限于最低所需剖面；
+  证明跨配置的选择保留不能替代同一配置中主张的保真
+Supplied: 原 Frame 的实现关系、分组及所问内容；不预设数值需要或可判定性
+Evidence: 同一纯核心模块的四项新增适配；给任意原过程添加固定字面主张的读法
+Connection: 实现状态给出的等价关系 → P93 保留判据 ↔ P91 局部 RespectsAt
+Boundary: 保留主张成立状态，不直接认证完整意义、实际理解、规范根据或全智慧覆盖
+```
+
+### 24.1 同一个保留定理，两个不同的量词范围
+
+第23节的 `Frame.regroup_through` 处理**配置之间**的区别：如果两个配置在原主张的实现情况上无区别，基于这些情况的选择也相同。在分组保真时，这些选择能经分组后的内容作出。
+
+但理解还可涉及**同一配置中判断哪项内容**。新的 `Frame.respectsAt_iff_claims_through` 证明：固定配置 `s`，分组在原 P91 意义上保真，恰当 `F.realized s` 这个主张成立判定满足同组同判。证明不要求行动者在心理上操作命题表，也不要求实现状态可判定；它陈述所用读法的准确条件。
+
+`Frame.regroup_keeps_claim_selections_iff` 进一步实际调用 P93：以“此刻两项主张同样成立”为原等价关系，**所有依这个成立状态作出的主张选择**都能经分组表达，恰当该配置满足 `RespectsAt`。原 P91 的 `respectsAt_iff` 再给出逐项恢复：原主张是否成立，与其分组是否成立一致。由此，接通不再局限于量的支持；它适用于原 `Frame` 能陈述的任意实现内容。
+
+这是具体的复用链：`realized` 供应关系，P93 的精确判据供应必要性与充分性，P91 供应原内容恢复。没有为理论理解、隐性实践或直接领会另写一套过程。对于一项指定判断，仍只应保留其实际使用的区别；这里的全选择量词不能移给每次智慧。
+
+### 24.2 一个同过程读法，排除错误的全范围推论
+
+`Frame.constant_content_keeps_state_selections` 先证明：若原主张的成立状态不随配置改变，所有依这些状态作出的配置选择在任意分组下都保留。理由很直接：这些选择原本就不能区分任何两个配置。
+
+随后 `Frame.literal_claims_separate_preservation` 对**任意给定过程及其一个配置**作如下读法：两项固定字面主张中，一项始终成立，另一项始终不成立；将两者放入同一组。过程没有更换，局部律没有改动，也没有自由翻转一个“智慧”标签。结果是：所有上述跨配置选择都保留，但同一配置中的主张保真失败，相应的全部主张选择也不能保留。
+
+这个见证只否定以下接口推论：**“所有依实现情况作出的配置选择都保留，所以各项原主张也被保真恢复。”** 它不否定完整理论；完整 `Frame` 一直保留哪项成立、哪项不成立。新增适配使全理论能够指出某个读法具体漏掉了哪一类区别。也不能把它说成一个实际的人在理解上失败：这里核查的是两个形式保留标准，实际智慧归属另有内容与证据。
+
+### 24.3 共同覆盖论证因此获得什么
+
+这个结果允许智慧论证从一个通用接口继续，而不要求每种智慧都具有数值需要或运行显式程序。应先独立说明所归属的内容，再复用这个接口判断是否保留其成立关系：
+
+- **直接领会与理论理解：**检查所领会的是哪项内容、承接的是哪项根据。单凭配置选择没有变化，不能认证所称内容已经保留；第21节的实际绑定结果继续供应根据承接的具体关系。
+- **隐性实践：**所陈述的是活动实际辨别和回应的关系，不要求它们被当事人逐项说出。第23节已接通的内容／选择条件与 P99 实际使用继续承担各自工作。
+- **放下与结束：**检查原来声称的负担解除、交接完成或生活改变是否成立。允许省略与所问成就无关的内容；不能由一种更粗描述对变化无感，就认定实际损失已经消失。
+- **道德判断：**原有生成评价和实践根据决定所评内容与强度。这里的保真判据保持该内容，不从一个实现谓词自行产生规范效力。
+
+这不是把四类逐一改名为 `Frame` 就宣告覆盖。每类都需说明什么实际关系承担了所称内容，而其通用保留引理现已可直接复用。原实现谓词也只陈述指定内容的成立：两个真命题可以意义不同，完整理解可以包含尚未被这个读法陈述的依存。若判断要求这些关系，须在共同理论已有的绑定、比较或活动结构中保留它们；不能以真值相同代替意义相同。
+
+因此，本轮实质推进是**移除数值所需限制，并排除跨配置选择保留足以认证全部主张内容的推论**。完整必要性仍须由独立智慧内容与共同理论的实际关系接通来完成；后续应使用这里的通用判据和已经成立的分支证明，不重造四个模型。
+
+**English.** Four further adapters specialize the existing P93 criterion to arbitrary Frame realization and connect it to P91 local fidelity, without numerical requirements or decidability. They also distinguish selections across configurations from selections among claims at one configuration. A constant-literal reading of any supplied process preserves all former selections while failing the latter fidelity criterion; the process and the full account remain unchanged. This generalizes the common interface available to the wisdom argument and rules out a quantifier substitution. Realization-status fidelity does not by itself establish semantic identity, operative understanding or normative warrant. Those contents must be supplied by the connected theory and justified correspondence, rather than by fresh parallel models.
+
+**实际检查 / Actual checks.** [共同核心回执 `20261013T132140.261612Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T132140.261612Z/verification.json)通过：本节新增四项声明，模块合计八项源声明均为空公理报告；prelude 编译及内核检查通过。第23节原四项源码另保留在[当时检查的冻结副本](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125626.097616Z/Becoming.RegroupingSelection.lean)，旧回执和原范围不变；不把重复编译计作新证明。
+
+<a id="grounds-use-and-continuing-revision"></a>
+## 25. 根据、使用与后续活动：共同理论已经接通什么 / Grounds, use and continuing activity
+
+2026-10-13。先前活动的效果参与后来活动：一次指认可以形成所指，一次接触可以改变辨别，一次回应可以改变后来取得根据的条件。引用、认识、实行和支承由这些具体关系分化。本节按照 Ren 的一个理论指令，消费已完成的[构成性绑定评估](RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment)、习得绑定及 [P103 持续修订整合](META-ATTRACTOR-RECONCILIATION.md#p103-full-integration-and-supported-recurring-revision--完整整合与受支持的反复修订)，不再把每段连接留作一项待建模型。
+
+```text
+Result: wisdom-root；复用 constitutive-binding-assessment、binding-preserving-substitution、
+  acquired-binding-compositional-use、consequence-revised-reference-plan、
+  recurring-reference-revision 及既有 P91/P93、P89
+Delta: 接入已完成的“当前取得和使用 → 后续修订实际继续”链；
+  用同一历史中的持续成功与旧区别退役，限定全选择保留在慧根中的位置
+Supplied: 各原研究的内容解释、可靠接触、操作、支承、政策及评价条件
+Evidence: 原 Lean 源码与通过回执；构成性根据的原有实质评估；本节作者反审
+Connection: P103 直接调用 P99 操作及选择引理；其他内容对应为解释性复用
+Boundary: 不把不同类型的旧模型拼称一条已编译历史；不新增数学定理或智慧定义
+```
+
+### 25.1 已有成果怎样承担不同的根据关系
+
+| 所说明的关系 | 已有输出及其实际用途 | 保留的条件 |
+|---|---|---|
+| 一次使用承接什么 | 构成性绑定说明新指认可设立局部所指；代入证明保留指定位置的语义依存 | 成功指认及实际承接须说明；同值答案不单独认证同一依存 |
+| 内容怎样进入能力 | 习得绑定的 `acquired_binding_and_grouping_compose` 接通分组与已知操作；`acquired_bindings_reach_actual_compositional_response` 给出实际回应 | 操作意义、经历覆盖和支承给定；`omitted_target_can_produce_a_wrong_unique_binding` 保留明确的错接及错误输出 |
+| 使用怎样改变后来认识 | P99 的失败后果进入新参考计划，取得与安装实际进入下一回应 | 原接触和返回规律给定；成功解释不等于足够执行，漂移或不足仍会失败 |
+| 后来活动怎样真的继续 | P103 直接消费 P99 的 `execute`；`one_cycle`、`all_cycles`、`continuing` 和 `formation_to_run` 接通实际形成、每轮修订与共同 `Run` | 成功取得可消耗的生产凭据；回返与更替规则、控制器及任务范围明示 |
+
+第一行解决了“每次使用都必须再取得一个独立认可命题”的局部回退：已经展示的承接不靠另一次命名才发生。它没有把任意起点变成良好根据。第二、三行则说明根据怎样实际起作用，不能仅因推论有效就归属理解。第四行现已完成，不能再以“两次修复并不证明持续”要求本会话重复建设。P103 已证明指定条件下的实际持续，包含每轮失配及其修正，并非每步都正确。
+
+这几行仍不是 AcquiredBinding 的状态直接传入 P103 的一条形式程序。前者使用词形和已知操作，后者使用可寻址参考；二者说明不同的局部形成。实际类型相接的证明在 P99→P103 内，构成性引用与两种取得过程的共同意义在这里作解释性连接。共同理论允许不同实例，不能省略对应却把实例说成同一物理历史。
+
+### 25.2 持续与真实损失，已经在同一条历史中成立
+
+P103 的 `run_installs` 将第 `n` 轮安装定位在共同运行的第 `7*n+5` 步，`run_at_cycle` 将下一轮起点定位在 `7*(n+1)`。`retired_choice` 证明：安装时尚能依参考区分旧位置 `n` 的取值，更替后该选择已经不能经现有登记作出。这里丢失的是实际模型中定义的辨别，不是说明者暂时没写它。
+
+同一过程仍按 `one_cycle` 修正下一位置的失配、取得参考、实际使用并继续。因而，P93 的“全部旧选择得以保留”是一个更强的承诺，**不是这条已证明的持续修订历史所需的承诺**。第24节的通用判据继续准确描述保真；它不命令活动无损保留所有旧内容。
+
+这给§18的保持与放下提供了新的共同过程支点：要问某项关系是否仍参与所声称成就，不能只问记忆或区别总量是否增加。此处旧位置退出指定后续任务；如果以后重新要求该位置，既有持续定理并未保证能够回应，也没有证明旧参考一定可以重新取得。实际损失不能被称作无害本身。这个操作性例子也不自行证明坐忘的体验内容或伦理正当性。
+
+### 25.3 从约束到理由：根据参与活动，而非成功自行认证
+
+这条连接对“reason 因为 core 是 constraint 而成立”给出更具体的内容：当某项成就已有根据，支撑它的关系又实际进入所归属的把握与活动，改变这些关系就可能改变判断和回应的根据。约束因此能够说明何时应继续保留、何时需要改造、何时可以结束旧做法；它的工作不只是否决不可能的组合。
+
+但不是任何循环都能凭重复自己取得根据。习得绑定的错误唯一解会产生错误输出，代入中的同值误接会保留当前答案却改变依存，P103 的断供则会在前次回应成功后阻止下一任务。三者分别涉及内容对应、根据承接和接续条件，不能用一个“都运行了”的标准抹平。它们是本理论中已有的实质对照；不是为了反驳本理论而在弱模型中任意翻转“智慧”标签。
+
+道德判断仍消费同一生成过程中的实际后果及已公开的评价根据。P89 已把其指定实现的见证接到 Unrestricted 所给的 G0 正面相关，相关比较与实践承诺各按原范围使用。P103 的循环没有因此自动成为那个见证的伦理实例，更没有由成功自我维持推出其目的正当。这是共享理论内部尚须证明的具体对应，而非另设一个现实之外的价值领域。
+
+### 25.4 本轮收束与可改变结论的证据
+
+已可撤销的笼统待办是“尚无内容取得进入实际使用”“尚无实际后果进入下一次参考构造”“尚无受支持的真实持续修订”。原成果已经完成这些有条件的连接；本任务应使用它们。全选择无损保留也不再作为覆盖持续实践的候选普遍要求。
+
+仍待完成的是**这些具体构成关系如何对独立说明的全部智慧内容取得共同必要性，并足以确立整个 core 的根基地位**。当前例子没有被命名为全部智慧，因此它不能单独证明这一全称结论，也不能单独反驳全部智慧的某项条件。若一项被独立说明为智慧的成就，能够在缺少候选关系且无替代关系时成立，必要性论证就需修订；若只是换名字、换承载或删去无关区别，首先应检查共同关系是否仍在。这样的检验直接沿同一理论进行，不再靠增加局部成功的数量替代全称连接。
+
+**English.** Existing work already connects constituted reference, acquired content use, consequence-driven reference construction and supported continuing revision. P103 directly executes P99 operations, connecting formation to one actual infinite run. On that very run, an old registered distinction is retired while the specified succeeding tasks continue through failure and repair. Preservation of every old choice is therefore stronger than this completed operational achievement requires. This informs the wisdom argument without declaring the process wise by definition or certifying arbitrary future tasks. Content warrant, operative uptake, continuing support and ethical appraisal retain their distinct relations within one unfolding. The full necessity and foundational claim remains open; these completed connections must now be consumed rather than reconstructed.
+
+**检查范围。** 本节未改变 Lean。`ContinuingRevision.lean` 当前字节与 [P103 原保存回执 `20261013T131556.258659Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T131556.258659Z/verification.json)一致：原36项定理、62项源声明空公理报告，prelude 编译及内核检查均通过。原外围绑定与代入保留各自回执和依赖，不提升为新的纯核心证明；本节为复用、实质对应和作者反审。
+
+<a id="fallible-capacity-and-necessary-relations"></a>
+## 26. 可错能力的必要关系，不以逐次正确为前提 / Necessary relations for fallible capacity
+
+2026-10-13。活动中的差异经接触、保留和回应参与后续判断；有些来得及参与，有些迟到，有些虽已可用却被忽略。判断、证据和结果在这一历史中分化。第11、16节已区分正确风险陈述与每次成功，本节继续核对另一项内容：**一项允许错误、仍承诺有所辨别的能力，能否省去相关差异进入判断的关系？** 共同理论的科学求知分支已经给出可直接使用的必要条件，不必在慧根文件里重造证明。
+
+```text
+Result: wisdom-root；复用 finite-fallible-inquiry-necessity、timely-response-necessity
+Delta: 把必要性从全分支正确回应接到有限加权的可错辨别；
+  核对不同内部描述、原生回应关系以及作答时限的既有组合
+Supplied: 独立指定的二项对比、覆盖和错误界、真实权重、完整输入；
+  原生及时关系分支另有共同初始水平、前缀平衡、在场及回应条件
+Evidence: ScientificInquiryNecessity、TimedResponse、FallibleInquiry 原声明及冻结回执
+Connection: 既有盲辨别约束 → 跨描述动态约束；原生及时不可辨别 → 加权必要界
+Boundary: 本节为解释性复用；没有新数学，不把统计辨别定义成全部智慧或伦理许可
+```
+
+### 26.1 被检验的是独立提出的能力承诺
+
+先给出问题中的两种相关情况，分别指定什么回答会错，容许暂不回答，再规定所声称的覆盖和错误上限。这些要求可以来自实际任务或对手，不包含“接受 core”的要求；是否值得承担这项任务又是另一个需要根据的判断。
+
+[原求知研究§10](SCIENTIFIC-INQUIRY-CONDITIONS.md#10-fallible-inquiry-and-the-foundational-inference)的 `fallible_inquiry_bound` 已证明有限自然权重版本：左侧情况的明确作答权重不超过两侧错误权重之和加上配对输入不同的权重。既有 `error_budgets_require_difference` 直接消费覆盖下界与两项错误上界。记它们为 C、b₀、b₁，输入区别权重为 D，原结论是：
+
+\[
+C\le b_0+b_1+D.
+\]
+
+这个界容许错误、暂缓和共同随机化。若解释把完整可用输入中的相关区别抹掉，就不能同时声称超过相应错误总量的覆盖。原 `adaptive_service_excludes_blindness` 已将此结论用于不同内部状态类型：当对应初态、每步活动和最终读数都维持所声明的不可辨别关系时，上述更强能力承诺不成立。这里没有要求两种实现使用同一表示、同一状态划分或同一词汇。
+
+因此，本节得到的必要性不依赖“所有允许情况都答对”。它约束所有满足原定理条件、作出相应能力承诺的实现。其普遍性来自明确量词与证明；落到某项智慧能力时，仍须说明该能力确实包含这种辨别承诺及相应实际权重。有限观测样本也不能自行认证所用规律。
+
+### 26.2 由共同理论说明区别怎样来得及起作用
+
+上面的抽象统计界不要求自然数水平的平衡律。[P104 的原生接通](SCIENTIFIC-INQUIRY-CONDITIONS.md#16-a-distinction-must-arrive-before-the-answer-that-uses-it)进一步解释指定展开中的关系：`TimedResponse` 在共同 Flow/Web 上逐时跟踪实际交换、登记与潜在传播，`answer_alike_before` 证明时限前未被到达的读数相同。`FallibleInquiry.error_budgets_require_timed_reach` **已经形式调用**这个结果与原统计界，将 D 接到作答时限前可到达的配对权重。
+
+此分支保留共同初始水平、时限前的平衡与在场、非源活动的回应条件，以及读数经完整登记给出的条件；统计适配还使用可判定的及时到达。它们说明这一实例中的物理实现，并不是每种智慧必须满足的先验清单。不同初始经验已经含有信息时，应计入原抽象界的完整输入，不能偷用共同初态定理宣布该经验没有根据。预测也不需要等待未来结果传回信号。
+
+原 `Delayed.answers_before_and_after` 与 `constant_read_ignores` 保留了两个不同边界：最终有联系，可以来不及影响早先回答；及时已有联系，也可以未被读数使用。故“都属于同一展开”“以后将会知道”和“现在能够利用”，分别承担不同的说明，不能互换。对先前判断的事后核验可以增加后来根据，不能仅凭后来获得的差异就声称先前已使用它。
+
+### 26.3 对已讨论智慧范围的实际增量
+
+| 所讨论内容 | 本节能够直接承接的部分 | 仍由其他已完成关系承担的部分 |
+|---|---|---|
+| 审慎而熟练的回应 | 当能力承诺包含有错误界的情境辨别时，相关差异不能在完整有效输入中全被抹去；隐性使用也在原条件范围内 | 实际执行、支持与修订由 P99/P103 等承担；技巧的伦理方向另有根据 |
+| 知道自己能说到哪里 | 覆盖、错误和暂缓分别核对；低错误的纯粹不回答不能被报告为已分辨两种情况 | 对现有证据和估计规律的根据、有限界何时可知，继续使用原识别与校准成果 |
+| 共同判断 | 判断所声称的依据包括实际已经进入共同使用的接触与保留；之后才加入的信息不能算作当时已用 | 共同登记、参与权限和共同实施各有原结果，不由统计界授予 |
+| 理论理解、伦理评价、观照与放下 | 若其中还声明一项上述辨别能力，可检验该声明的相应部分 | 理解原理的根据、实际转化及规范意义不能仅由低错误率给出；继续使用§§18–25的内容与根据关系 |
+
+这张表的增量是补上**允许失败的能力承诺仍有必要条件**，并明确它在既有范围中进入哪一部分。它没有把最后一行排除出智慧，也没有把最后一行改写成统计测试。先前“正确风险界限可伴随失败”的结果保持原范围；这次复用进一步约束可错能力的实际区分来源，二者并不重复。
+
+### 26.4 最强对照及全称结论的界线
+
+**依据有利先验作出固定回答。** 一种回应可以在实际概率下有好表现，并不因此达到同时对两种情况承担的错误界。原定理的两项错误、配对和覆盖须逐项对应；不能把它们强加给仅承诺另一种表现的合理选择。它也没有判定这种选择不智慧。
+
+**有根据但实际为假的信念。** 统计界允许错误，不等于已经给出错误信念的完整正当性理论。当前证据的合理使用、实际规律和后来发现的错误须分别说明。不能以事后失败抹去当时的全部根据，也不能以当时谨慎就认证任意错误率。
+
+**换了一套内部解释。** 若其对应活动仍满足原不可辨别见证，原跨描述定理照样约束所承诺能力；若替代解释保留额外有效区别，就应把该区别计入，而不能先删掉再宣布失败。若它改变原生平衡或初态条件，仅凭 P104 不能排除它；仍可检验它在更一般的完整输入界上究竟承诺什么。
+
+至此，已有必要性工具覆盖了确定性保证和一类可错能力，而共同理论又供应其实际、及时的关系说明。这取消了“需要先把智慧假定为不犯错才能论证关系必要性”的要求。**尚未取得的全称结论是：所讨论全部智慧的构成内容共同要求整个实质 core。** 将每类内容在何处消费哪个定理说清，是推进这项证明；将所有智慧定义成满足错误界，则会更换目标。
+
+**English.** Existing finite fallible-inquiry results establish necessary discrimination conditions without assuming perfect answers. A proved adaptive version permits different internal state spaces. The native timed-response theorem is already composed with the same statistical bound, under explicit prefix-balance, common-start, registration and response conditions. This strengthens the wisdom argument for independently specified imperfect capacity claims and distinguishes eventual connection, timely availability and actual use. It does not identify all wisdom with statistical accuracy, certify actual error laws, justify every false belief or derive normative warrant. No new mathematics is claimed.
+
+**证据范围。** 本节复核三份未改源码与各自原通过回执：有限统计及跨描述结果用 [`20261008T135418.446592Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json)，纯核心 TimedResponse 用 [`20261013T125224.520783Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125224.520783Z/verification.json)，外围组合用 [`20261013T125313.109762Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json)。TimedResponse 的30项源声明为空公理报告；统计和外围组合保留其 `propext`／`Quot.sound` 依赖，不将它们宣称为纯核心的新定理。没有新编译、经验校准或独立评审。
+
+
+<a id="present-realization-and-constitutive-necessity"></a>
+## 27. 已实现的内容及其构成关系 / Present realization and constitutive relations
+
+2026-10-13。领会可以当下发生，生活可以因解除拘执而改变，一项回应可以因完成其所指而结束。先说明这些关系的实际形成、保持和转化，再区分所知、所感、承担及其评价。它们不需要先产生额外未来收益才成为本理论的问题。本节消费共同理论已有的内容根据、已实现的生及结束关系，集中处理§26统计承诺以外的内容。
+
+```text
+Result: wisdom-root；复用 one-axiom-yields-g0、ranking-under-readings、
+  constitutive-binding-assessment、binding-preserving-substitution、practical-judgment-g0-j
+Delta: 以一般 Frame 的已实现内容接通当下成就；用原生排序边界区分
+  未来可实现、当下已实现和只数活动事件；收束三个非统计分支的接口
+Evidence: Relevance 原声明与冻结回执；既有数学构成与整体实现论证；作者反审
+Supplied: 原内容及其实际对应；所用 living 读法、Unrestricted 和相应实践承诺
+Connection: 已实现内容 → 原 relevance_least；不同读法 → 原在场／休息边界；
+  所知根据和合宜结束分别消费已有绑定／履行结果，未新建模型
+Boundary: 哲学对应不等于全部智慧的充分定义；没有新数学或体验生成定理
+```
+
+### 27.1 三种成就，各有不能被替换的内容
+
+**理论领会。** 既有[数学构成研究](MATHEMATICS-GROUNDING-RESOLUTION.md#1-the-positive-argument-that-can-be-completed)区分结构所决定的内容、一个人取得该内容的根据，以及具体的学习或演算。慧根任务不要求先证明一切数学真理的唯一终极本体。若所讨论的是理解一项原理或推论，解释须保留该内容及其根据在实际领会中的作用；仅有结论印在纸上没有交代这个成就。§§19–21的直接领会、偶然发现和冗余根据已说明，必要关系不能被加强成唯一取得途径、逐项不可替代因果链或显式计算程序。原内容的成立可以不变，其把握仍可实际形成或失去。
+
+**观照与安宁。** §18的候选包含与实际处境相处方式的变化，及解除拘执所实现的生活内容。解释不能以“未来还能做同样多的事”替换“当下已经改变了怎样体验和相处”。既有[整体实现论证](WHOLE-PROCESS-REALIZATION-ARGUMENT.md#2-fix-the-target-without-building-in-the-verdict)已分别说明实际发生、活动的对象与参与关系、评价及实践根据。它没有把回避信号、满意报告或不行动直接认证为体验或智慧；本节保留这一限制。实际安宁本身可属于自身之善，遵循[Ren的明示范围](../../../../sources/15-codex-theory-conversations/2026-10-07-self-good-within-the-whole.md)，不附加生产性回报条件。
+
+**合宜结束。** 原回应有其对象与承担；完成、正当解除、仍未完成和失去支持是不同变化。`settlement_removes_residual` 与 `unfulfilled_unreleased_remains` 已在其明示范围内给出准确区别。整体实现研究又说明：一项回应可能因成功而不再有原先仍存在的对象，结束这一当前形式没有抹去其历史贡献。需要保留的是所称完成或解除的实际关系，不是命令每一项过去有价值的活动永久重复。对于仍有效的需要，原实际交接结果继续适用。
+
+这三段是构成性必要关系的正面理由：改变了被领会的内容、实际相处方式或所履行的承担，就可能不再是原来声称的成就。仅在描述中省略这些关系，不能据此断言它们在活动中不存在；反过来，解释既然声称保留该成就，就须交代它们实际如何被承接。这里没有把每种关系都化成对未来动作的预测。
+
+### 27.2 共同 core 已有当下实现接口
+
+`Becoming.G0` 在一般 `Frame` 上陈述：若一项内容属于所用的生的读法，且在当前配置实际实现，就有相应正面相关。它的定义没有要求无限运行、未来新增量或向别人返还利益。[Relevance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Relevance.lean) 的 `g0_of_unrestricted` 已由明示的 Unrestricted 供应此 G0；`relevance_least` 进一步证明，在该条件下这种相关恰覆盖已实现的 living 内容，并被每一种满足 G0 的正面相关包含。
+
+因而，“已经实现，尚未证明它增加以后产出”不是把该内容挡在一般 G0 之外的理由。此结论没有取消 `living`、实际实现和意义读法的对应责任，也没有由一个变量名称认证真实安宁。`g0_relevance_iff` 保留的恰是明示的意义条件；正面相关与所有后果的总体排序、许可或义务仍须分别说明。
+
+另一读法 `Web.paths` 则将实现读作给定水平能否接纳一个形成，它不表示该形成已实际发生。一般 Frame 与这个特殊实例本来就在同一理论中。把其接纳读法当成全部实现的唯一含义，会删去本节正在解释的成就；无需另造一个现实领域来恢复这些内容。
+
+### 27.3 原证明同时限制两条过强的统一路线
+
+`Ranking.possible_tie` 在指定支持律、需要初值与汲取不超更新的条件下，证明有该形成与无该形成的历程接纳同样的形成，可能性扩展不把两者定序；`Ranking.readings_rank_presence` 则证明，逐步与整段 living 读法均记入实际在场的事件，并由此给出严格扩展。`sharing_presence` 将这些结论放在同一已给实例中。这是原生实现与接纳内容的区别，不是自由切换一个“善”的标签来反驳整个理论。
+
+但把“可能性相同之后优先更多实际事件”设成统一答案同样过强。原 `Ranking.Rest.rest_ranked_below` 在同一支持与接纳条件下，使停歇一步的历程在该词典序下低于持续活动。这个例子没有表示安宁的体验或休息的健康作用，故不能声称它已证明实际休息更坏；它精确表明，这个只记入活动的读法尚未说明本节要求保留的休息内容。为它另加一个“休息好”的标签，也不会解释那项内容如何实现。
+
+这两条边界共同约束根基论证：未来可能性不能独自替代已实现内容，单纯更多活动也不能独自决定其意义。完整 core 保留这些不同读法及其准确关系。哪一读法足以承担某个实际判断，应从被说明的活动、体验、所指和评价根据出发，而非选择最容易得到期望结论的排序。
+
+### 27.4 收束原分支，保留整个根的真正负担
+
+现在不应再把理论领会、观照和结束统称为“尚无接口，因为它们不增加未来能力”。内容承接、当下实现的相关、完成与解除，均有已完成的共同理论成果；这些既有成果支持§§18–21的实质论证。当前目标也没有要求先完成全部数学本体论或完整体验生成理论，本节不增加这些门槛。
+
+整个目标的剩余负担更集中：**要证明忠实解释所讨论全部智慧时，这些构成关系共同要求本 core 的实质结构，而不仅仅能被某个 Frame 表示。** 有内容的必要关系、一个通用表示和整个根的必要地位是不同结论。当前肯定论证已经能指出每项被删去的是什么；还须将这些关系在同一解释中的必要性接到具体根部承诺，防止把各分支分别选择的有利读法冒充一个共同根。
+
+可改变本节判断的证据也明确：若所声称的同一领会、相处或完成能够在缺少上述实际内容关系且没有替代实现时仍成立，应修订对应的必要关系；若只是得到另一个同样有价值的成就，则要承认替代而不把原成就假称保留。这里不以原规范论证的更强无公理目标作为障碍，Unrestricted、适用的实践承诺与实际对应继续明示。
+
+**English.** Apprehension, contemplation and appropriate ending need not earn their standing through an additional productive sequel. Existing content-binding and fulfillment work supplies their differentiated relations. The general Frame’s G0 and `relevance_least` already concern realized living content under explicit significance conditions. Existing native rankings distinguish actual presence from unchanged possibilities, while the rest witness limits the repair that simply favors more activity. These are constraints on explanatory content, not a new experience theory or wisdom definition. The remaining whole-root burden is joint constitutive necessity under a faithful interpretation, not another mechanism for these already connected branches.
+
+**检查范围。** 本节未改 Lean。Relevance 当前源码及其32份仓库源文件导入闭包与[原通过回执 `20261013T094743.528770Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json)匹配；模块原39项源声明均为空公理报告，prelude与内核检查通过。旧数学构成、整体实现及履行论证保留其历史范围；本节不把既有来源核读计作新形式证明或经验验证。
+
+<a id="common-operational-structure-and-wisdom-content"></a>
+## 28. 已有共同结构证明怎样进入慧根 / Common operational structure and wisdom content
+
+2026-10-13。同一活动形成的结果，可以成为随后活动的条件；两份说明可以保留不同细节，却都准确说明哪些接合成立。先从这项实际关系说明共同内容，再讨论表示和解释者。§27留下的共同必要性问题，应消费已有的[接合研究](EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#3-unavoidable-distinctions-before-any-minimality-requirement)，不能继续把“不同说明如何保留共同结构”整体列为未证。
+
+```text
+Result: wisdom-root；复用 functional-joining-common-structure、
+  multivalued-joining-common-structure、joining-questions-survive-encoding；
+  原接合研究的 ExplanatoryHistoryInterfaces 具体对应与边界
+Delta: 以已有共同操作因子取代“各分支只能分别表示”的笼统判断；
+  核对该因子究竟保留接续、实际内容与根据中的哪些关系
+Supplied: 同一接合活动及其对应、所声明问题范围的精确解释；
+  唯一结果或有限多结果分别保留原条件；Reduced仅在原定理用到处
+Evidence: 三份未改外围源码、两份原通过回执；本节为解释性接通与作者反审
+Connection: 独立的接续问题 → 共同操作内容；其实际历史边界 → §§24–27内容／根据保留
+Boundary: 没有新增数学、全智慧定义、无限求知要求或纯核心公理报告
+```
+
+### 28.1 必须保留共同内容，不要求相同词汇或最简表示
+
+[ExplanatoryContextualStructure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean) 从同一个接合关系形成有限嵌套的问题：一个片段与指定伙伴接合，再把所得结果接入后来活动，是否有实现。`Exact` 要求解释对这些已定问题回答准确；它没有预先要求两份解释之间存在结构映射。
+
+`different_realization_forces_distinction` 证明：某个这样的安排在一处能实现、另一处不能实现，精确说明不能把两处编码合并。`every_exact_account_has_canonical_factor` 进一步给出每份精确说明到共同问题内容的唯一、按同一片段对齐的对应；**源说明不必满足 Reduced**，可保留额外细节。`unique_common_operational_structure` 则在固定输入对至多一个结果、两份说明精确且约简时，给出保留接合操作的共同对应。后一个结论的约简条件不是前一个必要性的前提。
+
+这比术语互译强：共同内容由接合的可能与不可能约束，不由我们任意指定一个翻译表。它也比“必须采用我们的全部表示细节”弱；额外记忆、不同符号和不同内部组织不因其差别被排除。这里的唯一性是按同一实际片段对齐的已用代码对应，不是关于全部世界或所有自同构的唯一性。
+
+### 28.2 多种可能结果也已有共同结构证明
+
+[ExplanatoryJoiningBranches](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean) 已处理有限多结果，不能继续把唯一结果当成这条路线的通用要求。它使用更丰富的问题：否定、合取，以及接合后某个结果仍具有哪些可能性。条件不只是删去确定性；有限结果与完整分支问题均公开。
+
+`common_multivalued_structure` 在精确且约简的解释下保留全部可能结果类；`operation_lifts` 使编码层的结果可以从**指定的原输入对**取得，不靠中途换一个方便的代表。`questions_survive_encoding` 将问题中的伙伴也经同一个编码翻译，证明共同关系内部仍能回答原问题。原 `every_exact_account_has_canonical_factor` 同样不要求源说明约简。
+
+所以，“各解释都可任意换一种接合结构而仍完整保留同一接合内容”在这些原条件下已被排除。这里仍没有认定每个有智慧者都能回答所有问题，或实际取得每项否定的证据。完整解释的数学承诺、个人有限的把握与实际执行是同一活动中不同的关系；不能把前者的量词强加给后两者。一个结果仍可走两条路，也不表示两条路已经同时执行。
+
+### 28.3 一个确切边界：全部接续问题也不等于全部成就内容
+
+[ExplanatoryHistoryInterfaces](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean) 在同一 `Process` 的已见证有限历史上给出具体对应。`all_joining_contexts_iff_boundaries` 证明，两个历史对全部这类接合问题同答，恰当它们的起点和终点相同。固定历史的接合唯一，并不要求底层过程没有分支。`every_exact_joining_account_retains_interfaces` 和 `all_exact_accounts_factor_through_interfaces` 因而给出必须保留的实际接续界面。
+
+但原 `different_histories_same_required_interface` 同时保留两段事件字不同、对全部接合问题同答的历史；原完整历史说明也被证明精确而不必约简。**接续问题的充分结构，可以不决定其范围之外的实际历史内容。** 这不是智慧反例，也不是完整 core 遗漏了历史；完整历史仍在同一理论中。它限制的是将这个共同因子直接提升为全部智慧根的推论。
+
+这与§24的主张保留和§25的根据承接接在同一处：若某项领会或判断还声称“取得的是这个根据”“履行的是这个承担”，就须在其实际对应中保留这些内容。不能因两段历史后来可接相同活动，便把其中一段的根据归给另一段。若问题只问接续可能，省略这些额外事实可以完全合格；若问题还问实际知道、经历或履行了什么，解释的承诺已经不同。这里没有添加一种外在于活动的意义实体。
+
+### 28.4 整个根的负担现在落在哪里
+
+| 要确立的关系 | 已有证明直接供应什么 | 本任务仍须说明什么 |
+|---|---|---|
+| 实际条件与可接续活动 | 精确解释必保留改变接合可能性的区别，且具有共同因子 | 所讨论智慧中哪些具体内容承诺这些接续问题，实际关系怎样对应 |
+| 不同表述之间的共同结构 | 同一接合活动的不同精确说明，在原条件下共享操作内容；无需先给解释之间的同态 | 这项对齐如何与内容、根据及实际把握的对齐同时成立，不能各用一套有利对应 |
+| 实际把握与所称成就 | §§24–27的主张保留、绑定、实际接续、当下实现与履行成果 | 它们与接合的共同因子在同一完整说明中保留什么；不能由起终条件恢复未编码的实际根据 |
+| 伦理理由与总体判断 | 原规范路线继续消费 Unrestricted 所给 G0 及用到的 A/L/J/E | 哪项实际内容支持哪项判断；操作保真不自行授予意义、许可或义务 |
+
+共同解释的闭包结果继续承担§19的工作：根及规则已有共同根据时，推论可以保全这些根据。这一轮补入的是**共同操作内容本身已有必要性证明**，不是重新证明闭包，也不是要求每项智慧实现 core 的每个局部前提。条件规律保留其前件，表示细节不冒充全部智慧的构成条件。
+
+全目标仍须在独立说明的全部目标智慧上完成最后一列。不能以增加共同因子的数量完成这一步，也不能再说共同结构的一般数学接口尚未建立。能改变当前结论的证据是：一份保留同一成就及其根据的替代说明，究竟仍通过这些具体关系，还是确实省去某项被主张必要的关系。若仅省去接续问题没有涉及的历史细节，先核对所称智慧是否还需要它；不把弱问题的省略当作完整理论的失败。
+
+**English.** Existing exact-account results already force a common operational factor without requiring the source account to be minimal. Functional joining gives a common partial operation; finite multivalued joining uses richer branch questions and preserves possible output classes, with partners translated through the same account. The history instance precisely limits this achievement: all joining-context answers determine the endpoints while distinct internal histories can remain. This is no counterexample to the full core, which retains those histories. It identifies where the wisdom argument must join operational necessity to content, grounds and actual uptake in one interpretation. Complete answer fidelity is an explanatory contract, not an omniscience requirement on a wise person. The universal wisdom-root claim remains open.
+
+**检查范围。** 本节未改 Lean。原[接合回执 `20261008T124028.366028Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-contexts-checks/20261008T124028.366028Z/receipt.json)列出的10份源码、原[多结果回执 `20261008T130611.816353Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json)列出的14份源码均与当前字节匹配。三份消费模块原有11、11、16项声明审计，保留各自的 `propext`、`Quot.sound`，多结果恢复另用 `Classical.choice`；它们是既有外围证明，不进入纯核心，不冒称空公理证明或新编译。
+
+<a id="one-relation-for-content-and-continuation"></a>
+## 29. 同一关系保留内容与接续 / One relation for content and continuation
+
+2026-10-13。同一活动中的内容成立可以随活动改变；一份解释声称承接它，就须说明每次接续到了哪里、那里成立什么。当前内容与后续关系在共同 Frame 内给出，未另立认识世界。§28的操作因子不覆盖其问题范围外的历史内容；共同脊柱已有保留主张和步骤的同一关系，本节将它直接接到§24的内容保真。
+
+```text
+Result: wisdom-root；形式复用 comparison-content-under-regrouping（P91）、
+  configurations-alike-by-relation（P69）；保留原P93适配的范围
+Delta: 现有RegroupingSelection模块新增三个适配；同一个R在归并前后
+  同时保留主张成立和步骤对应，不从各自的存在见证拼成共同关系
+Supplied: 两个Frame使用同一动作及原主张类型、同一个主张分组q；
+  反向恢复要求所联系位置上的RespectsAt，Alike等价使用两侧处处保真
+Evidence: 新模块共11项空公理审计；核心回执20261013T145624.509021Z通过
+Boundary: 原Process与P69/P91/P93定义不变；不推出主张读法的实际充分性、
+  实际懂得、规范根据或全智慧归属；不重证P76的检验恢复
+```
+
+### 29.1 共同保留的关系已经在脊柱上
+
+`Becoming.Bisimulation F G R` 对每个被 R 联系的位置要求两件事：同一主张在两侧同样成立；每侧的每一步，都由另一侧以同一动作走到仍被 R 联系的位置来对应。这是[Unfolding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)的既有定义。原 `Bisimulation.trace`、`Alike.trace` 与 `Alike.tests` 已将这种共同关系传到有限历程及其末端主张；不同内部配置类型也可参与，未要求同一内部表示。
+
+原[P76 检验结果](../../../../theories/becoming/results/records/tests-fix-likeness-where-determined.md)进一步区别两种证明强度：`alike_iff_sameTests` 在两侧处处相同之下确定时，从全部指定的有限历程／末端主张检验恢复该关系；原 `Choosing.sameTests` 与 `Choosing.not_alike` 则保留没有该条件时的失败。Choosing 的主张类型为空，其差别在分支时机，不能把它说成已经给出实际认识失败的例子。它具体限制的是把逐项存在的历程当成同一后继关系。外围的更丰富分支检验有自己的条件与桥接，原范围不重开。
+
+### 29.2 三个适配保留同一个见证
+
+本节在[现有 RegroupingSelection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean)新增：
+
+| 声明 | 已检查的内容 | 条件与没有增加的内容 |
+|---|---|---|
+| `Frame.regroup_bisimulation` | 原来的 R 同时匹配内容与步骤，则在两侧以同一个 q 归并主张后，仍是该 R 匹配内容与步骤 | 此方向不要求保真；归并后的主张是原成员成立的存在式，过程不变 |
+| `Frame.regroup_bisimulation_iff` | 若 R 所联系的位置在两侧均满足原 `RespectsAt`，归并前后该同一个 R 是互模拟的条件等价 | 只在被 R 联系的位置要求保真，不假定未联系位置也保真；不换步骤见证 |
+| `Frame.regroup_alike_iff` | 两侧处处保真时，归并前后原 `Alike` 等价 | 复用同一 R；无商类型、有限性、可判定性或确定性假设 |
+
+反向证明直接使用 P91 的 `respectsAt_iff` 恢复每个原主张的成立状态，同时原样保留步骤的后继见证。这不是先各自证明“内容可以保留”“步骤可以保留”，再把两个可能不相容的见证合并。原过程、具体动作和关系 R 均未更换。§24中内容恢复的条件现在足以供应这一共同保留接口，不须另加一种过程模型。
+
+原 P91／P93 的准确范围保持：`RespectsAt` 认证所声明内容的成立状态能从分组恢复，不认证完整意义；保留所有所问选择也不是要求每项智慧使用所有信息。新的三个定理不声称保真是任意具体判断的必要条件，更没有要求保留所有过去形式。
+
+### 29.3 对慧根推论的实际作用与反审
+
+**正面连接。** 理论理解若涉及内容与原理的承接，实践判断若涉及实际回应及其根据，观照或结束若涉及所声称的生活改变，它们的解释可以在同一 Frame 中指出相应内容与步骤。已有构成、形成与履行研究负责这些实际对应；本节的适配保证忠实归并不会迫使我们把“内容成立”与“怎样继续”拆成彼此无关的保留证明。对于已经供应同一 R 的实例，这个形式连接已经完成，不再列作待建接口。
+
+**仍须兑现的内容。** 两个 Frame 共用主张类型，不等于实际使用了同一意义；将某命题命名为“有根据”“已经理解”，也不使它成为这些关系的充分说明。所指、根据和实际使用怎样形成，继续由§§19–27的实质论证和原机制承接。若声称保留的是一段已经发生的获得历史，就不能只证明另有一段可能历程会得到相同末端主张。原实际 Run／Trace 的见证保留其信用，新的互模拟不替人认领未发生的历史。
+
+**规范范围。** 过程对应不把有害的熟练活动变成智慧；伦理分支仍用 Unrestricted 所给 G0 及相应 A/L/J/E。一个有根据的静止、保持或结束也无须为了适用本接口而产生新活动。空历程与既有的停止／履行分析不被排除。
+
+因此，剩余任务不能再笼统表述成“还没有将内容和步骤保存在同一关系的方法”。该方法以及它与忠实归并的连接已有证明。尚须完成的是：对独立说明的全部目标智慧，所用内容、关系及成立根据为何真实而不可省略，并由同一解释支持整个 core 的根基地位。若替代说明保留这些具体关系，应承认其共同结构；若保留同一成就却确实无需某项候选关系，则须修改那项必要性主张。新接口没有预先裁决这个实质比较。
+
+**English.** Three adapters on the existing pure spine connect P91 claim fidelity to P69 content-and-step bisimulation. Regrouping preserves the same relation without fidelity; reflection requires fidelity only at its related configurations. Global fidelity gives equivalence of the original Alike relations. Processes, moves and successor witnesses remain unchanged, and no quotient, decidability, finiteness or determinism is introduced. Existing trace transport and P76's exact recovery scope are consumed, not reproved. This completes the stated joint-preservation interface; actual semantic adequacy, acquisition history, normative warrant and universal wisdom-root necessity remain substantive obligations.
+
+**验证。** [正式核心回执 `20261013T145624.509021Z`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json)通过：三项新增定理，模块共11项源声明均为空公理报告，prelude编译及内核检查通过。此前四项与八项适配的冻结源码和回执保留；未改检查基础设施，没有新增独立成果身份或经验验证。
+
+<a id="static-description-and-warranted-alternatives"></a>
+## 30. 静态说明怎样保留关于替代行动的智慧 / Static description and warranted alternatives
+
+2026-10-13。本节检验一个具体竞争说明：把活动、领会和后果全部写成一份固定说明，不使用本理论的生成术语。共同展开在这里包括一个部分改变条件、其他部分据此回应，以及这些回应继续改变条件；“部分”和“条件”按其中的作用区分。把说明写成静态文字不会让这些关系消失。需要检验的是说明保留的内容，不能先把静态等同于孤立实体。
+
+```text
+Result(s): wisdom-root；复用 causal-models-as-processes、counterfactual-is-the-course；
+  原 P53/Experiment 的记录固定性及 P65/Response 的 Loop 见证保持原范围
+Delta: 用同一目标内容区分记录说明、带根据的规律说明和仅陈述答案的说明；
+  将已有 P80 生成反事实接入第14–15节对 becoming 的判断，不再另给独立的第二历程
+Supplied: 所判断的具体替代行动、实际规律的根据和对应；数学前提逐项保留；
+  伦理应用仍用 Unrestricted 所给 G0、实际用到的 A/L/J/E
+Evidence: 原四模块源码及34份导入闭包与已通过的20261013T094743.528770Z回执匹配；
+  七项选用的既有声明，无新数学、模型、实证样本或独立验收
+Boundary: 任意确定过程上的记录不充分，不等于受实际规律约束的整个理论不充分；
+  不要求全部智慧都作反事实推理，不由相同结果认证实际领会
+Integration: P80产生有共同规律的替代历程 → 既有生成评价所比较的内容；
+  此消费是 interpretive，原 P53→P68→P80 内的形式复用信用保持
+```
+
+### 30.1 固定同一个成就再比较
+
+检验对象沿用第15节：有根据地判断改变、保留或结束一项安排会怎样影响有关生活，并据此作出相应强度的评价。这里的“会怎样”是判断已经声称的内容，不是为了适配 core 临时加上的全知要求。若某项智慧只涉及已经实现的平静或直接领会，本节不替它附加这个要求。
+
+一份替代说明可以完整保存实际发生的行动、体验与理解。在它所描述的那个成就上，应给予完整信用。可是，描述“当时确实采取了此行动并得到此结果”和说明“若改用另一行动会有何结果”承担不同内容；若原成就包含后者，删除它便改变了被解释的成就。反过来，如果所谓“实际理解”的完整说明已经包括被理解的规律及其根据，不能在检验时删掉这些内容，再把剩余记录的不足归给原说明。
+
+### 30.2 现有证明给出的准确区别
+
+在原 [Experiment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean) 中，`Run.Fixes` 问的是：**所有容许所给记录的确定过程**，是否都给某个配置下的某动作同一后继。它没有把已经独立确立的物理规律、伦理根据或人的全部知识放进这个候选类。
+
+[Mechanism](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean) 的 `inputs_intervention_unfixed` 已证明：该配置—动作组合在给定时点之前未被采取，且配置类型中有两个不同元素时，仅凭该记录不固定其后继。`inputs_model_fixes` 同时给出，指定模型将它送到哪一后继。前者通过修改未取步骤而保留已取步骤证明记录范围的不足；这种修改**没有**证明新过程仍满足原来一切实际规律。因而本节用它反驳“只有这些记录就足以确定该反事实”的推论，不把它用作完整本体或既有规律的反例。它也不否认带先验、近似或统计根据的有限判断。
+
+已有 [Counterfactual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean) 进一步接上正面解释，详见[原整合§100](BECOMING-RENEWAL-READING.md#100-回应由动力学给出反事实是规律的进程p80)：
+
+| 已有声明 | 对本问题提供什么 | 保留的条件 |
+|---|---|---|
+| `counterfactual_is_course` | 指定替代行动时，其他部分依同一律回应的平衡历程就是该律生成的进程；不另供一份任意第二历程 | 给定交换律及行动律均只读已发生水平；进程可行；在场形成、起始水平、实际平衡及所遵从的律一致 |
+| `comparison_with_act` | 将生成的替代历程送入保留／新增的比较；其余如何回应由共同律给出 | 另有经识读取的条件、覆盖回应所及的意义以及原比较范围；不是自动作出全部道德排序 |
+| `Run.beyond_shown_iff` | 对确定过程，完整已发生历史所未展示而规律仍有的一步，恰涉及该历史从未在那里采取的动作 | 原确定性与同一运行；这是一步的刻画，不伪称完整替代进程的证明 |
+| `ExchangeLaw.closedBy_course` | 行动也由配置中的规则形成时，共同运行是该行动生成的进程 | 行动规则与初态给定；没有把行动者放到过程之外，也未推出自主性或责任 |
+| `Loop.courses_fixed` | 同一起点、同一回应律下，两种行动分别固定已有的两段历程 | 保留原平衡、在场形成、共同起点与回应律；不是现实人际关系的经验定律 |
+
+这五项与上列 Mechanism 两项均为原有已检查声明。判断所用的实际规律怎样取得根据，由已有的学习、识别、证据及对应研究承担；本节不把规律的给定说成现实之外，也不把给定说成已由这一定理证实。
+
+### 30.3 一个已有实例，三种说明
+
+原 [Response 的 Loop](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean) 从两个条件各有二单位开始。第一形成在首步取用第二所需条件的一单位；第二在下一步察觉该条件下降，依给定回应律取用第一所需条件的二单位。原历程中第一条件遂降至零。另一行动不作首步取用时，同一回应律不产生后续取用，两个条件保持二。P80 的 `Loop.courses_fixed` 证明，在声明条件下，这两个历程分别由第一部分的行动固定；两个后果不是为得到判断而自由填写。
+
+因此，可以公平比较三份说明：
+
+- **只列实际发生的记录。** 它保存实际经过；若进一步声称仅凭这些记录已确定未取行动的结果，承担的是前述额外推论。原 P53/P68 给出这一类推论的范围限制，不直接宣判一个实际人物没有智慧。
+- **固定写下规律、起点、行动与相应根据。** 它虽是静态说明，仍保留条件下降、回应及其接续依存。P80 已从这些关系产生两种历程。此说明没有因换了表述而省去正在检验的关系，应计为同一内容的充分表达；不能宣布它必须采用我们的术语。
+- **只写“应当如此”或“替代会更好”。** 若这些断言有独立根据，需连同根据核读；直接领会也得到此待遇。若只是把待解释的反事实或评价再写一遍，便尚未说明它何以成立。不能因答案碰巧相同，就声称已经解释原来有根据的判断。
+
+这份实例支持的是对作用及接续关系的必要保留：若要解释所声称的有根据替代判断，就须保存足以支持该判断的关系，或说明另一实际充分根据。具体规律可有不同实现，模型外的有效根据不能预先删除。**两段历程本身没有证明“安静必然善、回应必然恶”。** 实际形成的意义、损失、正当承担、权限及可行替代仍按 G0/A/L/J/E 评价；不能从零取用直接推出道德优越。
+
+### 30.4 对根基主张的实质推进与界限
+
+本节把一个真正需要的分支连接接通：对 becoming 的评价所需的替代后果，可以由同一展开的规律产生，并容纳其他部分的回应与行动自身的形成；不须把几个互不相干的结果手工放在评价表里。已有证明的消费者因此确定，而“完整静态说明”也不再被误设为抹去生成关系的反例。
+
+这仍不把所有充分说明都叫作整个 core。当前结论针对所述替代判断的具体内容；理论领会、当下观照及有限结束继续按各自内容核对。一份忠实替代说明若以另一充分根据解释同一判断，须进一步检查它是否保留相同的实质依存，而不能仅凭结果同答宣布共同根已证。若实际证据不支持原回应律，须修改应用；若没有相应反事实主张，须撤去对该项智慧的这一要求。这些是可改变结论的明确位置。
+
+**English scope.** The rival is a static explanation of the same achievement, not a caricature of isolated entities. Existing P53/P68 results distinguish what a record alone fixes from what a warranted law supplies; their retargeted alternatives do not preserve every law of the full account. Existing P80 results generate feasible alternative courses under one responsive law, include internally formed action, and feed established comparisons. A static account retaining these dependencies receives full credit. The Loop witness gives concrete shared-law courses, not an empirical social law or an automatic ethical verdict. This interpretive integration advances the necessity of retaining grounds for the stated counterfactual judgment, without making counterfactual reasoning necessary for every wisdom or certifying the whole root.
+
+**验证。** 本轮未改数学。四份选用源码及其34份仓库导入闭包与[原已通过回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json)逐份匹配；原 Experiment、Mechanism、Response、Counterfactual 分别有42、47、47、72项源声明空公理报告，内核检查通过，纯核心前导编译通过。这里核对的是原证据与当前源码的对应，没有把本轮文档检查计作新 Lean 验证。
+
+<a id="fallible-acceptance-and-operative-grounds"></a>
+## 31. 判断可错时，不能省去的根据是什么 / Operative grounds under fallible acceptance
+
+2026-10-13。证据在接触、保留和传递中进入判断，判断参与行动，后来变化又可能揭示错误。这是同一展开中的关系；“判断有根据”“判断为真”“行动有许可”及“结果良好”不能因处于同一展开就彼此替代。第11、26节已允许有限智慧面对错误与损失；本节进一步处理**被接受的命题本身为假**，接用已经存在的认识论证。
+
+```text
+Result: wisdom-root；复用既有 KNOWLEDGE、KNOWLEDGE-CONTENT-AND-ERROR、
+  KNOWLEDGE-REASONS-AND-STANDARDS 的哲学论证，及 practical-judgment-g0-j 的有限认识范围
+Delta: 修正§19共同关系的适用读法：实际承接的可以是可错支持，不必是所信结论的充分真理根据；
+  保留内容的真值要求、实际证据、可获得的反证、所称强度与残余责任
+Supplied: 既有可错接受候选及具体支持路线的独立辩护；非G0单独推出的认识许可；
+  伦理判断仍保留适用的Unrestricted/G0、A/L/J/E
+Evidence: 既有认识研究；Gettier原文pp.121–122、Tiberius本人访谈的限定核读；
+  构造情境与作者反审，无新数学或经验验证
+Boundary: 不把合理信念等同知识，不把合理性单独定义成智慧，不把错误自动免责；
+  保留整个core的共同必要性目标，未以此修正宣告完成
+```
+
+### 31.1 共同理论已经供应的三项区别
+
+[内容研究](KNOWLEDGE-CONTENT-AND-ERROR.md#2-begin-with-formed-relationships-not-a-label)已解释，形成、保留、使用和校准关系约束内容；某次判断错误并不自动改变它所说的对象或时点。否则，每次错误都可以通过改名消除，理论便无法解释错误。
+
+[理由与标准研究§§1–2、6](KNOWLEDGE-REASONS-AND-STANDARDS.md#2-the-epistemic-commitments-being-defended)公开辩护可错接受：实际的证据或推理可以支持接受，却未决定真假；不要求先证明每个使能条件，但真正的反证和削弱来源可靠性的证据仍须处理。它也区分合理信念与隐藏缺陷破坏实际根据时的知识。这是已有认识候选，不能说成裸动力学或G0的新推论。
+
+[认识章的接续论证](../../../../theories/becoming/chapters/KNOWLEDGE.md#knowledge-through-changed-concepts-and-methods)已明确：后来取得充分根据，可以使现在有知识；它不使最初缺乏根据的接受倒变成当时已有知识。反过来，后来发现原内容错误，不自动说明当时所有可取得证据都被忽略。历史根据和当前根据必须定位于实际发生的接触、承接和检验。
+
+这些成果直接回答本研究的一个需要。第11节的数值风险命题为真而目标失败，尚未处理信念内容为假；第26节允许错误的能力界也没有自行决定一次接受是否有认识许可。此处消费已有哲学论证，不重开那两项数学任务。
+
+### 31.2 用同一事件检验，而非改写错误的内容
+
+构造一个有限判断情境：共享档案在最近一次有记录的核验中可以读取；负责者通过已有可辩护的核验与报告程序取得该结果。按该环境中有根据的稳定性认识，她暂定接受“这份档案现在仍可读取”，并保留失败时复查的安排。核验后发生了一次尚未被她或当时合理可用渠道发现的损坏，因此所接受的当前命题为假。
+
+本例明示供应三项有待实际案例证明的条件：原核验确实可靠地支持当时的可读取性；向当前的有限延续预期有独立根据；没有被忽略的可获得反证。依既有可错接受候选，它容许评价为当时有根据的接受；**没有**由“未察觉损坏”单独推出合理性，更没有认定凡自称尽力者都有智慧。这是哲学应用，不是新统计模型、实测事故或Lean反例。
+
+若明知存在未处理的损坏警报仍机械照抄旧报告，适用条件就改变了。若后来有了新副本并通过核验，则新的“现在可读”可能成立，却不是原时点的断言突然变真。若当时声称已经排除一切错误，而证据只支持有限预期，接受的强度仍越过了根据。任何因错误造成的实际损失也不会因当时合理而消失。
+
+这里可以定位一项不可省略的关系：**解释有根据的接受，须保留当时实际取得的支持、它对指定内容的作用以及其适用强度。** 只保留最终真假，无法说明此种接受与无根据的照抄有何不同；只保留信心，又无法说明根据为何足够。另一理论可以用不同语言保留这些关系，不必使用我们的术语；原证据若不足，也应撤回相应归属。
+
+### 31.3 对共同根的必要关系作有内容的修正
+
+| 所归属的成就 | 其解释不能省去什么 | 不能据此声称什么 |
+|---|---|---|
+| 知道或理解某个结论 | 结论在所称范围成立，以及相应认识或解释根据的实际承接 | 仅有合理接受就已知道；本例中的假命题被知道 |
+| 有根据但可错的接受 | 实际证据、与内容相关的可辩护支持、适用强度及应处理的反证 | 支持必然保证真；无反证便足够；每个合理信念都是智慧 |
+| 在有限认识下作有根据的实践判断 | 上述认识关系，加可行性、权限、比较、负担与承担 | 有理由相信某事实就自动有权据此行动；行动后果必好 |
+| 错误后修正与回应 | 新证据实际进入修订；实际损失及仍有效责任得到承认 | 当前修正可以抹掉旧错误；原来有根据就无需补救；任何失败都证明原来不合理 |
+
+因此，§19的共同联系应读为**所称成就与其相应根据、根据与实际承接、承接与所称活动**。在理论领会中，承接可以是理解有效推论；在有限接受中，承接可以是依可错证据作相称判断；在实践中，还须说明它怎样进入回应。这个修正没有把内容、真值与根据任意分离：它正要求在同一历程中逐项说明各自怎样形成并作用。
+
+这也排除了一个可能的过强检验：不能以“被信结论不真，故实际支持关系必不存在”来否定所有有限智慧。它没有反向证明所有错误都能得到支持。支持的真实存在、强度和适用范围仍可被事实与论证推翻。既有的全程保真或零错误定理继续按其原条件使用，不普遍施加给此种接受。
+
+### 31.4 原典核读、对手与仍须完成的推论
+
+Gettier在1963年原文第121页明确以可能有正当根据而信错为论证前提；第122页的第一例又区分有根据的相信与知识。本节仅使用这一区别，不把他的案例当成智慧的定义，也不将其前提当作无争议定理。[Gettier原文，pp.121–122](https://www.caphi-philo.fr/wp-content/uploads/2015/01/Gettier_1963_Is_Justified_True_Belief_Knowledge-d75.pdf)。Tiberius在本人访谈中把实践智慧解释为理解、商议和追求生活之善的一组能力，并强调承认可错与适时转换注意；这支持检验有限能力的读法，没有证明某项错误信念本身就是智慧。[Tiberius访谈，2016-02-12](https://wisdomcenter.uchicago.edu/news/discussions/conversations-wisdom-valerie-tiberius)。只核读相关论述；没有用访谈中的经验建议认证干预有效。
+
+严格对手可以否认可错接受足以构成某种知识，这与本节保留知识的真值要求相容。它也可以对本例实际证据的充分性提出反证，这会改变例子的评定。如果它主张任何合理接受都须先排除一切错误，则争议在公开的可错认识候选，不能以同义改写判定已经解决。本研究没有为了根目标新增一个完美认识门槛，也不依赖对手先认可G0。
+
+**本轮推进：**共同理论中的内容、理由与标准研究已提供这项智慧覆盖修正所需的论证；不应再将其写成整个理论完全没有处理的缺口。共同根的候选关系因此可以容纳真实的错误、有限根据及后续责任，而非只解释真答案。尚须证明的是，这些按成就区分的关系在全部目标智慧中联合构成整个core不可省略的实质结构；本节没有以“相应根据”这一名称预先证明该结论。
+
+**English scope.** Existing knowledge studies preserve content through error, distinguish fallible support from truth and locate warrant in the actual history of uptake. Their philosophical commitments allow a supported but false acceptance without calling it knowledge. This corrects an overstrong reading of the wisdom candidate: operative grounds need not make every accepted conclusion true. An archive example supplies its evidential conditions explicitly; confidence or absence of a noticed warning alone is insufficient. Practical permission and residual responsibility retain G0/A/L/J/E. Gettier and Tiberius are used at limited primary-source scope, not as definitions of all wisdom. No mathematical or empirical result is added, and whole-core necessity remains unproved.

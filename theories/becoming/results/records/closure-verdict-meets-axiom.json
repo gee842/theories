@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "以整体为界的意义（各立场的区域都是整体）就是公理 Unrestricted（bounded_whole）。设区域族 region、立场 p 与水平路径 l、l'，并设 l' 在每一步接纳的每个形成都在 p 的区域之内、或被 l 在该步接纳（covers）。则以区域为界的意义从 p 保留 l' 上的有意义者，恰当 l 包含 l'（Web.retains_bounded_iff_includes）；公理之下，这又恰当 l 从 p 保留 l' 上的有意义者（Web.retains_bounded_iff_retains），即两个判断一致。一个形成 p 的供给闭包是整体时，覆盖条件总成立，所以公理之下，以供给闭包为界的判断在每个比较上都是公理的判断（Flow.within_closure_iff_retains）；Overshoot 中从任一立场都是这样（Overshoot.within_closure_iff_retains）。在 Clearing 中两者分开：设 l 是扣留清除者的部分后的水平（Flow.WithheldLevels）；以供给闭包为界，从清除者的立场，有其部分的水平保留 l 上的有意义者；公理之下，从每个立场都不保留；从栖居者的立场、在栖居者自己的闭包内，l 增加有其部分的水平所缺的（Clearing.within_closure_yet_loses）。不用 Lean 公理；公理只作为比较定理的假设出现。",
     "en": "Significance bounded by the whole (each standpoint's region the whole) is the axiom Unrestricted (bounded_whole). Given regions region, a standpoint p and level paths l and l', suppose every formation l' admits at a step lies in p's region or is admitted by l at that step (covers). Then significance bounded by the regions retains from p what has significance along l' exactly when l includes l' (Web.retains_bounded_iff_includes); under the axiom this is exactly when l retains from p what has significance along l' (Web.retains_bounded_iff_retains), so the two verdicts agree. Where a formation p's feeding closure is the whole, the covering condition always holds, so under the axiom the verdict bounded by the feeding closure is the axiom's on every comparison (Flow.within_closure_iff_retains); in Overshoot this holds from either standpoint (Overshoot.within_closure_iff_retains). In Clearing the two part: let l be the levels with the clearer's part withheld (Flow.WithheldLevels); bounded by the feeding closure, from the clearer's standpoint the levels with its part retain what has significance along l; under the axiom they do not, from any standpoint; and from the dweller's standpoint, within the dweller's own closure, l adds what the levels with the part lack (Clearing.within_closure_yet_loses). No Lean axiom is used; the axiom appears only as a hypothesis of the comparison theorems."
@@ -316,7 +316,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -488,8 +488,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

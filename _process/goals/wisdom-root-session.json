@@ -11,20 +11,22 @@
     "en": "Ren’s explicitly authorized wisdom-root inquiry and its continuations; not a requirement for catalogue maintenance."
   },
   "objective": {
-    "zh": "说明核心作为智慧之根的必要关系与实际生成。",
-    "en": "Explain the necessary relations and actual formation involved in the core as the root of wisdom."
+    "zh": "完成 core 与所讨论全部智慧的必要关系，证明这些关系不可省略，从而确立整个 core 的根基地位；全部完成后提交 main。",
+    "en": "Complete the necessary relations between the core and all wisdom under discussion, establish their indispensability and the foundational status of the whole core, then commit the completed work to main."
   },
   "premises": {
-    "zh": "理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 Ren于2026-10-08进一步明确：道德依赖本理论普遍原则，因为道德判断becoming而模型能够判断becoming；沿显式G0/J/E正面展开，不以Dancy认可为门槛。",
-    "en": "Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent."
+    "zh": "理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 Ren于2026-10-08进一步明确：道德依赖本理论普遍原则，因为道德判断becoming而模型能够判断becoming；沿显式G0/J/E正面展开，不以Dancy认可为门槛。 2026-10-13 Ren 明确本研究属于一个相连理论：先检查其他分支是否已供应所缺前提与证明，在共享定义上连接；局部文件的缺口不直接等于整个理论的缺口。",
+    "en": "Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent. On 13 October 2026 Ren clarifies that this is one connected theory: first inspect other branches for the needed premises and proofs, then compose shared definitions; a local file’s gap is not automatically a gap in the whole theory."
   },
   "completion": {
-    "zh": "完整目标状态以开放成果记录为准；有限智慧、判断和风险成果直接复用。",
-    "en": "The open result record states the full target; reuse existing bounded wisdom, judgment and risk results."
+    "zh": "以全部目标范围内的必要关系和整个 core 根基地位的实质证据审计为准，不以局部应用、形式可表示性或目录检查代替。复用已完成成果，保留公开前提；完成后将本任务的已验证改动提交 main，保护并行工作。此前实际形成研究保持其独立范围，不将完整充分性或零前提元逻辑追加为当前门槛。",
+    "en": "Require a substantive evidence audit of necessity across the full intended scope and the foundational status of the whole core, not local applications, representability or metadata checks. Reuse completed results and disclose premises; after completion commit this task’s verified changes to main while protecting concurrent work. Earlier formation work retains its scope; full sufficiency and premise-free metalogic are not added as current gates."
   },
   "sources": [
     "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+    "sources/15-codex-theory-conversations/2026-10-13-wisdom-necessity-completion-and-main.md",
+    "sources/15-codex-theory-conversations/2026-10-13-wisdom-within-one-theory.md"
   ],
   "result_ids": [
     "wisdom-root"

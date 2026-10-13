@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个形成的延续在某步被另一个供给（Flow.FedBy），是指在同一步上后者在场并向前者当时所需的条件给予。形成的区域对供给封闭（Flow.FedClosed），是指供给一个成员之延续者都是成员。g 在 f 的供给闭包之内（Flow.WithinFeeding），是指含 f、对供给封闭的每个区域都含 g。闭包含 f（Flow.WithinFeeding.refl），可传递（Flow.WithinFeeding.trans），含 f 在任何一步的每个供给者（Flow.WithinFeeding.of_fedBy），本身对供给封闭（Flow.fedClosed_within），所以是含 f、对供给封闭的最小区域。闭包之外的形成，在任何一步都不向闭包成员当时所需的条件给予（Flow.beyond_gives_nothing）。在 Clearing 中，沿依存的区域（Clearing.dependenceRegion：清除者与供给其资源的来源；来源与栖居者没有被供给，各自只含自身）对供给封闭、含其形成（Clearing.fedClosed、Clearing.dependenceRegion_closed、Clearing.dependenceRegion_self），恰是各形成的供给闭包（Clearing.dependenceRegion_iff）。栖居者在清除者的闭包之外（Clearing.dweller_beyond）；闭包之内的每步都被支持，清除者每步活跃，而栖居者从第 2 步起不被支持（Clearing.closure_supported）。不用前提，也不用 Lean 公理。 P86 补充跨步形式：Flow.CarriedTo 要求所用段在条件上平衡，且给予之后到所需之步条件始终立于正数；正给予的某种不增跟随可能仍立着，恰当这些中间水平都为正（Flow.can_stand_iff、Flow.carriedTo_iff_stands）。Flow.FedAcross 把不晚于所需之步的给予经该携带关系接到所需；Flow.fedBy_iff_fedAcross 证明同一步供给是零延迟情形。Flow.WithinFeedingAcross 是含形成、对跨步供给封闭的最小区域，含原闭包（Flow.WithinFeeding.across）；其外不向可携带到成员所需的条件给予（Flow.beyond_gives_nothing_across）。每次给予后条件都不立着时，两闭包相同（Flow.withinFeedingAcross_iff_of_unheld）；Provision.through_store 以第 0 步的亲代供给第 2 步活跃后代的储存见证表明包含可严格。耗尽排除携带，给予大于整段取用充分保证携带；来源的实际归属未确定。",
     "en": "The continuation of a formation is fed by another at a step (Flow.FedBy) when, at that step, the other takes part and gives to a condition the first then requires. A region of formations is closed under feeding (Flow.FedClosed) when whatever feeds a member's continuation is a member. g lies within f's feeding closure (Flow.WithinFeeding) when every region closed under feeding that holds f holds g. The closure holds f (Flow.WithinFeeding.refl), is transitive (Flow.WithinFeeding.trans), holds every feeder of f at any step (Flow.WithinFeeding.of_fedBy) and is itself closed under feeding (Flow.fedClosed_within), so it is the least region closed under feeding that holds f. A formation beyond the closure gives nothing, at any step, to a condition a member then requires (Flow.beyond_gives_nothing). In Clearing the region along dependence (Clearing.dependenceRegion: the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding and holds its formation (Clearing.fedClosed, Clearing.dependenceRegion_closed, Clearing.dependenceRegion_self), and is exactly each formation's feeding closure (Clearing.dependenceRegion_iff). The dweller lies beyond the clearer's closure (Clearing.dweller_beyond); everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on (Clearing.closure_supported). No premise and no Lean axiom is used. P86 adds the across-step form: Flow.CarriedTo requires balance on the condition over the stretch and positive standing after giving through the required step. Some nonincreasing following of a positive gift can remain positive exactly where all those intermediate levels are positive (Flow.can_stand_iff, Flow.carriedTo_iff_stands). Flow.FedAcross links giving no later than the need through this carrying relation; Flow.fedBy_iff_fedAcross makes same-step feeding its zero-delay case. Flow.WithinFeedingAcross is the least region holding the formation and closed under such feeding; it contains the original closure (Flow.WithinFeeding.across), and nothing beyond it gives to a condition carried to a member’s need (Flow.beyond_gives_nothing_across). If nothing given stands after its step, the closures agree (Flow.withinFeedingAcross_iff_of_unheld); Provision.through_store shows strict inclusion when a parent at step 0 feeds a young active at step 2 through storage. An exhausted intermediate step rules carrying out; giving more than the stretch’s total taking suffices. The actual attribution of origin is not fixed."
@@ -303,7 +303,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -543,8 +543,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

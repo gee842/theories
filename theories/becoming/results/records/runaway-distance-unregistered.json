@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-11T11:36:28+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "形成 g 的策略经其识，是指凡 g 直到某步识得相同，它在所识的每个条件上的取用与给予在两个流中相同（Flow.PolicyThrough）；其余固定，是指其他形成在 g 所识的条件上的交换每步相同（Flow.OthersFixed）。两个流在场的形成相同时，两者合起来就是交换随识（Flow.exchangeFollows_of_policy）。所以，在被识的条件上逐步平衡、起始只在 g 依存而不观察的储量上不同且第二个网中高 d 时，对每个经识、其余固定的策略：第一个网每步都支持 g，储量就每步都高 d，g 每步都识得相同（Flow.policy_keeps_difference）；第二个网起始不低并在所观察者上相同时，所识条件上的差别在某步之前已改变，第一个网就并非此前每步都支持 g（Flow.policy_uses_after_failure）。把储量 c 每步抬高 d、其余不变的网（Web.raise）不低于原网，支持原网所支持的，在别的条件上相同（Web.le_raise、Web.Supported.raise、Web.raise_other），原网依存之处它也依存（Web.Dependent.raise），流在一个家族上平衡，在其上也平衡（Flow.BalancesOn.raise）。在网支持 g 的每一步，g 不观察的储量的抬高，g 识得相同（Web.registersAlike_raise）；观察它时，任何正的抬高每步都被识（Web.observed_raise_registers）。g 不观察 c，且到视界 u 为止只有 c 的所需可能不满足时，以到 u 为止的所需之和（Web.needUpTo）抬高 c，在原网支持 g 的每一步识得相同，并在 u 之前每步都支持 g（Web.break_not_bounded）。SupportDrawn 中较低的网在第三步不支持形成，一个抬高在原网支持它的每一步识得相同，在第三步支持它，流在其上平衡（SupportDrawn.break_unregistered）。不用 Lean 公理。",
     "en": "A formation g's policy goes through its registration when, wherever g has registered alike up to a step, its take from and give to every condition it registers are alike in the two flows (Flow.PolicyThrough); the rest is fixed when every other formation's exchange on the conditions g registers is alike at every step (Flow.OthersFixed). With the same formations present, the two give exchange following registration (Flow.exchangeFollows_of_policy). So, balancing at each step on what g registers, with the starts differing only in a stock g depends on and does not observe, d higher in the second web, for every policy through registration with the rest fixed: where the first web supports g at every step, the stock stands d higher and g registers alike at every step (Flow.policy_keeps_difference); where the second web starts at least as high and alike on what g observes, and a difference on a condition g registers has changed by a step, the first web did not support g at every earlier step (Flow.policy_uses_after_failure). The web with stock c raised by d at every step, all else as it is (Web.raise), stands at least as high, supports whatever the web supports and stands alike elsewhere (Web.le_raise, Web.Supported.raise, Web.raise_other); it is dependent where the web is (Web.Dependent.raise), and a flow balancing on a family balances there on it (Flow.BalancesOn.raise). At every step at which the web supports g, a raise of a stock g does not observe registers alike for g (Web.registersAlike_raise); observing it, every positive raise registers at every step (Web.observed_raise_registers). Where g does not observe c and c is the only requirement of g that may be unmet up to a horizon u, raising c by the sum of the needs up to u (Web.needUpTo) registers alike at every step at which the web supports g and supports g at every step up to u (Web.break_not_bounded). In SupportDrawn the lower web fails the formation at the third step, and a raise registers alike at every step at which the lower web supports it, supports it at the third step and keeps the flow balanced (SupportDrawn.break_unregistered). No Lean axiom is used."
@@ -221,7 +221,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -347,8 +347,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

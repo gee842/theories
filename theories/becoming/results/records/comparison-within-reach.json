@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T18:06:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设流平衡，l 是扣留部分时的水平。两个意义从立场 p 在每步对部分此前已到达者一致（一个在部分已到达处不多于另一个时，保留与不增加就从后者传到前者：Flow.Balances.retains_transfer、not_adds_transfer），就对有与无部分的水平作同样的四个比较（Flow.Balances.comparison_local）。对覆盖部分在每步之前已到达者的任何意义，有部分的水平保留无部分的水平上有意义者，恰当前者包含后者，反过来也是；两者都不增加有意义的延续，恰当两者都不超出对方（Flow.Balances.comparison_within_reach）：这正是公理之下的比较（Web.retains_iff_includes、Web.adds_iff_exceeds）。意义可判定时，增加恰是超出（Flow.Balances.adds_iff_exceeds_of_decidable）；对每个意义，超出给出双重否定之下的增加（Flow.Balances.not_not_adds_of_exceeds）。以对影响封闭、含部分成员的区域为界的意义，对这个部分作包含那样的比较，不用公理（Flow.Balances.closed_comparison）；所及闭包是含中心的最小这样的区域，系统也是一个。两个起始相同的平衡的流，水平在某步不同之处，两者在该条件上的取用或给予在更早的步不同（Flow.DiffersBefore、Flow.Balances.differs_before）；覆盖这一差别在每步之前所到达者的任何意义，对两个流作公理的比较（Flow.Balances.comparison_within_difference）。见证：Clearing 中从清除者的立场，以各系统为界的意义判它的部分失去栖居者，以各影响闭包为界判它保留（Clearing.system_counts_dweller）；以各所及闭包为界的意义不是公理，却与公理一样判这一部分失去栖居者（Clearing.reach_counts_dweller）；来源给出清除者所取，其余交换不变时没有水平平衡扣留来源的流，这一比较不存在（Clearing.no_levels_without_source）。Margin 中部分到达形成的影响闭包之外，有它时的水平包含无它时的，每个意义都保留：覆盖足够而不必要（Margin.reach_without_misjudgment）。营养级联 Trophic 中，狼群的部分不到达森林（Trophic.wolves_unreached），其余交换固定时森林每步有与无它同样被接纳，部分缩小，关闭鹿（Trophic.deer_without_wolves），公理之下从任何立场都不保留（Trophic.mediated_unregistered）；对照鹿有回应的流，同一取用是混合的，公理之下两条水平路径都不保留对方上有意义者（Trophic.responsive_mixed）；狼群的部分不到达森林，而两个流的差别在第 3 步之前到达它（Trophic.difference_reaches_forest）；远处形成的系统只含它自己（Trophic.far_system），从它的立场，以各系统为界的意义判远处形成与狼群的联合部分保留，公理之下它失去鹿（Trophic.mixed_part）。一般定理不用公理；公理 Unrestricted 只作为三个见证的假设出现。",
     "en": "Let the flow balance and l be the levels with a part withheld. Two significances that agree, from standpoint p, at each step on what the part has reached before it (retaining and not adding carry over from one to another that has no more significance where the part has reached: Flow.Balances.retains_transfer, not_adds_transfer) make the same four comparisons of the levels with and without the part (Flow.Balances.comparison_local). For any significance covering what the part has reached before each step, the levels with the part retain what has significance along those without it exactly when they include them, and the reverse, and neither adds a continuation with significance exactly when neither exceeds the other (Flow.Balances.comparison_within_reach): the comparisons under the axiom (Web.retains_iff_includes, Web.adds_iff_exceeds). Where significance is decidable, adding is exceeding (Flow.Balances.adds_iff_exceeds_of_decidable); for every significance, exceeding gives adding up to double negation (Flow.Balances.not_not_adds_of_exceeds). Significance bounded by a region closed under affecting that holds the members of a part compares the part as inclusion does, with no axiom (Flow.Balances.closed_comparison); the reach closure is the least such region holding a center, and the system is one. Where the levels of two balanced flows from one start differ at a step, their taking from or giving to that condition differed at an earlier step (Flow.DiffersBefore, Flow.Balances.differs_before); any significance covering what the difference has reached before each step compares the two flows as the axiom does (Flow.Balances.comparison_within_difference). Witnesses: in Clearing, from the clearer's standpoint, significance bounded by each system judges the clearer's part to lose the dweller, and bounded by each influence closure to retain (Clearing.system_counts_dweller); significance bounded by each reach closure is not the axiom, yet judges the part to lose the dweller as the axiom does (Clearing.reach_counts_dweller); the source gives what the clearer takes, and with the rest of the exchange fixed no levels balance the flow without the source's part, so that comparison does not exist (Clearing.no_levels_without_source). In Margin a part reaches beyond a formation's influence closure while the levels with it include those without, so every significance retains: covering is enough and not needed (Margin.reach_without_misjudgment). In Trophic, a trophic cascade, the wolves' part does not reach the forest (Trophic.wolves_unreached); with the rest of the exchange fixed the forest is admitted alike with and without it at every step, and the part narrows, closing the deer (Trophic.deer_without_wolves), so under the axiom it does not retain from any standpoint (Trophic.mediated_unregistered); against the flow in which the deer respond the same taking is mixed, and under the axiom neither level path retains along the other (Trophic.responsive_mixed); the wolves' part does not reach the forest while the difference between the two flows reaches it before the third step (Trophic.difference_reaches_forest); the far formation's system holds only itself (Trophic.far_system), and from its standpoint significance bounded by each system judges the joint part of the far formation and the wolves to retain, while under the axiom the part loses the deer (Trophic.mixed_part). The general theorems use no axiom; the axiom Unrestricted appears only as a hypothesis of three witnesses."
@@ -322,7 +322,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -480,8 +480,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

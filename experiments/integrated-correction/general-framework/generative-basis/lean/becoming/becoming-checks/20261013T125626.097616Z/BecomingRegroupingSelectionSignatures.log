@@ -1,0 +1,26 @@
+@Becoming.Frame.regroup_same_realized_iff : ∀ {S A C D : Type} {F : Becoming.Frame S A C} {q : C → D} {s t : S},
+  F.RespectsAt q s →
+    F.RespectsAt q t →
+      ((∀ (d : D), (F.regroup q).realized s d ↔ (F.regroup q).realized t d) ↔
+        ∀ (c : C), F.realized s c ↔ F.realized t c)
+@Becoming.Frame.regroup_through : ∀ {S A C D : Type} {F : Becoming.Frame S A C} {q : C → D},
+  (∀ (s : S), F.RespectsAt q s) →
+    ∀ {select : S → Prop},
+      Becoming.Learning.Training.Through (fun s t => ∀ (c : C), F.realized s c ↔ F.realized t c) select →
+        Becoming.Learning.Training.Through
+          (fun s t => ∀ (d : D), (F.regroup q).realized s d ↔ (F.regroup q).realized t d) select
+@Becoming.Web.group_keeps_selections_iff_faithful : ∀ {F C D : Type} {W : Becoming.Web F C} (q : F → D)
+  (decides : (t : Nat) → (f : F) → (c : C) → Decidable (W.requires t f c)),
+  (∀ (t : Nat) (select : F → Prop),
+      Becoming.Learning.Training.Through
+          (fun f g => ∀ (c : C), W.requiredLevel decides t f c = W.requiredLevel decides t g c) select →
+        Becoming.Learning.Training.Through (fun f g => q f = q g) select) ↔
+    ∀ (l : Nat → C → Nat), W.paths.RespectsAt (Becoming.Web.groupEvent q) l
+@Becoming.Web.merged_requirement_loses_selection : ∀ {F C D : Type} {W : Becoming.Web F C} {q : F → D}
+  (decides : (t : Nat) → (f : F) → (c : C) → Decidable (W.requires t f c)) {f g : F} {t : Nat} {c : C},
+  q f = q g →
+    W.requiredLevel decides t f c ≠ W.requiredLevel decides t g c →
+      ∃ select,
+        Becoming.Learning.Training.Through
+            (fun a b => ∀ (c : C), W.requiredLevel decides t a c = W.requiredLevel decides t b c) select ∧
+          ¬Becoming.Learning.Training.Through (fun a b => q a = q b) select

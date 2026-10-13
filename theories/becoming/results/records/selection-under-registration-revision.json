@@ -288,10 +288,6 @@
     {
       "zh": "P103 完整整合复核：既有主张及冻结证明保持，理论与原研究接通受支持的反复修订；旧未完成表述按日期保留。",
       "en": "P103 integration review preserves existing claims and frozen proofs while the theory/study connect supported recurring revision; older frontiers remain dated history."
-    },
-    {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
     }
   ]
 }

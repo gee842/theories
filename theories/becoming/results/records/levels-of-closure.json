@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T18:06:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "区域对一个关系封闭（ClosedUnder），是指成员与之有此关系者都是成员；g 在 f 对此关系的闭包之内（WithinClosure），是指含 f 的每个封闭区域都含 g。闭包自反、可传递，含 f 与之有此关系者，随关系增大，在对称关系下对称，闭包之内的不与闭包之外的有此关系（WithinClosure.refl、trans、of_rel、mono、symm、not_rel），闭包本身封闭（closedUnder_withinClosure），所以是含 f 的最小封闭区域；它恰是 Becoming.Bridge 中从 f 这一个种子出发的种子—边闭包（withinClosure_iff_closure）。P40 的供给闭包是对在某步被供给的闭包（Flow.FedFrom、Flow.withinFeeding_iff、Flow.fedClosed_iff）。形成受另一个影响（Flow.AffectedBy），是指后者与前者在某步所依存的条件交换（Web.DependsOn、Flow.Exchanges）；影响闭包（Flow.WithinInfluence）是对受影响的闭包，即能影响形成的；所及闭包（Flow.Affects、Flow.WithinReach）是对影响的闭包，即形成的交换能逐环影响的。形成参与一个条件（Flow.TakesPart），是指依存于它或与它交换；两个形成都参与一个条件，即共享它（Flow.Shares）；系统（Flow.WithinSystem）是对共享的闭包，是类（Flow.shares_symm、Flow.WithinSystem.symm）。供给闭包在影响闭包之内（Flow.affectedBy_of_fedFrom、Flow.withinInfluence_of_withinFeeding），影响闭包与所及闭包都在系统之内（Flow.shares_of_affectedBy、Flow.withinSystem_of_withinInfluence、Flow.withinSystem_of_withinReach），系统对影响封闭（Flow.withinSystem_closed）。每个包含都可以是严格的，影响闭包与所及闭包方向相反：营养级联 Trophic 中，两个流都平衡，只有活跃者给予与取用，活动需要支持；狼群不向任何条件给予，在森林的供给闭包之外、影响闭包之内，远处的形成在森林的系统之外（Trophic.mediates、Trophic.near_closed）；Clearing 中来源在清除者的供给闭包之内，栖居者在其影响闭包之外、系统之内（Clearing.alongDependence_closed、Clearing.levels），清除者的所及闭包含栖居者、不含来源（Clearing.clearerReach_closed、Clearing.reach_middle），栖居者的所及闭包只含它自己（Clearing.reach_centred）；两个形成依存于一个没有任何东西与之交换的条件时，共享一个系统而彼此不影响（Static.shares_unaffected）。每个形成都参与一个条件时，每个系统都是整体（Flow.system_whole_of_common）；每个形成都依存于它并与它交换时，每个所及闭包都是整体（Flow.reach_whole_of_common）；在某步每个形成都需要它并向它给予时，每个供给闭包都是整体（Flow.feeding_whole_of_common），以各中心供给闭包为界的意义，即 P40 不用公理的路线，就是公理（Flow.feeding_unrestricted_of_common）；每个中心的系统都是整体时，以系统为界的意义就是公理（Flow.bounded_system_whole）。Clearing 是一个系统（Clearing.clearer_system、Clearing.system_whole）。不用前提，也不用 Lean 公理；Unrestricted 在这里只作为结论出现：某个有界的意义恰是它。",
     "en": "A region is closed under a relation (ClosedUnder) when whatever a member bears the relation to is a member; g lies within f's closure under the relation (WithinClosure) when every closed region holding f holds g. The closure is reflexive and transitive, holds what f bears the relation to, grows with the relation, is symmetric under a symmetric relation, and nothing within it bears the relation to what lies beyond it (WithinClosure.refl, trans, of_rel, mono, symm, not_rel); it is itself closed (closedUnder_withinClosure), so it is the least closed region holding f; it is exactly the seed–edge closure of Becoming.Bridge from the one seed f (withinClosure_iff_closure). P40's feeding closure is the closure under being fed at some step (Flow.FedFrom, Flow.withinFeeding_iff, Flow.fedClosed_iff). A formation is affected by another (Flow.AffectedBy) when the other exchanges with a condition the first depends on at some step (Web.DependsOn, Flow.Exchanges); the influence closure (Flow.WithinInfluence) is the closure under being affected, what can affect the formation; the reach closure (Flow.Affects, Flow.WithinReach) is the closure under affecting, what the formation's exchange can affect, link by link. A formation takes part in a condition (Flow.TakesPart) when it depends on it or exchanges with it; two formations taking part in one condition share it (Flow.Shares); the system (Flow.WithinSystem) is the closure under sharing, a class (Flow.shares_symm, Flow.WithinSystem.symm). The feeding closure lies within the influence closure (Flow.affectedBy_of_fedFrom, Flow.withinInfluence_of_withinFeeding), the influence and reach closures lie within the system (Flow.shares_of_affectedBy, Flow.withinSystem_of_withinInfluence, Flow.withinSystem_of_withinReach), and the system is closed under affecting (Flow.withinSystem_closed). Each inclusion can be strict, and the influence and reach closures point in opposite directions. In Trophic, a trophic cascade, both flows balance, only active formations give and take, and activity needs support; the wolves give to nothing, lying beyond the forest's feeding closure and within its influence closure, and a formation far off lies beyond the forest's system (Trophic.mediates, Trophic.near_closed). In Clearing the source lies within the clearer's feeding closure and the dweller beyond its influence closure and within its system (Clearing.alongDependence_closed, Clearing.levels); the clearer's reach closure holds the dweller and not the source (Clearing.clearerReach_closed, Clearing.reach_middle), and the dweller's holds only itself (Clearing.reach_centred). Two formations depending on a condition that nothing exchanges with share a system and neither affects the other (Static.shares_unaffected). Where every formation takes part in one condition, every system is the whole (Flow.system_whole_of_common); where every formation depends on it and exchanges with it, every reach closure is (Flow.reach_whole_of_common); where at one step every formation requires it and gives to it, every feeding closure is (Flow.feeding_whole_of_common), and significance bounded by each center's feeding closure, P40's route without axiom, is the axiom (Flow.feeding_unrestricted_of_common); where each center's system is the whole, significance bounded by the system is the axiom (Flow.bounded_system_whole). Clearing is one system (Clearing.clearer_system, Clearing.system_whole). No premise and no Lean axiom is used; Unrestricted appears here only as a conclusion, that some bounded significance is exactly it."
@@ -322,7 +322,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -496,8 +496,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

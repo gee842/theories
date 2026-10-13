@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "id": "timely-response-necessity",
+  "title": {
+    "zh": "及时回应的必要关系",
+    "en": "Necessary relations for a timely response"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-13T13:04:43.135431+00:00",
+  "claim": {
+    "zh": "原生流／网的两个历程，在共同初始水平、截止前平衡与在场相同、源之外经此前所识回应及共同完整读数下，未按交换顺序及时进入登记的区别不能改变截止时答案。有限加权作答覆盖不超过两侧错误与及时潜在可达权重之和；全不可及时到达时覆盖恰等于两侧错误。",
+    "en": "For two native flow/web courses with common initial levels, prefix balance and presence, past-registration response outside a source and a common complete readout, a distinction outside ordered propagation cannot change the answer by its deadline. Finite weighted commitment is at most paired error plus timely potential-reach weight; total nonarrival gives equality with paired error."
+  },
+  "hypotheses": [
+    {
+      "zh": "全部初始水平相同；每步 t<D 平衡及在场形成相同；时变源之外的交换经此前登记决定。",
+      "en": "All initial levels agree; balance and present formations agree for t<D; outside the time-indexed source exchange responds through prior registration."
+    },
+    {
+      "zh": "共同读数经同一 W 界面截至 D 的完整登记；RegistersAt 使用当步需要与明确观察。离散步不自带物理时长。",
+      "en": "Common readout through the same W-based complete registration up to D; RegistersAt uses current requirements or explicit observation. Discrete steps have no inherent physical duration."
+    },
+    {
+      "zh": "统计接续给出有限列表、自然权重、相反目标与及时可达判定；全盲等式不用该判定。",
+      "en": "Statistical composition supplies a finite list, natural weights, opposite targets and a timely-reach decision; total blindness needs no such decision."
+    }
+  ],
+  "correspondence": {
+    "zh": "命令形成、交换、登记与回应是同一展开中的分化关系。定理不从相关记录识别源、认证共同初态或测得延迟；真实实验配对、送达／执行及概率需要独立根据。",
+    "en": "Command formation, exchange, registration and response differentiate within one unfolding. The theorem does not identify sources from correlated records, certify matched initial states or measure delay; actual pairing, delivery/execution and probabilities need warrant."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+  "aliases": [
+    "Becoming.TimedResponse.levels_alike_before",
+    "Becoming.TimedResponse.answer_alike_before",
+    "Becoming.TimedResponse.different_answers_require_reached",
+    "Becoming.TimedResponse.reachedBy_within_response",
+    "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
+    "Becoming.FallibleInquiry.error_budgets_require_timed_reach",
+    "Becoming.FallibleInquiry.unreached_by_deadline_coverage_eq_errors"
+  ],
+  "dependencies": [
+    {
+      "id": "comparison-where-the-rest-responds",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "及时所及接回原回应闭包。",
+        "en": "Timed reach reconnects to the original responsive closure."
+      },
+      "interface": {
+        "output": {
+          "zh": "原生回应闭包及登记影响边。",
+          "en": "Native responsive closure and registered-exchange edges."
+        },
+        "input": {
+          "zh": "reachedBy_within_response。",
+          "en": "reachedBy_within_response."
+        },
+        "conditions": {
+          "zh": "源属于原部分且在场相同，不主张逆向。",
+          "en": "Sources belong to the old part and presence agrees; no converse."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean"
+      }
+    },
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用完整过去登记。",
+        "en": "Reuses complete past registration."
+      },
+      "interface": {
+        "output": {
+          "zh": "支持与观察构成的 RegistersAlikeUpTo。",
+          "en": "RegistersAlikeUpTo from support and observation."
+        },
+        "input": {
+          "zh": "registration_alike_before 和 answer_alike_before。",
+          "en": "registration_alike_before and answer_alike_before."
+        },
+        "conditions": {
+          "zh": "共同界面及回应条件明示，当步支持不等于未来需要。",
+          "en": "Common interface and response supplied; current support differs from future requirements."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean"
+      }
+    },
+    {
+      "id": "finite-fallible-inquiry-necessity",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用原统计界，不重证统计不等式。",
+        "en": "Reuses the original statistical inequality."
+      },
+      "interface": {
+        "output": {
+          "zh": "fallible_inquiry_bound 的覆盖、错误及区别界。",
+          "en": "Coverage/error/distinction bound of fallible_inquiry_bound."
+        },
+        "input": {
+          "zh": "coverage_le_errors_add_timed_reach 以截止前同答约束区别。",
+          "en": "coverage_le_errors_add_timed_reach bounds distinctions by deadline blindness."
+        },
+        "conditions": {
+          "zh": "有限权重、相反目标、共同读数与及时可达判定。",
+          "en": "Finite weights, opposite targets, common readout and timely-reach decision."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "detail": {
+        "zh": "Delayed 结构上连通而一步时未达，两步后可区分；常量读数仍忽略已达信号。",
+        "en": "Delayed is structurally connected but unreached at one step, then distinguishes at two; a constant readout still ignores the arrived signal."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只给必要界，非充分控制、完整知识或科学普遍基础。未覆盖不同初始证据、时变读数接口、连续物理时长或共同非零余项。一般建设性必要性为双重否定；有判定才给出正成员。路线存在不保证实际影响，空公理报告不认证经验前提。",
+    "en": "Necessary bound, not sufficient control, complete knowledge or a universal scientific foundation. Does not cover different initial evidence, changing readout interfaces, continuous physical duration or common nonzero residuals. Constructive necessity is double-negated; positive membership uses a decision. A route need not cause an effect; empty axiom reports do not certify empirical premises."
+  },
+  "validation_scope": {
+    "zh": "P104新增22核心定理／30空公理源审计，前导编译通过；3项外围接续仅 propext、Quot.sound。外围现31定理／37声明，20空、17标准依赖。当前相关依赖与最终冻结回执匹配；49基础设施测试通过。无新增经验实验或独立评审。",
+    "en": "P104 adds 22 core theorems / 30 axiom-free source audits, with prelude compilation passed; three peripheral adapters use only propext and Quot.sound. Periphery now 31 theorems / 37 declarations, 20 empty and 17 standard dependencies. Relevant current dependencies match final retained receipts; 49 infrastructure tests pass. No new empirical experiment or independent review."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "role": "proof",
+      "sha256": "a93b860bbc7e06845f280838eed69ffc0e4f68aab78fc80a335f77fb2b2770e5",
+      "declarations": [
+        "Becoming.TimedResponse.registersAt_registers",
+        "Becoming.TimedResponse.not_spread_zero",
+        "Becoming.TimedResponse.Spread.has_earlier_source",
+        "Becoming.TimedResponse.not_reached_before_source",
+        "Becoming.TimedResponse.reachedBy_mono",
+        "Becoming.TimedResponse.registration_of_levels",
+        "Becoming.TimedResponse.levels_alike_before",
+        "Becoming.TimedResponse.registration_alike_before",
+        "Becoming.TimedResponse.answer_alike_before",
+        "Becoming.TimedResponse.different_answers_not_unreached",
+        "Becoming.TimedResponse.different_answers_require_reached",
+        "Becoming.TimedResponse.touches_registered_edge",
+        "Becoming.TimedResponse.Spread.within_response",
+        "Becoming.TimedResponse.reachedBy_within_response",
+        "Becoming.TimedResponse.Delayed.balanced",
+        "Becoming.TimedResponse.Delayed.responds",
+        "Becoming.TimedResponse.Delayed.read_through",
+        "Becoming.TimedResponse.Delayed.structurally_connected",
+        "Becoming.TimedResponse.Delayed.not_reached_at_one",
+        "Becoming.TimedResponse.Delayed.reached_at_two",
+        "Becoming.TimedResponse.Delayed.answers_before_and_after",
+        "Becoming.TimedResponse.Delayed.constant_read_ignores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "role": "proof",
+      "sha256": "c7044c4ee33aea3d5093e7b5314901a8b4ef1acb17624297cb57345b7dc048e3",
+      "declarations": [
+        "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
+        "Becoming.FallibleInquiry.error_budgets_require_timed_reach",
+        "Becoming.FallibleInquiry.unreached_by_deadline_coverage_eq_errors"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125224.520783Z/verification.json",
+      "role": "receipt",
+      "sha256": "0205856745327282355991c56a883268ff603f0c980fb7f83a03ee3d0883faf4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "role": "receipt",
+      "sha256": "27cf7417826cc785919b437d7e2708bd32672cd7ff84d57bf3cf477c0b8ce55e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "role": "integration",
+      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "role": "review",
+      "sha256": "d7b38517ff0e5d2825ea8f97a959c5f1c5f5f2a4c4b99a70a77af264e61967a2",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "role": "statement",
+      "sha256": "710e7a7f275e50da60910ce1012b3776245a428f408103110026ff368f357127",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-TIMING-REVIEW.json",
+      "role": "review",
+      "sha256": "4457c68612dde3ce70da9a19790b3478aede5681ab02c7dbd017bc6aecefb505",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125224.520783Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "固定实际任务的初始证据、命令分配与送达／执行条件，检验配对是否有根据；消费本界，不再重建传播或统计结果。",
+    "en": "Fix an actual task’s initial evidence, command assignment and delivery/execution conditions; test warranted pairing and consume this bound without rebuilding propagation or statistics."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13 P104：新增逐时必要性范围，按当步需要修正最终登记；前稿与原结构／余项回执保留。",
+      "en": "2026-10-13 P104: adds temporal necessity, with final registration based on actual-step requirements; draft and earlier structural/residual receipts retained."
+    },
+    {
+      "zh": "2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。",
+      "en": "2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged."
+    }
+  ]
+}

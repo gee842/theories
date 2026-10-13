@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "去掉 g 在步 t 对 c 的依存（Web.drop、World.drop）不改变任何水平、活动、取用、所需与流，保持活动需要支持（Web.drop_dependent）、其余七个前提与有限（World.drop_holds、World.drop_finite），并在后代依存 c 的每次世系上使传递对每个 δ 都失效（Flow.drop_untransmitted、World.drop_untransmitting）。所以满足其余七个前提、传递在其中起约束的每个世界都有一个邻居，去掉一条依存，满足除传递外的全部（World.drop_but）；有限的孵化与它的邻居就是这样一对（World.finiteHatch_pair）。一般的界限：在去掉依存时保持、且推出传递的关于世界的条件，推出传递不起约束（World.vacuous_of_drop_invariant）。交换的读法是这样的条件：关系项在第一个立足之步只依存每个给予它者在给予之步所取用的（Flow.DependsOnDrawn），或跨该步所取的（Flow.DependsOnFed；只有活跃者取用且只从所取用者取时它给出前者，Flow.dependsOnDrawn_of_fed）；两者在去掉依存时都保持（Flow.DependsOnDrawn.drop、Flow.DependsOnFed.drop），所以有限、其余七个前提与取用的读法推不出传递（World.drawn_not_enough）。加上一条要求依存的规律，在给予者处取用 c 即依存 c（Web.DrawingDepends），读法给出承继（Flow.inherits_of_drawn、Flow.inherits_of_fed）。有限、平衡、耗散的世界中每个水平至多是第一步所立者的总量（World.Finite.level_le）；活动需要支持且每个关系项体现时，所需之界在水平的界之内成立（Flow.needsWithin_of_embodied），所以在满足平衡、耗散、体现与活动需要支持的有限世界中，传递恰是承继（World.transmitting_iff_inherits，有水平之界时 World.transmitting_iff_inherits_bounded），读法加上链接给出传递（World.transmitting_of_drawn、World.transmitting_of_fed），不是空的：亲代也依存自身的有限孵化中这些都成立且传递起约束（World.bearingHatch_derived）。二者都需要（World.drawn_and_link_needed）：从有限孵化去掉亲代对食物的依存，读法成立而链接不成立（World.drawn_without_link）；在 novel 中链接对亲代成立，没有东西取用亲代，而读法不成立（World.link_without_drawn）。不用公理。",
     "en": "Dropping g's dependence on c at step t (Web.drop, World.drop) changes no level, activity, drawing, need or flow, keeps activity needing support (Web.drop_dependent), the seven other premises and finiteness (World.drop_holds, World.drop_finite), and breaks transmission for every δ at any descent whose descendant depends on c (Flow.drop_untransmitted, World.drop_untransmitting). So every world meeting the seven other premises in which transmission binds has a neighbour, one dependence dropped, meeting all but transmission (World.drop_but); the finite hatch and its neighbour are such a pair (World.finiteHatch_pair). The general boundary: a condition on worlds kept by dropping a dependence and implying transmission implies that transmission does not bind (World.vacuous_of_drop_invariant). A reading of the exchange is such a condition: a relatum depends at its first standing step only on what each relatum giving to it drew on at the giving step (Flow.DependsOnDrawn), or took from across it (Flow.DependsOnFed, which gives the first where only active relata take and only from what they draw on, Flow.dependsOnDrawn_of_fed); both are kept by dropping a dependence (Flow.DependsOnDrawn.drop, Flow.DependsOnFed.drop), so finiteness, the seven other premises and the reading of drawing do not give transmission (World.drawn_not_enough). With one law requiring dependence, at the giver, that drawing on c is depending on it (Web.DrawingDepends), the reading gives inheritance (Flow.inherits_of_drawn, Flow.inherits_of_fed). A finite, balanced, dissipative world bounds every level by the total standing at the first step (World.Finite.level_le); with activity needing support and every relatum embodied the need half holds within a bound on levels (Flow.needsWithin_of_embodied), so in a finite world meeting balance, dissipation, embodiment and activity needing support transmission is exactly inheritance (World.transmitting_iff_inherits; with a bound on levels, World.transmitting_iff_inherits_bounded), and the reading with the link gives transmission (World.transmitting_of_drawn, World.transmitting_of_fed), not vacuously: in the finite hatch whose parent also depends on itself all of these hold and transmission binds (World.bearingHatch_derived). Each is needed (World.drawn_and_link_needed): with the parent's dependence on the food dropped from the finite hatch, the reading holds and the link fails (World.drawn_without_link); in novel the link holds of the parent, on which nothing draws, and the reading fails (World.link_without_drawn). No axiom."
@@ -221,7 +221,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -280,8 +280,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

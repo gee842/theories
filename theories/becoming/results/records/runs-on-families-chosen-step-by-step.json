@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "en": "Where the family may change at each step (OneStep.StepRealized, with givers; OneStep.StepRunRealized, without), a sequence of patterns is shown by some world under no condition, under balance and under closure exactly when each step obeys its law (OneStep.step_every_iff, OneStep.step_balance_iff, OneStep.step_closed_iff, OneStep.stepRun_balance_iff): these conditions join no step to the next. Running down holds in its family everything standing before and after its step, and there a sequence is shown exactly when each step obeys its law and the passages continue up to order: at each positive level, as many stand there after a step as before the next (OneStep.Continues; OneStep.step_runsDown_iff, OneStep.step_runsDownClosed_iff, OneStep.stepRun_runsDown_iff, OneStep.stepRun_runsDownClosed_iff; OneStep.StepRealized.continues). Following position by position on one family gives continuity (OneStep.Chained.continues) and not conversely: a sequence of two idle conditions in swapped order runs down on families chosen step by step and on no single family (OneStep.steps_not_run), and a sequence shown under balance on chosen families is not shown under running down, its passages not continuing (OneStep.vanishing_steps). No premise.",
     "zh": "家族可以每步改变时（OneStep.StepRealized，带给予者；OneStep.StepRunRealized，不带），一串模式在无条件、平衡与封闭之下恰在每步遵守其规律时由某个世界显示（OneStep.step_every_iff、OneStep.step_balance_iff、OneStep.step_closed_iff、OneStep.stepRun_balance_iff）：这些条件不把一步连到下一步。耗减在其家族中持有该步之前与之后所立的一切，在那里一串模式恰在每步遵守其规律、且经过不计次序地延续时被显示：在每个正的水平上，一步之后立于那里的与下一步之前一样多（OneStep.Continues；OneStep.step_runsDown_iff、OneStep.step_runsDownClosed_iff、OneStep.stepRun_runsDown_iff、OneStep.stepRun_runsDownClosed_iff；OneStep.StepRealized.continues）。在一个家族上逐位跟随给出延续（OneStep.Chained.continues），反之不然：两个空闲条件次序交换的一串在逐步选定的家族上耗减，在任何单一家族上都不（OneStep.steps_not_run）；在选定家族上于平衡之下显示的一串在耗减之下不显示，其经过不延续（OneStep.vanishing_steps）。不加前提。"
@@ -161,7 +161,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -206,8 +206,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

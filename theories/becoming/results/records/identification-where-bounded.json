@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T08:54:51+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设 o、o' : ℕ → O 是所识的历程，StatesBelow o N 指 o 至多有 N 个状态（P70）。周期为 p + 1、在前 p 步都在 Q 步后回来的 x 在每一步都在 Q 步后回来（Identification.period_extends，Fine–Wilf）；从 i、i' 起以周期 q + 1、q' + 1 重复的 o、o' 在 (i + q + 1) + (i' + q') 之前相同，就处处相同（Identification.lassos_agree）。StatesBelow o N 恰当有 i、q 使 i + q + 1 ≤ N 且 Learning.Lasso o i q（Identification.statesBelow_iff_lasso）。StatesBelow o N、StatesBelow o' N' 且 o、o' 在 N + N' − 1 之前相同，则处处相同（Identification.bounded_agree）；记录相等恰当历程在其长度之前相同（Identification.record_eq_iff），所以长 N + N' − 1 的记录确定历程（Identification.record_fixes）。给出两个值：对每个 T，有 StatesBelow 1 与 StatesBelow (T + 1) 的历程，长 T 的记录相同而在 T 不同（Identification.record_short）；对每个 M，有两个 StatesBelow (M + 2) 的历程，长 M + M + 2 的记录相同而在那里不同（Identification.record_short_twice）。StatesBelow o N 时，两个时刻同一状态恰当其后在 N + N − 1 步内相同（Identification.sameAhead_iff_below）。StatesBelow o N、i + q + 1 ≤ N，且对 i ≤ u、u + q + 1 < N + N − 1 有 o (u + q + 1) = o u，则 Learning.Lasso o i q（Identification.lasso_of_fits）；值可判定时，套索假设 (i, q) 在 N + N − 1 之前不被否证，就处处不被否证（Identification.bounded_induction），总有这样的假设（Identification.bounded_hypothesis）。知道 N 的学习者 Identification.knowing N 在 N + N − 1 之前不说，之后以第一个在 N 之内、为记录所证实的套索假设主张：StatesBelow o N 时它处处不被否证（Identification.knowing_holds），从 N + N − 1 起每步都对（Identification.knowing_right）；给出两个值，没有学习者在每个 StatesBelow o (M + 2) 的历程上都不被否证且在第 M + M + 2 步都作主张（Identification.knowing_earliest）；knowing 2 对二值否定从第 3 步起每步都对（Identification.denial_derived）；other 移动每个值时，回答 knowing N 的历程不满足 StatesBelow N（Identification.answer_exceeds_bound）。StatesBelow o N、a + b + 1 ≤ N、a ≤ s，且套索假设 (a, b) 在 s 到 s + (N + N − 1) 之前的每步不被否证，则从 s 起每步不被否证（Identification.unrefuted_persists）；StatesBelow o N 时，P73 的按否证学习者 Learning.learner Learning.lassos 从第 N + (N + N − 1) · Learning.tri N 步起每步主张且正确（Identification.learner_rests）；套索历程上有这样的一步（Identification.rests_of_lasso）；轨道被列表 l 所持时，以 N = l.length 亦然（Identification.held_learner_rests）。列表 l 在 next 下封闭时，成员 s、s' 的所识的未来相同恰当它们在 l.length + l.length − 1 步内相同（Law.sameFuture_iff_below）；l 持有每个配置时，以这一长度的所识的未来命名（Law.name）有意义（Law.name_makesSense），承载规律（Law.name_carries），值可判定时判定相同（Law.decideAlike）。不用 Lean 公理。",
     "en": "Let o, o' : ℕ → O be registered courses, StatesBelow o N meaning o has at most N states (P70). An x with period p + 1 that comes back after Q steps at each of its first p steps comes back after Q steps at every step (Identification.period_extends, Fine–Wilf); o, o' repeating from i, i' with periods q + 1, q' + 1 and agreeing before (i + q + 1) + (i' + q') agree everywhere (Identification.lassos_agree). StatesBelow o N holds exactly where some i, q have i + q + 1 ≤ N and Learning.Lasso o i q (Identification.statesBelow_iff_lasso). With StatesBelow o N and StatesBelow o' N', agreeing before N + N' − 1 is agreeing everywhere (Identification.bounded_agree); records are equal exactly where the courses agree before their length (Identification.record_eq_iff), so the record before N + N' − 1 fixes the course (Identification.record_fixes). Given two values: for every T, courses with StatesBelow 1 and StatesBelow (T + 1) share their record before T and differ at T (Identification.record_short); for every M, two courses with StatesBelow (M + 2) share their record before M + M + 2 and differ there (Identification.record_short_twice). With StatesBelow o N, two moments are one state exactly where what follows them agrees for N + N − 1 steps (Identification.sameAhead_iff_below). With StatesBelow o N, i + q + 1 ≤ N and o (u + q + 1) = o u for i ≤ u, u + q + 1 < N + N − 1, Learning.Lasso o i q holds (Identification.lasso_of_fits); with values decided, a lasso hypothesis (i, q) unrefuted before N + N − 1 is unrefuted everywhere (Identification.bounded_induction), and one always is (Identification.bounded_hypothesis). The learner that knows N, Identification.knowing N, silent before N + N − 1 and then claiming by the first lasso hypothesis within N that the record bears out, is refuted nowhere where StatesBelow o N (Identification.knowing_holds) and is right at every step from N + N − 1 on (Identification.knowing_right); given two values, no learner is refuted nowhere on every course with StatesBelow o (M + 2) and claims at step M + M + 2 on each (Identification.knowing_earliest); knowing 2 is right about the two-valued denial from step 3 on (Identification.denial_derived); where other moves every value, the course answering knowing N fails StatesBelow N (Identification.answer_exceeds_bound). With StatesBelow o N, a + b + 1 ≤ N and a ≤ s, a lasso hypothesis (a, b) unrefuted at every step from s to before s + (N + N − 1) is unrefuted at every step from s on (Identification.unrefuted_persists); with StatesBelow o N, P73's learner by refutation Learning.learner Learning.lassos claims and is right at every step from N + (N + N − 1) · Learning.tri N on (Identification.learner_rests); on a lasso course there is such a step (Identification.rests_of_lasso); where an orbit is held by a list l, the same holds with N = l.length (Identification.held_learner_rests). For a list l closed under next, members s, s' have the same registered future exactly where those futures agree for l.length + l.length − 1 steps (Law.sameFuture_iff_below); where l holds every configuration, naming by the registered future of that length (Law.name) makes sense (Law.name_makesSense), carries the law (Law.name_carries) and, values decided, decides likeness (Law.decideAlike). No Lean axiom is used."
@@ -344,7 +344,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -429,8 +429,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

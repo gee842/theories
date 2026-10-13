@@ -58,6 +58,49 @@ The affirmative defense is non-substitution: the basic layer concerns an irrepla
 
 **Sacrifice boundary.** Fixed optional enrichment cannot demand arbitrary imposed deterioration. Once burdens undermine basic living conditions, the earlier priority argument fails and a protective alternative may defeat it. This is a substantive limit, not a numerical bound derived from G0. Competing basic losses require the conflict procedure below. Below-boundary losses still require comparison and fair allocation; being below a ceiling is not itself permission.
 
+<a id="timely-continuation-and-support"></a>
+
+### 2.1 支承为何取得理由：在需要时共同接续 / Why support acquires a reason: continuing together when needed
+
+2026-10-13，P95。AI 撰写的应用论证；复用 G0/J 及现有动力学证明，不新增公理、数学定理或独立成果。详见[原研究 §85](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#timely-continuation-and-support)。
+
+本节沿用已完成成果的 G0/J 条件接口。按[当前统一结构](../../../GOALS.md#theory-of-becoming)，G0 已折入意义：第一部分将其作为条件，第二部分的单一意义公理使其成立；本节不把历史上的 G0 公理表述重新加为第二条公理。/ This section reuses the completed G0/J conditional interface. In the current unified structure, G0 is folded into significance: Part I treats it conditionally and the single significance axiom in Part II yields it. The historical axiom wording is not reinstated as a second axiom.
+
+先看同一展开：活动改变随后活动的条件，维持这些条件的活动本身也依赖其中的支持；新的支持可以形成，旧的支持可以失效。在这样的关系中才区分某段生活、它的所需、支持它的活动及能够改变这些关系的行动位置。所谓支承的意义，指它在这段实际共同形成中的作用；不是先给一个独立“资源所有者”分配价值，再从外面接到另一种生活。
+
+Begin with activities changing the conditions of subsequent activity, including the support needed by the activities that maintain those conditions. New support can form and old support can fail. A life, its needs, its supporting activities and positions capable of changing them are differentiated within that unfolding. Support matters through this actual relation of formation, without first assigning separate values to independent owners.
+
+**正面论证。** 生及继续生成在 G0 下有正面意义。实现它的活动若依赖某种共同支持，那么维持或形成有效支持，就是使这一实现成为实际的组成部分。因此，这段生活的正面理由也及于它的支承、修复或适当替代。这是 G0/J 路线中对具体实践理由的说明；因果关系给出理由所指向的实际联系，未单凭一个因果命题证明规范意义，更未推出每种手段均可采用。支承若同时损害其他生活，这些损害进入同一次判断。
+
+**Affirmative argument.** G0 gives living and further generation positive significance. Where their realization depends on common support, maintaining or forming effective support participates in making that realization actual. The favorable reason therefore extends to support, repair or an adequate replacement. This explains a concrete practical reason within the G0/J account. Causation supplies its actual connection; a causal proposition alone establishes neither normative significance nor permission for every means. Damage caused by the supporting arrangement enters the same judgment.
+
+理由所及的是**实际接续**，不能直接认同为某个旧条件、机构或角色的永久存续。若数条路线均能接续，须比较它们共同造成的后果；不必保存每条旧路线。若替代尚未形成，或者只能支持改变者而不能支持原来一起展开的生活，则“已有替代”的说明仍不充分。新增共同能力可以是更好的回应；其规模或集中程度本身不决定答案。
+
+The reason concerns **actual continuation**, not the perpetual survival of a particular condition, institution or role. Where several routes can sustain it, compare their whole effects rather than preserve every old route. A replacement that is not yet available, or supports only the changing formation while abandoning the living relations previously supported together, does not establish adequate succession. Forming stronger common capacities can be the better response; size or concentration alone settles nothing.
+
+应用时须依次说明以下内容。这是对“保住”“恢复”“替代”的对应要求，不是一张给方案加分的清单。
+
+For application, establish the following content. These are correspondence requirements for preservation, recovery and replacement, not a scoring checklist.
+
+| 内容 / Content | 必须说明什么 / What must be established |
+|---|---|
+| 被接续的具体生活 / What continues | 实际生活、休息、自护、形成或有限完成，以及变化前后保留、改变和失去的内容；不以某种组织继续存在替代它。 / Actual living, rest, self-care, formation or finite fulfillment, with what is retained, changed and lost; organizational survival is not a substitute. |
+| 需要的时段 / When support is needed | 需要何时发生、能够间断多久、是否有真实储备；期限来自这些关系的实际变化，不能为选定赢家任意指定。 / When need arises, tolerable interruptions and actual reserves; timing comes from the changing relations, not a deadline selected to choose a winner. |
+| 过渡中的接续 / Continuation through transition | 到达恢复时刻之前如何得到支持；允许无需求的空档，但不能用后来恢复删除期间的生活损失。 / How support persists until recovery; a gap without demand can be harmless, while later recovery does not erase loss during actual need. |
+| 共同实现与替代 / Joint realization and replacement | 相关生活能否一起接续，替代依靠什么，是否把中断移到别处；各自有一条可能路线不足以证明共同可行。 / Whether relevant living relations can continue together, what supports the replacement and whether interruption is displaced elsewhere; separate possible routes do not establish joint feasibility. |
+
+现有证明直接支持这些区别。[回程等级](../results/records/becoming-return-grades.md)给出总会恢复、却不存在统一恢复周期的展开；它不证明每次恢复都迟于实际需要，所以应用仍须说明相应需要与时段。[替代中的消耗](../results/records/substitution-preserves-consumption.md)给出改变依存后焦点形成持续活跃、维持者却永久失去支持的展开；它不证明全部替代均不好，而是排除“我能继续，所以共同条件已被保住”的捷径。这两个例子均保留其原模型范围，不是一个完整转型方案的联合证明。
+
+Existing checks support these distinctions. [Return grades](../results/records/becoming-return-grades.md) supplies a course that always recovers without any uniform recovery period; it does not show that each recovery misses an actual need, whose timing must still be established. [Consumption under substitution](../results/records/substitution-preserves-consumption.md) supplies a course where the focal formation remains active after changing its dependence while the sustainer permanently loses support. It excludes certifying common preservation by focal persistence, not all substitution. The two witnesses retain their original model scopes and are not a joint proof of a complete transition.
+
+**怎样产生比较。** 若一条路线真实保留另一条路线的相关生活，并增加继续形成的能力，且全部相关过渡损失已进入比较、没有抵消损失，可用 J1。若修复保住额外基本生活条件，保留其他全部基本要求，却牺牲了真正可放弃的丰富性，则按已公开的 J2 作有损比较。若两条路线各失去不同基本生活，支承的依存关系本身仍未提供交换率；须继续实质比较。需要满足的时点可以使“稍后同样恢复”的说法失效，但迫近本身不赋予一项生活压倒其他生活的地位。
+
+**How comparison follows.** J1 applies where a route retains the other route's relevant living realizations and adds capacity for further formation, with all relevant transition losses included and no countervailing loss. J2 applies where repair protects an additional basic living condition, retains all other basic protections and sacrifices only genuinely optional enrichment. Where each route loses different basic living relations, dependence alone still supplies no exchange rate. An actual need can defeat a claim that later restoration is equivalent; urgency alone does not establish overriding priority.
+
+据此，对齐方向可以更具体地表述为：**在整体中支持生及继续生成，形成、维持和改善使生活能够共同延续、修复、转化与合宜完成的实际关系；以这些关系中真实发生的所得与损失修订目标和行动。** 这同时支持创造新能力与改变旧形式。它不要求当下生活先靠未来产出取得资格；无后继生产的休息和有限完成也在 G0 的正面范围内。它也不把同一段生活经由多个支承关系重复记成多份价值。
+
+The alignment direction can therefore be stated concretely: **support living and further generation within the whole by forming, sustaining and improving the actual relations through which lives can continue together, recover, transform and reach fitting completion; revise ends and actions through their real gains and losses.** This supports creating capacities and changing inherited forms. Present life need not earn its standing through future production: rest and finite fulfillment remain within G0. Nor should one living realization be counted repeatedly merely because several supporting relations contribute to it.
+
 ## 3. 四种回应及其转变条件 / Four responses
 
 | 回应 / Response | 有根据的条件 / Grounds | 改变判断的条件 / What changes the judgment |

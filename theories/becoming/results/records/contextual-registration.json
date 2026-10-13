@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T08:50:16+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "在语境中被识的主张（Contextual S K C V）：within k c 说语境 k 识主张 c，shows s k c 是 k 在配置 s 处对 c 所识的值。在 s 处诸识粘合（Contextual.Glues），指有 v : C → V 与每个语境在其所识的每个主张上一致；它推出识同一主张的任意两个语境一致（Contextual.Glues.agree），每个主张有识它的语境时两者等价（Contextual.glues_iff_agree）。连同语境读，每次识是框架的主张（Contextual.indexed），以语境为索引的框架合于每次识（Contextual.indexed_fits）；不依语境的主张的框架合（Contextual.FitsFree），恰当诸识在每个配置粘合（Contextual.fitsFree_iff）。语境能显示什么只取决于它所识的主张（Local），没有不依语境的读法落在每个语境的可能性之内（NoGlobal）时，没有尊重可能性的配置粘合（Contextual.not_glues），只要一个配置尊重它们，就没有不依语境的主张的框架合（Contextual.no_free_frame）。整体 W 在语境中允许的（restrict）是局部的（restrict_local），W 在其部分粘合成者（Glued）之内（glued_of_whole）；部分给回整体记作 PartsDetermine；可能性非空且没有不依语境的读法时，它们不是任何整体的部分（no_whole）。Specker 的三个盒子与三次打开、打开的两个中恰有一个有宝石：可能性局部（Specker.local_），没有打开强制任何盒子（Specker.unforced），没有放置合于全部（Specker.noGlobal），每次打开都在第一个盒子显示宝石的世界尊重它们（Specker.respects）而不粘合（Specker.not_glues），它们不是任何整体的部分（Specker.no_whole）。Mermin–Peres 方阵：九格三行三列，每行与前两列的奇偶为偶，第三列为奇：可能性局部（Square.local_），没有线强制任何格（Square.unforced），没有赋值合于全部六条线（Square.nine、Square.noGlobal），它们不是任何整体的部分（Square.no_whole）。量子实现（Becoming.Quantum，P72q）：两个量子比特上的九个可观测量作为整数矩阵，每个平方为 I（obs_sq），每条线的三个两两对易（line_commute），线的乘积在第三列为 −I、否则为 I（line_product）；非零向量在一条线上共同显示的值有该线的奇偶（line_parity），是该线的一个可能（shows_support），每个可能都由一个明确的整数向量显示（line_realized、support_shown）；所以没有对九格的赋值在每条线上被量子态共同显示（no_context_free_values）。不用 Lean 公理（生成的单射引理 injEq 除外，没有源声明使用它们）。",
     "en": "Claims registered in contexts (Contextual S K C V): within k c says that context k registers claim c, and shows s k c is what k registers of c at configuration s. At s the registrations glue (Contextual.Glues) when some v : C → V agrees with every context on every claim it registers; this gives that any two contexts registering a claim agree (Contextual.Glues.agree), and where each claim has a context registering it the two are equivalent (Contextual.glues_iff_agree). Read with its context, every registration is a claim of a frame (Contextual.indexed), and the indexed frame fits every registration (Contextual.indexed_fits); a frame of context-free claims fits (Contextual.FitsFree) exactly where the registrations glue at every configuration (Contextual.fitsFree_iff). Where what a context can show depends only on the claims it registers (Local) and no context-free reading lies within every context's possibilities (NoGlobal), no configuration respecting the possibilities glues (Contextual.not_glues), and if one configuration respects them no frame of context-free claims fits (Contextual.no_free_frame). What a whole W allows within a context (restrict) is local (restrict_local), and W lies within what its parts glue to (Glued, glued_of_whole); the parts giving the whole back is PartsDetermine; nonempty possibilities with no context-free reading are the parts of no whole (no_whole). Specker's three boxes and three openings, exactly one of the two opened holding the gem: the possibilities are local (Specker.local_), no opening forces a box (Specker.unforced), no placement fits all (Specker.noGlobal), the world showing the gem in each opening's first box respects them (Specker.respects) and does not glue (Specker.not_glues), and they are the parts of no whole (Specker.no_whole). The Mermin–Peres square, nine cells in three rows and three columns, rows and the first two columns of even parity and the third column odd: the possibilities are local (Square.local_), no line forces a cell (Square.unforced), no assignment fits all six lines (Square.nine, Square.noGlobal), and they are the parts of no whole (Square.no_whole). The quantum realization (Becoming.Quantum, P72q): the nine two-qubit observables as integer matrices each square to I (obs_sq), the three of each line commute pairwise (line_commute), and a line multiplies to −I in the third column and to I otherwise (line_product); the values a nonzero vector shows jointly on a line have the line's parity (line_parity) and are a possibility of the line (shows_support), and every possibility is shown by an explicit integer vector (line_realized, support_shown); so no assignment to the nine cells is shown jointly on every line by quantum states (no_context_free_values). No Lean axiom is used (except by the generated injectivity lemmas injEq, which no source declaration uses)."
@@ -253,7 +253,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -340,8 +340,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

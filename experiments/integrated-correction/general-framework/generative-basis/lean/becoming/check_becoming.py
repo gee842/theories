@@ -60,8 +60,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Counterfactual", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
-BRIDGE = ["Becoming.Bridge"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
@@ -75,6 +75,17 @@ SCOPE = (
     "Frozen methods, cut return, lost reserve and retired distinctions retain failures. "
     "Open productive support, succession, stable contacts and policy remain premises; "
     "no universal physical recurrence, basin, normative direction or closed-stock perpetuity. "
+    "TimedResponse: native exchanges in temporal order bound when a difference can register. "
+    "Before a deadline, common initial levels, balance, common present formations and response "
+    "through past registration imply blindness outside timed propagation. The cone refines "
+    "whole-course response; delayed arrival and ignored-signal witnesses preserve its limits. "
+    "Discrete steps have no supplied physical duration; routes are necessary, not sufficient. "
+    "RepairComparison is a peripheral shared-Frame application: a common repair law produces "
+    "two separate focal support episodes or one/two/three peer episodes. Current support "
+    "restoration retains historical losses. Distinct loss matches yield strict lower and upper "
+    "anchors only under explicit complete-episode scope and sufficient-matching commitments; "
+    "a backbone-disconnecting repair invalidates the match. No duration price or unconditional "
+    "aggregation, full-recovery, normative sufficiency or global FR threshold is derived. "
     "ReferencePlan: acquired mismatch changes the next generated contact plan; charged fresh "
     "reference pairs are checked and installed, then used in two actual policy-driven repairs "
     "without a resource reset. New installed selections reuse Revision. Frozen method, erased "
@@ -87,6 +98,19 @@ SCOPE = (
     "Process reconstructs registration, replenishes support and changes its response; loss and "
     "resource exhaustion remain possible. Target, control preference and construction law are "
     "supplied, with no general formation or normative theorem. "
+    "RegroupingSelection: pure adapters connect regrouping and revision on supplied content. "
+    "Arbitrary Frame claim-status fidelity is exactly preservation of all status-based claim "
+    "selections, without decidability. Fixed literal claims on any process separate this from "
+    "selection preservation across configurations. No semantic identity or understanding follows. "
+    "All requirement-profile selections survive grouping exactly where admission grouping is faithful "
+    "on every level path; merging a required-level difference loses some old selection. "
+    "No new process, executable selector, wisdom predicate or independent result is supplied. "
+    "Regrouping: comparison uses one frame with the process unchanged. Grouping preserves inclusion; "
+    "a coarse gain reflects a gain, but inclusion reflects and gains remain visible only under the "
+    "named local fidelity conditions. For decidable requirements, all-level admission fidelity is "
+    "exactly equality of minimum required levels. Transfer alternatives are generated, feasible and "
+    "balanced under the same rest-law; regrouping hides their opposed gains. No normative axiom, "
+    "unique individuation, or joint-feasibility claim is supplied. "
     "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
     "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
     "configurations its actual executions reach, and a sound policy secures its goal there. "

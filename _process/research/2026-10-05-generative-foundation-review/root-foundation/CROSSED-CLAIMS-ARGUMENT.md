@@ -101,3 +101,305 @@ LR 不靠这种做法获得有限合并。它直接比较实际选择后哪段�
 完成的是一个有实质代价和可失败条件的候选论证，不是已经校准所有现实近邻、证明所有交叉请求可排序，或给出唯一彩票公式。若要继续，更准确的问题是：在特定真实生活范围中，哪些关系变化保留或终止 LR 的余地；对于余地之外仍竞争的请求，机会本身的根据如何约束更强合并。不能把这一任务重新改写成必须无公理证明 G0。
 
 **English scope.** LR adds a contestable local robustness commitment to an already defended BC1 priority. Some independently characterized, bounded increases in the fewer claimants' losses need not immediately defeat protection of the greater number. This is not continuity derived from physics, a calibrated exchange rate, or a theorem about every basic conflict. Separately, an actual new joint-rescue route can improve a previously warranted opportunity arrangement while preserving existing protection chances. The two advances preserve differentiated histories and keep grounds for exclusion tied to what the chosen response actually protects.
+
+<a id="finite-responsiveness-beyond-lr"></a>
+
+## 10. FR：固定程度差异与有限的共同保护 / FR: fixed differences in gravity and finite common protection
+
+13 October 2026，P96。AI 提出的进一步比较候选，承接 Ren 的 “continue”。§§1–9 的 LR 与原独立评审范围原样保留。这里没有新增数学证明，也不声称旧 Lean 证明了 FR。当前统一结构将 G0 折入意义；FR 属于待辩护的 J 层比较承诺，不自动加入第一部分的无公理规律或第二部分的单一基础公理。
+
+13 October 2026, P96. An AI-authored further comparison candidate following Ren's “continue”. Sections 1–9 and their original independent-review scope remain unchanged. There is no new mathematical proof, and earlier Lean evidence does not establish FR. G0 retains its folded significance interface in the unified account. FR is a proposed practical comparison commitment, not automatically another law of Part I or a second fundamental axiom in Part II.
+
+**实质问题。** BC1 比较同等损失；BC2 为避免更重损失提供一对一理由；LC 在数量与程度同向时提供联合理由；LR 保留同等比较附近的一部分充分优先。它们没有决定一种更远的交叉：一处较长且较重的基本阻断，与多处较短但同样真实的基本阻断。重述因果、增加一个回程证明或将所有人列作基本，都不能独自补上此处的优先强度。
+
+**The substantive gap.** BC1 compares equivalent losses; BC2 supplies a one-to-one gravity reason; LC supplies joint reasons when number and gravity align; LR preserves some sufficient priorities near equality. They do not settle a farther crossing: one longer and graver basic interruption against many shorter but still basic interruptions. More causal description, another return proof or calling every claim basic does not independently supply the missing comparative strength.
+
+### 10.1 从同一支持展开限定比较族 / Identify the comparison family within one support process
+
+设一种共同沟通支持的修复出现冲突。一条路线恢复一处较长的严重沟通与自护阻断；另一条路线能共同避免多处较短的同类阻断。生活位置在这套共同支持及其失效中分化；较重一处和较轻多处都在同一展开之内，没有一边因人数少就不再属于整体。比较的是未得到修复时的完整生活损失，不是设备、消息量或位置标签的数量。
+
+Suppose repair of common communication support is in conflict. One route restores a prolonged serious interruption of communication and self-care in one position; another jointly prevents shorter interruptions of the same kind elsewhere. Living positions differentiate within this shared support and its failure. All remain within the same unfolding, including the fewer with the graver loss. The objects of comparison are complete losses without repair, not devices, message counts or labels.
+
+在提出 FR 之前，比较族须满足下列独立内容：
+
+Before FR applies, establish the following independently of the desired winner:
+
+- 较重损失 H 与较轻损失 L 均真实涉及基本生活；L 是固定的实际损失，不随纳入的生活增多而缩成任意微小的便利。两者属于已说明的同类阻断，H 可以明显更重，不能把“较重不多”暗作前提。 / H and L both concern basic living. L is a fixed real loss, not a benefit that shrinks toward a trivial convenience as more lives enter. They concern an independently described common kind of interruption; H may be substantially graver.
+- 两者都有实际可达且及时的恢复，恢复之前由真实支持承接仍须保留的生活；完整损失包括这段阻断。不存在被忽略的死亡、不可逆严重毁损、最后一次参与、支持崩塌、不同强迫或背弃承担。可恢复和有限本身不证明这些条件。 / Both have genuinely reachable, timely recovery with support for living that must continue before recovery. Their complete losses include the interruption. Death, serious irreversible damage, a last opportunity, support collapse, different coercion or breach of undertaking must not be omitted. Finitude and reversibility alone do not establish these conditions.
+- 每处较轻损失属于实际不同的生活实现；共同阻断及修复的连带后果另行计入，不能把一处生活的多条依存路径反复计数。规模增加不靠把描述复制成更多人。 / Each lesser loss belongs to a genuinely distinct realization of living. Common and cascading effects are included separately; several dependency paths do not multiply one loss, and copied descriptions do not add lives.
+- 两类救助均有独立权限、可靠效果与可共同实施的支持；规模改变引起的实际负担全部进入比较。没有一项已经正当确定、必须兑现的机会安排或其他先行要求被省略。 / Both forms of rescue have independently warranted permission, reliable effect and jointly feasible support. Include burdens changed by scale. Omit no settled opportunity arrangement or other prior claim that must be honored.
+
+这些条件建立一个讨论范围，不声称现实允许人数任意扩张，也不预先保证任何数量可以胜过 H。没有找到反向关系不等于已经证明不存在。面对实际规模上限，FR 的一般承诺不能凭空创造更多可救助者或路线。
+
+These conditions identify a domain; they establish neither arbitrarily expandable populations nor a number sufficient to outweigh H. Failing to find a reverse effect does not prove its absence. With an actual scale limit, FR creates no additional lives or feasible routes.
+
+### 10.2 候选承诺及其强度 / The proposed commitment and its strength
+
+**FR，有限合并回应：在上述充分说明的同类基本损失比较族中，固定的较重损失不应凭其程度差异，对任意多项固定的较轻基本保护始终保有充分优先；若相关支持、负担和历史条件能够在规模扩展中保持，则应存在某个有限的共同保护规模，使实现这些较轻基本保护具有充分选择根据，即使较重一处因此未在这次选择中获救。**
+
+**FR, finite responsiveness to aggregation:** within the adequately specified family of same-kind basic losses, a fixed graver loss should not retain sufficient priority over arbitrarily many fixed lesser basic protections solely through its difference in gravity. Where the relevant support, burdens and historical conditions can be retained as scale expands, some finite scale of joint protection should provide sufficient grounds for choosing those protections even though the graver claim is not rescued in this choice.
+
+FR 主张的是有限规模可以取得决定作用。它没有给出人数、交换率、普遍损失单位，也未断言已知现实案例必然达到该规模。它直接比较固定 H 与完整的一组 L，不通过不断重设 LR 基准来削弱 H，也不把一段长期承受拆成人为的多个独立承受者。无条件断言“存在某个实际可行规模”会越过事实范围；本候选明确保留规模扩展的对应前提。
+
+FR proposes that finite scale can become decisive. It supplies no number, exchange rate or universal loss unit, and does not assert that a known actual case reaches that scale. It compares fixed H with a whole collection of L directly, without repeatedly resetting LR or splitting one prolonged experience into artificial independent bearers. An unconditional assertion of a feasible scale would overreach; the candidate retains the scale-correspondence condition.
+
+**否定永久优先还不等于获得反向优先。** 理论也可能在所有更大规模上保持未决或保留双方机会。FR 同时承担更强的一步：有限规模中的某些共同保护可以取得充分选择根据。这不是“反对绝对优先”的逻辑改写。它也不自动许可此后每个更大方案；新规模若改变支持或负担，就已经需要新的具体判断。
+
+**Rejecting permanent priority does not establish reverse priority.** A theory could instead leave all larger cases unresolved or retain chances on both sides. FR additionally commits to some finite joint protections acquiring sufficient grounds for choice. This is stronger than a logical restatement of opposition to absolute priority. Nor does it automatically permit every larger plan: changed support or burdens require a new concrete judgment.
+
+### 10.3 为什么支持，而不冒充推导 / The affirmative defense, without a disguised deduction
+
+第一，每次真正避免 L，保住的是一段原本会遭到基本阻断的生活。新增的不同生活不是原理由的重复书写；共同救助更广地实现了同一生生方向。第二，H 的较重是真实的，故少量 L 未必胜出；但在上述比较族中，H 的额外理由来自一种已说明的、可恢复的更深或更久阻断，未另带终结整段生命或破坏共同继续的优先根据。第三，FR 选择这样理解这些理由的共同作用：固定的同类加重可以要求更多基本保护来胜过它，却不应仅凭“更重”这一顺序位置，永远免于数量扩展的比较。
+
+First, each actual prevention of L preserves living that would otherwise suffer a basic interruption; additional distinct lives are not repeated descriptions. Joint rescue realizes the same generative direction more widely. Second, H is genuinely graver, so a few L need not prevail. Yet, within this family, its added reason concerns an identified, recoverable increase in depth or duration, without an additional ground tied to ending a whole life or destroying common continuation. Third, FR endorses this account of their joint force: a fixed same-kind increase can require more basic protection to outweigh it, without the ordinal fact “graver” permanently exempting it from comparison as actual protection expands.
+
+**第三步正是新增的规范承担。** 理由存在且数量增加，不在逻辑上保证其合力无界；可能有一种饱和的合并立场，始终计入 L，却认为再多也不足以胜过某个 H。FR 拒绝这种在本范围内的永久上限。它比“不能删除较轻理由”更强；其根据是本理论愿意让新增的真实基本生活保持可能决定共同回应的地位，而不是仅允许它们被听见。这个选择可争辩，不能由有限时长、连续动力学或“一元”一词证明。
+
+**The third step is the added normative commitment.** Existing reasons and increasing numbers do not logically ensure unbounded combined force. A saturating view can count every L yet hold that no number defeats a particular H. FR rejects that permanent ceiling within this domain. It is stronger than retaining lesser reasons: it gives additional real basic living the possibility of determining common response, rather than only being acknowledged. This is contestable and follows from neither finite duration, continuous dynamics nor the word “monism”.
+
+### 10.4 机会代价与停止推广的地方 / Opportunity cost and limits of extension
+
+FR 的“充分”沿用 BC1/LR 的强度：在其充分根据实际成立时，可以不给较重一方分配本次救助机会。这是实质机会代价。不能用“损失仍被记录”冒充已经给了它机会，也不能把其他生活的获救称作对其承受的补偿。未得到此次救助后仍可实施的缓解、照护和后来支持须继续评价。
+
+FR uses sufficient grounds in the stronger BC1/LR sense: where established, they can support allocating no rescue chance to the graver claimant in this decision. That is a substantive opportunity cost. Retaining a record of the loss is not giving a chance, and saving other lives does not compensate the one enduring H. Remaining feasible relief, care and later support still need appraisal.
+
+因此，已有 CP 的未被充分击败请求范围必须按事实重新判定：FR 可以提出一种新的击败根据，但仅援引 FR、尚不知其实际比较界限，不足以宣布该请求已经被充分击败。此前成立的具体机会承诺也不能由这条后来提出的原则自动取消。没有实际充分判断时，J4/CP 的既有未决处理继续适用。
+
+The scope of existing CP for claims not sufficiently defeated must therefore be assessed on the facts. FR proposes a further possible defeating ground; citing FR without establishing the actual comparison boundary does not establish defeat. It cannot automatically cancel a previously warranted chance commitment. Without a sufficiently grounded actual verdict, existing J4/CP treatment of unresolved claims remains applicable.
+
+FR 不跨越 J2 的基本／可放弃区分：L 本身必须是实际基本损失。它不从可恢复的同类阻断推出多少便利可交换一条生命，不把一项不可逆的共同支持崩塌拆成很多可恢复片段，也不自动支持风险下的期望值相加。比较族中的新关系转折要求重新判断，而不是调整一个权重维持原答案。
+
+FR does not cross J2's basic/optional distinction: L must itself be a real basic loss. It sets no rate exchanging conveniences for a life, does not split an irreversible collapse of common support into recoverable fragments, and does not authorize expected-value addition under risk. A new relational change requires renewed judgment, not a weight adjustment to preserve the old answer.
+
+### 10.5 作者反审：什么能够推翻或缩窄 FR / Author counterreview: what defeats or narrows FR
+
+| 对手或失败 / Rival or failure | 回应及实际代价 / Response and cost |
+|---|---|
+| 接受 BC1 和 LR，但对差距更大的 H 给较轻合并设置饱和上限。 / Accept BC1 and LR, but impose a ceiling against a more distant H. | 这是尚未被逻辑排除的严肃对手。FR 必须独立辩护为何此 H 不配享有该绝对优先，不能指控对手不计较轻损失。 / A serious rival not logically excluded. FR must defend denying absolute priority to this H, without accusing the rival of ignoring L. |
+| 每个较重基本请求无论规模都应保留正机会。 / Every graver basic claim should retain a positive chance at every scale. | FR 的确定选择与之冲突。较多实际保护的理由被认为可在本范围内充分胜出；若机会论证更强，应缩窄 FR，而不是把“充分”偷偷改成“仅有理由”。 / This conflicts with decisive FR. If the opportunity argument prevails, narrow FR rather than quietly weaken “sufficient” to “a reason”. |
+| H 有限且可恢复，仍有不可重复的羞辱、关系破裂或参与损失。 / H is finite and recoverable but carries unrepeatable humiliation, relational rupture or participation loss. | 不能仅看最终能力恢复；完整损失可能不属于所述比较族。若全部差异已被说明仍支持永久优先，则直接挑战 FR 的规范承诺。 / Endpoint recovery is insufficient. The loss may fall outside the family; if fully represented differences still warrant permanent priority, they challenge FR itself. |
+| 扩大救助范围需要新的支持、增加失误或使共同关系崩塌。 / Scaling rescue requires new support, adds failures or collapses shared relations. | 不得按人数复制已成立的判断；须评价变化后的整段路线。FR 不保证物理可扩张。 / Reassess the changed whole course; do not copy the old verdict by headcount. FR guarantees no physical scalability. |
+| 较轻保护的判定只是为了让足够多数赢。 / “Basic lesser protection” is defined to make a large group win. | 应撤回应用：需要实际基本生活内容和损失差异的独立根据，不能由排名反向定义。 / Withdraw the application; basic content and loss differences require independent grounds. |
+
+**当前判断。** FR 是值得正面保留和进一步检验的更强候选：它把“更多真实基本保护可能改变结果”推进到 LR 近邻以外，并明确选择反对所述范围中的永久程度优先。本轮完成的是承诺、正面理由、适用内容和强对手的论证；尚未得到任何现实案例的最小充分人数，也未完成全域排序、与所有旧原则的形式一致性或零实质公理奠基。下一项有辨别力的研究，是用同一实际支持关系固定 H、L 与规模代价，找出一个双方都能接受的较轻方仍不足案例和一个足以胜出的案例；这些充分性判断本身仍须伦理辩护，不能用估计器自动产出。
+
+**Current judgment.** FR merits retention and further testing as a stronger affirmative candidate. It extends the possible decisiveness of more actual basic protection beyond LR's neighborhood and explicitly rejects permanent gravity priority in its domain. This round supplies the commitment, affirmative rationale, application content and serious rivals. It supplies no actual minimum sufficient number, global ranking, formal consistency with every earlier principle or zero-substantive-axiom foundation. The next discriminating inquiry fixes H, L and scale costs within one actual support relation and seeks both an agreed insufficient lesser-protection case and a sufficiently strong one. Those sufficiency judgments still need ethical warrant; an estimator cannot produce it automatically.
+
+<a id="complete-episode-comparison-anchors"></a>
+
+## 11. 第一个有具体两端的比较：完整片段与共同修复 / First concrete comparison anchors: complete episodes and common repair
+
+13 October 2026，P100。接续 Ren 的“好的”，把上一节的存在性候选推进到一个有实际生成路线的有限构造。这里的“实际”指模型内按同一律发生的路线；它是理论案例，没有声称完成现实修复网络的经验校准。新数学在共享脊柱的外围模块 [Becoming.RepairComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean)，复用 `Frame`、`Run`、`Trace` 与旧损失比较的 `Strict` 和优先传递定理。
+
+13 October 2026, P100. Following Ren's “好的”, the existential candidate receives a finite construction with courses actually generated by one law. “Actual” here means within the supplied model, not an empirically calibrated repair network. The peripheral spine module [Becoming.RepairComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean) reuses `Frame`, `Run`, `Trace`, and the earlier loss comparison's `Strict` and priority-transport theorem.
+
+### 11.1 同一共同支持过程及其四条路线 / One common support process and four courses
+
+共同沟通支持有一个持续的骨干和若干接入。故障在不同接入、不同活动时段阻断基本表达与自护。一次修复机会可以修复 P 的接入，也可覆盖 Q、R、S 接入中的一处、两处或三处；各路线使用同一给定的变化律，从同一初态产生。允许这些操作及其覆盖能力是局部机制的前提，没有从普遍生成理论推出实际维修技术或容量。
+
+A common communication support has a continuing backbone and several access points. Faults interrupt basic expression and self-care at different points and activity periods. One installation can repair P's access or cover one, two or three of Q/R/S. The alternatives start from the same state under the same supplied transition law. Their available operations and coverage are local mechanism premises, not a derivation of actual repair technology or capacity from the universal theory.
+
+P 未修复时会失去两次完整活动 p₁、p₂；两次之间支持重新可用。Q、R、S 各有一次活动 q、r、s 面临阻断。五次活动的基本内容、深度及完整后果暂作相当的**独立对应前提**。它们不是把连续受苦任意切成五个时钟格，也不是把 P 改名为两个生命。模型分别保留位置、发生时点、骨干支持、已实施修复和历史实现。
+
+Without repair, P loses two whole activities p₁ and p₂, with support available again between them. Q, R and S each face one interrupted activity q, r and s. Equivalence of the episodes' basic content, depth and complete consequences is an **independent correspondence premise**. These are neither arbitrary slices of continuous suffering nor two invented lives in place of P. The model retains position, episode time, common support, installed repair and historical realization separately.
+
+| 路线 / Course | 保护的活动 / Protected activities | 尚未避免的损失 / Remaining losses |
+|---|---|---|
+| A：修复 P / Repair P | p₁、p₂ | q、r、s |
+| B₁：覆盖 Q / Cover Q | q | p₁、p₂、r、s |
+| B₂：覆盖 Q、R / Cover Q/R | q、r | p₁、p₂、s |
+| B₃：覆盖 Q、R、S / Cover Q/R/S | q、r、s | p₁、p₂ |
+
+表中始终是同一个活动范围，没有为了比较 B₁ 而让 R、S 消失。所有路线最终恢复当前支持，历史中未实现的活动仍被保留。`historical_claim_iff_support` 检查表中的历史主张确实对应同一路线在相应时点的支持；中间与最终支持成立来自给定的可用性规律，不能以“这时没有需求”代替支持已恢复。**支持可用不独自证明经验、关系和承受已完全恢复**；这一更强对应仍须说明。
+
+The table keeps the same activity range throughout; R and S do not disappear when comparing B₁. All courses restore current support, while missed historical activities remain missed. `historical_claim_iff_support` checks that each retained episode claim corresponds to support at that time in the same course. Intermediate and final support follow the supplied availability law, not vacuous absence of demand. **Available support alone does not establish complete experiential or relational recovery**, which remains a stronger correspondence obligation.
+
+模型中的历史主张直接读取支持是否在该活动时点可用；将其读作活动得到实际实现，还须支持确实足以使该活动完成、没有另一个未记录阻断的应用前提。这是生活实现到支持记录的对应，不能把 `realized` 的变量名本身当作证明。
+
+The historical claim directly reads availability of support at the episode time. Reading this as an actually realized activity additionally requires that the support suffices for that activity and that no other unrecorded obstacle intervenes. This is a correspondence from living realization to the support record, not a proof supplied by the name `realized`.
+
+### 11.2 需要公开增加的承诺 / The added commitment that must be explicit
+
+本应用提出有范围的**完整片段匹配具有充分比较效力**：在上述内容完整、同类、无重复的基本活动片段中，若甲的每项未避免损失都能对应乙的一项同等损失，且乙还多出一项真实基本损失，在权限、已有承担、共同后果及本次适用范围已充分说明时，该匹配足以支持甲相对乙的严格优先。
+
+The application proposes scoped **sufficiency of complete-episode matching**: for complete, equivalent, nonduplicated basic activity episodes, if every remaining loss in A corresponds to a distinct equivalent loss in B and B has an additional real basic loss, the match supplies sufficient grounds for strict priority of A, with permission, undertakings, common effects and application scope adequately established.
+
+这一承诺比 LC 的“存在减损理由”更强，也把 BC1 对完整生活保护的充分性扩展到了所述基本活动片段。它不是已有原则换一个符号；Lean 将它保留为 `SufficientMatching` 假设。`scope` 须由前述具体关系条件说明，不能定义为“甲应该赢”。`sameEpisode` 的构造定义只表示所检验的读法，不能认证生活实际上相当。
+
+This is stronger than LC's pro tanto reduction reason and extends BC1's sufficiency to the stated basic episodes. It is not a renaming of an established principle: Lean retains it as the `SufficientMatching` hypothesis. `scope` must be established through the specified relational conditions, not defined as “A should win”. The constructed `sameEpisode` relation represents a reading without certifying actual equivalence.
+
+正面理由是：在完整匹配保留全部相关损失内容的范围内，甲避免了乙还会发生的一次基本阻断；这多保住的实际生活可以有决定作用。比较不因某两次活动发生在同一个生活位置就自动将其中一次置零，也不因多次阻断落在同一处就自动认定可以相加。两者之间的累积、期待、反复受损及关系变化都须先说明。即便实际后果已充分相当，一个认为受损集中本身仍有独立优先的对手也可以反对本承诺；不能事后把该对手全部排除为“遗漏事实”。
+
+The rationale is that, where complete matching retains all relevant loss content, A prevents one basic interruption that B still incurs, and that additional living realization can be decisive. Two episodes at the same position do not make one disappear, nor does recurrence automatically license addition. Accumulation, anticipation, repeated burden and relational change require explicit assessment. Even with equivalent actual consequences, a rival may assign independent priority to concentrated loss. That objection challenges the commitment and cannot simply be reclassified as missing facts.
+
+### 11.3 得到的两端及中间未定 / The established anchors and unresolved middle
+
+**A 对 B₁。** A 留下的 q 与 B₁ 留下的 p₁ 匹配；r、s 各与自身匹配；B₁ 还留下 p₂。`focal_matches_one` 检查匹配与未匹配的额外损失。加入上述充分性承诺和实际对应，`conditional_lower_anchor` 给出 A 严格优于 B₁：在这个范围中，避免别处一次完整阻断不足以胜过避免 P 的两次。
+
+**A versus B₁.** Match A's remaining q with B₁'s remaining p₁, and r/s with themselves; B₁ additionally loses p₂. `focal_matches_one` checks the matching and extra loss. With the sufficiency commitment and correspondence, `conditional_lower_anchor` gives strict priority to A: preventing one other complete interruption is insufficient against preventing P's two within this scope.
+
+**B₃ 对 A。** B₃ 留下的 p₁、p₂ 分别与 A 留下的 q、r 匹配；A 还留下 s。`three_matches_focal` 与 `conditional_upper_anchor` 给出 B₃ 严格优于 A：在这个范围中，避免别处三次完整阻断已经足够。
+
+**B₃ versus A.** Match B₃'s remaining p₁/p₂ with A's remaining q/r; A additionally loses s. `three_matches_focal` and `conditional_upper_anchor` give strict priority to B₃: three other complete interruptions suffice within this scope.
+
+**B₂ 对 A。** 已检查一个双向可逆的损失对应：三项剩余损失各有对应，没有在这次构造中另指出额外损失。本结果不宣称最终无差异、必然各半或已经识别唯一最小人数；集中、历史及机会仍可提出其他比较。已取得的是明确下端与上端，不是全部规则。
+
+**B₂ versus A.** A reversible loss correspondence is checked, without designating an additional loss in this construction. No final indifference, required half chance or unique minimum number is asserted. Concentration, history and opportunity can raise further comparisons. The result supplies concrete lower and upper anchors, not a complete selector.
+
+这也没有把“一处两次阻断”等同于“两条生命”：匹配对象是这些已独立说明的生活实现，身份始终保留。外侧两端在另有传递性时可以接合，`conditional_outer_order` 直接复用旧 `strict_improvement_transport`；传递性不是从案例表中自动获得的伦理原则。
+
+This does not equate two interruptions in one life with two lives. Matched objects are independently identified living realizations, with identity retained. Under an additional transitivity condition the outer anchors compose; `conditional_outer_order` directly reuses `strict_improvement_transport`. Transitivity is not automatically warranted by the table.
+
+### 11.4 实际支持改变会使比较失效 / Changed common support defeats the application
+
+反例控制保留同一修复过程的接口，但给出一种不同的设备关系：三接入修复会断开骨干，而 P 的修复不会。此时三接入指令并未实现表中的三项保护；骨干本身的损失也在历史框架中保留。`fragile_three_not_matching` 证明它不再能按上述内容关系匹配 A。它揭示的是实际支持前提失效，未由此反驳包含该关系的完整理论或所有有限合并。
+
+The failure control retains the repair interface but supplies a different equipment relation: installing the three-access repair disconnects the backbone, whereas the focal repair does not. The instruction therefore fails to realize the three advertised protections, and backbone loss remains in the historical frame. `fragile_three_not_matching` proves that it no longer matches A under the specified content relation. This shows failure of actual support correspondence, not a refutation of the fuller relational account or all finite aggregation.
+
+另一个边界来自片段本身。若 p₁、p₂ 实际是一段持续加重、没有恢复的毁损，或第二次阻断因先前经历而具有更深的完整损失，原同等片段读法就没有获得根据。即使技术支持重新上线，长期恐惧、失信、丧失参与及累积耗竭仍可能使它失效。这些情况不能由记录切分或一个单位权重消去。
+
+A further boundary concerns the episodes. If p₁/p₂ constitute continuously deepening damage without recovery, or the later interruption carries a graver complete loss because of the earlier one, the equivalent-episode reading lacks warrant. Technical restoration can leave fear, damaged trust, lost participation or cumulative exhaustion. Neither partitioning records nor unit weights removes these consequences.
+
+### 11.5 这一步完成什么 / What this step completes
+
+现在已有一个局部答案：**在完整片段对应与充分匹配承诺成立时，一次保护不足、三次保护足够；中间不强行填值。** 数字来自独立辨认的活动与明确匹配，不是先选一个人数阈值，再把损失调成它。该应用付出的理论代价也已明确：跨时片段的完整性与同等性，以及从匹配理由到充分选择的加强。
+
+There is now a local answer: **with complete-episode correspondence and sufficient matching, one protection is insufficient and three suffice; the middle is not forced.** The numbers arise from identified activities and explicit matching, rather than a chosen population cutoff with losses fitted afterward. The theoretical costs are equally explicit: complete and equivalent episodes across time, and the strengthening from a matching reason to sufficient choice.
+
+本次没有解决连续的较长毁损与较短毁损的普遍交换，也没有证明 FR 在所有可恢复基本损失中成立。特别是，**这不是前轮任意 H 的校准**：本轮选出了 H 能被独立说明为两次完整活动损失的范围。下一项实质工作是检验这个分解范围，以及对不能分解的持续损伤提出直接比较根据；一般交接、回程、改名保真及本次已检查的匹配不再列作待证。
+
+This does not settle universal exchange between longer and shorter continuous damage or prove FR throughout recoverable basic loss. **It is not calibration of the preceding arbitrary H**: it selects a domain in which H can independently be understood as two complete activity losses. Next test that domain of decomposition and develop direct comparison grounds for damage that cannot be decomposed. Do not reopen general handoff, return, renaming fidelity or these checked matches.
+
+<a id="complete-episodes-and-relational-remainders"></a>
+
+## 12. 何时能够把损伤说明为完整片段 / When harm can be described as complete episodes
+
+13 October 2026，P102，接续 Ren 的直接要求。这里完成 P100 的内容对应说明，沿用同一个 FR 记录；不是另建损伤本体或新增普遍数学定理。共同活动维持其支持、形成期待及承担，也可能中断、恢复或改变。所谓一次损失，是这段展开中某个具体生活实现被阻断；所谓两次，是实际发生了两个可区分的阻断，不是记录者写了两个编号。
+
+P102, following Ren’s direct request. This completes the content-correspondence account needed by P100 within the same FR record, without a separate ontology of harm or a new universal mathematical theorem. Common activity maintains support, forms expectations and undertakings, and can break, recover or change. A loss names a blocked living realization within that unfolding; two losses require two distinguishable occurrences, not two labels.
+
+### 12.1 三种不同资格 / Three distinct permissions
+
+**叙述可分、内容可分、比较可替换必须分开。** 一段经历可以按时钟叙述，却只有一个未完成的共同活动；两个确实不同的活动也可以相互改变，使第二次损失不能作为第一次的同等副本。P100 的等同片段匹配需要第三种资格，不能从第一种直接获得。
+
+**Narrative division, differentiation of loss content, and substitutability in comparison are distinct.** Clock intervals may describe one failed joint activity. Two genuinely different activities may alter each other so that the second loss is not an equivalent copy of the first. P100 requires the third qualification, which narrative division does not establish.
+
+提出以下有范围的分解准则。它是怎样给出充分对应理由的方法，不是全部损伤都有唯一自然分割的断言，也不是无条件必要充分定理。
+
+The following is a scoped criterion for warranted decomposition, not a claim that every harm has a unique natural partition or an unconditional necessary-and-sufficient theorem.
+
+| 条件 / Condition | 要说明的实际关系 / Relational warrant | 使简单片段匹配失败的情况 / Failure of simple episode matching |
+|---|---|---|
+| 活动边界 / Activity boundary | 此次活动怎样形成、何时完成或失去；后来重做是在补救同一次，还是已是另一次实际生活。/ Identify formation, completion or loss of the activity, and whether a later performance remedies that occasion or is another realization. | 把一次未完成的表达按分钟复制为许多次损失。/ Multiplying one failed expression by counting its minutes. |
+| 不重复指认 / Nonduplication | 每项分别指向什么实际阻断；同一次活动的支承失效、参与失去和记录缺席怎样相连。/ Identify distinct interruptions and the relation between failed support, lost participation and absent records. | 同一阻断从供给侧和使用侧各计一次；或反过来把共同原因造成的不同承受合成一项。/ Double counting supply/use descriptions, or erasing distinct harms because their cause is shared. |
+| 跨段关系保留 / Retained relations across episodes | 前段怎样改变后段的能力、期待、疲惫、信任、支持及恢复负担。/ Retain changes in capacity, expectation, fatigue, trust, support and restoration burdens. | 当前接入恢复，就把持续恐惧、耗竭或失信清零。/ Treating restored access as erasing fear, depletion or damaged trust. |
+| 完整行动对应 / Whole-action correspondence | 实施保护会怎样改变其他片段和共同条件；组合必须来自可共同实行的路线。/ Track how protection changes other episodes and common conditions; combine only jointly implementable courses. | 把不同反事实路线各自有利的部分拼成并不存在的保护。/ Combining favorable pieces from incompatible courses. |
+| 同等性的实质根据 / Substantive equivalence | 基本内容、阻断深度、现时承受、可达接续及仍有效承担为什么在本比较中相当。/ Establish equivalence of basic content, depth, present burden, reachable continuation and live undertakings within this comparison. | 只因时长、名称或最后设备状态相同，就设为同等单位。/ Inferring equal units from duration, names or final device state alone. |
+
+**跨段关系的处理是关键。** 可以把每次实际损失分别说明，同时把反复受损、共同恢复成本、不可逆改变等作为联合内容保留；这已经是有用的分解，但还不允许只比较片段数。如果这些联合内容会随选择不同而改变，就必须进入比较；若其作用尚未得到有根据的比较，保留整体判断。即使某个背景在两个方案中完全相同，它仍可能改变每项损失的意义，不能因为“共同”就删除。
+
+**Relations across episodes are decisive.** Distinct losses may be described alongside joint content such as repeated harm, shared restoration costs and irreversible change. That is useful decomposition but does not license counting alone. Choice-dependent joint effects enter the comparison; effects without warranted comparative treatment require retaining the whole judgment. Even identical background conditions can change what each loss means and cannot be deleted merely because they are common.
+
+由此，P100 的简单匹配只在两种说明下适用：联合内容确已进入对应，匹配没有遗漏；或者已另外说明其在本次比较中的作用，不会取消匹配的充分根据。后一项需要具体理由，不能用“剩余项中性”这句定义代替。片段内容的完整性与匹配的充分性依旧分列；即使事实对应齐全，认为集中受损本身有特别优先的反对者仍是在提出规范争论。
+
+P100’s simple matching applies only when joint content is retained in the correspondence, or its role has separately been shown not to defeat the sufficient matching ground. “The remainder is neutral” cannot substitute for that argument. Complete content and sufficient matching remain separate: priority for concentrated harm can still be a normative objection after factual correspondence is complete.
+
+### 12.2 恢复究竟起什么作用 / What restoration establishes
+
+恢复支持提供一个有力的活动边界证据，但**既不是任何分解的必要条件，也不是同等计数的充分条件**。不同活动可在同一持续不利境况中发生；保留共同境况即可分别说明，不必先证明整个生活已完全复原。反过来，短暂恢复接入也可能只是同一长期受损过程的间隙。P100 的恢复间隔只承担它已经检查的支持可用性，完整经历与规范对应由本节另行承担。
+
+Restored support can be strong evidence of an activity boundary, but it is **neither necessary for every useful decomposition nor sufficient for equal counting**. Different activities may occur within a continuing disadvantage, provided that common condition is retained. Briefly restored access can also be a gap within one sustained injury. P100’s interval establishes checked availability only; this section carries the further experiential and normative correspondence.
+
+充分了解也不要求穷尽宇宙后果。范围由当前真实活动、已有证据和决定可能改变的关系确定。已知有可能改变判断的跨段关系应查明或给出有根据的界；仅仅没有发现后效，不能断言没有后效。若一个尚未精确量出的后效在保守的完整比较中也不改变优先，则不必等待一个虚假的精确总分。这里的“保守”要求比较界本身有根据，不是随意加一个安全系数。
+
+Adequacy does not require exhaustive knowledge of the universe. Scope follows the activity, available evidence and relations that can affect the decision. Known potentially decisive cross-episode effects must be investigated or bounded; failure to detect them does not establish absence. An imprecisely known effect need not delay judgment when warranted conservative whole-course comparisons already preserve priority. A bound needs grounds, not an invented safety factor.
+
+### 12.3 两个分解检验 / Two decomposition tests
+
+**可分别说明的构造。** 同一沟通支持分别承接两个已形成的表达活动。每次都有自己的参与、完成条件和不可追回的当次机会；一次错过不会把下一次自动变成同一次补做。若额外说明重复负担、期待和共同支持的变化，并获得片段同等性及充分匹配承诺，便可使用 P100。使它成立的是这些活动关系，不是“发生在两天”。
+
+**A qualifying construction.** One communication support serves two formed expressive activities, each with its own participation, completion and irretrievable occasion. Missing one does not automatically make the next a repeat of that same occasion. With repeated burdens, expectations and support changes accounted for, and episode equivalence plus sufficient matching warranted, P100 applies. The grounds are activity relations, not occurrence on two calendar days.
+
+**必须保留联合内容的构造。** 同一任务要求持续回应；中断之间虽然短暂接通，但共同任务始终未完成，反复失败还不断破坏继续信任。按两次断线记录不能取得“两项同等损失”；可保留两次断线事件，同时把整项参与失败和反复失信作为关联内容。不能再把这三种描述不加区分地相加。
+
+**A construction requiring joint content.** A task needs sustained response. Brief reconnections fail to complete it, while repeated failure damages continuing trust. Two disconnection records do not establish two equivalent losses. Retain the two events together with failed whole participation and damaged trust, without indiscriminately adding the three descriptions.
+
+本节完成的是“完整片段”适用资格的正面说明、失败判据及有界认识要求。它接续 `comparison-content-under-regrouping` 的保真纪律，但不把该成果对接纳读法的精确条件扩张成所有生活内容的判据；无新数学或经验认证。
+
+This completes a positive account, failure criteria and bounded epistemic requirements for the complete-episode domain. It reuses the fidelity discipline of `comparison-content-under-regrouping` without extending that result’s exact admission-reading criterion to all living content. No new mathematical or empirical certification is claimed.
+
+<a id="whole-course-comparison-of-sustained-harm"></a>
+
+## 13. 不可分解的持续损伤怎样获得直接比较根据 / Direct grounds for comparing sustained harm without decomposition
+
+**不把不能分解误作不能比较。** 持续阻断可以作为一段完整关系展开接受判断：实际生活受到什么限制，承受怎样的过程，哪些继续仍可达，恢复要经过什么，损失怎样改变共同活动。时长是这些关系的一项事实，不能单独承担全部意义；一次持续活动也可以是完整比较对象，而无需先拆成许多个同等时间单位。
+
+**Nondecomposability does not preclude comparison.** Appraise sustained interruption as a whole relational course: what living is restricted, what is experienced, which continuations remain reachable, what restoration requires, and how common activity changes. Duration is one fact within these relations, not their entire significance. One sustained activity can be a whole object of comparison without becoming equal clock units.
+
+### 13.1 从实际修复关系建立直接轻重 / Establish gravity through actual repair relations
+
+比较先固定共同起点、相关行动及真实后果，再分别说明四项内容：当下承受和参与，继续行动及自护的能力，恢复的实际路径与负担，以及受影响的共同支持、关系和未来生成。它们是询问同一展开的不同方面，不是四个可直接相加的分数；喜悦、自身安好和表达也不必先换成后续生产力才有意义。
+
+Fix the common starting history, actual responses and their effects, then examine present experience and participation, capacity to continue acting and caring, the path and burdens of restoration, and changed common support, relations and further generation. These are aspects of one unfolding, not four additive scores. Joy, self-good and expression need not first become future productivity to matter.
+
+最清楚的直接根据是**保留中减轻**：在同一生活及共同条件中，一项真实改变减轻持续损伤或提前恢复一项基本活动，同时保留其他相关实现、承担及后续支持。其根据来自实际多保住的生活，而非把“较轻”定义成应优先。在这些保持关系获得说明时，可接入已有 C/J 的不损保留比较；若同时失去别的内容，则回到真实混合比较，不能强装成这个情形。
+
+The clearest direct ground is **relief with preservation**: an actual change reduces sustained harm or restores a basic activity earlier while preserving the other relevant realizations, undertakings and subsequent support in the same living/common history. The ground is actual living retained, not a definition of “less severe” as “preferred”. Warranted preservation can feed the existing C/J comparison; losses elsewhere require genuine mixed appraisal instead.
+
+例如，两条修复路线对同一持续表达阻断有相同开始条件和同等可靠性。甲在真实任务窗口内恢复参与，乙继续阻断直到该次参与已不可挽回；甲没有增加其他承受、转嫁恢复负担或破坏共同接续。甲的正面比较根据是保住了乙会失去的那次生活实现。这里不需要“一小时痛苦值多少”的公理。若甲虽然较早接通，却留下更强的持续伤害或令其他支持失效，此说明就不能给出整体优先。
+
+For example, two repair courses address one sustained expressive interruption from the same start with equal reliability. One restores participation during its actual opportunity; the other restores access only after that participation is irretrievably lost. If earlier repair adds no other burden or loss of common continuation, its ground is the realization it preserves. No hourly price is needed. Earlier access coupled to graver continuing injury or failed support elsewhere does not satisfy this comparison.
+
+这完成的是同一位置与完整保持范围内的比较说明。将保护从一个生活位置转向另一个位置，另须已公开的 BC1、BC2、LC、LR 或 P100 充分匹配承诺；尤其 **BC2/LC 的减损理由仍不是自动取消另一方机会的充分优先**。
+
+This establishes comparative grounds within the same position and complete preservation scope. Moving protection between positions additionally uses the disclosed BC1, BC2, LC, LR or P100 sufficient-matching commitments. In particular, **BC2/LC’s loss-reduction reason is not automatically sufficient to eliminate another claim’s chance**.
+
+### 13.2 用整段参照限定，而不先折算 / Bound by whole-course references before assigning any price
+
+对程度与范围同时变化的冲突，先找两种独立的整段参照：一个确实不比目标损伤更重的下参照，一个确实不比目标更轻的上参照。证据应来自上一节的实际阻断、恢复及保持关系，或已明确辩护的整段比较；不能因为需要一个答案就给目标贴上“两单位”的标签。参照可以自身不可分解，也不必共享同一个分割。
+
+When gravity and extent vary together, seek independent whole-course references: a lower reference no graver than the target and an upper reference no lighter. Warrant comes from actual interruption, repair and preservation relations, or another explicitly defended whole-course comparison. A need for an answer does not make the target “two units”. References may themselves be nondecomposable and need not share a partition.
+
+**不足端。** 如果另一方案面对一个较轻的整段参照已经不够，而目标把同一生活的损伤加重，其他相关关系保持，那么已有的不足判断可以接续。**充分端。** 如果另一方案面对一个更重的整段参照已经有充分根据胜出，而目标只减轻它会留下的损伤，其他相关关系保持，那么已有的充分判断可以接续。这里比较的是完整方案后果；仅对 H 单独写出轻重，尚不足以保证修复成本、共同支持与有效承担也保持。
+
+**Insufficiency.** A response already insufficient against a lighter whole reference remains rejectable when the target worsens the same living loss, with other relevant relations preserved. **Sufficiency.** A response already sufficiently preferred against a graver whole reference can retain priority when the target merely reduces the loss that response leaves, with the other relations preserved. These compare whole response outcomes; an isolated ordering of H does not establish unchanged repair costs, common support or undertakings.
+
+这直接使用旧 [GenerativeLossComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean) 的两个已检查定理，而不重建模型或再登记一个证明：`strict_rejection_transport` 接收充分拒绝参照及被拒方案的恶化；`strict_improvement_transport` 接收充分优先参照及获优先方案的改善。`Le` 的有根据解释及相应范围内的传递性保持显式。另一方案自身也改变时，必须分别给出每次完整变化的依据；两个未经说明的“更严重”标签不能接通。
+
+This directly uses two already checked theorems in [GenerativeLossComparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean), without another model or proof credit: `strict_rejection_transport` consumes a sufficient rejection anchor and worsening of the rejected course; `strict_improvement_transport` consumes a sufficient priority anchor and improvement of the preferred course. Warrant for `Le` and its scoped transitivity remain explicit. If the other course changes too, each whole change needs its own grounds.
+
+**参照不是待证明结论的改名。** 首先列出参照的独立依据，再说明目标相对它发生什么真实变化。已完成的 BC1、LR 或 P100 可提供相应范围的充分参照；BC2 或 LC 的仅有理由不能充当它。没有已获充分性的参照，就只能报告比较理由或待定范围，不能用传递性创造第一次跨生命的充分选择根据。
+
+**A reference is not the desired conclusion renamed.** Establish its independent grounds first, then explain the target’s actual change relative to it. Completed BC1, LR or P100 can supply sufficient anchors within their scopes; BC2 or LC’s mere pro tanto reason cannot. Without a sufficient anchor, report reasons or an unresolved range. Transitivity cannot create the first sufficient cross-life comparison.
+
+### 13.3 对 P100 的实际推进与上界限制 / What this adds to P100 and why the upper bound does not come free
+
+把 P100 的两次阻断之间也改为持续阻断，形成一个没有恢复间隔的完整损伤；假定保护 P 的方案仍保留原全部保护，其他方案则让 P 承受新增阻断，且未改善其他关系。此时原“一次保护不足”的下端有直接的恶化依据，可以按旧拒绝传递接口使用。没有把新增区间冒充又一项同等片段。
+
+Consider changing P100 so the interval between the focal interruptions is also blocked, producing sustained harm without a restoration gap. Suppose protecting P still preserves the original protection, whereas other courses add that interruption without improving other relations. The original one-protection insufficiency has a direct worsening input for the existing rejection-transport interface. The interval has not been counted as another equivalent episode.
+
+**原“三次足够”的上端不能一起带过来。** 原先获优先的三处保护现在留下更重的持续损伤，旧改善传递并不支持它。要保留充分上端，须另有一个更重的完整参照已经被同一共同保护胜过，或说明变化仍在已辩护的 LR 适用范围内。物理变化很小、持续时间有限，均不独自证明这种规范范围。若尚无上参照，得到一个下界而保留上界未定，正是有内容的结果。
+
+**The original three-protection sufficiency cannot simply follow.** The formerly preferred course now leaves graver sustained harm; improvement transport does not justify it. Retaining an upper anchor requires an independently defeated graver whole reference, or warranted inclusion within LR’s already defended scope. Small physical change or finite duration alone establishes neither. A lower bound with an unresolved upper bound is a substantive result.
+
+这种接续是对已检查接口的哲学应用，新增持续损伤的实际对应作为思想案例前提；本轮没有为该情景新增动态模型或实测数据，也没有把它记作第18项 Lean 定理。
+
+This is a philosophical application of a checked interface, with the sustained-harm correspondence supplied as thought-case premises. It adds no dynamic model, measurements or eighteenth Lean theorem.
+
+### 13.4 正面根据、规范代价与完成范围 / Affirmative warrant, normative costs and completion
+
+正面根据可以现在完整说出：生生的基本意义使实际生活被保留、恢复和继续有正面理由；对损伤的有根据描述说明回应具体保住了什么；有完整保持的比较可使用原 C/J；跨位置的匹配、集中与机会争论使用各自公开的比较承诺。完整参照和实际改善／恶化关系使这些根据延伸到不能分解的持续损伤。**加总不是比较的前置条件；已获得充分性的比较也不因缺少统一分数而失效。**
+
+The affirmative chain is now explicit: basic generative significance gives positive reasons for living retained, restored and continued; warranted harm description identifies what a response preserves; complete preservation feeds C/J; cross-position matching, concentration and chance use their disclosed comparative commitments. Whole references and actual improvement/worsening extend those grounds to sustained nondecomposable harm. **Aggregation is not a prerequisite of comparison, and warranted sufficient comparisons do not require a common score.**
+
+这里没有新增一个按小时计价的公理。P100 的完整匹配充分性、LR 的局部稳健性和 FR 的有限充分性各自保留，不能互相冒充。若要主张任意较重持续损伤都应被某个固定较轻损伤的有限保护规模胜过，仍需承担 FR 的强规范内容并获得适用对应；本轮不给出任意实例的统一最小人数。这是比本轮两项连接更强的全域排序要求。
+
+No hourly-price axiom is added. P100 matching sufficiency, LR local robustness and FR finite sufficiency retain their distinct content. Claiming that every graver sustained harm is defeated by some finite scale of a fixed lesser protection still requires FR’s stronger normative commitment and application correspondence. No universal minimum number is supplied; that is a stronger global-ranking demand than the two connections completed here.
+
+**作者反审。** （1）活动边界由关系说明，仍可能有不同有用分割；每种分割须保留交互内容，不能凭粒度改变优先。（2）持续同一生活的特殊性既可能是累积后果，也可能是独立规范主张；两者分别回应。（3）身体功能和生产能力不穷尽实际生活，现时承受与自身之善须保留。（4）单纯终点相同不证明整段等价。（5）充分参照不可仅由 pro tanto 理由替代；反对有限合并或坚持始终正机会的对手仍是 FR 的实质争论。（6）共同背景固定不意味着可取消，其条件作用仍在完整比较中。
+
+**Author counterreview.** Activity boundaries can admit multiple useful partitions; interaction content must survive each. The importance of sustained harm to one life may concern cumulative consequences or an independent normative priority. Function and productivity do not exhaust living, present experience or self-good. Equal endpoints do not establish whole-course equivalence. Pro tanto grounds cannot replace sufficient anchors; finite-aggregation and persistent-chance rivals remain substantive FR objections. Fixed common background remains operative rather than cancellable.
+
+完成的是两个接入：**完整片段匹配何时得到内容许可；不依赖分解的整段损伤如何取得直接理由与有条件的不足／充分边界。** 后续若要取得新的数值阈值，必须给出一个具体持续损伤、完整保护路线及独立上参照，或实质论证一条更强比较承诺；不再把“需要分解资格”或“持续损伤必须先有统一分数”列为通用未完成接口。已有机制、比较传递及 P100 证明不重开。
+
+The completed inputs are **when complete-episode matching is content-warranted, and how whole sustained harm receives direct reasons and conditional insufficiency/sufficiency bounds without decomposition**. A new numerical threshold requires a specified sustained harm, complete protection courses and an independent upper anchor, or substantive argument for a stronger comparison commitment. General decomposition permission and the supposed need for a universal score are no longer missing interfaces. Existing mechanisms, transport and P100 proofs are not reopened.

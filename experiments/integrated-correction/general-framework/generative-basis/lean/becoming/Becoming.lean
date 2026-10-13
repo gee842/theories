@@ -66,10 +66,13 @@ import Becoming.Relevance
 import Becoming.Testing
 import Becoming.Runaway
 import Becoming.Response
+import Becoming.TimedResponse
 import Becoming.Counterfactual
+import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Revision
+import Becoming.RegroupingSelection
 import Becoming.ReferencePlan
 import Becoming.ContinuingRevision
 import Becoming.Description

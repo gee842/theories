@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [finite-fallible-inquiry-necessity.json](finite-fallible-inquiry-necessity.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:59:58.351644+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-13T13:04:43.138900+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-有限加权辨别的作答覆盖不超过两种错误权重与证据差异之和；保持相同读数的适应关系不能同时达到更强覆盖和错误指标。 / Finite weighted discrimination has commitment coverage at most the two error weights plus evidence separation; adaptive relations preserving the same readouts cannot also meet stronger coverage/error claims.
+有限加权辨别的作答覆盖不超过两类错误与证据差异之和；保持相同读数的适应关系不能同时达到更强指标。接到原生同律平衡历程后，在所列起点和完整所识条件下，覆盖不超过两类错误与回应关系可达权重之和；全部不可达时覆盖恰等于两类错误。 P94检验平衡前提：相同未计入交换足以保持原生不可达处的相同所识和作答，绝对平衡是特例；遗漏交换可保留正确读数，却使机制界失去前提，补记差额不自动恢复响应条件。 / Finite weighted discrimination has commitment coverage at most two error weights plus evidence separation; readout-preserving adaptive relations cannot meet stronger service claims. Composed with native balanced courses of one law, under the stated initial-record and complete-registration conditions, coverage is at most two errors plus responsive-reach weight; entirely beyond reach, coverage equals the two errors. P94 tests balance: common residual exchange suffices for native beyond-reach registration and answer equality, with absolute balance as a special case; omitted exchange can preserve correct readouts while invalidating the mechanism bound, and counting the residual does not automatically restore response.
 
 Canonical source: [ScientificInquiryNecessity.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean)
 
@@ -19,20 +19,47 @@ Canonical source: [ScientificInquiryNecessity.lean](../../../../experiments/inte
 - 二元目标意义、有限自然数权重表和完整实际可用输入；概率解释另需两侧同一正总量。 / Intended binary target, finite natural-weight tables and complete actually available inputs; probability interpretation additionally requires equal positive marginal totals.
 - 配对版本使用有效配对和共同读者；直接边缘版本不需指定配对。 / The paired version uses a valid pairing and common reader; the direct marginal version needs no chosen coupling.
 - 适应性结论使用初态关系、每步关系保持及关联状态的相同读数；不同状态类型获准。 / The adaptive conclusion uses initial relatedness, step preservation and identical readouts on related states; different state types are allowed.
+- 原生接续使用平衡历程、相同在场形成、回应所及之外的相同初始所识条件；部分之外遵从同一经所识而读的交换律，作答经由截至作答时刻的完整所识。 / The native composition uses balanced courses, the same formations present, matching initially registered conditions beyond responsive reach; outside the part both follow one registration-dependent exchange law, and answering factors through complete registration up to answer time.
+- 可达权重使用显式可达判定；定性不可达结论和全部不可达时的恒等式不需此判定。真实目标、成对权重及输入完整性另须对应。 / The reach-weight indicator uses an explicit reach decision; the qualitative beyond-reach conclusion and exact blind identity need none. Actual target labels, paired weights and completeness of access retain correspondence obligations.
+- P94定性推广不要求各原流平衡，改为两条历程的未计入给予和取得逐步逐条件相同；保留在场形成、相关初态、其余回应及完整读数条件。不把此充分条件称为最小必要条件。 / P94’s qualitative generalization replaces balance of each original flow with equality of their residual giving and taking at every step and condition; retains presence, relevant initial levels, response and complete readout conditions. This sufficient condition is not claimed minimal or necessary.
 
-从同一展开分化出问题、保留证据及回应；定理检验所声明的辨别成就，不定义科学为接受本理论。 / Questions, retained evidence and responses differentiate within one unfolding; the theorem tests a declared discrimination achievement rather than defining science as acceptance of this theory.
+从同一展开分化出变化部分、所识和回应。新接续由共同脊柱的实际交换、所识闭包和同律响应推出统计限制；科学任务先用覆盖与错误说明，不定义为接受本理论。结构可达是完整历程交换的闭包，不等于作答前逐时传递的因果路径。 P94固定同一原生任务，对比完整与遗漏交换的描述；缺失关系是解释缺口，不是整个现实缺少关系的证据。 / The varying part, registration and response differentiate within one unfolding. The new composition derives the statistical restriction through the shared spine’s exchanges, registration closure and common-law response. The scientific achievement is independently specified by coverage and error, not acceptance of this theory. Structural reach closes exchanges over whole courses, rather than identifying a time-ordered causal path by answer time. P94 fixes the same native task and compares complete versus omitted-exchange descriptions; the missing relation is an explanatory omission, not evidence of an unrelated reality.
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 实编18项定理／27项声明审计：11空、16标准依赖；无自定公理或经典选择。没有新增经验数据或独立评审。 / Lean 4.29.1 compiled 18 theorems / 27 declaration audits: 11 empty, 16 standard dependency lists; no custom postulates or classical choice. No new empirical data or independent review.
+原统计18／27及P92/P94冻结回执保持。P104仅追加3项逐时接续，另记 timely-response-necessity；原28项定理声明及证明逐字保留。当前外围31定理／37声明，20空、17仅 propext 与 Quot.sound，无 Classical.choice；43继承模块来源绑定。纯核心不导入外围，无经验或独立评审。 / Original statistical 18/27 and P92/P94 receipts retained. P104 appends three timed adapters registered as timely-response-necessity; all original 28 statements and proofs are byte-preserved. Current periphery: 31 theorems / 37 declarations, 20 empty and 17 using only propext and Quot.sound, no Classical.choice; 43 inherited modules source-bound. Pure core does not import it; no empirical or independent review.
 
-有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。 / Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved.
+保留有限自然权重、完整输入、共同规则及真实概率对应条件。原生接续另限于所列平衡、在场形成与初态条件；结构可达可能含未来或次序不合的边，不证明作答前逐时传递，亦不保证读懂或使用区别。未证明整个核心的科学普遍必要性。 P94只推广定性不可辨别，不声称已形式化对应加权界或得出最小条件。描述未写全仍预测成功，不构成完整机制说明的充分对手。 / Retains finite natural weights, complete inputs, a common rule and actual probability correspondence. The native adapter adds its balance, presence and initial-record conditions; structural reach may include future or wrongly ordered edges and does not prove time-ordered transmission by answer time or successful understanding/use. Science-wide necessity of the whole core is unproved. P94 generalizes qualitative blindness only; it claims neither a newly formalized weighted bound nor a least-condition result. Predictive success with an incomplete description is not an adequate rival to a complete mechanism explanation.
 
 - 不作答可无错误但无辨别覆盖；正确猜中不能保证两侧可靠，遗漏实际输入会使应用失效。 / Abstention can avoid errors without discrimination coverage; a lucky answer does not ensure two-case reliability, and omitted actual inputs invalidate an application. [SCIENTIFIC-INQUIRY-CONDITIONS.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md)
+- 原生例子中不同形成读取共享条件可以正确辨别；同一可达关系下忽略信号仍答错，故可达不充分。不同初始证据不满足共同起点，不能被排除后当反例。 / A distinct native reader can discriminate a shared condition; ignoring the same reachable signal still errs, so reach is not sufficient. Differently informative initial records violate common start and cannot be silently excluded from an application. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+- omitted_exchange_keeps_task 保留正确作答但遗漏交换使平衡和所计可达失效；补计差额后若新增项留在变化部分之外，其响应条件失败，若算入差异来源则可达恢复。common_nonzero_imbalance 证明共同余项可非零。 / omitted_exchange_keeps_task retains correct answers while omitted exchange invalidates balance and represented reach. After counting the residual, response fails if it remains outside the varying part; including it among the differences restores reach. common_nonzero_imbalance witnesses nonzero common residuals. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 ## 依赖与关联 Dependencies and related results
 
-No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
+- **formal-reuse**: [comparison-where-the-rest-responds](comparison-where-the-rest-responds.md). alike_beyond_response 给出不可达处的相同所识，answer_alike_beyond_response 接为相同作答；不重证闭包。 / alike_beyond_response produces identical registration beyond reach; answer_alike_beyond_response consumes it to obtain identical answers without reproving the closure.
+- **formal-reuse**: [counterfactual-is-the-course](counterfactual-is-the-course.md). ExchangeLaw.Through.responds 从同一律推出回应前提，接入 answer_alike_beyond_law 与加权界。 / ExchangeLaw.Through.responds derives the response premise from one law for answer_alike_beyond_law and the weighted bound.
+- **formal-reuse**: [imbalance-as-relatum](imbalance-as-relatum.md). 复用 Flow.withImbalance、withImbalance_balances 与 balances_iff_idle，检验表示平衡后回应条件是否保持，并把同余差额作为弱于绝对平衡的充分条件。 / Reuses Flow.withImbalance, withImbalance_balances and balances_iff_idle to test whether response survives balancing by representation, and to derive common residuals as a sufficient condition weaker than absolute balance.
+
+**Output / 输出:** 回应所及之外逐时识得相同。 / Identical registration at every time beyond responsive reach.
+
+**Input / 输入:** 相同作答供给既有可错覆盖界。 / Identical answers supply the existing fallible coverage bound.
+
+**Preserved conditions / 保留条件:** 平衡、相同在场形成和相关初态、其余经所识回应、完整作答接口。 / Balance, the same present formations and relevant initial levels, response through registration, and a complete answering interface. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+
+
+**Output / 输出:** 同一经所识而读的律之两历程满足回应前提。 / Two courses of one registration-dependent law satisfy the response premise.
+
+**Input / 输入:** 不可达处相同所识与作答的前提。 / The response premise of beyond-reach registration and answer equality.
+
+**Preserved conditions / 保留条件:** 所给律经所识而读；部分之外两历程遵从该律。 / The supplied law reads through registration; outside the part both courses follow it. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+
+
+**Output / 输出:** 补计差额后的流平衡，原平衡恰是新增项不给不取。 / Counting residuals balances the flow; original balance is exactly the added relatum neither giving nor taking.
+
+**Input / 输入:** 闭合区域包含不识的新增项；两侧新增项交換相同可应用既有闭合区域不可辨别定理。 / The closed region includes a nonregistering added relatum; equal residual exchange on both sides permits the existing closed-region blindness theorem.
+
+**Preserved conditions / 保留条件:** 共同在场形成、相关初始所识、原区域封闭及原形成的回应条件；新增项的交换逐时逐条件相同。 / Common present formations, relevant initial registrations, original closed region and response; the added relatum exchanges alike at every time and condition. [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 
 ## 来源与既有回执 Sources and existing receipts
@@ -45,15 +72,28 @@ No dependency on another migrated record is asserted; source imports and supplie
 | review | [SCIENTIFIC-PHILOSOPHY-SOURCES.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md) | — |
 | review | [check_scientific_inquiry_necessity.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_scientific_inquiry_necessity.py) | — |
 | provenance | [2026-10-08-knowledge-content-continuation.md](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) | — |
+| proof | [FallibleInquiry.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean) | `Becoming.FallibleInquiry.answer_alike_beyond_response`, `Becoming.FallibleInquiry.different_answers_not_beyond`, `Becoming.FallibleInquiry.answer_alike_beyond_law`, `Becoming.FallibleInquiry.coverage_le_errors_add_reach`, `Becoming.FallibleInquiry.error_budgets_require_reach`, `Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors`, `Becoming.FallibleInquiry.Witness.balanced`, `Becoming.FallibleInquiry.Witness.law_through`, `Becoming.FallibleInquiry.Witness.follows`, `Becoming.FallibleInquiry.Witness.read_through`, `Becoming.FallibleInquiry.Witness.connected`, `Becoming.FallibleInquiry.Witness.correct_answers`, `Becoming.FallibleInquiry.Witness.ignored_signal`, `Becoming.FallibleInquiry.observeWithResidual`, `Becoming.FallibleInquiry.regionWithResidual`, `Becoming.FallibleInquiry.residual_registers_nothing`, `Becoming.FallibleInquiry.closed_with_imbalance`, `Becoming.FallibleInquiry.common_imbalance_of_balanced`, `Becoming.FallibleInquiry.alike_with_common_imbalance`, `Becoming.FallibleInquiry.answer_alike_with_common_imbalance`, `Becoming.FallibleInquiry.Witness.omitted_exchange_none`, `Becoming.FallibleInquiry.Witness.omitted_exchange_no_reach`, `Becoming.FallibleInquiry.Witness.omitted_exchange_unbalanced`, `Becoming.FallibleInquiry.Witness.omitted_exchange_follows`, `Becoming.FallibleInquiry.Witness.omitted_exchange_keeps_task`, `Becoming.FallibleInquiry.Witness.counted_residual_balances`, `Becoming.FallibleInquiry.Witness.counted_residual_differs`, `Becoming.FallibleInquiry.Witness.counted_residual_not_response`, `Becoming.FallibleInquiry.Witness.counted_residual_reaches`, `Becoming.FallibleInquiry.Witness.common_nonzero_imbalance` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json) | — |
+| review | [check_fallible_inquiry.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_fallible_inquiry.py) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json) | — |
+| provenance | [2026-10-13-scientific-foundation-as-testable-hypothesis.md](../../../../sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-明确尚需科学普遍必要性证明的核心承诺，并给出独立问题、对应及真正对手；不把此次局部证明升级为全理论完成。 / Identify the further core commitment requiring a science-wide necessity proof, with an independent task, correspondence and substantive rival; do not upgrade this local proof to whole-theory completion.
+逐时连接现已另行完成；科学基础目标继续检验初始证据与实际命令执行的配对根据。原统计、结构及共同余项结论保持。 / The timed connection is now completed separately; the foundation target continues testing initial-evidence and actual command-execution pairing. Original statistical, structural and common-residual conclusions remain.
 
-Aliases / 别名: `Generative.ScientificInquiryNecessity.fallible_inquiry_bound`, `Generative.ScientificInquiryNecessity.distributional_coverage_bound`, `Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness`
+Aliases / 别名: `Generative.ScientificInquiryNecessity.fallible_inquiry_bound`, `Generative.ScientificInquiryNecessity.distributional_coverage_bound`, `Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness`, `Becoming.FallibleInquiry.answer_alike_beyond_response`, `Becoming.FallibleInquiry.different_answers_not_beyond`, `Becoming.FallibleInquiry.answer_alike_beyond_law`, `Becoming.FallibleInquiry.coverage_le_errors_add_reach`, `Becoming.FallibleInquiry.error_budgets_require_reach`, `Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors`, `Becoming.FallibleInquiry.alike_with_common_imbalance`, `Becoming.FallibleInquiry.answer_alike_with_common_imbalance`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有 I1/I2 及不作答论证，并新增有限权重形式证据和适应接续；18项新形式定理不是18项独立发现。 / 2026-10-08: migrated existing I1/I2 and abstention reasoning with new finite-weight formal evidence and adaptive composition; 18 new formal theorems are not 18 independent discoveries.
+- 2026-10-13：核读研究新增§11；原§§1–10及其定理、前提、历史回执原样保留，只协调解释性接续后的研究来源哈希；本成果的科学内容和原审阅时间不变。 / 2026-10-13: reviewed new study §11; original §§1–10, theorem, hypotheses and historical receipt remain unchanged. Reconciled only the study-source hash after interpretive continuation; this result’s scientific content and original review time are unchanged.
+- 2026-10-13 P92：复用同律响应、回应闭包及原有限界，新增原生关系接续与成功／忽略信号见证；扩展既有成果而不另计独立发现，原源文及回执保留。 / 2026-10-13 P92: reused common-law response, responsive closure and the original finite bound; added the native relational composition and successful/ignored-signal witnesses. Extends this result rather than counting a new independent discovery; original source and receipt retained.
+- 2026-10-13 P94：按 Ren 的结论开放方向检验P92的平衡前提，保留原定量界，增加共同非零余项下的定性推广与遗漏／补记见证；依旧只扩展同一成果。 / 2026-10-13 P94: under Ren’s open-verdict direction, tested P92’s balance premise, retained its quantitative bound, and added qualitative generalization under common nonzero residuals with omission/accounting witnesses; extends the same result only.
+- 2026-10-13 P97：核读并接纳原研究新增§14，只协调研究来源指纹与后续入口；P94及更早的形式主张、源码、回执、证明前提和审阅时间保持。新增来源评估不被当作本结果的经验验证。 / 2026-10-13 P97: reviewed and integrated study §14, reconciling its source fingerprint and next-work pointer only. P94 and earlier formal claims, sources, receipts, proof premises and review time remain unchanged. The source assessment is not treated as empirical validation of this result.
+- 2026-10-13 P101：核读研究新增§15，只协调来源指纹与接续入口。形式主张、前提、源码、回执及审阅时间保持；来源对应不是本定理的经验验证。 / 2026-10-13 P101: reviewed new study section 15 and reconciled only its source fingerprint and next-work pointer. Formal claims, premises, sources, receipts and review time remain unchanged; source correspondence is not empirical validation of this theorem.
+- 2026-10-13 P104：移除新增导入和追加段可逐字恢复原外围；核读§16并更新当前回执绑定及模块数量。原定理范围不变，新增时间结论另有身份。 / 2026-10-13 P104: removing the new import and appended section byte-recovers the old periphery. Reviewed section 16 and updated current receipt binding/counts. Original scope unchanged; temporal conclusion has its own identity.
+- 2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。 / 2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged.

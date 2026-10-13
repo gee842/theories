@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "确定恰是主张命名配置时的相同之下的确定（determined_iff_named、alike_configurations），所以每个用 Determined 陈述的定理都是一个用 DeterminedAt 陈述者的命名实例。以下在相同之下成立：经相同而同行就是相同之下的确定（goesAlike_iff，对应 goAlike_id_iff）；相同的运行保持相同（DeterminedAt.stays_alike，对应 GoAlike.runs_agree）；一步不依赖的在相同之下被重新吸收（DependsOnlyOnAlike.reabsorbed）；遗忘噪声后，标准模型恰在噪声在相同之下无差别时在相同之下确定（forget_inputs_determinedAt_iff）；所取的动作在相同之下固定（Run.fixesAlike_of_takes），一次代表其类（Run.generalizesAlike）；在与所命名者相同的配置处从未取的动作，对在一个主张上不同的结果不被固定（Run.not_fixesAlike_of_untaken），经对整个相同类的干预（retargetAlike、retargetAlike_determinedAt）。以下需要相等，或登记相等所分开者的主张：对两个相同配置之一的改送破坏相同之下的确定（Twins.retarget_breaks）；保留的历史在其现在返回且没有什么登记过去之处在相同之下返回（keepFrame_alike_iff、keepHistory_returns_alike），所以 keepHistory_new 需要过去被登记（keepHistory_new_named）；没有主张时每个描述承载规律而没有混杂被否证（carries_unregistered、Confound.refutes_registered）。不加前提。",
     "en": "Determinacy is determinacy up to likeness where the claims name the configurations (determined_iff_named, alike_configurations), so each theorem stated with Determined is the named instance of one stated with DeterminedAt. These hold up to likeness: going alike through likeness is determinacy up to likeness (goesAlike_iff, after goAlike_id_iff); runs alike stay alike (DeterminedAt.stays_alike, after GoAlike.runs_agree); what the step does not depend on is re-absorbed up to likeness (DependsOnlyOnAlike.reabsorbed); with the noise forgotten, the standard model is determined up to likeness exactly where the noise makes no difference up to likeness (forget_inputs_determinedAt_iff); a move taken is fixed up to likeness (Run.fixesAlike_of_takes) and one occasion stands for its class (Run.generalizesAlike); a move taken at no configuration alike to the one named is not fixed, for outcomes that differ in a claim (Run.not_fixesAlike_of_untaken), through an intervention on a whole likeness class (retargetAlike, retargetAlike_determinedAt). These need equality, or claims registering what equality tells apart: retargeting one of two alike configurations breaks determinacy up to likeness (Twins.retarget_breaks); a kept history returns up to likeness where its present does and nothing registers the past (keepFrame_alike_iff, keepHistory_returns_alike), so keepHistory_new needs the past registered (keepHistory_new_named); with nothing claimed, every description carries a law and no confound is refuted (carries_unregistered, Confound.refutes_registered). No premise."
@@ -233,7 +233,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -314,8 +314,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

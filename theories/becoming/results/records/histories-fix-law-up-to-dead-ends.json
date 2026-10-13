@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:03:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设 S 为配置类型，A 为动作类型，历史是一对序列 g : ℕ → S 与 m : ℕ → A。律 P 容许历史（Admits P g m），指历史的每一步都是 P 的一步；运行的历史为其律所容许（Run.admits）。一族历史 H 所显示的律（ShownBy H）以 H 中历史所走的各步为步；它是容许 H 中每段历史的最小的律（ShownBy.admits、shownBy_le_iff）。一族历史含有它的拼接（SpliceClosed H），指每个由它自己的步组成的序列都在族中。律的历史族含有它的拼接（admits_spliceClosed）；一族历史恰在含有它的拼接时是某个律的历史族，它所显示的律就是这样一个律（family_iff）。一族历史一致（ConsistentFamily H），指其中任何两段历史从不以同一动作把同一配置带到两处；它所显示的律恰在这时确定（shownBy_determined_iff），一族历史恰在含有它的拼接且一致时是某个确定的律的历史族（determined_family_iff）。律的活的步（live P）是它的某段历史所走的步；律与它的活的步容许同样的历史（admits_live_iff），两个律恰在活的步相同时容许同样的历史（same_histories_iff），活的律没有死路（live_live），死路的那一步不是活的（DeadEnd.not_live）。所以不计死路的律与含有拼接的历史族一一对应：拼接与死路就是律与历史之间的全部规律。会停止的历史下没有死路：两个律恰在步相同时有同样的有限历史（same_finite_histories_iff）；一族有限历史恰在由它的步组成时，即空序列不移动、序列是第一步接其余时，是某个律的有限历史族（MadeOfSteps、finite_family_iff）。死路是不终止历史的事实。不加前提。",
     "en": "Let S be a type of configurations and A one of moves; a history is a pair of sequences g : ℕ → S and m : ℕ → A. A law P admits a history (Admits P g m) where every step the history takes is a step of P; a run's history is admitted by its law (Run.admits). The law a family of histories H shows (ShownBy H) has as steps the steps its histories take; it is the least law admitting each history of H (ShownBy.admits, shownBy_le_iff). A family holds its splices (SpliceClosed H) where every sequence made of its own steps is in it. The histories of a law hold their splices (admits_spliceClosed), and a family is the family of some law's histories exactly where it holds its splices, the law it shows being one such law (family_iff). A family is consistent (ConsistentFamily H) where no two of its histories take one move at one configuration to two outcomes; the law it shows is determined exactly then (shownBy_determined_iff), and a family is the family of a determined law's histories exactly where it holds its splices and is consistent (determined_family_iff). The live steps of a law (live P) are those some history of it takes; a law and its live steps admit the same histories (admits_live_iff), two laws admit the same histories exactly where they have the same live steps (same_histories_iff), the live law has no dead end (live_live), and the dead end's step is not live (DeadEnd.not_live). So laws up to their dead ends and families holding their splices correspond one to one: splicing and dead ends are the whole law of law and history. With histories that stop no dead end remains: two laws have the same finite histories exactly where they have the same steps (same_finite_histories_iff), and a family of finite histories is a law's exactly where it is made of its steps, the empty course going nowhere and a course being a first step followed by the rest (MadeOfSteps, finite_family_iff). The dead end is a fact of unending histories. No premise."
@@ -218,7 +218,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -299,8 +299,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -83,7 +83,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
       "role": "review",
-      "sha256": "18550bbb5f36013e80fd93690bd01c0732e43e9140e7a227658dfd3848edb2a6",
+      "sha256": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
       "declarations": []
     },
     {
@@ -135,6 +135,14 @@
     {
       "zh": "2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。",
       "en": "2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13：核读共享研究新增 P95 §85 的及时接续应用；此前全部段落原样保留，本成果主张与冻结证明范围不变。仅更新所读共享来源版本。",
+      "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
     }
   ]
 }

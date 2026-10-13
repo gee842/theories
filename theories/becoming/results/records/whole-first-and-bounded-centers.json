@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T11:22:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "有意义者越少，保留的越多：sig' 蕴含 sig 时，从 sig 保留者从 sig' 也保留（Web.Retains.of_fewer）。以区域为界的意义（bounded region）从 p 保留，恰当每一步在 p 的区域之内 l 接纳 l' 所接纳的（Web.retains_bounded_iff，经 Web.AdmitsWithin）。公理之下，从 p 保留者，对每个区域族都从 p 保留（Web.Retains.within）：整体的判断决定每个较窄的判断，无论区域是系统的还是自身的；区域之内成立的在其内每个区域都成立（Web.AdmitsWithin.narrow）。反过来不成立：在 Clearing 中，清除者从资源汲取，资源由来源供给；栖居者依存于栖息地，清除者的汲取使它从第二步起不被支持。无清除者的部分时，每个形成每一步都被接纳（Clearing.admitted_all_without）。让每个形成的意义止于其依存所及（Clearing.dependenceRegion：清除者及其沿依存可达的来源，来源与栖居者只含自身）：从清除者的立场，它的部分每一步都保留有意义者；从栖居者的立场，它失去栖居者（Clearing.centers_disagree）。公理之下，从每个立场，它都失去栖居者，有它的水平不保留无它时的有意义者，无它的水平保留有它的有意义者，清除者每一步被支持、无它时也被接纳，所以扣留这个部分不终结任何东西（Clearing.free_rider_loses）。不用 Lean 公理。",
     "en": "Where fewer continuations have significance, more is retained: where sig' implies sig, what retains from p for sig retains for sig' (Web.Retains.of_fewer). A significance bounded by regions (bounded region) retains from p exactly when at every step, within p's region, l admits what l' admits (Web.retains_bounded_iff, through Web.AdmitsWithin). Under the axiom, what retains from p retains from p for every family of regions (Web.Retains.within): the whole's judgment decides every narrower one, whether the region is a system's or a self's; and what holds within a region holds within every region inside it (Web.AdmitsWithin.narrow). The converse fails: in Clearing the clearer draws on a resource fed by the source, while the dweller depends on a habitat that the clearer's draw leaves unsupported from step two on. Without the clearer's part every formation is admitted at every step (Clearing.admitted_all_without). Let each formation's significance stop at what its dependence reaches (Clearing.dependenceRegion: the clearer with the source reached along its dependence; the source and the dweller alone): from the clearer's standpoint its part retains what has significance at every step; from the dweller's standpoint it loses the dweller (Clearing.centers_disagree). Under the axiom it loses the dweller from every standpoint, so the levels with it do not retain what has significance without it, while the levels without it retain what has significance with it, and the clearer is supported at every step and admitted without the part, so withholding the part ends nothing (Clearing.free_rider_loses). No Lean axiom is used."
@@ -255,7 +255,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -437,8 +437,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

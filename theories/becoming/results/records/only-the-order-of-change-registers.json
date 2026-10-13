@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个停顿（Stutter ρ）指 ρ 0 = 0，每步或空（ρ (n+1) = ρ n）或前进一步，且每步都被到达；经 ρ 读用 Sampling 的 sample。空步上没有参与：平衡、耗散与封闭在每个家族上成立，存量耗减在持有所立者的家族上成立（Flow.sample_idle_balancesOn 等）；前进步上各自恰在所读之步上成立时成立（Flow.sample_moves_balancesOn_iff 等）。所以经停顿读的世界恰在原世界满足前提时满足它们（World.stutter_premises_iff）：平衡（每步每个关系项列出一次）、耗散、只有活跃者给予、只有活跃者取用、活动需要支持、体现与有界的传递；与较粗的读法不同，不需要关于活动如何保持的条件。任何段上的总量就是所读之段的总量（stutter_total；Flow.stutter_taken、Flow.stutter_given、stutter_risen、stutter_fallen、stutter_rise_count、stutter_fall_count，以及在已定之处的 stutter_comings、stutter_ceasings）；生起、止息与立的变化恰在原来复现时复现（World.stutter_arisingRecurs_iff、World.stutter_ceasingRecurs_iff、World.stutter_change_recurs_iff）；普查经停顿保留（World.stutter_counted），给出每个原步的读法之步时返回（World.stutter_counted_of_section）。停顿改变的是每步所计的：空步出现得任意晚时，没有流无终地更多（Flow.sample_not_more）；扩张无终地更多，每步读两次则不然（Expansion.more_step_relative）；由一份储备承载的世界在每步读两次时需要至少两份（Lapse.reserve_step_relative）。移除空步是一个构造：给出读每个原步的移动之步（Stutter.Moves；每个都存在，Stutter.crosses，且唯一，Stutter.moving_unique），且世界的空步中无参与者、无变动（World.IdleAt），去掉它们的世界（World.withoutIdle）恰在原世界满足每个前提处满足它（World.withoutIdle_premises、World.withoutIdle_transmits），不需要关于列出的条件，因为每步保留自己的交换；恰在原世界有普查处有普查（World.withoutIdle_counted）；在任一段上有相同的所取与所给总量、家族所立的升降及其计数（World.withoutIdle_totals），活动可判定时有相同的生起与止息计数（World.withoutIdle_counts）。不加前提。",
     "en": "A stuttering (Stutter ρ) has ρ 0 = 0, each step idle (ρ (n+1) = ρ n) or moving by one, and every step reached; it is read with Sampling's sample. At an idle step nothing takes part: balance, dissipation and closure hold on every family, and running down on a family holding what stands (Flow.sample_idle_balancesOn and others); at a moving step each holds exactly where it holds across the step read (Flow.sample_moves_balancesOn_iff and others). So a world read through a stuttering meets the premises exactly where it meets them (World.stutter_premises_iff): balance (each relatum listed once at each step), dissipation, only active relata giving, only active relata taking, activity needing support, embodiment and bounded transmission; unlike a coarser reading, no condition on how activity is held is needed. Over any stretch the totals are those of the stretch read (stutter_total; Flow.stutter_taken, Flow.stutter_given, stutter_risen, stutter_fallen, stutter_rise_count, stutter_fall_count, and where decided stutter_comings, stutter_ceasings); arising, ceasing and change of standing recur exactly where they recurred (World.stutter_arisingRecurs_iff, World.stutter_ceasingRecurs_iff, World.stutter_change_recurs_iff); a census survives a stuttering (World.stutter_counted) and returns where a step of the reading is given for each step (World.stutter_counted_of_section). What a stuttering changes is what is counted per step: with idle steps arbitrarily late no flow is more without end (Flow.sample_not_more); the expansion is more without end and, every step read twice, it is not (Expansion.more_step_relative); a world carried by a reserve of one needs a reserve of at least two when every step is read twice (Lapse.reserve_step_relative). Removing idle steps is a construction: given for each step read the moving step reading it (Stutter.Moves; each exists, Stutter.crosses, and is unique, Stutter.moving_unique) and the idle steps of the world empty and unmoved (World.IdleAt), the world without them (World.withoutIdle) meets every premise exactly where the world does (World.withoutIdle_premises, World.withoutIdle_transmits), with no condition on listing since each step keeps its own exchange, has a census exactly where it does (World.withoutIdle_counted), and over any stretch has the same totals taken and given, rises and falls of a family's standing and their counts (World.withoutIdle_totals), and where activity is decided the same counts of arising and ceasing (World.withoutIdle_counts). No premise."
@@ -260,7 +260,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -312,8 +312,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "scope": "P94 premise test and qualitative common-residual generalization in the existing finite-fallible result; not independent philosophical acceptance or a new statistical discovery.",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json",
+  "proof_counts": {
+    "theorems": 28,
+    "declarations": 34,
+    "empty_axiom_reports": 20,
+    "standard_only_reports": 14,
+    "added_theorems": 15,
+    "added_declarations": 17
+  },
+  "authorization": "sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md",
+  "automation": "User explicitly declined; none created.",
+  "scientific_target": "Revisable full-core necessity hypothesis remains open; positive, partial or corrective conclusions permitted.",
+  "owned_chain_review": {
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "discovery_unchanged": true,
+    "reviewed_sources": {
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": "30614d63fe3283ff1d53a891e403732b476e4dc5dc31a90a467dc0a1bd353bbf",
+      "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md": "cdae53bdee4faaef3ccaaaa297a428e82e1be8ee5d67bb62eb37b3ec4200cd91",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean": "c868fddbb1a85dbf72efa32ffca0f49c27544ba6349e81e6e1c4cd6e59daa34f",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_fallible_inquiry.py": "d58eb97971cd6d2bab769944838863ebf414a06f5385198f23c4d6d780ab08c2",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T113924.930862Z/verification.json": "c9bdc73b20cd5ffb3b08f0b354dd5107205cb3ed2de8399ee91a7671cb9892e0",
+      "sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md": "979077ca6c1b833c99ffe2bbc984a686ceb8be1970ecf754dee9c3f437c3a534",
+      "theories/becoming/results/records/finite-fallible-inquiry-necessity.md": "3d1138eb31d99db827ecb920b2573294bb7748799da568ea69868027e05879a7",
+      "theories/becoming/results/records/scientific-inquiry-foundation.md": "35667dfe463421106a76574e5a64b400440ef7270934ed4a51c082274d8b5cff"
+    }
+  },
+  "counterreview": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#134-what-changed-in-the-foundation-assessment",
+  "historical_receipts": "P92 original source and 13/17 receipt, original statistical receipt unchanged."
+}

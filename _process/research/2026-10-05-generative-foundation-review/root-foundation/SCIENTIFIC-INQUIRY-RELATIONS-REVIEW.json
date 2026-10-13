@@ -1,0 +1,60 @@
+{
+  "scope": "P92 owned documentation, source-bound proof and paired M21 continuation only; not a full-chain freshness certificate or independent scientific review.",
+  "result_id": "finite-fallible-inquiry-necessity",
+  "target_status": "scientific-inquiry-foundation remains open",
+  "proof": {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json",
+    "theorems": 13,
+    "source_declarations": 17,
+    "empty_axiom_reports": 11,
+    "standard_only_reports": 6,
+    "standard_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "new_empirical_evidence": false,
+    "independent_review": false
+  },
+  "preservation": {
+    "other_entries_unchanged": true,
+    "other_rendered_lines_unchanged": true,
+    "discovery_unchanged": true,
+    "prior_m21_sha256": "e0f63d75868ad8244dd8b34d6db491a4e12cb2027d509be4e78efcb1f01e5692",
+    "study_sections_1_to_11_sha256": "cee11dfb0acf63fa79064bfecd9ff4d5655572baf3425d4b0037cfd3232c9f6a"
+  },
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": "1ac609c2a6d48d11c07104e85d82ffc24224282ddd7ceef3c550db41252debc0",
+    "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md": "0e92bf1e247871097eb1366e021fbd3c1a8ee3c6d91b46d464fe540486c63242",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean": "eed4330f7619b7f7bd13ecf8b84fbc1056298240085b0e3592841a54c7051522",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T110231.056199Z/verification.json": "66492a0e15e19fe0e2e02614a9097af23a201ab3a39b497777440a9faeddb3d6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_fallible_inquiry.py": "af1a4185305d8c7f862dbc5e67c6ea696ae58fb434fbc29cb408dca2c5b14894",
+    "theories/becoming/results/records/finite-fallible-inquiry-necessity.md": "cae8fdeb20b597f544109fc14c55b1d1e38054370a037ec229439da9f07472ec",
+    "theories/becoming/results/records/scientific-inquiry-foundation.md": "707307ac1e681549ce1291f7ea06be4ebb5979a29847d0458c44ee722a92452d"
+  },
+  "counterreview": "SCIENTIFIC-INQUIRY-CONDITIONS.md §12.3: initial records, forecasting, completeness of readout, reach versus transmission, sufficiency, representation scope and supplied law.",
+  "documentation_checks": {
+    "research_check": {
+      "records": 197,
+      "errors": [],
+      "source_drift": [],
+      "unrelated_source_drift": []
+    },
+    "research_tests": {
+      "count": 49,
+      "status": "passed"
+    },
+    "full_curated_chain": {
+      "status": "needs-review",
+      "errors": [
+        "Unversioned source: theories/becoming/results/records/organizational-formation-from-generative-comparison.md",
+        "Unversioned source: theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+        "Unversioned source: theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+        "Unversioned source: theories/becoming/results/records/transition-grouping-word-partition.md",
+        "Linked source versions changed; reread affected entries before rendering."
+      ],
+      "unreviewed_modified_source_count": 38,
+      "owned_M21_data_and_rendered_row": "checked separately; unrelated changes not refreshed"
+    }
+  }
+}

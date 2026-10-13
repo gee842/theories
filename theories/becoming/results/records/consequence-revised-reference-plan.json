@@ -250,7 +250,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "87e3c0dfcb2f3bacb76a2a0d8f860e9389c8aebfa2259abd694c573c69e4c5b4",
       "declarations": []
     },
     {
@@ -297,6 +297,10 @@
       "en": "P99 follows Ren’s instruction to complete this specific connection in the existing study; prior results were searched and credited before shared-spine formalization, actual checks, failure controls and paired integration."
     },
     {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
       "zh": " 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
       "en": " Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
     },
@@ -309,8 +313,12 @@
       "en": "P103 integration review preserves existing claims and frozen proofs while the theory/study connect supported recurring revision; older frontiers remain dated history."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "提交后的共享工作区对应复核：相对于本会话最后核读版本，仅并行慧根模块的导航行由4项改为8项；本成果段落、源证明及依赖均未改变，不验收或提交该并行扩展。",
+      "en": "Post-commit working-view reconciliation: only the parallel wisdom module’s navigation row changes from four to eight relative to this session’s last reviewed chapter. This result’s text, proof and dependencies are unchanged; the parallel extension is neither accepted nor committed here."
     }
   ]
 }

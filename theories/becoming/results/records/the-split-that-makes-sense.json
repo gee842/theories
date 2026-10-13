@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T08:50:16+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "以 P69 的定义：确定的律 next 经识读 o 读作框架 Law.registered next o，描述 π 有意义（MakesSense），指它恰把相同的配置等同，相同就是所识的未来相同（Law.alike_iff_sameFuture）。确定的律下，π 与律同去恰当它把被等同者带到被等同者（Law.goAlike_process_iff）；保留所识并同去的切分以互模拟联系配置（Law.kernel_bisimulation），不失去所识的任何东西（Law.sameFuture_of_law），最粗的这样的切分有意义（Law.makesSense_of_law）。什么都不分的切分有意义，恰当所识的未来处处相同（Law.const_makesSense_iff）；识得一切（o = id），配置自身有意义（Law.whole_makesSense）。现在所识者 o 自身有意义，恰当它固定自己所识的未来（Law.now_makesSense_iff），恰当它与律同去，这是一步上的条件（Law.sameFuture_of_goAlike、Law.now_makesSense_iff_goAlike）。律在 X × C 上、识第一部分时，第一部分单独有意义恰当 ∀ x c c′，(next (x, c)).1 = (next (x, c′)).1（Law.part_makesSense_iff_step），等价地恰当其余从不造成所识的差别（Law.part_makesSense_iff）；下一值由随之改变的规则给出（next (x, c) = (F c x, G c x)）时，恰当 ∀ x c c′，F c x = F c′ x（Law.adaptive_makesSense_iff），即 Becoming.Mechanism 的 adaptive_state_law_iff 的条件。Motion.move (x, v) = (x + v, v) 是 adaptive 过程（Motion.move_adaptive）；只识 x 时这一对有意义（Motion.makes_sense），x 单独不承载规律（Motion.standing_alone），v 单独失去 x（Motion.passing_alone），两者单独都没有意义（Motion.neither_alone）；不动的律下 x 单独有意义（Motion.still_makes_sense）。一段所识的序列 o : ℕ → O 中，时刻 t 与 t′ 是同一状态（SameAhead o t t′），指 ∀ n，o (t + n) = o (t′ + n)；这是等价关系，并作为自身继续（SameAhead.next）；沿轨道读就是所识的未来相同（sameAhead_orbit_iff）；每个时刻所识都不同时，每个时刻是自己的状态（SameAhead.new_each）。时刻之律 Law.registered Nat.succ o 下，t 与 t′ 相同恰当 SameAhead o t t′（alike_moments_iff）。不加判定的按关系的鸽笼（split_top、shared_below）给出：o 状态有限（∃ L，每个时刻与某个小于 L 的时刻是同一状态，StatesBelow）恰当有 i < j 使 SameAhead o i j（statesBelow_of_same、finitely_many_states_iff）；返回的构型在每个识读之下状态有限（Law.Returns.states）。二值否定的所识（Denial.register）恰有两个状态：第 0、1 刻不同（经 Becoming.Diagonal 的 revision_never_rests），第 0、2 刻相同，每个时刻是二者之一（Denial.two_states），每个经另一个定义（Denial.each_through_other）。Law.goAlike_process_iff 是 Becoming.Learning 的 goAlike_iff_lumped 的实例；Learning.Lasso o i q 恰当 SameAhead o i (i + (q + 1))（lasso_iff_sameAhead），所以状态有限恰当有 Lasso（finitely_many_states_iff_lasso）。不用 Lean 公理。",
     "en": "With P69's definitions: a determined law next read through a registration o is the frame Law.registered next o; a description π makes sense (MakesSense) when it identifies exactly the alike configurations, and alike is the same registered future (Law.alike_iff_sameFuture). Under a determined law, π goes alike with the law exactly where it carries what it identifies into what it identifies (Law.goAlike_process_iff); a split keeping what is registered and going alike relates configurations by a bisimulation (Law.kernel_bisimulation), loses nothing registered (Law.sameFuture_of_law), and the coarsest such split makes sense (Law.makesSense_of_law). The split lumping everything makes sense exactly where the registered futures are all the same (Law.const_makesSense_iff); registering everything (o = id), the configuration itself makes sense (Law.whole_makesSense). What is registered now, o, makes sense by itself exactly where it fixes its own registered future (Law.now_makesSense_iff), exactly where it goes alike with the law, a condition on one step (Law.sameFuture_of_goAlike, Law.now_makesSense_iff_goAlike). For a law on X × C registering the first part, the first part alone makes sense exactly where ∀ x c c′, (next (x, c)).1 = (next (x, c′)).1 (Law.part_makesSense_iff_step), equivalently where the rest never makes a registered difference (Law.part_makesSense_iff); where the next value is set by a rule changing with it (next (x, c) = (F c x, G c x)), exactly where ∀ x c c′, F c x = F c′ x (Law.adaptive_makesSense_iff), the condition of adaptive_state_law_iff of Becoming.Mechanism. Motion.move (x, v) = (x + v, v) is an adaptive process (Motion.move_adaptive); registering x, the pair makes sense (Motion.makes_sense), x alone carries no law (Motion.standing_alone), v alone loses x (Motion.passing_alone), and neither alone makes sense (Motion.neither_alone); under the still law x alone makes sense (Motion.still_makes_sense). In a registered sequence o : ℕ → O, moments t and t′ are one state (SameAhead o t t′) when ∀ n, o (t + n) = o (t′ + n); this is an equivalence that goes on as itself (SameAhead.next), is the same registered future read along an orbit (sameAhead_orbit_iff), and where every moment is registered differently each moment is its own state (SameAhead.new_each). Under the law of moments Law.registered Nat.succ o, t and t′ are alike exactly where SameAhead o t t′ (alike_moments_iff). A pigeonhole up to a relation with no decision (split_top, shared_below) gives: o has finitely many states (∃ L, every moment is one state with some moment below L, StatesBelow) exactly where SameAhead o i j for some i < j (statesBelow_of_same, finitely_many_states_iff); a configuration that returns has finitely many states under every registration (Law.Returns.states). The registration of the two-valued denial (Denial.register) has exactly two states: moments 0 and 1 differ (through revision_never_rests of Becoming.Diagonal), moments 0 and 2 are one state, and every moment is one of the two (Denial.two_states), each defined through the other (Denial.each_through_other). Law.goAlike_process_iff is the instance of Becoming.Learning's goAlike_iff_lumped; Learning.Lasso o i q holds exactly where SameAhead o i (i + (q + 1)) (lasso_iff_sameAhead), so there are finitely many states exactly where there is a lasso (finitely_many_states_iff_lasso). No Lean axiom is used."
@@ -334,7 +334,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -436,8 +436,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

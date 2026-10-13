@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "把单位读为跨过从 t 起的一步分成 r t 个较细的单位（Becoming.Resolution 的 Flow.BalancesAt），并把平衡局部到一个家族与一步（Flow.BalancesAtOn）；变化按单位读出：条件上升指步后的水平超过 r t 乘以步前的水平（Web.RisesAt），下降反之（Web.FallsAt）；r 恒为一时各为原来的概念（Flow.balancesAtOn_one、Web.risesAt_one、Web.fallsAt_one、Flow.runsDownOnAt_one）。不对 r 加任何条件：一个条件在该分辨率下平衡时，开始立着恰当此前立在零且被给的多于被取的，不再立着恰当此前立着且被取的等于它按较细单位所有的连同被给的（Flow.BalancesAtOn.comesToStand_iff、ceasesToStand_iff）；按单位的上升被给予、下降被取用（rise_given、fall_taken）；没有从家族取用时，成员按单位上升恰当有参与者给予它（rises_iff_gives），家族上的耗散排除这一点（Flow.DissipatesOn.still_untaken_at）；体现的关系项只由一个不是它自己的活跃给予者生起（arises_given）；没有什么从无中开始立着（comes_from_standing）。一次交换：家族不重复地包含所立者、在该分辨率下平衡并被耗散时（Flow.RunsDownOnAt），有条件按单位上升或下降，恰当家族步后的总水平低于 r t 乘以步前的总水平（Flow.RunsDownOnAt.changes_iff）。按原始计数读出则不成立：单位一分为二、什么都不交换时，每个水平加倍，原始计数下处处上升，而按单位没有变化、总水平不降（Doubling.raw_reading_fails）。所需按与水平相同的单位读（Ren 2026-10-12）：细分为 r t > 0 时，要求不变、所需与所需的水平都按较细单位读出的形成，步后被支持恰当步前被支持（Web.supported_unchanged_by_split）；跨步比较所需时按单位因子读出（unitFactor、continuing_restores_in_unit、consumed_continues_transformed_in_unit、inactive_below_in_unit）；按单位的上升由被支持者给予（Flow.BalancesAtOn.rise_given_by_supported）。一段上数损失的规律要固定单位：单位每步加倍、无给予者时，一个形成每步取一个较细单位，永远活跃且被支持（Feeding.endless），细分供给了它。",
     "en": "Read the unit as splitting into r t finer units across the step from t (Flow.BalancesAt of Becoming.Resolution), with balance made local to a family and a step (Flow.BalancesAtOn), and read change in the unit: a condition rises where its level after the step exceeds r t times its level before (Web.RisesAt), and falls where it is below (Web.FallsAt); with r constantly one each is the original notion (Flow.balancesAtOn_one, Web.risesAt_one, Web.fallsAt_one, Flow.runsDownOnAt_one). With no condition on r: with balance at a condition at that resolution, it comes to stand exactly when it stood at nothing and was given more than was taken from it, and ceases to stand exactly when it stood and what was taken from it is all it had in the finer unit with all it was given (Flow.BalancesAtOn.comesToStand_iff, ceasesToStand_iff); a rise in the unit is given to and a fall taken from (rise_given, fall_taken); where nothing is taken from the family, a member rises in the unit exactly when something taking part gives to it (rises_iff_gives), which dissipation on the family excludes (Flow.DissipatesOn.still_untaken_at); an embodied relatum arises only as an active giver other than itself gives to it (arises_given); nothing comes to stand from nothing (comes_from_standing). One exchange: across a step at which a family holding what stands without repetition is balanced at that resolution and dissipated on (Flow.RunsDownOnAt), some condition rises or falls in the unit exactly when the family's total after the step is below r t times its total before (Flow.RunsDownOnAt.changes_iff). Read in raw counts it fails: with the unit splitting in two and nothing exchanged every level doubles, every condition rises in raw counts, and nothing changes in the unit, the total not falling (Doubling.raw_reading_fails). Need is read in the unit of the level (Ren, 12 October): with the unit splitting into r t > 0, a formation whose requirements stay and whose needs and required levels are read in the finer unit is supported after the step exactly when before (Web.supported_unchanged_by_split); needs compared across steps are read through the unit factor (unitFactor, continuing_restores_in_unit, consumed_continues_transformed_in_unit, inactive_below_in_unit); a rise in the unit is given by a supported formation (Flow.BalancesAtOn.rise_given_by_supported). The laws counting a loss over a stretch need a fixed unit: with the unit doubling at every step and nothing giving, a formation taking one finer unit at every step is active and supported forever (Feeding.endless), fed by the refinement."
@@ -207,7 +207,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -314,8 +314,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

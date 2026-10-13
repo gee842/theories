@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T20:01:55+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个规定每步的成立者被不重复地列出、从某步 T 起每步至多 B 个（Listed，此后列表长度不超过 B），且每步可判定时，在任意晚的步有成员开始成立，就在任意晚的步有成员不再成立（Listed.ceasing_of_coming）。证明经过普查的平衡（census-balance）：开始成立复现时，从任一步起其间开始成立的累加而超过 B（recurring_accumulates）；列表回到 B 以内时，终点的列表短于起点的列表连同其间开始成立的，由平衡，其间有不再成立（Listed.ceasing_iff_shortfall）。所以界不必从某步起一直成立：列表只需在任意晚的步回到某数 K 以内（Listed.ceasing_of_returning）。P27 曾直接由列表的长短证明（一次开始成立若此前没有不再成立，列表就变长，而列表不能长过 B）；P30 改由平衡证明，那一路线的三个引理不再被用到，从核心中去掉。与普查定律（ceasing-needs-arising）合起来，两者同步（Listed.coming_iff_ceasing）。读于活动：在从某步起每步至多 B 个形成活跃的普查之下，生起复现恰当止息复现（Web.ceasing_of_arising、Web.unceasing_iff_bounded）。读于世界：每步至多 B 个关系项活跃且被列出的世界（World.CountedWithin）中，生起复现恰当止息复现（World.CountedWithin.arising_iff_ceasing）；有限世界的每个普查都有界，不需要可判定性（World.Finite.census_bounded），活动可判定时普查存在（World.Finite.countedWithin），所以有限世界的规律 World.arising_iff_ceasing 是其情形（World.Finite.arising_iff_ceasing）；procession（关系项 x 只在第 x 步活跃）每步一个活跃，生起与止息都复现，关系项却不是有限多个（World.procession_world），所以这一规律越出有限世界；accretion 有普查而无界，生起复现而止息不复现（World.accretion_unbounded）。界可以随步变化：每步 t 至多 B t 个关系项活跃且被列出（World.CountedBy，CountedWithin 是常数界的情形），B 在任意晚的步回到某数以内时，生起复现恰当止息复现（World.CountedBy.arising_iff_ceasing）。界无界地增长时，不论多慢，都不使两者同步：对任何不减而无界的 B，slow B 中第 t 步活跃的是 B t 以下的关系项，有普查且被 B 计数，B 增长的每一步上关系项 B t 生起，没有关系项止息（World.slow_world）；所以例如对数增长时，仍可能只生不灭。列表无界地增长时，若从每一步起某段步上开始成立的多于该段终点的界，不再成立就复现（Listed.ceasing_of_outpacing）；这是充分条件，不是必要条件，slow 中开始成立的从不多于界。读于水平：所立者的普查从某步起每步至多 B 个时，开始作为条件而在复现恰当不再作为条件而在复现（Web.StandingCensus.coming_iff_ceasing）。读于依存：每步的依存被列出（Web.DependenceCensus）且从某步起至多 B 个时，形成复现恰当消解复现（Web.DependenceCensus.forming_iff_dissolving）。比率形式见 census-balance。不用伦理前提，也不用 Lean 公理。",
     "en": "Where the members of which a determination holds are listed at each step, each once, from some step T on at most B at each step (Listed, with lists from then on no longer than B), and the determination is decided at each step, members coming to hold at arbitrarily late steps need members ceasing to hold at arbitrarily late steps (Listed.ceasing_of_coming). The proof goes through the census balance (census-balance): with coming to be recurring, the comings from any step on accumulate past B (recurring_accumulates); where the list returns within B, the list at the end is shorter than the list at the start with what came between, so by the balance something ceases between (Listed.ceasing_iff_shortfall). So the bound need not hold at every step from some step on: the list need only return within some number K at arbitrarily late steps (Listed.ceasing_of_returning). P27 proved it from the lengths of the lists directly (a coming to be not preceded by a ceasing lengthens the list, which cannot grow past B); P30 proves it through the balance, and the three lemmas of that route, no longer used, are removed from the core. With the census law (ceasing-needs-arising), the two recur together (Listed.coming_iff_ceasing). Read of activity: under a census with at most B formations active at each step from some step on, arising recurs exactly when ceasing recurs (Web.ceasing_of_arising, Web.unceasing_iff_bounded). Read of worlds: in a world whose relata active at each step are listed, at most B of them (World.CountedWithin), arising recurs exactly when ceasing does (World.CountedWithin.arising_iff_ceasing); every census of a finite world is bounded, with no decidability (World.Finite.census_bounded), and where activity is decided one exists (World.Finite.countedWithin), so the law of finite worlds, World.arising_iff_ceasing, is a case (World.Finite.arising_iff_ceasing); in procession, where relatum x is active at step x alone, one relatum is active at each step and arising and ceasing both recur, while the relata are not finitely many (World.procession_world), so the law reaches beyond finite worlds; accretion has a census without a bound, and arising recurs there while ceasing does not (World.accretion_unbounded). The bound may vary with the steps: where at most B t relata are active at each step t, listed (World.CountedBy, of which CountedWithin is the case of a constant bound), and B returns within some number at arbitrarily late steps, arising recurs exactly when ceasing does (World.CountedBy.arising_iff_ceasing). A bound growing without end, however slowly, does not keep the two together: for any non-decreasing, unbounded B, in slow B the relata below B t are active at step t, with a census counted by B; relatum B t arises across each step at which B grows, and nothing ceases (World.slow_world); so under logarithmic growth, for instance, arising can still go on without ceasing. Where the list grows without end, ceasing to be recurs where, from each step, the comings over some stretch outnumber the bound at its end (Listed.ceasing_of_outpacing); this is sufficient, not necessary, and in slow the comings never outnumber the bound. Read of standing: where from some step on at most B conditions stand at each step, listed, coming to stand recurs exactly when ceasing to stand does (Web.StandingCensus.coming_iff_ceasing). Read of dependence: where the dependences of each step are listed (Web.DependenceCensus), at most B from some step on, forming recurs exactly when dissolving does (Web.DependenceCensus.forming_iff_dissolving). For the form with rates, see census-balance. No ethical premise and no Lean axiom is used."
@@ -385,7 +385,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-complete-theory-of-becoming.md",
@@ -684,8 +684,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

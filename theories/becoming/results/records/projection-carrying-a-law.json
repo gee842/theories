@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-11T23:07:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设 P 是配置类型 S、动作类型 A 上的过程，π : S → K 是配置的一个投影（描述）。P 经 π 读的像（Image P π）在 k 与 κ 之间有一步 a，当且仅当 P 的某一步 a 从投影为 k 的配置到投影为 κ 的配置；P 的步骤经 π 分解到它的像（factors_image，FactorsThrough 取自 P53），像是步骤经 π 分解到的最小过程（Image.least）。相同者同去（GoAlike P π）指经 π 相同的两个配置以同一动作到达经 π 相同的配置。不加前提：像确定，恰当相同者同去（image_determined_iff）；某个 K 上的确定过程容许 P 的每一步经 π 读，恰当相同者同去（carries_law_iff）；经恒等，相同者同去就是确定性（goAlike_id_iff）；不分任何东西的描述总相同者同去（goAlike_const）；像的描述 ρ 相同者同去，恰当复合的描述 ρ ∘ π 相同者同去（goAlike_image_iff）。相同者同去时，取相同动作、起点经 π 相同的两个运行在每一步经 π 都相同（GoAlike.runs_agree）。下一配置整个只依于 π（DependsOnlyOn）蕴含相同者同去（DependsOnlyOn.goAlike），且取相同动作、起点经 π 相同的两个运行从第一步起相等（DependsOnlyOn.reabsorbed）；确定的律 next 作为过程只依于 π，恰当经 π 相同的配置下一步相同（Law.dependsOnlyOn_iff），这时轨道从下一步起相同（Law.reabsorbed）；配置读作（状态，规则）、下一配置依于规则而不依于状态时，同一规则的两个配置从下一步起轨道相同（Law.reabsorbed 以规则为投影的情形，即 P62 的 Law.reform_reabsorbed，Becoming.Capture 以它证明）。改变自身规则的系统 adaptive F G 中，状态 x 在规则 g 之下以动作 u 变为 F g x u，规则变为 G g x；它是（状态，规则）上的确定过程（adaptive_determined）；状态的投影相同者同去，恰当对每两个规则、每个状态与动作 F 都相同（adaptive_state_law_iff），等价地某个状态上的确定过程容许每一步经状态读（adaptive_state_carries_iff）；沿它的运行，在规则保持为 g 的一段上，状态的各步是规则 g 的确定律 ruleLaw F g 的步（ruleLaw_determined、Run.steps_by_rule）。经投影读：运行在某步之前未于投影为 k 的配置取过 a（Run.TakesThrough），而某个 K 上的确定过程容许运行经 π 读的各步，且 K 有两个不同的元素时，经投影的记录不固定 a 在 k 的任何结果（Run.stepsThrough_retarget、Run.not_fixesThrough_of_untaken）；相同者同去时亦然（Run.not_fixesThrough_of_goAlike）。Coarse 中配置是两个位，每步翻转第一位、第二位任意：过程不确定（Coarse.not_determined），而第一位相同者同去（Coarse.goAlike），步骤经第一位分解到翻转的确定律（Coarse.carries）。Switching 中状态变为规则、规则每步翻转：联合过程确定（Switching.determined），状态的投影不相同者同去（Switching.not_goAlike），从（假，假）出发的运行，对每个 t ≥ 2，没有状态上的确定过程容许它到 t 为止经状态读的各步（Switching.no_state_law）。不用 Lean 公理。",
     "en": "Let P be a process on configurations S with moves A, and π : S → K a projection (description) of the configuration. P read through π (Image P π) has a step a from k to κ exactly where some step a of P goes from a configuration projecting to k to one projecting to κ; P's step factors through π into its image (factors_image, with FactorsThrough from P53), and the image is the least process the step factors through (Image.least). Configurations alike under π go alike (GoAlike P π) when any two configurations alike under π go by the same move to configurations alike under π. With no premise: the image is determined exactly where configurations alike go alike (image_determined_iff); some determined process on K admits every step of P read through π exactly where configurations alike go alike (carries_law_iff); through the identity, going alike is determinacy (goAlike_id_iff); the description that distinguishes nothing always goes alike (goAlike_const); a description ρ of the image goes alike exactly where the composite ρ ∘ π does (goAlike_image_iff). Where configurations alike go alike, two runs with the same moves from configurations alike under π stay alike under π at every step (GoAlike.runs_agree). The next configuration depending only on π (DependsOnlyOn) implies going alike (DependsOnlyOn.goAlike), and two runs with the same moves from configurations alike under π are equal from the first step on (DependsOnlyOn.reabsorbed); a determined law next depends only on π as a process exactly where configurations alike under π have the same next configuration (Law.dependsOnlyOn_iff), and then their orbits agree from the next step on (Law.reabsorbed); with the configuration read as (state, rule) and the next configuration depending on the rule and not the state, two configurations with the same rule have the same orbit from the next step on (Law.reabsorbed with the rule as the projection, which is P62's Law.reform_reabsorbed, proved in Becoming.Capture as this instance). In the system changing its own rule, adaptive F G, the state x under rule g becomes F g x u by move u and the rule becomes G g x; it is a determined process on (state, rule) (adaptive_determined); the state's projection goes alike exactly where F agrees for every two rules at every state and move (adaptive_state_law_iff), equivalently where some determined process on the state admits every step read through the state (adaptive_state_carries_iff); along its runs, on a stretch where the rule stays g, the state's steps are steps of the determined law ruleLaw F g of g (ruleLaw_determined, Run.steps_by_rule). Read through a projection: where the run has not taken a at a configuration projecting to k before some step (Run.TakesThrough), some determined process on K admits the run's steps read through π, and K has two different elements, the record so read fixes no outcome of a at k (Run.stepsThrough_retarget, Run.not_fixesThrough_of_untaken); likewise where configurations alike go alike (Run.not_fixesThrough_of_goAlike). In Coarse the configuration is two bits, each step flips the first and leaves the second free: the process is not determined (Coarse.not_determined), yet the first bit goes alike (Coarse.goAlike) and the step factors through it into the determined law of flipping (Coarse.carries). In Switching the state becomes the rule and the rule flips at every step: the joint process is determined (Switching.determined), the state's projection does not go alike (Switching.not_goAlike), and for the run from (false, false), for every t ≥ 2 no determined process on the state admits the run's steps up to t read through the state (Switching.no_state_law). No Lean axiom is used."
@@ -308,7 +308,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -410,8 +410,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

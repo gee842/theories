@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T18:06:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "在平衡的流中，两个流在一个条件上起始、取用与给予相同，就使它在每步相同（Flow.Balances.levels_agree）；所以形成经支持只识得与其所依存者的交换：在其所需与依存一致的两个网上，两个流在它所依存的每个条件上起始、取用与给予相同，它在每步就同样被支持（Flow.Balances.support_agrees）。扣留一个部分时，两种水平在某步于一个条件上相同，恰当此前部分向它给予的等于从它取用的（Flow.Balances.agrees_iff_even）；部分不向条件给予时，扣留它不降低条件（Flow.Balances.le_withheld），只取用的部分被扣留时只能是增益或无（Flow.Balances.admits_without_taker）；成员都不与条件交换时两种水平相同（Flow.Balances.agrees_of_quiet）；某步不同之处，必有成员在更早的步与它交换（Flow.Balances.exchanges_before_of_differs、exchanges_of_differs）。影响闭包之外的不与闭包成员所依存的条件交换（Flow.beyond_influence），所以成员都在影响闭包之外的部分到达不了闭包之内（Flow.unreached_within_influence），闭包之内的每个形成在每步有部分时被支持，恰当无部分的水平接纳它（Flow.Balances.unregistered_beyond_influence）：部分在闭包之外终结的，在闭包之内都不被识。Clearing 中清除者清除与不清除栖息地时，两个流都平衡，活动需要支持，清除者每步同样被支持且活跃，而栖居者在不清除时每步活跃、清除时从第 3 步起不活跃（Clearing.unregistered、Clearing.resource_of_clearer）。部分到达一个形成（Flow.Reaches），是指成员与它所依存的条件交换；在某步之前到达（Flow.ReachesBefore），是指成员在更早的步与它在该步所需的条件交换（Flow.ReachesBefore.reaches）。形成在某步所需的每个条件上，两种水平相同，或部分在该步之前到达它（Flow.Balances.agrees_or_reaches_before、agrees_or_reaches）；在某步之前没有到达的，在该步有与无部分时同样被接纳（Flow.Balances.admits_unreached_before、admits_unreached）。交换在依存之后时，形成被影响、被到达，却在每步之前都没有被到达，有与无部分时每步都同样被接纳（Late.affected_without_effect）。成员在一个对影响封闭的区域之内的部分只到达区域之内（Flow.reaches_within_closed）；所及闭包与系统都是这样的区域（Flow.reaches_withinReach、Flow.reaches_withinSystem），系统之外的部分到达不了系统之内（Flow.unreached_within_system），形成自身的部分在其所及闭包与系统之内（Flow.own_within_reach、Flow.own_within_system）；清除者的部分是它自身的，并到达栖居者（Clearing.clearer_own、Clearing.reaches_dweller）。不用 Lean 公理。",
     "en": "Two balanced flows that start a condition alike, and take from it and give to it alike, keep it alike at every step (Flow.Balances.levels_agree); so a formation's support registers only the exchanges with what it depends on: on two webs that agree on what it requires and needs, two flows that start, take and give alike on every condition it depends on support it alike at every step (Flow.Balances.support_agrees). With a part withheld the levels agree on a condition at a step exactly when, before it, the part has given the condition what it has taken from it (Flow.Balances.agrees_iff_even); withholding a part that gives a condition nothing never lowers it (Flow.Balances.le_withheld), and withholding a part that only takes registers as gain or nothing (Flow.Balances.admits_without_taker); the levels agree on a condition none of its members exchanges with (Flow.Balances.agrees_of_quiet), and where they differ at a step some member exchanged with it at an earlier step (Flow.Balances.exchanges_before_of_differs, exchanges_of_differs). Nothing beyond a formation's influence closure exchanges with a condition a member depends on (Flow.beyond_influence), so a part whose members all lie beyond it reaches nothing within it (Flow.unreached_within_influence), and each formation within it is supported with the part exactly where the levels without the part admit it, at every step (Flow.Balances.unregistered_beyond_influence): whatever the part ends beyond the closure registers nowhere within it. In Clearing, whether or not the clearer clears the habitat, both flows balance, activity needs support, and the clearer is supported and active alike at every step, while the dweller is active at every step with the habitat spared and inactive from the third step on with it cleared (Clearing.unregistered, Clearing.resource_of_clearer). A part reaches a formation (Flow.Reaches) when a member exchanges with a condition the formation depends on, and reaches it before a step (Flow.ReachesBefore) when a member exchanged, at an earlier step, with a condition the formation requires at that step (Flow.ReachesBefore.reaches). At each condition a formation requires at a step, the levels with and without a part agree, or the part reaches the formation before that step (Flow.Balances.agrees_or_reaches_before, agrees_or_reaches); whatever the part has not reached before a step is admitted alike with and without it there (Flow.Balances.admits_unreached_before, admits_unreached). An exchange after the dependence affects and reaches a formation without reaching it before any step, which is admitted alike with and without the part at every step (Late.affected_without_effect). What a part whose members lie within a region closed under affecting reaches lies within the region (Flow.reaches_within_closed); the reach closure and the system are such regions (Flow.reaches_withinReach, Flow.reaches_withinSystem), a part whose members lie beyond a system reaches nothing within it (Flow.unreached_within_system), and a formation's own part has its members within its reach closure and its system (Flow.own_within_reach, Flow.own_within_system); the clearer's part is its own and reaches the dweller (Clearing.clearer_own, Clearing.reaches_dweller). No Lean axiom is used."
@@ -280,7 +280,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -444,8 +444,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

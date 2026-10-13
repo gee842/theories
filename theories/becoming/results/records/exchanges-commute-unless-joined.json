@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "Flow.Commuted L L' t：L' 以相反次序取 L 跨步 t 与 t+1 的交换，其余交换照旧；Web.Commuted W W' t：W 的每个立、活动、依存、需要与汲取至多跨两步之一变化，W' 跨另一步作此变化（Moved）。两个关系都对称（Flow.Commuted.symm、Web.Commuted.symm），在两侧说明哪些关系项跨哪一步变化并分开两步之处由 Flow.swap 与 Web.commute 实现（Web.Split、Flow.swap_commuted、Web.commute_commuted）。平衡、耗散与体现在交换后的世界中恰在原世界中成立时成立（World.commute_laws、Flow.Commuted.balances_iff、Flow.Commuted.dissipative_iff、Web.Commuted.embodied）：立的量相互交换（Exchanged），其升降互换位置。在含有两步的任何段上，有限家族的生起与止息计数、总立的升降与下降之步的计数都与原世界相同（World.commute_counts）。重复交换生成 Reorders，保持平衡、耗散与体现（Reorders.laws），并在含有每对被交换之步的段上保持总量（Reorders.totals）：这是以两侧分开两步为独立的 Mazurkiewicz 迹等价。次序经依存与共享的关系项被登记，各有见证：活动需要支持在没有依存跨越两侧时于交换后保持（Web.commute_dependent），而在 Crossing 中两个交换没有共享的关系项、两侧分开它们，一个关系项却依存于另一个交换所结束的条件，次序相反时它在没有支持时活跃（Crossing.order_registers）；只有活跃者给予在交换后保持于没有给予者的活动被第一步开始或被第二步结束之处（Flow.Commuted.acting），而在 Arising 中跨第一步生起的关系项跨第二步给予，次序相反时它在活跃之前给予（Arising.order_registers）。有一个足迹说出每个交换触及哪些关系项、并包含这些交换时（Footprinted、Footprinted.Contains），交换相邻而不相连的交换是以足迹为两侧的 Reorders 的一步（Footprinted.split），任意多次这样的交换双向保持每个前提，其中有活动需要支持、只有活跃者给予与取用、以同一界的传递（Footprinted.reorder_premises）。沿任意 Reorders，包括相连的交换，在含有每对被交换之步的段上，两个世界中活动都可判定时，生起与止息的计数保持（Reorders.counts）。只给两侧而无足迹的 Reorders 可以交换每个包含它们的足迹都相连的交换，这样做破坏活动需要支持（Crossing.reorders_joined）与只有活跃者给予（Arising.reorders_joined）：这两个前提恰沿不相连交换的交换而保持。不加前提。 P88 接续：listed_splice 以交换前后普查的两侧构造中间一步的列表，任意交换都正向保存活动与所立者的普查（Web.commute_census、Web.commute_standingCensus），返回方向要求两侧分开（World.commute_counted_iff）。因此任意 Reorders，包括相连交换，都双向保持两种普查的存在（Reorders.census）；任意 Footprinted.reorder 正向保存，包含足迹下的不相连交换重排双向保存（Footprinted.reorder_census）。这是存在普查的保存，不是中间每步人数不变，也不推出相连交换下其他前提保持。",
     "en": "Flow.Commuted L L' t: L' takes the exchanges of L across the steps from t and t+1 in the other order and every other exchange as L does; Web.Commuted W W' t: each standing, activity, dependence, need and drawing of W changes across at most one of the two steps, and W' makes that change across the other (Moved). Both relations are symmetric (Flow.Commuted.symm, Web.Commuted.symm) and are realized by Flow.swap and Web.commute wherever sides say which relata change across which step and split the two steps (Web.Split, Flow.swap_commuted, Web.commute_commuted). Balance, dissipation and embodiment hold of the commuted world exactly where they hold of the world (World.commute_laws, Flow.Commuted.balances_iff, Flow.Commuted.dissipative_iff, Web.Commuted.embodied): the standing amounts exchange (Exchanged), their rises and falls changing places. Over any stretch holding both steps, the counts of a finite family's arising and ceasing, the rises and falls of a family's total standing and the steps at which it falls are those of the world (World.commute_counts). Repeated, the commutations generate Reorders, which keeps balance, dissipation and embodiment (Reorders.laws) and, over a stretch holding every commuted pair, the totals (Reorders.totals): Mazurkiewicz trace equivalence, with independence of two consecutive exchanges taken as sides splitting them. The order registers through dependence and through a shared relatum, each with a witness: activity needing support holds after commuting where no dependence crosses the sides (Web.commute_dependent), and in Crossing the two exchanges share no relatum and the sides split them, yet a relatum depends on a condition the other exchange ends, and in the other order it is active without support (Crossing.order_registers); only active relata giving holds after commuting where no relatum giving has its activity begun by the first step or ended by the second (Flow.Commuted.acting), and in Arising the relatum arising across the first step gives across the second, and in the other order gives before it is active (Arising.order_registers). With a footprint saying which relata each exchange touches and containing the exchanges (Footprinted, Footprinted.Contains), commuting neighbouring exchanges not joined is a step of Reorders with the footprint as sides (Footprinted.split), and any number of such commutations keeps every premise in both directions, activity needing support, only active relata giving and taking and bounded transmission with the same bound among them (Footprinted.reorder_premises). Along any Reorders, joined commutations included, the counts of arising and ceasing over a stretch holding every commuted pair are kept where activity is decided in both worlds (Reorders.counts). Plain Reorders, its sides given without a footprint, can commute exchanges that every containing footprint joins, and doing so breaks activity needing support (Crossing.reorders_joined) and only active relata giving (Arising.reorders_joined): these two premises carry exactly along commutations of exchanges not joined. No premise. P88 continuation: listed_splice constructs the intermediate list from sides of the censuses before and after a commutation. Every commutation preserves activity and standing censuses forward (Web.commute_census, Web.commute_standingCensus); the reverse direction requires split sides (World.commute_counted_iff). Thus every Reorders, joined pairs included, preserves existence of both censuses in both directions (Reorders.census). Arbitrary Footprinted.reorder preserves them forward; independent reorderings with a containing footprint preserve them both ways (Footprinted.reorder_census). This preserves census existence, not population at every intermediate step, and does not preserve the other premises under joined commutations."
@@ -301,7 +301,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -418,8 +418,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

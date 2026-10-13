@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "在一次世系上，传递恰是承继（后代在其第一个立足之步依存 c，则给予者在给予之步依存 c，Web.InheritsAt）加所需之界（两者都依存时，后代的所需至多多 δ，Web.NeedsWithinAt）（Web.transmits_at_iff）；对整个流，TransmitsWithin 恰是 Inherits 与 NeedsWithin（Flow.transmitsWithin_iff）。承继涵盖跨该步形成于后代的依存，与它不立足时一直持有的依存（Web.InheritsAt.split）；后代在给予之步不依存 c 时，承继恰是形成的规律：开始作为条件而在之时在它那里形成的依存，是给予者持有的（Web.inheritsAt_iff_forming），传递是这条规律加所需之界（Flow.transmitsWithin_iff_forming）。一般地，先前是否持有可判定之处，形成与持有两种情形构成承继（Web.inheritsAt_of_split、Flow.transmitsWithin_iff_split），不可判定时只构成不可反驳的承继（Web.inheritsAt_not_not）；对每次世系都要求这一点等价于排中律（split_iff_em）。在一个关系项处平衡时，开始作为条件而在者由参与该步的某者经世系而来（Flow.descends_of_comes）；在承继之下，它在该步之后的每项依存都由给予它的某者持有（Flow.inherited_from_giver、Flow.Inherits.from_giver、Flow.forms_from_giver），参与者都不依存 c 时，开始作为条件而在者在该步之后不依存 c（Flow.no_new_dependence）：传递让世系改变所需，不改变依存哪些条件。演化记录的两条界（transmitted_supported、transmitted_within）在一次世系上由那里的承继与所需之界得出（Flow.inherited_supported_at、Flow.inherited_within_at，流的形式 Flow.inherited_supported、Flow.inherited_within）；在开始作为条件而在的关系项处，只需某个被支持的给予者在 δ 之内持有该依存（Flow.TransmitsFromSome、Flow.fromSome_supported、Flow.fromSome_within），平衡之下传递给出它（Flow.TransmitsWithin.fromSome），而它严格较弱：两个给予者，一个依存池、一个不依存，给出的后代依存池；流平衡，只有活跃者给予，活动需要支持，规律成立而传递对每个 δ 都不成立（TwoGivers.twofold）。没有传递时，开始作为条件而在、在第一个立足之步被支持的后代，以自身界定自身的所需（Flow.descendant_supported_at、Flow.embodied_descendant）；传递把这一界带给开始作为条件而在时不被支持的后代，并把它移到给予之步（Drawdown.carried）。不用公理。",
     "en": "At one descent, transmission is exactly inheritance, a dependence on c that the descendant holds at its first standing step held by the giver at the giving step (Web.InheritsAt), together with the need within δ where both hold (Web.NeedsWithinAt) (Web.transmits_at_iff); for the flow, TransmitsWithin is exactly Inherits with NeedsWithin (Flow.transmitsWithin_iff). Inheritance covers a dependence forming at the descendant across the step and one it held through the step while it stood at nothing (Web.InheritsAt.split); where the descendant held no dependence on c at the giving step, inheritance is exactly the law of forming, a dependence forming at a relatum as it comes to stand being one its giver held (Web.inheritsAt_iff_forming), and transmission is that law with the need within δ (Flow.transmitsWithin_iff_forming). In general forming and holding make inheritance where the earlier holding is decided (Web.inheritsAt_of_split, Flow.transmitsWithin_iff_split), and without that only irrefutably (Web.inheritsAt_not_not); asked of every descent, that they make it is excluded middle (split_iff_em). With balance at a relatum coming to stand, it descends from something taking part in the step (Flow.descends_of_comes); under inheritance each dependence it holds after the step was held by something giving to it (Flow.inherited_from_giver, Flow.Inherits.from_giver, Flow.forms_from_giver), and where nothing taking part depends on c, nothing coming to stand depends on c after the step (Flow.no_new_dependence): transmission lets descent vary a need, never which conditions are depended on. The two bounds of evolution-on-descent (transmitted_supported, transmitted_within) hold at one descent from inheritance and the need within δ there (Flow.inherited_supported_at, Flow.inherited_within_at; for the flow Flow.inherited_supported, Flow.inherited_within); at a relatum coming to stand they need only that some supported giver held the dependence within δ (Flow.TransmitsFromSome, Flow.fromSome_supported, Flow.fromSome_within), which transmission gives under balance (Flow.TransmitsWithin.fromSome) and which is strictly weaker: a child given its standing by two givers, one depending on the pool and one not, depends on the pool; the flow balances, only active relata give, activity needs support, the law holds and transmission fails for every δ (TwoGivers.twofold). Without transmission, a descendant supported at its first standing step bounds its own need (Flow.descendant_supported_at, Flow.embodied_descendant); transmission carries the bound to a descendant not supported as it comes to stand and moves it to the giving step (Drawdown.carried). No axiom."
@@ -206,7 +206,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -258,8 +258,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

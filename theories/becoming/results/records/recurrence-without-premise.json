@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "对任意构型上的任意变化之律，不加前提、不用可判定性。鸽巢：一个列表持有一个序列的前 l.length + 1 项时其中两项相同（revisits_within，只用给定的成员关系）；所以列表持有的序列从每一步起都重访（revisits_from），任何过程的任何运行也是（Run.revisits_from），从不重访的序列没有列表持有（unheld_of_new、unlisted_of_new）。构型的量沿序列从不下降、跨每次变化都上升（Marks）时，列表持有的序列的变化不复现（Marks.change_not_recurring、Run.change_not_recurring）。对确定的律 next（Law.orbit）：某步不能到达的构型此后都不能到达（Law.lost_stays；任何过程中沿可行路径失去的可达在每个延续中失去，Reach.lost_stays）；被合并的构型此后不分开（Law.merged_stays）；每个构型都回返时律不合并（Law.lossless_of_returns）；回返的构型每一步都可得（Law.Returns.reachable）；撤销就是继续（Law.Returns.undo）。列表持有每个构型时：律不合并（Law.Lossless）恰是每个构型都回返（Law.lossless_iff_returns），恰是每个构型在每一步都可得（Law.returns_iff_keeps）；合并永久失去一个可能（Law.Merges.loses）；无损而有构型不回返就没有列表持有每个构型（Law.Lossless.unlisted）；无损时沿轨道从不下降的量不变（Law.Lossless.no_rise），所以从不下降而某步上升的量需要合并（Law.rise_not_lossless）。开放的见证：Nat.succ 不合并、不回返、一步后不能再有 0、每步上升（Law.succ_open）；Nat.pred 合并 0 与 1 而每个数每步都可得（Law.pred_open）。保留历史（Law.withHistory：当下按律继续并进入过去）：每个律都不合并（Law.withHistory_lossless）、不重访（Law.withHistory_new）、不回返（Law.withHistory_never_returns），开端在第一步后不能再有（Law.withHistory_loses_beginning），没有列表持有所保留的历史（Law.withHistory_unlisted）；当下按律本身继续（Law.present_orbit），当下回返时带着另一段历史（Law.return_keeps_history）；展开经过的构型有列表持有时，从每一步起两段不同的历史共有一个当下（Law.present_forgets）。确定的律是脊柱的过程，其轨道是一个运行（Law.process、Law.run）。",
     "en": "For every law of change on configurations of any kind, with no premise and no decidability. Pigeonhole: a list holding the first l.length + 1 values of a sequence holds two equal ones (revisits_within, using membership as given); so a sequence held by a list revisits from every step on (revisits_from), as does every run of every process (Run.revisits_from), and no list holds a sequence that never revisits (unheld_of_new, unlisted_of_new). Where a quantity of the configuration never falls along a sequence and rises across every change (Marks), the change of a sequence held by a list does not recur (Marks.change_not_recurring, Run.change_not_recurring). Under a determined law next (Law.orbit): a configuration not reachable at a step is not reachable at any later step (Law.lost_stays; for every process, reachability lost along an admissible path is lost along every continuation, Reach.lost_stays); merged configurations are never told apart again (Law.merged_stays); where every configuration returns the law merges nothing (Law.lossless_of_returns); a configuration that returns can be had at every step (Law.Returns.reachable); undoing is going on (Law.Returns.undo). Where a list holds every configuration: the law merges nothing (Law.Lossless) exactly where every configuration returns (Law.lossless_iff_returns), and exactly where every configuration can be had at every step (Law.returns_iff_keeps); a merge loses a possibility for good (Law.Merges.loses); a law merging nothing under which some configuration never returns has no list holding every configuration (Law.Lossless.unlisted); merging nothing, a quantity that never falls along an orbit keeps its value (Law.Lossless.no_rise), so one that never falls and rises at some step needs a merge (Law.rise_not_lossless). Open witnesses: Nat.succ merges nothing, never returns, cannot have 0 again after one step and rises at every step (Law.succ_open); Nat.pred merges 0 and 1, yet every number can be had at every step (Law.pred_open). Keeping its history (Law.withHistory: the present goes on by the law and passes into the past), every law merges nothing (Law.withHistory_lossless), never revisits (Law.withHistory_new) and never returns (Law.withHistory_never_returns); its beginning cannot be had again after the first step (Law.withHistory_loses_beginning), and no list holds the kept history (Law.withHistory_unlisted); the present goes on by the law itself (Law.present_orbit), and where it returns it comes back with another history (Law.return_keeps_history); where a list holds the configurations an unfolding passes through, from every step on two different histories share one present (Law.present_forgets). A determined law is a process of the spine, and its orbit a run of it (Law.process, Law.run)."
@@ -204,7 +204,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -320,8 +320,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

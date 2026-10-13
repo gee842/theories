@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-13",
+  "workboard_item": "P101",
+  "kind": "author-source-assessment-and-correspondence",
+  "new_theorems": 0,
+  "new_experiments": 0,
+  "raw_data_reanalysis": false,
+  "independent_review": false,
+  "prior_design_status": "Evidence sections 4 and 7.2 remain unrun",
+  "delta": "Specify a stage-relative continuation task; test which continuation content must be preserved while admitting adequately contextualized history-based explanations. Separate existential reach, control, semantic questions and executable tests; full-core necessity remains open.",
+  "reused_records": [
+    "scientific-inquiry-foundation",
+    "finite-fallible-inquiry-necessity",
+    "tests-fix-likeness-where-determined",
+    "histories-fix-law-up-to-dead-ends",
+    "branching-tests-bisimulation",
+    "configurations-alike-by-relation",
+    "finite-continuation-plans"
+  ],
+  "producer_consumer_mapping": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#153-four-completed-inputs-and-their-exact-consumers",
+  "counterreview": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#155-discriminating-evidence-and-substantive-counterreview",
+  "primary_sources": [
+    {
+      "id": "E8",
+      "url": "https://doi.org/10.1126/science.1136303",
+      "read_url": "https://arxiv.org/pdf/quant-ph/0610241v1",
+      "scope": "Author preprint v1, submitted 28 October 2006; main text printed pages 1–2 and configuration/random-generation/timing methods pages 7–9. Text inspected; no independent visual figure, raw-data or timing audit. Spacelike choice/entry events are not given an absolute temporal order.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "E9",
+      "url": "https://www.scss.tcd.ie/matthew.hennessy/pubs/old/HMjacm85.pdf",
+      "scope": "Author-hosted primary PDF, printed pages 137–140, sections 1–2.1. Later section fetches timed out; no full-proof reading claimed. Earlier bibliographic-only access record preserved.",
+      "accessed": "2026-10-13"
+    },
+    {
+      "id": "E10",
+      "url": "https://www.scss.tcd.ie/Matthew.Hennessy/pubs/TCD-CS-2010-13.pdf",
+      "scope": "Primary technical report, abstract and introduction printed pages 1–2. Cover says TCS-CS-2010-12 despite URL suffix. Author-stated results only, not full-proof audit.",
+      "accessed": "2026-10-13"
+    }
+  ],
+  "historical_pointer": {
+    "url": "https://doi.org/10.1016/0304-3975(84)90113-0",
+    "scope": "Publisher abstract only; full methods not assessed; not counted as another assessed experiment."
+  },
+  "external_bytes_imported": false,
+  "preserved_prefixes": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "preserved_prefix_bytes": 20539,
+      "preserved_prefix_sha256": "f07beb34eb994f797f6325fac3381e02ad1ce6593b21d729afe7d1cc0baeedce"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "preserved_prefix_bytes": 99719,
+      "preserved_prefix_sha256": "5fb23cb5b0cad0f68df219d023122154723c8904df5c7147869bd43192d7885b"
+    },
+    {
+      "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "preserved_prefix_bytes": 42311,
+      "preserved_prefix_sha256": "cecaaf37f429734368a871ac64a4169ea9abb928b7ac8c065d1970147bd2c22f"
+    }
+  ],
+  "reused_proof_source_bindings": [
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Histories",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "b65ce283e0ab62d874924b5ec786cff2248f29593b690e0487cacc9bfbf913f0"
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf"
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3"
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Histories",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "b65ce283e0ab62d874924b5ec786cff2248f29593b690e0487cacc9bfbf913f0"
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf"
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5"
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3"
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+    },
+    {
+      "id": "branching-tests-bisimulation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+      "sha256_pointer": "/modules/7/sha256",
+      "success_pointer": "/passed",
+      "success_value": true,
+      "matched_sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Experiment",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "753d32b44a0800699576f15f31c9fc11a57e15efe62fde8c0c2f6be6962535cc"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c"
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "5ab71acea5161506548c983a5078b72fc2fe0f317e3450a5a8cc1d4fb50e408c"
+    },
+    {
+      "id": "finite-continuation-plans",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed",
+      "matched_sha256": "674a3a23358ae3d665345c749d3fc5415645e5e7fcc68cb95c173a397ff80266"
+    }
+  ],
+  "formal_correspondence_claim": "No experiment-to-Choosing instance, new finite-plan spine adapter, or deadline theorem is claimed. Existing theorem hypotheses and dependencies remain.",
+  "no_automation": true,
+  "chain_scope": {
+    "row": "M21",
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "discovery_preserved": true,
+    "reviewed_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "theories/becoming/results/records/scientific-inquiry-foundation.md",
+      "theories/becoming/results/records/finite-fallible-inquiry-necessity.md"
+    ],
+    "owned_links_resolve": true,
+    "owned_link_count": 70,
+    "whole_table_freshness": "not certified; unrelated review guards preserved"
+  }
+}

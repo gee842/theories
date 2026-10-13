@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-11T20:06:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "在确定的律 next 之下，从 s 出发的轨道从某步起带着满足的目标静止，恰当它到达一个 next 不变、满足目标的状态（Law.rests_iff）；在这样的状态满足的目标此后每步都满足（Law.fixed_rests）。“比现在更多”，即自身的一个量 q 跨过一步上升（MoreThanNow），只由变化满足（more_not_at_rest、Law.more_never_rests）；每步都满足时任意两个较晚的步之间 q 都上升（more_rises），所以每个配置都是新的（more_new），没有列表容纳它们（more_needs_open，unlisted_of_new 的实例）；往上数满足它（succ_more）。“高于一切他者”，即其他每个寻求者的量都低于自己的（AboveAll），在一个状态至多被一个寻求者满足（aboveAll_unique、aboveAll_not_two），所以在任何律之下，没有律所不变的状态对两个寻求者都满足它（Law.aboveAll_never_rests）。所立者每步被列出（Web.StandingCensus）时，在任意晚处上升的条件，需要在任意晚处有所立者不衰减的步（Flow.more_needs_unrun，由 Flow.change_recurs_iff）；所立者从某步起每步衰减时，没有条件在任意晚处上升（Flow.more_exhausted）。不用 Lean 公理。",
     "en": "Under a determined law next, the orbit from s comes to rest with its target met from some step on exactly when it reaches a state next leaves unchanged that meets the target (Law.rests_iff); a target met at such a state is met at every later step (Law.fixed_rests). More than now, a quantity q of one's own rising across the step (MoreThanNow), is met only by change (more_not_at_rest, Law.more_never_rests); met at every step, q rises between any two later steps (more_rises), so every configuration is new (more_new) and no list holds them (more_needs_open, an instance of unlisted_of_new); counting on meets it (succ_more). Above all others, every other seeker's quantity below one's own (AboveAll), is met at a state by at most one seeker (aboveAll_unique, aboveAll_not_two), so under any law no state left unchanged meets it for two seekers (Law.aboveAll_never_rests). Where what stands is listed at each step (Web.StandingCensus), a condition rising at arbitrarily late steps needs, at arbitrarily late steps, steps across which what stands does not run down (Flow.more_needs_unrun, from Flow.change_recurs_iff); where what stands runs down at every step from some step on, no condition rises at arbitrarily late steps (Flow.more_exhausted). No Lean axiom is used."
@@ -204,7 +204,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -315,8 +315,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

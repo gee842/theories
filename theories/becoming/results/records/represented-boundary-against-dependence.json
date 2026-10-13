@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T10:08:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个形成在 t 的事件在条件区域上更新（Web.RenewingOver），是指它活跃，并且该步保住它在区域中参与的每个条件上的每项依存。该步的更新就是在每个区域上的更新（Web.RenewingAt.over、Web.renewingAt_iff_over_all），在一个区域上的更新也是在它之内每个区域上的更新（Web.RenewingOver.narrow）。与形成的实际关系相比：区域覆盖它参与的每个条件时，在区域上的更新就是该步的更新（Web.RenewingOver.at）；区域覆盖它所需的每个条件、它的要求在该步不收紧时，在区域上更新的形成在该步之后被支持（Web.RenewingOver.keeps_own），但仍可侵蚀他者——Clearing 中清除者每步都在其资源（它唯一所需的条件）上更新，在第一步侵蚀，不在该步的更新之内（Clearing.renewing_over_resource）；区域遗漏它所需的一个条件时，它自身的汲取可以侵蚀它自身的依存——Omitted 中一个形成需要两个条件，在第零步在 false 上更新、要求不收紧，它也需要区域遗漏的 true，它对 true 的汲取侵蚀，在该步之后它不被支持（Omitted.loses_own；平衡、Acting、Taking 与 Dependent 都成立）。不用伦理前提，也不用 Lean 公理。",
     "en": "A formation's event at t is within renewal over a region of conditions (Web.RenewingOver) when it is active and the step keeps every dependence on every condition of the region it takes part in. Renewal at the step is renewal over every region (Web.RenewingAt.over, Web.renewingAt_iff_over_all), and renewal over a region is renewal over every region inside it (Web.RenewingOver.narrow). Compared with the formation's actual relations: over a region covering every condition it takes part in, renewal over the region is renewal at the step (Web.RenewingOver.at); over a region covering every condition it requires, where its requirements do not tighten across the step, a formation renewing over the region is supported after the step (Web.RenewingOver.keeps_own), yet it can still undermine another: in Clearing the clearer renews over its resource, the one condition it requires, at every step, undermines at step one and is not within renewal there (Clearing.renewing_over_resource); over a region omitting a condition it requires, its own draw can undermine its own dependence: in Omitted a formation requires two conditions, renews over false at step zero with requirements not tightening, also requires true, which the region omits, and its draw on true undermines, so after the step it is not supported (Omitted.loses_own; balance, Acting, Taking and Dependent all hold). No ethical premise and no Lean axiom is used."
@@ -245,7 +245,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-centers-within-the-dynamics.md",
@@ -445,8 +445,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-11T07:31:40+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设两个流在形成 g 所识（依存或观察）的每个条件上逐步平衡，并且 g 周围的交换随其识：凡 g 直到某步识得相同，两个流跨过该步在 g 所识的每个条件上，对在场的全部形成，取用与给予的总量相同（Flow.ExchangeFollows）。那么 g 识得相同期间，它所识条件上的每个差别都保持起始的样子（Flow.difference_kept）。第二个网在 g 所识的条件上起始不低、在其观察的条件上相同时，在第一个网此前每步都支持 g 的每一步，g 都识得相同（Flow.alike_while_supported），可以有任意多个条件不同；差别在某步之前已改变，必有更早的一步，第二个网的水平接纳 g 而第一个网不支持它，活动需要支持时 g 在第一个网中并非此前每步都活跃（Flow.difference_changes_after_divergence）。起始只在 g 依存而不观察的一个储量上不同、第二个网中高 d 时，在第一个网此前每步都支持 g 的每一步，储量恰好高 d，g 所识的其余条件相同，g 此前每步都识得相同（Flow.subthreshold_alike）；第一个网每步都支持 g 时每步都如此（Flow.subthreshold_alike_always）。见证：SupportDrawn 中形成需要一个单位、在每个被支持的步取一个单位，交换只随支持，差别保持到第三步，较低的网在第三步不支持它而较高的网支持，第四步差别已变（SupportDrawn.difference_waits）；JointFailure 中两网从第二步起都不支持形成，差别每步都保持（JointFailure.difference_kept）；Gauged 中观察储量的形成在第一步取尽需要之上的全部，在较高的网中动用了差别，交换随其识而不约束任何东西，只识支持时交换不随其识（Gauged.gauge_changes_difference）；储量划作自身的立着时，量度自身就是量度储量（Gauged.own_is_stock）；Attracting 中被较高的储量招来的取用者使较高的网在第二步就不支持依存者，交换不随其识（Attracting.higher_breaks_first）；SelfPrey 中以所需一依存于自身的猎物，咬一个单位经支持每步都识得相同，量度自身在第二步识之，咬两个单位经支持在第二步就被识（SelfPrey.threshold_on_oneself）。不用 Lean 公理。",
     "en": "Let two flows balance at each step on every condition a formation g registers (depends on or observes), and let the exchange around g follow its registration: wherever g has registered alike up to a step, the two flows take from and give to every condition g registers alike across that step, in total over every formation present (Flow.ExchangeFollows). Then while g registers alike every difference on a condition it registers stays as it was at the start (Flow.difference_kept). Where the second web starts at least as high on what g registers and alike on what it observes, g registers alike at every step before which the first web supported it (Flow.alike_while_supported), any number of conditions differing; where a difference has changed by a step, at some earlier step the second web's levels admitted g and the first web did not support it, and where activity needs support g was not active in the first web at every earlier step (Flow.difference_changes_after_divergence). Where the starts differ only in one stock g depends on and does not observe, d higher in the second web, at every step before which the first web supported g at every step the stock stands exactly d higher, every other condition g registers stands alike and g has registered alike (Flow.subthreshold_alike), and at every step where the first web supports g at every step (Flow.subthreshold_alike_always). Witnesses: in SupportDrawn a formation needing one unit draws one unit at each supported step, the exchange following its support only; the difference stands through the third step, where the lower web fails to support it and the higher supports it, and has changed by the fourth (SupportDrawn.difference_waits); in JointFailure both webs fail the formation from the second step and the difference stands at every step (JointFailure.difference_kept); in Gauged a formation observing its stock draws all of it above its need at the first step and draws on the difference in the higher web, the exchange following its registration constraining nothing, while through support only the exchange does not follow its registration (Gauged.gauge_changes_difference); carving the stock as its own standing, a gauge of oneself is the gauge of the stock (Gauged.own_is_stock); in Attracting a taker drawn by the higher stock makes the higher web fail the dependent at the second step, the exchange not following its registration (Attracting.higher_breaks_first); in SelfPrey, with the prey depending on its own standing at need one, a bite of one registers alike through support at every step and through a gauge of oneself at the second, and a bite of two registers through support at the second step (SelfPrey.threshold_on_oneself). No Lean axiom is used."
@@ -266,7 +266,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -411,8 +411,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

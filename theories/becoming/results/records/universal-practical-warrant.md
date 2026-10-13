@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [universal-practical-warrant.json](universal-practical-warrant.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:14:50.773314+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-13T12:48:58.629428+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-待建立：整体生成与实际生命的伦理意义如何给可回应位置以普遍实践理由，而非仅保存给定目标。 / Open: establish how whole generativity and actual living supply universally warranted practical reasons for responsive positions, beyond preserving a supplied objective.
+同一生成活动中推进目的、选择、认识、规范及修订的统一解释，普遍零实质公理根据仍开放。P98五项概念检验将“实现生活能否改变任务、选择和结束条件”收窄为局部诊断：真实改组仍可延续俘获，须追踪实际受影响关系、保持或改变的根据及具体回应。 / Advances one account of ends, selection, knowing, normativity and revision within becoming; universal zero-substantive-axiom warrant remains open. Five P98 conceptual cases narrow the fulfillment question to a local diagnostic: actual reorganization can perpetuate capture. Follow actual affected relations, grounds for retaining or changing arrangements, and concrete responses.
 
 Canonical source: [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
 
@@ -18,21 +18,28 @@ Canonical source: [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../../chapters/ZERO-AXIOM-P
 
 - 独立获授权的更强目标；不得以局部给定规范或行为收敛替代。 / An independently authorized stronger target; supplied local norms or behavioral convergence do not substitute for it.
 
-伦理根据、认识、动机、实际遵循分别说明；完整关系不能由任意开关谓词取代。 / Normative warrant, recognition, motivation and actual compliance require distinct accounts; arbitrary predicate toggles do not replace the fuller relations.
+先展开形成、受阻、察觉、回应与转型；位置和分析区分由关系说明。区分表示遗漏、实际压制与知情维持伤害；边界的实际作用随生活关系变化，完整描述不自动证明规范成立。普遍性不等于同责、遵循或全部Unrestricted断言。 / Begin with formation, obstruction, sensing, response and transformation; explain positions and analytic distinctions relationally. Distinguish representational omission, actual suppression and informed maintenance of harm. A boundary’s role changes with living relations; descriptive completeness does not itself prove normative validity. Universality is not equal duties, compliance or full Unrestricted significance.
 
 ## 检验与边界 Validation and boundaries
 
-登记开放目标与已述边界，不声称新增证明或已完成普遍根据。 / Records an open target and its stated boundary, not a new proof or completed universal ground.
+2026-10-13 P98：作者哲学论证及实质反审；复用既有评价者独立审查及条件证明，有限复读已用原典的指定段落。无新数学命题、Lean运行、经验结果或独立验收；来源与导航检查仅核对文档。 接续§21完整重读选择关切、关系与理由、非工具性根基三份旧研究，具体比较并收窄上轮检验；无新原典核读。 §22按Ren纠正重构起点：完整重读关系善，定向重读整体实现导论及§§5–7、构成审计路线及边界；作者概念比较和反审，无新原典或数学检查。 §22.7复用共同理论入口、元吸引定义及三项现有记录的主张／前提／对应，属解释整合与反例定位修正，无新形式组合或重新验收。 §23核读选择经识、登记／计划修订及捕获记录的前提和范围，并读伦理学习整合§§52–54；概念比较及作者反审，无新证明、经验或原典阅读。 §23.5依Ren要求实施五项概念压力检验，定位真实改组仍延续控制、完成门槛遗漏及合理保持等范围；未作经验验证或数学证明。 / 13 October 2026, P98: author philosophical argument and substantive counterreview; reuses the existing independent evaluator review and conditional proofs, with a bounded rereading of specified passages in an already used primary source. No new mathematical claim, Lean run, empirical result or independent acceptance; documentary checks cover sources and navigation only. Continuation §21 fully rereads the elective-concern, relation-and-reason and noninstrumental-root studies, completing and narrowing the proposed comparison; no new primary-source reading. Section 22 reconstructs the starting point following Ren: full rereading of relational goodness, targeted rereading of whole-process realization’s introduction and §§5–7 and the constitutive audit’s route and boundary; author conceptual comparison and counterreview, no new primary-source or mathematical check. Section 22.7 reuses the common theory entry, meta-attractor definition and three current records’ claims, premises and correspondence; explanatory integration and correction of counterexample scope, not a new formal composition or acceptance. Section 23 reads selection-through-registration, registration/plan revision and capture premises and scopes, plus ethical-learning integration §§52–54; conceptual comparison and author counterreview, no new proof, experiment or primary-source reading. Section 23.5 follows Ren’s request with five conceptual stress tests, including actual reorganization perpetuating control, completion-gated omissions and warranted continuity; no empirical validation or mathematical proof.
 
-当前中心主张未证；这不撤销 G0/J 下已经完成的成果。 / The central target remains unproved; this does not revoke completed G0/J results.
+一元纠正不自动完成规范证明。修复内容及历史必要性的分析不能单独反驳一个明确追求控制的目标；真实需要、转型损失、保护性边界和知情伤害均保留。不能把自由规范谓词当作完整关系反例，也不能以补全描述直接宣告伦理成立。不给所有选项增加预置正权重，不证明所有可解除限制均应解除；普遍根据与完整混合排序仍未成，G0/J及P89保持。 技术学习并不独自证成目的；任务实现可改变介入但不无条件要求退出，目的有形成史也不自动使它无效。 原完成检验不能单独认证善或脱离俘获；受益者不能只按宣称限定，未完成时的损伤也需评估。保持安排未必失当，名义可修订不等于实行。修正版仍是研究问题，不能把“有根据”写入定义来证明它。 / The nondual correction does not itself prove normative necessity. Repair fidelity and historical necessity alone do not refute an openly controlling end; real needs, transition losses, protective boundaries and informed harm remain. A free normative predicate is no counterexample to fuller relational constitution, and fuller description alone is no ethical proof. No positive weight is preassigned to every added option or every removable restriction judged to require removal. Universal warrant and complete mixed ordering remain open; G0/J and P89 retain their scopes. Technical learning does not itself warrant ends; task fulfillment can change intervention without unconditionally requiring exit, and a purpose’s formation history does not automatically invalidate it. The original fulfillment test cannot certify goodness or escape from capture: declared beneficiaries do not exhaust affected living, and harm before completion also matters. Retaining an arrangement may be warranted; nominal revisability is not enactment. The revised question is still an inquiry and cannot prove warrant by defining it in.
 
-Boundary source / 边界来源: [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
+- 当前中心主张未证；这不撤销 G0/J 下已经完成的成果。 / The central target remains unproved; this does not revoke completed G0/J results. [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
 
 ## 依赖与关联 Dependencies and related results
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
 - Related, not a proved adapter / 关联而非已证转换: [practical-judgment-g0-j](practical-judgment-g0-j.md). 显式公理路线是已有成果；两者的完成标准不同。 / The explicit-axiom route is an established result with a different completion standard.
+- Related, not a proved adapter / 关联而非已证转换: [self-good-reachable-g0](self-good-reachable-g0.md). 复用已纠正评价者路线：自我、连续性及容差不能单独完成普遍意义。 / Reuses the corrected evaluator route: selfhood, continuity and tolerance do not independently establish universal significance.
+- Related, not a proved adapter / 关联而非已证转换: [one-axiom-yields-g0](one-axiom-yields-g0.md). 信用当前意义／理由分工；G0的正式取得没有解除A的规范工作。 / Credits the current significance/reason distinction; deriving G0 does not discharge A’s normative work.
+- Related, not a proved adapter / 关联而非已证转换: [open-form-realization-under-revision](open-form-realization-under-revision.md). P89的有限实现与正式连接已结项，不恢复为本目标的待做机制。 / P89 bounded realization and formal connection are complete, not reopened as a missing mechanism for this target.
+- Related, not a proved adapter / 关联而非已证转换: [target-capture](target-capture.md). 复用目的的差异延续、传递与特定规则下重吸收的既有条件范围；解释用途，非本轮新证明。 / Reuses conditional differential persistence, transmission and rule-bound reabsorption as explanatory inputs, not new proofs.
+- Related, not a proved adapter / 关联而非已证转换: [selection-under-registration-revision](selection-under-registration-revision.md). 复用同一活动内登记改变及可表达选择的既有范围，不从区分保持推出伦理。 / Reuses registration change and expressible-choice scope within one activity, without inferring ethics from preserved discrimination.
+- Related, not a proved adapter / 关联而非已证转换: [consequence-revised-reference-plan](consequence-revised-reference-plan.md). 复用后果修订计划并进入实际使用的已成接口；可靠回返、参考、支持及规则保持给定。 / Reuses the completed interface from consequences through plan revision to actual use; return, reference, support and revision rules remain supplied.
+- Related, not a proved adapter / 关联而非已证转换: [selection-through-registration](selection-through-registration.md). 复用经识的选择范围，区分不能辨认与能辨认却未选择；不把可表达性当作实际选择或伦理方向。 / Reuses the scope of selection through registration, distinguishing unavailable discrimination from available but unused selection; expressibility is not enacted choice or ethical direction.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -41,12 +48,16 @@ No dependency on another migrated record is asserted; source imports and supplie
 | statement | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](../../chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) | — |
 | integration | [UNIFIED-ETHICAL-GROUNDING.md](../../chapters/UNIFIED-ETHICAL-GROUNDING.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| integration | [ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md) | — |
+| provenance | [2026-10-13-universal-normative-grounding-focus.md](../../../../sources/15-codex-theory-conversations/2026-10-13-universal-normative-grounding-focus.md) | — |
+| provenance | [2026-10-13-nondual-normative-grounding-correction.md](../../../../sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md) | — |
+| provenance | [2026-10-13-one-theory-normativity-meta-attractor.md](../../../../sources/15-codex-theory-conversations/2026-10-13-one-theory-normativity-meta-attractor.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-明确推进尚缺的规范根据推论，并保留真正对手；不重开已有局部机制。 / Advance the missing normative inference against substantive rivals without reopening completed local mechanisms.
+直接解释实际受影响生活怎样支持保持、改变或结束安排的判断，保留具体反向根据及实行障碍；不能再把任务／选择／结束的可变性当作善或脱离俘获的判据，也不以新版问句本身替代规范论证。 / Directly explain how actual affected living supports judgments to retain, change or end arrangements, preserving substantive contrary grounds and implementation barriers. Revisable tasks, selection or endings are no certificate of goodness or release from capture; the revised question itself is no substitute for normative argument.
 
 Aliases / 别名: —
 
@@ -54,3 +65,9 @@ Aliases / 别名: —
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：核读整合章新增的有限可见未来正面根据及关系生成比较；它们沿显式G0路线，未改变本独立目标及原研究范围。仅更新该已读整合引用，不新增证明。 / 2026-10-08: read the integration additions on positive ground in visible futures and relational comparison. They follow explicit G0 and do not complete or alter this independent target. Updated only this reviewed integration reference; no new proof.
+- 2026-10-13 P98：按Ren明确选择聚焦普遍规范奠基。新增回应的实际根据／适用范围／要求强度的正面论证与形成边界对手比较；普遍目标保持open，没有新证明或独立成果身份。 / 13 October 2026, P98: follows Ren’s explicit focus on universal normative grounding. Adds an affirmative account of ground, response bearing and requirement, tested against formed-boundary restriction; the universal target stays open, with no new proof or independent result identity.
+- 2026-10-13 P98接续：完成同一目的修订比较，认识与创造可兼有；收回将修订成功视为单独裁决的期待，细化承诺前的实践支持与其最强反审。仍为同一开放目标，无新证明。 / 13 October 2026, P98 continuation: completes the purpose-revision comparison, allowing recognition and creation together; withdraws its use as a standalone discriminator and refines pre-commitment practical support with its strongest objection. Same open target, no new proof.
+- 2026-10-13 P98：按Ren指出的二元回退纠正解释架构；§22/章§20由同一活动展开规范分化，实施修复完成及限制转型比较，保留实际知情伤害。旧尝试保留历史范围，不宣告普遍完成。 / 13 October 2026, P98: corrects the dualist regression identified by Ren; study §22/chapter §20 unfolds normative differentiation within one activity and works through completed repair and changing restrictions, preserving actual informed harm. Earlier attempts retain historical scope; no universal completion.
+- 2026-10-13：Ren指出这些就是一个理论；本研究由共同定义与已有捕获／修订结果说明同一组织中的目的、认识、规范和回应，纠正把meta-attractor作外部案例及把知情伤害当作规范反例的写法。 / 13 October 2026: Ren states these are one theory. The study uses shared definitions and existing capture/revision results to explain purposes, knowing, normativity and response in the same organization, correcting the external-case framing and the use of informed harm as a normative counterexample.
+- 2026-10-13 P98接续：§23／章§21比较同一组织中的选择性技术纠正与目的修订；复用既有选择、捕获、登记和计划修订及有前提的支持接续，明确实际实现能否改变任务与结束条件的检验。仍为开放目标，无新形式结果。 / 13 October 2026, P98 continuation: study §23/chapter §21 compares selective technical correction and revision of ends within one organization, reusing selection, capture, registration/plan revision and conditional supported succession. Tests whether fulfillment can change tasks and endings; same open target, no new formal result.
+- 2026-10-13 P98：检验原完成问句，五项概念接续揭示真实改变仍能延续俘获及范围遗漏；原句保留为局部诊断，修正正文与当前主张，未新增成果身份或证明。 / 13 October 2026, P98: five conceptual continuations test the fulfillment question and expose genuine change perpetuating capture and scope omissions. Retains the original as a local diagnostic and revises the chapter and current claim; no new result identity or proof.

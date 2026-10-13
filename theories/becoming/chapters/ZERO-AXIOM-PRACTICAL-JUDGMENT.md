@@ -1,6 +1,8 @@
 # 零公理实践判断：正在建立的根据 / Zero-axiom Practical judgment
 
-**当前中心 / Current focus:** [第17节](#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant)直接检验剩余中心主张，并纠正第16节增加的门槛：普遍理由不必在所有适当思考路径之外；关键是其有效性不能只由认可或动机的形成来认证。最强肯定论证仍须辩护实际生活质量对可回应位置的非排他实践意义，尚未取得零公理证明。 / The direct audit corrects an unnecessary externalist requirement and identifies the substantive first-ground claim. Universal authority remains unproved. The preceding 24 checked theorems / 35 declaration audits retain their exact instrumental scope; no new ethical proof is claimed.
+**当前中心（2026-10-13，P98）/ Current focus:** 按 Ren 的[聚焦](../../../sources/15-codex-theory-conversations/2026-10-13-universal-normative-grounding-focus.md)及[一元关系纠正](../../../sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md)，[第20节](#normative-differentiation-within-activity)先展开生活、理解、目的、评价与回应的共同形成。第18–19节保留为先前尝试，其“给回应位置理由”不能作为先分立事实、价值及行动者再寻找外部桥梁的强制架构。完整关系的规范说明仍待建立，既有条件成果保持。 / Section 20 reconstructs normative differentiation within one activity after Ren’s correction. Sections 18–19 remain earlier attempts; their analytic distinctions must not require independently constituted facts, values and agents plus an external bridge. The universal foundation remains open without declaring a necessary ontological gulf. [第21节](#selective-correction-and-formed-ends)进一步检验真实学习怎样维持或改变目的。 / Section 21 tests how genuine learning can maintain or revise ends. [检验修正](#fulfillment-test-counterreview)：完成引发改变仅作局部诊断，不能认证规范方向。 / The fulfillment question is narrowed to a local diagnostic, not certification of ethical direction.
+
+**前轮中心（2026-10-08）/ Previous focus:** [第17节](#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant)直接检验剩余中心主张，并纠正第16节增加的门槛：普遍理由不必在所有适当思考路径之外；关键是其有效性不能只由认可或动机的形成来认证。最强肯定论证仍须辩护实际生活质量对可回应位置的非排他实践意义，尚未取得零公理证明。 / The direct audit corrects an unnecessary externalist requirement and identifies the substantive first-ground claim. Universal authority remains unproved. The preceding 24 checked theorems / 35 declaration audits retain their exact instrumental scope; no new ethical proof is claimed.
 
 **最新方向 / Latest direction:** Ren 后续把规范结构明确放入认知与信息的生成／退化之中；见[第8节](#8-认知与信息中的规范结构--normative-structure-in-cognition-and-information)。此前受阻审计保留历史范围，新输入已提供具体研究方向，零公理完成仍未建立。 / The subsequent clarification supplies a concrete direction beyond the earlier impasse; zero-axiom completion remains unestablished.
 
@@ -592,3 +594,126 @@ The unresolved identification is that actual living quality has practical signif
 **未能完成剩余中心主张的证明。** 已纠正额外门槛、写清最强候选及其依赖，不能把这些审计结果称为普遍伦理完成。实际不关心不证明没有理由；实际学会关心也不证明新判断正确。已有 G0/J1–J4 路线继续作为公开前提下的完成成果，而不被改名为本会话要求的零公理结果。
 
 **This attempt does not prove the remaining central claim.** It corrects the target and exposes the first-ground dependency without declaring the thesis false or impossible. Existing Lean results remain checked results under their stated hypotheses. No new mathematical theorem, empirical confirmation or independent completion acceptance is claimed. The philosophical identification itself remains unproved; another conditional implementation theorem would not complete it.
+
+
+<a id="nonexclusive-response-ground"></a>
+
+## 18. 普遍根据：实际生活与有差异的回应 / Universal grounding through actual living and differentiated response
+
+2026-10-13，P98，AI 论证。复用第17节的第一根据审计、已纠正的评价者路线和共同脊柱的意义／理由区分，详见[同一研究§20](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#nonexclusive-response-ground)。本节提出并反审哲学候选，无新数学结论。
+
+先说明活动如何形成、维持或损伤生活，以及其中怎样形成能理解、能改变后续的回应位置。某个位置可以影响另一段生活，而不依赖它维持自身。这种不对称保留；普遍伦理不能以“损害最后一定返回自身”为根据，也不必先把受影响者纳入一个更大的自我。
+
+**本轮正面候选：实际生活中的实现、修复与损伤，可以构成支持或反对回应的根据；回应位置的能力、知识、代价和关系说明这种根据在何处、怎样适用。** 这是待辩护的规范识别，尚不是无需前提的定理。生活、理解和回应属于同一活动；这里的分析区分并不建立独立的价值所有者。
+
+论证的实质是解释回应为什么值得作出。照护能够恢复参与、解除负担或维持共同生活时，这些实际变化能够说明它的目的；“我先想照护”则可以说明行为怎样被选中。依此候选，准确辨认一项已经存在的损失，可以成为修订目的的根据，事先选择漠视也不自动取消它。该解释允许自我照护、共同照护和新形成的帮助具有共同根据，同时保留知识、身体权限、资源与承担的真实差异。
+
+但不能把所需结论藏进“值得”一词。要分别交代：发生的变化是什么；它为什么提供正面或反面根据；这个回应怎样实际涉及它；其他根据如何限定最后的判断。只给出第一和第三项还没有完成第二项，一项正面根据也没有自动完成第四项。
+
+**强对手**承认共同形成、真实损失及有效回应，却把理由的来源限制在自身形成的目的、组织延续或特殊承担内。它不一定二元，也不一定误解后果。我们的具体挑战是：这条边界究竟说明有限能力、合理自我维持与特殊责任，还是有根据地取消了边界外一切生活的实践意义？二者不能由同一个“只管自身”表述混在一起。没有回报只排除某类工具性根据；把它提升为没有任何理由，仍需解释排他标准。对方未解释成功也不独自证明我们正确。
+
+现有评价者路线的反审说明，连续性和无独立自我不能替代这个问题：组织闭合可以是真实关系，渐变容差可以预装普遍意义。我们现在直接比较“实际生活说明回应的意义”与“只有形成的关切／承担赋予实践意义”两种根据，而不再次假设边界无关后宣称已推出普遍性。
+
+普遍适用也不等于 `Unrestricted` 对任何形成、每一步、每个立场的全部断言，不等于一切持续都应支持，更不等于人人同责。共同脊柱已保留意义到理由的 A；本轮尚未消除其规范工作。休息、结束伤害性活动、有限承担和正当拒绝须保持可解释。痛苦解除是一个较清楚的检验入口，不能把更广的生生目标缩成痛苦最小化，也不能把任何选项或组织数量的增加当作正面内容已经成立。
+
+**下一项决定性工作**是同一目的修订的根据比较：准确理解实际生活变化，究竟是在辨认早已成立的回应理由，还是只有形成相应关切才使该变化对这个位置具有理由意义？比较必须保留无自身回报的情形、真实负担与介入限制，不能用产生了何种动机或保持了多少能力来判定哪种解释正确。普遍根据仍开放；已完成的明确前提路线和 P89 结项保持。
+
+**English.** Begin with one activity that differentiates living, understanding and effective response. A response may affect living on which the responder's persistence does not depend. The affirmative candidate locates the response's point in what it actually sustains, opens or repairs; capacity, access, burdens and relationships specify its bearing and limits. This supports an account of correcting ends, not only serving them. It remains a substantive identification under defense, not a definition or an axiom-free deduction.
+
+The strongest rival preserves the same relational history but grants practical address only through formed concern, organizational continuity or undertakings. It need not be dualist or factually mistaken. A boundary explaining limited duties does not yet explain the disappearance of every contributory reason, but challenging that disappearance alone does not prove our candidate. The corrected evaluator review rules out deriving universal concern merely from continuity, ownerlessness or an assumed tolerance principle.
+
+Universality here concerns relevant responses across positions; it is not an established equivalence with the full `Unrestricted` significance hypothesis, identical duties, required intervention, or inevitable compliance. Relief is a test of the wider living/generative account, not its replacement. The next inquiry must adjudicate recognition of a prior ground against concern that allegedly constitutes all practical address, within the same fully specified purpose revision. Existing checks and explicit-premise results retain their scope. The full study records primary-source limits and author counterreview; no new formal or independent verification is claimed.
+
+<a id="purpose-revision-and-prior-warrant"></a>
+
+## 19. 为什么值得改变目的 / Why a change of purpose can be warranted
+
+2026-10-13，P98 接续。具体比较与反审见[同一研究§21](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#purpose-revision-and-prior-warrant)。沿用第18节的同一关系展开；没有新增独立行动者本体或新的形式模型。
+
+生活中形成的相遇可以使一项真实负担进入理解和回应的范围，却尚未形成照护承诺。假定回应会解除该负担、保留受影响生活，并恢复受阻的交往或学习；说明知识、同意、手段、实际代价与其他影响，不预设自身回报。后来开始关心，可能同时包含对已有理由的认识、新动机的形成，以及信任和责任的创造。**认识与创造可以同时发生，不宜用它们作为整次转变的互斥解释。**
+
+由此修正上一节提出的检验：同样的目的改变、帮助及正确调整，可以得到不止一种根据解释；单看修订成功不能决定关切前已有理由。既有选择关切研究已经提出这一限制，本轮将它用于实际提出的比较，收回该比较能单独裁决的期待。
+
+**正面主张仍是：实际生活的改善，可以在关切形成以前，说明形成这种关切为何有一项实践优点。** 后来的承诺能够创造以后的责任，却不能只凭后来存在，就解释先前选择它的优点。真实改善说明照护的内容，也使只有帮助者满意而生活未改善的替代失去这一项优点。这支持一个不把理由全交给既有目的的解释，同时允许新关系产生新的善与责任。
+
+这项论证没有要求每个选择都有唯一的先在答案，也不把“未帮助”直接判作过错。有理由、总体应当、可责备、他人有权要求，是不同的判断。若承认原有理由，也可以因真实且充分的负担拒绝；该负担何以充分，需另行说明。本轮的批评对象是“尚未选择关心，所以改善绝无实践分量”的排他主张，而不是所有拒绝。
+
+**最强反审保留。** 实际改善也能解释一个新项目形成以后的成功；这未独自证明事前应当形成它。对手还可以承认帮助有评价上的优点，却否认它给这个位置改变目的的理由。我们的候选确实主张后一种实践支持力，不能用旁观赞赏替代；但该识别尚未得到普遍、零实质公理的奠基。目的转变没有填平这个缺口。
+
+因此继续推进的对象已更加确定：直接说明实际生活变化为什么对参与实现它的位置具有实践支持力，并评估真实的排除根据。还须覆盖生生的正面展开与合宜结束；缓解案例不能代替全域论证。原来的条件成果继续成立，本轮无新数学证明。
+
+**English.** A formed encounter can make a response available before concern or an undertaking exists. Later purpose revision can both recognize an earlier reason and create new relational reasons. Its behavioral success therefore does not independently discriminate the accounts. The previous proposal is narrowed accordingly, crediting the earlier elective-concern study.
+
+The affirmative claim is prospective: actual living improvement can support forming concern before concern exists. A later undertaking may create subsequent responsibilities without itself explaining the earlier merit of undertaking it. Recognizing a contributory reason does not settle the final choice, blame, or another's authority to demand compliance. The strongest rival can still explain successful action within an adopted project or grant evaluative merit while denying practical authority. Universal zero-substantive-axiom warrant therefore remains open; the next justification must address practical bearing itself, beyond observing another successful revision and beyond relief alone.
+
+<a id="normative-differentiation-within-activity"></a>
+
+## 20. 在同一活动中说明规范分化 / Normative differentiation within one activity
+
+2026-10-13，P98 接续。按[Ren 的纠正](../../../sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md)重构第18–19节的解释起点，详见[原研究§22](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#normative-differentiation-within-activity)。这是同一目标的实质修正，未增加形式公理或独立成果。
+
+先说明生活如何在交往、依存和环境变化中持续，一些变化如何形成受阻、感受、辨认、共同尝试和修复。目的由这些活动形成，又反过来组织注意、手段与后续；目的也可能使实际损伤不再进入选择。行动者与承受者是这里分化出的关系位置，知识与评价也是其中活动。不能先把关系抽离后的事实清单当作完备现实，再要求向它添加价值。
+
+**肯定候选：规范可以是同一活动对其生活展开的有根据的辨明、组织与修订；理由是其中可说明的实际关系在判断和回应中的表达。** 这是需要辩护的构成解释。它不把每种实际调节或内在目标都叫作正当，也不要求理由只有被表达时才成立。表达可以遗漏、歪曲或尚未形成；尚未被理解的受损关系仍实际存在。完整关系怎样支持相应判断，仍须逐项展开。
+
+一个具体入口是修复的完成。活动使受阻的生活重新能够参与、休息、交往或学习时，照护的方式、强度乃至是否继续，都可能随之改变。某项修复结束而原来受阻的生活得到接续，不能因修复组织缩小就被判作退化。相反，为保持照护者的地位而维持可以解除的依赖，即使使组织更稳定，也没有实现同一种修复。这里复用[既有完成研究](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-REALIZATION-ARGUMENT.md#5-valuable-response-does-not-warrant-creating-its-occasion)，不把这一区分记作新发现。
+
+这一入口的意义是：**生活怎样接续，可以改变活动的目的及其恰当结束条件；不能让已经形成的目的独占对整段活动的解释。** 修复关系在何种条件下成立、有何权限、留下什么负担，都在同一历史中说明。实际需要持续照护时，贸然退出会留下真实损伤；“结束”本身也不自动正确。
+
+检验还须分清三种情形。第一，描述只计算照护组织的持续，漏掉受阻生活；这是表示遗漏。第二，活动实际压制反馈、阻碍退出或维持依赖；这是关系组织中的问题，不能仅靠补全描述消除。第三，组织者准确知道本例相关后果，仍选择保留伤害性安排，且自身未必承受回报性损失；这是真正困难的规范对手。不能说第三种必定无知、必定自毁，或因同处一体就已经接受了共同善。
+
+因此，一元纠正既撤销了“必须跨越独立事实与价值”的预设，也提高了对肯定解释的要求：应在实际展开中说明修复、成全、封闭和损伤，而不是给中性图景另贴标签。**完整描述、理解准确与规范成立仍可分析地区分；它们的区分不建立三个独立世界。** 只有补全关系的解释确实支持所主张的判断，才完成相应奠基。
+
+当前完成的是起点重构及其具体检验。候选仍须对准确知情而维持伤害的安排给出实质的整体评价，并说明其中差异化回应的范围；不能只说“它属于整体”，也不能把每一处局部存续都要求永久维持。生生的正面展开、休息、完成和合宜结束属于同一研究范围。普遍零实质公理目标保持，已完成 G0/J 与 P89 保持。
+
+**进一步的具体判断。** 边界可以保护生活的展开：休息减少当下参与，隐私限制接近，协同操作可能需要持续支持。研究§22.6比较了同一限制在学习及替代形成以后怎样变化：仍有实际需要时保留支持，根据新能力调整协作，或阻断变化以维持排他控制，是不同的接续。历史上的必要性不能独自为后来全部限制作保证；声称有替代也不等于替代确已受到支持。边界的存在不自行裁决，须解释它在实际关系中使什么得以展开、什么受到阻碍。该比较没有假设所有选项增加都好，也没有证明每一项可解除的限制都应解除。
+
+**English.** Begin with activity differentiating living, sensing, understanding, purposes, evaluation and response. The proposal treats warranted practical articulation as constituted within these relations, without treating an abstracted inventory of neutral facts as ontologically complete. Reasons need not wait for recognition; actual loss and response relations can precede their expression. This is a constitutive candidate, not a definition certifying every endogenous target.
+
+Completed repair makes the distinction concrete: success can alter or end the responding organization while enabling affected living to continue. Preserving a removable dependence to preserve the organization is a different relational course. The inherited repair argument is credited. Three challenges remain distinct: omission in a representation, actual suppression of feedback or alternatives, and informed maintenance of harmful arrangements. The third cannot be dismissed as ignorance or inevitable self-destruction. The universal explanatory obligation remains, but no mandatory gulf between independently constituted fact, value and actor is installed as its starting point.
+
+Restrictions can also protect living: privacy, rest and supported cooperation need their actual relational explanation. Section 22.6 tests whether a restriction continues to supply needed support after learning and alternatives form, or instead obstructs them to preserve control. Neither historical necessity nor a bare claim of an available alternative settles present justification. No unconditional preference for more options or the removal of every removable restriction is established.
+
+<a id="one-theory-selection-and-normativity"></a>
+
+### 同一个理论中的选择、规范与修订 / Selection, normativity and revision in one theory
+
+按[Ren 的进一步纠正](../../../sources/15-codex-theory-conversations/2026-10-13-one-theory-normativity-meta-attractor.md)，本节“知情维持伤害”的情形应回到同一理论的已有组织解释中。关系形成活动，活动后果又改变后续组织的形成与选择；目的、证据的使用和评价标准也在其中形成、留存和改变。[Meta-attractor](../../meta-attractor/GENERATIVE-REGIMES.md)命名的是这一展开中，活动后果参与再生产选择其自身的条件、并能跨承载者接续的组织。它不是外加于生成或规范理论的独立机制世界。
+
+在破坏性情形中，局部成功可以加强选择同类目的的条件，使损伤虽被知道却不能改变实际方向。所谓“我只按这些目的行动”，于是成为需要在形成史中说明和检验的现实组织，而非一个不再需要解释的最终理由边界。这里没有把全部目的都视作被俘获；须辨认后果、选择、传递及纠正受到限制的实际关系。知情伤害本身不足以证明元吸引组织已经形成。
+
+现有[目标捕获结果](../results/records/target-capture.md)给出差异延续、目标传递和特定条件下只改状态被重新吸收的机制范围；[选择与登记修订](../results/records/selection-under-registration-revision.md)及[后果修订参考计划](../results/records/consequence-revised-reference-plan.md)则在各自条件下说明实际区分和修订怎样进入后续回应。它们是本理论已有的解释输入，不是本轮新证明，也没有单独证明所有组织都会陷入或脱离破坏性吸引。
+
+因此修正上一节赋予反例的角色：知情伤害检验“一元必然导致善意或遵循”的错误推论，检验纠正怎样失效；**它的实际持续不独自反驳规范根据成立。** 尚待解释的是同一活动的组织为什么发生这样的偏转、它怎样作用于实际生活，以及何种修订有根据且可实现。活动的产生、判断的成立和改变的实行有不同证据要求，但都是一个理论对同一展开的说明。
+
+**English.** Following Ren, meta-attraction names a recurrent organization within the same becoming: consequences reproduce the conditions selecting the activity across carriers. Purposes, evidential use and evaluative standards belong to that history. Target capture and the checked registration/reference-plan revisions supply existing, conditional explanations; they are not independent theoretical worlds or new proofs here. Informed harm does not itself establish meta-attraction, nor does persistent harmful conduct refute normative validity. It tests unwarranted inferences to inevitable goodwill and exposes an actual organization of failed correction. Formation, warrant and enacted revision remain distinguishable explanatory obligations of one theory.
+
+<a id="selective-correction-and-formed-ends"></a>
+
+## 21. 学习怎样可能强化俘获，又怎样参与改变目的 / Learning, capture and revision of ends
+
+2026-10-13，P98。具体论证与反审见[原研究§23](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#selective-correction-and-formed-ends)。继续同一支持活动的形成史：共同工作形成组织、目的与评价，活动后果又改变其知识、能力及选择条件。不能先把学习当作独立的善，再追问怎样装入组织。
+
+**有害安排可以包含真实学习。** 一个组织可能越来越准确地理解情况、改善手段，却把人们不再需要它视为必须修正的失败。如果这种局部成功又再生产选择同类目的的条件，学习便可能参与维持元吸引组织。它不必拒绝全部反馈，也不必所有人都被蒙蔽。这个概念案例尚不是对任何现实组织的经验判定。
+
+已有[经识的选择](../results/records/selection-through-registration.md)、[登记修订](../results/records/selection-under-registration-revision.md)和[参考计划修订](../results/records/consequence-revised-reference-plan.md)分别保留其准确范围：能够区分，不等于实际据此选择；方法对给定任务的成功，也没有自动说明目的正当。已有机制直接进入这项解释，不重复证明，不改写成伦理证明。
+
+肯定方向因而可以问得更具体：**当活动实现其所声称支持的生活时，这个结果能否改变它的任务、选择条件和结束条件？** 学习、恢复与新的参与能力可以使原来合理的介入需要改变。若目的永远只允许手段改变，而不允许生活的实际实现改变自身，便须检验这项限制在维护什么。修订可能是继续支持、转型、转交或结束，没有一个形式预先必然正确。
+
+**本句经下节检验后限定为局部诊断。** 任务、选择与结束条件发生真实变化，仍可能再生产有害组织；不能据本句单独认证规范方向或脱离俘获。
+
+这里信用[既有支持与接续论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#53-the-affirmative-argument-and-its-acquired-content)：工作的接续可以伴随当前控制者结束，规范应用仍保留G0/J及事实前提。真正尚需照护、替代未经支持、转型造成真实损失，都能改变判断。公开追求控制的目的也未必有工具性矛盾；批评它须说明实际关系与规范根据。目的经过选择形成，不因此自动错误；持续获胜同样不自行证明正当。
+
+**English.** Within one organizational history, accurate learning may improve means while reproducing a purpose that treats reduced dependence on itself as failure. Conditional registration and reference-plan repairs do not already establish ethical correction. The affirmative test is whether actual fulfillment can change tasks, selecting conditions and appropriate endings. It retains real continuing needs, supported alternatives, transition losses and the challenge of an openly controlling end. The inherited supported-succession argument keeps its explicit normative scope; neither a genealogy of purposes nor successful learning by itself completes universal grounding.
+
+<a id="fulfillment-test-counterreview"></a>
+
+### 对这项检验的修正 / Correction of the proposed test
+
+按Ren要求，已在[原研究§23.5](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#fulfillment-test-counterreview)用五种概念接续检验这句话。最强对照是：组织确实帮助原定群体，然后结束旧项目、改变选拔及任务，却通过新的依赖关系继续扩张控制。三个方面都真实改变了，元吸引组织仍可能延续。仅检验“能否改变”不能认证改变的方向。
+
+“所声称支持”也不能限定实际受影响的生活；“当实现了”不能把未完成时的损伤、失败和目的错误排除；持续满足真实需要的安排则不因没有改组而失当。文本允许修订也不等于实际存在可行路径。原句仍能帮助辨认完成被排除于组织判断的情形，但不能承担普遍判据。
+
+修正版是：**活动实际形成、维持或损伤的生活关系，怎样进入其目的、选择以及继续、改变或结束的根据？这些根据是否在具体可行的回应中起作用？** 需要分别说明实际变化、支持或反对安排的理由，以及可实行的回应与后果；这些是同一活动的分析方面。“有根据”仍须实质解释，不能写进定义便当作完成。新版是较充分的研究问题，尚非普遍规范奠基。
+
+**English.** Five conceptual cases narrow the original question to a local diagnostic. A regime can change its tasks, selecting conditions and endings after real fulfillment while reproducing control elsewhere. Declared beneficiaries omit actual affected living; waiting for completion misses earlier harm; warranted continuity need not entail reorganization. The revised inquiry asks how actual living relations enter the grounds of maintaining, changing or ending activity, and whether feasible responses enact those grounds. It remains an inquiry requiring substantive answers, not a universal certificate.

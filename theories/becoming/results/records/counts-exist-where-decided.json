@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T21:31:22+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个命题已定（Decided），是指它成立或不成立；判定程序（Decidable）把这一点作为数据给出，核心的逻辑不对每个命题假定它，已定不能被否证（not_not_decided）。一个数指示一个命题（Indicates），是指它为一而命题成立，或为零而命题不成立；一个数计列表中某规定成立的成员（Counts），是指它是这些指示之和；跨一列步，各步的计数相加（CountsAcross）。某数指示一个命题恰当该命题已定（indicates_iff_decided），列表的计数存在恰当每个成员已定（counts_iff_decided）；计数唯一（Counts.unique），不超过成员数（Counts.le_length）；判定程序给出的标记之和就是计数（counts_total、comings_counts、ceasings_counts）。计数之间的普查不用可判定性：一段步上，只要计数存在，终点成立的加其间不再成立的，等于起点成立的加其间开始成立的（Counts.over_stretch），段内各步也不要求已定：段内各步已定时它成立（Counts.over_stretch_decided），有限多个状态都已定不能被否证，而数的等式在其否定被否证处成立。跨一步亦然（Counts.across_step）；开始与不再成立的计数相差不超过成员数（CountsAcross.keep_pace）。成立者在各步被列出、每个一次时，列表本身给出普查，也不用可判定性（Counts.listed_across、Counts.listed_over_stretch）：计数是被计成员列表的长度（Counts.listing），成员相同、不重复的两个列表一样长（length_eq_of_same）。不用伦理前提，也不用 Lean 公理。",
     "en": "A proposition is decided (Decided) where it holds or fails; a decision procedure (Decidable) gives this as data, the core's logic does not assume it of every proposition, and that a proposition is decided cannot be refuted (not_not_decided). A number indicates a proposition (Indicates) where it is one and the proposition holds, or zero and it fails; a number counts the members of a list of which a determination holds (Counts) where it sums their indicators; across a list of steps, the counts at each step sum (CountsAcross). Something indicates a proposition exactly where the proposition is decided (indicates_iff_decided), and a count of a list exists exactly where each member is decided (counts_iff_decided); a count is one number (Counts.unique), at most the members (Counts.le_length), and where a procedure decides, its marks are the count (counts_total, comings_counts, ceasings_counts). The census between counts needs no decidedness: over a stretch, wherever the counts exist, those holding at the end with those that ceased are those holding at the start with those that came to be (Counts.over_stretch), with no decidedness even at the steps inside the stretch: decided there, the census holds (Counts.over_stretch_decided), that finitely many states are all decided cannot be refuted, and an equation of numbers holds wherever its failure is refuted. Likewise across one step (Counts.across_step), and comings and ceasings differ by at most the members (CountsAcross.keep_pace). Where what holds is listed at each step, each member once, the lists give the census with no decidedness either (Counts.listed_across, Counts.listed_over_stretch): a count is the length of a list of the members counted (Counts.listing), and two lists without repetition with the same members are equally long (length_eq_of_same). No ethical premise and no Lean axiom is used."
@@ -219,7 +219,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -313,8 +313,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

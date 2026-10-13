@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T21:31:22+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "有限家族中，没有东西不再成立时，每个成员至多开始成立一次（comes_once）；没有东西开始成立时，每个成员至多不再成立一次（ceases_once_of）。所以一段中看到成员开始成立、或不再成立的不同步数不多于成员数（coming_steps_within、ceasing_steps_within）。由此，开始成立复现时，从每一步起都有一段，其中有东西不再成立不能被否证（Recurs.ceasing_within），不再成立永不终止：从某步起再没有不再成立被否证（Recurs.ceasing_not_stopping）；反之亦然（Recurs.coming_within、Recurs.coming_not_stopping）。不用可判定性。那一段的状态已定时，那一步被找到（Recurs.ceasing_found、Recurs.coming_found）；从某步起已定时，开始成立复现恰当不再成立复现（coming_recurs_iff_decided），不要判定程序，而 coming_recurs_iff 在每一步都要求判定程序。依存网中形成有限多时亦然（Web.unceasing_iff_decided）。有限世界中，生起复现时止息永不终止，反之亦然，不用可判定性（World.ceasing_not_stopping、World.arising_not_stopping）；从某步起已定时生起复现恰当止息复现（World.arising_iff_ceasing_decided），World.arising_iff_ceasing 是由判定程序从第一步起已定的情形（World.arising_iff_ceasing_of_decidable）；有一个列表从某步起覆盖活跃者时亦然，已定只问列表的成员（World.ceasing_not_stopping_covered、World.arising_not_stopping_covered、World.arising_iff_ceasing_covered）。不用伦理前提，也不用 Lean 公理。",
     "en": "In a finite family, while nothing of it ceases each member comes to be at most once (comes_once), and while nothing comes to be each ceases at most once (ceases_once_of); so no more steps of a stretch see a member come to be, or cease, than the family has members (coming_steps_within, ceasing_steps_within). Hence, where coming to be recurs, from any step there is a stretch in which something ceasing cannot be refuted (Recurs.ceasing_within), and ceasing never stops for good: that from some step on nothing ceases is refuted (Recurs.ceasing_not_stopping); and conversely (Recurs.coming_within, Recurs.coming_not_stopping). No decidedness is used. With the states of that stretch decided, the step is found (Recurs.ceasing_found, Recurs.coming_found); decided from some step on, coming to be recurs exactly where ceasing does (coming_recurs_iff_decided), with no decision procedure, where coming_recurs_iff asks one at every step. The same holds of a web with finitely many formations (Web.unceasing_iff_decided). In a finite world, where arising recurs ceasing never stops for good, and conversely, with no decidedness (World.ceasing_not_stopping, World.arising_not_stopping); decided from some step on, arising recurs exactly when ceasing does (World.arising_iff_ceasing_decided), World.arising_iff_ceasing being the case decided by a procedure from the first step (World.arising_iff_ceasing_of_decidable); with a list covering what is active from some step on the same holds, decidedness asked only of the list's members (World.ceasing_not_stopping_covered, World.arising_not_stopping_covered, World.arising_iff_ceasing_covered). No ethical premise and no Lean axiom is used."
@@ -214,7 +214,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md",
@@ -303,8 +303,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

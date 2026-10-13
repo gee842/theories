@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T19:09:09+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "在一个形成区域之内，水平 l 接纳水平 l′ 在那里接纳的每个形成（Web.AdmitsWithin）；在区域之外有损失（Web.LosesBeyond），是指区域外有一个形成被 l′ 接纳而不被 l 接纳。包含就是每步在整体之内的接纳（Web.includes_iff_within_whole）。在一个区域之内成立的，在它之内的每个区域之内也成立（Web.AdmitsWithin.narrow）；在一个区域之外的损失，在它之内的每个区域之外也是损失（Web.LosesBeyond.narrow）：区域越小，其外越多。整体之外什么都没有（Web.not_losesBeyond_whole），在整体之内成立的，在任何区域之外都不留下损失（Web.AdmitsWithin.not_losesBeyond）。在单个形成之内成立的，就是它自身在 l′ 接纳它之处被 l 接纳（Web.admitsWithin_self）。Clearing 中扣留清除者的部分（Clearing.clearerPart）后的水平存在（Clearing.withheld，见 four-cases-of-a-part）。区域 Clearing.alongDependence 由清除者与供给它唯一所需条件（资源）的来源组成；它与 Clearing.fedBy_source 沿供给找到的形成一致（逐项对照，不是定理）。每步清除者都活跃且被支持，并且在这个区域之内，有它的水平接纳无它的水平所接纳的每个形成；从第二步起，在区域之外，栖居者无它时被接纳而有它时不被接纳（Clearing.loses_beyond）。所以一个部分可以每步都延续、在其依存之内不关闭任何东西，同时关闭其依存之外的东西；以整体为区域时，没有之外的损失可言（Web.not_losesBeyond_whole）。不用伦理前提，也不用 Lean 公理。P56：包含恰是同时在每一步、每个区域内的接纳（Web.includes_iff_within_every）：区域的比较以区域为输入，整体的比较不以任何边界为输入。",
     "en": "Within a region of formations, levels l admit every formation the levels l′ admit there (Web.AdmitsWithin); there is loss beyond the region (Web.LosesBeyond) when some formation outside it is admitted by l′ and not by l. Inclusion is admission within the whole at every step (Web.includes_iff_within_whole). What holds within a region holds within every region inside it (Web.AdmitsWithin.narrow); what is lost beyond a region is lost beyond every region inside it (Web.LosesBeyond.narrow): the smaller the region, the more lies beyond it. Nothing lies beyond the whole (Web.not_losesBeyond_whole), and what holds within the whole leaves nothing lost beyond any region (Web.AdmitsWithin.not_losesBeyond). Within one formation, what holds is its own admission by l wherever l′ admits it (Web.admitsWithin_self). In Clearing the levels without the clearer's part (Clearing.clearerPart) exist (Clearing.withheld, see four-cases-of-a-part). The region Clearing.alongDependence is the clearer with the source that feeds the one condition it requires, its resource; it matches the formations Clearing.fedBy_source finds along feeding (checked by inspection, not by a theorem). At every step the clearer is active and supported, and within this region the levels with its part admit every formation the levels without it admit; from step two on, beyond the region, the dweller is admitted without the clearer's part and not with it (Clearing.loses_beyond). So a part can continue at every step and close nothing within its dependence while closing what lies beyond it; with the whole as the region there is no loss beyond to speak of (Web.not_losesBeyond_whole). No ethical premise and no Lean axiom is used. P56: inclusion is exactly admission within every region at every step at once (Web.includes_iff_within_every): a region's comparison takes the region as an input, while the whole's takes no boundary as an input."
@@ -231,7 +231,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -428,8 +428,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

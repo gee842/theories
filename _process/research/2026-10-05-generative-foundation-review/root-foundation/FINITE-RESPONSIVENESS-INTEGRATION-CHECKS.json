@@ -1,0 +1,146 @@
+{
+  "scope": "P96 normative FR candidate, affirmative argument and author counterreview; no new Lean, empirical validation or independent acceptance",
+  "own_result": "finite-aggregation-within-restorable-basic-losses",
+  "earlier_content_preserved": {
+    "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md": [
+      [
+        "insert",
+        232,
+        232,
+        232,
+        256
+      ]
+    ],
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md": [
+      [
+        "insert",
+        103,
+        103,
+        103,
+        186
+      ]
+    ],
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md": [
+      [
+        "insert",
+        1,
+        1,
+        1,
+        7
+      ]
+    ]
+  },
+  "other_chain_entries_preserved": 93,
+  "other_rendered_bytes_preserved": true,
+  "discovery_inventory_preserved": true,
+  "new_local_links_and_anchors_checked": true,
+  "unrelated_chain_errors": [
+    "Unversioned source: theories/becoming/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+    "Unversioned source: theories/becoming/results/records/transition-grouping-word-partition.md"
+  ],
+  "unrelated_chain_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/becoming/chapters/CLAIMS.md",
+      "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
+      "theories/becoming/chapters/HUIGEN.md",
+      "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
+      "theories/becoming/chapters/NONDUAL-METHOD.md",
+      "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/stock-derivation-verification.json",
+      "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "theories/becoming/chapters/KNOWLEDGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+      "theories/becoming/README.md",
+      "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/becoming/results/ROADMAP.md",
+      "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/becoming/chapters/GENERATED-LOGIC.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md",
+      "experiments/market-generativity/meta-attractor/correction-dependence-verification.json",
+      "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "experiments/market-generativity/meta-attractor/correction-commitment-verification.json",
+      "theories/becoming/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/becoming/results/records/classification-robust-generative-comparison.json",
+      "theories/becoming/results/records/classification-robust-generative-comparison.md",
+      "theories/becoming/results/records/market-partial-correction-boundary.md",
+      "theories/becoming/chapters/BECOMING-FOUNDATION.md",
+      "theories/becoming/results/records/binding-preserving-substitution.json",
+      "theories/becoming/chapters/THEORY-OF-BECOMING.md",
+      "theories/becoming/results/records/constitutive-binding-assessment.json",
+      "theories/becoming/results/records/learned-procedure-transmission.json"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P13-P14-P12B-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P15-P16-P16B-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P16C-P17-P18-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P18B-P23-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P23C-P24-P25-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P25B-P29-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P30-P31-P29B-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P32-P34-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P34B-P38C-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P7-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P8-P9-P7B-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P9B-P10-P11-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-R1-R2-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-PLAN.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GROUNDING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/PART-II-INVENTORY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WUMING-BOUNDARY-PLAN.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
+      "theories/becoming/chapters/G0-WARRANT.md",
+      "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "canonical_validation": {
+    "status": "passed",
+    "commands": [
+      "make research-render",
+      "make research-check"
+    ],
+    "records": 199,
+    "errors": [],
+    "source_drift": []
+  },
+  "checked_at_utc": "2026-10-13T11:51:56.558383+00:00",
+  "authored_sources_sha256": {
+    "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md": "bf72d942a2c7c354f65e17604bcbd5ab83c5103dc87e69275b53c097ef59424f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md": "c0116eed5c62d0db4eea264c4ce06f9fed2f42d5649fb7243287a5c7b1acc82c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md": "484e08af02d2e1640fd82e2bde51f8932e90757d79255c7c01760c6611ee25d9"
+  }
+}

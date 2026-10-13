@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-11T11:36:28+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设 r 是过程 P 的一个运行。相对于确定性，直到某步的记录把动作 a 在配置 s 的结果固定为 u，是指容许 r 在该步之前每一步的每个确定过程都把 a 在 s 送到 u（Run.Fixes）。运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处（Run.fixes_of_takes）；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论什么被识：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步（retarget、retarget_determined、Run.stepsOf_retarget、Run.not_fixes_of_untaken）。所以在配置返回之处，另一个动作的结果被固定（Run.fixes_on_return）；配置永不返回的运行，在经过的每个配置只固定它所取的动作（Run.not_fixes_other_of_new）。保留其所经配置与动作之历史的过程（keepHistory，Law.withHistory 带动作的对应）中，历史每步长一，所以每步都是新的（keepHistory_length、keepHistory_new），确定性保持（keepHistory_determined），关于自己的动作除了所做的什么都不固定（keepHistory_fixes_nothing_else）。经投影 π 读：运行取过 a 于投影为 k 的配置，经投影的记录固定其结果（Run.fixesThrough_of_takes）；P 的步经 π 分解为确定过程 Q 时（FactorsThrough），所固定的结果就是投影为 k 的每个配置经 π 的结果，无论运行是否经过它（Run.generalizes）；有限多个投影配置之内，投影从每一步起都返回（Run.projection_returns，revisits_from 的实例）。Confound 中配置是一个隐藏位与一个结果，每步翻转隐藏位、把结果设为步前的隐藏位，动作不造成差别（Confound.move_idle）；只读结果时，直到第二步的记录固定左得假、右得真（Confound.misattributes）；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都容许投影各步（Confound.confounded）；在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步（Confound.varied_refutes）。不用 Lean 公理。",
     "en": "Let r be a run of a process P. Relative to determinacy, the record up to a step fixes the outcome of move a at configuration s to u when every determined process admitting each step of r before it sends a at s to u (Run.Fixes). Once the run has taken a at s, the record fixes it to where the run went (Run.fixes_of_takes); where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run (retarget, retarget_determined, Run.stepsOf_retarget, Run.not_fixes_of_untaken). So where the configuration returns, another move's outcome is fixed (Run.fixes_on_return), and a run whose configurations never return fixes, at each configuration it passes, no move other than the one it takes (Run.not_fixes_other_of_new). In the process keeping the history of configurations and moves passed through (keepHistory, the counterpart with moves of Law.withHistory) the past grows by one at each step, so every step is new (keepHistory_length, keepHistory_new), determinacy is kept (keepHistory_determined), and nothing about one's own acts but what one did is fixed (keepHistory_fixes_nothing_else). Read through a projection π: once the run has taken a at a configuration projecting to k, the record so read fixes its outcome (Run.fixesThrough_of_takes); where P's step factors through π into a determined process (FactorsThrough), the fixed outcome is the outcome, read through π, at every configuration projecting to k, passed by the run or not (Run.generalizes); within finitely many projected configurations the projection returns from every step on (Run.projection_returns, an instance of revisits_from). In Confound the configuration is a hidden bit and an outcome, each step flips the hidden bit and sets the outcome to the hidden bit before the step, and the move makes no difference (Confound.move_idle); read through the outcome, the record up to the second step fixes left to false and right to true (Confound.misattributes); with the moves in step with the hidden bit, the determined model in which the move decides the outcome admits the projected steps at every step (Confound.confounded); moving left again where the hidden bit differs from the first step, no determined process admits the projected steps up to the fifth (Confound.varied_refutes). No Lean axiom is used."
@@ -270,7 +270,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -407,8 +407,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

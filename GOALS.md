@@ -170,15 +170,15 @@ Directions preserve authorization and scope; completion status is obtained from 
 <a id="scientific-inquiry-session"></a>
 ## 科学探究基础会话 / Scientific inquiry foundation session
 
-**Scope / 范围:** Ren 明确指令继续并完成必要科学基础的本会话；不自动接管其他会话工作。 / This session explicitly directed by Ren to pursue and finish a necessary scientific foundation; other sessions are not automatically assigned here.
+**Scope / 范围:** Ren 指令本会话持续检验科学基础，把完整核心必要性保留为可修正的强假说；不自动接管其他会话。 / Ren directs this session to continue testing scientific foundations, retaining full-core necessity as a revisable strong hypothesis; other sessions are not automatically assigned here.
 
-从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。 / Establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core.
+从独立说明的科学成就及同一展开的真实关系，检验哪些核心承诺不可缺少、哪些只是特定表示或解释任务的条件，以及完整核心的必要性是否成立；不预定正面结论，不以接受核心定义充分性。 / From independently stated scientific achievements and actual relationships within one unfolding, test which core commitments are indispensable, which condition a particular representation or explanatory task, and whether necessity extends to the full core; do not predetermine a positive verdict or define adequacy as accepting the core.
 
-**Premises / 前提:** 用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。 / The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality.
+**Premises / 前提:** 按2026-10-13纠正，完整理论的必要性是待检验结论，不是证明前提。已完成局部定理和反例复用；科学性、正确性、任务充分性、必要性及伦理普遍性分别说明。 / Under the 13 October correction, full-theory necessity is a hypothesis to test, not a proof premise. Reuse completed local theorems and counterexamples; distinguish scientific status, correctness, task adequacy, necessity and ethical universality.
 
-**Completion criterion / 完成条件:** 须完成所提核心与科学成就的独立必要性对应；局部统计或生成定理不能独自宣布整体完成。 / Complete the independent necessity correspondence between the proposed core and scientific achievements; local statistical or generative theorems alone do not complete the whole target.
+**Completion criterion / 完成条件:** 在明示科学范围内完成核心与成就的独立对应和必要性评估；允许证据支持完整核心、只有部分核心具有必要性，或需要修正承诺。局部结果、遗漏关系的弱描述及缺少证明本身都不足以宣布整体完成或整体失败。 / Complete an independent correspondence and necessity assessment within an explicit scientific scope; allow evidence to support full-core necessity, necessity of only part of the core, or revision of a commitment. Local results, weak descriptions omitting relationships, and absence of proof alone establish neither whole-target completion nor failure.
 
-[2026-10-08-knowledge-content-continuation](sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) · [SCIENTIFIC-PHILOSOPHY](theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md)
+[2026-10-08-knowledge-content-continuation](sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) · [SCIENTIFIC-PHILOSOPHY](theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md) · [2026-10-13-scientific-foundation-as-testable-hypothesis](sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md)
 
 [finite-fallible-inquiry-necessity](theories/becoming/results/records/finite-fallible-inquiry-necessity.md): `recorded-checked`
 
@@ -286,13 +286,13 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Scope / 范围:** Ren 明确授权的慧根研究会话及接续；不是目录维护任务。 / Ren’s explicitly authorized wisdom-root inquiry and its continuations; not a requirement for catalogue maintenance.
 
-说明核心作为智慧之根的必要关系与实际生成。 / Explain the necessary relations and actual formation involved in the core as the root of wisdom.
+完成 core 与所讨论全部智慧的必要关系，证明这些关系不可省略，从而确立整个 core 的根基地位；全部完成后提交 main。 / Complete the necessary relations between the core and all wisdom under discussion, establish their indispensability and the foundational status of the whole core, then commit the completed work to main.
 
-**Premises / 前提:** 理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 Ren于2026-10-08进一步明确：道德依赖本理论普遍原则，因为道德判断becoming而模型能够判断becoming；沿显式G0/J/E正面展开，不以Dancy认可为门槛。 / Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent.
+**Premises / 前提:** 理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 Ren于2026-10-08进一步明确：道德依赖本理论普遍原则，因为道德判断becoming而模型能够判断becoming；沿显式G0/J/E正面展开，不以Dancy认可为门槛。 2026-10-13 Ren 明确本研究属于一个相连理论：先检查其他分支是否已供应所缺前提与证明，在共享定义上连接；局部文件的缺口不直接等于整个理论的缺口。 / Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent. On 13 October 2026 Ren clarifies that this is one connected theory: first inspect other branches for the needed premises and proofs, then compose shared definitions; a local file’s gap is not automatically a gap in the whole theory.
 
-**Completion criterion / 完成条件:** 完整目标状态以开放成果记录为准；有限智慧、判断和风险成果直接复用。 / The open result record states the full target; reuse existing bounded wisdom, judgment and risk results.
+**Completion criterion / 完成条件:** 以全部目标范围内的必要关系和整个 core 根基地位的实质证据审计为准，不以局部应用、形式可表示性或目录检查代替。复用已完成成果，保留公开前提；完成后将本任务的已验证改动提交 main，保护并行工作。此前实际形成研究保持其独立范围，不将完整充分性或零前提元逻辑追加为当前门槛。 / Require a substantive evidence audit of necessity across the full intended scope and the foundational status of the whole core, not local applications, representability or metadata checks. Reuse completed results and disclose premises; after completion commit this task’s verified changes to main while protecting concurrent work. Earlier formation work retains its scope; full sufficiency and premise-free metalogic are not added as current gates.
 
-[2026-10-08-wisdom-paper-direction](sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md) · [CORE-CONSTRAINT-AND-WISDOM](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+[2026-10-08-wisdom-paper-direction](sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md) · [CORE-CONSTRAINT-AND-WISDOM](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) · [2026-10-13-wisdom-necessity-completion-and-main](sources/15-codex-theory-conversations/2026-10-13-wisdom-necessity-completion-and-main.md) · [2026-10-13-wisdom-within-one-theory](sources/15-codex-theory-conversations/2026-10-13-wisdom-within-one-theory.md)
 
 [wisdom-root](theories/becoming/results/records/wisdom-root.md): `open`
 
@@ -301,13 +301,13 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Scope / 范围:** Ren 后来明确重新授权的会话范围；不撤销已完成 G0/J 路线。 / The session explicitly reauthorized later by Ren; it does not revoke completed G0/J work.
 
-检验更强的普遍实践权威根据。 / Investigate the stronger ground of universal practical authority.
+专注普遍规范奠基：从同一活动中生活、理解、目的、评价与回应的分化，说明修复、开启、限制与结束的规范根据及适用范围，不预设独立事实、价值和行动者再求外部连接。 / Focus on universal normative grounding: explain grounds and scope of repair, opening, restriction and ending through living, understanding, purposes, evaluation and response differentiating within one activity, without presupposing separate facts, values and agents plus an external connection.
 
-**Premises / 前提:** 保留整体关系与真实对手，不能用弱表示中的自由谓词开关否定完整理论。 / Retain whole relations and substantive rivals; freely toggled predicates in a weaker representation do not refute the fuller theory.
+**Premises / 前提:** 保留整体关系与真实对手，不能用弱表示中的自由谓词开关否定完整理论。 组织、目的、认识、规范与meta-attractor属于同一个理论，分章及证明范围不建立独立本体。 / Retain whole relations and substantive rivals; freely toggled predicates in a weaker representation do not refute the fuller theory. Organization, purposes, knowing, normativity and meta-attraction belong to one theory; chapter and proof scopes do not establish separate ontologies.
 
 **Completion criterion / 完成条件:** 完成标准取自原指示和当前目标；已有局部证明不得冒充中心主张完成。 / Use the original directive and current target; local proofs cannot substitute for the central result.
 
-[2026-10-08-zero-axiom-practical-judgment](sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md) · [ZERO-AXIOM-PRACTICAL-JUDGMENT](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
+[2026-10-08-zero-axiom-practical-judgment](sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md) · [ZERO-AXIOM-PRACTICAL-JUDGMENT](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) · [2026-10-13-universal-normative-grounding-focus](sources/15-codex-theory-conversations/2026-10-13-universal-normative-grounding-focus.md) · [2026-10-13-nondual-normative-grounding-correction](sources/15-codex-theory-conversations/2026-10-13-nondual-normative-grounding-correction.md) · [2026-10-13-one-theory-normativity-meta-attractor](sources/15-codex-theory-conversations/2026-10-13-one-theory-normativity-meta-attractor.md)
 
 [universal-practical-warrant](theories/becoming/results/records/universal-practical-warrant.md): `open`
 

@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一步在一个条件处所显示的是它的通过（Passage、Flow.passage）：步前与步后的层级，以及参与者从它取用与给它的总量。一步在一个家族上显示一个模式（Flow.Realizes），即其成员的通过依次排列、取用者的个数（Flow.takers）以及是否有参与者交换（Flow.ExchangesAt）。每一步都服从每步之律（Flow.Realizes.every）：凡有所取，取用者至少一个且至多所取之量，凡有所取或所给，就有交换。一个模式恰在服从每步之律时，由某个世界跨某步在某个家族上显示，每个参与者列出一次（OneStep.every_iff）；在被平衡的家族上，恰在每个通过还各自平衡时（OneStep.balance_iff）；在耗减的家族上，恰在总量下降至少取用者之数时（OneStep.runsDown_iff）；在跨此步封闭的家族上，恰在除非对家族有取或给否则无交换时（OneStep.closed_iff）；两个条件都有时，恰在两条律都成立时（OneStep.runsDownClosed_iff）。不论取用者之数，一个家族的通过恰在平衡且凡有所取总量至少降一时能够耗减（OneStep.runsDown_passages_iff）。所以模式的一个性质在条件成立的每一步成立，恰在它对服从该条件之律的每个模式成立时（OneStep.laws），这是 counting_laws 的对应。跨一个家族的每一步，只多一条律：通过前后相接，每步之后所立就是下一步之前所立（OneStep.Chained）；一串模式恰在通过相接且每步服从该条件之律时由某个世界显示（OneStep.run_every_iff、OneStep.run_balance_iff、OneStep.run_runsDown_iff、OneStep.run_closed_iff、OneStep.run_runsDownClosed_iff；OneStep.run_laws），这是 tally_iff_counted 的对应。一个见证世界服务每个模式（OneStep.Witness，经 World.ofRoles 读成脊柱的世界）。把给予者加入模式（P79b）：给予家族的东西有给予它的关系项，有所给之处给予者至少一个，至多为所给之数（Flow.sign_replenishment_le_renewers、Flow.renewers_le_replenishment、OneStep.Givers）；在无条件、平衡与封闭之下这就是全部新规律，耗减恰再加每个给予者都取，给予者不多于取用者（Flow.DissipatesOn.renewers_le_takers；OneStep.every_givers_iff、OneStep.balance_givers_iff、OneStep.closed_givers_iff、OneStep.runsDown_givers_iff、OneStep.runsDownClosed_givers_iff、OneStep.laws_givers）。该步的容量恰添所给不超过容量乘给予者数（Flow.CapacityAt.replenishment_le；OneStep.every_capacity_iff 及其四个同伴）；该步只有活跃者给予、只从所汲取者取，不添一步所显示的规律（OneStep.every_active_iff 及其四个同伴）。带给予者的一个家族上的运行：经过彼此相接，每步遵守带给予者的规律（OneStep.run_every_givers_iff 及其四个同伴）。不加前提。",
     "en": "What the step from t shows of a condition is its passage (Passage, Flow.passage): its level before and after, and what the relata taking part take from it and give to it. A step shows a pattern on a family (Flow.Realizes): the passages of its members in order, how many relata take from it (Flow.takers), and whether something taking part exchanges (Flow.ExchangesAt). Every step obeys the law of every step (Flow.Realizes.every): where anything is taken from a family, the relata taking are at least one and at most what is taken, and where anything is taken or given something exchanges. A pattern is shown by some world across some step on some family, listing each relatum taking part once, exactly when it obeys the law of every step (OneStep.every_iff); on a family balanced on, exactly when each passage also balances (OneStep.balance_iff); on a family running down, exactly when moreover the total falls by at least the relata taking (OneStep.runsDown_iff); on a family closed across the step, exactly when moreover nothing exchanges unless something is taken from or given to the family (OneStep.closed_iff); with both conditions, with both laws (OneStep.runsDownClosed_iff). Whatever the count, a family's passages can run down exactly when they balance and the total falls by one wherever anything is taken (OneStep.runsDown_passages_iff). So a property of patterns holds of every step where a condition holds exactly when it holds of every pattern obeying that condition's law (OneStep.laws), the counterpart of counting_laws. Across every step of one family there is one more law: the passages follow one another, what stands after each step being what stands before the next (OneStep.Chained); a run of patterns is shown by some world exactly when its passages follow one another and each step obeys the condition's law (OneStep.run_every_iff, OneStep.run_balance_iff, OneStep.run_runsDown_iff, OneStep.run_closed_iff, OneStep.run_runsDownClosed_iff; OneStep.run_laws), the counterpart of tally_iff_counted. One witness world serves every pattern (OneStep.Witness, read as a world of the spine through World.ofRoles). With the givers in the pattern (P79b): something given to a family has a relatum giving it, the givers numbering at least one wherever anything is given and at most what is given (Flow.sign_replenishment_le_renewers, Flow.renewers_le_replenishment, OneStep.Givers); that is the whole new law under no condition, balance and closure, and running down adds exactly that every giver takes, the givers at most the takers (Flow.DissipatesOn.renewers_le_takers; OneStep.every_givers_iff, OneStep.balance_givers_iff, OneStep.closed_givers_iff, OneStep.runsDown_givers_iff, OneStep.runsDownClosed_givers_iff, OneStep.laws_givers). Capacity at the step adds exactly that what is given is at most capacity times the givers (Flow.CapacityAt.replenishment_le; OneStep.every_capacity_iff and its four companions); only active relata giving and taking only from what is drawn on, at the step, add no law that one step shows (OneStep.every_active_iff and its four companions). Runs on one family with givers: the passages follow one another and each step obeys its law with givers (OneStep.run_every_givers_iff and its four companions). No premise."
@@ -410,7 +410,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -483,8 +483,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

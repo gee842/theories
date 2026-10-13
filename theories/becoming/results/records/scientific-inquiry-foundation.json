@@ -8,20 +8,20 @@
   "kind": "target",
   "status": "open",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-08T13:59:58.351644+00:00",
+  "reviewed_at_utc": "2026-10-13T13:26:28.092232+00:00",
   "claim": {
-    "zh": "待完成：从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。",
-    "en": "Open: establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core."
+    "zh": "待检验：完整所提核心是否在所声明科学范围内不可缺少。从独立科学成就与同一展开的真实关系评估哪些承诺必要、哪些只是特定描述的条件；允许完整成立、部分必要或修正，不预定正面结论。",
+    "en": "To test: whether the full proposed core is indispensable across the stated scientific scope. From independent achievements and actual relationships within one unfolding, assess which commitments are necessary and which condition particular descriptions; allow full necessity, partial necessity or revision, without predetermining a positive verdict."
   },
   "hypotheses": [
     {
-      "zh": "用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。",
-      "en": "The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality."
+      "zh": "Ren 2026-10-13明确支持按可修正假说持续检验。完整理论必要性不是证明前提；当前对话持续工作，不设自动安排。局部成果与伦理路线原范围保持。",
+      "en": "Ren explicitly supports continuing as a revisable-hypothesis test on 13 October 2026. Full-theory necessity is not a proof premise; continue in the current conversation without automation. Preserve the scopes of local results and the ethical route."
     }
   ],
   "correspondence": {
-    "zh": "逐项说明核心承诺与科学问题的连接；表示差异不自动否定共同基础，局部必要性也不自动证明完整基础。",
-    "en": "Map each core commitment to a scientific question; differences of representation do not refute a common foundation, and local necessity does not prove the whole foundation."
+    "zh": "逐项连接独立科学成就与共同脊柱的辨别、识、检验、推广、辨识及结构重构结果；区分条件规律、实际对应与完整核心的不可缺少性。不同表示可保存同一关系，完整检验族不等于有限实验记录。 P94把任务成功、描述充分性与前提必要性分开；原生平衡条件可由共同未计入交换放宽，遗漏关系的描述不被当作否定完整账户。 P97以一手计量与实验资料核查实际根据：所需限制随任务而定，不要求先穷尽装置；尚无这些案例到 Flow 的形式对应。 P101固定阶段接续任务：相同完成序列会遗漏同一到达条件下保留的替代；保留条件的历史表示可以充分。路径存在、实际指令执行及可实施测试分别对应，不从单个实验推出全模态范围。 P104已把截止前交换顺序接到可错界；及时路线不是充分控制，实际命令配对仍需根据。 P105把已成的因果可及界接到科学性评估，分开真伪、证据强度与实际纠错；这是哲学解释，非新的形式推出。",
+    "en": "Map independent scientific achievements to the shared spine’s discrimination, registration, testing, generalization, identification and structural reconstruction results; distinguish conditional law, actual correspondence and full-core indispensability. Different representations can preserve a relation; the complete test family is not a finite experimental record. P94 separates task success, descriptive adequacy and premise necessity; common residual exchange weakens native balance, and an omitted relation is not treated as denial of the fuller account. P97 assesses actual warrant using primary metrological and experimental sources: required restrictions depend on the task, without first exhausting the device; no formal correspondence from those cases to Flow is claimed. P101 fixes a stage-relative continuation task: equal completed sequences may omit alternatives retained at the same reached condition; contextualized histories can be adequate. Existence of a path, actual command execution and implementable testing have separate correspondence obligations; one experiment does not supply the full modal scope. P104 connects pre-deadline exchange order to the fallible bound; timely routes are not sufficient control and actual command pairing still needs warrant. P105 connects completed causal-access bounds to assessment of scientific standing, separating truth, evidential strength and operative correction; this is interpretation, not a new formal deduction."
   },
   "canonical_source": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
   "aliases": [],
@@ -30,8 +30,120 @@
       "id": "finite-fallible-inquiry-necessity",
       "relation": "interpretive",
       "detail": {
-        "zh": "已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。",
-        "en": "The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished."
+        "zh": "P92接到原生关系的有限界保持；P94用固定任务检验平衡及补计余项，并推广定性不可辨别到共同未计入交换。此输入区分机制描述前提与科学必要性。",
+        "en": "P92’s finite bound through native relations is retained; P94 fixes the task to test balance and residual accounting and generalizes qualitative blindness to common unaccounted exchange. This input distinguishes mechanism-description premises from scientific necessity."
+      }
+    },
+    {
+      "id": "testing-within-registration",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "识、否证与共同回应给出实际使用的接口；观察关系和实际校准仍须对应。",
+        "en": "Registration, refutation and common response supply the use interface; observation and actual calibration retain correspondence obligations."
+      }
+    },
+    {
+      "id": "experiment-needs-return",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "实验与转移的条件保留，不把每个局部科学成就改成全形成史的解释。",
+        "en": "Retain conditions of experimentation and transfer without requiring every local achievement to explain its whole formation history."
+      }
+    },
+    {
+      "id": "learning-by-refutation",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用归纳的负面与正面结果；不再把局部学习机制登记为待建。",
+        "en": "Reuse negative and positive induction results; do not reopen the completed local learning mechanisms."
+      }
+    },
+    {
+      "id": "generalization-through-lumping",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "归并与世界的实际对应约束推广，不由拟合单独提供。",
+        "en": "Actual correspondence between the grouping and the world constrains generalization; fit alone does not supply it."
+      }
+    },
+    {
+      "id": "identification-where-bounded",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "状态界下有限记录确定历程，界及确定性不由任意有限记录自证。",
+        "en": "A finite record fixes a course under state bounds; arbitrary finite records do not certify the bound and determinacy."
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "历程、主张与世界的形式对应支持内在说明，不独自证明所有科学的完整构成。",
+        "en": "Formal correspondences among histories, claims and worlds support immanent explanation without alone proving every inquiry’s full constitution."
+      }
+    },
+    {
+      "id": "tests-fix-likeness-where-determined",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "双方在相同之下确定时完整检验族固定关系结构；原生分支反例阻断无条件扩大，非全理论反例。",
+        "en": "Complete tests fix relational structure where both frames are determined up to likeness; the native branching counterexample blocks unconditional expansion, not the theory itself."
+      }
+    },
+    {
+      "id": "contextual-registration",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "带语境的表示保存识，去语境失败不等于整个核心不能表示科学。",
+        "en": "Context-indexed descriptions preserve registration; failure to erase context does not imply failure of the entire core to represent science."
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "P97复用有限敏感性给出的完整形式接口；给定律的构造不等于实际规律的经验认证。",
+        "en": "P97 reuses the complete formal interface from finite sensitivity; a construction for a supplied law is not empirical certification of the actual law."
+      }
+    },
+    {
+      "id": "histories-fix-law-up-to-dead-ends",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "全部端点有限历史与逐步律等价，承认保留关系内容的历史对手；不把完整家庭当有限样本。",
+        "en": "All endpoint-indexed finite histories determine the step law; admits a history-based rival preserving relational content, without equating the complete family with finite samples."
+      }
+    },
+    {
+      "id": "branching-tests-bisimulation",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "图像有限及全有限模态族下的结构结果保持；实际装置未因此具备全部测试能力。",
+        "en": "Retains the image-finite/full-finite-modal-family structural result; actual apparatus is not thereby able to implement all those tests."
+      }
+    },
+    {
+      "id": "configurations-alike-by-relation",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有桥接把外围双模拟与脊柱关系对应；不新增物理对应定理。",
+        "en": "The existing bridge identifies peripheral bisimulation with the spine relation; no new physical correspondence theorem."
+      }
+    },
+    {
+      "id": "finite-continuation-plans",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用有限可行性与观察分支计划的等价及盲目／感知／改变依赖见证，区分存在路径和共同可用操作；保留旧模块范围，不声称新增脊柱适配。",
+        "en": "Reuses finite viability/observation-branching-plan equivalence and blind/sensing/dependency-change witnesses to distinguish paths from commonly usable operations; preserves the original module scope without claiming a new spine adapter."
+      }
+    },
+    {
+      "id": "timely-response-necessity",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "已证逐时界作为具体命令任务的输入；实际对应与全核心必要性仍分开。",
+        "en": "The proved timed bound supplies the concrete command task; actual correspondence and full-core necessity remain separate."
       }
     }
   ],
@@ -51,27 +163,34 @@
         "zh": "有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。",
         "en": "Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved."
       }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "detail": {
+        "zh": "§11.3复用核心Choosing.sameTests与Choosing.not_alike：动作序列相同不在一般分支情形下固定关系结构；该例的主张类型为空，不是频率或任意观察等同的声明。",
+        "en": "Section 11.3 reuses the core’s Choosing.sameTests and Choosing.not_alike: equal move courses do not fix relational structure with general branching; the example has an empty claim type and does not assert equality of frequencies or arbitrary observations."
+      }
     }
   ],
   "limitations": {
-    "zh": "有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。",
-    "en": "Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved."
+    "zh": "结构必要性须有完整的既定检验族、动作与主张对应及分支条件；辨识须有状态界等所列条件。条件规律不使前件普遍成立。实际对应、所声明科学问题范围及完整核心之构成承诺的普遍必要性仍未建立；不要求唯一语言，不以伦理缺口代替科学缺口，也未证明普遍目标不可能。 P92证明结构可达的局部必要性，不证明截至作答时刻的逐时因果路径或该机制表示的普遍必要性。 研究不以成功证明最强假说为预定终点；某定理的前提不因此成为每项科学成就的必要条件，弱描述的遗漏也不自动反驳完整理论。 任务相关限制必须有实际根据；来源比较不消除条件、不保证排除所有未知缺陷，也不是本模型的经验验证。 P101来源对应不等于实验到 Choosing 的形式实例；必要的是已声明任务所需的接续内容，不是分支图句法。完整端点历史不等于有限样本，语义测试不等于物理可实施测试。 逐时结论另有共同全部初态与截止前机制条件；不给出物理时长或实际因果识别。 尚无充分必要的普遍科学划界标准；不得以接受本理论定义科学，不能把容纳所有结果当作经验确认。",
+    "en": "Structural necessity uses the complete specified test family, move/claim correspondence and branching conditions; identification uses its stated state bounds and other conditions. Conditional laws do not make their antecedents universal. Actual correspondence, scientific question coverage and science-wide necessity of the full constitutive core remain unestablished; no unique vocabulary is required, no ethical gap substitutes for the scientific gap, and no impossibility of the universal target is proved. P92 proves a local necessity of structural reach, not a time-ordered causal path by answer time or the universal necessity of its mechanism representation. The research does not predetermine proof of the strongest hypothesis as its endpoint; a theorem’s premise is not thereby necessary for every scientific achievement, and omission in a weaker description does not automatically refute the full theory. Task-relevant restrictions need actual warrant; the source comparison neither removes conditions nor guarantees exclusion of every unknown defect, and is not empirical validation of this model. P101 source correspondence is not a formal experiment-to-Choosing instance; the necessity concerns continuation content for the declared task, not branching-graph syntax. Complete endpoint histories are not finite samples, and semantic tests are not physical test procedures. The timed result has common-all-initial-state and prefix mechanism conditions; no physical duration or actual causal identification is supplied. No necessary-and-sufficient universal demarcation criterion; science is not defined by accepting this theory, and representing all outcomes is not empirical confirmation."
   },
   "validation_scope": {
-    "zh": "登记未完成的普遍目标和本轮确立的有限推进；不是新的普遍定理或不可能性结论。",
-    "en": "Records the unfinished universal target and this round’s finite advance, not a new universal theorem or impossibility result."
+    "zh": "P90对应、P92关系连接及作者反审保留；P94同一外围现28定理／34声明（新增15／17），20空、14标准依赖。已完成一个具体前提检验与更弱充分条件的证明；原全核心目标仍开放。无新增经验实验或独立评审。 P97完成三项一手来源的分层评估与作者反审，访问限制明示；新增数学／实验均为零，旧计划未运行。 P101完成三项一手来源的限定阅读、任务对应与作者反审；复用证明的当前源码和通过回执逐项匹配。新增定理、实验与独立成果均为零。 P104新增22核心定理／30空审计及3外围接续，最终实查通过；无新增实验。 P105完成三项一手材料限定核读与九类概念反审，零新定理／实验；既有实查证明绑定保持，未完成跨学科分类验证。",
+    "en": "P90 correspondence, P92 relational connection and author counterreview retained; the same P94 periphery now has 28 theorems / 34 declarations (15/17 added), 20 empty and 14 standard dependency lists. One concrete premise test and proof of a weaker sufficient condition are complete; the full-core target stays open. No new empirical experiment or independent review. P97 completes a scoped assessment of three primary sources and author counterreview, with access limits; zero new mathematics or experiments, and the old proposed test remains unrun. P101 completes limited readings of three primary sources, task correspondence and author counterreview; reused current proof sources match their passed receipts. Zero new theorems, experiments or independent results. P104 adds 22 core theorems / 30 empty audits and three peripheral adapters, with final checks passed; no new experiment. P105 completes scoped readings of three primary materials and nine conceptual counterchecks, with zero new theorems or experiments; inherited proof bindings remain, without cross-domain classifier validation."
   },
   "references": [
     {
       "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
       "role": "statement",
-      "sha256": "a2c45060bb7021847d812e0fce3ea72be2fc817cae2256a84489b967d66ab9c8",
+      "sha256": "710e7a7f275e50da60910ce1012b3776245a428f408103110026ff368f357127",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
       "role": "integration",
-      "sha256": "d4bbd75fc720efd4c1d2d2d43f2674fdfb88d2a0dc2fc90477a299046781f09d",
+      "sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76",
       "declarations": []
     },
     {
@@ -79,12 +198,67 @@
       "role": "provenance",
       "sha256": "b45a269fc679cfe24c4dcb142f4e39e73d403502be62a7c11c3ca5fa3317f2d9",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-FOUNDATION-CORRESPONDENCE-REVIEW.json",
+      "role": "review",
+      "sha256": "77a8762ef09ed48268bca5142a4afcf9c4f91c0196a099a5cc621cd2948a345d",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "role": "integration",
+      "sha256": "c7044c4ee33aea3d5093e7b5314901a8b4ef1acb17624297cb57345b7dc048e3",
+      "declarations": [
+        "Becoming.FallibleInquiry.answer_alike_beyond_response",
+        "Becoming.FallibleInquiry.different_answers_not_beyond",
+        "Becoming.FallibleInquiry.answer_alike_beyond_law",
+        "Becoming.FallibleInquiry.coverage_le_errors_add_reach",
+        "Becoming.FallibleInquiry.error_budgets_require_reach",
+        "Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors"
+      ]
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md",
+      "role": "provenance",
+      "sha256": "979077ca6c1b833c99ffe2bbc984a686ceb8be1970ecf754dee9c3f437c3a534",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "role": "review",
+      "sha256": "d7b38517ff0e5d2825ea8f97a959c5f1c5f5f2a4c4b99a70a77af264e61967a2",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-WARRANT-REVIEW.json",
+      "role": "review",
+      "sha256": "f2411247d79d2c5ccc84a848931f65f19bcf9652dea22b89ec9e63ccd13aa5cd",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONTINUATION-REVIEW.json",
+      "role": "review",
+      "sha256": "be47ee0bf7be1ef881c8635c93683dff680d1d587fe71ddfb65c6708c0c68658",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-TIMING-REVIEW.json",
+      "role": "review",
+      "sha256": "4457c68612dde3ce70da9a19790b3478aede5681ab02c7dbd017bc6aecefb505",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-DEMARCATION-REVIEW.json",
+      "role": "review",
+      "sha256": "bc2795f8ab4262a541923667f401d48d84ea016893de2b549e3ece3fe3c235f1",
+      "declarations": []
     }
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "明确尚需科学普遍必要性证明的核心承诺，并给出独立问题、对应及真正对手；不把此次局部证明升级为全理论完成。",
-    "en": "Identify the further core commitment requiring a science-wide necessity proof, with an independent task, correspondence and substantive rival; do not upgrade this local proof to whole-theory completion."
+    "zh": "以预先声明的问题对照有根据的科学主张、认真研究后的失败和系统性免疫反证的实践，检验划界标准；实际初始证据／指令配对仍是逐时界的独立应用待项。",
+    "en": "Use the declared questions to compare a warranted scientific claim, a carefully investigated failure and systematic insulation from adverse evidence; test the demarcation assessment. Actual initial-evidence/command pairing remains a separate application gap for the timed bound."
   },
   "history": [
     {
@@ -94,6 +268,34 @@
     {
       "zh": "2026-10-12 P73：归纳的规律在第一部分陈述，不用公理：无记录固定下一个，每个学习者都有否证它每个主张的开放的序列，被列表所持的世界中按否证学习的否证有界、静止不能被否证（learning-by-refutation）；推广恰在世界经模型所归并者同去之处正确（generalization-through-lumping）；见整合文档 §92。它们是科学探究的必要关系的一部分，不证明完整核心对科学的不可或缺性；断言与 next_delta 不变。",
       "en": "2026-10-12 P73: the laws of induction are stated in Part I with no axiom: no record fixes the next value, every learner has an open course refuting each of its claims, and in a world held by a list learning by refutation is refuted a bounded number of times with its rest unrefuted (learning-by-refutation); a generalization is right exactly where the world goes alike across what the model lumps (generalization-through-lumping); see §92 of the integration note. They are part of the necessary relations of scientific inquiry and do not prove the whole core indispensable to science; the claim and next_delta are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P90：按Ren“认可 请完成”接续；将P49/P53/P69/P72/P73/P76/P83等已成结果接到必要性任务，核对原生分支反例，分开规律、前件、对应与不可缺少性。完成本轮对应和反审，原完整目标与open状态不变；没有新增独立结果或数学证明。",
+      "en": "2026-10-13 P90: continued at Ren’s “认可 请完成”; connected completed P49/P53/P69/P72/P73/P76/P83 results to necessity, checked the native branching counterexample, and separated law, antecedent, correspondence and indispensability. This correspondence and counterreview are complete; the full original target and open status are unchanged. No new independent result or mathematical proof."
+    },
+    {
+      "zh": "2026-10-13 P92：从独立覆盖／错误任务补上原生回应关系的必要性连接，含同律推导与反例；这是具体形式进展，仍不补足完整科学范围与全部构成承诺的普遍对应。",
+      "en": "2026-10-13 P92: connected an independent coverage/error task to necessary native responsive relations, with common-law derivation and counterexample. This is concrete formal progress, not completion of universal correspondence for the full scientific scope and all constitutive commitments."
+    },
+    {
+      "zh": "2026-10-13：Ren 询问全理论必要性这项前提，并明确要求按可修正研究假说继续；相应修正本会话目标，保留原正面证明任务的历史。P94完成平衡前提的具体检验，未宣布整个假说成立或失败。",
+      "en": "2026-10-13: Ren questioned full-theory necessity as a premise and explicitly directed continuation as a revisable hypothesis. Updated this session’s objective while preserving the earlier positive-proof task in history. P94 completed a concrete balance-premise test without declaring the whole hypothesis true or false."
+    },
+    {
+      "zh": "2026-10-13 P97：完成完整装置知识与任务相关根据的区分、一手来源评估及实质反审；移除过强的经验全知门槛，未撤回核心定理。目标仍open，不另计独立成果。",
+      "en": "2026-10-13 P97: completed the distinction between exhaustive device knowledge and task-relevant warrant, primary-source assessment and substantive counterreview. Removed an excessive empirical-omniscience burden without retracting a core theorem. Target remains open, with no new independent result."
+    },
+    {
+      "zh": "2026-10-13 P101：固定接续任务并完成来源与实质反审；必要内容与表示句法分开，接受保留条件的历史说明，拒绝把可达、控制及物理测试混同。无新数学或实验，原目标保持open。",
+      "en": "2026-10-13 P101: fixed the continuation task and completed source assessment and substantive counterreview. Separated required content from representational syntax, admitted contextualized histories and distinguished reach, control and physical testing. No new mathematics or experiment; original target stays open."
+    },
+    {
+      "zh": "2026-10-13 P104：逐时机制与有限错误界接通，新范围另记 timely-response-necessity；完整目标保持open。",
+      "en": "2026-10-13 P104: connects timed mechanisms and finite errors, with the new scope in timely-response-necessity; full target remains open."
+    },
+    {
+      "zh": "2026-10-13 P105：科学性判断接入同一研究，保留历史科学、概率判断、未复现与早期理论；不以符合本理论作定义，全核心目标保持open。",
+      "en": "2026-10-13 P105: integrates assessment of scientific standing, preserving historical inquiry, probabilistic judgment, non-replication and early theories; no definition by conformity to this theory, full-core target stays open."
     }
   ]
 }

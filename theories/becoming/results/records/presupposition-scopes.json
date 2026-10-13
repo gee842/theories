@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T23:22:35+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "沿一个关系，形成之自身的边界是含它、对此关系封闭的区域（Boundary）：闭包最小，整体最大，每个边界含闭包，关系越小边界越多，一切都在闭包之内时整体是唯一的边界（Boundary.closure、whole、holds、of_larger、only_whole）。关于所划区域的主张，按每个可容许边界成立是超真（SuperTrue），按某个成立是次真（SubTrue），按一个成立就按每个成立是对边界不变（BoundaryInvariant）；有可容许边界时超真就是不变的次真（superTrue_iff），不变就是确定：次真即超真（boundaryInvariant_iff_determinate）。不论怎样划都在自身之内的恰是闭包（superTrue_member_iff），按某种划法一切都在自身之内（subTrue_member）；整体可容许时，“自身之内的都有某性质”超真恰当一切都有，次真恰当闭包之内的都有（superTrue_all_iff、subTrue_all_iff）。预设（SignificantWithin）：从立场 p，所划区域之内一切的延续在每步都有意义。超真时它是可容许边界之并上的意义（superTrue_significantWithin_iff_union），整体可容许时是 p 处的公理（superTrue_significantWithin_iff），与沿哪个关系无关，每个立场都超真恰是公理（unrestricted_iff_superTrue、superTrue_level_free）；沿关系次真时它是闭包上的意义（subTrue_significantWithin_iff），沿较大的关系次真推出沿较小的（subTrue_of_larger），沿全关系是 p 处的公理，沿空关系是中心自身延续的意义（subTrue_total_iff、subTrue_empty_iff）。路线 (b) 以各中心闭包为界的意义，恰是不论怎样划都在自身之内者的意义（bounded_closure_iff），也是使每个预设次真的最小意义（bounded_closure_least）；所以同一预设，“不论怎样划”在窄辖域给出路线 (b)，在宽辖域给出公理（presupposition_scopes）。次序：沿全关系次真推出沿共享条件，沿共享条件推出沿影响与沿受影响，沿受影响推出沿供给，沿任何关系推出沿空关系（Flow.presupposition_order）。预设沿一个含影响的关系在中心次真时，对成员在中心闭包之内的每个部分作公理的比较，不用不变，也不用超真（Flow.Balances.presupposed_comparison，comparison-within-reach 的推论）；沿影响，是所及闭包之内的每个部分（Flow.Balances.presupposed_reach_comparison）。Clearing 中次真依赖关系：以各供给闭包为界的意义使清除者的预设沿供给次真，沿共享条件不次真（Clearing.levels_differ）；清除者自己的预设沿共享条件次真或超真时，从它自己的立场给出它的部分失去栖居者、不保留有意义者；划在供给闭包处，则有一个使部分保留的意义满足它（Clearing.own_presupposition）。不用 Lean 公理。",
     "en": "Along a relation, a boundary of a formation's self is a region holding it that is closed under the relation (Boundary): the closure is the least and the whole the greatest, every boundary holds the closure, a smaller relation has more boundaries, and where everything lies within the closure the whole is the only boundary (Boundary.closure, whole, holds, of_larger, only_whole). A claim about the drawn region is super-true when it holds of every admissible boundary (SuperTrue), sub-true when it holds of some (SubTrue), and boundary-invariant when, holding of one, it holds of every other (BoundaryInvariant); where some boundary is admissible super-truth is invariant sub-truth (superTrue_iff), and invariance is determinacy: sub-true, the claim is super-true (boundaryInvariant_iff_determinate). What lies within the self however its boundary is drawn is the closure (superTrue_member_iff), and everything lies within it as drawn somewhere (subTrue_member); wherever the whole is admissible, “everything within the self has a property” is super-true exactly when everything has it, and sub-true exactly when everything within the closure has it (superTrue_all_iff, subTrue_all_iff). The presupposition (SignificantWithin): from standpoint p, the continuation of everything within the drawn region has significance at every step. Super-true, it is significance over the union of the admissible boundaries (superTrue_significantWithin_iff_union), the axiom at p wherever the whole is admissible (superTrue_significantWithin_iff), whatever the relation, and super-true at every standpoint it is exactly the axiom (unrestricted_iff_superTrue, superTrue_level_free). Sub-true along a relation, it is significance over the closure (subTrue_significantWithin_iff); sub-truth along a larger relation gives it along a smaller one (subTrue_of_larger), along the total relation it is the axiom at p, and along the empty relation the significance of the center's own continuation (subTrue_total_iff, subTrue_empty_iff). Route (b)'s significance, bounded by each center's closure, is exactly the significance of what lies within the self however its boundary is drawn (bounded_closure_iff), and the least significance that makes every presupposition sub-true (bounded_closure_least); so of one presupposition, “however the boundary is drawn” at narrow scope gives route (b) and at wide scope the axiom (presupposition_scopes). The order: sub-truth along the total relation gives it along sharing a condition, which gives it along affecting and along being affected, being affected giving it along feeding, and any relation along the empty one (Flow.presupposition_order). Sub-true at the center along a relation holding affecting, the presupposition compares every part whose members lie within the center's closure as the axiom does, with neither invariance nor super-truth (Flow.Balances.presupposed_comparison, a corollary of comparison-within-reach); along affecting, every part within the reach closure (Flow.Balances.presupposed_reach_comparison). In Clearing sub-truth depends on the relation: significance bounded by each feeding closure makes the clearer's presupposition sub-true along feeding and not along sharing a condition (Clearing.levels_differ); the clearer's own presupposition, sub-true along sharing a condition or super-true, gives from its own standpoint that its part loses the dweller and does not retain what has significance, while drawn at the feeding closure it is met by a significance under which the part retains (Clearing.own_presupposition). No Lean axiom is used."
@@ -366,7 +366,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -537,8 +537,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

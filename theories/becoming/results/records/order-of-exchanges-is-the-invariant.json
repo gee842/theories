@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "en": "A footprint says which relata each step's exchange touches (Footprinted) and contains the exchanges where every relatum untouched at a step takes no part in it and is unmoved across it (Footprinted.Contains, Web.Unmoved); every world has a containing footprint (Footprinted.contains_everything). Two exchanges are joined where they touch a common relatum or one touches a relatum depending, at the start or end of its step, on a condition the other touches (Footprinted.Joined); Precedes is the order the joins generate, a strict partial order (Footprinted.Precedes.lt, Footprinted.Precedes.irrefl, Footprinted.Precedes.asymm), growing with the footprint (Footprinted.Joined.mono, Footprinted.Precedes.mono, Footprinted.Contains.mono). Commuting two neighbouring exchanges not joined keeps containing and the order up to the renumbering (Footprinted.commute_contains, Footprinted.commute_precedes), and so does any sequence of such commutations, place saying where each step's exchange ends up and origin where it came from (Footprinted.reorder_precedes, Footprinted.Independent.keeps), each a step of Reorders (Footprinted.reorder_reorders). The converse, constructively by bubble sort: within a finite stretch, the renumberings reached by commuting exchanges not joined are exactly those keeping the order of joined exchanges (Footprinted.sorts_iff, with Reindexes and Footprinted.Keeps), and a second world with the same exchanges, footprints and changes on touched relata arranged in such an order, starting the stretch alike, agrees with one of these reorderings, the same exchange at every step and every relatum alike at every step (Footprinted.converse). No decidability of joining is needed, the renumbering being given. No premise.",
     "zh": "足迹说出每步的交换触及哪些关系项（Footprinted），在每步未被触及的关系项都不参与该步、跨该步不变动之处包含这些交换（Footprinted.Contains、Web.Unmoved）；每个世界都有包含它的足迹（Footprinted.contains_everything）。两个交换在触及共同的关系项、或一个触及的关系项在其步的起点或终点依存于另一个触及的条件之处相连（Footprinted.Joined）；Precedes 是相连生成的次序，是严格偏序（Footprinted.Precedes.lt、Footprinted.Precedes.irrefl、Footprinted.Precedes.asymm），随足迹增大（Footprinted.Joined.mono、Footprinted.Precedes.mono、Footprinted.Contains.mono）。交换两个相邻而不相连的交换，保持包含与重新编号下的次序（Footprinted.commute_contains、Footprinted.commute_precedes），任意一串这样的交换也是，place 说出每步的交换到了哪里，origin 说出它从哪里来（Footprinted.reorder_precedes、Footprinted.Independent.keeps），各是 Reorders 的一步（Footprinted.reorder_reorders）。逆方向，以冒泡排序构造性地：在一段有限的步内，交换不相连的交换所达到的重新编号恰是保持相连交换次序的那些（Footprinted.sorts_iff，以 Reindexes 与 Footprinted.Keeps）；第二个世界以这样的次序有相同的交换、足迹与被触及关系项上的变化，以同样的方式开始这一段，就与其中一个重排一致，每步是同一交换，每步每个关系项相同（Footprinted.converse）。不需要相连可判定，因为重新编号是给定的。不加前提。"
@@ -226,7 +226,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -289,8 +289,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [practical-judgment-g0-j.json](practical-judgment-g0-j.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-13T11:35:03.770836+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## Overview / 首页摘要
 
@@ -24,22 +24,36 @@ Canonical source: [PRACTICAL-JUDGMENT.md](../../chapters/PRACTICAL-JUDGMENT.md)
 
 ## 前提与对应 Hypotheses and correspondence
 
-- G0 的正面规范起点；J1–J4 比较、基本条件优先、责任及正当选择承诺，均公开而非由形式定义证明。 / The G0 normative starting point and explicit J1–J4 commitments on comparison, basic protection priority, responsibility and legitimate choice; these are not warranted by formal definitions.
+- G0 的正面意义条件接口；按当前统一结构，它已折入意义，不另增一条公理。J1–J4 比较、基本条件优先、责任及正当选择承诺均公开而非由形式定义证明。 / The G0 positive-significance interface, folded into significance in the current unified structure rather than added as another axiom. J1–J4 commitments on comparison, basic protection priority, responsibility and legitimate choice remain explicit and are not warranted by formal definitions.
 - 实际分类、有效承担、可行范围与权限的对应 E。 / Correspondence E for actual classifications, valid undertakings, feasibility and authority.
 
-角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。 / Roles are explained through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty.
+角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。P95 将支承对应具体化为实际需要时段、过渡中的接续、替代覆盖与共同可行；回程、焦点存续及终点相同各不足以独自认证共同修复。 / Roles arise through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty. P95 specifies support correspondence through actual need windows, continuation through transition, replacement coverage and joint feasibility; return, focal persistence and equal endpoints alone do not certify common repair.
 
 ## 检验与边界 Validation and boundaries
 
-既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。本次无新编译。 / Existing independent completion review accepts the explicit-axiom general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. No new compilation.
+既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。P95 是对既有已检查回程、替代与交接结果的解释性应用及作者反审；无新数学、编译、跨模块形式适配或新增独立验收。 / Existing independent completion review accepts the explicit-commitment general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. P95 adds interpretive application and author counterreview of checked return, substitution and handoff results; no new mathematics, compilation, formal adapter or independent acceptance.
 
-J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。 / J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score.
+J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。支承关系给出实践理由的具体对象，不独自决定优先强度；需要时段、过渡、替代覆盖和真实损失仍须对应。 / J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, without a universal utility score. Support relations specify the object of a practical reason but do not independently determine its priority; need windows, transition, replacement coverage and real losses still require correspondence.
 
-Boundary source / 边界来源: [PRACTICAL-JUDGMENT.md](../../chapters/PRACTICAL-JUDGMENT.md)
+- J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。 / J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score. [PRACTICAL-JUDGMENT.md](../../chapters/PRACTICAL-JUDGMENT.md)
 
 ## 依赖与关联 Dependencies and related results
 
-No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
+- **interpretive**: [becoming-return-grades](becoming-return-grades.md). P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。 / P95 reuses this result to test the content of support and repair without altering its proof scope.
+- **interpretive**: [substitution-preserves-consumption](substitution-preserves-consumption.md). P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。 / P95 reuses this result to test the content of support and repair without altering its proof scope.
+
+**Output / 输出:** 最终回程与有界回程的区别及无统一回程界的见证。 / The distinction between eventual and bounded return and a witness with no uniform return bound.
+
+**Input / 输入:** 及时恢复和过渡中支持的实际对应要求。 / Correspondence requirements for timely recovery and support through transition.
+
+**Preserved conditions / 保留条件:** 具体需要时段、储备和生活存续另需论证；不是跨模块组合定理。 / Actual need windows, reserves and living continuity require further warrant; this is not a cross-module composition theorem. [Return.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
+
+**Output / 输出:** 给定支持门控律下焦点替代后持续活跃、维持者永久失去支持。 / Focal persistence after substitution while the sustainer permanently loses support under the supplied support-gated law.
+
+**Input / 输入:** 替代是否覆盖原来共同支持的生活，而非只覆盖焦点。 / Whether replacement covers living relations previously supported together, rather than only the focal formation.
+
+**Preserved conditions / 保留条件:** 保留正所需、阈值顺序、支持起点及持续超取前提；替代供给给定、代价未建模；无伦理排序。 / Retains positive needs, threshold order, supported start and persistent overdraw; alternative supply is given and its cost unmodelled, with no ethical ranking. [Substitution.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean)
 
 - Related, not a proved adapter / 关联而非已证转换: [universal-practical-warrant](universal-practical-warrant.md). 无公理目标独立保留，不是本成果的未完成条件。 / The independent axiom-free target remains open and is not an unmet completion gate for this result.
 - Related, not a proved adapter / 关联而非已证转换: [protection-priority-excludes-uniform-aggregation](protection-priority-excludes-uniform-aggregation.md). 复用本结果的 Better 与 no_protection_trade_by_count，在一个构造情境中补上 J2 相对 C 的独立性、被排除的自然数评分类与一致的有界评分；本论证不变。 / Reuses this result's Better and no_protection_trade_by_count, adding, in one constructed situation, J2's independence from C, the excluded natural-number score class and an agreeing bounded score; this argument is unchanged.
@@ -55,12 +69,15 @@ No dependency on another migrated record is asserted; source imports and supplie
 | integration | [PRACTICAL-JUDGMENT-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
 | provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
+| integration | [ETHICAL-LEARNING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md) | — |
+| counterexample | [Return.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean) | — |
+| counterexample | [Substitution.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-应用现有原则并检验分类、承担与权限；不把一般责任原则再次列为待证明。 / Apply the existing principles and test classifications, undertakings and authority; do not reopen the completed general responsibility account.
+及时接续、替代覆盖及有范围比较的应用连接已补入。接续检验已有 BC/LC/LR 对具体交叉基本损失的覆盖与剩余比较前提；不重开一般责任或交接原则，也不把完整混合排序或整体零实质公理奠基视为已完成。 / The application connection for timely continuation, replacement coverage and scoped comparison is supplied. Next test existing BC/LC/LR coverage of concrete crossed basic losses and identify any remaining comparison premise; do not reopen general responsibility or handoff principles, or claim complete mixed ranking or a whole zero-substantive-axiom foundation.
 
 Aliases / 别名: `Practical judgment G0/J1–J4`
 
@@ -70,3 +87,4 @@ Aliases / 别名: `Practical judgment G0/J1–J4`
 - 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.
 - 2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用 J2 排除均匀聚合的新结果；本论证与范围不变。 / 2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites the new result that J2 excludes uniform aggregation; this argument and its scope are unchanged.
 - 2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X7、P1）修正证据行：补上“在一个构造情境中”，并写明有界评分与 J2 一致。本论证与范围不变。 / 2026-10-09: evidence line corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X7, P1): it now says "in one constructed situation" and that a bounded score agrees with J2. This argument and its scope are unchanged.
+- 2026-10-13，P95：在原研究§85及章节§2.1补上及时接续与支承理由的应用及作者反审；复用回程、替代与实际交接证明，保留 G0 折叠后的条件接口与 J 的强度。不新增独立成果或数学证明。 / 2026-10-13, P95: added application and author counterreview of timely continuation and support warrant in the existing study §85 and chapter §2.1; reuses return, substitution and actual handoff proofs, retaining the folded G0 interface and J strengths. No new independent result or mathematical proof.

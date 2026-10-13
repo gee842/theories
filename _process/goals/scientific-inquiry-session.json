@@ -7,24 +7,25 @@
   },
   "scope_type": "authorized-session",
   "scope": {
-    "zh": "Ren 明确指令继续并完成必要科学基础的本会话；不自动接管其他会话工作。",
-    "en": "This session explicitly directed by Ren to pursue and finish a necessary scientific foundation; other sessions are not automatically assigned here."
+    "zh": "Ren 指令本会话持续检验科学基础，把完整核心必要性保留为可修正的强假说；不自动接管其他会话。",
+    "en": "Ren directs this session to continue testing scientific foundations, retaining full-core necessity as a revisable strong hypothesis; other sessions are not automatically assigned here."
   },
   "objective": {
-    "zh": "从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。",
-    "en": "Establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core."
+    "zh": "从独立说明的科学成就及同一展开的真实关系，检验哪些核心承诺不可缺少、哪些只是特定表示或解释任务的条件，以及完整核心的必要性是否成立；不预定正面结论，不以接受核心定义充分性。",
+    "en": "From independently stated scientific achievements and actual relationships within one unfolding, test which core commitments are indispensable, which condition a particular representation or explanatory task, and whether necessity extends to the full core; do not predetermine a positive verdict or define adequacy as accepting the core."
   },
   "premises": {
-    "zh": "用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。",
-    "en": "The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality."
+    "zh": "按2026-10-13纠正，完整理论的必要性是待检验结论，不是证明前提。已完成局部定理和反例复用；科学性、正确性、任务充分性、必要性及伦理普遍性分别说明。",
+    "en": "Under the 13 October correction, full-theory necessity is a hypothesis to test, not a proof premise. Reuse completed local theorems and counterexamples; distinguish scientific status, correctness, task adequacy, necessity and ethical universality."
   },
   "completion": {
-    "zh": "须完成所提核心与科学成就的独立必要性对应；局部统计或生成定理不能独自宣布整体完成。",
-    "en": "Complete the independent necessity correspondence between the proposed core and scientific achievements; local statistical or generative theorems alone do not complete the whole target."
+    "zh": "在明示科学范围内完成核心与成就的独立对应和必要性评估；允许证据支持完整核心、只有部分核心具有必要性，或需要修正承诺。局部结果、遗漏关系的弱描述及缺少证明本身都不足以宣布整体完成或整体失败。",
+    "en": "Complete an independent correspondence and necessity assessment within an explicit scientific scope; allow evidence to support full-core necessity, necessity of only part of the core, or revision of a commitment. Local results, weak descriptions omitting relationships, and absence of proof alone establish neither whole-target completion nor failure."
   },
   "sources": [
     "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
-    "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md"
+    "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+    "sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md"
   ],
   "result_ids": [
     "finite-fallible-inquiry-necessity",

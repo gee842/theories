@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T19:09:09+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一条水平路径 l 包含另一条 l′（Web.Includes），是指每一步 l 接纳 l′ 所接纳的每个形成；包含是预序（Web.Includes.refl、Web.Includes.trans）。l 超出 l′（Web.Exceeds），是指在某步 l 接纳一个 l′ 不接纳的形成；包含 l′ 的路径不被 l′ 超出（Web.Includes.not_exceeded）。在平衡的流中，扣留一个部分后的水平存在时：部分每步给每个条件的不少于从它取走的，则有它的水平包含无它的，它不关闭任何东西（Flow.Balances.closes_nothing）；每步给予不多于取走的，则无它的水平包含有它的，它不打开任何东西（Flow.Balances.opens_nothing）；恰好给回所取的，不改变能形成什么（Flow.Balances.changes_nothing）。以两个方向的包含比较有它与无它，部分扩大、缩小、保持不变或混合（这一划分是经典逻辑，不是这里的定理）；每种情形的见证都给出扣留后的水平。扩大，有它的包含并超出无它的：Inflow 中扣留给予者的部分（Restoring.Inflow.giverPart）后条件停在零（Restoring.Inflow.withheld），false 在任何一步都不被接纳，有它时 false 从第一步起被支持（Restoring.Inflow.widens）。缩小，反过来：Clearing 中扣留清除者的部分后资源每步升一、栖息地停在二（Clearing.withheld），栖居者每步都被接纳（Clearing.admitted_without），有它时从第二步起不被支持（Clearing.unsupported_with），所以它不打开任何东西并关闭栖居者（Clearing.narrows）。保持不变，即 changes_nothing 的情形。混合，二者各超出对方：Transfer 中传送者在第零步从第一个条件取一单位给第二个，扣留后第一个条件停在一、第二个停在零（Transfer.withheld）；有它时从第一步起第二个形成被支持而第一个不被支持，无它时每步第一个被接纳而第二个不被接纳（Transfer.mixed）。混合的部分不为包含定序：给它定序需要权衡一些可能性与另一些的度量，那是另一个前提。不用伦理前提，也不用 Lean 公理。P56：四种情形是定义：l 扩大 l′（Web.Widens）是包含且超出，保持不变（Web.Keeps）是互相包含，混合（Web.Mixed）是互相超出；扩大单向（Web.Widens.not_reverse）且可传递（Web.Widens.trans），四种情形两两互斥（Web.Widens.not_keeps、Web.Widens.not_mixed、Web.Keeps.not_mixed，加上对称性 Web.Keeps.symm、Web.Mixed.symm），不用经典逻辑。在每个形成所需的条件上、它之前的各步平衡时，有部分的水平扩大无它的水平，恰当部分的净汲取对无它时接纳的每个形成都在余量之内，并在某一步把无它时不接纳的一个形成带进余量（Flow.widens_iff_within_margin_at，建立在 closing-needs-net-draw 的局部相界上）；平衡的流中这是 Flow.Balances.widens_iff_within_margin。",
     "en": "A level path l includes another l′ (Web.Includes) when at every step l admits every formation l′ admits; inclusion is a preorder (Web.Includes.refl, Web.Includes.trans). l exceeds l′ (Web.Exceeds) when at some step l admits a formation l′ does not; a path that includes l′ is not exceeded by it (Web.Includes.not_exceeded). In a balanced flow, where the levels without a part exist: a part giving each condition at every step at least what it takes from it closes nothing, the levels with it including those without it (Flow.Balances.closes_nothing); one giving no more than it takes opens nothing, the levels without it including those with it (Flow.Balances.opens_nothing); one giving back exactly what it takes changes nothing that can form (Flow.Balances.changes_nothing). Compared by inclusion in both directions with the levels without it, a part widens, narrows, keeps the same or is mixed (this split is classical logic, not a theorem here); the witness of each case exhibits its levels without the part. It widens, the levels with it including and exceeding those without it: in Inflow, without the giver's part (Restoring.Inflow.giverPart) the condition stays at zero (Restoring.Inflow.withheld) and false is admitted at no step, while with it false is supported from step one on (Restoring.Inflow.widens). It narrows, the converse: in Clearing, without the clearer's part the resource rises by one at each step and the habitat stays at two (Clearing.withheld), and the dweller is admitted at every step (Clearing.admitted_without), while with the part it is not supported from step two on (Clearing.unsupported_with); so the part opens nothing and closes the dweller (Clearing.narrows). It keeps the same, the case of changes_nothing. It is mixed, each path exceeding the other: in Transfer the conveyor takes a unit from the first condition at step zero and gives it to the second; without its part the first condition stays at one and the second at zero (Transfer.withheld); with it, from step one on, the second formation is supported and the first is not, while without it the first is admitted at every step and the second at none (Transfer.mixed). A mixed part is not ordered by inclusion: ordering it needs a measure trading some possibilities against others, which is a further premise. No ethical premise and no Lean axiom is used. P56: the four cases are definitions: l widens l′ (Web.Widens) when it includes and exceeds it, two keep the same (Web.Keeps) when each includes the other, and two are mixed (Web.Mixed) when each exceeds the other; widening goes one way (Web.Widens.not_reverse) and is transitive (Web.Widens.trans), and the four cases exclude one another (Web.Widens.not_keeps, Web.Widens.not_mixed, Web.Keeps.not_mixed, with the symmetries Web.Keeps.symm and Web.Mixed.symm), with no classical logic. With balance at the conditions each formation requires, across the steps before it, the levels with a part widen those without it exactly when the part's net draw stays within the margin for every formation the levels without it admit and, at some step, brings within the margin one they do not admit (Flow.widens_iff_within_margin_at, on the local phase boundary of closing-needs-net-draw); in a balanced flow this is Flow.Balances.widens_iff_within_margin."
@@ -261,7 +261,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a"
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -458,8 +458,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

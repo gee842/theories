@@ -1,0 +1,71 @@
+{
+  "date_utc": "2026-10-13T13:26:28.092232+00:00",
+  "workboard_item": "P105",
+  "status": "author-counterreview-complete",
+  "scope": "Interpretive assessment in existing scientific-foundation study, not a new theorem or validated demarcation classifier.",
+  "reused_results": [
+    "scientific-inquiry-foundation",
+    "finite-fallible-inquiry-necessity",
+    "timely-response-necessity"
+  ],
+  "new_theorems": 0,
+  "new_experiments": 0,
+  "independent_agent_reviews": 0,
+  "prior_document_prefixes_preserved": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "preserved_prefix_bytes": 123627,
+      "before_sha256": "e229ce19041fcb18fe8b9a7c55b3c53f6006ffd02bf2b1a3bcbcd8f0c51b1044",
+      "current_sha256": "1c17b46e9db0305b8214b16bef949c313132a623b216908f5a31010c0ffbcb76"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md",
+      "preserved_prefix_bytes": 32300,
+      "before_sha256": "67def8c1fbfc7f0d6f6797105a47a83c45a34225a004800778e53d728e46fc6a",
+      "current_sha256": "d7b38517ff0e5d2825ea8f97a959c5f1c5f5f2a4c4b99a70a77af264e61967a2"
+    },
+    {
+      "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "preserved_prefix_bytes": 47373,
+      "before_sha256": "7973c156f396742ff961ab6224b42f6f014ebe4fada2507fccc84fa764546e7e",
+      "current_sha256": "710e7a7f275e50da60910ce1012b3776245a428f408103110026ff368f357127"
+    }
+  ],
+  "reused_proof_bindings_matched": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+      "sha256_pointer": "/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125224.520783Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "primary_readings": {
+    "E12": "Popper teaching excerpt, re-read; existing source Po, not independent corroboration.",
+    "E13": "Cleland 2001 four-page primary article text, especially pp.988–989; no raw-data reanalysis.",
+    "E14": "National Academies official institutional summary; report chapter route supplied no usable passage, NCBI browser check; no full-report audit."
+  },
+  "counterreview": "Study §17.3: failed hypothesis, historical inquiry, probabilistic forecast, non-replication, early theory, auxiliary diagnosis, reward response, insulated authority and access limits. §17.4 applies standards and revision conditions to this theory.",
+  "boundaries": [
+    "Causal reach does not supply epistemic warrant.",
+    "Scientific standing, truth, evidence strength and corrective quality are distinct.",
+    "Full-core necessity remains open and cannot be protected by defining science as agreement.",
+    "No cross-domain validation or unique necessary-and-sufficient demarcation criterion.",
+    "Existing empirical protocols remain unrun."
+  ],
+  "checks": "Documentary checks recorded in subsequent maintenance note; no Lean rerun because proof claims and sources are unchanged."
+}

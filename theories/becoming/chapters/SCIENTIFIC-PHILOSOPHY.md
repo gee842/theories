@@ -4,6 +4,8 @@
 
 **Finding:** the conjecture has a defensible conditional core. An adequate account of empirical inquiry cannot claim a capability while denying the information, implementation and support conditions demonstrably required for that capability. Our foundation already expresses several such constraints. This does not establish that its entire present formulation is necessary, that compatibility suffices for scientific standing, or that other philosophies must adopt its ontology. The strongest contribution is a connected account of how inquiry's conditions form, change and fail, including how the methods selecting claims themselves become objects of inquiry.
 
+**Current integration, 13 October 2026:** registration, testing, generalization, bounded identification and structural reconstruction now have checked statements on the shared Becoming spine. [Section 9](#9-necessity-on-the-unified-spine) maps their outputs to this foundational claim and tests the inference against the core's own branching counterexample. Their local completion is retained; the science-wide indispensability of the full core remains open. Earlier dated assessments below must be read with this update.
+
 The named connection in the [governing derivation](GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work) is **formed evidence-responsive learning → warranted and revisable inquiry → correction of selectors and reasons**. The study advances the conceptual and mathematical interface. Calibration, the relevant law class, claim meanings, some material recipes and ethical relevance remain supplied. It neither completes their formation nor replaces the wider goal of deriving organization, significance, learning, concern and wisdom.
 
 ## 1. The conjecture and its exact direction
@@ -77,7 +79,9 @@ Adaptive action, repeated reading and internal criticism cannot distinguish thes
 
 This gives a boundary for any account of self-correction: checks work against specified kinds of error under stated remaining assumptions. The fact that a system can revise its beliefs does not certify the correspondence between its signals and their intended objects. Explaining the origin, maintenance and correction of that correspondence is part of our unfinished derivation.
 
-### 3.3 The minimal root does not solve induction
+### 3.3 Induction: the unrestricted problem and the completed conditional laws
+
+**13 October update.** The following unrestricted-prefix obstruction remains valid, but the conditional positive task is no longer merely a proposed construction. [Learning by refutation](../results/records/learning-by-refutation.md), [generalization through a model's grouping](../results/records/generalization-through-lumping.md), and [identification under state bounds](../results/records/identification-where-bounded.md) are checked in the core. They state what the chosen model class and actual course must supply, without deriving those facts from an arbitrary finite prefix. See §9 for their foundational bearing.
 
 Let the admitted class contain every infinite binary stream. After any finite observed prefix (h), it contains both a continuation beginning (h0) and one beginning (h1). Neither next bit follows from the prefix. A randomized next-bit rule likewise has worst-case error at least one half over those two alternatives. No prior over all infinite streams is assumed.
 
@@ -161,7 +165,9 @@ The strongest supported formulation is:
 
 This is more informative than the trivial statement that true theories cannot contradict one another only insofar as we identify the necessary conditions independently, derive their restrictions and show what would count as violating them. The full universal conjecture is not proved by this investigation.
 
-| Claim | Status after this study |
+The following table records the 6 October study's scope; the completed mechanisms and the 13 October correspondence in §9 supersede its historical research queue without deleting its boundaries.
+
+| Claim | Status after the 6 October study |
 |---|---|
 | Empirical discrimination is limited by complete accessible information | Established conditionally by the displayed elementary arguments and inherited results |
 | Sustained costly inquiry requires its supports under the stated law | Established conditionally; no universal fixed cost or local self-renewal inferred |
@@ -189,3 +195,97 @@ The philosophical consequence is precise: **an adequate explanation of a claimed
 This establishes an important necessary constraint within the generative account. It does not yet prove that every commitment of the relational core is indispensable throughout science, nor that scientific inquiry entails G0. The finite law tables require empirical warrant when applied; a correct output, statistical fit, operational reliability and full knowledge are distinct achievements. Existing knowledge acquisition and model revision remain completed at their earlier scopes. The [canonical result](../results/records/finite-fallible-inquiry-necessity.md) records checked evidence, while the [universal target](../results/records/scientific-inquiry-foundation.md) remains explicitly open.
 
 **中文。** 可错求知仍有不能任意取消的关系条件：要在相反可能之间保持一定作答覆盖并控制错误，必须有足够区别真正进入回应。不同分节和语言可以保留这些关系；未解释全部细节不等于否认必要关系。此处完成条件性必要约束及其证明，完整核心的科学普遍必要性仍须对应论证，不由局部 Lean 检查冒充完成。
+
+## 9. Necessity on the unified spine
+
+13 October 2026. This continues Ren's request to complete the necessary scientific foundation, after reviewing the new shared results. Begin with preparation, interaction, retained effects and revised responses in one unfolding. Inquirer, record, instrument and investigated phenomenon are differentiated relationships within it. Their scientific adequacy concerns what those relationships actually enable and constrain.
+
+**The strongest established structural instance is now exact:** where two frames are determined up to relational likeness, agreeing on every finite move-course possibility and every declared endpoint claim is equivalent to being alike. The checked `Becoming.alike_iff_sameTests` permits different configuration types. Applied to an independently warranted task of exactly this scope, it requires an adequate rival to preserve the relevant structure, without requiring our vocabulary. [Result and proof scope](../results/records/tests-fix-likeness-where-determined.md).
+
+The scope matters. The same core proves a case with the same possible move courses and different branching structure: after the first move one process retains both alternatives, while the other has already settled which is left. This limits reconstruction from that test family when the branching condition is absent; it is not a counterexample to the theory that already explains the difference. Nor is agreement on all these formal tests a fact established merely by collecting a finite sample.
+
+Other achievements have their own necessary relations. The [finite fallible bound](../results/records/finite-fallible-inquiry-necessity.md) constrains usable distinction; [testing](../results/records/testing-within-registration.md) connects registration to refutation and judgment; [generalization](../results/records/generalization-through-lumping.md) locates the world's agreement needed for transfer; [bounded identification](../results/records/identification-where-bounded.md) states when a finite record determines the course. The [contextual result](../results/records/contextual-registration.md) preserves context where dropping it would misrepresent registration. These are completed inputs, not new pending mechanism requests.
+
+The remaining foundational obligations are now separated:
+
+- **Conditional law:** scientific accounts must respect a correctly applied law under its stated conditions. The theory does not require every scientific object to satisfy every conditional law's antecedent.
+- **Actual correspondence:** the inquiry must instantiate the representation, meanings and conditions used. Pure-core derivation alone does not establish this. Claims indexed by context and material quantities read as natural numbers are different representation questions, not one blanket limitation.
+- **Whole-core indispensability:** the independently specified scientific scope must require the full content claimed necessary, even under an adequate alternative description. The established structural instance does not cover every scientific undertaking by declaration.
+
+The implementation of a distinction used in a response is necessary to explaining that use. Its historical formation is an additional explanatory undertaking, not a demand that every isolated scientific prediction explain the whole genealogy of its instrument. A comprehensive explanation must include knowing and modeling among the activities it explains; the further claim that our representations give every possible inquiry's necessary constitution is still unproved. This retains the nondual starting point while making its remaining philosophical burden specific.
+
+**Completion judgment:** the correspondence and counterreview are complete for the accepted results used here; the original full target is not. No unique-ontology requirement has been added, no ethical premise is made the missing scientific step, and no impossibility of a necessary foundation is asserted. The next evidence must establish the scientific coverage of a disputed core commitment, or retain an adequate same-task rival that really denies it. More local theorems, without that connection, do not close the target. [Full argument, premise mapping, source assessment and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#11-necessity-correspondence-on-the-unified-becoming-spine).
+
+**中文。** 共同核心已经提供实质的科学奠基内容：在明确条件下，完整的既定检验族迫使不同描述保存相同的关系结构；辨别、检验、推广和有界辨识也分别给出必要条件。科学必须遵守条件规律，不等于所有科学对象都满足其前件。推导、实际对应与完整核心的不可缺少性须分别建立。形成使用关系、解释其历史形成，以及证明所有求知都必须具有整个核心的构成，亦须分清各自的解释范围。本轮接通并反审既有成果；完整科学普遍必要性仍未证成，不能把完成这次对应工作写成整个目标已完成。
+
+## 10. Reliable discrimination needs operative relational connectivity
+
+13 October 2026. The relation between activity, retained effects and an answering formation can now be stated on the shared spine. The new peripheral adapter composes the existing finite fallible bound with `Flow.alike_beyond_response` and the response derived from a common `ExchangeLaw`. Under balance, matching initial registrations outside reach, the same formations present, and a complete registration interface, commitment coverage is at most the two error weights plus the weight of comparisons within responsive reach. Entirely beyond reach, coverage equals the two error weights. The answering rule may abstain or err.
+
+This is a necessary constraint on an independently specified discrimination achievement. The native example has one formation give to a shared condition and a distinct reader correctly distinguish the alternatives; another rule ignores the same signal and errs. Having a route is not enough to know. Also, this structural reach ranges over exchanges in the whole compared courses: it is not yet a time-ordered causal path by the answer time. Previously informative initial records and prediction from common causes must be represented through their actual relationships.
+
+The adapter checked 13 theorems / 17 source declarations. Eleven have empty axiom reports; six use only the standard `propext` and `Quot.sound`. It remains outside the pure core. This extends the [existing finite-fallible result](../results/records/finite-fallible-inquiry-necessity.md), with [premises, witnesses, counterreview and retained evidence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#12-from-fallible-discrimination-to-the-unfoldings-operative-relations).
+
+**中文。** 可错辨别所需的区别，已正式接到共同脊柱的实际交换、所识和响应关系上：在所列条件下，作答覆盖不能超过两类错误与关系可达权重之和。这证明了一项实质必要条件；具体反例同时保留“有可达关系仍会认识失败”。它约束能充分对应到此机制的科学说明，尚不证明整个理论的全部表示与构成承诺对所有科学普遍必要。原目标不因这一步完成而自动完成。
+
+## 11. Test necessity without presupposing the verdict
+
+[Ren's 13 October correction](../../../sources/15-codex-theory-conversations/2026-10-13-scientific-foundation-as-testable-hypothesis.md) authorizes continuing with full-core scientific necessity as a revisable hypothesis. It is not a proof premise. Evidence may establish the full claim, support necessity of only part of the core, or require a correction. Compatibility, correctness, successful inquiry and the necessity of the complete account are distinct questions; a scientist need not first accept our theory for the relationships it describes to operate.
+
+The first concrete test changes the role assigned to **balance** in §10. Keep the same native histories and correct reader, but omit the giving from the exchange description: the answer task still succeeds, while that description fails balance and its apparent reach no longer supports the quantitative conclusion. The omitted relationship remains present in the fuller native account. This separates correct output from completeness of the explanation, without refuting the whole account through a weaker description.
+
+Counting the omitted change as the core's existing residual relatum restores balance, but does not automatically restore the response condition. The residual immediately differs despite the common initial reading; it must be accounted for among the differences or explained under an appropriate response law. Conversely, a checked generalization proves that **common residual exchange is enough for beyond-reach registration and answer equality**, even when the original descriptions are not balanced. Absolute balance is a special case, and a nonzero-residual witness makes the weakening explicit. Common residual exchange is sufficient here, not established as the least necessary condition.
+
+The [existing study §13](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#13-test-the-premise-what-is-necessary-for-success-and-what-is-necessary-for-a-description) gives the exact premises, failed inferences, proof evidence and next correspondence question. It extends the same finite-fallible result with 15 theorems and 2 definitions; it does not count a second statistical discovery or close the full-core target.
+
+**中文。** 我们现在检验“完整理论是否必要”，不预定答案。第一项具体结果已经修正前提的地位：读数正确不证明描述已经写全机制；将漏项补入表示也不自动证明其响应根据；不可辨别结论可以在“两侧未计入的变化相同”这一比各自绝对平衡更宽的条件下成立。完整理论所描述的关系、某种表示的条件和科学任务的成功必须逐项接通。只在当前对话持续研究，不设自动安排。
+
+## 12. Warrant can be sufficient for a task without exhausting a device
+
+Calibration, recording, comparison and revision unfold through actual relationships. A reference and a reader acquire their roles within that activity. Their ability to support a conclusion need not await an exhaustive description of everything participating in it.
+
+The [continued source assessment and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#14-warrant-the-relevant-restrictions-without-requiring-complete-device-knowledge) separates a mathematical result about a given law from grounds for using it in an actual inquiry. The core's finite-sensitivity construction and bounded identification are completed conditional results. They do not require every scientific judgment to reconstruct its instrument's complete law, and they do not certify their own empirical conditions.
+
+The positive direction is **task-specific warrant for the restrictions that license the inference**: what the record concerns, which alternatives and errors are covered, and what changes would defeat the application. Grounds may be distributed across construction, calibration, theory and cross-checks. The [primary-source dossier](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md#6-warrant-without-exhaustive-device-knowledge) supports this methodological distinction; it supplies neither a new empirical test of our formal model nor a unique-ontology verdict.
+
+This advances the necessity question by removing an unjustified epistemic burden. An adequate alternative may preserve the relevant relations while omitting internal detail. To establish more, fix a disputed core commitment and show whether the same scientific achievement survives its genuine removal. The next chosen comparison concerns preserved branching alternatives in intervention and continuation, building on the already checked distinction between trace agreement and relational likeness. Full-core indispensability remains open.
+
+**中文。** 科学判断的根据可以足以支持当前任务，而未穷尽装置。需要分别建立“这些条件如何支持结论”和“实际活动为何符合这些条件”；一次成功不能独自承担后者。这里修正的是我们从形式结果通往科学普遍必要性的连接，不是否定已完成证明。下一步检验干预与接续任务是否需要保留分支替代；相容、局部必要和完整核心不可缺少仍分别判断。
+
+## 13. Preserve the continuation content the scientific task actually claims
+
+Preparation, setting and recording change what subsequent activity can do. An explanation of an apparatus that accepts a command during preparation must account for that response relation in the stated range. Listing successful completed sequences does not yet say which operations remain available at a particular reached stage.
+
+The [continuation-task assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#15-which-continuation-relations-does-a-scientific-task-require) connects this independently stated task to the core's existing early/late branching witness. It also accepts the strongest history-based alternative: the core already proves that all finite histories with both endpoints retained determine the step relation on the same state/action types. Required relational content can survive a change of description.
+
+The [primary-source comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md#7-remaining-alternatives-actual-controls-and-the-limits-of-a-trace-comparison) makes setting and continuation scientifically relevant while limiting the inference. Existence of a path, reliable execution of a command, and physical access to every mathematical test are different claims. A finite experiment does not by itself supply the complete modal scope needed to reconstruct bisimulation. No particular quantum ontology is inferred.
+
+The supported direction is **preservation of task-relevant continuation content**, with coverage, error, timing and actual correspondence explicit. It permits histories, equations or graphs that retain that content. This supplies a scoped necessity argument and counterreview; the full core's science-wide indispensability remains open. The next application concerns fallible command execution at a declared stage, reusing completed discrimination and finite-plan results without treating whole-course reach as a deadline guarantee.
+
+**中文。** 一项科学说明若承诺解释“走到这里以后还能执行哪些操作”，就须保存决定这项能力的关系。只列出发生过的成功轨迹可能遗漏它；保留必要条件的历史说明则可以合格。必要内容与表示方式分开，存在路径与可靠执行分开，实际实验与全体语义测试分开。本轮完成这一对应与反审，未新增证明或实验，也未把完整理论的普遍必要性宣布完成。
+
+## 14. What arrives in time to change a response
+
+A change in shared conditions can enter later registration and response. The order of those exchanges is part of the explanation: a connection available later cannot account for a distinction used earlier. The [checked temporal connection](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#16-a-distinction-must-arrive-before-the-answer-that-uses-it) now expresses this on the same native flows and webs.
+
+With matching initial levels, balance and common present formations before the answer step, response through past registration outside a declared source, and a common complete readout, absence of a timely route implies equal answers. Time-specific registration excludes future-only support requirements. The route relation refines the older whole-course reach; a delayed native signal witnesses the difference. It remains a potential route, since an available signal can be ignored.
+
+Composing this with the existing finite discrimination theorem bounds committed-answer weight by the two error weights plus timely-route weight. The weighted version explicitly supplies a decision of the route, the paired target labels and finite natural weights. This is a completed conditional necessity connection, not a sufficient theory of knowledge or an empirical certification of an apparatus.
+
+The [causal correspondence review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md#8-timing-command-execution-and-causal-correspondence) separates assigned, delivered and executed commands from outcomes. Earlier informative records can explain prediction; this result does not require a future target to send a signal backward. A physical deadline needs a justified clock and interface mapping. The next scientific application must warrant initial-evidence pairing and command execution rather than merely regroup successful records. Full-core science-wide necessity remains open.
+
+**中文。** 现在已把“最终相连”推进到“何时进入所识并可能改变回应”。明示条件下，截止时仍不可及时到达的区别不能改变答案；有限作答覆盖受两侧错误与及时可达权重约束。关系存在、及时进入、正确使用和经验根据仍有各自的推论责任。25项新增形式定理完成这一连接，未把完整理论宣布为科学的普遍必要基础。
+
+## 15. Scientific standing and warranted correction
+
+Inquiry develops within the same unfolding it studies: traces are produced, instruments and expectations formed, evidence selected and interpreted, and conclusions sustained or revised. The [demarcation assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#17-stronger-foundations-and-the-assessment-of-scientific-standing) distinguishes the causal existence of these relationships from their evidential warrant. A belief can be well maintained and still be false; a mechanism can respond to records without warrant for their interpretation.
+
+The stronger philosophical proposal is that **claimed empirical authority needs inspectable grounds for the distinctions it makes, while claimed continuing correction needs operative routes from relevant defeats to changed conclusions or methods**. This is a proposed standard of inquiry, not a new Lean theorem or a complete definition of science. The checked timely-discrimination results constrain a specified task under explicit premises; the interpretation as an epistemic requirement has further argumentative burdens.
+
+Evaluate the claim, procedures, relevant community and research stage together. Ask what is claimed; what evidence would change its assessment; why the evidence bears on it; how others can challenge the inference; and what happens when it fails. The test is not a prestige measure or an additive score. An adverse result can be good science; an early theory can lack confirmation without being pseudoscience; an empirical claim can be correct by accident. Strong grounds for rejecting scientific authority arise where a practice systematically insulates its favored verdict from relevant evidence while claiming that authority. Honest error and limited resources alone do not establish that pattern.
+
+The [source assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-EVIDENCE.md#9-demarcation-without-confusing-science-with-success) preserves historical inquiry, probabilistic assessment, auxiliary-assumption diagnosis and informative non-replication. No universal single-experiment falsifier is required. Appropriate independent scrutiny does not require unrestricted release of protected data. Non-empirical philosophy and mathematics have their own warrants and are not rendered worthless by this distinction.
+
+Apply the same scrutiny here. Formal breadth can explain how to represent many possibilities; it is not by itself empirical confirmation of which possibilities occur. A successful competing account must not be dismissed as unscientific merely for rejecting our theory. Checked conditional claims, argued philosophical proposals and the open full-foundation hypothesis keep their different statuses. The proposed demarcation assessment has received author counterreview, not a cross-domain empirical validation.
+
+**中文。** 判断科学性，应看同一研究活动中，主张、证据、判断与纠错怎样实际相连，并审查这些联系有什么根据。科学允许犯错，也允许暂时不知道；科学权威不能靠系统性排除相关反证来维持。这个标准比口头承诺“可证伪”更具体，但还不是普遍划界定理。它也约束本理论：条件证明不等于现实对应，“能够容纳一切”不等于得到一切现象的证实，竞争说明和真正反例必须能迫使我们修订。

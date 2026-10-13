@@ -858,6 +858,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)
 
+## comparison-content-under-regrouping ← comparison-by-widening
+
+`formal-reuse` — 分组的扩展等价接到原 paths_extension_iff_widens。 / The regrouping equivalence feeds the existing paths_extension_iff_widens.
+
+**Producer output / 上游输出:** 水平路径的 Extension 等价于 Widens。 / Extension on level paths is equivalent to Widens.
+
+**Consumer input / 下游输入:** 局部保真后的分组 Extension 仍等价于同一 Widens。 / Locally faithful grouped Extension is equivalent to the same Widens.
+
+**Retained conditions / 保留条件:** 两处保真；living 为 True。 / Fidelity at both paths; living is True.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean)
+
+## comparison-content-under-regrouping ← four-cases-of-a-part
+
+`formal-reuse` — 保留旧 Transfer.mixed 的实际所得与损失，不重证旧混合定理。 / Retains the real gains and losses of Transfer.mixed without reproving that theorem.
+
+**Producer output / 上游输出:** 搬运与扣留水平互相超出。 / The moving and withheld level paths exceed one another.
+
+**Consumer input / 下游输入:** 生成的两条路线保持混合，分组却相同。 / The generated courses remain mixed although their grouped readings agree.
+
+**Retained conditions / 保留条件:** 新逐步证明将生成水平对应到原水平路径。 / New stepwise proofs identify generated levels with the original paths.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean)
+
+## comparison-content-under-regrouping ← counterfactual-is-the-course
+
+`formal-reuse` — 复用 ExchangeLaw 的生成、withAct、可行与平衡等价及共同其余律。 / Reuses ExchangeLaw generation, withAct, feasibility/balance equivalence and the common rest-law.
+
+**Producer output / 上游输出:** 从初态及动作生成水平与交换；可行推出平衡。 / Levels and exchange generated from start and act; feasibility gives balance.
+
+**Consumer input / 下游输入:** 两条可行路线及其实际损失见证。 / Two feasible courses and their actual loss witness.
+
+**Retained conditions / 保留条件:** 给定交换律；本例证明 Nonanticipating 和 Feasible。 / The law is supplied; Nonanticipating and Feasible are proved in this witness.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean)
+
 ## comparison-where-the-rest-responds ← testing-within-registration
 
 `formal-reuse` — 复用 Flow.RegisteredFrom、Flow.RegisteredFromEither、Flow.WithinRegistration、supportOnly、Web.Registers、Web.RegistersAlikeUpTo、Flow.exchange_agrees_within 与 Flow.withheld_eq_of_false；限定是 Flow.alike_within_closed 以回应所及之外为区域的实例。 / Reuses Flow.RegisteredFrom, Flow.RegisteredFromEither, Flow.WithinRegistration, supportOnly, Web.Registers, Web.RegistersAlikeUpTo, Flow.exchange_agrees_within and Flow.withheld_eq_of_false; the confinement is the instance of Flow.alike_within_closed whose region is what lies beyond the responsive reach.
@@ -1950,6 +1986,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean)
 
+## finite-aggregation-within-restorable-basic-losses ← practical-judgment-g0-j
+
+`interpretive` — 复用 J 的强度区分、有界选择与 P95 的及时接续内容；这些确定应用输入，不证明 FR 的合并充分性。 / Reuses J’s strength distinctions, bounded choice and P95’s timely-continuation content; these supply application inputs without proving FR’s aggregative sufficiency.
+
+**Producer output / 上游输出:** 正面意义条件、充分比较与实践选择区分，以及实际需要、过渡和替代覆盖。 / Positive-significance conditions, sufficient comparison versus practical selection, and actual needs, transition and replacement coverage.
+
+**Consumer input / 下游输入:** FR 的支持对应及何时可成为新的充分击败根据。 / FR’s support correspondence and its possible role as a new sufficiently defeating reason.
+
+**Retained conditions / 保留条件:** 额外承担 FR；保留 J2 的基本／可放弃范围及有效机会历史。此规范依赖是解释性接续；P100 的形式复用另列。 / Adds FR while retaining J2’s basic/optional scope and valid chance history. This normative dependence is interpretive; P100 formal reuse is listed separately.
+
+[Connection evidence / 连接证据](theories/becoming/chapters/PRACTICAL-JUDGMENT.md)
+
+## finite-aggregation-within-restorable-basic-losses ← becoming-spine-instances
+
+`formal-reuse` — 复用共享 Frame、Run 及 Run.window_trace，原成果不重记；新外围应用另接旧损失比较 Strict 与 strict_improvement_transport。 / Reuses shared Frame, Run and Run.window_trace without recounting their results; the new peripheral application also uses the earlier loss comparison Strict and strict_improvement_transport.
+
+**Producer output / 上游输出:** 每个实际运行的有限窗口是同一过程的 Trace。 / Every finite run window is a Trace of the same process.
+
+**Consumer input / 下游输入:** 四条修复路线从同一初态生成历史，作为历史损失和匹配的输入。 / Histories of four repair courses from one start feed historical losses and matching.
+
+**Retained conditions / 保留条件:** 给定共同修复律及相应运行；充分性和生活内容对应不由 Trace 推出。 / A common supplied repair law and its runs; Trace establishes neither sufficiency nor living-content correspondence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean)
+
+## finite-aggregation-within-restorable-basic-losses ← comparison-content-under-regrouping
+
+`interpretive` — 复用比较内容保真纪律，识别时间切分、损失指认及整段后效之间的差异；不把接纳读法的精确条件外推为一般生活分解定理。 / Reuses comparison-content fidelity to distinguish time partition, loss reference and whole effects, without extending the exact admission-reading condition into a universal decomposition theorem.
+
+**Producer output / 上游输出:** 保持实际内容与遗漏真实差异的分组读法已有区分。 / Faithful regrouping is distinguished from readings that omit real differences.
+
+**Consumer input / 下游输入:** P100 完整片段同等性与 P102 联合内容保留的对应要求。 / Correspondence requirements for P100 episode equivalence and P102 retention of joint content.
+
+**Retained conditions / 保留条件:** 解释性接通，非新分组模型或已证明所有分割不变；损失集中和规范充分性单独说明。 / Interpretive application, not a new grouping model or proof of invariance under every partition; concentrated loss and normative sufficiency remain separate.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md)
+
 ## finite-basis-common-interpretation ← derivation-soundness
 
 `formal-reuse` — 反向从共同根基到共同闭包使用健全性；局部前提仍保留。 / The common-basis-to-common-closure direction uses soundness; local premises remain explicit.
@@ -1961,6 +2033,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 有限覆盖、可接纳解释和根基真并未由健全性取得。 / Finite coverage, admissibility and basis truth are not acquired by soundness.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean)
+
+## finite-fallible-inquiry-necessity ← comparison-where-the-rest-responds
+
+`formal-reuse` — alike_beyond_response 给出不可达处的相同所识，answer_alike_beyond_response 接为相同作答；不重证闭包。 / alike_beyond_response produces identical registration beyond reach; answer_alike_beyond_response consumes it to obtain identical answers without reproving the closure.
+
+**Producer output / 上游输出:** 回应所及之外逐时识得相同。 / Identical registration at every time beyond responsive reach.
+
+**Consumer input / 下游输入:** 相同作答供给既有可错覆盖界。 / Identical answers supply the existing fallible coverage bound.
+
+**Retained conditions / 保留条件:** 平衡、相同在场形成和相关初态、其余经所识回应、完整作答接口。 / Balance, the same present formations and relevant initial levels, response through registration, and a complete answering interface.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+
+## finite-fallible-inquiry-necessity ← counterfactual-is-the-course
+
+`formal-reuse` — ExchangeLaw.Through.responds 从同一律推出回应前提，接入 answer_alike_beyond_law 与加权界。 / ExchangeLaw.Through.responds derives the response premise from one law for answer_alike_beyond_law and the weighted bound.
+
+**Producer output / 上游输出:** 同一经所识而读的律之两历程满足回应前提。 / Two courses of one registration-dependent law satisfy the response premise.
+
+**Consumer input / 下游输入:** 不可达处相同所识与作答的前提。 / The response premise of beyond-reach registration and answer equality.
+
+**Retained conditions / 保留条件:** 所给律经所识而读；部分之外两历程遵从该律。 / The supplied law reads through registration; outside the part both courses follow it.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+
+## finite-fallible-inquiry-necessity ← imbalance-as-relatum
+
+`formal-reuse` — 复用 Flow.withImbalance、withImbalance_balances 与 balances_iff_idle，检验表示平衡后回应条件是否保持，并把同余差额作为弱于绝对平衡的充分条件。 / Reuses Flow.withImbalance, withImbalance_balances and balances_iff_idle to test whether response survives balancing by representation, and to derive common residuals as a sufficient condition weaker than absolute balance.
+
+**Producer output / 上游输出:** 补计差额后的流平衡，原平衡恰是新增项不给不取。 / Counting residuals balances the flow; original balance is exactly the added relatum neither giving nor taking.
+
+**Consumer input / 下游输入:** 闭合区域包含不识的新增项；两侧新增项交換相同可应用既有闭合区域不可辨别定理。 / The closed region includes a nonregistering added relatum; equal residual exchange on both sides permits the existing closed-region blindness theorem.
+
+**Retained conditions / 保留条件:** 共同在场形成、相关初始所识、原区域封闭及原形成的回应条件；新增项的交换逐时逐条件相同。 / Common present formations, relevant initial registrations, original closed region and response; the added relatum exchanges alike at every time and condition.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
 
 ## finite-granularity-question-recovery ← branching-tests-bisimulation
 
@@ -3298,6 +3406,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean)
 
+## practical-judgment-g0-j ← becoming-return-grades
+
+`interpretive` — P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。 / P95 reuses this result to test the content of support and repair without altering its proof scope.
+
+**Producer output / 上游输出:** 最终回程与有界回程的区别及无统一回程界的见证。 / The distinction between eventual and bounded return and a witness with no uniform return bound.
+
+**Consumer input / 下游输入:** 及时恢复和过渡中支持的实际对应要求。 / Correspondence requirements for timely recovery and support through transition.
+
+**Retained conditions / 保留条件:** 具体需要时段、储备和生活存续另需论证；不是跨模块组合定理。 / Actual need windows, reserves and living continuity require further warrant; this is not a cross-module composition theorem.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Return.lean)
+
+## practical-judgment-g0-j ← substitution-preserves-consumption
+
+`interpretive` — P95 复用该结果检验支承与修复的具体内容，不改变原证明范围。 / P95 reuses this result to test the content of support and repair without altering its proof scope.
+
+**Producer output / 上游输出:** 给定支持门控律下焦点替代后持续活跃、维持者永久失去支持。 / Focal persistence after substitution while the sustainer permanently loses support under the supplied support-gated law.
+
+**Consumer input / 下游输入:** 替代是否覆盖原来共同支持的生活，而非只覆盖焦点。 / Whether replacement covers living relations previously supported together, rather than only the focal formation.
+
+**Retained conditions / 保留条件:** 保留正所需、阈值顺序、支持起点及持续超取前提；替代供给给定、代价未建模；无伦理排序。 / Retains positive needs, threshold order, supported start and persistent overdraw; alternative supply is given and its cost unmodelled, with no ethical ranking.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean)
+
 ## prefix-observation-loss ← finite-granularity-question-recovery
 
 `formal-reuse` — 修复接用精确宏问题编译；反例不借用有限恢复前提。 / Repair uses exact block-question compilation; the counterexample does not use finite-recovery hypotheses.
@@ -4064,7 +4196,63 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## scientific-inquiry-foundation ← finite-fallible-inquiry-necessity
 
-`interpretive` — 已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。 / The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished.
+`interpretive` — P92接到原生关系的有限界保持；P94用固定任务检验平衡及补计余项，并推广定性不可辨别到共同未计入交换。此输入区分机制描述前提与科学必要性。 / P92’s finite bound through native relations is retained; P94 fixes the task to test balance and residual accounting and generalizes qualitative blindness to common unaccounted exchange. This input distinguishes mechanism-description premises from scientific necessity.
+
+## scientific-inquiry-foundation ← testing-within-registration
+
+`interpretive` — 识、否证与共同回应给出实际使用的接口；观察关系和实际校准仍须对应。 / Registration, refutation and common response supply the use interface; observation and actual calibration retain correspondence obligations.
+
+## scientific-inquiry-foundation ← experiment-needs-return
+
+`interpretive` — 实验与转移的条件保留，不把每个局部科学成就改成全形成史的解释。 / Retain conditions of experimentation and transfer without requiring every local achievement to explain its whole formation history.
+
+## scientific-inquiry-foundation ← learning-by-refutation
+
+`interpretive` — 复用归纳的负面与正面结果；不再把局部学习机制登记为待建。 / Reuse negative and positive induction results; do not reopen the completed local learning mechanisms.
+
+## scientific-inquiry-foundation ← generalization-through-lumping
+
+`interpretive` — 归并与世界的实际对应约束推广，不由拟合单独提供。 / Actual correspondence between the grouping and the world constrains generalization; fit alone does not supply it.
+
+## scientific-inquiry-foundation ← identification-where-bounded
+
+`interpretive` — 状态界下有限记录确定历程，界及确定性不由任意有限记录自证。 / A finite record fixes a course under state bounds; arbitrary finite records do not certify the bound and determinacy.
+
+## scientific-inquiry-foundation ← process-and-frame-as-readings
+
+`interpretive` — 历程、主张与世界的形式对应支持内在说明，不独自证明所有科学的完整构成。 / Formal correspondences among histories, claims and worlds support immanent explanation without alone proving every inquiry’s full constitution.
+
+## scientific-inquiry-foundation ← tests-fix-likeness-where-determined
+
+`interpretive` — 双方在相同之下确定时完整检验族固定关系结构；原生分支反例阻断无条件扩大，非全理论反例。 / Complete tests fix relational structure where both frames are determined up to likeness; the native branching counterexample blocks unconditional expansion, not the theory itself.
+
+## scientific-inquiry-foundation ← contextual-registration
+
+`interpretive` — 带语境的表示保存识，去语境失败不等于整个核心不能表示科学。 / Context-indexed descriptions preserve registration; failure to erase context does not imply failure of the entire core to represent science.
+
+## scientific-inquiry-foundation ← counterfactual-is-the-course
+
+`interpretive` — P97复用有限敏感性给出的完整形式接口；给定律的构造不等于实际规律的经验认证。 / P97 reuses the complete formal interface from finite sensitivity; a construction for a supplied law is not empirical certification of the actual law.
+
+## scientific-inquiry-foundation ← histories-fix-law-up-to-dead-ends
+
+`interpretive` — 全部端点有限历史与逐步律等价，承认保留关系内容的历史对手；不把完整家庭当有限样本。 / All endpoint-indexed finite histories determine the step law; admits a history-based rival preserving relational content, without equating the complete family with finite samples.
+
+## scientific-inquiry-foundation ← branching-tests-bisimulation
+
+`interpretive` — 图像有限及全有限模态族下的结构结果保持；实际装置未因此具备全部测试能力。 / Retains the image-finite/full-finite-modal-family structural result; actual apparatus is not thereby able to implement all those tests.
+
+## scientific-inquiry-foundation ← configurations-alike-by-relation
+
+`interpretive` — 既有桥接把外围双模拟与脊柱关系对应；不新增物理对应定理。 / The existing bridge identifies peripheral bisimulation with the spine relation; no new physical correspondence theorem.
+
+## scientific-inquiry-foundation ← finite-continuation-plans
+
+`interpretive` — 复用有限可行性与观察分支计划的等价及盲目／感知／改变依赖见证，区分存在路径和共同可用操作；保留旧模块范围，不声称新增脊柱适配。 / Reuses finite viability/observation-branching-plan equivalence and blind/sensing/dependency-change witnesses to distinguish paths from commonly usable operations; preserves the original module scope without claiming a new spine adapter.
+
+## scientific-inquiry-foundation ← timely-response-necessity
+
+`interpretive` — 已证逐时界作为具体命令任务的输入；实际对应与全核心必要性仍分开。 / The proved timed bound supplies the concrete command task; actual correspondence and full-core necessity remain separate.
 
 ## seeking-boundary ← recurrence-without-premise
 
@@ -4594,6 +4782,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 提供已检查的作用状态接口：局部损失经更广可逆交互产生；支持约化可用与保留共同关系的区别，不提供普遍根基。 / Provides a checked operative state interface in which local loss arises through a reversible wider interaction; supports the distinction between reduced access and retained joint relations, not universal grounding.
 
+## timely-response-necessity ← comparison-where-the-rest-responds
+
+`formal-reuse` — 及时所及接回原回应闭包。 / Timed reach reconnects to the original responsive closure.
+
+**Producer output / 上游输出:** 原生回应闭包及登记影响边。 / Native responsive closure and registered-exchange edges.
+
+**Consumer input / 下游输入:** reachedBy_within_response。 / reachedBy_within_response.
+
+**Retained conditions / 保留条件:** 源属于原部分且在场相同，不主张逆向。 / Sources belong to the old part and presence agrees; no converse.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
+
+## timely-response-necessity ← testing-within-registration
+
+`formal-reuse` — 复用完整过去登记。 / Reuses complete past registration.
+
+**Producer output / 上游输出:** 支持与观察构成的 RegistersAlikeUpTo。 / RegistersAlikeUpTo from support and observation.
+
+**Consumer input / 下游输入:** registration_alike_before 和 answer_alike_before。 / registration_alike_before and answer_alike_before.
+
+**Retained conditions / 保留条件:** 共同界面及回应条件明示，当步支持不等于未来需要。 / Common interface and response supplied; current support differs from future requirements.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean)
+
+## timely-response-necessity ← finite-fallible-inquiry-necessity
+
+`formal-reuse` — 复用原统计界，不重证统计不等式。 / Reuses the original statistical inequality.
+
+**Producer output / 上游输出:** fallible_inquiry_bound 的覆盖、错误及区别界。 / Coverage/error/distinction bound of fallible_inquiry_bound.
+
+**Consumer input / 下游输入:** coverage_le_errors_add_timed_reach 以截止前同答约束区别。 / coverage_le_errors_add_timed_reach bounds distinctions by deadline blindness.
+
+**Retained conditions / 保留条件:** 有限权重、相反目标、共同读数与及时可达判定。 / Finite weights, opposite targets, common readout and timely-reach decision.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean)
+
 ## trace-law-equivalence ← finite-trace-transport
 
 `formal-reuse` — 两个方向使用恒等映射的 trace_map；单步恢复另用已有引理。 / Both directions use trace_map with the identity map; step recovery separately uses the existing singleton lemma.
@@ -4860,7 +5084,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root ← practical-judgment-g0-j
 
-`interpretive` — 既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 / Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter.
+`interpretive` — 既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 §31保持认识许可与实践许可的区别，以及错误后的残余责任；不以有限接受自动解除J4要求。 / Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter. Section 31 preserves the distinction between epistemic and practical permission and residual responsibility after error; fallible acceptance does not automatically discharge J4.
 
 ## wisdom-root ← relational-generative-comparison
 
@@ -4870,9 +5094,221 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 `interpretive` — 既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。 / The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission.
 
+## wisdom-root ← wisdom-root-part-one
+
+`interpretive` — 复用完成的形式支撑，接到第16节独立陈述的智慧内容；对应是解释，不新增形式组合。 / Reuse completed formal support for the independently described wisdom content in Section 16; the correspondence is interpretive, not a new formal composition.
+
+## wisdom-root ← identification-where-bounded
+
+`interpretive` — 有界识别与稳定正确限定“智慧必须永久修订”的过强读法。 / Bounded identification and stable correctness limit the overstrong reading that wisdom must revise perpetually.
+
+## wisdom-root ← the-split-that-makes-sense
+
+`interpretive` — 已有保持所识未来与常值描述边界，用于第17节的内容保真检验；不主张实际忘却已由投影定理解释。 / Existing registered-future preservation and the constant-description boundary inform Section 17’s content test; actual forgetting is not claimed explained by projection theorems.
+
+## wisdom-root ← comparison-content-under-regrouping
+
+`formal-reuse` — §§23–24八项已检查适配直接调用：最低所需范围与任意Frame成立状态的判据分别保留。形式依赖仅及接通命题，不宣称普遍慧根已证。 §29再以原RespectsAt恢复同一互模拟中的主张，三个适配直接接到P69，形式范围不扩大为实际智慧证明。 / Eight checked adapters in Sections 23–24 directly reuse the source: requirement-profile and arbitrary-Frame realization criteria retain separate scopes. Formal reuse concerns the connecting claims, not completed universal wisdom-root necessity. Section 29 additionally uses RespectsAt to recover claims in the same bisimulation, with three direct P69 adapters; this formal scope is not an actual-wisdom proof.
+
+**Producer output / 上游输出:** 接纳保真与最低所需剖面的精确条件，及 Frame 内容恢复。 / Exact admission fidelity and minimum-requirement criterion, plus Frame content recovery.
+
+**Consumer input / 下游输入:** 供应所需剖面同一与分组保真，作为 Through 保留的关系前件。 在R所联系的配置上供应内容保真，使归并前后该同一R为互模拟等价。 / Supply profile identity and regrouping fidelity as the relational premises for Through preservation. Supply fidelity at R-related configurations to preserve and reflect that same bisimulation after regrouping.
+
+**Retained conditions / 保留条件:** 原Frame/Web、所问内容与分组；最低所需分支要求可判定性，任意Frame成立状态分支不要求。跨配置选择与同一配置中的主张选择不混用；不推出完整意义、实际算法或普遍智慧归属。 / Original Frame/Web, specified content and grouping. The requirement-profile branch needs decidability; arbitrary-Frame status does not. Keep selections across configurations distinct from selections among claims at a configuration; no complete semantics, executable algorithm or universal wisdom attribution is derived.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean)
+
+## wisdom-root ← acquired-binding-compositional-use
+
+`interpretive` — 习得绑定进入解释与实际执行，并保留错误绑定及解释／执行之别；第20节用于定位实际内容作用，不认领完整语义或新形式组合。 / Acquired bindings enter interpretation and execution while wrong binding and the interpretation/execution distinction remain. Section 20 locates operative content without claiming full semantics or a new formal composition.
+
+## wisdom-root ← binding-preserving-substitution
+
+`interpretive` — 原代入的全使用／全位置等价及同值误接检验所称内容依存；仅解释性应用，不是新的组合证明。 / The existing all-consumer/all-position equivalence and equal-value capture test attributed content dependence; interpretive application only, not a new composition proof.
+
+## wisdom-root ← constitutive-binding-assessment
+
+`interpretive` — 复用局部构成性根据；其更强的零前提元逻辑目标保持独立，不追加为慧根必要关系门槛。 / Reuse local constitutive warrant while keeping the stronger premise-free metalogical goal separate from wisdom necessity.
+
+## wisdom-root ← process-and-frame-as-readings
+
+`interpretive` — 复用活动、配置及动作保留，核对 Frame.world 不直接承载原生支持／交换的接口范围。 / Reuse realization, configuration and move preservation while auditing the native support/exchange scope of Frame.world.
+
+## wisdom-root ← space-and-its-parts
+
+`interpretive` — 复用 World.ofRoles 及生起／止息接口；共同类型的表示不独自证明智慧根基。 / Reuse World.ofRoles and arising/ceasing interfaces; a shared representation does not itself establish wisdom-root necessity.
+
+## wisdom-root ← life-as-condition-of-life
+
+`interpretive` — 复用角色嵌入的支持、更新、消耗和交换保留，并保留原角色同一的界限。 / Reuse the role embedding’s support, renewal, consumption and exchange preservation, retaining its role-identification boundary.
+
+## wisdom-root ← selection-under-registration-revision
+
+`formal-reuse` — §§23–24八项已检查适配直接调用：最低所需范围与任意Frame成立状态的判据分别保留。形式依赖仅及接通命题，不宣称普遍慧根已证。 / Eight checked adapters in Sections 23–24 directly reuse the source: requirement-profile and arbitrary-Frame realization criteria retain separate scopes. Formal reuse concerns the connecting claims, not completed universal wisdom-root necessity.
+
+**Producer output / 上游输出:** 经等价关系的所有旧选择保留恰当新关系细化；合并区别的遗失见证。 / All old selections through an equivalence survive exactly under refinement; a loss witness for merged distinctions.
+
+**Consumer input / 下游输入:** 消费 P91 的所需剖面关系，推出保留选择与接纳保真的等价及遗失见证。 / Consume P91 requirement-profile relations to connect selection preservation with admission fidelity and specialize the loss witness.
+
+**Retained conditions / 保留条件:** 原Frame/Web、所问内容与分组；最低所需分支要求可判定性，任意Frame成立状态分支不要求。跨配置选择与同一配置中的主张选择不混用；不推出完整意义、实际算法或普遍智慧归属。 / Original Frame/Web, specified content and grouping. The requirement-profile branch needs decidability; arbitrary-Frame status does not. Keep selections across configurations distinct from selections among claims at a configuration; no complete semantics, executable algorithm or universal wisdom attribution is derived.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean)
+
+## wisdom-root ← consequence-revised-reference-plan
+
+`interpretive` — 直接复用共同 Process/Trace/Through 上已经完成的取得、修订、安装及实际使用；不重开原机制。 / Directly reuse completed acquisition, revision, installation and actual use on the shared Process/Trace/Through; do not reopen the mechanism.
+
+## wisdom-root ← open-form-realization-under-revision
+
+`interpretive` — 直接复用同一实现见证到正面相关的已完成正式桥接；公开完成对应与 Unrestricted，不泛称仍缺规范连接。 / Directly reuse the completed formal bridge from the same realization witness to positive relevance; disclose completion correspondence and Unrestricted rather than calling the normative link generically missing.
+
+## wisdom-root ← recurring-reference-revision
+
+`interpretive` — §25消费已完成的实际形成、受支持持续及旧区别退役；P99→P103的内部连接已形式检查。本记录不将该过程直接等同智慧或伦理实例。 / Section 25 consumes completed formation, supported continuation and retired distinctions; the internal P99→P103 connection is formally checked. This record does not identify the process outright with wisdom or an ethical instance.
+
+**Producer output / 上游输出:** 从空参考形成接到一个实际无限运行；每轮修订、成功使用、回返、更替及旧区别损失。 / Formation from empty reference joins one actual infinite run, with revision, successful use, productive return, succession and loss of an old distinction.
+
+**Consumer input / 下游输入:** 慧根论证中取得、使用与所称接续的关系，以及全选择保留是否必要的检验。 / Relations between acquisition, use and attributed continuation in the wisdom argument, and the test of whether all-choice preservation is necessary.
+
+**Retained conditions / 保留条件:** P103指定的可靠接触、任务政策、开放生产和更替条件；独立智慧内容及规范对应不由运行本身供应。 / P103’s faithful contacts, task policy, open production and succession conditions; independent wisdom content and normative correspondence are not supplied by the run itself.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← finite-fallible-inquiry-necessity
+
+`interpretive` — §26消费已完成证明，检验独立智慧能力承诺中的可错辨别及关系条件；原成果内部形式组合保持，本记录不将全部智慧定义为该统计任务。 / Section 26 consumes completed proofs for fallible discrimination and relational conditions in independent wisdom-capacity claims. Original internal formal compositions remain credited; this record does not define all wisdom as that statistical task.
+
+**Producer output / 上游输出:** 有限可错辨别的覆盖／错误必要界及其已检查动态或及时关系组合。 / Necessary finite coverage/error bounds and their checked adaptive or timely-relational compositions.
+
+**Consumer input / 下游输入:** 原慧根仅凭全分支正确保证不足以覆盖的可错能力声明。 / Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone.
+
+**Retained conditions / 保留条件:** 实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、登记及回应条件。理论理解、观照与规范意义不由错误界定义。 / Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, registration and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← timely-response-necessity
+
+`interpretive` — §26消费已完成证明，检验独立智慧能力承诺中的可错辨别及关系条件；原成果内部形式组合保持，本记录不将全部智慧定义为该统计任务。 / Section 26 consumes completed proofs for fallible discrimination and relational conditions in independent wisdom-capacity claims. Original internal formal compositions remain credited; this record does not define all wisdom as that statistical task.
+
+**Producer output / 上游输出:** 有限可错辨别的覆盖／错误必要界及其已检查动态或及时关系组合。 / Necessary finite coverage/error bounds and their checked adaptive or timely-relational compositions.
+
+**Consumer input / 下游输入:** 原慧根仅凭全分支正确保证不足以覆盖的可错能力声明。 / Fallible capacity claims not covered by the wisdom argument’s perfect-answer guarantees alone.
+
+**Retained conditions / 保留条件:** 实际二项对比、完整输入、有限自然权重和原能力界；及时分支另需其原前缀平衡、共同初态、登记及回应条件。理论理解、观照与规范意义不由错误界定义。 / Actual binary contrast, complete input, finite natural weights and the declared capacity bounds; the timed branch additionally needs its prefix-balance, common-start, registration and response conditions. Error bounds do not define theoretical understanding, contemplation or normative significance.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← one-axiom-yields-g0
+
+`interpretive` — §27消费原结果说明当下成就与未来可能性的关系；不重证、不将给定读法直接认证为全部智慧或体验。 / Section 27 consumes the existing result to relate present achievement and future possibilities, without reproving it or certifying a supplied reading as all wisdom or experience.
+
+**Producer output / 上游输出:** 一般Frame在Unrestricted下的G0及最小正面相关，精确包括已实现的living内容。 / General-Frame G0 under Unrestricted and its least positive relevance, exactly including realized living content.
+
+**Consumer input / 下游输入:** 领会、观照与合宜结束的实际内容及其意义，不附加未来产出条件。 / Actual content and significance in apprehension, contemplation and appropriate ending, without an extra productive-sequel condition.
+
+**Retained conditions / 保留条件:** 所用Frame、living和实际对应公开；规范推论保留Unrestricted及相应实践承诺。可能性／活动排序的例子只检验给定读法，未生成体验或确立全智慧必要性。 / Disclose the Frame, living reading and actual correspondence; normative inferences retain Unrestricted and applicable practical commitments. Possibility/activity ranking examples test supplied readings without generating experience or establishing universal wisdom necessity.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← ranking-under-readings
+
+`interpretive` — §27消费原结果说明当下成就与未来可能性的关系；不重证、不将给定读法直接认证为全部智慧或体验。 / Section 27 consumes the existing result to relate present achievement and future possibilities, without reproving it or certifying a supplied reading as all wisdom or experience.
+
+**Producer output / 上游输出:** 同一原生历程的接纳／实际在场差异，以及以更多活动破同分把停歇排低的边界。 / Admission/presence differences on native courses and the rest boundary of activity-based tie breaking.
+
+**Consumer input / 下游输入:** 领会、观照与合宜结束的实际内容及其意义，不附加未来产出条件。 / Actual content and significance in apprehension, contemplation and appropriate ending, without an extra productive-sequel condition.
+
+**Retained conditions / 保留条件:** 所用Frame、living和实际对应公开；规范推论保留Unrestricted及相应实践承诺。可能性／活动排序的例子只检验给定读法，未生成体验或确立全智慧必要性。 / Disclose the Frame, living reading and actual correspondence; normative inferences retain Unrestricted and applicable practical commitments. Possibility/activity ranking examples test supplied readings without generating experience or establishing universal wisdom necessity.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← functional-joining-common-structure
+
+`interpretive` — §28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。 / Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition.
+
+**Producer output / 上游输出:** 精确接合说明的共同因子；唯一结果、精确与约简下的共同操作。 / A common factor for exact joining accounts; a common operation under functional joining, exactness and reducedness.
+
+**Consumer input / 下游输入:** 同一智慧解释中操作关系、内容根据与实际把握的共同必要性。 / Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation.
+
+**Retained conditions / 保留条件:** 原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。 / Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← multivalued-joining-common-structure
+
+`interpretive` — §28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。 / Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition.
+
+**Producer output / 上游输出:** 有限结果及完整分支问题下的共同结果类与指定输入对提升；源精确说明无需约简即可有共同因子。 / Common output classes and fixed-input lifting under finite outcomes and exact branch questions; a source exact account has a canonical factor without reducedness.
+
+**Consumer input / 下游输入:** 同一智慧解释中操作关系、内容根据与实际把握的共同必要性。 / Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation.
+
+**Retained conditions / 保留条件:** 原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。 / Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← joining-questions-survive-encoding
+
+`interpretive` — §28直接消费已完成的共同结构证明，核对其在慧根论证中的内容范围，不新增形式组合。 / Section 28 consumes the completed common-structure proof and audits its content scope in the wisdom argument; no new formal composition.
+
+**Producer output / 上游输出:** 伙伴也经同一编码翻译时，共同关系内部保留原接合问题。 / Joining questions remain valid within the induced relation when their partners use the same encoding.
+
+**Consumer input / 下游输入:** 同一智慧解释中操作关系、内容根据与实际把握的共同必要性。 / Joint necessity of operational relations, content/grounds and actual uptake in one wisdom explanation.
+
+**Retained conditions / 保留条件:** 原接合及问题范围须对应；精确、约简、唯一或有限结果只在原定理要求处使用。不将语义完整性当作个人全知，不由共同因子认证实际历史或规范意义。 / Correspondence of joining and question scope is required; exactness, reducedness and functional or finite outcomes enter only where stated. Semantic completeness is not personal omniscience, and the factor does not certify actual history or normative significance.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← configurations-alike-by-relation
+
+`formal-reuse` — §29三个适配直接消费P69的Bisimulation和Alike定义，与P91归并保真连接；形式信用仅及这三项接口。 / Section 29 directly consumes P69 Bisimulation and Alike in three adapters connecting them to P91 fidelity; formal credit is limited to these interfaces.
+
+**Producer output / 上游输出:** 同一个关系同时保留主张成立与步骤后继，以及由其给出的Alike。 / One relation matching realized claims and successor steps, and the Alike relation it witnesses.
+
+**Consumer input / 下游输入:** 归并保留原R；相关位置保真时反射原R；全局保真时保持和反射Alike。 / Regrouping retains R; related-state fidelity reflects R; global fidelity preserves and reflects Alike.
+
+**Retained conditions / 保留条件:** 同一动作和原主张词汇、同一分组；两侧原过程不变。恢复需要声明的保真条件，不给出原读法的实际充分性或规范根据。 / Shared actions and original claim vocabulary, one grouping and unchanged processes. Reflection needs the stated fidelity, without deriving actual adequacy or normative warrant.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RegroupingSelection.lean)
+
+## wisdom-root ← tests-fix-likeness-where-determined
+
+`interpretive` — §29消费原检验恢复与Choosing边界，不重证分支恢复或把反例称作智慧失败。 / Section 29 consumes original test recovery and the Choosing boundary, without reproving branching recovery or calling the witness a wisdom failure.
+
+**Producer output / 上游输出:** 相同之下确定时从线性检验恢复同一关系；Choosing在无此条件时同测但不相同。 / Linear tests recover likeness under determinacy up to likeness; Choosing agrees on tests without likeness when this condition is absent.
+
+**Consumer input / 下游输入:** 区别逐项存在的历程与同一后继关系，核对共同保留的强度。 / Distinguish separately possible courses from one successor-matching relation and audit joint preservation strength.
+
+**Retained conditions / 保留条件:** 保留原Frame与检验范围；Choosing没有主张，其见证关乎分支时机而非实际认知。 / Retain original Frames and tests; Choosing has no claims and concerns branch timing, not actual cognition.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← causal-models-as-processes
+
+`interpretive` — §30消费记录与模型固定性的区别，检验静态说明；不把自由重定向当成满足完整实际规律的反例。 / Section 30 uses record/model fixation to assess a static account, without treating unrestricted retargeting as a rival satisfying every actual law.
+
+**Producer output / 上游输出:** 未取配置—动作的结果不由记录单独固定；指定模型固定其结果。 / A record alone does not fix an untaken configuration/move; the specified model fixes its outcome.
+
+**Consumer input / 下游输入:** 核对关于替代行动的判断是否只诉诸实际记录，或还保留有根据的规律。 / Check whether an alternative-action judgment relies only on records or also retains warranted laws.
+
+**Retained conditions / 保留条件:** 原确定过程候选类、未取组合及两个不同配置；没有导出实际律、概率许可或普遍智慧定义。 / Original determined candidate class, untaken pair and two distinct configurations; no derivation of the actual law, probabilistic permission or universal wisdom definition.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
+## wisdom-root ← counterfactual-is-the-course
+
+`interpretive` — §30将P80共同律产生的替代历程接到生成评价，给保留这些关系的静态说明完整信用。 / Section 30 feeds P80 shared-law alternative courses into generative appraisal and credits static accounts retaining those relations.
+
+**Producer output / 上游输出:** 可行替代行动的历程及回应由同一律产生；行动可在过程内形成，原Loop的两种进程被相应行动固定。 / A shared law generates feasible alternative courses and responses; action can form within the process, and the original Loop courses are fixed by their acts.
+
+**Consumer input / 下游输入:** 供给道德判断becoming所比较的接续内容，不再自由供给第二流。 / Supply the continuation content compared in moral appraisal of becoming, without freely supplying a second flow.
+
+**Retained conditions / 保留条件:** 原非预知、平衡、可行、共同初态与在场条件；比较保留经识及意义覆盖；实际对应与G0/A/L/J/E另明示。 / Original nonanticipation, balance, feasibility, common start and presence; comparison retains registration and significance coverage; actual correspondence and G0/A/L/J/E remain explicit.
+
+[Connection evidence / 连接证据](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+
 ## wisdom-root-part-one ← testing-within-registration
 
-`formal-reuse` — 识、否证与他者之识（明）的规律。 / The laws of registration, refutation and others' registration (明).
+`interpretive` — 识、否证与他者之识（明）的规律。 / The laws of registration, refutation and others' registration (明).
 
 **Producer output / 上游输出:** 主张只经所识的差别被否证；检验是关系的；由识作出的判断是信念上的共同回应。 / A claim is refuted only through a registered difference; testing is relational; a judgment from registration is a common response over belief.
 
@@ -4884,7 +5320,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← learning-by-refutation
 
-`formal-reuse` — 归纳、学习与元层次的规律。 / The laws of induction, learning and the meta level.
+`interpretive` — 归纳、学习与元层次的规律。 / The laws of induction, learning and the meta level.
 
 **Producer output / 上游输出:** 无记录固定下一个；对角；按否证学习的否证有界、静止不能被否证；合并枚举。 / No record fixes the next value; the diagonal; learning by refutation bounded, its rest unrefuted; the merged enumeration.
 
@@ -4896,7 +5332,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← generalization-through-lumping
 
-`formal-reuse` — 理（Ren 的读法）、推广与训练的规律。 / The laws of 理 (Ren's reading), generalization and training.
+`interpretive` — 理（Ren 的读法）、推广与训练的规律。 / The laws of 理 (Ren's reading), generalization and training.
 
 **Producer output / 上游输出:** 推广恰在归并之处、正确恰在世界经归并同去之处；结构与变化是同一个归并；训练经数据选择。 / Generalization exactly where a lumping lumps, right exactly where the world goes alike across it; structure and change one lumping; training selects through the data.
 
@@ -4908,7 +5344,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← experiment-needs-return
 
-`formal-reuse` — 实验与检验的规律。 / The laws of experiment and testing.
+`interpretive` — 实验与检验的规律。 / The laws of experiment and testing.
 
 **Producer output / 上游输出:** 记录只在取过之处固定动作的结果；重复是返回；实验需要关于何者无关的模型。 / The record fixes an act's outcome only where taken; replication is return; experiment needs a model of what is irrelevant.
 
@@ -4920,7 +5356,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← seeking-boundary
 
-`formal-reuse` — 够的规律。 / The laws of enough.
+`interpretive` — 够的规律。 / The laws of enough.
 
 **Producer output / 上游输出:** 寻求恰在够处静止；“比现在更多”需要开放；“高于一切他者”不同时满足两个寻求者。 / Seeking rests exactly at enough; “more than now” needs openness; “above all others” never meets two seekers at once.
 
@@ -4932,7 +5368,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← runaway-distance-unregistered
 
-`formal-reuse` — 失控的规律。 / The laws of runaway.
+`interpretive` — 失控的规律。 / The laws of runaway.
 
 **Producer output / 上游输出:** 断裂还有多远不被自身之识识；观察储量则识之。 / How far the break is does not register through one's own registration; observing the stock registers it.
 
@@ -4944,7 +5380,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← selection-through-registration
 
-`formal-reuse` — 经识的选择与代理的规律。 / The laws of selection through registration and of proxies.
+`interpretive` — 经识的选择与代理的规律。 / The laws of selection through registration and of proxies.
 
 **Producer output / 上游输出:** 经识的选择恰及选择者所识；在识闭包之外不见；合起来的识选出缺口中的终结。 / Selection through registration reaches exactly what the selector registers; blind beyond the registration closure; pooled registration selects the ending in the gap.
 
@@ -4956,7 +5392,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## wisdom-root-part-one ← projection-carrying-a-law
 
-`formal-reuse` — 机制与改变自身规则的系统的规律。 / The laws of mechanism and of systems changing their own rule.
+`interpretive` — 机制与改变自身规则的系统的规律。 / The laws of mechanism and of systems changing their own rule.
 
 **Producer output / 上游输出:** 投影恰在相同者同去时承载规律；状态恰在规则不造成差别之处有自己的规律。 / A projection carries a law exactly where configurations alike go alike; the state has a law of its own exactly where the rule makes no difference.
 
@@ -4965,6 +5401,10 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 不加前提。 / No premise.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean)
+
+## wisdom-root-part-one ← identification-where-bounded
+
+`interpretive` — 有界识别说明为何无普遍完成的学习者不等于实际学习永不收束；用于必要性范围核对。 / Bounded identification distinguishes the absence of a universally completed learner from perpetual non-convergence in actual learning; used to check necessity scope.
 
 ## Wider composition evidence / 更广组合证据
 

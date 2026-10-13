@@ -1045,3 +1045,99 @@ Primary theoretical inputs reviewed here are Ren's ontology-first instruction, t
 The old §78 wall is narrowed rather than erased: universal classification is not required for every constructive conclusion. The new theorem establishes strict comparison and role requirements in a stated class of unsettled-classification cases. The next stronger inference reaches a real limit in the three-route schema: role agreement does not entail a common undefeated implementation. In actual cases with decision-relevant competing classifications, the remaining input is substantive living-role correspondence or a disclosed further comparison commitment; existing finite inquiry and risk practice are available. This does not demand universal recognition before action.
 
 `classification-robust-generative-comparison` records the distinct result with checked formal dependencies. `organizational-formation-from-generative-comparison` retains its completed original claim and receipt; its next-delta note and documentary references are updated after verifying the old theory/study prefixes and inversely preserving the shared source, including its concurrent market-session continuation. No historical proof receipt is rewritten. The bilingual M20 chain appends this result and its precise boundary; generated navigation comes from the canonical records. [Owned edits](CLASSIFICATION-ROBUSTNESS-INDEX-EDITS.json) and [documentary checks](CLASSIFICATION-ROBUSTNESS-CHECKS.json) certify only the owned integration, not every concurrent record.
+
+<a id="relational-comparison-content"></a>
+
+## 84. Comparison content from operative relations / 比较内容的关系根据 — P91, 13 October 2026
+
+**Result:** `comparison-content-under-regrouping`. **Reused:** `comparison-by-widening`, `four-cases-of-a-part`, `counterfactual-is-the-course`; `configurations-alike-by-relation` and `identity-across-steps` are related antecedents, not new formal dependencies. **Delta:** many-to-one regrouping of a fixed frame's claims, its exact claim-recovery condition, an operative characterization for admission, and generated alternatives with real losses hidden by grouping. This differs from bijective renaming, state bisimulation with a fixed claim alphabet, and the priority-classification uncertainty of §§79–83. **Supplied:** the unfolding and its claim reading; at the Web instance, discrete steps, natural levels and actual requirements; decidable requirements only for the exact minimum-profile characterization. **Evidence:** [Regrouping.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean), integrated into the existing pure core. The canonical record binds the final frozen receipt. **Consumer:** the existing extension/widening comparison now has a checked condition for surviving a change of descriptive granularity. No new normative axiom is introduced.
+
+### One unfolding, then its contents
+
+先有同一展开中的给予、取用、支持与维持：一种形成所需的关系能否维持，使它的继续在这段展开中成为可能或失去可能。形成、条件与对它们的描述是对此关系的不同读取；本轮沿用共同脊柱，不在其旁另立价值所有者。`Frame.regroup` 只改变主张的分组，原过程完全保留。分组标签既不是新的生命，也不是新增的生成内容。
+
+对于当前“接下来能形成什么”的读法，内容的区别须能在支持条件上落实。若各项依存可以判定，把形成 f 在条件 c 上的最低所需记为 d(f,c)：依存成立时为原所需，不依存时为 0。`admits_iff_requiredLevel` 证明：f 能被接纳，恰当每项水平达到 d(f,c)。`same_admission_iff_requiredLevel` 进一步证明：f、g 在所有水平测试中具有相同的接纳结果，恰当它们的最低所需逐项相同。充分方向直接由阈值传递；必要方向分别用 f、g 自身的最低所需作为测试水平，取得双向不等式。这不是将“好的”写进定义，也不依靠计数名字。
+
+The unfolding comes first; support, formation and description are readings of its relations. The new grouping leaves the process untouched. For the specific admission reading, each decidable requirement gives a least required level, zero on an unrequired condition. Admission is exactly meeting that profile. Two formations agree under every level test iff those profiles agree pointwise: testing each at the other's least profile proves necessity. This determines their content for admission, not their identity, value, activity, eventual effects or interchangeability.
+
+### The exact comparison connection
+
+At a configuration, recovering **every** original realization from grouped realization is exactly constancy of realization inside each group (`Frame.respectsAt_iff`). This is an exact characterization of claim recovery; it is stronger than merely preserving one particular pair's ranking by accident.
+
+| Checked statement | Contribution |
+|---|---|
+| `Frame.regroup_retains`, `Frame.regroup_gain_reflects` | Inclusion passes to groups; a genuinely new group contains a new realization. No fidelity condition is needed in these directions. |
+| `Frame.regroup_retains_iff`, `Frame.regroup_gain_iff` | Recovering inclusion requires fidelity at the successor; preserving a fine gain visibly requires fidelity at the baseline. These are sufficient local conditions, not alleged necessary conditions for each isolated verdict. |
+| `Frame.regroup_extension_iff` | With both local conditions, the existing extension comparison is unchanged. All claims count in this instance; selective living or significance readings need their own compatibility. |
+| `Web.regroup_faithful_iff_requiredLevel` | With decidable requirements, fidelity on **every level path** holds iff group members have identical minimum profiles at every step. All-level tests need not themselves be trajectories of the law. |
+| `Web.SameRequirements.respects`, `Web.SameRequirements.extension_iff_widens` | Same operative requirements and thresholds suffice without any decision assumption. This condition feeds the existing `Web.paths_extension_iff_widens`; no parallel comparator is introduced. |
+
+比较因而有了具体的保真责任：同一分组若只是压缩重复的接纳内容，它不改变扩大判断；若它合并了支持关系中能够不同成立的内容，它就可能掩盖损失。这里没有要求先完全认识一切才可行动。局部定理只要求在正在比较的两条路线处保真；所有水平上的刻画另有更强、公开的测试范围。无损分组保证当前偏序的可靠性，不是所有合理行动必须无损的额外道德公理。
+
+### A generated alternative with actual loss
+
+Reuse the existing `Transfer` relation: initially the first condition has one unit, the second none. Moving the conveyor transfers that unit; withholding it leaves it in place. The two dependent formations respectively require the first and second condition. The conveyor is the acting part; those differentiated dependencies explain the loss and gain before any evaluation is attached.
+
+`courseLaw true` and `courseLaw false` are `ExchangeLaw.withAct` instances with the **same** `quietLaw`, the same present formations and the same initial levels. `move_levels` and `wait_levels` prove that the generated courses give exactly the previously represented level paths. `courses_feasible`, `courses_balanced` and `courses_follow_same_rest` check actual feasibility, balance and the shared rest-law; the alternatives are not independently supplied favorable outcomes. The rest is inactive in this minimal witness; responsive-rest generality remains in P80 and is not newly demonstrated here.
+
+`generated_mixed_hidden` composes those outputs with the inherited `Transfer.mixed`: each course admits something the other loses. Merging the first and second formations into one category makes the grouped profiles identical at every step. `merged_not_respects` identifies the violated fidelity condition. Thus an apparent neutral comparison can hide real opposed changes. This is a demonstrable representational omission; it does not refute the richer relational account and does not decree which action is better.
+
+搬运例子已经把“同一规律产生的替代路线 → 实际所得与损失 → 描述能否保留这种差异”接通。没有把停止行动设为天然正确：搬运与保留各有一项相对所得，原来的混合状态仍保留。若实际整体关系还给出额外的共同继续、迫切需要或较佳方案，应将它们作为实质内容接入，再沿用已有比较与实践论证；不能把另一条路线丢失的生活仅靠重新命名消掉。
+
+### Author counterreview and boundary
+
+1. **Does co-admission establish identical lives?** No. Equal minimum profiles identify the admission reading only. Distinct lives may share those profiles while differing in history, reciprocal activity, unique expression or future effects. Include those contents when they bear on the actual question; their preservation does not follow from this theorem. Renaming a collective as ten nodes supplies no new admission content by itself, but the theorem does not erase real plurality merely because support thresholds coincide.
+2. **Does individual admission prove joint realizability?** No. A shared resource may admit each separately without sustaining both together. Joint formations or joint continuation claims must enter the frame in their own right. The existing separation/joint-realization results are credited; no independence of marginal possibilities is assumed.
+3. **Is the criterion circular?** The frame characterization exposes what is needed to recover claims and by itself supplies no world fact. The Web result adds a substantive structural test: the minimum support profiles, independently given by requirements, determine all-level equivalence. Which requirements actually obtain remains a correspondence question. Inaccessible test levels can make this stronger than fidelity on feasible courses.
+4. **Does this complete the strong foundation?** No. Lean proves the conditional laws with empty logical axiom reports. It does not derive the actual requirements, choose a unique complete claim language, ground positive significance without a substantive commitment, or order every mixed loss. The accepted significance/G0/J route retains its own scope.
+5. **Does it imply institutional retreat?** No. There is no institutional-size or power predicate. Forming or strengthening a common capacity can be warranted by its actual generative effects; narrowing it can be warranted by other actual effects. Neither direction follows from increased knowledge or grouping fidelity alone.
+
+本条的局部完成项是比较内容的保真条件及真实损失检验，不再把它们列作待办。下一条具体工作须指定一项接纳以外、在决策中实际相关的关系内容——例如共同维持或变化中的需要——检验既有动态框架怎样保存它，或提出有根据的混合得失比较。笼统的“再次证明改名无关”与“再造一条反事实路线”不再是新方向。
+
+The work stops short of unique individuation and complete normative grounding. Its completed output is usable now: operative requirements can certify faithful comparison; generated alternatives can expose hidden losses. No new external factual claim, empirical validation or independent-agent acceptance is asserted. [P91 integration checks](COMPARISON-CONTENT-INTEGRATION-CHECKS.json) record proof binding and preservation separately.
+
+**Final P91 proof evidence.** The [frozen consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json) passed: 24 new theorems / 33 new source-declaration audits, all empty; the full 78-module pure core compiles from the prelude, and the package has 4,546 theorems / 6,407 source-declaration audits. Twelve Lean steps ran and 345 were reused on identical inputs; 24 inherited peripheral modules remain separately identified. No historical receipt was rewritten. / 最终共享检查通过；本次新增量与继承量分列，核心纯净检查实际执行。
+
+<a id="timely-continuation-and-support"></a>
+
+## 85. Timely continuation and the warrant of support / 及时接续与支承的实践根据 — P95, 13 October 2026
+
+**Result / 复用成果:** `practical-judgment-g0-j`, with `becoming-return-grades`, `substitution-preserves-consumption`, and P91 `comparison-content-under-regrouping`. **Delta / 新增量:** an interpretive application of existing results, making the content of practical preservation and replacement answerable to actual needs through time and joint support. No new independent result, theorem, axiom or completion of the stronger foundation is claimed. The [chapter §2.1](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support) contains the affirmative argument and the alignment formulation in both languages.
+
+**One unfolding and the inference.** Activity forms and changes conditions for later activity, including its own maintenance. Differentiated living relations, their needs and possible interventions are read within this process. Under the authorized G0/J account, support has a favorable practical reason through its contribution to actual living and further formation. This establishes why support matters to appraisal; it does not infer significance from causation alone or turn every dependency into a requirement that a particular carrier survive forever. A new organization can meet the same need through a different route. The consumer input is the substantive content of J1/J2's protection claims, not a new normative conclusion hidden inside `Web.requires`.
+
+**共同展开与推论。** 活动形成并改变后续活动及维持自身所需的条件，生活、所需及可改变关系的行动位置由此分化。在授权的 G0/J 路线下，支承因其参与实际生活与进一步形成而取得正面实践理由。这说明为什么要评价支承，未从因果单独推出意义，也未把依存变成某个载体永存的要求。新组织可以经别的路线实现接续。本次接入的是 J1/J2 中“保住了什么”的实质内容，不是在 `Web.requires` 中暗放新的规范结论。
+
+### Producer output → consumer input / 产出与接入
+
+| Reused output / 复用产出 | Exact use and retained premises / 用途与保留前提 |
+|---|---|
+| `Becoming.Web.ReturnsWithin`, `Becoming.Slowing.slowing_recovery` (`becoming-return-grades`) | Eventual return and bounded return differ. A needed time window is an additional application fact, not a theorem that every long gap is harmful. `ReturnsWithin` reads the earlier need at a later resource level: it does not itself establish uninterrupted support, the dependent's survival or contemporary need. / 区分最终回程与有界回程。实际需要时段须另证；未来水平满足过去所需，不独自证明期间支持、生活存续或后来实际需要。 |
+| `Becoming.Substitution.persists_consuming`, `extracting_persists_consuming` (`substitution-preserves-consumption`) | Focal persistence after changing dependence can coexist with permanent support loss for the sustainer. Reuses positive support thresholds, focal threshold no higher than the sustainer's, supported start and persistent overdraw. Alternative supply is stipulated and its cost unmodelled. / 依原前提，替代后焦点持续与维持者失去支持可同在。替代供给是给定的、其代价未建模；本次不扩张模型范围。 |
+| `PracticalJudgment.transfer_requires_actual_successor` (`practical-judgment-g0-j`) | Existing practical transfer requires its stated actual-successor content. Reading a return or a surviving substitute as that successor requires an argued correspondence; there is no new checked adapter between these modules. / 复用实际后继要求；资源回程或一个替代者活跃，是否符合交接内容须论证。本次没有新增跨模块形式适配器。 |
+| P91 requirement/grouping fidelity (`comparison-content-under-regrouping`) | Do not group the unsupported life away. P91 guarantees preservation of its admission content only, not the historical identity or joint continuation needed here. / 不用分组删除失接生活；P91 本身只保证接纳内容保真，不保证这里需要的历史同一或共同接续。 |
+
+These are **interpretive connections**, not a formally verified composition of the witnesses. Existing canonical source/receipt bindings remain unchanged. No proof source was edited, so there is no new Lean run or theorem count. The research checks concern record integrity and source correspondence, not acceptance of the philosophical inference.
+
+以上均为解释性连接，不把分别成立的见证计为同一历史的形式组合。原证明和回执不变。本次不改 Lean，无新增编译或定理数；记录检查只核对资料与对应，不等于哲学推论被独立验收。
+
+### A concrete comparative application / 具体比较应用
+
+Consider a hypothetical shared water-support arrangement: water circulation, maintenance and the living activities it sustains form one changing relation. A planned rebuild interrupts ordinary supply while a jointly sufficient reserve and temporary route can carry the actual needs until repair finishes. The old machinery can end without the relevant living support ending. If it instead returns only after the reserve is exhausted during actual need, an identical final supply rate does not establish equivalent continuation. If only the operator acquires an alternative supply while the previously supported living relations lose theirs, the operator's persistence does not certify common repair.
+
+This is a **qualitative application scenario**, not an empirical finding or a newly checked joint model. Its facts must be supplied. A successful rebuild may involve real secondary losses and still be preferred under J2 when it restores an extra basic protection and retains the others. If existing support already preserves those same protections and the rebuild adds capability without countervailing loss, J1 can apply. If the rebuild crosses another basic protection, neither the word “repair” nor the support relation supplies the missing comparison. An accurate diagnosis could warrant a larger shared capacity, a different arrangement, continued maintenance or an ending; no fixed institutional response is assumed.
+
+设想共同供水中的循环、维护及所支持生活这一展开。改建暂时中断常规供给，但真实储备与临时路线能共同承接修复前的实际需要，则旧设备的结束不等于生活支持的结束。若恢复发生在实际需求期间储备已耗尽之后，即使最终流量相同，也不足以说接续等效。若只有经营位置取得替代供给，其他原来共同得到支持的生活失接，经营者的存续也不足以证明共同修复。
+
+这是待事实支撑的定性应用例，不是经验发现或新检查的联合模型。真实次要损失仍须保留；在恢复额外基本保护且保住其余基本要求时，J2 可以给出有损优先。若旧路线已保住相同基本要求，改建增加能力且没有抵消损失，则可用 J1。若改建跨过另一项基本保护，“修复”这个名称不能补上比较。实际根据可以支持扩大共同能力、改变组织、继续维护或结束；回应形式不预先确定。
+
+### Author counterreview and what changes the account / 作者反审与修订条件
+
+1. **Does causal dependence itself imply an obligation?** No. The affirmative argument uses the accepted significance and practical commitments. It distinguishes a reason in favor, overall comparison and assignment of responsibility. Actual control and contribution do not by themselves establish unlimited duties. / 因果联系定位实践理由；正面意义、整体比较与责任承担各保留其根据。
+2. **Must every dependency be preserved?** No. Alternative routes, changed needs, finite completion and burdens of maintaining the old arrangement can defeat that conclusion. A verified timely replacement changes the preservation question. Dependence that was deliberately manufactured does not entitle its manufacturer to retain control. / 真实及时替代、需要改变、有限完成及维持负担可以改变结论；依存不是制造者保有控制的凭证。
+3. **Does a uniform return bound settle adequacy?** No. It is sufficient for neither continuous support nor the right timing of every need. Conversely, absence of a uniform bound does not show every actual episode misses its particular tolerance. The specific trajectory, reserves, timing and supported content decide correspondence. / 有界回程不自动充分，无统一界也不自动处处失接；需要具体展开的对应。
+4. **Does supporting the future dominate present life?** No. G0 includes present living, rest and finite fulfillment. Future support can be relevant without making all present life an expendable instrument. Neither network centrality nor the number of downstream paths supplies a moral multiplier; avoid counting the same realization repeatedly. / 未来支承有意义，未因此取得压倒当下生活的地位；依存路径数不是价值权重。
+5. **What has become more determinate?** The support content that can enter the existing comparison: which living relations continue together, through which replacement, during which actual needs, with which retained losses. A focal escape, resource return or endpoint match is insufficient evidence by itself. This is an application advance, not a second proof of the already completed general transfer principles. / 本次更明确的是已有比较的实质输入，不是重证一般交接。
+6. **Where is the remaining wall?** Even complete descriptions can leave two futures with different basic losses. Their dependencies may explain why both losses occur without ranking them. Stronger comparison needs a defensible substantive priority or compensation account; whole zero-substantive-axiom necessity also remains unproved. This is an open warrant question, not an impossibility result. / 依存事实可以解释冲突，却尚未给出交叉基本损失的排序；更强根据继续开放，未被证明不可能。
+
+**Next substantive question / 下一实质问题:** when both futures retain some basic living relations and irreversibly lose others, determine whether the already proposed BC/LC/LR comparison commitments cover the actual differences, and identify any residual comparison premise explicitly. Do not restart generic handoff, add another eventual-return wrapper, or count this application as a new independent result. / 接续应检验已有 BC/LC/LR 对具体交叉损失的覆盖及其剩余比较前提；不再以一般交接或最终恢复的重证替代该问题。

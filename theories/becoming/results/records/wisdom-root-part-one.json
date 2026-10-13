@@ -8,10 +8,10 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-12T01:47:53+00:00",
+  "reviewed_at_utc": "2026-10-13T15:38:51.139906+00:00",
   "claim": {
-    "zh": "目标 wisdom-root（核心揭示智慧不可缺少的构成关系，并解释其形成、成立与失败）的形式部分，在第一部分所及范围内完成：下列已检查的规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，各自的条件写在定理中，所以保留相同内容的任何表示都避不开它们。识：主张只经所识的差别被否证（Web.Refutes.not_of_alike），无记录固定下一个（Web.tail_unrefuted、no_record_fixes_next）。理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值（every_determines_nothing），推广恰在归并之处、正确恰在世界经归并同去之处（determines_lumped_iff、lumped_right_iff），结构与变化是同一个归并（goAlike_iff_lumped），投影恰在相同者同去时承载规律（carries_law_iff）。检验：相对于模型的否证是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction），记录只在取过之处固定动作的结果（Run.not_fixes_of_untaken），重复是返回（Run.fixes_on_return），一次场合代表经模型相同的类（Run.generalizes）。学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止（held_learner_bounded、held_rest_unrefuted、no_record_fixes_next_finite），每个学习者都有否证它每个主张的开放的序列（diagonal_refutes、diagonal_open）。明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的（Clearing.tested_by_dweller、Clearing.pooled），经识的选择在识闭包之外不见，合起来的识选出它（Flow.unselected_beyond_registration、Clearing.selected_pooled）。够：寻求恰在到达律所不变、满足其目标的状态时静止（Law.rests_iff），“比现在更多”需要开放的世界（more_needs_open），“高于一切他者”的两个寻求者从不同时静止（Law.aboveAll_never_rests）。失控：断裂之前断裂还有多远不被识（Web.break_not_bounded），观察储量则识之（Web.observed_raise_registers）。代理：选择与训练只经选择者之识或数据（Web.selects_alike_iff、Training.loss_through），数据之外的值与类同样自由（Training.unselected_beyond_data），伸出识闭包之外而抬高所识者被选中（Diversion.favours）。判断：由识作出的判断恰是判断过程在信念上的共同回应（commonResponse_judge_iff、Web.belief_judge_iff）。元层次：对类的学习是合并枚举上的同一学习（merged_bound），每种合并都有其对角序列（merged_unrested），改变自身规则的系统的规律在联合配置上（adaptive_state_law_iff）。形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释（uniform_determines），Hebb 式发展与更新路线是联合配置上的律（hebbian_activity_law_iff、updating_network_law_iff），回应路线在失败处学习（responsive_learns）。",
-    "en": "The formal part of the target wisdom-root (that the core reveals the relations indispensable to wisdom and explains their formation, warrant and failure) is completed at the scope Part I reaches: the following checked laws are each stated for every formation, learner, lumping, selection or determined law, with no axiom and their conditions written into the theorems, so no representation keeping the same content escapes them. Registration: a claim is refuted only through a registered difference (Web.Refutes.not_of_alike), and no record fixes the next value (Web.tail_unrefuted, no_record_fixes_next). 理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value (every_determines_nothing), generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it (determines_lumped_iff, lumped_right_iff), structure and change are one lumping (goAlike_iff_lumped), and a projection carries a law exactly where configurations alike go alike (carries_law_iff). Testing: refutation relative to a model refutes the model and the claim together (Web.refutesWithin_iff_conjunction), the record fixes an act's outcome only where taken (Run.not_fixes_of_untaken), replication is return (Run.fixes_on_return), and one occasion stands for its class under the model (Run.generalizes). Learning: in a world held by a list learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest (held_learner_bounded, held_rest_unrefuted, no_record_fixes_next_finite), and every learner has an open course refuting each of its claims (diagonal_refutes, diagonal_open). 明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone (Clearing.tested_by_dweller, Clearing.pooled); selection through registration is blind beyond the registration closure and pooled registration selects what it misses (Flow.unselected_beyond_registration, Clearing.selected_pooled). Enough: seeking rests exactly at a state the law leaves unchanged that meets its target (Law.rests_iff), “more than now” needs an open world (more_needs_open), and two seekers of “above all others” never rest together (Law.aboveAll_never_rests). Runaway: before the break, how far it is does not register (Web.break_not_bounded), while observing the stock registers it (Web.observed_raise_registers). Proxies: selection and training go only through the selector's registration or the data (Web.selects_alike_iff, Training.loss_through), values beyond the data stay as free as the class leaves them (Training.unselected_beyond_data), and reaching beyond the registration closure to raise what registers is selected (Diversion.favours). Judgment: a judgment from registration is exactly a common response of the judging process over the belief (commonResponse_judge_iff, Web.belief_judge_iff). The meta level: learning over classes is the same learning over a merged enumeration (merged_bound), every merging has its diagonal course (merged_unrested), and a system changing its own rule has its law on the joint configuration (adaptive_state_law_iff). The formal routes of formation: learning by refutation forms a model from the record, the acquisition chain forms an interpretation of every expression from three encounters (uniform_determines), Hebbian development and the route of updating are laws on the joint configuration (hebbian_activity_law_iff, updating_network_law_iff), and the responsive route learns where the task fails (responsive_learns)."
+    "zh": "目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）已完成；从独立智慧内容到这些规律的必要性对应见主研究第16节，整体覆盖仍须论证：下列已检查的规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，各自的条件写在定理中，所以保留相同内容的任何表示都避不开它们。识：主张只经所识的差别被否证（Web.Refutes.not_of_alike），无记录固定下一个（Web.tail_unrefuted、no_record_fixes_next）。理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值（every_determines_nothing），推广恰在归并之处、正确恰在世界经归并同去之处（determines_lumped_iff、lumped_right_iff），结构与变化是同一个归并（goAlike_iff_lumped），投影恰在相同者同去时承载规律（carries_law_iff）。检验：相对于模型的否证是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction），记录只在取过之处固定动作的结果（Run.not_fixes_of_untaken），重复是返回（Run.fixes_on_return），一次场合代表经模型相同的类（Run.generalizes）。学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止（held_learner_bounded、held_rest_unrefuted、no_record_fixes_next_finite），每个学习者都有否证它每个主张的开放的序列（diagonal_refutes、diagonal_open）。明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的（Clearing.tested_by_dweller、Clearing.pooled），经识的选择在识闭包之外不见，合起来的识选出它（Flow.unselected_beyond_registration、Clearing.selected_pooled）。够：寻求恰在到达律所不变、满足其目标的状态时静止（Law.rests_iff），“比现在更多”需要开放的世界（more_needs_open），“高于一切他者”的两个寻求者从不同时静止（Law.aboveAll_never_rests）。失控：断裂之前断裂还有多远不被识（Web.break_not_bounded），观察储量则识之（Web.observed_raise_registers）。代理：选择与训练只经选择者之识或数据（Web.selects_alike_iff、Training.loss_through），数据之外的值与类同样自由（Training.unselected_beyond_data），伸出识闭包之外而抬高所识者被选中（Diversion.favours）。判断：由识作出的判断恰是判断过程在信念上的共同回应（commonResponse_judge_iff、Web.belief_judge_iff）。元层次：对类的学习是合并枚举上的同一学习（merged_bound），每种合并都有其对角序列（merged_unrested），改变自身规则的系统的规律在联合配置上（adaptive_state_law_iff）。形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释（uniform_determines），Hebb 式发展与更新路线是联合配置上的律（hebbian_activity_law_iff、updating_network_law_iff），回应路线在失败处学习（responsive_learns）。",
+    "en": "The formal support for wisdom-root (the universal laws and routes of formation within Part I's scope) is completed; Section 16 of the main study connects independently described wisdom content to these laws, while full coverage still requires argument: the following checked laws are each stated for every formation, learner, lumping, selection or determined law, with no axiom and their conditions written into the theorems, so no representation keeping the same content escapes them. Registration: a claim is refuted only through a registered difference (Web.Refutes.not_of_alike), and no record fixes the next value (Web.tail_unrefuted, no_record_fixes_next). 理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value (every_determines_nothing), generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it (determines_lumped_iff, lumped_right_iff), structure and change are one lumping (goAlike_iff_lumped), and a projection carries a law exactly where configurations alike go alike (carries_law_iff). Testing: refutation relative to a model refutes the model and the claim together (Web.refutesWithin_iff_conjunction), the record fixes an act's outcome only where taken (Run.not_fixes_of_untaken), replication is return (Run.fixes_on_return), and one occasion stands for its class under the model (Run.generalizes). Learning: in a world held by a list learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest (held_learner_bounded, held_rest_unrefuted, no_record_fixes_next_finite), and every learner has an open course refuting each of its claims (diagonal_refutes, diagonal_open). 明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone (Clearing.tested_by_dweller, Clearing.pooled); selection through registration is blind beyond the registration closure and pooled registration selects what it misses (Flow.unselected_beyond_registration, Clearing.selected_pooled). Enough: seeking rests exactly at a state the law leaves unchanged that meets its target (Law.rests_iff), “more than now” needs an open world (more_needs_open), and two seekers of “above all others” never rest together (Law.aboveAll_never_rests). Runaway: before the break, how far it is does not register (Web.break_not_bounded), while observing the stock registers it (Web.observed_raise_registers). Proxies: selection and training go only through the selector's registration or the data (Web.selects_alike_iff, Training.loss_through), values beyond the data stay as free as the class leaves them (Training.unselected_beyond_data), and reaching beyond the registration closure to raise what registers is selected (Diversion.favours). Judgment: a judgment from registration is exactly a common response of the judging process over the belief (commonResponse_judge_iff, Web.belief_judge_iff). The meta level: learning over classes is the same learning over a merged enumeration (merged_bound), every merging has its diagonal course (merged_unrested), and a system changing its own rule has its law on the joint configuration (adaptive_state_law_iff). The formal routes of formation: learning by refutation forms a model from the record, the acquisition chain forms an interpretation of every expression from three encounters (uniform_determines), Hebbian development and the route of updating are laws on the joint configuration (hebbian_activity_law_iff, updating_network_law_iff), and the responsive route learns where the task fails (responsive_learns)."
   },
   "hypotheses": [
     {
@@ -21,11 +21,15 @@
     {
       "zh": "把规律对到智慧的各面（识、理、检验、学习、明、够、失控、代理、判断、元）是 AI 的读法，理依 Ren，其余待 Ren；“明”在这里只指看见自身所识之外要他者之识，不取其全部古典含义；“对每个表示成立”指每个学习者都受这些规律约束，不指有智慧者显式持有一个模型。",
       "en": "Matching the laws to aspects of wisdom (registration, 理, testing, learning, 明, enough, runaway, proxies, judgment, meta level) is the AI's reading, 理 being Ren's and the rest pending Ren; 明 here means only that seeing beyond one's own registration needs another's, not its whole classical sense; “holding of every representation” means every learner is bound by these laws, not that the wise hold an explicit model."
+    },
+    {
+      "zh": "“对每个表示成立”保持各定理的类型与条件。应用于智慧须另说明判断内容、根据、范围、强度及 E；不表示所有智慧活动都具有每个模块的功能或必须继续修改。",
+      "en": "“Holding of every representation” retains each theorem’s types and conditions. Application to wisdom additionally requires judgment content, grounds, scope, strength and E; it does not mean every wise activity has every module’s function or must keep revising."
     }
   ],
   "correspondence": {
-    "zh": "Ren 2026-10-12：“please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”。AI 读作：在核心所能到达的范围内完成 wisdom-root，只有对实际形成的对应才能决定的明示为此。主研究 §8.4 的四条连接中，第一条（跨表示的必要性）与第二条（形成）的形式部分由本记录完成，第三条（判断的伦理正当性）走第二部分，不变，第四条（持续展开）由 merged_unrested 与 diagonal_refutes 读出。",
-    "en": "Ren, 12 October 2026: “please, fully complete, 我觉得理更像是对结构和变化的规律的建模 finish wisdom root, and resolve the undissolved”. The AI reads it as completing wisdom-root at the scope the core can reach, marking what only correspondence to actual formations can settle. Of the four connections in section 8.4 of the main study, the formal parts of the first (necessity across representations) and the second (formation) are completed by this record; the third (ethical warrant of judgment) goes through Part II, unchanged; the fourth (continuing development) is read off merged_unrested and diagonal_refutes."
+    "zh": "Ren 的理读法与 P75 的形式整合保留。主研究第16节把独立陈述的判断内容接到各规律，并补充反审：共同回应允许省略无关差别，风险判断不要求必胜；diagonal_refutes 与 merged_unrested 是每个学习者有一个反驳历程，不是每个实际世界要求永久修订。P83 已给出有界稳定正确，P71 已落地。智慧各面的对应是解释性依赖，不是新增 Lean 组合。",
+    "en": "Ren’s reading of 理 and P75’s formal integration are retained. Main-study Section 16 connects independently described judgment content to the laws and adds counterreview: common response permits omission of irrelevant differences, and risk judgment need not guarantee success. diagonal_refutes and merged_unrested give a refuting course for each learner, not perpetual revision in every actual world. P83 supplies bounded stable correctness, and P71 has landed. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition."
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
   "aliases": [
@@ -35,7 +39,7 @@
   "dependencies": [
     {
       "id": "testing-within-registration",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "识、否证与他者之识（明）的规律。",
         "en": "The laws of registration, refutation and others' registration (明)."
@@ -58,7 +62,7 @@
     },
     {
       "id": "learning-by-refutation",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "归纳、学习与元层次的规律。",
         "en": "The laws of induction, learning and the meta level."
@@ -81,7 +85,7 @@
     },
     {
       "id": "generalization-through-lumping",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "理（Ren 的读法）、推广与训练的规律。",
         "en": "The laws of 理 (Ren's reading), generalization and training."
@@ -104,7 +108,7 @@
     },
     {
       "id": "experiment-needs-return",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "实验与检验的规律。",
         "en": "The laws of experiment and testing."
@@ -127,7 +131,7 @@
     },
     {
       "id": "seeking-boundary",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "够的规律。",
         "en": "The laws of enough."
@@ -150,7 +154,7 @@
     },
     {
       "id": "runaway-distance-unregistered",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "失控的规律。",
         "en": "The laws of runaway."
@@ -173,7 +177,7 @@
     },
     {
       "id": "selection-through-registration",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "经识的选择与代理的规律。",
         "en": "The laws of selection through registration and of proxies."
@@ -196,7 +200,7 @@
     },
     {
       "id": "projection-carrying-a-law",
-      "relation": "formal-reuse",
+      "relation": "interpretive",
       "detail": {
         "zh": "机制与改变自身规则的系统的规律。",
         "en": "The laws of mechanism and of systems changing their own rule."
@@ -216,14 +220,22 @@
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
       }
+    },
+    {
+      "id": "identification-where-bounded",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "有界识别说明为何无普遍完成的学习者不等于实际学习永不收束；用于必要性范围核对。",
+        "en": "Bounded identification distinguishes the absence of a universally completed learner from perpetual non-convergence in actual learning; used to check necessity scope."
+      }
     }
   ],
   "related": [
     {
       "id": "wisdom-root",
       "detail": {
-        "zh": "本记录完成该目标的形式部分；目标按登记规则仍为目标，其开放部分是实际形成的对应、关切与情感的形成，以及这组关系对全部智慧的充分性。",
-        "en": "This record completes the target's formal part; the target stays a target by the registry's rule, its open part being the correspondence of actual formation, the formation of concern and affect, and the sufficiency of these relations for all wisdom."
+        "zh": "完成的形式支撑直接复用；整体必要性覆盖、实际形成、关切情感与充分性分别保留，不能互相充当完成证书。",
+        "en": "Completed formal support is reused directly; full necessity coverage, actual formation, concern and affect, and sufficiency retain distinct scopes and cannot certify one another."
       }
     },
     {
@@ -251,12 +263,12 @@
     }
   ],
   "limitations": {
-    "zh": "实际的人与 AI 怎样形成智慧、关切与情感怎样形成、原典中的智慧是否对应这些规律，只有经验对应能决定；这组关系对全部智慧的充分性没有证明；判断的伦理正当性不在第一部分；P71（在其所识之内的识在每一步不完全）尚在暂存证据中，不计入；表中把规律对到智慧各面是读法；本记录不新增 Lean，其新的形式信用只在 learning-by-refutation 与 generalization-through-lumping；不含伦理谓词。",
-    "en": "How actual humans and AI form wisdom, how concern and affect form, and whether the wisdom of primary texts corresponds to these laws can be settled only by empirical correspondence; the sufficiency of these relations for all wisdom is not proved; the ethical warrant of judgment is not in Part I; P71 (a registration within what it registers incomplete at every step) is still scratch evidence and is not counted; matching the laws to aspects of wisdom is a reading; this record adds no Lean, its new formal credit lying only in learning-by-refutation and generalization-through-lumping; contains no ethical predicate."
+    "zh": "形式规律与形成路线完成不自动证明全部智慧的覆盖、整个 core 的每项承诺普遍必要或关系组的充分性；实际形成、关切情感与历史对应另有证据责任。P71 已落地，其局部条件保持；P83 的有界识别排除永久修订的普遍读法。“明”所引共同识别例不要求每次改善都新增外部信息，已有经验重组是尚需解释的可能路线。判断的伦理正当性走第二部分。本记录不新增 Lean，原形式信用仍归各模块与 P73/P74，新增 P83 引用是范围核对。",
+    "en": "Completed formal laws and routes of formation do not automatically prove exhaustive wisdom coverage, universal necessity of every core commitment or sufficiency of the relations. Actual formation, concern and affect, and historical correspondence have separate evidential burdens. P71 has landed with its local conditions retained; P83’s bounded identification excludes a universal perpetual-revision reading. The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganization of accessible experience is a possible route still needing explanation. Ethical warrant belongs to Part II. This record adds no Lean; original formal credit stays with the modules and P73/P74, and the added P83 citation is a scope check."
   },
   "validation_scope": {
-    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261013T095759.980593Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
-    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261013T095759.980593Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
+    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261013T095759.980593Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。 2026-10-13 主研究第16节补充内容对应和量词反审；P83 三项已查声明用于界限核对，不新增证明。依赖类型改为 interpretive，以免把智慧读法标成已验证的形式适配器。",
+    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261013T095759.980593Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren. On 13 October 2026, main-study Section 16 adds content correspondence and quantifier counterreview; three checked P83 declarations delimit scope without new proof. Dependency types are interpretive, so the wisdom readings are not labeled verified formal adapters."
   },
   "references": [
     {
@@ -268,7 +280,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "87e3c0dfcb2f3bacb76a2a0d8f860e9389c8aebfa2259abd694c573c69e4c5b4",
       "declarations": []
     },
     {
@@ -387,8 +399,8 @@
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
-      "role": "integration",
-      "sha256": "c14b6211e0fa47115dfc4eb4305d0a9ad1b027bb8f98cfaacdd3e638e476527d",
+      "role": "review",
+      "sha256": "a6f695eb6786b913912182b0d21d28af1f03703f1335700409bc61d8d7e7d870",
       "declarations": []
     },
     {
@@ -396,6 +408,16 @@
       "role": "provenance",
       "sha256": "c648f395f1da2e423e27a2b801e2421550867f71209ac7c63c3aa7fb1f071e1e",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "role": "proof",
+      "sha256": "3bc3beb5afde6f1266d20926fd830b7a99f4a14c34f5a69225d6336ff05e5a10",
+      "declarations": [
+        "Becoming.Identification.bounded_induction",
+        "Becoming.Identification.knowing_right",
+        "Becoming.Identification.held_learner_rests"
+      ]
     }
   ],
   "proof_bindings": [
@@ -461,11 +483,18 @@
       "sha256_pointer": "/source_sha256/LearningCorrespondence",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Identification",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "实际形成的对应：把这些规律对到人类发展与 AI 训练的证据；关切与情感的形成（认知一章的义务）；P71 落地后的元层次；Ren 对智慧各面之读法的判断。",
-    "en": "The correspondence of actual formation: matching these laws to evidence from human development and AI training; the formation of concern and affect (the cognition chapter's obligations); the meta level once P71 lands; Ren's judgment on the reading of the aspects of wisdom."
+    "zh": "完成独立智慧内容与普遍形式规律之间的覆盖论证，检验忠实替代说明；实际形成、关切情感、充分性分别推进。P71 和 P83 已完成的形式结果直接复用，不再列为待落地或待证明。",
+    "en": "Complete the coverage argument between independently characterized wisdom and the universal formal laws, testing faithful alternatives; pursue actual formation, concern and affect, and sufficiency at their distinct scopes. Reuse landed P71 and P83 results without listing them as awaiting integration or proof."
   },
   "history": [
     {
@@ -517,8 +546,92 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13：保留 P75 形式完成与原证明绑定；第16节补充内容敏感的必要性连接，限定持续展开的量词，纳入已落地 P83 的有界稳定正确并更新 P71 状态。智慧对应依赖由 formal-reuse 改为 interpretive；这不撤销底层定理或其实际 Lean 组合。完整智慧覆盖仍开放。",
+      "en": "2026-10-13: retains P75’s formal completion and existing proof bindings. Section 16 adds content-sensitive necessity correspondence, bounds the continuing-development quantifiers, incorporates landed P83’s stable correctness and updates P71’s status. Wisdom-correspondence dependencies change from formal-reuse to interpretive; underlying theorems and actual Lean compositions are unaffected. Full wisdom coverage remains open."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 第17节来源复核：主研究增加非表征实践对照、常值描述边界与坐忘覆盖问题。P75 本身的已查规律、条件和形成路线不变；新增对应不被计为本记录的新形式证明。",
+      "en": "2026-10-13 Section 17 source review: the main study adds a nonrepresentational-practice comparison, the constant-description boundary and a sitting-and-forgetting coverage case. P75’s checked laws, conditions and formation routes are unchanged; the additional correspondence is not counted as a new formal proof."
+    },
+    {
+      "zh": "2026-10-13 第18节来源复核：转化智慧的解释连接接到既有实践及描述结果；P75的形式支撑、假设和证明绑定不变。本记录的来源更新不构成新形式完成。",
+      "en": "2026-10-13 Section 18 source review: transformative wisdom is interpretively connected to existing practical and descriptive results. P75’s formal support, hypotheses and proof bindings are unchanged; the source update supplies no new formal completion."
+    },
+    {
+      "zh": "2026-10-13 第19节来源复核：理论智慧及共同根的论证接回旧闭包／共同解释条件；本记录P75的规律、假设和证明绑定保持，无新增形式完成。",
+      "en": "2026-10-13 Section 19 source review connects theoretical wisdom and the common-root argument to old closure/joint-interpretation conditions. P75’s laws, hypotheses and proof bindings remain unchanged; no new formal completion."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "2026-10-13 核读主研究第20节：直接与习得把握的解释修正不改变本记录的已完成形式规律、原声明或回执；仅更新该哲学审查来源及其范围。",
+      "en": "2026-10-13 Reviewed study section 20: the correction concerning direct and acquired grasp does not change this record’s completed formal laws, declarations or receipts; only the philosophical review source and its scope are updated."
+    },
+    {
+      "zh": "2026-10-13 核读主研究第21节：全使用保真与特定智慧的依存范围分开，新增解释性连接不改变P75形式完成或其证明证据。",
+      "en": "2026-10-13 Reviewed study section 21: all-consumer fidelity is separated from dependencies of a particular wise achievement; the new interpretive connection does not change P75 formal completion or its evidence."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "2026-10-13 主研究§22核对 Frame.world 与 World.ofRoles 的接口和实际对应范围；P75原形式成果、声明及回执保持，不记作重证或普遍慧根完成。",
+      "en": "2026-10-13 Study Section 22 audits Frame.world and World.ofRoles interfaces and actual correspondence. P75’s original formal results, declarations and receipts remain; no reproof or universal wisdom-root completion is credited."
+    },
+    {
+      "zh": "2026-10-13 主研究§23在原 P91/P93 上完成四项纯核心适配，并将其登记于主章§9；P75 的原命题与回执不变。慧根直接消费其他分支已有连接，不把局部接口限制当作共同理论缺口。",
+      "en": "2026-10-13 Study Section 23 composes P91/P93 in four pure adapters, entered at spine Section 9. P75’s original claims and receipts are unchanged. Wisdom consumes completed branch connections rather than treating a local interface limit as a whole-theory gap."
+    },
+    {
+      "zh": "P103 文献对应：共享主章只增加形成与反复参考修订说明及模块行，原字节和本成果证明保留。",
+      "en": "P103 documentary reconciliation: the shared chapter only adds the formed/recurring-reference account and module row; earlier bytes and this result’s proof are preserved."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "2026-10-13 主研究§24及主章§9更新任意Frame的内容保留适配，原P75声明与回执不变；新增四项接通不替代普遍智慧覆盖。",
+      "en": "2026-10-13 Study Section 24 and spine Section 9 extend the adapters to arbitrary Frame content. P75’s original declarations and receipts remain; four connecting statements do not replace universal wisdom coverage."
+    },
+    {
+      "zh": "2026-10-13 核对慧根§25对P103的复用及全选择保留范围；更新本研究读法版本，P75原成果和证明信用不变。",
+      "en": "2026-10-13 Reviewed wisdom Section 25’s P103 reuse and all-choice preservation scope; refreshed this study reading while leaving P75 results and proof credit unchanged."
+    },
+    {
+      "zh": "2026-10-13 核对慧根§26对已完成可错／及时辨别必要性的解释性复用；更新研究读法，P75原形式成果及范围保持。",
+      "en": "2026-10-13 Reviewed wisdom Section 26’s interpretive reuse of completed fallible/timely discrimination necessity; refreshed this study reading while retaining P75’s formal results and scope."
+    },
+    {
+      "zh": "2026-10-13 核对慧根§27的当下实现与非统计分支连接；更新本研究读法版本，不改变P75原声明、范围或证明信用。",
+      "en": "2026-10-13 Reviewed wisdom Section 27’s present-realization and non-statistical branch connections; updated this study reading without changing P75 statements, scope or proof credit."
+    },
+    {
+      "zh": "2026-10-13 主研究§28消费既有外围共同结构与历史界面证明；更新已读研究引用，第一部分原形式信用和范围不变。",
+      "en": "2026-10-13 Main-study section 28 consumes existing peripheral common-structure and history-interface proofs; the read study reference is updated without changing Part I formal credit or scope."
+    },
+    {
+      "zh": "2026-10-13 主研究§29接通P91内容保真与P69同一关系保留；本记录原普遍形式信用不变，P76的条件及边界保留。",
+      "en": "2026-10-13 Main-study section 29 joins P91 fidelity to P69 preservation of the same relation; this record retains its original formal credit and P76 conditions/boundaries."
+    },
+    {
+      "zh": "2026-10-13 主研究§30消费已证反事实生成并检验静态替代说明；原P75完成范围不变，不将记录省略当作完整规律的缺失。",
+      "en": "2026-10-13 Main-study section 30 consumes proved counterfactual generation and assesses static alternatives; original P75 scope remains complete, without confusing omitted records with absent laws."
+    },
+    {
+      "zh": "2026-10-13 主研究§31区分可错支持与结论为真；本记录原规律及条件信用不变，不将零错误要求普遍化为智慧定义。",
+      "en": "2026-10-13 Main-study section 31 distinguishes fallible support from truth; this record retains its original laws and conditions, without turning zero error into a universal wisdom definition."
     }
   ]
 }

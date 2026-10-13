@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T08:50:16+00:00",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "设 ψ : A → A → B 是以所读者为索引的识，same 是值的相同。ψ 说出读法 g（Diagonal.Says same ψ g），指某个 a 使 ∀ x，same (ψ a x) (g x)；缺口 gap f ψ x = f (ψ x x)；f 移动每个值（Diagonal.Moves same f），指 ∀ b，¬ same b (f b)。f 移动每个值时，没有成员说出缺口（Diagonal.gap_unsaid）；说出每个读法的 ψ 给每个 f 一个值 b 使 same b (f b)（Diagonal.fixed_of_complete）。主张从不与它的否定相同（Diagonal.moves_not），所以没有主张族 ψ : A → A → Prop 说出每个读法（Diagonal.claims_incomplete、Diagonal.claims_gap），没有框架以自己的配置实现关于配置的每种主张模式（Frame.self_incomplete）。以相等比较的值：与一个值的相等可判定时，完备的 ψ 推出值都相等（Diagonal.alike_of_complete）；值都相等时有完备的 ψ（Diagonal.complete_of_alike）；值的相等可判定时，完备恰当值都相等（Diagonal.complete_iff_alike）。φ : ℕ → A → A → B 展开（Diagonal.Unfolds same f φ），指它保留所说出的，并在下一步说出该步的缺口；f 移动每个值时，它在每一步都不完备（Diagonal.Unfolds.incomplete），第 m + k 步的缺口在第 m 步不被说出（Diagonal.Unfolds.gap_new），same 可传递时没有两个缺口相同（Diagonal.Unfolds.gaps_differ），从不返回（Diagonal.Unfolds.never_returns），same 对称、可传递时没有有限储存持有它的缺口（Diagonal.stock_unheld、Diagonal.Unfolds.unheld）。Bool 上存在这样的展开（Diagonal.unfolding、Diagonal.unfolding_unfolds、Diagonal.unfolding_open）。以移动每个值的 f 修正值，Law.orbit f b (n + 1) ≠ Law.orbit f b n（Diagonal.revision_never_rests）；以否定修正主张，在 Iff 之下从不静止（Diagonal.denial_never_rests）；二值的否定每两步返回（Diagonal.denial_returns）。不用 Lean 公理。",
     "en": "Let ψ : A → A → B be a registration indexed by what it reads, and same the likeness of values. ψ says a reading g (Diagonal.Says same ψ g) when some a has ∀ x, same (ψ a x) (g x); the gap is gap f ψ x = f (ψ x x); f moves every value (Diagonal.Moves same f) when ∀ b, ¬ same b (f b). Where f moves every value no member says the gap (Diagonal.gap_unsaid); a ψ saying every reading gives every f a value b with same b (f b) (Diagonal.fixed_of_complete). A claim is never alike with its negation (Diagonal.moves_not), so no family of claims ψ : A → A → Prop says every reading (Diagonal.claims_incomplete, Diagonal.claims_gap), and no frame realizes with its own configurations every pattern of claims about them (Frame.self_incomplete). For values compared by equality: with equality to one value decided, a complete ψ makes all values equal (Diagonal.alike_of_complete); where all values are equal some ψ is complete (Diagonal.complete_of_alike); with equality of values decidable, completeness is exactly all values being equal (Diagonal.complete_iff_alike). φ : ℕ → A → A → B unfolds (Diagonal.Unfolds same f φ) when it keeps what it says and next says the step's gap; where f moves every value it is incomplete at every step (Diagonal.Unfolds.incomplete), the gap of step m + k is not said at step m (Diagonal.Unfolds.gap_new), with same transitive no two gaps are alike (Diagonal.Unfolds.gaps_differ), it never returns (Diagonal.Unfolds.never_returns), and with same symmetric and transitive no finite stock holds its gaps (Diagonal.stock_unheld, Diagonal.Unfolds.unheld). Such an unfolding exists on Bool (Diagonal.unfolding, Diagonal.unfolding_unfolds, Diagonal.unfolding_open). Revising a value by an f moving every value, Law.orbit f b (n + 1) ≠ Law.orbit f b n (Diagonal.revision_never_rests); revising a claim by negation never rests up to Iff (Diagonal.denial_never_rests); the two-valued denial returns every two steps (Diagonal.denial_returns). No Lean axiom is used."
@@ -188,7 +188,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "35b63cdd2794d6bb9931673f776611326f824b59947768cc30ae33c90ef3a46a",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
       "declarations": []
     },
     {
@@ -269,8 +269,24 @@
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
     },
     {
-      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
-      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
     }
   ]
 }

@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "id": "comparison-content-under-regrouping",
+  "title": {
+    "zh": "比较内容的关系保真：最低所需、分组与真实损失",
+    "en": "Relational fidelity of comparison content: minimum requirements, grouping and real loss"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "claim": {
+    "zh": "同一 Frame 的过程不变，只对主张作多对一分组。逐项恢复原实现恰当同组主张在当前配置中同样成立；两处保真时，既有 Extension 比较保持不变。Web.paths 的同样依存与阈值供给该条件；依存可判定时，在所有水平路径上保真恰当同组形成每一步的最低所需逐项相同。不依存的条件所需为零。继承 Transfer 的搬运／保留两条路径现在由同一初态、同一其余交换律生成，均可行且平衡；它们有真实混合得失，合并两个不同依存的形成却使分组描述相同。",
+    "en": "On one Frame with its process unchanged, claims are regrouped many-to-one. Recovering each original realization is exactly constancy within each group at that configuration; fidelity at both configurations preserves the existing Extension comparison. Equal Web requirements and thresholds supply fidelity; with decidable requirements, fidelity on all level paths holds iff group members have equal pointwise minimum requirements at every step, zero on unrequired conditions. The inherited Transfer moving/withholding paths are generated from one start and one rest-law, both feasible and balanced; real mixed gains and losses remain although merging differently dependent formations makes the grouped readings identical."
+  },
+  "hypotheses": [
+    {
+      "zh": "共享 Frame 及其已给定的主张含义；分组只改读法，不改过程。比较的扩展实例把每项主张均计入。",
+      "en": "The shared Frame and its supplied claim interpretation; grouping changes the reading only. The extension instance counts every claim."
+    },
+    {
+      "zh": "比较保真需要两处局部的同组成立一致；这是充分条件，不宣称每个偶然相同的成对排序都必须满足它。",
+      "en": "Comparison fidelity uses within-group agreement at both compared configurations. This is sufficient, not alleged necessary for every accidentally preserved pairwise verdict."
+    },
+    {
+      "zh": "Web 实例沿用离散步、自然数水平与所需；最低所需的精确全水平刻画另外要求每项依存可判定。同样依存与阈值的充分形式不要求判定。",
+      "en": "The Web instance retains discrete steps, natural levels and needs. The exact all-level minimum-profile characterization additionally takes decidable requirements; the sufficient equal-requirements form does not."
+    },
+    {
+      "zh": "搬运构造使用旧 Transfer 的实际依存和给定交换；其余交换在本最小见证中不活动。",
+      "en": "The conveyor construction uses the inherited Transfer dependencies and supplied exchange; the rest is inactive in this minimal witness."
+    }
+  ],
+  "correspondence": {
+    "zh": "AI 对 Ren“请完成”及本会话对齐方向研究的续接：先由共同展开中的支持、给予与取用说明内容，再检验描述和比较。最低所需刻画接纳内容，不把不同生活归约成独立价值所有者，也不等同实际身份或完整生成意义。",
+    "en": "AI continuation of Ren’s request to complete this session’s alignment-direction work: contents are read from support and exchange within one unfolding before description and comparison are tested. Minimum requirements characterize admission, not separate value owners, actual identity or complete generative significance."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+  "aliases": [
+    "Becoming.Frame.respectsAt_iff",
+    "Becoming.Frame.regroup_retains",
+    "Becoming.Frame.regroup_retains_iff",
+    "Becoming.Frame.regroup_gain_reflects",
+    "Becoming.Frame.regroup_gain_iff",
+    "Becoming.Frame.regroup_extension_iff",
+    "Becoming.Web.admits_iff_requiredLevel",
+    "Becoming.Web.admits_requiredLevel",
+    "Becoming.Web.same_admission_iff_requiredLevel",
+    "Becoming.Web.regroup_faithful_iff_requiredLevel",
+    "Becoming.Web.SameRequirements.admits",
+    "Becoming.Web.SameRequirements.respects",
+    "Becoming.Web.regroup_extension_iff_widens",
+    "Becoming.Web.SameRequirements.extension_iff_widens",
+    "Becoming.Transfer.courseLaw_nonanticipating",
+    "Becoming.Transfer.move_levels",
+    "Becoming.Transfer.wait_levels",
+    "Becoming.Transfer.courses_feasible",
+    "Becoming.Transfer.courses_balanced",
+    "Becoming.Transfer.courses_follow_same_rest",
+    "Becoming.Transfer.move_group_realized",
+    "Becoming.Transfer.wait_group_realized",
+    "Becoming.Transfer.merged_not_respects",
+    "Becoming.Transfer.generated_mixed_hidden"
+  ],
+  "dependencies": [
+    {
+      "id": "comparison-by-widening",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "分组的扩展等价接到原 paths_extension_iff_widens。",
+        "en": "The regrouping equivalence feeds the existing paths_extension_iff_widens."
+      },
+      "interface": {
+        "output": {
+          "zh": "水平路径的 Extension 等价于 Widens。",
+          "en": "Extension on level paths is equivalent to Widens."
+        },
+        "input": {
+          "zh": "局部保真后的分组 Extension 仍等价于同一 Widens。",
+          "en": "Locally faithful grouped Extension is equivalent to the same Widens."
+        },
+        "conditions": {
+          "zh": "两处保真；living 为 True。",
+          "en": "Fidelity at both paths; living is True."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean"
+      }
+    },
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "保留旧 Transfer.mixed 的实际所得与损失，不重证旧混合定理。",
+        "en": "Retains the real gains and losses of Transfer.mixed without reproving that theorem."
+      },
+      "interface": {
+        "output": {
+          "zh": "搬运与扣留水平互相超出。",
+          "en": "The moving and withheld level paths exceed one another."
+        },
+        "input": {
+          "zh": "生成的两条路线保持混合，分组却相同。",
+          "en": "The generated courses remain mixed although their grouped readings agree."
+        },
+        "conditions": {
+          "zh": "新逐步证明将生成水平对应到原水平路径。",
+          "en": "New stepwise proofs identify generated levels with the original paths."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw 的生成、withAct、可行与平衡等价及共同其余律。",
+        "en": "Reuses ExchangeLaw generation, withAct, feasibility/balance equivalence and the common rest-law."
+      },
+      "interface": {
+        "output": {
+          "zh": "从初态及动作生成水平与交换；可行推出平衡。",
+          "en": "Levels and exchange generated from start and act; feasibility gives balance."
+        },
+        "input": {
+          "zh": "两条可行路线及其实际损失见证。",
+          "en": "Two feasible courses and their actual loss witness."
+        },
+        "conditions": {
+          "zh": "给定交换律；本例证明 Nonanticipating 和 Feasible。",
+          "en": "The law is supplied; Nonanticipating and Feasible are proved in this witness."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "configurations-alike-by-relation",
+      "detail": {
+        "zh": "旧结果比较固定主张域下的配置双模拟；本结果合并主张域而保持过程，不是重证。",
+        "en": "The older result compares configurations by bisimulation with a fixed claim domain; this changes claim grouping while retaining the process."
+      }
+    },
+    {
+      "id": "identity-across-steps",
+      "detail": {
+        "zh": "旧双射改认与连续性结果保留；本结果允许多对一描述，但不主张生命身份可互换。",
+        "en": "Bijective reidentification and continuity retain their scope; many-to-one description here does not make lives interchangeable."
+      }
+    },
+    {
+      "id": "classification-robust-generative-comparison",
+      "detail": {
+        "zh": "旧结果处理固定内容的优先分类，本结果处理内容读法的粒度；不重开已成 G0/J 推论。",
+        "en": "The earlier result varies priority classification of fixed contents; this addresses descriptive granularity without reopening completed G0/J inferences."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+      "detail": {
+        "zh": "generated_mixed_hidden 与 merged_not_respects：同一初态和其余律生成的真实相反得失，在不保真分组中消失为相同。只反驳任意分组都保留比较内容，不反驳完整关系说明。",
+        "en": "generated_mixed_hidden and merged_not_respects: opposed real changes generated from one start and rest-law disappear into equality under unfaithful grouping. The target is arbitrary grouping fidelity, not the full relational account."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "最低所需相同只固定接纳读法；不同生命、历史与独特表达可同需。单项可接纳不推出共同可实现，后者须作为自身内容进入框架。全部水平测试可能包含动力学不可达水平；因此强于特定可行路线上的局部保真。未推导实际依存、唯一完整内容语言、变化中需要的构成、混合得失完整排序或零实质公理规范根据。没有一般无损行动要求、默认制度收缩或新经验验证。",
+    "en": "Equal minimum requirements fix admission only; distinct lives, histories and expressions can have equal needs. Marginal admission does not establish joint realizability, which must itself be represented. All-level tests may include dynamically inaccessible levels and are stronger than local fidelity on feasible courses. Actual dependencies, a unique complete content language, constitution of changing needs, complete mixed-loss ordering and zero-substantive-axiom normative warrant are not derived. No universal lossless-action requirement, institutional-retreat default or new empirical validation is claimed."
+  },
+  "validation_scope": {
+    "zh": "共享 Lean 4.29.1 检查 20261013T104720.812252Z 通过：Regrouping 24 项新定理／33 项源声明审计，公理依赖全空；78 个纯净核心模块从前导编译通过，76 个包模块含 4546 项定理／6407 项源声明审计。24 个继承外围模块另列；12 个 Lean 步骤实际运行、345 个按相同输入复用。作者反审已写，无独立 agent 验收；元数据检查不替代证明。 外围兼容检查 20261013T105346.131772Z 也通过：Lean 4.30.0-rc2／Mathlib 下编译新增核心，原桥接 7 项定理／8 项审计空依赖；运行 6 步、复用 79 步。",
+    "en": "Shared Lean 4.29.1 run 20261013T104720.812252Z passed: Regrouping has 24 new theorems/33 source-declaration audits, all axiom-free; the 78-module pure core compiles from the prelude, and 76 package modules contain 4546 theorems/6407 source-declaration audits. Twenty-four inherited peripheral modules are separate; 12 Lean steps ran and 345 reused identical inputs. Author counterreview is recorded, without independent-agent acceptance; metadata checks do not replace proof. Peripheral compatibility run 20261013T105346.131772Z also passed: the added core compiles under Lean 4.30.0-rc2/Mathlib; the existing bridge has 7 theorems/8 axiom-free audits; 6 steps ran and 79 were reused."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+      "role": "proof",
+      "sha256": "210ecae682f45520052e618c3ffad47d01f93b4779f9160f87dd66b734b4b876",
+      "declarations": [
+        "Becoming.Frame.regroup",
+        "Becoming.Frame.RespectsAt",
+        "Becoming.Frame.respectsAt_iff",
+        "Becoming.Frame.regroup_retains",
+        "Becoming.Frame.regroup_retains_iff",
+        "Becoming.Frame.regroup_gain_reflects",
+        "Becoming.Frame.regroup_gain_iff",
+        "Becoming.Frame.regroup_extension_iff",
+        "Becoming.Web.requiredLevel",
+        "Becoming.Web.admits_iff_requiredLevel",
+        "Becoming.Web.admits_requiredLevel",
+        "Becoming.Web.same_admission_iff_requiredLevel",
+        "Becoming.Web.groupEvent",
+        "Becoming.Web.regroup_faithful_iff_requiredLevel",
+        "Becoming.Web.SameRequirements",
+        "Becoming.Web.SameRequirements.admits",
+        "Becoming.Web.SameRequirements.respects",
+        "Becoming.Web.regroup_extension_iff_widens",
+        "Becoming.Web.SameRequirements.extension_iff_widens",
+        "Becoming.Transfer.quietLaw",
+        "Becoming.Transfer.conveyorAct",
+        "Becoming.Transfer.courseLaw",
+        "Becoming.Transfer.courseLaw_nonanticipating",
+        "Becoming.Transfer.move_levels",
+        "Becoming.Transfer.wait_levels",
+        "Becoming.Transfer.courses_feasible",
+        "Becoming.Transfer.courses_balanced",
+        "Becoming.Transfer.courses_follow_same_rest",
+        "Becoming.Transfer.merged",
+        "Becoming.Transfer.move_group_realized",
+        "Becoming.Transfer.wait_group_realized",
+        "Becoming.Transfer.merged_not_respects",
+        "Becoming.Transfer.generated_mixed_hidden"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "f71118288abb3c0f1c992d16bd5c543399474f00da5fbedd071eaf50d7a91684",
+      "declarations": [
+        "Becoming.Web.paths_extension_iff_widens",
+        "Becoming.Web.paths"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "6e6d134d53e3587a801904538458aae705c90802885f6cc8df6dc28cebbef912",
+      "declarations": [
+        "Becoming.Transfer.mixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee",
+      "declarations": [
+        "Becoming.ExchangeLaw.course_balances_iff",
+        "Becoming.ExchangeLaw.withAct_follows",
+        "Becoming.ExchangeLaw.levels_succ"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "role": "receipt",
+      "sha256": "f4eee5e5cdb9244b1ab905e51a67a1a2f1e5930b9f03cc8dfb3a0a5344e6a032",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "0911195b586a56692d6bc1539c18fdc2a427e71705970721c81f554bf34f5706",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T105346.131772Z/verification.json",
+      "role": "receipt",
+      "sha256": "605074edc0c63c2f64625f16368c90c9604adc88e86e0b5a8d23319638bdc5db",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regrouping.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regrouping",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T104720.812252Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "本条局部任务已完成。更强研究须给出接纳以外实际相关的内容及对应，例如共同维持、需要的变化或有根据的混合比较；不再重复改名不变或重造反事实。整体无公理奠基保持原目标与开放状态。",
+    "en": "This local task is complete. Stronger work must specify additional relevant content and its correspondence, such as joint maintenance, changing needs or warranted mixed comparison. Do not repeat renaming invariance or reconstruct the counterfactual again. The strong axiom-free foundation retains its target and open status."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13 P91：工作板先认领，在已有 ETHICAL-LEARNING 研究接续；共同核心新增 Regrouping，正式复用三个既有结果，保留旧定理与反例，不复制另一个世界。",
+      "en": "13 October 2026, P91: claimed on the work board before proof, continuing the existing ETHICAL-LEARNING study; adds Regrouping on the common core and formally reuses three existing results, preserving their proofs and counterexamples without a parallel world."
+    },
+    {
+      "zh": "2026-10-13：核读共享研究新增 P95 §85 的及时接续应用；此前全部段落原样保留，本成果主张与冻结证明范围不变。仅更新所读共享来源版本。",
+      "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    }
+  ]
+}
