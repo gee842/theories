@@ -1,0 +1,41 @@
+## wisdom-root: 7 commits touching the record
+  2026-10-09 claim    140 lim   249 val   271 corr   331 next   303 cx  3/  518 hist   6
+  2026-10-12 claim    140 lim   408 val   271 corr   331 next   504 cx  3/  518 hist   7
+  2026-10-14 claim    323 lim  4834 val  5529 corr  3814 next   450 cx  3/  518 hist  24
+## wisdom-root-part-one: 15 commits touching the record
+  2026-10-12 claim   3615 lim   618 val   825 corr   596 next   273 cx  1/  242 hist   1
+  2026-10-13 claim   3615 lim   618 val   825 corr   596 next   273 cx  1/  242 hist  13
+  2026-10-14 claim   3672 lim   769 val  1089 corr   555 next   310 cx  1/  242 hist  37
+## scientific-inquiry-foundation: 4 commits touching the record
+  2026-10-09 claim    238 lim   193 val   125 corr   172 next   202 cx  1/  193 hist   1
+  2026-10-12 claim    238 lim   193 val   125 corr   172 next   202 cx  1/  193 hist   2
+  2026-10-14 claim    349 lim  1700 val  1096 corr  1478 next   278 cx  2/  448 hist   9
+## universal-practical-warrant: 5 commits touching the record
+  2026-10-09 claim    169 lim    81 val    94 corr   156 next   112 cx  1/   81 hist   2
+  2026-10-10 claim    169 lim    81 val    94 corr   156 next   112 cx  1/   81 hist   2
+  2026-10-14 claim    379 lim  1115 val  1591 corr   418 next   333 cx  1/   81 hist   8
+## finite-aggregation-within-restorable-basic-losses: 1 commits touching the record
+  2026-10-14 claim   1273 lim   846 val   953 corr  1008 next   383 cx  5/ 1193 hist   3
+## finite-fallible-inquiry-necessity: 3 commits touching the record
+  2026-10-09 claim    207 lim   193 val   184 corr   193 next   202 cx  1/  166 hist   1
+  2026-10-14 claim    723 lim   624 val   413 corr   626 next   217 cx  3/  729 hist   8
+## whole-law-of-counting: 57 commits touching the record
+  2026-10-10 claim   7729 lim  2183 val  1539 corr  2054 next   394 cx  6/ 2088 hist  18
+  2026-10-11 claim  10198 lim  2597 val  1841 corr  2054 next   589 cx  7/ 2859 hist  27
+  2026-10-12 claim  10198 lim  2597 val  1927 corr  2054 next   589 cx  7/ 2859 hist  35
+  2026-10-13 claim  10198 lim  2597 val  1927 corr  2054 next   589 cx  7/ 2859 hist  46
+  2026-10-14 claim  10198 lim  2597 val  1927 corr  2054 next   589 cx  7/ 2859 hist  53
+## comparison-content-under-regrouping: 2 commits touching the record
+  2026-10-14 claim    720 lim   613 val   684 corr   321 next   324 cx  1/  233 hist   7
+## counting-under-enclosure: 54 commits touching the record
+  2026-10-10 claim   8566 lim  1761 val  1875 corr  1890 next   197 cx  4/ 1346 hist  14
+  2026-10-11 claim  13172 lim  2523 val  2300 corr  1890 next   265 cx  6/ 2900 hist  23
+  2026-10-12 claim  13172 lim  2523 val  2386 corr  1890 next   265 cx  6/ 2900 hist  30
+  2026-10-13 claim  13172 lim  2523 val  2386 corr  1890 next   265 cx  6/ 2900 hist  41
+  2026-10-14 claim  13172 lim  2523 val  2386 corr  1890 next   265 cx  6/ 2900 hist  48
+## identity-across-steps: 83 commits touching the record
+  2026-10-09 claim   4453 lim  1359 val  1314 corr  1774 next   593 cx 10/ 3319 hist  27
+  2026-10-10 claim   5217 lim  1514 val  1314 corr  1783 next   564 cx 10/ 3331 hist  49
+  2026-10-11 claim   5217 lim  1514 val  1315 corr  1783 next   564 cx 10/ 3331 hist  58
+  2026-10-12 claim   5217 lim  1514 val  1401 corr  1783 next   924 cx 10/ 3331 hist  66
+  2026-10-13 claim   6635 lim  1835 val  1693 corr  1979 next  1081 cx 11/ 3623 hist  77

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "note": "Shared boundary sentences, defined once. A record lists keys in standard_boundaries; the page renders the text. Changing a text here changes every record that cites it, so edit only with the same review as a record.",
+  "boundaries": {
+    "discrete-steps": {"en": "Stated for discrete steps.", "zh": "按离散步骤陈述。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "decidability": {"en": "Uses decidability of the named determinations, a logical commitment written as a hypothesis.", "zh": "使用所述判定的可判定性，这是写成假设的逻辑承诺。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "pointwise-properties": {"en": "Properties of counts respect values step by step (pointwise), in place of function extensionality.", "zh": "计数性质逐步尊重取值（逐点），以代替函数外延性。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "no-evaluation": {"en": "Contains no ethical predicate and evaluates neither arising nor ceasing.", "zh": "不含伦理谓词，不评价生起或消失。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "names-provisional": {"en": "Names follow Ren's naming criteria of 10 October 2026; readings remain Ren's.", "zh": "名称依 Ren 2026年10月10日的命名标准；读法由 Ren 决定。", "source": "sources/15-codex-theory-conversations/2026-10-10-zero-axiom-part-and-names.md"},
+    "formal-not-empirical": {"en": "A law of the formal model; its correspondence to actual systems is a separate obligation.", "zh": "形式模型中的规律；与实际系统的对应是另一项责任。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "omission-not-refutation": {"en": "A relation omitted by a weaker description does not refute the fuller account.", "zh": "较弱描述省略某一关系，不构成对较完整说明的反驳。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "conditional-not-universal": {"en": "A conditional law does not make its antecedent universal; a theorem's premise is not thereby necessary for every achievement.", "zh": "条件规律不使其前件普遍成立；定理的前提不因此成为每项成就的必要条件。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "zero-axiom-target-open": {"en": "Premise-free (zero-substantive-axiom) grounding is a separate open target; completed G0/J results keep their scope.", "zh": "无实质公理奠基是另一开放目标；已完成的 G0/J 成果保持原范围。", "source": "GOALS.md"},
+    "nondual-method-not-proof": {"en": "The nondual method is a requirement of method, not a proof of ontology or ethical necessity.", "zh": "非二元是方法要求，不是本体或伦理必然性的证明。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"},
+    "no-definition-by-verdict": {"en": "Encoding a desired verdict does not justify its premises.", "zh": "编码期望的结论不证成其前提。", "source": "theories/becoming/chapters/NONDUAL-METHOD.md"}
+  }
+}

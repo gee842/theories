@@ -1,0 +1,170 @@
+--- /Users/ren/theories/tools/research/registry.py	2026-10-13 16:14:08
++++ proto/tools/research/registry.py	2026-10-14 02:32:39
+@@ -81,7 +81,8 @@
+         if ident in ids:
+             fail('duplicate id')
+         ids[ident] = r
+-        if r.get('schema_version') != 1 or r.get('kind') not in KINDS or r.get('status') not in STATUSES:
++        v2 = r.get('schema_version') == 2
++        if r.get('schema_version') not in (1, 2) or r.get('kind') not in KINDS or r.get('status') not in STATUSES:
+             fail('invalid schema, kind or status')
+         malformed = [key for key in ('hypotheses', 'history', 'aliases', 'references', 'dependencies', 'related', 'counterexamples') if not isinstance(r.get(key), list)]
+         if malformed:
+@@ -94,9 +95,14 @@
+             continue
+         if r.get('kind') == 'target' and r.get('status') not in {'open', 'superseded', 'withdrawn'}:
+             fail('a target cannot be marked completed')
+-        for key in ('title', 'claim', 'correspondence', 'limitations', 'next_delta', 'validation_scope'):
++        required = ('title', 'statement', 'correspondence', 'next_delta', 'validation_scope') if v2 else \
++                   ('title', 'claim', 'correspondence', 'limitations', 'next_delta', 'validation_scope')
++        for key in required:
+             if not pair(r.get(key)):
+                 fail(f'{key} requires nonempty Chinese and English')
++        if v2:
++            for message in validate_v2(r):
++                fail(message)
+         if 'overview' in r and not valid_overview(r['overview']):
+             fail('overview requires bilingual title, summary and evidence')
+         if not r.get('hypotheses') or not all(pair(x) for x in r['hypotheses']):
+@@ -179,7 +185,7 @@
+             fail('reviewed-scoped needs statement and review')
+         if not isinstance(r.get('dependencies'), list) or not isinstance(r.get('related'), list):
+             fail('dependencies and related must be explicit lists')
+-        if not isinstance(r.get('counterexamples'), list) or not r.get('counterexamples'):
++        if not isinstance(r.get('counterexamples'), list) or not (r.get('counterexamples') or (v2 and r.get('does_not_show'))):
+             fail('counterexamples or explicit scoped boundary required')
+         for c in r.get('counterexamples', []):
+             if not pair(c.get('detail')) or c.get('path') not in paths:
+@@ -219,11 +225,132 @@
+     return errors, drift
+ 
+ 
++DNS_KINDS = {'non-implication', 'converse', 'correspondence', 'scope'}
++V2_LISTS = ('does_not_show', 'not_required', 'progress', 'laws', 'standard_boundaries', 'text_versions')
++
++
++def standard_boundaries():
++    """Shared boundary sentences, defined once and referenced by key."""
++    config = json.loads((ROOT / '_process/research-config.json').read_text())
++    path = config.get('standard_boundaries')
++    return json.loads((ROOT / path).read_text())['boundaries'] if path else {}
++
++
++def validate_v2(r):
++    """Structure of schema 2; readability rules come from style.lint (errors for v2)."""
++    from tools.research import style
++    errors = []
++    if 'limitations' in r:
++        errors.append('schema 2 replaces limitations with does_not_show / hypotheses / standard_boundaries')
++    if 'claim' in r and not pair(r['claim']):
++        errors.append('claim, when present, requires nonempty Chinese and English')
++    for key in V2_LISTS:
++        if not isinstance(r.get(key, []), list):
++            errors.append(f'{key} must be a list')
++            return errors
++    for key in ('does_not_show', 'not_required', 'progress', 'laws'):
++        for item in r.get(key, []):
++            if not pair(item):
++                errors.append(f'{key} items require nonempty Chinese and English')
++    paths = {x.get('path') for x in r.get('references', []) if isinstance(x, dict)}
++    declared = {d for x in r.get('references', []) if isinstance(x, dict) for d in x.get('declarations', [])}
++    for item in r.get('does_not_show', []):
++        if item.get('kind', 'non-implication') not in DNS_KINDS:
++            errors.append(f'does_not_show kind must be one of {sorted(DNS_KINDS)}')
++        if 'witness' in item and item['witness'] not in declared | set(r.get('aliases', [])):
++            errors.append(f'does_not_show witness is not a declared reference: {item["witness"]}')
++    for item in r.get('progress', []):
++        source, _, anchor = item.get('source', '').partition('#')
++        if source not in paths:
++            errors.append(f'progress source must be a hashed reference: {source}')
++        elif anchor:
++            from tools.research.reading_catalogue import anchors
++            if anchor not in anchors(ROOT / source):
++                errors.append(f'progress anchor missing: {item["source"]}')
++    for item in r.get('laws', []):
++        unknown = [d for d in item.get('declarations', []) if d not in declared]
++        if unknown:
++            errors.append('law names undeclared references: ' + ', '.join(unknown))
++    known = standard_boundaries()
++    for key in r.get('standard_boundaries', []):
++        if key not in known:
++            errors.append(f'unknown standard boundary {key}')
++    for version in r.get('text_versions', []):
++        p = path_in_repo(version.get('path'))
++        if p is None or digest(p) != version.get('sha256'):
++            errors.append(f'text version missing or changed: {version.get("path")}')
++    errors += [f'{f["field"]}: {f["rule"]}: {f["detail"]}' for f in style.lint(r) if f['severity'] == 'error']
++    return errors
++
++
++def render_record_v2(r):
++    """Result first, then exact conditions; logs and sources collapsed."""
++    base = record_path(r).parent
++    def result_link(ident):
++        target = r.get('_record_links', {}).get(ident)
++        return link(str(Path(target).with_suffix('.md')), base, ident) if target else f'[{ident}]({ident}.md)'
++    def both(value):
++        return value['en'] + '<br>' + value['zh']
++    lines = [f'# {r["title"]["en"]} / {r["title"]["zh"]}', '',
++             '<!-- Generated by tools/research/registry.py; edit the matching JSON record. -->', '',
++             f'`{r["id"]}` · **{r["status"]}** · {r["kind"]} · {r["family"]} · [record]({r["id"]}.json) · ' + link('RESULTS.md', base, 'register'), '',
++             '> ' + r['statement']['en'], '>', '> ' + r['statement']['zh'], '']
++    if 'overview' in r:
++        o = r['overview']
++        lines += ['<details><summary>README overview / 首页摘要</summary>', '', '**' + bilingual(o['title']) + '**', '',
++                  bilingual(o['summary']), '', '**Evidence / 证据:** ' + bilingual(o['evidence']), '', '</details>', '']
++    def anchored(source):
++        file, sep, anchor = source.partition('#')
++        return f'[study]({os.path.relpath(ROOT / file, base)}{sep}{anchor})'
++    progress = ['## Progress / 已接通', ''] + [f'{i}. ' + both(x) + ' ' + anchored(x['source']) for i, x in enumerate(r.get('progress', []), 1)] + ['']
++    if r.get('progress') and r['kind'] == 'target':
++        lines += progress  # for an open target, what is already connected comes first
++    if 'claim' in r:
++        lines += ['## Exact statement / 确切陈述', '', r['claim']['en'], '', r['claim']['zh'], '']
++    if r.get('laws'):
++        lines += ['## Laws / 规律', '']
++        for i, law in enumerate(r['laws'], 1):
++            names = ', '.join('`' + d + '`' for d in law.get('declarations', []))
++            lines += [f'{i}. {law["en"]} {law["zh"]}' + (f' ({names})' if names else '')]
++        lines += ['']
++    lines += ['## Conditions / 条件', '']
++    lines += ['- ' + both(x) for x in r['hypotheses']]
++    if r.get('not_required'):
++        lines += ['', '**Not required by this target / 本目标不要求:**', '']
++        lines += ['- ' + both(x) for x in r['not_required']]
++    if r.get('does_not_show') or r.get('counterexamples'):
++        lines += ['', '## Does not show / 未表明', '']
++        lines += ['- ' + both(x) + (f' Witness: `{x["witness"]}`.' if x.get('witness') else '') for x in r.get('does_not_show', [])]
++        lines += ['- **Counterexample / 反例:** ' + both(c['detail']) + ' ' + link(c['path'], base, 'source') for c in r['counterexamples']]
++    if r.get('standard_boundaries'):
++        known = standard_boundaries()
++        lines += ['', '**Standard boundaries / 通用边界:** ' + ' · '.join(known[k]['en'] + ' ' + known[k]['zh'] for k in r['standard_boundaries'])]
++    if r.get('progress') and r['kind'] != 'target':
++        lines += [''] + progress
++    lines += ['', '## Evidence / 证据', '', both(r['validation_scope']), '', 'Canonical source: ' + link(r['canonical_source'], base), '',
++              '## Next / 下一步', '', both(r['next_delta']), '',
++              '<details><summary>Correspondence, dependencies, sources and history / 对应、依赖、来源与沿革</summary>', '',
++              '### Correspondence / 对应', '', both(r['correspondence']), '', '### Dependencies / 依赖', '']
++    lines += [f'- **{e["relation"]}**: {result_link(e["id"])}. {bilingual(e["detail"])}' for e in r['dependencies']] or ['- none']
++    lines += [f'- related: {result_link(e["id"])}. {bilingual(e["detail"])}' for e in r['related']]
++    lines += ['', '### Sources / 来源', '', '| Role | Source | Declarations |', '|---|---|---|']
++    lines += [f'| {x["role"]} | {link(x["path"], base)} | {", ".join("`" + d + "`" for d in x.get("declarations", [])) or "—"} |' for x in r['references']]
++    lines += ['', 'Aliases / 别名: ' + (', '.join('`' + a + '`' for a in r['aliases']) or '—'), '', '### History / 沿革', '']
++    lines += ['- ' + bilingual(h) for h in r['history']]
++    if r.get('text_versions'):
++        lines += ['', '### Earlier text / 早期文本', '']
++        lines += ['- ' + link(v['path'], base, Path(v['path']).name) + f' (sha256 `{v["sha256"][:16]}…`): {v["note"]}' for v in r['text_versions']]
++    lines += ['', '</details>', '', f'Documentary review UTC: `{r["reviewed_at_utc"]}`. Hashes in the record bind the reviewed sources; this page is not a proof receipt.']
++    return '\n'.join(lines) + '\n'
++
++
+ def link(path, base, label=None):
+     return f'[{label or Path(path).name}]({os.path.relpath(ROOT / path, base)})'
+ 
+ 
+ def render_record(r):
++    if r.get('schema_version') == 2:
++        return render_record_v2(r)
+     base = record_path(r).parent
+     def result_link(ident):
+         target = r.get('_record_links', {}).get(ident)

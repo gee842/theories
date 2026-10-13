@@ -1,0 +1,23 @@
+records 202 findings 1519 records with >=1 finding 142
+length:validation_scope                   107 records   211 findings
+title-is-statement                        103 records   103 findings
+length:title                               98 records   167 findings
+length:claim                               91 records   176 findings
+process-marker:round-number                78 records   272 findings
+round-accretion                            77 records   104 findings
+stock-boundary                             73 records   106 findings
+length:correspondence                      54 records    97 findings
+status-restatement                         44 records    44 findings
+length:next_delta                          43 records    76 findings
+length:limitations                         37 records    57 findings
+prose-cross-reference                      24 records    24 findings
+process-marker:section-reference           19 records    54 findings
+process-marker:date                        12 records    16 findings
+process-marker:round-narration              7 records    10 findings
+evidence-in-claim                           1 records     2 findings
+process markers in title/claim/counterexamples/overview: 52 records
+
+A short theorem (mostly mechanical)           81
+B catalogue theorem (claim>2500 or title>200) 82
+B2 long theorem (needs reading)               23
+C accreted target/assessment/argument         16

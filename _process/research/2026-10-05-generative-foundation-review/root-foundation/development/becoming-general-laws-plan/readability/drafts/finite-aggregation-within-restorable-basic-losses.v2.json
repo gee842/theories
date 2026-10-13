@@ -1,0 +1,393 @@
+{
+  "schema_version": 2,
+  "id": "finite-aggregation-within-restorable-basic-losses",
+  "title": {
+    "zh": "同类可恢复基本损失中的有限合并回应（FR）",
+    "en": "Finite responsiveness to aggregation (FR) among same-kind recoverable basic losses"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "statement": {
+    "zh": "FR 提议：在独立说明的同类可恢复基本损失中，只要支持、负担与历史条件随规模保持，某个有限的较轻损失共同保护足以成为对较重损失的选择根据；程度差异本身不带来无限优先。",
+    "en": "FR proposes that, among independently specified same-kind recoverable basic losses, some finite joint protection of lesser losses suffices for choice against a graver one wherever support, burdens and history persist with scale; gravity alone confers no unlimited priority."
+  },
+  "claim": {
+    "zh": "FR 是超出 LR 近邻的新增规范候选，附正面辩护与作者反审，不是已有公理的推论。在独立说明的同类可恢复基本损失比较族中，固定的较重损失不应仅凭程度差异对任意多项固定的较轻基本保护始终保有充分优先；若支持、负担与历史条件可在规模扩展中保持，则某个有限共同保护规模应能取得充分选择根据。条件应用：同一修复过程保留两次同处活动与别处一次／两次／三次活动；完整片段匹配的充分性成立时，一次保护不足、三次足够；二对二只给出损失对应。活动边界、不重复、跨段后效、共同可行及实质相当成立时，完整片段匹配适用；不可分解的持续损伤按整段修复关系直接比较，并从独立成立的完整参照接续不足或充分判断，毋须统一时长价格。",
+    "en": "FR is an additional normative candidate beyond LR's neighbourhood, defended affirmatively and counterreviewed by its author; it is not a consequence of existing axioms. Within an independently specified family of same-kind recoverable basic losses, a fixed graver loss should not retain sufficient priority over arbitrarily many fixed lesser basic protections solely through its gravity difference; where support, burdens and historical conditions persist under scale expansion, some finite scale of joint protection should acquire sufficient grounds for choice. Conditional application: one repair process retains two episodes at the same position against one, two or three elsewhere; under sufficient complete-episode matching, one protection is insufficient and three suffice, while two against two supplies only a loss correspondence. Complete-episode matching applies where activity boundaries, non-duplication, retained cross-episode effects, joint feasibility and substantive equivalence hold; non-decomposable sustained harm is compared through whole-course repair relations and inherits insufficient or sufficient judgments from independently warranted whole references, without a universal duration price."
+  },
+  "hypotheses": [
+    {
+      "zh": "沿用当前意义结构中的 G0 条件接口及 J 的实践范围；FR 是额外、可修订的比较承诺，不新增第一部分定理或第二条基础公理。",
+      "en": "Reuses G0’s interface in the current significance structure and J’s practical scope; FR is an additional revisable comparison commitment, not a new Part I theorem or second fundamental axiom."
+    },
+    {
+      "zh": "H 与固定 L 都是完整、实际的基本损失，属于独立说明的同类阻断；恢复可达及时、过渡支持真实；不遗漏终末毁损、不可重复参与、共同崩塌、不同强迫或承担。",
+      "en": "H and fixed L are complete actual basic losses of an independently described common kind; recovery is reachable and timely, intervening support is real, and terminal harm, unrepeatable participation, common collapse, different coercion and undertakings are not omitted."
+    },
+    {
+      "zh": "实际不同的生活实现、可靠共同可行的保护及独立权限已说明；规模变化的负担与仍有效机会承诺进入比较。现实可扩展性不由 FR 保证。",
+      "en": "Distinct living realizations, reliable jointly feasible protection and independent permission are established; scale-dependent burdens and live chance commitments enter comparison. FR does not guarantee physical scalability."
+    },
+    {
+      "zh": "共同的较轻基本保护可以达到充分选择强度，是 FR 明确承担的规范内容；它未由有限时长、物理连续性或因果依存推出。 否定永久的较重优先本身仍容许未决或双方机会，故不是 FR 充分性承诺的同义表述。",
+      "en": "That joint lesser basic protection can become sufficient for choice is FR’s explicit normative commitment; it is not derived from finite duration, physical continuity or causal dependence. Rejecting permanent gravity priority still permits incomparability or chances on both sides, and is therefore not equivalent to FR’s sufficiency commitment."
+    },
+    {
+      "zh": "修复应用的给定修复律、共同骨干与覆盖能力确定路线；支持可用足以实现相应活动、片段完整相当及无遗漏累积后果仍需独立对应。当前支持恢复不等于全部经历和关系恢复。",
+      "en": "The repair application supplies a repair law, backbone and coverage capacities. Support sufficiency for the activity, complete equivalent episodes and absence of omitted cumulative consequences require independent correspondence. Current support restoration is not complete experiential or relational recovery."
+    },
+    {
+      "zh": "SufficientMatching 明确增加：在独立说明的 scope 内，保持完整内容的无重复严格损失匹配具有充分选择效力；它加强 LC，也把 BC1 的充分性扩展到本类完整活动片段。只有外侧比较接合另需 Transitive Le。",
+      "en": "SufficientMatching explicitly adds sufficient choice force for a distinct strict loss match preserving complete content within independently established scope. It strengthens LC and extends BC1 sufficiency to these complete activity episodes. Only composition of the outer comparisons additionally requires Transitive Le."
+    },
+    {
+      "zh": "内容完整性相对于真实比较及有证据的决定相关关系。联合后果可分别表示但不因此消失；相同背景仍保留其作用。未知而可能改变判断的后效需辨明或获得有根据的界。",
+      "en": "Content completeness concerns the actual comparison and evidenced decision-relevant relations. Joint effects may be represented separately without disappearing, and identical background retains its role. Potentially decisive unknown effects require inquiry or warranted bounds."
+    },
+    {
+      "zh": "整段参照必须先有独立充分根据，再以实际改善／恶化接入同一有根据比较及范围内传递性。BC2/LC 的 pro tanto 理由不能代替充分参照；目标自身更轻或更重不能保证全部方案后果保持。",
+      "en": "Whole-course references must first have independently sufficient warrant, then feed actual improvement/worsening into the same warranted comparison and scoped transitivity. BC2/LC pro tanto reasons cannot replace sufficient anchors, and an isolated gravity change does not establish preservation of whole response outcomes."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "修复例不校准任意较重损失 H：只覆盖较重侧可独立分为两次完整相当活动损失的构造范围。",
+      "en": "The repair case calibrates no arbitrary graver loss H: it covers only a graver side that decomposes independently into two complete equivalent activity losses.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不推出普遍交换率、全域排序、任意 H 的最小充分人数或二对二的最终判定。",
+      "en": "No universal exchange rate, global ranking, minimum sufficient number for arbitrary H, or final verdict for two against two follows.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "分解资格不给出每项损伤的唯一自然分割，也不认证所有实际后效。",
+      "en": "Decomposition yields no unique natural partition of every harm and certifies no actual aftereffects.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "较轻和较重完整参照都可能缺失；“需要上界”不能替代上界的独立根据。",
+      "en": "Either whole reference may be unavailable; needing an upper bound does not supply one.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "适用范围外不得用本例删除 CP 请求或有效机会承诺。",
+      "en": "Outside its warranted scope the case cannot dismiss CP claims or valid chances.",
+      "kind": "scope"
+    },
+    {
+      "zh": "未建立与所有旧原则的形式一致性，也未建立构造例之外的一般 FR。",
+      "en": "Formal consistency with all earlier principles, and general FR beyond the constructed case, are not established.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "饱和合并对手可以计入每项较轻损失而给其合力永久上限；正机会对手要求较重一方始终有机会。两者未被逻辑排除，构成 FR 的实质争论与机会代价。",
+        "en": "A saturating rival can count every lesser loss while imposing a permanent ceiling; a chance rival requires a positive chance for the graver claimant at every scale. Neither is logically excluded; they identify substantive disagreement and FR’s opportunity cost."
+      }
+    },
+    {
+      "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
+      "detail": {
+        "zh": "恢复终点相同仍可能遗漏不可重复损失；扩大人数可能破坏支持或增加强加负担，均可使应用失效。有限不等于伦理上可交换。",
+        "en": "Equal recovery endpoints can conceal unrepeatable losses; scale can undermine support or increase imposed burdens, defeating application. Finitude does not entail ethical exchangeability."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "detail": {
+        "zh": "三接入安装实际断开共同骨干的给定设备律下，保护没有兑现且额外共同损失保留；fragile_three_not_matching 排除原匹配。",
+        "en": "When the supplied equipment law makes the three-access installation disconnect the backbone, protection fails and the common loss remains; fragile_three_not_matching excludes the original matching."
+      },
+      "witness": "Becoming.RepairComparison.fragile_three_not_matching"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "持续不可分解损伤、累积耗竭或未恢复的信任使完整同等片段对应失效；即便后果相当，损失集中本身也可构成对充分性承诺的规范反对，不能一律归为遗漏事实。",
+        "en": "Continuous nondecomposable damage, cumulative depletion or unrestored trust can defeat episode correspondence. Even with equivalent consequences, concentration may normatively challenge sufficiency and cannot invariably be classified as missing facts."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "detail": {
+        "zh": "同一持续任务中的两次断线不能直接成为两项完整损失；相同终点和短暂恢复不抹去后效。修复例的恢复间隔改成持续受损时，原不足端可获恶化输入，原三次充分上端却不能自动接续。",
+        "en": "Two disconnections within one sustained task do not automatically become two whole losses; equal endpoints and brief restoration do not erase aftereffects. Filling the repair case’s recovery gap can supply worsening for its insufficient anchor, but cannot automatically preserve three-protection sufficiency."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "validation_scope": {
+    "zh": "FR 是哲学候选，附正面辩护与作者反审，无独立验收或经验校准。构造的修复应用已经 Lean 实查（17 项定理、45 项声明，公理报告为空；回执见来源）。分解资格与整段比较为哲学论证，复用 strict_rejection_transport 与 strict_improvement_transport。",
+    "en": "FR is a philosophical candidate with affirmative defence and author counterreview, without independent acceptance or empirical calibration. Its constructed repair application is Lean-checked (17 theorems, 45 declarations, empty axiom reports; receipt under sources). Decomposition and whole-course comparison are philosophical argument reusing strict_rejection_transport and strict_improvement_transport."
+  },
+  "next_delta": {
+    "zh": "若要取得持续损伤的数值阈值：指定其完整生活与保护路线，独立辩护足以覆盖它的上参照，并检验集中损失、机会与规模改变。",
+    "en": "For a numerical threshold for sustained harm: specify its living and protection courses, independently warrant an upper whole reference, and test concentration, chances and scale effects."
+  },
+  "correspondence": {
+    "zh": "从同一支持活动的形成、失效与修复说明生活位置及完整得失；不把较轻损失随人数缩成微不足道的便利，不重复计算同一生活或依存路径，不以排名定义同类或基本。实际阈值须另获比较根据。 修复应用先由同一 Process／Run 产生各路线，historical_claim_iff_support 核查历史记录与当时实际支持；身份、发生时点及共同骨干均保留。sameEpisode 只编码所提议读法，不认证现实同等性；scope 不能以期望赢家定义。 分解说明区分按时间叙述、实际损失分化与比较可替换；恢复既非任何分解的必要条件，也非同等计数的充分条件。持续损伤保留当下承受、活动和自护、恢复路径与负担、共同支持及进一步生成；各方面不被预设成可相加分数。",
+    "en": "Living positions and complete gains/losses are identified through formation, failure and repair of one support activity; do not shrink L into trivial conveniences with population, duplicate a life or dependency path, or define sameness/basicness by the ranking. Actual sufficiency thresholds require further comparative warrant. The repair application generates the courses through one Process/Run; historical_claim_iff_support checks the record against actual support at its episode time, retaining identity, time and the backbone. sameEpisode encodes a proposed reading without certifying real equivalence; scope cannot be defined by a desired winner. Decomposition distinguishes temporal narration, differentiated actual losses and comparative substitutability. Restoration is neither necessary for every decomposition nor sufficient for equal counting. Sustained harm retains present experience, activity/self-care, restoration paths/burdens, common support and further generation, not as additive scores."
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+  "aliases": [
+    "FR finite responsiveness to aggregation",
+    "有限合并回应 FR",
+    "Becoming.RepairComparison.common_start",
+    "Becoming.RepairComparison.generated_trace",
+    "Becoming.RepairComparison.separated_same_life",
+    "Becoming.RepairComparison.support_between_episodes",
+    "Becoming.RepairComparison.current_support_restored",
+    "Becoming.RepairComparison.historical_claim_iff_support",
+    "Becoming.RepairComparison.recovery_retains_loss",
+    "Becoming.RepairComparison.focal_matches_one",
+    "Becoming.RepairComparison.three_matches_focal",
+    "Becoming.RepairComparison.two_loss_correspondence",
+    "Becoming.RepairComparison.two_correspondence_involutive",
+    "Becoming.RepairComparison.conditional_lower_anchor",
+    "Becoming.RepairComparison.conditional_upper_anchor",
+    "Becoming.RepairComparison.conditional_outer_order",
+    "Becoming.RepairComparison.fragile_three_loses_backbone",
+    "Becoming.RepairComparison.fragile_focal_keeps_backbone",
+    "Becoming.RepairComparison.fragile_three_not_matching"
+  ],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用 J 的强度区分、有界选择与 P95 的及时接续内容；这些确定应用输入，不证明 FR 的合并充分性。",
+        "en": "Reuses J’s strength distinctions, bounded choice and P95’s timely-continuation content; these supply application inputs without proving FR’s aggregative sufficiency."
+      },
+      "interface": {
+        "output": {
+          "zh": "正面意义条件、充分比较与实践选择区分，以及实际需要、过渡和替代覆盖。",
+          "en": "Positive-significance conditions, sufficient comparison versus practical selection, and actual needs, transition and replacement coverage."
+        },
+        "input": {
+          "zh": "FR 的支持对应及何时可成为新的充分击败根据。",
+          "en": "FR’s support correspondence and its possible role as a new sufficiently defeating reason."
+        },
+        "conditions": {
+          "zh": "额外承担 FR；保留 J2 的基本／可放弃范围及有效机会历史。此规范依赖是解释性接续；P100 的形式复用另列。",
+          "en": "Adds FR while retaining J2’s basic/optional scope and valid chance history. This normative dependence is interpretive; P100 formal reuse is listed separately."
+        },
+        "evidence": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md"
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用共享 Frame、Run 及 Run.window_trace，原成果不重记；新外围应用另接旧损失比较 Strict 与 strict_improvement_transport。",
+        "en": "Reuses shared Frame, Run and Run.window_trace without recounting their results; the new peripheral application also uses the earlier loss comparison Strict and strict_improvement_transport."
+      },
+      "interface": {
+        "output": {
+          "zh": "每个实际运行的有限窗口是同一过程的 Trace。",
+          "en": "Every finite run window is a Trace of the same process."
+        },
+        "input": {
+          "zh": "四条修复路线从同一初态生成历史，作为历史损失和匹配的输入。",
+          "en": "Histories of four repair courses from one start feed historical losses and matching."
+        },
+        "conditions": {
+          "zh": "给定共同修复律及相应运行；充分性和生活内容对应不由 Trace 推出。",
+          "en": "A common supplied repair law and its runs; Trace establishes neither sufficiency nor living-content correspondence."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean"
+      }
+    },
+    {
+      "id": "comparison-content-under-regrouping",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用比较内容保真纪律，识别时间切分、损失指认及整段后效之间的差异；不把接纳读法的精确条件外推为一般生活分解定理。",
+        "en": "Reuses comparison-content fidelity to distinguish time partition, loss reference and whole effects, without extending the exact admission-reading condition into a universal decomposition theorem."
+      },
+      "interface": {
+        "output": {
+          "zh": "保持实际内容与遗漏真实差异的分组读法已有区分。",
+          "en": "Faithful regrouping is distinguished from readings that omit real differences."
+        },
+        "input": {
+          "zh": "P100 完整片段同等性与 P102 联合内容保留的对应要求。",
+          "en": "Correspondence requirements for P100 episode equivalence and P102 retention of joint content."
+        },
+        "conditions": {
+          "zh": "解释性接通，非新分组模型或已证明所有分割不变；损失集中和规范充分性单独说明。",
+          "en": "Interpretive application, not a new grouping model or proof of invariance under every partition; concentrated loss and normative sufficiency remain separate."
+        },
+        "evidence": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "zh": "其独立性及评分范围说明比较强度必须公开；FR 不推翻基本／可放弃之间的 J2，也不由该构造证明。",
+        "en": "Its independence and score-class scope show that comparative strength must be disclosed; FR neither overturns J2 across basic/optional layers nor follows from that construction."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "a700bbb28af0492bde51f365c9757cc03f1c54aaa823dc20f20aaf85dcd1db3a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "role": "review",
+      "sha256": "a4577a7c349a0874e6ad660133876acb113a58322f93a4c6f1212d1360020085",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "a9600a6fd2781065c7c4a7592b223573a2b627de236c24b0177beecca335ebb0",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "be0b825678314c5ebd14ea08cb56c351917458be37057d736ccf9d104df50282",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "role": "proof",
+      "sha256": "7d325d10faab982e28f087fbe94e1888bbab113f71478f29383cd656fd64f187",
+      "declarations": [
+        "Becoming.Frame.StrictLossMatch",
+        "Becoming.RepairComparison.Repair",
+        "Becoming.RepairComparison.Person",
+        "Becoming.RepairComparison.Claim",
+        "Becoming.RepairComparison.State",
+        "Becoming.RepairComparison.start",
+        "Becoming.RepairComparison.backboneAfter",
+        "Becoming.RepairComparison.advance",
+        "Becoming.RepairComparison.process",
+        "Becoming.RepairComparison.states",
+        "Becoming.RepairComparison.run",
+        "Becoming.RepairComparison.episodeTime",
+        "Becoming.RepairComparison.owner",
+        "Becoming.RepairComparison.protects",
+        "Becoming.RepairComparison.frame",
+        "Becoming.RepairComparison.decidableRealized",
+        "Becoming.RepairComparison.outageAt",
+        "Becoming.RepairComparison.personClaim",
+        "Becoming.RepairComparison.availableNow",
+        "Becoming.RepairComparison.supportedNow",
+        "Becoming.RepairComparison.decidableSupportedNow",
+        "Becoming.RepairComparison.finalState",
+        "Becoming.RepairComparison.common_start",
+        "Becoming.RepairComparison.generated_trace",
+        "Becoming.RepairComparison.separated_same_life",
+        "Becoming.RepairComparison.support_between_episodes",
+        "Becoming.RepairComparison.current_support_restored",
+        "Becoming.RepairComparison.historical_claim_iff_support",
+        "Becoming.RepairComparison.recovery_retains_loss",
+        "Becoming.RepairComparison.sameEpisode",
+        "Becoming.RepairComparison.decidableSameEpisode",
+        "Becoming.RepairComparison.toOne",
+        "Becoming.RepairComparison.focal_matches_one",
+        "Becoming.RepairComparison.toFocal",
+        "Becoming.RepairComparison.three_matches_focal",
+        "Becoming.RepairComparison.swapTwo",
+        "Becoming.RepairComparison.two_loss_correspondence",
+        "Becoming.RepairComparison.two_correspondence_involutive",
+        "Becoming.RepairComparison.SufficientMatching",
+        "Becoming.RepairComparison.conditional_lower_anchor",
+        "Becoming.RepairComparison.conditional_upper_anchor",
+        "Becoming.RepairComparison.conditional_outer_order",
+        "Becoming.RepairComparison.fragile_three_loses_backbone",
+        "Becoming.RepairComparison.fragile_focal_keeps_backbone",
+        "Becoming.RepairComparison.fragile_three_not_matching"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Run.window_trace"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "role": "proof",
+      "sha256": "a099877f064827b1d622eb1b9b7ba4a91e24cfb721b00337f2557c560d8144d5",
+      "declarations": [
+        "GenerativeLossComparison.Strict",
+        "GenerativeLossComparison.Transitive",
+        "GenerativeLossComparison.strict_improvement_transport",
+        "GenerativeLossComparison.strict_rejection_transport",
+        "GenerativeLossComparison.Compatible"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "role": "receipt",
+      "sha256": "f30fd393a060e81fd5b19bb761a565eee3ba24ae4d765e051b75b0b99e4a85e9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RepairComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RepairComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Frame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Frame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122128.341270Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeLossComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-13，P96：承接 Ren 的 continue，在已有交叉损失研究新增 FR 候选；原 BC1/BC2/LC/LR、机会证明及评审逐项保留。新记录只登记这项更强、可争辩的规范内容。",
+      "en": "2026-10-13, P96: following Ren’s continue, added FR in the existing crossed-loss study; BC1/BC2/LC/LR, opportunity proofs and reviews retain their scopes. This record registers only the stronger contestable normative content."
+    },
+    {
+      "zh": "2026-10-13，P100：依 Ren 的“好的”完成一个具体修复关系的条件两端；同一 FR 记录接入形式应用、内容对应和反审，未另建独立结果或把 FR 改报已证明。",
+      "en": "2026-10-13, P100: under Ren’s “好的”, completes conditional anchors within one constructed repair relation; the same FR record receives formal application, correspondence and counterreview, without a separate result or relabeling FR as proved."
+    },
+    {
+      "zh": "2026-10-13，P102：依 Ren 的明确请求，原研究§§12–13完成分解资格及持续损伤直接比较；同一记录接入哲学对应与强反审，未新增独立结果或重记数学。",
+      "en": "2026-10-13, P102: following Ren’s explicit request, study §§12–13 complete decomposition qualification and direct sustained-harm comparison; the same record receives philosophical correspondence and substantive counterreview without another result or mathematical credit."
+    },
+    {
+      "zh": "可读性迁移到 schema 2（草案）：限制与逐轮说明重组为 6 项“未表明”、0 项“不要求”、0 行“已接通”及 1 项通用边界；轮次编号与回执叙述移出公开字段（保留在上方沿革与回执中）。主张、前提、状态与来源哈希均未改变。每句旧文本见迁移对照表；迁移前的完整记录为 text_versions[0]。",
+      "en": "Readability migration to schema 2 (draft): limitations and per-round notes regrouped as 6 does-not-show items, 0 not-required items, 0 progress lines and 1 standard boundaries; round labels and receipt narration removed from the public fields (they remain in the entries above and in the receipts). No claim, premise, status or source hash changed. Every earlier sentence is mapped in the migration table; the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/e5bb0ac8562c49bf/finite-aggregation-within-restorable-basic-losses.json",
+      "sha256": "e5bb0ac8562c49bf90928c11d30344bf0e9e331353ab45690ec9d11d6ef264b1",
+      "note": "Exact record bytes before the readability migration (schema 1)."
+    }
+  ]
+}

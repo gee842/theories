@@ -1,0 +1,19 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/agent-laws-audit/tree",
+  "modules": 16,
+  "ran": [],
+  "reused": 18,
+  "unclean": [],
+  "audits": {
+    "Becoming.LossMatching": {
+      "theorems": 34,
+      "declarations": 42,
+      "with_axioms": {}
+    },
+    "Becoming.RepairComparison": {
+      "theorems": 36,
+      "declarations": 65,
+      "with_axioms": {}
+    }
+  }
+}

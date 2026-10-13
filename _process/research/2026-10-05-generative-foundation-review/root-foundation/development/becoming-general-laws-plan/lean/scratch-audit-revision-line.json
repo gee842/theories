@@ -1,0 +1,24 @@
+{
+  "tree": "/private/tmp/claude-501/-Users-ren-theories/de45ebc5-e5b8-4ea1-944c-69eadababe8f/scratchpad/agent-laws-revision/TREE",
+  "modules": 46,
+  "ran": [],
+  "reused": 49,
+  "unclean": [],
+  "audits": {
+    "Becoming.Contacts": {
+      "theorems": 24,
+      "declarations": 30,
+      "with_axioms": {}
+    },
+    "Becoming.RevisionInstances": {
+      "theorems": 36,
+      "declarations": 40,
+      "with_axioms": {}
+    },
+    "Becoming.Support": {
+      "theorems": 40,
+      "declarations": 51,
+      "with_axioms": {}
+    }
+  }
+}
