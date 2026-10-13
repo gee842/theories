@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-08T18:43:13.629610+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "claim": {
-    "zh": "共同工作与认可形成参与资格，实际提案经既有授权程序改变后续筛选规则；分化或交接携带该规则，实际继续参与决定其执行，继承的差异改变后续可进入的决策。",
-    "en": "Reviewed work and recognition form mandates; an actual proposal changes the later filtering rule through the existing authorization procedure. Branching or handoff carries that rule, continuing participation determines execution, and inherited differences change subsequent admitted decisions."
+    "zh": "对每个过程、动作上的门与构型的量：量沿每段非门控进程保持，当且仅当每个非门控步保持它；改变它的进程经过门，且在一个本身改变它的门控步上。组织程序中只有采纳对规则是门控的：其余每个事件保持规则，所以每段不采纳的历史继承规则，每次规则改变都位于一次采纳。共同工作与认可形成参与资格，实际提案经既有授权程序改变后续筛选规则；分化或交接携带该规则，实际继续参与决定其执行，继承的差异改变后续可进入的决策。",
+    "en": "For every process, gate on moves and quantity of configurations: the quantity is kept along every course of ungated moves exactly when every ungated step keeps it; a course that changes it passes the gate, at a gated step that itself changes it. In the organizational protocol only adoption is gated for the rule: every other event keeps it, so every nonadopting history inherits the rule and every rule change is located at an adoption. Reviewed work and recognition form mandates; an actual proposal changes the later filtering rule through the existing authorization procedure. Branching or handoff carries that rule, continuing participation determines execution, and inherited differences change subsequent admitted decisions."
   },
   "hypotheses": [
     {
@@ -33,7 +33,14 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean",
   "aliases": [
-    "OrganizationalRuleInheritance.inherited_revision_continues"
+    "OrganizationalRuleInheritance.inherited_revision_continues",
+    "Becoming.Gated.kept_along_iff",
+    "Becoming.Gated.change_passes_gate",
+    "Becoming.Gated.change_located",
+    "Becoming.Instances.trace_iff_run",
+    "Becoming.Instances.rule_kept",
+    "Becoming.Instances.rule_inherited",
+    "Becoming.Instances.rule_change_located"
   ],
   "dependencies": [
     {
@@ -85,6 +92,32 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean",
+      "role": "proof",
+      "sha256": "f09a04e5ae4e3725f39bbbc0cb3482b8adf5489bf479facf636d2c055fda6d40",
+      "declarations": [
+        "Becoming.Gated.KeptBy",
+        "Becoming.Gated.kept_along",
+        "Becoming.Gated.kept_along_iff",
+        "Becoming.Gated.change_passes_gate",
+        "Becoming.Gated.change_located"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "role": "proof",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "declarations": [
+        "Becoming.Instances.adopts",
+        "Becoming.Instances.process_eq",
+        "Becoming.Instances.run_eq",
+        "Becoming.Instances.trace_iff_run",
+        "Becoming.Instances.rule_kept",
+        "Becoming.Instances.rule_inherited",
+        "Becoming.Instances.rule_change_located"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/verification.json",
       "role": "receipt",
       "sha256": "d501af23cd3b31ba9420d1f702d99e49be8a6241b336f5cef18553b4c6f8f2fe",
@@ -119,6 +152,12 @@
       "role": "provenance",
       "sha256": "798b2ab355b38d36be143ec8cb502496063e83a238ce14b728f2133aec476e50",
       "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -150,6 +189,10 @@
     {
       "zh": "2026年10月9日：新组合成果实际生成并消费本成果的审查与资格关系；原定理及回执不变，共同研究与新增原始摘要对应已审读。",
       "en": "9 October 2026: a new composition actually produces and consumes this result’s review/mandate relations; original theorem and receipt remain, with shared study and additional primary-abstract correspondence reviewed."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Gated）：对每个过程，量沿非门控进程保持恰当每个非门控步保持它，改变位于门控步；组织规则只由采纳改变，经桥接 Becoming.Instances 成为实例，既有的 nonadopting_history_inherits 是该律的实例。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Gated): for every process, a quantity is kept along ungated courses exactly when every ungated step keeps it, and change is located at a gated step; that only adoption changes the organizational rule becomes an instance through the bridge Becoming.Instances, and the existing nonadopting_history_inherits is an instance of the law. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

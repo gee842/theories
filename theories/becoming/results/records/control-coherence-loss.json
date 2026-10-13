@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-08T19:01:13.669135+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "claim": {
-    "en": "In the specified real-amplitude fragment, controlled X/Z order and complete dephasing preserve control branch weights while changing a fixed measurement response. A diagonal-only decoder and a uniform inverse from the reduced matrix cannot recover the required distinctions. A reversible interaction with a blank register realizes the dephasing on reduction, and retaining the joint state permits exact reversal.",
-    "zh": "在明示实振幅片段中，受控X/Z次序与完全退相干保留控制分支权重但改变固定测量响应。仅凭对角线的解码与仅凭约化矩阵的统一逆映射无法恢复所需区别。与空白寄存器的可逆交互经约化恰好实现退相干；保留共同状态允许精确反转。"
+    "zh": "对每个约化与观测：观测经约化读出的是单值，恰在观测于约化所合并者之间相同之处；在约化合并的两个构型上，在两处都对的解码器存在恰当观测在那里一致，所以没有映射能恢复它合并的两个不同构型。在明示实振幅片段中，受控 X/Z 次序与完全退相干保留控制分支权重但改变固定测量响应；对角线合并加号响应不同的相干与退化矩阵，故仅凭对角线的解码失败；退相干合并制备与相干矩阵，故没有统一逆映射：两者都是实例。与空白寄存器的可逆交互经约化恰好实现退相干；保留共同状态允许精确反转。",
+    "en": "For every reduction and observable: what the observable reads through the reduction is single-valued exactly where it agrees across what the reduction merges; on two configurations the reduction merges, a decoder right at both exists exactly when the observable agrees there, so no map restores two different configurations it merges. In the specified real-amplitude fragment, controlled X/Z order and complete dephasing preserve control branch weights while changing a fixed measurement response; the diagonal merges the coherent and degraded matrices, whose plus responses differ, so a diagonal-only decoder fails, and dephasing merges the prepared and coherent matrices, so no uniform inverse exists: both are instances. A reversible interaction with a blank register realizes the dephasing on reduction, and retaining the joint state permits exact reversal."
   },
   "hypotheses": [
     {
@@ -34,7 +34,13 @@
     "Generative.OperativeCoherence.no_diagonal_response_decoder",
     "Generative.OperativeCoherence.no_uniform_dephase_inverse",
     "Generative.OperativeCoherence.recording_reduces_to_dephase",
-    "Generative.OperativeCoherence.joint_reversal_restores_control"
+    "Generative.OperativeCoherence.joint_reversal_restores_control",
+    "Becoming.Readout.reading_single_iff",
+    "Becoming.Readout.decodes_iff_of_section",
+    "Becoming.Readout.decoder_pair_iff",
+    "Becoming.Readout.no_restore",
+    "Becoming.Instances.diagonal_no_decoder",
+    "Becoming.Instances.dephase_no_restore"
   ],
   "dependencies": [],
   "related": [
@@ -89,6 +95,30 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "role": "proof",
+      "sha256": "0326d487114eb64f6289813dce09e05ee2033f0eec2a52f75536b556fcee97d2",
+      "declarations": [
+        "Becoming.Readout.Reading",
+        "Becoming.Readout.SingleValued",
+        "Becoming.Readout.reading_single_iff",
+        "Becoming.Readout.Decodes",
+        "Becoming.Readout.lumped_of_decodes",
+        "Becoming.Readout.decodes_iff_of_section",
+        "Becoming.Readout.decoder_pair_iff",
+        "Becoming.Readout.no_restore"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "role": "proof",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "declarations": [
+        "Becoming.Instances.diagonal_no_decoder",
+        "Becoming.Instances.dephase_no_restore"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
       "role": "receipt",
       "sha256": "5235cf9487a839cc50e2f52788bdeb580f585b9970621d5f85969e6a18b4d4ed",
@@ -110,6 +140,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_operative_coherence.py",
       "role": "review",
       "sha256": "40eec236f1a32e9d6807c96c5816441cc078e477335185b8a2b6dd38d8dbdd5e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
       "declarations": []
     }
   ],
@@ -138,6 +174,10 @@
     {
       "en": "9 October 2026: reviewed the existing whole/manifold insertion and the subsequent whole-deduction audit in the shared theory/study. The local mathematical statement and proof receipt are unchanged; the whole target does not require this particular mechanism everywhere.",
       "zh": "2026年10月9日：核读共享理论／研究中的整体／manifold插入及后续整体演绎审计。局部数学陈述与证明回执不变；整体目标不要求该机制处处成立。"
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Readout）：对每个约化，解码器恰在观测于合并处一致时存在，合并的不同构型不可恢复；对角解码与退相干逆映射的失败经桥接 Becoming.Instances 成为实例。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与范围不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Readout): for every reduction, a decoder exists exactly where the observable agrees across what is merged, and merged different configurations cannot be restored; the diagonal-decoder and dephasing-inverse failures become instances through the bridge Becoming.Instances. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorems, receipt and scope are unchanged."
     }
   ]
 }

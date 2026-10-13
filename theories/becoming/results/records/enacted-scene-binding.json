@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "claim": {
-    "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
-    "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
+    "zh": "取得词库的解释律的实例：协调后的词库（coordinated 37）满足其条件——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合。指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入；另外有实际响应及访问、保留、时序失败见证。",
+    "en": "An instance of the interpretation law for acquired lexicons: The coordinated lexicon (coordinated 37) meets its conditions — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms. The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs; separate witnesses cover actual response and access, retention and timing failures."
   },
   "hypotheses": [
     {
@@ -29,7 +29,8 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
   "aliases": [
-    "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation"
+    "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation",
+    "Becoming.MachineInstances.coordinated_interprets_every"
   ],
   "dependencies": [
     {
@@ -88,6 +89,16 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "role": "proof",
+      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "declarations": [
+        "Becoming.MachineInstances.coordinated_groups",
+        "Becoming.MachineInstances.coordinated_resolves",
+        "Becoming.MachineInstances.coordinated_interprets_every"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
       "role": "receipt",
       "sha256": "8a9fc92ce6eda7cf26ae79941ce9de120e50c420730b5d9f6755e44c9652c431",
@@ -141,6 +152,10 @@
     {
       "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律的实例（取得词库的解释律见 acquired-binding-compositional-use；外围 MachineInstances）。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the result as an instance of the general law (the interpretation law for acquired lexicons, see acquired-binding-compositional-use; periphery, MachineInstances). Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

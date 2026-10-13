@@ -3,7 +3,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "related": [],
   "id": "acquired-binding-compositional-use",
   "title": {
@@ -11,8 +11,8 @@
     "en": "Acquired bindings enter compositional use"
   },
   "claim": {
-    "zh": "指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定；对二词编码的任意有限序列，学习后的解释等于相应原子表达的组合。有限支持下另有实际执行见证。",
-    "en": "The specified history forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters. Interpretation of every finite sequence in the two-word encoding equals assembly of its corresponding atomic expressions. A separate finite-support witness executes the result."
+    "zh": "对每个逐词读出的读法：分组恢复词之处，读出每个编码序列给出其词义的组合，当且仅当每个词读作其义。对取得的词库：凡转移记录对二词编码成组（六个局部键条件），每个编码序列的解释等于其原子的组合，当且仅当每个词形解析为其原子。指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定，是实例。有限支持下另有实际执行见证。",
+    "en": "For every word-by-word reading: where grouping recovers the words, reading every encoded sequence gives the meanings of its words exactly when each word is read as its meaning. For acquired lexicons: wherever the transition record groups the two-word encoding (six local bond conditions), interpreting every encoded sequence equals the assembly of its atoms exactly when each word form resolves to its atom. The specified history, which forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters, is an instance. A separate finite-support witness executes the result."
   },
   "hypotheses": [
     {
@@ -30,7 +30,13 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
   "aliases": [
-    "Generative.AcquiredBinding.acquired_binding_and_grouping_compose"
+    "Generative.AcquiredBinding.acquired_binding_and_grouping_compose",
+    "Becoming.Segmentation.reads_every_iff",
+    "Becoming.Segmentation.readAll_map_iff",
+    "Becoming.MachineInstances.interprets_every_iff",
+    "Becoming.MachineInstances.readForms_eq",
+    "Becoming.MachineInstances.segments_of_groups",
+    "Becoming.MachineInstances.learned_interprets_every"
   ],
   "dependencies": [
     {
@@ -87,6 +93,29 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean",
+      "role": "proof",
+      "sha256": "f9ef1414a7f9ac7221660308e4c2262e2a5ea105c60a4a648ba7214ac1b2df44",
+      "declarations": [
+        "Becoming.Segmentation.readAll",
+        "Becoming.Segmentation.readAll_map_iff",
+        "Becoming.Segmentation.reads_every_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "role": "proof",
+      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "declarations": [
+        "Becoming.MachineInstances.Groups",
+        "Becoming.MachineInstances.segments_of_groups",
+        "Becoming.MachineInstances.readForms_eq",
+        "Becoming.MachineInstances.interprets_every_iff",
+        "Becoming.MachineInstances.learned_groups",
+        "Becoming.MachineInstances.learned_interprets_every"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
       "role": "receipt",
       "sha256": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
@@ -96,6 +125,12 @@
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "integration",
       "sha256": "eac2b46e7e1788c911f649998d3798e0a662df60caaffd62b9687152a425d555",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
       "declarations": []
     }
   ],
@@ -144,6 +179,10 @@
     {
       "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行：逐词读出的律（Becoming.Segmentation）与取得词库的解释律（外围 MachineInstances）；learned 32 是实例。唯一绑定在覆盖下正确的既有定理本已一般。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first: the word-by-word reading law (Becoming.Segmentation) and the interpretation law for acquired lexicons (periphery, MachineInstances); learned 32 is an instance. The existing theorem that unique binding is correct under coverage was already general. Built with scratch_build; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }
