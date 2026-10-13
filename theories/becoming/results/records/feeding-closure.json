@@ -11,7 +11,7 @@
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
     "zh": "一个形成的延续在某步被另一个供给（Flow.FedBy），是指在同一步上后者在场并向前者当时所需的条件给予。形成的区域对供给封闭（Flow.FedClosed），是指供给一个成员之延续者都是成员。g 在 f 的供给闭包之内（Flow.WithinFeeding），是指含 f、对供给封闭的每个区域都含 g。闭包含 f（Flow.WithinFeeding.refl），可传递（Flow.WithinFeeding.trans），含 f 在任何一步的每个供给者（Flow.WithinFeeding.of_fedBy），本身对供给封闭（Flow.fedClosed_within），所以是含 f、对供给封闭的最小区域。闭包之外的形成，在任何一步都不向闭包成员当时所需的条件给予（Flow.beyond_gives_nothing）。在 Clearing 中，沿依存的区域（Clearing.dependenceRegion：清除者与供给其资源的来源；来源与栖居者没有被供给，各自只含自身）对供给封闭、含其形成（Clearing.fedClosed、Clearing.dependenceRegion_closed、Clearing.dependenceRegion_self），恰是各形成的供给闭包（Clearing.dependenceRegion_iff）。栖居者在清除者的闭包之外（Clearing.dweller_beyond）；闭包之内的每步都被支持，清除者每步活跃，而栖居者从第 2 步起不被支持（Clearing.closure_supported）。不用前提，也不用 Lean 公理。 P86 补充跨步形式：Flow.CarriedTo 要求所用段在条件上平衡，且给予之后到所需之步条件始终立于正数；正给予的某种不增跟随可能仍立着，恰当这些中间水平都为正（Flow.can_stand_iff、Flow.carriedTo_iff_stands）。Flow.FedAcross 把不晚于所需之步的给予经该携带关系接到所需；Flow.fedBy_iff_fedAcross 证明同一步供给是零延迟情形。Flow.WithinFeedingAcross 是含形成、对跨步供给封闭的最小区域，含原闭包（Flow.WithinFeeding.across）；其外不向可携带到成员所需的条件给予（Flow.beyond_gives_nothing_across）。每次给予后条件都不立着时，两闭包相同（Flow.withinFeedingAcross_iff_of_unheld）；Provision.through_store 以第 0 步的亲代供给第 2 步活跃后代的储存见证表明包含可严格。耗尽排除携带，给予大于整段取用充分保证携带；来源的实际归属未确定。",
-    "en": "The continuation of a formation is fed by another at a step (Flow.FedBy) when, at that step, the other takes part and gives to a condition the first then requires. A region of formations is closed under feeding (Flow.FedClosed) when whatever feeds a member's continuation is a member. g lies within f's feeding closure (Flow.WithinFeeding) when every region closed under feeding that holds f holds g. The closure holds f (Flow.WithinFeeding.refl), is transitive (Flow.WithinFeeding.trans), holds every feeder of f at any step (Flow.WithinFeeding.of_fedBy) and is itself closed under feeding (Flow.fedClosed_within), so it is the least region closed under feeding that holds f. A formation beyond the closure gives nothing, at any step, to a condition a member then requires (Flow.beyond_gives_nothing). In Clearing the region along dependence (Clearing.dependenceRegion: the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding and holds its formation (Clearing.fedClosed, Clearing.dependenceRegion_closed, Clearing.dependenceRegion_self), and is exactly each formation's feeding closure (Clearing.dependenceRegion_iff). The dweller lies beyond the clearer's closure (Clearing.dweller_beyond); everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on (Clearing.closure_supported). No premise and no Lean axiom is used. P86 adds the across-step form: Flow.CarriedTo requires balance on the condition over the stretch and positive standing after giving through the required step. Some nonincreasing following of a positive gift can remain positive exactly where all those intermediate levels are positive (Flow.can_stand_iff, Flow.carriedTo_iff_stands). Flow.FedAcross links giving no later than the need through this carrying relation; Flow.fedBy_iff_fedAcross makes same-step feeding its zero-delay case. Flow.WithinFeedingAcross is the least region holding the formation and closed under such feeding; it contains the original closure (Flow.WithinFeeding.across), and nothing beyond it gives to a condition carried to a member’s need (Flow.beyond_gives_nothing_across). If nothing given stands after its step, the closures agree (Flow.withinFeedingAcross_iff_of_unheld); Provision.through_store shows strict inclusion when a parent at step 0 feeds a young active at step 2 through storage. An exhausted intermediate step rules carrying out; giving more than the stretch’s total taking suffices. The actual attribution of origin is not fixed."
+    "en": "The continuation of a formation is fed by another at a step (Flow.FedBy) when, at that step, the other takes part and gives to a condition the first then requires. A region of formations is closed under feeding (Flow.FedClosed) when whatever feeds a member's continuation is a member. g lies within f's feeding closure (Flow.WithinFeeding) when every region closed under feeding that holds f holds g. The closure holds f (Flow.WithinFeeding.refl), is transitive (Flow.WithinFeeding.trans), holds every feeder of f at any step (Flow.WithinFeeding.of_fedBy) and is itself closed under feeding (Flow.fedClosed_within), so it is the least region closed under feeding that holds f. A formation beyond the closure gives nothing, at any step, to a condition a member then requires (Flow.beyond_gives_nothing). In Clearing the region along dependence (Clearing.dependenceRegion: the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding and holds its formation (Clearing.fedClosed, Clearing.dependenceRegion_closed, Clearing.dependenceRegion_self), and is exactly each formation's feeding closure (Clearing.dependenceRegion_iff). The dweller lies beyond the clearer's closure (Clearing.dweller_beyond); everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on (Clearing.closure_supported). No premise and no Lean axiom is used. P86 adds the across-step form: Flow.CarriedTo requires balance on the condition over the stretch and positive standing after giving through the required step. Some nonincreasing following of a positive amount given can remain positive exactly where all those intermediate levels are positive (Flow.can_stand_iff, Flow.carriedTo_iff_stands). Flow.FedAcross links giving no later than the need through this carrying relation; Flow.fedBy_iff_fedAcross makes same-step feeding its zero-delay case. Flow.WithinFeedingAcross is the least region holding the formation and closed under such feeding; it contains the original closure (Flow.WithinFeeding.across), and nothing beyond it gives to a condition carried to a member’s need (Flow.beyond_gives_nothing_across). If nothing given stands after its step, the closures agree (Flow.withinFeedingAcross_iff_of_unheld); Provision.through_store shows strict inclusion when a parent at step 0 feeds a young active at step 2 through storage. An exhausted intermediate step rules carrying out; giving more than the stretch’s total taking suffices. The actual attribution of origin is not fixed."
   },
   "hypotheses": [
     {
@@ -31,8 +31,8 @@
       "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
     },
     {
-      "zh": "can_stand_iff 的延迟严格为正；carriedTo_iff_stands 另给正给予与局部平衡；carried_of_gift_exceeds 要求给予者在场、该段平衡及给予大于累计取用。闭包性质相对于定义的关系成立，不从无条件动力学推出平衡。",
-      "en": "can_stand_iff requires strictly positive delay; carriedTo_iff_stands additionally supplies positive giving and local balance; carried_of_gift_exceeds requires participation, balance over the stretch and giving exceeding total taking. Closure laws hold for the defined relation; they do not derive balance from unconditional dynamics."
+      "zh": "can_stand_iff 的延迟严格为正；carriedTo_iff_stands 另给正给予与局部平衡；carried_of_given_exceeds 要求给予者在场、该段平衡及给予大于累计取用。闭包性质相对于定义的关系成立，不从无条件动力学推出平衡。",
+      "en": "can_stand_iff requires strictly positive delay; carriedTo_iff_stands additionally supplies positive giving and local balance; carried_of_given_exceeds requires participation, balance over the stretch and giving exceeding total taking. Closure laws hold for the defined relation; they do not derive balance from unconditional dynamics."
     }
   ],
   "correspondence": {
@@ -55,13 +55,13 @@
     "Becoming.Clearing.dweller_beyond",
     "Becoming.Clearing.closure_supported",
     "Becoming.Flow.CarriedTo",
-    "Becoming.Flow.FollowsGift",
+    "Becoming.Flow.FollowsGiven",
     "Becoming.Flow.carriedTo_of_le",
-    "Becoming.Flow.FollowsGift.antitone",
+    "Becoming.Flow.FollowsGiven.antitone",
     "Becoming.Flow.can_stand_iff",
-    "Becoming.Flow.spent_keeps_nothing",
+    "Becoming.Flow.depleted_keeps_nothing",
     "Becoming.Flow.carriedTo_iff_stands",
-    "Becoming.Flow.carried_of_gift_exceeds",
+    "Becoming.Flow.carried_of_given_exceeds",
     "Becoming.Flow.FedAcross",
     "Becoming.Flow.ClosedAcross",
     "Becoming.Flow.WithinFeedingAcross",
@@ -216,11 +216,11 @@
   ],
   "limitations": {
     "zh": "原同一步闭包与 P42 的层级结论保留原范围，P86 没有证明跨步闭包在同一步影响闭包内。跨步闭包仍是形成层面的，链上关系各自有时间方向，但整个形成链未给出按时间相接的事件路径。数量不标记来源，某种跟随可能保留不证明实际给予仍在；无论取用怎样分配都携带只有充分条件，精确 iff 未给。中心如何形成或表示其闭包未建模。无伦理谓词或应当结论；读法属于 AI，待 Ren；P42 撤回的“所在系统”读法不恢复。",
-    "en": "The original same-step closure and P42 hierarchy retain their scope; P86 does not show that the across-step closure lies within the same-step influence closure. It remains a formation-level closure: each link has a temporal direction, but the whole chain is not an event path joined in temporal order. Quantities have no origin marks: a possible retained following does not establish actual retention of that gift. Carrying however taking is attributed has a sufficient condition only, no exact iff. A center’s formation or representation of the closure is not modeled. No ethical predicate or ought follows; readings remain the AI’s, pending Ren, and P42’s withdrawn system reading is not restored."
+    "en": "The original same-step closure and P42 hierarchy retain their scope; P86 does not show that the across-step closure lies within the same-step influence closure. It remains a formation-level closure: each link has a temporal direction, but the whole chain is not an event path joined in temporal order. Quantities have no origin marks: a possible retained following does not establish actual retention of that amount. Carrying however taking is attributed has a sufficient condition only, no exact iff. A center’s formation or representation of the closure is not modeled. No ethical predicate or ought follows; readings remain the AI’s, pending Ren, and P42’s withdrawn system reading is not restored."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。 P86 实查补充：核心回执 20261013T094743.528770Z 核对 Becoming.Feeding 的 41 项定理与所有源声明，公理报告为空；外围 20261013T095049.338744Z 通过；研究 §107。历史原范围不变，整合文档尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed. P86 checked addition: core receipt 20261013T094743.528770Z checks Becoming.Feeding’s 41 theorems and all source declarations with empty axiom reports; periphery 20261013T095049.338744Z passes; study §107. Historical scope is retained; the integration text has no independent review yet."
+    "zh": "2026-10-14：Becoming.Feeding 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。 P86 实查补充：核心回执 20261013T094743.528770Z 核对 Becoming.Feeding 的 41 项定理与所有源声明，公理报告为空；外围 20261013T095049.338744Z 通过；研究 §107。历史原范围不变，整合文档尚无独立审查。",
+    "en": "14 October 2026: the current bytes of Becoming.Feeding are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed. P86 checked addition: core receipt 20261013T094743.528770Z checks Becoming.Feeding’s 41 theorems and all source declarations with empty axiom reports; periphery 20261013T095049.338744Z passes; study §107. Historical scope is retained; the integration text has no independent review yet."
   },
   "references": [
     {
@@ -298,12 +298,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db"
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed"
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -313,16 +313,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feeding.lean",
       "role": "proof",
-      "sha256": "44e0205a9896d41ae9f0ebe51a917388c5d50371e6dbe22b8634dcc28b811f47",
+      "sha256": "22ac9b2711ff2f09c6fb48c2cd9b724ebdc199d85b9ee7abbfa181fad86f5206",
       "declarations": [
         "Becoming.Flow.CarriedTo",
-        "Becoming.Flow.FollowsGift",
+        "Becoming.Flow.FollowsGiven",
         "Becoming.Flow.carriedTo_of_le",
-        "Becoming.Flow.FollowsGift.antitone",
+        "Becoming.Flow.FollowsGiven.antitone",
         "Becoming.Flow.can_stand_iff",
-        "Becoming.Flow.spent_keeps_nothing",
+        "Becoming.Flow.depleted_keeps_nothing",
         "Becoming.Flow.carriedTo_iff_stands",
-        "Becoming.Flow.carried_of_gift_exceeds",
+        "Becoming.Flow.carried_of_given_exceeds",
         "Becoming.Flow.FedAcross",
         "Becoming.Flow.ClosedAcross",
         "Becoming.Flow.WithinFeedingAcross",
@@ -356,6 +356,12 @@
         "Becoming.Provision.parent_beyond",
         "Becoming.Provision.through_store"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -403,7 +409,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feeding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Feeding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -411,7 +417,7 @@
   ],
   "next_delta": {
     "zh": "确定实际给予的跟随需要什么额外关系；无论取用怎样分配都携带的精确条件；按事件与时间相接的依存闭包；中心怎样形成并表示其闭包；Ren 对跨步供给读法的判断。",
-    "en": "What additional relation fixes the actual following of a gift; an exact criterion for carrying however taking is attributed; an event closure joined in temporal order; how a center forms and represents its closure; Ren’s judgment of the across-step feeding reading."
+    "en": "What additional relation fixes the actual following of an amount given; an exact criterion for carrying however taking is attributed; an event closure joined in temporal order; how a center forms and represents its closure; Ren’s judgment of the across-step feeding reading."
   },
   "history": [
     {
@@ -573,6 +579,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Flow.FollowsGift` → `Flow.FollowsGiven`、`Flow.FollowsGift.antitone` → `Flow.FollowsGiven.antitone`、`Flow.spent_keeps_nothing` → `Flow.depleted_keeps_nothing`、`Flow.carried_of_gift_exceeds` → `Flow.carried_of_given_exceeds`；陈述、证明与定理数不变；描述这些声明的文字随之改用新词：中文不变；Lean 源：Feeding 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Flow.FollowsGift` → `Flow.FollowsGiven`, `Flow.FollowsGift.antitone` → `Flow.FollowsGiven.antitone`, `Flow.spent_keeps_nothing` → `Flow.depleted_keeps_nothing`, `Flow.carried_of_gift_exceeds` → `Flow.carried_of_given_exceeds`; statements, proofs and theorem counts unchanged; prose describing these declarations follows the new words: “gift” becomes “amount given” where it describes `FollowsGiven`; Lean sources: Feeding only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

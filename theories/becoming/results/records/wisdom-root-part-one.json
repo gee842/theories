@@ -267,20 +267,20 @@
     "en": "Completed formal laws and routes of formation do not automatically prove exhaustive wisdom coverage, universal necessity of every core commitment or sufficiency of the relations. Actual formation, concern and affect, and historical correspondence have separate evidential burdens. P71 has landed with its local conditions retained; P83’s bounded identification excludes a universal perpetual-revision reading. The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganization of accessible experience is a possible route still needing explanation. Ethical warrant belongs to Part II. This record adds no Lean; original formal credit stays with the modules and P73/P74, and the added P83 citation is a scope check."
   },
   "validation_scope": {
-    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261013T095759.980593Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。 2026-10-13 主研究第16节补充内容对应和量词反审；P83 三项已查声明用于界限核对，不新增证明。依赖类型改为 interpretive，以免把智慧读法标成已验证的形式适配器。",
-    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261013T095759.980593Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren. On 13 October 2026, main-study Section 16 adds content correspondence and quantifier counterreview; three checked P83 declarations delimit scope without new proof. Dependency types are interpretive, so the wisdom readings are not labeled verified formal adapters."
+    "zh": "2026-10-14：Becoming.Identification、Becoming.Mechanism、Becoming.Selection 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261013T095759.980593Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。 2026-10-13 主研究第16节补充内容对应和量词反审；P83 三项已查声明用于界限核对，不新增证明。依赖类型改为 interpretive，以免把智慧读法标成已验证的形式适配器。",
+    "en": "14 October 2026: the current bytes of Becoming.Identification, Becoming.Mechanism, Becoming.Selection are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261013T095759.980593Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren. On 13 October 2026, main-study Section 16 adds content correspondence and quantifier counterreview; three checked P83 declarations delimit scope without new proof. Dependency types are interpretive, so the wisdom readings are not labeled verified formal adapters."
   },
   "references": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -317,7 +317,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "4c0500e00a67a18c2a0b52254aecda8310f220646ccc58411fe289af9155382e",
+      "sha256": "d15d9f1f3417067487d431858957e59bc63dd60ccb3fd0513f0de0a9b6c6b7ab",
       "declarations": [
         "Becoming.Web.selects_alike_iff",
         "Becoming.Flow.unselected_beyond_registration",
@@ -347,7 +347,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
       "declarations": [
         "Becoming.carries_law_iff",
         "Becoming.adaptive_state_law_iff"
@@ -412,12 +412,18 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
       "role": "proof",
-      "sha256": "3bc3beb5afde6f1266d20926fd830b7a99f4a14c34f5a69225d6336ff05e5a10",
+      "sha256": "9a43ae375e5ea71d5c5f74e637c752ddca49321832ae53bee9e16750a6a46aa2",
       "declarations": [
         "Becoming.Identification.bounded_induction",
-        "Becoming.Identification.knowing_right",
+        "Becoming.Identification.withBound_exact",
         "Becoming.Identification.held_learner_rests"
       ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -444,7 +450,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -465,7 +471,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -486,7 +492,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identification.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Identification",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -644,6 +650,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Identification.knowing_right` → `Identification.withBound_exact`；陈述、证明与定理数不变；Lean 源：Selection、Mechanism、Identification 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Identification.knowing_right` → `Identification.withBound_exact`; statements, proofs and theorem counts unchanged; Lean sources: Selection, Mechanism, Identification only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

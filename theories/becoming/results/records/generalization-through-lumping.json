@@ -126,8 +126,8 @@
     "en": "The class, the data and the lumping are supplied; which class an actual formation or network holds or can reach, which lumping it imposes and its correspondence to the world are not derived; optimization dynamics, implicit bias and probabilistic generalization bounds (PAC, VC dimension) are not stated; the periphery's networks are three-unit models, not modern deep networks; goAlike_iff_lumped is near-definitional, its content being that it gives Ren's 理 a formal referent; the periphery instances re-read earlier results and give numerical witnesses, the delta being the connection; the readings other than 理 (Ren's) are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Learning 的 75 项定理全部空依赖，其中含 determines_lumped_iff、lumped_right_iff、every_determines_nothing、goAlike_iff_lumped、transfer_right_iff、Training.loss_through与 Training.fit_right_iff；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib ea11ccc0 成功实查（20261013T095759.980593Z）：LearningCorrespondence 的 15 项定理／19 项声明审计，其中习得部分 6 项声明公理报告为空，其余只报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；导入闭包中的每个其他模块与已通过回执一致；核心不导入它。作者反审见整合文档 §92；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 75 theorems of Becoming.Learning all have empty axiom reports, among them determines_lumped_iff, lumped_right_iff, every_determines_nothing, goAlike_iff_lumped, transfer_right_iff, Training.loss_through and Training.fit_right_iff; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). Successful periphery learning-bridge check with Lean 4.30.0-rc2 and Mathlib ea11ccc0 (20261013T095759.980593Z): the 15 theorems/19 declaration audits of LearningCorrespondence, the 6 acquisition declarations with empty axiom reports and the rest reporting only Mathlib's standard axioms (propext, Classical.choice, Quot.sound); every other module in its import closure matches a passed receipt; the core does not import it. The author's counterreview is in §92 of the integration note; there is no independent review yet."
+    "zh": "2026-10-14：Becoming.Mechanism、Becoming.Selection 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Learning 的 75 项定理全部空依赖，其中含 determines_lumped_iff、lumped_right_iff、every_determines_nothing、goAlike_iff_lumped、transfer_right_iff、Training.loss_through与 Training.fit_right_iff；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。外围学习桥接以 Lean 4.30.0-rc2 与 Mathlib ea11ccc0 成功实查（20261013T095759.980593Z）：LearningCorrespondence 的 15 项定理／19 项声明审计，其中习得部分 6 项声明公理报告为空，其余只报告 Mathlib 的标准公理（propext、Classical.choice、Quot.sound）；导入闭包中的每个其他模块与已通过回执一致；核心不导入它。作者反审见整合文档 §92；尚无独立审查。",
+    "en": "14 October 2026: the current bytes of Becoming.Mechanism, Becoming.Selection are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 75 theorems of Becoming.Learning all have empty axiom reports, among them determines_lumped_iff, lumped_right_iff, every_determines_nothing, goAlike_iff_lumped, transfer_right_iff, Training.loss_through and Training.fit_right_iff; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). Successful periphery learning-bridge check with Lean 4.30.0-rc2 and Mathlib ea11ccc0 (20261013T095759.980593Z): the 15 theorems/19 declaration audits of LearningCorrespondence, the 6 acquisition declarations with empty axiom reports and the rest reporting only Mathlib's standard axioms (propext, Classical.choice, Quot.sound); every other module in its import closure matches a passed receipt; the core does not import it. The author's counterreview is in §92 of the integration note; there is no independent review yet."
   },
   "references": [
     {
@@ -196,7 +196,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
       "declarations": [
         "Becoming.GoAlike",
         "Becoming.carries_law_iff"
@@ -205,7 +205,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
       "role": "proof",
-      "sha256": "4c0500e00a67a18c2a0b52254aecda8310f220646ccc58411fe289af9155382e",
+      "sha256": "d15d9f1f3417067487d431858957e59bc63dd60ccb3fd0513f0de0a9b6c6b7ab",
       "declarations": [
         "Becoming.Web.SelectsThrough"
       ]
@@ -233,19 +233,25 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-12-learning-wisdom-root-and-induction.md",
       "role": "provenance",
       "sha256": "c648f395f1da2e423e27a2b801e2421550867f71209ac7c63c3aa7fb1f071e1e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
       "declarations": []
     }
   ],
@@ -266,14 +272,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Selection",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -366,6 +372,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Mechanism、Selection 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Mechanism, Selection only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

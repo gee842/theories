@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
   "claim": {
-    "zh": "设 whole 是 A × B 上的整体（哪些组合出现）。whole 是矩形的（Rectangular），指 whole (a, b) 与 whole (a′, b′) 推出 whole (a, b′)；分离的描述（Separated whole p）只说 p 的每个部分能出现。分离保留每个出现的组合（separated_of_whole），并且“分离的描述只含出现者”恰当 whole 是矩形的（separation_faithful_iff）；总是同去的两个部分分别描述时可以分开（separation_surplus）。三个部分可以作为整体相关而任意两个都自由：偶奇偶的三元组中，任意两个值都能补成偶的三元组，而 (true, false, false) 不是（whole_not_in_pairs）；放在 Specker 的三个盒子与三对上（Becoming.Context 的 restrict、Glued、PartsDetermine），每个读法都被每一对容许（evenBoxes_glued），诸对不给回整体（evenBoxes_not_determined）。律 next 从 whole 通到的配置记作 imageOf next whole。各自移动每个部分的律 (f × g) 保持矩形，不论有损与否（Rectangular.image_of_separate）；把第一部分复制进第二部分的律把全部组合变成两个部分相同，不是矩形的（copy_relates）。f 在出现的第一部分上不合并、g 在出现的第二部分上不合并时，(f × g) 的像是矩形的推出 whole 是矩形的（Rectangular.of_image_injective），所以不是矩形的整体在这样的律下保持不是矩形的（relation_persists）。把第一部分送到一个值的律，不论怎样移动第二部分，通到矩形的整体（forgetting_unrelates）。例：Bool × Bool 上的 couple (x, y) = (x, flipIf x y) 是对合（couple_couple）；它把“第二部分为假”（矩形）通到不是矩形的整体，再作用一次通回“第二部分为假”（coupling_relates_and_unrelates）。不用 Lean 公理。",
-    "en": "Let whole be a whole on A × B (which combinations occur). It is rectangular (Rectangular) when whole (a, b) and whole (a′, b′) give whole (a, b′); the separated description (Separated whole p) says only that each part of p occurs. Separation keeps every combination that occurs (separated_of_whole), and it contains only what occurs exactly when whole is rectangular (separation_faithful_iff); two parts that always go alike can go apart when described separately (separation_surplus). Three parts can be related as a whole while every two are free: in the even-parity triples any two values complete to an even triple, and (true, false, false) is not one (whole_not_in_pairs); on Specker's three boxes and three pairs (restrict, Glued and PartsDetermine of Becoming.Context) every reading is allowed by every pair (evenBoxes_glued) and the pairs do not give the whole back (evenBoxes_not_determined). Write imageOf next whole for the configurations a law next leads to from whole. A law moving each part by itself (f × g) keeps a whole rectangular, lossy or not (Rectangular.image_of_separate); the law copying the first part into the second turns the full whole into the parts being equal, which is not rectangular (copy_relates). Where f merges no two first parts that occur and g no two second parts, a rectangular image under f × g gives a rectangular whole (Rectangular.of_image_injective), so a whole that is not rectangular stays so under such a law (relation_persists). A law sending the first part to one value, however it moves the second, leads to a rectangular whole (forgetting_unrelates). For example, couple (x, y) = (x, flipIf x y) on Bool × Bool is an involution (couple_couple); it leads from “the second part is false” (rectangular) to a whole that is not rectangular, and acting again back to “the second part is false” (coupling_relates_and_unrelates). No Lean axiom is used."
+    "zh": "设 whole 是 A × B 上的整体（哪些组合出现）。whole 是矩形的（Rectangular），指 whole (a, b) 与 whole (a′, b′) 推出 whole (a, b′)；分离的描述（Separated whole p）只说 p 的每个部分能出现。分离保留每个出现的组合（separated_of_whole），并且“分离的描述只含出现者”恰当 whole 是矩形的（separation_faithful_iff）；总是同去的两个部分分别描述时可以分开（separation_admits_extra）。三个部分可以作为整体相关而任意两个都自由：偶奇偶的三元组中，任意两个值都能补成偶的三元组，而 (true, false, false) 不是（whole_not_in_pairs）；放在 Specker 的三个盒子与三对上（Becoming.Context 的 restrict、Glued、PartsDetermine），每个读法都被每一对容许（evenBoxes_glued），诸对不给回整体（evenBoxes_not_determined）。律 next 从 whole 通到的配置记作 imageOf next whole。各自移动每个部分的律 (f × g) 保持矩形，不论有损与否（Rectangular.image_of_separate）；把第一部分复制进第二部分的律把全部组合变成两个部分相同，不是矩形的（copy_relates）。f 在出现的第一部分上不合并、g 在出现的第二部分上不合并时，(f × g) 的像是矩形的推出 whole 是矩形的（Rectangular.of_image_injective），所以不是矩形的整体在这样的律下保持不是矩形的（relation_persists）。把第一部分送到一个值的律，不论怎样移动第二部分，通到矩形的整体（forgetting_unrelates）。例：Bool × Bool 上的 couple (x, y) = (x, flipIf x y) 是对合（couple_couple）；它把“第二部分为假”（矩形）通到不是矩形的整体，再作用一次通回“第二部分为假”（coupling_relates_and_unrelates）。不用 Lean 公理。",
+    "en": "Let whole be a whole on A × B (which combinations occur). It is rectangular (Rectangular) when whole (a, b) and whole (a′, b′) give whole (a, b′); the separated description (Separated whole p) says only that each part of p occurs. Separation keeps every combination that occurs (separated_of_whole), and it contains only what occurs exactly when whole is rectangular (separation_faithful_iff); two parts that always go alike can go apart when described separately (separation_admits_extra). Three parts can be related as a whole while every two are free: in the even-parity triples any two values complete to an even triple, and (true, false, false) is not one (whole_not_in_pairs); on Specker's three boxes and three pairs (restrict, Glued and PartsDetermine of Becoming.Context) every reading is allowed by every pair (evenBoxes_glued) and the pairs do not give the whole back (evenBoxes_not_determined). Write imageOf next whole for the configurations a law next leads to from whole. A law moving each part by itself (f × g) keeps a whole rectangular, lossy or not (Rectangular.image_of_separate); the law copying the first part into the second turns the full whole into the parts being equal, which is not rectangular (copy_relates). Where f merges no two first parts that occur and g no two second parts, a rectangular image under f × g gives a rectangular whole (Rectangular.of_image_injective), so a whole that is not rectangular stays so under such a law (relation_persists). A law sending the first part to one value, however it moves the second, leads to a rectangular whole (forgetting_unrelates). For example, couple (x, y) = (x, flipIf x y) on Bool × Bool is an involution (couple_couple); it leads from “the second part is false” (rectangular) to a whole that is not rectangular, and acting again back to “the second part is false” (coupling_relates_and_unrelates). No Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -36,7 +36,7 @@
     "Becoming.Rectangular",
     "Becoming.Separated",
     "Becoming.separation_faithful_iff",
-    "Becoming.separation_surplus",
+    "Becoming.separation_admits_extra",
     "Becoming.whole_not_in_pairs",
     "Becoming.evenBoxes_not_determined",
     "Becoming.imageOf",
@@ -97,8 +97,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
       "detail": {
-        "zh": "不是矩形的整体分别描述时多出组合（separation_surplus）；三个部分的偶奇偶不被任何一对持有（whole_not_in_pairs）；一个无损的耦合可以结束关系（coupling_relates_and_unrelates），所以“不失去什么”不足以保持关系，要加“各自移动每个部分”。",
-        "en": "A whole that is not rectangular gains combinations when described separately (separation_surplus); the even parity of three parts is held by no pair (whole_not_in_pairs); a lossless coupling can end a relation (coupling_relates_and_unrelates), so losing nothing does not keep a relation without “moving each part by itself”."
+        "zh": "不是矩形的整体分别描述时多出组合（separation_admits_extra）；三个部分的偶奇偶不被任何一对持有（whole_not_in_pairs）；一个无损的耦合可以结束关系（coupling_relates_and_unrelates），所以“不失去什么”不足以保持关系，要加“各自移动每个部分”。",
+        "en": "A whole that is not rectangular gains combinations when described separately (separation_admits_extra); the even parity of three parts is held by no pair (whole_not_in_pairs); a lossless coupling can end a relation (coupling_relates_and_unrelates), so losing nothing does not keep a relation without “moving each part by itself”."
       }
     }
   ],
@@ -107,20 +107,20 @@
     "en": "Relation is stated for wholes of two parts, with parity as the witness for three; which joint laws keep wholes rectangular is not characterized; a coupling ending a relation has one witness; PartsDetermine and separation_faithful_iff are not related as instance and law (the two parts have different types); the readings are the AI's; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Description 的 53 项定理全部空依赖，其中含 separation_faithful_iff、separation_surplus、whole_not_in_pairs、evenBoxes_glued、evenBoxes_not_determined、Rectangular.image_of_separate、copy_relates、relation_persists、forgetting_unrelates与 coupling_relates_and_unrelates；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §94；独立审查的范围见同节。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 53 theorems of Becoming.Description all have empty axiom reports, among them separation_faithful_iff, separation_surplus, whole_not_in_pairs, evenBoxes_glued, evenBoxes_not_determined, Rectangular.image_of_separate, copy_relates, relation_persists, forgetting_unrelates and coupling_relates_and_unrelates; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §94 of the integration note, with the scope of the independent review."
+    "zh": "2026-10-14：Becoming.Description 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Description 的 53 项定理全部空依赖，其中含 separation_faithful_iff、separation_admits_extra、whole_not_in_pairs、evenBoxes_glued、evenBoxes_not_determined、Rectangular.image_of_separate、copy_relates、relation_persists、forgetting_unrelates与 coupling_relates_and_unrelates；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §94；独立审查的范围见同节。",
+    "en": "14 October 2026: the current bytes of Becoming.Description are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 53 theorems of Becoming.Description all have empty axiom reports, among them separation_faithful_iff, separation_admits_extra, whole_not_in_pairs, evenBoxes_glued, evenBoxes_not_determined, Rectangular.image_of_separate, copy_relates, relation_persists, forgetting_unrelates and coupling_relates_and_unrelates; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §94 of the integration note, with the scope of the independent review."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
       "role": "proof",
-      "sha256": "a7552ae0feeb0893ad0d5c390978360c8faa262db82c13728c8aea7583aac8cd",
+      "sha256": "65a0b6af64b35211fa0b42e48c92d9b6ae0504fbfc597cf6f5e703ef25b88aaa",
       "declarations": [
         "Becoming.Rectangular",
         "Becoming.Separated",
         "Becoming.separated_of_whole",
         "Becoming.separation_faithful_iff",
-        "Becoming.separation_surplus",
+        "Becoming.separation_admits_extra",
         "Becoming.flipIf",
         "Becoming.EvenThree",
         "Becoming.whole_not_in_pairs",
@@ -162,13 +162,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -182,12 +182,18 @@
       "role": "provenance",
       "sha256": "ef5699566c3ae5b7575ea1383d5cef26f279a43d4717f227d934b74fec88a501",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Description.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Description",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -272,6 +278,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `separation_surplus` → `separation_admits_extra`；陈述、证明与定理数不变；Lean 源：Description 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `separation_surplus` → `separation_admits_extra`; statements, proofs and theorem counts unchanged; Lean sources: Description only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

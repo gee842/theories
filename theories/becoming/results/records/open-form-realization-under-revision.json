@@ -161,8 +161,8 @@
     "en": "A conditional composition with substantive counterexamples, not a universal productive deadline, necessary form of justified exploration, ethical scalar, final permission or duty. It does not newly prove executed epistemic openness, physical reliability, unique risk shares or inevitable compliance by all intelligence."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 propext；98项继承定理／185项审计分别重编。1个完整生产端到消费端控制应用不另计定理。作者七项反审与 Lamport 原典限定阅读；无独立验收或新经验实验。 P89（2026-10-13）：共享检查器核查四项适配、全部空公理依赖；Bridge 共48项定理／66项源声明审计，75个包模块共4522项定理／6374项审计，另列24个继承模块；77个纯净核心模块的字节及空公理范围保持，实际运行5个Lean步骤、复用348个。无新独立成果或独立验收。",
-    "en": "Lean 4.29.1 checked 10 new theorems/19 declaration audits: 14 empty and 5 propext only; 98 inherited theorems/185 audits separately rebuilt. One complete producer-consumer control application is not an additional theorem. Seven author counterreviews and scoped primary-source reading of Lamport; no independent acceptance or new empirical experiment. P89 (13 October 2026): the shared checker verifies four adapters, all axiom-free. Bridge has 48 theorems/66 source declaration audits; 75 package modules have 4522 theorems/6374 audits, with 24 inherited modules separate. The 77 pure core modules retain their bytes and empty-axiom scope; 5 Lean steps ran and 348 were reused. No new independent result or independent acceptance."
+    "zh": "2026-10-14：Becoming.Bridge 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 实查10项新定理／19项声明审计：14项空依赖、5项仅 propext；98项继承定理／185项审计分别重编。1个完整生产端到消费端控制应用不另计定理。作者七项反审与 Lamport 原典限定阅读；无独立验收或新经验实验。 P89（2026-10-13）：共享检查器核查四项适配、全部空公理依赖；Bridge 共48项定理／66项源声明审计，75个包模块共4522项定理／6374项审计，另列24个继承模块；77个纯净核心模块的字节及空公理范围保持，实际运行5个Lean步骤、复用348个。无新独立成果或独立验收。",
+    "en": "14 October 2026: the current bytes of Becoming.Bridge are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Lean 4.29.1 checked 10 new theorems/19 declaration audits: 14 empty and 5 propext only; 98 inherited theorems/185 audits separately rebuilt. One complete producer-consumer control application is not an additional theorem. Seven author counterreviews and scoped primary-source reading of Lamport; no independent acceptance or new empirical experiment. P89 (13 October 2026): the shared checker verifies four adapters, all axiom-free. Bridge has 48 theorems/66 source declaration audits; 75 package modules have 4522 theorems/6374 audits, with 24 inherited modules separate. The 77 pure core modules retain their bytes and empty-axiom scope; 5 Lean steps ran and 348 were reused. No new independent result or independent acceptance."
   },
   "references": [
     {
@@ -237,7 +237,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
       "role": "proof",
-      "sha256": "5ab71acea5161506548c983a5078b72fc2fe0f317e3450a5a8cc1d4fb50e408c",
+      "sha256": "36a21e9fc890ab60f35c59bd7a4f88bbc09853aaf5b2c6d333504460e7860d5a",
       "declarations": [
         "Becoming.Run.novel_by_handoff",
         "Becoming.Run.relevance_by_handoff_of_unrestricted",
@@ -249,6 +249,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json",
       "role": "receipt",
       "sha256": "b4b0d6b2ce654b05ee8b4731faee4f8332834ed22dac0de2adb9e6b1a1d14bb0",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
       "declarations": []
     }
   ],
@@ -276,7 +282,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T102207.009826Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -298,6 +304,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Bridge 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

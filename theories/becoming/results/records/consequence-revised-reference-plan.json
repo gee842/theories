@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T13:08:03.378239+00:00",
+  "reviewed_at_utc": "2026-10-13T21:30:54.975650+00:00",
   "claim": {
-    "zh": "在共同 Process/Trace 中，真实活动留下的失配地址修改保留的接触序列；控制器按新序列取得绑定的双参考值，检查分离后安装新记录，后续实际回应随之改变。第二次失配再次修改方法并使用新装置，全程支持不重置。计划、参考、安装和使用各有检查声明；新的已安装接触接回原 Through，旧选择保留直接复用 P93。冻结旧方法、擦除记录、支持不足、常值参考及检查后漂移保留失败。",
-    "en": "Within the shared Process/Trace, an acquired mismatch address revises a retained contact sequence. The controller executes it, acquires bound reference pairs, checks separation, installs fresh records and changes actual later response. A second mismatch revises the method again without resetting support. Plan, reference, installation and use handoffs are checked; new installed contacts reuse Through and old-choice preservation directly reuses P93. Frozen methods, erased receipts, insufficient support, constant references and post-check drift retain failures."
+    "zh": "接触与存量的一般规律（Becoming.Contacts、Becoming.Stock）给出从后果到后来使用的连接。经接触计划的登记，换计划保留每个旧选择恰当保留每个旧接触（Contacts.keeps_iff_retains）；修订规则登记每次失败，恰当下一计划含失败的地址（Contacts.answers_iff），不读失败的规则在地址无界时每个计划都漏掉某次失败（Contacts.blind_misses）；两个参考回应驱动二值通道到两个目标恰当它们不同，已安装的编码在通道改变后仍对恰当新通道在编码处与旧的一致（References.drives_iff、References.stays_iff）；有燃料的历程可执行恰当它被覆盖（Stock.feasible_iff_covered）。ReferencePlan 是其实例：燃料守恒且只从已持者汲取（balanced、draws_held、trace_conserves_of_law），修订登记每次失败（propose_answers、revise_registers_failure）。在共同 Process/Trace 中，真实活动留下的失配地址修改保留的接触序列；控制器按新序列取得绑定的双参考值，检查分离后安装新记录，后续实际回应随之改变；第二次失配再次修改方法并使用新装置，全程燃料不重置（complete_history、revision_binds_plan、second_installed_choice）。新的已安装接触接回原 Through，旧选择保留直接复用 P93。对照是一般规律的失败方向：冻结的方法是不读失败的规则（frozen_blind、frozen_misses），常值参考违反 drives_iff，检查后漂移是 inverted_fails（drift_fails），燃料不足是未被覆盖的历程，擦除的失配不能启动（erased_mismatch_cannot_activate）。",
+    "en": "The general laws of contacts and stock (Becoming.Contacts, Becoming.Stock) carry the connection from consequence to later use. With registration through a contact plan, a change of plan keeps every old selection exactly where it retains every old contact (Contacts.keeps_iff_retains); a revision rule registers every failure exactly where it puts the failed address into the next plan (Contacts.answers_iff), and a rule blind to failures leaves some failure unregistered at every plan once addresses are unbounded (Contacts.blind_misses); two reference responses drive a two-valued channel to both targets exactly when they differ, and an installed encoding stays right exactly where the new channel agrees with the old at the encoded inputs (References.drives_iff, References.stays_iff); a fuelled course is executable exactly where it is covered (Stock.feasible_iff_covered). ReferencePlan is an instance: its fuel is conserved and drawn only from what is held (balanced, draws_held, trace_conserves_of_law), and its revision registers every failure (propose_answers, revise_registers_failure). Within the shared Process/Trace, an acquired mismatch address revises a retained contact sequence; the controller executes it, acquires bound reference pairs, checks separation, installs fresh records and changes actual later response; a second mismatch revises the method again without resetting fuel (complete_history, revision_binds_plan, second_installed_choice). New installed contacts reuse Through and old-choice preservation directly reuses P93. The controls are failure directions of the general laws: the frozen method is a rule blind to failures (frozen_blind, frozen_misses), constant references fail drives_iff, post-check drift is inverted_fails (drift_fails), insufficient fuel is an uncovered course, and an erased mismatch cannot activate (erased_mismatch_cannot_activate)."
   },
   "hypotheses": [
     {
@@ -23,12 +23,12 @@
       "en": "The revision rule prepends an acquired failed address to the retained sequence; checking requires each reference pair to separate, with operative assembly and retention. Formation of those primitives and revision/check rules is not claimed explained."
     },
     {
-      "zh": "局部支持账给每次普通操作1、双参考接触2的消耗；执行须足额，见证从30开始，无补给。不是通用物理成本或分子材料账。",
-      "en": "The local support account charges one per ordinary operation and two per reference pair, with affordability required. The witness starts with 30 and has no replenishment; these are not universal physical costs or molecular stocks."
+      "zh": "每次普通操作用去 1 单位燃料、每对参考 2 单位；每步须被所持燃料覆盖。见证从 30 开始，无补给；不是通用物理量或分子材料存量。",
+      "en": "Each ordinary operation uses one unit of fuel and each reference pair two; every step must be covered by the fuel held. The witness starts with 30 and has no replenishment; these are not universal physical amounts or molecular stocks."
     },
     {
-      "zh": "新增候选相对于当前接触计划及装置；可用原语和地址空间仍属于给定总律。登记等价针对装置已安装的接触域，实际编码与使用另行检查。 普通活动回返属于整体的另一实际关系；不把已安装参考域当作系统全部接触。漂移是同一过程内给定且有消耗的原语。",
-      "en": "Candidate novelty is relative to the current contact plan and apparatus; primitives and address space remain in the supplied encompassing law. Registration concerns installed contacts, with actual encoding and use checked separately. Ordinary return is another actual relationship within the whole; installed reference registration is not total system access. Drift is an admitted, charged primitive of the same process."
+      "zh": "新增候选相对于当前接触计划及装置；可用原语和地址空间仍属于给定总律。登记等价针对装置已安装的接触域，实际编码与使用另行检查。 普通活动回返属于整体的另一实际关系；不把已安装参考域当作系统全部接触。漂移是同一过程内给定、用去燃料的原语。",
+      "en": "Candidate novelty is relative to the current contact plan and apparatus; primitives and address space remain in the supplied encompassing law. Registration concerns installed contacts, with actual encoding and use checked separately. Ordinary return is another actual relationship within the whole; installed reference registration is not total system access. Drift is an admitted primitive of the same process that uses fuel."
     }
   ],
   "correspondence": {
@@ -41,7 +41,9 @@
     "Becoming.ReferencePlan.revision_binds_plan",
     "Becoming.ReferencePlan.second_installed_choice",
     "consequence revised reference plan",
-    "后果修订参考计划"
+    "后果修订参考计划",
+    "Becoming.ReferencePlan.frozen_misses",
+    "Becoming.Contacts.answers_iff"
   ],
   "dependencies": [
     {
@@ -134,8 +136,8 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "detail": {
-        "zh": "frozen_second_method_still_fails 保留第一修复及更多支持，却不能处理第二失配；erased_receipt_cannot_activate、support_too_small_to_build、constant_channel_rejected 与 drift_after_check_can_fail 保留回执、支持、可分性及稳定范围的失败。 drift_has_actual_history 给出检查后的漂移和失败的同一 Trace，不只替换对照起始配置。",
-        "en": "frozen_second_method_still_fails retains the first repair and more support yet misses the second mismatch; erased_receipt_cannot_activate, support_too_small_to_build, constant_channel_rejected and drift_after_check_can_fail preserve failures of receipt, support, separation and stability. drift_has_actual_history gives a shared Trace for post-check drift and failure, rather than only changing the control’s starting configuration."
+        "zh": "frozen_second_method_still_fails 保留第一修复及更多燃料，却不能处理第二失配，是不读失败的规则在每个计划都漏掉某次失败（frozen_misses）的一例；erased_mismatch_cannot_activate、support_too_small_to_build、constant_channel_rejected 与 drift_after_check_can_fail 保留失配记录、燃料、可分性及稳定范围的失败，后两者是 drives_iff 与 inverted_fails 的失败方向（drift_fails）。drift_has_actual_history 给出检查后的漂移和失败的同一 Trace，不只替换对照起始配置。",
+        "en": "frozen_second_method_still_fails retains the first repair and more fuel yet misses the second mismatch, a case of the law that a rule blind to failures misses one at every plan (frozen_misses); erased_mismatch_cannot_activate, support_too_small_to_build, constant_channel_rejected and drift_after_check_can_fail preserve failures of the mismatch record, fuel, separation and stability, the last two as failure directions of drives_iff and inverted_fails (drift_fails). drift_has_actual_history gives a shared Trace for post-check drift and failure, rather than only changing the control’s starting configuration."
       }
     }
   ],
@@ -144,14 +146,14 @@
     "en": "Completes a conditional local method–reference–apparatus–use interface, without deriving arbitrary sensing primitives, acquisition of the revision compiler, autonomous selection of all ordinary tasks, actual contact reliability, general attraction/basins, normative warrant or a premise-free foundation. The finite witness is not universal corrigibility; no new formal composition of older material models is claimed."
   },
   "validation_scope": {
-    "zh": "最终 Lean 4.29.1 核心20261013T122414.398959Z通过：43新定理／68源声明审计全空，纯核心从前导编译；外围兼容20261013T122528.526650Z通过。首次42定理检查及源快照保留。49项基础设施测试通过。作者反审明确参考登记范围并补入实际漂移历史；无独立代理验收或经验验证。",
-    "en": "Final Lean 4.29.1 core 20261013T122414.398959Z passed: 43 new theorems/68 source-declaration audits, all empty, with the pure core built from the prelude; peripheral compatibility 20261013T122528.526650Z passed. The initial 42-theorem checkpoint and source remain frozen. All 49 infrastructure tests passed. Author counterreview clarifies registration scope and adds actual drift history; no independent-agent or empirical validation."
+    "zh": "2026-10-14：Becoming.ReferencePlan、Becoming.Contacts、Becoming.Stock 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 最终 Lean 4.29.1 核心20261013T122414.398959Z通过：43新定理／68源声明审计全空，纯核心从前导编译；外围兼容20261013T122528.526650Z通过。首次42定理检查及源快照保留。49项基础设施测试通过。作者反审明确参考登记范围并补入实际漂移历史；无独立代理验收或经验验证。",
+    "en": "14 October 2026: the current bytes of Becoming.ReferencePlan, Becoming.Contacts, Becoming.Stock are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Final Lean 4.29.1 core 20261013T122414.398959Z passed: 43 new theorems/68 source-declaration audits, all empty, with the pure core built from the prelude; peripheral compatibility 20261013T122528.526650Z passed. The initial 42-theorem checkpoint and source remain frozen. All 49 infrastructure tests passed. Author counterreview clarifies registration scope and adds actual drift history; no independent-agent or empirical validation."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
       "role": "proof",
-      "sha256": "9f758b091d69db94f52d9a3494922a1a410cf2a029a70cc31a22690a6fe08f62",
+      "sha256": "6024fd33a5e0d4a428d8c746d76ee9b22b90363547dbcf4e9e905524bf41a9c1",
       "declarations": [
         "Becoming.ReferencePlan.flip",
         "Becoming.ReferencePlan.flip_twice",
@@ -160,7 +162,7 @@
         "Becoming.ReferencePlan.keyAt",
         "Becoming.ReferencePlan.State",
         "Becoming.ReferencePlan.Act",
-        "Becoming.ReferencePlan.cost",
+        "Becoming.ReferencePlan.use",
         "Becoming.ReferencePlan.propose",
         "Becoming.ReferencePlan.operate",
         "Becoming.ReferencePlan.revision_binds_plan",
@@ -169,15 +171,15 @@
         "Becoming.ReferencePlan.execute",
         "Becoming.ReferencePlan.P",
         "Becoming.ReferencePlan.determined",
-        "Becoming.ReferencePlan.step_account",
-        "Becoming.ReferencePlan.trace_account",
+        "Becoming.ReferencePlan.step_conserves",
+        "Becoming.ReferencePlan.trace_conserves",
         "Becoming.ReferencePlan.choose",
         "Becoming.ReferencePlan.repair",
         "Becoming.ReferencePlan.run",
         "Becoming.ReferencePlan.run_trace",
         "Becoming.ReferencePlan.repair_trace",
-        "Becoming.ReferencePlan.propose_from_receipt",
-        "Becoming.ReferencePlan.propose_without_receipt",
+        "Becoming.ReferencePlan.propose_from_mismatch",
+        "Becoming.ReferencePlan.propose_without_mismatch",
         "Becoming.ReferencePlan.checked_pair_correct",
         "Becoming.ReferencePlan.Alike",
         "Becoming.ReferencePlan.added_keeps",
@@ -198,7 +200,7 @@
         "Becoming.ReferencePlan.drift_has_actual_history",
         "Becoming.ReferencePlan.actualWord",
         "Becoming.ReferencePlan.complete_history",
-        "Becoming.ReferencePlan.actual_cost_without_reset",
+        "Becoming.ReferencePlan.fuel_used_without_reset",
         "Becoming.ReferencePlan.methods_change_twice",
         "Becoming.ReferencePlan.first_candidate_unavailable_before",
         "Becoming.ReferencePlan.second_candidate_unavailable_before",
@@ -214,13 +216,29 @@
         "Becoming.ReferencePlan.frozen_method_still_fails",
         "Becoming.ReferencePlan.frozenSecondEnd",
         "Becoming.ReferencePlan.frozen_second_method_still_fails",
-        "Becoming.ReferencePlan.erased_receipt_cannot_activate",
+        "Becoming.ReferencePlan.erased_mismatch_cannot_activate",
         "Becoming.ReferencePlan.support_too_small_to_build",
-        "Becoming.ReferencePlan.references_paid_before_exhaustion",
+        "Becoming.ReferencePlan.references_use_fuel_before_exhaustion",
         "Becoming.ReferencePlan.no_action_after_exhaustion",
         "Becoming.ReferencePlan.constant_channel_rejected",
-        "Becoming.ReferencePlan.constant_channel_contacts_paid",
-        "Becoming.ReferencePlan.drift_after_check_can_fail"
+        "Becoming.ReferencePlan.constant_channel_contacts_use_fuel",
+        "Becoming.ReferencePlan.drift_after_check_can_fail",
+        "Becoming.ReferencePlan.balanced",
+        "Becoming.ReferencePlan.used_balanced",
+        "Becoming.ReferencePlan.draws_held",
+        "Becoming.ReferencePlan.trace_conserves_of_law",
+        "Becoming.ReferencePlan.covered",
+        "Becoming.ReferencePlan.added_keeps_of_law",
+        "Becoming.ReferencePlan.new_contact_choice_of_law",
+        "Becoming.ReferencePlan.propose_answers",
+        "Becoming.ReferencePlan.revise_registers_failure",
+        "Becoming.ReferencePlan.frozenRule",
+        "Becoming.ReferencePlan.frozen_reads_method",
+        "Becoming.ReferencePlan.frozen_blind",
+        "Becoming.ReferencePlan.frozen_misses",
+        "Becoming.ReferencePlan.flip_is_pick",
+        "Becoming.ReferencePlan.checked_pair_iff",
+        "Becoming.ReferencePlan.drift_fails"
       ]
     },
     {
@@ -250,7 +268,7 @@
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "integration",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -262,7 +280,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
       "role": "proof",
-      "sha256": "4f8ded7ccd2b609ba19634e819b01796b70d06d285a752ddbdd8c6dd60d4146e",
+      "sha256": "9d8e8647148b21f3eda597cc7ba569a4b786a950c96fcd9e105382334f32813d",
       "declarations": []
     },
     {
@@ -276,20 +294,68 @@
       "role": "receipt",
       "sha256": "24190db2755ba951caf2dc8f8cd5973dc081d4dc1cce265b0960cdebac2473ed",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Contacts.lean",
+      "role": "proof",
+      "sha256": "34df73953b08e394758b465e963dc75cc501d90bd5cbad4429daa32d0ffc5c51",
+      "declarations": [
+        "Becoming.Contacts.keeps_iff_retains",
+        "Becoming.Contacts.added_gains",
+        "Becoming.Contacts.Answers",
+        "Becoming.Contacts.answers_iff",
+        "Becoming.Contacts.Blind",
+        "Becoming.Contacts.blind_misses",
+        "Becoming.References.drives_iff",
+        "Becoming.References.stays_iff",
+        "Becoming.References.inverted_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "role": "proof",
+      "sha256": "d1ac93985f6c1101548936c86ad153829718a4a945c31a434114a6352033434f",
+      "declarations": [
+        "Becoming.Stock.Balanced",
+        "Becoming.Stock.DrawsHeld",
+        "Becoming.Stock.trace_balance",
+        "Becoming.Stock.covered_of_trace",
+        "Becoming.Stock.feasible_iff_covered"
+      ]
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.ReferencePlan",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Contacts.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Contacts",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
     }
   ],
   "next_delta": {
     "zh": "P103 已直接复用本实例，补齐空装置形成与成功回返支持下的实际无限修订。接触原语、稳定对应和生产律仍公开；不再把一般接续重新列作本接口未完成。",
-    "en": "P103 directly reuses this instance to join empty-apparatus formation with actual infinite revision under earned productive support. Contact primitives, stable correspondence and production remain explicit; general continuation is no longer listed as missing from this interface."
+    "en": "P103 directly reuses this instance to join empty-apparatus formation with actual infinite revision under productive support enabled by success. Contact primitives, stable correspondence and production remain explicit; general continuation is no longer listed as missing from this interface."
   },
   "history": [
     {
@@ -331,6 +397,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `ReferencePlan.cost` → `ReferencePlan.use`、`ReferencePlan.step_account` → `ReferencePlan.step_conserves`、`ReferencePlan.trace_account` → `ReferencePlan.trace_conserves`、`ReferencePlan.propose_from_receipt` → `ReferencePlan.propose_from_mismatch`、`ReferencePlan.propose_without_receipt` → `ReferencePlan.propose_without_mismatch`、`ReferencePlan.actual_cost_without_reset` → `ReferencePlan.fuel_used_without_reset`、`ReferencePlan.erased_receipt_cannot_activate` → `ReferencePlan.erased_mismatch_cannot_activate`、`ReferencePlan.references_paid_before_exhaustion` → `ReferencePlan.references_use_fuel_before_exhaustion`、`ReferencePlan.constant_channel_contacts_paid` → `ReferencePlan.constant_channel_contacts_use_fuel`；陈述、证明与定理数不变；Lean 源：ReferencePlan 另加入作为 Stock 与 Contacts 实例的定理；Revision 另加入把 `Revising` 读作 Stock 实例的定理，绑定改为新回执（见检查范围）；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”；主张改为先陈述接触与存量的一般规律（Contacts.keeps_iff_retains、answers_iff、blind_misses，References.drives_iff、stays_iff，Stock.feasible_iff_covered），原 ReferencePlan 例子作为其实例，冻结、不可分离、漂移与燃料不足的对照改读作这些规律的失败方向；第三、四条前提与反例中的“消耗账”“回执”措辞改为燃料与失配；新增 Contacts.lean、Stock.lean 的证明绑定（回执 20261013T204910.042715Z）。状态不变；主张按一般规律重写，原例子的陈述与证明不变，不记作对原例子的重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `ReferencePlan.cost` → `ReferencePlan.use`, `ReferencePlan.step_account` → `ReferencePlan.step_conserves`, `ReferencePlan.trace_account` → `ReferencePlan.trace_conserves`, `ReferencePlan.propose_from_receipt` → `ReferencePlan.propose_from_mismatch`, `ReferencePlan.propose_without_receipt` → `ReferencePlan.propose_without_mismatch`, `ReferencePlan.actual_cost_without_reset` → `ReferencePlan.fuel_used_without_reset`, `ReferencePlan.erased_receipt_cannot_activate` → `ReferencePlan.erased_mismatch_cannot_activate`, `ReferencePlan.references_paid_before_exhaustion` → `ReferencePlan.references_use_fuel_before_exhaustion`, `ReferencePlan.constant_channel_contacts_paid` → `ReferencePlan.constant_channel_contacts_use_fuel`; statements, proofs and theorem counts unchanged; Lean sources: ReferencePlan with theorems added as instances of Stock and Contacts; Revision with theorems added that read `Revising` as an instance of Stock; bindings move to the new receipts (see validation scope); chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”; the claim now states the general laws of contacts and stock first (Contacts.keeps_iff_retains, answers_iff, blind_misses; References.drives_iff, stays_iff; Stock.feasible_iff_covered), with the ReferencePlan example as their instance and the frozen, inseparable, drift and fuel controls read as failure directions of these laws; the third and fourth premises and the counterexample speak of fuel and the mismatch instead of charges and receipts; proof bindings for Contacts.lean and Stock.lean are added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them."
     }
   ]
 }

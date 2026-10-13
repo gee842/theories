@@ -208,13 +208,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
       "role": "integration",
-      "sha256": "c7044c4ee33aea3d5093e7b5314901a8b4ef1acb17624297cb57345b7dc048e3",
+      "sha256": "c0e085ff612901da4dbd2ba77e8cbf64abfc6f16b4a70eea38fd3475eb4e4021",
       "declarations": [
         "Becoming.FallibleInquiry.answer_alike_beyond_response",
         "Becoming.FallibleInquiry.different_answers_not_beyond",
         "Becoming.FallibleInquiry.answer_alike_beyond_law",
         "Becoming.FallibleInquiry.coverage_le_errors_add_reach",
-        "Becoming.FallibleInquiry.error_budgets_require_reach",
+        "Becoming.FallibleInquiry.error_bounds_require_reach",
         "Becoming.FallibleInquiry.beyond_reach_coverage_eq_errors"
       ]
     },
@@ -296,6 +296,10 @@
     {
       "zh": "2026-10-13 P105：科学性判断接入同一研究，保留历史科学、概率判断、未复现与早期理论；不以符合本理论作定义，全核心目标保持open。",
       "en": "2026-10-13 P105: integrates assessment of scientific standing, preserving historical inquiry, probabilistic judgment, non-replication and early theories; no definition by conformity to this theory, full-core target stays open."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`；陈述、证明与定理数不变；Lean 源：FallibleInquiry 只改名（及相应的文档字符串），按新哈希重读。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_reach` → `FallibleInquiry.error_bounds_require_reach`; statements, proofs and theorem counts unchanged; Lean sources: FallibleInquiry only renamed (with the matching docstrings); rehashed after rereading. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

@@ -257,14 +257,14 @@
     "en": "The law itself is not derived (which law the rest follows), nor that it reads what has stood; ExchangeLaw.Through.responds is near-definitional, the substantive new content being that the counterfactual is fixed by the act, the equivalence of generation with feasibility, sensitivity as the least registration, the instance of P68's model and Loop following from the law; the premise moves onto the law: responding to what is not registered, noise and inputs not represented as conditions fall within the law's sensitivity, so the responsive reach widens rather than their being excluded; whether sensitivity remains the least registration with infinitely many conditions is not stated, and no counterexample is given; a law sensitive to the level of a condition the formation only depends on does not read through a registration holding only that dependence (dependence asks only that it be admitted alike); an infeasible act has no course, and no other reading of it is given; the part's acts are alike value by value or given by a law; the responsive reach is still an upper bound, with no measure of how much difference arrives and no order in time; Loop is a minimal witness (one response), not a general theory of loops; the instances with P69 are near-definitional: world_balances_iff restates course_balances_iff, Run.beyond_shown_iff holds for any determined law without the law of exchange, the step beyond the history in counterfactual_beyond_shown is one step of the model rather than a whole other course (that is counterfactual_is_course), and closedBy_course asks only that the part's move be formed by a law on the configuration, not deriving when a move is the part's own; the world forms cover only formations and conditions of one kind of relatum, and a law over two kinds is not read as a world here; the readings and names are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Counterfactual 的 46 项定理全部空依赖，其中含 counterfactual_fixed、ExchangeLaw.course_balances_iff、counterfactual_is_course、ExchangeLaw.course_unique、ExchangeLaw.Through.responds、ExchangeLaw.Nonanticipating.through_sensitive、ExchangeLaw.Through.registers_of_sensitive、comparison_with_act、ExchangeLaw.act_not_taken、ExchangeLaw.world_exchange_iff、Run.beyond_shown_iff、ExchangeLaw.counterfactual_beyond_shown、ExchangeLaw.closedBy_course与 Loop.responds_by_law；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §100；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 46 theorems of Becoming.Counterfactual all have empty axiom reports, among them counterfactual_fixed, ExchangeLaw.course_balances_iff, counterfactual_is_course, ExchangeLaw.course_unique, ExchangeLaw.Through.responds, ExchangeLaw.Nonanticipating.through_sensitive, ExchangeLaw.Through.registers_of_sensitive, comparison_with_act, ExchangeLaw.act_not_taken, ExchangeLaw.world_exchange_iff, Run.beyond_shown_iff, ExchangeLaw.counterfactual_beyond_shown, ExchangeLaw.closedBy_course and Loop.responds_by_law; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §100 of the integration note; there is no independent review yet."
+    "zh": "2026-10-14：Becoming.Counterfactual、Becoming.Mechanism、Becoming.Response、Becoming.Unfolding 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Counterfactual 的 46 项定理全部空依赖，其中含 counterfactual_fixed、ExchangeLaw.course_balances_iff、counterfactual_is_course、ExchangeLaw.course_unique、ExchangeLaw.Through.responds、ExchangeLaw.Nonanticipating.through_sensitive、ExchangeLaw.Through.registers_of_sensitive、comparison_with_act、ExchangeLaw.act_not_taken、ExchangeLaw.world_exchange_iff、Run.beyond_shown_iff、ExchangeLaw.counterfactual_beyond_shown、ExchangeLaw.closedBy_course与 Loop.responds_by_law；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §100；尚无独立审查。",
+    "en": "14 October 2026: the current bytes of Becoming.Counterfactual, Becoming.Mechanism, Becoming.Response, Becoming.Unfolding are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 46 theorems of Becoming.Counterfactual all have empty axiom reports, among them counterfactual_fixed, ExchangeLaw.course_balances_iff, counterfactual_is_course, ExchangeLaw.course_unique, ExchangeLaw.Through.responds, ExchangeLaw.Nonanticipating.through_sensitive, ExchangeLaw.Through.registers_of_sensitive, comparison_with_act, ExchangeLaw.act_not_taken, ExchangeLaw.world_exchange_iff, Run.beyond_shown_iff, ExchangeLaw.counterfactual_beyond_shown, ExchangeLaw.closedBy_course and Loop.responds_by_law; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §100 of the integration note; there is no independent review yet."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
       "role": "proof",
-      "sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee",
+      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
       "declarations": [
         "Becoming.ExchangeLaw",
         "Becoming.AgreeUpTo",
@@ -343,7 +343,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
       "role": "proof",
-      "sha256": "279704f4d0e1b801e386d6d7e8d560aac68b49fb4b63cc4e1242895f6beb9abf",
+      "sha256": "49d133ab792d88d7678c3b1b5c74b9770fcd7b22ec4e6fbabe58f8c6e7a716c5",
       "declarations": [
         "Becoming.Flow.RespondsThroughRegistration",
         "Becoming.Flow.WithinResponse",
@@ -354,7 +354,7 @@
         "Becoming.Loop.balances",
         "Becoming.Loop.quiet_balances",
         "Becoming.Loop.firstPart",
-        "Becoming.Loop.own",
+        "Becoming.Loop.paired",
         "Becoming.Loop.responds"
       ]
     },
@@ -371,7 +371,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
       "role": "proof",
-      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "sha256": "eb8327cf10113b666c7648a5ad52a675fdef5953802c6518d9112fd7f23c3bad",
       "declarations": [
         "Becoming.inputs",
         "Becoming.trajectory",
@@ -383,7 +383,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
       "role": "proof",
-      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "sha256": "0959f4804f5afba1b16f69851f7f29f086519f89e74b77a3220fa8bcdbee878d",
       "declarations": [
         "Becoming.Exchange",
         "Becoming.exchange",
@@ -458,13 +458,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
       "declarations": []
     },
     {
@@ -472,19 +472,25 @@
       "role": "provenance",
       "sha256": "e0a2c854e05d249d45838d81c257444fc308bb80a8c83b7417d62e1f0aaaa61f",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Response",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -498,14 +504,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Mechanism",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Unfolding",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -613,6 +619,10 @@
     {
       "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Loop.own` → `Loop.paired`；陈述、证明与定理数不变；Lean 源：Counterfactual、Response、Mechanism、Unfolding 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Loop.own` → `Loop.paired`; statements, proofs and theorem counts unchanged; Lean sources: Counterfactual, Response, Mechanism, Unfolding only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }

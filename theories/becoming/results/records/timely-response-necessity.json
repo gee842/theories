@@ -38,8 +38,8 @@
     "Becoming.TimedResponse.different_answers_require_reached",
     "Becoming.TimedResponse.reachedBy_within_response",
     "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
-    "Becoming.FallibleInquiry.error_budgets_require_timed_reach",
-    "Becoming.FallibleInquiry.unreached_by_deadline_coverage_eq_errors"
+    "Becoming.FallibleInquiry.error_bounds_require_timed_reach",
+    "Becoming.FallibleInquiry.unreached_in_time_coverage_eq_errors"
   ],
   "dependencies": [
     {
@@ -127,14 +127,14 @@
     "en": "Necessary bound, not sufficient control, complete knowledge or a universal scientific foundation. Does not cover different initial evidence, changing readout interfaces, continuous physical duration or common nonzero residuals. Constructive necessity is double-negated; positive membership uses a decision. A route need not cause an effect; empty axiom reports do not certify empirical premises."
   },
   "validation_scope": {
-    "zh": "P104新增22核心定理／30空公理源审计，前导编译通过；3项外围接续仅 propext、Quot.sound。外围现31定理／37声明，20空、17标准依赖。当前相关依赖与最终冻结回执匹配；49基础设施测试通过。无新增经验实验或独立评审。",
-    "en": "P104 adds 22 core theorems / 30 axiom-free source audits, with prelude compilation passed; three peripheral adapters use only propext and Quot.sound. Periphery now 31 theorems / 37 declarations, 20 empty and 17 standard dependencies. Relevant current dependencies match final retained receipts; 49 infrastructure tests pass. No new empirical experiment or independent review."
+    "zh": "2026-10-14：Becoming.TimedResponse 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；Becoming.FallibleInquiry 的当前字节由回执 20261013T205526.452771Z 绑定（通过，31 项定理、37 项声明审计）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 P104新增22核心定理／30空公理源审计，前导编译通过；3项外围接续仅 propext、Quot.sound。外围现31定理／37声明，20空、17标准依赖。当前相关依赖与最终冻结回执匹配；49基础设施测试通过。无新增经验实验或独立评审。",
+    "en": "14 October 2026: the current bytes of Becoming.TimedResponse are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude); the current bytes of Becoming.FallibleInquiry are bound to receipt 20261013T205526.452771Z (passed, 31 theorems, 37 declaration audits). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. P104 adds 22 core theorems / 30 axiom-free source audits, with prelude compilation passed; three peripheral adapters use only propext and Quot.sound. Periphery now 31 theorems / 37 declarations, 20 empty and 17 standard dependencies. Relevant current dependencies match final retained receipts; 49 infrastructure tests pass. No new empirical experiment or independent review."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
       "role": "proof",
-      "sha256": "a93b860bbc7e06845f280838eed69ffc0e4f68aab78fc80a335f77fb2b2770e5",
+      "sha256": "8a93ea0479fee0d06c6f76ae311da72edbf0e3be6069a7657fc49f47e0b7400b",
       "declarations": [
         "Becoming.TimedResponse.registersAt_registers",
         "Becoming.TimedResponse.not_spread_zero",
@@ -163,11 +163,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
       "role": "proof",
-      "sha256": "c7044c4ee33aea3d5093e7b5314901a8b4ef1acb17624297cb57345b7dc048e3",
+      "sha256": "c0e085ff612901da4dbd2ba77e8cbf64abfc6f16b4a70eea38fd3475eb4e4021",
       "declarations": [
         "Becoming.FallibleInquiry.coverage_le_errors_add_timed_reach",
-        "Becoming.FallibleInquiry.error_budgets_require_timed_reach",
-        "Becoming.FallibleInquiry.unreached_by_deadline_coverage_eq_errors"
+        "Becoming.FallibleInquiry.error_bounds_require_timed_reach",
+        "Becoming.FallibleInquiry.unreached_in_time_coverage_eq_errors"
       ]
     },
     {
@@ -205,19 +205,31 @@
       "role": "review",
       "sha256": "4457c68612dde3ce70da9a19790b3478aede5681ab02c7dbd017bc6aecefb505",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
+      "role": "receipt",
+      "sha256": "26ec20ad76d9c1acd39de927f3400875132b4f3a9a3dbcd1c1c10ffee251afd8",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/TimedResponse.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T125224.520783Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.TimedResponse",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/FallibleInquiry.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T125313.109762Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/fallible-inquiry-checks/20261013T205526.452771Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.FallibleInquiry",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -235,6 +247,10 @@
     {
       "zh": "2026-10-13 P105：原理论段落逐字保留；更新新增划界讨论后的文档指纹，形式主张、前提与原通过回执不变。",
       "en": "2026-10-13 P105: prior substantive passages are byte-preserved; refresh document bindings after appended demarcation discussion, with formal claims, premises and passed receipts unchanged."
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`、`FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`；陈述、证明与定理数不变；Lean 源：TimedResponse、FallibleInquiry 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `FallibleInquiry.error_budgets_require_timed_reach` → `FallibleInquiry.error_bounds_require_timed_reach`, `FallibleInquiry.unreached_by_deadline_coverage_eq_errors` → `FallibleInquiry.unreached_in_time_coverage_eq_errors`; statements, proofs and theorem counts unchanged; Lean sources: TimedResponse, FallibleInquiry only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope). This record's claim, premises and status are unchanged; no reproof is credited."
     }
   ]
 }
