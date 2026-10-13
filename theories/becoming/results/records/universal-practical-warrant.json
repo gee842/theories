@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "universal-practical-warrant",
   "title": {
     "zh": "普遍实践权威的更强目标",
@@ -8,10 +8,10 @@
   "kind": "target",
   "status": "open",
   "family": "F08",
-  "reviewed_at_utc": "2026-10-13T12:48:58.629428+00:00",
-  "claim": {
-    "zh": "同一生成活动中推进目的、选择、认识、规范及修订的统一解释，普遍零实质公理根据仍开放。P98五项概念检验将“实现生活能否改变任务、选择和结束条件”收窄为局部诊断：真实改组仍可延续俘获，须追踪实际受影响关系、保持或改变的根据及具体回应。",
-    "en": "Advances one account of ends, selection, knowing, normativity and revision within becoming; universal zero-substantive-axiom warrant remains open. Five P98 conceptual cases narrow the fulfillment question to a local diagnostic: actual reorganization can perpetuate capture. Follow actual affected relations, grounds for retaining or changing arrangements, and concrete responses."
+  "reviewed_at_utc": "2026-10-13T21:55:00+00:00",
+  "statement": {
+    "en": "Target: universal practical warrant with zero substantive axioms, developed as one account of ends, selection, knowing, normativity and revision within becoming.",
+    "zh": "目标：取得零实质公理的普遍实践根据，并在同一生成活动中统一解释目的、选择、认识、规范及修订。"
   },
   "hypotheses": [
     {
@@ -84,22 +84,94 @@
       }
     }
   ],
-  "counterexamples": [
+  "counterexamples": [],
+  "standard_boundaries": [
+    "nondual-method-not-proof",
+    "omission-not-refutation",
+    "zero-axiom-target-open"
+  ],
+  "does_not_show": [
     {
-      "path": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
-      "detail": {
-        "zh": "当前中心主张未证；这不撤销 G0/J 下已经完成的成果。",
-        "en": "The central target remains unproved; this does not revoke completed G0/J results."
-      }
+      "en": "Repair fidelity and historical necessity alone do not refute an openly controlling end; real needs, transition losses, protective boundaries and informed harm remain.",
+      "zh": "修复内容及历史必要性的分析不能单独反驳一个明确追求控制的目标；真实需要、转型损失、保护性边界和知情伤害均保留。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Fuller description alone is no ethical proof.",
+      "zh": "不能以补全描述直接宣告伦理成立。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "No positive weight is preassigned to every added option, and not every removable restriction is judged to require removal.",
+      "zh": "不给所有选项增加预置正权重，不证明所有可解除限制均应解除。",
+      "kind": "scope"
+    },
+    {
+      "en": "No complete ordering of mixed outcomes is given.",
+      "zh": "不给出完整的混合排序。",
+      "kind": "scope"
+    },
+    {
+      "en": "A purpose’s formation history does not by itself invalidate it.",
+      "zh": "目的有形成史，不自动使它无效。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "The fulfillment test cannot certify goodness or release from capture: declared beneficiaries do not exhaust affected living, and harm before completion also matters.",
+      "zh": "原完成检验不能单独认证善或脱离俘获：受益者不能只按宣称限定，未完成时的损伤也需评估。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Retaining an arrangement may be warranted, and nominal revisability is not enactment.",
+      "zh": "保持安排未必失当，名义可修订不等于实行。",
+      "kind": "scope"
+    },
+    {
+      "en": "The revised question is itself an inquiry: it substitutes for no normative argument and cannot prove warrant by defining it in.",
+      "zh": "修正版问句本身仍是研究问题：不替代规范论证，也不能把“有根据”写入定义来证明它。",
+      "kind": "non-implication"
     }
   ],
-  "limitations": {
-    "zh": "一元纠正不自动完成规范证明。修复内容及历史必要性的分析不能单独反驳一个明确追求控制的目标；真实需要、转型损失、保护性边界和知情伤害均保留。不能把自由规范谓词当作完整关系反例，也不能以补全描述直接宣告伦理成立。不给所有选项增加预置正权重，不证明所有可解除限制均应解除；普遍根据与完整混合排序仍未成，G0/J及P89保持。 技术学习并不独自证成目的；任务实现可改变介入但不无条件要求退出，目的有形成史也不自动使它无效。 原完成检验不能单独认证善或脱离俘获；受益者不能只按宣称限定，未完成时的损伤也需评估。保持安排未必失当，名义可修订不等于实行。修正版仍是研究问题，不能把“有根据”写入定义来证明它。",
-    "en": "The nondual correction does not itself prove normative necessity. Repair fidelity and historical necessity alone do not refute an openly controlling end; real needs, transition losses, protective boundaries and informed harm remain. A free normative predicate is no counterexample to fuller relational constitution, and fuller description alone is no ethical proof. No positive weight is preassigned to every added option or every removable restriction judged to require removal. Universal warrant and complete mixed ordering remain open; G0/J and P89 retain their scopes. Technical learning does not itself warrant ends; task fulfillment can change intervention without unconditionally requiring exit, and a purpose’s formation history does not automatically invalidate it. The original fulfillment test cannot certify goodness or escape from capture: declared beneficiaries do not exhaust affected living, and harm before completion also matters. Retaining an arrangement may be warranted; nominal revisability is not enactment. The revised question is still an inquiry and cannot prove warrant by defining it in."
-  },
+  "progress": [
+    {
+      "en": "Source and address of a reason: a response-specific argument separates what makes a change worth considering, why it bears on a given response and how much can be required, tested against formed-boundary restriction.",
+      "zh": "理由的来源与适用：针对回应的论证分开变化为何值得考虑、为何关涉特定回应、可要求多少，并以形成边界的限制作对照检验。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#nonexclusive-response-ground"
+    },
+    {
+      "en": "Purpose revision: one revision can both recognize a prior ground and create new reasons, so its success alone does not discriminate between them; pre-commitment practical support is refined against its strongest objection.",
+      "zh": "目的修订：同一次修订可兼有认识已有根据与创造新理由，其成功因此不能单独裁决两者；承诺形成前的实践支持经最强反审细化。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#purpose-revision-and-prior-warrant"
+    },
+    {
+      "en": "Normative differentiation in one activity: the separate-domain architecture is withdrawn; completed repair can change a response’s purpose and ending, and representational omission, actual suppression and informed harm are distinguished.",
+      "zh": "同一活动中的规范分化：撤回分立领域的架构；完成的修复可以改变回应的目的与结束条件，并区分表示遗漏、实际压制与知情维持伤害。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#normative-differentiation-within-activity"
+    },
+    {
+      "en": "Restrictions compared: what a boundary does in actual living, not its existence, is assessed; historical necessity does not settle present justification, and purported alternatives also need actual support.",
+      "zh": "限制的比较：评价的是边界在实际生活关系中的作用，而非边界的存在；历史必要性不自行裁决当前正当性，所称替代也须有实际支持。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#226-实际比较限制怎样保护或阻碍展开"
+    },
+    {
+      "en": "One theory: following Ren, existing capture and revision results, at their scopes, explain purposes, knowing, normativity and response in the same organization; informed harm tests guarantees of goodwill and is no normative counterexample.",
+      "zh": "一个理论：依Ren，以既有捕获与修订结果（各按原范围）在同一组织中说明目的、认识、规范与回应；知情伤害检验对善意的保证，不是规范反例。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#one-theory-selection-and-normativity"
+    },
+    {
+      "en": "Selective correction: method success and harmful reproduction can coexist, so technical learning does not itself warrant ends; the test asks whether actual fulfillment can change tasks, selection and endings, not always requiring exit.",
+      "zh": "选择性纠正：方法的成功可与有害再生产并存，技术学习因此不独自证成目的；检验问实际实现能否改变任务、选择与结束条件，不无条件要求退出。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#selective-correction-and-formed-ends"
+    },
+    {
+      "en": "Fulfillment test: five conceptual cases narrow it to a local diagnostic, as actual reorganization can perpetuate capture; it now follows actual affected relations, grounds for retaining or changing arrangements, and concrete responses.",
+      "zh": "检验完成问句：五项概念检验将其收窄为局部诊断，因为真实改组仍可延续俘获；修正后追踪实际受影响关系、保持或改变安排的根据及具体回应。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#fulfillment-test-counterreview"
+    }
+  ],
   "validation_scope": {
-    "zh": "2026-10-13 P98：作者哲学论证及实质反审；复用既有评价者独立审查及条件证明，有限复读已用原典的指定段落。无新数学命题、Lean运行、经验结果或独立验收；来源与导航检查仅核对文档。 接续§21完整重读选择关切、关系与理由、非工具性根基三份旧研究，具体比较并收窄上轮检验；无新原典核读。 §22按Ren纠正重构起点：完整重读关系善，定向重读整体实现导论及§§5–7、构成审计路线及边界；作者概念比较和反审，无新原典或数学检查。 §22.7复用共同理论入口、元吸引定义及三项现有记录的主张／前提／对应，属解释整合与反例定位修正，无新形式组合或重新验收。 §23核读选择经识、登记／计划修订及捕获记录的前提和范围，并读伦理学习整合§§52–54；概念比较及作者反审，无新证明、经验或原典阅读。 §23.5依Ren要求实施五项概念压力检验，定位真实改组仍延续控制、完成门槛遗漏及合理保持等范围；未作经验验证或数学证明。",
-    "en": "13 October 2026, P98: author philosophical argument and substantive counterreview; reuses the existing independent evaluator review and conditional proofs, with a bounded rereading of specified passages in an already used primary source. No new mathematical claim, Lean run, empirical result or independent acceptance; documentary checks cover sources and navigation only. Continuation §21 fully rereads the elective-concern, relation-and-reason and noninstrumental-root studies, completing and narrowing the proposed comparison; no new primary-source reading. Section 22 reconstructs the starting point following Ren: full rereading of relational goodness, targeted rereading of whole-process realization’s introduction and §§5–7 and the constitutive audit’s route and boundary; author conceptual comparison and counterreview, no new primary-source or mathematical check. Section 22.7 reuses the common theory entry, meta-attractor definition and three current records’ claims, premises and correspondence; explanatory integration and correction of counterexample scope, not a new formal composition or acceptance. Section 23 reads selection-through-registration, registration/plan revision and capture premises and scopes, plus ethical-learning integration §§52–54; conceptual comparison and author counterreview, no new proof, experiment or primary-source reading. Section 23.5 follows Ren’s request with five conceptual stress tests, including actual reorganization perpetuating control, completion-gated omissions and warranted continuity; no empirical validation or mathematical proof."
+    "en": "Philosophical argument with substantive author counterreview and five conceptual stress tests; full or targeted rereadings of existing studies (elective concern, relation and reason, the noninstrumental root, relational goodness, whole-process realization, the constitutive audit, ethical learning) and of the capture, registration and plan-revision records; a bounded rereading of an already used primary source. The independent evaluator review and conditional proofs are reused at their scopes. No new mathematical claim, formal composition, Lean run, empirical result or independent acceptance.",
+    "zh": "哲学论证、实质作者反审及五项概念压力检验；完整或定向重读既有研究（选择关切、关系与理由、非工具性根基、关系善、整体实现、构成审计、伦理学习）及捕获、登记与计划修订记录；有限复读已用原典的指定段落。复用既有评价者独立审查及条件证明，各按原范围。无新数学命题、形式组合、Lean运行、经验结果或独立验收。"
   },
   "references": [
     {
@@ -147,8 +219,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "直接解释实际受影响生活怎样支持保持、改变或结束安排的判断，保留具体反向根据及实行障碍；不能再把任务／选择／结束的可变性当作善或脱离俘获的判据，也不以新版问句本身替代规范论证。",
-    "en": "Directly explain how actual affected living supports judgments to retain, change or end arrangements, preserving substantive contrary grounds and implementation barriers. Revisable tasks, selection or endings are no certificate of goodness or release from capture; the revised question itself is no substitute for normative argument."
+    "en": "Directly explain how actual affected living supports judgments to retain, change or end arrangements, preserving substantive contrary grounds and implementation barriers.",
+    "zh": "直接解释实际受影响生活怎样支持保持、改变或结束安排的判断，保留具体反向根据及实行障碍。"
   },
   "history": [
     {
@@ -182,6 +254,20 @@
     {
       "zh": "2026-10-13 P98：检验原完成问句，五项概念接续揭示真实改变仍能延续俘获及范围遗漏；原句保留为局部诊断，修正正文与当前主张，未新增成果身份或证明。",
       "en": "13 October 2026, P98: five conceptual continuations test the fulfillment question and expose genuine change perpetuating capture and scope omissions. Retains the original as a local diagnostic and revises the chapter and current claim; no new result identity or proof."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The target in the claim becomes the statement, and its narrowed fulfillment question a progress line. The limitations become eight does-not-show items and three shared boundaries; the section-by-section evidence (P98, sections 20–23.5) becomes seven progress lines with anchored study links and one evidence paragraph, with its labels kept here and in the snapshot. The former counterexample entry restated the status and the G0/J scope (now the status and a shared boundary), so it is no longer listed as a counterexample; P89’s scope stays in the related entry. No premise, status, dependency, related entry, reference or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。主张中的目标成为陈述，收窄的完成问句成为一行“已接通”。限制改为八项“未表明”与三项通用边界；逐节证据（P98，第20–23.5节）改为七行带锚点研究链接的“已接通”与一段证据，其标记保留于本沿革与快照。原反例条目实为状态及G0/J范围的重述（现分别由状态与通用边界承担），故不再列为反例；P89的范围仍见相关条目。前提、状态、依赖、相关条目、引用及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/universal-practical-warrant.md)；迁移前的完整记录为 text_versions[0]。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/ad319e7c0aa96fab/universal-practical-warrant.json",
+      "sha256": "ad319e7c0aa96fab4015eb7706ea3615052db141c6537265d7f0411791a19bc6",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

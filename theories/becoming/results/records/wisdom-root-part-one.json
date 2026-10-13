@@ -1,18 +1,129 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "wisdom-root-part-one",
   "title": {
-    "zh": "智慧之根在第一部分：识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的规律对每个学习者与每个表示成立，不用公理",
-    "en": "The root of wisdom in Part I: the laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level hold of every learner and every representation, with no axiom"
+    "zh": "智慧之根在第一部分",
+    "en": "The root of wisdom in Part I"
   },
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T15:38:51.139906+00:00",
-  "claim": {
-    "zh": "目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）已完成；从独立智慧内容到这些规律的必要性对应见主研究第16节，整体覆盖仍须论证：下列已检查的规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，各自的条件写在定理中，所以保留相同内容的任何表示都避不开它们。识：主张只经所识的差别被否证（Web.Refutes.not_of_alike），无记录固定下一个（Web.tail_unrefuted、no_record_fixes_next）。理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值（every_determines_nothing），推广恰在归并之处、正确恰在世界经归并同去之处（determines_lumped_iff、lumped_right_iff），结构与变化是同一个归并（goAlike_iff_lumped），投影恰在相同者同去时承载规律（carries_law_iff）。检验：相对于模型的否证是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction），记录只在取过之处固定动作的结果（Run.not_fixes_of_untaken），重复是返回（Run.fixes_on_return），一次场合代表经模型相同的类（Run.generalizes）。学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止（held_learner_bounded、held_rest_unrefuted、no_record_fixes_next_finite），每个学习者都有否证它每个主张的开放的序列（diagonal_refutes、diagonal_open）。明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的（Clearing.tested_by_dweller、Clearing.pooled），经识的选择在识闭包之外不见，合起来的识选出它（Flow.unselected_beyond_registration、Clearing.selected_pooled）。够：寻求恰在到达律所不变、满足其目标的状态时静止（Law.rests_iff），“比现在更多”需要开放的世界（more_needs_open），“高于一切他者”的两个寻求者从不同时静止（Law.aboveAll_never_rests）。失控：断裂之前断裂还有多远不被识（Web.break_not_bounded），观察储量则识之（Web.observed_raise_registers）。代理：选择与训练只经选择者之识或数据（Web.selects_alike_iff、Training.loss_through），数据之外的值与类同样自由（Training.unselected_beyond_data），伸出识闭包之外而抬高所识者被选中（Diversion.favours）。判断：由识作出的判断恰是判断过程在信念上的共同回应（commonResponse_judge_iff、Web.belief_judge_iff）。元层次：对类的学习是合并枚举上的同一学习（merged_bound），每种合并都有其对角序列（merged_unrested），改变自身规则的系统的规律在联合配置上（adaptive_state_law_iff）。形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释（uniform_determines），Hebb 式发展与更新路线是联合配置上的律（hebbian_activity_law_iff、updating_network_law_iff），回应路线在失败处学习（responsive_learns）。",
-    "en": "The formal support for wisdom-root (the universal laws and routes of formation within Part I's scope) is completed; Section 16 of the main study connects independently described wisdom content to these laws, while full coverage still requires argument: the following checked laws are each stated for every formation, learner, lumping, selection or determined law, with no axiom and their conditions written into the theorems, so no representation keeping the same content escapes them. Registration: a claim is refuted only through a registered difference (Web.Refutes.not_of_alike), and no record fixes the next value (Web.tail_unrefuted, no_record_fixes_next). 理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value (every_determines_nothing), generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it (determines_lumped_iff, lumped_right_iff), structure and change are one lumping (goAlike_iff_lumped), and a projection carries a law exactly where configurations alike go alike (carries_law_iff). Testing: refutation relative to a model refutes the model and the claim together (Web.refutesWithin_iff_conjunction), the record fixes an act's outcome only where taken (Run.not_fixes_of_untaken), replication is return (Run.fixes_on_return), and one occasion stands for its class under the model (Run.generalizes). Learning: in a world held by a list learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest (held_learner_bounded, held_rest_unrefuted, no_record_fixes_next_finite), and every learner has an open course refuting each of its claims (diagonal_refutes, diagonal_open). 明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone (Clearing.tested_by_dweller, Clearing.pooled); selection through registration is blind beyond the registration closure and pooled registration selects what it misses (Flow.unselected_beyond_registration, Clearing.selected_pooled). Enough: seeking rests exactly at a state the law leaves unchanged that meets its target (Law.rests_iff), “more than now” needs an open world (more_needs_open), and two seekers of “above all others” never rest together (Law.aboveAll_never_rests). Runaway: before the break, how far it is does not register (Web.break_not_bounded), while observing the stock registers it (Web.observed_raise_registers). Proxies: selection and training go only through the selector's registration or the data (Web.selects_alike_iff, Training.loss_through), values beyond the data stay as free as the class leaves them (Training.unselected_beyond_data), and reaching beyond the registration closure to raise what registers is selected (Diversion.favours). Judgment: a judgment from registration is exactly a common response of the judging process over the belief (commonResponse_judge_iff, Web.belief_judge_iff). The meta level: learning over classes is the same learning over a merged enumeration (merged_bound), every merging has its diagonal course (merged_unrested), and a system changing its own rule has its law on the joint configuration (adaptive_state_law_iff). The formal routes of formation: learning by refutation forms a model from the record, the acquisition chain forms an interpretation of every expression from three encounters (uniform_determines), Hebbian development and the route of updating are laws on the joint configuration (hebbian_activity_law_iff, updating_network_law_iff), and the responsive route learns where the task fails (responsive_learns)."
+  "reviewed_at_utc": "2026-10-13T22:20:00+00:00",
+  "statement": {
+    "en": "The checked laws of registration, 理, testing, learning and generalization, selection and training, enough, runaway, judgment and the meta level, and the routes of formation hold axiom-free of every learner and representation keeping the same content: the formal support of the wisdom-root target.",
+    "zh": "识、理、检验、学习与推广、经识的选择与训练、够、失控、判断与元层次的已检查规律及形成路线，不用公理地对每个学习者与保留相同内容的每个表示成立：这是目标 wisdom-root 的形式支撑。"
   },
+  "claim": {
+    "en": "Each law below is stated for every formation, learner, lumping, selection or determined law, with no axiom and its conditions written into its theorem, so no representation keeping the same content escapes it. Together with the formal routes of formation, these laws are the formal support for wisdom-root (the universal laws and routes of formation within Part I's scope).",
+    "zh": "下列每条规律都对每个形成、每个学习者、每个归并、每个选择或每个确定的律陈述，不用公理，其条件写在定理中，所以保留相同内容的任何表示都避不开它。连同形成的形式路线，它们是目标 wisdom-root 的形式支撑（第一部分所及的普遍规律与形成路线）。"
+  },
+  "laws": [
+    {
+      "en": "Registration: a claim is refuted only through a registered difference, and no record fixes the next value.",
+      "zh": "识：主张只经所识的差别被否证，无记录固定下一个。",
+      "declarations": [
+        "Becoming.Web.Refutes.not_of_alike",
+        "Becoming.Web.tail_unrefuted",
+        "Becoming.Learning.no_record_fixes_next"
+      ]
+    },
+    {
+      "en": "理 (Ren's reading: the modeling of the laws of structure and change): data alone fix no untried value; generalization reaches exactly what a lumping lumps and is right exactly where the world goes alike across it; structure and change are one lumping; a projection carries a law exactly where configurations alike go alike.",
+      "zh": "理（Ren 的读法：对结构与变化之规律的建模）：数据单独不固定任何未试之值，推广恰在归并之处、正确恰在世界经归并同去之处，结构与变化是同一个归并，投影恰在相同者同去时承载规律。",
+      "declarations": [
+        "Becoming.Learning.every_determines_nothing",
+        "Becoming.Learning.determines_lumped_iff",
+        "Becoming.Learning.lumped_right_iff",
+        "Becoming.Learning.goAlike_iff_lumped",
+        "Becoming.carries_law_iff"
+      ]
+    },
+    {
+      "en": "Testing: refutation relative to a model refutes the model and the claim together; the record fixes an act's outcome only where taken; replication is return; one occasion stands for its class under the model.",
+      "zh": "检验：相对于模型的否证是对模型与主张一起的否证，记录只在取过之处固定动作的结果，重复是返回，一次场合代表经模型相同的类。",
+      "declarations": [
+        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Run.not_fixes_of_untaken",
+        "Becoming.Run.fixes_on_return",
+        "Becoming.Run.generalizes"
+      ]
+    },
+    {
+      "en": "Learning: in a world held by a list, learning by refutation is refuted a bounded number of times, its coming to rest is unrefuted and its record never shows that it has come to rest; every learner has an open course refuting each of its claims.",
+      "zh": "学习：被列表所持的世界中按否证学习的否证有界、静止不能被否证、其记录从不表明它已静止；每个学习者都有否证它每个主张的开放的序列。",
+      "declarations": [
+        "Becoming.Learning.held_learner_bounded",
+        "Becoming.Learning.held_rest_unrefuted",
+        "Becoming.Learning.no_record_fixes_next_finite",
+        "Becoming.Learning.diagonal_refutes",
+        "Becoming.Learning.diagonal_open"
+      ]
+    },
+    {
+      "en": "明 (others' registration): what the clearer cannot test the dweller can, and together they test what neither can alone; selection through registration is blind beyond the registration closure, and pooled registration selects what it misses.",
+      "zh": "明（他者之识）：清除者不能检验的栖居者能，合起来能检验各自都不能的；经识的选择在识闭包之外不见，合起来的识选出它。",
+      "declarations": [
+        "Becoming.Clearing.tested_by_dweller",
+        "Becoming.Clearing.pooled",
+        "Becoming.Flow.unselected_beyond_registration",
+        "Becoming.Clearing.selected_pooled"
+      ]
+    },
+    {
+      "en": "Enough: seeking rests exactly at a state the law leaves unchanged that meets its target; “more than now” needs an open world; two seekers of “above all others” never rest together.",
+      "zh": "够：寻求恰在到达律所不变、满足其目标的状态时静止；“比现在更多”需要开放的世界；“高于一切他者”的两个寻求者从不同时静止。",
+      "declarations": [
+        "Becoming.Law.rests_iff",
+        "Becoming.more_needs_open",
+        "Becoming.Law.aboveAll_never_rests"
+      ]
+    },
+    {
+      "en": "Runaway: before the break, how far it is does not register, while observing the stock registers it.",
+      "zh": "失控：断裂之前断裂还有多远不被识，观察储量则识之。",
+      "declarations": [
+        "Becoming.Web.break_not_bounded",
+        "Becoming.Web.observed_raise_registers"
+      ]
+    },
+    {
+      "en": "Proxies: selection and training go only through the selector's registration or the data; values beyond the data stay as free as the class leaves them; reaching beyond the registration closure to raise what registers is selected.",
+      "zh": "代理：选择与训练只经选择者之识或数据，数据之外的值与类同样自由，伸出识闭包之外而抬高所识者被选中。",
+      "declarations": [
+        "Becoming.Web.selects_alike_iff",
+        "Becoming.Learning.Training.loss_through",
+        "Becoming.Learning.Training.unselected_beyond_data",
+        "Becoming.Diversion.favours"
+      ]
+    },
+    {
+      "en": "Judgment: a judgment from registration is exactly a common response of the judging process over the belief.",
+      "zh": "判断：由识作出的判断恰是判断过程在信念上的共同回应。",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff",
+        "Becoming.Web.belief_judge_iff"
+      ]
+    },
+    {
+      "en": "The meta level: learning over classes is the same learning over a merged enumeration; every merging has its diagonal course; a system changing its own rule has its law on the joint configuration.",
+      "zh": "元层次：对类的学习是合并枚举上的同一学习，每种合并都有其对角序列，改变自身规则的系统的规律在联合配置上。",
+      "declarations": [
+        "Becoming.Learning.merged_bound",
+        "Becoming.Learning.merged_unrested",
+        "Becoming.adaptive_state_law_iff"
+      ]
+    },
+    {
+      "en": "The formal routes of formation: learning by refutation forms a model from the record; the acquisition chain forms an interpretation of every expression from three encounters; Hebbian development and the route of updating are laws on the joint configuration; the responsive route learns where the task fails.",
+      "zh": "形成的形式路线：按否证学习从记录形成模型，习得链从三次接触形成对全部表达式的解释，Hebb 式发展与更新路线是联合配置上的律，回应路线在失败处学习。",
+      "declarations": [
+        "Becoming.LearningCorrespondence.uniform_determines",
+        "Becoming.LearningCorrespondence.hebbian_activity_law_iff",
+        "Becoming.LearningCorrespondence.updating_network_law_iff",
+        "Becoming.LearningCorrespondence.responsive_learns"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "不加公理，不加前提；各规律的条件保持在其定理中（平衡只在所用之处、其余交换固定、值可判定、世界被列表所持等），见各自的记录。",
@@ -28,8 +139,8 @@
     }
   ],
   "correspondence": {
-    "zh": "Ren 的理读法与 P75 的形式整合保留。主研究第16节把独立陈述的判断内容接到各规律，并补充反审：共同回应允许省略无关差别，风险判断不要求必胜；diagonal_refutes 与 merged_unrested 是每个学习者有一个反驳历程，不是每个实际世界要求永久修订。P83 已给出有界稳定正确，P71 已落地。智慧各面的对应是解释性依赖，不是新增 Lean 组合。",
-    "en": "Ren’s reading of 理 and P75’s formal integration are retained. Main-study Section 16 connects independently described judgment content to the laws and adds counterreview: common response permits omission of irrelevant differences, and risk judgment need not guarantee success. diagonal_refutes and merged_unrested give a refuting course for each learner, not perpetual revision in every actual world. P83 supplies bounded stable correctness, and P71 has landed. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition."
+    "en": "Ren’s reading of 理 and the formal integration of the laws are retained. Correspondence to aspects of wisdom is an interpretive dependency, not a new Lean composition: which law constitutes which aspect of wisdom is an argument, not a theorem; 理 is read as Ren reads it, and the other readings are the AI's, pending Ren.",
+    "zh": "Ren 的理读法与各规律的形式整合保留。智慧各面的对应是解释性依赖，不是新增 Lean 组合：哪条规律构成智慧的哪一面是论证，不是定理；理依 Ren，其余读法是 AI 的，待 Ren。"
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
   "aliases": [
@@ -257,18 +368,59 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
       "detail": {
-        "zh": "第 8.2 节：共同受约束不等于已说明智慧；本记录说出智慧不能缺少什么、缺少时怎样失败，不说出一个形成何时有智慧，所以不把必要的形式部分升级为充分的定义。",
-        "en": "Section 8.2: being jointly constrained does not explain wisdom; this record says what wisdom cannot lack and how it fails without it, not when a formation is wise, so it does not upgrade the necessary formal part into a sufficient definition."
+        "zh": "共同受约束不等于已说明智慧；本记录说出智慧不能缺少什么、缺少时怎样失败，不说出一个形成何时有智慧，所以不把必要的形式部分升级为充分的定义。",
+        "en": "Being jointly constrained does not explain wisdom; this record says what wisdom cannot lack and how it fails without it, not when a formation is wise, so it does not upgrade the necessary formal part into a sufficient definition."
       }
     }
   ],
-  "limitations": {
-    "zh": "形式规律与形成路线完成不自动证明全部智慧的覆盖、整个 core 的每项承诺普遍必要或关系组的充分性；实际形成、关切情感与历史对应另有证据责任。P71 已落地，其局部条件保持；P83 的有界识别排除永久修订的普遍读法。“明”所引共同识别例不要求每次改善都新增外部信息，已有经验重组是尚需解释的可能路线。判断的伦理正当性走第二部分。本记录不新增 Lean，原形式信用仍归各模块与 P73/P74，新增 P83 引用是范围核对。",
-    "en": "Completed formal laws and routes of formation do not automatically prove exhaustive wisdom coverage, universal necessity of every core commitment or sufficiency of the relations. Actual formation, concern and affect, and historical correspondence have separate evidential burdens. P71 has landed with its local conditions retained; P83’s bounded identification excludes a universal perpetual-revision reading. The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganization of accessible experience is a possible route still needing explanation. Ethical warrant belongs to Part II. This record adds no Lean; original formal credit stays with the modules and P73/P74, and the added P83 citation is a scope check."
-  },
+  "progress": [
+    {
+      "en": "Formal support matched: Part I’s checked laws are matched to the four connections of the wisdom-root target, adding no Lean; which law constitutes which aspect of wisdom is an argument.",
+      "zh": "形式支撑的对照：第一部分已检查的规律逐条对到目标 wisdom-root 的四条连接，不新增 Lean；哪条规律构成智慧的哪一面是论证。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#93-智慧之根在第一部分所及p75"
+    },
+    {
+      "en": "Content correspondence: independently described judgment content is connected to the laws, with quantifier counterreview: common response permits omitting irrelevant differences, and risk judgment need not guarantee success.",
+      "zh": "内容对应：独立陈述的判断内容接到各规律，并作量词反审：共同回应允许省略无关差别，风险判断不要求必胜。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#necessity-through-judgment-content"
+    },
+    {
+      "en": "Bounded stable correctness: where the orbit is held by a list of length N, the learner by refutation claims and is right at every step from a step computed from N, which the learner does not have.",
+      "zh": "有界稳定正确：轨道被长 N 的列表所持时，按否证学习者从由 N 算出的一步起每步主张且正确；这一步是学习者所没有的 N 的函数。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md#97-辨识有界的记录确定什么p83"
+    }
+  ],
+  "does_not_show": [
+    {
+      "en": "The formal laws and routes of formation do not by themselves prove exhaustive wisdom coverage, universal necessity of every core commitment or sufficiency of the relations; full coverage requires argument.",
+      "zh": "形式规律与形成路线本身不证明全部智慧的覆盖、整个 core 每项承诺的普遍必要或关系组的充分性；整体覆盖须论证。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Actual formation, concern and affect, and historical correspondence have separate evidential burdens.",
+      "zh": "实际形成、关切情感与历史对应另有证据责任。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "A refuting course for each learner is not perpetual revision in every actual world: bounded identification excludes a universal perpetual-revision reading.",
+      "zh": "每个学习者有一个反驳历程，不是每个实际世界要求永久修订：有界识别排除永久修订的普遍读法。",
+      "kind": "non-implication",
+      "witness": "Becoming.Identification.held_learner_rests"
+    },
+    {
+      "en": "The pooled-registration examples cited for 明 do not require every improvement to add external information; reorganizing accessible experience is a possible route still needing explanation.",
+      "zh": "“明”所引共同识别例不要求每次改善都新增外部信息，已有经验重组是尚需解释的可能路线。",
+      "kind": "scope"
+    },
+    {
+      "en": "The ethical warrant of judgment belongs to Part II.",
+      "zh": "判断的伦理正当性走第二部分。",
+      "kind": "scope"
+    }
+  ],
   "validation_scope": {
-    "zh": "2026-10-14：Becoming.Identification、Becoming.Mechanism、Becoming.Selection 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261013T095759.980593Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。 2026-10-13 主研究第16节补充内容对应和量词反审；P83 三项已查声明用于界限核对，不新增证明。依赖类型改为 interpretive，以免把智慧读法标成已验证的形式适配器。",
-    "en": "14 October 2026: the current bytes of Becoming.Identification, Becoming.Mechanism, Becoming.Selection are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261013T095759.980593Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren. On 13 October 2026, main-study Section 16 adds content correspondence and quantifier counterreview; three checked P83 declarations delimit scope without new proof. Dependency types are interpretive, so the wisdom readings are not labeled verified formal adapters."
+    "en": "Every cited theorem is in its module's passed receipt, bound by source hash: the consolidated core checker (Lean 4.29.1, empty axiom reports) and the periphery learning bridge (Lean 4.30.0-rc2 with Mathlib; the acquisition part reports no axioms, the network part only Mathlib's standard axioms). Checked: the theorems' statements and their matching to the target's four connections, with author counterreview in the integration note. This record adds no Lean; no independent review yet.",
+    "zh": "所引每条定理都在其模块的已通过回执中，以源哈希绑定：合并核心检查器（Lean 4.29.1，公理报告为空）与外围学习桥接（Lean 4.30.0-rc2 与 Mathlib；习得部分报告为空，网络部分只报告 Mathlib 的标准公理）。被核对的是这些定理的陈述及其对目标四条连接的对照，作者反审见整合文档。本记录不新增 Lean；尚无独立审查。"
   },
   "references": [
     {
@@ -499,8 +651,8 @@
     }
   ],
   "next_delta": {
-    "zh": "完成独立智慧内容与普遍形式规律之间的覆盖论证，检验忠实替代说明；实际形成、关切情感、充分性分别推进。P71 和 P83 已完成的形式结果直接复用，不再列为待落地或待证明。",
-    "en": "Complete the coverage argument between independently characterized wisdom and the universal formal laws, testing faithful alternatives; pursue actual formation, concern and affect, and sufficiency at their distinct scopes. Reuse landed P71 and P83 results without listing them as awaiting integration or proof."
+    "en": "Complete the coverage argument between independently characterized wisdom and the universal formal laws, testing faithful alternatives; pursue actual formation, concern and affect, and sufficiency at their distinct scopes.",
+    "zh": "完成独立智慧内容与普遍形式规律之间的覆盖论证，检验忠实替代说明；实际形成、关切情感、充分性分别推进。"
   },
   "history": [
     {
@@ -654,6 +806,20 @@
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：按 BECOMING-UNIFICATION-PLAN §10 改名，本记录中 `Identification.knowing_right` → `Identification.withBound_exact`；陈述、证明与定理数不变；Lean 源：Selection、Mechanism、Identification 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): renames per BECOMING-UNIFICATION-PLAN §10, in this record `Identification.knowing_right` → `Identification.withBound_exact`; statements, proofs and theorem counts unchanged; Lean sources: Selection, Mechanism, Identification only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2. The long title becomes a short name (its first clause) and the statement; the catalogue in the claim becomes eleven laws, each naming the declarations already in the references, with the claim keeping the quantifier sentence. The limitations, correspondence and validation scope become five does-not-show items, three progress lines with anchored study links and one evidence paragraph. Kept here rather than in public text: P75 and §93 (the matching), Section 16 (content correspondence), P83 and §97 (bounded identification, three declarations used as a scope check), P71 (landed with its local conditions), P73/P74 (formal credit stays with the modules), the receipts of the consolidated checker (20261013T094743.528770Z) and of the learning bridge (20261013T095759.980593Z), and the earlier next step’s instruction to reuse P71 and P83 without listing them as awaiting integration or proof. The counterexample drops its section label (8.2). No premise, status, dependency, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root-part-one.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2。长标题改为短名（原首句）与陈述；主张中的目录改为十一条规律，各列出引用中已有的声明，主张保留量词句。限制、对应与验证范围改为五项“未表明”、三行带锚点研究链接的“已接通”与一段证据。以下保留于本沿革而不入公开字段：P75 与 §93（逐条对照）、第16节（内容对应）、P83 与 §97（有界识别，三项声明用于范围核对）、P71（已落地，局部条件保持）、P73/P74（形式信用仍归各模块）、合并检查器回执（20261013T094743.528770Z）与学习桥接回执（20261013T095759.980593Z），以及原下一步中“直接复用 P71 与 P83、不再列为待落地或待证明”的指示。反例去掉章节标记（8.2）。前提、状态、依赖、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root-part-one.md)；迁移前的完整记录为 text_versions[0]。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/d52bca486d126519/wisdom-root-part-one.json",
+      "sha256": "d52bca486d126519252c5ace6a04776c77b5f7385faf78a79c91b660cc7435e3",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
