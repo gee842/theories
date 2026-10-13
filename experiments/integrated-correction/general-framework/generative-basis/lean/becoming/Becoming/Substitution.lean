@@ -19,10 +19,15 @@ through dependence that changes:
 * it is consuming in the run, and the sustaining formation loses its support for ever
   and ends.
 
-On the whole-run reading, substitution preserves the classification: a formation that
-survives the loss it took part in, by transforming its dependence, still consumes, and
-its own continuation does not certify renewal. This is nearly definitional, since
-consuming asks only that the formation once drew on a consumed condition. On the
+On the whole-run reading, substitution preserves the classification, by a law of every
+web (`Web.consumingIn_kept_iff`): a formation stays consuming under every change of its own
+dependence from a step on exactly when it draws on a condition whose consumption is
+witnessed by a dependence the change leaves, another formation's or its own from before.
+In the family that witness is the sustaining formation's dependence
+(`consuming_through_sustaining`), so the focal formation consumes with or without
+substitution; where only the consumer's own dependence witnesses the loss, dissolving it
+removes the consumption (`Lone.own_witness_lost`). Its own continuation does not certify
+renewal. On the
 stepwise reading the substituting consumer is credited before the step at which the
 shared condition falls below the sustaining formation's support, and withheld from that
 step until it switches to the alternative: one step in `extracting`
@@ -48,6 +53,62 @@ theorem ceasing_step {p : Nat → Prop} [DecidablePred p] {T t : Nat} (le : T �
     exact if now : p m then ⟨m, within, Nat.lt_succ_self m, now, fails⟩
       else match earlier now with
         | ⟨s, from_, before, yes, no⟩ => ⟨s, from_, Nat.lt_succ_of_lt before, yes, no⟩
+
+/-! ## Consumption under a change of the consumer's own dependence -/
+
+namespace Web
+
+variable {F C : Type}
+
+/-- `V` reads the unfolding of `W` with `f`'s dependence changed from step `T₀` on: the
+levels and `f`'s draws are those of `W`, and so is every dependence of every other
+formation, and `f`'s before `T₀`. -/
+def DependenceChanged (W V : Web F C) (f : F) (T₀ : Nat) : Prop :=
+  (∀ t c, V.level t c = W.level t c) ∧ (∀ t c, V.draws t f c ↔ W.draws t f c) ∧
+    ∀ t g c, (g = f → t < T₀) →
+      (V.requires t g c ↔ W.requires t g c) ∧ V.need t g c = W.need t g c
+
+/-- `f` draws on a condition through whose dependence it consumes, the dependence held by
+another formation, or by `f` before `T₀`: it holds at some step and is never met again
+after it. -/
+def ConsumingThrough (W : Web F C) (f : F) (T₀ : Nat) : Prop :=
+  ∃ t c, W.draws t f c ∧ ∃ g T, (g = f → T < T₀) ∧ W.requires T g c ∧
+    ∀ t', T < t' → W.level t' c < W.need T g c
+
+/-- Consumption is kept under every change of the consumer's own dependence from `T₀` on
+exactly when it consumes through a dependence that change leaves. The law holds for every
+web. -/
+theorem consumingIn_kept_iff {W : Web F C} {f : F} {T₀ : Nat} :
+    (∀ V, W.DependenceChanged V f T₀ → V.ConsumingIn f) ↔ W.ConsumingThrough f T₀ :=
+  ⟨fun kept =>
+    match kept ⟨W.level, W.active, fun t g c => (g = f → t < T₀) ∧ W.requires t g c, W.need,
+        W.draws⟩
+      ⟨fun _ _ => rfl, fun _ _ => Iff.rfl,
+       fun _ _ _ left => ⟨⟨fun depends => depends.2, fun depends => ⟨left, depends⟩⟩, rfl⟩⟩ with
+    | ⟨t, c, drawn, g, T, ⟨left, depends⟩, below⟩ => ⟨t, c, drawn, g, T, left, depends, below⟩,
+   fun ⟨t, c, drawn, g, T, left, depends, below⟩ _ ⟨levels, draws, others⟩ =>
+    ⟨t, c, (draws t c).mpr drawn, g, T, ((others T g c left).1).mpr depends, fun t' later =>
+      Nat.lt_of_le_of_lt (Nat.le_of_eq (levels t' c))
+        (Nat.lt_of_lt_of_le (below t' later) (Nat.le_of_eq (others T g c left).2.symm))⟩⟩
+
+/-- Consumption survives every change of the consumer's own dependence exactly when
+another formation's dependence witnesses it. -/
+theorem consuming_survives_iff {W : Web F C} {f : F} :
+    (∀ V, W.DependenceChanged V f 0 → V.ConsumingIn f) ↔
+      ∃ t c, W.draws t f c ∧ ∃ g T, ¬ g = f ∧ W.requires T g c ∧
+        ∀ t', T < t' → W.level t' c < W.need T g c :=
+  ⟨fun kept => match consumingIn_kept_iff.mp kept with
+    | ⟨t, c, drawn, g, T, left, depends, below⟩ =>
+      ⟨t, c, drawn, g, T, fun same => Nat.not_lt_zero T (left same), depends, below⟩,
+   fun ⟨t, c, drawn, g, T, other, depends, below⟩ =>
+    consumingIn_kept_iff.mpr ⟨t, c, drawn, g, T, fun same => absurd same other, depends, below⟩⟩
+
+/-- Consuming through a dependence is consuming. -/
+theorem ConsumingThrough.consumingIn {W : Web F C} {f : F} {T₀ : Nat} :
+    W.ConsumingThrough f T₀ → W.ConsumingIn f
+  | ⟨t, c, drawn, g, T, _, depends, below⟩ => ⟨t, c, drawn, g, T, depends, below⟩
+
+end Web
 
 namespace Substitution
 
@@ -116,6 +177,24 @@ theorem persists_consuming (L : Law) (gPositive : 0 < L.needG) (fPositive : 0 < 
       .sustaining, T, trivial, fun t later => lost t (Nat.le_of_lt later)⟩,
     T, fun t later active => Nat.not_le_of_gt (lost t later) active⟩
 
+/-- In the family the focal formation consumes through the sustaining formation's
+dependence, so it stays consuming under every change of its own dependence, with or without
+substitution: the family's consumption is an instance of `Web.consumingIn_kept_iff`. -/
+theorem consuming_through_sustaining (L : Law) (gPositive : 0 < L.needG)
+    (fWithin : L.needF ≤ L.needG) (fStart : L.needF ≤ L.start)
+    (over : ∀ t, L.renew + L.contrib t < L.draw t) :
+    (web L).ConsumingThrough .focal 0 ∧
+      ∀ V, (web L).DependenceChanged V .focal 0 → V.ConsumingIn .focal := by
+  have overFrom : ∀ t, 0 ≤ t → L.renew + L.contrib t < L.draw t := fun t _ => over t
+  obtain ⟨T, _, _, low⟩ := L.overdraw_crosses_support gPositive fWithin overFrom
+  have noRestore : ∀ t, T ≤ t → L.contrib t ≤ L.draw t := fun t _ =>
+    Nat.le_of_lt (Nat.lt_of_le_of_lt (Nat.le_add_left _ _) (over t))
+  have lost := L.permanently_below noRestore low (Nat.le_refl _)
+  have through : (web L).ConsumingThrough .focal 0 :=
+    ⟨0, .shared, ⟨fStart, Nat.lt_of_le_of_lt (Nat.zero_le _) (over 0)⟩, .sustaining, T,
+      fun same => Law.Part.noConfusion same, trivial, fun t later => lost t (Nat.le_of_lt later)⟩
+  exact ⟨through, Web.consumingIn_kept_iff.mpr through⟩
+
 /-- Extraction: a focal formation that depends on the shared condition at the sustaining
 formation's level draws two units a step where one is renewed. -/
 def extracting : Law := ⟨3, 1, 1, 1, fun _ => 2, fun _ => 0⟩
@@ -175,6 +254,37 @@ theorem slow_withheld_two_steps :
      ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, by decide, by decide⟩, by decide⟩,
    ⟨.shared, ⟨by decide, Nat.zero_lt_two⟩, .sustaining, trivial,
      ⟨0, Nat.zero_le 3, fun _ _ _ => trivial, by decide, by decide⟩, by decide⟩⟩
+
+/-! ## When only the consumer's own dependence witnesses consumption -/
+
+namespace Lone
+
+/-- A lone formation depends on a condition met at step 0 and never after, and draws on it
+throughout. -/
+def web : Web Unit Unit where
+  level t _ := match t with
+    | 0 => 1
+    | _ + 1 => 0
+  active _ _ := True
+  requires _ _ _ := True
+  need _ _ _ := 1
+  draws _ _ _ := True
+
+/-- The same unfolding with the lone formation's dependence dissolved from the start. -/
+def substituted : Web Unit Unit := { web with requires := fun _ _ _ => False }
+
+/-- When only the consumer's own dependence witnesses consumption, a change of that
+dependence can remove it: the lone formation consumes, through no dependence a change from
+step 0 leaves, and with its dependence dissolved it no longer consumes. -/
+theorem own_witness_lost :
+    web.ConsumingIn () ∧ ¬ web.ConsumingThrough () 0 ∧
+      web.DependenceChanged substituted () 0 ∧ ¬ substituted.ConsumingIn () :=
+  ⟨⟨0, (), trivial, (), 0, trivial, fun | _ + 1, _ => Nat.zero_lt_one⟩,
+   fun ⟨_, _, _, _, T, left, _⟩ => Nat.not_lt_zero T (left rfl),
+   ⟨fun _ _ => rfl, fun _ _ => Iff.rfl, fun _ _ _ left => absurd (left rfl) (Nat.not_lt_zero _)⟩,
+   fun ⟨_, _, _, _, _, depends, _⟩ => depends⟩
+
+end Lone
 
 end Substitution
 

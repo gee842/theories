@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-09T04:41:28+00:00",
   "claim": {
-    "zh": "在一个依存可观测量的过程中，配置之间的维持与断裂沿运行恰是 Becoming.Dependence 的维持与断裂，两者互斥。but-for 检验留在过程之内，并固定实际所取的动作：由某配置以某动作的一步断裂依存，而扣除某一方的部分后同一动作仍可取、且以它的每一步都维持依存，则这一方的部分造成了差别；扣除任何单独一方的部分、以同一动作仍有断裂之步，为多重决定，此时没有哪一方单独造成差别。不固定动作时，动作决定结果：由同一配置，唯一汲取者的部分在平静的动作下造成差别，在外来冲击下损失被多重决定。在 Pool 中，同一过程、同一水平，第一个汲取者取同样的量：另有一方汲取时，它的部分造成差别；另有两方汲取时损失被多重决定，它的部分不造成差别，而扣除两方的部分则维持依存，差别由共同活动造成。两次运行中，关系读法都把它计为消耗，一个什么也不取的形成不计为消耗。一个形成的各事件之间须分开整段与步层面的检验：在可更新条件的过程中每步汲取两个单位，条件被消耗；第一个事件那一步维持依存，对任何正长度的周期都不侵蚀；扣除任何一个事件的汲取，甚至扣除任何一步之前的全部汲取，条件仍被消耗，整段的结局由尾部决定；而在断裂之步，由同一配置不汲取则依存被维持，断裂事件造成那一次断裂的差别。逐步读法不追踪差别制造：在 Pool 中恰取更新量、其部分不造成差别的汲取者，在另一方造成的断裂之步侵蚀。检验在动作决定步骤（Determined）、且动作在扣除后的配置上可取时才合乎其意：把冲击写进同一动作的步骤关系，损失又被多重决定，虽然同一动作的平静结局会维持依存（Hidden）；动作在扣除后不可取，检验不判定任何一方（Tagged）。Pool 与 Shock 的过程都由动作决定步骤。动作决定步骤、在扣除后可取，并且依存在扣除后的配置上仍成立并被满足时，检验是二分的：或者那一部分造成差别，或者同一动作仍断裂依存；扣除本身使依存落空时（那一部分是支持者），检验不作判断。不用伦理前提，也不用 Lean 公理。",
-    "en": "In a process with observables of dependence, keeping and breaking between configurations are, along a run, exactly those of Becoming.Dependence, and they are exclusive. The but-for test stays within the process and holds the move actually taken fixed: when the step from a configuration by a move breaks a dependence and, with one party's part withheld, the same move can still be taken and every step by it keeps the dependence, that party's part makes the difference; when withholding any single party's part still leaves a breaking step by the same move, the loss is overdetermined and no party alone makes the difference. Without the move held fixed, the move decides: from one configuration a lone drawer's part makes the difference under a calm move, while under an exogenous shock the loss is overdetermined. In Pool, in one process at one level with the first drawer taking the same amount: with one other drawer its part makes the difference; with two others the loss is overdetermined and its part makes none, while withholding two parts keeps the dependence, so the difference belongs to the joint activity. In both runs the relational reading counts it as consuming, and a formation that takes nothing is not. Across a formation's own events the run-level and step-level tests come apart: drawing two units at every step in the renewable process consumes the condition; the first event's step keeps the dependence and undermines for no positive cycle; with any single event's draw withheld, indeed with every draw before any step withheld, the condition is still consumed, the run-level outcome being fixed by the tail; at the breaking step, drawing nothing from the same configuration keeps the dependence, so the breaking event makes the step-level difference. The stepwise reading does not track difference-making: in Pool a drawer taking exactly the renewal, whose part makes no difference, undermines at the break another causes. The test reads as intended when the move determines the step (Determined) and can be taken from the withheld configuration: with a shock written into the step relation of a single move, the loss is overdetermined again though the calm outcome of the same move would keep the dependence (Hidden); a move unavailable after withholding decides nothing (Tagged). The processes of Pool and Shock are determined by the move. When the move determines the step and is available after withholding, and the dependence still holds and is met at the withheld configuration, the test is a dichotomy: either the part makes the difference or the same move still breaks the dependence; when withholding the part itself leaves the dependence unmet (the part is a support), the test is silent. No ethical premise and no Lean axiom is used."
+    "zh": "在每个依存可观测量的过程中，固定实际所取动作的 but-for 检验由一方的部分推广到一同扣除的若干部分，“只有一同才造成差别”有确切的定律（differenceOnlyTogether_iff）：动作决定步骤，且单独扣除任何一个成员的部分后同一动作仍可取、依存在那里仍成立并被满足时，这些部分一同造成差别而没有哪个成员单独造成差别，当且仅当一同扣除它们维持依存，而单独扣除其中任何一个，同一动作仍断裂依存。由右到左一向在每个过程中成立（DifferenceOnlyTogether.of_breaks）；另一向要求在每个成员扣除后的配置上动作可取（Blocked）且所需被满足（NeedRises）。只有一同才造成的差别至少需要两个部分；损失被多重决定时，凡一同扣除即维持依存的部分，都只有一同才造成差别。对单独一个部分，在每个过程中、不需动作决定步骤：扣除该部分后动作可取、依存在那里成立并被满足时，该部分造成差别，当且仅当同一动作不再断裂依存（makesDifference_iff）；动作决定步骤时，断裂就是到达的水平低于所需（breaksBy_iff_level）。因此动作决定步骤、在扣除后可取，并且依存在扣除后的配置上仍成立并被满足时，检验是二分的：或者那一部分造成差别，或者同一动作仍断裂依存；扣除本身使依存落空时（那一部分是支持者），检验不作判断。所用的词：配置之间的维持与断裂沿运行恰是 Becoming.Dependence 的维持与断裂，两者互斥；由某配置以某动作的一步断裂依存，而扣除某一方的部分后同一动作仍可取、且以它的每一步都维持依存，则这一方的部分造成了差别；一同扣除若干部分时如此，则它们一同造成差别；扣除任何单独一方的部分、以同一动作仍有断裂之步，为多重决定。检验在动作决定步骤（Determined）时才合乎其意：把冲击写进同一动作的步骤关系，损失又被多重决定，虽然同一动作的平静结局会维持依存（Hidden）；动作在扣除后不可取，检验不判定任何一方（Tagged）。不固定动作时，动作决定结果：由同一配置，唯一汲取者的部分在平静的动作下造成差别，在外来冲击下损失被多重决定。Pool 与 Shock 的过程都由动作决定步骤。Pool 是这一共同定律的实例：同一过程、同一水平，第一个汲取者取同样的量：另有一方汲取时，它的部分造成差别；另有两方汲取时损失被多重决定，它的部分不造成差别，而前两个汲取者只有一同才造成差别（first_two_only_together），差别由共同活动造成。两次运行中，关系读法都把它计为消耗，一个什么也不取的形成不计为消耗。一个形成的各事件之间须分开整段与步层面的检验：在可更新条件的过程中每步汲取两个单位，条件被消耗；第一个事件那一步维持依存，对任何正长度的周期都不侵蚀；扣除任何一个事件的汲取，甚至扣除任何一步之前的全部汲取，条件仍被消耗，整段的结局由尾部决定；而在断裂之步，由同一配置不汲取则依存被维持，断裂事件造成那一次断裂的差别。逐步读法不追踪差别制造：在 Pool 中恰取更新量、其部分不造成差别的汲取者，在另一方造成的断裂之步侵蚀。不用伦理前提，也不用 Lean 公理。",
+    "en": "In every process with observables of dependence, the but-for test, which holds the move actually taken fixed, extends from one party's part to parts withheld together, and a difference made only together has an exact law (differenceOnlyTogether_iff): where the move determines the step and, with any single member's part withheld, can still be taken and leaves the dependence holding and met, the parts make the difference together while no member alone makes it exactly when withholding all of them keeps the dependence and withholding any one of them leaves the same move breaking it. The direction from right to left holds in every process (DifferenceOnlyTogether.of_breaks); the other needs, at each member's withheld configuration, the move to be available (Blocked) and the need to be met (NeedRises). A difference made only together needs at least two parts, and when the loss is overdetermined every set of parts whose withholding keeps the dependence makes it only together. For one part, in every process and without determinacy, where the move can be taken with the part withheld and the dependence holds and is met there, the part makes the difference exactly when the same move no longer breaks the dependence (makesDifference_iff); when the move determines the step, breaking is the reached level falling below the need (breaksBy_iff_level). So when the move determines the step and is available after withholding, and the dependence still holds and is met at the withheld configuration, the test is a dichotomy: either the part makes the difference or the same move still breaks the dependence; when withholding the part itself leaves the dependence unmet (the part is a support), the test is silent. The terms: keeping and breaking between configurations are, along a run, exactly those of Becoming.Dependence, and they are exclusive; a party's part makes the difference when the step from a configuration by a move breaks a dependence and, with that part withheld, the same move can still be taken and every step by it keeps the dependence; parts make it together when this holds with all of them withheld; the loss is overdetermined when withholding any single part still leaves a breaking step by the same move. The test reads as intended when the move determines the step (Determined): with a shock written into the step relation of a single move, the loss is overdetermined again though the calm outcome of the same move would keep the dependence (Hidden); a move unavailable after withholding decides nothing (Tagged). Without the move held fixed, the move decides: from one configuration a lone drawer's part makes the difference under a calm move, while under an exogenous shock the loss is overdetermined. The processes of Pool and Shock are determined by the move. Pool is an instance of the joint law: in one process at one level with the first drawer taking the same amount, with one other drawer its part makes the difference; with two others the loss is overdetermined, its part makes none, and the first two drawers make the difference only together (first_two_only_together), so the difference belongs to the joint activity. In both runs the relational reading counts it as consuming, and a formation that takes nothing is not. Across a formation's own events the run-level and step-level tests come apart: drawing two units at every step in the renewable process consumes the condition; the first event's step keeps the dependence and undermines for no positive cycle; with any single event's draw withheld, indeed with every draw before any step withheld, the condition is still consumed, the run-level outcome being fixed by the tail; at the breaking step, drawing nothing from the same configuration keeps the dependence, so the breaking event makes the step-level difference. The stepwise reading does not track difference-making: in Pool a drawer taking exactly the renewal, whose part makes no difference, undermines at the break another causes. No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -25,6 +25,10 @@
     {
       "zh": "整段层面的检验（扣除事件的汲取后条件是否仍被消耗）与 MakesDifference（扣除配置之中的部分后这一步是否维持依存）是不同的检验；可更新条件的过程中汲取是动作而不是配置的一部分，所以 depletion_is_joint 用的是前者。",
       "en": "The run-level test (whether the condition is still consumed with events' draws withheld) and MakesDifference (whether the step keeps the dependence with a part of the configuration withheld) are different tests; in the renewable process the draw is the move, not part of the configuration, so depletion_is_joint uses the former."
+    },
+    {
+      "zh": "一同扣除若干部分，是按所列次序逐一应用给定的扣除（withholdAll）；次序是否要紧，属同一建模义务。",
+      "en": "Withholding several parts applies the supplied withholding one part after another in the listed order (withholdAll); whether the order matters belongs to the same modelling duty."
     }
   ],
   "correspondence": {
@@ -49,7 +53,16 @@
     "Becoming.Pool.determined",
     "Becoming.Hidden.shock_in_the_step",
     "Becoming.Tagged.move_unavailable",
-    "Becoming.Dependence.determined_dichotomy"
+    "Becoming.Dependence.determined_dichotomy",
+    "Becoming.Dependence.differenceOnlyTogether_iff",
+    "Becoming.Dependence.makesDifference_iff",
+    "Becoming.Dependence.breaksBy_iff_level",
+    "Becoming.Dependence.DifferenceOnlyTogether.of_breaks",
+    "Becoming.Dependence.Overdetermined.only_together",
+    "Becoming.Dependence.DifferenceOnlyTogether.two_le_length",
+    "Becoming.Pool.first_two_only_together",
+    "Becoming.Blocked.only_together_unbroken",
+    "Becoming.NeedRises.only_together_unmet"
   ],
   "dependencies": [
     {
@@ -171,6 +184,13 @@
         "zh": "第三次独立审查：P8、P9 与 P7b 的全部声明接受，公理报告为空；MetSince 须比较那一步的所需（已修正），依存中断一步即开始新的一段（已披露），but-for 须动作可取（已修正）；散文在逐步读法的代价、节制、替代、交互与剩余的免费连通上强于 Lean（已更正，整合文档 §12）。",
         "en": "Third independent review: every P8, P9 and P7b declaration is accepted with empty axiom reports; MetSince had to compare the need at that step (repaired), a one-step lapse starts a new tenure (disclosed), and but-for needs the move to be available (repaired); the prose overclaimed on the stepwise cost, restraint, substitution, interaction and the residual free connection (corrected, integration note §12)."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "detail": {
+        "zh": "共同定律由左到右一向的条件不能去掉（Blocked.only_together_unbroken、NeedRises.only_together_unmet）：动作决定步骤，前两个汲取者只有一同才造成差别，但单独扣除其中一个后，或者动作不可取，或者所需（升为 5）不被满足，所以同一动作在那里并不断裂依存。",
+        "en": "The conditions of the joint law's left-to-right direction cannot be dropped (Blocked.only_together_unbroken, NeedRises.only_together_unmet): the move determines the step and the first two drawers make the difference only together, yet with either withheld alone the move cannot be taken, or the need (raised to 5) is not met, so the same move does not break the dependence there."
+      }
     }
   ],
   "limitations": {
@@ -178,14 +198,14 @@
     "en": "Proposes no causal theory; finer attribution (the NESS test, actual causation in structural equations) is not added. Yields no responsibility, duty or ranking. Pool, Shock and depleting are minimal witnesses; the test holds the move fixed, and an application with exogenous shocks must write them into the move, not into the step relation (Hidden)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Joint 21 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）指出 but-for 须动作可取并由动作决定步骤，更正在 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）指出二分还需依存在扣除后仍成立并被满足，更正在 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 21 theorems of Becoming.Joint have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) found that but-for needs the move to be available and to determine the step, corrected in §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) found that the dichotomy also needs the dependence to hold and be met at the withheld configuration, corrected in §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Joint 21 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）指出 but-for 须动作可取并由动作决定步骤，更正在 §12；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）指出二分还需依存在扣除后仍成立并被满足，更正在 §15。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。2026-10-14 新增的共同定律、单一部分的定律、Pool 的实例与 Blocked、NeedRises 反例（13 项定理；Becoming.Joint 现为 34 项）目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 21 theorems of Becoming.Joint have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) found that but-for needs the move to be available and to determine the step, corrected in §12; a fourth (BECOMING-P9B-P10-P11-REVIEW.md) found that the dichotomy also needs the dependence to hold and be met at the withheld configuration, corrected in §15. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The joint law, the single-part laws, Pool's instance and the Blocked and NeedRises counterexamples, added on 14 October 2026 (13 theorems; Becoming.Joint now has 34), have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
       "role": "proof",
-      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "sha256": "04fc5b34901c9a20f48e8c6f37d27ac5eecffc715c636adc27246dbdf73b10d3",
       "declarations": [
         "Becoming.Dependence.Keeps",
         "Becoming.Dependence.Breaks",
@@ -218,7 +238,25 @@
         "Becoming.Pool.determined",
         "Becoming.Hidden.shock_in_the_step",
         "Becoming.Tagged.move_unavailable",
-        "Becoming.Dependence.determined_dichotomy"
+        "Becoming.Dependence.determined_dichotomy",
+        "Becoming.withholdAll",
+        "Becoming.Dependence.MakesDifferenceTogether",
+        "Becoming.Dependence.DifferenceOnlyTogether",
+        "Becoming.Dependence.makesDifference_iff_together",
+        "Becoming.Dependence.keeps_iff_not_breaks",
+        "Becoming.Dependence.makesDifference_iff",
+        "Becoming.Dependence.breaksBy_iff_level",
+        "Becoming.Dependence.DifferenceOnlyTogether.of_breaks",
+        "Becoming.Dependence.Overdetermined.only_together",
+        "Becoming.Dependence.differenceOnlyTogether_iff",
+        "Becoming.Dependence.DifferenceOnlyTogether.two_le_length",
+        "Becoming.Pool.all_overdetermined",
+        "Becoming.Pool.first_two_only_together",
+        "Becoming.Blocked.process",
+        "Becoming.Blocked.determined",
+        "Becoming.Blocked.only_together_unbroken",
+        "Becoming.NeedRises.dependence",
+        "Becoming.NeedRises.only_together_unmet"
       ]
     },
     {
@@ -617,6 +655,10 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计的边界项（“差别由共同活动造成”只在 Pool 中示出）由一条对每个过程成立的定律回答。but-for 检验推广到一同扣除的若干部分（withholdAll、MakesDifferenceTogether）；differenceOnlyTogether_iff 确切说明若干部分何时只有一同才造成差别；makesDifference_iff、breaksBy_iff_level 与 keeps_iff_not_breaks 给出不需动作决定步骤的单一部分检验；two_le_length 与 Overdetermined.only_together 随之成立；Pool 的 first_two_only_together 是实例；Blocked 与 NeedRises 表明定律由左到右一向不能去掉动作可取与所需被满足。主张改写为定律在先；原有结果、见证与反例不变。合并时 Joint 的证明绑定须改指新的合并回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit's borderline finding (that the difference belongs to the joint activity was shown only in Pool) is answered by a law for every process. The but-for test extends to parts withheld together (withholdAll, MakesDifferenceTogether); differenceOnlyTogether_iff states exactly when parts make the difference only together; makesDifference_iff, breaksBy_iff_level and keeps_iff_not_breaks give the single-part test without determinacy; two_le_length and Overdetermined.only_together follow; Pool's first_two_only_together is an instance; Blocked and NeedRises show that availability and a met need cannot be dropped from the law's left-to-right direction. The claim is rewritten law first; earlier results, witnesses and counterexamples are unchanged. The Joint proof binding must be re-pointed to a new consolidated receipt at landing."
     }
   ]
 }

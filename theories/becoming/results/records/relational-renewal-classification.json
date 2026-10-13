@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-08T19:18:54.643681+00:00",
   "claim": {
-    "en": "A formation is renewing when every condition it depends on or draws on keeps supporting each formation that depends on that condition, and consuming when it draws on a condition some dependent formation permanently loses. Over arbitrary unfoldings the classes are exclusive and not exhaustive, and unrenewed drawdown admits finitely many active steps. When the condition is renewed by a formation that depends on it, drawing beyond renewal permanently ends that renewal: a dependent focal formation then ends itself with bounded formation, while an independent one can persist and form without bound. Forming new organization at every active step does not decide the class, nor does the focal formation's own activity and formation over the whole unfolding. Joint drawing can consume when each party alone is within renewal, and escalation that begins within renewal can consume. No ethical premise and no Lean axiom is used.",
-    "zh": "一项形成若使它依存或取用的每个条件都持续支持依存于该条件的每项形成，则为更新型；若它取用的某个条件使某个依存者永久失去支持，则为消耗型。在任意展开上两类互斥而不穷尽；无更新的取用只容许有限次发生。条件若由依存于它的形成更新，超出更新的取用会永久终止这一更新：依存于该条件的焦点形成随之终止自身、形成量有界，不依存的焦点形成则可以持续并无界形成。每次发生都形成新组织不能决定分类，焦点形成在整个展开中的自身发生与形成轨迹也不能。各方单独都在更新之内时，共同取用仍可消耗；起初在更新之内的升级也可消耗。不使用任何规范前提或 Lean 公理。"
+    "en": "A formation is renewing when every condition it depends on or draws on keeps supporting each formation that depends on that condition, and consuming when it draws on a condition some dependent formation permanently loses. Over arbitrary unfoldings the classes are exclusive and not exhaustive, and unrenewed drawdown admits finitely many active steps. Loss of renewal for good is a law of every balanced flow (Flow.stays_below_at, Flow.ends_below_at): where whatever gives to a condition depends on it at a need of at least a bound, and activity needs support, a level below the bound stays below it, and every formation depending on the condition at such a need is inactive from then on. When the condition is renewed by a formation that depends on it, the support-gated family is such a flow once the focal formation contributes no more than it draws (SupportGated.balances, below_for_good, ends_for_good), and drawing beyond renewal brings the level below the renewer's need, after which the renewal ends for good (SupportGated.overdraw_ends): a dependent focal formation then ends itself with bounded formation, while an independent one can persist and form without bound. Forming new organization at every active step does not decide the class, nor does the focal formation's own activity and formation over the whole unfolding. Joint drawing can consume when each party alone is within renewal: two drawers taking together more than the renewal end the renewal and themselves for good (SupportGated.jointly_ends), and escalation that begins within renewal can consume. No ethical premise and no Lean axiom is used.",
+    "zh": "一项形成若使它依存或取用的每个条件都持续支持依存于该条件的每项形成，则为更新型；若它取用的某个条件使某个依存者永久失去支持，则为消耗型。在任意展开上两类互斥而不穷尽；无更新的取用只容许有限次发生。永久失去更新是每个平衡流的定律（Flow.stays_below_at、Flow.ends_below_at）：给予某条件者都以至少某界的所需依存于它、且活动需要支持时，低于该界的水平此后一直低于它，以这样的所需依存于该条件的每项形成此后都不活跃。条件若由依存于它的形成更新，焦点形成的贡献不多于其取用之后，支持门控规律族就是这样的流（SupportGated.balances、below_for_good、ends_for_good），超出更新的取用使水平低于更新者的所需，此后更新永久终止（SupportGated.overdraw_ends）：依存于该条件的焦点形成随之终止自身、形成量有界，不依存的焦点形成则可以持续并无界形成。每次发生都形成新组织不能决定分类，焦点形成在整个展开中的自身发生与形成轨迹也不能。各方单独都在更新之内时，共同取用仍可消耗：两个取用者合起来取得多于更新时，更新与它们自身都永久终止（SupportGated.jointly_ends）；起初在更新之内的升级也可消耗。不使用任何规范前提或 Lean 公理。"
   },
   "hypotheses": [
     {
@@ -44,7 +44,11 @@
     "RelationalRenewal.Law.formation_does_not_decide",
     "RelationalRenewal.Law.own_trajectory_does_not_decide",
     "RelationalRenewal.Law.jointly_consuming",
-    "RelationalRenewal.Law.escalation_consumes"
+    "RelationalRenewal.Law.escalation_consumes",
+    "Becoming.SupportGated.below_for_good",
+    "Becoming.SupportGated.ends_for_good",
+    "Becoming.SupportGated.overdraw_ends",
+    "Becoming.SupportGated.jointly_ends"
   ],
   "dependencies": [],
   "related": [
@@ -112,6 +116,13 @@
         "en": "One shared condition in the law family, no substitution between conditions, attribution within joint consumption not formalized, and no ethical ranking in this module (with C and the relational reading, relational-reading-comparison ranks every overdraw of the law family below its absence; mixed cases stay unranked); finite fulfillment, rest and appropriate ending are not consumption.",
         "zh": "规律族只有一个共享条件，条件间替代未建模，共同消耗中的归因未形式化，本模块也没有伦理排序（在 C 与关系读法下，relational-reading-comparison 把规律族中每一种超额取用排在其不发生之下；混合情形仍未排序）；有限完成、休息与适当结束不是消耗。"
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "detail": {
+        "zh": "不由一般定律推出的部分（Becoming.RenewalBridge）：越过支持之点来自规律族自身的算术（overdraw_crosses_support，纯净的基础模块）；依存的焦点形成使水平低于自身所需、其形成量有界，仍是 dependent_overdraw_ends_itself 的规律族算术，此后它的永久终止才是 ends_for_good；independent_overdraw_persists 是规律族中的见证（不依存者可以持续）；jointly_consuming 中每个取用者单独在更新之内为更新型，无法在把两个取用者合为一个焦点形成的规律族中表示，各自份额的一般区分是 Becoming.Continuation 的 WithinOwn、WithinJoint、Pair.own_not_joint 与 joint_excess_ends。",
+        "en": "What the general laws do not give (Becoming.RenewalBridge): the crossing below support comes from the family's own arithmetic (overdraw_crosses_support, in the pure foundation module); that a dependent focal formation brings the level below its own need, with bounded formation, remains the family arithmetic of dependent_overdraw_ends_itself, and only its ending for good from then on is ends_for_good; independent_overdraw_persists is a witness in the family (an independent formation can persist); and in jointly_consuming each drawer being renewing within renewal alone cannot be represented in the family, which merges the two drawers into one focal formation; the general split of each one's share is Becoming.Continuation's WithinOwn, WithinJoint, Pair.own_not_joint and joint_excess_ends."
+      }
     }
   ],
   "limitations": {
@@ -119,8 +130,8 @@
     "zh": "完成的是所述表示中的描述性分类及其动力学。未证明真实过程满足规律族，未说明更新循环中的损失如何权衡，也未完成 Becoming 的零附加实质公理根基。其伦理意义不是 G0 之外另欠的工作：G0 的对象是生生，本分类描述的正是生生；消耗与其不发生在 C 下的比较，见另一记录 relational-reading-comparison。Consumed 不要求依存曾被满足：一个从未被满足的依存使条件被消耗、汲取者成为消耗型，而没有任何断裂或丧失（独立审查 Q2；见 becoming-dependence-dynamics 的 Unmet.consumed_without_loss）。本模块的字节与主张不变。"
   },
   "validation_scope": {
-    "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty (no propext, Quot.sound or Classical.choice); 4 compiled application examples. Eight theorems are arithmetic helpers proved locally to avoid axiom-dependent library lemmas. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). Author counterreview; no independent-agent review.",
-    "zh": "Lean 4.29.1 检查通过：35项定理／60项声明审计，公理集全部为空（无 propext、Quot.sound 或 Classical.choice）；编译4个应用例。其中8项为本地证明的算术辅助引理，以避免依赖公理的库引理。同一回执也检查 RenewalComparison（计入 relational-reading-comparison）。作者反审，无独立 agent 审查。"
+    "en": "Lean 4.29.1 check passed: 35 theorems / 60 declaration audits, every axiom set empty (no propext, Quot.sound or Classical.choice); 4 compiled application examples. Eight theorems are arithmetic helpers proved locally to avoid axiom-dependent library lemmas. The shared receipt also checks RenewalComparison (credited to relational-reading-comparison). Author counterreview; no independent-agent review. The general laws and instance theorems connecting this result to the spine (Becoming.Continuation and the new bridge module Becoming.RenewalBridge, 14 October 2026) have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land.",
+    "zh": "Lean 4.29.1 检查通过：35项定理／60项声明审计，公理集全部为空（无 propext、Quot.sound 或 Classical.choice）；编译4个应用例。其中8项为本地证明的算术辅助引理，以避免依赖公理的库引理。同一回执也检查 RenewalComparison（计入 relational-reading-comparison）。作者反审，无独立 agent 审查。2026-10-14 把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与新桥接模块 Becoming.RenewalBridge）目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。"
   },
   "references": [
     {
@@ -140,6 +151,34 @@
         "RelationalRenewal.Law.own_trajectory_does_not_decide",
         "RelationalRenewal.Law.jointly_consuming",
         "RelationalRenewal.Law.escalation_consumes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "7b148ddf6d28419c1aeeecc098f8f6bdc6bb9feb382bfece772b318aa87a4118",
+      "declarations": [
+        "Becoming.Flow.stays_below_at",
+        "Becoming.Flow.ends_below_at",
+        "Becoming.Flow.WithinOwn",
+        "Becoming.Flow.WithinJoint",
+        "Becoming.Flow.joint_excess_ends",
+        "Becoming.Pair.own_not_joint"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "role": "proof",
+      "sha256": "1cd6982a0e56c6fa79989069d46919631ac3ea4d2857d31b193fc1e068c693e6",
+      "declarations": [
+        "Becoming.SupportGated.flow",
+        "Becoming.SupportGated.web",
+        "Becoming.SupportGated.balances",
+        "Becoming.SupportGated.givers_supported",
+        "Becoming.SupportGated.below_for_good",
+        "Becoming.SupportGated.ends_for_good",
+        "Becoming.SupportGated.overdraw_ends",
+        "Becoming.SupportGated.jointly_ends"
       ]
     },
     {
@@ -171,6 +210,12 @@
       "role": "provenance",
       "sha256": "740126fcca587edb4446b690f8d69bc0258d6ca5338a7ed880585fc419a58940",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "role": "receipt",
+      "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -178,6 +223,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json",
       "sha256_pointer": "/source_sha256/RelationalRenewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -202,6 +261,10 @@
     {
       "zh": "2026-10-09：Becoming 脊柱的 P7 承接本记录的下一步（becoming-return-grades、substitution-preserves-consumption、joint-difference-making）；按独立审查 Q2 在限制中披露 Consumed 不要求依存曾被满足。只改下一步、限制、一条反例的措辞与关联；RelationalRenewal 的源码、主张、证明与回执不变。",
       "en": "2026-10-09: P7 of the Becoming spine takes up this record's next step (becoming-return-grades, substitution-preserves-consumption, joint-difference-making); following independent review Q2, the limitations disclose that Consumed does not require the dependence to have been met. Only the next step, limitations, one counterexample's wording and links change; RelationalRenewal's source, claims, proofs and receipt are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现本记录的超额取用动力学只对支持门控规律族成立。新桥接模块 Becoming.RenewalBridge 表明规律族的每个规律都是其静态网上的平衡流（SupportGated.balances），所以永久失去更新是 Becoming.Continuation 的 Flow.stays_below_at 与 Flow.ends_below_at 的实例（below_for_good、ends_for_good、overdraw_ends），超出更新的共同取用之终止也是，且不需 jointly_consuming 的“各自在更新之内”与起点前提（jointly_ends）。越过支持之点、依存者降到自身所需以下及其形成量有界、independent_overdraw_persists 以及 jointly_consuming 中各取用者单独的一半，仍是规律族的结果，见新增反例条目。主张改写为定律在先；RelationalRenewal 的字节、证明与回执不变。新增对 Becoming.Continuation 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有它们的回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found that this record's overdraw dynamics held only for the support-gated law family. The new bridge module Becoming.RenewalBridge shows every law of the family to be a balanced flow on its static web (SupportGated.balances), so loss of renewal for good is an instance of Becoming.Continuation's Flow.stays_below_at and Flow.ends_below_at (below_for_good, ends_for_good, overdraw_ends), and the ending of joint drawing beyond renewal is too, without the within-renewal and start premises of jointly_consuming (jointly_ends). The crossing, the dependent formation's descent below its own need with bounded formation, independent_overdraw_persists and the per-drawer half of jointly_consuming stay family results, as the new counterexample entry states. The claim is rewritten law first; RelationalRenewal's bytes, proofs and receipt are unchanged. Bindings to the consolidated receipt for Becoming.Continuation and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains them at landing."
     }
   ]
 }

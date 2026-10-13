@@ -10,8 +10,8 @@
   "family": "F01",
   "reviewed_at_utc": "2026-10-08T19:22:44.046131+00:00",
   "claim": {
-    "zh": "在既有支持门控规律中，起初仍受支持的贡献路径若在缺口步数内持续有正净贡献，便保持自身支持并恢复维持活动所需的条件。若两项活动都失去支持，实际水平此后不变，即使后续输入表仍列有贡献。两个实际取用历史从同一初值出发、后续输入相同，却分别恢复与不恢复；恢复历史既非全程更新型，也非永久消耗型。",
-    "en": "Within the existing support-gated law, an initially supported contribution route with positive net contribution throughout a deficit-length window keeps its own support and restores the sustaining activity. If both activities lack support, the reached level remains constant despite later nominal contributions. Two actual draw histories have the same initial level and later inputs but opposite recovery outcomes; the recovered history is neither all-time renewing nor permanently consuming."
+    "zh": "对每个依存网上的每个平衡流，恢复是一条定律：一步共同盈余使条件水平至少升一；在水平不低于起点的每一步，各形成共同给予多于取走时，m − 水平 步使水平回到 m（Flow.restores）。支持门控规律族的每个规律都是其静态网上的这样一个流（SupportGated.balances），所以它恢复维持所需是实例（SupportGated.repair_restores，命题即 repair_restores_sustaining_support）：在既有支持门控规律中，起初仍受支持的贡献路径若在缺口步数内持续有正净贡献，便保持自身支持并恢复维持活动所需的条件。若两项活动都失去支持，实际水平此后不变，即使后续输入表仍列有贡献。两个实际取用历史从同一初值出发、后续输入相同，却分别恢复与不恢复；恢复历史既非全程更新型，也非永久消耗型；其受支持的脉冲是该定律的实例（SupportGated.pulse_restores）。",
+    "en": "For every balanced flow on every web, restoration is a law: a step of joint surplus raises a condition's level by at least one, and where the formations give jointly more than they take at each step at which the level is not below where it started, m − level steps bring the level back to m (Flow.restores). Every law of the support-gated family is such a flow on its static web (SupportGated.balances), so its restoration of the sustaining need is an instance (SupportGated.repair_restores, with the statement of repair_restores_sustaining_support): within the existing support-gated law, an initially supported contribution route with positive net contribution throughout a deficit-length window keeps its own support and restores the sustaining activity. If both activities lack support, the reached level remains constant despite later nominal contributions. Two actual draw histories have the same initial level and later inputs but opposite recovery outcomes; the recovered history is neither all-time renewing nor permanently consuming, and its supported pulse is an instance of the law (SupportGated.pulse_restores)."
   },
   "hypotheses": [
     {
@@ -41,7 +41,10 @@
     "RenewalRecovery.two_actual_pulses",
     "RenewalRecovery.supported_pulse_recovers",
     "RenewalRecovery.unsupported_pulse_never_recovers",
-    "RenewalRecovery.recovered_history_neither_global_class"
+    "RenewalRecovery.recovered_history_neither_global_class",
+    "Becoming.Flow.restores",
+    "Becoming.SupportGated.repair_restores",
+    "Becoming.SupportGated.pulse_restores"
   ],
   "dependencies": [
     {
@@ -105,8 +108,8 @@
     "en": "Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity. Finite recovery does not guarantee later maintenance. G0/J/E and the strong zero-substantive-axiom target remain explicit."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实查9项新定理声明／10项新声明审计，4空、6仅标准依赖（propext、Quot.sound）。继承35项定理／60项空审计另列；共70项审计、64空。冻结成功回执绑定双模块源码、检查器、签名及日志。作者反审，无独立代理或经验验收。",
-    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound). Separately credits 35 inherited theorems / 60 empty audits; total 70, 64 empty. A frozen successful receipt binds both module sources, checker, signatures and logs. Author counterreview; no independent-agent or empirical acceptance."
+    "zh": "Lean 4.29.1 实查9项新定理声明／10项新声明审计，4空、6仅标准依赖（propext、Quot.sound）。继承35项定理／60项空审计另列；共70项审计、64空。冻结成功回执绑定双模块源码、检查器、签名及日志。作者反审，无独立代理或经验验收。2026-10-14 把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与新桥接模块 Becoming.RenewalBridge）目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。",
+    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound). Separately credits 35 inherited theorems / 60 empty audits; total 70, 64 empty. A frozen successful receipt binds both module sources, checker, signatures and logs. Author counterreview; no independent-agent or empirical acceptance. The general laws and instance theorems connecting this result to the spine (Becoming.Continuation and the new bridge module Becoming.RenewalBridge, 14 October 2026) have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land."
   },
   "references": [
     {
@@ -154,6 +157,38 @@
       "role": "integration",
       "sha256": "71c0d3c735dccf3a3489f2f45337ee5865e028d61d799cbf5304600f355e7cef",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "7b148ddf6d28419c1aeeecc098f8f6bdc6bb9feb382bfece772b318aa87a4118",
+      "declarations": [
+        "Becoming.Flow.surplus_raises_at",
+        "Becoming.Flow.surplus_bounded_at",
+        "Becoming.Flow.restores_at",
+        "Becoming.Flow.restores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "role": "proof",
+      "sha256": "1cd6982a0e56c6fa79989069d46919631ac3ea4d2857d31b193fc1e068c693e6",
+      "declarations": [
+        "Becoming.SupportGated.renewal",
+        "Becoming.SupportGated.surplus",
+        "Becoming.SupportGated.flow",
+        "Becoming.SupportGated.web",
+        "Becoming.SupportGated.balances",
+        "Becoming.SupportGated.surplus_step",
+        "Becoming.SupportGated.repair_restores",
+        "Becoming.SupportGated.pulse_restores"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "role": "receipt",
+      "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -170,6 +205,20 @@
       "sha256_pointer": "/modules/1/source_sha256",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -184,6 +233,10 @@
     {
       "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
       "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
+    },
+    {
+      "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现本记录的动力学只对支持门控规律族成立。恢复现为每个平衡流的定律（Becoming.Continuation 中的 Flow.surplus_raises_at、surplus_bounded_at、restores_at、restores），新桥接模块 Becoming.RenewalBridge 表明规律族的每个规律都是其静态网上的平衡流（SupportGated.balances），所以 repair_restores_sustaining_support 是实例（SupportGated.repair_restores，命题相同；规律族的证明用 propext 与 Quot.sound，这里公理报告为空），受支持的脉冲也是（SupportGated.pulse_restores）。主张改写为定律在先；规律族模块、其证明与回执不变。新增对 Becoming.Continuation 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有它们的回执。",
+      "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found this record's dynamics held only for the support-gated law family. Restoration is now a law of every balanced flow (Flow.surplus_raises_at, surplus_bounded_at, restores_at, restores in Becoming.Continuation), and the new bridge module Becoming.RenewalBridge shows every law of the family to be a balanced flow on its static web (SupportGated.balances), so repair_restores_sustaining_support is an instance (SupportGated.repair_restores, the same statement, with an empty axiom report where the family proof uses propext and Quot.sound) and so is the supported pulse (SupportGated.pulse_restores). The claim is rewritten law first; the family module, its proofs and its receipt are unchanged. Bindings to the consolidated receipt for Becoming.Continuation and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains them at landing."
     }
   ]
 }

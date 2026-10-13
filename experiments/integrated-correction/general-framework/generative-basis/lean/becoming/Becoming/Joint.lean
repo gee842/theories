@@ -33,12 +33,25 @@ Results:
   the shock written into the step relation of a single move instead, the step is not
   determined by the move, and the loss is overdetermined though the calm outcome of the
   same move would keep the dependence (`Hidden`).
-* Difference-making belongs to the joint activity, not to a formation's own part. In one
-  process, from configurations at the same level where a drawer takes the same amount,
-  its part makes the difference when one other formation draws, and does not when two
-  others draw. Withholding two parts then keeps the dependence: the difference is made
-  jointly. In both runs the relational reading counts the drawer as consuming, and it
-  counts a formation that takes nothing as not consuming.
+* The but-for test extends from one part to a list of parts withheld together
+  (`MakesDifferenceTogether`; one part is the one-element list). In every process, where
+  the move can be taken with a part withheld and the dependence holds and is met there, the
+  part makes the difference exactly when the same move no longer breaks the dependence
+  (`makesDifference_iff`, no determinacy needed).
+* The law of joint difference-making (`differenceOnlyTogether_iff`): where the move
+  determines the step and, with any single member withheld, can be taken and leaves the
+  dependence holding and met, the parts make the difference only together exactly when
+  withholding all of them keeps the dependence and withholding any one of them leaves the
+  same move breaking it. The direction from right to left holds in every process
+  (`DifferenceOnlyTogether.of_breaks`); the other needs the move to be available
+  (`Blocked`) and the need met (`NeedRises`) at each member's withheld configuration. A
+  difference made only together needs at least two parts (`two_le_length`).
+* Difference-making belongs to the joint activity, not to a formation's own part. In
+  `Pool`, from configurations at the same level where a drawer takes the same amount, its
+  part makes the difference when one other formation draws, and does not when two others
+  draw; then the first two make the difference only together, an instance of the law
+  (`first_two_only_together`). In both runs the relational reading counts the drawer as
+  consuming, and it counts a formation that takes nothing as not consuming.
 * The stepwise reading does not track difference-making (`Pool.within_share_undermines`):
   a drawer taking exactly the renewal makes no difference while another, taking two,
   does, yet the first drawer's event is undermining.
@@ -71,6 +84,11 @@ variable {S : Type u} {A : Type v} {F C : Type}
 successor. -/
 def Determined (P : Process S A) : Prop :=
   ∀ s a t t', P.step s a t → P.step s a t' → t = t'
+
+/-- Withholding the parts of `fs` one after another. -/
+def withholdAll (withhold : F → S → S) : List F → S → S
+  | [], s => s
+  | f :: fs, s => withholdAll withhold fs (withhold f s)
 
 namespace Dependence
 
@@ -136,6 +154,112 @@ theorem determined_dichotomy {P : Process S A} (determined : Determined P)
   | .inl fell => .inr ⟨t₀, available, depends, met, fell⟩
   | .inr held => .inl ⟨breaks, ⟨t₀, available⟩, fun _ step =>
       determined _ _ _ _ available step ▸ (⟨met, held⟩ : K.Keeps (withhold f s) t₀ g c)⟩
+
+/-! ## Difference made by parts together -/
+
+variable (K)
+
+/-- The but-for test for the parts of `fs` together: the step from `s` by `a` breaks the
+dependence, and with all of them withheld the same move can be taken and every step by it
+keeps the dependence. -/
+def MakesDifferenceTogether (P : Process S A) (withhold : F → S → S) (fs : List F) (s : S)
+    (a : A) (g : F) (c : C) : Prop :=
+  K.BreaksBy P s a g c ∧ (∃ t, P.step (withholdAll withhold fs s) a t) ∧
+    ∀ t, P.step (withholdAll withhold fs s) a t → K.Keeps (withholdAll withhold fs s) t g c
+
+/-- The parts of `fs` make the difference together, and no single one of them does. -/
+def DifferenceOnlyTogether (P : Process S A) (withhold : F → S → S) (fs : List F) (s : S)
+    (a : A) (g : F) (c : C) : Prop :=
+  K.MakesDifferenceTogether P withhold fs s a g c ∧
+    ∀ f, f ∈ fs → ¬ K.MakesDifference P withhold f s a g c
+
+variable {K}
+
+/-- One part is the one-element set of parts. -/
+theorem makesDifference_iff_together {P : Process S A} {withhold : F → S → S} {f : F} {s : S}
+    {a : A} {g : F} {c : C} :
+    K.MakesDifference P withhold f s a g c ↔ K.MakesDifferenceTogether P withhold [f] s a g c :=
+  Iff.rfl
+
+/-- Where the dependence holds and is met at `r`, every step from `r` by `a` keeps it
+exactly when no step from `r` by `a` breaks it. -/
+theorem keeps_iff_not_breaks {P : Process S A} {r : S} {a : A} {g : F} {c : C}
+    (depends : K.requires r g c) (met : K.need r g c ≤ K.level r c) :
+    (∀ t, P.step r a t → K.Keeps r t g c) ↔ ¬ K.BreaksBy P r a g c :=
+  ⟨fun keeps ⟨t, step, breaks⟩ => keeps_not_breaks (keeps t step) breaks,
+   fun unbroken t step => match Nat.lt_or_ge (K.level t c) (K.need r g c) with
+    | .inl fell => absurd ⟨t, step, depends, met, fell⟩ unbroken
+    | .inr held => ⟨met, held⟩⟩
+
+/-- The but-for test, for every process, without determinacy: where the step breaks the
+dependence, the move can be taken with `f`'s part withheld, and the dependence holds and is
+met there, `f`'s part makes the difference exactly when the same move no longer breaks
+it. -/
+theorem makesDifference_iff {P : Process S A} {withhold : F → S → S} {f : F} {s : S} {a : A}
+    {g : F} {c : C} (breaks : K.BreaksBy P s a g c)
+    (available : ∃ t, P.step (withhold f s) a t) (depends : K.requires (withhold f s) g c)
+    (met : K.need (withhold f s) g c ≤ K.level (withhold f s) c) :
+    K.MakesDifference P withhold f s a g c ↔ ¬ K.BreaksBy P (withhold f s) a g c :=
+  ⟨fun made => (keeps_iff_not_breaks depends met).mp made.2.2,
+   fun unbroken => ⟨breaks, available, (keeps_iff_not_breaks depends met).mpr unbroken⟩⟩
+
+/-- When the move determines the step, from a configuration where the dependence holds and
+is met it breaks the dependence exactly when the level it reaches is below the need. -/
+theorem breaksBy_iff_level {P : Process S A} (determined : Determined P) {r t₀ : S} {a : A}
+    {g : F} {c : C} (step : P.step r a t₀) (depends : K.requires r g c)
+    (met : K.need r g c ≤ K.level r c) :
+    K.BreaksBy P r a g c ↔ K.level t₀ c < K.need r g c :=
+  ⟨fun ⟨_, step', _, _, fell⟩ => determined _ _ _ _ step' step ▸ fell,
+   fun fell => ⟨t₀, step, depends, met, fell⟩⟩
+
+/-- Wherever the parts of `fs` withheld together keep the dependence and, with any single
+one of them withheld, the same move still breaks it, the parts make the difference only
+together. This holds in every process. -/
+theorem DifferenceOnlyTogether.of_breaks {P : Process S A} {withhold : F → S → S}
+    {fs : List F} {s : S} {a : A} {g : F} {c : C}
+    (together : K.MakesDifferenceTogether P withhold fs s a g c)
+    (each : ∀ f, f ∈ fs → K.BreaksBy P (withhold f s) a g c) :
+    K.DifferenceOnlyTogether P withhold fs s a g c :=
+  ⟨together, fun f member ⟨_, _, keeps⟩ =>
+    match each f member with
+    | ⟨t, step, breaks⟩ => keeps_not_breaks (keeps t step) breaks⟩
+
+/-- When the loss is overdetermined, every set of parts whose withholding keeps the
+dependence makes the difference only together. -/
+theorem Overdetermined.only_together {P : Process S A} {withhold : F → S → S} {fs : List F}
+    {s : S} {a : A} {g : F} {c : C} (over : K.Overdetermined P withhold s a g c)
+    (together : K.MakesDifferenceTogether P withhold fs s a g c) :
+    K.DifferenceOnlyTogether P withhold fs s a g c :=
+  .of_breaks together fun f _ => over.2 f
+
+/-- The law of joint difference-making: where the move determines the step and, with any
+single member withheld, can be taken and leaves the dependence holding and met, the parts
+of `fs` make the difference only together exactly when withholding all of them keeps the
+dependence and withholding any one of them leaves the same move breaking it. -/
+theorem differenceOnlyTogether_iff {P : Process S A} (determined : Determined P)
+    {withhold : F → S → S} {fs : List F} {s : S} {a : A} {g : F} {c : C}
+    (available : ∀ f, f ∈ fs → ∃ t, P.step (withhold f s) a t)
+    (depends : ∀ f, f ∈ fs → K.requires (withhold f s) g c)
+    (met : ∀ f, f ∈ fs → K.need (withhold f s) g c ≤ K.level (withhold f s) c) :
+    K.DifferenceOnlyTogether P withhold fs s a g c ↔
+      K.MakesDifferenceTogether P withhold fs s a g c ∧
+        ∀ f, f ∈ fs → K.BreaksBy P (withhold f s) a g c :=
+  ⟨fun ⟨together, noMember⟩ => ⟨together, fun f member =>
+     match available f member with
+     | ⟨_, step⟩ =>
+       match determined_dichotomy determined together.1 step (depends f member) (met f member) with
+       | .inl made => absurd made (noMember f member)
+       | .inr breaks => breaks⟩,
+   fun ⟨together, each⟩ => .of_breaks together each⟩
+
+/-- A difference made only together needs at least two parts: withholding nothing keeps
+nothing that the step breaks, and one part alone is that part's own test. -/
+theorem DifferenceOnlyTogether.two_le_length {P : Process S A} {withhold : F → S → S} :
+    ∀ {fs : List F} {s : S} {a : A} {g : F} {c : C},
+      K.DifferenceOnlyTogether P withhold fs s a g c → 2 ≤ fs.length
+  | [], _, _, _, _, ⟨⟨⟨t, step, breaks⟩, _, keeps⟩, _⟩ => absurd breaks (keeps_not_breaks (keeps t step))
+  | [f], _, _, _, _, ⟨together, noMember⟩ => absurd together (noMember f (List.Mem.head []))
+  | _ :: _ :: _, _, _, _, _, _ => Nat.succ_le_succ (Nat.succ_le_succ (Nat.zero_le _))
 
 end Dependence
 
@@ -333,6 +457,15 @@ theorem steady_consumed (d : Draw) (steps : ∀ n, process.step (steady d n) d (
     (dependence.along ⟨steady d, fun _ => d, steps⟩).Consumed () :=
   ⟨.sustaining, 0, trivial, fun | _ + 1, _ => Nat.zero_lt_one⟩
 
+/-- From three drawers taking one unit each, the loss is overdetermined. -/
+theorem all_overdetermined :
+    dependence.Overdetermined process withhold ⟨1, all⟩ all .sustaining () :=
+  ⟨breaks_from_one all _ rfl, fun
+    | .first => breaks_from_one _ _ rfl
+    | .second => breaks_from_one _ _ rfl
+    | .third => breaks_from_one _ _ rfl
+    | .sustaining => breaks_from_one _ _ rfl⟩
+
 /-- One process, two configurations at the same level, the first drawer taking the same
 amount. With one other drawer the first drawer's part makes the difference to the loss;
 with two others the loss is overdetermined and it does not, while withholding two parts
@@ -354,12 +487,7 @@ theorem difference_belongs_to_the_joint :
     ¬ (dependence.along pairRun).ConsumingIn .third ∧
     (dependence.along allRun).ConsumingIn .first := by
   have over : dependence.Overdetermined process withhold (allRun.state 0) (allRun.act 0)
-      .sustaining () :=
-    ⟨breaks_from_one all _ rfl, fun
-      | .first => breaks_from_one _ _ rfl
-      | .second => breaks_from_one _ _ rfl
-      | .third => breaks_from_one _ _ rfl
-      | .sustaining => breaks_from_one _ _ rfl⟩
+      .sustaining () := all_overdetermined
   refine ⟨rfl, rfl, ⟨breaks_from_one pair _ rfl, ⟨_, rfl⟩, fun _ step => ?_⟩, over,
     over.no_difference .first, fun _ _ step => ?_,
     ⟨0, (), Nat.zero_lt_one, steady_consumed pair pairRun.step⟩,
@@ -371,6 +499,18 @@ theorem difference_belongs_to_the_joint :
   · match t, drawn with
     | 0, drawn => exact Nat.lt_irrefl 0 drawn
     | _ + 1, drawn => exact Nat.lt_irrefl 0 drawn
+
+/-- The joint law in `Pool`: from three drawers taking one unit each, the first two make
+the difference only together. Withholding either one alone the same move still breaks the
+dependence, and withholding both keeps it; `Overdetermined.only_together` gives the
+rest. -/
+theorem first_two_only_together :
+    dependence.DifferenceOnlyTogether process withhold [.first, .second] ⟨1, all⟩ all
+      .sustaining () :=
+  all_overdetermined.only_together
+    ⟨breaks_from_one all _ rfl, ⟨_, rfl⟩, fun _ step => by
+      subst step
+      exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩
 
 /-- The first drawer takes one unit, exactly the renewal; the second takes two. -/
 def mixed : Draw := ⟨1, 2, 0⟩
@@ -441,6 +581,90 @@ theorem move_unavailable :
      | .sustaining => breaks_from_one _ _ rfl⟩⟩
 
 end Tagged
+
+/-! ## Where the single tests are silent
+
+The law of joint difference-making needs, for each member, the move to be available from
+the configuration with that member withheld and the dependence to be met there. Without
+either, the parts can make the difference only together while no member's withheld
+configuration breaks the dependence. -/
+
+namespace Blocked
+
+open Pool
+
+/-- `Pool`'s dynamics, except that no move can be taken while exactly two units are being
+drawn. -/
+def process : Process State Draw :=
+  ⟨fun s next t => s.drawing.total ≠ 2 ∧ t = ⟨s.level + 1 - s.drawing.total, next⟩⟩
+
+theorem determined : Determined process :=
+  fun _ _ _ _ step step' => step.2.trans step'.2.symm
+
+/-- The move determines the step. From three drawers taking one unit each, the first two
+make the difference only together, yet with either withheld alone the move cannot be
+taken, so the same move does not break the dependence there. -/
+theorem only_together_unbroken :
+    Determined process ∧
+    dependence.DifferenceOnlyTogether process withhold [.first, .second] ⟨1, all⟩ all
+      .sustaining () ∧
+    ¬ dependence.BreaksBy process (withhold .first ⟨1, all⟩) all .sustaining () ∧
+    ¬ dependence.BreaksBy process (withhold .second ⟨1, all⟩) all .sustaining () :=
+  have none_alone : ∀ f, ¬ dependence.MakesDifference process withhold f ⟨1, all⟩ all
+      .sustaining ()
+    | .first, ⟨_, ⟨_, unblocked, _⟩, _⟩ => unblocked rfl
+    | .second, ⟨_, ⟨_, unblocked, _⟩, _⟩ => unblocked rfl
+    | .third, ⟨_, ⟨_, unblocked, _⟩, _⟩ => unblocked rfl
+    | .sustaining, ⟨_, _, keeps⟩ =>
+      Nat.not_succ_le_zero 0 (keeps ⟨0, all⟩ ⟨by decide, rfl⟩).2
+  ⟨determined,
+   ⟨⟨⟨⟨0, all⟩, ⟨by decide, rfl⟩, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩,
+     ⟨_, ⟨by decide, rfl⟩⟩, fun _ ⟨_, step⟩ => by
+       subst step
+       exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩,
+    fun f _ => none_alone f⟩,
+   fun ⟨_, ⟨unblocked, _⟩, _⟩ => unblocked rfl,
+   fun ⟨_, ⟨unblocked, _⟩, _⟩ => unblocked rfl⟩
+
+end Blocked
+
+namespace NeedRises
+
+open Pool
+
+/-- `Pool`'s dependence, except that the sustaining formation needs five units while
+exactly two are being drawn. -/
+def dependence : Dependence State Formation Unit where
+  level s _ := s.level
+  active s f := f.active s
+  requires _ f _ := f.requires
+  need s _ _ := if s.drawing.total = 2 then 5 else 1
+  draws s f _ := 0 < s.drawing.part f
+
+/-- Under `Pool.process`, whose moves determine the step and can always be taken, the
+first two drawers make the difference only together, yet with either withheld alone the
+dependence is not met, so the same move does not break it there. -/
+theorem only_together_unmet :
+    Determined process ∧ (∀ f, ∃ t, process.step (withhold f ⟨1, all⟩) all t) ∧
+    dependence.DifferenceOnlyTogether process withhold [.first, .second] ⟨1, all⟩ all
+      .sustaining () ∧
+    ¬ dependence.BreaksBy process (withhold .first ⟨1, all⟩) all .sustaining () ∧
+    ¬ dependence.BreaksBy process (withhold .second ⟨1, all⟩) all .sustaining () :=
+  have none_alone : ∀ f, ¬ dependence.MakesDifference process withhold f ⟨1, all⟩ all
+      .sustaining ()
+    | .first, ⟨_, _, keeps⟩ => absurd (keeps _ rfl).1 (by decide)
+    | .second, ⟨_, _, keeps⟩ => absurd (keeps _ rfl).1 (by decide)
+    | .third, ⟨_, _, keeps⟩ => absurd (keeps _ rfl).1 (by decide)
+    | .sustaining, ⟨_, _, keeps⟩ => absurd (keeps _ rfl).2 (by decide)
+  ⟨Pool.determined, fun _ => ⟨_, rfl⟩,
+   ⟨⟨⟨⟨0, all⟩, rfl, trivial, Nat.le_refl 1, Nat.zero_lt_one⟩, ⟨_, rfl⟩, fun _ step => by
+       subst step
+       exact ⟨Nat.le_refl 1, Nat.le_refl 1⟩⟩,
+    fun f _ => none_alone f⟩,
+   fun ⟨_, _, _, met, _⟩ => absurd met (by decide),
+   fun ⟨_, _, _, met, _⟩ => absurd met (by decide)⟩
+
+end NeedRises
 
 /-! ## A formation's events over time are a joint activity -/
 

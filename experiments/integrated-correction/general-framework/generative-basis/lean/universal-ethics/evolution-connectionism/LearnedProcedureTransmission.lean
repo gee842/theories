@@ -180,6 +180,84 @@ theorem reconstructed_record_enters_use {channels : Fin 3 → Channel} {s out : 
     exact ⟨constructed_record _ _ _,rfl⟩
   · cases actual
 
+/-! ## Laws of every exposure and reconstruction -/
+
+/-- Exposure runs exactly when some formation is active and the source covers the demand of
+every active formation on every task. -/
+theorem expose_isSome_iff (channels : Fin 3 → Channel) (tasks : List Task) (s : State) :
+    (expose channels tasks s).isSome ↔ 0 < s.active ∧ s.active*tasks.length ≤ s.source := by
+  unfold expose
+  dsimp only
+  split
+  · rename_i enabled
+    exact ⟨fun _ => enabled, fun _ => rfl⟩
+  · rename_i blocked
+    exact ⟨fun ran => by simp at ran, fun enabled => absurd enabled blocked⟩
+
+/-- An exposure keeps the apparatus, writes the network its run leaves, and marks the state
+tested. -/
+theorem exposed_kit {channels : Fin 3 → Channel} {tasks : List Task} {s out : State}
+    (actual : expose channels tasks s = some out) :
+    out.kit.apparatus = s.kit.apparatus ∧
+      out.kit.network = (nativeRun s.kit.apparatus channels s.kit.network tasks).1 ∧
+      out.tested = true := by
+  unfold expose at actual
+  dsimp only at actual
+  split at actual
+  · cases Option.some.inj actual
+    exact ⟨rfl, rfl, rfl⟩
+  · cases actual
+
+/-- Reconstruction runs exactly when the state is tested and the precursor and support
+available build at least one successor. -/
+theorem reconstruct_isSome_iff (channels : Fin 3 → Channel) (t : Transfer) (s : State) :
+    (reconstruct channels t s).isSome ↔ s.tested = true ∧ 0 < capacity s := by
+  unfold reconstruct
+  dsimp only
+  split
+  · rename_i enabled
+    exact ⟨fun _ => enabled, fun _ => rfl⟩
+  · rename_i blocked
+    exact ⟨fun ran => by simp at ran, fun enabled => absurd enabled blocked⟩
+
+set_option maxHeartbeats 1000000 in
+/-- Every reconstruction builds its successors from the inherited record and procedure bit
+of the transfer, and leaves them untested. -/
+theorem reconstruct_inherits {channels : Fin 3 → Channel} {t : Transfer} {s out : State}
+    (actual : reconstruct channels t s = some out) :
+    out.kit.network = inheritedRecord t s ∧
+      out.kit.apparatus.inhibit = inheritedProcedure t s ∧ out.tested = false := by
+  unfold reconstruct at actual
+  dsimp only at actual
+  split at actual
+  · cases Option.some.inj actual
+    exact ⟨constructed_record _ _ _, rfl, rfl⟩
+  · cases actual
+
+/-- After an exposure, reconstruction runs exactly when the capacity is positive. -/
+theorem reconstruct_after_exposure_iff {channels : Fin 3 → Channel} {tasks : List Task}
+    {s s₁ : State} (exposed : expose channels tasks s = some s₁) (t : Transfer) :
+    (reconstruct channels t s₁).isSome ↔ 0 < capacity s₁ :=
+  (reconstruct_isSome_iff channels t s₁).trans
+    ⟨fun h => h.2, fun h => ⟨(exposed_kit exposed).2.2, h⟩⟩
+
+/-- The law of transmission: every exposure followed by a faithful reconstruction passes on
+the network the exposure left and the procedure bit the exposed formation had, builds as
+many successors as the capacity allows, and conserves material and support. -/
+theorem cycle_transmits {channels : Fin 3 → Channel} {tasks : List Task} {s s₁ s₂ : State}
+    (exposed : expose channels tasks s = some s₁)
+    (rebuilt : reconstruct channels .faithful s₁ = some s₂) :
+    s₂.kit.network = s₁.kit.network ∧ s₂.kit.apparatus.inhibit = s.kit.apparatus.inhibit ∧
+      s₂.active = capacity s₁ ∧ material s₂ = material s ∧ support s₂ = support s := by
+  obtain ⟨apparatus, _, _⟩ := exposed_kit exposed
+  obtain ⟨network, procedure, _⟩ := reconstruct_inherits rebuilt
+  obtain ⟨m1, s1⟩ := exposed_accounts exposed
+  obtain ⟨m2, s2, count⟩ := reconstructed_accounts rebuilt
+  refine ⟨network, ?_, count, m2.trans m1, s2.trans s1⟩
+  rw [procedure]
+  show s₁.kit.apparatus.inhibit = s.kit.apparatus.inhibit
+  rw [apparatus]
+
 def firstSeed (p : Bool) : State :=
   ⟨construct identityChannels (weighted 1 1) p,1,0,130,160,0,0,2,true⟩
 
@@ -314,6 +392,19 @@ theorem complete_formation_transmission_use (p : Bool) :
   obtain ⟨m3,s3,_⟩ := reconstructed_accounts (actual_reconstruction p .faithful)
   obtain ⟨m4,s4⟩ := exposed_accounts (actual_successor_exposure p)
   exact ⟨m4.trans (m3.trans (m2.trans m1)),s4.trans (s3.trans (s2.trans s1))⟩
+
+/-- The constructed history is an instance of the law of transmission: the daughters
+inherit the parent's learned network and its procedure bit, with material and support
+those of the first seed. -/
+theorem history_transmits (p : Bool) :
+    (daughterState p .faithful).kit.network = (parentAfter p).kit.network ∧
+      (daughterState p .faithful).kit.apparatus.inhibit = p ∧
+      (daughterState p .faithful).active = capacity (parentAfter p) ∧
+      material (daughterState p .faithful) = material (firstSeed p) ∧
+      support (daughterState p .faithful) = support (firstSeed p) := by
+  obtain ⟨network, procedure, count, m, s⟩ :=
+    cycle_transmits (actual_parent_history p) (actual_reconstruction p .faithful)
+  exact ⟨network, procedure.trans (constructed_procedure _ _ _), count, m, s⟩
 
 theorem reconstructed_updater_really_learns :
     let child := construct identityChannels (weighted 1 4) true
