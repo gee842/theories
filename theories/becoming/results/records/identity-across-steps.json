@@ -1,18 +1,294 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "identity-across-steps",
   "title": {
-    "zh": "跨步的同一：标签不承载任何东西，每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁；单向的连续留下接续，双向的连续仍留下跨过休眠的接续；在普查之下，更多在每种没有分裂的延续下迫使生起，跨一步恰当没有分裂",
-    "en": "Identity across steps: labels carry nothing, each step and each condition are fixed by relations, and readings that follow a formation depend on who continues whom; continuity read one way leaves succession, and read both ways still leaves succession across dormancy; under a census, more forces arising under every continuation without splits, across one step exactly then"
+    "zh": "跨步的同一",
+    "en": "Identity across steps"
   },
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
-  "claim": {
-    "zh": "依存网用固定的索引类型给形成命名，一步的哪个形成与下一步的哪个形成相同由名字规定。改认在每一步把两种命名一一对应，保持每一步的水平、活动、依存与汲取；每一步都相同的改认是改名。改名保持由关系定义、追随形成的读法（检查了五种）：形成在整段上更新或消耗、依存的任期、侵蚀、依存的形成与消解、生起与不息；标签不承载任何东西，名字跨步的模式承载同一。任何改认保持每一步的支持、保持与断裂，每个条件被更新、被消耗或失去，活动是否只在有支持处，每个事件是否在更新之内与是否断裂；改认一个流，保持每步的取用与给予、消耗与补充的平衡、取用者与补充者的数目，因而保持不止地更多；活跃形成的普查与“只有活跃的形成取用”也保持，所以在它们之下，不止地更多在每个改认下蕴含不息，扩张满足全部这些前提。只改动谁延续谁（每一奇数步交换名字），一个更新、一个消耗的形成变成两个消耗、没有更新；第一步之后汲取者每步侵蚀，变成没有任何事件侵蚀；没有依存形成也没有生起，变成一个形成转化依存、形成在每一奇数步生起，生成不息。单由命名造成的生起可以满足 Unceasing.regeneration_recurs 的全部前提：Depletes 不系于生起的形成，不筛掉命名的产物。保持跨步持续活动的形成的名字，改认不制造生起，因而不制造不息；保持跨步持续依存的形成的名字，改认使形成在一段任期上只有一个名字，保持在任期中满足过的依存，不去掉侵蚀。这两个条件以旧命名为参照：新命名可以把旧命名分开的形成接起来，制造连续，不能去掉连续。把终结的形成与在该步或其后开始的形成接起来是接续：谱系的两个成员交替活跃，分开命名时不息地生起，合为一个命名时始终活跃、没有生起；后继者在第二步活跃并被满足、自第三步起需要多于池中所有，分开命名时前任者失去之后的汲取不侵蚀，后继者接续前任者时自第三步起每一步都侵蚀；两个见证中，合并的命名保持分开命名的连续，分开命名不保持合并命名的连续。新命名的连续也由旧命名保持时（双向），生起、不息与侵蚀恰被保持，同一步的接续被排除；跨过形成都不活跃、不依存的休眠之步接起来，双向保持连续，仍改变哪个形成更新、哪个消耗。延续关系读出分裂与合并：在普查、present 不重复与 Taking 之下，在每种没有形成延续为两个的延续关系下（每个改认都是这样的延续，含合并的延续也是；在形成从不终结的扩张上，合并伴随一个持续的形成被读作每步生起，结论不靠更多就成立（Merge.idle），被合并的形成终结时，合并下生起的恰是新的形成（Confluence）），不止地更多使形成在任意晚的步生起；它所需的可判定性由普查与可判定的延续给出；没有普查时，没有分裂并不足够。没有分裂是充分条件，不是必要条件：一次分裂不必使生起停止；把新形成读作从既有形成萌出时，同样的增长在第一步之后不迫使任何生起。跨一步，条件是精确的：对任意步前与步后的列表（步后的不重复），更多总使步后有形成不延续步前的任何形成，恰当延续中没有形成延续为两个（forces_iff_noSplit，必要的方向用相等可判定）；在每个没有分裂的延续下迫使生起，恰当步后多于步前（forced_iff_more：不多时按次序配对，paired，给出一个没有分裂、步后每个形成都延续某个形成的延续）。所以在一步上，没有分裂是延续上的充要条件，更多是数目上的充要条件；整段上一次分裂只在那一步起作用（Fork）。把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；依存网没有部分与整体的关系。不用伦理前提，也不用 Lean 公理。 P87：给定任意保持读法 h，保持的名字连续便在每段保持中固定一个名字；对每步都保持的形成，更新与消耗的整段类别不变（Web.steady_held、Web.renewingIn_held、Web.consumingIn_held）。保持者的醒来不是保持读法下的生起。Hibernation 表明它比活动与任期的双向连续更强；Dormancy 在无保持的一步上仍容许接续；Seed 的依存与储备读法给出不同终结。Web.persisting_census 把普查原律实例化于保持，两端同读，条件分别保留；Sleeper 给出混读失败。World.balanced_reidentify_iff 不加额外假设：改认下世界平衡，恰当它的一一延续在 World.Conserves 内。原世界平衡时，守恒是步后所立之量相等，并经 exchange_alike_iff 接到相同；保持与断裂不变。关系项相等可判定时，每种保平衡命名都固定同一、生起或止息的精确条件由 World.fixed_iff、World.arises_fixed_iff、World.ceases_fixed_iff 给出。每一步之后所立之量区分所有关系项时，保平衡改认是固定改名，类别固定（World.classes_fixed）。Shuttle 是固定的实例；Lineage 与 Hibernation 的两种命名同时保存逐步关系与平衡却改变生起或类别。",
-    "en": "A web names its formations by a fixed index type, so which formation at one step is the same as which at the next is stipulated by the names. A re-identification relates two namings one to one at each step and keeps every step's levels, activity, dependences and drawing; a renaming is a re-identification that is the same at every step. A renaming preserves the readings, defined from the relations, that follow a formation (checked for five): renewing or consuming in the run, the tenure of a dependence, undermining, forming and dissolving of dependences, arising and unceasing generation; labels carry nothing, while the pattern of names across steps carries identity. Every re-identification preserves each step's support, keeping and breaking, whether each condition is renewed, consumed or lost, whether activity occurs only where supported, and whether each event is within renewal and whether it breaks; re-identifying a flow preserves what is taken and given at each step, the balance of depletion and replenishment, and the numbers of takers and renewers, so more without end; a census of the active formations and that only active formations take carry over too, so under them more without end makes generation unceasing under every re-identification, and the expansion meets all these premises. Changing only who continues whom (exchanging names at every odd step), a renewing and a consuming formation become two consuming and none renewing; a drawer undermining at every step after the first becomes a web in which no event then undermines; a web in which no dependence forms and nothing arises becomes one in which a formation transforms its dependence and formations arise at every odd step, so that generation is unceasing. Arisings made by naming alone can meet every premise of Unceasing.regeneration_recurs: Depletes is not tied to the arising formation and does not screen out what naming makes. Keeping the names of formations active across a step, a re-identification makes no arising, hence no unceasing generation; keeping the names of formations whose dependence continues across a step, it gives a formation one name over a tenure, keeps every dependence met while it held, and removes no undermining. Both conditions are read against the old naming: the new naming may join formations the old keeps apart, making a continuity, and never removes one. Joining a formation that ends with one that begins at that step or later is succession: two members of a lineage active at alternate steps arise without end when named apart and are always active with nothing arising when named as one; a successor active and supported at the second step that needs more of the pool than it holds from the third makes drawing after a predecessor's loss undermine nothing when named apart, and undermine at every step from the third when it succeeds the predecessor; in both witnesses the joined naming keeps the apart naming's continuity and the apart naming does not keep the joined naming's. When the old naming also keeps the new naming's continuity (both ways), arising, unceasing generation and undermining are preserved exactly and succession at a single step is excluded; joining across a dormant step, at which neither formation is active or depends on anything, keeps continuity both ways and still changes which formation renews and which consumes. Continuation relations read splits and merges: under a census, present without repetition and Taking, under every continuation in which no formation continues as two (every re-identification is such a continuation, and so is one with merges; on the expansion, whose formations never end, the merge comes with a persisting formation re-read as arising at every step, so the conclusion holds there without more (Merge.idle), while where the merged formation ends, what arises under a merge is exactly what is new (Confluence)), more without end makes formations arise at arbitrarily late steps; the decidability it asks follows from the census and a decidable continuation; without a census, no split is not enough. No split is sufficient, not necessary: a single split need not stop arising; reading new formations as budding from one already there, the same growth forces no arising after the first step. Across one step the condition is exact: for any lists before and after the step, the one after without repetition, more always leaves some formation after the step continuing none before it exactly when no formation continues as two (forces_iff_noSplit, the necessary direction using decidable equality); and arising is forced under every continuation without splits exactly when more formations are listed after the step than before (forced_iff_more: with no more, pairing in order, paired, gives a continuation without splits continuing every formation after the step). So across one step no split is the necessary and sufficient condition on the continuation, and more on the counts; over a run a single split acts only at its step (Fork). Naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; a web has no part–whole relation. No ethical premise and no Lean axiom is used. P87: for any holding predicate h, keeping its names fixes one name over a held stretch and the whole-run renewing and consuming classes of a formation holding at every step (Web.steady_held, Web.renewingIn_held, Web.consumingIn_held). Waking from holding is not holding-arising. Hibernation makes this stronger than two-way activity and tenure continuity; Dormancy permits a join where nothing holds, and dependence and reserve give Seed different endings. Web.persisting_census instantiates the original census laws with both ends read through holding and their separate hypotheses retained; Sleeper refutes mixing the readings. World.balanced_reidentify_iff, without an additional hypothesis, characterizes balanced re-identifications as one-to-one continuations within World.Conserves. In a balanced world conservation is equality of standing after the step, linked to likeness through exchange_alike_iff, and keeping and breaking are invariant. With decidable equality of relata, World.fixed_iff, World.arises_fixed_iff and World.ceases_fixed_iff characterize identity, arising and ceasing fixed by every balance-preserving naming. Where standing after every step distinguishes all relata, such namings are fixed renamings and classes are fixed (World.classes_fixed). Shuttle instantiates this; Lineage and Hibernation permit two namings preserving per-step relations and balance but changing arisings or classes."
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "statement": {
+    "zh": "标签不承载任何东西：每一步与每个条件只由关系确定，追随形成的读法依赖谁延续谁。单向的连续留下接续，双向的连续仍留下跨过休眠的接续；在普查之下，更多在每种没有分裂的延续下迫使生起，跨一步恰当没有分裂。",
+    "en": "Labels carry nothing: relations fix steps and conditions, and readings tracking a formation depend on who continues whom. One-way continuity leaves succession, two-way leaves it across dormancy; under a census more forces arising under every continuation without splits, across one step exactly then."
   },
+  "laws": [
+    {
+      "zh": "依存网用固定的索引类型给形成命名，一步的哪个形成与下一步的哪个形成相同由名字规定。改认在每一步把两种命名一一对应，保持每一步的水平、活动、依存与汲取；每一步都相同的改认是改名。",
+      "en": "A web names its formations by a fixed index type, so which formation at one step is the same as which at the next is stipulated by the names. A re-identification relates two namings one to one at each step and keeps every step's levels, activity, dependences and drawing; a renaming is a re-identification that is the same at every step.",
+      "declarations": [
+        "Becoming.Web",
+        "Becoming.Reidentify",
+        "Becoming.Reidentify.rename"
+      ]
+    },
+    {
+      "zh": "改名保持由关系定义、追随形成的读法（检查了五种）：形成在整段上更新或消耗、依存的任期、侵蚀、依存的形成与消解、生起与不息；标签不承载任何东西，名字跨步的模式承载同一。",
+      "en": "A renaming preserves the readings, defined from the relations, that follow a formation (checked for five): renewing or consuming in the run, the tenure of a dependence, undermining, forming and dissolving of dependences, arising and unceasing generation; labels carry nothing, while the pattern of names across steps carries identity.",
+      "declarations": [
+        "Becoming.Web.rename_renewingIn",
+        "Becoming.Web.rename_consumingIn",
+        "Becoming.Web.rename_tenure",
+        "Becoming.Web.rename_undermining",
+        "Becoming.Web.rename_unceasing"
+      ]
+    },
+    {
+      "zh": "任何改认保持每一步的支持、保持与断裂，每个条件被更新、被消耗或失去，活动是否只在有支持处，每个事件是否在更新之内与是否断裂。",
+      "en": "Every re-identification preserves each step's support, keeping and breaking, whether each condition is renewed, consumed or lost, whether activity occurs only where supported, and whether each event is within renewal and whether it breaks.",
+      "declarations": [
+        "Becoming.Web.reidentify_step",
+        "Becoming.Web.reidentify_renewed",
+        "Becoming.Web.reidentify_consumed",
+        "Becoming.Web.reidentify_lost",
+        "Becoming.Web.reidentify_dependent",
+        "Becoming.Web.reidentify_renewingAt",
+        "Becoming.Web.reidentify_breakingOn"
+      ]
+    },
+    {
+      "zh": "改认一个流，保持每步的取用与给予、消耗与补充的平衡、取用者与补充者的数目，因而保持不止地更多。",
+      "en": "Re-identifying a flow preserves what is taken and given at each step, the balance of depletion and replenishment, and the numbers of takers and renewers, so more without end.",
+      "declarations": [
+        "Becoming.Flow.reidentify_amounts",
+        "Becoming.Flow.reidentify_balances",
+        "Becoming.Flow.reidentify_counts",
+        "Becoming.Flow.reidentify_more"
+      ]
+    },
+    {
+      "zh": "活跃形成的普查与“只有活跃的形成取用”也保持，所以在它们之下，不止地更多在每个改认下蕴含不息，扩张满足全部这些前提。",
+      "en": "A census of the active formations and that only active formations take carry over too, so under them more without end makes generation unceasing under every re-identification, and the expansion meets all these premises.",
+      "declarations": [
+        "Becoming.Web.Census.reidentify",
+        "Becoming.Flow.Taking.reidentify",
+        "Becoming.Flow.More.unceasing_reidentified",
+        "Becoming.Expansion.unceasing_reidentified"
+      ]
+    },
+    {
+      "zh": "只改动谁延续谁（每一奇数步交换名字），一个更新、一个消耗的形成变成两个消耗、没有更新；第一步之后汲取者每步侵蚀，变成没有任何事件侵蚀；没有依存形成也没有生起，变成一个形成转化依存、形成在每一奇数步生起，生成不息。",
+      "en": "Changing only who continues whom (exchanging names at every odd step), a renewing and a consuming formation become two consuming and none renewing; a drawer undermining at every step after the first becomes a web in which no event then undermines; a web in which no dependence forms and nothing arises becomes one where a formation transforms its dependence and formations arise at every odd step, generation unceasing.",
+      "declarations": [
+        "Becoming.Turnover.identified",
+        "Becoming.Turnover.reidentified"
+      ]
+    },
+    {
+      "zh": "单由命名造成的生起可以满足 Unceasing.regeneration_recurs 的全部前提：Depletes 不系于生起的形成，不筛掉命名的产物。",
+      "en": "Arisings made by naming alone can meet every premise of Unceasing.regeneration_recurs: Depletes is not tied to the arising formation and does not screen out what naming makes.",
+      "declarations": [
+        "Becoming.TideFlip.naming_meets_premises",
+        "Becoming.Web.Unceasing.regeneration_recurs",
+        "Becoming.Web.Depletes"
+      ]
+    },
+    {
+      "zh": "保持跨步持续活动的形成的名字，改认不制造生起，因而不制造不息。",
+      "en": "Keeping the names of formations active across a step, a re-identification makes no arising, hence no unceasing generation.",
+      "declarations": [
+        "Becoming.Reidentify.KeepsActive",
+        "Becoming.Web.arises_of_keepsActive",
+        "Becoming.Web.unceasing_of_keepsActive"
+      ]
+    },
+    {
+      "zh": "保持跨步持续依存的形成的名字，改认使形成在一段任期上只有一个名字，保持在任期中满足过的依存，不去掉侵蚀。",
+      "en": "Keeping the names of formations whose dependence continues across a step, it gives a formation one name over a tenure, keeps every dependence met while it held, and removes no undermining.",
+      "declarations": [
+        "Becoming.Reidentify.KeepsTenure",
+        "Becoming.Reidentify.steady",
+        "Becoming.Web.metAbove_of_keepsTenure",
+        "Becoming.Web.undermining_of_keepsTenure"
+      ]
+    },
+    {
+      "zh": "这两个条件以旧命名为参照：新命名可以把旧命名分开的形成接起来，制造连续，不能去掉连续。",
+      "en": "Both conditions are read against the old naming: the new naming may join formations the old keeps apart, making a continuity, and never removes one.",
+      "declarations": []
+    },
+    {
+      "zh": "把终结的形成与在该步或其后开始的形成接起来是接续：谱系的两个成员交替活跃，分开命名时不息地生起，合为一个命名时始终活跃、没有生起。",
+      "en": "Joining a formation that ends with one that begins at that step or later is succession: two members of a lineage active at alternate steps arise without end when named apart and are always active with nothing arising when named as one.",
+      "declarations": [
+        "Becoming.Lineage.arises",
+        "Becoming.Lineage.one",
+        "Becoming.Lineage.readings"
+      ]
+    },
+    {
+      "zh": "后继者在第二步活跃并被满足、自第三步起需要多于池中所有，分开命名时前任者失去之后的汲取不侵蚀，后继者接续前任者时自第三步起每一步都侵蚀。",
+      "en": "A successor active and supported at the second step that needs more of the pool than it holds from the third makes drawing after a predecessor's loss undermine nothing when named apart, and undermine at every step from the third when it succeeds the predecessor.",
+      "declarations": [
+        "Becoming.Succession.succeeds",
+        "Becoming.Succession.inherited",
+        "Becoming.Succession.readings"
+      ]
+    },
+    {
+      "zh": "两个见证中，合并的命名保持分开命名的连续，分开命名不保持合并命名的连续。",
+      "en": "In both witnesses the joined naming keeps the apart naming's continuity and the apart naming does not keep the joined naming's.",
+      "declarations": [
+        "Becoming.Lineage.one_way",
+        "Becoming.Succession.one_way"
+      ]
+    },
+    {
+      "zh": "新命名的连续也由旧命名保持时（双向），生起、不息与侵蚀恰被保持，同一步的接续被排除。",
+      "en": "When the old naming also keeps the new naming's continuity (both ways), arising, unceasing generation and undermining are preserved exactly and succession at a single step is excluded.",
+      "declarations": [
+        "Becoming.Reidentify.back",
+        "Becoming.Web.arises_of_back_keepsActive",
+        "Becoming.Web.arises_iff_of_keepsActive_both",
+        "Becoming.Web.unceasing_iff_of_keepsActive_both",
+        "Becoming.Web.metAbove_of_back_keepsTenure",
+        "Becoming.Web.undermining_of_back_keepsTenure",
+        "Becoming.Web.undermining_iff_of_keepsTenure_both",
+        "Becoming.Web.no_join"
+      ]
+    },
+    {
+      "zh": "跨过形成都不活跃、不依存的休眠之步接起来，双向保持连续，仍改变哪个形成更新、哪个消耗。",
+      "en": "Joining across a dormant step, at which neither formation is active or depends on anything, keeps continuity both ways and still changes which formation renews and which consumes.",
+      "declarations": [
+        "Becoming.Dormancy.join",
+        "Becoming.Dormancy.keeps_both",
+        "Becoming.Dormancy.classes"
+      ]
+    },
+    {
+      "zh": "延续关系读出分裂与合并：在普查、present 不重复与 Taking 之下，在每种没有形成延续为两个的延续关系下，不止地更多使形成在任意晚的步生起；每个改认都是这样的延续，含合并的延续也是。",
+      "en": "Continuation relations read splits and merges: under a census, present without repetition and Taking, under every continuation in which no formation continues as two, more without end makes formations arise at arbitrarily late steps; every re-identification is such a continuation, and so is one with merges.",
+      "declarations": [
+        "Becoming.Web.Continues",
+        "Becoming.Web.NoSplit",
+        "Becoming.Flow.More.unceasingFrom",
+        "Becoming.Web.continuation_reidentify",
+        "Becoming.Merge.merging"
+      ]
+    },
+    {
+      "zh": "在形成从不终结的扩张上，合并伴随一个持续的形成被读作每步生起，结论不靠更多就成立；被合并的形成终结时，合并下生起的恰是新的形成。",
+      "en": "On the expansion, whose formations never end, the merge comes with a persisting formation re-read as arising at every step, so the conclusion holds there without more, while where the merged formation ends, what arises under a merge is exactly what is new.",
+      "declarations": [
+        "Becoming.Merge.idle",
+        "Becoming.Confluence.confluence"
+      ]
+    },
+    {
+      "zh": "它所需的可判定性由普查与可判定的延续给出；没有普查时，没有分裂并不足够。",
+      "en": "The decidability it asks follows from the census and a decidable continuation; without a census, no split is not enough.",
+      "declarations": [
+        "Becoming.Web.Census.decideContinues",
+        "Becoming.Dormant.no_split_without_arising"
+      ]
+    },
+    {
+      "zh": "没有分裂是充分条件，不是必要条件：一次分裂不必使生起停止；把新形成读作从既有形成萌出时，同样的增长在第一步之后不迫使任何生起。",
+      "en": "No split is sufficient, not necessary: a single split need not stop arising; reading new formations as budding from one already there, the same growth forces no arising after the first step.",
+      "declarations": [
+        "Becoming.Fork.split_unceasing",
+        "Becoming.Budding.growth_without_arising"
+      ]
+    },
+    {
+      "zh": "跨一步，条件是精确的：对任意步前与步后的列表（步后的不重复），更多总使步后有形成不延续步前的任何形成，恰当延续中没有形成延续为两个，必要的方向用相等可判定。",
+      "en": "Across one step the condition is exact: for any lists before and after the step, the one after without repetition, more always leaves some formation after the step continuing none before it exactly when no formation continues as two, the necessary direction using decidable equality.",
+      "declarations": [
+        "Becoming.forces_iff_noSplit"
+      ]
+    },
+    {
+      "zh": "在每个没有分裂的延续下迫使生起，恰当步后多于步前：不多时按次序配对，给出一个没有分裂、步后每个形成都延续某个形成的延续。",
+      "en": "Arising is forced under every continuation without splits exactly when more formations are listed after the step than before: with no more, pairing in order gives a continuation without splits continuing every formation after the step.",
+      "declarations": [
+        "Becoming.forced_iff_more",
+        "Becoming.paired",
+        "Becoming.paired_noSplit",
+        "Becoming.paired_covers"
+      ]
+    },
+    {
+      "zh": "所以在一步上，没有分裂是延续上的充要条件，更多是数目上的充要条件；整段上一次分裂只在那一步起作用。",
+      "en": "So across one step no split is the necessary and sufficient condition on the continuation, and more on the counts; over a run a single split acts only at its step.",
+      "declarations": [
+        "Becoming.Fork.forks"
+      ]
+    },
+    {
+      "zh": "把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；依存网没有部分与整体的关系。",
+      "en": "Naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; a web has no part–whole relation.",
+      "declarations": [
+        "Becoming.Layered.both"
+      ]
+    },
+    {
+      "zh": "给定任意保持读法 h，保持的名字连续便在每段保持中固定一个名字；对每步都保持的形成，更新与消耗的整段类别不变。",
+      "en": "For any holding predicate h, keeping its names fixes one name over a held stretch and the whole-run renewing and consuming classes of a formation holding at every step.",
+      "declarations": [
+        "Becoming.Web.Holds",
+        "Becoming.Web.steady_held",
+        "Becoming.Web.renewingIn_held",
+        "Becoming.Web.consumingIn_held"
+      ]
+    },
+    {
+      "zh": "保持者的醒来不是保持读法下的生起。Hibernation 表明它比活动与任期的双向连续更强；Dormancy 在无保持的一步上仍容许接续；Seed 的依存与储备读法给出不同终结。",
+      "en": "Waking from holding is not holding-arising. Hibernation makes this stronger than two-way activity and tenure continuity; dormancy permits a join where nothing holds, and dependence and reserve give Seed different endings.",
+      "declarations": [
+        "Becoming.Web.waking_not_arising",
+        "Becoming.Hibernation.readings",
+        "Becoming.Dormancy.held_both",
+        "Becoming.Seed.held_readings"
+      ]
+    },
+    {
+      "zh": "Web.persisting_census 把普查原律实例化于保持，两端同读，条件分别保留；Sleeper 给出混读失败。",
+      "en": "Web.persisting_census instantiates the original census laws with both ends read through holding and their separate hypotheses retained; Sleeper refutes mixing the readings.",
+      "declarations": [
+        "Becoming.Web.persisting_census",
+        "Becoming.Sleeper.held_readings"
+      ]
+    },
+    {
+      "zh": "World.balanced_reidentify_iff 不加额外假设：改认下世界平衡，恰当它的一一延续在 World.Conserves 内。原世界平衡时，守恒是步后所立之量相等，并经 exchange_alike_iff 接到相同；保持与断裂不变。",
+      "en": "World.balanced_reidentify_iff, without an additional hypothesis, characterizes balanced re-identifications as one-to-one continuations within World.Conserves. In a balanced world conservation is equality of standing after the step, linked to likeness through exchange_alike_iff, and keeping and breaking are invariant.",
+      "declarations": [
+        "Becoming.World.balanced_reidentify_iff",
+        "Becoming.World.Conserves",
+        "Becoming.World.conserves_iff",
+        "Becoming.exchange_alike_iff",
+        "Becoming.World.kept_broken_reidentify"
+      ]
+    },
+    {
+      "zh": "关系项相等可判定时，每种保平衡命名都固定同一、生起或止息的精确条件由 World.fixed_iff、World.arises_fixed_iff、World.ceases_fixed_iff 给出；每一步之后所立之量区分所有关系项时，保平衡改认是固定改名，类别固定。",
+      "en": "With decidable equality of relata, World.fixed_iff, World.arises_fixed_iff and World.ceases_fixed_iff characterize identity, arising and ceasing fixed by every balance-preserving naming; where standing after every step distinguishes all relata, such namings are fixed renamings and classes are fixed.",
+      "declarations": [
+        "Becoming.World.fixed_iff",
+        "Becoming.World.arises_fixed_iff",
+        "Becoming.World.ceases_fixed_iff",
+        "Becoming.World.classes_fixed"
+      ]
+    },
+    {
+      "zh": "Shuttle 是固定的实例；Lineage 与 Hibernation 的两种命名同时保存逐步关系与平衡却改变生起或类别。",
+      "en": "Shuttle instantiates this; Lineage and Hibernation permit two namings preserving per-step relations and balance but changing arisings or classes.",
+      "declarations": [
+        "Becoming.Shuttle.conserved",
+        "Becoming.Lineage.world_readings",
+        "Becoming.Hibernation.world_readings"
+      ]
+    },
+    {
+      "zh": "改认下更多迫使生起对每个世界有局部形式，不要普查：只要任意晚的步上有覆盖活跃者的列表，从某步起参与者各列一次、取用者活跃；Flow.More.unceasing_reidentified 是它的推论。",
+      "en": "More forcing arising under re-identification holds of every world in a local form with no census: only lists covering the active formations at arbitrarily late steps and, from some step on, each formation taking part listed once and whatever takes active; Flow.More.unceasing_reidentified is its corollary.",
+      "declarations": [
+        "Becoming.Flow.More.unceasing_reidentified_covering"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "改认在每一步是一一对应。分裂与合并（一个形成延续为几个，或几个延续为一个）不是改认：它们改变延续关系，不改变任何一步形成的数目；它们由延续关系（Continues）表示。",
@@ -47,6 +323,142 @@
       "en": "The conservation characterization of balanced re-identifications adds no hypothesis; equivalence to equal post-step standing assumes the original world balanced. fixed_iff, arises_fixed_iff and ceases_fixed_iff also use decidable equality of relata. classes_fixed requires post-step standing to distinguish every relatum at every step, with both original and re-identified worlds balanced."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "改认只处理每步一一对应；分裂与合并由延续关系表示，其下陈述了更多迫使的生起，形成的类、任期与侵蚀没有陈述。",
+      "en": "Re-identification covers only one-to-one correspondence; splits and merges are continuation relations, under which the arising forced by more is stated, but not formation classes, tenure or undermining.",
+      "kind": "scope"
+    },
+    {
+      "zh": "整段上没有分裂是更多迫使生起的充分条件，不是必要条件，整段上对延续关系的精确条件没有陈述。",
+      "en": "Over a run no split is sufficient for more to force arising, not necessary, and an exact condition on continuations over a run is not stated.",
+      "kind": "scope",
+      "witness": "Becoming.Fork.split_unceasing"
+    },
+    {
+      "zh": "Merge 中的生起是持续形成被重读，由更多做功的含合并见证没有给出。",
+      "en": "The arising in Merge is a persisting formation re-read, and a witness under a merge in which more does the work is not given.",
+      "kind": "scope",
+      "witness": "Becoming.Merge.idle"
+    },
+    {
+      "zh": "连续是一种同一的读法，不是同一的定义，单向与双向是两种读法，原有双向连续不约束跨过休眠的接续。",
+      "en": "Continuity is one reading of identity, not its definition; one-way and two-way continuity are two readings, and the original two-way continuity does not constrain succession across dormancy.",
+      "kind": "non-implication",
+      "witness": "Becoming.Dormancy.keeps_both"
+    },
+    {
+      "zh": "保持连续固定每步保持者的类别，但无保持的一步仍容许接续；保平衡命名下守恒所固定的同一在同量处仍有选择。",
+      "en": "Holding continuity fixes the class of a formation holding throughout, but a step with no holding still permits a join; identity fixed by conservation under balanced namings leaves choice where standings coincide.",
+      "kind": "scope"
+    },
+    {
+      "zh": "More.unceasing_reidentified 与 More.unceasingFrom 只在普查、present 不重复与 Taking 之下成立，不说哪个形成生起，萌出读法下迫使的只是活跃形成的数目没有界。",
+      "en": "More.unceasing_reidentified and More.unceasingFrom hold only under a census, present without repetition and Taking, do not say which formation arises, and under budding force only that the active formations have no bound.",
+      "kind": "scope"
+    },
+    {
+      "zh": "接续怎样读、工作读法是否让任期经由接续延续、“生生不息”读到哪个层次，属于 Ren 的读法选择。",
+      "en": "How to read succession, whether the working reading lets a tenure continue through succession, and at which level 生生不息 is read are Ren's reading choices.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "部分与整体的关系由 whole-persists-through-generation 只经由活动陈述，整体的依存与侵蚀没有陈述；见证都是最小见证。",
+      "en": "The part–whole relation is stated in whole-persists-through-generation through activity only, without the whole's dependence or undermining; the witnesses are minimal.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "Turnover：只改动谁延续谁，形成的类、侵蚀、转化与生起都改变，不息由改认单独制造；在 Turnover 中这些生起不降低任何条件，Depletes 不成立。",
+        "en": "Turnover: changing only who continues whom changes formation classes, undermining, transformation and arising, and unceasing generation is made by re-identification alone; in Turnover those arisings lower no condition and Depletes fails."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "TideFlip：没有生起的潮水与月亮，每个奇数步交换名字，单由命名造成的生起满足 Unceasing.regeneration_recurs 的全部前提；Depletes 不筛掉命名的产物（第五次独立审查 I8）。",
+        "en": "TideFlip: the tide and the moon with nothing arising, their names exchanged at every odd step; arisings made by naming alone meet every premise of Unceasing.regeneration_recurs, so Depletes does not screen out what naming makes (fifth independent review I8)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "Lineage 与 Succession：保持单向连续的改认仍可隐藏生起、增加侵蚀，后继者活跃并在其第一个活跃步被满足；两者都是接续，合并的命名只单向保持连续（Lineage.one_way、Succession.one_way，第五次独立审查 I5、I11）。",
+        "en": "Lineage and Succession: re-identifications keeping one-way continuity can still hide arising and add undermining, with a successor active and supported at its first active step; both are succession, and the joined naming keeps continuity only one way (Lineage.one_way, Succession.one_way, fifth independent review I5, I11)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "Dormancy：跨过休眠之步接起来，双向保持连续，仍改变形成的类：分开命名时早的形成更新、晚的形成消耗，接起来后名为“早”的形成消耗而不更新（第五次独立审查 I6）。",
+        "en": "Dormancy: joining across a dormant step keeps continuity both ways and still changes a formation's class: named apart, the early formation renews and the late one consumes; joined, the formation named early consumes and does not renew (fifth independent review I6)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "Budding：在循环中普查、present 不重复、Taking 与不止地更多都成立；把新形成读作从形成 0 萌出（一个形成延续为多个），第一步之后没有任何生起：有的分裂使“更多迫使生起”失效（第五次独立审查 I9）；没有分裂是充分条件，一次分裂不必使它失效（Fork，第六次独立审查 J9）。",
+        "en": "Budding: in the cycle the census, present without repetition, Taking and more without end all hold; reading new formations as budding from formation 0 (one formation continuing as many), nothing arises after the first step: some splits defeat “more forces arising” (fifth independent review I9); no split is sufficient, and a single split need not defeat it (Fork, sixth independent review J9)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "Layered：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；谱系与成员之间部分与整体的关系不在 Identity 的依存网中（第五次独立审查 I10）；Becoming.Wholes 中谱系是其成员的整体（Layered.composed）。",
+        "en": "Layered: naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; the part–whole relation between them is not in Identity's web (fifth independent review I10); in Becoming.Wholes the lineage is the whole of its members (Layered.composed)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
+      "detail": {
+        "zh": "第五次独立审查：本记录当时的全部声明接受，公理报告为空；连续只单向、休眠中的接续、“名字不承载任何东西”、命名造成的生起满足 Unceasing.regeneration_recurs 的前提、“每种同一的读法”与对分裂的描述、谱系的二选一、后继者从不活跃，以及依赖同一的读法未在其记录中注明（已在整合文档中更正）。",
+        "en": "Fifth independent review: every declaration of this record then is accepted with empty axiom reports; one-way continuity, succession across dormancy, “names carry nothing”, naming-made arisings meeting the premises of Unceasing.regeneration_recurs, “every reading of identity” and the description of splits, the lineage either/or, the successor that never lives, and identity-dependent readings unmarked in their records (corrected in the integration note)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "没有分裂不是必要条件（Fork.split_unceasing）：循环中形成 0 在第一步延续为两个，NoSplit 不成立，形成仍在任意晚的步生起（第六次独立审查 J9）。",
+        "en": "No split is not necessary (Fork.split_unceasing): in the cycle formation 0 continues as two at step one, NoSplit fails, and formations still arise at arbitrarily late steps (sixth independent review J9)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "含合并的延续下定理的前提成立（Merge.merging）：扩张的第 i 个补充者与生长者都延续为第 i 个补充者，没有分裂，可判定性由普查给出（Census.decideContinues）；但没有形成延续为生长者，持续活跃的生长者每步都被读作生起，结论不靠更多就成立（Merge.idle；第七次独立审查 K7 更正了此前“非空地适用”的说法）。被合并的形成终结时，合并下生起的恰是每步的新形成（Confluence.confluence）。由更多做功的含合并普查见证没有给出。",
+        "en": "Under a continuation with merges the theorem's premises hold (Merge.merging): the expansion's ith renewer and grower both continue as the ith renewer, there is no split, and decidability comes from the census (Census.decideContinues); but no formation continues as a grower, so a grower that stays active is re-read as arising at every step and the conclusion holds without more (Merge.idle; K7 of the seventh independent review corrected the earlier “applies non-vacuously”). Where the merged formation ends, what arises under the merge is exactly the new formation of each step (Confluence.confluence). A census witness under a merge in which more does the work is not given."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
+      "detail": {
+        "zh": "没有普查时，没有分裂并不足够（Dormant.no_split_without_arising）：Dormant 中每个形成只延续自身，没有分裂，Taking、present 不重复与不止地更多都成立，没有任何生起（第六次独立审查 J10）。",
+        "en": "Without a census, no split is not enough (Dormant.no_split_without_arising): in Dormant, with each formation continuing only itself, there is no split, Taking, present without repetition and more without end hold, and nothing arises (sixth independent review J10)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Persistence.lean",
+      "detail": {
+        "zh": "保持的连续：Hibernation 比较旧连续与保持连续；Dormancy 在无保持时仍容许接续；Seed 的两种 h 给不同终结；Sleeper 反驳混合普查；Lineage.world_readings 与 Hibernation.world_readings 使不同命名同样平衡而有不同生起或类别。",
+        "en": "Holding continuity: Hibernation separates old and holding continuity; Dormancy permits a join with no holding; two Seed predicates give different endings; Sleeper refutes a mixed census; Lineage.world_readings and Hibernation.world_readings preserve balance under namings with different arisings or classes."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；外围 20261013T095049.338744Z 通过）：Becoming.Identity（含本记录的局部规律）与 Becoming.Persistence 的定理公理报告为空；检查器并核对核心纯净。作者反审见 §16，保持与守恒的规律见 §108；第五、第六次独立审查（见来源）接受数学与第五次的更正；第六次之后的补正以及保持与守恒的规律尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Identity, with this record's local laws, and of Becoming.Persistence have empty axiom reports, and the checker verifies core purity. Author counterreview in §16 and, for the holding and conservation laws, §108; the fifth independent review and the sixth, listed under sources, accepted the mathematics and the fifth's corrections; the sixth's further corrections and the holding and conservation laws are not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "接续的读法（谱系、成员或两者的层次；后继者是否继承损失），由 Ren 选择；选择 h 与混合活动／保持的普查条件；整体的依存与侵蚀怎样由部分构成；延续关系下形成的类、任期与侵蚀；整段上对延续关系的精确条件；守恒下的一般侵蚀；同量处及物质、信息或组织连续如何固定同一。",
+    "en": "Succession's reading (Ren: lineage, members or both; inherited loss); choosing h; mixed activity/holding census conditions; a whole's dependence and undermining from its parts'; classes, tenure and undermining under continuations; an exact run condition on continuations; undermining under conservation; identity where standings coincide or from material, informational or organizational continuity."
+  },
   "correspondence": {
     "zh": "开放纲领与 becoming-dependence-dynamics 的下一步把形成的个体化列为待做：终止与转化之分依赖外给的同一。本结果陈述这一外给的同一在哪些读法中起作用：每一步与每个条件的读法不依赖它，追随形成的读法依赖它；单向的连续排除制造生起与去掉侵蚀，接续仍由读法决定；双向的连续恰保持生起与侵蚀，却仍不约束形成在整段上的类。名字跨步的模式承载同一：这是表示给出的对应前提，Turnover 表明它是实质的；方法要求“不能以分别命名偷渡独立本体”在这里的检查是这一披露，不是改名不变，因为改名按构造保持这一模式。谱系与成员是同一展开的两个层次：作为整体的谱系持续，正由成员不息地生起而成（Layered）；单一命名层次只能表示其一，部分与整体的关系是这一表示所省略的关系；whole-persists-through-generation 陈述这一关系，在成员不长久的前提下，谱系的持续蕴含成员不息地生起。把“生生不息”读到谱系、成员或两者的层次，属于 Ren；只读作谱系的持续，与 Ren 原话中的“不断创造”有张力（作者的说明）；成员不长久时，这一张力由上述蕴含消除。后继者是否继承前任者的损失，决定此后的汲取在工作读法下是否侵蚀，也属于 Ren 的读法选择。 P87 的 h、活动或依存作为 Holds，以及把所立之量守恒读作延续，均是公开的读法；不声称它们穷尽现实的物质、信息或组织连续。",
     "en": "The open programme and the next step of becoming-dependence-dynamics list the individuation of formations: the distinction between ending and transformation depends on a supplied identity. This result states in which readings that supplied identity matters: readings of each step and each condition do not depend on it, readings that follow a formation do; continuity read one way rules out making arising and removing undermining, and succession remains a reading; read both ways it preserves arising and undermining exactly, and still does not constrain a formation's class over the run. The pattern of names across steps carries identity: this is a correspondence premise the representation supplies, and Turnover shows it is substantive; the check of the method requirement that separate naming must not smuggle in independent entities is this disclosure, not invariance under renaming, since a renaming keeps the pattern by construction. A lineage and its members are two levels of one unfolding: the lineage as a whole continues precisely as its members arise without end (Layered); a single level of naming represents only one of them, and the part–whole relation is what this representation omits; whole-persists-through-generation states that relation, and where members do not last the lineage's persistence entails that its members arise without end. Whether 生生不息 is read at the level of the lineage, of its members or both is Ren's to choose; reading it only as the lineage's continuation is in tension with the “不断创造” of Ren's words (the author's note); where members do not last, the entailment above removes that tension. Whether a successor inherits a predecessor's loss, deciding whether later drawing undermines on the working reading, is also Ren's reading choice. P87 supplies h and offers activity-or-dependence as Holds and conservation of standing as a continuation reading; these do not exhaust actual material, informational or organizational continuity."
@@ -220,93 +632,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "Turnover：只改动谁延续谁，形成的类、侵蚀、转化与生起都改变，不息由改认单独制造；在 Turnover 中这些生起不降低任何条件，Depletes 不成立。",
-        "en": "Turnover: changing only who continues whom changes formation classes, undermining, transformation and arising, and unceasing generation is made by re-identification alone; in Turnover those arisings lower no condition and Depletes fails."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "TideFlip：没有生起的潮水与月亮，每个奇数步交换名字，单由命名造成的生起满足 Unceasing.regeneration_recurs 的全部前提；Depletes 不筛掉命名的产物（第五次独立审查 I8）。",
-        "en": "TideFlip: the tide and the moon with nothing arising, their names exchanged at every odd step; arisings made by naming alone meet every premise of Unceasing.regeneration_recurs, so Depletes does not screen out what naming makes (fifth independent review I8)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "Lineage 与 Succession：保持单向连续的改认仍可隐藏生起、增加侵蚀，后继者活跃并在其第一个活跃步被满足；两者都是接续，合并的命名只单向保持连续（Lineage.one_way、Succession.one_way，第五次独立审查 I5、I11）。",
-        "en": "Lineage and Succession: re-identifications keeping one-way continuity can still hide arising and add undermining, with a successor active and supported at its first active step; both are succession, and the joined naming keeps continuity only one way (Lineage.one_way, Succession.one_way, fifth independent review I5, I11)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "Dormancy：跨过休眠之步接起来，双向保持连续，仍改变形成的类：分开命名时早的形成更新、晚的形成消耗，接起来后名为“早”的形成消耗而不更新（第五次独立审查 I6）。",
-        "en": "Dormancy: joining across a dormant step keeps continuity both ways and still changes a formation's class: named apart, the early formation renews and the late one consumes; joined, the formation named early consumes and does not renew (fifth independent review I6)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "Budding：在循环中普查、present 不重复、Taking 与不止地更多都成立；把新形成读作从形成 0 萌出（一个形成延续为多个），第一步之后没有任何生起：有的分裂使“更多迫使生起”失效（第五次独立审查 I9）；没有分裂是充分条件，一次分裂不必使它失效（Fork，第六次独立审查 J9）。",
-        "en": "Budding: in the cycle the census, present without repetition, Taking and more without end all hold; reading new formations as budding from formation 0 (one formation continuing as many), nothing arises after the first step: some splits defeat “more forces arising” (fifth independent review I9); no split is sufficient, and a single split need not defeat it (Fork, sixth independent review J9)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "Layered：把谱系本身与成员并列命名，谱系每步活跃，成员不息地生起；谱系与成员之间部分与整体的关系不在 Identity 的依存网中（第五次独立审查 I10）；Becoming.Wholes 中谱系是其成员的整体（Layered.composed）。",
-        "en": "Layered: naming the lineage itself beside its members, the lineage is active at every step while its members arise without end; the part–whole relation between them is not in Identity's web (fifth independent review I10); in Becoming.Wholes the lineage is the whole of its members (Layered.composed)."
-      }
-    },
-    {
-      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P11B-P12-REVIEW.md",
-      "detail": {
-        "zh": "第五次独立审查：P12 的全部声明接受，公理报告为空；连续只单向、休眠中的接续、“名字不承载任何东西”、命名造成的生起满足 P10 的前提、“每种同一的读法”与对分裂的描述、谱系的二选一、后继者从不活跃，以及依赖同一的读法未在其记录中注明（已更正，整合文档 §19）。",
-        "en": "Fifth independent review: every P12 declaration is accepted with empty axiom reports; one-way continuity, succession across dormancy, “names carry nothing”, naming-made arisings meeting the P10 premises, “every reading of identity” and the description of splits, the lineage either/or, the successor that never lives, and identity-dependent readings unmarked in their records (corrected, integration note §19)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "没有分裂不是必要条件（Fork.split_unceasing）：循环中形成 0 在第一步延续为两个，NoSplit 不成立，形成仍在任意晚的步生起（第六次独立审查 J9）。",
-        "en": "No split is not necessary (Fork.split_unceasing): in the cycle formation 0 continues as two at step one, NoSplit fails, and formations still arise at arbitrarily late steps (sixth independent review J9)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "含合并的延续下定理的前提成立（Merge.merging）：扩张的第 i 个补充者与生长者都延续为第 i 个补充者，没有分裂，可判定性由普查给出（Census.decideContinues）；但没有形成延续为生长者，持续活跃的生长者每步都被读作生起，结论不靠更多就成立（Merge.idle；第七次独立审查 K7 更正了此前“非空地适用”的说法）。被合并的形成终结时，合并下生起的恰是每步的新形成（Confluence.confluence）。由更多做功的含合并普查见证没有给出。",
-        "en": "Under a continuation with merges the theorem's premises hold (Merge.merging): the expansion's ith renewer and grower both continue as the ith renewer, there is no split, and decidability comes from the census (Census.decideContinues); but no formation continues as a grower, so a grower that stays active is re-read as arising at every step and the conclusion holds without more (Merge.idle; K7 of the seventh independent review corrected the earlier “applies non-vacuously”). Where the merged formation ends, what arises under the merge is exactly the new formation of each step (Confluence.confluence). A census witness under a merge in which more does the work is not given."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
-      "detail": {
-        "zh": "没有普查时，没有分裂并不足够（Dormant.no_split_without_arising）：Dormant 中每个形成只延续自身，没有分裂，Taking、present 不重复与不止地更多都成立，没有任何生起（第六次独立审查 J10）。",
-        "en": "Without a census, no split is not enough (Dormant.no_split_without_arising): in Dormant, with each formation continuing only itself, there is no split, Taking, present without repetition and more without end hold, and nothing arises (sixth independent review J10)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Persistence.lean",
-      "detail": {
-        "zh": "P87：Hibernation 比较旧连续与保持连续；Dormancy 在无保持时仍容许接续；Seed 的两种 h 给不同终结；Sleeper 反驳混合普查；Lineage.world_readings 与 Hibernation.world_readings 使不同命名同样平衡而有不同生起或类别。",
-        "en": "P87: Hibernation separates old and holding continuity; Dormancy permits a join with no holding; two Seed predicates give different endings; Sleeper refutes a mixed census; Lineage.world_readings and Hibernation.world_readings preserve balance under namings with different arisings or classes."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词；改认只处理每步形成一一对应的情形；分裂与合并由延续关系表示，其下陈述了更多迫使的生起，普查的平衡见 census-balance-under-continuation，形成的类、任期与侵蚀没有陈述；整段上没有分裂是更多迫使生起的充分条件，不是必要条件，跨一步它是充要条件，整段上对延续关系的精确条件没有陈述；Merge 中的生起是持续形成被重读，由更多做功的含合并见证没有给出；连续是一种同一的读法，不是同一的定义，单向与双向是两种读法，原有双向连续不约束跨过休眠的接续；P87 的保持连续固定每步保持者的类别，但无保持的一步仍容许接续；More.unceasing_reidentified 与 More.unceasingFrom 只在普查、present 不重复与 Taking 之下成立，不说哪个形成生起，在萌出的读法下迫使的只是活跃形成的数目没有界；接续怎样读、工作读法是否让任期经由接续延续、“生生不息”读到哪个层次，属于 Ren 的读法选择；部分与整体的关系由 whole-persists-through-generation 只经由活动陈述，整体的依存与侵蚀没有陈述；P87 刻画保平衡命名下守恒所固定的同一，但同量处仍有选择；守恒下的一般侵蚀、分裂／合并下的类别与任期、活动／保持混读的普查条件，以及从物质、信息或组织连续推出同一的完整说明未给出；见证都是最小见证。",
-    "en": "Contains no ethical predicate; re-identification covers only one-to-one correspondence of formations at each step; splits and merges are represented by continuation relations, under which the arising forced by more is stated, with the census balance in census-balance-under-continuation, but not formation classes, tenure or undermining; over a run no split is sufficient for more to force arising, not necessary, while across one step it is necessary and sufficient, and an exact condition on continuations over a run is not stated; the arising in Merge is a persisting formation re-read, and a witness under a merge in which more does the work is not given; continuity is one reading of identity, not its definition, one-way and two-way continuity are two readings, and the original two-way continuity does not constrain succession across dormancy; P87 holding continuity fixes the class of a formation holding throughout, but a step with no holding still permits a join; More.unceasing_reidentified and More.unceasingFrom hold only under a census, present without repetition and Taking, do not say which formation arises, and under budding what is forced is only that the active formations have no bound; how to read succession, whether the working reading lets a tenure continue through succession, and at which level 生生不息 is read are Ren's reading choices; the part–whole relation is stated in whole-persists-through-generation through activity only, without the whole's dependence or undermining; P87 characterizes identity fixed by conservation under balanced namings but leaves choice where standings coincide; undermining under conservation, classes and tenure under splits or merges, mixed activity/holding census conditions and a full material, informational or organizational account remain open; the witnesses are minimal."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Identity 119 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §16；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P11B-P12-REVIEW.md），其更正在整合文档 §19 处理；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这些更正，补出没有分裂只是充分条件、含合并的见证与省去的前提，见 §22，这些补正尚未再经独立审查。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。 P87：同一合并回执 20261013T094743.528770Z 实查 Becoming.Persistence 的 71 项定理与 90 项声明，全部空公理报告；源字节与回执核对一致，外围 20261013T095049.338744Z 通过；整合反审见 §108，尚未经独立科学审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 119 theorems of Becoming.Identity have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §16 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P11B-P12-REVIEW.md), and its corrections are handled in §19; the sixth independent review (BECOMING-P13-P14-P12B-REVIEW.md) accepted them and found that no split is only sufficient, a witness with merges and omitted premises, see §22; these further corrections have not been independently reviewed again. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports. P87: the consolidated receipt 20261013T094743.528770Z checks Becoming.Persistence, 71 theorems and 90 declarations with empty axiom reports; source bytes match the receipt, periphery 20261013T095049.338744Z passed; integration counterreview is in §108, without independent scientific review."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Identity.lean",
@@ -730,10 +1055,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.More.unceasing_reidentified_covering（P60），局部条件写在规律之内：不要普查：只要任意晚的步上有覆盖活跃者的列表，从某步起参与者各列一次、取用者活跃；Flow.More.unceasing_reidentified是它的推论；接续的读法（谱系、成员或两者的层次；后继者是否继承损失），由 Ren 选择；P87 已给出跨过持续保持之休眠的连续读法，仍待选择 h 并给出混合活动／保持的普查条件；整体的依存与侵蚀怎样由部分构成（部分与整体的关系见 whole-persists-through-generation）；延续关系下形成的类、任期与侵蚀；整段上对延续关系的精确条件；守恒下的一般侵蚀；P87 的保平衡命名刻画之外，同量处及物质、信息或组织连续如何进一步固定同一。",
-    "en": "The exact restatement for every world is this record's Flow.More.unceasing_reidentified_covering (P60), the local condition inside the law: no census: only lists covering the active formations at arbitrarily late steps and, from some step on, each formation taking part listed once and whatever takes active; Flow.More.unceasing_reidentified is its corollary; the reading of succession (the level of the lineage, its members or both; whether a successor inherits a loss), for Ren to choose; P87 gives a continuity reading across continued holding through dormancy; choosing h and mixed activity/holding census conditions remain open; how a whole's dependence and undermining are made of its parts' (the part–whole relation is in whole-persists-through-generation); formation classes, tenure and undermining under continuation relations; an exact condition on continuations over a run; undermining under conservation; beyond P87's characterization of balanced namings, how identity is further fixed where standings coincide or by continuity of material, information or organization."
-  },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P12 新增，承接开放纲领与 becoming-dependence-dynamics 下一步中的“形成的个体化”；按 Ren“move on to pursue the theory of becoming, and prove the necessary proofs”。",
@@ -1042,6 +1363,20 @@
     {
       "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
       "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（M3）：长标题改为短名，陈述在先；主张拆为 30 条规律；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。保持与守恒的规律（P87 新增）只在此处保留标记；原附在下一步中的局部重述改为规律 30。反例中审查摘要以本记录的声明与 Unceasing.regeneration_recurs 的前提代替轮次标记 P12、P10 及其更正所在节，保持连续的见证以“保持的连续”代替标记 P87。每句旧文本的去向见迁移对照表 [identity-across-steps.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/identity-across-steps.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (M3): the long title became a short name with the statement first; the claim was split into 30 laws; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The holding and conservation laws, added as P87, keep their label here only; the local restatement appended to the next step became law 30. In the counterexamples the review summary names this record's declarations and the premises of Unceasing.regeneration_recurs in place of the round labels P12 and P10 and the section of its corrections, and the persistence witnesses are introduced as holding continuity in place of the label P87. Every earlier sentence is mapped in the migration table [identity-across-steps.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/identity-across-steps.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/2bbf3d9cabce3362/identity-across-steps.json",
+      "sha256": "2bbf3d9cabce336241016d70f8d0c5c130fd5cf523917f53a497ca2a65d2f395",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
