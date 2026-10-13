@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "id": "least-footprint-where-idleness-decided",
+  "title": {
+    "zh": "闲置可判定处的最小足迹与最少次序",
+    "en": "The least footprint and least order where idleness is decided"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
+  "claim": {
+    "zh": "给出每步每个关系项的闲置布尔判定（DecidesIdle：不参与该交换且跨步 Unmoved），Footprinted.least 触及恰非闲置的关系项，包含交换且被任何包含足迹包含（least_touch_iff、least_contains、least_le）。其 Joined 与 Precedes 被所有包含足迹的相应关系包含（least_joined、least_precedes），其他包含足迹保持的重新编号也被它保持（least_keeps），经 P78 sorts_iff 接到可达安排。若关系项相等可判定，则存在最小布尔包含足迹恰在存在闲置判定时（least_exists_iff）；此时参与由列表成员关系判定，闲置可判定恰在不参与者跨步不变可判定时（decidesIdle_iff）。",
+    "en": "Given a Boolean decision of idleness at every step and relatum (DecidesIdle: taking no part and being Unmoved), Footprinted.least touches exactly what is not idle, contains the exchanges, and is contained in every containing footprint (least_touch_iff, least_contains, least_le). Its Joined and Precedes are contained in the corresponding relations of every containing footprint (least_joined, least_precedes); every renumbering those footprints keep is also kept by it (least_keeps), connected to reachable arrangements by P78 sorts_iff. With decidable equality of relata, a least Boolean containing footprint exists exactly where an idleness decision exists (least_exists_iff). Participation is then decided by list membership, and idleness is decided exactly where being unmoved is decided for nonparticipants (decidesIdle_iff)."
+  },
+  "hypotheses": [
+    {
+      "zh": "同一 Flow X X 与 Web X X；足迹为 Nat → X → Bool，包含按未触及者不参与且 Unmoved 定义。",
+      "en": "The same Flow X X and Web X X; footprints are Nat → X → Bool, with containment stating nonparticipation and Unmoved for untouched relata."
+    },
+    {
+      "zh": "构造与最少性给定 DecidesIdle，范围是每步每个关系项；并非只有有限段。",
+      "en": "Construction and leastness take DecidesIdle at every step and relatum, not only a finite stretch."
+    },
+    {
+      "zh": "least_exists_iff 与 decidesIdle_iff 另要求 [DecidableEq X]；正向构造不要求它。",
+      "en": "least_exists_iff and decidesIdle_iff additionally require [DecidableEq X]; the forward construction does not."
+    }
+  ],
+  "correspondence": {
+    "zh": "P88 将 P78/P78b 的给定足迹接到世界的闲置关系：先刻画关系怎样跨步不变，再由判定读出最小触及范围。不是从形式条件推出实际世界必然可判定。读法由 AI 提出，待 Ren；见整合文档 §109。",
+    "en": "P88 connects P78/P78b’s supplied footprint to idleness in the world: first state how relations remain unmoved across a step, then use the decision to read off the least touched region. The formal condition does not establish that actual worlds have this decision. The reading is AI-authored, pending Ren; see integration §109."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+  "aliases": [
+    "Becoming.Footprinted.DecidesIdle",
+    "Becoming.Footprinted.least",
+    "Becoming.Footprinted.least_contains",
+    "Becoming.Footprinted.least_touch_iff",
+    "Becoming.Footprinted.least_le",
+    "Becoming.Footprinted.least_joined",
+    "Becoming.Footprinted.least_precedes",
+    "Becoming.Footprinted.least_keeps",
+    "Becoming.Footprinted.least_exists_iff",
+    "Becoming.Footprinted.decidesIdle_iff",
+    "least containing footprint",
+    "最小包含足迹"
+  ],
+  "dependencies": [
+    {
+      "id": "order-of-exchanges-is-the-invariant",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用包含足迹及相连与偏序的单调性。",
+        "en": "Reuses containing footprints and monotonicity of joining and order."
+      },
+      "interface": {
+        "output": {
+          "zh": "Footprinted.Contains、Joined.mono、Precedes.mono 与 sorts_iff。",
+          "en": "Footprinted.Contains, Joined.mono, Precedes.mono and sorts_iff."
+        },
+        "input": {
+          "zh": "最小足迹的包含与次序包含。",
+          "en": "Containment and order inclusion for the least footprint."
+        },
+        "conditions": {
+          "zh": "给定闲置判定；逆刻画另需相等可判定。",
+          "en": "A supplied idleness decision; the converse additionally needs decidable equality."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "normal-forms-need-decided-apartness",
+      "detail": {
+        "zh": "最小相连关系可作正规形输入；仍需另给有限段内不相连判定。",
+        "en": "The least joining relation can feed normalization; the finite-stretch apartness decision must still be supplied."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "detail": {
+        "zh": "没有从任意世界推出闲置可判定，也没有无此判定的最小布尔足迹构造；必要性是带 DecidableEq 的等价，未给不可判定闲置的具体世界。最小性相对于既有布尔足迹与 Contains；不消除 Reorders 给定的两侧，也不推出伦理排序。",
+        "en": "Idleness is not derived decidable for every world, and no least Boolean footprint is constructed without that decision. Necessity is the equivalence under DecidableEq, not a concrete undecidable-idleness world. Leastness is relative to the existing Boolean footprint and Contains definitions; it does not eliminate the supplied sides of Reorders or give an ethical ranking."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "没有从任意世界推出闲置可判定，也没有无此判定的最小布尔足迹构造；必要性是带 DecidableEq 的等价，未给不可判定闲置的具体世界。最小性相对于既有布尔足迹与 Contains；不消除 Reorders 给定的两侧，也不推出伦理排序。",
+    "en": "Idleness is not derived decidable for every world, and no least Boolean footprint is constructed without that decision. Necessity is the equivalence under DecidableEq, not a concrete undecidable-idleness world. Leastness is relative to the existing Boolean footprint and Contains definitions; it does not eliminate the supplied sides of Reorders or give an ethical ranking."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T091820.375259Z）：Becoming.OrderNormal 的 101 项定理全部空依赖，其中含 Footprinted.least_contains、Footprinted.least_touch_iff、Footprinted.least_le、Footprinted.least_joined、Footprinted.least_precedes、Footprinted.least_keeps、Footprinted.least_exists_iff与 Footprinted.decidesIdle_iff；同一回执覆盖包内 74 个模块（含只作导入的根模块与桥接），共 4328 项定理／6131 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091907.838571Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 76 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §109；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T091820.375259Z): the 101 theorems of Becoming.OrderNormal all have empty axiom reports, among them Footprinted.least_contains, Footprinted.least_touch_iff, Footprinted.least_le, Footprinted.least_joined, Footprinted.least_precedes, Footprinted.least_keeps, Footprinted.least_exists_iff and Footprinted.decidesIdle_iff. The same receipt covers the package's 74 modules (including the import-only root and the bridge) with 4328 theorems/6131 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091907.838571Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 76 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §109 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "role": "proof",
+      "sha256": "add5486b691e1909d4f7faf8a55597e0eeabea9aad29917bc67f8326cc5c7343",
+      "declarations": [
+        "Becoming.bool_cases",
+        "Becoming.not_eq_true_iff",
+        "Becoming.not_eq_false_iff",
+        "Becoming.Footprinted.DecidesIdle",
+        "Becoming.Footprinted.least",
+        "Becoming.Footprinted.least_contains",
+        "Becoming.Footprinted.least_touch_iff",
+        "Becoming.Footprinted.least_le",
+        "Becoming.Footprinted.least_joined",
+        "Becoming.Footprinted.least_precedes",
+        "Becoming.Footprinted.least_keeps",
+        "Becoming.Footprinted.least_exists_iff",
+        "Becoming.Footprinted.inList",
+        "Becoming.Footprinted.inList_iff",
+        "Becoming.Footprinted.decidesIdle_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "role": "proof",
+      "sha256": "1da2ff7f6f894440e86e022906d397d348ad63257c14ad9fd4e75b2025642784",
+      "declarations": [
+        "Becoming.Footprinted",
+        "Becoming.Footprinted.Contains",
+        "Becoming.Web.Unmoved",
+        "Becoming.Footprinted.Joined.mono",
+        "Becoming.Footprinted.Precedes.mono",
+        "Becoming.Footprinted.Keeps",
+        "Becoming.Footprinted.sorts_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "21f0006406e72b89d94d3ddc56a0cebbaf540db6e81643cd16d2a28c47de0c01",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3f6f3378dabe69206397eb9c9c975b2469c356c49d2b3dd5c6533f4bf658e731",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "c6b515f116212d40625585581f2fb65e1282f77ba2425ca08a3499aaa64ba545",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p88-landing/provenance.json",
+      "role": "provenance",
+      "sha256": "def2e1951ad2c3e548043690b2da917c3bc81e91e2ec1379db68bf7f90e1fd89",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p88-landing/evidence/TASK.md",
+      "role": "provenance",
+      "sha256": "cbfa680e3e97999dcbc863a1296b5418a2e481e6a0bf0474f5752d831134005f",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.OrderNormal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Order",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "具体不可判定闲置的边界世界；非布尔足迹与连续时间对应；本次不开始这些研究。",
+    "en": "A concrete boundary world with undecidable idleness, non-Boolean footprints and continuous-time correspondence; no such new research begins in this integration."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13：接管时保存并整合 Claude P88 既有草稿；原字节与出处保留，不新增证明；见整合文档 §109。",
+      "en": "2026-10-13: preserved and integrated the existing Claude P88 draft during takeover; original bytes and provenance retained, no proof added; see integration §109."
+    }
+  ]
+}

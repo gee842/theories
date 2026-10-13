@@ -47,10 +47,10 @@ import check as audit_support  # noqa: E402
 FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 # The package, in layer order: the four core layers and their root, then the bridge.
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
-        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
+        "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
         "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
-        "Becoming.Identity", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
+        "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
         "Becoming.Seeking", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
         "Becoming.Premises", "Becoming.Sampling", "Becoming.Tower",
@@ -59,7 +59,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Regions",
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
-        "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feedback",
+        "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
         "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Counterfactual", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
@@ -247,6 +247,19 @@ SCOPE = (
     "formations give, the pool is fed at every step, and each source participates and is active "
     "at its own step only. Continuing to be fed needs no source formation to recur. This advances "
     "continuing-self-fed-from-beyond and is not a separate result. "
+    "OrderNormal: For a symmetric joining relation and a finite stretch of naturally named "
+    "exchanges, arrangements are reachable exactly where they orient joined pairs alike. Decided "
+    "apartness for distinct exchanges gives a lexicographically least, idempotent normal form; "
+    "reachability is agreement of forms, and a natural-number-valued complete invariant compared "
+    "on the finite stretch needs exactly that decision. Every reordering with split sides "
+    "preserves activity and standing census existence both ways; arbitrary commutation preserves "
+    "it forward. Decided idleness at every step and relatum gives the least containing footprint, "
+    "whose joining and order are contained in every containing footprint’s. With decidable "
+    "equality of relata, existence of a least Boolean containing footprint is equivalent to "
+    "decided idleness. The normal form depends on names and a finite stretch; no unnamed, "
+    "Foata-layer or unbounded form is supplied. No decision is derived for actual worlds and no "
+    "concrete undecidable-idleness world is given. The sides of reordering remain supplied; "
+    "continuous-time correspondence remains open. The readings are the AI’s, pending Ren. "
     "Attraction: for every determined law, with no premise, a configuration is drawn into an absorbing "
     "region exactly where it does not return, and what is drawn in never comes back; what can be had n "
     "steps on is absorbing and every possibility lost by step n is drawn into it; of two merged "
@@ -363,6 +376,16 @@ SCOPE = (
     "one from the first, and within a change bound change does not recur, while a step after "
     "which nothing changes, for every count with a change bound from the first step in which nothing "
     "joins an empty queue, would give the limited principle of omniscience. "
+    "Persistence: for any holding predicate, keeping its names fixes classes of formations "
+    "holding throughout; a held census instantiates both continuation recurrence laws with their "
+    "separate no-split, no-merge, boundedness and decidability hypotheses. A world under "
+    "re-identification balances exactly where its one-to-one continuation lies within "
+    "conservation, with no additional hypothesis; in a balanced world conservation is equality of "
+    "standing after the step and agrees with exchange likeness. With decidable equality, "
+    "identity, arising and ceasing fixed by all balanced re-identifications have exact "
+    "conservation criteria. Distinct standings fix classes. Hibernation, Dormancy, Seed, Sleeper, "
+    "Shuttle and Lineage separate the holding readings, show the mixed census failure and bound "
+    "the identity claim. "
     "Identity: re-identifying formations one to one at each step leaves every step's levels, "
     "activity, dependences and drawing unchanged; a renaming preserves the readings that follow "
     "a formation, and every re-identification preserves support, keeping and breaking, the class "
@@ -1074,6 +1097,14 @@ SCOPE = (
     "every comparison where a formation's feeding closure is the whole, while in the clearer's "
     "web the clearer's part retains within its closure and under the axiom loses the dweller. "
     "No ethical premise is used; the axiom is a hypothesis of the comparisons only. "
+    "Feeding: possible carrying of a positive gift is characterized by positive standing "
+    "throughout the stretch; same-step feeding is zero-delay feeding across steps; the least "
+    "closure under feeding across steps contains the old feeding closure, strictly in Provision, "
+    "and nothing beyond it gives to a carried condition a member requires; local balance "
+    "characterizes meeting needs across a step and stretch, consumption beyond the initial level "
+    "exhibits a supported feeder, and withholding a giving-only part preserves a need exactly "
+    "within its cumulative margin; Redundant admits either feeder alone but withholding both with "
+    "the rest fixed leaves no balancing path. No ethical premise is used. "
     "Feedback: a region is closed under a relation when whatever a member bears it to is a member, "
     "and a formation's closure under it, what lies in every closed region holding it, is reflexive "
     "and transitive, grows with the relation and is symmetric under a symmetric one; the feeding "

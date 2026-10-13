@@ -1,0 +1,10 @@
+# P88: the order of exchanges completed — normal form, census, least footprint
+
+Read `/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/AGENT-COMMON.md` first and follow it. Your scratch directory is `/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/`.
+
+`Becoming.Order` (P78 + P78b, verified, not yet on main) is at `/Users/ren/theories/_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p78-landing/lean/Becoming/Order.lean`; copy it into your tree (`tree/Becoming/Order.lean`) and do not change it. Read its docstring: stuttering, commutation, `Footprinted`, `Joined`, `Precedes` (a strict partial order), `reorder_precedes`, `sorts_iff`, `converse` (Mazurkiewicz by bubble sort), `reorder_premises`, `Reorders.counts`, `World.withoutIdle`. Its records' "not shown" items are what this task closes:
+1. **A normal form.** Within a finite stretch, give a canonical representative of the reorderings reached by commuting unjoined exchanges (a Foata normal form, or a lexicographic normal form if that is cleaner): prove that two arrangements are reachable from each other exactly when they have the same normal form, given the footprint and with `Joined` decided on the stretch (say exactly what decision is needed and why; if it cannot be done without it, prove the boundary).
+2. **The census along reordering.** `Reorders.counts` keeps the counts of arising and ceasing. Prove whether a census (`Web.StandingCensus` / `Counted`, as in the core) carries along unjoined commutation (and along `withoutIdle` it already does), or give a witness that it does not.
+3. **The least footprint.** Where being moved (`Web.Unmoved` failing) and taking part are decided at each step, construct the least containing footprint and prove it least; prove that `Precedes` under it is contained in `Precedes` under every containing footprint. Where they are not decided, state the boundary.
+
+New core module importing `Becoming.Order` (suggested name `Becoming.OrderNormal`, or a better precise name). Report as AGENT-COMMON.md says.

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "preserved-evidence-draft",
+  "preserved_date": "2026-10-13",
+  "original_owner": "Current math core [1c3084] Claude subagent",
+  "workboard_item": "P88",
+  "status": "not-landed-not-accepted",
+  "checks_run_during_preservation": false,
+  "files": [
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/tree/Becoming/OrderNormal.lean",
+      "preserved_path": "lean/Becoming/OrderNormal.lean",
+      "sha256": "add5486b691e1909d4f7faf8a55597e0eeabea9aad29917bc67f8326cc5c7343",
+      "bytes": 88933
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/TASK.md",
+      "preserved_path": "evidence/TASK.md",
+      "sha256": "cbfa680e3e97999dcbc863a1296b5418a2e481e6a0bf0474f5752d831134005f",
+      "bytes": 2152
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/AGENT-COMMON.md",
+      "preserved_path": "evidence/AGENT-COMMON.md",
+      "sha256": "0720f32e4a7800995f3d6a209c7d5a5b3503df639a1ab33dbae96e24791ea8b4",
+      "bytes": 4847
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/mk.sh",
+      "preserved_path": "evidence/mk.sh",
+      "sha256": "0ffd48bade15a917105bf0cc3993915e3b4c88d9720b934dc21e554a84bc1609",
+      "bytes": 1413
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/tree/.ax_Becoming_OrderNormal.lean",
+      "preserved_path": "evidence/axiom-audit-OrderNormal.lean",
+      "sha256": "f4fd8365d9c8a91e1e50f2aa10649d2c948005a90e5970289821538c00de9f59",
+      "bytes": 504
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/mk_final.log",
+      "preserved_path": "evidence/mk_final.log",
+      "sha256": "91bbdf71303ec2b8dcdd88669e4683bb7f8e09f6bb470b7824e882519e9eddc0",
+      "bytes": 34
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/order_build.log",
+      "preserved_path": "evidence/order_build.log",
+      "sha256": "6504a52a689e8a39ec5f9855f79ab15e66aa7233cce5462b2afa885410dbf8ea",
+      "bytes": 118
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/tools/fullnames.py",
+      "preserved_path": "evidence/fullnames.py",
+      "sha256": "e12545205325e8204cb7c8c6c63672e770f9a1a96dce772dc1b2c3a130ff12a5",
+      "bytes": 853
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/probe/Probe2.lean",
+      "preserved_path": "evidence/probes/Probe2.lean",
+      "sha256": "e37d48d3e4fefe2bd1e6983ac70d03f147a4fbc7c15678121e41c8083826bf73",
+      "bytes": 295
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/probe/Probe3.lean",
+      "preserved_path": "evidence/probes/Probe3.lean",
+      "sha256": "df4c8832b53b49e284d2ab3734653bb760dc20de366dae5b564ef336fcca3dd4",
+      "bytes": 122
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p88/probe/Probe.lean",
+      "preserved_path": "evidence/probes/Probe.lean",
+      "sha256": "8d66a32b95535123f136d91dbab59e1339c60f1e45e6e0db3a34a6f0ad0dc4db",
+      "bytes": 922
+    }
+  ]
+}

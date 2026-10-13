@@ -125,8 +125,8 @@
     "en": "Discrete steps; the unit refines and never coarsens, amounts being rationals by refinement, with neither real amounts nor continuous time; counting the refinement is a reading (Ren's direction, the author's elaboration pending Ren), not derived; the flow with the refinement counted has Option formations and is not a world of one kind of relatum, so rest follows from the spine's theorem through the world read from T on, not by applying it to a counted world directly; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; ‘the case of 0’ means zero premises, as Ren confirmed; no premise added means none added to the spine's, whose dissipation (the least loss per exchange, which Ren reads as entropy) stays its premise; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.Resolution 的 261 项声明全部空依赖，其中本结果的 29 项（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 71 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T091033.730173Z 通过。尚无独立审查；作者反审见整合文档 §59.4。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 261 declarations of Becoming.Resolution all have empty axiom reports, 29 of them this result's (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 71 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T091033.730173Z passed. Not yet independently reviewed; the author's counterreview is in section 59.4 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T091820.375259Z）：Becoming.Resolution 的 261 项声明全部空依赖，其中本结果的 29 项（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 74 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T091907.838571Z 通过。尚无独立审查；作者反审见整合文档 §59.4。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T091820.375259Z): the 261 declarations of Becoming.Resolution all have empty axiom reports, 29 of them this result's (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 74 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T091907.838571Z passed. Not yet independently reviewed; the author's counterreview is in section 59.4 of the integration note."
   },
   "references": [
     {
@@ -222,25 +222,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f",
+      "sha256": "21f0006406e72b89d94d3ddc56a0cebbaf540db6e81643cd16d2a28c47de0c01",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f",
+      "sha256": "3f6f3378dabe69206397eb9c9c975b2469c356c49d2b3dd5c6533f4bf658e731",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "cda6a5b3cdc705cd5b2a797df5fb305e3882bff0c1d6f1f0933aecd3bf365097",
+      "sha256": "0df04c773928618f383a686a4d8ceeebef185247cb524213064e58dca79b5fe3",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6",
+      "sha256": "c6b515f116212d40625585581f2fb65e1282f77ba2425ca08a3499aaa64ba545",
       "declarations": []
     },
     {
@@ -378,6 +378,10 @@
     {
       "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
       "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
     }
   ]
 }

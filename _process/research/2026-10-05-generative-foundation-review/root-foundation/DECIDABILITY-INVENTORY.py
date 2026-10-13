@@ -126,6 +126,7 @@ CONSTRUCTIONS = {
     'Identification.knowing': 'refute', 'Identification.firstFit': 'first',
     'listOnce': 'once', 'keepFresh': 'once',
     'adjoin': 'once', 'mixIn': 'mix',
+    'transpose': 'swap', 'Reidentify.exchangeAfter': 'swap', 'Footprinted.inList': 'member',
 }
 MENT_REASON = {
     'count': '计数：计数存在恰当所计数者已定（`counts_iff_decided`）/ counts: a count exists exactly where what it counts '
@@ -145,6 +146,10 @@ MENT_REASON = {
     'once': '不重复的列表：成员关系已定 / a list without repetition: membership decided',
     'mix': '逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells '
            'conditions apart',
+    'swap': '交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either '
+            'of the exchanged values',
+    'member': '列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each '
+              'listed member',
 }
 LABEL = {
     'count': '计数 / counts', 'coarse': '较粗的读法 / coarser reading', 'raise': '抬高一个条件 / one condition raised',
@@ -153,6 +158,7 @@ LABEL = {
     'other': '另一个值 / another value', 'first': '首个符合者 / first fitting member', 'find': '找出 / finds', 'build': '造出列表 / builds a list',
     'same': '分辨相同 / tells same from different', 'split': '分情形 / splits on a case',
     'indicate': '造出指示 / builds an indicator', 'mix': '逐个条件换入 / mixed in condition by condition',
+    'swap': '交换两个值 / exchanging two values', 'member': '列表成员判定 / list membership',
 }
 # Why a proof uses decidedness its statement does not mention. Every such theorem is classified here (asserted).
 PROOF_REASON = {
@@ -171,7 +177,7 @@ PROOF_REASON = {
 }
 PROOF_KIND = {
     **{n: 'find' for n in [
-        'Web.arising_of_ceasing_listing',
+        'Web.arising_of_ceasing_listing', 'Web.persisting_census',
         'Web.arising_recurs_iff', 'Web.unceasing_iff', 'Web.unceasing_iff_covering', 'coming_recurs_iff',
         'World.arising_iff_ceasing_of_decidable', 'Flow.More.unceasingFrom', 'Flow.More.unceasing_reidentified',
         'Flow.More.unceasing_reidentified_covering', 'Web.Census.arisingFrom_of_ceasingFrom',
@@ -193,6 +199,8 @@ PROOF_KIND = {
         'World.counted_of_ever', 'Flow.sample_ceasesToStand_iff', 'Flow.sample_changes_iff',
         'Flow.sample_comesToStand_iff']},
     **{n: 'same' for n in [
+        'World.fixed_iff', 'World.arises_fixed_iff', 'World.ceases_fixed_iff',
+        'Footprinted.least_exists_iff', 'Footprinted.decidesIdle_iff',
         'Identification.bounded_induction', 'Identification.fits_of_unrefuted',
         'Identification.unrefuted_persists',
         'Diagonal.alike_of_complete', 'Diagonal.complete_iff_alike',

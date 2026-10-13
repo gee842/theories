@@ -16,6 +16,7 @@ import Becoming.Histories
 import Becoming.Branching
 import Becoming.Listing
 import Becoming.Order
+import Becoming.OrderNormal
 import Becoming.OneStep
 import Becoming.Weighted
 import Becoming.Transmission
@@ -27,6 +28,7 @@ import Becoming.Flow
 import Becoming.Change
 import Becoming.Population
 import Becoming.Identity
+import Becoming.Persistence
 import Becoming.Wholes
 import Becoming.Dissipation
 import Becoming.Locality
@@ -56,6 +58,7 @@ import Becoming.Descent
 import Becoming.Standpoints
 import Becoming.Significance
 import Becoming.Interdependence
+import Becoming.Feeding
 import Becoming.Feedback
 import Becoming.Boundaries
 import Becoming.Relevance
@@ -162,6 +165,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   pending Ren.
 * `Becoming.Listing` (L3): What listing once commits to (P77). A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`); its number of members is unique and exists exactly then. Refutation laws need no such premise. Fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws without tracking occurrences across steps.
 * `Becoming.Order` (L3): The order of change (P78). Stuttering keeps the premises, stretch totals and recurrence, while rates and reserves counted in steps depend on the reading. For a given footprint containing the exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, `Footprinted.converse`). Removing idle steps keeps premises, censuses and totals.
+* `Becoming.OrderNormal` (L3): the order of exchanges completed (P88). For a symmetric joining relation and a finite stretch of naturally named exchanges, arrangements are reachable exactly where they orient joined pairs alike. Decided apartness for distinct exchanges gives a lexicographically least, idempotent normal form; reachability is agreement of forms, and a natural-number-valued complete invariant compared on the finite stretch needs exactly that decision. Every reordering with split sides preserves activity and standing census existence both ways; arbitrary commutation preserves it forward. Decided idleness at every step and relatum gives the least containing footprint, whose joining and order are contained in every containing footprint’s. With decidable equality of relata, existence of a least Boolean containing footprint is equivalent to decided idleness. The normal form depends on names and a finite stretch; no unnamed, Foata-layer or unbounded form is supplied. No decision is derived for actual worlds and no concrete undecidable-idleness world is given. The sides of reordering remain supplied; continuous-time correspondence remains open. The readings are the AI’s, pending Ren.
 * `Becoming.OneStep` (L3): All laws of one step and of families chosen step by step (P79). A pattern of one step is realized by a world exactly where it obeys the law of every step and the law of each named local condition (`OneStep.every_iff`, `OneStep.laws`); nonzero taking needs a taker and nonzero giving a giver. Givers, capacity and activity are characterized exactly. Runs on one family add chaining; for families chosen step by step, running down adds continuity counted at positive levels (`OneStep.step_runsDown_iff`), strictly weaker than tracking positions.
 * `Becoming.Weighted` (L3): Weighted histories and their losses (P82). Given weights with their laws and finite lists of moves and configurations, the sum of histories over a finite horizon is exactly stepwise transfer (`Weights.sum_courses`). Possibility is the core's trace relation, and counting preserves possibility. For a description with representatives, exact preservation at every horizon is exactly one-step lumpability (`Weights.lumped_iff`); truncation, cancellation, unkept memory and loops have explicit boundary witnesses.
 * `Becoming.Transmission` (L3): The exact conditions and boundary of transmission (P84). Transmission is exactly inheritance with a need bound (`Flow.transmitsWithin_iff`); where no dependence was held before, inheritance is the forming law, while the general forming/holding split uses decidedness. Dropping one dependence of a giver keeps the other premises and breaks binding transmission (`World.drop_but`). Under the named finite, balance, dissipation, embodiment and support conditions, a reading of drawing together with drawing being depending derives transmission (`World.transmitting_of_drawn`).
@@ -227,6 +231,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   two. The census balance holds under a continuation in two halves: without splits,
   ceasing recurring needs arising recurring; without merges, under a bounded census,
   arising recurring needs ceasing recurring.
+* `Becoming.Persistence` (L3): continuity across dormancy and identity read from relations
+  (P87). Keeping the names of what holds fixes the class of a formation holding throughout,
+  strictly beyond activity and tenure continuity; where nothing holds it leaves the join open.
+  A re-identification balances exactly where its continuation lies within conservation. In a
+  balanced world, conservation identifies equal standings after the step; distinct standings
+  fix identity, classes and arisings, while Lineage and Hibernation leave alternatives. Census
+  laws are instantiated with both ends read through holding. The choice of holding and of
+  conservation as the continuation remains a reading; classes under splits or merges,
+  undermining under conservation and a mixed-reading census law remain open.
 * `Becoming.Wholes` (L3): a whole is active exactly while some part is, a coincidence of
   activity rather than constitution. A persisting whole of brief parts, or of parts that
   end with finitely many active at once, persists only through their generation: parts
@@ -574,6 +587,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   bounded by a region is the axiom's wherever the losses lie within the region, and so on
   every comparison where a formation's feeding closure is the whole, while in the clearer's
   web the two part. The reading is the AI's, pending Ren.
+* `Becoming.Feeding` (L4): feeding across steps (P86). Possible carrying through a condition
+  extends the feeding closure; local balance characterizes meeting needs, redundant feeders
+  exhibit that losing one need not return, and withholding both can leave no balancing path.
+  The module distinguishes support from activity and possible from actual carrying.
 * `Becoming.Feedback` (L4): what feedback registers and what a part reaches, with no premise
   beyond the representation. Closures under relations give five levels: a formation's feeding
   closure lies within its influence closure, what can affect it, and the influence closure and

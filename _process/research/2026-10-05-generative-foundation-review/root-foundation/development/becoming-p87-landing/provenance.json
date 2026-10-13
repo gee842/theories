@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "kind": "preserved-evidence-draft",
+  "preserved_date": "2026-10-13",
+  "original_owner": "Current math core [1c3084] Claude subagent",
+  "workboard_item": "P87",
+  "status": "not-landed-not-accepted",
+  "checks_run_during_preservation": false,
+  "files": [
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/tree/Becoming/Persistence.lean",
+      "preserved_path": "lean/Becoming/Persistence.lean",
+      "sha256": "45071c02d848d9b6f7a12c7d7bdd3b627e6958f0b363d3e90fa53b5bbfcb7315",
+      "bytes": 66367
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/TASK.md",
+      "preserved_path": "evidence/TASK.md",
+      "sha256": "e70070bd8e2370bee6de2ffa849be6b87c570176438835055056ada2eef14060",
+      "bytes": 3069
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/AGENT-COMMON.md",
+      "preserved_path": "evidence/AGENT-COMMON.md",
+      "sha256": "0720f32e4a7800995f3d6a209c7d5a5b3503df639a1ab33dbae96e24791ea8b4",
+      "bytes": 4847
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/mk.sh",
+      "preserved_path": "evidence/mk.sh",
+      "sha256": "0ffd48bade15a917105bf0cc3993915e3b4c88d9720b934dc21e554a84bc1609",
+      "bytes": 1413
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/tree/.ax_Becoming_Persistence.lean",
+      "preserved_path": "evidence/axiom-audit-Persistence.lean",
+      "sha256": "2d28cc9e79567654e454864b42d8b5e920d88b912b0c56e456ba75fa63665365",
+      "bytes": 504
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/test/Doc.lean",
+      "preserved_path": "evidence/probes/Doc.lean",
+      "sha256": "f706de3979aeb760421d425496265ba42f8832f9e6b47acece020ffb84a6ae42",
+      "bytes": 1588
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/test/T2.lean",
+      "preserved_path": "evidence/probes/T2.lean",
+      "sha256": "e2319b608e19193de0bd305fbf16a3440178a2222712eafc75428b2c52d921ce",
+      "bytes": 664
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/test/Root.lean",
+      "preserved_path": "evidence/probes/Root.lean",
+      "sha256": "e44a8f5e3a96c84f65d7900887d185c8de21065d0550581c7c19cf410c2300ea",
+      "bytes": 84
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/test/A.lean",
+      "preserved_path": "evidence/probes/A.lean",
+      "sha256": "eacfc40defc459224c0ce866d55110c503b7973d64364b784a5749ed7864d1fa",
+      "bytes": 344
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p87/test/T.lean",
+      "preserved_path": "evidence/probes/T.lean",
+      "sha256": "e39ff866750c444b06f723bff8b4541b1a1fe6e7ac3ffa117dc12ec2237b7fc6",
+      "bytes": 665
+    }
+  ]
+}

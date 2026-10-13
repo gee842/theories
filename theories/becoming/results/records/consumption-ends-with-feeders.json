@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-10T13:58:00+00:00",
+  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
   "claim": {
-    "zh": "设流平衡（Flow.Balances），只有活跃者给予（Flow.Acting），活动需要支持（Web.Dependent）。若形成 g 从第 T 步起在其活跃的每一步都在场并从条件 c 取用，而在这些步没有被支持者向 c 给予，则 g 从第 T 步起至多连续活跃 c 在第 T 步的水平那么多步（Flow.Balances.unfed_consumption_ends，由 Flow.excess_bounded 推出），所以并非从第 T 步起每步都活跃（Flow.Balances.unfed_consumption_stops）。若 g 活跃时需要 c，而从第 T 步起供给其延续的都不被支持，则没有被支持者向 c 给予（Flow.unfed_of_feeders_unsupported），所以同一界成立（Flow.Balances.consumption_ends_with_feeders）。见证 Overshoot：两个形成各自以所需一依存于以自身命名的条件，两个条件起初都立于一；第 0 步 true 从两个条件各取一个单位并向 false 的条件给予一个，false 从自己的条件取一个并向 true 的条件给予一个，所以任一个的供给闭包都是整体（Overshoot.closure_whole）。流平衡，只有活跃者给予，只有活跃者取用、且只从其所汲取者取用，活动需要支持；第 0 步 true 在其所需的唯一条件上更新（Web.RenewingOver），在第 1 步仍被支持，而它的汲取侵蚀 false 的依存（Web.UnderminingAt），false 在第 0 步供给 true 的条件；false 从第 1 步起不被支持，true 从第 1 步起至多连续活跃一步，从第 2 步起没有任何被支持者（Overshoot.ends_through_feeder）。依存相同而各自只从自己的条件取用时（Overshoot.steadyFlow、Overshoot.steadyWeb），流平衡，两者每步都活跃且被支持（Overshoot.steady_continues）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Let the flow balance (Flow.Balances), with only active formations giving (Flow.Acting) and activity needing support (Web.Dependent). If a formation g is present and takes from a condition c at every step from T at which it is active, while nothing supported gives to c at those steps, then g is active for at most as many consecutive steps from T as the level of c at T (Flow.Balances.unfed_consumption_ends, derived from Flow.excess_bounded), so it is not active at every step from T (Flow.Balances.unfed_consumption_stops). If g requires c while active and everything feeding its continuation from T on is unsupported, nothing supported gives to c (Flow.unfed_of_feeders_unsupported), so the same bound holds (Flow.Balances.consumption_ends_with_feeders). The witness Overshoot: each of two formations depends at need one on the condition named by it, both conditions standing at one at the start; at step 0 true takes one unit from each condition and gives one to false's, and false takes one from its own and gives one to true's, so the feeding closure of either is the whole (Overshoot.closure_whole). The flow balances, only active formations give, only active formations take and only from what they draw on, and activity needs support; at step 0 true renews over the one condition it requires (Web.RenewingOver) and is still supported at step 1, while its draw undermines false's dependence (Web.UnderminingAt), and false feeds true's condition at step 0; false is unsupported from step 1 on, true is active for at most one consecutive step from step 1, and from step 2 on nothing is supported (Overshoot.ends_through_feeder). With the same dependences, each taking only from its own condition (Overshoot.steadyFlow, Overshoot.steadyWeb), the flow balances and both are active and supported at every step (Overshoot.steady_continues). No ethical premise and no Lean axiom is used."
+    "zh": "设流平衡（Flow.Balances），只有活跃者给予（Flow.Acting），活动需要支持（Web.Dependent）。若形成 g 从第 T 步起在其活跃的每一步都在场并从条件 c 取用，而在这些步没有被支持者向 c 给予，则 g 从第 T 步起至多连续活跃 c 在第 T 步的水平那么多步（Flow.Balances.unfed_consumption_ends，由 Flow.excess_bounded 推出），所以并非从第 T 步起每步都活跃（Flow.Balances.unfed_consumption_stops）。若 g 活跃时需要 c，而从第 T 步起供给其延续的都不被支持，则没有被支持者向 c 给予（Flow.unfed_of_feeders_unsupported），所以同一界成立（Flow.Balances.consumption_ends_with_feeders）。见证 Overshoot：两个形成各自以所需一依存于以自身命名的条件，两个条件起初都立于一；第 0 步 true 从两个条件各取一个单位并向 false 的条件给予一个，false 从自己的条件取一个并向 true 的条件给予一个，所以任一个的供给闭包都是整体（Overshoot.closure_whole）。流平衡，只有活跃者给予，只有活跃者取用、且只从其所汲取者取用，活动需要支持；第 0 步 true 在其所需的唯一条件上更新（Web.RenewingOver），在第 1 步仍被支持，而它的汲取侵蚀 false 的依存（Web.UnderminingAt），false 在第 0 步供给 true 的条件；false 从第 1 步起不被支持，true 从第 1 步起至多连续活跃一步，从第 2 步起没有任何被支持者（Overshoot.ends_through_feeder）。依存相同而各自只从自己的条件取用时（Overshoot.steadyFlow、Overshoot.steadyWeb），流平衡，两者每步都活跃且被支持（Overshoot.steady_continues）。不用伦理前提，也不用 Lean 公理。 P86 在局部平衡下给出需求满足的精确条件：一步后满足 m 恰当 m+所取不超过原水平+所给（Flow.meets_after_iff_at），逐步和整段形式为 Flow.stays_met_iff_at、Flow.meets_over_iff_at；不是支持充分推出活动。给予者被支持且没有被支持者给予时，段末满足需要恰当初始存量覆盖累计取用与需要（Flow.unfed_meets_iff_at）。需要并取用的步数超过初始水平时，某一步存在被支持的供给者（Flow.fed_beyond_level_at）。扣留在该条件只给不取的部分、其余交换固定时，满足需要恰当实际水平覆盖需要与该部分此前累计给予（Flow.meets_without_iff_at）。Redundant 中任一供给者足够；两者都没有的参照流在已有界内停止活动（Redundant.either_suffices、Redundant.neither_ends）。同一个实际流扣留任一个仍有容许消费者的水平路径；两者都扣留而其余取用固定时没有平衡路径（Redundant.withheld_either、Redundant.withheld_both）。",
+    "en": "Let the flow balance (Flow.Balances), with only active formations giving (Flow.Acting) and activity needing support (Web.Dependent). If a formation g is present and takes from a condition c at every step from T at which it is active, while nothing supported gives to c at those steps, then g is active for at most as many consecutive steps from T as the level of c at T (Flow.Balances.unfed_consumption_ends, derived from Flow.excess_bounded), so it is not active at every step from T (Flow.Balances.unfed_consumption_stops). If g requires c while active and everything feeding its continuation from T on is unsupported, nothing supported gives to c (Flow.unfed_of_feeders_unsupported), so the same bound holds (Flow.Balances.consumption_ends_with_feeders). The witness Overshoot: each of two formations depends at need one on the condition named by it, both conditions standing at one at the start; at step 0 true takes one unit from each condition and gives one to false's, and false takes one from its own and gives one to true's, so the feeding closure of either is the whole (Overshoot.closure_whole). The flow balances, only active formations give, only active formations take and only from what they draw on, and activity needs support; at step 0 true renews over the one condition it requires (Web.RenewingOver) and is still supported at step 1, while its draw undermines false's dependence (Web.UnderminingAt), and false feeds true's condition at step 0; false is unsupported from step 1 on, true is active for at most one consecutive step from step 1, and from step 2 on nothing is supported (Overshoot.ends_through_feeder). With the same dependences, each taking only from its own condition (Overshoot.steadyFlow, Overshoot.steadyWeb), the flow balances and both are active and supported at every step (Overshoot.steady_continues). No ethical premise and no Lean axiom is used. P86 gives exact conditions for meeting needs under local balance: meeting m after a step is equivalent to m+taken not exceeding level+given (Flow.meets_after_iff_at), with every-step and stretch forms (Flow.stays_met_iff_at, Flow.meets_over_iff_at); this does not make support sufficient for activity. When givers are supported and none supported gives, meeting a need at the stretch’s end is equivalent to the initial stock covering cumulative taking plus need (Flow.unfed_meets_iff_at). Requiring and taking for more steps than the initial level exhibits a supported feeder at one of them (Flow.fed_beyond_level_at). Withholding a part taking nothing from the condition while fixing the remaining exchange preserves the need exactly where the actual level covers the need plus that part’s cumulative giving (Flow.meets_without_iff_at). Either feeder suffices in Redundant; the reference flow with neither ends activity within the existing bound (Redundant.either_suffices, Redundant.neither_ends). Withholding either from the actual flow leaves an admitted level path; withholding both with remaining taking fixed leaves no balancing path (Redundant.withheld_either, Redundant.withheld_both)."
   },
   "hypotheses": [
     {
@@ -29,6 +29,10 @@
     {
       "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
       "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    },
+    {
+      "zh": "P86 的 meets_after/over/stays_met 只在所用条件与步上给平衡，m 为该式指定的固定所需；active_covered 另给实际活动、该步支持门控及实际依存。unfed_meets 与 fed_beyond_level 另给该段 GiversSupported；后者还给逐步需要及正取用。meets_without 给 WithheldLevels、局部平衡及所扣部分在该条件只给不取。",
+      "en": "P86 meets_after/over/stays_met supply balance only at the used condition and steps, with m the fixed need specified in that formula; active_covered separately supplies actual activity, support-gating at that step and actual dependence. unfed_meets and fed_beyond_level additionally supply GiversSupported over the stretch; the latter also supplies needing and positive taking at each step. meets_without supplies WithheldLevels, local balance and no taking by the withheld part at that condition."
     }
   ],
   "correspondence": {
@@ -43,7 +47,31 @@
     "Becoming.Flow.Balances.consumption_ends_with_feeders",
     "Becoming.Overshoot.closure_whole",
     "Becoming.Overshoot.ends_through_feeder",
-    "Becoming.Overshoot.steady_continues"
+    "Becoming.Overshoot.steady_continues",
+    "Becoming.Flow.meets_after_iff_at",
+    "Becoming.Flow.stays_met_iff_at",
+    "Becoming.Flow.meets_over_iff_at",
+    "Becoming.Flow.active_covered_at",
+    "Becoming.Flow.unfed_meets_iff_at",
+    "Becoming.Flow.fed_beyond_level_at",
+    "Becoming.Flow.meets_without_iff_at",
+    "Becoming.Redundant.Formation",
+    "Becoming.Redundant.unit",
+    "Becoming.Redundant.draw",
+    "Becoming.Redundant.stands",
+    "Becoming.Redundant.flow",
+    "Becoming.Redundant.web",
+    "Becoming.Redundant.balances",
+    "Becoming.Redundant.acting",
+    "Becoming.Redundant.taking",
+    "Becoming.Redundant.dependent",
+    "Becoming.Redundant.either_suffices",
+    "Becoming.Redundant.neither_ends",
+    "Becoming.Redundant.firstPart",
+    "Becoming.Redundant.secondPart",
+    "Becoming.Redundant.bothParts",
+    "Becoming.Redundant.withheld_either",
+    "Becoming.Redundant.withheld_both"
   ],
   "dependencies": [
     {
@@ -195,12 +223,12 @@
     }
   ],
   "limitations": {
-    "zh": "一般定理不说闭包之内的损失总会返回：供给者可以冗余，存量与时机决定终结何时到来；Overshoot 中只有一个供给者，存量为一；见证的活动由规定给出，见证表明它与平衡、支持与依存相容，终结的推出在一般定理中；返回在实际的流上、对照另一个参照流来表明，不是同一个流扣留一个部分；不含伦理谓词，不说中心应当做什么；把它读作 AI 所说的“constraint”是 AI 的读法，待 Ren。",
-    "en": "The general theorems do not say that a loss within the closure always returns: feeders may be redundant, and stock and timing decide when an ending arrives; in Overshoot there is one feeder and a stock of one; the witnesses' activity is stipulated and shown consistent with balance, support and dependence, the endings being derived in the general theorems; the return is shown on the actual flow against a separate reference flow, not by withholding a part of one flow; contains no ethical predicate and says nothing of what a center should do; reading it as the “constraint” the AI named is the AI's reading, pending Ren."
+    "zh": "损失不总返回：Redundant 明确给出任一供给者足够与存量的界。需求仍满足不推出实际活动继续；活动在见证中规定并与平衡、依存相容。Overshoot 仍比较两个流；P86 另加入同一流中的扣留比较，但两者都扣留而原取用固定时证明的是无平衡路径，不是给出了随之调整的活动。原储备终结界复用；跨步供给只刻画可能携带，实际来源未定。无伦理谓词与应当结论；“constraint”的读法仍属 AI，待 Ren。",
+    "en": "Loss does not always return: Redundant explicitly gives either feeder’s sufficiency and the stock bound. Meeting needs does not imply continued actual activity; witness activity is specified and shown consistent with balance and dependence. Overshoot still compares two flows; P86 adds withholding within one flow, but withholding both with the original taking fixed proves no balancing path, not a dynamically adjusted activity. Existing reserve-ending bounds are reused. Across-step feeding characterizes possible carrying only, leaving actual origin open. No ethical predicate or ought follows; the constraint reading remains the AI’s, pending Ren."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T090945.451917Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 71 个模块（含只作导入的根模块与桥接），共 4115 项定理／5850 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091033.730173Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 73 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T090945.451917Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 71 modules (including the import-only root and the bridge) with 4115 theorems/5850 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091033.730173Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 73 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed. This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T091820.375259Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 74 个模块（含只作导入的根模块与桥接），共 4328 项定理／6131 项声明审计，15 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091907.838571Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 76 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。 P86 实查补充：核心回执 20261013T091820.375259Z 核对 Becoming.Feeding 的 41 项定理与所有源声明，公理报告为空；外围 20261013T091907.838571Z 通过；研究 §107。历史原范围不变，整合文档尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T091820.375259Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 74 modules (including the import-only root and the bridge) with 4328 theorems/6131 declaration audits, and 15 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091907.838571Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 76 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed. This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports. P86 checked addition: core receipt 20261013T091820.375259Z checks Becoming.Feeding’s 41 theorems and all source declarations with empty axiom reports; periphery 20261013T091907.838571Z passes; study §107. Historical scope is retained; the integration text has no independent review yet."
   },
   "references": [
     {
@@ -279,22 +307,53 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "5c874f13162effe8b411bb2580ae4d26c89d7d05797f16121cdf3c49e741c52f"
+      "sha256": "21f0006406e72b89d94d3ddc56a0cebbaf540db6e81643cd16d2a28c47de0c01"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "bcbaac9d11d23ee402db463aa175a615c559053e6f0fca8a7eac286c7b81a21f"
+      "sha256": "3f6f3378dabe69206397eb9c9c975b2469c356c49d2b3dd5c6533f4bf658e731"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "706e0ec2e5dd14547ec62ae033df67fe43ef01d10a51bc7362685b371a21bfd6"
+      "sha256": "c6b515f116212d40625585581f2fb65e1282f77ba2425ca08a3499aaa64ba545"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
       "role": "provenance",
       "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feeding.lean",
+      "role": "proof",
+      "sha256": "44e0205a9896d41ae9f0ebe51a917388c5d50371e6dbe22b8634dcc28b811f47",
+      "declarations": [
+        "Becoming.Flow.meets_after_iff_at",
+        "Becoming.Flow.stays_met_iff_at",
+        "Becoming.Flow.meets_over_iff_at",
+        "Becoming.Flow.active_covered_at",
+        "Becoming.Flow.unfed_meets_iff_at",
+        "Becoming.Flow.fed_beyond_level_at",
+        "Becoming.Flow.meets_without_iff_at",
+        "Becoming.Redundant.Formation",
+        "Becoming.Redundant.unit",
+        "Becoming.Redundant.draw",
+        "Becoming.Redundant.stands",
+        "Becoming.Redundant.flow",
+        "Becoming.Redundant.web",
+        "Becoming.Redundant.balances",
+        "Becoming.Redundant.acting",
+        "Becoming.Redundant.taking",
+        "Becoming.Redundant.dependent",
+        "Becoming.Redundant.either_suffices",
+        "Becoming.Redundant.neither_ends",
+        "Becoming.Redundant.firstPart",
+        "Becoming.Redundant.secondPart",
+        "Becoming.Redundant.bothParts",
+        "Becoming.Redundant.withheld_either",
+        "Becoming.Redundant.withheld_both"
+      ]
     }
   ],
   "proof_bindings": [
@@ -339,11 +398,18 @@
       "sha256_pointer": "/source_sha256/Becoming.Standpoints",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feeding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feeding",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.unfed_consumption_ends_at、consumption_ends_with_feeders_at（P50），局部条件写在规律之内：只在所用的 n 步、在该条件上平衡（Flow.BalancesOn），给予者被支持（Flow.GiversSupported）；Flow.Balances.unfed_consumption_ends、Flow.Balances.consumption_ends_with_feeders是它们的推论；冗余供给者与储备之下的返回；经条件的延迟输送；整体之间选择的模型（群体、复制）；Ren 的判断：这是否读出“constraint”。",
-    "en": "The exact restatement for every world is this record's Flow.unfed_consumption_ends_at, consumption_ends_with_feeders_at (P50), the local condition inside the law: balance at the condition across the n steps used (Flow.BalancesOn) and its givers supported there (Flow.GiversSupported); Flow.Balances.unfed_consumption_ends, Flow.Balances.consumption_ends_with_feeders are their corollaries; return under redundant feeders and reserves; delayed conveyance through conditions; a model of selection between wholes (populations, replication); Ren's judgment whether this reads the “constraint”."
+    "zh": "冗余供给、储备覆盖与同一流扣留的精确界已由 P86 补入；其余取用或活动会回应的反事实、实际携带的来源关系、中心怎样识别跨步闭包仍未给出；整体之间选择的模型（群体、复制）；Ren 对“constraint”读法的判断。",
+    "en": "P86 adds exact boundaries for redundant giving, stock coverage and withholding within one flow; counterfactuals with responsive taking or activity, the origin relation for actual carrying, and a center’s recognition of the across-step closure remain open; a model of selection between wholes (populations, replication); Ren’s judgment of the constraint reading."
   },
   "history": [
     {
@@ -453,6 +519,14 @@
     {
       "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
       "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86：延伸同一记录，加入跨步供给或冗余与储备的精确条件；研究 §107。原 Claude 源字节保留，以当前核心与外围实查为证，不把保存草稿当作接受。",
+      "en": "2026-10-13 P86: extends this same record with feeding across steps or exact conditions for redundancy and reserves; study §107. Original Claude source bytes are preserved; acceptance rests on the current core and periphery checks, not preservation alone."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
     }
   ]
 }

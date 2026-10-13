@@ -6893,6 +6893,101 @@ Integration: 计划 P80；回答本章 §8“反馈与所及”中“他者有�
 **复用、产出与检查。** 复用 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md)、[derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md)；本节的确切增量与消费者接口由 [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md) 记录。当前 [Becoming.Succession](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean) 的 6 项定理由[合并回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z 覆盖；外围回执 20261013T091033.730173Z 通过。以上边界与给定条件保持，整合没有增加独立审查。
 
 
+## 107. 跨步供给、冗余与储备（P86）
+
+**范围与复用。** 按 Ren 的“move towards 100%”，复用 `feeding-closure` 的同一步供给与最小闭包、`consumption-ends-with-feeders` 的局部终结界、`laws-of-one-step` 的局部平衡、`reserve-defers-ending` 的储备界。新增量是在同一展开中把较早给予、条件的持续与较晚所需接起来，并给出需要仍被满足的精确条件；不重新证明已有储备终结界。`Becoming.Feeding` 只导入 `Interdependence`，属于 L4，但新增声明没有伦理谓词或规范前提。
+
+**携带的条件。** `Flow.CarriedTo W c s t` 要求 c 在从 s 到 t 之前的各步平衡，并从 s 之后到 t 始终立于正数；t≤s 时条件空成立。对于 s<t，存在一个跟随给予、不上升且不超过条件所立量的数量，在 t 仍为正，恰当原给予为正且条件在中间各步始终为正（`can_stand_iff`）。因此在正的给予与该段平衡之下，携带恰是这样的跟随仍可能为正（`carriedTo_iff_stands`）。中间耗尽就没有这样的跟随（`spent_keeps_nothing`）；给予大于整段取用是无论取用怎样分配都能携带的充分条件（`carried_of_gift_exceeds`）。数量没有来源标记，所以这里是可能携带的读法，不能声称已确定实际物质的来源。
+
+**跨步供给与闭包。** `FedAcross (f,t) (g,s)` 要求 s≤t、g 在 s 参与并向 f 在 t 所需的条件正给予，且该条件从 s 携带到 t。同一步供给恰是延迟为零的跨步供给（`fedBy_iff_fedAcross`）。`WithinFeedingAcross` 是含形成、对跨步供给封闭的最小区域；它含原供给闭包（`WithinFeeding.across`），而其外的形成不向可携带到成员所需之步的条件给予（`beyond_gives_nothing_across`）。若每次给予之后条件都不立着，两闭包相同（`withinFeedingAcross_iff_of_unheld`）。`Provision.through_store` 给出严格差别：第 0 步给予后结束活动的亲代，通过储存支持第 2 步活跃的后代；亲代在跨步闭包内而在同一步闭包外。闭包仍是形成层面的，各环不构成已经规定好时间顺序的事件路径。
+
+**需要、冗余与扣留。** 在条件 c 上跨一步平衡时，下一步满足 m 恰当 `m + taken ≤ level + given`（`meets_after_iff_at`）；逐步与整段形式分别是 `stays_met_iff_at`、`meets_over_iff_at`。它们刻画所需被满足，不能从支持充分推出活动；`active_covered_at` 只在该步活动需要支持时从实际活动推出覆盖。若给予者被支持，没有被支持者给予时，整段后满足 m 恰当初始存量覆盖整段取用与 m（`unfed_meets_iff_at`）。逐步需要并取用的步数超过初始水平时，构造性地存在某一步的被支持供给者（`fed_beyond_level_at`）。扣留一个在该条件只给不取的部分、其余交换固定时，所需仍满足恰当实际水平覆盖所需与该部分此前的累计给予（`meets_without_iff_at`）。
+
+**见证与界限。** `Redundant.either_suffices` 中两个供给者任留一个都使消费者每步活跃且被支持；都没有时消费者只在第 0 步活跃，已有局部终结界给出界限（`neither_ends`）。`withheld_either` 在同一个实际流中扣留任一个供给者，明确给出仍容许消费者的水平路径；`withheld_both` 表明两者都扣留而坚持其余取用不变时不存在平衡的水平路径，而不是给出了平衡且自然停止的反事实。改变取用而停止的是另一个参照流。储备推迟而不逃脱的既有 `Web.Carries.lasts` 与 `consumption_ends_with_feeders_at` 保持其原范围。
+
+**作者反审。** 这里没有把条件仍为正认作带来源标记的实际给予仍在；只证明某种不增的跟随可能存在。`CarriedTo` 的平衡被公开写入关系，不由闭包定义推出。消费需求被满足不等于行为必然继续，支持充分的方向未假定。未推导：实际跟随是哪一个；无论取用怎样分配都携带的必要且充分条件；中心怎样表示跨步闭包；形成闭包沿时间有序的事件形式。两条既有记录分别延伸，无新增独立成果标签，也不把这些动力学结论当作伦理根据。物理对应与读法为 AI 的，待 Ren。
+
+**检查与接续。** 核心回执 `20261013T091820.375259Z` 覆盖本模块 41 项定理，源声明公理报告为空；外围回执 `20261013T091907.838571Z` 通过。原 Claude 草稿、任务与散存审计资料在 `development/becoming-p86-landing/` 保留原始字节；这些资料本身不替代上述实查。输出是跨步供给关系及需求保持的局部 iff，接入既有供给闭包与终结记录；下一步只沿上述未解项推进。整合文档尚无独立审查。
+
+
+## 108. 休眠中的连续与关系所固定的同一 / Persistence through dormancy and identity fixed by relations (P87)
+
+2026-10-13 整合 Claude 于 10-12 留下的模块；依据 Ren 的 [move towards 100%](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md) 与 [接手并合并](../../../../sources/15-codex-theory-conversations/2026-10-13-codex-takeover-and-merge.md)。原任务、原模块与出处在 [P87 落地包](development/becoming-p87-landing/README.md)；该包的保存本身不构成检查证据。
+
+**从同一关系展开开始。** 一个形成暂不活跃，不表示它的依存或储备也消失。先问什么关系仍保持，再问名字是否追随它。`Becoming.Identity` 已区分逐步关系与跨步命名，也已证明活动与任期的双向连续仍容许跨过休眠的接续；此处复用该成果，不再把原来的缺口当作新发现。
+
+```text
+Reused: identity-across-steps; census-balance-under-continuation;
+        configurations-alike-by-relation; reserve-defers-ending
+Delta: 任意保持读法 h 下，跨休眠的命名连续与类别不变；
+       保平衡改认的精确守恒条件、同一／生起／止息的固定边界；
+       同量、无保持及混合普查的反例
+Record: 扩展 identity-across-steps，不新增独立成果
+Inputs: Reidentify、KeepsActive、KeepsTenure、ArisesFrom、CeasesFrom、Census；
+        Unfolding 的 exchangeFrame、Alike、exchange_alike_iff
+Outputs: Web.persisting h 的连续与普查实例；World.Conserves 与固定性等价；
+         对原记录 next_delta 中休眠与关系同一两项的有界回答
+Evidence: Becoming.Persistence；核心回执 20261013T091820.375259Z；外围回执 20261013T091907.838571Z
+```
+
+### 保持跨过休眠
+
+`Web.Holds` 的候选读法是活跃或至少一条依存仍保持；一般定理对任意 `h` 陈述，`Web.persisting h` 仅以 `h` 替换活动。活动包含于 `h` 时，保持读法下生起且随后活跃，恰是活动读法下生起而此前不保持；止息有相应形式（`Web.arises_persisting_iff`、`Web.ceases_persisting_iff`）。此前保持者的醒来不是保持读法下的生起（`Web.waking_not_arising`）。以活动读，若任何先前活跃者都不延续它，醒来仍是生起（`Web.arisesFrom_of_arises`）。因此没有通过换词消去实际差别。
+
+保持的名字跨每一步不变，便在每段保持中固定一个名字（`Web.steady_held`）。活动或依存分别包含于 `h`，这个条件分别给出原有 `KeepsActive` 与 `KeepsTenure`。`Web.renewingIn_held` 与 `Web.consumingIn_held` 的整段类别等价还要求所讨论形成在**每一步**都保持；只保持一段休眠不够。
+
+`Hibernation.readings` 保留更强条件的必要性：冬眠者虽不活跃而仍依存于巢穴，旧有两种双向连续容许其与觅食者在醒来后交换名字，令更新类别变成消耗；保持的连续排除这次交换。`Dormancy.held_both` 保留相反边界：休眠之步什么也不保持时，新条件同样不排除接续。`Seed.held_readings` 又把关系的选择公开：按依存，种子一直保持；按储备，它在第四步耗尽之后不再保持。选择何种 `h` 属于读法，不是定理替 Ren 作出的决定。
+
+### 普查原律的实例与混读边界
+
+`Web.persisting_census` 直接实例化已有普查规律，并不另证另一套计数。它要求保持者的普查及四种可判定性：保持读法下的活动、是否延续某个活跃者（`Continues`）、是否被随后某个活跃者延续（`Continued`）及关系 `R` 本身。没有分裂时，止息复现需要生起复现；没有合并且从某步起普查数有固定上界时，反之。两个方向的条件不可互换。
+
+两端都读 `h`。`Sleeper.held_readings` 中活动的止息复现而保持的生起从不发生，故不能把一端读活动、另一端读保持仍套用原律。混读成立的进一步条件未给出。
+
+### 守恒固定到哪里
+
+`World.reidentify` 在形成与条件两种角色中按同一步的命名重读。`World.Conserves t g f` 写明：步后 `f` 所立之量加上从 `g` 取走的量，等于步前 `g` 所立之量加上给 `g` 的量。`World.balanced_reidentify_iff` 不加额外假设，给出保平衡改认的充要条件：它跨每一步给出的延续都在该守恒关系之内。
+
+给定原世界平衡，`World.conserves_iff` 把它化为步后所立之量相等；`World.balanced_reidentify_iff_alike` 经 P69 的 `exchange_alike_iff` 接到既有相同定义，没有另造相同。保持与断裂由此不变（`World.kept_broken_reidentify`）。这没有把任何现实系统的全部跨时关系归约为量的相等。
+
+在平衡且关系项相等可判定的世界中，`World.fixed_iff` 说每种保平衡命名都把 `c` 接为自身，恰当步后与它同量的关系项只有它；`World.arises_fixed_iff` 与 `World.ceases_fixed_iff` 则把每种命名都成立的生起／止息，刻画为守恒关系下的生起／止息。可判定相等用于构造交换同量关系项的必要性见证。每一步之后所立之量区分**所有关系项**时，保平衡的改认是固定的改名（`World.still_of_apart`），从而类别固定（`World.classes_fixed`）。若只区分步后活跃者或步前活跃者，分别只得到守恒延续无分裂或无合并；并不直接得到所有类别固定。
+
+`Shuttle.named_as_themselves` 给出固定的实例；把移动的一单位读作单一形成则破坏该世界的平衡。`Lineage.world_readings` 与 `Hibernation.world_readings` 是保留边界的实例：在 `World.ofRoles` 读法中形成所立之量为零，不同命名同时保持平衡，却使生起或类别不同。它们保存逐步关系，并不证明任意新增跨步关系也会保存。
+
+### 反审、检查与下一步
+
+1. **没有把表示中的平衡推出为现实必然。** 零额外假设的定理是保平衡改认的等价；后续刻画逐项写明平衡、可判定相等或所立之量分离。
+2. **没有以活动冒充保持。** `h` 公开给出；种子与休眠见证说明哪种读法影响终结和类别。
+3. **没有把一一对应推广为任意延续。** 一般分裂／合并下的形成类别、任期与侵蚀仍未陈述。
+4. **没有把保持与断裂的不变扩成侵蚀的不变。** 侵蚀追随跨步任期；守恒下它在一般情形尚未证明。
+5. **没有重复计算成果。** 此段扩展 `identity-across-steps`，保留原证明与反例；普查作为已有规律的实例，不能另计一次独立成果。
+
+合并检查器在当前源字节上检查 `Becoming.Persistence` 的 71 项定理（回执 `20261013T091820.375259Z`，空公理报告），外围回执 `20261013T091907.838571Z` 通过。这里是作者整合反审，尚未经独立科学审查。该条件成果不完成从物质、信息或组织连续推出同一的完整说明，也不完成整个理论的零实质公理目标。
+
+**仍开放。** 采用哪种保持关系、是否把守恒读作所需的延续；同量处进一步的同一根据；守恒延续下的一般侵蚀；分裂／合并下的类与任期；混合活动／保持的普查成立条件；原有整段延续条件、整体依存与侵蚀的问题。
+
+
+## 109. 交换的次序：正规形、普查与最小足迹（P88）
+
+从同一展开中哪些关系跨一步改变开始：`Becoming.Order`（P78/P78b）用足迹表示交换触及的关系项，相连关系生成次序，不相连的相邻交换可以交换次序。本次复用 `only-the-order-of-change-registers`、`exchanges-commute-unless-joined` 与 `order-of-exchanges-is-the-invariant`；不另造世界、交换或偏序，也不把排列的名字当成独立实体。新增 `Becoming.OrderNormal`，只导入 `Becoming.Order`，保存 Claude 原模块字节。本次只是完成现存草稿的整合，不增加证明。
+
+**确切增量。** P78 的逆定理已把可达的重排刻画为保持相连交换次序的重排。本次补上有限段中按给定名字的字典序正规形、普查沿重排的构造，以及由实际闲置关系读出的最小足迹；逆定理的关系形式 `rearranges_iff` 是复用的连接，不计作另一个独立成果。新记录为 `normal-forms-need-decided-apartness` 与 `least-footprint-where-idleness-decided`，普查推进既有 `exchanges-commute-unless-joined`。
+
+**正规形。** `Reindexes S m π σ` 给出从 S 开始 m 个交换的安排及其逆，名字是这个有限区间的自然数。对称的 `joined` 说明哪些有名交换相连；`Rearranges` 只交换段内相邻而不相连的交换，且每一步都在当时的安排中读相连关系。`rearranges_iff` 不要求可判定性：可达恰在每对相连交换的先后相同时成立。为了选出规范代表，`DecidesApart joined S m apart` 给出段中不同交换不相连的布尔判定。`normalSteps` 依次把当前可移到前面的、名字最小的交换移来。`normalForm_iff` 表明两安排可达恰在它们的正规形在整个段上一致时成立；`normalForm_normal` 给出幂等性，`normalForm_least` 给出在第一个不同位置的字典序最小性。
+
+**判定的边界。** `CompleteInvariant` 特指以自然数值的有限段比较两安排的不变量；并非任意值域中未必可判相等的抽象不变量。对称相连关系下，存在这种完整不变量恰在存在 `DecidesApart` 时成立（`complete_iff`）。逆方向把两个交换放到相邻位置，比较两种先后安排（`pair_rearranges`、`decides_of_complete`）。所判定的是“不相连”，不从中偷渡“相连”可判定；后者只到双重否定。`Triple` 保留反例：三个交换只有首尾相连，倒序的正规形为中、末、首，正序的正规形为首、中、末，不能重排互达。
+
+**回到世界。** 给定包含交换的足迹及段内 `DecidesApart`，`Footprinted.normalize` 用不相连交换的交换把世界取到正规形。`normalize_premises` 双向保持平衡、耗散、只有活跃者给予与取用、活动需要支持、体现及传递；`normalize_precedes` 在重新编号下保持偏序。`reorder_determined` 说明同一安排给出同样的交换与逐关系项的 `SameAt`。`normalize_reorder` 使用原世界的步来给每个交换命名，因此任意独立重排再正规化，都与原世界的正规形在该段上的交换与关系读法相同。没有声称不同名字下得到同一代表。
+
+**普查沿重排。** `listed_splice` 把交换前的普查一侧与交换后的另一侧拼接，给出中间一步的列表。`Web.commute_census` 与 `Web.commute_standingCensus` 不要求两侧分开，也不要求不相连：原来可普查则交换后可普查。返回方向要求两侧分开两步（`commute_census_back`、`commute_standingCensus_back`、`World.commute_counted_iff`）。因此任意 `Reorders`，包括相连交换，只要按其定义每次两侧分开，都双向保持活动与所立者的普查（`Reorders.census`）。任意 `Footprinted.reorder` 只给正向保存；包含足迹下的独立重排给双向保存（`reorder_census`）。这不同于每步的人数相等，也不扩大 P78 `Crossing` 与 `Arising` 所反驳的前提保存。与原有 `World.withoutIdle_counted` 接续，普查在这两种重读下均可传递。
+
+**最小足迹。** `DecidesIdle L W idle` 在每步每个关系项上判定“不参与该交换且跨步不变”；这是全步全关系项的假设，不只是正规形的有限段判定。`Footprinted.least` 触及恰非闲置的关系项（`least_touch_iff`），包含交换且被每个包含足迹包含（`least_contains`、`least_le`）。由此 `Joined`、`Precedes` 都被其他包含足迹的相应关系包含（`least_joined`、`least_precedes`）；其他足迹所保持的重新编号在它之下也保持（`least_keeps`，通过 P78 的 `sorts_iff` 接到可达性）。构造本身不要求关系项相等可判定；逆刻画 `least_exists_iff` 要求 `[DecidableEq X]`。在该条件下，存在最小布尔足迹恰在闲置可判定时；参与是列表成员关系，因而可判定，闲置可判定也恰是对不参与者的跨步不变可判定（`decidesIdle_iff`）。不能把这个逆刻画说成给出了不可判定的具体世界。
+
+**连接、证据与反审。** P78 产出 `Footprinted`、`Contains`、`Joined`、`Precedes`、`Reindexes`、`Reorders` 与排序／前提保存定理；本次以其为输入，产出规范代表、普查构造和最小足迹，不改变上游定义。原任务、模块、历史审计日志与原路径／SHA-256 保存在 `development/becoming-p88-landing/`。历史日志没有合并源码绑定，不能作接受凭证；下述数字只在整合器实际检查通过后填入：Becoming 合并回执 `20261013T091820.375259Z`，`OrderNormal` 共 101 项定理；外围回执 `20261013T091907.838571Z`。对应声明和空公理报告由回执核对。接管方按陈述逐项审读范围，未作独立的全证明审查；不把文档准备当成 Lean 检查。
+
+**剩余边界。** 正规形依赖有限段与交换的名字；没有无名正规形、Foata 同时层正规形或无界运行的正规形。没有无闲置判定的最小足迹构造，也没有不可判定闲置的具体反例世界。`Reorders` 的两侧仍给定。与连续时间的实际对应仍开放。空公理报告不推出这些表示选择，也不推出所有现实过程的完整解释。读法由 AI 提出，待 Ren；没有伦理谓词、排序或公理。
+
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -8020,4 +8115,38 @@ With `Lone`, neither a particular source condition nor a particular source forma
 
 **Reuse, output and verification.** Reuses [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md), [derived-extent-limits](../../../../theories/becoming/results/records/derived-extent-limits.md); the exact delta and consumer interfaces are recorded in [continuing-self-fed-from-beyond](../../../../theories/becoming/results/records/continuing-self-fed-from-beyond.md). The current [Becoming.Succession](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean) has 6 theorems covered by [consolidated receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json) 20261013T090945.451917Z; periphery receipt 20261013T091033.730173Z passed. The stated conditions and limits remain, and integration adds no independent review.
 
-The package now has 4115 theorems and 5850 declaration audits, over a core closure of 73 modules and a package of 71, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 106 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T091033.730173Z).
+**§107, P86: feeding across steps, redundancy and reserves.** Reuses feeding-closure, consumption-ends-with-feeders, laws-of-one-step and reserve-defers-ending. The new module `Becoming.Feeding` imports Interdependence (L4), changes no existing definition and states no ethical premise. Earlier giving, continuing standing and later need are relations in one history.
+
+A condition is carried from s to t where it balances throughout the stretch and stands positively after s through t. At positive delay, some nonincreasing following of a positive gift, bounded by the gift and the condition's standing, remains positive exactly where the condition remains positive (`can_stand_iff`, `carriedTo_iff_stands`). A spent intermediate step excludes such a following; a gift exceeding all taking over the stretch suffices regardless of how taking is attributed. Quantities have no origin marks: possible carrying is not identified with an actual material origin.
+
+Same-step feeding is exactly feeding across steps at zero delay. The least formation region closed under feeding across steps contains the old closure; outside it nothing gives to a condition carried to a step at which a member requires it. With no giving retained after its step, the closures agree. Provision exhibits strict inclusion: a parent active at step 0 feeds a young active at step 2 through a store, although it never feeds it at a common step. Formation-level chains do not by themselves give an event path ordered in time.
+
+Under local balance, meeting need m after a step is exactly `m + taken ≤ level + given`, with every-step and finite-stretch versions. These characterize meeting needs, not activity sufficient from support. When givers are supported and none supported gives, the initial stock covers a need at the end exactly while it covers cumulative taking plus that need. Consuming for more steps than the initial level exhibits a supported feeder. With the remaining exchange fixed and a withheld part taking nothing from the condition, the need remains met exactly where the actual level covers the need plus everything that part gave earlier. In Redundant either of two feeders suffices; removing both in a separate flow ends activity within the original bound. Withholding either in the actual flow leaves an admitted level path; withholding both while fixing the consumer's draw leaves no balancing level path. The latter is an impossibility statement, not a dynamically adjusted counterfactual.
+
+Counterreview retains the supplied balance and the distinction between possible and actual carrying. Not derived: the actual following of a gift, the exact criterion for carrying however taking is attributed, a center's representation of its closure, or an event-level temporally ordered closure. Existing reserve-ending laws are reused, not reproved. The two existing records are extended; no new independent result is counted. Core receipt 20261013T091820.375259Z checks 41 module theorems with empty source axiom reports; periphery 20261013T091907.838571Z passes. Original draft evidence remains preserved. The integration has no independent review yet; physical correspondence and the readings remain the AI's.
+
+**Persistence through dormancy and identity fixed by relations (P87, §108).** The same unfolding can retain a dependence or reserve while a formation is inactive. This extends `identity-across-steps`, reusing its re-identification and continuation relations, the existing census laws and P69's exchange likeness. It does not create a second result for the same question. Claude's source and task are preserved in the P87 package; the integrated evidence is `Becoming.Persistence` (71 theorems, consolidated receipt `20261013T091820.375259Z` with empty axiom reports; periphery `20261013T091907.838571Z`). The preservation alone was not verification.
+
+- **Continuity through holding.** For any predicate `h`, `Web.persisting h` reads activity through holding. Where activity is contained in `h`, arising while subsequently active is exactly activity-arising from not holding, and ceasing has the corresponding form; waking from holding is not holding-arising. Keeping the names of what holds fixes one name over a held stretch. Activity and dependence contained in `h` separately recover the old continuity conditions. The renewing/consuming class equivalences require the chosen formation to hold at **every** step. Hibernation shows this stronger than two-way activity and tenure continuity; Dormancy still permits a join where nothing holds. Dependence and reserve give the seed different endings, so choosing `h` remains a reading.
+- **The census is an instance.** `Web.persisting_census` uses a census and four explicit decisions: held activity, `Continues`, `Continued` and `R`. Without splits, ceasing recurring needs arising recurring. Without merges and with the census eventually bounded by a fixed number, the converse holds. Both ends use holding. Sleeper has activity-ceasings recurring while holding-arising never occurs; conditions making a mixed reading valid remain open.
+- **What conservation fixes.** `World.balanced_reidentify_iff`, without an additional hypothesis, characterizes the re-identifications under which a world balances as the one-to-one continuations lying within `World.Conserves`. In a balanced world, this relation is equality of standing after the step, linked to P69's existing `Alike` through `exchange_alike_iff`. Keeping and breaking are invariant. With decidable equality, `fixed_iff`, `arises_fixed_iff` and `ceases_fixed_iff` characterize what every balance-preserving naming fixes; necessity exchanges two relata with equal standing. Where standing after **every** step distinguishes **all** relata, every balanced re-identification is a fixed renaming and classes are fixed. Distinguishing only the active relata at one end gives the respective no-split or no-merge property, not that stronger conclusion.
+- **The counterexamples stay.** Shuttle fixes its sides' identities, while reading the moving unit as one formation breaks its balance. The two-kind reading `World.ofRoles` gives formations zero standing; Lineage and Hibernation then permit different namings preserving per-step relations and balance but changing arising or class. They do not claim to preserve every possible additional cross-time relation. Conservation as the continuation, and activity-or-dependence as holding, are the AI's readings awaiting Ren.
+- **Counterreview and boundary.** No law derives the physical necessity of balance; hypotheses and representation remain disclosed. Keeping/breaking invariance is not undermining invariance. Classes and tenure under general splitting/merging continuations, undermining under conservation, sufficient mixed-census conditions and the actual holding relation remain open, alongside a fuller material, informational or organizational account of identity. The integration text has author counterreview, not an independent scientific review; this does not complete the whole zero-substantive-axiom target.
+
+**P88: the order of exchanges—normal form, census and least footprint (§109).** Begin with which relations change across a step of one unfolding. P78/P78b reads the order of exchanges from the relata their footprints touch. This integration reuses `only-the-order-of-change-registers`, `exchanges-commute-unless-joined` and `order-of-exchanges-is-the-invariant`. The preserved `Becoming.OrderNormal` imports only `Becoming.Order`; the world, exchange and order definitions are reused. No new proof is added during takeover. The distinct additions are the named lexicographic normal form and the least containing footprint; the census result advances the existing commutation record. P78's converse, restated as `rearranges_iff`, is a reused connection rather than another independent result.
+
+An arrangement `Reindexes S m π σ` supplies a finite stretch and its inverse, with exchanges named by natural numbers in that stretch. For a symmetric joining relation, two arrangements are connected by adjacent unjoined commutations exactly where they orient every joined pair alike (`rearranges_iff`), without decidability. To select a canonical representative, `DecidesApart` supplies Boolean decisions of **not being joined** for distinct exchanges in the stretch. `normalSteps` brings forward the least-named exchange currently free to move there. Two arrangements are reachable exactly where their normal forms agree throughout the stretch (`normalForm_iff`); the form is idempotent (`normalForm_normal`) and lexicographically least (`normalForm_least`). `Triple` retains a three-exchange witness: the first and last are joined, and reversing their order changes the normal form and prevents reachability.
+
+The exact boundary is `complete_iff`: a `CompleteInvariant`, specifically a natural-number-valued invariant compared over that finite stretch, exists exactly where such a decision of apartness exists. This is not a claim about invariants in arbitrary codomains with undecidable equality. Comparing the two arrangements that place a selected pair side by side gives the reverse direction (`pair_rearranges`, `decides_of_complete`). It decides apartness, not joining itself; the latter is determined only up to double negation.
+
+With a containing footprint and that decision, `Footprinted.normalize` reaches a world by unjoined commutations, preserves balance, dissipation, acting, taking, dependence, embodiment and transmission in both directions (`normalize_premises`), and preserves the order under renumbering (`normalize_precedes`). Reorderings with the same arrangement have the same exchanges and show every relatum alike on the stretch (`reorder_determined`). Normalize any independent reordering while naming its exchanges by their steps in the original world, and its exchanges and relational reading agree with the original normal form (`normalize_reorder`). The fixed naming is part of this statement.
+
+A census carries forward through **every** commutation, even with unsplit sides: `listed_splice` constructs the intermediate list from one side before and the other after the commuted pair (`Web.commute_census`, `Web.commute_standingCensus`). The converse needs split sides (`World.commute_counted_iff` and the two back lemmas). Thus any `Reorders`, joined pairs included, preserves existence of an activity census and a standing census in both directions (`Reorders.census`), since splitting is part of that relation. Arbitrary `Footprinted.reorder` preserves a census forward; independent reorderings of a containing footprint preserve it both ways (`reorder_census`). This asserts census existence, not equal population at each intermediate step, and does not undo P78's `Crossing` and `Arising` counterexamples to preservation of other premises. Together with the existing `World.withoutIdle_counted`, it connects both kinds of rereading to counting.
+
+For the least footprint, `DecidesIdle L W idle` decides, at **every** step and relatum, taking no part in the exchange and being unmoved across it. `Footprinted.least` touches exactly what is not idle, contains the exchanges and is contained in every containing footprint (`least_touch_iff`, `least_contains`, `least_le`). Its joining and order relations are therefore contained in theirs (`least_joined`, `least_precedes`), and every renumbering they keep is kept by it (`least_keeps`, connected to reachability by P78's `sorts_iff`). The construction needs the supplied idleness decision; its converse characterization additionally needs decidable equality of relata. With `[DecidableEq X]`, a least Boolean containing footprint exists exactly where idleness is decided (`least_exists_iff`), equivalently where being unmoved is decided for nonparticipants (`decidesIdle_iff`). Membership in the supplied finite exchange list is then decided. This boundary is an equivalence, not a concrete world witnessing undecidability.
+
+The producer/consumer connection is explicit: P78 supplies `Footprinted`, its containment, joining and order, finite reindexings, `Reorders`, sorting and premise preservation; P88 consumes those interfaces to construct the representative, census and least footprint. The original task, module and historical logs remain hash-preserved in `development/becoming-p88-landing/`. The old logs are not source-bound consolidated verification. Actual integrated evidence, filled only after successful checks: receipt `20261013T091820.375259Z`, 101 `OrderNormal` theorems, and periphery receipt `20261013T091907.838571Z`. The takeover review checks stated scope and dependencies; it is not an independent full proof review.
+
+Not shown: an unnamed normal form, Foata's simultaneous layers, a normal form of an unbounded run, a least footprint without the idleness decision, a concrete undecidable-idleness world, or actual correspondence with continuous time. The sides of `Reorders` remain given. Empty axiom reports do not derive the representation or establish a complete explanation of every real process. The readings are the AI's, pending Ren; no ethical predicate, ranking or axiom occurs.
+
+The package now has 4328 theorems and 6131 declaration audits, over a core closure of 76 modules and a package of 74, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 109 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T091907.838571Z).

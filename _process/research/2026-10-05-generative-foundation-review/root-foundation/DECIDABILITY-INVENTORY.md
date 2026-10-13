@@ -1,20 +1,20 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T090945.451917Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261013T091820.375259Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T090945.451917Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261013T091820.375259Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
-| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 214 |
-| 只在证明中用到 / used only in proofs | 100 |
+| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 225 |
+| 只在证明中用到 / used only in proofs | 106 |
 | 不用到 / unused | 0 |
 | 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 7 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 79 |
 | 证明可判定的定义与实例 / definitions and instances proving decidedness | 86 |
-| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 50 |
+| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 53 |
 
 ## 理由 / Reasons
 
@@ -32,9 +32,11 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 另一个值 / another value | 另一个值：取与给定值不同的值，需分辨值的相同 / another value: a value other than a given one, which tells values apart | 1 |
 | 不重复的列表 / a list without repetition | 不重复的列表：成员关系已定 / a list without repetition: membership decided | 7 |
 | 逐个条件换入 / mixed in condition by condition | 逐个条件换入另一段历史：需分辨条件的相同 / another history mixed in condition by condition: tells conditions apart | 4 |
-| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 52 |
+| 交换两个值 / exchanging two values | 交换两个值：需分辨输入是否为其中任一值 / exchanging two values: decides whether the input is either of the exchanged values | 10 |
+| 列表成员判定 / list membership | 列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each listed member | 1 |
+| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 53 |
 | 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
-| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 34 |
+| 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 39 |
 | 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 5 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 1 |
 
@@ -152,6 +154,17 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Order | `comings_of_iff` | `(a : α) → (n : Nat) → Decidable (p a n)`；`(a : α) → (n : Nat) → Decidable (q a n)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Order | `stutter_ceasings` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
 | Order | `stutter_comings` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
+| OrderNormal | `Footprinted.inList_iff` | `DecidableEq X` | 列表成员判定 / list membership | 可判定是它自己的条件 / its own condition |
+| Persistence | `Reidentify.exchangeAfter_across` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `Reidentify.exchangeAfter_at` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `Reidentify.exchangeAfter_elsewhere` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `Reidentify.exchangeAfter_next` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `World.exchangeAfter_balanced` | `DecidableEq w.Relatum` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `transpose_alike` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `transpose_left` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `transpose_other` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `transpose_right` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
+| Persistence | `transpose_transpose` | `DecidableEq X` | 交换两个值 / exchanging two values | 可判定是它自己的条件 / its own condition |
 | Population | `Listed.across` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | `Counts.listed_across`（无前提 / no premise） |
 | Population | `Listed.across_at` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | `Counts.listed_across`（无前提 / no premise） |
 | Population | `Listed.ceasing_iff_shortfall` | `(a : α) → (t : Nat) → Decidable (p a t)` | 计数 / counts | 可判定是它自己的条件 / its own condition |
@@ -316,6 +329,12 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Openness | `World.arising_of_ceasing` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Openness | `World.few_active` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | `Listed.few_of_stop_unrefuted`、`World.rest_few`（不判定 / no decision, P58） |
 | Openness | `comes_after` | `(t : Nat) → Decidable (p t)` | 找出 / finds | `comes_after_unrefuted`（不判定，那一步不能被否证 / no decision, the step unrefuted） |
+| OrderNormal | `Footprinted.decidesIdle_iff` | `DecidableEq X` | 分辨相同 / tells same from different | — |
+| OrderNormal | `Footprinted.least_exists_iff` | `DecidableEq X` | 分辨相同 / tells same from different | — |
+| Persistence | `Web.persisting_census` | `(t : Nat) → (f : F) → Decidable ((W.persisting h).Continues R t f)`；`(t : Nat) → (f : F) → Decidable ((W.persisting h).active t f)`；`(t : Nat) → (g : F) → Decidable ((W.persisting h).Continued R t g)`；`(t : Nat) → (g f : F) → Decidable (R t g f)` | 找出 / finds | — |
+| Persistence | `World.arises_fixed_iff` | `DecidableEq w.Relatum` | 分辨相同 / tells same from different | — |
+| Persistence | `World.ceases_fixed_iff` | `DecidableEq w.Relatum` | 分辨相同 / tells same from different | — |
+| Persistence | `World.fixed_iff` | `DecidableEq w.Relatum` | 分辨相同 / tells same from different | — |
 | Population | `Flow.More.unceasing` | `(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | — |
 | Population | `Flow.More.unceasing_covering` | `(s : Nat) → (f : F) → S ≤ s → Decidable (W.active s f)` | 找出 / finds | — |
 | Population | `Listed.ceasing_of_coming` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | — |
@@ -428,6 +447,9 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Listing | `keepFresh` | `Decidable P` |
 | Listing | `listOnce` | `(a b : α) → a ∈ l → b ∈ l → Decidable (a = b)` |
 | Order | `Web.commuteDecided` | `(n : Nat) → (f : F) → Decidable (W.active n f)` |
+| OrderNormal | `Footprinted.inList` | `DecidableEq X` |
+| Persistence | `Reidentify.exchangeAfter` | `DecidableEq X` |
+| Persistence | `transpose` | `DecidableEq X` |
 | Population | `Web.decideDissolves` | `(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)` |
 | Population | `Web.decideForms` | `(t : Nat) → (g : F) → (c : C) → Decidable (W.requires t g c)` |
 | Population | `decideSome` | `(a : α) → Decidable (p a)` |

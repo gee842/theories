@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "preserved-evidence-draft",
+  "preserved_date": "2026-10-13",
+  "original_owner": "Current math core [1c3084] Claude subagent",
+  "workboard_item": "P86",
+  "status": "not-landed-not-accepted",
+  "checks_run_during_preservation": false,
+  "files": [
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p86/tree/Becoming/Feeding.lean",
+      "preserved_path": "evidence/Feeding.original.lean",
+      "sha256": "3afe54fb44c60e7701148727e545662e670d20b8d19b012f07417d113925469a",
+      "bytes": 38770
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p86/TASK.md",
+      "preserved_path": "evidence/TASK.md",
+      "sha256": "b360f754e734dcc2f5b441bca0e5e9a8b10486bc0c07b2e93481752e580eadfb",
+      "bytes": 2842
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/AGENT-COMMON.md",
+      "preserved_path": "evidence/AGENT-COMMON.md",
+      "sha256": "0720f32e4a7800995f3d6a209c7d5a5b3503df639a1ab33dbae96e24791ea8b4",
+      "bytes": 4847
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/mk.sh",
+      "preserved_path": "evidence/mk.sh",
+      "sha256": "0ffd48bade15a917105bf0cc3993915e3b4c88d9720b934dc21e554a84bc1609",
+      "bytes": 1413
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p86/tree/.ax_Becoming_Feeding.lean",
+      "preserved_path": "evidence/axiom-audit-Feeding.lean",
+      "sha256": "6854f3887d878a600f92c865175858af90505169d5234dc7fe607d9ae4904ea3",
+      "bytes": 496
+    },
+    {
+      "source_path": "/private/tmp/claude-501/-Users-ren-theories/e2a8824b-beaa-4b8e-9f70-f9716e01002c/scratchpad/p86/root/Becoming.lean.patch",
+      "preserved_path": "evidence/Becoming.lean.patch",
+      "sha256": "fa5a5cd4444d6ba38a72b3531ff96673c40fec13a543c3a73a69d3d31d742f7f",
+      "bytes": 1823
+    }
+  ],
+  "integration_edits": [
+    {
+      "path": "lean/Becoming/Feeding.lean",
+      "original_preserved_path": "evidence/Feeding.original.lean",
+      "original_sha256": "3afe54fb44c60e7701148727e545662e670d20b8d19b012f07417d113925469a",
+      "current_sha256": "44e0205a9896d41ae9f0ebe51a917388c5d50371e6dbe22b8634dcc28b811f47",
+      "scope": "Header wording only: local hypotheses are named; need satisfaction does not imply activity. Definitions, theorem statements and proofs unchanged.",
+      "date": "2026-10-13"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+--- root/Becoming.lean.orig	2026-10-12 08:47:55
++++ root/Becoming.lean	2026-10-12 08:47:55
+@@ -45,6 +45,7 @@
+ import Becoming.Standpoints
+ import Becoming.Significance
+ import Becoming.Interdependence
++import Becoming.Feeding
+ import Becoming.Feedback
+ import Becoming.Boundaries
+ import Becoming.Relevance
+@@ -514,6 +515,17 @@
+   bounded by a region is the axiom's wherever the losses lie within the region, and so on
+   every comparison where a formation's feeding closure is the whole, while in the clearer's
+   web the two part. The reading is the AI's, pending Ren.
++* `Becoming.Feeding` (L4): feeding across steps, and feeders that stand in for one another,
++  with no premise beyond the representation. What is given is carried to a later step where the
++  flow balances on the condition between and the condition stands throughout, which with balance
++  is exactly where part of the gift can still stand there. Same-step feeding is feeding across
++  steps at delay zero; the closure across steps contains the feeding closure, strictly through a
++  held store, and nothing beyond it gives to a condition carried to a requirement of a member.
++  Under balance a requirement stays met exactly where what stands, with what is given, covers
++  what is taken and the need; consumption beyond the level has a supported feeder; a withheld
++  part that only gives is redundant exactly within the margin above the need; and with neither
++  of two feeders the end arrives within the store's level. The readings are the AI's, pending
++  Ren.
+ * `Becoming.Feedback` (L4): what feedback registers and what a part reaches, with no premise
+   beyond the representation. Closures under relations give five levels: a formation's feeding
+   closure lies within its influence closure, what can affect it, and the influence closure and

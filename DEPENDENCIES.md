@@ -2242,6 +2242,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean)
 
+## identity-across-steps ← configurations-alike-by-relation
+
+`formal-reuse` — P87 通过既有交换框架的相同解释保平衡改认，不另立相同定义。 / P87 uses likeness in the existing exchange frame to characterize balanced re-identification, without a parallel likeness definition.
+
+**Producer output / 上游输出:** exchangeFrame、Alike 与 exchange_alike_iff。 / exchangeFrame, Alike and exchange_alike_iff.
+
+**Consumer input / 下游输入:** World.balanced_reidentify_iff_alike。 / World.balanced_reidentify_iff_alike.
+
+**Retained conditions / 保留条件:** 原世界平衡；改认在每一步一一对应。 / The original world balances; re-identification is one to one at each step.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean)
+
 ## imbalance-as-relatum ← rest-with-refinement-counted
 
 `formal-reuse` — 复用把细分算作从不活跃、不要求任何东西的关系项的读法（Web.withRefinement）。 / Reuses reading the refinement as a relatum never active and requiring nothing (Web.withRefinement).
@@ -2509,6 +2521,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 识能分辨值（按否证学习处）。 / A registration that tells values apart (for learning by refutation).
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean)
+
+## least-footprint-where-idleness-decided ← order-of-exchanges-is-the-invariant
+
+`formal-reuse` — 复用包含足迹及相连与偏序的单调性。 / Reuses containing footprints and monotonicity of joining and order.
+
+**Producer output / 上游输出:** Footprinted.Contains、Joined.mono、Precedes.mono 与 sorts_iff。 / Footprinted.Contains, Joined.mono, Precedes.mono and sorts_iff.
+
+**Consumer input / 下游输入:** 最小足迹的包含与次序包含。 / Containment and order inclusion for the least footprint.
+
+**Retained conditions / 保留条件:** 给定闲置判定；逆刻画另需相等可判定。 / A supplied idleness decision; the converse additionally needs decidable equality.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
 
 ## levels-of-closure ← feeding-closure
 
@@ -2957,6 +2981,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 无附加条件。 / No added conditions.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean)
+
+## normal-forms-need-decided-apartness ← order-of-exchanges-is-the-invariant
+
+`formal-reuse` — 复用相连交换的偏序、有限重新编号、排序与世界重排。 / Reuses joined-exchange order, finite reindexings, sorting and world reorderings.
+
+**Producer output / 上游输出:** Footprinted、Reindexes、sorts_iff、converse 与 reorder_premises。 / Footprinted, Reindexes, sorts_iff, converse and reorder_premises.
+
+**Consumer input / 下游输入:** 关系形式的安排与世界正规化。 / Relational arrangements and world normalization.
+
+**Retained conditions / 保留条件:** 有限段；包含足迹；构造规范代表另给不相连判定。 / Finite stretch; a containing footprint; canonical representative additionally uses the apartness decision.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean)
 
 ## one-axiom-yields-g0 ← metaethical-core-characterization
 

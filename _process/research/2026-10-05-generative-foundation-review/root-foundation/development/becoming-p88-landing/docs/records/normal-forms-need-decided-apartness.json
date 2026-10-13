@@ -1,0 +1,102 @@
+{
+  "id": "normal-forms-need-decided-apartness",
+  "title": {
+    "zh": "有名交换的正规形恰需要段内不相连可判定",
+    "en": "Normal forms of named exchanges need exactly decided apartness on the stretch"
+  },
+  "family": "F01",
+  "claim": {
+    "zh": "对称相连关系下，有限段的两个安排及其给定逆（Reindexes）经相邻不相连交换互达，恰在它们对相连交换给出同样先后时（rearranges_iff，不用可判定性）。给出段中不同交换不相连的布尔判定（DecidesApart），normalForm 构造可达的字典序最小安排；两个安排互达恰在正规形在段上一致时（normalForm_iff），正规形幂等且在第一个差异处名字最小（normalForm_normal、normalForm_least）。存在以自然数值在有限段上比较的完整不变量（CompleteInvariant），恰在存在这种不相连判定时（complete_iff）；pair_rearranges 与 decides_of_complete 给出必要性。在包含足迹的世界中，normalize 由独立交换达到，双向保持七个世界前提并在重新编号下保持偏序（normalize_premises、normalize_precedes）。以原世界的步命名交换，任意独立重排再正规化都与原正规形有同样交换和逐关系项的 SameAt（normalize_reorder）。",
+    "en": "For a symmetric joining relation, two arrangements and their given inverses of a finite stretch (Reindexes) are connected by adjacent unjoined commutations exactly where they orient joined pairs alike (rearranges_iff, with no decision). Given a Boolean decision of apartness for distinct exchanges of the stretch (DecidesApart), normalForm constructs a reachable lexicographically least arrangement. Two arrangements are reachable exactly where their normal forms agree over the stretch (normalForm_iff); the form is idempotent and least at the first differing position (normalForm_normal, normalForm_least). A complete natural-number-valued invariant compared on the finite stretch (CompleteInvariant) exists exactly where that apartness decision exists (complete_iff); pair_rearranges and decides_of_complete give necessity. For a world with a containing footprint, normalize is reached by independent commutations, preserves the seven world premises both ways and the order under renumbering (normalize_premises, normalize_precedes). Naming exchanges by their steps in the original world, normalizing any independent reordering gives the same exchanges and per-relatum SameAt as the original normal form (normalize_reorder)."
+  },
+  "hypotheses": [
+    {
+      "zh": "有限段 S,m，自然数名字，以及每个安排与逆满足 Reindexes；相连关系对称。",
+      "en": "A finite stretch S,m, natural-number names, and each arrangement and inverse satisfying Reindexes; joining is symmetric."
+    },
+    {
+      "zh": "正规形用 DecidesApart 判定段中不同交换的不相连；不由此断言相连可判定。关系刻画 rearranges_iff 不用此假设。",
+      "en": "The normal form uses DecidesApart to decide not being joined for distinct exchanges of the stretch; decidability of joining is not inferred. The relational characterization rearranges_iff needs no such decision."
+    },
+    {
+      "zh": "CompleteInvariant 的值是 Nat，且只比较有限段；世界正规化还要求包含足迹，normalize_reorder 要求独立重排并保留原世界的名字。",
+      "en": "CompleteInvariant is Nat-valued and compared only on the finite stretch. World normalization additionally requires footprint containment; normalize_reorder requires independent reordering and retains the original naming."
+    }
+  ],
+  "correspondence": {
+    "zh": "P88 接续 P78/P78b 的既有排序与偏序，不重算逆定理为独立成果。产出是有限、有名安排的规范代表与所需判定的精确边界；原世界的关系通过 Footprinted 实例接入。读法由 AI 提出，待 Ren；见整合文档 §{S}。",
+    "en": "P88 consumes P78/P78b sorting and order, without counting the reused converse as an independent result. Its output is the canonical representative of finite named arrangements and the exact decision boundary, connected to worlds through Footprinted. The reading is AI-authored, pending Ren; see integration §{S}."
+  },
+  "aliases": [
+    "Becoming.Commutes",
+    "Becoming.KeepsOrder",
+    "Becoming.Orients",
+    "Becoming.Rearranges",
+    "Becoming.rearranges_iff",
+    "Becoming.DecidesApart",
+    "Becoming.normalSteps",
+    "Becoming.normalForm",
+    "Becoming.normalForm_iff",
+    "Becoming.normalForm_normal",
+    "Becoming.normalForm_least",
+    "Becoming.CompleteInvariant",
+    "Becoming.complete_iff",
+    "Becoming.decides_of_complete",
+    "Becoming.Footprinted.normalize",
+    "Becoming.Footprinted.normalize_reorder",
+    "Becoming.Triple.not_rearranged",
+    "lexicographic normal form",
+    "字典序正规形"
+  ],
+  "dependencies": [
+    {
+      "id": "order-of-exchanges-is-the-invariant",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用相连交换的偏序、有限重新编号、排序与世界重排。",
+        "en": "Reuses joined-exchange order, finite reindexings, sorting and world reorderings."
+      },
+      "interface": {
+        "output": {
+          "zh": "Footprinted、Reindexes、sorts_iff、converse 与 reorder_premises。",
+          "en": "Footprinted, Reindexes, sorts_iff, converse and reorder_premises."
+        },
+        "input": {
+          "zh": "关系形式的安排与世界正规化。",
+          "en": "Relational arrangements and world normalization."
+        },
+        "conditions": {
+          "zh": "有限段；包含足迹；构造规范代表另给不相连判定。",
+          "en": "Finite stretch; a containing footprint; canonical representative additionally uses the apartness decision."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "least-footprint-where-idleness-decided",
+      "detail": {
+        "zh": "最小足迹固定相连关系的最小读法；其闲置判定不同于本记录的段内不相连判定。",
+        "en": "The least footprint supplies the least reading of joining; its idleness decision differs from this record’s finite-stretch apartness decision."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "detail": {
+        "zh": "Triple：三个交换中首末相连，倒序与正序的正规形不同，不能重排互达。",
+        "en": "Triple: the first and last of three exchanges are joined; reversing their order changes the normal form and prevents reachability."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "正规形相对于给定自然数名字，仅在有限段。没有无名、Foata 同时层或无界运行正规形。CompleteInvariant 不是任意值域的抽象不变量。相连只到双重否定；既有关系刻画不要求判定。没有实际连续时间对应或伦理结论。",
+    "en": "The normal form is relative to given natural-number names and a finite stretch. No unnamed, Foata simultaneous-layer or unbounded-run normal form is given. CompleteInvariant is not an abstract invariant in an arbitrary codomain. Joining is known only up to double negation; the existing relational characterization needs no decision. No actual continuous-time correspondence or ethical conclusion follows."
+  },
+  "next_delta": {
+    "zh": "无名的规范代表、Foata 同时层形式、无界运行及连续时间对应；本次不开始这些研究。",
+    "en": "Unnamed representatives, Foata layers, unbounded runs and continuous-time correspondence; no such new research begins in this integration."
+  }
+}

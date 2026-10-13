@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "id": "normal-forms-need-decided-apartness",
+  "title": {
+    "zh": "有名交换的正规形恰需要段内不相连可判定",
+    "en": "Normal forms of named exchanges need exactly decided apartness on the stretch"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-13T09:31:00+00:00",
+  "claim": {
+    "zh": "对称相连关系下，有限段的两个安排及其给定逆（Reindexes）经相邻不相连交换互达，恰在它们对相连交换给出同样先后时（rearranges_iff，不用可判定性）。给出段中不同交换不相连的布尔判定（DecidesApart），normalForm 构造可达的字典序最小安排；两个安排互达恰在正规形在段上一致时（normalForm_iff），正规形幂等且在第一个差异处名字最小（normalForm_normal、normalForm_least）。存在以自然数值在有限段上比较的完整不变量（CompleteInvariant），恰在存在这种不相连判定时（complete_iff）；pair_rearranges 与 decides_of_complete 给出必要性。在包含足迹的世界中，normalize 由独立交换达到，双向保持七个世界前提并在重新编号下保持偏序（normalize_premises、normalize_precedes）。以原世界的步命名交换，任意独立重排再正规化都与原正规形有同样交换和逐关系项的 SameAt（normalize_reorder）。",
+    "en": "For a symmetric joining relation, two arrangements and their given inverses of a finite stretch (Reindexes) are connected by adjacent unjoined commutations exactly where they orient joined pairs alike (rearranges_iff, with no decision). Given a Boolean decision of apartness for distinct exchanges of the stretch (DecidesApart), normalForm constructs a reachable lexicographically least arrangement. Two arrangements are reachable exactly where their normal forms agree over the stretch (normalForm_iff); the form is idempotent and least at the first differing position (normalForm_normal, normalForm_least). A complete natural-number-valued invariant compared on the finite stretch (CompleteInvariant) exists exactly where that apartness decision exists (complete_iff); pair_rearranges and decides_of_complete give necessity. For a world with a containing footprint, normalize is reached by independent commutations, preserves the seven world premises both ways and the order under renumbering (normalize_premises, normalize_precedes). Naming exchanges by their steps in the original world, normalizing any independent reordering gives the same exchanges and per-relatum SameAt as the original normal form (normalize_reorder)."
+  },
+  "hypotheses": [
+    {
+      "zh": "有限段 S,m，自然数名字，以及每个安排与逆满足 Reindexes；相连关系对称。",
+      "en": "A finite stretch S,m, natural-number names, and each arrangement and inverse satisfying Reindexes; joining is symmetric."
+    },
+    {
+      "zh": "正规形用 DecidesApart 判定段中不同交换的不相连；不由此断言相连可判定。关系刻画 rearranges_iff 不用此假设。",
+      "en": "The normal form uses DecidesApart to decide not being joined for distinct exchanges of the stretch; decidability of joining is not inferred. The relational characterization rearranges_iff needs no such decision."
+    },
+    {
+      "zh": "CompleteInvariant 的值是 Nat，且只比较有限段；世界正规化还要求包含足迹，normalize_reorder 要求独立重排并保留原世界的名字。",
+      "en": "CompleteInvariant is Nat-valued and compared only on the finite stretch. World normalization additionally requires footprint containment; normalize_reorder requires independent reordering and retains the original naming."
+    }
+  ],
+  "correspondence": {
+    "zh": "P88 接续 P78/P78b 的既有排序与偏序，不重算逆定理为独立成果。产出是有限、有名安排的规范代表与所需判定的精确边界；原世界的关系通过 Footprinted 实例接入。读法由 AI 提出，待 Ren；见整合文档 §109。",
+    "en": "P88 consumes P78/P78b sorting and order, without counting the reused converse as an independent result. Its output is the canonical representative of finite named arrangements and the exact decision boundary, connected to worlds through Footprinted. The reading is AI-authored, pending Ren; see integration §109."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+  "aliases": [
+    "Becoming.Commutes",
+    "Becoming.KeepsOrder",
+    "Becoming.Orients",
+    "Becoming.Rearranges",
+    "Becoming.rearranges_iff",
+    "Becoming.DecidesApart",
+    "Becoming.normalSteps",
+    "Becoming.normalForm",
+    "Becoming.normalForm_iff",
+    "Becoming.normalForm_normal",
+    "Becoming.normalForm_least",
+    "Becoming.CompleteInvariant",
+    "Becoming.complete_iff",
+    "Becoming.decides_of_complete",
+    "Becoming.Footprinted.normalize",
+    "Becoming.Footprinted.normalize_reorder",
+    "Becoming.Triple.not_rearranged",
+    "lexicographic normal form",
+    "字典序正规形"
+  ],
+  "dependencies": [
+    {
+      "id": "order-of-exchanges-is-the-invariant",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用相连交换的偏序、有限重新编号、排序与世界重排。",
+        "en": "Reuses joined-exchange order, finite reindexings, sorting and world reorderings."
+      },
+      "interface": {
+        "output": {
+          "zh": "Footprinted、Reindexes、sorts_iff、converse 与 reorder_premises。",
+          "en": "Footprinted, Reindexes, sorts_iff, converse and reorder_premises."
+        },
+        "input": {
+          "zh": "关系形式的安排与世界正规化。",
+          "en": "Relational arrangements and world normalization."
+        },
+        "conditions": {
+          "zh": "有限段；包含足迹；构造规范代表另给不相连判定。",
+          "en": "Finite stretch; a containing footprint; canonical representative additionally uses the apartness decision."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "least-footprint-where-idleness-decided",
+      "detail": {
+        "zh": "最小足迹固定相连关系的最小读法；其闲置判定不同于本记录的段内不相连判定。",
+        "en": "The least footprint supplies the least reading of joining; its idleness decision differs from this record’s finite-stretch apartness decision."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "detail": {
+        "zh": "Triple：三个交换中首末相连，倒序与正序的正规形不同，不能重排互达。",
+        "en": "Triple: the first and last of three exchanges are joined; reversing their order changes the normal form and prevents reachability."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "正规形相对于给定自然数名字，仅在有限段。没有无名、Foata 同时层或无界运行正规形。CompleteInvariant 不是任意值域的抽象不变量。相连只到双重否定；既有关系刻画不要求判定。没有实际连续时间对应或伦理结论。",
+    "en": "The normal form is relative to given natural-number names and a finite stretch. No unnamed, Foata simultaneous-layer or unbounded-run normal form is given. CompleteInvariant is not an abstract invariant in an arbitrary codomain. Joining is known only up to double negation; the existing relational characterization needs no decision. No actual continuous-time correspondence or ethical conclusion follows."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T091820.375259Z）：Becoming.OrderNormal 的 101 项定理全部空依赖，其中含 rearranges_iff、normalForm_iff、normalForm_normal、normalForm_least、complete_iff、decides_of_complete、Footprinted.normalize_premises、Footprinted.normalize_reorder与 Triple.not_rearranged；同一回执覆盖包内 74 个模块（含只作导入的根模块与桥接），共 4328 项定理／6131 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T091907.838571Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 76 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §109；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T091820.375259Z): the 101 theorems of Becoming.OrderNormal all have empty axiom reports, among them rearranges_iff, normalForm_iff, normalForm_normal, normalForm_least, complete_iff, decides_of_complete, Footprinted.normalize_premises, Footprinted.normalize_reorder and Triple.not_rearranged. The same receipt covers the package's 74 modules (including the import-only root and the bridge) with 4328 theorems/6131 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T091907.838571Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 76 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §109 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "role": "proof",
+      "sha256": "add5486b691e1909d4f7faf8a55597e0eeabea9aad29917bc67f8326cc5c7343",
+      "declarations": [
+        "Becoming.Commutes",
+        "Becoming.KeepsOrder",
+        "Becoming.Commutes.of_iff",
+        "Becoming.Commutes.append",
+        "Becoming.Commutes.keeps",
+        "Becoming.KeepsOrder.first_free",
+        "Becoming.lowering_commutes",
+        "Becoming.lowered_keepsOrder",
+        "Becoming.sorts_step_by",
+        "Becoming.sorts_by",
+        "Becoming.sorts_by_iff",
+        "Becoming.Footprinted.independent_iff_commutes",
+        "Becoming.swapAt_within",
+        "Becoming.place_within",
+        "Becoming.origin_within",
+        "Becoming.reindexes_of_within",
+        "Becoming.Reindexes.identity",
+        "Becoming.Reindexes.symm",
+        "Becoming.Reindexes.comp",
+        "Becoming.origin_append",
+        "Becoming.origin_lowering_below",
+        "Becoming.origin_lowering_top",
+        "Becoming.lowering_inside",
+        "Becoming.Orients",
+        "Becoming.Orients.refl",
+        "Becoming.Orients.trans",
+        "Becoming.Orients.symm",
+        "Becoming.Rearranges",
+        "Becoming.commutes_orients",
+        "Becoming.Rearranges.orients",
+        "Becoming.rearranges_iff",
+        "Becoming.Rearranges.symm",
+        "Becoming.Rearranges.trans",
+        "Becoming.Footprinted.keeps_iff_orients",
+        "Becoming.Footprinted.rearranges_iff_independent",
+        "Becoming.DecidesApart",
+        "Becoming.apartBelow",
+        "Becoming.apartBelow_iff",
+        "Becoming.freeAt",
+        "Becoming.freeAt_iff",
+        "Becoming.normalPick",
+        "Becoming.normalNext",
+        "Becoming.normalSteps",
+        "Becoming.normalForm",
+        "Becoming.pick_spec",
+        "Becoming.pick_least",
+        "Becoming.next_spec",
+        "Becoming.normalSteps_spec",
+        "Becoming.normalSteps_stable",
+        "Becoming.normalForm_reindexes",
+        "Becoming.normalForm_rearranges",
+        "Becoming.free_transfer",
+        "Becoming.normalSteps_agree",
+        "Becoming.normalForm_agree",
+        "Becoming.normalForm_iff",
+        "Becoming.normalForm_normal",
+        "Becoming.normalForm_least",
+        "Becoming.beq_self",
+        "Becoming.agreeFrom",
+        "Becoming.agreeFrom_iff",
+        "Becoming.CompleteInvariant",
+        "Becoming.normalForm_complete",
+        "Becoming.pairFirst",
+        "Becoming.pairSecond",
+        "Becoming.pair_within",
+        "Becoming.pair_rearranges",
+        "Becoming.pairApart",
+        "Becoming.apartOf",
+        "Becoming.decides_of_complete",
+        "Becoming.complete_iff",
+        "Becoming.Footprinted.reorder_determined",
+        "Becoming.Footprinted.normalize",
+        "Becoming.Footprinted.normalize_independent",
+        "Becoming.Footprinted.normalize_premises",
+        "Becoming.Footprinted.normalize_precedes",
+        "Becoming.Footprinted.normalize_reorder",
+        "Becoming.Triple.apart",
+        "Becoming.Triple.joined",
+        "Becoming.Triple.symm",
+        "Becoming.Triple.decides",
+        "Becoming.Triple.reversed",
+        "Becoming.Triple.reversed_reindexes",
+        "Becoming.Triple.reversed_normal",
+        "Becoming.Triple.identity_normal",
+        "Becoming.Triple.not_rearranged"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "role": "proof",
+      "sha256": "1da2ff7f6f894440e86e022906d397d348ad63257c14ad9fd4e75b2025642784",
+      "declarations": [
+        "Becoming.Reindexes",
+        "Becoming.Footprinted",
+        "Becoming.Footprinted.Contains",
+        "Becoming.Footprinted.Joined",
+        "Becoming.Footprinted.Precedes",
+        "Becoming.Footprinted.sorts_iff",
+        "Becoming.Footprinted.converse",
+        "Becoming.Footprinted.reorder_premises",
+        "Becoming.Footprinted.reorder_precedes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "21f0006406e72b89d94d3ddc56a0cebbaf540db6e81643cd16d2a28c47de0c01",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3f6f3378dabe69206397eb9c9c975b2469c356c49d2b3dd5c6533f4bf658e731",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "c6b515f116212d40625585581f2fb65e1282f77ba2425ca08a3499aaa64ba545",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md",
+      "role": "provenance",
+      "sha256": "f3e5885ed960640cf3773813e7e02f6869ca2884b3730a2ea683c0686c03a8f3",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p88-landing/provenance.json",
+      "role": "provenance",
+      "sha256": "def2e1951ad2c3e548043690b2da917c3bc81e91e2ec1379db68bf7f90e1fd89",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-p88-landing/evidence/TASK.md",
+      "role": "provenance",
+      "sha256": "cbfa680e3e97999dcbc863a1296b5418a2e481e6a0bf0474f5752d831134005f",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/OrderNormal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.OrderNormal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Order.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Order",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "无名的规范代表、Foata 同时层形式、无界运行及连续时间对应；本次不开始这些研究。",
+    "en": "Unnamed representatives, Foata layers, unbounded runs and continuous-time correspondence; no such new research begins in this integration."
+  },
+  "history": [
+    {
+      "zh": "2026-10-13：接管时保存并整合 Claude P88 既有草稿；原字节与出处保留，不新增证明；见整合文档 §109。",
+      "en": "2026-10-13: preserved and integrated the existing Claude P88 draft during takeover; original bytes and provenance retained, no proof added; see integration §109."
+    }
+  ]
+}

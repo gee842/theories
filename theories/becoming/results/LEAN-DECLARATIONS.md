@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 206 | 6,017 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 209 | 6,230 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 26 | 802 |
 
 ## 按名称查找 / Find by name
@@ -265,6 +265,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [FeedbackDynamics.lean](lean-declarations/learning.md#module-95c70a079b33) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [FeedbackExamples.lean](lean-declarations/learning.md#module-0db80602d519) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [FeedbackMemory.lean](lean-declarations/learning.md#module-9889c88e9097) | 学习、预测与动力学 / Learning, prediction and dynamics |
+| [Feeding.lean](lean-declarations/core.md#module-8abf1ff0ab50) | 生成核心与关系结构 / Generative core and relational structure |
 | [FiniteAdmission.lean](lean-declarations/abstraction.md#module-910666c286d1) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [FiniteBranching.lean](lean-declarations/abstraction.md#module-5f36470a468d) | 抽象、适用性与构成 / Abstraction, applicability and constitution |
 | [FiniteExposureKernel.lean](lean-declarations/learning.md#module-be5433d0f096) | 学习、预测与动力学 / Learning, prediction and dynamics |
@@ -416,6 +417,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [OperationRoles.lean](lean-declarations/core.md#module-9f4103888949) | 生成核心与关系结构 / Generative core and relational structure |
 | [OperativeCoherence.lean](lean-declarations/core.md#module-9712b4ea2312) | 生成核心与关系结构 / Generative core and relational structure |
 | [Order.lean](lean-declarations/core.md#module-af11d6893eaf) | 生成核心与关系结构 / Generative core and relational structure |
+| [OrderNormal.lean](lean-declarations/core.md#module-7412c6ab20ba) | 生成核心与关系结构 / Generative core and relational structure |
 | [OrganizationalRuleInheritance.lean](lean-declarations/ethics.md#module-d6cdb351c744) | 规范根据与生成方向 / Normative grounding and generative direction |
 | [OrganizedScaleLoop.lean](lean-declarations/learning.md#module-fa24e61409c5) | 学习、预测与动力学 / Learning, prediction and dynamics |
 | [OutcomeContinuation.lean](lean-declarations/core.md#module-c48ee824a0b3) | 生成核心与关系结构 / Generative core and relational structure |
@@ -439,6 +441,7 @@ rg -n 'theorem_name' theories/becoming/results/lean-declarations/
 | [PeriodStrategySemantics.lean](lean-declarations/inquiry.md#module-7e10a07fa760) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PeriodWindowPeriodicity.lean](lean-declarations/inquiry.md#module-bc23878b6dca) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PeriodWindowPruning.lean](lean-declarations/inquiry.md#module-7792c30d5fe3) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [Persistence.lean](lean-declarations/core.md#module-d452c7cb8398) | 生成核心与关系结构 / Generative core and relational structure |
 | [PhaseCycleDerivation.lean](lean-declarations/inquiry.md#module-3fd985dc0b59) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PhasePeriodSelection.lean](lean-declarations/inquiry.md#module-96e1d00a32d0) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PhasePeriodUniversal.lean](lean-declarations/inquiry.md#module-669a6ea433f9) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |

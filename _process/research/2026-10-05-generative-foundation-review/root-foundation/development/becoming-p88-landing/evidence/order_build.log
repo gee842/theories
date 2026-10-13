@@ -1,0 +1,3 @@
+CONSTANTS 608
+no forbidden tokens
+zsh ../mk.sh $PWD/tree Becoming.Order  9.67s user 4.55s system 8% cpu 2:44.86 total
