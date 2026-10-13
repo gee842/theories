@@ -1074,6 +1074,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean)
 
+## consequence-revised-reference-plan ← selection-under-registration-revision
+
+`formal-reuse` — old_selections_remain 在同一关系定义上直接调用精确保留条件 / old_selections_remain directly invokes the exact preservation criterion on the same relation
+
+**Producer output / 上游输出:** Registration.keeps_iff 及 Keeps / Registration.keeps_iff and Keeps
+
+**Consumer input / 下游输入:** old_selections_remain 在同一关系定义上直接调用精确保留条件 / old_selections_remain directly invokes the exact preservation criterion on the same relation
+
+**Retained conditions / 保留条件:** 旧登记为等价；新增接触保留旧地址差异 / Old registration is an equivalence; an added contact preserves old address distinctions
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean)
+
+## consequence-revised-reference-plan ← generalization-through-lumping
+
+`formal-reuse` — 新接触及已安装装置的可表达选择使用同一定义 / New-contact and installed-apparatus selections use the same definition
+
+**Producer output / 上游输出:** Learning.Training.Through / Learning.Training.Through
+
+**Consumer input / 下游输入:** 新接触及已安装装置的可表达选择使用同一定义 / New-contact and installed-apparatus selections use the same definition
+
+**Retained conditions / 保留条件:** 区分选择表达与编码正确、实际使用 / Expressibility remains distinct from correct encoding and actual use
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean)
+
+## consequence-revised-reference-plan ← process-and-frame-as-readings
+
+`formal-reuse` — P、run_trace、repair_trace 与 complete_history 直接给出同历史交接 / P, run_trace, repair_trace and complete_history provide actual handoffs in one history
+
+**Producer output / 上游输出:** Process、Trace 及实际中间配置 / Process, Trace and actual intermediate configurations
+
+**Consumer input / 下游输入:** P、run_trace、repair_trace 与 complete_history 直接给出同历史交接 / P, run_trace, repair_trace and complete_history provide actual handoffs in one history
+
+**Retained conditions / 保留条件:** 实例律、支持账及普通任务次序给定 / Instance law, support account and ordinary undertaking order supplied
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean)
+
 ## constitutive-binding-assessment ← binding-preserving-substitution
 
 `interpretive` — 复用已有代入机制及误接界限；解释性连接不把形式定理升级为构成性奠基证明。 / Reuses the substitution mechanism and capture bounds; this interpretive connection does not upgrade the theorem into a constitutive grounding proof.
@@ -3586,6 +3622,22 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
+## recurring-reference-revision ← consequence-revised-reference-plan
+
+`formal-reuse` — execute 直接调用 ReferencePlan.execute；new_available_choice 与 retired_choice 调用原有接触选择定理。 / execute directly calls ReferencePlan.execute; new_available_choice and retired_choice invoke its contact-selection theorems.
+
+**Producer output / 上游输出:** 已检查的参考操作、实际回应及选择定义 / Checked reference operations, actual response and selection definitions
+
+**Consumer input / 下游输入:** 连续活动中的 native 操作、方法改变和后继使用 / Native operations, method change and successor use in continuing activity
+
+**Retained conditions / 保留条件:** 相同内部状态和费用，额外回返、更替及任务律公开 / Identical inner state and native costs, with additional return, succession and task laws disclosed
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ContinuingRevision.lean)
+
+## recurring-reference-revision ← process-and-frame-as-readings
+
+`formal-reuse` — Trace 的实际中间配置拼接与 Run 逐步执行，非改名模型。 / Trace composition through actual boundary configurations and stepwise Run, not a renamed model.
+
 ## registration-within-what-it-registers ← recurrence-without-premise
 
 `formal-reuse` — 复用 Law.orbit、Law.Returns 与 gap_of_lt：修正是轨道，否定的返回是 Returns；补全的展开像保留的历史一样从不返回。 / Reuses Law.orbit, Law.Returns and gap_of_lt: revision is an orbit and the denial's return is Returns; the completing unfolding, like a kept history, never returns.
@@ -4085,6 +4137,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 后代数的界与 b < a 是给出的；两类亲代都在。 / The bounds on offspring and b < a are supplied; both kinds of parent present.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Capture.lean)
+
+## selection-under-registration-revision ← selection-through-registration
+
+`formal-reuse` — web_keeps_iff 直接适配旧的 SelectsThrough / web_keeps_iff directly adapts existing SelectsThrough
+
+**Producer output / 上游输出:** Web 的经识选择及登记等价关系 / Web registration-based selection and equivalence
+
+**Consumer input / 下游输入:** web_keeps_iff 直接适配旧的 SelectsThrough / web_keeps_iff directly adapts existing SelectsThrough
+
+**Retained conditions / 保留条件:** 保留给定 Web、观察与时间范围 / Supplied Web, observation and time bounds retained
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean)
+
+## selection-under-registration-revision ← generalization-through-lumping
+
+`formal-reuse` — 在同一 Through 定义上证明登记改变的精确条件 / Proves the exact registration-change criterion on the same Through definition
+
+**Producer output / 上游输出:** Learning.Training.Through / Learning.Training.Through
+
+**Consumer input / 下游输入:** 在同一 Through 定义上证明登记改变的精确条件 / Proves the exact registration-change criterion on the same Through definition
+
+**Retained conditions / 保留条件:** 旧关系等价；未重证推广或学习 / Old relation is an equivalence; no reproof of generalization or learning
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean)
+
+## selection-under-registration-revision ← process-and-frame-as-readings
+
+`formal-reuse` — trace_keeps、run_keeps 与 controlled 复用中间配置 / trace_keeps, run_keeps and controlled reuse actual intermediate configurations
+
+**Producer output / 上游输出:** 核心 Process、Trace、Run 及窗口的实际历史 / Core Process, Trace, Run and their actual windows
+
+**Consumer input / 下游输入:** trace_keeps、run_keeps 与 controlled 复用中间配置 / trace_keeps, run_keeps and controlled reuse actual intermediate configurations
+
+**Retained conditions / 保留条件:** 实例转移律给定；不声称它是全部现实 / Instance transition laws supplied; no claim that the instance exhausts reality
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean)
 
 ## self-good-reachable-g0 ← positive-ground-open-futures
 

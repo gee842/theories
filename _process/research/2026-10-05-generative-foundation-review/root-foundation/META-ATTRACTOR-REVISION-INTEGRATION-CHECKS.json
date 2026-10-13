@@ -1,0 +1,42 @@
+{
+  "status": "passed-scoped",
+  "entry": "M24",
+  "links_checked": 45,
+  "other_entries_unchanged": 93,
+  "other_rendered_lines_unchanged": true,
+  "discovery_unchanged": true,
+  "reviewed_sources": [
+    "theories/becoming/results/records/selection-under-registration-revision.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Revision.lean",
+    "theories/meta-attractor/COMMON-ORGANIZATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md"
+  ],
+  "scope": "Only owned paired additions and the M24 rendered row. Whole-table source review remains pending.",
+  "research_tests": {
+    "status": "passed",
+    "tests": 49,
+    "seconds": 120.521
+  },
+  "canonical_scope_check": {
+    "status": "passed",
+    "ids": [
+      "selection-under-registration-revision",
+      "selection-through-registration"
+    ],
+    "errors": 0,
+    "source_drift": 0
+  },
+  "whole_repository_check": {
+    "metadata_errors": 0,
+    "unrelated_source_drift_records": [
+      "wisdom-root",
+      "wisdom-root-part-one"
+    ],
+    "scope": "Concurrent CORE-CONSTRAINT-AND-WISDOM edit retained for its owner; no blind hash refresh."
+  },
+  "whole_chain_guard": {
+    "status": "needs-review",
+    "unrelated_modified_sources": 38,
+    "unversioned_links": 4
+  }
+}

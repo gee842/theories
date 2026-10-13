@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Counterfactual", "Becoming.Selection", "Becoming.Learning", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.Counterfactual", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -68,6 +68,25 @@ RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
 SCOPE = (
+    "ContinuingRevision: an actual failed undertaking forms the first reference apparatus; "
+    "the same native operations then revise addressed methods, acquire references, install "
+    "and succeed at every successor. Successful production pays replacement and the next "
+    "revision, with cumulative ledgers and an actual infinite policy-restricted Run. "
+    "Frozen methods, cut return, lost reserve and retired distinctions retain failures. "
+    "Open productive support, succession, stable contacts and policy remain premises; "
+    "no universal physical recurrence, basin, normative direction or closed-stock perpetuity. "
+    "ReferencePlan: acquired mismatch changes the next generated contact plan; charged fresh "
+    "reference pairs are checked and installed, then used in two actual policy-driven repairs "
+    "without a resource reset. New installed selections reuse Revision. Frozen method, erased "
+    "receipt, insufficient support, constant channel and post-check drift retain failures. "
+    "Local contact primitives, faithful return, stable binding and policy are supplied; no "
+    "universal invention, attraction, chemical composition or normative warrant is derived. "
+    "Revision: all old selections remain expressible exactly when new indistinguishability "
+    "implies old indistinguishability, with equivalence conditions explicit; this composes along "
+    "actual traces. Retained observations differ from the latest apparatus. A supplied closed-loop "
+    "Process reconstructs registration, replenishes support and changes its response; loss and "
+    "resource exhaustion remain possible. Target, control preference and construction law are "
+    "supplied, with no general formation or normative theorem. "
     "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
     "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
     "configurations its actual executions reach, and a sound policy secures its goal there. "

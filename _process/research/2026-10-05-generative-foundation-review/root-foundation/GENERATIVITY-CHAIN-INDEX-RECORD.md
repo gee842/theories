@@ -982,3 +982,8 @@ M25/F30成对接入[原研究§10](MEDIATED-CONTROL-INTEGRATION.md#10-reserved-s
 ## 开放形态成果的脊柱结项 / Open-form spine completion — 13 October 2026
 
 M20成对接入[既有研究§9](RISK-CONDITIONING-INTEGRATION.md#spine-bridge-completion)：四项实际检查的适配将旧有限形成与正面根据接入共同 Frame／Run 和意义定义，归原成果身份；已完成的通用目的修订待做项退出。运行、交接、生成对应和 Unrestricted 保持显式，NP 强度、混合得失与更强规范根据未由此解决。/ [Scoped checks](OPEN-FORM-BRIDGE-CHECKS.json) preserve all 93 other paired entries and unrelated rendered lines. Only five read/authored source fingerprints change; the standard renderer supplies the owned row and content date. Historical evidence remains, and unrelated source/discovery reviews—including three previously unversioned M20 links—remain pending. No full-table, new independent result or independent-agent acceptance is claimed.
+
+
+## P93/P99/P103: complete meta-attractor integration — 13 October 2026
+
+M24 integrates registration revision (25 theorems/35 empty source audits), consequence-driven reference plans (43/68), and formed recurring revision (36/62), with original receipts and failures preserved. The complete account connects actual formation, method/candidate change, use and productive support across carriers. Only M24 and its reviewed source versions change; all other committed entries and discovery remain. This is author verification, not an independent or empirical acceptance. / M24 成对整合本会话三项新成果，信用已有机制并保留旧校正与反例；其他条目和发现范围保持。本提交的独立工作树复核仅验证本任务内容，不收入其他会话未提交工作。

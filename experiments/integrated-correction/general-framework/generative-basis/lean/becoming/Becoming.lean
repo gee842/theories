@@ -69,6 +69,9 @@ import Becoming.Response
 import Becoming.Counterfactual
 import Becoming.Selection
 import Becoming.Learning
+import Becoming.Revision
+import Becoming.ReferencePlan
+import Becoming.ContinuingRevision
 import Becoming.Description
 import Becoming.Identification
 

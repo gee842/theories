@@ -1,0 +1,77 @@
+Becoming.RepairComparison.common_start : ∀ (fragile : Bool) (r : Becoming.RepairComparison.Repair),
+  (Becoming.RepairComparison.run fragile r).state 0 = Becoming.RepairComparison.start
+Becoming.RepairComparison.generated_trace : ∀ (fragile : Bool) (r : Becoming.RepairComparison.Repair),
+  Generative.Trace (Becoming.RepairComparison.frame fragile).P Becoming.RepairComparison.start
+    ((Becoming.RepairComparison.run fragile r).window 0 4) (Becoming.RepairComparison.finalState fragile r)
+Becoming.RepairComparison.separated_same_life : Becoming.RepairComparison.owner Becoming.RepairComparison.Claim.first =
+    Becoming.RepairComparison.owner Becoming.RepairComparison.Claim.second ∧
+  Becoming.RepairComparison.episodeTime Becoming.RepairComparison.Claim.first = 1 ∧
+    Becoming.RepairComparison.episodeTime Becoming.RepairComparison.Claim.second = 3
+Becoming.RepairComparison.support_between_episodes : ∀ (r : Becoming.RepairComparison.Repair)
+  (p : Becoming.RepairComparison.Person),
+  Becoming.RepairComparison.supportedNow (Becoming.RepairComparison.states false r 2) p
+Becoming.RepairComparison.current_support_restored : ∀ (r : Becoming.RepairComparison.Repair)
+  (p : Becoming.RepairComparison.Person),
+  Becoming.RepairComparison.supportedNow (Becoming.RepairComparison.finalState false r) p
+Becoming.RepairComparison.recovery_retains_loss : Becoming.RepairComparison.supportedNow
+    (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+    Becoming.RepairComparison.Person.focal ∧
+  ¬(Becoming.RepairComparison.frame false).realized
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+        Becoming.RepairComparison.Claim.first ∧
+    ¬(Becoming.RepairComparison.frame false).realized
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+        Becoming.RepairComparison.Claim.second
+Becoming.RepairComparison.focal_matches_one : (Becoming.RepairComparison.frame false).StrictLossMatch
+  Becoming.RepairComparison.sameEpisode
+  (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+  (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.one)
+Becoming.RepairComparison.three_matches_focal : (Becoming.RepairComparison.frame false).StrictLossMatch
+  Becoming.RepairComparison.sameEpisode
+  (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+  (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+Becoming.RepairComparison.two_loss_correspondence : ∀ (c : Becoming.RepairComparison.Claim),
+  ¬(Becoming.RepairComparison.frame false).realized
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal) c ↔
+    ¬(Becoming.RepairComparison.frame false).realized
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.two)
+        (Becoming.RepairComparison.swapTwo c)
+Becoming.RepairComparison.two_correspondence_involutive : ∀ (c : Becoming.RepairComparison.Claim),
+  Becoming.RepairComparison.swapTwo (Becoming.RepairComparison.swapTwo c) = c
+@Becoming.RepairComparison.conditional_lower_anchor : ∀
+  {scope Le : Becoming.RepairComparison.State → Becoming.RepairComparison.State → Prop},
+  Becoming.RepairComparison.SufficientMatching scope Le →
+    scope (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.one) →
+      GenerativeLossComparison.Strict Le
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.one)
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+@Becoming.RepairComparison.conditional_upper_anchor : ∀
+  {scope Le : Becoming.RepairComparison.State → Becoming.RepairComparison.State → Prop},
+  Becoming.RepairComparison.SufficientMatching scope Le →
+    scope (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal) →
+      GenerativeLossComparison.Strict Le
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+        (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+@Becoming.RepairComparison.conditional_outer_order : ∀
+  {scope Le : Becoming.RepairComparison.State → Becoming.RepairComparison.State → Prop},
+  Becoming.RepairComparison.SufficientMatching scope Le →
+    GenerativeLossComparison.Transitive Le →
+      scope (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal)
+          (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.one) →
+        scope (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+            (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.focal) →
+          GenerativeLossComparison.Strict Le
+            (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.one)
+            (Becoming.RepairComparison.finalState false Becoming.RepairComparison.Repair.three)
+Becoming.RepairComparison.fragile_three_loses_backbone : ¬(Becoming.RepairComparison.frame true).realized
+    (Becoming.RepairComparison.finalState true Becoming.RepairComparison.Repair.three)
+    Becoming.RepairComparison.Claim.backbone
+Becoming.RepairComparison.fragile_focal_keeps_backbone : (Becoming.RepairComparison.frame true).realized
+  (Becoming.RepairComparison.finalState true Becoming.RepairComparison.Repair.focal)
+  Becoming.RepairComparison.Claim.backbone
+Becoming.RepairComparison.fragile_three_not_matching : ¬(Becoming.RepairComparison.frame true).StrictLossMatch
+    Becoming.RepairComparison.sameEpisode
+    (Becoming.RepairComparison.finalState true Becoming.RepairComparison.Repair.three)
+    (Becoming.RepairComparison.finalState true Becoming.RepairComparison.Repair.focal)

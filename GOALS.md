@@ -133,6 +133,27 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [2026-10-07-liangzhi-generative-evolution](sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md) · [LIANGZHI-EVOLUTION](theories/becoming/chapters/LIANGZHI-EVOLUTION.md)
 
+<a id="meta-attractor-integration-session"></a>
+## 元吸引子的完整理论整合 / Complete theoretical integration of meta-attractors
+
+**Scope / 范围:** 本会话的元吸引、旧表述校正、共同组织、调节分化与持续修订研究。 / This conversation’s meta-attractor inquiry, historical reconciliation, common organization, differentiated regulation and continuing revision.
+
+完成全部获授权的理论整合与必要验证后，将本任务改动提交 main。 / Complete the authorized theoretical integration and required validation, then commit this task’s changes to main.
+
+**Premises / 前提:** 一元关系起点；各实例的实质前提、失败和经验对应公开。规范研究属于同一理论，但不接管其他会话的独立任务。 / One relational unfolding; disclose instance premises, failures and empirical correspondence. Normativity belongs to the same theory without taking over independently scoped sessions.
+
+**Completion criterion / 完成条件:** 逐项核对原定义、旧数学、共同形成、调节分化、后果修订下一构造方法及候选、实际使用、受支持接续和诊断边界；已完成机制复用，新增证明经 Lean 检查。不是以更多目录或有限演示替代完整整合，也不把无条件自证、任意物理发明或一切经验应用增设为原定义的结论。完成后提交已验证的本任务改动，保护并行工作。 / Audit the adopted definition, older mathematics, formation, differentiated regulation, consequence-driven construction/candidate revision, actual use, supported continuation and diagnostic boundaries. Reuse completed mechanisms and check new proofs in Lean. Neither more cataloguing nor a finite demonstration substitutes for full integration; unconditional self-certification, arbitrary physical invention and every empirical application are not added as consequences of the definition. Commit verified owned changes after completion, protecting concurrent work.
+
+[2026-10-08-meta-attractor-generative-integration](sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md) · [2026-10-13-meta-attractor-completion-and-main](sources/15-codex-theory-conversations/2026-10-13-meta-attractor-completion-and-main.md) · [META-ATTRACTOR-RECONCILIATION](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md)
+
+[consequence-revised-reference-plan](theories/becoming/results/records/consequence-revised-reference-plan.md): `recorded-checked`
+
+[recurring-reference-revision](theories/becoming/results/records/recurring-reference-revision.md): `recorded-checked`
+
+[selection-through-registration](theories/becoming/results/records/selection-through-registration.md): `recorded-checked`
+
+[selection-under-registration-revision](theories/becoming/results/records/selection-under-registration-revision.md): `recorded-checked`
+
 <a id="normative-grounding"></a>
 ## 普遍规范根据的持续方向 / Continuing normative grounding direction
 

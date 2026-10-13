@@ -1,0 +1,204 @@
+{
+  "status": "passed-scoped",
+  "entry": "M24",
+  "links_checked": 49,
+  "other_entries_unchanged": 93,
+  "other_rendered_lines_unchanged": true,
+  "discovery_unchanged": true,
+  "reviewed_sources": {
+    "theories/becoming/results/records/consequence-revised-reference-plan.md": "8be75174979d7915f30894ca368317ea7e9049a81ff2a512db22e47cace146a3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean": "9f758b091d69db94f52d9a3494922a1a410cf2a029a70cc31a22690a6fe08f62",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T120722.092811Z/verification.json": "cd9846eb8a2de8f5d9e88738de039b411d0b3cd30bc8b3c4da2fe99e2a843fdf",
+    "theories/becoming/results/records/selection-under-registration-revision.md": "81586285311237211dd8debdc2f55636013c40d3c533a5c84d2b2766f8b69797",
+    "theories/meta-attractor/COMMON-ORGANIZATION.md": "60317531076119c1200ffc9320c4898b35a8837348d02ca2d0d96a4847cef313",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md": "1667490982aa318dd94828c7841fba3cad47c0e3dadede810926f6caa96582d0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json": "f3cd00d272dcaf69b53a64b189b1eb5cdb5c7672302643c581a5421de0d84db3"
+  },
+  "proof": {
+    "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json",
+    "peripheral_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T122528.526650Z/verification.json",
+    "new_theorems": 43,
+    "new_source_declarations": 68,
+    "axiom_dependencies": [],
+    "actual_drift_trace": true
+  },
+  "scope": "P99 local interface and owned chain row; unrelated source/discovery reviews retained.",
+  "whole_chain_guard": {
+    "status": "needs-review",
+    "unrelated_modified_sources": 38,
+    "existing_validation_errors": [
+      "Unversioned source: theories/becoming/results/records/organizational-formation-from-generative-comparison.md",
+      "Unversioned source: theories/becoming/results/records/situated-recovery-empirical-correspondence.md",
+      "Unversioned source: theories/becoming/results/records/context-sensitive-updating-correspondence.md",
+      "Unversioned source: theories/becoming/results/records/transition-grouping-word-partition.md"
+    ]
+  },
+  "initial_checkpoint": {
+    "core_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T120722.092811Z/verification.json",
+    "new_theorems": 42,
+    "new_source_declarations": 67,
+    "axiom_dependencies": []
+  },
+  "research_tests": {
+    "status": "passed",
+    "tests": 49,
+    "seconds": 166.286
+  },
+  "initial_canonical_reconciliation": {
+    "ids": [
+      "attraction-is-not-returning",
+      "axiom-decomposition",
+      "bounded-census-keeps-pace",
+      "causal-models-as-processes",
+      "ceasing-needs-arising",
+      "census-balance-under-continuation",
+      "census-balance",
+      "closing-needs-net-draw",
+      "closure-verdict-meets-axiom",
+      "comparison-by-widening",
+      "comparison-content-under-regrouping",
+      "comparison-where-the-rest-responds",
+      "comparison-within-reach",
+      "configurations-alike-by-relation",
+      "consumption-ends-with-feeders",
+      "contextual-registration",
+      "continuous-time-as-tower",
+      "counterfactual-is-the-course",
+      "counting-standing-and-dependence",
+      "counting-under-enclosure",
+      "counts-exist-where-decided",
+      "determinacy-up-to-likeness",
+      "entropy-history-and-record",
+      "exchanges-commute-unless-joined",
+      "experiment-needs-return",
+      "feedback-and-reach",
+      "feeding-closure",
+      "four-cases-of-a-part",
+      "generalization-through-lumping",
+      "histories-fix-law-up-to-dead-ends",
+      "identification-where-bounded",
+      "imbalance-as-relatum",
+      "laws-at-coarser-steps",
+      "laws-at-finer-units",
+      "laws-of-one-step-complete",
+      "laws-of-one-step",
+      "learning-by-refutation",
+      "least-footprint-where-idleness-decided",
+      "levels-of-closure",
+      "listing-once-is-decided-identity",
+      "loss-beyond-a-region",
+      "losses-of-the-sum-over-histories",
+      "necessarily-drawn-is-not-returning",
+      "normal-forms-need-decided-apartness",
+      "one-axiom-yields-g0",
+      "one-step-missing-laws",
+      "only-the-order-of-change-registers",
+      "order-of-exchanges-is-the-invariant",
+      "presupposition-scopes",
+      "process-and-frame-as-readings",
+      "projection-carrying-a-law",
+      "recurrence-without-decidedness",
+      "recurrence-without-premise",
+      "registration-within-what-it-registers",
+      "relata-counted-up-to-indiscernibility",
+      "represented-boundary-against-dependence",
+      "rest-at-every-resolution",
+      "rest-with-refinement-counted",
+      "returning-where-the-course-branches",
+      "runaway-distance-unregistered",
+      "runs-on-families-chosen-step-by-step",
+      "seeking-boundary",
+      "selection-through-registration",
+      "selection-under-registration-revision",
+      "separation-loses-the-relation",
+      "significance-retained-within-margin",
+      "subthreshold-registration",
+      "sum-over-histories-exact",
+      "support-from-the-supported",
+      "target-capture",
+      "testing-within-registration",
+      "tests-fix-likeness-where-determined",
+      "the-split-that-makes-sense",
+      "transmission-independent-where-it-binds",
+      "transmission-is-inheritance-and-need",
+      "whole-first-and-bounded-centers",
+      "whole-law-of-counting",
+      "wisdom-root-part-one"
+    ],
+    "source_versions": {
+      "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md": [
+        "87aa5bdbc567913c86c11149b4057c3caa311700c164c2be43760f29ed8b925d",
+        "01ac9c38ea8a236f4f8681a68731ef9dc8a51d3794c82bc2a4b5504b4303db43"
+      ],
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md": [
+        "7320c9fc901c95789189f24c6db7ffa89286aaa5e0b15c6292ac528818c6ee9e",
+        "9b5c45ce4807ff851b9df521e8d3f44804014d505b538de32abfa192e1366f52"
+      ],
+      "theories/meta-attractor/COMMON-ORGANIZATION.md": [
+        "733e6712cf07148391db304d389a1acb9be332161d3c0c1baff40cb392cf6f2a",
+        "477b18c558c2b16d133aac6c1c4b58ef43a011db978238e1740f33a760172166"
+      ]
+    }
+  },
+  "owned_section_links": {
+    "status": "passed",
+    "count": 9,
+    "links": [
+      [
+        "theories/meta-attractor/COMMON-ORGANIZATION.md",
+        "../becoming/results/records/consequence-revised-reference-plan.md"
+      ],
+      [
+        "theories/meta-attractor/COMMON-ORGANIZATION.md",
+        "../becoming/results/records/consequence-revised-reference-plan.md"
+      ],
+      [
+        "theories/meta-attractor/COMMON-ORGANIZATION.md",
+        "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md#consequences-revise-reference-plans"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/ReferencePlan.lean"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "CONSEQUENCE-INQUIRY-SELECTION-MECHANISM.md"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T120722.092811Z/verification.json"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T121014.405728Z/verification.json"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T122414.398959Z/verification.json"
+      ],
+      [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-inquiry-checks/20261013T122528.526650Z/verification.json"
+      ]
+    ]
+  },
+  "canonical_scope_check": {
+    "status": "passed",
+    "ids": [
+      "consequence-revised-reference-plan",
+      "selection-under-registration-revision",
+      "selection-through-registration"
+    ],
+    "errors": 0,
+    "source_drift": 0
+  },
+  "whole_repository_check": {
+    "metadata_errors": [],
+    "unrelated_source_drift_records": [
+      "finite-fallible-inquiry-necessity",
+      "scientific-inquiry-foundation"
+    ],
+    "scope": "Final retry: owned scoped checks pass; concurrent scientific-inquiry source revisions remain with their owner. No unrelated source hashes refreshed."
+  },
+  "owned_diff_whitespace_check": "passed"
+}

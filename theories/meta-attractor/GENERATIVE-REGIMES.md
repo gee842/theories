@@ -132,7 +132,11 @@ The definition is neutral about whether the regime supports wider life. It can i
 
 This makes the meta-attractor inquiry part of generative alignment: examine whether practices of intelligence development reproduce selection conditions that sustain warranted concern and revision. The account does not infer universal behavioral convergence from a common normative direction, and does not authorize one institution to identify itself with the whole.
 
-## Current frontier
+## Current integration and retained research history
+
+**13 October 2026:** [Common organization](COMMON-ORGANIZATION.md#integrated-account) now completes this conversation's theoretical integration. Formation, consequence-driven method and apparatus revision, actual use and supported succession are joined on the Becoming spine. The final construction includes an actual infinite policy-restricted Run, cumulative support accounts and genuine losses/failures. Strict basin and diagnostic claims retain the scopes of the earlier checked instances. The following 8 October frontier records remain historical evidence, not a statement that these later connections are still missing.
+
+**当前整合。** [完整核对](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md#completion-ledger)接通共同形成、方法及装置修订、实际回应和跨承载接续，纠正旧公式的过度推论。经验对应与规范根据各有自己的证据责任；以下早期待做表述不覆盖后续完成的连接。
 
 The [latest continuation](../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md#continuation-through-expanded-inquiry) adds **54 checked theorems / 99 audits in ExpandingInquiry**. Materially constructed access, reserved restoration, arbitrary finite inquiry histories and a corrected response are joined. Each finite hidden merger in the example family is eventually exposed by further expansion. No finite effect table, however complete through its tested depth, certifies unlimited separation across that family. The remaining connection is warrant for the relevant failure range and preservation of construction, delivery and observation through changes outside the supplied stable hierarchy. The bounded result is complete at its scope; unrestricted coverage is not made a requirement for all practical action.
 
