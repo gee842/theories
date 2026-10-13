@@ -249,6 +249,26 @@
    "Space",
    "World.rests",
    "World.rests_unrefuted"
+  ],
+  [
+   "Listing",
+   "World.Enumerated.rests",
+   "World.Enumerated.not_recurring"
+  ],
+  [
+   "Listing",
+   "Flow.taking_stops_listing",
+   "Flow.taking_not_recurring_listing"
+  ],
+  [
+   "Listing",
+   "Web.generation_ceases_listing",
+   "Web.generation_not_recurring_listing"
+  ],
+  [
+   "Listing",
+   "Flow.Dissipative.finite_ceases_listing",
+   "Flow.Dissipative.finite_taking_not_recurring_listing"
   ]
  ],
  "added": [

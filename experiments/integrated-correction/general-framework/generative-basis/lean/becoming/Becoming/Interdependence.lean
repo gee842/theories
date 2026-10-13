@@ -33,7 +33,7 @@ the axiom. The axiom enters only as a hypothesis of the comparisons.
   active, while nothing supported gives to the condition. Then it is active for at most as many
   consecutive steps as the condition's level at the start
   (`Flow.Balances.unfed_consumption_ends`), so it does not continue
-  (`Flow.Balances.unfed_consumption_stops`). Where everything feeding a formation is
+  (`Flow.Balances.unfed_consumption_not_continuing`). Where everything feeding a formation is
   unsupported, nothing supported gives to a condition it requires
   (`Flow.unfed_of_feeders_unsupported`), so its consumption ends with its feeders
   (`Flow.Balances.consumption_ends_with_feeders`).
@@ -192,7 +192,7 @@ theorem Balances.unfed_consumption_ends (balances : L.Balances W) (acting : L.Ac
     fun k _ => acting.giversSupported dependent (T + k) c
 
 /-- So unfed consumption does not continue: `g` is not active at every step from `T`. -/
-theorem Balances.unfed_consumption_stops (balances : L.Balances W) (acting : L.Acting W)
+theorem Balances.unfed_consumption_not_continuing (balances : L.Balances W) (acting : L.Acting W)
     (dependent : W.Dependent) {c : C} {g : F} {T : Nat}
     (unfed : ∀ t f, T ≤ t → W.active t g → f ∈ L.present t → W.Supported t f →
       L.give t f c = 0)

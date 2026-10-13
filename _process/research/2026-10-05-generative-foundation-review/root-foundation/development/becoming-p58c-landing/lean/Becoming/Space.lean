@@ -1148,7 +1148,7 @@ theorem living_crosses_ceasing :
     fun ceasing => drawdown_world.2.1 ((arising_iff_ceasing drawdown_finite).mpr ceasing),
     drawdown_world.2.2.2.1⟩⟩
 
-/-- Each premise of `rests` is needed: without finiteness, dissipation, balance or
+/-- Each premise of `rests_unrefuted` is needed: without finiteness, dissipation, balance or
 embodiment, arising can recur. The world failing balance takes part in exchange at every
 step, so its dissipation is not vacuous. -/
 theorem rests_needs :

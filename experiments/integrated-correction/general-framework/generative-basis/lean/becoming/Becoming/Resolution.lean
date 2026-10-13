@@ -25,11 +25,12 @@ belongs to the dynamics from what belongs to the fixed unit.
   counted, bring rest at every resolution with no premise added: in a world with a census
   whose relata are embodied, balanced at a refining unit, and, with the refinement counted,
   dissipative and enclosed at every step from some step on, neither arising nor ceasing
-  recurs (`World.rests_refinement_counted`), and continued arising needs openness
+  recurs (`World.rests_unrefuted_refinement_counted`), and continued arising needs openness
   (`World.arising_opens_refinement_counted`). Without counting it, the same holds wherever
-  the refinement gives nothing (`World.rests_unrefined`, `World.arising_needs_refinement`,
-  `Flow.taking_needs_refinement`, and for a reserve `Web.CarriesIn.lasts_unrefined`), and
-  every witness below is fed by it (`refinement_feeds_witnesses`).
+  the refinement gives nothing (`World.rests_unrefuted_without_refinement`,
+  `World.arising_needs_refinement`, `Flow.taking_needs_refinement`, and for a reserve
+  `Web.CarriesIn.lasts_unrefined`), and every witness below is fed by it
+  (`refinement_feeds_witnesses`).
 * **The loss law.** Whatever the refinement, where across each step from `T` on `q` times
   what remains together with `k` quanta of the unit of step `T` is within `q` times what
   was there, the quanta counted since `T` number at most `q` times the quantity at `T`
@@ -39,8 +40,8 @@ belongs to the dynamics from what belongs to the fixed unit.
   times its stock at `T` (`Flow.quantum_bound`), and losing a quantum does not recur
   (`Flow.quantum_not_recurring`).
 * **A fixed unit.** Where the unit is fixed from some step on, every taking step loses a
-  whole unit, so taking from a closed family stops (`Flow.taking_stops`); with `r`
-  constantly one this is the spine's `Flow.Balances.taking_ceases`.
+  whole unit, so taking from a closed family does not recur (`Flow.taking_not_recurring`); with `r`
+  constantly one this is the spine's `Flow.Balances.taking_not_recurring`.
 * **Without counting the refinement: loss in proportion.** These results are kept as
   research notes beside the line above. Where every closed family gets back at most `q`
   parts in `q + 1` of what is taken from it, so losing at least a `(q + 1)`th of it
@@ -73,7 +74,7 @@ belongs to the dynamics from what belongs to the fixed unit.
     number at most `p (q + 1)` times the total standing at `T` (the fall law,
     `World.fall_bound`), so nothing standing at that size ceases at arbitrarily late steps
     (`World.ceasing_not_recurring`). Together, neither arising nor ceasing at that size
-    recurs (`World.rests_at_resolution`): rest at each size, at every resolution.
+    recurs (`World.not_recurring_at_resolution`): rest at each size, at every resolution.
 * **A least loss at each size.** Also kept as a research note. Where the flow dissipates
   and each formation taking at least `1/p` of the unit loses at least `1/m` of it
   (`Flow.LosesAtSize`), the times a formation takes at least `1/p` of the unit from a
@@ -424,8 +425,8 @@ theorem takes_loses {r : Nat → Nat} (balances : L.BalancesAt r W) {cs : List C
     (Nat.le_trans (Nat.add_le_add_left takes _)
       (Nat.le_trans (balances.lowers dissipates) (Nat.le_of_eq (Nat.one_mul _).symm)))
 
-/-- With the unit fixed from some step on, taking from a closed family stops. -/
-theorem taking_stops {r : Nat → Nat} (balances : L.BalancesAt r W)
+/-- With the unit fixed from some step on, taking from a closed family does not recur. -/
+theorem taking_not_recurring {r : Nat → Nat} (balances : L.BalancesAt r W)
     (dissipative : L.Dissipative) {cs : List C} (distinct : Distinct cs) {T : Nat}
     (closed : ∀ t, T ≤ t → L.ClosedAt cs t) (fixed : ∀ t, T ≤ t → r t = 1) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
@@ -589,7 +590,7 @@ theorem refinement_gives_nothing {split : Nat → Nat} {t : Nat}
 
 /-- Taking needs the refinement. Balanced at a unit splitting into `split t + 1` at each
 step and dissipative, over a family without repetition closed from `T` on, where from `T`
-on the refinement gives the family nothing, taking from it stops: counted in the unit of
+on the refinement gives the family nothing, taking from it does not recur: counted in the unit of
 each step, its stock falls by at least one at every taking step. So taking from a closed
 family at arbitrarily late steps needs the refinement to give it something at arbitrarily
 late steps. -/
@@ -658,41 +659,49 @@ theorem after_recurs {T : Nat} {p : Nat → w.Relatum → Prop}
     | ⟨k, same⟩ => ⟨N + k, x, Nat.le_add_right N k,
         Eq.subst (motive := fun u => p u x) (same.symm.trans (Nat.add_assoc T N k)) holds⟩
 
-/-- Rest from a step on is rest. -/
-theorem rests_of_after {T : Nat}
-    (rest : ¬ (w.after T).ArisingRecurs ∧ ¬ (w.after T).CeasingRecurs) :
-    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  ⟨fun arising => rest.1 (after_recurs (p := fun t x => w.web.Arises t x) arising),
-   fun ceasing => rest.2 (after_recurs (p := fun t x => w.web.Ceases t x) ceasing)⟩
+/-- Rest of the world from step `T` on is rest of the world: where the world after `T` rests
+from step `N` on, the world rests from step `T + N` on. -/
+theorem restsFrom_of_after {T N : Nat} (rest : (w.after T).RestsFrom N) : w.RestsFrom (T + N) :=
+  fun _ later x => match Nat.le.dest later with
+  | ⟨k, same⟩ => Eq.subst (motive := fun u => ¬ w.web.Arises u x ∧ ¬ w.web.Ceases u x)
+      ((Nat.add_assoc T N k).symm.trans same) (rest (N + k) (Nat.le_add_right N k) x)
+
+/-- That the world from step `T` on rests from some step on cannot be refuted, so that the world
+rests from some step on cannot be refuted. -/
+theorem rests_unrefuted_of_after {T : Nat}
+    (rest : ¬ ¬ ∃ N, (w.after T).RestsFrom N) : ¬ ¬ ∃ N, w.RestsFrom N :=
+  fun none_ => rest fun ⟨N, quiet⟩ => none_ ⟨T + N, restsFrom_of_after quiet⟩
 
 /-- Rest wherever the refinement gives nothing. In a world with a census whose relata are
 embodied, balanced at a unit splitting into `split t + 1` at each step and dissipative,
 with every step from `T` on enclosed, where from `T` on the refinement gives no relatum
-anything, neither arising nor ceasing recurs. -/
-theorem rests_unrefined (counted : w.Counted) (embodied : w.Embodied) {split : Nat → Nat}
+anything, that the world rests from some step on cannot be refuted. -/
+theorem rests_unrefuted_without_refinement (counted : w.Counted) (embodied : w.Embodied)
+    {split : Nat → Nat}
     (balances : w.flow.BalancesAt (fun t => split t + 1) w.web) (dissipative : w.Dissipative)
     {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t)
     (unrefined : ∀ t, T ≤ t → ∀ x, split t * w.web.level t x = 0) :
-    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  rests_of_after (rests_enclosed (after_counted counted T) (after_embodied embodied T)
+    ¬ ¬ ∃ N, w.RestsFrom N :=
+  rests_unrefuted_of_after (rests_unrefuted_enclosed (after_counted counted T)
+    (after_embodied embodied T)
     (after_balanced balances unrefined) (after_dissipative fun t _ cs => dissipative cs t)
     (after_enclosed enclosed))
 
 /-- The rest theorem at every resolution, with the refinement counted. In a world with a
 census whose relata are embodied, balanced at a unit splitting into `split t + 1` at each
 step, and, with the refinement counted among the formations, dissipative and enclosed at
-every step from `T` on, neither arising nor ceasing recurs. Counted so, balance at a
-refining unit is the spine's balance (`Flow.balancesAt_iff_withRefinement`), and dissipation
-and enclosure are the spine's, so no premise is added to the spine's. -/
-theorem rests_refinement_counted (counted : w.Counted) (embodied : w.Embodied)
+every step from `T` on, that the world rests from some step on cannot be refuted. Counted so,
+balance at a refining unit is the spine's balance (`Flow.balancesAt_iff_withRefinement`), and
+dissipation and enclosure are the spine's, so no premise is added to the spine's. -/
+theorem rests_unrefuted_refinement_counted (counted : w.Counted) (embodied : w.Embodied)
     {split : Nat → Nat} (balances : w.flow.BalancesAt (fun t => split t + 1) w.web)
     (dissipative : (w.flow.withRefinement w.web split).Dissipative) {T : Nat}
     (enclosed : ∀ t, T ≤ t → (w.flow.withRefinement w.web split).Enclosed t) :
-    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+    ¬ ¬ ∃ N, w.RestsFrom N :=
   have unrefined : ∀ t, T ≤ t → ∀ x, split t * w.web.level t x = 0 := fun t later =>
     Flow.refinement_gives_nothing (enclosed t later) fun cs => dissipative cs t
-  rests_of_after (rests_enclosed (after_counted counted T) (after_embodied embodied T)
-    (after_balanced balances unrefined)
+  rests_unrefuted_of_after (rests_unrefuted_enclosed (after_counted counted T)
+    (after_embodied embodied T) (after_balanced balances unrefined)
     (after_dissipative fun t later cs distinct closed =>
       (Flow.withRefinement_dissipatesOn_iff.mp
         (dissipative cs t distinct (closed.withRefinement (unrefined t later)))).1)
@@ -707,8 +716,8 @@ theorem arising_opens_refinement_counted (counted : w.Counted) (embodied : w.Emb
     (dissipative : (w.flow.withRefinement w.web split).Dissipative)
     (arising : w.ArisingRecurs) (T : Nat) :
     ¬ ∀ t, T ≤ t → (w.flow.withRefinement w.web split).Enclosed t :=
-  fun enclosed => (rests_refinement_counted counted embodied balances dissipative enclosed).1
-    arising
+  fun enclosed => (not_recurring_of_rests_unrefuted
+    (rests_unrefuted_refinement_counted counted embodied balances dissipative enclosed)).1 arising
 
 /-- Without counting the refinement, continued arising needs openness or the refinement's
 giving: in a world with a census whose relata are embodied, balanced at a refining unit and
@@ -720,7 +729,10 @@ theorem arising_needs_refinement (counted : w.Counted) (embodied : w.Embodied)
     ¬ ((∀ t, T ≤ t → w.flow.Enclosed t) ∧
       ∀ t, T ≤ t → ∀ x, split t * w.web.level t x = 0) :=
   fun ⟨enclosed, unrefined⟩ =>
-    (rests_unrefined counted embodied balances dissipative enclosed unrefined).1 arising
+    (not_recurring_of_rests_unrefuted
+      (rests_unrefuted_without_refinement counted embodied balances dissipative enclosed
+        unrefined)).1
+      arising
 
 end World
 
@@ -1306,7 +1318,7 @@ theorem ceasing_not_recurring (counted : w.Counted) (embodied : w.Embodied) {r :
 embodied, balanced at a resolution that only refines and dissipative in proportion, with
 every step from some step on enclosed, neither arising nor ceasing at a size of at least
 `1/p` of the unit recurs. -/
-theorem rests_at_resolution (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
+theorem not_recurring_at_resolution (counted : w.Counted) (embodied : w.Embodied) {r : Nat → Nat}
     (balances : w.flow.BalancesAt r w.web) {q : Nat} (dissipative : w.flow.DissipativeBy q)
     {T : Nat} (enclosed : ∀ t, T ≤ t → w.flow.Enclosed t) {R : Nat → Nat} (base : R T = 1)
     (unit : ∀ t, T ≤ t → R (t + 1) = r t * R t) (refining : ∀ t, T ≤ t → 0 < r t)
@@ -1556,10 +1568,11 @@ theorem taking_recurs (splits : ∀ N, ∃ t, N ≤ t ∧ 0 < split t) :
           (congrArg (fun k => sign (k + 0) + 0) h).symm)⟩
 
 /-- Where the unit splits at arbitrarily late steps, the flow does not balance at the fixed
-unit: with it fixed, taking from the closed pool stops (`Flow.Balances.taking_ceases`). -/
+unit: with it fixed, taking from the closed pool does not recur
+(`Flow.Balances.taking_not_recurring`). -/
 theorem not_balanced (splits : ∀ N, ∃ t, N ≤ t ∧ 0 < split t) :
     ¬ (flow split).Balances (web split) :=
-  fun balances => Flow.Balances.taking_ceases balances (T := 0)
+  fun balances => Flow.Balances.taking_not_recurring balances (T := 0)
     (fun t _ => dissipative split [()] t distinct (closed split t)) (taking_recurs split splits)
 
 end Asymptote
@@ -2312,7 +2325,7 @@ theorem enclosed (t : Nat) : flow.Enclosed t :=
 
 /-- So, by the exchange law at a least loss, transfers of each fixed size stop: for every
 `p`, no part takes at least `1/p` of the unit at arbitrarily late steps. -/
-theorem exchange_stops (p : Nat) :
+theorem exchange_not_recurring (p : Nat) :
     ¬ ∀ N, ∃ t f, N ≤ t ∧ f ∈ flow.present t ∧ quarter (t + 1) ≤ p * total sides (flow.take t f) :=
   match losesAtEverySize p with
   | ⟨_, loses⟩ => Flow.exchange_not_recurring_of_least_loss balances dissipative loses
@@ -2379,7 +2392,7 @@ theorem arising_needs_quantum :
     Emission.dissipativeBy, Emission.enclosed, Emission.arising_recurs, Emission.not_balanced⟩
 
 /-- Arising at a size not vanishing needs loss in proportion. With loss in proportion it
-stops in every enclosed world at every resolution (`World.arising_not_recurring`). With
+does not recur in every enclosed world at every resolution (`World.arising_not_recurring`). With
 only the loss of one unit of the step after, the world of `Alternation` has a census,
 embodied relata, a flow balanced at a unit halving at each step and dissipative, every
 step enclosed, and a whole unit of step 0 arising at arbitrarily late steps; for no `q`
@@ -2395,7 +2408,7 @@ theorem arising_needs_proportion :
     Alternation.enclosed, Alternation.arising_whole, Alternation.not_dissipativeBy⟩
 
 /-- Exchange of a fixed size needs a quantum. With a fixed unit, exchange enclosed around
-what stands stops (`World.exchange_stops`). At a unit halving at each step, in
+what stands does not recur (`World.exchange_not_recurring`). At a unit halving at each step, in
 `Circulation` what stands is listed, the flow balances at that resolution and dissipates,
 every step is enclosed around what stands, and the drawer takes one whole unit of step 0
 at every step; for no `q` is it dissipative in proportion (`Flow.exchange_not_recurring`). -/
@@ -2410,7 +2423,7 @@ theorem exchange_needs_quantum :
     Circulation.takes_whole, Circulation.exchange_recurs, Circulation.not_dissipativeBy⟩
 
 /-- Rest needs a quantum of loss. With the unit fixed from some step on, taking from a
-closed family stops in every flow balanced at that resolution and dissipative; with the
+closed family does not recur in every flow balanced at that resolution and dissipative; with the
 unit splitting at arbitrarily late steps, the closed pool of `Asymptote` is taken from at
 arbitrarily late steps, its flow balanced at that resolution and dissipative, even losing
 all it takes, and its drawer supported throughout; it does not balance at the fixed unit.
@@ -2457,7 +2470,8 @@ theorem growth_needs_proportion :
         quarter (t + 1) ≤ 1 * Trickle.web.level (t + 1) x) ∧
       ∀ q, ¬ Trickle.flow.DissipativeBy q :=
   ⟨Trickle.counted, Trickle.embodied, Trickle.balances, Trickle.dissipative,
-    Trickle.enclosed, Trickle.losesAtEverySize, Trickle.exchange_stops, Trickle.arising_whole,
+    Trickle.enclosed, Trickle.losesAtEverySize, Trickle.exchange_not_recurring,
+    Trickle.arising_whole,
     Trickle.not_dissipativeBy⟩
 
 /-- The amount law is sharp. In `Geometric` the flow is balanced at a unit splitting into
@@ -2509,8 +2523,8 @@ theorem throughput_needs_proportion :
 of `Emission`, `Alternation` and `Circulation`, and in `Asymptote` wherever the unit splits
 at arbitrarily late steps, gives at arbitrarily late steps: no step begins a stretch in
 which it gives nothing. Each flow is otherwise dissipative on every closed family, so by
-`World.rests_unrefined` and `Flow.taking_needs_refinement` what keeps it arising, exchanging
-or taking is what the refinement gives. The refinement gives the reserve of `Dwindle` at
+`World.rests_unrefuted_without_refinement` and `Flow.taking_needs_refinement` what keeps it arising,
+exchanging or taking is what the refinement gives. The refinement gives the reserve of `Dwindle` at
 every step, so by `Web.CarriesIn.lasts_unrefined` what keeps it active is what the
 refinement gives. -/
 theorem refinement_feeds_witnesses (split : Nat → Nat)

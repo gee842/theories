@@ -11,13 +11,13 @@ of every process carries the classification: `Conditions.along` reads a run as a
 `RelationalRenewal.Unfolding`, and every theorem of that module applies to it.
 
 One principle bounds continuation without renewal: an observable that never rises
-from some step on falls only finitely often. Three bounds proved separately before
+from some step on does not fall at arbitrarily late steps. Three bounds proved separately before
 are its cases along a run:
 * depletion (`Depletion`): if every step lowers a reserve, no run exists;
 * recurrent renewal (`ContinuationRenewal`, natural-number rank): if every step
   that is not a renewal lowers a rank, renewal recurs arbitrarily late;
 * unrenewed drawdown (`RelationalRenewal`): a formation lowering an unrenewed
-  condition at each active step is active only finitely often.
+  condition at each active step is not active at arbitrarily late steps.
 `ContinuationRenewal` also has a well-founded form, more general than the
 natural-number rank used here.
 
@@ -56,8 +56,8 @@ def Conditions.along {F C : Type} (K : Conditions S F C) {P : Process S A} (r : 
 
 /-! ## Continuation without renewal -/
 
-/-- An observable that never rises from step `T` on falls only finitely often. -/
-theorem falls_finitely (rank : Nat → Nat) (T : Nat)
+/-- An observable that never rises from step `T` on does not fall at arbitrarily late steps. -/
+theorem falls_not_recurring (rank : Nat → Nat) (T : Nat)
     (noRise : ∀ n, T ≤ n → rank (n + 1) ≤ rank n) :
     ¬ ∀ N, ∃ n, N ≤ n ∧ rank (n + 1) < rank n :=
   unrenewed_drawdown_finite
@@ -67,7 +67,7 @@ theorem falls_finitely (rank : Nat → Nat) (T : Nat)
 /-- Depletion: if every admissible step lowers a reserve, no run exists. -/
 theorem Run.not_of_depletion {P : Process S A} (reserve : S → Nat)
     (lowers : ∀ s a t, P.step s a t → reserve t < reserve s) (r : Run P) : False :=
-  falls_finitely (fun n => reserve (r.state n)) 0
+  falls_not_recurring (fun n => reserve (r.state n)) 0
     (fun n _ => Nat.le_of_lt (lowers _ _ _ (r.step n)))
     (fun N => ⟨N, Nat.le_refl N, lowers _ _ _ (r.step N)⟩)
 
@@ -84,14 +84,14 @@ theorem Run.renewal_recurs {P : Process S A} (r : Run P) (rank : S → Nat)
     (renewal : Nat → Prop)
     (lowers : ∀ n, ¬ renewal n → rank (r.state (n + 1)) < rank (r.state n))
     (start : Nat) : ¬ ∀ n, start ≤ n → ¬ renewal n :=
-  fun free => falls_finitely (fun n => rank (r.state n)) start
+  fun free => falls_not_recurring (fun n => rank (r.state n)) start
     (fun n after => Nat.le_of_lt (lowers n (free n after)))
     (fun N => ⟨N + start, Nat.le_add_right N start,
       lowers _ (free _ (Nat.le_add_left start N))⟩)
 
 /-- Unrenewed drawdown along a run: a formation that lowers a condition at each active
-step, while nothing renews it, is active only finitely often. -/
-theorem Conditions.drawdown_finite {F C : Type} (K : Conditions S F C) {P : Process S A}
+step, while nothing renews it, is not active at arbitrarily late steps. -/
+theorem Conditions.drawdown_not_recurring {F C : Type} (K : Conditions S F C) {P : Process S A}
     (r : Run P) (f : F) (c : C) (T : Nat)
     (unrenewed : ∀ t, T ≤ t → K.level (r.state (t + 1)) c ≤ K.level (r.state t) c)
     (lowers : ∀ t, T ≤ t → K.active (r.state t) f →

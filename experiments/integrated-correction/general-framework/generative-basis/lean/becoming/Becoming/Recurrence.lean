@@ -16,10 +16,10 @@ assumed of any unfolding; it is the condition written into each law that uses it
   revisits from every step on (`revisits_from`), and so does every run of every process
   whose configurations a list holds (`Run.revisits_from`). Never revisiting needs openness:
   no list holds a sequence that never revisits (`unheld_of_new`, `unlisted_of_new`).
-* **A marked change stops.** Where a quantity of the configuration never falls and rises
+* **A marked change does not recur.** Where a quantity of the configuration never falls and rises
   across every change (`Marks`), change within finitely many configurations does not recur
-  (`Marks.change_stops`, `Run.change_stops`); while change recurs there, no quantity marks
-  it (`not_marks`).
+  (`Marks.change_not_recurring`, `Run.change_not_recurring`); while change recurs there, no quantity
+  marks it (`not_marks`).
 * **What every law keeps and loses.** Under a determined law a possibility lost stays lost
   (`lost_stays`), and under every process a configuration no longer reachable stays so along
   every continuation (`Reach.lost_stays`). Configurations merged stay merged: no later step
@@ -54,7 +54,7 @@ assumed of any unfolding; it is the condition written into each law that uses it
 
 So, with no premise: within finitely many configurations a law that merges nothing returns
 every configuration and raises nothing, an arrow needs a merge, a merge loses a possibility
-for good, and a marked change stops. What is merged stays merged and what is lost stays
+for good, and a marked change does not recur. What is merged stays merged and what is lost stays
 lost. Becoming that keeps what it passes through loses nothing, never returns and needs an
 open world, while its present, held within finitely many configurations, forgets. Readings
 of these laws as entropy, as the passing Ren names, or as thermodynamic recurrence belong to
@@ -229,9 +229,9 @@ theorem Marks.mono {q : S → Nat} {g : Nat → S} (marks : Marks q g) (T : Nat)
     ∀ k, q (g T) ≤ q (g (T + k)) :=
   never_falls_over (fun n => (marks n).1) T
 
-/-- **A marked change ends within finitely many configurations.** Where a list holds the
+/-- **Within finitely many configurations, a marked change does not recur.** Where a list holds the
 configurations of `g` and a quantity marks each of its changes, change does not recur. -/
-theorem Marks.change_stops {q : S → Nat} {g : Nat → S} (marks : Marks q g) {l : List S}
+theorem Marks.change_not_recurring {q : S → Nat} {g : Nat → S} (marks : Marks q g) {l : List S}
     (held : ∀ n, g n ∈ l) : ¬ ∀ T, ∃ k, T ≤ k ∧ g (k + 1) ≠ g k := fun recurs =>
   have climb : ∀ m, ∃ t, m ≤ q (g t) := fun m => by
     induction m with
@@ -248,7 +248,7 @@ theorem Marks.change_stops {q : S → Nat} {g : Nat → S} (marks : Marks q g) {
 /-- While change recurs within finitely many configurations, no quantity marks it. -/
 theorem not_marks {g : Nat → S} {l : List S} (held : ∀ n, g n ∈ l)
     (recurs : ∀ T, ∃ k, T ≤ k ∧ g (k + 1) ≠ g k) (q : S → Nat) : ¬ Marks q g :=
-  fun marks => marks.change_stops held recurs
+  fun marks => marks.change_not_recurring held recurs
 
 end Sequences
 
@@ -572,9 +572,9 @@ theorem Run.revisits_from (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ 
 
 /-- A run whose configurations a list holds and whose changes a quantity marks: change does not
 recur. -/
-theorem Run.change_stops (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
+theorem Run.change_not_recurring (r : Run P) {l : List S} (held : ∀ n, r.state n ∈ l) {q : S → Nat}
     (marks : Marks q r.state) : ¬ ∀ T, ∃ k, T ≤ k ∧ r.state (k + 1) ≠ r.state k :=
-  marks.change_stops held
+  marks.change_not_recurring held
 
 /-- A possibility lost along an admissible path stays lost along every continuation. -/
 theorem Reach.lost_stays {t u t' : S} (lost : ¬ Reach P t u) (onward : Reach P t t') :

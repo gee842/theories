@@ -34,7 +34,7 @@ that the rest are independent, none following from all the others together.
 * **All together.** Mutualists active throughout meet all eight
   (`World.mutualism_premised`), the four about the flow vacuously, since nothing flows.
   A finite world which meets the eight comes to rest, with no decision procedure:
-  neither arising nor ceasing recurs (`World.premised_rests`). The proof uses three of
+  neither arising nor ceasing recurs (`World.premised_rests_unrefuted`). The proof uses three of
   them: balance, dissipation and embodiment.
 * **Selections.** The premises are named (`World.Premise`), and a selection of them is a
   function to `Bool` (`World.Meets`); a world meeting all eight meets every selection
@@ -807,11 +807,12 @@ theorem mutualism_premised : mutualism.Premised :=
     (still_vacuous _).2.2.1 mutualism_world.2.2.2.2.2 mutualism_finite.counted
     (still_vacuous _).2.2.2
 
-/-- A finite world which meets the premises comes to rest: neither arising nor ceasing
-recurs. The proof uses balance, dissipation and embodiment, and no decision procedure. -/
-theorem premised_rests (finite : w.Finite)
-    (premised : w.Premised) : ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
-  rests finite (premised _ (.tail _ (.head _)))
+/-- In a finite world which meets the premises, that it rests from some step on cannot be
+refuted, so neither arising nor ceasing recurs (`not_recurring_of_rests_unrefuted`). The proof
+uses balance, dissipation and embodiment, and no decision procedure. -/
+theorem premised_rests_unrefuted (finite : w.Finite)
+    (premised : w.Premised) : ¬ ¬ ∃ N, w.RestsFrom N :=
+  rests_unrefuted finite (premised _ (.tail _ (.head _)))
     (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))
     (Embodied.arising (premised _ (.tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _))))))))
 

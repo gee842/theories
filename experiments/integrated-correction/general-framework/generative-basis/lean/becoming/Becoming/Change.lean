@@ -36,9 +36,9 @@ to be decidable at each step.
   and falling at arbitrarily late steps needs rising at arbitrarily late steps
   (`rising_recurs`): in every unfolding, levels of finitely many conditions that keep
   falling keep rising (`Web.falls_need_rises`). For one amount this is the law of
-  `Becoming.Renewal` that an observable never rising from some step on falls only
-  finitely often (`falls_finitely_from_floor`). Where amounts are bounded, the family
-  rises by at most its bound more than it falls (`risen_within`), and rising at
+  `Becoming.Renewal` that an observable never rising from some step on does not
+  fall at arbitrarily late steps (`falls_not_recurring_from_floor`). Where amounts are bounded, the
+  family rises by at most its bound more than it falls (`risen_within`), and rising at
   arbitrarily late steps needs falling at arbitrarily late steps (`falling_recurs`).
 * **Coming to be and ceasing to be keep pace.** A determination counts as zero or one, so
   both hold of it. Over any stretch, the members of a finite family holding at the end
@@ -311,9 +311,9 @@ theorem falling_recurs {as : List α} {q : α → Nat → Nat} {B : Nat}
     | ⟨t, within, fell⟩ => match total_pos as fell with
       | ⟨a, mem, falls⟩ => ⟨t, a, steps_mem within, mem, falls⟩
 
-/-- `falls_finitely` of `Becoming.Renewal` is the floor for one amount: an amount that
-never rises from some step on falls only finitely often. -/
-theorem falls_finitely_from_floor (q : Nat → Nat) (T : Nat)
+/-- `falls_not_recurring` of `Becoming.Renewal` is the floor for one amount: an amount that
+never rises from some step on does not fall at arbitrarily late steps. -/
+theorem falls_not_recurring_from_floor (q : Nat → Nat) (T : Nat)
     (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) : ¬ ∀ N, ∃ n, N ≤ n ∧ q (n + 1) < q n :=
   fun falls => match rising_recurs (as := [()]) (q := fun _ => q)
       (fun N => match falls N with

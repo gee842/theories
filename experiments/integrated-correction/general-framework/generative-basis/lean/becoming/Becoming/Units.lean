@@ -39,8 +39,8 @@ commitment of the representation, not a new premise.
   amounts, so it survives as stated. The recurrence of law 1 and the bound of law 3 use the
   least difference in a fixed unit: at a refining unit they fail where the refinement feeds
   the standing, and hold with the refinement counted as a giving (`Becoming.Resolution`:
-  `World.rests_refinement_counted`, `World.arising_opens_refinement_counted`) or with the unit
-  fixed from some step on (`Flow.taking_stops`).
+  `World.rests_unrefuted_refinement_counted`, `World.arising_opens_refinement_counted`) or with the
+  unit fixed from some step on (`Flow.taking_not_recurring`).
 
 Not done here: the local laws of dependence, reserve and support at a finer unit, which need a
 convention for the unit in which a need is counted.

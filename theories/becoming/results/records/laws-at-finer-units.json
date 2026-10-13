@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T19:37:05+00:00",
+  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
   "claim": {
     "zh": "把单位读为跨过从 t 起的一步分成 r t 个较细的单位（Becoming.Resolution 的 Flow.BalancesAt），并把平衡局部到一个家族与一步（Flow.BalancesAtOn）；变化按单位读出：条件上升指步后的水平超过 r t 乘以步前的水平（Web.RisesAt），下降反之（Web.FallsAt）；r 恒为一时各为原来的概念（Flow.balancesAtOn_one、Web.risesAt_one、Web.fallsAt_one、Flow.runsDownOnAt_one）。不对 r 加任何条件：一个条件在该分辨率下平衡时，开始立着恰当此前立在零且被给的多于被取的，不再立着恰当此前立着且被取的等于它按较细单位所有的连同被给的（Flow.BalancesAtOn.comesToStand_iff、ceasesToStand_iff）；按单位的上升被给予、下降被取用（rise_given、fall_taken）；没有从家族取用时，成员按单位上升恰当有参与者给予它（rises_iff_gives），家族上的耗散排除这一点（Flow.DissipatesOn.still_untaken_at）；体现的关系项只由一个不是它自己的活跃给予者生起（arises_given）；没有什么从无中开始立着（comes_from_standing）。一次交换：家族不重复地包含所立者、在该分辨率下平衡并被耗散时（Flow.RunsDownOnAt），有条件按单位上升或下降，恰当家族步后的总水平低于 r t 乘以步前的总水平（Flow.RunsDownOnAt.changes_iff）。按原始计数读出则不成立：单位一分为二、什么都不交换时，每个水平加倍，原始计数下处处上升，而按单位没有变化、总水平不降（Doubling.raw_reading_fails）。所需按与水平相同的单位读（Ren 2026-10-12）：细分为 r t > 0 时，要求不变、所需与所需的水平都按较细单位读出的形成，步后被支持恰当步前被支持（Web.supported_unchanged_by_split）；跨步比较所需时按单位因子读出（unitFactor、continuing_restores_in_unit、consumed_continues_transformed_in_unit、inactive_below_in_unit）；按单位的上升由被支持者给予（Flow.BalancesAtOn.rise_given_by_supported）。一段上数损失的规律要固定单位：单位每步加倍、无给予者时，一个形成每步取一个较细单位，永远活跃且被支持（Feeding.endless），细分供给了它。",
     "en": "Read the unit as splitting into r t finer units across the step from t (Flow.BalancesAt of Becoming.Resolution), with balance made local to a family and a step (Flow.BalancesAtOn), and read change in the unit: a condition rises where its level after the step exceeds r t times its level before (Web.RisesAt), and falls where it is below (Web.FallsAt); with r constantly one each is the original notion (Flow.balancesAtOn_one, Web.risesAt_one, Web.fallsAt_one, Flow.runsDownOnAt_one). With no condition on r: with balance at a condition at that resolution, it comes to stand exactly when it stood at nothing and was given more than was taken from it, and ceases to stand exactly when it stood and what was taken from it is all it had in the finer unit with all it was given (Flow.BalancesAtOn.comesToStand_iff, ceasesToStand_iff); a rise in the unit is given to and a fall taken from (rise_given, fall_taken); where nothing is taken from the family, a member rises in the unit exactly when something taking part gives to it (rises_iff_gives), which dissipation on the family excludes (Flow.DissipatesOn.still_untaken_at); an embodied relatum arises only as an active giver other than itself gives to it (arises_given); nothing comes to stand from nothing (comes_from_standing). One exchange: across a step at which a family holding what stands without repetition is balanced at that resolution and dissipated on (Flow.RunsDownOnAt), some condition rises or falls in the unit exactly when the family's total after the step is below r t times its total before (Flow.RunsDownOnAt.changes_iff). Read in raw counts it fails: with the unit splitting in two and nothing exchanged every level doubles, every condition rises in raw counts, and nothing changes in the unit, the total not falling (Doubling.raw_reading_fails). Need is read in the unit of the level (Ren, 12 October): with the unit splitting into r t > 0, a formation whose requirements stay and whose needs and required levels are read in the finer unit is supported after the step exactly when before (Web.supported_unchanged_by_split); needs compared across steps are read through the unit factor (unitFactor, continuing_restores_in_unit, consumed_continues_transformed_in_unit, inactive_below_in_unit); a rise in the unit is given by a supported formation (Flow.BalancesAtOn.rise_given_by_supported). The laws counting a loss over a stretch need a fixed unit: with the unit doubling at every step and nothing giving, a formation taking one finer unit at every step is active and supported forever (Feeding.endless), fed by the refinement."
@@ -110,18 +110,18 @@
     }
   ],
   "limitations": {
-    "zh": "规律 1 的复现与规律 3 的界用固定单位中的最小差异：在细分的单位下，细分供给所立者处它们不成立（Becoming.Resolution 的见证，refinement_feeds_witnesses），把细分算作给予时成立（World.rests_refinement_counted、World.arising_opens_refinement_counted），单位自某步起固定时也成立（Flow.taking_stops）；本结果引用，不重证。规律 2 关于成立与否，不关于量，按原样成立。所需按与水平相同的单位读，这是 Ren 2026-10-12 决定的表示承诺（条件 r t > 0），不是关于世界的前提；储备在细分下由细分供给时可永远下降（Becoming.Resolution 的 Web.CarriesIn），一段上数损失的依存规律同样要把细分算作给予。不推出任何前提；不改 Resolution 的任何定义。名称（BalancesAtOn、RisesAt、FallsAt、RunsDownOnAt、Doubling）是 AI 所选。",
-    "en": "The recurrence of law 1 and the bound of law 3 use the least difference in a fixed unit: at a refining unit they fail where the refinement feeds what stands (the witnesses of Becoming.Resolution, refinement_feeds_witnesses), and hold with the refinement counted as a giving (World.rests_refinement_counted, World.arising_opens_refinement_counted) or with the unit fixed from some step on (Flow.taking_stops); these are cited, not reproved. Law 2 concerns what holds, not amounts, and survives as stated. Need is read in the unit of the level, a commitment of the representation Ren decided on 12 October (condition r t > 0), not a premise on worlds; a reserve fed by the refinement may fall forever (Web.CarriesIn of Becoming.Resolution), and the laws of dependence counting a loss over a stretch likewise need the refinement counted as a giving. No premise is derived; no definition of Resolution is changed. The names (BalancesAtOn, RisesAt, FallsAt, RunsDownOnAt, Doubling) are the AI's."
+    "zh": "规律 1 的复现与规律 3 的界用固定单位中的最小差异：在细分的单位下，细分供给所立者处它们不成立（Becoming.Resolution 的见证，refinement_feeds_witnesses），把细分算作给予时成立（World.rests_unrefuted_refinement_counted、World.arising_opens_refinement_counted），单位自某步起固定时也成立（Flow.taking_not_recurring）；本结果引用，不重证。规律 2 关于成立与否，不关于量，按原样成立。所需按与水平相同的单位读，这是 Ren 2026-10-12 决定的表示承诺（条件 r t > 0），不是关于世界的前提；储备在细分下由细分供给时可永远下降（Becoming.Resolution 的 Web.CarriesIn），一段上数损失的依存规律同样要把细分算作给予。不推出任何前提；不改 Resolution 的任何定义。名称（BalancesAtOn、RisesAt、FallsAt、RunsDownOnAt、Doubling）是 AI 所选。",
+    "en": "The recurrence of law 1 and the bound of law 3 use the least difference in a fixed unit: at a refining unit they fail where the refinement feeds what stands (the witnesses of Becoming.Resolution, refinement_feeds_witnesses), and hold with the refinement counted as a giving (World.rests_unrefuted_refinement_counted, World.arising_opens_refinement_counted) or with the unit fixed from some step on (Flow.taking_not_recurring); these are cited, not reproved. Law 2 concerns what holds, not amounts, and survives as stated. Need is read in the unit of the level, a commitment of the representation Ren decided on 12 October (condition r t > 0), not a premise on worlds; a reserve fed by the refinement may fall forever (Web.CarriesIn of Becoming.Resolution), and the laws of dependence counting a loss over a stretch likewise need the refinement counted as a giving. No premise is derived; no definition of Resolution is changed. The names (BalancesAtOn, RisesAt, FallsAt, RunsDownOnAt, Doubling) are the AI's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T093441.881086Z）：新核心模块 Becoming.Units 的 31 项定理全部空依赖；同一回执覆盖包内 75 个模块，共 4513 项定理／6364 项声明审计；外围回执 20261013T093542.175797Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §81。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T093441.881086Z): the 31 theorems of the new core module Becoming.Units all have empty axiom reports; the same receipt covers the package's 75 modules with 4513 theorems/6364 declaration audits; periphery receipt 20261013T093542.175797Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §81 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：新核心模块 Becoming.Units 的 31 项定理全部空依赖；同一回执覆盖包内 75 个模块，共 4518 项定理／6370 项声明审计；外围回执 20261013T095049.338744Z 通过。先在暂存树中从前导编译，无警告，逐条 #print axioms 全部为空。核心闭包 49 个模块，每条源声明的公理报告为空，只用 Lean 内置前导即可编译。尚无独立审查，作者反审见整合文档 §81。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 31 theorems of the new core module Becoming.Units all have empty axiom reports; the same receipt covers the package's 75 modules with 4518 theorems/6370 declaration audits; periphery receipt 20261013T095049.338744Z passed. It was first compiled from the prelude in a scratch tree, with no warnings and every #print axioms empty. The core closure is 49 modules, every source declaration in it with an empty axiom report, compiling from Lean's prelude alone. There is no independent review yet; the author's counterreview is in §81 of the integration note."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Units.lean",
       "role": "proof",
-      "sha256": "4504cb87e5cdaf8c48965ec625430bb8b0fe9b8ea43f6675f80c8e06994ec61b",
+      "sha256": "aa418359f1dfc43462e9388c764fc4917fa2c97dc20c2f10e6e5671f0d69e8d1",
       "declarations": [
         "Becoming.Flow.BalancesAtOn",
         "Becoming.Flow.BalancesAt.on",
@@ -169,7 +169,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Locality.lean",
       "role": "proof",
-      "sha256": "1dc3980839b53d5042c799f2c6d8f97a7c2a83b33c444898c0cf4409cde5c184",
+      "sha256": "a2063a53a94a997d048a66d6849bcf898056c154944511a9bcb2afbe48840db6",
       "declarations": [
         "Becoming.Flow.RunsDownOn",
         "Becoming.Flow.RunsDownOn.changes_iff"
@@ -178,7 +178,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "2081df33e3e504e5ca88f94650517a80bafb64bdc30c39f86e398ac28b02bf63",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
       "declarations": [
         "Becoming.Flow.BalancesAt",
         "Becoming.Flow.BalancesAt.over"
@@ -187,27 +187,27 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1"
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9"
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "80d57cdc0ae034055c6158f999ab594cfb12cbc7abe58cabca6bd4ed12113a3a"
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "426dbbb3ca633cee0bd94f81badd69d1ca208374dcaefcf78bf59104fcbf86b2"
+      "sha256": "86ffa213034031d220945110cb453ea8e86871e03bdec4e6ea051e0cec2ec1ec"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0e7cede2e15d63e1d689ef60b182c494d7d4c44d9456d1bc6f38bbd83f1e3f71"
+      "sha256": "fb57de35b6537065cf6770f3f655677e8919460aaf30a8835f1f44eba21f0adf"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-11-zero-premise-laws.md",
@@ -300,6 +300,14 @@
     {
       "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
       "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

@@ -30,10 +30,10 @@ decidedness and `Becoming.Imbalance` for balance: nothing is adopted, and no oth
   (`not_of_listsOnce`); a law holding wherever it is listed once holds where identity among its
   members is decided (`of_listsOnce`). So the laws whose conclusion is a refutation hold of every
   family however listed, with no listing once and no decided identity
-  (`Flow.Dissipative.opens_listing`, `Flow.Dissipative.finite_ceases_listing`,
-  `Flow.taking_draws_in_listing`, `Web.generation_ceases_listing`, `Flow.taking_stops_listing`),
-  and dissipation brings every world to rest where some list, repetition allowed, holds every
-  relatum (`World.Enumerated.rests`).
+  (`Flow.Dissipative.opens_listing`, `Flow.Dissipative.finite_taking_not_recurring_listing`,
+  `Flow.taking_draws_in_listing`, `Web.generation_not_recurring_listing`, `Flow.taking_not_recurring_listing`),
+  and under balance, dissipation and embodied arising, neither arising nor ceasing recurs
+  where some list, repetition allowed, holds every relatum (`World.Enumerated.not_recurring`).
 * **Where the commitment is used, it is local.** A step is enclosed, or enclosed around a family,
   exactly where some family closed across it has decided identity among its members
   (`Flow.enclosed_iff`, `Flow.around_iff`). A world is finite exactly where some list holds every
@@ -376,12 +376,12 @@ theorem Dissipative.opens_listing (balances : L.Balances W) (dissipative : L.Dis
       fun t later => (closed t later).widen fun c mem => (lists.2 c).mpr mem
 
 /-- **Where some list holds every condition, however listed, taking does not recur under
-dissipation**: no listing once and no decided identity (`Dissipative.finite_ceases`). -/
-theorem Dissipative.finite_ceases_listing (balances : L.Balances W) (dissipative : L.Dissipative)
+dissipation**: no listing once and no decided identity (`Dissipative.finite_taking_not_recurring`). -/
+theorem Dissipative.finite_taking_not_recurring_listing (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List C} (every : ∀ c, c ∈ all) (cs : List C) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
   not_of_listsOnce all fun _ lists =>
-    dissipative.finite_ceases balances lists.1 (fun c => (lists.2 c).mpr (every c)) cs
+    dissipative.finite_taking_not_recurring balances lists.1 (fun c => (lists.2 c).mpr (every c)) cs
 
 /-- What a step gives to a family is positive exactly as it is for any family with the same
 members. -/
@@ -433,21 +433,21 @@ theorem standing_lowers_decided (balances : L.Balances W) (dissipative : L.Dissi
 end Flow
 
 /-- **Where some list holds every relatum, however listed, embodied relata do not arise at
-arbitrarily late steps under dissipation** (`Web.generation_ceases`): no listing once. -/
-theorem Web.generation_ceases_listing {X : Type} {W : Web X X} {L : Flow X X}
+arbitrarily late steps under dissipation** (`Web.generation_not_recurring`): no listing once. -/
+theorem Web.generation_not_recurring_listing {X : Type} {W : Web X X} {L : Flow X X}
     (balances : L.Balances W) (dissipative : L.Dissipative) {all : List X} (every : ∀ x, x ∈ all) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x :=
   not_of_listsOnce all fun _ lists =>
-    Web.generation_ceases balances dissipative lists.1 fun x => (lists.2 x).mpr (every x)
+    Web.generation_not_recurring balances dissipative lists.1 fun x => (lists.2 x).mpr (every x)
 
-/-- **With the unit fixed from some step on, taking from a closed family stops, however the
-family is listed** (`Flow.taking_stops`). -/
-theorem Flow.taking_stops_listing {L : Flow F C} {W : Web F C} {r : Nat → Nat}
+/-- **With the unit fixed from some step on, taking from a closed family does not recur, however
+the family is listed** (`Flow.taking_not_recurring`). -/
+theorem Flow.taking_not_recurring_listing {L : Flow F C} {W : Web F C} {r : Nat → Nat}
     (balances : L.BalancesAt r W) (dissipative : L.Dissipative) {cs : List C} {T : Nat}
     (closed : ∀ t, T ≤ t → L.ClosedAt cs t) (fixed : ∀ t, T ≤ t → r t = 1) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
   not_of_listsOnce cs fun _ lists recurs =>
-    Flow.taking_stops balances dissipative lists.1
+    Flow.taking_not_recurring balances dissipative lists.1
       (fun t later => (closed t later).widen fun c mem => (lists.2 c).mpr mem) fixed
       fun N => match recurs N with
         | ⟨t, later, takes⟩ =>
@@ -480,16 +480,18 @@ theorem Enumerated.not_not_finite (enumerated : w.Enumerated) : ¬ ¬ w.Finite :
   | ⟨all, every⟩ => fun none => not_not_listsOnce all fun ⟨es, lists⟩ =>
       none ⟨es, lists.1, fun x => (lists.2 x).mpr (every x)⟩
 
-/-- **Dissipation brings every enumerated world to rest**, with no listing once and no decided
-identity (`World.rests`): where the flow balances and dissipates and whatever arises is
-embodied, neither arising nor ceasing recurs. -/
-theorem Enumerated.rests (enumerated : w.Enumerated) (balanced : w.Balanced)
+/-- **Neither arising nor ceasing recurs in an enumerated world** under balance, dissipation
+and embodied arising, with no listing once and no decided identity. The statement keeps this
+non-recurrence strength, obtained from `World.rests_unrefuted` by its proved consequence. -/
+theorem Enumerated.not_recurring (enumerated : w.Enumerated) (balanced : w.Balanced)
     (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
     ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
   ⟨fun arising => enumerated.not_not_finite fun finite =>
-      (World.rests finite balanced dissipative embodied).1 arising,
+      (World.not_recurring_of_rests_unrefuted
+        (World.rests_unrefuted finite balanced dissipative embodied)).1 arising,
    fun ceasing => enumerated.not_not_finite fun finite =>
-      (World.rests finite balanced dissipative embodied).2 ceasing⟩
+      (World.not_recurring_of_rests_unrefuted
+        (World.rests_unrefuted finite balanced dissipative embodied)).2 ceasing⟩
 
 end World
 

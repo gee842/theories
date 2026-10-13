@@ -11,7 +11,7 @@ FULL = {o: n for _, o, n in MAP['renames']}
 SHORT = {}
 for o, n in FULL.items():
     so, sn = o.split('.')[-1], n.split('.')[-1]
-    assert SHORT.setdefault(so, sn) == sn, (so, sn, SHORT[so])
+    SHORT.setdefault(so, set()).add(sn)
 NEED_QUAL = {'rests', 'quiet', 'stills', 'drawdown_finite'}
 TOKEN = re.compile(r'(?<![\w.])((?:[A-Za-z]\w*\.)*)(' + '|'.join(sorted(map(re.escape, SHORT), key=len, reverse=True)) + r')(?![\w])')
 
@@ -19,12 +19,15 @@ TOKEN = re.compile(r'(?<![\w.])((?:[A-Za-z]\w*\.)*)(' + '|'.join(sorted(map(re.e
 def _sub(m):
     qual, short = m.group(1), m.group(2)
     q = qual[len('Becoming.'):] if qual.startswith('Becoming.') else qual
-    if short in NEED_QUAL:
-        if not q or not any(o == q + short or o.endswith('.' + q + short) for o in FULL):
-            return m.group(0)
-    elif q and not any(o == q + short or o.endswith('.' + q + short) for o in FULL):
-        return m.group(0)          # a qualified name that is not one of the renamed declarations
-    return qual + SHORT[short]
+    if q:
+        matches = {new.split('.')[-1] for old, new in FULL.items()
+                   if old == q + short or old.endswith('.' + q + short)}
+        if len(matches) == 1:
+            return qual + next(iter(matches))
+        return m.group(0)          # unrelated namespace or receiver; adapt known receiver calls explicitly
+    if short in NEED_QUAL or len(SHORT[short]) != 1:
+        return m.group(0)
+    return qual + next(iter(SHORT[short]))
 
 
 def rename(text):

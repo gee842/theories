@@ -255,20 +255,20 @@
     "en": "How actual humans and AI form wisdom, how concern and affect form, and whether the wisdom of primary texts corresponds to these laws can be settled only by empirical correspondence; the sufficiency of these relations for all wisdom is not proved; the ethical warrant of judgment is not in Part I; P71 (a registration within what it registers incomplete at every step) is still scratch evidence and is not counted; matching the laws to aspects of wisdom is a reading; this record adds no Lean, its new formal credit lying only in learning-by-refutation and generalization-through-lumping; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T093441.881086Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261012T014649.248714Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
-    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T093441.881086Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261012T014649.248714Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
+    "zh": "作者反审见整合文档 §93（本记录的 review 引用即该文档）；尚无独立审查。本记录不新增 Lean：它所引的每条定理都在其模块的已通过回执中（合并检查器 20261013T094743.528770Z，Lean 4.29.1，公理报告为空；外围学习桥接 20261012T014649.248714Z，Lean 4.30.0-rc2 与 Mathlib，习得部分报告为空，网络部分只报告 Mathlib 的标准公理），每个模块以源哈希绑定其回执。被核对的是这些定理的陈述与它们对目标 wisdom-root 四条连接的对照；对照本身（哪条规律构成智慧的哪一面）是论证，不是定理，理依 Ren，其余读法是 AI 的，待 Ren。",
+    "en": "The author's counterreview is in §93 of the integration note (the review reference of this record); there is no independent review yet. This record adds no Lean: every theorem it cites is in its module's passed receipt (consolidated checker 20261013T094743.528770Z, Lean 4.29.1, empty axiom reports; periphery learning bridge 20261012T014649.248714Z, Lean 4.30.0-rc2 and Mathlib, the acquisition part with empty reports and the network part reporting only Mathlib's standard axioms), each module bound to its receipt by source hash. What is checked is the statements of these theorems and their matching to the four connections of the target wisdom-root; the matching itself (which law constitutes which aspect of wisdom) is an argument, not a theorem; 理 is read as Ren reads it, the other readings are the AI's, pending Ren."
   },
   "references": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "review",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9",
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0e7cede2e15d63e1d689ef60b182c494d7d4c44d9456d1bc6f38bbd83f1e3f71",
+      "sha256": "fb57de35b6537065cf6770f3f655677e8919460aaf30a8835f1f44eba21f0adf",
       "declarations": []
     },
     {
@@ -376,7 +376,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
       "declarations": []
     },
     {
@@ -503,6 +503,10 @@
     {
       "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
       "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

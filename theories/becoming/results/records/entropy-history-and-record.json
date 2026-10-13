@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:37:58+00:00",
+  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
   "claim": {
     "zh": "历史计数的单调性不用平衡；以下变化与逆转的结论使用平衡：平衡的流中一个成员的水平每次变化都是与家族的交换（Flow.Balances.exchanges_of_change）；家族自 T 起交换的历史（Flow.history）从不缩减（Flow.history_mono）；一次交换连同其逆转（Flow.Reverses：同样的形成参与，各取其所给、给其所取）恢复每个水平，历史却记下两次（Flow.Balances.restores_levels_not_history）。零：第一律在固定单位下是无中不生有（Flow.Gainless），无损是恰好得回（Flow.Lossless），耗散是第一律加最小损失（Flow.Dissipative.gainless）；第一律之下逆转在规律之内恰当原交换无损（Flow.Reverses.gainlessOn_iff），耗散之下没有交换被逆转（Flow.Dissipative.irreversible）；Passing 有限、平衡、无损、每步被围住，交换在下一步被逆转，生起与止息复现，历史每步增长一（Passing.passes、Passing.history_grows）。记录：把交换的记录算作只被给予、不被取用的条件（Flow.withRecord、Web.withRecord；算入记录的平衡与原平衡相同，整体与每步每个家族都如此：Flow.balances_withRecord、Flow.balancesOn_withRecord），流在一步上耗散于家族，恰当有某个记录使每次交换精确守恒家族连同其记录并给记录至少一个单位（Flow.dissipatesOn_iff_conserved），也恰当以一个单位记录每次交换时家族连同记录不得增益（Flow.dissipatesOn_iff_unitRecord、Flow.dissipatesOn_iff_recorded、Flow.Dissipative.of_recorded）；两部分都需要（Passing.record_needs_both）；第一律之下记录收到的恰是家族失去的（Flow.GainlessOn.residues_lost）。耗散的量（Flow.dissipated）从不减少，第一律之下连同存量守恒（Flow.Balances.stock_dissipated），历史在其内（Flow.Balances.history_within），按比例 q 耗散时被取走的至多是它的 q+1 倍（Flow.DissipatesBy.uptake_le_lost、Flow.uptake_within_dissipated）。构型：第一律之下家族的构型在其存量的构型之内，configurations n K 恰好一次列出 K 个单位落入 n 个成员的每种方式（configurations_exact）；从不复返（Web.Revisits）则变化的步数不多于这些构型而归于静止（Flow.Balances.changes_within、changes_within_lossless、rests_of_never_revisits），所以不止的变化复返（Flow.Balances.unending_change_revisits、World.arising_revisits），耗散之下从不复返（Flow.Balances.never_revisits）。箭头：构型的量从不下降、每次变化都上升（Web.Arrow）就排除复返（Web.never_revisits_of_arrow），所以第一律之下箭头带来静止（Flow.Balances.rests_of_arrow），变化继续时没有箭头（Flow.Balances.no_arrow、World.no_arrow、Passing.no_arrow）。合并：变化是构型的函数时（Web.Determined），变化之后静止合并两个构型，不用流的规律（Web.merges_of_settles、Web.Merges）；不合并则变化不停（Web.changes_persist），第一律之下复返（Flow.Balances.revisits_of_apart）；从不复返、有箭头或被耗散时不是不合并（Flow.Balances.merges_of_never_revisits、merges_of_arrow、merges_of_dissipates）。守住历史：构型承载历史（Flow.CarriesHistory）时其读数是箭头（Flow.Balances.arrow_of_carries），第一律之下交换在构型的个数之内停止（Flow.Balances.exchange_stops_of_carries），有限世界不停交换就遗忘（World.forgets）。Gathering：精确守恒、每步被围住，记录的水平永远上升，从外部得益，世界不有限（Gathering.gathers）。六律的实例（R6，Becoming.Recurrence）：变化之后的复返是复返（Web.Revisits.recurs），箭头标记每次变化（Web.Arrow.marks），沿家族的合并是规律的合并（Web.Merges.law），确定的变化沿规律的轨道（Web.Determined.orbit）；第一律把构型限于其 T 时存量之内的构型（Flow.Balances.held，这一界限是前提 Z），所以从每步起构型构造性地两次取同一值（Flow.Balances.recurs），箭头使变化停止（Flow.Balances.arrow_stops），在这一界限之内不合并的规律带回起点（Flow.Balances.returns_of_lossless；起作用的是界限而不是不合并：Law.succ_open 不合并且永不回返），当下遗忘所保留的历史（Flow.Balances.present_forgets），箭头或耗散排除不合并的规律（Flow.Balances.not_lossless_of_arrow、not_lossless_of_dissipates）。",
     "en": "History-count monotonicity uses no balance premise; the following change and reversal results use balance: in a balanced flow every change of a member's level is an exchange with the family (Flow.Balances.exchanges_of_change); the history of the family's exchanges since T (Flow.history) never shrinks (Flow.history_mono); an exchange with its reverse (Flow.Reverses: the same formations, each taking what it gave and giving what it took) restores every level, while the history counts both (Flow.Balances.restores_levels_not_history). Zero: the first law at a fixed unit is nothing from nothing (Flow.Gainless), losing nothing is getting back exactly (Flow.Lossless), and dissipation is the first law with a least loss (Flow.Dissipative.gainless); under the first law a reverse is within the law exactly where the exchange is lossless (Flow.Reverses.gainlessOn_iff), and under dissipation no exchange is reversed (Flow.Dissipative.irreversible); Passing is finite, balanced, lossless and enclosed at every step, each exchange reversed at the next, arising and ceasing recurring, its history growing by one at every step (Passing.passes, Passing.history_grows). The record: with the record of the exchanges counted as a condition given to and never taken from (Flow.withRecord, Web.withRecord; balance with the record counted is balance, as a whole and at each step on each family: Flow.balances_withRecord, Flow.balancesOn_withRecord), a flow dissipates on a family across a step exactly where, for some record, every exchange conserves the family with its record exactly and leaves the record at least one unit (Flow.dissipatesOn_iff_conserved), and exactly where, recording each exchange at one unit, the family with its record gains nothing (Flow.dissipatesOn_iff_unitRecord, Flow.dissipatesOn_iff_recorded, Flow.Dissipative.of_recorded); both parts are needed (Passing.record_needs_both); under the first law the record receives exactly what the family loses (Flow.GainlessOn.residues_lost). The amount dissipated (Flow.dissipated) never falls, with the stock it is conserved under the first law (Flow.Balances.stock_dissipated), the history is within it (Flow.Balances.history_within), and under loss in proportion q everything taken is at most q + 1 times it (Flow.DissipatesBy.uptake_le_lost, Flow.uptake_within_dissipated). Configurations: under the first law the family's configuration stays among its stock's configurations, configurations n K listing each way K units fall into n members exactly once (configurations_exact); never revisiting (Web.Revisits), it changes at most that many times and rests (Flow.Balances.changes_within, changes_within_lossless, rests_of_never_revisits), so change without end revisits (Flow.Balances.unending_change_revisits, World.arising_revisits), and under dissipation a family never revisits (Flow.Balances.never_revisits). The arrow: a quantity of the configuration that never falls and rises at every change (Web.Arrow) rules out revisiting (Web.never_revisits_of_arrow), so under the first law an arrow brings rest (Flow.Balances.rests_of_arrow) and while change goes on there is none (Flow.Balances.no_arrow, World.no_arrow, Passing.no_arrow). Merging: where change is a function of the configuration (Web.Determined), rest after a change merges two configurations, with no law of the flow (Web.merges_of_settles, Web.Merges); merging none, change never stops (Web.changes_persist) and under the first law revisits (Flow.Balances.revisits_of_apart); never revisiting, under an arrow or under dissipation, it is not the case that it merges none (Flow.Balances.merges_of_never_revisits, merges_of_arrow, merges_of_dissipates). Holding the history: where the configuration carries the history (Flow.CarriesHistory), its reading is an arrow (Flow.Balances.arrow_of_carries), exchange stops within the configurations under the first law (Flow.Balances.exchange_stops_of_carries), and a finite world that keeps exchanging forgets (World.forgets). Gathering: under exact conservation, every step enclosed, a record's level rises without end, gaining from beyond, in a world that is not finite (Gathering.gathers). Instances of the laws of change (R6, Becoming.Recurrence): revisiting after a change is revisiting (Web.Revisits.recurs), an arrow marks every change (Web.Arrow.marks), a merge along the family is a merge of the law (Web.Merges.law), and determined change runs along the law's orbit (Web.Determined.orbit); the first law keeps the configurations among those within the stock at T (Flow.Balances.held; this bound is the supplied Z), so from every step on the configuration takes one value twice, constructively (Flow.Balances.recurs), an arrow stops change (Flow.Balances.arrow_stops), within that bound a law merging nothing brings the start back (Flow.Balances.returns_of_lossless; the bound does the work, not losing alone: Law.succ_open merges nothing and never returns), the present forgets the kept history (Flow.Balances.present_forgets), and an arrow or dissipation rules out a law merging nothing (Flow.Balances.not_lossless_of_arrow, not_lossless_of_dissipates)."
@@ -121,8 +121,8 @@
       "id": "recurrence-without-premise",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_stops、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。",
-        "en": "The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_stops, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets."
+        "zh": "实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_not_recurring、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。",
+        "en": "The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_not_recurring, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets."
       },
       "interface": {
         "output": {
@@ -199,14 +199,14 @@
     "en": "Discrete steps, natural-number amounts at a fixed unit; whether ‘entropy’ names the history or the record in the conserved amount is Ren's decision; the least loss is decomposed, not derived; determined change is a hypothesis of the merging theorems, and the conclusions of merges_of_* are double negations; only the dichotomy of merging or not is stated; that the reachable configurations shrink step by step is R6's (Law.Reachable.earlier, Law.lost_stays, any determined law, no premise), and their count within the first law's list is not stated; a coarse-grained entropy rising from an ordered start needs a premise about the start and is not stated; the flow with the record counted has Option conditions and is not a world of one kind of relatum; the correspondences to thermodynamics are readings, not physical derivations; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T093441.881086Z）：Becoming.Entropy 的 185 项定理全部空依赖，其中含 Flow.history_mono、Flow.Balances.restores_levels_not_history、Flow.dissipatesOn_iff_conserved、Passing.passes、Flow.Balances.no_arrow、Flow.Balances.recurs与 Flow.Balances.present_forgets；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4513 项定理／6364 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T093542.175797Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §110；尚无独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T093441.881086Z): the 185 theorems of Becoming.Entropy all have empty axiom reports, among them Flow.history_mono, Flow.Balances.restores_levels_not_history, Flow.dissipatesOn_iff_conserved, Passing.passes, Flow.Balances.no_arrow, Flow.Balances.recurs and Flow.Balances.present_forgets. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4513 theorems/6364 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T093542.175797Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §110 of the integration note; there is no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Entropy 的 185 项定理全部空依赖，其中含 Flow.history_mono、Flow.Balances.restores_levels_not_history、Flow.dissipatesOn_iff_conserved、Passing.passes、Flow.Balances.no_arrow、Flow.Balances.recurs与 Flow.Balances.present_forgets；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §110；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 185 theorems of Becoming.Entropy all have empty axiom reports, among them Flow.history_mono, Flow.Balances.restores_levels_not_history, Flow.dissipatesOn_iff_conserved, Passing.passes, Flow.Balances.no_arrow, Flow.Balances.recurs and Flow.Balances.present_forgets. The same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §110 of the integration note; there is no independent review yet."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Entropy.lean",
       "role": "proof",
-      "sha256": "2b019eca1d11ea50026b0f06e9ddf07ac8ff7b053a14766918a8bcc3771ca10d",
+      "sha256": "1cba13043e8de03404856b080b92321dadaa80016770bd67b4dc48e30fc49a3d",
       "declarations": [
         "Becoming.Flow.GainlessOn",
         "Becoming.Flow.LosslessOn",
@@ -446,7 +446,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "2081df33e3e504e5ca88f94650517a80bafb64bdc30c39f86e398ac28b02bf63",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
       "declarations": [
         "Becoming.Flow.DissipatesBy",
         "Becoming.Flow.DissipatesBy.replenishment_le",
@@ -456,13 +456,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
       "role": "proof",
-      "sha256": "d65a3d05e7897942d6a64cd592e7d7498ea1f141b6b56e5dd34c3a7fad266cfa",
+      "sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
       "declarations": [
         "Becoming.Revisits",
         "Becoming.revisits_of_held",
         "Becoming.revisits_from",
         "Becoming.Marks",
-        "Becoming.Marks.change_stops",
+        "Becoming.Marks.change_not_recurring",
         "Becoming.Law.orbit",
         "Becoming.Law.Lossless",
         "Becoming.Law.Lossless.cancel",
@@ -479,7 +479,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "b430291da05249c7a490c4ba85e07fdc09b9dfd3f357c308cecca8a38b0b06ba",
+      "sha256": "6b58869f4b6746ab157ef646eb45f7dca6584a7c3f88321156a7a3efb032c74d",
       "declarations": [
         "Becoming.Flow.fall_lowers_on",
         "Becoming.World.rises_of_arises",
@@ -491,7 +491,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
+      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
       "declarations": [
         "Becoming.Flow.DissipatesOn",
         "Becoming.Flow.Dissipative",
@@ -503,7 +503,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.taken",
@@ -515,7 +515,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "f20d8511ce6993a748e336c3b8b7344766dba705096fdd232afe5f1eed04e8ec",
+      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
       "declarations": [
         "Becoming.World",
         "Becoming.World.Finite",
@@ -529,19 +529,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9",
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0e7cede2e15d63e1d689ef60b182c494d7d4c44d9456d1bc6f38bbd83f1e3f71",
+      "sha256": "fb57de35b6537065cf6770f3f655677e8919460aaf30a8835f1f44eba21f0adf",
       "declarations": []
     },
     {
@@ -553,7 +553,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "80d57cdc0ae034055c6158f999ab594cfb12cbc7abe58cabca6bd4ed12113a3a",
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08",
       "declarations": []
     }
   ],
@@ -628,6 +628,14 @@
     {
       "zh": "2026-10-13：按 Ren 的合并接手指令从 R5 分支 52ff83a4 整合；原始源码逐字节保留，四个冲突列表辅助名限定到 EntropyLists，研究 §110；补全导入、去掉未证明的唯一性读法，区分不需要平衡的历史单调性与使用平衡的变化／逆转结论；新合并回执核对当前源码，原有历史如下。",
       "en": "2026-10-13: integrated from R5 branch 52ff83a4 under Ren’s takeover and merge request; original source bytes retained, four colliding list helpers qualified under EntropyLists, study §110. Imports are corrected, an unproved uniqueness reading removed, and premise-free history monotonicity distinguished from change/reversal results using balance. Current receipts check the integrated source; prior history is retained below."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

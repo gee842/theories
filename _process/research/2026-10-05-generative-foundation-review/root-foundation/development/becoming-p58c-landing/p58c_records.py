@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """P58c records: python3 -B p58c_records.py ROOT SECTION
-Every record naming a renamed declaration takes the new name outside its history and validation scope (those keep the
-names of their time); prose that said a world comes to rest, or a quantity stops or falls finitely often, is stated at
-the strength proved; the new declarations are listed; one history line each."""
+Every record naming a renamed declaration takes the new name in its current body and in validation scopes citing
+HEAD's current core receipt (which the following repoint step advances). History and scopes of genuinely older
+receipts keep their names. Prose is stated at the strength proved; new declarations are listed; one history line each.
+Changed documentary content receives the current UTC review time, without claiming an independent proof review."""
+from datetime import datetime, timezone
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -14,9 +17,22 @@ ROOT, SEC = Path(sys.argv[1]).resolve(), sys.argv[2]
 RECORDS = ROOT / 'theories/becoming/results/records'
 SOURCE = 'sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md'
 KEEP = {'history', 'validation_scope'}
+receipt = json.loads((ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json').read_text())
+assert receipt['status'] == 'passed'
+run = receipt['utc']
+DATE = f'{run[:4]}-{run[4:6]}-{run[6:8]}'
+CORE_PATH = 'experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json'
+BASE_UTC = json.loads(subprocess.check_output(['git', '-C', str(ROOT), 'show', f'HEAD:{CORE_PATH}']))['utc']
+REVIEWED = datetime.now(timezone.utc).isoformat(timespec='seconds')
 
 # (old, new) on the text after the names are renamed; each must occur exactly once in the record
 PROSE = {
+ 'listing-once-is-decided-identity': [
+  ('耗散使每个可枚举的世界归于静止（World.Enumerated、World.Enumerated.not_recurring）',
+   '在平衡、耗散且生起体现的条件下，每个可枚举世界的生起与止息都不复现（World.Enumerated、World.Enumerated.not_recurring）'),
+  ('dissipation brings every enumerated world to rest (World.Enumerated, World.Enumerated.not_recurring)',
+   'under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world '
+   '(World.Enumerated, World.Enumerated.not_recurring)')],
  'becoming-renewal-reading': [
   ('falls_not_recurring 与 drawdown_finite 直接调用', 'falls_not_recurring 与 Conditions.drawdown_not_recurring 直接调用'),
   ('falls_not_recurring and drawdown_finite directly call', 'falls_not_recurring and Conditions.drawdown_not_recurring directly call')],
@@ -141,14 +157,15 @@ ADD = {   # record: (file suffix, after declaration, new declarations, also alia
  'rest-with-refinement-counted': ('Becoming/Resolution.lean', 'Becoming.World.rests_unrefuted_of_after',
                                   ['Becoming.World.restsFrom_of_after'], False),
 }
-HIST_ZH = (f'2026-10-12 P58c：静止一族按强度命名（Ren：“agree with you”，{SOURCE}）：名称恰是陈述所证的强度。'
+HIST_ZH = (f'{DATE} P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，{SOURCE}）：名称恰是陈述所证的强度。'
            '从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；'
-           '“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §{sec}。历史与验证范围保留当时的名称。')
-HIST_EN = (f'2026-10-12 P58c: the rest family named by strength (Ren: “agree with you”, {SOURCE}): each name says the strength '
+           '“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §{sec}。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。')
+HIST_EN = (f'{DATE} P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, {SOURCE}): each name says the strength '
            'its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted '
            '(their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named '
            '…_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §{sec} '
-           'of the integration note. History and validation scope keep the names of their time.')
+           'of the integration note. History and scopes of older receipts retain former names; scopes advancing with '
+           'the current receipt use current names.')
 
 
 def once(text, old, new, where):
@@ -162,7 +179,10 @@ for f in sorted(RECORDS.glob('*.json')):
     rec = json.loads(f.read_text())
     body = {k: v for k, v in rec.items() if k not in KEEP}
     dumped = json.dumps(body, ensure_ascii=False)
-    if not N.old_left(dumped) and f.stem not in PROSE and f.stem not in ADD:
+    scope = rec.get('validation_scope', {})
+    old_scope = json.dumps(scope, ensure_ascii=False)
+    current_scope = N.rename(old_scope) if BASE_UTC in old_scope else old_scope
+    if not N.old_left(dumped) and f.stem not in PROSE and f.stem not in ADD and current_scope == old_scope:
         continue
     new = N.rename(dumped)
     for old, rep, *count in PROSE.get(f.stem, []):
@@ -182,6 +202,9 @@ for f in sorted(RECORDS.glob('*.json')):
     for k in rec:
         if k not in KEEP:
             rec[k] = body[k]
+    if current_scope != old_scope:
+        rec['validation_scope'] = json.loads(current_scope)
+    rec['reviewed_at_utc'] = REVIEWED
     rec['history'].append({'zh': HIST_ZH.format(sec=SEC), 'en': HIST_EN.format(sec=SEC)})
     f.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + '\n')
     changed.append(f.stem)

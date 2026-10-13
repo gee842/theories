@@ -658,24 +658,52 @@ theorem ceasing_steps_found (ceasing : ∀ M, ∃ t a, M ≤ t ∧ CeasesToBe (p
                Nat.lt_of_lt_of_le (all s mem).2.1 (Nat.le_trans later (Nat.le_succ t)),
                (all s mem).2.2⟩⟩
 
-/-- With a list covering what holds at `N` and nothing coming to be from `N` on, ceasing does
-not recur. No decidability is needed. -/
-theorem Covers.ceasing_not_recurring {L : List α} {N : Nat} (covers : Covers p L N)
-    (none : ∀ n, NoneComes p N n) : ¬ ∀ M, ∃ t a, M ≤ t ∧ CeasesToBe (p a) t :=
-  fun ceasing => match ceasing_steps_found ceasing N (L.length + 1) with
-  | ⟨_, _, distinct, length, from_, all⟩ => match le_dest from_ with
+/-- Where after every step a later ceasing is not refuted, that any number of distinct steps
+from `N` see something cease, all before some step, is not refuted. -/
+theorem ceasing_steps_unrefuted (ceasing : ∀ M, ¬ ¬ ∃ t a, M ≤ t ∧ CeasesToBe (p a) t) (N : Nat) :
+    ∀ k, ¬ ¬ ∃ E U, Distinct E ∧ E.length = k ∧ N ≤ U ∧
+      ∀ t, t ∈ E → N ≤ t ∧ t < U ∧ ∃ a, CeasesToBe (p a) t
+  | 0 => fun no => no ⟨[], N, trivial, rfl, Nat.le_refl N, fun _ mem => nomatch mem⟩
+  | k + 1 => fun no =>
+    ceasing_steps_unrefuted ceasing N k fun ⟨E, U, distinct, length, from_, all⟩ =>
+    ceasing U fun ⟨t, a, later, ceases⟩ => no
+      ⟨t :: E, t + 1,
+       ⟨fun mem => Nat.lt_irrefl t (Nat.lt_of_lt_of_le (all t mem).2.1 later), distinct⟩,
+       congrArg Nat.succ length,
+       Nat.le_trans from_ (Nat.le_trans later (Nat.le_succ t)),
+       fun s mem => match mem_cons_cases mem with
+         | .inl same => Eq.subst (motive := fun x => N ≤ x ∧ x < t + 1 ∧
+               ∃ a, CeasesToBe (p a) x) same.symm
+             ⟨Nat.le_trans from_ later, Nat.lt_succ_self t, a, ceases⟩
+         | .inr mem => ⟨(all s mem).1,
+             Nat.lt_of_lt_of_le (all s mem).2.1 (Nat.le_trans later (Nat.le_succ t)),
+             (all s mem).2.2⟩⟩
+
+/-- With a list covering what holds at `N` and nothing coming to be from `N` on, that ceasing
+stops from some step on cannot be refuted: it is not the case that after every step a later
+ceasing stays unrefuted (`stop_unrefuted_iff` reads it). No decidability is needed. -/
+theorem Covers.ceasing_stops_unrefuted {L : List α} {N : Nat} (covers : Covers p L N)
+    (none : ∀ n, NoneComes p N n) : ¬ ∀ M, ¬ ¬ ∃ t a, M ≤ t ∧ CeasesToBe (p a) t :=
+  fun ceasing => ceasing_steps_unrefuted ceasing N (L.length + 1)
+    fun ⟨_, _, distinct, length, from_, all⟩ => match le_dest from_ with
     | ⟨n, same⟩ => Nat.not_succ_le_self L.length (Nat.le_trans (Nat.le_of_eq length.symm)
         (covers.ceasing_steps_within (none n) distinct fun t mem =>
           ⟨(all t mem).1, Nat.lt_of_lt_of_le (all t mem).2.1 (Nat.le_of_eq same),
            (all t mem).2.2⟩))
 
-/-- So with a list covering what holds at `N`, ceasing at arbitrarily late steps refutes that
-nothing comes to be from `N` on: `Covers.coming_from_of_ceasing` doubly negated, with no
-decidability. -/
+/-- With a list covering what holds at `N` and nothing coming to be from `N` on, ceasing does
+not recur: the weaker form of `Covers.ceasing_stops_unrefuted`. No decidability is needed. -/
+theorem Covers.ceasing_not_recurring {L : List α} {N : Nat} (covers : Covers p L N)
+    (none : ∀ n, NoneComes p N n) : ¬ ∀ M, ∃ t a, M ≤ t ∧ CeasesToBe (p a) t :=
+  fun ceasing => covers.ceasing_stops_unrefuted none fun M no => no (ceasing M)
+
+/-- So with a list covering what holds at `N`, a later ceasing left unrefuted after every step
+refutes that nothing comes to be from `N` on: `Covers.coming_from_of_ceasing` doubly negated,
+with no decidability. Ceasing at arbitrarily late steps is the case it was first stated for. -/
 theorem Covers.not_not_coming_from {L : List α} {N : Nat} (covers : Covers p L N)
-    (ceasing : ∀ M, ∃ t a, M ≤ t ∧ CeasesToBe (p a) t) :
+    (ceasing : ∀ M, ¬ ¬ ∃ t a, M ≤ t ∧ CeasesToBe (p a) t) :
     ¬ ¬ ∃ s a, N ≤ s ∧ ComesToBe (p a) s :=
-  fun nothing => covers.ceasing_not_recurring
+  fun nothing => covers.ceasing_stops_unrefuted
     (fun _ s a from_ _ comes => nothing ⟨s, a, from_, comes⟩) ceasing
 
 end Undecided

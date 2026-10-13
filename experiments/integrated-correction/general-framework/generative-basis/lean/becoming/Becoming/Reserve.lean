@@ -32,14 +32,14 @@ step.
   step one undermines as published and not when its dependence is moved onto its fat
   (`Famine.living_differs`), so the choice of reading bears on the stepwise valuation.
 * **A reserve defers the end and does not escape it.** A formation unsupported from some
-  step on is active only finitely often (`Carries.active_finitely`), and over any stretch
-  at most as often as its reserve at the start (`Carries.lasts`, `Carries.lasts_within`).
+  step on is not active at arbitrarily late steps (`Carries.active_not_recurring`), and over any
+  stretch at most as often as its reserve at the start (`Carries.lasts`, `Carries.lasts_within`).
   So after a loss without return with the dependence unchanged
   (`Carries.consumed_lasts`), and after the end of an embodied relatum it depends on at a
   positive need (`Carries.coextinct_lasts`), a formation is active beyond its support at
   most as often as its reserve: lagged ending and lagged coextinction. Dormancy defers
-  the end the same way: unsupported, a formation arises only finitely often
-  (`Carries.arising_finitely`), and a reserve that decays while dormant, as a seed's
+  the end the same way: unsupported, a formation does not arise at arbitrarily late steps
+  (`Carries.arising_not_recurring`), and a reserve that decays while dormant, as a seed's
   viability, bounds the time as well (`Web.Decays`, `Carries.ends_within`). With such a
   reserve, coextinction runs down a chain of dependence of any length: each relatum of the
   chain has ended once the reserves of the links before it have passed, each read where
@@ -129,11 +129,11 @@ theorem Carries.pos (carries : W.Carries r) {t : Nat} {f : F} (active : W.active
     (unsupported : ¬ W.Supported t f) : 0 < r t f :=
   CarriesAcross.pos (carries t f) active unsupported
 
-/-- Carried and unsupported from step `T` on, a formation is active only finitely often:
+/-- Carried and unsupported from step `T` on, a formation is not active at arbitrarily late steps:
 only that formation and those steps are used. -/
-theorem active_finitely_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
+theorem active_not_recurring_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t f :=
-  fun recurs => falls_finitely (fun t => r t f) T
+  fun recurs => falls_not_recurring (fun t => r t f) T
     (fun t later => (carries t later (unsupported t later)).1)
     fun N => match recurs (N + T) with
       | ⟨t, later, active⟩ =>
@@ -141,10 +141,10 @@ theorem active_finitely_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.C
         ⟨t, Nat.le_trans (Nat.le_add_right N T) later,
           (carries t from_ (unsupported t from_)).2 active⟩
 
-/-- Unsupported from step `T` on, a formation is active only finitely often. -/
-theorem Carries.active_finitely (carries : W.Carries r) {f : F} {T : Nat}
+/-- Unsupported from step `T` on, a formation is not active at arbitrarily late steps. -/
+theorem Carries.active_not_recurring (carries : W.Carries r) {f : F} {T : Nat}
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t f :=
-  active_finitely_from (fun t _ => carries t f) unsupported
+  active_not_recurring_from (fun t _ => carries t f) unsupported
 
 /-- Carried across an unsupported step, the reserve falls by at least one if the formation is
 active. -/
@@ -201,17 +201,18 @@ theorem Carries.lasts_within (carries : W.Carries r) {f : F} [∀ t, Decidable (
   Nat.le_trans (Nat.le_trans (Nat.le_add_left _ _) (carries.lasts S N unsupported))
     (capacity S)
 
-/-- Carried and unsupported from step `T` on, a formation arises only finitely often. -/
-theorem arising_finitely_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
+/-- Carried and unsupported from step `T` on, a formation does not arise at arbitrarily late
+steps. -/
+theorem arising_not_recurring_from {f : F} {T : Nat} (carries : ∀ t, T ≤ t → W.CarriesAcross r t f)
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.Arises t f :=
-  fun arising => active_finitely_from carries unsupported fun N => match arising N with
+  fun arising => active_not_recurring_from carries unsupported fun N => match arising N with
     | ⟨t, later, arises⟩ => ⟨t + 1, Nat.le_succ_of_le later, arises.2⟩
 
-/-- Unsupported from step `T` on, a formation arises only finitely often: dormancy defers
-the end and does not escape it. -/
-theorem Carries.arising_finitely (carries : W.Carries r) {f : F} {T : Nat}
+/-- Unsupported from step `T` on, a formation does not arise at arbitrarily late steps: dormancy
+defers the end and does not escape it. -/
+theorem Carries.arising_not_recurring (carries : W.Carries r) {f : F} {T : Nat}
     (unsupported : ∀ t, T ≤ t → ¬ W.Supported t f) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.Arises t f :=
-  arising_finitely_from (fun t _ => carries t f) unsupported
+  arising_not_recurring_from (fun t _ => carries t f) unsupported
 
 /-- Carried, decaying and unsupported from step `S` on, a reserve has, after `n` steps,
 fallen by `n` or been spent: only that formation and those steps are used. -/
@@ -268,13 +269,14 @@ theorem unsupported_after_loss {T : Nat} {g : F} {c : C}
     (Nat.le_trans (fixed t later).2 (supported c (fixed t later).1))
 
 /-- Lagged ending: after a loss without return with the dependence unchanged, a formation
-with a reserve is active only finitely often, at most as often as its reserve after the
-loss (`Carries.lasts`). Under `Dependent`, the zero reserve, it is not active at all
-(`consumed_ends_when_fixed`). -/
+with a reserve is not active at arbitrarily late steps, and over any stretch at most as often
+as its reserve after the loss (`Carries.lasts`). Under `Dependent`, the zero reserve, it is not
+active at all (`consumed_ends_when_fixed`). -/
 theorem Carries.consumed_lasts (carries : W.Carries r) {T : Nat} {g : F} {c : C}
     (fixed : ∀ t, T < t → W.requires t g c ∧ W.need T g c ≤ W.need t g c)
     (below : ∀ t, T < t → W.level t c < W.need T g c) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t g :=
-  active_finitely_from (T := T + 1) (fun t _ => carries t g) (unsupported_after_loss fixed below)
+  active_not_recurring_from (T := T + 1) (fun t _ => carries t g)
+    (unsupported_after_loss fixed below)
 
 end Web
 
@@ -383,14 +385,14 @@ theorem unsupported_after_end {y g : X} (embodied : W.Embodied y) {T : Nat}
     (Nat.lt_of_lt_of_le (bears t later).2 (supported y (bears t later).1)))
 
 /-- Lagged coextinction: after an embodied relatum ends, a formation depending on it at a
-positive need, with a reserve, is active only finitely often, at most as often as its
-reserve when the relatum ended (`Carries.lasts`). Under `Dependent` it ends with it
-(`coextinct`). -/
+positive need, with a reserve, is not active at arbitrarily late steps, and over any stretch at
+most as often as its reserve when the relatum ended (`Carries.lasts`). Under `Dependent` it ends
+with it (`coextinct`). -/
 theorem Carries.coextinct_lasts {r : Nat → X → Nat} (carries : W.Carries r) {y g : X}
     (embodied : W.Embodied y) {T : Nat}
     (bears : ∀ t, T ≤ t → W.requires t g y ∧ 0 < W.need t g y)
     (ended : ∀ t, T ≤ t → ¬ W.active t y) : ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t g :=
-  active_finitely_from (fun t _ => carries t g) (unsupported_after_end embodied bears ended)
+  active_not_recurring_from (fun t _ => carries t g) (unsupported_after_end embodied bears ended)
 
 /-- When each link of a chain has ended: the first at `T`, each later one once its reserve,
 read when the link before it has ended, has passed. -/
@@ -464,7 +466,7 @@ theorem chain_ends_of_em_from (em : ∀ P : Prop, P ∨ ¬ P) {r : Nat → X →
   | k + 1, within => match chain_ends_of_em_from em carries embodied bears ended k
       (Nat.le_of_succ_le within) with
     | ⟨E, from_T, gone⟩ =>
-      match exists_not_of_em em (active_finitely_from (T := E)
+      match exists_not_of_em em (active_not_recurring_from (T := E)
           (fun t from_ => carries k t within (Nat.le_trans from_T from_))
           (unsupported_after_end (embodied k within)
             (fun s from_ => bears k s within (Nat.le_trans from_T from_)) gone)) with
@@ -985,7 +987,7 @@ theorem once {t u : Nat} (at_t : (web s).active t ()) (at_u : (web s).active u (
 
 end Once
 
-/-- A step after which a formation is never active needs omniscience. `active_finitely`
+/-- A step after which a formation is never active needs omniscience. `active_not_recurring`
 gives only that a formation unsupported from some step on is not active at arbitrarily late
 steps. If every formation never supported, with a carried reserve and decided activity,
 had a step after which it is never active, `LPO` would hold, even where activity holds at

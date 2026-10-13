@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-09T06:09:26+00:00",
+  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
   "claim": {
-    "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量只能下降有限次，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；条件互不相交时可不连通。消耗者与被它消耗的形成共同参与被汲取的条件，故在 N_rel 下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件；传递沿共同参与进行，不用到消耗本身。",
-    "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on falls only finitely often; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; disjoint conditions can leave it unconnected. A consumer and the formation it consumes participate in the drawn condition, so under N_rel a standpoint valuing the consumer's activity holds significant every living event of the formation it consumes; the transmission runs along co-participation and does not use consumption itself."
+    "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量不在任意晚的步下降，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；条件互不相交时可不连通。消耗者与被它消耗的形成共同参与被汲取的条件，故在 N_rel 下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件；传递沿共同参与进行，不用到消耗本身。",
+    "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on does not fall at arbitrarily late steps; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; disjoint conditions can leave it unconnected. A consumer and the formation it consumes participate in the drawn condition, so under N_rel a standpoint valuing the consumer's activity holds significant every living event of the formation it consumes; the transmission runs along co-participation and does not use consumption itself."
   },
   "hypotheses": [
     {
@@ -33,11 +33,11 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
   "aliases": [
-    "Becoming.falls_finitely",
+    "Becoming.falls_not_recurring",
     "Becoming.Run.not_of_depletion",
     "Becoming.no_execution_of_depletion",
     "Becoming.Run.renewal_recurs",
-    "Becoming.Conditions.drawdown_finite",
+    "Becoming.Conditions.drawdown_not_recurring",
     "Becoming.Renewable.class_belongs_to_the_run",
     "Becoming.Conditions.living_iff_relational",
     "Becoming.Conditions.connected_of_common",
@@ -51,8 +51,8 @@
       "id": "relational-renewal-classification",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。",
-        "en": "Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined."
+        "zh": "Conditions.along 产出该结果的 Unfolding；falls_not_recurring 与 Conditions.drawdown_not_recurring 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。",
+        "en": "Conditions.along produces that result's Unfolding; falls_not_recurring and Conditions.drawdown_not_recurring directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined."
       },
       "interface": {
         "output": {
@@ -122,8 +122,8 @@
     {
       "id": "open-form-realization-under-revision",
       "detail": {
-        "zh": "ContinuationRenewal 的自然数秩复现界是 falls_finitely 的情形（Run.renewal_recurs）；其良基形式更一般，不由此导出。",
-        "en": "ContinuationRenewal's natural-rank recurrence bound is a case of falls_finitely (Run.renewal_recurs); its well-founded form is more general and is not derived here."
+        "zh": "ContinuationRenewal 的自然数秩复现界是 falls_not_recurring 的情形（Run.renewal_recurs）；其良基形式更一般，不由此导出。",
+        "en": "ContinuationRenewal's natural-rank recurrence bound is a case of falls_not_recurring (Run.renewal_recurs); its well-founded form is more general and is not derived here."
       }
     },
     {
@@ -183,22 +183,22 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The unification of bounds is organizational, not new mathematics; ContinuationRenewal's well-founded form is not derived from the principle. The relational reading and the common-participation relation are disclosed reading choices; whether they are the right reading of 生生, and the empirical correspondence of common conditions, lie outside this result. The correspondence discipline for conditions is stated for the stepwise reading only (condition-correspondence-discipline); the reading is relative to a run and includes no component of further generation. A formation's class (RenewingIn, ConsumingIn) depends on identity across steps, while a condition's class does not (identity-across-steps)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T093441.881086Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖。控制例“有共同条件的运行在关系读法下连通”不计为新定理；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4513 项定理／6364 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）更正对应中的一句，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明形成的类对跨步同一的依赖，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这一注明，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T093441.881086Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports. The control that a run with a common condition is connected under the relational reading is not counted; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4513 theorems/6364 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a fourth independent review (BECOMING-P9B-P10-P11-REVIEW.md) corrected one sentence of the correspondence, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the dependence of formation classes on identity across steps be noted, see §19; a sixth (BECOMING-P13-P14-P12B-REVIEW.md) accepted that note, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Renewal 6 项定理与 Becoming.Metaethics 读法一节 6 项定理及桥接层的 living_iff_relational 全部空依赖。控制例“有共同条件的运行在关系读法下连通”不计为新定理；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §4、§6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-RENEWAL-READING-REVIEW.md），其更正在整合文档 §7 处理；第四次独立审查（BECOMING-P9B-P10-P11-REVIEW.md）更正对应中的一句，见 §15；第五次独立审查（BECOMING-P11B-P12-REVIEW.md）要求注明形成的类对跨步同一的依赖，见 §19；第六次独立审查（BECOMING-P13-P14-P12B-REVIEW.md）接受这一注明，见 §22。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): Becoming.Renewal's 6 theorems and the 6 theorems of Becoming.Metaethics' reading section with the bridge's living_iff_relational all have empty axiom reports. The control that a run with a common condition is connected under the relational reading is not counted; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §§4 and 6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-RENEWAL-READING-REVIEW.md), and its corrections are handled in §7; a fourth independent review (BECOMING-P9B-P10-P11-REVIEW.md) corrected one sentence of the correspondence, see §15; a fifth (BECOMING-P11B-P12-REVIEW.md) asked that the dependence of formation classes on identity across steps be noted, see §19; a sixth (BECOMING-P13-P14-P12B-REVIEW.md) accepted that note, see §22. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
       "role": "proof",
-      "sha256": "17a81c613e07ed52124bc44916c53d4f18224bdbfe2f07ecfeb930708da80403",
+      "sha256": "20ecc226f5228135c051d9830995ff784731854d0c39c2fd06c40e03834a13f8",
       "declarations": [
         "Becoming.Conditions",
         "Becoming.Conditions.along",
-        "Becoming.falls_finitely",
+        "Becoming.falls_not_recurring",
         "Becoming.Run.not_of_depletion",
         "Becoming.no_execution_of_depletion",
         "Becoming.Run.renewal_recurs",
-        "Becoming.Conditions.drawdown_finite",
+        "Becoming.Conditions.drawdown_not_recurring",
         "Becoming.Renewable.class_belongs_to_the_run"
       ]
     },
@@ -258,19 +258,19 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9",
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "80d57cdc0ae034055c6158f999ab594cfb12cbc7abe58cabca6bd4ed12113a3a",
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08",
       "declarations": []
     },
     {
@@ -687,6 +687,14 @@
     {
       "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
       "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

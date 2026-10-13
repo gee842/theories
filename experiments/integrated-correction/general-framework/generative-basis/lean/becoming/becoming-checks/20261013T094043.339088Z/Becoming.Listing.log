@@ -1,0 +1,4 @@
+Becoming/Listing.lean:384:16: error(lean.invalidField): Invalid field `finite_ceases`: The environment does not contain `Function.finite_ceases`, so it is not possible to project the field `finite_ceases` from an expression
+  dissipative
+of type
+  ∀ (cs : List C) (t : Nat), Distinct cs → L.ClosedAt cs t → L.DissipatesOn cs t

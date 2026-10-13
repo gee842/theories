@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-11T21:31:22+00:00",
+  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
   "claim": {
-    "zh": "以下对每个依存网成立，不加任何关于它的前提。一个规定跨一步开始成立（之前不成立、之后成立）或不再成立（之前成立、之后不成立）（ComesToBe、CeasesToBe）；形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平（Web.change_readings）。可判定的规定在某步成立、此后没有一步不再成立，就一直成立（persists）；一个形成在某步被支持，在另一步仍被支持，只要它在后者的每个依存在前者都有、所需不更大、条件的水平不更低（Web.supported_of）。任一段步上，一个量在终点加上其间的全部下降，等于在起点加上其间的全部上升；有限家族的总量连同成员的升降也是如此（over_stretch、family_over_stretch）。量不低于零，所以有限家族在一段步上的下降至多比上升多出起点的总量（fallen_within），成员在任意晚的步下降就在任意晚的步上升（rising_recurs）：每个展开中，有限多个条件的水平持续下降就持续上升（Web.falls_need_rises）；对一个量，这就是 Becoming.Renewal 中“从某步起不上升的观测量只下降有限次”（falls_finitely_from_floor）。量有界时，上升至多比下降多出每个成员的界（risen_within），在任意晚的步上升就需要在任意晚的步下降（falling_recurs）。一个规定只计 0 或 1，两者都适用：任一段步上，有限家族在终点成立的成员连同其间不再成立的，恰是在起点成立的成员连同其间开始成立的（held_over_stretch）；开始成立与不再成立的次数之差不超过成员数（keep_pace）；一方复现恰当另一方复现（coming_recurs_iff）。读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的（Web.activity_over_stretch）；它们在任意晚的步生起恰当在任意晚的步止息（Web.arising_recurs_iff）；形成有限多时，某个形成在任意晚的步生起（Web.Unceasing）恰当某个形成在任意晚的步止息：生起复现恰当止息复现（Web.unceasing_iff）。读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在（Web.standing_recurs_iff）。有限性起作用：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）；一开始都活跃的形成可以一个接一个止息而没有任何生起（Attrition）。不用伦理前提，也不用 Lean 公理。",
-    "en": "The following holds of every web, with no premise about it. A determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after (ComesToBe, CeasesToBe); a formation arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are this one change, read of activity, dependence and standing (Web.change_readings). A decidable determination that holds and ceases to be at no later step holds on (persists); a formation supported at one step is supported at another where each dependence it has at the other it had at the first, at no greater need, on a condition standing no lower (Web.supported_of). Over any stretch of steps, an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members (over_stretch, family_over_stretch). No amount falls below zero, so over a stretch a finite family falls by at most its total at the start more than it rises (fallen_within), and members falling at arbitrarily late steps rise at arbitrarily late steps (rising_recurs): in every unfolding, levels of finitely many conditions that keep falling keep rising (Web.falls_need_rises); for one amount this is Becoming.Renewal's law that an observable never rising from some step on falls only finitely often (falls_finitely_from_floor). With the amounts bounded, the family rises by at most its bound per member more than it falls (risen_within), and rising at arbitrarily late steps needs falling at arbitrarily late steps (falling_recurs). A determination counts as zero or one, so both hold of it: over any stretch, the members of a finite family holding at the end with those that ceased to be are those holding at the start with those that came to be (held_over_stretch); comings and ceasings differ by at most the number of members (keep_pace); and each recurs exactly when the other does (coming_recurs_iff). Read of activity, given decidable activity: the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose (Web.activity_over_stretch); they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps (Web.arising_recurs_iff); and with finitely many formations, some formation arises at arbitrarily late steps (Web.Unceasing) exactly when some formation ceases at arbitrarily late steps: arising recurs exactly when ceasing does (Web.unceasing_iff). Read of standing, with no premise at all: conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps (Web.standing_recurs_iff). Finiteness does the work: ever new formations can arise with none ceasing while a level rises at every step and never falls (Accretion), and formations all active at the start can cease one after another while nothing arises (Attrition). No ethical premise and no Lean axiom is used."
+    "zh": "以下对每个依存网成立，不加任何关于它的前提。一个规定跨一步开始成立（之前不成立、之后成立）或不再成立（之前成立、之后不成立）（ComesToBe、CeasesToBe）；形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平（Web.change_readings）。可判定的规定在某步成立、此后没有一步不再成立，就一直成立（persists）；一个形成在某步被支持，在另一步仍被支持，只要它在后者的每个依存在前者都有、所需不更大、条件的水平不更低（Web.supported_of）。任一段步上，一个量在终点加上其间的全部下降，等于在起点加上其间的全部上升；有限家族的总量连同成员的升降也是如此（over_stretch、family_over_stretch）。量不低于零，所以有限家族在一段步上的下降至多比上升多出起点的总量（fallen_within），成员在任意晚的步下降就在任意晚的步上升（rising_recurs）：每个展开中，有限多个条件的水平持续下降就持续上升（Web.falls_need_rises）；对一个量，这就是 Becoming.Renewal 中“从某步起不上升的观测量不在任意晚的步下降”（falls_not_recurring_from_floor）。量有界时，上升至多比下降多出每个成员的界（risen_within），在任意晚的步上升就需要在任意晚的步下降（falling_recurs）。一个规定只计 0 或 1，两者都适用：任一段步上，有限家族在终点成立的成员连同其间不再成立的，恰是在起点成立的成员连同其间开始成立的（held_over_stretch）；开始成立与不再成立的次数之差不超过成员数（keep_pace）；一方复现恰当另一方复现（coming_recurs_iff）。读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的（Web.activity_over_stretch）；它们在任意晚的步生起恰当在任意晚的步止息（Web.arising_recurs_iff）；形成有限多时，某个形成在任意晚的步生起（Web.Unceasing）恰当某个形成在任意晚的步止息：生起复现恰当止息复现（Web.unceasing_iff）。读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在（Web.standing_recurs_iff）。有限性起作用：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）；一开始都活跃的形成可以一个接一个止息而没有任何生起（Attrition）。不用伦理前提，也不用 Lean 公理。",
+    "en": "The following holds of every web, with no premise about it. A determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after (ComesToBe, CeasesToBe); a formation arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are this one change, read of activity, dependence and standing (Web.change_readings). A decidable determination that holds and ceases to be at no later step holds on (persists); a formation supported at one step is supported at another where each dependence it has at the other it had at the first, at no greater need, on a condition standing no lower (Web.supported_of). Over any stretch of steps, an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members (over_stretch, family_over_stretch). No amount falls below zero, so over a stretch a finite family falls by at most its total at the start more than it rises (fallen_within), and members falling at arbitrarily late steps rise at arbitrarily late steps (rising_recurs): in every unfolding, levels of finitely many conditions that keep falling keep rising (Web.falls_need_rises); for one amount this is Becoming.Renewal's law that an observable never rising from some step on does not fall at arbitrarily late steps (falls_not_recurring_from_floor). With the amounts bounded, the family rises by at most its bound per member more than it falls (risen_within), and rising at arbitrarily late steps needs falling at arbitrarily late steps (falling_recurs). A determination counts as zero or one, so both hold of it: over any stretch, the members of a finite family holding at the end with those that ceased to be are those holding at the start with those that came to be (held_over_stretch); comings and ceasings differ by at most the number of members (keep_pace); and each recurs exactly when the other does (coming_recurs_iff). Read of activity, given decidable activity: the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose (Web.activity_over_stretch); they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps (Web.arising_recurs_iff); and with finitely many formations, some formation arises at arbitrarily late steps (Web.Unceasing) exactly when some formation ceases at arbitrarily late steps: arising recurs exactly when ceasing does (Web.unceasing_iff). Read of standing, with no premise at all: conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps (Web.standing_recurs_iff). Finiteness does the work: ever new formations can arise with none ceasing while a level rises at every step and never falls (Accretion), and formations all active at the start can cease one after another while nothing arises (Attrition). No ethical premise and no Lean axiom is used."
   },
   "hypotheses": [
     {
@@ -47,7 +47,7 @@
     "Becoming.Web.unceasing_iff",
     "Becoming.Web.falls_need_rises",
     "Becoming.Web.supported_of",
-    "Becoming.falls_finitely_from_floor"
+    "Becoming.falls_not_recurring_from_floor"
   ],
   "dependencies": [
     {
@@ -77,8 +77,8 @@
       "id": "becoming-renewal-reading",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "falls_finitely 是一个量的下限规律（falls_finitely_from_floor）。",
-        "en": "falls_finitely is the floor law for one amount (falls_finitely_from_floor)."
+        "zh": "falls_not_recurring 是一个量的下限规律（falls_not_recurring_from_floor）。",
+        "en": "falls_not_recurring is the floor law for one amount (falls_not_recurring_from_floor)."
       },
       "interface": {
         "output": {
@@ -224,14 +224,14 @@
     "en": "Contains no ethical predicate; stated for the reading across discrete steps; finite families are given as lists; recurring means occurring at arbitrarily late steps and gives no frequency; keeping pace is of counts and says neither which formations arise or cease nor why; decidability is a hypothesis about activity; does not show that ceasing is good or bad; does not take formal laws for necessity in reality; the level at which 生生不息 is read and the names are Ren's."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T093441.881086Z）：Becoming.Change 的 59 项定理全部空依赖（P30 新增 recurring_accumulates，Recurs.accumulates 改由它证明）；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4513 项定理／6364 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §26；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T093441.881086Z): the 59 theorems of Becoming.Change (recurring_accumulates added in P30, Recurs.accumulates now proved from it) all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4513 theorems/6364 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §26 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Change 的 59 项定理全部空依赖（P30 新增 recurring_accumulates，Recurs.accumulates 改由它证明）；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，15 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §26；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 59 theorems of Becoming.Change (recurring_accumulates added in P30, Recurs.accumulates now proved from it) all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The author's counterreview is in §26 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
       "role": "proof",
-      "sha256": "0a3aeb8aab6214766f39710e2255367549dd3b46b9c3f32c7f9c05afba9c9b45",
+      "sha256": "c68bb811abba13aed0bc8739b5fc2a3f670a9726d64908eaa055bf2a1444480f",
       "declarations": [
         "Becoming.mark",
         "Becoming.mark_cases",
@@ -260,7 +260,7 @@
         "Becoming.pos_of_exceeds",
         "Becoming.rising_recurs",
         "Becoming.falling_recurs",
-        "Becoming.falls_finitely_from_floor",
+        "Becoming.falls_not_recurring_from_floor",
         "Becoming.ComesToBe",
         "Becoming.CeasesToBe",
         "Becoming.rise_mark",
@@ -296,7 +296,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
       "declarations": [
         "Becoming.steps",
         "Becoming.total_zero",
@@ -312,7 +312,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
       "role": "proof",
-      "sha256": "07441eba18278e7797faa50788b138c0c4d947daa062c5add9056027b3c9be5a",
+      "sha256": "2737447bc74f0df35d6554c653bcd01d7ffa4566462303952e38cb25cd0b3d7b",
       "declarations": [
         "Becoming.total",
         "Becoming.Web.Arises",
@@ -336,25 +336,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Renewal.lean",
       "role": "proof",
-      "sha256": "17a81c613e07ed52124bc44916c53d4f18224bdbfe2f07ecfeb930708da80403",
+      "sha256": "20ecc226f5228135c051d9830995ff784731854d0c39c2fd06c40e03834a13f8",
       "declarations": [
-        "Becoming.falls_finitely"
+        "Becoming.falls_not_recurring"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1"
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9"
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "80d57cdc0ae034055c6158f999ab594cfb12cbc7abe58cabca6bd4ed12113a3a"
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
@@ -650,6 +650,14 @@
     {
       "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
       "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

@@ -57,12 +57,13 @@ name"); they do not claim Ren's words.
   the step counts against living, and for which drawers, is a question of the same
   kind.
 * **Dissipation brings a finite world to rest.** In a finite, balanced, dissipative world
-  in which whatever arises is embodied, neither arising nor ceasing recurs, with no decision
-  procedure (`World.rests`): the stock does not rise, so that generation stops from some step
-  on cannot be refuted (`falls_stop_unrefuted`, `Web.generation_stops_unrefuted`; read through
-  `stop_unrefuted_iff`), which refutes the arising that ceasing leaves
-  unrefuted under a covering list (`World.arising_unrefuted_covering`). Each premise is
-  needed (`World.rests_needs`): a world
+  in which whatever arises is embodied, that the world rests from some step on cannot be
+  refuted (`World.rests_unrefuted`, `World.RestsFrom`), so neither arising nor ceasing recurs
+  (`World.not_recurring_of_rests_unrefuted`), with no decision procedure: the stock does not rise,
+  so that generation stops from some step on cannot be refuted (`falls_stop_unrefuted`,
+  `Web.generation_stops_unrefuted`; read through `stop_unrefuted_iff`), which refutes the arising
+  that ceasing leaves unrefuted under a covering list (`World.arising_unrefuted_covering`). Each
+  premise is needed (`World.rests_needs`): a world
   burning fresh fuel keeps arising with infinitely many relata, two sides handing a
   standing back and forth keep arising without dissipation, the same sides taking their
   own unit and giving nothing keep arising without balance, with a closed family taken
@@ -139,7 +140,7 @@ theorem stop_unrefuted_iff {P : Nat → Prop} {T : Nat} :
 
 /-- That the falls of an amount not rising from step `T` on stop from some step on cannot be
 refuted: it is not the case that after every step from `T` on a later fall stays unrefuted
-(`stop_unrefuted_iff`). No decidedness is needed; `falls_finitely_from_floor` is the weaker
+(`stop_unrefuted_iff`). No decidedness is needed; `falls_not_recurring_from_floor` is the weaker
 form, that its falls do not recur. -/
 theorem falls_stop_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤ n → q (n + 1) ≤ q n) :
     ¬ ∀ M, T ≤ M → ¬ ¬ ∃ t, M ≤ t ∧ q (t + 1) < q t :=
@@ -155,8 +156,8 @@ theorem amount_still_unrefuted {q : Nat → Nat} {T : Nat} (still : ∀ n, T ≤
 /-- That the arising of embodied members of a family balanced and dissipated on from step `T`
 on stops from some step on cannot be refuted: it is not the case that after every step from `T`
 on a later arising of one of them stays unrefuted (`stop_unrefuted_iff`). No
-decidedness is needed; `Web.generation_ceases_from` is the weaker form, that their arising does
-not recur. -/
+decidedness is needed; `Web.generation_not_recurring_from` is the weaker form, that their arising
+does not recur. -/
 theorem Web.generation_stops_unrefuted {X : Type} {W : Web X X} {L : Flow X X} {ds : List X}
     {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
@@ -192,6 +193,12 @@ def ArisingRecurs : Prop :=
 /-- Ceasing recurs: some relatum ceases at arbitrarily late steps. -/
 def CeasingRecurs : Prop :=
   ∀ N, ∃ t x, N ≤ t ∧ w.web.Ceases t x
+
+/-- The world rests from step `N` on: at no step from `N` on does any relatum arise or cease.
+That some such step exists, with no decision procedure, can at most not be refuted: naming
+one for every finite world is a principle of omniscience (`World.lpo_of_finite_ends`). -/
+def RestsFrom (N : Nat) : Prop :=
+  ∀ t, N ≤ t → ∀ x, ¬ w.web.Arises t x ∧ ¬ w.web.Ceases t x
 
 /-- Every event is living in the stepwise reading: no active relatum undermines. -/
 def Living : Prop :=
@@ -267,45 +274,71 @@ theorem arising_iff_ceasing [∀ t x, Decidable (w.web.active t x)] (finite : w.
   match finite with
   | ⟨_, _, every⟩ => arising_iff_ceasing_covering (T := 0) fun _ _ x _ => every x
 
-/-- With a list covering what is active from step `T` on, where ceasing recurs, after every
-step from `T` on a later arising of a member is not refuted. No decidedness is needed
-(`Covers.not_not_coming_from`). -/
+/-- That the world rests from some step on cannot be refuted exactly where, for arising and for
+ceasing each, it is not the case that after every step a later one stays unrefuted: the two
+stoppings, each unrefuted, give one common step unrefuted. No decidedness is needed. -/
+theorem rests_unrefuted_iff :
+    (¬ ¬ ∃ N, w.RestsFrom N) ↔
+      (¬ ∀ M, ¬ ¬ ∃ t x, M ≤ t ∧ w.web.Arises t x) ∧ (¬ ∀ M, ¬ ¬ ∃ t x, M ≤ t ∧ w.web.Ceases t x) :=
+  ⟨fun rest => ⟨fun arising => rest fun ⟨N, quiet⟩ =>
+      arising N fun ⟨t, x, later, arises⟩ => (quiet t later x).1 arises,
+    fun ceasing => rest fun ⟨N, quiet⟩ =>
+      ceasing N fun ⟨t, x, later, ceases⟩ => (quiet t later x).2 ceases⟩,
+   fun ⟨arising, ceasing⟩ no => arising fun M noArising => ceasing fun M' noCeasing =>
+     no ⟨M + M', fun t later x =>
+       ⟨fun arises => noArising ⟨t, x, Nat.le_trans (Nat.le_add_right M M') later, arises⟩,
+        fun ceases => noCeasing ⟨t, x, Nat.le_trans (Nat.le_add_left M' M) later, ceases⟩⟩⟩⟩
+
+/-- Where that the world rests from some step on cannot be refuted, neither arising nor ceasing
+recurs: the weaker form. -/
+theorem not_recurring_of_rests_unrefuted (rest : ¬ ¬ ∃ N, w.RestsFrom N) :
+    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+  ⟨fun arising => (rests_unrefuted_iff.mp rest).1 fun M no => no (arising M),
+   fun ceasing => (rests_unrefuted_iff.mp rest).2 fun M no => no (ceasing M)⟩
+
+/-- With a list covering what is active from step `T` on, where after every step a later
+ceasing is not refuted (as where ceasing recurs), after every step from `T` on a later arising of
+a member is not refuted. No decidedness is needed (`Covers.not_not_coming_from`). -/
 theorem arising_unrefuted_covering {ds : List w.Relatum} {T : Nat}
-    (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds) (ceasing : w.CeasingRecurs) :
+    (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds)
+    (ceasing : ∀ M, ¬ ¬ ∃ t x, M ≤ t ∧ w.web.Ceases t x) :
     ∀ M, T ≤ M → ¬ ¬ ∃ t x, M ≤ t ∧ x ∈ ds ∧ w.web.Arises t x :=
   fun M from_ none_ => Covers.not_not_coming_from (p := fun x t => w.web.active t x)
     (L := ds) (N := M) (fun x active => covers M from_ x active) ceasing
     fun ⟨t, x, later, arises⟩ => none_ ⟨t, x, later,
       covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later)) x arises.2, arises⟩
 
-/-- Rest, from a step on: in any world whose arising is embodied, where from some step on the
-active relata lie in one family, balanced and dissipated on at each of those steps, neither
-arising nor ceasing recurs. No decision procedure, no finiteness of the world, no closure and
-no premise on other families or steps: that generation stops cannot be refuted
-(`Web.generation_stops_unrefuted`), which
-refutes the arising that ceasing leaves unrefuted (`arising_unrefuted_covering`). -/
-theorem rests_covering {ds : List w.Relatum} {T : Nat}
+/-- Rest, from a step on, unrefuted: in any world whose arising is embodied, where from some
+step on the active relata lie in one family, balanced and dissipated on at each of those steps,
+that the world rests from some step on cannot be refuted. No decision procedure, no finiteness
+of the world, no closure and no premise on other families or steps: that generation stops cannot
+be refuted (`Web.generation_stops_unrefuted`), and ceasing left unrefuted after every step would
+leave arising unrefuted after every step (`arising_unrefuted_covering`). Neither arising nor
+ceasing recurs, the weaker form (`not_recurring_of_rests_unrefuted`). -/
+theorem rests_unrefuted_covering {ds : List w.Relatum} {T : Nat}
     (covers : ∀ t, T ≤ t → ∀ x, w.web.active t x → x ∈ ds)
     (balances : ∀ t, T ≤ t → w.flow.BalancesOn w.web ds t)
     (dissipates : ∀ t, T ≤ t → w.flow.DissipatesOn ds t) (embodied : w.ArisingEmbodied) :
-    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+    ¬ ¬ ∃ N, w.RestsFrom N :=
   have unrefuted := Web.generation_stops_unrefuted balances dissipates
-  ⟨fun arising => unrefuted fun M from_ none_ => match arising M with
-      | ⟨t, x, later, arises⟩ => none_ ⟨t, x, later,
+  rests_unrefuted_iff.mpr
+  ⟨fun arising => unrefuted fun M from_ none_ => arising M fun ⟨t, x, later, arises⟩ =>
+      none_ ⟨t, x, later,
           covers (t + 1) (Nat.le_succ_of_le (Nat.le_trans from_ later)) x arises.2,
           embodied t x arises, arises⟩,
    fun ceasing => unrefuted fun M from_ none_ =>
       arising_unrefuted_covering covers ceasing M from_ fun ⟨t, x, later, mem, arises⟩ =>
         none_ ⟨t, x, later, mem, embodied t x arises, arises⟩⟩
 
-/-- Dissipation brings a finite world to rest: where the flow balances and dissipates and
-whatever arises is embodied, neither arising nor ceasing recurs. No decision procedure. -/
-theorem rests (finite : w.Finite)
+/-- Dissipation brings a finite world to rest, unrefuted: where the flow balances and dissipates
+and whatever arises is embodied, that the world rests from some step on cannot be refuted. No
+decision procedure; naming the step is a principle of omniscience (`World.lpo_of_finite_ends`). -/
+theorem rests_unrefuted (finite : w.Finite)
     (balanced : w.Balanced) (dissipative : w.Dissipative) (embodied : w.ArisingEmbodied) :
-    ¬ w.ArisingRecurs ∧ ¬ w.CeasingRecurs :=
+    ¬ ¬ ∃ N, w.RestsFrom N :=
   match finite with
   | ⟨all, distinct, every⟩ =>
-    rests_covering (T := 0) (ds := all) (fun _ _ x _ => every x)
+    rests_unrefuted_covering (T := 0) (ds := all) (fun _ _ x _ => every x)
       (fun t _ => Flow.Balances.on balanced all t)
       (fun t _ => dissipative all t distinct fun _ _ c outside => absurd (every c) outside) embodied
 
@@ -520,7 +553,7 @@ def restless : World :=
 
 /-- No reserve carries it: activity beyond support at every step outruns every reserve. -/
 theorem restless_world : ¬ restless.Carried :=
-  fun ⟨_, carries⟩ => carries.active_finitely (f := ()) (T := 0)
+  fun ⟨_, carries⟩ => carries.active_not_recurring (f := ()) (T := 0)
     (fun _ _ supported => Nat.not_succ_le_zero 0 (supported () trivial))
     fun N => ⟨N, Nat.le_refl N, trivial⟩
 
@@ -546,8 +579,8 @@ theorem throughput_world :
     match Throughput.throughput.2.2.2.2.2 true N with
     | ⟨t, later, arises⟩ => ⟨t, .side true, later, arises⟩
   ⟨Throughput.throughput.1, Throughput.throughput.2.2.2.2.1, throughput_arising, arising,
-   fun finite => (rests finite Throughput.throughput.1 Throughput.throughput.2.2.2.2.1
-     throughput_arising).1 arising⟩
+   fun finite => (not_recurring_of_rests_unrefuted (rests_unrefuted finite Throughput.throughput.1
+     Throughput.throughput.2.2.2.2.1 throughput_arising)).1 arising⟩
 
 /-- One relatum whose activity is not its standing (`Flicker`). -/
 def flicker : World :=
@@ -1115,7 +1148,7 @@ theorem living_crosses_ceasing :
     fun ceasing => drawdown_world.2.1 ((arising_iff_ceasing drawdown_finite).mpr ceasing),
     drawdown_world.2.2.2.1⟩⟩
 
-/-- Each premise of `rests` is needed: without finiteness, dissipation, balance or
+/-- Each premise of `rests_unrefuted` is needed: without finiteness, dissipation, balance or
 embodiment, arising can recur. The world failing balance takes part in exchange at every
 step, so its dissipation is not vacuous. -/
 theorem rests_needs :

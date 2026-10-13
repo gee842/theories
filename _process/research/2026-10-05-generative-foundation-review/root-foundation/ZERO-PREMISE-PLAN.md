@@ -36,7 +36,7 @@
 - **八个前提的每一处使用都属 (a)。** 每个证明都只在特定的步、对特定的关系项或家族用到前提：平衡在 `(t, c)` 上，`c` 是水平改变者或被围住家族的成员；只有活跃者给予或取用，在给予或取用 `x` 的那个 `f` 上；耗散，在那一步被围住的那个家族 `es_t` 上；体现，在开始或不再活跃的那个 `x` 上，于 `t` 与 `t+1`；活动需要支持，在那一步活跃的那个 `g` 上；普查，在所计数的那些步上；有界传递，在世系所涉的条件 `c` 上。没有哪处证明用到前提对一切步、一切关系项的普遍形式。
 - **有限与被围住也属 (a)。** 有限只经由它的局部推论被使用：每步有一个封闭的家族（全部关系项），每步有普查，计数有界。被围住本身就是关于一步的条件。静止定理要求被围住的步从 `T` 起不断，这是对尾段 `[T, ∞)` 的每一步的条件，仍是局部的：只有那些步上被用到。
 - **(b) 类是表示的承诺，共五项。**
-  1. 以整单位计的量：静止依靠总水平是自然数、不能无穷次下降（`falls_finitely`）；耗散中的 `sign` 项（每次取用至少失去一个单位）就是最小差异。Ren 已为最小差异选 A（属于生成本身，[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)），R4 把单位的细分算作给予。最小损失能否推出由熵的会话研究，这里不重复。
+  1. 以整单位计的量：静止依靠总水平是自然数、不能无穷次下降（`falls_not_recurring`）；耗散中的 `sign` 项（每次取用至少失去一个单位）就是最小差异。Ren 已为最小差异选 A（属于生成本身，[来源](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)），R4 把单位的细分算作给予。最小损失能否推出由熵的会话研究，这里不重复。
   2. 被计数处的可判定性（`mark`、计数表）。
   3. 离散的步与共同的时间索引。
   4. 流中每个参与者列出一次，家族不重复（`Distinct`）。
@@ -56,7 +56,7 @@
   No proof uses a premise in its universal form, over every step and every relatum.
 - **Finiteness and enclosure are in class (a) too.** Finiteness is used only through its local consequences: a closed family at each step (all relata), a census at each step, and bounded counts. Enclosure is a condition on a step. The rest theorem asks for enclosure at every step from `T` on. That is a condition on each step of the tail `[T, ∞)`, still local: it is used only at those steps.
 - **Class (b), the commitments of the representation, has five items.**
-  1. Amounts in whole units. Rest relies on the total standing being a natural number, which cannot fall infinitely often (`falls_finitely`). The `sign` term of dissipation, at least a unit lost whenever something is taken, is the least difference. Ren chose A for the least difference: it belongs to becoming itself ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). R4 counts the refinement of the unit as a giving. Whether the least loss can be derived is the entropy session's question and is not duplicated here.
+  1. Amounts in whole units. Rest relies on the total standing being a natural number, which cannot fall infinitely often (`falls_not_recurring`). The `sign` term of dissipation, at least a unit lost whenever something is taken, is the least difference. Ren chose A for the least difference: it belongs to becoming itself ([source](../../../../sources/15-codex-theory-conversations/2026-10-11-difference-in-becoming.md)). R4 counts the refinement of the unit as a giving. Whether the least loss can be derived is the entropy session's question and is not duplicated here.
   2. Decidability where counted (`mark`, tallies).
   3. Discrete steps and a shared time index.
   4. Each relatum taking part in the flow listed once, and families without repetition (`Distinct`).
@@ -93,18 +93,18 @@
 | `Flow.standing_runs_down`, `standing_never_rises`, `change_lowers`, `exchange_lowers`, `fall_lowers_on`, `rise_lowers_on` (continued-change-needs-openness, rising-and-falling-in-one-exchange) | balance | `Bal(t, c)`, `c ∈ es_t` (`Balances.over` sums them) | a |
 | 同上 / same | dissipation | `Diss(es_t, t)` | a; its `sign` term is b (1) |
 | 同上 / same | standing census | `stand t`, `stand (t+1)` only to equate the total standing with `stock es_t` | a — removable: `es_t` already holds what stands |
-| `Flow.stills`, `exchanges_finitely`, `World.arising_stops`, `comes_to_rest`, `rests_around`, `rests_enclosed`, `arising_opens`, `Finite.comes_to_rest`, `World.rests` (continued-change-needs-openness, space-and-its-parts) | balance, dissipation, enclosure | the step law above at each `t ∈ [T, ∞)` | a |
+| `Flow.change_stops_unrefuted_around`, `exchange_not_recurring_around`, `World.arising_stops_unrefuted`, `comes_to_rest_unrefuted`, `rests_unrefuted_around`, `rests_unrefuted_enclosed`, `arising_opens`, `Finite.comes_to_rest_unrefuted`, `World.rests_unrefuted` (continued-change-needs-openness, space-and-its-parts) | balance, dissipation, enclosure | the step law above at each `t ∈ [T, ∞)` | a |
 | 同上 / same | embodiment | `Emb(x, t)`, `Emb(x, t+1)` for the `x` arising or ceasing in the tail | a |
 | 同上 / same | census of activity | only for ceasing, through the census law | a |
-| 同上 / same | decidability | `comes_to_rest`'s ceasing half; `rests_enclosed` needs none (¬¬ enclosure) | b (2) |
-| 同上 / same | whole units | `falls_finitely` on the total standing | b (1) |
+| 同上 / same | decidability | `comes_to_rest_unrefuted`'s ceasing half; `rests_unrefuted_enclosed` needs none (¬¬ enclosure) | b (2) |
+| 同上 / same | whole units | `falls_not_recurring` on the total standing | b (1) |
 | 同上 / same | finiteness | supplies a closed family at each step (all relata) and the census | a |
 | `World.enclosure_bounds_change`, `ChangeBound.not_recurring` (counting-under-enclosure) | balance, dissipation, enclosure, embodiment, census | as in the rest theorem, at each `t ≥ T` | a |
 | 同上 / same | decidability, whole units | marks; `falls_by_occurrences` | b (1), b (2) |
-| `Balances.runs_down`, `takers_within`, `taking_ceases`, `Dissipative.opens`, `finite_ceases`, `More.opens`, `opens_of_arising` (no-finite-part-bears-taking) | balance, dissipation | `Bal(t, c)`, `c ∈ cs`; `Diss(ds, t)` for the families containing `cs` at the late steps | a |
-| 同上 / same | finiteness | `finite_ceases`: the family of all conditions, closed at every step | a |
+| `Balances.runs_down`, `takers_within`, `taking_not_recurring`, `Dissipative.opens`, `finite_taking_not_recurring`, `More.opens`, `opens_of_arising` (no-finite-part-bears-taking) | balance, dissipation | `Bal(t, c)`, `c ∈ cs`; `Diss(ds, t)` for the families containing `cs` at the late steps | a |
+| 同上 / same | finiteness | `finite_taking_not_recurring`: the family of all conditions, closed at every step | a |
 | `Flow.rise_with_fall`, `standing_with_fall`, `rise_alone_opens` (rising-and-falling-in-one-exchange) | balance, dissipation | already stated on `ds` at `t` | a — already local |
-| `generation_needs_replenishment`, `Embodied.given_of_arises`, `generation_opens`, `generation_ceases`, `generation_draws_in` (generation-is-replenishment) | balance, embodiment, dissipation, finiteness | `Bal(t, c)` on the family from `T`; `Emb(x, ·)` for the arising `x`; `Diss` on the closed families; finiteness as above | a |
+| `generation_needs_replenishment`, `Embodied.given_of_arises`, `generation_opens`, `generation_not_recurring`, `generation_draws_in` (generation-is-replenishment) | balance, embodiment, dissipation, finiteness | `Bal(t, c)` on the family from `T`; `Emb(x, ·)` for the arising `x`; `Diss` on the closed families; finiteness as above | a |
 | `Flow.fed_from_beyond`, `rising_fed_from_beyond`, `generation_fed_from_beyond` (continuing-self-fed-from-beyond) | balance, dissipation, embodiment | at the step and family | a |
 | 同上 / same | decidability | inward or fed decided | b (2) |
 | `Flow.replenishment_recurs`, `renewing_recurs`, `uptake_needs_replenishment` (unceasing-generation-needs-renewal) | balance, taking | `Bal(t, c)` on the depleted family over the stretch; `Take(t, f, c)` for the arising formations taking from it | a |
@@ -124,13 +124,13 @@
 | `transmitted_supported`, `transmitted_within` | transmitting | `TransmitsWithin c δ` for the one `c` concerned; the uniform `δ` over all `c` is not used | a |
 | `Mortal.without_continues`, `Clearing.undermines_within_renewal` (derived-extent-limits) | balance, dissipation, dependent | at the steps and conditions of the formation considered | a |
 | **D. 整体、前提图与逻辑 / The whole, the map of premises, and logic** | | | |
-| `World.arising_iff_ceasing`, `World.rests` (space-and-its-parts) | finiteness | a closed family at each step; a listing of every relatum | a |
+| `World.arising_iff_ceasing`, `World.rests_unrefuted` (space-and-its-parts) | finiteness | a closed family at each step; a listing of every relatum | a |
 | 同上 / same | decidability | the finite-world law | b (2); `World.law_iff_em` proves it cannot be dropped from this statement |
 | `World.lpo_of_finite_ends`, `Listed.lpo_of_few` (counting-under-enclosure, continued-change-needs-openness) | decidability | an explicit end step for every finite world | b (2), the proved boundary |
 | `World.acting_across`, `acting_of_enclosed`, `Finite.acting`, `Finite.counted` (map-of-premises) | taking, dissipation, enclosure, finiteness, decidability | `Take(t, f, c)` and `Diss(es_t, t)` at the enclosed step; the finite list | a; b (2) for `Finite.counted` |
 | `Flow.More.unceasing_reidentified` (identity-across-steps) | taking, census, decidability | as in `More.unceasing` | a, a, b (2) |
 | **E. 每一分辨率 / Every resolution** (R-line, another session) | | | |
-| `Flow.quantum_bound`, `uptake_bound`, `World.rests_at_resolution`, `World.rests_refinement_counted` (rest-at-every-resolution, rest-with-refinement-counted) | balance, dissipation (`DissipatesBy`), enclosure, embodiment, census | at each step of the tail and the enclosing family | a; the loss in proportion and the counted refinement are b (1), already put to Ren and decided as A |
+| `Flow.quantum_bound`, `uptake_bound`, `World.not_recurring_at_resolution`, `World.rests_unrefuted_refinement_counted` (rest-at-every-resolution, rest-with-refinement-counted) | balance, dissipation (`DissipatesBy`), enclosure, embodiment, census | at each step of the tail and the enclosing family | a; the loss in proportion and the counted refinement are b (1), already put to Ren and decided as A |
 
 ### 1.4 Ren 的决定 / For Ren to decide
 
@@ -156,9 +156,9 @@
 
   Both re-found the representation; Ren's decisions of 11 October 2026 are above, and whether to adopt the imbalance relatum is still Ren's.
 
-**表示的检验（P77、P78）。** 列出一次已重新奠定：列表恰在成员之间同一已定时能列出一次，否证形式的规律不需要它，按关系不可分辨地计数在每个世界都固定数目等价于排中律（`Becoming.Listing`，研究 §101）。这保留名字与关系的区别，不替 Ren 选择同一的读法。时间也不只检验粗化：停顿与去掉空步保留所名规律，给定足迹时，有交集交换的偏序恰刻画可通过交换无交集相邻步达到的次序（`Becoming.Order`，研究 §102）。足迹本身、最小足迹、正规形、重排中的普查及实际时间对应仍须分别处理。
+**表示的检验（P77、P78、P88）。** 列出一次已重新奠定：列表恰在成员之间同一已定时能列出一次，否证形式的规律不需要它，按关系不可分辨地计数在每个世界都固定数目等价于排中律（`Becoming.Listing`，研究 §101）。这保留名字与关系的区别，不替 Ren 选择同一的读法。时间也不只检验粗化：停顿与去掉空步保留所名规律，给定足迹时，有交集交换的偏序恰刻画可通过交换无交集相邻步达到的次序（`Becoming.Order`，研究 §102）。P88 对有限、有名的交换段，在对称相连关系与不相连可判定下构造正规形；以自然数为值的完备不变量存在，当且仅当该段的不相连可判定。任意交换的普查可向前传递，两侧分开的重排及含交换足迹的独立重排可双向传递；这不声称中间每步人数相同。给定每步每项的闲置判定可构造最小布尔足迹，其存在的逆刻画另需关系项相等可判定（`Becoming.OrderNormal`，研究 §109）。无名正规形、Foata 同时层、无界运行的正规形、无上述判定的最小足迹、具体闲置不可判定的见证及实际连续时间对应仍开放；固定命名与足迹的读法仍不由这些证明替 Ren 决定。
 
-**Tests of the representation (P77, P78).** Listing once is re-founded: a list can be listed once exactly where identity among its members is decided; refutation laws need no such premise, and fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`Becoming.Listing`, study §101). This preserves the distinction between names and relations and does not choose Ren's reading of identity. Time is tested beyond coarsening: stuttering and removing idle steps keep the named laws; for a supplied footprint, the partial order of joined exchanges characterizes the orders reached by commuting unjoined neighbouring exchanges (`Becoming.Order`, study §102). The footprint itself, the least footprint, normal forms, censuses along reorderings and actual time correspondence remain separate questions.
+**Tests of the representation (P77, P78, P88).** Listing once is re-founded: a list can be listed once exactly where identity among its members is decided; refutation laws need no such premise, and fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`Becoming.Listing`, study §101). This preserves the distinction between names and relations and does not choose Ren's reading of identity. Time is tested beyond coarsening: stuttering and removing idle steps keep the named laws; for a supplied footprint, the partial order of joined exchanges characterizes the orders reached by commuting unjoined neighbouring exchanges (`Becoming.Order`, study §102). P88 constructs a normal form on finite named stretches with symmetric joining and decided apartness; a natural-number-valued complete invariant exists exactly where apartness on that stretch is decided. Every commutation carries a census forward; split-sided reorderings and independent reorderings of a containing footprint carry it both ways, without asserting the same population at each intermediate step. A supplied idleness decision at every step and relatum constructs the least Boolean footprint; its converse existence characterization additionally needs decidable equality of relata (`Becoming.OrderNormal`, study §109). Unnamed forms, Foata simultaneous layers, normal forms for unbounded runs, least footprints without the stated decisions, a concrete undecidable-idleness witness and actual continuous-time correspondence remain open. These proofs do not choose the fixed naming or footprint readings for Ren.
 
 ## 2. 零前提的重述 / Zero-premise restatements
 
@@ -184,7 +184,11 @@
 
 **现状（P58、P59）。** 可判定性已局部化（P58，研究 §84）：计数是关系，计数存在恰当所计数者已定；计数之间的普查、有限家族中复现的不终止形式与静止定理都不用可判定性；仍用它的定理各有理由，列在[清点](DECIDABILITY-INVENTORY.md)。不平衡关系项已证与现行表示等价（P59，研究 §85），未采用。
 
+**现状（P58c）。** 静止一族按所证强度命名（Ren 2026-10-12：“agree with you”，[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md)，研究 §111）：从某步起静止不能被否证（`World.RestsFrom`，`World.rests_unrefuted` 等，陈述加强）与只证不复现（`…_not_recurring`）分开；前者也不用判定程序，止息一半在双重否定之内用有限鸽巢（`Covers.ceasing_stops_unrefuted`）。表中名称为现名。
+
 **Status (P58, P59).** Decidability is made local (P58, study section 84): a count is a relation, existing exactly where what it counts is decided; the census between counts, the never-stopping forms of recurrence in finite families and the rest theorems need no decidedness; the theorems still using it each have a reason, listed in the [inventory](DECIDABILITY-INVENTORY.md). The imbalance relatum is proved equivalent to the current representation (P59, study section 85) and not adopted.
+
+**Status (P58c).** The rest family is named by the strength proved (Ren, 12 October 2026: “agree with you”, [source](../../../../sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md), study section 111): that resting from some step on cannot be refuted (`World.RestsFrom`, `World.rests_unrefuted` and others, statements strengthened) is kept apart from non-recurrence only (`…_not_recurring`); the former needs no decision procedure either, the ceasing half using a finite pigeonhole inside the double negation (`Covers.ceasing_stops_unrefuted`). The tables use the current names.
 
 **中文。** 按 Ren 的顺序，从四条规律开始。每条都对每个世界陈述，局部条件写在规律之内。每一条的所作都是“局部化”。下面的形式是提议，在 Lean 中检查之前不作为结论。
 
@@ -214,7 +218,7 @@
 
 **检查后（P48）/ As checked (P48).**
 - 可判定：规律 1、3、4 不判定世界的任何谓词，证明只判定数的大小；规律 2 的确切计数需要标记，不复现形式不需要。 / Decidability: laws 1, 3 and 4 decide no predicate of the world, their proofs deciding only the order of numbers; law 2's exact count needs marks, its form that ceasing does not recur none.
-- 整单位：规律 1、4 的一步当且仅当只用加法与次序；规律 1 的复现与规律 3 的界用最小差异（A）。超出整单位的量尚未检验；静止由 R4 覆盖（`World.rests_refinement_counted`、`World.arising_opens_refinement_counted`）。 / Whole units: the one-step iffs of laws 1 and 4 use addition and order only; the recurrence of law 1 and the bounds of law 3 use the least difference (A). Amounts finer than whole units are not yet tested; rest is covered by R4 (`World.rests_refinement_counted`, `World.arising_opens_refinement_counted`).
+- 整单位：规律 1、4 的一步当且仅当只用加法与次序；规律 1 的复现与规律 3 的界用最小差异（A）。超出整单位的量尚未检验；静止由 R4 覆盖（`World.rests_unrefuted_refinement_counted`、`World.arising_opens_refinement_counted`）。 / Whole units: the one-step iffs of laws 1 and 4 use addition and order only; the recurrence of law 1 and the bounds of law 3 use the least difference (A). Amounts finer than whole units are not yet tested; rest is covered by R4 (`World.rests_unrefuted_refinement_counted`, `World.arising_opens_refinement_counted`).
 - 时间：较粗的步由局部化的 `Sampling` 检验（落地队列）。 / Time: coarser steps are tested by the localized `Sampling` (landing queue).
 - 有限：所立者的普查只被规律 1 的复现与规律 3 用到，作用只是使每步的总水平是一个数。 / Finiteness: the census of what stands is used only by law 1's recurrence and by law 3, to make the total standing a number at each step.
 

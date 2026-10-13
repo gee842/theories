@@ -682,7 +682,7 @@ theorem Balances.history_within (balances : L.Balances W) {T : Nat}
 at every step from `T` on, the family loses something at arbitrarily late steps nowhere. -/
 theorem Balances.loss_ceases (balances : L.Balances W) {T : Nat}
     (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) : ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.lost cs t :=
-  fun recurs => falls_finitely (W.stock cs) T
+  fun recurs => falls_not_recurring (W.stock cs) T
     (fun t later => Nat.le_trans (Nat.le_add_right _ _)
       (Nat.le_of_eq (balances.stock_lost (gainless t later))))
     fun N => match recurs (N + T) with
@@ -1432,11 +1432,11 @@ theorem Balances.recurs (balances : L.Balances W) {T : Nat}
   revisits_from (g := fun n => W.config cs (T + n)) (balances.held gainless) M
 
 /-- An arrow stops change under the first law, as every marked change within finitely many
-configurations stops (`Marks.change_stops`). -/
+configurations stops (`Marks.change_not_recurring`). -/
 theorem Balances.arrow_stops (balances : L.Balances W) {T : Nat}
     (gainless : ∀ t, T ≤ t → L.GainlessOn cs t) {S : List Nat → Nat} (arrow : W.Arrow cs T S) :
     ¬ ∀ M, ∃ k, M ≤ k ∧ W.Changes cs (T + k) :=
-  fun recurs => Marks.change_stops (g := fun n => W.config cs (T + n)) arrow.marks
+  fun recurs => Marks.change_not_recurring (g := fun n => W.config cs (T + n)) arrow.marks
     (balances.held gainless) recurs
 
 /-- **Merging nothing within the bound of the first law, the start returns.** The bound does

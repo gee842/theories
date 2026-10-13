@@ -224,7 +224,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-renewal-reading ← relational-renewal-classification
 
-`formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
+`formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_not_recurring 与 Conditions.drawdown_not_recurring 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_not_recurring and Conditions.drawdown_not_recurring directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
 
 **Producer output / 上游输出:** 任意展开上的更新／消耗分类与无更新汲取有限界。 / The renewing/consuming classification on arbitrary unfoldings and the finite bound on unrenewed drawdown.
 
@@ -788,7 +788,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## coming-and-ceasing-keep-pace ← becoming-renewal-reading
 
-`formal-reuse` — falls_finitely 是一个量的下限规律（falls_finitely_from_floor）。 / falls_finitely is the floor law for one amount (falls_finitely_from_floor).
+`formal-reuse` — falls_not_recurring 是一个量的下限规律（falls_not_recurring_from_floor）。 / falls_not_recurring is the floor law for one amount (falls_not_recurring_from_floor).
 
 **Producer output / 上游输出:** 从某步起不上升的观测量只下降有限次。 / An observable never rising from some step on falls only finitely often.
 
@@ -1236,7 +1236,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## continued-change-needs-openness ← laws-of-one-step
 
-`formal-reuse` — 证明改经一步的规律：水平的静止定理（stills、exchanges_finitely、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。 / The proofs now go through the laws of one step: the standing rest theorems (stills, exchanges_finitely, standing_never_rises, change_lowers, exchange_lowers, standing_runs_down, fall_lowers_on), the premises supplying the condition by Flow.AroundStanding.runsDownClosed; Web.StandingCensus and stock_eq moved into Becoming.Locality.
+`formal-reuse` — 证明改经一步的规律：水平的静止定理（change_stops_unrefuted_around、exchange_not_recurring_around、standing_never_rises、change_lowers、exchange_lowers、standing_runs_down、fall_lowers_on），前提给出的条件见 Flow.AroundStanding.runsDownClosed；Web.StandingCensus 与 stock_eq 移入 Becoming.Locality。 / The proofs now go through the laws of one step: the standing rest theorems (change_stops_unrefuted_around, exchange_not_recurring_around, standing_never_rises, change_lowers, exchange_lowers, standing_runs_down, fall_lowers_on), the premises supplying the condition by Flow.AroundStanding.runsDownClosed; Web.StandingCensus and stock_eq moved into Becoming.Locality.
 
 **Producer output / 上游输出:** 跨过包含所立者、被平衡与耗散的家族下降的一步，水平改变恰当总水平下降；所立者有普查时，变化复现恰当它在不下降的步上复现。 / Across a step at which a family holding what stands, balanced and dissipated on, runs down, some standing changes exactly when the total falls; under a census of what stands, change recurs exactly where it recurs across steps that do not run down.
 
@@ -1724,7 +1724,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## entropy-history-and-record ← recurrence-without-premise
 
-`formal-reuse` — 实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_stops、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。 / The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_stops, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets.
+`formal-reuse` — 实例定理用 Becoming.Recurrence 的 Revisits、revisits_of_held、revisits_from、Marks、Marks.change_not_recurring、Law.orbit、Law.orbit_add、Law.Lossless、Law.Lossless.cancel、Law.Merges、Law.Merges.not_lossless、Law.Returns、Law.withHistory 与 Law.present_forgets。 / The instance theorems use Becoming.Recurrence's Revisits, revisits_of_held, revisits_from, Marks, Marks.change_not_recurring, Law.orbit, Law.orbit_add, Law.Lossless, Law.Lossless.cancel, Law.Merges, Law.Merges.not_lossless, Law.Returns, Law.withHistory and Law.present_forgets.
 
 **Producer output / 上游输出:** 不加前提：被一个列表容纳的序列复返（鸽巢，不用判定）；被标记的变化在有限多构型之内停止；不合并的规律在多个步上仍不合并；保留历史的展开中有限的当下遗忘。 / With no premise: a sequence held by a list revisits (pigeonhole, without decidability); a marked change stops within finitely many configurations; a law merging nothing merges nothing over many steps; in an unfolding that keeps its history a finite present forgets.
 
@@ -2096,9 +2096,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## generation-is-replenishment ← becoming-renewal-reading
 
-`formal-reuse` — generation_opens 用 falls_finitely。 / generation_opens uses falls_finitely.
+`formal-reuse` — generation_opens 用 falls_not_recurring。 / generation_opens uses falls_not_recurring.
 
-**Producer output / 上游输出:** 从不上升的量只下降有限次。 / A quantity that never rises falls only finitely often.
+**Producer output / 上游输出:** 从不上升的量不在任意晚的步下降。 / A quantity that never rises does not fall at arbitrarily late steps.
 
 **Consumer input / 下游输入:** 封闭家族的存量从不上升，每次体现的生起都使它下降。 / A closed family's stock never rises and every embodied arising in it lowers it.
 
@@ -2794,7 +2794,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Consumer input / 下游输入:** 八个前提的地图：蕴含、独立与全部满足；有限世界中全部前提一起归于静止。 / The map of eight premises: implications, independence and one world meeting all; in a finite world all together come to rest.
 
-**Retained conditions / 保留条件:** 有限（只对 premised_rests）。 / Finite (premised_rests only).
+**Retained conditions / 保留条件:** 有限（只对 premised_rests_unrefuted）。 / Finite (premised_rests_unrefuted only).
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean)
 
@@ -3008,7 +3008,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## no-finite-part-bears-taking ← becoming-renewal-reading
 
-`formal-reuse` — taking_ceases 用下降原则 falls_finitely。 / taking_ceases uses the descent principle falls_finitely.
+`formal-reuse` — taking_not_recurring 用下降原则 falls_not_recurring。 / taking_not_recurring uses the descent principle falls_not_recurring.
 
 **Producer output / 上游输出:** 下降原则。 / The descent principle.
 
@@ -3660,11 +3660,11 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## reserve-defers-ending ← becoming-renewal-reading
 
-`formal-reuse` — 复用 falls_finitely：从某步起不上升的储备只下降有限多次。 / Reuses falls_finitely: a reserve that never rises from some step on falls only finitely often.
+`formal-reuse` — 复用 falls_not_recurring：从某步起不上升的储备不在任意晚的步下降。 / Reuses falls_not_recurring: a reserve that never rises from some step on does not fall at arbitrarily late steps.
 
-**Producer output / 上游输出:** 从某步起不上升的观测量只下降有限多次。 / An observable that never rises from some step on falls only finitely often.
+**Producer output / 上游输出:** 从某步起不上升的观测量不在任意晚的步下降。 / An observable that never rises from some step on does not fall at arbitrarily late steps.
 
-**Consumer input / 下游输入:** 不被支持的形成只在有限多步活跃。 / An unsupported formation is active only finitely often.
+**Consumer input / 下游输入:** 不被支持的形成不在任意晚的步活跃。 / An unsupported formation is not active at arbitrarily late steps.
 
 **Retained conditions / 保留条件:** Carries；从某步起不被支持。 / Carries; unsupported from some step on.
 
@@ -3744,7 +3744,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## rest-at-every-resolution ← continued-change-needs-openness
 
-`formal-reuse` — 复用所立者的普查与其存量（Web.StandingCensus、Web.StandingCensus.stock_eq、World.standingCensus）、围住所立者的步（Flow.AroundStanding、Flow.Enclosed.aroundStanding_not_not）与 exposed 的持有者（Exposed.stands_iff、Exposed.holder_one）；边界定理的前提对照 World.rests_enclosed、World.arising_opens 与 World.exchange_stops。 / Reuses the census of what stands and its stock (Web.StandingCensus, Web.StandingCensus.stock_eq, World.standingCensus), steps enclosed around what stands (Flow.AroundStanding, Flow.Enclosed.aroundStanding_not_not) and the holder of exposed (Exposed.stands_iff, Exposed.holder_one); the boundary theorems match the premises of World.rests_enclosed, World.arising_opens and World.exchange_stops.
+`formal-reuse` — 复用所立者的普查与其存量（Web.StandingCensus、Web.StandingCensus.stock_eq、World.standingCensus）、围住所立者的步（Flow.AroundStanding、Flow.Enclosed.aroundStanding_not_not）与 exposed 的持有者（Exposed.stands_iff、Exposed.holder_one）；边界定理的前提对照 World.rests_unrefuted_enclosed、World.arising_opens 与 World.exchange_not_recurring。 / Reuses the census of what stands and its stock (Web.StandingCensus, Web.StandingCensus.stock_eq, World.standingCensus), steps enclosed around what stands (Flow.AroundStanding, Flow.Enclosed.aroundStanding_not_not) and the holder of exposed (Exposed.stands_iff, Exposed.holder_one); the boundary theorems match the premises of World.rests_unrefuted_enclosed, World.arising_opens and World.exchange_not_recurring.
 
 **Producer output / 上游输出:** 跨过围住所立者的步，所立者的总水平等于围住它的家族的存量；被围住的步不能被否定为围住所立者。 / Across a step enclosed around what stands, the total standing equals the stock of the enclosing family; an enclosed step cannot be refuted to be enclosed around what stands.
 
@@ -3756,7 +3756,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## rest-at-every-resolution ← no-finite-part-bears-taking
 
-`formal-reuse` — 复用耗散与封闭家族（Flow.DissipatesOn、Flow.Dissipative、Flow.ClosedAt、Flow.Enclosed）、被耗散的家族的补给与取用者不多于其取用（DissipatesOn.replenishment_takers）、有限关系项时每步被围住（Flow.enclosed_of_finite）与支撑之间的总和比较（total_le_of_support）；单位固定时的情形对照 Flow.Balances.taking_ceases。 / Reuses dissipation and closed families (Flow.DissipatesOn, Flow.Dissipative, Flow.ClosedAt, Flow.Enclosed), that a family dissipated on has replenishment and takers within its uptake (DissipatesOn.replenishment_takers), that with finitely many relata every step is enclosed (Flow.enclosed_of_finite), and the comparison of totals between supports (total_le_of_support); the fixed-unit case matches Flow.Balances.taking_ceases.
+`formal-reuse` — 复用耗散与封闭家族（Flow.DissipatesOn、Flow.Dissipative、Flow.ClosedAt、Flow.Enclosed）、被耗散的家族的补给与取用者不多于其取用（DissipatesOn.replenishment_takers）、有限关系项时每步被围住（Flow.enclosed_of_finite）与支撑之间的总和比较（total_le_of_support）；单位固定时的情形对照 Flow.Balances.taking_not_recurring。 / Reuses dissipation and closed families (Flow.DissipatesOn, Flow.Dissipative, Flow.ClosedAt, Flow.Enclosed), that a family dissipated on has replenishment and takers within its uptake (DissipatesOn.replenishment_takers), that with finitely many relata every step is enclosed (Flow.enclosed_of_finite), and the comparison of totals between supports (total_le_of_support); the fixed-unit case matches Flow.Balances.taking_not_recurring.
 
 **Producer output / 上游输出:** 被耗散的家族的补给连同取用者不多于其取用。 / A family dissipated on has its replenishment together with its takers within its uptake.
 
@@ -3780,7 +3780,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## rest-with-refinement-counted ← continued-change-needs-openness
 
-`formal-reuse` — World.rests_unrefined 与 World.rests_refinement_counted 把世界从 T 起读（World.after），对它应用脊柱的静止定理 World.rests_enclosed；World.arising_opens 是细分什么也不给时的情形。 / World.rests_unrefined and World.rests_refinement_counted read the world from T on (World.after) and apply the spine's rest theorem World.rests_enclosed to it; World.arising_opens is the case where the refinement gives nothing.
+`formal-reuse` — World.rests_unrefuted_without_refinement 与 World.rests_unrefuted_refinement_counted 把世界从 T 起读（World.after），对它应用脊柱的静止定理 World.rests_unrefuted_enclosed；World.arising_opens 是细分什么也不给时的情形。 / World.rests_unrefuted_without_refinement and World.rests_unrefuted_refinement_counted read the world from T on (World.after) and apply the spine's rest theorem World.rests_unrefuted_enclosed to it; World.arising_opens is the case where the refinement gives nothing.
 
 **Producer output / 上游输出:** 有普查、关系项都体现、平衡、耗散且从某步起每步被围住的世界中，生起与止息都不复现。 / In a world with a census, embodied relata, balanced, dissipative and enclosed at every step from some step on, neither arising nor ceasing recurs.
 
@@ -4148,7 +4148,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## space-and-its-parts ← generation-is-replenishment
 
-`formal-reuse` — 复用 generation_ceases 与 Shuttle、Throughput、Flicker 三个见证。 / Reuses generation_ceases and the witnesses Shuttle, Throughput and Flicker.
+`formal-reuse` — 复用 generation_not_recurring 与 Shuttle、Throughput、Flicker 三个见证。 / Reuses generation_not_recurring and the witnesses Shuttle, Throughput and Flicker.
 
 **Producer output / 上游输出:** 有限的关系项、平衡与耗散之下，体现的关系项不在任意晚的步生起。 / With finitely many relata, under balance and dissipation, embodied relata do not arise at arbitrarily late steps.
 
@@ -4172,9 +4172,9 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## space-and-its-parts ← reserve-defers-ending
 
-`formal-reuse` — 复用储备（Carries）、零储备恰是 Dependent（carries_zero）与 Carries.active_finitely。 / Reuses the reserve (Carries), that Dependent is exactly the zero reserve (carries_zero), and Carries.active_finitely.
+`formal-reuse` — 复用储备（Carries）、零储备恰是 Dependent（carries_zero）与 Carries.active_not_recurring。 / Reuses the reserve (Carries), that Dependent is exactly the zero reserve (carries_zero), and Carries.active_not_recurring.
 
-**Producer output / 上游输出:** 从某步起不被支持的形成只活跃有限多次。 / A formation unsupported from some step on is active only finitely often.
+**Producer output / 上游输出:** 从某步起不被支持的形成不在任意晚的步活跃。 / A formation unsupported from some step on is not active at arbitrarily late steps.
 
 **Consumer input / 下游输入:** 每步都超出支持而活跃的关系项没有任何储备承载它。 / No reserve carries a relatum active beyond its support at every step.
 
@@ -4556,7 +4556,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## unceasing-generation-needs-renewal ← becoming-renewal-reading
 
-`formal-reuse` — 总水平原则是该结果的下降原则 falls_finitely 用于有限家族的总和；renewal_without_generation 复用其可更新条件的过程与 withinRenewal 运行。 / The total-level principle is that result's descent principle falls_finitely applied to a finite family's total; renewal_without_generation reuses its renewable process and its run within renewal.
+`formal-reuse` — 总水平原则是该结果的下降原则 falls_not_recurring 用于有限家族的总和；renewal_without_generation 复用其可更新条件的过程与 withinRenewal 运行。 / The total-level principle is that result's descent principle falls_not_recurring applied to a finite family's total; renewal_without_generation reuses its renewable process and its run within renewal.
 
 **Producer output / 上游输出:** 下降原则与可更新条件的过程。 / The descent principle and the renewable process.
 

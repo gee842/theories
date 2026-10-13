@@ -73,17 +73,17 @@ Results:
   (`Flow.DissipatesOn.takes_of_gives`), so the arising of an embodied member of a family
   dissipated on lowers the family's stock (`Embodied.arising_lowers_on`), as under
   dissipation for a family without repetition closed across the step
-  (`Embodied.arising_lowers`): the premise of `Web.dissipation_ceases`, supplied there as
-  physical, here follows from balance, dissipation and embodiment. The arising comes with
+  (`Embodied.arising_lowers`): the premise of `Web.dissipation_generation_not_recurring`, supplied
+  there as physical, here follows from balance, dissipation and embodiment. The arising comes with
   another member falling across the same step (`Embodied.arising_with_fall`). Embodied
   members of a family dissipated on from some step on do not arise at arbitrarily late
-  steps (`generation_ceases_on`). So a finite family without repetition in which embodied
+  steps (`generation_not_recurring_on`). So a finite family without repetition in which embodied
   members arise at arbitrarily late steps is not closed from any step on
   (`generation_opens`), though the exchange that opens it need not touch it
   (`SprayShuttle`); enclosed around from some step on, it draws in: at arbitrarily late
   steps some relatum gives to it and takes from beyond it (`generation_draws_in`). If
   finitely many relata are all there is, embodied relata do not arise at arbitrarily
-  late steps (`generation_ceases`). What these use of embodiment is that arising is a
+  late steps (`generation_not_recurring`). What these use of embodiment is that arising is a
   coming to stand; where activity and standing are out of step, as in dormancy,
   `Becoming.Reserve` states what generation then bears.
 * Witnesses. A bee and a flower, each depending on itself and on the other and drawing
@@ -95,7 +95,7 @@ Results:
   nothing else (`Brood`); giving without taking, the brood is not dissipative
   (`Brood.not_dissipative`), and each generation arises in the family of it and the one
   before, closed across the step, with nothing falling (`Brood.rise_without_fall`).
-* Each premise of `generation_ceases` is needed. Two sides handing one standing back and
+* Each premise of `generation_not_recurring` is needed. Two sides handing one standing back and
   forth, each embodied, bear unceasing generation in a closed world of two relata
   without dissipation (`Shuttle`). Burning a fresh fuel at every step, they bear it under
   dissipation, every finite family containing a side is open at arbitrarily late steps,
@@ -689,17 +689,17 @@ theorem Embodied.arising_with_fall (balances : L.Balances W) {ds : List X} {t : 
 
 /-- Embodied members of a family balanced and dissipated on from some step on do not arise
 at arbitrarily late steps. Nothing is asked of the steps before. -/
-theorem generation_ceases_from {ds : List X} {T : Nat}
+theorem generation_not_recurring_from {ds : List X} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
-  fun arising => Flow.standing_ceases_from balances dissipates (Embodied.coming arising)
+  fun arising => Flow.standing_not_recurring_from balances dissipates (Embodied.coming arising)
 
 /-- Embodied members of a family dissipated on from some step on do not arise at
 arbitrarily late steps. -/
-theorem generation_ceases_on (balances : L.Balances W) {ds : List X} {T : Nat}
+theorem generation_not_recurring_on (balances : L.Balances W) {ds : List X} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ x ∈ ds ∧ W.Embodied x ∧ W.Arises t x :=
-  generation_ceases_from (fun t _ => balances.on ds t) dissipates
+  generation_not_recurring_from (fun t _ => balances.on ds t) dissipates
 
 /-- Under dissipation, a finite family without repetition in which embodied members arise
 at arbitrarily late steps is not closed from any step on: at arbitrarily late steps some
@@ -735,10 +735,10 @@ theorem generation_draws_in (balances : L.Balances W) (dissipative : L.Dissipati
 
 /-- If finitely many relata are all there is, embodied relata do not arise at arbitrarily
 late steps under dissipation. -/
-theorem generation_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem generation_not_recurring (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List X} (distinct : Distinct all) (every : ∀ x, x ∈ all) :
     ¬ ∀ N, ∃ t x, N ≤ t ∧ W.Embodied x ∧ W.Arises t x :=
-  fun arising => Flow.standing_ceases balances dissipative distinct every fun N =>
+  fun arising => Flow.standing_not_recurring balances dissipative distinct every fun N =>
     match arising N with
     | ⟨t, x, later, embodied, arises⟩ => ⟨t, x, later, embodied.comesToStand arises⟩
 

@@ -30,7 +30,7 @@ on dissipation. This module states that premise on flows and proves what it carr
   the number of formations taking from it (`Balances.runs_down`). Dissipated on from
   some step, the formations taking from it over all later steps number at most its stock
   there (`Balances.takers_within`), and taking from it does not recur
-  (`Balances.taking_ceases`).
+  (`Balances.taking_not_recurring`).
 * Under dissipation, a finite family from which formations take at arbitrarily late
   steps is not closed from any step on, and neither is any finite family without
   repetition containing it: at arbitrarily late steps some formation taking part
@@ -41,7 +41,7 @@ on dissipation. This module states that premise on flows and proves what it carr
   beyond the family need not touch the family: where no step is enclosed, it can be an
   exchange elsewhere (`Spray`, and `SprayShuttle` in `Becoming.Roles`). If finitely many
   conditions are all there is, taking does not recur at all
-  (`Dissipative.finite_ceases`).
+  (`Dissipative.finite_taking_not_recurring`).
 * Where the step is enclosed around the family, the exchange beyond is inflow. A step is
   enclosed around a family when some family without repetition containing it is closed
   across the step (`Around`); with equality of conditions decidable, every enclosed step
@@ -55,14 +55,14 @@ on dissipation. This module states that premise on flows and proves what it carr
 * Rising falls under this with no taking of its own. A member of a family dissipated on
   that rises lowers the family's stock, since whatever gives to it takes more from the
   family (`rise_lowers_on`), so members of a family dissipated on from some step on do
-  not rise at arbitrarily late steps (`rising_ceases_on`). Under dissipation, a finite
+  not rise at arbitrarily late steps (`rising_not_recurring_on`). Under dissipation, a finite
   family without repetition whose members rise at arbitrarily late steps is therefore
   not closed from any step on (`rising_opens`) and, enclosed around from some step on,
   draws in (`rising_draws_in`); if finitely many conditions are all there is, none rises
-  at arbitrarily late steps (`rising_ceases`). Coming to stand is the rise from nothing,
+  at arbitrarily late steps (`rising_not_recurring`). Coming to stand is the rise from nothing,
   so each holds of it (`standing_lowers_on`, `standing_lowers` for a closed family under
-  dissipation, `standing_ceases_on`, `standing_opens`, `standing_draws_in` and
-  `standing_ceases`). Where a formation is itself a condition standing exactly while it
+  dissipation, `standing_not_recurring_on`, `standing_opens`, `standing_draws_in` and
+  `standing_not_recurring`). Where a formation is itself a condition standing exactly while it
   is active, its arising is such a coming to stand (`Becoming.Roles`,
   `Web.generation_draws_in`).
 * Rising and falling in one exchange. Across a step dissipated on, the members of a
@@ -403,10 +403,10 @@ theorem Balances.takers_within (balances : L.Balances W) {cs : List C} :
 
 /-- Balanced and dissipated on from some step, taking from the family does not recur.
 Nothing is asked of the steps before. -/
-theorem taking_ceases_from {cs : List C} {T : Nat}
+theorem taking_not_recurring_from {cs : List C} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W cs t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
-  fun recurs => falls_finitely (W.stock cs) T
+  fun recurs => falls_not_recurring (W.stock cs) T
     (fun t later => Nat.le_trans (Nat.le_add_right _ _)
       ((balances t later).runs_down (dissipates t later)))
     fun N => match recurs (N + T) with
@@ -417,10 +417,10 @@ theorem taking_ceases_from {cs : List C} {T : Nat}
           ((balances t from_).runs_down (dissipates t from_))⟩
 
 /-- Dissipated on from some step, taking from the family does not recur. -/
-theorem Balances.taking_ceases (balances : L.Balances W) {cs : List C} {T : Nat}
+theorem Balances.taking_not_recurring (balances : L.Balances W) {cs : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn cs t) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
-  taking_ceases_from (fun t _ => balances.on cs t) dissipates
+  taking_not_recurring_from (fun t _ => balances.on cs t) dissipates
 
 /-- A formation taking from a family takes from every family containing it. -/
 theorem takers_pos_of_sub {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ ds) {t : Nat}
@@ -433,10 +433,10 @@ theorem takers_pos_of_sub {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ d
 
 /-- Taking from a family does not recur where, from some step on, a family containing it is
 balanced and dissipated on. -/
-theorem taking_ceases_within {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ ds) {T : Nat}
+theorem taking_not_recurring_within {cs ds : List C} (within : ∀ c, c ∈ cs → c ∈ ds) {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
-  fun recurs => taking_ceases_from balances dissipates fun N => match recurs N with
+  fun recurs => taking_not_recurring_from balances dissipates fun N => match recurs N with
     | ⟨t, later, takes⟩ => ⟨t, later, takers_pos_of_sub within takes⟩
 
 /-- Under dissipation, a finite family from which formations take at arbitrarily late
@@ -446,12 +446,13 @@ theorem Dissipative.opens (balances : L.Balances W) (dissipative : L.Dissipative
     {cs ds : List C} (distinct : Distinct ds) (within : ∀ c, c ∈ cs → c ∈ ds)
     (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
-  fun closed => taking_ceases_within within (fun t _ => balances.on ds t)
+  fun closed => taking_not_recurring_within within (fun t _ => balances.on ds t)
     (fun t later => dissipative ds t distinct (closed t later)) recurs
 
 /-- If finitely many conditions are all there is, taking from any family does not recur
 under dissipation. -/
-theorem Dissipative.finite_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem Dissipative.finite_taking_not_recurring (balances : L.Balances W)
+    (dissipative : L.Dissipative)
     {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) (cs : List C) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers cs t :=
   fun recurs => dissipative.opens balances distinct (fun c _ => every c) recurs 0
@@ -565,7 +566,7 @@ theorem taking_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
     (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
     (recurs : ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers ds t) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
-  fun inward => taking_ceases_from (T := N + T₀)
+  fun inward => taking_not_recurring_from (T := N + T₀)
     (fun t later => balances t (Nat.le_trans (Nat.le_add_left T₀ N) later))
     (fun t later => dissipatesOn_of_inward_at
       (dissipative t (Nat.le_trans (Nat.le_add_left T₀ N) later)) distinct
@@ -607,10 +608,10 @@ theorem standing_lowers (balances : L.Balances W) (dissipative : L.Dissipative)
 
 /-- Members of a family balanced and dissipated on from some step on do not rise at
 arbitrarily late steps. Nothing is asked of the steps before. -/
-theorem rising_ceases_from {ds : List C} {T : Nat}
+theorem rising_not_recurring_from {ds : List C} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c :=
-  fun rising => falls_finitely (W.stock ds) T
+  fun rising => falls_not_recurring (W.stock ds) T
     (fun t later => Nat.le_trans (Nat.le_add_right _ _)
       ((balances t later).runs_down (dissipates t later)))
     fun N => match rising (N + T) with
@@ -620,23 +621,23 @@ theorem rising_ceases_from {ds : List C} {T : Nat}
         (balances t from_).rise_lowers (dissipates t from_) mem rises⟩
 
 /-- Nor do they come to stand at arbitrarily late steps. -/
-theorem standing_ceases_from {ds : List C} {T : Nat}
+theorem standing_not_recurring_from {ds : List C} {T : Nat}
     (balances : ∀ t, T ≤ t → L.BalancesOn W ds t) (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c :=
-  fun coming => rising_ceases_from balances dissipates (Web.rising_of_coming coming)
+  fun coming => rising_not_recurring_from balances dissipates (Web.rising_of_coming coming)
 
 /-- Members of a family dissipated on from some step on do not rise at arbitrarily late
 steps. -/
-theorem rising_ceases_on (balances : L.Balances W) {ds : List C} {T : Nat}
+theorem rising_not_recurring_on (balances : L.Balances W) {ds : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c :=
-  rising_ceases_from (fun t _ => balances.on ds t) dissipates
+  rising_not_recurring_from (fun t _ => balances.on ds t) dissipates
 
 /-- Nor do they come to stand at arbitrarily late steps. -/
-theorem standing_ceases_on (balances : L.Balances W) {ds : List C} {T : Nat}
+theorem standing_not_recurring_on (balances : L.Balances W) {ds : List C} {T : Nat}
     (dissipates : ∀ t, T ≤ t → L.DissipatesOn ds t) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.ComesToStand t c :=
-  standing_ceases_from (fun t _ => balances.on ds t) dissipates
+  standing_not_recurring_from (fun t _ => balances.on ds t) dissipates
 
 /-- Under dissipation, a finite family without repetition whose members rise at
 arbitrarily late steps is not closed from any step on. -/
@@ -644,7 +645,7 @@ theorem rising_opens (balances : L.Balances W) (dissipative : L.Dissipative)
     {ds : List C} (distinct : Distinct ds)
     (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (T : Nat) :
     ¬ ∀ t, T ≤ t → L.ClosedAt ds t :=
-  fun closed => rising_ceases_on balances
+  fun closed => rising_not_recurring_on balances
     (fun t later => dissipative ds t distinct (closed t later)) rising
 
 /-- So is one whose members come to stand at arbitrarily late steps. -/
@@ -661,7 +662,7 @@ theorem rising_draws_in_from {ds : List C} (distinct : Distinct ds) {T₀ : Nat}
     (dissipative : ∀ t, T₀ ≤ t → ∀ es, Distinct es → L.ClosedAt es t → L.DissipatesOn es t)
     (rising : ∀ N, ∃ t c, N ≤ t ∧ c ∈ ds ∧ W.Rises t c) (N : Nat) :
     ¬ ∀ t, N ≤ t → L.Inward ds t :=
-  fun inward => rising_ceases_from (T := N + T₀)
+  fun inward => rising_not_recurring_from (T := N + T₀)
     (fun t later => balances t (Nat.le_trans (Nat.le_add_left T₀ N) later))
     (fun t later => dissipatesOn_of_inward_at
       (dissipative t (Nat.le_trans (Nat.le_add_left T₀ N) later)) distinct
@@ -688,7 +689,7 @@ theorem standing_draws_in (balances : L.Balances W) (dissipative : L.Dissipative
 
 /-- If finitely many conditions are all there is, no condition rises at arbitrarily late
 steps under dissipation. -/
-theorem rising_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem rising_not_recurring (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ W.Rises t c :=
   fun rising => rising_opens balances dissipative distinct
@@ -697,10 +698,11 @@ theorem rising_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
     fun _ _ _ _ c outside => absurd (every c) outside
 
 /-- Nor does any come to stand at arbitrarily late steps. -/
-theorem standing_ceases (balances : L.Balances W) (dissipative : L.Dissipative)
+theorem standing_not_recurring (balances : L.Balances W) (dissipative : L.Dissipative)
     {all : List C} (distinct : Distinct all) (every : ∀ c, c ∈ all) :
     ¬ ∀ N, ∃ t c, N ≤ t ∧ W.ComesToStand t c :=
-  fun coming => rising_ceases balances dissipative distinct every fun N => match coming N with
+  fun coming => rising_not_recurring balances dissipative distinct every fun N =>
+    match coming N with
     | ⟨t, c, later, comes⟩ => ⟨t, c, later, comes.rises⟩
 
 /-! ## Rising and falling in one exchange -/
@@ -1349,10 +1351,10 @@ end Spray
 /-! ## The flows of `Becoming.Flow` are not dissipative -/
 
 /-- With one condition, taking does not recur in a balanced, dissipative flow. -/
-theorem Flow.Dissipative.one_ceases {F : Type} {L : Flow F Unit} {W : Web F Unit}
+theorem Flow.Dissipative.one_taking_not_recurring {F : Type} {L : Flow F Unit} {W : Web F Unit}
     (balances : L.Balances W) (dissipative : L.Dissipative) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ 0 < L.takers [()] t :=
-  dissipative.finite_ceases balances (all := [()]) ⟨fun no => (nomatch no), trivial⟩
+  dissipative.finite_taking_not_recurring balances (all := [()]) ⟨fun no => (nomatch no), trivial⟩
     (fun | () => .head []) [()]
 
 /-- The expansion, the cycle, the pulse, the steady consumer, the repeated formation and the
@@ -1360,16 +1362,17 @@ oscillator are not dissipative: in each, taking from one condition recurs. -/
 theorem witnesses_not_dissipative :
     ¬ Expansion.flow.Dissipative ∧ ¬ Cycle.flow.Dissipative ∧ ¬ Pulse.flow.Dissipative ∧
     ¬ Steady.flow.Dissipative ∧ ¬ Repeated.flow.Dissipative ∧ ¬ Oscillation.flow.Dissipative :=
-  ⟨fun dissipative => dissipative.one_ceases Expansion.more.1
+  ⟨fun dissipative => dissipative.one_taking_not_recurring Expansion.more.1
      Expansion.more.2.2.2.2.2.2.takers_recur,
-   fun dissipative => dissipative.one_ceases Cycle.closed_more.1
+   fun dissipative => dissipative.one_taking_not_recurring Cycle.closed_more.1
      Cycle.closed_more.2.2.2.2.2.2.1.takers_recur,
-   fun dissipative => dissipative.one_ceases Pulse.pulsed.1 Pulse.pulsed.2.2.2.1.takers_recur,
-   fun dissipative => dissipative.one_ceases Steady.steady.1
+   fun dissipative => dissipative.one_taking_not_recurring Pulse.pulsed.1
+     Pulse.pulsed.2.2.2.1.takers_recur,
+   fun dissipative => dissipative.one_taking_not_recurring Steady.steady.1
      fun N => ⟨N, Nat.le_refl N, Nat.zero_lt_one⟩,
-   fun dissipative => dissipative.one_ceases Repeated.more_without_arising.2.1
+   fun dissipative => dissipative.one_taking_not_recurring Repeated.more_without_arising.2.1
      Repeated.more_without_arising.2.2.2.2.1.takers_recur,
-   fun dissipative => dissipative.one_ceases Oscillation.not_more.1
+   fun dissipative => dissipative.one_taking_not_recurring Oscillation.not_more.1
      (Flow.takers_recur_of_arising (W := Oscillation.web) fun N =>
        match Oscillation.unceasing.2.2.2.1 N with
        | ⟨t, f, later, arises⟩ => ⟨t, f, later, Oscillation.takes.2 t f arises⟩)⟩

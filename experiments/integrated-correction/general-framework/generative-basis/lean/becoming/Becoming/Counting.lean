@@ -1410,7 +1410,7 @@ theorem replaced_attains :
           (Swap.counted (fun _ => true) (t + 1))))⟩
 
 /-- That arising does not recur in a finite world meeting the eight premises
-(`premised_rests`) cannot be strengthened to a step after which nothing arises without
+(`premised_rests_unrefuted`) cannot be strengthened to a step after which nothing arises without
 omniscience: if every such world whose activity is decided had one, `LPO` would hold, even
 where one member is active throughout and replaced at most once (`Swap`; the thirteenth
 review's probe). -/
@@ -2425,8 +2425,8 @@ theorem binding_counting {Q : (Nat → Nat) → (Nat → Nat) → (Nat → Nat) 
         (onceClosedQueue_census _ _ _ _))⟩
 
 /-- Every premise binding decides neither rest nor change without end: in `hatch` every
-premise binds and arising stops (`hatch_rests`); in a queue closed once in which one member
-replaces another at every step every premise binds and arising and ceasing recur. -/
+premise binds and arising does not recur (`hatch_rests_unrefuted`); in a queue closed once in which
+one member replaces another at every step every premise binds and arising and ceasing recur. -/
 theorem binding_contingent :
     (hatch.Premised ∧ hatch.Binds ∧ ¬ hatch.ArisingRecurs) ∧
       ((onceClosedQueue (fun _ => 1) (fun _ => 1) 0 2).Premised ∧
@@ -2436,7 +2436,7 @@ theorem binding_contingent :
   have tally : Tally (fun _ => 1) (fun _ => 1) (fun _ => 1) := fun _ => ⟨0, rfl, rfl⟩
   have company : ∀ t, 0 < (fun _ => 1 : Nat → Nat) t → 0 < (fun _ => 1 : Nat → Nat) t :=
     fun _ pos => pos
-  ⟨⟨hatch_binds.1, hatch_binds.2, hatch_rests.2.2.1⟩,
+  ⟨⟨hatch_binds.1, hatch_binds.2, (not_recurring_of_rests_unrefuted hatch_rests_unrefuted.2.2).1⟩,
    ⟨onceClosedQueue_premised tally company (Nat.lt_succ_self 1),
     onceClosedQueue_binds tally Nat.zero_lt_one (Nat.lt_succ_self 1) (J := 0) Nat.zero_lt_one,
     fun N => match total_pos _ (Nat.lt_of_lt_of_le Nat.zero_lt_one

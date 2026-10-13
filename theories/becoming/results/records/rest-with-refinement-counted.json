@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T21:35:28+00:00",
+  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
   "claim": {
-    "zh": "让单位跨过第 t 步分为 split t + 1 个更细的单位：以更细的单位计，每个条件比此前多立 split t 乘其水平。把细分算作又一个形成（Flow.withRefinement、Web.withRefinement：它从不活跃，不要求、不汲取任何东西），它给每个条件 split t 乘其水平，什么也不取。于是在细分的单位下平衡（Flow.BalancesAt (split + 1)）恰是算入细分的流在脊柱意义下平衡（Flow.balancesAt_iff_withRefinement）。细分只给不取：算入它的流在一个家族上耗散，恰当流自身的形成在其上耗散并且细分什么也不给该家族（Flow.withRefinement_dissipatesOn_iff）；算入它而一步被围住并被耗散时，细分在那一步什么也不给任何条件（Flow.refinement_gives_nothing）。所以，在有普查、关系项都体现、在细分的单位下平衡的世界中，算入细分后耗散并且从 T 起每步被围住时，生起与止息都不复现（World.rests_refinement_counted）；生起不息时，算入细分后没有一步开始每步被围住的一段（World.arising_opens_refinement_counted）。前提就是脊柱的前提，只是读入了细分：不添任何前提。不算入细分，同样的结论在细分什么也不给之处成立：耗散、从 T 起每步被围住而细分从 T 起不给任何关系项时，生起与止息都不复现（World.rests_unrefined，经 World.after 把世界从 T 起读，用脊柱的 World.rests_enclosed），生起不息需要开放或细分的给予（World.arising_needs_refinement）；从 T 起封闭、细分从 T 起不给该家族时取用停止（Flow.taking_needs_refinement）；储备在细分的单位下只下降而细分不给它时，就是脊柱的储备，不被支持的形成活跃的步不多于其储备（Web.CarriesIn.lasts_unrefined）。见证：Emission、Alternation 与 Circulation 中，以及单位在任意晚的步细分时 Asymptote 中，细分在任意晚的步有所给予；Dwindle 中细分每步给予储备（refinement_feeds_witnesses）。它们的流在每个封闭家族上耗散，所以它们的生起、交换、取用与储备的延续都由细分供给。",
-    "en": "Let the unit split into split t + 1 finer units across the step from t: counted in the finer unit, each condition stands at split t times its level more than before. Count the refinement as one more formation (Flow.withRefinement, Web.withRefinement: never active, requiring and drawing on nothing), which gives each condition split t times its level and takes nothing. Then balance at the refining unit (Flow.BalancesAt (split + 1)) is exactly the spine's balance of the flow with the refinement counted (Flow.balancesAt_iff_withRefinement). The refinement gives without taking: with it counted, the flow dissipates on a family exactly where its own formations do and the refinement gives the family nothing (Flow.withRefinement_dissipatesOn_iff); across a step enclosed and dissipated on with it counted, the refinement gives no condition anything (Flow.refinement_gives_nothing). So in a world with a census and embodied relata, balanced at the refining unit and, with the refinement counted, dissipative and enclosed at every step from T on, neither arising nor ceasing recurs (World.rests_refinement_counted); where arising recurs, no step begins a stretch in which every step is enclosed with the refinement counted (World.arising_opens_refinement_counted). The premises are the spine's, read with the refinement counted: none is added. Without counting it, the same holds wherever the refinement gives nothing: dissipative and enclosed at every step from T on, with the refinement giving no relatum anything from T on, neither arising nor ceasing recurs (World.rests_unrefined, reading the world from T on by World.after and using the spine's World.rests_enclosed), and arising without end needs openness or the refinement's giving (World.arising_needs_refinement); taking from a family closed from T on stops where the refinement gives it nothing from T on (Flow.taking_needs_refinement); a reserve that only falls in the refining unit, where the refinement gives it nothing, is the spine's reserve, an unsupported formation being active at most its reserve times (Web.CarriesIn.lasts_unrefined). The witnesses: in Emission, Alternation and Circulation, and in Asymptote where the unit splits at arbitrarily late steps, the refinement gives at arbitrarily late steps, and in Dwindle it gives the reserve at every step (refinement_feeds_witnesses). Their flows dissipate on every closed family, so what keeps them arising, exchanging, taking or lasting is what the refinement gives."
+    "zh": "让单位跨过第 t 步分为 split t + 1 个更细的单位：以更细的单位计，每个条件比此前多立 split t 乘其水平。把细分算作又一个形成（Flow.withRefinement、Web.withRefinement：它从不活跃，不要求、不汲取任何东西），它给每个条件 split t 乘其水平，什么也不取。于是在细分的单位下平衡（Flow.BalancesAt (split + 1)）恰是算入细分的流在脊柱意义下平衡（Flow.balancesAt_iff_withRefinement）。细分只给不取：算入它的流在一个家族上耗散，恰当流自身的形成在其上耗散并且细分什么也不给该家族（Flow.withRefinement_dissipatesOn_iff）；算入它而一步被围住并被耗散时，细分在那一步什么也不给任何条件（Flow.refinement_gives_nothing）。所以，在有普查、关系项都体现、在细分的单位下平衡的世界中，算入细分后耗散并且从 T 起每步被围住时，世界从某步起静止不能被否证，所以生起与止息都不复现（World.rests_unrefuted_refinement_counted）；生起不息时，算入细分后没有一步开始每步被围住的一段（World.arising_opens_refinement_counted）。前提就是脊柱的前提，只是读入了细分：不添任何前提。不算入细分，同样的结论在细分什么也不给之处成立：耗散、从 T 起每步被围住而细分从 T 起不给任何关系项时，世界从某步起静止不能被否证，所以生起与止息都不复现（World.rests_unrefuted_without_refinement，经 World.after 把世界从 T 起读，用脊柱的 World.rests_unrefuted_enclosed），生起不息需要开放或细分的给予（World.arising_needs_refinement）；从 T 起封闭、细分从 T 起不给该家族时取用不复现（Flow.taking_needs_refinement）；储备在细分的单位下只下降而细分不给它时，就是脊柱的储备，不被支持的形成活跃的步不多于其储备（Web.CarriesIn.lasts_unrefined）。见证：Emission、Alternation 与 Circulation 中，以及单位在任意晚的步细分时 Asymptote 中，细分在任意晚的步有所给予；Dwindle 中细分每步给予储备（refinement_feeds_witnesses）。它们的流在每个封闭家族上耗散，所以它们的生起、交换、取用与储备的延续都由细分供给。",
+    "en": "Let the unit split into split t + 1 finer units across the step from t: counted in the finer unit, each condition stands at split t times its level more than before. Count the refinement as one more formation (Flow.withRefinement, Web.withRefinement: never active, requiring and drawing on nothing), which gives each condition split t times its level and takes nothing. Then balance at the refining unit (Flow.BalancesAt (split + 1)) is exactly the spine's balance of the flow with the refinement counted (Flow.balancesAt_iff_withRefinement). The refinement gives without taking: with it counted, the flow dissipates on a family exactly where its own formations do and the refinement gives the family nothing (Flow.withRefinement_dissipatesOn_iff); across a step enclosed and dissipated on with it counted, the refinement gives no condition anything (Flow.refinement_gives_nothing). So in a world with a census and embodied relata, balanced at the refining unit and, with the refinement counted, dissipative and enclosed at every step from T on, that the world rests from some step on cannot be refuted, so neither arising nor ceasing recurs (World.rests_unrefuted_refinement_counted); where arising recurs, no step begins a stretch in which every step is enclosed with the refinement counted (World.arising_opens_refinement_counted). The premises are the spine's, read with the refinement counted: none is added. Without counting it, the same holds wherever the refinement gives nothing: dissipative and enclosed at every step from T on, with the refinement giving no relatum anything from T on, that the world rests from some step on cannot be refuted, so neither arising nor ceasing recurs (World.rests_unrefuted_without_refinement, reading the world from T on by World.after and using the spine's World.rests_unrefuted_enclosed), and arising without end needs openness or the refinement's giving (World.arising_needs_refinement); taking from a family closed from T on does not recur where the refinement gives it nothing from T on (Flow.taking_needs_refinement); a reserve that only falls in the refining unit, where the refinement gives it nothing, is the spine's reserve, an unsupported formation being active at most its reserve times (Web.CarriesIn.lasts_unrefined). The witnesses: in Emission, Alternation and Circulation, and in Asymptote where the unit splits at arbitrarily late steps, the refinement gives at arbitrarily late steps, and in Dwindle it gives the reserve at every step (refinement_feeds_witnesses). Their flows dissipate on every closed family, so what keeps them arising, exchanging, taking or lasting is what the refinement gives."
   },
   "hypotheses": [
     {
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "单位固定时的静止定理（continued-change-needs-openness，World.rests_enclosed、World.arising_opens）是细分什么也不给的情形。rest-at-every-resolution 说明不算入细分时，单位的量子承载了静止：其余前提都满足而生起不息（Emission、Alternation）。本结果说明那些见证不是静止的反例，而是被围住而有源的世界：算入细分，细分只给不取，脊柱的耗散排除了这样的给予，所以不添前提，静止在每一分辨率下成立，“生起不息需要开放”在每一分辨率下成立。这回答 Ren 2026-10-11 的“for the case of 0, why can't we have it?”，作者读作零前提的情形（AI，待 Ren 确认）。内容是读法，不是新的动力学：被围住的世界中，凡有所立之处，算入细分的耗散与被围住排除细分本身；细分在围住之内是一个源。",
-    "en": "The rest theorem at a fixed unit (continued-change-needs-openness, World.rests_enclosed, World.arising_opens) is the case where the refinement gives nothing. rest-at-every-resolution shows that, without counting the refinement, the unit's quantum carries rest: every other premise holds while arising never ceases (Emission, Alternation). This result shows those witnesses are not counterexamples to rest but enclosed worlds with a source: counted, the refinement gives without taking, which the spine's dissipation excludes, so rest holds at every resolution with no premise added, and so does ‘arising without end needs openness’. This answers Ren's ‘for the case of 0, why can't we have it?’ of 11 October 2026, read by the author as the case of zero premises (AI, pending Ren's confirmation). The content is the reading, not new dynamics: in an enclosed world, wherever something stands, dissipation and enclosure with the refinement counted exclude the refinement itself; inside an enclosure the refinement is a source."
+    "zh": "单位固定时的静止定理（continued-change-needs-openness，World.rests_unrefuted_enclosed、World.arising_opens）是细分什么也不给的情形。rest-at-every-resolution 说明不算入细分时，单位的量子承载了静止：其余前提都满足而生起不息（Emission、Alternation）。本结果说明那些见证不是静止的反例，而是被围住而有源的世界：算入细分，细分只给不取，脊柱的耗散排除了这样的给予，所以不添前提，静止在每一分辨率下成立，“生起不息需要开放”在每一分辨率下成立。这回答 Ren 2026-10-11 的“for the case of 0, why can't we have it?”，作者读作零前提的情形（AI，待 Ren 确认）。内容是读法，不是新的动力学：被围住的世界中，凡有所立之处，算入细分的耗散与被围住排除细分本身；细分在围住之内是一个源。",
+    "en": "The rest theorem at a fixed unit (continued-change-needs-openness, World.rests_unrefuted_enclosed, World.arising_opens) is the case where the refinement gives nothing. rest-at-every-resolution shows that, without counting the refinement, the unit's quantum carries rest: every other premise holds while arising never ceases (Emission, Alternation). This result shows those witnesses are not counterexamples to rest but enclosed worlds with a source: counted, the refinement gives without taking, which the spine's dissipation excludes, so rest holds at every resolution with no premise added, and so does ‘arising without end needs openness’. This answers Ren's ‘for the case of 0, why can't we have it?’ of 11 October 2026, read by the author as the case of zero premises (AI, pending Ren's confirmation). The content is the reading, not new dynamics: in an enclosed world, wherever something stands, dissipation and enclosure with the refinement counted exclude the refinement itself; inside an enclosure the refinement is a source."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
   "aliases": [
@@ -40,8 +40,8 @@
     "Becoming.Flow.refinement_gives_nothing",
     "Becoming.Flow.taking_needs_refinement",
     "Becoming.World.after",
-    "Becoming.World.rests_unrefined",
-    "Becoming.World.rests_refinement_counted",
+    "Becoming.World.rests_unrefuted_without_refinement",
+    "Becoming.World.rests_unrefuted_refinement_counted",
     "Becoming.World.arising_opens_refinement_counted",
     "Becoming.World.arising_needs_refinement",
     "Becoming.Web.CarriesIn.lasts_unrefined",
@@ -52,8 +52,8 @@
       "id": "continued-change-needs-openness",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "World.rests_unrefined 与 World.rests_refinement_counted 把世界从 T 起读（World.after），对它应用脊柱的静止定理 World.rests_enclosed；World.arising_opens 是细分什么也不给时的情形。",
-        "en": "World.rests_unrefined and World.rests_refinement_counted read the world from T on (World.after) and apply the spine's rest theorem World.rests_enclosed to it; World.arising_opens is the case where the refinement gives nothing."
+        "zh": "World.rests_unrefuted_without_refinement 与 World.rests_unrefuted_refinement_counted 把世界从 T 起读（World.after），对它应用脊柱的静止定理 World.rests_unrefuted_enclosed；World.arising_opens 是细分什么也不给时的情形。",
+        "en": "World.rests_unrefuted_without_refinement and World.rests_unrefuted_refinement_counted read the world from T on (World.after) and apply the spine's rest theorem World.rests_unrefuted_enclosed to it; World.arising_opens is the case where the refinement gives nothing."
       },
       "interface": {
         "output": {
@@ -125,14 +125,14 @@
     "en": "Discrete steps; the unit refines and never coarsens, amounts being rationals by refinement, with neither real amounts nor continuous time; counting the refinement is a reading (Ren's direction, the author's elaboration pending Ren), not derived; the flow with the refinement counted has Option formations and is not a world of one kind of relatum, so rest follows from the spine's theorem through the world read from T on, not by applying it to a counted world directly; ‘does not recur’ is a negated recurrence, not a step after which nothing happens; ‘the case of 0’ means zero premises, as Ren confirmed; no premise added means none added to the spine's, whose dissipation (the least loss per exchange, which Ren reads as entropy) stays its premise; no ethical predicate; not yet independently reviewed."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T093441.881086Z）：Becoming.Resolution 的 261 项声明全部空依赖，其中本结果的 29 项（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 75 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T093542.175797Z 通过。尚无独立审查；作者反审见整合文档 §59.4。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T093441.881086Z): the 261 declarations of Becoming.Resolution all have empty axiom reports, 29 of them this result's (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 75 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T093542.175797Z passed. Not yet independently reviewed; the author's counterreview is in section 59.4 of the integration note."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Resolution 的 261 项声明全部空依赖，其中本结果的 29 项（先在暂存树中以已提交的核心源从前导编译，逐条 #print axioms）；同一回执覆盖包内 75 个模块，核心闭包 40 个模块，全部源声明的公理报告为空，并核对核心只用 Lean 内置前导即可编译，外围回执 20261013T095049.338744Z 通过。尚无独立审查；作者反审见整合文档 §59.4。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 261 declarations of Becoming.Resolution all have empty axiom reports, 29 of them this result's (first compiled from the prelude in a scratch tree against the committed core sources, each checked with #print axioms); the same receipt covers the package's 75 modules over a core closure of 40, every source declaration with an empty axiom report, and checks that the core compiles from Lean's prelude alone; periphery receipt 20261013T095049.338744Z passed. Not yet independently reviewed; the author's counterreview is in section 59.4 of the integration note."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
       "role": "proof",
-      "sha256": "2081df33e3e504e5ca88f94650517a80bafb64bdc30c39f86e398ac28b02bf63",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
       "declarations": [
         "Becoming.total_map_some",
         "Becoming.mem_map_some",
@@ -156,9 +156,10 @@
         "Becoming.World.after_dissipative",
         "Becoming.World.after_enclosed",
         "Becoming.World.after_recurs",
-        "Becoming.World.rests_of_after",
-        "Becoming.World.rests_unrefined",
-        "Becoming.World.rests_refinement_counted",
+        "Becoming.World.rests_unrefuted_of_after",
+        "Becoming.World.restsFrom_of_after",
+        "Becoming.World.rests_unrefuted_without_refinement",
+        "Becoming.World.rests_unrefuted_refinement_counted",
         "Becoming.World.arising_opens_refinement_counted",
         "Becoming.World.arising_needs_refinement",
         "Becoming.Web.CarriesIn.lasts_unrefined",
@@ -168,16 +169,16 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Openness.lean",
       "role": "proof",
-      "sha256": "b430291da05249c7a490c4ba85e07fdc09b9dfd3f357c308cecca8a38b0b06ba",
+      "sha256": "6b58869f4b6746ab157ef646eb45f7dca6584a7c3f88321156a7a3efb032c74d",
       "declarations": [
-        "Becoming.World.rests_enclosed",
+        "Becoming.World.rests_unrefuted_enclosed",
         "Becoming.World.arising_opens"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
       "role": "proof",
-      "sha256": "342c5e09a79031e1b292c1734d918e8959acce3411a29a7c83b7687a0ce65487",
+      "sha256": "91accf4b40601b6f5439c1a3e8f3ede72b68018b0701099e78d71e7959f6fd9d",
       "declarations": [
         "Becoming.Flow.DissipatesOn",
         "Becoming.Flow.Dissipative",
@@ -188,7 +189,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
       "role": "proof",
-      "sha256": "29268c4e51bb97e2cbf403abb9be5a3f940f2c3b69b40bd296843d704b753dc7",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
       "declarations": [
         "Becoming.Flow.Balances",
         "Becoming.Flow.taken",
@@ -201,7 +202,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
       "role": "proof",
-      "sha256": "6ff960146026428929a164fc5d1b53b2afb108ef4ac65002c3990490477d5ae1",
+      "sha256": "d4f748607ac4590ced2090618040d65bf7ac6a18ce41979d1febf045f4e88816",
       "declarations": [
         "Becoming.World.Counted"
       ]
@@ -209,7 +210,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
       "role": "proof",
-      "sha256": "f20d8511ce6993a748e336c3b8b7344766dba705096fdd232afe5f1eed04e8ec",
+      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
       "declarations": [
         "Becoming.World",
         "Becoming.World.Embodied",
@@ -222,25 +223,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "f2a574295cb3b9fe231bec38771e7bb37e1cf2fb9c6129e49e3e2f835e6549e1",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "2a186d4ae97507a2557a2f886f1484120b30733155a5e080c10d5f5eeb49e0b9",
+      "sha256": "84c846a1a9646d87bef48c66ba9ac3b796514a3bcc294a787a7bfd7bd61adb50",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "integration",
-      "sha256": "80d57cdc0ae034055c6158f999ab594cfb12cbc7abe58cabca6bd4ed12113a3a",
+      "sha256": "120b158a909cb1232599021b23302affd25b7d39d6b410afe5e569b59b3a9a08",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "0e7cede2e15d63e1d689ef60b182c494d7d4c44d9456d1bc6f38bbd83f1e3f71",
+      "sha256": "fb57de35b6537065cf6770f3f655677e8919460aaf30a8835f1f44eba21f0adf",
       "declarations": []
     },
     {
@@ -386,6 +387,14 @@
     {
       "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
       "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：静止一族按强度命名（Ren 于 2026-10-12：“agree with you”，sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md）：名称恰是陈述所证的强度。从某步起静止不能被否证的定理名为 …_unrefuted（其陈述加强为 ¬¬∃N, World.RestsFrom N）；只证不复现的名为 …_not_recurring；“只有有限次”“停止”“归于静止”在文字中改为所证的强度。见整合文档 §111。历史与旧回执的验证范围保留当时名称；随当前回执推进的验证范围使用现名。",
+      "en": "2026-10-13 P58c: the rest family named by strength (Ren, 12 October 2026: “agree with you”, sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md): each name says the strength its statement proves. Theorems proving that resting from some step on cannot be refuted are named …_unrefuted (their statements strengthened to ¬¬∃N, World.RestsFrom N); those proving only non-recurrence are named …_not_recurring; prose saying “finitely often”, “stops” or “comes to rest” now says the strength proved. See §111 of the integration note. History and scopes of older receipts retain former names; scopes advancing with the current receipt use current names."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
     }
   ]
 }

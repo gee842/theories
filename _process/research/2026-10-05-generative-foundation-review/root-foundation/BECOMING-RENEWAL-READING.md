@@ -7094,6 +7094,111 @@ Integration: 记录 entropy-history-and-record；计划 §10 R5；章节第一�
 **2026-10-13 整合说明。** 从 R5 分支 `52ff83a4` 保留已完成的陈述与证明，不新增定理。四个通用列表辅助名称与后落地模块冲突，现只将其限定到 `EntropyLists` 命名空间；原始源码另按原字节保存。将暂定节号、回执和总数按当前落地更新；补全 Resolution 与 Recurrence 的导入说明；区分历史计数的单调性与使用平衡的变化／逆转结论，并去掉未证明的“唯一”读法。原文与历史验证保留在该分支的 Git 历史中。
 
 
+## 111. 静止一族按强度命名（P58c）
+
+2026-10-13 落地；2026-10-12，Ren 对 AI 的分析答：“agree with you”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md)）。AI 的建议（Ren 所同意的）：在 Lean 中查哪些静止定理在“停止不能被否证”的形式下成立，成立处如此陈述，名带 unrefuted；只有不复现成立处改名为 …_not_recurring；“在某步停止”“从某步起静止”只留给说出那一步的陈述（需要可判定）。中文术语（归于静止或停）与“静止定理”这一标题仍由 Ren 定；在此之前保留，各 Lean 名称说其确切强度。
+
+“它停止”有三种强度，每种强于下一种：(a) 从某步起不再发生（`World.RestsFrom` 是世界的这一形式）；(b) 这一点不能被否证（`¬¬∃N, RestsFrom N`）；(c) 不复现（并非在任意晚的步发生）。对有限的、满足前提的世界，(a) 蕴含有限全知原则（`World.lpo_of_finite_ends`），所以核心证 (b) 与 (c)。
+
+```text
+Result(s): 改名与加强，不是新结果；space-and-its-parts（RestsFrom、rests_unrefuted_iff、not_recurring_of_rests_unrefuted）、
+           laws-of-one-step（ceasing_steps_unrefuted、Covers.ceasing_stops_unrefuted）、rest-with-refinement-counted
+           （restsFrom_of_after）加入新声明；19 项当前记录改用新名
+Delta: 54 个名称；15 个陈述由 (c) 加强为 (b)，名带 unrefuted；其余陈述不变，名带 not_recurring。双重否定移不过
+       全称量词，所以止息一半在双重否定之内作有限鸽巢（Covers.ceasing_stops_unrefuted，由 ceasing_steps_unrefuted）；生起与止息两
+       半在共同的一步合起（World.rests_unrefuted_iff）
+Supplied premises / correspondence: 无新前提；各定理的前提不变
+Evidence: 合并检查器回执 20261013T094743.528770Z（4518 项定理、6370 项声明审计，全部源声明公理报告为空；核心闭包 77 个模块，包 75 个），外围回执 20261013T095049.338744Z
+Boundary: (a) 需要全知原则，不证；交换一族（经 exchange_recurs_iff）、分辨率的量子路线、Recurrence、Reserve、Dissipation、Renewal、
+          Change 仍为 (c)，其 (b) 形式尚未证，是后续；见证 rests_needs、rest_needs_census、rest_needs_standing、rest_needs_quantum 的
+          名称不变，复现驳倒每一种强度；继承模块（RelationalRenewal 的 unrenewed_drawdown_finite）保留其范围；尚无独立审查
+Integration: 核心 Space、Locality、Openness、Resolution、Premises、Sampling、Counting、Decidedness 的陈述与名称，Change、Dissipation、
+             Flow、Generation、Interdependence、Recurrence、Renewal、Reserve、Roles、Units 的名称与文档字符串；章节术语表、§9 计数与
+             后落地模块的调用保持原有陈述：Listing 经 not_recurring_of_rests_unrefuted 取较弱结论，Entropy 的调用只改名；
+             总数；Lean README；零前提计划；统一计划；阅读条目；19 项当前记录；工作板 P58c
+```
+
+**加强为不能被否证（名带 unrefuted）。**
+
+| 原名 / before | 现名 / now |
+|---|---|
+| `Flow.stills` | `Flow.change_stops_unrefuted_around` |
+| `World.arising_stops` | `World.arising_stops_unrefuted` |
+| `World.comes_to_rest_from` | `World.comes_to_rest_unrefuted_from` |
+| `World.comes_to_rest` | `World.comes_to_rest_unrefuted` |
+| `World.Finite.comes_to_rest` | `World.Finite.comes_to_rest_unrefuted` |
+| `World.rests_around` | `World.rests_unrefuted_around` |
+| `World.rests_enclosed` | `World.rests_unrefuted_enclosed` |
+| `World.hatch_rests` | `World.hatch_rests_unrefuted` |
+| `World.premised_rests` | `World.premised_rests_unrefuted` |
+| `World.rests_of_after` | `World.rests_unrefuted_of_after` |
+| `World.rests_unrefined` | `World.rests_unrefuted_without_refinement` |
+| `World.rests_refinement_counted` | `World.rests_unrefuted_refinement_counted` |
+| `World.sample_rests` | `World.sample_rests_unrefuted` |
+| `World.rests_covering` | `World.rests_unrefuted_covering` |
+| `World.rests` | `World.rests_unrefuted` |
+
+**只证不复现（名带 not_recurring）。**
+
+| 原名 / before | 现名 / now |
+|---|---|
+| `falls_finitely_from_floor` | `falls_not_recurring_from_floor` |
+| `Flow.taking_ceases_from` | `Flow.taking_not_recurring_from` |
+| `Flow.Balances.taking_ceases` | `Flow.Balances.taking_not_recurring` |
+| `Flow.taking_ceases_within` | `Flow.taking_not_recurring_within` |
+| `Flow.Dissipative.finite_ceases` | `Flow.Dissipative.finite_taking_not_recurring` |
+| `Flow.rising_ceases_from` | `Flow.rising_not_recurring_from` |
+| `Flow.standing_ceases_from` | `Flow.standing_not_recurring_from` |
+| `Flow.rising_ceases_on` | `Flow.rising_not_recurring_on` |
+| `Flow.standing_ceases_on` | `Flow.standing_not_recurring_on` |
+| `Flow.rising_ceases` | `Flow.rising_not_recurring` |
+| `Flow.standing_ceases` | `Flow.standing_not_recurring` |
+| `Flow.Dissipative.one_ceases` | `Flow.Dissipative.one_taking_not_recurring` |
+| `Web.depletes_finitely` | `Web.depletion_not_recurring` |
+| `Web.dissipation_ceases` | `Web.dissipation_generation_not_recurring` |
+| `Flow.Balances.unfed_consumption_stops` | `Flow.Balances.unfed_consumption_not_continuing` |
+| `Flow.stills_from` | `Flow.change_not_recurring_from` |
+| `Flow.exchanges_finitely_from` | `Flow.exchange_not_recurring_from` |
+| `Flow.exchanges_finitely` | `Flow.exchange_not_recurring_around` |
+| `World.arising_stops_from` | `World.arising_not_recurring_from` |
+| `Few.quiet` | `Few.coming_not_recurring` |
+| `World.exchange_stops` | `World.exchange_not_recurring` |
+| `Marks.change_stops` | `Marks.change_not_recurring` |
+| `Run.change_stops` | `Run.change_not_recurring` |
+| `falls_finitely` | `falls_not_recurring` |
+| `Conditions.drawdown_finite` | `Conditions.drawdown_not_recurring` |
+| `Web.active_finitely_from` | `Web.active_not_recurring_from` |
+| `Web.Carries.active_finitely` | `Web.Carries.active_not_recurring` |
+| `Web.arising_finitely_from` | `Web.arising_not_recurring_from` |
+| `Web.Carries.arising_finitely` | `Web.Carries.arising_not_recurring` |
+| `Flow.taking_stops` | `Flow.taking_not_recurring` |
+| `World.rests_at_resolution` | `World.not_recurring_at_resolution` |
+| `Trickle.exchange_stops` | `Trickle.exchange_not_recurring` |
+| `Web.generation_ceases_from` | `Web.generation_not_recurring_from` |
+| `Web.generation_ceases_on` | `Web.generation_not_recurring_on` |
+| `Web.generation_ceases` | `Web.generation_not_recurring` |
+| `World.Enumerated.rests` | `World.Enumerated.not_recurring` |
+| `Flow.taking_stops_listing` | `Flow.taking_not_recurring_listing` |
+| `Web.generation_ceases_listing` | `Web.generation_not_recurring_listing` |
+| `Flow.Dissipative.finite_ceases_listing` | `Flow.Dissipative.finite_taking_not_recurring_listing` |
+
+**P77 的当前更正。** 原 §101 及当时的落地包保留旧名称与文字，历史上的“每个可枚举世界归于静止”不能读成给出停止之步。
+在平衡、耗散且生起体现的条件下，可枚举世界的生起与止息都不复现（`World.Enumerated.not_recurring`，原 `World.Enumerated.rests`）；
+陈述仍是两项不复现的合取，不加强为从某步起停止。另三项现名为 `Flow.Dissipative.finite_taking_not_recurring_listing`、
+`Web.generation_not_recurring_listing`、`Flow.taking_not_recurring_listing`，保留原有前提与陈述，分别否定取用、体现的生起及固定单位下
+封闭家族取用的复现。最新完整改名表含 54 项：15 项陈述加强，39 项仅改为所证的不复现名称；初始包的 35 项仅改名是历史计数。
+
+**证明。** 生起一半用 P58b 的 `Flow.change_stops_unrefuted`（不上升的量的下降从某步起停止不能被否证）。止息一半：在覆盖列表之下，止息若在此后每一步之后都不能被否证，则在双重否定之内可以造出任意长的、不重复的止息之步列表（`ceasing_steps_unrefuted`，递归），每个止息之前须有生起，鸽巢使生起在任意晚处不能被否证，与生起一半矛盾（`Covers.ceasing_stops_unrefuted`）。目标是 False，所以在双重否定之内构造是可行的；双重否定移位（DNS）不可用，这一步不能省。两半各给一个起点，取二者之和即共同的一步（`World.rests_unrefuted_iff`）。
+
+**作者反审。**
+1. **陈述是否只加强，从不减弱？** 是：每个改了陈述的定理，旧陈述是新陈述的推论（`World.not_recurring_of_rests_unrefuted`），原来用旧陈述的地方都经它改写，检查器通过。
+2. **(b) 是否真比 (c) 强？** 在构造逻辑中，(b) 推出 (c)；反过来需要双重否定移位，不可用。
+3. **为什么不陈述 (a)？** 对每个有限的满足前提的世界陈述 (a) 就蕴含 LPO（`World.lpo_of_finite_ends`）。
+4. **“归于静止”仍在章节文字中。** 术语由 Ren 定；术语表说明本章说一个定理归于静止时指它所证的强度。“只有有限次”“停止”说不复现的定理处已改为“不在任意晚的步”“不复现”。
+5. **名称冲突。** `Flow.exchanges_finitely` 改名为 `Flow.exchange_not_recurring_around`，因为 Resolution 已有 `Flow.exchange_not_recurring`（取用至少 1/p 单位）。
+
+**边界。** 历史文字（此前各节、工作板、冻结的落地包、来源、审查、记录的历史及旧回执的验证范围）保留当时的名称；随当前回执推进的验证范围使用现名。OPENING 的脚注引 `World.rests_enclosed`，只与 Ren 一起改，留给 Ren。尚无独立审查。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -8272,4 +8377,12 @@ On the AI's reading, pending Ren: becoming leaves a difference with no premise, 
 
 **Integration note, 13 October 2026.** The statements and proofs are retained from R5 branch `52ff83a4`; this landing adds no theorem. Four generic list helper names that collide with later modules are qualified under `EntropyLists`, with the exact original source retained separately. The provisional section, receipts and totals are replaced by the current landing values; both Resolution and Recurrence imports are named. Exchange-history monotonicity needs no balance premise, while connecting level changes and reversals to that history uses balance; no uniqueness of the history as an increasing quantity is claimed. The original prose and historical verification remain in that branch’s Git history.
 
-The package now has 4513 theorems and 6364 declaration audits, over a core closure of 77 modules and a package of 75, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 110 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T093542.175797Z).
+**The rest family by strength (P58c).** To the AI's analysis Ren answered “agree with you” on 12 October 2026 ([source](../../../../sources/15-codex-theory-conversations/2026-10-12-rest-family-strengths.md)): check in Lean which rest theorems hold in the form that the stopping cannot be refuted, state them so with “unrefuted” in the name, rename those proving only non-recurrence to `…_not_recurring`, and keep “stops at” or “rests from” for statements naming a step, which need decidedness. The Chinese term (归于静止 or 停) and the heading “the rest theorem” stay Ren's; until then each Lean name states its exact strength.
+- **Three strengths.** (a) From some step on nothing happens (`World.RestsFrom` for a world); (b) that cannot be refuted (`¬¬∃N, RestsFrom N`); (c) it does not recur. (a) for every finite world meeting the premises gives the limited principle of omniscience (`World.lpo_of_finite_ends`), so the core proves (b) and (c).
+- **What changed.** 54 names; 15 statements strengthened from (c) to (b), named with `unrefuted` (among them `World.rests_unrefuted`, `World.comes_to_rest_unrefuted`, `World.premised_rests_unrefuted`, `World.sample_rests_unrefuted`, `World.rests_unrefuted_enclosed`); the rest keep their statements and are named with `not_recurring`. The ceasing half is a finite pigeonhole built inside the double negation (`ceasing_steps_unrefuted`, `Covers.ceasing_stops_unrefuted`), since the double negation shift is not available; the halves join at a common step (`World.rests_unrefuted_iff`).
+- **Boundary.** The exchange family, the quantum routes of Resolution, Recurrence, Reserve, Dissipation, Renewal and Change stay at (c) for now; the witnesses keep their names, recurrence refuting every strength. History keeps the old names; the OPENING footnote's `World.rests_enclosed` is Ren's to change.
+- **P77 corrected at its exact strength.** Under balance, dissipation and embodied arising, neither arising nor ceasing recurs in an enumerated world (`World.Enumerated.not_recurring`, formerly `World.Enumerated.rests`). Its conjunction is unchanged and names no stopping step. The three listing laws for finite taking, generation and taking with the unit fixed likewise keep their original hypotheses and non-recurrence statements, now named `Flow.Dissipative.finite_taking_not_recurring_listing`, `Web.generation_not_recurring_listing` and `Flow.taking_not_recurring_listing`. Historical section 101 retains its original wording; this is the current correction. The full map has 54 names: 15 strengthened statements and 39 unchanged non-recurrence statements; the initial package's 35 pure renames remain a historical count.
+
+Landed 2026-10-13, receipt 20261013T094743.528770Z. Later callers retain their statements: Listing obtains non-recurrence through `not_recurring_of_rests_unrefuted`, and Entropy only follows the renamed identifiers. Not yet independently reviewed; the author's counterreview is in section 111.
+
+The package now has 4518 theorems and 6370 declaration audits, over a core closure of 77 modules and a package of 75, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 111 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T095049.338744Z).

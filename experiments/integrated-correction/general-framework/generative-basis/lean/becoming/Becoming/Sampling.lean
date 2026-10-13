@@ -59,7 +59,7 @@ the premises are corollaries.
   activity needing support, embodiment and a census survive the reading
   (`Flow.sample_balances`, `Flow.sample_dissipative`, `World.sample_survives`), and a
   finite world read at a coarser step rests, with no decision procedure
-  (`World.sample_rests`).
+  (`World.sample_rests_unrefuted`).
 
 Not shown: continuous time, which comes after; that a becoming given with no step at all can
 be represented by discrete steps; and that listing once can be dropped for balance. The
@@ -811,14 +811,14 @@ theorem sample_survives (strict : Strict σ) (once : w.flow.Once) :
   ⟨sample_dependent, sample_balanced strict once, sample_dissipative, sample_embodied,
    sample_counted⟩
 
-/-- The laws of a world hold at every step size: a finite world read at coarser steps, whose
-flow balances and dissipates and whose arisings are embodied, has neither arising nor ceasing
-recurring, with no decision procedure (`World.rests`). -/
-theorem sample_rests (strict : Strict σ)
+/-- The laws of a world hold at every step size: of a finite world read at coarser steps, whose
+flow balances and dissipates and whose arisings are embodied, that it rests from some coarse step
+on cannot be refuted, with no decision procedure (`World.rests_unrefuted`). -/
+theorem sample_rests_unrefuted (strict : Strict σ)
     (finite : w.Finite) (once : w.flow.Once) (balanced : w.Balanced)
     (dissipative : w.Dissipative) (embodied : w.Embodied) :
-    ¬ (w.sample σ).ArisingRecurs ∧ ¬ (w.sample σ).CeasingRecurs :=
-  rests (sample_finite finite)
+    ¬ ¬ ∃ N, (w.sample σ).RestsFrom N :=
+  rests_unrefuted (sample_finite finite)
     (sample_balanced strict once balanced) (sample_dissipative dissipative)
     (sample_embodied embodied).arising
 

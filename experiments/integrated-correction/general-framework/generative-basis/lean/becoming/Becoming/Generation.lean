@@ -30,7 +30,7 @@ to say.
 
 Results:
 * A finite family of conditions none of which rises from some step on is depleted by
-  only finitely many events (`depletes_finitely`). This is the descent principle of
+  only finitely many events (`depletion_not_recurring`). This is the descent principle of
   `Becoming.Renewal` applied to the family's total level, which serves only as a
   measure of descent: the units of the conditions do not matter.
 * Where arising depletes the family, unceasing generation needs renewal: some condition
@@ -41,11 +41,11 @@ Results:
   (`Expansion.undepleted`); the flow form of `Becoming.Flow` covers it.
 * Substitution defers the end and does not escape it. A formation that at each of its
   active steps lowers some condition of a finite family, none of which rises any more,
-  is active only finitely often, however it moves its dependence among them
+  is not active at arbitrarily late steps, however it moves its dependence among them
   (`substitution_defers`, witness `Relay`).
 * Dissipation ends generation: if a quantity never rises and every arising lowers it,
-  generation is not unceasing (`dissipation_ceases`). A family's total level is such a
-  quantity only where every arising dissipates it, and adding levels across conditions
+  generation is not unceasing (`dissipation_generation_not_recurring`). A family's total level is
+  such a quantity only where every arising dissipates it, and adding levels across conditions
   presupposes that their units are commensurable. A material cycle dissipates nothing:
   a closed family whose total stays constant sustains unceasing generation (`Recycle`).
   For a quantity every arising dissipates, free energy for instance, the premise is
@@ -58,7 +58,7 @@ Results:
   is renewed keeps every dependence while nothing arises
   (`Renewable.renewal_without_generation`).
 * Arising on a consumed condition ceases: formations arise while drawing an unrenewed
-  condition down, consume it, and arising stops (`Growth.ceases`).
+  condition down, consume it, and arising does not recur (`Growth.ceases`).
 * Unceasing generation is consistent with these premises: a formation arises again and
   again on a condition that another formation renews (`Oscillation.unceasing`). Each arising
   comes when the condition has been restored, at a rise, so the oscillator depletes the
@@ -167,10 +167,10 @@ theorem stock_lt {t : Nat} : ∀ cs : List C, W.Still cs t → (∃ c, c ∈ cs 
 
 /-- A finite family of conditions none of which rises from step `T` on is depleted by
 only finitely many events. -/
-theorem depletes_finitely (cs : List C) (T : Nat) (event : Nat → Prop)
+theorem depletion_not_recurring (cs : List C) (T : Nat) (event : Nat → Prop)
     (still : ∀ t, T ≤ t → W.Still cs t) (depletes : W.Depletes cs event) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ event t :=
-  fun recurs => falls_finitely (W.stock cs) T (fun t after => W.stock_le cs (still t after))
+  fun recurs => falls_not_recurring (W.stock cs) T (fun t after => W.stock_le cs (still t after))
     fun N => match recurs (N + T) with
       | ⟨t, later, happens⟩ =>
         have after : T ≤ t := Nat.le_trans (Nat.le_add_left T N) later
@@ -181,7 +181,7 @@ theorem depletes_finitely (cs : List C) (T : Nat) (event : Nat → Prop)
 renewal: some condition of the family rises at arbitrarily late steps. -/
 theorem Unceasing.rises {cs : List C} (depletes : W.Depletes cs fun t => ∃ f, W.Arises t f)
     (unceasing : W.Unceasing) (T : Nat) : ¬ ∀ t, T ≤ t → W.Still cs t :=
-  fun still => W.depletes_finitely cs T _ still depletes
+  fun still => W.depletion_not_recurring cs T _ still depletes
     fun N => match unceasing N with
       | ⟨t, f, later, arises⟩ => ⟨t, later, f, arises⟩
 
@@ -197,17 +197,17 @@ theorem Unceasing.regeneration_recurs {renews : Nat → F → C → Prop} {cs : 
 
 /-- Substitution defers the end and does not escape it: a formation lowering some
 condition of a finite family at each of its active steps, while none of them rises, is
-active only finitely often. -/
+not active at arbitrarily late steps. -/
 theorem substitution_defers (cs : List C) (f : F) (T : Nat)
     (still : ∀ t, T ≤ t → W.Still cs t) (draws_down : W.Depletes cs fun t => W.active t f) :
     ¬ ∀ N, ∃ t, N ≤ t ∧ W.active t f :=
-  W.depletes_finitely cs T _ still draws_down
+  W.depletion_not_recurring cs T _ still draws_down
 
 /-- Dissipation ends generation: if a quantity never rises and every arising lowers it,
 generation is not unceasing. -/
-theorem dissipation_ceases (q : Nat → Nat) (unrestored : ∀ t, q (t + 1) ≤ q t)
+theorem dissipation_generation_not_recurring (q : Nat → Nat) (unrestored : ∀ t, q (t + 1) ≤ q t)
     (dissipates : ∀ t f, W.Arises t f → q (t + 1) < q t) : ¬ W.Unceasing :=
-  fun unceasing => falls_finitely q 0 (fun t _ => unrestored t)
+  fun unceasing => falls_not_recurring q 0 (fun t _ => unrestored t)
     fun N => match unceasing N with
       | ⟨t, f, later, arises⟩ => ⟨t, later, dissipates t f arises⟩
 
@@ -337,7 +337,7 @@ theorem left_late : ∀ t, 3 ≤ t → left t = 0
   | _ + 3, _ => rfl
 
 /-- Cells arise while drawing the condition down; the condition is consumed and arising
-stops. -/
+does not recur. -/
 theorem ceases :
     web.Dependent ∧ web.Arises 0 0 ∧ web.Arises 1 1 ∧ web.ConsumingIn 0 ∧
     (∀ t, ¬ web.Rises t ()) ∧ ¬ web.Unceasing :=

@@ -482,7 +482,7 @@ theorem uptake_needs_replenishment_from {cs : List C} {T : Nat}
     have step : ∀ t, T ≤ t → W.stock cs (t + 1) + L.uptake cs t = W.stock cs t :=
       fun t later => (balances t later).over.trans
         ((congrArg (W.stock cs t + ·) (none t later)).trans (Nat.add_zero _))
-    falls_finitely (W.stock cs) T
+    falls_not_recurring (W.stock cs) T
       (fun t later => Nat.le_trans (Nat.le_add_right _ _) (Nat.le_of_eq (step t later)))
       fun N => match uptake (N + T) with
       | ⟨t, later, positive⟩ =>
