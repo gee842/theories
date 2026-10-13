@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "claim": {
-    "zh": "取得的来源路径约束生成旧命名记录的原子候选；校准与历史覆盖条件下唯一绑定正确。指定先命名后校准的经历支持二词编码的任意有限组合解释及有限响应，同时保留后期路径改变造成的倒推错误。",
-    "en": "Acquired production-route constraints generate atomic candidates for earlier naming records; unique binding is correct under calibration and historical-coverage conditions. A specified naming-before-calibration history supports every finite compositional interpretation in the two-word encoding and a finite response, while retaining backward-inference failure after a later route change."
+    "zh": "取得的来源路径约束生成旧命名记录的原子候选；校准与历史覆盖条件下唯一绑定正确（既有的覆盖定理对每个记录成立）。取得词库的解释律的实例：先命名后校准的经历之后的绑定视图——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合；另有有限响应见证，同时保留后期路径改变造成的倒推错误。",
+    "en": "Acquired production-route constraints generate atomic candidates for earlier naming records; unique binding is correct under calibration and historical-coverage conditions (the existing coverage theorem holds for every record). An instance of the interpretation law for acquired lexicons: the binding view after the naming-before-calibration history — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms; a finite response has a separate witness, and backward-inference failure after a later route change is retained."
   },
   "hypotheses": [
     {
@@ -33,7 +33,8 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean",
   "aliases": [
-    "Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use"
+    "Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use",
+    "Becoming.MachineInstances.retrospective_interprets_every"
   ],
   "dependencies": [
     {
@@ -109,6 +110,15 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "role": "proof",
+      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "declarations": [
+        "Becoming.MachineInstances.retrospective_groups",
+        "Becoming.MachineInstances.retrospective_interprets_every"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/retrospective-binding-verification.json",
       "role": "receipt",
       "sha256": "361e2b8bae0ca9275a20a29633d0b27092b143dd461a26bc2d815b58718d6f13",
@@ -159,6 +169,10 @@
     {
       "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律的实例（取得词库的解释律见 acquired-binding-compositional-use；外围 MachineInstances）；覆盖之下的唯一绑定本已是对每个记录的律。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the result as an instance of the general law (the interpretation law for acquired lexicons, see acquired-binding-compositional-use; periphery, MachineInstances); unique binding under coverage was already a law for every record. Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

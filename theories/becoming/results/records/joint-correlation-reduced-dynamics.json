@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-08T19:22:44.047319+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "claim": {
-    "zh": "在明示两量子位实振幅片段中，实际相位操作保留双方完整局部密度与联合基底分布，而同一后续受控X操作产生不同控制响应。局部密度对不能统一给出下一控制状态。保留相应共同交叉项的四整数摘要，对指定交互与相位操作的任意有限序列给出精确控制密度和响应。",
-    "en": "In the specified two-qubit real-amplitude fragment, an actual phase operation preserves both complete local densities and the joint basis distribution, while the same subsequent controlled-X gives different control responses. The local density pair cannot uniformly determine the next control state. A four-integer summary retaining the relevant joint cross contribution gives exact control densities and responses for every finite word of the supplied interaction and phase operations."
+    "zh": "对每条带动作的变化之律与每个约化：约化值上有一条确定的律承载每一步，当且仅当约化合并的构型被每个动作带到它合并的构型；与每个动作交换的约化律与每段动作序列交换。在明示两量子位实振幅片段中，实际相位操作保留双方完整局部密度与联合基底分布，而同一后续受控 X 操作产生不同控制响应；所以局部密度对不承载规律，不能统一给出下一控制状态。保留相应共同交叉项的四整数摘要承载规律，对指定交互与相位操作的任意有限序列给出精确控制密度和响应：两者都是实例。",
+    "en": "For every law of change with moves and every reduction: some determined law on the reduced values carries every step exactly when configurations the reduction merges are taken by each move to configurations it merges; a reduced law that commutes with every move commutes with every course of moves. In the specified two-qubit real-amplitude fragment, an actual phase operation preserves both complete local densities and the joint basis distribution, while the same subsequent controlled-X gives different control responses; so the local density pair carries no law and cannot uniformly determine the next control state. A four-integer summary retaining the relevant joint cross contribution carries one, giving exact control densities and responses for every finite word of the supplied interaction and phase operations: both are instances."
   },
   "hypotheses": [
     {
@@ -39,7 +39,14 @@
     "Generative.RelationalReduction.no_local_pair_update",
     "Generative.RelationalReduction.summary_update_exact",
     "Generative.RelationalReduction.every_finite_control_response_exact",
-    "Generative.RelationalReduction.summary_omits_other_relations"
+    "Generative.RelationalReduction.summary_omits_other_relations",
+    "Becoming.Readout.law_through_iff",
+    "Becoming.Readout.foldl_semiconj",
+    "Becoming.Instances.local_pair_no_update",
+    "Becoming.Instances.local_pair_carries_no_law",
+    "Becoming.Instances.evolve_eq_foldl",
+    "Becoming.MachineInstances.summary_carries_law",
+    "Becoming.MachineInstances.summary_every_word"
   ],
   "dependencies": [],
   "related": [
@@ -131,6 +138,34 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "role": "proof",
+      "sha256": "0326d487114eb64f6289813dce09e05ee2033f0eec2a52f75536b556fcee97d2",
+      "declarations": [
+        "Becoming.Readout.law_through_iff",
+        "Becoming.Readout.foldl_semiconj"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "role": "proof",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "declarations": [
+        "Becoming.Instances.local_pair_no_update",
+        "Becoming.Instances.local_pair_carries_no_law",
+        "Becoming.Instances.evolve_eq_foldl"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "role": "proof",
+      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "declarations": [
+        "Becoming.MachineInstances.summary_carries_law",
+        "Becoming.MachineInstances.summary_every_word"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
       "role": "receipt",
       "sha256": "6be2a6a159b4903f6495badde969dc1cb414b72e080ad1c66f1d4efb75ad0953",
@@ -152,6 +187,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_relational_reduction.py",
       "role": "review",
       "sha256": "c83bcd121f817076d69faf29d431c873c782c34bc50d3c297738aa11d594210a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
       "declarations": []
     }
   ],
@@ -205,6 +246,10 @@
     {
       "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
       "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（Becoming.Readout 的 law_through_iff，由核心的 carries_law_iff 读出，及 foldl_semiconj）：局部密度对不承载规律、四整数摘要承载规律且对每段序列精确，经桥接 Becoming.Instances 与外围 MachineInstances 成为实例。scratch_build 实编；核心与桥接公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (Becoming.Readout's law_through_iff, read from the core's carries_law_iff, and foldl_semiconj): that the local density pair carries no law and that the four-integer summary carries one, exact after every word, become instances through the bridge Becoming.Instances and the periphery MachineInstances. Built with scratch_build; core and bridge have empty axiom reports, the periphery standard axioms only; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

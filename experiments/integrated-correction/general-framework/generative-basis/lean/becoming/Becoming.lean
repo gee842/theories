@@ -77,6 +77,10 @@ import Becoming.ReferencePlan
 import Becoming.ContinuingRevision
 import Becoming.Description
 import Becoming.Identification
+import Becoming.Assurance
+import Becoming.Segmentation
+import Becoming.Readout
+import Becoming.Gated
 
 /-!
 # The Theory of Becoming: the formal core
@@ -742,11 +746,36 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   (`g0_relevance_iff`), and left the comparison of courses to the AI, which compares
   courses on possibilities.
 
+* `Becoming.Assurance` (L2): when a plan secures its target, with no premise. For every
+  process a completing plan runs, safely, into the goal; for every determined process the
+  converse holds, so completion is exactly a safe run ending in the goal, and with no safety
+  condition a run every endpoint of which meets the goal. A two-outcome process shows the
+  converse fails without determination. For a law of change, a plan completes exactly when the
+  goal holds where the law takes it; a partial law's traces are exactly its completed runs.
+* `Becoming.Segmentation` (L2): grouping a sequence by a relation between adjacent elements,
+  for every alphabet and relation, with no premise. Grouping returns a partition exactly when
+  each group is linked inside and opens against the next, and that partition is unique; encoded
+  words are recovered exactly under two local conditions on adjacent pairs; a relation learned
+  as the strict majority of observed transitions links each element to at most one successor;
+  where words are recovered, reading every encoded sequence is right exactly when each word is
+  read right.
+* `Becoming.Readout` (L4): what a reduction keeps of an observable and of a law, with no
+  premise. What an observable reads through a reduction is single-valued exactly where it is
+  lumped; on two merged configurations a decoder agreeing at both exists exactly when the
+  observable agrees there, so nothing restores two merged configurations; a determined reduced
+  law carries every step exactly when merged configurations go to merged ones, and a commuting
+  reduced law commutes with every course.
+* `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
+  by every ungated step is kept along every ungated course, and conversely; a course that
+  changes it passes the gate, at a gated step that itself changes it.
+
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
 injectivity lemmas of constructors with fields depend on an axiom, `propext`; no source
 declaration uses them. `Becoming.Bridge` lies outside the core: it shows
 that existing modules' interfaces are these, so dependence runs toward the core.
+`Becoming.Instances`, also outside the core, states constructed peripheral examples as
+instances of `Assurance`, `Segmentation`, `Readout` and `Gated`.
 
 The foundation keeps its historical namespace `Generative`. Its processes are any
 becoming, including maintenance and degeneration, not only generative change.

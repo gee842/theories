@@ -3,7 +3,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T13:03:12.525158+00:00",
+  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
   "related": [],
   "id": "transition-grouping-word-partition",
   "title": {
@@ -11,13 +11,13 @@
     "en": "Transition grouping recovers encoded word sequences"
   },
   "claim": {
-    "zh": "当相邻关系恰为 ab 与 cd 内部连接时，分节保留任意有限的该二词编码序列的词划分；已有接触史实际取得此关系。",
-    "en": "When the adjacency relation joins exactly the interiors of ab and cd, segmentation recovers the word partition of every finite sequence in that encoding; an existing encounter history acquires this relation."
+    "zh": "对每个字母表与每个相邻关系 r：由右向左读，元素在 r 把它连到其后一组的首元素时并入该组，否则另起一组；分组返回一个划分，当且仅当各组非空、内部依 r 相连且不连到下一组，该划分唯一，分组不改变序列。对非空词的词汇，分组恢复每个编码序列的词，当且仅当每个词内部相连，且任何词的末元素都不连到任何词的首元素——两项都是相邻对的局部条件。以观察转移的严格多数学得的关系使每个元素至多连到一个后继。已有的分节算法与二词编码即这些定义：恢复每个二词序列恰当 a→b、c→d 相连而 b→a、b→c、d→a、d→c 不相连；idealBond 与接触史实际取得的关系是实例。",
+    "en": "For every alphabet and every adjacency relation r: reading from the right, an element joins the following group where r links it to that group's first element and opens a new group otherwise; grouping returns a partition exactly when every group is nonempty, linked by r inside and not linked to the next, that partition is unique, and grouping never changes the sequence. For a vocabulary of nonempty words, grouping recovers the words of every encoded sequence exactly when each word is linked inside and the last element of no word is linked to the first element of any word — both local conditions on adjacent pairs. A relation learned as the strict majority of observed transitions links each element to at most one successor. The existing grouping algorithm and two-word encoding are these definitions: every two-word sequence is recovered exactly when a→b and c→d are linked and b→a, b→c, d→a, d→c are not; idealBond and the relation an encounter history actually acquires are instances."
   },
   "hypotheses": [
     {
-      "zh": "给定四个基本事件、二词编码及 chunks 递归算法；关系为 idealBond。",
-      "en": "Four supplied elementary events, the two-word encoding and recursive chunks algorithm; the relation is idealBond."
+      "zh": "一般律对字母表与相邻关系不加条件；实例使用四个基本事件、二词编码及 idealBond。",
+      "en": "The general law places no condition on the alphabet or relation; the instance uses four elementary events, the two-word encoding and idealBond."
     },
     {
       "zh": "实际取得见证使用既定接触序列、严格多数判准与足够记录支持。",
@@ -30,7 +30,20 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
   "aliases": [
-    "Generative.AcquiredSegmentation.ideal_grouping_recovers_words"
+    "Generative.AcquiredSegmentation.ideal_grouping_recovers_words",
+    "Becoming.Segmentation.chunks_eq_iff",
+    "Becoming.Segmentation.chunks_unique",
+    "Becoming.Segmentation.join_chunks",
+    "Becoming.Segmentation.encode_iff",
+    "Becoming.Segmentation.bond_unique",
+    "Becoming.Segmentation.no_record_groups",
+    "Becoming.Instances.chunks_eq",
+    "Becoming.Instances.encode_eq",
+    "Becoming.Instances.two_word_iff",
+    "Becoming.Instances.ideal_two_word",
+    "Becoming.MachineInstances.bond_eq",
+    "Becoming.MachineInstances.bond_functional",
+    "Becoming.MachineInstances.experienced_parses_every"
   ],
   "dependencies": [],
   "counterexamples": [
@@ -40,11 +53,18 @@
         "zh": "重复可合并预定词界；部分经历只支持一个表达而误分另一表达。",
         "en": "Repetition can merge intended boundaries; partial experience can parse one expression while misgrouping another."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean",
+      "detail": {
+        "zh": "严格多数学得的关系是函数式的：两个词若在内部以不同元素接续同一元素，任何转移记录都不能把两者都分对。",
+        "en": "A relation learned by strict majority is functional: where two words continue one element differently inside, no record of transitions groups both."
+      }
     }
   ],
   "limitations": {
-    "zh": "固定二词编码与分节算法；任意长度形式对应不保证有限支持下实际执行，不建立自然语言或完整认知。",
-    "en": "Fixed two-word encoding and algorithm; arbitrary-length correspondence does not guarantee affordable execution or establish natural language and complete cognition."
+    "zh": "分组规则固定；任意长度形式对应不保证有限支持下实际执行，不建立自然语言或完整认知。",
+    "en": "The grouping rule is fixed; arbitrary-length correspondence does not guarantee affordable execution or establish natural language and complete cognition."
   },
   "validation_scope": {
     "zh": "迁移既有23项定理／51项声明审计中的指定分节结果；不因登记新增成果或重跑证明。",
@@ -63,9 +83,67 @@
       ]
     },
     {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean",
+      "role": "proof",
+      "sha256": "f9ef1414a7f9ac7221660308e4c2262e2a5ea105c60a4a648ba7214ac1b2df44",
+      "declarations": [
+        "Becoming.Segmentation.glue",
+        "Becoming.Segmentation.chunks",
+        "Becoming.Segmentation.LinkedFrom",
+        "Becoming.Segmentation.Opens",
+        "Becoming.Segmentation.Grouped",
+        "Becoming.Segmentation.join",
+        "Becoming.Segmentation.join_chunks",
+        "Becoming.Segmentation.chunks_eq_iff",
+        "Becoming.Segmentation.chunks_unique",
+        "Becoming.Segmentation.encode",
+        "Becoming.Segmentation.Spelled",
+        "Becoming.Segmentation.encode_iff",
+        "Becoming.Segmentation.edges",
+        "Becoming.Segmentation.departures",
+        "Becoming.Segmentation.transitions",
+        "Becoming.Segmentation.bond",
+        "Becoming.Segmentation.bond_unique",
+        "Becoming.Segmentation.no_record_groups"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "role": "proof",
+      "sha256": "b442e896d0ea8ec66adf9104b4777278a4764291a48b33e95f1fdebf61590e83",
+      "declarations": [
+        "Becoming.Instances.chunks_eq",
+        "Becoming.Instances.flatten_eq_join",
+        "Becoming.Instances.encode_eq",
+        "Becoming.Instances.spelled",
+        "Becoming.Instances.two_word_iff",
+        "Becoming.Instances.ideal_two_word"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "role": "proof",
+      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "declarations": [
+        "Becoming.MachineInstances.edges_all_eq",
+        "Becoming.MachineInstances.bond_eq",
+        "Becoming.MachineInstances.bond_functional",
+        "Becoming.MachineInstances.Groups",
+        "Becoming.MachineInstances.segments_of_groups",
+        "Becoming.MachineInstances.experienced_groups",
+        "Becoming.MachineInstances.experienced_parses_every"
+      ]
+    },
+    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json",
       "role": "receipt",
       "sha256": "6e3af122875534e1c832d3aec182caca8e53a9c378fc5900b460ea8d2cc9bff2",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
       "declarations": []
     }
   ],
@@ -86,6 +164,10 @@
     {
       "zh": "2026-10-08：迁移已经实际检查的分节主张，保留原源码、回执和反例。",
       "en": "2026-10-08: migrated the already checked grouping claim, preserving original source, receipt and counterexamples."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Segmentation）：分组对每个字母表与关系恰在局部条件下给出唯一划分并恢复词，严格多数关系是函数式的；已有算法、二词编码与 idealBond 经桥接 Becoming.Instances 与外围 MachineInstances 成为实例。scratch_build 实编；核心与桥接公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Segmentation): for every alphabet and relation, grouping gives a unique partition and recovers words exactly under local conditions, and strict-majority relations are functional; the existing algorithm, two-word encoding and idealBond become instances through the bridge Becoming.Instances and the periphery MachineInstances. Built with scratch_build; core and bridge have empty axiom reports, the periphery standard axioms only; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged."
     }
   ]
 }

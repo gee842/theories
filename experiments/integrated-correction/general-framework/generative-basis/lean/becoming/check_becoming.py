@@ -60,8 +60,8 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
-BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison", "Becoming.Instances"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
