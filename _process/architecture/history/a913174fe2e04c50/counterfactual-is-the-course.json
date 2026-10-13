@@ -1,0 +1,618 @@
+{
+  "schema_version": 1,
+  "id": "counterfactual-is-the-course",
+  "title": {
+    "zh": "反事实是规律的进程：其余遵从一个读已立者的交换律时，部分动作相同、起始相同的两个平衡的流是一个流；律生成的进程恰在可行之处平衡，一个动作的反事实就是它生成的进程；律只读各形成所识时其余经识回应是定理，条件有限时律经其敏感而读，敏感是最小的识；比较在回应所及之内决定，不另给第二个流与回应；作为 P69 的展开，确定的律在历史之外的步恰是历史未取的动作，即反事实",
+    "en": "The counterfactual is the course of the law: where the rest follows one law of exchange reading what has stood, two balanced flows in which the part acts alike, starting alike, are one flow; the course the law generates balances exactly where it is feasible, and the counterfactual of an act is the course it generates; where the law reads only what each formation registers, responding through registration is a theorem, and with finitely many conditions the law reads through what it is sensitive to, the least registration; the comparison is decided within the responsive reach with neither the second flow nor the response supplied; as P69's unfolding, a determined law's steps beyond a history are exactly the moves the history never takes, its counterfactuals"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "claim": {
+    "zh": "设 L、L′ 是两个流，W、W′ 是两个网，part 是判定的形成家族。交换律 law（ExchangeLaw）从一段水平历史读出每个形成跨过第 t 步与每个条件的取用与给予；它读已立者（ExchangeLaw.Nonanticipating），是指两段历史到第 t 步相同时它在第 t 步给出相同（AgreeUpTo、ExchangeLaw.GivesAlike）。流在部分之外遵从律（Flow.Follows），是指部分之外每个形成按律在流自身的水平下交换；部分在两个流中动作相同（Flow.ActsAlike）。（一）反事实由动作固定：两个平衡的流（Flow.Balances）在场形成每步相同、起始相同、部分动作相同、其余遵从同一个读已立者的律时，每步每个条件的水平相同，每个形成每步与每个条件的取用与给予相同（levels_fixed、counterfactual_fixed）。（二）生成与可行：律从起始水平逐步生成历史、水平与流（ExchangeLaw.history、levels、course），即阶段与至今历史上一个确定律的轨道（ExchangeLaw.history_orbit，复用 Law.orbit）；生成的流对每个形成遵从律（ExchangeLaw.course_follows）；律读已立者时，生成的流平衡恰当进程可行，即律从不从一个条件取用多于其上所立与所给的（ExchangeLaw.Feasible、ExchangeLaw.course_balances_iff）。部分按另一个读已立者的律 act 行动、其余按律（ExchangeLaw.withAct，ExchangeLaw.withAct_nonanticipating）时，一个平衡的流若部分动作与该进程中相同、其余遵从律、从进程的起始水平开始，就有进程的水平与交换（counterfactual_is_course）；每个形成都遵从一个读已立者的律时，平衡的流就是律生成的进程（ExchangeLaw.course_unique）；后两者在进程可行时成立。（三）经识回应推出：律经识而读（ExchangeLaw.Through），是指部分之外每个形成在 W 下识得相同到第 t 步的两段历史，律在第 t 步给出相同；这时其余在律的任意两个进程中经识回应（ExchangeLaw.Through.responds，即 P65 的 Flow.RespondsThroughRegistration）。每个读已立者的律经识一切而读（ExchangeLaw.Nonanticipating.through_all）。h 的交换对 c 敏感（ExchangeLaw.Sensitive），是指某步只改 c 的水平会改变它（ExchangeLaw.InsensitiveAt 的否定）。条件有限（一个列表含每个条件）、条件的相等可判定时，读已立者的律经每个观察其敏感者的识而读，尤其经其敏感本身而读（ExchangeLaw.Nonanticipating.through_of_observed、through_sensitive，经逐个条件替换 mixIn_alike、alike_of_sensitive_agree）；反之，律所经的每个识，连同形成所依存的，都不漏掉它敏感的条件（ExchangeLaw.Through.registers_of_sensitive，双重否定）。不判定敏感，只判定两个数是否相等（nat_eq_of_not_not）。（四）比较：律的两个平衡的进程在场形成相同、起始相同、律经一个识而读时，对覆盖每个不在经此识画出的回应所及之外者（双重否定）的任何意义，每个保留另一个上有意义者恰如包含它，两者都不增加恰当两者都不超出（comparison_of_courses，Flow.Balances.comparison_within_response 的应用）；条件有限时识取作律的敏感（comparison_through_sensitivity）；第二个流取作另一个动作生成的、可行的进程时亦然，不另给第二个流与回应（comparison_with_act）。（五）与标准因果模型：部分做一列动作、其余按律时生成的历史，是以部分的动作为输入、无噪声的标准模型 inputs 的轨道（ExchangeLaw.ofMoves、ExchangeLaw.stepBy、ExchangeLaw.course_trajectory）；这个模型的一次运行在第 t 步之前未在 x 取动作 a 时，记录不固定其结果，模型固定它（ExchangeLaw.act_not_taken，inputs_intervention_unfixed 与 inputs_model_fixes 的实例）。（六）见证：P65 的 Loop 中第二个形成的回应是律 Loop.replyLaw（自身条件下降后的那一步从第一个的条件取用两单位），读已立者且只读第二个所观察的（Loop.replyLaw_nonanticipating、Loop.replyLaw_through）；有动作与无动作的流都遵从它（Loop.escalation_follows、Loop.quiet_follows），所以 Loop.responds 由律推出（Loop.responds_by_law）；两个流各由第一个的动作固定（Loop.courses_fixed）。（七）作为 P69 的展开：形成与条件是同一类关系项时，进程是一个世界（ExchangeLaw.world，P69 的 World，网以生成的水平读，Web.withLevel）；律读已立者时，这个世界平衡，因而其水平以关系项的交换为动作、按交换之律（P69 的 exchange）而行，恰当进程可行（ExchangeLaw.world_balances_iff、ExchangeLaw.world_exchange_iff、ExchangeLaw.worldRun）。确定的律（Determined）在一个运行所显示者（P69 的 Shown）之外从 s 以 a 走一步，恰当它在那里走得出一步且运行从不在 s 取 a（Run.beyond_shown_iff，对任何确定的律，是关于 Shown 的一条律）；所以进程的标准模型的一次运行，其历史显示一个确定的律（Consistent，经 exists_law_iff 与 inputs_determined），部分在 x 的动作 a 有模型在历史所显示者之外的一步，恰当历史从不在 x 取 a（ExchangeLaw.counterfactual_beyond_shown）。部分的动作由律 act 在配置（阶段与至今历史）上形成时（ExchangeLaw.policy），P69 的 closedBy 从起始水平出发的运行每一步都是 law.withAct part act 生成的进程（ExchangeLaw.closedBy_course），于是两个这样的运行相同（closedBy_runs_agree）。",
+    "en": "Let L, L′ be two flows, W, W′ two webs and part a decided family of formations. A law of exchange (ExchangeLaw) reads, off a level history, what each formation takes from and gives to each condition across step t; it reads what has stood (ExchangeLaw.Nonanticipating) when, for two histories agreeing up to step t, it gives alike at step t (AgreeUpTo, ExchangeLaw.GivesAlike). A flow follows the law outside the part (Flow.Follows) when every formation outside the part exchanges as the law gives under the flow's own levels; the part acts alike in two flows (Flow.ActsAlike). (1) The counterfactual is fixed by the act: two balanced flows (Flow.Balances) with the same formations present at every step, starting alike, in which the part acts alike and the rest follows one law reading what has stood, have the same level of every condition at every step, and every formation takes from and gives to every condition alike at every step (levels_fixed, counterfactual_fixed). (2) Generation and feasibility: the law generates a history, levels and a flow step by step from starting levels (ExchangeLaw.history, levels, course), the orbit of one determined law on the stage and the history so far (ExchangeLaw.history_orbit, reusing Law.orbit); every formation follows the law in the generated flow (ExchangeLaw.course_follows); where the law reads what has stood, the generated flow balances exactly where the course is feasible, the law never taking from a condition more than stands on it and is given to it (ExchangeLaw.Feasible, ExchangeLaw.course_balances_iff). With the part acting by another law act reading what has stood and the rest by the law (ExchangeLaw.withAct, ExchangeLaw.withAct_nonanticipating), a balanced flow in which the part acts as in that course and the rest follows the law, starting at the course's starting levels, has the course's levels and exchange (counterfactual_is_course); where every formation follows one law reading what has stood, a balanced flow is the course the law generates (ExchangeLaw.course_unique); the last two hold where the course is feasible. (3) Responding through registration follows: the law reads through a registration (ExchangeLaw.Through) when, for every formation outside the part, two histories it registers alike under W up to step t give alike at step t; then the rest responds through its registration in any two courses of the law (ExchangeLaw.Through.responds, P65's Flow.RespondsThroughRegistration). Every law of what has stood reads through registering everything (ExchangeLaw.Nonanticipating.through_all). h's exchange is sensitive to c (ExchangeLaw.Sensitive) when at some step changing c's levels alone changes it (the negation of ExchangeLaw.InsensitiveAt). With finitely many conditions (a list holding every condition) and decidable equality of conditions, a law of what has stood reads through every registration observing what it is sensitive to, so through its sensitivity itself (ExchangeLaw.Nonanticipating.through_of_observed, through_sensitive, by changing one condition at a time, mixIn_alike, alike_of_sensitive_agree); conversely, every registration a law reads through, with what the formation depends on, leaves out no condition the exchange is sensitive to (ExchangeLaw.Through.registers_of_sensitive, double-negated). No sensitivity is decided; only whether two numbers are equal (nat_eq_of_not_not). (4) The comparison: for two balanced courses of the law with the same formations present, starting alike, the law reading through a registration, any significance covering (double-negated) every formation not beyond the responsive reach drawn through that registration makes each retain along the other exactly as it includes it, and neither add exactly where neither exceeds (comparison_of_courses, an application of Flow.Balances.comparison_within_response); with finitely many conditions the registration is the law's sensitivity (comparison_through_sensitivity); likewise with the second flow the feasible course another act generates, with neither the second flow nor the response supplied (comparison_with_act). (5) The standard causal model: the history generated where the part makes a list of moves and the rest follows the law is a trajectory of the standard model inputs whose input is the part's move, with no noise (ExchangeLaw.ofMoves, ExchangeLaw.stepBy, ExchangeLaw.course_trajectory); where a run of that model has not taken move a at x before step t, the record does not fix its outcome and the model does (ExchangeLaw.act_not_taken, an instance of inputs_intervention_unfixed and inputs_model_fixes). (6) Witness: in P65's Loop the second formation's reply is a law, Loop.replyLaw (in the step after its own condition falls it takes two units from the first's condition), reading what has stood and only what the second observes (Loop.replyLaw_nonanticipating, Loop.replyLaw_through); the flows with and without the act both follow it (Loop.escalation_follows, Loop.quiet_follows), so Loop.responds follows from the law (Loop.responds_by_law); each flow is fixed by the first's act (Loop.courses_fixed). (7) As P69's unfolding: where formations and conditions are one kind of relatum, the course is a world (ExchangeLaw.world, P69's World, its web read at the generated levels, Web.withLevel); where the law reads what has stood, that world balances, and so its levels run by the law of exchange (P69's exchange) with its relata's exchanges as moves, exactly where the course is feasible (ExchangeLaw.world_balances_iff, ExchangeLaw.world_exchange_iff, ExchangeLaw.worldRun). A determined law (Determined) steps from s by a beyond what a run of it shows (P69's Shown) exactly where it steps there at all and the run never takes a at s (Run.beyond_shown_iff, for any determined law, a law about Shown); so for a run of the course's standard model, its history shows a determined law (Consistent, through exists_law_iff and inputs_determined), and the part's move a at x has a step of the model beyond what the history shows exactly where the history never takes a at x (ExchangeLaw.counterfactual_beyond_shown). Where the part's move is formed by a law act on the configuration, the stage and the history so far (ExchangeLaw.policy), a run of P69's closedBy from the starting levels is at every step the course law.withAct part act generates (ExchangeLaw.closedBy_course), so two such runs agree (closedBy_runs_agree)."
+  },
+  "hypotheses": [
+    {
+      "zh": "交换律是给出的：其余遵从哪个律（ExchangeLaw、Flow.Follows）不推出。",
+      "en": "The law of exchange is supplied: which law the rest follows (ExchangeLaw, Flow.Follows) is not derived."
+    },
+    {
+      "zh": "律读已立者（ExchangeLaw.Nonanticipating）是用到它的定律的假设（levels_fixed、counterfactual_fixed、totals_under、course_balances_iff、through_all、through_of_observed、through_sensitive、comparison_through_sensitivity、comparison_with_act、counterfactual_is_course、ExchangeLaw.course_unique、world_balances_iff、world_exchange_iff、worldRun）；ExchangeLaw.Through.responds 与 comparison_of_courses 改取律经识而读（ExchangeLaw.Through）。",
+      "en": "That the law reads what has stood (ExchangeLaw.Nonanticipating) is a hypothesis of the laws that use it (levels_fixed, counterfactual_fixed, totals_under, course_balances_iff, through_all, through_of_observed, through_sensitive, comparison_through_sensitivity, comparison_with_act, counterfactual_is_course, ExchangeLaw.course_unique, world_balances_iff, world_exchange_iff, worldRun); ExchangeLaw.Through.responds and comparison_of_courses take instead that the law reads through a registration (ExchangeLaw.Through)."
+    },
+    {
+      "zh": "进程可行（ExchangeLaw.Feasible）是 comparison_with_act、counterfactual_is_course 与 ExchangeLaw.course_unique 的假设；course_balances_iff 证明它等价于生成的流平衡。",
+      "en": "Feasibility of the course (ExchangeLaw.Feasible) is a hypothesis of comparison_with_act, counterfactual_is_course and ExchangeLaw.course_unique; course_balances_iff proves it equivalent to the generated flow's balance."
+    },
+    {
+      "zh": "敏感的形式（alike_of_sensitive_agree、through_of_observed、through_sensitive、comparison_through_sensitivity）假设条件有限：一个列表含每个条件，并且条件的相等可判定；只判定两个数是否相等，不判定敏感；registers_of_sensitive 的结论是双重否定。",
+      "en": "The sensitivity forms (alike_of_sensitive_agree, through_of_observed, through_sensitive, comparison_through_sensitivity) assume finitely many conditions, a list holding every condition, and decidable equality of conditions; only whether two numbers are equal is decided, never sensitivity; registers_of_sensitive concludes a double negation."
+    },
+    {
+      "zh": "比较的定律如 P65：实际的流全局平衡（Flow.Balances）、两个流的在场形成每步相同、起始相同；意义 sig 是给定的，覆盖写成双重否定。",
+      "en": "The comparison laws as in P65: the actual flow balances throughout (Flow.Balances), the two flows have the same formations present at every step, and they start alike; the significance sig is supplied, and the cover is double-negated."
+    },
+    {
+      "zh": "counterfactual_fixed 与 counterfactual_is_course 要求部分的动作逐值相同（Flow.ActsAlike）；部分以读水平的策略行动时，用 ExchangeLaw.course_unique（把部分的策略并入律）。",
+      "en": "counterfactual_fixed and counterfactual_is_course ask the part to act alike value by value (Flow.ActsAlike); where the part acts by a strategy reading the levels, ExchangeLaw.course_unique applies, with the part's strategy taken into the law."
+    },
+    {
+      "zh": "Loop 的结论：见证的流、网与部分，以及第二个形成的律 Loop.replyLaw。",
+      "en": "For the Loop results: the witness's flows, webs and part, and the second formation's law Loop.replyLaw."
+    },
+    {
+      "zh": "（七）的实例：world 系列要求形成与条件是同一类关系项（ExchangeLaw R R）；Run.beyond_shown_iff 要求律确定；closedBy_course 要求运行从起始水平与在其上形成的动作开始，部分的动作由律 act 在配置上形成（act 不必读已立者）；它不推出一个动作何时是部分自己的。",
+      "en": "The instances of (7): the world forms ask that formations and conditions be one kind of relatum (ExchangeLaw R R); Run.beyond_shown_iff asks that the law be determined; closedBy_course asks that the run begin at the starting levels with the move formed there, the part's move being formed by a law act on the configuration (act need not read what has stood); it does not derive when a move is the part's own."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平与数量，减法截断。",
+      "en": "Discrete steps, counted from step 0; natural-number levels and amounts, with truncated subtraction."
+    }
+  ],
+  "correspondence": {
+    "zh": "P64–P68 落地（bca9695b）之后，Ren 写道：“another agent has got this far, maybe merge first and see if there is something to work on”。AI 在本章 §8 的进一步证明中认领了一项与 P65 相接的：“他者有回应的比较，由动力学给出回应而不是另给第二个流”，它也是 comparison-where-the-rest-responds 的 next_delta；工作板 P80，整合者接受。整合者要求推进 P65 的记录而不另立平行的主张，并写明定理仍取的假设；P65 的推进见该记录的历史，本记录陈述新的定律。读法（AI 的，待 Ren）：反事实不是实际之外的第二个世界，而是同一规律在部分另作时的进程，可行时存在、由动作固定（AI 把它与 Ren 在 P69 所说的“there are no two realities”相对应）；对遵从读已立者之律的其余，P65 的前提不是另加的关于形成怎样行为的假设，无论其余遵从哪个这样的律，条件有限时它都经其敏感而读，读作识：形成识其交换所敏感的；未取的动作是标准因果模型意义上的干预。名称（ExchangeLaw、Nonanticipating、Through、Sensitive、course、Feasible 等）是 AI 按 Ren 的命名准则所选。P69（da8f75a7）先落地；整合者把 P80 与 Unfolding 的实例定理交给后落地者，AI 写成 P80b，整合者同意并入本次落地（一次检查、一轮文档）。Run.beyond_shown_iff 是关于 P69 的 Shown 的一条律，按整合者的安排暂放在 Counterfactual（它唯一的使用者），第二个模块需要时移入 Unfolding，名字与陈述不变。读法增加（AI 的，待 Ren）：未取之动作的进程与每个展开同形（P69 的 World），不是第二种东西；律在它所管的历史之外添加的恰是历史未取的动作，所以反事实是律在其历史之外的一步，不是旁边的第二段历史；部分的动作在展开之内由律形成时，进程从起始处固定，另作即部分另是的律。见整合文档 §100。",
+    "en": "After P64–P68 landed (bca9695b), Ren wrote: “another agent has got this far, maybe merge first and see if there is something to work on”. The AI claimed a further proof of the chapter's section 8 that joins P65: “a comparison in which others respond as the dynamics give, not through a second flow supplied”, also the next_delta of comparison-where-the-rest-responds; work board P80, accepted by the integrator. The integrator asked that P65's record be advanced rather than a parallel claim written, stating which hypotheses the theorem still takes; P65's advance is in that record's history, and this record states the new laws. Readings (the AI's, pending Ren): a counterfactual is not a second world beside the actual one but the course of the same law where the part acts otherwise, existing where feasible and fixed by the act (the AI relates this to Ren's “there are no two realities” at P69); for a rest following a law of what has stood, P65's premise is no further assumption about how formations behave: whatever such law the rest follows, with finitely many conditions it reads through its sensitivity, read as 识, a formation registering what its exchange is sensitive to; an act not taken is an intervention in the sense of the standard causal model. The names (ExchangeLaw, Nonanticipating, Through, Sensitive, course, Feasible and others) are the AI's, chosen by Ren's naming standard. P69 (da8f75a7) landed first; the integrator left the instance theorems of P80 with Unfolding to whichever landed second, the AI wrote them as P80b, and the integrator agreed to fold them into this landing (one check, one documentation round). Run.beyond_shown_iff is a law about P69's Shown, kept in Counterfactual, its only user, as the integrator arranged; it moves to Unfolding, name and statement kept, when a second module needs it. Added readings (the AI's, pending Ren): the course of an act not taken has the form of every unfolding (P69's World), not a second kind of thing; what a law adds beyond the history it governs is exactly the moves the history never takes, so a counterfactual is the law's step beyond its history, not a second history beside it; with the part's move formed within the unfolding by a law, the course is fixed from the start, and acting otherwise is a law of the part otherwise. See section 100 of the integration note."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+  "aliases": [
+    "Becoming.ExchangeLaw",
+    "Becoming.ExchangeLaw.Nonanticipating",
+    "Becoming.ExchangeLaw.Through",
+    "Becoming.ExchangeLaw.Sensitive",
+    "Becoming.ExchangeLaw.Feasible",
+    "Becoming.ExchangeLaw.course",
+    "Becoming.Flow.Follows",
+    "Becoming.Flow.ActsAlike",
+    "Becoming.counterfactual_fixed",
+    "Becoming.ExchangeLaw.course_balances_iff",
+    "Becoming.counterfactual_is_course",
+    "Becoming.ExchangeLaw.course_unique",
+    "Becoming.ExchangeLaw.Through.responds",
+    "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
+    "Becoming.ExchangeLaw.Through.registers_of_sensitive",
+    "Becoming.comparison_of_courses",
+    "Becoming.comparison_through_sensitivity",
+    "Becoming.comparison_with_act",
+    "Becoming.ExchangeLaw.course_trajectory",
+    "Becoming.ExchangeLaw.act_not_taken",
+    "Becoming.Loop.responds_by_law",
+    "Becoming.Loop.courses_fixed"
+  ],
+  "dependencies": [
+    {
+      "id": "comparison-where-the-rest-responds",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.RespondsThroughRegistration、Flow.WithinResponse 与 Flow.Balances.comparison_within_response：本记录把其前提推出，比较是它的应用；见证复用 Loop 的流、网、部分与 Loop.responds 的陈述。",
+        "en": "Reuses Flow.RespondsThroughRegistration, Flow.WithinResponse and Flow.Balances.comparison_within_response: this record derives its premise, and the comparison is its application; the witness reuses Loop's flows, webs, part and the statement of Loop.responds."
+      },
+      "interface": {
+        "output": {
+          "zh": "其余经识回应时，比较在回应所及之内决定。",
+          "en": "Where the rest responds through its registration, the comparison is decided within the responsive reach."
+        },
+        "input": {
+          "zh": "律经识而读时，其余在律的任意两个进程中经识回应；第二个流是另一个动作生成的进程。",
+          "en": "Where the law reads through a registration, the rest responds through its registration in any two courses of the law; the second flow is the course another act generates."
+        },
+        "conditions": {
+          "zh": "交换律；它经识而读（或读已立者且条件有限）；两个流平衡（第二个由可行给出）；在场形成相同；起始相同。",
+          "en": "A law of exchange; that it reads through the registration (or reads what has stood, with finitely many conditions); both flows balance (the second by feasibility); the same formations present; a common start."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean"
+      }
+    },
+    {
+      "id": "testing-within-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.Registers、Web.RegistersAlike 与 Web.RegistersAlikeUpTo：律经识而读与敏感的最小性都以它们陈述。",
+        "en": "Reuses Web.Registers, Web.RegistersAlike and Web.RegistersAlikeUpTo: reading through a registration and the leastness of sensitivity are stated with them."
+      },
+      "interface": {
+        "output": {
+          "zh": "一个形成识什么（所依存的被同样容许，所观察的水平相同），以及到第 t 步识得相同。",
+          "en": "What a formation registers (what it depends on admitted alike, what it observes at alike levels), and registering alike up to step t."
+        },
+        "input": {
+          "zh": "律经识而读的定义；敏感者在所依存或所观察之内。",
+          "en": "The definition of a law reading through a registration; what the law is sensitive to lies within what is depended on or observed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean"
+      }
+    },
+    {
+      "id": "causal-models-as-processes",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 inputs、trajectory、inputs_intervention_unfixed、inputs_model_fixes 与 inputs_determined：进程是以部分的动作为输入的轨道，未取的动作是干预；模型确定，所以其历史显示它的律（ExchangeLaw.counterfactual_beyond_shown）。",
+        "en": "Reuses inputs, trajectory, inputs_intervention_unfixed, inputs_model_fixes and inputs_determined: the course is a trajectory with the part's move as the input, and an act not taken is an intervention; the model is determined, so its history shows its law (ExchangeLaw.counterfactual_beyond_shown)."
+      },
+      "interface": {
+        "output": {
+          "zh": "x′ = F(x, u, ε) 是动作为输入与噪声的确定过程；记录不固定未取的动作，模型固定它。",
+          "en": "x′ = F(x, u, ε) is a determined process whose move is the input and the noise; the record does not fix a move not taken, and the model does."
+        },
+        "input": {
+          "zh": "以部分的动作为输入、无噪声的实例。",
+          "en": "The instance with the part's move as the input and no noise."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean"
+      }
+    },
+    {
+      "id": "recurrence-without-premise",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Law.orbit、le_succ_cases、gap_of_le 与 mem_cons_split：生成的历史是一个确定律的轨道；步的归纳与列表的拆分。",
+        "en": "Reuses Law.orbit, le_succ_cases, gap_of_le and mem_cons_split: the generated history is the orbit of a determined law; induction on steps and splitting a list."
+      },
+      "interface": {
+        "output": {
+          "zh": "一个确定律的轨道与自然数、列表的引理。",
+          "en": "The orbit of a determined law and lemmas on numbers and lists."
+        },
+        "input": {
+          "zh": "生成的历史是阶段与至今历史上 ExchangeLaw.next 的轨道。",
+          "en": "The generated history is the orbit of ExchangeLaw.next on the stage and the history so far."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean"
+      }
+    },
+    {
+      "id": "laws-of-one-step",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.Balances 与总量 total（Generation）、total_congr_on（Population）：反事实由动作固定是对步作归纳，每步经平衡相消。",
+        "en": "Reuses Flow.Balances and the totals total (Generation) and total_congr_on (Population): that the counterfactual is fixed by the act is an induction on steps, cancelling through balance at each step."
+      },
+      "interface": {
+        "output": {
+          "zh": "一步上的平衡：下一步的水平是本步水平加所给减所取。",
+          "en": "Balance across one step: the next level is this level plus what is given less what is taken."
+        },
+        "input": {
+          "zh": "两个流交换相同时总量相同，所以水平相同传到下一步。",
+          "en": "Where two flows exchange alike their totals are alike, so alike levels carry to the next step."
+        },
+        "conditions": {
+          "zh": "两个流平衡；在场形成相同。",
+          "en": "Both flows balance; the same formations present."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean"
+      }
+    },
+    {
+      "id": "process-and-frame-as-readings",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 World、Exchange、exchange、World.move、World.balances_iff_exchange、World.exchangeRun、Shown、Consistent、exists_law_iff、closedBy 与 closedBy_runs_agree：进程读作一个世界，历史之外的步是反事实，部分的动作由律形成时 closedBy 的运行就是进程。",
+        "en": "Reuses World, Exchange, exchange, World.move, World.balances_iff_exchange, World.exchangeRun, Shown, Consistent, exists_law_iff, closedBy and closedBy_runs_agree: the course read as a world, the steps beyond a history as its counterfactuals, and a run of closedBy, with the part's move formed by a law, as the course."
+      },
+      "interface": {
+        "output": {
+          "zh": "世界的动作是关系项的交换；历史是它所显示之律的运行；动作由策略形成时运行由起点固定。",
+          "en": "A world's moves are its relata's exchanges; a history is a run of the law it shows; with the move formed by a policy, a run is fixed by its start."
+        },
+        "input": {
+          "zh": "进程的世界按交换之律而行恰当可行；确定的律在运行所显示者之外的步恰在未取的动作；closedBy 的运行是进程。",
+          "en": "The course's world runs by the law of exchange exactly where feasible; a determined law's steps beyond what a run shows are exactly at the moves not taken; a run of closedBy is the course."
+        },
+        "conditions": {
+          "zh": "形成与条件同类（world 系列）；律确定；部分的动作由律在配置上形成（closedBy_course）。",
+          "en": "Formations and conditions of one kind (the world forms); a determined law; the part's move formed by a law on the configuration (closedBy_course)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "feedback-and-reach",
+      "detail": {
+        "zh": "回答其开放项“他者有回应的比较，由动力学给出回应而不是另给第二个流”，在其余遵从读已立者的交换律时；律本身仍是给出的。",
+        "en": "Answers its open item, a comparison in which others respond as the dynamics give, not through a second flow supplied, where the rest follows a law of exchange reading what has stood; the law itself is still supplied."
+      }
+    },
+    {
+      "id": "experiment-needs-return",
+      "detail": {
+        "zh": "P53 说动作造成什么只相对于无此动作之历史的模型才可检验；这里那个模型就是律，未取的动作的结果由律固定（ExchangeLaw.act_not_taken）。",
+        "en": "P53 says that what an act causes is testable only relative to a model of the history without the act; here that model is the law, which fixes the outcome of an act not taken (ExchangeLaw.act_not_taken)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "detail": {
+        "zh": "记录不固定反事实：以部分的动作为输入的模型的一次运行在第 t 步之前未在 x 取动作 a 时，记录不固定其结果（ExchangeLaw.act_not_taken）；只有律固定它。",
+        "en": "The record does not fix the counterfactual: where a run of the model whose input is the part's move has not taken move a at x before step t, the record does not fix its outcome (ExchangeLaw.act_not_taken); only the law fixes it."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "detail": {
+        "zh": "事先给定的识可以过窄：律对某个形成既不依存也不观察的条件敏感时，律不经这个识而读（ExchangeLaw.Through.registers_of_sensitive 的逆否）；回应所及须经律的敏感画出，随之变宽。",
+        "en": "A registration given in advance can be too narrow: where the law is sensitive to a condition the formation neither depends on nor observes, the law does not read through that registration (the contrapositive of ExchangeLaw.Through.registers_of_sensitive); the responsive reach must be drawn through the law's sensitivity, and widens."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "律本身不推出（其余遵从哪个律），读已立者不推出；ExchangeLaw.Through.responds 近于定义，实质的新内容是反事实由动作固定、生成与可行的等价、敏感是最小的识、与 P68 模型的实例以及 Loop 由律推出；前提移到律上：对未被识者的回应、噪声与未表示为条件的输入落在律的敏感之内，回应所及变宽而不是被排除；条件无穷多时敏感是否仍是最小的识未陈述，也无反例；只依存而敏感于其水平的律不经只含依存的识而读（依存只要求同样容许）；不可行的动作没有进程，不给它别的读法；部分的动作逐值相同或以律给出；回应所及仍是上界，不量差别到达多少，不按时间先后；Loop 是最小的见证（一个回应），不是回路的一般理论；与 P69 的实例近于定义：world_balances_iff 重述 course_balances_iff，Run.beyond_shown_iff 对任何确定的律成立、不用交换律，counterfactual_beyond_shown 所说的历史之外是模型的一步而不是完整的另一进程（那是 counterfactual_is_course），closedBy_course 只要求部分的动作由律在配置上形成，不推出何时一个动作是部分自己的；world 系列只覆盖形成与条件是同一类关系项的情形，两类的律不在这里读作世界；读法与名称是 AI 的，待 Ren；不含伦理谓词。",
+    "en": "The law itself is not derived (which law the rest follows), nor that it reads what has stood; ExchangeLaw.Through.responds is near-definitional, the substantive new content being that the counterfactual is fixed by the act, the equivalence of generation with feasibility, sensitivity as the least registration, the instance of P68's model and Loop following from the law; the premise moves onto the law: responding to what is not registered, noise and inputs not represented as conditions fall within the law's sensitivity, so the responsive reach widens rather than their being excluded; whether sensitivity remains the least registration with infinitely many conditions is not stated, and no counterexample is given; a law sensitive to the level of a condition the formation only depends on does not read through a registration holding only that dependence (dependence asks only that it be admitted alike); an infeasible act has no course, and no other reading of it is given; the part's acts are alike value by value or given by a law; the responsive reach is still an upper bound, with no measure of how much difference arrives and no order in time; Loop is a minimal witness (one response), not a general theory of loops; the instances with P69 are near-definitional: world_balances_iff restates course_balances_iff, Run.beyond_shown_iff holds for any determined law without the law of exchange, the step beyond the history in counterfactual_beyond_shown is one step of the model rather than a whole other course (that is counterfactual_is_course), and closedBy_course asks only that the part's move be formed by a law on the configuration, not deriving when a move is the part's own; the world forms cover only formations and conditions of one kind of relatum, and a law over two kinds is not read as a world here; the readings and names are the AI's, pending Ren; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Counterfactual 的 46 项定理全部空依赖，其中含 counterfactual_fixed、ExchangeLaw.course_balances_iff、counterfactual_is_course、ExchangeLaw.course_unique、ExchangeLaw.Through.responds、ExchangeLaw.Nonanticipating.through_sensitive、ExchangeLaw.Through.registers_of_sensitive、comparison_with_act、ExchangeLaw.act_not_taken、ExchangeLaw.world_exchange_iff、Run.beyond_shown_iff、ExchangeLaw.counterfactual_beyond_shown、ExchangeLaw.closedBy_course与 Loop.responds_by_law；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §100；尚无独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 46 theorems of Becoming.Counterfactual all have empty axiom reports, among them counterfactual_fixed, ExchangeLaw.course_balances_iff, counterfactual_is_course, ExchangeLaw.course_unique, ExchangeLaw.Through.responds, ExchangeLaw.Nonanticipating.through_sensitive, ExchangeLaw.Through.registers_of_sensitive, comparison_with_act, ExchangeLaw.act_not_taken, ExchangeLaw.world_exchange_iff, Run.beyond_shown_iff, ExchangeLaw.counterfactual_beyond_shown, ExchangeLaw.closedBy_course and Loop.responds_by_law; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §100 of the integration note; there is no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "90c6e896364e2cbf1bafb8588e1a0aed9d04ca861c9716c62a9e202bffe6e8ee",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.AgreeUpTo",
+        "Becoming.ExchangeLaw.GivesAlike",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.Through",
+        "Becoming.ExchangeLaw.InsensitiveAt",
+        "Becoming.ExchangeLaw.Sensitive",
+        "Becoming.Flow.Follows",
+        "Becoming.Flow.ActsAlike",
+        "Becoming.ExchangeLaw.Through.responds",
+        "Becoming.ExchangeLaw.Nonanticipating.through_all",
+        "Becoming.Flow.totals_alike_of_each",
+        "Becoming.exchange_alike_of_agree",
+        "Becoming.levels_fixed",
+        "Becoming.counterfactual_fixed",
+        "Becoming.ExchangeLaw.takenUnder",
+        "Becoming.ExchangeLaw.givenUnder",
+        "Becoming.ExchangeLaw.extend",
+        "Becoming.ExchangeLaw.history",
+        "Becoming.ExchangeLaw.levels",
+        "Becoming.ExchangeLaw.course",
+        "Becoming.ExchangeLaw.Feasible",
+        "Becoming.ExchangeLaw.withAct",
+        "Becoming.ExchangeLaw.next",
+        "Becoming.Web.withLevel",
+        "Becoming.ExchangeLaw.history_succ_of_le",
+        "Becoming.ExchangeLaw.history_stable",
+        "Becoming.ExchangeLaw.history_agree",
+        "Becoming.ExchangeLaw.levels_zero",
+        "Becoming.ExchangeLaw.levels_succ",
+        "Becoming.ExchangeLaw.course_follows",
+        "Becoming.ExchangeLaw.totals_under",
+        "Becoming.ExchangeLaw.sub_add_back",
+        "Becoming.ExchangeLaw.sub_add_back_iff",
+        "Becoming.ExchangeLaw.course_balances_iff",
+        "Becoming.ExchangeLaw.history_orbit",
+        "Becoming.nat_eq_of_not_not",
+        "Becoming.ExchangeLaw.Through.registers_of_sensitive",
+        "Becoming.mixIn",
+        "Becoming.mixIn_either",
+        "Becoming.mixIn_listed",
+        "Becoming.swap_alike",
+        "Becoming.mixIn_alike",
+        "Becoming.alike_of_sensitive_agree",
+        "Becoming.ExchangeLaw.Nonanticipating.through_of_observed",
+        "Becoming.ExchangeLaw.Nonanticipating.through_sensitive",
+        "Becoming.comparison_of_courses",
+        "Becoming.comparison_through_sensitivity",
+        "Becoming.ExchangeLaw.withAct_follows",
+        "Becoming.ExchangeLaw.withAct_nonanticipating",
+        "Becoming.comparison_with_act",
+        "Becoming.counterfactual_is_course",
+        "Becoming.ExchangeLaw.course_unique",
+        "Becoming.ExchangeLaw.ofMoves",
+        "Becoming.ExchangeLaw.stepBy",
+        "Becoming.ExchangeLaw.course_trajectory",
+        "Becoming.ExchangeLaw.act_not_taken",
+        "Becoming.ExchangeLaw.world",
+        "Becoming.ExchangeLaw.world_balances_iff",
+        "Becoming.ExchangeLaw.world_exchange_iff",
+        "Becoming.ExchangeLaw.worldRun",
+        "Becoming.Run.beyond_shown_iff",
+        "Becoming.ExchangeLaw.counterfactual_beyond_shown",
+        "Becoming.ExchangeLaw.policy",
+        "Becoming.ExchangeLaw.closedBy_course",
+        "Becoming.Loop.replyLaw",
+        "Becoming.Loop.replyLaw_nonanticipating",
+        "Becoming.Loop.replyLaw_through",
+        "Becoming.Loop.escalation_follows",
+        "Becoming.Loop.quiet_follows",
+        "Becoming.Loop.responds_by_law",
+        "Becoming.Loop.courses_fixed"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "role": "proof",
+      "sha256": "279704f4d0e1b801e386d6d7e8d560aac68b49fb4b63cc4e1242895f6beb9abf",
+      "declarations": [
+        "Becoming.Flow.RespondsThroughRegistration",
+        "Becoming.Flow.WithinResponse",
+        "Becoming.Flow.Balances.comparison_within_response",
+        "Becoming.Loop.web",
+        "Becoming.Loop.escalation",
+        "Becoming.Loop.quiet",
+        "Becoming.Loop.balances",
+        "Becoming.Loop.quiet_balances",
+        "Becoming.Loop.firstPart",
+        "Becoming.Loop.own",
+        "Becoming.Loop.responds"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "09ddc1df49b69cb1258c5dfafdf3647784138d465ecca329fbae65606796d81a",
+      "declarations": [
+        "Becoming.Web.Registers",
+        "Becoming.Web.RegistersAlike",
+        "Becoming.Web.RegistersAlikeUpTo"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "role": "proof",
+      "sha256": "5ffb4daad98edb8c2c6d8a2a6ebc3bee22ebdba07860f949733d34ac919adf33",
+      "declarations": [
+        "Becoming.inputs",
+        "Becoming.trajectory",
+        "Becoming.inputs_intervention_unfixed",
+        "Becoming.inputs_model_fixes",
+        "Becoming.inputs_determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "46c3d04977ed626842eb0eaed9316dcd40d9946dd6480c1dbdb34ab33bd117cf",
+      "declarations": [
+        "Becoming.Exchange",
+        "Becoming.exchange",
+        "Becoming.World.move",
+        "Becoming.World.balances_iff_exchange",
+        "Becoming.World.exchangeRun",
+        "Becoming.Shown",
+        "Becoming.Consistent",
+        "Becoming.exists_law_iff",
+        "Becoming.closedBy",
+        "Becoming.closedBy_runs_agree"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "role": "proof",
+      "sha256": "3abd887dc3955de148e3c81a2bccb4f90fc46accf3c0a0be57b586512737838d",
+      "declarations": [
+        "Becoming.World"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "role": "proof",
+      "sha256": "1bae3883855197540e4dd0480d7b2831fcaa8740be20810702e6dd7efc76ebb5",
+      "declarations": [
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "3dc81c57525c2c5fdfca8222e39ddc0c4de905ddb97eb03f705bb9dc3ccd586c",
+      "declarations": [
+        "Becoming.Law.orbit",
+        "Becoming.le_succ_cases",
+        "Becoming.gap_of_le",
+        "Becoming.mem_cons_split"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow",
+        "Becoming.Flow.Balances"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "role": "proof",
+      "sha256": "2737447bc74f0df35d6554c653bcd01d7ffa4566462303952e38cb25cd0b3d7b",
+      "declarations": [
+        "Becoming.total"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "role": "proof",
+      "sha256": "be1e5523909d71f597b96632b10e317ea8124d049fed14430400f02c75f8eaee",
+      "declarations": [
+        "Becoming.total_congr_on"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "21294f582ede6a02984f6df16591f4bb9ac80388fef3eb1dbd078fe60607c9db",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "f67328c7189cd97508ef3f0d887c8967da4962c52ad12c8c885598bd2afab1ed",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-12-merge-first.md",
+      "role": "provenance",
+      "sha256": "e0a2c854e05d249d45838d81c257444fc308bb80a8c83b7417d62e1f0aaaa61f",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Counterfactual",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Response.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Response",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Mechanism.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Mechanism",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Unfolding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Space.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Space",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joint.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Joint",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Recurrence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Generation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Generation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Population.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Population",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "条件无穷多时敏感是否仍是最小的识（或反例）；按时间先后的回应所及与差别到达多少的度量；两类（形成与条件）的律读作一个世界；何时一个动作是部分自己的（P69 的开放项）；带噪声（未表示的动作）的律及其进程；Ren 的判断：反事实作为规律的进程、识作为敏感是否成立。",
+    "en": "Whether sensitivity remains the least registration with infinitely many conditions (or a counterexample); the responsive reach ordered in time and a measure of how much difference arrives; a law over two kinds (formations and conditions) read as one world; when a move is the part's own (P69's open item); a law with noise (a move not represented) and its course; Ren's judgment whether the counterfactual as the course of the law and registration as sensitivity hold."
+  },
+  "history": [
+    {
+      "zh": "2026-10-12 P80：新增，按 Ren“another agent has got this far, maybe merge first and see if there is something to work on”；本章 §8 的进一步证明与 comparison-where-the-rest-responds 的下一步（工作板 P80）；与 P69 Unfolding 的实例（P80b，整合者同意并入同一次落地）；见整合文档 §100。",
+      "en": "2026-10-12 P80: added, following Ren's ‘another agent has got this far, maybe merge first and see if there is something to work on’; the chapter's section 8 further proof and the next step of comparison-where-the-rest-responds (work board P80); with the instances with P69's Unfolding (P80b, folded into the same landing with the integrator's agreement); see §100 of the integration note."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    }
+  ]
+}
