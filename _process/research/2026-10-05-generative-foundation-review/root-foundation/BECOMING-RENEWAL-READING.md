@@ -7201,6 +7201,55 @@ Integration: 核心 Space、Locality、Openness、Resolution、Premises、Sampli
 
 **接手后的学习桥接重查（2026-10-13）。** 最终依赖上实际重查 `LearningCorrespondence`：回执 `20261013T095759.980593Z`，15 项定理／19 项声明审计通过，桥接源码、声明与公理范围不变（取得一侧空依赖，网络一侧保留原标准依赖）。检查器逐项核对当前导入闭包的源哈希。P73/P74 的原始回执及前文历史验证保留；本次是依赖更新后的重查，不是新结果或独立科学审查。
 
+## 112. 一般规律与改名：存量、接触与严格损失匹配（2026-10-14）
+
+2026-10-14 落地。Ren 要求每项结果都有一般规律，并改掉不好的名称（[计划](development/becoming-general-laws-plan/PLAN.md)，原话与审计在那里）。审计发现，P93 的 `Revising`、P99 的 `ReferencePlan`、P103 的 `ContinuingRevision` 与 P100 的 `RepairComparison` 的正面论点只由构造的例子支撑。本节落地这四项的一般规律，把原例子改作实例或对照，并按计划 §2 改名（A1–A11、B1–B5、N）。
+
+```text
+Result(s): 不新增独立结果；selection-under-registration-revision、consequence-revised-reference-plan、recurring-reference-revision、
+           finite-aggregation-within-restorable-basic-losses 改为先陈述一般规律、原例子作实例；改名所及的记录在其历史中注明
+Delta: 新核心模块 Becoming.Stock（40 项定理）、Becoming.Contacts（24）、Becoming.LossMatching（34）；实例定理：Revision +6、
+       ReferencePlan +15、ContinuingRevision +23（燃料与产出成为参数）、RepairComparison +19；改名只改名，陈述、证明与
+       各模块的定理数不变（对照表见统一计划 §10）
+Supplied premises / correspondence: 无新增；每条规律所用的局部条件写在规律之中（只从已持者汲取、地址可判定相等、损失各列一次、
+       内容按类读）；FR 的充分性承诺仍是显式假设
+Evidence: 合并检查器回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计，全部源声明公理报告为空；核心闭包 86 个模块，
+          包 85 个，从内置前导编译），FallibleInquiry 回执 20261013T205526.452771Z（31 项定理，数目不变），CorrectionInquiry
+          回执 20261013T205618.164536Z（7 项定理，公理报告为空）
+Boundary: learned-procedure-transmission 与 joint-difference-making 的一般规律、非类内容的 Hall 型刻画、只在一个构造族内成立的
+          记录的提升、10-12 之前记录的审计留给后续；Provision.gift 不在本批；尚无独立审查
+Integration: 主章 §9 的模块表与总数；统一计划 §10 的对照表；交叉主张论证 §11；Lean README；受影响的记录
+```
+
+**一般规律。**
+
+- **存量（`Becoming.Stock`）**，对每个过程、轨迹与运行：
+  - 每步平衡恰是沿每个历程平衡（`balanced_iff`）；
+  - 每步只从已持者汲取时，历程可执行恰当每步的汲取在当时的存量之内（`feasible_iff_covered`、`covered_iff_prefix`）；与登记过程联合运行时，恰当登记容许且存量覆盖（`product_feasible_iff`）；
+  - 无尽重复需要回补覆盖汲取（`cycles_need`）；对存量过程，恰当首轮被覆盖且回补覆盖汲取（`repeat_covered_iff`、`product_repeat_iff`）；
+  - 沿每个平衡运行，任意晚的汲取需要任意晚的补充（`Run.replenishes_of_draws`），存量有界时两者一同复现（`Run.draws_iff_replenishes`）；
+  - 沿运行的存量是平衡的流（`Run.stockFlow_balances_iff`），所以 Flow 的规律适用于它，不另建模型。
+- **接触（`Becoming.Contacts`）**，只设地址可判定相等：
+  - 换计划保留每个旧选择，恰当保留每个旧接触（`keeps_iff_retains`）；
+  - 修订规则登记每次失败，恰当下一计划含失败的地址（`answers_iff`）；不读失败的规则在地址无界时每个计划都漏掉某次失败（`blind_misses`），地址有限时反之不然（`finite_blind_answers`）；
+  - 两个参考回应驱动二值通道到两个目标，恰当它们不同（`References.drives_iff`）；已安装的编码在通道改变后仍对，恰当新通道在编码处与旧的一致（`References.stays_iff`）。
+- **严格损失匹配（`Becoming.LossMatching`）**，对每个框架：
+  - 生成扩展经恒等就是严格匹配，所以使严格匹配足以给出严格优先的承诺包含 C（`strictLossMatch_of_extension`、`SufficientMatching.comparison`），反之不然；
+  - 损失无穷多时配置可严格匹配自身（`EndlessLosses`），所以需要有限；损失各列一次时严格匹配是严格序（`StrictLossMatch.length_lt`）；
+  - 计数律：以类读内容时，严格匹配存在恰当较好的配置每类失去的不多于较差者、总数更少（`strictLossMatch_iff_counts`）；
+  - 失去共同支持的配置在任何配置之下都没有严格匹配（`not_strictLossMatch_of_base_lost`）；主张在其时刻被读恰当其实现自那时起已定，恢复支持不再实现错过的主张（`readsAt_iff_settled`、`ReadsAt.loss_retained`）。
+
+**原例子成为实例。**
+
+- `Revising` 是与其存量联合运行的登记过程（`Revising.step_iff`）；区分、支持与执行彼此不同（`covered_not_enacted`、`linked_not_enacted`）。
+- ReferencePlan 的燃料守恒且只从已持者汲取（`balanced`、`draws_held`、`trace_conserves_of_law`）；冻结的方法是不读失败的规则（`frozen_blind`、`frozen_misses`），翻转的参考是 `pick`（`flip_is_pick`），漂移的通道失败（`drift_fails`）。
+- ContinuingRevision 中，没有回补时任何控制器都没有无尽运行（`no_run_without_return`），比原来的 `cut_stops_next` 强；更新与成功沿每个运行复现（`renew_recurs`、`success_recurs`）。燃料与产出成为参数后，存在起点使任意多轮循环都可行，恰当产出不少于每轮的汲取 9（`repeats_iff`）；产出 9 的原定理是其实例，陈述不变，无限的 `continuing` 保留。
+- RepairComparison 的严格匹配由计数律给出（`matches_iff`，四条路线的损失为 3/4/3/2）；原来的匹配与脆弱对照由一般规律重得（`a_matches_b1_by_count`、`b3_matches_a_by_count`、`fragile_b3_below_nothing`）。
+
+**改名。** 标准与 P36 相同：名称说所述的动力学；不用社会、金融或心理的词；不把 Ren 的原话直接用作形式名。例如，`MakesSense` 改为 `IdentifiesAlike`，因为定义就是 `π s = π s' ↔ Alike F F s s'`，“有意义的切分”仍是散文读法；`Person` 改为 `Life`；`knowing` 改为 `withBound`；`Denial` 改为 `Negation`；ReferencePlan 的 `cost`、`receipt` 改为 `use`、`mismatch`，不再与检查器的回执相混。改名的模块重新检查后，定理数与上一回执逐一相同。记录标题随之改：target-capture 说“perturbing”；identification-where-bounded 说“给定界的”；finite-aggregation 的标题去掉“FR 候选”；recurring-reference-revision 的中英文一致；seeking-boundary 以结构开头，无明作别名。
+
+**作者反审。** 一般规律不使原例子多出内容：每条规律的条件就是例子原来满足的局部条件，例子只是在这些条件下成立的一个情形。存量的规律不说哪个可观察量表示实际条件；接触的规律不说哪个地址值得接触；计数律只在内容按类读、损失各列一次时成立，非类内容只证了必要方向。改名不改任何陈述；历史条目、旧回执与审查文件保留旧名，按对照表读。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -8388,5 +8437,13 @@ On the AI's reading, pending Ren: becoming leaves a difference with no premise, 
 Landed 2026-10-13, receipt 20261013T094743.528770Z. Later callers retain their statements: Listing obtains non-recurrence through `not_recurring_of_rests_unrefuted`, and Entropy only follows the renamed identifiers. Not yet independently reviewed; the author's counterreview is in section 111.
 
 **Learning bridge rechecked after takeover (13 October 2026).** The actual check of `LearningCorrespondence` against the final dependencies passed: receipt `20261013T095759.980593Z`, 15 theorems/19 declaration audits. Bridge source, declarations and axiom scope are unchanged: acquisition-side reports remain empty and the network side retains its original standard dependencies. The checker verified every current import-source hash. Original P73/P74 receipts and the historical validation above are preserved; this is a dependency recheck, not a new result or independent scientific review.
+
+**General laws and renames: stock, contacts and strict loss matching (14 October 2026).** Ren asked that every result have its general law and that bad names be changed ([plan](development/becoming-general-laws-plan/PLAN.md)). The audit found that the positive points of P93's `Revising`, P99's `ReferencePlan`, P103's `ContinuingRevision` and P100's `RepairComparison` rested on constructed examples alone. Section 112 lands their general laws and turns the examples into instances or controls:
+- **Stock** (`Becoming.Stock`, 40 theorems), for every process, trace and run: balance at each step is balance along every course; a course drawing only on what is held is executable exactly where it is covered, and jointly with a registration exactly where the registration admits it and the stock covers it; unending repetition needs the return to cover the draw; along every balanced run, drawing at arbitrarily late steps needs replenishment at arbitrarily late steps; the stock along a run is a balanced flow.
+- **Contacts** (`Becoming.Contacts`, 24): a change of plan keeps every old selection exactly where it retains every old contact; a revision rule registers every failure exactly where it puts the failed address into the next plan, and a rule blind to failures misses one at every plan where addresses are unbounded; two references drive a two-valued channel exactly when they differ.
+- **Strict loss matching** (`Becoming.LossMatching`, 34), for every frame: generative extensions match by identity, so the sufficiency commitment contains C; finiteness is needed; with losses listed once matching is a strict order; with content read as a class, a strict match exists exactly when the better configuration loses no more in each class and fewer in all; losing the common support blocks matching.
+- **Instances.** `Revising` is a registration process run jointly with its stock; ReferencePlan's frozen method, failed separation, drift and exhaustion are failure directions of these laws; in ContinuingRevision no controller runs without end with no return, and with fuel and yield as parameters the cycle repeats for every number of rounds exactly where the yield is at least its draw of 9 (`repeats_iff`); RepairComparison's matching follows the counting law (losses 3/4/3/2).
+
+Renames A1–A11, B1–B5 and N follow the P36 criteria (old-to-new table in plan section 10): for example `MakesSense` → `IdentifiesAlike`, `Person` → `Life`, `knowing` → `withBound`, `Denial` → `Negation`, ReferencePlan's `cost`/`receipt` → `use`/`mismatch`. Statements, proofs and per-module theorem counts are unchanged. Receipts: consolidated `20261013T204910.042715Z` (4861 theorems, 6856 declaration audits, all empty; core closure of 86 modules compiling from the prelude), FallibleInquiry `20261013T205526.452771Z`, CorrectionInquiry `20261013T205618.164536Z`. Not yet independently reviewed.
 
 The package now has 4518 theorems and 6370 declaration audits, over a core closure of 77 modules and a package of 75, all source declarations with empty axiom reports. Sections 40 to 42 were checked by the twelfth independent review, handled in section 45; sections 43, 44 and 46 by the thirteenth, handled in section 48; section 47 was checked by the continuation-grounding review, handled in §47.1–47.4; the handling in section 48 and sections 49, 50, 52, 54 and 55 by the fourteenth, handled in section 58; sections 59 to 59.2 by the fifteenth, handled in section 59.4; sections 61 and 62 by the sixteenth, before integration, handled in §62.1; section 70 by the seventeenth, before integration, handled in §70.2. The following have not yet been independently reviewed: the handling in §47.1–47.4, and sections 51, 53, 56, 57, 58, 59.3, 59.4 and 60, and the text of sections 61 and 62 after that handling, and sections 63 to 69, 71 to 111 (72 and 73 without review at Ren's word), and the text of section 70 after its handling. The periphery bridge passed against this core (receipt 20261013T095049.338744Z).
