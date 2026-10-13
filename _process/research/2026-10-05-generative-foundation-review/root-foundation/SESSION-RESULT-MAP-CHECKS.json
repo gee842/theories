@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-13T09:57:17.630043+00:00",
+  "checked_at_utc": "2026-10-13T10:03:31.413039+00:00",
   "passed": true,
   "errors": [],
   "mapped_chats": 44,
@@ -11,7 +11,7 @@
   "input_sha256": {
     "theories/becoming/results/data/session-results.json": "e167ae3eacfd9b0417ad2f419e98dcba71d0010de38853b3a6ab2677ed7a7301",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
-    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "37a013ddb1f7fa23a608e794b5a6b85e3e5a90aa448594318f92a7ba07f6400f",
-    "theories/becoming/results/SESSION-RESULTS.md": "a5256b0fe9413e2392eb554e4991612a43189da8f75ab483d28af8f13bacd95f"
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "f447262161ecbf46422052f2c7e09fa0caf6b2740ae59cee1dd7ab058772b6e4",
+    "theories/becoming/results/SESSION-RESULTS.md": "6de6c9dde6d70c0ed9c21371da8330518c8f746b07f65cf16457dda48a05d98c"
   }
 }
