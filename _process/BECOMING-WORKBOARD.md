@@ -258,5 +258,7 @@ Owner: Claude (Opus 5.5) merge session, as integrator for these streams; agents 
 | T | readability tooling: schema 2, lint, ratchet, render, guide | worktree agent |
 | L1 | Lean batch 1: renames A1–A11, B1–B5; Stock, Contacts, LossMatching; instance theorems; P103 with parameters; its checker runs | worktree agent; holds the checker slot when it runs |
 | L2 | remaining laws: joint-difference-making, learned-procedure-transmission, the two family-scoped lifts | worktree agent; core changes via scratch_build until batch 2 |
-| A | general-law audit of records unchanged since 10-12 | read-only agent |
+| A | general-law audit of records unchanged since 10-12 | done (first pass): 80 records — 14 G, 22 G+W, 2 W, 5 W-neg, 28 F (19 one machine, 5 one history, 4 one family), 9 N/A; nine rows marked for review |
+| L2+ | the three older support-gated family records (relational-reading-comparison, supported-renewal-recovery, relational-renewal-classification) join L2's family lift, instances in a separate bridge module | worktree agent (L2) |
+| L3 | older records: review of the nine marked rows; laws for the two W rows, the five one-history records, and the small one-machine groups (quantum fragments, governance, source model); proposals for the larger one-machine groups | worktree agent; new core modules and its own bridge module via scratch_build until batch 2 |
 | later | chapter de-jargon, migration tranche one, batch 2 landing | after T and L1 land |
