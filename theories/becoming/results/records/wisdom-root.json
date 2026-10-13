@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "wisdom-root",
   "title": {
     "zh": "核心作为智慧之根的目标",
@@ -8,10 +8,10 @@
   "kind": "target",
   "status": "open",
   "family": "F08",
-  "reviewed_at_utc": "2026-10-13T15:38:51.137830+00:00",
-  "claim": {
-    "zh": "待完成：证明 core 的共同关系对所讨论的全部智慧不可省略，从而确立整个 core 的根基地位。已有内容保真、实际取得与使用、后果修订及受支持持续的条件成果直接复用；不以这些局部完成代替全称结论。",
-    "en": "Open: establish the indispensability of the core’s common relations across all wisdom under discussion and thereby the foundational status of the whole core. Reuse completed conditional fidelity, acquisition/use, consequence-driven revision and supported continuation without substituting them for the universal conclusion."
+  "reviewed_at_utc": "2026-10-13T22:45:00+00:00",
+  "statement": {
+    "en": "Target: establish that the core’s common relations are indispensable across all wisdom under discussion, and thereby the foundational status of the whole core.",
+    "zh": "目标：证明 core 的共同关系对所讨论的全部智慧不可省略，从而确立整个 core 的根基地位。"
   },
   "hypotheses": [
     {
@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "第15节保留八种道德判断；第16节从独立内容、根据、范围与强度连接五类智慧与既有形式条件；第17节核对隐性实践并区分描述省略与实际转化；第18节接通有根据的放下与结束：共同支持改变和注意／体验改变分别解释，原需要、实际接续、完成与解除不能被删去。必要关系不要求显式规则、最大信息、永久修订或每个旧形式的保存。 第19节接通理论智慧，区分内容成立、认识根据和理解形成；提出内容—根据、根据—实际把握、把握—所称接续的候选共同联系，分列分支前提，并以旧联合解释／闭包定理定位全范围证明的负担。 第20节以偶然发现后读懂证明、直接领会及冗余根据检验实际把握，排除可靠来源或逐项不可替代因果链的过强读法；既有习得绑定定位内容如何进入解释与执行。 第21节用既有同值误接与代入结果定位所声称的内容依存；分开全部使用保真、特定成就的必要关系与核心路径接合，明确粗读法的接合不自行认证内容根据。 第25节接入 P103：P99 的实际操作产出直接进入后继修订；同一运行既继续指定任务又退役旧区别。构成性绑定、习得内容与持续支承按其关系分工；不同实例间的智慧对应为解释性复用，不伪称状态已形式接合。 第26节消费原有限可错辨别与及时回应结果：独立覆盖／错误承诺仍约束差异的实际进入，允许不同内部描述、错误和暂缓；原抽象界与原生物理实现条件分开。 第27节接通非统计成就：理论内容与实际把握、观照的实际生活改变、完成与解除分别定位；一般Frame的G0及relevance_least已容纳当下实现，原可能性／在场／休息边界防止用未来可行性或活动数量替换这些内容。 §28消费已有共同操作因子：同一接合内容的不同精确说明有不可绕开的共同内容，源说明不必最简；多结果保留更丰富问题与有限性。原历史界面证明同时定位接续问题不能独自保留的内部事件，故须与原内容、根据及实际把握在同一解释中接通。 §29通过三项纯核心适配将P91保真接到P69同一内容／步骤关系。反向只在R联系处要求保真，不组合独立的后继见证。原绑定、实际历史与规范论证负责所用主张的真实内容；纯形式接口不再作为缺失机制。 §30固定替代行动判断的内容，以P53/P68/P80区别实际记录、有根据的规律及由其生成的回应；静态表达保留关系时得到同等信用。 §31接用既有内容与理由研究，修正§19候选共同关系的适用读法：可错接受实际承接的是有根据的支持，不必是使所信结论为真的充分根据。知识、合理接受、实践许可与后续责任分别说明，不以终点真假替代历史根据。",
-    "en": "Section 15 retains eight moral applications; Section 16 connects independently specified content, grounds, scope and strength to formal conditions across five wisdom aspects. Section 17 examines tacit practice and separates descriptive omission from actual transformation. Section 18 connects warranted letting-go and ending: changes in shared support and in attention/experience are distinguished, while need, actual continuation, fulfillment and discharge cannot be erased. Necessary relations require neither explicit rules, maximal information, perpetual revision nor preservation of every old form. Section 19 connects theoretical wisdom, separating content validity, epistemic warrant and formed understanding. Candidate common relations connect content/grounds, grounds/actual grasp and grasp/claimed continuation; branch premises are separated and old joint-interpretation/closure results locate the universal proof burden. Section 20 tests actual grasp through chance discovery followed by proof understanding, direct apprehension and redundant grounds. It rejects reliable origins or individually indispensable causal routes as universal requirements and locates content use in existing acquired binding. Section 21 locates attributed content dependence through inherited equal-value capture and substitution results. It separates preservation of all consumers, necessity for a particular achievement and core path composition; composition under a coarse reading does not certify its content grounds. Section 25 consumes P103: P99 operations directly feed successor revision, while the same run continues specified tasks and retires old distinctions. Constitutive binding, acquired content and continuing support retain their separate roles. Wisdom correspondence across different instances is interpretive, not a purported formal state composition. Section 26 consumes existing finite fallible discrimination and timely response: independent coverage/error commitments still constrain the actual entry of differences, allowing different internal descriptions, errors and abstention. The abstract bound and native physical conditions remain separate. Section 27 connects non-statistical achievements: theoretical content and actual grasp, lived change in contemplation, and fulfillment/release. General-Frame G0 and relevance_least already accommodate present realization; original possibility/presence/rest boundaries prevent replacing this content with future feasibility or activity counts. Section 28 consumes existing common operational factors: exact accounts of the same joining content retain unavoidable shared content without source minimality. Multivalued recovery keeps richer questions and finiteness. The history-interface result identifies internal events that continuation questions alone can omit, requiring a joint connection to content, grounds and actual uptake. Section 29 joins P91 fidelity to P69 joint content/step preservation through three pure-core adapters. Reflection needs fidelity only where R relates configurations, without combining independent successor witnesses. Binding, actual history and normative arguments supply real claim content; this formal interface is no longer a missing mechanism. Section 30 fixes the content of alternative-action judgment and uses P53/P68/P80 to distinguish records, warranted laws and generated responses; static expressions retaining the relations receive equal credit. Section 31 consumes existing content/reasons arguments to correct the section 19 candidate: fallible acceptance takes up warranted support, not necessarily a sufficient ground of the accepted proposition’s truth. Knowledge, reasonable acceptance, practical permission and subsequent responsibility remain distinct; final truth does not replace historical warrant."
+    "en": "Each connection of independently specified wisdom content to the core’s formal conditions is listed under Progress with its boundary. Need, actual continuation, fulfillment and discharge cannot be erased. The timed branch excludes differently informative initial states; theoretical or contemplative content without this discrimination commitment keeps its own constitutive burden, and the abstract bound and native physical conditions stay separate. General-Frame G0 and relevance_least already accommodate present realization; the possibility, presence and rest boundaries prevent replacing that content with future feasibility or activity counts. Multivalued recovery keeps richer questions and finiteness. Constitutive binding, acquired content and continuing support keep separate roles; wisdom correspondence across different instances is interpretive, not a formal state composition. Binding, actual history and normative arguments supply the real content of the claims; the formal interfaces are no longer missing mechanisms. Knowledge, reasonable acceptance, practical permission and subsequent responsibility remain distinct; final truth does not replace historical warrant.",
+    "zh": "独立说明的智慧内容与 core 形式条件的每项接通，连同其边界，列于“已接通”。原需要、实际接续、完成与解除不能被删去。及时分支不覆盖不同信息初态；不含此辨别承诺的理论理解与观照内容仍须其自身构成论证，原抽象界与原生物理实现条件分开。一般 Frame 的 G0 及 relevance_least 已容纳当下实现；原可能性／在场／休息边界防止用未来可行性或活动数量替换这些内容。多结果恢复保留更丰富问题与有限性。构成性绑定、习得内容与持续支承按其关系分工；不同实例间的智慧对应为解释性复用，不伪称状态已形式接合。原绑定、实际历史与规范论证负责所用主张的真实内容；纯形式接口不再作为缺失机制。知识、合理接受、实践许可与后续责任分别说明，不以终点真假替代历史根据。"
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
   "aliases": [],
@@ -506,18 +506,175 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
       "detail": {
-        "zh": "第12–14节的智慧范围与普遍原则路线保留。第15节指出既有固定选择器在不可比情形中的默认分支只满足非支配要求，不能升级为独优；构造例与已有数学结果也不能替代现实对应或历史覆盖。",
-        "en": "Sections 12–14 retain differentiated wisdom and the universal-principle route. Section 15 clarifies that the fixed selector’s default in incomparable cases meets nondomination without unique superiority; constructed applications and existing mathematical results do not substitute for actual correspondence or historical coverage."
+        "zh": "已区分的智慧范围与普遍原则路线保留。既有固定选择器在不可比情形中的默认分支只满足非支配要求，不能升级为独优；构造例与已有数学结果也不能替代现实对应或历史覆盖。",
+        "en": "Differentiated wisdom and the universal-principle route are retained. The fixed selector’s default in incomparable cases meets nondomination without unique superiority; constructed applications and existing mathematical results do not substitute for actual correspondence or historical coverage."
       }
     }
   ],
-  "limitations": {
-    "zh": "P75 的普遍形式规律与形成路线保持完成；第16节补上内容敏感的解释连接，仍未穷尽独立智慧范围或证明每种智慧需要整个 core 的全部实质承诺。实际形成、关切与情感、充分性保留为完整目标的另外部分，不全部设为本次必要关系的新增门槛。真实风险界限容许实际失败；足够回应不要求共同最粗描述；形式全称量词不自动证明智慧覆盖。 对局部熟练联系的保留不证明全部 core 已被对手接受；坐忘没有被化约为判断或压缩算法。投影定理不证明实际遗忘有益。 第18节完成一种转化内容的解释连接，未穷尽坐忘或全部智慧；安宁无需外部收益，合宜结束不要求个体无限延续。分组保真检验说明中的内容，不能成为实际转化须无损保留一切的要求。 三项共同联系尚不是穷尽定义或最小公理表；内容成立不等于有人理解，解释保真不自动证明现实构成必然。原闭包结果没有供应智慧对应；有限根的整个闭合理论逐项可解释与仅根的各行分别可解释不能混同。 必要联系不规定发现路线；偶然来源可接到后续核验，直接领会不须显式演算，冗余根据可替代。习得绑定的操作意义、分类与覆盖仍给定；有效推导与实际内容使用并列不自动建立两者的统一必要性。 全部项的保真判据不能移为每次智慧保留全部位置的要求；形式绑定不等同实际人的理解。内容依存与路径接合之间本轮仅作解释性接通，没有新适配器；全部元推理的零前提正当化是另一目标，不追加为本任务门槛。 第25节排除全选择保留作为 P103 已证操作成就的必要要求，未把该成就定义为智慧或证明所有智慧可失去任意区别。退休位置未来再次被需要时，当前结果不保证回应或重新取得；持续修订及其生产回返不自行确立内容根据或伦理目的。 可错能力的必要界不认证实际权重、不构成伦理许可或错误信念的完整正当性，也不规定所有智慧都承担双侧错误承诺。及时分支不覆盖不同信息初态；理论理解与观照中不含此辨别承诺的内容，仍须其自身构成论证。 当下实现接口不认证特定体验、living读法或总体排序；休息见证未表示安宁体验，不是实际休息更坏的证据。三个非统计分支已获有内容的解释连接，不再因缺乏额外产出而列为未处理；其共同关系为何要求整个实质core，仍不能由可表示性或分别适用的读法推出。全部数学本体论及体验生成并非本次额外门槛。 共同操作因子并非全部智慧内容的充分根：原历史实例允许全部接合问题同答而事件字不同。此为指定问题范围的边界，完整core仍保留历史。精确完整解释的量词不转成每位智慧者的全知；规范意义及真实对应保持原责任。 新适配只改所用内容分组，保留两个过程、动作词汇及同一R。共用主张类型不等于意义已充分说明；可能历程不认证实际获得历史，也不推出义务。P76确定性条件与Choosing空主张边界保持；全慧根不由形式共同保留自动完成。 记录不固定性的候选类没有保留一切实际规律，不能据此否定完整理论。Loop不认证道德优越或现实社会规律；不把反事实推理普遍强加给理论领会、观照与结束。 可错接受沿既有认识候选及其可争论前提，不由G0或错误率定理独自推出。构造档案例明确供应证据充分性，未证明所有合理信念都是智慧；原命题错误不被改写成知识，也不自动免责。",
-    "en": "P75’s universal formal laws and routes of formation remain completed; Section 16 supplies a content-sensitive interpretive connection, without exhausting independently characterized wisdom or proving that every form requires all substantive commitments of the core. Actual formation, concern and affect, and sufficiency remain distinct parts of the full target, not additional gates imposed wholesale on the present necessity task. A true risk bound allows actual failure; adequate response need not require a common coarsest description; formal universal quantification does not itself prove wisdom coverage. Preserving local skill relations does not establish that the rival accepts the full core; sitting-and-forgetting is not reduced to judgment or compression. Projection theorems do not prove that actual forgetting is beneficial. Section 18 supplies one transformation-content connection, not an exhaustive account of sitting-and-forgetting or wisdom. Tranquility needs no external payoff and appropriate ending requires no indefinite individual continuation. Fidelity concerns explanatory content, not a demand that transformation preserve everything without loss. The three common relations are not an exhaustive definition or minimal axiom list. Content validity is not actual understanding, and explanatory fidelity does not alone prove constitutive necessity. The old closure results supply no wisdom correspondence; full pointwise closure coverage for a finite root differs from separate coverage of basis rows. No acquisition route is universally prescribed: chance origins may be followed by verification, direct apprehension need not use explicit calculation, and redundant grounds may substitute. Acquired binding retains supplied meanings, categories and coverage; juxtaposing valid derivation with actual content use does not establish their joint necessity. The all-term fidelity criterion is not a requirement that each wise episode preserve every position, and formal binding is not actual human understanding. This round connects content dependence and path composition interpretively, without a new adapter. Premise-free warrant for all metareasoning remains a separate goal, not an added gate here. Section 25 rules out all-choice preservation as necessary for P103’s proved operational achievement; it neither defines that achievement as wisdom nor licenses arbitrary losses for all wisdom. Renewed demand for a retired locus is not covered by a recovery guarantee. Continuing revision and productive return do not alone establish content warrant or ethical purpose. Fallible-capacity necessity neither certifies actual weights nor supplies ethical permission or a complete justification of false belief. It does not require every wisdom claim to undertake two-sided error bounds. The timed branch excludes different informative initial states; theoretical or contemplative content without this discrimination commitment retains its own constitutive burden. The present-realization interface does not certify a particular experience, living reading or overall ranking. The rest witness omits tranquil experience and does not show actual rest to be worse. The three non-statistical branches now have substantive interpretive connections and are not left unaddressed for lacking extra output. Their joint requirement of the full substantive core still does not follow from representability or separately suitable readings. Complete mathematical ontology and experience generation are not added gates. A common operational factor is not a sufficient root for all wisdom content: the original history instance agrees on every joining context despite different event words. This bounds the question scope; the full core retains the histories. Exact explanatory coverage is not an omniscience demand on each wise person; normative and actual correspondence obligations remain. The adapters regroup declared content while keeping processes, actions and the same R. Shared claim types do not establish adequate meaning; possible courses certify neither actual acquisition nor duties. P76 determinacy and the claim-free Choosing boundary remain. Formal joint preservation does not complete the full wisdom root. Record non-fixation does not preserve every actual law and cannot refute the full theory. Loop certifies neither moral superiority nor an empirical social law; counterfactual reasoning is not imposed on every theoretical, contemplative or ending achievement. Fallible acceptance retains the existing epistemic candidate and its contestable commitments, not a derivation from G0 or an error bound alone. The constructed archive case supplies evidential adequacy explicitly and does not identify every reasonable belief with wisdom. False content is neither rewritten as knowledge nor automatically excused."
-  },
+  "standard_boundaries": [
+    "omission-not-refutation",
+    "formal-not-empirical"
+  ],
+  "does_not_show": [
+    {
+      "en": "Reused conditional results and the formal laws of wisdom-root-part-one do not by themselves prove wisdom coverage or complete the root; formal adequacy certifies no wisdom reading or actual acquisition history.",
+      "zh": "所复用的已完成条件成果及 wisdom-root-part-one 的形式规律，本身不证明智慧覆盖，也不完成慧根；形式完备性不认证智慧读法或实际获得历史。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Content validity is not actual understanding, formal binding is not human understanding, and explanatory fidelity alone does not prove constitutive necessity.",
+      "zh": "内容成立不等于有人理解，形式绑定不等同实际人的理解，解释保真不自动证明现实构成必然。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "The three common relations are no exhaustive definition or minimal axiom list; their joint requirement of the full substantive core does not follow from representability or separately suitable readings.",
+      "zh": "三项共同联系不是穷尽定义或最小公理表；其共同要求整个实质 core，不能由可表示性或分别适用的读法推出。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Explaining each basis row of a finite root separately is not explaining its whole closure pointwise.",
+      "zh": "有限根的各基行分别可解释，不等于其整个闭合理论逐项可解释。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "Continuing revision and productive return do not alone establish content warrant or ethical purpose.",
+      "zh": "持续修订及其生产回返不自行确立内容根据或伦理目的。",
+      "kind": "non-implication"
+    },
+    {
+      "en": "A common operational factor is no sufficient root for all wisdom content: the history instance agrees on every joining context despite different event words; this bounds the question scope, and the full core keeps the histories.",
+      "zh": "共同操作因子并非全部智慧内容的充分根：原历史实例允许全部接合问题同答而事件字不同；此为指定问题范围的边界，完整 core 仍保留历史。",
+      "kind": "non-implication",
+      "witness": "Generative.ExplanatoryHistoryInterfaces.different_histories_same_required_interface"
+    },
+    {
+      "en": "Preserving state selections across configurations does not certify claim fidelity: a literal reading of the same process keeps the former and fails the latter.",
+      "zh": "跨配置的状态选择保留不认证主张保真：同一过程的字面读法保留前者而不满足后者。",
+      "kind": "non-implication",
+      "witness": "Becoming.Frame.literal_claims_separate_preservation"
+    },
+    {
+      "en": "Shared claim types do not establish adequate meaning, and possible courses certify neither actual acquisition nor duties.",
+      "zh": "共用主张类型不等于意义已充分说明；可能历程不认证实际获得历史，也不推出义务。",
+      "kind": "correspondence"
+    },
+    {
+      "en": "Loop certifies neither moral superiority nor an empirical social law; the constructed archive case supplies evidential adequacy explicitly and does not identify every reasonable belief with wisdom.",
+      "zh": "Loop 不认证道德优越或现实社会规律；构造档案例明确供应证据充分性，未证明所有合理信念都是智慧。",
+      "kind": "scope"
+    }
+  ],
+  "not_required": [
+    {
+      "en": "Actual formation, concern and affect, and sufficiency are distinct parts of the full target, not gates imposed wholesale on this necessity task.",
+      "zh": "实际形成、关切与情感、充分性是完整目标的另外部分，不全部设为本必要性任务的门槛。"
+    },
+    {
+      "en": "Premise-free warrant for all metareasoning, complete mathematical ontology and experience generation are separate goals, not added gates.",
+      "zh": "全部元推理的零前提正当化、完整数学本体论及体验生成是另外的目标，不追加为此处门槛。"
+    },
+    {
+      "en": "No acquisition route is universally prescribed: chance origins may be followed by verification, direct apprehension need not use explicit calculation, and redundant grounds may substitute.",
+      "zh": "不规定发现路线：偶然来源可接到后续核验，直接领会不须显式演算，冗余根据可替代。"
+    },
+    {
+      "en": "Necessary relations require neither explicit rules, maximal information, perpetual revision nor preservation of every old form; fidelity does not demand lossless transformation.",
+      "zh": "必要关系不要求显式规则、最大信息、永久修订或保存每个旧形式；保真不要求转化无损保留一切。"
+    },
+    {
+      "en": "Exact explanatory coverage demands no omniscience of each wise person, and the all-term fidelity criterion does not require each wise episode to preserve every position.",
+      "zh": "精确完整解释不要求每位智慧者全知；全部项的保真判据也不要求每次智慧保留全部位置。"
+    },
+    {
+      "en": "Not every wisdom claim undertakes two-sided error bounds, and counterfactual reasoning is not imposed on every theoretical, contemplative or ending achievement.",
+      "zh": "不要求所有智慧承担双侧错误承诺，也不把反事实推理普遍强加给理论领会、观照与结束。"
+    }
+  ],
+  "progress": [
+    {
+      "en": "Moral judgments: eight constructed applications state grounds, judgments and reversal conditions under fixed G0/J/E; they are philosophical applications, not historical coverage or independent evidence.",
+      "zh": "道德判断：八个构造应用在固定的 G0/J/E 下写明根据、判断与反转条件；它们是哲学应用，不是历史覆盖或独立证据。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#deriving-a-family-of-moral-judgments"
+    },
+    {
+      "en": "Judgment content: independently specified content, grounds, scope and strength connect five aspects of wisdom to the formal conditions, keeping their differences; bounded identification corrects perpetual-revision readings.",
+      "zh": "判断内容：独立说明的内容、根据、范围与强度把五类智慧接到形式条件，保留其差异；有界识别纠正永久修订的读法。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#necessity-through-judgment-content"
+    },
+    {
+      "en": "Tacit practice and forgetting: descriptive omission is separated from actual transformation; sitting-and-forgetting reduces to neither judgment nor compression, and keeping local skill relations does not show a rival accepts the full core.",
+      "zh": "隐性实践与忘却：描述省略与实际转化分开；坐忘不化约为判断或压缩算法，保留局部熟练联系不证明对手接受全部 core。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#tacit-understanding-and-forgetting"
+    },
+    {
+      "en": "Letting go: one connection separates changed shared support from changed attention/experience; tranquility needs no payoff, fit ending no endless individual continuation; projection theorems do not prove actual forgetting beneficial.",
+      "zh": "放下：一种转化内容的连接区分共同支持的改变与注意／体验的改变；安宁无需外部收益，合宜结束不要求个体无限延续；投影定理不证明实际遗忘有益。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#letting-go-and-operative-relations"
+    },
+    {
+      "en": "Theoretical wisdom: content validity, epistemic warrant and formed understanding are separated, with three candidate common relations among them; the old closure results locate the universal proof burden but supply no wisdom correspondence.",
+      "zh": "理论智慧：区分内容成立、认识根据与理解形成，提出其间的三项候选共同联系；旧闭包结果定位全范围证明负担，但不供应智慧对应。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#one-root-and-distinct-grounds"
+    },
+    {
+      "en": "Grasp: chance discovery, direct apprehension and redundant grounds defeat universal demands for reliable origins or individually indispensable routes; acquired binding locates content use, its meanings, categories and coverage supplied.",
+      "zh": "把握：偶然发现、直接领会与冗余根据排除可靠来源或逐项不可替代路线的普遍要求；习得绑定定位内容的使用，其意义、分类与覆盖仍给定。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#discovery-grasp-and-operative-ground"
+    },
+    {
+      "en": "Content dependence: substitution and equal-value capture results locate attributed dependence; valid derivation beside actual use does not show their joint necessity, and composition under a coarse reading does not certify its grounds.",
+      "zh": "内容依存：代入与同值误接结果定位所声称的依存；有效推导与实际使用并列不证明两者共同必要，粗读法下的接合也不认证其内容根据。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#content-dependence-and-composition"
+    },
+    {
+      "en": "From reading to operative relations: existing interfaces preserve realization and supplied support, but writing wisdom as runs and runs as worlds does not make the whole core necessary; a shared label is no semantic correspondence.",
+      "zh": "从读法到实际关系：既有接口保留实现与所给支持关系；但把智慧写成运行、把运行写成世界，不使整个 core 成为必要，共同标签也不等于语义对应。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#from-reading-to-operative-relations"
+    },
+    {
+      "en": "One connected theory: following Ren, completed branch results are consumed, not rebuilt; eight pure-core adapters compose content fidelity with selection preservation and loss, for arbitrary Frame content without numerical requirements.",
+      "zh": "同一个理论：依 Ren，直接消费已完成的分支结果而不重建；八项纯核心适配把内容保真与选择的保留和丧失接合，适用于任意 Frame 内容，不要求数值。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-within-one-connected-theory"
+    },
+    {
+      "en": "Continuing revision: checked operations feed successor revision as old distinctions retire, so keeping every choice is unnecessary there; this neither defines wisdom, licenses arbitrary loss, nor guarantees recovering a retired distinction.",
+      "zh": "持续修订：已查操作直接进入后继修订，同时退役旧区别，全选择保留对此并非必要；这不把该成就定义为智慧，不许可任意损失，也不保证重新取得退役的区别。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#grounds-use-and-continuing-revision"
+    },
+    {
+      "en": "Fallible capacity: independent coverage/error commitments constrain how differences enter, allowing error and abstention; this certifies no actual weights and supplies no ethical permission or complete justification of false belief.",
+      "zh": "可错能力：独立的覆盖／错误承诺约束差异的实际进入，允许错误与暂缓；这不认证实际权重，不构成伦理许可或错误信念的完整正当性。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#fallible-capacity-and-necessary-relations"
+    },
+    {
+      "en": "Present realization: theoretical grasp, lived change in contemplation, and fulfillment or release are located; no experience, living reading or ranking is certified; the rest witness omits tranquil experience and shows no actual rest worse.",
+      "zh": "当下实现：理论把握、观照中的实际生活改变、完成与解除分别定位；该接口不认证特定体验、living 读法或总体排序；休息见证未表示安宁体验，也不表明实际休息更坏。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#present-realization-and-constitutive-necessity"
+    },
+    {
+      "en": "Common operational factor: exact accounts of one joining content share unavoidable content without source minimality; internal events that continuation questions alone can omit must be joined to content, grounds and actual uptake.",
+      "zh": "共同操作因子：同一接合内容的不同精确说明有不可绕开的共同内容，源说明不必最简；接续问题单独会遗漏的内部事件，须与内容、根据及实际把握一并接通。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#common-operational-structure-and-wisdom-content"
+    },
+    {
+      "en": "One relation for content and continuation: three pure-core adapters join content fidelity to joint content/step preservation, needing fidelity only where R relates configurations and keeping processes, actions and R.",
+      "zh": "内容与接续的同一关系：三项纯核心适配把内容保真接到内容／步骤的共同保留，只在 R 联系处要求保真，保留两个过程、动作词汇及同一 R。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#one-relation-for-content-and-continuation"
+    },
+    {
+      "en": "Alternative action: records, warranted laws and generated responses are distinguished; static accounts keeping the relations earn equal credit, and a record class missing actual laws cannot refute the full theory.",
+      "zh": "替代行动：区别实际记录、有根据的规律与由其生成的回应，保留关系的静态说明得到同等信用；未保留一切实际规律的记录类不能据此否定完整理论。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#static-description-and-warranted-alternatives"
+    },
+    {
+      "en": "Fallible acceptance takes up warranted support, not a sufficient ground of truth, resting on the contestable epistemic candidate rather than G0 or an error bound alone; false content is neither knowledge nor automatically excused.",
+      "zh": "可错接受：所承接的是有根据的支持，不必是使结论为真的充分根据，沿既有可争论的认识候选，不由 G0 或错误率定理独自推出；错误内容既不成为知识，也不自动免责。",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#fallible-acceptance-and-operative-grounds"
+    }
+  ],
   "validation_scope": {
-    "zh": "第16节新增五类对应、作者反审与两项现代作者来源的限定核读，复用 P75、共同回应及有界识别等已查结果；无新定理、Lean 运行、经验复算或独立验收。第15节八个构造应用及其原证明范围保持。源码—回执和文档检查只证明各自范围，不认证完整慧根。 第17节限定核读 Dreyfus 2002 pp.367–377 相关段落及检索返回的《大宗师》坐忘中文段落，复用描述保真条件；未认证该作者的神经科学观点，也未通读校勘《大宗师》。 2026-10-13 第18节核读《大宗师》的泉涸／生死段、《应帝王》用心若镜段及《人间世》心斋问答（检索返回的指定完整中文段落，直连403）；复用实际交接、解除、P91分组保真及同初态生成的混合得失，核对原声明和回执。是哲学论证与作者反审，不是新的数学适配或经验验收。 第19节核读亚里士多德《尼各马可伦理学》VI.2–3、6–7的Ross译文，复核GenerativeClosure与JointInterpretation当前源码同20261008T114133.852211Z冻结回执匹配（各12项空公理报告）。仅复用原外围元逻辑结果，不新增纯核心导入、定理或Becoming适配器。 第20节核读 Pritchard 2009 §§11–13 指定段落，作直接领会、偶然发现和冗余根据的哲学反审；复核 AcquiredBinding 当前源码与20261008T125717.615564Z冻结回执一致，本节五项复用声明均保留propext/Quot.sound。没有新定理、Lean运行或经验测试。 第21节核对 InferentialSubstitution 及 InferentialGrounds 同20261008T181823.552825Z回执匹配，原9项定理3空、6仅Quot.sound；核心源码同20261013T113031.597794Z通过回执匹配且该回执确认prelude编译。只作哲学接通和量词反审，无新Lean、经验检验或独立审查。 第22节核对 Unfolding、Roles、Space、Dependence 当前源码与20261013T113031.597794Z冻结回执一致，29项复用声明均为空公理依赖；区分活动保留、原生支持／交换接口和内容对应。没有新Lean、数学适配、经验测试或独立审查。 §23新增四项纯核心适配并实际调用 P91/P93；20261013T125626.097616Z 核心检查通过，四项审计为空、prelude编译与内核检查通过，检查期间源码未变。P91/P93/P99/P89 的10项原绑定逐项匹配；原机制不重证、不计作新独立成果。 §24四项新增适配移除数值所需限制，复用P93接到任意Frame；固定字面主张读法检验两种保留量词。20261013T132140.261612Z通过，模块八项源声明审计为空、prelude编译及内核检查通过。§23原四项源码改由其冻结副本和原回执绑定，保持历史字节，不重复计数。 第25节为原成果的解释性接通及作者反审，无新数学或 Lean 修改。核对 ContinuingRevision 当前源码同 P103 原回执20261013T131556.258659Z一致，原36项定理、62项声明审计为空，prelude及内核检查通过；本记录指定其中12项复用声明。旧外围回执和依赖不变。 第26节无新数学，三份所选源码与原通过回执匹配；外围回执列出的44份当前仓库源依赖全部匹配。TimedResponse原30项声明为空；本节选用的统计和外围组合保留propext／Quot.sound。只复用原检查，不计新编译或独立审查。 第27节无新数学；Relevance及其32份仓库源文件导入闭包与原20261013T094743.528770Z回执匹配，原39项源声明均为空公理报告，prelude与内核检查通过。本节指定8项已有声明；数学构成和整体实现研究保持原哲学范围。 §28无新数学。原接合回执10份、原多结果回执14份源码全部匹配；三份消费模块原有11、11、16项审计，11项现有声明被选择。保留外围propext、Quot.sound及多结果恢复的Classical.choice，不进入纯核心或宣称新编译。 §29新增三项纯核心适配，正式回执20261013T145624.509021Z通过；模块11项源声明空公理报告、prelude编译、内核检查均通过。原四项和八项冻结源码／回执保留。无检查基础设施改动；P69与P76原结果直接复用。 §30复用七项原有声明，四选用模块及34份仓库导入闭包匹配原20261013T094743.528770Z已通过回执；原42/47/47/72项模块声明审计均空。无数学改动、新Lean运行或独立验收。 §31为哲学连接及原典限定核读：Gettier原文pp.121–122、Tiberius本人2016访谈相关段落；新措辞不构成Lean定理或经验验证，原30项证明绑定不变。",
-    "en": "Section 16 adds five correspondences, author counterreview and bounded readings of two modern author sources, reusing P75, common-response and bounded-identification results. No new theorem, Lean run, empirical reanalysis or independent acceptance. Section 15’s eight constructed applications and original proof scopes are preserved. Source-bound receipts and documentary checks verify their own scopes, not the whole wisdom root. Section 17 reads selected passages of Dreyfus 2002, pp.367–377, and the Chinese sitting-and-forgetting passage returned by primary-text search, reusing description-preservation conditions. It does not certify the author’s neuroscience or claim a full reading or textual edition audit of the chapter. On 2026-10-13 Section 18 reads specified complete Chinese passages returned by search from the Great Master, Rulers and Kings and Human World chapters; direct pages returned 403. It reuses and audits original declarations/receipts for actual transfer, discharge, P91 fidelity and generated mixed outcomes. This is philosophical argument and author counterreview, not a new formal adapter or empirical acceptance. Section 19 rereads Ross’s translation of Nicomachean Ethics VI.2–3 and 6–7 and matches current GenerativeClosure and JointInterpretation sources to the retained 20261008T114133.852211Z receipt (12 empty audits each). Only original peripheral metalogical results are reused; no pure-core import, theorem or Becoming adapter is added. Section 20 reads specified passages of Pritchard 2009 §§11–13 and counterreviews direct apprehension, chance discovery and redundant grounds. Current AcquiredBinding source matches frozen receipt 20261008T125717.615564Z; the five reused declarations retain propext/Quot.sound. No new theorem, Lean run or empirical test. Section 21 verifies InferentialSubstitution and InferentialGrounds against receipt 20261008T181823.552825Z (the original nine theorems: three empty, six only Quot.sound), and core source against passed receipt 20261013T113031.597794Z, which confirms prelude compilation. Philosophical integration and quantifier counterreview only; no new Lean, empirical test or independent review. Section 22 matches Unfolding, Roles, Space and Dependence to frozen receipt 20261013T113031.597794Z; all 29 reused declaration audits are empty. It distinguishes realization preservation, native support/exchange interfaces and substantive correspondence. No new Lean, mathematical adapter, empirical test or independent review. Section 23 adds four pure adapters with actual P91/P93 calls. Core receipt 20261013T125626.097616Z passed: four empty audits, prelude compilation, kernel checks and unchanged sources during checking. All ten original bindings of P91/P93/P99/P89 match; mechanisms are not reproved or counted as new independent results. Section 24 adds four adapters from P93 to arbitrary Frame content, removing numerical requirements and separating the two preservation scopes with a fixed-literal reading. Receipt 20261013T132140.261612Z passed: eight empty module audits, prelude compilation and kernel checks. Section 23’s four-statement source is bound to its original frozen copy and receipt, preserving bytes without recounting proofs. Section 25 adds interpretive integration and author counterreview without new mathematics or Lean changes. Current ContinuingRevision bytes match original P103 receipt 20261013T131556.258659Z: 36 theorems, 62 empty declaration audits, prelude and kernel checks passed; this record selects 12 reused declarations. Earlier peripheral receipts and dependencies remain unchanged. Section 26 adds no mathematics. Three selected sources match their original passing receipts, and all 44 current repository source dependencies listed in the peripheral receipt match. TimedResponse’s original 30 declaration audits are empty; selected statistical and peripheral compositions retain propext/Quot.sound. No new compilation or independent review is claimed. Section 27 adds no mathematics. Relevance and its 32-file repository import closure match original receipt 20261013T094743.528770Z, with 39 empty source audits and passing prelude/kernel checks. Eight existing declarations are selected here; mathematics-constitution and whole-process realization studies retain their original philosophical scopes. Section 28 adds no mathematics. All 10 sources in the original joining receipt and all 14 in the multivalued receipt match. Consumed modules retain 11, 11 and 16 original audits, with 11 existing declarations selected. Peripheral propext, Quot.sound and Classical.choice in multivalued recovery remain explicit; no pure-core import or new compilation is claimed. Section 29 adds three pure-core adapters, passed in receipt 20261013T145624.509021Z: all 11 module declaration audits empty, prelude compilation and kernel checks passed. Original four- and eight-declaration sources/receipts are frozen and retained. No checker infrastructure changed; P69 and P76 results are reused. Section 30 reuses seven declarations; four selected modules and their 34-source repository import closure match passed receipt 20261013T094743.528770Z, with 42/47/47/72 empty module audits. No mathematical changes, new Lean run or independent acceptance. Section 31 is philosophical integration with limited primary reading: Gettier pp.121–122 and relevant passages of Tiberius’s 2016 interview. The revised wording is neither a Lean theorem nor empirical verification; the original 30 proof bindings remain unchanged."
+    "en": "Philosophical correspondence and author counterreview, with limited primary-source readings (Aristotle, Zhuangzi, Dreyfus, Pritchard, Gettier, Tiberius). Formal evidence: declarations reused from 30 bound proof sources, each matched to its passed receipt by source hash, and a pure-core adapter module whose eleven declarations have empty axiom reports, with prelude compilation and kernel checks; some reused peripheral declarations depend on propext, Quot.sound or Classical.choice. Receipts are under sources. No empirical test or independent review.",
+    "zh": "哲学对应与作者反审，并限定核读一手来源（亚里士多德、庄子、Dreyfus、Pritchard、Gettier、Tiberius）。形式证据：复用 30 份绑定证明源中的声明，各以源哈希匹配其通过回执；新增纯核心适配模块的十一项声明公理报告为空，prelude 编译与内核检查通过；部分复用的外围声明依赖 propext、Quot.sound 或 Classical.choice。回执见来源。无经验检验或独立审查。"
   },
   "references": [
     {
@@ -1277,8 +1434,8 @@
     }
   ],
   "next_delta": {
-    "zh": "完成独立智慧内容对整个core的实质必要性：对齐内容、根据、实际把握和所称活动，说明所用主张与关系为何保留同一成就，比较忠实替代解释。共同操作因子及内容／步骤的同一关系保留现已接通，不再重建；不能以其形式完备性认证智慧读法或实际获得历史。",
-    "en": "Complete substantive necessity of the whole core for independently specified wisdom: align content, grounds, uptake and claimed activity, explaining why the selected claims and relations preserve the same achievement, and compare faithful alternatives. The common operational factor and joint content/step preservation are now connected and should not be rebuilt; their formal adequacy does not certify a wisdom reading or actual acquisition history."
+    "en": "Complete the substantive necessity of the whole core for independently specified wisdom: align content, grounds, uptake and claimed activity, explain why the selected claims and relations preserve the same achievement, and compare faithful alternatives.",
+    "zh": "完成独立智慧内容对整个 core 的实质必要性：对齐内容、根据、实际把握和所称活动，说明所用主张与关系为何保留同一成就，并比较忠实替代解释。"
   },
   "history": [
     {
@@ -1376,6 +1533,20 @@
     {
       "zh": "2026-10-13 §31接用认识研究的内容保留、可错支持及历史根据，修正§19可能过强的共同根据读法；既有风险定理和知识真值要求不变。无新数学，全部慧根目标仍开放。",
       "en": "2026-10-13 Section 31 connects retained content, fallible support and historical warrant from the knowledge studies, correcting a potentially overstrong section 19 reading. Existing risk results and knowledge’s truth requirement remain unchanged. No new mathematics; the whole-root target remains open."
+    },
+    {
+      "en": "14 October 2026 (Asia/Bangkok): readability migration to schema 2, starting from the readability draft. The target becomes the statement. The limitations (4,834 characters), the section-by-section correspondence (sections 15–31) and the section-by-section evidence (5,529 characters of receipt matching) become sixteen progress lines with anchored study links, six not-required items, nine does-not-show items, two shared boundaries, a shorter correspondence and one evidence paragraph. Kept here and in the snapshot rather than in public text: section and round labels (P75, P76, P83, P89, P91, P93, P99, P103, P53/P68/P80, P69), receipt timestamps and per-section audit counts, the earlier next step’s instruction not to rebuild the common operational factor and joint content/step preservation, and the remark that the three non-statistical branches are no longer left unaddressed. The third counterexample drops its section labels. No premise, status, dependency, related entry, reference, proof binding or source hash changed. Sentence map: [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md); the exact earlier record is text_versions[0].",
+      "zh": "2026年10月14日（曼谷时间）：可读性迁移到schema 2，以可读性草案为起点。目标成为陈述。限制（4,834 字符）、逐节对应（第15–31节）与逐节证据（5,529 字符的回执核对）改为十六行带锚点研究链接的“已接通”、六项“不要求”、九项“未表明”、两项通用边界、较短的对应与一段证据。以下保留于本沿革与快照而不入公开字段：章节与轮次标记（P75、P76、P83、P89、P91、P93、P99、P103、P53/P68/P80、P69）、回执时间戳与逐节审计计数、原下一步中“共同操作因子及内容／步骤同一关系保留已接通、不再重建”的指示，以及“三个非统计分支不再列为未处理”的说明。第三个反例去掉章节标记。前提、状态、依赖、相关条目、引用、证明绑定及来源哈希均未改变。逐句对照：[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/wisdom-root.md)；迁移前的完整记录为 text_versions[0]。"
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/1672b6c823d1d4b0/wisdom-root.json",
+      "sha256": "1672b6c823d1d4b059af4f79224b5fc8a7819e32fa34c59a8ac816dd6be24549",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
