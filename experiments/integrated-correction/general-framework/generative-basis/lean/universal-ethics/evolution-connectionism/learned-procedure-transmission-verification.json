@@ -1,12 +1,12 @@
 {
-  "checked_at_utc": "2026-10-08T19:36:28.516539+00:00",
+  "checked_at_utc": "2026-10-13T22:11:36.901584+00:00",
   "status": "passed",
   "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
   "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
   "targets": [
     "LearnedProcedureTransmission"
   ],
-  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261008T193434.751521Z",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261013T211356.378776Z",
   "modules": [
     {
       "module": "ConnectionistRecovery",
@@ -2287,7 +2287,7 @@
     {
       "module": "LearnedProcedureTransmission",
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
-      "source_sha256": "61411ff92abf52de4653835a106f4c67d3d95e1b91293c63eb206a0dab545c9b",
+      "source_sha256": "820c61626c5cbd5b69d90648bca86dede9ed79d495be1b1543808f0b158231dd",
       "declarations": [
         {
           "kind": "def",
@@ -2390,6 +2390,30 @@
           "name": "LearnedProcedureTransmission.reconstructed_record_enters_use"
         },
         {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.expose_isSome_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.exposed_kit"
+        },
+        {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.reconstruct_isSome_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.reconstruct_inherits"
+        },
+        {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.reconstruct_after_exposure_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "LearnedProcedureTransmission.cycle_transmits"
+        },
+        {
           "kind": "def",
           "name": "LearnedProcedureTransmission.firstSeed"
         },
@@ -2459,6 +2483,10 @@
         },
         {
           "kind": "theorem",
+          "name": "LearnedProcedureTransmission.history_transmits"
+        },
+        {
+          "kind": "theorem",
           "name": "LearnedProcedureTransmission.reconstructed_updater_really_learns"
         },
         {
@@ -2490,8 +2518,8 @@
           "name": "LearnedProcedureTransmission.separate_future_channel_control"
         }
       ],
-      "audits": 50,
-      "theorems": 30,
+      "audits": 57,
+      "theorems": 37,
       "nonempty_audits": {
         "LearnedProcedureTransmission.coordinates": [
           "propext"
@@ -2611,6 +2639,36 @@
           "Classical.choice",
           "Quot.sound"
         ],
+        "LearnedProcedureTransmission.expose_isSome_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LearnedProcedureTransmission.exposed_kit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LearnedProcedureTransmission.reconstruct_isSome_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LearnedProcedureTransmission.reconstruct_inherits": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LearnedProcedureTransmission.reconstruct_after_exposure_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LearnedProcedureTransmission.cycle_transmits": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
         "LearnedProcedureTransmission.firstSeed": [
           "propext",
           "Classical.choice",
@@ -2686,6 +2744,11 @@
           "Classical.choice",
           "Quot.sound"
         ],
+        "LearnedProcedureTransmission.history_transmits": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
         "LearnedProcedureTransmission.reconstructed_updater_really_learns": [
           "propext",
           "Classical.choice",
@@ -2729,9 +2792,9 @@
       }
     }
   ],
-  "total_audits": 301,
-  "new_audits": 50,
-  "new_theorems": 30,
+  "total_audits": 308,
+  "new_audits": 57,
+  "new_theorems": 37,
   "nonempty_audits": {
     "ConnectionistRecovery.Profile": [
       "propext",
@@ -4068,6 +4131,36 @@
       "Classical.choice",
       "Quot.sound"
     ],
+    "LearnedProcedureTransmission.expose_isSome_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.exposed_kit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.reconstruct_isSome_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.reconstruct_inherits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.reconstruct_after_exposure_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.cycle_transmits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
     "LearnedProcedureTransmission.firstSeed": [
       "propext",
       "Classical.choice",
@@ -4139,6 +4232,11 @@
       "Quot.sound"
     ],
     "LearnedProcedureTransmission.complete_formation_transmission_use": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "LearnedProcedureTransmission.history_transmits": [
       "propext",
       "Classical.choice",
       "Quot.sound"
@@ -4234,7 +4332,7 @@
     "CalibratedUpdater.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "CalibrationRenewal.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "LearnedProcedureTransmission.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "axioms.txt": "c248fd36f64a803a640fba9fa6ca65eb171fe24378053972786a9c482ae43ff5"
+    "axioms.txt": "5ac8aa831c05b4c54c8643d76ae959b7f67f0cbee25b9b6b46e4e3c95e741229"
   },
   "source_changed_during_run": [],
   "direct_import_sha256": {
