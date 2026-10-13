@@ -68,21 +68,21 @@ the frame are readings of one unfolding rather than its ground.
   configurations go alike under it (`DeterminedAt.goAlike`). Under the law of exchange,
   standings are alike exactly where they agree at every relatum (`exchange_alike_iff`), and the
   law is determined up to likeness (`exchange_determinedAt`). A description of configurations
-  makes sense where it identifies exactly the alike ones (`MakesSense`): exactly where what it
-  identifies relate alike and it identifies whatever is alike (`makesSense_iff`). Descriptions
-  that make sense identify the same configurations (`MakesSense.unique`) and, where the frame is
-  determined up to likeness, carry a law (`MakesSense.carries`); naming the configurations makes
-  sense exactly where alike configurations are one (`makesSense_id_iff`), and the twins' naming
-  does not (`Twins.naming_senseless`). For a determined law read through a registration
+  makes sense where it identifies exactly the alike ones (`IdentifiesAlike`): exactly where what it
+  identifies relate alike and it identifies whatever is alike (`identifiesAlike_iff`). Descriptions
+  that make sense identify the same configurations (`IdentifiesAlike.unique`) and, where the frame is
+  determined up to likeness, carry a law (`IdentifiesAlike.carries`); naming the configurations makes
+  sense exactly where alike configurations are one (`identifiesAlike_id_iff`), and the twins' naming
+  does not (`Twins.naming_not_identifiesAlike`). For a determined law read through a registration
   (`Law.registered`), configurations are alike exactly where their registered futures are the
   same (`Law.SameFuture`, `Law.alike_iff_sameFuture`), so there a description makes sense where
   it identifies exactly the same registered futures, and it carries a law
-  (`Law.MakesSense.carries`).
+  (`Law.IdentifiesAlike.carries`).
 
 The results on dead ends, splicing, kept history, coupling and standing and passing restate on
 these definitions theorems checked on the branch "Current math core (fork 2)" of the same
 conversation, 12 October 2026, and those on descriptions that make sense restate, for frames
-that branch and carry claims, the `MakesSense` checked on the branch "Current math core (fork)"
+that branch and carry claims, the `IdentifiesAlike` checked on the branch "Current math core (fork)"
 for one determined law.
 
 **Readings.** Ren, 12 October 2026, of the reading that law and history are one unfolding read
@@ -679,13 +679,13 @@ section Sense
 variable {K : Type u'} {K' : Type u''}
 
 /-- A description of configurations makes sense where it identifies exactly the alike ones. -/
-def MakesSense (F : Frame S A C) (π : S → K) : Prop :=
+def IdentifiesAlike (F : Frame S A C) (π : S → K) : Prop :=
   ∀ s s', π s = π s' ↔ Alike F F s s'
 
 /-- **A description makes sense exactly where what it identifies relate alike and it identifies
 whatever is alike.** -/
-theorem makesSense_iff {F : Frame S A C} {π : S → K} :
-    MakesSense F π ↔
+theorem identifiesAlike_iff {F : Frame S A C} {π : S → K} :
+    IdentifiesAlike F π ↔
       Bisimulation F F (fun s s' => π s = π s') ∧ ∀ s s', Alike F F s s' → π s = π s' :=
   ⟨fun sense =>
     ⟨fun s s' same =>
@@ -699,21 +699,21 @@ theorem makesSense_iff {F : Frame S A C} {π : S → K} :
    fun ⟨kernel, idle⟩ s s' => ⟨fun same => ⟨_, kernel, same⟩, idle s s'⟩⟩
 
 /-- **Descriptions that make sense identify the same configurations.** -/
-theorem MakesSense.unique {F : Frame S A C} {π : S → K} {ρ : S → K'} (sense : MakesSense F π)
-    (sense' : MakesSense F ρ) (s s' : S) : π s = π s' ↔ ρ s = ρ s' :=
+theorem IdentifiesAlike.unique {F : Frame S A C} {π : S → K} {ρ : S → K'} (sense : IdentifiesAlike F π)
+    (sense' : IdentifiesAlike F ρ) (s s' : S) : π s = π s' ↔ ρ s = ρ s' :=
   (sense s s').trans (sense' s s').symm
 
 /-- **Where the frame is determined up to likeness, a description that makes sense carries a
 law** (`carries_law_iff` of `Becoming.Mechanism`). -/
-theorem MakesSense.carries {F : Frame S A C} {π : S → K} (sense : MakesSense F π)
+theorem IdentifiesAlike.carries {F : Frame S A C} {π : S → K} (sense : IdentifiesAlike F π)
     (determined : ∀ s, DeterminedAt F s) :
     ∃ Q : Process K A, Determined Q ∧ FactorsThrough F.P π Q :=
   carries_law_iff.mpr fun s s' _ u u' same step step' =>
     (sense u u').mpr (DeterminedAt.goAlike ((sense s s').mp same) (determined s') step step')
 
 /-- **Naming the configurations makes sense exactly where alike configurations are one.** -/
-theorem makesSense_id_iff {F : Frame S A C} :
-    MakesSense F id ↔ ∀ s s', Alike F F s s' → s = s' :=
+theorem identifiesAlike_id_iff {F : Frame S A C} :
+    IdentifiesAlike F id ↔ ∀ s s', Alike F F s s' → s = s' :=
   ⟨fun sense s s' => (sense s s').mpr,
    fun one s s' =>
     ⟨fun same => Eq.subst (motive := fun x => Alike F F s x) same (Alike.refl F s), one s s'⟩⟩
@@ -787,8 +787,8 @@ theorem alike_one :
 
 /-- **Naming the twins does not make sense**: it tells apart two successors alike in every
 relation. -/
-theorem naming_senseless : ¬ MakesSense frame id :=
-  fun sense => nomatch makesSense_id_iff.mp sense .left .right left_alike_right
+theorem naming_not_identifiesAlike : ¬ IdentifiesAlike frame id :=
+  fun sense => nomatch identifiesAlike_id_iff.mp sense .left .right left_alike_right
 
 end Twins
 
@@ -841,8 +841,8 @@ theorem Law.alike_iff_sameFuture {next : S → S} {o : S → R} {s s' : S} :
   ⟨fun alike n => Law.alike_future n alike, fun same => ⟨_, Law.sameFuture_bisimulation, same⟩⟩
 
 /-- **Under a determined law, a description that makes sense carries a law.** -/
-theorem Law.MakesSense.carries {next : S → S} {o : S → R} {K : Type u'} {π : S → K}
-    (sense : MakesSense (Law.registered next o) π) :
+theorem Law.IdentifiesAlike.carries {next : S → S} {o : S → R} {K : Type u'} {π : S → K}
+    (sense : IdentifiesAlike (Law.registered next o) π) :
     ∃ Q : Process K Unit, Determined Q ∧ FactorsThrough (Law.process next) π Q :=
   sense.carries fun s => Determined.at (Law.registered_determined next o) s
 

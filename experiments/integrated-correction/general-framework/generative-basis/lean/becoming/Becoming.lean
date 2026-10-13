@@ -25,6 +25,7 @@ import Becoming.Attraction
 import Becoming.Substitution
 import Becoming.Generation
 import Becoming.Flow
+import Becoming.Stock
 import Becoming.Change
 import Becoming.Population
 import Becoming.Identity
@@ -54,6 +55,7 @@ import Becoming.Admission
 import Becoming.Regions
 import Becoming.Metaethics
 import Becoming.Ranking
+import Becoming.LossMatching
 import Becoming.Correspondence
 import Becoming.Descent
 import Becoming.Standpoints
@@ -72,6 +74,7 @@ import Becoming.Regrouping
 import Becoming.Selection
 import Becoming.Learning
 import Becoming.Revision
+import Becoming.Contacts
 import Becoming.RegroupingSelection
 import Becoming.ReferencePlan
 import Becoming.ContinuingRevision
@@ -101,7 +104,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   registers is complete exactly where nothing differs, and a complete one has fixed points.
   Completing is an unfolding, incomplete at every step, its gaps pairwise different, never
   returning and held by no finite stock, and one exists; revision by a map moving every value
-  never rests, and the two-valued denial returns every two steps. The readings are the AI's.
+  never rests, and the two-valued negation returns every two steps. The readings are the AI's.
 * `Becoming.Context` (L2): contextual registration (P72), with no premise. Registrations in
   contexts glue exactly where contexts agree where they meet; a frame of context-free claims fits
   exactly where they glue at every configuration, and the frame indexed by context always fits,
@@ -168,7 +171,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   Determinacy is determinacy up to likeness with configurations named; the main theorems of
   `Experiment` and `Mechanism` stated with `Determined` are restated up to likeness, and
   those needing equality are named with witnesses. Capture's rule region is absorbing and a
-  reform of the state alone is drawn into what the rule holds. The readings are the AI's,
+  perturbation of the state alone is drawn into what the rule holds. The readings are the AI's,
   pending Ren.
 * `Becoming.Listing` (L3): What listing once commits to (P77). A list can be listed once exactly where identity among its members is decided (`listsOnce_iff_decided`); its number of members is unique and exists exactly then. Refutation laws need no such premise. Fixing every list's number up to relational indiscernibility in every world is equivalent to excluded middle (`World.numbers_indiscernible_iff_em`). Reading by occurrence keeps amounts and local laws without tracking occurrences across steps.
 * `Becoming.Order` (L3): The order of change (P78). Stuttering keeps the premises, stretch totals and recurrence, while rates and reserves counted in steps depend on the reading. For a given footprint containing the exchanges, commuting unjoined neighbouring exchanges keeps every premise and reaches exactly the renumberings preserving the partial order of joined exchanges (`Footprinted.sorts_iff`, `Footprinted.converse`). Removing idle steps keeps premises, censuses and totals.
@@ -199,6 +202,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   capacity, renewers without bound; unceasing generation is not yet more. Every rise is
   given to and every fall taken from, so where members of a family rise at arbitrarily
   late steps, as in coming to stand, the rise from nothing, its replenishment recurs.
+* `Becoming.Stock` (L3): what a course draws, what replenishes it, and how long it can go on,
+  for every process. Balance at each step is balance along every course; where steps draw only
+  from what is held, a course is executable exactly where at each step the start and what was
+  replenished before cover what was drawn, and, run jointly with a registration process, exactly
+  where the registration admits it and the stock covers it. Repetition without end needs the
+  return to cover the draw and holds exactly where the first pass is covered and it does; along
+  every balanced run drawing without end needs replenishing without end, and with the stock
+  bounded the two recur together. The stock along a run is a balanced `Flow`.
 * `Becoming.Change` (L3): what holds of every unfolding, with no premise about it.
   Arising, forming and coming to stand, with ceasing, dissolving and ceasing to stand,
   are one change, read of activity, dependence and standing. Over any stretch an amount
@@ -332,7 +343,7 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   is held (B5 of the boundary for 无明). Carriers of a target leaving at least as many offspring
   as the others, the target's share among the offspring does not fall, and rises where they
   leave more; where what stands runs down from some step on, descent and so the selection stop;
-  where the next configuration depends on the rule and not the state, reforming the state alone
+  where the next configuration depends on the rule and not the state, perturbing the state alone
   is re-absorbed, the instance of `Becoming.Mechanism`'s re-absorption with the rule as the
   projection. The readings are the AI's, pending Ren.
 * `Becoming.Space` (L3): the whole and its parts, one structure for Ren's proposal (an AI
@@ -555,6 +566,14 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   family, restraint above overdraw; for an overdrawing formation with an event that
   leaves every need met, only the whole-run reading ranks its absence above its
   occurrence.
+* `Becoming.LossMatching` (L4): strict loss matching for every frame: a strict match composes
+  and is monotone; a generative extension is a match by identity, so a commitment making
+  matching sufficient for strict priority contains C; such a commitment needs matching to be
+  asymmetric, and with infinitely many losses a configuration matches itself. With losses listed
+  once a strict match needs strictly more losses at the worse, and with content read as a class
+  a match exists exactly when the better loses no more in each class and fewer in all; losing a
+  support every claim rests on is matched below nothing; a claim read at its time is settled
+  from then on, so restored support re-realizes no missed claim.
 * `Becoming.Correspondence` (L4): which conditions relate. Under the discipline that a
   condition relates two events only when one draws on it and the other depends on it
   at a positive level, at any steps, idle conditions connect nothing, and connection through a
@@ -681,9 +700,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   untried value; training selects through the data, and its fit is right beyond them exactly
   where the class is determined there. 理 is read as Ren reads it, the modeling of the laws of
   structure and of change; the other readings are the AI's, pending Ren.
+* `Becoming.Contacts` (L4): registration through addressed contacts. Registration by agreement
+  on data selects a value exactly where its address is in the data, and a change of data keeps
+  every old selection exactly where it keeps the old data. A revision rule registers every
+  failure exactly where it puts the failed address in the next plan; a rule blind to what failed
+  leaves some failure unregistered at every plan once no list holds every address, and with
+  finitely many addresses need not. Two reference responses drive a two-valued channel to both
+  targets exactly when they differ, and an installed encoding stays right across a change of
+  channel exactly where the new channel agrees at the encoded inputs. `Revision`'s
+  `Revising`, `ReferencePlan` and `ContinuingRevision` read their stock and contacts through
+  `Stock` and `Contacts`.
 * `Becoming.Description` (L4): what a description keeps and loses (P70), with no premise.
   Describing the parts separately gives back the whole exactly where it is rectangular, the lost
-  relation reappearing as surplus; three parts can be related as a whole while every two are free,
+  relation reappearing as extra combinations; three parts can be related as a whole while every two are free,
   and on Specker's pairs the pairs do not give the parity back; a relation forms only by joint
   action, lasts under laws moving each part by itself and merging nothing that occurs, and ends
   only by loss or joint action. Under a determined law the coarsest split keeping what is
@@ -700,10 +729,10 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   that comes back after `Q` steps at its first `p` steps does so at every step. Histories with at
   most `N` and `N'` states are fixed by their record before `N + N' - 1`, and for `N = 1` and
   `N = N'` no shorter record does. Where the bound is given induction is deduction: a lasso
-  hypothesis within `N` unrefuted before `2N - 1` holds at every step; the learner that knows the
+  hypothesis within `N` unrefuted before `2N - 1` holds at every step; the learner given the
   bound is refuted nowhere and right from `2N - 1` on, and none can always speak sooner; the
-  liar's rhythm is derived; a world answering that learner exceeds the bound. The learner that
-  does not know the bound rests within it: a lasso hypothesis within `N` unrefuted for `2N - 1`
+  liar's rhythm is derived; a world answering that learner exceeds the bound. The learner not
+  given the bound rests within it: a lasso hypothesis within `N` unrefuted for `2N - 1`
   steps is never refuted again, so the learner by refutation over the lasso hypotheses is right
   at every step from `N + (2N - 1) * tri N` on, a step its record does not show. In a world a
   list holds, naming configurations by their registered futures for `2N - 1` steps makes sense

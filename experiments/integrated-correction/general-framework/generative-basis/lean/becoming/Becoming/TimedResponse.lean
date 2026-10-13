@@ -248,7 +248,7 @@ def flow (signal : Bool) : Flow Bool Unit where
     | 1 => if h && signal then 1 else 0
     | _ => 0
 
-def commandAt (t : Nat) (h : Bool) : Prop := t = 1 ∧ h = true
+def sourceAt (t : Nat) (h : Bool) : Prop := t = 1 ∧ h = true
 
 def readAt (t : Nat) (l : Nat → Unit → Nat) : Bool := decide (0 < l t ())
 
@@ -260,7 +260,7 @@ theorem balanced (b : Bool) : (flow b).Balances (web b) := by
     | zero => rfl
     | succ t => rfl
 
-theorem responds : ∀ t, ∀ h, ¬ commandAt t h →
+theorem responds : ∀ t, ∀ h, ¬ sourceAt t h →
     (web false).RegistersAlikeUpTo (fun _ _ => True) h
       (web false).level (web true).level t →
     ∀ c, (flow false).take t h c = (flow true).take t h c ∧
@@ -283,12 +283,12 @@ theorem structurally_connected :
   ⟨true, rfl, WithinClosure.of_rel (.inr ⟨(), .inr trivial, 1, .head _, .inr Nat.zero_lt_one⟩)⟩
 
 theorem not_reached_at_one :
-    ¬ ReachedBy (flow false) (flow true) (web false) (fun _ _ => True) commandAt false 1 :=
+    ¬ ReachedBy (flow false) (flow true) (web false) (fun _ _ => True) sourceAt false 1 :=
   not_reached_before_source fun _ _ before src =>
     Nat.lt_irrefl 1 (src.1 ▸ before)
 
 theorem reached_at_two :
-    ReachedBy (flow false) (flow true) (web false) (fun _ _ => True) commandAt false 2 :=
+    ReachedBy (flow false) (flow true) (web false) (fun _ _ => True) sourceAt false 2 :=
   ⟨2, (), Nat.le_refl 2, .inr trivial,
     .input (h := true) ⟨rfl, rfl⟩ ⟨.head _, .inr (.inr (.inr Nat.zero_lt_one))⟩⟩
 

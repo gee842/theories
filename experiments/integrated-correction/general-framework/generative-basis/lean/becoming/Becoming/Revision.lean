@@ -1,4 +1,5 @@
 import Becoming.Learning
+import Becoming.Stock
 
 /-!
 # Selection when the registration itself changes
@@ -13,9 +14,16 @@ whether a selected corrective action remains enabled.
 A history of the registrations actually made is different from applying the latest apparatus
 retroactively. Keeping that history preserves distinctions; a physical memory doing so is
 an additional correspondence condition. A finite Process instance changes its registration
-and the availability of correction through resource-consuming reconstruction. Both opening
+and the availability of correction through reconstruction that draws on a stock. Both opening
 and closing are executable; neither is selected inevitably. Its stock, replenishment and
 construction recipe are local supplied relations, not universal primitives.
+
+That instance is a registration process run jointly with its stock, step for step
+(`Revising.step_iff`), so the general laws of `Becoming.Stock` apply to it: a course of
+reconstruction and correction is executable exactly where the registration admits it and the
+stock covers it (`Revising.feasible_iff`). Discrimination, stock and enactment stay distinct: a
+covered correction can be blocked by the registration (`Revising.covered_not_enacted`), and a
+correction the link admits can lack stock (`Revising.linked_not_enacted`).
 -/
 
 namespace Becoming
@@ -262,6 +270,95 @@ theorem controlled_revision :
     (controlled.state 3).2.2 = false ∧ (controlled.state 4).2.2 = true :=
   ⟨rfl, rfl, closed_loses 0, opened_choice 0, opens_without_correction.2.2,
    rfl, rfl, controlled.step 3, rfl, rfl⟩
+
+/-! ### Revising is a registration process run jointly with its stock -/
+
+/-- The registration side: the link (first) and the response (second). -/
+def registration : Process (Bool × Bool) Act := ⟨fun s a t => match a with
+  | .replenish => t = s
+  | .rebuild b => t = (b, s.2)
+  | .correct => s.1 = true ∧ t = (true, true)⟩
+
+/-- What each act draws from the stock. -/
+def draw : Act → Nat
+  | .replenish => 0
+  | .rebuild _ => 1
+  | .correct => 1
+
+/-- What each act restores to the stock. -/
+def restore : Act → Nat
+  | .replenish => 1
+  | .rebuild _ => 0
+  | .correct => 0
+
+/-- **Revising is the stock process run jointly with the registration, step for step.** -/
+theorem step_iff {s t : State} {a : Act} :
+    P.step s a t ↔ (productProcess (Stock.process draw restore) registration).step s a t := by
+  obtain ⟨n, l, v⟩ := s
+  obtain ⟨m, l', v'⟩ := t
+  cases a with
+  | replenish =>
+    constructor
+    · intro h
+      cases h
+      exact ⟨⟨Nat.zero_le _, rfl⟩, rfl⟩
+    · intro ⟨⟨_, e₁⟩, e₂⟩
+      cases e₂
+      cases e₁
+      rfl
+  | rebuild b =>
+    constructor
+    · intro ⟨k, hn, ht⟩
+      cases ht
+      subst hn
+      exact ⟨⟨Nat.succ_le_succ (Nat.zero_le _), rfl⟩, rfl⟩
+    · intro ⟨⟨_, e₁⟩, e₂⟩
+      cases e₂
+      change m + 1 = n at e₁
+      subst e₁
+      exact ⟨m, rfl, rfl⟩
+  | correct =>
+    constructor
+    · intro ⟨hl, k, hn, ht⟩
+      cases ht
+      subst hn
+      exact ⟨⟨Nat.succ_le_succ (Nat.zero_le _), rfl⟩, hl, rfl⟩
+    · intro ⟨⟨_, e₁⟩, hl, e₂⟩
+      cases e₂
+      change m + 1 = n at e₁
+      subst e₁
+      exact ⟨hl, m, rfl, rfl⟩
+
+theorem trace_iff {s t : State} {w : List Act} :
+    Trace P s w t ↔ Trace (productProcess (Stock.process draw restore) registration) s w t :=
+  ⟨Stock.trace_mono (fun _ _ _ h => step_iff.mp h),
+   Stock.trace_mono (fun _ _ _ h => step_iff.mpr h)⟩
+
+/-- The stock of Revising is balanced and drawn only from what is held. -/
+theorem stock_balanced_held : Stock.Balanced P (fun s => s.1) draw restore ∧
+    Stock.DrawsHeld P (fun s => s.1) draw :=
+  ⟨fun _ _ _ h => (step_iff.mp h).1.2, fun _ _ _ h => (step_iff.mp h).1.1⟩
+
+/-- **Instance of `Stock.product_feasible_iff`.** A course of reconstruction and correction
+is executable exactly where the registration side admits it and the stock covers it. -/
+theorem feasible_iff {s : State} {w : List Act} :
+    Feasible P s w ↔ Stock.Covered draw restore s.1 w ∧ Feasible registration s.2 w :=
+  ⟨fun ⟨t, h⟩ => Stock.product_feasible_iff.mp ⟨t, trace_iff.mp h⟩,
+   fun both => match Stock.product_feasible_iff.mpr both with
+     | ⟨t, h⟩ => ⟨t, trace_iff.mpr h⟩⟩
+
+/-- Stock does not enact: a correction the stock covers, which the registration blocks. -/
+theorem covered_not_enacted :
+    Stock.Covered draw restore 1 [.correct] ∧ ¬ Feasible P (1, false, false) [.correct] :=
+  ⟨⟨Nat.le_refl 1, trivial⟩, fun ⟨_, h⟩ => match h with
+    | .cons step _ => Bool.noConfusion step.1⟩
+
+/-- Registration does not enact: the link admits correction, and no stock covers it. -/
+theorem linked_not_enacted :
+    Feasible registration (true, false) [.correct] ∧ ¬ Feasible P (0, true, false) [.correct] :=
+  ⟨⟨(true, true), .cons ⟨rfl, rfl⟩ (.nil _)⟩, fun ⟨_, h⟩ => match h with
+    | .cons step _ => match step.2 with
+      | ⟨_, bad, _⟩ => Nat.noConfusion bad⟩
 
 end Revising
 end Becoming

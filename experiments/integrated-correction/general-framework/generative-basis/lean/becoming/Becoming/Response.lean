@@ -498,9 +498,9 @@ def firstPart : Formation → Bool
   | .first => true
   | .second => false
 
-/-- A condition is a formation's own: the first's is `ofFirst`, the second's `ofSecond`. Each
-formation requires its own condition and observes it. -/
-def own : Formation → Place → Prop
+/-- The condition paired with each formation: the first's is `ofFirst`, the second's `ofSecond`.
+Each formation requires its paired condition and observes it. -/
+def paired : Formation → Place → Prop
   | .first, .ofFirst => True
   | .first, .ofSecond => False
   | .second, .ofFirst => False
@@ -560,7 +560,7 @@ def web : Web Formation Place where
   active t f := match f with
     | .first => firstLive t
     | .second => True
-  requires _ := own
+  requires _ := paired
   need _ _ _ := 1
   draws _ _ _ := True
 
@@ -596,7 +596,7 @@ theorem quiet_dependent : quietWeb.Dependent :=
 
 /-- The second responds through what it registers: it takes alike in the two flows at the first
 step, and at the second it has observed its condition fall. -/
-theorem responds : escalation.RespondsThroughRegistration quiet web quietWeb own firstPart
+theorem responds : escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart
   | .first, no, _, _, _ => nomatch no
   | .second, _, 0, _, .ofFirst => ⟨rfl, rfl⟩
   | .second, _, 1, alike, .ofFirst =>
@@ -616,9 +616,9 @@ before the third step: the loop registers only in the comparison where the rest 
 theorem returns :
     escalation.Balances web ∧ quiet.Balances quietWeb ∧ web.Dependent ∧ quietWeb.Dependent ∧
       (∀ c, web.level 0 c = quietWeb.level 0 c) ∧
-      escalation.RespondsThroughRegistration quiet web quietWeb own firstPart ∧
-      escalation.RegisteredFromEither web quiet own .second .first ∧
-      escalation.RegisteredFromEither web quiet own .first .second ∧
+      escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart ∧
+      escalation.RegisteredFromEither web quiet paired .second .first ∧
+      escalation.RegisteredFromEither web quiet paired .first .second ∧
       (∀ t, escalation.take t .first .ofFirst = quiet.take t .first .ofFirst ∧
         escalation.give t .first .ofFirst = quiet.give t .first .ofFirst) ∧
       ¬ web.Supported 2 .first ∧ quietWeb.Supported 2 .first ∧

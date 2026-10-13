@@ -11,18 +11,18 @@ under the local conditions each statement names.
 
 * **Carrying what is given.** What is given to a condition across one step is *carried to* a
   later step when the flow balances on the condition across every step between, and the
-  condition stands at every step after the gift through the later one (`Flow.CarriedTo`). At
+  condition stands at every step after the giving through the later one (`Flow.CarriedTo`). At
   the same step, or an earlier one, nothing is asked (`Flow.carriedTo_of_le`). Amounts carry no
-  mark of where they came from, so what of a gift still stands later is a reading. A
-  *following* of a gift is at most the gift after its step, never rises, and is at most what
-  stands at each step (`Flow.FollowsGift`). Some following keeps part of a gift standing at a
-  later step exactly where the gift is positive and the condition stands at every step after
-  the gift's step through the later one (`Flow.can_stand_iff`). So, with balance across the
-  stretch, a positive gift is carried exactly where part of it can still stand
-  (`Flow.carriedTo_iff_stands`). Balance alone does not carry: where the condition is spent at
-  a step between, no following keeps any of the gift (`Flow.spent_keeps_nothing`). A gift
-  exceeding everything taken from the condition across the stretch is carried however the
-  taking falls (`Flow.carried_of_gift_exceeds`).
+  mark of where they came from, so what of an amount given still stands later is a reading. A
+  *following* of an amount given is at most that amount after its step, never rises, and is at most what
+  stands at each step (`Flow.FollowsGiven`). Some following keeps part of an amount given standing
+  at a later step exactly where the amount is positive and the condition stands at every step
+  after the step of giving through the later one (`Flow.can_stand_iff`). So, with balance across the
+  stretch, a positive amount given is carried exactly where part of it can still stand
+  (`Flow.carriedTo_iff_stands`). Balance alone does not carry: where the condition is depleted
+  at a step between, no following keeps any of the amount given (`Flow.depleted_keeps_nothing`). An amount
+  given exceeding everything taken from the condition across the stretch is carried however the
+  taking falls (`Flow.carried_of_given_exceeds`).
 * **Feeding across steps.** The continuation of a formation is *fed across steps* by another
   when the other takes part at a step no later and gives to a condition the first then
   requires, carried from the one step to the other (`Flow.FedAcross`). Same-step feeding is
@@ -85,14 +85,14 @@ under the local conditions each statement names.
 - The carrying reading is the widest the representation allows: amounts are not marked by
   origin, so the closure across steps over-approximates what a continuation depends on. That
   makes "what lies beyond gives nothing" the stronger claim. A stricter reading, under which
-  the gift stands however the taking falls, is sufficient for carrying
-  (`Flow.carried_of_gift_exceeds`).
+  the amount given stands however the taking falls, is sufficient for carrying
+  (`Flow.carried_of_given_exceeds`).
 - With redundant feeders, the loss of one need not return. With the rest of the exchange held
   fixed, it returns exactly where the margin above the need is smaller than what the lost
   feeders gave. Stock defers a return, exactly while it covers, and bounds the deferral.
 
 What is not derived:
-- which following of a gift is the actual one, since the representation does not mark amounts
+- which following of an amount given is the actual one, since the representation does not mark amounts
   by origin;
 - the exact condition for the stricter reading of carrying;
 - that a center represents its closure across steps.
@@ -120,10 +120,10 @@ def CarriedTo (c : C) (s t : Nat) : Prop :=
   (∀ k, s ≤ k → k < t → L.BalancesOn W [c] k) ∧ ∀ k, s < k → k ≤ t → 0 < W.level k c
 
 /-- `a` *follows* what `h` gives to `c` across the step from `s`, through step `t`: after the
-step it is at most the gift, it does not rise, and at each step through `t` it is at most what
-stands. Amounts carry no mark of where they came from; a following is one way of reading the
-gift within what stands. -/
-def FollowsGift (h : F) (c : C) (s t : Nat) (a : Nat → Nat) : Prop :=
+step it is at most what is given, it does not rise, and at each step through `t` it is at most what
+stands. Amounts carry no mark of where they came from; a following is one way of reading
+what is given within what stands. -/
+def FollowsGiven (h : F) (c : C) (s t : Nat) (a : Nat → Nat) : Prop :=
   a (s + 1) ≤ L.give s h c ∧ (∀ k, s < k → k < t → a (k + 1) ≤ a k) ∧
     ∀ k, s < k → k ≤ t → a k ≤ W.level k c
 
@@ -135,21 +135,21 @@ theorem carriedTo_of_le {c : C} {s t : Nat} (le : t ≤ s) : L.CarriedTo W c s t
    fun _ after upto => (Nat.not_le_of_gt (Nat.lt_of_lt_of_le after upto) le).elim⟩
 
 /-- A following does not rise: at a later step through `t` it is at most what it was. -/
-theorem FollowsGift.antitone {h : F} {c : C} {s t : Nat} {a : Nat → Nat}
-    (follows : L.FollowsGift W h c s t a) {k : Nat} (after : s < k) :
+theorem FollowsGiven.antitone {h : F} {c : C} {s t : Nat} {a : Nat → Nat}
+    (follows : L.FollowsGiven W h c s t a) {k : Nat} (after : s < k) :
     ∀ d, k + d ≤ t → a (k + d) ≤ a k
   | 0, _ => Nat.le_refl _
   | d + 1, upto =>
     Nat.le_trans
       (follows.2.1 (k + d) (Nat.lt_of_lt_of_le after (Nat.le_add_right k d))
         (Nat.lt_of_lt_of_le (Nat.lt_succ_self (k + d)) upto))
-      (FollowsGift.antitone follows after d (Nat.le_of_succ_le upto))
+      (FollowsGiven.antitone follows after d (Nat.le_of_succ_le upto))
 
-/-- Part of a gift can still stand at a later step exactly where the gift is positive and the
-condition stands at every step after the gift's step through the later one: some following of
-the gift is positive there. -/
+/-- Part of what is given can still stand at a later step exactly where it is positive and the
+condition stands at every step after the step of giving through the later one: some following
+of it is positive there. -/
 theorem can_stand_iff {h : F} {c : C} {s t : Nat} (later : s < t) :
-    (∃ a, L.FollowsGift W h c s t a ∧ 0 < a t) ↔
+    (∃ a, L.FollowsGiven W h c s t a ∧ 0 < a t) ↔
       0 < L.give s h c ∧ ∀ k, s < k → k ≤ t → 0 < W.level k c :=
   ⟨fun ⟨a, follows, stands⟩ =>
     have bound : ∀ k, s < k → k ≤ t → a t ≤ a k := fun k after upto =>
@@ -163,27 +163,27 @@ theorem can_stand_iff {h : F} {c : C} {s t : Nat} (later : s < t) :
    fun ⟨gives, stands⟩ =>
     ⟨fun _ => 1, ⟨gives, fun _ _ _ => Nat.le_refl 1, stands⟩, Nat.zero_lt_one⟩⟩
 
-/-- Balance alone does not carry: where the condition is spent at a step after the gift's step
-through a later one, no following keeps any of the gift standing there. -/
-theorem spent_keeps_nothing {h : F} {c : C} {s t k : Nat} (after : s < k) (upto : k ≤ t)
-    (spent : W.level k c = 0) : ¬ ∃ a, L.FollowsGift W h c s t a ∧ 0 < a t :=
+/-- Balance alone does not carry: where the condition is depleted at a step after the step of
+giving through a later one, no following keeps any of what is given standing there. -/
+theorem depleted_keeps_nothing {h : F} {c : C} {s t k : Nat} (after : s < k) (upto : k ≤ t)
+    (depleted : W.level k c = 0) : ¬ ∃ a, L.FollowsGiven W h c s t a ∧ 0 < a t :=
   fun stands => Nat.lt_irrefl 0 (Nat.lt_of_lt_of_le
     (((can_stand_iff (Nat.lt_of_lt_of_le after upto)).mp stands).2 k after upto)
-    (Nat.le_of_eq spent))
+    (Nat.le_of_eq depleted))
 
-/-- With balance across the stretch, a positive gift is carried to a later step exactly where
+/-- With balance across the stretch, a positive amount given is carried to a later step exactly where
 part of it can still stand there. -/
 theorem carriedTo_iff_stands {h : F} {c : C} {s t : Nat} (later : s < t)
     (gives : 0 < L.give s h c) (balances : ∀ k, s ≤ k → k < t → L.BalancesOn W [c] k) :
-    L.CarriedTo W c s t ↔ ∃ a, L.FollowsGift W h c s t a ∧ 0 < a t :=
+    L.CarriedTo W c s t ↔ ∃ a, L.FollowsGiven W h c s t a ∧ 0 < a t :=
   ⟨fun carried => (can_stand_iff later).mpr ⟨gives, carried.2⟩,
    fun stands => ⟨balances, ((can_stand_iff later).mp stands).2⟩⟩
 
-/-- A gift exceeding everything taken across the stretch is carried, however the taking falls:
+/-- An amount given exceeding everything taken across the stretch is carried, however the taking falls:
 with balance at `c` across each of the `n` steps from `s`, where `h` takes part at `s` and
 gives `c` more than is taken from `c` across the stretch, `c` stands at every step after `s`
 through `s + n`. -/
-theorem carried_of_gift_exceeds {h : F} {c : C} {s n : Nat} (present : h ∈ L.present s)
+theorem carried_of_given_exceeds {h : F} {c : C} {s n : Nat} (present : h ∈ L.present s)
     (balances : ∀ k, s ≤ k → k < s + n → L.BalancesOn W [c] k)
     (exceeds : total (steps s n) (fun k => L.taken k c) < L.give s h c) :
     L.CarriedTo W c s (s + n) :=
@@ -203,13 +203,13 @@ theorem carried_of_gift_exceeds {h : F} {c : C} {s n : Nat} (present : h ∈ L.p
             (motive := fun r => total (steps s (d + 1)) (fun k => L.taken k c) ≤
               total (steps s r) (fun k => L.taken k c))
             whole.symm (steps_mono _ s (d + 1) m)
-      have gift : L.give s h c ≤ total (steps s (d + 1)) (fun k => L.given k c) :=
+      have giving : L.give s h c ≤ total (steps s (d + 1)) (fun k => L.given k c) :=
         Nat.le_trans (le_total_of_mem (q := fun f => L.give s f c) present)
           (Nat.le_add_right (L.given s c) _)
       have chain : total (steps s (d + 1)) (fun k => L.taken k c) <
           W.level (s + (d + 1)) c + total (steps s (d + 1)) (fun k => L.taken k c) :=
         Nat.lt_of_le_of_lt within (Nat.lt_of_lt_of_le exceeds
-          (Nat.le_trans gift (Nat.le_trans (Nat.le_add_left _ (W.level s c))
+          (Nat.le_trans giving (Nat.le_trans (Nat.le_add_left _ (W.level s c))
             (Nat.le_of_eq over.symm))))
       Eq.subst (motive := fun r => 0 < W.level r c) at_k
         (Nat.pos_of_ne_zero fun zero => Nat.lt_irrefl _ (Nat.lt_of_lt_of_le chain

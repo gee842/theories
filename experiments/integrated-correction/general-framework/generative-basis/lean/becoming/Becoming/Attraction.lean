@@ -72,7 +72,7 @@ or a process of the spine. Merging, returning and reachability are Recurrence's
   attractor is the unfolding narrowing its own future.
 - Capture's held rule (P62, `Captured`) reads as an absorbing region in the rule: the
   configurations with a given rule form a region the law never leaves, and within it a
-  reformed state is drawn into the configuration the rule holds, at the first step.
+  perturbed state is drawn into the configuration the rule holds, at the first step.
 - The meta-attractor of winning read as an absorbing region of the course, out of which only a
   move that does not keep the region leads, is the AI's reading, not derived here.
 

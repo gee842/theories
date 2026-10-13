@@ -226,7 +226,7 @@ theorem coverage_le_errors_add_reach :
 
 /-- An independently specified coverage/error achievement forces enough responsive
 reach. Finite weights need not be probabilities; normalization is a separate reading. -/
-theorem error_budgets_require_reach (coverage b0 b1 : Nat)
+theorem error_bounds_require_reach (coverage b0 b1 : Nat)
     (hc : coverage ≤ tally weight (fun x => committed (read x (web x).level)) xs)
     (h0 : tally weight (fun x => wrong false (read x (web x).level)) xs ≤ b0)
     (h1 : tally weight (fun x => wrong true (read x (web' x).level)) xs ≤ b1) :
@@ -480,7 +480,7 @@ theorem coverage_le_errors_add_timed_reach :
       simp [apart, same, reached])
   exact Nat.le_trans info (Nat.add_le_add_left bound _)
 
-theorem error_budgets_require_timed_reach (coverage b0 b1 : Nat)
+theorem error_bounds_require_timed_reach (coverage b0 b1 : Nat)
     (hc : coverage ≤ tally weight (fun x => committed (read x (web x).level)) xs)
     (h0 : tally weight (fun x => wrong false (read x (web x).level)) xs ≤ b0)
     (h1 : tally weight (fun x => wrong true (read x (web' x).level)) xs ≤ b1) :
@@ -493,7 +493,7 @@ theorem error_budgets_require_timed_reach (coverage b0 b1 : Nat)
 
 omit reachDecision in
 /-- If no paired case is reached by its answer time, commitment equals paired error. -/
-theorem unreached_by_deadline_coverage_eq_errors
+theorem unreached_in_time_coverage_eq_errors
     (unreached : ∀ x ∈ xs, ¬ TimedResponse.ReachedBy (left x) (right x) (web x)
       (observe x) (source x) (reader x) (time x)) :
     tally weight (fun x => committed (read x (web x).level)) xs =

@@ -1291,7 +1291,7 @@ idle one. -/
 inductive Formation where
   | drawer
   | keeper
-  | needy
+  | consumer
   | idle
 
 /-- The pool holds two units and falls to one. -/
@@ -1300,7 +1300,7 @@ def pool : Nat → Nat
   | _ + 1 => 1
 
 /-- The drawer draws the pool. The keeper needs one unit of the spring and draws it. The
-needy formation needs two units of the pool and is active at the first step only, while
+consumer needs two units of the pool and is active at the first step only, while
 the pool supports it. The idle formation does nothing. -/
 def web : Web Formation Condition where
   level t c := match c with
@@ -1308,33 +1308,33 @@ def web : Web Formation Condition where
     | .spring => 1
   active t f := match f with
     | .drawer | .keeper => True
-    | .needy => t = 0
+    | .consumer => t = 0
     | .idle => False
   requires _ f c := match f with
     | .keeper => c = .spring
-    | .needy => c = .pool
+    | .consumer => c = .pool
     | .drawer | .idle => False
   need _ f _ := match f with
     | .keeper => 1
-    | .needy => 2
+    | .consumer => 2
     | .drawer | .idle => 0
   draws _ f c := match f with
     | .drawer => c = .pool
     | .keeper => c = .spring
-    | .needy | .idle => False
+    | .consumer | .idle => False
 
-/-- Exchange the drawer with the idle formation and the keeper with the needy one. -/
+/-- Exchange the drawer with the idle formation and the keeper with the consumer. -/
 def swap : Formation → Formation
   | .drawer => .idle
   | .idle => .drawer
-  | .keeper => .needy
-  | .needy => .keeper
+  | .keeper => .consumer
+  | .consumer => .keeper
 
 theorem swap_swap : ∀ f, swap (swap f) = f
-  | .drawer | .keeper | .needy | .idle => rfl
+  | .drawer | .keeper | .consumer | .idle => rfl
 
 /-- At every odd step, the drawer and the idle formation exchange names, and so do the
-keeper and the needy formation. -/
+keeper and the consumer. -/
 def exchange : Reidentify Formation Formation := .exchanging odd swap swap_swap
 
 /-- The re-identified web. -/
@@ -1345,27 +1345,27 @@ theorem pool_late : ∀ {t}, 1 ≤ t → pool t = 1
   | 0, h => absurd h (Nat.not_succ_le_zero 0)
 
 theorem pool_not_renewed : ¬ web.Renewed .pool :=
-  fun renewed => Nat.not_succ_le_self 1 (renewed 0 .needy rfl).2
+  fun renewed => Nat.not_succ_le_self 1 (renewed 0 .consumer rfl).2
 
 /-- Whoever needs the spring needs one unit. -/
 theorem needs_spring : ∀ {t} f, web.requires t f .spring → web.need t f .spring ≤ 1
   | _, .keeper, _ => Nat.le_refl 1
-  | _, .needy, h | _, .drawer, h | _, .idle, h => nomatch h
+  | _, .consumer, h | _, .drawer, h | _, .idle, h => nomatch h
 
 /-- Whoever needs the pool needs two units. -/
 theorem needs_pool : ∀ {t} f, web.requires t f .pool → web.need t f .pool = 2
-  | _, .needy, _ => rfl
+  | _, .consumer, _ => rfl
   | _, .keeper, h | _, .drawer, h | _, .idle, h => nomatch h
 
 /-- No one name needs the pool both before and after an exchange. -/
 theorem not_both :
     ∀ b f, web.requires 0 (turn swap b f) .pool → ¬ web.requires 0 (turn swap (!b) f) .pool
-  | true, .keeper, _, h | false, .needy, _, h
-  | true, .drawer, h, _ | true, .needy, h, _ | true, .idle, h, _
+  | true, .keeper, _, h | false, .consumer, _, h
+  | true, .drawer, h, _ | true, .consumer, h, _ | true, .idle, h, _
   | false, .drawer, h, _ | false, .keeper, h, _ | false, .idle, h, _ => nomatch h
 
 /-- As named in `web`: activity needs support; the keeper renews and the drawer consumes;
-the drawer undermines at every step, the needy formation's need having been met at the
+the drawer undermines at every step, the consumer's need having been met at the
 first; and no dependence forms and nothing arises. -/
 theorem identified :
     web.Dependent ∧ web.RenewingIn .keeper ∧ web.ConsumingIn .drawer ∧
@@ -1374,25 +1374,25 @@ theorem identified :
     | .keeper, _, depends => match c, depends with
       | .spring, _ => Nat.le_refl 1
       | .pool, h => nomatch h
-    | .needy, active, depends => match t, c, active, depends with
+    | .consumer, active, depends => match t, c, active, depends with
       | 0, .pool, _, _ => Nat.le_refl 2
       | 0, .spring, _, h | _ + 1, _, h, _ => nomatch h
     | .drawer, _, h | .idle, h, _ => (nomatch h),
    fun _ c joins => match c, joins with
     | .spring, _ => fun _ g depends => match g, depends with
       | .keeper, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩
-      | .needy, h | .drawer, h | .idle, h => nomatch h
+      | .consumer, h | .drawer, h | .idle, h => nomatch h
     | .pool, .inl h | .pool, .inr h => (nomatch h),
-   ⟨0, .pool, rfl, .needy, 0, rfl, fun t later => match t, later with
+   ⟨0, .pool, rfl, .consumer, 0, rfl, fun t later => match t, later with
     | _ + 1, _ => Nat.lt_succ_self 1
     | 0, h => absurd h (Nat.lt_irrefl 0)⟩,
-   fun _ => ⟨.pool, rfl, .needy, rfl,
+   fun _ => ⟨.pool, rfl, .consumer, rfl,
     ⟨0, Nat.zero_le _, fun _ _ _ => rfl, Nat.le_refl 2, Nat.lt_succ_self 1⟩, Nat.lt_succ_self 1⟩,
    fun _ _ _ ⟨before, after⟩ => before after,
    fun unceasing => match unceasing 0 with
     | ⟨_, f, _, inactive, active⟩ => match f, active with
       | .drawer, _ | .keeper, _ => inactive trivial
-      | .needy, h | .idle, h => nomatch h⟩
+      | .consumer, h | .idle, h => nomatch h⟩
 
 /-- Re-identified, with every step's relations unchanged: activity still needs support; no
 formation renews and two consume; no event after the first step undermines; the keeper
@@ -1406,7 +1406,7 @@ theorem reidentified :
   have unrenewed : ¬ turned.Renewed .pool :=
     fun renewed => pool_not_renewed ((web.reidentify_renewed exchange .pool).mp renewed)
   have consumed : turned.Consumed .pool :=
-    ⟨.needy, 0, rfl, fun t later => match t, later with
+    ⟨.consumer, 0, rfl, fun t later => match t, later with
       | _ + 1, _ => Nat.lt_succ_self 1
       | 0, h => absurd h (Nat.lt_irrefl 0)⟩
   have arises : ∀ t, odd t = true → turned.Arises t .drawer := fun t odd' =>
@@ -1417,7 +1417,7 @@ theorem reidentified :
    fun x renewing => match x with
     | .drawer => unrenewed (renewing 0 .pool (.inr rfl))
     | .keeper => unrenewed (renewing 1 .pool (.inl rfl))
-    | .needy => unrenewed (renewing 0 .pool (.inl rfl))
+    | .consumer => unrenewed (renewing 0 .pool (.inl rfl))
     | .idle => unrenewed (renewing 1 .pool (.inr rfl)),
    ⟨0, .pool, rfl, consumed⟩,
    ⟨1, .pool, rfl, consumed⟩,
@@ -1971,7 +1971,7 @@ namespace Dormancy
 inductive Formation where
   | early
   | late
-  | needy
+  | consumer
 
 /-- A spring and a pool. -/
 inductive Condition where
@@ -1980,7 +1980,7 @@ inductive Condition where
 
 /-- The spring holds one unit, and the pool is `Turnover`'s: two units, then one. The early
 formation is active at the first step only, needs one unit of the spring then, and draws
-it. The late formation is active at the third step only and draws the pool. The needy
+it. The late formation is active at the third step only and draws the pool. The consumer
 formation needs two units of the pool at the first step, where the pool supports it. No
 formation is active, or depends on anything, at two successive steps. -/
 def web : Web Formation Condition where
@@ -1988,28 +1988,28 @@ def web : Web Formation Condition where
     | .spring => 1
     | .pool => Turnover.pool t
   active t f := match f with
-    | .early | .needy => t = 0
+    | .early | .consumer => t = 0
     | .late => t = 2
   requires t f c := match f, c with
     | .early, .spring => t = 0
-    | .needy, .pool => t = 0
-    | .early, .pool | .needy, .spring | .late, _ => False
+    | .consumer, .pool => t = 0
+    | .early, .pool | .consumer, .spring | .late, _ => False
   need _ f _ := match f with
     | .early => 1
     | .late => 0
-    | .needy => 2
+    | .consumer => 2
   draws t f c := match f, c with
     | .early, .spring => t = 0
     | .late, .pool => t = 2
-    | .early, .pool | .late, .spring | .needy, _ => False
+    | .early, .pool | .late, .spring | .consumer, _ => False
 
 def swap : Formation → Formation
   | .early => .late
   | .late => .early
-  | .needy => .needy
+  | .consumer => .consumer
 
 theorem swap_swap : ∀ f, swap (swap f) = f
-  | .early | .late | .needy => rfl
+  | .early | .late | .consumer => rfl
 
 /-- From the second step on, the late formation bears the early one's name: the two are
 joined across the dormant second step. -/
@@ -2020,11 +2020,11 @@ abbrev joined : Web Formation Condition := web.reidentify join
 
 /-- Every dependence holds at the first step only. -/
 theorem first_only : ∀ t f c, web.requires t f c → t = 0
-  | _, .early, .spring, h | _, .needy, .pool, h => h
-  | _, .early, .pool, h | _, .needy, .spring, h | _, .late, _, h => nomatch h
+  | _, .early, .spring, h | _, .consumer, .pool, h => h
+  | _, .early, .pool, h | _, .consumer, .spring, h | _, .late, _, h => nomatch h
 
 theorem active_once : ∀ t f, web.active t f → ¬ web.active (t + 1) f
-  | _, .early, _, next | _, .needy, _, next => Nat.noConfusion next
+  | _, .early, _, next | _, .consumer, _, next => Nat.noConfusion next
   | _, .late, now, next => Nat.lt_irrefl 2 (Eq.subst (motive := (2 < ·))
       (Eq.subst (motive := fun n => n + 1 = 2) now next) (Nat.lt_succ_self 2))
 
@@ -2032,15 +2032,15 @@ theorem joined_once : ∀ t x, joined.active t x → ¬ joined.active (t + 1) x
   | 0, .early, _, next => Nat.lt_irrefl 1 (Eq.subst (motive := (1 < ·)) next.symm
       (Nat.lt_succ_self 1))
   | 0, .late, now, _ => Nat.noConfusion now
-  | 0, .needy, _, next => Nat.noConfusion next
+  | 0, .consumer, _, next => Nat.noConfusion next
   | t + 1, x, now, next => active_once (t + 1) (swap x) now next
 
 theorem dependent : web.Dependent := fun t f _ c depends =>
   match f, c, t, depends with
-  | .needy, .pool, 0, _ => Nat.le_refl 2
+  | .consumer, .pool, 0, _ => Nat.le_refl 2
   | .early, .spring, 0, _ => Nat.le_refl 1
-  | .needy, .pool, _ + 1, h | .early, .spring, _ + 1, h => Nat.noConfusion h
-  | .needy, .spring, _, h | .early, .pool, _, h | .late, _, _, h => (nomatch h)
+  | .consumer, .pool, _ + 1, h | .early, .spring, _ + 1, h => Nat.noConfusion h
+  | .consumer, .spring, _, h | .early, .pool, _, h | .late, _, _, h => (nomatch h)
 
 /-- The join keeps every continuing activity and dependence, read in both namings: no
 formation is active, or depends on anything, at two successive steps under either. -/
@@ -2053,7 +2053,7 @@ theorem keeps_both :
    fun t _ c _ next => Nat.noConfusion (first_only (t + 1) _ c next)⟩
 
 theorem consumed : web.Consumed .pool :=
-  ⟨.needy, 0, rfl, fun t after => match t, after with
+  ⟨.consumer, 0, rfl, fun t after => match t, after with
     | _ + 1, _ => Nat.lt_succ_self 1
     | 0, h => absurd h (Nat.lt_irrefl 0)⟩
 
@@ -2066,12 +2066,12 @@ theorem classes :
   ⟨fun _ c joins => match c, joins with
     | .spring, _ => fun _ g depends => match g, depends with
       | .early, _ => ⟨Nat.le_refl 1, Nat.le_refl 1⟩
-      | .needy, h | .late, h => (nomatch h)
+      | .consumer, h | .late, h => (nomatch h)
     | .pool, .inl h | .pool, .inr h => (nomatch h),
    ⟨2, .pool, rfl, consumed⟩,
    ⟨2, .pool, rfl, (web.reidentify_consumed join .pool).mpr consumed⟩,
    fun renewing => Nat.not_succ_le_self 1
-     (((web.reidentify_renewed join .pool).mp (renewing 2 .pool (.inr rfl))) 0 .needy rfl).2⟩
+     (((web.reidentify_renewed join .pool).mp (renewing 2 .pool (.inr rfl))) 0 .consumer rfl).2⟩
 
 end Dormancy
 

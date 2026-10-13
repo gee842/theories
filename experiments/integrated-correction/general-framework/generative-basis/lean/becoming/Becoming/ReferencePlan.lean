@@ -1,5 +1,7 @@
 import Becoming.Revision
 import Becoming.Counterfactual
+import Becoming.Stock
+import Becoming.Contacts
 
 /-!
 # Acquired consequences revise the next reference plan
@@ -9,9 +11,18 @@ fresh reference contact, construction and later use are relations in one history
 The method is a finite list of addressed contacts, not a choice between two named
 controllers. Acquired mismatch puts an address into the next executable plan.
 Each planned contact acquires BOTH Boolean references; installation checks their
-separation and consumes support. No generator reads the channel except through
-the declared, charged contact. A repeated native history, matched frozen-method
-control, erasure, exhaustion, failed separation and drift delimit the claim.
+separation and uses fuel. No generator reads the channel except through the declared
+contact, which uses fuel. A repeated native history, matched frozen-method control,
+erasure, exhaustion, failed separation and drift delimit the claim.
+
+The general laws come first, in `Becoming.Stock` and `Becoming.Contacts`; the last section
+reads this process through them. The fuel is a stock balanced against what is used and drawn
+only from what is held, so every executed course is covered (`covered`). The revision rule
+registers every failed address (`propose_answers`, `revise_registers_failure`); the frozen
+rule is blind to what failed and leaves some failure unregistered at every retained method
+(`frozen_misses`). A reference pair drives the channel to both targets exactly when its
+references differ (`checked_pair_iff`), and after drift an installed key fails at every target
+(`drift_fails`). The witnesses below are instances and controls of these laws.
 
 The local primitives, faithful return, two-reference binding, Boolean channel
 family and revision policy are supplied. This is not their premise-free origin,
@@ -45,13 +56,13 @@ def keyAt : List Sample → Nat → Bool
 structure State where
   channel : Nat → Bool → Bool
   method : List Nat
-  receipt : Option Nat
+  mismatch : Option Nat
   pending : List Nat
   fresh : List Sample
   installed : List Sample
   building : Bool
   fuel : Nat
-  spent : Nat
+  used : Nat
   response : Bool
 
 inductive Act where
@@ -64,7 +75,7 @@ inductive Act where
   | drift
   deriving DecidableEq
 
-def cost : Act → Nat
+def use : Act → Nat
   | .probe => 2
   | .perform _ _ => 1
   | .revise => 1
@@ -74,24 +85,24 @@ def cost : Act → Nat
   | .drift => 1
 
 /-- A method is revised by acquired content; no current channel is consulted. -/
-def propose (method : List Nat) (receipt : Option Nat) : List Nat :=
-  match receipt with
+def propose (method : List Nat) (mismatch : Option Nat) : List Nat :=
+  match mismatch with
   | none => method
   | some i => i :: method
 
-/-- The uncharged part of an operation. Installation uses only fresh, bound
-reference pairs; a failed separation blocks installation, not the contact cost. -/
+/-- An operation apart from its use of fuel. Installation uses only fresh, bound
+reference pairs; a failed separation blocks installation, not the contact's use of fuel. -/
 def operate (s : State) : Act → Option State
   | .perform i target =>
     if s.building then none else
     let output := s.channel i (flip (keyAt s.installed i) target)
-    some { s with response := output, receipt := if output = target then none else some i }
+    some { s with response := output, mismatch := if output = target then none else some i }
   | .revise =>
-    match s.receipt with
+    match s.mismatch with
     | none => none
     | some i =>
       let plan := propose s.method (some i)
-      some { s with method := plan, pending := plan, fresh := [], building := true, receipt := none }
+      some { s with method := plan, pending := plan, fresh := [], building := true, mismatch := none }
   | .probe =>
     if s.building then
       match s.pending with
@@ -102,13 +113,13 @@ def operate (s : State) : Act → Option State
     if s.building && s.pending.isEmpty && valid s.fresh then
       some { s with installed := s.fresh, building := false }
     else none
-  | .frozen => some { s with pending := s.method, fresh := [], building := true, receipt := none }
-  | .erase => some { s with receipt := none }
+  | .frozen => some { s with pending := s.method, fresh := [], building := true, mismatch := none }
+  | .erase => some { s with mismatch := none }
   | .drift => some { s with channel := fun i b => !(s.channel i b) }
 
 /-- For every address, acquired content determines the next executable contact
 sequence while leaving the old installed device in place until a checked commit. -/
-theorem revision_binds_plan (s : State) (i : Nat) (h : s.receipt = some i) :
+theorem revision_binds_plan (s : State) (i : Nat) (h : s.mismatch = some i) :
     (operate s .revise).map (fun t => (t.method, t.pending, t.installed)) =
       some (i :: s.method, i :: s.method, s.installed) := by
   unfold operate
@@ -131,10 +142,10 @@ theorem install_binds_fresh (s : State) (active : s.building = true)
   rfl
 
 def execute (s : State) (a : Act) : Option State :=
-  if cost a ≤ s.fuel then
+  if use a ≤ s.fuel then
     match operate s a with
     | none => none
-    | some t => some { t with fuel := s.fuel - cost a, spent := s.spent + cost a }
+    | some t => some { t with fuel := s.fuel - use a, used := s.used + use a }
   else none
 
 def P : Process State Act := ⟨fun s a t => execute s a = some t⟩
@@ -143,8 +154,8 @@ theorem determined {s t u : State} {a : Act}
     (st : P.step s a t) (su : P.step s a u) : t = u :=
   Option.some.inj (st.symm.trans su)
 
-theorem step_account {s t : State} {a : Act} (h : P.step s a t) :
-    t.fuel + cost a = s.fuel ∧ t.spent = s.spent + cost a := by
+theorem step_conserves {s t : State} {a : Act} (h : P.step s a t) :
+    t.fuel + use a = s.fuel ∧ t.used = s.used + use a := by
   change execute s a = some t at h
   unfold execute at h
   split at h
@@ -157,20 +168,20 @@ theorem step_account {s t : State} {a : Act} (h : P.step s a t) :
       exact ⟨ExchangeLaw.sub_add_back enough, rfl⟩
   next => contradiction
 
-theorem trace_account {s t : State} {as : List Act} (h : Trace P s as t) :
-    t.fuel + t.spent = s.fuel + s.spent := by
+theorem trace_conserves {s t : State} {as : List Act} (h : Trace P s as t) :
+    t.fuel + t.used = s.fuel + s.used := by
   induction h with
   | nil => rfl
   | @cons s m t a as step tail ih =>
-    obtain ⟨fuel, spent⟩ := step_account step
-    rw [ih, spent, Nat.add_comm s.spent, ← Nat.add_assoc, fuel]
+    obtain ⟨fuel, used⟩ := step_conserves step
+    rw [ih, used, Nat.add_comm s.used, ← Nat.add_assoc, fuel]
 
-/-- A single policy consumes the retained method and receipt at every revision.
+/-- A single policy consumes the retained method and mismatch at every revision.
 The sequence of ordinary undertakings is supplied separately. -/
 def choose (s : State) : Option Act :=
   if s.building then
     if s.pending.isEmpty then some .install else some .probe
-  else match s.receipt with
+  else match s.mismatch with
     | none => none
     | some _ => some .revise
 
@@ -211,10 +222,10 @@ theorem repair_trace {n : Nat} {s t : State} (h : repair n s = some t) :
         obtain ⟨as, path⟩ := ih h
         exact ⟨a :: as, Trace.cons executed path⟩
 
-theorem propose_from_receipt (m : List Nat) (i : Nat) :
+theorem propose_from_mismatch (m : List Nat) (i : Nat) :
     propose m (some i) = i :: m := rfl
 
-theorem propose_without_receipt (m : List Nat) : propose m none = m := rfl
+theorem propose_without_mismatch (m : List Nat) : propose m none = m := rfl
 
 /-- A two-reference candidate works at both targets precisely under the acquired
 separation check. Applying this to later use also requires the channel to persist. -/
@@ -239,7 +250,8 @@ theorem added_keeps (m : List Nat) (i : Nat) :
     Registration.Keeps Alike m (i :: m) :=
   fun _ _ h j hj => h j (List.mem_cons_of_mem i hj)
 
-/-- Direct reuse of P93, not a second definition of registration-based selection. -/
+/-- Direct reuse of `Registration.keeps_iff`, not a second definition of registration-based
+selection. -/
 theorem old_selections_remain (m : List Nat) (i : Nat) :
     ∀ select, Learning.Training.Through (Alike m) select →
       Learning.Training.Through (Alike (i :: m)) select :=
@@ -269,15 +281,15 @@ calibration labels. Both rounds use exactly `choose`. -/
 def initial : State :=
   ⟨fun _ b => !b, [], none, [], [], [], false, 30, 0, false⟩
 
-def failedFirst : State := { initial with fuel := 29, spent := 1, receipt := some 0 }
+def failedFirst : State := { initial with fuel := 29, used := 1, mismatch := some 0 }
 
-def repairedFirst : State := { failedFirst with method := [0], receipt := none, pending := [], fresh := [⟨0, true, false⟩], installed := [⟨0, true, false⟩], building := false, fuel := 25, spent := 5 }
+def repairedFirst : State := { failedFirst with method := [0], mismatch := none, pending := [], fresh := [⟨0, true, false⟩], installed := [⟨0, true, false⟩], building := false, fuel := 25, used := 5 }
 
-def failedSecond : State := { repairedFirst with receipt := some 1, fuel := 23, spent := 7 }
+def failedSecond : State := { repairedFirst with mismatch := some 1, fuel := 23, used := 7 }
 
-def repairedSecond : State := { failedSecond with method := [1, 0], receipt := none, fresh := [⟨0, true, false⟩, ⟨1, true, false⟩], installed := [⟨0, true, false⟩, ⟨1, true, false⟩], fuel := 17, spent := 13 }
+def repairedSecond : State := { failedSecond with method := [1, 0], mismatch := none, fresh := [⟨0, true, false⟩, ⟨1, true, false⟩], installed := [⟨0, true, false⟩, ⟨1, true, false⟩], fuel := 17, used := 13 }
 
-def finished : State := { repairedSecond with response := true, fuel := 15, spent := 15 }
+def finished : State := { repairedSecond with response := true, fuel := 15, used := 15 }
 
 theorem first_mismatch_acquired : execute initial (.perform 0 true) = some failedFirst := rfl
 
@@ -291,11 +303,11 @@ theorem second_policy_repair : repair 4 failedSecond = some repairedSecond := rf
 theorem both_revised_contacts_used :
     run repairedSecond [.perform 1 true, .perform 0 true] = some finished := rfl
 
-/-- The drift itself is an admitted, charged event, not an analyst replacing the
+/-- The drift itself is an admitted event that uses fuel, not an analyst replacing the
 initial configuration of a failed test. The finite history starts after a checked repair. -/
 theorem drift_has_actual_history :
-    ∃ t, Trace P repairedFirst [.drift, .perform 0 true] t ∧ t.response = false ∧ t.receipt = some 0 :=
-  ⟨{ repairedFirst with channel := fun i b => !(repairedFirst.channel i b), response := false, receipt := some 0, fuel := 23, spent := 7 }, run_trace rfl, rfl, rfl⟩
+    ∃ t, Trace P repairedFirst [.drift, .perform 0 true] t ∧ t.response = false ∧ t.mismatch = some 0 :=
+  ⟨{ repairedFirst with channel := fun i b => !(repairedFirst.channel i b), response := false, mismatch := some 0, fuel := 23, used := 7 }, run_trace rfl, rfl, rfl⟩
 
 def actualWord : List Act :=
   [.perform 0 true, .revise, .probe, .install, .perform 0 true,
@@ -304,7 +316,7 @@ def actualWord : List Act :=
 
 theorem complete_history : Trace P initial actualWord finished := run_trace rfl
 
-theorem actual_cost_without_reset : finished.fuel = 15 ∧ finished.spent = 15 := ⟨rfl, rfl⟩
+theorem fuel_used_without_reset : finished.fuel = 15 ∧ finished.used = 15 := ⟨rfl, rfl⟩
 
 theorem methods_change_twice :
     initial.method = [] ∧ repairedFirst.method = [0] ∧ repairedSecond.method = [1, 0] :=
@@ -361,13 +373,13 @@ theorem second_use_succeeds :
 
 /-! Controls keep genuine failures rather than declaring every revision successful. -/
 
-def frozenEnd : State := { failedFirst with receipt := some 0, fuel := 26, spent := 4 }
+def frozenEnd : State := { failedFirst with mismatch := some 0, fuel := 26, used := 4 }
 
 theorem frozen_method_still_fails :
     run failedFirst [.frozen, .install, .perform 0 true] = some frozenEnd ∧
       frozenEnd.response = false ∧ frozenEnd.installed = [] := ⟨rfl, rfl, rfl⟩
 
-def frozenSecondEnd : State := { failedSecond with fresh := [⟨0, true, false⟩], fuel := 18, spent := 12 }
+def frozenSecondEnd : State := { failedSecond with fresh := [⟨0, true, false⟩], fuel := 18, used := 12 }
 
 /-- The frozen method really executes its old contact and retains the first
 repair. It has MORE remaining support yet still misses the second address. -/
@@ -376,14 +388,14 @@ theorem frozen_second_method_still_fails :
       frozenSecondEnd.response = false ∧ keyAt frozenSecondEnd.installed 0 = true ∧
       keyAt frozenSecondEnd.installed 1 = false := ⟨rfl, rfl, rfl, rfl⟩
 
-theorem erased_receipt_cannot_activate :
+theorem erased_mismatch_cannot_activate :
     (execute failedFirst .erase).bind (repair 1) = none := rfl
 
 theorem support_too_small_to_build :
     repair 3 { failedFirst with fuel := 3 } = none := rfl
 
-theorem references_paid_before_exhaustion :
-    (repair 2 { failedFirst with fuel := 3 }).map (fun s => (s.fuel, s.spent, s.installed)) =
+theorem references_use_fuel_before_exhaustion :
+    (repair 2 { failedFirst with fuel := 3 }).map (fun s => (s.fuel, s.used, s.installed)) =
       some (0, 4, []) := rfl
 
 theorem no_action_after_exhaustion :
@@ -392,13 +404,100 @@ theorem no_action_after_exhaustion :
 theorem constant_channel_rejected :
     repair 3 { failedFirst with channel := fun _ _ => false } = none := rfl
 
-theorem constant_channel_contacts_paid :
+theorem constant_channel_contacts_use_fuel :
     (repair 2 { failedFirst with channel := fun _ _ => false }).map
-      (fun s => (s.fuel, s.spent, valid s.fresh, s.installed)) =
+      (fun s => (s.fuel, s.used, valid s.fresh, s.installed)) =
       some (26, 4, false, []) := rfl
 
 theorem drift_after_check_can_fail :
     (run repairedFirst [.drift, .perform 0 true]).map
-      (fun s => (s.response, s.receipt, s.fuel, s.spent)) = some (false, some 0, 23, 7) := rfl
+      (fun s => (s.response, s.mismatch, s.fuel, s.used)) = some (false, some 0, 23, 7) := rfl
+
+/-! ## Through the general laws of stock and contacts -/
+
+/-- The fuel is a stock: each step uses what it uses and replenishes nothing. -/
+theorem balanced : Stock.Balanced P State.fuel use (fun _ => 0) :=
+  fun _ _ _ h => (step_conserves h).1
+
+/-- What has been used is the complementary stock: each step adds what it uses. -/
+theorem used_balanced : Stock.Balanced P State.used (fun _ => 0) use :=
+  fun _ _ _ h => (step_conserves h).2
+
+/-- A step uses only fuel already held. -/
+theorem draws_held : Stock.DrawsHeld P State.fuel use := by
+  intro s a t h
+  change execute s a = some t at h
+  unfold execute at h
+  split at h
+  next enough => exact enough
+  next => contradiction
+
+/-- `trace_conserves` as a corollary of `Stock.trace_balance`. -/
+theorem trace_conserves_of_law {s t : State} {as : List Act} (h : Trace P s as t) :
+    t.fuel + t.used = s.fuel + s.used :=
+  have fuel : t.fuel + total as use = s.fuel :=
+    (Stock.trace_balance balanced h).trans (congrArg (s.fuel + ·) (Stock.total_zero as))
+  have used : t.used = s.used + total as use :=
+    (congrArg (t.used + ·) (Stock.total_zero as)).symm.trans (Stock.trace_balance used_balanced h)
+  calc t.fuel + t.used = t.fuel + (s.used + total as use) := congrArg (t.fuel + ·) used
+    _ = (t.fuel + total as use) + s.used :=
+        (congrArg (t.fuel + ·) (Nat.add_comm _ _)).trans (Nat.add_assoc _ _ _).symm
+    _ = s.fuel + s.used := congrArg (· + s.used) fuel
+
+/-- **Instance of `Stock.covered_of_trace`.** Every executed course is covered by the fuel it
+starts from; `support_too_small_to_build` and `no_action_after_exhaustion` are cases. -/
+theorem covered {s t : State} {as : List Act} (h : Trace P s as t) :
+    Stock.Covered use (fun _ => 0) s.fuel as :=
+  Stock.covered_of_trace balanced draws_held h
+
+/-- `added_keeps` as an instance of `Contacts.keeps_iff_retains`. -/
+theorem added_keeps_of_law (m : List Nat) (i : Nat) : Registration.Keeps Alike m (i :: m) :=
+  (Contacts.keeps_iff_retains (fun p : List Nat => p) m (i :: m)).mpr fun _ h => List.Mem.tail i h
+
+/-- `new_contact_choice` as an instance of `Contacts.added_gains`. -/
+theorem new_contact_choice_of_law (m : List Nat) (i : Nat) (absent : i ∉ m) :
+    Learning.Training.Through (Alike (i :: m)) (fun x => x i = true) ∧
+      ¬ Learning.Training.Through (Alike m) (fun x => x i = true) :=
+  Contacts.added_gains (List.Mem.head m) absent
+
+/-- The revision rule reads the mismatch and answers every failure. -/
+theorem propose_answers : Contacts.Answers propose := fun _ _ => List.Mem.head _
+
+theorem revise_registers_failure (m : List Nat) (i : Nat) :
+    Learning.Training.Through (Alike (propose m (some i))) (fun x => x i = true) :=
+  (Contacts.answers_iff propose).mpr propose_answers m i
+
+/-- The frozen operation re-runs the retained method whatever the mismatch. -/
+def frozenRule : List Nat → Option Nat → List Nat := fun m _ => m
+
+theorem frozen_reads_method (s : State) :
+    (operate s .frozen).map State.pending = some (frozenRule s.method s.mismatch) := rfl
+
+theorem frozen_blind : Contacts.Blind frozenRule := fun _ _ => rfl
+
+/-- **Instance of `Contacts.blind_misses`.** At every retained method, some failure is left
+unregistered by the frozen rule; `frozen_method_still_fails` is one control of this law. -/
+theorem frozen_misses (m : List Nat) :
+    ∃ i, ¬ Learning.Training.Through (Alike (frozenRule m (some i))) (fun x => x i = true) :=
+  Contacts.blind_misses frozen_blind Contacts.nat_unlisted m
+
+theorem flip_is_pick (c : Bool → Bool) (b : Bool) :
+    flip (c false) b = References.pick c false true b := by
+  show flip (c false) b = (if c false = b then false else true)
+  cases c false <;> cases b <;> rfl
+
+/-- **Instance of `References.drives_iff`:** `checked_pair_correct` and its converse. -/
+theorem checked_pair_iff (c : Bool → Bool) :
+    (∀ target, c (flip (c false) target) = target) ↔ c false ≠ c true :=
+  ⟨fun h => (References.drives_iff c false true).mp fun b =>
+      (congrArg c (flip_is_pick c b)).symm.trans (h b),
+   fun apart b => (congrArg c (flip_is_pick c b)).trans
+      ((References.drives_iff c false true).mpr apart b)⟩
+
+/-- **Instance of `References.inverted_fails`:** after drift a checked key fails at every
+target; `drift_after_check_can_fail` is one control of this law. -/
+theorem drift_fails (c : Bool → Bool) (apart : c false ≠ c true) (b : Bool) :
+    (fun x => !(c x)) (flip (c false) b) ≠ b :=
+  References.inverted_fails (e := fun b => flip (c false) b) ((checked_pair_iff c).mpr apart) b
 
 end Becoming.ReferencePlan

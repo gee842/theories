@@ -826,7 +826,7 @@ theorem replyLaw_nonanticipating : replyLaw.Nonanticipating
   | _, .first, _, _, _, .ofSecond => ⟨rfl, rfl⟩
 
 /-- The second's law reads only what the second observes, its own condition. -/
-theorem replyLaw_through : replyLaw.Through web own firstPart
+theorem replyLaw_through : replyLaw.Through web paired firstPart
   | .second, _, t, l, l', alike, .ofFirst =>
     ⟨(congrArg (fun a => if a < l (t - 1) .ofSecond then 2 else 0)
         ((alike t (Nat.le_refl t)).2 .ofSecond trivial)).trans
@@ -850,7 +850,7 @@ theorem quiet_follows : quiet.Follows replyLaw firstPart quietWeb.level
   | .first, no, _, _ => nomatch no
 
 /-- P65's `Loop.responds`, checked there case by case, follows from the second's law. -/
-theorem responds_by_law : escalation.RespondsThroughRegistration quiet web quietWeb own firstPart :=
+theorem responds_by_law : escalation.RespondsThroughRegistration quiet web quietWeb paired firstPart :=
   replyLaw_through.responds escalation_follows quiet_follows
 
 /-- **Each course is fixed by the first's act.** A balanced flow with both formations present,

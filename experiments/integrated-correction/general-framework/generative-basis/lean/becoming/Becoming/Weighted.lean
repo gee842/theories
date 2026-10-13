@@ -36,7 +36,7 @@ holds for every weighting and listing it names.
     where alternatives only add, a truncation bounds the whole from below
     (`counting_truncation_le`).
   - *Cancellation.* With signed counts (`signed`), courses that are each possible can balance
-    (`Interference.cancels`), a truncation can mislead (`Interference.truncation_misleads`), and
+    (`Interference.cancels`), a truncation can miss a cancellation (`Interference.truncation_misses_cancellation`), and
     no reading into possibility that keeps the join of alternatives sees a cancellation
     (`Interference.unseen`, `Interference.unseen_balanced`).
   - *Memory.* A weighting that depends on how one came is not a weighting of steps of the
@@ -514,9 +514,9 @@ theorem cancels :
       signed.transfer weight [true, false] [()] (fun _ => signed.one) 1 () = (1, 1) :=
   ⟨rfl, rfl⟩
 
-/-- **A truncation can mislead where courses cancel:** keeping the first course alone gives a
+/-- **A truncation can miss a cancellation where courses cancel:** keeping the first course alone gives a
 count that only adds, while the whole balances. -/
-theorem truncation_misleads :
+theorem truncation_misses_cancellation :
     signed.sum [((true : Bool), ())] (fun p => signed.mul (weight () p.1 p.2) signed.one) =
       (1, 0) :=
   rfl

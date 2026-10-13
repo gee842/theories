@@ -3,17 +3,14 @@ import Becoming.Description
 /-!
 # Identification: what a bounded record fixes
 
-On 12 October 2026 Ren speculated that there is a truth, that modelling projects it and the
-projection is where the limit lies, and that "the full "truth" can be derived, situationally,
-including the cognition/controller part". The answer tested this against the checked results
-and left three questions open: whether an unfolding has a law of this kind, deriving the law
-from a finite record, and naming the classes of the split that makes sense without an axiom.
-Ren replied "keep prove to the deepest … for the open questions, if they need to be answered
-to move forward, answer them". `Becoming.Description` answers the first: every registered
+Read as a truth that modelling projects, the projection being where the limit lies, an
+unfolding leaves three questions: whether it has a law of this kind, deriving the law from a
+finite record, and naming the classes of the split that makes sense without an axiom.
+`Becoming.Description` answers the first: every registered
 history is a law read through a registration, and its states are read off it
 (`alike_moments_iff`, `finitely_many_states_iff`). `Becoming.Learning` shows that no record
 fixes the next value, not even among worlds a list holds; that a learner by refutation that
-does not know how many configurations there are comes to rest is unrefuted
+is not given how many configurations there are comes to rest is unrefuted
 (`held_rest_unrefuted`), and its record never shows that it has: given two values, every claim
 it makes is refuted, at that step, on a course of a world held by a list sharing its record
 (`no_record_fixes_next_finite`). This module states what the situation adds: a bound on its
@@ -35,37 +32,37 @@ states. With no premise beyond the bound:
 * **Induction is deduction where the bound is given.** On a history with at most `N` states, a
   lasso hypothesis within `N` that the record before `N + N - 1` bears out is the law of the
   whole course (`lasso_of_fits`, `bounded_induction`), and one always is
-  (`bounded_hypothesis`). The learner that knows `N` (`knowing`), silent before step
+  (`bounded_hypothesis`). The learner given `N` (`withBound`), silent before step
   `N + N - 1` and from then on claiming by the first hypothesis within `N` that the record bears
   out, is refuted at no step of any history with at most `N` states and is right at every step
-  from `N + N - 1` on (`knowing_holds`, `knowing_right`). No learner refuted at no step of every
+  from `N + N - 1` on (`withBound_holds`, `withBound_exact`). No learner refuted at no step of every
   history with at most `N ≥ 2` states claims at step `N + N - 2` on each of them
-  (`knowing_earliest`): the learner that knows the bound speaks as early as any can. The
-  two-valued denial, on which no fixed value is borne out (`Diagonal.revision_never_rests`), is
-  derived from step `3` on by the learner that knows two states (`denial_derived`).
-* **The learner that does not know the bound rests within it.** A lasso hypothesis within `N`
+  (`withBound_earliest`): the learner given the bound speaks as early as any can. The
+  two-valued negation, on which no fixed value is borne out (`Diagonal.revision_never_rests`), is
+  derived from step `3` on by the learner given two states (`negation_derived`).
+* **The learner not given the bound rests within it.** A lasso hypothesis within `N`
   refuted at no step of a stretch of `N + N - 1` steps is refuted at no later step
   (`unrefuted_persists`). So on a history with at most `N` states the learner by refutation
-  over the lasso hypotheses, knowing neither `N` nor the course, claims at every step from
+  over the lasso hypotheses, given neither `N` nor the course, claims at every step from
   `N + (N + N - 1) * tri N` on and is right (`learner_rests`); in a world a list holds, `N` is
   the list's length (`held_learner_rests`), and on a lasso course the rest that
   `Becoming.Learning` leaves unrefuted is found (`rests_of_lasso`). The step is a function of
   the bound, which the learner does not have: its record does not show it.
 * **A world answering its own learner exceeds the bound.** The course that answers every claim
-  of the learner that knows `N` has more than `N` states (`answer_exceeds_bound`): a world that
-  includes the learner and answers it is not within the bound the learner knows.
+  of the learner given `N` has more than `N` states (`answer_exceeds_bound`): a world that
+  includes the learner and answers it is not within the bound the learner is given.
 * **The split that makes sense, named with no quotient.** In a world a list holds, under a
   determined law, two configurations have the same registered future exactly where their
   registered futures agree before `2N - 1` (`Law.sameFuture_iff_below`). Naming each
   configuration by its registered future before that step, a finite list, makes sense
-  (`Law.name_makesSense`); the names carry the law (`Law.name_carries`) and likeness is decided
+  (`Law.name_identifiesAlike`); the names carry the law (`Law.name_carries`) and likeness is decided
   by comparing them (`Law.decideAlike`). Naming by the whole registered future would need
   function extensionality, which Lean proves from the quotient axiom `Quot.sound`; the bound
   makes the finite name enough. The states of a history with at most `N` states are read the same way
   (`sameAhead_iff_below`, `statesBelow_shift`).
 
 The world in these statements is any world a list holds: a controller or a cognition inside it
-is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_makesSense_iff`.
+is part of what is registered, as in `Becoming.Description`'s `Law.adaptive_identifiesAlike_iff`.
 The bound `N + N' - 1` is the one of Fine and Wilf; the sharper bound for two moments of one
 history, or two configurations of one world (Moore, 1956), is not stated here.
 -/
@@ -507,9 +504,9 @@ theorem bounded_hypothesis {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
 
 end Induction
 
-/-! ## The learner that knows the bound -/
+/-! ## The learner given the bound -/
 
-section Knowing
+section WithBound
 
 variable {O : Type u}
 
@@ -596,7 +593,7 @@ theorem firstFit_found {α : Type} {p : α → Prop} {dec : ∀ a, Decidable (p 
         match firstFit_found (dec := dec) mem' pa with
         | ⟨c, found⟩ => ⟨c, (if_neg npb).trans found⟩
 
-/-- The condition the learner that knows `N` puts on a hypothesis: within `N`, and borne out by
+/-- The condition the learner given `N` puts on a hypothesis: within `N`, and borne out by
 the record. -/
 def Fits (N : Nat) (l : List O) (h : Nat × Nat) : Prop :=
   h.1 + h.2 + 1 ≤ N ∧ BorneOut (Learning.lasso h) l
@@ -610,16 +607,16 @@ def claimBy (l : List O) : Option (Nat × Nat) → Option O
   | some h => Learning.lasso h l
   | none => none
 
-/-- **The learner that knows the bound `N`.** Silent before step `N + N - 1`; from then on it
+/-- **The learner given the bound `N`.** Silent before step `N + N - 1`; from then on it
 claims by the first lasso hypothesis within `N` that the record bears out. -/
-def knowing [DecidableEq O] (N : Nat) (l : List O) : Option O :=
+def withBound [DecidableEq O] (N : Nat) (l : List O) : Option O :=
   if N + N - 1 ≤ l.length then claimBy l (firstFit (Fits N l) (decFits N l) (grid N N))
   else none
 
-/-- **The learner that knows the bound is right at every step from `N + N - 1` on** of every
+/-- **The learner given the bound is right at every step from `N + N - 1` on** of every
 history with at most `N` states. -/
-theorem knowing_right [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
-    (late : N + N - 1 ≤ t) : knowing N (Learning.record o t) = some (o t) :=
+theorem withBound_exact [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : StatesBelow o N)
+    (late : N + N - 1 ≤ t) : withBound N (Learning.record o t) = some (o t) :=
   have long : N + N - 1 ≤ (Learning.record o t).length :=
     Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.record_length o t).symm late
   have N_le : N ≤ N + N - 1 := le_twice_less_one (statesBelow_pos bound)
@@ -648,25 +645,25 @@ theorem knowing_right [DecidableEq O] {o : Nat → O} {N t : Nat} (bound : State
         (if_pos long).trans ((congrArg (claimBy (Learning.record o t)) found).trans
           (value.trans (congrArg some right)))
 
-/-- **The learner that knows the bound is refuted at no step** of any history with at most `N`
+/-- **The learner given the bound is refuted at no step** of any history with at most `N`
 states. -/
-theorem knowing_holds [DecidableEq O] {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
-    Learning.Holds (knowing N) o := fun t =>
+theorem withBound_holds [DecidableEq O] {o : Nat → O} {N : Nat} (bound : StatesBelow o N) :
+    Learning.Holds (withBound N) o := fun t =>
   match Nat.lt_or_ge t (N + N - 1) with
   | .inl early =>
     fun ⟨_, made, _⟩ =>
-      nomatch (show knowing N (Learning.record o t) = none from
+      nomatch (show withBound N (Learning.record o t) = none from
         if_neg fun long => Nat.lt_irrefl t (Nat.lt_of_lt_of_le early
           (Eq.subst (motive := fun n => N + N - 1 ≤ n) (Learning.record_length o t) long))
         ).symm.trans made
   | .inr late =>
-    Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) (knowing_right bound late).symm
+    Eq.subst (motive := fun c => ¬ Learning.Refuted c (o t)) (withBound_exact bound late).symm
       Learning.not_refuted_self
 
 /-- **No learner can always speak sooner.** Given two values, no learner refuted at no step of
 every history with at most `M + 2` states claims at step `M + M + 2` on each of them; the
-learner that knows the bound speaks from step `M + M + 3` on. -/
-theorem knowing_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
+learner given the bound speaks from step `M + M + 3` on. -/
+theorem withBound_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) (M : Nat) :
     ¬ ∀ o : Nat → O, StatesBelow o (M + 2) →
       Learning.Holds pred o ∧ ∃ w, pred (Learning.record o (M + M + 2)) = some w :=
   fun all =>
@@ -679,24 +676,24 @@ theorem knowing_earliest {x y : O} (two : x ≠ y) (pred : List O → Option O) 
         holds _ ⟨w, claims, fun right => holds' _ ⟨w, claims', fun right' =>
           differ (right.symm.trans right')⟩⟩
 
-/-- **The liar's truth is derived.** The learner that knows there are two states is right about
-the two-valued denial at every step from `3` on: what no fixed value answers
+/-- **The liar's truth is derived.** The learner given that there are two states is right about
+the two-valued negation at every step from `3` on: what no fixed value answers
 (`Diagonal.revision_never_rests`) is a rhythm read off the record. -/
-theorem denial_derived : ∀ t, 3 ≤ t →
-    knowing 2 (Learning.record Denial.register t) = some (Denial.register t) :=
-  fun _ late => knowing_right (statesBelow_of_same (Nat.zero_lt_succ 1) Denial.zero_two) late
+theorem negation_derived : ∀ t, 3 ≤ t →
+    withBound 2 (Learning.record Negation.register t) = some (Negation.register t) :=
+  fun _ late => withBound_exact (statesBelow_of_same (Nat.zero_lt_succ 1) Negation.zero_two) late
 
-/-- **A world answering its own learner exceeds the bound the learner knows.** Where `other`
-moves every value, the course that answers every claim of the learner that knows `N` has more
+/-- **A world answering its own learner exceeds the bound the learner is given.** Where `other`
+moves every value, the course that answers every claim of the learner given `N` has more
 than `N` states. -/
 theorem answer_exceeds_bound [DecidableEq O] {other : O → O} (moves : ∀ v, other v ≠ v)
-    (x : O) (N : Nat) : ¬ StatesBelow (Learning.diagonal (knowing N) other x) N :=
-  fun bound => Learning.diagonal_unrested (knowing N) moves x
-    ⟨N + N - 1, fun _ late => knowing_right bound late⟩
+    (x : O) (N : Nat) : ¬ StatesBelow (Learning.diagonal (withBound N) other x) N :=
+  fun bound => Learning.diagonal_unrested (withBound N) moves x
+    ⟨N + N - 1, fun _ late => withBound_exact bound late⟩
 
-end Knowing
+end WithBound
 
-/-! ## The learner that does not know the bound rests within it -/
+/-! ## The learner not given the bound rests within it -/
 
 section Resting
 
@@ -753,8 +750,8 @@ theorem unrefuted_persists {N a b s : Nat} (bound : StatesBelow o N) (within : a
     exact Learning.lasso_holds from_here t
       (Eq.subst (motive := fun c => Learning.Refuted c (o t)) same refuted)
 
-/-- **The learner that does not know the bound comes to rest within it.** On a history with at
-most `N` states, the learner by refutation over the lasso hypotheses, which knows neither `N`
+/-- **The learner not given the bound comes to rest within it.** On a history with at
+most `N` states, the learner by refutation over the lasso hypotheses, given neither `N`
 nor the course (`Becoming.Learning`'s `learner lassos`), claims at every step from
 `N + (N + N - 1) * tri N` on and is right. Its hypotheses all lie within `N`; in each stretch of
 `N + N - 1` steps from `N` on it is refuted, or the hypothesis it holds is never refuted again
@@ -864,7 +861,7 @@ theorem rests_of_lasso {i q : Nat} (repeats : Learning.Lasso o i q) :
 
 /-- **Induction in a world held by a list: the learner rests within a bound on the list.** Under
 a determined law whose configurations along an orbit are held by a list `l`, the learner by
-refutation over the lasso hypotheses, knowing neither the configurations nor how many there
+refutation over the lasso hypotheses, given neither the configurations nor how many there
 are, claims at every step from `N + (N + N - 1) * tri N` on and is right, `N` the length of
 `l`. -/
 theorem held_learner_rests {S : Type v} {next : S → S} {s : S} {l : List S}
@@ -916,8 +913,8 @@ def name (next : S → S) (o : S → R) (T : Nat) (s : S) : List R :=
 
 /-- **The split that makes sense, named with no quotient.** In a world a list holds, naming each
 configuration by its registered future before `N + N - 1` makes sense. -/
-theorem name_makesSense {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
-    MakesSense (Law.registered next o) (name next o (l.length + l.length - 1)) :=
+theorem name_identifiesAlike {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
+    IdentifiesAlike (Law.registered next o) (name next o (l.length + l.length - 1)) :=
   fun s s' =>
     (Identification.record_eq_iff.trans
       (sameFuture_iff_below (fun s _ => world (next s)) (world s) (world s')).symm).trans
@@ -927,12 +924,12 @@ theorem name_makesSense {next : S → S} {o : S → R} {l : List S} (world : ∀
 theorem name_carries {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l) :
     ∃ Q : Process (List R) Unit,
       Determined Q ∧ FactorsThrough (Law.process next) (name next o (l.length + l.length - 1)) Q :=
-  Law.MakesSense.carries (name_makesSense world)
+  Law.IdentifiesAlike.carries (name_identifiesAlike world)
 
 /-- **Likeness is decided by comparing names.** -/
 def decideAlike [DecidableEq R] {next : S → S} {o : S → R} {l : List S} (world : ∀ s, s ∈ l)
     (s s' : S) : Decidable (Alike (Law.registered next o) (Law.registered next o) s s') :=
-  decidable_of_iff _ (name_makesSense world s s')
+  decidable_of_iff _ (name_identifiesAlike world s s')
 
 end Law
 

@@ -49,7 +49,7 @@ FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
 CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.Diagonal", "Becoming.Context", "Becoming.Quantum", "Becoming.Renewal", "Becoming.Dependence",
         "Becoming.Return", "Becoming.Horizon", "Becoming.Joint", "Becoming.Experiment", "Becoming.Mechanism", "Becoming.Unfolding", "Becoming.Histories", "Becoming.Branching", "Becoming.Listing", "Becoming.Order", "Becoming.OrderNormal", "Becoming.OneStep", "Becoming.Weighted", "Becoming.Transmission", "Becoming.Succession", "Becoming.Attraction",
         "Becoming.Substitution",
-        "Becoming.Generation", "Becoming.Flow", "Becoming.Change", "Becoming.Population",
+        "Becoming.Generation", "Becoming.Flow", "Becoming.Stock", "Becoming.Change", "Becoming.Population",
         "Becoming.Identity", "Becoming.Persistence", "Becoming.Wholes", "Becoming.Dissipation", "Becoming.Locality",
         "Becoming.Seeking", "Becoming.Roles",
         "Becoming.Reserve", "Becoming.Evolution", "Becoming.Capture", "Becoming.Space",
@@ -57,10 +57,10 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Openness", "Becoming.Decidedness", "Becoming.Counting", "Becoming.Standing", "Becoming.Resolution", "Becoming.Entropy", "Becoming.Units", "Becoming.Imbalance",
         "Becoming.Continuation", "Becoming.Admission",
         "Becoming.Regions",
-        "Becoming.Metaethics", "Becoming.Ranking",
+        "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE
@@ -68,35 +68,56 @@ RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
 SCOPE = (
+    "Stock: for every process, balance at each step is balance along every course; where steps "
+    "draw only from what is held, a course is executable exactly where it is covered, and run "
+    "jointly with a registration exactly where the registration admits it and the stock covers it; "
+    "repetition without end needs the return to cover the draw, and along every balanced run "
+    "drawing without end needs replenishing without end; the stock along a run is a balanced Flow. "
+    "Contacts: registration by agreement on data selects a value exactly where its address is in "
+    "the data, and a change of data keeps every old selection exactly where it keeps the old data; "
+    "a revision rule registers every failure exactly where it puts the failed address in the next "
+    "plan, and a rule blind to what failed misses some failure at every plan once addresses are "
+    "unbounded; two reference responses drive a two-valued channel to both targets exactly when "
+    "they differ. "
+    "LossMatching: for every Frame, strict loss matching composes and is monotone; a generative "
+    "extension is a match by identity, so sufficiency of matching contains C; with losses listed "
+    "once it is a strict order, and with content read as a class a match exists exactly when the "
+    "better loses no more in each class and fewer in all; infinitely many losses allow a self-match; "
+    "losing a common support blocks matching; a claim read at its time is settled from then on. "
     "ContinuingRevision: an actual failed undertaking forms the first reference apparatus; "
     "the same native operations then revise addressed methods, acquire references, install "
-    "and succeed at every successor. Successful production pays replacement and the next "
-    "revision, with cumulative ledgers and an actual infinite policy-restricted Run. "
-    "Frozen methods, cut return, lost reserve and retired distinctions retain failures. "
+    "and succeed at every successor. The fuel is a stock: along every run at every yield renewal "
+    "and success recur, with the return cut no unending run exists, and with fuel in reserve and "
+    "yield as parameters the cycle repeats without end exactly where the yield covers its use of "
+    "nine; the yield-nine witness keeps cumulative amounts and an actual infinite policy-restricted "
+    "Run. Frozen methods, cut return, lost reserve and retired distinctions retain failures. "
     "Open productive support, succession, stable contacts and policy remain premises; "
     "no universal physical recurrence, basin, normative direction or closed-stock perpetuity. "
     "TimedResponse: native exchanges in temporal order bound when a difference can register. "
-    "Before a deadline, common initial levels, balance, common present formations and response "
+    "Before the answer time, common initial levels, balance, common present formations and response "
     "through past registration imply blindness outside timed propagation. The cone refines "
     "whole-course response; delayed arrival and ignored-signal witnesses preserve its limits. "
     "Discrete steps have no supplied physical duration; routes are necessary, not sufficient. "
-    "RepairComparison is a peripheral shared-Frame application: a common repair law produces "
-    "two separate focal support episodes or one/two/three peer episodes. Current support "
-    "restoration retains historical losses. Distinct loss matches yield strict lower and upper "
+    "RepairComparison is a peripheral shared-Frame application of LossMatching: a common repair "
+    "law protects the two episodes of one life or the episodes of one, two or three other lives; "
+    "between any two courses a match exists exactly when the better loses fewer episodes. Current "
+    "support restoration retains historical losses. Distinct loss matches yield strict lower and upper "
     "anchors only under explicit complete-episode scope and sufficient-matching commitments; "
     "a backbone-disconnecting repair invalidates the match. No duration price or unconditional "
     "aggregation, full-recovery, normative sufficiency or global FR threshold is derived. "
-    "ReferencePlan: acquired mismatch changes the next generated contact plan; charged fresh "
-    "reference pairs are checked and installed, then used in two actual policy-driven repairs "
-    "without a resource reset. New installed selections reuse Revision. Frozen method, erased "
-    "receipt, insufficient support, constant channel and post-check drift retain failures. "
+    "ReferencePlan: acquired mismatch changes the next generated contact plan; fresh reference "
+    "pairs, whose contacts use fuel, are checked and installed, then used in two actual "
+    "policy-driven repairs without a reset of fuel; its fuel, revision rule and reference pairs "
+    "are instances of Stock and Contacts. New installed selections reuse Revision. Frozen method, "
+    "erased mismatch, insufficient fuel, constant channel and post-check drift retain failures. "
     "Local contact primitives, faithful return, stable binding and policy are supplied; no "
     "universal invention, attraction, chemical composition or normative warrant is derived. "
     "Revision: all old selections remain expressible exactly when new indistinguishability "
     "implies old indistinguishability, with equivalence conditions explicit; this composes along "
     "actual traces. Retained observations differ from the latest apparatus. A supplied closed-loop "
-    "Process reconstructs registration, replenishes support and changes its response; loss and "
-    "resource exhaustion remain possible. Target, control preference and construction law are "
+    "Process, a registration process run jointly with its stock, reconstructs registration, "
+    "replenishes the stock and changes its response; loss and exhaustion of the stock remain "
+    "possible. Target, control preference and construction law are "
     "supplied, with no general formation or normative theorem. "
     "RegroupingSelection: pure adapters connect regrouping and revision on supplied content. "
     "Arbitrary Frame claim-status fidelity is exactly preservation of all status-based claim "
@@ -132,7 +153,7 @@ SCOPE = (
     "saying its gap is incomplete at every step, says no later gap earlier, has no two gaps alike "
     "where likeness is transitive, never returns, and holds its gaps in no finite stock where "
     "likeness is symmetric and transitive, and such an unfolding exists on Bool; revision by a map "
-    "moving every value never rests, and the two-valued denial returns every two steps. "
+    "moving every value never rests, and the two-valued negation returns every two steps. "
     "Context: registrations in contexts glue at a configuration exactly where any two contexts "
     "registering a claim agree, each claim having a context; a frame of context-free claims fits "
     "exactly where they glue at every configuration, while the frame indexed by context always fits; "
@@ -254,7 +275,7 @@ SCOPE = (
     "to likeness where the claims name the configurations, theorems on how configurations relate "
     "hold up to likeness, and retargeting one of two alike configurations, an unregistered past "
     "and an unregistered description need equality; where a rule keeps itself its region is "
-    "absorbing, and where the next configuration depends on the rule alone a reformed state is "
+    "absorbing, and where the next configuration depends on the rule alone a perturbed state is "
     "drawn into what the rule holds. "
     "Listing: A list can be listed once exactly where identity among its members is decided "
     "(`listsOnce_iff_decided`); its number of members is unique and exists exactly then. "
@@ -680,7 +701,7 @@ SCOPE = (
     "strictly where each carrier leaves more and both are present; where what stands is listed, "
     "descent at arbitrarily late steps needs steps at arbitrarily late times across which what "
     "stands does not run down, and where it runs down from some step on descent does not recur; "
-    "where the next configuration depends on the rule and not the state, reforming the state alone "
+    "where the next configuration depends on the rule and not the state, perturbing the state alone "
     "is re-absorbed from the next step on, the instance of Mechanism's re-absorption with the rule as "
     "the projection. "
     "Evolution: a relatum descends from a formation across a step when the formation takes part "
@@ -1166,7 +1187,7 @@ SCOPE = (
     "every comparison where a formation's feeding closure is the whole, while in the clearer's "
     "web the clearer's part retains within its closure and under the axiom loses the dweller. "
     "No ethical premise is used; the axiom is a hypothesis of the comparisons only. "
-    "Feeding: possible carrying of a positive gift is characterized by positive standing "
+    "Feeding: possible carrying of a positive amount given is characterized by positive standing "
     "throughout the stretch; same-step feeding is zero-delay feeding across steps; the least "
     "closure under feeding across steps contains the old feeding closure, strictly in Provision, "
     "and nothing beyond it gives to a carried condition a member requires; local balance "
@@ -1309,7 +1330,7 @@ SCOPE = (
     "registered sequence are one state where all registered after them is alike, which is likeness "
     "under the law of moments, and there are finitely many states exactly where two moments are one "
     "state, by a pigeonhole up to a relation with no decision; a returning configuration has finitely "
-    "many states under every registration, and the two-valued denial has exactly two"
+    "many states under every registration, and the two-valued negation has exactly two"
     "; going alike under a determined law is Learning's lumping, and a lasso is two moments being "
     "one state, so finitely many states is a lasso"
     ". "
@@ -1319,10 +1340,10 @@ SCOPE = (
     "at most N and N' states agreeing before N + N' - 1 agree everywhere, records are equal exactly "
     "where courses agree before their length, and for N = 1 and for N = N' two such histories share "
     "their record before N + N' - 2 and differ there; on a history with at most N states a lasso "
-    "within N holding before 2N - 1 holds everywhere, the learner that knows N is refuted nowhere and "
+    "within N holding before 2N - 1 holds everywhere, the learner given N is refuted nowhere and "
     "right from 2N - 1 on, no learner refuted nowhere claims at 2N - 2 on every such history, the "
-    "learner that knows two states is right about the denial from step 3, and the course answering "
-    "the learner that knows N has more than N states; on a history with at most N states a lasso "
+    "learner given two states is right about the negation from step 3, and the course answering "
+    "the learner given N has more than N states; on a history with at most N states a lasso "
     "hypothesis (a, b) within N unrefuted for N + N - 1 steps from s >= a is unrefuted from s on, and the "
     "learner by "
     "refutation over the lasso hypotheses claims and is right at every step from N + (N + N - 1) * tri N "

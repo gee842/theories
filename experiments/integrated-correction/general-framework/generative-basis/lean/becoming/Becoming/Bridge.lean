@@ -607,12 +607,12 @@ section Likeness
 variable {S : Type u} {T : Type w} {A : Type v}
 
 /-- A process read with no claims. -/
-def Frame.unclaimed (P : Process S A) : Frame S A Empty :=
+def Frame.bare (P : Process S A) : Frame S A Empty :=
   ⟨P, fun _ c => nomatch c⟩
 
 /-- **`Deeper.Bisimulation` is the core's bisimulation of frames with no claims.** -/
 theorem deeper_bisimulation_iff {P : Process S A} {Q : Process T A} {B : S → T → Prop} :
-    Deeper.Bisimulation P Q B ↔ Bisimulation (Frame.unclaimed P) (Frame.unclaimed Q) B :=
+    Deeper.Bisimulation P Q B ↔ Bisimulation (Frame.bare P) (Frame.bare Q) B :=
   ⟨fun ⟨forth, back⟩ s t related =>
     ⟨(fun c => nomatch c), fun a s' step => forth s t a s' related step,
      fun a t' step => back s t a t' related step⟩,
@@ -623,7 +623,7 @@ theorem deeper_bisimulation_iff {P : Process S A} {Q : Process T A} {B : S → T
 /-- **The relational reading of 6 October 2026 is an instance.** In `static` and `toggle`
 every configuration of one is alike to every configuration of the other. -/
 theorem static_toggle_alike (s t : Bool) :
-    Alike (Frame.unclaimed Deeper.static) (Frame.unclaimed Deeper.toggle) s t :=
+    Alike (Frame.bare Deeper.static) (Frame.bare Deeper.toggle) s t :=
   ⟨_, deeper_bisimulation_iff.mp Deeper.static_toggle_one_dynamics, trivial⟩
 
 variable {O : Type v}
