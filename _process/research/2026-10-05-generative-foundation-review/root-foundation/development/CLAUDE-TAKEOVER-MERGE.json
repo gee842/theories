@@ -1,0 +1,14 @@
+{
+  "before": "15c134a575112a254483e8d1737e99cd7c9a3f0d",
+  "merge": "710b8f20063b433bac65b128765719da68580f74",
+  "tree_before_and_after": "98f425720c6c3afcd89e56e18416bad63de67dca",
+  "merged_tips": {
+    "claude/jolly-pike-140c94": "52ff83a4994443e1a9255d51eace8500772b7c0e",
+    "p47-testing": "897bec225ca17c02ffc991259462161ce4d76e19",
+    "p53-experiment": "6b59305c971a2650344f52b206010de53a101b4f",
+    "p55-runaway": "a8cfa0cab0248090e758383a101b89e9952e7131",
+    "p62-seeking": "9af94211cd4ee91f71375350c2218cfb05cd2c76"
+  },
+  "all_other_refs_ancestors": true,
+  "evidence_branch_retained_not_merged": true
+}
