@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "rest-with-refinement-counted",
   "title": {
-    "zh": "细分作为给予",
-    "en": "Refinement as a giving"
+    "en": "Refinement counted as a giving",
+    "zh": "细分算作给予"
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -437,8 +437,8 @@
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
     },
     {
-      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“细分是一种给予：把单位的细分算作只给不取的形成，脊柱的前提不添任何前提就带来每一分辨率下的静止，生起不息需要开放；不算入细分的见证都由它供给”",
-      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Refinement gives: with the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and arising without end needs openness; the witnesses that leave it uncounted are fed by it”"
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“细分是一种给予：把单位的细分算作只给不取的形成，脊柱的前提不添任何前提就带来每一分辨率下的静止，生起不息需要开放；不算入细分的见证都由它供给”整合者随后把短标题由“细分作为给予”改为“细分算作给予”，使其更准确地指称该成果。",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Refinement gives: with the splitting of the unit counted as a formation that gives without taking, the spine's premises bring rest at every resolution with no premise added, and arising without end needs openness; the witnesses that leave it uncounted are fed by it” The integrator then adjusted the short title from “Refinement as a giving” to “Refinement counted as a giving” to name the result more exactly."
     }
   ]
 }

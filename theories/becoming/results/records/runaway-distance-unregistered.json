@@ -2,8 +2,8 @@
   "schema_version": 1,
   "id": "runaway-distance-unregistered",
   "title": {
-    "zh": "失控",
-    "en": "Runaway"
+    "en": "Runaway and the unregistered distance to the break",
+    "zh": "失控与不被识的断裂距离"
   },
   "kind": "theorem",
   "status": "recorded-checked",
@@ -383,8 +383,8 @@
       "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
     },
     {
-      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“失控：每个经识、其余固定的策略保持支持就永不动用它不观察的较多储量；断裂之前，断裂还有多远不被识”",
-      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Runaway: every policy through registration, with the rest fixed, that keeps its support never uses a larger stock it does not observe; before the break, how far off the break is does not register”"
+      "zh": "2026-10-14 M4，按 Ren“short titles for the spine records: yes”：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“失控：每个经识、其余固定的策略保持支持就永不动用它不观察的较多储量；断裂之前，断裂还有多远不被识”整合者随后把短标题由“失控”改为“失控与不被识的断裂距离”，使其更准确地指称该成果。",
+      "en": "2026-10-14 M4, following Ren's “short titles for the spine records: yes”: short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Runaway: every policy through registration, with the rest fixed, that keeps its support never uses a larger stock it does not observe; before the break, how far off the break is does not register” The integrator then adjusted the short title from “Runaway” to “Runaway and the unregistered distance to the break” to name the result more exactly."
     }
   ]
 }
