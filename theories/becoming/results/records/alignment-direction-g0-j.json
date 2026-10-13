@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "alignment-direction-g0-j",
   "title": {
     "zh": "G0/J 的 AI 对齐方向应用",
@@ -8,8 +8,8 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T23:00:00+00:00",
+  "statement": {
     "zh": "既有实践原则在有根据的 AI 对应下支持生成、纠正、交接与适当结束，并保留能力增长的真实好处和损失。",
     "en": "With warranted AI correspondence, the practical principles support generative development, correction, transfer and appropriate ending while retaining capability growth’s real benefits and losses."
   },
@@ -66,22 +66,39 @@
       }
     }
   ],
-  "counterexamples": [
+  "counterexamples": [],
+  "does_not_show": [
     {
-      "path": "theories/becoming/chapters/ALIGNMENT-DIRECTION.md",
-      "detail": {
-        "zh": "完成的是方向论证；不证明必然服从、部署可靠性或 G0 的无公理必然性。",
-        "en": "The completed result is a direction argument; it proves neither inevitable compliance, deployment reliability nor axiom-free necessity of G0."
-      }
+      "zh": "方向论证不证明必然服从。",
+      "en": "The direction argument does not prove inevitable compliance.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不证明部署可靠性。",
+      "en": "It does not prove deployment reliability.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "不证明 G0 的无公理必然性。",
+      "en": "It does not prove axiom-free necessity of G0.",
+      "kind": "scope"
     }
   ],
-  "limitations": {
-    "zh": "完成的是方向论证；不证明必然服从、部署可靠性或 G0 的无公理必然性。",
-    "en": "The completed result is a direction argument; it proves neither inevitable compliance, deployment reliability nor axiom-free necessity of G0."
-  },
+  "progress": [
+    {
+      "zh": "公开推理链：生生的正面意义（G0）→ 有根据的比较（J1–J4）→ 实践要求 → AI 对齐方向及其修订条件；实际对应 E 含证据充分性与规范根据。",
+      "en": "Disclosed chain: positive significance of living and further generation (G0) → warranted comparison (J1–J4) → practical requirements → AI direction and revision conditions; E covers evidential adequacy and normative warrant.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#1-result-and-inference-advanced"
+    },
+    {
+      "zh": "构造的贯通 AI 案例：交接优于扩张与保留，扩张的真实增益保留；只有承诺而无交付的接替不覆盖需要；交叉基本损失不排序。",
+      "en": "Constructed AI case: transfer outranks expansion and preservation while expansion's real gain is kept; a promised successor without delivery fails coverage; crossed basic losses stay unranked.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md#3-exact-mathematical-scope"
+    }
+  ],
   "validation_scope": {
-    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。本次仅登记。",
-    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. This turn only registers that evidence."
+    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。",
+    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits."
   },
   "references": [
     {
@@ -162,6 +179,20 @@
     {
       "zh": "2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X5、P4）修正证据行与关联说明：Lean 未建模优化，只比较一步计数；“J2 不由 G0 推出”改为“J2 不由 C 推出（G0 不约束排序）”。本论证与范围不变。",
       "en": "2026-10-09: evidence line and related details corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X5, P4): Lean models no optimization, only a one-step count; \"J2 does not follow from G0\" becomes \"J2 does not follow from C (G0 does not constrain ordering)\". This argument and its scope are unchanged."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句（与原唯一“反例”逐字相同，实为范围边界）拆为 3 项分类“未表明”，重复的反例条目并入其中；“完成的是方向论证”由种类与状态表达；证据中的“本次仅登记”移入沿革（见第一条）；2 行“已接通”链接整合研究第1、3节。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence (verbatim identical to the former only “counterexample”, which was a scope boundary) became 3 typed does-not-show items, absorbing that duplicate entry; “the completed result is a direction argument” is carried by kind and status; “this turn only registers that evidence” moved from the evidence to history (see the first entry); 2 progress lines link sections 1 and 3 of the integration study. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/alignment-direction-g0-j.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/b50f9d9b48950cdf/alignment-direction-g0-j.json",
+      "sha256": "b50f9d9b48950cdf518a57b8a9669d782a994affc195a2321ead910d72679701",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ],
   "overview": {

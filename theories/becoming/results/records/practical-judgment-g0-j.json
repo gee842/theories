@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "practical-judgment-g0-j",
   "title": {
     "zh": "G0/J 下的一般实践判断",
@@ -8,8 +8,8 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T11:35:03.770836+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T23:15:00+00:00",
+  "statement": {
     "zh": "G0 加公开 J1–J4 与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
     "en": "G0 with explicit J1–J4 and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
   },
@@ -24,8 +24,8 @@
     }
   ],
   "correspondence": {
-    "zh": "角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。P95 将支承对应具体化为实际需要时段、过渡中的接续、替代覆盖与共同可行；回程、焦点存续及终点相同各不足以独自认证共同修复。",
-    "en": "Roles arise through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty. P95 specifies support correspondence through actual need windows, continuation through transition, replacement coverage and joint feasibility; return, focal persistence and equal endpoints alone do not certify common repair."
+    "zh": "角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。支承对应具体化为实际需要时段、过渡中的接续、替代覆盖与共同可行；回程、焦点存续及终点相同各不足以独自认证共同修复。",
+    "en": "Roles arise through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty. Support correspondence is specified through actual need windows, continuation through transition, replacement coverage and joint feasibility; return, focal persistence and equal endpoints alone do not certify common repair."
   },
   "canonical_source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
   "aliases": [
@@ -104,13 +104,41 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。支承关系给出实践理由的具体对象，不独自决定优先强度；需要时段、过渡、替代覆盖和真实损失仍须对应。",
-    "en": "J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, without a universal utility score. Support relations specify the object of a practical reason but do not independently determine its priority; need windows, transition, replacement coverage and real losses still require correspondence."
-  },
+  "does_not_show": [
+    {
+      "zh": "支承关系给出实践理由的具体对象，不独自决定优先强度。",
+      "en": "Support relations specify the object of a practical reason but do not independently determine its priority.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "需要时段、过渡、替代覆盖和真实损失仍须对应。",
+      "en": "Need windows, transition, replacement coverage and real losses still require correspondence.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "不给出完整的混合排序。",
+      "en": "It does not supply a complete mixed ranking.",
+      "kind": "scope"
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "progress": [
+    {
+      "zh": "补上的桥接：首次有损比较、有限牺牲上限、四种回应、责任分配、共同义务、实际接替、冲突与不完全证据、忠实修订，各有原则及限定。",
+      "en": "Bridges closed: first mixed comparison, finite sacrifice limit, the four responses, responsibility, joint obligations, actual succession, conflict under imperfect evidence and faithful revision each receive principles with qualifications.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md#2-what-closes-the-previously-named-gaps"
+    },
+    {
+      "zh": "及时接续：回程等级、替代与实际交接给出按需要的支承、替代覆盖与有范围的比较理由；有利理由与 J2 优先分开。",
+      "en": "Timely continuation: return grades, substitution and actual handoff give need-relative support, replacement coverage and scoped comparison reasons; a favorable reason is kept distinct from J2 priority.",
+      "source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md#timely-continuation-and-support"
+    }
+  ],
   "validation_scope": {
-    "zh": "既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。P95 是对既有已检查回程、替代与交接结果的解释性应用及作者反审；无新数学、编译、跨模块形式适配或新增独立验收。",
-    "en": "Existing independent completion review accepts the explicit-commitment general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. P95 adds interpretive application and author counterreview of checked return, substitution and handoff results; no new mathematics, compilation, formal adapter or independent acceptance."
+    "zh": "既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。及时接续部分是对既有已检查回程、替代与交接结果的解释性应用及作者反审；无新数学、编译、跨模块形式适配或新增独立验收。",
+    "en": "Existing independent completion review accepts the explicit-commitment general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. The timely-continuation part is interpretive application and author counterreview of checked return, substitution and handoff results; no new mathematics, compilation, formal adapter or independent acceptance."
   },
   "references": [
     {
@@ -187,8 +215,8 @@
     }
   ],
   "next_delta": {
-    "zh": "及时接续、替代覆盖及有范围比较的应用连接已补入。接续检验已有 BC/LC/LR 对具体交叉基本损失的覆盖与剩余比较前提；不重开一般责任或交接原则，也不把完整混合排序或整体零实质公理奠基视为已完成。",
-    "en": "The application connection for timely continuation, replacement coverage and scoped comparison is supplied. Next test existing BC/LC/LR coverage of concrete crossed basic losses and identify any remaining comparison premise; do not reopen general responsibility or handoff principles, or claim complete mixed ranking or a whole zero-substantive-axiom foundation."
+    "zh": "检验已有 BC/LC/LR 对具体交叉基本损失的覆盖，并识别剩余的比较前提；复用一般责任与交接原则。",
+    "en": "Test existing BC/LC/LR coverage of concrete crossed basic losses and identify any remaining comparison premise, reusing the general responsibility and handoff principles."
   },
   "history": [
     {
@@ -210,6 +238,20 @@
     {
       "zh": "2026-10-13，P95：在原研究§85及章节§2.1补上及时接续与支承理由的应用及作者反审；复用回程、替代与实际交接证明，保留 G0 折叠后的条件接口与 J 的强度。不新增独立成果或数学证明。",
       "en": "2026-10-13, P95: added application and author counterreview of timely continuation and support warrant in the existing study §85 and chapter §2.1; reuses return, substitution and actual handoff proofs, retaining the folded G0 interface and J strengths. No new independent result or mathematical proof."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句与唯一反例逐字相同，由反例承担（反例保留，因交叉基本损失不排序有 competing_claims_incomparable 见证）；第二句拆为 2 项分类“未表明”；下一步中的“已补入”成为第二行“已接通”，“不重开一般责任或交接原则”改写为“复用”，“不视为已完成完整混合排序”成为第三项“未表明”，“整体零实质公理奠基”由通用边界 zero-axiom-target-open 承担；对应与证据中的轮次编号 P95 改为“支承对应”“及时接续部分”，内容不变。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/da5e1ef2a899de9d/practical-judgment-g0-j.json",
+      "sha256": "da5e1ef2a899de9de8b4d9e988c3b5e9cf4aeec4e6f6091471a2187ad24c2ce2",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ],
   "overview": {

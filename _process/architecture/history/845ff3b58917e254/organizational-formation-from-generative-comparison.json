@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "organizational-formation-from-generative-comparison",
+  "title": {
+    "zh": "完整生成比较下的组织形成要求",
+    "en": "Required organization under whole generative comparison"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T18:34:30.570680+00:00",
+  "claim": {
+    "zh": "在有限非空的合格接续中，若每种缺少某项组织关系的接续都有充分更好的合格构造，则所有未被击败的选择都包含该关系；这可支持建设或增强共同能力而不预定唯一承载。",
+    "en": "In a finite nonempty eligible range, if every continuation lacking an organizational relation has a strictly better eligible construction, every undefeated choice includes that relation. This can warrant building or strengthening shared capacity without fixing one carrier."
+  },
+  "hypotheses": [
+    {
+      "zh": "G0、明确 J1–J4 与完整关系对应；不是从一元本体单独推出伦理。",
+      "en": "G0, explicit J1–J4 and complete relational correspondence; ethics is not deduced from monism alone."
+    },
+    {
+      "zh": "有限非空的合格范围、严格传递比较、每个缺失情形的实际改善见证；规范资格与基本分类仍须辩护。",
+      "en": "A finite nonempty eligible range, irreflexive transitive comparison and actual improvement witnesses for every deficient case; normative eligibility and basic classifications require substantive warrant."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一支持历史形成连接、保留基础并承担休闲损失；甲乙是作用路径。具体模型的合格谓词只表示物理可行，不能独自认证现实权限。",
+    "en": "One support history forms links, retains a basis and bears an opportunity loss; the two carriers are routes. Concrete eligibility means physical feasibility only and does not certify real authority."
+  },
+  "canonical_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "PracticalJudgment.finite_frontier 与 dominated_excluded 的输出经 formation_required_of_improvable_absence 接成 Required；规范解释继承公开 J 承诺。",
+        "en": "PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments."
+      }
+    },
+    {
+      "id": "alignment-direction-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用已完成的跨智能方向，推进组织形成的具体条件。",
+        "en": "Reuses the completed cross-intelligence direction to advance the conditions of organizational formation."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "classification-robust-generative-comparison",
+      "detail": {
+        "zh": "后续分类稳健命题补足一类未定分类下的改善输入；不替换原组织结果。",
+        "en": "The later robust-classification result supplies improvement inputs in unsettled cases without replacing the original organizational result."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "detail": {
+        "zh": "过度建设实际耗尽生活基础；相同的建设报告不能判定基础。增加真实余量可修复本例的观察遗漏。",
+        "en": "Overbuilding actually depletes the living basis; identical construction reports fail to classify it. Faithful retained-amount information repairs this local omission."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "尚未由一般生成结构充分推出陌生新生活的基本内容；无经验验证、无必然服从、无完整机构权限推导。已有公理与条件成果保持有效范围。",
+    "en": "General generative structure has not supplied full basic-content correspondence for unfamiliar new living. No empirical validation, inevitable compliance or complete institutional authority derivation; existing axioms and conditional results retain their scope."
+  },
+  "validation_scope": {
+    "zh": "13项新 Lean 定理声明／29项声明审计；另重编30项继承定理／46项审计。含应用及定义对应，不是13个规范公理证明。作者反审；无独立 agent 验收。",
+    "en": "13 new Lean theorem declarations/29 declaration audits, with 30 inherited theorems/46 audits separately rebuilt. Includes applications and a definitional identity, not 13 normative-axiom proofs. Author counterreview; no independent-agent acceptance."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+      "role": "statement",
+      "sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "role": "review",
+      "sha256": "e5ef4dbdb77f657b4daa0121f08596a3d62e02af8777cd5d7e0404b44ededd42",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "role": "proof",
+      "sha256": "613cf786d49800159d28adda6f56cded41db542bd54c24f9732f5324ead47c05",
+      "declarations": [
+        "RelationalOrganization.formation_required_of_improvable_absence",
+        "RelationalOrganization.coordination_is_required",
+        "RelationalOrganization.neither_named_route_is_required",
+        "RelationalOrganization.no_construction_report_only_basis_judge"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
+      "role": "receipt",
+      "sha256": "404cd5af36e8e726fe3596ea69965b7ee56f33d7640ec3f69464c8593d8551f1",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "role": "provenance",
+      "sha256": "e4971470ddececbd5e6d7800a4fb7ae1f3708e680ab6cef8485820bdf31c61da",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json",
+      "sha256_pointer": "/source_sha256/RelationalOrganization",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "分类稳健比较现已接通一类基本地位未定的形成要求，直接复用新成果。具体方案因真实生活作用分类而改变时，仍需落实会改变决定的实质对应；不把全部陌生生活分类设为建设前提。",
+    "en": "Robust classification now supplies formation requirements in a class of unsettled-basic-status cases; reuse the new result. Where living-role classification changes implementation, establish decision-relevant substantive correspondence without requiring classification of all unfamiliar living before construction."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：接续生成优先纠正，形成有范围的规范推论及新 Lean 组合；迁移该主张为唯一成果身份，历史来源与反例保留。",
+      "en": "2026-10-08: extends the generative-first correction with a scoped normative argument and new Lean composition; migrates this claim to one result identity while retaining historical sources and countercases."
+    },
+    {
+      "zh": "2026-10-08：核对原理论与研究为保留前缀、共享指示的逆向保留及市场会话新增范围后，接入分类稳健后续并缩小 next_delta；原定理及历史回执不改写。",
+      "en": "2026-10-08: verified original theory/study prefixes, inverse preservation of the shared directive and the concurrent market-session scope; connected robust classification and narrowed next_delta. Original theorems and receipts are unchanged."
+    },
+    {
+      "zh": "2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。",
+      "en": "2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13：核读共享研究新增 P95 §85 的及时接续应用；此前全部段落原样保留，本成果主张与冻结证明范围不变。仅更新所读共享来源版本。",
+      "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "context-sensitive-updating-correspondence",
   "title": {
     "zh": "情境选择性更新的公开数据对应",
@@ -8,8 +8,8 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-08T18:30:05.769357+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T22:00:00+00:00",
+  "statement": {
     "zh": "24人公开数据复算支持训练前后扰动方向效应增强及训练后的线索效应；线索效应的增强未明确成立，有限后段中其作用较弱。",
     "en": "Reanalysis of 24 participants supports an increased perturbation contrast across training and a post-training cue effect; an acquired increase in the cue effect is uncertain and its later finite-window effect is weaker."
   },
@@ -53,10 +53,35 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "未识别唯一潜在机制、无限收敛、完整情境理解、任意新概念、自主最终目标或完整跨尺度生物联合验证。",
-    "en": "Does not identify a unique latent mechanism, infinite convergence, complete situational understanding, arbitrary new concepts, autonomous final goals or full cross-scale biological joint validation."
-  },
+  "does_not_show": [
+    {
+      "zh": "未识别唯一潜在机制。",
+      "en": "It does not identify a unique latent mechanism.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "未识别无限收敛。",
+      "en": "It does not identify infinite convergence.",
+      "kind": "scope"
+    },
+    {
+      "zh": "未识别完整情境理解、任意新概念或自主最终目标。",
+      "en": "It does not identify complete situational understanding, arbitrary new concepts or autonomous final goals.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "未提供完整跨尺度生物联合验证。",
+      "en": "It does not provide full cross-scale biological joint validation.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "更新对应：24人复算检验线索×扰动对比、其训练前后变化及有限持续性，把已形成的实验历史接到理论对形成、当前作用与持续适当性的区分。",
+      "en": "Updating correspondence: the 24-person reanalysis tests cue × perturbation contrasts, their pre/post changes and finite persistence, linking experimental history to the distinction of formation, current use and continuing adequacy.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#43-acquired-context-enters-subsequent-expressed-updating"
+    }
+  ],
   "validation_scope": {
     "zh": "51,152行、7,008测量、2,304组三试次；全部分组与作者代码的另一翻译吻合，五个发表统计量吻合。48个原始片段及一个完整原文件核验；实质自审，无独立样本、独立审查或新Lean定理。",
     "en": "51,152 rows, 7,008 measurements and 2,304 triplets; grouping matches a separate translation of author code and five published statistics. Verify 48 original fragments and one complete original; substantive self-review, no independent sample/review or new Lean theorem."
@@ -108,6 +133,20 @@
     {
       "zh": "2026-10-09：按Ren继续利用公开数据的指令，接续16人恢复研究，完成24人情境更新对应并保留不支持单调增强的结果。",
       "en": "2026-10-09: followed Ren’s direction to continue with public data, extending the 16-person recovery study with complete 24-person updating correspondence while preserving results against monotonic strengthening."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 4 项分类“未表明”；1 行“已接通”链接整合研究中的更新对应。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the integration study's updating correspondence. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/context-sensitive-updating-correspondence.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/f6253c93a1da6067/context-sensitive-updating-correspondence.json",
+      "sha256": "f6253c93a1da6067ec635acd54f568e4fa230e7e1a6c12d514e2738e4420895f",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

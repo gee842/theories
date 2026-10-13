@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "situated-recovery-empirical-correspondence",
   "title": {
     "zh": "情境恢复的公开数据对应",
@@ -8,8 +8,8 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-08T13:13:07.204351+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T21:25:00+00:00",
+  "statement": {
     "zh": "16位参与者的公开记录支持有限阶段内的平均反应保留，并限制简单时间曲线的预测适用范围；较复杂模型没有普遍胜出。",
     "en": "Public records from 16 participants support finite mean response retention and constrain the predictive scope of simple temporal curves; greater model complexity is not uniformly superior."
   },
@@ -44,10 +44,35 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "未建立无限时间极限、独占机制、完整情境理解、伦理收敛或跨尺度生物联合验证。",
-    "en": "Does not establish an infinite-time limit, unique mechanism, complete situational understanding, ethical convergence or joint cross-scale biological validation."
-  },
+  "does_not_show": [
+    {
+      "zh": "所支持的是有限阶段内的保留，未建立无限时间极限。",
+      "en": "Retention is supported over finite stages; no infinite-time limit is established.",
+      "kind": "scope"
+    },
+    {
+      "zh": "曲线比较未建立独占机制。",
+      "en": "The curve comparison does not establish a unique mechanism.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "平均反应保留未建立完整情境理解或伦理收敛。",
+      "en": "Mean response retention does not establish complete situational understanding or ethical convergence.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "未建立跨尺度生物联合验证。",
+      "en": "It does not establish joint cross-scale biological validation.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "公开数据：全部16位参与者的原始恢复记录按参与者分析，在六篇文献整合之上加入实际测量对应与留后预测评估。",
+      "en": "Public data: all 16 original recovery records are analysed at participant level, extending the six-study synthesis with actual measurement correspondence and held-out forecast evaluation.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#41-public-records-now-test-a-specific-correspondence"
+    }
+  ],
   "validation_scope": {
     "zh": "18个来源文件保存；16份MAT核对官方哈希；5,440行、2,656次测量、800次留后预测通过数据与算术检查。实质自审完成，无独立实验、独立agent审查或新Lean定理。",
     "en": "18 original files retained; 16 MAT files match deposited hashes; 5,440 rows, 2,656 measurements and 800 held-out predictions pass data and arithmetic checks. Substantive self-review completed; no independent experiment, independent-agent review or new Lean theorem."
@@ -97,6 +122,20 @@
     {
       "zh": "2026-10-09：已读并整合三个共享来源中新增的24人更新研究；16人恢复主张、原分析及原科学回执不变，新增主张另列，不重复计数。",
       "en": "2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 4 项分类“未表明”；1 行“已接通”链接研究中公开数据分析的整合。主张、前提、状态、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations sentence was split into 4 typed does-not-show items; one progress line links the study's integration of the public-data analysis. No claim, premise, status, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/situated-recovery-empirical-correspondence.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5243779093eba69b/situated-recovery-empirical-correspondence.json",
+      "sha256": "5243779093eba69b2cd5d4ad95f4a420d4d7e8c28f89825ac232c8144b76bb8f",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

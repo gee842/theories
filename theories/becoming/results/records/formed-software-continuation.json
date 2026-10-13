@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "formed-software-continuation",
   "title": {
     "zh": "共同软件活动的接续与依存限度",
@@ -8,10 +8,10 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
-  "claim": {
-    "zh": "LibreOffice的选定历史说明部分改组和过渡承担可以支撑活动先于最终法人完成；Narwhal的日期化接续进一步显示，运行改造后仍可保留原API依存，其作者对将来改价的顾虑进入月度承诺安排。Apollo的终止和不同旧承担同时保留。",
-    "en": "Selected LibreOffice history supports activity under partial reorganization before final incorporation; Narwhal’s dated continuation further shows retained API dependence after operational adaptation, with stated concern about future repricing entering monthly commitments. Apollo’s ending and different inherited commitments remain."
+  "reviewed_at_utc": "2026-10-13T23:30:00+00:00",
+  "statement": {
+    "zh": "LibreOffice的选定历史说明部分改组和过渡承担可以支撑活动先于最终法人完成；Narwhal的日期化接续进一步显示，运行改造后仍可保留原API依存，其作者对将来改价的顾虑进入月度承诺安排。",
+    "en": "Selected LibreOffice history supports activity under partial reorganization before final incorporation; Narwhal’s dated continuation further shows retained API dependence after operational adaptation, with stated concern about future repricing entering monthly commitments."
   },
   "hypotheses": [
     {
@@ -83,10 +83,45 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "不是新的普遍规律、数值相变、最低过渡时间、因果识别或强零公理奠基。日期化的现取声明不是同期冻结证据或事前预测；未知协商与账目不能补写。运行适应、替换具体依存及改变后续改组控制需分别证明；当前只有规则影响的下游对应，完整返回闭环仍缺。",
-    "en": "Not a new universal law, numerical phase transition, minimum transition time, causal identification or strong axiom-free foundation. Dated current statements are not frozen contemporaneous evidence or prospective predictions; undisclosed negotiations and ledgers cannot be supplied. Operational adaptation, replacement of a dependency and changed control over later adaptation need separate evidence; only downstream rule influence is traced, with the return loop still missing."
-  },
+  "does_not_show": [
+    {
+      "zh": "不是新的普遍规律、数值相变或最低过渡时间。",
+      "en": "It is not a new universal law, numerical phase transition or minimum transition time.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不是因果识别或强零公理奠基。",
+      "en": "It is neither a causal identification nor a strong axiom-free foundation.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "日期化的现取声明不是同期冻结证据或事前预测；未知协商与账目不能补写。",
+      "en": "Dated current statements are not frozen contemporaneous evidence or prospective predictions; undisclosed negotiations and ledgers cannot be supplied.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "运行适应、替换具体依存及改变后续改组控制需分别证明。",
+      "en": "Operational adaptation, replacement of a dependency and changed control over later adaptation need separate evidence.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "当前只有规则影响的下游对应，完整返回闭环仍缺。",
+      "en": "Only downstream rule influence is traced; the return loop is missing.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "经过渡关系的形成：新法人完成前，发布与另一发行关系已由过渡协会的承担承接；改组能力取决于关键关系能否保留、承接或重建。",
+      "en": "Formation through transition: releases and another distribution relation proceed under interim association support before incorporation; reorganization capacity depends on retaining, carrying or rebuilding the key relations.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#43-理论推进形成可以由过渡关系支撑而不必等待最终组织完成"
+    },
+    {
+      "zh": "保留的依存：客户端在原准入关系中改造运行后继续；平台持续接入条件经作者明示理由进入其承诺期限。",
+      "en": "Retained dependence: a client continues after operational adaptation within the original access relation; continuing access conditions enter its commitment horizon through the author's stated reasons.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#49-新连接规则变动进入了进一步承诺的形成"
+    }
+  ],
   "validation_scope": {
     "zh": "原七份HTML检查保持；新增八份来源文档的表示、哈希、作者主帖锚点及日期次序核对。作者反审，平台和开发者声明保留利害位置；无新Lean、独立agent、合同审计或软件执行。",
     "en": "Original seven-HTML checks retained; eight additional documents are checked for representation, hashes, main-author anchors and milestone order. Author counterreview retains operator/developer interests; no new Lean, independent agent, contract audit or software execution."
@@ -233,8 +268,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "形成与保留依存的两种接续对应已完成。下一步需具体过渡契约／实施记录才能识别足够时间；完整元吸引子机制另需下游适应或退出返回到规则维持和修改的证据。既有数量化适配仍须先给出单位与速率根据。",
-    "en": "Formation and retained-dependence correspondences are complete. Identifying sufficient transition time requires specific transition agreements and implementation evidence; a full meta-attractor mechanism separately requires the return from downstream adaptation or exit to rule maintenance and revision. Quantitative adaptation still needs warranted units and rates."
+    "zh": "以具体过渡契约／实施记录识别足够时间；另行追踪下游适应或退出返回到规则维持和修改的证据，以检验完整元吸引子机制；数量化适配先给出单位与速率根据。",
+    "en": "Identify sufficient transition time from specific transition agreements and implementation evidence; separately, trace the return from downstream adaptation or exit to rule maintenance and revision to test a full meta-attractor mechanism; warrant units and rates before quantitative adaptation."
   },
   "history": [
     {
@@ -244,6 +279,20 @@
     {
       "zh": "2026-10-09：原题“共同软件活动形成独立接续”的同一评估接续API变化史。新增五篇作者帖，复核两份旧声明；明确现取／后改限制，并把存续与改组控制分开。旧LibreOffice材料、原证明和失败情形保留，不新计结果。",
       "en": "2026-10-09: extends the same assessment previously titled “Independent continuation formed within shared software activity” with API-change history. Five developer posts and two reread statements distinguish continuation from reorganization control, with current-retrieval/editing limits. LibreOffice evidence, earlier proofs and failures remain; no additional result counted."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张第一句成为陈述，第二句（Apollo 的终止和不同旧承担同时保留）由反例与第三条前提承担；限制句拆为 5 项分类“未表明”；下一步第一句（两种接续对应已完成）成为 2 行带锚点的“已接通”，其余改为正面表述，内容不变。主张、前提、状态、依赖、关联、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement, and its second (Apollo's ending and different inherited commitments remain) is carried by the counterexample and the third hypothesis; the limitations became 5 typed does-not-show items; the next step's first sentence (both continuation correspondences complete) became 2 anchored progress lines, and the rest is restated positively with the same content. No claim, premise, status, dependency, related link, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/formed-software-continuation.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/684c3131cc0de0e5/formed-software-continuation.json",
+      "sha256": "684c3131cc0de0e58dcb6cab2ed5b4c0ffab827253902147f4c4d79db8a041dd",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

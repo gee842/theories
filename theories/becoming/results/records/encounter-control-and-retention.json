@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "encounter-control-and-retention",
   "title": {
     "zh": "经历控制与保留使用的经验范围",
@@ -8,10 +8,10 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
-  "claim": {
-    "zh": "公开CuriGaze正式纳入75人、451试次的复算中，主动条件相对配对条件的目标注视变化差为−1.34个百分点，常规95% Welch区间为[−10.38,+7.69]；未建立保留优势或等效。它约束选择自动产生学习优势的经验对应。",
-    "en": "Reanalysis of the public CuriGaze inclusion sample, 75 participants and 451 trials, gives Curiosity−Yoked target-looking change of −1.34 percentage points, conventional 95% Welch interval [−10.38,+7.69]. It establishes neither a retention advantage nor equivalence, constraining an automatic selection-to-learning-advantage correspondence."
+  "reviewed_at_utc": "2026-10-13T22:25:00+00:00",
+  "statement": {
+    "zh": "公开CuriGaze正式纳入75人、451试次的复算中，主动条件相对配对条件的目标注视变化差为−1.34个百分点，常规95% Welch区间为[−10.38,+7.69]。它约束选择自动产生学习优势的经验对应。",
+    "en": "Reanalysis of the public CuriGaze inclusion sample, 75 participants and 451 trials, gives Curiosity−Yoked target-looking change of −1.34 percentage points, conventional 95% Welch interval [−10.38,+7.69]. This constrains an automatic selection-to-learning-advantage correspondence."
   },
   "hypotheses": [
     {
@@ -61,10 +61,45 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "不识别唯一心理机制、社会原因、长期记忆、意识或演化起源；75人主要分析与77人敏感性分开，区间不作顺序设计保证。",
-    "en": "Does not identify a unique psychological mechanism, social cause, long-term memory, consciousness or evolutionary origin. The 75-person primary analysis and 77-person sensitivity remain separate; intervals have no sequential-design guarantee."
-  },
+  "does_not_show": [
+    {
+      "zh": "未建立保留优势或等效。",
+      "en": "It establishes neither a retention advantage nor equivalence.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不识别唯一心理机制或社会原因。",
+      "en": "It does not identify a unique psychological mechanism or social cause.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不识别长期记忆、意识或演化起源。",
+      "en": "It does not identify long-term memory, consciousness or evolutionary origin.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "后续使用：从原始汇总与纳入名单复算后续目标注视，接入既有研究；选择由此受到结果层约束，下一目标为经验可靠性／协调变化→证据使用改变→后来的绑定、迁移与纠正。",
+      "en": "Later use: target looking reconstructed from original summaries and the inclusion log constrains selection at outcome level; next: experienced reliability/coordination changes → changed evidence use → later binding, transfer and correction.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#20-counterreview-the-higher-order-relation-that-remains-to-identify"
+    },
+    {
+      "zh": "来源重释：取得的来源关系以另一路径生成旧命名记录的绑定候选；历史适用范围的反例具体化后续连接。",
+      "en": "Source reinterpretation: acquired source relations generate binding alternatives for old naming records through an additional route; a historical-applicability counterexample sharpens the next connection.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#23-substantive-review-and-the-next-unresolved-connection"
+    },
+    {
+      "zh": "历史适用范围：组合与反审把接续问题转向来源—时序保持及持续性假设的经验识别。",
+      "en": "Historical applicability: its composition and counterreview turn the continuation toward empirical identification of source–time retention and persistence assumptions.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#26-counterreview-and-the-next-discriminating-burden"
+    },
+    {
+      "zh": "五篇原典：区分取得、保持与使用；原典已约束自动迁移，但未识别唯一机制或演化史。",
+      "en": "Five primary sources: formation, retention and use are distinguished; primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#29-revised-connection-counterreview-and-discriminating-observations"
+    }
+  ],
   "validation_scope": {
     "zh": "八个原始小文件与OSF哈希匹配；清理名单来自已验证压缩包。独立CSV/Decimal运算重构比例、参与者均值、方差、ANOVA及Welch算术，分布函数共用SciPy。作者实质反审完成，无独立agent验收或新Lean证明。",
     "en": "Eight small originals match OSF hashes; the cleaned log comes from a verified archive. Separate CSV/Decimal calculations reconstruct proportions, participant means, variances, ANOVA and Welch arithmetic, sharing SciPy distribution functions. Substantive author counterreview completed; no independent-agent acceptance or new Lean proof."
@@ -103,8 +138,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。",
-    "en": "Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history."
+    "zh": "在保留的既有条件连接之上，于匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。",
+    "en": "Building on the preserved conditional connections, identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement."
   },
   "history": [
     {
@@ -122,6 +157,20 @@
     {
       "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张的数值结果与“约束”句成为陈述，“未建立保留优势或等效”成为第一项“未表明”；限制句第一句拆为另 2 项分类“未表明”，第二句（75人主要分析与77人敏感性分开、区间无顺序设计保证）与前提第1、2条重复，由前提承担；上方四条沿革所述已接通连接各成 1 行带锚点的“已接通”，下一步第三句移入第四行。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's numerical result and its “constrains” clause became the statement, and “establishes neither a retention advantage nor equivalence” the first does-not-show item; the first limitations sentence became 2 more typed items, and the second (75-person primary analysis kept apart from the 77-person sensitivity; intervals without a sequential-design guarantee) repeats hypotheses 1 and 2, which carry it; the connections described in the four history entries above each became one anchored progress line, and the next step's third sentence moved to the fourth. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/encounter-control-and-retention.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/b2563eeef5041aa3/encounter-control-and-retention.json",
+      "sha256": "b2563eeef5041aa365dfea25cc3d8d8ceb5d64efcd00fb18e7f630d461c888f0",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

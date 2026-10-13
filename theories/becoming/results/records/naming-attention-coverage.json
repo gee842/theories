@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "naming-attention-coverage",
   "title": {
     "zh": "命名与所指注视的公开数据边界",
@@ -8,8 +8,8 @@
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T22:15:00+00:00",
+  "statement": {
     "zh": "36名婴儿的1,508次公开命名记录中，三秒窗口有467次记录到其他物体注视而无所指注视；35名婴儿出现此情况。它限制命名自动确保所指注视的测量对应。",
     "en": "Among 1,508 public naming records from 36 infants, 467 nominal three-second windows contain other-object gaze with zero target gaze; 35 infants show such cases. This limits automatic naming-to-target-gaze measurement correspondence."
   },
@@ -53,13 +53,53 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "不识别错误学习、独占算法、社会协调的发育因果、意识或演化心理；不是论文全部分析的精确复现，也不更改既有条件定理。",
-    "en": "Does not identify mislearning, a unique algorithm, developmental causation of coordination, consciousness or evolutionary psychology. Not an exact replication of all published analyses and does not change existing conditional theorems."
-  },
+  "does_not_show": [
+    {
+      "zh": "不识别错误学习。",
+      "en": "It does not identify mislearning.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "不识别独占算法或社会协调的发育因果。",
+      "en": "It does not identify a unique algorithm or the developmental causation of coordination.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不识别意识或演化心理。",
+      "en": "It does not identify consciousness or evolutionary psychology.",
+      "kind": "scope"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "测得边界的要求：合作命名未被否证；受限的是“每次命名都含所指注视”的测量对应。下一连接具体化为协调线索→经历接纳／加权→保留的指称与纠正。",
+      "en": "What the boundary requires: cooperative naming is not disproved; the measurement correspondence that every naming includes target gaze is limited. Next: coordination cues → encounter admission/weighting → retained reference and correction.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#18-review-what-the-measured-boundary-requires-next"
+    },
+    {
+      "zh": "后续保留：带后续识别测量的公开数据加入经验约束（encounter-control-and-retention），本项主张、证明与反例不变；下一对应为经验可靠性改变后对新证据的使用。",
+      "en": "Later retention: a public dataset with a later recognition measure adds an empirical constraint (encounter-control-and-retention), leaving this claim, proof and failures unchanged; next is evidence use after experienced reliability changes.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#20-counterreview-the-higher-order-relation-that-remains-to-identify"
+    },
+    {
+      "zh": "来源重释：取得的来源关系以另一路径生成旧命名记录的绑定候选；历史适用范围的反例具体化后续连接。",
+      "en": "Source reinterpretation: acquired source relations generate binding alternatives for old naming records through an additional route; a historical-applicability counterexample sharpens the next connection.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#23-substantive-review-and-the-next-unresolved-connection"
+    },
+    {
+      "zh": "历史适用范围：组合与反审把接续问题转向来源—时序保持及持续性假设的经验识别。",
+      "en": "Historical applicability: its composition and counterreview turn the continuation toward empirical identification of source–time retention and persistence assumptions.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#26-counterreview-and-the-next-discriminating-burden"
+    },
+    {
+      "zh": "五篇原典：区分取得、保持与使用；原典已约束自动迁移，但未识别唯一机制或演化史。",
+      "en": "Five primary sources: formation, retention and use are distinguished; primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#29-revised-connection-counterreview-and-discriminating-observations"
+    }
+  ],
   "validation_scope": {
-    "zh": "8份原始文件匹配OSF哈希；七窗口的八类计数及参与者统计以独立Decimal算法复算通过。实质作者反审完成；无新实验、独立agent验收或新Lean定理。",
-    "en": "Eight original files match OSF hashes. An independent Decimal calculation verifies eight count categories and participant statistics across seven windows. Substantive author counterreview completed; no new experiment, independent-agent acceptance or new Lean theorem."
+    "zh": "8份原始文件匹配OSF哈希；七窗口的八类计数及参与者统计以独立Decimal算法复算通过。实质作者反审完成；无新实验、独立agent验收或新Lean定理。不是论文全部分析的精确复现。",
+    "en": "Eight original files match OSF hashes. An independent Decimal calculation verifies eight count categories and participant statistics across seven windows. Substantive author counterreview completed; no new experiment, independent-agent acceptance or new Lean theorem. Not an exact replication of all published analyses."
   },
   "references": [
     {
@@ -95,8 +135,8 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。",
-    "en": "Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history."
+    "zh": "在保留的既有条件连接之上，于匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。",
+    "en": "Building on the preserved conditional connections, identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement."
   },
   "history": [
     {
@@ -118,6 +158,20 @@
     {
       "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
       "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句拆为 3 项分类“未表明”，“非精确复现”移入证据，“不更改既有条件定理”由依赖说明承担；上方五条沿革所述已接通连接各成 1 行带锚点的“已接通”；下一步第三句移入第五行“已接通”。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence was split into 3 typed does-not-show items, “not an exact replication” moved to the evidence, and “does not change existing conditional theorems” is carried by the dependency note; the connections described in the five history entries above each became one anchored progress line; the next step's third sentence moved to the fifth progress line. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/naming-attention-coverage.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/45318e84ce3a2dd3/naming-attention-coverage.json",
+      "sha256": "45318e84ce3a2dd31b2094aaf40abe112dc7d394dc3987be97c3ae92993a74c3",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

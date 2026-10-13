@@ -1,17 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "constitutive-binding-assessment",
   "kind": "assessment",
   "status": "reviewed-scoped",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-08T18:44:38.578475+00:00",
+  "reviewed_at_utc": "2026-10-13T21:50:00+00:00",
   "title": {
     "zh": "绑定的构成性说明及无前提推广的限度",
     "en": "Constitutive binding and the limits of presuppositionless promotion"
   },
-  "claim": {
-    "zh": "新引用可由引入活动设立；实际承接及代入在内容与认可要求保持时，解释局部根据传递，无需逐次另加认可命题。这项构成性说明没有证明解释它所用的全部元推理资源均已无前提正当化。",
-    "en": "A fresh reference can be instituted by its introduction; actual retention and insertion under unchanged content and assessment explain local support transmission without a fresh endorsement proposition at each use. This account does not justify every metainferential resource used to explain it without presuppositions."
+  "statement": {
+    "zh": "新引用可由引入活动设立；实际承接及代入在内容与认可要求保持时，解释局部根据传递，无需逐次另加认可命题。",
+    "en": "A fresh reference can be instituted by its introduction; actual retention and insertion under unchanged content and assessment explain local support transmission without a fresh endorsement proposition at each use."
   },
   "hypotheses": [
     {
@@ -64,10 +64,40 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "局部论证的完整评估，不是严格无前提元逻辑奠基的完成，也不是其不可能性证明。未建立一般语言、辨认、假设推理和充分根据评估的全套无前提正当性。",
-    "en": "A completed assessment of the local argument, neither completed presuppositionless metalogic nor an impossibility proof. It does not supply comprehensive presuppositionless warrant for language, identification, hypothetical inference and assessment of adequate grounds."
-  },
+  "does_not_show": [
+    {
+      "zh": "这项构成性说明没有证明解释它所用的全部元推理资源均已无前提正当化，不是严格无前提元逻辑奠基的完成。",
+      "en": "The account does not justify every metainferential resource used to explain it without presuppositions; it is not completed presuppositionless metalogic.",
+      "kind": "scope"
+    },
+    {
+      "zh": "未建立一般语言、辨认、假设推理和充分根据评估的全套无前提正当性。",
+      "en": "It does not supply comprehensive presuppositionless warrant for language, identification, hypothetical inference and assessment of adequate grounds.",
+      "kind": "scope"
+    },
+    {
+      "zh": "也不是严格无前提元逻辑奠基的不可能性证明。",
+      "en": "Nor is it an impossibility proof for presuppositionless metalogic.",
+      "kind": "non-implication"
+    }
+  ],
+  "progress": [
+    {
+      "zh": "正面论证：新称谓设立角色，未变的使用保持它，代入保持消费者所指定的依存；每步范围写明。",
+      "en": "Affirmative argument: a fresh designation institutes a role, an unchanged use retains it, and insertion retains the consumer's designated dependence, with each step's scope stated.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#102-the-affirmative-argument-with-each-steps-scope"
+    },
+    {
+      "zh": "对手与路线：保持相关活动的对手及通向更强结论的三条路线逐一评估；均未提供到全套元推理根据的过渡。",
+      "en": "Rivals and routes: target-preserving rivals and three routes to the stronger conclusion are assessed; none supplies the passage to comprehensive warrant for the metainferences used.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#104-three-routes-to-the-stronger-conclusion-actually-assessed"
+    },
+    {
+      "zh": "处置：区分设立、执行、辨认与根据，撤下笼统的“每个绑定须另有最终证书”要求；论证自身所用资源逐项审计。",
+      "en": "Disposition: institution, execution, recognition and warrant are distinguished, retiring the vague demand for a final certificate of every binding; the argument's own resources are audited item by item.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#107-disposition-and-completion-scope"
+    }
+  ],
   "validation_scope": {
     "zh": "作者实质反审及Carroll、Boghossian原典比较；零新增数学声明。复核三份既有Lean实查回执与源码绑定，未重编，未认领独立验收。",
     "en": "Author counterreview and primary-source comparison with Carroll and Boghossian; zero new mathematical claims. Checks three existing Lean receipts against their source bindings, without recompilation or independent acceptance."
@@ -94,13 +124,27 @@
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "严格目标仍缺从局部引用构成到本论证所用元推理资源之充分根据的连接；须正面说明此连接，不能重复代入定理或把能够反对等同接受整套逻辑。",
-    "en": "The strict target still lacks the passage from local reference constitution to adequate warrant for the metainferential resources used here; repeating substitution or equating intelligible challenge with acceptance of the entire logic does not supply it."
+    "zh": "为严格目标正面说明从局部引用构成到本论证所用元推理资源之充分根据的连接；重复代入定理，或把能够反对等同于接受整套逻辑，都不提供此连接。",
+    "en": "For the strict target, give a positive account of the passage from local reference constitution to adequate warrant for the metainferential resources used here; repeating substitution, or equating intelligible challenge with acceptance of the entire logic, does not supply it."
   },
   "history": [
     {
       "zh": "2026-10-09：迁移并完成既有绑定研究第2、5、7、9节候选的第10节评估；区分设立、执行、辨认和根据，撤下笼统的绑定最终证书要求。不是新的独立数学成果。",
       "en": "2026-10-09: migrates and completes in section 10 the candidate from sections 2, 5, 7 and 9, distinguishing institution, execution, recognition and warrant and retiring the vague final-certificate demand. Not a new independent mathematical result."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：主张第一句成为陈述，第二句与限制句分为 3 项分类“未表明”（两项范围；一项不可能性证明之否定）；“局部论证的完整评估”由状态表达；3 行“已接通”链接研究第10节的正面论证、路线评估与处置；下一步改为正面表述，内容不变。主张、前提、状态、依赖、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim's first sentence became the statement; its second sentence and the limitations became 3 typed does-not-show items (two of scope; one denying an impossibility proof); “a completed assessment of the local argument” is carried by the status; 3 progress lines link the study's section-10 affirmative argument, route assessment and disposition; the next step is restated positively with the same content. No claim, premise, status, dependency, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/constitutive-binding-assessment.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/9840beaa7834e2cf/constitutive-binding-assessment.json",
+      "sha256": "9840beaa7834e2cfed801a637d3be6045db739177ea510a4703c0fe67fdae0fc",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }

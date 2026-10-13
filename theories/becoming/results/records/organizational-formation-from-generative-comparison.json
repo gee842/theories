@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "organizational-formation-from-generative-comparison",
   "title": {
     "zh": "完整生成比较下的组织形成要求",
@@ -8,8 +8,8 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T18:34:30.570680+00:00",
-  "claim": {
+  "reviewed_at_utc": "2026-10-13T22:45:00+00:00",
+  "statement": {
     "zh": "在有限非空的合格接续中，若每种缺少某项组织关系的接续都有充分更好的合格构造，则所有未被击败的选择都包含该关系；这可支持建设或增强共同能力而不预定唯一承载。",
     "en": "In a finite nonempty eligible range, if every continuation lacking an organizational relation has a strictly better eligible construction, every undefeated choice includes that relation. This can warrant building or strengthening shared capacity without fixing one carrier."
   },
@@ -65,13 +65,51 @@
       }
     }
   ],
-  "limitations": {
-    "zh": "尚未由一般生成结构充分推出陌生新生活的基本内容；无经验验证、无必然服从、无完整机构权限推导。已有公理与条件成果保持有效范围。",
-    "en": "General generative structure has not supplied full basic-content correspondence for unfamiliar new living. No empirical validation, inevitable compliance or complete institutional authority derivation; existing axioms and conditional results retain their scope."
-  },
+  "does_not_show": [
+    {
+      "zh": "一般生成结构未充分推出陌生新生活的基本内容。",
+      "en": "General generative structure does not supply full basic-content correspondence for unfamiliar new living.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "规范要求不推出必然服从。",
+      "en": "The requirement does not establish inevitable compliance.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "无完整机构权限推导。",
+      "en": "It does not derive complete institutional authority.",
+      "kind": "scope"
+    }
+  ],
+  "standard_boundaries": [
+    "zero-axiom-target-open"
+  ],
+  "progress": [
+    {
+      "zh": "一元重构：组织评价从同一生成历史出发；G0 给出正面意义，J1/J2 给出有范围的比较力度，有限范围给出非空的未被击败选择。",
+      "en": "Monist reconstruction: organizational appraisal starts from one generative history; G0 supplies positive significance, J1/J2 scoped comparative force, and finite scope a nonempty undefeated range.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#74-the-affirmative-philosophical-proof-and-its-exact-normative-strength"
+    },
+    {
+      "zh": "已检查的组合：实践判断的未被击败范围与支配排除接成组织形成要求；具体历史要求一项协调功能，两种承载均可。",
+      "en": "Checked composition: practical judgment's undefeated range and dominance exclusion yield the formation requirement; a worked history requires a coordinating function that either of two carriers can bear.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#75-mathematical-correspondence-inheritance-and-actual-checks"
+    },
+    {
+      "zh": "检验的界限：过度建设的历史保留，建设报告的观察遗漏已修复；组织必要性、更多结构或当前认识都未提供陌生新生活的基本内容。",
+      "en": "Tested limit: the overbuilding history is kept and the construction-report omission repaired; organizational necessity, more structure or present recognition do not supply the basic content of unfamiliar new living.",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#78-the-tested-limit-and-current-status"
+    },
+    {
+      "zh": "分类稳健比较：一类基本地位未定的情形中也得出形成要求（classification-robust-generative-comparison）。",
+      "en": "Robust classification: formation requirements also follow in a class of unsettled-basic-status cases (classification-robust-generative-comparison).",
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#79-updated-repository-continuation-identity-and-exact-delta"
+    }
+  ],
   "validation_scope": {
-    "zh": "13项新 Lean 定理声明／29项声明审计；另重编30项继承定理／46项审计。含应用及定义对应，不是13个规范公理证明。作者反审；无独立 agent 验收。",
-    "en": "13 new Lean theorem declarations/29 declaration audits, with 30 inherited theorems/46 audits separately rebuilt. Includes applications and a definitional identity, not 13 normative-axiom proofs. Author counterreview; no independent-agent acceptance."
+    "zh": "13项新 Lean 定理声明／29项声明审计；另重编30项继承定理／46项审计。含应用及定义对应，不是13个规范公理证明。作者反审；无独立 agent 验收。无经验验证。",
+    "en": "13 new Lean theorem declarations/29 declaration audits, with 30 inherited theorems/46 audits separately rebuilt. Includes applications and a definitional identity, not 13 normative-axiom proofs. Author counterreview; no independent-agent acceptance. No empirical validation."
   },
   "references": [
     {
@@ -120,8 +158,8 @@
     }
   ],
   "next_delta": {
-    "zh": "分类稳健比较现已接通一类基本地位未定的形成要求，直接复用新成果。具体方案因真实生活作用分类而改变时，仍需落实会改变决定的实质对应；不把全部陌生生活分类设为建设前提。",
-    "en": "Robust classification now supplies formation requirements in a class of unsettled-basic-status cases; reuse the new result. Where living-role classification changes implementation, establish decision-relevant substantive correspondence without requiring classification of all unfamiliar living before construction."
+    "zh": "复用分类稳健比较。具体方案因真实生活作用分类而改变时，落实会改变决定的实质对应；不把全部陌生生活分类设为建设前提。",
+    "en": "Reuse robust classification. Where living-role classification changes implementation, establish decision-relevant substantive correspondence without requiring classification of all unfamiliar living before construction."
   },
   "history": [
     {
@@ -143,6 +181,20 @@
     {
       "zh": "2026-10-13：核读共享研究新增 P95 §85 的及时接续应用；此前全部段落原样保留，本成果主张与冻结证明范围不变。仅更新所读共享来源版本。",
       "en": "2026-10-13: reviewed appended P95 §85 on timely-continuation application; all earlier sections remain byte-for-byte, and this result’s claim and frozen proof scope are unchanged. Updates only the reviewed shared-source version."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句拆为 3 项分类“未表明”，“无经验验证”移入证据，“已有公理与条件成果保持有效范围”由通用边界 zero-axiom-target-open 承担；4 行“已接通”链接研究第74、75、78、79节；下一步第一句（分类稳健比较已接通）移入第四行“已接通”。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md)；迁移前的完整记录为 text_versions[0]。",
+      "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the limitations became 3 typed does-not-show items, “no empirical validation” moved to the evidence, and “existing axioms and conditional results retain their scope” is carried by the standard boundary zero-axiom-target-open; 4 progress lines link study sections 74, 75, 78 and 79; the next step's first sentence (robust classification connected) became the fourth progress line. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/organizational-formation-from-generative-comparison.md); the exact earlier record is text_versions[0]."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/845ff3b58917e254/organizational-formation-from-generative-comparison.json",
+      "sha256": "845ff3b58917e2542307cfd30d9e64fdacae234a3c43eae3518b189925c86580",
+      "note": {
+        "zh": "可读性迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the readability migration (schema 1)."
+      }
     }
   ]
 }
