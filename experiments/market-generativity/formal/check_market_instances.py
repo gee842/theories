@@ -64,7 +64,8 @@ SCOPE = (
     "bound gives a funnel for every determined rational law; for 0 <= b <= 5/12 the market's gain "
     "estimates (share, then influence, then quality) supply such funnels from a settled region "
     "the law keeps, which a positive seed enters by the old seed retention estimates, so the "
-    "landing side and the 5/12 boundary follow from the core's reaching law. "
+    "landing side, its case b = 0 (the rescue's finite horizon) and the 5/12 boundary follow "
+    "from the core's reaching law. "
     "Correspondence of the market law to actual markets, its parameters and its protected floors is "
     "not checked."
 )

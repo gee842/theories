@@ -55,8 +55,9 @@ instances of the pure core's laws are stated here; the core does not import this
   `1/16` a step below `1/2`; composed by `Reaches.trans`, every settled configuration lands
   (`settled_reaches_landing`). A positive seed comes into its settled region by the old seed
   retention and positive gap estimates (`seed_reaches_settled`), so every positive seed reaches
-  landing (`seed_reaches_landing`, `landing_side_instance`), and the 5/12 boundary follows from
-  the core's laws (`landing_boundary_instance`). The gain estimates are facts about this one
+  landing (`seed_reaches_landing`, `landing_side_instance`; with `b = 0` the rescue's finite
+  horizon, `rescue_landing_instance`), and the 5/12 boundary follows from the core's laws
+  (`landing_boundary_instance`). The gain estimates are facts about this one
   rational law; they are the instance's content.
 
 Every declaration may depend on the standard axioms through rational arithmetic only.
@@ -643,6 +644,12 @@ theorem landing_side_instance (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12)
   obtain ⟨n, hn⟩ := seed_reaches_landing b hb0 hb1 s hs hx
   obtain ⟨k, _, hk⟩ := Lasting.reaches_iff_orbit.mp hn
   exact ⟨k, by rw [path_eq]; exact hk⟩
+
+/-- `positive_seed_finite_landing`, the finite horizon of the rescue with no correction, is the
+case `b = 0` of the landing side. -/
+theorem rescue_landing_instance (s : RegimeBoundary.OperatingState) (hs : physical s)
+    (hx : 0 < s.1) : ∃ n, Landing (RegimeTransition.trajectory s n) :=
+  landing_side_instance 0 (by grind) (by grind) s hs hx
 
 /-- **`exact_universal_landing_boundary` from the core's laws**: for `0 ≤ b ≤ 3/4`, every positive
 seed lands exactly when `b ≤ 5/12`. The landing side is the reaching law with the gain
