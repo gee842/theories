@@ -133,8 +133,8 @@
     "zh": "比较之律对扩展者更新每个条件的每个继续族成立；这里的比较是它在一个规律族及其无焦点对照接续中的实例。分类就整条接续而言，所以消耗型形成在超额取用之前的发生也不计为根据；逐步读法尚未确定。不排序混合情形，不判定波动情形，不确立可行性或义务，也不确立真实对应。与 renewing-consuming-formation 的 event_comparison_ranks_rest_below 一样，规律若不表示休息的恢复作用，两种读法下 C 都会把休息排在持续的更新型形成之下；休息不是消耗，但这一比较没有表示它的价值。"
   },
   "validation_scope": {
-    "en": "Lean 4.29.1 check passed in the shared relational-renewal receipt: RenewalComparison 15 theorems / 24 declaration audits, every axiom set empty; GenerativeComparison compiled unchanged as a hashed dependency (audited by its own checker); 4 further compiled application examples. Author counterreview; no independent-agent review. The law of comparison with a renewing course (Becoming.Ranking) and the instance theorems in the new bridge module Becoming.RenewalBridge, 14 October 2026, have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land.",
-    "zh": "Lean 4.29.1 检查在共享的 relational-renewal 回执中通过：RenewalComparison 15 项定理／24 项声明审计，公理集全部为空；GenerativeComparison 原样作为带哈希的依赖编译（由其自身检查器审计）；另编译 4 个应用例。作者反审，无独立 agent 审查。2026-10-14 的与更新之继续的比较之律（Becoming.Ranking）及新桥接模块 Becoming.RenewalBridge 中的实例定理目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。"
+    "en": "Lean 4.29.1 check passed in the shared relational-renewal receipt: RenewalComparison 15 theorems / 24 declaration audits, every axiom set empty; GenerativeComparison compiled unchanged as a hashed dependency (audited by its own checker); 4 further compiled application examples. Author counterreview; no independent-agent review. The law of comparison with a renewing course (Becoming.Ranking) and the instance theorems in the new bridge module Becoming.RenewalBridge, 14 October 2026, are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports.",
+    "zh": "Lean 4.29.1 检查在共享的 relational-renewal 回执中通过：RenewalComparison 15 项定理／24 项声明审计，公理集全部为空；GenerativeComparison 原样作为带哈希的依赖编译（由其自身检查器审计）；另编译 4 个应用例。作者反审，无独立 agent 审查。2026-10-14 的与更新之继续的比较之律（Becoming.Ranking）及新桥接模块 Becoming.RenewalBridge 中的实例定理由合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。"
   },
   "references": [
     {
@@ -228,6 +228,12 @@
       "role": "receipt",
       "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -247,14 +253,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Ranking.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Ranking",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -288,6 +294,10 @@
     {
       "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现超额取用的比较只对支持门控规律族成立。它们是 Becoming.Ranking 中与更新之继续的比较之律的实例，该定律对每个继续族成立（renewed_extends_iff、renewed_active_extends_iff、extendsUnder_iff_of_exact）：新桥接模块 Becoming.RenewalBridge 由它证明 overdraw_relational_extension 的结论与共享的扩展（overdraw_extension、contest_extensions）。逐事件读法下的不可比（overdraw_broad_incomparable）是规律族中的见证，不再重述。主张改写为定律在先；RenewalComparison 的字节、证明与回执不变。新增对 Becoming.Ranking 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有新声明的回执。",
       "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found that the overdraw comparisons held only for the support-gated law family. They are instances of Becoming.Ranking's law of comparison with a renewing course, which holds for every family of courses (renewed_extends_iff, renewed_active_extends_iff, extendsUnder_iff_of_exact): the new bridge module Becoming.RenewalBridge proves overdraw_relational_extension's conclusion and the contest extensions from it (overdraw_extension, contest_extensions). The event-by-event incomparability (overdraw_broad_incomparable) is a family witness and is not restated. The claim is rewritten law first; RenewalComparison's bytes, proofs and receipt are unchanged. Bindings to the consolidated receipt for Becoming.Ranking and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains the new declarations at landing."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Ranking.lean（新增比较之律与缓和之律；节制的判断作为其实例重证，陈述不变）；RenewalBridge.lean（新桥接模块，首次由本回执检查）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Ranking.lean (the laws of comparison and easing added; the restraint verdicts re-proved as their instances with statements unchanged); RenewalBridge.lean (new bridge module, first checked in this receipt)."
     }
   ]
 }

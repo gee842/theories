@@ -141,7 +141,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "role": "receipt",
+      "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
       "declarations": []
     }
   ],
@@ -150,6 +156,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/verification.json",
       "sha256_pointer": "/source_sha256/JointPracticeContinuation.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -166,6 +179,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行：实践机器的轨迹恰是其运行（Becoming.Assurance 的部分律），只有修订改变做法、只有采纳改变规则（Becoming.Gated），作为外围 MachineInstances 的实例；完整历史是其一条轨迹。scratch_build 实编，声明只用标准公理；回执由落地运行与 check_machine_instances.py 绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first: the practice machine's traces are exactly its runs (Becoming.Assurance's partial laws), and only revision changes the methods and only adoption the rule (Becoming.Gated), as instances in the periphery MachineInstances; the complete history is one of its traces. Built with scratch_build, standard axioms only; the landing run and check_machine_instances.py bind the receipt. The original theorems, receipt and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports."
     }
   ]
 }

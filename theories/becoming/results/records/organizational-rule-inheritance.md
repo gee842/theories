@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [organizational-rule-inheritance.json](organizational-rule-inheritance.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:43:13.629610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-共同工作与认可形成参与资格，实际提案经既有授权程序改变后续筛选规则；分化或交接携带该规则，实际继续参与决定其执行，继承的差异改变后续可进入的决策。 / Reviewed work and recognition form mandates; an actual proposal changes the later filtering rule through the existing authorization procedure. Branching or handoff carries that rule, continuing participation determines execution, and inherited differences change subsequent admitted decisions.
+对每个过程、动作上的门与构型的量：量沿每段非门控进程保持，当且仅当每个非门控步保持它；改变它的进程经过门，且在一个本身改变它的门控步上。组织程序中只有采纳对规则是门控的：其余每个事件保持规则，所以每段不采纳的历史继承规则，每次规则改变都位于一次采纳。共同工作与认可形成参与资格，实际提案经既有授权程序改变后续筛选规则；分化或交接携带该规则，实际继续参与决定其执行，继承的差异改变后续可进入的决策。 / For every process, gate on moves and quantity of configurations: the quantity is kept along every course of ungated moves exactly when every ungated step keeps it; a course that changes it passes the gate, at a gated step that itself changes it. In the organizational protocol only adoption is gated for the rule: every other event keeps it, so every nonadopting history inherits the rule and every rule change is located at an adoption. Reviewed work and recognition form mandates; an actual proposal changes the later filtering rule through the existing authorization procedure. Branching or handoff carries that rule, continuing participation determines execution, and inherited differences change subsequent admitted decisions.
 
 Canonical source: [OrganizationalRuleInheritance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean)
 
@@ -40,12 +40,16 @@ Canonical source: [OrganizationalRuleInheritance.lean](../../../../experiments/i
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [OrganizationalRuleInheritance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean) | `OrganizationalRuleInheritance.changed_rule_requires_adoption`, `OrganizationalRuleInheritance.nonadopting_history_inherits`, `OrganizationalRuleInheritance.inherited_revision_continues`, `OrganizationalRuleInheritance.enabling_one_operation_need_not_enable_revision`, `OrganizationalRuleInheritance.same_enacted_relations_same_decision` |
+| proof | [Gated.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Gated.lean) | `Becoming.Gated.KeptBy`, `Becoming.Gated.kept_along`, `Becoming.Gated.kept_along_iff`, `Becoming.Gated.change_passes_gate`, `Becoming.Gated.change_located` |
+| proof | [Instances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean) | `Becoming.Instances.adopts`, `Becoming.Instances.process_eq`, `Becoming.Instances.run_eq`, `Becoming.Instances.trace_iff_run`, `Becoming.Instances.rule_kept`, `Becoming.Instances.rule_inherited`, `Becoming.Instances.rule_change_located` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/verification.json) | — |
 | integration | [EVOLUTIONARY-ORGANIZATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) | — |
 | provenance | [README.md](../../../../sources/evolutionary-selection/organizational-inheritance/README.md) | — |
 | provenance | [manifest.json](../../../../sources/evolutionary-selection/organizational-inheritance/manifest.json) | — |
 | provenance | [SYSTEMS-READING.md](../../../../sources/evolutionary-selection/organizational-inheritance/SYSTEMS-READING.md) | — |
 | provenance | [systems-manifest.json](../../../../sources/evolutionary-selection/organizational-inheritance/systems-manifest.json) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -53,7 +57,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用 joint-practice-forms-continuation 已接通的实际实践与后续参与；继续解释任务、检验关系及参与方式的变化，不重开原条件继承。 / Reuse the enacted-practice/further-participation connection in joint-practice-forms-continuation; investigate changing tasks, test relations and means of participation without reopening original conditional inheritance.
 
-Aliases / 别名: `OrganizationalRuleInheritance.inherited_revision_continues`
+Aliases / 别名: `OrganizationalRuleInheritance.inherited_revision_continues`, `Becoming.Gated.kept_along_iff`, `Becoming.Gated.change_passes_gate`, `Becoming.Gated.change_located`, `Becoming.Instances.trace_iff_run`, `Becoming.Instances.rule_kept`, `Becoming.Instances.rule_inherited`, `Becoming.Instances.rule_change_located`
 
 ## 沿革 History
 
@@ -61,3 +65,5 @@ Aliases / 别名: `OrganizationalRuleInheritance.inherited_revision_continues`
 - 2026年10月9日：按Ren的system/subsystems纠正重构解释；复用系统工作，补充强反馈比较。零新定理、零新成果编号；原证明范围及历史收据保留。 / 9 October 2026: reconstructs the explanation under Ren’s system/subsystems correction, reusing systems work and a strong feedback comparator. No new theorem or result identity; original proof scope and historical receipts remain.
 - 2026年10月9日进一步语言纠正：以接续、时序与参与关系的具体变化替代未解释的“挤压”；解释范围与原形式证明不变，无新定理。 / Further wording correction on 9 October: specified changes in continuation, order and participation replace an unexplained displacement metaphor. Explanatory scope and the original formal proof remain; no new theorem.
 - 2026年10月9日：新组合成果实际生成并消费本成果的审查与资格关系；原定理及回执不变，共同研究与新增原始摘要对应已审读。 / 9 October 2026: a new composition actually produces and consumes this result’s review/mandate relations; original theorem and receipt remain, with shared study and additional primary-abstract correspondence reviewed.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Gated）：对每个过程，量沿非门控进程保持恰当每个非门控步保持它，改变位于门控步；组织规则只由采纳改变，经桥接 Becoming.Instances 成为实例，既有的 nonadopting_history_inherits 是该律的实例。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Gated): for every process, a quantity is kept along ungated courses exactly when every ungated step keeps it, and change is located at a gated step; that only adoption changes the organizational rule becomes an instance through the bridge Becoming.Instances, and the existing nonadopting_history_inherits is an instance of the law. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Gated、Becoming.Instances 由核心回执 20261013T221720.428753Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Gated, Becoming.Instances by core receipt 20261013T221720.428753Z, each with empty axiom reports.

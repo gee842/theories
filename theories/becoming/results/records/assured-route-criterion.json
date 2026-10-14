@@ -125,7 +125,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
     }
   ],
@@ -136,6 +142,20 @@
       "sha256_pointer": "/modules/4/sha256",
       "success_pointer": "/passed",
       "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Assurance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Assurance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Instances",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -150,6 +170,10 @@
     {
       "zh": "2026-10-14：按 Ren 批准的旧记录一般律审计，主张改为一般律先行：对每个确定的过程，完成恰是安全运行并终于目标（新核心模块 Becoming.Assurance）；三路线过程与调节律经桥接 Becoming.Instances 成为实例，非确定的反例 Branch 加入。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与范围不变。",
       "en": "2026-10-14: under Ren's approved general-law audit of older records, the claim now states the law first: for every determined process, completion is exactly a safe run ending in the goal (new core module Becoming.Assurance); the three-route process and the regulation law become instances through the bridge Becoming.Instances, and the nondeterministic counterexample Branch is added. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorem, receipt and scope are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Assurance、Becoming.Instances 由核心回执 20261013T221720.428753Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Assurance, Becoming.Instances by core receipt 20261013T221720.428753Z, each with empty axiom reports."
     }
   ]
 }

@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [joint-practice-forms-continuation.json](joint-practice-forms-continuation.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:43:13.631691+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-在明示二方法任务中，实际尝试与回应形成做法修订；成功重试产生既有程序所需审查关系，授权接纳后的参与者可回应下一次实践，并在最初回应者离开后继续形成新的参与关系。 / Within the declared two-method task, actual attempts and responses form a revised procedure. A successful retry produces the review relation consumed by the existing admission process; admitted participation enables later response and formation of further participation after the initial reviewer leaves.
+实践机器是一条部分律：它的轨迹恰是其完成的运行。门控改变之律的实例：只有修订改变记录的做法，只有组织采纳改变规则，所以每段不含它们的进程保持两者。在明示二方法任务中，实际尝试与回应形成做法修订；成功重试产生既有程序所需审查关系，授权接纳后的参与者可回应下一次实践，并在最初回应者离开后继续形成新的参与关系。 / The practice machine is a partial law: its traces are exactly its completed runs. Instances of the gated-change law: only revision changes the recorded methods and only an organizational adoption changes the rule, so every course without them keeps both. Within the declared two-method task, actual attempts and responses form a revised procedure. A successful retry produces the review relation consumed by the existing admission process; admitted participation enables later response and formation of further participation after the initial reviewer leaves.
 
 Canonical source: [JointPracticeContinuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean)
 
@@ -45,10 +45,13 @@ Canonical source: [JointPracticeContinuation.lean](../../../../experiments/integ
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [JointPracticeContinuation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean) | `JointPracticeContinuation.infer_recovers_method`, `JointPracticeContinuation.response_identifies_current_method`, `JointPracticeContinuation.revision_installs_inferred_method`, `JointPracticeContinuation.retry_produces_existing_review`, `JointPracticeContinuation.enrollment_consumes_review`, `JointPracticeContinuation.complete_history_is_one_trace`, `JointPracticeContinuation.operation_can_continue_while_admission_fails`, `JointPracticeContinuation.result_revision_eq_inference` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.revises`, `Becoming.MachineInstances.adoptsRule`, `Becoming.MachineInstances.practice_process_eq`, `Becoming.MachineInstances.practice_run_eq`, `Becoming.MachineInstances.practice_trace_iff_run`, `Becoming.MachineInstances.methods_kept`, `Becoming.MachineInstances.methods_inherited`, `Becoming.MachineInstances.practice_rule_kept`, `Becoming.MachineInstances.practice_rule_inherited`, `Becoming.MachineInstances.complete_history_instance` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/verification.json) | — |
 | provenance | [README.md](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/README.md) | — |
 | integration | [EVOLUTIONARY-ORGANIZATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) | — |
 | provenance | [SYSTEMS-READING.md](../../../../sources/evolutionary-selection/organizational-inheritance/SYSTEMS-READING.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -56,8 +59,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 解释共同活动怎样改变任务、当前检验关系或参与形成方式本身，并保留替代接续与真实失败。 / Explain how joint activity changes the task, current testing relation or means of forming participation themselves, preserving alternative continuations and real failure.
 
-Aliases / 别名: `JointPracticeContinuation.complete_history_is_one_trace`, `JointPracticeContinuation.retry_produces_existing_review`
+Aliases / 别名: `JointPracticeContinuation.complete_history_is_one_trace`, `JointPracticeContinuation.retry_produces_existing_review`, `Becoming.MachineInstances.practice_trace_iff_run`, `Becoming.MachineInstances.methods_kept`, `Becoming.MachineInstances.methods_inherited`, `Becoming.MachineInstances.practice_rule_kept`, `Becoming.MachineInstances.practice_rule_inherited`, `Becoming.MachineInstances.complete_history_instance`
 
 ## 沿革 History
 
 - 2026年10月9日：依照systems/subsystems与结构动态语言纠正，接通实际重试、既有认可程序、后续回应及接续；一个新组合成果，非定理数量对应的多个发现。 / 9 October 2026: under the systems/subsystems and structural-language corrections, connects actual retry, the existing recognition procedure, later response and succession. One new composition result, not one discovery per theorem declaration.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行：实践机器的轨迹恰是其运行（Becoming.Assurance 的部分律），只有修订改变做法、只有采纳改变规则（Becoming.Gated），作为外围 MachineInstances 的实例；完整历史是其一条轨迹。scratch_build 实编，声明只用标准公理；回执由落地运行与 check_machine_instances.py 绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first: the practice machine's traces are exactly its runs (Becoming.Assurance's partial laws), and only revision changes the methods and only adoption the rule (Becoming.Gated), as instances in the periphery MachineInstances; the complete history is one of its traces. Built with scratch_build, standard axioms only; the landing run and check_machine_instances.py bind the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.

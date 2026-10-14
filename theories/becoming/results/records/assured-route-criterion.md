@@ -6,16 +6,17 @@
 
 记录源 / Editable record: [assured-route-criterion.json](assured-route-criterion.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:02:25.936140+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-在给定三路线过程里，从未到达状态执行路线 a 保证到达，当且仅当 a 不等于唯一不可通行模式 m。 / In the supplied three-route process, taking route a from an unreached state assures arrival iff a differs from the uniquely blocked mode m.
+对每个确定的过程（每个动作至多一个后继），一个计划完成——每一步从此前步骤可达的每个构型都可行且安全，每个终点满足目标——当且仅当它运行、其运行安全且终点满足目标；没有安全条件时，当且仅当它运行且每个终点满足目标。对一条变化之律，计划完成恰当目标在律所到之处成立；单步时恰当目标在后继处成立。部分律的轨迹恰是其完成的运行。逆命题在非确定过程中不成立。情境智慧的“保证”即无安全条件的完成。三路线过程是一条变化之律，所以从未到达状态执行路线 a 保证到达，当且仅当 a 不等于唯一不可通行模式 m，这是实例。 / For every determined process (each move has at most one successor), a plan completes — every step possible and safe from every configuration the earlier steps can reach, every endpoint meeting the goal — exactly when it runs, its run is safe and its endpoint meets the goal; with no safety condition, exactly when it runs and every endpoint meets the goal. For a law of change, a plan completes exactly when the goal holds where the law takes it, and for one move exactly when it holds at the successor. A partial law's traces are exactly its completed runs. The converse fails for nondeterministic processes. Contextual wisdom's assurance is completion with no safety condition. The three-route process is a law of change, so taking route a from an unreached state assures arrival exactly when a differs from the uniquely blocked mode m: an instance.
 
 Canonical source: [WisdomResponseStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean)
 
 ## 前提与对应 Hypotheses and correspondence
 
+- 一般律只要求过程确定；变化之律与部分律都是确定的过程。 / The general law assumes only that the process is determined; laws of change and partial laws are.
 - Mode 与 Route 为 Fin 3，advance 保持模式并记录 a≠m；Reached 为到达标志。 / Mode and Route are Fin 3; advance retains the mode and records a≠m; Reached is the arrival flag.
 
 一项给定的单步过程，不是智慧、伦理许可或感知形成的定义。 / A supplied one-step process, not a definition of wisdom, ethical permission or sensor formation.
@@ -27,6 +28,7 @@ Canonical source: [WisdomResponseStructure.lean](../../../../experiments/integra
 风险权重、取得模式的能力和选择的伦理根据均不由此等价式提供。 / Risk weights, capacity to acquire the mode, and ethical grounds for selection are not supplied by this equivalence.
 
 Boundary source / 边界来源: [WisdomResponseStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean)
+- 两结果过程 Branch：从 0 出发，计划 [(), ()] 的两步都能运行且每个终点都是 3，但计划不完成，因为第一步可达 2，从那里第二步不可行；它不是确定的过程。 / The two-outcome process Branch: from 0 both moves of [(), ()] run and every endpoint is 3, yet the plan does not complete, because the first step can reach 2, from which the second move is impossible; the process is not determined. [Assurance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Assurance.lean)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -38,17 +40,23 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [WisdomResponseStructure.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) | `Generative.WisdomResponseStructure.assured_route_iff` |
+| proof | [Assurance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Assurance.lean) | `Becoming.Assurance.free`, `Becoming.Assurance.runs_of_completes`, `Becoming.Assurance.completes_of_runs`, `Becoming.Assurance.completes_iff_of_determined`, `Becoming.Assurance.completes_iff_runs`, `Becoming.Assurance.ofMap`, `Becoming.Assurance.ofMap_determined`, `Becoming.Assurance.completes_ofMap_iff`, `Becoming.Assurance.completes_ofMap_single`, `Becoming.Assurance.ofPartial`, `Becoming.Assurance.runPartial`, `Becoming.Assurance.trace_ofPartial_iff`, `Becoming.Assurance.completes_ofPartial_iff`, `Becoming.Assurance.Branch.runs_not_completes`, `Becoming.Assurance.Branch.not_determined` |
+| proof | [Instances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean) | `Becoming.Instances.assured_iff_completes`, `Becoming.Instances.routes_eq`, `Becoming.Instances.routes_assured_iff`, `Becoming.Instances.regulation_assured_iff` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-风险应用直接复用这个实际后果接口。 / Risk applications reuse this actual-outcome interface directly.
+风险应用对每个确定过程直接复用这个完成判准；非确定的计划须用完整的完成条件。 / Risk applications reuse this completion criterion for every determined process; nondeterministic plans need the full completion condition.
 
-Aliases / 别名: `Generative.WisdomResponseStructure.assured_route_iff`
+Aliases / 别名: `Generative.WisdomResponseStructure.assured_route_iff`, `Becoming.Assurance.completes_iff_of_determined`, `Becoming.Assurance.completes_iff_runs`, `Becoming.Assurance.runs_of_completes`, `Becoming.Assurance.completes_ofMap_iff`, `Becoming.Assurance.completes_ofMap_single`, `Becoming.Assurance.trace_ofPartial_iff`, `Becoming.Assurance.completes_ofPartial_iff`, `Becoming.Assurance.Branch.runs_not_completes`, `Becoming.Instances.assured_iff_completes`, `Becoming.Instances.routes_assured_iff`, `Becoming.Instances.regulation_assured_iff`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14：按 Ren 批准的旧记录一般律审计，主张改为一般律先行：对每个确定的过程，完成恰是安全运行并终于目标（新核心模块 Becoming.Assurance）；三路线过程与调节律经桥接 Becoming.Instances 成为实例，非确定的反例 Branch 加入。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与范围不变。 / 2026-10-14: under Ren's approved general-law audit of older records, the claim now states the law first: for every determined process, completion is exactly a safe run ending in the goal (new core module Becoming.Assurance); the three-route process and the regulation law become instances through the bridge Becoming.Instances, and the nondeterministic counterexample Branch is added. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorem, receipt and scope are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Assurance、Becoming.Instances 由核心回执 20261013T221720.428753Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Assurance, Becoming.Instances by core receipt 20261013T221720.428753Z, each with empty axiom reports.

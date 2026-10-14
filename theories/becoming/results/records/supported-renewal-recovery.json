@@ -108,8 +108,8 @@
     "en": "Does not derive contribution sources, activity selection, physical laws, general recoverability, whole-Becoming relational constitution or ethical necessity. Finite recovery does not guarantee later maintenance. G0/J/E and the strong zero-substantive-axiom target remain explicit."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实查9项新定理声明／10项新声明审计，4空、6仅标准依赖（propext、Quot.sound）。继承35项定理／60项空审计另列；共70项审计、64空。冻结成功回执绑定双模块源码、检查器、签名及日志。作者反审，无独立代理或经验验收。2026-10-14 把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与新桥接模块 Becoming.RenewalBridge）目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。",
-    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound). Separately credits 35 inherited theorems / 60 empty audits; total 70, 64 empty. A frozen successful receipt binds both module sources, checker, signatures and logs. Author counterreview; no independent-agent or empirical acceptance. The general laws and instance theorems connecting this result to the spine (Becoming.Continuation and the new bridge module Becoming.RenewalBridge, 14 October 2026) have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land."
+    "zh": "Lean 4.29.1 实查9项新定理声明／10项新声明审计，4空、6仅标准依赖（propext、Quot.sound）。继承35项定理／60项空审计另列；共70项审计、64空。冻结成功回执绑定双模块源码、检查器、签名及日志。作者反审，无独立代理或经验验收。2026-10-14 把本结果接到脊柱的一般定律与实例定理（Becoming.Continuation 与新桥接模块 Becoming.RenewalBridge）由合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。",
+    "en": "Lean 4.29.1 checks nine new theorem declarations / ten declaration audits: four empty, six using only standard dependencies (propext, Quot.sound). Separately credits 35 inherited theorems / 60 empty audits; total 70, 64 empty. A frozen successful receipt binds both module sources, checker, signatures and logs. Author counterreview; no independent-agent or empirical acceptance. The general laws and instance theorems connecting this result to the spine (Becoming.Continuation and the new bridge module Becoming.RenewalBridge, 14 October 2026) are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports."
   },
   "references": [
     {
@@ -189,6 +189,12 @@
       "role": "receipt",
       "sha256": "56724d8ceb2dbe4bf3f4e292590ac7c8e5ee9401deca7c636e4b852e44ee6f82",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -208,14 +214,14 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
       "success_pointer": "/status",
       "success_value": "passed"
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/RenewalBridge.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T145624.509021Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.RenewalBridge",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -237,6 +243,10 @@
     {
       "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计发现本记录的动力学只对支持门控规律族成立。恢复现为每个平衡流的定律（Becoming.Continuation 中的 Flow.surplus_raises_at、surplus_bounded_at、restores_at、restores），新桥接模块 Becoming.RenewalBridge 表明规律族的每个规律都是其静态网上的平衡流（SupportGated.balances），所以 repair_restores_sustaining_support 是实例（SupportGated.repair_restores，命题相同；规律族的证明用 propext 与 Quot.sound，这里公理报告为空），受支持的脉冲也是（SupportGated.pulse_restores）。主张改写为定律在先；规律族模块、其证明与回执不变。新增对 Becoming.Continuation 与 Becoming.RenewalBridge 的合并回执绑定，合并时须改指首个含有它们的回执。",
       "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit found this record's dynamics held only for the support-gated law family. Restoration is now a law of every balanced flow (Flow.surplus_raises_at, surplus_bounded_at, restores_at, restores in Becoming.Continuation), and the new bridge module Becoming.RenewalBridge shows every law of the family to be a balanced flow on its static web (SupportGated.balances), so repair_restores_sustaining_support is an instance (SupportGated.repair_restores, the same statement, with an empty axiom report where the family proof uses propext and Quot.sound) and so is the supported pulse (SupportGated.pulse_restores). The claim is rewritten law first; the family module, its proofs and its receipt are unchanged. Bindings to the consolidated receipt for Becoming.Continuation and Becoming.RenewalBridge are added and must be re-pointed to the receipt that first contains them at landing."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Continuation.lean（新增恢复律 Flow.restores 及其推论，既有陈述不变）；RenewalBridge.lean（新桥接模块，首次由本回执检查）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Continuation.lean (the restoring law Flow.restores and its corollaries added; existing statements unchanged); RenewalBridge.lean (new bridge module, first checked in this receipt)."
     }
   ]
 }

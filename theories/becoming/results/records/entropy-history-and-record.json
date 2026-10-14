@@ -773,13 +773,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f",
+      "sha256": "c455bcee7a0f3f654d4cb2cb2b4e4a9436e2fdd680a550259c5e16c9c4b101d2",
       "declarations": []
     },
     {
@@ -914,6 +914,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2（M3）：长标题改为短名，陈述在先；主张拆为 20 条规律；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。读法假设分为两项，Ren 的原话不变；主张中的计划标记（R6）改为“六律”“复现律”。每句旧文本的去向见迁移对照表 [entropy-history-and-record.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/entropy-history-and-record.md)；迁移前的完整记录为 text_versions 末项。",
       "en": "14 October 2026 readability migration to schema 2 (M3): the long title became a short name with the statement first; the claim was split into 20 laws; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The reading hypothesis was split in two, Ren's words verbatim; plan labels (R6) in the claim became “the laws of change”/“the laws of recurrence”. Every earlier sentence is mapped in the migration table [entropy-history-and-record.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/entropy-history-and-record.md); the exact earlier record is the last text_versions entry."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
     }
   ],
   "text_versions": [

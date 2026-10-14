@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [material-preparation-output.json](material-preparation-output.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:32:50.150004+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-八单位路由支持下，整池完成指定八槽准备恰好要求四 A 四 B；实际路由轨迹保留放置与剩余材料。 / With eight routing support units, whole-pool completion of the specified eight-slot preparation requires exactly four A and four B; the actual trace preserves placed and residual material.
+对每个目标配方、材料池与路由支持量：route 以空剩余池完成，当且仅当池是配方的一个排列且配方长度不超过支持量，此时剩余支持为支持量减配方长度；实际 routeTrace 对每个输入保留放置与剩余材料，route 恰是它的投影。八单位支持下的指定八槽配方是实例：整池完成恰好要求四 A 四 B。 / For every target recipe, pool and routing support: route completes with an empty residual pool exactly when the pool is a permutation of the recipe and the recipe is no longer than the support, the remaining support then being the support less the recipe's length; the actual routeTrace keeps placed and residual material for every input, and route is its projection. The specified eight-slot recipe under eight support units is an instance: whole-pool completion requires exactly four A and four B.
 
 Canonical source: [MaterialMaturation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean)
 
@@ -37,7 +37,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 
 | Role | Source | Declarations |
 |---|---|---|
-| proof | [MaterialMaturation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean) | `MaterialMaturation.actual_preparation_iff`, `MaterialMaturation.route_trace_projection`, `MaterialMaturation.routing_trace_accounts` |
+| proof | [MaterialMaturation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean) | `MaterialMaturation.actual_preparation_iff`, `MaterialMaturation.route_trace_projection`, `MaterialMaturation.routing_trace_accounts`, `MaterialMaturation.route_sound`, `MaterialMaturation.route_complete` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/verification.json) | — |
 | integration | [MATERIAL-MATURATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md) | — |
 
@@ -45,10 +45,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-作为已完成材料接口复用；本轮接到真实接合和重复结构生成。 / Reuse the completed material interface; the present continuation connects actual attachment and repeated structural formation.
+作为已完成材料接口复用，并接到真实接合和重复结构生成。 / Reuse the completed material interface and connect it to actual attachment and repeated structural formation.
 
-Aliases / 别名: `MaterialMaturation.actual_preparation_iff`
+Aliases / 别名: `MaterialMaturation.actual_preparation_iff`, `MaterialMaturation.route_sound`, `MaterialMaturation.route_complete`
 
 ## 沿革 History
 
 - 2026-10-08：按本轮实际审读及所列回执登记范围；原证明和反例保持。 / 2026-10-08: recorded the actually reviewed scope and cited receipt, preserving original proofs and counterexamples.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行：既有 route_sound 与 route_complete 合起来是对每个配方、池与支持量的等价；八槽配方是实例。无 Lean 改动，源码哈希与回执不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first: the existing route_sound and route_complete together are an equivalence for every recipe, pool and support; the eight-slot recipe is an instance. No Lean change; source hashes and receipt unchanged.

@@ -145,7 +145,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
       "declarations": []
     }
   ],
@@ -154,6 +160,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
       "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Readout",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Instances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -178,6 +198,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Readout）：对每个约化，解码器恰在观测于合并处一致时存在，合并的不同构型不可恢复；对角解码与退相干逆映射的失败经桥接 Becoming.Instances 成为实例。scratch_build 实编，公理报告为空；回执由落地运行绑定。原定理、回执与范围不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Readout): for every reduction, a decoder exists exactly where the observable agrees across what is merged, and merged different configurations cannot be restored; the diagonal-decoder and dephasing-inverse failures become instances through the bridge Becoming.Instances. Built with scratch_build, empty axiom reports; the landing run binds the receipt. The original theorems, receipt and scope are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Readout、Becoming.Instances 由核心回执 20261013T221720.428753Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Readout, Becoming.Instances by core receipt 20261013T221720.428753Z, each with empty axiom reports."
     }
   ]
 }

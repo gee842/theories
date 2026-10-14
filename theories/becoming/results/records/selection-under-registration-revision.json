@@ -249,11 +249,11 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean",
       "role": "integration",
-      "sha256": "61411ff92abf52de4653835a106f4c67d3d95e1b91293c63eb206a0dab545c9b",
+      "sha256": "820c61626c5cbd5b69d90648bca86dede9ed79d495be1b1543808f0b158231dd",
       "declarations": []
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261008T193434.751521Z/verification.json",
       "role": "receipt",
       "sha256": "b3e4813e6cc532f0238847dce40fc36a0ca298d50013a41f69e3f8e46d9a0c2f",
       "declarations": []
@@ -336,6 +336,10 @@
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Revision 另加入把 `Revising` 读作 Stock 实例的定理，绑定改为新回执（见检查范围）；主张改为先陈述存量的一般规律（Becoming.Stock 的 balanced_iff、feasible_iff_covered、product_feasible_iff），原 Revising 例子作为其实例，并以 covered_not_enacted、linked_not_enacted 把区分、支持与执行的分别写成规律；新增 Stock.lean 的证明绑定（回执 20261013T204910.042715Z）。状态不变；主张按一般规律重写，原例子的陈述与证明不变，不记作对原例子的重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Revision with theorems added that read `Revising` as an instance of Stock; bindings move to the new receipts (see validation scope); the claim now states the general laws of stock first (Becoming.Stock’s balanced_iff, feasible_iff_covered, product_feasible_iff), with the Revising example as their instance and covered_not_enacted and linked_not_enacted making the distinction of discrimination, support and enactment a law; a proof binding for Stock.lean is added (receipt 20261013T204910.042715Z). Status unchanged; the claim is rewritten law-first, and the examples keep their statements and proofs, with no reproof credited to them."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：LearnedProcedureTransmission.lean（新增运行条件与循环律，既有陈述不变）。对习得程序传递验证文件的引用改为其运行目录 20261008T193434.751521Z，其中正是本记录核验过的字节（哈希相同）；顶层文件现为新传递律的较晚运行 20261013T211356.378776Z。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to LearnedProcedureTransmission.lean (run conditions and the cycle law added; existing statements unchanged). The reference to the learned-procedure-transmission verification file now names its run folder 20261008T193434.751521Z, which holds the bytes this record verified (same hash); the top-level file now holds the later run 20261013T211356.378776Z for the new transmission laws."
     }
   ]
 }

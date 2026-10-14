@@ -6,17 +6,17 @@
 
 记录源 / Editable record: [transition-grouping-word-partition.json](transition-grouping-word-partition.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:03:12.525158+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-当相邻关系恰为 ab 与 cd 内部连接时，分节保留任意有限的该二词编码序列的词划分；已有接触史实际取得此关系。 / When the adjacency relation joins exactly the interiors of ab and cd, segmentation recovers the word partition of every finite sequence in that encoding; an existing encounter history acquires this relation.
+对每个字母表与每个相邻关系 r：由右向左读，元素在 r 把它连到其后一组的首元素时并入该组，否则另起一组；分组返回一个划分，当且仅当各组非空、内部依 r 相连且不连到下一组，该划分唯一，分组不改变序列。对非空词的词汇，分组恢复每个编码序列的词，当且仅当每个词内部相连，且任何词的末元素都不连到任何词的首元素——两项都是相邻对的局部条件。以观察转移的严格多数学得的关系使每个元素至多连到一个后继。已有的分节算法与二词编码即这些定义：恢复每个二词序列恰当 a→b、c→d 相连而 b→a、b→c、d→a、d→c 不相连；idealBond 与接触史实际取得的关系是实例。 / For every alphabet and every adjacency relation r: reading from the right, an element joins the following group where r links it to that group's first element and opens a new group otherwise; grouping returns a partition exactly when every group is nonempty, linked by r inside and not linked to the next, that partition is unique, and grouping never changes the sequence. For a vocabulary of nonempty words, grouping recovers the words of every encoded sequence exactly when each word is linked inside and the last element of no word is linked to the first element of any word — both local conditions on adjacent pairs. A relation learned as the strict majority of observed transitions links each element to at most one successor. The existing grouping algorithm and two-word encoding are these definitions: every two-word sequence is recovered exactly when a→b and c→d are linked and b→a, b→c, d→a, d→c are not; idealBond and the relation an encounter history actually acquires are instances.
 
 Canonical source: [AcquiredSegmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean)
 
 ## 前提与对应 Hypotheses and correspondence
 
-- 给定四个基本事件、二词编码及 chunks 递归算法；关系为 idealBond。 / Four supplied elementary events, the two-word encoding and recursive chunks algorithm; the relation is idealBond.
+- 一般律对字母表与相邻关系不加条件；实例使用四个基本事件、二词编码及 idealBond。 / The general law places no condition on the alphabet or relation; the instance uses four elementary events, the two-word encoding and idealBond.
 - 实际取得见证使用既定接触序列、严格多数判准与足够记录支持。 / The acquisition witness uses the stated encounter sequence, strict-majority criterion and adequate recording support.
 
 该关系是日志中已观察转移的分节判准；声音分类与语言对应没有由此推导。 / The relation is a grouping criterion derived from observed transitions in a log; sound categories and linguistic correspondence are not derived.
@@ -25,9 +25,10 @@ Canonical source: [AcquiredSegmentation.lean](../../../../experiments/integrated
 
 迁移既有23项定理／51项声明审计中的指定分节结果；不因登记新增成果或重跑证明。 / Migrates the specified grouping result from the existing 23-theorem/51-audit package; registration adds no theorem or proof rerun.
 
-固定二词编码与分节算法；任意长度形式对应不保证有限支持下实际执行，不建立自然语言或完整认知。 / Fixed two-word encoding and algorithm; arbitrary-length correspondence does not guarantee affordable execution or establish natural language and complete cognition.
+分组规则固定；任意长度形式对应不保证有限支持下实际执行，不建立自然语言或完整认知。 / The grouping rule is fixed; arbitrary-length correspondence does not guarantee affordable execution or establish natural language and complete cognition.
 
 - 重复可合并预定词界；部分经历只支持一个表达而误分另一表达。 / Repetition can merge intended boundaries; partial experience can parse one expression while misgrouping another. [AcquiredSegmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean)
+- 严格多数学得的关系是函数式的：两个词若在内部以不同元素接续同一元素，任何转移记录都不能把两者都分对。 / A relation learned by strict majority is functional: where two words continue one element differently inside, no record of transitions groups both. [Segmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -39,7 +40,13 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [AcquiredSegmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean) | `Generative.AcquiredSegmentation.ideal_grouping_recovers_words`, `Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation`, `Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence`, `Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping` |
+| proof | [Segmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean) | `Becoming.Segmentation.glue`, `Becoming.Segmentation.chunks`, `Becoming.Segmentation.LinkedFrom`, `Becoming.Segmentation.Opens`, `Becoming.Segmentation.Grouped`, `Becoming.Segmentation.join`, `Becoming.Segmentation.join_chunks`, `Becoming.Segmentation.chunks_eq_iff`, `Becoming.Segmentation.chunks_unique`, `Becoming.Segmentation.encode`, `Becoming.Segmentation.Spelled`, `Becoming.Segmentation.encode_iff`, `Becoming.Segmentation.edges`, `Becoming.Segmentation.departures`, `Becoming.Segmentation.transitions`, `Becoming.Segmentation.bond`, `Becoming.Segmentation.bond_unique`, `Becoming.Segmentation.no_record_groups` |
+| proof | [Instances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Instances.lean) | `Becoming.Instances.chunks_eq`, `Becoming.Instances.flatten_eq_join`, `Becoming.Instances.encode_eq`, `Becoming.Instances.spelled`, `Becoming.Instances.two_word_iff`, `Becoming.Instances.ideal_two_word` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.edges_all_eq`, `Becoming.MachineInstances.bond_eq`, `Becoming.MachineInstances.bond_functional`, `Becoming.MachineInstances.Groups`, `Becoming.MachineInstances.segments_of_groups`, `Becoming.MachineInstances.experienced_groups`, `Becoming.MachineInstances.experienced_parses_every` |
 | receipt | [acquired-segmentation-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -47,8 +54,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接复用词划分，接到后续绑定或解释；不要把再次调用计作新分节成果。 / Reuse the partition for subsequent binding or interpretation; another invocation is not a new grouping result.
 
-Aliases / 别名: `Generative.AcquiredSegmentation.ideal_grouping_recovers_words`
+Aliases / 别名: `Generative.AcquiredSegmentation.ideal_grouping_recovers_words`, `Becoming.Segmentation.chunks_eq_iff`, `Becoming.Segmentation.chunks_unique`, `Becoming.Segmentation.join_chunks`, `Becoming.Segmentation.encode_iff`, `Becoming.Segmentation.bond_unique`, `Becoming.Segmentation.no_record_groups`, `Becoming.Instances.chunks_eq`, `Becoming.Instances.encode_eq`, `Becoming.Instances.two_word_iff`, `Becoming.Instances.ideal_two_word`, `Becoming.MachineInstances.bond_eq`, `Becoming.MachineInstances.bond_functional`, `Becoming.MachineInstances.experienced_parses_every`
 
 ## 沿革 History
 
 - 2026-10-08：迁移已经实际检查的分节主张，保留原源码、回执和反例。 / 2026-10-08: migrated the already checked grouping claim, preserving original source, receipt and counterexamples.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Segmentation）：分组对每个字母表与关系恰在局部条件下给出唯一划分并恢复词，严格多数关系是函数式的；已有算法、二词编码与 idealBond 经桥接 Becoming.Instances 与外围 MachineInstances 成为实例。scratch_build 实编；核心与桥接公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Segmentation): for every alphabet and relation, grouping gives a unique partition and recovers words exactly under local conditions, and strict-majority relations are functional; the existing algorithm, two-word encoding and idealBond become instances through the bridge Becoming.Instances and the periphery MachineInstances. Built with scratch_build; core and bridge have empty axiom reports, the periphery standard axioms only; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Segmentation、Becoming.Instances 由核心回执 20261013T221720.428753Z；MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Segmentation, Becoming.Instances by core receipt 20261013T221720.428753Z; MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.

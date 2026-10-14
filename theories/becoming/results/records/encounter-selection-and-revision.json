@@ -112,6 +112,12 @@
       "role": "integration",
       "sha256": "eac2b46e7e1788c911f649998d3798e0a662df60caaffd62b9687152a425d555",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "role": "receipt",
+      "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -119,6 +125,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json",
       "sha256_pointer": "/source_sha256/EncounterChoice",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -155,6 +168,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律的实例（取得词库的解释律见 acquired-binding-compositional-use；外围 MachineInstances）。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the result as an instance of the general law (the interpretation law for acquired lexicons, see acquired-binding-compositional-use; periphery, MachineInstances). Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): the general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports."
     }
   ]
 }

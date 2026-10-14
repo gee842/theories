@@ -201,7 +201,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
       "role": "counterexample",
-      "sha256": "515275299486c90e3a053f02b2f3125a445a2ae5f9146b6195ed4a34e4f68d7a",
+      "sha256": "852faaf0f7fefad19da5dffec856ad1b181f0fabe65a725c199c53e6a4ebe2ce",
       "declarations": []
     }
   ],
@@ -242,6 +242,10 @@
     {
       "zh": "2026-10-14 可读性迁移到 schema 2：原主张成为陈述；限制句第一句与唯一反例逐字相同，由反例承担（反例保留，因交叉基本损失不排序有 competing_claims_incomparable 见证）；第二句拆为 2 项分类“未表明”；下一步中的“已补入”成为第二行“已接通”，“不重开一般责任或交接原则”改写为“复用”，“不视为已完成完整混合排序”成为第三项“未表明”，“整体零实质公理奠基”由通用边界 zero-axiom-target-open 承担；对应与证据中的轮次编号 P95 改为“支承对应”“及时接续部分”，内容不变。主张、前提、状态、依赖、关联、证明绑定、引用与来源哈希均未改变。逐句对照见[迁移对照表](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md)；迁移前的完整记录为 text_versions[0]。",
       "en": "2026-10-14 readability migration to schema 2: the claim became the statement; the first limitations sentence is verbatim the only counterexample, which carries it (kept, since crossed basic losses staying unranked is witnessed by competing_claims_incomparable); the second became 2 typed does-not-show items; in the next step, “is supplied” became the second progress line, “do not reopen general responsibility or handoff principles” became “reusing” them, “do not claim complete mixed ranking” the third does-not-show item, and “a whole zero-substantive-axiom foundation” is carried by the standard boundary zero-axiom-target-open; the round label P95 in the correspondence and evidence became “support correspondence” and “the timely-continuation part”, with the content unchanged. No claim, premise, status, dependency, related link, proof binding, reference or source hash changed. Every earlier sentence is mapped in the [migration table](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/practical-judgment-g0-j.md); the exact earlier record is text_versions[0]."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Substitution.lean (the law of consumption kept under changed dependence added; existing statements unchanged)."
     }
   ],
   "text_versions": [

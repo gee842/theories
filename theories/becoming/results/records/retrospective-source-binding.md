@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [retrospective-source-binding.json](retrospective-source-binding.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:50:58.660938+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-取得的来源路径约束生成旧命名记录的原子候选；校准与历史覆盖条件下唯一绑定正确。指定先命名后校准的经历支持二词编码的任意有限组合解释及有限响应，同时保留后期路径改变造成的倒推错误。 / Acquired production-route constraints generate atomic candidates for earlier naming records; unique binding is correct under calibration and historical-coverage conditions. A specified naming-before-calibration history supports every finite compositional interpretation in the two-word encoding and a finite response, while retaining backward-inference failure after a later route change.
+取得的来源路径约束生成旧命名记录的原子候选；校准与历史覆盖条件下唯一绑定正确（既有的覆盖定理对每个记录成立）。取得词库的解释律的实例：先命名后校准的经历之后的绑定视图——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合；另有有限响应见证，同时保留后期路径改变造成的倒推错误。 / Acquired production-route constraints generate atomic candidates for earlier naming records; unique binding is correct under calibration and historical-coverage conditions (the existing coverage theorem holds for every record). An instance of the interpretation law for acquired lexicons: the binding view after the naming-before-calibration history — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms; a finite response has a separate witness, and backward-inference failure after a later route change is retained.
 
 Canonical source: [RetrospectiveBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean)
 
@@ -48,9 +48,11 @@ Lean 4.29.1：20项新定理／36项声明审计，284项继承定理／513项�
 |---|---|---|
 | proof | [RetrospectiveBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean) | `Generative.RetrospectiveBinding.acquired_routes_supply_binding_coverage`, `Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use`, `Generative.RetrospectiveBinding.acquired_reinterpretation_reaches_actual_response`, `Generative.RetrospectiveBinding.backward_transfer_can_fail_after_a_real_route_change`, `Generative.RetrospectiveBinding.packet_and_later_calibration_do_not_reveal_the_past_route` |
 | proof | [SourceReliance.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean) | `Generative.SourceReliance.actual_route_retained`, `Generative.SourceReliance.actual_world_compatible` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.retrospective_groups`, `Becoming.MachineInstances.retrospective_interprets_every` |
 | receipt | [retrospective-binding-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/retrospective-binding-verification.json) | — |
 | integration | [ACQUIRED-SEGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) | — |
 | provenance | [SOURCE-RELIANCE-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -58,10 +60,12 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。 / Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.
 
-Aliases / 别名: `Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use`
+Aliases / 别名: `Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use`, `Becoming.MachineInstances.retrospective_interprets_every`
 
 ## 沿革 History
 
 - 2026-10-09：组合已完成来源学习与绑定机制，新增后期校准重释旧记录、有限组合使用及真实路径改变的反例；整体认知目标保持未完成。 / 2026-10-09: composed completed source learning and binding, adding late-calibration reinterpretation of retained records, finite compositional use and a real route-change failure. The full cognitive objective remains incomplete.
 - 2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。 / 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
 - 2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。 / 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律的实例（取得词库的解释律见 acquired-binding-compositional-use；外围 MachineInstances）；覆盖之下的唯一绑定本已是对每个记录的律。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the result as an instance of the general law (the interpretation law for acquired lexicons, see acquired-binding-compositional-use; periphery, MachineInstances); unique binding under coverage was already a law for every record. Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): the general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.

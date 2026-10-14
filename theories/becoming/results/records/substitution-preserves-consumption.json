@@ -146,8 +146,8 @@
     "en": "Contains no ethical predicate; preservation holds on the whole-run reading only; for every web it holds only where the loss is witnessed by a dependence the change leaves; persistence by substitution, its timing and the sustaining formation's ending are proved in the support-gated law; the alternative's level is constant and its cost unmodelled; the individuation of formations is not treated (how identity across steps bears on these readings is in identity-across-steps)."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Substitution 7 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）把“只在一步上不被记入”限于 extracting，更正在 §12。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。2026-10-14 新增的消耗保持之律、其实例与 Lone 反例（5 项定理；Becoming.Substitution 现为 12 项）目前只有 scratch_build.py 的草稿构建（公理报告为空；不是回执）；合并检查器在合并时运行。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): all 7 theorems of Becoming.Substitution have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) scoped “withheld at one step only” to extracting, corrected in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The law of kept consumption, its instance and the Lone counterexample, added on 14 October 2026 (5 theorems; Becoming.Substitution now has 12), have so far a scratch build only (scratch_build.py: empty axiom reports; not a receipt); the consolidated checker runs when they land."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Substitution 7 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §8.6；另一 agent（Claude Opus 5.5，未参与撰写）作了独立审查（BECOMING-P7-REVIEW.md），其更正在整合文档 §11 处理；第三次独立审查（BECOMING-P8-P9-P7B-REVIEW.md）把“只在一步上不被记入”限于 extracting，更正在 §12。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。2026-10-14 新增的消耗保持之律、其实例与 Lone 反例（5 项定理；Becoming.Substitution 现为 12 项）由合并检查器回执 20261013T221720.428753Z 检查，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): all 12 theorems of Becoming.Substitution have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts. The author's counterreview is in §8.6 of the integration note; a separate agent (Claude Opus 5.5, not an author) reviewed it independently (BECOMING-P7-REVIEW.md), and its corrections are handled in §11; a third independent review (BECOMING-P8-P9-P7B-REVIEW.md) scoped “withheld at one step only” to extracting, corrected in §12. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The law of kept consumption, its instance and the Lone counterexample, added on 14 October 2026 (5 theorems; Becoming.Substitution now has 12), are checked in consolidated receipt 20261013T221720.428753Z with empty axiom reports."
   },
   "references": [
     {
@@ -213,7 +213,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
       "declarations": []
     },
     {
@@ -239,12 +239,18 @@
       "role": "review",
       "sha256": "7f0334aff71d61c2932ca9b2317ca5f47eaf1595e871b286ac95210104491a14",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
     }
   ],
   "proof_bindings": [
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Substitution.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Substitution",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -582,6 +588,10 @@
     {
       "zh": "2026-10-14，一般定律（一般定律计划 L2 流，由整合会话分派；AI 撰写，Claude Opus 5.5）：审计把本记录归为只在支持门控定律族内一般。Web.consumingIn_kept_iff 现对每个依存网确切说明：消耗者自身的依存自某步起无论怎样改变，消耗何时都保持——恰在损失由改变所留下的依存见证时（改变自开始起见 Web.consuming_survives_iff，另有 ConsumingThrough.consumingIn）；定律族中消耗的保持是实例（consuming_through_sustaining），Lone.own_witness_lost 表明只由自身依存见证损失的消耗者，在这一依存消解后不再消耗。持续的消耗者已转化其依存，是既有的一般定律 Web.consumed_continues_transformed；替代依存的形成与转向的时机仍在定律族中证明。主张改写为定律在先，限制中“只在支持门控定律中证明”换成定律的条件；原有结果与见证不变。合并时 Substitution 的证明绑定须改指新的合并回执。",
       "en": "14 October 2026, general law (general-laws plan, stream L2, assigned by the integrating session; AI-authored, Claude Opus 5.5): the audit classed this record as general only within the support-gated family. Web.consumingIn_kept_iff now states, for every web, exactly when consumption survives every change of the consumer's own dependence from a step on: when the loss is witnessed by a dependence the change leaves (with Web.consuming_survives_iff for a change from the start and ConsumingThrough.consumingIn); the family's persistence of consumption is an instance (consuming_through_sustaining), and Lone.own_witness_lost shows that a consumer whose own dependence alone witnesses the loss stops consuming when that dependence is dissolved. That a persisting consumer has transformed its dependence is the existing general law Web.consumed_continues_transformed; forming the alternative dependence and the timing of the switch remain proved in the family. The claim is rewritten law first and the limitation \"proved only in the support-gated law\" is replaced by the law's condition; earlier results and witnesses are unchanged. The Substitution proof binding must be re-pointed to a new consolidated receipt at landing."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；Substitution.lean（新增依存改变下消耗保持的规律，既有陈述不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); Substitution.lean (the law of consumption kept under changed dependence added; existing statements unchanged)."
     }
   ]
 }

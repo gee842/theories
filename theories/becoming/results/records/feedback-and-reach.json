@@ -183,8 +183,8 @@
     "en": "That a formation knows its reach closure or wants anything is not derived; a part is a decided family of formations, and one act of a formation is compared through a second flow (as in Clearing.unregistered); responding flows are supplied in the witnesses; the readings and names are the AI's, pending Ren; contains no ethical predicate."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed."
   },
   "references": [
     {
@@ -265,7 +265,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
       "role": "proof",
-      "sha256": "50a53898ad23cdd9013f705f4c34652b519ee30b0d01c4823512cb0b64eaee77",
+      "sha256": "7b148ddf6d28419c1aeeecc098f8f6bdc6bb9feb382bfece772b318aa87a4118",
       "declarations": [
         "Becoming.Clearing.flow",
         "Becoming.Clearing.web"
@@ -279,12 +279,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "0f49207845d497a0dd3a2b4ab594bf5a7d0f71284f7509bb0675b6be47ef4497"
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "8e5ff471e7a9fac31dc3dc368f8cc39861d575789a797362403d60266c62bb5f"
+      "sha256": "c455bcee7a0f3f654d4cb2cb2b4e4a9436e2fdd680a550259c5e16c9c4b101d2"
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
@@ -295,6 +295,12 @@
       "path": "sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md",
       "role": "provenance",
       "sha256": "cc3d43d6adea73e09194f9e119d0d707014e14cb2bae314ea48716b5611e2a98"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -328,7 +334,7 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Continuation",
       "success_pointer": "/status",
       "success_value": "passed"
@@ -486,6 +492,10 @@
     {
       "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
       "en": "14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Continuation.lean（新增恢复律 Flow.restores 及其推论，既有陈述不变）；BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Continuation.lean (the restoring law Flow.restores and its corollaries added; existing statements unchanged); BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
     }
   ]
 }

@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [enacted-scene-binding.json](enacted-scene-binding.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:50:58.660938+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。 / The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures.
+取得词库的解释律的实例：协调后的词库（coordinated 37）满足其条件——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合。指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入；另外有实际响应及访问、保留、时序失败见证。 / An instance of the interpretation law for acquired lexicons: The coordinated lexicon (coordinated 37) meets its conditions — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms. The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs; separate witnesses cover actual response and access, retention and timing failures.
 
 Canonical source: [EnactedScene.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean)
 
@@ -45,8 +45,10 @@ Lean 4.29.1 新查16项定理／29项声明审计，288项继承审计分列；�
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [EnactedScene.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean) | `Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs`, `Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation`, `Generative.EnactedScene.enacted_access_reaches_actual_response`, `Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination`, `Generative.EnactedScene.a_clear_view_can_omit_the_named_target` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.coordinated_groups`, `Becoming.MachineInstances.coordinated_resolves`, `Becoming.MachineInstances.coordinated_interprets_every` |
 | receipt | [enacted-scene-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json) | — |
 | integration | [ACQUIRED-SEGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -54,7 +56,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。 / Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.
 
-Aliases / 别名: `Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation`
+Aliases / 别名: `Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation`, `Becoming.MachineInstances.coordinated_interprets_every`
 
 ## 沿革 History
 
@@ -65,3 +67,5 @@ Aliases / 别名: `Generative.EnactedScene.enacted_access_enters_all_sequence_in
 - 2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。 / 2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection.
 - 2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。 / 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
 - 2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。 / 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律的实例（取得词库的解释律见 acquired-binding-compositional-use；外围 MachineInstances）。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the result as an instance of the general law (the interpretation law for acquired lexicons, see acquired-binding-compositional-use; periphery, MachineInstances). Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): the general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.

@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [formed-goal-revision-continuation.json](formed-goal-revision-continuation.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:23:59.802431+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-给定有损访问且转变保留维护的教育构造，取得的原目标为参与计数；既有比较支持学习实践，完成修订与选择改革后五次实际操作使用新目的并保留先前一次损失。 / In the supplied educational construction with access loss and preserved transition maintenance, acquisition forms the attendance goal; the existing comparison supports learning, and after revision and selector reform five actual operations consume the new goal while retaining the earlier loss.
+在给定的二实践教育构造中，对每个账户、选择器与操作次数：一种实践从账户 ⟨w,q,z⟩ 运行 n 个周期，当且仅当 n = 0，或 2 ≤ w 且工作覆盖储备不支持的周期（受支持周期在选择器反馈该实践时为 q/2，否则为 0）；学习目的的每次操作消耗该目的、保持选择器、加上转变损失（若有）并追加一条记录。修订恰在访问有损而转变维护保留时完成；对每个这样的条件，修订与改革之后 n 次操作运行当且仅当 n ≤ 5（不改革选择器时 n ≤ 2），每次操作使用新目的，先前一次损失保留。harmful 的标题结论是实例：取得的原目标为参与计数，既有比较支持学习实践，五次实际操作使用新目的并保留先前一次损失。 / In the supplied two-practice educational construction, for every account, selector and number of operations: a practice runs n cycles from the account ⟨w,q,z⟩ exactly when n = 0, or 2 ≤ w and the work covers the cycles the reserve does not support (q/2 supported cycles where the selector feeds the practice back, none otherwise); every operation of the learning goal consumes it, keeps the selector, adds the transition loss if any and appends one record. Revision completes exactly under access loss with kept transition maintenance; for every such condition, after revision and reform n operations run exactly when n ≤ 5 (n ≤ 2 without reforming the selector), each consuming the new goal, and the earlier loss is retained. The harmful headline is an instance: acquisition forms the attendance goal, the existing comparison supports learning, and five actual operations consume the new goal while retaining the earlier loss.
 
 Canonical source: [GoalFormationRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean)
 
@@ -38,8 +38,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [GoalFormationRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean) | `GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.cycle_eq`, `Becoming.MachineInstances.cycles_iff`, `Becoming.MachineInstances.cycles_learning_iff`, `Becoming.MachineInstances.cycles_unselected_iff`, `Becoming.MachineInstances.lossPer`, `Becoming.MachineInstances.learning_loss`, `Becoming.MachineInstances.operateMany_learning`, `Becoming.MachineInstances.completed_isSome_iff`, `Becoming.MachineInstances.revised_class`, `Becoming.MachineInstances.revision_continues`, `Becoming.MachineInstances.harmful_instance`, `Becoming.MachineInstances.harmful_bounds` |
 | receipt | [common-task-revision-verification.json](../../../../experiments/market-generativity/meta-attractor/common-task-revision-verification.json) | — |
 | integration | [GOAL-FORMATION-REVISION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -47,8 +50,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 复用此相连历史；在途工作连接已由 acquired-revision-of-pending-task 推进，持续适用仍需说明。 / Reuse this joined history; acquired-revision-of-pending-task advances the in-flight connection, while continuing applicability remains to establish.
 
-Aliases / 别名: `GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation`
+Aliases / 别名: `GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation`, `Becoming.MachineInstances.cycles_iff`, `Becoming.MachineInstances.operateMany_learning`, `Becoming.MachineInstances.completed_isSome_iff`, `Becoming.MachineInstances.revision_continues`, `Becoming.MachineInstances.harmful_instance`, `Becoming.MachineInstances.harmful_bounds`
 
 ## 沿革 History
 
 - 2026-10-09：迁移既有有界形成／修订定理；原稿与原回执保留，本轮仅把它重建为组合依赖。 / 2026-10-09: migrated the existing bounded formation/revision theorem; original sources and receipt remain, rebuilt here as a composition dependency.
+- 2026-10-14：按旧记录一般律审计，证明标题所需的一般律（外围 MachineInstances）：周期数恰由工作覆盖未受支持的周期决定，学习目的的操作对每个条件与状态保持目的、选择器并加上转变损失，修订恰在访问有损而维护保留时完成，此后对每个操作次数 n 运行恰当 n ≤ 5；harmful 的标题与两条界是实例。它不能写在脊柱上：GoalFormationRevision 的定义与已证事实依赖标准公理，纯核心与桥接不能导入它们；律的形状是该构造的账户算术，不是脊柱已有的概念。scratch_build 实编，声明只用标准公理；回执由落地运行与外围检查器 check_machine_instances.py 绑定。原定理与回执不变。 / 2026-10-14: under the general-law audit of older records, proved the general law the headline needs (periphery, MachineInstances): the number of cycles is fixed exactly by work covering the unsupported cycles; operating the learning goal keeps goal and selector and adds the transition loss, for every condition and state; revision completes exactly under access loss with kept maintenance, after which n operations run exactly when n ≤ 5, for every n. The harmful headline and its two bounds are instances. It cannot go on the spine: GoalFormationRevision's definitions and proved facts depend on standard axioms, which the pure core and bridge cannot import, and the law is this construction's account arithmetic rather than a notion the spine has. Built with scratch_build, standard axioms only; the landing run and the peripheral checker check_machine_instances.py bind the receipt. The original theorem and receipt are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.

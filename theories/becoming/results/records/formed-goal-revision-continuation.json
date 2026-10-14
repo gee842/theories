@@ -95,7 +95,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3eabe810edab020c1da90f8f780873651568e8376ea3e5573d59964a9af885c1",
+      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "role": "receipt",
+      "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
       "declarations": []
     }
   ],
@@ -104,6 +110,13 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
       "receipt": "experiments/market-generativity/meta-attractor/common-task-revision-verification.json",
       "sha256_pointer": "/modules/5/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
+      "sha256_pointer": "/source_sha256/MachineInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -120,6 +133,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，证明标题所需的一般律（外围 MachineInstances）：周期数恰由工作覆盖未受支持的周期决定，学习目的的操作对每个条件与状态保持目的、选择器并加上转变损失，修订恰在访问有损而维护保留时完成，此后对每个操作次数 n 运行恰当 n ≤ 5；harmful 的标题与两条界是实例。它不能写在脊柱上：GoalFormationRevision 的定义与已证事实依赖标准公理，纯核心与桥接不能导入它们；律的形状是该构造的账户算术，不是脊柱已有的概念。scratch_build 实编，声明只用标准公理；回执由落地运行与外围检查器 check_machine_instances.py 绑定。原定理与回执不变。",
       "en": "2026-10-14: under the general-law audit of older records, proved the general law the headline needs (periphery, MachineInstances): the number of cycles is fixed exactly by work covering the unsupported cycles; operating the learning goal keeps goal and selector and adds the transition loss, for every condition and state; revision completes exactly under access loss with kept maintenance, after which n operations run exactly when n ≤ 5, for every n. The harmful headline and its two bounds are instances. It cannot go on the spine: GoalFormationRevision's definitions and proved facts depend on standard axioms, which the pure core and bridge cannot import, and the law is this construction's account arithmetic rather than a notion the spine has. Built with scratch_build, standard axioms only; the landing run and the peripheral checker check_machine_instances.py bind the receipt. The original theorem and receipt are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports."
     }
   ]
 }

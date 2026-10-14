@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [acquired-binding-compositional-use.json](acquired-binding-compositional-use.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:50:58.660938+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T05:50:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定；对二词编码的任意有限序列，学习后的解释等于相应原子表达的组合。有限支持下另有实际执行见证。 / The specified history forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters. Interpretation of every finite sequence in the two-word encoding equals assembly of its corresponding atomic expressions. A separate finite-support witness executes the result.
+对每个逐词读出的读法：分组恢复词之处，读出每个编码序列给出其词义的组合，当且仅当每个词读作其义。对取得的词库：凡转移记录对二词编码成组（六个局部键条件），每个编码序列的解释等于其原子的组合，当且仅当每个词形解析为其原子。指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定，是实例。有限支持下另有实际执行见证。 / For every word-by-word reading: where grouping recovers the words, reading every encoded sequence gives the meanings of its words exactly when each word is read as its meaning. For acquired lexicons: wherever the transition record groups the two-word encoding (six local bond conditions), interpreting every encoded sequence equals the assembly of its atoms exactly when each word form resolves to its atom. The specified history, which forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters, is an instance. A separate finite-support witness executes the result.
 
 Canonical source: [AcquiredBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean)
 
@@ -45,8 +45,13 @@ Lean 4.29.1 新编23项定理／41项声明审计，247项继承审计分列。�
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [AcquiredBinding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean) | `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`, `Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage`, `Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response`, `Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding` |
+| proof | [Segmentation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Segmentation.lean) | `Becoming.Segmentation.readAll`, `Becoming.Segmentation.readAll_map_iff`, `Becoming.Segmentation.reads_every_iff` |
+| proof | [MachineInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean) | `Becoming.MachineInstances.Groups`, `Becoming.MachineInstances.segments_of_groups`, `Becoming.MachineInstances.readForms_eq`, `Becoming.MachineInstances.interprets_every_iff`, `Becoming.MachineInstances.learned_groups`, `Becoming.MachineInstances.learned_interprets_every` |
 | receipt | [acquired-binding-verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json) | — |
 | integration | [ACQUIRED-SEGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -54,7 +59,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。 / Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.
 
-Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`
+Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`, `Becoming.Segmentation.reads_every_iff`, `Becoming.Segmentation.readAll_map_iff`, `Becoming.MachineInstances.interprets_every_iff`, `Becoming.MachineInstances.readForms_eq`, `Becoming.MachineInstances.segments_of_groups`, `Becoming.MachineInstances.learned_interprets_every`
 
 ## 沿革 History
 
@@ -66,3 +71,5 @@ Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_comp
 - 2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。 / 2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection.
 - 2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。 / 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
 - 2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。 / 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行：逐词读出的律（Becoming.Segmentation）与取得词库的解释律（外围 MachineInstances）；learned 32 是实例。唯一绑定在覆盖下正确的既有定理本已一般。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first: the word-by-word reading law (Becoming.Segmentation) and the interpretation law for acquired lexicons (periphery, MachineInstances); learned 32 is an instance. The existing theorem that unique binding is correct under coverage was already general. Built with scratch_build; the landing run binds the receipts. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）。一般律现已绑定：Becoming.Segmentation 由核心回执 20261013T221720.428753Z；MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。 / 14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged). The general laws are now bound: Becoming.Segmentation by core receipt 20261013T221720.428753Z; MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports.
