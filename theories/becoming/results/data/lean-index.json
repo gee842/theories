@@ -46,7 +46,7 @@
   "files": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.lean",
-      "sha256": "bb01c2c522d75949d95bc3e5d1b969df6ac870fe135c53f6cc76814ae0d119e6",
+      "sha256": "1daf76580f61ab092cfa5c24aa56dd2c94f43aa40fd66a7ab01e766ba2a10e56",
       "role": "development-attempt",
       "group": "other",
       "package_readme": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
@@ -41917,6 +41917,63 @@
         "inductive": 2,
         "structure": 1,
         "theorem": 266
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "1daf76580f61ab092cfa5c24aa56dd2c94f43aa40fd66a7ab01e766ba2a10e56": {
+      "byte_size": 6001,
+      "line_count": 123,
+      "imports": [
+        "Lean",
+        "Becoming"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "binderKind",
+          "qualified_name_hint": "binderKind",
+          "line": 22
+        },
+        {
+          "kind": "def",
+          "name": "skipName",
+          "qualified_name_hint": "skipName",
+          "line": 45
+        },
+        {
+          "kind": "def",
+          "name": "clean",
+          "qualified_name_hint": "clean",
+          "line": 55
+        },
+        {
+          "kind": "def",
+          "name": "ppClean",
+          "qualified_name_hint": "ppClean",
+          "line": 58
+        },
+        {
+          "kind": "def",
+          "name": "inCore",
+          "qualified_name_hint": "inCore",
+          "line": 61
+        },
+        {
+          "kind": "def",
+          "name": "inventory",
+          "qualified_name_hint": "inventory",
+          "line": 64
+        }
+      ],
+      "declaration_counts": {
+        "def": 6
       },
       "textual_markers": {
         "sorry": [],
@@ -170086,63 +170143,6 @@
       "declaration_counts": {
         "def": 3,
         "theorem": 6
-      },
-      "textual_markers": {
-        "sorry": [],
-        "admit": [],
-        "axiom": [],
-        "native_decide": [],
-        "unsafe": []
-      },
-      "print_axioms_commands": 0
-    },
-    "bb01c2c522d75949d95bc3e5d1b969df6ac870fe135c53f6cc76814ae0d119e6": {
-      "byte_size": 5386,
-      "line_count": 114,
-      "imports": [
-        "Lean",
-        "Becoming"
-      ],
-      "declarations": [
-        {
-          "kind": "def",
-          "name": "binderKind",
-          "qualified_name_hint": "binderKind",
-          "line": 18
-        },
-        {
-          "kind": "def",
-          "name": "skipName",
-          "qualified_name_hint": "skipName",
-          "line": 36
-        },
-        {
-          "kind": "def",
-          "name": "clean",
-          "qualified_name_hint": "clean",
-          "line": 46
-        },
-        {
-          "kind": "def",
-          "name": "ppClean",
-          "qualified_name_hint": "ppClean",
-          "line": 49
-        },
-        {
-          "kind": "def",
-          "name": "inCore",
-          "qualified_name_hint": "inCore",
-          "line": 52
-        },
-        {
-          "kind": "def",
-          "name": "inventory",
-          "qualified_name_hint": "inventory",
-          "line": 55
-        }
-      ],
-      "declaration_counts": {
-        "def": 6
       },
       "textual_markers": {
         "sorry": [],
