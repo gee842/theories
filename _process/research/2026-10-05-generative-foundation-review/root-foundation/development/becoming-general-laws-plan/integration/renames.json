@@ -46,5 +46,12 @@
  "separation_surplus": "separation_admits_extra",
  "truncation_misleads": "truncation_misses_cancellation",
  "personClaim": "firstEpisodeOf",
- "Person": "Life"
+ "Person": "Life",
+ "fragile_b3_below_nothing": "fragile_b3_better_than_none",
+ "surplus_raises_at": "net_give_raises_at",
+ "surplus_bounded_at": "net_give_bounded_at",
+ "surplus_active": "netGive_active",
+ "surplus_step": "netGive_step",
+ "charge_some": "unit_drawn",
+ "charge_none": "stalls_unsupported"
 }
