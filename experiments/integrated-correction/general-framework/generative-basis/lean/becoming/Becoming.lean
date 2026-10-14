@@ -84,6 +84,7 @@ import Becoming.Assurance
 import Becoming.Segmentation
 import Becoming.Readout
 import Becoming.Gated
+import Becoming.Copying
 
 /-!
 # The Theory of Becoming: the formal core
@@ -797,6 +798,16 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
   changes it passes the gate, at a gated step that itself changes it.
+* `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
+  alphabet and law of charges, with no premise. A copy completes exactly when the pool holds
+  every token as often as the word uses it and the support covers its charges; copies from one
+  pool are all released exactly when the pool supplies the words together and the support
+  covers all their charges, in any order; under local charges, cost depends only on the number
+  of unlike adjacent pairs. A copy reading through contacts reproduces a word exactly when every
+  site reads its token and the copy is supplied and covered. Inspection never increases the
+  defects exactly where the reference is faithful; doubling for `n` rounds from `k` units runs
+  exactly when the stock covers a draw for each of the `k * (2 ^ n - 1)` units beyond the
+  start.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
