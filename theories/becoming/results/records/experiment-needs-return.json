@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "experiment-needs-return",
   "title": {
     "zh": "实验需要返回",
@@ -8,15 +8,106 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F11",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T15:00:00+00:00",
   "statement": {
     "zh": "相对于确定性，记录恰在取过之处固定一个动作的结果，自己的动作若换一个会怎样只在配置返回之处被固定。保留历史的运行永不返回，所以实验需要一个关于何者无关的模型。",
     "en": "Relative to determinacy, the record fixes a move's outcome exactly where it was taken, and what one's act would have done otherwise is fixed only where the configuration returns. A kept history never returns, so experiment needs a model of what is irrelevant."
   },
-  "claim": {
-    "zh": "设 r 是过程 P 的一个运行。相对于确定性，直到某步的记录把动作 a 在配置 s 的结果固定为 u，是指容许 r 在该步之前每一步的每个确定过程都把 a 在 s 送到 u（Run.Fixes）。运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处（Run.fixes_of_takes）；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论什么被识：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步（retarget、retarget_determined、Run.stepsOf_retarget、Run.not_fixes_of_untaken）。所以在配置返回之处，另一个动作的结果被固定（Run.fixes_on_return）；配置永不返回的运行，在经过的每个配置只固定它所取的动作（Run.not_fixes_other_of_new）。保留其所经配置与动作之历史的过程（keepHistory，Law.withHistory 带动作的对应）中，历史每步长一，所以每步都是新的（keepHistory_length、keepHistory_new），确定性保持（keepHistory_determined），关于自己的动作除了所做的什么都不固定（keepHistory_fixes_nothing_else）。经投影 π 读：运行取过 a 于投影为 k 的配置，经投影的记录固定其结果（Run.fixesThrough_of_takes）；P 的步经 π 分解为确定过程 Q 时（FactorsThrough），所固定的结果就是投影为 k 的每个配置经 π 的结果，无论运行是否经过它（Run.generalizes）；有限多个投影配置之内，投影从每一步起都返回（Run.projection_returns，revisits_from 的实例）。Confound 中配置是一个隐藏位与一个结果，每步翻转隐藏位、把结果设为步前的隐藏位，动作不造成差别（Confound.move_idle）；只读结果时，直到第二步的记录固定左得假、右得真（Confound.misattributes）；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都容许投影各步（Confound.confounded）；在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步（Confound.varied_refutes）。不用 Lean 公理。",
-    "en": "Let r be a run of a process P. Relative to determinacy, the record up to a step fixes the outcome of move a at configuration s to u when every determined process admitting each step of r before it sends a at s to u (Run.Fixes). Once the run has taken a at s, the record fixes it to where the run went (Run.fixes_of_takes); where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run (retarget, retarget_determined, Run.stepsOf_retarget, Run.not_fixes_of_untaken). So where the configuration returns, another move's outcome is fixed (Run.fixes_on_return), and a run whose configurations never return fixes, at each configuration it passes, no move other than the one it takes (Run.not_fixes_other_of_new). In the process keeping the history of configurations and moves passed through (keepHistory, the counterpart with moves of Law.withHistory) the past grows by one at each step, so every step is new (keepHistory_length, keepHistory_new), determinacy is kept (keepHistory_determined), and nothing about one's own acts but what one did is fixed (keepHistory_fixes_nothing_else). Read through a projection π: once the run has taken a at a configuration projecting to k, the record so read fixes its outcome (Run.fixesThrough_of_takes); where P's step factors through π into a determined process (FactorsThrough), the fixed outcome is the outcome, read through π, at every configuration projecting to k, passed by the run or not (Run.generalizes); within finitely many projected configurations the projection returns from every step on (Run.projection_returns, an instance of revisits_from). In Confound the configuration is a hidden bit and an outcome, each step flips the hidden bit and sets the outcome to the hidden bit before the step, and the move makes no difference (Confound.move_idle); read through the outcome, the record up to the second step fixes left to false and right to true (Confound.misattributes); with the moves in step with the hidden bit, the determined model in which the move decides the outcome admits the projected steps at every step (Confound.confounded); moving left again where the hidden bit differs from the first step, no determined process admits the projected steps up to the fifth (Confound.varied_refutes). No Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "设 r 是过程 P 的一个运行。相对于确定性，直到某步的记录把动作 a 在配置 s 的结果固定为 u，是指容许 r 在该步之前每一步的每个确定过程都把 a 在 s 送到 u。",
+      "en": "Let r be a run of a process P. Relative to determinacy, the record up to a step fixes the outcome of move a at configuration s to u when every determined process admitting each step of r before it sends a at s to u.",
+      "declarations": [
+        "Becoming.Run",
+        "Becoming.Run.Takes",
+        "Becoming.Run.StepsOf",
+        "Becoming.Run.Fixes",
+        "Becoming.Determined"
+      ]
+    },
+    {
+      "zh": "运行在某步之前取过 a 于 s，记录就把它固定为运行所到之处；P 确定、有两个不同的配置而运行没有取过 a 于 s 时，记录不固定它的任何结果，无论什么被识：把 a 在 s 改送到任一配置、其余不变的过程仍确定，并容许运行的每一步。",
+      "en": "Once the run has taken a at s, the record fixes it to where the run went; where P is determined, there are two different configurations and the run has not taken a at s, the record fixes no outcome of it, whatever registers: the process sending a at s to any configuration and otherwise as P is still determined and admits every step of the run.",
+      "declarations": [
+        "Becoming.Run.fixes_of_takes",
+        "Becoming.retarget",
+        "Becoming.retarget_determined",
+        "Becoming.retarget_step",
+        "Becoming.Run.stepsOf_retarget",
+        "Becoming.Run.not_fixes_of_untaken"
+      ]
+    },
+    {
+      "zh": "所以在配置返回之处，另一个动作的结果被固定；P 确定、有两个不同的配置时，配置永不返回的运行在经过的每个配置只固定它所取的动作。",
+      "en": "So where the configuration returns, another move's outcome is fixed; with P determined and two different configurations, a run whose configurations never return fixes, at each configuration it passes, no move other than the one it takes.",
+      "declarations": [
+        "Becoming.Run.fixes_on_return",
+        "Becoming.Run.ordered_of_ne",
+        "Becoming.Run.not_fixes_other_of_new"
+      ]
+    },
+    {
+      "zh": "保留其所经配置与动作之历史的过程（keepHistory，Law.withHistory 带动作的对应）中，历史每步长一，所以每步都是新的；确定性保持；P 确定、有两个不同的配置时，关于自己的动作除了所做的什么都不固定。",
+      "en": "In the process keeping the history of configurations and moves passed through (keepHistory, the counterpart with moves of Law.withHistory) the past grows by one at each step, so every step is new; determinacy is kept; and, with P determined and two different configurations, nothing about one's own acts but what one did is fixed.",
+      "declarations": [
+        "Becoming.keepHistory",
+        "Becoming.Law.withHistory",
+        "Becoming.keepHistory_length",
+        "Becoming.keepHistory_new",
+        "Becoming.keepHistory_determined",
+        "Becoming.keepHistory_fixes_nothing_else"
+      ]
+    },
+    {
+      "zh": "经投影 π 读：运行取过 a 于投影为 k 的配置，经投影的记录固定其结果；P 的步经 π 分解为确定过程时，所固定的结果就是投影为 k 的每个配置经 π 的结果，无论运行是否经过它。",
+      "en": "Read through a projection π: once the run has taken a at a configuration projecting to k, the record so read fixes its outcome; where P's step factors through π into a determined process, the fixed outcome is the outcome, read through π, at every configuration projecting to k, passed by the run or not.",
+      "declarations": [
+        "Becoming.Run.StepsThrough",
+        "Becoming.Run.FixesThrough",
+        "Becoming.Run.fixesThrough_of_takes",
+        "Becoming.FactorsThrough",
+        "Becoming.Run.stepsThrough_of_factors",
+        "Becoming.Run.generalizes"
+      ]
+    },
+    {
+      "zh": "有限多个投影配置之内（一个列表持有每一个），投影从每一步起都返回，是 revisits_from 的实例。",
+      "en": "Within finitely many projected configurations (a list holding every one), the projection returns from every step on, an instance of revisits_from.",
+      "declarations": [
+        "Becoming.Run.projection_returns",
+        "Becoming.revisits_from"
+      ]
+    },
+    {
+      "zh": "Confound 中配置是一个隐藏位与一个结果，每步翻转隐藏位、把结果设为步前的隐藏位，动作不造成差别；只读结果、前两个动作为左与右时，直到第二步的记录固定左得假、右得真。",
+      "en": "In Confound the configuration is a hidden bit and an outcome, each step flips the hidden bit and sets the outcome to the hidden bit before the step, and the move makes no difference; read through the outcome, where the first two moves are left then right, the record up to the second step fixes left to false and right to true.",
+      "declarations": [
+        "Becoming.Confound.Move",
+        "Becoming.Confound.next",
+        "Becoming.Confound.process",
+        "Becoming.Confound.states",
+        "Becoming.Confound.outcome",
+        "Becoming.Confound.determined",
+        "Becoming.Confound.move_idle",
+        "Becoming.Confound.run",
+        "Becoming.Confound.misattributes"
+      ]
+    },
+    {
+      "zh": "动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都容许投影各步；在隐藏位与第一步不同之处再向左，没有确定过程容许直到第五步的投影各步。",
+      "en": "With the moves in step with the hidden bit, the determined model in which the move decides the outcome admits the projected steps at every step; moving left again where the hidden bit differs from the first step, no determined process admits the projected steps up to the fifth.",
+      "declarations": [
+        "Becoming.Confound.hidden_two",
+        "Becoming.Confound.aligned",
+        "Becoming.Confound.aligned_with_hidden",
+        "Becoming.Confound.moveDecides",
+        "Becoming.Confound.moveDecides_determined",
+        "Becoming.Confound.confounded",
+        "Becoming.Confound.varied",
+        "Becoming.Confound.varied_refutes"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "固定相对于确定性：比较的是容许记录的确定过程类（Joint.Determined），不是对展开的假设；“未取的不被固定”另要实际过程确定、有两个不同的配置。",
@@ -35,9 +126,63 @@
       "en": "Discrete steps, counted from step 0; configurations and moves of any type."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "这些规律不推出形成变动其动作、保留或遗忘其历史、形成投影。",
+      "en": "The laws do not derive that a formation varies its acts, keeps or forgets its history, or forms a projection.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "实际展开经哪个投影分解是经验问题。",
+      "en": "Which projection the actual unfolding factors through is empirical.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "随机或不确定的过程没有陈述。",
+      "en": "Random or undetermined processes are not treated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "全配置的返回在实际中罕见，正面结果实际上都经投影。",
+      "en": "Whole configurations rarely return in practice, so the positive results in practice go through projections.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "与 Becoming.Testing 的识的形式桥接没有陈述。",
+      "en": "The formal bridge to Becoming.Testing's registration is not stated.",
+      "kind": "scope"
+    },
+    {
+      "zh": "动作与隐藏者的何种相关使模型永不被否证，一般形式没有陈述。",
+      "en": "The general form of which correlation between moves and what is hidden leaves a model unrefuted is not stated.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
+      "detail": {
+        "zh": "错误的投影误归因而永不被否证：Confound 中动作不造成差别，只读结果时记录固定左得假、右得真；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都被容许（Confound.misattributes、Confound.confounded）。只有与隐藏位错开的动作否证它（Confound.varied_refutes）。",
+        "en": "A wrong projection misattributes and is never refuted: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit refute it (Confound.varied_refutes)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "names-provisional",
+    "no-ethical-premise"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T221720.428753Z）：Becoming.Experiment 的定理公理报告为空，并核对核心纯净；Experiment、Recurrence 与 Frame 的绑定为 20261013T094743.528770Z，Joint 为 20261013T221720.428753Z，Testing 为 20261014T091930.724493Z。作者反审见整合文档；按 Ren 的“no extra review needed”不作独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z): the theorems of Becoming.Experiment have empty axiom reports, and the checker verifies core purity; Experiment, Recurrence and Frame are bound by 20261013T094743.528770Z, Joint by 20261013T221720.428753Z, Testing by 20261014T091930.724493Z. Author counterreview in the integration note; at Ren's “no extra review needed” there is no independent review."
+  },
+  "next_delta": {
+    "zh": "以 Becoming.Testing 的识为投影的形式桥接（见 projection-carrying-a-law 与 generalization-through-lumping）；动作与隐藏者的何种相关使模型永不被否证的一般形式；动作中被遗忘的部分造成差别时的实验（见 causal-models-as-processes）。",
+    "en": "The formal bridge with Becoming.Testing's registration as the projection (see projection-carrying-a-law and generalization-through-lumping); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (see causal-models-as-processes)."
+  },
   "correspondence": {
-    "zh": "P49 留下的开放项（审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较。Ren 在 P49 落地后写“land and merge all, then continue”，看过结果后写“no extra review needed, merge, then continue”。读法（AI 的，待 Ren）：实验是在配置（按实验者的读法）返回之处变动自己的动作；重复是这一返回；对照是步骤经读法分解的模型；与略去者无关的变动是随机化的结构形式；以 P49 的识为读法，阈下与所及之外的不见是不分解的情形。见整合文档 §72。",
-    "en": "P49's open item (review F6): what an act does compares the history with it and the history without it. After P49 landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, pending Ren): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with P49's registration as the reading, threshold and reach blindness are cases where the step does not factor. See §72 of the integration note."
+    "zh": "testing-within-registration 留下的开放项（审查 F6）：一个动作造成什么，是有与无此动作的两段历史的比较。Ren 在那一结果落地后写“land and merge all, then continue”，看过结果后写“no extra review needed, merge, then continue”。读法（AI 的，待 Ren）：实验是在配置（按实验者的读法）返回之处变动自己的动作；重复是这一返回；对照是步骤经读法分解的模型；与略去者无关的变动是随机化的结构形式；以 testing-within-registration 的识为读法，阈下与所及之外的不见是不分解的情形。",
+    "en": "The open item of testing-within-registration (review F6): what an act does compares the history with it and the history without it. After that result landed Ren wrote “land and merge all, then continue”, and on the result “no extra review needed, merge, then continue”. Readings (the AI's, pending Ren): an experiment is varying one's own act where the configuration, as the experimenter reads it, returns; replication is that return; a control is the model that the step factors through the reading; variation independent of what is left out is the structural form of randomization; with the registration of testing-within-registration as the reading, threshold and reach blindness are cases where the step does not factor."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
   "aliases": [
@@ -159,23 +304,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
-      "detail": {
-        "zh": "错误的投影误归因而永不被否证：Confound 中动作不造成差别，只读结果时记录固定左得假、右得真；动作与隐藏位同步时，“动作决定结果”的确定模型在每一步都被容许（Confound.misattributes、Confound.confounded）。只有与隐藏位错开的动作否证它（Confound.varied_refutes）。",
-        "en": "A wrong projection misattributes and is never refuted: in Confound the move makes no difference, yet read through the outcome the record fixes left to false and right to true, and with the moves in step with the hidden bit the determined model in which the move decides the outcome is admitted at every step (Confound.misattributes, Confound.confounded). Only moves varied against the hidden bit refute it (Confound.varied_refutes)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "形成变动其动作、保留或遗忘其历史、形成投影都不推出；实际展开经哪个投影分解是经验问题；随机或不确定的过程没有陈述；全配置的返回在实际中罕见，正面结果实际上都经投影；与 Becoming.Testing 的识的形式桥接没有陈述；动作与隐藏者的何种相关使模型永不被否证，一般形式没有陈述；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "That a formation varies its acts, keeps or forgets its history, or forms a projection is not derived; which projection the actual unfolding factors through is empirical; random or undetermined processes are not treated; whole configurations rarely return in practice, so the positive results in practice go through projections; the formal bridge to Becoming.Testing's registration is not stated; the general form of which correlation between moves and what is hidden leaves a model unrefuted is not stated; the readings are the AI's, pending Ren; contains no ethical predicate."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Experiment 的 25 项定理全部空依赖，其中含 Run.fixes_of_takes、Run.not_fixes_of_untaken、keepHistory_fixes_nothing_else、Run.generalizes 与 Confound.varied_refutes；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §72；按 Ren 的“no extra review needed”不作独立审查。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): the 25 theorems of Becoming.Experiment all have empty axiom reports, among them Run.fixes_of_takes, Run.not_fixes_of_untaken, keepHistory_fixes_nothing_else, Run.generalizes and Confound.varied_refutes; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §72 of the integration note; at Ren's “no extra review needed” there is no independent review."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Experiment.lean",
@@ -333,10 +461,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "以 Becoming.Testing 的识为投影的形式桥接（对任一投影，P66 给出条件：恰在投影相同的配置同去时，有确定过程经它容许如此读的每一步，carries_law_iff；P73 给出观察到的结果何时正确转移：恰在两个配置经投影以该动作同去之处，transfer_right_iff）；动作与隐藏者的何种相关使模型永不被否证的一般形式；动作中被遗忘的部分造成差别时的实验（P68：遗忘噪声后，标准模型恰在噪声不造成差别时确定，forget_inputs_determined_iff）。",
-    "en": "The formal bridge with Becoming.Testing's registration as the projection (for any projection P66 states the condition: some determined process through it admits every step so read exactly where configurations alike under it go alike, carries_law_iff; P73 states when an observed outcome transfers rightly: exactly where the two configurations go alike under the projection by the move, transfer_right_iff); the general form of which correlation between moves and what is hidden leaves a model unrefuted; experiment where a forgotten part of the move makes a difference (P68: with the noise forgotten, the standard model is determined exactly where the noise makes no difference, forget_inputs_determined_iff)."
-  },
   "history": [
     {
       "zh": "2026-10-11 P53：新增，按 Ren“land and merge all, then continue”与“no extra review needed, merge, then continue”；统一计划 P53；回答 P49（§70）的开放项；见整合文档 §72。",
@@ -477,6 +601,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：主张拆为 8 条规律；限制分入“未表明”与通用边界；证据成为一段。两条规律写出定理所带、旧主张靠上下文的条件：永不返回的运行与保留历史者“只固定所做的”写出“P 确定、有两个不同的配置”（not_fixes_other_of_new 与 keepHistory_fixes_nothing_else 的 determined、two；旧文本只在前提中对“未取的不被固定”写出），Confound 的误归因写出“前两个动作为左与右”（misattributes 的 first、second）。“不用 Lean 公理”与前提中没有伦理前提，引用通用边界 no-ethical-premise。对应中 P49 改为 testing-within-registration；“见整合文档 §72”并入证据（作者反审见整合文档）。next_delta 中 P66、P73、P68 的括注是已完成的连接，移入此处：对任一投影，P66 给出条件：恰在投影相同的配置同去时，有确定过程经它容许如此读的每一步（carries_law_iff，projection-carrying-a-law）；P73 给出观察到的结果何时正确转移：恰在两个配置经投影以该动作同去之处（transfer_right_iff，generalization-through-lumping）；P68：遗忘噪声后，标准模型恰在噪声不造成差别时确定（forget_inputs_determined_iff，causal-models-as-processes）。下一步保留三项本身，并以“见”指向这些记录。证据中的定理数、模块与审计总数及外围回执 20261013T095049.338744Z 留在回执与 text_versions 末项中。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [experiment-needs-return.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/experiment-needs-return.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 8 laws; the limitations went to does-not-show items and standard boundaries; the evidence became one paragraph. Two laws state conditions their theorems carry that the old claim left to context: the never-returning run and the kept history fixing only what was done say “with P determined and two different configurations” (determined and two of not_fixes_other_of_new and keepHistory_fixes_nothing_else; the old text wrote them in the hypotheses only for “an untaken move is not fixed”), and Confound's misattribution says “where the first two moves are left then right” (first and second of misattributes). “No Lean axiom is used”, with no ethical premise among the hypotheses, cites the standard boundary no-ethical-premise. In the correspondence P49 became testing-within-registration, and “See §72 of the integration note” joined the evidence (author counterreview in the integration note). The parentheses of P66, P73 and P68 in next_delta are completed connections and are kept here: for any projection P66 states the condition, some determined process through it admits every step so read exactly where configurations alike under it go alike (carries_law_iff, projection-carrying-a-law); P73 states when an observed outcome transfers rightly, exactly where the two configurations go alike under the projection by the move (transfer_right_iff, generalization-through-lumping); P68, with the noise forgotten, the standard model is determined exactly where the noise makes no difference (forget_inputs_determined_iff, causal-models-as-processes). next_delta keeps the three items and points to those records with “see”. The theorem, module and audit counts of the evidence and the periphery receipt 20261013T095049.338744Z stay in the receipts and the last text_versions entry. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [experiment-needs-return.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/experiment-needs-return.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/45aaef17adb1820b/experiment-needs-return.json",
+      "sha256": "45aaef17adb1820bad104761a9e8d8d5b6477b2c20fd8548a78cc72aa203929f",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
