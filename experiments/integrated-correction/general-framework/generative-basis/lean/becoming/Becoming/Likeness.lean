@@ -10,9 +10,11 @@ determinacy up to likeness (`DeterminedAt`). `Becoming.Branching` (P81) restated
 of `Becoming.Experiment` and `Becoming.Mechanism` up to likeness and named, with witnesses, those
 needing equality. This module completes that list: the exact form of `carries_law_iff`, the
 image's determinacy, `Run.not_fixes_other_of_new`, the theorems on what a record through a
-projection does not fix and `Dependence.determined_dichotomy`, each up to likeness, with the theorem stated with equality as its named instance, and shows that
-branching tests fix likeness constructively where frames are finite and decided. No premise is
-added; every declaration has an empty axiom report.
+projection does not fix and `Dependence.determined_dichotomy`, each up to likeness, with the
+theorem stated with equality as its named instance. It shows that branching tests fix likeness
+constructively where frames are finite and decided, that neither decision can be dropped, and
+which principle the finitely many configurations save where only each move's outcomes are listed.
+No premise is added; every declaration has an empty axiom report.
 
 * **A description carries a law up to likeness exactly where some equivalence registering the
   claims makes configurations go alike** (`carries_law_alike_iff`). Some process on the
@@ -67,14 +69,41 @@ added; every declaration has an empty axiom report.
 * **The decisions cannot be dropped from deciding likeness.** Asked of every pair of frames with
   one configuration, one move and no claims, whether their configurations are alike is decided
   exactly under excluded middle (`alike_decided_iff_em`, through `OneLoop`).
+* **Nor from the equivalence.** That configurations passing the same branching tests are alike
+  holds, for every frame on a listed type of configurations with one move and no claims, exactly
+  under excluded middle (`alike_of_sameBranchingTests_iff_em`, through `EitherStep`), and so for
+  every such frame with one claim and decided steps
+  (`alike_of_sameBranchingTests_decided_steps_iff_em`, through `EitherClaim`). In both, a
+  configuration with three successors and one with two pass the same tests whatever a
+  proposition is, the third successor passing what one of the other two passes; they are alike
+  only where the proposition is decided.
+* **Where only each move's outcomes are listed, branching tests fix likeness exactly under a
+  principle.** Where the moves and claims are listed, the claims are decided and each move of each
+  configuration has a listed set of outcomes (`OutcomesListed`), configurations passing the same
+  branching tests are alike given `EitherThroughout`: of two decided families, each holding at a
+  step where it holds at the next, one of which holds at each step, one holds at every step
+  (`OutcomesListed.alike_iff_sameBranchingTests`). Likeness to every depth is then a bisimulation,
+  the principle choosing, among a step's listed outcomes, one alike to it at every depth
+  (`EitherThroughout.list`). Conversely the theorem for every such frame gives the principle
+  (`alike_of_sameBranchingTests_outcomes_iff`, through `Chains`): a configuration stepping to two
+  chains, each going on while its family holds, and one stepping to these and to a chain that
+  always goes on pass the same tests, and are alike only where one family holds at every step.
+  Excluded middle gives the principle (`EitherThroughout.of_em`). The principle is `EitherNever`:
+  of two decided families not both holding somewhere, one holds nowhere
+  (`eitherThroughout_iff_eitherNever`); `NowhereDecided`, that whether a decided family holds
+  nowhere is decided, gives it (`EitherThroughout.of_nowhereDecided`), and excluded middle gives
+  `NowhereDecided` (`NowhereDecided.of_em`). Where a move has infinitely many outcomes, branching
+  tests need not fix likeness, with no principle needed to show it: a configuration stepping to
+  chains of every length and one stepping also to a chain that never ends pass the same tests and
+  are not alike (`Unbounded.sameBranchingTests`, `Unbounded.not_alike`).
 * **A branching test sees when a choice is made.** The starts of `Choosing.late` and
   `Choosing.early` pass the same tests and are not alike (`Becoming.Histories`); that the first
   move can lead to a configuration where both `b` and `c` can be taken holds at the one and fails
   at the other (`Choosing.branching_apart`).
 
-What is not derived: whether configurations of finite frames passing the same branching tests
-are alike without the decisions of `FiniteDecided`; the correspondence of `BranchingTest` with the periphery's `Test`, which a bridge
-would state.
+What is not derived: whether `EitherThroughout` gives `NowhereDecided` or excluded middle; that it
+does not would take a model outside the core. `Becoming.Bridge` reads `BranchingTest` as the
+periphery's `Test` (`sameBranchingTests_iff_same`).
 
 The readings are the AI's, pending Ren.
 -/
@@ -855,6 +884,892 @@ theorem alike_decided_iff_em :
     | .inl alike => .inl ((OneLoop.alike_iff p).mp alike)
     | .inr fails => .inr fun holds => fails ((OneLoop.alike_iff p).mpr holds),
    fun em _ _ => em _⟩
+
+/-! ## Where each move has listed outcomes -/
+
+/-- **Of two decided families, each holding at a step where it holds at the next, one of which
+holds at every step, one holds at every step.** A principle of reasoning, not a law of the
+unfolding: excluded middle gives it, and the frames whose configurations are infinitely many and
+whose moves have finitely many outcomes need it (`alike_of_sameBranchingTests_outcomes_iff`). -/
+def EitherThroughout : Prop :=
+  ∀ α β : Nat → Prop, (∀ k, Decided (α k)) → (∀ k, Decided (β k)) →
+    (∀ k, α (k + 1) → α k) → (∀ k, β (k + 1) → β k) → (∀ k, α k ∨ β k) →
+      (∀ k, α k) ∨ (∀ k, β k)
+
+/-- **Excluded middle gives `EitherThroughout`**: where the first family fails somewhere, the
+second holds at every later step and so at every step; where it fails nowhere, it holds at every
+step. -/
+theorem EitherThroughout.of_em (em : ∀ p : Prop, Decided p) : EitherThroughout :=
+  fun α β decided _ down down' each => match em (∃ k, ¬ α k) with
+  | .inl ⟨k, fails⟩ => .inr fun m => match each (m + k) with
+    | .inl holds => absurd (holds_below (P := fun j (_ : Unit) => α j) (x := ())
+        (fun j _ holds => down j holds) (Nat.le_add_left k m) holds) fails
+    | .inr holds => holds_below (P := fun j (_ : Unit) => β j) (x := ())
+        (fun j _ holds => down' j holds) (Nat.le_add_right m k) holds
+  | .inr absent => .inl fun k => (decided k).of_not_not fun fails => absent ⟨k, fails⟩
+
+/-- **Of two decided families that do not both hold somewhere, one holds nowhere.** A principle of
+reasoning: `EitherThroughout` in another form (`eitherThroughout_iff_eitherNever`). -/
+def EitherNever : Prop :=
+  ∀ α β : Nat → Prop, (∀ k, Decided (α k)) → (∀ k, Decided (β k)) →
+    ¬ ((∃ k, α k) ∧ (∃ k, β k)) → (∀ k, ¬ α k) ∨ (∀ k, ¬ β k)
+
+/-- **Whether a decided family holds nowhere is decided.** A principle of reasoning that excluded
+middle gives (`NowhereDecided.of_em`) and that gives `EitherNever`. -/
+def NowhereDecided : Prop :=
+  ∀ α : Nat → Prop, (∀ k, Decided (α k)) → Decided (∀ k, ¬ α k)
+
+/-- **`EitherThroughout` is `EitherNever`.** Given `EitherThroughout`, the families "the first
+family has not yet held" and "the second has not yet held" are decided and decreasing, and one of
+them holds at each step, since both failing would give both families holding somewhere; so one
+holds throughout. Given `EitherNever`, where two decreasing families hold one at each step, their
+failures do not both occur somewhere, since failing at `k` and at `j` both fail at `k + j`. -/
+theorem eitherThroughout_iff_eitherNever : EitherThroughout ↔ EitherNever :=
+  ⟨fun either α β decided decided' apart =>
+    let below := fun (γ : Nat → Prop) (decided : ∀ k, Decided (γ k)) k =>
+      Decided.exists_below (P := γ) (M := 0) (U := k + 1) fun t _ _ => decided t
+    match either (fun k => ¬ ∃ t, 0 ≤ t ∧ t < k + 1 ∧ α t)
+        (fun k => ¬ ∃ t, 0 ≤ t ∧ t < k + 1 ∧ β t) (fun k => (below α decided k).not)
+        (fun k => (below β decided' k).not)
+        (fun _ absent ⟨t, from_, early, holds⟩ => absent ⟨t, from_, Nat.lt_succ_of_lt early, holds⟩)
+        (fun _ absent ⟨t, from_, early, holds⟩ => absent ⟨t, from_, Nat.lt_succ_of_lt early, holds⟩)
+        (fun k => match below α decided k, below β decided' k with
+          | .inl ⟨t, _, _, holds⟩, .inl ⟨t', _, _, holds'⟩ =>
+            absurd ⟨⟨t, holds⟩, ⟨t', holds'⟩⟩ apart
+          | .inr absent, _ => .inl absent
+          | _, .inr absent => .inr absent) with
+    | .inl absent => .inl fun k holds => absent k ⟨k, Nat.zero_le k, Nat.lt_succ_self k, holds⟩
+    | .inr absent => .inr fun k holds => absent k ⟨k, Nat.zero_le k, Nat.lt_succ_self k, holds⟩,
+   fun never α β decided decided' down down' each =>
+    match never (fun k => ¬ α k) (fun k => ¬ β k) (fun k => (decided k).not)
+        (fun k => (decided' k).not) (fun ⟨⟨k, fails⟩, ⟨j, fails'⟩⟩ => match each (k + j) with
+          | .inl holds => fails (holds_below (P := fun i (_ : Unit) => α i) (x := ())
+              (fun i _ holds => down i holds) (Nat.le_add_right k j) holds)
+          | .inr holds => fails' (holds_below (P := fun i (_ : Unit) => β i) (x := ())
+              (fun i _ holds => down' i holds) (Nat.le_add_left j k) holds)) with
+    | .inl never => .inl fun k => (decided k).of_not_not (never k)
+    | .inr never => .inr fun k => (decided' k).of_not_not (never k)⟩
+
+/-- **`NowhereDecided` gives `EitherNever`**: where the first family holds nowhere, done; where it
+does not hold nowhere, the second holding somewhere would make both hold somewhere. -/
+theorem EitherNever.of_nowhereDecided (nowhere : NowhereDecided) : EitherNever :=
+  fun α _ decided _ apart => match nowhere α decided with
+  | .inl absent => .inl absent
+  | .inr present => .inr fun k holds => present fun k' holds' => apart ⟨⟨k', holds'⟩, ⟨k, holds⟩⟩
+
+/-- Excluded middle gives `NowhereDecided`. -/
+theorem NowhereDecided.of_em (em : ∀ p : Prop, Decided p) : NowhereDecided :=
+  fun _ _ => em _
+
+/-- **`NowhereDecided` gives `EitherThroughout`.** -/
+theorem EitherThroughout.of_nowhereDecided (nowhere : NowhereDecided) : EitherThroughout :=
+  eitherThroughout_iff_eitherNever.mpr (EitherNever.of_nowhereDecided nowhere)
+
+section Outcomes
+
+variable {S : Type u} {S' : Type u'} {A : Type v} {C : Type w}
+
+/-- Whether a decided determination holds of every member of a list is decided. -/
+theorem Decided.forall_in {β : Type u} {P : β → Prop} {l : List β}
+    (decided : ∀ b, b ∈ l → Decided (P b)) : Decided (∀ b, b ∈ l → P b) :=
+  match Decided.exists_listed (l := l) fun b mem => (decided b mem).not with
+  | .inl ⟨b, mem, fails⟩ => .inr fun all => fails (all b mem)
+  | .inr absent => .inl fun b mem => (decided b mem).of_not_not fun fails => absent ⟨b, mem, fails⟩
+
+/-- A decided determination that does not hold of every member of a list fails of some member. -/
+theorem Decided.exists_not_in {β : Type u} {P : β → Prop} {l : List β}
+    (decided : ∀ b, b ∈ l → Decided (P b)) (fails : ¬ ∀ b, b ∈ l → P b) : ∃ b, b ∈ l ∧ ¬ P b :=
+  match Decided.exists_listed (l := l) fun b mem => (decided b mem).not with
+  | .inl found => found
+  | .inr absent =>
+    absurd (fun b mem => (decided b mem).of_not_not fun fails' => absent ⟨b, mem, fails'⟩) fails
+
+/-- **One member of a list holds a decreasing family throughout, where one member holds it at
+each step**, given `EitherThroughout`: the first member holds it throughout, or the rest hold it
+at each step, since where both failed at some steps they would fail together at the later. -/
+theorem EitherThroughout.list (either : EitherThroughout) {β : Type u} {P : Nat → β → Prop}
+    (decided : ∀ k b, Decided (P k b)) (down : ∀ k b, P (k + 1) b → P k b) :
+    ∀ l : List β, (∀ k, ∃ b, b ∈ l ∧ P k b) → ∃ b, b ∈ l ∧ ∀ k, P k b
+  | [], each => match each 0 with
+    | ⟨_, mem, _⟩ => nomatch mem
+  | b :: l, each =>
+    match either (fun k => P k b) (fun k => ∃ c, c ∈ l ∧ P k c) (fun k => decided k b)
+        (fun k => Decided.exists_listed fun c _ => decided k c) (fun k => down k b)
+        (fun k ⟨c, mem, holds⟩ => ⟨c, mem, down k c holds⟩)
+        (fun k => match each k with
+          | ⟨c, mem, holds⟩ => match mem_cons_split mem with
+            | .inl same => .inl (Eq.subst (motive := P k) same holds)
+            | .inr mem => .inr ⟨c, mem, holds⟩) with
+    | .inl first => ⟨b, .head l, first⟩
+    | .inr rest => match EitherThroughout.list either decided down l rest with
+      | ⟨c, mem, holds⟩ => ⟨c, .tail b mem, holds⟩
+
+/-- A frame whose moves each have listed outcomes and whose claims are decided. -/
+structure OutcomesListed (F : Frame S A C) : Prop where
+  outcomes : ∀ s a, ∃ l : List S, ∀ t, F.P.step s a t ↔ t ∈ l
+  realized : ∀ s c, Decided (F.realized s c)
+
+variable {F : Frame S A C} {G : Frame S' A C}
+
+/-- Whether two configurations realize the same claims is decided where the claims are listed
+and decided. -/
+theorem OutcomesListed.sameClaims_decided (claims : ∃ l : List C, ∀ c, c ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) (s : S) (s' : S') :
+    Decided (∀ c, F.realized s c ↔ G.realized s' c) :=
+  match claims with
+  | ⟨_, allClaims⟩ => Decided.forall_of_listed allClaims fun c =>
+    (listed.realized s c).iff (listed'.realized s' c)
+
+/-- Whether an outcome of a move is matched by an outcome of the other configuration's move into a
+decided relation is decided where the outcomes are listed. -/
+theorem OutcomesListed.matched_decided {R : S → S' → Prop} (listed' : OutcomesListed G)
+    (decided : ∀ t t', Decided (R t t')) (s' : S') (a : A) (t : S) :
+    Decided (∃ t', G.P.step s' a t' ∧ R t t') :=
+  match listed'.outcomes s' a with
+  | ⟨_, outcome'⟩ =>
+    match Decided.exists_listed fun t' _ => decided t t' with
+    | .inl ⟨t', mem, related⟩ => .inl ⟨t', (outcome' t').mpr mem, related⟩
+    | .inr absent => .inr fun ⟨t', step, related⟩ => absent ⟨t', (outcome' t').mp step, related⟩
+
+/-- Whether each outcome of one configuration is matched is decided where the moves are listed
+and the outcomes of both frames are listed. -/
+theorem OutcomesListed.forth_decided {R : S → S' → Prop} (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) (decided : ∀ t t', Decided (R t t'))
+    (s : S) (s' : S') : Decided (∀ a t, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ R t t') :=
+  match moves with
+  | ⟨_, allMoves⟩ => Decided.forall_of_listed allMoves fun a =>
+    match listed.outcomes s a with
+    | ⟨_, outcome⟩ =>
+      match Decided.forall_in fun t _ => listed'.matched_decided decided s' a t with
+      | .inl all => .inl fun t step => all t ((outcome t).mp step)
+      | .inr fails => .inr fun all => fails fun t mem => all t ((outcome t).mpr mem)
+
+/-- Where not every outcome of one configuration is matched, some outcome of some move is matched
+by no outcome of the other's move. -/
+theorem OutcomesListed.unmatched {R : S → S' → Prop} (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) (decided : ∀ t t', Decided (R t t'))
+    {s : S} {s' : S'} (fails : ¬ ∀ a t, F.P.step s a t → ∃ t', G.P.step s' a t' ∧ R t t') :
+    ∃ a t, F.P.step s a t ∧ ∀ t', G.P.step s' a t' → ¬ R t t' :=
+  match moves with
+  | ⟨_, allMoves⟩ =>
+    match Decided.exists_not_of_listed allMoves (fun a => match listed.outcomes s a with
+        | ⟨_, outcome⟩ =>
+          match Decided.forall_in fun t _ => listed'.matched_decided decided s' a t with
+          | .inl all => .inl fun t step => all t ((outcome t).mp step)
+          | .inr fails => .inr fun all => fails fun t mem => all t ((outcome t).mpr mem))
+        fails with
+    | ⟨a, failsAt⟩ => match listed.outcomes s a with
+      | ⟨_, outcome⟩ =>
+        match Decided.exists_not_in (fun t _ => listed'.matched_decided decided s' a t)
+            fun all => failsAt fun t step => all t ((outcome t).mp step) with
+        | ⟨t, mem, unmet⟩ =>
+          ⟨a, t, (outcome t).mpr mem, fun t' step' related => unmet ⟨t', step', related⟩⟩
+
+/-- **Alike to every depth is decided** where the moves and claims are listed and each move's
+outcomes are listed in both frames. -/
+theorem OutcomesListed.alikeTo_decided (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (listed : OutcomesListed F) (listed' : OutcomesListed G) :
+    ∀ k s s', Decided (AlikeTo F G k s s')
+  | 0, s, s' => listed.sameClaims_decided claims listed' s s'
+  | k + 1, s, s' =>
+    (listed.sameClaims_decided claims listed' s s').and
+      ((OutcomesListed.forth_decided moves listed listed'
+          (OutcomesListed.alikeTo_decided moves claims listed listed' k) s s').and
+        (OutcomesListed.forth_decided (R := fun t' t => AlikeTo F G k t t') moves listed' listed
+          (fun t' t => OutcomesListed.alikeTo_decided moves claims listed listed' k t t') s' s))
+
+/-- One branching test holding at `x` and failing at every member of a list, where for each
+member some test holds at `x` and fails there. -/
+theorem BranchingTest.apart_from_list {S : Type u} {S' : Type u'} (F : Frame S A C)
+    (G : Frame S' A C) {x : S}
+    : ∀ l : List S', (∀ y, y ∈ l → ∃ φ, BranchingTest.Holds F x φ ∧ ¬ BranchingTest.Holds G y φ) →
+      ∃ φ, BranchingTest.Holds F x φ ∧ ∀ y, y ∈ l → ¬ BranchingTest.Holds G y φ
+  | [], _ => ⟨.top, True.intro, fun _ mem => nomatch mem⟩
+  | y :: l, apart =>
+    match BranchingTest.apart_from_list F G l (fun z mem => apart z (.tail y mem)),
+        apart y (.head l) with
+    | ⟨ψ, holds, fails⟩, ⟨χ, holds', fails'⟩ =>
+      ⟨.both χ ψ, ⟨holds', holds⟩, fun z mem both =>
+        match mem_cons_split mem with
+        | .inl same => fails' (Eq.subst (motive := fun w => BranchingTest.Holds G w χ) same
+            (show BranchingTest.Holds G z χ ∧ BranchingTest.Holds G z ψ from both).1)
+        | .inr mem => fails z mem
+            (show BranchingTest.Holds G z χ ∧ BranchingTest.Holds G z ψ from both).2⟩
+
+/-- Where configurations differ in a claim, a claim or its failure tells them apart. -/
+theorem OutcomesListed.apart_of_claims (claims : ∃ l : List C, ∀ c, c ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) {s : S} {s' : S'}
+    (differ : ¬ ∀ c, F.realized s c ↔ G.realized s' c) :
+    ∃ φ, BranchingTest.Holds F s φ ∧ ¬ BranchingTest.Holds G s' φ :=
+  match claims with
+  | ⟨_, allClaims⟩ =>
+    match Decided.exists_not_of_listed allClaims
+        (fun c => (listed.realized s c).iff (listed'.realized s' c)) differ with
+    | ⟨c, not_same⟩ => match listed.realized s c with
+      | .inl real => ⟨.claim c, real, fun real' => not_same ⟨fun _ => real', fun _ => real⟩⟩
+      | .inr unreal => ⟨.not (.claim c), unreal, fun unreal' =>
+          not_same ⟨fun real => absurd real unreal, fun real' => absurd real' unreal'⟩⟩
+
+/-- **Where configurations are not alike to depth `k`, a branching test holds at one and fails at
+the other**, on frames whose moves have listed outcomes: `apart_of_not_alikeTo` with the outcomes
+listed in place of the configurations. -/
+theorem OutcomesListed.apart_of_not_alikeTo (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (listed : OutcomesListed F) (listed' : OutcomesListed G) :
+    ∀ (k : Nat) {s : S} {s' : S'}, ¬ AlikeTo F G k s s' →
+      ∃ φ, BranchingTest.Holds F s φ ∧ ¬ BranchingTest.Holds G s' φ
+  | 0, _, _, fails => listed.apart_of_claims claims listed' fails
+  | k + 1, s, s', fails =>
+    have below := OutcomesListed.alikeTo_decided moves claims listed listed' k
+    match listed.sameClaims_decided claims listed' s s' with
+    | .inr differ => listed.apart_of_claims claims listed' differ
+    | .inl same =>
+      match OutcomesListed.forth_decided moves listed listed' below s s' with
+      | .inr unmatched =>
+        match OutcomesListed.unmatched moves listed listed' below unmatched with
+        | ⟨a, t, step, unmet⟩ => match listed'.outcomes s' a with
+          | ⟨l', outcome'⟩ =>
+            match BranchingTest.apart_from_list F G (x := t) l' fun t' mem =>
+                OutcomesListed.apart_of_not_alikeTo moves claims listed listed' k
+                  (unmet t' ((outcome' t').mpr mem)) with
+            | ⟨φ, holds, fails'⟩ =>
+              ⟨.can a φ, ⟨t, step, holds⟩, fun ⟨t', step', holds'⟩ =>
+                fails' t' ((outcome' t').mp step') holds'⟩
+      | .inl forth =>
+        match OutcomesListed.forth_decided (R := fun t' t => AlikeTo F G k t t') moves listed'
+            listed (fun t' t => below t t') s' s with
+        | .inl back => absurd ⟨same, forth, back⟩ fails
+        | .inr unmatched =>
+          match OutcomesListed.unmatched (R := fun t' t => AlikeTo F G k t t') moves listed' listed
+              (fun t' t => below t t') unmatched with
+          | ⟨a, t', step', unmet⟩ => match listed.outcomes s a with
+            | ⟨l, outcome⟩ =>
+              match BranchingTest.apart_from_list G F (x := t') l fun t mem =>
+                  match OutcomesListed.apart_of_not_alikeTo moves claims listed listed' k
+                      (unmet t ((outcome t).mpr mem)) with
+                  | ⟨φ, holds, fails'⟩ => ⟨.not φ, fails', fun refuted => refuted holds⟩ with
+              | ⟨φ, holds, fails'⟩ =>
+                ⟨.not (.can a φ), fun ⟨t, step, holds'⟩ => fails' t ((outcome t).mp step) holds',
+                 fun refuted => refuted ⟨t', step', holds⟩⟩
+
+/-- Configurations passing the same branching tests are alike to every depth, where each move's
+outcomes are listed. -/
+theorem OutcomesListed.alikeTo_of_same (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (claims : ∃ l : List C, ∀ c, c ∈ l) (listed : OutcomesListed F) (listed' : OutcomesListed G)
+    {s : S} {s' : S'} (same : SameBranchingTests F G s s') (k : Nat) : AlikeTo F G k s s' :=
+  (OutcomesListed.alikeTo_decided moves claims listed listed' k s s').of_not_not fun fails =>
+    match OutcomesListed.apart_of_not_alikeTo moves claims listed listed' k fails with
+    | ⟨φ, holds, fails'⟩ => fails' ((same φ).mp holds)
+
+/-- **Alike to every depth is a bisimulation where each move's outcomes are listed, given
+`EitherThroughout`**: among the listed outcomes matching a step to each depth, one matches it to
+every depth. -/
+theorem OutcomesListed.alikeTo_bisimulation (either : EitherThroughout)
+    (moves : ∃ l : List A, ∀ a, a ∈ l) (claims : ∃ l : List C, ∀ c, c ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) :
+    Bisimulation F G (fun s s' => ∀ k, AlikeTo F G k s s') :=
+  fun s s' alike =>
+    ⟨(alike 0),
+     fun a t step => match listed'.outcomes s' a with
+      | ⟨l', outcome'⟩ =>
+        match either.list (P := fun k t' => AlikeTo F G k t t')
+            (fun k t' => OutcomesListed.alikeTo_decided moves claims listed listed' k t t')
+            (fun _ _ joined => AlikeTo.of_succ joined) l'
+            (fun k => match (alike (k + 1)).2.1 a t step with
+              | ⟨t', step', joined⟩ => ⟨t', (outcome' t').mp step', joined⟩) with
+        | ⟨t', mem, joined⟩ => ⟨t', (outcome' t').mpr mem, joined⟩,
+     fun a t' step' => match listed.outcomes s a with
+      | ⟨l, outcome⟩ =>
+        match either.list (P := fun k t => AlikeTo F G k t t')
+            (fun k t => OutcomesListed.alikeTo_decided moves claims listed listed' k t t')
+            (fun _ _ joined => AlikeTo.of_succ joined) l
+            (fun k => match (alike (k + 1)).2.2 a t' step' with
+              | ⟨t, step, joined⟩ => ⟨t, (outcome t).mp step, joined⟩) with
+        | ⟨t, mem, joined⟩ => ⟨t, (outcome t).mpr mem, joined⟩⟩
+
+/-- **Branching tests fix likeness where each move's outcomes are listed, given
+`EitherThroughout`.** Where the moves and claims are listed, the claims are decided and each move
+of each configuration has a listed set of outcomes, configurations are alike exactly where they
+pass the same branching tests; the configurations may be infinitely many. -/
+theorem OutcomesListed.alike_iff_sameBranchingTests (either : EitherThroughout)
+    (moves : ∃ l : List A, ∀ a, a ∈ l) (claims : ∃ l : List C, ∀ c, c ∈ l)
+    (listed : OutcomesListed F) (listed' : OutcomesListed G) {s : S} {s' : S'} :
+    Alike F G s s' ↔ SameBranchingTests F G s s' :=
+  ⟨Alike.sameBranchingTests, fun same =>
+    ⟨_, OutcomesListed.alikeTo_bisimulation either moves claims listed listed',
+     OutcomesListed.alikeTo_of_same moves claims listed listed' same⟩⟩
+
+end Outcomes
+
+/-! ## Where the decisions or the finiteness are dropped -/
+
+namespace EitherStep
+
+/-- Configurations: `three` steps to `goes`, `halts` and `either`; `two` steps to `goes` and
+`halts`; `goes` steps to `after`; `either` steps to `after` exactly where `p` holds. -/
+inductive Pos where
+  | three
+  | two
+  | goes
+  | halts
+  | either
+  | after
+
+/-- The steps of the one move. -/
+inductive Step (p : Prop) : Pos → Pos → Prop where
+  | threeGoes : Step p .three .goes
+  | threeHalts : Step p .three .halts
+  | threeEither : Step p .three .either
+  | twoGoes : Step p .two .goes
+  | twoHalts : Step p .two .halts
+  | goesAfter : Step p .goes .after
+  | eitherAfter : p → Step p .either .after
+
+/-- The frame of `p`, with no claims. -/
+def frame (p : Prop) : Frame Pos Unit Empty :=
+  ⟨⟨fun s _ t => Step p s t⟩, fun _ c => nomatch c⟩
+
+/-- A list holds every configuration. -/
+theorem listed : ∀ s : Pos, s ∈ [Pos.three, .two, .goes, .halts, .either, .after]
+  | .three => .head _
+  | .two => .tail _ (.head _)
+  | .goes => .tail _ (.tail _ (.head _))
+  | .halts => .tail _ (.tail _ (.tail _ (.head _)))
+  | .either => .tail _ (.tail _ (.tail _ (.tail _ (.head _))))
+  | .after => .tail _ (.tail _ (.tail _ (.tail _ (.tail _ (.head _)))))
+
+variable {p : Prop}
+
+/-- At `goes`, `halts` and `after`, whether a branching test holds is decided. -/
+theorem settled_decided : ∀ φ : BranchingTest Unit Empty,
+    Decided (BranchingTest.Holds (frame p) .goes φ) ∧
+      Decided (BranchingTest.Holds (frame p) .halts φ) ∧
+        Decided (BranchingTest.Holds (frame p) .after φ)
+  | .top => ⟨.inl True.intro, .inl True.intro, .inl True.intro⟩
+  | .claim c => nomatch c
+  | .not φ => match settled_decided φ with
+    | ⟨goes, halts, after⟩ => ⟨goes.not, halts.not, after.not⟩
+  | .both φ ψ => match settled_decided φ, settled_decided ψ with
+    | ⟨goes, halts, after⟩, ⟨goes', halts', after'⟩ =>
+      ⟨goes.and goes', halts.and halts', after.and after'⟩
+  | .can _ φ =>
+    ⟨(match (settled_decided φ).2.2 with
+      | .inl holds => .inl ⟨.after, .goesAfter, holds⟩
+      | .inr fails => .inr fun ⟨_, step, holds⟩ => match step with
+        | .goesAfter => fails holds),
+     .inr (fun ⟨_, step, _⟩ => nomatch step),
+     .inr (fun ⟨_, step, _⟩ => nomatch step)⟩
+
+/-- Where `p` holds, `either` passes the tests `goes` passes. -/
+theorem either_holds_of (holds : p) : ∀ φ : BranchingTest Unit Empty,
+    BranchingTest.Holds (frame p) .either φ ↔ BranchingTest.Holds (frame p) .goes φ
+  | .top => Iff.rfl
+  | .claim c => nomatch c
+  | .not φ => ⟨fun fails passes => fails ((either_holds_of holds φ).mpr passes),
+      fun fails passes => fails ((either_holds_of holds φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(either_holds_of holds φ).mp first, (either_holds_of holds ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(either_holds_of holds φ).mpr first, (either_holds_of holds ψ).mpr second⟩⟩
+  | .can _ _ => ⟨fun ⟨_, step, passes⟩ => match step with
+        | .eitherAfter _ => ⟨.after, .goesAfter, passes⟩,
+      fun ⟨_, step, passes⟩ => match step with
+        | .goesAfter => ⟨.after, .eitherAfter holds, passes⟩⟩
+
+/-- Where `p` fails, `either` passes the tests `halts` passes. -/
+theorem either_holds_of_not (fails : ¬ p) : ∀ φ : BranchingTest Unit Empty,
+    BranchingTest.Holds (frame p) .either φ ↔ BranchingTest.Holds (frame p) .halts φ
+  | .top => Iff.rfl
+  | .claim c => nomatch c
+  | .not φ => ⟨fun fails' passes => fails' ((either_holds_of_not fails φ).mpr passes),
+      fun fails' passes => fails' ((either_holds_of_not fails φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(either_holds_of_not fails φ).mp first, (either_holds_of_not fails ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(either_holds_of_not fails φ).mpr first, (either_holds_of_not fails ψ).mpr second⟩⟩
+  | .can _ _ => ⟨fun ⟨_, step, _⟩ => match step with
+        | .eitherAfter holds => absurd holds fails,
+      (fun ⟨_, step, _⟩ => nomatch step)⟩
+
+/-- What `either` passes, `goes` or `halts` passes: not deciding `p`, but because `p` is not
+refuted to be decided and each test is decided at `goes` and at `halts`. -/
+theorem either_settles (φ : BranchingTest Unit Empty)
+    (passes : BranchingTest.Holds (frame p) .either φ) :
+    BranchingTest.Holds (frame p) .goes φ ∨ BranchingTest.Holds (frame p) .halts φ :=
+  match (settled_decided (p := p) φ).1, (settled_decided (p := p) φ).2.1 with
+  | .inl goes, _ => .inl goes
+  | _, .inl halts => .inr halts
+  | .inr not_goes, .inr not_halts =>
+    False.elim (not_not_decided p fun settled => match settled with
+        | .inl holds => not_goes ((either_holds_of holds φ).mp passes)
+        | .inr fails => not_halts ((either_holds_of_not fails φ).mp passes))
+
+/-- **`three` and `two` pass the same branching tests**, whatever `p` is. -/
+theorem sameBranchingTests : SameBranchingTests (frame p) (frame p) .three .two
+  | .top => Iff.rfl
+  | .claim c => nomatch c
+  | .not φ => ⟨fun fails passes => fails ((sameBranchingTests φ).mpr passes),
+      fun fails passes => fails ((sameBranchingTests φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mp first, (sameBranchingTests ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mpr first, (sameBranchingTests ψ).mpr second⟩⟩
+  | .can _ φ => ⟨fun ⟨_, step, passes⟩ => match step with
+        | .threeGoes => ⟨.goes, .twoGoes, passes⟩
+        | .threeHalts => ⟨.halts, .twoHalts, passes⟩
+        | .threeEither => match either_settles φ passes with
+          | .inl goes => ⟨.goes, .twoGoes, goes⟩
+          | .inr halts => ⟨.halts, .twoHalts, halts⟩,
+      fun ⟨_, step, passes⟩ => match step with
+        | .twoGoes => ⟨.goes, .threeGoes, passes⟩
+        | .twoHalts => ⟨.halts, .threeHalts, passes⟩⟩
+
+/-- **Where `three` and `two` are alike, `p` is decided**: the step from `three` to `either` is
+met from `two` at `goes`, where `p` holds, or at `halts`, where it fails. -/
+theorem decided_of_alike (alike : Alike (frame p) (frame p) .three .two) : Decided p :=
+  match alike.step (a := ()) (t := .either) .threeEither with
+  | ⟨_, .twoGoes, joined⟩ =>
+    .inl (match joined.symm.step (a := ()) (t := .after) .goesAfter with
+      | ⟨_, .eitherAfter holds, _⟩ => holds)
+  | ⟨_, .twoHalts, joined⟩ =>
+    .inr fun holds => match joined.step (a := ()) (t := .after) (.eitherAfter holds) with
+      | ⟨_, step, _⟩ => nomatch step
+
+end EitherStep
+
+namespace EitherClaim
+
+/-- Configurations: `three` steps to `marked`, `unmarked` and `either`; `two` steps to `marked`
+and `unmarked`. -/
+inductive Pos where
+  | three
+  | two
+  | marked
+  | unmarked
+  | either
+
+/-- The steps of the one move. -/
+inductive Step : Pos → Pos → Prop where
+  | threeMarked : Step .three .marked
+  | threeUnmarked : Step .three .unmarked
+  | threeEither : Step .three .either
+  | twoMarked : Step .two .marked
+  | twoUnmarked : Step .two .unmarked
+
+/-- Where the one claim is realized: always at `marked`, exactly where `p` holds at `either`. -/
+def Marked (p : Prop) : Pos → Prop
+  | .three => False
+  | .two => False
+  | .marked => True
+  | .unmarked => False
+  | .either => p
+
+/-- The frame of `p`, with one claim. -/
+def frame (p : Prop) : Frame Pos Unit Unit :=
+  ⟨⟨fun s _ t => Step s t⟩, fun s _ => Marked p s⟩
+
+/-- A list holds every configuration. -/
+theorem listed : ∀ s : Pos, s ∈ [Pos.three, .two, .marked, .unmarked, .either]
+  | .three => .head _
+  | .two => .tail _ (.head _)
+  | .marked => .tail _ (.tail _ (.head _))
+  | .unmarked => .tail _ (.tail _ (.tail _ (.head _)))
+  | .either => .tail _ (.tail _ (.tail _ (.tail _ (.head _))))
+
+/-- Whether one configuration steps to another is decided. -/
+theorem step_decided : ∀ s t : Pos, Decided (Step s t)
+  | .three, .marked => .inl .threeMarked
+  | .three, .unmarked => .inl .threeUnmarked
+  | .three, .either => .inl .threeEither
+  | .two, .marked => .inl .twoMarked
+  | .two, .unmarked => .inl .twoUnmarked
+  | .three, .three => .inr fun step => nomatch step
+  | .three, .two => .inr fun step => nomatch step
+  | .two, .three => .inr fun step => nomatch step
+  | .two, .two => .inr fun step => nomatch step
+  | .two, .either => .inr fun step => nomatch step
+  | .marked, _ => .inr fun step => nomatch step
+  | .unmarked, _ => .inr fun step => nomatch step
+  | .either, _ => .inr fun step => nomatch step
+
+variable {p : Prop}
+
+/-- At `marked` and `unmarked`, whether a branching test holds is decided. -/
+theorem settled_decided : ∀ φ : BranchingTest Unit Unit,
+    Decided (BranchingTest.Holds (frame p) .marked φ) ∧
+      Decided (BranchingTest.Holds (frame p) .unmarked φ)
+  | .top => ⟨.inl True.intro, .inl True.intro⟩
+  | .claim _ => ⟨.inl True.intro, .inr id⟩
+  | .not φ => match settled_decided φ with
+    | ⟨marked, unmarked⟩ => ⟨marked.not, unmarked.not⟩
+  | .both φ ψ => match settled_decided φ, settled_decided ψ with
+    | ⟨marked, unmarked⟩, ⟨marked', unmarked'⟩ => ⟨marked.and marked', unmarked.and unmarked'⟩
+  | .can _ _ => ⟨.inr (fun ⟨_, step, _⟩ => nomatch step), .inr (fun ⟨_, step, _⟩ => nomatch step)⟩
+
+/-- Where `p` holds, `either` passes the tests `marked` passes. -/
+theorem either_holds_of (holds : p) : ∀ φ : BranchingTest Unit Unit,
+    BranchingTest.Holds (frame p) .either φ ↔ BranchingTest.Holds (frame p) .marked φ
+  | .top => Iff.rfl
+  | .claim _ => ⟨fun _ => True.intro, fun _ => holds⟩
+  | .not φ => ⟨fun fails passes => fails ((either_holds_of holds φ).mpr passes),
+      fun fails passes => fails ((either_holds_of holds φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(either_holds_of holds φ).mp first, (either_holds_of holds ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(either_holds_of holds φ).mpr first, (either_holds_of holds ψ).mpr second⟩⟩
+  | .can _ _ => ⟨(fun ⟨_, step, _⟩ => nomatch step), (fun ⟨_, step, _⟩ => nomatch step)⟩
+
+/-- Where `p` fails, `either` passes the tests `unmarked` passes. -/
+theorem either_holds_of_not (fails : ¬ p) : ∀ φ : BranchingTest Unit Unit,
+    BranchingTest.Holds (frame p) .either φ ↔ BranchingTest.Holds (frame p) .unmarked φ
+  | .top => Iff.rfl
+  | .claim _ => ⟨fun holds => fails holds, fun absent => nomatch absent⟩
+  | .not φ => ⟨fun fails' passes => fails' ((either_holds_of_not fails φ).mpr passes),
+      fun fails' passes => fails' ((either_holds_of_not fails φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(either_holds_of_not fails φ).mp first, (either_holds_of_not fails ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(either_holds_of_not fails φ).mpr first, (either_holds_of_not fails ψ).mpr second⟩⟩
+  | .can _ _ => ⟨(fun ⟨_, step, _⟩ => nomatch step), (fun ⟨_, step, _⟩ => nomatch step)⟩
+
+/-- What `either` passes, `marked` or `unmarked` passes. -/
+theorem either_settles (φ : BranchingTest Unit Unit)
+    (passes : BranchingTest.Holds (frame p) .either φ) :
+    BranchingTest.Holds (frame p) .marked φ ∨ BranchingTest.Holds (frame p) .unmarked φ :=
+  match (settled_decided (p := p) φ).1, (settled_decided (p := p) φ).2 with
+  | .inl marked, _ => .inl marked
+  | _, .inl unmarked => .inr unmarked
+  | .inr not_marked, .inr not_unmarked =>
+    False.elim (not_not_decided p fun settled => match settled with
+        | .inl holds => not_marked ((either_holds_of holds φ).mp passes)
+        | .inr fails => not_unmarked ((either_holds_of_not fails φ).mp passes))
+
+/-- **`three` and `two` pass the same branching tests**, whatever `p` is. -/
+theorem sameBranchingTests : SameBranchingTests (frame p) (frame p) .three .two
+  | .top => Iff.rfl
+  | .claim _ => Iff.rfl
+  | .not φ => ⟨fun fails passes => fails ((sameBranchingTests φ).mpr passes),
+      fun fails passes => fails ((sameBranchingTests φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mp first, (sameBranchingTests ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mpr first, (sameBranchingTests ψ).mpr second⟩⟩
+  | .can _ φ => ⟨fun ⟨_, step, passes⟩ => match step with
+        | .threeMarked => ⟨.marked, .twoMarked, passes⟩
+        | .threeUnmarked => ⟨.unmarked, .twoUnmarked, passes⟩
+        | .threeEither => match either_settles φ passes with
+          | .inl marked => ⟨.marked, .twoMarked, marked⟩
+          | .inr unmarked => ⟨.unmarked, .twoUnmarked, unmarked⟩,
+      fun ⟨_, step, passes⟩ => match step with
+        | .twoMarked => ⟨.marked, .threeMarked, passes⟩
+        | .twoUnmarked => ⟨.unmarked, .threeUnmarked, passes⟩⟩
+
+/-- **Where `three` and `two` are alike, `p` is decided**: the step from `three` to `either` is
+met from `two` at `marked`, where the claim is realized, or at `unmarked`, where it is not. -/
+theorem decided_of_alike (alike : Alike (frame p) (frame p) .three .two) : Decided p :=
+  match alike.step (a := ()) (t := .either) .threeEither with
+  | ⟨_, .twoMarked, joined⟩ => .inl ((joined.realized ()).mpr True.intro)
+  | ⟨_, .twoUnmarked, joined⟩ => .inr fun holds => (joined.realized ()).mp holds
+
+end EitherClaim
+
+/-- **Without decided steps, branching tests fix likeness of finite frames exactly under excluded
+middle.** That configurations passing the same branching tests are alike, for every frame on a
+listed type of configurations with one move and no claims, holds exactly where every proposition
+is decided: the decided steps of `FiniteDecided` cannot be dropped from
+`alike_iff_sameBranchingTests`. -/
+theorem alike_of_sameBranchingTests_iff_em :
+    (∀ (S : Type) (F G : Frame S Unit Empty) (s s' : S), (∃ l : List S, ∀ x, x ∈ l) →
+        SameBranchingTests F G s s' → Alike F G s s') ↔ ∀ p : Prop, Decided p :=
+  ⟨fun fixes p => EitherStep.decided_of_alike (fixes _ (EitherStep.frame p) (EitherStep.frame p)
+      .three .two ⟨_, EitherStep.listed⟩ EitherStep.sameBranchingTests),
+   fun em _ _ _ _ _ listed same =>
+    (alike_iff_sameBranchingTests ⟨[()], fun _ => .head _⟩ ⟨[], fun c => nomatch c⟩
+      ⟨listed, fun _ _ _ => em _, fun _ _ => em _⟩ ⟨listed, fun _ _ _ => em _, fun _ _ => em _⟩).mpr
+      same⟩
+
+/-- **Without decided claims, branching tests fix likeness of finite frames with decided steps
+exactly under excluded middle**: the decided claims of `FiniteDecided` cannot be dropped either. -/
+theorem alike_of_sameBranchingTests_decided_steps_iff_em :
+    (∀ (S : Type) (F G : Frame S Unit Unit) (s s' : S), (∃ l : List S, ∀ x, x ∈ l) →
+        (∀ x a y, Decided (F.P.step x a y)) → (∀ x a y, Decided (G.P.step x a y)) →
+        SameBranchingTests F G s s' → Alike F G s s') ↔ ∀ p : Prop, Decided p :=
+  ⟨fun fixes p => EitherClaim.decided_of_alike (fixes _ (EitherClaim.frame p) (EitherClaim.frame p)
+      .three .two ⟨_, EitherClaim.listed⟩ (fun x _ y => EitherClaim.step_decided x y)
+      (fun x _ y => EitherClaim.step_decided x y) EitherClaim.sameBranchingTests),
+   fun em _ _ _ _ _ listed _ _ same =>
+    (alike_iff_sameBranchingTests ⟨[()], fun _ => .head _⟩ ⟨[()], fun _ => .head _⟩
+      ⟨listed, fun _ _ _ => em _, fun _ _ => em _⟩ ⟨listed, fun _ _ _ => em _, fun _ _ => em _⟩).mpr
+      same⟩
+
+namespace Chains
+
+/-- Configurations: `three` steps to the starts of the two chains `on true` and `on false` and
+of the endless chain; `two` steps to the starts of the two chains. -/
+inductive Pos where
+  | three
+  | two
+  | on (b : Bool) (n : Nat)
+  | endless (n : Nat)
+
+/-- The family a chain goes on along: `α` for `on true`, `β` for `on false`. -/
+def Side (α β : Nat → Prop) : Bool → Nat → Prop
+  | true => α
+  | false => β
+
+/-- The steps of the one move: the chain `on b` goes on from `n` exactly where its family holds
+at `n`; the endless chain always goes on. -/
+inductive Step (α β : Nat → Prop) : Pos → Pos → Prop where
+  | threeOn (b : Bool) : Step α β .three (.on b 0)
+  | threeEndless : Step α β .three (.endless 0)
+  | twoOn (b : Bool) : Step α β .two (.on b 0)
+  | onward (b : Bool) (n : Nat) : Side α β b n → Step α β (.on b n) (.on b (n + 1))
+  | endlessOnward (n : Nat) : Step α β (.endless n) (.endless (n + 1))
+
+/-- The frame of `α` and `β`, with no claims. -/
+def frame (α β : Nat → Prop) : Frame Pos Unit Empty :=
+  ⟨⟨fun s _ t => Step α β s t⟩, fun _ c => nomatch c⟩
+
+/-- How deep a branching test looks: the most moves it follows in a row. -/
+def depth {A : Type v} {C : Type w} : BranchingTest A C → Nat
+  | .top => 0
+  | .claim _ => 0
+  | .not φ => depth φ
+  | .both φ ψ => depth φ + depth ψ
+  | .can _ φ => depth φ + 1
+
+variable {α β : Nat → Prop}
+
+/-- Where both families are decided, the outcomes of each configuration are listed. -/
+theorem outcomes (decided : ∀ k, Decided (α k)) (decided' : ∀ k, Decided (β k)) :
+    ∀ s : Pos, ∃ l : List Pos, ∀ t, Step α β s t ↔ t ∈ l
+  | .three => ⟨[.on true 0, .on false 0, .endless 0], fun _ =>
+      ⟨fun step => match step with
+        | .threeOn true => .head _
+        | .threeOn false => .tail _ (.head _)
+        | .threeEndless => .tail _ (.tail _ (.head _)),
+       fun mem => match mem_cons_split mem with
+        | .inl same => Eq.subst (motive := Step α β .three) same.symm (.threeOn true)
+        | .inr mem => match mem_cons_split mem with
+          | .inl same => Eq.subst (motive := Step α β .three) same.symm (.threeOn false)
+          | .inr mem => match mem_cons_split mem with
+            | .inl same => Eq.subst (motive := Step α β .three) same.symm .threeEndless
+            | .inr mem => nomatch mem⟩⟩
+  | .two => ⟨[.on true 0, .on false 0], fun _ =>
+      ⟨fun step => match step with
+        | .twoOn true => .head _
+        | .twoOn false => .tail _ (.head _),
+       fun mem => match mem_cons_split mem with
+        | .inl same => Eq.subst (motive := Step α β .two) same.symm (.twoOn true)
+        | .inr mem => match mem_cons_split mem with
+          | .inl same => Eq.subst (motive := Step α β .two) same.symm (.twoOn false)
+          | .inr mem => nomatch mem⟩⟩
+  | .on b n =>
+    match (show Decided (Side α β b n) from match b with
+        | true => decided n
+        | false => decided' n) with
+    | .inl goes => ⟨[.on b (n + 1)], fun _ =>
+        ⟨fun step => match step with
+          | .onward _ _ _ => .head _,
+         fun mem => match mem_cons_split mem with
+          | .inl same => Eq.subst (motive := Step α β (.on b n)) same.symm (.onward b n goes)
+          | .inr mem => nomatch mem⟩⟩
+    | .inr stops => ⟨[], fun _ =>
+        ⟨fun step => match step with
+          | .onward _ _ goes => absurd goes stops,
+         fun mem => nomatch mem⟩⟩
+  | .endless n => ⟨[.endless (n + 1)], fun _ =>
+      ⟨fun step => match step with
+        | .endlessOnward _ => .head _,
+       fun mem => match mem_cons_split mem with
+        | .inl same => Eq.subst (motive := Step α β (.endless n)) same.symm (.endlessOnward n)
+        | .inr mem => nomatch mem⟩⟩
+
+/-- Where both families are decided, each move has listed outcomes. -/
+theorem outcomesListed (decided : ∀ k, Decided (α k)) (decided' : ∀ k, Decided (β k)) :
+    OutcomesListed (frame α β) :=
+  ⟨fun s _ => outcomes decided decided' s, fun _ c => nomatch c⟩
+
+/-- Where its family holds as deep as a test looks, a chain passes the test exactly where the
+endless chain does. -/
+theorem on_holds_iff (down : ∀ k, α (k + 1) → α k) (down' : ∀ k, β (k + 1) → β k) (b : Bool) :
+    ∀ (φ : BranchingTest Unit Empty) (n : Nat), Side α β b (n + depth φ) →
+      (BranchingTest.Holds (frame α β) (.on b n) φ ↔ BranchingTest.Holds (frame α β) (.endless n) φ)
+  | .top, _, _ => Iff.rfl
+  | .claim c, _, _ => nomatch c
+  | .not φ, n, deep => match on_holds_iff down down' b φ n deep with
+    | same => ⟨fun fails passes => fails (same.mpr passes),
+        fun fails passes => fails (same.mp passes)⟩
+  | .both φ ψ, n, deep =>
+    have below : ∀ {m}, m ≤ n + (depth φ + depth ψ) → Side α β b m := fun le =>
+      holds_below (P := fun k (_ : Unit) => Side α β b k) (x := ())
+        (fun k _ holds => match b with
+          | true => down k holds
+          | false => down' k holds) le deep
+    match on_holds_iff down down' b φ n (below (Nat.add_le_add_left (Nat.le_add_right _ _) n)),
+        on_holds_iff down down' b ψ n (below (Nat.add_le_add_left (Nat.le_add_left _ _) n)) with
+    | first, second => ⟨fun ⟨holds, holds'⟩ => ⟨first.mp holds, second.mp holds'⟩,
+        fun ⟨holds, holds'⟩ => ⟨first.mpr holds, second.mpr holds'⟩⟩
+  | .can _ φ, n, deep =>
+    have next : Side α β b (n + 1 + depth φ) :=
+      Eq.subst (motive := Side α β b) (Nat.succ_add n (depth φ)).symm deep
+    have here : Side α β b n :=
+      holds_below (P := fun k (_ : Unit) => Side α β b k) (x := ())
+        (fun k _ holds => match b with
+          | true => down k holds
+          | false => down' k holds) (Nat.le_add_right n (depth φ + 1)) deep
+    match on_holds_iff down down' b φ (n + 1) next with
+    | same => ⟨fun ⟨_, step, holds⟩ => match step with
+        | .onward _ _ _ => ⟨.endless (n + 1), .endlessOnward n, same.mp holds⟩,
+      fun ⟨_, step, holds⟩ => match step with
+        | .endlessOnward _ => ⟨.on b (n + 1), .onward b n here, same.mpr holds⟩⟩
+
+/-- **`three` and `two` pass the same branching tests** where the families are decided and
+decreasing and one of them holds at each step: what the endless chain passes, one of the two
+chains passes, since one of them goes on as deep as the test looks. -/
+theorem sameBranchingTests (down : ∀ k, α (k + 1) → α k) (down' : ∀ k, β (k + 1) → β k)
+    (each : ∀ k, α k ∨ β k) : SameBranchingTests (frame α β) (frame α β) .three .two
+  | .top => Iff.rfl
+  | .claim c => nomatch c
+  | .not φ => ⟨fun fails passes => fails ((sameBranchingTests down down' each φ).mpr passes),
+      fun fails passes => fails ((sameBranchingTests down down' each φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests down down' each φ).mp first,
+         (sameBranchingTests down down' each ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests down down' each φ).mpr first,
+         (sameBranchingTests down down' each ψ).mpr second⟩⟩
+  | .can _ φ => ⟨fun ⟨_, step, passes⟩ => match step with
+        | .threeOn b => ⟨.on b 0, .twoOn b, passes⟩
+        | .threeEndless => match each (0 + depth φ) with
+          | .inl deep =>
+            ⟨.on true 0, .twoOn true, (on_holds_iff down down' true φ 0 deep).mpr passes⟩
+          | .inr deep =>
+            ⟨.on false 0, .twoOn false, (on_holds_iff down down' false φ 0 deep).mpr passes⟩,
+      fun ⟨_, step, passes⟩ => match step with
+        | .twoOn b => ⟨.on b 0, .threeOn b, passes⟩⟩
+
+/-- Where the endless chain is alike to a chain at some step, the chain's family holds there and
+the two are alike at the next step. -/
+theorem endless_alike_on {b : Bool} {n : Nat}
+    (alike : Alike (frame α β) (frame α β) (.endless n) (.on b n)) :
+    Side α β b n ∧ Alike (frame α β) (frame α β) (.endless (n + 1)) (.on b (n + 1)) :=
+  match alike.step (a := ()) (t := .endless (n + 1)) (.endlessOnward n) with
+  | ⟨_, .onward _ _ goes, joined⟩ => ⟨goes, joined⟩
+
+/-- Where the endless chain is alike to a chain at its start, the chain's family holds at every
+step. -/
+theorem side_throughout {b : Bool} (alike : Alike (frame α β) (frame α β) (.endless 0) (.on b 0)) :
+    ∀ n, Side α β b n ∧ Alike (frame α β) (frame α β) (.endless (n + 1)) (.on b (n + 1))
+  | 0 => endless_alike_on alike
+  | n + 1 => endless_alike_on (side_throughout alike n).2
+
+/-- **Where `three` and `two` are alike, one family holds throughout**: the step from `three` to
+the endless chain is met from `two` at the start of one of the two chains. -/
+theorem throughout_of_alike (alike : Alike (frame α β) (frame α β) .three .two) :
+    (∀ k, α k) ∨ (∀ k, β k) :=
+  match alike.step (a := ()) (t := .endless 0) .threeEndless with
+  | ⟨_, .twoOn true, joined⟩ => .inl fun k => (side_throughout (α := α) (β := β) joined k).1
+  | ⟨_, .twoOn false, joined⟩ => .inr fun k => (side_throughout (α := α) (β := β) joined k).1
+
+end Chains
+
+namespace Unbounded
+
+/-- Configurations: `bounded` steps to every `rest n`; `unbounded` steps to every `rest n` and to
+`endless`; `rest (k + 1)` steps to `rest k`, and `rest 0` nowhere; `endless` steps to itself. -/
+inductive Pos where
+  | bounded
+  | unbounded
+  | rest (k : Nat)
+  | endless
+
+/-- The steps of the one move. -/
+inductive Step : Pos → Pos → Prop where
+  | boundedRest (n : Nat) : Step .bounded (.rest n)
+  | unboundedRest (n : Nat) : Step .unbounded (.rest n)
+  | unboundedEndless : Step .unbounded .endless
+  | down (k j : Nat) : k = j + 1 → Step (.rest k) (.rest j)
+  | endlessOnward : Step .endless .endless
+
+/-- The frame, with no claims: the first move of `bounded` and of `unbounded` has infinitely many
+outcomes. -/
+def frame : Frame Pos Unit Empty :=
+  ⟨⟨fun s _ t => Step s t⟩, fun _ c => nomatch c⟩
+
+/-- A chain with at least as many steps left as a test looks deep passes it exactly where the
+endless configuration does. -/
+theorem rest_holds_iff : ∀ (φ : BranchingTest Unit Empty) (k : Nat), Chains.depth φ ≤ k →
+    (BranchingTest.Holds frame (.rest k) φ ↔ BranchingTest.Holds frame .endless φ)
+  | .top, _, _ => Iff.rfl
+  | .claim c, _, _ => nomatch c
+  | .not φ, k, deep => match rest_holds_iff φ k deep with
+    | same => ⟨fun fails passes => fails (same.mpr passes),
+        fun fails passes => fails (same.mp passes)⟩
+  | .both φ ψ, k, deep =>
+    match rest_holds_iff φ k (Nat.le_trans (Nat.le_add_right _ _) deep),
+        rest_holds_iff ψ k (Nat.le_trans (Nat.le_add_left _ _) deep) with
+    | first, second => ⟨fun ⟨holds, holds'⟩ => ⟨first.mp holds, second.mp holds'⟩,
+        fun ⟨holds, holds'⟩ => ⟨first.mpr holds, second.mpr holds'⟩⟩
+  | .can _ _, 0, deep => absurd deep (Nat.not_succ_le_zero _)
+  | .can _ φ, k + 1, deep =>
+    match rest_holds_iff φ k (Nat.le_of_succ_le_succ deep) with
+    | same => ⟨fun ⟨_, step, holds⟩ => match step with
+        | .down _ j one => ⟨.endless, .endlessOnward,
+            same.mp (Eq.subst (motive := fun i => BranchingTest.Holds frame (.rest i) φ)
+              (Nat.succ.inj one).symm holds)⟩,
+      fun ⟨_, step, holds⟩ => match step with
+        | .endlessOnward => ⟨.rest k, .down (k + 1) k rfl, same.mpr holds⟩⟩
+
+/-- **`bounded` and `unbounded` pass the same branching tests**: what `endless` passes, the chain
+with as many steps left as the test looks deep passes. -/
+theorem sameBranchingTests : SameBranchingTests frame frame .bounded .unbounded
+  | .top => Iff.rfl
+  | .claim c => nomatch c
+  | .not φ => ⟨fun fails passes => fails ((sameBranchingTests φ).mpr passes),
+      fun fails passes => fails ((sameBranchingTests φ).mp passes)⟩
+  | .both φ ψ => ⟨fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mp first, (sameBranchingTests ψ).mp second⟩,
+      fun ⟨first, second⟩ =>
+        ⟨(sameBranchingTests φ).mpr first, (sameBranchingTests ψ).mpr second⟩⟩
+  | .can _ φ => ⟨fun ⟨_, step, passes⟩ => match step with
+        | .boundedRest n => ⟨.rest n, .unboundedRest n, passes⟩,
+      fun ⟨_, step, passes⟩ => match step with
+        | .unboundedRest n => ⟨.rest n, .boundedRest n, passes⟩
+        | .unboundedEndless => ⟨.rest (Chains.depth φ), .boundedRest _,
+            (rest_holds_iff φ (Chains.depth φ) (Nat.le_refl _)).mpr passes⟩⟩
+
+/-- No chain is alike to `endless`: the chain runs out of steps. -/
+theorem endless_not_alike_rest : ∀ k, ¬ Alike frame frame .endless (.rest k)
+  | 0, alike => match alike.step (a := ()) (t := .endless) .endlessOnward with
+    | ⟨_, .down _ _ one, _⟩ => Nat.noConfusion one
+  | k + 1, alike => match alike.step (a := ()) (t := .endless) .endlessOnward with
+    | ⟨_, .down _ j one, joined⟩ => endless_not_alike_rest k
+        (Eq.subst (motive := fun i => Alike frame frame .endless (.rest i)) (Nat.succ.inj one).symm
+          joined)
+
+/-- **`bounded` and `unbounded` are not alike**: the step of `unbounded` to `endless` is met by no
+step of `bounded`. -/
+theorem not_alike : ¬ Alike frame frame .bounded .unbounded :=
+  fun alike => match alike.symm.step (a := ()) (t := .endless) .unboundedEndless with
+  | ⟨_, .boundedRest k, joined⟩ => endless_not_alike_rest k joined
+
+end Unbounded
+
+/-- **Where each move has listed outcomes, branching tests fix likeness exactly under
+`EitherThroughout`.** That configurations passing the same branching tests are alike, for every
+frame with one move and no claims whose moves have listed outcomes, holds exactly where of two
+decided decreasing families one of which holds at each step, one holds throughout: the finitely
+many configurations of `FiniteDecided` cannot be replaced by finitely many outcomes without it. -/
+theorem alike_of_sameBranchingTests_outcomes_iff :
+    (∀ (S : Type) (F G : Frame S Unit Empty) (s s' : S), OutcomesListed F → OutcomesListed G →
+        SameBranchingTests F G s s' → Alike F G s s') ↔ EitherThroughout :=
+  ⟨fun fixes _ _ decided decided' down down' each =>
+    Chains.throughout_of_alike (fixes _ (Chains.frame _ _) (Chains.frame _ _) .three .two
+      (Chains.outcomesListed decided decided') (Chains.outcomesListed decided decided')
+      (Chains.sameBranchingTests down down' each)),
+   fun either _ _ _ _ _ listed listed' same =>
+    (OutcomesListed.alike_iff_sameBranchingTests either ⟨[()], fun _ => .head _⟩
+      ⟨[], fun c => nomatch c⟩ listed listed').mpr same⟩
 
 /-! ## A branching test sees when a choice is made -/
 

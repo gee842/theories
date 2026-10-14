@@ -7840,6 +7840,75 @@ theorem learnable_iff {next : S → S} {reg : S → R} {val : S → V} {l : List
 
 **落地（2026-10-14）。** 随第四批落地：核心检查器回执 20261014T091930.724493Z 通过，`Becoming.Learnable` 17 项定理、23 项声明审计，公理报告为空；check_correction_inquiry.py 回执 20261014T092825.784033Z 通过；新记录 learnable-through-registration 绑定该回执，learning-by-refutation 前进一步；可判定性清点在同一回执上重生成，第一至四批的模块一并分类。本节原写作第 116 节，合并时改为第 119 节。
 
+## 120. 判定不能去掉；有限多结果所需的原则与无穷多结果的反例；核心的分支检验即外围的检验（Becoming.Likeness 与 Becoming.Bridge）
+
+2026-10-14。按 Ren 的“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），工作板上“Current math core”的 likeness 一行（其 (i) 项：构造性证明，否则指明所需的原则）与其后的桥接一项，由整合会话批准。本节回答 tests-fix-likeness-where-determined 余下的各项：去掉 `FiniteDecided` 的判定后等价是否成立；配置无穷多而每个动作只有有限多结果时（外围的经典情形）需要什么原则；以及经桥接把 §118 的 `BranchingTest` 与外围 `ExplanatoryBranching` 的 `Test` 对应起来。
+
+```text
+Result(s): 改写 tests-fix-likeness-where-determined（新增规律 8–11 与反例 Unbounded）与 configurations-alike-by-relation
+           （一条依存说明）；不新增记录
+Delta: Becoming.Likeness 新增 EitherStep、EitherClaim、OutcomesListed、EitherThroughout、EitherNever、NowhereDecided、Chains、Unbounded 与三条边界定理
+       （模块 109 项定理／146 项声明）；
+       Becoming.Bridge 的 Likeness 一节新增 2 个定义、5 项定理（模块 53 项定理／73 项声明）
+Supplied premises / correspondence: 无新前提；构造性形式以动作与条件被列出、两个模型的框架为
+           FiniteDecided 为条件
+Evidence: scratch_build 实编：每条声明公理报告为空，无警告；不是回执
+Boundary: EitherThroughout 是否给出 NowhereDecided 或排中律未表明（表明不给出需要核心之外的模型）；像有限时外围的经典证明（same_iff_bisimilar）不在桥接中重述
+Integration: §8 状态行与“进一步的证明”；§9 L3 与桥接两行；Becoming.Likeness 头注；三项记录
+```
+
+**判定不能从等价中去掉。** §118 表明判定相同需要排中律；等价本身呢？`EitherStep.frame p`：`three` 一步到 `goes`、`halts` 与 `either`，`two` 一步到 `goes` 与 `halts`，`goes` 一步到 `after`，`either` 恰在 `p` 成立时一步到 `after`；没有主张。`goes`、`halts`、`after` 处每个检验是否成立已判定（`settled_decided`）；`p` 成立时 `either` 通过 `goes` 所通过的，不成立时通过 `halts` 所通过的。所以 `either` 所通过的，`goes` 或 `halts` 通过（`either_settles`）：两者都不通过时，由 `p ∨ ¬ p` 得矛盾，而它不能被否定（`not_not_decided`）。于是 `three` 与 `two` 无论 `p` 如何都通过同样的分支检验（`EitherStep.sameBranchingTests`），而它们相同时，`three` 到 `either` 的一步由 `two` 到 `goes` 或 `halts` 相配，即判定了 `p`（`EitherStep.decided_of_alike`）：
+
+```lean
+theorem alike_of_sameBranchingTests_iff_em :
+    (∀ (S : Type) (F G : Frame S Unit Empty) (s s' : S), (∃ l : List S, ∀ x, x ∈ l) →
+        SameBranchingTests F G s s' → Alike F G s s') ↔ ∀ p : Prop, Decided p
+```
+
+由右到左是 §118 的 `alike_iff_sameBranchingTests`。主张的判定同样不能去掉：`EitherClaim.frame p` 中步固定且已判定，`either` 恰在 `p` 成立时实现唯一的主张，`marked` 总实现、`unmarked` 从不实现（`alike_of_sameBranchingTests_decided_steps_iff_em`）。
+
+**只列出每个动作的结果时，恰需一个原则。** 配置可以无穷多，而每个配置的每个动作的结果被列出、主张已判定（`OutcomesListed`）。此时深度的相同仍已判定，不成立处仍可构造区分的检验（`OutcomesListed.alikeTo_decided`、`OutcomesListed.apart_of_not_alikeTo`），所以同测推出每个深度的相同（`OutcomesListed.alikeTo_of_same`）。但深度的相同不再在某个深度停止细分；要它是互模拟，须在一步的有限多个结果中找出对每个深度都相同的一个。所需的恰是下述原则（`EitherThroughout`）：
+
+```lean
+def EitherThroughout : Prop :=
+  ∀ α β : Nat → Prop, (∀ k, Decided (α k)) → (∀ k, Decided (β k)) →
+    (∀ k, α (k + 1) → α k) → (∀ k, β (k + 1) → β k) → (∀ k, α k ∨ β k) →
+      (∀ k, α k) ∨ (∀ k, β k)
+```
+
+即：两个已判定的族，各在下一步成立处于这一步成立，每一步至少其一成立，则其一在每一步成立。由它对列表归纳得出：有限多个候选中每一步至少一个成立时，有一个在每一步成立（`EitherThroughout.list`：第一个与其余两者若都在某步不成立，则在较后的一步一起不成立）。于是深度的相同是互模拟（`OutcomesListed.alikeTo_bisimulation`），同测即相同（`OutcomesListed.alike_iff_sameBranchingTests`）。反过来，对每个这样的框架都成立就给出此原则（`alike_of_sameBranchingTests_outcomes_iff`）：`Chains.frame α β` 中，`two` 一步到两条链的起点，链 `on true` 在 α 成立时前行、`on false` 在 β 成立时前行；`three` 一步到这两个起点与一条总前行的链。一个检验只看到有限深（`Chains.depth`），而每个深度上两条链至少一条前行到那里，所以 `three` 与 `two` 通过同样的检验（`Chains.sameBranchingTests`）；它们相同时，`three` 到总前行之链的一步由 `two` 到某条链相配，那条链的族就在每一步成立（`Chains.throughout_of_alike`）。排中律给出此原则（`EitherThroughout.of_em`）。此原则即 `EitherNever`：两个已判定的族不都在某处成立时，其一处处不成立（`eitherThroughout_iff_eitherNever`；一个方向取“第一个族尚未成立”与“第二个族尚未成立”两族，它们已判定、递减，且每一步至少其一成立，否则两个族都在某处成立；另一个方向，两个递减族在 `k` 与在 `j` 的不成立都推出在 `k + j` 的不成立，与每一步至少其一成立相悖）。`NowhereDecided`，即一个已判定的族是否处处不成立已判定，给出它（`EitherThroughout.of_nowhereDecided`），排中律给出 `NowhereDecided`（`NowhereDecided.of_em`）。某个动作有无穷多结果时，分支检验未必固定相同，证明不需要任何原则：`Unbounded` 中，`bounded` 一步到每个长度的链，`unbounded` 还一步到一条永不终止的链；一个检验只看到有限深，长度足够的链就通过永不终止之链所通过的（`Unbounded.rest_holds_iff`），所以两者通过同样的检验（`Unbounded.sameBranchingTests`），而没有链与永不终止的链相同（`Unbounded.not_alike`）。读法（AI 的，待 Ren）：这一原则按标准名称是较小限定全知原则（LLPO），这里取递减族的形式；`EitherNever` 是它的标准等价形式，即两个已判定存在式的德摩根律；`NowhereDecided` 按标准名称是弱限定全知原则（WLPO）。
+
+**两种检验是同一种。** 外围的 `Test` 有 `top`、`atom`、`neg`、`conj`、`after` 五种构造，核心的 `BranchingTest` 有 `top`、`claim`、`not`、`both`、`can`。`BranchingTest.toTest` 与 `BranchingTest.ofTest` 逐个构造互译，往返都回到原处（`BranchingTest.toTest_ofTest`、`BranchingTest.ofTest_toTest`）。在模型的框架（`Frame.ofModel`：步是模型的过程，主张是模型的条件）中，分支检验恰在其译文在模型中成立之处成立：
+
+```lean
+theorem BranchingTest.holds_toTest {m : ExplanatoryBranching.Model S A O} :
+    ∀ (φ : BranchingTest A O) (s : S),
+      BranchingTest.Holds (Frame.ofModel m) s φ ↔ ExplanatoryBranching.Holds m s φ.toTest
+```
+
+所以两边的同测是一回事（`sameBranchingTests_iff_same`）。
+
+**有限、已定的模型上，外围的同测即相同。** 由 §118 的 `alike_iff_sameBranchingTests`：
+
+```lean
+theorem same_iff_alike_of_finiteDecided {m : ExplanatoryBranching.Model S A O}
+    {n : ExplanatoryBranching.Model T A O} (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (conditions : ∃ l : List O, ∀ o, o ∈ l) (finite : FiniteDecided (Frame.ofModel m))
+    (finite' : FiniteDecided (Frame.ofModel n)) {s : S} {t : T} :
+    ExplanatoryBranching.Same m n s t ↔ Alike (Frame.ofModel m) (Frame.ofModel n) s t
+```
+
+这是外围 `same_iff_bisimilar` 在这类模型上的构造性形式。
+
+**作者反审。**
+1. **新律还是重述？** `alike_of_sameBranchingTests_iff_em` 与 `alike_of_sameBranchingTests_decided_steps_iff_em` 是新的边界：§118 只表明判定相同需要排中律，这里表明等价本身也需要，且两项判定各自都需要。`alike_of_sameBranchingTests_outcomes_iff` 两个方向都已证明，所以说“恰”：外围 `same_iff_bisimilar` 的情形所用的经典推理，恰可换成 `EitherThroughout`。读法中的标准名称由 `eitherThroughout_iff_eitherNever` 核对：此原则与 LLPO 的德摩根形式等价，不只是名称上的类比。四个见证 EitherStep、EitherClaim、Chains、Unbounded 放在一处，分别表明去掉步的判定、主张的判定、配置的有限、结果的有限各自需要什么。互译与 `holds_toTest` 是同一结构的两种写法之间的桥；新的是 `same_iff_alike_of_finiteDecided`：外围的定理要像有限并用经典逻辑，这里要有限且已定、不用经典逻辑。有限、已定的模型是像有限的（每个配置的后继可由列表与判定列出），所以这里的范围较窄，所得是不用经典逻辑；像有限而无判定时，构造性证明是否存在，仍如 §118 所说开放。
+2. **经典的一边为何不写入桥接？** 曾写出 `alike_iff_same_of_imageFinite`（由 `same_iff_bisimilar` 与 `branching_bisimulation_iff` 合成），它依赖 `Classical.choice`；检查器要求脊柱模块（核心与桥接）的每条声明公理报告为空，所以不收入。这一方向在像有限时仍由外围陈述，边界写在 tests-fix-likeness-where-determined 的规律 10 中。
+3. **改动的范围。** Bridge.lean 只在 Likeness 一节新增声明与头注一句，已有声明逐字不变；以它为证明来源的其余七项记录（becoming-renewal-reading、becoming-spine-instances、levels-of-closure、one-axiom-yields-g0、open-form-realization-under-revision、ranking-under-readings、wisdom-root）须在落地运行后重新绑定；configurations-alike-by-relation 新增的两条桥接声明也须绑定到回执。
+4. **还开放什么？** `EitherThroughout` 是否给出 `NowhereDecided` 或排中律没有表明。表明它不给出是关于核心的元定理，需要核心之外的模型（例如可实现性模型），这里不作。
+5. **范围。** 不含伦理谓词；读法是 AI 的，待 Ren。
+
+**边界。** 落地运行须在 `check_becoming.py`（Becoming.Likeness 在核心之列，Becoming.Bridge 在其桥接模块之列）中编译与审计新声明，再重新绑定以 Bridge.lean 与 Likeness.lean 为来源的记录；新的 Lean 别名在回执中展开后才通过别名检查；可判定性清点在同一运行后重生成。对本包暂存运行清点（跳过回执校验），各表与 main 相同：新声明只以 `Decided` 取判定，清点不把它读作可判定族。
+
 ## English summary
 
 P3b of the unification plan. The Becoming layer can now supply two correspondence items of the Universal Metaethical Core.
@@ -9097,3 +9166,10 @@ Whether the equivalence needs the decisions is open, and the bridge from `Branch
 - **Witness.** Registering the first of two coordinates, no learner rests on the second at both `(true, false)` and `(true, true)`; registering both, the lasso learner rests from step 2 (`Pair`).
 
 The author's counterreview concedes three points. The necessary side follows directly from `records_same`. `rests_through` restates `held_learner_rests`. The sufficient side's learner is given the world, so a learner given nothing is shown only for targets read off the present registration. The learner still tells registered values apart. On the AI's reading, pending Ren, registration bounds what is learned: this is P49's blindness below threshold, stated for learners, and what lies beyond it is reached only by widening the registration. Scratch build on main `a04727a4`, every axiom report empty; the landing run binds the receipt. Not yet independently reviewed. Landed with batch 4: core receipt 20261014T091930.724493Z, `Becoming.Learnable` 17 theorems and 23 declaration audits with empty axiom reports; check_correction_inquiry.py 20261014T092825.784033Z passed; the new record learnable-through-registration binds the receipt and learning-by-refutation advances; the decidability inventory was regenerated on that receipt, classifying the modules of batches 1–4 as well. Written as section 116, it became section 119 at the merge.
+
+**The decisions cannot be dropped; the core's branching tests are the periphery's (14 October 2026).** Under Ren's "move towards 100%", the likeness row of Current math core and the bridge item after it (approved by the integrator), section 120 answers the remaining items of tests-fix-likeness-where-determined, in `Becoming.Likeness` (109 theorems) and the Likeness section of `Becoming.Bridge`.
+- **With only each move's outcomes listed, exactly one principle is needed.** Where configurations may be infinitely many but each move's outcomes are listed and the claims decided (`OutcomesListed`), the same branching tests make configurations alike given `EitherThroughout`: of two decided families α, β, each holding at a step where it holds at the next, with α k or β k at every k, one holds at every k (`OutcomesListed.alike_iff_sameBranchingTests`). Conversely, the theorem for every such frame gives the principle (`alike_of_sameBranchingTests_outcomes_iff`, through `Chains`: a start stepping to two chains that go on while α, respectively β, holds, and one stepping also to a chain that always goes on, pass the same tests and are alike only where one family holds throughout). Excluded middle gives the principle (`EitherThroughout.of_em`). The principle is `EitherNever`, of two decided families not both holding somewhere one holding nowhere (`eitherThroughout_iff_eitherNever`), and `NowhereDecided`, that whether a decided family holds nowhere is decided, gives it (`EitherThroughout.of_nowhereDecided`). Where a move has infinitely many outcomes branching tests need not fix likeness, with no principle needed to show it (`Unbounded.sameBranchingTests`, `Unbounded.not_alike`). Reading (the AI's, pending Ren): by its standard name the principle is LLPO, the lesser limited principle of omniscience, here for decreasing families; `EitherNever` is its de Morgan form, and `NowhereDecided` is WLPO, the weak limited principle of omniscience.
+- **Neither decision can be dropped from the equivalence.** For every frame on listed configurations with one move and no claims, that passing the same branching tests makes configurations alike holds exactly under excluded middle (`alike_of_sameBranchingTests_iff_em`): in `EitherStep`, a configuration with three successors and one with two pass the same tests whatever a proposition is, since the third successor, which can go on exactly where the proposition holds, passes what one of the other two passes, and they are alike only where the proposition is decided. With decided steps and one claim the same holds (`alike_of_sameBranchingTests_decided_steps_iff_em`, through `EitherClaim`).
+- **One kind of test.** The core's `BranchingTest` and the periphery's `ExplanatoryBranching.Test` have the same five constructors. They translate one to one (`BranchingTest.toTest`, `BranchingTest.ofTest`, both round trips), and a branching test holds in a model's frame exactly where its translation holds in the model (`BranchingTest.holds_toTest`). So passing the same tests is the same in both (`sameBranchingTests_iff_same`).
+- **Constructive on finite decided models.** Where the moves and conditions are listed and both models' frames are finite and decided, passing the periphery's same tests is likeness (`same_iff_alike_of_finiteDecided`): `same_iff_bisimilar` on such models with no classical reasoning.
+- **The classical side stays in the periphery.** For image-finite models the direction from the tests to likeness remains the periphery's `same_iff_bisimilar`, whose proof is classical; the checker requires empty axiom reports in the bridge, so it is not restated there.

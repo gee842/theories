@@ -354,7 +354,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "bd999087660e64625d7f9e1acb7bf49d96225684e2729c412a4e3d0e94c18b24",
+      "sha256": "4fc9902e71d4278d896d0476352c98ab63ca70b4d2932b60cc566e29ee41d30d",
       "declarations": [
         "Becoming.Registers",
         "Becoming.GoAlikeUnder",

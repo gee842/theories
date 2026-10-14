@@ -83,6 +83,58 @@
         "Becoming.Choosing.bothOpen",
         "Becoming.Choosing.branching_apart"
       ]
+    },
+    {
+      "zh": "两项判定都不能从等价中去掉：对配置被列出、一个动作、没有主张的每个框架，同测即相同恰在排中律下成立；步已判定、有一个主张时也是如此。两例中，有三个后继的配置与有两个后继的配置无论命题如何都通过同样的检验，而只在命题已判定时相同。",
+      "en": "Neither decision can be dropped from the equivalence: that configurations passing the same branching tests are alike holds for every frame on listed configurations with one move and no claims exactly under excluded middle, and so with decided steps and one claim. In both, a configuration with three successors and one with two pass the same tests whatever a proposition is, and are alike only where it is decided.",
+      "declarations": [
+        "Becoming.alike_of_sameBranchingTests_iff_em",
+        "Becoming.EitherStep.sameBranchingTests",
+        "Becoming.EitherStep.decided_of_alike",
+        "Becoming.alike_of_sameBranchingTests_decided_steps_iff_em",
+        "Becoming.EitherClaim.sameBranchingTests",
+        "Becoming.EitherClaim.decided_of_alike"
+      ]
+    },
+    {
+      "zh": "每个动作的结果被列出、主张已判定时（配置可以无穷多），给定下述原则，同测即相同：两个已判定的族 α、β，各在下一步成立处于这一步成立，且每个 k 处 α k 或 β k 成立，则其一在每个 k 处成立；对每个这样的一个动作、没有主张的框架，这一蕴涵恰在此原则下成立。排中律给出此原则。",
+      "en": "Where each move's outcomes are listed and the claims decided, with configurations possibly infinitely many, the same branching tests make configurations alike given this principle: of two decided families α, β, each holding at a step where it holds at the next, with α k or β k at every k, one holds at every k. For every such frame with one move and no claims, exactly under it; excluded middle gives it.",
+      "declarations": [
+        "Becoming.EitherThroughout",
+        "Becoming.OutcomesListed",
+        "Becoming.OutcomesListed.alike_iff_sameBranchingTests",
+        "Becoming.EitherThroughout.list",
+        "Becoming.alike_of_sameBranchingTests_outcomes_iff",
+        "Becoming.Chains.sameBranchingTests",
+        "Becoming.Chains.throughout_of_alike",
+        "Becoming.EitherThroughout.of_em"
+      ]
+    },
+    {
+      "zh": "核心的分支检验就是外围 ExplanatoryBranching 的检验，一一对应，在同样的配置成立，所以通过同样的检验在两边是一回事；在有限、已定的模型上，通过外围的同样检验恰是相同，不用经典推理；在像有限的模型上，由检验到相同的方向是外围的 same_iff_bisimilar，其证明是经典的。",
+      "en": "The core's branching tests are the tests of the periphery's ExplanatoryBranching, read one to one and holding at the same configurations, so passing the same tests is the same in both; on finite decided models, passing the periphery's same tests is likeness, with no classical reasoning; on image-finite models the direction from the tests to likeness is the periphery's same_iff_bisimilar, whose proof is classical.",
+      "declarations": [
+        "Becoming.BranchingTest.toTest",
+        "Becoming.BranchingTest.ofTest",
+        "Becoming.BranchingTest.toTest_ofTest",
+        "Becoming.BranchingTest.ofTest_toTest",
+        "Becoming.BranchingTest.holds_toTest",
+        "Becoming.sameBranchingTests_iff_same",
+        "Becoming.same_iff_alike_of_finiteDecided",
+        "Becoming.Alike.same"
+      ]
+    },
+    {
+      "zh": "规律 9 的原则即：两个已判定的族不都在某处成立时，其一处处不成立。由“一个已判定的族是否处处不成立已判定”可推出它，排中律给出后者。",
+      "en": "The principle of law 9 is this one: of two decided families that do not both hold somewhere, one holds nowhere. It follows from the principle that whether a decided family holds nowhere is decided, which excluded middle gives.",
+      "declarations": [
+        "Becoming.EitherNever",
+        "Becoming.eitherThroughout_iff_eitherNever",
+        "Becoming.NowhereDecided",
+        "Becoming.EitherNever.of_nowhereDecided",
+        "Becoming.EitherThroughout.of_nowhereDecided",
+        "Becoming.NowhereDecided.of_em"
+      ]
     }
   ],
   "hypotheses": [
@@ -101,15 +153,9 @@
   ],
   "does_not_show": [
     {
-      "zh": "构造性证明用到 FiniteDecided 的判定；它们的必要性对判定相同已表明，对等价本身是开放的。",
-      "en": "The constructive proof uses the decisions of FiniteDecided; that they are needed is shown for deciding likeness and is open for the equivalence itself.",
-      "kind": "scope",
-      "witness": "Becoming.alike_decided_iff_em"
-    },
-    {
-      "zh": "BranchingTest 与外围的 Test 之间的对应不在这里；桥接中 Alike.same 给出外围一侧由相同到检验的方向。",
-      "en": "The correspondence of BranchingTest with the periphery's Test is outside this record; in the bridge, Alike.same gives the direction from likeness to the periphery's tests.",
-      "kind": "correspondence"
+      "zh": "规律 9 的原则是否给出“一个已判定的族是否处处不成立已判定”或排中律，没有表明；表明它不给出需要核心之外的模型。",
+      "en": "Whether the principle of law 9 gives that whether a decided family holds nowhere is decided, or excluded middle, is not shown; showing that it does not would take a model outside the core.",
+      "kind": "scope"
     }
   ],
   "counterexamples": [
@@ -126,6 +172,13 @@
         "zh": "OneLoop：一个配置恰在某命题成立时有到自身的一步，它与总有这一步的配置相同恰当该命题成立，所以对每一对这样的框架判定相同即判定每个命题。",
         "en": "OneLoop: a configuration stepping to itself exactly where a proposition holds is alike to one that always steps exactly where the proposition holds, so deciding likeness for every such pair decides every proposition."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
+      "detail": {
+        "zh": "Unbounded：一个配置一步到每个长度的链，另一个还一步到一条永不终止的链；两者通过同样的分支检验而不相同（Unbounded.sameBranchingTests、Unbounded.not_alike）。某个动作有无穷多结果时，分支检验未必固定相同，证明不需要任何原则。",
+        "en": "Unbounded: one configuration steps to chains of every length, another also to a chain that never ends; they pass the same branching tests and are not alike (Unbounded.sameBranchingTests, Unbounded.not_alike). Where a move has infinitely many outcomes branching tests need not fix likeness, with no principle needed to show it."
+      }
     }
   ],
   "standard_boundaries": [
@@ -139,12 +192,12 @@
     "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z) and of Becoming.Likeness (receipt 20261014T091930.724493Z) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
-    "zh": "经桥接把 BranchingTest 与外围的 Test 对应起来。",
-    "en": "Join BranchingTest to the periphery's Test through the bridge."
+    "zh": "Ren 的判断：线性检验看不到的是否读作选择在何时作出。",
+    "en": "Ren's judgment whether what linear tests cannot see reads as when a choice is made."
   },
   "correspondence": {
-    "zh": "读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。见整合文档 §98 与 Becoming.Likeness 一节。",
-    "en": "Reading (the AI's, pending Ren): what tests cannot see is when a choice is made; with branching, only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by the bridge (branching_bisimulation_iff); in the core they fix it constructively on finite decided frames, and deciding likeness for every finite frame is excluded middle. See §98 of the integration note and its section on Becoming.Likeness."
+    "zh": "读法（AI 的，待 Ren）：检验看不到的是选择在何时作出；有分支时，只有分支的检验看得到。外围中像有限的模型的分支检验固定相同（same_iff_bisimilar，经典），经桥接（branching_bisimulation_iff）与核心的互模拟相连；核心中，在有限、已定的框架上它是构造性的，而对每个有限框架判定相同就是排中律。规律 9 的原则按标准名称是较小限定全知原则（LLPO），这里取递减族的形式；规律 11 的形式，即两个已判定存在式的德摩根律，是它的标准等价形式；“一个已判定的族是否处处不成立已判定”按标准名称是弱限定全知原则（WLPO）。见整合文档 §98 与 Becoming.Likeness 一节。",
+    "en": "Reading (the AI's, pending Ren): what tests cannot see is when a choice is made; with branching, only tests that branch see it. In the periphery, branching tests fix likeness for image-finite models (same_iff_bisimilar, classically), joined to the core's bisimulation by the bridge (branching_bisimulation_iff); in the core they fix it constructively on finite decided frames, and deciding likeness for every finite frame is excluded middle. The principle of law 9 is, by its standard name, the lesser limited principle of omniscience (LLPO), here in a form for decreasing families; law 11's form, de Morgan's law for two decided existentials, is a standard equivalent; that whether a decided family holds nowhere is decided is, by its standard name, the weak limited principle of omniscience (WLPO). See §98 of the integration note and its section on Becoming.Likeness."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Histories.lean",
   "aliases": [
@@ -162,7 +215,13 @@
     "Becoming.alike_decided_iff_em",
     "Becoming.Alike.decided",
     "branching tests fix likeness",
-    "分支检验固定相同"
+    "分支检验固定相同",
+    "Becoming.alike_of_sameBranchingTests_iff_em",
+    "Becoming.alike_of_sameBranchingTests_outcomes_iff",
+    "Becoming.OutcomesListed.alike_iff_sameBranchingTests",
+    "Becoming.sameBranchingTests_iff_same",
+    "Becoming.same_iff_alike_of_finiteDecided",
+    "Becoming.eitherThroughout_iff_eitherNever"
   ],
   "dependencies": [
     {
@@ -236,7 +295,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
       "role": "proof",
-      "sha256": "bd999087660e64625d7f9e1acb7bf49d96225684e2729c412a4e3d0e94c18b24",
+      "sha256": "4fc9902e71d4278d896d0476352c98ab63ca70b4d2932b60cc566e29ee41d30d",
       "declarations": [
         "Becoming.Decided.exists_listed",
         "Becoming.Decided.exists_of_listed",
@@ -286,7 +345,91 @@
         "Becoming.skip_succ",
         "Becoming.AlikeTo.down_to",
         "Becoming.AlikeTo.steady_within",
-        "Becoming.alike_iff_alikeTo_pairs"
+        "Becoming.alike_iff_alikeTo_pairs",
+        "Becoming.EitherStep.Pos",
+        "Becoming.EitherStep.Step",
+        "Becoming.EitherStep.frame",
+        "Becoming.EitherStep.listed",
+        "Becoming.EitherStep.settled_decided",
+        "Becoming.EitherStep.either_holds_of",
+        "Becoming.EitherStep.either_holds_of_not",
+        "Becoming.EitherStep.either_settles",
+        "Becoming.EitherStep.sameBranchingTests",
+        "Becoming.EitherStep.decided_of_alike",
+        "Becoming.EitherClaim.Pos",
+        "Becoming.EitherClaim.Step",
+        "Becoming.EitherClaim.Marked",
+        "Becoming.EitherClaim.frame",
+        "Becoming.EitherClaim.listed",
+        "Becoming.EitherClaim.step_decided",
+        "Becoming.EitherClaim.settled_decided",
+        "Becoming.EitherClaim.either_holds_of",
+        "Becoming.EitherClaim.either_holds_of_not",
+        "Becoming.EitherClaim.either_settles",
+        "Becoming.EitherClaim.sameBranchingTests",
+        "Becoming.EitherClaim.decided_of_alike",
+        "Becoming.alike_of_sameBranchingTests_iff_em",
+        "Becoming.alike_of_sameBranchingTests_decided_steps_iff_em",
+        "Becoming.EitherThroughout",
+        "Becoming.EitherThroughout.of_em",
+        "Becoming.EitherNever",
+        "Becoming.NowhereDecided",
+        "Becoming.eitherThroughout_iff_eitherNever",
+        "Becoming.EitherNever.of_nowhereDecided",
+        "Becoming.NowhereDecided.of_em",
+        "Becoming.EitherThroughout.of_nowhereDecided",
+        "Becoming.Decided.forall_in",
+        "Becoming.Decided.exists_not_in",
+        "Becoming.EitherThroughout.list",
+        "Becoming.OutcomesListed",
+        "Becoming.OutcomesListed.sameClaims_decided",
+        "Becoming.OutcomesListed.matched_decided",
+        "Becoming.OutcomesListed.forth_decided",
+        "Becoming.OutcomesListed.unmatched",
+        "Becoming.OutcomesListed.alikeTo_decided",
+        "Becoming.BranchingTest.apart_from_list",
+        "Becoming.OutcomesListed.apart_of_claims",
+        "Becoming.OutcomesListed.apart_of_not_alikeTo",
+        "Becoming.OutcomesListed.alikeTo_of_same",
+        "Becoming.OutcomesListed.alikeTo_bisimulation",
+        "Becoming.OutcomesListed.alike_iff_sameBranchingTests",
+        "Becoming.Chains.Pos",
+        "Becoming.Chains.Side",
+        "Becoming.Chains.Step",
+        "Becoming.Chains.frame",
+        "Becoming.Chains.depth",
+        "Becoming.Chains.outcomes",
+        "Becoming.Chains.outcomesListed",
+        "Becoming.Chains.on_holds_iff",
+        "Becoming.Chains.sameBranchingTests",
+        "Becoming.Chains.endless_alike_on",
+        "Becoming.Chains.side_throughout",
+        "Becoming.Chains.throughout_of_alike",
+        "Becoming.alike_of_sameBranchingTests_outcomes_iff",
+        "Becoming.Unbounded.Pos",
+        "Becoming.Unbounded.Step",
+        "Becoming.Unbounded.frame",
+        "Becoming.Unbounded.rest_holds_iff",
+        "Becoming.Unbounded.sameBranchingTests",
+        "Becoming.Unbounded.endless_not_alike_rest",
+        "Becoming.Unbounded.not_alike"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "21d83ece99917fe296df0715f61c30cd6c525b77717c300c4696a261b6b0a641",
+      "declarations": [
+        "Becoming.Frame.ofModel",
+        "Becoming.branching_bisimulation_iff",
+        "Becoming.Alike.same",
+        "Becoming.BranchingTest.toTest",
+        "Becoming.BranchingTest.ofTest",
+        "Becoming.BranchingTest.toTest_ofTest",
+        "Becoming.BranchingTest.ofTest_toTest",
+        "Becoming.BranchingTest.holds_toTest",
+        "Becoming.sameBranchingTests_iff_same",
+        "Becoming.same_iff_alike_of_finiteDecided"
       ]
     },
     {
@@ -480,6 +623,10 @@
     {
       "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Histories.lean（仅改文件头：步与主张可判定的有限框架的构造性证明现由 Becoming.Likeness 给出；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。新绑定到本批回执的证明：Likeness.lean；验证范围写出回执 20261014T091930.724493Z。",
       "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Histories.lean (header only: the constructive proof for finite frames with decided steps and claims is now Becoming.Likeness's; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z). New proof bindings to this batch's receipts: Likeness.lean; the validation scope names receipt 20261014T091930.724493Z."
+    },
+    {
+      "zh": "2026-10-14，判定、所需原则与桥接（Current math core 的 likeness 一行，整合会话批准；Becoming.Likeness 与 Becoming.Bridge 的 Likeness 一节）：回答本记录“未表明”中的两项与 next_delta。新增规律 8：两项判定都不能从等价中去掉，各自恰是排中律（alike_of_sameBranchingTests_iff_em 经 EitherStep，alike_of_sameBranchingTests_decided_steps_iff_em 经 EitherClaim）。新增规律 9：只列出每个动作的结果时，同测推出相同恰在 EitherThroughout 下成立（OutcomesListed.alike_iff_sameBranchingTests；反向经 Chains，alike_of_sameBranchingTests_outcomes_iff），排中律给出它（EitherThroughout.of_em）；某个动作有无穷多结果时分支检验未必固定相同（反例 Unbounded）。新增规律 10：核心的 BranchingTest 与外围的 Test 一一对应并在同样的配置成立（BranchingTest.holds_toTest、sameBranchingTests_iff_same），有限、已定的模型上外围的同测即相同，构造性（same_iff_alike_of_finiteDecided）；像有限时外围的经典证明不在桥接中重述，因为脊柱模块的公理报告须为空，这一边界写在规律 10 中。新增规律 11：此原则即 EitherNever（eitherThroughout_iff_eitherNever），NowhereDecided 给出它（EitherThroughout.of_nowhereDecided）。“未表明”改为此原则是否给出 NowhereDecided 或排中律；对应中注明标准名称 LLPO 与 WLPO；Becoming.Likeness 头注相应改写。",
+      "en": "14 October 2026, the decisions, the principle needed and the bridge (the likeness row of Current math core, approved by the integrator; Becoming.Likeness and the Likeness section of Becoming.Bridge): answers both does-not-show items and the next_delta. New law 8: neither decision can be dropped from the equivalence, each exactly excluded middle (alike_of_sameBranchingTests_iff_em through EitherStep, alike_of_sameBranchingTests_decided_steps_iff_em through EitherClaim). New law 9: where only each move's outcomes are listed, passing the same tests makes configurations alike exactly under EitherThroughout (OutcomesListed.alike_iff_sameBranchingTests; the converse through Chains, alike_of_sameBranchingTests_outcomes_iff), which excluded middle gives (EitherThroughout.of_em); where a move has infinitely many outcomes branching tests need not fix likeness (the Unbounded counterexample). New law 10: the core's BranchingTest and the periphery's Test correspond one to one and hold at the same configurations (BranchingTest.holds_toTest, sameBranchingTests_iff_same), and on finite decided models the periphery's same tests are likeness, constructively (same_iff_alike_of_finiteDecided); the periphery's classical proof for image-finite models is not restated in the bridge, whose declarations must have empty axiom reports, and law 10 states that boundary. New law 11: the principle is EitherNever (eitherThroughout_iff_eitherNever), and NowhereDecided gives it (EitherThroughout.of_nowhereDecided). The does-not-show item now covers whether the principle gives NowhereDecided or excluded middle; the correspondence gives the standard names, LLPO and WLPO; the header of Becoming.Likeness was rewritten to match."
     }
   ],
   "text_versions": [

@@ -53,6 +53,14 @@ imports none of these modules; the dependency runs from them to the core.
   conditions as claims (`deeper_bisimulation_iff`, `branching_bisimulation_iff`); in `static`
   and `toggle` every configuration of one is alike to every configuration of the other
   (`static_toggle_alike`); alike configurations pass every branching test (`Alike.same`).
+  The core's branching tests (`Becoming.Likeness`) are the tests of `ExplanatoryBranching`, read
+  one to one (`BranchingTest.toTest`, `BranchingTest.ofTest`), and hold at the same
+  configurations (`BranchingTest.holds_toTest`), so passing the same tests is the same in both
+  (`sameBranchingTests_iff_same`). On models with finitely many configurations whose steps and
+  conditions are decided, configurations pass the same tests exactly where they are alike, with
+  no classical reasoning (`same_iff_alike_of_finiteDecided`). For image-finite models the
+  converse of `Alike.same` is `same_iff_bisimilar` read through `branching_bisimulation_iff`; its
+  proof reasons classically, so it is not restated here.
 
 Direction conventions differ and are kept: in `GenerativeComparison`,
 `Better first second` says the second is better; in `PracticalJudgment` and
@@ -653,6 +661,84 @@ theorem Alike.same {m : ExplanatoryBranching.Model S A O} {n : ExplanatoryBranch
   match alike with
   | ⟨_, bisim, related⟩ =>
     ExplanatoryBranching.bisimulation_implies_same (branching_bisimulation_iff.mpr bisim) related
+
+/-- A branching test of the core read as a test of `ExplanatoryBranching`. -/
+def BranchingTest.toTest : BranchingTest A O → ExplanatoryBranching.Test A O
+  | .top => .top
+  | .claim c => .atom c
+  | .not φ => .neg φ.toTest
+  | .both φ ψ => .conj φ.toTest ψ.toTest
+  | .can a φ => .after a φ.toTest
+
+/-- A test of `ExplanatoryBranching` read as a branching test of the core. -/
+def BranchingTest.ofTest : ExplanatoryBranching.Test A O → BranchingTest A O
+  | .top => .top
+  | .atom o => .claim o
+  | .neg f => .not (BranchingTest.ofTest f)
+  | .conj f g => .both (BranchingTest.ofTest f) (BranchingTest.ofTest g)
+  | .after a f => .can a (BranchingTest.ofTest f)
+
+/-- Reading a test of `ExplanatoryBranching` into the core and back gives it again. -/
+theorem BranchingTest.toTest_ofTest :
+    ∀ f : ExplanatoryBranching.Test A O, (BranchingTest.ofTest f).toTest = f
+  | .top => rfl
+  | .atom _ => rfl
+  | .neg f => congrArg ExplanatoryBranching.Test.neg (BranchingTest.toTest_ofTest f)
+  | .conj f g => congr (congrArg ExplanatoryBranching.Test.conj (BranchingTest.toTest_ofTest f))
+      (BranchingTest.toTest_ofTest g)
+  | .after a f => congrArg (ExplanatoryBranching.Test.after a) (BranchingTest.toTest_ofTest f)
+
+/-- Reading a branching test of the core into `ExplanatoryBranching` and back gives it again. -/
+theorem BranchingTest.ofTest_toTest : ∀ φ : BranchingTest A O, BranchingTest.ofTest φ.toTest = φ
+  | .top => rfl
+  | .claim _ => rfl
+  | .not φ => congrArg BranchingTest.not (BranchingTest.ofTest_toTest φ)
+  | .both φ ψ => congr (congrArg BranchingTest.both (BranchingTest.ofTest_toTest φ))
+      (BranchingTest.ofTest_toTest ψ)
+  | .can a φ => congrArg (BranchingTest.can a) (BranchingTest.ofTest_toTest φ)
+
+/-- **A branching test holds where its reading in `ExplanatoryBranching` holds**, in the frame
+of a model. -/
+theorem BranchingTest.holds_toTest {m : ExplanatoryBranching.Model S A O} :
+    ∀ (φ : BranchingTest A O) (s : S),
+      BranchingTest.Holds (Frame.ofModel m) s φ ↔ ExplanatoryBranching.Holds m s φ.toTest
+  | .top, _ => Iff.rfl
+  | .claim _, _ => Iff.rfl
+  | .not φ, s => ⟨fun fails holds => fails ((BranchingTest.holds_toTest φ s).mpr holds),
+      fun fails holds => fails ((BranchingTest.holds_toTest φ s).mp holds)⟩
+  | .both φ ψ, s => ⟨fun ⟨first, second⟩ => ⟨(BranchingTest.holds_toTest φ s).mp first,
+        (BranchingTest.holds_toTest ψ s).mp second⟩,
+      fun ⟨first, second⟩ => ⟨(BranchingTest.holds_toTest φ s).mpr first,
+        (BranchingTest.holds_toTest ψ s).mpr second⟩⟩
+  | .can _ φ, _ => ⟨fun ⟨t, step, holds⟩ => ⟨t, step, (BranchingTest.holds_toTest φ t).mp holds⟩,
+      fun ⟨t, step, holds⟩ => ⟨t, step, (BranchingTest.holds_toTest φ t).mpr holds⟩⟩
+
+/-- **Passing the same branching tests of the core is passing the same tests of
+`ExplanatoryBranching`.** -/
+theorem sameBranchingTests_iff_same {m : ExplanatoryBranching.Model S A O}
+    {n : ExplanatoryBranching.Model T A O} {s : S} {t : T} :
+    SameBranchingTests (Frame.ofModel m) (Frame.ofModel n) s t ↔
+      ExplanatoryBranching.Same m n s t :=
+  ⟨fun same f => Eq.subst
+      (motive := fun g => ExplanatoryBranching.Holds m s g ↔ ExplanatoryBranching.Holds n t g)
+      (BranchingTest.toTest_ofTest f)
+      ((BranchingTest.holds_toTest _ s).symm.trans
+        ((same _).trans (BranchingTest.holds_toTest _ t))),
+   fun same φ => (BranchingTest.holds_toTest φ s).trans
+      ((same φ.toTest).trans (BranchingTest.holds_toTest φ t).symm)⟩
+
+/-- **On finite decided models, passing the same tests of `ExplanatoryBranching` is likeness,
+with no classical reasoning.** Where the moves and conditions are listed, some list holds the
+configurations of each model, and whether a move takes one configuration to another and whether
+a configuration meets a condition are decided, configurations pass the same tests exactly where
+they are alike: on such models, `same_iff_bisimilar` with no classical reasoning. -/
+theorem same_iff_alike_of_finiteDecided {m : ExplanatoryBranching.Model S A O}
+    {n : ExplanatoryBranching.Model T A O} (moves : ∃ l : List A, ∀ a, a ∈ l)
+    (conditions : ∃ l : List O, ∀ o, o ∈ l) (finite : FiniteDecided (Frame.ofModel m))
+    (finite' : FiniteDecided (Frame.ofModel n)) {s : S} {t : T} :
+    ExplanatoryBranching.Same m n s t ↔ Alike (Frame.ofModel m) (Frame.ofModel n) s t :=
+  sameBranchingTests_iff_same.symm.trans
+    (alike_iff_sameBranchingTests moves conditions finite finite').symm
 
 end Likeness
 
