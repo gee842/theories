@@ -7332,6 +7332,8 @@ theorem kept_along_iff :
 
 **边界。** 落地运行须：在 `check_becoming.py` 中编译与审计四个核心模块与桥接（环境审计、对照与只用前导的编译只在检查器中运行），然后运行 `check_machine_instances.py`（它要求闭包中每个其他模块都有已通过的回执）；把十二项记录的新证明引用绑定到新回执。各外围模块的字节未改。
 
+**落地（2026-10-14）。** 第二批落地：核心检查器回执 20261013T221720.428753Z 通过（核心公理报告为空），MachineInstances 回执 20261013T222154.117109Z 通过（只用标准公理）；记录的新证明引用已绑定到这两个回执。
+
 ## 114. 旧记录的一般律：生存核、计数与预留出口、持续与永不到达
 
 2026-10-14。接续 §113 留给后续的三组：market-protected-continuation、纠正与停机协议、市场。目标形式同 §113：每条律对其种类的每个过程或变化之律陈述为“Y 当且仅当 Z”，Z 是局部条件；等价不成立处给出最强的单向律与逆命题的反例；旧例成为实例。逐行分类见[旧记录审计表](development/becoming-general-laws-plan/general-law-audit/older-records.md)。
@@ -7413,6 +7415,8 @@ theorem lasts_iff_necessary :
 6. **范围。** 只证明所陈述的律；市场律、协议机器与实际市场、设备、权限或请求的对应不由此检查。acquired-revision-of-pending-task 中“有比较根据的修订”仍是该协议的事实；形成目的修订的一般律是 §113 的 `revision_continues`。
 
 **边界。** 落地运行须：在 `check_becoming.py` 中编译与审计 Becoming.Viability、Becoming.Countdown 与 Becoming.Lasting（环境审计、对照与只用前导的编译只在检查器中运行）；然后运行 `check_market_instances.py`、`check_protocol_instances.py` 与 `check_versioned_task_instances.py`（各要求闭包中每个其他模块都有已通过的回执，最后一个用 Lean 4.30.0-rc2 与 Mathlib）；再把十项记录的新证明引用绑定到新回执。原市场、协议与任务模块的字节未改。
+
+**落地（2026-10-14）。** 第三批落地：核心检查器回执 20261014T041246.931872Z 与 20261014T044840.291323Z 通过（核心公理报告为空），ProtocolInstances 20261014T041648.493464Z、MarketInstances 20261014T041714.366300Z、VersionedTaskInstances 20261014T041722.004469Z 通过（只用标准公理）；十项记录的新证明引用已绑定。落地时 ProtocolInstances 的两个新辅助名去掉市场措辞（`paidState` → `unitState`，`funded` → `afterUnit`），旧机器的名称不变。
 
 ## 115. 旧记录的一般律：复制与回溯读出
 
@@ -7506,6 +7510,8 @@ theorem bracket_settles_iff {r r' : R} (two : r ≠ r') (a n k : Nat) :
 5. **范围。** 只证明所陈述的律；机器与分子复制、校对、生长，或与儿童命名、来源监控的对应不由此检查。
 
 **边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.Copying` 与 `Becoming.Retrodiction`，然后运行 `check_copying_instances.py` 与 `check_retrodiction_instances.py`（它们要求闭包中每个其他模块都有已通过的回执），并把五项记录的新证明引用绑定到新回执。各外围机器模块的字节未改。新声明的名称用结构词（汲取律 `draw`、`pairDraw`，用量 `use`，已用 `used`，`drawSupport`），不用市场词；旧机器的名称因旧记录引用而不变。
+
+**落地（2026-10-14）。** 第三批落地：核心检查器回执 20261014T044840.291323Z 通过（核心公理报告为空），CopyingInstances 20261014T045347.438672Z 与 RetrodictionInstances 20261014T045409.164228Z 通过（只用标准公理）；五项记录的新证明引用已绑定。本节原写作第 114 节，与生存核一节同时写成，合并时改为第 115 节。
 
 ## English summary
 
@@ -8714,7 +8720,7 @@ The package now has 4518 theorems and 6370 declaration audits, over a core closu
 - **Formed goal revision** (periphery). For every condition, account and number of operations of the construction: cycles run exactly as work covers the unsupported cycles (`cycles_iff`); revision completes exactly under access loss with kept maintenance (`completed_isSome_iff`); then n operations run exactly when n ≤ 5 (n ≤ 2 without reform) and the earlier loss is retained (`revision_continues`). `harmful` is an instance. The module's definitions use standard axioms, so the law stays in the periphery.
 - **Proposals left for later**: the copy machine, the market law, the correction and shutdown protocols, market-protected-continuation (a guard never fails exactly when an inductive certificate within it contains the start) and historical-source-binding.
 
-Scratch builds only (core and bridge with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed.
+Scratch builds only (core and bridge with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed. Landed in batch 2: core receipt 20261013T221720.428753Z and MachineInstances receipt 20261013T222154.117109Z, both passed.
 
 **General laws for the older records: viability, countdown, lasting and never reaching (14 October 2026).** Section 114 takes up three groups left for later in section 113: market-protected-continuation, the six correction and shutdown protocol records, and the three market records. Each now states a law for every process or law of change of its kind, with the old results as instances; the classes are in [the older-records audit](development/becoming-general-laws-plan/general-law-audit/older-records.md).
 - **Viability** (`Becoming.Viability`, 25 theorems). No course from a configuration leaves a guard exactly when some certificate (a set within the guard that every step keeps) contains it (`kernel_iff_certificate`); the viability kernel is the largest. For a law driven by admissible disturbances, given one, no history ever leaves the guard exactly when some set containing the start lies within the guard and is closed under every admissible disturbance (`never_leaves_iff_certificate`); with none the law fails (`needs_admissible`). The market is an instance for every parameter set, bound set and start (`MarketInstances.never_fails_iff`), and `safe_history_never_fails` follows from the safe rectangle.
@@ -8722,7 +8728,7 @@ Scratch builds only (core and bridge with empty axiom reports; the periphery wit
 - **Lasting** (`Becoming.Lasting`, 36 theorems). A start lasts `n` steps exactly when some ladder holds it at level `n`, and exactly when every necessary family does (`lasts_iff_ladder`, `lasts_iff_necessary`); what no course leaves is what lasts every horizon (`kernel_iff_lasts`). Below level `n` of a drained family every admissible history leaves the guard within `n` steps (`Drains.leaves`), and being at level `n` does not suffice (`Collapse.level_not_lasting`); with growth bounded by a monotone map this gives `exhausts`. A determined law never reaches a target exactly when a closed set avoiding the target contains the start (`avoids_iff_closed`).
 - **Market instances.** `finite_support_forces_failure` is an instance of `exhausts`. The cover recurrence is a ladder for every correction schedule, so the supported prefixes are instances, and at the worst share the cover is exact (`cover_exact`). For 0 ≤ b ≤ 3/4 every positive seed lands exactly when the quality margin at 3/8 is nonnegative (`lands_iff_margin`), and exactly when no closed set avoiding landing contains a positive seed (`lands_iff_no_closed`); above 5/12 the fixed configuration is one.
 
-Scratch builds only (core with empty axiom reports; the peripheries with standard axioms); the landing run binds the receipts. Not yet independently reviewed.
+Scratch builds only (core with empty axiom reports; the peripheries with standard axioms); the landing run binds the receipts. Not yet independently reviewed. Landed in batch 3: core receipts 20261014T041246.931872Z and 20261014T044840.291323Z; ProtocolInstances 20261014T041648.493464Z, MarketInstances 20261014T041714.366300Z and VersionedTaskInstances 20261014T041722.004469Z, all passed; at landing two new helper names in ProtocolInstances lost their market wording (`unitState`, `afterUnit`).
 
 **General laws for the older records: copying and retrodiction (14 October 2026).** Under the same approval, section 115 proves the two groups section 113 left for later.
 - **Copying** (`Becoming.Copying`, 65 theorems). For every alphabet with decidable equality and every law of draws, a copy's product is the word exactly when the pool holds each token at least as often as the word uses it and the support covers what its attachments draw (`built_iff`, `completes_iff`), and with a release exactly when the support also covers it (`releases_iff`). Copies from one shared pool are all released exactly when the pool supplies the words together and the support covers all draws and releases (`batch_all_iff`), whatever their order (`batch_all_swap`). Under local draws, a word's use of support depends on the law only through unlike adjacent pairs (`use_word`, `use_midpoint`, `use_lt_iff`). A copy reading through a registration reproduces a word exactly when every site reads its token and the copy is supplied and covered (`reading_iff`). Inspection never increases the defects for any product exactly where the reference is faithful (`inspect_le_iff`), scans of such sites never do (`scan_le`), and a defective site takes the reference's token exactly when the pool holds it and the support covers both draws (`inspect_matches_iff`). Doubling runs n rounds from k units exactly when the stock covers d·k(2ⁿ−1) (`doubling_iff`).
@@ -8731,4 +8737,4 @@ Scratch builds only (core with empty axiom reports; the peripheries with standar
 - **Source histories** (periphery `RetrodictionInstances`, 21 theorems). The four-moment histories are instances: bracketing controls settle naming in the one-change envelope (`controls_settle_naming`), and later deterioration and improvement are instances. The late-control, split-control and omitted-excursion cases are the law's failing side; the excursion is read wrongly outside the one-change family.
 - **Still one-directional**: `finite_lineage_inherits` (sufficiency only) and the chain's bonds in `registered_copy_cells`. The change envelope remains a supplied premise.
 
-New names are structural (the law of draws `draw` and `pairDraw`, `use`, `used`, `drawSupport`), not market words; the old machines keep their names, which older records cite. Scratch builds only (core with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed.
+New names are structural (the law of draws `draw` and `pairDraw`, `use`, `used`, `drawSupport`), not market words; the old machines keep their names, which older records cite. Scratch builds only (core with empty axiom reports; the periphery with standard axioms); the landing run binds the receipts. Not yet independently reviewed. Landed in batch 3: core receipt 20261014T044840.291323Z; CopyingInstances 20261014T045347.438672Z and RetrodictionInstances 20261014T045409.164228Z, both passed. Written as section 114 alongside the viability section, it became section 115 at the merge.

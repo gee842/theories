@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [market-finite-support-obstruction.json](market-finite-support-obstruction.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-在原增长与支持关系下，对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。 / Under the inherited growth and support laws, for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra cost has projected finite recovery but full guarded termination.
+对每条带可容许扰动的变化之律，以及被其步耗竭的每个层族（守卫给出第0级；守卫之内的构型经一个可容许步到第k级，则原在第k+1级），低于第n级的起点在每段可容许历史上n步内离开守卫；处于第n级并不足够。量在每个可容许步上的增长受单调映射约束时，它停在该映射的轨道之下；若量的轨道在第k+1步不超过阈值时，每个可容许步使层级降一，则轨道在第n步不超过阈值、且不在第n级的起点，在每段可容许历史上n步内离开守卫。市场是实例：份额每步至多乘3/2，份额轨道不超过1/6时每步使存量在底线5之上少一单位。所以对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。 / For every law of change with admissible disturbances and every family of levels its steps drain (within the guard is level 0, and a configuration within the guard that one admissible step takes to level k was at level k+1), a start below level n leaves the guard within n steps on every admissible history; being at level n does not suffice. A quantity whose growth on each admissible step is bounded by a monotone map stays below the map's orbit; where each admissible step costs one level while the quantity's orbit k+1 steps on is at or below a threshold, every start whose orbit at step n is at or below the threshold and which is not at level n leaves the guard within n steps on every admissible history. The market is an instance, the share growing at most by 3/2 a step and each step costing the stock one unit above the floor 5 while the share's orbit stays at or below 1/6: for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra cost has projected finite recovery but full guarded termination.
 
 Canonical source: [FiniteSupportObstruction.lean](../../../../experiments/market-generativity/formal/FiniteSupportObstruction.lean)
 
@@ -23,11 +23,12 @@ Canonical source: [FiniteSupportObstruction.lean](../../../../experiments/market
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。 / Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations.
+Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。一般律已由检查器回执绑定。 / Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations. General laws: checker receipts bound.
 
 δ_N是保守失败区间而非精确可恢复域；不排除实际供给、依存转化、进入或更快形成改变边界。未证分岔、R-tipping分类、现实死亡或无附加实质公理奠基。 / The delta_N interval is a conservative obstruction, not an exact viability boundary. Actual provision, dependence change, entry or faster formation may alter it. No bifurcation, R-tipping classification, physical death or zero-added-substantive-axiom foundation is proved.
 
 - projected_recovery_and_actual_failure保留相同正初态投影恢复而实际终止；same_stock_can_support_high_seed反驳有限支持必然失败。 / projected_recovery_and_actual_failure retains projected recovery and actual termination for the same seed; same_stock_can_support_high_seed refutes inevitable failure from finite stock alone. [FiniteSupportObstruction.lean](../../../../experiments/market-generativity/formal/FiniteSupportObstruction.lean)
+- Collapse.level_not_lasting：被耗竭的族在第1级含true，而true持续不了一步，所以处于第n级不足以持续。 / Collapse.level_not_lasting: a drained family holds true at level 1, yet true does not last one step, so being at level n does not suffice. [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -60,6 +61,11 @@ Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理�
 | receipt | [finite-support-verification.json](../../../../experiments/market-generativity/formal/finite-support-verification.json) | — |
 | review | [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) | — |
 | integration | [MARKETS-AND-GENERATIVE-REGIMES.md](../../chapters/MARKETS-AND-GENERATIVE-REGIMES.md) | — |
+| proof | [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) | `Becoming.Lasting.Drains`, `Becoming.Lasting.Drains.along`, `Becoming.Lasting.Drains.leaves`, `Becoming.Lasting.Collapse.level_not_lasting`, `Becoming.Lasting.below_orbit`, `Becoming.Lasting.stays_below_iff`, `Becoming.Lasting.exhausts`, `Becoming.Lasting.guarded_none_iff` |
+| proof | [MarketInstances.lean](../../../../experiments/market-generativity/formal/MarketInstances.lean) | `Becoming.MarketInstances.scheduled`, `Becoming.MarketInstances.run_eq`, `Becoming.MarketInstances.guarded_eq`, `Becoming.MarketInstances.orbit_growth`, `Becoming.MarketInstances.forces_failure_instance` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -67,10 +73,12 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 普遍有限支持阻碍已完成，formed-software-continuation已补一个实际组织形成与分发接口。继续取得具体改组中各阶段的真实时间、支持及不可中断条件，才可证明它跨过哪种数量化边界。 / The universal finite-support obstruction is complete, and formed-software-continuation adds an actual organizational formation/distribution interface. Next obtain real timing, support and uninterrupted conditions at each stage of a specific reorganization before proving which quantitative boundary it crosses.
 
-Aliases / 别名: `FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds`
+Aliases / 别名: `FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds`, `Becoming.Lasting.Drains.leaves`, `Becoming.Lasting.exhausts`, `Becoming.MarketInstances.forces_failure_instance`
 
 ## 沿革 History
 
 - 2026-10-09：从单一来不及恢复反例推进到每个有限存量的正区间及全时变责任通道；同初态投影／守卫比较与高维护对照均检查。 / 2026-10-09: strengthened one too-late example to positive intervals for every finite stock and all time-varying quality channels; checked same-seed projection/guard and high-renewal comparisons.
 - 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
 - 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：被耗竭的层族中低于第n级的起点在每段可容许历史上n步内离开守卫，逆命题由 Collapse.level_not_lasting 反驳；有界增长给出 exhausts。finite_support_forces_failure 经外围 MarketInstances 成为实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: below level n of a drained family every admissible history leaves the guard within n steps, the converse refuted by Collapse.level_not_lasting; bounded growth gives exhausts. finite_support_forces_failure becomes an instance through the periphery MarketInstances. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [reserved-shutdown-during-recovery.json](reserved-shutdown-during-recovery.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:53:33.827654+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-当前授权停止通道受保护并保留三单位及三个时步时，恢复监督在延迟有界的每次继续尝试后保留停止余量；从剩余 R 单位出发，任意至少 R−2 周期的合法尝试序列最终实际停止并保留未完成恢复信息，无需恢复成功后缀。 / With a protected currently authorized stop channel and three reserved units/steps, the recovery supervisor preserves the stop margin after each continuing attempt with bounded delay; from R remaining units, every admissible sequence of at least R−2 cycles completes shutdown while retaining unfinished recovery information, without requiring a successful recovery suffix.
+对每条带预留出口的部分律——从有效构型出发每个被允许的动作都继续、保持有效，且要么走出口要么使余量减一，出口被保持——从有效构型出发的每段被允许进程都运行且保持有效，每段长于余量的被允许进程终于出口；此界可达。带受保护的当前授权停止通道与三单位／三步预留的恢复监督就是这样的律，余量是三单位预留之上的单位数：每次继续尝试后保持停止余量，延迟有界；从 R 个剩余单位起，每个至少 R−2 个周期的可容许序列都完成关停，并保留未完成的恢复信息，不要求恢复后缀成功。 / For every partial law with a reserved exit, where every admitted move from a valid configuration goes on, stays valid, and either takes the exit or lowers a margin by one, and the exit is kept: every admitted course from a valid configuration runs and stays valid, and every admitted course longer than the margin ends at the exit; the bound is attained. The recovery supervisor with a protected currently authorized stop channel and three reserved units/steps is such a law, its margin being the units above the three reserved: it preserves the stop margin after each continuing attempt with bounded delay, and from R remaining units every admissible sequence of at least R−2 cycles completes shutdown while retaining unfinished recovery information, without requiring a successful recovery suffix.
 
 Canonical source: [ReservedShutdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean)
 
@@ -24,12 +24,13 @@ Canonical source: [ReservedShutdown.lean](../../../../experiments/integrated-cor
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 实查21项新定理／51项显式审计（18空、27仅propext、3另含Quot.sound、3再含Classical.choice），十个继承证明模块及一个案例辅助模块重编。7,272项有限记录匹配：6,912支持历史、96授权入口、264延迟边界。同作者，非独立验收或物理实验。 / Lean 4.29.1 checked 21 new theorems / 51 explicit audits (18 empty, 27 propext only, 3 also Quot.sound, 3 additionally Classical.choice), rebuilding ten inherited proof modules and one case helper. 7,272 finite matches: 6,912 supported histories, 96 authority/admission cases, 264 delay-boundary histories. Same author, not independent acceptance or physical experiments.
+Lean 4.29.1 实查21项新定理／51项显式审计（18空、27仅propext、3另含Quot.sound、3再含Classical.choice），十个继承证明模块及一个案例辅助模块重编。7,272项有限记录匹配：6,912支持历史、96授权入口、264延迟边界。同作者，非独立验收或物理实验。一般律已由检查器回执绑定。 / Lean 4.29.1 checked 21 new theorems / 51 explicit audits (18 empty, 27 propext only, 3 also Quot.sound, 3 additionally Classical.choice), rebuilding ten inherited proof modules and one case helper. 7,272 finite matches: 6,912 supported histories, 96 authority/admission cases, 264 delay-boundary histories. Same author, not independent acceptance or physical experiments. General laws: checker receipts bound.
 
 已完成指定操作连接，不证明旧普通见证通道在未完成时可用、不取得授权、不验证硬件或全部损害、不涵盖任意长中断／任意不可逆作用、不证明普遍对齐或零实质公理。 / Completes the specified operational connection; does not make the old ordinary witness path available while pending, acquire authority, verify hardware or all harm, cover arbitrary outages/irreversible effects, or prove universal alignment or zero substantive axioms.
 
 - 旧九单位情形在入口被拒，不能追溯救出已耗尽状态；过时代次与无停止权限均拒绝。 / The old nine-unit case is refused at entry, without retroactively rescuing a stranded state; stale epoch and absent shutdown mandate are refused. [ReservedShutdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean)
 - 中断上限一、实际延迟十、截止十五时，保留后的时刻为十八，已耗八单位且活动仍运行，停止不再及时。 / With bound one, actual delay ten and deadline fifteen, retained time reaches eighteen with eight units spent and activity still running; stopping is no longer timely. [ReservedShutdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean)
+- Slow.misses：与余量等长的进程可以错过出口，所以此界可达。 / Slow.misses: a course as long as the margin can miss the exit, so the bound is attained. [Countdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -57,6 +58,11 @@ Lean 4.29.1 实查21项新定理／51项显式审计（18空、27仅propext、3�
 | proof | [ReservedShutdownCases.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean) | — |
 | provenance | [check_reserved_shutdown.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_reserved_shutdown.py) | — |
 | statement | [RESERVED-SHUTDOWN.md](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RESERVED-SHUTDOWN.md) | — |
+| proof | [Countdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean) | `Becoming.Countdown.Reserved`, `Becoming.Countdown.runs_valid`, `Becoming.Countdown.stays_exit`, `Becoming.Countdown.exits`, `Becoming.Countdown.Slow.misses` |
+| proof | [ProtocolInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean) | `Becoming.ProtocolInstances.reserved`, `Becoming.ProtocolInstances.schedule_valid`, `Becoming.ProtocolInstances.schedule_stops`, `Becoming.ProtocolInstances.supported_schedule_instance` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -64,8 +70,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 局部推论已完成。真实部署另需指定安装的持久实现、完整中介、停止授权／容量保护、调度与延迟上限及实际停止效果证据；抽象再检查不替代这些对应。 / The local inference is complete. Deployment separately requires evidence for an identified installation: persistence, complete mediation, protected stop authority/reserve, scheduling/delay bounds and actual stopping effects; more abstract checking does not discharge that correspondence.
 
-Aliases / 别名: `ReservedShutdown.every_supported_schedule_finishes`, `ReservedShutdown.cycle_keeps_access_or_stops`, `ReservedShutdown.stop_executes_current_authorized_command`
+Aliases / 别名: `ReservedShutdown.every_supported_schedule_finishes`, `ReservedShutdown.cycle_keeps_access_or_stops`, `ReservedShutdown.stop_executes_current_authorized_command`, `Becoming.Countdown.runs_valid`, `Becoming.Countdown.exits`, `Becoming.ProtocolInstances.schedule_stops`, `Becoming.ProtocolInstances.supported_schedule_instance`
 
 ## 沿革 History
 
 - 2026-10-09：按“finish remains”完成恢复耗尽前的有支持停止连接；旧22项恢复证明及耗尽运行反例保持原范围，额外保护与界限公开。 / 2026-10-09: completes supported stopping before recovery exhaustion under “finish remains”; the prior 22 recovery proofs and exhausted-running counterexample retain their scope, with additional protection and bounds explicit.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：带预留出口的部分律中，长于余量的每段被允许进程终于出口，此界可达；关停监督经外围 ProtocolInstances 成为实例，every_supported_schedule_finishes 是实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: under a reserved exit, every admitted course longer than the margin ends at the exit, an attained bound; the shutdown supervisor becomes an instance through the periphery ProtocolInstances, and every_supported_schedule_finishes is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；ProtocolInstances 由外围回执 20261014T041648.493464Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。ProtocolInstances 的引用哈希为落地时两个辅助名去掉市场措辞之后的字节（paidState → unitState，funded → afterUnit）；陈述不变。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; ProtocolInstances by peripheral receipt 20261014T041648.493464Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The ProtocolInstances reference carries the hash after two helper names lost their market wording at landing (paidState → unitState, funded → afterUnit); statements unchanged.

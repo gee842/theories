@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [inherited-structural-copying.json](inherited-structural-copying.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:33:55.797868+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:00:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-实际交换改变保留排列，逐项材料复制传递变化；在给定材料下推导精确接续预算及任意有限谱系，并由共同局部成本约束第三种排列。 / An actual exchange changes retained order and tokenwise material copying transmits it; declared material permits an exact continuation budget and every finite lineage, while shared local costs constrain a third arrangement.
+对每个可判等字母表与每个汲取律：一词的复制完成且产物即该词，当且仅当池中每个记号的数量不少于词中所用、且空闲支持覆盖各次接合的汲取；含释放时，当且仅当支持另覆盖释放；自同一共同池依次复制的各词全部释放，当且仅当池共同供给所有词且支持覆盖全部汲取与释放，与次序无关。局部汲取下，词的用量只经其相异邻对数依赖于汲取律：相异邻对较多的词汲取较少，当且仅当异类之后的接合汲取较少；相异邻对成等差时用量亦成等差。结构复制机是实例：模板链被复制并释放，当且仅当池供给其记号且支持覆盖其汲取加一，对每个池成立；旧的所需支持定理、交替／聚簇排序与第三排列约束都是实例，任意有限谱系的定理保持。实际交换改变保留次序，逐项材料复制传递该变化。 / For every alphabet with decidable equality and every law of draws: a copy of a word completes, its product being the word, exactly when the pool holds each token at least as often as the word uses it and the free support covers what its attachments draw; with a release, exactly when the support also covers the release; copies drawn in turn from one shared pool are all released exactly when the pool supplies all the words together and the support covers all their draws and releases, whatever their order. Under local draws a word's use of support depends on the law only through its number of unlike adjacent pairs: the word with more unlike pairs draws less exactly when an attachment after an unlike token draws less, and uses are in arithmetic progression where unlike pairs are. The structural copy machine is an instance: a template strand is copied and released exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool; the old theorem of the support needed, the alternating/clustered ranking and the third-arrangement constraint are instances, and the every-finite-lineage theorem stands. An actual exchange changes retained order and tokenwise material copying transmits it.
 
 Canonical source: [StructuralCopying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [StructuralCopying.lean](../../../../experiments/integrated-co
 
 ## 检验与边界 Validation and boundaries
 
-34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。 / 34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis.
+34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。一般律已由检查器回执绑定。 / 34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis. General laws: checker receipts bound.
 
 未导出读取／保真能力、物理化学成本、变异发生率、自供或种群入侵。第三成本约束超出独立拟合系数，但同机制的强传统模型也有此约束。 / Reading/fidelity capability, physicochemical costs, mutation occurrence, autonomous feed and population invasion are not derived. The third-cost constraint exceeds independently fitted coefficients but is also available to a strong conventional model with the same mechanism.
 
@@ -45,8 +45,13 @@ Canonical source: [StructuralCopying.lean](../../../../experiments/integrated-co
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [StructuralCopying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean) | `StructuralCopying.formed_variant_enters_copying`, `StructuralCopying.exact_reproduction_budget`, `StructuralCopying.finite_lineage_inherits`, `StructuralCopying.lineage_accounts`, `StructuralCopying.third_structure_cost_constraint`, `StructuralCopying.two_costs_determine_third`, `StructuralCopying.shared_supply_order_matters` |
+| proof | [Copying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean) | `Becoming.Copying.Supplies`, `Becoming.Copying.built_iff`, `Becoming.Copying.completes_iff`, `Becoming.Copying.releases_iff`, `Becoming.Copying.supplies_append_iff`, `Becoming.Copying.batch`, `Becoming.Copying.batch_all_iff`, `Becoming.Copying.batch_all_swap`, `Becoming.Copying.pairDraw`, `Becoming.Copying.use_word`, `Becoming.Copying.use_midpoint`, `Becoming.Copying.use_lt_iff` |
+| proof | [CopyingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) | `Becoming.CopyingInstances.draw_eq`, `Becoming.CopyingInstances.view_tick`, `Becoming.CopyingInstances.copy_cells_iff`, `Becoming.CopyingInstances.reproduce_iff`, `Becoming.CopyingInstances.template_pool_reproduce_iff`, `Becoming.CopyingInstances.batch_view`, `Becoming.CopyingInstances.batch_all_released_iff`, `Becoming.CopyingInstances.batch_all_released_swap`, `Becoming.CopyingInstances.local_ranking_from_law`, `Becoming.CopyingInstances.third_structure_from_law` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/verification.json) | — |
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -54,10 +59,12 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 配准形成和已成产物编辑均有后续条件组合；继续选择性／参考规律、持续支持及共同供给中的选择。 / Registration formation and editing of existing products now have conditional continuations; next explain selectivity/reference relations, renewed support and selection under shared provision.
 
-Aliases / 别名: `StructuralCopying.exact_reproduction_budget`
+Aliases / 别名: `StructuralCopying.exact_reproduction_budget`, `Becoming.Copying.built_iff`, `Becoming.Copying.batch_all_iff`, `Becoming.CopyingInstances.reproduce_iff`
 
 ## 沿革 History
 
 - 2026-10-09：接续原分割研究，保留原固定规律成果与社会组织支线；一个局部组合成果，不按声明数认领独立发现。 / 2026-10-09: extends the existing fragmentation study while preserving fixed-law results and the social-organizational branch; one local composition, not one independent discovery per declaration.
 - 2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。 / 2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise.
 - 2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。 / 2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying）：对每个字母表与汲取律，复制完成恰当池逐记号供给且支持覆盖汲取，同池批量全部释放恰当池共同供给且支持覆盖全部，与次序无关；局部汲取的排序与等差律。外围 CopyingInstances 把结构复制机陈述为实例，对每个池给出复制与释放的等价，旧 exact_reproduction_budget 是实例。scratch_build 实编，核心公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Copying): for every alphabet and law of draws, a copy completes exactly when the pool supplies each token and the support covers the draws, and a shared-pool batch is all released exactly when the pool supplies the words together and the support covers everything, in any order; the ranking and progression laws of local draws. The periphery CopyingInstances states the structural machine as an instance, with the copy and release equivalence for every pool and the old exact_reproduction_budget as an instance. Built with scratch_build, the core with empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

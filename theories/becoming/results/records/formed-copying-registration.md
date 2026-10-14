@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [formed-copying-registration.json](formed-copying-registration.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:33:55.796075+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:00:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-消耗连接件和支持形成的实际配准关系接入材料复制；缺接、错位及重接改变后继，完整稳定配准恢复既有复制定理，而任意允许的有限操作保留已成前缀。 / Connector- and support-consuming registration enters material copying; loss, displacement and rebinding change the successor, complete stable registration recovers prior copying, and every admitted finite history retains its built prefix.
+对每个字母表与汲取律：在每一位接合配准所读之物的复制产生某词，当且仅当每一位读出该词的记号、池供给该词且支持覆盖其汲取，其产物只增长；对每个过程，每步延长输出当且仅当每段进程延长输出，每个非门控步保持的量沿每段非门控进程保持。配准机中，对每个状态，与词长相同数目的复制步把产物延长为该词，当且仅当每一位经实际连接读出其记号、池供给该词且支持覆盖其汲取；完整稳定配准恢复既有复制是其实例。缺接、错位与重接通过改变各位所读而改变后继；只有复制步改变产物，故连接变化不改写产物，每个允许的有限历史保留已成前缀及连接件、材料与支持的总量。消耗连接件和支持形成的配准接入材料复制。 / For every alphabet and law of draws: a copy attaching at each site what a registration reads there produces a word exactly when every site reads the word's token, the pool supplies the word and the support covers what it draws, and its product only grows; for every process an output is extended along every course exactly when every step extends it, and a quantity kept by every ungated step is kept along every ungated course. In the registration machine, for every state, as many copy moves as a word has tokens extend the product by that word exactly when each site reads its token through the actual contacts, the pool supplies it and the support covers what it draws; complete stable registration recovering prior copying is the instance. Loss, displacement and rebinding change the successor by changing what sites read; only copy moves change the product, so contact changes never rewrite it, and every admitted finite history keeps its built prefix and its totals of connectors, material and support. Connector- and support-consuming registration enters material copying.
 
 Canonical source: [CopyingRegistration.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [CopyingRegistration.lean](../../../../experiments/integrated-
 
 ## 检验与边界 Validation and boundaries
 
-33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。 / 33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis.
+33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。一般律已由检查器回执绑定。 / 33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis. General laws: checker receipts bound.
 
 未导出索引识别／取值规律、损伤率、纠错启动、切除机制、自供或种群选择；同等接触机制的强对手具有相同解释能力。 / Indexed recognition/transduction, damage rates, repair initiation, excision, autonomous provision and population selection are not derived; a strong rival retaining the same contact mechanism has the same explanatory capacity.
 
@@ -45,8 +45,13 @@ Canonical source: [CopyingRegistration.lean](../../../../experiments/integrated-
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [CopyingRegistration.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean) | `CopyingRegistration.registered_operation_refines`, `CopyingRegistration.registered_inheritance`, `CopyingRegistration.history_accounts`, `CopyingRegistration.history_retains_built_prefix`, `CopyingRegistration.correcting_contact_does_not_rewrite_past`, `CopyingRegistration.no_census_only_copy`, `CopyingRegistration.erroneous_daughter_can_be_faithfully_inherited` |
+| proof | [Copying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean) | `Becoming.Copying.Reads`, `Becoming.Copying.readSteps`, `Becoming.Copying.reading_iff`, `Becoming.Copying.readSteps_extends`, `Becoming.Copying.Extends`, `Becoming.Copying.extends_along_iff` |
+| proof | [CopyingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) | `Becoming.CopyingInstances.tick_work_view`, `Becoming.CopyingInstances.operate_view`, `Becoming.CopyingInstances.operate_copies_iff`, `Becoming.CopyingInstances.registered_copy_cells`, `Becoming.CopyingInstances.product_extends_along`, `Becoming.CopyingInstances.product_gated`, `Becoming.CopyingInstances.contact_course_keeps_product`, `Becoming.CopyingInstances.product_change_passes_copy`, `Becoming.CopyingInstances.totals_along` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-registration-verification/verification.json) | — |
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -54,9 +59,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 formed-copying-correction 已接通已成产物的编辑与后继；继续参考关系的取得／更新、故障定位、支持再生及明确共同分配。 / formed-copying-correction now joins editing of an existing product and its successor; continue acquisition/renewal of the reference relation, fault localization, support renewal and explicit shared allocation.
 
-Aliases / 别名: `CopyingRegistration.registered_inheritance`
+Aliases / 别名: `CopyingRegistration.registered_inheritance`, `Becoming.Copying.reading_iff`, `Becoming.CopyingInstances.operate_copies_iff`
 
 ## 沿革 History
 
 - 2026-10-09：在既有分割研究中新增一个形成—读取—继承组合；保留旧理想复制、材料记录及社会组织支线的范围。 / 2026-10-09: adds one formation–reading–inheritance composition in the existing fragmentation study; preserves ideal copying, material recording and social-organizational work at their scopes.
 - 2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。 / 2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的读取律与延长律，及 Becoming.Gated）：外围 CopyingInstances 对每个配准状态给出经实际连接读取的等价，registered_inheritance 的产物记号是实例（不需非空路径前提），只有复制步改变产物，history_accounts 是空门的实例。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (the reading and extension laws of the new core module Becoming.Copying, with Becoming.Gated): the periphery CopyingInstances gives the equivalence for reading through the actual contacts for every registration state; the product tokens of registered_inheritance are an instance (without the nonempty-path premise); only copy moves change the product; history_accounts is the instance with no move gated. Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

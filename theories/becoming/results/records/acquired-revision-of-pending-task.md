@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [acquired-revision-of-pending-task.json](acquired-revision-of-pending-task.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:44:58.926831+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-在已有版本化传递不变量下，改写头请求的实际剩余编码保留捕获路线、进度及其他任务，并送达新请求。将已取得且有比较根据的目的修订与此操作接通后，端点行动执行新实践，保留历史损失并消耗实际工作支持；其参数化组合覆盖任意有效头请求。 / Under the existing versioned-delivery invariant, rewriting the head packet’s remaining encoding preserves its captured route, progress and other work while delivering the new request. Connecting acquired, comparatively warranted goal revision to this rewrite makes endpoint action enact the new practice, retaining historical loss and consuming actual work support; the parameterized composition covers any valid head.
+对每条带计数工作的部分律，待完成任务恰在剩余工作加一次中完成，更短的运行都不交付。在既有版本化交付不变量下，改写队首包的剩余编码保持其已捕获路线、进度与其余工作，所以修订后的队首对新请求仍是这样的任务，剩余工作相同、完成次数相同。把取得的、有比较根据的目的修订接到这一改写，端点行动就执行新做法，保留历史损失并消耗实际工作支持；参数化组合覆盖任何有效队首。 / For every partial law with counted work, a pending task finishes in exactly its remaining work plus one tick, and no shorter run delivers it. Under the existing versioned-delivery invariant, rewriting the head packet's remaining encoding preserves its captured route, progress and other work, so the revised head is again such a task for the new request, with the same remaining work and the same number of ticks. Connecting acquired, comparatively warranted goal revision to this rewrite makes endpoint action enact the new practice, retaining historical loss and consuming actual work support; the parameterized composition covers any valid head.
 
 Canonical source: [CommonTaskRevision.lean](../../../../experiments/market-generativity/meta-attractor/CommonTaskRevision.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [CommonTaskRevision.lean](../../../../experiments/market-gener
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。 / Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs.
+Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律已由检查器回执绑定。 / Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: checker receipts bound.
 
 只改标签或直接写未编码值会失败；旧任务可被忠实执行而增加损失。取得根据后处境改变，也可使修订后的实践增加维护损失；不证明开放共同目的形成或无限变化中的纠正。 / Relabeling or writing an unencoded value can fail; the old task can be faithfully executed and add loss. Changed conditions after acquisition can also make the revised practice harm maintenance. No open joint-purpose formation or correction through unrestricted change.
 
@@ -57,6 +57,11 @@ Boundary source / 边界来源: [CommonTaskRevision.lean](../../../../experiment
 | integration | [COLLECTIVE-DESTRUCTION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md) | — |
 | statement | [COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md](../../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md) | — |
 | provenance | [check_common_task_revision.py](../../../../experiments/market-generativity/meta-attractor/check_common_task_revision.py) | — |
+| proof | [Countdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean) | `Becoming.Countdown.Advances`, `Becoming.Countdown.Advances.completes`, `Becoming.Countdown.completes_iff`, `Becoming.Countdown.pending_before` |
+| proof | [VersionedTaskInstances.lean](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) | `Becoming.VersionedTaskInstances.head_advances`, `Becoming.VersionedTaskInstances.retarget_pending`, `Becoming.VersionedTaskInstances.revised_head_instance` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -64,9 +69,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接复用在途改写；pending-task-context-applicability 已接通有成本的作用前复查。继续说明相关性取得和旧做法不适用时真实需求的有支持接续。 / Reuse pending rewriting directly; pending-task-context-applicability now connects paid pre-effect review. Continue acquisition of relevance and supported continuation of actual needs when the old method is inapplicable.
 
-Aliases / 别名: `CommonTaskRevision.warranted_revision_and_pending_delivery`, `CommonTaskRevision.revised_head_completes`
+Aliases / 别名: `CommonTaskRevision.warranted_revision_and_pending_delivery`, `CommonTaskRevision.revised_head_completes`, `Becoming.VersionedTaskInstances.retarget_pending`, `Becoming.VersionedTaskInstances.revised_head_instance`
 
 ## 沿革 History
 
 - 2026-10-09：新增一项组合成果；17项定理声明／27项审计与188项继承定理／327项继承审计分别列出。作者反审已记录，未声称独立验收。 / 2026-10-09: one new composition result; 17 theorem declarations/27 audits are separated from 188 inherited theorems/327 inherited audits. Author counterreview is recorded; no independent acceptance is claimed.
 - 2026-10-09：核读并接入后续端点复查，文稿增加行动保护与比较理由的区分；本记录的在途改写定理及原回执不变。 / 2026-10-09: reread and integrated the endpoint-review continuation and its action-protection/comparative-warrant distinction; this record’s pending-rewrite theorem and original receipt are unchanged.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：计数的工作恰在剩余工作加一次中完成；改写后的队首经外围 VersionedTaskInstances 仍是 Countdown.Advances 的实例，revised_head_completes 是实例。有比较根据的修订条件仍是该协议的事实。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly its remaining work plus one tick; through the periphery VersionedTaskInstances the rewritten head stays an instance of Countdown.Advances, and revised_head_completes is an instance. The warranted-revision conditions remain facts of the protocol. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

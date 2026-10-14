@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [versioned-request-completion.json](versioned-request-completion.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:28:30.702862+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-在银行与队列不变量下，头请求经过剩余路径长度加一次连续 tick 后，发出其原请求值，移除该头项，保留其余队列、路线存储及当前活跃路线。 / Under the bank/queue invariant, the head completes after its remaining path length plus one consecutive tick, emits its requested value and leaves the remaining queue, banks and active route unchanged.
+对每条部分律：任务待完成时每次做一单位剩余工作、无剩余时完成，则任务恰在剩余工作加一次中完成，每段更短的运行使它仍待完成、工作减去所走次数；计入燃料时，work + 1 次完成恰当燃料够用。版本化队列的队首就是这样的任务：在库与队列不变量之下每次走其剩余路径的一跳，所以队首在剩余路径长度加一次连续 tick 后完成，发出所请求的值，不改变其余队列、库与当前路线；更短的运行都不交付。 / For every partial law that, while a task is pending, does one unit of its remaining work per tick and finishes when none is left, the task finishes in exactly its remaining work plus one tick, and every shorter run leaves it pending with the work lowered by the ticks taken; with fuel counted, work + 1 ticks finish exactly when the fuel covers them. The versioned queue's head is such a task: under the bank/queue invariant each tick does one hop of its remaining path, so the head completes after its remaining path length plus one consecutive tick, emits its requested value and leaves the remaining queue, banks and active route unchanged, and no shorter drain delivers it.
 
 Canonical source: [CorrectionVersioned.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean)
 
@@ -22,7 +22,7 @@ Canonical source: [CorrectionVersioned.lean](../../../../experiments/integrated-
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。 / Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs.
+Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律已由检查器回执绑定。 / Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: checker receipts bound.
 
 不证明原请求现在仍合宜；固定容量可以阻断接入，无任意调度下的实时完成保证。 / Does not show that the original request remains appropriate; finite capacity can block admission and arbitrary scheduling provides no deadline.
 
@@ -42,6 +42,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [common-task-revision-verification.json](../../../../experiments/market-generativity/meta-attractor/common-task-revision-verification.json) | — |
 | integration | [VERSIONED-CORRECTION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md) | — |
 | provenance | [2026-10-09-responsive-transformation.md](../../../../sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md) | — |
+| proof | [Countdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean) | `Becoming.Countdown.Counts`, `Becoming.Countdown.completes_iff`, `Becoming.Countdown.pending_before`, `Becoming.Countdown.Advances`, `Becoming.Countdown.Advances.counts`, `Becoming.Countdown.Advances.completes` |
+| proof | [VersionedTaskInstances.lean](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) | `Becoming.VersionedTaskInstances.head_advances`, `Becoming.VersionedTaskInstances.head_completes`, `Becoming.VersionedTaskInstances.valid_head_instance`, `Becoming.VersionedTaskInstances.head_pending_before` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -49,9 +54,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接复用完成接口与 acquired-revision-of-pending-task 已完成的在途任务修订。沿因应转化方向研究根据在认知／处境变化后的适用条件及实践方向；不以无限变化中的无条件保证作为本结果或整个方向的完成门槛。 / Reuse the completion interface and the already completed pending-task revision in acquired-revision-of-pending-task. Investigate applicability conditions and practical direction through changing understanding and circumstances under responsive transformation; unconditional assurance through unrestricted change is not a completion gate for this result or the whole direction.
 
-Aliases / 别名: `CorrectionVersioned.valid_head_completes`
+Aliases / 别名: `CorrectionVersioned.valid_head_completes`, `Becoming.Countdown.Advances.completes`, `Becoming.Countdown.pending_before`, `Becoming.VersionedTaskInstances.head_completes`, `Becoming.VersionedTaskInstances.valid_head_instance`
 
 ## 沿革 History
 
 - 2026-10-09：迁移8日既有完成声明，重建时作为导入成果实查；不新增该声明或重算为新成果。 / 2026-10-09: migrated the existing 8 October completion claim and rechecked it as an import; not a new claim or result.
 - 2026-10-09：依据 Ren 对认知、处境、边界与方向的澄清，修订本局部结果在因应转化中的解释；复用另会话已完成的在途修订。定理、证明绑定及既有实查状态不变，不把更名或重读计为新成果。 / 2026-10-09: reconciles the local result with Ren’s clarification about cognition, circumstances, boundaries and direction under responsive transformation, reusing the completed pending-task revision from another study. The theorem, proof binding and checked status are unchanged; terminology and rereading are not new results.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：计数的工作恰在 work + 1 次中完成、燃料够用时恰好，更短的运行不完成；队首经外围 VersionedTaskInstances（Lean 4.30.0-rc2 与 Mathlib）成为 Countdown.Advances 的实例，valid_head_completes 是实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly work + 1 ticks, exactly when the fuel covers them, and no shorter run finishes; the head becomes an instance of Countdown.Advances through the periphery VersionedTaskInstances (Lean 4.30.0-rc2 with Mathlib), and valid_head_completes is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

@@ -101,8 +101,8 @@
     "en": "Does not form developmental identity/time retention or persistence assumptions, prove arbitrary-length histories, provide a complete cost account, or identify neural mechanisms, consciousness or evolutionary origins. General filtering is not a new invention of this project. Cross-study task differences do not identify the causal moderator of transfer, and nonhuman performance does not establish homology or adaptation."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1实查10项新定理／36项声明；继承304项定理／549项声明分列重建。新25项空依赖、11项含propext及Quot.sound；继承闭含Classical.choice。原典比较与作者反审，无新经验复算或独立agent验收。 本次追加五篇原典的方法、结果与相关讨论评估，无新数学或经验复算；原始Lean回执不改写。",
-    "en": "Lean 4.29.1 checked 10 new theorems / 36 declarations; 304 inherited theorems / 549 declarations rebuilt separately. New audits: 25 empty, 11 propext and Quot.sound; inherited closure contains Classical.choice. Primary comparison and author counterreview; no empirical reanalysis or independent-agent acceptance. This addition assesses methods, results and relevant discussion in five primary papers, with no new mathematics or empirical reanalysis; original Lean receipts remain unchanged."
+    "zh": "Lean 4.29.1实查10项新定理／36项声明；继承304项定理／549项声明分列重建。新25项空依赖、11项含propext及Quot.sound；继承闭含Classical.choice。原典比较与作者反审，无新经验复算或独立agent验收。 本次追加五篇原典的方法、结果与相关讨论评估，无新数学或经验复算；原始Lean回执不改写。一般律已由检查器回执绑定。",
+    "en": "Lean 4.29.1 checked 10 new theorems / 36 declarations; 304 inherited theorems / 549 declarations rebuilt separately. New audits: 25 empty, 11 propext and Quot.sound; inherited closure contains Classical.choice. Primary comparison and author counterreview; no empirical reanalysis or independent-agent acceptance. This addition assesses methods, results and relevant discussion in five primary papers, with no new mathematics or empirical reanalysis; original Lean receipts remain unchanged. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -195,7 +195,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/retrodiction-instances-checks/20261014T045409.164228Z/verification.json",
+      "role": "receipt",
+      "sha256": "a3eb20d4005696835aee35fcba1c7bb8496f15d8e065ba65c8bb74783c42ee4a",
       "declarations": []
     }
   ],
@@ -220,6 +232,20 @@
       "sha256_pointer": "/source_sha256/AcquiredBinding",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Retrodiction.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Retrodiction",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RetrodictionInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/retrodiction-instances-checks/20261014T045409.164228Z/verification.json",
+      "sha256_pointer": "/source_sha256/RetrodictionInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -238,6 +264,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Retrodiction）：旧报告包读对恰当每个族内对手被某一日期化控制区分；两端控制确定其间日期恰当至多一次变化，短暂变化是反例。外围 RetrodictionInstances 把四时刻来源史陈述为实例：后来退化与改善由 bracket 读对，晚期控制、前后控制与遗漏短暂变化是失败一侧。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Retrodiction): an earlier packet is read right exactly when every family rival is told apart by some dated control; controls at both ends settle the dates between exactly under at most one change, with the excursion as the counterexample. The periphery RetrodictionInstances states the four-moment histories as instances: later deterioration and improvement are read right by bracket, and the late-control, split-control and omitted-excursion cases are the failing side. Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Retrodiction 由核心回执 20261014T044840.291323Z；RetrodictionInstances 由外围回执 20261014T045409.164228Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Retrodiction by core receipt 20261014T044840.291323Z; RetrodictionInstances by peripheral receipt 20261014T045409.164228Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
     }
   ]
 }

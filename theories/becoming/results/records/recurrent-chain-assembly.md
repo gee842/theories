@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [recurrent-chain-assembly.json](recurrent-chain-assembly.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:33:55.799793+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:00:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-先前实际路由输出经逐项接合形成可分割链；保留内部边的两个片段经同一接合规律各自重建，任意有限轮次可在明确共同材料及支持预算内执行。 / The previous actual routing output forms a cleavable chain through tokenwise attachment; its internally connected fragments rebuild under the same attachment law, with every finite number of rounds executable within explicit shared material/support budgets.
+对每个字母表与汲取律，一词的复制产生该词，当且仅当池供给该词且支持覆盖其汲取；若每单位自同一存量取 d 并一分为二，则自 k 单位的 n 轮运行当且仅当存量覆盖 d·k(2^n−1)，终于 k·2^n 单位。末端接合是其实例（交替词、单位汲取）：在长度上限内，链按交替词生长，当且仅当池供给该词且支持每记号覆盖一单位；自空链形成成熟链，当且仅当池中两类各至少四个且有八单位空闲支持。自 k 条成熟链、具备各轮材料，n 轮达到 k·2^n 条成熟链，当且仅当支持覆盖 9·k(2^n−1)，即取量为 9 的加倍过程运行 n 轮。先前实际路由输出形成可切分链，其保留内部边的片段在同一接合规律下各自重建。 / For every alphabet and law of draws, a copy of a word produces the word exactly when the pool supplies it and the support covers what it draws; where every unit draws d from one stock and becomes two, n rounds from k units run exactly when the stock covers d·k(2^n−1), ending with k·2^n units. End attachment is the instance with the alternating word and unit draws: within the size limit a chain grows by the alternating word exactly when the pool supplies it and the support covers one unit per token, so the mature chain forms from the empty chain exactly when the pool holds at least four of each kind and eight units are free. From k mature chains with the material for the rounds, n rounds reach k·2^n mature chains exactly when the support covers 9·k(2^n−1), that is, exactly when the doubling process with draw 9 runs n rounds. The previous actual routing output forms the cleavable chain, and its internally connected fragments rebuild under the same attachment law.
 
 Canonical source: [RecurrentAssembly.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [RecurrentAssembly.lean](../../../../experiments/integrated-co
 
 ## 检验与边界 Validation and boundaries
 
-所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。 / The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct.
+所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。一般律已由检查器回执绑定。 / The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct. General laws: checker receipts bound.
 
 少一单位支持留下真实七组分后继；缺 B 仍有支持也停滞。未证明组织规律的可遗传变异、真实力学、自供材料或广泛比较优势。 / One missing support unit leaves a real seven-component successor; absence of B stalls despite remaining work. Heritable variation in organizing laws, physical mechanics, autonomous feed and broad comparative advantage are unproved.
 
@@ -53,8 +53,13 @@ Boundary source / 边界来源: [RecurrentAssembly.lean](../../../../experiments
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [RecurrentAssembly.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean) | `RecurrentAssembly.prepared_repeated_generation`, `RecurrentAssembly.supported_rounds`, `RecurrentAssembly.required_as_growth`, `RecurrentAssembly.rounds_accounts`, `RecurrentAssembly.partial_failure_keeps_material`, `RecurrentAssembly.formed_graph_matches_previous`, `RecurrentAssembly.fragments_retain_real_links` |
+| proof | [Copying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean) | `Becoming.Copying.built_iff`, `Becoming.Copying.required`, `Becoming.Copying.required_add`, `Becoming.Copying.doubling`, `Becoming.Copying.doubling_iff`, `Becoming.Copying.doubling_runs` |
+| proof | [CopyingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) | `Becoming.CopyingInstances.alternatingFrom`, `Becoming.CopyingInstances.grow_view`, `Becoming.CopyingInstances.grow_iff`, `Becoming.CopyingInstances.mature_forms_iff`, `Becoming.CopyingInstances.reproduce_used`, `Becoming.CopyingInstances.rounds_used`, `Becoming.CopyingInstances.rounds_mature_iff`, `Becoming.CopyingInstances.rounds_follow_doubling` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/verification.json) | — |
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -62,7 +67,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 固定规律重复与附加模板复制已完成，formed-copying-registration 进一步接通局部配准形成；物理辨别、更新供给与共同分配仍待说明。 / Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local registration formation, leaving physical discrimination, renewed supply and shared allocation to explain.
 
-Aliases / 别名: `RecurrentAssembly.prepared_repeated_generation`
+Aliases / 别名: `RecurrentAssembly.prepared_repeated_generation`, `Becoming.Copying.doubling_iff`, `Becoming.CopyingInstances.grow_iff`, `Becoming.CopyingInstances.rounds_mature_iff`
 
 ## 沿革 History
 
@@ -71,3 +76,5 @@ Aliases / 别名: `RecurrentAssembly.prepared_repeated_generation`
 - 2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。 / 2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated.
 - 2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。 / 2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise.
 - 2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。 / 2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的复制律与加倍律）：末端接合是交替词、单位汲取的核心复制，链生长与成熟链形成为等价；新的支持不变量（每次接合与切分各取一单位）给出 n 轮达到 k·2^n 条成熟链的等价，旧 supported_rounds 是其充分一侧，partial_failure_keeps_material 是失败一侧。外围 CopyingInstances；scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (the copying and doubling laws of the new core module Becoming.Copying): end attachment is the core copy of the alternating word with unit draws, so chain growth and the mature chain are equivalences; a new support invariant (one unit per attachment and per cleavage) gives the equivalence for n rounds reaching k·2^n mature chains, the old supported_rounds being its sufficient side and partial_failure_keeps_material its failing side. Periphery CopyingInstances; built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

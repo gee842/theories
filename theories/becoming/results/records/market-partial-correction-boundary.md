@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [market-partial-correction-boundary.json](market-partial-correction-boundary.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-原有理市场族0≤β≤3/4、无额外责任误差时，所有物理正维护初态均有限到达原保护区，当且仅当β≤5/12。该侧包括临界等号，并在初始支持满足既有K_N界时实际执行，撤除干预后交接给原保护证书。 / In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time iff beta<=5/12. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal.
+对每条确定的律与目标：从起点出发的轨道永不到达目标，恰当某个含起点、避开目标且对律封闭的集合存在，这即目标补集的生存核；某种子永不到达恰当这样的集合含种子，目标之外的不动构型自身就是这样的集合。在原有理市场族中，0≤β≤3/4且无额外责任误差时，每个物理正维护状态在有限时间到达原保护区域，恰当固定质量3/8、最坏影响1处的质量余量非负，即β≤5/12，也恰当没有对律封闭、避开着陆的集合含正状态；β>5/12时不动构型就是这样的集合。这包括等号情形，并在继承的初始存量覆盖K_N下执行，撤出后把实际到达状态交给原保护。 / For every determined law and target, the orbit from a start never reaches the target exactly when some set containing the start avoids the target and is closed under the law, which is the viability kernel of the target's complement; some seed never reaches the target exactly when such a set contains a seed, and a fixed configuration outside the target is such a set by itself. In the original rational market family with 0<=beta<=3/4 and zero extra quality error, every physical positive renewal state reaches the original protection region in finite time exactly when the quality margin at the fixed quality 3/8 under the worst influence 1 is nonnegative, that is beta<=5/12, and exactly when no set closed under the law and avoiding landing contains a positive state; above 5/12 the fixed configuration is one. This includes equality and executes under the inherited initial stock cover K_N, handing the actual arrived state to original protection after withdrawal.
 
 Canonical source: [PartialRegimeTransition.lean](../../../../experiments/market-generativity/formal/PartialRegimeTransition.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [PartialRegimeTransition.lean](../../../../experiments/market-
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。 / Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations.
+Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理／153项审计分列。作者反审已整合，无独立agent验收或新增市场观察。一般律已由检查器回执绑定。 / Lean 4.29.1 actually checks 26 new theorems / 31 declaration audits and separately 123 inherited theorems / 153 audits. Author counterreview is integrated, without independent agent acceptance or new market observations. General laws: checker receipts bound.
 
 精确边界针对指定无误差全正初态到达性质；不是完整盆界、全参数分岔、含误差恢复范围、实测阈值或已形成干预／进入的证明。 / The exact boundary concerns the specified zero-error universal positive-state arrival property, not a complete basin, all-parameter bifurcation, noisy recovery range, measured threshold, or formed intervention/entry.
 
@@ -60,6 +60,11 @@ Lean 4.29.1 实际检查26项新定理／31项声明审计，123项继承定理�
 | receipt | [partial-transition-verification.json](../../../../experiments/market-generativity/formal/partial-transition-verification.json) | — |
 | review | [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) | — |
 | integration | [MARKETS-AND-GENERATIVE-REGIMES.md](../../chapters/MARKETS-AND-GENERATIVE-REGIMES.md) | — |
+| proof | [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) | `Becoming.Lasting.avoids_iff_closed`, `Becoming.Lasting.avoids_iff_kernel`, `Becoming.Lasting.some_avoids_iff`, `Becoming.Lasting.none_avoid_iff`, `Becoming.Lasting.reaches_excludes`, `Becoming.Lasting.fixed_avoids` |
+| proof | [MarketInstances.lean](../../../../experiments/market-generativity/formal/MarketInstances.lean) | `Becoming.MarketInstances.path_eq`, `Becoming.MarketInstances.never_lands_iff`, `Becoming.MarketInstances.margin_iff`, `Becoming.MarketInstances.lands_iff_margin`, `Becoming.MarketInstances.lands_iff_no_closed`, `Becoming.MarketInstances.fixed_point_instance`, `Becoming.MarketInstances.partial_prefix_instance` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -67,7 +72,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 部分纠正与临界等号已经完成；market-finite-support-obstruction进一步完成有限支持的全控制失败区间。后续为实际形成输出改变供给、依存或维护扩展的接口，以及其他含误差恢复范围。 / Partial correction and equality are complete; market-finite-support-obstruction adds the all-control finite-support failure interval. Next are actually formed changes in provision, dependence or renewal expansion and other noisy recovery ranges.
 
-Aliases / 别名: `PartialRegimeTransition.exact_universal_landing_boundary`
+Aliases / 别名: `PartialRegimeTransition.exact_universal_landing_boundary`, `Becoming.Lasting.avoids_iff_closed`, `Becoming.Lasting.some_avoids_iff`, `Becoming.Lasting.fixed_avoids`, `Becoming.MarketInstances.never_lands_iff`, `Becoming.MarketInstances.lands_iff_margin`, `Becoming.MarketInstances.lands_iff_no_closed`
 
 ## 沿革 History
 
@@ -75,3 +80,5 @@ Aliases / 别名: `PartialRegimeTransition.exact_universal_landing_boundary`
 - 2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。 / 2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction.
 - 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
 - 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：确定的律永不到达目标恰当某个避开目标的封闭集含起点，即目标补集的生存核；经外围 MarketInstances，5/12 边界读作固定质量处的余量非负，也读作没有避开着陆的封闭集含正状态，边界之上的不动点是 fixed_avoids 的实例。着陆一侧的增益估计仍是该市场律的。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: a determined law never reaches a target exactly when a closed set avoiding it contains the start, the viability kernel of the complement; through the periphery MarketInstances the 5/12 boundary reads as a nonnegative margin at the fixed quality and as no closed set avoiding landing containing a positive state, the fixed point above it being an instance of fixed_avoids. The gain estimate on the landing side remains the market law's. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

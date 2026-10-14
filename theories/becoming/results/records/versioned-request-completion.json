@@ -55,8 +55,8 @@
     "en": "Does not show that the original request remains appropriate; finite capacity can block admission and arbitrary scheduling provides no deadline."
   },
   "validation_scope": {
-    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律仅经scratch实编。",
-    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: scratch builds only."
+    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律已由检查器回执绑定。",
+    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -112,7 +112,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "role": "receipt",
+      "sha256": "7e6369403a9b44862d6e443160f4cd041a982a458311e9d9b37729f02fd9c062",
       "declarations": []
     }
   ],
@@ -121,6 +133,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean",
       "receipt": "experiments/market-generativity/meta-attractor/common-task-revision-verification.json",
       "sha256_pointer": "/modules/2/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Countdown",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "sha256_pointer": "/source_sha256/VersionedTaskInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -141,6 +167,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：计数的工作恰在 work + 1 次中完成、燃料够用时恰好，更短的运行不完成；队首经外围 VersionedTaskInstances（Lean 4.30.0-rc2 与 Mathlib）成为 Countdown.Advances 的实例，valid_head_completes 是实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly work + 1 ticks, exactly when the fuel covers them, and no shorter run finishes; the head becomes an instance of Countdown.Advances through the periphery VersionedTaskInstances (Lean 4.30.0-rc2 with Mathlib), and valid_head_completes is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
     }
   ]
 }

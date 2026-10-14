@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [formed-copying-correction.json](formed-copying-correction.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:33:55.794637+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:00:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-旧错误复制留下的产物、库存和连接进入新检查／编辑过程；实际材料替换接通释放及随后遗传，并证明单点参考匹配的精确条件与忠实参考下任意有限检查的缺陷不增。 / The product, stock and connections retained from erroneous copying enter a new checking/editing process; actual component exchange joins release and subsequent inheritance, with an exact single-site reference-matching criterion and non-increasing defects through every finite inspection scan under faithful references.
+对每个字母表：在某一位对照参考检查并把该位记号换为参考记号，对每个产物、池与支持都不增加相对模板的缺陷，当且仅当参考在该位与模板一致；对此类位置的每次扫描都不增加缺陷；在缺陷位，检查留下参考记号当且仅当池中有该记号且支持覆盖检查与替换；长度等于模板的产物无缺陷当且仅当它即模板；替换保持产物与池中每个记号的计数。纠正机是单位汲取下的实例：对每个状态与位置，该等价对每个进行中的复制成立，旧忠实扫描定理与单点精确条件是实例，损坏正确产物的旧错误参考在被检位不忠实。旧错误复制留下的产物、库存和连接进入检查／编辑过程；实际材料替换接通释放与随后遗传。 / For every alphabet: inspecting a site against a reference and exchanging its token for the reference's never increases the defects against a template, for every product, pool and support, exactly when the reference agrees with the template at that site; every scan of such sites never increases them; at a defective site the inspection leaves the reference's token exactly when the pool holds it and the support covers inspection and exchange; a product of the template's length has no defect exactly when it is the template; an exchange keeps every token's count across product and pool. The correction machine is the instance with unit draws: for every state and site the equivalence holds over every copy in progress, the old faithful-scan theorem and the exact single-site criterion are instances, and the old wrong reference that damages a correct product is unfaithful at the inspected site. The product, stock and connections retained from erroneous copying enter the checking/editing process; actual component exchange joins release and subsequent inheritance.
 
 Canonical source: [CopyingCorrection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [CopyingCorrection.lean](../../../../experiments/integrated-co
 
 ## 检验与边界 Validation and boundaries
 
-27项新定理声明／45项新审计，529项实际闭包中484项继承分列；两份原始论文按记录范围阅读并检查关键页，无新经验复算。 / 27 new theorem declarations / 45 new audits, with 484 inherited declarations separate in 529 actual-closure audits. Two original papers are read at the recorded scope with key-page inspection, without new empirical reanalysis.
+27项新定理声明／45项新审计，529项实际闭包中484项继承分列；两份原始论文按记录范围阅读并检查关键页，无新经验复算。一般律已由检查器回执绑定。 / 27 new theorem declarations / 45 new audits, with 484 inherited declarations separate in 529 actual-closure audits. Two original papers are read at the recorded scope with key-page inspection, without new empirical reanalysis. General laws: checker receipts bound.
 
 未导出参考选择、故障定位、比较／替换微观规律、自动修复计划、自供、误差率或种群优势；编码与动力学校对及同机制传统模型保留比较信用。 / Reference selection, fault localization, microscopic comparison/exchange, autonomous repair planning, renewal, error rates and population advantage are not derived; coding, kinetic proofreading and equivalent conventional mechanisms retain comparative credit.
 
@@ -45,9 +45,14 @@ Canonical source: [CopyingCorrection.lean](../../../../experiments/integrated-co
 | Role | Source | Declarations |
 |---|---|---|
 | proof | [CopyingCorrection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean) | `CopyingCorrection.exchange_material`, `CopyingCorrection.inspection_matches_reference_iff`, `CopyingCorrection.inspection_scan_does_not_increase_defects`, `CopyingCorrection.history_accounts`, `CopyingCorrection.formed_route_edits_actual_product`, `CopyingCorrection.shared_wrong_source_hides_error`, `CopyingCorrection.wrong_reference_damages_correct_product`, `CopyingCorrection.corrected_daughter_enters_inheritance` |
+| proof | [Copying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean) | `Becoming.Copying.defects`, `Becoming.Copying.FaithfulAt`, `Becoming.Copying.inspect`, `Becoming.Copying.inspect_le_iff`, `Becoming.Copying.scan_le`, `Becoming.Copying.inspect_matches_iff`, `Becoming.Copying.defects_zero_iff`, `Becoming.Copying.exchange_keeps_counts` |
+| proof | [CopyingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean) | `Becoming.CopyingInstances.exchange_view`, `Becoming.CopyingInstances.inspect_view`, `Becoming.CopyingInstances.scan_view`, `Becoming.CopyingInstances.inspect_le_iff_instance`, `Becoming.CopyingInstances.scan_le_from_law`, `Becoming.CopyingInstances.scan_faithful_instance`, `Becoming.CopyingInstances.matches_reference_from_law`, `Becoming.CopyingInstances.product_is_template_iff`, `Becoming.CopyingInstances.wrong_reference_unfaithful` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/verification.json) | — |
 | integration | [GROWN-FRAGMENTATION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) | — |
 | review | [README.md](../../../../sources/evolutionary-selection/copying-correction/README.md) | — |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -55,8 +60,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 把已有参考取得／更新机制接到本编辑关系，说明如何辨别共同错误来源、改变所依据的关系，并保持实施编辑所需支持。 / Compose existing reference-acquisition/renewal mechanisms with this editing relation, explaining discrimination of a shared wrong source, change of the guiding relationship and retained support for actual editing.
 
-Aliases / 别名: `CopyingCorrection.formed_route_edits_actual_product`
+Aliases / 别名: `CopyingCorrection.formed_route_edits_actual_product`, `Becoming.Copying.inspect_le_iff`, `Becoming.CopyingInstances.inspect_le_iff_instance`
 
 ## 沿革 History
 
 - 2026-10-09：新增一个原产物—编辑—后继组合；旧无编辑语法的前缀保留定理与其他校准／社会组织结果不变。 / 2026-10-09: adds one retained-product–editing–successor composition; the old no-editing grammar’s prefix theorem and separate calibration/social-organizational results remain unchanged.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的检查律）：对每个字母表，检查对每个产物都不增缺陷恰当参考在该位忠实，单点条件与零缺陷条件分为两条精确的律。外围 CopyingInstances 把纠正机陈述为实例，旧 inspection_scan_does_not_increase_defects 与 inspection_matches_reference_iff 是实例，wrong_reference_damages_correct_product 是逆向一侧。scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first (the inspection laws of the new core module Becoming.Copying): for every alphabet, inspection never increases the defects for any product exactly where the reference is faithful, with the single-site and zero-defect criteria as two separate exact laws. The periphery CopyingInstances states the correction machine as an instance; the old inspection_scan_does_not_increase_defects and inspection_matches_reference_iff are instances, and wrong_reference_damages_correct_product is the converse side. Built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

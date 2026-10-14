@@ -302,12 +302,12 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "222d7c15172661a2c4e6d9da0052e4e11d7f4bd7051f4947e23f633c26f8c6c2"
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "c455bcee7a0f3f654d4cb2cb2b4e4a9436e2fdd680a550259c5e16c9c4b101d2"
+      "sha256": "91ef4a5b3fbb55494834602713e7baa587235953342ea1d6fdaa35968efb138d"
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
@@ -605,6 +605,10 @@
     {
       "zh": "2026-10-14：Becoming.Feeding 的证明绑定改指合并检查器回执 20261013T221720.428753Z，与有效范围的说明一致；该回执与原回执 20261013T204910.042715Z 绑定相同的字节。",
       "en": "14 October 2026: the proof bindings of Becoming.Feeding now point to consolidated receipt 20261013T221720.428753Z, as the validation scope states; it binds the same bytes as the earlier receipt 20261013T204910.042715Z."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
     }
   ]
 }

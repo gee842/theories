@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [market-supported-finite-transition.json](market-supported-finite-transition.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-原有理市场模型的每个物理初态只要维护份额为正，在实际 β=0 纠正下都存在有限 N；初始支持达到含额外耗用的 K_N 时，全部纠正步骤真实执行，实际到达状态在撤除干预后满足原 β=1/2 的永久保护证书。 / Every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N. Initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal.
+对每条带可容许扰动与守卫的变化之律：起点持续n步，恰当某个梯级族（守卫之内的层，每个可容许步从第k+1级落到第k级）在第n级含有它，也恰当每个必要族在第n级含有它；兼为二者的族恰是持续。市场的支持覆盖K₀=5、K(n+1)=(10/9)(K(n)+1+κ)在每个纠正日程与每个不超过κ的冲击下，是必要底线的梯级族；在最坏份额下它恰好：存量单独在5之上持续n步，恰当它至少为K_n。所以原有理市场模型中每个正维护份额的物理状态都有有限的β=0校正期N；初始支持高于K_N（含每步额外耗用）使每个脉冲步可执行，撤出后实际到达状态满足原β=1/2的永久保护证书。 / For every law of change with admissible disturbances and a guard, a start lasts n steps exactly when some ladder holds it at level n (levels within the guard, every admissible step from level k+1 landing at level k), and exactly when every necessary family holds it there; a family that is both is exactly lasting. The market's support cover K0=5, K(n+1)=(10/9)(K(n)+1+kappa) is a ladder for the essential floor under every correction schedule and every shock at most kappa, and at the worst share it is exact: the stock alone lasts n steps at or above 5 exactly when it is at least K_n. So every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N; initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal.
 
 Canonical source: [RegimeTransition.lean](../../../../experiments/market-generativity/formal/RegimeTransition.lean)
 
@@ -23,7 +23,7 @@ Canonical source: [RegimeTransition.lean](../../../../experiments/market-generat
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项审计另列；作者反审已整合，无独立 agent 验收、无新经验校准。 / Lean 4.29.1 actually checks 27 new theorems / 35 declaration audits, separately rebuilding 96 inherited theorems / 118 audits. Author counterreview is integrated; no independent agent acceptance or new empirical calibration.
+Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项审计另列；作者反审已整合，无独立 agent 验收、无新经验校准。一般律已由检查器回执绑定。 / Lean 4.29.1 actually checks 27 new theorems / 35 declaration audits, separately rebuilding 96 inherited theorems / 118 audits. Author counterreview is integrated; no independent agent acceptance or new empirical calibration. General laws: checker receipts bound.
 
 充分的有限转变条件，不是完整可恢复域或最小成本；比例域、真实 β 改变、初始支持及新增进入均保留独立对应义务。 / Sufficient finite-transition conditions, not a complete recovery region or minimal cost; proportional states, actual beta change, initial support and new entry retain separate correspondence obligations.
 
@@ -51,6 +51,11 @@ Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项�
 | receipt | [transition-verification.json](../../../../experiments/market-generativity/formal/transition-verification.json) | — |
 | review | [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) | — |
 | integration | [MARKETS-AND-GENERATIVE-REGIMES.md](../../chapters/MARKETS-AND-GENERATIVE-REGIMES.md) | — |
+| proof | [Lasting.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean) | `Becoming.Lasting.Lasts`, `Becoming.Lasting.Ladder`, `Becoming.Lasting.Necessary`, `Becoming.Lasting.lasts_iff_ladder`, `Becoming.Lasting.lasts_iff_necessary`, `Becoming.Lasting.lasts_iff_of_exact`, `Becoming.Lasting.lasts_iff_histories`, `Becoming.Lasting.kernel_iff_lasts`, `Becoming.Lasting.guarded_upto_iff` |
+| proof | [MarketInstances.lean](../../../../experiments/market-generativity/formal/MarketInstances.lean) | `Becoming.MarketInstances.covered`, `Becoming.MarketInstances.cover_ladder`, `Becoming.MarketInstances.supported_prefix_instance`, `Becoming.MarketInstances.pulse_prefix_instance`, `Becoming.MarketInstances.worstSupport`, `Becoming.MarketInstances.cover_exact` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -58,7 +63,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 β=0有限转变已完成，部分纠正与临界等号由 market-partial-correction-boundary 推进；后续形成—市场接口及含误差范围以该条为准。 / The beta=0 finite transition is complete; market-partial-correction-boundary advances partial correction and equality. Follow that record for formation-to-market and error-scope continuations.
 
-Aliases / 别名: `RegimeTransition.supported_finite_transition`
+Aliases / 别名: `RegimeTransition.supported_finite_transition`, `Becoming.Lasting.lasts_iff_ladder`, `Becoming.Lasting.lasts_iff_necessary`, `Becoming.MarketInstances.cover_ladder`, `Becoming.MarketInstances.supported_prefix_instance`, `Becoming.MarketInstances.cover_exact`
 
 ## 沿革 History
 
@@ -67,3 +72,5 @@ Aliases / 别名: `RegimeTransition.supported_finite_transition`
 - 2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。 / 2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction.
 - 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
 - 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：持续n步恰当某个梯级族在第n级含起点，也恰当每个必要族如此；经外围 MarketInstances，覆盖递推对每个纠正日程是梯级族，pulse_prefix_executes 是实例，最坏份额下覆盖恰好（cover_exact）。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: a start lasts n steps exactly when some ladder holds it at level n, and exactly when every necessary family does; through the periphery MarketInstances the cover recurrence is a ladder for every correction schedule, pulse_prefix_executes is an instance, and the cover is exact at the worst share (cover_exact). Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Lasting 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Lasting by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

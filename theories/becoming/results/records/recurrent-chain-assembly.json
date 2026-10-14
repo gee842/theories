@@ -97,8 +97,8 @@
     "en": "One missing support unit leaves a real seven-component successor; absence of B stalls despite remaining work. Heritable variation in organizing laws, physical mechanics, autonomous feed and broad comparative advantage are unproved."
   },
   "validation_scope": {
-    "zh": "所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。",
-    "en": "The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct."
+    "zh": "所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。一般律已由检查器回执绑定。",
+    "en": "The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -158,7 +158,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "role": "receipt",
+      "sha256": "a9ece499ca9ad31eae3703fb1304b66fe7a7917f341f988c5add95cdf19b7d6d",
       "declarations": []
     }
   ],
@@ -167,6 +179,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/verification.json",
       "sha256_pointer": "/source_sha256/RecurrentAssembly.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Copying",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "sha256_pointer": "/source_sha256/CopyingInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -199,6 +225,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying 的复制律与加倍律）：末端接合是交替词、单位汲取的核心复制，链生长与成熟链形成为等价；新的支持不变量（每次接合与切分各取一单位）给出 n 轮达到 k·2^n 条成熟链的等价，旧 supported_rounds 是其充分一侧，partial_failure_keeps_material 是失败一侧。外围 CopyingInstances；scratch_build 实编；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (the copying and doubling laws of the new core module Becoming.Copying): end attachment is the core copy of the alternating word with unit draws, so chain growth and the mature chain are equivalences; a new support invariant (one unit per attachment and per cleavage) gives the equivalence for n rounds reaching k·2^n mature chains, the old supported_rounds being its sufficient side and partial_failure_keeps_material its failing side. Periphery CopyingInstances; built with scratch_build; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
     }
   ]
 }

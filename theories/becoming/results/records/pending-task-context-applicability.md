@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [pending-task-context-applicability.json](pending-task-context-applicability.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:44:58.925340+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-有成本的相关条件复查消费实际送达的修订值；报告覆盖实际作用条件时，不新增所列实践损失，端点至少三单位可用工作则完成复查与行动。拒绝或不足保留未完成任务和已付成本。学习分支允许其他两个处境字段变化；不把行动保护等同于原有比较理由持续成立。 / Paid relevant-condition review consumes the actually delivered revision. A report covering effect-time conditions prevents added represented practice loss; at least three current work units at the endpoint suffice for review and action. Refusal or exhaustion retains the unfinished task and paid cost. The learning branch admits changes to the other two context fields; action protection does not imply continued comparative warrant.
+对每个存量，一段取用进程可执行，恰当每次取用都在当时的存量之内。审查取一单位工作、行动取两单位，所以审查与行动的进程恰从三单位当前工作起被覆盖；端点完成审查与行动，恰当报告排除相关风险且其工作覆盖该进程；拒绝或耗尽保留未完成任务及已付代价。付费的相关条件审查消耗实际交付的修订，覆盖效果时刻条件的报告防止所表示做法的新增损失。学习分支允许另两个情境字段改变；行动保护不蕴含持续的比较根据。 / For every stock, a course of draws is executable exactly when each draw is within the stock then standing. Review draws one unit of work and action two, so the review-and-action course is covered exactly from three current units, and an endpoint completes its review and action exactly when the report clears the relevant risk and its work covers that course; refusal or exhaustion retains the unfinished task and paid cost. Paid relevant-condition review consumes the actually delivered revision, and a report covering effect-time conditions prevents added represented practice loss. The learning branch admits changes to the other two context fields; action protection does not imply continued comparative warrant.
 
 Canonical source: [PendingTaskApplicability.lean](../../../../experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean)
 
@@ -24,7 +24,7 @@ Canonical source: [PendingTaskApplicability.lean](../../../../experiments/market
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理／354项继承审计分列。所有仓库导入重建；上游缓存固定。无经验验证或独立验收。 / Lean 4.30.0-rc2 checked 14 new theorems/22 new audits, separately from 205 inherited theorems/354 inherited audits. Repository imports rebuilt; upstream cache pinned. No empirical validation or independent acceptance.
+Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理／354项继承审计分列。所有仓库导入重建；上游缓存固定。无经验验证或独立验收。一般律已由检查器回执绑定。 / Lean 4.30.0-rc2 checked 14 new theorems/22 new audits, separately from 205 inherited theorems/354 inherited audits. Repository imports rebuilt; upstream cache pinned. No empirical validation or independent acceptance. General laws: checker receipts bound.
 
 只覆盖给定作用规律中的两项实践保护；报告形成、相关性取得与更新、等待的后果及未满足需求的实际接续未证。报告取样时正确不保证覆盖后来作用；不构成普遍社会退化或完整可纠正性定理。 / Covers only two practice protections in the supplied outcome law. Report formation, acquisition/revision of relevance, waiting consequences and actual continuation of unmet needs are unproved. Correctness at sampling does not ensure effect coverage; no universal societal degeneration or complete corrigibility theorem.
 
@@ -50,6 +50,11 @@ Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理
 | provenance | [check_pending_task_applicability.py](../../../../experiments/market-generativity/meta-attractor/check_pending_task_applicability.py) | — |
 | review | [COLLECTIVE-DESTRUCTION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md) | — |
 | statement | [COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md](../../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md) | — |
+| proof | [Stock.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean) | `Becoming.Stock.Covered`, `Becoming.Stock.feasible_iff_covered` |
+| proof | [VersionedTaskInstances.lean](../../../../experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean) | `Becoming.VersionedTaskInstances.review_course_covered_iff`, `Becoming.VersionedTaskInstances.enact_isSome_iff`, `Becoming.VersionedTaskInstances.review_completes_iff` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -57,8 +62,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 在指定共同实践中取得并更新作用／相关性对应，并支持旧做法暂不适用时仍在发生的需求；保留任务不等于实际接续。 / Acquire and revise the effect/relevance correspondence in a specified common practice, and support continuing needs while an old method is inapplicable; retaining a task is not actual continuation.
 
-Aliases / 别名: `PendingTaskApplicability.revised_delivery_enters_review`, `PendingTaskApplicability.funded_covered_review`
+Aliases / 别名: `PendingTaskApplicability.revised_delivery_enters_review`, `PendingTaskApplicability.funded_covered_review`, `Becoming.Stock.feasible_iff_covered`, `Becoming.VersionedTaskInstances.review_course_covered_iff`, `Becoming.VersionedTaskInstances.review_completes_iff`
 
 ## 沿革 History
 
 - 2026-10-09：新增局部端点组合与有成本复查，已有目标取得、传递和证据更新成果不重复计数。作者反审及失败尝试保存。 / 2026-10-09: adds the local endpoint composition and paid review without recounting acquired-goal, delivery or evidence-update results. Author counterreview and failed attempts are preserved.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。既有核心律 Becoming.Stock：取用进程可执行恰当被覆盖；审查与行动经外围 VersionedTaskInstances 成为实例：进程 [1, 2] 恰从三单位起被覆盖，完成恰当报告排除风险且工作覆盖该进程。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. Existing core law Becoming.Stock: a course of draws is executable exactly where it is covered; review and action become an instance through the periphery VersionedTaskInstances: the course [1, 2] is covered exactly from three units, and completion holds exactly when the report clears the risk and the work covers that course. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。对 Becoming.Stock 的证明引用同样绑定到该核心回执。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The proof reference to Becoming.Stock is bound to the same core receipt.

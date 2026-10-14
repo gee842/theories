@@ -79,8 +79,8 @@
     "en": "Covers only two practice protections in the supplied outcome law. Report formation, acquisition/revision of relevance, waiting consequences and actual continuation of unmet needs are unproved. Correctness at sampling does not ensure effect coverage; no universal societal degeneration or complete corrigibility theorem."
   },
   "validation_scope": {
-    "zh": "Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理／354项继承审计分列。所有仓库导入重建；上游缓存固定。无经验验证或独立验收。一般律仅经scratch实编。",
-    "en": "Lean 4.30.0-rc2 checked 14 new theorems/22 new audits, separately from 205 inherited theorems/354 inherited audits. Repository imports rebuilt; upstream cache pinned. No empirical validation or independent acceptance. General laws: scratch builds only."
+    "zh": "Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理／354项继承审计分列。所有仓库导入重建；上游缓存固定。无经验验证或独立验收。一般律已由检查器回执绑定。",
+    "en": "Lean 4.30.0-rc2 checked 14 new theorems/22 new audits, separately from 205 inherited theorems/354 inherited audits. Repository imports rebuilt; upstream cache pinned. No empirical validation or independent acceptance. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -143,7 +143,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "role": "receipt",
+      "sha256": "7e6369403a9b44862d6e443160f4cd041a982a458311e9d9b37729f02fd9c062",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
       "declarations": []
     }
   ],
@@ -152,6 +164,20 @@
       "source": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean",
       "receipt": "experiments/market-generativity/meta-attractor/pending-task-applicability-verification.json",
       "sha256_pointer": "/modules/7/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/versioned-task-instances-checks/20261014T041722.004469Z/verification.json",
+      "sha256_pointer": "/source_sha256/VersionedTaskInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Stock.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Stock",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -164,6 +190,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。既有核心律 Becoming.Stock：取用进程可执行恰当被覆盖；审查与行动经外围 VersionedTaskInstances 成为实例：进程 [1, 2] 恰从三单位起被覆盖，完成恰当报告排除风险且工作覆盖该进程。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. Existing core law Becoming.Stock: a course of draws is executable exactly where it is covered; review and action become an instance through the periphery VersionedTaskInstances: the course [1, 2] is covered exactly from three units, and completion holds exactly when the report clears the risk and the work covers that course. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。对 Becoming.Stock 的证明引用同样绑定到该核心回执。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The proof reference to Becoming.Stock is bound to the same core receipt."
     }
   ],
   "next_delta": {

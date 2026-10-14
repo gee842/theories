@@ -74,8 +74,8 @@
     "en": "Reading/fidelity capability, physicochemical costs, mutation occurrence, autonomous feed and population invasion are not derived. The third-cost constraint exceeds independently fitted coefficients but is also available to a strong conventional model with the same mechanism."
   },
   "validation_scope": {
-    "zh": "34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。",
-    "en": "34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis."
+    "zh": "34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。一般律已由检查器回执绑定。",
+    "en": "34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis. General laws: checker receipts bound."
   },
   "references": [
     {
@@ -143,7 +143,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "aabe344f373e6708a47dbc7f774406937d86dde8daf923d276e6b7197277a459",
+      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "role": "receipt",
+      "sha256": "6d4711df073c8ece68a00ef4097ad5b149adb2ef04c8832a145ef90d02b10e98",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "role": "receipt",
+      "sha256": "a9ece499ca9ad31eae3703fb1304b66fe7a7917f341f988c5add95cdf19b7d6d",
       "declarations": []
     }
   ],
@@ -152,6 +164,20 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/verification.json",
       "sha256_pointer": "/source_sha256/StructuralCopying.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Copying",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
+      "sha256_pointer": "/source_sha256/CopyingInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -176,6 +202,10 @@
     {
       "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行（新核心模块 Becoming.Copying）：对每个字母表与汲取律，复制完成恰当池逐记号供给且支持覆盖汲取，同池批量全部释放恰当池共同供给且支持覆盖全部，与次序无关；局部汲取的排序与等差律。外围 CopyingInstances 把结构复制机陈述为实例，对每个池给出复制与释放的等价，旧 exact_reproduction_budget 是实例。scratch_build 实编，核心公理报告为空；回执由落地运行绑定。原定理、回执与反例不变。",
       "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first (new core module Becoming.Copying): for every alphabet and law of draws, a copy completes exactly when the pool supplies each token and the support covers the draws, and a shared-pool batch is all released exactly when the pool supplies the words together and the support covers everything, in any order; the ranking and progression laws of local draws. The periphery CopyingInstances states the structural machine as an instance, with the copy and release equivalence for every pool and the old exact_reproduction_budget as an instance. Built with scratch_build, the core with empty axiom reports; the landing run binds the receipt. The original theorems, receipt and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
     }
   ]
 }

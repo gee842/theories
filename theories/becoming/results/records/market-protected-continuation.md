@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [market-protected-continuation.json](market-protected-continuation.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-给定市场规律、有效保护证书、安全初态及逐步容许扰动，原实际守卫在所有自然数时刻都与运行历史一致，不发生支持失败。 / Given the market law, a valid protection certificate, a safe initial state and admissible disturbances at every step, the actual guarded history agrees with the operating history at every natural time without support failure.
+对每个过程与守卫：从某构型出发没有进程离开守卫，恰当某个证书含有它；证书是守卫之内、每一步都保持的集合，生存核是最大的证书。对由可容许扰动驱动的变化之律，给定一个可容许扰动，没有历史离开守卫，恰当某个含起点的集合在守卫之内且对每个可容许扰动封闭。市场律对每组参数、界与起点都是实例：没有可容许守卫历史违反必要底线，恰当这样的状态集存在。有效保护证书之下安全矩形就是这样的集，所以从安全初态出发、每步扰动可容许时，守卫历史在每个自然时刻与运行历史一致，没有支持失效。 / For every process and guard, no course from a configuration leaves the guard exactly when some certificate contains it: a set within the guard that every step keeps; the viability kernel is the largest certificate. For a law of change driven by admissible disturbances, given one admissible disturbance, no history ever leaves the guard exactly when some set containing the start lies within the guard and is closed under every admissible disturbance. The market law is an instance for every parameter set, bound set and start: no admissible guarded history fails the essential floors exactly when such a set of states exists. Under a valid protection certificate the safe rectangle is one, so from a safe initial state with admissible disturbances at every step, the guarded history agrees with the operating history at every natural time without support failure.
 
 Canonical source: [MarketGenerativity.lean](../../../../experiments/market-generativity/formal/MarketGenerativity.lean)
 
@@ -22,11 +22,12 @@ Canonical source: [MarketGenerativity.lean](../../../../experiments/market-gener
 
 ## 检验与边界 Validation and boundaries
 
-迁移原39项结果中的既有主张；本轮有限转变检查重新编译并审计继承源码，不计为新定理。 / Migrates an existing claim from the original 39 results; the finite-transition check rebuilds and audits inherited source without counting it as new.
+迁移原39项结果中的既有主张；本轮有限转变检查重新编译并审计继承源码，不计为新定理。一般律已由检查器回执绑定。 / Migrates an existing claim from the original 39 results; the finite-transition check rebuilds and audits inherited source without counting it as new. General laws: checker receipts bound.
 
 有条件的不失败结论；不提供从不安全初态的进入、不证明完整吸引域或现实市场必然服从。 / Conditional nonfailure; it does not supply entry from unsafe states, a complete basin or inevitable compliance by real markets.
 
 - 有限支持下低端吸引历史失败，表明一般物理初态不自动满足保护证书；保护范围也不是全体伦理后果。 / Low-attractor histories fail with finite support: a physical initial state does not automatically satisfy the certificate, nor does protection cover every ethical consequence. [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)
+- Leaves.within_not_kernel：守卫本身未必是证书；needs_admissible：没有可容许扰动时历史条件空真而律不成立。 / Leaves.within_not_kernel: the guard alone need not be a certificate; needs_admissible: with no admissible disturbance the history condition holds vacuously and the law fails. [Viability.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -42,6 +43,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [MarketGenerativity.lean](../../../../experiments/market-generativity/formal/MarketGenerativity.lean) | `MarketGenerativity.safe_history_never_fails`, `MarketGenerativity.example_certificate` |
 | receipt | [transition-verification.json](../../../../experiments/market-generativity/formal/transition-verification.json) | — |
 | integration | [MARKET-INTERNET-DEGENERATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) | — |
+| proof | [Viability.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Viability.lean) | `Becoming.Viability.Kernel`, `Becoming.Viability.Certificate`, `Becoming.Viability.kernel_iff_certificate`, `Becoming.Viability.kernel_largest`, `Becoming.Viability.kernel_step_iff`, `Becoming.Viability.never_leaves_iff_certificate`, `Becoming.Viability.guarded_iff`, `Becoming.Viability.guarded_never_fails_iff`, `Becoming.Viability.Leaves.within_not_kernel`, `Becoming.Viability.needs_admissible` |
+| proof | [MarketInstances.lean](../../../../experiments/market-generativity/formal/MarketInstances.lean) | `Becoming.MarketInstances.history_eq`, `Becoming.MarketInstances.guardedHistory_eq`, `Becoming.MarketInstances.worst_admissible`, `Becoming.MarketInstances.never_fails_iff`, `Becoming.MarketInstances.safe_closed`, `Becoming.MarketInstances.safe_never_fails`, `Becoming.MarketInstances.safe_within_kernel` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/market-generativity/formal/market-instances-checks/20261014T041714.366300Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -49,7 +55,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 已完成，直接复用；新研究须实际构造满足证书的状态或证明不同适用范围。 / Completed and reusable; new work must actually construct a certificate-satisfying state or establish a different scope.
 
-Aliases / 别名: `MarketGenerativity.safe_history_never_fails`
+Aliases / 别名: `MarketGenerativity.safe_history_never_fails`, `Becoming.Viability.kernel_iff_certificate`, `Becoming.Viability.never_leaves_iff_certificate`, `Becoming.Viability.guarded_never_fails_iff`, `Becoming.MarketInstances.never_fails_iff`, `Becoming.MarketInstances.safe_never_fails`
 
 ## 沿革 History
 
@@ -58,3 +64,5 @@ Aliases / 别名: `MarketGenerativity.safe_history_never_fails`
 - 2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。 / 2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction.
 - 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
 - 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Viability：生存核恰是含起点的证书之并，扰动律下历史永不离开守卫恰当存在封闭于每个可容许扰动的证书；市场律经外围 MarketInstances 对每组参数、界与起点成为实例，safe_history_never_fails 由安全矩形得出。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Viability: no course leaves the guard exactly when a certificate contains the start, and under disturbances exactly when a set within the guard is closed under every admissible disturbance; the market law becomes an instance for every parameter set, bound set and start through the periphery MarketInstances, and safe_history_never_fails follows from the safe rectangle. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Viability 由核心回执 20261014T044840.291323Z；MarketInstances 由外围回执 20261014T041714.366300Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Viability by core receipt 20261014T044840.291323Z; MarketInstances by peripheral receipt 20261014T041714.366300Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound.

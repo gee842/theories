@@ -6,11 +6,11 @@
 
 记录源 / Editable record: [mediated-evidence-transport.json](mediated-evidence-transport.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T18:53:33.830114+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-14T04:30:00+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
-有界覆盖写入程序推导其实际变化范围，并以同一语义推进实际与候选；合法读取和已提交程序组成的任意有限历史维持实际覆盖，进而接入当前认证。 / A bounded overwrite program derives its executed change scope and transports actual and candidate states through the same semantics; arbitrary finite histories of lawful reads and committed programs preserve actual coverage and feed current certification.
+对每条部分律与容许条件：性质在每段被允许的进程后、从它成立的每个起点都成立，恰当每个被允许的步保持它。中介机器的历史恰是其被允许步——合法读取与已提交程序——的进程。有界覆写程序导出其执行的改变范围，并以同一语义传送实际与候选状态，所以每个被允许的步保持实际覆盖；因此合法读取与已提交程序的任意有限历史保持实际覆盖，并供当前认证使用。 / For every partial law and admission, a property holds after every admitted course from every start where it holds exactly when every admitted step keeps it. The mediated machine's histories are the courses of its admitted steps, lawful reads and committed programs. A bounded overwrite program derives its executed change scope and transports actual and candidate states through the same semantics, so each admitted step keeps actual coverage; hence arbitrary finite histories of lawful reads and committed programs preserve actual coverage and feed current certification.
 
 Canonical source: [MediatedControl.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean)
 
@@ -22,7 +22,7 @@ Canonical source: [MediatedControl.lean](../../../../experiments/integrated-corr
 
 ## 检验与边界 Validation and boundaries
 
-迁移并核读既有27项定理／57项审计、24,416项记录匹配的原回执；此次恢复构建重新编译其源码但不新增该成果。 / Migrates and reads the original receipt for 27 theorems / 57 audits and 24,416 matches; the recovery build recompiles this source without creating another result.
+迁移并核读既有27项定理／57项审计、24,416项记录匹配的原回执；此次恢复构建重新编译其源码但不新增该成果。一般律已由检查器回执绑定。 / Migrates and reads the original receipt for 27 theorems / 57 audits and 24,416 matches; the recovery build recompiles this source without creating another result. General laws: checker receipts bound.
 
 没有受保护运行时、物理故障恢复或伦理正当性证明；22项恢复扩展另列，不重算原27项。 / No protected runtime, physical fault recovery or ethical legitimacy proof; the 22-theorem recovery extension is separate and does not recount the original 27.
 
@@ -43,6 +43,11 @@ No dependency on another migrated record is asserted; source imports and supplie
 | integration | [MEDIATED-CONTROL-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) | — |
 | statement | [ALIGNMENT-THROUGH-CHANGE.md](../../chapters/ALIGNMENT-THROUGH-CHANGE.md) | — |
 | provenance | [2026-10-08-finish-alignment-fruits.md](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md) | — |
+| proof | [Countdown.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean) | `Becoming.Countdown.invariant_iff_reach`, `Becoming.Countdown.admitted`, `Becoming.Countdown.admitted_invariant_iff` |
+| proof | [ProtocolInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean) | `Becoming.ProtocolInstances.mediated_history_iff`, `Becoming.ProtocolInstances.coverage_along`, `Becoming.ProtocolInstances.mediated_history_instance` |
+| integration | [BECOMING-RENEWAL-READING.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/protocol-instances-checks/20261014T041648.493464Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -50,9 +55,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接复用此输出；受中断逐步实现由 recoverable-mediated-change 接通，真实持久保护及无旁路另需证明。 / Reuse this output; interrupted staged realization is supplied by recoverable-mediated-change, while physical durable protection and exclusion of bypasses need further evidence.
 
-Aliases / 别名: `MediatedControl.executed_writes_fit_derived_effect`, `MediatedControl.commit_preserves_actual_coverage`, `MediatedControl.mediated_history_preserves_coverage`, `MediatedControl.mediated_history_to_current_certificate`
+Aliases / 别名: `MediatedControl.executed_writes_fit_derived_effect`, `MediatedControl.commit_preserves_actual_coverage`, `MediatedControl.mediated_history_preserves_coverage`, `MediatedControl.mediated_history_to_current_certificate`, `Becoming.Countdown.admitted_invariant_iff`, `Becoming.ProtocolInstances.mediated_history_iff`, `Becoming.ProtocolInstances.coverage_along`, `Becoming.ProtocolInstances.mediated_history_instance`
 
 ## 沿革 History
 
 - 2026-10-09：从已有研究迁移同一主张；原证明、回执和反例保持，不计新理论成果。 / 2026-10-09: migrated the same claim from the existing study; original proofs, receipt and counterexample remain, without a new scientific result.
 - 2026-10-09：核读同研究§10、理论§14及“finish remains”来源的作者增量；更新三处文献指纹，原证明及实查回执未改，新增停止结果分列。 / 2026-10-09: read the authored continuation in study §10, theory §14 and the “finish remains” provenance; reconciled three documentary fingerprints, leaving original proofs and scientific receipts unchanged; the stronger stopping result is separate.
+- 2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：被允许的进程保持性质恰当每个被允许的步保持；外围 ProtocolInstances 表明中介历史即被允许步的可达性，mediated_history_preserves_coverage 是实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。 / 2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: admitted courses keep a property exactly when every admitted step does; the periphery ProtocolInstances shows that mediated histories are reachability under admitted steps, and mediated_history_preserves_coverage is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged.
+- 2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Countdown 由核心回执 20261014T044840.291323Z；ProtocolInstances 由外围回执 20261014T041648.493464Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。ProtocolInstances 的引用哈希为落地时两个辅助名去掉市场措辞之后的字节（paidState → unitState，funded → afterUnit）；陈述不变。 / 14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Countdown by core receipt 20261014T044840.291323Z; ProtocolInstances by peripheral receipt 20261014T041648.493464Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The ProtocolInstances reference carries the hash after two helper names lost their market wording at landing (paidState → unitState, funded → afterUnit); statements unchanged.
