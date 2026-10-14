@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "feeding-closure",
   "title": {
     "zh": "供给闭包",
@@ -8,19 +8,127 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "reviewed_at_utc": "2026-10-14T14:52:33+00:00",
   "statement": {
     "zh": "一个延续所依存的，是含它、对供给封闭的最小区域；它不用前提即推出，闭包之外的在任何一步都不向闭包所需的条件给予。清除者的网中沿依存的区域恰是各形成的供给闭包。",
     "en": "What a continuation depends on is the least region holding it that is closed under feeding; it is reached with no premise, and nothing beyond it gives, at any step, to a condition its members require. In the clearer's web the region along dependence is exactly each formation's feeding closure."
   },
-  "claim": {
-    "zh": "一个形成的延续在某步被另一个供给（Flow.FedBy），是指在同一步上后者在场并向前者当时所需的条件给予。形成的区域对供给封闭（Flow.FedClosed），是指供给一个成员之延续者都是成员。g 在 f 的供给闭包之内（Flow.WithinFeeding），是指含 f、对供给封闭的每个区域都含 g。闭包含 f（Flow.WithinFeeding.refl），可传递（Flow.WithinFeeding.trans），含 f 在任何一步的每个供给者（Flow.WithinFeeding.of_fedBy），本身对供给封闭（Flow.fedClosed_within），所以是含 f、对供给封闭的最小区域。闭包之外的形成，在任何一步都不向闭包成员当时所需的条件给予（Flow.beyond_gives_nothing）。在 Clearing 中，沿依存的区域（Clearing.dependenceRegion：清除者与供给其资源的来源；来源与栖居者没有被供给，各自只含自身）对供给封闭、含其形成（Clearing.fedClosed、Clearing.dependenceRegion_closed、Clearing.dependenceRegion_self），恰是各形成的供给闭包（Clearing.dependenceRegion_iff）。栖居者在清除者的闭包之外（Clearing.dweller_beyond）；闭包之内的每步都被支持，清除者每步活跃，而栖居者从第 2 步起不被支持（Clearing.closure_supported）。不用前提，也不用 Lean 公理。 P86 补充跨步形式：Flow.CarriedTo 要求所用段在条件上平衡，且给予之后到所需之步条件始终立于正数；正给予的某种不增跟随可能仍立着，恰当这些中间水平都为正（Flow.can_stand_iff、Flow.carriedTo_iff_stands）。Flow.FedAcross 把不晚于所需之步的给予经该携带关系接到所需；Flow.fedBy_iff_fedAcross 证明同一步供给是零延迟情形。Flow.WithinFeedingAcross 是含形成、对跨步供给封闭的最小区域，含原闭包（Flow.WithinFeeding.across）；其外不向可携带到成员所需的条件给予（Flow.beyond_gives_nothing_across）。每次给予后条件都不立着时，两闭包相同（Flow.withinFeedingAcross_iff_of_unheld）；Provision.through_store 以第 0 步的亲代供给第 2 步活跃后代的储存见证表明包含可严格。耗尽排除携带，给予大于整段取用充分保证携带；来源的实际归属未确定。",
-    "en": "The continuation of a formation is fed by another at a step (Flow.FedBy) when, at that step, the other takes part and gives to a condition the first then requires. A region of formations is closed under feeding (Flow.FedClosed) when whatever feeds a member's continuation is a member. g lies within f's feeding closure (Flow.WithinFeeding) when every region closed under feeding that holds f holds g. The closure holds f (Flow.WithinFeeding.refl), is transitive (Flow.WithinFeeding.trans), holds every feeder of f at any step (Flow.WithinFeeding.of_fedBy) and is itself closed under feeding (Flow.fedClosed_within), so it is the least region closed under feeding that holds f. A formation beyond the closure gives nothing, at any step, to a condition a member then requires (Flow.beyond_gives_nothing). In Clearing the region along dependence (Clearing.dependenceRegion: the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding and holds its formation (Clearing.fedClosed, Clearing.dependenceRegion_closed, Clearing.dependenceRegion_self), and is exactly each formation's feeding closure (Clearing.dependenceRegion_iff). The dweller lies beyond the clearer's closure (Clearing.dweller_beyond); everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on (Clearing.closure_supported). No premise and no Lean axiom is used. P86 adds the across-step form: Flow.CarriedTo requires balance on the condition over the stretch and positive standing after giving through the required step. Some nonincreasing following of a positive amount given can remain positive exactly where all those intermediate levels are positive (Flow.can_stand_iff, Flow.carriedTo_iff_stands). Flow.FedAcross links giving no later than the need through this carrying relation; Flow.fedBy_iff_fedAcross makes same-step feeding its zero-delay case. Flow.WithinFeedingAcross is the least region holding the formation and closed under such feeding; it contains the original closure (Flow.WithinFeeding.across), and nothing beyond it gives to a condition carried to a member’s need (Flow.beyond_gives_nothing_across). If nothing given stands after its step, the closures agree (Flow.withinFeedingAcross_iff_of_unheld); Provision.through_store shows strict inclusion when a parent at step 0 feeds a young active at step 2 through storage. An exhausted intermediate step rules carrying out; giving more than the stretch’s total taking suffices. The actual attribution of origin is not fixed."
-  },
+  "laws": [
+    {
+      "zh": "一个形成的延续在某步被另一个供给，是指在同一步上后者在场并向前者当时所需的条件给予。形成的区域对供给封闭，是指供给一个成员之延续者都是成员；g 在 f 的供给闭包之内，是指含 f、对供给封闭的每个区域都含 g。",
+      "en": "The continuation of a formation is fed by another at a step when, at that step, the other takes part and gives to a condition the first then requires. A region is closed under feeding when whatever feeds a member's continuation is a member, and g lies within f's feeding closure when every region closed under feeding that holds f holds g.",
+      "declarations": [
+        "Becoming.Flow.FedBy",
+        "Becoming.Flow.FedClosed",
+        "Becoming.Flow.WithinFeeding"
+      ]
+    },
+    {
+      "zh": "不用前提，闭包含 f，可传递，含 f 在任何一步的每个供给者，本身对供给封闭，所以是含 f、对供给封闭的最小区域。",
+      "en": "With no premise, the closure holds f, is transitive, holds every feeder of f at any step and is itself closed under feeding, so it is the least region closed under feeding that holds f.",
+      "declarations": [
+        "Becoming.Flow.WithinFeeding.refl",
+        "Becoming.Flow.WithinFeeding.trans",
+        "Becoming.Flow.WithinFeeding.of_fedBy",
+        "Becoming.Flow.fedClosed_within"
+      ]
+    },
+    {
+      "zh": "闭包之外的形成在某步在场时，在该步不向闭包成员当时所需的条件给予。",
+      "en": "A formation beyond the closure that takes part at a step gives nothing at that step to a condition a member of the closure then requires.",
+      "declarations": [
+        "Becoming.Flow.beyond_gives_nothing"
+      ]
+    },
+    {
+      "zh": "在 Clearing 中，沿依存的区域（清除者与供给其资源的来源；来源与栖居者没有被供给，各自只含自身）对供给封闭、含其形成，恰是各形成的供给闭包。",
+      "en": "In Clearing the region along dependence (the clearer with the source that feeds its resource; the source and the dweller, which nothing feeds, each alone) is closed under feeding, holds its formation, and is exactly each formation's feeding closure.",
+      "declarations": [
+        "Becoming.Clearing.alongDependence",
+        "Becoming.Clearing.dependenceRegion",
+        "Becoming.Clearing.fedClosed",
+        "Becoming.Clearing.dependenceRegion_closed",
+        "Becoming.Clearing.dependenceRegion_self",
+        "Becoming.Clearing.dependenceRegion_iff"
+      ]
+    },
+    {
+      "zh": "Clearing 中栖居者在清除者的闭包之外；闭包之内的每步都被支持，清除者每步活跃，而栖居者从第 2 步起不被支持。",
+      "en": "In Clearing the dweller lies beyond the clearer's closure; everything within that closure is supported at every step and the clearer is active at every step, while the dweller is unsupported from step 2 on.",
+      "declarations": [
+        "Becoming.Clearing.dweller_beyond",
+        "Becoming.Clearing.closure_supported",
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "zh": "从 s 起一步所给予 c 的被携带到第 t 步，是指从 s 到 t 之前各步流在 c 上平衡，且 s 之后直到 t 各步 c 都立着；t 不在 s 之后时不要求什么。h 所给予者的跟随至多是给予量，不上升，并至多是所立者。",
+      "en": "What is given to c across the step from s is carried to step t when the flow balances on c across each step from s before t and c stands at every step after s through t; where t is not after s nothing is asked. A following of what h gives is at most the amount given, does not rise, and stays at most what stands.",
+      "declarations": [
+        "Becoming.Flow.CarriedTo",
+        "Becoming.Flow.carriedTo_of_le",
+        "Becoming.Flow.FollowsGiven",
+        "Becoming.Flow.FollowsGiven.antitone"
+      ]
+    },
+    {
+      "zh": "s < t 时，h 给予 c 者的某种跟随在 t 仍为正，恰当给予量为正且 s 之后直到 t 各步 c 都立着；给予量为正且该段平衡时，这恰是携带。中间某步 c 耗尽时，没有跟随仍立着。",
+      "en": "For s < t, some following of what h gives to c is still positive at t exactly where the amount given is positive and c stands at every step after s through t; with a positive amount given and balance across the stretch, that is exactly carrying. A step between at which c is depleted leaves no following standing.",
+      "declarations": [
+        "Becoming.Flow.can_stand_iff",
+        "Becoming.Flow.carriedTo_iff_stands",
+        "Becoming.Flow.depleted_keeps_nothing"
+      ]
+    },
+    {
+      "zh": "从 s 起 n 步各步在 c 上平衡时，在 s 在场的形成给予的量大于该段从 c 取用的全部，就被携带到 s + n，无论取用怎样分配。",
+      "en": "With balance at c across each of the n steps from s, an amount given by a formation taking part at s that exceeds everything taken from c across the stretch is carried to s + n, however the taking falls.",
+      "declarations": [
+        "Becoming.Flow.carried_of_given_exceeds"
+      ]
+    },
+    {
+      "zh": "e 的形成的延续被 e' 跨步供给，是指 e' 的形成在其步（不晚于 e 的步）在场，向 e 的形成在其步所需的条件给予，并从前一步携带到后一步；同一步供给恰是延迟为零的跨步供给。",
+      "en": "The continuation of e's formation is fed across steps by e' when e''s formation takes part at its step, no later than e's, and gives to a condition e's formation requires at its step, carried from the one step to the other; same-step feeding is exactly feeding across steps at delay zero.",
+      "declarations": [
+        "Becoming.Flow.FedAcross",
+        "Becoming.Flow.fedBy_iff_fedAcross",
+        "Becoming.Flow.FedAcross.of_fedBy"
+      ]
+    },
+    {
+      "zh": "跨步闭包是含 f、对跨步供给封闭的最小区域，含供给闭包；其外的形成在某步在场时，不在该步向这样的条件给予：该条件从该步被携带到成员需要它的同一步或更晚一步。",
+      "en": "The closure across steps is the least region holding f and closed under feeding across steps; it contains the feeding closure, and a formation beyond it that takes part at a step gives nothing there to a condition carried from that step to a later or equal one at which a member requires it.",
+      "declarations": [
+        "Becoming.Flow.ClosedAcross",
+        "Becoming.Flow.WithinFeedingAcross",
+        "Becoming.Flow.WithinFeedingAcross.refl",
+        "Becoming.Flow.WithinFeedingAcross.trans",
+        "Becoming.Flow.WithinFeedingAcross.of_fedAcross",
+        "Becoming.Flow.closedAcross_within",
+        "Becoming.Flow.ClosedAcross.fedClosed",
+        "Becoming.Flow.WithinFeeding.across",
+        "Becoming.Flow.beyond_gives_nothing_across"
+      ]
+    },
+    {
+      "zh": "每次给予后条件都不立着时，两闭包相同。Provision 中亲代在第 0 步向储存给予一单位，此后不活跃；后代在第 2 步活跃、被支持并取用储存：亲代在后代的跨步闭包之内、供给闭包之外，所以包含可以是严格的。",
+      "en": "Where nothing given stands after the step it is given across, the two closures agree. In Provision a parent gives a store one unit across step 0 and is not active after it, and its young, active and supported at step 2, draws on the store: the parent lies within the young's closure across steps and beyond its feeding closure, so the inclusion can be strict.",
+      "declarations": [
+        "Becoming.Flow.fedBy_of_fedAcross_unheld",
+        "Becoming.Flow.withinFeedingAcross_iff_of_unheld",
+        "Becoming.Provision.carried",
+        "Becoming.Provision.fed_across",
+        "Becoming.Provision.young_alone",
+        "Becoming.Provision.parent_beyond",
+        "Becoming.Provision.through_store"
+      ]
+    }
+  ],
   "hypotheses": [
     {
-      "zh": "原 Flow.FedBy 只计同一步给予；P86 的 Flow.FedAcross 计较早或同一步给予，并公开要求 CarriedTo 所含的该段局部平衡与中间正水平。",
-      "en": "The original Flow.FedBy counts giving at a common step; P86 Flow.FedAcross includes earlier giving with the stretch’s local balance and positive intermediate levels explicitly inside CarriedTo."
+      "zh": "Flow.FedBy 只计同一步给予；Flow.FedAcross 计较早或同一步给予，并公开要求 CarriedTo 所含的该段局部平衡与中间正水平。",
+      "en": "Flow.FedBy counts giving at a common step; Flow.FedAcross includes earlier giving with the stretch’s local balance and positive intermediate levels explicitly inside CarriedTo."
     },
     {
       "zh": "闭包是形成层面的：在任何一步供给即在闭包之内，链上各环可以在不同的步，也不按时间先后。",
@@ -39,9 +147,65 @@
       "en": "can_stand_iff requires strictly positive delay; carriedTo_iff_stands additionally supplies positive giving and local balance; carried_of_given_exceeds requires participation, balance over the stretch and giving exceeding total taking. Closure laws hold for the defined relation; they do not derive balance from unconditional dynamics."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "闭包的层次（levels-of-closure）对同一步供给陈述；没有证明跨步闭包在同一步影响闭包之内。",
+      "en": "The levels of closure (levels-of-closure) are stated for same-step feeding; the closure across steps is not shown to lie within the same-step influence closure.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "跨步闭包仍是形成层面的：链上关系各自有时间方向，但整个形成链不是按时间相接的事件路径。",
+      "en": "The closure across steps is still at the level of formations: each link has a temporal direction, but the whole chain is not an event path joined in temporal order.",
+      "kind": "scope"
+    },
+    {
+      "zh": "数量不标记来源，来源的实际归属未确定：某种跟随可能立着，不证明实际给予的量仍在。",
+      "en": "Amounts carry no mark of origin, so their actual origin is not fixed: a following that can stand does not show that the amount given actually remains.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "无论取用怎样分配都携带只有充分条件（给予大于整段取用），没有精确条件。",
+      "en": "Carrying however the taking is attributed has a sufficient condition only, giving more than the stretch's total taking, and no exact criterion.",
+      "kind": "converse",
+      "witness": "Becoming.Flow.carried_of_given_exceeds"
+    },
+    {
+      "zh": "中心如何形成或表示其闭包未建模。",
+      "en": "How a center forms or represents its closure is not modelled.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不推出应当。",
+      "en": "No ought follows.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "detail": {
+        "zh": "供给闭包不是沿每个已形成关系的范围：Clearing 中栖居者与清除者经栖息地相关（Clearing.center_not_derived），却在清除者的供给闭包之外（Clearing.dweller_beyond）。",
+        "en": "The feeding closure is not the extent along every formed relation: in Clearing the dweller is related to the clearer through the habitat (Clearing.center_not_derived), yet lies beyond the clearer's feeding closure (Clearing.dweller_beyond)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z；Feeding 的当前字节绑定回执 20261013T221720.428753Z，Continuation 绑定 20261014T141427.442103Z，Dependence 绑定 20261014T091930.724493Z）：Interdependence 与 Feeding 的定理公理报告为空；检查器并核对核心纯净。较早回执以旧名检查了同一陈述。作者反审见整合文档；尚未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z; current Becoming.Feeding bound to receipt 20261013T221720.428753Z, Becoming.Continuation to 20261014T141427.442103Z, Becoming.Dependence to 20261014T091930.724493Z): the theorems of Becoming.Interdependence and Becoming.Feeding have empty axiom reports; core purity verified. Earlier receipts checked the same statements under former names. Author counterreview in the integration note; not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "给出确定实际给予之跟随的关系，以及无论取用怎样分配都携带的精确条件；按事件与时间相接给出依存闭包；给出中心怎样形成并表示其闭包。跨步供给的读法由 Ren 判断。",
+    "en": "Give the relation that fixes the actual following of an amount given, and an exact criterion for carrying however the taking is attributed; join the dependence closure as events in temporal order; model how a center forms and represents its closure. The across-step feeding reading is Ren's to judge."
+  },
   "correspondence": {
-    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”。P40 也把它读作 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统；这一读法由 P42 撤回：供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，为那一层级提供的是所及闭包（见 levels-of-closure，AI 的读法，待 Ren）。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。 P86 把经条件可能保持的较早给予读作跨步供给；数量无来源标记，此读法未确定实际来源，也未推导中心的认识。",
-    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. P40 also read it as Ren's “the system that one is in”, the system reached from a center along dependence; P42 withdraws that reading: the feeding closure lies within the influence closure, the influence and reach closures lie within the system, and the reach closure is offered for that level (see levels-of-closure; the AI's reading, pending Ren). The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. P86 reads earlier giving possibly retained through a condition as feeding across steps; quantities bear no origin marks, so this does not identify actual origin or derive a center’s recognition."
+    "zh": "路线 (b) 是 AI 的表述，Ren 引用了它：“No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren 选定：“let's aim for a first, then try to archive b”。作者的读法（AI 论证，待 Ren）：供给闭包读“what it actually depends on”。它也曾被读作 Ren 的“the system that one is in”，作为从一个中心沿依存到达的系统；这一读法已撤回：供给闭包在影响闭包之内，影响闭包与所及闭包都在系统之内，为那一层级提供的是所及闭包（见 levels-of-closure，AI 的读法，待 Ren）。名称（FedClosed、WithinFeeding、Overshoot 等）是 AI 按 Ren 的命名准则所选。把经条件可能保持的较早给予读作跨步供给；数量无来源标记，此读法未确定实际来源，也未推导中心的认识，也不恢复已撤回的“所在系统”读法。",
+    "en": "Route (b) is the AI's wording, which Ren quoted: “No axiom. The theory only describes, and “should” is what a center does once its represented boundary matches what it actually depends on. The theory then explains recognition and motivation but claims no warrant beyond them.” Ren chose: “let's aim for a first, then try to archive b”. The author's reading (an AI argument, pending Ren): the feeding closure reads “what it actually depends on”. It was also read as Ren's “the system that one is in”, the system reached from a center along dependence; that reading is withdrawn: the feeding closure lies within the influence closure, the influence and reach closures lie within the system, and the reach closure is offered for that level (see levels-of-closure; the AI's reading, pending Ren). The names (FedClosed, WithinFeeding, Overshoot and others) are the AI's, chosen by Ren's naming standard. Earlier giving possibly retained through a condition is read as feeding across steps; quantities bear no origin marks, so this does not identify actual origin or derive a center's recognition, and it does not restore the withdrawn system reading."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
   "aliases": [
@@ -209,23 +373,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
-      "detail": {
-        "zh": "供给闭包不是沿每个已形成关系的范围：Clearing 中栖居者与清除者经栖息地相关（Clearing.center_not_derived），却在清除者的供给闭包之外（Clearing.dweller_beyond）。",
-        "en": "The feeding closure is not the extent along every formed relation: in Clearing the dweller is related to the clearer through the habitat (Clearing.center_not_derived), yet lies beyond the clearer's feeding closure (Clearing.dweller_beyond)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "原同一步闭包与 P42 的层级结论保留原范围，P86 没有证明跨步闭包在同一步影响闭包内。跨步闭包仍是形成层面的，链上关系各自有时间方向，但整个形成链未给出按时间相接的事件路径。数量不标记来源，某种跟随可能保留不证明实际给予仍在；无论取用怎样分配都携带只有充分条件，精确 iff 未给。中心如何形成或表示其闭包未建模。无伦理谓词或应当结论；读法属于 AI，待 Ren；P42 撤回的“所在系统”读法不恢复。",
-    "en": "The original same-step closure and P42 hierarchy retain their scope; P86 does not show that the across-step closure lies within the same-step influence closure. It remains a formation-level closure: each link has a temporal direction, but the whole chain is not an event path joined in temporal order. Quantities have no origin marks: a possible retained following does not establish actual retention of that amount. Carrying however taking is attributed has a sufficient condition only, no exact iff. A center’s formation or representation of the closure is not modeled. No ethical predicate or ought follows; readings remain the AI’s, pending Ren, and P42’s withdrawn system reading is not restored."
-  },
-  "validation_scope": {
-    "zh": "2026-10-14：Becoming.Feeding、Becoming.Continuation 的当前字节由合并检查器回执 20261013T221720.428753Z 绑定（通过：包 91 个模块，4983 项定理、7020 项声明审计，源声明公理报告全空；核心闭包 90 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，新旧名对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Interdependence 的 30 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §56；尚未经独立审查。 P86 实查补充：核心回执 20261013T094743.528770Z 核对 Becoming.Feeding 的 41 项定理与所有源声明，公理报告为空；外围 20261013T095049.338744Z 通过；研究 §107。历史原范围不变，整合文档尚无独立审查。",
-    "en": "14 October 2026: the current bytes of Becoming.Feeding, Becoming.Continuation are bound to consolidated receipt 20261013T221720.428753Z (passed: 91 package modules, 4983 theorems, 7020 declaration audits, every source declaration with an empty axiom report; the 90-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 30 theorems of Becoming.Interdependence all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §56 of the integration note; not yet independently reviewed. P86 checked addition: core receipt 20261013T094743.528770Z checks Becoming.Feeding’s 41 theorems and all source declarations with empty axiom reports; periphery 20261013T095049.338744Z passes; study §107. Historical scope is retained; the integration text has no independent review yet."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
@@ -431,10 +578,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "确定实际给予的跟随需要什么额外关系；无论取用怎样分配都携带的精确条件；按事件与时间相接的依存闭包；中心怎样形成并表示其闭包；Ren 对跨步供给读法的判断。",
-    "en": "What additional relation fixes the actual following of an amount given; an exact criterion for carrying however taking is attributed; an event closure joined in temporal order; how a center forms and represents its closure; Ren’s judgment of the across-step feeding reading."
-  },
   "history": [
     {
       "zh": "2026-10-10 P40：新增，按 Ren“let's aim for a first, then try to archive b”；统一计划 P40（路线 (b)：不用公理能走多远）；见整合文档 §56。",
@@ -627,6 +770,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述与反例不变；主张拆为 11 条规律，各按其定理的条件陈述（闭包之外者的规律写明该形成在该步在场，这是 Flow.beyond_gives_nothing 与 Flow.beyond_gives_nothing_across 的前提）；限制分入“未表明”、通用边界与对应；前提、对应与下一步中的轮次标签 P40、P42、P86 移出，保留在沿革（已有条目）。前提、状态、证明绑定与来源哈希均未改变。验证范围按证明绑定写明当前绑定。每句旧文本的去向见迁移对照表 [feeding-closure.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/feeding-closure.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement and counterexample are kept; the claim was split into 11 laws, each stated with its theorem's conditions (the laws on what lies beyond a closure name the formation as taking part at the step, as Flow.beyond_gives_nothing and Flow.beyond_gives_nothing_across require); limitations went to does-not-show items, standard boundaries and the correspondence; the round labels P40, P42 and P86 left the hypotheses, correspondence and next step and stay in history (existing entries). No premise, status, proof binding or source hash changed. The validation scope names the current bindings from the proof bindings. Every earlier sentence is mapped in the migration table [feeding-closure.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/feeding-closure.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/e62a92e786475ad0/feeding-closure.json",
+      "sha256": "e62a92e786475ad00e2d45d7680275ec25b227970c9dcb8a65568da4a543c4dd",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

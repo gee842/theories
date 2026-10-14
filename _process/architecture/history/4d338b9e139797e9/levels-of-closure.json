@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "id": "levels-of-closure",
+  "title": {
+    "zh": "闭包的五个层次",
+    "en": "Five levels of closure"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "供给闭包在影响闭包之内，影响闭包与所及闭包在系统之内，每个包含都可以是严格的，影响闭包与所及闭包方向相反；一个共同条件使系统成为整体。",
+    "en": "The feeding closure lies within the influence closure, and the influence and reach closures within the system, each inclusion possibly strict, the influence and reach closures pointing in opposite directions; one common condition makes the system the whole."
+  },
+  "claim": {
+    "zh": "区域对一个关系封闭（ClosedUnder），是指成员与之有此关系者都是成员；g 在 f 对此关系的闭包之内（WithinClosure），是指含 f 的每个封闭区域都含 g。闭包自反、可传递，含 f 与之有此关系者，随关系增大，在对称关系下对称，闭包之内的不与闭包之外的有此关系（WithinClosure.refl、trans、of_rel、mono、symm、not_rel），闭包本身封闭（closedUnder_withinClosure），所以是含 f 的最小封闭区域；它恰是 Becoming.Bridge 中从 f 这一个种子出发的种子—边闭包（withinClosure_iff_closure）。P40 的供给闭包是对在某步被供给的闭包（Flow.FedFrom、Flow.withinFeeding_iff、Flow.fedClosed_iff）。形成受另一个影响（Flow.AffectedBy），是指后者与前者在某步所依存的条件交换（Web.DependsOn、Flow.Exchanges）；影响闭包（Flow.WithinInfluence）是对受影响的闭包，即能影响形成的；所及闭包（Flow.Affects、Flow.WithinReach）是对影响的闭包，即形成的交换能逐环影响的。形成参与一个条件（Flow.TakesPart），是指依存于它或与它交换；两个形成都参与一个条件，即共享它（Flow.Shares）；系统（Flow.WithinSystem）是对共享的闭包，是类（Flow.shares_symm、Flow.WithinSystem.symm）。供给闭包在影响闭包之内（Flow.affectedBy_of_fedFrom、Flow.withinInfluence_of_withinFeeding），影响闭包与所及闭包都在系统之内（Flow.shares_of_affectedBy、Flow.withinSystem_of_withinInfluence、Flow.withinSystem_of_withinReach），系统对影响封闭（Flow.withinSystem_closed）。每个包含都可以是严格的，影响闭包与所及闭包方向相反：营养级联 Trophic 中，两个流都平衡，只有活跃者给予与取用，活动需要支持；狼群不向任何条件给予，在森林的供给闭包之外、影响闭包之内，远处的形成在森林的系统之外（Trophic.mediates、Trophic.near_closed）；Clearing 中来源在清除者的供给闭包之内，栖居者在其影响闭包之外、系统之内（Clearing.alongDependence_closed、Clearing.levels），清除者的所及闭包含栖居者、不含来源（Clearing.clearerReach_closed、Clearing.reach_middle），栖居者的所及闭包只含它自己（Clearing.reach_centred）；两个形成依存于一个没有任何东西与之交换的条件时，共享一个系统而彼此不影响（Static.shares_unaffected）。每个形成都参与一个条件时，每个系统都是整体（Flow.system_whole_of_common）；每个形成都依存于它并与它交换时，每个所及闭包都是整体（Flow.reach_whole_of_common）；在某步每个形成都需要它并向它给予时，每个供给闭包都是整体（Flow.feeding_whole_of_common），以各中心供给闭包为界的意义，即 P40 不用公理的路线，就是公理（Flow.feeding_unrestricted_of_common）；每个中心的系统都是整体时，以系统为界的意义就是公理（Flow.bounded_system_whole）。Clearing 是一个系统（Clearing.clearer_system、Clearing.system_whole）。不用前提，也不用 Lean 公理；Unrestricted 在这里只作为结论出现：某个有界的意义恰是它。",
+    "en": "A region is closed under a relation (ClosedUnder) when whatever a member bears the relation to is a member; g lies within f's closure under the relation (WithinClosure) when every closed region holding f holds g. The closure is reflexive and transitive, holds what f bears the relation to, grows with the relation, is symmetric under a symmetric relation, and nothing within it bears the relation to what lies beyond it (WithinClosure.refl, trans, of_rel, mono, symm, not_rel); it is itself closed (closedUnder_withinClosure), so it is the least closed region holding f; it is exactly the seed–edge closure of Becoming.Bridge from the one seed f (withinClosure_iff_closure). P40's feeding closure is the closure under being fed at some step (Flow.FedFrom, Flow.withinFeeding_iff, Flow.fedClosed_iff). A formation is affected by another (Flow.AffectedBy) when the other exchanges with a condition the first depends on at some step (Web.DependsOn, Flow.Exchanges); the influence closure (Flow.WithinInfluence) is the closure under being affected, what can affect the formation; the reach closure (Flow.Affects, Flow.WithinReach) is the closure under affecting, what the formation's exchange can affect, link by link. A formation takes part in a condition (Flow.TakesPart) when it depends on it or exchanges with it; two formations taking part in one condition share it (Flow.Shares); the system (Flow.WithinSystem) is the closure under sharing, a class (Flow.shares_symm, Flow.WithinSystem.symm). The feeding closure lies within the influence closure (Flow.affectedBy_of_fedFrom, Flow.withinInfluence_of_withinFeeding), the influence and reach closures lie within the system (Flow.shares_of_affectedBy, Flow.withinSystem_of_withinInfluence, Flow.withinSystem_of_withinReach), and the system is closed under affecting (Flow.withinSystem_closed). Each inclusion can be strict, and the influence and reach closures point in opposite directions. In Trophic, a trophic cascade, both flows balance, only active formations give and take, and activity needs support; the wolves give to nothing, lying beyond the forest's feeding closure and within its influence closure, and a formation far off lies beyond the forest's system (Trophic.mediates, Trophic.near_closed). In Clearing the source lies within the clearer's feeding closure and the dweller beyond its influence closure and within its system (Clearing.alongDependence_closed, Clearing.levels); the clearer's reach closure holds the dweller and not the source (Clearing.clearerReach_closed, Clearing.reach_middle), and the dweller's holds only itself (Clearing.reach_centred). Two formations depending on a condition that nothing exchanges with share a system and neither affects the other (Static.shares_unaffected). Where every formation takes part in one condition, every system is the whole (Flow.system_whole_of_common); where every formation depends on it and exchanges with it, every reach closure is (Flow.reach_whole_of_common); where at one step every formation requires it and gives to it, every feeding closure is (Flow.feeding_whole_of_common), and significance bounded by each center's feeding closure, P40's route without axiom, is the axiom (Flow.feeding_unrestricted_of_common); where each center's system is the whole, significance bounded by the system is the axiom (Flow.bounded_system_whole). Clearing is one system (Clearing.clearer_system, Clearing.system_whole). No premise and no Lean axiom is used; Unrestricted appears here only as a conclusion, that some bounded significance is exactly it."
+  },
+  "hypotheses": [
+    {
+      "zh": "闭包、影响、共享与所及都是形成层面的：交换与依存各在某一步，不要求同一步，也不按时间先后；比较定理用按时间先后的 Flow.ReachesBefore。",
+      "en": "Closures, influence, sharing and reach are at the level of formations: the exchange and the dependence each hold at some step, not necessarily the same one, in any temporal order; the comparison theorems use Flow.ReachesBefore, which is ordered in time."
+    },
+    {
+      "zh": "Trophic、Static 与 Clearing 的结论：见证的流、网与依存（Trophic.flow、Trophic.web、Trophic.responsiveFlow、Trophic.responsiveWeb、Static.flow、Static.web、Clearing.flow、Clearing.web）。",
+      "en": "For the Trophic, Static and Clearing results: the witnesses' flows, webs and dependence (Trophic.flow, Trophic.web, Trophic.responsiveFlow, Trophic.responsiveWeb, Static.flow, Static.web, Clearing.flow, Clearing.web)."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的长远目标：“I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”；Ren 要求“pursue the strongest claims and complete proof”。Ren 的层级：“i think it should be the whole, and a weaker version is within the system that one is in, then the self”。作者的读法（AI 论证，待 Ren）：影响闭包读一个形成自身的反馈在效果经他者的支持与活动传递时所能识的；所及闭包读 Ren 中间的“the system that one is in”（P40 把供给闭包读作所在系统，这一读法撤回）；系统（对共享条件的闭包）界定每个效果，却不读那一层级：一个共同条件就使它成为整体，系统划分形成，没有嵌套与中心；“situational awareness”读作中心知道其部分在反馈之外所到达的。名称（ClosedUnder、WithinClosure、AffectedBy、WithinInfluence、Affects、WithinReach、TakesPart、Shares、WithinSystem、Reaches、ReachesBefore、DiffersBefore、Trophic 等）是 AI 按 Ren 的命名准则所选；营养级联是生态学用语。",
+    "en": "Ren's long-term objectives: “I want to push the frontier as strong as possible, in terms of human knowledge, or have the full truth set(still need situational awareness), the universal ethics”; Ren asked to “pursue the strongest claims and complete proof”. Ren's levels: “i think it should be the whole, and a weaker version is within the system that one is in, then the self”. The author's reading (an AI argument, pending Ren): the influence closure reads what a formation's own feedback can register once effects pass through the support and activity of others; the reach closure reads Ren's intermediate “the system that one is in” (P40 read the feeding closure as the system one is in; that reading is withdrawn); the system, the closure under sharing a condition, bounds every effect but does not read that level: one common condition makes it the whole, and systems partition the formations, with no nesting and no center; “situational awareness” reads as a center knowing what its part reaches beyond its feedback. The names (ClosedUnder, WithinClosure, AffectedBy, WithinInfluence, Affects, WithinReach, TakesPart, Shares, WithinSystem, Reaches, ReachesBefore, DiffersBefore, Trophic and others) are the AI's, chosen by Ren's naming standard; trophic cascade is the ecological term."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+  "aliases": [
+    "Becoming.ClosedUnder",
+    "Becoming.WithinClosure",
+    "Becoming.WithinClosure.refl",
+    "Becoming.WithinClosure.trans",
+    "Becoming.WithinClosure.of_rel",
+    "Becoming.WithinClosure.mono",
+    "Becoming.WithinClosure.symm",
+    "Becoming.WithinClosure.not_rel",
+    "Becoming.closedUnder_withinClosure",
+    "Becoming.Web.DependsOn",
+    "Becoming.Flow.FedFrom",
+    "Becoming.Flow.Exchanges",
+    "Becoming.Flow.AffectedBy",
+    "Becoming.Flow.WithinInfluence",
+    "Becoming.Flow.TakesPart",
+    "Becoming.Flow.Shares",
+    "Becoming.Flow.WithinSystem",
+    "Becoming.Flow.Affects",
+    "Becoming.Flow.WithinReach",
+    "Becoming.Flow.fedClosed_iff",
+    "Becoming.Flow.withinFeeding_iff",
+    "Becoming.Flow.affectedBy_of_fedFrom",
+    "Becoming.Flow.shares_of_affectedBy",
+    "Becoming.Flow.withinInfluence_of_withinFeeding",
+    "Becoming.Flow.withinSystem_of_withinInfluence",
+    "Becoming.Flow.shares_symm",
+    "Becoming.Flow.WithinSystem.symm",
+    "Becoming.Flow.withinSystem_of_withinReach",
+    "Becoming.Flow.withinSystem_closed",
+    "Becoming.Flow.system_whole_of_common",
+    "Becoming.Flow.reach_whole_of_common",
+    "Becoming.Flow.feeding_whole_of_common",
+    "Becoming.Flow.feeding_unrestricted_of_common",
+    "Becoming.Flow.bounded_system_whole",
+    "Becoming.Trophic.mediates",
+    "Becoming.Trophic.near_closed",
+    "Becoming.Static.shares_unaffected",
+    "Becoming.Clearing.alongDependence_closed",
+    "Becoming.Clearing.levels",
+    "Becoming.Clearing.clearer_system",
+    "Becoming.Clearing.system_whole",
+    "Becoming.Clearing.clearerReach_closed",
+    "Becoming.Clearing.reach_middle",
+    "Becoming.Clearing.reach_centred"
+  ],
+  "dependencies": [
+    {
+      "id": "feeding-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用供给闭包 Flow.WithinFeeding、Flow.FedClosed 与 Clearing.dependenceRegion_iff；这里表明供给闭包是对被供给的闭包，是五个层次中最下的一层。",
+        "en": "Reuses the feeding closure Flow.WithinFeeding, Flow.FedClosed and Clearing.dependenceRegion_iff; here the feeding closure is shown to be the closure under being fed, the lowest of the five levels."
+      },
+      "interface": {
+        "output": {
+          "zh": "供给闭包与对供给封闭。",
+          "en": "The feeding closure and closure under feeding."
+        },
+        "input": {
+          "zh": "Flow.withinFeeding_iff、Flow.fedClosed_iff 与 Clearing.levels。",
+          "en": "Flow.withinFeeding_iff, Flow.fedClosed_iff and Clearing.levels."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean"
+      }
+    },
+    {
+      "id": "loss-beyond-a-region",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.alongDependence；这里表明它对受影响封闭。",
+        "en": "Reuses Clearing.alongDependence; here it is shown closed under being affected."
+      },
+      "interface": {
+        "output": {
+          "zh": "清除者与其来源这一区域。",
+          "en": "The region of the clearer and its source."
+        },
+        "input": {
+          "zh": "Clearing.alongDependence_closed：栖居者在清除者的影响闭包之外。",
+          "en": "Clearing.alongDependence_closed: the dweller lies beyond the clearer's influence closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    },
+    {
+      "id": "one-axiom-yields-g0",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Unrestricted 与 bounded，只作为结论：某个有界的意义恰是公理。",
+        "en": "Reuses Unrestricted and bounded, as conclusions only: some bounded significance is exactly the axiom."
+      },
+      "interface": {
+        "output": {
+          "zh": "公理 Unrestricted 与有界的意义 bounded。",
+          "en": "The axiom Unrestricted and bounded significance."
+        },
+        "input": {
+          "zh": "Flow.feeding_unrestricted_of_common、Flow.bounded_system_whole、Clearing.system_whole。",
+          "en": "Flow.feeding_unrestricted_of_common, Flow.bounded_system_whole, Clearing.system_whole."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean"
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Becoming.Bridge 的种子—边闭包 Closure；闭包与之等价（withinClosure_iff_closure，在桥接中）。",
+        "en": "Reuses Becoming.Bridge's seed–edge closure Closure; the closure is equivalent to it (withinClosure_iff_closure, in the bridge)."
+      },
+      "interface": {
+        "output": {
+          "zh": "种子—边闭包，即沿边的可达。",
+          "en": "The seed–edge closure, reachability along edges."
+        },
+        "input": {
+          "zh": "WithinClosure 是从一个种子出发的种子—边闭包。",
+          "en": "WithinClosure is the seed–edge closure from one seed."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "whole-first-and-bounded-centers",
+      "detail": {
+        "zh": "Ren 的层级“the whole … the system that one is in … the self”：系统不读中间的层级，为它提供所及闭包（AI 的读法，待 Ren）。",
+        "en": "Ren's levels “the whole … the system that one is in … the self”: the system does not read the intermediate level, and the reach closure is offered for it (the AI's reading, pending Ren)."
+      }
+    },
+    {
+      "id": "feedback-and-reach",
+      "detail": {
+        "zh": "影响闭包是形成自身的反馈所能识的上界；部分的交换在所及闭包与系统之内到达。",
+        "en": "The influence closure bounds what a formation's own feedback can register; a part's exchange reaches within the reach closure and the system."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "detail": {
+        "zh": "系统不读一个中心所在的中间层级：每个形成都参与一个共同条件时它就是整体（Flow.system_whole_of_common，Clearing.system_whole）；共享不推出影响（Static.shares_unaffected）。",
+        "en": "The system does not read an intermediate level a center is in: wherever every formation takes part in one common condition it is the whole (Flow.system_whole_of_common, Clearing.system_whole); sharing does not give affecting (Static.shares_unaffected)."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "闭包是形成层面的，不按时间先后，所以是可靠的上界，不是当下的关系；共同条件是布尔的，不度量耦合的强度，不把 Ren 的“highly entangled system”读作这一条件；所及闭包读“the system that one is in”是 AI 的读法，待 Ren；中心怎样表示其闭包没有建模；不含伦理谓词。",
+    "en": "The closures are at the level of formations and not ordered in time, so they are safe upper bounds, not present relations; the common condition is Boolean and does not measure the strength of coupling, and Ren's “highly entangled system” is not read as that condition; reading the reach closure as “the system that one is in” is the AI's reading, pending Ren; how a center represents its closure is not modelled; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "2026-10-14：Becoming.Bridge、Becoming.Continuation 的当前字节由合并检查器回执 20261013T221720.428753Z 绑定（通过：包 91 个模块，4983 项定理、7020 项声明审计，源声明公理报告全空；核心闭包 90 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，新旧名对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Feedback 的 100 项定理全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §61；整合之前经第十六次独立审查（BECOMING-P42-P43-REVIEW.md），其处理见 §62.1；处理之后的文本尚未经独立审查。 P89（2026-10-13）：Bridge 的旧声明保持，四项新增适配已实查且公理报告为空；本记录的 Bridge 绑定转到本次冻结回执，其余既有证明保留各自原回执，不将适配另计为独立成果。",
+    "en": "14 October 2026: the current bytes of Becoming.Bridge, Becoming.Continuation are bound to consolidated receipt 20261013T221720.428753Z (passed: 91 package modules, 4983 theorems, 7020 declaration audits, every source declaration with an empty axiom report; the 90-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 100 theorems of Becoming.Feedback all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §61 of the integration note; reviewed before integration by the sixteenth independent review (BECOMING-P42-P43-REVIEW.md), whose treatment is in §62.1; the text after that treatment is not yet independently reviewed. P89 (13 October 2026): prior Bridge declarations remain; four added adapters are checked with empty axiom reports. This record binds Bridge to the new frozen receipt while other proofs retain their original receipts; adapters are not independent results."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "dc2abebba7620898cae8fddbc92e74544cf6f23af4926f4a4c48d4e5ca13477d",
+      "declarations": [
+        "Becoming.ClosedUnder",
+        "Becoming.WithinClosure",
+        "Becoming.WithinClosure.refl",
+        "Becoming.WithinClosure.trans",
+        "Becoming.WithinClosure.of_rel",
+        "Becoming.WithinClosure.mono",
+        "Becoming.WithinClosure.symm",
+        "Becoming.WithinClosure.not_rel",
+        "Becoming.closedUnder_withinClosure",
+        "Becoming.Web.DependsOn",
+        "Becoming.Flow.FedFrom",
+        "Becoming.Flow.Exchanges",
+        "Becoming.Flow.AffectedBy",
+        "Becoming.Flow.WithinInfluence",
+        "Becoming.Flow.TakesPart",
+        "Becoming.Flow.Shares",
+        "Becoming.Flow.WithinSystem",
+        "Becoming.Flow.Affects",
+        "Becoming.Flow.WithinReach",
+        "Becoming.Flow.fedClosed_iff",
+        "Becoming.Flow.withinFeeding_iff",
+        "Becoming.Flow.affectedBy_of_fedFrom",
+        "Becoming.Flow.shares_of_affectedBy",
+        "Becoming.Flow.withinInfluence_of_withinFeeding",
+        "Becoming.Flow.withinSystem_of_withinInfluence",
+        "Becoming.Flow.shares_symm",
+        "Becoming.Flow.WithinSystem.symm",
+        "Becoming.Flow.withinSystem_of_withinReach",
+        "Becoming.Flow.withinSystem_closed",
+        "Becoming.Flow.system_whole_of_common",
+        "Becoming.Flow.reach_whole_of_common",
+        "Becoming.Flow.feeding_whole_of_common",
+        "Becoming.Flow.feeding_unrestricted_of_common",
+        "Becoming.Flow.bounded_system_whole",
+        "Becoming.Trophic.mediates",
+        "Becoming.Trophic.near_closed",
+        "Becoming.Static.shares_unaffected",
+        "Becoming.Clearing.alongDependence_closed",
+        "Becoming.Clearing.levels",
+        "Becoming.Clearing.clearer_system",
+        "Becoming.Clearing.system_whole",
+        "Becoming.Clearing.clearerReach_closed",
+        "Becoming.Clearing.reach_middle",
+        "Becoming.Clearing.reach_centred",
+        "Becoming.Trophic.flow",
+        "Becoming.Trophic.web",
+        "Becoming.Trophic.responsiveFlow",
+        "Becoming.Trophic.responsiveWeb",
+        "Becoming.Static.flow",
+        "Becoming.Static.web",
+        "Becoming.Clearing.clearerReach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "6f0ac24745c6d4d6a337239fa709c55a7242bf4ed395974163b0c1bd9fc62c62",
+      "declarations": [
+        "Becoming.withinClosure_iff_closure",
+        "Becoming.Closure"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "role": "proof",
+      "sha256": "e1a33fd4614ae2e0ec4b838d6763e599b91a9c7e4b04eac769d431510b2c9823",
+      "declarations": [
+        "Becoming.Flow.WithinFeeding",
+        "Becoming.Flow.FedClosed",
+        "Becoming.Clearing.dependenceRegion_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "13b5c507bec0ef8c986251981879704c02b76e07757e4e00e578c0797f552727",
+      "declarations": [
+        "Becoming.Clearing.alongDependence"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "role": "proof",
+      "sha256": "f71118288abb3c0f1c992d16bd5c543399474f00da5fbedd071eaf50d7a91684",
+      "declarations": [
+        "Becoming.Unrestricted",
+        "Becoming.bounded"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "role": "proof",
+      "sha256": "ce23f44709f9e0e00d55f1db5468a903ae46a3d761317c76c7dc747663f96fe3",
+      "declarations": [
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "3ea7302504c1c240c5720d8eadac72dba6ab2494fa91b1298b53a00c094a3fe0"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "fa7e01a63746a05a47147f5756d9746d5df951a6646079622ad9b7091bb7b2ec"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P42-P43-REVIEW.md",
+      "role": "review",
+      "sha256": "771e4090ede7d482205a1da3d369734ed9511fc23c334df8449b6ba147345b3d"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-strongest-claims-direction.md",
+      "role": "provenance",
+      "sha256": "cc3d43d6adea73e09194f9e119d0d707014e14cb2bae314ea48716b5611e2a98"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-10-axiom-route-levels-and-possibilities.md",
+      "role": "provenance",
+      "sha256": "06edbaf87b47a1ff51b1cc5d06c4c8fc53f16d8b7880e6f9e24203c9c55c62a5"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "role": "receipt",
+      "sha256": "eb3ccaec5f33b5a6ff7fc20e10ef491a130fbdc013a03bd0c5b3f399a7eaad7f",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T204910.042715Z/verification.json",
+      "role": "receipt",
+      "sha256": "de452d3198d581ac4310c6a92a766e30b2c9bb6b740f970f5fed373b448e6121",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T221720.428753Z/verification.json",
+      "role": "receipt",
+      "sha256": "2feaf131081772f19c21b0a79fc68da63e9df371faec7b37ae0b927d526641d5",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Interdependence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Interdependence",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Significance.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Significance",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Continuation",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "按步的闭包；耦合的度量；Ren 的判断：所及闭包是否读出“the system that one is in”。",
+    "en": "Closures step by step; a measure of coupling; Ren's judgment whether the reach closure reads “the system that one is in”."
+  },
+  "history": [
+    {
+      "zh": "2026-10-11 P42：新增，按 Ren“continue, let's pursue the strongest claims and complete proof, i think you see the right direction”；统一计划 P42；见整合文档 §61；整合之前经第十六次独立审查，处理见 §62.1。",
+      "en": "2026-10-11 P42: added, following Ren's ‘continue, let's pursue the strongest claims and complete proof, i think you see the right direction’; unification plan P42; see §61 of the integration note; reviewed before integration by the sixteenth independent review, treated in §62.1."
+    },
+    {
+      "zh": "2026-10-11 落地：与 R3、R4 合并，同 P44 一次落地；验证范围由分支回执 20261010T174514.186722Z 与外围回执 20261010T175236.872210Z 重新指向合并检查器回执 20261010T214440.263682Z 与外围回执 20261010T222130.672025Z（核心另含 R3、R4 更新的 Becoming.Resolution 与 P44 新增的 Becoming.Relevance，包内模块由 37 个增至 38 个，核心闭包由 39 个增至 40 个，共 1971 项定理／2993 项声明审计；桥接新增 Discharge 一节 5 项定理；Becoming.Feedback 与 Becoming.Boundaries 的源与定理数不变）。整合之前的独立审查改称第十六次：R1–R2 的审查先落地为第十五次。断言不变。",
+      "en": "2026-10-11 landing: merged with R3 and R4 and landed with P44 in one commit; validation scope re-pointed from branch receipt 20261010T174514.186722Z and periphery receipt 20261010T175236.872210Z to consolidated receipt 20261010T214440.263682Z and periphery receipt 20261010T222130.672025Z (the core also has Becoming.Resolution as R3 and R4 updated it and Becoming.Relevance added by P44, the package growing from 37 to 38 modules and the core closure from 39 to 40, with 1971 theorems/2993 declaration audits; the bridge adds the 5 theorems of its Discharge section; the sources and theorem counts of Becoming.Feedback and Becoming.Boundaries are unchanged). The review before integration is renumbered the sixteenth: the review of R1–R2 landed first as the fifteenth. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P46：验证范围重新指向合并检查器回执 20261011T001147.906623Z 与外围回执 20261011T001754.342153Z（有限世界中与从某步起被围住时每个选择之下所选前提都起约束时计数的规律：Counting 新增声明）；所引模块的定理数改为该回执的数目（Counting 212）。断言不变。",
+      "en": "2026-10-11 P46: validation scope re-pointed to consolidated receipt 20261011T001147.906623Z and periphery receipt 20261011T001754.342153Z (the laws of counting in finite worlds and under enclosure from some step on where the premises of each selection bind: declarations added to Counting); the module counts cited are now that receipt's (Counting 212). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P47：验证范围重新指向合并检查器回执 20261011T003217.297180Z 与外围回执 20261011T003646.599930Z（前提之下所立者与依存的计数规律：新的核心模块 Standing，38 项定理；包与核心闭包各多一个模块；P51 折叠 G0 的说明文字随此运行改入七个核心模块，只改说明，陈述与定理数不变）。断言不变。",
+      "en": "2026-10-11 P47: validation scope re-pointed to consolidated receipt 20261011T003217.297180Z and periphery receipt 20261011T003646.599930Z (the laws of counting what stands and what depends under the premises: a new core module, Standing, with 38 theorems; the package and the core closure each have one module more; P51's fold of G0 enters the docstrings of seven core modules with this run, docstrings only, statements and theorem counts unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 R6：验证范围重新指向合并检查器回执 20261011T011019.444120Z 与外围回执 20261011T011213.027508Z（每个变化之律保留、失去与回返的零前提规律：新的核心模块 Recurrence，55 项定理；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 R6: validation scope re-pointed to consolidated receipt 20261011T011019.444120Z and periphery receipt 20261011T011213.027508Z (the zero-premise laws of what every law of change keeps, loses and returns to: a new core module, Recurrence, with 55 theorems; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P48：验证范围重新指向合并检查器回执 20261011T071749.484228Z 与外围回执 20261011T071753.574921Z（一步的规律：新的核心模块 Locality，57 项定理；Openness、Roles、Counting 与 Standing 的推论改经它证明，陈述不变；定理数改变的已有模块：Standing；包与核心闭包各多一个模块）。断言不变。",
+      "en": "2026-10-11 P48: validation scope re-pointed to consolidated receipt 20261011T071749.484228Z and periphery receipt 20261011T071753.574921Z (the laws of one step: a new core module, Locality, with 57 theorems; corollaries in Openness, Roles, Counting and Standing re-proved through it, statements unchanged; existing modules whose theorem count changed: Standing; the package and the core closure each have one module more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“计入”；断言不变。",
+      "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 计入; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57–P61：验证范围重新指向合并检查器回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z（清点 B 组其余与 D 组的局部规律，以及延续之下覆盖列表的普查定律，与这些规律中判定改为局部（供 P58）：每个原定理改经其局部形式证明，名称与陈述不变；共享的引理移入需要它的最低模块；定理数改变的模块：Flow、Change、Population、Identity、Dissipation、Locality、Roles、Space、Premises、Openness、Continuation；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P57–P61: validation scope re-pointed to consolidated receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z (the local laws of the rest of the inventory's group B and of group D, the census law under a continuation from covering lists, and decidedness made local in these laws (for P58): each original theorem re-proved through its local form, names and statements unchanged; shared lemmas moved to the lowest module that needs them; modules whose theorem count changed: Flow, Change, Population, Identity, Dissipation, Locality, Roles, Space, Premises, Openness, Continuation; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 接手核对：当前合并回执 20261013T094743.528770Z 实含 22 个继承模块；当前验证摘要中沿用的 15 改为 22。历史回执及其当时计数不变；断言、前提与证明不变。",
+      "en": "2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“闭包的五个层次：供给闭包在影响闭包之内，影响闭包与所及闭包在系统之内，每个包含都可以是严格的，影响闭包与所及闭包方向相反；一个共同条件使系统成为整体”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Five levels of closure: the feeding closure lies within the influence closure, and the influence and reach closures within the system, each inclusion possibly strict, the influence and reach closures pointing in opposite directions; one common condition makes the system the whole”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：Lean 源：Bridge 只改名（及相应的文档字符串），绑定改为新回执（见检查范围）；研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): Lean sources: Bridge only renamed (with the matching docstrings); bindings move to the new receipts (see validation scope); the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：Continuation.lean（新增恢复律 Flow.restores 及其推论，既有陈述不变）；BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to Continuation.lean (the restoring law Flow.restores and its corollaries added; existing statements unchanged); BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14：Becoming.Bridge 的证明绑定改指合并检查器回执 20261013T221720.428753Z，与有效范围的说明一致；该回执与原回执 20261013T204910.042715Z 绑定相同的字节。",
+      "en": "14 October 2026: the proof bindings of Becoming.Bridge now point to consolidated receipt 20261013T221720.428753Z, as the validation scope states; it binds the same bytes as the earlier receipt 20261013T204910.042715Z."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：Bridge.lean（新增核心分支检验与外围检验之间的互译；原有声明逐字节不变）；BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to Bridge.lean (the translation between the core's branching tests and the periphery's tests added; earlier declarations byte-identical); BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Bridge.lean（整合 I1：same_iff_bisimilar 作为以排中律为假设的核心定理、separated_iff，以及自身之善第二步即剖面上的 N_rel；原有陈述不变）；Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Bridge.lean (integration I1: same_iff_bisimilar as a core theorem with excluded middle a hypothesis, separated_iff, and the self-good second step as N_rel on profiles; earlier statements unchanged); Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    }
+  ]
+}
