@@ -1,0 +1,390 @@
+{
+  "schema_version": 2,
+  "id": "premises-read-off-the-exchange",
+  "title": {
+    "zh": "从交换读出的前提",
+    "en": "Premises read off the exchange"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-14T00:00:00+00:00",
+  "statement": {
+    "zh": "从交换读出、把整体的其余算作关系项：每个世界都平衡，只有活跃者给与取；交换之律下把要求读作回应，活动需要支持。平衡于是是其余闲置，没有历程固定要求。",
+    "en": "Read off the exchange with the rest of the whole counted as a relatum, every world balances and only active relata give and take; under a law of exchange, with requirement read as response, activity needs support. Balance is then the rest idle, and no course fixes requirement."
+  },
+  "laws": [
+    {
+      "zh": "一个形成跨一步交换，当它参与并对某个条件有所取或有所给；把活跃读作交换、把汲取读作所取，只有活跃者给予、只有活跃者取用且只取其所汲取的，对每个流成立；对任何网，这两个前提恰在其活跃与汲取包含从交换读出者时成立；参与者列出一次、交换可判定时，活跃的关系项被列出。",
+      "en": "A formation exchanges across a step where it takes part and takes or gives; with activity read as exchanging and drawing as taking, only active relata give, and only active relata take and only what they draw on, for every flow; for any web the two premises hold exactly where its activity and drawing include what is read off; with those taking part listed once and exchanging decided, the active relata are listed.",
+      "declarations": [
+        "Becoming.Flow.Exchanging",
+        "Becoming.Flow.readOff",
+        "Becoming.Flow.readOff_acting",
+        "Becoming.Flow.readOff_taking",
+        "Becoming.Flow.acting_taking_iff_wider",
+        "Becoming.Flow.readOff_census"
+      ]
+    },
+    {
+      "zh": "把其余算作关系项并从交换读出活跃：每个流都平衡，只有活跃者给与取，原来的形成交换如故，活跃者有普查；流跨一步平衡恰当其余在那一步不活跃，处处平衡恰当其余从不活跃；活动需要支持恰当每个交换的形成都被支持。",
+      "en": "With the rest counted as a relatum and activity read off the exchange: every flow balances, only active relata give and take, the formations exchange as they did, and the active relata have a census; a flow balances across a step exactly where the rest is not active there, and at every step exactly where it never is; activity needs support exactly where every formation that exchanges is supported.",
+      "declarations": [
+        "Becoming.Flow.adopt",
+        "Becoming.Flow.adopt_balances",
+        "Becoming.Flow.adopt_acting",
+        "Becoming.Flow.adopt_taking",
+        "Becoming.Flow.some_mem_present",
+        "Becoming.Flow.exchanging_some_iff",
+        "Becoming.Flow.none_not_mem_some",
+        "Becoming.Flow.present_distinct",
+        "Becoming.Flow.adopt_census",
+        "Becoming.Flow.rest_idle_at_iff",
+        "Becoming.Flow.rest_idle_iff",
+        "Becoming.Flow.adopt_dependent_iff"
+      ]
+    },
+    {
+      "zh": "每个世界算入其余：关系项是世界的与其余，活跃与汲取从交换读出，所立、要求与所需是世界的。每个世界都平衡，只有活跃者给与取，世界的关系项交换如故；世界平衡恰当其余从不活跃；活动需要支持恰当每个交换的关系项都被支持。",
+      "en": "Every world with its rest counted: its relata are the world's and the rest, activity and drawing are read off the exchange, and standings, requirements and needs are the world's. Every world balances, only active relata give and take, and the world's relata exchange as they did; it balances exactly where the rest is never active, and activity needs support exactly where every relatum that exchanges is supported.",
+      "declarations": [
+        "Becoming.World.restFlow",
+        "Becoming.World.restLevel",
+        "Becoming.World.restRequires",
+        "Becoming.World.restNeed",
+        "Becoming.World.withRest",
+        "Becoming.World.withRest_balanced",
+        "Becoming.World.withRest_acting",
+        "Becoming.World.withRest_taking",
+        "Becoming.World.withRest_exchanging_iff",
+        "Becoming.World.withRest_rest_iff",
+        "Becoming.World.withRest_closed_iff",
+        "Becoming.World.withRest_dependent_iff"
+      ]
+    },
+    {
+      "zh": "交换之律下，一个形成的交换回应一个条件低于所需，当在每个只在该条件该步的水平上与实际不同、且那个水平低于所需的历史之下，它都不交换；读作要求，交换的形成就被支持。",
+      "en": "Under a law of exchange, a formation's exchange responds to a condition below a need where it does not exchange under any history differing at most in that condition's level at that step, the level below the need; read as requirement, a formation that exchanges is supported.",
+      "declarations": [
+        "Becoming.ExchangeLaw.ExchangesUnder",
+        "Becoming.ExchangeLaw.RespondsBelow",
+        "Becoming.ExchangeLaw.supported_of_responds"
+      ]
+    },
+    {
+      "zh": "所以律生成的历程读出的网对每个所需满足活动需要支持，算入其余时四个联结前提都不用前提，对从律读出的世界亦然；律读已立者时，其余从不活跃恰当历程可行。",
+      "en": "So the web read off the course a law generates meets activity needing support for every need, and with the rest counted the four tying premises hold with no premise, for the world read off the law too; where the law reads what has stood, the rest is never active exactly where the course is feasible.",
+      "declarations": [
+        "Becoming.ExchangeLaw.readWeb",
+        "Becoming.ExchangeLaw.readWeb_dependent",
+        "Becoming.ExchangeLaw.reading_glue",
+        "Becoming.ExchangeLaw.rest_idle_iff_feasible",
+        "Becoming.ExchangeLaw.readWorld",
+        "Becoming.ExchangeLaw.readWorld_glue",
+        "Becoming.ExchangeLaw.readWorld_closed_iff"
+      ]
+    },
+    {
+      "zh": "要求不在历程中：responsive 与条件所立者交换一个单位，unresponsive 不论所立者都交换一个单位；从同一起点两者生成同一历程，前者每一步都以所需一要求其条件，后者没有一步要求。",
+      "en": "Requirement is not in the course: responsive exchanges one unit with the condition where it stands, and unresponsive one unit whatever stands; from one start they generate one course, and the first requires its condition at need one at every step, the second at none.",
+      "declarations": [
+        "Becoming.ExchangeLaw.single",
+        "Becoming.ExchangeLaw.responsive",
+        "Becoming.ExchangeLaw.unresponsive",
+        "Becoming.ExchangeLaw.needOne",
+        "Becoming.ExchangeLaw.add_sub_same",
+        "Becoming.ExchangeLaw.responsive_levels",
+        "Becoming.ExchangeLaw.unresponsive_levels",
+        "Becoming.ExchangeLaw.responsive_requires",
+        "Becoming.ExchangeLaw.unresponsive_unrequired",
+        "Becoming.ExchangeLaw.requirement_beyond_course"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "zh": "不加公理。Flow.readOff 给定水平、要求与所需；ExchangeLaw.readWeb 给定律、参与者、起点与所需；普查要参与者列出一次、交换可判定。",
+      "en": "No axiom. Flow.readOff is given levels, requirements and needs; ExchangeLaw.readWeb the law, who takes part, the start and the need; the census needs the formations taking part listed once and exchanging decided."
+    },
+    {
+      "zh": "rest_idle_iff_feasible 与 readWorld_closed_iff 要律只读已立者（Nonanticipating）。",
+      "en": "rest_idle_iff_feasible and readWorld_closed_iff need the law to read only what has stood (Nonanticipating)."
+    }
+  ],
+  "does_not_show": [
+    {
+      "zh": "实际的生成应当这样读：把活跃读作交换、把其余算作关系项是表示的选择（后者已由 Ren 采用）；体现把活跃与立着联系起来。",
+      "en": "That an actual becoming is to be read so: reading activity as exchanging and counting the rest are choices of representation (the second adopted by Ren); embodiment ties activity to standing.",
+      "kind": "scope"
+    },
+    {
+      "zh": "其余是什么：它的交换由水平与形成的交换之差读出，不是观察；算入它，关于交换不增加信息。",
+      "en": "What the rest is: its exchange is read off the levels and the formations' exchange, as their difference, not observed; counting it adds no information about the exchange.",
+      "kind": "scope"
+    },
+    {
+      "zh": "封闭、耗散、体现、有界传递与列出活跃者所需的判定不从交换读出，它们仍是部分的状态。",
+      "en": "Closure, dissipation, embodiment, bounded transmission and the decision to list what is active are not read off the exchange; they remain states of parts.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不主张物理的守恒：算入其余，每个流都由构造平衡。",
+      "en": "No physical conservation is claimed: with the rest counted, every flow balances by construction.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+      "detail": {
+        "zh": "responsive 与 unresponsive 从同一起点生成同一历程，要求却不同（ExchangeLaw.requirement_beyond_course）：要求不由历程固定。",
+        "en": "responsive and unresponsive generate one course from one start yet differ in requirement (ExchangeLaw.requirement_beyond_course): requirement is not fixed by the course."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "formal-not-empirical",
+    "names-provisional",
+    "decidability"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执于落地时绑定）：Becoming.Reading 的 50 项声明（34 项定理）公理报告为空；检查器并核对核心纯净。作者反审见研究 §124；未经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt bound at landing): the 50 declarations of Becoming.Reading, 34 of them theorems, have empty axiom reports; the checker verifies core purity. Author counterreview in study section 124; not independently reviewed."
+  },
+  "next_delta": {
+    "zh": "当前规律在 Flow.BalancesOn 上的陈述是否改写为其余在该家族上闲置（每条经 Flow.balancesOn_iff_idle 等价）；要求读作回应时在分支过程上的形式；独立审查；Ren 对读法的判断。",
+    "en": "Whether the laws stated on Flow.BalancesOn are rewritten as the rest idle on the family (each is equivalent through Flow.balancesOn_iff_idle); requirement read as response over branching processes; an independent review; Ren's judgment on the readings."
+  },
+  "correspondence": {
+    "zh": "Ren 2026-10-14：“why do we need \"World\"? wasn't this about the whole and its parts, about everything?”，“no hard role has to be so - right now i think we are trapped by our speculative conditions”，“for us, non-Euclidean, or causality, still work”；对从关系开始的三步重建：“please, finish all”。本结果是第二步：采用其余作为关系项，从交换读出活跃与依存，把联结的前提作为定义或定理重证，余下局部状态。读法（AI 的，待 Ren）：平衡、只有活跃者给予、只有活跃者取用其所汲取的、活动需要支持把一次交换的诸读法联结起来；World.independent 的独立性是分别选取的读法的自由：它为这四个前提给的见证（unbalanced、strained、scatter、morsel）中，一个读法被选得与它所读的交换不符。",
+    "en": "Ren, 14 October 2026: “why do we need \"World\"? wasn't this about the whole and its parts, about everything?”, “no hard role has to be so - right now i think we are trapped by our speculative conditions”, “for us, non-Euclidean, or causality, still work”; and, to the relation-first re-founding in three steps, “please, finish all”. This result is the second step: the rest adopted as a relatum, activity and dependence read off the exchange, and the tying premises re-proved as definitions or theorems, leaving local states. Readings (the AI's, pending Ren): balance, only active relata giving, only active relata taking what they draw on, and activity needing support tie readings of one exchange together; the independence of World.independent is the freedom of separately chosen readings: in its witnesses for these four premises (unbalanced, strained, scatter, morsel) a reading is chosen apart from the exchange it reads."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+  "aliases": [
+    "tying premises read off the exchange",
+    "联结的前提从交换读出",
+    "the rest counted in every world",
+    "每个世界算入其余",
+    "requirement as response",
+    "要求读作回应"
+  ],
+  "dependencies": [
+    {
+      "id": "imbalance-as-relatum",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Flow.withImbalance、Flow.withImbalance_balances 与 Web.withRefinement：其余作为关系项，Ren 2026-10-14 采用。",
+        "en": "Reuses Flow.withImbalance, Flow.withImbalance_balances and Web.withRefinement: the rest as a relatum, adopted by Ren on 14 October 2026."
+      },
+      "interface": {
+        "output": {
+          "zh": "算入不平衡，每个流都平衡；平衡恰是新增关系项闲置。",
+          "en": "With the imbalance counted every flow balances; balance is exactly the added relatum idle."
+        },
+        "input": {
+          "zh": "从交换读出活跃，使其余的闲置就是封闭。",
+          "en": "Activity read off the exchange, so that the rest idle is closure."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean"
+      }
+    },
+    {
+      "id": "counterfactual-is-the-course",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ExchangeLaw、ExchangeLaw.course、levels、levels_succ、Feasible、Nonanticipating 与 course_balances_iff。",
+        "en": "Reuses ExchangeLaw, ExchangeLaw.course, levels, levels_succ, Feasible, Nonanticipating and course_balances_iff."
+      },
+      "interface": {
+        "output": {
+          "zh": "律生成的历程；读已立者时历程恰在可行处平衡。",
+          "en": "The course a law generates; under a law reading what has stood, it balances exactly where feasible."
+        },
+        "input": {
+          "zh": "从律读出的要求；其余闲置恰当可行。",
+          "en": "Requirement read off the law; the rest idle exactly where feasible."
+        },
+        "conditions": {
+          "zh": "律只读已立者（只在 rest_idle_iff_feasible 与 readWorld_closed_iff）。",
+          "en": "The law reads only what has stood (only in rest_idle_iff_feasible and readWorld_closed_iff)."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "map-of-premises",
+      "detail": {
+        "zh": "那里八个前提相对于彼此独立；这里四个由读法成立，独立性是分别选取的字段的自由。",
+        "en": "There the eight premises are independent relative to one another; here four hold by reading, the independence being the freedom of separately chosen fields."
+      }
+    },
+    {
+      "id": "space-and-its-parts",
+      "detail": {
+        "zh": "余下的前提是部分的状态：其余闲置（封闭）、耗散、体现、有界传递与普查所需的判定。",
+        "en": "The remaining premises are states of parts: the rest idle (closure), dissipation, embodiment, bounded transmission and the decision a census needs."
+      }
+    },
+    {
+      "id": "unity-of-readings",
+      "detail": {
+        "zh": "同一重建的第三步：平衡是两种变化读法的粘合，算入其余时每个世界都是交换之律的一次运行。",
+        "en": "Step 3 of the same re-founding: balance is the gluing of two readings of change, and with the rest counted every world is one run of the law of exchange."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Reading.lean",
+      "role": "proof",
+      "sha256": "8785f29984e68d38522df23319c0cfc0a8cee537bb7df4e90c73fa2c9f76dd58",
+      "declarations": [
+        "Becoming.Flow.Exchanging",
+        "Becoming.Flow.readOff",
+        "Becoming.Flow.readOff_acting",
+        "Becoming.Flow.readOff_taking",
+        "Becoming.Flow.acting_taking_iff_wider",
+        "Becoming.Flow.readOff_census",
+        "Becoming.Flow.adopt",
+        "Becoming.Flow.adopt_balances",
+        "Becoming.Flow.adopt_acting",
+        "Becoming.Flow.adopt_taking",
+        "Becoming.Flow.some_mem_present",
+        "Becoming.Flow.exchanging_some_iff",
+        "Becoming.Flow.rest_idle_at_iff",
+        "Becoming.Flow.rest_idle_iff",
+        "Becoming.Flow.adopt_dependent_iff",
+        "Becoming.Flow.none_not_mem_some",
+        "Becoming.Flow.present_distinct",
+        "Becoming.Flow.adopt_census",
+        "Becoming.ExchangeLaw.ExchangesUnder",
+        "Becoming.ExchangeLaw.RespondsBelow",
+        "Becoming.ExchangeLaw.readWeb",
+        "Becoming.ExchangeLaw.supported_of_responds",
+        "Becoming.ExchangeLaw.readWeb_dependent",
+        "Becoming.ExchangeLaw.reading_glue",
+        "Becoming.ExchangeLaw.rest_idle_iff_feasible",
+        "Becoming.ExchangeLaw.single",
+        "Becoming.ExchangeLaw.responsive",
+        "Becoming.ExchangeLaw.unresponsive",
+        "Becoming.ExchangeLaw.needOne",
+        "Becoming.ExchangeLaw.add_sub_same",
+        "Becoming.ExchangeLaw.responsive_levels",
+        "Becoming.ExchangeLaw.unresponsive_levels",
+        "Becoming.ExchangeLaw.responsive_requires",
+        "Becoming.ExchangeLaw.unresponsive_unrequired",
+        "Becoming.ExchangeLaw.requirement_beyond_course",
+        "Becoming.World.restFlow",
+        "Becoming.World.restLevel",
+        "Becoming.World.restRequires",
+        "Becoming.World.restNeed",
+        "Becoming.World.withRest",
+        "Becoming.World.withRest_balanced",
+        "Becoming.World.withRest_acting",
+        "Becoming.World.withRest_taking",
+        "Becoming.World.withRest_exchanging_iff",
+        "Becoming.World.withRest_rest_iff",
+        "Becoming.World.withRest_closed_iff",
+        "Becoming.World.withRest_dependent_iff",
+        "Becoming.ExchangeLaw.readWorld",
+        "Becoming.ExchangeLaw.readWorld_glue",
+        "Becoming.ExchangeLaw.readWorld_closed_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Imbalance.lean",
+      "role": "proof",
+      "sha256": "4952f2b987be3c45f5aea970fdbe4599c7c62a7ff919b32edca21cda54bec0a0",
+      "declarations": [
+        "Becoming.Flow.withImbalance",
+        "Becoming.Flow.withImbalance_balances",
+        "Becoming.Flow.balances_iff_idle"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Resolution.lean",
+      "role": "proof",
+      "sha256": "b42d52b2248274aa1999d0c0e77ffe01a3c86e29dd8ed79a8e9e3c05675d6a90",
+      "declarations": [
+        "Becoming.Web.withRefinement"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Counterfactual.lean",
+      "role": "proof",
+      "sha256": "a296d36ddc81ac77f72b0a01a1855874bad3e6261ecce9ef321592940c6a1798",
+      "declarations": [
+        "Becoming.ExchangeLaw",
+        "Becoming.ExchangeLaw.course",
+        "Becoming.ExchangeLaw.levels",
+        "Becoming.ExchangeLaw.levels_succ",
+        "Becoming.ExchangeLaw.Feasible",
+        "Becoming.ExchangeLaw.Nonanticipating",
+        "Becoming.ExchangeLaw.course_balances_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Premises.lean",
+      "role": "proof",
+      "sha256": "d4f748607ac4590ced2090618040d65bf7ac6a18ce41979d1febf045f4e88816",
+      "declarations": [
+        "Becoming.World.independent",
+        "Becoming.World.unbalanced_but",
+        "Becoming.World.strained_but",
+        "Becoming.World.scatter_but",
+        "Becoming.World.morsel_but",
+        "Becoming.keep"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.Taking"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dependence.lean",
+      "role": "proof",
+      "sha256": "01bba84e2fec137893effc3b6f1eb05f3b8c099b52bc2110462f309c849c607d",
+      "declarations": [
+        "Becoming.Web.Dependent",
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "b64c6518d01340ebbf46f4e5bdf19b9b5d0206ef53ed68b32337326d72b21f62"
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "ec2e6c466aa84462a0cad95b31a68d764dd1159a3e4dae4833fb8445ed7990cb"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-14-relation-first-refounding.md",
+      "role": "provenance",
+      "sha256": "980885e3829d06e83fd7335ac66ccc451a67417748996d4a79223482a2a5bac3"
+    }
+  ],
+  "proof_bindings": [],
+  "history": [
+    {
+      "zh": "2026-10-14：新增，按 Ren 批准从关系开始的重建（“please, finish all”）的第二步；研究 §124。",
+      "en": "14 October 2026: added under Ren's approval of the relation-first re-founding (“please, finish all”), step 2; study section 124."
+    }
+  ],
+  "text_versions": []
+}

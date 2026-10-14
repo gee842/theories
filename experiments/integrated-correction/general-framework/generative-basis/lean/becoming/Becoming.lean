@@ -95,6 +95,9 @@ import Becoming.Likeness
 import Becoming.Composition
 import Becoming.Joining
 import Becoming.Postponement
+import Becoming.Novelty
+import Becoming.Reading
+import Becoming.Readings
 
 /-!
 # The Theory of Becoming: the formal core
@@ -529,13 +532,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   support does not depend on the grain of measurement; laws that count a loss over a stretch
   need a fixed unit or the refinement counted as a giving, as for rest.
 * `Becoming.Imbalance` (L3): imbalance counted as a relatum, proved equivalent first (Ren,
-  11 October 2026: "please"; adoption is Ren's). Wherever the flow does not balance, the
-  difference is counted as the exchange of one more relatum, never active and requiring
-  nothing; then every flow balances, the flow balances on a family across a step exactly where
-  that relatum is idle there, and on a family across a step the activity premises hold of the
-  extended flow exactly where they hold of the flow and it balances there. Nothing is adopted:
-  the laws of the core keep balance as a local condition. The readings are the AI's, pending
-  Ren.
+  11 October 2026: "please"), adopted by Ren on 14 October 2026 (`Becoming.Reading`). Wherever
+  the flow does not balance, the difference is counted as the exchange of one more relatum,
+  never active and requiring nothing; then every flow balances, the flow balances on a family
+  across a step exactly where that relatum is idle there, and on a family across a step the
+  activity premises hold of the extended flow exactly where they hold of the flow and it
+  balances there. Adopted, the landed laws keep their statements, with balance a local
+  condition read as the rest idle. The readings are the AI's, pending Ren.
 * `Becoming.Continuation` (L3): what a continuing formation must count, with no ethical
   premise. Across a step something is conveyed from one condition to another when a
   formation taking part takes from the first and gives to the second, and a family is fed
@@ -897,6 +900,27 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to
   its postponement exactly where it is determined up to likeness: what linear tests do not see is
   exactly where the unfolding branches.
+
+* `Becoming.Novelty` (L3): returning, novelty and forgetting on the levels alone, with no premise.
+  Each law's condition is a state of the part written into it: a family whose stock stays within a
+  bound returns; a family new at each of as many steps as there are configurations within a bound
+  exceeds the bound at one of them, so what is new at every step exceeds every bound; no reading of a
+  bounded configuration gives a record that never repeats or a count without bound, so a bounded
+  family exchanged with without end, and a finite whole, forget; with loss at each change, change does
+  not recur without end. Entropy's forms under the first law are cases.
+* `Becoming.Reading` (L4): activity, drawing and requirement read off the exchange, with no premise
+  (Ren, 14 October 2026: "please, finish all", adopting the rest of the whole as a relatum). With
+  activity read as exchanging and drawing as taking, only active relata give and take, for every flow;
+  with the rest counted, every world balances and its balance is exactly the rest never active; under
+  a law of exchange, with requirement read as what the exchange responds to, activity needs support,
+  so the four premises tying readings of one exchange hold with no premise, and requirement is a
+  counterfactual of the law that no course fixes. The readings are the AI's, pending Ren.
+* `Becoming.Readings` (L4): one unfolding, read in context, with no premise. The readings in context
+  of a run are always one world of indexed claims, with no gluing; a description free of context is a
+  gluing; balance is the gluing of the standing's and the exchange's readings of change, and with the
+  rest counted every world is one run of the law of exchange. Under the same standard of invariance,
+  significance from a standpoint holds within a boundary only by holding for everything, a
+  restatement of `Becoming.Boundaries`. The readings are the AI's, pending Ren.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
