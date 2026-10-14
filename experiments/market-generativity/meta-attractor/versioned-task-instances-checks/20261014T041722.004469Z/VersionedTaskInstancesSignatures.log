@@ -1,0 +1,68 @@
+Becoming.VersionedTaskInstances.drain_eq : ∀ (n : ℕ) (s : CorrectionVersioned.Installation) (out : List (Bool × Bool)),
+  Becoming.Countdown.ticks Becoming.VersionedTaskInstances.tickOut n (s, out) =
+    some ((CorrectionVersioned.drain n s).1, out ++ (CorrectionVersioned.drain n s).2)
+Becoming.VersionedTaskInstances.head_advances : ∀ (B : Bool → CorrectionVersioned.Bank) (act slot requested : Bool)
+  (ps : List CorrectionVersioned.Packet) (out : List (Bool × Bool)),
+  Becoming.Countdown.Advances Becoming.VersionedTaskInstances.tickOut
+    (Becoming.VersionedTaskInstances.Pending B act slot requested ps out)
+    (Becoming.VersionedTaskInstances.Delivered B act requested ps out) Becoming.VersionedTaskInstances.remaining
+Becoming.VersionedTaskInstances.valid_pending : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps → Becoming.VersionedTaskInstances.Pending s.banks s.active p.slot p.requested ps [] (s, [])
+Becoming.VersionedTaskInstances.head_completes : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps →
+        ∃ t,
+          Becoming.Countdown.ticks Becoming.VersionedTaskInstances.tickOut
+                (Becoming.VersionedTaskInstances.remaining (s, []) + 1) (s, []) =
+              some t ∧
+            Becoming.VersionedTaskInstances.Delivered s.banks s.active p.requested ps [] t
+Becoming.VersionedTaskInstances.valid_head_instance : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps →
+        have result := CorrectionVersioned.drain ((List.drop p.cursor (s.banks p.slot).path).length + 1) s;
+        result.1.packets = ps ∧
+          result.1.banks = s.banks ∧ result.1.active = s.active ∧ result.2 = [(p.requested, p.requested)]
+Becoming.VersionedTaskInstances.head_pending_before : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps →
+        ∀ {k : ℕ},
+          k ≤ (List.drop p.cursor (s.banks p.slot).path).length →
+            ∃ q,
+              (CorrectionVersioned.drain k s).1.packets = q :: ps ∧
+                q.slot = p.slot ∧
+                  q.requested = p.requested ∧
+                    (CorrectionVersioned.drain k s).2 = [] ∧
+                      Becoming.VersionedTaskInstances.remaining ((CorrectionVersioned.drain k s).1, []) + k =
+                        (List.drop p.cursor (s.banks p.slot).path).length
+Becoming.VersionedTaskInstances.retarget_pending : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps →
+        ∀ (next : Bool),
+          Becoming.VersionedTaskInstances.Pending s.banks s.active p.slot next ps []
+              (CommonTaskRevision.retargetHead s next, []) ∧
+            Becoming.VersionedTaskInstances.remaining (CommonTaskRevision.retargetHead s next, []) =
+              Becoming.VersionedTaskInstances.remaining (s, [])
+Becoming.VersionedTaskInstances.revised_head_instance : ∀ (span : ℕ) (s : CorrectionVersioned.Installation),
+  CorrectionVersioned.Invariant span s →
+    ∀ (p : CorrectionVersioned.Packet) (ps : List CorrectionVersioned.Packet),
+      s.packets = p :: ps →
+        ∀ (next : Bool),
+          have result :=
+            CorrectionVersioned.drain ((List.drop p.cursor (s.banks p.slot).path).length + 1)
+              (CommonTaskRevision.retargetHead s next);
+          result.1.packets = ps ∧ result.1.banks = s.banks ∧ result.1.active = s.active ∧ result.2 = [(next, next)]
+Becoming.VersionedTaskInstances.review_course_covered_iff : ∀ (w : ℕ),
+  Becoming.Stock.Covered (fun n => n) (fun x => 0) w [1, 2] ↔ 3 ≤ w
+Becoming.VersionedTaskInstances.enact_isSome_iff : ∀ (c : GoalFormationRevision.Conditions)
+  (l : GoalFormationRevision.State) (value : Bool),
+  (CommonTaskRevision.enact c l value).isSome = true ↔ 2 ≤ l.account.work
+Becoming.VersionedTaskInstances.review_completes_iff : ∀ (c : GoalFormationRevision.Conditions) (report : Option Bool)
+  (l : GoalFormationRevision.State) (value : Bool),
+  (PendingTaskApplicability.reviewAndAct c report { learning := l, requested := value }).pending = false ↔
+    report = some false ∧ Becoming.Stock.Covered (fun n => n) (fun x => 0) l.account.work [1, 2]

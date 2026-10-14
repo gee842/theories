@@ -1,0 +1,12 @@
+import VersionedTaskInstances
+#check @Becoming.VersionedTaskInstances.drain_eq
+#check @Becoming.VersionedTaskInstances.head_advances
+#check @Becoming.VersionedTaskInstances.valid_pending
+#check @Becoming.VersionedTaskInstances.head_completes
+#check @Becoming.VersionedTaskInstances.valid_head_instance
+#check @Becoming.VersionedTaskInstances.head_pending_before
+#check @Becoming.VersionedTaskInstances.retarget_pending
+#check @Becoming.VersionedTaskInstances.revised_head_instance
+#check @Becoming.VersionedTaskInstances.review_course_covered_iff
+#check @Becoming.VersionedTaskInstances.enact_isSome_iff
+#check @Becoming.VersionedTaskInstances.review_completes_iff

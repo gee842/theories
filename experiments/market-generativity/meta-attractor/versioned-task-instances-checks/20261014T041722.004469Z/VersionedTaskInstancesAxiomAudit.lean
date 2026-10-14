@@ -1,0 +1,18 @@
+import VersionedTaskInstances
+#print axioms Becoming.VersionedTaskInstances.tickOut
+#print axioms Becoming.VersionedTaskInstances.drain_eq
+#print axioms Becoming.VersionedTaskInstances.remaining
+#print axioms Becoming.VersionedTaskInstances.Pending
+#print axioms Becoming.VersionedTaskInstances.Delivered
+#print axioms Becoming.VersionedTaskInstances.hop
+#print axioms Becoming.VersionedTaskInstances.withQueue
+#print axioms Becoming.VersionedTaskInstances.head_advances
+#print axioms Becoming.VersionedTaskInstances.valid_pending
+#print axioms Becoming.VersionedTaskInstances.head_completes
+#print axioms Becoming.VersionedTaskInstances.valid_head_instance
+#print axioms Becoming.VersionedTaskInstances.head_pending_before
+#print axioms Becoming.VersionedTaskInstances.retarget_pending
+#print axioms Becoming.VersionedTaskInstances.revised_head_instance
+#print axioms Becoming.VersionedTaskInstances.review_course_covered_iff
+#print axioms Becoming.VersionedTaskInstances.enact_isSome_iff
+#print axioms Becoming.VersionedTaskInstances.review_completes_iff
