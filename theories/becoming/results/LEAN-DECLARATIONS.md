@@ -16,7 +16,7 @@
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
 | [关切与共同活动 / Concern and shared activity](lean-declarations/concern.md) | 15 | 246 |
 | [组织形成到可修正评价 / Organizational formation through revisable evaluation](lean-declarations/shared.md) | 66 | 1,480 |
-| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 235 | 7,230 |
+| [生成核心与关系结构 / Generative core and relational structure](lean-declarations/core.md) | 235 | 7,283 |
 | [其他形式研究 / Other formal studies](lean-declarations/other.md) | 28 | 869 |
 
 ## 按名称查找 / Find by name

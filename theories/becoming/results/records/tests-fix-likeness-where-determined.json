@@ -188,8 +188,8 @@
     "no-ethical-premise"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Histories 的定理（回执 20261013T094743.528770Z）与 Becoming.Likeness 的定理（回执 20261014T091930.724493Z）公理报告为空；Becoming.Unfolding 的当前字节由 20261013T204910.042715Z 绑定；检查器并核对核心纯净。作者反审见整合文档；尚无独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z) and of Becoming.Likeness (receipt 20261014T091930.724493Z) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Histories 的定理（回执 20261013T094743.528770Z）与 Becoming.Likeness 的定理（回执 20261014T100026.593496Z）公理报告为空；Becoming.Unfolding 的当前字节由 20261013T204910.042715Z 绑定；检查器并核对核心纯净。作者反审见整合文档；尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Histories (receipt 20261013T094743.528770Z) and of Becoming.Likeness (receipt 20261014T100026.593496Z) have empty axiom reports; the current bytes of Becoming.Unfolding are bound by 20261013T204910.042715Z; the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
   },
   "next_delta": {
     "zh": "Ren 的判断：线性检验看不到的是否读作选择在何时作出。",
@@ -470,13 +470,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "6b921ae46ee8c7502796a8623f0b2499b352808fbf770dc3766ee86ba0d7ac61",
+      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a",
       "declarations": []
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
       "role": "statement",
-      "sha256": "aa3bbbcef9324fc197303b2884537ee3e6f912d8fbd24d3865cc0f639e7bfe8c",
+      "sha256": "d53319e82cc9be591e16e854f9c946908d31aa16428503af55a2027f11365107",
       "declarations": []
     },
     {
@@ -495,6 +495,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
       "role": "receipt",
       "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "role": "receipt",
+      "sha256": "51b9fd45bff2f533ee783f79a81518580a49255bfda8a38a5859129191b3846e",
       "declarations": []
     }
   ],
@@ -529,8 +535,15 @@
     },
     {
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
       "sha256_pointer": "/source_sha256/Becoming.Likeness",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Bridge",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -627,6 +640,10 @@
     {
       "zh": "2026-10-14，判定、所需原则与桥接（Current math core 的 likeness 一行，整合会话批准；Becoming.Likeness 与 Becoming.Bridge 的 Likeness 一节）：回答本记录“未表明”中的两项与 next_delta。新增规律 8：两项判定都不能从等价中去掉，各自恰是排中律（alike_of_sameBranchingTests_iff_em 经 EitherStep，alike_of_sameBranchingTests_decided_steps_iff_em 经 EitherClaim）。新增规律 9：只列出每个动作的结果时，同测推出相同恰在 EitherThroughout 下成立（OutcomesListed.alike_iff_sameBranchingTests；反向经 Chains，alike_of_sameBranchingTests_outcomes_iff），排中律给出它（EitherThroughout.of_em）；某个动作有无穷多结果时分支检验未必固定相同（反例 Unbounded）。新增规律 10：核心的 BranchingTest 与外围的 Test 一一对应并在同样的配置成立（BranchingTest.holds_toTest、sameBranchingTests_iff_same），有限、已定的模型上外围的同测即相同，构造性（same_iff_alike_of_finiteDecided）；像有限时外围的经典证明不在桥接中重述，因为脊柱模块的公理报告须为空，这一边界写在规律 10 中。新增规律 11：此原则即 EitherNever（eitherThroughout_iff_eitherNever），NowhereDecided 给出它（EitherThroughout.of_nowhereDecided）。“未表明”改为此原则是否给出 NowhereDecided 或排中律；对应中注明标准名称 LLPO 与 WLPO；Becoming.Likeness 头注相应改写。",
       "en": "14 October 2026, the decisions, the principle needed and the bridge (the likeness row of Current math core, approved by the integrator; Becoming.Likeness and the Likeness section of Becoming.Bridge): answers both does-not-show items and the next_delta. New law 8: neither decision can be dropped from the equivalence, each exactly excluded middle (alike_of_sameBranchingTests_iff_em through EitherStep, alike_of_sameBranchingTests_decided_steps_iff_em through EitherClaim). New law 9: where only each move's outcomes are listed, passing the same tests makes configurations alike exactly under EitherThroughout (OutcomesListed.alike_iff_sameBranchingTests; the converse through Chains, alike_of_sameBranchingTests_outcomes_iff), which excluded middle gives (EitherThroughout.of_em); where a move has infinitely many outcomes branching tests need not fix likeness (the Unbounded counterexample). New law 10: the core's BranchingTest and the periphery's Test correspond one to one and hold at the same configurations (BranchingTest.holds_toTest, sameBranchingTests_iff_same), and on finite decided models the periphery's same tests are likeness, constructively (same_iff_alike_of_finiteDecided); the periphery's classical proof for image-finite models is not restated in the bridge, whose declarations must have empty axiom reports, and law 10 states that boundary. New law 11: the principle is EitherNever (eitherThroughout_iff_eitherNever), and NowhereDecided gives it (EitherThroughout.of_nowhereDecided). The does-not-show item now covers whether the principle gives NowhereDecided or excluded middle; the correspondence gives the standard names, LLPO and WLPO; the header of Becoming.Likeness was rewritten to match."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）；Likeness.lean（新增判定之必需、有限多结果所需的原则及其德摩根形式、无穷多结果的反例；原有陈述不变）。新绑定到本回执的证明：Bridge.lean。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z); Likeness.lean (the decisions shown necessary, the principle for listed outcomes and its de Morgan form, and the counterexample for infinitely many outcomes added; earlier statements unchanged). New proof binding to this receipt: Bridge.lean."
     }
   ],
   "text_versions": [

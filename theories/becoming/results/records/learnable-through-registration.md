@@ -97,6 +97,7 @@ Aliases / 别名: `learnability through registration`, `经识的可学性`
 ### History / 沿革
 
 - 2026-10-14：新增，按 Ren 2026-10-12 的请求（学习、智慧之根、消解未消解者）；推进 learning-by-refutation 下一步中“识不分辨值时的学习”一项；研究 §119。 / 14 October 2026: added under Ren's request of 12 October 2026 (learning, the wisdom root, resolving the undissolved); advances the item of learning-by-refutation's next step on learning where registration does not tell values apart; study section 119.
+- 2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。 / 14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z).
 
 </details>
 
