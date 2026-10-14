@@ -22,7 +22,10 @@ repeated doubling draws. The constructed copy machines of the periphery are inst
   their draws and releases (`batch_all_iff`); exchanging adjacent words, and so any
   reordering, leaves this as it was (`batch_all_swap`), though which copies are released can
   change. The pool supplies one word followed by another exactly when it supplies the first and
-  its remainder the second (`supplies_append_iff`).
+  its remainder the second (`supplies_append_iff`). A **lineage**, one word copied `n` times in
+  turn, is released copy by copy exactly when the pool holds each token at least `n` times as
+  often as the word uses it and the support covers `n` times the word's draws and release
+  (`lineage_all_iff`).
 * **Local draws.** Where the first attachment draws `first` and each further one `same` after
   a like token and `differ` after an unlike one (`pairDraw`), a word's use of support depends
   on the law only through its number of unlike adjacent pairs (`use_word`). So among words of
@@ -566,6 +569,36 @@ theorem batch_all_swap (r : Nat) (pre post : List (List α)) (u v pool : List α
        fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_swap a u v post pre))
           (s a), Nat.le_trans (Nat.le_of_eq (totalOf_swap _ u v post pre)) t⟩⟩
       (batch_all_iff draw r _ pool free used).symm)
+
+/-! ## A lineage: one word copied again and again -/
+
+/-- `n` copies of a word joined hold each token `n` times as often as the word. -/
+theorem countOf_joinAll_replicate (a : α) (w : List α) :
+    ∀ n : Nat, countOf a (joinAll (List.replicate n w)) = n * countOf a w
+  | 0 => (Nat.zero_mul _).symm
+  | n + 1 => (countOf_append a w (joinAll (List.replicate n w))).trans
+      ((congrArg (countOf a w + ·) (countOf_joinAll_replicate a w n)).trans
+        ((Nat.add_comm _ _).trans (Nat.succ_mul n (countOf a w)).symm))
+
+omit [DecidableEq α] in
+/-- `n` copies of a word need `n` times what one needs. -/
+theorem totalOf_replicate (f : List α → Nat) (w : List α) :
+    ∀ n : Nat, totalOf f (List.replicate n w) = n * f w
+  | 0 => (Nat.zero_mul _).symm
+  | n + 1 => (congrArg (f w + ·) (totalOf_replicate f w n)).trans
+      ((Nat.add_comm _ _).trans (Nat.succ_mul n (f w)).symm)
+
+/-- **A lineage.** Copying one word `n` times in turn from one shared pool and support, every
+copy is released exactly when the pool holds each token at least `n` times as often as the word
+uses it and the support covers `n` times the word's draws and release. -/
+theorem lineage_all_iff (r : Nat) (word pool : List α) (free used n : Nat) :
+    Every (batch draw r (List.replicate n word) pool free used).1 ↔
+      (∀ a, n * countOf a word ≤ countOf a pool) ∧ n * (use draw none word + r) ≤ free :=
+  (batch_all_iff draw r _ pool free used).trans
+    ⟨fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_replicate a word n).symm)
+        (s a), Nat.le_trans (Nat.le_of_eq (totalOf_replicate (fun w => use draw none w + r) word n).symm) t⟩,
+     fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_replicate a word n))
+        (s a), Nat.le_trans (Nat.le_of_eq (totalOf_replicate (fun w => use draw none w + r) word n)) t⟩⟩
 
 /-! ## Local draws -/
 

@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-14T04:00:00+00:00",
+  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "claim": {
-    "zh": "对每个可判等字母表与每个汲取律：一词的复制完成且产物即该词，当且仅当池中每个记号的数量不少于词中所用、且空闲支持覆盖各次接合的汲取；含释放时，当且仅当支持另覆盖释放；自同一共同池依次复制的各词全部释放，当且仅当池共同供给所有词且支持覆盖全部汲取与释放，与次序无关。局部汲取下，词的用量只经其相异邻对数依赖于汲取律：相异邻对较多的词汲取较少，当且仅当异类之后的接合汲取较少；相异邻对成等差时用量亦成等差。结构复制机是实例：模板链被复制并释放，当且仅当池供给其记号且支持覆盖其汲取加一，对每个池成立；旧的所需支持定理、交替／聚簇排序与第三排列约束都是实例，任意有限谱系的定理保持。实际交换改变保留次序，逐项材料复制传递该变化。",
-    "en": "For every alphabet with decidable equality and every law of draws: a copy of a word completes, its product being the word, exactly when the pool holds each token at least as often as the word uses it and the free support covers what its attachments draw; with a release, exactly when the support also covers the release; copies drawn in turn from one shared pool are all released exactly when the pool supplies all the words together and the support covers all their draws and releases, whatever their order. Under local draws a word's use of support depends on the law only through its number of unlike adjacent pairs: the word with more unlike pairs draws less exactly when an attachment after an unlike token draws less, and uses are in arithmetic progression where unlike pairs are. The structural copy machine is an instance: a template strand is copied and released exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool; the old theorem of the support needed, the alternating/clustered ranking and the third-arrangement constraint are instances, and the every-finite-lineage theorem stands. An actual exchange changes retained order and tokenwise material copying transmits it."
+    "zh": "对每个可判等字母表与每个汲取律：一词的复制完成且产物即该词，当且仅当池中每个记号的数量不少于词中所用、且空闲支持覆盖各次接合的汲取；含释放时，当且仅当支持另覆盖释放；自同一共同池依次复制的各词全部释放，当且仅当池共同供给所有词且支持覆盖全部汲取与释放，与次序无关；一词复制n次时，当且仅当池与支持各有一次释放复制所需的n倍。局部汲取下，词的用量只经其相异邻对数依赖于汲取律：相异邻对较多的词汲取较少，当且仅当异类之后的接合汲取较少；相异邻对成等差时用量亦成等差。结构复制机是实例：模板链被复制并释放，当且仅当池供给其记号且支持覆盖其汲取加一，对每个池成立；旧的所需支持定理、交替／聚簇排序与第三排列约束都是实例；路径链的n代谱系每次都释放，当且仅当所用支持增加n倍的汲取与释放，这即任意有限谱系定理的逆，只看链本身则不成立。实际交换改变保留次序，逐项材料复制传递该变化。",
+    "en": "For every alphabet with decidable equality and every law of draws: a copy of a word produces the word exactly when the pool holds each token at least as often as the word uses it and the free support covers what its attachments draw; with a release, exactly when the support also covers it; copies drawn in turn from one shared pool are all released exactly when the pool supplies all the words together and the support covers all their draws and releases, whatever their order, and for n copies of one word exactly when the pool and support hold n times what one released copy needs. Under local draws a word's use of support depends on the law only through its number of unlike adjacent pairs: the word with more unlike pairs draws less exactly when an attachment after an unlike token draws less, and uses are in arithmetic progression where unlike pairs are. The structural copy machine is an instance: a template strand is copied and released exactly when the pool supplies its tokens and the support covers its draws plus one, for every pool; the old theorem of the support needed, the alternating/clustered ranking and the third-arrangement constraint are instances; a lineage of n from a path strand is released at every reproduction exactly when the support used grows by n times the draws and release, the converse of the every-finite-lineage theorem, which fails on the strands alone. An actual exchange changes retained order and tokenwise material copying transmits it."
   },
   "hypotheses": [
     {
@@ -32,7 +32,10 @@
     "StructuralCopying.exact_reproduction_budget",
     "Becoming.Copying.built_iff",
     "Becoming.Copying.batch_all_iff",
-    "Becoming.CopyingInstances.reproduce_iff"
+    "Becoming.CopyingInstances.reproduce_iff",
+    "Becoming.Copying.lineage_all_iff",
+    "Becoming.CopyingInstances.lineage_released_iff",
+    "Becoming.CopyingInstances.lineage_used_iff"
   ],
   "dependencies": [
     {
@@ -67,6 +70,13 @@
         "zh": "共同库存中先后次序可使更昂贵排列先释放；完整复制未必释放，相容规律改变可反转排序。",
         "en": "Shared-stock order can release the more costly arrangement first; a complete copy need not be released, and changed local costs can reverse ranking."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
+      "detail": {
+        "zh": "strands_do_not_show_release：支持覆盖复制而不覆盖释放时，一代谱系含两个亲本副本，复制却未释放；所以只看链本身，有限谱系定理的逆不成立。",
+        "en": "strands_do_not_show_release: with support for the copy but not for its release, a lineage of one holds two copies of the parent while its reproduction is not released, so read on the strands alone the converse of the finite-lineage theorem fails."
+      }
     }
   ],
   "limitations": {
@@ -74,8 +84,8 @@
     "en": "Reading/fidelity capability, physicochemical costs, mutation occurrence, autonomous feed and population invasion are not derived. The third-cost constraint exceeds independently fitted coefficients but is also available to a strong conventional model with the same mechanism."
   },
   "validation_scope": {
-    "zh": "34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。一般律已由检查器回执绑定。",
-    "en": "34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis. General laws: checker receipts bound."
+    "zh": "34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。一般律仅经scratch实编。",
+    "en": "34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis. General laws: scratch builds only."
   },
   "references": [
     {
@@ -95,7 +105,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "f2f59a4a0660d856e97a7ad48d6e3f014771a0b1282b50deaebcf652155a27f4",
+      "sha256": "362e277a256000c731ad6c3bd98eceda80ca9ff7ce8f67b97abc378ee151d479",
       "declarations": [
         "Becoming.Copying.Supplies",
         "Becoming.Copying.built_iff",
@@ -108,13 +118,14 @@
         "Becoming.Copying.pairDraw",
         "Becoming.Copying.use_word",
         "Becoming.Copying.use_midpoint",
-        "Becoming.Copying.use_lt_iff"
+        "Becoming.Copying.use_lt_iff",
+        "Becoming.Copying.lineage_all_iff"
       ]
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
       "role": "proof",
-      "sha256": "96ddf1d7b2de4989257cf45aa1dd10a75b20290240ead1b8e58b89979e2b144a",
+      "sha256": "b7b46b5c6a9504360cfbaee177cb7da363160b07119c794a874c097f9091eeee",
       "declarations": [
         "Becoming.CopyingInstances.draw_eq",
         "Becoming.CopyingInstances.view_tick",
@@ -125,7 +136,13 @@
         "Becoming.CopyingInstances.batch_all_released_iff",
         "Becoming.CopyingInstances.batch_all_released_swap",
         "Becoming.CopyingInstances.local_ranking_from_law",
-        "Becoming.CopyingInstances.third_structure_from_law"
+        "Becoming.CopyingInstances.third_structure_from_law",
+        "Becoming.CopyingInstances.AllReleased",
+        "Becoming.CopyingInstances.lineage_released_iff",
+        "Becoming.CopyingInstances.lineage_of_released",
+        "Becoming.CopyingInstances.lineage_used_iff",
+        "Becoming.CopyingInstances.finite_lineage_instance",
+        "Becoming.CopyingInstances.strands_do_not_show_release"
       ]
     },
     {
@@ -143,7 +160,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
       "declarations": []
     },
     {
@@ -164,20 +181,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/verification.json",
       "sha256_pointer": "/source_sha256/StructuralCopying.lean",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Copying",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
-      "sha256_pointer": "/source_sha256/CopyingInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -206,6 +209,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第116节）：有限谱系定理的逆已证明：Becoming.Copying 新增谱系律 lineage_all_iff；CopyingInstances 中谱系每次都释放恰当谱系条件成立（lineage_released_iff），也恰当所用支持增加 n 倍的汲取与释放（lineage_used_iff），旧定理是充分一侧（finite_lineage_instance）；只看链本身的逆有反例定理（strands_do_not_show_release）。Copying.lean 与 CopyingInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
+      "en": "14 October 2026, open-issues plan (study section 116): the converse of the finite-lineage theorem is proved: Becoming.Copying adds the lineage law lineage_all_iff; in CopyingInstances every reproduction of a lineage is released exactly when the lineage condition holds (lineage_released_iff), and exactly when the support used grows by n times the draws and release (lineage_used_iff), with the old theorem as the sufficient side (finite_lineage_instance); the converse read on the strands alone has a counterexample theorem (strands_do_not_show_release). With Copying.lean and CopyingInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
     }
   ]
 }

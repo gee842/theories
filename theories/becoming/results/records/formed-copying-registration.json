@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-14T04:00:00+00:00",
+  "reviewed_at_utc": "2026-10-14T08:40:00+00:00",
   "claim": {
-    "zh": "对每个字母表与汲取律：在每一位接合配准所读之物的复制产生某词，当且仅当每一位读出该词的记号、池供给该词且支持覆盖其汲取，其产物只增长；对每个过程，每步延长输出当且仅当每段进程延长输出，每个非门控步保持的量沿每段非门控进程保持。配准机中，对每个状态，与词长相同数目的复制步把产物延长为该词，当且仅当每一位经实际连接读出其记号、池供给该词且支持覆盖其汲取；完整稳定配准恢复既有复制是其实例。缺接、错位与重接通过改变各位所读而改变后继；只有复制步改变产物，故连接变化不改写产物，每个允许的有限历史保留已成前缀及连接件、材料与支持的总量。消耗连接件和支持形成的配准接入材料复制。",
-    "en": "For every alphabet and law of draws: a copy attaching at each site what a registration reads there produces a word exactly when every site reads the word's token, the pool supplies the word and the support covers what it draws, and its product only grows; for every process an output is extended along every course exactly when every step extends it, and a quantity kept by every ungated step is kept along every ungated course. In the registration machine, for every state, as many copy moves as a word has tokens extend the product by that word exactly when each site reads its token through the actual contacts, the pool supplies it and the support covers what it draws; complete stable registration recovering prior copying is the instance. Loss, displacement and rebinding change the successor by changing what sites read; only copy moves change the product, so contact changes never rewrite it, and every admitted finite history keeps its built prefix and its totals of connectors, material and support. Connector- and support-consuming registration enters material copying."
+    "zh": "对每个字母表与汲取律：在每一位接合配准所读之物的复制产生某词，当且仅当每一位读出该词的记号、池供给该词且支持覆盖其汲取，其产物只增长；对每个过程，每步延长输出当且仅当每段进程延长输出，每个非门控步保持的量沿每段非门控进程保持。配准机中，对每个状态，与词长相同数目的复制步把产物延长为该词，当且仅当每一位经实际连接读出其记号、池供给该词且支持覆盖其汲取；完整稳定配准恢复既有复制是其实例；每段进程使产物的边为其记号上的路径，所以完整配准复制模板（含边）当且仅当模板的边是该路径。缺接、错位与重接通过改变各位所读而改变后继；只有复制步改变产物，故连接变化不改写产物，每个允许的有限历史保留已成前缀及连接件、材料与支持的总量。消耗连接件和支持形成的配准接入材料复制。",
+    "en": "For every alphabet and law of draws: a copy attaching at each site what a registration reads there produces a word exactly when every site reads the word's token, the pool supplies the word and the support covers what it draws, and its product only grows; for every process an output is extended along every course exactly when every step extends it, and a quantity kept by every ungated step is kept along every ungated course. In the registration machine, for every state, as many copy moves as a word has tokens extend the product by that word exactly when each site reads its token through the actual contacts, the pool supplies it and the support covers what it draws; complete stable registration recovering prior copying is the instance; every course keeps the product's bonds the path on its tokens, so complete registration copies the template, bonds included, exactly when its bonds are that path. Loss, displacement and rebinding change the successor by changing what sites read; only copy moves change the product, so contact changes never rewrite it, and every admitted finite history keeps its built prefix and its totals of connectors, material and support. Connector- and support-consuming registration enters material copying."
   },
   "hypotheses": [
     {
@@ -19,8 +19,8 @@
       "en": "Indexed sites, selective docking, reliable transduction, local attachment costs and event occurrence are supplied; there is no excision or replacement of built material."
     },
     {
-      "zh": "一般继承组合要求完整值配准、模板与前缀／剩余序列一致，且保留原定理的非空路径及材料／支持前提。",
-      "en": "The general inheritance composition requires complete value registration and template/prefix/suffix consistency, retaining the prior nonempty-path and material/support premises."
+      "zh": "一般继承组合要求完整值配准、模板与前缀／剩余序列一致，且保留原定理的路径及材料／支持前提（非空前提不需要）。",
+      "en": "The general inheritance composition requires complete value registration and template/prefix/suffix consistency, retaining the prior path and material/support premises (the nonempty premise is not needed)."
     }
   ],
   "correspondence": {
@@ -31,7 +31,9 @@
   "aliases": [
     "CopyingRegistration.registered_inheritance",
     "Becoming.Copying.reading_iff",
-    "Becoming.CopyingInstances.operate_copies_iff"
+    "Becoming.CopyingInstances.operate_copies_iff",
+    "Becoming.CopyingInstances.path_shaped_along",
+    "Becoming.CopyingInstances.registered_copy_iff"
   ],
   "dependencies": [
     {
@@ -73,8 +75,8 @@
     "en": "Indexed recognition/transduction, damage rates, repair initiation, excision, autonomous provision and population selection are not derived; a strong rival retaining the same contact mechanism has the same explanatory capacity."
   },
   "validation_scope": {
-    "zh": "33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。一般律已由检查器回执绑定。",
-    "en": "33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis. General laws: checker receipts bound."
+    "zh": "33项新定理声明／54项新审计，484项实际闭包审计中430项继承分列；原始论文作为既有比较重读，无新经验复算。一般律仅经scratch实编。",
+    "en": "33 new theorem declarations / 54 new audits, with 430 inherited declarations separate in 484 actual-closure audits. The original paper is reread as the existing comparator, without new empirical reanalysis. General laws: scratch builds only."
   },
   "references": [
     {
@@ -94,7 +96,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
       "role": "proof",
-      "sha256": "f2f59a4a0660d856e97a7ad48d6e3f014771a0b1282b50deaebcf652155a27f4",
+      "sha256": "362e277a256000c731ad6c3bd98eceda80ca9ff7ce8f67b97abc378ee151d479",
       "declarations": [
         "Becoming.Copying.Reads",
         "Becoming.Copying.readSteps",
@@ -107,7 +109,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
       "role": "proof",
-      "sha256": "96ddf1d7b2de4989257cf45aa1dd10a75b20290240ead1b8e58b89979e2b144a",
+      "sha256": "b7b46b5c6a9504360cfbaee177cb7da363160b07119c794a874c097f9091eeee",
       "declarations": [
         "Becoming.CopyingInstances.tick_work_view",
         "Becoming.CopyingInstances.operate_view",
@@ -117,7 +119,12 @@
         "Becoming.CopyingInstances.product_gated",
         "Becoming.CopyingInstances.contact_course_keeps_product",
         "Becoming.CopyingInstances.product_change_passes_copy",
-        "Becoming.CopyingInstances.totals_along"
+        "Becoming.CopyingInstances.totals_along",
+        "Becoming.CopyingInstances.PathShaped",
+        "Becoming.CopyingInstances.path_shaped_along",
+        "Becoming.CopyingInstances.operate_strand_iff",
+        "Becoming.CopyingInstances.registered_copy_iff",
+        "Becoming.CopyingInstances.registered_inheritance_instance"
       ]
     },
     {
@@ -135,7 +142,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "c25bf4b0b8574af6d2fa76b9bd9af7bce5de2cc545e9cee3d16e274b3672f598",
       "declarations": []
     },
     {
@@ -156,20 +163,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-registration-verification/verification.json",
       "sha256_pointer": "/source_sha256/CopyingRegistration.lean",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Copying.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T044840.291323Z/verification.json",
-      "sha256_pointer": "/source_sha256/Becoming.Copying",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CopyingInstances.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/copying-instances-checks/20261014T045347.438672Z/verification.json",
-      "sha256_pointer": "/source_sha256/CopyingInstances",
       "success_pointer": "/status",
       "success_value": "passed"
     }
@@ -194,6 +187,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：Becoming.Copying 由核心回执 20261014T044840.291323Z；CopyingInstances 由外围回执 20261014T045347.438672Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: Becoming.Copying by core receipt 20261014T044840.291323Z; CopyingInstances by peripheral receipt 20261014T045347.438672Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第116节）：registered_copy_cells 扩展到链的边：每段进程使产物的边为其记号上的路径（path_shaped_along，Countdown.invariant_iff_reach 的实例），所以完整配准复制模板（含边）恰当模板的边是该路径（registered_copy_iff）；边无需记号以外的条件，旧 registered_inheritance 是实例，不需其非空前提（registered_inheritance_instance）。Copying.lean 与 CopyingInstances.lean 改动后，第三批核验文件对它们的绑定已移去（核验文件的引用保留），有效范围中一般律的说明改为仅经scratch实编；落地时绑定新的核验文件。另审读改动后对齐研究的哈希（末尾新增第116节及其英文段；其余不变）。",
+      "en": "14 October 2026, open-issues plan (study section 116): registered_copy_cells is extended to the chain's bonds: every course keeps the product's bonds the path on its tokens (path_shaped_along, an instance of Countdown.invariant_iff_reach), so complete registration copies the template, bonds included, exactly when its bonds are that path (registered_copy_iff); the bonds need nothing beyond the tokens, and the old registered_inheritance is the instance without its nonempty premise (registered_inheritance_instance). With Copying.lean and CopyingInstances.lean changed, their batch-3 bindings were removed (the referenced verification files stay) and the validation scope's note on the general laws now says scratch builds only; the landing run binds the new verification files. The hash of the study was reconciled after reading its change (section 116 and its English paragraph appended; the rest unchanged)."
     }
   ]
 }

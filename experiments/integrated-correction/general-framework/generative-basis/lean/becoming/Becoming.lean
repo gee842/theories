@@ -821,12 +821,19 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   `n` of a drained family leaves the guard within `n` steps on every admissible history, and a
   quantity whose growth a monotone map bounds stays below the map's orbit. A determined law never
   reaches a target exactly when some set containing the start avoids the target and is closed
-  under the law.
+  under the law. Dually, a start reaches a target within `n` steps on every admissible
+  disturbance exactly when some funnel (level `0` in the target, each admissible step from
+  level `k + 1` outside the target going to level `k`) holds it at level `n`, and exactly when
+  every basin does; for a determined law and a decided target, exactly when a numeric variant
+  is at most `n` at the start. Where the histories form, the numeric form and the duality with
+  lasting need a decision, a theorem shows it.
 * `Becoming.Copying` (L2): reproducing a sequence token by token from a shared pool, for every
   alphabet and law of draws, with no premise. A copy completes exactly when the pool holds
   every token as often as the word uses it and the support covers what it draws; copies from
   one pool are all released exactly when the pool supplies the words together and the support
-  covers all their draws, in any order; under local draws, a word's use of support depends only
+  covers all their draws, in any order, and a lineage of `n` copies of one word exactly when
+  the pool holds each token `n` times as often and the support covers `n` times the draws and
+  releases; under local draws, a word's use of support depends only
   on the number of unlike adjacent pairs. A copy reading through contacts reproduces a word exactly when every
   site reads its token and the copy is supplied and covered. Inspection never increases the
   defects exactly where the reference is faithful; doubling for `n` rounds from `k` units runs
