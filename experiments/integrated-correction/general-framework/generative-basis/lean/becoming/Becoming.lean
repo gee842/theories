@@ -89,6 +89,7 @@ import Becoming.Countdown
 import Becoming.Lasting
 import Becoming.Copying
 import Becoming.Retrodiction
+import Becoming.CrossSituational
 
 /-!
 # The Theory of Becoming: the formal core
@@ -839,6 +840,15 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   with another content is told apart by some dated control. Controls at both ends of a span
   settle every date between exactly when at most one change is admitted or no date lies
   strictly between; a change seen at both ends is not located.
+* `Becoming.CrossSituational` (L4): what a form names, read across the occasions it was met, for
+  every type of records and meanings and every reading of bearing and offering, with no premise.
+  For a repertoire without repeats a form resolves to a meaning exactly when every bearing record
+  offers it and every other meaning is missing from some bearing record; later records only
+  narrow the candidates; where every bearing record offers the target, any unique candidate is
+  the target. Records read through a family of explanations resolve to the target exactly when
+  every rival is ruled out by a bearing record no family world with the rival explains; where
+  words are recovered, every sequence is read exactly when each word's records separate its
+  meaning.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
