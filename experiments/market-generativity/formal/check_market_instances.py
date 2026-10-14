@@ -47,8 +47,19 @@ SCOPE = (
     "parameter set, bound set and start, no admissible history ever fails the essential guard "
     "exactly when some set of states containing the start lies within the essential floors and is "
     "closed under every admissible disturbance; under Certificate p b the safe rectangle is one, so "
-    "safe_history_never_fails is an instance. Correspondence of the market law to actual markets, "
-    "its parameters and its protected floors is not checked."
+    "safe_history_never_fails is an instance. Finite support obstruction (Becoming.Lasting, "
+    "exhaustion): with a correction strength chosen at each step, the share's orbit under growth "
+    "3/2 bounds it, and while that orbit stays at or below 1/6 a step with a nonnegative shock costs "
+    "the stock one unit above the floor 5, so finite_support_forces_failure is an instance. "
+    "Supported finite transition (Becoming.Lasting, ladders): the cover recurrence is a ladder for "
+    "every correction schedule and every shock at most the cost, so the prefixes of the supported "
+    "transitions are instances, and at the worst share the cover is exact. Partial correction "
+    "boundary (Becoming.Lasting, never reaching): some positive seed never lands exactly when a set "
+    "closed under the regime law and avoiding landing contains one; for 0 <= b <= 3/4 every positive "
+    "seed lands exactly when the quality margin at 3/8 under influence 1 is nonnegative, and exactly "
+    "when no such set contains a positive seed; above 5/12 the fixed configuration is one. "
+    "Correspondence of the market law to actual markets, its parameters and its protected floors is "
+    "not checked."
 )
 
 
