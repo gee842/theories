@@ -28,10 +28,10 @@ In the family that witness is the sustaining formation's dependence
 substitution; where only the consumer's own dependence witnesses the loss, dissolving it
 removes the consumption (`Lone.own_witness_lost`). Its own continuation does not certify
 renewal. On the
-stepwise reading the substituting consumer is credited before the step at which the
+stepwise reading the substituting consumer is included before the step at which the
 shared condition falls below the sustaining formation's support, and withheld from that
 step until it switches to the alternative: one step in `extracting`
-(`stepwise_credits_substitution`), two in `slow`, where the shared condition still
+(`stepwise_includes_substitution`), two in `slow`, where the shared condition still
 supports the consumer for a step after it fails the sustaining formation
 (`slow_withheld_two_steps`). With the existing results the law family now realizes
 ending and transformation after a loss without return.
@@ -216,10 +216,10 @@ theorem extracting_low : ∀ n, Law.level extracting (n + 3) = 0
     rw [Law.level_succ, extracting_low n]
     rfl
 
-/-- The stepwise reading credits the consumer that substitutes: its event undermines only
+/-- The stepwise reading includes the consumer that substitutes: its event undermines only
 at step 2, after which the shared condition falls below the sustaining formation's
 support. -/
-theorem stepwise_credits_substitution :
+theorem stepwise_includes_substitution :
     (web extracting).ConsumingIn .focal ∧
     (∀ t, t ≠ 2 → (web extracting).active t .focal ∧
       ¬ (web extracting).UnderminingAt t .focal) ∧

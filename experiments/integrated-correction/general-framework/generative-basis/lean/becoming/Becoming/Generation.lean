@@ -65,7 +65,7 @@ Results:
   family only vacuously (`Oscillation.arises_on_rise`). The working stepwise reading withholds
   every arising of the oscillator, which draws its condition below its own need until the
   next renewal,
-  while the reading over cycles of two credits it (`Oscillation.readings`).
+  while the reading over cycles of two includes it (`Oscillation.readings`).
 
 So, where arising depletes the family, unceasing generation is strictly stronger than
 recurring renewal: it needs renewal to recur, and renewal can recur with nothing
@@ -598,7 +598,7 @@ theorem unceasing :
 
 /-- The working stepwise reading withholds every arising of the oscillator: each draws its
 condition below its own need, which the source restores by the next. The reading over cycles of two
-credits the oscillator. -/
+includes the oscillator. -/
 theorem readings :
     (∀ n, web.UnderminingAt (2 * n) .oscillator) ∧ web.RenewingInWithin 2 .oscillator :=
   ⟨fun n => have two : 2 ≤ charge (2 * n) := (charge_even n).symm ▸ Nat.le_refl 2

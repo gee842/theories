@@ -33,9 +33,9 @@ Results:
   gaps always returns and is never consumed, yet no cycle length bounds its return.
 * The readings over cycles extend the readings over steps: renewal implies renewal
   over cycles of one, and undermining at a step is undermining for one step. A longer cycle
-  credits more, a formation renewing over any cycle is not consuming, and none of its
+  includes more, a formation renewing over any cycle is not consuming, and none of its
   events undermines for that cycle. Over cycles of two, a dip that breaks a dependence
-  for one step is credited, and a dependent whose condition a drawer broke while it was
+  for one step is included, and a dependent whose condition a drawer broke while it was
   inactive renews. An escalation after which the condition never returns undermines for
   every cycle.
 
@@ -308,11 +308,11 @@ theorem slowing_recovery :
 
 end Slowing
 
-/-! ## Readings over cycles credit a dip and withhold an escalation -/
+/-! ## Readings over cycles include a dip and withhold an escalation -/
 
 namespace Renewable
 
-/-- Over cycles of two the dip is credited, by the run and by the event: the condition
+/-- Over cycles of two the dip is included, by the run and by the event: the condition
 returns within two steps, though the first step breaks the sustaining formation's
 dependence. -/
 theorem dip_within_two :
@@ -334,7 +334,7 @@ The event before it does not undermine. -/
 theorem escalation_undermines_for_every_cycle :
     ¬ (conditions.dependence.along escalating).UnderminingFor 1 0 .focal ∧
     ∀ p, (conditions.dependence.along escalating).UnderminingFor p 1 .focal :=
-  ⟨fun undermining => stepwise_credits_before_escalation.2.1.not_undermining
+  ⟨fun undermining => stepwise_includes_before_escalation.2.1.not_undermining
     (Web.undermining_for_one.mp undermining),
    fun _ => ⟨(), trivial, .sustaining, trivial, fun
      | 0, positive, _ => absurd positive (Nat.lt_irrefl 0)

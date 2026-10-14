@@ -74,12 +74,12 @@ Results:
   stepwise candidate, pending Ren's choice of the reading. Being within renewal at the
   step is not used as `living`, since it withholds the event of a formation whose own
   dependence breaks (`Renewable.broken_formation`); not breaking is not used either, since
-  it credits drawing after a loss, which in `Renewable` keeps the condition from
+  it includes drawing after a loss, which in `Renewable` keeps the condition from
   returning (`Renewable.drawing_after_loss`). The same results hold: a common condition
   discharges connection, and an event drawing at a step that breaks a dependence is
   related to the broken formation, so under N_rel valuing it reaches that formation's
   living events (`Web.valuing_breaking_reaches`). On fixed dependences the two readings share
-  `related`, both credit the broken formation's own event, and they credit different
+  `related`, both include the broken formation's own event, and they include different
   events in both directions (`Renewable.readings_differ`).
 * Read through relations (`Web.relations`), a claim is a formation's relation to a
   condition at a step, living when the formation is active, participates in the
@@ -539,12 +539,12 @@ theorem Conditions.stepwise_related {F Cond : Type} {P : Process S A} (K : Condi
     ((K.dependence.along r).valuation own sig).related = (K.valuation r own sig).related :=
   rfl
 
-/-- In one process the two readings credit different events, in both directions. In
+/-- In one process the two readings include different events, in both directions. In
 the escalating run the focal formation consumes, so the whole-run reading counts none
-of its events as living, while the stepwise reading credits its first. In the dipping
+of its events as living, while the stepwise reading includes its first. In the dipping
 run it does not consume, since the condition returns, so the whole-run reading counts
 its first event as living, while the stepwise reading does not: it draws at a step
-that breaks the sustaining formation's dependence. Both readings credit the sustaining
+that breaks the sustaining formation's dependence. Both readings include the sustaining
 formation's event at the step that breaks its dependence. -/
 theorem Renewable.readings_differ (own sig : Pos → Renewable.Formation × Nat → Prop) :
     ((Renewable.conditions.dependence.along Renewable.escalating).valuation own sig).living
@@ -558,9 +558,9 @@ theorem Renewable.readings_differ (own sig : Pos → Renewable.Formation × Nat 
       (.sustaining, 1) :=
   match Renewable.broken_formation with
   | ⟨active, _, _, victim⟩ =>
-    ⟨⟨trivial, Renewable.stepwise_credits_before_escalation.2.1.not_undermining⟩,
+    ⟨⟨trivial, Renewable.stepwise_includes_before_escalation.2.1.not_undermining⟩,
      fun ⟨_, notConsuming⟩ => notConsuming
-       ((Web.static_consumingIn _ _).mp Renewable.stepwise_credits_before_escalation.1),
+       ((Web.static_consumingIn _ _).mp Renewable.stepwise_includes_before_escalation.1),
      ⟨trivial, fun consuming => Renewable.dip_breaks_without_consuming.1
        ((Web.static_consumingIn _ _).mpr consuming)⟩,
      fun ⟨_, notUndermining⟩ => notUndermining

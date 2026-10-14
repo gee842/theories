@@ -12,42 +12,42 @@ the working candidate after review pending Ren's choice: an event is living when
 active and not undermining.
 
 A reading is compared through a frame whose configurations are the courses and whose
-realized claims are the events the reading credits; C is `Comparison` on that frame.
+realized claims are the events the reading includes; C is `Comparison` on that frame.
 
 Results:
 * The law of comparison with a renewing course, for every family of courses
   (`renewed_extends_iff`): under either reading, a course that renews every condition
-  extends another exactly when it is active at every event the other credits and at some
+  extends another exactly when it is active at every event the other includes and at some
   event the other withholds; where every formation is active at every step of it, exactly
   when the other withholds some event (`renewed_active_extends_iff`). The family results
   below on absence (whole-run), restraint and sharing are instances. The renewal cannot be
   dropped under the stepwise reading (`ThirdParty.renewal_needed`).
 * The whole-run law of easing (`wholeRun_extends_iff_of_eases`): from a course where
   activity needs support to one that asks no more, holds every condition at least as high
-  and draws on nothing more, and where activity follows support, no whole-run credit is
-  withdrawn, so the second extends the first exactly when it credits an event the first
-  withholds. The stepwise reading has no such law (`ThirdParty.stepwise_not_monotone`).
+  and draws on nothing more, and where activity follows support, no event the whole-run
+  reading includes is withdrawn, so the second extends the first exactly when it includes
+  an event the first withholds. The stepwise reading has no such law (`ThirdParty.stepwise_not_monotone`).
 * The course without a formation extends the course with it only if the reading
-  withholds every event of that formation. This holds for every reading that credits
+  withholds every event of that formation. This holds for every reading that includes
   only active events.
 * Whole-run reading: for every law of the family in which the focal formation draws
   beyond renewal, the course without it extends the course with it, so every comparison
   satisfying C ranks it higher.
 * Stepwise reading: an event of the focal formation whose step leaves every need met is
-  credited, and the course without the formation lacks it. Each course then has
-  credited events the other lacks, and an irreflexive, transitive comparison satisfying
+  included, and the course without the formation lacks it. Each course then has
+  included events the other lacks, and an irreflexive, transitive comparison satisfying
   C prefers the course with the formation. Malignant growth and winning by consumption
-  are instances. When no event of the formation is credited, as when its first step
+  are instances. When no event of the formation is included, as when its first step
   already crosses support, the stepwise reading too ranks the absence higher
   (`Immediate`).
 * Stepwise reading, contest: sharing still extends winning by consumption, because
-  sharing credits every event, the winner's included.
+  sharing includes every event, the winner's among them.
 * Either reading, restraint: a course in which every need stays met and every formation is
   active extends any course in which some event is withheld, an instance of the law of
   comparison; in the two-part family, meeting every need makes every formation active, and
   overdraw that ends the sustaining formation's support withholds its later events. Malignant
   growth is ranked below the same formation stopping after its first step, before the
-  threshold, though under the stepwise reading that first step is credited in both.
+  threshold, though under the stepwise reading that first step is included in both.
 * When the restrained course does not meet every need, the restraint comparison can be
   lost under the stepwise reading: when a third formation shares the condition, a
   restrained formation's later draw can undermine the third formation's once-met
@@ -73,11 +73,11 @@ namespace Ranking
 
 /-! ## Courses and readings -/
 
-/-- Courses as a frame whose realized claims are the events a reading credits. -/
+/-- Courses as a frame whose realized claims are the events a reading includes. -/
 def frame {W E : Type} (reading : W → E → Prop) : Frame W Unit E :=
   ⟨⟨fun _ _ _ => False⟩, reading⟩
 
-/-- One course extends another under a reading: it credits every event the other does,
+/-- One course extends another under a reading: it includes every event the other does,
 and one more. -/
 def ExtendsUnder {W E : Type} (reading : W → E → Prop) (w w' : W) : Prop :=
   Extension (frame reading) (fun _ => True) w w'
@@ -103,35 +103,35 @@ theorem stepwise_iff {Pos : Type} (U : W → Unfolding F C) (w : W) (own sig : P
 
 /-! ## Laws over every family of courses -/
 
-/-- Where a reading credits exactly the events of `w'` that satisfy `A`, `w'` extends another
-course exactly when every event the other credits satisfies `A` and some event satisfying
+/-- Where a reading includes exactly the events of `w'` that satisfy `A`, `w'` extends another
+course exactly when every event the other includes satisfies `A` and some event satisfying
 `A` is withheld by the other. -/
 theorem extendsUnder_iff_of_exact {E : Type} {reading : W → E → Prop} {w w' : W}
     {A : E → Prop} (exact : ∀ e, reading w' e ↔ A e) :
     ExtendsUnder reading w w' ↔ (∀ e, reading w e → A e) ∧ ∃ e, A e ∧ ¬ reading w e :=
-  ⟨fun ⟨covers, e, _, credited, withheld⟩ =>
-    ⟨fun e c => (exact e).mp (covers e c), e, (exact e).mp credited, withheld⟩,
+  ⟨fun ⟨covers, e, _, included, withheld⟩ =>
+    ⟨fun e c => (exact e).mp (covers e c), e, (exact e).mp included, withheld⟩,
    fun ⟨covers, e, holds, withheld⟩ =>
     ⟨fun e c => (exact e).mpr (covers e c), e, trivial, (exact e).mpr holds, withheld⟩⟩
 
-/-- In a course that renews every condition the whole-run reading credits exactly the
+/-- In a course that renews every condition the whole-run reading includes exactly the
 active events: nothing there consumes. -/
 theorem wholeRun_of_renewed {U : W → Unfolding F C} {w : W} (renewed : ∀ c, Renewed (U w) c)
     (e : F × Nat) : wholeRun U w e ↔ (U w).active e.2 e.1 :=
-  ⟨fun credited => credited.1,
+  ⟨fun included => included.1,
    fun active => ⟨active, fun ⟨c, _, consumed⟩ => renewed_not_consumed (renewed c) consumed⟩⟩
 
-/-- In a course that renews every condition the stepwise reading credits exactly the active
+/-- In a course that renews every condition the stepwise reading includes exactly the active
 events: nothing there undermines. -/
 theorem stepwise_of_renewed {U : W → Unfolding F C} {w : W} (renewed : ∀ c, Renewed (U w) c)
     (e : F × Nat) : stepwise U w e ↔ (U w).active e.2 e.1 :=
-  ⟨fun credited => credited.1,
+  ⟨fun included => included.1,
    fun active => ⟨active, fun ⟨c, _, g, depends, _, fell⟩ =>
      Nat.not_le_of_gt fell (renewed c (e.2 + 1) g depends)⟩⟩
 
 /-- The law of comparison with a renewing course, for every family of courses: under either
 reading, a course that renews every condition extends another exactly when it is active at
-every event the other credits and at some event the other withholds. -/
+every event the other includes and at some event the other withholds. -/
 theorem renewed_extends_iff {U : W → Unfolding F C} {w w' : W}
     (renewed : ∀ c, Renewed (U w') c) :
     (ExtendsUnder (wholeRun U) w w' ↔ (∀ e, wholeRun U w e → (U w').active e.2 e.1) ∧
@@ -172,9 +172,9 @@ def Eases (U V : Unfolding F C) : Prop :=
   (∀ f c, V.requires f c → U.requires f c) ∧ (∀ f c, V.need f c ≤ U.need f c) ∧
     (∀ t c, U.level t c ≤ V.level t c) ∧ ∀ f c, V.draws f c → U.draws f c
 
-/-- Easing never withdraws a whole-run credit: from a course where activity needs support to
-one where activity follows support and that eases it, every event the whole-run reading
-credits stays credited. -/
+/-- Easing never withdraws an event the whole-run reading includes: from a course where
+activity needs support to one where activity follows support and that eases it, every event
+the whole-run reading includes stays included. -/
 theorem wholeRun_mono {U : W → Unfolding F C} {w w' : W} (dependent : Dependent (U w))
     (gated : ActiveWhereSupported (U w')) (eases : Eases (U w) (U w')) {e : F × Nat} :
     wholeRun U w e → wholeRun U w' e
@@ -186,15 +186,15 @@ theorem wholeRun_mono {U : W → Unfolding F C} {w w' : W} (dependent : Dependen
          (Nat.lt_of_lt_of_le (lost t later) (eases.2.1 g c))⟩⟩
 
 /-- The whole-run law of easing: under its conditions the easing course extends the other
-exactly when it credits some event the other withholds. The stepwise reading has no such
+exactly when it includes some event the other withholds. The stepwise reading has no such
 law (`ThirdParty.stepwise_not_monotone`). -/
 theorem wholeRun_extends_iff_of_eases {U : W → Unfolding F C} {w w' : W}
     (dependent : Dependent (U w)) (gated : ActiveWhereSupported (U w'))
     (eases : Eases (U w) (U w')) :
     ExtendsUnder (wholeRun U) w w' ↔ ∃ e, wholeRun U w' e ∧ ¬ wholeRun U w e :=
-  ⟨fun ⟨_, e, _, credited, withheld⟩ => ⟨e, credited, withheld⟩,
-   fun ⟨e, credited, withheld⟩ =>
-    ⟨fun _ c => wholeRun_mono dependent gated eases c, e, trivial, credited, withheld⟩⟩
+  ⟨fun ⟨_, e, _, included, withheld⟩ => ⟨e, included, withheld⟩,
+   fun ⟨e, included, withheld⟩ =>
+    ⟨fun _ c => wholeRun_mono dependent gated eases c, e, trivial, included, withheld⟩⟩
 
 /-! ## The course without the focal formation -/
 
@@ -246,7 +246,7 @@ withholds every event of that formation. -/
 theorem withheld_of_extends {L : Law} {reading : Course → Part × Nat → Prop}
     (active : ∀ w e, reading w e → (course L w).active e.2 e.1)
     (extends_ : ExtendsUnder reading .occurs .absent) (t : Nat) : ¬ reading .occurs (.focal, t) :=
-  fun credited => active .absent (.focal, t) (extends_.1 _ credited)
+  fun included => active .absent (.focal, t) (extends_.1 _ included)
 
 /-! ## The whole-run reading ranks the absence higher -/
 
@@ -277,9 +277,9 @@ theorem whole_run_ranks (L : Law) (positive : 0 < L.needG) (fWithin : L.needF �
 
 /-! ## The stepwise reading leaves the two courses unranked -/
 
-/-- An event of the focal formation whose step leaves every need met is credited by the
+/-- An event of the focal formation whose step leaves every need met is included by the
 stepwise reading. -/
-theorem credited_before_loss (L : Law) {t : Nat} (active : L.needF ≤ L.level t)
+theorem included_before_loss (L : Law) {t : Nat} (active : L.needF ≤ L.level t)
     (keepsG : L.needG ≤ L.level (t + 1)) (keepsF : L.needF ≤ L.level (t + 1)) :
     stepwise (course L) .occurs (.focal, t) :=
   ⟨active, fun ⟨_, _, g, _, _, fell⟩ =>
@@ -288,17 +288,17 @@ theorem credited_before_loss (L : Law) {t : Nat} (active : L.needF ≤ L.level t
     | .sustaining, fell => Nat.not_le_of_gt fell keepsG⟩
 
 /-- Under the stepwise reading neither course extends the other once the focal formation
-has a credited event: the course without it lacks that event, and the course with it
+has a included event: the course without it lacks that event, and the course with it
 lacks the sustaining formation's events after the loss. -/
 theorem stepwise_unranked (L : Law) (positive : 0 < L.needG) (fWithin : L.needF ≤ L.needG)
     (gStart : L.needG ≤ L.start) {T0 : Nat}
     (over : ∀ t, T0 ≤ t → L.renew + L.contrib t < L.draw t) {t : Nat}
-    (credited : stepwise (course L) .occurs (.focal, t)) :
+    (included : stepwise (course L) .occurs (.focal, t)) :
     ¬ ExtendsUnder (stepwise (course L)) .occurs .absent ∧
       ¬ ExtendsUnder (stepwise (course L)) .absent .occurs :=
   match overdraw_consuming L positive fWithin over with
   | ⟨_, T, lost⟩ =>
-    ⟨fun extends_ => withheld_of_extends (fun _ _ alive => alive.1) extends_ t credited,
+    ⟨fun extends_ => withheld_of_extends (fun _ _ alive => alive.1) extends_ t included,
      fun extends_ => lost T (Nat.le_refl T)
       (extends_.1 (.sustaining, T) ⟨absent_sustains L gStart T, fun ⟨_, drawn, _⟩ => drawn⟩).1⟩
 
@@ -313,10 +313,10 @@ theorem preferOccurs_only {reading : Course → Part × Nat → Prop}
   | .inr pair => pair
   | .inl ext =>
     match w, w', ext with
-    | .occurs, .occurs, ⟨_, _, _, credited, notCredited⟩ => absurd credited notCredited
+    | .occurs, .occurs, ⟨_, _, _, included, notIncluded⟩ => absurd included notIncluded
     | .occurs, .absent, ext => absurd ext unranked
     | .absent, .occurs, _ => ⟨rfl, rfl⟩
-    | .absent, .absent, ⟨_, _, _, credited, notCredited⟩ => absurd credited notCredited
+    | .absent, .absent, ⟨_, _, _, included, notIncluded⟩ => absurd included notIncluded
 
 /-- When the course without the formation does not extend the course with it, C does not
 decide between them: an irreflexive, transitive comparison satisfying C prefers the
@@ -351,7 +351,7 @@ theorem readings_rank_differently (L : Law) (positive : 0 < L.needG)
       ComparisonUnder (stepwise (course L)) (preferOccurs (stepwise (course L))) ∧
       preferOccurs (stepwise (course L)) .absent .occurs :=
   have unranked := stepwise_unranked L positive fWithin gStart over
-    (credited_before_loss L active keepsG keepsF)
+    (included_before_loss L active keepsG keepsF)
   have admits := admits_occurrence unranked.1
   ⟨fun _ ranks => whole_run_ranks L positive fWithin gStart over ranks,
    unranked.1, unranked.2, admits.1, admits.2.1⟩
@@ -381,7 +381,7 @@ theorem winning_ranking :
     (Nat.le_succ_of_le (Nat.le_succ 1)) (T0 := 0) (fun _ _ => Nat.lt_succ_self 1)
     (t := 0) (Nat.zero_le 3) (Nat.le_succ 1) (Nat.zero_le 2)
 
-/-! ## With no credited event, the stepwise reading ranks the absence higher too -/
+/-! ## With no included event, the stepwise reading ranks the absence higher too -/
 
 namespace Immediate
 
@@ -402,7 +402,7 @@ theorem focal_withheld (t : Nat) : ¬ stepwise (course law) .occurs (.focal, t) 
       ⟨0, Nat.zero_le t, fun _ _ _ => trivial, Nat.le_refl 1, fell⟩, fell⟩
 
 /-- The law meets every premise of `whole_run_extends` and `stepwise_unranked` except an
-event of the focal formation leaving every need met. No focal event is credited, the
+event of the focal formation leaving every need met. No focal event is included, the
 course without the formation extends the course with it under the stepwise reading, and
 every comparison satisfying C ranks the absence higher. -/
 theorem stepwise_ranks_absence :
@@ -414,8 +414,8 @@ theorem stepwise_ranks_absence :
   have sustains : ∀ t, stepwise (course law) .absent (.sustaining, t) :=
     fun t => ⟨absent_sustains law (Nat.le_refl 1) t, fun ⟨_, drawn, _⟩ => drawn⟩
   have ext : ExtendsUnder (stepwise (course law)) .occurs .absent :=
-    ⟨fun e credited => match e, credited with
-      | (.focal, t), credited => absurd credited (focal_withheld t)
+    ⟨fun e included => match e, included with
+      | (.focal, t), included => absurd included (focal_withheld t)
       | (.sustaining, t), _ => sustains t,
      (.sustaining, 1), trivial, sustains 1, fun ⟨active, _⟩ =>
        Nat.not_succ_le_zero 0 (Nat.le_trans active (Nat.le_of_eq (law_low 0)))⟩
@@ -434,9 +434,9 @@ def contest : Contest → Unfolding Part Unit
   | .shares => sharing.unfolding
   | .wins => winning.unfolding
 
-/-- Sharing credits every event under the stepwise reading: the condition never falls
+/-- Sharing includes every event under the stepwise reading: the condition never falls
 below its start. -/
-theorem sharing_credited (e : Part × Nat) : stepwise contest .shares e :=
+theorem sharing_included (e : Part × Nat) : stepwise contest .shares e :=
   have kept := within_renewal_sustains sharing (fun _ => Nat.le_refl 1)
     (Nat.le_succ_of_le (Nat.le_succ 1)) (Nat.zero_le 3)
   have supports : ∀ t, sharing.needG ≤ sharing.level t := fun t =>
@@ -449,8 +449,8 @@ theorem sharing_credited (e : Part × Nat) : stepwise contest .shares e :=
     | .focal, fell => Nat.not_lt_zero _ fell
     | .sustaining, fell => Nat.not_le_of_gt fell (supports _)⟩
 
-/-- Under the stepwise reading the winner's events before the loss are credited, and
-sharing still extends winning by consumption: it credits every event, and the
+/-- Under the stepwise reading the winner's events before the loss are included, and
+sharing still extends winning by consumption: it includes every event, and the
 sustaining formation continues only there. -/
 theorem stepwise_contest :
     stepwise contest .wins (.focal, 0) ∧ stepwise contest .wins (.focal, 1) ∧
@@ -458,16 +458,16 @@ theorem stepwise_contest :
   match overdraw_consuming winning Nat.zero_lt_one (Nat.zero_le 1) (T0 := 0)
       (fun _ _ => Nat.lt_succ_self 1) with
   | ⟨_, T, lost⟩ =>
-    ⟨credited_before_loss winning (t := 0) (Nat.zero_le 3) (Nat.le_succ 1) (Nat.zero_le 2),
-     credited_before_loss winning (t := 1) (Nat.zero_le 2) (Nat.le_refl 1) (Nat.zero_le 1),
+    ⟨included_before_loss winning (t := 0) (Nat.zero_le 3) (Nat.le_succ 1) (Nat.zero_le 2),
+     included_before_loss winning (t := 1) (Nat.zero_le 2) (Nat.le_refl 1) (Nat.zero_le 1),
      fun alive => alive.2 ⟨(), ⟨1, Nat.zero_lt_two⟩, .sustaining, trivial,
        ⟨0, Nat.zero_le 2, fun _ _ _ => trivial, Nat.le_succ_of_le (Nat.le_succ 1), Nat.le_refl _⟩,
        Nat.zero_lt_one⟩,
      (renewed_active_extends_iff (U := contest) (w := .wins) (w' := .shares)
         (fun _ t g depends => match g, depends with
           | .focal, depends => absurd depends (Nat.lt_irrefl 0)
-          | .sustaining, _ => (sharing_credited (.sustaining, t)).1)
-        fun t p => (sharing_credited (p, t)).1).2.mpr
+          | .sustaining, _ => (sharing_included (.sustaining, t)).1)
+        fun t p => (sharing_included (p, t)).1).2.mpr
       ⟨(.sustaining, T), fun alive => lost T (Nat.le_refl T) alive.1⟩⟩
 
 /-! ## Restraint ranks above overdraw under either reading, in the two-part family -/
@@ -484,9 +484,9 @@ def restraint (stopping overdrawing : Law) : Restraint → Unfolding Part Unit
 
 variable {stopping overdrawing : Law}
 
-/-- A course in which every need stays met is credited at every event by both
+/-- A course in which every need stays met is included at every event by both
 readings. -/
-theorem stops_credited (met : ∀ t, stopping.needG ≤ stopping.level t ∧
+theorem stops_included (met : ∀ t, stopping.needG ≤ stopping.level t ∧
       stopping.needF ≤ stopping.level t) (e : Part × Nat) :
     wholeRun (restraint stopping overdrawing) .stops e ∧
       stepwise (restraint stopping overdrawing) .stops e :=
@@ -506,7 +506,7 @@ theorem stops_credited (met : ∀ t, stopping.needG ≤ stopping.level t ∧
 /-- Under either reading, a course in which every need stays met extends a course of the
 family in which overdraw ends the sustaining formation's support, so every comparison
 satisfying C ranks restraint higher. Under the stepwise reading this holds although the
-overdrawing formation's events before the loss are credited. -/
+overdrawing formation's events before the loss are included. -/
 theorem restraint_ranks (met : ∀ t, stopping.needG ≤ stopping.level t ∧
       stopping.needF ≤ stopping.level t)
     (positive : 0 < overdrawing.needG) (fWithin : overdrawing.needF ≤ overdrawing.needG)
@@ -543,7 +543,7 @@ theorem stoppingMalignant_level : ∀ t, stoppingMalignant.level (t + 1) = 2
     rfl
 
 /-- Malignant growth compared with the same formation stopping after its first step,
-before the threshold. The first event is the same in both courses and credited by the
+before the threshold. The first event is the same in both courses and included by the
 stepwise reading in both, and under either reading every comparison satisfying C ranks
 stopping above malignant growth. Under the stepwise reading, then, what C loses here is
 the comparison with the formation's absence, not with its restraint; with a third
@@ -565,8 +565,8 @@ theorem malignant_restraint :
         Nat.le_trans (Nat.le_succ 1) (Nat.le_of_eq (stoppingMalignant_level t).symm)⟩
   have ranks := restraint_ranks (overdrawing := malignant) met Nat.zero_lt_two (Nat.le_succ 1)
     (T0 := 0) fun _ _ => Nat.lt_succ_of_le (Nat.le_succ 1)
-  ⟨rfl, (stops_credited met _).2,
-   credited_before_loss malignant (t := 0)
+  ⟨rfl, (stops_included met _).2,
+   included_before_loss malignant (t := 0)
      (Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1))) (Nat.le_refl 2) (Nat.le_succ 1),
    ranks.2.2.1, ranks.2.2.2⟩
 
@@ -646,7 +646,7 @@ theorem stops_supports : ∀ t, 1 ≤ stopsLevel t
   | 3 => by decide
   | _ + 4 => (by decide : 1 ≤ 6)
 
-/-- The focal formation's event at step 3 is credited stepwise when it overdraws (the
+/-- The focal formation's event at step 3 is included stepwise when it overdraws (the
 sustaining need stays met and the third formation was never met), and withheld when it
 has stopped (the third formation, met at step 3, is unmet after it). -/
 theorem focal_three :
@@ -678,14 +678,14 @@ theorem restraint_unranked_stepwise :
    fun ⟨sub, _⟩ => Nat.not_succ_le_zero 0
      (sub (.sustaining, 6) ⟨stops_supports 6, fun ⟨_, drawn, _⟩ => drawn⟩).1,
    fun _ _ ext => ext,
-   ⟨fun e credited => match e, credited with
+   ⟨fun e included => match e, included with
      | (.focal, _), ⟨_, notConsuming⟩ => absurd ⟨(), trivial, overConsumed⟩ notConsuming
      | (.sustaining, t), _ => sustains t
      | (.third, _), ⟨active, _⟩ => absurd active (Nat.not_le_of_gt (over_below_seven _)),
     (.sustaining, 6), trivial, sustains 6, fun ⟨active, _⟩ => Nat.not_succ_le_zero 0 active⟩⟩
 
 /-- Stepwise, the renewal in `renewed_extends_iff` cannot be dropped: the restrained course
-is active at every event the overdrawing course credits and at an event it withholds, yet
+is active at every event the overdrawing course includes and at an event it withholds, yet
 does not extend it, since it does not renew the third formation's condition. -/
 theorem renewal_needed :
     ¬ Renewed (courses .stops) () ∧
@@ -693,7 +693,7 @@ theorem renewal_needed :
     (∃ e, (courses .stops).active e.2 e.1 ∧ ¬ stepwise courses .overdraws e) ∧
     ¬ ExtendsUnder (stepwise courses) .overdraws .stops :=
   ⟨fun renewed => absurd (renewed 0 .third trivial) (by decide),
-   fun e credited => match e, credited with
+   fun e included => match e, included with
     | (.focal, _), _ => trivial
     | (.sustaining, t), _ => stops_supports t
     | (.third, t), ⟨active, _⟩ => absurd active (Nat.not_le_of_gt (over_below_seven t)),
@@ -712,7 +712,7 @@ theorem over_le_stops : ∀ t, overLevel t ≤ stopsLevel t
 
 /-- The stepwise reading has no law of easing: the restrained course eases the overdrawing
 one, activity needs support in both and follows support in the restrained one, yet the
-stepwise reading credits the focal event at step 3 only in the overdrawing course. The
+stepwise reading includes the focal event at step 3 only in the overdrawing course. The
 whole-run reading ranks restraint higher, as `wholeRun_extends_iff_of_eases` gives. -/
 theorem stepwise_not_monotone :
     Dependent (courses .overdraws) ∧ ActiveWhereSupported (courses .stops) ∧

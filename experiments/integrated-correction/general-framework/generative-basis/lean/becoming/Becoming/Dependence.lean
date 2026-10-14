@@ -48,7 +48,7 @@ Results:
 * Stepwise readings of a formation's event, each read through its relations to
   conditions. It is *within renewal* when its step keeps every dependence on every
   condition it participates in, the stepwise counterpart of renewal; whole-run renewal
-  credits every active step. It is *breaking* when it draws on a condition at a step
+  includes every active step. It is *breaking* when it draws on a condition at a step
   that breaks a dependence on it, and *undermining* when it draws on a condition at a
   step after which the condition is below both the present need of a dependence on it
   and a need of that dependence met while it held: the stepwise counterpart of
@@ -418,7 +418,7 @@ theorem RenewingAt.not_breaking {t : Nat} {f : F} (renewing : W.RenewingAt t f) 
     ¬ W.BreakingAt t f
   | ⟨c, breaking⟩ => renewing.not_undermining ⟨c, breaking.undermining⟩
 
-/-- Whole-run renewal credits every active step. -/
+/-- Whole-run renewal includes every active step. -/
 theorem renewing_at_active {f : F} (renewing : W.RenewingIn f) {t : Nat}
     (active : W.active t f) : W.RenewingAt t f :=
   ⟨active, fun c joins g depends => renewing t c joins t g depends⟩
@@ -937,8 +937,8 @@ def escalating : Run process :=
   ⟨escalatingState, fun | 0 => 1 | _ + 1 => 2, fun | 0 => rfl | 1 => rfl | _ + 2 => rfl⟩
 
 /-- The whole-run reading counts the focal formation as consuming, while the stepwise
-reading credits its first event, which drew within renewal, and not its second. -/
-theorem stepwise_credits_before_escalation :
+reading includes its first event, which drew within renewal, and not its second. -/
+theorem stepwise_includes_before_escalation :
     (conditions.dependence.along escalating).ConsumingIn .focal ∧
     (conditions.dependence.along escalating).RenewingAt 0 .focal ∧
     ¬ (conditions.dependence.along escalating).RenewingAt 1 .focal := by

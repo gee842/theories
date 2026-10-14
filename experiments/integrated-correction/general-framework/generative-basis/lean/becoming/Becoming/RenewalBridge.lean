@@ -279,7 +279,7 @@ theorem jointly_ends (start renew need : Nat) (d1 d2 : Nat → Nat)
 
 /-- `RenewalComparison`'s relational extension of the course without an overdrawing
 formation is an instance of `Ranking.renewed_extends_iff`: the course without it renews
-every condition, is active at every event the course with it credits, and the sustaining
+every condition, is active at every event the course with it includes, and the sustaining
 formation is active there after the loss. -/
 theorem overdraw_extension (positive : 0 < L.needG) (fWithin : L.needF ≤ L.needG)
     (gStart : L.needG ≤ L.start) {T0 : Nat}

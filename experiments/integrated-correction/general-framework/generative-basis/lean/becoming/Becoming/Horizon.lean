@@ -13,24 +13,24 @@ renews; the other keeps drawing beyond it, and the focal formation consumes. Eve
 event of the focal formation before `h` is within renewal in both runs, so it is
 neither breaking nor undermining.
 
-So a reading decided by the first `h` steps of a run either withholds credit from a
-run that the whole-run reading classifies as renewing, or credits one it classifies as
-consuming. The work is done by crediting every renewing run: the renewing run itself
+So a reading decided by the first `h` steps of a run either excludes a
+run that the whole-run reading classifies as renewing, or includes one it classifies as
+consuming. The work is done by including every renewing run: the renewing run itself
 draws beyond renewal before `h`, from a stock that absorbs it, and the whole-run reading
-credits those draws (`whole_run_credits_overdraw`). The result holds unchanged in the
+includes those draws (`whole_run_includes_overdraw`). The result holds unchanged in the
 support-gated law, whose renewal stops below support (`Feedback.prefix_does_not_decide`),
 so it does not rest on the absence of feedback.
 
 What a finite history decides depends on the reading:
 * The event-level stepwise and cycle readings are fixed by the history up to the step
-  after the event, or `p` steps after it. They credit depletion for as long as the
+  after the event, or `p` steps after it. They include depletion for as long as the
   condition still meets the dependence.
 * The formation-level readings over cycles are not fixed by any finite prefix
   (`cycle_reading_not_finite`), nor is the whole-run classification.
 * A reading of amounts, "draws no more than is renewed at this step", is fixed by the
-  history through the step, credits every event of `withinRenewal` and withholds every draw
+  history through the step, includes every event of `withinRenewal` and withholds every draw
   beyond renewal before `h` in both runs (`amount_reading`). It escapes the theorem only
-  by not crediting every run the whole-run reading classifies as renewing. It cannot be
+  by not including every run the whole-run reading classifies as renewing. It cannot be
   stated on `Web`, whose `draws` carries no amount and which has no renewal rate.
 
 Classifying a stretch of drawing as the whole-run reading does requires knowing where
@@ -103,20 +103,20 @@ theorem prefix_does_not_decide : ∀ h : Nat, ∃ renewing consuming : Run proce
          ⟨0, (), trivial, g, T + 1, depends, fun
            | t + 1, later => below t (Nat.lt_of_succ_lt_succ later)⟩⟩
 
-/-- A reading decided by the first `h` steps of a run, crediting every run in which the
-focal formation renews, credits a run in which it consumes. -/
-theorem finite_reading_credits_consumption (h : Nat) (reading : Run process → Prop)
+/-- A reading decided by the first `h` steps of a run, including every run in which the
+focal formation renews, includes a run in which it consumes. -/
+theorem finite_reading_includes_consumption (h : Nat) (reading : Run process → Prop)
     (decided : ∀ r r', r.AgreeUpTo h r' → reading r → reading r')
-    (credits : ∀ r, (conditions.dependence.along r).RenewingIn .focal → reading r) :
+    (includes : ∀ r, (conditions.dependence.along r).RenewingIn .focal → reading r) :
     ∃ r, (conditions.dependence.along r).ConsumingIn .focal ∧ reading r :=
   match prefix_does_not_decide h with
   | ⟨renewing, consuming, agree, _, _, renews, consumes⟩ =>
-    ⟨consuming, consumes, decided renewing consuming agree (credits renewing renews)⟩
+    ⟨consuming, consumes, decided renewing consuming agree (includes renewing renews)⟩
 
-/-- The whole-run reading credits drawing beyond renewal. For every horizon, the
+/-- The whole-run reading includes drawing beyond renewal. For every horizon, the
 renewing run above draws two units, one beyond renewal, at every step before it, and
 every event of its focal formation is active and not consuming. -/
-theorem whole_run_credits_overdraw (h : Nat) : ∃ r : Run process,
+theorem whole_run_includes_overdraw (h : Nat) : ∃ r : Run process,
     (∀ t, t < h → r.act t = 2) ∧ (conditions.dependence.along r).RenewingIn .focal ∧
       ∀ t, (conditions.along r).active t .focal ∧
         ¬ RelationalRenewal.ConsumingIn (conditions.along r) .focal :=
@@ -126,7 +126,7 @@ theorem whole_run_credits_overdraw (h : Nat) : ∃ r : Run process,
       RelationalRenewal.renewing_not_consuming ((Web.static_renewingIn _ _).mp renews)⟩⟩
 
 /-- A reading of amounts escapes the horizon. "Draws no more than is renewed", at a step,
-is fixed by the history through that step, credits every event of `withinRenewal`, and
+is fixed by the history through that step, includes every event of `withinRenewal`, and
 withholds every draw before the horizon in both runs above. -/
 theorem amount_reading (h : Nat) :
     (∀ t (r r' : Run process), r.AgreeUpTo (t + 1) r' → (r.act t ≤ 1 ↔ r'.act t ≤ 1)) ∧
@@ -149,7 +149,7 @@ theorem cycle_reading_not_finite (h p : Nat) (positive : 0 < p) :
       (conditions.dependence.along r).RenewingInWithin p .focal →
       (conditions.dependence.along r').RenewingInWithin p .focal :=
   fun decided =>
-    match finite_reading_credits_consumption h _ decided
+    match finite_reading_includes_consumption h _ decided
       (fun _ renews => (Web.RenewingIn.within_one renews).mono positive) with
     | ⟨_, consumes, renews⟩ => renews.not_consuming consumes
 

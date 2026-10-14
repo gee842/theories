@@ -190,7 +190,7 @@ SCOPE = (
     "what was met is not undermining, a draw below a need that was met undermines after the need "
     "has grown, and a dependence that lapses for one step starts a new tenure; breaking is "
     "undermining, drawing after a loss can undermine without breaking, and "
-    "drawing that changes no level can undermine; the stepwise and whole-run readings credit "
+    "drawing that changes no level can undermine; the stepwise and whole-run readings include "
     "different events in both directions; the lemmas on natural numbers the layers share are "
     "stated here. "
     "Return: a dependence returns within p steps when it is met at one of the next p; renewal, "
@@ -198,11 +198,11 @@ SCOPE = (
     "exactly a dependence that never returns; renewal within one step does not imply renewal, and "
     "cycles of length zero are degenerate; a seasonal condition is renewed within two steps and "
     "not one; a recovery can slow without bound, returning always while no cycle bounds it; over "
-    "cycles of two a dip is credited, and an escalation undermines for every cycle. "
+    "cycles of two a dip is included, and an escalation undermines for every cycle. "
     "Horizon: for every horizon two runs of one process agree up to it, drawing beyond renewal with "
     "every event within renewal, and afterwards one renews and the other consumes; a reading decided "
-    "by a finite prefix that credits every renewing run credits a consuming one; the renewing run "
-    "itself draws beyond renewal before the horizon and the whole-run reading credits it; a reading "
+    "by a finite prefix that includes every renewing run includes a consuming one; the renewing run "
+    "itself draws beyond renewal before the horizon and the whole-run reading includes it; a reading "
     "of amounts per step is fixed by the history through the step and withholds every such draw; "
     "the formation-level cycle readings are not fixed by any finite prefix; and the same holds in "
     "the support-gated law, whose renewal stops below support. "
@@ -334,7 +334,7 @@ SCOPE = (
     "Substitution: in the support-gated law, a focal formation that can substitute an alternative "
     "condition stays active, transforms its dependence at a step that can be found, and consumes, "
     "while the sustaining formation ends; a concrete law meets the premises, and there the stepwise "
-    "reading credits the focal formation at every step but the one at which the sustaining "
+    "reading includes the focal formation at every step but the one at which the sustaining "
     "formation loses support; in another law of the family it is withheld at two steps, until it "
     "switches. "
     "Generation: a formation arises when it is inactive before a step and active after it, and "
@@ -353,7 +353,7 @@ SCOPE = (
     "dependence while nothing arises; arising on a consumed condition ceases; and a formation "
     "arising again and again on a renewed condition meets every premise, each arising coming at a "
     "rise, while the stepwise reading withholds each of its arisings and the reading over cycles of "
-    "two credits it. "
+    "two includes it. "
     "Flow: when every change of a condition's level is what the formations taking part take and "
     "give, the family's total plus its uptake equals its total before plus its replenishment, over "
     "a step and over any stretch, every rise is made by an active renewer, and every fall is "
@@ -659,18 +659,18 @@ SCOPE = (
     "formation losing support. Read stepwise, an event is living when active and not undermining; the "
     "same discharge holds, an event drawing at a step that breaks a dependence is related to the "
     "broken formation, so under N_rel valuing it reaches that formation's living events, and both "
-    "readings credit the broken formation's own event. Read through relations, the stepwise reading "
+    "readings include the broken formation's own event. Read through relations, the stepwise reading "
     "of an event is the conjunction of the reading of its relations, and one event can have a living "
     "relation and an undermining one. "
     "Ranking: C over courses is stated through a frame whose realized claims are the events a "
-    "reading credits; the course without a formation extends the course with it only if the reading "
+    "reading includes; the course without a formation extends the course with it only if the reading "
     "withholds every event of that formation; under the whole-run reading, for every law of the "
     "support-gated family in which the focal formation draws beyond renewal, the course without it "
     "extends the course with it, so every comparison satisfying C ranks it higher; under the stepwise "
-    "reading an event of the formation whose step leaves every need met is credited, neither course "
+    "reading an event of the formation whose step leaves every need met is included, neither course "
     "extends the other, and an irreflexive, transitive comparison satisfying C prefers the course with "
     "the formation, malignant growth and winning by consumption being instances, while with no "
-    "credited event of the formation the stepwise reading too ranks its absence higher; under the "
+    "included event of the formation the stepwise reading too ranks its absence higher; under the "
     "stepwise "
     "reading sharing still extends winning by consumption; under either reading a course in which "
     "every need stays met extends a course of the family in which overdraw ends the sustaining "
@@ -1396,14 +1396,14 @@ SCOPE = (
     "living content, a witness separating the two; with A read on living content the universal "
     "reason follows from G0 at the level of claims, and so from the axiom, with no seed, "
     "neutrality or connection premise; a level path nowhere lower includes the other and is "
-    "never ranked below by retaining and adding; the possibility reading of courses credits a "
+    "never ranked below by retaining and adding; the possibility reading of courses includes a "
     "formation where the course's levels admit it, every active formation of a dependent course "
     "included, and under the axiom extension under it is retaining and adding what has "
     "significance on the law's web; under it the course without a formation drawing beyond "
     "renewal extends the course with it in every law of the family, restraint extends overdraw "
     "in the two-part family and with a third formation, and sharing extends winning by "
-    "consumption, while the malignant formation's first event is credited, as the stepwise "
-    "reading credits it and the whole-run reading withholds it; a formation drawing within "
+    "consumption, while the malignant formation's first event is included, as the stepwise "
+    "reading includes it and the whole-run reading withholds it; a formation drawing within "
     "renewal adds no possibility, neither course then extending the other under it, while both "
     "readings of living rank its presence higher, sharing being an instance. The axiom enters "
     "only as a hypothesis. "
@@ -1667,7 +1667,7 @@ example : ((Renewable.conditions.dependence.along Renewable.escalating).valuatio
     (fun e _ => match e with
       | (.focal, _) => Or.inr trivial
       | (.sustaining, _) => Or.inl trivial),
-   ⟨trivial, Renewable.stepwise_credits_before_escalation.2.1.not_undermining⟩⟩
+   ⟨trivial, Renewable.stepwise_includes_before_escalation.2.1.not_undermining⟩⟩
 """
 
 
@@ -1831,7 +1831,7 @@ def main():
                 {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "a frame's continuation space has a reached configuration realizing a living claim", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "a run with a common condition is connected under the relational reading", "kernel_checked": True, "counted_as_new_theorem": False},
-                {"claim": "the stepwise reading is connected by a common condition and credits a living event", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "the stepwise reading is connected by a common condition and includes a living event", "kernel_checked": True, "counted_as_new_theorem": False},
             ]
         receipt["source_unchanged_during_check"] = all(
             paths[name].read_bytes() == data for name, data in sources.items())

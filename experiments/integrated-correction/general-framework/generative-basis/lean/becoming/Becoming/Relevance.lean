@@ -32,7 +32,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   on living content (`positioned_articulation_of_articulatesLiving`), and the universal reason
   follows from the axiom with no seed, neutrality or connection premise
   (`universal_reason_of_unrestricted`).
-* **C read on possibilities.** The possibility reading credits a formation at a step when the
+* **C read on possibilities.** The possibility reading includes a formation at a step when the
   course's levels admit it there. Under the axiom, extension under this reading is the axiom's
   comparison, retaining and adding what has significance (`Ranking.possible_extends_iff`). In
   every law of the support-gated family it ranks the course without an overdrawing formation
@@ -40,7 +40,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   (`Ranking.possible_restraint`), also with a third formation where the stepwise reading leaves
   them unranked (`Ranking.ThirdParty.possible_extends`), and sharing above winning by
   consumption (`Ranking.possible_contest`). It withholds no event: in a dependent course it
-  credits every active formation (`Ranking.possible_of_active`), the malignant formation's
+  includes every active formation (`Ranking.possible_of_active`), the malignant formation's
   first event included, which the whole-run reading withholds (`Ranking.malignant_possible`).
 * **What it does not rank.** A formation drawing within renewal adds no possibility. Its course
   and the course without it admit the same formations, and neither extends the other
@@ -48,7 +48,7 @@ generative-capacity modules was audited for what it needs of positive relevance 
   (`Ranking.readings_rank_presence`); sharing is an instance (`Ranking.sharing_presence`).
   Generally a level path nowhere lower is never ranked below (`Web.not_added_of_le`), so rest
   and restraint that leave the levels no lower are never worse.
-* **Possibilities first.** Ranking by possibilities first and then by a reading's credited
+* **Possibilities first.** Ranking by possibilities first and then by a reading's included
   events satisfies C under the possibility reading and is a strict order
   (`Ranking.possibleFirst_order`). Whatever the reading, it ranks the absence of an overdrawing
   formation above its occurrence (`Ranking.possibleFirst_overdraw`); with either reading of
@@ -295,13 +295,13 @@ open RelationalRenewal RelationalRenewal.Law
 
 variable {W F C : Type}
 
-/-- The possibility reading: a course credits a formation at a step when the course's levels
+/-- The possibility reading: a course includes a formation at a step when the course's levels
 admit it there, active or not. -/
 def possible (U : W → Unfolding F C) (w : W) (e : F × Nat) : Prop :=
   (Web.static (U w)).Admits ((U w).level e.2) e.2 e.1
 
-/-- In a dependent course the possibility reading credits every active formation, so every event
-that either reading of `living` credits. -/
+/-- In a dependent course the possibility reading includes every active formation, so every event
+that either reading of `living` includes. -/
 theorem possible_of_active {U : W → Unfolding F C} {w : W} (dependent : Dependent (U w))
     {e : F × Nat} (active : (U w).active e.2 e.1) : possible U w e :=
   dependent e.2 e.1 active
@@ -350,18 +350,18 @@ theorem possible_extends_iff (L : Law) {Pos : Type} {sig : Pos → Nat → Part 
       (Web.static L.unfolding).Retains sig p (course L w').level (course L w).level ∧
         (Web.static L.unfolding).Adds sig p (course L w').level (course L w).level :=
   have conv := possible_course_iff L
-  ⟨fun ⟨keeps, e, _, credited, fresh⟩ =>
+  ⟨fun ⟨keeps, e, _, included, fresh⟩ =>
     ⟨fun t f _ admits => (conv w' (f, t)).1 (keeps (f, t) ((conv w (f, t)).2 admits)),
-     e.2, e.1, unrestricted (p, e.2, e.1), (conv w' e).1 credited,
+     e.2, e.1, unrestricted (p, e.2, e.1), (conv w' e).1 included,
      fun admits => fresh ((conv w e).2 admits)⟩,
    fun ⟨retains, t, f, _, admits, ended⟩ =>
-    ⟨fun e credited =>
-      (conv w' e).2 (retains e.2 e.1 (unrestricted (p, e.2, e.1)) ((conv w e).1 credited)),
+    ⟨fun e included =>
+      (conv w' e).2 (retains e.2 e.1 (unrestricted (p, e.2, e.1)) ((conv w e).1 included)),
      (f, t), trivial, (conv w' (f, t)).2 admits,
-     fun credited => ended ((conv w (f, t)).1 credited)⟩⟩
+     fun included => ended ((conv w (f, t)).1 included)⟩⟩
 
 /-- Malignant growth under the possibility reading: the course without the formation extends the
-course with it, while the formation's first event is credited, as the stepwise reading credits
+course with it, while the formation's first event is included, as the stepwise reading includes
 it and the whole-run reading withholds it. -/
 theorem malignant_possible :
     ExtendsUnder (possible (course malignant)) .occurs .absent ∧
@@ -373,7 +373,7 @@ theorem malignant_possible :
   ⟨possible_extends malignant Nat.zero_lt_two (Nat.le_succ 1)
      (Nat.le_succ_of_le (Nat.le_succ 2)) over,
    fun _ _ => Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1)),
-   credited_before_loss malignant (t := 0)
+   included_before_loss malignant (t := 0)
      (Nat.le_succ_of_le (Nat.le_succ_of_le (Nat.le_succ 1))) (Nat.le_refl 2) (Nat.le_succ 1),
    fun ⟨_, notConsuming⟩ =>
      notConsuming (overdraw_consuming malignant Nat.zero_lt_two (Nat.le_succ 1) over).1⟩
@@ -385,7 +385,7 @@ theorem possible_contest : ExtendsUnder (possible contest) .wins .shares :=
   | ⟨_, T, lost⟩ =>
     have shares : ∀ e, possible contest .shares e := fun e =>
       possible_of_active (U := contest) (w := .shares) (unfolding_dependent sharing)
-        (sharing_credited e).1
+        (sharing_included e).1
     ⟨fun e _ => shares e, (.sustaining, T), trivial, shares (.sustaining, T),
      fun admitted => lost T (Nat.le_refl T) (admitted () trivial)⟩
 
@@ -436,17 +436,17 @@ theorem possible_tie (L : Law) (within : ∀ t, L.draw t ≤ L.renew + L.contrib
   ⟨all, fun ⟨_, _, _, _, fresh⟩ => fresh (all _ _), fun ⟨_, _, _, _, fresh⟩ => fresh (all _ _)⟩
 
 /-- Both readings of `living` rank the course of a formation drawing within renewal above the
-course without it: they credit its events, which the course without it lacks. -/
+course without it: they include its events, which the course without it lacks. -/
 theorem readings_rank_presence (L : Law) (within : ∀ t, L.draw t ≤ L.renew + L.contrib t)
     (gStart : L.needG ≤ L.start) (fStart : L.needF ≤ L.start) :
     ExtendsUnder (wholeRun (course L)) .absent .occurs ∧
       ExtendsUnder (stepwise (course L)) .absent .occurs :=
   have kept := within_renewal_sustains L within gStart fStart
-  have credited := stops_credited (stopping := L) (overdrawing := L)
+  have included := stops_included (stopping := L) (overdrawing := L)
     (fun t => ⟨Nat.le_trans gStart (kept t), Nat.le_trans fStart (kept t)⟩)
-  ⟨⟨fun e _ => (credited e).1, (.focal, 0), trivial, (credited (.focal, 0)).1,
+  ⟨⟨fun e _ => (included e).1, (.focal, 0), trivial, (included (.focal, 0)).1,
      fun ⟨active, _⟩ => active⟩,
-   ⟨fun e _ => (credited e).2, (.focal, 0), trivial, (credited (.focal, 0)).2,
+   ⟨fun e _ => (included e).2, (.focal, 0), trivial, (included (.focal, 0)).2,
      fun ⟨active, _⟩ => active⟩⟩
 
 /-- In sharing, whose formation draws only the renewal, the possibility reading leaves the course
@@ -465,7 +465,7 @@ theorem sharing_presence :
 
 /-! ### Possibilities first, then a reading -/
 
-/-- Possibilities first, then a reading's credited events: the second course is better when it
+/-- Possibilities first, then a reading's included events: the second course is better when it
 extends the first under the possibility reading, or admits the same formations and extends it
 under the reading. -/
 def possibleFirst (U : W → Unfolding F C) (reading : W → F × Nat → Prop) (w w' : W) : Prop :=
@@ -480,20 +480,20 @@ theorem possibleFirst_order (U : W → Unfolding F C) (reading : W → F × Nat 
         possibleFirst U reading w w'' :=
   ⟨fun _ _ ext => .inl ext,
    fun _ better => match better with
-    | .inl ⟨_, _, _, credited, fresh⟩ => fresh credited
-    | .inr ⟨_, _, _, _, credited, fresh⟩ => fresh credited,
+    | .inl ⟨_, _, _, included, fresh⟩ => fresh included
+    | .inr ⟨_, _, _, _, included, fresh⟩ => fresh included,
    fun _ _ _ first second => match first, second with
-    | .inl ⟨keeps, _, _, _, _⟩, .inl ⟨keeps', e, _, credited, fresh⟩ =>
-      .inl ⟨fun e held => keeps' e (keeps e held), e, trivial, credited,
+    | .inl ⟨keeps, _, _, _, _⟩, .inl ⟨keeps', e, _, included, fresh⟩ =>
+      .inl ⟨fun e held => keeps' e (keeps e held), e, trivial, included,
         fun held => fresh (keeps e held)⟩
-    | .inl ⟨keeps, e, _, credited, fresh⟩, .inr ⟨same, _⟩ =>
-      .inl ⟨fun e held => (same e).1 (keeps e held), e, trivial, (same e).1 credited, fresh⟩
-    | .inr ⟨same, _⟩, .inl ⟨keeps, e, _, credited, fresh⟩ =>
-      .inl ⟨fun e held => keeps e ((same e).1 held), e, trivial, credited,
+    | .inl ⟨keeps, e, _, included, fresh⟩, .inr ⟨same, _⟩ =>
+      .inl ⟨fun e held => (same e).1 (keeps e held), e, trivial, (same e).1 included, fresh⟩
+    | .inr ⟨same, _⟩, .inl ⟨keeps, e, _, included, fresh⟩ =>
+      .inl ⟨fun e held => keeps e ((same e).1 held), e, trivial, included,
         fun held => fresh ((same e).1 held)⟩
-    | .inr ⟨same, keeps, _, _, _, _⟩, .inr ⟨same', keeps', e, _, credited, fresh⟩ =>
+    | .inr ⟨same, keeps, _, _, _, _⟩, .inr ⟨same', keeps', e, _, included, fresh⟩ =>
       .inr ⟨fun e => (same e).trans (same' e),
-        fun e held => keeps' e (keeps e held), e, trivial, credited,
+        fun e held => keeps' e (keeps e held), e, trivial, included,
         fun held => fresh (keeps e held)⟩⟩
 
 /-- In every law of the family, possibilities first ranks the absence of an overdrawing formation

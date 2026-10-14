@@ -85,9 +85,9 @@ independent review.
   below its need, and a gauge of itself registers every bite (`SelfPrey.threshold_on_oneself`).
 * **Horizon.** Where the continuation is open, as in `Renewable`, no reading decided by the first
   `h` steps of a run is the whole-run classification (`Renewable.no_exact_finite_reading`); one
-  that credits no consuming run withholds credit from a renewing one
+  that includes no consuming run excludes a renewing one
   (`Renewable.finite_reading_withholds_renewal`). Both are corollaries of
-  `Renewable.prefix_does_not_decide`, beside `Renewable.finite_reading_credits_consumption`.
+  `Renewable.prefix_does_not_decide`, beside `Renewable.finite_reading_includes_consumption`.
 
 **Readings (the AI's; Ren accepted their earlier wording on 11 October 2026, and the review
 narrowed them).**
@@ -1591,8 +1591,8 @@ end Clearing
 
 namespace Renewable
 
-/-- A reading decided by the first `h` steps of a run, crediting no run in which the focal
-formation consumes, withholds credit from a run in which it renews. -/
+/-- A reading decided by the first `h` steps of a run, including no run in which the focal
+formation consumes, excludes a run in which it renews. -/
 theorem finite_reading_withholds_renewal (h : Nat) (reading : Run process → Prop)
     (decided : ∀ r r', r.AgreeUpTo h r' → reading r → reading r')
     (sound : ∀ r, reading r → ¬ (conditions.dependence.along r).ConsumingIn .focal) :
