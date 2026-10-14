@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F03",
-  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
+  "reviewed_at_utc": "2026-10-14T09:00:00+00:00",
   "claim": {
-    "zh": "对每个存量，一段取用进程可执行，恰当每次取用都在当时的存量之内。审查取一单位工作、行动取两单位，所以审查与行动的进程恰从三单位当前工作起被覆盖；端点完成审查与行动，恰当报告排除相关风险且其工作覆盖该进程；拒绝或耗尽保留未完成任务及已付代价。付费的相关条件审查消耗实际交付的修订，覆盖效果时刻条件的报告防止所表示做法的新增损失。学习分支允许另两个情境字段改变；行动保护不蕴含持续的比较根据。",
-    "en": "For every stock, a course of draws is executable exactly when each draw is within the stock then standing. Review draws one unit of work and action two, so the review-and-action course is covered exactly from three current units, and an endpoint completes its review and action exactly when the report clears the relevant risk and its work covers that course; refusal or exhaustion retains the unfinished task and paid cost. Paid relevant-condition review consumes the actually delivered revision, and a report covering effect-time conditions prevents added represented practice loss. The learning branch admits changes to the other two context fields; action protection does not imply continued comparative warrant."
+    "zh": "对每个存量，一段取用进程可执行，恰当每次取用都在当时的存量之内。审查取一单位工作、行动取两单位，所以审查与行动的进程恰从三单位当前工作起被覆盖；端点完成审查与行动，恰当报告排除相关风险且其工作覆盖该进程；拒绝或耗尽保留未完成任务及已用的工作。经审查的损失：对每个条件、报告与待完成端点，审查增加一次损失，恰当报告排除相关风险、工作覆盖该进程，而所交付实践的相关风险（其作用规律的损失条件）实际成立；报告未排除相关风险的每次审查都保持损失计数（门控改变之律的实例），由这样的审查组成的每段进程亦然。所以覆盖效果时刻条件的报告防止所表示做法的新增损失。取用一单位工作的相关条件审查消耗实际交付的修订。协议自身给出两条作用规律，因而给出哪种风险相关。学习分支允许另两个情境字段改变；行动保护不蕴含持续的比较根据。",
+    "en": "For every stock, a course of draws is executable exactly when each draw is within the stock then standing. Review draws one unit of work and action two, so the review-and-action course is covered exactly from three current units, and an endpoint completes its review and action exactly when the report clears the relevant risk and its work covers that course; refusal or exhaustion retains the unfinished task and the work already used. Loss through review: for every condition, report and pending endpoint, a review adds one loss exactly when the report clears the relevant risk, the work covers that course and the delivered practice’s relevant risk, its outcome law’s loss condition, actually holds; every review whose report does not clear the relevant risk keeps the loss count (an instance of the gated-change law), and so does every course of such reviews. So a covered report, one covering effect-time conditions, prevents added represented practice loss. Relevant-condition review, using one unit of work, consumes the actually delivered revision. The protocol itself supplies the two outcome laws and so which risk is relevant. The learning branch admits changes to the other two context fields; action protection does not imply continued comparative warrant."
   },
   "hypotheses": [
     {
@@ -37,7 +37,9 @@
     "PendingTaskApplicability.funded_covered_review",
     "Becoming.Stock.feasible_iff_covered",
     "Becoming.VersionedTaskInstances.review_course_covered_iff",
-    "Becoming.VersionedTaskInstances.review_completes_iff"
+    "Becoming.VersionedTaskInstances.review_completes_iff",
+    "Becoming.VersionedTaskInstances.review_losses",
+    "Becoming.VersionedTaskInstances.losses_kept"
   ],
   "dependencies": [
     {
@@ -133,17 +135,26 @@
     {
       "path": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
       "role": "proof",
-      "sha256": "06002a5dfb21df50815211db9d2fa15e258fc86357c4e48ab80308a2f379291f",
+      "sha256": "402c33bebeac53799f2aeeaf34ee6346422d6831b900ac37f64cc5f0d7fe3d73",
       "declarations": [
         "Becoming.VersionedTaskInstances.review_course_covered_iff",
         "Becoming.VersionedTaskInstances.enact_isSome_iff",
-        "Becoming.VersionedTaskInstances.review_completes_iff"
+        "Becoming.VersionedTaskInstances.review_completes_iff",
+        "Becoming.VersionedTaskInstances.relevant_risk_eq",
+        "Becoming.VersionedTaskInstances.enact_losses",
+        "Becoming.VersionedTaskInstances.review_losses",
+        "Becoming.VersionedTaskInstances.review_adds_loss_iff",
+        "Becoming.VersionedTaskInstances.covered_review_instance",
+        "Becoming.VersionedTaskInstances.reviews",
+        "Becoming.VersionedTaskInstances.clears",
+        "Becoming.VersionedTaskInstances.losses_kept",
+        "Becoming.VersionedTaskInstances.losses_kept_along"
       ]
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
       "declarations": []
     },
     {
@@ -194,6 +205,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。一般律现已绑定：VersionedTaskInstances 由外围回执 20261014T041722.004469Z；核心公理报告为空，外围只用标准公理。有效范围中关于一般律的说明改为回执已绑定。对 Becoming.Stock 的证明引用同样绑定到该核心回执。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged). The general laws are now bound: VersionedTaskInstances by peripheral receipt 20261014T041722.004469Z; core axiom reports empty, peripheries with standard axioms only. The validation scope's note on the general laws now says the receipts are bound. The proof reference to Becoming.Stock is bound to the same core receipt."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第117节）：主张加入经审查的损失律：外围 VersionedTaskInstances 的 review_losses 与 review_adds_loss_iff（对每个条件、报告与待完成端点），未排除相关风险的审查保持损失计数（losses_kept，Gated.KeptBy 的实例）；covered_review_adds_no_practice_loss 由律得出（covered_review_instance）。相关风险即作用规律的损失条件（relevant_risk_eq），两条作用规律仍是协议自身的定义。主张中“已付代价”“付费的相关条件审查”改为“已用的工作”“取用一单位工作的相关条件审查”，意义不变。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 VersionedTaskInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
+      "en": "14 October 2026, open-issues plan (study section 117): the claim now adds the law of loss through review: review_losses and review_adds_loss_iff in the periphery VersionedTaskInstances (every condition, report and pending endpoint), and reviews that do not clear the relevant risk keep the loss count (losses_kept, an instance of Gated.KeptBy); covered_review_adds_no_practice_loss follows from the law (covered_review_instance). The relevant risk is the outcome law’s loss condition (relevant_risk_eq), and the two outcome laws stay the protocol’s own definition. In the claim, “paid cost” and “Paid relevant-condition review” now read “the work already used” and “Relevant-condition review, using one unit of work”, meaning unchanged. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to VersionedTaskInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
     }
   ],
   "next_delta": {

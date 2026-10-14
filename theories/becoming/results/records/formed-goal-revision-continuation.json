@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F03",
-  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "reviewed_at_utc": "2026-10-14T09:00:00+00:00",
   "claim": {
-    "zh": "在给定的二实践教育构造中，对每个账户、选择器与操作次数：一种实践从账户 ⟨w,q,z⟩ 运行 n 个周期，当且仅当 n = 0，或 2 ≤ w 且工作覆盖储备不支持的周期（受支持周期在选择器反馈该实践时为 q/2，否则为 0）；学习目的的每次操作消耗该目的、保持选择器、加上转变损失（若有）并追加一条记录。修订恰在访问有损而转变维护保留时完成；对每个这样的条件，修订与改革之后 n 次操作运行当且仅当 n ≤ 5（不改革选择器时 n ≤ 2），每次操作使用新目的，先前一次损失保留。harmful 的标题结论是实例：取得的原目标为参与计数，既有比较支持学习实践，五次实际操作使用新目的并保留先前一次损失。",
-    "en": "In the supplied two-practice educational construction, for every account, selector and number of operations: a practice runs n cycles from the account ⟨w,q,z⟩ exactly when n = 0, or 2 ≤ w and the work covers the cycles the reserve does not support (q/2 supported cycles where the selector feeds the practice back, none otherwise); every operation of the learning goal consumes it, keeps the selector, adds the transition loss if any and appends one record. Revision completes exactly under access loss with kept transition maintenance; for every such condition, after revision and reform n operations run exactly when n ≤ 5 (n ≤ 2 without reforming the selector), each consuming the new goal, and the earlier loss is retained. The harmful headline is an instance: acquisition forms the attendance goal, the existing comparison supports learning, and five actual operations consume the new goal while retaining the earlier loss."
+    "zh": "在给定的二实践教育构造中，对每组工作、储备与已用单位、选择器与操作次数：一种实践从 ⟨w,q,z⟩ 运行 n 个周期，当且仅当 n = 0，或 2 ≤ w 且工作覆盖储备不支持的周期（受支持周期在选择器反馈该实践时为 q/2，否则为 0）；学习目的的每次操作消耗该目的、保持选择器、加上转变损失（若有）并追加一条记录。对构造的每个条件，比较恰在访问有损而转变维护保留时认可学习优于参与，修订恰在此处完成，即恰在有根据处；对每个这样的条件，修订与改革之后 n 次操作运行当且仅当 n ≤ 5（不改革选择器时 n ≤ 2），每次操作使用新目的，先前一次损失保留。比较的定义属该构造。harmful 的标题结论是实例：取得的原目标为参与计数，既有比较支持学习实践，五次实际操作使用新目的并保留先前一次损失。",
+    "en": "In the supplied two-practice educational construction, for all work, reserve and used units, selector and number of operations: a practice runs n cycles from ⟨w,q,z⟩ exactly when n = 0, or 2 ≤ w and the work covers the cycles the reserve does not support (q/2 supported cycles where the selector feeds the practice back, none otherwise); every operation of the learning goal consumes it, keeps the selector, adds the transition loss if any and appends one record. For every condition of the construction, the comparison warrants learning over attendance exactly under access loss with kept transition maintenance, and revision completes exactly there, that is exactly where it is warranted; for every such condition, after revision and reform n operations run exactly when n ≤ 5 (n ≤ 2 without reforming the selector), each consuming the new goal, and the earlier loss is retained. The comparison's definitions belong to the construction. The harmful headline is an instance: acquisition forms the attendance goal, the existing comparison supports learning, and five actual operations consume the new goal while retaining the earlier loss."
   },
   "hypotheses": [
     {
@@ -31,7 +31,8 @@
     "Becoming.MachineInstances.completed_isSome_iff",
     "Becoming.MachineInstances.revision_continues",
     "Becoming.MachineInstances.harmful_instance",
-    "Becoming.MachineInstances.harmful_bounds"
+    "Becoming.MachineInstances.harmful_bounds",
+    "Becoming.MachineInstances.better_iff"
   ],
   "dependencies": [],
   "related": [],
@@ -64,7 +65,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
       "declarations": [
         "Becoming.MachineInstances.cycle_eq",
         "Becoming.MachineInstances.cycles_iff",
@@ -77,7 +78,9 @@
         "Becoming.MachineInstances.revised_class",
         "Becoming.MachineInstances.revision_continues",
         "Becoming.MachineInstances.harmful_instance",
-        "Becoming.MachineInstances.harmful_bounds"
+        "Becoming.MachineInstances.harmful_bounds",
+        "Becoming.MachineInstances.better_iff",
+        "Becoming.MachineInstances.completed_iff_better"
       ]
     },
     {
@@ -95,7 +98,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
       "declarations": []
     },
     {
@@ -141,6 +144,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第117节）：主张加入修订根据的律：外围 MachineInstances 的 better_iff 与 completed_iff_better——对构造的每个条件，比较恰在访问有损而转变维护保留时认可学习优于参与，修订恰在此处完成；比较的定义属构造。主张中“账户”改为“工作、储备与已用单位”，意义不变。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 MachineInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
+      "en": "14 October 2026, open-issues plan (study section 117): the claim now adds the law of the warrant for revision: better_iff and completed_iff_better in the periphery MachineInstances, for every condition of the construction the comparison warrants learning over attendance exactly under access loss with kept transition maintenance, and revision completes exactly there; the comparison's definitions belong to the construction. In the claim, “account” now reads “work, reserve and used units”, meaning unchanged. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
     }
   ]
 }

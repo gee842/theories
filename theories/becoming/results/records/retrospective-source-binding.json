@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "reviewed_at_utc": "2026-10-14T09:00:00+00:00",
   "claim": {
-    "zh": "取得的来源路径约束生成旧命名记录的原子候选；校准与历史覆盖条件下唯一绑定正确（既有的覆盖定理对每个记录成立）。取得词库的解释律的实例：先命名后校准的经历之后的绑定视图——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合；另有有限响应见证，同时保留后期路径改变造成的倒推错误。",
-    "en": "Acquired production-route constraints generate atomic candidates for earlier naming records; unique binding is correct under calibration and historical-coverage conditions (the existing coverage theorem holds for every record). An instance of the interpretation law for acquired lexicons: the binding view after the naming-before-calibration history — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms; a finite response has a separate witness, and backward-inference failure after a later route change is retained."
+    "zh": "经一族解释读记录：对每类记录、意义与世界，每条关涉记录都被某个以目标为目标的族内世界解释时，形式解析为目标，恰当不重复候选范围中的其他每个意义，都被某条没有带该意义的族内世界能解释的关涉记录排除。对经取得的来源路径重读的旧命名记录：保留包的记录恰提供以已学路线、被允许扰动产生其报告的世界之原子；对每个记忆、扰动范围、形式与目标，若该形式的每个包都由某个以目标为目标的已学世界产生，绑定视图把形式解析为目标，恰当其他每个意义都被该形式的某个包排除，而没有以该意义为目标的已学世界产生此包；此时唯一绑定正确（既有的覆盖定理由此对每个记录得出）。先命名后校准的经历（retrospective 36）是实例：其两个保留包分离两个原子，故每个有限编码序列的解释是其原子的组合。后期真实路线改变后，较早的包不由任何以其目标为目标的已学世界产生，是失败一侧；另有有限响应见证。",
+    "en": "Records read through a family of explanations: for every type of records, meanings and worlds, where each bearing record is explained by some family world with the target, a form resolves to the target exactly when every other meaning of a repertoire without repeats is ruled out by some bearing record that no family world with that meaning explains. For earlier naming records reread through acquired production routes: a retained packet’s record offers exactly the atoms of the worlds, a learned route under an admitted fault, that produce its reports; for every memory, fault envelope, form and target whose packets of the form are each produced by some learned world with the target, the binding view resolves the form to the target exactly when every other meaning is ruled out by some packet of the form that no learned world with that meaning produces, and unique binding is then correct (the existing coverage theorem follows for every record). The naming-before-calibration history (retrospective 36) is an instance: its two retained packets separate both atoms, so every finite encoded sequence is interpreted as the assembly of its atoms. After a later real route change the earlier packet is produced by no learned world with its target, the failing side; a finite response has a separate witness."
   },
   "hypotheses": [
     {
@@ -34,7 +34,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean",
   "aliases": [
     "Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use",
-    "Becoming.MachineInstances.retrospective_interprets_every"
+    "Becoming.MachineInstances.retrospective_interprets_every",
+    "Becoming.CrossSituational.resolves_explained_iff",
+    "Becoming.MachineInstances.retrospective_resolves_iff"
   ],
   "dependencies": [
     {
@@ -112,10 +114,26 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
       "declarations": [
         "Becoming.MachineInstances.retrospective_groups",
-        "Becoming.MachineInstances.retrospective_interprets_every"
+        "Becoming.MachineInstances.retrospective_interprets_every",
+        "Becoming.MachineInstances.mem_alternatives",
+        "Becoming.MachineInstances.retrospective_resolves_iff",
+        "Becoming.MachineInstances.produced_of_calibration",
+        "Becoming.MachineInstances.coverage_from_law",
+        "Becoming.MachineInstances.retrospective_separated",
+        "Becoming.MachineInstances.retrospective_from_separation",
+        "Becoming.MachineInstances.changed_route_unproduced"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
+      "role": "proof",
+      "sha256": "ec9d16164845911be802d89fadf0e451fb1f2b1ec01b40cd6a658ad114531899",
+      "declarations": [
+        "Becoming.CrossSituational.resolves_explained_iff",
+        "Becoming.CrossSituational.resolved_is_target"
       ]
     },
     {
@@ -140,6 +158,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
       "role": "receipt",
       "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
       "declarations": []
     }
   ],
@@ -190,6 +214,10 @@
     {
       "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。",
       "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): the general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第117节）：主张改为律先行。新核心模块 Becoming.CrossSituational：经一族解释读记录的律（resolves_explained_iff）；外围 MachineInstances：对每个记忆、扰动范围、形式与目标，绑定视图解析为目标恰当每个对手被某个无已学世界以之产生的包排除（retrospective_resolves_iff）；覆盖定理由律重得（coverage_from_law），retrospective 36 是实例，真实路线改变后目标不被产生（changed_route_unproduced）。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 MachineInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
+      "en": "14 October 2026, open-issues plan (study section 117): the claim now states the law first. New core module Becoming.CrossSituational: the law of records read through a family of explanations (resolves_explained_iff); the periphery MachineInstances: for every memory, fault envelope, form and target, the binding view resolves to the target exactly when every rival is ruled out by a packet no learned world with the rival produces (retrospective_resolves_iff); the coverage theorem follows from the law (coverage_from_law), retrospective 36 is an instance, and after a real route change the target is not produced (changed_route_unproduced). Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
     }
   ]
 }
