@@ -66,9 +66,9 @@ Covers every branch README, including the method and memory archive. These are a
 
 **Significance:** Explains how power changes the conditions of future judgment, beyond the distribution of winners.
 
-**后续：** 已有后续：中性定义下的回返组织（新40项定理／69项审计）、共同组织与旧数学校正（41项／89项），以及局部对齐与共同破坏的方向纠正。建议：说明桥接、感测配方与候选库在持续活动中的形成与修订，完成证书迁移与实地校准。
+**后续：** 已有后续：中性定义下的回返组织（新40项定理／69项审计）、共同组织与旧数学校正（41项／89项），以及局部对齐与共同破坏的方向纠正。10月13日完成：整合说明接通形成、调节分化、后果改变构造方法与候选、实际使用，以及受支持的更替与再次修订；共同脊柱上有实际无限运行，用量与回补不清零；冻结、耗尽、漂移与退役造成的真实损失保留。开放：普遍的经验或规范认证，以及实地校准。
 
-**Next:** Continued: returning organization under the neutral definition (40 new theorems/69 audits), common organization and mathematical reconciliation (41/89), and the corrected direction on local alignment and collective destruction. Proposed: explain how bridge, sensing recipe and candidate repertoire form and change within continuing activity; complete certificate migration and field calibration.
+**Next:** Continued: returning organization under the neutral definition (40 new theorems/69 audits), common organization and mathematical reconciliation (41/89), and the corrected direction on local alignment and collective destruction. Completed on 13 October: the integrated account connects formation, differentiated regulation, consequences changing construction methods and candidates, actual use, and supported succession with further revision, with an actual unending run on the shared spine whose amounts used and returned are never reset, and with the real losses of freezing, exhaustion, drift and retirement retained. Open: universal empirical or normative certification, and field calibration.
 
 **完整论述 / Full account:** [theories/meta-attractor/README.md](../../meta-attractor/README.md)
 
