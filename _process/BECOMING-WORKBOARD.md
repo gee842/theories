@@ -291,7 +291,7 @@ Plan: [OPEN-ISSUES-PLAN.md](research/2026-10-05-generative-foundation-review/roo
 | Stream | Scope | State |
 |---|---|---|
 | push | main → origin | **done** 2c5e378d |
-| A | corrections, plan items 2–10 (records, chapter §8 row) | integrator, on main |
+| A | corrections, plan items 2–10 (records, chapter §8 row) | **done** a04727a4 (items 2–5, 7–10, eight records, paired history notes); item 6, the chapter §8 row, rides with batch 4 |
 | B1 | reaching law (dual of Lasting's ladder) in `Becoming.Lasting`; market 5/12 landing side and the obstructed-seeds theorem as instances; copying residuals (`finite_lineage_inherits` converse, `registered_copy_cells` bonds) | worktree agent; batch 4 |
 | B2 | history-supplies-inputs law for scene, encounter and retrospective binding; acquired-revision, pending-task, joint-practice, formed-goal rows | worktree agent; batch 4 |
 | C1 | “credit” → `includes` (Lean names in Dependence, Horizon, Ranking, Substitution; record and chapter prose; zh 记入 unchanged) | integrator; rides with batch 4 |
