@@ -5819,8 +5819,8 @@ Imports: `Becoming.Countdown`, `ReservedShutdown`
 | [Becoming.ProtocolInstances.recoverable_history_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L95) | 95 |
 | [Becoming.ProtocolInstances.safety_along](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L109) | 109 |
 | [Becoming.ProtocolInstances.interrupted_history_instance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L115) | 115 |
-| [Becoming.ProtocolInstances.charge_some](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L160) | 160 |
-| [Becoming.ProtocolInstances.charge_none](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L166) | 166 |
+| [Becoming.ProtocolInstances.unit_drawn](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L160) | 160 |
+| [Becoming.ProtocolInstances.stalls_unsupported](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L166) | 166 |
 | [Becoming.ProtocolInstances.counts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L180) | 180 |
 | [Becoming.ProtocolInstances.resumeSteps_eq](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L213) | 213 |
 | [Becoming.ProtocolInstances.publishes_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtocolInstances.lean#L225) | 225 |

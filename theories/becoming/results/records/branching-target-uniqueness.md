@@ -33,6 +33,7 @@ Boundary source / 边界来源: [ExplanatoryBranching.lean](../../../../experime
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
 - Related, not a proved adapter / 关联而非已证转换: [joint-target-uniqueness](joint-target-uniqueness.md). 声明形似，但测试与模型不同；未断言这两个引理相互转换。 / Similar header, different tests and models; no adapter between these lemmas is asserted.
+- Related, not a proved adapter / 关联而非已证转换: [configurations-alike-by-relation](configurations-alike-by-relation.md). Alike.functional：相同分离一个框架的配置时，一个配置至多与其中一个相同；配置的同一读作相同时（Ren 同意这一方向），这就是那种同一。 / Alike.functional: where likeness tells a frame's configurations apart, a configuration is alike to at most one of them; with the identity of configurations read as likeness (Ren agreed with the direction), this is that identity.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -42,6 +43,10 @@ No dependency on another migrated record is asserted; source imports and supplie
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json) | — |
 | integration | [EXPLANATORY-BRANCHING-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean) | `Becoming.SameBranchingTests.functional`, `Becoming.Alike.functional` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.separated_iff`, `Becoming.sameBranchingTests_iff_same` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -49,8 +54,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 使用这一测试语言时复用；更丰富语言需保留其本地语义。 / Reuse for this test language; a richer language must retain its own semantics.
 
-Aliases / 别名: `Generative.ExplanatoryBranching.same_functional`
+Aliases / 别名: `Generative.ExplanatoryBranching.same_functional`, `Becoming.SameBranchingTests.functional`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14，整合 I1：在脊柱上陈述。检验分离一个模型，恰当核心的分支检验分离其框架（separated_iff），所以本引理经 sameBranchingTests_iff_same 即 SameBranchingTests.functional；其相同之下的形式为 Alike.functional。公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；脊柱运行 20261014T100026.593496Z 亦将其源码作为继承模块编译并绑定。 / 14 October 2026, integration I1: stated on the spine. Tests separate a model exactly where the core's branching tests separate its frame (separated_iff), so this lemma is SameBranchingTests.functional read through sameBranchingTests_iff_same; its form for likeness is Alike.functional. Empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the spine run 20261014T100026.593496Z also compiles its source as an inherited module and binds it.
+- 2026年10月14日，开放问题计划第五批（整合 I1 落地）：脊柱模块 Becoming.Likeness、Becoming.Bridge 绑定到核心回执 20261014T141427.442103Z，该回执展开新的脊柱别名。 / 14 October 2026, batch 5 of the open-issues plan (landing integration I1): the spine modules Becoming.Likeness, Becoming.Bridge are bound to core receipt 20261014T141427.442103Z, which elaborates the new spine alias.

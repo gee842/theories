@@ -233,7 +233,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DECIDABILITY-INVENTORY.md",
       "role": "integration",
-      "sha256": "03c6aa9e0e176e5c27ffbe04f9b52fd6777a20a44a96a857db825118e1d4beb4"
+      "sha256": "5ee8ba92652071de607f102d31cb66c95cff210efa8a82538c05822513bb9335"
     }
   ],
   "proof_bindings": [
@@ -379,6 +379,10 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（第十七次审查后更正 §9 各行（Continuation“共同净给予”；LossMatching 的方向；Retrodiction 的两值与两端读数相同；“受支持的完成”）；新增 Postponement 行；总数改据新回执；整合 I1 后的 Likeness 与 Bridge 行）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§9 rows corrected after the seventeenth review (Continuation “joint net giving”; LossMatching direction; Retrodiction's two-valued, same-reading ends; “supported completion”); the Postponement row; totals moved to the new receipt; the Likeness and Bridge rows after integration I1)."
+    },
+    {
+      "zh": "2026年10月14日，开放问题计划第五批：审读以下改动后重新绑定：DECIDABILITY-INVENTORY.md（在核心回执 20261014T141427.442103Z 上重新生成；整合 I1 的三项 Likeness 定理以排中律为假设，该类 11 → 14；“陈述依赖它”一类不变，仍为 314 条，本记录的陈述与局限不变）。",
+      "en": "14 October 2026, batch 5 of the open-issues plan: reconciled after reading the changes to DECIDABILITY-INVENTORY.md (regenerated on core receipt 20261014T141427.442103Z; integration I1's three Likeness theorems take excluded middle as a hypothesis, so that class goes 11 → 14; the class of statements depending on it is unchanged at 314, and this record's statement and limitations stand)."
     }
   ]
 }

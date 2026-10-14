@@ -32,6 +32,7 @@ Boundary source / 边界来源: [GenerativeCore.lean](../../../../experiments/in
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
+- Related, not a proved adapter / 关联而非已证转换: [becoming-spine-instances](becoming-spine-instances.md). 桥接以 trace_map 传递框架的共同接续束（Frame.map_preserves_bundles）。 / The bridge transports a frame's joint-continuation bundles by trace_map (Frame.map_preserves_bundles).
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -40,6 +41,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [GenerativeCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean) | `Generative.trace_map` |
 | receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/verification.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -52,3 +54,4 @@ Aliases / 别名: `Generative.trace_map`
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14，整合 I1：GenerativeCore 是 Becoming 核心所依的基础，与核心一同只从 Lean 内置前导编译；脊柱运行 20261014T100026.593496Z 绑定其当前字节，trace_map 公理报告为空。脊柱用它传递可达（Frame.lean 的 Reach.map）与共同接续束（Becoming.Bridge 的 Frame.map_preserves_bundles）。无新定理。 / 14 October 2026, integration I1: GenerativeCore is the foundation the Becoming core builds on and compiles with it from Lean's prelude alone; the spine run 20261014T100026.593496Z binds its current bytes and reports trace_map with an empty axiom report. The spine uses it for reach (Reach.map in Frame.lean) and for joint-continuation bundles (Frame.map_preserves_bundles in Becoming.Bridge). No new theorem.

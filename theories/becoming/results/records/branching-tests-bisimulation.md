@@ -32,6 +32,7 @@ Boundary source / 边界来源: [ExplanatoryBranching.lean](../../../../experime
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
+- Related, not a proved adapter / 关联而非已证转换: [tests-fix-likeness-where-determined](tests-fix-likeness-where-determined.md). 脊柱上的形式：线性检验在相同之下确定时固定相同，分支检验在有限已定的框架上固定相同；本定理是核心定理（以排中律为假设，只需每一动作的结果已列出）在模型上的实例。 / The spine's form: linear tests fix likeness where frames are determined up to likeness, branching tests where they are finite and decided; this theorem is the instance on models of the core theorem with excluded middle as a hypothesis, which needs only each move's outcomes listed.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -40,15 +41,22 @@ No dependency on another migrated record is asserted; source imports and supplie
 | proof | [ExplanatoryBranching.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) | `Generative.ExplanatoryBranching.same_iff_bisimilar` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Likeness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Likeness.lean) | `Becoming.Alike.sameBranchingTests`, `Becoming.apart_of_not_sameBranchingTests`, `Becoming.alike_of_sameBranchingTests_of_em`, `Becoming.alike_iff_sameBranchingTests_of_em`, `Becoming.OutcomesListed.alike_iff_sameBranchingTests`, `Becoming.alike_of_sameBranchingTests_outcomes_iff` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.Frame.ofModel`, `Becoming.branching_bisimulation_iff`, `Becoming.sameBranchingTests_iff_same`, `Becoming.same_iff_alike_of_imageFinite`, `Becoming.same_iff_bisimilar_of_em` |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T100026.593496Z/verification.json) | — |
+| provenance | [2026-10-14-likeness-readings.md](../../../../sources/15-codex-theory-conversations/2026-10-14-likeness-readings.md) | — |
+| receipt | [verification.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T141427.442103Z/verification.json) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
 ## 复用与下一增量 Reuse and next delta
 
-复用同测到后继匹配的证明，按实际问题说明测试范围。 / Reuse the proof from test agreement to successor matching and justify the actual test scope.
+动作或条件未列出时，是否有弱于排中律的原则已足够。 / Whether a principle weaker than excluded middle suffices where the moves or conditions are not listed.
 
-Aliases / 别名: `Generative.ExplanatoryBranching.same_iff_bisimilar`
+Aliases / 别名: `Generative.ExplanatoryBranching.same_iff_bisimilar`, `Becoming.same_iff_bisimilar_of_em`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-14，整合 I1（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。以排中律为假设，核心证明：凡每一动作的结果都已列出，通过同样分支检验的配置就相同，动作与主张无须列出（alike_of_sameBranchingTests_of_em）；经 branching_bisimulation_iff 与 sameBranchingTests_iff_same，本定理即 same_iff_bisimilar_of_em，各声明公理报告为空（草稿构建；回执随落地）。动作与主张已列出时，EitherThroughout 已足够且不可少（OutcomesListed.alike_iff_sameBranchingTests、alike_of_sameBranchingTests_outcomes_iff）；框架有限且已定时无须任何原则。下一步改为问：动作或条件未列出时是否有更弱的原则。外围证明及其回执保持原范围；脊柱运行 20261014T100026.593496Z 亦将其源码作为继承模块编译并绑定。 / 14 October 2026, integration I1 (Ren: “a lot proofs are probably not integrated”): stated on the spine. With excluded middle as a hypothesis, the core proves that configurations passing the same branching tests are alike wherever each move's outcomes are listed, the moves and claims unlisted (alike_of_sameBranchingTests_of_em); through branching_bisimulation_iff and sameBranchingTests_iff_same this theorem is same_iff_bisimilar_of_em, every declaration with an empty axiom report (scratch build; the receipt comes with the landing). Where the moves and claims are listed, EitherThroughout suffices and is needed (OutcomesListed.alike_iff_sameBranchingTests, alike_of_sameBranchingTests_outcomes_iff); where the frames are finite and decided, no principle is needed. The next step now asks whether a weaker principle suffices where the moves or conditions are not listed. The periphery proof and its receipt keep their scope; the spine run 20261014T100026.593496Z also compiles its source as an inherited module and binds it.
+- 2026年10月14日，开放问题计划第五批（整合 I1 落地）：脊柱模块 Becoming.Likeness、Becoming.Bridge 绑定到核心回执 20261014T141427.442103Z，该回执展开新的脊柱别名。 / 14 October 2026, batch 5 of the open-issues plan (landing integration I1): the spine modules Becoming.Likeness, Becoming.Bridge are bound to core receipt 20261014T141427.442103Z, which elaborates the new spine alias.
