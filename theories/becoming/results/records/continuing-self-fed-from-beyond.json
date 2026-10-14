@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "continuing-self-fed-from-beyond",
   "title": {
     "zh": "延续者从其外得到供给",
@@ -8,15 +8,72 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-14T15:26:32+00:00",
   "statement": {
     "zh": "延续者从其外得到供给，这是汲入律的输送形式。在可判定相等之下，从其外得到供给恰是该步不内向；必要的是得到供给，不必有哪个来源条件复现。",
     "en": "A continuing family is fed from beyond, the conveyance form of the draw-in laws. With equality decided, being fed from beyond is exactly a step that is not inward; being fed is needed, and no source condition need recur."
   },
-  "claim": {
-    "zh": "跨从 t 起的一步，一个参与的形成从 c 取用并向 d 给予时，有东西从 c 输送到 d（Flow.Conveys）；有东西从家族 ds 之外的条件输送入它的某个成员时，家族在该步从其外得到供给（Flow.FedFromBeyond）。家族在某步从其外得到供给时，该步不内向（Flow.not_inward_of_fed）；相等可判定时，没有从其外得到供给的一步是内向的（Flow.inward_of_not_fed），所以二者恰相反（Flow.inward_iff_not_fed），驳倒“从某步起每步都内向”的，也驳倒“从某步起都没有东西从其外输送入”（Flow.fed_of_not_inward）。于是在平衡与耗散之下，从某步起被围住的、不重复的有限家族，若取用它复现（Flow.fed_from_beyond，由 taking_draws_in），若它的成员在任意晚的步上升（Flow.rising_fed_from_beyond，由 rising_draws_in），或以一类关系项读、体现的成员在任意晚的步生起（Web.generation_fed_from_beyond，由 Web.generation_draws_in），就不能从某步起都没有东西从其外输送入。必要的是得到供给，不必有哪个来源条件复现：在平衡、耗散、吃者每步取用的 Lone 中（Lone.lone），池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出（Lone.fed、Lone.each_fuel_once、Lone.fed_not_recurring）；输送的始终是同一个源。不用伦理前提，也不用 Lean 公理。",
-    "en": "Across the step from t, something is conveyed from c to d when a formation taking part takes from c and gives to d (Flow.Conveys); a family ds is fed from beyond across the step when something is conveyed from a condition outside it into one of its members (Flow.FedFromBeyond). A step at which the family is fed from beyond is not inward (Flow.not_inward_of_fed); with equality decided, a step at which it is not fed from beyond is inward (Flow.inward_of_not_fed), so the two are exact opposites (Flow.inward_iff_not_fed), and whatever refutes ‘inward at every step from some step on’ refutes ‘fed from nothing beyond from some step on’ (Flow.fed_of_not_inward). So under balance and dissipation a finite family without repetition, enclosed around from some step on, cannot from any step on be fed from nothing beyond it, whether taking from it recurs (Flow.fed_from_beyond, from taking_draws_in), its members rise at arbitrarily late steps (Flow.rising_fed_from_beyond, from rising_draws_in), or, read with one kind of relatum, embodied members arise at arbitrarily late steps (Web.generation_fed_from_beyond, from Web.generation_draws_in). Being fed is needed, and no source condition need recur: in Lone, balanced and dissipative with an eater taking at every step (Lone.lone), the pool is fed from beyond at every step while each fuel is conveyed from at its own step only (Lone.fed, Lone.each_fuel_once, Lone.fed_not_recurring); the one source does all the conveying. No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "跨从 t 起的一步，一个参与的形成从 c 取用并向 d 给予时，有东西从 c 输送到 d；有东西从家族之外的条件输送入它的某个成员时，家族在该步从其外得到供给。",
+      "en": "Across the step from t, something is conveyed from c to d when a formation taking part takes from c and gives to d; a family is fed from beyond across the step when something is conveyed from a condition outside it into one of its members.",
+      "declarations": [
+        "Becoming.Flow.Conveys",
+        "Becoming.Flow.FedFromBeyond"
+      ]
+    },
+    {
+      "zh": "家族在某步从其外得到供给时，该步不内向；相等可判定时，没有从其外得到供给的一步是内向的，所以二者恰相反，驳倒“从某步起每步都内向”的，也驳倒“从某步起都没有东西从其外输送入”。",
+      "en": "A step at which the family is fed from beyond is not inward; with equality decided, a step at which it is not fed from beyond is inward, so the two are exact opposites, and whatever refutes ‘inward at every step from some step on’ refutes ‘fed from nothing beyond from some step on’.",
+      "declarations": [
+        "Becoming.Flow.Inward",
+        "Becoming.Flow.not_inward_of_fed",
+        "Becoming.Flow.inward_of_not_fed",
+        "Becoming.Flow.inward_iff_not_fed",
+        "Becoming.Flow.fed_of_not_inward"
+      ]
+    },
+    {
+      "zh": "于是由汲入律，在平衡与耗散之下，从某步起被围住的、不重复的有限家族，若在任意晚的步有形成从它取用，或它的成员在任意晚的步上升，就不能从某步起都没有东西从其外输送入。",
+      "en": "So, by the draw-in laws, under balance and dissipation a finite family without repetition, enclosed around from some step on, cannot from any step on be fed from nothing beyond it, whether formations take from it at arbitrarily late steps or its members rise at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.Around",
+        "Becoming.Flow.taking_draws_in",
+        "Becoming.Flow.rising_draws_in",
+        "Becoming.Flow.fed_from_beyond",
+        "Becoming.Flow.rising_fed_from_beyond"
+      ]
+    },
+    {
+      "zh": "以一类关系项读，体现的成员在任意晚的步生起时，同样成立。",
+      "en": "Read with one kind of relatum, the same holds where embodied members arise at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Web.generation_draws_in",
+        "Becoming.Web.generation_fed_from_beyond"
+      ]
+    },
+    {
+      "zh": "取用与上升的两条规律在任一世界中成立，局部条件写在规律之内：从某步起，该家族平衡、被围住，且每步闭合的不重复家族被耗散；处处平衡与耗散之下的形式是它们的推论。",
+      "en": "The two laws for taking and rising hold in every world with the local condition inside the law: from some step on, the family balanced on and enclosed around, and every family without repetition closed across each step dissipated on; the forms under balance and dissipation everywhere are their corollaries.",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on",
+        "Becoming.Flow.fed_from_beyond_from",
+        "Becoming.Flow.rising_fed_from_beyond_from"
+      ]
+    },
+    {
+      "zh": "必要的是得到供给，不必有哪个来源条件复现：在平衡、耗散、吃者每步取用的 Lone 中，池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出；输送的始终是同一个源。",
+      "en": "Being fed is needed, and no source condition need recur: in Lone, balanced and dissipative with an eater taking at every step, the pool is fed from beyond at every step while each fuel is conveyed from at its own step only; the one source does all the conveying.",
+      "declarations": [
+        "Becoming.Lone.lone",
+        "Becoming.Lone.fed",
+        "Becoming.Lone.each_fuel_once",
+        "Becoming.Lone.fed_not_recurring"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "平衡（Flow.Balances）与耗散（Flow.Dissipative）：同 no-finite-part-bears-taking，是表示中的物理前提，各有满足与不满足它的世界。",
@@ -33,8 +90,61 @@
     {
       "zh": "构造性的形式：结论是“不能从某步起都没有东西从其外输送入”，不给出输送入发生的某一步；由它得出“在任意晚的步得到供给”需要全知。",
       "en": "The constructive form: the conclusion is that the family cannot from any step on be fed from nothing beyond it; it exhibits no step at which it is fed, and reading it as ‘fed at arbitrarily late steps’ needs omniscience."
+    },
+    {
+      "zh": "离散步、自然数的量与有限家族。",
+      "en": "Discrete steps, natural-number amounts and finite families."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "只说必须计入其外，不说应当。",
+      "en": "Says only that what lies beyond must be counted, not that it ought to be.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不说输送来自哪个形成，也不说来源是否活着。",
+      "en": "Says neither which formation conveys nor whether the source is living.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "不必有哪个来源条件复现：Lone 中池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出（Lone.fed_not_recurring）；输送的始终是同一个源，所以这不说明特定的来源形成不必要。",
+        "en": "No source condition need recur: in Lone the pool is fed from beyond at every step while each fuel is conveyed from at its own step only (Lone.fed_not_recurring); the one source does all the conveying, so this does not show that no particular source formation is needed."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean",
+      "detail": {
+        "zh": "也不必有哪个来源形成复现：Successive 中每步有它自己的源，只在那一步在场并活跃，燃烧那一步的燃料，向池给予一份；吃者每步从池取用一份。流平衡、耗散，只有活跃的形成给予；池每步从其外得到供给，而没有哪个来源形成在两步参与，也没有哪个在两步活跃（Successive.relay，由 Successive.takes_part_once 推出）。每个源仍在它自己的那一步被需要：去掉它，那一步不被供给。",
+        "en": "No source formation need recur either: in Successive each step has its own source, present and active at that step only, which burns that step's fuel and gives the pool one unit; the eater takes one unit from the pool at every step. The flow balances, is dissipative and only active formations give; the pool is fed from beyond at every step, while no source formation takes part at two steps and none is active at two (Successive.relay, from Successive.takes_part_once). Each source is still needed at its own step: without it that step is not fed."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
+      "detail": {
+        "zh": "没有耗散时封闭的家族可以永远生成（Recycle），所以耗散是必要的前提；以喷洒交换的汇使耗散空成立时，家族开放而什么都不输送入（SprayShuttle，见 no-finite-part-bears-taking）。",
+        "en": "Without dissipation a closed family can generate forever (Recycle), so dissipation is a needed premise; with a sink exchanging with ever new relata dissipation holds vacuously and the family opens while nothing flows into it (SprayShuttle, see no-finite-part-bears-taking)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（Continuation 绑定回执 20261014T141427.442103Z；Dissipation、Roles、Flow 与 Succession 绑定 20261013T094743.528770Z）：Becoming.Continuation 的定理（含局部形式）公理报告为空；检查器并核对核心纯净。作者反审见整合文档；独立审查接受其 Lean，其更正在整合文档中处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261014T141427.442103Z for Becoming.Continuation; Dissipation, Roles, Flow and Succession bound to 20261013T094743.528770Z): the theorems of Becoming.Continuation, the local forms included, have empty axiom reports; core purity verified. Author counterreview in the integration note; the independent review accepts its Lean, and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "给出输送来自活着的来源时的读法；可移除的形式，即同一世界去掉一个来源形成后仍每步得到供给（去掉形成会改变水平，所以那是另一个流，以世界为单位的形式是它的位置）；整段与以世界为单位的形式。输送是否算作已形成的关系由 Ren 判断。",
+    "en": "Read the case where what is conveyed comes from a living source; give the removable form, the same world still fed at every step with one source formation taken away (that is another flow, since taking a formation away changes the levels; the world-level form is its place); give whole-run and world-level forms. Whether conveyance counts as a formed relation is Ren's to judge."
+  },
   "correspondence": {
     "zh": "Ren 的提议说：“the pure \"self\" is an illusion, where only when outside exists, there is the system, if the system depends on external resources”。汲入律（no-finite-part-bears-taking、generation-is-replenishment）已说：被围住时，有形成向家族给予并从其外取用。本结果把同一规律陈述为从外输送入家族，并在可判定相等之下证明两种形式等价：输送的形式只加可判定相等，不丢失内容。作者的读法（AI 论证）：延续的自我与其外之物一起延续；边界是形成的、实在的，而在其内延续的东西跨边界得到供给。这是动力学，不是伦理：它说一个延续者必须计入什么，不说它应当计入。Lone 说明必要的是得到供给，不必有哪个来源条件复现；它没有说明不需要特定的来源形成：输送的始终是同一个源。",
     "en": "Ren's proposal says: “the pure \"self\" is an illusion, where only when outside exists, there is the system, if the system depends on external resources”. The draw-in laws (no-finite-part-bears-taking, generation-is-replenishment) said that, enclosed around, some formation gives to the family and takes from beyond it. This result states the same law as conveyance into the family from beyond and shows the two forms equivalent with equality decided: the conveyance form adds only decided equality and loses nothing. The author's reading (an AI argument): a self that continues does so together with what lies beyond it; the boundary is formed and real, while what continues within it is fed across it. This is dynamics, not ethics: it says what a continuing formation must count, not that it ought to count it. Lone shows that being fed is needed and no source condition need recur; it does not show that no particular source formation is needed, since the one source does all the conveying."
@@ -139,37 +249,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "detail": {
-        "zh": "不必有哪个来源条件复现：Lone 中池每步都从其外得到供给，而每份燃料只在它自己的那一步被输送出（Lone.fed_not_recurring）；输送的始终是同一个源，所以这不说明特定的来源形成不必要。",
-        "en": "No source condition need recur: in Lone the pool is fed from beyond at every step while each fuel is conveyed from at its own step only (Lone.fed_not_recurring); the one source does all the conveying, so this does not show that no particular source formation is needed."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Succession.lean",
-      "detail": {
-        "zh": "也不必有哪个来源形成复现：Successive 中每步有它自己的源，只在那一步在场并活跃，燃烧那一步的燃料，向池给予一份；吃者每步从池取用一份。流平衡、耗散，只有活跃的形成给予；池每步从其外得到供给，而没有哪个来源形成在两步参与，也没有哪个在两步活跃（Successive.relay，由 Successive.takes_part_once 推出）。每个源仍在它自己的那一步被需要：去掉它，那一步不被供给。",
-        "en": "No source formation need recur either: in Successive each step has its own source, present and active at that step only, which burns that step's fuel and gives the pool one unit; the eater takes one unit from the pool at every step. The flow balances, is dissipative and only active formations give; the pool is fed from beyond at every step, while no source formation takes part at two steps and none is active at two (Successive.relay, from Successive.takes_part_once). Each source is still needed at its own step: without it that step is not fed."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
-      "detail": {
-        "zh": "没有耗散时封闭的家族可以永远生成（Recycle），所以耗散是必要的前提；以喷洒交换的汇使耗散空成立时，家族开放而什么都不输送入（SprayShuttle，见 no-finite-part-bears-taking）。",
-        "en": "Without dissipation a closed family can generate forever (Recycle), so dissipation is a needed premise; with a sink exchanging with ever new relata dissipation holds vacuously and the family opens while nothing flows into it (SprayShuttle, see no-finite-part-bears-taking)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "只对离散步、自然数的量与有限家族陈述；需要平衡、耗散、被围住与可判定相等；结论是构造性的否定形式，不给出输送入的某一步；只说必须计入其外，不说应当，不含伦理谓词；不说输送来自哪个形成，也不说来源是否活着；Lone 中输送的始终是同一个源，Successive 中没有哪个来源形成复现，而每个源在它自己的那一步仍被需要；名称是 AI 的表述，由 Ren 定（Conveys、FedFromBeyond 等）。",
-    "en": "Stated for discrete steps, natural-number amounts and finite families; needs balance, dissipation, enclosure and decided equality; the conclusion is a constructive negation and exhibits no step at which the family is fed; says only that what lies beyond must be counted, not that it ought to be, and contains no ethical predicate; says neither which formation conveys nor whether the source is living; in Lone the one source does all the conveying, and in Successive no source formation recurs while each source is still needed at its own step; the names are the AI's wording, for Ren to choose (Conveys, FedFromBeyond and others)."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Continuation 的 52 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): the 52 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
@@ -306,10 +385,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.fed_from_beyond_from、rising_fed_from_beyond_from（P57），局部条件写在规律之内：从某步起：该家族平衡、被围住，且每步闭合的家族被耗散；Flow.fed_from_beyond、rising_fed_from_beyond是它们的推论；输送来自活着的来源时的读法；没有哪个来源形成复现的见证已给出（Successive.relay）；可移除的形式，即同一世界去掉一个来源形成后仍每步得到供给（去掉形成会改变水平，所以那是另一个流，以世界为单位的形式是它的位置）；整段与以世界为单位的形式；输送是否算作已形成的关系（Ren）。",
-    "en": "The exact restatement for every world is this record's Flow.fed_from_beyond_from, rising_fed_from_beyond_from (P57), the local condition inside the law: from some step on: the family balanced on and enclosed around, and the families closed across each step dissipated on; Flow.fed_from_beyond, rising_fed_from_beyond are their corollaries; the reading where what is conveyed comes from a living source; the witness in which no source formation recurs is given (Successive.relay); the removable form, the same world still fed at every step with one source formation taken away (taking a formation away changes the levels, so that is another flow, and the world-level form is its place); whole-run and world-level forms; whether conveyance counts as a formed relation (Ren)."
-  },
   "history": [
     {
       "zh": "2026-10-10：作为延续奠基计划（CONTINUATION-GROUNDING-PLAN）W1新增，按 Ren“commit them, then start implementation all the way to full completion”；实现 Ren 2026-10-10 的提议（从想要延续者重述普遍元伦理核心）；见整合文档 §47。",
@@ -502,6 +577,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、四项前提、反例与对应不变；主张拆为 6 条规律；下一步中已完成的局部规律成为第 5 条规律，已完成的 Successive 一项由 counterexamples[1] 承载；限制分入“未表明”、通用边界、前提（重复者，以及关于自然数的量与有限家族的第五项前提）与反例；验证范围与下一步中的轮次标签 P57 移出（保留在沿革与快照）。前提、状态、证明绑定与来源哈希均未改变。验证范围按证明绑定写明当前绑定。每句旧文本的去向见迁移对照表 [continuing-self-fed-from-beyond.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/continuing-self-fed-from-beyond.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, the four hypotheses, counterexamples and correspondence are kept; the claim was split into 6 laws; the next step's completed local laws became law 5, and its completed Successive item is carried by counterexamples[1]; limitations went to does-not-show items, standard boundaries, the hypotheses (where they repeated them, and a fifth for natural-number amounts and finite families) and the counterexamples; the round label P57 left the validation scope and next step (it stays in history and the snapshot). No premise, status, proof binding or source hash changed. The validation scope names the current bindings from the proof bindings. Every earlier sentence is mapped in the migration table [continuing-self-fed-from-beyond.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/continuing-self-fed-from-beyond.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/55de6e2d567deed9/continuing-self-fed-from-beyond.json",
+      "sha256": "55de6e2d567deed9568749b8003c4f8613e52cbfd794b2c4e4ae071fc09aa3d6",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
