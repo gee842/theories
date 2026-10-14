@@ -1,19 +1,19 @@
 # 可判定性清点 / Decidability inventory (P58)
 
-生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261014T100026.593496Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
+生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `20261014T100026.593496Z` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。
 
-Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261014T100026.593496Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof uses it.
+Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated receipt `20261014T100026.593496Z`, its source bytes matching the receipt (a periphery tool importing Lean's own library, which the core never does). Lean reads each row: whether a binder's type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core's `Decided p`) or an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), whether the statement depends on it, and whether the proof uses it.
 
 ## 总数 / Totals
 
 | 类 / Class | 数 / Count |
 |---|---:|
 | 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): decidedness is that statement's own condition | 314 |
-| 只在证明中用到 / used only in proofs | 138 |
+| 只在证明中用到 / used only in proofs | 167 |
 | 不用到 / unused | 0 |
-| 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | 7 |
+| 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary theorems) | 11 |
 | 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | 86 |
-| 证明可判定的定义与实例 / definitions and instances proving decidedness | 94 |
+| 证明可判定的定义与实例 / definitions and instances proving decidedness | 125 |
 | 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | 85 |
 
 ## 理由 / Reasons
@@ -36,10 +36,10 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | 列表成员判定 / list membership | 列表成员的布尔判定：需逐项分辨值的相同 / boolean list membership: tells values apart at each listed member | 1 |
 | 分辨相同 / tells same from different | 分辨相同：证明按两个条件、关系项、值或输入是否相同、或条件是否在家族中分情形 / tells same from different: the proof splits on whether two conditions, relata, values or inputs are the same, or a condition is in a family | 116 |
 | 造出指示 / builds an indicator | 造出指示：证明以已定命题的标记（成立为一、不成立为零）作为一个数，例如一个分数 / builds an indicator: the proof uses the mark of a decided proposition (one where it holds, zero where it fails) as a number, such as a score | 11 |
-| 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 7 |
+| 分情形 / splits on a case | 按规定分情形：证明分别用规定成立与不成立的情形 / splits on a determination: the proof uses both its holding and failing cases | 22 |
 | 守护之步 / a guarded step | 守护之步：每步判定守护是否成立，不成立处停止 / a guarded step: decides the guard at each step and stops where it fails | 10 |
-| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 61 |
-| 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 8 |
+| 找出 / finds | 找出一步或一个成员：陈述断言其存在，不给已定时它只是不能被否证 / finds a step or a member: the statement asserts one exists, which without decidedness is only not refuted | 69 |
+| 造出列表 / builds a list | 造出列表：普查或不重复的列表由已定的成员造出 / builds a list: a census or a list without repetition, from decided members | 14 |
 
 ## 陈述依赖可判定性的定理（计数或构造） / Theorems whose statements depend on decidedness (counting or construction)
 
@@ -399,6 +399,12 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | CrossSituational | `CrossSituational.reads_every_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
 | CrossSituational | `CrossSituational.resolves_explained_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
 | CrossSituational | `CrossSituational.resolves_iff` | `DecidableEq M` | 分辨相同 / tells same from different | — |
+| Decidedness | `Counts.over_stretch_decided` | `∀ (a : α), a ∈ as → ∀ (t : Nat), t ∈ Becoming.steps S (n + 1) → Becoming.Decided (p a t)` | 分情形 / splits on a case | — |
+| Decidedness | `Decided.and` | `Becoming.Decided p`；`Becoming.Decided q` | 分情形 / splits on a case | — |
+| Decidedness | `Decided.exists_below` | `∀ (t : Nat), M ≤ t → t < U → Becoming.Decided (P t)` | 分情形 / splits on a case | — |
+| Decidedness | `Decided.exists_mem` | `∀ (b : β), b ∈ l → Becoming.Decided (P b)` | 分情形 / splits on a case | — |
+| Decidedness | `Decided.not` | `Becoming.Decided p` | 分情形 / splits on a case | — |
+| Decidedness | `Decided.of_not_not` | `Becoming.Decided p` | 分情形 / splits on a case | — |
 | Decidedness | `World.arising_iff_ceasing_of_decidable` | `(t : Nat) → (x : w.Relatum) → Decidable (w.web.active t x)` | 找出 / finds | — |
 | Diagonal | `Diagonal.alike_of_complete` | `(x : B) → Decidable (x = b)` | 分辨相同 / tells same from different | — |
 | Diagonal | `Diagonal.complete_iff_alike` | `DecidableEq B` | 分辨相同 / tells same from different | — |
@@ -432,7 +438,30 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Learning | `Learning.eq_of_not_refuted` | `DecidableEq O` | 分辨相同 / tells same from different | — |
 | Learning | `Learning.every_determines_nothing` | `DecidableEq I` | 分辨相同 / tells same from different | — |
 | Learning | `Learning.every_free` | `DecidableEq I` | 分辨相同 / tells same from different | — |
+| Likeness | `BranchingTest.apart_from_listed` | `∀ (y : S'), Becoming.Decided (q y)` | 找出 / finds | — |
+| Likeness | `Chains.outcomes` | `∀ (k : Nat), Becoming.Decided (α k)`；`∀ (k : Nat), Becoming.Decided (β k)` | 造出列表 / builds a list | — |
+| Likeness | `Chains.outcomesListed` | `∀ (k : Nat), Becoming.Decided (α k)`；`∀ (k : Nat), Becoming.Decided (β k)` | 造出列表 / builds a list | — |
+| Likeness | `Decided.exists_listed` | `∀ (b : β), b ∈ l → Becoming.Decided (P b)` | 分情形 / splits on a case | — |
+| Likeness | `Decided.exists_not_in` | `∀ (b : β), b ∈ l → Becoming.Decided (P b)` | 找出 / finds | — |
+| Likeness | `Decided.exists_not_of_listed` | `∀ (b : β), Becoming.Decided (P b)` | 找出 / finds | — |
+| Likeness | `Decided.exists_of_listed` | `∀ (b : β), Becoming.Decided (P b)` | 分情形 / splits on a case | — |
+| Likeness | `Decided.forall_in` | `∀ (b : β), b ∈ l → Becoming.Decided (P b)` | 分情形 / splits on a case | — |
+| Likeness | `Decided.forall_of_listed` | `∀ (b : β), Becoming.Decided (P b)` | 分情形 / splits on a case | — |
+| Likeness | `Decided.iff` | `Becoming.Decided p`；`Becoming.Decided q` | 分情形 / splits on a case | — |
+| Likeness | `Decided.imp` | `Becoming.Decided p`；`Becoming.Decided q` | 分情形 / splits on a case | — |
+| Likeness | `EitherThroughout.list` | `∀ (k : Nat) (b : β), Becoming.Decided (P k b)` | 找出 / finds | — |
+| Likeness | `OutcomesListed.forth_decided` | `∀ (t : S) (t' : S'), Becoming.Decided (R t t')` | 分情形 / splits on a case | — |
+| Likeness | `OutcomesListed.matched_decided` | `∀ (t : S) (t' : S'), Becoming.Decided (R t t')` | 分情形 / splits on a case | — |
+| Likeness | `OutcomesListed.unmatched` | `∀ (t : S) (t' : S'), Becoming.Decided (R t t')` | 找出 / finds | — |
+| Likeness | `drops_somewhere` | `∀ (k : Nat), Becoming.Decided (P k x)` | 找出 / finds | — |
+| Likeness | `forth_decided` | `∀ (t : S) (t' : S'), Becoming.Decided (R t t')` | 分情形 / splits on a case | — |
+| Likeness | `stops_decreasing` | `∀ (k : Nat) (x : X), Becoming.Decided (P k x)` | 找出 / finds | — |
+| Likeness | `unmatched_of_not_forth` | `∀ (t : S) (t' : S'), Becoming.Decided (R t t')` | 找出 / finds | — |
+| Listing | `Flow.standing_lowers_decided` | `Becoming.IdentityDecided ds` | 造出列表 / builds a list | — |
 | Listing | `Web.arising_of_ceasing_listing` | `(t : Nat) → (a b : F) → a ∈ l t → b ∈ l t → Decidable (a = b)`；`(t : Nat) → (f : F) → Decidable (W.active t f)` | 找出 / finds | `Web.arising_of_ceasing`（给定普查；此处还用 `listOnce` 造普查 / a supplied census; here `listOnce` also constructs it, P77） |
+| Listing | `listsOnceBy_of_decided` | `∀ (a b : α), a ∈ l → b ∈ l → Becoming.Decided (R a b)` | 造出列表 / builds a list | — |
+| Listing | `listsOnce_of_decided` | `Becoming.IdentityDecided l` | 造出列表 / builds a list | — |
+| Listing | `of_listsOnce` | `Becoming.IdentityDecided l` | 造出列表 / builds a list | — |
 | Locality | `Covers.coming_from_of_ceasing` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`（无前提 / no premise, P48） |
 | Locality | `Covers.within` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | — |
 | Locality | `coming_of_ceasing_covered` | `(a : α) → (t : Nat) → Decidable (p a t)` | 找出 / finds | `Covers.not_not_coming_from`、`Covers.ceasing_not_recurring`（无前提 / no premise, P48） |
@@ -503,12 +532,16 @@ Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the
 | Transmission | `Web.inheritsAt_of_split` | `Decidable (W.requires t x c)` | 分情形 / splits on a case | `Web.inheritsAt_not_not`（不判定时继承不能被否证 / inheritance is unrefuted without the decision, P84） |
 | Unfolding | `Frame.claims_recur_iff` | `(c : C) → (t : Nat) → Decidable (F.realized (r.state t) c)` | 找出 / finds | — |
 
-## 排中律作为假设 / Excluded middle as a hypothesis
+## 排中律或其受限形式作为假设 / Excluded middle, in full or restricted form, as a hypothesis
 
-这些是边界定理：它们表明排中律给出什么，配合 `World.law_iff_em`、`World.law_decides`、`World.lpo_of_finite_ends`、`Listed.lpo_of_few`、`Web.lpo_of_ending`、`ChangeBound.lpo_of_ends`，表明命名一步或对每个世界要求复现的形式需要可判定性。 / These are boundary theorems: they show what excluded middle gives, and with `World.law_iff_em`, `World.law_decides`, `World.lpo_of_finite_ends`, `Listed.lpo_of_few`, `Web.lpo_of_ending`, `ChangeBound.lpo_of_ends`, that the forms naming a step or asking recurrence of every world need decidedness.
+这些是边界定理：它们表明排中律或其受限形式（例如 `NowhereDecided`：一个已判定的族是否处处不成立已判定）给出什么，配合 `World.law_iff_em`、`World.law_decides`、`World.lpo_of_finite_ends`、`Listed.lpo_of_few`、`Web.lpo_of_ending`、`ChangeBound.lpo_of_ends`、`alike_decided_iff_em`、`alike_of_sameBranchingTests_iff_em`、`alike_of_sameBranchingTests_decided_steps_iff_em`、`alike_of_sameBranchingTests_outcomes_iff`，表明命名一步、对每个世界要求复现、或由检验判定相同的形式需要可判定性。 / These are boundary theorems: they show what excluded middle, or a restricted form of it (such as `NowhereDecided`: whether a decided family holds nowhere is decided), gives, and with `World.law_iff_em`, `World.law_decides`, `World.lpo_of_finite_ends`, `Listed.lpo_of_few`, `Web.lpo_of_ending`, `ChangeBound.lpo_of_ends`, `alike_decided_iff_em`, `alike_of_sameBranchingTests_iff_em`, `alike_of_sameBranchingTests_decided_steps_iff_em`, `alike_of_sameBranchingTests_outcomes_iff`, that the forms naming a step, asking recurrence of every world or fixing likeness by tests need decidedness.
 
 - Change: `exists_not_of_em`
 - Change: `persists_of_em`
+- Likeness: `EitherNever.of_nowhereDecided`
+- Likeness: `EitherThroughout.of_em`
+- Likeness: `EitherThroughout.of_nowhereDecided`
+- Likeness: `NowhereDecided.of_em`
 - Reserve: `Web.Carries.chain_ends_of_em`
 - Reserve: `Web.chain_ends_of_em_from`
 - Space: `World.law_of_em`

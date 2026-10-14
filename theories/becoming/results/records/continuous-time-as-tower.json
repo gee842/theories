@@ -166,7 +166,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-PREMISE-PLAN.md",
       "role": "integration",
-      "sha256": "9ae6add35b61a6b5c0c97a2ceea0adf9d9f77990955e5a63ac1416dbf65e174b"
+      "sha256": "287b7d116347402db0e0298202d7df58b55059ee5b321535ad9d48fff79713bf"
     },
     {
       "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
@@ -323,6 +323,10 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14，清点读出 `Decided`（开放问题表中的一项，Current math core）：审读以下改动后重新绑定：ZERO-PREMISE-PLAN.md（(b2) 项的可判定性总数改据读出 `Decided` 后重新生成的清点：只在证明中用到 138 → 167；其余文字不变）。主张不变。",
+      "en": "14 October 2026, the inventory reads `Decided` (an item of the open-issues table, Current math core): reconciled after reading the changes to ZERO-PREMISE-PLAN.md (the decidability totals of item (b2) moved to the inventory regenerated with `Decided` read: used only in proofs 138 → 167; no other text changed). The claim is unchanged."
     }
   ]
 }

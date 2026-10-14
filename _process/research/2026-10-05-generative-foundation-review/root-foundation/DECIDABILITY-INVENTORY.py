@@ -5,8 +5,9 @@ python3 -B DECIDABILITY-INVENTORY.py
 A periphery tool: `DECIDABILITY-INVENTORY.lean` imports Lean's own library, which the core never does. The core's
 compiled modules are restored from the checker's shared cache (`check_becoming.py`'s keys; a module not there is
 compiled, nothing is stored), then the Lean file writes one row per binder of a core declaration whose type is a
-decidability family (`Decidable`, `DecidableEq`, `DecidablePred`, or a definition unfolding to one under binders) or a
-propositional excluded middle, with whether the statement depends on it, whether the proof uses it and which
+decidability family (`Decidable`, `DecidableEq`, `DecidablePred`, or a definition unfolding to one under binders), a
+decided proposition (`p ∨ ¬ p`, such as the core's `Decided p`, read at default transparency) or an excluded middle
+(the same for every proposition or predicate a binder ranges over), with whether the statement depends on it, whether the proof uses it and which
 decidability-taking definitions the statement mentions; a row per declaration whose result is one (decidedness proved);
 and a row per theorem whose statement uses a decidability-taking definition with no such binder (decidedness supplied by
 a proved instance). The page `DECIDABILITY-INVENTORY.md` is written next to this file and names the consolidated receipt
@@ -256,10 +257,23 @@ PROOF_KIND = {
         'Lasting.reaches_iff_histories', 'Frame.exists_fresh']},
     'Lasting.orbit_reaches_iff_variant': 'indicate',
     'TimedResponse.different_answers_require_reached': 'split',
+    # 2026-10-14, `Decided` binders read at default transparency (a decided proposition, not excluded middle)
+    **{n: 'split' for n in [
+        'Decided.and', 'Decided.not', 'Decided.imp', 'Decided.iff', 'Decided.of_not_not', 'Decided.exists_mem',
+        'Decided.exists_listed', 'Decided.exists_below', 'Decided.exists_of_listed', 'Decided.forall_in',
+        'Decided.forall_of_listed', 'forth_decided', 'OutcomesListed.forth_decided', 'OutcomesListed.matched_decided',
+        'Counts.over_stretch_decided']},
+    **{n: 'find' for n in [
+        'Decided.exists_not_in', 'Decided.exists_not_of_listed', 'stops_decreasing', 'drops_somewhere',
+        'EitherThroughout.list', 'unmatched_of_not_forth', 'OutcomesListed.unmatched', 'BranchingTest.apart_from_listed']},
+    **{n: 'build' for n in [
+        'listsOnce_of_decided', 'listsOnceBy_of_decided', 'of_listsOnce', 'Flow.standing_lowers_decided',
+        'Chains.outcomes', 'Chains.outcomesListed']},
 }
 # Proved to need decidedness where asked of every world: the boundary theorems.
 BOUNDARY = ['World.law_iff_em', 'World.law_decides', 'World.lpo_of_finite_ends', 'Listed.lpo_of_few',
-            'Web.lpo_of_ending', 'ChangeBound.lpo_of_ends']
+            'Web.lpo_of_ending', 'ChangeBound.lpo_of_ends', 'alike_decided_iff_em', 'alike_of_sameBranchingTests_iff_em',
+            'alike_of_sameBranchingTests_decided_steps_iff_em', 'alike_of_sameBranchingTests_outcomes_iff']
 
 rows = [l.rstrip('\n').split('\t') for l in ROWS.splitlines() if l.strip()]
 theorems = collections.OrderedDict()
@@ -318,21 +332,23 @@ print('reasons', dict(TALLY))
 lines = [
     '# 可判定性清点 / Decidability inventory (P58)', '',
     f'生成：`DECIDABILITY-INVENTORY.py` 在合并检查器回执 `{RUN}` 所检查的核心上运行 `DECIDABILITY-INVENTORY.lean`（源字节与回执一致；'
-    '外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族或排中律、陈述是否依赖它、证明是否用到它。'
+    '外围工具，导入 Lean 自身的库，核心从不导入它）。每一行由 Lean 读出：绑定的类型是否为可判定族、已判定的命题（对给定的 `p` 有 `p ∨ ¬ p`，如核心的 `Decided p`）或排中律（对约束所涉的每个命题或谓词，完全或受限的形式）、陈述是否依赖它、证明是否用到它。'
     'Ren 2026-10-11：“i intuitively feel decidability is too dualist”，并以“please”接受把它局部化（'
     '[原话](../../../../sources/15-codex-theory-conversations/2026-10-11-decidability-local-imbalance-relatum.md)）。', '',
     f'Generated: `DECIDABILITY-INVENTORY.py` runs `DECIDABILITY-INVENTORY.lean` on the core checked by consolidated '
     f'receipt `{RUN}`, its source bytes matching the receipt (a periphery tool importing Lean\'s own library, which the '
     'core never does). Lean reads each row: whether a binder\'s '
-    'type is a decidability family or an excluded middle, whether the statement depends on it, and whether the proof '
-    'uses it.', '',
+    'type is a decidability family, a decided proposition (`p ∨ ¬ p` for a given `p`, such as the core\'s `Decided p`) or '
+    'an excluded middle (`p ∨ ¬ p` for every proposition or predicate a binder ranges over, in full or restricted form), '
+    'whether the statement depends on it, and whether the proof uses it.', '',
     '## 总数 / Totals', '',
     '| 类 / Class | 数 / Count |', '|---|---:|',
     f'| 陈述依赖它（计数或构造），可判定是该陈述自己的条件 / statements depending on it (counting or construction): '
     f'decidedness is that statement\'s own condition | {len(counting)} |',
     f'| 只在证明中用到 / used only in proofs | {len(proof_only)} |',
     f'| 不用到 / unused | {len(unused)} |',
-    f'| 排中律作为假设（边界定理）/ excluded middle as a hypothesis (boundary theorems) | {len(em)} |',
+    f'| 排中律或其受限形式作为假设（边界定理）/ excluded middle, in full or restricted form, as a hypothesis (boundary '
+    f'theorems) | {len(em)} |',
     f'| 计数而可判定被证明，不是假设 / counting with decidedness proved, not assumed | {len(supplied)} |',
     f'| 证明可判定的定义与实例 / definitions and instances proving decidedness | {len(results)} |',
     f'| 取可判定族的定义（计数的原语）/ definitions taking a decidability family (counting primitives) | {len(defs)} |', '',
@@ -368,11 +384,13 @@ lines += table('只在证明中用到可判定性的定理', 'Theorems using dec
                lambda s, bs: LABEL[PROOF_KIND[s]], lambda s: FORMS.get(s, '—'))
 if unused:
     lines += table('不用到的', 'Unused', unused, lambda s, bs: '—', lambda s: '可去掉 / removable')
-lines += ['## 排中律作为假设 / Excluded middle as a hypothesis', '',
-          '这些是边界定理：它们表明排中律给出什么，配合 ' + '、'.join(f'`{b}`' for b in BOUNDARY) +
-          '，表明命名一步或对每个世界要求复现的形式需要可判定性。 / These are boundary theorems: they show what excluded '
-          'middle gives, and with ' + ', '.join(f'`{b}`' for b in BOUNDARY) + ', that the forms naming a step or asking '
-          'recurrence of every world need decidedness.', '']
+lines += ['## 排中律或其受限形式作为假设 / Excluded middle, in full or restricted form, as a hypothesis', '',
+          '这些是边界定理：它们表明排中律或其受限形式（例如 `NowhereDecided`：一个已判定的族是否处处不成立已判定）给出什么，配合 ' +
+          '、'.join(f'`{b}`' for b in BOUNDARY) +
+          '，表明命名一步、对每个世界要求复现、或由检验判定相同的形式需要可判定性。 / These are boundary theorems: they show what '
+          'excluded middle, or a restricted form of it (such as `NowhereDecided`: whether a decided family holds nowhere is '
+          'decided), gives, and with ' + ', '.join(f'`{b}`' for b in BOUNDARY) + ', that the forms naming a step, asking '
+          'recurrence of every world or fixing likeness by tests need decidedness.', '']
 lines += [f'- {m(mod)}: `{short}`' for mod, short in em] + ['']
 by_mod = collections.Counter(m(mod) for mod, *_ in supplied)
 lines += ['## 计数而可判定被证明 / Counting with decidedness proved', '',

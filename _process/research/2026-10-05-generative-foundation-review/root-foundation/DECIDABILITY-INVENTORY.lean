@@ -5,8 +5,10 @@ import Becoming
 P58 decidability inventory (a periphery tool, not part of the core; run by
 `DECIDABILITY-INVENTORY.py`, which writes the page `DECIDABILITY-INVENTORY.md`). For every declaration of the core's
 modules: the binders whose type is a decidability family (`Decidable`, `DecidableEq`,
-`DecidablePred`, or any definition unfolding to one under binders) or a propositional
-excluded middle (`p ∨ ¬ p` under binders); whether the statement depends on the binder; whether
+`DecidablePred`, or any definition unfolding to one under binders), a decided proposition
+(`p ∨ ¬ p` under binders, such as the core's `Decided`, unfolded at default transparency), or an
+excluded middle (the same where `p` depends on a binder ranging over propositions or predicates,
+such as `∀ p : Prop, p ∨ ¬ p`); whether the statement depends on the binder; whether
 the proof (or definition body) uses it; and which decidability-taking definitions the statement
 mentions. Also the declarations whose result is a decidability family (decidedness proved).
 Writes tab-separated rows to the path in `P58_OUT`.
@@ -14,22 +16,29 @@ Writes tab-separated rows to the path in `P58_OUT`.
 
 open Lean Meta
 
-/-- What a binder type is, under binders: a decidability family, an excluded middle, or neither. -/
+/-- What a binder type is, under binders: a decidability family, a decided proposition, an
+excluded middle (a decided proposition for every proposition or predicate a binder ranges over),
+or neither. Unfolds at default transparency, so the core's `Decided p` is read as `p ∨ ¬ p`. -/
 def binderKind (t : Expr) : MetaM (Option String) := do
   try
-    forallTelescopeReducing t fun _ body => do
-      let body ← whnfR body
+    forallTelescopeReducing t fun xs body => do
+      let body ← whnfD body
       if body.isAppOf ``Decidable then return some "decidable"
       if body.isAppOfArity ``Or 2 then
         let a := body.appFn!.appArg!
-        let b ← whnfR body.appArg!
+        let b ← whnfD body.appArg!
         let negOf : Option Expr :=
           if b.isAppOfArity ``Not 1 then some b.appArg!
           else match b with
             | .forallE _ d (.const ``False _) _ => some d
             | _ => none
         if let some d := negOf then
-          if ← isDefEq a d then return some "excluded-middle"
+          if ← isDefEq a d then
+            for x in xs do
+              if a.containsFVar x.fvarId! then
+                if ← forallTelescopeReducing (← inferType x) fun _ b => return (← whnfD b).isProp then
+                  return some "excluded-middle"
+            return some "decided"
       return none
   catch _ => return none
 
