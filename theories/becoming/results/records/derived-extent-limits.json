@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "derived-extent-limits",
   "title": {
     "zh": "推出范围的界限",
@@ -8,15 +8,94 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-13T09:15:27+00:00",
+  "reviewed_at_utc": "2026-10-14T15:40:03+00:00",
   "statement": {
     "zh": "推出的范围单向地到达自身延续所依存的，随想要的结束而结束；满足此处推出的每项要求的持续形成仍可以终结它不需要的生命。沿依存，中心不由动力学推出。",
     "en": "The derived extent runs one way, to what one's continuation depends on, and ends with the want; a continuing formation meeting every requirement derived here can still end a life it does not need. Along dependence the center is not derived from the dynamics."
   },
-  "claim": {
-    "zh": "顺着想要自身延续，给出求取其延续所需之物的理由；由动力学推出的这一范围有四个界限，各有一个满足平衡与活动需要支持的见证。单向：Downstream 中自身的延续只依存于它的地，每步都活跃且被支持；以它所给为生的下游形成在它停止给予后终结（Downstream.one_way）。不必有来源条件复现：必要的是得到供给，不必有哪个来源条件复现（Lone.fed_not_recurring，见 continuing-self-fed-from-beyond；输送的始终是同一个源，所以这不说明不需要特定的来源形成）。想要的视界：Mortal 中一个生命只有两步的形成，活着时每项依存都被满足，它的取用终结了共享条件的更新，依存于该条件的后继者在它终结之后才终结（Mortal.after_its_end）；没有它时，更新者与后继者每步都延续（Mortal.without_continues）。清除者：Clearing 中清除者每步都活跃且被支持，它只依存于自己的资源，资源被更新、每步从其外得到供给（源从当步的燃料输送入）、被联合地在所给之内取用；流平衡且耗散；它清除栖居者的栖息地，它在第一步的事件侵蚀栖居者，后者从第二步起不活跃（Clearing.undermines_within_renewal）。源什么都不需要，这是规定的；这些见证中的终结由其活动规定，见证表明它们与平衡、支持和依存相容，终结的推出在一般定理中。沿依存，中心不由动力学推出：一个事件的形成的延续被另一个事件供给，是指在同一步上后者的形成参与并向前者所需的条件给予（Flow.FedBy）；只有清除者的延续被供给，且只被源供给（Clearing.fedBy_source）。各形成持有并珍视自身的事件，清除者也珍视源的事件（Clearing.valuation）：每个生命都被持有（Web.held_by_formations，见 held-lives-g0-is-centering），S0 处处成立，各立场的意义沿供给封闭，而栖居者在第零步活的事件从清除者的立场没有意义，N_std 与 G0 不成立；同一评价中，清除者在第零步的事件经栖息地与之相关，从清除者自身区域沿已形成关系的传递不成立（Clearing.center_not_derived）。所以这条界线对沿依存推出的范围成立，对沿每个已形成关系推出的范围不成立。S0 只涉及活的主张：清除者在第一步的事件活跃而不活，S0 对它无所说（Clearing.clearer_not_living）。不用伦理前提，也不用 Lean 公理。",
-    "en": "Following a want for one's continuation gives reason to secure what that continuation needs; the extent so derived from the dynamics has four limits, each with a witness meeting balance and activity needing support. One way: in Downstream the self's continuation requires only its ground, and the self is active and supported at every step; a downstream formation living on what the self gives ends once the self stops giving (Downstream.one_way). No source condition need recur: being fed is needed, and no source condition need recur (Lone.fed_not_recurring, see continuing-self-fed-from-beyond; the one source does all the conveying, so this does not show that no particular source formation is needed). The horizon of the want: in Mortal a formation whose life is two steps has every dependence met while it lives, its taking ends the renewal of a shared condition, and a successor depending on that condition ends after it has ended (Mortal.after_its_end); without it the renewer and the successor continue at every step (Mortal.without_continues). The clearer: in Clearing the clearer is active and supported at every step and depends only on its resource, which is renewed, fed from beyond at every step (the source conveys the step's fuel into it) and taken from jointly within what is given; the flow balances and is dissipative; the clearer clears the dweller's habitat, its event at step one undermines the dweller, and the dweller is inactive from step two on (Clearing.undermines_within_renewal). The source requires nothing by stipulation; the endings in these witnesses are stipulated in their activity, the witnesses show them consistent with balance, support and dependence, and the general theorems are where endings are derived. Along dependence the center is not derived from the dynamics: the continuation of an event's formation is fed by another event when, at their common step, the other's formation takes part and gives to a condition the first requires (Flow.FedBy); only the clearer's continuation is fed, and only by the source (Clearing.fedBy_source). With each formation holding and valuing its own events and the clearer valuing also the source's (Clearing.valuation), every life is held (Web.held_by_formations, see held-lives-g0-is-centering), S0 holds everywhere and each standpoint's significance is closed along feeding, while the dweller's living event at step zero has no significance from the clearer, so N_std and G0 fail; in the same valuation the clearer's event at step zero is related to it through the habitat, and transmission out of the clearer's own region along the formed relations fails (Clearing.center_not_derived). So the line holds for an extent derived along dependence and fails for one derived along every formed relation. S0 ranges over living claims: the clearer's event at step one is active and not living, and S0 says nothing of it (Clearing.clearer_not_living). No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "单向：Downstream 中流平衡，活动需要支持；自身的延续只依存于它的地，每步都活跃且被支持，而以它所给为生的下游形成在它停止给予后终结。",
+      "en": "One way: in Downstream the flow balances and activity needs support; the self's continuation requires only its ground, and the self is active and supported at every step, while the downstream formation living on what the self gives ends once the self stops giving.",
+      "declarations": [
+        "Becoming.Downstream.flow",
+        "Becoming.Downstream.web",
+        "Becoming.Downstream.balances",
+        "Becoming.Downstream.dependent",
+        "Becoming.Downstream.one_way",
+        "Becoming.Web.Supported"
+      ]
+    },
+    {
+      "zh": "不必有来源条件复现：必要的是得到供给（continuing-self-fed-from-beyond），而 Lone 是平衡、耗散的流，池每步从其外得到供给，没有哪份燃料在它自己那一步之后被输送。",
+      "en": "No source condition need recur: being fed is needed (continuing-self-fed-from-beyond), while in Lone, a balanced, dissipative flow, the pool is fed from beyond at every step and no fuel is conveyed at a step after its own.",
+      "declarations": [
+        "Becoming.Lone.fed_not_recurring"
+      ]
+    },
+    {
+      "zh": "想要的视界：Mortal 中流平衡、活动需要支持，一个生命只有两步的形成活着时每项依存都被满足；它的取用终结了共享条件的更新，依存于该条件的后继者在它终结之后才终结。没有它时，更新者与后继者每步都延续。",
+      "en": "The horizon of the want: in Mortal, balanced and with activity needing support, a formation whose life is two steps has every dependence met while it lives; its taking ends the renewal of a shared condition, and a successor depending on that condition ends after it has ended. Without it, the renewer and the successor continue at every step.",
+      "declarations": [
+        "Becoming.Mortal.flow",
+        "Becoming.Mortal.web",
+        "Becoming.Mortal.balances",
+        "Becoming.Mortal.dependent",
+        "Becoming.Mortal.after_its_end",
+        "Becoming.Mortal.without",
+        "Becoming.Mortal.kept",
+        "Becoming.Mortal.without_continues"
+      ]
+    },
+    {
+      "zh": "清除者：Clearing 的流平衡、耗散、活动需要支持；清除者每步都活跃且被支持，只依存于自己的资源，资源被更新、每步从其外得到供给（源从当步的燃料输送入）、被联合地在所给之内取用。它清除栖居者的栖息地：它在第一步的事件侵蚀栖居者，后者从第二步起不活跃。",
+      "en": "The clearer: Clearing's flow balances, is dissipative and has activity needing support; the clearer is active and supported at every step and depends only on its resource, renewed, fed from beyond at every step (the source conveys the step's fuel into it) and taken from jointly within what is given. It clears the dweller's habitat: its event at step one undermines the dweller, inactive from step two on.",
+      "declarations": [
+        "Becoming.Clearing.flow",
+        "Becoming.Clearing.web",
+        "Becoming.Clearing.balances",
+        "Becoming.Clearing.dependent",
+        "Becoming.Clearing.dissipative",
+        "Becoming.Clearing.fed",
+        "Becoming.Clearing.undermines_within_renewal",
+        "Becoming.Web.UnderminingAt"
+      ]
+    },
+    {
+      "zh": "沿依存：一个事件的形成的延续被另一个事件供给，是指在同一步上后者的形成参与并向前者所需的条件给予；Clearing 中只有清除者的延续被供给，且只被源供给。",
+      "en": "Along dependence, the continuation of an event's formation is fed by another event when, at their common step, the other's formation takes part and gives to a condition the first requires; in Clearing only the clearer's continuation is fed, and only by the source.",
+      "declarations": [
+        "Becoming.Flow.FedBy",
+        "Becoming.Clearing.fedBy_source"
+      ]
+    },
+    {
+      "zh": "各形成持有并珍视自身的事件，清除者也珍视源的事件：每个生命都被持有，S0 处处成立，各立场的意义沿供给封闭；栖居者在第零步活的事件从清除者的立场没有意义，N_std 与 G0 不成立。",
+      "en": "With each formation holding and valuing its own events, and the clearer valuing also the source's, every life is held, S0 holds everywhere and each standpoint's significance is closed along feeding; the dweller's living event at step zero has no significance from the clearer, so N_std and G0 fail.",
+      "declarations": [
+        "Becoming.Clearing.own",
+        "Becoming.Clearing.sig",
+        "Becoming.Clearing.valuation",
+        "Becoming.Web.held_by_formations",
+        "Becoming.Clearing.center_not_derived"
+      ]
+    },
+    {
+      "zh": "同一评价中，清除者在第零步的事件经栖息地与栖居者的事件相关，从清除者自身区域沿已形成关系的传递不成立；所以“中心不由动力学推出”这条界线对沿依存推出的范围成立，对沿每个已形成关系推出的范围不成立。",
+      "en": "In the same valuation the clearer's event at step zero is related to the dweller's through the habitat, and transmission out of the clearer's own region along formed relations fails; so the line that the center is not derived from the dynamics holds for an extent derived along dependence and fails for one derived along every formed relation.",
+      "declarations": [
+        "Becoming.Clearing.valuation",
+        "Becoming.Clearing.center_not_derived"
+      ]
+    },
+    {
+      "zh": "S0 只涉及活的主张：清除者在第一步的事件活跃而不活，S0 对它无所说。",
+      "en": "S0 ranges over living claims: the clearer's event at step one is active and not living, and S0 says nothing of it.",
+      "declarations": [
+        "Becoming.Clearing.clearer_not_living"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "想要的形式：顺着想要给出求取其延续所需之物的理由；从想要一个目的到有理由求其所需的一步是公开的前提，不是定理。",
@@ -35,9 +114,83 @@
       "en": "The source requires nothing, by stipulation (Clearing, Lone); claim-level significance does not separate counting another as a condition from counting it as a being that wants."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "见证是最小的。",
+      "en": "The witnesses are minimal.",
+      "kind": "scope"
+    },
+    {
+      "zh": "Lone 中输送的始终是同一个源，所以这不说明不需要特定的来源形成。",
+      "en": "In Lone the one source does all the conveying, so it does not show that no particular source formation is needed.",
+      "kind": "non-implication",
+      "witness": "Becoming.Lone.fed_not_recurring"
+    },
+    {
+      "zh": "更强的要求（例如对他者依存的计入）没有被排除，只是不在此处由想要自身延续推出的要求之中。",
+      "en": "Stronger requirements (such as counting others' dependence) are not excluded, only not among those derived here from wanting one's own continuation.",
+      "kind": "scope"
+    },
+    {
+      "zh": "关于中心的界线只在推出的范围沿依存、并且某个活的主张在某个想要者的依存闭包之外时成立，在依存使每两个生命都相连的整体中不成立。",
+      "en": "The line on the center holds only where the derived extent runs along dependence and some living claim lies outside some wanting formation's dependence closure, not in a whole where dependence links every two lives.",
+      "kind": "scope",
+      "witness": "Becoming.Clearing.center_not_derived"
+    },
+    {
+      "zh": "见证表明其规定的终结与平衡、支持和依存相容；终结的推出在一般定理中。",
+      "en": "The witnesses show their stipulated endings consistent with balance, support and dependence; endings are derived in the general theorems.",
+      "kind": "scope"
+    },
+    {
+      "zh": "不评价清除者，也不推出它应当保护他者。",
+      "en": "It evaluates no clearer and does not infer that the clearer ought to protect others.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "伤害读在哪个层次由 Ren 选择。",
+      "en": "At which level harm is read is Ren's choice.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "清除者满足此处推出的每项要求而终结另一个形成（Clearing.undermines_within_renewal）。",
+        "en": "The clearer meets every requirement derived here and ends another formation (Clearing.undermines_within_renewal)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "单向（Downstream.one_way）与想要的视界（Mortal.after_its_end；没有它时其余延续，Mortal.without_continues）。",
+        "en": "One way (Downstream.one_way) and the horizon of the want (Mortal.after_its_end; without it the others continue, Mortal.without_continues)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
+      "detail": {
+        "zh": "沿依存，中心不由动力学推出；沿每个已形成关系的传递在同一见证中不成立（Clearing.center_not_derived）。",
+        "en": "Along dependence the center is not derived from the dynamics; transmission along every formed relation fails in the same witness (Clearing.center_not_derived)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Continuation 的当前字节绑定回执 20261014T141427.442103Z，Becoming.Dependence 的绑定回执 20261014T091930.724493Z，Becoming.Standpoints 的绑定回执 20261013T094743.528770Z；源声明公理报告全空，检查器并核对核心纯净。作者反审见整合文档；独立审查（见来源）接受其 Lean，其更正在整合文档中处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the current bytes of Becoming.Continuation are bound to receipt 20261014T141427.442103Z, those of Becoming.Dependence to receipt 20261014T091930.724493Z and those of Becoming.Standpoints to receipt 20261013T094743.528770Z; every source declaration has an empty axiom report, and core purity is verified. Author counterreview in the integration note; the independent review (listed under sources) accepts its Lean, and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "伤害的层级（个体、谱系、整体）在见证上的形式；跨世代的想要是否越过想要的视界；终结他者服务于清除者延续的见证（元吸引子的更强情形）；强制形式的终结（对 active 量化）；同一世界去掉一个来源形成后仍每步得到供给的见证；整段读法上的同一界限。",
+    "en": "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations passes its horizon; a witness where ending another serves the clearer's continuation (a stronger case of the meta-attractor); forced endings (quantifying over active); a witness still fed at every step with one source formation removed from the same world; the same limits on the whole-run reading."
+  },
   "correspondence": {
-    "zh": "Ren 的提议说：“all above does not require any axiom”，又说那条公理“closes the whole”。AI 的分析（Ren 答“exactly”）说：推出的范围单向地到达自身所依存的，以条件而不是以想要的存在者到达他者，而谨慎的总体化者（其见证现名 `Clearing`）满足它的全部；所以动力学定出系统的范围，定不出中心。本结果给出这四个界限的见证。计划把第四个见证当作检验：若推出的要求迫使立场中立，中心就会由动力学推出。独立审查（W8）指出，最初的见证所含的传递合取由 S0 推出，Flow 与 Web 的谓词从不约束意义，所以检验如原样提出不可能失败；“见证造出来了”作为检验通过的说法撤回。现在的见证含沿依存的封闭：清除者的意义沿供给它的事件传递，仍不到达栖居者。沿每个已形成关系读时，同一见证中从清除者自身区域的传递不成立；在依存使每两个生命都相连的整体中，S0 加沿依存的 N_rel 给出 G0（held-lives-g0-is-centering 的 significant_of_transmits）。所以“中心不由推出”的范围是：推出的范围沿依存，并且某个活的主张在某个想要者的依存闭包之外。清除者是元吸引子所选出的自我的一种形式：它不是不计入其外，而是只计入它自己的延续所需的那部分。这不是对它的道德判决（AI 的读法）。",
-    "en": "Ren's proposal says “all above does not require any axiom” and that the one axiom “closes the whole”. The AI analysis, which Ren answered “exactly”, said the derived extent runs one way, to what the self depends on, reaches others as conditions rather than as beings that want, and is all satisfied by a careful totalizer (the witness now named `Clearing`); so the dynamics fixes a system's extent, not its center. This result gives witnesses of these four limits. The plan took the fourth witness as a test: had the derived requirements forced standpoint neutrality, the center would follow from the dynamics. The independent review (W8) found that the first witness's transmission conjunct follows from S0 and that flow and web predicates never constrain significance, so the test as posed could not fail; ‘the witness exists’ as a passed test is withdrawn. The present witness includes closure along dependence: the clearer's significance passes to the events feeding it and still does not reach the dweller. Read along every formed relation, transmission out of the clearer's own region fails in the same witness; in a whole where dependence links every two lives, S0 with N_rel along dependence gives G0 (significant_of_transmits in held-lives-g0-is-centering). So ‘the center is not derived’ holds where the derived extent runs along dependence and some living claim lies outside some wanting formation's dependence closure. The clearer is one form of the self the meta-attractor selects: it does not fail to count what lies beyond it, it counts only what its own continuation needs. This is not a moral verdict on it (an AI reading)."
+    "zh": "Ren 的提议说：“all above does not require any axiom”，又说那条公理“closes the whole”。AI 的分析（Ren 答“exactly”）说：推出的范围单向地到达自身所依存的，以条件而不是以想要的存在者到达他者，而谨慎的总体化者（其见证现名 `Clearing`）满足它的全部；所以动力学定出系统的范围，定不出中心。本结果给出这四个界限的见证。作为检验（若推出的要求迫使立场中立，中心就会由动力学推出），最初的见证不可能失败：Flow 与 Web 的谓词从不约束意义，其传递合取由 S0 推出，如独立审查所指出；“见证造出来了”作为检验通过的说法撤回，现在的见证含沿依存的封闭。在依存使每两个生命都相连的整体中，S0 加沿依存的 N_rel 给出 G0（held-lives-g0-is-centering 的 significant_of_transmits）。清除者是元吸引子所选出的自我的一种形式（AI 的读法）：它不是不计入其外，而是只计入它自己的延续所需的那部分。",
+    "en": "Ren's proposal says “all above does not require any axiom” and that the one axiom “closes the whole”. The AI analysis, which Ren answered “exactly”, said the derived extent runs one way, to what the self depends on, reaches others as conditions rather than as beings that want, and is all satisfied by a careful totalizer (the witness now named `Clearing`); so the dynamics fixes a system's extent, not its center. This result gives witnesses of these four limits. Taken as a test (had the derived requirements forced standpoint neutrality, the center would follow from the dynamics), the first witness could not fail: flow and web predicates never constrain significance, and its transmission conjunct follows from S0, as the independent review found; ‘the witness exists’ as a passed test is withdrawn, and the present witness includes closure along dependence. In a whole where dependence links every two lives, S0 with N_rel along dependence gives G0 (significant_of_transmits in held-lives-g0-is-centering). The clearer is one form of the self the meta-attractor selects (an AI reading): it does not fail to count what lies beyond it, it counts only what its own continuation needs."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
   "aliases": [
@@ -160,37 +313,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "detail": {
-        "zh": "清除者满足此处推出的每项要求而终结另一个形成（Clearing.undermines_within_renewal）。",
-        "en": "The clearer meets every requirement derived here and ends another formation (Clearing.undermines_within_renewal)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "detail": {
-        "zh": "单向（Downstream.one_way）与想要的视界（Mortal.after_its_end；没有它时其余延续，Mortal.without_continues）。",
-        "en": "One way (Downstream.one_way) and the horizon of the want (Mortal.after_its_end; without it the others continue, Mortal.without_continues)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Standpoints.lean",
-      "detail": {
-        "zh": "沿依存，中心不由动力学推出；沿每个已形成关系的传递在同一见证中不成立（Clearing.center_not_derived）。",
-        "en": "Along dependence the center is not derived from the dynamics; transmission along every formed relation fails in the same witness (Clearing.center_not_derived)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "见证是最小的；“此处推出的要求”限于本组结果中的那些，更强的要求（例如对他者依存的计入）没有被排除，只是不由想要自身延续推出；中心的界线只对沿依存推出的范围成立，在依存使每两个生命都相连的整体中不成立；源什么都不需要是规定的；见证中的终结由其活动规定，Mortal 的终结是给定的；不评价清除者，也不推出它应当保护他者；伤害读在哪个层次由 Ren 选择；名称（Downstream、Mortal、Clearing、clearer、dweller、successor 等）是 AI 按 Ren 10 月 10 日的命名标准所选（零公理部分用描述抽象动力学的形式词，社会与金融词汇不作首选），读法仍由 Ren 选择。",
-    "en": "The witnesses are minimal; ‘requirements derived here’ are those of this group of results, and stronger requirements (such as counting others' dependence) are not excluded, only not derived from wanting one's own continuation; the line on the center holds only for an extent derived along dependence, and not in a whole where dependence links every two lives; that the source requires nothing is stipulated; the witnesses' endings are stipulated in their activity, and Mortal's ending is supplied; evaluates no clearer and does not infer that it ought to protect others; at which level harm is read is Ren's choice; the names (Downstream, Mortal, Clearing, clearer, dweller, successor and others) are the AI's choice under Ren's naming criteria of 10 October (in the zero-axiom part, formal words describing the abstract dynamics, social and financial words not the first choice), and readings remain Ren's."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Continuation 的 52 项定理，Becoming.Standpoints 的 22 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): the 52 theorems of Becoming.Continuation, the 22 theorems of Becoming.Standpoints all have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
@@ -305,10 +427,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "伤害的层级（个体、谱系、整体）在见证上的形式；跨世代的想要（谱系的延续）是否越过想要的视界；终结他者服务于清除者延续的见证（元吸引子的更强情形）；强制形式的终结（对 active 量化）；同一世界去掉一个来源形成后仍每步得到供给的见证（没有哪个来源形成复现的见证已给出：Successive.relay，见 continuing-self-fed-from-beyond）；整段读法上的同一界限。",
-    "en": "The level of harm (member, lineage, whole) on the witnesses; whether a want across generations (a lineage's continuation) passes the horizon of the want; a witness in which ending another serves the clearer's continuation (a stronger case of the meta-attractor); forced endings (quantifying over active); a witness still fed at every step with one source formation taken away from the same world (the witness in which no source formation recurs is given: Successive.relay, see continuing-self-fed-from-beyond); the same limits on the whole-run reading."
-  },
   "history": [
     {
       "zh": "2026-10-10：作为延续奠基计划（CONTINUATION-GROUNDING-PLAN）W4新增，按 Ren“commit them, then start implementation all the way to full completion”；实现 Ren 2026-10-10 的提议（从想要延续者重述普遍元伦理核心）；见整合文档 §47。",
@@ -501,6 +619,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划：迁移 lint 发现最多的 schema-1 记录）：标题、陈述、前提与反例不变；主张拆为 8 条规律，各条对照其 Lean 声明核读（其开头关于想要的一句即前提 1，终结由规定与源什么都不需要两句即前提 3 与前提 4）；限制分入“未表明”、通用边界与前提（重复者）。前提、状态、证明绑定与来源哈希均未改变。规律 1、3、4 写明 Lean 见证所陈述的平衡与活动需要支持。对应保留 Ren 的原话、AI 的分析与读法；审查的工作项标签见第二条沿革，对中心见证的复述移入规律 6、7，“中心不由推出”的范围并入关于这条界线的“未表明”。已完成的下一步（Successive.relay）见相应沿革。证据段写明证明绑定的回执，计数见回执与迁移前的记录。每句旧文本的去向见迁移对照表 [derived-extent-limits.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/derived-extent-limits.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan: migration of the schema-1 records with the most lint findings): title, statement, hypotheses and counterexamples are kept; the claim was split into 8 laws, each read against its Lean declarations (its opening sentence on the want is hypothesis 1, and its statements that the endings are stipulated and that the source requires nothing are hypotheses 3 and 4); limitations went to does-not-show items, standard boundaries and the hypotheses (where they repeated them). No premise, status, proof binding or source hash changed. Laws 1, 3 and 4 name the balance and the support of activity that the Lean witnesses state. The correspondence keeps Ren's words, the AI analysis and the reading; the review's work-item label is in the second history entry, the restatements of the center witness went to laws 6 and 7, and the scope of ‘the center is not derived’ joined the does-not-show item on the line. The completed next-step item (Successive.relay) is in the history entry on it. The evidence paragraph names the binding receipts of the proof bindings, the counts staying in the receipts and the earlier record. Every earlier sentence is mapped in the migration table [derived-extent-limits.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/derived-extent-limits.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/5232f6c27c4429c7/derived-extent-limits.json",
+      "sha256": "5232f6c27c4429c7d9b4f6482057944e4ddd137d3b4cad0e2a02ecfd6dcf4779",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
