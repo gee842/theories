@@ -267,3 +267,13 @@ Owner: Claude (Opus 5.5) merge session, as integrator for these streams; agents 
 | M3 | schema-2 migration of the 15 longest theorem records (counting-under-enclosure, whole-law-of-counting, continued-change-needs-openness, counterfactual-is-the-course, identity-across-steps, rest-at-every-resolution, space-and-its-parts, comparison-where-the-rest-responds, map-of-premises, reserve-defers-ending, counting-standing-and-dependence, one-axiom-yields-g0, entropy-history-and-record, laws-of-one-step, generation-is-replenishment) | worktree agent |
 | M4 | short titles with the old title text as `statement` for 81 schema-1 records whose title is a statement | worktree agent |
 | later | finite-aggregation migration after L1; chapter de-jargon after L1; batch 2 landing (L2, L3); generativity-chain reconciliation note | integrator |
+
+**Landed on main (2026-10-14).** M2 7745e3ad; M4 52d0ff40 (+ title adjustments 77e9364e; history notes now cite Ren's actual approval); L1 merge 3f60e7e2 (Stock, Contacts, LossMatching, instance theorems, P103 parameters, renames A1–A11/B1–B5; core receipt 20261013T204910.042715Z, FallibleInquiry 20261013T205526.452771Z, CorrectionInquiry 20261013T205618.164536Z); M1 merge 386b06b7; M3 merge bc0f8cd5. Records were merged field by field (titles/statements and schema-2 text from the migrations, aliases/bindings/references from L1, both history notes).
+
+**Batch 2 (integration branch `batch2`, not yet on main).** L3 (Assurance, Segmentation, Readout, Gated; bridge Instances; peripheral MachineInstances) and L2 (Joint set-of-parts law, Substitution, Ranking, Continuation restoring law, bridge RenewalBridge, learned-procedure-transmission laws) merged; checker receipts core 20261013T221720.428753Z (passed: 91 spine modules, 4983 theorems, 7020 declaration audits, empty core axiom report) and MachineInstances 20261013T222154.117109Z (passed; standard axioms only); §9 totals updated. Waiting for the chapter de-jargon, then one rebinding pass and the landing.
+
+| Stream | Scope | State |
+|---|---|---|
+| D | chapter de-jargon (P-numbers out of headings, bold leads, module table, in-body references; old anchors kept) | worktree agent on `batch2` (relaunched after a session limit) |
+| L4a | copy-machine laws; historical-source-binding | worktree agent on `batch2` (relaunched) |
+| L4b | market-protected-continuation; correction/shutdown protocols; market laws | worktree agent on `batch2` (relaunched) |
