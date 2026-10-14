@@ -38,7 +38,9 @@ old examples are instances.
 * **Chain growth and doubling rounds.** End attachment grows a chain by the alternating word
   exactly when the pool supplies that word and the support covers one unit per token
   (`grow_iff`); from the empty chain, the mature chain forms exactly when the pool holds at
-  least four of each kind and at least eight units are free (`mature_forms_iff`). `n` rounds from `k` mature
+  least four of each kind and at least eight units are free (`mature_forms_iff`). Attachment
+  keeps the bonds the path on the tokens, so both hold bonds included (`grow_strand_iff`,
+  `mature_strand_iff`). `n` rounds from `k` mature
   chains with the needed material reach `k * 2 ^ n` mature chains exactly when the support
   covers `9 * required n k` (`rounds_mature_iff`), that is, exactly when the core's doubling
   process with draw 9 runs `n` rounds (`rounds_follow_doubling`).
@@ -635,6 +637,42 @@ theorem mature_forms_iff (r : Supply) :
     (grow 8 ⟨[], []⟩ r).1.cells = mature.cells ↔
       Copying.Supplies mature.cells r.pool ∧ 8 ≤ r.free :=
   grow_iff 8 ⟨[], []⟩ r (by decide)
+
+/-- Attachment keeps the chain's bonds the path on its tokens. -/
+theorem attach_path_shaped (s : Strand) (r : Supply) (h : s.bonds = path s.cells.length) :
+    (attach s r).1.bonds = path (attach s r).1.cells.length := by
+  unfold attach
+  split
+  · simp only [List.length_append, List.length_singleton, path]
+    cases hs : s.cells <;> simp_all [path]
+  · exact h
+
+theorem grow_path_shaped : ∀ (n : Nat) (s : Strand) (r : Supply),
+    s.bonds = path s.cells.length → (grow n s r).1.bonds = path (grow n s r).1.cells.length
+  | 0, _, _, h => h
+  | n + 1, s, r, h => grow_path_shaped n _ _ (attach_path_shaped s r h)
+
+/-- **Chain growth, bonds included.** Within the size limit, a chain whose bonds are the path on
+its tokens grows by the alternating word, bonds included, exactly when the pool supplies that
+word and the support covers one unit per token: the bonds need nothing beyond the tokens. -/
+theorem grow_strand_iff (n : Nat) (s : Strand) (r : Supply) (room : s.cells.length + n ≤ 8)
+    (shaped : s.bonds = path s.cells.length) :
+    (grow n s r).1 = ⟨s.cells ++ alternatingFrom (wanted s) n,
+        path (s.cells ++ alternatingFrom (wanted s) n).length⟩ ↔
+      Copying.Supplies (alternatingFrom (wanted s) n) r.pool ∧ n ≤ r.free := by
+  rw [← grow_iff n s r room]
+  have hb := grow_path_shaped n s r shaped
+  constructor
+  · intro h
+    rw [h]
+  · intro h
+    exact strand_eq h (by rw [hb, h])
+
+/-- From the empty chain the mature chain forms, bonds included, exactly when the pool holds at
+least four of each kind and at least eight units are free. -/
+theorem mature_strand_iff (r : Supply) :
+    (grow 8 ⟨[], []⟩ r).1 = mature ↔ Copying.Supplies mature.cells r.pool ∧ 8 ≤ r.free :=
+  grow_strand_iff 8 ⟨[], []⟩ r (by decide) rfl
 
 theorem required_eq : ∀ n k : Nat, Copying.required n k = RecurrentAssembly.required n k
   | 0, _ => rfl
