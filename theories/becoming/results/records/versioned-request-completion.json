@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F03",
-  "reviewed_at_utc": "2026-10-08T18:28:30.702862+00:00",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
   "claim": {
-    "zh": "在银行与队列不变量下，头请求经过剩余路径长度加一次连续 tick 后，发出其原请求值，移除该头项，保留其余队列、路线存储及当前活跃路线。",
-    "en": "Under the bank/queue invariant, the head completes after its remaining path length plus one consecutive tick, emits its requested value and leaves the remaining queue, banks and active route unchanged."
+    "zh": "对每条部分律：任务待完成时每次做一单位剩余工作、无剩余时完成，则任务恰在剩余工作加一次中完成，每段更短的运行使它仍待完成、工作减去所走次数；计入燃料时，work + 1 次完成恰当燃料够用。版本化队列的队首就是这样的任务：在库与队列不变量之下每次走其剩余路径的一跳，所以队首在剩余路径长度加一次连续 tick 后完成，发出所请求的值，不改变其余队列、库与当前路线；更短的运行都不交付。",
+    "en": "For every partial law that, while a task is pending, does one unit of its remaining work per tick and finishes when none is left, the task finishes in exactly its remaining work plus one tick, and every shorter run leaves it pending with the work lowered by the ticks taken; with fuel counted, work + 1 ticks finish exactly when the fuel covers them. The versioned queue's head is such a task: under the bank/queue invariant each tick does one hop of its remaining path, so the head completes after its remaining path length plus one consecutive tick, emits its requested value and leaves the remaining queue, banks and active route unchanged, and no shorter drain delivers it."
   },
   "hypotheses": [
     {
@@ -25,7 +25,11 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean",
   "aliases": [
-    "CorrectionVersioned.valid_head_completes"
+    "CorrectionVersioned.valid_head_completes",
+    "Becoming.Countdown.Advances.completes",
+    "Becoming.Countdown.pending_before",
+    "Becoming.VersionedTaskInstances.head_completes",
+    "Becoming.VersionedTaskInstances.valid_head_instance"
   ],
   "dependencies": [],
   "related": [
@@ -51,8 +55,8 @@
     "en": "Does not show that the original request remains appropriate; finite capacity can block admission and arbitrary scheduling provides no deadline."
   },
   "validation_scope": {
-    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。",
-    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs."
+    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。一般律仅经scratch实编。",
+    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs. General laws: scratch builds only."
   },
   "references": [
     {
@@ -80,6 +84,36 @@
       "role": "provenance",
       "sha256": "605b4cedd6ad2a546d62cdf0bde3c810c6a80aa7c36b4fcb9b639e79fcf29a16",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Countdown.lean",
+      "role": "proof",
+      "sha256": "3ba40755e498f5e9265252cd100ea0ef66ea4bc36dbc7de91fe9cdca85e8b254",
+      "declarations": [
+        "Becoming.Countdown.Counts",
+        "Becoming.Countdown.completes_iff",
+        "Becoming.Countdown.pending_before",
+        "Becoming.Countdown.Advances",
+        "Becoming.Countdown.Advances.counts",
+        "Becoming.Countdown.Advances.completes"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/VersionedTaskInstances.lean",
+      "role": "proof",
+      "sha256": "06002a5dfb21df50815211db9d2fa15e258fc86357c4e48ab80308a2f379291f",
+      "declarations": [
+        "Becoming.VersionedTaskInstances.head_advances",
+        "Becoming.VersionedTaskInstances.head_completes",
+        "Becoming.VersionedTaskInstances.valid_head_instance",
+        "Becoming.VersionedTaskInstances.head_pending_before"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
+      "declarations": []
     }
   ],
   "proof_bindings": [
@@ -103,6 +137,10 @@
     {
       "zh": "2026-10-09：依据 Ren 对认知、处境、边界与方向的澄清，修订本局部结果在因应转化中的解释；复用另会话已完成的在途修订。定理、证明绑定及既有实查状态不变，不把更名或重读计为新成果。",
       "en": "2026-10-09: reconciles the local result with Ren’s clarification about cognition, circumstances, boundaries and direction under responsive transformation, reusing the completed pending-task revision from another study. The theorem, proof binding and checked status are unchanged; terminology and rereading are not new results."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Countdown：计数的工作恰在 work + 1 次中完成、燃料够用时恰好，更短的运行不完成；队首经外围 VersionedTaskInstances（Lean 4.30.0-rc2 与 Mathlib）成为 Countdown.Advances 的实例，valid_head_completes 是实例。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Countdown: counted work finishes in exactly work + 1 ticks, exactly when the fuel covers them, and no shorter run finishes; the head becomes an instance of Countdown.Advances through the periphery VersionedTaskInstances (Lean 4.30.0-rc2 with Mathlib), and valid_head_completes is an instance. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
     }
   ]
 }

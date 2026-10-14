@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
+  "reviewed_at_utc": "2026-10-14T04:30:00+00:00",
   "claim": {
-    "zh": "原有理市场模型的每个物理初态只要维护份额为正，在实际 β=0 纠正下都存在有限 N；初始支持达到含额外耗用的 K_N 时，全部纠正步骤真实执行，实际到达状态在撤除干预后满足原 β=1/2 的永久保护证书。",
-    "en": "Every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N. Initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal."
+    "zh": "对每条带可容许扰动与守卫的变化之律：起点持续n步，恰当某个梯级族（守卫之内的层，每个可容许步从第k+1级落到第k级）在第n级含有它，也恰当每个必要族在第n级含有它；兼为二者的族恰是持续。市场的支持覆盖K₀=5、K(n+1)=(10/9)(K(n)+1+κ)在每个纠正日程与每个不超过κ的冲击下，是必要底线的梯级族；在最坏份额下它恰好：存量单独在5之上持续n步，恰当它至少为K_n。所以原有理市场模型中每个正维护份额的物理状态都有有限的β=0校正期N；初始支持高于K_N（含每步额外耗用）使每个脉冲步可执行，撤出后实际到达状态满足原β=1/2的永久保护证书。",
+    "en": "For every law of change with admissible disturbances and a guard, a start lasts n steps exactly when some ladder holds it at level n (levels within the guard, every admissible step from level k+1 landing at level k), and exactly when every necessary family holds it there; a family that is both is exactly lasting. The market's support cover K0=5, K(n+1)=(10/9)(K(n)+1+kappa) is a ladder for the essential floor under every correction schedule and every shock at most kappa, and at the worst share it is exact: the stock alone lasts n steps at or above 5 exactly when it is at least K_n. So every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N; initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal."
   },
   "hypotheses": [
     {
@@ -29,7 +29,12 @@
   },
   "canonical_source": "experiments/market-generativity/formal/RegimeTransition.lean",
   "aliases": [
-    "RegimeTransition.supported_finite_transition"
+    "RegimeTransition.supported_finite_transition",
+    "Becoming.Lasting.lasts_iff_ladder",
+    "Becoming.Lasting.lasts_iff_necessary",
+    "Becoming.MarketInstances.cover_ladder",
+    "Becoming.MarketInstances.supported_prefix_instance",
+    "Becoming.MarketInstances.cover_exact"
   ],
   "dependencies": [
     {
@@ -93,8 +98,8 @@
     "en": "Sufficient finite-transition conditions, not a complete recovery region or minimal cost; proportional states, actual beta change, initial support and new entry retain separate correspondence obligations."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项审计另列；作者反审已整合，无独立 agent 验收、无新经验校准。",
-    "en": "Lean 4.29.1 actually checks 27 new theorems / 35 declaration audits, separately rebuilding 96 inherited theorems / 118 audits. Author counterreview is integrated; no independent agent acceptance or new empirical calibration."
+    "zh": "Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项审计另列；作者反审已整合，无独立 agent 验收、无新经验校准。一般律仅经scratch实编。",
+    "en": "Lean 4.29.1 actually checks 27 new theorems / 35 declaration audits, separately rebuilding 96 inherited theorems / 118 audits. Author counterreview is integrated; no independent agent acceptance or new empirical calibration. General laws: scratch builds only."
   },
   "references": [
     {
@@ -127,6 +132,41 @@
       "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
       "role": "integration",
       "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Lasting.lean",
+      "role": "proof",
+      "sha256": "13565153d9c8bc28b5c9f7f51fda30520694f2911c02181975d77c8ee0190284",
+      "declarations": [
+        "Becoming.Lasting.Lasts",
+        "Becoming.Lasting.Ladder",
+        "Becoming.Lasting.Necessary",
+        "Becoming.Lasting.lasts_iff_ladder",
+        "Becoming.Lasting.lasts_iff_necessary",
+        "Becoming.Lasting.lasts_iff_of_exact",
+        "Becoming.Lasting.lasts_iff_histories",
+        "Becoming.Lasting.kernel_iff_lasts",
+        "Becoming.Lasting.guarded_upto_iff"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/MarketInstances.lean",
+      "role": "proof",
+      "sha256": "da45239425e3b7ccb94cf690cb97eebf4da4eab9e3549fb822364f3b3d6ba4d3",
+      "declarations": [
+        "Becoming.MarketInstances.covered",
+        "Becoming.MarketInstances.cover_ladder",
+        "Becoming.MarketInstances.supported_prefix_instance",
+        "Becoming.MarketInstances.pulse_prefix_instance",
+        "Becoming.MarketInstances.worstSupport",
+        "Becoming.MarketInstances.cover_exact"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "ed9d4f950017f4cbade7ec2ef39ef9f00f36490c31779e9c52ee18323f50d740",
       "declarations": []
     }
   ],
@@ -163,6 +203,10 @@
     {
       "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
       "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
+    },
+    {
+      "zh": "2026-10-14：按旧记录一般律审计，主张改为一般律先行。新核心模块 Becoming.Lasting：持续n步恰当某个梯级族在第n级含起点，也恰当每个必要族如此；经外围 MarketInstances，覆盖递推对每个纠正日程是梯级族，pulse_prefix_executes 是实例，最坏份额下覆盖恰好（cover_exact）。scratch_build 实编，核心公理报告为空，外围只用标准公理；回执由落地运行绑定。原定理、回执与反例不变。",
+      "en": "2026-10-14: under the general-law audit of older records, the claim now states the law first. New core module Becoming.Lasting: a start lasts n steps exactly when some ladder holds it at level n, and exactly when every necessary family does; through the periphery MarketInstances the cover recurrence is a ladder for every correction schedule, pulse_prefix_executes is an instance, and the cover is exact at the worst share (cover_exact). Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the landing run binds the receipts. The original theorems, receipts and counterexamples are unchanged."
     }
   ]
 }
