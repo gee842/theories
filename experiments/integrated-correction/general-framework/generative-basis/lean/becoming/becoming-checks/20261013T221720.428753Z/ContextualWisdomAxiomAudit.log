@@ -1,0 +1,19 @@
+'Generative.ContextualWisdom.Assured' does not depend on any axioms
+'Generative.ContextualWisdom.assured_congr' does not depend on any axioms
+'Generative.ContextualWisdom.assured_append_iff' does not depend on any axioms
+'Generative.ContextualWisdom.assured_feasible_must' does not depend on any axioms
+'Generative.ContextualWisdom.assured_reached_suffix' does not depend on any axioms
+'Generative.ContextualWisdom.interrupted' does not depend on any axioms
+'Generative.ContextualWisdom.completed_endpoints_omit_interruption' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualWisdom.Move' does not depend on any axioms
+'Generative.ContextualWisdom.update' does not depend on any axioms
+'Generative.ContextualWisdom.regulation' does not depend on any axioms
+'Generative.ContextualWisdom.Band' does not depend on any axioms
+'Generative.ContextualWisdom.regulation_singleton' does not depend on any axioms
+'Generative.ContextualWisdom.opposite_responses_same_band' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualWisdom.no_aliased_response' depends on axioms: [propext]
+'Generative.ContextualWisdom.response' does not depend on any axioms
+'Generative.ContextualWisdom.contextual_response_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ContextualWisdom.itinerary' does not depend on any axioms
+'Generative.ContextualWisdom.contextual_finite_continuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ContextualWisdom.success_changes_next_response' depends on axioms: [propext, Quot.sound]

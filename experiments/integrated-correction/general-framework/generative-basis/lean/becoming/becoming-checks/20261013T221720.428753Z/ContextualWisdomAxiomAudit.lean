@@ -1,0 +1,20 @@
+import ContextualWisdom
+#print axioms Generative.ContextualWisdom.Assured
+#print axioms Generative.ContextualWisdom.assured_congr
+#print axioms Generative.ContextualWisdom.assured_append_iff
+#print axioms Generative.ContextualWisdom.assured_feasible_must
+#print axioms Generative.ContextualWisdom.assured_reached_suffix
+#print axioms Generative.ContextualWisdom.interrupted
+#print axioms Generative.ContextualWisdom.completed_endpoints_omit_interruption
+#print axioms Generative.ContextualWisdom.Move
+#print axioms Generative.ContextualWisdom.update
+#print axioms Generative.ContextualWisdom.regulation
+#print axioms Generative.ContextualWisdom.Band
+#print axioms Generative.ContextualWisdom.regulation_singleton
+#print axioms Generative.ContextualWisdom.opposite_responses_same_band
+#print axioms Generative.ContextualWisdom.no_aliased_response
+#print axioms Generative.ContextualWisdom.response
+#print axioms Generative.ContextualWisdom.contextual_response_preserves
+#print axioms Generative.ContextualWisdom.itinerary
+#print axioms Generative.ContextualWisdom.contextual_finite_continuation
+#print axioms Generative.ContextualWisdom.success_changes_next_response

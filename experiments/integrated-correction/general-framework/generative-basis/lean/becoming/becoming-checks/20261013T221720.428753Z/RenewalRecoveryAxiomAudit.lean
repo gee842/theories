@@ -1,0 +1,11 @@
+import RenewalRecovery
+#print axioms RenewalRecovery.inactive_pair_absorbs
+#print axioms RenewalRecovery.supported_repair_step
+#print axioms RenewalRecovery.repair_window_progress
+#print axioms RenewalRecovery.repair_restores_sustaining_support
+#print axioms RenewalRecovery.pulse
+#print axioms RenewalRecovery.same_future_inputs
+#print axioms RenewalRecovery.two_actual_pulses
+#print axioms RenewalRecovery.supported_pulse_recovers
+#print axioms RenewalRecovery.unsupported_pulse_never_recovers
+#print axioms RenewalRecovery.recovered_history_neither_global_class
