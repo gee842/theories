@@ -46,6 +46,8 @@ Boundary source / 边界来源: [ExplanatoryJointness.lean](../../../../experime
 | proof | [ExplanatoryJointness.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean) | `Generative.ExplanatoryJointness.joint_plan_lifts` |
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Composition.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Composition.lean) | `Becoming.JointPlan`, `Becoming.JointPlan.realizes_image_iff`, `Becoming.JointPlan.plans_lift_iff` |
+| proof | [CompositionBridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CompositionBridge.lean) | `Becoming.joint_plan_lifts_of_stable` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -53,9 +55,10 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接复用 joint_plan_lifts，再提供应用中的叶项对应。 / Reuse joint_plan_lifts and supply the application’s leaf correspondence.
 
-Aliases / 别名: `Generative.ExplanatoryJointness.joint_plan_lifts`
+Aliases / 别名: `Generative.ExplanatoryJointness.joint_plan_lifts`, `Becoming.joint_plan_lifts_of_stable`, `Becoming.JointPlan.realizes_image_iff`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述，附加一个假设。新的核心模块 Becoming.Composition（只导入 Becoming.Likeness）加入一配置把两配置作为部分共同持有的关系（JointFrame），以及联合检验、联合相同、紧致、嵌套计划与足迹；Becoming.CompositionBridge 把 ExplanatoryJointness 与 ExplanatoryFootprints 读作实例。若描述所认同的配置把部分匹配到其所认同的配置且叶的读法正确，则描述实现一嵌套计划，恰当其所描述的每一配置实现之（JointPlan.realizes_image_iff）；计划自每一配置提升即部分匹配（JointPlan.plans_lift_iff）。所以在模型检验稳定处 joint_plan_lifts 在脊柱上成立（joint_plan_lifts_of_stable）；排中律给出稳定，无稳定时经典步骤恰是排中律。公理报告为空（草稿构建；回执随落地）。每一节点各有见证；外围证明及其回执保持原范围。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine, with one added hypothesis. The new core module Becoming.Composition, importing only Becoming.Likeness, adds the relation by which a configuration holds two configurations together as its parts (JointFrame), with joint tests, joint likeness, compactness, nested plans and footprints; Becoming.CompositionBridge reads ExplanatoryJointness and ExplanatoryFootprints as instances. Where configurations a description identifies match parts into configurations it identifies and the leaves are read correctly, a description realizes a nested plan exactly where every configuration it describes does (JointPlan.realizes_image_iff), and plans lifting from every configuration is matching parts (JointPlan.plans_lift_iff). So joint_plan_lifts holds on the spine where the model's tests are stable (joint_plan_lifts_of_stable); excluded middle gives stability, and without it the classical step is exactly excluded middle. Empty axiom reports (scratch build; the receipt comes with the landing). Each node keeps its own witness; the periphery proof and its receipt keep their scope.

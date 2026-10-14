@@ -42,7 +42,8 @@
     "ProtectionPriorityRival.priority_iff",
     "ProtectionPriorityRival.ratio_agrees_with_priority",
     "ProtectionPriorityRival.bounded_score_represents_priority",
-    "ProtectionPriorityRival.g0_recognizes_traded_gains"
+    "ProtectionPriorityRival.g0_recognizes_traded_gains",
+    "Becoming.every_nat_score_trades_by_core"
   ],
   "dependencies": [],
   "related": [
@@ -158,6 +159,24 @@
       "role": "review",
       "sha256": "73e9039c26a96b2ff8b6bbbbcf60ec99a9a4741262486d5b56362c574c3825fe",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "a0302948019608ab86f48702bedc2d7ee5c89d7e4eb51626b86c5fb5be97330b",
+      "declarations": [
+        "Becoming.Comparison.climbs",
+        "Becoming.Comparison.outgrows"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "declarations": [
+        "Becoming.protection_successor_extension",
+        "Becoming.every_nat_score_trades_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -215,6 +234,10 @@
     {
       "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“基本条件优先：独立于 C，排除每个自然数评分，但可由有界评分表示”",
       "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Basic-condition priority: independent of C, excludes every natural-number score, representable by a bounded score”"
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心无前提地证明：严格序满足 C 的自然数评分沿无尽扩展链每一环至少升一（Comparison.climbs），所以对任一配置，链上某一环的评分高于它（Comparison.outgrows）；有界评分不受此约束。此情境中有增益的选项构成无尽扩展链（protection_successor_extension），所以 every_nat_score_trades 即该定律的实例（every_nat_score_trades_by_core），公理报告为空（草稿构建；回执随落地）。力量来自自然数的单位步长，与限制所述一致。外围证明及其回执保持原范围；桥接自此导入 ProtectionPriorityRival，脊柱运行将其作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core proves that a natural-number score whose strict order satisfies C rises by at least one at every link of an endless chain of extensions (Comparison.climbs), so it ranks some link above any configuration whatever (Comparison.outgrows); a bounded score is not constrained so. In this situation the options with gains form such a chain (protection_successor_extension), so every_nat_score_trades is the law's instance (every_nat_score_trades_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The force is the unit step of the natural numbers, as the limitations say. The periphery proof and its receipt keep their scope; the bridge now imports ProtectionPriorityRival, which the spine run compiles as an inherited module."
     }
   ]
 }

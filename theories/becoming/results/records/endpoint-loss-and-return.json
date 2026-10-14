@@ -30,7 +30,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingReversibility.lean",
   "aliases": [
     "BecomingReversibility.same_endpoint_possibilities_iff_return",
-    "BecomingReversibility.irreversible_iff_endpoint_loss"
+    "BecomingReversibility.irreversible_iff_endpoint_loss",
+    "Becoming.same_endpoint_possibilities_iff_return_by_core",
+    "Becoming.irreversible_iff_endpoint_loss_by_core"
   ],
   "dependencies": [],
   "related": [
@@ -84,6 +86,26 @@
       "path": "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
       "role": "provenance",
       "sha256": "a08597b97e1763ffd369b5d3eec8588b1d174adf793e3e44d2f88b5bd6a28729"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Recurrence.lean",
+      "role": "proof",
+      "sha256": "b25b4e8eb827f4d037e779584b98e1c836ca08a84656399203de63419b8f5216",
+      "declarations": [
+        "Becoming.keeps_reach_iff_returns",
+        "Becoming.same_reach_iff_returns",
+        "Becoming.not_returns_iff_loses"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "declarations": [
+        "Becoming.keeps_possible_iff_keeps_reach",
+        "Becoming.same_endpoint_possibilities_iff_return_by_core",
+        "Becoming.irreversible_iff_endpoint_loss_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -103,6 +125,10 @@
     {
       "en": "9 October 2026: checked structural connection and author counterreview registered. Helpers and repeated applications are not counted as independent foundational results.",
       "zh": "2026年10月9日：登记经检查的结构连接及作者反审；辅助声明与重复应用不计作独立基础成果。"
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心定律的实例。核心（Becoming.Recurrence）对每一过程无前提地证明：自 s 可达的每一配置自 t 仍可达，恰当 t 可回到 s（keeps_reach_iff_returns）；沿自 s 至 t 的路径，两者可达的配置相同，恰当此路径可撤回（same_reach_iff_returns）；无回路即失去一可能，s 本身即见证（not_returns_iff_loses）。BecomingReversibility 的可达即核心的可达，一可能即处于某可达配置（keeps_possible_iff_keeps_reach），所以 same_endpoint_possibilities_iff_return 与 irreversible_iff_endpoint_loss 即这些定律（same_endpoint_possibilities_iff_return_by_core、irreversible_iff_endpoint_loss_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 BecomingReversibility，脊柱运行将其作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of core laws. With no premise the core (Becoming.Recurrence) proves, for every process, that every configuration reachable from s stays reachable from t exactly when t leads back to s (keeps_reach_iff_returns), that along a path from s to t the reachable configurations are the same exactly when the path can be undone (same_reach_iff_returns), and that no way back is a lost possibility with s itself as witness (not_returns_iff_loses). BecomingReversibility's reachability is the core's and a possibility is being at some reachable configuration (keeps_possible_iff_keeps_reach), so same_endpoint_possibilities_iff_return and irreversible_iff_endpoint_loss are these laws (same_endpoint_possibilities_iff_return_by_core, irreversible_iff_endpoint_loss_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports BecomingReversibility, which the spine run compiles as an inherited module."
     }
   ]
 }

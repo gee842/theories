@@ -31,7 +31,8 @@ the frame are readings of one unfolding rather than its ground.
   step (`exchange_runs_agree`); without the beginning it does not, and the standings do not fix
   the exchange (`Circulation.start_needed`, `Circulation.standings_leave_exchange`).
 * **A history fixes the law it shows.** Every sequence of configurations and moves is a run of
-  the law it shows (`Shown`, `Shown.run`), the least law it is a run of (`shown_le_iff`). That
+  the law it shows (`Shown`, `Shown.run`), the least law it is a run of (`shown_le_iff`); two
+  laws take the same steps exactly when they have the same traces (`same_steps_iff_traces`). That
   law is determined exactly where the history never takes one move at one configuration to two
   outcomes (`Consistent`, `shown_determined_iff`), and so some determined law admits the history
   exactly then (`exists_law_iff`, through `carries_law_iff` of `Becoming.Mechanism`). Every
@@ -365,6 +366,16 @@ theorem shown_le_iff {g : Nat → S} {m : Nat → A} {Q : Process S A} :
     (∀ s a t, (Shown g m).step s a t → Q.step s a t) ↔ ∀ n, Q.step (g n) (m n) (g (n + 1)) :=
   ⟨fun le n => le _ _ _ ⟨n, rfl, rfl, rfl⟩,
    fun steps _ _ _ ⟨n, at_s, by_a, to_t⟩ => at_s ▸ by_a ▸ to_t ▸ steps n⟩
+
+/-- **A law is fixed by its traces.** Two laws on the same configurations and moves take the
+same steps exactly when they have the same traces with both ends kept; traces of one move
+suffice. -/
+theorem same_steps_iff_traces {P Q : Process S A} :
+    (∀ s a t, P.step s a t ↔ Q.step s a t) ↔ ∀ s as t, Trace P s as t ↔ Trace Q s as t :=
+  ⟨fun same _ _ _ => ⟨trace_map (f := fun x => x) fun s a t => (same s a t).mp,
+     trace_map (f := fun x => x) fun s a t => (same s a t).mpr⟩,
+   fun same s a t => ⟨fun h => trace_singleton_iff.mp ((same s [a] t).mp (trace_singleton_iff.mpr h)),
+     fun h => trace_singleton_iff.mp ((same s [a] t).mpr (trace_singleton_iff.mpr h))⟩⟩
 
 /-- A history is consistent where it never takes one move at one configuration to two
 outcomes. -/

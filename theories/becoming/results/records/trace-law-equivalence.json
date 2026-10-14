@@ -26,7 +26,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
   "aliases": [
     "Generative.Deeper.same_steps_iff_endpoint_traces",
-    "Generative.Model.laws_iff_endpoint_histories"
+    "Generative.Model.laws_iff_endpoint_histories",
+    "Becoming.same_steps_iff_endpoint_traces_by_core",
+    "Becoming.same_steps_iff_traces"
   ],
   "dependencies": [
     {
@@ -106,6 +108,22 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean",
+      "role": "proof",
+      "sha256": "d7cf089a726aacef3def03dce987b04ddc5ffa5e91f00098a27a88d0fde481cb",
+      "declarations": [
+        "Becoming.same_steps_iff_traces"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "declarations": [
+        "Becoming.same_steps_iff_endpoint_traces_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -133,6 +151,10 @@
     {
       "zh": "2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。",
       "en": "2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation."
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。核心（Becoming.Unfolding）无前提地证明：同一配置与动作上的两规律走相同的步，恰当二者具有两端皆保留的相同轨迹，一步之轨迹已足（same_steps_iff_traces）；Deeper.same_steps_iff_endpoint_traces 即此定律（same_steps_iff_endpoint_traces_by_core），Model.laws_iff_endpoint_histories 重述之，公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DynamicConsequences，脊柱运行将其与 DynamicSymmetry 作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. With no premise the core (Becoming.Unfolding) proves that two laws on the same configurations and moves take the same steps exactly when they have the same traces with both ends kept, traces of one move sufficing (same_steps_iff_traces); Deeper.same_steps_iff_endpoint_traces is that law (same_steps_iff_endpoint_traces_by_core), and Model.laws_iff_endpoint_histories restates it, with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DynamicConsequences, which the spine run compiles as an inherited module with DynamicSymmetry."
     }
   ]
 }

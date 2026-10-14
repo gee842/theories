@@ -92,6 +92,8 @@ import Becoming.Copying
 import Becoming.Retrodiction
 import Becoming.CrossSituational
 import Becoming.Likeness
+import Becoming.Composition
+import Becoming.Joining
 import Becoming.Postponement
 
 /-!
@@ -879,6 +881,17 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   where they pass the same branching tests, by a constructive proof in which refinement stops
   within the number of pairs of configurations; deciding likeness for every finite frame is
   excluded middle.
+* `Becoming.Composition` (L3): a whole and the parts it holds together, one more relation among
+  configurations of the same unfolding. Jointly alike configurations pass the same joint tests
+  with no premise; where moves and pairs of parts are compact and the tests stable, passing the
+  same joint tests is joint likeness, and without stability that law is exactly excluded middle.
+  A description lifts the parts exactly where what it identifies matches parts; realized nested
+  plans with exclusive footprints draw on the root's footprint without repeating.
+* `Becoming.Joining` (L3): fragments that join, read through partners, roles and retained
+  references, each as a frame of the spine. A description lifts a joining exactly where having one
+  code is a bisimulation of the partner frame, with no premise; open maps of joinings are the
+  open maps of role frames, two joinings with alike roots have a common refinement, and reading
+  through roles loses what retained references keep.
 * `Becoming.Postponement` (L3): what linear tests see, with no premise. Postponing every branching
   until it shows (a configuration becoming the family a course may have reached), two
   configurations pass the same linear tests exactly where they are alike, and a frame is alike to

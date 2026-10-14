@@ -25,7 +25,9 @@
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
   "aliases": [
-    "Generative.ExplanatoryContextualStructure.unique_common_operational_structure"
+    "Generative.ExplanatoryContextualStructure.unique_common_operational_structure",
+    "Becoming.Joining.unique_common_operational_structure_by_core",
+    "Becoming.Joining.common_operation"
   ],
   "dependencies": [],
   "related": [
@@ -109,6 +111,22 @@
       "role": "integration",
       "sha256": "8fef4fa01911d0e706e128caafe5717c08e218d5a0dee029147f80e1443444cf",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Joining.lean",
+      "role": "proof",
+      "sha256": "c757ec4ede3b5be4673d7a8c47081fff03fb2dd5d4ddb10746c2dd7b84c5dc7c",
+      "declarations": [
+        "Becoming.Joining.common_operation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/JoiningBridge.lean",
+      "role": "proof",
+      "sha256": "9fba8e6a2d78fed004f7821085c70198b2182fc87f09a0c8237673e6a559c1a6",
+      "declarations": [
+        "Becoming.Joining.unique_common_operational_structure_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -140,6 +158,10 @@
     {
       "zh": "2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。",
       "en": "2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings."
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。新的核心模块 Becoming.Joining（只导入 Becoming.Likeness）把片段的结合经伙伴、角色与保留引用读作脊柱的框架；描述提升一结合，恰当同一编码是伙伴框架的互模拟，无前提（Joining.lifts_iff）；Becoming.JoiningBridge 把结合研究读作实例。函数性结合的伙伴框架是确定的，通过相同检验已是相同，无需判定（Joining.common_operation）。外围的上下文即其动作路径所达（realizes_iff_trace），所以 unique_common_operational_structure 在脊柱上逐字成立（Joining.unique_common_operational_structure_by_core），无附加假设，公理报告为空（草稿构建；回执随落地）（外围原证明用到 propext）。外围证明及其回执保持原范围。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. The new core module Becoming.Joining, importing only Becoming.Likeness, reads a joining of fragments as frames of the spine, through partners, roles and retained references; a description lifts a joining exactly where having one code is a bisimulation of the partner frame, with no premise (Joining.lifts_iff); Becoming.JoiningBridge reads the joining studies as instances. For a functional joining the partner frame is determined, and passing the same tests already is likeness, with no decision (Joining.common_operation). A context of the periphery realizes exactly what its course of moves reaches (realizes_iff_trace), so unique_common_operational_structure holds on the spine as stated (Joining.unique_common_operational_structure_by_core), with no added hypothesis and empty axiom reports (scratch build; the receipt comes with the landing) (the periphery proof uses propext). The periphery proof and its receipt keep their scope."
     }
   ]
 }

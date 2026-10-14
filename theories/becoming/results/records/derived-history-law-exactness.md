@@ -48,6 +48,8 @@ Lean 4.29.1实际编译；6项新定理、5项定义，共11项新空审计，�
 | receipt | [receipt.json](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-checks/20261008T181617.432149Z/receipt.json) | — |
 | integration | [DEDUCTIVE-FOUNDATION-TEST.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) | — |
 | provenance | [check_derived_history_law.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_derived_history_law.py) | — |
+| proof | [Readout.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Readout.lean) | `Becoming.Readout.image`, `Becoming.Readout.SameFutures`, `Becoming.Readout.futures_through_iff` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.admittedProcess`, `Becoming.admitted_feasible_iff`, `Becoming.derived_same_steps`, `Becoming.exact_iff_fiber_future_by_core` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -55,7 +57,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 取得共同作用关系及其实际解释的演绎根据；不要求每项具体历史族必然，也不以另一等价编码代替这一根据。 / Establish deductive warrant for the universal operative relationship and its actual interpretation; do not require every particular history language to be necessary or substitute another equivalent encoding for that warrant.
 
-Aliases / 别名: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`
+Aliases / 别名: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`, `Becoming.exact_iff_fiber_future_by_core`
 
 ## 沿革 History
 
@@ -63,3 +65,4 @@ Aliases / 别名: `Generative.DerivedHistoryLaw.exact_iff_fiber_future`
 - 2026-10-09直接闭合审计：保留此前研究全文和证明；区分普遍作用根据与具体规律必然化，本次未闭合根基且无新定理。 / 2026-10-09 direct closure audit: preserves all earlier study bytes and proofs; distinguishes universal operative warrant from making particular laws necessary. No foundational closure or new theorem.
 - 2026-10-09：追加从实际形成活动开始的诊断修正；保留此前研究与证明，未新增结果或闭合根基。 / 2026-10-09: appended the activity-first diagnostic correction; preserved earlier study and proofs, with no new result or foundational closure.
 - 2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。 / 9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心（Becoming.Readout）对每一未必确定的规律无前提地证明：经约化读出的规律（image）从每一约化值走的词恰是该配置能走的词，对每一配置皆然，恰当约化所合并的配置能走相同的词（futures_through_iff），即 law_through_iff 的非确定对应。在语言的已承认历史上（每步加一动作；前缀封闭下 admitted_feasible_iff），derivedProcess 即经摘要读出的规律（derived_same_steps），所以 exact_iff_fiber_future 即该定律（exact_iff_fiber_future_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DerivedHistoryLaw，脊柱运行将其与 ContinuationConditions 作为继承模块编译。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core (Becoming.Readout) proves, for every law that need not be determined, that the law read through a reduction (image) takes from each reduced value exactly the words the configuration can take, for every configuration, exactly when configurations the reduction merges can take the same words (futures_through_iff), the nondeterministic counterpart of law_through_iff. On a language's admitted histories, each step adding one move (admittedProcess; admitted_feasible_iff under prefix closure), derivedProcess is the law read through the summary (derived_same_steps), so exact_iff_fiber_future is that law (exact_iff_fiber_future_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DerivedHistoryLaw, which the spine run compiles as an inherited module with ContinuationConditions.

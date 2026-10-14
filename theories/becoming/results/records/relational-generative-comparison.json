@@ -42,7 +42,8 @@
     "RelationalGrounding.marginals_agree_but_joint_descriptions_differ",
     "RelationalGrounding.strict_comparison_cannot_factor_through_marginals",
     "RelationalGrounding.joint_description_separates",
-    "RelationalGrounding.retained_possibility_does_not_force_joint_actualization"
+    "RelationalGrounding.retained_possibility_does_not_force_joint_actualization",
+    "Becoming.strict_comparison_through_marginals_by_core"
   ],
   "dependencies": [],
   "related": [
@@ -146,6 +147,23 @@
       "role": "provenance",
       "sha256": "54a19521ba6c1345c86060b8379965c42da0429ad3015adc75f326510e98e5c1",
       "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean",
+      "role": "proof",
+      "sha256": "a0302948019608ab86f48702bedc2d7ee5c89d7e4eb51626b86c5fb5be97330b",
+      "declarations": [
+        "Becoming.Comparison.separates"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean",
+      "role": "proof",
+      "sha256": "30bdde186692ef8561f86641510c10d7cda5020e0022c2912b5bad7f9f318e54",
+      "declarations": [
+        "Becoming.Frame.ofInventory",
+        "Becoming.strict_comparison_through_marginals_by_core"
+      ]
     }
   ],
   "proof_bindings": [
@@ -179,6 +197,10 @@
     {
       "zh": "2026-10-08：首次登记本轮新的形式组合与明确边界；信用原有两个模块，不把6个支撑声明计作6项独立奠基发现。",
       "en": "2026-10-08: first registration of this new formal composition and explicit boundaries; credits the two existing modules and does not count six supporting declarations as six independent grounding discoveries."
+    },
+    {
+      "zh": "2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述为核心一般定律的实例。核心无前提地证明：读自配置描述、且不把任何描述与自身相比的比较，只有在描述区分每一扩展与其基础时才满足 C（Comparison.separates）。清单即无动作的框架（Frame.ofInventory）；保留耦合以相同的单项可能性扩展解除耦合，所以 strict_comparison_cannot_factor_through_marginals 即该定律在此的实例（strict_comparison_through_marginals_by_core），公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 RelationalGrounding，脊柱运行将其作为继承模块编译。",
+      "en": "14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine as an instance of a general core law. With no premise the core proves that a comparison read off a description of configurations, comparing no description with itself, satisfies C only if the description tells every extension apart from its base (Comparison.separates). An inventory is a frame with no moves (Frame.ofInventory); retaining the coupling extends releasing it with the same marginal possibilities, so strict_comparison_cannot_factor_through_marginals is that law's instance here (strict_comparison_through_marginals_by_core), with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports RelationalGrounding, which the spine run compiles as an inherited module."
     }
   ]
 }

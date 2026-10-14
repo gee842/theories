@@ -48,6 +48,8 @@ Boundary source / 边界来源: [DynamicConsequences.lean](../../../../experimen
 | integration | [GenerativeModel.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean) | `Generative.Model.laws_iff_endpoint_histories` |
 | review | [SESSION-PROOF-REUSE-SOURCE-CHECKS.json](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| proof | [Unfolding.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Unfolding.lean) | `Becoming.same_steps_iff_traces` |
+| proof | [Bridge.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Bridge.lean) | `Becoming.same_steps_iff_endpoint_traces_by_core` |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -55,10 +57,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 直接引用原定理或已有公开包装；更弱观察范围需另证。 / Reuse the original theorem or its existing public wrapper; weaker observational scope needs a separate result.
 
-Aliases / 别名: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.laws_iff_endpoint_histories`
+Aliases / 别名: `Generative.Deeper.same_steps_iff_endpoint_traces`, `Generative.Model.laws_iff_endpoint_histories`, `Becoming.same_steps_iff_endpoint_traces_by_core`, `Becoming.same_steps_iff_traces`
 
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 公开包装直接调用原定理；P01 已记录此复用，不计两个独立证明。 / The public wrapper directly invokes the original theorem; P01 records the reuse, counted as one result.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
+- 2026-10-14，整合 I3（Ren：“a lot proofs are probably not integrated”）：在脊柱上陈述。核心（Becoming.Unfolding）无前提地证明：同一配置与动作上的两规律走相同的步，恰当二者具有两端皆保留的相同轨迹，一步之轨迹已足（same_steps_iff_traces）；Deeper.same_steps_iff_endpoint_traces 即此定律（same_steps_iff_endpoint_traces_by_core），Model.laws_iff_endpoint_histories 重述之，公理报告为空（草稿构建；回执随落地）。外围证明及其回执保持原范围；桥接自此导入 DynamicConsequences，脊柱运行将其与 DynamicSymmetry 作为继承模块编译。 / 14 October 2026, integration I3 (Ren: “a lot proofs are probably not integrated”): stated on the spine. With no premise the core (Becoming.Unfolding) proves that two laws on the same configurations and moves take the same steps exactly when they have the same traces with both ends kept, traces of one move sufficing (same_steps_iff_traces); Deeper.same_steps_iff_endpoint_traces is that law (same_steps_iff_endpoint_traces_by_core), and Model.laws_iff_endpoint_histories restates it, with empty axiom reports (scratch build; the receipt comes with the landing). The periphery proof and its receipt keep their scope; the bridge now imports DynamicConsequences, which the spine run compiles as an inherited module with DynamicSymmetry.

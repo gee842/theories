@@ -12,6 +12,13 @@ import StandardsBridge
 import CorrectionInfrastructure
 import ExplanatoryBranching
 import OpenFutureRevision
+import RelationalGrounding
+import ProtectionPriorityRival
+import ChanceAdequacy
+import FallibleInspection
+import BecomingReversibility
+import DynamicConsequences
+import DerivedHistoryLaw
 
 /-!
 # Existing interfaces as instances of the spine
@@ -71,6 +78,31 @@ imports none of these modules; the dependency runs from them to the core.
   core's `Valuation.reaches` (`tolerant_chain_reaches_by_core`). Every profile is counted living,
   so the relation runs through merely possible profiles; the spine's readings of `related` relate
   events of one run.
+* Three comparison results of the periphery are instances of core laws. An inventory is a frame
+  with no moves (`Frame.ofInventory`). `RelationalGrounding`'s obstruction, that no strict
+  comparison read off marginal possibilities satisfies C, is `Comparison.separates` at the
+  retained coupling, which extends the released one with the same marginals
+  (`strict_comparison_through_marginals_by_core`). In `ProtectionPriorityRival` the options with
+  gains form an endless chain of extensions (`protection_successor_extension`), so
+  `every_nat_score_trades` is `Comparison.outgrows` (`every_nat_score_trades_by_core`).
+  `ChanceAdequacy`'s mass is the core's weighted mass (`chance_mass_eq`), so its
+  characterization of inclusion by every weighting is `every_weighting_iff`
+  (`all_weights_preserve_mass_iff_by_core`) and its chance floor is `mass_mono`
+  (`fulfillment_floor_by_core`).
+* `FallibleInspection`'s Boolean explanation, on complete reports, is the core's explanation by
+  fallible witnesses (`explains_complete_iff`, `compatible_complete_iff`), so its
+  characterization of complete diagnosability by cross-separation is
+  `Readout.no_common_report_envelopes_iff` (`complete_diagnosability_iff_by_core`). The list
+  facts used are proved here with empty axiom reports, since the library's use `propext`.
+* `BecomingReversibility`'s reachability is the core's, and a possibility is being at some
+  reachable configuration (`keeps_possible_iff_keeps_reach`), so its return laws are the core's
+  `same_reach_iff_returns` and `not_returns_iff_loses`
+  (`same_endpoint_possibilities_iff_return_by_core`, `irreversible_iff_endpoint_loss_by_core`).
+  `Deeper.same_steps_iff_endpoint_traces` is the core's `same_steps_iff_traces`
+  (`same_steps_iff_endpoint_traces_by_core`).
+* `DerivedHistoryLaw.derivedProcess` is the law of a language's admitted histories read
+  through the summary (`admittedProcess`, `derived_same_steps`), so `exact_iff_fiber_future` is
+  the core's `Readout.futures_through_iff` (`exact_iff_fiber_future_by_core`).
 
 Direction conventions differ and are kept: in `GenerativeComparison`,
 `Better first second` says the second is better; in `PracticalJudgment` and
@@ -837,5 +869,305 @@ theorem tolerant_chain_reaches_by_core (s : EvaluatorGrounding.Standpoint Gen Pr
         (selfGood_profiles (step := step) sup self (s.prof g) ⟨g, own, alive, rfl⟩ True.intro))
 
 end Profiles
+
+/-! ## The information C needs: joint bundles, not marginals -/
+
+section JointBundles
+
+/-- An inventory as a frame with no moves: its wholes are the configurations, realizing its
+claims. -/
+def Frame.ofInventory {H Q : Type} (I : GenerativeComparison.Inventory H Q) : Frame H Unit Q :=
+  ⟨⟨fun _ _ _ => False⟩, I.realized⟩
+
+/-- **`strict_comparison_cannot_factor_through_marginals` through the core**: retaining the
+coupling extends releasing it with the same marginal possibilities, so by `Comparison.separates`
+no comparison read off a summary that marginals determine, comparing no summary with itself,
+satisfies C. -/
+theorem strict_comparison_through_marginals_by_core {Summary : Type}
+    (summary : RelationalGrounding.Regime → Summary)
+    (marginalDetermines : ∀ a b, (∀ claim, RelationalGrounding.marginal a claim ↔
+      RelationalGrounding.marginal b claim) → summary a = summary b)
+    (compare : Summary → Summary → Prop) (irreflexive : ∀ s, ¬ compare s s) :
+    ¬ GenerativeComparison.ComparisonPrinciple RelationalGrounding.jointInventory
+      (fun a b => compare (summary a) (summary b)) :=
+  fun comparison =>
+    Comparison.separates (F := Frame.ofInventory RelationalGrounding.jointInventory)
+      (living := RelationalGrounding.jointInventory.generative) irreflexive comparison
+      RelationalGrounding.joint_bundle_extension
+      (marginalDetermines _ _ RelationalGrounding.marginals_agree_but_joint_descriptions_differ.1)
+
+end JointBundles
+
+/-! ## A protected condition against counted gains -/
+
+section ProtectionPriority
+
+open ProtectionPriorityRival in
+/-- Past the protected option, one more gain extends: option `i + 1` to option `i + 2`. -/
+theorem protection_successor_extension (i : Nat) :
+    Extension (Frame.ofInventory inventory) inventory.generative (i + 1) (i + 1 + 1) :=
+  ⟨fun c held => match c, held with
+    | .basic, (zero : i + 1 = 0) => Nat.noConfusion zero
+    | .gain _, (lt : _ < i + 1) => Nat.lt_succ_of_lt lt,
+   .gain (i + 1), True.intro, Nat.lt_succ_self (i + 1), Nat.lt_irrefl (i + 1)⟩
+
+/-- **`every_nat_score_trades` through the core**: the options with gains form an endless chain
+of extensions, so by `Comparison.outgrows` every natural-number score satisfying C ranks the
+option with `score 0 + 2` gains above protection. -/
+theorem every_nat_score_trades_by_core (score : Nat → Nat)
+    (comparison : GenerativeComparison.ComparisonPrinciple ProtectionPriorityRival.inventory
+      (fun first second => score first < score second)) :
+    score 0 < score (score 0 + 2) :=
+  Comparison.outgrows (F := Frame.ofInventory ProtectionPriorityRival.inventory)
+    (living := ProtectionPriorityRival.inventory.generative) (next := fun i => i + 1)
+    comparison protection_successor_extension 0
+
+end ProtectionPriority
+
+/-! ## Chance floors through the weighted mass -/
+
+section ChanceFloor
+
+/-- `ChanceAdequacy`'s mass is the core's. -/
+theorem chance_mass_eq {Ω : Type} (weight : Ω → Nat) (event : Ω → Bool) :
+    ∀ domain : List Ω, ChanceAdequacy.mass domain weight event = mass domain weight event
+  | [] => rfl
+  | h :: tail => congrArg (fun m => (if event h = true then weight h else 0) + m)
+      (chance_mass_eq weight event tail)
+
+theorem chance_includedOn_iff {Ω : Type} (domain : List Ω) (before after : Ω → Bool) :
+    ChanceAdequacy.IncludedOn domain before after ↔ IncludedOn domain before after :=
+  Iff.rfl
+
+/-- **`all_weights_preserve_mass_iff` through the core**: it is `every_weighting_iff`. -/
+theorem all_weights_preserve_mass_iff_by_core {Ω : Type} [DecidableEq Ω] (domain : List Ω)
+    (before after : Ω → Bool) :
+    (∀ weight : Ω → Nat,
+      ChanceAdequacy.mass domain weight before ≤ ChanceAdequacy.mass domain weight after) ↔
+      ChanceAdequacy.IncludedOn domain before after :=
+  Iff.trans
+    ⟨fun all weight => Nat.le_trans (Nat.le_of_eq (chance_mass_eq weight before domain).symm)
+        (Nat.le_trans (all weight) (Nat.le_of_eq (chance_mass_eq weight after domain))),
+     fun all weight => Nat.le_trans (Nat.le_of_eq (chance_mass_eq weight before domain))
+        (Nat.le_trans (all weight) (Nat.le_of_eq (chance_mass_eq weight after domain).symm))⟩
+    every_weighting_iff
+
+/-- **`fulfillment_gives_chance_floor` through the core**: the floor is `mass_mono` twice. -/
+theorem fulfillment_floor_by_core {Ω : Type} (domain : List Ω) (weight : Ω → Nat)
+    (demand oldWorks newWorks : Ω → Bool)
+    (fulfilled : ChanceAdequacy.Fulfilled domain demand oldWorks newWorks) :
+    mass domain weight (ChanceAdequacy.target demand oldWorks) ≤ mass domain weight newWorks ∧
+      mass domain weight newWorks ≤ mass domain weight (fun _ => true) :=
+  ⟨mass_mono weight fulfilled, mass_mono weight fun _ _ _ => rfl⟩
+
+end ChanceFloor
+
+/-! ## Fallible inspection through the core's witnesses -/
+
+section FallibleWitnesses
+
+theorem list_contains_true_iff {d : Nat} : ∀ {l : List Nat}, l.contains d = true ↔ d ∈ l
+  | [] => ⟨fun h => Bool.noConfusion h, fun h => nomatch h⟩
+  | b :: l => by
+    show (match d == b with | true => true | false => List.elem d l) = true ↔ d ∈ b :: l
+    cases h : (d == b) with
+    | true => exact ⟨fun _ => Eq.subst (motive := fun v => d ∈ v :: l) (of_decide_eq_true h)
+        (.head l), fun _ => rfl⟩
+    | false => exact ⟨fun e => .tail b (list_contains_true_iff.mp e), fun m =>
+        match mem_cons_cases m with
+        | .inl same => Bool.noConfusion (h.symm.trans (decide_eq_true same))
+        | .inr m => list_contains_true_iff.mpr m⟩
+
+theorem list_all_true_iff {α : Type} {p : α → Bool} :
+    ∀ {l : List α}, l.all p = true ↔ ∀ d ∈ l, p d = true
+  | [] => ⟨fun _ _ m => (nomatch m), fun _ => rfl⟩
+  | a :: l => by
+    show (p a && l.all p) = true ↔ _
+    cases h : p a with
+    | false => exact ⟨fun e => Bool.noConfusion e,
+        fun all => Bool.noConfusion (h.symm.trans (all a (.head l)))⟩
+    | true => exact ⟨fun e d m => (match mem_cons_cases m with
+        | .inl same => Eq.subst (motive := fun v => p v = true) same.symm h
+        | .inr m => list_all_true_iff.mp e d m),
+        fun all => list_all_true_iff.mpr fun d m => all d (.tail a m)⟩
+
+theorem list_any_true_iff {α : Type} {p : α → Bool} :
+    ∀ {l : List α}, l.any p = true ↔ ∃ d, d ∈ l ∧ p d = true
+  | [] => ⟨fun e => Bool.noConfusion e, fun ⟨_, m, _⟩ => nomatch m⟩
+  | a :: l => by
+    show (p a || l.any p) = true ↔ _
+    cases h : p a with
+    | true => exact ⟨fun _ => ⟨a, .head l, h⟩, fun _ => rfl⟩
+    | false => exact ⟨fun e => let ⟨d, m, pd⟩ := list_any_true_iff.mp e; ⟨d, .tail a m, pd⟩,
+        fun ⟨d, m, pd⟩ => match mem_cons_cases m with
+        | .inl same => Bool.noConfusion
+            (h.symm.trans (Eq.subst (motive := fun v => p v = true) same pd))
+        | .inr m => list_any_true_iff.mpr ⟨d, m, pd⟩⟩
+
+/-- One witness's term of `FallibleInspection.explains`, on a received report. -/
+theorem witness_true_iff {bad : List Nat} {d : Nat} {v x : Bool} :
+    ((bad.contains d || (some v).isNone) || (some v == some x)) = true ↔ (¬ d ∈ bad → v = x) := by
+  cases hc : bad.contains d with
+  | true => exact ⟨fun _ nb => absurd (list_contains_true_iff.mp hc) nb, fun _ => rfl⟩
+  | false =>
+    have out : ¬ d ∈ bad := fun m => Bool.noConfusion (hc.symm.trans (list_contains_true_iff.mpr m))
+    cases v <;> cases x
+    · exact ⟨fun _ _ => rfl, fun _ => rfl⟩
+    · exact ⟨fun e => Bool.noConfusion e, fun f => Bool.noConfusion (f out)⟩
+    · exact ⟨fun e => Bool.noConfusion e, fun f => Bool.noConfusion (f out)⟩
+    · exact ⟨fun _ _ => rfl, fun _ => rfl⟩
+
+theorem some_getD {o : Option Bool} (present : o ≠ none) : o = some (o.getD false) :=
+  match o, present with
+  | some _, _ => rfl
+  | none, absent => absurd rfl absent
+
+/-- On a complete report, `FallibleInspection.explains` is the core's `Readout.Explains`. -/
+theorem explains_complete_iff {roster bad : List Nat} {x : Bool}
+    {reports : FallibleInspection.Reports} (complete : ∀ d ∈ roster, reports d ≠ none) :
+    FallibleInspection.explains roster bad x reports = true ↔
+      Readout.Explains roster bad x fun d => (reports d).getD false :=
+  list_all_true_iff.trans
+    ⟨fun all d m => (Eq.subst (motive := fun o =>
+        ((bad.contains d || o.isNone) || (o == some x)) = true →
+          (¬ d ∈ bad → (reports d).getD false = x))
+        (some_getD (complete d m)).symm witness_true_iff.mp) (all d m),
+     fun e d m => (Eq.subst (motive := fun o =>
+        (¬ d ∈ bad → (reports d).getD false = x) →
+          ((bad.contains d || o.isNone) || (o == some x)) = true)
+        (some_getD (complete d m)).symm witness_true_iff.mpr) (e d m)⟩
+
+theorem compatible_complete_iff {roster : List Nat} {faults : List (List Nat)} {x : Bool}
+    {reports : FallibleInspection.Reports} (complete : ∀ d ∈ roster, reports d ≠ none) :
+    FallibleInspection.compatible roster faults x reports = true ↔
+      ∃ bad, bad ∈ faults ∧ Readout.Explains roster bad x fun d => (reports d).getD false :=
+  list_any_true_iff.trans
+    ⟨fun ⟨b, m, e⟩ => ⟨b, m, (explains_complete_iff complete).mp e⟩,
+     fun ⟨b, m, e⟩ => ⟨b, m, (explains_complete_iff complete).mpr e⟩⟩
+
+/-- **`complete_diagnosability_iff_cross_separation` through the core**: on complete reports,
+compatibility is the core's explanation under an admitted fault set, and cross-separation is a
+common faithful witness for every two of them, so the theorem is
+`Readout.no_common_report_envelopes_iff`. -/
+theorem complete_diagnosability_iff_by_core (roster : List Nat) (fa fb : List (List Nat))
+    (x y : Bool) (different : x ≠ y) :
+    (∀ reports : FallibleInspection.Reports, (∀ d ∈ roster, reports d ≠ none) →
+      FallibleInspection.compatible roster fa x reports = true →
+        FallibleInspection.compatible roster fb y reports = false) ↔
+      FallibleInspection.CrossSeparated roster fa fb :=
+  Iff.trans
+    ⟨fun apart (report : Nat → Bool) first second =>
+      have complete : ∀ d ∈ roster, (fun d => some (report d)) d ≠ none :=
+        fun d _ (h : some (report d) = none) => nomatch h
+      Bool.noConfusion ((apart _ complete ((compatible_complete_iff complete).mpr first)).symm.trans
+        ((compatible_complete_iff complete).mpr second)),
+     fun apart reports complete first => match h : FallibleInspection.compatible roster fb y reports with
+      | false => rfl
+      | true => absurd ((compatible_complete_iff complete).mp h)
+          (apart _ ((compatible_complete_iff complete).mp first))⟩
+    (Readout.no_common_report_envelopes_iff different)
+
+end FallibleWitnesses
+
+/-! ## Return and traces -/
+
+section ReturnAndTraces
+
+variable {S : Type u} {A : Type v}
+
+/-- Keeping every possibility is keeping every reachable configuration. -/
+theorem keeps_possible_iff_keeps_reach {P : Process S A} {s t : S} :
+    (∀ q, BecomingReversibility.Possible P s q → BecomingReversibility.Possible P t q) ↔
+      ∀ u, Reach P s u → Reach P t u :=
+  ⟨fun keeps u there => match keeps (fun r => r = u) ⟨u, there, rfl⟩ with
+    | ⟨_, reach, same⟩ => Eq.subst (motive := fun v => Reach P t v) same reach,
+   fun keeps _ ⟨r, there, holds⟩ => ⟨r, keeps r there, holds⟩⟩
+
+/-- **`same_endpoint_possibilities_iff_return` through the core**: `same_reach_iff_returns`. -/
+theorem same_endpoint_possibilities_iff_return_by_core {P : Process S A} {s t : S}
+    (onward : Reach P s t) :
+    (∀ q, BecomingReversibility.Possible P s q ↔ BecomingReversibility.Possible P t q) ↔
+      Reach P t s :=
+  Iff.trans
+    ⟨fun same => keeps_possible_iff_keeps_reach.mp fun q => (same q).mp,
+     fun back q => ⟨keeps_possible_iff_keeps_reach.mpr back q,
+       fun ⟨r, there, holds⟩ => ⟨r, onward.trans there, holds⟩⟩⟩
+    keeps_reach_iff_returns
+
+/-- **`irreversible_iff_endpoint_loss` through the core**: `not_returns_iff_loses`, the lost
+configuration read as the possibility of being there. -/
+theorem irreversible_iff_endpoint_loss_by_core {P : Process S A} {s t : S} :
+    ¬ Reach P t s ↔
+      ∃ q, BecomingReversibility.Possible P s q ∧ ¬ BecomingReversibility.Possible P t q :=
+  Iff.trans not_returns_iff_loses
+    ⟨fun ⟨u, there, lost⟩ => ⟨fun r => r = u, ⟨u, there, rfl⟩, fun ⟨_, reach, same⟩ =>
+        lost (Eq.subst (motive := fun v => Reach P t v) same reach)⟩,
+     fun ⟨_, ⟨r, there, holds⟩, lost⟩ => ⟨r, there, fun reach => lost ⟨r, reach, holds⟩⟩⟩
+
+/-- **`same_steps_iff_endpoint_traces` through the core**: `same_steps_iff_traces`. -/
+theorem same_steps_iff_endpoint_traces_by_core (P Q : Process S A) :
+    Generative.Deeper.SameSteps P Q ↔ ∀ s (word : List A) t, Trace P s word t ↔ Trace Q s word t :=
+  same_steps_iff_traces
+
+end ReturnAndTraces
+
+/-! ## The derived history law through the core -/
+
+section DerivedHistory
+
+variable {A : Type u} {C : Type v}
+
+/-- The admitted histories of a language, each step adding one move. -/
+def admittedProcess (L : List A → Prop) : Process {h : List A // L h} A :=
+  ⟨fun h a h' => h'.1 = h.1 ++ [a]⟩
+
+theorem admitted_feasible_iff {L : List A → Prop} (closed : Generative.Deeper.PrefixClosed L) :
+    ∀ {h : {h : List A // L h}} {word : List A},
+      Feasible (admittedProcess L) h word ↔ L (h.1 ++ word)
+  | h, [] => ⟨fun _ => Eq.subst (motive := L) (Generative.Deeper.append_nil_constructive h.1).symm h.2,
+      fun _ => ⟨h, .nil h⟩⟩
+  | h, a :: word =>
+    ⟨fun ⟨_, .cons (step : _ = h.1 ++ [a]) rest⟩ =>
+      Eq.subst (motive := L) (Generative.Deeper.append_assoc_constructive h.1 [a] word)
+        (Eq.subst (motive := fun x => L (x ++ word)) step
+          (admitted_feasible_iff closed |>.mp ⟨_, rest⟩)),
+     fun holds =>
+      have whole : L ((h.1 ++ [a]) ++ word) :=
+        Eq.subst (motive := L) (Generative.Deeper.append_assoc_constructive h.1 [a] word).symm holds
+      let ⟨t, rest⟩ := (admitted_feasible_iff closed (h := ⟨h.1 ++ [a], closed _ word whole⟩)).mpr whole
+      ⟨t, .cons (show (admittedProcess L).step h a ⟨h.1 ++ [a], closed _ word whole⟩ from rfl) rest⟩⟩
+
+/-- `derivedProcess` is the admitted histories' law read through the summary. -/
+theorem derived_same_steps {L : List A → Prop} (q : List A → C) (k : C) (a : A) (k' : C) :
+    (Generative.DerivedHistoryLaw.derivedProcess L q).step k a k' ↔
+      (Readout.image (admittedProcess L) fun h => q h.1).step k a k' :=
+  ⟨fun ⟨h, lh, here, la, there⟩ => ⟨⟨h, lh⟩, ⟨h ++ [a], la⟩, here, rfl, there⟩,
+   fun ⟨h, t, here, (step : t.1 = h.1 ++ [a]), there⟩ =>
+    ⟨h.1, h.2, here, Eq.subst (motive := L) step t.2,
+      Eq.subst (motive := fun x => q x = k') step there⟩⟩
+
+/-- **`exact_iff_fiber_future` through the core**: on the admitted histories the derived law is
+the law read through the summary (`derived_same_steps`), so the theorem is
+`Readout.futures_through_iff`. -/
+theorem exact_iff_fiber_future_by_core (L : List A → Prop)
+    (closed : Generative.Deeper.PrefixClosed L) (q : List A → C) :
+    Generative.DerivedHistoryLaw.ExactFuture L q ↔ Generative.DerivedHistoryLaw.FiberFuture L q :=
+  have traces := same_steps_iff_traces.mp (derived_same_steps q)
+  have feasible : ∀ c word, Feasible (Generative.DerivedHistoryLaw.derivedProcess L q) c word ↔
+      Feasible (Readout.image (admittedProcess L) fun h => q h.1) c word :=
+    fun c word => ⟨fun ⟨t, path⟩ => ⟨t, (traces c word t).mp path⟩,
+      fun ⟨t, path⟩ => ⟨t, (traces c word t).mpr path⟩⟩
+  Iff.trans
+    ⟨fun exact (h : {h : List A // L h}) word => (feasible _ word).symm.trans
+        ((exact h.1 h.2 word).trans (admitted_feasible_iff closed).symm),
+     fun exact h lh word => (feasible _ word).trans
+        ((exact ⟨h, lh⟩ word).trans (admitted_feasible_iff closed (h := ⟨h, lh⟩)))⟩
+    (Iff.trans Readout.futures_through_iff
+      ⟨fun fibers (h k : List A) lh lk same word => (admitted_feasible_iff closed (h := ⟨h, lh⟩)).symm.trans
+          ((fibers ⟨h, lh⟩ ⟨k, lk⟩ same word).trans (admitted_feasible_iff closed)),
+       fun fibers (h k : {h : List A // L h}) same word => (admitted_feasible_iff closed).trans
+          ((fibers h.1 k.1 h.2 k.2 same word).trans (admitted_feasible_iff closed).symm)⟩)
+
+end DerivedHistory
 
 end Becoming
