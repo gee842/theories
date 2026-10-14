@@ -60,7 +60,7 @@ CORE = ["Becoming.Frame", "Becoming.Inquiry", "Becoming.Recurrence", "Becoming.D
         "Becoming.Metaethics", "Becoming.Ranking", "Becoming.LossMatching",
         "Becoming.Correspondence", "Becoming.Descent", "Becoming.Standpoints",
         "Becoming.Significance", "Becoming.Interdependence", "Becoming.Feeding", "Becoming.Feedback",
-        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
+        "Becoming.Testing", "Becoming.Runaway", "Becoming.Response", "Becoming.TimedResponse", "Becoming.Counterfactual", "Becoming.Regrouping", "Becoming.Selection", "Becoming.Learning", "Becoming.Revision", "Becoming.Contacts", "Becoming.RegroupingSelection", "Becoming.ReferencePlan", "Becoming.ContinuingRevision", "Becoming.Description", "Becoming.Identification", "Becoming.Assurance", "Becoming.Segmentation", "Becoming.Readout", "Becoming.Gated", "Becoming.Viability", "Becoming.Boundaries", "Becoming.Relevance", "Becoming"]
 BRIDGE = ["Becoming.Bridge", "Becoming.RepairComparison", "Becoming.Instances", "Becoming.RenewalBridge"]
 SPINE = CORE + BRIDGE
 PURE = FOUNDATION + CORE

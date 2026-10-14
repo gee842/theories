@@ -84,6 +84,7 @@ import Becoming.Assurance
 import Becoming.Segmentation
 import Becoming.Readout
 import Becoming.Gated
+import Becoming.Viability
 
 /-!
 # The Theory of Becoming: the formal core
@@ -797,6 +798,12 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
 * `Becoming.Gated` (L2): what only a class of moves can change, with no premise. A quantity kept
   by every ungated step is kept along every ungated course, and conversely; a course that
   changes it passes the gate, at a gated step that itself changes it.
+* `Becoming.Viability` (L2): where no course leaves a guard, with no premise. No course from a
+  configuration leaves the guard exactly when some certificate (a set within the guard that every
+  step keeps) contains it; the viability kernel is the largest certificate. For a law of change
+  driven by admissible disturbances, given one admissible disturbance, no history ever leaves the
+  guard exactly when some set containing the start lies within the guard and is closed under
+  every admissible disturbance; a guarded history stops exactly where the history leaves it.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
