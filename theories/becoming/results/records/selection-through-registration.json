@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "selection-through-registration",
   "title": {
     "zh": "经识的选择",
@@ -8,23 +8,148 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F04",
-  "reviewed_at_utc": "2026-10-13T13:12:48.490708+00:00",
+  "reviewed_at_utc": "2026-10-14T12:10:00+00:00",
   "statement": {
     "zh": "两段历史被每个经选择者之识的选择选得相同，恰当选择者把它们识得相同。其余交换固定时选择在识闭包之外不见；所及闭包之内、识闭包之外的终结不被选出，合起来的识选出它；伸出而抬高所识者的流被选中。",
     "en": "Every selection through a registration selects two histories alike exactly when they register alike. With the rest fixed, selection is blind beyond the registration closure; pooled registration selects an ending beyond it within reach, and a flow reaching beyond to raise what registers is selected."
   },
-  "claim": {
-    "zh": "设 W 是依存网，obs 是观察，g 是形成，t 是步。一个选择是关于水平历史的任意命题 select；它经 g 直到 t 之识，是指 g 直到 t 识得相同（Web.RegistersAlikeUpTo）的任意两段历史 select 同真同假（Web.SelectsThrough）；评分 score 经它，是指得分相等（Web.ScoresThrough）。识得相同可传递，是等价关系（Web.RegistersAlike.trans、Web.RegistersAlikeUpTo.trans）。不加前提：两段历史 l、l' 被每个经 g 之识的选择选得相同，恰当 g 直到 t 把它们识得相同（Web.selects_alike_iff）；g 的信念（Web.Belief）是经其识的选择（Web.belief_selects），所以 g 识得不同之处，有一个经其识的选择在 l 成立、在 l' 不成立（Web.separates）。经识的选择恰在不成立之处被其选择者否证（Web.SelectsThrough.refutes_iff）；到 t 为止某步的接纳是经识的选择，被观察条件的水平是经识的评分，评分的阈值是经识的选择（Web.admits_through、Web.observed_scores、Web.ScoresThrough.atLeast）；经识在更晚的步、更多的观察、否定与合取之下保持（Web.SelectsThrough.later、widen、not、and）。与 l 识得相同可判定时（命名的假设 decided），l、l' 被每个经识的评分评得相同，恰当识得相同（Web.scores_alike_iff）。一组形成合起来：每个成员都识得相同的历史被选得相同（Web.SelectsThroughAll）；同样的等价成立（Web.RegistersAlikeAll.refl、symm、trans、Web.selects_alike_all_iff、Web.separates_all）；成员的选择是合起来的选择，合起来的选择在合取下封闭（Web.SelectsThrough.all、Web.SelectsThroughAll.and）。识闭包之外的不见：在 unregistered_beyond_registration 的条件下（扣留部分后的水平 l，WithheldLevels；平衡只在 f 的识闭包成员所识的条件上逐步假设；部分的每个成员都在 f 的识闭包之外），经闭包内任一形成之识的每个选择与评分，把 W.level 与 l 选得相同、评得相同（Flow.unselected_beyond_registration、Flow.unscored_beyond_registration），成员都在闭包之内的一组合起来亦然（Flow.unselected_beyond_registration_all）；在 alike_within_registration 的假设下（两流在场者相同，起始在所识者上相同，成员只经自己之识回应），经对两流画出的识闭包内任一形成之识的每个选择，把两流的水平选得相同（Flow.unselected_beyond_registration_responsive）。后代中的份额（应用）：select 在 ms 的每个亲代的历史上成立、在 es 的每个亲代的历史上不成立，它成立的亲代至少有 a 个后代、不成立的至多 b 个，b < a，ms、es 都非空时，ms 的后代与 es 的后代之比严格大于 ms 与 es 之比（share_rises_through，即 share_rises）。见证 Clearing：经清除者之识（只识支持）的每个选择在每一步都把清除与不清除的世界选得相同，栖居者在前者中被终结、在后者中不然，“栖居者被终结”在任何一步都不经清除者之识（Clearing.unselected）；栖居者在清除者的所及闭包之内、识闭包之外，清除者不识栖息地（Clearing.dweller_within_reach）；“栖居者在第三步被接纳”经栖居者之识，分开两个世界（Clearing.selected_by_dweller）；“第三步两者都被接纳”经两者合起来的识，分开两个世界，而不经任一单独之识（Clearing.selected_pooled）。见证 Diversion：转移的流从栖居者所依存的来源取一个单位给取用者观察的存储，伸到识闭包之外的栖居者；“存储在第二步至少为一”经取用者之识，在转移的流成立、在不分流的流不成立；栖居者在转移的流中从第二步起不被支持，在不分流的流中每步被支持（Diversion.favours）；经取用者之识的每个选择把转移的流与不伸出、只给予存储的供给的流选得相同（Diversion.blind_to_source）。不用 Lean 公理。",
-    "en": "Let W be a web, obs an observation, g a formation and t a step. A selection is any claim select about level histories; it goes through g's registration up to t when any two histories g registers alike up to t (Web.RegistersAlikeUpTo) are both selected or both not (Web.SelectsThrough); a score goes through it when they score alike (Web.ScoresThrough). Registering alike is transitive, so an equivalence (Web.RegistersAlike.trans, Web.RegistersAlikeUpTo.trans). With no premise, two histories l, l' are selected alike by every selection through g's registration exactly when g registers them alike up to t (Web.selects_alike_iff); g's belief (Web.Belief) is such a selection (Web.belief_selects), so where g registers them apart some selection through its registration holds at l and fails at l' (Web.separates). A selection through registration is refuted by its selector exactly where it fails (Web.SelectsThrough.refutes_iff); admission at a step up to t is a selection through registration, the level of an observed condition a score through it, and a score's threshold a selection through it (Web.admits_through, Web.observed_scores, Web.ScoresThrough.atLeast); going through registration survives later steps, more observation, negation and conjunction (Web.SelectsThrough.later, widen, not, and). Where registering alike with l is decidable (the named hypothesis decided), l and l' are scored alike by every score through registration exactly when they are registered alike (Web.scores_alike_iff). For a group, histories every member registers alike are selected alike (Web.SelectsThroughAll); the same equivalence holds (Web.RegistersAlikeAll.refl, symm, trans, Web.selects_alike_all_iff, Web.separates_all); a member's selection is a group selection, and group selections are closed under conjunction (Web.SelectsThrough.all, Web.SelectsThroughAll.and). Blindness beyond the registration closure: under the conditions of unregistered_beyond_registration (l the levels with a part withheld, WithheldLevels; balance assumed only on the conditions members of f's registration closure register, at each step; every member of the part beyond f's registration closure), every selection and every score through the registration of a formation within the closure treats W.level and l alike (Flow.unselected_beyond_registration, Flow.unscored_beyond_registration), and so does every group whose members lie within the closure (Flow.unselected_beyond_registration_all); under the hypotheses of alike_within_registration (the same formations present in both flows, the same start on what is registered, members responding only through their own registration), every selection through the registration of a formation within the registration closure drawn through both flows selects the two flows' levels alike (Flow.unselected_beyond_registration_responsive). Share among descendants (an application): where select holds for the history of every parent in ms and for none in es, the parents it holds for have at least a offspring and the others at most b, b < a, and ms and es are non-empty, the offspring of ms stand to those of es strictly more than ms stands to es (share_rises_through, that is share_rises). Witness Clearing: every selection through the clearer's registration (support only) selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second, and that the dweller is ended goes through the clearer's registration at no step (Clearing.unselected); the dweller lies within the clearer's reach closure and beyond its registration closure, and the clearer does not register the habitat (Clearing.dweller_within_reach); the dweller's admission at the third step goes through the dweller's registration and separates the two worlds (Clearing.selected_by_dweller); both being admitted at the third step goes through the pooled registration of the two, separates the worlds, and goes through neither registration alone (Clearing.selected_pooled). Witness Diversion: the diverting flow takes a unit from the source a dweller depends on and gives it to the store the taker observes, reaching the dweller beyond the registration closure; that the store stands at least one at the second step goes through the taker's registration, holds in the diverting flow and fails in the undiverted one; the dweller is unsupported from the second step on in the diverting flow and supported at every step in the undiverted one (Diversion.favours); every selection through the taker's registration selects the diverting flow alike with a supplying flow that only gives to the store and reaches nothing beyond (Diversion.blind_to_source). No Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "一个选择是关于水平历史的任意命题；它经一个形成直到某步之识，是指该形成直到该步识得相同的任意两段历史同被选中或同不被选中；评分经它，是指得分相等。识得相同可传递，是等价关系。",
+      "en": "A selection is any claim about level histories; it goes through a formation's registration up to a step when any two histories the formation registers alike up to that step are both selected or both not, and a score goes through it when they score alike. Registering alike is transitive, so an equivalence.",
+      "declarations": [
+        "Becoming.Web.SelectsThrough",
+        "Becoming.Web.ScoresThrough",
+        "Becoming.Web.RegistersAlikeUpTo",
+        "Becoming.Web.RegistersAlike.trans",
+        "Becoming.Web.RegistersAlikeUpTo.trans"
+      ]
+    },
+    {
+      "zh": "不加前提：两段历史被每个经一个形成之识的选择选得相同，恰当该形成直到该步把它们识得相同；它的信念是经其识的选择，所以它识得不同之处，有一个经其识的选择在一段成立、在另一段不成立。",
+      "en": "With no premise, two histories are selected alike by every selection through a formation's registration exactly when it registers them alike up to the step; its belief is such a selection, so where it registers them apart some selection through its registration holds at one and fails at the other.",
+      "declarations": [
+        "Becoming.Web.selects_alike_iff",
+        "Becoming.Web.belief_selects",
+        "Becoming.Web.separates"
+      ]
+    },
+    {
+      "zh": "经识的选择恰在不成立之处被其选择者否证；到该步为止某步的接纳是经识的选择，被观察条件在这样一步的水平是经识的评分，评分的阈值是经识的选择；经识在更晚的步、更多的观察、否定与合取之下保持。",
+      "en": "A selection through registration is refuted by its selector exactly where it fails; admission at a step up to the given one is a selection through registration, the level of an observed condition at such a step a score through it, and a score's threshold a selection through it; going through registration survives later steps, more observation, negation and conjunction.",
+      "declarations": [
+        "Becoming.Web.Refutes",
+        "Becoming.Web.SelectsThrough.refutes_iff",
+        "Becoming.Web.admits_through",
+        "Becoming.Web.observed_scores",
+        "Becoming.Web.ScoresThrough.atLeast",
+        "Becoming.Web.SelectsThrough.later",
+        "Becoming.Web.SelectsThrough.widen",
+        "Becoming.Web.SelectsThrough.not",
+        "Becoming.Web.SelectsThrough.and"
+      ]
+    },
+    {
+      "zh": "与第一段历史识得相同可判定时，两段历史被每个经识的评分评得相同，恰当识得相同。",
+      "en": "Where registering alike with the first history is decidable, two histories are scored alike by every score through registration exactly when they are registered alike.",
+      "declarations": [
+        "Becoming.Web.scores_alike_iff"
+      ]
+    },
+    {
+      "zh": "一组形成合起来：每个成员都识得相同的历史被选得相同；同样的等价与分开成立；成员的选择是合起来的选择，合起来的选择在合取下封闭。",
+      "en": "For a group, a selection goes through its pooled registration when histories every member registers alike are selected alike; the same equivalence and separation hold; a member's selection is a group selection, and group selections are closed under conjunction.",
+      "declarations": [
+        "Becoming.Web.SelectsThroughAll",
+        "Becoming.Web.RegistersAlikeAll",
+        "Becoming.Web.RegistersAlikeAll.refl",
+        "Becoming.Web.RegistersAlikeAll.symm",
+        "Becoming.Web.RegistersAlikeAll.trans",
+        "Becoming.Web.selects_alike_all_iff",
+        "Becoming.Web.separates_all",
+        "Becoming.Web.SelectsThrough.all",
+        "Becoming.Web.SelectsThroughAll.and"
+      ]
+    },
+    {
+      "zh": "识闭包之外的不见：扣留一个部分（其余交换固定），平衡只在一个形成的识闭包成员所识的条件上逐步成立，部分的每个成员都在该闭包之外时，经闭包内任一形成之识的每个选择与评分，把有无该部分的水平选得相同、评得相同；成员都在闭包之内的一组合起来亦然。",
+      "en": "Blindness beyond the registration closure: with a part withheld and the rest of the exchange fixed, balance at each step on what members of a formation's registration closure register, and every member of the part beyond that closure, every selection and score through the registration of a formation within the closure treats the levels with and without the part alike, as does every group whose members lie within it.",
+      "declarations": [
+        "Becoming.Flow.WithinRegistration",
+        "Becoming.Flow.unregistered_beyond_registration",
+        "Becoming.Flow.unselected_beyond_registration",
+        "Becoming.Flow.unscored_beyond_registration",
+        "Becoming.Flow.unselected_beyond_registration_all"
+      ]
+    },
+    {
+      "zh": "两流在对两流画出的识闭包内的所识条件上都逐步平衡、在场者相同、起始在所识者上相同、成员只经自己之识回应时，经该闭包内任一形成之识的每个选择，把两流的水平选得相同。",
+      "en": "Where two flows both balance at each step on the conditions registered within the registration closure drawn through both, have the same formations present, start alike on what is registered, and members respond only through their own registration, every selection through the registration of a formation within that closure selects the two flows' levels alike.",
+      "declarations": [
+        "Becoming.Flow.RegisteredFromEither",
+        "Becoming.Flow.alike_within_registration",
+        "Becoming.Flow.unselected_beyond_registration_responsive"
+      ]
+    },
+    {
+      "zh": "后代中的份额（share_rises 的应用）：选择在一个非空亲代列表的每个历史上成立、在另一个非空列表的每个历史上不成立，它成立的亲代至少有 a 个后代、不成立的至多 b 个，b < a 时，前一列表的后代与后一列表的后代之比严格大于两列表之比。",
+      "en": "Share among descendants, an application of share_rises: where a selection holds for the history of every parent in one non-empty list and for none in another, the parents it holds for have at least a offspring and the others at most b, and b < a, the offspring of the first list stand to those of the second strictly more than the first list stands to the second.",
+      "declarations": [
+        "Becoming.share_rises_through",
+        "Becoming.share_rises",
+        "Becoming.offspringCount"
+      ]
+    },
+    {
+      "zh": "见证 Clearing：经清除者之识（只识支持）的每个选择在每一步都把清除与不清除的世界选得相同，栖居者在前者中被终结、在后者中不然，“栖居者被终结”在任何一步都不经清除者之识；栖居者在清除者的所及闭包之内、识闭包之外，清除者不识栖息地。",
+      "en": "In Clearing every selection through the clearer's registration (support only) selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second, and that the dweller is ended goes through the clearer's registration at no step; the dweller lies within the clearer's reach closure and beyond its registration closure, and the clearer does not register the habitat.",
+      "declarations": [
+        "Becoming.Clearing.unselected",
+        "Becoming.Clearing.dweller_within_reach",
+        "Becoming.Flow.WithinReach"
+      ]
+    },
+    {
+      "zh": "“栖居者在第三步被接纳”经栖居者之识，分开两个世界；“第三步两者都被接纳”经两者合起来的识，分开两个世界，而不经任一单独之识。",
+      "en": "In Clearing the dweller's admission at the third step goes through the dweller's registration and separates the two worlds; both being admitted at the third step goes through the pooled registration of the two, separates the worlds, and goes through neither registration alone.",
+      "declarations": [
+        "Becoming.Clearing.selected_by_dweller",
+        "Becoming.Clearing.BothAdmitted",
+        "Becoming.Clearing.selected_pooled"
+      ]
+    },
+    {
+      "zh": "见证 Diversion：转移的流从栖居者所依存的来源取一个单位给取用者观察的存储，伸到识闭包之外的栖居者；“存储在第二步至少为一”经取用者之识，在转移的流成立、在不分流的流不成立。",
+      "en": "In Diversion the diverting flow takes a unit from the source a dweller depends on and gives it to the store the taker observes, reaching the dweller beyond the registration closure; that the store stands at least one at the second step goes through the taker's registration, holds in the diverting flow and fails in the undiverted one.",
+      "declarations": [
+        "Becoming.Diversion.diverting",
+        "Becoming.Diversion.undiverted",
+        "Becoming.Diversion.StoreAtLeast",
+        "Becoming.Diversion.favours"
+      ]
+    },
+    {
+      "zh": "栖居者在转移的流中从第二步起不被支持，在不分流的流中每步被支持；经取用者之识的每个选择，把转移的流与不伸出、只给予存储的供给的流选得相同。",
+      "en": "The dweller is unsupported from the second step on in the diverting flow and supported at every step in the undiverted one; every selection through the taker's registration selects the diverting flow alike with a supplying flow that only gives to the store and reaches nothing beyond.",
+      "declarations": [
+        "Becoming.Diversion.favours",
+        "Becoming.Diversion.supplying",
+        "Becoming.Diversion.blind_to_source"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "选择经识（Web.SelectsThrough、Web.ScoresThrough、Web.SelectsThroughAll）是给出的条件，写在用到它的每条定理中，不推出；选择是关于水平历史的任意命题。",
       "en": "That a selection goes through registration (Web.SelectsThrough, Web.ScoresThrough, Web.SelectsThroughAll) is a supplied condition written into each theorem that uses it, never derived; a selection is any claim about level histories."
     },
     {
-      "zh": "识闭包之外的不见另设 unregistered_beyond_registration 的条件：其余交换固定（扣留的部分，WithheldLevels）；平衡只在识闭包成员所识的条件上逐步假设（Flow.BalancesOn）；部分的每个成员都在识闭包之外。回应的形式另设 alike_within_registration 的假设：两流在场者相同、起始在所识者上相同、成员只经自己之识回应。",
-      "en": "Blindness beyond the registration closure further assumes the conditions of unregistered_beyond_registration: the rest of the exchange fixed (a part withheld, WithheldLevels); balance assumed only on the conditions members of the registration closure register, at each step (Flow.BalancesOn); every member of the part beyond the registration closure. The responsive form assumes the hypotheses of alike_within_registration: the same formations present in both flows, the same start on what is registered, members responding only through their own registration."
+      "zh": "识闭包之外的不见另设 unregistered_beyond_registration 的条件：其余交换固定（扣留的部分，WithheldLevels）；平衡只在识闭包成员所识的条件上逐步假设（Flow.BalancesOn）；部分的每个成员都在识闭包之外。",
+      "en": "Blindness beyond the registration closure further assumes the conditions of unregistered_beyond_registration: the rest of the exchange fixed (a part withheld, WithheldLevels); balance assumed only on the conditions members of the registration closure register, at each step (Flow.BalancesOn); every member of the part beyond the registration closure."
+    },
+    {
+      "zh": "回应的形式另设 alike_within_registration 的假设：两流在所识条件上逐步平衡、两流在场者相同、起始在所识者上相同、成员只经自己之识回应。",
+      "en": "The responsive form assumes the hypotheses of alike_within_registration: both flows balanced at each step on the conditions registered, the same formations present in both flows, the same start on what is registered, members responding only through their own registration."
     },
     {
       "zh": "评分定律的逆向以“与第一段历史识得相同”的可判定性为命名的假设（decided）；选择的定律不需要判定。",
@@ -35,17 +160,91 @@
       "en": "share_rises_through: the parents' histories, the lower and upper bounds on offspring (rewarded, unrewarded), b < a and both kinds of parent present are supplied; transmission is not part of it."
     },
     {
-      "zh": "见证的结论：Clearing 的流与网（P40、P42、P49），以及 Diversion 的三个流与网。",
-      "en": "For the witnesses: Clearing's flows and webs (P40, P42, P49), and Diversion's three flows and webs."
+      "zh": "见证的结论：Clearing 的流与网（取自喂养闭包、反馈与检验的模块），以及 Diversion 的三个流与网。",
+      "en": "For the witnesses: Clearing's flows and webs (from the modules of feeding closure, feedback and testing), and Diversion's three flows and webs."
     },
     {
       "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量。",
       "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "这些规律不推出谁选择、选择者识什么、一个实际的选择是否经识、后代是否随选择、伸向识闭包之外是否被选取。",
+      "en": "The laws do not derive who selects, what the selector registers, whether an actual selection goes through registration, whether offspring follow the selection, or whether reaching beyond is chosen.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "所识越多，识闭包越大、缺口越小：定律的力量全在选择者实际识什么。",
+      "en": "The more is registered, the larger the registration closure and the smaller the gap: the law's force lies entirely in what the selector actually registers.",
+      "kind": "scope"
+    },
+    {
+      "zh": "主定律近乎定义，不见是 testing-within-registration 中定理的一行推论；增量是概念上的。",
+      "en": "The main law is near-definitional and the blindness a one-line corollary of the theorems of testing-within-registration; the contribution is conceptual.",
+      "kind": "scope"
+    },
+    {
+      "zh": "自身动作的缺口（动作只在闭包成员都不识的条件上不同）没有单独的一般定理，Clearing 中由 alike_within_closed 的实例给出。",
+      "en": "The gap for one's own act (an act differing only on conditions no member of the closure registers) has no separate general theorem; in Clearing it comes from an instance of alike_within_closed.",
+      "kind": "scope"
+    },
+    {
+      "zh": "偏向伸出只在最小的见证 Diversion 中陈述。",
+      "en": "Favouring reaching beyond is stated only in the minimal witness Diversion.",
+      "kind": "scope",
+      "witness": "Becoming.Diversion.favours"
+    },
+    {
+      "zh": "share_rises_through 是应用；它与传递和世界开放的组合是读法。他者回应选择所依的储量时，回应的假设可以不成立。",
+      "en": "share_rises_through is an application, and its combination with transmission and an open world is a reading; where others respond to the stock a selection rests on, the response hypotheses can fail.",
+      "kind": "scope"
+    },
+    {
+      "zh": "任意物理原语的形成及 Capture 更一般的规则变化保留自身范围。",
+      "en": "The formation of arbitrary physical primitives and more general rule-changing capture keep their own scope.",
+      "kind": "scope"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "detail": {
+        "zh": "选择不见缺口：Clearing 中经清除者之识的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者之识（Clearing.unselected）。",
+        "en": "Selection is blind to the gap: in Clearing every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second; that the dweller is ended goes through the clearer's registration at no step (Clearing.unselected)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "detail": {
+        "zh": "合起来才选出：“第三步栖居者与清除者都被接纳”经两者合起来的识，分开清除与不清除的世界，而不经任一单独之识（Clearing.selected_pooled）。",
+        "en": "Only pooled registration selects it: that both the dweller and the clearer are admitted at the third step goes through their pooled registration and separates the cleared from the spared world, yet goes through neither registration alone (Clearing.selected_pooled)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
+      "detail": {
+        "zh": "选择分不出伸出与否：Diversion 中经取用者之识的每个选择把从栖居者的来源转移的流与只给予存储、不伸出的供给的流选得相同，而栖居者只在前者中不被支持（Diversion.blind_to_source）；同一选择选中转移的流而不选不分流的流（Diversion.favours）。",
+        "en": "Selection cannot tell reaching beyond from not: in Diversion every selection through the taker's registration selects the flow diverting from the dweller's source alike with a supplying flow that only gives to the store and reaches nothing beyond, while the dweller is unsupported only in the first (Diversion.blind_to_source); the same selection selects the diverting flow over the undiverted one (Diversion.favours)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-evaluation",
+    "names-provisional",
+    "no-ethical-premise"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Selection 的定理公理报告为空（回执 20261013T094743.528770Z；Selection 与 Capture 的当前字节由 20261013T204910.042715Z 绑定，Testing 的由 20261014T091930.724493Z 绑定），检查器并核对核心纯净。作者反审见整合文档；尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Selection have empty axiom reports (receipt 20261013T094743.528770Z; the current bytes of Selection and Capture bound by 20261013T204910.042715Z, of Testing by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; no independent review yet."
+  },
+  "next_delta": {
+    "zh": "自身动作的缺口作为一般定理：动作只在识闭包成员都不识的条件上不同时，经其识的每个选择都看不见它；偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升。",
+    "en": "The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through it misses the act; favouring reaching beyond in general: when a part raising what registers must reach beyond the closure; with transmission, descent and openness (Capture's descent_needs_unrun), the rising share of what reaches beyond."
+  },
   "correspondence": {
-    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项（P64），五项提议是 AI 的。读法（AI 的，待 Ren）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
-    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems whose author is not stated (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them (P64); the five proposals are the AI's. Readings (the AI's, pending Ren): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what that selector registers, and is blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends; the gap is the reach closure less the registration closure, and it closes only through dependence, observation or another's registration pooled; where reaching beyond raises what registers, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; read for AI training, a reward process is a selector and training reaches only what the reward registers. The AI connects this with the title of Ren's paper “When Capability Outruns Correction”; the connection is the AI's. See §86 of the integration note."
+    "zh": "2026-10-12，Ren 问“hows cause–effect system comparing to our theory?”，并贴入一段作者未注明的因果系统说明（不是 Ren 的话，也不是前提）；AI 作比较并提出五项可学之处后，Ren 写“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”。本记录是其中第一项，五项提议是 AI 的。读法（AI 的，待 Ren）：任何由选择者所识决定的选择（保留、奖励、繁殖、训练）恰及选择者所识，对候选者的部分在选择者识闭包之外所做的不见，无论其所及闭包延伸多远；缺口是所及闭包减去识闭包，只经依存、观察或他者之识合起来才合上；伸出而抬高所识者之处，选择偏向它，连同 share_rises，伸出者的份额在世界开放时上升；以 AI 训练读，奖励过程是选择者，训练只及奖励所识。AI 把这与 Ren 一篇论文的标题 “When Capability Outruns Correction” 相接；这是 AI 的联系。见整合文档 §86。",
+    "en": "On 12 October 2026 Ren asked “hows cause–effect system comparing to our theory?” and pasted an explanation of causal systems of unstated authorship (neither Ren's wording nor a premise); after the AI's comparison and its five proposals, Ren wrote “Great, let's finish all of them, you can spawn sub agents in a wise order if needed”. This record is the first of them. Readings (the AI's, pending Ren): any selection decided by what a selector registers (keeping, rewarding, reproducing, training) reaches exactly what it registers, blind to whatever a candidate's part does beyond the selector's registration closure, however far its reach closure extends; the gap is the reach closure less the registration closure, closing only through dependence, observation or another's registration pooled; where reaching beyond raises what registers, selection favours it, and with share_rises the share of what reaches beyond rises while the world is open; for AI training, a reward process is a selector and training reaches only what the reward registers. The AI, on its own account, connects this with the title of Ren's paper “When Capability Outruns Correction”. See §86 of the integration note."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
   "aliases": [
@@ -195,37 +394,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "detail": {
-        "zh": "选择不见缺口：Clearing 中经清除者之识的每个选择在每一步都把清除与不清除的世界选得相同，而栖居者在前者中被终结、在后者中不然；“栖居者被终结”在任何一步都不经清除者之识（Clearing.unselected）。",
-        "en": "Selection is blind to the gap: in Clearing every selection through the clearer's registration selects the cleared and the spared world alike at every step, while the dweller is ended in the first and not in the second; that the dweller is ended goes through the clearer's registration at no step (Clearing.unselected)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "detail": {
-        "zh": "合起来才选出：“第三步栖居者与清除者都被接纳”经两者合起来的识，分开清除与不清除的世界，而不经任一单独之识（Clearing.selected_pooled）。",
-        "en": "Only pooled registration selects it: that both the dweller and the clearer are admitted at the third step goes through their pooled registration and separates the cleared from the spared world, yet goes through neither registration alone (Clearing.selected_pooled)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
-      "detail": {
-        "zh": "选择分不出伸出与否：Diversion 中经取用者之识的每个选择把从栖居者的来源转移的流与只给予存储、不伸出的供给的流选得相同，而栖居者只在前者中不被支持（Diversion.blind_to_source）；同一选择选中转移的流而不选不分流的流（Diversion.favours）。",
-        "en": "Selection cannot tell reaching beyond from not: in Diversion every selection through the taker's registration selects the flow diverting from the dweller's source alike with a supplying flow that only gives to the store and reaches nothing beyond, while the dweller is unsupported only in the first (Diversion.blind_to_source); the same selection selects the diverting flow over the undiverted one (Diversion.favours)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "谁选择、选择者识什么、一个实际的选择是否经识、后代是否随选择、伸向识闭包之外是否被选取，都不推出；所识越多，识闭包越大、缺口越小，定律的力量全在选择者实际识什么；主定律近乎定义，不见是 P49 定理的一行推论，增量是概念上的；自身动作的缺口（动作只在闭包成员都不识的条件上不同）没有单独的一般定理，Clearing 中由 alike_within_closed 的实例给出；偏向伸出只在最小的见证 Diversion 中陈述；share_rises_through 是应用，传递与世界开放的组合是读法；他者回应选择所依的储量时，回应的假设可以不成立；读法是 AI 的，待 Ren；不含伦理谓词。",
-    "en": "Who selects, what the selector registers, whether an actual selection goes through registration, whether offspring follow the selection, and whether reaching beyond is chosen are not derived; the more is registered, the larger the registration closure and the smaller the gap, so the law's force lies entirely in what the selector actually registers; the main law is near-definitional and the blindness is a one-line corollary of P49's theorems, so the delta is conceptual; the gap for one's own act (an act differing only on conditions no member of the closure registers) has no separate general theorem, and in Clearing comes from an instance of alike_within_closed; favouring reaching beyond is stated only in the minimal witness Diversion; share_rises_through is an application, and its combination with transmission and an open world is a reading; where others respond to the stock a selection rests on, the response hypotheses can fail; the readings are the AI's, pending Ren; contains no ethical predicate."
-  },
-  "validation_scope": {
-    "zh": "2026-10-14：Becoming.Capture、Becoming.Selection 的当前字节由合并检查器回执 20261013T204910.042715Z 绑定（通过：包 85 个模块，4861 项定理、6856 项声明审计，源声明公理报告全空；核心闭包 86 个模块从内置前导编译）；下文较早的回执以旧名检查了同一陈述，旧名与新名的对照见统一计划 §10。 Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Selection 的 43 项定理全部空依赖，其中含 Web.selects_alike_iff、Flow.unselected_beyond_registration、Clearing.unselected、Diversion.favours与 share_rises_through；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §86；尚无独立审查。",
-    "en": "14 October 2026: the current bytes of Becoming.Capture, Becoming.Selection are bound to consolidated receipt 20261013T204910.042715Z (passed: 85 package modules, 4861 theorems, 6856 declaration audits, every source declaration with an empty axiom report; the 86-module core closure compiles from the prelude). Earlier receipts below checked the same statements under the former names, tabulated in plan section 10. Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 43 theorems of Becoming.Selection all have empty axiom reports, among them Web.selects_alike_iff, Flow.unselected_beyond_registration, Clearing.unselected, Diversion.favours and share_rises_through; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §86 of the integration note; there is no independent review yet."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Selection.lean",
@@ -418,10 +586,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "自身动作的缺口作为一般定理：动作只在识闭包成员都不识的条件上不同时，经其识的每个选择都看不见它；偏向伸出的一般形式：抬高所识者的部分何时必伸出识闭包之外；与传递、后代和开放（Capture 的 descent_needs_unrun）组合，陈述伸出者份额的上升；登记改变时的选择保留／损失及局部执行已由 P93 完成；P99/P103 进一步接通后果修改参考构造方法、取得新候选、实际观察使用与受支持的反复修订。任意物理原语的形成及 Capture 更一般的规则变化保留自身范围。",
-    "en": "The gap for one's own act as a general theorem: where an act differs only on conditions no member of the registration closure registers, every selection through that registration misses it; a general form of favouring reaching beyond: when a part raising what registers must reach beyond the registration closure; combined with transmission, descent and openness (Capture's descent_needs_unrun), the rise of the share of what reaches beyond; P93 now supplies choice preservation/loss under changing registration and a local executed reconstruction; P99/P103 further join consequence-driven reference-construction methods, acquired candidates, actual observation/use and supported recurring revision. Formation of arbitrary physical primitives and more general rule-changing capture retain their own scope."
-  },
   "history": [
     {
       "zh": "2026-10-12 P64：新增，按 Ren“Great, let's finish all of them, you can spawn sub agents in a wise order if needed”；来自 AI 对理论与一般因果系统的比较（工作板 P64）；见整合文档 §86。",
@@ -546,6 +710,20 @@
     {
       "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
       "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    },
+    {
+      "zh": "2026-10-14 迁移到 schema 2（开放问题计划 F 项：lint 发现最多的 45 条 schema-1 记录的迁移；Ren：“please, do all”，经整合会话转达）：主张拆为 12 条规律；限制分入“未表明”与通用边界；证据成为一段，写出三个绑定回执。两处写出定理所带、旧文本只以名称指代的条件：回应形式之律与其前提写出两流都在所识条件上逐步平衡（alike_within_registration 与 unselected_beyond_registration_responsive 的 balanced、balanced'）。“不用 Lean 公理”与前提中没有伦理前提，引用通用边界 no-ethical-premise。前提中见证一项的 P40、P42、P49 改为所在模块的名称（喂养闭包、反馈、检验）；限制中“P49 定理的一行推论”改为 testing-within-registration 的定理。next_delta 中由 P93、P99、P103 接通的部分是已完成的连接，不是下一步，移入此处：登记改变时的选择保留／损失与局部执行的重构（P93，见关联 selection-under-registration-revision），后果修改参考构造方法、取得新候选、实际观察使用与受支持的反复修订（P99/P103）；“任意物理原语的形成及 Capture 更一般的规则变化保留自身范围”入“未表明”。规律、前提、状态、证明绑定与来源哈希均未改变。每句旧文本的去向见迁移对照表 [selection-through-registration.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/selection-through-registration.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026, migrated to schema 2 (item F of the open-issues plan: the migration of the 45 schema-1 records with the most lint findings; Ren: “please, do all”, relayed by the integrating session): the claim became 12 laws; the limitations went to does-not-show items and standard boundaries; the evidence became one paragraph naming the three binding receipts. The responsive law and its hypothesis now write out a condition the theorems carry that the old text named only through alike_within_registration: both flows balance at each step on what is registered (balanced, balanced'). “No Lean axiom is used”, with no ethical premise among the hypotheses, cites the standard boundary no-ethical-premise. In the witnesses' hypothesis, P40, P42 and P49 became the names of their modules (feeding closure, feedback, testing); in the limitations, “a one-line corollary of P49's theorems” became the theorems of testing-within-registration. The part of next_delta that P93, P99 and P103 supply is a completed connection, not a next step, and is kept here: choice preservation/loss under changing registration and a local executed reconstruction (P93, see the related selection-under-registration-revision), and consequence-driven reference-construction methods, acquired candidates, actual observation/use and supported recurring revision (P99/P103); “formation of arbitrary physical primitives and more general rule-changing capture retain their own scope” went to a does-not-show item. No law, premise, status, proof binding or source hash changed. Every earlier sentence is mapped in the migration table [selection-through-registration.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/selection-through-registration.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/fd2401d67871101a/selection-through-registration.json",
+      "sha256": "fd2401d67871101a248fc5263054ef4302584c4289fdbac4bb16b1d145bf1969",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

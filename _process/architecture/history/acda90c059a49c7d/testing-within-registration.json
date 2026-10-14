@@ -1,0 +1,627 @@
+{
+  "schema_version": 1,
+  "id": "testing-within-registration",
+  "title": {
+    "zh": "识之内的检验",
+    "en": "Testing within registration"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-13T12:27:01.789893+00:00",
+  "statement": {
+    "zh": "主张只经所识的差别被否证，相对于模型的否证是对模型与主张一起的否证。成员只经自己之识回应时，识闭包之外的在其中不被识；检验是关系的。",
+    "en": "A claim is refuted only through a difference in what registers, and refutation relative to a model refutes the model and the claim together. Where members respond only through their own registration, nothing beyond the registration closure registers within it; testing is relational."
+  },
+  "claim": {
+    "zh": "形成识它的支持（水平是否接纳它）与它所观察之条件的水平（obs；基础是只识支持，supportOnly）。在两个水平历史之下，在某步水平同样接纳它、所观察的条件同样立着，就是识得相同（Web.RegistersAlike），直到某步每步如此就是直到该步识得相同（Web.RegistersAlikeUpTo）。依存而不观察的条件只以是否满足所需被识（Web.alike_of_threshold），观察的条件以其水平被识（Web.observed_level_registers），观察得更多分辨得更多（Web.RegistersAlikeUpTo.of_obs）。关于水平历史的主张在某步被否证，是指满足它的历史没有一个直到该步与实际识得相同（Web.Refutes）：主张只经所识的差别被否证（Web.Refutes.not_of_alike），成立的永不被否证，否证此后一直成立，观察得更多否证得更多；没有模型时，对任何有限的记录，“某条件将归于无”与“它此后一直在无之上”都不被否证（Web.tail_unrefuted）。相对于模型（可容许历史的类）的否证（Web.RefutesWithin）恰是对模型与主张一起的否证（Web.refutesWithin_iff_conjunction）；相对于流的水平历史，观察储量的形成在第一步否证一切“它将归于无”的假主张（Flow.refutes_tail_within）；错的模型否证成立的，识否证模型（Stationary.model_error、model_refuted）。形成的信念是与实际识得相同的历史（Web.Belief）；否证是主张与信念不交；由识作出的判断恰是 Becoming.Inquiry 中判断过程在信念上的共同回应，更晚的步与更多的观察都保持它（Web.belief_judge_iff、belief_judge_later、belief_judge_widen）。形成依存于或观察一个条件就识它（Web.Registers）；识闭包是对经所识者受影响的闭包（Flow.WithinRegistration），含影响闭包，只识支持时就是它，随观察与交换增大。两个流在相同的形成在场、在一个区域的成员所识的每个条件上逐步平衡，区域在两个流中都对经所识者受影响封闭，水平起始在成员所识的条件上相同，每个成员在自己识得相同之处对成员所识的条件同样取用与给予时，每个成员每步都识得相同（Flow.alike_within_closed）。其余交换固定时，这给出：成员都在识闭包之外的部分，闭包之内每步有与无它都识得相同（Flow.unregistered_beyond_registration，推广 P42 的 unregistered_beyond_influence），无部分的水平所满足的主张在闭包之内不被否证，相对于模型的否证靠模型对部分之交换的排除，闭包之内的判断在有与无部分时都可容许（Flow.unrefuted_beyond_registration、beyond_needs_model、belief_judge_beyond）。Clearing 中清除者每步都识得相同，无论清除是否终结栖居者（Clearing.alike_for_clearer）；在不清除的世界中，“栖居者已被终结”被清除者在任何一步都不否证，被栖居者在第三步否证（Clearing.tested_by_dweller）；“第三步栖居者或清除者不被接纳”，两者各自都不否证，合起来否证（Clearing.pooled）；以固定起始与交换的模型，清除者在第一步否证它不识的（Clearing.model_idles_registration）。Prey 中不依存于自身的猎物，捕食者在其影响闭包之外、量度自身时的识闭包之内，经支持每步识得相同、量度自身则识其取用（Prey.registers_taking），这靠被省略的关系（Prey.omits）。不用 Lean 公理。",
+    "en": "A formation registers its support (whether the levels admit it) and the levels of the conditions it observes (obs; the base registers support only, supportOnly). Under two level histories it registers alike at a step when the levels admit it alike and its observed conditions stand alike (Web.RegistersAlike), and alike up to a step when it does so at every step up to it (Web.RegistersAlikeUpTo). A condition depended on and not observed registers only whether it meets the need (Web.alike_of_threshold), an observed one registers its level (Web.observed_level_registers), and observing more distinguishes more (Web.RegistersAlikeUpTo.of_obs). A claim about level histories is refuted at a step when no history meeting it registers alike with the actual one up to that step (Web.Refutes): a claim is refuted only through a difference in what registers (Web.Refutes.not_of_alike), what holds is never refuted, a refutation stands, and observing more refutes more; without a model, for any finite record, neither the claim that a condition comes to nothing nor the claim that it stays above nothing afterwards is refuted (Web.tail_unrefuted). Refutation relative to a model, a class of admissible histories (Web.RefutesWithin), is exactly refutation of the model and the claim together (Web.refutesWithin_iff_conjunction); relative to the level histories of a flow a formation observing a stock refutes at the first step every false claim that it comes to nothing (Flow.refutes_tail_within); a wrong model refutes what holds, and registration refutes the model (Stationary.model_error, model_refuted). A formation's belief is the histories registering alike with the actual one (Web.Belief); refutation is a claim disjoint from the belief; a judgment from registration is exactly a common response of the judging process of Becoming.Inquiry over the belief, kept as later steps and more observation narrow it (Web.belief_judge_iff, belief_judge_later, belief_judge_widen). A formation registers a condition when it depends on it or observes it (Web.Registers); the registration closure is the closure under being affected through what is registered (Flow.WithinRegistration), holding the influence closure, equal to it registering support only, and growing with observation and exchange. For two flows with the same formations present, balancing at each step on every condition a member of a region registers, the region closed in both under being affected through what is registered, the levels starting alike on what members register, and each member taking from and giving to what members register alike wherever it has registered alike, every member registers alike at every step (Flow.alike_within_closed). With the rest of the exchange fixed this gives that a part whose members all lie beyond the registration closure is registered alike with and without it at every step within the closure (Flow.unregistered_beyond_registration, extending P42's unregistered_beyond_influence), that no claim met by the levels without the part is refuted within it, that a refutation there relative to a model rests on the model excluding the part's exchange, and that a judgment there is admissible with and without the part (Flow.unrefuted_beyond_registration, beyond_needs_model, belief_judge_beyond). In Clearing the clearer registers alike at every step whether or not its clearing ends the dweller (Clearing.alike_for_clearer); in the world with the habitat spared, the claim that the dweller is ended is refuted by the clearer at no step and by the dweller at the third step (Clearing.tested_by_dweller); the claim that the dweller or the clearer is not admitted at the third step is refuted by neither alone and by the two together (Clearing.pooled); with a model fixing the start and the exchange the clearer refutes at the first step what it does not register (Clearing.model_idles_registration). In Prey, the prey not depending on itself, the predator lies beyond its influence closure and within its registration closure under a gauge of itself, registering alike through support at every step and through the gauge after the bite (Prey.registers_taking), which rests on omitted relations (Prey.omits). No Lean axiom is used."
+  },
+  "hypotheses": [
+    {
+      "zh": "识与否证的定义不设前提；模型是给出的可容许历史类。",
+      "en": "The definitions of registration and refutation assume nothing; a model is a supplied class of admissible histories."
+    },
+    {
+      "zh": "平衡只在被识的条件上逐步假设（Flow.BalancesOn，单元素家族，不需要有限性）；整体的平衡经 Flow.Balances.on 给出它。",
+      "en": "Balance is assumed only on the conditions registered, at each step (Flow.BalancesOn, singleton families, needing no finiteness); global balance gives it through Flow.Balances.on."
+    },
+    {
+      "zh": "Flow.alike_within_closed 另设区域在两个流中封闭、起始相同与成员只经自己之识回应，都是给出的假设；有与无部分的比较用扣留水平（Flow.WithheldLevels，其余交换不变，是表示上的选择）；部分是判定的形成家族。",
+      "en": "Flow.alike_within_closed further assumes the region closed in both flows, the starts alike, and the members responding only through their own registration, all supplied hypotheses; the comparison with and without a part uses withheld levels (Flow.WithheldLevels, the rest of the exchange unchanged, a choice of the representation); a part is a decided family of formations."
+    },
+    {
+      "zh": "识：支持与所观察条件的水平（obs，参数）；活动由表示给出，不算作被识。否证是对一个形成、在一步、在一个水平历史之下的；主张是关于水平历史的任何命题。",
+      "en": "Registration: support and the levels of the conditions observed (obs, a parameter); activity is supplied by the representation and is not counted as registered. Refutation is by one formation, at a step, under one level history; a claim is any proposition about level histories."
+    },
+    {
+      "zh": "见证的结论：各见证的流、网与模型（Clearing、Prey、Stationary）。",
+      "en": "For the witnesses: their flows, webs and models (Clearing, Prey, Stationary)."
+    },
+    {
+      "zh": "离散的步（从第 0 步计）；自然数的水平、所需与数量；条件上的判定相等（DecidableEq）只在按条件分情形处使用，不用经典推理。",
+      "en": "Discrete steps, counted from step 0; natural-number levels, needs and amounts; decidable equality of conditions (DecidableEq) is used only to split cases on conditions, and no classical reasoning is used."
+    }
+  ],
+  "correspondence": {
+    "zh": "Ren 的提议：“can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”，“I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”。AI 的回答提出反馈的三种不见、失控是在其一之中运行的回路、跨过它们的方式、可否证性是被展开纠正的条件，以及 理 的读法；Ren 答：“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”。独立审查收窄了这些读法：三种不见各有其范围（阈下在交换随识之处，视界之外在延续开放之处，识闭包之外在成员只经自己之识回应之处）；失控的读法是启发，不是陈述；理 读作对识负责的模型（2026-10-12 Ren 读理为对结构与变化之规律的建模，取代这一读法；模型仍只经识被检验，见 generalization-through-lumping）。所以记录中的读法是 AI 收窄之后的，待 Ren，不是 Ren 所接受的原文。第 4 问（形成自身的立着是否算作被识）由 AI 探索后决定：基础只识支持（supportOnly），一类读法中自身的立着经承担自身（Web.SelfBearing）作为阈值被识，量度自身（ownStanding）是观察前提；理由见整合文档 §70.1。“识”（registers）原作“计入”，与 P42 一致；Ren 认为“计入 is apparently weird, need better word”，AI 先改为“反映”，Ren 定为“识”（“for registers, use 识”），取差别在形成的状态中显出之义（见整合文档 §{SEC}.2）。",
+    "en": "Ren's proposal: “can becoming provide wisdoms to avoid run away feedbacks and the identification of knowledge, learning, and scientific principles like falsifiability”, and “I think all the wisdoms about wisdoms, how to think, learn, update, are all explained within what we have, if not not proved yet”. The AI's answer proposed three blindnesses of feedback, a runaway as a loop running inside one of them, the ways across them, falsifiability as the condition of being corrected by the unfolding, and a reading of 理; Ren answered “agree with you, great job, start now. for 4, you can explore which option is better, then make decision”. The independent review narrowed the readings: each blindness has its scope (below a threshold where the exchange follows registration, beyond the horizon where the continuation is open, beyond the registration closure where the members respond only through their own registration); the runaway reading is a heuristic, not a statement; and 理 is read as a model answerable to registration (on 12 October 2026 Ren read 理 as the modeling of the laws of structure and of change, which replaces that reading; a model is still tested only through registration, generalization-through-lumping). So the readings recorded here are the AI's narrowed ones, pending Ren, not the wording Ren accepted. Question 4, whether a formation's own standing counts as registered, was decided by the AI after exploring the options: the base registers support only (supportOnly); in the one-kind reading own standing registers through self-bearing (Web.SelfBearing) as a threshold; and a gauge of oneself (ownStanding) is an observation premise. The reasons are in §70.1 of the integration note. The Chinese for “registers” was 计入, as in P42; Ren found it “apparently weird” and asked for a better word, the AI proposed 反映, and Ren chose 识 (“for registers, use 识”): a difference showing in the formation's state (§70.2 of the integration note)."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+  "aliases": [
+    "Becoming.Web.RegistersAlike",
+    "Becoming.Web.RegistersAlikeUpTo",
+    "Becoming.Web.Refutes",
+    "Becoming.Web.RefutesWithin",
+    "Becoming.Web.Registers",
+    "Becoming.Web.Belief",
+    "Becoming.Web.alike_of_threshold",
+    "Becoming.Web.tail_unrefuted",
+    "Becoming.Web.refutesWithin_iff_conjunction",
+    "Becoming.Web.belief_judge_iff",
+    "Becoming.Flow.WithinRegistration",
+    "Becoming.Flow.refutes_tail_within",
+    "Becoming.Flow.alike_within_closed",
+    "Becoming.Flow.unregistered_beyond_registration",
+    "Becoming.Flow.unrefuted_beyond_registration",
+    "Becoming.Flow.beyond_needs_model",
+    "Becoming.Clearing.tested_by_dweller",
+    "Becoming.Clearing.pooled",
+    "Becoming.Stationary.model_error",
+    "registration closure",
+    "识闭包",
+    "reach blindness",
+    "falsifiability",
+    "可否证性",
+    "refutation relative to a model",
+    "相对于模型的否证"
+  ],
+  "dependencies": [
+    {
+      "id": "feedback-and-reach",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "推广 P42 的 Flow.Balances.unregistered_beyond_influence（加入观察，并以成员有回应的形式 Flow.alike_within_closed 为其根据；只识支持时 Flow.unregistered_beyond_registration 就是它），复用 Flow.Exchanges、Flow.WithinInfluence、Clearing.sparedFlow、sparedWeb、spared_balances 与 spared_dependent；这里的实质增量是 alike_within_closed，不是固定其余交换的形式。",
+        "en": "Extends P42's Flow.Balances.unregistered_beyond_influence (adding observation, and grounding it in the form where the members respond, Flow.alike_within_closed; registering support only, Flow.unregistered_beyond_registration is it), and reuses Flow.Exchanges, Flow.WithinInfluence, Clearing.sparedFlow, sparedWeb, spared_balances and spared_dependent; the substantive delta here is alike_within_closed, not the fixed-rest form."
+      },
+      "interface": {
+        "output": {
+          "zh": "交换、影响闭包与不清除的世界。",
+          "en": "Exchange, the influence closure and the world with the habitat spared."
+        },
+        "input": {
+          "zh": "识闭包及其不见；清除者不检验栖居者被终结。",
+          "en": "The registration closure and its blindness; the clearer does not test whether the dweller is ended."
+        },
+        "conditions": {
+          "zh": "平衡；扣留水平。",
+          "en": "Balance; withheld levels."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "levels-of-closure",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 ClosedUnder、WithinClosure（mono、not_rel、of_rel、refl、trans）、closedUnder_withinClosure 与 Web.DependsOn。",
+        "en": "Reuses ClosedUnder, WithinClosure (mono, not_rel, of_rel, refl, trans), closedUnder_withinClosure and Web.DependsOn."
+      },
+      "interface": {
+        "output": {
+          "zh": "对一个关系的闭包。",
+          "en": "Closure under a relation."
+        },
+        "input": {
+          "zh": "识闭包及其封闭。",
+          "en": "The registration closure and its closedness."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean"
+      }
+    },
+    {
+      "id": "closing-needs-net-draw",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Web.Admits、Flow.withhold 与 Flow.WithheldLevels。",
+        "en": "Reuses Web.Admits, Flow.withhold and Flow.WithheldLevels."
+      },
+      "interface": {
+        "output": {
+          "zh": "接纳与扣留水平。",
+          "en": "Admission and withheld levels."
+        },
+        "input": {
+          "zh": "识得相同的第一项；有与无部分的比较。",
+          "en": "The first clause of registering alike; the comparison with and without a part."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean"
+      }
+    },
+    {
+      "id": "four-cases-of-a-part",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用 Clearing.unsupported_with：清除时栖居者从第三步起不被支持。",
+        "en": "Reuses Clearing.unsupported_with: with the clearing the dweller is unsupported from the third step on."
+      },
+      "interface": {
+        "output": {
+          "zh": "栖居者被终结。",
+          "en": "The dweller is ended."
+        },
+        "input": {
+          "zh": "Clearing.DwellerEnded 在清除的世界中成立。",
+          "en": "Clearing.DwellerEnded holds in the world with the clearing."
+        },
+        "conditions": {
+          "zh": "无。",
+          "en": "None."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "subthreshold-registration",
+      "detail": {
+        "zh": "那里是阈值处的识与交换随识时阈下差别的规律；这里是识、否证、所及与检验的关系性。",
+        "en": "There registration at a threshold and the laws of differences below it where the exchange follows registration; here registration, refutation, reach and the relational character of testing."
+      }
+    },
+    {
+      "id": "becoming-finite-horizon",
+      "detail": {
+        "zh": "那里有限的前缀不决定更新还是消耗，其两个推论 no_exact_finite_reading 与 finite_reading_withholds_renewal 也在 Becoming.Testing 中；这里没有模型时有限的记录不否证关于其后的主张，相对于模型则可以。",
+        "en": "There no finite prefix decides renewal or consumption, and its two corollaries no_exact_finite_reading and finite_reading_withholds_renewal are also in Becoming.Testing; here without a model no finite record refutes a claim about what follows it, while relative to a model one can."
+      }
+    },
+    {
+      "id": "finite-fallible-inquiry-necessity",
+      "detail": {
+        "zh": "外围的信息界：保持同样读数的适应关系不能同时满足更强的覆盖；这里在脊柱上，同样的识不分辨，主张只经所识的差别被否证。",
+        "en": "The periphery's information bound: adaptive relations preserving the same readouts cannot also meet stronger coverage; here on the spine, the same registration does not distinguish, and a claim is refuted only through a difference in what registers."
+      }
+    },
+    {
+      "id": "prefix-observation-loss",
+      "detail": {
+        "zh": "那里一切前缀问题都可以漏掉中间的损失；这里没有模型时有限的记录不否证关于其后的主张。",
+        "en": "There every prefix question can omit an intermediate loss; here without a model no finite record refutes a claim about what follows it."
+      }
+    },
+    {
+      "id": "scientific-inquiry-foundation",
+      "detail": {
+        "zh": "这一开放目标的一个部分：在脊柱上陈述被展开否证的条件与相对于模型的否证；不确立整个目标。",
+        "en": "One part of this open target: the condition of being refuted by the unfolding, and refutation relative to a model, stated on the spine; it does not establish the whole target."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "detail": {
+        "zh": "相对于模型的否证可以出错：Stationary 中模型说没有取用与给予，相对于它，量度储量的形成在第一步否证“储量将归于无”，而这在实际中成立（Stationary.model_error）。",
+        "en": "Refutation relative to a model can err: in Stationary the model says nothing takes or gives, and relative to it a formation gauging the stock refutes at the first step the claim that the stock comes to nothing, which holds of the actual history (Stationary.model_error)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "detail": {
+        "zh": "识闭包可以严格大于影响闭包：Prey 中捕食者在猎物的影响闭包之外，量度自身时在其识闭包之内（Prey.registers_taking）；所识的差别对猎物不起作用，猎物不承担自身（Prey.omits），所以这一见证靠被省略的关系。",
+        "en": "The registration closure can be strictly larger than the influence closure: in Prey the predator lies beyond the prey's influence closure and, under a gauge of itself, within its registration closure (Prey.registers_taking); the registered difference does nothing to the prey, which does not bear on itself (Prey.omits), so the witness rests on omitted relations."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "形成观察支持之外的任何东西、形成模型、想要检验或知道其识闭包都不推出；识得相同界定能分辨的，不说一个差别关于什么；一个动作造成什么是对两段历史的比较，只相对于无此动作之历史的模型才可检验，变动自己的动作并识差别（实验）没有陈述；他者怎样回应是给出的；多步 Scope 的桥仍开放；读法是 AI 的，经审查收窄，待 Ren；不含伦理谓词。",
+    "en": "That a formation observes anything beyond its support, forms a model, wants to test or knows its registration closure is not derived; registering alike bounds what can be told apart and says nothing of what a difference is about; what an act does compares two histories and is testable only relative to a model of the history without it, and varying one's own act and registering the difference (experiment) is not stated; how others respond is supplied; the multi-step Scope bridge remains open; the readings are the AI's, narrowed by the review, pending Ren; contains no ethical predicate."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Testing 的 92 项定理全部空依赖，其中含Web.Refutes.not_of_alike、Web.tail_unrefuted、Web.refutesWithin_iff_conjunction、Flow.refutes_tail_within、Web.belief_judge_iff、Flow.alike_within_closed、Clearing.tested_by_dweller 与 Clearing.pooled；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。作者反审见整合文档 §70.3；整合之前经第十七次独立审查（BECOMING-P49-REVIEW.md，起草时称 P47），其处理见 §70.2；处理之后的文本尚未经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 92 theorems of Becoming.Testing all have empty axiom reports, among them Web.Refutes.not_of_alike, Web.tail_unrefuted, Web.refutesWithin_iff_conjunction, Flow.refutes_tail_within, Web.belief_judge_iff, Flow.alike_within_closed, Clearing.tested_by_dweller and Clearing.pooled; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The author's counterreview is in §70.3 of the integration note; reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2; the text after that treatment is not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "role": "proof",
+      "sha256": "39b89d106a813b1c700d979f56aea2a0465fca3200b1c32e8e37bed437ff9064",
+      "declarations": [
+        "Becoming.supportOnly",
+        "Becoming.ownStanding",
+        "Becoming.ownStanding_other",
+        "Becoming.sees_narrow",
+        "Becoming.recordThen",
+        "Becoming.Web.RegistersAlike",
+        "Becoming.Web.RegistersAlikeUpTo",
+        "Becoming.Web.Refutes",
+        "Becoming.Web.RefutesWithin",
+        "Becoming.Web.Registers",
+        "Becoming.Web.Belief",
+        "Becoming.Web.RegistersAlikeAll",
+        "Becoming.Web.RefutesBy",
+        "Becoming.Web.RegistersAlike.refl",
+        "Becoming.Web.RegistersAlike.symm",
+        "Becoming.Web.RegistersAlikeUpTo.symm",
+        "Becoming.Web.RegistersAlikeUpTo.earlier",
+        "Becoming.Web.RegistersAlikeUpTo.of_obs",
+        "Becoming.Web.registersAlikeUpTo_of_agree",
+        "Becoming.Web.alike_of_threshold",
+        "Becoming.Web.observed_level_registers",
+        "Becoming.Web.Refutes.not_of_alike",
+        "Becoming.Web.Refutes.not_meets",
+        "Becoming.Web.Refutes.later",
+        "Becoming.Web.Refutes.widen",
+        "Becoming.Web.Refutes.not_of_extension",
+        "Becoming.Web.tail_unrefuted",
+        "Becoming.Web.refutes_iff_refutesWithin_all",
+        "Becoming.Web.refutesWithin_iff_conjunction",
+        "Becoming.Web.RefutesWithin.narrow",
+        "Becoming.Web.RefutesWithin.not_meets",
+        "Becoming.Web.RefutesBy.of_member",
+        "Becoming.Web.belief_refutes_iff",
+        "Becoming.Web.belief_judge_iff",
+        "Becoming.Web.belief_judge_later",
+        "Becoming.Web.belief_judge_widen",
+        "Becoming.Flow.RegisteredFrom",
+        "Becoming.Flow.WithinRegistration",
+        "Becoming.Flow.RegisteredFromEither",
+        "Becoming.Flow.BalancedHistory",
+        "Becoming.Flow.balancedHistory_iff",
+        "Becoming.Flow.BalancedHistory.agree",
+        "Becoming.Flow.refutes_tail_within",
+        "Becoming.Flow.withinRegistration_of_withinInfluence",
+        "Becoming.Flow.withinRegistration_supportOnly",
+        "Becoming.Flow.withinRegistration_mono_obs",
+        "Becoming.Flow.withinRegistration_mono_flow",
+        "Becoming.Flow.beyond_registration",
+        "Becoming.Flow.exchange_agrees_within",
+        "Becoming.Flow.alike_within_closed",
+        "Becoming.Flow.alike_within_registration",
+        "Becoming.Flow.withhold_exchanges",
+        "Becoming.Flow.unregistered_beyond_registration",
+        "Becoming.Flow.unrefuted_beyond_registration",
+        "Becoming.Flow.beyond_needs_model",
+        "Becoming.Flow.belief_judge_beyond",
+        "Becoming.Prey.flow",
+        "Becoming.Prey.web",
+        "Becoming.Prey.spared",
+        "Becoming.Prey.predatorPart",
+        "Becoming.Prey.preyAlone_closed",
+        "Becoming.Prey.registers_taking",
+        "Becoming.Prey.omits",
+        "Becoming.Stationary.still",
+        "Becoming.Stationary.actual",
+        "Becoming.Stationary.model_error",
+        "Becoming.Stationary.model_refuted",
+        "Becoming.Clearing.clearerSide",
+        "Becoming.Clearing.clearerSide_closed",
+        "Becoming.Clearing.alike_for_clearer",
+        "Becoming.Clearing.DwellerEnded",
+        "Becoming.Clearing.tested_by_dweller",
+        "Becoming.Clearing.EitherEnded",
+        "Becoming.Clearing.pooled",
+        "Becoming.Clearing.FixedStartAndExchange",
+        "Becoming.Clearing.model_idles_registration"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "role": "proof",
+      "sha256": "a23221f7927d94a587999f6276fc4fdb6bbe04bd567d85034e8b3a6b148ab73d",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "role": "proof",
+      "sha256": "dc2abebba7620898cae8fddbc92e74544cf6f23af4926f4a4c48d4e5ca13477d",
+      "declarations": [
+        "Becoming.Flow.Balances.unregistered_beyond_influence",
+        "Becoming.Clearing.sparedFlow",
+        "Becoming.Clearing.sparedWeb",
+        "Becoming.Clearing.spared_balances",
+        "Becoming.Clearing.spared_dependent",
+        "Becoming.WithinClosure",
+        "Becoming.ClosedUnder",
+        "Becoming.closedUnder_withinClosure",
+        "Becoming.Web.DependsOn",
+        "Becoming.Flow.Exchanges",
+        "Becoming.Flow.WithinInfluence"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "role": "proof",
+      "sha256": "6e6d134d53e3587a801904538458aae705c90802885f6cc8df6dc28cebbef912",
+      "declarations": [
+        "Becoming.Web.Admits",
+        "Becoming.Flow.withhold",
+        "Becoming.Flow.WithheldLevels"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "role": "proof",
+      "sha256": "bb00f7eb64a4303964415450dc10611359416c2fb14baceab89f8f73d1bed604",
+      "declarations": [
+        "Becoming.commonResponse_judge_iff",
+        "Becoming.commonResponse_antitone",
+        "Becoming.judgeProcess",
+        "Becoming.sees"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "role": "proof",
+      "sha256": "13b5c507bec0ef8c986251981879704c02b76e07757e4e00e578c0797f552727",
+      "declarations": [
+        "Becoming.Clearing.unsupported_with"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "role": "proof",
+      "sha256": "e0a766eb2e0f7ec22acab4644b2ff1dded83065f107b7c41f8b6a583dd9d3efc",
+      "declarations": [
+        "Becoming.Web.SelfBearing",
+        "Becoming.Web.Embodied"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "role": "receipt",
+      "sha256": "48fd7efd02436ec3e2dfd904771bdf1a44f18edaeb55fcc23256e24523a59d19",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "2d8b5c7ceab8e1e543ae21b66be9a5b27d1a642e75488d955228382a38a0a55a",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "d53319e82cc9be591e16e854f9c946908d31aa16428503af55a2027f11365107",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGISTRATION-AND-TESTING-PLAN.md",
+      "role": "integration",
+      "sha256": "425b68476ac8e939315dad002f5222ff51cbd692db09ae614ee4a9d0f9b8627f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-P49-REVIEW.md",
+      "role": "review",
+      "sha256": "c2f28451485542985a50a35632b1c439a735362a1231270231a50eab4f3b5420",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-11-wisdom-from-registration.md",
+      "role": "provenance",
+      "sha256": "4fc423936815ac19535df80e99d3142ff56eda536da9fa6ba55be77ef39a48fd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "role": "receipt",
+      "sha256": "c1e7a979931c19f4cf3649ffd24ae4315c531e5c678b16f9dc452fa4d00ceafb",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Testing.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261014T091930.724493Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Testing",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Feedback.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Feedback",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Admission.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Admission",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Inquiry.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Inquiry",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Regions.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Regions",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Roles",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261013T094743.528770Z/verification.json",
+      "sha256_pointer": "/source_sha256/Becoming.Flow",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；实验：变动自己的动作并识差别；模型从哪里来（P66 给出哪些投影承载模型：恰是投影相同的配置同去者，见 projection-carrying-a-law；P73 给出模型的推广何时正确：恰在世界经它所归并者同去之处，见 generalization-through-lumping）；由动力学给出回应，而不是另给它（P65 另给其余经其识回应，并把比较定在回应所及之内）；识关于什么（校准）；识不分辨值时（阈下）的学习。",
+    "en": "The multi-step Scope bridge: a policy sensing only through registration has the same visible scope on flows registered alike; experiment: varying one's own act and registering the difference; where a model comes from (P66 states which projections carry one: exactly those under which configurations alike go alike, projection-carrying-a-law; P73 states when a model's generalization is right: exactly where the world goes alike across what it lumps, generalization-through-lumping); responses given by the dynamics rather than supplied (P65 supplies that the rest responds through its registration and decides the comparison within the responsive reach); what a registration is about (calibration); learning where registration does not tell values apart (below threshold)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-11 P49：新增，按 Ren“agree with you, great job, start now. for 4, you can explore which option is better, then make decision”；起草时编为 P47，因 P47 已是 Becoming.Standing 而改为 P49；统一计划 P49；见整合文档 §70；整合之前经第十七次独立审查，处理见 §70.2。",
+      "en": "2026-10-11 P49: added, following Ren's ‘agree with you, great job, start now. for 4, you can explore which option is better, then make decision’; drafted as P47 and renumbered because P47 is Becoming.Standing; unification plan P49; see §70 of the integration note; reviewed before integration by the seventeenth independent review, handled in §70.2."
+    },
+    {
+      "zh": "2026-10-11 P50：验证范围重新指向合并检查器回执 20261011T073932.785239Z 与外围回执 20261011T074322.969802Z（清点 C 组的局部规律：九个模块中每个原定理改经其局部形式证明，名称与陈述不变；定理数改变的模块：Dependence、Flow、Change、Population、Identity、Roles、Evolution、Openness、Continuation、Admission、Interdependence；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P50: validation scope re-pointed to consolidated receipt 20261011T073932.785239Z and periphery receipt 20261011T074322.969802Z (the local laws of the inventory's group C: in nine modules each original theorem re-proved through its local form, names and statements unchanged; modules whose theorem count changed: Dependence, Flow, Change, Population, Identity, Roles, Evolution, Openness, Continuation, Admission, Interdependence; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11：中文的 registers 改为“识”（Ren：“for registers, use 识”），原作“反映”；断言不变。",
+      "en": "2026-10-11: the Chinese for “registers” is now 识 (Ren: “for registers, use 识”), formerly 反映; the claim is unchanged."
+    },
+    {
+      "zh": "2026-10-11 P57：Becoming.Flow.BalancesOn、Becoming.Flow.Balances.on 移入 Becoming.Flow（共享引理移到需要它的最低模块），陈述与证明不变；引用随之改指。断言不变。验证范围重新指向回执 20261011T122250.993495Z 与外围回执 20261011T143738.711009Z。",
+      "en": "2026-10-11 P57: Becoming.Flow.BalancesOn, Becoming.Flow.Balances.on moved into Becoming.Flow (a shared lemma relocated to the lowest module that needs it), statements and proofs unchanged, and the references follow. The claim is unchanged. Validation scope re-pointed to receipt 20261011T122250.993495Z and periphery receipt 20261011T143738.711009Z."
+    },
+    {
+      "zh": "2026-10-11 P54+P56：验证范围重新指向合并检查器回执 20261011T171000.054867Z 与外围回执 20261011T180706.458104Z（P54 的 g0_relevance_iff 与 P56 的生成的空间：Regions、Significance 与 Relevance 中只新增定义与定理，既有陈述不变，Significance 的三条界改经其局部形式证明；定理数改变的模块：Regions、Significance、Relevance；包与核心闭包不变）。断言不变。",
+      "en": "2026-10-11 P54+P56: validation scope re-pointed to consolidated receipt 20261011T171000.054867Z and periphery receipt 20261011T180706.458104Z (P54's g0_relevance_iff and P56's generative space: new definitions and theorems only in Regions, Significance and Relevance, no existing statement changed, Significance's three margin laws re-proved through their local forms; modules whose theorem count changed: Regions, Significance, Relevance; the package and the core closure unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P63：验证范围重新指向合并检查器回执 20261011T192152.790658Z 与外围回执 20261011T192511.756300Z（储备与依存的局部规律与 P61 的反方向，原定理改经其局部形式证明，名称与陈述不变；新的核心模块 Sampling、Units 与 Tower，各 90、31 与 6 项定理；定理数改变的已有模块：Dependence、Identity、Reserve；包与核心闭包各多三个模块）。断言不变。",
+      "en": "2026-10-12 P63: validation scope re-pointed to consolidated receipt 20261011T192152.790658Z and periphery receipt 20261011T192511.756300Z (the local laws of reserve and dependence and the converse of P61, the originals re-proved through their local forms, names and statements unchanged; new core modules Sampling, Units and Tower, with 90, 31 and 6 theorems; existing modules whose theorem count changed: Dependence, Identity, Reserve; the package and the core closure each have three modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P62：验证范围重新指向合并检查器回执 20261011T194804.708104Z 与外围回执 20261011T195216.607072Z（无明的边界条件：新的核心模块 Seeking 与 Capture，各 13 与 11 项定理，不改已有模块；包与核心闭包各多两个模块）。断言不变。",
+      "en": "2026-10-12 P62: validation scope re-pointed to consolidated receipt 20261011T194804.708104Z and periphery receipt 20261011T195216.607072Z (the boundary condition for 无明: new core modules Seeking and Capture, with 13 and 11 theorems, no existing module changed; the package and the core closure each have two modules more). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P59+P58：验证范围重新指向合并检查器回执 20261011T210459.095261Z 与外围回执 20261011T211111.085532Z（新核心模块 Becoming.Decidedness 与 Becoming.Imbalance，包与核心闭包各加两个模块；静止定理一族在原处去掉未用的判定程序，名称不变，平息的引理加在 Space 与 Openness；定理数改变的既有模块：Space（56→62）、Openness（80→85））。断言不变。",
+      "en": "2026-10-12 P59+P58: validation scope re-pointed to consolidated receipt 20261011T210459.095261Z and periphery receipt 20261011T211111.085532Z (new core modules Becoming.Decidedness and Becoming.Imbalance, the package and the core closure each two modules larger; the rest theorems drop their unused decision procedure in place, names kept, with the settling lemmas added in Space and Openness; existing modules whose theorem count changed: Space (56 to 62), Openness (80 to 85)). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P64、P65、P66：经选择者之识直到某步的每个选择（本记录的信念是其一）恰在选择者把两段历史识得相同时选它们相同（Web.selects_alike_iff，selection-through-registration）；其余经其识回应时，比较在回应所及之内决定，是本记录 Flow.alike_within_closed 从部分一方的对偶（comparison-where-the-rest-responds）；投影恰在投影相同的配置同去时承载规律（projection-carrying-a-law）。next_delta 随之修订；见整合文档 §86、§87、§88。断言不变。",
+      "en": "2026-10-12 P64, P65, P66: every selection through a selector's registration up to a step, this record's belief among them, selects two histories alike exactly when the selector registers them alike (Web.selects_alike_iff, selection-through-registration); with the rest responding through its registration, the comparison is decided within the responsive reach, the dual from a part's side of this record's Flow.alike_within_closed (comparison-where-the-rest-responds); a projection carries a law exactly where configurations alike under it go alike (projection-carrying-a-law). next_delta revised; see §86, §87 and §88 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P58b：验证范围重新指向合并检查器回执 20261011T232354.807725Z 与外围回执 20261011T232716.311380Z（P58 的六个平息引理改名，使名称恰是陈述所说：停止不能被否证；Space 加 stop_unrefuted_iff，62→63；陈述与证明不变）。断言不变。",
+      "en": "2026-10-12 P58b: validation scope re-pointed to consolidated receipt 20261011T232354.807725Z and periphery receipt 20261011T232716.311380Z (P58's six settling lemmas renamed so each name says exactly what its statement says: stopping unrefuted; Space adds stop_unrefuted_iff, 62 to 63; statements and proofs unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：Ren 读理为对结构与变化之规律的建模，取代 AI 的读法“对识负责的模型”；Web.tail_unrefuted 推广为任意被识序列上的 no_record_fixes_next，其正面一侧是被列表所持的世界中按否证学习的否证有界（learning-by-refutation）；next_delta 随之修订；见整合文档 §92。断言不变。",
+      "en": "2026-10-12 P73: Ren reads 理 as the modeling of the laws of structure and of change, replacing the AI's reading “a model answerable to registration”; Web.tail_unrefuted is generalized to no_record_fixes_next on every course, whose positive side is that learning by refutation is refuted a bounded number of times in a world held by a list (learning-by-refutation); next_delta revised; see §92 of the integration note. The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-12 P73：验证范围重新指向合并检查器回执 20261012T012916.201078Z 与外围回执 20261012T013048.258651Z（新增 Becoming.Learning，2895→2970 项定理，包 56→57 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-12 P73: validation scope re-pointed to consolidated receipt 20261012T012916.201078Z and periphery receipt 20261012T013048.258651Z (Becoming.Learning added, 2895 to 2970 theorems, package 56 to 57 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P70–P72/P72q：验证范围重新指向合并检查器回执 20261013T084405.661795Z 与外围回执 20261013T084521.070057Z（新增 Becoming.Description、Diagonal、Context 与 Quantum，2970→3114 项定理，包 57→61 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P70–P72/P72q: validation scope re-pointed to consolidated receipt 20261013T084405.661795Z and periphery receipt 20261013T084521.070057Z (Becoming.Description, Diagonal, Context and Quantum added, 2970 to 3114 theorems, package 57 to 61 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P83：验证范围重新指向合并检查器回执 20261013T085153.061517Z 与外围回执 20261013T085221.613502Z（新增 Becoming.Identification，3114→3156 项定理，包 61→62 个模块）。断言不变。",
+      "en": "2026-10-13 P83: validation scope re-pointed to consolidated receipt 20261013T085153.061517Z and periphery receipt 20261013T085221.613502Z (Becoming.Identification added, 3114 to 3156 theorems, package 61 to 62 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P76 + P81：验证范围重新指向合并检查器回执 20261013T085835.650723Z 与外围回执 20261013T085914.780427Z（新增 Becoming.Histories, Becoming.Branching，3156→3302 项定理，包 62→64 个模块）。断言不变。",
+      "en": "2026-10-13 P76 + P81: validation scope re-pointed to consolidated receipt 20261013T085835.650723Z and periphery receipt 20261013T085914.780427Z (Becoming.Histories, Becoming.Branching added, 3156 to 3302 theorems, package 62 to 64 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P80：验证范围重新指向合并检查器回执 20261013T090346.930838Z 与外围回执 20261013T090430.379669Z（新增 Becoming.Counterfactual，3302→3348 项定理，包 64→65 个模块；已有模块不变）。断言不变。",
+      "en": "2026-10-13 P80: validation scope re-pointed to consolidated receipt 20261013T090346.930838Z and periphery receipt 20261013T090430.379669Z (Becoming.Counterfactual added, 3302 to 3348 theorems, package 64 to 65 modules; existing modules unchanged). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P77–P79/P82/P84/P85：验证范围重新指向合并检查器回执 20261013T090945.451917Z 与外围回执 20261013T091033.730173Z（新增 Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession，3348→4115 项定理，包 65→71 个模块）。断言不变。",
+      "en": "2026-10-13 P77–P79/P82/P84/P85: validation scope re-pointed to consolidated receipt 20261013T090945.451917Z and periphery receipt 20261013T091033.730173Z (Becoming.Listing, Becoming.Order, Becoming.OneStep, Becoming.Weighted, Becoming.Transmission, Becoming.Succession added, 3348 to 4115 theorems, package 65 to 71 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P86 + P87 + P88：验证范围重新指向合并检查器回执 20261013T091820.375259Z 与外围回执 20261013T091907.838571Z（新增 Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal，4115→4328 项定理，包 71→74 个模块）。断言不变。",
+      "en": "2026-10-13 P86 + P87 + P88: validation scope re-pointed to consolidated receipt 20261013T091820.375259Z and periphery receipt 20261013T091907.838571Z (Becoming.Feeding, Becoming.Persistence, Becoming.OrderNormal added, 4115 to 4328 theorems, package 71 to 74 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 R5 Entropy：验证范围重新指向合并检查器回执 20261013T093441.881086Z 与外围回执 20261013T093542.175797Z（新增 Becoming.Entropy，4328→4513 项定理，包 74→75 个模块）。断言不变。",
+      "en": "2026-10-13 R5 Entropy: validation scope re-pointed to consolidated receipt 20261013T093441.881086Z and periphery receipt 20261013T093542.175797Z (Becoming.Entropy added, 4328 to 4513 theorems, package 74 to 75 modules). The claim is unchanged."
+    },
+    {
+      "zh": "2026-10-13 P58c：验证范围重新指向合并检查器回执 20261013T094743.528770Z 与外围回执 20261013T095049.338744Z（静止一族按所证强度命名：从某步起静止不能被否证者名带 unrefuted，其陈述加强；只证不复现者名带 not_recurring；Space、Locality、Resolution 新增 5 项定理）。",
+      "en": "2026-10-13 P58c: validation scope re-pointed to consolidated receipt 20261013T094743.528770Z and periphery receipt 20261013T095049.338744Z (the rest family named by the strength proved: theorems proving that resting from some step on cannot be refuted are named with unrefuted, their statements strengthened; those proving only non-recurrence are named with not_recurring; Space, Locality and Resolution add five theorems)."
+    },
+    {
+      "zh": "2026-10-13 接手核对：当前合并回执 20261013T094743.528770Z 实含 22 个继承模块；当前验证摘要中沿用的 15 改为 22。历史回执及其当时计数不变；断言、前提与证明不变。",
+      "en": "2026-10-13 takeover reconciliation: current consolidated receipt 20261013T094743.528770Z contains 22 inherited modules; the carried-over count of 15 in the current validation summary is corrected to 22. Historical receipts and their original counts remain unchanged, as do the claim, premises and proofs."
+    },
+    {
+      "zh": "2026-10-13 P89 来源维护：仅核对本轮追加桥接／完成说明的源文差异；未变证明所用的可变汇总回执固定到原有同字节冻结版本。除本记录明示的 P89 接入外，原科学范围与反例不变。",
+      "en": "13 October 2026, P89 source maintenance: reviewed only the appended bridge/closure source delta; mutable receipt references for unchanged proofs are pinned to their existing byte-identical frozen versions. Except for an explicitly stated P89 connection in this record, scientific scope and counterexamples are unchanged."
+    },
+    {
+      "zh": "2026-10-13 P91 来源核对：保留原理论／研究文本，接入分组保真及实际混合损失的独立结果；正文脊柱目录和当前汇总数按新冻结回执核对。原声明、前提、反例及历史证明绑定保持。",
+      "en": "13 October 2026, P91 source reconciliation: prior theory/study text is retained while the distinct regrouping-fidelity and actual mixed-loss result is added; the spine catalogue and current totals are checked against the new frozen receipt. Original claims, premises, counterexamples and historical proof bindings remain."
+    },
+    {
+      "zh": "2026-10-13 P93：核读主干新增的登记修订段落及形式模块行；删除这两处新增后此前全文字节一致，本条既有主张和冻结证据未改变。",
+      "en": "13 October 2026, P93: reviewed the added registration-revision paragraph and formal-module row; removing only those additions restores every earlier byte. This record’s claim and frozen evidence are unchanged."
+    },
+    {
+      "zh": "P99 文献对应：已核对同一来源仅新增参考计划修订的成对论述／模块行；旧声明、前提和证明字节保留，未追认新的数学范围。 最终反审另外明示参考登记非全部接触，并把漂移补成实际历史；模块行按最终43项定理更新。",
+      "en": "P99 documentary correspondence: verified only paired reference-plan additions/module row in the same source; prior claims, premises and proof bytes preserved, with no retrospective extension of mathematical scope. Final counterreview also distinguishes installed registration from total access and makes drift an actual history; the module row follows the final 43-theorem source."
+    },
+    {
+      "zh": "2026-10-13，P100 文献对应复核：主章§9仅新增外围完整片段比较的模块行与条件范围说明；本记录既有主张、证明及冻结回执不变，不记作重新证明。",
+      "en": "2026-10-13, P100 documentary reconciliation: chapter §9 adds only a peripheral complete-episode comparison row and its conditional scope; this record’s claims, proofs and frozen receipts are unchanged, with no reproof credited."
+    },
+    {
+      "zh": "P103 共享章对应复核：核对 P104/P105 已检模块的两行导航及 P93/P99/P103 接续说明；旧章除这些可定位增量外逐字保留，本成果证明和主张未改。",
+      "en": "P103 shared-chapter review: two navigation rows for checked P104/P105 modules and the P93/P99/P103 continuation notes are reconciled; all other prior chapter bytes, this result’s proof and claim remain unchanged."
+    },
+    {
+      "zh": "本次 main 提交的隔离内容复核：只加入本会话 P93/P99/P103 的主章段落和模块行；旧字节、证明和主张保留，指纹绑定这一确切提交范围。",
+      "en": "Review of this main commit’s isolated content: only this session’s P93/P99/P103 chapter notes and module rows are added; earlier bytes, proofs and claims remain. Fingerprints bind this exact commit scope."
+    },
+    {
+      "zh": "2026-10-14 合并：恢复上一条 a643f4fa 隔离提交的复核记录；同时进行的工作树未见该条，其指纹 35b63cdd 绑定的是那次提交的范围。",
+      "en": "14 October 2026 merge: restores the preceding review entry of the isolated commit a643f4fa, which the concurrent working tree had not seen; its fingerprint 35b63cdd bound that commit’s scope."
+    },
+    {
+      "zh": "2026-10-14 合并核对：相对本记录所读版本，主章只改 §9 两处导航——RegroupingSelection 行按现有 11 项适配更新（含三项保留 P69 互模拟的适配），合并检查器的汇总改为冻结回执 20261013T145624.509021Z（4700 项定理、6658 项声明审计、83 个闭包模块）。其余字节、本记录的主张、前提与证明绑定不变，不记作重新证明。",
+      "en": "14 October 2026 merge reconciliation: relative to the version this record read, the chapter changes only two §9 navigation passages. The RegroupingSelection row now states its 11 adapters, including three that keep the P69 bisimulation, and the consolidated checker totals follow frozen receipt 20261013T145624.509021Z (4700 theorems, 6658 declaration audits, 83 closure modules). All other bytes, this record’s claim, premises and proof bindings are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14 M4，按计划中为脊柱记录用短标题的建议（Ren 认可：“go with your recommendations”）：改用短标题，原标题的内容改作陈述。主张、证明与证据不变。原标题：“检验在识之内：主张只经所识的差别被否证，相对于模型的否证是对模型与主张一起的否证；成员只经自己之识回应时，识闭包之外的在其中不被识；检验是关系的”",
+      "en": "2026-10-14 M4, under the plan's recommendation of short titles for the spine records, which Ren approved (“go with your recommendations”): short title, with the former title's content now the statement. Claim, proof and evidence unchanged. Former title: “Testing lies within registration: a claim is refuted only through a difference in what registers, and refutation relative to a model is refutation of the model and the claim together; where the members respond only through their own registration, nothing beyond the registration closure registers within it; testing is relational”"
+    },
+    {
+      "zh": "2026-10-14 一般规律与改名（统一计划 §10，研究 §112）：研究只新增 §112（一般规律与改名）及英文摘要中的对应一段；主章：§9 新增 Stock、LossMatching、Contacts 三行，改写 Capture、TimedResponse、Revision、ReferencePlan、ContinuingRevision、RepairComparison 六行并去掉 Identification 行的 P83 标记，合并检查器总数改为回执 20261013T204910.042715Z（4861 项定理、6856 项声明审计、86 个闭包模块），完整片段比较段改述该回执；正文与术语表中被改名的 Lean 名称改为新名，“知道界的学习者”改为“给定界的学习者”，“只改状态”改为“只扰动状态”。本记录的主张、前提与状态不变，不记作重新证明。",
+      "en": "14 October 2026, general laws and renames (plan section 10, study section 112): the study only adds section 112 (general laws and renames) and its paragraph in the English summary; chapter: §9 gains rows for Stock, LossMatching and Contacts, rewrites six rows (Capture, TimedResponse, Revision, ReferencePlan, ContinuingRevision, RepairComparison) and drops the P83 label of the Identification row; the consolidated totals follow receipt 20261013T204910.042715Z (4861 theorems, 6856 declaration audits, 86 closure modules) and the complete-episode paragraph cites that receipt; renamed Lean names in the text and glossary take their new names, and the former wording becomes “the learner given the bound” and “perturbing the state alone”. This record's claim, premises and status are unchanged; no reproof is credited."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（一般规律与改名；旧记录的一般律）及其英文段，此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为新模块增改行，总数改据回执 20261013T221720.428753Z；标题、粗体引语、模块表与正文中的工作项编号改为模块、节或成果的名称，旧标题锚点保留为显式锚点；陈述、Lean 名、定理数与链接目标均不变）。",
+      "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws and renames and on the general laws of the older records, with their English paragraphs; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added or updated for the new modules and the §9 totals moved to receipt 20261013T221720.428753Z; work-item numbers removed from headings, bold leads, the module table and in-body references, which now name modules, sections or results, with the old heading anchors kept as explicit anchors; no statement, Lean name, theorem count or link target changed)."
+    },
+    {
+      "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（§9 为 Becoming.Viability、Countdown、Lasting、Copying、Retrodiction 及五个外围实例模块增行，总数改据回执 20261014T044840.291323Z；其余文字不变）。",
+      "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (§9 rows added for Becoming.Viability, Countdown, Lasting, Copying, Retrodiction and five peripheral instance modules, and the §9 totals moved to receipt 20261014T044840.291323Z; no other text changed)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划第四批（研究第116–119节）：审读以下改动后重新绑定：Testing.lean（10月14日改名（开放问题第15项）：读法“记入”事件的英文由 credits 改为 includes，名称随之改（统一计划 §10 改名表）；陈述与证明不变）；BECOMING-RENEWAL-READING.md（末尾新增四节（第116节到达律与谱系律；第117节跨情境读出与机器的每段历史；第118节在相同之下补全的律；第119节经其识所能学者）及其英文段，并为它们加注落地日期与回执；此前各节不变）；THE-THEORY-OF-BECOMING.md（读法“记入”事件处英文改为 includes；§8 审查行写出第一次审查的对象（研究 §§1–6）；为 Becoming.Likeness、Becoming.Learnable、到达律、谱系律及其实例增加第一部分段落、§8 条目与 §9 行；Becoming.CrossSituational 的 §9 行与 MachineInstances、VersionedTaskInstances 两行；§9 总数改据回执 20261014T091930.724493Z）。",
+      "en": "14 October 2026, batch 4 of the open-issues plan (study sections 116–119): reconciled after reading the changes to Testing.lean (the rename of 14 October (open-issues item 15): a reading includes an event, where it said “credits”; names follow (unification plan §10 table); statements and proofs unchanged); BECOMING-RENEWAL-READING.md (four sections appended (116 the reaching and lineage laws; 117 cross-situational reading and every history of the machines; 118 the laws completed up to likeness; 119 what a learner can learn through its registration) with their English paragraphs, and dated landing notes for them; earlier sections unchanged); THE-THEORY-OF-BECOMING.md (“includes” where a reading “credited” an event; the §8 review row names the first review's object (study §§1–6); Part I paragraphs, §8 bullets and §9 rows for Becoming.Likeness, Becoming.Learnable, the reaching law, the lineage law and their instances; the §9 row for Becoming.CrossSituational and the rows of MachineInstances and VersionedTaskInstances; the §9 totals moved to receipt 20261014T091930.724493Z)."
+    },
+    {
+      "zh": "2026-10-14，相同之桥接（研究第120节），第四批之后落地：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增第120节（判定不能去掉、有限多结果所需的原则、无穷多结果的反例、核心的分支检验即外围的检验）及其英文段与落地日期；第118节的落地注指向它；此前各节其余不变）；THE-THEORY-OF-BECOMING.md（§8 状态行与进一步证明条目（判定与桥接不再开放），§9 的 Becoming.Bridge 与 Becoming.Likeness 两行，§9 总数改据回执 20261014T100026.593496Z）。",
+      "en": "14 October 2026, the likeness bridge (study section 120), landed after batch 4: reconciled after reading the changes to BECOMING-RENEWAL-READING.md (section 120 appended (the decisions cannot be dropped, the principle for listed outcomes, the counterexample for infinitely many outcomes, the core's branching tests are the periphery's tests) with its English paragraph and a dated landing note; section 118's landing note points to it; earlier sections otherwise unchanged); THE-THEORY-OF-BECOMING.md (§8 status row and further-proofs bullets (the decisions and the bridge no longer open), §9 rows of Becoming.Bridge and Becoming.Likeness, and the §9 totals moved to receipt 20261014T100026.593496Z)."
+    }
+  ]
+}
