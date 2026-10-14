@@ -13,15 +13,17 @@ repeated doubling draws. The constructed copy machines of the periphery are inst
 * **Exact copying.** A pool supplies a word where it holds every token at least as often as the
   word uses it (`Supplies`, a condition on each token's count). A copy of a word completes
   exactly when the pool supplies the word and the support covers the charges of its
-  attachments (`completes_iff`); it then holds the word, the pool without it, and the support
+  attachments (`completes_iff`), and its product is then the word (`built_iff`); it then holds
+  the word, the pool without it, and the support
   less those charges (`copies`). With `r` left over to release the product, exactly when the
   support covers the charges and `r` (`releases_iff`). A stalled copy stays where it stalled
   (`steps_fixed`).
 * **Copies from one shared pool.** Copying words in turn from one pool and support, every copy
   is released exactly when the pool supplies all the words together and the support covers all
-  their charges and releases (`batch_all_iff`), whatever their order; the pool supplies one word
-  followed by another exactly when it supplies the first and its remainder the second
-  (`supplies_append_iff`).
+  their charges and releases (`batch_all_iff`); exchanging adjacent words, and so any
+  reordering, leaves this as it was (`batch_all_swap`), though which copies are released can
+  change. The pool supplies one word followed by another exactly when it supplies the first and
+  its remainder the second (`supplies_append_iff`).
 * **Local charges.** Where the first attachment draws `first` and each further one `same` after
   a like token and `differ` after an unlike one (`pairCharge`), a word's charges depend on the
   law only through its number of unlike adjacent pairs (`cost_word`). So among words of one
@@ -392,6 +394,37 @@ theorem completes_iff (prev : Option α) (built word pool : List α) (free spent
    fun ⟨supplies, covered⟩ =>
     (congrArg Scan.pending (copies charge prev built word pool free spent supplies covered)).trans rfl⟩
 
+/-- **The product is the word exactly when the copy is supplied and covered.** -/
+theorem built_iff : ∀ (prev : Option α) (built word pool : List α) (free spent : Nat),
+    (steps charge word.length ⟨prev, word, built, pool, free, spent⟩).built = built ++ word ↔
+      Supplies word pool ∧ cost charge prev word ≤ free
+  | _, _, [], pool, free, _ =>
+    ⟨fun _ => ⟨supplies_nil pool, Nat.zero_le free⟩, fun _ => (append_empty _).symm⟩
+  | prev, built, x :: xs, pool, free, spent =>
+    ⟨fun done => by
+      have done' : (steps charge xs.length
+          (tick charge ⟨prev, x :: xs, built, pool, free, spent⟩)).built = built ++ x :: xs := done
+      match Nat.decLt 0 (countOf x pool), Nat.decLe (charge prev x) free with
+      | isTrue pos, isTrue first =>
+        rw [tick_cons, if_pos ⟨pos, first⟩] at done'
+        have ⟨rest, more⟩ := (built_iff (some x) (built ++ [x]) xs _ _ _).mp
+          (done'.trans (append_regroup built [x] xs).symm)
+        exact ⟨supplies_cons_iff.mpr ⟨pos, rest⟩, add_le_iff.mpr ⟨first, more⟩⟩
+      | isFalse absent, _ =>
+        have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
+            ⟨prev, x :: xs, built, pool, free, spent⟩ :=
+          (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => absent h.1)
+        rw [fixed, steps_fixed charge fixed] at done'
+        exact absurd done' (ne_append_cons built x xs)
+      | isTrue _, isFalse over =>
+        have fixed : tick charge ⟨prev, x :: xs, built, pool, free, spent⟩ =
+            ⟨prev, x :: xs, built, pool, free, spent⟩ :=
+          (tick_cons charge prev x xs built pool free spent).trans (if_neg fun h => over h.2)
+        rw [fixed, steps_fixed charge fixed] at done'
+        exact absurd done' (ne_append_cons built x xs),
+     fun ⟨supplies, covered⟩ =>
+      congrArg Scan.built (copies charge prev built (x :: xs) pool free spent supplies covered)⟩
+
 /-- **Exact copying with release.** A copy completes with `r` free to release it exactly when
 the pool supplies the word and the support covers its charges and `r`. -/
 theorem releases_iff (r : Nat) (prev : Option α) (built word pool : List α) (free spent : Nat) :
@@ -504,6 +537,36 @@ theorem batch_all_iff (r : Nat) : ∀ (words : List (List α)) (pool : List α) 
         have done := (released_iff r _).mpr
           ((releases_iff charge r none [] w pool free spent).mpr ⟨s1, covered⟩)
         nomatch h.symm.trans done⟩
+
+theorem countOf_joinAll_swap (a : α) (u v : List α) (post : List (List α)) :
+    ∀ pre : List (List α),
+      countOf a (joinAll (pre ++ u :: v :: post)) = countOf a (joinAll (pre ++ v :: u :: post))
+  | [] => by
+    show countOf a (u ++ (v ++ joinAll post)) = countOf a (v ++ (u ++ joinAll post))
+    rw [countOf_append, countOf_append, countOf_append, countOf_append, Nat.add_left_comm]
+  | w :: pre => by
+    show countOf a (w ++ joinAll (pre ++ u :: v :: post)) =
+      countOf a (w ++ joinAll (pre ++ v :: u :: post))
+    rw [countOf_append, countOf_append, countOf_joinAll_swap a u v post pre]
+
+omit [DecidableEq α] in
+theorem totalOf_swap (f : List α → Nat) (u v : List α) (post : List (List α)) :
+    ∀ pre : List (List α), totalOf f (pre ++ u :: v :: post) = totalOf f (pre ++ v :: u :: post)
+  | [] => Nat.add_left_comm (f u) (f v) (totalOf f post)
+  | w :: pre => congrArg (f w + ·) (totalOf_swap f u v post pre)
+
+/-- **The order does not decide whether all are released.** Exchanging two adjacent words of a
+batch, which generates every reordering, leaves whether every copy is released as it was. -/
+theorem batch_all_swap (r : Nat) (pre post : List (List α)) (u v pool : List α) (free spent : Nat) :
+    Every (batch charge r (pre ++ u :: v :: post) pool free spent).1 ↔
+      Every (batch charge r (pre ++ v :: u :: post) pool free spent).1 :=
+  (batch_all_iff charge r _ pool free spent).trans
+    (Iff.trans
+      ⟨fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_swap a u v post pre).symm)
+          (s a), Nat.le_trans (Nat.le_of_eq (totalOf_swap _ u v post pre).symm) t⟩,
+       fun ⟨s, t⟩ => ⟨fun a => Nat.le_trans (Nat.le_of_eq (countOf_joinAll_swap a u v post pre))
+          (s a), Nat.le_trans (Nat.le_of_eq (totalOf_swap _ u v post pre)) t⟩⟩
+      (batch_all_iff charge r _ pool free spent).symm)
 
 /-! ## Local charges -/
 
