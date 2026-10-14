@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "own-count-misses-joint-excess",
   "title": {
     "zh": "只计自身的取用漏掉联合超出",
@@ -8,15 +8,89 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-10T07:45:00+00:00",
+  "reviewed_at_utc": "2026-10-14T13:15:00+00:00",
   "statement": {
     "zh": "各自在所给之内取用的形成，合起来可以超出；联合超出持续不过原有的。更新者依存于所更新者时，它终结更新与以其所需依存者，取用者以这样的需要依存时也在内。",
     "en": "Formations each taking within what is given can together exceed it; joint excess cannot outlast what was held. Where renewers depend on what they renew, it ends the renewal and those depending at such a need, a taker among them where it so depends."
   },
-  "claim": {
-    "zh": "一步中每个参与的形成从一个条件取用都不多于该步给予它的，称为各自在所给之内（Flow.WithinOwn）；它们合起来取用不多于所给，称为联合地在所给之内（Flow.WithinJoint）。各自在所给之内，合起来可以超出（Pair.own_not_joint）。在平衡的流中，联合地在所给之内时水平不下降（Flow.joint_keeps）；联合超出的一步使水平至少下降一（Flow.excess_lowers），所以连续 n 步联合超出需要起点水平至少为 n（Flow.excess_bounded）；两个形成每步各取一单位、只给回一单位时，没有任何网使流平衡（Pair.no_web）。每个向条件给予的形成都以至少 m 的需要依存于它、只有活跃者给予（Acting）、活动需要支持（Dependent）时，水平一旦低于 m，以后每步都低于 m（Flow.stays_below），以至少 m 的需要依存于它的每个形成从那以后都不活跃（Flow.ends_below）；所以从低于 n + m 的水平起连续 n 步联合超出，终结更新者与以至少 m 的需要依存于该条件的每个形成，取用者以这样的需要依存时也在内；不依存或以较低需要依存的取用者可以延续（Flow.joint_excess_ends）。Exceeding 中一个更新者给予两单位，两个取用者各取两单位，每个都在所给之内，满足平衡、Acting、Dependent 与给予的门控，从第二步起三者都不活跃（Exceeding.all_end；这一终结也由其活动规定，见证表明它与这些定律相容）；只有一个取用者时，同一更新者保持水平，二者每步都活跃（Alone.all_continue）。不用伦理前提，也不用 Lean 公理。",
-    "en": "A formation's take from a condition across a step is within what is given when no formation taking part takes more than the step gives the condition (Flow.WithinOwn); the formations take jointly within what is given when their total take is at most what is given (Flow.WithinJoint). Each can take within what is given while together they take more (Pair.own_not_joint). In a balanced flow, taking jointly within what is given keeps the level (Flow.joint_keeps); a step of joint excess lowers it by at least one (Flow.excess_lowers), so n consecutive steps of joint excess need a level of at least n at the start (Flow.excess_bounded), and with two formations each taking a unit at every step and one unit given back no web balances the flow (Pair.no_web). Where every formation giving to the condition depends on it at a need of at least m, only active formations give (Acting) and activity needs support (Dependent), a level below m stays below m at every later step (Flow.stays_below), and every formation depending on the condition at a need of at least m is inactive from then on (Flow.ends_below); so n consecutive steps of joint excess from a level below n + m end the renewers and every formation depending on the condition at a need of at least m, a taker among them where it so depends; a taker not depending on it, or depending at a lower need, can continue (Flow.joint_excess_ends). In Exceeding a renewer gives two units and two takers each take two, each within what the step gives; balance, Acting, Dependent and the gate hold, and from step two on none of the three is active (Exceeding.all_end; the ending is also stipulated in its activity, and the witness shows it consistent with these laws); with one taker the same renewer keeps the level and both are active at every step (Alone.all_continue). No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "一步中每个参与的形成从一个条件取用都不多于该步给予它的，称为各自在所给之内（Flow.WithinOwn）；它们合起来取用不多于所给，称为联合地在所给之内（Flow.WithinJoint）。各自在所给之内，合起来可以超出。",
+      "en": "Formations take each within what is given across a step when no formation taking part takes from the condition more than the step gives it (Flow.WithinOwn), and jointly within what is given when their total take is at most what is given (Flow.WithinJoint). Each can take within what is given while together they take more.",
+      "declarations": [
+        "Becoming.Flow.WithinOwn",
+        "Becoming.Flow.WithinJoint",
+        "Becoming.Pair.flow",
+        "Becoming.Pair.own_not_joint"
+      ]
+    },
+    {
+      "zh": "在平衡的流中，联合地在所给之内时水平不下降；联合超出的一步使水平至少下降一，所以连续 n 步联合超出需要起点水平至少为 n；两个形成每步各取一单位、只给回一单位时，没有任何网使流平衡。",
+      "en": "In a balanced flow, taking jointly within what is given keeps the level; a step of joint excess lowers it by at least one, so n consecutive steps of joint excess need a level of at least n at the start, and with two formations each taking a unit at every step and one unit given back no web balances the flow.",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.joint_keeps",
+        "Becoming.Flow.excess_lowers",
+        "Becoming.Flow.excess_bounded",
+        "Becoming.Pair.no_web"
+      ]
+    },
+    {
+      "zh": "每个向条件给予的形成都以至少 m 的需要依存于它、只有活跃者给予（Acting）、活动需要支持（Dependent）时，水平一旦低于 m，以后每步都低于 m，以至少 m 的需要依存于它的每个形成从那以后都不活跃。",
+      "en": "Where every formation giving to the condition depends on it at a need of at least m, only active formations give (Acting) and activity needs support (Dependent), a level below m stays below m at every later step, and every formation depending on the condition at a need of at least m is inactive from then on.",
+      "declarations": [
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.GiversSupported",
+        "Becoming.Flow.Acting.giversSupported",
+        "Becoming.Flow.stays_below",
+        "Becoming.Flow.ends_below"
+      ]
+    },
+    {
+      "zh": "所以从低于 n + m 的水平起连续 n 步联合超出，终结更新者与以至少 m 的需要依存于该条件的每个形成，取用者以这样的需要依存时也在内；不依存或以较低需要依存的取用者可以延续。",
+      "en": "So n consecutive steps of joint excess from a level below n + m end the renewers and every formation depending on the condition at a need of at least m, a taker among them where it so depends; a taker not depending on it, or depending at a lower need, can continue.",
+      "declarations": [
+        "Becoming.Flow.joint_excess_ends"
+      ]
+    },
+    {
+      "zh": "Exceeding 中一个更新者给予两单位，两个取用者各取两单位，每个都在所给之内，满足平衡、Acting、Dependent 与给予的门控，从第二步起三者都不活跃（这一终结也由其活动规定，见证表明它与这些定律相容）；只有一个取用者时，同一更新者保持水平，二者每步都活跃。",
+      "en": "In Exceeding a renewer gives two units and two takers each take two, each within what the step gives; balance, Acting, Dependent and the gate hold, and from step two on none of the three is active (the ending is also stipulated in its activity, and the witness shows it consistent with these laws); with one taker the same renewer keeps the level and both are active at every step.",
+      "declarations": [
+        "Becoming.Exceeding.flow",
+        "Becoming.Exceeding.web",
+        "Becoming.Exceeding.balances",
+        "Becoming.Exceeding.acting",
+        "Becoming.Exceeding.dependent",
+        "Becoming.Exceeding.gated",
+        "Becoming.Exceeding.own_not_joint",
+        "Becoming.Exceeding.all_end",
+        "Becoming.Alone.flow",
+        "Becoming.Alone.web",
+        "Becoming.Alone.all_continue"
+      ]
+    },
+    {
+      "zh": "联合取用的规律对每个世界有局部形式 Flow.joint_keeps_at：只在该条件、该步上平衡；Flow.joint_keeps 是它的推论。",
+      "en": "The law of joint taking holds of every world in a local form, Flow.joint_keeps_at, with balance at the condition across the one step only; Flow.joint_keeps is its corollary.",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on",
+        "Becoming.Flow.joint_keeps_at"
+      ]
+    },
+    {
+      "zh": "超出与门控的规律也有局部形式：只要所用各步在该条件上平衡（Flow.BalancesOn），给予者有门槛且被支持（Flow.GiversSupported），终结的形成只在该步活跃时被支持；Flow.excess_lowers、excess_bounded、stays_below、ends_below、joint_excess_ends 是它们的推论。",
+      "en": "So do the laws of excess and of the gate, needing only balance at the condition across the steps used (Flow.BalancesOn), gated givers supported there (Flow.GiversSupported), and the ending formation supported where active at that step; Flow.excess_lowers, excess_bounded, stays_below, ends_below and joint_excess_ends are their corollaries.",
+      "declarations": [
+        "Becoming.Flow.excess_lowers_at",
+        "Becoming.Flow.excess_bounded_at",
+        "Becoming.Flow.stays_below_at",
+        "Becoming.Flow.ends_below_at",
+        "Becoming.Flow.joint_excess_ends_at"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "平衡：条件水平的每次变化都是参与者的取用与给予。",
@@ -31,9 +105,72 @@
       "en": "Excess is counted on totals at each step, not on shares; within what is given compares each taker with the whole of the step's giving."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "门控的结论只对依存于所更新者的更新成立，不对外部来源（如太阳）给予的更新成立。",
+      "en": "The gated conclusions hold only for renewal that depends on what it renews, not for renewal given from an outside source such as a sun.",
+      "kind": "scope"
+    },
+    {
+      "zh": "只对自然数的量陈述；超出比较的是每步的总量，不处理储备与延迟的更新。",
+      "en": "Stated for natural-number amounts; excess compares totals at each step and treats neither reserves nor delayed renewal.",
+      "kind": "scope"
+    },
+    {
+      "zh": "Exceeding 与 Alone 是最小的见证；Exceeding 的终结由其活动规定，见证表明它与定律相容。",
+      "en": "Exceeding and Alone are minimal witnesses; Exceeding's ending is stipulated in its activity and shown consistent with the laws.",
+      "kind": "scope",
+      "witness": "Becoming.Exceeding.all_end"
+    },
+    {
+      "zh": "联合计入只约束比条件所存更长远的想要，取用者只在以这样的需要依存时随之终结。",
+      "en": "The joint count binds only a want that outlasts what the condition holds, and a taker ends with it only where it depends at such a need.",
+      "kind": "scope"
+    },
+    {
+      "zh": "本结果与外围磨损定律之间没有实例定理相连，其联系是诠释性的。",
+      "en": "No instance theorem joins this result to the periphery's wear law; the link is interpretive.",
+      "kind": "correspondence"
+    },
+    {
+      "zh": "不说哪个取用者应当减少。",
+      "en": "It does not say which taker ought to take less.",
+      "kind": "non-implication"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "各自在所给之内不足以延续：Exceeding 中每个取用者都在所给之内，三者都在两步后终结（Exceeding.all_end）；同一更新者只有一个取用者时都延续（Alone.all_continue）。",
+        "en": "Each within what is given is not enough to continue: in Exceeding each taker is within what is given and all three end after two steps (Exceeding.all_end); with one taker the same renewer and taker continue (Alone.all_continue)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
+      "detail": {
+        "zh": "没有平衡时联合超出可以永远持续的描述不是任何平衡网的流：Pair 中没有网使流平衡（Pair.no_web）。",
+        "en": "A description in which joint excess goes on for ever is the flow of no balanced web: in Pair no web balances the flow (Pair.no_web)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T221720.428753Z，含本记录的局部规律；Flow 由 20261013T094743.528770Z 绑定；外围 20261013T095049.338744Z 通过）：Becoming.Continuation 的定理公理报告为空，检查器并核对核心纯净。作者反审见整合文档；延续奠基的独立审查接受其 Lean，所提更正在整合文档处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T221720.428753Z, with this record's local laws; Flow bound by 20261013T094743.528770Z; periphery 20261013T095049.338744Z passed): the theorems of Becoming.Continuation have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the independent review of the continuation grounding accepts its Lean, and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）；名称（Ren）。",
+    "en": "Instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow); names (Ren)."
+  },
   "correspondence": {
-    "zh": "Ren 的提议说，自我可以变得僵硬，“has to count the dynamics that happens beyond what the \"self\" sees”。外围的磨损定律已有同一现象：两个部分各在更新之内、只合起来超出时，共享的形成随之终止（renewing-consuming-formation 中的 jointly_exceeding_parts_end_shared_formation）。本结果把它陈述在脊柱上，以支持门控的网的形式，不用磨损定律：更新者依存于所更新者，联合超出使水平低于其需要，更新停止，以其所需依存者终结，取用者以这样的需要依存时也在内。两个模型没有实例定理相连，联系是诠释性的。作者的读法（AI 论证）：元吸引子选出取用更多的形成，它们起初形成更多，每步的计数偏好它们；各自只计自身的取用，合起来超出更新，共享的条件终结，以其所需依存于它的随之终结，胜者如此依存时也在内。想要的延续比共享条件所存更长远时，它必须计入对其所依存者的联合取用；n 步联合超出只需要 n 的水平，视界较短的想要可以在联合超出中被全部满足（Mortal，见 derived-extent-limits）。这是想要所要求的，不是对它的判决。",
-    "en": "Ren's proposal says that the self can become rigid and “has to count the dynamics that happens beyond what the \"self\" sees”. The periphery's wear law has the same phenomenon: where two parts are each within renewal and only jointly exceed it, the shared formation ceases with them (jointly_exceeding_parts_end_shared_formation in renewing-consuming-formation). This result states it on the spine, as a support-gated web and without the wear law: renewers depend on what they renew, joint excess brings the level below their need, renewal stops and those depending at such a need end, a taker among them where it so depends. No instance theorem joins the two models; the link is interpretive. The author's reading (an AI argument): the meta-attractor selects formations that take more; they form more at first and a count over a step prefers them; each counts its own draw, together they exceed renewal, the shared condition ends, and with it what depends on it at such a need, the winners among them where they so depend. A formation that wants its continuation beyond what the shared condition holds must count the joint draw on what it depends on; n steps of joint excess need only a level of n, so a want with a shorter horizon can be fully met amid joint excess (Mortal, see derived-extent-limits). This is what the want requires, not a verdict passed on it."
+    "zh": "Ren 的提议说，自我可以变得僵硬，“has to count the dynamics that happens beyond what the \"self\" sees”。外围的磨损定律已有同一现象：两个部分各在更新之内、只合起来超出时，共享的形成随之终止（renewing-consuming-formation 中的 jointly_exceeding_parts_end_shared_formation）。本结果把它陈述在脊柱上，以支持门控的网的形式，不用磨损定律：更新者依存于所更新者，联合超出使水平低于其需要，更新停止，以其所需依存者终结，取用者以这样的需要依存时也在内。作者的读法（AI 论证）：元吸引子选出取用更多的形成，它们起初形成更多，每步的计数偏好它们；各自只计自身的取用，合起来超出更新，共享的条件终结，以其所需依存于它的随之终结，胜者如此依存时也在内。想要的延续比共享条件所存更长远时，它必须计入对其所依存者的联合取用；n 步联合超出只需要 n 的水平，视界较短的想要可以在联合超出中被全部满足（Mortal，见 derived-extent-limits）。这是想要所要求的，不是对它的判决。",
+    "en": "Ren's proposal says that the self can become rigid and “has to count the dynamics that happens beyond what the \"self\" sees”. The periphery's wear law has the same phenomenon: where two parts are each within renewal and only jointly exceed it, the shared formation ceases with them (jointly_exceeding_parts_end_shared_formation in renewing-consuming-formation). This result states it on the spine, as a support-gated web and without the wear law: renewers depend on what they renew, joint excess brings the level below their need, renewal stops and those depending at such a need end, a taker among them where it so depends. The author's reading (an AI argument): the meta-attractor selects formations that take more; they form more at first and a count over a step prefers them; each counts its own draw, together they exceed renewal, the shared condition ends, and with it what depends on it at such a need, the winners among them where they so depend. A formation that wants its continuation beyond what the shared condition holds must count the joint draw on what it depends on; n steps of joint excess need only a level of n, so a want with a shorter horizon can be fully met amid joint excess (Mortal, see derived-extent-limits). This is what the want requires, not a verdict passed on it."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
   "aliases": [
@@ -128,30 +265,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "detail": {
-        "zh": "各自在所给之内不足以延续：Exceeding 中每个取用者都在所给之内，三者都在两步后终结（Exceeding.all_end）；同一更新者只有一个取用者时都延续（Alone.all_continue）。",
-        "en": "Each within what is given is not enough to continue: in Exceeding each taker is within what is given and all three end after two steps (Exceeding.all_end); with one taker the same renewer and taker continue (Alone.all_continue)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
-      "detail": {
-        "zh": "没有平衡时联合超出可以永远持续的描述不是任何平衡网的流：Pair 中没有网使流平衡（Pair.no_web）。",
-        "en": "A description in which joint excess goes on for ever is the flow of no balanced web: in Pair no web balances the flow (Pair.no_web)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "只对离散步与自然数的量陈述；门控的结论只对依存于所更新者的更新成立，不对外部来源（如太阳）给予的更新成立；超出比较的是每步的总量，不处理储备与延迟的更新；Exceeding 与 Alone 是最小的见证，Exceeding 的终结由其活动规定，见证表明它与定律相容；联合计入只约束比条件所存更长远的想要，取用者只在以这样的需要依存时随之终结；与外围磨损定律的联系是诠释性的；不含伦理谓词，也不说哪个取用者应当减少；名称是 AI 的表述，由 Ren 定（WithinOwn、WithinJoint、Exceeding、Alone 等）。",
-    "en": "Stated for discrete steps and natural-number amounts; the gated conclusions hold only for renewal that depends on what it renews, not for renewal given from an outside source such as a sun; excess compares totals at each step and treats neither reserves nor delayed renewal; Exceeding and Alone are minimal witnesses, Exceeding's ending is stipulated in its activity and shown consistent with the laws; the joint count binds only a want that outlasts what the condition holds, and a taker ends with it only where it depends at such a need; the link to the periphery's wear law is interpretive; contains no ethical predicate and does not say which taker ought to take less; the names are the AI's wording, for Ren to choose (WithinOwn, WithinJoint, Exceeding, Alone and others)."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T221720.428753Z）：Becoming.Continuation 的 52 项定理全部空依赖；同一回执覆盖包内 91 个模块（含只作导入的根模块与四个桥接模块），共 4983 项定理／7020 项声明审计，39 个继承模块的当前字节与已通过回执一致；外围回执 20261013T095049.338744Z 通过。作者反审见整合文档 §47；独立审查（CONTINUATION-GROUNDING-REVIEW.md）接受其 Lean，所提更正在整合文档 §47.1–47.4 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 90 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P50）在同一回执中，公理报告为空。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T221720.428753Z): the 52 theorems of Becoming.Continuation all have empty axiom reports; the same receipt covers the package's 91 modules (including the import-only root and the four bridge modules) with 4983 theorems/7020 declaration audits, and 39 inherited modules whose current bytes match passed receipts; periphery receipt 20261013T095049.338744Z passed. The author's counterreview is in §47 of the integration note; the independent review (CONTINUATION-GROUNDING-REVIEW.md) accepts its Lean, and its corrections are handled in §47.1–47.4 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 90 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P50) are in the same receipt, with empty axiom reports. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Continuation.lean",
@@ -255,10 +368,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.joint_keeps_at（P57），局部条件写在规律之内：只在该条件、该步上平衡；Flow.joint_keeps是它的推论；对每个世界的确切重述是本记录的 Flow.excess_lowers_at、excess_bounded_at、stays_below_at、ends_below_at、joint_excess_ends_at（P50），局部条件写在规律之内：只在所用各步、在该条件上平衡（Flow.BalancesOn），给予者有门槛且被支持（Flow.GiversSupported），终结的形成只在该步活跃时被支持；Flow.excess_lowers、excess_bounded、stays_below、ends_below、joint_excess_ends是它们的推论；与 RelationalRenewal 的支持门控定律及外围磨损定律的实例定理；储备与延迟更新下的联合超出；份额与归属（不推出责任）。",
-    "en": "The exact restatement for every world is this record's Flow.joint_keeps_at (P57), the local condition inside the law: balance at the condition across the one step; Flow.joint_keeps is its corollary; the exact restatement for every world is this record's Flow.excess_lowers_at, excess_bounded_at, stays_below_at, ends_below_at, joint_excess_ends_at (P50), the local condition inside the law: balance at the condition across the steps used (Flow.BalancesOn), gated givers supported there (Flow.GiversSupported), and the ending formation supported where active at that step; Flow.excess_lowers, excess_bounded, stays_below, ends_below, joint_excess_ends are their corollaries; instance theorems to RelationalRenewal's support-gated law and the periphery's wear law; joint excess under reserves and delayed renewal; shares and attribution (responsibility does not follow)."
-  },
   "history": [
     {
       "zh": "2026-10-10：作为延续奠基计划（CONTINUATION-GROUNDING-PLAN）W3新增，按 Ren“commit them, then start implementation all the way to full completion”；实现 Ren 2026-10-10 的提议（从想要延续者重述普遍元伦理核心）；见整合文档 §47。",
@@ -451,6 +560,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：Continuation.lean（第十七次审查 G9：Flow.surplus_raises_at、surplus_bounded_at 改名为 net_give_raises_at、net_give_bounded_at，“共同盈余”改为“共同净给予”；陈述与证明不变）；BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: Continuation.lean (seventeenth review G9: Flow.surplus_raises_at and surplus_bounded_at renamed net_give_raises_at and net_give_bounded_at, “joint surplus” now “joint net giving”; statements and proofs unchanged); BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 7 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。下一步中的局部重述（P57：joint_keeps_at；P50：excess_lowers_at 等）改为规律 6、7。规律 1 的英文按 Lean 与中文写 WithinOwn 是对每个参与形成的条件（旧英文作“一个形成的取用在所给之内，当没有参与的形成多取”）。对应中“两个模型没有实例定理相连，联系是诠释性的”与限制中的同一句合为一条“未表明”。证据段的定理数与模块数、局部规律标号 P50 与 P57–P61 留在回执与快照中；作者反审在整合文档 §47，独立审查（CONTINUATION-GROUNDING-REVIEW.md）的更正在 §47.1–47.4。名称列表（WithinOwn、WithinJoint、Exceeding、Alone 等）留在快照中。每句旧文本的去向见迁移对照表 [own-count-misses-joint-excess.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/own-count-misses-joint-excess.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became seven laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The next step's local restatements (P57: joint_keeps_at; P50: excess_lowers_at and the rest) became laws 6 and 7. Law 1's English states WithinOwn, with Lean and the Chinese, as a condition on every formation taking part (the old English began ‘A formation's take … is within what is given when no formation taking part takes more’). The correspondence's ‘No instance theorem joins the two models; the link is interpretive’ and the same limitation became one does-not-show item. The evidence's theorem and module counts and the local-law labels P50 and P57–P61 stay in the receipt and the snapshot; the author's counterreview is §47 of the integration note, the independent review's (CONTINUATION-GROUNDING-REVIEW.md) corrections §47.1–47.4. The list of names (WithinOwn, WithinJoint, Exceeding, Alone and others) stays in the snapshot. Every earlier sentence is mapped in the migration table [own-count-misses-joint-excess.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/own-count-misses-joint-excess.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/24dd5753edc43fa1/own-count-misses-joint-excess.json",
+      "sha256": "24dd5753edc43fa167d6a750585d049ab4eda3cf79fe0bbe51c4a7dea4ca96d3",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

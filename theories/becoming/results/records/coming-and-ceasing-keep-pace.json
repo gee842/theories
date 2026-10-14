@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "coming-and-ceasing-keep-pace",
   "title": {
     "en": "Coming to be and ceasing to be keep pace",
@@ -8,15 +8,117 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-13T09:54:07+00:00",
+  "reviewed_at_utc": "2026-10-14T11:55:00+00:00",
   "statement": {
     "zh": "有限之中，开始成立与不再成立同步；这不需要前提。",
     "en": "In a finite family, coming to be and ceasing to be keep pace; this needs no premise."
   },
-  "claim": {
-    "zh": "以下对每个依存网成立，不加任何关于它的前提。一个规定跨一步开始成立（之前不成立、之后成立）或不再成立（之前成立、之后不成立）（ComesToBe、CeasesToBe）；形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平（Web.change_readings）。可判定的规定在某步成立、此后没有一步不再成立，就一直成立（persists）；一个形成在某步被支持，在另一步仍被支持，只要它在后者的每个依存在前者都有、所需不更大、条件的水平不更低（Web.supported_of）。任一段步上，一个量在终点加上其间的全部下降，等于在起点加上其间的全部上升；有限家族的总量连同成员的升降也是如此（over_stretch、family_over_stretch）。量不低于零，所以有限家族在一段步上的下降至多比上升多出起点的总量（fallen_within），成员在任意晚的步下降就在任意晚的步上升（rising_recurs）：每个展开中，有限多个条件的水平持续下降就持续上升（Web.falls_need_rises）；对一个量，这就是 Becoming.Renewal 中“从某步起不上升的观测量不在任意晚的步下降”（falls_not_recurring_from_floor）。量有界时，上升至多比下降多出每个成员的界（risen_within），在任意晚的步上升就需要在任意晚的步下降（falling_recurs）。一个规定只计 0 或 1，两者都适用：任一段步上，有限家族在终点成立的成员连同其间不再成立的，恰是在起点成立的成员连同其间开始成立的（held_over_stretch）；开始成立与不再成立的次数之差不超过成员数（keep_pace）；一方复现恰当另一方复现（coming_recurs_iff）。读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的（Web.activity_over_stretch）；它们在任意晚的步生起恰当在任意晚的步止息（Web.arising_recurs_iff）；形成有限多时，某个形成在任意晚的步生起（Web.Unceasing）恰当某个形成在任意晚的步止息：生起复现恰当止息复现（Web.unceasing_iff）。读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在（Web.standing_recurs_iff）。有限性起作用：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）；一开始都活跃的形成可以一个接一个止息而没有任何生起（Attrition）。不用伦理前提，也不用 Lean 公理。",
-    "en": "The following holds of every web, with no premise about it. A determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after (ComesToBe, CeasesToBe); a formation arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are this one change, read of activity, dependence and standing (Web.change_readings). A decidable determination that holds and ceases to be at no later step holds on (persists); a formation supported at one step is supported at another where each dependence it has at the other it had at the first, at no greater need, on a condition standing no lower (Web.supported_of). Over any stretch of steps, an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members (over_stretch, family_over_stretch). No amount falls below zero, so over a stretch a finite family falls by at most its total at the start more than it rises (fallen_within), and members falling at arbitrarily late steps rise at arbitrarily late steps (rising_recurs): in every unfolding, levels of finitely many conditions that keep falling keep rising (Web.falls_need_rises); for one amount this is Becoming.Renewal's law that an observable never rising from some step on does not fall at arbitrarily late steps (falls_not_recurring_from_floor). With the amounts bounded, the family rises by at most its bound per member more than it falls (risen_within), and rising at arbitrarily late steps needs falling at arbitrarily late steps (falling_recurs). A determination counts as zero or one, so both hold of it: over any stretch, the members of a finite family holding at the end with those that ceased to be are those holding at the start with those that came to be (held_over_stretch); comings and ceasings differ by at most the number of members (keep_pace); and each recurs exactly when the other does (coming_recurs_iff). Read of activity, given decidable activity: the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose (Web.activity_over_stretch); they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps (Web.arising_recurs_iff); and with finitely many formations, some formation arises at arbitrarily late steps (Web.Unceasing) exactly when some formation ceases at arbitrarily late steps: arising recurs exactly when ceasing does (Web.unceasing_iff). Read of standing, with no premise at all: conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps (Web.standing_recurs_iff). Finiteness does the work: ever new formations can arise with none ceasing while a level rises at every step and never falls (Accretion), and formations all active at the start can cease one after another while nothing arises (Attrition). No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "以下对每个依存网成立，不加任何关于它的前提。一个规定跨一步开始成立（之前不成立、之后成立）或不再成立（之前成立、之后不成立）；形成的生起与止息、依存的形成与消解、条件开始与不再作为条件而在，是这同一种变化分别读于活动、依存与水平。",
+      "en": "The following hold of every web, with no premise about it. A determination comes to be across a step where it fails before and holds after, and ceases to be where it holds before and fails after; a formation arising and ceasing, a dependence forming and dissolving, and a condition coming to stand and ceasing to stand are this one change, read of activity, dependence and standing.",
+      "declarations": [
+        "Becoming.ComesToBe",
+        "Becoming.CeasesToBe",
+        "Becoming.Web.Ceases",
+        "Becoming.Web.CeasesToStand",
+        "Becoming.Web.change_readings"
+      ]
+    },
+    {
+      "zh": "可判定的规定在某步成立、此后没有一步不再成立，就一直成立；一个形成在某步被支持，在另一步仍被支持，只要它在后者的每个依存在前者都有、所需不更大、条件的水平不更低。",
+      "en": "A decidable determination that holds and ceases to be at no later step holds on; a formation supported at one step is supported at another where each dependence it has at the other it had at the first, at no greater need, on a condition standing no lower.",
+      "declarations": [
+        "Becoming.persists",
+        "Becoming.Web.Supported",
+        "Becoming.Web.supported_of"
+      ]
+    },
+    {
+      "zh": "任一段步上，一个量在终点加上其间的全部下降，等于在起点加上其间的全部上升；有限家族的总量连同成员的升降也是如此。",
+      "en": "Over any stretch of steps, an amount at the end with everything it fell is the amount at the start with everything it rose, and so for the total of a finite family with the rises and falls of its members.",
+      "declarations": [
+        "Becoming.rise",
+        "Becoming.fall",
+        "Becoming.over_stretch",
+        "Becoming.family_over_stretch"
+      ]
+    },
+    {
+      "zh": "量不低于零，所以有限家族在一段步上的下降至多比上升多出起点的总量，成员在任意晚的步下降就在任意晚的步上升：每个展开中，有限多个条件的水平持续下降就持续上升。",
+      "en": "No amount falls below zero, so over a stretch a finite family falls by at most its total at the start more than it rises, and members falling at arbitrarily late steps rise at arbitrarily late steps: in every unfolding, levels of finitely many conditions that keep falling keep rising.",
+      "declarations": [
+        "Becoming.fallen_within",
+        "Becoming.rising_recurs",
+        "Becoming.Web.falls_need_rises"
+      ]
+    },
+    {
+      "zh": "对一个量，这就是 Becoming.Renewal 中“从某步起不上升的观测量不在任意晚的步下降”。",
+      "en": "For one amount this is Becoming.Renewal's law that an observable never rising from some step on does not fall at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.falls_not_recurring_from_floor",
+        "Becoming.falls_not_recurring"
+      ]
+    },
+    {
+      "zh": "量有界时，上升至多比下降多出每个成员的界，在任意晚的步上升就需要在任意晚的步下降。",
+      "en": "With the amounts bounded, the family rises by at most its bound per member more than it falls, and rising at arbitrarily late steps needs falling at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.risen_within",
+        "Becoming.falling_recurs"
+      ]
+    },
+    {
+      "zh": "一个规定只计 0 或 1，两者都适用：任一段步上，有限家族在终点成立的成员连同其间不再成立的，恰是在起点成立的成员连同其间开始成立的；开始成立与不再成立的次数之差不超过成员数；一方复现恰当另一方复现。",
+      "en": "A determination counts as zero or one, so both hold of it: over any stretch, the members of a finite family holding at the end with those that ceased to be are those holding at the start with those that came to be; comings and ceasings differ by at most the number of members; and each recurs exactly when the other does.",
+      "declarations": [
+        "Becoming.mark",
+        "Becoming.held_over_stretch",
+        "Becoming.keep_pace",
+        "Becoming.coming_recurs_iff"
+      ]
+    },
+    {
+      "zh": "读于活动（活动可判定）：有限家族的形成在终点活跃的连同其间止息的，恰是在起点活跃的连同其间生起的；它们在任意晚的步生起恰当在任意晚的步止息；形成有限多时，某个形成在任意晚的步生起恰当某个形成在任意晚的步止息：生起复现恰当止息复现。",
+      "en": "Read of activity, given decidable activity: the members of a finite family of formations active at the end with those that ceased are those active at the start with those that arose; they arise at arbitrarily late steps exactly when they cease at arbitrarily late steps; and with finitely many formations, arising recurs exactly when ceasing does.",
+      "declarations": [
+        "Becoming.Web.activity_over_stretch",
+        "Becoming.Web.arising_recurs_iff",
+        "Becoming.Web.Unceasing",
+        "Becoming.Web.unceasing_iff"
+      ]
+    },
+    {
+      "zh": "读于水平，不需要任何前提：有限家族的条件在任意晚的步开始作为条件而在，恰当它们在任意晚的步不再作为条件而在。",
+      "en": "Read of standing, with no premise at all: conditions of a finite family come to stand at arbitrarily late steps exactly when they cease to stand at arbitrarily late steps.",
+      "declarations": [
+        "Becoming.Web.ComesToStand",
+        "Becoming.Web.standing_recurs_iff"
+      ]
+    },
+    {
+      "zh": "有限性起作用：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）；一开始都活跃的形成可以一个接一个止息而没有任何生起（Attrition）。",
+      "en": "Finiteness does the work: ever new formations can arise with none ceasing while a level rises at every step and never falls (Accretion), and formations all active at the start can cease one after another while nothing arises (Attrition).",
+      "declarations": [
+        "Becoming.Accretion.web",
+        "Becoming.Accretion.unceasing",
+        "Becoming.Accretion.never_ceases",
+        "Becoming.Accretion.rises",
+        "Becoming.Accretion.never_falls",
+        "Becoming.Attrition.web",
+        "Becoming.Attrition.ceasing",
+        "Becoming.Attrition.nothing_arises"
+      ]
+    },
+    {
+      "zh": "活动的规律对每个世界有局部形式：一个列表从某步起覆盖活跃者、活动可判定时，生起复现恰当止息复现；不要形成有限多，Web.unceasing_iff 是它的推论。",
+      "en": "The activity law holds of every world in a local form: where one list covers the active formations from some step on and activity is decided, arising recurs exactly when ceasing does; finitely many formations in all is not needed, and Web.unceasing_iff is its corollary.",
+      "declarations": [
+        "Becoming.Web.unceasing_iff_covering"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "表示的方法承诺，不是关于展开的前提：变化跨离散的步读出；量是自然数；计数时，被计的规定在每一步可判定（活动的可判定性是相关定理的假设；水平是否为正总可判定，所以 standing_recurs_iff 不需要它）。",
@@ -27,9 +129,57 @@
       "en": "The family is finite, given as a list, possibly with repetition; Accretion and Attrition show that both directions fail for infinite families. That recurring rises need recurring falls also needs the amounts bounded; a determination counts zero or one, so it always is."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "“复现”是在任意晚的步出现，不给出频率。",
+      "en": "Recurring means occurring at arbitrarily late steps and gives no frequency.",
+      "kind": "scope"
+    },
+    {
+      "zh": "同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么。",
+      "en": "Keeping pace is of counts and says neither which formations arise or cease nor why.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不把形式规律当作对现实的演绎必然性。",
+      "en": "Formal laws are not taken for the deductive necessity of the whole for reality.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "detail": {
+        "zh": "无限家族：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）。",
+        "en": "An infinite family: ever new formations arise with none ceasing, while a level rises at every step and never falls (Accretion)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
+      "detail": {
+        "zh": "无限家族：一开始都活跃的形成一个接一个止息，没有任何生起（Attrition）。",
+        "en": "An infinite family: formations all active at the start cease one after another while nothing arises (Attrition)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "decidability",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z，含本记录的局部规律）：Becoming.Change 的定理公理报告为空，检查器并核对核心纯净。作者反审见整合文档；第九次独立审查接受其数学，更正见整合文档；第十一次独立审查亦接受，其更正见整合文档，未再经独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z, with this record's local laws): the theorems of Becoming.Change have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the ninth independent review accepts the mathematics, its corrections handled in the integration note; the eleventh independent review accepts it too, and its corrections, handled in the integration note, are not yet independently reviewed."
+  },
+  "next_delta": {
+    "zh": "对整个空间成立的规律的完整清单，以及每个前提都有满足与不满足它的展开（Becoming.Space）；下降何时在同一步上就是不再作为条件而在（耗散之下上升与下降在同一交换中，见 rising-and-falling-in-one-exchange）；频率与比例的版本；非离散步的读法；生生不息在哪个层次读（Ren）。",
+    "en": "A complete list of the laws holding of the whole space, with models and countermodels of every premise (Becoming.Space); when a fall is, at its own step, a ceasing to stand (under dissipation rising and falling are one exchange, see rising-and-falling-in-one-exchange); versions with frequencies or proportions; readings not across discrete steps; the level at which 生生不息 is read (Ren)."
+  },
   "correspondence": {
-    "zh": "Ren 的提议：计入整个空间，包括生成与退化，生成之论或许不需要公理；加上公理，就划出整个空间中的一部分（2026-10-08-theory-of-becoming-priority）。本结果给出对整个空间成立的一组规律：它们对每个依存网成立，没有关于网的假设；以前各模块的规律（Dependent、Balances、Dissipative、Embodied、Carries 之下）都写明前提。其中作者认为最有内容的一条：在有限之中，开始成立与不再成立同步，生起不息恰当止息不息，开始作为条件而在不息恰当不再作为条件而在不息。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”的一种形式内容（AI 论证）：在有限的家族中，没有不伴随止息的不息生起，也没有不伴随生起的不息止息；只有生起而无止息需要无尽的新（Accretion），只有止息而无生起需要无尽的初始（Attrition）。这是活动的读法，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）：这里的开始成立与不再成立在有限之中同步；作为关系的读法见 Web.renewing_not_consuming。这也不决定生生不息在哪个层次读（Ren），不推出止息是好的或坏的，也不把形式规律当作对现实的演绎必然性；“止息”“开始成立”等中文用语是 AI 的提议，名称由 Ren 定。",
-    "en": "Ren's proposal: counting the whole space, generative and degenerative, the theory of becoming may need no axiom, and adding axioms defines a part of the whole space (2026-10-08-theory-of-becoming-priority). This result gives a set of laws holding of the whole space: they hold of every web, with no assumption about it, while the laws of the earlier modules (under Dependent, Balances, Dissipative, Embodied, Carries) name their premises. The one the author finds most contentful: in a finite family, coming to be and ceasing to be keep pace, arising is unceasing exactly when ceasing is, and coming to stand exactly when ceasing to stand. The author reads this as one formal content of Ren's scope, formation, persistence, transformation, degeneration and dissolution within one unfolding (an AI argument): in a finite family there is no unceasing arising without unceasing ceasing, and no unceasing ceasing without unceasing arising; arising without ceasing needs ever new formations (Accretion), and ceasing without arising needs endlessly many at the start (Attrition). This is a reading of activity, arising and ceasing being names Ren confirmed (2026-10-09-arising-ceasing-names); whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference): coming to be and ceasing to be keep pace here in a finite family; for the reading as relations see Web.renewing_not_consuming. Nor does this decide the level at which 生生不息 is read (Ren's), does not show that ceasing is good or bad, and does not take formal laws for the deductive necessity of the whole for reality; the Chinese terms proposed for ceasing and coming to be are the AI's, and names are Ren's."
+    "zh": "Ren 的提议：计入整个空间，包括生成与退化，生成之论或许不需要公理；加上公理，就划出整个空间中的一部分（2026-10-08-theory-of-becoming-priority）。本结果给出对整个空间成立的一组规律：它们对每个依存网成立，没有关于网的假设；以前各模块的规律（Dependent、Balances、Dissipative、Embodied、Carries 之下）都写明前提。其中作者认为最有内容的一条：在有限之中，开始成立与不再成立同步，生起不息恰当止息不息，开始作为条件而在不息恰当不再作为条件而在不息。作者把这读作 Ren 所说“生成、维持、转化、退化与消失在同一展开中”的一种形式内容（AI 论证）：在有限的家族中，没有不伴随止息的不息生起，也没有不伴随生起的不息止息；只有生起而无止息需要无尽的新（Accretion），只有止息而无生起需要无尽的初始（Attrition）。这是活动的读法，英文名称 arising/ceasing 经 Ren 确认（2026-10-09-arising-ceasing-names；中文 生起／止息 是 AI 的译名）；它是否为 Ren 提议中的“生成的”“退化的”由 Ren 选择（Ren 写道“generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”，以“吧”预设二者不重叠；若取不重叠，这一读法就不是其所指，这是 AI 的推论）：这里的开始成立与不再成立在有限之中同步；作为关系的读法见 Web.renewing_not_consuming。“止息”“开始成立”等中文用语是 AI 的提议，名称由 Ren 定。",
+    "en": "Ren's proposal: counting the whole space, generative and degenerative, the theory of becoming may need no axiom, and adding axioms defines a part of the whole space (2026-10-08-theory-of-becoming-priority). This result gives a set of laws holding of the whole space: they hold of every web, with no assumption about it, while the laws of the earlier modules (under Dependent, Balances, Dissipative, Embodied, Carries) name their premises. The one the author finds most contentful: in a finite family, coming to be and ceasing to be keep pace, arising is unceasing exactly when ceasing is, and coming to stand exactly when ceasing to stand. The author reads this as one formal content of Ren's scope, formation, persistence, transformation, degeneration and dissolution within one unfolding (an AI argument): in a finite family there is no unceasing arising without unceasing ceasing, and no unceasing ceasing without unceasing arising; arising without ceasing needs ever new formations (Accretion), and ceasing without arising needs endlessly many at the start (Attrition). This is a reading of activity, arising and ceasing being names Ren confirmed (2026-10-09-arising-ceasing-names); whether it is the proposal's generative and degenerative is Ren's to choose (Ren wrote ‘generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧’, a tag question presuming that they do not overlap; if non-overlap is taken, this reading is not what is meant, the AI's inference): coming to be and ceasing to be keep pace here in a finite family; for the reading as relations see Web.renewing_not_consuming. The Chinese terms proposed for ceasing and coming to be are the AI's, and names are Ren's."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
   "aliases": [
@@ -207,30 +357,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "detail": {
-        "zh": "无限家族：不断有新的形成生起而没有一个止息，同时一个水平每步上升、从不下降（Accretion）。",
-        "en": "An infinite family: ever new formations arise with none ceasing, while a level rises at every step and never falls (Accretion)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
-      "detail": {
-        "zh": "无限家族：一开始都活跃的形成一个接一个止息，没有任何生起（Attrition）。",
-        "en": "An infinite family: formations all active at the start cease one after another while nothing arises (Attrition)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词；只对离散步的读法陈述；有限家族以列表给出；“复现”是在任意晚的步出现，不给出频率；同步是数目的同步，不说明哪个形成生起或止息，也不说明为什么；可判定性是活动的假设；不推出止息是好的或坏的；不把形式规律当作现实的必然性；生生不息的层次与名称由 Ren 定。",
-    "en": "Contains no ethical predicate; stated for the reading across discrete steps; finite families are given as lists; recurring means occurring at arbitrarily late steps and gives no frequency; keeping pace is of counts and says neither which formations arise or cease nor why; decidability is a hypothesis about activity; does not show that ceasing is good or bad; does not take formal laws for necessity in reality; the level at which 生生不息 is read and the names are Ren's."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Change 的 59 项定理全部空依赖（P30 新增 recurring_accumulates，Recurs.accumulates 改由它证明）；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §26；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。第十一次独立审查（BECOMING-P25B-P29-REVIEW.md）接受其数学，所提更正在整合文档 §42 处理，这些更正尚未再经独立审查。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 59 theorems of Becoming.Change (recurring_accumulates added in P30, Recurs.accumulates now proved from it) all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §26 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). The eleventh independent review (BECOMING-P25B-P29-REVIEW.md) accepts its mathematics, and its corrections are handled in §42 of the integration note; those corrections are not yet independently reviewed. This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Change.lean",
@@ -410,10 +536,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Web.unceasing_iff_covering（P60），局部条件写在规律之内：一个列表从某步起覆盖活跃者；不要形成有限多；Web.unceasing_iff是它的推论；对整个空间成立的规律的完整清单，以及每个前提都有满足与不满足它的展开（计划 P22，Becoming.Space）；下降何时在同一步上就是不再作为条件而在（P20 证明了耗散之下上升与下降在同一交换中，见 rising-and-falling-in-one-exchange）；频率与比例的版本；非离散步的读法；生生不息在哪个层次读（Ren）。",
-    "en": "The exact restatement for every world is this record's Web.unceasing_iff_covering (P60), the local condition inside the law: one list covering the active formations from some step on; finitely many formations in all is not needed; Web.unceasing_iff is its corollary; a complete list of the laws holding of the whole space, with models and countermodels of every premise (plan P22, Becoming.Space); when a fall is, at its own step, a ceasing to stand (P20 proves that under dissipation rising and falling are one exchange, see rising-and-falling-in-one-exchange); versions with frequencies or proportions; readings not across discrete steps; the level at which 生生不息 is read (Ren)."
-  },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P19 新增，按 Ren“aim a complete theory of becoming, and finish related work”与计划第 9 节的第二项（整体的规律不加前提）；见整合文档 §26。",
@@ -698,6 +820,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增四行（第十七次审查的改名）；其余文字不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); BECOMING-UNIFICATION-PLAN.md (four rows added to the 14 October rename table (the seventeenth review's renames); no other text changed)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 11 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。下一步中的局部重述（P60）改为规律 11；下一步其余各项保留，去掉轮次标记 P22 与 P20。对应中“不决定生生不息在哪个层次读、不推出止息是好的或坏的、不把形式规律当作对现实的演绎必然性”分入下一步、通用边界 no-evaluation 与一条“未表明”。证据段中 recurring_accumulates 在 P30 新增、Recurs.accumulates 改由它证明的说明与定理数留在回执与快照中；本记录局部规律的标号为 P57–P61；作者反审在整合文档 §26，第九次独立审查的更正在 §34，第十一次的在 §42。每句旧文本的去向见迁移对照表 [coming-and-ceasing-keep-pace.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/coming-and-ceasing-keep-pace.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eleven laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The local restatement in the next step (P60) became law 11; the next step's other items stay, without the round labels P22 and P20. The correspondence's closing sentence (it does not decide the level at which 生生不息 is read, does not show that ceasing is good or bad, does not take formal laws for the deductive necessity of the whole for reality) went to the next step, the no-evaluation key and one does-not-show item. The evidence's note that recurring_accumulates came in P30, with Recurs.accumulates now proved from it, and the theorem count stay in the receipt and the snapshot; the local laws are labelled P57–P61; the author's counterreview is §26 of the integration note, the ninth independent review's corrections §34, the eleventh's §42. Every earlier sentence is mapped in the migration table [coming-and-ceasing-keep-pace.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/coming-and-ceasing-keep-pace.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/a6d68f6db714db3f/coming-and-ceasing-keep-pace.json",
+      "sha256": "a6d68f6db714db3f18da3a2ac8fdbde6b9d1b28276d703c3998763dc64e396e6",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }

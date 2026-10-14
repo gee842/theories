@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "rising-and-falling-in-one-exchange",
   "title": {
     "zh": "同一交换中的上升与下降",
@@ -8,15 +8,93 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F01",
-  "reviewed_at_utc": "2026-10-09T13:30:00+00:00",
+  "reviewed_at_utc": "2026-10-14T12:45:00+00:00",
   "statement": {
     "zh": "在家族被耗散的一步上，一个成员上升，同一步上家族另一个成员下降。",
     "en": "Across a step at which a family is dissipated on, a member rising comes with another member of the family falling."
   },
-  "claim": {
-    "zh": "在平衡的流中，每次下降都被取用（Flow.Balances.fall_taken）；只有活跃形成取用时，某个参与的活跃形成从下降的条件取用，并汲取它（Flow.Balances.takenBy）。这是 rise_given 与 renewedBy 的对偶。在平衡的流中，跨一个被耗散的步，家族成员的下降至少等于其上升，每个从家族取用的形成再多一（Flow.Balances.falls_cover）。所以：有形成从家族取用，就有成员下降，不论别的成员是否上升（Flow.Balances.falls_of_taking）；一个事件的每一步上家族都被耗散且有形成从中取用，这个事件就消耗家族，Becoming.Generation 作为对应前提给出的 Depletes 由此得出（Flow.Balances.depletes）；一个成员上升（开始作为条件而在），同一步上另有一个成员下降（Flow.rise_with_fall、Flow.standing_with_fall）；耗散之下，不重复的家族中有成员上升而没有成员下降，家族在该步不封闭（Flow.rise_alone_opens）。只有活跃形成给予与取用时：给予上升成员的是一个活跃形成，它也从家族取用；另一个成员下降，由一个汲取它的活跃形成取用（Flow.rise_exchange）。读于一类关系项：被耗散家族中一个体现成员的生起，伴随同一步上另一个成员的下降（Web.Embodied.arising_with_fall）。没有耗散时不然：每一步上，第 t+1 代在它与第 t 代组成的封闭家族中生起，没有任何一代下降过，所以该家族在该步不被耗散（Brood.rise_without_fall）。不用伦理前提，也不用 Lean 公理。",
-    "en": "In a balanced flow every fall is taken from (Flow.Balances.fall_taken); where only active formations take, some active formation taking part takes from a condition that falls and draws on it (Flow.Balances.takenBy). These are the duals of rise_given and renewedBy. In a balanced flow, across a step dissipated on, a family's members fall by at least as much as they rise, and by one more for each formation taking from the family (Flow.Balances.falls_cover). So a formation taking from the family makes some member fall, whether or not another rises (Flow.Balances.falls_of_taking); an event at each of whose steps the family is dissipated on and taken from depletes it, so the Depletes that Becoming.Generation supplies as a correspondence premise follows (Flow.Balances.depletes); a member rising, as in coming to stand, comes with another member falling across the same step (Flow.rise_with_fall, Flow.standing_with_fall); and under dissipation, a family without repetition in which a member rises while none falls is open across that step (Flow.rise_alone_opens). Where only active formations give and take, the formation giving to the rising member is active and also takes from the family, and another member falls, taken from by an active formation drawing on it (Flow.rise_exchange). Read with one kind of relatum, the arising of an embodied member of a family dissipated on comes with another member falling across the same step (Web.Embodied.arising_with_fall). Without dissipation it need not: across every step, generation t+1 arises in the closed family of itself and generation t while no generation ever falls, so that family is not dissipated on (Brood.rise_without_fall). No ethical premise and no Lean axiom is used."
-  },
+  "laws": [
+    {
+      "zh": "在平衡的流中，每次下降都被取用；只有活跃形成取用时，某个参与的活跃形成从下降的条件取用，并汲取它。这是 rise_given 与 renewedBy 的对偶。",
+      "en": "In a balanced flow every fall is taken from; where only active formations take, some active formation taking part takes from a condition that falls and draws on it. These are the duals of rise_given and renewedBy.",
+      "declarations": [
+        "Becoming.Flow.Balances",
+        "Becoming.Flow.taken",
+        "Becoming.Flow.Taking",
+        "Becoming.Flow.Balances.fall_taken",
+        "Becoming.Flow.Balances.takenBy",
+        "Becoming.Flow.Balances.rise_given"
+      ]
+    },
+    {
+      "zh": "在平衡的流中，跨一个被耗散的步，家族成员的下降至少等于其上升，每个从家族取用的形成再多一。",
+      "en": "In a balanced flow, across a step dissipated on, a family's members fall by at least as much as they rise, and by one more for each formation taking from the family.",
+      "declarations": [
+        "Becoming.Flow.DissipatesOn",
+        "Becoming.Flow.takers",
+        "Becoming.Flow.Balances.falls_cover"
+      ]
+    },
+    {
+      "zh": "所以：有形成从家族取用，就有成员下降，不论别的成员是否上升；一个事件的每一步上家族都被耗散且有形成从中取用，这个事件就消耗家族，Becoming.Generation 作为对应前提给出的 Depletes 由此得出。",
+      "en": "So a formation taking from the family makes some member fall, whether or not another rises; an event at each of whose steps the family is dissipated on and taken from depletes it, so the Depletes that Becoming.Generation supplies as a correspondence premise follows.",
+      "declarations": [
+        "Becoming.Flow.Balances.falls_of_taking",
+        "Becoming.Flow.Balances.depletes",
+        "Becoming.Web.Depletes"
+      ]
+    },
+    {
+      "zh": "同样，一个成员上升（开始作为条件而在），同一步上另有一个成员下降；耗散之下，不重复的家族中有成员上升而没有成员下降，家族在该步不封闭。",
+      "en": "So too a member rising, as in coming to stand, comes with another member falling across the same step; and under dissipation, a family without repetition in which a member rises while none falls is open across that step.",
+      "declarations": [
+        "Becoming.Flow.rise_with_fall",
+        "Becoming.Flow.standing_with_fall",
+        "Becoming.Flow.Dissipative",
+        "Becoming.Flow.ClosedAt",
+        "Becoming.Flow.rise_alone_opens"
+      ]
+    },
+    {
+      "zh": "只有活跃形成给予与取用时：一个活跃形成给予上升成员，它也从家族取用；另一个成员下降，由一个汲取它的活跃形成取用。",
+      "en": "Where only active formations give and take, an active formation gives to the rising member and also takes from the family, and another member falls, taken from by an active formation drawing on it.",
+      "declarations": [
+        "Becoming.Flow.Acting",
+        "Becoming.Flow.rise_exchange"
+      ]
+    },
+    {
+      "zh": "读于一类关系项：被耗散家族中一个体现成员的生起，伴随同一步上另一个成员的下降。",
+      "en": "Read with one kind of relatum, the arising of an embodied member of a family dissipated on comes with another member falling across the same step.",
+      "declarations": [
+        "Becoming.Web.Embodied.comesToStand",
+        "Becoming.Web.Embodied.arising_with_fall"
+      ]
+    },
+    {
+      "zh": "没有耗散时不然：每一步上，第 t+1 代在它与第 t 代组成的封闭家族中生起，没有任何一代下降过，所以该家族在该步不被耗散。",
+      "en": "Without dissipation it need not: across every step, generation t+1 arises in the closed family of itself and generation t while no generation ever falls, so that family is not dissipated on.",
+      "declarations": [
+        "Becoming.Brood.brood",
+        "Becoming.Brood.birth_only",
+        "Becoming.Brood.rise_without_fall"
+      ]
+    },
+    {
+      "zh": "这些规律对每个世界有局部形式：一步上的平衡与耗散，只在该家族上；给予与取用者的活跃只在该步；Flow.Balances.falls_cover、Balances.falls_of_taking、Balances.depletes、rise_with_fall、rise_exchange 与 Web.Embodied.arising_with_fall 是它们的推论。",
+      "en": "These laws hold of every world in a local form, with balance and dissipation at the one step, on the family only, and the activity of givers and takers only at that step; Flow.Balances.falls_cover, Balances.falls_of_taking, Balances.depletes, rise_with_fall, rise_exchange and Web.Embodied.arising_with_fall are their corollaries.",
+      "declarations": [
+        "Becoming.Flow.BalancesOn",
+        "Becoming.Flow.Balances.on",
+        "Becoming.Flow.BalancesOn.falls_cover",
+        "Becoming.Flow.BalancesOn.falls_of_taking",
+        "Becoming.Flow.depletes_at",
+        "Becoming.Flow.BalancesOn.rise_with_fall",
+        "Becoming.Flow.BalancesOn.rise_exchange",
+        "Becoming.Web.Embodied.arising_with_fall_at"
+      ]
+    }
+  ],
   "hypotheses": [
     {
       "zh": "平衡（Balances）：每个条件的水平变化恰是参与的形成从中取用与给予的；量是自然数，单位可通约。",
@@ -31,9 +109,61 @@
       "en": "Read of formations, also: only active formations give (Acting), and only active formations take, and only from conditions they draw on (Taking). Read of embodied arising, also: embodiment (Embodied)."
     }
   ],
+  "does_not_show": [
+    {
+      "zh": "下降不是止息：下降的成员可以仍作为条件而在。",
+      "en": "A fall is not a ceasing: the member that falls may still stand.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "不推出生起须以另一个的损失换来：下降不是侵蚀（侵蚀由依存与所需定义），下降的成员可以是没有任何形成依存的燃料。",
+      "en": "It does not show that one arising comes through another's loss: a fall is not undermining, which is defined by dependence and need, and the falling member may be fuel that no formation depends on.",
+      "kind": "non-implication"
+    },
+    {
+      "zh": "只说有成员下降，不说哪个；“同一交换”是同一步上同一流中的给予与取用，不把某次下降单独归给某次上升。",
+      "en": "It says that some member falls, not which; ‘one exchange’ means giving and taking in one flow across one step and does not attribute a particular fall to a particular rise.",
+      "kind": "scope"
+    },
+    {
+      "zh": "平衡、耗散与只有活跃者取用是对应前提。",
+      "en": "Balance, dissipation and only active formations taking are correspondence premises.",
+      "kind": "correspondence"
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
+      "detail": {
+        "zh": "没有耗散：第 t+1 代在它与第 t 代组成的封闭家族中生起，没有任何一代下降过（Brood.rise_without_fall）。",
+        "en": "Without dissipation: generation t+1 arises in the closed family of itself and generation t while no generation ever falls (Brood.rise_without_fall)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
+      "detail": {
+        "zh": "没有耗散：一个条件每步上升、每步被给予，从不下降（Growing）。",
+        "en": "Without dissipation: a condition rises and is given to at every step and never falls (Growing)."
+      }
+    }
+  ],
+  "standard_boundaries": [
+    "no-ethical-premise",
+    "no-evaluation",
+    "discrete-steps",
+    "names-provisional"
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器实查（回执 20261013T094743.528770Z，含本记录的局部规律）：Becoming.Flow、Becoming.Dissipation 与 Becoming.Roles 的定理公理报告为空，检查器并核对核心纯净。作者反审见整合文档；第九次独立审查接受其数学，所提更正在整合文档处理。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker (receipt 20261013T094743.528770Z, with this record's local laws): the theorems of Becoming.Flow, Becoming.Dissipation and Becoming.Roles have empty axiom reports, and the checker verifies core purity. Author counterreview in the integration note; the ninth independent review accepts the mathematics, and its corrections are handled in the integration note."
+  },
+  "next_delta": {
+    "zh": "下降何时是不再作为条件而在（水平降到零）的一步形式；有理数量的版本；不体现的生起是否另有同一交换的形式；实际展开中耗散与同步的经验对应；名称（Ren）。",
+    "en": "A one-step form for when a fall is a ceasing to stand (the level reaching zero); a version with rational amounts; whether arising that is not embodied has its own form of the one exchange; the empirical correspondence of dissipation and accompaniment in actual unfoldings; names (Ren)."
+  },
   "correspondence": {
-    "zh": "计划 P20 原题为“生与灭在同一交换中”。证明的是上升与下降：下降不是止息，下降的成员可以仍作为条件而在；标题与计划的行据此更正。Ren 的提议要求解释“生成、维持、转化、退化与消失”在同一展开中（2026-10-08-theory-of-becoming-priority）。coming-and-ceasing-keep-pace 不加前提地证明，有限家族中开始成立与不再成立在长程上同步；本结果证明，在平衡与耗散之下，一次上升在它自己的那一步上就伴随另一个成员的下降。作者把这读作该范围在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是可以单独发生的事件，它与另一个成员的下降是同一次交换的两面。这不推出生起须以另一个的损失换来：下降不是侵蚀（侵蚀由依存与所需定义），下降的成员可以是没有任何形成依存的燃料；不评价上升或下降。在流的读法中，Becoming.Generation 的两个对应前提（RenewedBy、Depletes）化归为平衡、只有活跃者给予、耗散与事件之步上的取用；实际展开是否满足这些是经验问题。“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。",
-    "en": "Plan P20 was first titled ‘coming to be and ceasing to be in one exchange’. What is proved is rising and falling: a fall is not a ceasing, and the member that falls may still stand; the title and the plan's row are corrected accordingly. Ren's proposal asks to explain formation, persistence, transformation, degeneration and dissolution within one unfolding (2026-10-08-theory-of-becoming-priority). coming-and-ceasing-keep-pace proves, with no premise, that in a finite family coming to be and ceasing to be keep pace in the long run; this result proves that under balance and dissipation a rise is accompanied at its own step by another member's fall. The author reads this as one formal content of that scope within a single step (an AI argument): in a family dissipated on, arising is not an event that can happen alone; it and another member's fall are two sides of one exchange. This does not show that one arising is bought with another's loss: a fall is not undermining, which is defined by dependence and need, and the falling member may be fuel that no formation depends on; neither rising nor falling is evaluated. Read through flows, the two correspondence premises of Becoming.Generation (RenewedBy, Depletes) reduce to balance, only active formations giving, dissipation and taking at the event's steps; whether actual unfoldings meet them is an empirical question. ‘Rising’, ‘falling’ and ‘one exchange’ are the AI's terms, and names are Ren's."
+    "zh": "Ren 的提议要求解释“生成、维持、转化、退化与消失”在同一展开中（2026-10-08-theory-of-becoming-priority）。coming-and-ceasing-keep-pace 不加前提地证明，有限家族中开始成立与不再成立在长程上同步；本结果证明，在平衡与耗散之下，一次上升在它自己的那一步上就伴随另一个成员的下降。作者把这读作该范围在一步之内的一种形式内容（AI 论证）：在被耗散的家族中，生起不是可以单独发生的事件，它与另一个成员的下降是同一次交换的两面。在流的读法中，Becoming.Generation 的两个对应前提（RenewedBy、Depletes）化归为平衡、只有活跃者给予、耗散与事件之步上的取用；实际展开是否满足这些是经验问题。“上升”“下降”“同一交换”是 AI 的用语，名称由 Ren 定。",
+    "en": "Ren's proposal asks to explain formation, persistence, transformation, degeneration and dissolution within one unfolding (2026-10-08-theory-of-becoming-priority). coming-and-ceasing-keep-pace proves, with no premise, that in a finite family coming to be and ceasing to be keep pace in the long run; this result proves that under balance and dissipation a rise is accompanied at its own step by another member's fall. The author reads this as one formal content of that scope within a single step (an AI argument): in a family dissipated on, arising is not an event that can happen alone; it and another member's fall are two sides of one exchange. Read through flows, the two correspondence premises of Becoming.Generation (RenewedBy, Depletes) reduce to balance, only active formations giving, dissipation and taking at the event's steps; whether actual unfoldings meet them is an empirical question. ‘Rising’, ‘falling’ and ‘one exchange’ are the AI's terms, and names are Ren's."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
   "aliases": [
@@ -205,30 +335,6 @@
       }
     }
   ],
-  "counterexamples": [
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Roles.lean",
-      "detail": {
-        "zh": "没有耗散：第 t+1 代在它与第 t 代组成的封闭家族中生起，没有任何一代下降过（Brood.rise_without_fall）。",
-        "en": "Without dissipation: generation t+1 arises in the closed family of itself and generation t while no generation ever falls (Brood.rise_without_fall)."
-      }
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Flow.lean",
-      "detail": {
-        "zh": "没有耗散：一个条件每步上升、每步被给予，从不下降（Growing）。",
-        "en": "Without dissipation: a condition rises and is given to at every step and never falls (Growing)."
-      }
-    }
-  ],
-  "limitations": {
-    "zh": "不含伦理谓词；下降不是止息，下降的成员可以仍作为条件而在；不说哪个成员下降，只说有；“同一交换”是同一步上同一流中的给予与取用，不把某次下降单独归给某次上升；只对离散步的读法与自然数的量陈述；平衡、耗散与只有活跃者取用是对应前提；不评价上升或下降；名称由 Ren 定。",
-    "en": "Contains no ethical predicate; a fall is not a ceasing, and the member that falls may still stand; says that some member falls, not which; ‘one exchange’ means giving and taking in one flow across one step and does not attribute a particular fall to a particular rise; stated for the reading across discrete steps with natural-number amounts; balance, dissipation and only active formations taking are correspondence premises; neither rising nor falling is evaluated; names are Ren's."
-  },
-  "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261013T094743.528770Z）：Becoming.Flow 新增 2 项、Becoming.Dissipation 新增 7 项、Becoming.Roles 新增 3 项定理，全部空依赖；同一回执覆盖包内 75 个模块（含只作导入的根模块与桥接），共 4518 项定理／6370 项声明审计，22 个继承模块的当前字节与已通过回执一致。作者反审见整合文档 §28；第九次独立审查（BECOMING-P18B-P23-REVIEW.md）接受其数学，所提更正在整合文档 §34 处理。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal、L1–L4 与根模块 Becoming）的导入闭包恰为这 77 个模块，其中每条源声明的公理报告为空（Lean 生成的常量中，只有带字段构造子的单射引理 injEq 依赖 propext，没有源声明使用它们，检查器逐一列出），并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。本记录的局部规律（P57–P61）在同一回执中，公理报告为空。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261013T094743.528770Z): the 2 new theorems of Becoming.Flow, 7 of Becoming.Dissipation and 3 of Becoming.Roles all have empty axiom reports; the same receipt covers the package's 75 modules (including the import-only root and the bridge) with 4518 theorems/6370 declaration audits, and 22 inherited modules whose current bytes match passed receipts. The author's counterreview is in §28 of the integration note; the ninth independent review (BECOMING-P18B-P23-REVIEW.md) accepts its mathematics, and its corrections are handled in §34 of the integration note. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal, L1–L4 and the root module Becoming) is exactly these 77 modules, every source declaration in it has an empty axiom report (of the constants Lean generates, only the injectivity lemmas of constructors with fields, injEq, depend on propext; no source declaration uses them, and the checker lists them), and it compiles from Lean's prelude alone (the foundation's import Std removed for that run). This record's local laws (P57–P61) are in the same receipt, with empty axiom reports."
-  },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Dissipation.lean",
@@ -373,10 +479,6 @@
       "success_value": "passed"
     }
   ],
-  "next_delta": {
-    "zh": "对每个世界的确切重述是本记录的 Flow.BalancesOn.falls_cover、BalancesOn.falls_of_taking、depletes_at、BalancesOn.rise_with_fall、BalancesOn.rise_exchange、Web.Embodied.arising_with_fall_at（P57），局部条件写在规律之内：一步上的平衡与耗散，只在该家族上；给予与取用者的活跃只在该步；Flow.Balances.falls_cover、Balances.falls_of_taking、Balances.depletes、rise_with_fall、rise_exchange、Web.Embodied.arising_with_fall是它们的推论；下降何时是不再作为条件而在（水平降到零）的一步形式；有理数量的版本；不体现的生起是否另有同一交换的形式；实际展开中耗散与同步的经验对应；名称（Ren）。",
-    "en": "The exact restatement for every world is this record's Flow.BalancesOn.falls_cover, BalancesOn.falls_of_taking, depletes_at, BalancesOn.rise_with_fall, BalancesOn.rise_exchange, Web.Embodied.arising_with_fall_at (P57), the local condition inside the law: balance and dissipation at the one step, on the family only; the activity of givers and takers only at that step; Flow.Balances.falls_cover, Balances.falls_of_taking, Balances.depletes, rise_with_fall, rise_exchange, Web.Embodied.arising_with_fall are their corollaries; a one-step form for when a fall is a ceasing to stand (the level reaching zero); a version with rational amounts; whether arising that is not embodied has its own form of the one exchange; the empirical correspondence of dissipation and accompaniment in actual unfoldings; names (Ren)."
-  },
   "history": [
     {
       "zh": "2026-10-09：作为整合计划 P20 新增，按 Ren“aim a complete theory of becoming, and finish related work”；计划原题“生与灭在同一交换中”更正为“上升与下降在同一交换中”；见整合文档 §28。",
@@ -641,6 +743,20 @@
     {
       "zh": "2026年10月14日，开放问题计划第五批（第十七次审查的更正、Becoming.Postponement 与整合 I1；研究第121–123节）：改绑新回执并更新哈希：BECOMING-RENEWAL-READING.md（新增第121节（Becoming.Postponement）、第122节（整合 I1：外围证明接入脊柱）与第123节（第十七次审查的更正）及其英文段；第112、114、115节与英文摘要的文字更正（G1、G4、G5、G6、改名）；此前各节其余不变）；BECOMING-UNIFICATION-PLAN.md（10月14日改名表增四行（第十七次审查的改名）；其余文字不变）。",
       "en": "14 October 2026, batch 5 of the open-issues plan (the seventeenth review's corrections with Becoming.Postponement and integration I1; study sections 121–123): rebound to the new receipts and rehashed: BECOMING-RENEWAL-READING.md (sections 121 (Becoming.Postponement), 122 (integration I1: peripheral proofs joined to the spine) and 123 (the seventeenth review's corrections) with English paragraphs; wording in sections 112, 114, 115 and the English summary corrected (G1, G4, G5, G6, rename); earlier sections otherwise unchanged); BECOMING-UNIFICATION-PLAN.md (four rows added to the 14 October rename table (the seventeenth review's renames); no other text changed)."
+    },
+    {
+      "zh": "2026-10-14 可读性迁移到 schema 2（开放问题计划 F 流：lint 发现最多的 schema 1 记录）：主张拆为 8 条规律并写出其声明；限制、逐轮回执与过程说明分入“未表明”、通用边界、证据段与沿革。规律、前提、状态、证明绑定与来源哈希均未改变。对应开头的说明移到此处：计划 P20 原题为“生与灭在同一交换中”，证明的是上升与下降，标题与计划的行据此更正（“下降不是止息”另成一条“未表明”）。下一步中的局部重述（P57）改为规律 8。规律 5 按 Lean 写“一个活跃形成给予上升成员”（存在陈述；旧文作“给予上升成员的是一个活跃形成”）。对应中“这不推出生起须以另一个的损失换来……”移为一条“未表明”，英文“bought with”改为“comes through”以免市场用语；“不评价上升或下降”归入通用边界 no-evaluation。证据段的定理数（Flow 2 项、Dissipation 7 项、Roles 3 项）与局部规律标号 P57–P61 留在回执与快照中；作者反审在整合文档 §28，第九次独立审查（BECOMING-P18B-P23-REVIEW.md）的更正在 §34。每句旧文本的去向见迁移对照表 [rising-and-falling-in-one-exchange.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/rising-and-falling-in-one-exchange.md)；迁移前的完整记录为 text_versions 末项。",
+      "en": "14 October 2026 readability migration to schema 2 (open-issues plan, stream F: the schema-1 records with the most lint findings): the claim became eight laws with their declarations; limitations, per-round receipts and process notes went to does-not-show items, standard boundaries, the evidence paragraph and history. No law, premise, status, proof binding or source hash changed. The correspondence's opening note moved here: plan P20 was first titled ‘coming to be and ceasing to be in one exchange’; what is proved is rising and falling, and the title and the plan's row were corrected accordingly (‘a fall is not a ceasing’ is now a does-not-show item). The next step's local restatement (P57) became law 8. Law 5 says, with Lean, ‘an active formation gives to the rising member’ (an existential; the old text had ‘the formation giving to the rising member is active’). The correspondence's ‘This does not show that one arising is bought with another's loss …’ became a does-not-show item, with ‘comes through’ for the market word ‘bought with’; ‘neither rising nor falling is evaluated’ went to the no-evaluation key. The evidence's theorem counts (2 in Flow, 7 in Dissipation, 3 in Roles) and the local-law labels P57–P61 stay in the receipt and the snapshot; the author's counterreview is §28 of the integration note, the ninth independent review's (BECOMING-P18B-P23-REVIEW.md) corrections §34. Every earlier sentence is mapped in the migration table [rising-and-falling-in-one-exchange.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/development/becoming-general-laws-plan/readability/migrations/rising-and-falling-in-one-exchange.md); the exact earlier record is the last text_versions entry."
+    }
+  ],
+  "text_versions": [
+    {
+      "path": "_process/architecture/history/0c62b41ed9709556/rising-and-falling-in-one-exchange.json",
+      "sha256": "0c62b41ed9709556aabbad575ffae31394d136f233fa7ffe1b8dc04a721fd927",
+      "note": {
+        "zh": "迁移前的记录原始字节（schema 1）。",
+        "en": "Exact record bytes before the migration (schema 1)."
+      }
     }
   ]
 }
