@@ -85,6 +85,7 @@ import Becoming.Segmentation
 import Becoming.Readout
 import Becoming.Gated
 import Becoming.Copying
+import Becoming.Retrodiction
 
 /-!
 # The Theory of Becoming: the formal core
@@ -808,6 +809,13 @@ One relational unfolding, stated once. The core is the foundation (`GenerativeCo
   defects exactly where the reference is faithful; doubling for `n` rounds from `k` units runs
   exactly when the stock covers a draw for each of the `k * (2 ^ n - 1)` units beyond the
   start.
+* `Becoming.Retrodiction` (L4): reading an earlier relation from later dated records, for every
+  type of histories, dates, relations, probes and reports, with no premise. The actual history
+  always fits its records; every explanation of an earlier packet by a family history fitting
+  the records gives the actual content exactly when every family rival giving the same packet
+  with another content is told apart by some dated control. Controls at both ends of a span
+  settle every date between exactly when at most one change is admitted or no date lies
+  strictly between; a change seen at both ends is not located.
 
 The core imports nothing else, every source declaration has an empty axiom report, and
 it compiles from Lean's prelude alone. Of the constants Lean generates, only the
