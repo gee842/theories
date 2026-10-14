@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "reviewed_at_utc": "2026-10-14T09:00:00+00:00",
   "claim": {
-    "zh": "实践机器是一条部分律：它的轨迹恰是其完成的运行。门控改变之律的实例：只有修订改变记录的做法，只有组织采纳改变规则，所以每段不含它们的进程保持两者。在明示二方法任务中，实际尝试与回应形成做法修订；成功重试产生既有程序所需审查关系，授权接纳后的参与者可回应下一次实践，并在最初回应者离开后继续形成新的参与关系。",
-    "en": "The practice machine is a partial law: its traces are exactly its completed runs. Instances of the gated-change law: only revision changes the recorded methods and only an organizational adoption changes the rule, so every course without them keeps both. Within the declared two-method task, actual attempts and responses form a revised procedure. A successful retry produces the review relation consumed by the existing admission process; admitted participation enables later response and formation of further participation after the initial reviewer leaves."
+    "zh": "实践机器是一条部分律：它的轨迹恰是其完成的运行。门控改变之律的实例：只有修订改变记录的做法，只有组织采纳改变规则，所以每段不含它们的进程保持两者。一轮实践，对每个状态：审查者与工作者的一轮（尝试、回应、修订、经检验的重试）完成，恰当工作者在场、审查者是在场的在册者且不是工作者、审查者所记的做法应答当前处境；完成后记下审查、把处境的做法装入工作者、完成试验，别无改变。所以工作者此后已受训，受训的审查者无需再检，受训沿每段不含修订、回到原处境的进程保持。完整历史的三轮是实例；步定义是该机器自身的，其间的接纳与交接在该历史上检查。在明示二方法任务中，实际尝试与回应形成做法修订；成功重试产生既有程序所需审查关系，授权接纳后的参与者可回应下一次实践，并在最初回应者离开后继续形成新的参与关系。",
+    "en": "The practice machine is a partial law: its traces are exactly its completed runs. Instances of the gated-change law: only revision changes the recorded methods and only an organizational adoption changes the rule, so every course without them keeps both. A practice round, for every state: the round of attempt, response, revision and tested retry by a reviewer and a worker completes exactly when the worker is present and the reviewer is a present roster member other than the worker whose recorded method answers as the current context does; it then records the review, installs the context’s method in the worker, completes the trial and changes nothing else. So the worker is then trained, a trained reviewer needs no further check, and training is kept along every course without revision that returns to the context. The three rounds of the complete history are instances; the step definitions are the machine’s own, and the enrollments and handoff between the rounds are checked on that history. Within the declared two-method task, actual attempts and responses form a revised procedure. A successful retry produces the review relation consumed by the existing admission process; admitted participation enables later response and formation of further participation after the initial reviewer leaves."
   },
   "hypotheses": [
     {
@@ -36,7 +36,8 @@
     "Becoming.MachineInstances.methods_inherited",
     "Becoming.MachineInstances.practice_rule_kept",
     "Becoming.MachineInstances.practice_rule_inherited",
-    "Becoming.MachineInstances.complete_history_instance"
+    "Becoming.MachineInstances.complete_history_instance",
+    "Becoming.MachineInstances.round_iff"
   ],
   "dependencies": [
     {
@@ -100,7 +101,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
       "declarations": [
         "Becoming.MachineInstances.revises",
         "Becoming.MachineInstances.adoptsRule",
@@ -111,7 +112,13 @@
         "Becoming.MachineInstances.methods_inherited",
         "Becoming.MachineInstances.practice_rule_kept",
         "Becoming.MachineInstances.practice_rule_inherited",
-        "Becoming.MachineInstances.complete_history_instance"
+        "Becoming.MachineInstances.complete_history_instance",
+        "Becoming.MachineInstances.afterRound",
+        "Becoming.MachineInstances.round_iff",
+        "Becoming.MachineInstances.round_trains",
+        "Becoming.MachineInstances.trained_round_iff",
+        "Becoming.MachineInstances.trained_along",
+        "Becoming.MachineInstances.complete_history_rounds"
       ]
     },
     {
@@ -141,7 +148,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
       "role": "integration",
-      "sha256": "3e7c900d1936b52596524331745e5b236f46ee5f63974acb112e7cc3bf5a6a95",
+      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
       "declarations": []
     },
     {
@@ -187,6 +194,10 @@
     {
       "zh": "2026-10-14，一般规律计划第三批（研究第114–115节）：审读以下改动后重新绑定：BECOMING-RENEWAL-READING.md（末尾新增两节（生存核、计数与持续的一般律；复制与回溯读出的一般律）及其英文段，并为第113–115节加注落地日期与回执；此前各节不变）。",
       "en": "14 October 2026, batch 3 of the general-laws plan (study sections 114–115): reconciled after reading the changes to BECOMING-RENEWAL-READING.md (two sections appended, on the general laws of viability, countdown and lasting and on those of copying and retrodiction, with their English paragraphs, and dated landing notes for sections 113–115; earlier sections unchanged)."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第117节）：主张加入一轮实践的律：外围 MachineInstances 的 round_iff 对每个状态成立，round_trains、trained_round_iff 与 trained_along 随之；完整历史的三轮是实例（complete_history_rounds）。步定义仍是该机器的，其间的接纳与交接仍在该历史上检查。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 MachineInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
+      "en": "14 October 2026, open-issues plan (study section 117): the claim now adds the law of a practice round: round_iff in the periphery MachineInstances holds for every state, with round_trains, trained_round_iff and trained_along; the three rounds of the complete history are instances (complete_history_rounds). The step definitions stay the machine’s, and the enrollments and handoff between the rounds are still checked on that history. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
     }
   ]
 }

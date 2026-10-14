@@ -7593,6 +7593,104 @@ theorem lineage_used_iff (law : StructuralCopying.Law) (p : Strand)
 
 **边界。** 落地运行须：在 `check_becoming.py` 中编译与审计 `Becoming.Lasting` 与 `Becoming.Copying`（及根模块的注释改动）；然后运行 `check_market_instances.py` 与 `check_copying_instances.py`；再把六项记录中这四个源文件的证明引用绑定到新回执：这些源文件改动后，六项记录中绑定第三批回执的旧绑定已移去（回执引用保留），有效范围的说明改回“一般律仅经scratch实编”；market-protected-continuation 与 formed-copying-correction 保留旧绑定，落地时更新其哈希并改绑新回执，它们所引的声明未变。原市场与复制机模块的字节未改。新名称用结构词（`Reaches`、`Funnel`、`Basin`、`Variant`、`hitTime`、`AllReleased`、`PathShaped`）；旧机器的名称不变。
 
+## 117. 旧记录的一般律：跨情境读出与机器的每段历史
+
+2026-10-14。开放问题计划中的两项（Ren：“please, do all”，经整合会话转达）：三项一段历史的绑定记录，其历史到解释输入的联结原是对一段历史（如 `coordinated 37`）的 `decide`；四项机器记录只部分一般。目标形式同 §113：每条律对其种类的每个世界、历史或条件陈述为“Y 当且仅当 Z”，Z 是局部条件；能在核心陈述而不用库事实的部分放在核心，机器的实例在外围；内容确是协议自身定义之处，说明一般律是什么、实例添了什么，不把未经定理的东西改称一般。逐行见[旧记录审计表](development/becoming-general-laws-plan/general-law-audit/older-records.md)。
+
+```text
+Result(s): 改写 enacted-scene-binding、encounter-selection-and-revision、retrospective-source-binding、
+           acquired-revision-of-pending-task、pending-task-context-applicability、
+           joint-practice-forms-continuation、formed-goal-revision-continuation；不新增记录，状态不变
+Delta: 核心新模块 Becoming.CrossSituational（37 项定理／43 项声明）；外围 MachineInstances 增至 96／114
+       （原 44／49），VersionedTaskInstances 增至 22／30（原 11／17，Lean 4.30.0-rc2 与 Mathlib）
+Supplied premises / correspondence: 无新前提；各实例保留原模块的前提与对应
+Evidence: scratch_build 实编：核心每条声明公理报告为空，环境审计中该模块没有带公理的生成常量；
+          外围只用标准公理；不是检查记录
+Boundary: 场景与来源的模型、选择下一次访问的规则、两条作用规律与机器的步定义仍是各构造自身的内容，见作者反审
+Integration: §9 模块表；Becoming.lean 与 check_becoming.py 的模块列表；七项记录；旧记录审计表
+```
+
+**跨情境读出（Becoming.CrossSituational）。** 学习者在多个场合遇到一个形式，每个场合的记录提供当时可及的意义。哪些记录关涉一个形式、每条记录提供什么，由两个布尔关系读出（`bears`、`offers`）。意义在每条关涉的记录都提供它处成立（`stands`）；形式的候选是候选范围中成立的意义（`candidates`），恰有一个时形式被解析（`unique`）。这是 inquiry-root 各取得绑定机器的规则，这里对每类记录与意义、每种关涉与提供的读法陈述。
+
+```lean
+theorem candidates_eq_iff [DecidableEq M] {rep : List M} (distinct : Distinct rep)
+    {rs : List R} {e : M} :
+    candidates bears offers rep rs = [e] ↔
+      e ∈ rep ∧ (∀ r, r ∈ rs → bears r = true → offers r e = true) ∧
+        ∀ m, m ∈ rep → m ≠ e → ∃ r, r ∈ rs ∧ bears r = true ∧ offers r m = false
+```
+
+解析即分离：两个条件都是局部的，覆盖每条记录一个，排除每个对手一条记录（`resolves_iff` 对 `unique` 陈述同一条件）。候选范围有重复时律不成立（`Repeated`）。后来的记录只缩小候选：再有一段记录之后的候选，是先前候选中在这段记录上成立者（`candidates_append`）；关涉的记录恰留下它提供的候选，不关涉的记录什么也不改（`candidates_snoc_bearing`、`candidates_snoc_other`）；被排除的意义一直被排除（`narrows`），候选恰在此后每条关涉记录都提供它时仍是候选（`stays_iff`）。覆盖使唯一的解析成为目标：目标在候选范围中、每条关涉记录都提供它时，任何唯一候选即目标（`resolved_is_target`，旧 `unique_resolution_is_correct_under_coverage` 的一般形式）；一条遗漏目标的记录可以留下错误的唯一候选（`Omitted`）。经一族解释读记录：记录提供一个意义，恰当族中某个以该意义为目标的世界解释它；每条关涉记录都被某个以 `t` 为目标的族内世界解释时，
+
+```lean
+theorem resolves_explained_iff [DecidableEq M] {W : Type w} (family : W → Prop) (target : W → M)
+    (explains : R → W → Prop)
+    (offered : ∀ r m, offers r m = true ↔ ∃ w, family w ∧ target w = m ∧ explains r w)
+    {rep : List M} (distinct : Distinct rep) {rs : List R} {t : M} (available : t ∈ rep)
+    (actual : ∀ r, r ∈ rs → bears r = true → ∃ w, family w ∧ target w = t ∧ explains r w) :
+    candidates bears offers rep rs = [t] ↔
+      ∀ m, m ∈ rep → m ≠ t → ∃ r, r ∈ rs ∧ bears r = true ∧
+        ∀ w, family w → target w = m → ¬ explains r w
+```
+
+词被分组恢复处（`Becoming.Segmentation`），以解析读每个编码序列都得其各词的意义，恰当每个词的记录分离其意义（`reads_every_iff`）。
+
+**外围实例（MachineInstances，标准公理）。**
+- **取得词库的绑定。** 取得词库的候选即其被接纳记录的核心候选（`candidates_eq`）。所以对每个候选范围不重复的词库，`b` 之词解析为其原子，恰当其被接纳的记录分离该原子（`Separated`，`resolve_iff`）；转移记录对二词编码成组时，每个编码序列都读对，恰当每个词都被分离（`interprets_every_iff_separated`）。
+- **场景的每段历史。** 场景的一步是去某处或命名某处（`SceneMove`）。每一步保持转移记录、候选范围与排除记录，并恰添上所闻的记录：在有支持时命名一个原子所在处，记下其词，提供学习者所在处可及者（`heard`；`step_records`、`enact_records`）。所以从每个转移记录对二词编码成组、候选范围不重复的处境出发，经每段移动与命名的历史：
+
+```lean
+theorem scene_interprets_every_iff (s : Situation) (groups : Groups s.lexicon.percept.log)
+    (distinct : CrossSituational.Distinct s.lexicon.repertoire) (h : List SceneMove) :
+    (∀ ws, interpret (enact s h).lexicon (encode ws) = assembleMessage (ws.map Expr.atom)) ↔
+      ∀ b, Separated s.lexicon.repertoire s.lexicon.excluded
+        (s.lexicon.records ++ heardAlong s h) b
+```
+
+  `coordinated 37` 是实例（`coordinated_from_history`）：它的四次命名各提供所在处可及者：每个原子在其名被闻时都可及，其他每个意义都在其中某次不可及。失败一侧：在一处把两处各命名两次（`stationary 37`）缺分离（`stationary_fails`），从原子不可及处命名（`mistimed 37`）缺覆盖（`mistimed_fails`）。旧的输入等式仍是该历史的 `decide`，现在只计算这一实例的记录，联结由律给出。
+- **合作命名。** 转移记录成组、命名来源被接纳、支持够每个可及意义命名一次时，命名每个可及原子（每条记录提供可及者）之后，可及原子之词的候选恰是其先前候选中可及者，其他词的候选不变（`naming_narrows`）；一次访问的局部命名即此律（`local_naming_narrows`）。`acquired 51` 是分离律的实例（`acquired_from_separation`）。选择下一次访问的规则仍是该机器的。
+- **保留记录的回溯绑定。** 保留包的记录恰提供以下世界的原子：已学路线、被允许的扰动、产生其报告（`mem_alternatives`）。对每个记忆、扰动范围、形式与目标，若该形式的每个包都由某个以目标为目标的已学世界产生：
+
+```lean
+theorem retrospective_resolves_iff (s : Memory) (faults : List SourceReliance.Faults)
+    (distinct : CrossSituational.Distinct s.base.repertoire) (form : List Sound) (b : Bool)
+    (available : Expr.atom b ∈ s.base.repertoire)
+    (produced : ∀ p, p ∈ s.packets → p.form = form → ∃ w : SourceReliance.World,
+      (w.route ∈ routes s ∧ w.faults ∈ faults) ∧ w.target = b ∧ SourceReliance.view w = p.reports) :
+    resolve (bindingView s faults) form = some (Expr.atom b) ↔
+      ∀ m, m ∈ s.base.repertoire → m ≠ Expr.atom b → ∃ p, p ∈ s.packets ∧ p.form = form ∧
+        ∀ w : SourceReliance.World, w.route ∈ routes s ∧ w.faults ∈ faults →
+          Expr.atom w.target = m → SourceReliance.view w ≠ p.reports
+```
+
+  旧覆盖前提（实际路线的校准，每个包由它在被允许扰动下产生）给出产生前提（`produced_of_calibration`），旧覆盖定理由 `resolved_is_target` 重得（`coverage_from_law`）。`retrospective 36` 是实例（`retrospective_from_separation`）。失败一侧：真实路线改变之后，较早的 `true` 之词的包不由任何以 `true` 为目标的已学世界产生（`changed_route_unproduced`），覆盖不成立。
+- **修订的根据。** 对构造的每个条件，比较认可学习优于参与，恰当访问有损而转变维护保留（`better_iff`）；取得、修订与改革恰在此处完成（`completed_iff_better`）。
+- **一轮实践。** 从每个状态，审查者 `r` 与工作者 `w` 的一轮（尝试、回应、修订、经检验的重试）完成，恰当 `w` 在场、`r` 是在场的在册者且不是 `w`、`r` 所记的做法应答当前处境；完成后记下审查、把处境的做法装入工作者、完成试验，别无改变（`round_iff`）。所以工作者此后已受训（`round_trains`），受训的审查者无需再检（`trained_round_iff`），受训沿每段不含修订、回到原处境的进程保持（`trained_along`）。完整历史的三轮是实例（`complete_history_rounds`）；其间的接纳与交接是组织自身的步。
+
+**外围实例（VersionedTaskInstances，Lean 4.30.0-rc2 与 Mathlib）。**
+- **对每个条件的在途修订。** 对每个条件与每个在既有队列不变量下有效、有队首待完成的装置，取得、修订、改革、改写队首与交付恰在访问有损而转变维护保留时运行——即 `better_iff` 的条件；端点随后执行学习实践，保留先前一次损失、不再增加，终于三条记录与工作、储备、已用单位 (2, 6, 10)（`continuation_eq`、`continuation_isSome_iff`）。旧 `acquired_revision_changes_pending_action` 是 `harmful` 处的实例（`harmful_continuation_instance`）。
+- **经审查的损失。** 每种实践的相关风险即其作用规律的损失条件（`relevant_risk_eq`），所执行的实践恰在其相关风险成立处添一次损失（`enact_losses`）。所以对每个条件、报告与待完成端点：
+
+```lean
+theorem review_losses (c : GoalFormationRevision.Conditions) (report : Option Bool)
+    (l : GoalFormationRevision.State) (v : Bool) (reports : List (Option Bool)) :
+    (PendingTaskApplicability.reviewAndAct c report ⟨l, v, true, reports⟩).learning.losses =
+      l.losses + (if report = some false ∧ 3 ≤ l.account.work ∧
+        PendingTaskApplicability.relevantRisk c v = true then 1 else 0)
+```
+
+  即审查添一次损失，恰当报告排除相关风险、工作覆盖审查与行动的进程（`Stock.Covered`）、而相关风险实际成立（`review_adds_loss_iff`）；覆盖作用时刻的报告从不如此，`covered_review_adds_no_practice_loss` 对待完成端点由此得出（`covered_review_instance`）。把审查读作端点上的过程（`reviews`），报告未排除相关风险的每次审查都保持损失计数（`losses_kept`，`Gated.KeptBy` 的实例），由这样的审查组成的每段进程亦然（`losses_kept_along`）。
+
+**作者反审。**
+1. **新律还是重述？** `candidates_eq_iff`、`candidates_append`、`stays_iff`、`resolves_explained_iff` 是新的；`resolved_is_target` 把旧的覆盖定理推广到每类记录与意义；`reads_every_iff` 是 `Segmentation.reads_every_iff` 与 `resolves_iff` 的组合。外围的 `scene_interprets_every_iff`、`naming_narrows`、`retrospective_resolves_iff`、`continuation_eq`、`review_losses`、`round_iff`、`better_iff` 是对每段历史、每个状态或每个条件的新等价；`coverage_from_law`、`covered_review_instance`、`harmful_continuation_instance` 与 `complete_history_rounds` 是旧定理作为实例重得。
+2. **条件是否局部？** 分离：覆盖每条记录一个，排除每个对手一条记录；回溯读出的排除是每个对手一个包；一轮的条件是在场、在册、不同人与一次做法比较；损失的条件是一个报告、一个工作数与一个相关风险。
+3. **哪些仍是构造自身的内容？** 场景的位置、范围与可及者（`visible`），来源的路线、扰动与产生（SourceReliance），选择下一次访问的规则，两条作用规律（何者对何种实践算作损失，故何种风险相关），目的编码与工作单位，实践机器的步定义：律对它们的每段历史、每个状态或每个条件陈述，它们本身由构造给出。`better_iff` 对构造的八个条件成立，比较的定义（`protects`、`gains`）属构造。`acquired 51` 的选择史没有作为“每段被选择的访问史”陈述：律是一次访问的（`naming_narrows`）与终了记录的分离（`acquired_from_separation`）。
+4. **未作为实例陈述的。** `cycles_iff` 未写成 `Stock` 的实例：工作与储备两个相耦合的存量，补充随状态而变，现有的存量律不直接适用。`Becoming.Revision` 与 `ContinuingRevision` 读的是修订改变登记与燃料的方式，这里的修订改写一个待完成指令或一个做法记录，未找到使其成为实例的读法，未作陈述。
+5. **公理。** 核心模块每条声明公理报告为空，环境审计中没有带公理的生成常量；外围声明经机器定义依赖 `propext`、`Quot.sound` 与 `Classical.choice`，版本化任务的模块用 Mathlib。
+6. **范围。** 只证明所陈述的律；场景、命名、来源记忆、在途任务与实践机器与实际儿童、场景、设备或组织的对应不由此检查。
+
+**边界。** 落地运行须在 `check_becoming.py` 中编译与审计 `Becoming.CrossSituational`（环境审计、对照与只用前导的编译只在检查器中运行），然后运行 `check_machine_instances.py` 与 `check_versioned_task_instances.py`，再把七项记录对 MachineInstances 与 VersionedTaskInstances 的证明绑定从先前的运行（20261013T222154.117109Z、20261014T041722.004469Z）改指新运行，并为新的核心引用加绑定。引用这两个外围文件的其他记录（acquired-binding-compositional-use、joint-correlation-reduced-dynamics、transition-grouping-word-partition、versioned-request-completion）只遇到追加的声明，其哈希在落地时随之更新。各原机器模块的字节未改。新声明的名称与说明用结构词（工作、储备、已用、覆盖、排除、相关风险），旧机器的名称不变。
+
 ## 118. 相同之下补全：经等价承载规律与分支检验（Becoming.Likeness）
 
 2026-10-14。按 Ren 的“move towards 100%”（[来源](../../../../sources/15-codex-theory-conversations/2026-10-12-move-towards-100.md)），工作板上“Current math core”的 likeness 一行，由整合会话批准，在开放问题计划之外。本节回答三项记录的下一步：determinacy-up-to-likeness 要求的 `carries_law_iff` 在相同之下的精确形式，以及像、`not_fixes_other_of_new`、实验之律经投影的读法（`not_fixesThrough_*`）与 `determined_dichotomy` 的相同之下形式；tests-fix-likeness-where-determined 要求的核心中分支检验固定相同的构造性证明，或它需要的逻辑原则；configurations-alike-by-relation 的 next_delta 列着这两项。
@@ -8969,6 +9067,13 @@ New names are structural (the law of draws `draw` and `pairDraw`, `use`, `used`,
 
 Scratch builds only (core with empty axiom reports; the peripheries with standard axioms); the landing run checks the two core modules, then the two peripheries, and binds the six records' references to the new receipts, whose old batch-3 bindings for the four changed sources were removed; market-protected-continuation and formed-copying-correction keep their old bindings, and the landing updates their hashes and rebinds them (the declarations they cite are unchanged). Not yet independently reviewed.
 
+**General laws for the older records: cross-situational reading and every history of the machines (14 October 2026).** Under Ren's approval of the open-issues plan (“please, do all”, relayed by the integrating session), section 117 states the laws for three one-history binding records, whose link from the history to its interpretation inputs was a `decide` on one history, and for four machine records that were only partly general.
+- **Cross-situational resolution** (`Becoming.CrossSituational`, 37 theorems). For every type of records and meanings and every reading of bearing and offering, a form resolves to a meaning of a repertoire without repeats exactly when every bearing record offers it and every other meaning is missing from some bearing record (`candidates_eq_iff`, `resolves_iff`); without distinct meanings the law fails (`Repeated`). Later records only narrow (`candidates_append`, `narrows`, `stays_iff`). Where every bearing record offers the target, any unique candidate is the target (`resolved_is_target`), and one record omitting it can leave a wrong one (`Omitted`). Records read through a family of explanations resolve to the target exactly when every rival is ruled out by a bearing record no family world with the rival explains (`resolves_explained_iff`); where words are recovered, every sequence is read right exactly when each word's records separate its meaning (`reads_every_iff`).
+- **Machines** (periphery `MachineInstances`, 96 theorems, was 44). An acquired word resolves to its atom exactly when its admitted records separate it (`resolve_iff`). After every history of moves and namings, from every situation whose record groups the encoding, every sequence is read exactly when the earlier records and those heard, each offering what was accessible where the learner stood, separate every atom (`scene_interprets_every_iff`); `coordinated 37` is an instance, and the stationary and mistimed histories fail separation and coverage. Cooperative naming narrows exactly the words whose atoms are accessible (`naming_narrows`), and `acquired 51` is an instance of the separation law. Retained packets reread through learned routes resolve to the target exactly when every rival is ruled out by a packet no learned world with the rival produces (`retrospective_resolves_iff`); the coverage theorem follows, `retrospective 36` is an instance, and after a real route change the target is not produced. Learning is better than attendance exactly under access loss with kept transition maintenance, and revision completes exactly there (`better_iff`, `completed_iff_better`). From every state a practice round completes exactly when the worker is present and the reviewer is a present roster member other than the worker whose method answers as the context does, and then only records the review, trains the worker and completes the trial (`round_iff`); the three rounds of the complete history are instances.
+- **Versioned tasks** (periphery `VersionedTaskInstances`, 22 theorems, was 11). For every condition and every valid installation with a pending head, acquired revision reaches the pending task exactly under access loss with kept transition maintenance and ends in the learning practice with the one earlier loss (`continuation_eq`); the harmful headline is the instance. For every condition, report and pending endpoint, a review adds a loss exactly when the report clears the relevant risk, the work covers the review-and-action course and the risk, its outcome law's loss condition, holds (`review_losses`, `review_adds_loss_iff`); uncleared reviews keep the loss count (`losses_kept`, an instance of `Gated.KeptBy`).
+
+What stays each construction's own content is said as such: the scene's accessibility, the source model, the rule choosing the next visit, the two outcome laws (and so which risk is relevant), the goal encoding, the work units and the practice machine's steps. `cycles_iff` is not stated as a `Stock` instance (two coupled stocks with state-dependent replenishment), and no reading made the revisions instances of `Becoming.Revision` or `ContinuingRevision`. New names are structural; the old machines keep theirs. Scratch builds only (core with empty axiom reports and no generated constant with an axiom; the peripheries with standard axioms); the landing run checks them and repoints the seven records' instance bindings from the earlier runs. Not yet independently reviewed.
+
 **Likeness completed: carrying a law through an equivalence, and branching tests (14 October 2026).** Under Ren's "move towards 100%", the likeness row of Current math core on the work board (approved by the integrator, outside the open-issues plan), section 118 answers the next steps of determinacy-up-to-likeness, tests-fix-likeness-where-determined and configurations-alike-by-relation, in `Becoming.Likeness` (61 theorems).
 - **Carrying a law up to likeness.** Some process on the descriptions, determined up to likeness under the claims, admits every step read through `π` exactly when some equivalence on the descriptions relates only descriptions realizing the same claims and takes configurations whose descriptions it relates, by one move, to configurations whose descriptions it relates (`carries_law_alike_iff`). The carrier is the image closed under the equivalence. Where each description is its own claim the only such equivalence is equality, which is `carries_law_iff` (`carries_law_named_iff`).
 - **The image.** It is determined up to likeness exactly where configurations whose descriptions are alike in it go alike under it (`image_determinedAt_iff`), but it is no longer the least carrier: in `Parting` the identity carries a law up to likeness while its image is not determined up to likeness at the start.
@@ -8976,7 +9081,8 @@ Scratch builds only (core with empty axiom reports; the peripheries with standar
 - **Branching tests fix likeness, constructively.** Alike configurations pass the same branching tests, with no premise. Where the moves and claims are listed and both frames are finite with decided steps and claims (`FiniteDecided`), configurations are alike exactly where they pass the same branching tests (`alike_iff_sameBranchingTests`). Likeness to depth k is decided, a separating test is built where it fails, and likeness to depth stops refining at a depth no greater than the number of pairs of configurations (`AlikeTo.steady_within`), where it is a bisimulation. So likeness of finite decided frames is decided (`Alike.decided`). Deciding it for every pair of one-configuration frames is excluded middle (`alike_decided_iff_em`). This answers the question `Becoming.Histories` left open; the periphery's `same_iff_bisimilar` reasons classically.
 - **When a choice is made.** The test that the first move can lead to a configuration where both `b` and `c` can be taken holds for `Choosing.late` and fails for `Choosing.early` (`Choosing.branching_apart`).
 
-The proof gives a stopping depth without a bound. A version bounding it by the number of pairs of configurations was built clean in scratch and kept out of this landing. Whether the equivalence needs the decisions is open, and the bridge from `BranchingTest` to the periphery's `Test` is not written. Two records were migrated to schema 2 with mapping tables. Scratch builds only, with empty axiom reports; the landing run binds the receipt. Not yet independently reviewed.
+Whether the equivalence needs the decisions is open, and the bridge from `BranchingTest` to the periphery's `Test` is not written. Two records were migrated to schema 2 with mapping tables. Scratch builds only, with empty axiom reports; the landing run binds the receipt. Not yet independently reviewed.
+
 **What a learner can learn through its registration (14 October 2026).** Section 119 takes up the item that section 92's counterreview (item 8) and learning-by-refutation left open: learning where registration does not tell values apart. The new core module `Becoming.Learnable` (17 theorems, 23 declarations; it imports Identification and Seeking and changes no existing module) states, for every determined law and every registration, with no premise:
 - **Alike to the registration, learned alike.** Two configurations with the same registered future give every learner the same record at every step (`records_same`). So at a step where their targets differ a claim is right on at most one, with no decision (`claim_not_right_on_both`), and with the target's values decided it is refuted on one while the records stay equal everywhere (`refuted_on_one`). A learner resting on both has targets agreeing from some step on (`agree_of_rests_both`); where they differ at arbitrarily late steps none rests on both (`not_rests_on_both`), already for two configurations the law leaves unchanged (`still_not_rests_on_both`).
 - **Read off the registration.** A target read off what registers (`val s = g (reg s)`) is learned by the learner over the lasso hypotheses on the registered values, given neither the configurations, nor how many there are, nor any value of the target, from the identification bound on (`rests_through`, P83's `held_learner_rests` read through `g`).

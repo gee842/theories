@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Check the peripheral instances of the Becoming core's laws in constructed machines.
 
-`MachineInstances` imports the pure bridge `Becoming.Instances` and four peripheral
-machine modules (`EncounterChoice`, `RetrospectiveBinding`, `GoalFormationRevision`,
+`MachineInstances` imports the pure bridge `Becoming.Instances`, the core's
+`Becoming.CrossSituational` and four peripheral machine modules (`EncounterChoice`, `RetrospectiveBinding`, `GoalFormationRevision`,
 `JointPracticeContinuation`). Their definitions use standard axioms through library
 instances, so these instances are stated here rather than in the pure bridge, and their
 declarations may depend on `propext`, `Quot.sound` and `Classical.choice` only. The
@@ -53,6 +53,20 @@ SCOPE = (
     "exactly when n <= 5 (n <= 2 without reform) and the earlier loss is retained; the harmful headline "
     "is an instance. Gated change: the practice machine's traces are its completed runs, only "
     "revision changes the recorded methods and only an organizational adoption changes the rule. "
+    "Cross-situational binding: for every lexicon whose repertoire has no repeats, a word resolves to "
+    "its atom exactly when its admitted records separate the atom (CrossSituational.resolves_iff); "
+    "after every history of an enacted scene every sequence is read exactly when the earlier records "
+    "and those heard, each offering what was accessible where the learner stood, separate every atom "
+    "(coordinated 37 is an instance; stationary 37 fails separation, mistimed 37 coverage); cooperative "
+    "naming narrows exactly the words whose atoms are accessible; for every memory whose packets of a "
+    "form are produced by learned worlds with the target, the binding view resolves the form to the "
+    "target exactly when every other meaning is ruled out by a packet no learned world with it "
+    "produces (retrospective 36 is an instance, and after a real route change the target is not "
+    "produced). Learning is better than attendance exactly under access loss with kept maintenance, "
+    "and revision completes exactly there. A practice round completes exactly when the worker is "
+    "present and the reviewer is a present roster member other than the worker whose method answers "
+    "as the context does, and then only records the review, trains the worker and completes the "
+    "trial; the three rounds of the complete history are instances. "
     "Correspondence of these machines to actual learners, quantum systems, people or organizations "
     "is not checked."
 )

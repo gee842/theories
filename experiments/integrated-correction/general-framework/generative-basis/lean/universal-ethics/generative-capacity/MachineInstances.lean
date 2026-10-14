@@ -1,4 +1,5 @@
 import Becoming.Instances
+import Becoming.CrossSituational
 import EncounterChoice
 import RetrospectiveBinding
 import GoalFormationRevision
@@ -32,6 +33,40 @@ here rather than in the pure bridge `Becoming.Instances`. The core does not impo
   (`practice_trace_iff_run`); only revision changes the recorded methods (`methods_kept`) and
   only an organizational adoption changes the rule (`practice_rule_kept`), so courses without
   them keep both (`methods_inherited`, `practice_rule_inherited`).
+* **Cross-situational binding.** An acquired lexicon's candidates are the core's
+  `CrossSituational.candidates` of its admitted records (`candidates_eq`), so, for every lexicon
+  whose repertoire has no repeats, the word of `b` resolves to its atom exactly when its admitted
+  records separate the atom (`Separated`, `resolve_iff`), and every encoded sequence is read
+  exactly when every word is separated (`interprets_every_iff_separated`).
+* **Every history of an enacted scene.** Every move keeps the transition record, repertoire and
+  exclusions and adds exactly the records heard (`step_records`, `enact_records`), so after every
+  history of moves and namings every sequence is read exactly when the earlier records and those
+  heard, each offering what was accessible where the learner stood, separate every atom
+  (`scene_interprets_every_iff`). `coordinated 37` is an instance (`coordinated_from_history`);
+  `stationary 37` fails separation and `mistimed 37` coverage (`stationary_fails`,
+  `mistimed_fails`).
+* **Cooperative naming.** With support for one naming per accessible meaning, naming every
+  accessible atom narrows the candidates of exactly the words whose atoms are accessible to those
+  accessible (`naming_narrows`, `local_naming_narrows`); `acquired 51` is an instance of the
+  separation law (`acquired_from_separation`).
+* **Retrospective binding.** For every memory, fault envelope, form and target whose packets of
+  the form are all produced by a learned world with that target, the binding view resolves the
+  form to the target exactly when every other meaning is ruled out by a packet that no learned
+  world with that meaning produces (`retrospective_resolves_iff`, from
+  `CrossSituational.resolves_explained_iff`). The coverage theorem follows (`coverage_from_law`),
+  `retrospective 36` is an instance (`retrospective_from_separation`), and after a real route
+  change the earlier packet is produced by no learned world with its target
+  (`changed_route_unproduced`).
+* **Where revision is warranted.** Learning is better than attendance exactly under access loss
+  with kept transition maintenance (`better_iff`), and acquisition, revision and reform complete
+  exactly there (`completed_iff_better`).
+* **A practice round.** From every state, a round of reviewer `r` and worker `w` completes exactly
+  when `w` is present and `r` is a present roster member other than `w` whose recorded method
+  answers as the context does, and then changes only the review record, the worker's method and
+  the completed trials (`round_iff`); the worker is then trained (`round_trains`), a trained
+  reviewer needs no further check (`trained_round_iff`), training is kept along every course
+  without revision that returns to the context (`trained_along`), and the three rounds of the
+  complete history are instances (`complete_history_rounds`).
 -/
 
 namespace Becoming.MachineInstances
@@ -581,5 +616,705 @@ theorem complete_history_instance :
   practice_trace_iff_run.mpr (by decide)
 
 end Practice
+
+/-! ## Cross-situational binding -/
+
+section Binding
+
+open Generative.CompositionalAcquisition Generative.AcquiredSegmentation Generative.AcquiredBinding
+
+/-- A record bears on a form where its source is admitted and its form is that form. -/
+def bearsOn (excluded : List Nat) (form : List Sound) (r : Encounter) : Bool :=
+  decide (r.origin ∉ excluded ∧ r.form = form)
+
+/-- A record offers the meanings accessible on its occasion. -/
+def offersOf (r : Encounter) (e : Expr) : Bool := decide (e ∈ r.offered)
+
+theorem compatible_eq (s : Lexicon) (form : List Sound) (e : Expr) :
+    compatible s form e =
+      CrossSituational.stands (bearsOn s.excluded form) offersOf s.records e := by
+  unfold compatible CrossSituational.stands
+  congr 1
+  funext r
+  by_cases h1 : r.origin ∈ s.excluded <;> by_cases h2 : r.form = form <;>
+    by_cases h3 : e ∈ r.offered <;> simp [bearsOn, offersOf, h1, h2, h3]
+
+theorem candidates_eq (s : Lexicon) (form : List Sound) :
+    AcquiredBinding.candidates s form =
+      CrossSituational.candidates (bearsOn s.excluded form) offersOf s.repertoire s.records := by
+  unfold AcquiredBinding.candidates CrossSituational.candidates
+  congr 1
+  funext e
+  exact compatible_eq s form e
+
+theorem resolve_eq (s : Lexicon) (form : List Sound) :
+    resolve s form = CrossSituational.unique (AcquiredBinding.candidates s form) := by
+  unfold resolve
+  cases h : AcquiredBinding.candidates s form with
+  | nil => rfl
+  | cons x xs => cases xs <;> rfl
+
+/-- The records separate the atom of `b` for its word: the atom is in the repertoire, every
+admitted record of the word offers it, and every other meaning of the repertoire is missing from
+some admitted record of the word. -/
+def Separated (rep : List Expr) (excluded : List Nat) (records : List Encounter) (b : Bool) : Prop :=
+  Expr.atom b ∈ rep ∧
+    (∀ r, r ∈ records → r.origin ∉ excluded → r.form = word b → Expr.atom b ∈ r.offered) ∧
+    ∀ m, m ∈ rep → m ≠ Expr.atom b →
+      ∃ r, r ∈ records ∧ r.origin ∉ excluded ∧ r.form = word b ∧ m ∉ r.offered
+
+/-- **Cross-situational binding of an acquired lexicon.** For every lexicon whose repertoire has
+no repeats, the word of `b` resolves to its atom exactly when its admitted records separate the
+atom. -/
+theorem resolve_iff (s : Lexicon) (distinct : CrossSituational.Distinct s.repertoire) (b : Bool) :
+    resolve s (word b) = some (Expr.atom b) ↔ Separated s.repertoire s.excluded s.records b := by
+  rw [resolve_eq, candidates_eq, CrossSituational.resolves_iff distinct]
+  constructor
+  · rintro ⟨mem, cover, separate⟩
+    refine ⟨mem, fun r rm ad fm => ?_, fun m mm ne => ?_⟩
+    · have offered := cover r rm (by simp [bearsOn, ad, fm])
+      simpa [offersOf] using offered
+    · obtain ⟨r, rm, br, om⟩ := separate m mm ne
+      simp only [bearsOn, decide_eq_true_eq] at br
+      exact ⟨r, rm, br.1, br.2, by simpa [offersOf] using om⟩
+  · rintro ⟨mem, cover, separate⟩
+    refine ⟨mem, fun r rm br => ?_, fun m mm ne => ?_⟩
+    · simp only [bearsOn, decide_eq_true_eq] at br
+      simpa [offersOf] using cover r rm br.1 br.2
+    · obtain ⟨r, rm, ad, fm, om⟩ := separate m mm ne
+      exact ⟨r, rm, by simp [bearsOn, ad, fm], by simp [offersOf, om]⟩
+
+/-- **Reading acquired words, exactly.** For every lexicon whose record groups the two-word
+encoding and whose repertoire has no repeats, every encoded sequence is interpreted as the
+assembly of its atoms exactly when, for each word, its admitted records separate its atom. -/
+theorem interprets_every_iff_separated (s : Lexicon) (groups : Groups s.percept.log)
+    (distinct : CrossSituational.Distinct s.repertoire) :
+    (∀ ws, interpret s (encode ws) = assembleMessage (ws.map Expr.atom)) ↔
+      ∀ b, Separated s.repertoire s.excluded s.records b :=
+  (interprets_every_iff s groups).trans
+    ⟨fun each b => (resolve_iff s distinct b).mp (each b),
+     fun each b => (resolve_iff s distinct b).mpr (each b)⟩
+
+end Binding
+
+/-! ## Every history of an enacted scene -/
+
+section Scene
+
+open Generative.CompositionalAcquisition Generative.AcquiredSegmentation Generative.AcquiredBinding
+open Generative.EnactedScene
+
+/-- A move of an enacted scene: going to a place, or naming a site. -/
+inductive SceneMove where
+  | go (p : Place)
+  | name (site : Nat)
+
+/-- One move of the scene. -/
+def sceneStep (s : Situation) : SceneMove → Situation
+  | .go p => move p s
+  | .name i => naming i s
+
+/-- A history of moves. -/
+def enact : Situation → List SceneMove → Situation
+  | s, [] => s
+  | s, a :: as => enact (sceneStep s a) as
+
+/-- The record a move adds: naming the site of an atom, with support, records its word offering
+the alternatives accessible from where the learner stands. -/
+def heard (s : Situation) : SceneMove → List Encounter
+  | .go _ => []
+  | .name i =>
+    match s.sites[i]? with
+    | some (_, .atom b) =>
+      if 1 ≤ s.lexicon.percept.machine.support then [⟨word b, visible s, 0⟩] else []
+    | _ => []
+
+/-- The records heard along a history. -/
+def heardAlong : Situation → List SceneMove → List Encounter
+  | _, [] => []
+  | s, a :: as => heard s a ++ heardAlong (sceneStep s a) as
+
+theorem encounter_inputs (raw : List Sound) (offered : List Expr) (origin : Nat) (s : Lexicon) :
+    (encounter raw offered origin s).percept.log = s.percept.log ∧
+      (encounter raw offered origin s).repertoire = s.repertoire ∧
+      (encounter raw offered origin s).excluded = s.excluded := by
+  unfold encounter
+  split <;> exact ⟨rfl, rfl, rfl⟩
+
+theorem single_word {log : List (Option Sound)} (groups : Groups log) (b : Bool) :
+    chunks (bond log) (word b) = [word b] := by
+  have once := segments_of_groups groups [b]
+  simpa [encode] using once
+
+theorem encounter_records {s : Lexicon} (groups : Groups s.percept.log) (b : Bool)
+    (offered : List Expr) (origin : Nat) :
+    (encounter (word b) offered origin s).records =
+      if 1 ≤ s.percept.machine.support then s.records ++ [⟨word b, offered, origin⟩] else s.records := by
+  unfold encounter
+  by_cases hs : 1 ≤ s.percept.machine.support
+  · simp [hs, single_word groups b]
+  · simp [hs]
+
+/-- **Every move keeps the record of transitions, the repertoire and the exclusions.** -/
+theorem step_inputs (s : Situation) (a : SceneMove) :
+    (sceneStep s a).lexicon.percept.log = s.lexicon.percept.log ∧
+      (sceneStep s a).lexicon.repertoire = s.lexicon.repertoire ∧
+      (sceneStep s a).lexicon.excluded = s.lexicon.excluded := by
+  cases a with
+  | go p =>
+    show (move p s).lexicon.percept.log = _ ∧ (move p s).lexicon.repertoire = _ ∧
+      (move p s).lexicon.excluded = _
+    unfold move
+    dsimp only
+    split <;> exact ⟨rfl, rfl, rfl⟩
+  | name i =>
+    show (naming i s).lexicon.percept.log = _ ∧ (naming i s).lexicon.repertoire = _ ∧
+      (naming i s).lexicon.excluded = _
+    unfold naming
+    cases s.sites[i]? with
+    | none => exact ⟨rfl, rfl, rfl⟩
+    | some item =>
+      dsimp only
+      cases nameForm item.2 with
+      | none => exact ⟨rfl, rfl, rfl⟩
+      | some raw => exact encounter_inputs raw (visible s) 0 s.lexicon
+
+/-- **Naming records what was accessible.** Where the record of transitions groups the two-word
+encoding, every move adds exactly the record `heard`: naming the site of an atom, with support,
+records its word offering the alternatives accessible from where the learner stands. -/
+theorem step_records (s : Situation) (groups : Groups s.lexicon.percept.log) (a : SceneMove) :
+    (sceneStep s a).lexicon.records = s.lexicon.records ++ heard s a := by
+  cases a with
+  | go p =>
+    show (move p s).lexicon.records = s.lexicon.records ++ []
+    rw [moving_preserves_binding_records, List.append_nil]
+  | name i =>
+    show (naming i s).lexicon.records = _
+    unfold naming heard
+    cases h : s.sites[i]? with
+    | none => simp [h]
+    | some item =>
+      obtain ⟨place, e⟩ := item
+      cases e with
+      | atom b =>
+        simp only [nameForm, if_true]
+        rw [encounter_records groups b]
+        by_cases hs : 1 ≤ s.lexicon.percept.machine.support <;> simp [hs, h]
+      | join _ _ => simp [nameForm, h]
+      | twice _ => simp [nameForm, h]
+
+theorem enact_inputs : ∀ (h : List SceneMove) (s : Situation),
+    (enact s h).lexicon.percept.log = s.lexicon.percept.log ∧
+      (enact s h).lexicon.repertoire = s.lexicon.repertoire ∧
+      (enact s h).lexicon.excluded = s.lexicon.excluded
+  | [], _ => ⟨rfl, rfl, rfl⟩
+  | a :: as, s => by
+    obtain ⟨l, r, e⟩ := enact_inputs as (sceneStep s a)
+    obtain ⟨l', r', e'⟩ := step_inputs s a
+    exact ⟨l.trans l', r.trans r', e.trans e'⟩
+
+/-- **Along every history, the records are the earlier ones and those heard.** -/
+theorem enact_records : ∀ (h : List SceneMove) (s : Situation), Groups s.lexicon.percept.log →
+    (enact s h).lexicon.records = s.lexicon.records ++ heardAlong s h
+  | [], _, _ => (List.append_nil _).symm
+  | a :: as, s, groups => by
+    have kept : Groups (sceneStep s a).lexicon.percept.log := (step_inputs s a).1 ▸ groups
+    show (enact (sceneStep s a) as).lexicon.records = _
+    rw [enact_records as (sceneStep s a) kept, step_records s groups a]
+    show s.lexicon.records ++ heard s a ++ heardAlong (sceneStep s a) as =
+      s.lexicon.records ++ (heard s a ++ heardAlong (sceneStep s a) as)
+    rw [List.append_assoc]
+
+/-- **Every history of an enacted scene.** From every situation whose record of transitions
+groups the two-word encoding and whose repertoire has no repeats, after every history of moves
+and namings, every encoded sequence is interpreted as the assembly of its atoms exactly when,
+for each word, the earlier records and the namings heard along the history, each offering the
+alternatives accessible where the learner stood, separate its atom. -/
+theorem scene_interprets_every_iff (s : Situation) (groups : Groups s.lexicon.percept.log)
+    (distinct : CrossSituational.Distinct s.lexicon.repertoire) (h : List SceneMove) :
+    (∀ ws, interpret (enact s h).lexicon (encode ws) = assembleMessage (ws.map Expr.atom)) ↔
+      ∀ b, Separated s.lexicon.repertoire s.lexicon.excluded
+        (s.lexicon.records ++ heardAlong s h) b := by
+  obtain ⟨log, rep, ex⟩ := enact_inputs h s
+  rw [interprets_every_iff_separated _ (log ▸ groups) (rep ▸ distinct), enact_records h s groups,
+    rep, ex]
+
+/-- The coordinated history: name both sites, go to `(0, 1)`, name the first, go to `(2, 2)`,
+name the second. -/
+def coordinatedMoves : List SceneMove :=
+  [.name 0, .name 1, .go (0, 1), .name 0, .go (2, 2), .name 1]
+
+theorem coordinated_enacts (n : Nat) : coordinated n = enact (start n) coordinatedMoves := rfl
+
+theorem start_groups : Groups (start 37).lexicon.percept.log := by unfold Groups; decide
+
+theorem start_distinct (n : Nat) : CrossSituational.Distinct (start n).lexicon.repertoire := by
+  show CrossSituational.Distinct [p0, p1, extra]
+  unfold CrossSituational.Distinct CrossSituational.Distinct CrossSituational.Distinct
+    CrossSituational.Distinct
+  decide
+
+/-- The four namings of the coordinated history and the alternatives accessible at each. -/
+theorem coordinated_heard : heardAlong (start 37) coordinatedMoves =
+    [⟨word false, [p0, p1], 0⟩, ⟨word true, [p0, p1], 0⟩, ⟨word false, [p0, extra], 0⟩,
+      ⟨word true, [p1, extra], 0⟩] := by decide
+
+theorem coordinated_separated (b : Bool) :
+    Separated (start 37).lexicon.repertoire (start 37).lexicon.excluded
+      ((start 37).lexicon.records ++ heardAlong (start 37) coordinatedMoves) b := by
+  rw [coordinated_heard]
+  unfold Separated
+  cases b <;> decide
+
+/-- **`coordinated 37` as an instance of the scene law**: each atom was accessible whenever its
+name was heard, and each other meaning was inaccessible at one of those namings. -/
+theorem coordinated_from_history (ws : List Bool) :
+    interpret (coordinated 37).lexicon (encode ws) = assembleMessage (ws.map Expr.atom) := by
+  rw [coordinated_enacts]
+  exact (scene_interprets_every_iff (start 37) start_groups (start_distinct 37)
+    coordinatedMoves).mpr coordinated_separated ws
+
+/-- The stationary history names both sites twice from one place. -/
+def stationaryMoves : List SceneMove := [.name 0, .name 1, .name 0, .name 1]
+
+theorem stationary_enacts (n : Nat) : stationary n = enact (start n) stationaryMoves := rfl
+
+/-- **The failing side, separation**: from one place the other atom is accessible at every
+naming, so the sequence-wide interpretation fails. -/
+theorem stationary_fails :
+    ¬ ∀ ws, interpret (stationary 37).lexicon (encode ws) = assembleMessage (ws.map Expr.atom) := by
+  rw [stationary_enacts, scene_interprets_every_iff (start 37) start_groups (start_distinct 37)]
+  intro every
+  have unseparated : ¬ Separated (start 37).lexicon.repertoire (start 37).lexicon.excluded
+      ((start 37).lexicon.records ++ heardAlong (start 37) stationaryMoves) false := by
+    unfold Separated
+    decide
+  exact unseparated (every false)
+
+/-- The mistimed history names each site after going where it is not accessible. -/
+def mistimedMoves : List SceneMove :=
+  [.name 0, .name 1, .go (0, 1), .name 1, .go (2, 2), .name 0]
+
+theorem mistimed_enacts (n : Nat) : mistimed n = enact (start n) mistimedMoves := rfl
+
+/-- **The failing side, coverage**: each later naming is heard where its atom is not accessible,
+so its record omits the target. -/
+theorem mistimed_fails :
+    ¬ ∀ ws, interpret (mistimed 37).lexicon (encode ws) = assembleMessage (ws.map Expr.atom) := by
+  rw [mistimed_enacts, scene_interprets_every_iff (start 37) start_groups (start_distinct 37)]
+  intro every
+  have uncovered : ¬ Separated (start 37).lexicon.repertoire (start 37).lexicon.excluded
+      ((start 37).lexicon.records ++ heardAlong (start 37) mistimedMoves) true := by
+    unfold Separated
+    decide
+  exact uncovered (every true)
+
+end Scene
+
+/-! ## Cooperative naming -/
+
+section Encounter
+
+open Generative.CompositionalAcquisition Generative.AcquiredSegmentation Generative.AcquiredBinding
+open Generative.EnactedScene Generative.EncounterChoice
+
+/-- The records cooperative naming adds: one for each accessible atom, offering the accessible
+alternatives. -/
+def namedRecords (offered : List Expr) : List Expr → List Encounter
+  | [] => []
+  | .atom b :: es => ⟨word b, offered, 0⟩ :: namedRecords offered es
+  | .join _ _ :: es => namedRecords offered es
+  | .twice _ :: es => namedRecords offered es
+
+theorem encounter_support (raw : List Sound) (offered : List Expr) (origin : Nat) (s : Lexicon) :
+    (encounter raw offered origin s).percept.machine.support = s.percept.machine.support - 1 := by
+  unfold encounter
+  split
+  · rfl
+  · omega
+
+/-- **Cooperative naming records each accessible atom.** Where the record of transitions groups
+the two-word encoding and the support covers one naming per meaning named, naming the meanings
+`es` while `offered` is accessible appends one record per atom among them, each offering
+`offered`, and keeps the record of transitions, the repertoire and the exclusions. -/
+theorem speak_records (offered : List Expr) : ∀ (es : List Expr) (s : Lexicon),
+    Groups s.percept.log → es.length ≤ s.percept.machine.support →
+      (speak es offered s).records = s.records ++ namedRecords offered es ∧
+        (speak es offered s).percept.log = s.percept.log ∧
+        (speak es offered s).repertoire = s.repertoire ∧
+        (speak es offered s).excluded = s.excluded
+  | [], s, _, _ => ⟨(List.append_nil _).symm, rfl, rfl, rfl⟩
+  | e :: es, s, groups, support => by
+    cases e with
+    | atom b =>
+      have enough : 1 ≤ s.percept.machine.support := by
+        simp only [List.length_cons] at support
+        omega
+      have heard := encounter_records groups b offered 0 (s := s)
+      rw [if_pos enough] at heard
+      obtain ⟨log, rep, ex⟩ := encounter_inputs (word b) offered 0 s
+      have rest : es.length ≤ (encounter (word b) offered 0 s).percept.machine.support := by
+        rw [encounter_support]
+        simp only [List.length_cons] at support
+        omega
+      obtain ⟨r, l, p, x⟩ := speak_records offered es (encounter (word b) offered 0 s)
+        (log ▸ groups) rest
+      show (speak es offered (encounter (word b) offered 0 s)).records = _ ∧
+        (speak es offered (encounter (word b) offered 0 s)).percept.log = _ ∧
+        (speak es offered (encounter (word b) offered 0 s)).repertoire = _ ∧
+        (speak es offered (encounter (word b) offered 0 s)).excluded = _
+      refine ⟨?_, l.trans log, p.trans rep, x.trans ex⟩
+      rw [r, heard]
+      simp [namedRecords]
+    | join _ _ =>
+      have rest : es.length ≤ s.percept.machine.support := by
+        simp only [List.length_cons] at support
+        omega
+      exact speak_records offered es s groups rest
+    | twice _ =>
+      have rest : es.length ≤ s.percept.machine.support := by
+        simp only [List.length_cons] at support
+        omega
+      exact speak_records offered es s groups rest
+
+theorem word_eq_iff (c b : Bool) : word c = word b ↔ c = b := by
+  cases c <;> cases b <;> decide
+
+theorem stands_named (excluded : List Nat) (admitted : 0 ∉ excluded) (b : Bool)
+    (offered : List Expr) (e : Expr) : ∀ es : List Expr,
+    CrossSituational.stands (bearsOn excluded (word b)) offersOf (namedRecords offered es) e =
+      (!(decide (Expr.atom b ∈ es)) || decide (e ∈ offered))
+  | [] => by simp [CrossSituational.stands, namedRecords]
+  | .atom c :: es => by
+    rw [show namedRecords offered (.atom c :: es) = ⟨word c, offered, 0⟩ :: namedRecords offered es
+      from rfl, CrossSituational.stands_cons, stands_named excluded admitted b offered e es]
+    by_cases hc : c = b
+    · subst hc
+      by_cases ho : e ∈ offered <;> simp [bearsOn, offersOf, admitted, ho]
+    · have hc' : ¬ b = c := fun h => hc h.symm
+      by_cases ho : e ∈ offered <;> by_cases hm : Expr.atom b ∈ es <;>
+        simp [bearsOn, offersOf, admitted, word_eq_iff, hc, hc', ho, hm]
+  | .join x y :: es => by
+    rw [show namedRecords offered (.join x y :: es) = namedRecords offered es from rfl,
+      stands_named excluded admitted b offered e es]
+    simp
+  | .twice x :: es => by
+    rw [show namedRecords offered (.twice x :: es) = namedRecords offered es from rfl,
+      stands_named excluded admitted b offered e es]
+    simp
+
+/-- **Cooperative naming narrows exactly the words whose atoms are accessible.** For every
+lexicon whose record of transitions groups the two-word encoding, with the naming source admitted
+and support for one naming per accessible meaning: after naming every accessible atom, each
+record offering the accessible alternatives, the candidates of the word of `b` are its earlier
+candidates that are accessible where its atom is accessible, and its earlier candidates
+otherwise. -/
+theorem naming_narrows {s : Lexicon} (groups : Groups s.percept.log) (admitted : 0 ∉ s.excluded)
+    {offered : List Expr} (support : offered.length ≤ s.percept.machine.support) (b : Bool) :
+    AcquiredBinding.candidates (speak offered offered s) (word b) =
+      if Expr.atom b ∈ offered then
+        (AcquiredBinding.candidates s (word b)).filter (fun e => decide (e ∈ offered))
+      else AcquiredBinding.candidates s (word b) := by
+  obtain ⟨recs, _, rep, ex⟩ := speak_records offered offered s groups support
+  rw [candidates_eq, candidates_eq, recs, rep, ex, CrossSituational.candidates_append]
+  by_cases accessible : Expr.atom b ∈ offered
+  · rw [if_pos accessible]
+    exact CrossSituational.filter_congr (fun e => by
+      rw [stands_named s.excluded admitted b offered e offered]
+      simp [accessible]) _
+  · rw [if_neg accessible]
+    exact CrossSituational.filter_all_true (fun e => by
+      rw [stands_named s.excluded admitted b offered e offered]
+      simp [accessible]) _
+
+/-- A visit's naming is cooperative naming of what is accessible there. -/
+theorem local_naming_narrows (a : Activity) (groups : Groups a.situation.lexicon.percept.log)
+    (admitted : 0 ∉ a.situation.lexicon.excluded)
+    (support : (visible a.situation).length ≤ a.situation.lexicon.percept.machine.support)
+    (b : Bool) :
+    AcquiredBinding.candidates (localNaming a).situation.lexicon (word b) =
+      if Expr.atom b ∈ visible a.situation then
+        (AcquiredBinding.candidates a.situation.lexicon (word b)).filter
+          (fun e => decide (e ∈ visible a.situation))
+      else AcquiredBinding.candidates a.situation.lexicon (word b) :=
+  naming_narrows groups admitted support b
+
+theorem acquired_repertoire : (acquired 51).situation.lexicon.repertoire = [p0, p1, extra] := by
+  decide
+
+theorem acquired_distinct : CrossSituational.Distinct (acquired 51).situation.lexicon.repertoire := by
+  rw [acquired_repertoire]
+  exact start_distinct 0
+
+/-- The records of the selected history separate both atoms. -/
+theorem acquired_separated (b : Bool) :
+    Separated (acquired 51).situation.lexicon.repertoire (acquired 51).situation.lexicon.excluded
+      (acquired 51).situation.lexicon.records b := by
+  unfold Separated
+  cases b <;> decide
+
+/-- **`acquired 51` as an instance of the separation law.** -/
+theorem acquired_from_separation (ws : List Bool) :
+    interpret (acquired 51).situation.lexicon (encode ws) = assembleMessage (ws.map Expr.atom) :=
+  (interprets_every_iff_separated _ acquired_groups acquired_distinct).mpr acquired_separated ws
+
+end Encounter
+
+/-! ## Retrospective binding -/
+
+section Retrospective
+
+open Generative.CompositionalAcquisition Generative.AcquiredSegmentation Generative.AcquiredBinding
+open Generative.RetrospectiveBinding
+
+/-- **A retained packet's record offers exactly the atoms of the worlds that produce its
+reports**: a learned route under an admitted fault. -/
+theorem mem_alternatives (rs : List SourceReliance.Route) (faults : List SourceReliance.Faults)
+    (reports : SourceReliance.Reports) (e : Expr) :
+    e ∈ alternatives rs faults reports ↔
+      ∃ w : SourceReliance.World, (w.route ∈ rs ∧ w.faults ∈ faults) ∧ Expr.atom w.target = e ∧
+        SourceReliance.view w = reports := by
+  unfold alternatives SourceReliance.compatible
+  simp only [List.mem_map, List.mem_filter, SourceReliance.mem_enumerate, beq_iff_eq]
+  constructor
+  · rintro ⟨w, ⟨family, produced⟩, rfl⟩
+    exact ⟨w, family, rfl, produced⟩
+  · rintro ⟨w, family, rfl, produced⟩
+    exact ⟨w, ⟨family, produced⟩, rfl⟩
+
+/-- The binding view's candidates are those of its packets, read as records. -/
+theorem view_candidates (s : Memory) (faults : List SourceReliance.Faults) (form : List Sound) :
+    AcquiredBinding.candidates (bindingView s faults) form =
+      CrossSituational.candidates (fun p : Packet => decide (p.form = form))
+        (fun p e => decide (e ∈ alternatives (routes s) faults p.reports)) s.base.repertoire
+        s.packets := by
+  rw [candidates_eq]
+  show List.filter _ s.base.repertoire = List.filter _ s.base.repertoire
+  congr 1
+  funext e
+  simp [CrossSituational.stands, List.all_map, bearsOn, offersOf, bindingView, Function.comp_def]
+
+/-- **Retrospective binding, exactly.** For every memory, fault envelope, form and target `b`:
+where the repertoire has no repeats and holds the atom of `b`, and every packet of the form was
+produced by some world (a learned route under an admitted fault) with target `b`, the binding
+view resolves the form to that atom exactly when every other meaning of the repertoire is ruled
+out by some packet of the form that no world with that meaning as its atom produces. -/
+theorem retrospective_resolves_iff (s : Memory) (faults : List SourceReliance.Faults)
+    (distinct : CrossSituational.Distinct s.base.repertoire) (form : List Sound) (b : Bool)
+    (available : Expr.atom b ∈ s.base.repertoire)
+    (produced : ∀ p, p ∈ s.packets → p.form = form → ∃ w : SourceReliance.World,
+      (w.route ∈ routes s ∧ w.faults ∈ faults) ∧ w.target = b ∧ SourceReliance.view w = p.reports) :
+    resolve (bindingView s faults) form = some (Expr.atom b) ↔
+      ∀ m, m ∈ s.base.repertoire → m ≠ Expr.atom b → ∃ p, p ∈ s.packets ∧ p.form = form ∧
+        ∀ w : SourceReliance.World, w.route ∈ routes s ∧ w.faults ∈ faults →
+          Expr.atom w.target = m → SourceReliance.view w ≠ p.reports := by
+  rw [resolve_eq, view_candidates, CrossSituational.unique_eq_some_iff,
+    CrossSituational.resolves_explained_iff (fun w : SourceReliance.World =>
+        w.route ∈ routes s ∧ w.faults ∈ faults) (fun w => Expr.atom w.target)
+      (fun (p : Packet) w => SourceReliance.view w = p.reports)
+      (fun p e => by simp only [decide_eq_true_eq]; exact mem_alternatives _ _ _ e)
+      distinct available
+      (fun p mem bears => by
+        obtain ⟨w, family, target, view⟩ := produced p mem (by simpa using bears)
+        exact ⟨w, family, congrArg Expr.atom target, view⟩)]
+  constructor
+  · intro ruled m mm ne
+    obtain ⟨p, pm, bears, none⟩ := ruled m mm ne
+    exact ⟨p, pm, by simpa using bears, none⟩
+  · intro ruled m mm ne
+    obtain ⟨p, pm, form', none⟩ := ruled m mm ne
+    exact ⟨p, pm, by simpa using form', none⟩
+
+/-- The old coverage premises (calibration by the actual route, every packet of the form realized
+by it under an admitted fault) give the production premise. -/
+theorem produced_of_calibration (s : Memory) (r : SourceReliance.Route) (reversed : Bool)
+    (ps : List SourceReliance.Probe) (faults : List SourceReliance.Faults) (form : List Sound)
+    (target : Bool) (calibration : s.calibration = SourceReliance.acquire r reversed ps)
+    (realized : ∀ p ∈ s.packets, p.form = form →
+      ∃ f ∈ faults, p.reports = SourceReliance.emit r ⟨target, f.1, f.2⟩) :
+    ∀ p, p ∈ s.packets → p.form = form → ∃ w : SourceReliance.World,
+      (w.route ∈ routes s ∧ w.faults ∈ faults) ∧ w.target = target ∧
+        SourceReliance.view w = p.reports := by
+  have rin : r ∈ SourceReliance.repertoire := by
+    rcases r with ⟨a, b⟩
+    cases a <;> cases b <;> decide
+  have learned : r ∈ routes s := by
+    rw [routes, calibration]
+    exact SourceReliance.actual_route_retained r _ reversed ps rin
+  intro p mem matching
+  obtain ⟨f, hf, view⟩ := realized p mem matching
+  exact ⟨⟨r, target, f⟩, ⟨learned, hf⟩, rfl, view.symm⟩
+
+/-- **`acquired_routes_supply_binding_coverage` from the law**: under its premises every unique
+resolution is the target (`CrossSituational.resolved_is_target`). -/
+theorem coverage_from_law (s : Memory) (r : SourceReliance.Route) (reversed : Bool)
+    (ps : List SourceReliance.Probe) (faults : List SourceReliance.Faults) (form : List Sound)
+    (target : Bool) (answer : Expr) (calibration : s.calibration = SourceReliance.acquire r reversed ps)
+    (available : Expr.atom target ∈ s.base.repertoire)
+    (realized : ∀ p ∈ s.packets, p.form = form →
+      ∃ f ∈ faults, p.reports = SourceReliance.emit r ⟨target, f.1, f.2⟩)
+    (resolved : resolve (bindingView s faults) form = some answer) :
+    answer = .atom target := by
+  rw [resolve_eq, view_candidates, CrossSituational.unique_eq_some_iff] at resolved
+  refine CrossSituational.resolved_is_target available (fun p mem bears => ?_) resolved
+  obtain ⟨w, family, tw, view⟩ :=
+    produced_of_calibration s r reversed ps faults form target calibration realized p mem
+      (by simpa using bears)
+  simp only [decide_eq_true_eq]
+  exact (mem_alternatives _ _ _ _).mpr ⟨w, family, congrArg Expr.atom tw, view⟩
+
+theorem retrospective_repertoire :
+    (bindingView (retrospective 36) SourceReliance.allFaults).repertoire = [p0, p1, extra] := by
+  decide
+
+theorem retrospective_distinct :
+    CrossSituational.Distinct (bindingView (retrospective 36) SourceReliance.allFaults).repertoire := by
+  rw [retrospective_repertoire]
+  exact start_distinct 0
+
+/-- The two retained packets, reread through the learned route, separate both atoms. -/
+theorem retrospective_separated (b : Bool) :
+    Separated (bindingView (retrospective 36) SourceReliance.allFaults).repertoire
+      (bindingView (retrospective 36) SourceReliance.allFaults).excluded
+      (bindingView (retrospective 36) SourceReliance.allFaults).records b := by
+  unfold Separated
+  cases b <;> decide
+
+/-- **`retrospective 36` as an instance of the separation law.** -/
+theorem retrospective_from_separation (ws : List Bool) :
+    interpret (bindingView (retrospective 36) SourceReliance.allFaults) (encode ws) =
+      assembleMessage (ws.map Expr.atom) :=
+  (interprets_every_iff_separated _ retrospective_groups retrospective_distinct).mpr
+    retrospective_separated ws
+
+/-- **The failing side, production**: after a real route change the earlier packet of the word
+of `true` is produced by no learned world with that target, so its record omits the target
+(`backward_transfer_can_fail_after_a_real_route_change`). -/
+theorem changed_route_unproduced :
+    Expr.atom true ∉ alternatives (routes changedRouteHistory) SourceReliance.allFaults
+      (SourceReliance.emit ⟨false, true⟩ ⟨true, false, true⟩) := by decide
+
+end Retrospective
+
+/-! ## Where revision is warranted -/
+
+section Warrant
+
+open GoalFormationRevision
+
+/-- **The comparison warrants learning over attendance exactly under access loss with kept
+transition maintenance**, for every condition of the construction. -/
+theorem better_iff (c : GoalFormationRevision.Conditions) :
+    PracticalJudgment.Better (protects c) (gains c) .learning .attendance ↔
+      c.accessLoss = true ∧ c.transitionLoss = false := by
+  obtain ⟨a, t, r⟩ := c
+  constructor
+  · intro better
+    cases a <;> cases t
+    · exact absurd better (harmless_practices_incomparable ⟨false, false, r⟩ rfl rfl).2
+    · exact absurd better (PracticalJudgment.no_protection_trade_by_count true
+        (by simp [protects, perform]) (by simp [protects, perform]))
+    · exact ⟨rfl, rfl⟩
+    · exact absurd better (crossed_losses_incomparable ⟨true, true, r⟩ rfl rfl).1
+  · rintro ⟨access, kept⟩
+    exact warranted_revision _ access kept
+
+/-- **The construction revises exactly where the comparison warrants it**: acquisition, revision
+and reform complete for a condition exactly when learning is better than attendance there. -/
+theorem completed_iff_better (c : GoalFormationRevision.Conditions) :
+    (completed c).isSome = true ↔
+      PracticalJudgment.Better (protects c) (gains c) .learning .attendance :=
+  (completed_isSome_iff c).trans (better_iff c).symm
+
+end Warrant
+
+/-! ## A practice round -/
+
+section Round
+
+open JointPracticeContinuation
+
+/-- The state after a practice round of reviewer `r` and worker `w`: the review recorded, the
+context's method installed in the worker, the trial completed, nothing pending. -/
+def afterRound (s : State) (r w : Nat) : State :=
+  { s with
+    org := { s.org with reviews := (r, w) :: s.org.reviews }
+    methods := (w, s.context) :: s.methods
+    trial := none
+    response := none
+    completed := ⟨w, false, s.context, s.context⟩ :: s.completed }
+
+theorem apply_false (m : Bool) : applyMethod m false = m := by cases m <;> rfl
+
+theorem infer_false (m : Bool) : inferMethod false m = m := by cases m <;> rfl
+
+/-- **A practice round, exactly.** From every state, the round of attempt, response, revision and
+tested retry by reviewer `r` and worker `w` completes exactly when the worker is present and the
+reviewer is a present roster member other than the worker whose recorded method answers as the
+current context does; it then records the review, installs the context's method in the worker,
+completes the trial, and changes nothing else. -/
+theorem round_iff (s t : State) (r w : Nat) :
+    run s (practice r w) = some t ↔
+      (w ∈ s.org.present ∧ r ∈ s.org.roster ∧ r ∈ s.org.present ∧ r ≠ w ∧
+        methodAt s r = s.context) ∧ t = afterRound s r w := by
+  by_cases hw : w ∈ s.org.present
+  case neg => simp [practice, run, step, hw]
+  by_cases hr : r ∈ s.org.roster
+  case neg => simp [practice, run, step, hw, hr]
+  by_cases hrp : r ∈ s.org.present
+  case neg => simp [practice, run, step, hw, hr, hrp]
+  by_cases hne : r = w
+  case pos => simp [practice, run, step, hw, hne]
+  by_cases hm : methodAt s r = s.context
+  case neg =>
+    have hm' := hm
+    simp only [methodAt] at hm'
+    simp [practice, run, step, hw, hr, hrp, hne, hm', apply_false, methodAt]
+  have hm' := hm
+  simp only [methodAt] at hm'
+  simp [practice, run, step, hw, hr, hrp, hne, hm', apply_false, methodAt,
+    result_revision_eq_inference, infer_false, OrganizationalRuleInheritance.step, afterRound]
+  exact eq_comm
+
+/-- **A round trains its worker**: after it, the worker's recorded method is the context's. -/
+theorem round_trains {s t : State} {r w : Nat} (ran : run s (practice r w) = some t) :
+    methodAt t w = t.context := by
+  obtain ⟨_, rfl⟩ := (round_iff s t r w).mp ran
+  simp [methodAt, afterRound]
+
+/-- **A trained worker reviews without a further check.** From every state in which the reviewer's
+recorded method is the context's, a round of reviewer `w` and worker `v` completes exactly when
+`v` is present and `w` is a present roster member other than `v`. -/
+theorem trained_round_iff (u x : State) (w v : Nat) (trained : methodAt u w = u.context) :
+    run u (practice w v) = some x ↔
+      (v ∈ u.org.present ∧ w ∈ u.org.roster ∧ w ∈ u.org.present ∧ w ≠ v) ∧
+        x = afterRound u w v :=
+  (round_iff u x w v).trans
+    ⟨fun ⟨⟨hv, hw, hwp, ne, _⟩, eq⟩ => ⟨⟨hv, hw, hwp, ne⟩, eq⟩,
+     fun ⟨⟨hv, hw, hwp, ne⟩, eq⟩ => ⟨⟨hv, hw, hwp, ne, trained⟩, eq⟩⟩
+
+/-- **Training is kept along every course without revision that returns to the context**: the
+recorded methods change only by revision (`methods_kept`). -/
+theorem trained_along {s t : State} {es : List Event} {w : Nat}
+    (path : Generative.Trace JointPracticeContinuation.process s es t)
+    (none_revise : ∀ e, e ∈ es → revises e = false) (same : t.context = s.context)
+    (trained : methodAt s w = s.context) : methodAt t w = t.context := by
+  have kept : t.methods = s.methods := methods_inherited path none_revise
+  rw [same]
+  unfold methodAt
+  rw [kept]
+  exact trained
+
+/-- **The three rounds of the complete history are instances of the round law**; the
+enrollments and the handoff between them are the organization's own steps. -/
+theorem complete_history_rounds :
+    run initial (practice 0 1) = some (afterRound initial 0 1) ∧
+      run first (practice 1 2) = some (afterRound first 1 2) ∧
+      run (after second [.organizational (.handoff [1, 2, 3, 4, 5])]) (practice 1 3) =
+        some (afterRound (after second [.organizational (.handoff [1, 2, 3, 4, 5])]) 1 3) :=
+  ⟨(round_iff _ _ 0 1).mpr ⟨by decide, rfl⟩, (round_iff _ _ 1 2).mpr ⟨by decide, rfl⟩,
+   (round_iff _ _ 1 3).mpr ⟨by decide, rfl⟩⟩
+
+end Round
 
 end Becoming.MachineInstances

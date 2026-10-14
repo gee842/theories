@@ -8,10 +8,10 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-14T05:50:00+00:00",
+  "reviewed_at_utc": "2026-10-14T09:00:00+00:00",
   "claim": {
-    "zh": "取得词库的解释律的实例：协调后的词库（coordinated 37）满足其条件——转移记录对二词编码成组，每个词形解析为其原子——故每个有限编码序列的解释是其原子的组合。指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入；另外有实际响应及访问、保留、时序失败见证。",
-    "en": "An instance of the interpretation law for acquired lexicons: The coordinated lexicon (coordinated 37) meets its conditions — its transition record groups the two-word encoding and each word form resolves to its atom — so every finite encoded sequence is interpreted as the assembly of its atoms. The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs; separate witnesses cover actual response and access, retention and timing failures."
+    "zh": "跨情境读出：对每类记录与意义，在不重复的候选范围中，形式解析为某意义，恰当每个关涉该形式的记录都提供它，且其他每个意义都缺于某个关涉的记录。对行动形成的场景：从每个转移记录对二词编码成组、候选范围不重复的处境出发，经每段移动与命名的历史，每个有限编码序列的解释是其原子的组合，恰当对每个词，先前记录与沿途所闻的命名（各提供学习者所在处可及者）分离其原子。协调的历史（coordinated 37）是实例；在一处命名（stationary 37）缺分离，从原子不可及处命名（mistimed 37）缺覆盖。指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入；另外有实际响应及访问、保留、时序失败见证。",
+    "en": "Cross-situational resolution: for every type of records and meanings, a form resolves to a meaning of a repertoire without repeats exactly when every record bearing on the form offers it and every other meaning is missing from some bearing record. For enacted scenes: from every situation whose transition record groups the two-word encoding and whose repertoire has no repeats, after every history of moves and namings, every finite encoded sequence is interpreted as the assembly of its atoms exactly when, for each word, the earlier records and the namings heard along the history, each offering what was accessible where the learner stood, separate its atom. The coordinated history (coordinated 37) is an instance; naming from one place (stationary 37) fails separation, and naming a site from where its atom is not accessible (mistimed 37) fails coverage. The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs; separate witnesses cover actual response and access, retention and timing failures."
   },
   "hypotheses": [
     {
@@ -30,7 +30,9 @@
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
   "aliases": [
     "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation",
-    "Becoming.MachineInstances.coordinated_interprets_every"
+    "Becoming.MachineInstances.coordinated_interprets_every",
+    "Becoming.CrossSituational.resolves_iff",
+    "Becoming.MachineInstances.scene_interprets_every_iff"
   ],
   "dependencies": [
     {
@@ -65,6 +67,13 @@
         "zh": "位置和名称次数相同可因时序产生相反绑定；清楚视野漏掉所指可误学；访问无保留不形成绑定，支持不足阻断移动或执行。",
         "en": "Matching positions and name counts can yield inverted bindings through timing; a clear view omitting the target can mislead; access without retention does not bind, and insufficient support prevents movement or response."
       }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
+      "detail": {
+        "zh": "意义有重复时解析不是分离（Repeated）；一条遗漏目标的记录可留下错误的唯一候选（Omitted）。",
+        "en": "With a repeated meaning, resolution is not separation (Repeated); one record omitting the target can leave a wrong unique candidate (Omitted)."
+      }
     }
   ],
   "limitations": {
@@ -91,11 +100,29 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MachineInstances.lean",
       "role": "proof",
-      "sha256": "452f875a3d1656a97c77ee38e98ca9c510b4c3e69f18fadc05c924b1e7d2a415",
+      "sha256": "0b3c91885d4f84a47c9a7cdecda9201e52bd6b902374db4901e03306e48ccb12",
       "declarations": [
         "Becoming.MachineInstances.coordinated_groups",
         "Becoming.MachineInstances.coordinated_resolves",
-        "Becoming.MachineInstances.coordinated_interprets_every"
+        "Becoming.MachineInstances.coordinated_interprets_every",
+        "Becoming.MachineInstances.resolve_iff",
+        "Becoming.MachineInstances.interprets_every_iff_separated",
+        "Becoming.MachineInstances.step_records",
+        "Becoming.MachineInstances.enact_records",
+        "Becoming.MachineInstances.scene_interprets_every_iff",
+        "Becoming.MachineInstances.coordinated_from_history",
+        "Becoming.MachineInstances.stationary_fails",
+        "Becoming.MachineInstances.mistimed_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/CrossSituational.lean",
+      "role": "proof",
+      "sha256": "ec9d16164845911be802d89fadf0e451fb1f2b1ec01b40cd6a658ad114531899",
+      "declarations": [
+        "Becoming.CrossSituational.candidates_eq_iff",
+        "Becoming.CrossSituational.resolves_iff",
+        "Becoming.CrossSituational.resolved_is_target"
       ]
     },
     {
@@ -114,6 +141,12 @@
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/machine-instances-checks/20261013T222154.117109Z/verification.json",
       "role": "receipt",
       "sha256": "713029844cb5d1c32628dfb82972ec8cdaca00ffa62d94c4766da7818185ecf9",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "5eac2420f6ee63068407570c18822f0b2a228e952cde2d9223c6557905406022",
       "declarations": []
     }
   ],
@@ -173,6 +206,10 @@
     {
       "zh": "2026-10-14，一般规律计划第二批（研究第112–113节）：一般律现已绑定：MachineInstances 由外围回执 20261013T222154.117109Z，公理报告均为空。",
       "en": "14 October 2026, batch 2 of the general-laws plan (study sections 112–113): the general laws are now bound: MachineInstances by peripheral receipt 20261013T222154.117109Z, each with empty axiom reports."
+    },
+    {
+      "zh": "2026-10-14，开放问题计划（研究第117节）：主张改为律先行。新核心模块 Becoming.CrossSituational：候选范围不重复时，形式解析为某意义恰当关涉的记录分离它（resolves_iff）；外围 MachineInstances 对每段移动与命名的历史陈述场景律（scene_interprets_every_iff），coordinated 37 成为其实例（coordinated_from_history），stationary 37 与 mistimed 37 是失败一侧。scratch_build 实编，核心公理报告为空，外围只用标准公理；对 MachineInstances 的证明绑定仍指先前运行，落地时改指新运行。原定理与反例不变。",
+      "en": "14 October 2026, open-issues plan (study section 117): the claim now states the law first. New core module Becoming.CrossSituational: for a repertoire without repeats a form resolves to a meaning exactly when the bearing records separate it (resolves_iff); the periphery MachineInstances states the scene law for every history of moves and namings (scene_interprets_every_iff), with coordinated 37 as an instance (coordinated_from_history) and stationary 37 and mistimed 37 as the failing side. Built with scratch_build: core axiom reports empty, the periphery with standard axioms only; the proof binding to MachineInstances still names the earlier run and is repointed at landing. The original theorems and counterexamples are unchanged."
     }
   ]
 }

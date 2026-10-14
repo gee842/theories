@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Check the peripheral instances of the Becoming core's countdown and stock laws in the
+"""Check the peripheral instances of the Becoming core's countdown, stock and gate laws in the
 versioned task protocol.
 
-`VersionedTaskInstances` imports `Becoming.Countdown`, `Becoming.Stock` and
+`VersionedTaskInstances` imports `Becoming.Countdown`, `Becoming.Gated`, `Becoming.Stock` and
 `PendingTaskApplicability` (with `CommonTaskRevision` in this directory and `CorrectionVersioned`
 in the generative-capacity periphery), which use Mathlib's tactics, so it is compiled with Lean
 4.30.0-rc2 against the installed Mathlib (`SYSTEMS_MATHLIB_PROJECT`, default
@@ -46,7 +46,7 @@ AUDIT = re.compile(r"'([^']+)' (?:does not depend on any axioms|depends on axiom
 TIMEOUT = int(os.environ.get("LEAN_TIMEOUT", "900"))
 
 SCOPE = (
-    "Instances of the Becoming core's countdown and stock laws in the versioned task protocol. The "
+    "Instances of the Becoming core's countdown, stock and gate laws in the versioned task protocol. The "
     "head of the queue is counted work (Countdown.Advances): each tick does one hop of its remaining "
     "path and with none left delivers the request, so under the bank and queue invariant the head "
     "completes after its remaining length plus one tick with the rest of the queue, the banks and "
@@ -55,8 +55,16 @@ SCOPE = (
     "the queue, so the revised head completes in the same number of ticks with the new request "
     "(revised_head_completes is an instance). Review draws one unit of work and action two, so an "
     "endpoint completes its review and action exactly when the report clears the relevant risk and "
-    "the work covers the course [1, 2] (Stock.Covered), that is from three units. Correspondence of "
-    "the protocol to actual requests, authority or reviews is not checked."
+    "the work covers the course [1, 2] (Stock.Covered), that is from three units. For every condition "
+    "and every valid installation with a pending head, acquisition, revision, reform, the rewrite of "
+    "the head and its delivery run exactly under access loss with kept transition maintenance and end "
+    "in the learning practice with one loss, three records and the work (2, 6, 10) "
+    "(acquired_revision_changes_pending_action is the instance at harmful). For every condition, "
+    "report and pending endpoint, a review adds a loss exactly when the report clears the action, the "
+    "work covers the course and the practice's relevant risk, its outcome law's loss condition, holds; "
+    "every review whose report does not clear the action keeps the loss count (Gated.KeptBy), and so "
+    "does every course of such reviews. Correspondence of the protocol to actual requests, authority "
+    "or reviews is not checked."
 )
 
 

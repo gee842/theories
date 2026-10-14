@@ -1,11 +1,12 @@
 import Becoming.Countdown
+import Becoming.Gated
 import Becoming.Stock
 import PendingTaskApplicability
 
 set_option autoImplicit false
 
 /-!
-# The versioned task protocol as an instance of the core's countdown and stock laws (periphery)
+# The versioned task protocol: the core's countdown, stock and gate laws (periphery)
 
 `CorrectionVersioned`, `CommonTaskRevision` and `PendingTaskApplicability` use Mathlib's tactics,
 so their instances of the pure core's laws are stated here and checked with Lean 4.30.0-rc2
@@ -22,11 +23,28 @@ against the pinned Mathlib. The core does not import this module.
 * **Revision of the pending head.** Rewriting the head keeps its route, progress and the rest of
   the queue, so the revised head is pending for the new request with the same remaining work
   (`retarget_pending`); `revised_head_completes` is an instance (`revised_head_instance`).
-* **Review and action draw on one stock.** The paid review draws one unit of work and the action
+* **Review and action draw on one stock.** The review draws one unit of work and the action
   two, so the course `[1, 2]` is covered exactly from three units (`review_course_covered_iff`,
   `Stock.Covered`). An endpoint completes its review and action exactly when the report clears
   the relevant risk and the work covers that course (`review_completes_iff`); the action itself
   runs exactly from two units (`enact_isSome_iff`).
+* **Revision of the pending task, for every condition.** For every condition and every
+  installation valid under the bank and queue invariant with a pending head, acquisition,
+  revision, reform, the rewrite of the head and its delivery run exactly under access loss with
+  kept transition maintenance, and then end in the learning practice with one loss, three
+  records and the work `⟨2, 6, 10⟩` (`continuation_eq`, `continuation_isSome_iff`);
+  `acquired_revision_changes_pending_action` is the instance at `harmful`
+  (`harmful_continuation_instance`).
+* **Loss through review.** The relevant risk of each practice is its outcome law's loss
+  condition (`relevant_risk_eq`), and an enacted practice adds a loss exactly where it holds
+  (`enact_losses`). So, for every condition, report and pending endpoint, a review adds a loss
+  exactly when the report clears the action, the work covers the course and the relevant risk
+  holds (`review_losses`, `review_adds_loss_iff`); `covered_review_adds_no_practice_loss` follows
+  for pending endpoints (`covered_review_instance`). As a process (`reviews`), every review whose
+  report does not clear the action keeps the loss count (`losses_kept`, an instance of
+  `Gated.KeptBy`), and so does every course of such reviews (`losses_kept_along`). The protocol
+  supplies its own two outcome laws and which risk is relevant; these laws say what follows from
+  them for every condition.
 
 Declarations may depend on `propext`, `Quot.sound` and `Classical.choice` only, through the
 machines' definitions. Correspondence of the protocol to actual requests, authority or reviews
@@ -271,5 +289,224 @@ theorem review_completes_iff (c : GoalFormationRevision.Conditions) (report : Op
         simp only at enough
         omega
     · simp [accepted]
+
+/-! ## Revision of the pending task, for every condition -/
+
+/-- Where acquisition, revision and reform hold the learning goal with the work `⟨3, 8, 7⟩`, the
+rewrite uses one unit of work and the revised pending task is delivered and enacted. -/
+theorem continuation_of_completed (c : GoalFormationRevision.Conditions)
+    (L : GoalFormationRevision.State) (formed : GoalFormationRevision.completed c = some L)
+    (goal : L.goal = some .learning) (work : L.account = ⟨3, 8, 7⟩) (span : Nat)
+    (s : Installation) (h : CorrectionVersioned.Invariant span s) (p : Packet) (ps : List Packet)
+    (hp : s.packets = p :: ps) :
+    CommonTaskRevision.continuation c s =
+      CommonTaskRevision.enact c {L with account := ⟨2, 8, 8⟩} true := by
+  have prep : CommonTaskRevision.paidRetarget true L s =
+      some ({L with account := ⟨2, 8, 8⟩}, CommonTaskRevision.retargetHead s true) := by
+    simp [CommonTaskRevision.paidRetarget, hp, goal, work, GoalFormationRevision.charge,
+      CommonTaskRevision.goalBit]
+  unfold CommonTaskRevision.continuation
+  rw [formed]
+  change (CommonTaskRevision.paidRetarget true L s >>= fun a =>
+    CommonTaskRevision.deliverAndAct c a.1 a.2) = _
+  rw [prep]
+  exact CommonTaskRevision.retargeted_act_uses_delivered_revision span s h p ps hp true c _
+
+/-- **Acquired revision enters every valid pending task exactly where it is warranted.** For every
+condition and every installation valid under the bank and queue invariant with a pending head,
+acquisition, revision, reform, the rewrite of the head and its delivery run exactly under access
+loss with kept transition maintenance; the endpoint then enacts the learning practice, keeps the
+one earlier loss and adds none, and holds three records and the work `⟨2, 6, 10⟩`. -/
+theorem continuation_eq (c : GoalFormationRevision.Conditions) (span : Nat) (s : Installation)
+    (h : CorrectionVersioned.Invariant span s) (p : Packet) (ps : List Packet)
+    (hp : s.packets = p :: ps) :
+    (CommonTaskRevision.continuation c s).map (fun l =>
+        (l.goal, l.losses, l.archive.length, l.account.work, l.account.reserve, l.account.spent)) =
+      if c.accessLoss = true ∧ c.transitionLoss = false then some (some .learning, 1, 3, 2, 6, 10)
+      else none := by
+  obtain ⟨a, t, r⟩ := c
+  cases a <;> cases t
+  · have unformed : GoalFormationRevision.completed ⟨false, false, r⟩ = none := by
+      cases r <;> decide
+    simp [CommonTaskRevision.continuation, unformed]
+  · have unformed : GoalFormationRevision.completed ⟨false, true, r⟩ = none := by
+      cases r <;> decide
+    simp [CommonTaskRevision.continuation, unformed]
+  · rw [continuation_of_completed _
+      ((GoalFormationRevision.completed ⟨true, false, r⟩).getD
+        (GoalFormationRevision.start .attendance))
+      (by cases r <;> decide) (by cases r <;> decide) (by cases r <;> decide) span s h p ps hp]
+    cases r <;> decide
+  · have unformed : GoalFormationRevision.completed ⟨true, true, r⟩ = none := by
+      cases r <;> decide
+    simp [CommonTaskRevision.continuation, unformed]
+
+/-- **The revised pending task is delivered exactly where it is warranted.** -/
+theorem continuation_isSome_iff (c : GoalFormationRevision.Conditions) (span : Nat)
+    (s : Installation) (h : CorrectionVersioned.Invariant span s) (p : Packet) (ps : List Packet)
+    (hp : s.packets = p :: ps) :
+    (CommonTaskRevision.continuation c s).isSome = true ↔
+      c.accessLoss = true ∧ c.transitionLoss = false := by
+  have law := congrArg Option.isSome (continuation_eq c span s h p ps hp)
+  rw [Option.isSome_map] at law
+  rw [law]
+  by_cases warranted : c.accessLoss = true ∧ c.transitionLoss = false
+  · simp [warranted]
+  · simp [warranted]
+
+/-- **`acquired_revision_changes_pending_action` as an instance** of `continuation_eq`. -/
+theorem harmful_continuation_instance (span : Nat) (s : Installation)
+    (h : CorrectionVersioned.Invariant span s) (p : Packet) (ps : List Packet)
+    (hp : s.packets = p :: ps) :
+    (CommonTaskRevision.continuation GoalFormationRevision.harmful s).map (fun l =>
+      (l.goal, l.losses, l.archive.length, l.account.work, l.account.reserve, l.account.spent)) =
+      some (some .learning, 1, 3, 2, 6, 10) :=
+  (continuation_eq GoalFormationRevision.harmful span s h p ps hp).trans (if_pos ⟨rfl, rfl⟩)
+
+/-! ## Loss through review -/
+
+/-- **The relevant risk of each practice is its outcome law's loss condition**: the delivered
+practice keeps both access and maintenance exactly where its relevant risk does not hold. -/
+theorem relevant_risk_eq (c : GoalFormationRevision.Conditions) (v : Bool) :
+    ((GoalFormationRevision.perform c
+          (GoalFormationRevision.meansFor (CommonTaskRevision.bitGoal v))).access &&
+        (GoalFormationRevision.perform c
+          (GoalFormationRevision.meansFor (CommonTaskRevision.bitGoal v))).maintenance) =
+      !PendingTaskApplicability.relevantRisk c v := by
+  cases v <;> simp [GoalFormationRevision.perform, GoalFormationRevision.meansFor,
+    CommonTaskRevision.bitGoal, PendingTaskApplicability.relevantRisk]
+
+/-- **An enacted practice adds a loss exactly where its relevant risk holds.** -/
+theorem enact_losses (c : GoalFormationRevision.Conditions) (l l' : GoalFormationRevision.State)
+    (v : Bool) (h : CommonTaskRevision.enact c l v = some l') :
+    l'.losses = l.losses + (if PendingTaskApplicability.relevantRisk c v = true then 1 else 0) := by
+  cases hc : GoalFormationRevision.cycle l.selector
+      (GoalFormationRevision.meansFor (CommonTaskRevision.bitGoal v)) l.account with
+  | none =>
+    simp [CommonTaskRevision.enact, GoalFormationRevision.operate, hc] at h
+  | some a =>
+    simp [CommonTaskRevision.enact, GoalFormationRevision.operate, hc] at h
+    cases h
+    obtain ⟨access, transition, reversed⟩ := c
+    cases v <;> cases access <;> cases transition <;>
+      simp [PendingTaskApplicability.relevantRisk, CommonTaskRevision.bitGoal,
+        GoalFormationRevision.meansFor, GoalFormationRevision.perform]
+
+/-- **Loss through review, exactly.** For every condition, report and pending endpoint, the
+review adds one loss exactly when the report clears the action, the work covers the review and
+the action (three units), and the delivered practice's relevant risk holds; otherwise the loss
+count is kept. -/
+theorem review_losses (c : GoalFormationRevision.Conditions) (report : Option Bool)
+    (l : GoalFormationRevision.State) (v : Bool) (reports : List (Option Bool)) :
+    (PendingTaskApplicability.reviewAndAct c report ⟨l, v, true, reports⟩).learning.losses =
+      l.losses + (if report = some false ∧ 3 ≤ l.account.work ∧
+        PendingTaskApplicability.relevantRisk c v = true then 1 else 0) := by
+  unfold PendingTaskApplicability.reviewAndAct
+  simp only [Bool.not_true, Bool.false_eq_true, ↓reduceIte]
+  cases hc : GoalFormationRevision.charge 1 l.account with
+  | none =>
+    have short : l.account.work < 1 := by
+      by_contra enough
+      simp [GoalFormationRevision.charge, show 1 ≤ l.account.work by omega] at hc
+    have off : ¬ (report = some false ∧ 3 ≤ l.account.work ∧
+        PendingTaskApplicability.relevantRisk c v = true) :=
+      fun ⟨_, three, _⟩ => by omega
+    simp [off]
+  | some a =>
+    have ha : a.work + 1 = l.account.work := by
+      unfold GoalFormationRevision.charge at hc
+      split at hc
+      · cases hc
+        simp only
+        omega
+      · cases hc
+    simp only
+    by_cases accepted : report = some false
+    · simp only [accepted, ↓reduceIte, true_and]
+      cases he : CommonTaskRevision.enact c {l with account := a} v with
+      | none =>
+        have short := (enact_isSome_iff c {l with account := a} v).not.mp (by simp [he])
+        simp only at short
+        have off : ¬ (3 ≤ l.account.work) := by omega
+        simp [off]
+      | some l' =>
+        have enough := (enact_isSome_iff c {l with account := a} v).mp (by simp [he])
+        simp only at enough
+        have three : 3 ≤ l.account.work := by omega
+        simp only [three, true_and]
+        exact enact_losses c {l with account := a} l' v he
+    · simp [accepted]
+
+/-- **A loss is added exactly when the report clears an action whose relevant risk holds and the
+work covers the review-and-action course.** -/
+theorem review_adds_loss_iff (c : GoalFormationRevision.Conditions) (report : Option Bool)
+    (l : GoalFormationRevision.State) (v : Bool) (reports : List (Option Bool)) :
+    (PendingTaskApplicability.reviewAndAct c report ⟨l, v, true, reports⟩).learning.losses =
+        l.losses + 1 ↔
+      report = some false ∧ Stock.Covered (fun n : Nat => n) (fun _ => 0) l.account.work [1, 2] ∧
+        PendingTaskApplicability.relevantRisk c v = true := by
+  rw [review_losses, review_course_covered_iff]
+  by_cases all : report = some false ∧ 3 ≤ l.account.work ∧
+      PendingTaskApplicability.relevantRisk c v = true
+  · simp [all]
+  · simp only [all, ↓reduceIte, Nat.add_zero]
+    constructor
+    · intro same
+      omega
+    · intro holds
+      exact holds.elim
+
+/-- **`covered_review_adds_no_practice_loss` for pending endpoints, from the law**: a report
+covering the effect never clears an action whose relevant risk holds. -/
+theorem covered_review_instance (c : GoalFormationRevision.Conditions) (report : Option Bool)
+    (l : GoalFormationRevision.State) (v : Bool) (reports : List (Option Bool))
+    (cover : PendingTaskApplicability.CoversEffect c report ⟨l, v, true, reports⟩) :
+    (PendingTaskApplicability.reviewAndAct c report ⟨l, v, true, reports⟩).learning.losses =
+      l.losses := by
+  rw [review_losses]
+  have off : ¬ (report = some false ∧ 3 ≤ l.account.work ∧
+      PendingTaskApplicability.relevantRisk c v = true) :=
+    fun ⟨cleared, _, risk⟩ => by
+      have same := cover false cleared
+      simp only at same
+      rw [← same] at risk
+      exact Bool.false_ne_true risk
+  simp [off]
+
+/-- Reviews as a process on endpoints: one report per step. -/
+def reviews (c : GoalFormationRevision.Conditions) :
+    Generative.Process PendingTaskApplicability.Endpoint (Option Bool) :=
+  ⟨fun e report e' => PendingTaskApplicability.reviewAndAct c report e = e'⟩
+
+/-- A report clears the action where it reports no relevant risk. -/
+def clears : Option Bool → Bool
+  | some false => true
+  | _ => false
+
+/-- **Loss enters only through a cleared action**: every review whose report does not clear the
+action keeps the loss count (`Gated.KeptBy`). -/
+theorem losses_kept (c : GoalFormationRevision.Conditions) :
+    Gated.KeptBy (reviews c) clears (fun e => e.learning.losses) := by
+  intro e report e' step uncleared
+  change PendingTaskApplicability.reviewAndAct c report e = e' at step
+  subst step
+  have other : report ≠ some false := by
+    intro same
+    rw [same] at uncleared
+    exact Bool.false_ne_true uncleared.symm
+  unfold PendingTaskApplicability.reviewAndAct
+  split
+  · rfl
+  · cases GoalFormationRevision.charge 1 e.learning.account with
+    | none => rfl
+    | some a => rfl
+
+/-- **Along every course of reviews that clear no action, the loss count is kept.** -/
+theorem losses_kept_along (c : GoalFormationRevision.Conditions)
+    {e e' : PendingTaskApplicability.Endpoint} {course : List (Option Bool)}
+    (path : Generative.Trace (reviews c) e course e')
+    (uncleared : ∀ report, report ∈ course → clears report = false) :
+    e'.learning.losses = e.learning.losses :=
+  Gated.kept_along (losses_kept c) path uncleared
 
 end Becoming.VersionedTaskInstances
