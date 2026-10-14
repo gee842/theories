@@ -517,9 +517,9 @@ theorem repeatedFeed_eq (w : List Bool) : ∀ n : Nat,
 sufficient side. -/
 theorem finite_lineage_instance (law : StructuralCopying.Law) (p : Strand)
     (hp : p.bonds = path p.cells.length) (hn : p.cells ≠ []) (n : Nat) (tail : List Bool)
-    (free spent : Nat) :
+    (free used : Nat) :
     AllReleased law n p ⟨StructuralCopying.repeatedFeed p.cells n ++ tail,
-      free + n * (StructuralCopying.cost law none p.cells + 1), spent⟩ :=
+      free + n * (StructuralCopying.cost law none p.cells + 1), used⟩ :=
   (lineage_released_iff law p hp hn n _).mpr
     ⟨fun a => by
       show n * Copying.countOf a p.cells ≤
