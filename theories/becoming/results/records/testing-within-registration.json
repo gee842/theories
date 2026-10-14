@@ -208,8 +208,8 @@
     "no-ethical-premise"
   ],
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Testing 的定理（含局部规律）公理报告为空（回执 20261013T094743.528770Z；当前字节由 20261014T091930.724493Z 绑定），检查器并核对核心纯净。作者反审见整合文档；整合之前经第十七次独立审查（见来源），其处理见整合文档；处理之后的文本尚无独立审查。",
-    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Testing, the local laws among them, have empty axiom reports (receipt 20261013T094743.528770Z; current bytes bound by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; reviewed before integration by the seventeenth independent review (listed under sources), treated in the integration note; no independent review of the text after that treatment yet."
+    "zh": "Lean 4.29.1 合并检查器实查：Becoming.Testing 的定理与本记录的局部规律公理报告为空（回执 20261013T094743.528770Z；当前字节由 20261014T091930.724493Z 绑定），检查器并核对核心纯净。作者反审见整合文档；整合之前经第十七次独立审查（见来源），其处理见整合文档；处理之后的文本尚无独立审查。",
+    "en": "Machine-checked by the consolidated Lean 4.29.1 checker: the theorems of Becoming.Testing and this record's local laws have empty axiom reports (receipt 20261013T094743.528770Z; current bytes bound by 20261014T091930.724493Z), and the checker verifies core purity. Author counterreview in the integration note; reviewed before integration by the seventeenth independent review (listed under sources), treated in the integration note; no independent review of the text after that treatment yet."
   },
   "next_delta": {
     "zh": "多步 Scope 的桥：感知只经识的策略在识得相同的流上有同样的所见范围；实验：变动自己的动作并识差别；模型从哪里来（见 projection-carrying-a-law 与 generalization-through-lumping）；由动力学给出回应，而不是另给它；识关于什么（校准）；识不分辨值时（阈下）的学习。",

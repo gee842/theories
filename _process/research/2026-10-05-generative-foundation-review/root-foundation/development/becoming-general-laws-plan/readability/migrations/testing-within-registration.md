@@ -40,7 +40,7 @@ Each law was read against its declarations in `Becoming/Testing.lean` (bytes bou
 | V5 “The author's counterreview is in §70.3 of the integration note;” | evidence | validation_scope (“in the integration note”); §70.3 stays in the snapshot |
 | V6 “reviewed before integration by the seventeenth independent review (BECOMING-P49-REVIEW.md, titled P47), whose treatment is in §70.2;” | evidence (review) | validation_scope (“listed under sources”, “treated in the integration note”); “titled P47” is in the first history note; §70.2 is in the migration history note |
 | V7 “the text after that treatment is not yet independently reviewed.” | evidence | validation_scope |
-| V8 “This record's local laws (P57–P61) are in the same receipt, with empty axiom reports.” | evidence | validation_scope (“the local laws among them”); P57–P61 stays in the snapshot and the history notes |
+| V8 “This record's local laws (P57–P61) are in the same receipt, with empty axiom reports.” | evidence | validation_scope (“the theorems of Becoming.Testing and this record's local laws”: the local laws lie in other modules, such as Flow.BalancesOn in Becoming.Flow); P57–P61 stays in the snapshot and the history notes |
 | (proof bindings) | evidence | validation_scope names the current binding receipt 20261014T091930.724493Z, already in the references and proof bindings |
 | R0 “Ren's proposal: “can becoming provide wisdoms …”, and “I think all the wisdoms about wisdoms, …”.” | Ren's words | correspondence (verbatim) |
 | R1 “The AI's answer proposed …; Ren answered “agree with you, great job, start now. for 4, …”.” | Ren's words + provenance | correspondence (verbatim) |
